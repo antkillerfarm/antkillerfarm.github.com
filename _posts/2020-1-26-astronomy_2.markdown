@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/-eNzkpxJ_nQOF0RURjuSUg
 
 96秒4.25亿！马斯克疯狂炸毁载人火箭猎鹰9，最贵烟花锤炼逃生系统
 
+----
+
+卡门线（Kármán line）是一条位于海拔100 km（330,000英尺）处，被大部分认可为外太空与地球大气层的界线的分界线。
+
 # 阿波罗50年
 
 https://mp.weixin.qq.com/s/79e6p2TYpttO-NR1of21jw
@@ -187,6 +191,18 @@ https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
 印度失联的月球探测器依然成功了95%？那些年我们一起追过的月球
 
 # 武汉肺炎（续）
+
+## Gilead Sciences
+
+Gilead Sciences，1987年6月22日注册成立，是一家以研究为基础，从事药品的开发和销售的生物制药公司。主要重点领域包括人类免疫缺陷病毒（HIV）/艾滋病，肝脏疾病，如乙型肝炎和丙型肝炎和心血管/代谢和呼吸条件。
+
+https://www.huxiu.com/article/338515.html
+
+研发瑞德西韦的医药公司吉利德，真是抗毒传奇？
+
+https://xueqiu.com/1913820214/140236918
+
+吉利德发家史：5次豪赌，从小药厂到世界巨头的30年蜕变！
 
 ## 病毒
 
@@ -267,13 +283,3 @@ https://mp.weixin.qq.com/s/9iWT9v4msuHgzN_92Ptf7A
 https://mp.weixin.qq.com/s/ruMiimYqAbsVwU-mnyq8oQ
 
 病毒从动物转移到人类身上，会发生什么？
-
-## 蝙蝠
-
-https://mp.weixin.qq.com/s/QN2GQ6T9Q2cwT_CN6aX_YQ
-
-你所不知道的蝙蝠——常态“发烧”，体内如“毒蛊”
-
-https://mp.weixin.qq.com/s/Vi-PRPhFEnBEnNxGNzA6VA
-
-蝙蝠是极为有益的动物，然而也是最容易被误解的动物之一

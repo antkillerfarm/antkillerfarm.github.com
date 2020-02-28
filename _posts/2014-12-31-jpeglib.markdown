@@ -176,12 +176,12 @@ betty是Jeff Pickhardt开发的人工智能助手，可以将英文转换成Linu
 
 安装方法如下：
 
-{% highlight bash %}
+```bash
 sudo apt-get install git curl ruby
 cd ~
 git clone https://github.com/pickhardt/betty
 sudo nano ~/.bashrc
-{% endhighlight %}
+```
 
 在.bashrc末尾添加以下内容：
 

@@ -142,10 +142,10 @@ RTP管道和其他GStreamer管道不同，其PLAYING状态更多表示它可以�
 
 GStreamer的playbin、uridecodebin插件都可以处理URI，但dataurisrc是个例外，它接收的不是如`http://`或`file://`这样的URI，而是RFC 2397格式的URI，如下所示：
 
-{% highlight bash %}
+```bash
 gst-launch-1.0 -v dataurisrc uri="data:image/png;base64,iVBORw0KGgo...." \
 ! pngdec ! videoconvert ! imagefreeze ! videoconvert ! autovideosink
-{% endhighlight %}
+```
 
 如果想做一个urisrc的话，可以使用giosrc插件，或者分不同情况，使用filesrc（file）或souphttpsrc（http）插件。
 
@@ -244,17 +244,17 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreamer/hello
 
 这里的代码尽管是针对1.x系列的，但实际上对于0.10.x系列也同样有效，你需要做的只是将Makefile中的
 
-{% highlight bash %}
+```bash
 CFLAGS = `pkg-config --cflags gstreamer-1.0`
 LDFLAGS = `pkg-config --libs gstreamer-1.0`
-{% endhighlight %}
+```
 
 改为
 
-{% highlight bash %}
+```bash
 CFLAGS = `pkg-config --cflags gstreamer-0.10`
 LDFLAGS = `pkg-config --libs gstreamer-0.10`
-{% endhighlight %}
+```
 
 这个例子同时也是如何使用pkg-config来管理同一软件的不同版本的范例。GTK+ 2.x和GTK+ 3.x的共存，也是采用了同样的方法。
 

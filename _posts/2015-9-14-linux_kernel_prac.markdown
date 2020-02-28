@@ -179,7 +179,7 @@ PC上的情况比较特殊。由于设备数量种类繁多，因此并不采用
 
 Linux既然由若干模块组成，那么这些模块在启动阶段，必然存在一个加载顺序的问题。这方面可以通过以下的宏来确定加载的优先级。
 
-{% highlight c %}
+```c
 #define pure_initcall(fn)		__define_initcall(fn, 0)
 #define core_initcall(fn)		__define_initcall(fn, 1)
 #define core_initcall_sync(fn)		__define_initcall(fn, 1s)
@@ -196,7 +196,7 @@ Linux既然由若干模块组成，那么这些模块在启动阶段，必然存
 #define device_initcall_sync(fn)	__define_initcall(fn, 6s)
 #define late_initcall(fn)		__define_initcall(fn, 7)
 #define late_initcall_sync(fn)		__define_initcall(fn, 7s)
-{% endhighlight %}
+```
 
 上面的宏中，越前面的优先级越高。同一优先级下，按照链接顺序确定加载顺序，因此可以通过修改链接文件来修改加载顺序，但一般来说，并没有这个必要。
 
@@ -214,7 +214,7 @@ Linux既然由若干模块组成，那么这些模块在启动阶段，必然存
 
 其中，前两类设备需要相关的驱动程序。Linux内核配置方法如下：
 
-{% highlight text %}
+```text
 Device Drivers --->
     <*> Multimedia support --->
     [*]   Cameras/video grabbers support
@@ -223,7 +223,7 @@ Device Drivers --->
         <*>   GSPCA based webcams  --->  
     [*]   V4L platform devices  --->
         <*>   SoC camera support
-{% endhighlight %}
+```
 
 UVC是Microsoft与另外几家设备厂商联合推出的为USB视频捕获设备定义的协议标准，目前已成为USB org标准之一。
 
@@ -293,13 +293,13 @@ drivers/input/keyboard/gpio_keys_polled.c中提供了中断方式的输入事件
 
 代码的编译配置在：
 
-{% highlight text %}
+```text
 Device Drivers --->
 Input device support --->
 Keyboards --->
 <*> GPIO Buttons
 <*> Polled GPIO buttons
-{% endhighlight %}
+```
 
 ## GPIO的使用方向
 

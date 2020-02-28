@@ -126,11 +126,11 @@ CRAN虽然提供了各个软件包的帮助文档，然而无论是数据的组�
 
 此外R还支持从github安装软件包，如下所示：
 
-{% highlight R %}
+```R
 install.packages("devtools")
 devtools::install_github("jlmelville/mnist")
 library(mnist)
-{% endhighlight %}
+```
 
 ## 语言细节
 
@@ -164,12 +164,12 @@ R和python类似，变量使用前无需声明类型。
 
 列表（List）的下标一般是个name。这里使用一个解析后的json文件作为示例，演示一下在复杂结构中下标的用法。
 
-{% highlight json %}
+```json
 {"data":[
 {"readCount":"97","title":"R1"},
 {"readCount":"469","title":"R2"}
 ]}
-{% endhighlight %}
+```
 
 假设这个json文件保存在列表json中，则`"readCount":"97"`需要这样引用：
 
@@ -205,11 +205,11 @@ paste可将多个字符串连接到一起。这个函数的声明很有意思：
 
 示例：
 
-{% highlight R %}
+```R
 add<-function(x,y){
   return (x+y)
 }
-{% endhighlight %}
+```
 
 这种方式和JavaScript十分类似。
 
@@ -217,11 +217,11 @@ add<-function(x,y){
 
 as库可进行各种常见数据格式的转换，非常好使。
 
-{% highlight R %}
+```R
 strDates <- c("01/05/1965", "08/16/1975")
 dates <- as.Date(strDates, "%m/%d/%Y") 
 strDates <- as.character(dates)
-{% endhighlight %}
+```
 
 ### 操作mysql数据库
 
@@ -237,7 +237,7 @@ strDates <- as.character(dates)
 
 示例：
 
-{% highlight R %}
+```R
 conn<-dbConnect(MySQL(), dbname = "ml", username="root", password="123456")
 summary(conn)
 query<-dbSendQuery(conn, "SELECT * FROM csdn")
@@ -245,7 +245,7 @@ data<-fetch(query, n = -1)
 dbClearResult(query)
 print(data)
 dbDisconnect(conn)
-{% endhighlight %}
+```
 
 ### 内置数据集
 
@@ -418,3 +418,7 @@ https://mp.weixin.qq.com/s/0jKN59DMo1HmCtw8ce-y7Q
 https://mp.weixin.qq.com/s/SLmyeLOp3h0bkD08WJS_Rg
 
 如何用R绘制交互式社会网络图？
+
+https://mp.weixin.qq.com/s/bB7583hMU9DGIc4-PMMQXw
+
+详解线性回归、朴素贝叶斯、随机森林在R和Python中的实现应用！

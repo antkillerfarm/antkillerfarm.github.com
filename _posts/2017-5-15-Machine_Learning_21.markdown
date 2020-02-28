@@ -154,10 +154,10 @@ $$\text{logits}(p) = \log\frac{p}{1-p}$$
 
 但是在tensorflow中：
 
-{% highlight python %}
+```python
 logits = tf.matmul(X, W) + bias
 Y_pred = tf.nn.softmax(logits,name='Y_pred')
-{% endhighlight %}
+```
 
 可见这里的logits是未进入softmax的概率，也就是**未归一化的概率**，或者说是softmax的输入。
 

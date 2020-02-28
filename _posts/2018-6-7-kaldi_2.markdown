@@ -57,43 +57,43 @@ https://blog.csdn.net/nihaomafb/article/details/48009695
 
 生成L：
 
-{% highlight bash %}
+```bash
 scripts/make_lexicon_fst.pl data/lexicon.txt 0.5 SIL | \
   fstcompile --isymbols=data/phones.txt --osymbols=data/words.txt \
   --keep_isymbols=false --keep_osymbols=false | \
    fstarcsort --sort_type=olabel > data/L.fst
-{% endhighlight %}
+```
 
 生成G：
 
-{% highlight bash %}
+```bash
 gunzip -c data_prep/lm.arpa.gz | \
   arpa2fst --disambig-symbol=#0 \
              --read-symbol-table=data/words.txt - data/G.fst
-{% endhighlight %}
+```
 
 生成$$L \circ G$$：
 
-{% highlight bash %}
+```bash
 fsttablecompose data/L_disambig.fst data/G.fst | \
     fstdeterminizestar --use-log=true | \
     fstminimizeencoded | fstpushspecial | \
     fstarcsort --sort-type=ilabel > somedir/LG.fst
-{% endhighlight %}
+```
 
 生成$$C \circ L \circ G$$：
 
-{% highlight bash %}
+```bash
 fstmakecontextfst --read-disambig-syms=$dir/disambig_phones.list \
 --write-disambig-syms=$dir/disambig_ilabels.list data/phones.txt $subseq_sym \
   $dir/ilabels | fstarcsort --sort_type=olabel > $dir/C.fst
 fstaddsubsequentialloop $subseq_sym $dir/LG.fst | \
  fsttablecompose $dir/C.fst - > $dir/CLG.fst
-{% endhighlight %}
+```
 
 生成$$H \circ C \circ L \circ G$$：
 
-{% highlight bash %}
+```bash
 make-h-transducer --disambig-syms-out=$dir/disambig_tstate.list \
    --transition-scale=1.0  $dir/ilabels.remapped \
    $tree $model  > $dir/Ha.fst
@@ -103,7 +103,7 @@ fsttablecompose $dir/Ha.fst $dir/CLG2.fst | \
    fstrmepslocal  | fstminimizeencoded > $dir/HCLGa.fst
 add-self-loops --self-loop-scale=0.1 \
     --reorder=true $model < $dir/HCLGa.fst > $dir/HCLG.fst
-{% endhighlight %}
+```
 
 ## 解码
 

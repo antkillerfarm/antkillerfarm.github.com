@@ -148,32 +148,32 @@ Froyo出来有一阵子了，一时兴起，从官网上git了代码，打算编
 
 9.10/10.04 add ubuntu 9.04 line to you /etc/apt/sources.list
 
-{% highlight bash %}
+```bash
 deb http://us.archive.ubuntu.com/ubuntu/ jaunty multiverse
 deb http://us.archive.ubuntu.com/ubuntu/ jaunty-updates multiverse
 sudo apt-get update
 sudo apt-get install sun-java5-jdk
-{% endhighlight %}
+```
 
 （注意安装会一直停留在阅读sun的同意书上，使劲按确定都没反应的（确定是文本不是按钮），后来按键盘Tab解决。）
 
 更改预设jdk的方法如下：同理，更改 默认的javac,方法为
 
-{% highlight bash %}
+```bash
 update-alternatives --config java
 update-alternatives --config javac
-{% endhighlight %}
+```
 
 显示如下，然后键入java-1.5.0-sun的 编号：
 
 有 2 个选项可用于替换项 java (提供 /usr/bin/java)。
 
-{% highlight bash %}
+```bash
 选择       路径                                    优先级  状态
 * 0   /usr/lib/jvm/java-6-openjdk/jre/bin/java   1061    自动模式
 1     /usr/lib/jvm/java-1.5.0-sun/jre/bin/java   53      手动模式
 2     /usr/lib/jvm/java-6-openjdk/jre/bin/java   1061    手动模式
-{% endhighlight %}
+```
 
 查看当前的java版本：
 
@@ -217,12 +217,12 @@ Google eclipse Plugin - http://dl.google.com/eclipse/plugin/3.6
 
 如果是调用系统自带的计算器，在网上搜了一下，可以使用如下代码：
 
-{% highlight java %}
+```java
 Intent mIntent = new Intent();
 mIntent.setClassName("com.android.calculator2",
      "com.android.calculator2.Calculator");
 startActivity(mIntent);
-{% endhighlight %}
+```
 
 从代码的内容来看，主要是使用Intent启动系统计算器的Activity。但是这个代码在我目前的环境下，却在运行时出现了以下错误：
 

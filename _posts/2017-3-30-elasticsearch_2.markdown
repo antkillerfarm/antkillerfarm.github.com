@@ -16,12 +16,12 @@ category: AI
 
 修改/etc/security/limits.conf：（需要root权限）
 
-{% highlight text %}
+```text
 es  soft    nproc     65536
 es  hard    nproc     65536
 es  soft    nofile    65536
 es  hard    nofile    65536
-{% endhighlight %}
+```
 
 重新登录es用户后，修改生效。
 

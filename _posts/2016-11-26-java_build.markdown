@@ -104,7 +104,7 @@ http://repo.maven.apache.org/maven2
 
 >注意这个配置文件只对该repo生效，如果想全局有效的话，可修改/etc/maven/settings.xml。
 
-{% highlight xml %}
+```xml
 <mirrors>
   <mirror>
     <id>UK</id>
@@ -113,7 +113,7 @@ http://repo.maven.apache.org/maven2
     <mirrorOf>central</mirrorOf>
   </mirror>
 </mirrors>
-{% endhighlight %}
+```
 
 其他mirror有：
 
@@ -155,7 +155,7 @@ jcenter是JFrog的产品，后者专注于maven部署，因此该网站拥有的
 
 2.使用system scope。
 
-{% highlight xml %}
+```xml
   <dependencies>
     <dependency>
       <groupId>org.richard</groupId>
@@ -165,7 +165,7 @@ jcenter是JFrog的产品，后者专注于maven部署，因此该网站拥有的
       <systemPath>${project.basedir}/lib/my-jar.jar</systemPath>
     </dependency>
   </dependencies>
-{% endhighlight %}
+```
 
 这种方法下，jar可以和代码放在同一个文件夹下，以便分发。然而这种做法不是官方推荐的做法，在执行时，需要自己处理classpath的问题。
 
@@ -263,7 +263,7 @@ https://zeroc.com/downloads/ice
 
 安装：
 
-{% highlight bash %}
+```bash
 wget https://zeroc.com/download/GPG-KEY-zeroc-release
 sudo apt-key add GPG-KEY-zeroc-release
 sudo apt-add-repository "deb http://zeroc.com/download/apt/ubuntu16.04 stable main"
@@ -271,7 +271,7 @@ sudo apt-get update
 sudo apt-get install zeroc-ice-all-runtime zeroc-ice-all-dev
 sudo apt-get install libssl-dev
 pip install zeroc-ice
-{% endhighlight %}
+```
 
 多语言demo：
 

@@ -62,7 +62,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/Qt/MyGlTest
 
 粗看代码，发现并无特殊的OpenGL处理，理论上应该无法达到一个线程处理渲染，另一个线程处理贴图的目标。但实际编译运行代码，又确实可用。因此这里面一定有什么原因。
 
-{% highlight cpp %}
+```cpp
 void ThreadGl::run()
 {
     connect(this, SIGNAL(SigCopy()), this, SLOT(Copy()));
@@ -85,7 +85,7 @@ void ThreadGl::Copy()
 {
     m_glWidgets -> OnTimeOut(m_pImage, m_Formal, m_pthId);
 }
-{% endhighlight %}
+```
 
 这段代码引起了我的注意。粗一看，connect函数连接的SIGNAL和SLOT都属于同一个对象。而connect函数的第5个参数（这是个有默认值的可省略参数）的默认值为Qt::AutoConnection。
 
@@ -113,17 +113,17 @@ void ThreadGl::Copy()
 
 `QMetaObject::activate`中使用以下代码，判定信号接收者的线程是否和信号发送者的一致。
 
-{% highlight cpp %}
+```cpp
 const bool receiverInSameThread = currentThreadId == receiver->d_func()->threadData->threadId;
-{% endhighlight %}
+```
 
 于是问题转化为`receiver->d_func()->threadData`是怎么来的呢？
 
 答案在`QObject::QObject`中：
 
-{% highlight cpp %}
+```cpp
 d->threadData = (parent && !parent->thread()) ? parent->d_func()->threadData : QThreadData::current();
-{% endhighlight %}
+```
 
 从这里可以看出所谓信号接收者的线程，实际上是接收者对象创建时所处的线程。
 
@@ -256,7 +256,7 @@ jaxws-demo中，调用wsgen生成的wsdl和xsd文件，在这里被wsimport编�
 
 解决方法：
 
-{% highlight xml %}
+```xml
 <plugin>
     <groupId>org.jvnet.jax-ws-commons</groupId>
     <artifactId>jaxws-maven-plugin</artifactId>
@@ -268,7 +268,7 @@ jaxws-demo中，调用wsgen生成的wsdl和xsd文件，在这里被wsimport编�
         </vmArgs>
     </configuration>
 </plugin>
-{% endhighlight %}
+```
 
 这个问题是由于JDK 1.8以后相关权限变得更加严格所导致的。
 

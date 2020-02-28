@@ -52,13 +52,13 @@ Openai gym是一个用于开发和比较强化学习（reinforcement learning，
 
 https://gym.openai.com/
 
-{% highlight bash %}
+```bash
 sudo apt install libffi-dev swig
 git clone https://github.com/openai/gym 
 cd gym
 pip install -e . # minimal install
 pip install -e .[all] # all install
-{% endhighlight %}
+```
 
 这里选择minimal install就可以了，all install需要安装MuJoCo，而后者是收费软件。
 

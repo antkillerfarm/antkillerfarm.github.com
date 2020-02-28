@@ -126,14 +126,14 @@ $$\begin{align}
 
 3.
 
-{% highlight text %}
+```text
 4 mod 4 → 0. Continue
 4 + 5 = 9 mod 4 →1. Continue
 9 + 5 = 14 mod 4 → 2. Continue
 14 + 5 = 19 mod 4 → 3. OK, continue by considering remainders modulo 3 and adding 5×4 = 20 each time
 19 mod 3 → 1. Continue
 19 + 20 = 39 mod 3 → 0. OK, this is the result.
-{% endhighlight %}
+```
 
 筛法对于M较小的情况，是非常高效的，因此手算一般都采用该法。但是，筛法的复杂度是指数级的，对于M较大的情况，并不好用。
 

@@ -40,14 +40,14 @@ https://www.edg.com/
 
 使用诸如
 
-{% highlight c %}
+```c
 #ifndef _COMMON_STRING_
 #define _COMMON_STRING_
 ...
 ...
 ...
 #endif
-{% endhighlight %}
+```
 
 解决不了这个问题。因为这段代码解决的是同一个源文件重复包含某个头文件的问题。而这里的问题是不同的源文件包含同一头文件时，产生的重复定义的问题。const关键字保证了同一标识符只会定义一次。
 
@@ -59,11 +59,11 @@ https://www.edg.com/
 
 引申一下
 
-{% highlight c %}
+```c
     int a[10];
     printf("%x\n",&a);
     printf("%x\n",a);
-{% endhighlight %}
+```
 
 可以看到&a和a的值是相等的，但含义不同。a相当于`int *p`，而&a相当于`int (*p)[10]`。
 
@@ -97,38 +97,38 @@ VC的默认规则基本如上所示，gcc的默认规则就是4字节对齐。
 
 可以比较一下
 
-{% highlight c %}
+```c
 struct s
 {
   char a;
   double b;
   int c;
 }
-{% endhighlight %}
+```
 
 与
 
-{% highlight c %}
+```c
 struct s
 {
   char a;
   int b;
   double c;
 }
-{% endhighlight %}
+```
 
 在各个平台上的sizeof值。
 
 附带说一下如果看到以下的代码片段，也就不要觉得惊奇了。
 
-{% highlight c %}
+```c
 typedef enum _XXX
 {
     XXX_0        = 0,
     XXX_1        = 1,
     XXX_FORCE_DWORD    = 0x7FFFFFFF/* 编译器对齐 */
 }XXX;
-{% endhighlight %}
+```
 
 # 字节对齐的设定
 
@@ -160,20 +160,20 @@ https://blog.csdn.net/hahahacff/article/details/39504699
 
 为了实现这个功能，教科书上给出的做法是这样的：
 
-{% highlight c %}
+```c
 #define st(x)      do { x } while (0)
 #define HAL_DMA_SET_SOURCE( pDesc, src ) \
   st( \
     pDesc->srcAddrH = (uint8)((uint16)(src) >> 8); \
     pDesc->srcAddrL = (uint8)( (uint16)(src) & 0xFF ); \
   )
-{% endhighlight %}
+```
 
 但是`do { x } while (0)`在有些编译器上会报warning。最近看Ti的代码的时候，看到了一种更好的办法：
 
-{% highlight c %}
+```c
 #define st(x)      do { x } while (__LINE__ == -1)
-{% endhighlight %}
+```
 
 # C++ 11/14/17的新特性
 
@@ -243,7 +243,7 @@ C++11老关键字的新含义(auto, using，extern)
 
 6.列表初始化
 
-{% highlight cpp %}
+```cpp
 struct Studnet
 {
     char* name;
@@ -253,7 +253,7 @@ Studnet s={"dablelv",18};
 
 std::vector<int> nVec(10, 1); // 包含10个元素，且值为1 
 std::vector<int> nVec{10, 1}; // 包含2个元素，值分别为10,1
-{% endhighlight %}
+```
 
 https://blog.csdn.net/sevenjoin/article/details/81779221
 
@@ -267,7 +267,7 @@ C++11列表初始化-花括号的使用
 
 宏定义：
 
-{% highlight c %}
+```c
 #if defined(__GNUC__) && ((__GNUC__ >= 4) || ((__GNUC__ == 3) && (__GNUC_MINOR__ >= 1)))
 #define CC_DEPRECATED_ATTRIBUTE __attribute__((deprecated))
 #elif _MSC_VER >= 1400 //vs 2005 or higher
@@ -275,7 +275,7 @@ C++11列表初始化-花括号的使用
 #else
 #define CC_DEPRECATED_ATTRIBUTE
 #endif
-{% endhighlight %}
+```
 
 宏使用：
 
@@ -283,7 +283,7 @@ C++11列表初始化-花括号的使用
 
 # 关于引用的一个常见错误
 
-{% highlight c %}
+```c
 class Base
 {
   public:
@@ -296,16 +296,16 @@ int main()
   b.something(Base());
   return 0;           
 }
-{% endhighlight %}
+```
 
 上面的代码在编译时，会出现如下错误信息：
 
-{% highlight text %}
+```text
 abc.cpp:12:20: error: no matching function for call to ‘Base::something(Base)’
 abc.cpp:12:20: note: candidate is:
 abc.cpp:6:7: note: void Base::something(Base&)
 abc.cpp:6:7: note: no known conversion for argument 1 from ‘Base’ to ‘Base&’
-{% endhighlight %}
+```
 
 这是由于`Base()`生成的是临时变量，将之赋值给一个non-const的引用是不行的。
 
@@ -331,7 +331,7 @@ https://en.wikipedia.org/wiki/C_standard_library
 
 # 数组定义时的赋值方法
 
-{% highlight c %}
+```c
 struct mtd_partition {
 	const char *name;		/* identifier string */
 	uint64_t size;			/* partition size */
@@ -360,13 +360,13 @@ static struct resource pxa27x_resource_ohci[] = {
 		.flags  = IORESOURCE_IRQ,
 	},
 };
-{% endhighlight %}
+```
 
 这些方法虽然不知道是C的哪个标准引入的，但是见到有代码这样用。
 
 # switch...case
 
-{% highlight c %}
+```c
 switch (reg) {
        case TAS5086_CLOCK_CONTROL ... TAS5086_BKNDERR:
        return 1;
@@ -374,14 +374,14 @@ switch (reg) {
        case TAS5086_PWM_OUTPUT_MUX:
        return 4;
 }
-{% endhighlight %}
+```
 
 可以用上面的办法，少写一些case语句。
 
 # cout格式化输出
 
-{% highlight c %}
+```c
 cout<<hex<<i<<endl; //输出十六进制数
 cout<<oct<<i<<endl; //输出八进制数
 cout<<dec<<i<<endl; //输出十进制数
-{% endhighlight %}
+```

@@ -168,10 +168,10 @@ http://jerryshao.me/architecture/2014/01/04/spark-shuffle-detail-investigation/
 
 有的时候为了防止控制台的日志输出过多，淹没了程序的正常输出，可以采用如下方法：
 
-{% highlight java %}
+```java
 SparkContext sc = SparkContext.getOrCreate(conf);
 sc.setLogLevel("WARN");
-{% endhighlight %}
+```
 
 ## 基本统计操作
 

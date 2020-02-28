@@ -100,7 +100,7 @@ http://www.cnblogs.com/peida/archive/2013/04/24/3036689.html
 
 # static block
 
-{% highlight java %}
+```java
 class A  
 {  
     ...
@@ -110,7 +110,7 @@ class A
     }
     ...
 }
-{% endhighlight %}
+```
 
 这样的结构被称为static block，它会在类被加载的时候执行且仅会被执行一次，相当于是特殊的构造函数。
 

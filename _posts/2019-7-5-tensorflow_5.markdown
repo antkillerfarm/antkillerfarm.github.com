@@ -277,3 +277,7 @@ https://mp.weixin.qq.com/s/ZNjC30F28uX2lBkHBAAU3g
 https://mp.weixin.qq.com/s/Ni42SEukRBGDUHu_bh3Lig
 
 基于LSTM模型的广告库存预估算法
+
+https://mp.weixin.qq.com/s/FYghBvkye8J7BqPje4JhFw
+
+汽车之家推荐系统排序算法迭代之路

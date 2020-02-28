@@ -32,11 +32,11 @@ Emacs：25.2
 
 2.安装Mac OS X主题
 
-{% highlight bash %}
+```bash
 sudo add-apt-repository ppa:noobslab/themes
 sudo apt-get update
 sudo apt-get install mac-ithemes-v3 mac-icons-v3
-{% endhighlight %}
+```
 
 3.Cairo Dock
 

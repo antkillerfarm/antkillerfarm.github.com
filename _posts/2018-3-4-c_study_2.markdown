@@ -118,12 +118,12 @@ C++11通过引入右值引用来优化性能，具体来说是通过move语义�
 
 不加限制的话，还会有`T&& &`（将`T&&`作为参数传给f1），所以就有了引用折叠（Reference collapsing）的概念，即：
 
-{% highlight cpp %}
+```cpp
 & & => &
 && & => &
 & && => &
 && && => &&
-{% endhighlight %}
+```
 
 如果把上述规则看作logical-OR的话，那么`&`就是1，而`&&`就是0。
 
@@ -187,10 +187,10 @@ unique_ptr早先在boost库中的时候，也叫做scoped_ptr。
 
 上述指针还可以自己定义deleter：
 
-{% highlight cpp %}
+```cpp
 void close_file(std::FILE* fp) { std::fclose(fp); }
 std::unique_ptr<std::FILE, decltype(&close_file)> fp(std::fopen("demo.txt", "r"),&close_file);
-{% endhighlight %}
+```
 
 上面的`close_file`就是自定义的deleter，用来进行特殊的析构。
 
@@ -214,7 +214,7 @@ https://mp.weixin.qq.com/s/32aeGOPaySjTmyKcjFKgYA
 
 和auto的用法类似，auto不仅要推导类型，还要定义变量，而decltype则只进行类型推导。
 
-{% highlight cpp %}
+```cpp
 int add(int x,int y){
     return x+y;
 }
@@ -223,7 +223,7 @@ int main(){
     decltype(i) a; // double
     decltype(add()) b; //int 注意括号。不带括号就是函数指针了。
 }
-{% endhighlight %}
+```
 
 参考：
 
@@ -253,7 +253,7 @@ C++11初探：类型推导，auto和decltype
 
 - dynamic_cast的改进版（主要是增加了一些断言或者异常处理）：
 
-{% highlight cpp %}
+```cpp
 template <class Derived, class Base>
 inline Derived polymorphic_cast(Base* x);
 // Throws: std::bad_cast if ( dynamic_cast<Derived>(x) == 0 )
@@ -263,4 +263,4 @@ template <class Derived, class Base>
 inline Derived polymorphic_downcast(Base* x);
 // Effects: assert( dynamic_cast<Derived>(x) == x );
 // Returns: static_cast<Derived>(x)
-{% endhighlight %}
+```

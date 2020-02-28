@@ -226,10 +226,10 @@ Unofficial Windows Binaries for Python Extension Packages
 
 ## list操作
 
-{% highlight python %}
+```python
 L.append(var)   #追加元素
 L.extend(list)  #追加list，即合并list到L上
-{% endhighlight %}
+```
 
 ## Python中的括号
 
@@ -291,37 +291,37 @@ z是关键字参数，它有默认值，可以不传。
 
 **一个星号**：收集位置参数放到一个元组中。例子：
 
-{% highlight python %}
+```python
 def prints(*arg):
     print arg;
 prints (1,2,3,4,5,6,7)
 #result: (1,2,3,4,5,6,7) 
-{% endhighlight %}
+```
 
 **两个星号**：收集关键字参数，并将其放到一个字典中。例子：
 
-{% highlight python %}
+```python
 def prints(**arg):
     print arg
 prints (a=1,b=2,c=3,d=4,e=5,f=6,g=7)
 #result: {‘a’: 1, ‘c’: 3, ‘b’: 2, ‘e’: 5, ‘d’: 4, ‘g’: 7, ‘f’: 6}
-{% endhighlight %}
+```
 
 **分隔不同类型参数**：
 
-{% highlight python %}
+```python
 def mix(a,b,*,x,y):
   """位置参数与关键字参数混合"""
   return a,b,x,y
 
 print(mix(1,2,x=3,y=4))
-{% endhighlight %}
+```
 
 星号前面的a和b是位置参数，星号后面的x和y是关键字参数，调用mix()函数并传入参数时，关键字参数一定要使用"变量名=值"的形式传入数据，如果同位置参数一样传入数据，就会引发一个TypeError异常
 
 ### 调用方法时
 
-{% highlight python %}
+```python
 def add(x,y):
     print x+y
 
@@ -332,7 +332,7 @@ add(*para)
 kkwd = {'x' :1,'y':2}
 add(**kkwd)
 #result: 3
-{% endhighlight %}
+```
 
 参考：
 
@@ -342,10 +342,10 @@ Python星号（ * ）操作符的用法
 
 ## pass语句
 
-{% highlight python %}
+```python
 def iplaypython():
        pass
-{% endhighlight %}
+```
 
 定义一个函数iplaypython，但函数体部分暂时还没有完成，又不能空着不写内容，因此可以用pass来替代占个位置。
 
@@ -407,9 +407,9 @@ https://www.jianshu.com/p/d09778f4e055
 
 Python的with语句允许我们非常方便地使用资源，而不必担心资源没有关闭。例如：
 
-{% highlight python %}
+```python
 with open('/path/to/file', 'r') as f:
     f.read()
-{% endhighlight %}
+```
 
 任何对象，只要正确实现了上下文管理，就可以用于with语句。

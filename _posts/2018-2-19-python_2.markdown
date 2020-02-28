@@ -10,7 +10,7 @@ category: language
 
 实现上下文管理是通过__enter__和__exit__这两个方法实现的：
 
-{% highlight python %}
+```python
 class Query(object):
 
     def __init__(self, name):
@@ -28,11 +28,11 @@ class Query(object):
 
     def query(self):
         print('Query info about %s...' % self.name)
-{% endhighlight %}
+```
 
 编写__enter__和__exit__仍然很繁琐，因此Python的标准库contextlib提供了更简单的写法：
 
-{% highlight python %}
+```python
 from contextlib import contextmanager
 
 @contextmanager
@@ -44,16 +44,16 @@ def tag(name):
 with tag("h1"):
     print("hello")
     print("world")
-{% endhighlight %}
+```
 
 上述代码执行结果为：
 
-{% highlight text %}
+```text
 <h1>
 hello
 world
 </h1>
-{% endhighlight %}
+```
 
 with语句首先执行yield之前的语句，因此打印出<h1>；yield调用会执行with语句内部的所有语句，因此打印出hello和world；最后执行yield之后的语句，打印出</h1>。
 
@@ -69,7 +69,7 @@ contextlib
 
 示例：
 
-{% highlight python %}
+```python
 # package
 # __init__.py
 import re
@@ -80,17 +80,17 @@ import os
 # a.py
 import package 
 print(package.re, package.urllib, package.sys, package.os)
-{% endhighlight %}
+```
 
 `__init__.py`中还有一个重要的变量，`__all__`,它用来将模块全部导入。
 
-{% highlight python %}
+```python
 # __init__.py
 __all__ = ['os', 'sys', 're', 'urllib']
 
 # a.py
 from package import *
-{% endhighlight %}
+```
 
 参见：
 
@@ -100,19 +100,19 @@ Python `__init__.py`作用详解
 
 ## import
 
-{% highlight python %}
+```python
 import subpackage1.a # 将模块subpackage.a导入全局命名空间，例如访问a中属性时用subpackage1.a.attr
 from subpackage1 import a #　将模块a导入全局命名空间，例如访问a中属性时用a.attr_a
 from subpackage.a import attr_a # 将模块a的属性直接导入到命名空间中，例如访问a中属性时直接用attr_a
-{% endhighlight %}
+```
 
 上面的例子给出了import子目录文件的方法。如果是父目录呢？
 
-{% highlight python %}
+```python
 import sys
 sys.path.append("..")
 import subpackage1.a # 假设subpackage1在../下
-{% endhighlight %}
+```
 
 使用上法还可以导入任意目录，只需要将路径加入`sys.path`即可。可以是相对路径，也可以是绝对路径。
 
@@ -166,37 +166,37 @@ python的字符串还有其他玩法：
 
 **filter(function, sequence)**：对sequence中的item依次执行function(item)，将执行结果为True的item组成一个List/String/Tuple（取决于sequence的类型）返回。
 
-{% highlight python %}
+```python
 >>> def f(x): return x % 2 != 0 and x % 3 != 0 
 >>> filter(f, range(2, 25)) 
 [5, 7, 11, 13, 17, 19, 23]
-{% endhighlight %}
+```
 
 **map(function, sequence) **：对sequence中的item依次执行function(item)，将执行结果组成一个List返回。
 
-{% highlight python %}
+```python
 >>> def cube(x): return x*x*x 
 >>> map(cube, range(1, 11)) 
 [1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]
-{% endhighlight %}
+```
 
 **reduce(function, sequence, starting_value)**：对sequence中的item顺序迭代调用function，如果有starting_value，还可以作为初始值调用，例如可以用来对List求和。
 
-{% highlight python %}
+```python
 >>> def add(x,y): return x + y 
 >>> reduce(add, range(1, 11)) 
 55 (PS: 1+2+3+4+5+6+7+8+9+10)
-{% endhighlight %}
+```
 
 **lambda**：这是Python支持一种有趣的语法，它允许你快速定义单行的最小函数，类似与C语言中的宏，这些叫做lambda的函数，是从LISP借用来的，可以用在任何需要函数的地方： 
 
-{% highlight python %}
+```python
 >>> g = lambda x: x * 2 
 >>> g(3)
 6
 >>> (lambda x: x * 2)(3) 
 6
-{% endhighlight %}
+```
 
 参考：
 
@@ -230,7 +230,7 @@ defaultdict()：返回一个和dictionary类似的对象，和dict不同主要�
 
 namedtuple()：namedtuple创建一个和tuple类似的对象，而且对象拥有可以访问的属性。这对象更像带有数据属性的类，不过数据属性是只读的。
 
-{% highlight python %}
+```python
 >>> from collections import namedtuple
 >>> TPoint = namedtuple('TPoint', ['x', 'y'])
 >>> p = TPoint(x=10, y=10)
@@ -240,7 +240,7 @@ TPoint(x=10, y=10)
 10
 >>> p.y
 10
-{% endhighlight %}
+```
 
 PS：非常类似C语言的结构体，不过数据属性是只读的。
 
@@ -290,7 +290,7 @@ https://mp.weixin.qq.com/s/qYKNGqItnSXq0-Zq2kMCKA
 
 ## @classmethod和@staticmethod
 
-{% highlight python %}
+```python
 class A(object):
     def foo(self, x):
         print("executing foo(%s,%s)" % (self, x))
@@ -302,7 +302,7 @@ class A(object):
     @staticmethod
     def static_foo(x):
         print("executing static_foo(%s)" % x)
-{% endhighlight %}
+```
 
 @classmethod类似于C++中的static，无须实例化就可以调用。@staticmethod则是普通成员函数的简写。python一般用cls表示类，而用self表示类的实例。当然，这只是编程规范的约束，而非编译器约束，使用其他名字也是可以的。
 
@@ -318,20 +318,20 @@ python中@classmethod @staticmethod区别
 
 示例：
 
-{% highlight python %}
+```python
 class A():
     pass
 
 a=A()
 a.name = "Job"
 a.age = 10
-{% endhighlight %}
+```
 
 ## del
 
 由于python都是引用，而python有GC机制，所以，del语句作用在变量上，而不是数据对象上。
 
-{% highlight python %}
+```python
 if __name__=='__main__':
     a=1       #对象1被变量a引用，对象1的引用计数器为1
     b=a       #对象1被变量b引用，对象1的引用计数器加1
@@ -339,7 +339,7 @@ if __name__=='__main__':
     del a     #删除变量a，解除a对1的引用
     del b     #删除变量b，解除b对1的引用
     print(c)  #最终变量c仍然引用1
-{% endhighlight %}
+```
 
 参考：
 
@@ -377,14 +377,14 @@ Python 2大限来了！113天后自生自灭，官方不再维护更新
 
 文件print：
 
-{% highlight python %}
+```python
 Python2: print >>sys.stderr, "fatal error"
 Python3: print("fatal error", file=sys.stderr)
-{% endhighlight %}
+```
 
 dict切片：
 
-{% highlight python %}
+```python
 Python2: 
 self._layers = net.blobs.keys()
 self._layers = self._layers[1:] # TypeError: 'dict_keys' object is not subscriptable
@@ -392,11 +392,22 @@ self._layers = self._layers[1:] # TypeError: 'dict_keys' object is not subscript
 Python3:
 self._layers = list(net.blobs.keys())
 self._layers = self._layers[1:]
-{% endhighlight %}
+```
 
 检查某对象是否为字符串或Unicode对象：
 
-{% highlight python %}
+```python
 Python2: isinstance(anobj, basestring)
 Python3: isinstance(anobj, str)
-{% endhighlight %}
+```
+## six
+
+six是一个专门用来兼容Python 2和Python 3的库。它解决了诸如urllib的部分方法不兼容，str和bytes类型不兼容等“知名”问题。2x3=6？这难道就是得名的原因？
+
+代码：
+
+https://bitbucket.org/gutworth/six
+
+文档：
+
+https://bitbucket.org/gutworth/six

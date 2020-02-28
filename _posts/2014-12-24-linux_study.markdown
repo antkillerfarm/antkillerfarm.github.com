@@ -34,10 +34,10 @@ linux文件分割用split,合并用cat。最近下了一本采用split分割的�
 
 例如
 
-{% highlight c %}
+```c
 printf("a\n");
 wprintf(L"b\n");
-{% endhighlight %}
+```
 
 输出为：
 
@@ -45,10 +45,10 @@ a
 
 而
 
-{% highlight c %}
+```c
 wprintf(L"b\n");
 printf("a\n");
-{% endhighlight %}
+```
 
 输出为：
 
@@ -62,17 +62,17 @@ http://bytes.com/groups/c/852681-wprintf-conflicts-printf-glibc-bug
 
 例如：
 
-{% highlight c %}
+```c
 wprintf(L"%s","a\n");
 wprintf(L"b\n");
-{% endhighlight %}
+```
 
 或
 
-{% highlight c %}
+```c
 printf("a\n");
 printf("%ls",L"b\n");
-{% endhighlight %}
+```
 
 # 关于SIGPIPE导致的程序退出
 
@@ -118,7 +118,7 @@ popen()函数通过创建一个管道，调用fork 产生一个子进程，执�
 
 例子如下：
 
-{% highlight c %}
+```c
 int8_t strcmd[256];
 memset(strcmd, 0 , sizeof(strcmd));
 sprintf(strcmd, "cat /etc/resolv.conf | awk '{printf $2}'");
@@ -129,7 +129,7 @@ if (pfile != NULL){
 	fgets(str, sizeof(str), pfile);
 	pclose(pfile);
 }
-{% endhighlight %}
+```
 
 # 软件包管理工具
 
@@ -164,9 +164,9 @@ select、poll、epoll之间的区别总结
 
 ## select函数
 
-{% highlight c %}
+```c
 int select(int maxfdp1,fd_set *readset,fd_set *writeset,fd_set *exceptset,const struct timeval *timeout)
-{% endhighlight %}
+```
 
 函数参数介绍如下：
 
@@ -174,12 +174,12 @@ int select(int maxfdp1,fd_set *readset,fd_set *writeset,fd_set *exceptset,const 
 
 中间的三个参数readset、writeset和exceptset指定我们要让内核测试读、写和异常条件的描述字。如果对某一个的条件不感兴趣，就可以把它设为空指针。struct fd_set可以理解为一个集合，这个集合中存放的是文件描述符，可通过以下四个宏进行设置：
 
-{% highlight c %}
+```c
 void FD_ZERO(fd_set *fdset);          //清空集合
 void FD_SET(int fd, fd_set *fdset);   //将一个给定的文件描述符加入集合之中
 void FD_CLR(int fd, fd_set *fdset);   //将一个给定的文件描述符从集合中删除
 int FD_ISSET(int fd, fd_set *fdset);  //检查集合中指定的文件描述符是否可以读写
-{% endhighlight %}
+```
 
 （3）timeout告知内核等待所指定描述字中的任何一个就绪可花多少时间。其timeval结构用于指定这段时间的秒数和微秒数。
 
@@ -201,7 +201,7 @@ int FD_ISSET(int fd, fd_set *fdset);  //检查集合中指定的文件描述符�
 
 poll技术与select技术本质上是没有区别的，只是文件句柄的存储结构变更了，变成了链表，所以没有了文件句柄的上限，但是其他缺点依旧存在。
 
-{% highlight c %}
+```c
 int poll ( struct pollfd * fds, unsigned int nfds, int timeout);
 
 struct pollfd {
@@ -209,11 +209,11 @@ int fd;         /* 文件描述符 */
 short events;         /* 等待的事件 */
 short revents;       /* 实际发生了的事件 */
 } ; 
-{% endhighlight %}
+```
 
 事件包括：
 
-{% highlight text %}
+```text
 POLLIN 有数据可读。
 POLLRDNORM 有普通数据可读。
 POLLRDBAND 有优先数据可读。
@@ -225,7 +225,7 @@ POLLMSGSIGPOLL 消息可用。
 POLLER 指定的文件描述符发生错误。
 POLLHUP 指定的文件描述符挂起事件。
 POLLNVAL 指定的文件描述符非法。
-{% endhighlight %}
+```
 
 ## epoll接口
 
@@ -263,7 +263,7 @@ Linux启动时，运行一个叫做init的程序，然后由它来启动后面�
 
 不同的运行级定义如下：
 
-{% highlight text %}
+```text
 0 - 停机（千万不要把initdefault 设置为0 ）
 1 - 单用户模式
 2 - 多用户，但是没有 NFS 
@@ -271,7 +271,7 @@ Linux启动时，运行一个叫做init的程序，然后由它来启动后面�
 4 - 没有用到
 5 - X11 
 6 - 重新启动 （千万不要把initdefault 设置为6 ）
-{% endhighlight %}
+```
 
 # uint8_t
 

@@ -6,7 +6,7 @@ category: language
 
 # 类型转换（续）
 
-{% highlight cpp %}
+```cpp
 template <class Derived, class Base>
 inline auto polymorphic_pointer_cast(Base x);
 // Throws: std::bad_cast if ( dynamic_pointer_cast<Derived>(x) == 0 )
@@ -16,7 +16,7 @@ template <class Derived, class Base>
 inline auto polymorphic_pointer_downcast(Base x);
 // Effects: assert( dynamic_pointer_cast<Derived>(x) == x );
 // Returns: static_pointer_cast<Derived>(x)
-{% endhighlight %}
+```
 
 参考：
 
@@ -26,7 +26,7 @@ C++强制类型转换：static_cast、dynamic_cast、const_cast、reinterpret_ca
 
 # std::bind & std::placeholders
 
-{% highlight cpp %}
+```cpp
 void f(int n1, int n2, int n3, const int& n4, int n5)
 {
     std::cout << n1 << ' ' << n2 << ' ' << n3 << ' ' << n4 << ' ' << n5 << '\n';
@@ -34,11 +34,11 @@ void f(int n1, int n2, int n3, const int& n4, int n5)
 
 auto f2 = std::bind(f, _3, std::bind(g, _3), _3, 4, 5);
 f2(10, 11, 12); // 进行到 f(12, g(12), 12, 4, 5); 的调用
-{% endhighlight %}
+```
 
 # 不定参数
 
-{% highlight cpp %}
+```cpp
 int sum(int count, ...)
 {
     va_list vl;
@@ -51,11 +51,11 @@ int sum(int count, ...)
     va_end(vl);
     return sum;
 }
-{% endhighlight %}
+```
 
 上面是C风格的变参函数，主要依赖了va_xx系列函数。
 
-{% highlight cpp %}
+```cpp
 template<typename T>
 void Append(Optimizer::Optimizations& optimizations, T&& optimization)
 {
@@ -78,7 +78,7 @@ Optimizer::Optimizations MakeOptimizations(Args&&... args)
 
     return optimizations;
 }
-{% endhighlight %}
+```
 
 上面是C++风格的变参函数。它主要采用了Parameter pack技术，简单的说就是递归的模板展开。
 
@@ -92,13 +92,13 @@ std::tuple、std::bind等的实现都借助了Parameter pack。
 
 在C++17中，还提出一个叫做fold expression的技术。
 
-{% highlight cpp %}
+```cpp
 template<typename ...Args>
 int sum(Args&&... args) {
 //    return (args + ... + 1 * 2); // Error: operator with precedence below cast
     return (args + ... + (1 * 2)); // OK
 }
-{% endhighlight %}
+```
 
 上述函数是一个对`+`运算符的fold expression。
 
@@ -110,13 +110,13 @@ C++11新特性--不定参数模板与std::tuple、std::bind实现原理
 
 # 特化（traits）
 
-{% highlight cpp %}
+```cpp
 template<class T1, class T2>      // 普通版本，有两个模板参数
 class B { ..... };
 
 template<class T2>         // 偏特化版本，指定其中一个参数，即指定了部分类型
 class B<int , T2> { ..... };// 当实例化时的第一个参数为int 则会优先调用这个版本
-{% endhighlight %}
+```
 
 **偏特化**的条件：
 
@@ -208,18 +208,18 @@ C++中explicit关键字的作用
 
 # std::tuple
 
-{% highlight cpp %}
+```cpp
 auto tuple = std::make_tuple(1, 'A', "test");
 std::cout << std::get<0>(tuple) << std::endl;
 std::cout << std::get<1>(tuple) << std::endl;
 std::cout << std::get<2>(tuple) << std::endl;
-{% endhighlight %}
+```
 
 # std::tie
 
 可用tuple或pair返回多个返回值，然后用tie进行解包。这里的语法非常类似python。
 
-{% highlight cpp %}
+```cpp
 std::pair<int, std::string> fun_tie(int a, std::string str)
 {
   return std::make_pair(a, str);
@@ -229,11 +229,11 @@ int a;
 std::string str;
 std::tie(a , str) = fun_tie(12, std::string("Pony Ma"));
 std::cout << a << "," << str << std::endl;
-{% endhighlight %}
+```
 
 # 模板实参推导
 
-{% highlight cpp %}
+```cpp
 template<typename To, typename From> To convert(From f);
 void g(double d)
 {
@@ -241,13 +241,13 @@ void g(double d)
     char c = convert<char>(d);  // 调用 convert<char, double>(double)
     int(*ptr)(float) = convert; // 实例化 convert<int, float>(float)
 }
-{% endhighlight %}
+```
 
 除了特化模板之外，从函数参数推断模板参数也是可以的，如上例中的模板参数`From`就可以从使用该模板参数的函数参数`f`的类型，倒推出来。
 
 # Defaulted & Deleted
 
-{% highlight cpp %}
+```cpp
 class X{
 public:
   X(int i){
@@ -260,7 +260,7 @@ private:
 };
 
 X x;
-{% endhighlight %}
+```
 
 由于已经有了`X(int i)`，编译器就不会生成默认的`X()`了，因此`X x;`会出错。解决办法是`X()=default;`。
 
@@ -272,7 +272,7 @@ C++11标准新特性：Defaulted和Deleted函数
 
 # 打印vector的N种方法
 
-{% highlight cpp %}
+```cpp
 auto vec = make_index_vector(std::make_index_sequence<10>());
 for(auto i : vec) {std::cout << i << ' ';}
 std::cout << std::endl;
@@ -281,7 +281,7 @@ std::copy(vec.begin(), vec.end(), std::ostream_iterator<int>(std::cout, " "));
 std::cout << std::endl;
 std::for_each(std::begin(vec),std::end(vec),[](int n){std::cout<<n<<" ";});
 std::cout << std::endl;
-{% endhighlight %}
+```
 
 # 小细节
 
@@ -291,12 +291,12 @@ std::cout << std::endl;
 
 除了for循环遍历之外，C++还可以用std::for_each/std::find_if进行循环遍历，尤其是后者可以用于条件筛选。
 
-{% highlight cpp %}
+```cpp
 for(auto& item: list)
 {
   //do sth
 }
-{% endhighlight %}
+```
 
 ----
 

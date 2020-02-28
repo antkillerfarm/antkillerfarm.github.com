@@ -92,10 +92,10 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tenso
 
 在识别验证码的例子中，假如有两幅图，分别是123和4567，那么Label就是：
 
-{% highlight text %}
+```text
 [[1,2,3,0]
  [4,5,6,7]]
-{% endhighlight %}
+```
 
 虽然英语是表音文字，但直接分解字母作为标签显然是不太精确的。
 

@@ -76,10 +76,10 @@ Lambda层用以对上一层的输出施以任何Theano/TensorFlow表达式，这
 
 ### 模型可视化
 
-{% highlight python %}
+```python
 from keras.utils import plot_model
 plot_model(model, to_file='model.png')
-{% endhighlight %}
+```
 
 ## 实战GAN
 

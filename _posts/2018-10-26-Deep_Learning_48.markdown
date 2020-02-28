@@ -196,6 +196,10 @@ https://zhuanlan.zhihu.com/p/55193930
 
 Attention U-Net论文笔记
 
+https://zhuanlan.zhihu.com/p/109514384
+
+医学图像分割的Non-local U-Nets
+
 # 语义分割进阶
 
 https://mp.weixin.qq.com/s/_q8N8keNpcD-jXLrRd_8dw

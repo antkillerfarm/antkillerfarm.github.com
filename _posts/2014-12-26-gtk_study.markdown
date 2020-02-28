@@ -97,10 +97,10 @@ https://blog.csdn.net/taiyang1987912/article/category/5778511
 
 在mingw文件夹下新建MinGW.bat文件，内容如下：
 
-{% highlight bat %}
+```bat
 set PATH=D:\QtSDK\mingw\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;D:\gtk+-bundle_3.6.4-20130513_win32\bin
 cmd
-{% endhighlight %}
+```
 
 除了几个Windows的系统路径之外，把MinGW和GTK的路径加进去就可以了。
 

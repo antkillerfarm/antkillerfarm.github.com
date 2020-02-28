@@ -321,12 +321,12 @@ numpy对这两种方式都支持，而且还巧妙的利用了两者之间的差
 
 比如上述转置操作，你以为numpy真的做了转置运算吗？其实不然。
 
-{% highlight python %}
+```python
 >>>arr.flags.f_contiguous
 False
 >>>arr2.flags.f_contiguous
 True
-{% endhighlight %}
+```
 
 看到没，这里仅仅设置了一个标志而已。
 

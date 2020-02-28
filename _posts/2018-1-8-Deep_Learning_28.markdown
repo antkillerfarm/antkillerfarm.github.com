@@ -251,6 +251,14 @@ https://mp.weixin.qq.com/s/4AzF6utrQhhEweRIM6zV3A
 
 文本+视觉，跨模态预训练新进展
 
+https://mp.weixin.qq.com/s/dG7Lr5fdmqJQaYOWgkk8iw
+
+如何构建多模态BERT?这份UNC76页《LXMERT: 从Transformer学习跨模态编码表示》PPT告诉您
+
+https://mp.weixin.qq.com/s/QIJ2c4L7KfjVEhIyKayJ-Q
+
+阿里文娱多模态视频分类算法中的特征改进
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

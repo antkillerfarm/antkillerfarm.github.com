@@ -68,28 +68,28 @@ https://mp.weixin.qq.com/s/f0B85WP-y84Xo3HaG3T6dQ
 
 1.检查依赖。
 
-{% highlight bash %}
+```bash
 cd tools
 extras/check_dependencies.sh
-{% endhighlight %}
+```
 
 根据提示，缺什么就装什么。
 
 2.编译tools文件夹
 
-{% highlight bash %}
+```bash
 make -j 4
-{% endhighlight %}
+```
 
 3.编译src文件夹
 
-{% highlight bash %}
+```bash
 cd ../src
 sudo apt install libatlas-base-dev
 ./configure --shared
 make depend -j 4
 make -j 4
-{% endhighlight %}
+```
 
 # 运行示例
 
@@ -111,7 +111,7 @@ http://cn-mirror.openslr.org/18/
 
 2.修改cmd.sh。
 
-{% highlight bash %}
+```bash
 export train_cmd=run.pl
 export decode_cmd="run.pl --mem 4G"
 export mkgraph_cmd="run.pl --mem 8G"
@@ -120,7 +120,7 @@ export cuda_cmd="run.pl --gpu 1"
 #export decode_cmd="queue.pl --mem 4G"
 #export mkgraph_cmd="queue.pl --mem 8G"
 #export cuda_cmd="queue.pl --gpu 1"
-{% endhighlight %}
+```
 
 3.修改run.sh中的数据路径，并运行之。
 
@@ -300,42 +300,42 @@ https://blog.csdn.net/snowdroptulip/article/details/78943748
 
 `utt_id    WORD1 WORD2 WORD3 WORD4 ...`
 
-{% highlight text %}
+```text
 110236_20091006_82330_F_0001 I'M WORRIED ABOUT THAT
 110236_20091006_82330_F_0002 AT LEAST NOW WE HAVE THE BENEFIT
 110236_20091006_82330_F_0003 DID YOU EVER GO ON STRIKE
-{% endhighlight %}
+```
 
 ## segments
 
 `utt_id    file_id    start_time    end_time`
 
-{% highlight text %}
+```text
 110236_20091006_82330_F_001 110236_20091006_82330_F 0.0 3.44
 110236_20091006_82330_F_002 110236_20091006_82330_F 4.60 8.54
 110236_20091006_82330_F_003 110236_20091006_82330_F 9.45 12.05
 110236_20091006_82330_F_004 110236_20091006_82330_F 13.29 16.13
-{% endhighlight %}
+```
 
 ## wav.scp
 
 `file_id    path/file`
 
-{% highlight text %}
+```text
 110236_20091006_82330_F path/110236_20091006_82330_F.wav
 111138_20091215_82636_F path/111138_20091215_82636_F.wav
 111138_20091217_82636_F path/111138_20091217_82636_F.wav
-{% endhighlight %}
+```
 
 ## utt2spk
 
 `utt_id    spkr_id`
 
-{% highlight text %}
+```text
 110236_20091006_82330_F_0001 110236
 110236_20091006_82330_F_0002 110236
 110236_20091006_82330_F_0003 110236
-{% endhighlight %}
+```
 
 ## spk2utt
 
@@ -345,16 +345,16 @@ https://blog.csdn.net/snowdroptulip/article/details/78943748
 
 lexicon.txt就是发声词典。
 
-{% highlight text %}
+```text
 WORD        W ER D
 LEXICON     L EH K S IH K AH N
-{% endhighlight %}
+```
 
 # ARPA文件格式
 
 SRILM生成的lm文件是ARPA文件格式。
 
-{% highlight text %}
+```text
 \data\
 ngram 1=64000
 ngram 2=522530
@@ -365,6 +365,6 @@ ngram 3=173445
 -4.675221    'em     -0.221857
 -4.989297    'n      -0.05809768
 -5.365303    'til    -0.1855581
-{% endhighlight %}
+```
 
 这个文件的头部比较好懂，不解释。

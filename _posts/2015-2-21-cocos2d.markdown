@@ -10,7 +10,7 @@ cocos2d和cocos2d-x虽然都是一家的产品，但前者是用python写的，�
 
 我试着在windows下安装cocos2d，没有什么问题。但在ubuntu下安装的时候，运行demo，程序会出错。看错误提示，错误是出在pyglet这个包里。由于一时间没有好的办法解决，所以就此终止，换用cocos2d-x。
 
-{% highlight bash %}
+```bash
 $ cd $cocos2dx_root/build
 $ ./install-deps-linux.sh
 $ mkdir linux-build
@@ -19,17 +19,17 @@ $ cmake ../..
 $ make
 $ cd bin/cpp-tests/
 $ ./cpp-tests
-{% endhighlight %}
+```
 
 # 新建工程
 
-{% highlight bash %}
+```bash
 $ cd cocos2d-x
 $ ./setup.py
 $ source ~/.bash_profile # may be ~/.bash_login or ~/.profile, depends on your environemnt
 $ cocos new MyGame -p com.MyCompany.MyGame -l cpp -d ~/MyCompany
 $ cocos run -s ~/MyCompany/MyGame -p linux
-{% endhighlight %}
+```
 
 # 教程
 
@@ -135,34 +135,34 @@ CMakeLists.txt在代码的不同文件夹中有很多个。其中以工程根文
 
 以patch的形式给出的办法：
 
-{% highlight cpp %}
+```cpp
 + class HelloWorld : public cocos2d::LayerColor
 - class HelloWorld : public cocos2d::Layer
 
 + LayerColor::initWithColor(Color4B(155, 155, 155, 255))
 - Layer::init()
-{% endhighlight %}
+```
 
 2.实现动画结束之后触发动作
 
-{% highlight cpp %}
+```cpp
 sprite->runAction(Sequence::create(action,
   CallFunc::create(CC_CALLBACK_0(
   HelloWorld::AnimationFinished, this)), nullptr));
 
 void HelloWorld::AnimationFinished();
-{% endhighlight %}
+```
 
 3.循环动画
 
-{% highlight cpp %}
+```cpp
 sprite->runAction(RepeatForever::create(
 	Sequence::create(action, action->reverse(), nullptr)));
-{% endhighlight %}
+```
 
 4.update操作
 
-{% highlight cpp %}
+```cpp
 bool HelloWorld::init()
 {
 ...
@@ -183,7 +183,7 @@ bool HelloWorld::init()
 }
 void HelloWorld::update(float dt);
 void HelloWorld::hUpdate(float dt);
-{% endhighlight %}
+```
 
 # cocos2d-x v3调用Box2D
 
@@ -199,7 +199,7 @@ http://discuss.cocos2d-x.org/t/cocos2d-v-3-how-to-enable-box2d/15597
 
 2.cocos/CMakeLists.txt
 
-{% highlight bash %}
+```bash
 option(USE_CHIPMUNK "Use chipmunk for physics library" OFF)
 option(USE_BOX2D "Use box2d for physics library" ON)
 
@@ -209,7 +209,7 @@ set(USE_BOX2D true)
 target_link_libraries(${APP_NAME}
   box2d
   )
-{% endhighlight %}
+```
 
 示例代码在:
 

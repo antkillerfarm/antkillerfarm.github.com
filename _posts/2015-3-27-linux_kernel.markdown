@@ -120,29 +120,29 @@ PS：/etc/modules由/etc/init/module-init-tools.conf 或 /etc/init/kmod.conf负�
 
 数据结构课本上教链表的时候，一般是这样定义链表的数据结构的：
 
-{% highlight c %}
+```c
 typedef struct {
     struct Node *next;
     UserData data;
 }Node;
-{% endhighlight %}
+```
 
 其中，data字段包含了要保存到链表中的数据内容。使用这样的数据结构实现的链表，通用性不好，需要针对不同的UserData类型定义不同的链表类型，尽管所有这些链表的操作都是类似的。当然这样的定义在C++中不是太大的问题，使用模板就可以实现对不同UserData类型的处理，虽然这样做无法避免代码段的膨胀，但是仅就书写使用来说，并没有太大的不方便。
 
 一种改进的办法是将数据结构改为下面的样子：
 
-{% highlight c %}
+```c
 typedef struct {
     struct Node *next;
     void* data;
 }Node;
-{% endhighlight %}
+```
 
 用无类型的指针指向需要保存的数据内容，是一个通用性不错的办法。但是C语言本身没有对元数据的支持，一旦指针退化成无类型的指针，再想恢复成原来的数据类型就比较困难了。（元数据就是所有数据类型的基类，例如Java语言的Object类、MFC的CObject类、GTK的GObject结构。虽然元数据本身并不要求包含数据的类型信息，但在上述这些元数据的实现中，都提供了这个功能。）
 
 Linux的做法是：（为了便于理解，进行了一些改写，以忽略与本话题无关的部分）
 
-{% highlight c %}
+```c
 typedef struct {
     struct Node *next;
 }Node;
@@ -150,7 +150,7 @@ typedef struct {
     Node *node;
     UserDataActual data;
 }UserData;
-{% endhighlight %}
+```
 
 这实际上是一种逆向思维，也就是将链表结点中包含用户数据，改为用户数据中包含链表结点。在链表处理时，将node传给链表处理函数。而在引用用户数据时，通过计算node和data的地址偏差，获得data的实际地址。具体的技巧如下：
 

@@ -14,10 +14,10 @@ boost直接安装：
 
 编译：
 
-{% highlight bash %}
+```bash
 ./bootstrap.sh
 ./b2 install link=static cxxflags=-fPIC --with-test --prefix=</path/to/install>
-{% endhighlight %}
+```
 
 boost的组件有很多，这里只编译了test组件。
 
@@ -95,7 +95,7 @@ https://www.cnblogs.com/coderzh/archive/2009/04/06/1426755.html
 
 ## boost::format
 
-{% highlight cpp %}
+```cpp
 cout << boost::format("%1%"
     "%1t 十进制 = [%2$d]\n"
     "%1t 格式化的十进制 = [%2$5d]\n"
@@ -106,7 +106,7 @@ cout << boost::format("%1%"
     "%1t 格式化的浮点 = [%3$3.3f]\n"
     "%1t 科学计数 = [%3$e]\n"
     ) % "example :\n" % 15 % 15.01 << endl;
-{% endhighlight %}
+```
 
 参考：
 
@@ -152,7 +152,7 @@ PS: XmlReader提出的pull方案，后来被libxml2采用，成为了GTK+的一�
 
 代码示例如下:
 
-{% highlight c# %}
+```c#
     public class MsgWindow : MessageWindow
     {
 
@@ -176,7 +176,7 @@ PS: XmlReader提出的pull方案，后来被libxml2采用，成为了GTK+的一�
             base.WndProc(ref msg);
         }
     }
-{% endhighlight %}
+```
 
 ## C#中的发布功能
 

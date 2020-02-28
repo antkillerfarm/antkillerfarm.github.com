@@ -318,50 +318,6 @@ https://mp.weixin.qq.com/s/UBWN4_Sem8W1WcjsLAnjjQ
 
 # Python+
 
-https://mp.weixin.qq.com/s/d2_MTvfbOFZmppej5UOwUw
-
-关于使用Python析构函数的正确姿势
-
-https://mp.weixin.qq.com/s/weEZEr4g8pI11Gijc-St0Q
-
-DeBug Python代码全靠print函数？换用这个一天2K+Star的工具吧
-
-https://mp.weixin.qq.com/s/wr18ylCJyJOX83BhbvGXng
-
-13个Python开发者必知的Python GUI库
-
-https://mp.weixin.qq.com/s/S_mIspLOrmj8ny0VHP52ZA
-
-Python高级技巧：lazy property
-
-https://mp.weixin.qq.com/s/06-iOG5TkRkHb4RZl1bXNQ
-
-史上最全Python迭代器与生成器
-
-https://mp.weixin.qq.com/s/lv_sjvXx8vWf6TsVoYoxFw
-
-Python处理文件系统的10种方法
-
-https://mp.weixin.qq.com/s/KCiR6ZE1EpYVfySaCG097A
-
-上半年最常见的Python面试题
-
-https://mp.weixin.qq.com/s/0dw2LHsIKFv8B_JaIMoekg
-
-python字符编码处理总结
-
-https://mp.weixin.qq.com/s/fTs_r7DLbLWoos4uRM3KYA
-
-10个Python常见面试题，这些弄不明白不要说学过Python！
-
-https://mp.weixin.qq.com/s/kt5isheTBnpwKUhJAuXnYw
-
-视频剪辑什么鬼？Python带你高效创作短视频
-
-https://mp.weixin.qq.com/s/G5qx3-1Wq4gcRSuRfrczuw
-
-Python趣味打怪：60秒学会一个例子，147段简单代码助你从入门到大师
-
 https://mp.weixin.qq.com/s/Hv0rPD29PPd3Rn6lW6w5dg
 
 教你使用Python制作酷炫二维码

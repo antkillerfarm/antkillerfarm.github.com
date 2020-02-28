@@ -127,7 +127,7 @@ EVC下将MFC的工程分为PPC和wince两种，而VS2005下，不再区分这两
 
 ## 7.设置全屏
 
-{% highlight c %}
+```c
         // 隐藏任务栏
         HWND hWndTaskBar = ::FindWindow(TEXT("HHTaskBar"), NULL);
         if (NULL != hWndTaskBar)
@@ -152,7 +152,7 @@ EVC下将MFC的工程分为PPC和wince两种，而VS2005下，不再区分这两
         {
             ::ShowWindow(hWndSipButton, SW_HIDE);                           
         }
-{% endhighlight %}
+```
 
 ## 8.打电话
 

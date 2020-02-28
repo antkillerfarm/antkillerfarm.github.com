@@ -96,13 +96,13 @@ http://www.sohu.com/a/164277987_473283
 
 **Step 2**：编译TensorFlow。
 
-{% highlight bash %}
+```bash
 ./configure
 # configure的时候要选择一些东西是否支持，这里建议都选N，不然后面会包错，如果支持显卡，就在cuda的时候选择y
 bazel build --config=opt //tensorflow/tools/pip_package:build_pip_package # CPU only
 bazel build --config=opt --config=cuda //tensorflow/tools/pip_package:build_pip_package # GPU
 bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg #生成wheel文件
-{% endhighlight %}
+```
 
 configure脚本会自动选择CPU指令集优化，因此源代码编译的TensorFlow，肯定比pip安装的要运行的快。
 
@@ -216,7 +216,7 @@ Graph和Session的关系，类似于类和对象的关系。Session是Graph的�
 
 以下是使用多个Graph的示例：
 
-{% highlight python %}
+```python
 import tensorflow as tf
 g1 = tf.Graph()
 with g1.as_default():
@@ -228,7 +228,7 @@ with tf.Session(graph=g1) as sess1:
     print sess1.run(c1)
 with tf.Session(graph=g2) as sess2:
     print sess2.run(c2)
-{% endhighlight %}
+```
 
 Tensorflow对计算图的简化，不仅在于使用默认的Graph。还在于可以只计算部分的Graph。部分Graph，也被称作Sub Graph。
 

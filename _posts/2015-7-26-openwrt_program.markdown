@@ -70,7 +70,7 @@ http://www.ccs.neu.edu/home/noubir/Courses/CS6710/S12/material/OpenWrt_Dev_Tutor
 
 以luasocket为例，在feeds中的makefile中有如下片段：
 
-{% highlight bash %}
+```bash
 define Build/Compile
 	$(MAKE) -C $(PKG_BUILD_DIR)/ \
 		LIBDIR="$(TARGET_LDFLAGS)" \
@@ -78,7 +78,7 @@ define Build/Compile
 		LD="$(TARGET_CROSS)ld -shared" \
 		all
 endef
-{% endhighlight %}
+```
 
 将其中的ld，改为gcc即可。
 
@@ -108,12 +108,12 @@ ip命令是linux网络管理方面的命令，它的代码在iproute2包中。
 
 2)如果ncurses已经安装了，需要查看TERM, TERMINFO两个环境变量是否已经设置正确。如果没有设置正确，需要设置为正确的值。
 
-{% highlight bash %}
+```bash
 $ echo $TERM
 xterm
 $ echo $TERMINFO
 /lib/terminfo/
-{% endhighlight %}
+```
 
 # procd
 
@@ -163,7 +163,7 @@ procd本身已经有很多debug信息，只是一般不打印而已。启动时�
 
 这个文件的格式，大致如下：
 
-{% highlight text %}
+```text
 [
 	[ "case", "ACTION", {
 		"add": [
@@ -197,7 +197,7 @@ procd本身已经有很多debug信息，只是一般不打印而已。启动时�
 		[ "exec", "/sbin/hotplug-call", "tty" ]
 	],
 ]
-{% endhighlight %}
+```
 
 从代码可以看出，这个文件是个披着json外皮的程序文件，其关键字和C语言类似，而结构风格则类似Lisp语言：在表达式的组合上，广泛使用了逆波兰表达式。
 
@@ -219,7 +219,7 @@ U盘驱动可分为两个层次：
 
 以下是U盘插入时，生成的事件的procd日志：
 
-{% highlight c %}
+```c
 {"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1","SUBSYSTEM":"usb","MAJOR":"189","MINOR":"3","DEVNAME":"bus/usb/001/004","DEVTYPE":"usb_device","PRODUCT":"c76/5/100","TYPE":"0/0/0","BUSNUM":"001","DEVNUM":"004","SEQNUM":"466"}
 {"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0","SUBSYSTEM":"usb","DEVTYPE":"usb_interface","PRODUCT":"c76/5/100","TYPE":"0/0/0","INTERFACE":"8/6/80","MODALIAS":"usb:v0C76p0005d0100dc00dsc00dp00ic08isc06ip50in00","SEQNUM":"467"}
 {"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0","SUBSYSTEM":"scsi","DEVTYPE":"scsi_host","SEQNUM":"468"}
@@ -232,7 +232,7 @@ U盘驱动可分为两个层次：
 {"ACTION":"add","DEVPATH":"/devices/virtual/bdi/8:0","SUBSYSTEM":"bdi","SEQNUM":"474"}
 {"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0/target0:0:0/0:0:0:0/block/sda","SUBSYSTEM":"block","MAJOR":"8","MINOR":"0","DEVNAME":"sda","DEVTYPE":"disk","SEQNUM":"475"}
 {"ACTION":"add","DEVPATH":"/devices/platform/rtl819x-ehci/usb1/1-1/1-1.1/1-1.1:1.0/host0/target0:0:0/0:0:0:0/block/sda/sda1","SUBSYSTEM":"block","MAJOR":"8","MINOR":"1","DEVNAME":"sda1","DEVTYPE":"partition","SEQNUM":"476"}
-{% endhighlight %}
+```
 
 从上面的内容可以看出：
 
@@ -244,11 +244,11 @@ U盘驱动可分为两个层次：
 
 IP地址被改变事件示例：
 
-{% highlight c %}
+```c
 [ "$INTERFACE" = "lan" ] && [ "$ACTION" = "ifup" ] && {
 	/etc/init.d/gmediarender restart
 }
-{% endhighlight %}
+```
 
 # Openwrt 3G拨号上网
 
@@ -292,10 +292,10 @@ http://h4x3rotab.github.io/blog/2014/02/27/openwrtxia-de-gdbyuan-cheng-diao-shi/
 
 除了上面列出的内容之外，我还遇到了一个问题：我所用平台的SDK将`-Os`作为全局的编译选项。这在平时自然没什么，但调试的时候就有问题了。如何将`-Os`换成`-O0`呢？可参见以下示例：
 
-{% highlight c %}
+```c
 TARGET0_CFLAGS:=$(filter-out -Os,$(TARGET_CFLAGS))
 TARGET_CFLAGS:= -O0 $(TARGET0_CFLAGS) -ggdb3
-{% endhighlight %}
+```
 
 这里解释一下：
 

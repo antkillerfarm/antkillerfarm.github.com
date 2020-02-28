@@ -116,11 +116,11 @@ C代码相关的内容：
 
 2）xcscope.el的默认路径：/usr/share/emacs/site-lisp。安装好之后，还需要在配置文件~/.emacs（如果当前没有这个配置文件的话，直接创建一个即可）里面加上`(require 'xcscope)`。或者，如果希望在打开c或者c++文件的时候才加载xcsope，可以这样写：
 
-{% highlight lisp %}
+```lisp
 (add-hook 'c-mode-common-hook
 '(lambda ()
 (require 'xcscope)))
-{% endhighlight %}
+```
 
 注：Windows下创建配置文件的步骤：
 
@@ -160,7 +160,7 @@ http://melpa.org/
 
 melpa的安装方法：
 
-{% highlight lisp %}
+```lisp
 (when (>= emacs-major-version 24)
   (require 'package)
   (add-to-list
@@ -168,7 +168,7 @@ melpa的安装方法：
    '("melpa" . "http://melpa.org/packages/")
    t)
   (package-initialize))
-{% endhighlight %}
+```
 
 重启emacs之后，执行：
 
@@ -218,12 +218,12 @@ https://github.com/leoliu/ggtags
 
 在配置文件~/.emacs中添加：
 
-{% highlight lisp %}
+```lisp
 (add-hook 'c-mode-common-hook
           (lambda ()
             (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
               (ggtags-mode 1))))
-{% endhighlight %}
+```
 
 ## scratch缓冲区
 
@@ -243,11 +243,11 @@ https://github.com/leoliu/ggtags
 
 在配置文件~/.emacs中添加：
 
-{% highlight lisp %}
+```lisp
 (require 'recentf)
 (setq recentf-max-saved-items 100)
 (recentf-mode 1)
-{% endhighlight %}
+```
 
 ## 添加scala支持
 

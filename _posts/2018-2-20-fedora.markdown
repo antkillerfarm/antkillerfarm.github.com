@@ -30,10 +30,10 @@ Fedora 22使用dnf替代yum。因此安装基本gcc开发环境，可用如下�
 
 保存后，执行
 
-{% highlight bash %}
+```bash
 $ sudo dnf clean all
 $ sudo dnf makecache
-{% endhighlight %}
+```
 
 此外，和Ubuntu一样，Fedora也有自己的网站可以查询软件包信息：
 
@@ -107,11 +107,11 @@ https://packagecloud.io/willgarcia/start-stop-daemon/install
 
 修改/etc/sysconfig/vncservers：
 
-{% highlight bash %}
+```bash
 ## Single User ##
 VNCSERVERS="1:<user name>"
 VNCSERVERARGS[1]="-geometry 1280x1024"
-{% endhighlight %}
+```
 
 默认端口一般是5900~5904。这里的数组下标表明它使用的端口是5901。
 
@@ -129,11 +129,11 @@ Install TightVNC Server in RHEL/CentOS and Fedora to Access Remote Desktops
 
 diff/patch这对工具在数学上来说，diff是对2个集合求差，patch是求和。
 
-{% highlight bash %}
+```bash
 diff -uNr A B > C #生成A和B的diff文件C,-uNr为最常用的选项
 patch A C #给A打上diff文件得到B
 patch -R B C #B还原为A
-{% endhighlight %}
+```
 
 ## 给目录应用patch。
 
@@ -167,11 +167,11 @@ https://www.gnu.org/software/bash/manual/bash.pdf
 
 2.if命令的格式：
 
-{% highlight bash %}
+```bash
 if [ "$yn" == "Y" ] || [ "$yn" == "y" ]; then
 	echo "OK, continue"
 fi
-{% endhighlight %}
+```
 
 注意一下上面脚本中的表达式[]之间的部分。其中所使用的空格不可省略，否则会出错。bash在处理[]表达式的时候，实际上调用了`/usr/bin/[`命令。如果把`[`当作特殊名称的普通命令的话，就会发现这里的空格用法实际上并不奇怪。
 
@@ -203,14 +203,14 @@ exit用于整个shell脚本的退出。
 
 例子：
 
-{% highlight bash %}
+```bash
 (
 cat<<EOF
 line 1
 line 2
 EOF
 )>a.txt
-{% endhighlight %}
+```
 
 参考：
 
@@ -308,13 +308,13 @@ bash下可控任务数的并发执行脚本
 
 ## awk
 
-{% highlight bash %}
+```bash
 awk '{print $1}' ab #显示第一列
-{% endhighlight %}
+```
 
 ## sed
 
-{% highlight bash %}
+```bash
 sed '1d' ab #删除第一行 
 sed '$d' ab #删除最后一行
 sed '1,2d' ab #删除第一行到第二行
@@ -332,20 +332,20 @@ sed -n '/ruby/p' ab | sed 's/ruby/bird/g'    #替换ruby为bird
 sed -n '/ruby/p' ab | sed 's/ruby//g'        #删除ruby
 
 sed -e 's/.$//' mydos.txt > myunix.txt #dos->unix
-{% endhighlight %}
+```
 
 ## grep
 
-{% highlight bash %}
+```bash
 grep 'ruby' ab #查询包括关键字ruby所在所有行
 grep -nri 'ruby' #n 显示行号，r 子目录搜索，i 忽略大小写
-{% endhighlight %}
+```
 
 ## 综合
 
-{% highlight bash %}
+```bash
 ip addr show br-lan | grep 'inet ' | awk  '{print $2}' | sed 's/\/.*//g'
-{% endhighlight %}
+```
 
 参考：
 

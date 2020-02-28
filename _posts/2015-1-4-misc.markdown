@@ -52,7 +52,7 @@ http://www.opda.com.cn/viewthread.php?tid=182217&page=1#pid3004888
 
 ## 2）最简单的例子
 
-{% highlight c %}
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -76,17 +76,17 @@ int main(int argc, char* argv[])
     printf("");
     return 0;
 }
-{% endhighlight %}
+```
 
 网上的例子只有输出，没有输入，其实不算好例子。用VC之类的编译器编好后，放到cgi-bin中，在浏览器中输入以下地址http://localhost/cgi-bin/cgi.exe?abc就可以看到效果了。还有`printf("Content-type: text/html\n\n");`是一定要有的，没有的会报HTTP 500的错误，有的例子中说`printf("\n");`就行了，这是不对的，至少在默认配置下，这样做的结果是你可以下载该.exe，但不能把它当做CGI来执行。
 
 从这个例子，以及Apache官方的例子（http://httpd.apache.org/docs/1.3/howto/cgi.html）
 
-{% highlight perl %}
+```perl
 #!/usr/bin/perl
 print "Content-type: text/html\r\n\r\n";
 print "Hello, World.";
-{% endhighlight %}
+```
 
 中可以看出，Apache的作用其实是重定义了这些CGI程序的标准输入输出，以及设置了一些系统变量。这才是它支持多种编程语言编写的CGI的真正原因，试想还有哪种语言不支持标准输入输出呢？
 
@@ -121,12 +121,12 @@ modules在/usr/lib/apache2下。
 
 2）
 
-{% highlight bash %}
+```bash
 title Install Ubuntu
 root (hd0,0)
 kernel (hd0,0)/vmlinuz boot=casper iso-scan/filename=/ubuntu-11.10-i386.iso ro quiet splash locale=zh_CN.UTF-8
 initrd (hd0,0)/initrd.lz
-{% endhighlight %}
+```
 
 >现在的电脑，一般都有一个Recovery分区，用于在系统崩溃时，恢复系统之用。因此，(hd0,0)需要修改为(hd0,1)，甚至是(hd0,2)。
 
@@ -142,11 +142,11 @@ initrd (hd0,0)/initrd.lz
 
 安装好之后，没有GRUB开机菜单的话：
 
-{% highlight bash %}
+```bash
 sudo -i
 mount /dev/sda7 /mnt
 grub-install --root-directory=/mnt /dev/sda
-{% endhighlight %}
+```
 
 6)
 
@@ -154,12 +154,12 @@ grub-install --root-directory=/mnt /dev/sda
 
 这种情况可用boot-repair修复之。
 
-{% highlight bash %}
+```bash
 sudo add-apt-repository ppa:yannubuntu/boot-repair
 sudo apt-get update
 sudo apt-get install -y boot-repair
 sudo boot-repair
-{% endhighlight %}
+```
 
 7)
 
@@ -167,19 +167,19 @@ sudo boot-repair
 
 用`grub rescue> ls (hd0,msdos1)/`依次尝试每个分区，直到找到linux分区。
 
-{% highlight bash %}
+```bash
 grub rescue> set root=hd0,msdos1
 grub rescue> set prefix=(hd0,msdos1)/root/grub
 grub rescue> insmod normal
 grub rescue> normal
-{% endhighlight %}
+```
 
 这样就能进入linux系统了。进入之后：
 
-{% highlight bash %}
+```bash
 sudo update-grub
 sudo grub-install /dev/sda
-{% endhighlight %}
+```
 
 下面针对最近几天的安装实践，做一个总结性的概括：
 

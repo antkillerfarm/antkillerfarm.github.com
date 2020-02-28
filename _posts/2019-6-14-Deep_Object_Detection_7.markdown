@@ -234,6 +234,10 @@ https://mp.weixin.qq.com/s/m8D5uutwlvkQNucFX_TnGw
 
 DIoU和CIoU：IoU在目标检测中的正确打开方式
 
+https://zhuanlan.zhihu.com/p/109677830
+
+Distance-IoU Loss
+
 # 目标检测进阶
 
 https://mp.weixin.qq.com/s/1nlOJ7X9ogBHTl1j2adqyg

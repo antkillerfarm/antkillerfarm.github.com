@@ -146,7 +146,7 @@ Unity侧边栏和Win7的任务栏有些类似，不仅会显示当前正在执�
 
 2）用任意文本编辑工具编辑该文件，内容如下：
 
-{% highlight c %}
+```text
 [Desktop Entry]
 Version=1.0
 Type=Application
@@ -182,7 +182,7 @@ TargetEnvironment=Unity
 Name=LibreOffice
 Exec=libreoffice
 TargetEnvironment=Unity
-{% endhighlight %}
+```
 
 从本质上来说，这其实就是个桌面启动文件。有兴趣的同学可以用“Desktop Entry”为关键字搜索一下.desktop文件的写法。
 

@@ -14,10 +14,10 @@ category: AI
 
 最直观的做法是将所有用到浮点计算的地方都替换成FPU函数。例如如下代码：
 
-{% highlight c %}
+```c
 float a,b,c;
 a = b + c;
-{% endhighlight %}
+```
 
 假设FPU加法函数的原型为：
 
@@ -25,10 +25,10 @@ a = b + c;
 
 如果我们要使用FPU硬件加速的话，只需要将上述代码改为：
 
-{% highlight c %}
+```c
 float a,b,c;
 a = Add(b,c);
-{% endhighlight %}
+```
 
 就可以了。
 
@@ -52,10 +52,10 @@ a = Add(b,c);
 
 请看以下代码：
 
-{% highlight c %}
+```c
 float64 a, b,c;
 a = 2*PI * (b - c) / 365.25;
-{% endhighlight %}
+```
 
 机器执行这段代码会进行几次运算呢？
 
@@ -87,13 +87,13 @@ a = 2*PI * (b - c) / 365.25;
 
 -o2有什么作用呢？还是上面的例子：
 
-{% highlight c %}
+```c
 void main()
 {
   float64 a, b,c;
   a = 2*PI * (b - c) / 365.25;
 }
-{% endhighlight %}
+```
 
 如果是-o2选项的话，机器会进行几次运算呢？
 
@@ -111,7 +111,7 @@ void main()
 
 我们可以在链接脚本中合并这些段，以下是一个简单的实例：
 
-{% highlight bash %}
+```bash
 .text :
 {
   . = ALIGN(4);
@@ -120,7 +120,7 @@ void main()
   . = ALIGN(4);
   text_end = .;
 }
-{% endhighlight %}
+```
 
 ## IEEE 754
 
@@ -218,7 +218,7 @@ http://blog.csdn.net/augusdi/article/details/12833235
 
 ## Compressed sparse row (CSR, CRS or Yale format)
 
-{% highlight python %}
+```python
 [0 0 0 0
 5 8 0 0
 0 0 3 0
@@ -227,7 +227,7 @@ http://blog.csdn.net/augusdi/article/details/12833235
 A  = [ 5 8 3 6 ]
 JA = [ 0 1 2 1 ]
 IA = [ 0 0 2 3 4 ]
-{% endhighlight %}
+```
 
 其中，A是非零元素的value，JA是非零元素的column index。
 

@@ -192,14 +192,14 @@ Totem Playlist Parser除了依赖常见的glib2、libxml、libsoup之外，还�
 
 Totem Playlist Parser最重要的函数是plparse/totem-pl-parser.c: totem_pl_parser_parse_internal。这个函数的主要思路是在special_types和dual_types数组中，根据MIME查找相关的处理函数。其代码片段如下：
 
-{% highlight c %}
+```c
 static PlaylistTypes special_types[] = {
 	PLAYLIST_TYPE ("audio/x-mpegurl", totem_pl_parser_add_m3u, NULL, FALSE),
 	PLAYLIST_TYPE ("video/vnd.mpegurl", totem_pl_parser_add_m4u, NULL, FALSE),
 	PLAYLIST_TYPE ("audio/x-scpls", totem_pl_parser_add_pls, NULL, FALSE),
 	...
 };
-{% endhighlight %}
+```
 
 从这里可以看出，找到正确的MIME才是开始解析的关键。这里使用了glib提供的g_content_type_guess函数判断文件的MIME。
 

@@ -178,7 +178,7 @@ WAN: eth1 Bridge（Host有两个网卡：eth0和wlan0。这一步的时候,界�
 
 修改文件/etc/config/network
 
-{% highlight bash %}
+```bash
 config interface 'lan'
         option ifname 'eth0'
         option proto 'dhcp'
@@ -186,7 +186,7 @@ config interface 'lan'
 config interface 'wan'
         option ifname 'eth1'
         option proto 'dhcp'
-{% endhighlight %}
+```
 
 修改完成后，运行`/etc/init.d/network restart`，即可使脚本生效。
 

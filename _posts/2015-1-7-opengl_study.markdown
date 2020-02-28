@@ -184,19 +184,19 @@ uImage格式是专为uboot开发的格式，主要解决了uboot和linux在嵌�
 
 其中有个`.u_boot_list`段就是用来存储命令数据的。它的表述如下所示：
 
-{% highlight bash %}
+```bash
 .u_boot_list : {
 		KEEP(*(SORT(.u_boot_list*)));
 	}
-{% endhighlight %}
+```
 
 命令的声明，通常使用U_BOOT_CMD宏。这个宏最终展开为：
 
-{% highlight bash %}
+```bash
 _type _u_boot_list_2_##_list##_2_##_name __aligned(4)		\
 		__attribute__((unused,				\
 		section(".u_boot_list_2_"#_list"_2_"#_name)))
-{% endhighlight %}
+```
 
 这也就是`.u_boot_list*`的来历了。
 

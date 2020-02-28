@@ -40,12 +40,12 @@ Ubuntu 17.04以后：
 
 虽然Caffe支持CMake Build，但是定制化没有Make Build方便，所以我选择后者。
 
-{% highlight bash %}
+```bash
 cp Makefile.config.example Makefile.config
 make all -j 8
 make test -j 8
 make runtest -j 8
-{% endhighlight %}
+```
 
 这里会遇到`fatal error: hdf5.h`的问题，解决办法：
 
@@ -99,12 +99,12 @@ examples/mnist/train_lenet.sh
 
 照例，还是MNIST。
 
-{% highlight bash %}
+```bash
 cd $CAFFE_ROOT
 ./data/mnist/get_mnist.sh
 ./examples/mnist/create_mnist.sh
 ./examples/mnist/train_lenet.sh
-{% endhighlight %}
+```
 
 默认使用GPU，如果要用CPU的话，可修改lenet_solver.prototxt：
 
@@ -206,7 +206,7 @@ lr_mult参数和decay_mult参数的存在，允许不同的层有不同的学习
 
 在一个卷积层中，通常会有2组lr_mult参数和decay_mult参数，其中前一组是weight参数的学习率或衰减率，而后一组是bias参数的。
 
-{% highlight txt %}
+```text
 param {
     lr_mult: 1
     decay_mult: 1
@@ -215,7 +215,7 @@ param {
     lr_mult: 2
     decay_mult: 0
 }
-{% endhighlight %}
+```
 
 上面这组参数被实践证明，是比较work的参数。
 
@@ -245,7 +245,7 @@ tf.strided_slice用法
 
 ### slice
 
-{% highlight txt %}
+```text
 layer {
   name: "data_each"
   type: "Slice"
@@ -259,7 +259,7 @@ layer {
     slice_point: 200
   }
 }
-{% endhighlight %}
+```
 
 其中slice_point的个数必须等于top的个数减一。输入的data_all维度为$$(250\times 3\times 24 \times 24)$$，拆分后的3个输出的维度依次为$$(150\times 3\times 24 \times 24),(50\times 3\times 24 \times 24),(50\times 3\times 24 \times 24)$$。
 

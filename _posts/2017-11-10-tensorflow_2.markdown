@@ -90,21 +90,21 @@ tensorflow还有一个叫checkpoint的文件，用来简单保存最近一次的
 
 ### 保存模型
 
-{% highlight python %}
+```python
 w1 = tf.Variable(tf.random_normal(shape=[2]), name='w1')
 w2 = tf.Variable(tf.random_normal(shape=[5]), name='w2')
 saver = tf.train.Saver()
 sess = tf.Session()
 sess.run(tf.global_variables_initializer())
 saver.save(sess, 'my_test_model')
-{% endhighlight %}
+```
 
 ### 加载模型
 
-{% highlight python %}
+```python
 new_saver = tf.train.import_meta_graph('my_test_model-1000.meta')
 new_saver.restore(sess, tf.train.latest_checkpoint('./‘))
-{% endhighlight %}
+```
 
 参考：
 
@@ -184,7 +184,7 @@ Tensorflow并行：多核(multicore)，多线程(multi-thread)
 
 ### tf.cond
 
-{% highlight python %}
+```python
 a=tf.constant(2)
 b=tf.constant(3)
 x=tf.constant(4)
@@ -193,17 +193,17 @@ z = tf.multiply(a, b)
 result = tf.cond(x < y, lambda: tf.add(x, z), lambda: tf.square(y))
 with tf.Session() as session:
     print(result.eval())
-{% endhighlight %}
+```
 
 ### tf.case
 
-{% highlight python %}
+```python
 decode_png = lambda :tf.image.decode_png(image_tensor, channels)
 decode_jpg = lambda :tf.image.decode_jpeg(image_tensor, channels)
 decoder = { tf.equal(image_ext, '.png'):  decode_png,
             tf.equal(image_ext, '.jpg'):  decode_jpg}
 image_tensor = tf.case(decoder, default = decode_png, exclusive = True)
-{% endhighlight %}
+```
 
 ## 内存布局
 

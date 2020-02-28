@@ -66,7 +66,7 @@ http://blog.csdn.net/dbzhang800/article/details/6314073
 
 ## 例子一
 
-{% highlight bash %}
+```bash
 .
 ├── bin
 ├── build
@@ -76,7 +76,7 @@ http://blog.csdn.net/dbzhang800/article/details/6314073
 ├── mainwindow.h
 ├── mainwindow.ui
 └── qt_cmake.pro
-{% endhighlight %}
+```
 
 实现这样效果的代码参见
 
@@ -86,7 +86,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/Qt/qt_cmake
 
 ## 例子二
 
-{% highlight bash %}
+```bash
 .
 ├── bin
 ├── CMakeLists.txt
@@ -95,7 +95,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/Qt/qt_cmake
     ├── mainwindow.cpp
     ├── mainwindow.h
     └── mainwindow.ui
-{% endhighlight %}
+```
 
 实现这样效果的代码参见
 
@@ -233,12 +233,12 @@ lex的词法分析，依据用法的不同，可分为三类：
 
 yacc的BNF中一般都要包括类似下面的语句：
 
-{% highlight c %}
+```c
 stmt_list:
           stmt                  { }
         | stmt_list stmt        { }
         ;
-{% endhighlight %}
+```
 
 其中stmt表示单个语句的语法目标，而stmt_list则是一系列语句的集合。
 

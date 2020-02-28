@@ -218,7 +218,7 @@ ntpd是NTP的另一个实现，既可以当Server，也可以当Client，已经�
 
 ### TCP
 
-{% highlight text %}
+```text
 服务器端                           客户端
 1.创建socket                       1.创建socket
 2.bind                             2.listen
@@ -227,11 +227,11 @@ ntpd是NTP的另一个实现，既可以当Server，也可以当Client，已经�
 5.读数据（recv）                    4.写数据（send）
 6.写数据（send）                    5.读数据（recv）
 7.关闭socket（closesocket）         6.关闭socket（closesocket）
-{% endhighlight %}
+```
 
 ### UDP
 
-{% highlight text %}
+```text
 服务器端：                          客户端
 1.创建socket                       1.创建socket
 2.bind                             2.bind
@@ -239,7 +239,7 @@ ntpd是NTP的另一个实现，既可以当Server，也可以当Client，已经�
 ----等待连接----                    3.sendto
 4.sendto                           4.recvfrom
 5.关闭socket（closesocket）         5.关闭socket（closesocket）
-{% endhighlight %}
+```
 
 ## WIFI WPS
 

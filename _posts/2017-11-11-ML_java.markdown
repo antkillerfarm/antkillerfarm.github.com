@@ -190,13 +190,13 @@ Jackson是常用的Java语言的JSON库。
 
 Maven安装：
 
-{% highlight text %}
+```text
 <dependency>
 	<groupId>com.fasterxml.jackson.core</groupId>
 	<artifactId>jackson-databind</artifactId>
 	<version>2.6.4</version>
 </dependency>
-{% endhighlight %}
+```
 
 Jackson提供了三种处理方法：
 
@@ -282,20 +282,20 @@ JSON采用的是，不同的语言提供不同的库来解析的方式。
 
 test.proto:
 
-{% highlight text %}
+```text
 message TestMsg
 {
     required int32 id=1;
     required int32 time=2;
     optional string note=3;
 }
-{% endhighlight %}
+```
 
 `protoc --python_out=./python/ test.proto`
 
 test.py:
 
-{% highlight python %}
+```python
 import google.protobuf
 from test_pb2 import TestMsg
 import time
@@ -311,7 +311,7 @@ print test_str
 test1 = TestMsg()
 test1.ParseFromString(test_str)
 print test1
-{% endhighlight %}
+```
 
 示例代码下载：
 

@@ -20,12 +20,12 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/pipe/
 
 如果需要让主线程在初始化之后，仍然存在，而不是退出的话，可以使用以下技巧：
 
-{% highlight c %}
+```c
 sigset_t sigs_to_catch;
 sigemptyset(&sigs_to_catch);
 sigaddset(&sigs_to_catch, SIGINT);
 sigwait(&sigs_to_catch, &sig);
-{% endhighlight %}
+```
 
 这种方法显然比`while (1);`这样的忙等待，有效率的多。
 

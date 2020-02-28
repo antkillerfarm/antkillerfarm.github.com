@@ -51,10 +51,10 @@ http://xgboost.apachecn.org/cn/latest/
 
 编译：
 
-{% highlight java %}
+```bash
 git clone --recursive https://github.com/dmlc/xgboost
 cd xgboost; make -j4
-{% endhighlight %}
+```
 
 python安装：
 

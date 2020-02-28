@@ -196,6 +196,8 @@ https://mp.weixin.qq.com/s/R2Hco-nE-e0S_gmTSImrAA
 
 它曾“超长待机”俯瞰地球，最终在“回家”路上粉身碎骨
 
+![](/images/img2/FYWX.jpg)
+
 ## 天文软件
 
 Space Engine是一款免费太空模拟程序，由俄罗斯天文学家和程序员Vladimir Romanyuk开发。有了它，你可以随意穿梭于浩瀚星尘之间，也可以驾驶一艘宇宙飞船，登陆到程序中的任何天体，尽情享受美丽的异星风情与震撼的天文奇观。

@@ -30,14 +30,14 @@ http://blog.chinaunix.net/uid-20602659-id-2981336.html
 
 首先使用`lspci -v`列出所有的硬件设备，其中当然也包括了音频设备。例如我的PC上是这样的：
 
-{% highlight bash %}
+```bash
 Audio device: Intel Corporation 6 Series/C200 Series Chipset Family High Definition Audio Controller (rev 05)
 	Subsystem: ASUSTeK Computer Inc. Device 1b73
 	Flags: bus master, fast devsel, latency 0, IRQ 54
 	Memory at df000000 (64-bit, non-prefetchable) [size=16K]
 	Capabilities: <access denied>
 	Kernel driver in use: snd_hda_intel
-{% endhighlight %}
+```
 
 从驱动名`snd_hda_intel`可以很轻松的发现，这个驱动的源代码是sound/pci/hda/hda_intel.c。
 
@@ -96,7 +96,7 @@ http://www.alsa-project.org/main/index.php/ASoC
 
 以三星设备为例，Platform driver和Machine driver在sound/soc/samsung下，该文件夹的Makefile节选如下：
 
-{% highlight bash %}
+```bash
 # S3c24XX Platform Support
 snd-soc-s3c24xx-i2s-objs := s3c24xx-i2s.o
 snd-soc-s3c2412-i2s-objs := s3c2412-i2s.o
@@ -110,17 +110,17 @@ snd-soc-s3c24xx-simtec-objs := s3c24xx_simtec.o
 
 obj-$(CONFIG_SND_SOC_SAMSUNG_S3C24XX_UDA134X) += snd-soc-s3c24xx-uda134x.o
 obj-$(CONFIG_SND_SOC_SAMSUNG_SIMTEC) += snd-soc-s3c24xx-simtec.o
-{% endhighlight %}
+```
 
 Codec driver在sound/soc/codecs下，该文件夹的Makefile节选如下：
 
-{% highlight bash %}
+```bash
 snd-soc-uda134x-objs := uda134x.o
 snd-soc-uda1380-objs := uda1380.o
 
 obj-$(CONFIG_SND_SOC_UDA134X)	+= snd-soc-uda134x.o
 obj-$(CONFIG_SND_SOC_UDA1380)	+= snd-soc-uda1380.o
-{% endhighlight %}
+```
 
 snd_soc_register_codec函数用来注册Codec driver。
 
@@ -248,7 +248,7 @@ Gstreamer软音量的实现代码在gst-plugins-base/gst/volume/gstvolume.c中�
 
 ALSA设置音量的代码片段如下（注意，该片段没有异常处理）：
 
-{% highlight c %}
+```c
 void SetAlsaMasterVolume(long volume)
 {
     long min, max;
@@ -272,7 +272,7 @@ void SetAlsaMasterVolume(long volume)
 
     snd_mixer_close(handle);
 }
-{% endhighlight %}
+```
 
 ALSA的音量操作步骤：（只讨论硬音量）
 

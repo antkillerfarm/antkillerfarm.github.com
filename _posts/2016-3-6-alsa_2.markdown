@@ -12,14 +12,14 @@ category: technology
 
 例如如下的代码：
 
-{% highlight c %}
+```c
 SOC_DOUBLE_R_TLV("Digital Playback Volume", JZCODEC_DACLVOL, JZCODEC_DACRVOL,
 		 0, 255, 0, jzcodec_tlv),
-{% endhighlight %}
+```
 
 使用amixer命令观察该代码的效果：
 
-{% highlight bash %}
+```bash
 Simple mixer control 'Digital',0
   Capabilities: pvolume
   Playback channels: Front Left - Front Right
@@ -27,7 +27,7 @@ Simple mixer control 'Digital',0
   Mono:
   Front Left: Playback 255 [100%] [0.00dB]
   Front Right: Playback 255 [100%] [0.00dB]
-{% endhighlight %}
+```
 
 从中可以看出snd_kcontrol_new的name成员的名字是有特定含义的，不能随便定。
 
@@ -39,9 +39,9 @@ Simple mixer control 'Digital',0
 
 例如如下代码：
 
-{% highlight c %}
+```c
 static const DECLARE_TLV_DB_SCALE(tas5086_dac_tlv, -10350, 50, 1);
-{% endhighlight %}
+```
 
 -10350是音量的最小值，表示-103.5dB。50是相邻的两个寄存器值之间的音量差（即步长），这里表示0.5dB。也就是说这个宏设定的音量值的单位都是0.01dB。
 
@@ -75,7 +75,7 @@ ASOC在Linux 3.X时代最大的改进就是添加了对多codec的支持。这�
 
 在board初始化阶段，为两个codec各自生成一个I2C设备。
 
-{% highlight c %}
+```c
 static struct i2c_board_info __initdata rtl819xd_i2c_devices[] = {
 	{
 		I2C_BOARD_INFO("tas5731", 0x1a), //TAS5731M Master
@@ -84,13 +84,13 @@ static struct i2c_board_info __initdata rtl819xd_i2c_devices[] = {
 		I2C_BOARD_INFO("tas5731", 0x1b), //TAS5731M Sub
 	},
 };
-{% endhighlight %}
+```
 
 2.方案A由于共享I2S，因此在驱动角度，必须将两个codec驱动整合到一个card之中。
 
 相应的machine代码为：
 
-{% highlight c %}
+```c
 static struct snd_soc_dai_link rtl819xd_jzcodec_dai[] = {
 	{
 		.name = "JZCODEC_MASTER",
@@ -112,11 +112,11 @@ static struct snd_soc_dai_link rtl819xd_jzcodec_dai[] = {
 		.ops = &rtl819xd_jzcodec_ops,
 	}
 };
-{% endhighlight %}
+```
 
 相应的codec代码为：
 
-{% highlight c %}
+```c
 static struct snd_soc_dai_driver tas5731_dai[] = {
 	{
 		.name = "tas5731_master",
@@ -143,7 +143,7 @@ static struct snd_soc_dai_driver tas5731_dai[] = {
 		.ops = &tas5731_dai_ops,
 	}
 };
-{% endhighlight %}
+```
 
 这里对代码的要点做一个解释：
 
@@ -171,22 +171,22 @@ Z表示Codec设备的从机地址。
 
 ### basic-tutorial-1.c
 
-{% highlight c %}
+```c
 /* Build the pipeline */
 pipeline = gst_parse_launch ("playbin2 uri=http://docs.gstreamer.com/media/sintel_trailer-480p.webm", NULL);
-{% endhighlight %}
+```
 
 从这个教程可以看出，我们可以直接使用gst_parse_launch创建pipeline。
 
 ### basic-tutorial-7.c
 
-{% highlight c %}
+```c
 tee_src_pad_template = gst_element_class_get_pad_template (GST_ELEMENT_GET_CLASS (tee), "src%d");
-{% endhighlight %}
+```
 
 这是代码的其中一段，这里只谈谈`src%d`是怎么来的。使用gst-inspect工具查询tee插件的信息，得到如下内容：
 
-{% highlight bash %}
+```bash
 Pad Templates:
   SRC template: 'src%d'
     Availability: On request
@@ -198,7 +198,7 @@ Pad Templates:
     Availability: Always
     Capabilities:
       ANY
-{% endhighlight %}
+```
 
 从中可知，tee插件SRC Pad的模板名就是`src%d`。
 
@@ -252,10 +252,10 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/gstreamer/step3
 
 2.以下代码片段在这里都可用，尽管不完全等效，请注意用法和差别：
 
-{% highlight python %}
+```python
 new_pad_type = new_pad.get_current_caps().get_structure(0).get_name()
 new_pad_type = new_pad.query_caps(None).to_string()
-{% endhighlight %}
+```
 
 从这里也可以看出，gst_parse_launch会自动处理媒体流的格式匹配问题，而使用普通函数的时候，必须自己编程处理格式匹配的问题。
 
@@ -267,7 +267,7 @@ new_pad_type = new_pad.query_caps(None).to_string()
 
 浏览器请求
 
-{% highlight text %}
+```text
 GET /webfin/websocket/ HTTP/1.1
 　　Host: localhost
 　　Upgrade: websocket
@@ -275,16 +275,16 @@ GET /webfin/websocket/ HTTP/1.1
 　　Sec-WebSocket-Key: xqBt3ImNzJbYqRINxEFlkg==
 　　Origin: http://www.sohu.com
 　　Sec-WebSocket-Version: 13
-{% endhighlight %}
+```
 
 服务器回应
 
-{% highlight text %}
+```text
 HTTP/1.1 101 Switching Protocols
 　　Upgrade: websocket
 　　Connection: Upgrade
 　　Sec-WebSocket-Accept: K7DJLdLooIwIG/MOpvWFB3y3FE8=
-{% endhighlight %}
+```
 
 # CoAP & MQTT
 

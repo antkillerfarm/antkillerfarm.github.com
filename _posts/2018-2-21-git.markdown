@@ -147,18 +147,18 @@ git的reset和checkout的区别
 
 编辑仓库目录中本地的”.git/config”文件，增加如下属性：
 
-{% highlight bash %}
+```bash
 [credential]
     helper = store
-{% endhighlight %}
+```
 
 12.SSH
 
-{% highlight bash %}
+```bash
 cd ~/.ssh
 ssh-keygen
 cat ~/.ssh/id_rsa.pub
-{% endhighlight %}
+```
 
 >`ssh-keygen`命令会生成两个文件id_rsa和id_rsa.pub，前者是私钥，后者是公钥，不要弄错了。
 
@@ -268,11 +268,11 @@ https://gitextensions.github.io/
 
 这时，你可以编辑.gitignore来忽略这些文件，相当于是加了一个黑名单。但其实.gitignore也可定义白名单：
 
-{% highlight bash %}
+```bash
 */
 !src/
 !src/**
-{% endhighlight %}
+```
 
 参考：
 
@@ -286,7 +286,7 @@ https://github.com/github/gitignore
 
 ## LF与CRLF转换
 
-{% highlight bash %}
+```bash
 #提交时转换为LF，检出时转换为CRLF
 git config --global core.autocrlf true
 
@@ -304,7 +304,7 @@ git config --global core.safecrlf false
 
 #提交包含混合换行符的文件时给出警告
 git config --global core.safecrlf warn
-{% endhighlight %}
+```
 
 参考：
 
@@ -332,12 +332,12 @@ https://github.com/Sarasra/models/tree/master/research/capsules
 
 2.使用Sparse checkout。
 
-{% highlight bash %}
+```bash
 git init
 git remote add -f origin <url>
 git config core.sparsecheckout true
 echo “libs” >> .git/info/sparse-checkout
-{% endhighlight %}
+```
 
 参考：
 
