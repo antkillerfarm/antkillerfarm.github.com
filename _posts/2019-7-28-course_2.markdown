@@ -256,4 +256,8 @@ Bert如何解决长文本问题？
 
 https://mp.weixin.qq.com/s/QTELpbr480AJsBINm-FHKQ
 
-代码也能预训练，微软&哈工大最新提出 CodeBERT 模型，支持自然-编程双语处理
+代码也能预训练，微软&哈工大最新提出CodeBERT模型，支持自然-编程双语处理
+
+https://mp.weixin.qq.com/s/ZEWCcxTEuEMvQ5__t3gkBg
+
+BERT技术体系综述论文：40项分析探究BERT如何work

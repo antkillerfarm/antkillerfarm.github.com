@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/xaKqAhuxaHDPV-VwHE7H2A
 
 零样本学习研究进展综述中文版
 
+https://mp.weixin.qq.com/s/YWzHnN5mQQtM9M3Uao8iGQ
+
+伯克利-滴滴出行：深度学习多源领域自适应综述论文
+
 # 深度ISP
 
 ## 数据集

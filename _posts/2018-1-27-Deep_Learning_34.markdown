@@ -254,6 +254,10 @@ https://mp.weixin.qq.com/s/3ZZvTULbdeSKzF51Wa74WQ
 
 分布式词向量表示，附239页PPT下载
 
+https://zhuanlan.zhihu.com/p/109935332
+
+万物皆可embedding
+
 # 深度贝叶斯学习
 
 https://mp.weixin.qq.com/s/4sDNUZiOiS6VH_oRSnW6HQ

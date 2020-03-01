@@ -254,6 +254,10 @@ https://zhuanlan.zhihu.com/p/97676647
 
 手撕BiLSTM-CRF
 
+https://zhuanlan.zhihu.com/p/44042528
+
+最通俗易懂的BiLSTM-CRF模型中的CRF层介绍
+
 # 自适应滤波器
 
 《自适应滤波器原理（Adaptive Filter Theory）》，Simon Haykin著。

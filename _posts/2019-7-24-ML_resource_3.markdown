@@ -218,6 +218,14 @@ https://mp.weixin.qq.com/s/FT8Yn8VpgVroEbgSTG9lGA
 
 如何判断样本标注的靠谱程度？置信度学习（CL）简述
 
+https://mp.weixin.qq.com/s/ukFPwO9vZ5t3OLiKr5MQMw
+
+缺失数据统计分析，第三版，462页pdf
+
+https://mp.weixin.qq.com/s/WJUGbyPgLgVX6Q8SXjOP1A
+
+如何抢别人怀里的女孩子?
+
 # Attention进阶+
 
 https://mp.weixin.qq.com/s/7OYY3L7gL4wVv_EjoosOHA
@@ -359,7 +367,3 @@ https://mp.weixin.qq.com/s/GGRORF5EfJ5xzMLwAsJt5w
 https://mp.weixin.qq.com/s/fxEg8UOa3MeJ6qx5SjEHog
 
 NLP领域中各式各样Attention知识系统性的梳理和总结
-
-https://mp.weixin.qq.com/s/WJUGbyPgLgVX6Q8SXjOP1A
-
-如何抢别人怀里的女孩子?

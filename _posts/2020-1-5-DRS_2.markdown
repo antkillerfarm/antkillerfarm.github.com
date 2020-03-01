@@ -306,9 +306,9 @@ https://mp.weixin.qq.com/s/km9jnS5_k3kvuyfhUvzbWQ
 
 推荐系统中的前沿技术研究与落地：深度学习、AutoML与强化学习
 
-https://mp.weixin.qq.com/s/9DWyX2D6KlOVAJZoPgonYA
+https://zhuanlan.zhihu.com/p/86181485
 
-深度CTR预估模型的演化之路2019最新进展
+深度CTR预估模型的演化之路
 
 https://mp.weixin.qq.com/s/rAbSWoo3WMdHsHaOx_x6fw
 

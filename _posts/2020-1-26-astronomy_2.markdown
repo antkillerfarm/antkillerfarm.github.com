@@ -8,8 +8,6 @@ category: Nature
 
 ## Katie Bouman（续）
 
-Hedy Lamarr，1913～2000，美国好莱坞默片时期著名女演员，生于奥地利一个富裕的犹太人银行家庭。她曾与克拉克·盖博等顶级男星合作，主演了多部热门影片。19岁时在电影《神魂颠倒》中裸泳成为世界电影史上第一位裸体出镜的女演员。一生曾有过八次婚姻。
-
 她曾被认为是全欧最美的女人，并因美貌盖过了演技而被人称为花瓶。有意思的是，她其实数学和通信功底很深，是现代无线通信的核心专利跳频技术的第一发明者，CDMA、WiFi等技术都以此为基础。美国电话局主席安东尼·罗德（Anthony Loder）对她的评价所说：“虽然Hedy Lamarr已经被大家遗忘了，但她所做出的一切仍然影响着一代又一代的人。”
 
 参考：
@@ -130,6 +128,16 @@ https://mp.weixin.qq.com/s/-eNzkpxJ_nQOF0RURjuSUg
 
 卡门线（Kármán line）是一条位于海拔100 km（330,000英尺）处，被大部分认可为外太空与地球大气层的界线的分界线。
 
+----
+
+虽然亚里士多德和托勒密的天文学思想有很多区别，地圆却都是其中的核心事实。他们的思想一直影响着西方的天文学，直到由哥白尼引发并由伽利略、开普勒和牛顿等人推动的天文学革命。但在这场革命中，发生改变的主要是地球在宇宙中的位置，而地球的形状并未引起过争议。
+
+但对中国人来说，了解地球是圆的这个事实却花了很长的一段时间。中国自古以来有“天圆地方”的说法，其中的“地方”既指大地是方形，也指大地是平面。中国古代的宇宙观中有两种观念，分别是浑天说和盖天说。这两种说法的区别在于前者认为天地有相交会处，而后者认为天地是平行的，但是二者均没有地圆的观念。
+
+https://mp.weixin.qq.com/s/0lDJiu1nyS0j1aj7C4tT-g
+
+火箭狂人不幸坠亡，生前坚信“地平说”
+
 # 阿波罗50年
 
 https://mp.weixin.qq.com/s/79e6p2TYpttO-NR1of21jw
@@ -190,7 +198,7 @@ https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
 
 印度失联的月球探测器依然成功了95%？那些年我们一起追过的月球
 
-# 武汉肺炎（续）
+# 新冠肺炎（续）
 
 ## Gilead Sciences
 
@@ -255,31 +263,3 @@ BBC纪录片：病毒是如何入侵的？
 https://mp.weixin.qq.com/s/JAm3eMF1ATMzHTRTiZybIQ
 
 阻击病毒的战场
-
-https://asm.org/
-
-American Society for Microbiology
-
-https://mp.weixin.qq.com/s/SkzRspEEFj53A5OWKj37VA
-
-新型冠状病毒的“帮凶”——病原真菌到底是什么鬼？
-
-https://mp.weixin.qq.com/s/cUtWVBOsUkCBC0abeoKAzA
-
-从病毒到免疫， “科学地”揭开新冠病毒的神秘面纱
-
-https://mp.weixin.qq.com/s/bfhS3Er3NXjfUrKZbju33Q
-
-病毒与人类的战争（上）：百万年的战争
-
-https://mp.weixin.qq.com/s/Bx7AZrL168OkygBbg0qflQ
-
-病毒与人类的战争（下）： 人类守望者
-
-https://mp.weixin.qq.com/s/9iWT9v4msuHgzN_92Ptf7A
-
-关于新冠病毒，人们最关心的七个科学问题
-
-https://mp.weixin.qq.com/s/ruMiimYqAbsVwU-mnyq8oQ
-
-病毒从动物转移到人类身上，会发生什么？

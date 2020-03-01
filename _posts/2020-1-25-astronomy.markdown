@@ -198,6 +198,14 @@ https://mp.weixin.qq.com/s/R2Hco-nE-e0S_gmTSImrAA
 
 ![](/images/img2/FYWX.jpg)
 
+https://mp.weixin.qq.com/s/yD3THPdd1rvx3oqBF1tayQ
+
+那个提出“戴森球”的物理学家去世了（Freeman Dyson）
+
+https://mp.weixin.qq.com/s/3dByllGuY9fsvUjoy7fPwg
+
+戴森传奇
+
 ## 天文软件
 
 Space Engine是一款免费太空模拟程序，由俄罗斯天文学家和程序员Vladimir Romanyuk开发。有了它，你可以随意穿梭于浩瀚星尘之间，也可以驾驶一艘宇宙飞船，登陆到程序中的任何天体，尽情享受美丽的异星风情与震撼的天文奇观。
@@ -315,3 +323,5 @@ Margaret Heafield Hamilton，1936年生，美国计算机科学家。发明了�
 ![](/images/img2/Margaret_Hamilton.jpg)
 
 上图是1969年Margaret和她的小组所编写的软件代码的合影。
+
+Hedy Lamarr，1913～2000，美国好莱坞默片时期著名女演员，生于奥地利一个富裕的犹太人银行家庭。她曾与克拉克·盖博等顶级男星合作，主演了多部热门影片。19岁时在电影《神魂颠倒》中裸泳成为世界电影史上第一位裸体出镜的女演员。一生曾有过八次婚姻。

@@ -379,3 +379,7 @@ https://zhuanlan.zhihu.com/p/88927564
 https://mp.weixin.qq.com/s/YARcCzQXqnJmWRtV2zd_FQ
 
 国内外AI芯片发展现状
+
+https://mp.weixin.qq.com/s/b_Hy0JSZ5ZGT9AsczCkp9Q
+
+ISSCC 2020：AI芯片架构的转变

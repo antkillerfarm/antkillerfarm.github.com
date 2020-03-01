@@ -52,7 +52,7 @@ CMU NN for NLP
 
 http://phontron.com/class/nn4nlp2020/schedule.html
 
-CS 11-747: Neural Networks for NLP
+CMU CS 11-747: Neural Networks for NLP
 
 http://phontron.com/class/mtandseq2seq2017/
 

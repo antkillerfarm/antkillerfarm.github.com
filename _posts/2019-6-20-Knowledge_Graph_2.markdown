@@ -316,6 +316,14 @@ https://mp.weixin.qq.com/s/UBWN4_Sem8W1WcjsLAnjjQ
 
 强化学习，路在何方？
 
+https://book.yunzhan365.com/iths/nahn/mobile/index.html
+
+强化学习和最优控制的《十个关键点》81页PPT汇总
+
+https://zhuanlan.zhihu.com/p/107143378
+
+Learning SR for Text Classification via RL
+
 # Python+
 
 https://mp.weixin.qq.com/s/Hv0rPD29PPd3Rn6lW6w5dg

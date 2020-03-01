@@ -218,6 +218,10 @@ https://www.datasetlist.com/
 
 ## NLP
 
+https://mp.weixin.qq.com/s/xoOFbUjABKmQIVzTcHE6KQ
+
+CLUEDatasetSearch：搜索所有中文数据集，附常用英文数据集
+
 https://mp.weixin.qq.com/s/tewjGzfAVCKcG1dlURxyeg
 
 MIT发布的10大自然语言处理数据集和语料库

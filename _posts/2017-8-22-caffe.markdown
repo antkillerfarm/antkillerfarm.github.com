@@ -382,3 +382,7 @@ https://mp.weixin.qq.com/s/w9CbbZ6vr6qV7DafctIf-g
 https://mp.weixin.qq.com/s/sK5uP1L9CIVOSFBOG8-F5A
 
 预训练模型ProphetNet：根据未来文本信息进行自然语言生成‘
+
+https://mp.weixin.qq.com/s/1ixYjJN-bJPGrr7v-4d7Rw
+
+预训练语言模型的前世今生: 萌芽时代

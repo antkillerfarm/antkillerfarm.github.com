@@ -66,7 +66,7 @@ https://mp.weixin.qq.com/s/HkuIJUw99DhJkUSuCYdfjg
 
 《迁移学习简明手册》pdf分享
 
-https://mp.weixin.qq.com/s/WuX7-w--MGX3BfU_K7qT0A
+https://www.zhihu.com/question/41979241
 
 什么是迁移学习(Transfer Learning)？这个领域历史发展前景如何？
 

@@ -147,3 +147,11 @@ https://mp.weixin.qq.com/s/MBRTs2pIVypQxrcMOY4Lcg
 https://mp.weixin.qq.com/s/phiRXPGfVHaxCN1aLZTzlw
 
 图神经网络三剑客：GCN、GAT与GraphSAGE
+
+https://mp.weixin.qq.com/s/WBUYk__k-86vGqOA6N6iCw
+
+图神经网络入门
+
+https://mp.weixin.qq.com/s/A-4JZG9tF7fnSuBa4YH3iw
+
+图神经网络预训练的策略

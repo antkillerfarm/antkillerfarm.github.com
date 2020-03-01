@@ -409,3 +409,7 @@ https://mp.weixin.qq.com/s/pDTbiS8xFH0llUBaN1Mb_Q
 https://mp.weixin.qq.com/s/mABDO5Sxv-Wc-gAgDQAbFQ
 
 用Python实现机器学习算法——简单的神经网络
+
+https://mp.weixin.qq.com/s/chT6mWmH1_zE-eH1vdB01A
+
+是技术也是艺术 使用geopandas玩转地图可视化

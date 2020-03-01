@@ -64,6 +64,12 @@ $$Q(s,a)=V(s,v)+A(s,a,w)$$
 
 ![](/images/img3/DuelDQN.png)
 
+参考：
+
+https://mp.weixin.qq.com/s/7iSjytu3Dk5BsQwnfsTmYw
+
+北邮X滴滴：基于最小车队的动态车辆调度
+
 ## NAF
 
 传统RL任务：低维输入，低维离散输出。

@@ -312,6 +312,12 @@ bash下可控任务数的并发执行脚本
 awk '{print $1}' ab #显示第一列
 ```
 
+参考：
+
+https://mp.weixin.qq.com/s/-mWYn195TBSB1lDlncuYeA
+
+常用命令之awk常用实例
+
 ## sed
 
 ```bash

@@ -434,6 +434,10 @@ https://mp.weixin.qq.com/s/SJRVgBy94E3UWeVAf3TliA
 
 ​16个matplotlib绘图实用小技巧
 
+https://mp.weixin.qq.com/s/fSt27Vk29LoSDPv8KfPHjQ
+
+什么是折线图？怎样用Python绘制？
+
 ## Pandas
 
 Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。

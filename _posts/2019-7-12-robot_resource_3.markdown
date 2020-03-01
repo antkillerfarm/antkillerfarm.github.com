@@ -393,3 +393,7 @@ https://mp.weixin.qq.com/s/7ndd6jFaSObUh6eOW8fi5Q
 https://mp.weixin.qq.com/s/hNx74wn8pIGPr6vVu_Yxww
 
 自动驾驶重卡在规划和控制中的技术难点与挑战
+
+https://mp.weixin.qq.com/s/Zhq2xNoVhUTLFpwzZFnbRA
+
+基于深度逆强化学习的舒适性自动驾驶

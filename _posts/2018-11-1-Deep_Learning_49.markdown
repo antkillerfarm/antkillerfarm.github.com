@@ -18,10 +18,6 @@ https://mp.weixin.qq.com/s/n9Xdj5RKGR9cyXXNzxzvSw
 
 基于深度学习的图像分割在高德的实践
 
-https://zhuanlan.zhihu.com/p/98508347
-
-论文速读：PointRend: Image Segmentation as Rendering
-
 https://blog.csdn.net/sanshibayuan/article/details/103642419
 
 单阶段实例分割（Single Shot Instance Segmentation）
@@ -335,3 +331,7 @@ https://mp.weixin.qq.com/s/uAdFWT5rP40IMsLfFyr7XQ
 https://mp.weixin.qq.com/s/joUb4cBxzUVyichYfN9l8g
 
 元强化学习迎来一盆冷水：不比元Q学习好多少
+
+https://mp.weixin.qq.com/s/MPNQPNfFjUqCKUH7OdTDzA
+
+元迁移学习的小样本学习，Meta-transfer Learning for Few-shot Learning，33页ppt

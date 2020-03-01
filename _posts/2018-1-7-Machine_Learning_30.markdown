@@ -100,6 +100,10 @@ https://mp.weixin.qq.com/s/xyWY3Z5PiHkCFzCP0noBvA
 
 一文读懂HMM模型和Viterbi算法
 
+https://zhuanlan.zhihu.com/p/110007411
+
+维特比算法的直观解释——最短路径视角
+
 ## 前向算法
 
 forward算法是求解问题2的常用算法。
