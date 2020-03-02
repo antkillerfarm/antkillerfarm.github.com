@@ -77,21 +77,11 @@ https://www.edg.com/
 
 `int *(*a())()`这是一个函数，它没有参数，它的返回值是一个函数指针，这个指针指向的函数，也没有参数，且返回值是int型的指针。
 
-# 嵌入式程序员应知道的几个基本问题
-
-http://linux.chinaitlab.com/c/713810.html
-
-# 深入理解C++中的mutable关键字
-
-http://dev.yesky.com/393/3007393.shtml
-
-# UNREFERENCED_PARAMETER的作用
-
-http://blog.csdn.net/apunix/archive/2008/01/14/2043945.aspx
-
-# sizeof进行结构体大小的判断
+# sizeof
 
 http://blog.csdn.net/van150/archive/2005/12/05/544454.aspx
+
+sizeof进行结构体大小的判断
 
 VC的默认规则基本如上所示，gcc的默认规则就是4字节对齐。
 
@@ -143,10 +133,6 @@ gcc：-fpack-struct
 VC和gcc都可以用`#pragma pack(4)`
 
 gcc还可以用`__attribute__((packed))`
-
-# Java中创建对象的时候代码执行顺序(这个问题C++应该也存在)
-
-https://blog.csdn.net/hahahacff/article/details/39504699
 
 # 宏展开函数的小技巧
 
@@ -385,3 +371,45 @@ cout<<hex<<i<<endl; //输出十六进制数
 cout<<oct<<i<<endl; //输出八进制数
 cout<<dec<<i<<endl; //输出十进制数
 ```
+
+# typedef struct
+
+在C中：
+
+```c
+typedef struct Student
+{
+  int a;
+}Stu;
+```
+
+于是在声明变量的时候就可：`Stu stu1;`
+
+如果没有typedef就必须用`struct Student stu1;`来声明。
+
+这里的Stu实际上就是struct Student的别名。
+
+但是在C++中：
+
+```c++
+struct Student
+{
+  int a;
+};
+```
+
+声明变量时可直接`Student stu2；`
+
+所以当给C++的库提供C的接口时，经常可以看见如下用法：
+
+```c++
+typedef struct Student Student;
+```
+
+这样就可以抹平两者的差异了。
+
+参考：
+
+https://www.cnblogs.com/qyaizs/articles/2039101.html
+
+struct和typedef struct彻底明白了
