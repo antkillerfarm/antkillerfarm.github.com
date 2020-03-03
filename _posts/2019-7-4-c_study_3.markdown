@@ -8,6 +8,11 @@ category: language
 
 ```cpp
 template <class Derived, class Base>
+inline Derived polymorphic_downcast(Base* x);
+// Effects: assert( dynamic_cast<Derived>(x) == x );
+// Returns: static_cast<Derived>(x)
+
+template <class Derived, class Base>
 inline auto polymorphic_pointer_cast(Base x);
 // Throws: std::bad_cast if ( dynamic_pointer_cast<Derived>(x) == 0 )
 // Returns: dynamic_pointer_cast<Derived>(x)
@@ -309,6 +314,8 @@ C++11之前的一些非标准STL还实现了一种叫做hash_map的容器，原�
 map：存储key-value pair。`iterator->first`指向key，而`iterator->second`指向value。
 
 set：只有value。set也有unordered_set这样的变种。
+
+map和set都不允许重复值，如果需要重复的话，可以使用multiset和multimap。
 
 # K&R风格
 

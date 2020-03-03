@@ -169,6 +169,20 @@ https://mp.weixin.qq.com/s/m44zVWMvactsLPjKsFnlSg
 
 RAII惯用法：C++资源管理的利器
 
+# GC in C++
+
+https://www.hboehm.info/gc/
+
+A garbage collector for C and C++（boehm gc）
+
+https://blog.codingnow.com/2008/06/gc.html
+
+引用计数与垃圾收集之比较
+
+https://www.cnblogs.com/duguguiyu/archive/2007/11/14/959178.html
+
+GC in C++
+
 # 各类ptr
 
 **auto_ptr**：它允许程序员创建一个指向某种资源的指针对象，当该对象离开它的作用域时，它所指向的资源也会被自动释放。
@@ -203,6 +217,10 @@ std::unique_ptr<std::FILE, decltype(&close_file)> fp(std::fopen("demo.txt", "r")
 - 方法1：`std::unique_ptr<int>(new int(1));`
 
 - 方法2：`std::make_unique<int>(1);`
+
+从实现来看，这些智能指针除了需要new对象之外，还需要new一个用于维护对象引用计数的控制块，因此第2种方法一次性分配的效率会比较高。
+
+一般来说，`make_XXX`在标准库中，通常都带有new对象和相关控制结构的操作，除了上述的`make_unique`之外，类似的还有`make_pair`等。
 
 参考：
 
@@ -258,9 +276,4 @@ template <class Derived, class Base>
 inline Derived polymorphic_cast(Base* x);
 // Throws: std::bad_cast if ( dynamic_cast<Derived>(x) == 0 )
 // Returns: dynamic_cast<Derived>(x)
-
-template <class Derived, class Base>
-inline Derived polymorphic_downcast(Base* x);
-// Effects: assert( dynamic_cast<Derived>(x) == x );
-// Returns: static_cast<Derived>(x)
 ```
