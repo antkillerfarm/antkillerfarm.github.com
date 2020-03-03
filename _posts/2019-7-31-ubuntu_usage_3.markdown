@@ -329,6 +329,10 @@ https://mp.weixin.qq.com/s/hTExoHwP8kzUWyRuUL8G_g
 
 宅在家做蛋糕如何“合理把握”烘焙时间？模小数用数学建模告诉你
 
+https://mp.weixin.qq.com/s/_uu1dFzSC257vKS4mPjVfg
+
+父子反目，遭亲爹打压数年，数学第一家族中最憋屈的科学家（Daniel Bernoull）
+
 # Linux参考资源+
 
 https://mp.weixin.qq.com/s/snQ3T86usv4rXz0MMQvFfQ

@@ -192,7 +192,7 @@ https://mp.weixin.qq.com/s/Y8i25dZmj41dr8nz2WyNbQ
 
 搜索一次就够了：中科院&图森提出通过稀疏优化进行一次神经架构搜索
 
-https://mp.weixin.qq.com/s/45QCGUXJ2VM96PNj-LEFxg
+https://mp.weixin.qq.com/s/lB3oGZ8qxpUMSpyHLySzBw
 
 麻省理工HAN Lab提出ProxylessNAS自动为目标任务和硬件定制高效CNN结构
 

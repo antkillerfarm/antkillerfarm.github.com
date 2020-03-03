@@ -373,6 +373,10 @@ https://mp.weixin.qq.com/s/nz9NHdyhRqxdhYopFQ_5Ag
 
 红外热成像与快速发热病患检测
 
+https://mp.weixin.qq.com/s/Htn1Il96fus7s8NkD2_98w
+
+Google Pixel4相机解密(1)夜景
+
 # 编译原理
 
 https://zhuanlan.zhihu.com/frozengene

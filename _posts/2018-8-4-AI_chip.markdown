@@ -116,13 +116,17 @@ Habana的产品线主要有：
 
 https://habana.ai
 
->2019.12 Habana被Intel收购。
+>2019.12 Habana被Intel收购。稍后，就传出Intel解散Nervana团队的事情。后者是2016年被Intel收购的一家AI芯片公司。
 
 参考：
 
 https://mp.weixin.qq.com/s/cnHQSmM89Sp92gke_F9T2Q
 
 一窥Habana的推理和训练神经处理器
+
+https://mp.weixin.qq.com/s/z4OEPrAAtaNmBQoyvEd7Nw
+
+从春秋到战国—论Nervana的倒掉
 
 ## Qualcomm
 
@@ -157,6 +161,10 @@ https://mp.weixin.qq.com/s/P381v0eXrwfzlLE79c8sGg
 现在，计算芯片是越做越大，在早先的PC中，最大的芯片无疑是CPU了。但现在高端显卡芯片的面积已经超越CPU了。
 
 Cerebras在这方面更为极端，它的芯片采用了一整张300mm晶圆，将40万个内核，1.2万亿个晶体管，46,225平方毫米的硅和18GB的片上存储器，全部集成在一个与整个晶圆一样大的芯片中，大到令人难以置信。
+
+其实Nvidia的芯片也有越来越大的趋势：
+
+![](/images/img3/nvidia_roadmap.png)
 
 参考：
 

@@ -295,6 +295,10 @@ https://mp.weixin.qq.com/s/a6o04KzpkwiIpS7ycP5khw
 
 Spark源码和调优简介Spark Core
 
+https://mp.weixin.qq.com/s/X4nrtI6WODRHYiZ66xRshQ
+
+PySpark和SparkSQL基础：如何利用Python编程执行Spark
+
 # DRL参考资源
 
 https://mp.weixin.qq.com/s/curzH8WrFyl5WWT4lDfpwQ
