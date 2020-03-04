@@ -375,3 +375,7 @@ https://www.zhihu.com/question/20890194
 https://mp.weixin.qq.com/s/5MjByZWThzQ4MSWRoIS1HQ
 
 为了Wi-Fi 6，华为和小米争个啥？
+
+https://mp.weixin.qq.com/s/ZHgG3NJ3oMxmz8M6VDImXg
+
+​什么是WiFi 6E？它与WiFi 6有何不同？

@@ -259,6 +259,10 @@ https://mp.weixin.qq.com/s/QIJ2c4L7KfjVEhIyKayJ-Q
 
 阿里文娱多模态视频分类算法中的特征改进
 
+https://mp.weixin.qq.com/s/THxlQX2MPXua0_N0Ug0EWA
+
+BERT在多模态领域中的应用
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

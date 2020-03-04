@@ -64,6 +64,10 @@ http://www.voxforge.org/
 
 VoxForge是一个非常活跃的众包语音识别数据库和经过训练的模型库
 
+https://mp.weixin.qq.com/s/jvxUkwfPf3kqqdnvTQLlkA
+
+CoVoST：Facebook发布的多语种语音-文本翻译语料库
+
 # 基本框架
 
 语音识别系统主要有四部分组成：信号处理和特征提取、声学模型、语言模型（Language Model, LM）和解码器(Decoder)。

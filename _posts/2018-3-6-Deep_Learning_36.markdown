@@ -301,3 +301,7 @@ https://mp.weixin.qq.com/s/f2fYwaPNty72CFUIZZPBoA
 https://mp.weixin.qq.com/s/8EQNRIIKQnyoPhUG8ben6A
 
 基于耦合知识蒸馏，速度提升200倍，一款视频显著区域检测新算法
+
+https://mp.weixin.qq.com/s/MjkdwozIXoCJbooQHype7w
+
+视频异常检测：预测未来帧Future Frame Prediction的3个缺陷

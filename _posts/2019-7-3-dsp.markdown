@@ -421,3 +421,7 @@ FaceBook开源PyTorch3D：基于PyTorch的新3D计算机视觉库
 https://mp.weixin.qq.com/s/Z27oInh5rdxnxt1-KFAiRA
 
 1GB文本标记只需20秒！抱抱脸团队发布最新NLP工具
+
+https://mp.weixin.qq.com/s/8mpc7AblZyRw7LCh35vL2g
+
+哈工大讯飞联合实验室发布知识蒸馏工具TextBrewer

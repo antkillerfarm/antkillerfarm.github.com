@@ -182,10 +182,6 @@ https://mp.weixin.qq.com/s/-G6XW0vUlFsGFSyEBNnjQQ
 
 OpenCV实现年龄与性别预测
 
-https://mp.weixin.qq.com/s/ZqFtDQ4OLHL94QTr-GXKnQ
-
-OpenCV实现边缘模板匹配算法
-
 https://zhuanlan.zhihu.com/p/60155753
 
 基于图像处理的自动报靶算法商用化系统设计

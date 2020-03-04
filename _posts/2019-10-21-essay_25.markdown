@@ -67,6 +67,44 @@ https://www.zhihu.com/question/347726083
 
 ## 病毒（续）
 
+实际上，像这样的“内源性逆转录病毒”一直在反复入侵我们人类的基因组。
+
+我们每个人的基因组中都携带了将近10万个“内源性逆转录病毒”的DNA片段，这些片段占到人类DNA总量的8%。如果作为比较的话，那些负责蛋白质编码的基因，只占到了1.2%。
+
+也就是说，我们的基因组，可以说是个“病毒泛滥”的地方。但恰恰是这些泛滥的病毒，成就了今天的我们。
+
+科学家曾经惊讶地发现，某种病毒中的一个基因，能合成一种叫做“合胞素”的蛋白质，而这种蛋白质能形成一种东西，那就是胎盘。
+
+这意味着，一种新型的生命形式——“哺乳动物”，有机会出现在地球上了。
+
+![](/images/img3/virus.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/lwBpRJ4VQxD3DzeMropylQ
+
+病毒简史：人类对大自然的不知敬畏，才是一切灾难的源头
+
+https://mp.weixin.qq.com/s/Zh9-8C-hilrlKk8jrVo60g
+
+入侵&反击！病原体和人体的攻防战
+
+https://mp.weixin.qq.com/s/bgF5p9g47FmnPmR2hcvU3Q
+
+病毒，那条静止的河流
+
+https://mp.weixin.qq.com/s/ebaz8rd7ft3eH8E-cS3YpA
+
+病毒从哪里来？
+
+https://mp.weixin.qq.com/s/7NePVREsxbMFqaZvF5N51w
+
+BBC纪录片：病毒是如何入侵的？
+
+https://mp.weixin.qq.com/s/JAm3eMF1ATMzHTRTiZybIQ
+
+阻击病毒的战场
+
 https://asm.org/
 
 American Society for Microbiology
@@ -190,64 +228,6 @@ https://mp.weixin.qq.com/s/e3MaPaBZrxwqWtykB9f_JQ
 http://news.ifeng.com/c/7uRKv3JARr9
 
 伊朗女副总统感染新冠病毒，40年前她在美国家喻户晓
-
-## 疫情建模
-
-https://mp.weixin.qq.com/s/2XsZzfZI-gAHC-D5HGNZXw
-
-从目前的数据，再次分析一下武汉的新冠肺炎患者数量和死亡率
-
-https://mp.weixin.qq.com/s/I5I5Jh7brFGRBTAFah-C4w
-
-武汉新冠肺炎传播的动力学模型及预测
-
-https://mp.weixin.qq.com/s/-C03P-I4w91kLSGsuhxAKQ
-
-新型冠状病毒传播与扩散的控制模型
-
-https://mp.weixin.qq.com/s/gZCD8ATxGrpHSZLKpcHfiA
-
-基于元胞自动机模拟新型肺炎病毒的传播和预防
-
-https://mp.weixin.qq.com/s/ZOPncvPpFyLIwH_XChAdbg
-
-基于微分方程和元胞自动机模拟新型肺炎病毒的传播
-
-https://mp.weixin.qq.com/s/4w6CTGaKKEH9APVNH9Ue8w
-
-扩散信息、交通管制、自我隔离，哪个更能遏制病毒传播？
-
-https://mp.weixin.qq.com/s/tBoM9o3pK89bprK8npHLWA
-
-可能会说谎的地图！全国疫情地理格局的重新审视
-
-https://mp.weixin.qq.com/s/bVNkCHl7BPU_eEcAWksmww
-
-关于武汉新型冠状病毒肺炎的传播预测模型
-
-https://mp.weixin.qq.com/s/XYT4U1mv29nln32ysMINrw
-
-武汉肺炎传播的多种数学模型
-
-https://mp.weixin.qq.com/s/Lg1tJmO7aN9XNpZ6bs0cJA
-
-程序员硬核劝告：现在还不是出门的时候
-
-https://mp.weixin.qq.com/s/sv07R8HQXX2U0QOi5_dOwg
-
-河南1105例新冠肺炎数据告诉我们什么？
-
-https://mp.weixin.qq.com/s/qRzkS2itp-eloaBlA-VSGA
-
-基于排队论模型浅析各地医护人员驰援武汉的重要意义
-
-https://mp.weixin.qq.com/s/ueuvLFxQAGNzBLHHyaBYMA
-
-如果新冠病毒是在亚美尼亚爆发会发生什么？程序员用Python进行模拟
-
-https://mp.weixin.qq.com/s/LGNGFf-LBMz3qyUFPr_BHA
-
-新冠疫情下，如何降低复工的职场感染风险？
 
 # 世说新语+
 

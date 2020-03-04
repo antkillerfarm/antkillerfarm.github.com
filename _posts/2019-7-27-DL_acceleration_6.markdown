@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/EBCcBWob_iFa51-gOVPYQA
 
 揭秘微信“扫一扫”识物为什么这么快？
 
+https://mp.weixin.qq.com/s/UmtCq6WzIDQs3IAxhRFgNw
+
+浅谈模型压缩之量化、剪枝、权重共享
+
 # 知识蒸馏
 
 ## 基本概念

@@ -282,6 +282,10 @@ https://mp.weixin.qq.com/s/i7EJSNzDsNNbK2YA_YNu8g
 
 词向量与ELMo模型
 
+https://mp.weixin.qq.com/s/qbXZGiKYEuTI-2l4iYZlbQ
+
+图文并茂带你细致了解ELMo的各种细节
+
 ## GPT-2
 
 GPT-1论文：

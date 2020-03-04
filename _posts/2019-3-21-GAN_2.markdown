@@ -383,3 +383,7 @@ https://mp.weixin.qq.com/s/X1DPEcNP1mFc1DGUdzh3eQ
 https://zhuanlan.zhihu.com/p/96025520
 
 9102年入门GAN的补习
+
+https://mp.weixin.qq.com/s/iLAE_WR-rQrqd4dtYWB_gA
+
+史上最全GAN综述2020版：算法、理论及应用

@@ -438,6 +438,10 @@ https://mp.weixin.qq.com/s/fSt27Vk29LoSDPv8KfPHjQ
 
 什么是折线图？怎样用Python绘制？
 
+https://mp.weixin.qq.com/s/E7pk7CNQmF_6Qsjj1_2nRw
+
+Matplotlib绘制漫威英雄战力图，带你飞起来！
+
 ## Pandas
 
 Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。

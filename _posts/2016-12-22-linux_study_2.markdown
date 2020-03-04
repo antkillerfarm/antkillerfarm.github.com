@@ -389,6 +389,10 @@ https://mp.weixin.qq.com/s/mTOzcdjaak-z6ypL9MR2Lw
 
 小白科普：悲观锁和乐观锁
 
+https://mp.weixin.qq.com/s/t-jZ9GoqW46rU3t9ahHqCQ
+
+mysql悲观锁总结和实践
+
 https://mp.weixin.qq.com/s/6MRi_UEcMybKn4YXi6qWng
 
 操作系统中锁的实现原理

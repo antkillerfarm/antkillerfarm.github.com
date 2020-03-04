@@ -385,4 +385,8 @@ https://mp.weixin.qq.com/s/sK5uP1L9CIVOSFBOG8-F5A
 
 https://mp.weixin.qq.com/s/1ixYjJN-bJPGrr7v-4d7Rw
 
-预训练语言模型的前世今生: 萌芽时代
+预训练语言模型的前世今生：萌芽时代
+
+https://mp.weixin.qq.com/s/g4jEVU3BkRem-DYXCn5eFQ
+
+预训练语言模型的前世今生：风起云涌

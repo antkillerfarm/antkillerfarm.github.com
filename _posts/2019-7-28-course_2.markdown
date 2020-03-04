@@ -261,3 +261,7 @@ https://mp.weixin.qq.com/s/QTELpbr480AJsBINm-FHKQ
 https://mp.weixin.qq.com/s/ZEWCcxTEuEMvQ5__t3gkBg
 
 BERT技术体系综述论文：40项分析探究BERT如何work
+
+https://mp.weixin.qq.com/s/M3VRlz8-McbTbp9VcctU0w
+
+如何让BERT拥有视觉感知能力？两种方式将视频信息注入BERT

@@ -238,6 +238,22 @@ https://www.zhihu.com/question/357660483/answer/965379804
 
 澳大利亚的山火为什么会烧这么久？
 
+----
+
+**内温性**是指一种生物可以保持其身体新陈代谢有利的温度,并且主要依靠自身产生的热量维持体温,而不是主要依靠环境的热量来维持，典型的代表是大部分哺乳动物和鸟类。
+
+**外温性**是指一种生物主要依靠外部热源的热量来调节体温，它们的体温因此也多随着环境温度变化，蜥蜴、鳄鱼和大部分龟鳖类都是外温性生物。
+
+除了内温性和外温性动物，还有中温性动物和巨温性动物。
+
+**中温性**生物的体温调节能力介于两者之间，往往可以通过自身产的热量维持体温高于环境温度，或者维持在某个区间。但不能像内温性生物那样将体温维持到一个很高，并且非常稳定的程度。现生动物的代表很少，包括棱皮龟、单孔类哺乳动物等。
+
+而**巨温性**也称惯性恒温性。巨温性的动物由于体型很大，导致体表表面积相对变小，散热能力相对小体型动物下降。散热能力下降导致它们即使新陈代谢能力不如典型的内温性动物，但体温也可以维持在一个很高的水平。
+
+https://mp.weixin.qq.com/s/861Nk3YW5-00Y7UE1RPLZg
+
+“起床！量体温了！”麻烦给七千万年前的恐龙发条信息
+
 # DNA鉴定
 
 https://mp.weixin.qq.com/s/8QEmodonoo_rc1m85kmMOQ
@@ -257,35 +273,3 @@ https://www.f793.club/blog/liusheng1/
 头孢菌素化合物最初是于1948年，由意大利科学家Giuseppe Brotzu从萨丁岛排水沟中的顶头孢提炼出来。他发现这些顶头孢分泌出一些物质，可以有效抵抗引致伤寒的伤寒杆菌。
 
 >Giuseppe Brotzu，1895～1976，意大利药理学家和政治家。University of Cagliari教授。当过President of Sardinia和Mayor of Cagliari。
-
-----
-
-顾方舟，我国著名医学科学家、病毒学专家，中国医学科学院原院长，北京协和医学院原校长，北京协和医学院一级教授。**“糖丸”之父。**
-
-https://www.thepaper.cn/newsDetail_forward_2811224
-
-病毒学家顾方舟：一生只为一件事
-
-----
-
-https://new.qq.com/omn/20190202/20190202B124CL.html
-
-布洛芬发现者Stewart Adams去世，是他拯救了百亿人的头痛牙痛姨妈痛
-
-----
-
-https://mp.weixin.qq.com/s/j3zWCsGzWXIwM4a7n-lOjw
-
-“疟疾治愈癌症”持续发酵，放弃正规治疗之前，你必须知道这些！
-
->William Bradley Coley，1862～1936，美国外科医生。Yale本科+Harvard医学院医学学位。癌症免疫疗法之父。
-
-----
-
-![](/images/img3/youyoutu.jpg)
-
-![](/images/img3/youyoutu_2.jpg)
-
-三大医学期刊：新英格兰医学杂志（New England Journal of Medicine), 柳叶刀（the Lancet), 美国医学会会刊（JAMA）
-
-CNS是国内对Cell、Nature、Science三大顶级杂志的简称。

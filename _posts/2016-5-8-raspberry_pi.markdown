@@ -271,6 +271,10 @@ https://mp.weixin.qq.com/s/8zD3GqbQrQnZmuD59OoFuQ
 
 让树莓派记下你的笑颜
 
+https://mp.weixin.qq.com/s/onN61A13xuJzNk9zE0hM-w
+
+你有特斯拉，我有树莓派，纯手工打造车载车牌识别检测系统，家用车秒变智能车
+
 ## Raspberry Pi 4
 
 2019.6

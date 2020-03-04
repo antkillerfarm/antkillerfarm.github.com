@@ -188,6 +188,10 @@ https://mp.weixin.qq.com/s/Fm4HQeN_0Iasd2jqKsPGOw
 
 情感分析: ABSA模型总结（PART II）
 
+https://mp.weixin.qq.com/s/hZQxz5u-Z0_SEmtLL7T4Hg
+
+基于Aspect的情感分析模型总结
+
 ## 命名实体识别
 
 https://mp.weixin.qq.com/s/LrrqGCNBncDr3ZacoIHHBg

@@ -18,11 +18,19 @@ ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放�
 
 https://blog.csdn.net/liyuanbhu/article/details/49837661
 
-OpenCV 学习笔记（模板匹配）
+OpenCV学习笔记（模板匹配）
 
 https://blog.csdn.net/xxboy61/article/details/38319757
 
-OpenCV实现之模板匹配(Template Matching)
+OpenCV实现之模板匹配（Template Matching）
+
+https://mp.weixin.qq.com/s/ZqFtDQ4OLHL94QTr-GXKnQ
+
+OpenCV实现边缘模板匹配算法
+
+https://zhuanlan.zhihu.com/p/110425960
+
+模板匹配
 
 # Superpixel
 

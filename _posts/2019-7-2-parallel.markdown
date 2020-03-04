@@ -288,6 +288,10 @@ https://mp.weixin.qq.com/s/Vb3AkoWHQY7WWBMZaVnf4g
 
 微软发布DeepSpeed开源库，支持1000亿个参数模型的训练
 
+https://mp.weixin.qq.com/s/3uu50NWFJqA_MTb8wSxIKA
+
+如何优雅地训练大型模型？
+
 # NLP参考资源
 
 https://mp.weixin.qq.com/s/gJFwWnKn7BV_BcADu_vJCg
