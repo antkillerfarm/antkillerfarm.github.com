@@ -122,38 +122,6 @@ void main()
 }
 ```
 
-## IEEE 754
-
-|  | Sign | Exponent | Significand |
-|:--:|:--:|:--:|:--:|
-| FP16 | 1 | 5 | 10 |
-| FP32 | 1 | 8 | 23 |
-| FP64 | 1 | 11 | 52 |
-| FP128 | 1 | 15 | 113 |
-| FP256 | 1 | 19 | 237 |
-
-目前，clang编译器已经原生支持FP16，但gcc还不行，不过可以用以下项目支持之：
-
-http://half.sourceforge.net/
-
-half - IEEE 754-based half-precision floating point library
-
-显然，Significand的位数决定Accuracy，而Exponent的位数决定Dynamic Range。
-
-上溢：超出所能表示的最大数（$$\to \infty$$）。
-
-下溢：超出所能表示的最小数（$$\to 0$$）。
-
-除了IEEE 754之外，还有IBM hexadecimal floating point。相比于IEEE 754，IBM格式的Significand位数多一些，而Exponent的位数少一些。
-
-参考：
-
-https://en.wikipedia.org/wiki/IEEE_754
-
-http://blog.codinglabs.org/articles/trouble-of-x86-64-platform.html
-
-x86-64体系下一个奇怪问题的定位
-
 # 并行计算
 
 ## 概述

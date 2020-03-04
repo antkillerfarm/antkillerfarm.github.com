@@ -281,3 +281,7 @@ https://mp.weixin.qq.com/s/Ni42SEukRBGDUHu_bh3Lig
 https://mp.weixin.qq.com/s/FYghBvkye8J7BqPje4JhFw
 
 汽车之家推荐系统排序算法迭代之路
+
+https://mp.weixin.qq.com/s/2whZpeQPXggHRDSEUnQZ-w
+
+加州大学-Liwei Wu博士论文：协同过滤与排序进展，150页pdf

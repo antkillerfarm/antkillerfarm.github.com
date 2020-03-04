@@ -4,7 +4,57 @@ title:  深度加速（四）——模型压缩与加速（1）
 category: DL acceleration 
 ---
 
-# NN Quantization（续）
+# NN Quantization
+
+## Flexpoint（续）
+
+参考：
+
+https://www.intel.ai/flexpoint-numerical-innovation-underlying-intel-nervana-neural-network-processor/
+
+Flexpoint: Numerical Innovation Underlying the Intel Nervana Neural Network Processor
+
+https://zhuanlan.zhihu.com/p/33580205
+
+Flexpoint——利用一种自适应的数据类型加速神经网络训练
+
+https://mp.weixin.qq.com/s/z4OEPrAAtaNmBQoyvEd7Nw
+
+从春秋到战国—论Nervana的倒掉
+
+## Saturate Quantization
+
+上述各种量化方法都是在保证数值表示范围的情况下，尽可能提高fl或者scale。这种方法也叫做Non-saturation Quantization。
+
+NVIDIA在如下文章中提出了一种新方法：
+
+http://on-demand.gputechconf.com/gtc/2017/presentation/s7310-8-bit-inference-with-tensorrt.pdf
+
+8-bit Inference with TensorRT
+
+![](/images/img2/INT8_3.png)
+
+Saturate Quantization的做法是：将超出上限或下限的值，设置为上限值或下限值。
+
+如何设置合理的Saturate threshold呢？
+
+可以设置一组门限，然后计算每个门限的分布和原分布的相似度，即KL散度，选择最相似分布的门限即可。
+
+参考：
+
+https://blog.csdn.net/u013010889/article/details/90295078
+
+int8量化和tvm实现
+
+## 量化技巧
+
+1.设计模型时，需要对输入进行归一化，缩小输入值的值域范围，以减小量化带来的精度损失。
+
+2.tensor中各分量的值域范围最好相近。这个的原理和第1条一致。比如YOLO的结果中，同时包含分类和bbox，而且分类的值域范围远大于bbox，导致量化效果不佳。
+
+3.最好不要使用ReluN这样的激活函数，死的神经元太多。神经元一旦“死亡”，相应的权值就不再更新，而这些值往往不在正常范围内。
+
+4.对于sigmoid、tanh这样的S形函数，其输入在$$\mid x \mid > \sigma$$范围的值，最终的结果都在sigmoid、tanh的上下限附近。因此，可以直接将这些x值量化为$$\sigma$$。这里的$$\sigma$$的取值，对于sigmoid来说是6，而对于tanh来说是3。
 
 ## NN硬件的指标术语
 
@@ -263,47 +313,3 @@ Google DeepMind最新报告—深度神经网络压缩进展
 http://blog.csdn.net/shuzfan/article/details/51383809
 
 神经网络压缩：Deep Compression
-
-https://mp.weixin.qq.com/s/2NOFyu_twx1EciDeDPBLKw
-
-深度神经网络加速与压缩
-
-https://mp.weixin.qq.com/s/0KlnQ8UUxpyhBRdeo0EOAA
-
-用于网络压缩的滤波器级别剪枝算法ThiNet
-
-https://mp.weixin.qq.com/s/lO2UM04PfSM5VJYh6vINhw
-
-为模型减减肥：谈谈移动／嵌入式端的深度学习
-
-https://mp.weixin.qq.com/s/cIGuJvYr4lZW01TdINBJnA
-
-深度压缩网络：较大程度减少了网络参数存储问题
-
-https://mp.weixin.qq.com/s/1JwLP0FmV1AGJ65iDgLWQw
-
-神经网络模型压缩技术
-
-https://mp.weixin.qq.com/s/rzv8VCAxBQi0HsUcnLqqUA
-
-处理移动端传感器时序数据的深度学习框架：DeepSense
-
-https://mp.weixin.qq.com/s/UYk3YQmFW7-44RUojUqfGg
-
-上交大ICCV：精度保证下的新型深度网络压缩框架
-
-https://mp.weixin.qq.com/s/ZuEi32ZBSjruvtyUimBgxQ
-
-揭秘支付宝中的深度学习引擎：xNN
-
-http://mp.weixin.qq.com/s/iapih9Mme-VKCfsFCmO7hQ
-
-简单聊聊压缩网络
-
-https://mp.weixin.qq.com/s/3qstz-KoRuxwpmfE4XDI-Q
-
-面向卷积神经网络的卷积核冗余消除策略
-
-https://mp.weixin.qq.com/s/dEdWz4bovmk65fwLknHBhg
-
-韩松毕业论文：面向深度学习的高效方法与硬件

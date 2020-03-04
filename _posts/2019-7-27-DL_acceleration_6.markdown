@@ -6,6 +6,18 @@ category: DL acceleration
 
 # 模型压缩与加速（续）
 
+https://mp.weixin.qq.com/s/oah61YozMB2fMfpDqPwHjw
+
+Deep Compression神经网络压缩经典之作
+
+https://mp.weixin.qq.com/s/ulrPhfsPunKAWYohBhkh9w
+
+寻找最佳的神经网络架构，韩松组两篇论文解读
+
+https://mp.weixin.qq.com/s/gwXXkWumGWy24oWuZKSyAQ
+
+MIT韩松组推出升级版AutoML方法，一个网络适配所有硬件
+
 https://zhuanlan.zhihu.com/p/76909380
 
 轻量型网络：MoGA简介
@@ -85,6 +97,10 @@ https://zhuanlan.zhihu.com/p/104447447
 https://zhuanlan.zhihu.com/p/105064255
 
 Slimmable Networks
+
+https://mp.weixin.qq.com/s/EBCcBWob_iFa51-gOVPYQA
+
+揭秘微信“扫一扫”识物为什么这么快？
 
 # 知识蒸馏
 

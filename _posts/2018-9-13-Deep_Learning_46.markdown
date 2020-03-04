@@ -114,6 +114,10 @@ https://mp.weixin.qq.com/s/dg3ydVozTN1wJB-SnjkPGQ
 
 GNN手绘草图识别新架构：Multi-Graph Transformer网络
 
+https://mp.weixin.qq.com/s/XFrgmdEz1d9vg6U0hYr7Qw
+
+中英文文字检测与识别项目（CTPN+CRNN+CTC Loss原理讲解）
+
 # Graph NN+
 
 https://mp.weixin.qq.com/s/dXYjUHAXVZINXQkvM_ssZA

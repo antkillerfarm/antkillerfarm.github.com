@@ -124,10 +124,6 @@ https://mp.weixin.qq.com/s/cnHQSmM89Sp92gke_F9T2Q
 
 一窥Habana的推理和训练神经处理器
 
-https://mp.weixin.qq.com/s/z4OEPrAAtaNmBQoyvEd7Nw
-
-从春秋到战国—论Nervana的倒掉
-
 ## Qualcomm
 
 SnapDragon = Kryo CPU + Adreno GPU + Hexagon DSP(include Hexagon Tensor Accelerator, HTA & Hexagon Vector eXtensions, HVX)
@@ -270,3 +266,17 @@ https://mp.weixin.qq.com/s/j053qtpdz21IdgS22uGwAw
 https://mp.weixin.qq.com/s/XXO4hkjJkcZ5sTVVKWghEw
 
 TPU的起源，Jeff Dean综述后摩尔定律时代的ML硬件与算法
+
+## Groq 
+
+Groq是Google TPU团队的部分成员创立的AI芯片公司。
+
+官网：
+
+https://groq.com/
+
+参考：
+
+https://zhuanlan.zhihu.com/p/102357412
+
+Groq，“软件定义硬件”概念的背后

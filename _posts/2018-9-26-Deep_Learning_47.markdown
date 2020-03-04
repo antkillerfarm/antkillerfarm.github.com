@@ -335,3 +335,7 @@ MetaQNN: 与Google同场竞技，MIT经典作，基于Q-Learning的神经网络�
 https://mp.weixin.qq.com/s/5NGCr6oMW2p5u4kF7YMCPw
 
 NAS太难了，搜索结果堪比随机采样！华为ICLR 2020论文给出6条建议
+
+https://zhuanlan.zhihu.com/p/110527110
+
+Neural Architecture Search

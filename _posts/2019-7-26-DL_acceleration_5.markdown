@@ -6,6 +6,50 @@ category: DL acceleration
 
 # 模型压缩与加速（续）
 
+https://mp.weixin.qq.com/s/2NOFyu_twx1EciDeDPBLKw
+
+深度神经网络加速与压缩
+
+https://mp.weixin.qq.com/s/0KlnQ8UUxpyhBRdeo0EOAA
+
+用于网络压缩的滤波器级别剪枝算法ThiNet
+
+https://mp.weixin.qq.com/s/lO2UM04PfSM5VJYh6vINhw
+
+为模型减减肥：谈谈移动／嵌入式端的深度学习
+
+https://mp.weixin.qq.com/s/cIGuJvYr4lZW01TdINBJnA
+
+深度压缩网络：较大程度减少了网络参数存储问题
+
+https://mp.weixin.qq.com/s/1JwLP0FmV1AGJ65iDgLWQw
+
+神经网络模型压缩技术
+
+https://mp.weixin.qq.com/s/rzv8VCAxBQi0HsUcnLqqUA
+
+处理移动端传感器时序数据的深度学习框架：DeepSense
+
+https://mp.weixin.qq.com/s/UYk3YQmFW7-44RUojUqfGg
+
+上交大ICCV：精度保证下的新型深度网络压缩框架
+
+https://mp.weixin.qq.com/s/ZuEi32ZBSjruvtyUimBgxQ
+
+揭秘支付宝中的深度学习引擎：xNN
+
+http://mp.weixin.qq.com/s/iapih9Mme-VKCfsFCmO7hQ
+
+简单聊聊压缩网络
+
+https://mp.weixin.qq.com/s/3qstz-KoRuxwpmfE4XDI-Q
+
+面向卷积神经网络的卷积核冗余消除策略
+
+https://mp.weixin.qq.com/s/dEdWz4bovmk65fwLknHBhg
+
+韩松毕业论文：面向深度学习的高效方法与硬件
+
 https://mp.weixin.qq.com/s/GFE2XYHZXPP0doQ5nd0JNQ
 
 当前深度神经网络模型压缩和加速方法速览
@@ -345,15 +389,3 @@ https://zhuanlan.zhihu.com/c_151876233
 https://mp.weixin.qq.com/s/kU0_BuQW8VQihUwBuZ90cA
 
 发布可伸缩超网SCARLET，小米AutoML团队NAS三部曲杀青
-
-https://mp.weixin.qq.com/s/oah61YozMB2fMfpDqPwHjw
-
-Deep Compression神经网络压缩经典之作
-
-https://mp.weixin.qq.com/s/ulrPhfsPunKAWYohBhkh9w
-
-寻找最佳的神经网络架构，韩松组两篇论文解读
-
-https://mp.weixin.qq.com/s/gwXXkWumGWy24oWuZKSyAQ
-
-MIT韩松组推出升级版AutoML方法，一个网络适配所有硬件

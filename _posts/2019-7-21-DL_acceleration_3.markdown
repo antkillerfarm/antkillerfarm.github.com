@@ -142,6 +142,46 @@ https://china.xilinx.com/support/documentation/white_papers/c_wp486-deep-learnin
 
 利用Xilinx器件的INT8优化开展深度学习
 
+## IEEE 754
+
+在开始进一步介绍之前，我们首先回顾一下浮点数在硬件上的表示方法。其中最重要的就是IEEE 754标准。
+
+|  | Sign | Exponent | Significand |
+|:--:|:--:|:--:|:--:|
+| FP16 | 1 | 5 | 10 |
+| FP32 | 1 | 8 | 23 |
+| FP64 | 1 | 11 | 52 |
+| FP128 | 1 | 15 | 113 |
+| FP256 | 1 | 19 | 237 |
+
+![](/images/img3/float.jpg)
+
+目前，clang编译器已经原生支持FP16，但gcc还不行，不过可以用以下项目支持之：
+
+http://half.sourceforge.net/
+
+half - IEEE 754-based half-precision floating point library
+
+显然，Significand的位数决定Accuracy，而Exponent的位数决定Dynamic Range。
+
+上溢：超出所能表示的最大数（$$\to \infty$$）。
+
+下溢：超出所能表示的最小数（$$\to 0$$）。
+
+除了IEEE 754之外，还有IBM hexadecimal floating point。相比于IEEE 754，IBM格式的Significand位数多一些，而Exponent的位数少一些。
+
+参考：
+
+https://en.wikipedia.org/wiki/IEEE_754
+
+http://blog.codinglabs.org/articles/trouble-of-x86-64-platform.html
+
+x86-64体系下一个奇怪问题的定位
+
+## Microsoft Binary Format
+
+MS早期的Basic产品中使用了一种特殊的浮点表示方法，被称作Microsoft Binary Format（1975年）。与后来的浮点标准主要由硬件厂商主导不同，这时的浮点运算还是以软件的形式运行在定点运算单元上。
+
 ## Distiller
 
 https://nervanasystems.github.io/distiller/index.html
@@ -246,36 +286,30 @@ https://mp.weixin.qq.com/s/zBtpwrQ5HtI6uzYOx5VsCQ
 
 模型训练太慢？显存不够用？这个算法让你的GPU老树开新花
 
-## Saturate Quantization
+## Flexpoint
 
-上述各种量化方法都是在保证数值表示范围的情况下，尽可能提高fl或者scale。这种方法也叫做Non-saturation Quantization。
+Flexpoint是Nervana的作品。
 
-NVIDIA在如下文章中提出了一种新方法：
+论文：
 
-http://on-demand.gputechconf.com/gtc/2017/presentation/s7310-8-bit-inference-with-tensorrt.pdf
+《Flexpoint: An Adaptive Numerical Format for Efficient Training of Deep Neural Networks》
 
-8-bit Inference with TensorRT
+讲了Google的成功案例，这里来讲一个反面教材。
 
-![](/images/img2/INT8_3.png)
+![](/images/img3/flex.png)
 
-Saturate Quantization的做法是：将超出上限或下限的值，设置为上限值或下限值。
+这实际上就是INT16的量化，用在inference上应该还是可以的，然而Nervana的目标还有training。
 
-如何设置合理的Saturate threshold呢？
+和bfloat16相比，它至少有如下问题：
 
-可以设置一组门限，然后计算每个门限的分布和原分布的相似度，即KL散度，选择最相似分布的门限即可。
+- 格式转换比bfloat16复杂。
 
-参考：
+- Dynamic Range小，容易梯度消失，从而造成模型很难收敛。从指数位宽来看，Flexpoint和float16相同，都是5位。然而由于Flexpoint是共享指数，因此它真正的Dynamic Range是不如float16的。float16已经被证明是不适合training的，更遑论Flexpoint了。
 
-https://blog.csdn.net/u013010889/article/details/90295078
+事实上，Intel内部已有人评价道：
 
-int8量化和tvm实现
+>Flexpoint16三个月converge不了一个网络，而BF16一天就可以converge三个。
 
-## 量化技巧
+- 指数保存在Host上，会造成反复通信的带宽问题。
 
-1.设计模型时，需要对输入进行归一化，缩小输入值的值域范围，以减小量化带来的精度损失。
-
-2.tensor中各分量的值域范围最好相近。这个的原理和第1条一致。比如YOLO的结果中，同时包含分类和bbox，而且分类的值域范围远大于bbox，导致量化效果不佳。
-
-3.最好不要使用ReluN这样的激活函数，死的神经元太多。神经元一旦“死亡”，相应的权值就不再更新，而这些值往往不在正常范围内。
-
-4.对于sigmoid、tanh这样的S形函数，其输入在$$\mid x \mid > \sigma$$范围的值，最终的结果都在sigmoid、tanh的上下限附近。因此，可以直接将这些x值量化为$$\sigma$$。这里的$$\sigma$$的取值，对于sigmoid来说是6，而对于tanh来说是3。
+总的来说，这个方案虽然精巧，但是由于没有对数据特点做充分分析，没有意识到Dynamic Range比底数精度更重要，从而导致了最终的失败。
