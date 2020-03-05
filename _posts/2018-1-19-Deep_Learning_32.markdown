@@ -42,6 +42,10 @@ https://mp.weixin.qq.com/s/hGaX4I_WsPv9P_WAHaDuog
 
 NLP+CV《桥接视觉与语言的研究综述》，带你全面了解视觉+语言最新应用和方法
 
+https://mp.weixin.qq.com/s/XrElAz67uxEo-1zEea9dxA
+
+Video Description视频描述综述论文-方法、数据集和评估指标，UWA
+
 # 点云
 
 ## PCL

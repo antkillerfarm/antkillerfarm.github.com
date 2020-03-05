@@ -26,6 +26,10 @@ https://mp.weixin.qq.com/s/v_TTwTWx0lu2rJmxvzQQ4g
 
 北航、旷视联合，打造最强实时语义分割网络
 
+https://mp.weixin.qq.com/s/aSHhpMtgzV4_6NTElTvPIA
+
+语义分割－多层特征融合
+
 # Fast Image Processing
 
 ![](/images/article/FIP.png)

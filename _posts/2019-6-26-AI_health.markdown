@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/9dcq4rTcSvo5kQJ3GjwdTg
 
 医学图像分割专栏之前列腺分割
 
+https://mp.weixin.qq.com/s/UHlY_-mYBLT383TP6Y7Oew
+
+生物数据挖掘中的深度学习综述论文，36页pdf
+
 # 可视化
 
 ![](/images/img2/data_visual.png)
