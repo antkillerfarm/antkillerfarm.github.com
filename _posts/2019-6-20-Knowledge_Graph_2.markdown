@@ -242,6 +242,10 @@ https://mp.weixin.qq.com/s/0f5E82utl-faCpmvrDoPEg
 
 知识图谱研究综述论文: 表示学习、知识获取与应用，25页pdf详述Knowledge Graphs技术趋势
 
+https://mp.weixin.qq.com/s/g2IA7S4STN61orwAANtBdg
+
+关系图谱在贝壳的构建和应用
+
 # DRL参考资源+
 
 https://mp.weixin.qq.com/s/vYDb1rTdPxO1sIS38VX5xA

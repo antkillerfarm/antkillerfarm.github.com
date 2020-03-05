@@ -318,6 +318,10 @@ https://mp.weixin.qq.com/s/hXtkTECVfsBltAtYWu4XYg
 
 最大识车数据集出炉：6.4万张，车型参数完整标注，交通安防二手车都能用
 
+https://zhuanlan.zhihu.com/p/110987552
+
+新数据集：从行人重识别到无人机目标定位
+
 ## 医疗
 
 https://mp.weixin.qq.com/s/849fLGndmaRvz_oWt6HWtg

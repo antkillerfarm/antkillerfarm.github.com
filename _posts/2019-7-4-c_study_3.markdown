@@ -165,6 +165,12 @@ https://blog.csdn.net/zhangxiao93/article/details/50569924
 
 C++ typedef typename作用
 
+# typeid
+
+typeid可用于打印类型名称。这里的类型可以是固定类型，也可以是模板类型。
+
+`cout << typeid(int).name() << typeid(T).name() << endl;`
+
 # C++ thread
 
 长期以来，C/C++的线程编程主要依赖pthread库，但是这个情况在C++ 11之后有所改观，因为C++ 11的标准库已经支持thread了。

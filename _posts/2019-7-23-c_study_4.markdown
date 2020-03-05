@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  boost, C#, Objective-C, Haskell, Kotlin, Lisp
+title:  boost, Test framework, C#, Objective-C, Haskell, Kotlin, Lisp
 category: language 
 ---
 
@@ -22,6 +22,49 @@ boost直接安装：
 boost的组件有很多，这里只编译了test组件。
 
 >注意：指定生成目录的时候，stage使用stagedir选项，而install使用prefix选项。
+
+## boost::format
+
+```cpp
+cout << boost::format("%1%"
+    "%1t 十进制 = [%2$d]\n"
+    "%1t 格式化的十进制 = [%2$5d]\n"
+    "%1t 格式化十进制，前补'0' = [%2$05d]\n"
+    "%1t 十六进制 = [%2$x]\n"
+    "%1t 八进制 = [%2$o]\n"
+    "%1t 浮点 = [%3$f]\n"
+    "%1t 格式化的浮点 = [%3$3.3f]\n"
+    "%1t 科学计数 = [%3$e]\n"
+    ) % "example :\n" % 15 % 15.01 << endl;
+```
+
+参考：
+
+https://www.cnblogs.com/WuErPIng/archive/2005/04/21/142308.html
+
+浅尝boost之format
+
+## Boost.Parameter
+
+该库可以支持命名参数，然而实现太复杂。期待新标准直接支持。
+
+## Boost.MPL
+
+元编程（Metaprogramming）是指某类计算机程序的编写，这类计算机程序编写或者操纵其他程序（或者自身）作为它们的数据，或者在运行时完成部分本应在编译时完成的工作。很多情况下与手工编写全部代码相比工作效率更高。编写元程序的语言称之为元语言，被操作的语言称之为目标语言。一门语言同时也是自身的元语言的能力称之为反射。
+
+MPL可以看成是STL的编译期版本，或者说元编程版本。它同样也提供了各种容器，只不过容纳的对象不是数据，而是类型。
+
+参考：
+
+www.cppblog.com/jack-wang/archive/2010/10/04/128589.html
+
+模板元编程---用MPL解决实际问题
+
+https://mp.weixin.qq.com/s/5ireHbuWFrVY6T9qnvs3rQ
+
+浅谈C++元编程
+
+# Test framework
 
 ## boost.test
 
@@ -93,46 +136,15 @@ https://www.cnblogs.com/coderzh/archive/2009/04/06/1426755.html
 
 玩转Google开源C++单元测试框架Google Test系列(gtest)
 
-## boost::format
+## CTest
 
-```cpp
-cout << boost::format("%1%"
-    "%1t 十进制 = [%2$d]\n"
-    "%1t 格式化的十进制 = [%2$5d]\n"
-    "%1t 格式化十进制，前补'0' = [%2$05d]\n"
-    "%1t 十六进制 = [%2$x]\n"
-    "%1t 八进制 = [%2$o]\n"
-    "%1t 浮点 = [%3$f]\n"
-    "%1t 格式化的浮点 = [%3$3.3f]\n"
-    "%1t 科学计数 = [%3$e]\n"
-    ) % "example :\n" % 15 % 15.01 << endl;
-```
+CTest是CMake集成的一个测试工具。
 
 参考：
 
-https://www.cnblogs.com/WuErPIng/archive/2005/04/21/142308.html
+https://www.cnblogs.com/457220157-FTD/p/4139149.html
 
-浅尝boost之format
-
-## Boost.Parameter
-
-该库可以支持命名参数，然而实现太复杂。期待新标准直接支持。
-
-## Boost.MPL
-
-元编程（Metaprogramming）是指某类计算机程序的编写，这类计算机程序编写或者操纵其他程序（或者自身）作为它们的数据，或者在运行时完成部分本应在编译时完成的工作。很多情况下与手工编写全部代码相比工作效率更高。编写元程序的语言称之为元语言，被操作的语言称之为目标语言。一门语言同时也是自身的元语言的能力称之为反射。
-
-MPL可以看成是STL的编译期版本，或者说元编程版本。它同样也提供了各种容器，只不过容纳的对象不是数据，而是类型。
-
-参考：
-
-www.cppblog.com/jack-wang/archive/2010/10/04/128589.html
-
-模板元编程---用MPL解决实际问题
-
-https://mp.weixin.qq.com/s/5ireHbuWFrVY6T9qnvs3rQ
-
-浅谈C++元编程
+CTest
 
 # C#
 

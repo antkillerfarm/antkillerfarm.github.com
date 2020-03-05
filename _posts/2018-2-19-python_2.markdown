@@ -152,6 +152,17 @@ New Style还可以这样玩：
 
 有了上述的placeholder之后，参数也未必再需要按出现的顺序给了。相同的placeholder设置一次就行了。
 
+还可以这样：
+
+```python
+from string import Template
+info = dict(Mcap=Mcap, curr=curr)
+Template('The market cap of Alibaba is $Mcap mio $curr.')
+        .substitute(info)
+```
+
+`f'The market cap of Alibaba is {Mcap} mio {curr}.'`
+
 python的字符串还有其他玩法：
 
 打印45个`=`: `print('=' * 45)`
@@ -161,6 +172,12 @@ python的字符串还有其他玩法：
 效果：
 
 `=================Hello World!================`
+
+参考：
+
+https://mp.weixin.qq.com/s/jTiZOazn66nK6CU1SAtpTw
+
+格式化String
 
 ## 特殊语法：filter、map、reduce、lambda
 

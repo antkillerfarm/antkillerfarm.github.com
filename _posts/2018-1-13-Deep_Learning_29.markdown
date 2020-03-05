@@ -90,6 +90,10 @@ https://mp.weixin.qq.com/s/ePqSwDhCgE1fGWSphuZuBg
 
 WSDM2020教程《基于图学习和推理的推荐系统》，附130页PPT下载
 
+https://mp.weixin.qq.com/s/t1VojTRdnULTiycE-qnypw
+
+图神经网络（GNN）过去、现在、应用和未来最新研究进展分享
+
 ## 综述
 
 《A Comprehensive Survey on Graph Neural Networks》

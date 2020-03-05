@@ -168,6 +168,10 @@ https://mp.weixin.qq.com/s/5tYuP09dtkmYYGX2R-mCPQ
 
 从transformer到albert
 
+https://zhuanlan.zhihu.com/p/110934513
+
+关于BERT的模型压缩简介
+
 ## AR vs AE
 
 **AR**: Aotoregressive Lanuage Modeling，又叫自回归语言模型。它指的是，依据前面(或后面)出现的tokens来预测当前时刻的token，代表模型有ELMO、GTP等。

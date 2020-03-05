@@ -250,3 +250,7 @@ https://zhuanlan.zhihu.com/p/97138846
 https://mp.weixin.qq.com/s/mXjNtZvUHutBABh-f9qisQ
 
 那些底层的图像处理问题中，GAN能有什么作为？
+
+https://mp.weixin.qq.com/s/zVGDYhBiLCNhKTnkzbMxGA
+
+时间序列GAN，Subadditivity of Probability Divergences
