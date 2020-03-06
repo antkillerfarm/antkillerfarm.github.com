@@ -339,3 +339,7 @@ NAS太难了，搜索结果堪比随机采样！华为ICLR 2020论文给出6条�
 https://zhuanlan.zhihu.com/p/110527110
 
 Neural Architecture Search
+
+https://zhuanlan.zhihu.com/p/111213620
+
+AutoML在计算机视觉领域的能与不能

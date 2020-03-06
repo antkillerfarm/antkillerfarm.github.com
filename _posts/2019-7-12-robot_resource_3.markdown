@@ -397,3 +397,7 @@ https://mp.weixin.qq.com/s/hNx74wn8pIGPr6vVu_Yxww
 https://mp.weixin.qq.com/s/Zhq2xNoVhUTLFpwzZFnbRA
 
 基于深度逆强化学习的舒适性自动驾驶
+
+https://mp.weixin.qq.com/s/mbnQflnZEu9ISao6UFYXpA
+
+导航定位向高精定位的演进与实践

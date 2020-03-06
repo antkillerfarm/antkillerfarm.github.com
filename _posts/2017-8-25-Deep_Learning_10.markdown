@@ -204,6 +204,10 @@ https://mp.weixin.qq.com/s/NjFdu6iP3Sn9GbDhrbpisQ
 
 感受野与分辨率的控制术—空洞卷积
 
+https://zhuanlan.zhihu.com/p/94477174
+
+CNN真的需要下采样（上采样）吗?
+
 ## 分组卷积
 
 ![](/images/article/AlexNet.png)

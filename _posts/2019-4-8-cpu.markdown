@@ -404,6 +404,14 @@ Fab的那些事儿
 
 >Fab的全称叫Fabrication，也就是集成电路制造的工厂、车间。
 
+https://mp.weixin.qq.com/s/PzD1lCe5h3VkMrhFb7CfQg
+
+后SoC时代或将迎来Chiplet拐点
+
+https://mp.weixin.qq.com/s/oMA9RSaq0nuSNgKDRwHavQ
+
+Chiplet最强科普
+
 ----
 
 ![](/images/img3/Memristor.png)
@@ -415,7 +423,3 @@ https://mp.weixin.qq.com/s/k0u7pVzf7tjVF4UjZ3ai7A
 https://mp.weixin.qq.com/s/rSGRXfN4z3ElP7iQX1umjQ
 
 基于新型忆阻器的存内计算原理、研究和挑战
-
-https://mp.weixin.qq.com/s/PzD1lCe5h3VkMrhFb7CfQg
-
-后SoC时代或将迎来Chiplet拐点

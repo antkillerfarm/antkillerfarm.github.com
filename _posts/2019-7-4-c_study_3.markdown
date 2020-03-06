@@ -209,13 +209,38 @@ https://segmentfault.com/a/1190000006679917
 
 # explicit
 
-可以通过将构造函数声明为explicit，来防止隐式类型转换。explicit关键字只能用于类内部的构造函数声明上，而不能用在类外部的函数定义上。
+```c++
+class Point {
+public:
+    int x, y;
+    Point(int x = 0, int y = 0)
+        : x(x), y(y) {}
+};
+
+void displayPoint(const Point& p) 
+{
+    cout << "(" << p.x << "," 
+         << p.y << ")" << endl;
+}
+
+int main()
+{
+    displayPoint(1);
+    Point p = 1;
+}
+```
+
+上面代码片段中，`displayPoint(1);`粗看起来是不能执行的，因为1不是一个Point。然而C++编译器要比C聪明一点，它发现，1是Point构造函数的合法参数，于是自动调用之。即：`displayPoint(1);`等价于`displayPoint(Point(1));`
+
+然而有的时候，为了代码的健壮，我们不想让别人用这样不正式的方式创建对象，这时可以通过将构造函数声明为explicit，来防止隐式类型转换。
+
+explicit关键字只能用于类内部的构造函数声明上，而不能用在类外部的函数定义上。
 
 参考：
 
-https://www.cnblogs.com/winnersun/archive/2011/07/16/2108440.html
+https://zhuanlan.zhihu.com/p/52152355
 
-C++中explicit关键字的作用
+C++ explicit 关键字
 
 # std::tuple
 
