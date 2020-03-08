@@ -36,6 +36,8 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/hiOpenWRT
 
 http://blog.chinaunix.net/uid-29418452-id-4071751.html
 
+OpenWRT之HelloWorld
+
 # 编译OpenWrt模块--进阶篇
 
 1）参考文献
@@ -250,12 +252,6 @@ IP地址被改变事件示例：
 }
 ```
 
-# Openwrt 3G拨号上网
-
-参见：
-
-http://blog.csdn.net/yicao821/article/details/45370669
-
 # hotplug-button
 
 kmod-gpio-button-hotplug     Simple GPIO Button Hotplug driver
@@ -263,12 +259,6 @@ kmod-gpio-button-hotplug     Simple GPIO Button Hotplug driver
 kmod-button-hotplug          Button Hotplug driver
 
 这两个内核模块不在内核主线中，需要在`make menuconfig`中单独勾选。
-
-# 组建N2N VPN网络实现内网设备之间的相互访问
-
-参见：
-
-http://www.shuyz.com/n2n-vpn-network-introduction-and-config.html
 
 # Openwrt对autotools、Cmake的支持
 
@@ -302,3 +292,13 @@ TARGET_CFLAGS:= -O0 $(TARGET0_CFLAGS) -ggdb3
 1.filter-out是make提供的过滤函数，可去除字符串A中包含的特定字符串B。
 
 2.定义TARGET0_CFLAGS的原因在于：make不支持变量的递归定义，需要中间变量暂存之。
+
+# 参考
+
+http://www.shuyz.com/n2n-vpn-network-introduction-and-config.html
+
+组建N2N VPN网络实现内网设备之间的相互访问
+
+http://blog.csdn.net/yicao821/article/details/45370669
+
+Openwrt 3G拨号上网

@@ -277,3 +277,7 @@ AI攻破高数核心，1秒内精确求解微分方程、不定积分，性能�
 https://mp.weixin.qq.com/s/HQKBwPHzO0r54Qp8F74jUw
 
 只看影子就能还原视频，MIT新算法让摄像头无死角
+
+https://mp.weixin.qq.com/s/DlRbHavllHghzi-Xr5Y1Hg
+
+深度学习时代数据库：挑战与机会

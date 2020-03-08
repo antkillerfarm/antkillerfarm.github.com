@@ -269,3 +269,11 @@ https://mp.weixin.qq.com/s/M3VRlz8-McbTbp9VcctU0w
 https://mp.weixin.qq.com/s/OsfeAA_tbzAddh1eunwx2w
 
 关于BERT，面试官们都怎么问
+
+https://mp.weixin.qq.com/s/e3n_16uB-qGeGSaGwzlBDw
+
+这群工程师，业余将中文NLP推进了一大步（中文预训练模型）
+
+https://mp.weixin.qq.com/s/V4pbjP5na1OYp-TorUik8g
+
+详聊如何用BERT实现关系抽取

@@ -272,7 +272,7 @@ http://www.cnblogs.com/zmkeil/archive/2013/04/17/3027385.html
 
 feeds文件夹的作用就是指明如何下载并编译这些软件源代码包。feeds的更新由专门的版本库来维护，这些版本库也被称为“软件源”。可修改feeds.conf.default来更换不同的或者是非官方的源。
 
-一个feeds通常会包含一个patch文件夹（也可以没有），这里需要注意的是修改patch文件夹内的patch文件时，需要把生成的临时文件.patch~删除掉，不然会出错。
+一个feeds通常会包含一个patch文件夹（也可以没有），这里需要注意的是修改patch文件夹内的patch文件时，需要把生成的临时文件`.patch~`删除掉，不然会出错。
 
 ## dl
 

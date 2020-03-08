@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/KpMl1ebWghKQikFCj8_8Ag
 
 CIF：基于神经元整合发放的语音识别新机制
 
+https://mp.weixin.qq.com/s/idXP4Y-B4pYYfM2egg6KYQ
+
+Hey Siri唤醒原理
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw

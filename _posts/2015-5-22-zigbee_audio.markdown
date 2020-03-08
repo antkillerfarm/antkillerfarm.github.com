@@ -285,6 +285,10 @@ https://mp.weixin.qq.com/s/vbTR1A0rgzCQY8XG70SNPQ
 
 了不起的MEMS发明人
 
+https://mp.weixin.qq.com/s/ns8riNkUILB-y07VMtGhSw
+
+MEMS培训讲义
+
 https://mp.weixin.qq.com/s/gHvvMG7D_W0M2RFntyRaDw
 
 车载抬头显示AR HUD成像技术大解密

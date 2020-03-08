@@ -160,6 +160,10 @@ https://mp.weixin.qq.com/s/vuY1tukawF_V2Bz2YSA8wQ
 
 Attain.ai创始人李玉喜：强化学习遇见组合优化
 
+https://mp.weixin.qq.com/s/DbR-Px_-vK-4xOweqsQKxw
+
+基于网络单纯形法求解的最小流费用问题
+
 # 强连通分量算法
 
 http://ishare.iask.sina.com.cn/f/34626295.html

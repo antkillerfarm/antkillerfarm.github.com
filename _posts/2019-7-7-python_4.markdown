@@ -6,14 +6,6 @@ category: language
 
 # Python
 
-## SLY
-
-Sly Lex Yacc是David Beazley的新作，号称新一代的PLY。
-
-官网：
-
-https://sly.readthedocs.io/en/latest/
-
 ## Cython
 
 和SWIG功能类似的替代品。
@@ -72,6 +64,10 @@ Cython学习
 https://mp.weixin.qq.com/s/_fi4fpfN8Whe7_ZpkPL0tA
 
 怎么给Python写C扩展？
+
+https://mp.weixin.qq.com/s/eqNaX0YorcaMN8D9lnQprw
+
+简单上手一波Cython
 
 ## Pythran
 
@@ -463,3 +459,15 @@ https://mp.weixin.qq.com/s/kt5isheTBnpwKUhJAuXnYw
 https://mp.weixin.qq.com/s/G5qx3-1Wq4gcRSuRfrczuw
 
 Python趣味打怪：60秒学会一个例子，147段简单代码助你从入门到大师
+
+https://mp.weixin.qq.com/s/zIHJsyankFEf_ig4Xnb0Uw
+
+工具推荐！我是如何使用Python脚本分析CPU使用情况的？
+
+https://mp.weixin.qq.com/s/v-N5jUTVFBb-wV0a_RAg5A
+
+Python实现代码雨效果
+
+https://mp.weixin.qq.com/s/0wJRlGS2QXpEL2XaU_Ke-g
+
+Python实现烟花特效

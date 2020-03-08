@@ -322,6 +322,10 @@ https://zhuanlan.zhihu.com/p/110987552
 
 新数据集：从行人重识别到无人机目标定位
 
+https://mp.weixin.qq.com/s/oytk2jEljYn8nL8a4wycLg
+
+这几年人脸都有哪些有意思的数据集？
+
 ## 医疗
 
 https://mp.weixin.qq.com/s/849fLGndmaRvz_oWt6HWtg

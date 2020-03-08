@@ -70,6 +70,10 @@ https://mp.weixin.qq.com/s/29y2bg4KE-HNwsimD3aauw
 
 20项任务全面碾压BERT，CMU全新XLNet预训练模型屠榜
 
+https://mp.weixin.qq.com/s/wlV8UbOUYSmc-AdaGfQQMQ
+
+XLNet详解
+
 https://mp.weixin.qq.com/s/itNtDuQS4KF_sLnfiwdyNg
 
 拆解XLNet模型设计，回顾语言表征学习的思想演进

@@ -118,6 +118,10 @@ https://mp.weixin.qq.com/s/XFrgmdEz1d9vg6U0hYr7Qw
 
 中英文文字检测与识别项目（CTPN+CRNN+CTC Loss原理讲解）
 
+https://mp.weixin.qq.com/s/enVx8sLoxmaSM8NlUL5IMQ
+
+实测超轻量中文OCR开源项目，总模型仅17M
+
 # Graph NN+
 
 https://mp.weixin.qq.com/s/dXYjUHAXVZINXQkvM_ssZA
@@ -159,3 +163,7 @@ https://mp.weixin.qq.com/s/WBUYk__k-86vGqOA6N6iCw
 https://mp.weixin.qq.com/s/A-4JZG9tF7fnSuBa4YH3iw
 
 图神经网络预训练的策略
+
+https://mp.weixin.qq.com/s/1Kdrz6i83-hKEaY1O7quZg
+
+稀疏数据半监督学习的分解图表示

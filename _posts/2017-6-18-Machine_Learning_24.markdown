@@ -18,6 +18,10 @@ https://www.zhihu.com/question/64134994
 
 如何理解深度学习分布式训练中的large batch size与learning rate的关系？
 
+https://mp.weixin.qq.com/s/2wolhiTrWVeaSHxOpalUZg
+
+深度学习中的优化算法串讲
+
 # 单分类SVM&多分类SVM
 
 原始的SVM主要用于二分类，然而稍加变化，也可用于单分类和多分类。

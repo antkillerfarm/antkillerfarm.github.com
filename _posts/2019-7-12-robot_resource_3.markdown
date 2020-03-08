@@ -401,3 +401,7 @@ https://mp.weixin.qq.com/s/Zhq2xNoVhUTLFpwzZFnbRA
 https://mp.weixin.qq.com/s/mbnQflnZEu9ISao6UFYXpA
 
 导航定位向高精定位的演进与实践
+
+https://mp.weixin.qq.com/s/2AgeFABUrNZo_SndgIKJlQ
+
+自动驾驶运动预测(Motion Prediction)

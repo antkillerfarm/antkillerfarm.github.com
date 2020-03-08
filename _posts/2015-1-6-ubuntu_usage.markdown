@@ -76,6 +76,16 @@ http://blog.chinaunix.net/uid-11187-id-3026834.html
 
 最后，比较了一下虚拟机和真实机器在组网上的差异后，我忽然意识到虚拟机FTP不能正常访问的原因，应该是由于虚拟机是在一个虚拟的内网之中。默认情况下，外网机器是无法访问虚拟机的，而虚拟机则可以正常访问外网。因此，反过来，我在win7上用IIS搭建FTP服务，然后在ubuntu虚拟机上用Filezilla访问FTP。这下终于成功了。
 
+目前，STFP日渐流行，搭建server的方法如下：
+
+`sudo apt install open-sshserver`
+
+参考：
+
+https://blog.csdn.net/Nation_chen/article/details/7066277
+
+ubuntu安装ftp服务器
+
 # Ubuntu使用小技巧
 
 安装 7zip：
@@ -295,19 +305,3 @@ dpkg是Debian类Linux发行版的基本包管理工具，apt可以看作对它�
 如果缺少依赖，可以用如下方式解决：
 
 `sudo apt --fix-broken install`
-
-# tftp
-
-Ubuntu下面关于TFTP的程序，有三套：
-
-1.tftp和tftpd
-
-2.atftp和atftpd
-
-3.tftp-hpa和tftpd-hpa
-
-目前以tftp-hpa和tftpd-hpa最为流行。
-
-安装命令：
-
-`sudo apt-get install tftp-hpa tftpd-hpa`

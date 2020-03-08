@@ -90,7 +90,11 @@ print "Hello, World.";
 
 中可以看出，Apache的作用其实是重定义了这些CGI程序的标准输入输出，以及设置了一些系统变量。这才是它支持多种编程语言编写的CGI的真正原因，试想还有哪种语言不支持标准输入输出呢？
 
-可以在http://www.boutell.com/cgic/中获得CGIC的代码，这是一个C写的CGI开发库，本文的示例就是在这个库的代码的启示下写出来的。
+可以在：
+
+http://www.boutell.com/cgic/
+
+中获得CGIC的代码，这是一个C写的CGI开发库，本文的示例就是在这个库的代码的启示下写出来的。
 
 ## 3)Linux下的Apache目录结构
 Windows下Apache的各个目录都放在一起，因此使用起来比较方便，而Linux下Apache的各个目录分散在各个地方不是太好找，特记录一下，以作备忘。
@@ -102,6 +106,16 @@ cgi-bin在/usr/lib/cgi-bin下。
 bin下的文件在/usr/sbin下可以找到。
 
 modules在/usr/lib/apache2下。
+
+参考：
+
+https://mp.weixin.qq.com/s/9oi-zkuUtjv0P6GyBLmatg
+
+简单说明CGI和动态请求是什么
+
+https://mp.weixin.qq.com/s/vmIscEgDotR6ntiIdjGBLg
+
+关于CGI和FastCGI的理解
 
 # 硬盘安装Linux
 

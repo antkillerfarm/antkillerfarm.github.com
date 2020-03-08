@@ -353,3 +353,7 @@ https://mp.weixin.qq.com/s/-HEYU_El8xysk8atHYx1Mg
 https://zhuanlan.zhihu.com/p/72561165
 
 重新思考人体姿态估计 Rethinking Human Pose Estimation
+
+https://mp.weixin.qq.com/s/7hCtECn_mKWyTJpTZmmLtQ
+
+基于深度学习目标姿态估计的论文一览（2017-2020）

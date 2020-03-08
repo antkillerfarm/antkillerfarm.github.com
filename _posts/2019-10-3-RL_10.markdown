@@ -68,6 +68,10 @@ https://blog.csdn.net/sobermineded/article/details/79541511
 
 几个经典博弈模型（囚徒的困境、赌胜博弈、产量决策的古诺模型）
 
+https://mp.weixin.qq.com/s/5k6A4NExdb9Ysbd753pPHw
+
+博弈论速成指南：那些融入深度学习的经典想法和新思路
+
 # Integrating Learning and Planning
 
 前面的章节主要介绍了Model-Free RL，下面将讲一下Model-Based RL，主要包括如下内容：

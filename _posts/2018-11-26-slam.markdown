@@ -298,6 +298,10 @@ https://mp.weixin.qq.com/s/OePsa_KGBRHhhUbsxkGOIg
 
 让机器人学会识别透明物体
 
+https://mp.weixin.qq.com/s/MlYBcsfhfqOtkZ-sdi2TTA
+
+从五个经典工作看语义SLAM
+
 ## 张正友标定算法
 
 ”张正友标定”是指张正友1998年提出的单平面棋盘格的摄像机标定方法。该方法介于传统标定法和自标定法之间，但克服了传统标定法需要的高精度标定物的缺点，而仅需使用一个打印出来的棋盘格就可以。同时也相对于自标定而言，提高了精度，便于操作。因此张氏标定法被广泛应用于计算机视觉方面。
@@ -351,18 +355,6 @@ https://mp.weixin.qq.com/s/nhe5nnvvWlv0ZiOgbDK21w
 我是这样搞定第一次单目相机测距的
 
 # Python
-
-https://mp.weixin.qq.com/s/zIHJsyankFEf_ig4Xnb0Uw
-
-工具推荐！我是如何使用Python脚本分析CPU使用情况的？
-
-https://mp.weixin.qq.com/s/v-N5jUTVFBb-wV0a_RAg5A
-
-Python实现代码雨效果
-
-https://mp.weixin.qq.com/s/0wJRlGS2QXpEL2XaU_Ke-g
-
-Python实现烟花特效
 
 https://mp.weixin.qq.com/s/5YWAgp8LKi5q_NDrNUtyGQ
 

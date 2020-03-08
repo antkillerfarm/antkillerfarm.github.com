@@ -232,6 +232,10 @@ https://mp.weixin.qq.com/s/t2B5dg8uELNqSJcENHiwNA
 
 深入理解GBDT多分类算法
 
+https://mp.weixin.qq.com/s/Cdi0CcWDLgS6Kk7Kx71Vaw
+
+深入理解提升树（Boosting Tree）算法
+
 # 关联规则挖掘
 
 ## 基本概念

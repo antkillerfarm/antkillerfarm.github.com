@@ -202,6 +202,10 @@ https://mp.weixin.qq.com/s/dCJzqA5FoVtfU0zkn6xH6w
 
 全球“黑客大赛”冠军霸气讲述：我是如何让50个文件一起骗过AI安防系统的？
 
+https://mp.weixin.qq.com/s/GcT2-rVm432re7SbCf3Dcg
+
+一个模型击溃12种AI造假，各种GAN与Deepfake都阵亡
+
 # 数据结构 & 普通CS算法
 
 ## TopK

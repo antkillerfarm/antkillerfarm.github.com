@@ -249,10 +249,6 @@ https://mp.weixin.qq.com/s/9YXsJo_u2zVNqvABoGqfqg
 
 五种IO模型分析
 
-https://mp.weixin.qq.com/s/9oi-zkuUtjv0P6GyBLmatg
-
-简单说明CGI和动态请求是什么
-
 https://mp.weixin.qq.com/s/OJJLY5DiCa0e3UVjPtLXmw
 
 PPT中帅气的文字云，该怎么用？

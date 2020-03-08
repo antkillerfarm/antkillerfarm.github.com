@@ -80,6 +80,24 @@ http://distrowatch.com/
 
 2.桌面随意贴。典型的有Indicator Stickynotes和Knotes。后者有内容检索的功能，而前者没有。
 
+# tftp
+
+tftp可提供不复杂、开销不大的文件传输服务。可以理解为是简化版的FTP。
+
+Ubuntu下面关于TFTP的程序，有三套：
+
+1.tftp和tftpd
+
+2.atftp和atftpd
+
+3.tftp-hpa和tftpd-hpa
+
+目前以tftp-hpa和tftpd-hpa最为流行。
+
+安装命令：
+
+`sudo apt-get install tftp-hpa tftpd-hpa`
+
 # ASCII表情
 
 ╮(╯_╰)╭
@@ -183,10 +201,7 @@ x^2+(y+5\sqrt{2})^2=10^2
 
 求解交点坐标：
 
-$$\begin{cases}
-(y+5\sqrt{2})^2-y^2=75 \\
-10\sqrt{2}y+50=75
-\end{cases}$$
+$$(y+5\sqrt{2})^2-y^2=75 \to 10\sqrt{2}y+50=75$$
 
 $$\begin{cases}
 y=\frac{5\sqrt{2}}{4} \\
