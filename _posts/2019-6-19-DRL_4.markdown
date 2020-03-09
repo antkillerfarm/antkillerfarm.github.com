@@ -269,4 +269,3 @@ https://mp.weixin.qq.com/s/iBWjobr9srhB3MTiE_Wwmg
 《Data-Efficient Reinforcement Learning in Continuous-State POMDPs》
 
 《Improving PILCO with Bayesian Neural Network Dynamics Models》
-

@@ -6,6 +6,12 @@ category: technology
 
 # 数据库
 
+## blog
+
+https://www.cnblogs.com/ahu-lichang/
+
+一个数据库+大数据的blog
+
 ## Sqlite
 
 《Inside Sqlite》是最好的参考书，目前已经有人把它翻译成中文，可以在CSDN上找到。
@@ -245,6 +251,14 @@ Cassandra在时空数据上的探索
 https://mp.weixin.qq.com/s/ufficZ7cCvRFdEpaAfm8Fg
 
 面试官问：讲讲高并发下的接口幂等性怎么实现？
+
+https://www.jianshu.com/p/0355d9e5ba0e
+
+数据库三大范式
+
+https://www.cnblogs.com/ahu-lichang/p/10899747.html
+
+数据库三大范式（1NF,2NF,3NF）及ER图
 
 # 分布式ID生成器
 

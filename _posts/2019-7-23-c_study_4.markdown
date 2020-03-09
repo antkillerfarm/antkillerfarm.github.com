@@ -1,8 +1,72 @@
 ---
 layout: post
-title:  boost, Test framework, C#, Objective-C, Haskell, Kotlin, Lisp
+title:  boost, Test framework, C#, Objective-C, Haskell, Kotlin
 category: language 
 ---
+
+# C/C++编程心得
+
+## 虚函数
+
+```c++
+class Shape {
+public:
+    virtual void Draw() const = 0;    // 1) 纯虚函数
+    virtual void Error(const string& msg);  // 2) 普通虚函数
+    int ObjectID() const;  // 3) 非虚函数
+};
+
+class Rectangle: public Shape { ... };
+```
+- 非虚函数：
+
+基类和派生类都有该函数：
+
+```c++
+Rectangel rc; // rc is an object of type Rectangle
+Shape *pB = &rc; // get pointer to rc
+Rectangle *pD = &rc; // get pointer to rc
+
+pB->ObjectID(); // calls Shape::ObjectID()
+pD->ObjectID(); // calls Rectagle::ObjectID()
+```
+
+如果派生类没有该函数，则无论`pB->ObjectID();`还是`pD->ObjectID();`都调用Shape::ObjectID()。
+
+- 普通虚函数：
+
+基类和派生类都有该函数：
+
+```c++
+Rectangel rc; // rc is an object of type Rectangle
+Shape *pB = &rc; // get pointer to rc
+Rectangle *pD = &rc; // get pointer to rc
+
+pB->ObjectID(); // calls Rectagle::ObjectID()
+pD->ObjectID(); // calls Rectagle::ObjectID()
+```
+
+如果派生类没有该函数，则无论`pB->ObjectID();`还是`pD->ObjectID();`都调用Shape::ObjectID()。
+
+- 纯虚函数虽然要求派生类必须实现该函数，但并不意味着基类就不可以实现。但需要用特殊的语法才能调用基类实现。
+
+```c++
+ps1->Shape::Draw(); // calls Shape::draw
+```
+
+基类和派生类都有该函数的情况与普通虚函数相同。
+
+----
+
+对`‘vtable for xxxx’`未定义的引用：
+
+必须吐槽一下C++的错误提示，这个错误如果改成没有实现XXX虚函数，就直观的多了。
+
+参考：
+
+https://www.cnblogs.com/xinxue/p/5471708.html
+
+C++11之override
 
 # boost
 
@@ -165,29 +229,26 @@ PS: XmlReader提出的pull方案，后来被libxml2采用，成为了GTK+的一�
 代码示例如下:
 
 ```c#
-    public class MsgWindow : MessageWindow
+public class MsgWindow : MessageWindow
+{
+    public const int WM_CUSTOMMSG = 0x0400+3333;
+    
+    private Form1 msgform;//Form1是用于接收消息的那个窗体Form。
+    public MsgWindow(Form1 msgform)
     {
-
-        public const int WM_CUSTOMMSG = 0x0400+3333;
-        
-        private Form1 msgform;//Form1是用于接收消息的那个窗体Form。
-
-        public MsgWindow(Form1 msgform)
-        {
-            this.msgform = msgform;
-        }
-
-        protected override void WndProc(ref Message msg)
-        {
-            switch (msg.Msg)
-            {
-                case WM_CUSTOMMSG:
-                    //do sth
-                    break;
-            }
-            base.WndProc(ref msg);
-        }
+        this.msgform = msgform;
     }
+    protected override void WndProc(ref Message msg)
+    {
+        switch (msg.Msg)
+        {
+            case WM_CUSTOMMSG:
+                //do sth
+                break;
+        }
+        base.WndProc(ref msg);
+    }
+}
 ```
 
 ## C#中的发布功能
@@ -305,23 +366,3 @@ https://www.kotlincn.net/
 官方示例：
 
 https://github.com/Kotlin/kotlin-examples
-
-# Lisp & GUI
-
-客观的说，目前开源领域并没有很好用的和Lisp配套的GUI工具集，几个开源实现要么完工度不高，要么过于古老，好几个的样式都是90年代中期的风格。
-
-更有人指出，GUI基本上是OO语言的天下了，Lisp根本不适合干这个事。
-
-不过事实的真相是：
-
-1.最早的交互式GUI生成工具是用Lisp写的。没错，就是苹果乔教主旗下的Interface Builder，时间是1986年。
-
-2.PTC公司的CAD系统是用Lisp和C++写的。
-
-3.苹果公司早期使用MCL作为GUI开发语言（from 1984），因此那个时代有大量的程序是用Lisp写的。包括Mac上最早的MS Word。Objective-C是乔教主到NextStep之后的事，最初和苹果并无交集。
-
-4.由于Mac在艺术家群体的流行。很多音乐软件是用Lisp写的，包括Open Music, PWGL, ScoreCleaner, Igor Engraver和Symbolic Composer等。
-
-5.有家叫做LispWorks（From 1989）的公司提供对Lisp GUI的商业支持，而且提供的界面并不逊色于GTK、Qt等当代GUI工具集。上面提到的音乐软件基本上都是基于LispWorks的。
-
-综上可见，Lisp开发GUI不是可能性的问题，而是一个有待重新发掘的问题。

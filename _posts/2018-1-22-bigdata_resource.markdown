@@ -6,6 +6,32 @@ category: resource
 
 # 分布式系统
 
+## 教程
+
+## 教程
+
+https://pdos.csail.mit.edu/6.824/index.html
+
+6.824: Distributed Systems
+
+https://www.cs.cmu.edu/~dga/15-440/S14/syllabus.html
+
+15-440: Distributed Systems
+
+https://www.cs.cmu.edu/~15712/index.html
+
+15-712 Advanced Operating Systems and Distributed Systems
+
+https://courses.cs.washington.edu/courses/cse552/
+
+CSE552: Distributed and Parallel Systems
+
+https://people.eecs.berkeley.edu/~alig/cs294-91/
+
+CS294-91 Distributed Computing
+
+## 杂谈
+
 面对大规模数据的计算和存储时，有两种处理思路：
 
 **垂直扩展（scale up）**：通过升级单机的硬件，如 CPU、内存、磁盘等，提高计算机的处理能力。
@@ -393,27 +419,3 @@ https://mp.weixin.qq.com/s/-K2K22fLOz4Hl7MIUAJfRA
 https://mp.weixin.qq.com/s/NwjYJde9_TC4PXMPpYw1Gw
 
 聊聊开源消息中间件的架构和原理
-
-https://mp.weixin.qq.com/s/Kv1Qq4118I2itYwPYyQUoA
-
-Spark Streaming实时计算在甜橙金融监控系统中的应用及优化
-
-https://mp.weixin.qq.com/s/syM4ReAWpZ5d4KI87ogpiQ
-
-从单一架构到分布式交易架构，网易严选的成功实践
-
-https://mp.weixin.qq.com/s/qh88sawJUZedv3X0LIRsAQ
-
-ESearch：58集团基于C++语言自主研发的搜索内核
-
-http://www.cnblogs.com/rjzheng/p/8994962.html
-
-分布式之消息队列复习精讲
-
-https://mp.weixin.qq.com/s/Mcg5rj3QrgVj3wyY4xttnQ
-
-关于商业部署机器学习，这有一篇详尽指南
-
-https://mp.weixin.qq.com/s/TFGRcHV6EgeLB45OEJPRXw
-
-来了！阿里开源分布式事务解决方案Fescar

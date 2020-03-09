@@ -234,6 +234,10 @@ https://mp.weixin.qq.com/s/T0EHQlfac1ni9a3Z71-kmg
 
 爱奇艺人物识别数据集已上线
 
+https://mp.weixin.qq.com/s/oytk2jEljYn8nL8a4wycLg
+
+这几年人脸都有哪些有意思的数据集？
+
 ## 推荐系统
 
 http://www.zanmel.com/2015/12/14/10-great-datasets-on-movies/
@@ -322,9 +326,9 @@ https://zhuanlan.zhihu.com/p/110987552
 
 新数据集：从行人重识别到无人机目标定位
 
-https://mp.weixin.qq.com/s/oytk2jEljYn8nL8a4wycLg
+https://mp.weixin.qq.com/s/G8tImide_U33shaybprvcw
 
-这几年人脸都有哪些有意思的数据集？
+天津大学推出大型无人机航拍车辆数据集DroneVehicle
 
 ## 医疗
 

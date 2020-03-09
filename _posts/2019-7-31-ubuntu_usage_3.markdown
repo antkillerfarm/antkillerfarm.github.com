@@ -348,6 +348,10 @@ https://mp.weixin.qq.com/s/_uu1dFzSC257vKS4mPjVfg
 
 父子反目，遭亲爹打压数年，数学第一家族中最憋屈的科学家（Daniel Bernoull）
 
+https://mp.weixin.qq.com/s/1Rmdfv4VTIteEPZV-MVJLA
+
+17世纪的鼠疫与疫区的牛顿
+
 # Linux参考资源+
 
 https://mp.weixin.qq.com/s/snQ3T86usv4rXz0MMQvFfQ

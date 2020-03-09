@@ -152,6 +152,8 @@ Spark没有服务程序，因此无须部署，只需要在集群中的某台机
 
 http://blog.csdn.net/book_mmicky/article/details/25714287
 
+Spark1.0.0 on YARN模式部署
+
 Spark虽然对Hadoop的版本有一定的要求，但是并不是太严重的问题。比如，目前最新的Spark 2.0.1（2016.10）仍然支持Hadoop 2.3，而后者是2014年2月出的版本。
 
 ## shuffle
@@ -162,7 +164,13 @@ Spark虽然对Hadoop的版本有一定的要求，但是并不是太严重的问
 
 参考：
 
-http://jerryshao.me/architecture/2014/01/04/spark-shuffle-detail-investigation/
+https://blog.csdn.net/SA14023053/article/details/52024378
+
+详细探究Spark的shuffle实现
+
+https://www.cnblogs.com/ahu-lichang/p/6645074.html
+
+MapReduce的原理及执行过程
 
 ## 控制日志输出等级
 
