@@ -261,6 +261,10 @@ https://mp.weixin.qq.com/s/o-zfrJS5Ito1kWPBJUIryg
 
 Kafka相关资源
 
+https://mp.weixin.qq.com/s/TzF6GBb1NI5iE8q2Rxo95Q
+
+Kafka实战：Kafka in Action，209页pdf
+
 https://mp.weixin.qq.com/s/l0AL89M0xPbWMFj6U7yYZw
 
 消息中间件选型分析：从Kafka与RabbitMQ的对比看全局

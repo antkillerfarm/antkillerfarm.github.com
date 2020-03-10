@@ -168,6 +168,14 @@ https://mp.weixin.qq.com/s/1Kdrz6i83-hKEaY1O7quZg
 
 稀疏数据半监督学习的分解图表示
 
+https://mp.weixin.qq.com/s/oc-o6W087jA-npxy89QMFw
+
+图自编码器的起源和应用
+
+https://mp.weixin.qq.com/s/TepgHukJ-Gx63pTjMH9R2g
+
+2020年，我终于决定入门GCN
+
 # 深度推荐系统+
 
 https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w

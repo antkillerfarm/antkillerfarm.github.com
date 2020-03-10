@@ -322,6 +322,10 @@ https://mp.weixin.qq.com/s/TMxvs4TXyNo8FojbgO3K3w
 
 推荐多样性重排算法之MMR
 
+https://zhuanlan.zhihu.com/p/67287992
+
+推荐系统研究中常用的评价指标
+
 # 推荐算法中的常用排序算法
 
 ## Pointwise方法

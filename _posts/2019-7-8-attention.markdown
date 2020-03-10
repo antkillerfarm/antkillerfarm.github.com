@@ -154,6 +154,10 @@ https://zhuanlan.zhihu.com/p/63895164
 
 完全解析Tranformer转移力机制
 
+https://mp.weixin.qq.com/s/I4FaPxj-8i3YHjaMoAniPQ
+
+为什么有些深度学习网络要加入Product层？
+
 ## Multi-Head Attention
 
 ![](/images/img2/Attention_6.png)

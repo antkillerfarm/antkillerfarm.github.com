@@ -106,6 +106,10 @@ https://mp.weixin.qq.com/s/UmtCq6WzIDQs3IAxhRFgNw
 
 浅谈模型压缩之量化、剪枝、权重共享
 
+https://mp.weixin.qq.com/s/H6OTkpdIgSdugDrEMBLybw
+
+超越MobileNetV3的轻量级网络（GhostNet）
+
 # 知识蒸馏
 
 ## 基本概念

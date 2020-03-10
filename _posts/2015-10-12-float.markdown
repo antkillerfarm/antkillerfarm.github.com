@@ -274,3 +274,7 @@ https://mp.weixin.qq.com/s/mXjNtZvUHutBABh-f9qisQ
 https://mp.weixin.qq.com/s/zVGDYhBiLCNhKTnkzbMxGA
 
 时间序列GAN，Subadditivity of Probability Divergences
+
+https://mp.weixin.qq.com/s/ssD3NAvGx5Eu4-oWy4KtzA
+
+如何生动有趣地对GAN进行可视化？

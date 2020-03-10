@@ -252,6 +252,12 @@ Augmented Reality Navigation，增强现实导航
 
 High Beam Assist，远近光灯辅助系统
 
+参考：
+
+https://mp.weixin.qq.com/s/ZEtLAj_K_BYU1jtU8LivJA
+
+汽车ABS、EBD、ESP、TCS、HDC、HHC、这些英文都有什么用处？
+
 ## blog
 
 http://www.cnblogs.com/yhlx125/

@@ -196,3 +196,11 @@ Bill is short for William
 Bob is short for Robert
 
 Dick is short for Richard
+
+----
+
+To be, or not to be, that is a question.
+
+---Hamlet, Shakespeare
+
+生存还是毁灭

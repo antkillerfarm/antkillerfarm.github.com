@@ -142,6 +142,14 @@ https://mp.weixin.qq.com/s/9P-hF9VzDMgoPZ_CGREn8w
 
 Reformer：一个高效的Transformer
 
+https://mp.weixin.qq.com/s/-45YL1mzPmSOESfWlxUclA
+
+图解Reformer：一种高效的Transformer
+
+https://www.zhihu.com/question/302392659
+
+有了Transformer框架后是不是RNN完全可以废弃了？
+
 # BERT
 
 ## 概述

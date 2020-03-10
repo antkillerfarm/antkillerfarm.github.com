@@ -94,6 +94,10 @@ https://mp.weixin.qq.com/s/t1VojTRdnULTiycE-qnypw
 
 图神经网络（GNN）过去、现在、应用和未来最新研究进展分享
 
+https://mp.weixin.qq.com/s/B3BFZkmHkLT7WsI4ssdODA
+
+AGL:可扩展工业图机器学习系统
+
 ## 综述
 
 《A Comprehensive Survey on Graph Neural Networks》

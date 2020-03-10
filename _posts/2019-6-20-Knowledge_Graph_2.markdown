@@ -246,6 +246,10 @@ https://mp.weixin.qq.com/s/g2IA7S4STN61orwAANtBdg
 
 关系图谱在贝壳的构建和应用
 
+https://mp.weixin.qq.com/s/L6fMcRa1_me2DKr2KADAjA
+
+知识图谱前沿跟进: Philip S. Yu团队发布权威综述
+
 # DRL参考资源+
 
 https://mp.weixin.qq.com/s/vYDb1rTdPxO1sIS38VX5xA

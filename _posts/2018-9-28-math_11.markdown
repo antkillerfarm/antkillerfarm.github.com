@@ -166,6 +166,10 @@ https://mp.weixin.qq.com/s/Z3WVdFwDGqikWcLnM0zTOQ
 
 颠覆认知！关于$$c^2=a^2+b^2$$，你不知道的N个事实
 
+https://mp.weixin.qq.com/s/h_BjRGiNFV0V511RUumR0w
+
+L1, L2 范数以及高斯，拉普拉斯分布
+
 # PID算法
 
 PID算法是自动控制领域最基础应用也最广泛的算法。它是三个单词proportional（P，比例）、integral（I，积分）和differential（D，微分）的缩写。
