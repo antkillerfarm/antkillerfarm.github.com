@@ -222,80 +222,72 @@ https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
 
 # 新冠肺炎
 
-## 科研（续）
+## 病毒
 
-https://mp.weixin.qq.com/s/OaWBlQVr3DZ6HOMQFs9J3Q
+**正义单链RNA病毒**：冠状病毒科就属此类，包括能够感染动物的冠状病毒，会引发我们普通感冒的温和的冠状病毒，以及导致了SARS、MERS和此次疫情的三种厉害的冠状病毒。它们的遗传物质都是一条长长的RNA单链，入侵细胞后扮演了信使RNA的角色，欺骗细胞以它们为模板来生产病毒的蛋白质。
 
-新型冠状病毒是这样被发现的……他们惊呼“这跟鼠疫一个级别！”
+**负义单链RNA病毒**，其中包括了很多可怕的病毒，比如狂犬病毒和埃博拉病毒。它们的遗传物质虽然也是RNA单链，但是如果直接拿来生产蛋白质的话，核糖体机器一定“读不懂”。因为它们的RNA单链相当于细胞信使RNA的互补链，无法直接翻译成蛋白质的肽链。所以这类病毒的RNA进入细胞后，要先通过病毒自己带进来的RNA聚合酶，生产出互补的正义链，才能诱骗细胞开始生产病毒蛋白。
 
-https://view.inews.qq.com/a/20200130A08EVN00
+**逆转录病毒**逆天改命，能够利用自带的逆转录酶，以自己的基因组RNA为模板，合成出对应的DNA来。这个过程就叫做“逆转录”，因为它逆转了从DNA转录为RNA的“中心法则”。
 
-控制新发传染病，是以科研为主，还是以人民健康为主？公卫专家评武汉疫情
+当“逆转录病毒”侵入一种动物体内，它就会把遗传物质插入这种动物细胞的DNA当中。这样，它就完成了一次遗传物质“包裹”的“送货”服务。
 
-https://mp.weixin.qq.com/s/hG0AO43AicEN1o4GGg463w
+有趣的是，这次“送货”还只是一个开始。当这种动物的细胞分类的时候，会同时把自己的DNA和入侵病毒的DNA都复制一遍，然后传递下去。
 
-快速检测新型冠状病毒 是怎么做到的？
+还有的时候，这些病毒的DNA还会稳定地待在细胞里面，从一代传给下一代。这就形成了“内源性逆转录病毒”。
 
-https://mp.weixin.qq.com/s/aawHwJ8IIuHPE7Dc9yn1Ow
+实际上，像这样的“内源性逆转录病毒”一直在反复入侵我们人类的基因组。
 
-从试剂盒到实验室 盘点一下影响确诊人数的客观因素
+我们每个人的基因组中都携带了将近10万个“内源性逆转录病毒”的DNA片段，这些片段占到人类DNA总量的8%。如果作为比较的话，那些负责蛋白质编码的基因，只占到了1.2%。
 
-https://mp.weixin.qq.com/s/zbqdndZTt4B0-v3KfIm5uA
+也就是说，我们的基因组，可以说是个“病毒泛滥”的地方。但恰恰是这些泛滥的病毒，成就了今天的我们。
 
-既没新样本，也没实验，如何猜到新冠病毒“喜欢”感染哪些细胞？
+科学家曾经惊讶地发现，某种病毒中的一个基因，能合成一种叫做“合胞素”的蛋白质，而这种蛋白质能形成一种东西，那就是胎盘。
 
-https://mp.weixin.qq.com/s/T4GQWgnazMyljsa3Jg0E8Q
+这意味着，一种新型的生命形式——“哺乳动物”，有机会出现在地球上了。
 
-一文分清P1、P2、P3、P4实验室四兄弟
-
-https://mp.weixin.qq.com/s/vWpQLlfHFcAPleuuEvJdhw
-
-中国人更易感染新冠肺炎吗？
-
-https://mp.weixin.qq.com/s/zu009F4bS_fcSwYEPdFb-g
-
-全球首次用抗体检测破解新冠传播链条，痊愈病人被证明是新加坡疫情传播者
-
-https://mp.weixin.qq.com/s/jm9vpHxbmpODFPi5phDW1g
-
-这款硬核抗疫游戏火了，20万玩家在线科研拯救世界，美国名校出品，Nature曾点名表扬
+![](/images/img3/virus.png)
 
 ----
 
-伤寒玛丽”（Typhoid Mary），本名叫玛丽·梅伦（Mary Mallon，1869年9月23日——1938年11月11日），生于爱尔兰，15岁时移民美国。起初，她给人当女佣。后来，她发现自己很有烹调才能，于是转行当了厨师，每月能赚到比做女佣高出很多的薪水。玛丽虽然身体一直健康，却携带伤寒杆菌。后来玛丽相继传染多人，最终被隔离在纽约附近的北兄弟岛（North Brother Island）上的传染病房。
+mRNA示意图：
 
-https://www.zhihu.com/question/368287285/answer/989275113
+![](/images/img3/mRNA.png)
 
-如何看待女子从武汉回河南后至今无症状，其5名亲人患新型肺炎？
+参考：
 
-----
+https://mp.weixin.qq.com/s/lwBpRJ4VQxD3DzeMropylQ
 
-双黄连由金银花（双花）、黄芩和连翘三味中药配伍而成。它的历史并不算悠久，但在现有的网络信息中，也无法准确地指出究竟是何人、何时开发出这个如今家喻户晓的方子。有文献可考的历史表明，双黄连方剂产生于文革期间的东北地区——再准确一点，黑龙江哈尔滨，并且与现在的哈药集团有着千丝万缕的联系。
+病毒简史：人类对大自然的不知敬畏，才是一切灾难的源头
 
-https://mp.weixin.qq.com/s/7YscNLoSsuYhf3XQ5qz36w
+https://mp.weixin.qq.com/s/Zh9-8C-hilrlKk8jrVo60g
 
-双黄连热销背后，那些你不知道的事
+入侵&反击！病原体和人体的攻防战
 
-----
+https://mp.weixin.qq.com/s/bgF5p9g47FmnPmR2hcvU3Q
 
-抗病毒药一般以vir结尾，例如Remdesivir。所以药品的中文名一般就是XXX韦。
+病毒，那条静止的河流
 
-https://mp.weixin.qq.com/s/GAAeUD5ZDROltfxcoSFaeA
+https://mp.weixin.qq.com/s/ebaz8rd7ft3eH8E-cS3YpA
 
-期待救急，你了解“老药新用”吗？
+病毒从哪里来？
 
-## 知名患者
+https://mp.weixin.qq.com/s/7NePVREsxbMFqaZvF5N51w
 
-一个健康的社会不应该只有一个声音--By 李文亮
+BBC纪录片：病毒是如何入侵的？
 
-https://mp.weixin.qq.com/s/e3MaPaBZrxwqWtykB9f_JQ
+https://mp.weixin.qq.com/s/JAm3eMF1ATMzHTRTiZybIQ
 
-86岁院士因感染冠状病毒去世，华中科技大学已痛失4位知名学者
+阻击病毒的战场
 
-----
+https://asm.org/
 
-根据伊朗宪法，总统可以在无需议会批准的情况下任命副总统，人数可达十多位，每位副总统一般负责一个与总统事务有关的组织机构。除第一副总统外，副总统的重要性无法与负责具体行政事务的内阁部长相比。
+American Society for Microbiology
 
-http://news.ifeng.com/c/7uRKv3JARr9
+https://mp.weixin.qq.com/s/SkzRspEEFj53A5OWKj37VA
 
-伊朗女副总统感染新冠病毒，40年前她在美国家喻户晓
+新型冠状病毒的“帮凶”——病原真菌到底是什么鬼？
+
+https://mp.weixin.qq.com/s/cUtWVBOsUkCBC0abeoKAzA
+
+从病毒到免疫， “科学地”揭开新冠病毒的神秘面纱

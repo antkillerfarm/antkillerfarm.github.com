@@ -100,138 +100,32 @@ Peter Mitchell是少数几个具有大局观的科学家，他意识到生命和
 
 最早的遗传物质是RNA，它既可以负责为蛋白质编码，又可以担任酶的角色，自己复制自己。就这样，生命又进化出了基本的遗传结构，可以把大自然的创新记录下来并传播下去。
 
+----
+
+地球上究竟有几种生命形式？当亚里士多德建立生物学时，他用二分法则将生物分为动物和植物。显微镜的诞生使人们发现了肉眼看不见的细菌。
+
+细菌在细胞结构上与动植物的最根本差别是，动植物细胞内有细胞核，遗传物质DNA主要储存于此，而细菌则没有细胞核，DNA游离于细胞质中。
+
+由于动物与植物的差别小于它们与细菌的差别，沙东（E. Chatton）于1937年提出了生物界新的二分法则，即生物分为含细胞核的真核生物和不含细胞核的原核生物。动植物属于真核生物，而细菌属于原核生物。
+
+1859年达尔文发表《物种起源》以后，生物学家便开始建立基于进化关系而非表型相似性的分类系统，即所谓系统发育分类系统。
+
+1970年代，随着分子生物学的发展，C.R.Woese发现原先被认为是细菌的甲烷球菌代表着一种既不同于真核生物，也不同于细菌的生命形式。考虑到甲烷球菌的生活环境可能与生命诞生时地球上的自然环境相似，伍斯将这类生物称为古细菌。据此，Woese于1977年提出，生物可分为三大类群，即**真核生物、真细菌（Bacteria）和古细菌（Archaea）**。
+
+>詹氏甲烷球菌（Methanococcus jannaschii）属于古生菌，该菌发现于1982年。生活在2600m深、260个标准大气压（$$2.6×10^7$$Pa）、94℃的海底火山口附近。1996年由美国基因组研究所（The Institute for Genomic Research,TIGR）和其他5个单位共40人联合完成了该菌的基因组全测序工作。这是完成的第一个古生菌和自养型生物的基因组序列。根据对该菌全基因组序列的分析结果，完全证实了1977年由Woese等人提出的三界域学说。
+
+**细菌和古细菌都是没有性的，它们全都可以独立完成繁殖任务，与之相反，所有真核生物（Eukaryotes）都是有性的。**
+
+第一个真核细胞是在20亿年前出现的，在此之前原核生物统治了地球长达20亿年之久。
+
+----
+
 参考：
 
 https://mp.weixin.qq.com/s/_b5wRtOMwmGi8N5fxgMFEw看破
 
 生命三问（上）：生命是如何进化出来的？
 
-# 新冠肺炎
+https://mp.weixin.qq.com/s/uPVAlv6SwtYsXOPgIQG8Xg
 
-## 历史
-
-https://mp.weixin.qq.com/s/TkTU7dw_GRBL7M4D1LBRDw
-
-帝国对抗瘟疫的最后一战（伍连德、肺鼠疫）
-
-https://zhuanlan.zhihu.com/p/104182101
-
-百年来最凶猛传染病，如何从天灾变成人祸？（西班牙流感、H1N1）
-
-https://zhuanlan.zhihu.com/p/104267977
-
-一场瘟疫如何重创一座国际化都市？（伦敦鼠疫）
-
-https://zhuanlan.zhihu.com/p/105581224
-
-数十万人因瘟疫逃向全国，印度为何无可奈何？
-
-https://mp.weixin.qq.com/s/UoKrSYw6109QR57af2odew
-
-疫情面前的众生-聊聊美国电影《传染病》
-
-https://mp.weixin.qq.com/s/ShSjz0ZEBneT6KqGYGjtcg
-
-历年世界各地的“瘟疫”，人们都是怎么战胜的？
-
-https://mp.weixin.qq.com/s/uoLGz_giq88nkNJ4-80n3Q
-
-全球百年视角再审视：历次突发疫情是如何消退的？
-
-https://mp.weixin.qq.com/s/CBwRBdGHFcjItdA81SfdOg
-
-美国从百年前的那场大流感里学到了什么？
-
-----
-
-在这场争论中，最早推广Pfeifer氏菌疫苗的William Park展示了自我纠错的勇气，与George McCoy一起，成为否定细菌疫苗发声最多的专家。
-
-100年前的条件和科学水平与当前无法相比，但以William Park为代表的美国科学家所展示的勇于纠错、实事求是的精神永远不会过时。
-
->William Hallock Park，1863～1939，美国医学家。Columbia University博士（1886）。长期供职于卫生部纽约实验室（也就是现在的William Park实验室）。
-
-https://mp.weixin.qq.com/s/dhNuZo0yTI1CR8oH9LYlKA
-
-以史为鉴：回顾1918年美国流感疫苗开发的闹剧
-
-----
-
-pandemics：世界性流行病
-
-epidemics：流行病
-
-quarantine源自拉丁语里的“四十”。由来是当年威尼斯人在瘟疫的时候，让外来船只停40天再下船的操作。
-
-----
-
-1619年，被后来人称为“16世纪死神”的法国医生查尔斯·德洛姆（Charles de Lorme）发明了一种诡异的银制面具，外形设计呈鸟嘴状，由皮革包裹，面具的眼睛部分用玻璃嵌入，至于最关键的过滤系统，则用棉花、樟脑、玫瑰等填充物构成，置于鸟嘴处，一定程度上阻隔了空气中的病菌。
-
-![](/images/img3/Doctor_Schnabel.jpg)
-
-## SARS
-
-https://mp.weixin.qq.com/s/f5YPi3JuGMiB-FwMZK8F1g
-
-非典十三年祭：不说，并不代表遗忘
-
-https://news.yorkbbs.ca/2030923
-
-应对SARS疫情：多伦多的教训
-
-![](/images/img3/sars.jpg)
-
-https://mp.weixin.qq.com/s/Iu5y3AIgp7rgswjH89txJw
-
-哪些城市的新型肺炎疫情可能被低估：人流迁徙大数据+SARS传播路径
-
-https://mp.weixin.qq.com/s/cvIZzSBEg50FKqjf2x7fAg
-
-“小汤山”隔离模式，对武汉肺炎有何启发？
-
-https://mp.weixin.qq.com/s/ME6mAC0RgYsTLrHIz2kJSA
-
-被遗忘的案例：淘大花园往事与现实防控的意义
-
-https://mp.weixin.qq.com/s/kRp7Uw77BWSjFB5QOrydSg
-
-非典，已过去十七年：那些活着的后遗症患者
-
-## 国内疫情
-
-https://github.com/wuhan2020/wuhan2020
-
-新型冠状病毒防疫信息收集平台
-
-https://github.com/2019ncovmemory/nCovMemory
-
-2020新冠肺炎记忆
-
-https://mp.weixin.qq.com/s/9291PPNwxz3KoF-7klwMrA
-
-新型肺炎严重程度升级！已明确会人传人......
-
-https://mp.weixin.qq.com/s/S6oKrc_CbO7ywWiRYiqbfQ
-
-武汉肺炎重症患者：一床难求
-
-https://mp.weixin.qq.com/s/9Lgl9h44gO9-XkPUrtfxRQ
-
-武汉肺炎一线医生口述：大爆发期或将到来
-
-http://www.eeo.com.cn/2020/0206/375757.shtml
-
-万家宴后的百步亭
-
-![](/images/img3/2019-nCoV.jpg)
-
-https://view.inews.qq.com/a/20200207A0JG1Z00
-
-武汉时间：从专家组抵达到封城的谜之20天
-
-https://mp.weixin.qq.com/s/OElG_rIrFC89INpJlELEdQ
-
-雷神山背后：基建狂魔70年
-
-https://mp.weixin.qq.com/s/kfe-7hP8c_HJaRBpFAf9fA
-
-疫情会让更多人成为“生存狂”吗？
+生命三问（中）：为什么要有性？

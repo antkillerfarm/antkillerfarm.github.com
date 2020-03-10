@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  TensorFlow（五）
+title:  TensorFlow（五）, C#
 category: AI 
 ---
 
@@ -186,6 +186,93 @@ https://mp.weixin.qq.com/s/Rb0Fh9TZJo-IdEoxlgD4gw
 
 如何让模型在生产环境上推理得更快
 
+# C#
+
+## XmlReader
+
+XmlReader是.NET中处理XML的类。之前的W3C已经提出了DOM和SAX两种模型。作为最早的模型，这两种模型在各种语言中都有相应的实现，关于它们的讨论也有很多，在此不再赘述。
+
+XmlReader是一种快速、无缓冲、向前并只读的轻量级XML引擎，在这一点上它和SAX是相同的。它和SAX的主要区别在于它们的设计模式是不同的。SAX是push模式的XML引擎，它会在读到相应的节点时，触发消息并将之发送给调用程序。而XmlReader则是pull式的XML引擎，它更符合人们的通常的对文件顺序处理的习惯。当然除此之外，它还有其他的好处。参看MSDN的相关章节。
+
+通常情况下，pull模型比push模型的效率高，但push模型的灵活性要高些。例如，Dos下的编程主要是一种顺序执行的pull模型结构，而Windows下的编程则是一种基于消息的push模型结构。所以，读取特定标签内容的XML文档，采用XmlReader比较好，而对于那些结构不固定或需要遍历的XML文档用SAX较好。
+
+PS: XmlReader提出的pull方案，后来被libxml2采用，成为了GTK+的一部分。
+
+## Microsoft.WindowsCE.Forms
+
+这是一个Wince的类。由于.NET CF中的System.Windows.Forms.Form没有DefWndProc参数，所以要想接收窗体消息就要用到它。不过它的dll需要自己添（在.NET CF的安装路径下可以找到这个Microsoft.WindowsCE.Forms.dll），接收C++编程时的那些WM_开头的消息时需要用到这个模块中的MessageWindow类。
+
+代码示例如下:
+
+```c#
+public class MsgWindow : MessageWindow
+{
+    public const int WM_CUSTOMMSG = 0x0400+3333;
+    
+    private Form1 msgform;//Form1是用于接收消息的那个窗体Form。
+    public MsgWindow(Form1 msgform)
+    {
+        this.msgform = msgform;
+    }
+    protected override void WndProc(ref Message msg)
+    {
+        switch (msg.Msg)
+        {
+            case WM_CUSTOMMSG:
+                //do sth
+                break;
+        }
+        base.WndProc(ref msg);
+    }
+}
+```
+
+## C#中的发布功能
+
+C#项目属性中有个publish标签是关于发布程序的功能的。用过Java的人都知道，Java的可移植性是很不错的，但Java程序的部署相对于一般 的本地程序来说就显得比较麻烦了。至少在本人的程序生涯中，就多次经历拿着JAR文件兴冲冲的跑去，却发现目标机没有JRE的情况。
+
+C#中的发布功能除了能打包程序和.NET Framework之外，还有网络发布的功能。这里我主要讨论单机程序的打包。如果只有程序文件的话，情况比较简单，没什么难度。如果还有数据文件的话就 要注意了。在程序文件（Application Files）对话框中，每个文件有一个发布状态（Publish Status）的属性，如果你希望数据文件和程序文件在同一个文件夹下的话，最好选择包含（Include）而不是数据文件（Data File），后者会把你的数据文件部署到一个专门的数据文件夹下，这个文件夹可用 System.Deployment.Application.DataDirectory获得。
+
+## Mono
+
+.NET的跨平台一直不咋样，直到2014年MS推出的.NET core才有所改观。虽然.NET core可以开发C#应用，然而仅仅局限于非GUI的应用，所以目前更推荐使用Mono方案。
+
+Mono早先是Xamarin推出的跨平台.NET替代项目，目前已经被MS收购，按照MS的路线图，Mono将作为非Windows平台的.NET方案而存在。它将和Windows平台的.NET方案共用.NET core的代码。
+
+官网：
+
+https://www.mono-project.com/
+
+Mono有个IDE，叫做MonoDevelop。
+
+官网：
+
+https://www.monodevelop.com/
+
+安装方面，尽管ubuntu的仓库已经有了Mono，但是却没有MonoDevelop，且该Mono版本与最新的MonoDevelop不兼容，因此还是老老实实采用官网的方案安装吧。
+
+参考：
+
+https://www.cnblogs.com/shanyou/p/4295163.html
+
+.NET Core与.NET Framework、Mono之间的关系
+
+https://www.cnblogs.com/wer-ltm/p/8776846.html#!comments
+
+.NET：持续进化的统一开发平台
+
+https://mp.weixin.qq.com/s/j5PFEkWd49SNKVdlWoqHiw
+
+.NET Core很酷，你不得不知！
+
+## NuGet
+
+NuGet是C#项目的包管理工具，作用类似maven、pip。
+
+官网：
+
+https://www.nuget.org/
+
 # 推荐系统的工程细节+
 
 https://mp.weixin.qq.com/s/ZggfBVw0Z0ODxjqAC4-Lbg
@@ -227,61 +314,3 @@ https://mp.weixin.qq.com/s/YkABleB5hlHt_Zn6M6DgBw
 https://mp.weixin.qq.com/s/WOXSSA5srCqaNPO-j-Ogqw
 
 优酷：如何让视频算法为质量服务？
-
-# 深度推荐系统+
-
-https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w
-
-多值类别特征加入CTR预估模型的方法汇总
-
-https://zhuanlan.zhihu.com/p/101298495
-
-稠密特征加入CTR预估模型有哪些方法？
-
-https://zhuanlan.zhihu.com/p/101136699
-
-推荐系统中的深度匹配模型
-
-https://mp.weixin.qq.com/s/POEnU7bNG44Mz9844WuzIw
-
-腾讯视频是如何给你高效精准推送的
-
-https://zhuanlan.zhihu.com/p/99953120
-
-YouTube推荐系统算法梳理
-
-https://mp.weixin.qq.com/s/zeF7C7YrLqOjIWPen04K2Q
-
-搜索模型核心技术公开，淘宝如何做用户建模？
-
-https://www.zhihu.com/question/362190044
-
-推荐系统领域有啥巧妙的idea？
-
-https://zhuanlan.zhihu.com/p/96796043
-
-推荐系统中如何做多目标优化
-
-https://zhuanlan.zhihu.com/p/52876883
-
-深度CTR预估模型中的特征自动组合机制演化简史
-
-https://mp.weixin.qq.com/s/OFCzl8stFU5b1MWrkDU7NA
-
-阿里电商推荐中如何进行特征蒸馏提升模型效果
-
-https://mp.weixin.qq.com/s/ZNjC30F28uX2lBkHBAAU3g
-
-双DNN排序模型：在线知识蒸馏在爱奇艺推荐的实践
-
-https://mp.weixin.qq.com/s/Ni42SEukRBGDUHu_bh3Lig
-
-基于LSTM模型的广告库存预估算法
-
-https://mp.weixin.qq.com/s/FYghBvkye8J7BqPje4JhFw
-
-汽车之家推荐系统排序算法迭代之路
-
-https://mp.weixin.qq.com/s/2whZpeQPXggHRDSEUnQZ-w
-
-加州大学-Liwei Wu博士论文：协同过滤与排序进展，150页pdf

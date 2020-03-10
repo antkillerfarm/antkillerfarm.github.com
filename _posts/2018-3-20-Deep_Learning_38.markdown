@@ -130,6 +130,10 @@ https://mp.weixin.qq.com/s/VOclUEBXnAtmAZmZrzQQoA
 
 面向大规模无标注视频的人脸对齐方法
 
+https://zhuanlan.zhihu.com/p/112140909
+
+基于深度学习的人脸识别方法介绍
+
 # RNN进阶
 
 ## IndRNN

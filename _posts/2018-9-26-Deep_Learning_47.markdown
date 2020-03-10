@@ -290,6 +290,10 @@ https://mp.weixin.qq.com/s/bAV74fxvwI73Qt7qm_jPJA
 
 一文读懂深度学习在摄像头和激光雷达融合的3-D目标检测中的应用
 
+https://zhuanlan.zhihu.com/p/112103579
+
+深度学习在三维环境重建中的应用
+
 # AutoDL+
 
 https://mp.weixin.qq.com/s/Nmkcy2nBczUccwIdMJiH_A

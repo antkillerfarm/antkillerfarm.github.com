@@ -206,7 +206,129 @@ https://mp.weixin.qq.com/s/Ue4toNlLD0-zAstVJP2ynA
 
 爱奇艺大数据实时分析平台的建设与实践
 
-# 新冠肺炎+
+# 新冠肺炎
+
+## 病毒（续）
+
+https://mp.weixin.qq.com/s/bfhS3Er3NXjfUrKZbju33Q
+
+病毒与人类的战争（上）：百万年的战争
+
+https://mp.weixin.qq.com/s/Bx7AZrL168OkygBbg0qflQ
+
+病毒与人类的战争（下）： 人类守望者
+
+https://mp.weixin.qq.com/s/9iWT9v4msuHgzN_92Ptf7A
+
+关于新冠病毒，人们最关心的七个科学问题
+
+https://mp.weixin.qq.com/s/ruMiimYqAbsVwU-mnyq8oQ
+
+病毒从动物转移到人类身上，会发生什么？
+
+https://mp.weixin.qq.com/s/-xi04Of1VSnACMIG0B8jEQ
+
+小小的抗体，如何承担起保护我们的重任？
+
+## 蝙蝠
+
+https://mp.weixin.qq.com/s/QN2GQ6T9Q2cwT_CN6aX_YQ
+
+你所不知道的蝙蝠——常态“发烧”，体内如“毒蛊”
+
+https://mp.weixin.qq.com/s/Vi-PRPhFEnBEnNxGNzA6VA
+
+蝙蝠是极为有益的动物，然而也是最容易被误解的动物之一
+
+## 科研
+
+https://mp.weixin.qq.com/s/NI2OtzUsRXUMoqfI11YV_A
+
+详解医学顶刊《柳叶刀》最新发表新型冠状病毒研究论文
+
+https://zhuanlan.zhihu.com/p/77352210
+
+“非典”真的是吃野味吃出来的吗？
+
+https://mp.weixin.qq.com/s/4pmzP2s9YZPR0yAX0XrjsQ
+
+流感病毒在衣服袖子和电梯按钮上能活多久？
+
+https://mp.weixin.qq.com/s/OaWBlQVr3DZ6HOMQFs9J3Q
+
+新型冠状病毒是这样被发现的……他们惊呼“这跟鼠疫一个级别！”
+
+https://view.inews.qq.com/a/20200130A08EVN00
+
+控制新发传染病，是以科研为主，还是以人民健康为主？公卫专家评武汉疫情
+
+https://mp.weixin.qq.com/s/hG0AO43AicEN1o4GGg463w
+
+快速检测新型冠状病毒 是怎么做到的？
+
+https://mp.weixin.qq.com/s/aawHwJ8IIuHPE7Dc9yn1Ow
+
+从试剂盒到实验室 盘点一下影响确诊人数的客观因素
+
+https://mp.weixin.qq.com/s/zbqdndZTt4B0-v3KfIm5uA
+
+既没新样本，也没实验，如何猜到新冠病毒“喜欢”感染哪些细胞？
+
+https://mp.weixin.qq.com/s/T4GQWgnazMyljsa3Jg0E8Q
+
+一文分清P1、P2、P3、P4实验室四兄弟
+
+https://mp.weixin.qq.com/s/vWpQLlfHFcAPleuuEvJdhw
+
+中国人更易感染新冠肺炎吗？
+
+https://mp.weixin.qq.com/s/zu009F4bS_fcSwYEPdFb-g
+
+全球首次用抗体检测破解新冠传播链条，痊愈病人被证明是新加坡疫情传播者
+
+https://mp.weixin.qq.com/s/jm9vpHxbmpODFPi5phDW1g
+
+这款硬核抗疫游戏火了，20万玩家在线科研拯救世界，美国名校出品，Nature曾点名表扬
+
+----
+
+伤寒玛丽”（Typhoid Mary），本名叫玛丽·梅伦（Mary Mallon，1869年9月23日——1938年11月11日），生于爱尔兰，15岁时移民美国。起初，她给人当女佣。后来，她发现自己很有烹调才能，于是转行当了厨师，每月能赚到比做女佣高出很多的薪水。玛丽虽然身体一直健康，却携带伤寒杆菌。后来玛丽相继传染多人，最终被隔离在纽约附近的北兄弟岛（North Brother Island）上的传染病房。
+
+https://www.zhihu.com/question/368287285/answer/989275113
+
+如何看待女子从武汉回河南后至今无症状，其5名亲人患新型肺炎？
+
+----
+
+双黄连由金银花（双花）、黄芩和连翘三味中药配伍而成。它的历史并不算悠久，但在现有的网络信息中，也无法准确地指出究竟是何人、何时开发出这个如今家喻户晓的方子。有文献可考的历史表明，双黄连方剂产生于文革期间的东北地区——再准确一点，黑龙江哈尔滨，并且与现在的哈药集团有着千丝万缕的联系。
+
+https://mp.weixin.qq.com/s/7YscNLoSsuYhf3XQ5qz36w
+
+双黄连热销背后，那些你不知道的事
+
+----
+
+抗病毒药一般以vir结尾，例如Remdesivir。所以药品的中文名一般就是XXX韦。
+
+https://mp.weixin.qq.com/s/GAAeUD5ZDROltfxcoSFaeA
+
+期待救急，你了解“老药新用”吗？
+
+## 知名患者
+
+一个健康的社会不应该只有一个声音--By 李文亮
+
+https://mp.weixin.qq.com/s/e3MaPaBZrxwqWtykB9f_JQ
+
+86岁院士因感染冠状病毒去世，华中科技大学已痛失4位知名学者
+
+----
+
+根据伊朗宪法，总统可以在无需议会批准的情况下任命副总统，人数可达十多位，每位副总统一般负责一个与总统事务有关的组织机构。除第一副总统外，副总统的重要性无法与负责具体行政事务的内阁部长相比。
+
+http://news.ifeng.com/c/7uRKv3JARr9
+
+伊朗女副总统感染新冠病毒，40年前她在美国家喻户晓
 
 ## 武汉病毒所
 
@@ -233,65 +355,3 @@ https://mp.weixin.qq.com/s/MJamXXj44e-fxaP9WRyhgw
 http://www.sohu.com/a/370615513_105067
 
 网传饶毅致信舒红兵：您夫人不适合领导武汉病毒所
-
-## 疫情建模
-
-https://mp.weixin.qq.com/s/2XsZzfZI-gAHC-D5HGNZXw
-
-从目前的数据，再次分析一下武汉的新冠肺炎患者数量和死亡率
-
-https://mp.weixin.qq.com/s/I5I5Jh7brFGRBTAFah-C4w
-
-武汉新冠肺炎传播的动力学模型及预测
-
-https://mp.weixin.qq.com/s/-C03P-I4w91kLSGsuhxAKQ
-
-新型冠状病毒传播与扩散的控制模型
-
-https://mp.weixin.qq.com/s/gZCD8ATxGrpHSZLKpcHfiA
-
-基于元胞自动机模拟新型肺炎病毒的传播和预防
-
-https://mp.weixin.qq.com/s/ZOPncvPpFyLIwH_XChAdbg
-
-基于微分方程和元胞自动机模拟新型肺炎病毒的传播
-
-https://mp.weixin.qq.com/s/4w6CTGaKKEH9APVNH9Ue8w
-
-扩散信息、交通管制、自我隔离，哪个更能遏制病毒传播？
-
-https://mp.weixin.qq.com/s/tBoM9o3pK89bprK8npHLWA
-
-可能会说谎的地图！全国疫情地理格局的重新审视
-
-https://mp.weixin.qq.com/s/bVNkCHl7BPU_eEcAWksmww
-
-关于武汉新型冠状病毒肺炎的传播预测模型
-
-https://mp.weixin.qq.com/s/XYT4U1mv29nln32ysMINrw
-
-武汉肺炎传播的多种数学模型
-
-https://mp.weixin.qq.com/s/Lg1tJmO7aN9XNpZ6bs0cJA
-
-程序员硬核劝告：现在还不是出门的时候
-
-https://mp.weixin.qq.com/s/sv07R8HQXX2U0QOi5_dOwg
-
-河南1105例新冠肺炎数据告诉我们什么？
-
-https://mp.weixin.qq.com/s/qRzkS2itp-eloaBlA-VSGA
-
-基于排队论模型浅析各地医护人员驰援武汉的重要意义
-
-https://mp.weixin.qq.com/s/ueuvLFxQAGNzBLHHyaBYMA
-
-如果新冠病毒是在亚美尼亚爆发会发生什么？程序员用Python进行模拟
-
-https://mp.weixin.qq.com/s/LGNGFf-LBMz3qyUFPr_BHA
-
-新冠疫情下，如何降低复工的职场感染风险？
-
-https://mp.weixin.qq.com/s/0k1o-m8F5aWUWA4Nj8WnIQ
-
-我国疫情预测模型遭权威期刊退回！钟南山等人用LSTM力证“早发现早隔离”重要性

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Fedora, CentOS, diff&patch, bash, awk&sed&grep, VS
+title:  Fedora, CentOS, bash, VS
 category: linux 
 ---
 
@@ -125,37 +125,87 @@ http://www.tecmint.com/install-tightvnc-remote-desktop/
 
 Install TightVNC Server in RHEL/CentOS and Fedora to Access Remote Desktops
 
-# diff&patch
-
-diff/patch这对工具在数学上来说，diff是对2个集合求差，patch是求和。
-
-```bash
-diff -uNr A B > C #生成A和B的diff文件C,-uNr为最常用的选项
-patch A C #给A打上diff文件得到B
-patch -R B C #B还原为A
-```
-
-## 给目录应用patch。
-
-`patch -p1 <1.patch`
-
-这种情况适合1.patch中包含对多个文件的修改时。
-
-## 批量应用patch
-
-有的时候，patch不是一个patch文件，而是一个目录中的若干个patch文件。这时可用如下办法：
-
-`find . -name "*.patch">1.txt`
-
-`sort 1.txt | xargs cat >2.patch`
-
-`patch -p1 <2.patch`
-
 # bash
 
 手册：
 
 https://www.gnu.org/software/bash/manual/bash.pdf
+
+## 历史
+
+![](/images/img3/sh.gif)
+
+参考：
+
+https://www.ibm.com/developerworks/cn/linux/l-linux-shells/
+
+评估Linux中的shell
+
+### Thompson shell
+
+Ken Thompson于1971年开发了第一个用于UNIX的shell，名为V6 shell。该shell为重定向（< > 和 >>）和管道（| 或 ^）引入了一种紧凑的语法，并支持参数扩展的模式匹配，比如`*.txt`。但它缺少编写脚本的能力。
+
+### bsh
+
+Bourne shell，由AT&T公司的Steve Bourne开发（1977）。它引入了控制流、循环和变量，从而具备了脚本的能力。
+
+>Stephen Richard "Steve" Bourne，1944年生，英国计算机学家。King's College London本科+Cambridge博士。先后工作于Bell Labs、Silicon Graphics, DEC, Sun和Cisco。ACM主席、皇家天文学会会员。除了bsh之外，他还发明了adb debugger for UNIX。
+
+### csh
+
+csh是Bill Joy设计的（1978），它的语法类似C语言，故名。主要改进是添加了历史记录。
+
+>William (Bill) Nelson Joy，1954年生，美国计算机科学家。University of Michigan本科+UCB硕士（1979）。他的知名作品包括BSD、vi、csh、chroot、TCP/IP driver、Java、SPARC、Solaris、NFS。Sun创始人兼首席科学家。
+
+### tcsh
+
+tcsh由Ken Greer在CMU开发（1981），它在csh的基础上，提供了文件名补全的功能。后来Mike Ellis又加入了命令补全的功能（1983）。
+
+### ksh
+
+Korn shell (ksh) 由David Korn设计的（1983），它在bsh的基础上添加了一些csh、tcsh引入的功能。
+
+### bash
+
+Bourne-Again Shell（或 Bash）是一个开源 GNU 项目，旨在取代 Bourne shell。它由Brian Fox开发（1989），吸取了ksh、csh等的功能，现已成为世上最流行的shell。在通常语境中，如果没有特指的话，shell一般就是指的bash。
+
+### zsh
+
+zsh由Paul Falstad开发（1990）。它的功能极其强大，但也由于配置过于复杂，所以初期无人问津。直到有一天，国外有个穷极无聊的程序员开发出了一个能够让你快速上手的zsh项目，叫做“oh my zsh”：
+
+https://github.com/ohmyzsh/ohmyzsh
+
+参考：
+
+https://zhuanlan.zhihu.com/p/19556676
+
+终极Shell——ZSH
+
+### Fish Shell
+
+吸取了zsh的经验，Fish Shell主打的是开箱即用。
+
+官网：
+
+http://fishshell.com/
+
+参考：
+
+http://www.ruanyifeng.com/blog/2017/05/fish_shell.html
+
+Fish shell入门教程
+
+### BusyBox
+
+BusyBox由Bruce Perens设计（1995），号称是“The Swiss Army knife of Embedded Linux”。
+
+Thompson shell以及之后的shell，其设计思路是一个shell主程序+若干命令程序。这里的命令甚至包括shell中的一些语法成分，比如test和`[`。是的，你没看错，`[`也是一个应用程序。
+
+而BusyBox为了发布和部署的方便，将一个shell和所有命令合并到一个可执行文件中。
+
+官网：
+
+https://busybox.net/
 
 ## 空格和TAB的细节
 
@@ -295,69 +345,6 @@ https://mp.weixin.qq.com/s/xuC_pH1X_GmyK0vVWrBzWQ
 https://zhuanlan.zhihu.com/p/84774691
 
 bash下可控任务数的并发执行脚本
-
-# awk&sed&grep
-
-这三个工具是文本处理中用的比较多的工具，各有各的特色，且都支持正则表达式。
-
-一般来说，行处理优先考虑使用sed和grep，列处理优先考虑使用awk。通常情况下，组合使用多个命令，其命令编写的难度小于只使用一个命令。比如sed和grep也可以进行列处理，但语法难度远超awk，反之亦然。
-
-这里不打算列出各个命令的选项，而仅列出使用它们的一些示例：
-
-这里假设我们有一文件名为ab。
-
-## awk
-
-```bash
-awk '{print $1}' ab #显示第一列
-```
-
-参考：
-
-https://mp.weixin.qq.com/s/-mWYn195TBSB1lDlncuYeA
-
-常用命令之awk常用实例
-
-## sed
-
-```bash
-sed '1d' ab #删除第一行 
-sed '$d' ab #删除最后一行
-sed '1,2d' ab #删除第一行到第二行
-sed '2,$d' ab #删除第二行到最后一行
-
-sed -n '1p' ab    #显示第一行 
-sed -n '$p' ab    #显示最后一行
-sed -n '1,2p' ab  #显示第一行到第二行
-sed -n '2,$p' ab  #显示第二行到最后一行
-
-sed -n '/ruby/p' ab #查询包括关键字ruby所在所有行
-sed -n '/\$/p' ab #查询包括关键字$所在所有行，使用反斜线\屏蔽特殊含义
-
-sed -n '/ruby/p' ab | sed 's/ruby/bird/g'    #替换ruby为bird
-sed -n '/ruby/p' ab | sed 's/ruby//g'        #删除ruby
-
-sed -e 's/.$//' mydos.txt > myunix.txt #dos->unix
-```
-
-## grep
-
-```bash
-grep 'ruby' ab #查询包括关键字ruby所在所有行
-grep -nri 'ruby' #n 显示行号，r 子目录搜索，i 忽略大小写
-```
-
-## 综合
-
-```bash
-ip addr show br-lan | grep 'inet ' | awk  '{print $2}' | sed 's/\/.*//g'
-```
-
-参考：
-
-https://mp.weixin.qq.com/s/o1vuL3RrWz9tyUPguZeSWA
-
-简单快捷的数据处理，数据科学需要注意的命令行
 
 # VS
 

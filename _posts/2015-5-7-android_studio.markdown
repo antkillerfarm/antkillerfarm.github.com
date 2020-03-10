@@ -97,11 +97,11 @@ AlertDialog.Builder setMessage(CharSequence message)
 
 在C语言中，其实也有类似的情况，例如
 
-`char *strcpy(char *strDestination,const char *strSource);`
+`char *strcpy(char *strDestination, const char *strSource);`
 
 为什么不写成
 
-`void strcpy(char *strDestination,const char *strSource);`
+`void strcpy(char *strDestination, const char *strSource);`
 
 或者
 

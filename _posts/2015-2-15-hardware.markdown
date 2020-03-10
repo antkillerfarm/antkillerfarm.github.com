@@ -178,3 +178,21 @@ Veto：否决票
 TL;DR：可以是 Too long; Didn't read（太长，所以没有看）。也可以是 Too long; Don't read （太长，请不要看），常作为一篇很长的文章的摘要标题。
 
 PoC(Proof of Concept)，即概念验证。
+
+FYI：for your information
+
+IFF：if and only if
+
+eta：estimated time of arrival
+
+w/o：without
+
+N.B.:nota bene 注意,留心
+
+----
+
+Bill is short for William
+
+Bob is short for Robert
+
+Dick is short for Richard

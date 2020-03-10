@@ -302,7 +302,20 @@ X x;
 
 如果想禁用默认函数的话，可以使用`=delete`。上例中，就是禁用默认的拷贝构造函数的示例。
 
+default仅用于类的特殊成员函数，且该特殊成员函数没有默认参数。这里的特殊成员函数包括：默认构造函数，析构函数，拷贝函数以及拷贝赋值函数。
+
+```c++
+class X {
+public:
+    int f() = default: //错误，f()非特殊成员函数
+    X(int) = default; //错误，非默认构造函数
+    X(int i = 1) = default; // 错误，含有默认参数
+}
+```
+
 参考：
+
+https://www.ibm.com/developerworks/cn/aix/library/1212_lufang_c11new/index.html
 
 C++11标准新特性：Defaulted和Deleted函数
 
@@ -362,40 +375,12 @@ http://blog.chinaunix.net/uid-7426920-id-2627743.html
 
 ANSI和K&R两种函数定义风格
 
-# 参考
+# const
 
-https://mp.weixin.qq.com/s/Hpn7KqYlBKz0JdryiozqyQ
-
-每个开发者都应该了解的一些C++特性
-
-https://www.cnblogs.com/wuchanming/p/3913492.html
-
-emplace_back与push_back的区别
-
-https://zhuanlan.zhihu.com/p/82895086
-
-当我们谈论C++时，我们在谈论什么？
-
-https://mp.weixin.qq.com/s/pxyTlQn4wx-N_MaWZc0oAQ
-
-漫谈C++的各种检查
-
-https://mp.weixin.qq.com/s/LchYGGcSbIMVGxO0Uea0RA
-
-深入C++回调
-
-https://blog.csdn.net/hahahacff/article/details/39504699
-
-Java中创建对象的时候代码执行顺序(这个问题C++应该也存在)
-
-https://blog.csdn.net/msq19895070/article/details/7910969
-
-嵌入式程序员应知道的几个基本问题
-
-http://dev.yesky.com/393/3007393.shtml
-
-深入理解C++中的mutable关键字
-
-http://blog.csdn.net/apunix/archive/2008/01/14/2043945.aspx
-
-UNREFERENCED_PARAMETER的作用
+```c++
+class A
+{
+   void function() const; //常成员函数, 它不改变对象的成员变量, 
+                        //也不能调用类中任何非const的成员函数。
+} 
+```

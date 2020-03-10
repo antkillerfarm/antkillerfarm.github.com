@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Ubuntu使用技巧（三）, Mac OS X, WebKit, 阴影面积, 辛普森悖论
+title:  Ubuntu使用技巧（三）, diff&patch, awk&sed&grep, Mac OS X, WebKit, 阴影面积, 辛普森悖论
 category: linux 
 ---
 
@@ -104,17 +104,94 @@ Ubuntu下面关于TFTP的程序，有三套：
 
 (^ω^)
 
-# 常用英语缩写
+# diff&patch
 
-FYI：for your information
+diff/patch这对工具在数学上来说，diff是对2个集合求差，patch是求和。
 
-IFF：if and only if
+```bash
+diff -uNr A B > C #生成A和B的diff文件C,-uNr为最常用的选项
+patch A C #给A打上diff文件得到B
+patch -R B C #B还原为A
+```
 
-eta：estimated time of arrival
+## 给目录应用patch。
 
-w/o：without
+`patch -p1 <1.patch`
 
-N.B.:nota bene 注意,留心
+这种情况适合1.patch中包含对多个文件的修改时。
+
+## 批量应用patch
+
+有的时候，patch不是一个patch文件，而是一个目录中的若干个patch文件。这时可用如下办法：
+
+`find . -name "*.patch">1.txt`
+
+`sort 1.txt | xargs cat >2.patch`
+
+`patch -p1 <2.patch`
+
+# awk&sed&grep
+
+这三个工具是文本处理中用的比较多的工具，各有各的特色，且都支持正则表达式。
+
+一般来说，行处理优先考虑使用sed和grep，列处理优先考虑使用awk。通常情况下，组合使用多个命令，其命令编写的难度小于只使用一个命令。比如sed和grep也可以进行列处理，但语法难度远超awk，反之亦然。
+
+这里不打算列出各个命令的选项，而仅列出使用它们的一些示例：
+
+这里假设我们有一文件名为ab。
+
+## awk
+
+```bash
+awk '{print $1}' ab #显示第一列
+```
+
+参考：
+
+https://mp.weixin.qq.com/s/-mWYn195TBSB1lDlncuYeA
+
+常用命令之awk常用实例
+
+## sed
+
+```bash
+sed '1d' ab #删除第一行 
+sed '$d' ab #删除最后一行
+sed '1,2d' ab #删除第一行到第二行
+sed '2,$d' ab #删除第二行到最后一行
+
+sed -n '1p' ab    #显示第一行 
+sed -n '$p' ab    #显示最后一行
+sed -n '1,2p' ab  #显示第一行到第二行
+sed -n '2,$p' ab  #显示第二行到最后一行
+
+sed -n '/ruby/p' ab #查询包括关键字ruby所在所有行
+sed -n '/\$/p' ab #查询包括关键字$所在所有行，使用反斜线\屏蔽特殊含义
+
+sed -n '/ruby/p' ab | sed 's/ruby/bird/g'    #替换ruby为bird
+sed -n '/ruby/p' ab | sed 's/ruby//g'        #删除ruby
+
+sed -e 's/.$//' mydos.txt > myunix.txt #dos->unix
+```
+
+## grep
+
+```bash
+grep 'ruby' ab #查询包括关键字ruby所在所有行
+grep -nri 'ruby' #n 显示行号，r 子目录搜索，i 忽略大小写
+```
+
+## 综合
+
+```bash
+ip addr show br-lan | grep 'inet ' | awk  '{print $2}' | sed 's/\/.*//g'
+```
+
+参考：
+
+https://mp.weixin.qq.com/s/o1vuL3RrWz9tyUPguZeSWA
+
+简单快捷的数据处理，数据科学需要注意的命令行
 
 # Mac OS X
 
@@ -329,59 +406,3 @@ $$y^2+3y-10=0$$
 $$(y+5)(y-2)=0$$
 
 因为图像开口向下，所以$$2a=-5$$。
-
-# 数学杂谈+
-
-https://mp.weixin.qq.com/s/BwCLtH2mpWLHoXxLlIp5ww
-
-“待我长发及腰”，女生说这话什么意思？
-
-https://www.zhihu.com/question/40167866
-
-学数学的和学物理的，真心惹不起啊。。。
-
-https://mp.weixin.qq.com/s/hTExoHwP8kzUWyRuUL8G_g
-
-宅在家做蛋糕如何“合理把握”烘焙时间？模小数用数学建模告诉你
-
-https://mp.weixin.qq.com/s/_uu1dFzSC257vKS4mPjVfg
-
-父子反目，遭亲爹打压数年，数学第一家族中最憋屈的科学家（Daniel Bernoull）
-
-https://mp.weixin.qq.com/s/1Rmdfv4VTIteEPZV-MVJLA
-
-17世纪的鼠疫与疫区的牛顿
-
-# Linux参考资源+
-
-https://mp.weixin.qq.com/s/snQ3T86usv4rXz0MMQvFfQ
-
-如何回答性能优化的问题，才能打动阿里面试官？
-
-https://www.cnblogs.com/zhouyu629/p/3734494.html
-
-一次心惊肉跳的服务器误删文件的恢复过程
-
-https://mp.weixin.qq.com/s/A8TnhOFLQOhEqphE760yvw
-
-15个相见恨晚的Linux神器，你可能一个都没见过
-
-https://mp.weixin.qq.com/s/oKtu3AA9D3y--xMDQ8EARw
-
-携程一次Dubbo连接超时问题的排查
-
-https://mp.weixin.qq.com/s/4o_cSzWeJdLJMObJBhaZlw
-
-计算机系统中的内存
-
-https://mp.weixin.qq.com/s/OWGi1htNugOv81ZFPinRGw
-
-汇编实现的memcpy和memset
-
-https://www.jianshu.com/p/fad3339e3448
-
-浅析Linux中的零拷贝技术
-
-https://mp.weixin.qq.com/s/6R8UcLLjm9gdWud-eNHztw
-
-中断及其初始化
