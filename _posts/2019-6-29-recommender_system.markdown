@@ -326,6 +326,10 @@ https://zhuanlan.zhihu.com/p/67287992
 
 推荐系统研究中常用的评价指标
 
+https://mp.weixin.qq.com/s/wIMVTZPOc4iGVRrnimbZhg
+
+推荐系统从入门到接着入门
+
 # 推荐算法中的常用排序算法
 
 ## Pointwise方法

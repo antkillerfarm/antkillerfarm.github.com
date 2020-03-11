@@ -195,6 +195,8 @@ http://mirrors.ustc.edu.cn/raspbian/raspbian/
 
 http://www.tightvnc.com/download.php
 
+`sudo apt install tigervnc-viewer`
+
 打开TightVncViewer，在Remote Host中填入Raspberry Pi的IP地址，注意IP后需要加“:1”，否则连接不上。
 
 ### 文件传输

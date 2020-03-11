@@ -282,6 +282,10 @@ https://mp.weixin.qq.com/s/qir6_Kl-7kqDtgHj7e9STw
 
 基于Hugging Face的Transformer库，300行实现命名实体识别
 
+https://zhuanlan.zhihu.com/p/112340282
+
+深度学习方法在中文命名实体识别的应用
+
 ## 文本摘要
 
 https://mp.weixin.qq.com/s/jk1XgnuydrsTg3HvV0CVvw
