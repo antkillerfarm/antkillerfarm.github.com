@@ -401,33 +401,3 @@ https://mp.weixin.qq.com/s/TnG2iYwQpJ4ugdWf-ORP-Q
 https://mp.weixin.qq.com/s/ONmwKV6VyYVt2S6lOBrE5g
 
 神经机器阅读理解：方法与趋势，附39页最新综述下载
-
-## 聊天机器人
-
-http://www.shareditor.com/bloglistbytag/?tagname=%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%81%9A%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA
-
-实战课程：自己动手做聊天机器人
-
-https://mp.weixin.qq.com/s/ZL6T-8M-KfA5wSHcao_PDw
-
-152页基于深度学习的聊天机器人全面总结
-
-https://mp.weixin.qq.com/s/mekBRtHcXqbMJiN1CgbgQg
-
-聊天机器人是如何工作的：基于深度学习的对话系统教程 152页PPT
-
-https://mp.weixin.qq.com/s/LoIrR-0roO1FO7BRuiVu9A
-
-能干活的聊天机器人-对话系统概述
-
-https://mp.weixin.qq.com/s/8KxHKWwhKAsi8c3kvlm6sw
-
-能闲聊的端到端生成型聊天机器人背后都有哪些技术？
-
-https://mp.weixin.qq.com/s/Vh3bCO-ZYoBJLqCTPCpggg
-
-论如何为聊天机器人定义一个固定的人格
-
-https://mp.weixin.qq.com/s/sM72a52wz6eXSkcgnd4JJw
-
-人类与机器人，如何能像朋友一样愉快聊天？

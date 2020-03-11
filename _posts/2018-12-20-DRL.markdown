@@ -226,7 +226,11 @@ FaceBook280页PPT解决DeepRL的"探索-利用(Exploration-Exploitation)"难题
 
 https://mp.weixin.qq.com/s/R2FTKZvebR0gbxM8h60oog
 
-《强化学习—使用 Open AI、TensorFlow和Keras实现》174页pdf
+《强化学习—使用Open AI、TensorFlow和Keras实现》174页pdf
+
+https://mp.weixin.qq.com/s/mZSOmlHRrowPcTKjnlB4wA
+
+深度强化学习实战，351页pdf，Deep Reinforcement Learning
 
 # 论文
 

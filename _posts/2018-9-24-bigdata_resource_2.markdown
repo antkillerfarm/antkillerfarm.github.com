@@ -208,150 +208,170 @@ https://mp.weixin.qq.com/s/Ue4toNlLD0-zAstVJP2ynA
 
 # 新冠肺炎
 
-## 病毒（续）
+## 历史（续）
 
-https://mp.weixin.qq.com/s/bfhS3Er3NXjfUrKZbju33Q
+在这场争论中，最早推广Pfeifer氏菌疫苗的William Park展示了自我纠错的勇气，与George McCoy一起，成为否定细菌疫苗发声最多的专家。
 
-病毒与人类的战争（上）：百万年的战争
+100年前的条件和科学水平与当前无法相比，但以William Park为代表的美国科学家所展示的勇于纠错、实事求是的精神永远不会过时。
 
-https://mp.weixin.qq.com/s/Bx7AZrL168OkygBbg0qflQ
+>William Hallock Park，1863～1939，美国医学家。Columbia University博士（1886）。长期供职于卫生部纽约实验室（也就是现在的William Park实验室）。
 
-病毒与人类的战争（下）： 人类守望者
+https://mp.weixin.qq.com/s/dhNuZo0yTI1CR8oH9LYlKA
 
-https://mp.weixin.qq.com/s/9iWT9v4msuHgzN_92Ptf7A
-
-关于新冠病毒，人们最关心的七个科学问题
-
-https://mp.weixin.qq.com/s/ruMiimYqAbsVwU-mnyq8oQ
-
-病毒从动物转移到人类身上，会发生什么？
-
-https://mp.weixin.qq.com/s/-xi04Of1VSnACMIG0B8jEQ
-
-小小的抗体，如何承担起保护我们的重任？
-
-## 蝙蝠
-
-https://mp.weixin.qq.com/s/QN2GQ6T9Q2cwT_CN6aX_YQ
-
-你所不知道的蝙蝠——常态“发烧”，体内如“毒蛊”
-
-https://mp.weixin.qq.com/s/Vi-PRPhFEnBEnNxGNzA6VA
-
-蝙蝠是极为有益的动物，然而也是最容易被误解的动物之一
-
-## 科研
-
-https://mp.weixin.qq.com/s/NI2OtzUsRXUMoqfI11YV_A
-
-详解医学顶刊《柳叶刀》最新发表新型冠状病毒研究论文
-
-https://zhuanlan.zhihu.com/p/77352210
-
-“非典”真的是吃野味吃出来的吗？
-
-https://mp.weixin.qq.com/s/4pmzP2s9YZPR0yAX0XrjsQ
-
-流感病毒在衣服袖子和电梯按钮上能活多久？
-
-https://mp.weixin.qq.com/s/OaWBlQVr3DZ6HOMQFs9J3Q
-
-新型冠状病毒是这样被发现的……他们惊呼“这跟鼠疫一个级别！”
-
-https://view.inews.qq.com/a/20200130A08EVN00
-
-控制新发传染病，是以科研为主，还是以人民健康为主？公卫专家评武汉疫情
-
-https://mp.weixin.qq.com/s/hG0AO43AicEN1o4GGg463w
-
-快速检测新型冠状病毒 是怎么做到的？
-
-https://mp.weixin.qq.com/s/aawHwJ8IIuHPE7Dc9yn1Ow
-
-从试剂盒到实验室 盘点一下影响确诊人数的客观因素
-
-https://mp.weixin.qq.com/s/zbqdndZTt4B0-v3KfIm5uA
-
-既没新样本，也没实验，如何猜到新冠病毒“喜欢”感染哪些细胞？
-
-https://mp.weixin.qq.com/s/T4GQWgnazMyljsa3Jg0E8Q
-
-一文分清P1、P2、P3、P4实验室四兄弟
-
-https://mp.weixin.qq.com/s/vWpQLlfHFcAPleuuEvJdhw
-
-中国人更易感染新冠肺炎吗？
-
-https://mp.weixin.qq.com/s/zu009F4bS_fcSwYEPdFb-g
-
-全球首次用抗体检测破解新冠传播链条，痊愈病人被证明是新加坡疫情传播者
-
-https://mp.weixin.qq.com/s/jm9vpHxbmpODFPi5phDW1g
-
-这款硬核抗疫游戏火了，20万玩家在线科研拯救世界，美国名校出品，Nature曾点名表扬
+以史为鉴：回顾1918年美国流感疫苗开发的闹剧
 
 ----
 
-伤寒玛丽”（Typhoid Mary），本名叫玛丽·梅伦（Mary Mallon，1869年9月23日——1938年11月11日），生于爱尔兰，15岁时移民美国。起初，她给人当女佣。后来，她发现自己很有烹调才能，于是转行当了厨师，每月能赚到比做女佣高出很多的薪水。玛丽虽然身体一直健康，却携带伤寒杆菌。后来玛丽相继传染多人，最终被隔离在纽约附近的北兄弟岛（North Brother Island）上的传染病房。
+pandemics：世界性流行病
 
-https://www.zhihu.com/question/368287285/answer/989275113
+epidemics：流行病
 
-如何看待女子从武汉回河南后至今无症状，其5名亲人患新型肺炎？
-
-----
-
-双黄连由金银花（双花）、黄芩和连翘三味中药配伍而成。它的历史并不算悠久，但在现有的网络信息中，也无法准确地指出究竟是何人、何时开发出这个如今家喻户晓的方子。有文献可考的历史表明，双黄连方剂产生于文革期间的东北地区——再准确一点，黑龙江哈尔滨，并且与现在的哈药集团有着千丝万缕的联系。
-
-https://mp.weixin.qq.com/s/7YscNLoSsuYhf3XQ5qz36w
-
-双黄连热销背后，那些你不知道的事
+quarantine源自拉丁语里的“四十”。由来是当年威尼斯人在瘟疫的时候，让外来船只停40天再下船的操作。
 
 ----
 
-抗病毒药一般以vir结尾，例如Remdesivir。所以药品的中文名一般就是XXX韦。
+1619年，被后来人称为“16世纪死神”的法国医生查尔斯·德洛姆（Charles de Lorme）发明了一种诡异的银制面具，外形设计呈鸟嘴状，由皮革包裹，面具的眼睛部分用玻璃嵌入，至于最关键的过滤系统，则用棉花、樟脑、玫瑰等填充物构成，置于鸟嘴处，一定程度上阻隔了空气中的病菌。
 
-https://mp.weixin.qq.com/s/GAAeUD5ZDROltfxcoSFaeA
+![](/images/img3/Doctor_Schnabel.jpg)
 
-期待救急，你了解“老药新用”吗？
+## SARS
 
-## 知名患者
+https://mp.weixin.qq.com/s/f5YPi3JuGMiB-FwMZK8F1g
 
-一个健康的社会不应该只有一个声音--By 李文亮
+非典十三年祭：不说，并不代表遗忘
 
-https://mp.weixin.qq.com/s/e3MaPaBZrxwqWtykB9f_JQ
+https://news.yorkbbs.ca/2030923
 
-86岁院士因感染冠状病毒去世，华中科技大学已痛失4位知名学者
+应对SARS疫情：多伦多的教训
+
+![](/images/img3/sars.jpg)
+
+https://mp.weixin.qq.com/s/Iu5y3AIgp7rgswjH89txJw
+
+哪些城市的新型肺炎疫情可能被低估：人流迁徙大数据+SARS传播路径
+
+https://mp.weixin.qq.com/s/cvIZzSBEg50FKqjf2x7fAg
+
+“小汤山”隔离模式，对武汉肺炎有何启发？
+
+https://mp.weixin.qq.com/s/ME6mAC0RgYsTLrHIz2kJSA
+
+被遗忘的案例：淘大花园往事与现实防控的意义
+
+https://mp.weixin.qq.com/s/kRp7Uw77BWSjFB5QOrydSg
+
+非典，已过去十七年：那些活着的后遗症患者
+
+## 国内疫情
+
+https://github.com/wuhan2020/wuhan2020
+
+新型冠状病毒防疫信息收集平台
+
+https://github.com/2019ncovmemory/nCovMemory
+
+2020新冠肺炎记忆
+
+https://mp.weixin.qq.com/s/9291PPNwxz3KoF-7klwMrA
+
+新型肺炎严重程度升级！已明确会人传人......
+
+https://mp.weixin.qq.com/s/S6oKrc_CbO7ywWiRYiqbfQ
+
+武汉肺炎重症患者：一床难求
+
+https://mp.weixin.qq.com/s/9Lgl9h44gO9-XkPUrtfxRQ
+
+武汉肺炎一线医生口述：大爆发期或将到来
+
+http://www.eeo.com.cn/2020/0206/375757.shtml
+
+万家宴后的百步亭
+
+![](/images/img3/2019-nCoV.jpg)
+
+https://view.inews.qq.com/a/20200207A0JG1Z00
+
+武汉时间：从专家组抵达到封城的谜之20天
+
+https://mp.weixin.qq.com/s/OElG_rIrFC89INpJlELEdQ
+
+雷神山背后：基建狂魔70年
+
+https://mp.weixin.qq.com/s/kfe-7hP8c_HJaRBpFAf9fA
+
+疫情会让更多人成为“生存狂”吗？
+
+https://mp.weixin.qq.com/s/CaFAkn7GuhRYlcIvOqueww
+
+武汉封城后的有些秘密，只有外卖小哥知道
+
+https://mp.weixin.qq.com/s/U7nJSc9wODyxrvYjiTYrXA
+
+CDC最新7万病例统计报告：首次描绘流行曲线、整体病死率2.3%，湖北比省外高7倍
+
+https://mp.weixin.qq.com/s/VQGawbJ-21tus7UevcJ5Hw
+
+世卫考察组代表：要认识到武汉人民的贡献，世界亏欠你们！
+
+https://zhuanlan.zhihu.com/p/103836857
+
+五年前的冠状病毒模组让《瘟疫公司》再度翻红，创作者是预言家？
+
+https://mp.weixin.qq.com/s/mgMnLnVJzkY0EMHUTtzLbQ
+
+他们下山来摘桃子了（安康市中心医院抗疫补助事件）
 
 ----
 
-根据伊朗宪法，总统可以在无需议会批准的情况下任命副总统，人数可达十多位，每位副总统一般负责一个与总统事务有关的组织机构。除第一副总统外，副总统的重要性无法与负责具体行政事务的内阁部长相比。
+盛唐时，日本遣人来中国学习佛法。长屋（日本的相国）赠送中国大德的上千件袈裟，边缘都绣着一首偈子：
 
-http://news.ifeng.com/c/7uRKv3JARr9
+山川异域，风月同天。寄诸佛子，共结来缘。
 
-伊朗女副总统感染新冠病毒，40年前她在美国家喻户晓
-
-## 武汉病毒所
-
-1956年，著名病毒学家高尚荫院士、著名微生物学家陈华癸院士和简浩然教授等老一辈科学家创建了武汉病毒所。
+这也是鉴真法师决心东渡日本传戒的缘由之一。
 
 ----
 
-石正丽，女，1964年生。现任中国科学院武汉病毒研究所研究员。人称“蝙蝠女侠”。美国微生物科学院院士。
+岂曰无衣？与子同袍。王于兴师，修我戈矛。与子同仇。
 
-https://mp.weixin.qq.com/s/-79fGDSCN0Dsaq40btPO3w
+岂曰无衣？与子同泽。王于兴师，修我矛戟。与子偕作。
 
-崔永元：科学家用“生命担保”，靠谱吗？
+岂曰无衣？与子同裳。王于兴师，修我甲兵。与子偕行。
 
-----
-
-https://mp.weixin.qq.com/s/MJamXXj44e-fxaP9WRyhgw
-
-武汉病毒所申请瑞得西韦用途专利能否获得授权？有无价值？
+——《诗经·秦风·无衣》
 
 ----
 
-王延轶出生于1981年，现任中国科学院武汉病毒研究所所长，分子免疫学学科组组长，致公党武汉市副主任委员。
+道不远人，人无异国。
 
-http://www.sohu.com/a/370615513_105067
+——新罗 崔致远
 
-网传饶毅致信舒红兵：您夫人不适合领导武汉病毒所
+----
+
+北京的和睦家是不错的综合性医院，先前也被列入发热门诊医疗机构，但是之后不久以“升级改造”为由关闭发热门诊。
+
+https://www.kunlunce.com/ssjj/guojipinglun/2020-02-11/140446.html
+
+李玲：疫情演化至今，是制度不足还是人的问题？
+
+## 国外疫情
+
+https://mp.weixin.qq.com/s/lv-C9MDiW0SwNszDy54i0g
+
+突发！5名英国人间接感染新冠病毒，不在同一时空也躺枪！
+
+https://mp.weixin.qq.com/s/Qm48nT1TFSuY-HKJS7tbhg
+
+174人感染：日本豪华邮轮海上隔离的一周
+
+https://mp.weixin.qq.com/s/8_ZtLuYwJzh_6J9NAtJg8Q
+
+迄今为止无与伦比的神操作-钻石公主号乘客下船，就地解散
+
+https://www.zhihu.com/question/370846703
+
+新加坡目前的新型冠状病毒肺炎疫情怎么样了？采取了哪些措施？
+
+https://mp.weixin.qq.com/s/SVlILAZX5PGGkuZrqKGJgA
+
+看剧情发展，可能轮到我们给日本捐口罩了

@@ -176,6 +176,14 @@ https://mp.weixin.qq.com/s/TepgHukJ-Gx63pTjMH9R2g
 
 2020年，我终于决定入门GCN
 
+https://mp.weixin.qq.com/s/-QEwQgZ0t33r92W6kcqSIw
+
+图神经网络表达能力的研究综述，41页pdf
+
+https://mp.weixin.qq.com/s/a_svzOS1Z2a98gIzBBk1dw
+
+从文本分类来看图卷积神经网络
+
 # 深度推荐系统+
 
 https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w

@@ -94,6 +94,10 @@ https://mp.weixin.qq.com/s/wutcKURaYvBGcHvLSayKAw
 
 机器阅读理解的任务与模式研究，61页pdf，多伦多约克大学
 
+https://mp.weixin.qq.com/s/jjio8GUiinM2No5q568ImQ
+
+深度学习自然语言处理概述，116页ppt，Jiri Materna
+
 ## 书籍
 
 http://ccl.pku.edu.cn/alcourse/nlp/LectureNotes/Natural%20Language%20Processing%20with%20Python.pdf

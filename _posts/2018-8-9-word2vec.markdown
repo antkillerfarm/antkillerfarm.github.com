@@ -349,6 +349,10 @@ https://mp.weixin.qq.com/s/CS_A4207NxYczhjrJbF9IQ
 
 Cypher必知必会速查表三
 
+https://mp.weixin.qq.com/s/vEnjavJ2tObKjUDuFyuRbg
+
+Cypher必知必会速查表四
+
 ## RedisGraph
 
 RedisGraph是Redis推出的基于Redis的图数据库。

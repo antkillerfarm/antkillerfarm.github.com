@@ -6,7 +6,35 @@ category: resource
 
 # NLP参考资源
 
-## 聊天机器人（续）
+## 聊天机器人
+
+http://www.shareditor.com/bloglistbytag/?tagname=%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%81%9A%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA
+
+实战课程：自己动手做聊天机器人
+
+https://mp.weixin.qq.com/s/ZL6T-8M-KfA5wSHcao_PDw
+
+152页基于深度学习的聊天机器人全面总结
+
+https://mp.weixin.qq.com/s/mekBRtHcXqbMJiN1CgbgQg
+
+聊天机器人是如何工作的：基于深度学习的对话系统教程 152页PPT
+
+https://mp.weixin.qq.com/s/LoIrR-0roO1FO7BRuiVu9A
+
+能干活的聊天机器人-对话系统概述
+
+https://mp.weixin.qq.com/s/8KxHKWwhKAsi8c3kvlm6sw
+
+能闲聊的端到端生成型聊天机器人背后都有哪些技术？
+
+https://mp.weixin.qq.com/s/Vh3bCO-ZYoBJLqCTPCpggg
+
+论如何为聊天机器人定义一个固定的人格
+
+https://mp.weixin.qq.com/s/sM72a52wz6eXSkcgnd4JJw
+
+人类与机器人，如何能像朋友一样愉快聊天？
 
 https://mp.weixin.qq.com/s/vt25TVX-tcurtAC63dYYNA
 
@@ -363,35 +391,3 @@ https://mp.weixin.qq.com/s/EmACAfXwJnkUh3jYNWA-Dg
 https://mp.weixin.qq.com/s/21bhPa4ECNFmUcF0GOQSkw
 
 从字符级的语言建模开始，了解语言模型与序列建模的基本概念
-
-https://mp.weixin.qq.com/s/7QaMPqYyoglm8GiJ13LVtA
-
-在NLP中深度学习模型何时需要树形结构？
-
-https://mp.weixin.qq.com/s/ycwTgOAZ8j-PiOZOqKzd7A
-
-RNN作为识别器，判定加权语言一致性
-
-https://mp.weixin.qq.com/s/nL5T3j09Elp6uziNmePIMg
-
-猿辅导MSMARCO冠军团队：用MARS模型解决机器阅读任务
-
-https://mp.weixin.qq.com/s/W-oIQRGuOHTgQtQY1jvpuA
-
-简述表征句子的3种无监督深度学习方法
-
-https://mp.weixin.qq.com/s/vLw-krU2vorr5ZUAPI7VMA
-
-李航：自然语言的现状和发展
-
-https://mp.weixin.qq.com/s/CQDYzRvFqJHPVXDu94pgLA
-
-思必驰和上交大提出口语语义理解新方法：基于对抗多任务学习的半监督训练
-
-https://mp.weixin.qq.com/s/HJDkNw_Fuu1QKEpyHY1Q-w
-
-语义分析的方法简述之文本基本处理
-
-https://mp.weixin.qq.com/s/v8azzXP1Kl5jnRCFpVdBGg
-
-语义分析的方法简述二

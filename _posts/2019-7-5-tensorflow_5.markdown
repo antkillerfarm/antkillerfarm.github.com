@@ -314,3 +314,11 @@ https://mp.weixin.qq.com/s/YkABleB5hlHt_Zn6M6DgBw
 https://mp.weixin.qq.com/s/WOXSSA5srCqaNPO-j-Ogqw
 
 优酷：如何让视频算法为质量服务？
+
+https://mp.weixin.qq.com/s/ewkaYPQlFZ4EvVM8e8HK-g
+
+今日头条、抖音推荐算法原理全文详解！
+
+https://mp.weixin.qq.com/s/NVQPv5ua9kxw1MK8UVQcuQ
+
+广告算法在阿里文娱用户增长中的实践
