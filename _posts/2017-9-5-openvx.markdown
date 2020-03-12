@@ -310,6 +310,12 @@ NVIDIA Deep Learning Accelerator是一个开源的用于inference的芯片方案
 
 http://nvdla.org/
 
+参考：
+
+https://mp.weixin.qq.com/s/aFmr6WKhZ3E-PsF6-uJvJg
+
+一图理清Nvidia AI软件栈
+
 ## NVIDIA DALI
 
 NVIDIA DALI是一个GPU加速的数据增强和图像加载库，为优化深度学习框架数据pipeline而设计，而其中的NVIDIA nvJPEG是用于JPEG解码的高性能GPU加速库。

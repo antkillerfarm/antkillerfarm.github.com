@@ -322,3 +322,7 @@ https://mp.weixin.qq.com/s/ewkaYPQlFZ4EvVM8e8HK-g
 https://mp.weixin.qq.com/s/NVQPv5ua9kxw1MK8UVQcuQ
 
 广告算法在阿里文娱用户增长中的实践
+
+https://mp.weixin.qq.com/s/QxQzGtsBUFYknvl4uOdMvw
+
+深度学习在省钱快报推荐排序中的应用与实践

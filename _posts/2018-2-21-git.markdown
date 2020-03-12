@@ -447,6 +447,10 @@ https://mp.weixin.qq.com/s/6R8UcLLjm9gdWud-eNHztw
 
 中断及其初始化
 
+https://mp.weixin.qq.com/s/qwouMWc4CFtqG_jra4xbIg
+
+IDT及中断处理的实现
+
 https://mp.weixin.qq.com/s/pRsXWAv7wgYcN_jlzcA2YA
 
 内存都没了，还能运行程序？
