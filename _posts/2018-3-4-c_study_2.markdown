@@ -222,11 +222,38 @@ std::unique_ptr<std::FILE, decltype(&close_file)> fp(std::fopen("demo.txt", "r")
 
 一般来说，`make_XXX`在标准库中，通常都带有new对象和相关控制结构的操作，除了上述的`make_unique`之外，类似的还有`make_pair`等。
 
+----
+
+`shared_ptr`既然号称共享，那自然有一定的共享规则在：
+
+```c++
+shared_ptr<int> sp1(new int(10));
+shared_ptr<int> sp2(sp1), sp3;
+sp3 = sp1;
+//一个典型的错误用法
+shared_ptr<int> sp4(sp1.get()); 
+cout << sp1.use_count() << " " << sp2.use_count() << " " 
+<< sp3.use_count() << " " << sp4.use_count() << endl;
+//输出 3 3 3 1
+```
+
+sp1,sp2,sp3是相互关联的共享指针，共同控制所指内存的生存期，sp4虽然指向同样的内存，却是与sp1,sp2,sp3独立的，sp4按自己的引用计数来关联内存的释放。
+
+----
+
 参考：
 
 https://mp.weixin.qq.com/s/32aeGOPaySjTmyKcjFKgYA
 
 窥见C++11智能指针
+
+https://www.cnblogs.com/wangkeqin/p/9351191.html
+
+C++内存管理之shared_ptr
+
+https://blog.csdn.net/River_Lethe/article/details/78734879
+
+shared_ptr的使用和陷阱
 
 # decltype
 
@@ -248,32 +275,3 @@ int main(){
 https://www.cnblogs.com/npbool/p/3433360.html
 
 C++11初探：类型推导，auto和decltype
-
-# 类型转换
-
-**static_cast**：基本等同于C语言的强制类型转换，只有很小的差异。
-
-**dynamic_cast**：主要用于类层次间的上行转换和下行转换。
-
-**const_cast**：用于修改类型的const或volatile属性。
-
-**reinterpret_cast**：它可以把一个指针转换成一个整数，也可以把一个整数转换成一个指针。
-
-上面4个算是C++的基本类型变换。除此之外还有一些变种。
-
-- 和shared_ptr配套的类型变换：
-
-**static_pointer_cast**：Static cast of shared_ptr
-
-**dynamic_pointer_cast**：Dynamic cast of shared_ptr
-
-**const_pointer_cast**：Const cast of shared_ptr
-
-- dynamic_cast的改进版（主要是增加了一些断言或者异常处理）：
-
-```cpp
-template <class Derived, class Base>
-inline Derived polymorphic_cast(Base* x);
-// Throws: std::bad_cast if ( dynamic_cast<Derived>(x) == 0 )
-// Returns: dynamic_cast<Derived>(x)
-```

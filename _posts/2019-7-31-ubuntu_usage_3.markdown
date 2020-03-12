@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Ubuntu使用技巧（三）, diff&patch, awk&sed&grep, Mac OS X, WebKit, 阴影面积, 辛普森悖论
+title:  Ubuntu使用技巧（三）, diff&patch, awk&sed&grep, Mac OS X, WebKit, 辛普森悖论
 category: linux 
 ---
 
@@ -21,6 +21,71 @@ category: linux
 LibreOffice：6.0
 
 Emacs：25.2
+
+# VNC
+
+## vino & remmina
+
+ubuntu不同于一般的发行版，它对桌面做了很大的改动，因此通常的VNC手段对其并不好使。
+
+但其实它已经自带了相关的应用：
+
+- 服务端：vino
+
+设置->共享->屏幕共享，设置密码并打开。
+
+`ss -lnt`查看5900端口是否开启。
+
+设置防火墙规则：
+
+`sudo ufw allow from any to any port 5900 proto tcp`
+
+- 客户端：remmina
+
+该方法可将物理桌面共享给VNC，但是无法创建新的桌面。
+
+参考：
+
+https://linuxconfig.org/ubuntu-remote-desktop-18-04-bionic-beaver-linux
+
+Ubuntu Remote Desktop - 18.04 Bionic Beaver Linux
+
+## xfce4
+
+如果非要使用传统的vncserver的话，只能选择其他桌面，例如xfce4。
+
+`sudo apt install xfce4 xfce4-goodies vnc4server`
+
+修改`~/.vnc/xstartup`：
+
+```bash
+#!/bin/sh
+unset SESSION_MANAGER
+unset DBUS_SESSION_BUS_ADDRESS
+
+[ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup
+[ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
+xsetroot -solid grey
+startxfce4 &
+```
+
+启动服务：
+
+
+```bash
+vnc4server -kill :2
+vnc4server -geometry 1920x1080 :2
+```
+
+参考：
+
+https://www.jianshu.com/p/f58fe5cdeb5f
+
+Ubuntu 18.04搭建VNC服务器
+
+https://linuxconfig.org/ubuntu-remote-desktop-18-04-bionic-beaver-linux
+
+VNC server on Ubuntu 18.04 Bionic Beaver Linux
 
 # 桌面主题
 
@@ -256,66 +321,6 @@ Lua程序逆向之Luac文件格式分析
 http://lua-users.org/wiki/GraphicalUserInterfaceToolkits
 
 Lua的GUI工具列表
-
-# 阴影面积
-
-![](/images/img3/p0.png)
-
-题如上图，已知正方形边长为10，求阴影面积。
-
-解：
-
-旋转图形建立坐标系如下图：
-
-![](/images/img3/p1.png)
-
-阴影部分上下曲边公式如下：
-
-$$\begin{cases}
-x^2+y^2=5^2 \\
-x^2+(y+5\sqrt{2})^2=10^2
-\end{cases}$$
-
-求解交点坐标：
-
-$$(y+5\sqrt{2})^2-y^2=75 \to 10\sqrt{2}y+50=75$$
-
-$$\begin{cases}
-y=\frac{5\sqrt{2}}{4} \\
-x=\sqrt{\frac{175}{8}}
-\end{cases}$$
-
-用积分法求解阴影面积：
-
-$$\begin{align}
-\frac{S}{4} & =\int_0^{\sqrt{\frac{175}{8}}}\sqrt{(5^2-x^2)}-(\sqrt{(10^2-x^2)}-5\sqrt{2})\mathrm{d}x \\
-& = \int_0^{\sqrt{\frac{175}{8}}}\sqrt{(5^2-x^2)}\mathrm{d}x - \int_0^{\sqrt{\frac{175}{8}}}\sqrt{(10^2-x^2)}\mathrm{d}x + 5\sqrt{2} \cdot \sqrt{\frac{175}{8}} 
-\end{align}$$
-
-查常用积分表，可得：
-
-$$\int \sqrt{a^2 - x^2}\mathrm{d}{x} = \frac12 \left(x\sqrt{a^2 - x^2} + a^2\arcsin\frac xa\right) + C$$
-
-$$\begin{align}
-\frac{S}{4} & =\left[\frac{25}{16}\sqrt{7} + \frac{25}{2}\arcsin(\frac{\sqrt{\frac{7}{2}}}{2})\right] - \left[\frac{125}{16}\sqrt{7} + 50\arcsin(\frac{\sqrt{\frac{7}{2}}}{4})\right] + \frac{25}{2}\sqrt{7} \\
-& = \frac{25}{4}\sqrt{7} + \frac{25}{2}\arcsin(\frac{\sqrt{\frac{7}{2}}}{2}) - 50\arcsin(\frac{\sqrt{\frac{7}{2}}}{4})
-\end{align}$$
-
-$$S=25\sqrt{7} + 50\arcsin(\frac{\sqrt{\frac{7}{2}}}{2}) - 200\arcsin(\frac{\sqrt{\frac{7}{2}}}{4})\approx 29.27625$$
-
-参考：
-
-https://www.zhihu.com/question/60697114
-
-网传无锡小升初题，求阴影面积
-
-http://wuli.wiki//online/ITable.html
-
-积分表
-
-http://wuli.wiki//online/
-
-小时物理百科
 
 # 辛普森悖论
 

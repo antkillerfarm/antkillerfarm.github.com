@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blog维护日志
+title: Blog维护日志, 阴影面积
 category: essay 
 ---
 
@@ -206,6 +206,66 @@ https://mp.weixin.qq.com/s/jUKTsJdlBLPWbiBa6TlPPA
 
 基于模型的强化学习—LQR与iLQR
 
+# 阴影面积
+
+![](/images/img3/p0.png)
+
+题如上图，已知正方形边长为10，求阴影面积。
+
+解：
+
+旋转图形建立坐标系如下图：
+
+![](/images/img3/p1.png)
+
+阴影部分上下曲边公式如下：
+
+$$\begin{cases}
+x^2+y^2=5^2 \\
+x^2+(y+5\sqrt{2})^2=10^2
+\end{cases}$$
+
+求解交点坐标：
+
+$$(y+5\sqrt{2})^2-y^2=75 \to 10\sqrt{2}y+50=75$$
+
+$$\begin{cases}
+y=\frac{5\sqrt{2}}{4} \\
+x=\sqrt{\frac{175}{8}}
+\end{cases}$$
+
+用积分法求解阴影面积：
+
+$$\begin{align}
+\frac{S}{4} & =\int_0^{\sqrt{\frac{175}{8}}}\sqrt{(5^2-x^2)}-(\sqrt{(10^2-x^2)}-5\sqrt{2})\mathrm{d}x \\
+& = \int_0^{\sqrt{\frac{175}{8}}}\sqrt{(5^2-x^2)}\mathrm{d}x - \int_0^{\sqrt{\frac{175}{8}}}\sqrt{(10^2-x^2)}\mathrm{d}x + 5\sqrt{2} \cdot \sqrt{\frac{175}{8}} 
+\end{align}$$
+
+查常用积分表，可得：
+
+$$\int \sqrt{a^2 - x^2}\mathrm{d}{x} = \frac12 \left(x\sqrt{a^2 - x^2} + a^2\arcsin\frac xa\right) + C$$
+
+$$\begin{align}
+\frac{S}{4} & =\left[\frac{25}{16}\sqrt{7} + \frac{25}{2}\arcsin(\frac{\sqrt{\frac{7}{2}}}{2})\right] - \left[\frac{125}{16}\sqrt{7} + 50\arcsin(\frac{\sqrt{\frac{7}{2}}}{4})\right] + \frac{25}{2}\sqrt{7} \\
+& = \frac{25}{4}\sqrt{7} + \frac{25}{2}\arcsin(\frac{\sqrt{\frac{7}{2}}}{2}) - 50\arcsin(\frac{\sqrt{\frac{7}{2}}}{4})
+\end{align}$$
+
+$$S=25\sqrt{7} + 50\arcsin(\frac{\sqrt{\frac{7}{2}}}{2}) - 200\arcsin(\frac{\sqrt{\frac{7}{2}}}{4})\approx 29.27625$$
+
+参考：
+
+https://www.zhihu.com/question/60697114
+
+网传无锡小升初题，求阴影面积
+
+http://wuli.wiki//online/ITable.html
+
+积分表
+
+http://wuli.wiki//online/
+
+小时物理百科
+
 # 电子科技史+
 
 https://zhuanlan.zhihu.com/p/54493905
@@ -291,41 +351,3 @@ https://mp.weixin.qq.com/s/_uu1dFzSC257vKS4mPjVfg
 https://mp.weixin.qq.com/s/1Rmdfv4VTIteEPZV-MVJLA
 
 17世纪的鼠疫与疫区的牛顿
-
-# Linux参考资源+
-
-https://mp.weixin.qq.com/s/snQ3T86usv4rXz0MMQvFfQ
-
-如何回答性能优化的问题，才能打动阿里面试官？
-
-https://www.cnblogs.com/zhouyu629/p/3734494.html
-
-一次心惊肉跳的服务器误删文件的恢复过程
-
-https://mp.weixin.qq.com/s/A8TnhOFLQOhEqphE760yvw
-
-15个相见恨晚的Linux神器，你可能一个都没见过
-
-https://mp.weixin.qq.com/s/oKtu3AA9D3y--xMDQ8EARw
-
-携程一次Dubbo连接超时问题的排查
-
-https://mp.weixin.qq.com/s/4o_cSzWeJdLJMObJBhaZlw
-
-计算机系统中的内存
-
-https://mp.weixin.qq.com/s/OWGi1htNugOv81ZFPinRGw
-
-汇编实现的memcpy和memset
-
-https://www.jianshu.com/p/fad3339e3448
-
-浅析Linux中的零拷贝技术
-
-https://mp.weixin.qq.com/s/6R8UcLLjm9gdWud-eNHztw
-
-中断及其初始化
-
-https://mp.weixin.qq.com/s/pRsXWAv7wgYcN_jlzcA2YA
-
-内存都没了，还能运行程序？
