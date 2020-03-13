@@ -14,6 +14,8 @@ https://learngitbranching.js.org
 
 ## git常用命令
 
+![](/images/img3/git.png)
+
 0.GUI工具
 
 - gitk：主要用于展示分支树。

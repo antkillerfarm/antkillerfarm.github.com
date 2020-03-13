@@ -294,6 +294,10 @@ https://zhuanlan.zhihu.com/p/112103579
 
 深度学习在三维环境重建中的应用
 
+https://zhuanlan.zhihu.com/p/112836340
+
+谷歌最新论文：从图像中进行3-D目标检测
+
 # AutoDL+
 
 https://mp.weixin.qq.com/s/Nmkcy2nBczUccwIdMJiH_A

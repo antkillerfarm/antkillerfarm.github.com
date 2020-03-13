@@ -357,3 +357,7 @@ https://zhuanlan.zhihu.com/p/72561165
 https://mp.weixin.qq.com/s/7hCtECn_mKWyTJpTZmmLtQ
 
 基于深度学习目标姿态估计的论文一览（2017-2020）
+
+https://zhuanlan.zhihu.com/p/112836018
+
+基于深度学习的人体姿态估计介绍

@@ -290,6 +290,8 @@ http://www.eeo.com.cn/2020/0206/375757.shtml
 
 ![](/images/img3/2019-nCoV.jpg)
 
+![](/images/img3/covid_19.jpg)
+
 https://view.inews.qq.com/a/20200207A0JG1Z00
 
 武汉时间：从专家组抵达到封城的谜之20天
