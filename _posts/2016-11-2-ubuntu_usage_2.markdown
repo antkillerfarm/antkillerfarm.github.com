@@ -333,7 +333,9 @@ https://www.freeplane.org/wiki/index.php/Home
 
 # Chrome
 
-`sudo wget http://www.linuxidc.com/files/repo/google-chrome.list -P /etc/apt/sources.list.d/`
+/etc/apt/sources.list.d/google-chrome.list：
+
+`deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main`
 
 `wget -q -O - https://dl.google.com/linux/linux_signing_key.pub  | sudo apt-key add -`
 

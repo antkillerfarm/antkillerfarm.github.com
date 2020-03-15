@@ -144,6 +144,10 @@ https://mp.weixin.qq.com/s/q252Lc0Wl5uNc8-tw9nlgw
 
 这是一项有用的特性，因为这样只需要$$O(n \times M \times N)+O(m \times M \times N)$$次运算，而直接使用二维高斯滤波的计算量为$$O(m \times n \times M \times N)$$。其中m,n,M,N分别是kernel和图像的长、宽。
 
+# 高斯积分
+
+$$\int_{-\infty}^\infty e^{-x^2}\mathrm{d}x=\sqrt{\pi}$$
+
 # 中值滤波（Median filter）
 
 中值滤波是一种典型的非线性滤波技术，对于斑点噪声（speckle noise）和椒盐噪声（salt-and-pepper noise）来说尤其有用，对滤除脉冲干扰及图像扫描噪声非常有效，也常用于保护边缘信息。
