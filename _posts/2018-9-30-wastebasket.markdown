@@ -308,6 +308,10 @@ https://mp.weixin.qq.com/s/Rd-rOSV14sNYg0ZXsPdzuQ
 
 60年前构想的未来世界，我们已经实现了50%（《小灵通漫游未来》）
 
+https://mp.weixin.qq.com/s/epb4AIyg8_OqjAgGEbB9Ag
+
+31年前的北美大停电 背后的神秘力量是谁？（太阳风暴）
+
 ## 空气动力学
 
 https://mp.weixin.qq.com/s/ei84HDZIkXQr2k0ghlN_Mw

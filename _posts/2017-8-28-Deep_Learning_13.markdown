@@ -307,3 +307,7 @@ https://mp.weixin.qq.com/s/fDaZ2HU7W6LnIY_8n-Zg_A
 https://mp.weixin.qq.com/s/_iTmh4vPnL78HPA-0wY95g
 
 阿里文娱搜索算法实践和思考
+
+https://zhuanlan.zhihu.com/p/113244063
+
+搜索中的深度匹配模型

@@ -278,3 +278,7 @@ https://mp.weixin.qq.com/s/zVGDYhBiLCNhKTnkzbMxGA
 https://mp.weixin.qq.com/s/ssD3NAvGx5Eu4-oWy4KtzA
 
 如何生动有趣地对GAN进行可视化？
+
+https://mp.weixin.qq.com/s/qz4wUpSeF8Nlem8x4CrR-Q
+
+学习一个宫崎骏画风的图像风格转换GAN

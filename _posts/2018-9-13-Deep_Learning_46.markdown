@@ -184,6 +184,10 @@ https://mp.weixin.qq.com/s/a_svzOS1Z2a98gIzBBk1dw
 
 从文本分类来看图卷积神经网络
 
+https://mp.weixin.qq.com/s/-ukPx32Vjkdz2_udBb55EA
+
+解读三种经典GCN中的Parameter Sharing
+
 # 深度推荐系统+
 
 https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w
@@ -241,3 +245,7 @@ https://mp.weixin.qq.com/s/FYghBvkye8J7BqPje4JhFw
 https://mp.weixin.qq.com/s/2whZpeQPXggHRDSEUnQZ-w
 
 加州大学-Liwei Wu博士论文：协同过滤与排序进展，150页pdf
+
+https://mp.weixin.qq.com/s/jIjdYIbdls5lIbF7TVfbdA
+
+阿里又出排序新模型，还被国际顶会认可了

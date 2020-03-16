@@ -273,3 +273,7 @@ https://mp.weixin.qq.com/s/e3n_16uB-qGeGSaGwzlBDw
 https://mp.weixin.qq.com/s/V4pbjP5na1OYp-TorUik8g
 
 详聊如何用BERT实现关系抽取
+
+https://mp.weixin.qq.com/s/dFT7KKMH56unkOEA9H4Kuw
+
+吊打BERT Large的小型预训练模型ELECTRA终于开源！真相却让人...

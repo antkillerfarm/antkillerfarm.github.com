@@ -188,6 +188,16 @@ https://www.zhihu.com/question/50519680
 
 ![](/images/img3/KD.jpg)
 
+## Theseus压缩
+
+研究者受到著名哲学思想实验“忒修斯之船”（The Ship of Theseus）启发（如果船上的木头逐渐被替换，直到所有的木头都不是原来的木头，那这艘船还是原来的那艘船吗？），提出了Theseus Compression for BERT(BERT-of-Theseus)，该方法逐步将BERT的原始模块替换成参数更少的替代模块。研究者将原始模型叫做“前辈”（predecessor），将压缩后的模型叫做“接替者“（successor），分别对应KD中的教师和学生。
+
+参考：
+
+https://mp.weixin.qq.com/s/HdG3_CaSdZP3lCp8J_VRQA
+
+只需一个损失函数、一个超参数即可压缩BERT，MSRA提出模型压缩新方法
+
 ## 参考
 
 https://github.com/dkozlov/awesome-knowledge-distillation

@@ -298,6 +298,10 @@ https://zhuanlan.zhihu.com/p/112836340
 
 谷歌最新论文：从图像中进行3-D目标检测
 
+https://mp.weixin.qq.com/s/cBbDCE4kQrahT8vLo3uMOw
+
+你们还在做2D的物体检测吗？谷歌已经开始玩转3D了
+
 # AutoDL+
 
 https://mp.weixin.qq.com/s/Nmkcy2nBczUccwIdMJiH_A

@@ -313,6 +313,12 @@ https://zhuanlan.zhihu.com/c_1078248076300521472
 
 一个Rust OS的专栏
 
+## 参考
+
+https://mp.weixin.qq.com/s/JBlzMIhMa7TB5tHGSRhVkQ
+
+​半小时入门Rust，这是一篇Rust代码风暴
+
 # Javascript（续）
 
 ## TypeScript
@@ -470,19 +476,3 @@ https://mp.weixin.qq.com/s/D-XvKCSUCzMGcEz_xWTwqg
 https://mp.weixin.qq.com/s/zDt92-5NVaAFZJRfEHCUvg
 
 什么是Native、Web App、Hybrid、React Native和Weex？
-
-https://mp.weixin.qq.com/s/pdOVONHbjfIJPW45nEw1fg
-
-前端本地文件操作与上传
-
-http://chrome.360.cn/test/html5/index.html
-
-一个用于检测浏览器对html 5支持情况的网页
-
-https://www.zhihu.com/question/59578433
-
-为什么现在又流行服务端渲染html？
-
-https://mp.weixin.qq.com/s/aNPAfJIHL14NFtLfRvxUpQ
-
-10万人的大场馆如何“画座位”？
