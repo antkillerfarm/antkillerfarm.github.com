@@ -8,6 +8,14 @@ category: ML
 
 ## Other Loss（续）
 
+https://zhuanlan.zhihu.com/p/34404607
+
+人脸识别的LOSS（上）
+
+https://zhuanlan.zhihu.com/p/34436551
+
+人脸识别的LOSS（下）
+
 https://mp.weixin.qq.com/s/kI22wSoyNT3QXXI8pVwbjA
 
 腾讯AI Lab提出新型损失函数LMCL：可显著增强人脸识别模型的判别能力

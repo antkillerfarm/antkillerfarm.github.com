@@ -405,3 +405,7 @@ https://mp.weixin.qq.com/s/mbnQflnZEu9ISao6UFYXpA
 https://mp.weixin.qq.com/s/2AgeFABUrNZo_SndgIKJlQ
 
 自动驾驶运动预测(Motion Prediction)
+
+https://mp.weixin.qq.com/s/n75otGWB52tkOPTcNiKWeQ
+
+自动驾驶运动规划-Dubins曲线

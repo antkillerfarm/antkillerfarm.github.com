@@ -166,6 +166,10 @@ https://mp.weixin.qq.com/s/TyOYhId90N0Cm7nw98nXMg
 
 PageRank、最小生成树：ML开发者应该了解的五种图算法
 
+https://zhuanlan.zhihu.com/p/113224707
+
+传统方法BM25解决短文本相似度问题
+
 # 社交网络
 
 ## 信息传播模型

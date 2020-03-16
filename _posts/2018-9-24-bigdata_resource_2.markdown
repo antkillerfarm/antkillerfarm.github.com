@@ -210,6 +210,16 @@ https://mp.weixin.qq.com/s/Ue4toNlLD0-zAstVJP2ynA
 
 ## 历史（续）
 
+https://mp.weixin.qq.com/s/uoLGz_giq88nkNJ4-80n3Q
+
+全球百年视角再审视：历次突发疫情是如何消退的？
+
+https://mp.weixin.qq.com/s/CBwRBdGHFcjItdA81SfdOg
+
+美国从百年前的那场大流感里学到了什么？
+
+----
+
 在这场争论中，最早推广Pfeifer氏菌疫苗的William Park展示了自我纠错的勇气，与George McCoy一起，成为否定细菌疫苗发声最多的专家。
 
 100年前的条件和科学水平与当前无法相比，但以William Park为代表的美国科学家所展示的勇于纠错、实事求是的精神永远不会过时。
@@ -327,6 +337,10 @@ https://mp.weixin.qq.com/s/mgMnLnVJzkY0EMHUTtzLbQ
 https://mp.weixin.qq.com/s/roTg_r57btmPD_vXa21Izg
 
 今天是微信公号诞生以来最荒谬的一天
+
+https://mp.weixin.qq.com/s/4IvGptHaIJWPeLH5vtfEDA
+
+除了“雷火”，武汉还有这样一家医院（泰康同济）
 
 ----
 

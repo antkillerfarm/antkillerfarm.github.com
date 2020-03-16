@@ -136,6 +136,10 @@ https://zhuanlan.zhihu.com/p/97475133
 
 从Softmax到AMSoftmax
 
+https://mp.weixin.qq.com/s/fcCS4qDKdGBSKnA_SaYmZA
+
+你不知道的Softmax
+
 ## Softmax loss
 
 通常我们使用的Softmax loss，实际上是由softmax和交叉熵(cross-entropy loss)loss组合而成，所以全称是softmax with cross-entropy loss。
@@ -145,6 +149,14 @@ $$l(y,z)=-\sum_{k=0}^C y_k\log (f(z_k))$$
 $$f(z_k)=e^{z_k}/(\sum_j e^{z_j})$$
 
 原始的softmax loss非常优雅，简洁，被广泛用于分类问题。它的特点就是优化类间的距离非常棒，但是优化类内距离时比较弱。
+
+其实，softmax干的根本就不是max干的活，它并不是找出一个向量中的最大值。它反而和向量版的argmax的作用比较像。
+
+$$\mathrm{argmax} ([2,1,0.1])=[1,0,0]$$
+
+$$\mathrm{softmax} ([2,1,0.1])=[0.7,0.2,0.1]$$
+
+由于softmax不像argmax这样只选择唯一的一个，也就是所谓的one-hot ，因此得了soft的名字。
 
 ## logits
 
@@ -286,11 +298,3 @@ https://mp.weixin.qq.com/s/MTeuRYutMiCmthEAObyAIg
 https://zhuanlan.zhihu.com/p/23340343
 
 Center Loss及其在人脸识别中的应用
-
-https://zhuanlan.zhihu.com/p/34404607
-
-人脸识别的LOSS（上）
-
-https://zhuanlan.zhihu.com/p/34436551
-
-人脸识别的LOSS（下）

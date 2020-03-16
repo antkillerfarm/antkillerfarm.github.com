@@ -326,6 +326,10 @@ WaveRNN没有沿用Dilated Convolution，而是采用了另外一种方式加速
 
 4.数据生成好之后，再重新组合回去，得到最终的结果序列。
 
+WaveRNN还有一个trick：
+
+- 生成语音的时候，并不是直接采用最大可能的音素，而是使用采样的方法，根据各个音素的概率，随机选择可能的音素。
+
 参考：
 
 https://mp.weixin.qq.com/s/H77iom38lTR0KzeFXrdWew

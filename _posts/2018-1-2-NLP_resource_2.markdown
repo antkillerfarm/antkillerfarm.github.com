@@ -300,6 +300,10 @@ https://mp.weixin.qq.com/s/bcpjkuRtErSRfJPsAnAWWQ
 
 用深度学习做文本摘要
 
+https://zhuanlan.zhihu.com/p/111266615
+
+文本摘要(text summarization)最新研究热点、发展趋势，里程碑论文推荐
+
 https://mp.weixin.qq.com/s/z7BlFHfStYEtNzl1EorokA
 
 文章太长不想看？ML文本自动摘要了解一下

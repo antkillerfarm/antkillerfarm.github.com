@@ -16,6 +16,10 @@ https://mp.weixin.qq.com/s/bbFDJ6PjjDZqdnPLMqBuKA
 
 秒杀DeepLabv3+与UNet的表面缺陷检测网络
 
+https://mp.weixin.qq.com/s/UHjGE5VNoVguYMylT6SLjg
+
+基于特征的图像配准用于缺陷检测
+
 ## 参考
 
 https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748834&idx=3&sn=805564d2d9956dff6bb888ccb61e9b7b
@@ -281,3 +285,7 @@ https://mp.weixin.qq.com/s/HQKBwPHzO0r54Qp8F74jUw
 https://mp.weixin.qq.com/s/DlRbHavllHghzi-Xr5Y1Hg
 
 深度学习时代数据库：挑战与机会
+
+https://mp.weixin.qq.com/s/4hL6wWQ73icEWHfK6QKSMw
+
+频域学习，Learning in the Frequency Domain

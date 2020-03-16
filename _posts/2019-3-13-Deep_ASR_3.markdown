@@ -266,6 +266,10 @@ https://mp.weixin.qq.com/s/idXP4Y-B4pYYfM2egg6KYQ
 
 Hey Siri唤醒原理
 
+https://mp.weixin.qq.com/s/GTzGwKQfJgopd96doe8rIg
+
+用于语音自动处理的深度神经网络综述:从大型语料库到有限数据的调查
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw

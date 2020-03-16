@@ -154,6 +154,10 @@ https://mp.weixin.qq.com/s/5zSLod4oyL4m6LADI6KC0Q
 
 深入理解XGBoost，优缺点分析，原理推导及工程实现
 
+https://mp.weixin.qq.com/s/uvUN4JiqSb-bS4HAVCDTIQ
+
+集成模型Xgboost！机器学习最热研究方向入门，附学习路线图
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。

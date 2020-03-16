@@ -64,6 +64,10 @@ https://mp.weixin.qq.com/s/yZvKMaBZyodr8SLvcAn7Mg
 
 深度剖析知识增强语义表示模型——ERNIE
 
+https://mp.weixin.qq.com/s/mPPnPwAvPzvJtv0B8jjDbw
+
+详解ERNIE-Baidu进化史及应用场景
+
 ## XLNet
 
 https://mp.weixin.qq.com/s/29y2bg4KE-HNwsimD3aauw

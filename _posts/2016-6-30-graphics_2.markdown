@@ -280,7 +280,7 @@ $$h_1=\left[\begin{array}{ccc} 0&-1&0\\ -1&4&-1 \\ 0&-1&0\end{array} \right],h_2
 
 参考：
 
-https://mp.weixin.qq.com/s/mBlzWSj82havqxfXYfG0-Q
+https://zhuanlan.zhihu.com/p/85287578
 
 拉普拉斯矩阵与拉普拉斯算子的关系
 

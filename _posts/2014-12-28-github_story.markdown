@@ -65,7 +65,7 @@ https://rubyinstaller.org/
 作为生活在水深火热的墙内人民，有必要进行下面一步修改gem的源，方便我们更快的下载所需的组件：
 
 ```bash
-sudo gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.org/
+sudo gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
 ```
 
 >**关于 Windows 下证书无法验证问题 (certificate verify failed)**   

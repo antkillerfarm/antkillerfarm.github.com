@@ -206,6 +206,10 @@ https://mp.weixin.qq.com/s/GcT2-rVm432re7SbCf3Dcg
 
 一个模型击溃12种AI造假，各种GAN与Deepfake都阵亡
 
+https://mp.weixin.qq.com/s/aqoFRrAEtkCkLbKxAVOfCg
+
+中山大学发布最新《图对抗机器学习》2020综述论文，带你全面了解40+种攻防对抗学习方法
+
 # 数据结构 & 普通CS算法
 
 ## TopK
