@@ -132,6 +132,23 @@ set：只有value。set也有unordered_set这样的变种。
 
 map和set都不允许重复值，如果需要重复的话，可以使用multiset和multimap。
 
+----
+
+```c++
+template<typename T>
+struct S {
+    template<typename U> void foo(){}
+};
+ 
+template<typename T>
+void bar()
+{
+    S<T> s;
+    s.foo<T>(); // error: < parsed as less than operator
+    s.template foo<T>(); // OK
+}
+```
+
 ## 参考
 
 https://mp.weixin.qq.com/s/Hpn7KqYlBKz0JdryiozqyQ
