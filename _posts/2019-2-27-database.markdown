@@ -122,6 +122,10 @@ https://mp.weixin.qq.com/s/Fj4zERz9PEuNumd_SI0bEA
 
 浅谈CAP和Paxos共识算法
 
+https://zhuanlan.zhihu.com/p/113612578
+
+Chandy-Lamport算法核心解读
+
 ## 参考
 
 https://mp.weixin.qq.com/s/ActS6PxbtZGqPb0jOn0iFg
