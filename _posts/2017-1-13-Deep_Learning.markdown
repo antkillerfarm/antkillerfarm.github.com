@@ -141,6 +141,16 @@ http://blog.csdn.net/u013007900/article/details/50066315
 
 ![](/images/article/single_layer_vs_multi_layer.png)
 
+宽度也有类似的现象：
+
+![](/images/img3/infinite_width.gif)
+
+参考：
+
+https://mp.weixin.qq.com/s/W0mVk_KtL2Tr_Uo-1el7Aw
+
+5行代码打造无限宽神经网络模型
+
 # ANN简史
 
 ![](/images/article/ANN_history.png)
@@ -234,16 +244,3 @@ $$\text{Var}(W)=\frac{2}{n_{in}+n_{out}}\tag{2}$$
 其中，$$n_{out}$$表示需要输出层的神经元的个数。
 
 公式1也被称作LeCun initializer，公式2也被称作Glorot initializer。
-
-3.MSRA。该方法基于零均值的Gaussian分布产生随机数。Gaussian分布的标准差为：
-
-$$\sqrt{\frac{2}{n_l}}$$
-
-其中，$$n_l=k_l^2d_{l-1}$$，$$k_l$$表示l层的filter的大小，$$d_{l-1}$$表示l-1层的filter的数量。
-
-这种方法也被称作He initializer，是何恺明发明的。
-
->何恺明，清华本科+香港中文大学博士（2011）。先后在MS和Facebook担任研究员。   
->个人主页：http://kaiminghe.com/
-
-何恺明在训练ResNet的时候发现Xavier方法对于ReLU激活不是太有效，故而提出了新方法。

@@ -4,9 +4,19 @@ title:  深度学习（三）——Neural Network Zoo, CNN
 category: DL 
 ---
 
-# 深度学习常用术语解释
+# 深度学习常用术语解释（续）
 
-## weight decay（续）
+## Vanilla
+
+Vanilla是神经网络领域的常见词汇，比如Vanilla Neural Networks、Vanilla CNN等。Vanilla本意是香草，在这里基本等同于raw。比如Vanilla Neural Networks实际上就是BP神经网络，而Vanilla CNN实际上就是最原始的CNN。
+
+## weight decay
+
+在《机器学习（十四）》中，我们已经指出了规则化在防止病态矩阵中的应用。实际上，规则化也是防止过拟合的重要手段。
+
+$$J(W,b)= \left[ \frac{1}{m} \sum_{i=1}^m J(W,b;x^{(i)},y^{(i)}) \right] + \frac{\lambda}{2} \sum_{l=1}^{n_l-1} \; \sum_{i=1}^{s_l} \; \sum_{j=1}^{s_{l+1}} \left( W^{(l)}_{ji} \right)^2$$
+
+上式中在普通loss函数后，添加的规则项也被称作weight decay。
 
 weight decay的误差反向传播公式如下：
 
@@ -250,25 +260,3 @@ LeNet-5最后一步的Gaussian Connections是一个当年的历史遗迹，目�
 ![](/images/article/CNN_2.jpg)
 
 上图是若干ML、DL算法按照不同维度划分的情况。
-
-## 多通道卷积
-
-MNIST的例子中，由于图像是单通道（灰度图）的，因此，多数教程都只是展示了单通道卷积的计算步骤：
-
-$$g(i,j)=\sum_{k,l}f(i+k,j+l)h(k,l)$$
-
-而多通道（例如彩色图像的RGB三通道）卷积实际上就是将各通道卷积之后的结果再加在一起：
-
-$$g(i,j)=\sum_{c,k,l}f(i+k,j+l)h(k,l)$$
-
-![](/images/article/conv_1.png)
-
-上图展示了一个4通道图像经卷积之后，得到2通道图像的过程。
-
-从中可以得出以下结论：
-
-1.RGB通道信息在卷积之后，就不复存在了。无论输入图像有多少个通道，输出图像的通道数只和feature的个数相关。
-
-2.即使是LeNet-5的MNIST示例中，实际上也是有多通道卷积的，只不过不在第一个卷积层而已。
-
-3.多通道卷积除了二维空间信息的卷积之外，还包括了**通道间信息**的卷积。这也是CNN中1x1卷积的意义之一。

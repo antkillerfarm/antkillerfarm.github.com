@@ -302,6 +302,10 @@ https://mp.weixin.qq.com/s/cBbDCE4kQrahT8vLo3uMOw
 
 你们还在做2D的物体检测吗？谷歌已经开始玩转3D了
 
+https://mp.weixin.qq.com/s/SMDzPAJCpgjELsKHeQvW-A
+
+序列化的三维形状生成网络PQ-NET
+
 # AutoDL+
 
 https://mp.weixin.qq.com/s/Nmkcy2nBczUccwIdMJiH_A

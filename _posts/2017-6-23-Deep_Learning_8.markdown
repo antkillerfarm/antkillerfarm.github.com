@@ -1,10 +1,54 @@
 ---
 layout: post
-title:  深度学习（八）——Bi-directional RNN, seq2seq, CNN进化史（1）
+title:  深度学习（八）——ResNet, Bi-directional RNN, seq2seq
 category: DL 
 ---
 
-# ResNet（续）
+# 神经元激活函数进阶
+
+## 参考（续）
+
+https://mp.weixin.qq.com/s/VSRtjIH1tvAVhGAByEH0bg
+
+21种NLP任务激活函数大比拼：你一定猜不到谁赢了
+
+https://www.cnblogs.com/makefile/p/activation-function.html
+
+激活函数(ReLU, Swish, Maxout)
+
+https://mp.weixin.qq.com/s/YVi9ke3VSidBvzfLPjMkZg
+
+激活函数-从人工设计到自动搜索
+
+https://mp.weixin.qq.com/s/i8aShQvJhSgP7KY5Qgm36A
+
+ReLU的继任者Mish：一个新的state of the art的激活函数
+
+https://mp.weixin.qq.com/s/XttlCNKGvGZrD7OQZOQGnw
+
+如何发现“将死”的ReLu？
+
+https://mp.weixin.qq.com/s/pA9JW75p9J5e5KHe3ifcBQ
+
+从ReLU到GELU，一文概览神经网络的激活函数
+
+https://mp.weixin.qq.com/s/LEPalstOc15CX6fuqMRJ8Q
+
+超越ReLU却鲜为人知，3年后被挖掘：BERT、GPT-2等都在用的激活函数（GELU）
+
+# ResNet
+
+无论采用何种方法，可训练的神经网络的层数都不可能无限深。有的时候，即使没有梯度消失，也存在训练退化（即深层网络的效果还不如浅层网络）的问题。
+
+最终2015年，微软亚洲研究院的何恺明等人，使用残差网络ResNet参加了当年的ILSVRC，在图像分类、目标检测等任务中的表现大幅超越前一年的比赛的性能水准，并最终取得冠军。
+
+论文：
+
+《Deep Residual Learning for Image Recognition》
+
+代码：
+
+https://github.com/KaimingHe/deep-residual-networks
 
 残差网络的明显特征是有着相当深的深度，从32层到152层，其深度远远超过了之前提出的深度网络结构，而后又针对小数据设计了1001层的网络结构。
 
@@ -271,47 +315,3 @@ GitHub：图像分类最全资料集锦
 https://mp.weixin.qq.com/s/nK__d-PV6DY5mDfA_UgDmQ
 
 全解：目标检测，图像分类、分割、生成……
-
-https://mp.weixin.qq.com/s/Go8AQay7tgykXLRtfHGLmg
-
-改变你对世界看法的五大计算机视觉技术！
-
-https://mp.weixin.qq.com/s/WNkzfvYtEO5zJoe_-yAPow
-
-一文览尽计算机视觉研究方向
-
-https://zhuanlan.zhihu.com/p/55747295
-
-深度学习在计算机视觉领域（包括图像，视频，3-D点云，深度图）的应用一览
-
-## CNN简史
-
-![](/images/article/computer_vision_3.jpg)
-
-![](/images/article/CNN_3.png)
-
-完整版本参见：
-
-https://github.com/Nikasa1889/HistoryObjectRecognition/blob/master/HistoryOfObjectRecognition.pdf
-
-![](/images/img3/CNN.jpg)
-
-参考：
-
-https://mp.weixin.qq.com/s/K68CpueI4e4y7o1uZ28KMQ
-
-从神经科学到计算机视觉：人类与计算机视觉五十年回顾
-
-https://mp.weixin.qq.com/s/FzCrOiFuutqSQSp4VcydoQ
-
-计算机视觉简介：历史、现状和发展趋势
-
-## AlexNet
-
-2012年，ILSVRC比赛冠军的model——Alexnet（以第一作者Alex命名）的结构图如下：
-
-![](/images/article/AlexNet.png)
-
-换个视角：
-
-![](/images/article/AlexNet_2.png)

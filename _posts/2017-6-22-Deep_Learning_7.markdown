@@ -1,10 +1,42 @@
 ---
 layout: post
-title:  深度学习（七）——神经元激活函数进阶, ResNet
+title:  深度学习（七）——神经元激活函数进阶
 category: DL 
 ---
 
-# LSTM（续）
+# LSTM
+
+### 确定更新的信息（续）
+
+![](/images/article/LSTM_2.png)
+
+这一部分也被称为**输入门**。
+
+### 更新细胞状态
+
+![](/images/article/LSTM_3.png)
+
+### 输出信息
+
+![](/images/article/LSTM_4.png)
+
+显然，在这里不同的参数会对上述4个功能进行任意组合，从而最终达到长时记忆的目的。
+
+>上面的公式中，$$\cdot$$表示Dot product，而$$*$$表示eltwise product。
+
+### 其他细节
+
+在一般的神经网络中，激活函数可以随意选择，无论是传统的sigmoid，还是新的tanh、ReLU，都不影响模型的大致效果。（差异主要体现在训练的收敛速度上，最终结果也可能会有细微影响。）
+
+**但是，上述标准LSTM模型中，tanh函数可以随意替换，而sigmoid函数却不能被替换，切记。**
+
+sigmoid用在了各种gate上，产生0~1之间的值，这个一般只有sigmoid最直接了。
+
+tanh用在了状态和输出上，是对数据的处理，这个用其他激活函数也可以。
+
+forget bias的初始值可以设为以1为均值，这对于训练很有好处，这就是tensorflow中forget_bias参数的来历。参见论文：
+
+《An Empirical Exploration of Recurrent Network Architectures》
 
 ## LSTM的变体
 
@@ -295,45 +327,3 @@ PReLU与ReLU
 http://www.cnblogs.com/pinard/p/6437495.html
 
 深度神经网络（DNN）损失函数和激活函数的选择
-
-https://mp.weixin.qq.com/s/VSRtjIH1tvAVhGAByEH0bg
-
-21种NLP任务激活函数大比拼：你一定猜不到谁赢了
-
-https://www.cnblogs.com/makefile/p/activation-function.html
-
-激活函数(ReLU, Swish, Maxout)
-
-https://mp.weixin.qq.com/s/YVi9ke3VSidBvzfLPjMkZg
-
-激活函数-从人工设计到自动搜索
-
-https://mp.weixin.qq.com/s/i8aShQvJhSgP7KY5Qgm36A
-
-ReLU的继任者Mish：一个新的state of the art的激活函数
-
-https://mp.weixin.qq.com/s/XttlCNKGvGZrD7OQZOQGnw
-
-如何发现“将死”的ReLu？
-
-https://mp.weixin.qq.com/s/pA9JW75p9J5e5KHe3ifcBQ
-
-从ReLU到GELU，一文概览神经网络的激活函数
-
-https://mp.weixin.qq.com/s/LEPalstOc15CX6fuqMRJ8Q
-
-超越ReLU却鲜为人知，3年后被挖掘：BERT、GPT-2等都在用的激活函数（GELU）
-
-# ResNet
-
-无论采用何种方法，可训练的神经网络的层数都不可能无限深。有的时候，即使没有梯度消失，也存在训练退化（即深层网络的效果还不如浅层网络）的问题。
-
-最终2015年，微软亚洲研究院的何恺明等人，使用残差网络ResNet参加了当年的ILSVRC，在图像分类、目标检测等任务中的表现大幅超越前一年的比赛的性能水准，并最终取得冠军。
-
-论文：
-
-《Deep Residual Learning for Image Recognition》
-
-代码：
-
-https://github.com/KaimingHe/deep-residual-networks

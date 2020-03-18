@@ -110,6 +110,10 @@ https://zhuanlan.zhihu.com/p/101702312
 
 详解TCP超时与重传机制
 
+https://mp.weixin.qq.com/s/Mc7vpJw5r_vcbsxLXwfeNA
+
+看完这篇HTTP，跟面试官扯皮就没问题了
+
 ## QUIC
 
 Quic全称quick udp internet connection，“快速UDP互联网连接”，是由google提出的使用udp进行多路并发传输的协议。

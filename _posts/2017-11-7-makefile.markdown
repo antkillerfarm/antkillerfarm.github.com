@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  makefile, Autotools, premake, Bazel
+title:  makefile, Autotools, premake, Bazel, CMake
 category: technology 
 ---
 
@@ -207,6 +207,38 @@ bazel项目添加automake/autoconf项目解决办法
 https://www.cnblogs.com/puyangsky/p/7596282.html
 
 bazel的使用
+
+# CMake
+
+1. 添加头文件目录
+
+`include_directories(../../../thirdparty/comm/include)`
+
+2. 添加需要链接的库文件目录
+
+`link_directories("/home/server/third/lib")`
+
+3. 查找库所在目录
+
+`find_library(RUNTIME_LIB rt /usr/lib  /usr/local/lib NO_DEFAULT_PATH)`
+
+4. 添加需要链接的库文件路径
+
+`link_libraries(“/home/server/third/lib/libcommon.a”)`
+
+5. 设置要链接的库文件的名称
+
+`target_link_libraries(myProject libcomm.so)`
+
+6. 为工程生成目标文件
+
+`add_executable(demo main.cpp)`
+
+参考：
+
+https://www.cnblogs.com/binbinjx/p/5626916.html
+
+cmake添加头文件目录，链接动态、静态库
 
 # Other
 

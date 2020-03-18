@@ -4,7 +4,34 @@ title:  深度学习（五）——词向量（2）
 category: DL 
 ---
 
-# 词向量（续）
+# 词向量
+
+## One-hot Representation（续）
+
+某牛点评：
+
+>如果你预测的label是苹果，雪梨，香蕉，草莓这四个，显然他们不直接构成比较关系，但如果我们用1,2,3,4来做label就会出现了比较关系，label之间的距离也不同。有了比较关系，第一个label和最后一个label的距离太远，影响模型的学习。因为模型觉得label 1和label 2最像，和最后一个label最不像。   
+>不过当你的label之间存在直接的比较关系，就可以直接用数字当label。例如你做一个风控模型，预测的是四个风险类别[低，中，高，紧急]，其实你也可以用1，2，3，4来做label，因为确实存在一个比较。但这本质上就成了回归问题。
+
+One-hot Representation的缺点在于：
+
+1.该表示法中，由于任意两个单词的词向量都是正交的，因此无法反映单词之间的语义相似度。
+
+2.一个词库的大小是$$10^5$$以上的量级。维度过高，会妨碍神经网络学习到稀疏特征。
+
+参考：
+
+https://mp.weixin.qq.com/s?__biz=MzI4MzM2NTU0Mg==&mid=2247483698&idx=1&sn=cf185232e43b4523ab9b0bc0ce425ed4
+
+One-Hot编码与哑变量
+
+https://www.zhihu.com/question/359742335
+
+分类问题的label为啥必须是one hot形式？
+
+https://mp.weixin.qq.com/s/gDqI3ttGiZaeOzm7Gvc9dA
+
+数据处理：离散型变量编码及效果分析
 
 ## Word Embedding
 
@@ -233,43 +260,3 @@ https://mp.weixin.qq.com/s/6XJuZBTmfRWWFwS9J3HOsQ
 1.word2vec/doc2vec基于BOW（Bag Of Word，词袋）模型。该模型的特点是忽略词序，因此对于那些交换词序会改变含义的句子，无法准确评估它们的区别。
 
 2.虽然我们一般使用word2vec/doc2vec来比较文本相似度，但是从原理来说，word2vec/doc2vec提供的是关联性（relatedness），而不是相似性（similarity）。这会带来以下问题：不但近义词的词向量相似，反义词的词向量也相似。因为它们和其他词的关系（也就是语境）是类似的。
-
-3.由于一个词只有一个向量来表示，因此，无法处理一词多义的情况。
-
-然而关联性并非都是坏事，有的时候也会起到意想不到的效果。比如在客服对话的案例中，客户可能会提供自己的收货地址，显然每个客户的地址都是不同的，但是有意思的是，这些地址的词向量是非常相似的。
-
-总之，**只利用无标注数据训练得到的Word Embedding在匹配度计算的实用效果上和主题模型技术相差不大，它们本质上都是基于共现信息的训练。**
-
-4.除了余弦相似度之外，词向量的模长，也是一个重要的特征，词向量模长越大，重要性越低（或者越高，取决于生成词向量的算法）。
-
-参考：
-
-https://www.zhihu.com/question/22266868
-
-Word2Vec如何解决多义词的问题？
-
-## 参考
-
-http://www.cnblogs.com/iloveai/p/word2vec.html
-
-word2vec前世今生
-
-https://mp.weixin.qq.com/s/NMngfR7EWk-pa6c4_FY9Yw
-
-图解Word2vec，读这一篇就够了
-
-http://www.cnblogs.com/maybe2030/p/5427148.html
-
-文本深度表示模型——word2vec&doc2vec词向量模型
-
-https://www.zhihu.com/question/29978268
-
-如何用word2vec计算两个句子之间的相似度？
-
-https://mp.weixin.qq.com/s/kGi-Hf7CX6OKcCMe7IC7zA
-
-NLP之Wrod2Vec三部曲
-
-https://mp.weixin.qq.com/s/VMK_UpOUI0y7apTGR02D1Q
-
-图解Word2Vec

@@ -6,7 +6,47 @@ category: DL
 
 # 词向量
 
-## 参考（续）
+## word2vec/doc2vec的缺点（续）
+
+3.由于一个词只有一个向量来表示，因此，无法处理一词多义的情况。
+
+然而关联性并非都是坏事，有的时候也会起到意想不到的效果。比如在客服对话的案例中，客户可能会提供自己的收货地址，显然每个客户的地址都是不同的，但是有意思的是，这些地址的词向量是非常相似的。
+
+总之，**只利用无标注数据训练得到的Word Embedding在匹配度计算的实用效果上和主题模型技术相差不大，它们本质上都是基于共现信息的训练。**
+
+4.除了余弦相似度之外，词向量的模长，也是一个重要的特征，词向量模长越大，重要性越低（或者越高，取决于生成词向量的算法）。
+
+参考：
+
+https://www.zhihu.com/question/22266868
+
+Word2Vec如何解决多义词的问题？
+
+## 参考
+
+http://www.cnblogs.com/iloveai/p/word2vec.html
+
+word2vec前世今生
+
+https://mp.weixin.qq.com/s/NMngfR7EWk-pa6c4_FY9Yw
+
+图解Word2vec，读这一篇就够了
+
+http://www.cnblogs.com/maybe2030/p/5427148.html
+
+文本深度表示模型——word2vec&doc2vec词向量模型
+
+https://www.zhihu.com/question/29978268
+
+如何用word2vec计算两个句子之间的相似度？
+
+https://mp.weixin.qq.com/s/kGi-Hf7CX6OKcCMe7IC7zA
+
+NLP之Wrod2Vec三部曲
+
+https://mp.weixin.qq.com/s/VMK_UpOUI0y7apTGR02D1Q
+
+图解Word2Vec
 
 https://mp.weixin.qq.com/s/CMcNkEFW9UUXAW0832dT6g
 
@@ -255,35 +295,3 @@ LSTM主要包括以下4个步骤（也可称为4个功能或门）：
 ![](/images/article/LSTM_1.png)
 
 这一部分也被称为**忘记门**。
-
-### 确定更新的信息
-
-![](/images/article/LSTM_2.png)
-
-这一部分也被称为**输入门**。
-
-### 更新细胞状态
-
-![](/images/article/LSTM_3.png)
-
-### 输出信息
-
-![](/images/article/LSTM_4.png)
-
-显然，在这里不同的参数会对上述4个功能进行任意组合，从而最终达到长时记忆的目的。
-
->上面的公式中，$$\cdot$$表示Dot product，而$$*$$表示eltwise product。
-
-### 其他细节
-
-在一般的神经网络中，激活函数可以随意选择，无论是传统的sigmoid，还是新的tanh、ReLU，都不影响模型的大致效果。（差异主要体现在训练的收敛速度上，最终结果也可能会有细微影响。）
-
-**但是，上述标准LSTM模型中，tanh函数可以随意替换，而sigmoid函数却不能被替换，切记。**
-
-sigmoid用在了各种gate上，产生0~1之间的值，这个一般只有sigmoid最直接了。
-
-tanh用在了状态和输出上，是对数据的处理，这个用其他激活函数也可以。
-
-forget bias的初始值可以设为以1为均值，这对于训练很有好处，这就是tensorflow中forget_bias参数的来历。参见论文：
-
-《An Empirical Exploration of Recurrent Network Architectures》

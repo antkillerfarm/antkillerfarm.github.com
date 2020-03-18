@@ -241,6 +241,17 @@ sp1,sp2,sp3是相互关联的共享指针，共同控制所指内存的生存期
 
 ----
 
+```c++
+auto p = std::make_unique<XXX>();
+void f(XXX*);
+f(p); // error
+f(p.get()); // OK
+```
+
+虽然，类似`p->YYY()`的用法和普通指针一致，但是作为f函数参数的时候，就不行了。
+
+----
+
 参考：
 
 https://mp.weixin.qq.com/s/32aeGOPaySjTmyKcjFKgYA

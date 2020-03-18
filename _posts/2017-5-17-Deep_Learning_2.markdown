@@ -8,6 +8,19 @@ category: DL
 
 ## 随机初始化（续）
 
+3.MSRA。该方法基于零均值的Gaussian分布产生随机数。Gaussian分布的标准差为：
+
+$$\sqrt{\frac{2}{n_l}}$$
+
+其中，$$n_l=k_l^2d_{l-1}$$，$$k_l$$表示l层的filter的大小，$$d_{l-1}$$表示l-1层的filter的数量。
+
+这种方法也被称作He initializer，是何恺明发明的。
+
+>何恺明，清华本科+香港中文大学博士（2011）。先后在MS和Facebook担任研究员。   
+>个人主页：http://kaiminghe.com/
+
+何恺明在训练ResNet的时候发现Xavier方法对于ReLU激活不是太有效，故而提出了新方法。
+
 参考：
 
 https://pouannes.github.io/blog/initialization/
@@ -251,15 +264,3 @@ iterations（迭代）：每一次迭代都是一次权重更新，每一次权�
 https://zhuanlan.zhihu.com/p/83626029
 
 浅析深度学习中Batch Size大小对训练过程的影响
-
-## Vanilla
-
-Vanilla是神经网络领域的常见词汇，比如Vanilla Neural Networks、Vanilla CNN等。Vanilla本意是香草，在这里基本等同于raw。比如Vanilla Neural Networks实际上就是BP神经网络，而Vanilla CNN实际上就是最原始的CNN。
-
-## weight decay
-
-在《机器学习（十四）》中，我们已经指出了规则化在防止病态矩阵中的应用。实际上，规则化也是防止过拟合的重要手段。
-
-$$J(W,b)= \left[ \frac{1}{m} \sum_{i=1}^m J(W,b;x^{(i)},y^{(i)}) \right] + \frac{\lambda}{2} \sum_{l=1}^{n_l-1} \; \sum_{i=1}^{s_l} \; \sum_{j=1}^{s_{l+1}} \left( W^{(l)}_{ji} \right)^2$$
-
-上式中在普通loss函数后，添加的规则项也被称作weight decay。
