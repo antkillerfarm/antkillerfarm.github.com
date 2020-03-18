@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Ubuntu使用技巧（三）, diff&patch, awk&sed&grep, Mac OS X, WebKit, 辛普森悖论
+title:  Ubuntu使用技巧（三）, 硬盘安装Linux（UEFI）, diff&patch, awk&sed&grep, Mac OS X
 category: linux 
 ---
 
@@ -169,6 +169,106 @@ Ubuntu下面关于TFTP的程序，有三套：
 
 (^ω^)
 
+# 硬盘安装Linux（UEFI）
+
+2020.3
+
+最近换了一台PC，由于它是UEFI启动的，因此之前的那篇《硬盘安装Linux》宣告作废。
+
+## UEFI
+
+Unified Extensible Firmware Interface是为了替代传统BIOS而诞生。
+
+它的历史已有20年左右，甚至我那台被淘汰的PC，其实也是支持UEFI的。但它之前一直用的不太广，直到Win8的时代。
+
+尽管Win8+仍然可以在传统的BIOS上运行，但MS决定预装Win8+的PC必须是UEFI启动的。因此，近几年的PC不用问，肯定是UEFI启动的。
+
+UEFI官网：
+
+https://uefi.org/
+
+UEFI要求硬盘分区必须是GPT方式的，因此也被称作UEFI+GPT，与之相对的传统方案叫做legacy+MBR。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/81960137
+
+UEFI引导与传统BIOS引导在原理上有什么区别？芯片公司在其中扮演什么角色？
+
+## 安装步骤
+
+主要参考以下文章：
+
+https://www.cnblogs.com/iamnewsea/p/7701464.html
+
+用EasyUEFI在Win8/10中硬盘安装Ubuntu
+
+要点摘录及补充如下：
+
+- 镜像所在分区的格式必须是FAT32，镜像解压到该分区即可。如果是SSD+硬盘的话，则该分区必须在SSD上，因为系统只能有一个引导硬盘。
+
+- EasyBCD不可以用了，这和专不专业版，系统是不是Win10没有关系，根本原因是EasyBCD只是一个MBR工具而已。
+
+- EasyUEFI个人版现在无法添加新的启动项目了，必须用破解版。
+
+- 有的PC，启动文件必须选择`/EFI/BOOT/BOOTx64.EFI`，其实随便选哪个都一样。
+
+- 进入Ubuntu安装界面之后，还是一样要umount镜像文件。
+
+`sudo umount -l /dev/sda5`
+
+可以用`sudo fdisk -l`查看分区名称，例如SSD分区一般叫做`/dev/nvme0n1p4`。
+
+而且我们还可以看到，系统的第一个分区，并不是Windows分区，而是EFI分区。这也是UEFI启动的特殊之处。这个分区对于一般应用是不可见的，也就没有了文件或分区被误删的问题。安装新OS的风险也大大减少了。
+
+- 安装必须要联网，否则会失败。（搞不懂这个镜像有何意义。。。囧）
+
+- 安装失败后重启，可能会出现找不到`/EFI/BOOT/mmx64.efi`的提示。
+
+这时，需要进入UEFI设置界面。我的PC的进入方法是：按住F2，并重启。
+
+选择windows启动优先，保存设置并重启。
+
+不得不说，UEFI的界面比BIOS还是好看多了。由于UEFI的优先级比OS高，即使引导记录被破坏（例如系统安装失败），也照样能进UEFI，再也不用和grub死磕了，后者的门槛还是太高了。
+
+进入windows之后，从`/EFI/BOOT/`下，随便找个efi文件，将其改名为`/EFI/BOOT/mmx64.efi`。
+
+重启，进UEFI，设置Ubuntu启动优先，然后就可以再次安装了。
+
+- Ubuntu分区有个小技巧，数据分区的挂载点最好不要设为默认的`/home`。
+
+因为，这个路径下的很多隐藏文件是和系统相关的。如果今后要升级，比如Ubuntu 18.04升为Ubuntu 20.04，这些文件在Ubuntu 20.04下常用兼容问题，还不如完全重装系统。
+
+挂载到其他地方就可以避免这个问题，比如挂载到`/home/data`。
+
+## Ubuntu Mirror
+
+Ubuntu官网很慢，可以选择国内的Mirror替换之：
+
+更改 /etc/apt/sources.list 文件中 Ubuntu 默认的源地址`http://archive.ubuntu.com/ `为`http://mirrors.aliyun.com/ubuntu/`即可。 
+
+其他mirror还有：
+
+http://mirrors.163.com/ubuntu/
+
+https://mirrors.ustc.edu.cn/ubuntu/
+
+https://mirrors.tuna.tsinghua.edu.cn/ubuntu/
+
+## RTL8821CE
+
+我的PC使用的无线网卡是RTL8821CE，但是Ubuntu官方的镜像中，并没有集成该网卡的驱动。
+
+查看网卡的命令：
+
+`lspci`
+
+第三方驱动的代码：
+
+https://github.com/tomaspinho/rtl8821ce
+
+安装驱动之前，需要进UEFI，关闭Secure Boot选项。这个选项会拒绝未验证的系统或驱动。Ubuntu官方的镜像经过了MS的认证，可以正常安装。但是UbuntuKylin不行，第三方驱动显然也不行。
+
 # diff&patch
 
 diff/patch这对工具在数学上来说，diff是对2个集合求差，patch是求和。
@@ -275,139 +375,3 @@ https://mp.weixin.qq.com/s/o1vuL3RrWz9tyUPguZeSWA
 原版镜像由于Apple的硬件检测机制，并不能在PC上运行。这时就需要破解，这一步一般是在boot中做的。
 
 可用的boot工具，早期有empireEFI、HackBoot。较新的有chameleon、Niresh。
-
-# WebKit
-
-WebKit的代码可以从它的官网www.webkit.org下获得。
-
-在以下网页可以获得webkit向各种GUI移植的相关信息。
-
-http://trac.webkit.org/wiki
-
-由于获得的代码比较新，所以在linux平台下常有一些组件由于过于古老而导致编译失败。所以需要使用yum或者apt-get之类的工具从网上更新相关的组件。这里不推荐使用RHEL或者CentOS之类的服务器版本，因为服务器版本为了追求稳定性，不但组件不是最新的，就连网上的组件源也不是最新的。
-
-可以使用ubuntu 9.04桌面版，不过里面缺少很多开发用的组件，除了
-
-http://trac.webkit.org/wiki/BuildingGtk
-
-列出的之外，还有不少组件需要下载。主要有：
-
-1)autoconf
-
-2)libtool
-
-3)gtk-doc-tools
-
-4)libgail-dev
-
-参考：
-
-https://mp.weixin.qq.com/s/QqpPGWf3IVEDN1t80CZ06Q
-
-深入理解浏览器原理
-
-# Lua
-
-Lua的包管理工具叫做LuaRocks。官网：
-
-https://luarocks.org/
-
-参考：
-
-https://mp.weixin.qq.com/s/nwhSDxz1Pu2JCU_IeMR9ww
-
-Lua程序逆向之Luac文件格式分析
-
-http://lua-users.org/wiki/GraphicalUserInterfaceToolkits
-
-Lua的GUI工具列表
-
-# 辛普森悖论
-
-![](/images/img2/Simpson.png)
-
-如果分专业来看，你就会发现：在各个专业女生的录取率其实都是更高的。之所以会产生“总体录取率女生偏低”这一结果，是因为女生大部分都报考了那些本身就难以录取的学院，而男生则大部分报考了那些录取率本身就偏高的学院。
-
-参考：
-
-https://mp.weixin.qq.com/s/5jZ2dzLInLtUw7rWZF4mtg
-
-张忠元：渣男受女生欢迎？当心统计陷阱
-
-https://mp.weixin.qq.com/s/o1a2YlYritcOrsLN2YuLmA
-
-神奇的霍特林法则：为什么汉堡王总是开在麦当劳旁边？
-
-https://mp.weixin.qq.com/s/eq4MllJta5NmaLARPpvang
-
-公交车总迟到？你大概掉进了“等待时间悖论”
-
-https://zhuanlan.zhihu.com/p/43934918
-
-诡异的布雷斯悖论：为什么越是修新路，城市反而更堵了！
-
-https://mp.weixin.qq.com/s/-0VMucGBq4Trb_9FnsW6KQ
-
-10大反直觉的数学结论
-
-https://mp.weixin.qq.com/s/FqY19sTQd7GPdGSsB5L9eQ
-
-数学大反例合集
-
-https://mp.weixin.qq.com/s/EICefFM3dfv5A6V9kVqGWw
-
-吸烟致癌的迷思是如何破除的
-
-https://mp.weixin.qq.com/s/NlJ4-b5SjIjPGgvLUuSxFw
-
-孩子，有时候并不是生活欺骗了你，而是你可能还不懂概率统计……
-
-# 肺炎版《黄冈密卷》
-
-问题由来：
-
-https://mp.weixin.qq.com/s/dR7fg6PTCVAnezlW6gTY2w
-
-新冠病毒最“强”管控，《黄冈密卷》数学题到底有多难
-
-----
-
-1.设$$\sqrt{3+\sqrt{2}+\sqrt{3}+\sqrt{6}}=\sqrt{x}+\sqrt{y}+\sqrt{z}$$，且x、y、z为有理数，则$$xyz$$=?
-
-解：
-
-$$3+\sqrt{2}+\sqrt{3}+\sqrt{6} = x+y+z+2\sqrt{xy}+2\sqrt{xz}+2\sqrt{yz}$$
-
-由x、y、z为有理数可得：
-
-$$4xy=2, 4xz=3, 4yz=6$$
-
-由于x、y、z在原式中是对称的，所以上式中选择哪个等于2、3、6，都是无所谓的。
-
-三式相乘可得：
-
-$$4^3 \cdot (xyz)^2 = 36$$
-
-$$(xyz)^2 = 9/16$$
-
-$$xyz = 3/4$$
-
-----
-
-2.设二次函数$$f(x)=ax^2+ax+1$$的图像开口向下，且满足$$f(f(1))=f(3)$$，则$$2a=?$$
-
-解：
-
-令$$y=2a$$，则$$f(1)=2a+1=y+1$$
-
-$$f(f(1))=f(y+1)=f(3)$$
-
-$$a(y+1)^2+a(y+1)+1=9a+3a+1$$
-
-$$(y+1)^2+(y+1)=12$$
-
-$$y^2+3y-10=0$$
-
-$$(y+5)(y-2)=0$$
-
-因为图像开口向下，所以$$2a=-5$$。

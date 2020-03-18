@@ -250,6 +250,10 @@ https://mp.weixin.qq.com/s/L6fMcRa1_me2DKr2KADAjA
 
 知识图谱前沿跟进: Philip S. Yu团队发布权威综述
 
+https://mp.weixin.qq.com/s/qOt0V1XsQvwpKhNiaAfVjA
+
+胡伟-知识图谱融合方法概述分享
+
 # DRL参考资源+
 
 https://mp.weixin.qq.com/s/vYDb1rTdPxO1sIS38VX5xA

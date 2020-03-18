@@ -6,7 +6,21 @@ category: AI
 
 # Machine Learning之Python篇
 
-## Pandas（续）
+## Pandas
+
+Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。
+
+官网：
+
+http://pandas.pydata.org/
+
+文档：
+
+http://pandas.pydata.org/pandas-docs/stable/
+
+API参考：
+
+http://pandas.pydata.org/pandas-docs/stable/api.html
 
 参考：
 
@@ -430,6 +444,10 @@ https://mp.weixin.qq.com/s/6LhoraTo2cLtLJaXbKpt-A
 
 教你用pyecharts制作交互式桑基图，赶快学起来吧！
 
+https://mp.weixin.qq.com/s/3NYEM2MsfGigRPscP-RVZQ
+
+使用pyecharts绘制词云图-淘宝商品评论展示
+
 ## Yellowbrick
 
 Yellowbrick是和Scikit-Learn配套的ML可视化库。
@@ -483,29 +501,3 @@ ImagePy是国人写的一个图像处理工具。
 官网：
 
 https://github.com/Image-Py/imagepy
-
-## imgaug
-
-imgaug是一个图像数据增强方面的库，可用于扩充机器学习训练时所用的图片数据集。
-
-官网：
-
-https://imgaug.readthedocs.io/en/latest/
-
-参考：
-
-https://www.cnblogs.com/vincentcheng/p/9186540.html
-
-Augmentor和imgaug——python图像数据增强库
-
-## Netron
-
-Netron是一个DL模型的可视化工具，支持几乎所有类型的模型。
-
-代码：
-
-https://github.com/lutzroeder/netron
-
-安装：
-
-`snap install netron`

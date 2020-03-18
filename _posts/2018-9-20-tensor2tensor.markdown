@@ -329,3 +329,21 @@ pytorch多gpu并行训练
 https://mp.weixin.qq.com/s/52Wz4pUI8egKugMFuknWKw
 
 Pytorch中的Distributed Data Parallel与混合精度训练（Apex）
+
+# Machine Learning之Python篇+
+
+https://mp.weixin.qq.com/s/WdYa7Q-yA-s_EO59YkYbqw
+
+7个基本机器学习算法Python实现
+
+https://mp.weixin.qq.com/s/EqLzNzzMcwq5SEyBoTsuug
+
+11种NLP文本预处理Python代码，简洁实用
+
+https://mp.weixin.qq.com/s/mCUdK4i6XGEyaWNCIWA-wQ
+
+集五福，我用Python
+
+https://mp.weixin.qq.com/s/6x5Wmpy4Im0x3Ddua9rvFw
+
+用python怎样识别验证码？传统方法，非DL

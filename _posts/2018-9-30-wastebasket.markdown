@@ -312,6 +312,14 @@ https://mp.weixin.qq.com/s/epb4AIyg8_OqjAgGEbB9Ag
 
 31年前的北美大停电 背后的神秘力量是谁？（太阳风暴）
 
+https://mp.weixin.qq.com/s/-NAua2Zecz5I43Ner73-ww
+
+PNAS前沿：厄尔尼诺现象大概率将在2020下半年爆发
+
+https://mp.weixin.qq.com/s/uIYvfBlmzYkXS5hcgsCAKg
+
+一滴水从高处落下来，会不会砸死人？
+
 ## 空气动力学
 
 https://mp.weixin.qq.com/s/ei84HDZIkXQr2k0ghlN_Mw

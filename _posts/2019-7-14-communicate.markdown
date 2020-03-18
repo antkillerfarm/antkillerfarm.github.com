@@ -316,7 +316,15 @@ https://mp.weixin.qq.com/s/NKWvIJ7-J_IugnAgUehVIg
 
 博通要卖掉的射频前端，是个怎样的市场？
 
-# Machine Learning之Python篇+
+# Machine Learning之Python篇
+
+https://mp.weixin.qq.com/s/mABDO5Sxv-Wc-gAgDQAbFQ
+
+用Python实现机器学习算法——简单的神经网络
+
+https://mp.weixin.qq.com/s/chT6mWmH1_zE-eH1vdB01A
+
+是技术也是艺术 使用geopandas玩转地图可视化
 
 https://mp.weixin.qq.com/s/6wp4rlBODJAkYf3O4O-2GA
 
@@ -389,22 +397,6 @@ https://mp.weixin.qq.com/s/VmLphhs8rGabdNXtvllgdQ
 https://mp.weixin.qq.com/s/TglQzG1iE0keEGLKZ-pGIg
 
 Python数据处理实战——使用Scikit-Learn进行多类文本分类
-
-https://mp.weixin.qq.com/s/WdYa7Q-yA-s_EO59YkYbqw
-
-7个基本机器学习算法Python实现
-
-https://mp.weixin.qq.com/s/EqLzNzzMcwq5SEyBoTsuug
-
-11种NLP文本预处理Python代码，简洁实用
-
-https://mp.weixin.qq.com/s/mCUdK4i6XGEyaWNCIWA-wQ
-
-集五福，我用Python
-
-https://mp.weixin.qq.com/s/6x5Wmpy4Im0x3Ddua9rvFw
-
-用python怎样识别验证码？传统方法，非DL
 
 # 新冠肺炎
 

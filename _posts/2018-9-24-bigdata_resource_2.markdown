@@ -218,6 +218,10 @@ https://mp.weixin.qq.com/s/CBwRBdGHFcjItdA81SfdOg
 
 美国从百年前的那场大流感里学到了什么？
 
+https://mp.weixin.qq.com/s/_ye9rCrsh6pdPgVHrzveEQ
+
+166年前的那场大霍乱，伦敦做对了什么？
+
 ----
 
 在这场争论中，最早推广Pfeifer氏菌疫苗的William Park展示了自我纠错的勇气，与George McCoy一起，成为否定细菌疫苗发声最多的专家。

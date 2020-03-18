@@ -394,10 +394,6 @@ https://mp.weixin.qq.com/s/vTOGmcahRxQBH8RgkTJ2GA
 
 中文系同学都能听懂的集成电路设计流程
 
-https://zhuanlan.zhihu.com/p/81960137
-
-UEFI引导与传统BIOS引导在原理上有什么区别？芯片公司在其中扮演什么角色？
-
 https://mp.weixin.qq.com/s/O-2ecxYVOgEfRuwEoS7gRA
 
 Fab的那些事儿

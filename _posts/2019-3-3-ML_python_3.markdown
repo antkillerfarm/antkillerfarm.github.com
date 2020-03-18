@@ -6,6 +6,32 @@ category: AI
 
 # Machine Learning之Python篇
 
+## imgaug
+
+imgaug是一个图像数据增强方面的库，可用于扩充机器学习训练时所用的图片数据集。
+
+官网：
+
+https://imgaug.readthedocs.io/en/latest/
+
+参考：
+
+https://www.cnblogs.com/vincentcheng/p/9186540.html
+
+Augmentor和imgaug——python图像数据增强库
+
+## Netron
+
+Netron是一个DL模型的可视化工具，支持几乎所有类型的模型。
+
+代码：
+
+https://github.com/lutzroeder/netron
+
+安装：
+
+`snap install netron`
+
 ## 可视化
 
 https://github.com/neozhaoliang/pywonderland/tree/master/
@@ -405,11 +431,3 @@ python语音识别指南终极版
 https://mp.weixin.qq.com/s/pDTbiS8xFH0llUBaN1Mb_Q
 
 如何用Python写一个贪吃蛇AI
-
-https://mp.weixin.qq.com/s/mABDO5Sxv-Wc-gAgDQAbFQ
-
-用Python实现机器学习算法——简单的神经网络
-
-https://mp.weixin.qq.com/s/chT6mWmH1_zE-eH1vdB01A
-
-是技术也是艺术 使用geopandas玩转地图可视化

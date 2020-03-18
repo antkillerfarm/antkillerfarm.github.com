@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  大杂烩, 硬盘安装Linux
+title:  大杂烩, 硬盘安装Linux（legacy）
 category: linux 
 ---
 
@@ -117,7 +117,7 @@ https://mp.weixin.qq.com/s/vmIscEgDotR6ntiIdjGBLg
 
 关于CGI和FastCGI的理解
 
-# 硬盘安装Linux
+# 硬盘安装Linux（legacy）
 
 2013.9
 

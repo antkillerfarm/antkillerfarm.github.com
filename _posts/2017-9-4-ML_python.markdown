@@ -128,6 +128,10 @@ NumPy是python语言所有数学计算库的基础。它主要提供了矩阵运
 
 http://www.numpy.org/
 
+官方中文网：
+
+https://www.numpy.org.cn/
+
 教程：
 
 https://docs.scipy.org/doc/numpy-dev/user/quickstart.html
@@ -441,19 +445,3 @@ https://mp.weixin.qq.com/s/fSt27Vk29LoSDPv8KfPHjQ
 https://mp.weixin.qq.com/s/E7pk7CNQmF_6Qsjj1_2nRw
 
 Matplotlib绘制漫威英雄战力图，带你飞起来！
-
-## Pandas
-
-Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。
-
-官网：
-
-http://pandas.pydata.org/
-
-文档：
-
-http://pandas.pydata.org/pandas-docs/stable/
-
-API参考：
-
-http://pandas.pydata.org/pandas-docs/stable/api.html

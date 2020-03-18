@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  boost, Test framework, Objective-C, Haskell, Kotlin
+title:  boost, Test framework, Objective-C, Haskell, Kotlin, Lua
 category: language 
 ---
 
@@ -400,3 +400,19 @@ https://www.kotlincn.net/
 官方示例：
 
 https://github.com/Kotlin/kotlin-examples
+
+# Lua
+
+Lua的包管理工具叫做LuaRocks。官网：
+
+https://luarocks.org/
+
+参考：
+
+https://mp.weixin.qq.com/s/nwhSDxz1Pu2JCU_IeMR9ww
+
+Lua程序逆向之Luac文件格式分析
+
+http://lua-users.org/wiki/GraphicalUserInterfaceToolkits
+
+Lua的GUI工具列表

@@ -188,6 +188,14 @@ https://mp.weixin.qq.com/s/-ukPx32Vjkdz2_udBb55EA
 
 解读三种经典GCN中的Parameter Sharing
 
+https://mp.weixin.qq.com/s/JlUqwie3BtOSIwgSKvRz4w
+
+深入探讨图注意力模型：Graph Attention
+
+https://mp.weixin.qq.com/s/3FoBdd64CtklQu-3T97SIQ
+
+异构图Transformer
+
 # 深度推荐系统+
 
 https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w
@@ -249,3 +257,57 @@ https://mp.weixin.qq.com/s/2whZpeQPXggHRDSEUnQZ-w
 https://mp.weixin.qq.com/s/jIjdYIbdls5lIbF7TVfbdA
 
 阿里又出排序新模型，还被国际顶会认可了
+
+https://mp.weixin.qq.com/s/fUdKIqygxqlkuv0P4wiIRg
+
+智能推荐算法在直播场景中的应用
+
+# 肺炎版《黄冈密卷》
+
+问题由来：
+
+https://mp.weixin.qq.com/s/dR7fg6PTCVAnezlW6gTY2w
+
+新冠病毒最“强”管控，《黄冈密卷》数学题到底有多难
+
+----
+
+1.设$$\sqrt{3+\sqrt{2}+\sqrt{3}+\sqrt{6}}=\sqrt{x}+\sqrt{y}+\sqrt{z}$$，且x、y、z为有理数，则$$xyz$$=?
+
+解：
+
+$$3+\sqrt{2}+\sqrt{3}+\sqrt{6} = x+y+z+2\sqrt{xy}+2\sqrt{xz}+2\sqrt{yz}$$
+
+由x、y、z为有理数可得：
+
+$$4xy=2, 4xz=3, 4yz=6$$
+
+由于x、y、z在原式中是对称的，所以上式中选择哪个等于2、3、6，都是无所谓的。
+
+三式相乘可得：
+
+$$4^3 \cdot (xyz)^2 = 36$$
+
+$$(xyz)^2 = 9/16$$
+
+$$xyz = 3/4$$
+
+----
+
+2.设二次函数$$f(x)=ax^2+ax+1$$的图像开口向下，且满足$$f(f(1))=f(3)$$，则$$2a=?$$
+
+解：
+
+令$$y=2a$$，则$$f(1)=2a+1=y+1$$
+
+$$f(f(1))=f(y+1)=f(3)$$
+
+$$a(y+1)^2+a(y+1)+1=9a+3a+1$$
+
+$$(y+1)^2+(y+1)=12$$
+
+$$y^2+3y-10=0$$
+
+$$(y+5)(y-2)=0$$
+
+因为图像开口向下，所以$$2a=-5$$。
