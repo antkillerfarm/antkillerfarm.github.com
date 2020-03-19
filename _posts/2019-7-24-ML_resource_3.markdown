@@ -226,6 +226,10 @@ https://mp.weixin.qq.com/s/WJUGbyPgLgVX6Q8SXjOP1A
 
 如何抢别人怀里的女孩子?
 
+https://zhuanlan.zhihu.com/p/114264831
+
+Kernel Distribution Embedding（用于测试两批数据是否来自同一个分布采样）
+
 # Attention进阶+
 
 https://mp.weixin.qq.com/s/7OYY3L7gL4wVv_EjoosOHA

@@ -236,6 +236,14 @@ $$(\boldsymbol{W}_1\boldsymbol{x}+\boldsymbol{b}_1)\otimes \sigma(\boldsymbol{W}
 
 GLU一般用在NLP领域，它和CNN结合，也就是所谓的GCNN了。
 
+## RRelu
+
+
+
+论文：
+
+《Empirical Evaluation of Rectified Activations in ConvolutionNetwork》
+
 ## Swish
 
 Swish是Google大脑团队提出的一个新的激活函数：
