@@ -151,6 +151,10 @@ Gaussian process classification初介绍——回归与分类点点滴滴
 
 # Optimizer进阶
 
+https://mp.weixin.qq.com/s/GS3TvS9nZw-CSJds-Aw_ug
+
+UIUC孙若愚：60页论文综述深度学习优化
+
 https://mp.weixin.qq.com/s/7E8o1TnvmAvZgB7_AWCunQ
 
 2018值得尝试的无参数全局优化新算法

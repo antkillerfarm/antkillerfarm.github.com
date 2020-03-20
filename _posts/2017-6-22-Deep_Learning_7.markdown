@@ -244,6 +244,22 @@ GLU一般用在NLP领域，它和CNN结合，也就是所谓的GCNN了。
 
 《Empirical Evaluation of Rectified Activations in ConvolutionNetwork》
 
+## GELU
+
+论文：
+
+《Gaussian Error Linear Units (GELUs)》
+
+参考：
+
+https://mp.weixin.qq.com/s/pA9JW75p9J5e5KHe3ifcBQ
+
+从ReLU到GELU，一文概览神经网络的激活函数
+
+https://mp.weixin.qq.com/s/LEPalstOc15CX6fuqMRJ8Q
+
+超越ReLU却鲜为人知，3年后被挖掘：BERT、GPT-2等都在用的激活函数（GELU）
+
 ## Swish
 
 Swish是Google大脑团队提出的一个新的激活函数：
@@ -319,19 +335,3 @@ http://blog.csdn.net/u012328159/article/details/69898137
 https://mp.weixin.qq.com/s/Hic01RxwWT_YwnErsJaipQ
 
 什么是激活函数？
-
-https://mp.weixin.qq.com/s/4gElB_8AveWuDVjtLw5JUA
-
-深度学习激活函数大全
-
-https://mp.weixin.qq.com/s/7DgiXCNBS5vb07WIKTFYRQ
-
-从ReLU到Sinc，26种神经网络激活函数可视化
-
-http://www.cnblogs.com/ymjyqsx/p/6294021.html
-
-PReLU与ReLU
-
-http://www.cnblogs.com/pinard/p/6437495.html
-
-深度神经网络（DNN）损失函数和激活函数的选择

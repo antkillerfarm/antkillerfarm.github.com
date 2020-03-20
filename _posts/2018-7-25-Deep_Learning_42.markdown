@@ -130,6 +130,10 @@ https://mp.weixin.qq.com/s/YWzHnN5mQQtM9M3Uao8iGQ
 
 伯克利-滴滴出行：深度学习多源领域自适应综述论文
 
+https://mp.weixin.qq.com/s/WwA_IP4rIpZ6GgFkzQ3sNA
+
+增量学习不只有finetune，三星AI提出增量式少样本目标检测算法ONCE
+
 # 深度ISP
 
 ## 数据集

@@ -289,3 +289,7 @@ http://blog.csdn.net/shuzfan/article/details/77964370
 https://mp.weixin.qq.com/s/rXr_XBc2Psh3NSA0pj4ptQ
 
 常建龙：深度卷积网络中的卷积算子研究进展
+
+https://mp.weixin.qq.com/s/i8vOeAVEYX-hRAvPSe6DEA
+
+一文看尽神经网络中不同种类的卷积层

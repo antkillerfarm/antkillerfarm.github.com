@@ -196,6 +196,10 @@ https://mp.weixin.qq.com/s/3FoBdd64CtklQu-3T97SIQ
 
 异构图Transformer
 
+https://zhuanlan.zhihu.com/p/86181013
+
+网络图模型综述
+
 # 深度推荐系统+
 
 https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w

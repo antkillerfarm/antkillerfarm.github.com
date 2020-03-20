@@ -305,3 +305,7 @@ https://mp.weixin.qq.com/s/8EQNRIIKQnyoPhUG8ben6A
 https://mp.weixin.qq.com/s/MjkdwozIXoCJbooQHype7w
 
 视频异常检测：预测未来帧Future Frame Prediction的3个缺陷
+
+https://zhuanlan.zhihu.com/p/114672282
+
+漫谈视频目标跟踪与分割

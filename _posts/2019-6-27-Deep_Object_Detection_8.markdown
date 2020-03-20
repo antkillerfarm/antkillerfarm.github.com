@@ -273,3 +273,27 @@ https://mp.weixin.qq.com/s/Aq2OJqGnT6z4zoG-6rslkQ
 https://zhuanlan.zhihu.com/p/82371629
 
 Imbalance Problems in Object Detection: A Review
+
+# 设计模式
+
+面向对象的设计模式有七大基本原则：
+
+开闭原则（Open Closed Principle，OCP）
+
+单一职责原则（Single Responsibility Principle, SRP）
+
+里氏代换原则（Liskov Substitution Principle，LSP）
+
+依赖倒转原则（Dependency Inversion Principle，DIP）
+
+接口隔离原则（Interface Segregation Principle，ISP）
+
+合成/聚合复用原则（Composite/Aggregate Reuse Principle，CARP）
+
+最少知识原则（Least Knowledge Principle，LKP）或者迪米特法则（Law of Demeter，LOD）
+
+参考：
+
+https://mp.weixin.qq.com/s/9gDGQhzRAL3pj35VAinZbQ
+
+设计模式在外卖营销业务中的实践

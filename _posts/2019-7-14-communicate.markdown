@@ -102,10 +102,6 @@ https://mp.weixin.qq.com/s/Btlj2A329KUbRU9It79OKQ
 
 面试环节：在浏览器输入URL回车之后发生了什么？
 
-https://mp.weixin.qq.com/s/unzge23Aw0jrvBST-iW0Qw
-
-HTTP/3的过去、现在和未来
-
 https://zhuanlan.zhihu.com/p/101702312
 
 详解TCP超时与重传机制
@@ -113,6 +109,22 @@ https://zhuanlan.zhihu.com/p/101702312
 https://mp.weixin.qq.com/s/Mc7vpJw5r_vcbsxLXwfeNA
 
 看完这篇HTTP，跟面试官扯皮就没问题了
+
+## URI
+
+URI = Universal Resource Identifier
+
+URL = Universal Resource Locator
+
+URN = Universal Resource Name
+
+个人的身份证号就是URN，个人的家庭地址就是URL，URN可以唯一标识一个人，而URL可以告诉邮递员怎么把货送到你手里。
+
+参考：
+
+https://blog.csdn.net/koflance/article/details/79635240
+
+URL和URI的区别
 
 ## QUIC
 
@@ -147,6 +159,10 @@ HTTP/3竟然基于UDP，HTTP协议这些年都经历了啥？（HTTP/3之前名�
 https://mp.weixin.qq.com/s/fy84edOix5tGgcvdFkJi2w
 
 一文读懂HTTP/1 HTTP/2 HTTP/3
+
+https://mp.weixin.qq.com/s/unzge23Aw0jrvBST-iW0Qw
+
+HTTP/3的过去、现在和未来
 
 # Apollo
 

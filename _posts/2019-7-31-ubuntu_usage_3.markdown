@@ -245,7 +245,7 @@ https://www.cnblogs.com/iamnewsea/p/7701464.html
 
 Ubuntu官网很慢，可以选择国内的Mirror替换之：
 
-更改 /etc/apt/sources.list 文件中 Ubuntu 默认的源地址`http://archive.ubuntu.com/ `为`http://mirrors.aliyun.com/ubuntu/`即可。 
+更改/etc/apt/sources.list文件中Ubuntu默认的源地址`http://archive.ubuntu.com/`为`http://mirrors.aliyun.com/ubuntu/`即可。
 
 其他mirror还有：
 
