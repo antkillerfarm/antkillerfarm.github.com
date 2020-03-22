@@ -242,7 +242,9 @@ GLU一般用在NLP领域，它和CNN结合，也就是所谓的GCNN了。
 
 论文：
 
-《Empirical Evaluation of Rectified Activations in ConvolutionNetwork》
+《Empirical Evaluation of Rectified Activations in Convolution Network》
+
+![](/images/img3/RRelu.png)
 
 ## GELU
 

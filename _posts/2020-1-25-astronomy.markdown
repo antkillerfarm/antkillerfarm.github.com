@@ -114,6 +114,14 @@ https://www.zhihu.com/question/300723940/answer/598468527
 
 为什么有人说人类有可能是宇宙中的第一个文明？
 
+https://zhuanlan.zhihu.com/p/30124129
+
+引力波的能量之谜：“爱因斯坦奇迹年”和五份手稿
+
+https://mp.weixin.qq.com/s/9RpeIYJXyFzh31WYC_1lbw
+
+宇宙可以用方程描述吗？
+
 ## 流浪地球
 
 https://mp.weixin.qq.com/s/O8tAEBMmZ29N1fr7BGW_UQ

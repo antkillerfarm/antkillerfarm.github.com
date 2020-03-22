@@ -365,3 +365,7 @@ https://mp.weixin.qq.com/s/MGeuFEQ4wvEERSrSVVihJg
 https://mp.weixin.qq.com/s/BNQRi4hHnWXMDkSDbno_kg
 
 不要犯战略性的失误——如何合理制定推荐系统的优化目标？
+
+https://mp.weixin.qq.com/s/VFUryyuIY-cWhWK-oU9byg
+
+推荐系统的人工调控

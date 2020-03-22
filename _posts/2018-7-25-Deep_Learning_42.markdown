@@ -328,6 +328,10 @@ https://mp.weixin.qq.com/s/skA3NZIAzTrsnSsNCxCYSA
 
 类脑计算背后的计算神经科学框架
 
+https://mp.weixin.qq.com/s/ku78_exDM-OUwWPBCNahCg
+
+Spiking-YOLO：前沿性研究，脉冲神经网络在目标检测的首次尝试
+
 # AI可解释性
 
 XAI(Explainable Artificial Intelligence)
@@ -377,3 +381,7 @@ https://mp.weixin.qq.com/s/pV7C2sSJwP3rBO6OYeF-nw
 https://mp.weixin.qq.com/s/6yfHwsk-fTEtQhrciMEBug
 
 重识别（re-ID）特征适合直接用于跟踪（tracking）问题么？
+
+https://mp.weixin.qq.com/s/Q34wjziJBBOrb1VPhQJK8g
+
+行人重识别简介

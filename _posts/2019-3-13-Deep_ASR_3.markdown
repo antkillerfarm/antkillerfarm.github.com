@@ -270,6 +270,10 @@ https://mp.weixin.qq.com/s/GTzGwKQfJgopd96doe8rIg
 
 用于语音自动处理的深度神经网络综述:从大型语料库到有限数据的调查
 
+https://mp.weixin.qq.com/s/wjVDgwHpLYM3vZWL5AJvDg
+
+解决“鸡尾酒会问题”的利器-基于盲源分离的前端信号处理框架
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw

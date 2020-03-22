@@ -254,6 +254,10 @@ https://mp.weixin.qq.com/s/qOt0V1XsQvwpKhNiaAfVjA
 
 胡伟-知识图谱融合方法概述分享
 
+https://mp.weixin.qq.com/s/5G-xon0i5Aq-M4i0rHJPBg
+
+如何从0构建知识图谱
+
 # DRL参考资源+
 
 https://mp.weixin.qq.com/s/vYDb1rTdPxO1sIS38VX5xA
@@ -353,3 +357,11 @@ https://mp.weixin.qq.com/s/8Fgzb8JiAoNSJqUanSi85Q
 https://mp.weixin.qq.com/s/2RRJDStTL7l2Ra3SnNEEYg
 
 发布自己的python库到pypi
+
+https://mp.weixin.qq.com/s/PBaDdLcYxDso2V4aZcFXpA
+
+盘一盘Python错误类型
+
+https://mp.weixin.qq.com/s/8uxc2t53N_j_mRPYbiG0sA
+
+5个案例让Python输出漂亮的命令行表格！

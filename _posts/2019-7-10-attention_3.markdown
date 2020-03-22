@@ -154,6 +154,10 @@ https://www.zhihu.com/question/302392659
 
 有了Transformer框架后是不是RNN完全可以废弃了？
 
+https://mp.weixin.qq.com/s/_gTNZKCfhoazYR09hmu5lQ
+
+时间自适应卷积：比自注意力更快的特征提取器
+
 # BERT
 
 ## 概述
@@ -268,6 +272,10 @@ BERT的论文并未提到执行NMT任务时的网络结构，但从下面的论�
 
 也就是说，仍然有decoder部分，仍然不能完全并行。
 
+## BERT进化史
+
+![](/images/img3/BERT.jpg)
+
 ## ELMo
 
 https://mp.weixin.qq.com/s/I315hYPrxV0YYryqsUysXw
@@ -351,23 +359,3 @@ https://mp.weixin.qq.com/s/xk5fWrSBKErH8tvl-3pgtg
 https://zhuanlan.zhihu.com/p/80215294
 
 GPT：第一个引入Transformer的预训练模型
-
-## ERNIE
-
-ERNIE是百度2019年提出的。
-
-论文：
-
-《ERNIE: Enhanced Representation through Knowledge Integration》
-
-《ERNIE 2.0: A continual pre-training framework for language understanding》
-
-代码：
-
-https://github.com/PaddlePaddle/ERNIE/
-
-除此之外，清华也有一篇叫ERNIE的论文：
-
-《ERNIE: Enhanced Language Representation with Informative Entities》
-
-这几篇论文主要讨论了，如何将语义信息融入BERT。篇幅原因，这里只关注百度的两篇论文的做法。

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  量子计算, 遗传算法 & 进化算法, PaddlePaddle, X-Deep Learning, TVM, 安全
+title:  量子计算, 遗传算法 & 进化算法, PaddlePaddle, X-Deep Learning, TVM
 category: resource 
 ---
 
@@ -203,6 +203,10 @@ https://mp.weixin.qq.com/s/Jc5f4iX9uoOo5igQ79P77w
 
 多目标进化算法在混合可再生能源系统的应用
 
+https://mp.weixin.qq.com/s/HinllnxgOXQc-NIZ6Qur5A
+
+小小黏菌，大大智慧：预测星系间暗物质网络的黏菌算法
+
 # PaddlePaddle
 
 https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q
@@ -355,44 +359,8 @@ https://zhuanlan.zhihu.com/p/58918363
 
 TVM: Deep Learning模型的优化编译器
 
-# 安全
+# Jittor
 
-https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
+https://mp.weixin.qq.com/s/ZwP1H-efHK1dp2X2ElEs8g
 
-前端安全系列之一：如何防止XSS攻击？
-
-http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
-
-理解OAuth 2.0
-
-https://mp.weixin.qq.com/s/QsKceFcxELbUDSbehs8QpQ
-
-解读https的正确姿势
-
-https://www.cnblogs.com/linianhui/category/929878.html
-
-一个认证授权方面的专栏
-
-https://mp.weixin.qq.com/s/OLg_wocXJz7VGDabTtxdWQ
-
-Web登录很简单？开玩笑！
-
-https://mp.weixin.qq.com/s/agS2-wu6HGO__QfbIt7Esw
-
-数字签名是什么？
-
-https://mp.weixin.qq.com/s/YNMw8u7O6u7Bc4-mnrwRXg
-
-老听别人说加密算法，现在给你个机会深入了解下
-
-http://www.xfyun.cn/share/?p=2626
-
-开发者常犯的十大加密错误
-
-https://mp.weixin.qq.com/s/nWoo-Pr50341WJNwtSZq1w
-
-工程师的灵魂拷问：你的密钥安全吗？
-
-https://mp.weixin.qq.com/s/z5zMETSMUGoTiZYMooKZ-g
-
-内核空间镜像攻击揭秘：ARM硬件特性，竟能开启安卓8终端的上帝模式？
+清华开源Jittor：首个国内高校自研深度学习框架，一键转换PyTorch

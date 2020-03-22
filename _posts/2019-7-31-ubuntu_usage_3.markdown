@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Ubuntu使用技巧（三）, 硬盘安装Linux（UEFI）, diff&patch, awk&sed&grep, Mac OS X
+title:  Ubuntu使用技巧（三）, 硬盘安装Linux（UEFI）, diff&patch, awk&sed&grep
 category: linux 
 ---
 
@@ -357,21 +357,3 @@ ip addr show br-lan | grep 'inet ' | awk  '{print $2}' | sed 's/\/.*//g'
 https://mp.weixin.qq.com/s/o1vuL3RrWz9tyUPguZeSWA
 
 简单快捷的数据处理，数据科学需要注意的命令行
-
-# Mac OS X
-
-最近对iOS开发产生了兴趣，于是准备在PC上搭建一个iOS的开发环境。
-
-首先，我搜了一下在Linux上搭建相关环境的方法，搜到了一些结果。但历史比较老，基本都是3、4年前的东西，就算搭好，也不见得有什么用。
-
-于是，目标改为在PC上使用Virtual Box搭建Mac OS X虚拟机。目标版本为Mac OS X 10.10。
-
-1.下载镜像文件。
-
-镜像文件主要有dmg和iso两种。前者必须在Mac OS X中才能执行，而后者和其他OS镜像差别不大。
-
-2.boot
-
-原版镜像由于Apple的硬件检测机制，并不能在PC上运行。这时就需要破解，这一步一般是在boot中做的。
-
-可用的boot工具，早期有empireEFI、HackBoot。较新的有chameleon、Niresh。

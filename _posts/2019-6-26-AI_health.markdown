@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/UHlY_-mYBLT383TP6Y7Oew
 
 生物数据挖掘中的深度学习综述论文，36页pdf
 
+https://mp.weixin.qq.com/s/w_5-3ViQyBpRVyVe0sHFLw
+
+深度学习生命科学：基因组学、药物发现，238页pdf
+
 # 可视化
 
 ![](/images/img2/data_visual.png)

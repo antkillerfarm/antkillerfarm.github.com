@@ -377,6 +377,10 @@ https://mp.weixin.qq.com/s/Htn1Il96fus7s8NkD2_98w
 
 Google Pixel4相机解密(1)夜景
 
+https://mp.weixin.qq.com/s/2uNcJxU-USpb-LZkka__eQ
+
+剖析苹果的激光雷达及参数估计
+
 # 编译原理
 
 https://zhuanlan.zhihu.com/frozengene
@@ -421,7 +425,7 @@ https://mp.weixin.qq.com/s/4FJzxPyCmakjIU-9xlQmJQ
 
 阁下可知文言编程之精妙？CMU本科生开源文言文编程语言，数天2K星
 
-# NLP参考资源+
+# NLP参考资源
 
 https://mp.weixin.qq.com/s/vLw-krU2vorr5ZUAPI7VMA
 

@@ -309,3 +309,41 @@ https://mp.weixin.qq.com/s/MjkdwozIXoCJbooQHype7w
 https://zhuanlan.zhihu.com/p/114672282
 
 漫谈视频目标跟踪与分割
+
+https://mp.weixin.qq.com/s/oY51Rk6qD7fxeSRIf7HAFg
+
+图像生成玩腻了？视频生成技术何不来了解一下
+
+# BERT+
+
+https://mp.weixin.qq.com/s/IN4YfoZnlBozwEFdhSvLZg
+
+用可视化解构BERT，我们从上亿参数中提取出了6种直观模式
+
+https://mp.weixin.qq.com/s/nIT3GIU0dUIYyGChxsiOWw
+
+Google BERT应用之《红楼梦》对话人物提取
+
+https://mp.weixin.qq.com/s/dcp_ANYijRmicMYX7OpJmA
+
+如何用最强模型BERT做NLP迁移学习？
+
+https://mp.weixin.qq.com/s/DR4SkgOfUT7KYiaXm5NynQ
+
+跨语言版BERT：Facebook提出跨语言预训练模型XLM
+
+https://mp.weixin.qq.com/s/epjjHmlmMFhWtRO_cCUITA
+
+用BERT进行多标签文本分类
+
+https://mp.weixin.qq.com/s/Wk6gvOS_Qnud6ib1esMFXA
+
+加入Transformer-XL，这个PyTorch包能调用各种NLP预训练模型！
+
+https://mp.weixin.qq.com/s/GqqU3Ixht1BzMnQeRYQEqQ
+
+谷歌NLP深度学习模型BERT特征的可解释性表现怎么样？
+
+https://mp.weixin.qq.com/s/2f91Ksj19rk_emoFpEmPfA
+
+从BERT看大规模数据的无监督利用

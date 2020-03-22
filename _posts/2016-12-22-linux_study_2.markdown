@@ -429,6 +429,10 @@ http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html
 
 进程与线程的一个简单解释
 
+https://mp.weixin.qq.com/s/zVi45pZka_kPpKIoNXNVBA
+
+当初我要是这么学习“进程和线程”就好了
+
 https://mp.weixin.qq.com/s/I7C7cXFgxO7RO0Wpjjj3xQ
 
 一篇文章带你“重新认识”线程上下文切换怎么玩儿

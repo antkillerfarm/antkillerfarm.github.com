@@ -166,10 +166,6 @@ https://mp.weixin.qq.com/s/X3RVXKi40uEO7ra8mX_C-w
 
 海量数据下的舆情分析，该如何搭建？
 
-https://mp.weixin.qq.com/s/q2XL-_XoRLL1xLzGmzlo6A
-
-分布式快照算法: Chandy-Lamport
-
 https://mp.weixin.qq.com/s/DBcGC1ViNlIda0u9pr7djQ
 
 统一Elasticsearch、MySQL、Hive的SQL查询引擎，我们把它开源了！
@@ -206,47 +202,11 @@ https://mp.weixin.qq.com/s/Ue4toNlLD0-zAstVJP2ynA
 
 爱奇艺大数据实时分析平台的建设与实践
 
+https://mp.weixin.qq.com/s/mYwaGszQGod_o6f3p2QbDw
+
+深度对比Delta、Iceberg和Hudi三大开源数据湖方案
+
 # 新冠肺炎
-
-## 历史（续）
-
-https://mp.weixin.qq.com/s/uoLGz_giq88nkNJ4-80n3Q
-
-全球百年视角再审视：历次突发疫情是如何消退的？
-
-https://mp.weixin.qq.com/s/CBwRBdGHFcjItdA81SfdOg
-
-美国从百年前的那场大流感里学到了什么？
-
-https://mp.weixin.qq.com/s/_ye9rCrsh6pdPgVHrzveEQ
-
-166年前的那场大霍乱，伦敦做对了什么？
-
-----
-
-在这场争论中，最早推广Pfeifer氏菌疫苗的William Park展示了自我纠错的勇气，与George McCoy一起，成为否定细菌疫苗发声最多的专家。
-
-100年前的条件和科学水平与当前无法相比，但以William Park为代表的美国科学家所展示的勇于纠错、实事求是的精神永远不会过时。
-
->William Hallock Park，1863～1939，美国医学家。Columbia University博士（1886）。长期供职于卫生部纽约实验室（也就是现在的William Park实验室）。
-
-https://mp.weixin.qq.com/s/dhNuZo0yTI1CR8oH9LYlKA
-
-以史为鉴：回顾1918年美国流感疫苗开发的闹剧
-
-----
-
-pandemics：世界性流行病
-
-epidemics：流行病
-
-quarantine源自拉丁语里的“四十”。由来是当年威尼斯人在瘟疫的时候，让外来船只停40天再下船的操作。
-
-----
-
-1619年，被后来人称为“16世纪死神”的法国医生查尔斯·德洛姆（Charles de Lorme）发明了一种诡异的银制面具，外形设计呈鸟嘴状，由皮革包裹，面具的眼睛部分用玻璃嵌入，至于最关键的过滤系统，则用棉花、樟脑、玫瑰等填充物构成，置于鸟嘴处，一定程度上阻隔了空气中的病菌。
-
-![](/images/img3/Doctor_Schnabel.jpg)
 
 ## SARS
 
@@ -357,3 +317,11 @@ https://mp.weixin.qq.com/s/4IvGptHaIJWPeLH5vtfEDA
 全欧盟+英国，加起来才400多台，意大利全国才60几台。德国法国西班牙的存量应该也差不多。小国有的个位数的ECMO。
 
 欧洲还真以为中国医疗落后呢。
+
+----
+
+北京的和睦家是不错的综合性医院，先前也被列入发热门诊医疗机构，但是之后不久以“升级改造”为由关闭发热门诊。
+
+https://www.kunlunce.com/ssjj/guojipinglun/2020-02-11/140446.html
+
+李玲：疫情演化至今，是制度不足还是人的问题？

@@ -191,6 +191,10 @@ https://zhang-yi-chi.github.io/2019/08/15/cooperative-multi-agent-rl/
 
 Cooperative Multi-Agent Reinforcement Learning
 
+https://mp.weixin.qq.com/s/pLN-FHNSDYPcKmJCa4vOYA
+
+机器人在线“偷懒”怎么办？阿里研究出了这两套算法
+
 # AlphaStar
 
 AlphaStar是DeepMind在解决了围棋问题之后，在RTS游戏领域的尝试。

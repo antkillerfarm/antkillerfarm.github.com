@@ -134,6 +134,10 @@ https://zhuanlan.zhihu.com/p/107721682
 
 TextClf：简单易上手的基于pytorch/sklearn的文本分类工具
 
+https://mp.weixin.qq.com/s/ZmnP321nq_7wX4_HHskv_w
+
+文本分类冷启动和低资源？文本增强了解一下！
+
 ## 情感分析
 
 https://mp.weixin.qq.com/s/5VrZTMlNxbgZmaeOxBps_w
@@ -286,6 +290,26 @@ https://zhuanlan.zhihu.com/p/112340282
 
 深度学习方法在中文命名实体识别的应用
 
+https://mp.weixin.qq.com/s/1Osd-pSp2PQak39-AWkqYw
+
+一次实体识别和实体消歧的积极尝试
+
+https://mp.weixin.qq.com/s/tJHXrqFMMLwHq7QKFP2Jpg
+
+南洋理工：深度学习命名实体识别最新版综述
+
+https://mp.weixin.qq.com/s/gbGZDbi7XcExgHcUqiI94w
+
+NLP中的实体关系抽取方法总结
+
+https://mp.weixin.qq.com/s/EmACAfXwJnkUh3jYNWA-Dg
+
+如何使用深度学习执行文本实体提取
+
+http://www.cnblogs.com/qcloud1001/p/8074771.html
+
+神经张量网络（NTN）：探索文本实体之间的关系
+
 ## 文本摘要
 
 https://mp.weixin.qq.com/s/jk1XgnuydrsTg3HvV0CVvw
@@ -371,37 +395,3 @@ https://mp.weixin.qq.com/s/Vy7OxAojvgndgGkvmFrBKw
 https://mp.weixin.qq.com/s/CxpyMUPnKFCTpw6WgG0kqg
 
 依存句法分析的任务以及形式化定义
-
-## 阅读理解
-
-https://mp.weixin.qq.com/s/kdbaMyDLC5YaOMqTAOyLAg
-
-斯坦福陈丹琦博士论文：神经网络阅读理解与更多（附156页pdf）
-
-https://chendq-thesis-zh.readthedocs.io/en/latest/
-
-陈丹琦博士论文翻译：Neural Reading Comprehension and Beyond
-
-https://mp.weixin.qq.com/s/7UnUedr8tapwFeRnHVOkjA
-
-阿里巴巴人工智能机器阅读理解能力创新纪录
-
-https://mp.weixin.qq.com/s/Su7tGSWX2bG1UKQU-nGC5A
-
-解读R-Net：微软“超越人类”的阅读理解人工智能
-
-https://mp.weixin.qq.com/s/41mynm-vB5mpLPcR-ByOdA
-
-北大与百度提出多文章验证方法：让机器验证阅读理解候选答案
-
-https://mp.weixin.qq.com/s/mgeQXkEWu5JlZxyAM0yiaQ
-
-充分利用候选项的选择型机器阅读理解模型
-
-https://mp.weixin.qq.com/s/TnG2iYwQpJ4ugdWf-ORP-Q
-
-一览微软在机器阅读理解、推荐系统、人机对话等最新研究进展
-
-https://mp.weixin.qq.com/s/ONmwKV6VyYVt2S6lOBrE5g
-
-神经机器阅读理解：方法与趋势，附39页最新综述下载

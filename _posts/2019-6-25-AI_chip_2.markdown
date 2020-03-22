@@ -32,6 +32,10 @@ https://zhuanlan.zhihu.com/p/34164501
 
 HBM技术之显卡应用
 
+https://mp.weixin.qq.com/s/5JrsQnwL6u1fZNIpKq_hQA
+
+DRAM的架构历史和未来
+
 ## 行业信息
 
 https://mp.weixin.qq.com/s/vGoWsyaal-gAzsrhPguvFg
@@ -387,3 +391,7 @@ ISSCC 2020：AI芯片架构的转变
 https://mp.weixin.qq.com/s/kq5F47N3LS43ZKdwe9-CUQ
 
 端侧智能存算一体芯片的需求、现状与挑战
+
+https://zhuanlan.zhihu.com/p/115219461
+
+张量在神经网络加速器中的应用

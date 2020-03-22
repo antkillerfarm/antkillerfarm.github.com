@@ -4,9 +4,27 @@ title:  Attention（四）——BERT（2）
 category: Attention 
 ---
 
-# BERT
+# BERT（续）
 
-## ERNIE（续）
+## ERNIE
+
+ERNIE是百度2019年提出的。
+
+论文：
+
+《ERNIE: Enhanced Representation through Knowledge Integration》
+
+《ERNIE 2.0: A continual pre-training framework for language understanding》
+
+代码：
+
+https://github.com/PaddlePaddle/ERNIE/
+
+除此之外，清华也有一篇叫ERNIE的论文：
+
+《ERNIE: Enhanced Language Representation with Informative Entities》
+
+这几篇论文主要讨论了，如何将语义信息融入BERT。篇幅原因，这里只关注百度的两篇论文的做法。
 
 ![](/images/img3/ERNIE.png)
 
@@ -246,6 +264,26 @@ https://mp.weixin.qq.com/s/Bnk0nIjBdb58WVJEY8MqnA
 
 NLP中各种各样的编码器
 
+https://mp.weixin.qq.com/s/kwKZfNSYTzc-PGKxTxm8-w
+
+复旦大学：最新《预训练语言模型》2020综述论文
+
+https://mp.weixin.qq.com/s/1ixYjJN-bJPGrr7v-4d7Rw
+
+预训练语言模型的前世今生：萌芽时代
+
+https://mp.weixin.qq.com/s/g4jEVU3BkRem-DYXCn5eFQ
+
+预训练语言模型的前世今生：风起云涌
+
+https://mp.weixin.qq.com/s/U8f0cXoPrN32PM3944Oqkg
+
+预训练语言模型的前世今生：十分钟了解文本分类通用训练技巧
+
+https://mp.weixin.qq.com/s/uAJ_05g0Zo33mgygTnow1Q
+
+预训练语言模型的前世今生：银色独角兽GPT家族
+
 https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
 
 预训练BERT，官方代码发布前他们是这样用TensorFlow解决的
@@ -289,51 +327,3 @@ https://mp.weixin.qq.com/s/HXYDO5PM8UIoXgEPGe8p-w
 https://mp.weixin.qq.com/s/zz3j9HEuzw5e92MQXxSQsA
 
 遗珠之作？谷歌Quoc Le这篇NLP预训练模型论文值得一看
-
-https://mp.weixin.qq.com/s/IN4YfoZnlBozwEFdhSvLZg
-
-用可视化解构BERT，我们从上亿参数中提取出了6种直观模式
-
-https://mp.weixin.qq.com/s/nIT3GIU0dUIYyGChxsiOWw
-
-Google BERT应用之《红楼梦》对话人物提取
-
-https://mp.weixin.qq.com/s/dcp_ANYijRmicMYX7OpJmA
-
-如何用最强模型BERT做NLP迁移学习？
-
-https://mp.weixin.qq.com/s/DR4SkgOfUT7KYiaXm5NynQ
-
-跨语言版BERT：Facebook提出跨语言预训练模型XLM
-
-https://mp.weixin.qq.com/s/epjjHmlmMFhWtRO_cCUITA
-
-用BERT进行多标签文本分类
-
-https://mp.weixin.qq.com/s/Wk6gvOS_Qnud6ib1esMFXA
-
-加入Transformer-XL，这个PyTorch包能调用各种NLP预训练模型！
-
-https://mp.weixin.qq.com/s/GqqU3Ixht1BzMnQeRYQEqQ
-
-谷歌NLP深度学习模型BERT特征的可解释性表现怎么样？
-
-https://mp.weixin.qq.com/s/2f91Ksj19rk_emoFpEmPfA
-
-从BERT看大规模数据的无监督利用
-
-https://mp.weixin.qq.com/s/g6-NjoFMPpxjsh38X-wTFQ
-
-BERT，GPT-2这些顶尖工具到底该怎么用到我的模型里?
-
-https://mp.weixin.qq.com/s/N6xBFZ82dkSGCbj6vC5nLQ
-
-上下文预训练模型最全整理：原理、应用、开源代码、数据分享
-
-https://mp.weixin.qq.com/s/-6XpuO7_ve_EdSPCMeWE7g
-
-Attention isn’t all you need！BERT的力量之源远不止注意力
-
-https://mp.weixin.qq.com/s/Y2bs2QegRadSR7lbiFFnWg
-
-BERT一作Jacob Devlin斯坦福演讲PPT：BERT介绍与答疑

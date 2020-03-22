@@ -341,3 +341,37 @@ https://mp.weixin.qq.com/s/r-tl6ooNcQ_j4OFzV-5f3w
 https://mp.weixin.qq.com/s/OkSjIw54TNbRtKN0I2Ug1Q
 
 LeCun哈佛演讲：《机器怎样才能像人和动物一样学习》（135页PPT）
+
+# NLP参考资源+
+
+https://mp.weixin.qq.com/s/JDAlR3Z3_V0XfQlMCOM8PQ
+
+基于转移的语义依存图分析
+
+https://mp.weixin.qq.com/s/aJJFXwTorXJZqyu8T70ApA
+
+OpenAI的实体消歧新发现
+
+https://mp.weixin.qq.com/s/wLnWLNWyZdBUAPfQvg01yQ
+
+哈工大博士生周青宇：从编码器与解码器端改进生成式句子摘要
+
+https://mp.weixin.qq.com/s/go0TK5ml_LZkLTSxrQLvfA
+
+携程“小诗机”背后的机器学习和自然语言处理技术
+
+https://mp.weixin.qq.com/s/h3OXtnEOmT_YPs4QEU1Gag
+
+Chatbot这么火，但你真的知道它的玩法有哪几种吗？
+
+https://mp.weixin.qq.com/s/lHhmUR-DXMceJSxwIn7QGw
+
+探寻开放域对话生成中的隐式反馈
+
+https://mp.weixin.qq.com/s/X1h6EfLVDAnDj2pKZUqyJA
+
+英文文本挖掘预处理流程
+
+https://mp.weixin.qq.com/s/21bhPa4ECNFmUcF0GOQSkw
+
+从字符级的语言建模开始，了解语言模型与序列建模的基本概念

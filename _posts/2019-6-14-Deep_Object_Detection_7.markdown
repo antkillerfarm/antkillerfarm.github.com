@@ -194,6 +194,10 @@ https://mp.weixin.qq.com/s/nI_3kilFCsDHhtjFhRKytA
 
 RepPoints:替代边界框，基于点集的物体表示新方法
 
+https://mp.weixin.qq.com/s/E8FXhe5H9VqXkkGSUsxYqA
+
+目标检测中Anchor的本质分析
+
 # 其它目标检测网络
 
 ## A-Fast-RCNN
@@ -234,6 +238,10 @@ https://mp.weixin.qq.com/s/m8D5uutwlvkQNucFX_TnGw
 
 DIoU和CIoU：IoU在目标检测中的正确打开方式
 
+https://mp.weixin.qq.com/s/VtBfIVj74dhg9HjpxN7rhw
+
+DIoU损失函数详解
+
 https://zhuanlan.zhihu.com/p/109677830
 
 Distance-IoU Loss
@@ -255,6 +263,10 @@ https://mp.weixin.qq.com/s/S1IrgEqS1Q4xqGl5adNrlg
 https://mp.weixin.qq.com/s/5I9uzGCNFD93L1mzakTl0Q
 
 目标检测网络学习总结（RCNN-->YOLO V3）
+
+https://mp.weixin.qq.com/s/8Vac8MRpmviVDKRrAeFR0A
+
+后R-CNN时代，Faster R-CNN、SSD、YOLO各类变体统治下的目标检测综述：Faster R-CNN系列胜了吗？
 
 https://mp.weixin.qq.com/s/zeruKQOye_QNWgluVIN0BA
 

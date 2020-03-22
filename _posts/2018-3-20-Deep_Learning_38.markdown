@@ -134,6 +134,10 @@ https://zhuanlan.zhihu.com/p/112140909
 
 基于深度学习的人脸识别方法介绍
 
+https://mp.weixin.qq.com/s/PsToV8Z17tRzXW_AbaMNmg
+
+Blazeface人脸检测器
+
 # RNN进阶
 
 ## IndRNN

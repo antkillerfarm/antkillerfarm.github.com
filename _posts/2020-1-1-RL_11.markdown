@@ -163,3 +163,7 @@ https://zhuanlan.zhihu.com/p/26335999
 https://zhuanlan.zhihu.com/p/25345778
 
 蒙特卡洛树搜索（MCTS）基础
+
+https://mp.weixin.qq.com/s/-EPdmepNK9THAwTx_TZypQ
+
+蒙特卡罗树搜索算法初学者指南

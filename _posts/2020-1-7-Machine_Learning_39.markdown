@@ -285,3 +285,7 @@ AIOps中异常检测的简单应用
 https://mp.weixin.qq.com/s/EOBjLqvi_WcSjiDb8b5Nwg
 
 异常检测怎么做，试试孤立随机森林算法
+
+https://mp.weixin.qq.com/s/uz5hjoG-m2PpnQxXZbHbFw
+
+深度学习中的异常实例检测:综述论文

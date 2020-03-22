@@ -1,10 +1,30 @@
 ---
 layout: post
-title:  数据库, 分布式ID生成器, IEEE 802
+title:  数据库
 category: technology 
 ---
 
 # 数据库
+
+## SQL与数据库
+
+2010.3
+
+这几天看到了这篇文章：
+
+http://www.cnbeta.com/articles/104987.htm
+
+Twitter用户暴增20倍 计划弃用MySQL
+
+之前许多课本中的概念顿时浮现在眼前。曾几何时，SQL成了数据库的同义词，以至于离开SQL就没法操作数据库了。但其实SQL所代表的关系型数据库，只是数据库的一类而已。除此之外还有很多其他类型的数据库。
+
+Oracle的广告词，给当时尚在学校的我产生了这样的错觉：“只有数据库，才是处理大量数据的最好方法。”直到后来随着自己技术的进步，才知道这样的想法是如何的荒谬。
+
+一个身边的例子，有一次我们需要处理一批数据，在使用数据库的情况下，需要2天才能处理完，峰值时内存的占用接近4G。但这还不是最糟的，关键的问题是以后数据的规模会越来越大，一旦内存占用超过4G，旧的32位硬件软件就不够用了。（当时我们对硬件了解的不多，不知道Intel X86有PAE模式，以为4G就是32位PC的极限了，其实不然。）
+
+于是，有位同事说，这批数据虽然量大，但规则并不复杂，干脆用最原始的写文件来做吧。结果2天的处理时间缩短为1天，内存占用减少为300M。其实这也没有什么神奇的，一般的关系型数据库通常由三部分组成：SQL解释器、事务引擎和存储查询引擎。如果能够根据具体情况，去掉前两部分，并对第三部分进行优化，完全可能比Oracle做的更好。毕竟在软件这个领域并不存在超现实的东西，Oracle再牛也是跑在相应的硬件、软件之上的，少不了要和CPU、内存、硬盘打交道。
+
+结论：不要太过依赖数据库，有的时候没有数据库，更快，更简单。
 
 ## blog
 
@@ -125,6 +145,10 @@ https://mp.weixin.qq.com/s/Fj4zERz9PEuNumd_SI0bEA
 https://zhuanlan.zhihu.com/p/113612578
 
 Chandy-Lamport算法核心解读
+
+https://mp.weixin.qq.com/s/q2XL-_XoRLL1xLzGmzlo6A
+
+分布式快照算法: Chandy-Lamport
 
 ## 参考
 
@@ -264,136 +288,61 @@ https://www.cnblogs.com/ahu-lichang/p/10899747.html
 
 数据库三大范式（1NF,2NF,3NF）及ER图
 
-# 分布式ID生成器
+https://mp.weixin.qq.com/s/m_JMXU6iMS4SckzWZYtIUA
 
-![](/images/img3/Snow.png)
+腾讯分布式数据库TDSQL金融级能力的架构原理解读
 
-这种结构是雪花算法提出者Twitter的分法。百度的UidGenerator、美团的Leaf等，都是基于雪花算法做一些适合自身业务的变化。
+# Mysql
+
+## 安装
+
+`sudo apt-get install mysql-server mysql-client mysql-workbench`
+
+其中，mysql-workbench是一个查看mysql的GUI工具。
+
+安装过程中，会提示输入root用户的密码。注意：这里的root是mysql的登录帐号，而不是系统的登录帐号。
+
+·/etc/my.cnf是默认的MySQL配置文件。
+
+## 常用操作
+
+登录方法：
+
+`mysql -h 192.168.4.251 -u root -p`
+
+语句以“;”结尾。
+
+| 名称 | 操作 |
+|:--|:--|
+| 添加用户 | insert into mysql.user(Host,User,Password) <br/>values("localhost","test",password("1234")); |
+| 列出所有数据库 | show database; |
+| 切换数据库 | use 数据库名; |
+| 列出所有表 | show tables; |
+| 显示数据表结构 | describe 表名; |
+| 创建自增ID | create table github(id int auto_increment primary key not null,name varchar(256)); |
+| 查询头N条记录 | select * from shop_info limit N; |
+| 检索记录行 6-15 | select * from table limit 5,10; |
+| 删除记录 | delete from shop_info where shop_id="1"; |
+| 排序+别名+分组+count | select city_name,count(*) as city_count from shop_info group by city_name <br/>order by city_count desc limit 5; |
+| 两列排序+两列相乘 | select shop_id,count(*)*per_pay from shop_info order by per_pay desc,shop_id desc; |
+| 每日统计 | select count(shop_id),date(time_stamp) as dates from user_pay <br/>where shop_id='1234' group by dates order by dates asc; |
+| 年月日 | select year(ordertime),month(ordertime),day(ordertime) from book; |
+| 周数+星期几 | select week(ordertime),weekday(ordertime) from book; |
+| 统计表中的记录条数 | select count(*) from user_pay; |
+| 统计某一列中不同值的个数 | select count(distinct user_id) from user_pay; |
 
 参考：
 
-http://mp.weixin.qq.com/s/Bk5k6vRG4Rq4iCtmtYDEGQ
+http://www.cnblogs.com/wuhou/archive/2008/09/28/1301071.html
 
-Leaf——美团点评分布式ID生成系统
+Ubuntu安装配置Mysql
 
-https://mp.weixin.qq.com/s/6J7n3udEyQvUHRHwvALNYw
+http://www.cnblogs.com/wanghetao/p/3806888.html
 
-Leaf：美团分布式ID生成服务开源
+MySQL添加用户、删除用户与授权
 
-https://mp.weixin.qq.com/s/_z0-90xbsCd4Pdi6UlEvnA
+## 执行脚本
 
-分布式ID生成器
+mysql命令行下执行：
 
-https://mp.weixin.qq.com/s/Yk2ZlGCEINGrsTfHI6zpsw
-
-分布式id生成器
-
-https://mp.weixin.qq.com/s/E3PGP6FDBFUcghYfpe6vsg
-
-唯一ID生成算法剖析
-
-# IEEE 802
-
-IEEE 802是一系列关于局域网和城域网的标准。
-
-其中，最重要的有：
-
-802.1 802系列协议的网络层管理。
-
-802.3 Ethernet
-
-802.11 Wi-Fi
-
-802.15.1 Bluetooth
-
-802.15.4 Zigbee
-
-802.16 WiMax
-
-http://www.ieee802.org/
-
-可以在这个网址下载相关的标准文件。
-
-## 无线网状网
-
-Wireless mesh network（WMN），也叫wireless ad hoc network。
-
-Ad Hoc源自于拉丁语，意思是“for this”引申为“for this purpose only”，即“为某种目的设置的，特别的”意思，即Ad hoc网络是一种有特殊用途的网络。IEEE802.11标准委员会采用了“Ad hoc网络”一词来描述这种特殊的自组织对等式多跳移动通信网络
-
-它具有以下特点：
-
-### 无中心
-
-Ad hoc网络没有严格的控制中心。所有结点的地位平等，即是一个对等式网络。结点可以随时加入和离开网络。任何结点的故障不会影响整个网络的运行，具有很强的抗毁性。
-
-### 自组织
-
-网络的布设或展开无需依赖于任何预设的网络设施。结点通过分层协议和分布式算法协调各自的行为，结点开机后就可以快速、自动地组成一个独立的网络。
-
-### 多跳路由
-
-当结点要与其覆盖范围之外的结点进行通信时，需要中间结点的多跳转发。与固定网络的多跳不同，Ad hoc网络中的多跳路由是由普通的网络结点完成的，而不是由专用的路由设备（如路由器）完成的。
-
-### 动态拓扑
-
-Ad hoc网络是一个动态的网络。网络结点可以随处移动，也可以随时开机和关机，这些都会使网络的拓扑结构随时发生变化。　这些特点使得Ad hoc网络在体系结构、网络组织、协议设计等方面都与普通的蜂窝移动通信网络和固定通信网络有着显著的区别。
-
-无线网状网可以基于802.11、802.15或802.16。具体到802.11就是Wi-Fi Mash。
-
-## Wi-Fi Mash
-
-和普通Wi-Fi相比，Wi-Fi Mash主要增加了路由协议。而这一块目前尚无标准，有70多个相互竞争的路由协议。其中主要有：
-
-AODV (Ad hoc On-Demand Distance Vector)
-
-B.A.T.M.A.N. (Better Approach To Mobile Adhoc Networking)
-
-HWMP (Hybrid Wireless Mesh Protocol)
-
-OLSR (Optimized Link State Routing protocol)
-
-IEEE为了统一标准，提出了802.11s。目前该标准默认使用HWMP。
-
-## 消息发送的类型
-
-![](/images/article/cast.png)
-
-## 参考
-
-https://mp.weixin.qq.com/s/GgwehPL4r-Y1pEd2k60Y_Q
-
-一文看懂蓝牙Mesh技术
-
-https://mp.weixin.qq.com/s/Mvq9UNEnHoUbmxocb-rqmQ
-
-LPWAN、LoRa、LoRaWAN的区别与联系
-
-https://mp.weixin.qq.com/s/ddOTd5ljC2I9IOadBbjOIA
-
-大话Wi-Fi20年
-
-https://www.zhihu.com/question/20890194
-
-大型发布会现场的Wi-Fi应该如何搭建？
-
-----
-
-802.11b — Wifi 1 (1999)
-
-802.11a — Wifi 2 (1999)
-
-802.11g — Wifi 3 (2003)
-
-802.11n — Wifi 4 (2009)
-
-802.11ac — Wifi 5 (2014)
-
-802.11ax — Wifi 6 (2018)
-
-https://mp.weixin.qq.com/s/5MjByZWThzQ4MSWRoIS1HQ
-
-为了Wi-Fi 6，华为和小米争个啥？
-
-https://mp.weixin.qq.com/s/ZHgG3NJ3oMxmz8M6VDImXg
-
-​什么是WiFi 6E？它与WiFi 6有何不同？
+`source a.sql`

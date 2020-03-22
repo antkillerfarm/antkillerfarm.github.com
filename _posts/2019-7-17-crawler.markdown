@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  爬虫, scrapy, Mysql, UPNP（二）
+title:  爬虫, scrapy, UPNP（二）, 分布式ID生成器, IEEE 802
 category: technology 
 ---
 
@@ -174,182 +174,6 @@ https://mp.weixin.qq.com/s/hzl8D-AhpCwqZVSLTK56XQ
 
 Python爬虫--Scrapy入门
 
-# Mysql
-
-## 安装
-
-`sudo apt-get install mysql-server mysql-client mysql-workbench`
-
-其中，mysql-workbench是一个查看mysql的GUI工具。
-
-安装过程中，会提示输入root用户的密码。注意：这里的root是mysql的登录帐号，而不是系统的登录帐号。
-
-·/etc/my.cnf是默认的MySQL配置文件。
-
-## 常用操作
-
-登录方法：
-
-`mysql -h 192.168.4.251 -u root -p`
-
-语句以“;”结尾。
-
-| 名称 | 操作 |
-|:--|:--|
-| 添加用户 | insert into mysql.user(Host,User,Password) <br/>values("localhost","test",password("1234")); |
-| 列出所有数据库 | show database; |
-| 切换数据库 | use 数据库名; |
-| 列出所有表 | show tables; |
-| 显示数据表结构 | describe 表名; |
-| 创建自增ID | create table github(id int auto_increment primary key not null,name varchar(256)); |
-| 查询头N条记录 | select * from shop_info limit N; |
-| 检索记录行 6-15 | select * from table limit 5,10; |
-| 删除记录 | delete from shop_info where shop_id="1"; |
-| 排序+别名+分组+count | select city_name,count(*) as city_count from shop_info group by city_name <br/>order by city_count desc limit 5; |
-| 两列排序+两列相乘 | select shop_id,count(*)*per_pay from shop_info order by per_pay desc,shop_id desc; |
-| 每日统计 | select count(shop_id),date(time_stamp) as dates from user_pay <br/>where shop_id='1234' group by dates order by dates asc; |
-| 年月日 | select year(ordertime),month(ordertime),day(ordertime) from book; |
-| 周数+星期几 | select week(ordertime),weekday(ordertime) from book; |
-| 统计表中的记录条数 | select count(*) from user_pay; |
-| 统计某一列中不同值的个数 | select count(distinct user_id) from user_pay; |
-
-参考：
-
-http://www.cnblogs.com/wuhou/archive/2008/09/28/1301071.html
-
-Ubuntu安装配置Mysql
-
-http://www.cnblogs.com/wanghetao/p/3806888.html
-
-MySQL添加用户、删除用户与授权
-
-## 执行脚本
-
-mysql命令行下执行：
-
-`source a.sql`
-
-## 导入csv文件
-
-http://www.mysqltutorial.org/import-csv-file-mysql-table/
-
-Import CSV File Into MySQL Table
-
-示例：
-
-```sql
-LOAD DATA LOCAL INFILE 'c:/tmp/discounts.csv' 
-INTO TABLE discounts 
-FIELDS TERMINATED BY ',' 
-ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
-IGNORE 1 ROWS;
-```
-
-上面的语句中，LOCAL必不可少，否则会报如下错误：
-
-`ERROR 1290 (HY000): The MySQL server is running with the --secure-file-priv option so it cannot execute this statement`
-
-## 日志
-
-http://www.cnblogs.com/jevo/p/3281139.html
-
-MySQL日志
-
-## 时间的格式
-
-| 名称 | 格式 |
-|:--|:--|
-| DATE | YYYY-MM-DD |
-| DATETIME | YYYY-MM-DD HH:MM:SS |
-| TIMESTAMP | YYYY-MM-DD HH:MM:SS |
-| YEAR | YYYY或YY |
-
-## 中间数据的存储
-
-有的时候，SQL中间处理的结果需要存储起来，以备后用。这时有两种办法：
-
-1.创建View。
-
-```sql
-CREATE VIEW view_name AS
-SELECT column_name(s)
-FROM table_name
-WHERE condition;
-```
-
-View并不在数据库中存储数据，而是在查询时，执行其中的select语句（每次查询，都会执行），生成中间结果。因此，View从原理来说，更像是一种语法糖，而非存储机制。
-
-2.使用select语句创建table。
-
-`Create table new_table_name (Select * from old_table_name);`
-
-这种方法会将中间结果存储到数据库中，下次使用的时候，就无需重新生成了。但缺点是原table中的更新不会体现到新table中，只适合处理历史数据。
-
-## 模糊查询
-
-http://www.cnblogs.com/GT_Andy/archive/2009/12/25/1921914.html
-
-SQL 模糊查询
-
-## 三种Join的区别
-
-left join(左联接)返回包括左表中的所有记录和右表中联结字段相等的记录。
-
-right join(右联接)返回包括右表中的所有记录和左表中联结字段相等的记录。
-
-inner join(等值连接)只返回两个表中联结字段相等的行。
-
-http://www.cnblogs.com/pcjim/articles/799302.html
-
-sql之left join、right join、inner join的区别
-
-## 查询语句的执行顺序
-
-![](/images/img3/sql.png)
-
-https://mp.weixin.qq.com/s/CMcgybfgya7ftTUeUFigKg
-
-SQL查询语句总是先执行SELECT？你们都错了
-
-## 参考
-
-https://mp.weixin.qq.com/s/ok6VD1b5fhG_mY9O3d_VGA
-
-记住，永远不要在MySQL中使用“utf8”
-
-https://mp.weixin.qq.com/s/duYi1Y5jEWSPQbO3Bgsrrw
-
-SQL Server与MySQL中排序规则与字符集相关知识的一点总结
-
-https://mp.weixin.qq.com/s/N7-8vtVUg3MRY2u_NYpAiA
-
-一份值得收藏的的MySQL规范
-
-https://mp.weixin.qq.com/s/YX1XqKVfPS9DpMi_gTFNiA
-
-1000行MySQL学习笔记
-
-https://www.cnblogs.com/andy6/p/6959028.html
-
-从Oracle迁移到MySQL的各种坑及自救方案
-
-https://mp.weixin.qq.com/s/txbusDvTKwFZdX94kDp7VQ
-
-10个不为人知的SQL技巧
-
-https://mp.weixin.qq.com/s/qquMk4M81Pjw9fxkostf4Q
-
-小米：Mysql数据实时同步实践
-
-https://shockerli.net/post/1000-line-mysql-note/
-
-一千行MySQL学习笔记
-
-https://mp.weixin.qq.com/s/SCW_3AypO-rSolMcjCxVtA
-
-MySQL事务隔离级别和MVCC
-
 # UPNP（二）
 
 ## upnp-inspector
@@ -385,3 +209,177 @@ https://sourceforge.net/projects/libmcupnp/
 这是GNOME项目的upnp库，使用libsoup处理HTTP，libxml处理XML。它的官网是：
 
 https://wiki.gnome.org/Projects/GUPnP
+
+# 分布式ID生成器
+
+![](/images/img3/Snow.png)
+
+这种结构是雪花算法提出者Twitter的分法。百度的UidGenerator、美团的Leaf等，都是基于雪花算法做一些适合自身业务的变化。
+
+参考：
+
+http://mp.weixin.qq.com/s/Bk5k6vRG4Rq4iCtmtYDEGQ
+
+Leaf——美团点评分布式ID生成系统
+
+https://mp.weixin.qq.com/s/6J7n3udEyQvUHRHwvALNYw
+
+Leaf：美团分布式ID生成服务开源
+
+https://mp.weixin.qq.com/s/_z0-90xbsCd4Pdi6UlEvnA
+
+分布式ID生成器
+
+https://mp.weixin.qq.com/s/Yk2ZlGCEINGrsTfHI6zpsw
+
+分布式id生成器
+
+https://mp.weixin.qq.com/s/E3PGP6FDBFUcghYfpe6vsg
+
+唯一ID生成算法剖析
+
+# IEEE 802
+
+IEEE 802是一系列关于局域网和城域网的标准。
+
+其中，最重要的有：
+
+802.1 802系列协议的网络层管理。
+
+802.3 Ethernet
+
+802.11 Wi-Fi
+
+802.15.1 Bluetooth
+
+802.15.4 Zigbee
+
+802.16 WiMax
+
+http://www.ieee802.org/
+
+可以在这个网址下载相关的标准文件。
+
+## 无线网状网
+
+Wireless mesh network（WMN），也叫wireless ad hoc network。
+
+Ad Hoc源自于拉丁语，意思是“for this”引申为“for this purpose only”，即“为某种目的设置的，特别的”意思，即Ad hoc网络是一种有特殊用途的网络。IEEE802.11标准委员会采用了“Ad hoc网络”一词来描述这种特殊的自组织对等式多跳移动通信网络
+
+它具有以下特点：
+
+### 无中心
+
+Ad hoc网络没有严格的控制中心。所有结点的地位平等，即是一个对等式网络。结点可以随时加入和离开网络。任何结点的故障不会影响整个网络的运行，具有很强的抗毁性。
+
+### 自组织
+
+网络的布设或展开无需依赖于任何预设的网络设施。结点通过分层协议和分布式算法协调各自的行为，结点开机后就可以快速、自动地组成一个独立的网络。
+
+### 多跳路由
+
+当结点要与其覆盖范围之外的结点进行通信时，需要中间结点的多跳转发。与固定网络的多跳不同，Ad hoc网络中的多跳路由是由普通的网络结点完成的，而不是由专用的路由设备（如路由器）完成的。
+
+### 动态拓扑
+
+Ad hoc网络是一个动态的网络。网络结点可以随处移动，也可以随时开机和关机，这些都会使网络的拓扑结构随时发生变化。　这些特点使得Ad hoc网络在体系结构、网络组织、协议设计等方面都与普通的蜂窝移动通信网络和固定通信网络有着显著的区别。
+
+无线网状网可以基于802.11、802.15或802.16。具体到802.11就是Wi-Fi Mash。
+
+## Wi-Fi Mash
+
+和普通Wi-Fi相比，Wi-Fi Mash主要增加了路由协议。而这一块目前尚无标准，有70多个相互竞争的路由协议。其中主要有：
+
+AODV (Ad hoc On-Demand Distance Vector)
+
+B.A.T.M.A.N. (Better Approach To Mobile Adhoc Networking)
+
+HWMP (Hybrid Wireless Mesh Protocol)
+
+OLSR (Optimized Link State Routing protocol)
+
+IEEE为了统一标准，提出了802.11s。目前该标准默认使用HWMP。
+
+## 消息发送的类型
+
+![](/images/article/cast.png)
+
+## 参考
+
+https://mp.weixin.qq.com/s/GgwehPL4r-Y1pEd2k60Y_Q
+
+一文看懂蓝牙Mesh技术
+
+https://mp.weixin.qq.com/s/Mvq9UNEnHoUbmxocb-rqmQ
+
+LPWAN、LoRa、LoRaWAN的区别与联系
+
+https://mp.weixin.qq.com/s/ddOTd5ljC2I9IOadBbjOIA
+
+大话Wi-Fi20年
+
+https://www.zhihu.com/question/20890194
+
+大型发布会现场的Wi-Fi应该如何搭建？
+
+----
+
+802.11b — Wifi 1 (1999)
+
+802.11a — Wifi 2 (1999)
+
+802.11g — Wifi 3 (2003)
+
+802.11n — Wifi 4 (2009)
+
+802.11ac — Wifi 5 (2014)
+
+802.11ax — Wifi 6 (2018)
+
+https://mp.weixin.qq.com/s/5MjByZWThzQ4MSWRoIS1HQ
+
+为了Wi-Fi 6，华为和小米争个啥？
+
+https://mp.weixin.qq.com/s/ZHgG3NJ3oMxmz8M6VDImXg
+
+​什么是WiFi 6E？它与WiFi 6有何不同？
+
+https://mp.weixin.qq.com/s/2Jo1dGu7_Lu3yC5Xwe-IMg
+
+漫画图解UWB的发展之路
+
+# 新冠肺炎+
+
+## 疫情建模（续）
+
+https://mp.weixin.qq.com/s/bVNkCHl7BPU_eEcAWksmww
+
+关于武汉新型冠状病毒肺炎的传播预测模型
+
+https://mp.weixin.qq.com/s/Lg1tJmO7aN9XNpZ6bs0cJA
+
+程序员硬核劝告：现在还不是出门的时候
+
+https://mp.weixin.qq.com/s/sv07R8HQXX2U0QOi5_dOwg
+
+河南1105例新冠肺炎数据告诉我们什么？
+
+https://mp.weixin.qq.com/s/qRzkS2itp-eloaBlA-VSGA
+
+基于排队论模型浅析各地医护人员驰援武汉的重要意义
+
+https://mp.weixin.qq.com/s/Rs2cTVPIa02NIkApvr076w
+
+全球COVID-19研究数据集正式开放，内含近3万篇论文和所需AI研究工具！
+
+https://mp.weixin.qq.com/s/ueuvLFxQAGNzBLHHyaBYMA
+
+如果新冠病毒是在亚美尼亚爆发会发生什么？程序员用Python进行模拟
+
+https://mp.weixin.qq.com/s/LGNGFf-LBMz3qyUFPr_BHA
+
+新冠疫情下，如何降低复工的职场感染风险？
+
+https://mp.weixin.qq.com/s/0k1o-m8F5aWUWA4Nj8WnIQ
+
+我国疫情预测模型遭权威期刊退回！钟南山等人用LSTM力证“早发现早隔离”重要性

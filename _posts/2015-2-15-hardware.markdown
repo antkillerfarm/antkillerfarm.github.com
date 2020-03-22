@@ -12,6 +12,12 @@ category: technology
 
 在硬件原理图，特别是硬件草案的原理图中，常可看到0欧的电阻。0欧的电阻在效果上当然等同于导线，辛辛苦苦把它引出来焊上，究竟有何用处呢？硬件的同事告诉我，他们一般只在某些新添加的电路上使用这东西。一旦由于某些原因需要去掉新添加的电路的话，只要用电烙铁把电阻取下来就可以了，而不用再造一批测试版。
 
+参考：
+
+https://mp.weixin.qq.com/s/1DohVLPca8mj5sn4XL-u-g
+
+0欧电阻、电感、磁珠单点接地时有什么区别？
+
 # 空指针
 
 空指针的概念，本来主要是个软件概念。上学的时候，教C语言的老师，就反复强调要检查空指针。
@@ -158,49 +164,3 @@ AHB：Advanced High-performance Bus
 ASB：Advanced System Bus
 
 APB：Advanced Peripheral Bus
-
-# English
-
-SOTA(state of the art)：目前最高水平
-
-w.r.t.： 关于
-
-Curriculum Vitae：拉丁语。原意指生活道路，现引申为简历，多指学术履历，缩写是CV。
-
-et al.：等等
-
-etc.：等等
-
-Vote：投票
-
-Veto：否决票
-
-TL;DR：可以是 Too long; Didn't read（太长，所以没有看）。也可以是 Too long; Don't read （太长，请不要看），常作为一篇很长的文章的摘要标题。
-
-PoC(Proof of Concept)，即概念验证。
-
-FYI：for your information
-
-IFF：if and only if
-
-eta：estimated time of arrival
-
-w/o：without
-
-N.B.:nota bene 注意,留心
-
-----
-
-Bill is short for William
-
-Bob is short for Robert
-
-Dick is short for Richard
-
-----
-
-To be, or not to be, that is a question.
-
----Hamlet, Shakespeare
-
-生存还是毁灭

@@ -359,3 +359,7 @@ Neural Architecture Search
 https://zhuanlan.zhihu.com/p/111213620
 
 AutoML在计算机视觉领域的能与不能
+
+https://mp.weixin.qq.com/s/MIJHiYk-CjYtmW_9zW4hjA
+
+Hyper-Parameter Optimization，56页pdf

@@ -92,6 +92,20 @@ https://mp.weixin.qq.com/s/aaqd0crHdk2WyKO4J9hmDg
 
 自动驾驶中的车道线跟踪技术
 
+## 组合导航
+
+https://mp.weixin.qq.com/s/F8aLNue_qDlMyTAznBLC7g
+
+GPS/IMU/DMI组合导航方法研究
+
+https://mp.weixin.qq.com/s/tin5FtrJLnuKZCGDr8s3GA
+
+组合导航系列文章（一）：开篇
+
+https://mp.weixin.qq.com/s/BLEP6nmGSfPY3iMh_N3JKw
+
+组合导航系列文章（二）：惯性器件综述
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/26988866
@@ -287,10 +301,6 @@ highD：德国提出从空中角度测量车辆数据的新方法
 https://mp.weixin.qq.com/s/f25RbCRoWT9Ft6m_G3lyvQ
 
 全美225万公里道路没标识？揭开无人车的极端行驶秘籍
-
-https://mp.weixin.qq.com/s/F8aLNue_qDlMyTAznBLC7g
-
-GPS/IMU/DMI组合导航方法研究
 
 https://mp.weixin.qq.com/s/TvRcJws7NKt-twHUyPlJvw
 

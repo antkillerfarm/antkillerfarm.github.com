@@ -480,3 +480,7 @@ https://mp.weixin.qq.com/s/zDt92-5NVaAFZJRfEHCUvg
 https://mp.weixin.qq.com/s/IIWgNvqp0jxcD-J_CikV8w
 
 代码变油画，精细到毛发，这个前端小姐姐只用HTML+CSS，让美术设计也惊叹
+
+https://www.cnblogs.com/zzd0916/p/11977995.html
+
+浏览器工作原理与实践

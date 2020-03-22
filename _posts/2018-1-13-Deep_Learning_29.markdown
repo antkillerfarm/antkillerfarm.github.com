@@ -118,6 +118,10 @@ https://zhuanlan.zhihu.com/p/93828551
 
 图神经网络库DGL零基础上手指南
 
+https://zhuanlan.zhihu.com/p/115342917
+
+四大图神经网络架构
+
 ## PyTorch Geometric
 
 https://mp.weixin.qq.com/s/5HOA9Pmb3fjsfTVnFMdBIA
@@ -393,31 +397,3 @@ https://mp.weixin.qq.com/s/sg9O761F0KHAmCPOfMW_kQ
 https://mp.weixin.qq.com/s/PkUJsnZdihPM7q9BpvO8Ag
 
 深度学习中不得不学的Graph Embedding方法
-
-https://mp.weixin.qq.com/s/PxNGJ0hcmCo-2zvWD-rfug
-
-GCN作者Thomas Kipf最新Talk：利用图神经网络进行无监督学习
-
-https://mp.weixin.qq.com/s/CpDZEqo14X_lCBh6i7feIA
-
-图卷积神经网络(GCN)文本分类详述
-
-https://mp.weixin.qq.com/s/t2kjxrcn6O9tbJ-IQELboQ
-
-高君宇：图神经网络在视频分类中的应用
-
-https://mp.weixin.qq.com/s/SWcJut6QqOvbziirxTd2Kg
-
-斯坦福教授ICLR演讲：图网络最新进展GraphRNN和GCPN
-
-https://mp.weixin.qq.com/s/Lakq83_ngUJf1ES3N7J9_g
-
-图卷积在基于骨架的动作识别中的应用
-
-https://mp.weixin.qq.com/s/5wSgC4pXBfRLoCX-73DLnw
-
-什么是图卷积网络？行为识别领域新星
-
-https://mp.weixin.qq.com/s/1-Dmckby2NcXsaoK08zk8w
-
-视频理解中的图表示学习

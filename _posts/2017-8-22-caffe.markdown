@@ -398,19 +398,3 @@ https://mp.weixin.qq.com/s/w9CbbZ6vr6qV7DafctIf-g
 https://mp.weixin.qq.com/s/sK5uP1L9CIVOSFBOG8-F5A
 
 预训练模型ProphetNet：根据未来文本信息进行自然语言生成
-
-https://mp.weixin.qq.com/s/1ixYjJN-bJPGrr7v-4d7Rw
-
-预训练语言模型的前世今生：萌芽时代
-
-https://mp.weixin.qq.com/s/kwKZfNSYTzc-PGKxTxm8-w
-
-复旦大学：最新《预训练语言模型》2020综述论文
-
-https://mp.weixin.qq.com/s/g4jEVU3BkRem-DYXCn5eFQ
-
-预训练语言模型的前世今生：风起云涌
-
-https://mp.weixin.qq.com/s/U8f0cXoPrN32PM3944Oqkg
-
-预训练语言模型的前世今生：十分钟了解文本分类通用训练技巧

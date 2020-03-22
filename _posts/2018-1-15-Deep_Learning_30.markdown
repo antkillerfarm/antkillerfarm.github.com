@@ -6,6 +6,34 @@ category: DL
 
 # Graph NN（续）
 
+https://mp.weixin.qq.com/s/PxNGJ0hcmCo-2zvWD-rfug
+
+GCN作者Thomas Kipf最新Talk：利用图神经网络进行无监督学习
+
+https://mp.weixin.qq.com/s/CpDZEqo14X_lCBh6i7feIA
+
+图卷积神经网络(GCN)文本分类详述
+
+https://mp.weixin.qq.com/s/t2kjxrcn6O9tbJ-IQELboQ
+
+高君宇：图神经网络在视频分类中的应用
+
+https://mp.weixin.qq.com/s/SWcJut6QqOvbziirxTd2Kg
+
+斯坦福教授ICLR演讲：图网络最新进展GraphRNN和GCPN
+
+https://mp.weixin.qq.com/s/Lakq83_ngUJf1ES3N7J9_g
+
+图卷积在基于骨架的动作识别中的应用
+
+https://mp.weixin.qq.com/s/5wSgC4pXBfRLoCX-73DLnw
+
+什么是图卷积网络？行为识别领域新星
+
+https://mp.weixin.qq.com/s/1-Dmckby2NcXsaoK08zk8w
+
+视频理解中的图表示学习
+
 https://mp.weixin.qq.com/s/sJB4N_ObUqKM8H65yU_1sg
 
 Graph基础知识介绍
@@ -361,23 +389,3 @@ https://mp.weixin.qq.com/s/lwqYZurdie3lJ_-X9zgoyQ
 https://github.com/microsoft/tf-gnn-samples
 
 微软开源了一个用TF实现的GNN例程库
-
-https://mp.weixin.qq.com/s/r4_5GwA8Olqh6M1p_6eYPg
-
-图神经网络！2020 AI研究趋势！是什么？有什么用？
-
-https://mp.weixin.qq.com/s/ae515_P6zA5SLN5-Edxbig
-
-图卷积网络Graph Convolutional Networks
-
-https://mp.weixin.qq.com/s/LbMblqRWeitShSUsnebDAg
-
-基于GNN的图表示学习
-
-https://mp.weixin.qq.com/s/eg_H0D8m0LdVBJixsc-dNA
-
-张量图卷积网络(TensorGCN)文本分类
-
-https://mp.weixin.qq.com/s/sXCwe8hXWxdNbpl2i7YBtg
-
-完全基于注意力机制的图表征学习模型Graph-Bert

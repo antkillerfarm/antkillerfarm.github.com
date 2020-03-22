@@ -326,3 +326,11 @@ https://mp.weixin.qq.com/s/NVQPv5ua9kxw1MK8UVQcuQ
 https://mp.weixin.qq.com/s/QxQzGtsBUFYknvl4uOdMvw
 
 深度学习在省钱快报推荐排序中的应用与实践
+
+https://mp.weixin.qq.com/s/FcZ1E9EZ_nwhi1JZ5jBV0Q
+
+机器学习加持的Airbnb体验搜索排序实践
+
+https://mp.weixin.qq.com/s/HRGk5bfaOdj-6X4opEYA-w
+
+美图个性化推送的AI探索之路

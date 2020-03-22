@@ -223,7 +223,7 @@ http://www.luojie1987.com/index.php/post/140.html
 
 Kaldi离线在线解码应用
 
-## 参考
+# Kaldi参考资源
 
 https://mp.weixin.qq.com/s/xBbYHMQhxkRQ-dy-0gHvaw
 
@@ -232,6 +232,10 @@ https://mp.weixin.qq.com/s/xBbYHMQhxkRQ-dy-0gHvaw
 https://zhuanlan.zhihu.com/p/59686031
 
 怎样从二进制数据分辨单声道与双声道音频
+
+https://mp.weixin.qq.com/s/BDrJjrYsOJ2WP3niVG_aZA
+
+语音识别系列之区分性训练和LF-MMI
 
 # SpeechBrain
 

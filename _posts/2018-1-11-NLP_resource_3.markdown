@@ -6,6 +6,40 @@ category: resource
 
 # NLP参考资源
 
+## 阅读理解
+
+https://mp.weixin.qq.com/s/kdbaMyDLC5YaOMqTAOyLAg
+
+斯坦福陈丹琦博士论文：神经网络阅读理解与更多（附156页pdf）
+
+https://chendq-thesis-zh.readthedocs.io/en/latest/
+
+陈丹琦博士论文翻译：Neural Reading Comprehension and Beyond
+
+https://mp.weixin.qq.com/s/7UnUedr8tapwFeRnHVOkjA
+
+阿里巴巴人工智能机器阅读理解能力创新纪录
+
+https://mp.weixin.qq.com/s/Su7tGSWX2bG1UKQU-nGC5A
+
+解读R-Net：微软“超越人类”的阅读理解人工智能
+
+https://mp.weixin.qq.com/s/41mynm-vB5mpLPcR-ByOdA
+
+北大与百度提出多文章验证方法：让机器验证阅读理解候选答案
+
+https://mp.weixin.qq.com/s/mgeQXkEWu5JlZxyAM0yiaQ
+
+充分利用候选项的选择型机器阅读理解模型
+
+https://mp.weixin.qq.com/s/TnG2iYwQpJ4ugdWf-ORP-Q
+
+一览微软在机器阅读理解、推荐系统、人机对话等最新研究进展
+
+https://mp.weixin.qq.com/s/ONmwKV6VyYVt2S6lOBrE5g
+
+神经机器阅读理解：方法与趋势，附39页最新综述下载
+
 ## 聊天机器人
 
 http://www.shareditor.com/bloglistbytag/?tagname=%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%81%9A%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA
@@ -288,10 +322,6 @@ http://www.cnblogs.com/qcloud1001/p/7910255.html
 
 LSF-SCNN：一种基于CNN的短文本表达模型及相似度计算的全新优化模型
 
-http://www.cnblogs.com/qcloud1001/p/8074771.html
-
-神经张量网络（NTN）：探索文本实体之间的关系
-
 https://mp.weixin.qq.com/s/Y-skeJvkWlgkwKBpCjPaKA
 
 中文文本挖掘流程详解
@@ -355,39 +385,3 @@ OpenAI提出新型神经网络：自动计算词对象，实现实体消岐
 https://mp.weixin.qq.com/s/dThV1YtMvYtToJFqgXnEzQ
 
 谷歌大脑提出通过多文档摘要方法生成维基百科，可处理较长序列
-
-https://mp.weixin.qq.com/s/JDAlR3Z3_V0XfQlMCOM8PQ
-
-基于转移的语义依存图分析
-
-https://mp.weixin.qq.com/s/aJJFXwTorXJZqyu8T70ApA
-
-OpenAI的实体消歧新发现
-
-https://mp.weixin.qq.com/s/wLnWLNWyZdBUAPfQvg01yQ
-
-哈工大博士生周青宇：从编码器与解码器端改进生成式句子摘要
-
-https://mp.weixin.qq.com/s/go0TK5ml_LZkLTSxrQLvfA
-
-携程“小诗机”背后的机器学习和自然语言处理技术
-
-https://mp.weixin.qq.com/s/h3OXtnEOmT_YPs4QEU1Gag
-
-Chatbot这么火，但你真的知道它的玩法有哪几种吗？
-
-https://mp.weixin.qq.com/s/lHhmUR-DXMceJSxwIn7QGw
-
-探寻开放域对话生成中的隐式反馈
-
-https://mp.weixin.qq.com/s/X1h6EfLVDAnDj2pKZUqyJA
-
-英文文本挖掘预处理流程
-
-https://mp.weixin.qq.com/s/EmACAfXwJnkUh3jYNWA-Dg
-
-如何使用深度学习执行文本实体提取
-
-https://mp.weixin.qq.com/s/21bhPa4ECNFmUcF0GOQSkw
-
-从字符级的语言建模开始，了解语言模型与序列建模的基本概念

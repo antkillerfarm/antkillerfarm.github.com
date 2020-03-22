@@ -339,3 +339,11 @@ https://mp.weixin.qq.com/s/joUb4cBxzUVyichYfN9l8g
 https://mp.weixin.qq.com/s/MPNQPNfFjUqCKUH7OdTDzA
 
 元迁移学习的小样本学习，Meta-transfer Learning for Few-shot Learning，33页ppt
+
+https://mp.weixin.qq.com/s/eUQQEB_0ts0K9h1mw7GQcA
+
+元人脸识别，Learning Meta Face Recognition
+
+https://mp.weixin.qq.com/s/wPKSUpQcB-WrpgsU1Q4iZA
+
+使用MAML元学习的少样本图分类

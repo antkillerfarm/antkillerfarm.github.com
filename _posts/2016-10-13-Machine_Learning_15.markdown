@@ -232,6 +232,10 @@ https://blog.csdn.net/daunxx/article/details/51596877
 
 Lasso Regression
 
+https://mp.weixin.qq.com/s/kFEwvgBC4-Y05vL3lmRbXQ
+
+正则的一些intuition，一分钟发明新正则
+
 # Krylov subspace
 
 Krylov subspace是一类针对大矩阵的近似计算的方法，由Aleksey Nikolaevich Krylov于1931年提出。

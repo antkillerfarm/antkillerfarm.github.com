@@ -4,6 +4,40 @@ title:  垃圾筐
 category: Nature 
 ---
 
+# 空气动力学
+
+https://mp.weixin.qq.com/s/ei84HDZIkXQr2k0ghlN_Mw
+
+C罗踢球时在想什么？这是一篇空气动力学的blog
+
+https://mp.weixin.qq.com/s/67vQtycjDEo-JdUpUA1hqg
+
+荷兰人发明的新客机是劈叉的！乘客坐在机翼上
+
+https://mp.weixin.qq.com/s/t2EM1l7ujoSquGl2x5hBBA
+
+21世纪最强王者纸飞机：用一张A4纸拿到了吉尼斯世界记录
+
+https://mp.weixin.qq.com/s/vJDY58Qi_-VhVMHOjGSo8w
+
+伦敦大学惊现数学神人！创造最完美打水漂方程，一块石头破吉尼斯世界纪录！
+
+https://mp.weixin.qq.com/s/yghERug4kqRNxL9lDsM_vw
+
+飞机飞行原理3D动态图，形象生动解析飞行原理
+
+https://mp.weixin.qq.com/s/uTZ1OdLov1EdiKLgy2ZVtw
+
+德国惊现神操作！物理学家创造最强涡环公式！用空气打破吉尼斯世界纪录！
+
+https://mp.weixin.qq.com/s/kDdQCOi7nQWOZrktNrk8dQ
+
+中国惊现变态神人！竟赤足走炭火，暴力吊打一众科学家！（莱顿弗罗斯特效应）
+
+https://mp.weixin.qq.com/s/IyK6sa8ig_LX-tMupqSvVg
+
+倒啤酒竟能拿到诺贝尔物理学大奖！
+
 # 垃圾筐
 
 Introspective Neural Networks
@@ -145,10 +179,6 @@ https://mp.weixin.qq.com/s/pE2hXaq-T20LXbvuXdTFJQ
 https://mp.weixin.qq.com/s/k3v_5vXWfyBag5mmjD78Xw
 
 拓扑物理浅析
-
-https://zhuanlan.zhihu.com/p/30124129
-
-引力波的能量之谜：“爱因斯坦奇迹年”和五份手稿
 
 https://mp.weixin.qq.com/s/ChZ-cNTSb7Pm_ka9gunm9A
 
@@ -320,39 +350,9 @@ https://mp.weixin.qq.com/s/uIYvfBlmzYkXS5hcgsCAKg
 
 一滴水从高处落下来，会不会砸死人？
 
-## 空气动力学
+https://mp.weixin.qq.com/s/ThQgmii_Zu29thw_XY2W1g
 
-https://mp.weixin.qq.com/s/ei84HDZIkXQr2k0ghlN_Mw
-
-C罗踢球时在想什么？这是一篇空气动力学的blog
-
-https://mp.weixin.qq.com/s/67vQtycjDEo-JdUpUA1hqg
-
-荷兰人发明的新客机是劈叉的！乘客坐在机翼上
-
-https://mp.weixin.qq.com/s/t2EM1l7ujoSquGl2x5hBBA
-
-21世纪最强王者纸飞机：用一张A4纸拿到了吉尼斯世界记录
-
-https://mp.weixin.qq.com/s/vJDY58Qi_-VhVMHOjGSo8w
-
-伦敦大学惊现数学神人！创造最完美打水漂方程，一块石头破吉尼斯世界纪录！
-
-https://mp.weixin.qq.com/s/yghERug4kqRNxL9lDsM_vw
-
-飞机飞行原理3D动态图，形象生动解析飞行原理
-
-https://mp.weixin.qq.com/s/uTZ1OdLov1EdiKLgy2ZVtw
-
-德国惊现神操作！物理学家创造最强涡环公式！用空气打破吉尼斯世界纪录！
-
-https://mp.weixin.qq.com/s/kDdQCOi7nQWOZrktNrk8dQ
-
-中国惊现变态神人！竟赤足走炭火，暴力吊打一众科学家！（莱顿弗罗斯特效应）
-
-https://mp.weixin.qq.com/s/IyK6sa8ig_LX-tMupqSvVg
-
-倒啤酒竟能拿到诺贝尔物理学大奖！
+研究反物质：寻找另一个“我”
 
 https://mp.weixin.qq.com/s/tU6Incnq63fT61z6y9E-Jg
 

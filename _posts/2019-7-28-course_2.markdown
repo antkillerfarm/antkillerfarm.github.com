@@ -102,6 +102,56 @@ https://mp.weixin.qq.com/s/nEZtDywzLBC0dHHBt5PyAg
 
 深度学习视觉系统，Deep Learning for Vision Systems, 396页pdf
 
+https://missing.csail.mit.edu/
+
+The Missing Semester of Your CS Education
+
+# English
+
+SOTA(state of the art)：目前最高水平
+
+w.r.t.： 关于
+
+Curriculum Vitae：拉丁语。原意指生活道路，现引申为简历，多指学术履历，缩写是CV。
+
+et al.：等等
+
+etc.：等等
+
+Vote：投票
+
+Veto：否决票
+
+TL;DR：可以是 Too long; Didn't read（太长，所以没有看）。也可以是 Too long; Don't read （太长，请不要看），常作为一篇很长的文章的摘要标题。
+
+PoC(Proof of Concept)，即概念验证。
+
+FYI：for your information
+
+IFF：if and only if
+
+eta：estimated time of arrival
+
+w/o：without
+
+N.B.:nota bene 注意,留心
+
+----
+
+Bill is short for William
+
+Bob is short for Robert
+
+Dick is short for Richard
+
+----
+
+To be, or not to be, that is a question.
+
+---Hamlet, Shakespeare
+
+生存还是毁灭
+
 # WFST（续）
 
 https://blog.csdn.net/dearwind153/article/details/70053704
@@ -180,7 +230,7 @@ https://mp.weixin.qq.com/s/Cfk3639bCy55qQj4HM2HWw
 
 人工智能老司机带你认识声音黑科技：声纹识别
 
-# BERT+
+# BERT
 
 https://zhuanlan.zhihu.com/p/58425003
 
@@ -234,6 +284,14 @@ https://mp.weixin.qq.com/s/m_FU4NmjUsvxusRidDb-Xg
 
 UniLM:一种既能阅读又能自动生成的预训练模型
 
+https://mp.weixin.qq.com/s/yyUPqxpfBwUSRbwM6SSAcQ
+
+UniLM论文阅读笔记
+
+https://mp.weixin.qq.com/s/RjeuHXa8O3MzSpTOuOHMkQ
+
+站在BERT肩膀上的NLP新秀们：XLMs、MASS和UNILM
+
 https://mp.weixin.qq.com/s/IY8J09LvDAr8owYffKi5Dw
 
 五问BERT：深入理解NLP领域爆红的预训练模型
@@ -277,6 +335,18 @@ https://mp.weixin.qq.com/s/V4pbjP5na1OYp-TorUik8g
 https://mp.weixin.qq.com/s/dFT7KKMH56unkOEA9H4Kuw
 
 吊打BERT Large的小型预训练模型ELECTRA终于开源！真相却让人...
+
+https://mp.weixin.qq.com/s/s5YIG6rBEy6fZkFLh-CzoA
+
+后BERT时代生存指南之VL-BERT篇
+
+https://zhuanlan.zhihu.com/p/113326366
+
+如何训练并使用Bert
+
+https://mp.weixin.qq.com/s/dmHxEkmVFXcCGhv8eH91Tw
+
+从Word2Vec到BERT:上下文嵌入(Contextual Embedding)最新综述论文
 
 # 新冠肺炎
 

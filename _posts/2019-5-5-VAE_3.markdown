@@ -339,3 +339,7 @@ https://mp.weixin.qq.com/s/KtKYk08xEqwA43Phxw2-_w
 https://mp.weixin.qq.com/s/hwb3eRWbwa9weCWz1ypOxw
 
 VAE系解纠缠：从VAE到βVAE，再到β-TCVAE
+
+https://mp.weixin.qq.com/s/YZcw5pnHzuACSvEmGZHnEQ
+
+自回归模型:PixelCNN

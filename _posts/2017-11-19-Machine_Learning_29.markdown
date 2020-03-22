@@ -206,6 +206,14 @@ https://mp.weixin.qq.com/s/GTtjjBgCDdLRwPrUqfwlVA
 
 如何使用贪婪搜索和束搜索解码算法进行自然语言处理
 
+https://mp.weixin.qq.com/s/7bpvoZykdAkHXwDL7-39Qw
+
+十分钟读懂Beam Search(1/2)
+
+https://mp.weixin.qq.com/s/BuvLXx0ZItOvhno4XAUpTg
+
+十分钟读懂Beam Search(2/2)
+
 # 模型驱动 vs 数据驱动
 
 最近阅读了这篇文章，深有感慨：

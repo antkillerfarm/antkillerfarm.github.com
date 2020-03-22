@@ -277,11 +277,15 @@ WPS分为PBC(BUTTON)和PIN两种方式
 
 http://zookeeper.apache.org/
 
-bin/zkServer.sh status
+`bin/zkServer.sh status`
 
 http://www.cnblogs.com/lpshou/archive/2013/06/14/3136904.html
 
 zookeeper原理
+
+https://mp.weixin.qq.com/s/WPyJC4nyLQGWk-OQylUHHw
+
+Zookeeper简单介绍
 
 http://www.ibm.com/developerworks/cn/opensource/os-cn-zookeeper/index.html
 

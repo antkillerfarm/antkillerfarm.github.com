@@ -232,6 +232,10 @@ https://mp.weixin.qq.com/s/mZSOmlHRrowPcTKjnlB4wA
 
 深度强化学习实战，351页pdf，Deep Reinforcement Learning
 
+https://github.com/zhoubolei/introRL
+
+港中文周博磊：强化学习纲要
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

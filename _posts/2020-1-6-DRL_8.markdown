@@ -150,6 +150,10 @@ https://mp.weixin.qq.com/s/dlOFM7LuOF2npDP_EaITvg
 
 效率提高50倍！谷歌提出从图像中学习世界的强化学习新方法（PlaNet）
 
+https://mp.weixin.qq.com/s/3qWN6DjuGUZgCpxH7XF4fg
+
+谷歌重磅开源RL智能体Dreamer，仅靠图像学习从机器人到Atari的控制策略，样本效率暴增20倍
+
 https://mp.weixin.qq.com/s/Maoy2feVWj5hpn4Ysh_47A
 
 你追踪，我逃跑：一种用于主动视觉跟踪的对抗博弈机制

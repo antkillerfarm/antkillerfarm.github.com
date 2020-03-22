@@ -122,7 +122,31 @@ https://mp.weixin.qq.com/s/enVx8sLoxmaSM8NlUL5IMQ
 
 实测超轻量中文OCR开源项目，总模型仅17M
 
+https://mp.weixin.qq.com/s/vNYG6vq_LAotj_21PG_P9w
+
+扫描式SSD用于公式检测，代码已开源
+
 # Graph NN+
+
+https://mp.weixin.qq.com/s/r4_5GwA8Olqh6M1p_6eYPg
+
+图神经网络！2020 AI研究趋势！是什么？有什么用？
+
+https://mp.weixin.qq.com/s/ae515_P6zA5SLN5-Edxbig
+
+图卷积网络Graph Convolutional Networks
+
+https://mp.weixin.qq.com/s/LbMblqRWeitShSUsnebDAg
+
+基于GNN的图表示学习
+
+https://mp.weixin.qq.com/s/eg_H0D8m0LdVBJixsc-dNA
+
+张量图卷积网络(TensorGCN)文本分类
+
+https://mp.weixin.qq.com/s/sXCwe8hXWxdNbpl2i7YBtg
+
+完全基于注意力机制的图表征学习模型Graph-Bert
 
 https://mp.weixin.qq.com/s/dXYjUHAXVZINXQkvM_ssZA
 
@@ -200,6 +224,26 @@ https://zhuanlan.zhihu.com/p/86181013
 
 网络图模型综述
 
+https://zhuanlan.zhihu.com/p/114452245
+
+图神经网络时代的深度聚类
+
+https://mp.weixin.qq.com/s/WYiWGtedfR4kryztvJKyRw
+
+谱聚类方法推导和对拉普拉斯矩阵的理解
+
+https://zhuanlan.zhihu.com/p/113762102
+
+图卷积网络加速训练方法综述
+
+https://mp.weixin.qq.com/s/9-1zJCAogvWMTHnJPQGvmA
+
+图神经网络在医学影像中的应用
+
+https://mp.weixin.qq.com/s/W7xDBQNlTkSGQ16Lf2C4kQ
+
+图神经网络(GNN)结构化数据分析
+
 # 深度推荐系统+
 
 https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w
@@ -265,6 +309,22 @@ https://mp.weixin.qq.com/s/jIjdYIbdls5lIbF7TVfbdA
 https://mp.weixin.qq.com/s/fUdKIqygxqlkuv0P4wiIRg
 
 智能推荐算法在直播场景中的应用
+
+https://zhuanlan.zhihu.com/p/102918124
+
+微信看一看Embedding
+
+https://zhuanlan.zhihu.com/p/98483266
+
+Fi-GNN通过图神经网络建模特征交互作用来进行CTR预测
+
+https://mp.weixin.qq.com/s/RKtVkO9lITJ4QSNL3PgUbQ
+
+基于GNN，强于GNN：胶囊图神经网络的PyTorch实现
+
+https://zhuanlan.zhihu.com/p/114798371
+
+“推荐系统”加上“图神经网络”
 
 # 肺炎版《黄冈密卷》
 

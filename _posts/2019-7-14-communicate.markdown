@@ -445,19 +445,3 @@ https://mp.weixin.qq.com/s/4w6CTGaKKEH9APVNH9Ue8w
 https://mp.weixin.qq.com/s/tBoM9o3pK89bprK8npHLWA
 
 可能会说谎的地图！全国疫情地理格局的重新审视
-
-https://mp.weixin.qq.com/s/bVNkCHl7BPU_eEcAWksmww
-
-关于武汉新型冠状病毒肺炎的传播预测模型
-
-https://mp.weixin.qq.com/s/Lg1tJmO7aN9XNpZ6bs0cJA
-
-程序员硬核劝告：现在还不是出门的时候
-
-https://mp.weixin.qq.com/s/sv07R8HQXX2U0QOi5_dOwg
-
-河南1105例新冠肺炎数据告诉我们什么？
-
-https://mp.weixin.qq.com/s/qRzkS2itp-eloaBlA-VSGA
-
-基于排队论模型浅析各地医护人员驰援武汉的重要意义

@@ -213,6 +213,10 @@ http://lucacardelli.name/
 
 Luca Andrea Cardelli的个人主页。英国皇家学会会员。主要从事生物化学领域的信息处理和计算。
 
+http://www.pengzhihui.xyz/
+
+一个极客的blog
+
 https://mp.weixin.qq.com/s/mHJnbgOjydUrAmF-bLKJ1Q
 
 存储数据包的一生（上）
@@ -341,6 +345,10 @@ https://mp.weixin.qq.com/s/FMYimnxcAya6bhvdGD5LUw
 
 惊魂48小时，阿里工程师如何紧急定位线上内存泄露？
 
+https://mp.weixin.qq.com/s/s5BI2r0KxGVXZC4LsOAwpw
+
+4行代码重现《黑客帝国》特效！
+
 ## 科研人生
 
 https://mp.weixin.qq.com/s/6gX1UFSykuzw358ARUzifw
@@ -431,14 +439,6 @@ https://mp.weixin.qq.com/s/pSYJizQDQP_T2-krWPGUoA
 
 疫情下的口罩“疯狂制造”：物料飚涨40倍, 3天回本“印钞机”
 
-----
+https://mp.weixin.qq.com/s/OuyBccDAzMiH6yLc1vtgOQ
 
-人民需要什么，五菱就造什么。
-
-1928年，桂系领袖李宗仁在这里修建了一家柳州机械厂，开始组装飞机，制造步枪、手榴弹；
-
-1933年，因为广西被封锁，石油匮乏，又造出了时速40公里/小时的木炭车，不烧油，烧炭跑，成为战时大后方的主要运输工具；
-
-https://mp.weixin.qq.com/s/8rP-ZIvqAPlIW_j99jtMvQ
-
-五菱的76个小时，改变了中国口罩
+一张图告诉你：全球离“口罩自由”还有多远？
