@@ -105,7 +105,15 @@ C++11之override
 
 # 小细节
 
-对于std::vector来说，begin()/end()返回iterator，而front()/back()返回的是element。
+对于std::vector来说，begin()/end()返回iterator，而front()/back()返回的是element。此外，还有cbegin()/cend()返回const iterator。
+
+```c++
+template< class InputIt >
+vector( InputIt first, InputIt last,
+        const Allocator& alloc = Allocator() );
+```
+
+这个构造函数很有意思，可以用于复制一个[first, last)区间的数据。
 
 ----
 

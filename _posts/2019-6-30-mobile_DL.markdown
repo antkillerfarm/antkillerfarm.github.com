@@ -383,3 +383,9 @@ https://mp.weixin.qq.com/s/8rP-ZIvqAPlIW_j99jtMvQ
 https://mp.weixin.qq.com/s/IXp36BDIi_cblf1nk-iidw
 
 40万公里的征途，一场消毒除菌产品与病毒的赛跑（立白集团）
+
+----
+
+LVMH集团宣布，旗下Dior、Givenchy和娇兰三个品牌的香水生产线，将用于生产含酒精的消毒洗手液。
+
+奢侈品牌Prada将一家在佩鲁贾开设的工厂，改造成了口罩及医疗用品生产工厂，并计划在4月6日前，向意大利托斯卡纳医院运送8万件防护服，及11万只口罩。
