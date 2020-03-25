@@ -159,6 +159,28 @@ void bar()
 
 上面是`template`的一种特殊用法，本来`s.foo<T>()`也就行了，然而编译器会把它当作`s.foo<T`，所以需要加上`template`以示区分。
 
+----
+
+数字转字符串：
+
+```c++
+double a = 123.32;
+string res;
+stringstream ss;
+ss << a;
+ss >> res;//Or res = ss.str();
+```
+
+字符串转数字：
+
+```c++
+string a = "123.32";
+double res;
+stringstream ss;
+ss << a;
+ss >> res;
+```
+
 ## 参考
 
 https://mp.weixin.qq.com/s/Hpn7KqYlBKz0JdryiozqyQ
