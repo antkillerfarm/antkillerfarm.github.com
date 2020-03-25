@@ -316,6 +316,26 @@ https://mp.weixin.qq.com/s/oY51Rk6qD7fxeSRIf7HAFg
 
 # BERT+
 
+https://mp.weixin.qq.com/s/pD4it8vQ-aE474uSMQG0YQ
+
+两行代码玩转Google BERT句向量词向量
+
+https://mp.weixin.qq.com/s/osmUZxAAX3x-oTHYJbzemA
+
+谷歌BERT模型fine-tune终极实践教程
+
+https://mp.weixin.qq.com/s/XmeDjHSFI0UsQmKeOgwnyA
+
+小数据福音！BERT在极小数据下带来显著提升的开源实现
+
+https://mp.weixin.qq.com/s/HXYDO5PM8UIoXgEPGe8p-w
+
+图解当前最强语言模型BERT：NLP是如何攻克迁移学习的？
+
+https://mp.weixin.qq.com/s/zz3j9HEuzw5e92MQXxSQsA
+
+遗珠之作？谷歌Quoc Le这篇NLP预训练模型论文值得一看
+
 https://mp.weixin.qq.com/s/IN4YfoZnlBozwEFdhSvLZg
 
 用可视化解构BERT，我们从上亿参数中提取出了6种直观模式

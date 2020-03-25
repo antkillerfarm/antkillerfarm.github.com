@@ -282,3 +282,7 @@ https://mp.weixin.qq.com/s/ssD3NAvGx5Eu4-oWy4KtzA
 https://mp.weixin.qq.com/s/qz4wUpSeF8Nlem8x4CrR-Q
 
 学习一个宫崎骏画风的图像风格转换GAN
+
+https://mp.weixin.qq.com/s/SGCoCy8wJEhEpLSHrYK3pQ
+
+韩松、朱俊彦等人提出GAN压缩法：算力消耗不到1/9，现已开源

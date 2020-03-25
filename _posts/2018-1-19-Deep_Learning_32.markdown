@@ -162,6 +162,10 @@ https://mp.weixin.qq.com/s/gybhVw3D4ykAHsVGzazWNw
 
 3D-BoNet：一种简单高效的3D点云实例分割框架
 
+https://mp.weixin.qq.com/s/xvAF_-rRlU5-hYmClFvTjA
+
+一文览尽“基于激光雷达点云（lidar）的目标检测方法”
+
 # AutoDL
 
 DL领域目前存在的主要问题之一是：如何设计网络结构和调整超参数。目前的做法，通常依赖于作者的直觉，属于典型的拍脑袋想点子。

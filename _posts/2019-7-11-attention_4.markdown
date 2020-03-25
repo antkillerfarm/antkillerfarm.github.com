@@ -218,6 +218,24 @@ $$p(x)=\prod_{x\in Mask}p(x_t|context)$$
 
 - 优点：能够很好的编码上下文语义信息，在自然语言理解(NLU)相关的下游任务上表现突出。
 
+## UniLM
+
+https://mp.weixin.qq.com/s/m_FU4NmjUsvxusRidDb-Xg
+
+UniLM:一种既能阅读又能自动生成的预训练模型
+
+https://mp.weixin.qq.com/s/yyUPqxpfBwUSRbwM6SSAcQ
+
+UniLM论文阅读笔记
+
+https://mp.weixin.qq.com/s/RjeuHXa8O3MzSpTOuOHMkQ
+
+站在BERT肩膀上的NLP新秀们：XLMs、MASS和UNILM
+
+https://mp.weixin.qq.com/s/UEBKSKEkZTbpR49_Rh50Jg
+
+微软统一预训练语言模型UniLM 2.0解读
+
 ## 参考
 
 https://www.zhihu.com/question/298203515
@@ -284,6 +302,10 @@ https://mp.weixin.qq.com/s/uAJ_05g0Zo33mgygTnow1Q
 
 预训练语言模型的前世今生：银色独角兽GPT家族
 
+https://mp.weixin.qq.com/s/2_MXIEk5-JP5KwsV6al9XQ
+
+预训练语言模型的前世今生：BERT，开启NLP新时代的王者
+
 https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
 
 预训练BERT，官方代码发布前他们是这样用TensorFlow解决的
@@ -307,23 +329,3 @@ https://mp.weixin.qq.com/s/k_33UK1RkMyHn6TSudU6Kg
 https://mp.weixin.qq.com/s/d2MZQbamdo0EC_MVtf-HZA
 
 BERT详解：开创性自然语言处理框架的全面指南
-
-https://mp.weixin.qq.com/s/pD4it8vQ-aE474uSMQG0YQ
-
-两行代码玩转Google BERT句向量词向量
-
-https://mp.weixin.qq.com/s/osmUZxAAX3x-oTHYJbzemA
-
-谷歌BERT模型fine-tune终极实践教程
-
-https://mp.weixin.qq.com/s/XmeDjHSFI0UsQmKeOgwnyA
-
-小数据福音！BERT在极小数据下带来显著提升的开源实现
-
-https://mp.weixin.qq.com/s/HXYDO5PM8UIoXgEPGe8p-w
-
-图解当前最强语言模型BERT：NLP是如何攻克迁移学习的？
-
-https://mp.weixin.qq.com/s/zz3j9HEuzw5e92MQXxSQsA
-
-遗珠之作？谷歌Quoc Le这篇NLP预训练模型论文值得一看

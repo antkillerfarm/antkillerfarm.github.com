@@ -150,6 +150,10 @@ https://mp.weixin.qq.com/s/-45YL1mzPmSOESfWlxUclA
 
 图解Reformer：一种高效的Transformer
 
+https://mp.weixin.qq.com/s/wJbbki3S8l10rSpFTWFpgg
+
+对Reformer的深入解读
+
 https://www.zhihu.com/question/302392659
 
 有了Transformer框架后是不是RNN完全可以废弃了？

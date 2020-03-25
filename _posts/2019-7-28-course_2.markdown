@@ -280,18 +280,6 @@ https://mp.weixin.qq.com/s/0luHJsw7WWJskJWGThR5qg
 
 使用BERT做文本摘要
 
-https://mp.weixin.qq.com/s/m_FU4NmjUsvxusRidDb-Xg
-
-UniLM:一种既能阅读又能自动生成的预训练模型
-
-https://mp.weixin.qq.com/s/yyUPqxpfBwUSRbwM6SSAcQ
-
-UniLM论文阅读笔记
-
-https://mp.weixin.qq.com/s/RjeuHXa8O3MzSpTOuOHMkQ
-
-站在BERT肩膀上的NLP新秀们：XLMs、MASS和UNILM
-
 https://mp.weixin.qq.com/s/IY8J09LvDAr8owYffKi5Dw
 
 五问BERT：深入理解NLP领域爆红的预训练模型

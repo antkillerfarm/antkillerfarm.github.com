@@ -274,6 +274,10 @@ https://zhuanlan.zhihu.com/p/82371629
 
 Imbalance Problems in Object Detection: A Review
 
+https://zhuanlan.zhihu.com/p/114700229
+
+目标检测中的特征冲突与不对齐问题
+
 # 设计模式
 
 面向对象的设计模式有七大基本原则：
