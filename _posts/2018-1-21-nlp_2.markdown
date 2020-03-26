@@ -102,6 +102,28 @@ https://mp.weixin.qq.com/s/mKEFOTWyfF86ee8P-d2jJg
 
 英特尔推出自然语言处理开源库，代号“NLP Architect”
 
+## Rasa
+
+Rasa是一个基于机器学习实现多轮对话的开源机器人框架。
+
+官网：
+
+https://rasa.com/
+
+Rasa NLU是自然语言理解模型集合，主要包括意图识别，实体识别，它会把用户的输入转换为结构化的数据。
+
+Rasa Core是一个对话管理的平台，它的工作是决定接下来机器该返回什么内容给用户，即实现与用户的交互逻辑。
+
+参考：
+
+https://blog.csdn.net/qq_42189083/article/details/88310407
+
+Rasa聊天机器人（一）:简介及环境搭建
+
+https://blog.csdn.net/qq_42189083/article/details/88076128
+
+Rasa聊天机器人（二）:训练及构建
+
 ## 其他工具
 
 https://github.com/mozillazg/python-pinyin

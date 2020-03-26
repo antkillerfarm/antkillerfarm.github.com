@@ -130,6 +130,20 @@ https://mp.weixin.qq.com/s/Zxoug2sMoWsOWnZPCQ22ug
 
 PyTorch模型训练特征图可视化（TensorboardX）
 
+## JIT
+
+pytorch支持scripting/trace两种模式动态图转静态图的方法。
+
+参考：
+
+https://blog.csdn.net/ljp1919/article/details/102514357
+
+在生产环境中基于PyTorch的C++API运行模型-以图像分类为例
+
+https://blog.csdn.net/xxradon/article/details/86504906
+
+pytorch JIT浅解析
+
 ## 参考
 
 https://mp.weixin.qq.com/s/zhkaenFdnB5KgaEYb-XDEQ
