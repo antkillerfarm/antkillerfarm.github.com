@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  boost, Test framework, Objective-C, Haskell, Kotlin, Lua
+title:  boost, Test framework, Objective-C, Haskell, Lua
 category: language 
 ---
 
@@ -103,7 +103,21 @@ https://www.cnblogs.com/xinxue/p/5471708.html
 
 C++11之override
 
-# 小细节
+## K&R风格
+
+在C语言的函数定义上，我们通常用的函数定义方式为ANSI C的函数定义方式。但是在C语言之父创立C语言之时，函数的定义形式并非现在我们所见到的形式。
+
+这种风格被称为K&R风格，多见于一些历史悠久的项目或者老的书籍中。出于兼容性考虑，现代的C编译器仍然支持K&R风格。
+
+>记得大学学C语言，用的是谭浩强的书。当时，授课老师看不上谭的书，于是另外推荐了一本，那本书更古老，用的就是所谓的K&R风格。。。但在实际工作中，从来没见过K&R风格的代码。。。
+
+详见：
+
+http://blog.chinaunix.net/uid-7426920-id-2627743.html
+
+ANSI和K&R两种函数定义风格
+
+## 小细节
 
 对于std::vector来说，begin()/end()返回iterator，而front()/back()返回的是element。此外，还有cbegin()/cend()返回const iterator。
 
@@ -402,34 +416,6 @@ https://www.haskellstack.org/
 然而国内访问不了，幸好有github：
 
 https://github.com/commercialhaskell/stack/releases/
-
-# Kotlin
-
-Kotlin是一门编程语言，由JetBrains公司开发，与Java 100%互通。
-
-官网：
-
-http://kotlinlang.org/
-
-官网文档：
-
-http://kotlinlang.org/docs/reference/android-overview.html
-
-国内中文文档：
-
-https://huanglizhuo.gitbooks.io/kotlin-in-chinese/content/
-
-国内中文文档2：
-
-http://www.liying-cn.net/kotlin/docs/reference/
-
-国内中文文档3：
-
-https://www.kotlincn.net/
-
-官方示例：
-
-https://github.com/Kotlin/kotlin-examples
 
 # Lua
 

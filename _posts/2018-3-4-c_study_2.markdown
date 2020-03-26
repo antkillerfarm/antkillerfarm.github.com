@@ -265,24 +265,3 @@ C++内存管理之shared_ptr
 https://blog.csdn.net/River_Lethe/article/details/78734879
 
 shared_ptr的使用和陷阱
-
-# decltype
-
-和auto的用法类似，auto不仅要推导类型，还要定义变量，而decltype则只进行类型推导。
-
-```cpp
-int add(int x,int y){
-    return x+y;
-}
-int main(){
-    double i=0;
-    decltype(i) a; // double
-    decltype(add()) b; //int 注意括号。不带括号就是函数指针了。
-}
-```
-
-参考：
-
-https://www.cnblogs.com/npbool/p/3433360.html
-
-C++11初探：类型推导，auto和decltype

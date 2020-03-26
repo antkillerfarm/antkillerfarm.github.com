@@ -244,6 +244,10 @@ https://mp.weixin.qq.com/s/W7xDBQNlTkSGQ16Lf2C4kQ
 
 图神经网络(GNN)结构化数据分析
 
+https://mp.weixin.qq.com/s/nCDn89eMWkom0AfQAWGjsA
+
+图表示学习Graph Embedding综述
+
 # 深度推荐系统+
 
 https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w

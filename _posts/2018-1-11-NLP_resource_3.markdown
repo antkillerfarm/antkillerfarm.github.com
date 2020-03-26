@@ -200,6 +200,20 @@ https://mp.weixin.qq.com/s/MGPne4SotdHVWu2cIZvfog
 
 深入了解关系抽取你需要知道的东西
 
+# 短文本相似度
+
+https://wenku.baidu.com/view/d38ab1e8856a561252d36fab.html
+
+短文本相似度计算在用户交互式问答系统中的应用
+
+https://zhuanlan.zhihu.com/p/113224707
+
+传统方法BM25解决短文本相似度问题
+
+https://mp.weixin.qq.com/s/rhlSlrGwgUvDITZ06tfSzg
+
+短文本相似度算法研究
+
 ## 参考
 
 https://mp.weixin.qq.com/s/klfTdvfti0xCg2lGitG4hg

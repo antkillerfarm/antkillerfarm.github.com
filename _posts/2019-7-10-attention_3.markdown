@@ -4,7 +4,9 @@ title:  Attention（三）——BERT（1）
 category: Attention 
 ---
 
-# Transformer（续）
+# Transformer
+
+## 参考（续）
 
 https://mp.weixin.qq.com/s/O8_oOCtCCcU-kVklgxRoBg
 
@@ -142,18 +144,6 @@ https://mp.weixin.qq.com/s/61ZeO46s19sCW-3xQ_FUJg
 
 如何在NLP中有效利用Deep Transformer？
 
-https://mp.weixin.qq.com/s/9P-hF9VzDMgoPZ_CGREn8w
-
-Reformer：一个高效的Transformer
-
-https://mp.weixin.qq.com/s/-45YL1mzPmSOESfWlxUclA
-
-图解Reformer：一种高效的Transformer
-
-https://mp.weixin.qq.com/s/wJbbki3S8l10rSpFTWFpgg
-
-对Reformer的深入解读
-
 https://www.zhihu.com/question/302392659
 
 有了Transformer框架后是不是RNN完全可以废弃了？
@@ -276,9 +266,39 @@ BERT的论文并未提到执行NMT任务时的网络结构，但从下面的论�
 
 也就是说，仍然有decoder部分，仍然不能完全并行。
 
-## BERT进化史
+## 预训练语言模型进化史
 
 ![](/images/img3/BERT.jpg)
+
+![](/images/img3/PTM.jpg)
+
+https://mp.weixin.qq.com/s/kwKZfNSYTzc-PGKxTxm8-w
+
+复旦大学：最新《预训练语言模型》2020综述论文
+
+https://zhuanlan.zhihu.com/p/115014536
+
+全面总结！PTMs：NLP预训练模型
+
+https://mp.weixin.qq.com/s/1ixYjJN-bJPGrr7v-4d7Rw
+
+预训练语言模型的前世今生：萌芽时代
+
+https://mp.weixin.qq.com/s/g4jEVU3BkRem-DYXCn5eFQ
+
+预训练语言模型的前世今生：风起云涌
+
+https://mp.weixin.qq.com/s/U8f0cXoPrN32PM3944Oqkg
+
+预训练语言模型的前世今生：十分钟了解文本分类通用训练技巧
+
+https://mp.weixin.qq.com/s/uAJ_05g0Zo33mgygTnow1Q
+
+预训练语言模型的前世今生：银色独角兽GPT家族
+
+https://mp.weixin.qq.com/s/2_MXIEk5-JP5KwsV6al9XQ
+
+预训练语言模型的前世今生：BERT，开启NLP新时代的王者
 
 ## ELMo
 
@@ -310,7 +330,7 @@ https://mp.weixin.qq.com/s/qbXZGiKYEuTI-2l4iYZlbQ
 
 图文并茂带你细致了解ELMo的各种细节
 
-## GPT-2
+## GPT
 
 GPT-1论文：
 
@@ -339,27 +359,3 @@ OpenAI发布参数量高达15亿的通用语言模型GPT-2
 https://mp.weixin.qq.com/s/7u_W4LTYqQBmz3geux5QNQ
 
 对标Bert？刷屏的GPT 2.0意味着什么
-
-https://mp.weixin.qq.com/s/1GIQGBwciP22CZvFxhmLzA
-
-如何构建OpenAI的GPT 2：“太危险而无法释放的人工智能”
-
-https://mp.weixin.qq.com/s/eJn379q9raDHY9FdWaXeKQ
-
-AI界最危险武器GPT-2使用指南：从Finetune到部署
-
-https://mp.weixin.qq.com/s/WDFwKqNynwPtXhM8rZnOsA
-
-自动生成马斯克的推特几乎无破绽！MIT用GPT-2模型做了个名人发言模仿器
-
-https://mp.weixin.qq.com/s/67Z_dslvwTyRl3OMrArhCg
-
-完全图解GPT-2（一）
-
-https://mp.weixin.qq.com/s/xk5fWrSBKErH8tvl-3pgtg
-
-完全图解GPT-2（二）
-
-https://zhuanlan.zhihu.com/p/80215294
-
-GPT：第一个引入Transformer的预训练模型

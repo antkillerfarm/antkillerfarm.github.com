@@ -256,7 +256,21 @@ The Illustrated Transformer
 
 3.为了解决循环结构的次序问题，论文提出了上图所示的Masked Multi-Head Attention。
 
-参考：
+## Reformer
+
+https://mp.weixin.qq.com/s/9P-hF9VzDMgoPZ_CGREn8w
+
+Reformer：一个高效的Transformer
+
+https://mp.weixin.qq.com/s/-45YL1mzPmSOESfWlxUclA
+
+图解Reformer：一种高效的Transformer
+
+https://mp.weixin.qq.com/s/wJbbki3S8l10rSpFTWFpgg
+
+对Reformer的深入解读
+
+## 参考
 
 https://zhuanlan.zhihu.com/p/39034683
 

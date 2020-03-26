@@ -4,6 +4,27 @@ title:  C/C++编程心得（三）
 category: language 
 ---
 
+# decltype
+
+和auto的用法类似，auto不仅要推导类型，还要定义变量，而decltype则只进行类型推导。
+
+```cpp
+int add(int x,int y){
+    return x+y;
+}
+int main(){
+    double i=0;
+    decltype(i) a; // double
+    decltype(add()) b; //int 注意括号。不带括号就是函数指针了。
+}
+```
+
+参考：
+
+https://www.cnblogs.com/npbool/p/3433360.html
+
+C++11初探：类型推导，auto和decltype
+
 # 类型转换
 
 **static_cast**：基本等同于C语言的强制类型转换，只有很小的差异。
@@ -356,20 +377,6 @@ std::cout << std::endl;
 std::for_each(std::begin(vec),std::end(vec),[](int n){std::cout<<n<<" ";});
 std::cout << std::endl;
 ```
-
-# K&R风格
-
-在C语言的函数定义上，我们通常用的函数定义方式为ANSI C的函数定义方式。但是在C语言之父创立C语言之时，函数的定义形式并非现在我们所见到的形式。
-
-这种风格被称为K&R风格，多见于一些历史悠久的项目或者老的书籍中。出于兼容性考虑，现代的C编译器仍然支持K&R风格。
-
->记得大学学C语言，用的是谭浩强的书。当时，授课老师看不上谭的书，于是另外推荐了一本，那本书更古老，用的就是所谓的K&R风格。。。但在实际工作中，从来没见过K&R风格的代码。。。
-
-详见：
-
-http://blog.chinaunix.net/uid-7426920-id-2627743.html
-
-ANSI和K&R两种函数定义风格
 
 # const
 

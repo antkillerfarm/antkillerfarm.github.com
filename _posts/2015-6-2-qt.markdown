@@ -159,6 +159,10 @@ https://mp.weixin.qq.com/s/KigkxkUDYP8r1SEmDUvCCw
 
 从串行线程封闭到对象池、线程池
 
+https://www.jianshu.com/p/a24aa3c63d50
+
+从TCP角度出发，看看连接池的优点
+
 # WebService
 
 WebService经过近二十年的发展，已经有非常多的框架了。知名的有：Axis1、Axis2、Xfire、CXF、JWS等。

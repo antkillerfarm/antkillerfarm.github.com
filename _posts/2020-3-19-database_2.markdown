@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Mysql, 安全
+title:  Mysql, 安全, Kotlin
 category: technology 
 ---
 
@@ -173,6 +173,34 @@ https://mp.weixin.qq.com/s/z5zMETSMUGoTiZYMooKZ-g
 
 内核空间镜像攻击揭秘：ARM硬件特性，竟能开启安卓8终端的上帝模式？
 
+# Kotlin
+
+Kotlin是一门编程语言，由JetBrains公司开发，与Java 100%互通。
+
+官网：
+
+http://kotlinlang.org/
+
+官网文档：
+
+http://kotlinlang.org/docs/reference/android-overview.html
+
+国内中文文档：
+
+https://huanglizhuo.gitbooks.io/kotlin-in-chinese/content/
+
+国内中文文档2：
+
+http://www.liying-cn.net/kotlin/docs/reference/
+
+国内中文文档3：
+
+https://www.kotlincn.net/
+
+官方示例：
+
+https://github.com/Kotlin/kotlin-examples
+
 # 新冠肺炎
 
 ## 历史
@@ -202,6 +230,10 @@ quarantine源自拉丁语里的“四十”。由来是当年威尼斯人在瘟�
 https://mp.weixin.qq.com/s/j3CHXw9Keu7gKWOPrJ4wTQ
 
 这个鼠年太难过了！再难，也不能没有鼠
+
+https://www.sohu.com/a/383137819_260616
+
+钟南山战疫60天全记录
 
 ----
 

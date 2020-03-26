@@ -8,6 +8,14 @@ category: AI
 
 自然语言处理（Natural Language Processing）是深度学习的主要应用领域之一。
 
+![](/images/img3/nlp_task.png)
+
+参考：
+
+https://blog.csdn.net/CoderPai/article/details/105050924
+
+NLP任务总结
+
 ## 教程
 
 http://cs224d.stanford.edu/

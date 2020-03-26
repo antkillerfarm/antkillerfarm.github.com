@@ -306,6 +306,10 @@ https://zhuanlan.zhihu.com/p/76638962
 
 Pytorch分布式训练
 
+https://mp.weixin.qq.com/s/0aSBHvscloEnPMRLyNjQsg
+
+PyTorch分布式训练简明教程
+
 https://mp.weixin.qq.com/s/S1dRfmqpiLzR3tnsocmfvw
 
 Pytorch中的数据增强方式最全解释

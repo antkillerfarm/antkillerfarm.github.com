@@ -4,7 +4,33 @@ title:  Attention（四）——BERT（2）
 category: Attention 
 ---
 
-# BERT（续）
+# BERT
+
+## GPT（续）
+
+https://mp.weixin.qq.com/s/1GIQGBwciP22CZvFxhmLzA
+
+如何构建OpenAI的GPT 2：“太危险而无法释放的人工智能”
+
+https://mp.weixin.qq.com/s/eJn379q9raDHY9FdWaXeKQ
+
+AI界最危险武器GPT-2使用指南：从Finetune到部署
+
+https://mp.weixin.qq.com/s/WDFwKqNynwPtXhM8rZnOsA
+
+自动生成马斯克的推特几乎无破绽！MIT用GPT-2模型做了个名人发言模仿器
+
+https://mp.weixin.qq.com/s/67Z_dslvwTyRl3OMrArhCg
+
+完全图解GPT-2（一）
+
+https://mp.weixin.qq.com/s/xk5fWrSBKErH8tvl-3pgtg
+
+完全图解GPT-2（二）
+
+https://zhuanlan.zhihu.com/p/80215294
+
+GPT：第一个引入Transformer的预训练模型
 
 ## ERNIE
 
@@ -281,30 +307,6 @@ https://mp.weixin.qq.com/s/kI_k_plZbRzmdeXxt2_2WA
 https://mp.weixin.qq.com/s/Bnk0nIjBdb58WVJEY8MqnA
 
 NLP中各种各样的编码器
-
-https://mp.weixin.qq.com/s/kwKZfNSYTzc-PGKxTxm8-w
-
-复旦大学：最新《预训练语言模型》2020综述论文
-
-https://mp.weixin.qq.com/s/1ixYjJN-bJPGrr7v-4d7Rw
-
-预训练语言模型的前世今生：萌芽时代
-
-https://mp.weixin.qq.com/s/g4jEVU3BkRem-DYXCn5eFQ
-
-预训练语言模型的前世今生：风起云涌
-
-https://mp.weixin.qq.com/s/U8f0cXoPrN32PM3944Oqkg
-
-预训练语言模型的前世今生：十分钟了解文本分类通用训练技巧
-
-https://mp.weixin.qq.com/s/uAJ_05g0Zo33mgygTnow1Q
-
-预训练语言模型的前世今生：银色独角兽GPT家族
-
-https://mp.weixin.qq.com/s/2_MXIEk5-JP5KwsV6al9XQ
-
-预训练语言模型的前世今生：BERT，开启NLP新时代的王者
 
 https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
 

@@ -84,10 +84,6 @@ http://www.taodocs.com/p-4795349.html
 
 基于大规模问答语料的问题检索系统
 
-https://wenku.baidu.com/view/d38ab1e8856a561252d36fab.html
-
-短文本相似度计算在用户交互式问答系统中的应用
-
 https://mp.weixin.qq.com/s/5ajhhc4mpIhoqkl5VkGnaw
 
 深度学习实现问答机器人
