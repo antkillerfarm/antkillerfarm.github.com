@@ -312,6 +312,10 @@ https://zhuanlan.zhihu.com/p/113244063
 
 搜索中的深度匹配模型
 
+https://zhuanlan.zhihu.com/p/118183738
+
+搜索中的深度匹配模型（下）
+
 https://mp.weixin.qq.com/s/FSpVcTM9BcyraQwuaJ833Q
 
 服装局部抄袭怎么解决？ 阿里推出区域检索算法
