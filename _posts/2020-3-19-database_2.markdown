@@ -1,31 +1,53 @@
 ---
 layout: post
-title:  Mysql, 安全, Kotlin
+title:  Mysql, 安全, Kotlin, diff&patch
 category: technology 
 ---
 
 # Mysql（续）
 
-## 导入csv文件
+## 常用操作
 
-http://www.mysqltutorial.org/import-csv-file-mysql-table/
+登录方法：
 
-Import CSV File Into MySQL Table
+`mysql -h 192.168.4.251 -u root -p`
 
-示例：
+语句以“;”结尾。
 
-```sql
-LOAD DATA LOCAL INFILE 'c:/tmp/discounts.csv' 
-INTO TABLE discounts 
-FIELDS TERMINATED BY ',' 
-ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
-IGNORE 1 ROWS;
-```
+| 名称 | 操作 |
+|:--|:--|
+| 添加用户 | insert into mysql.user(Host,User,Password) <br/>values("localhost","test",password("1234")); |
+| 列出所有数据库 | show database; |
+| 切换数据库 | use 数据库名; |
+| 列出所有表 | show tables; |
+| 显示数据表结构 | describe 表名; |
+| 创建自增ID | create table github(id int auto_increment primary key not null,name varchar(256)); |
+| 查询头N条记录 | select * from shop_info limit N; |
+| 检索记录行 6-15 | select * from table limit 5,10; |
+| 删除记录 | delete from shop_info where shop_id="1"; |
+| 排序+别名+分组+count | select city_name,count(*) as city_count from shop_info group by city_name <br/>order by city_count desc limit 5; |
+| 两列排序+两列相乘 | select shop_id,count(*)*per_pay from shop_info order by per_pay desc,shop_id desc; |
+| 每日统计 | select count(shop_id),date(time_stamp) as dates from user_pay <br/>where shop_id='1234' group by dates order by dates asc; |
+| 年月日 | select year(ordertime),month(ordertime),day(ordertime) from book; |
+| 周数+星期几 | select week(ordertime),weekday(ordertime) from book; |
+| 统计表中的记录条数 | select count(*) from user_pay; |
+| 统计某一列中不同值的个数 | select count(distinct user_id) from user_pay; |
 
-上面的语句中，LOCAL必不可少，否则会报如下错误：
+参考：
 
-`ERROR 1290 (HY000): The MySQL server is running with the --secure-file-priv option so it cannot execute this statement`
+http://www.cnblogs.com/wuhou/archive/2008/09/28/1301071.html
+
+Ubuntu安装配置Mysql
+
+http://www.cnblogs.com/wanghetao/p/3806888.html
+
+MySQL添加用户、删除用户与授权
+
+## 执行脚本
+
+mysql命令行下执行：
+
+`source a.sql`
 
 ## 日志
 
@@ -41,27 +63,6 @@ MySQL日志
 | DATETIME | YYYY-MM-DD HH:MM:SS |
 | TIMESTAMP | YYYY-MM-DD HH:MM:SS |
 | YEAR | YYYY或YY |
-
-## 中间数据的存储
-
-有的时候，SQL中间处理的结果需要存储起来，以备后用。这时有两种办法：
-
-1.创建View。
-
-```sql
-CREATE VIEW view_name AS
-SELECT column_name(s)
-FROM table_name
-WHERE condition;
-```
-
-View并不在数据库中存储数据，而是在查询时，执行其中的select语句（每次查询，都会执行），生成中间结果。因此，View从原理来说，更像是一种语法糖，而非存储机制。
-
-2.使用select语句创建table。
-
-`Create table new_table_name (Select * from old_table_name);`
-
-这种方法会将中间结果存储到数据库中，下次使用的时候，就无需重新生成了。但缺点是原table中的更新不会体现到新table中，只适合处理历史数据。
 
 ## 模糊查询
 
@@ -130,6 +131,10 @@ MySQL事务隔离级别和MVCC
 https://mp.weixin.qq.com/s/qHJiTjpvDikFcdl9SRL97Q
 
 深入理解MySQL索引底层原理
+
+https://www.jianshu.com/p/bdc9e57ccf8b
+
+mysql索引篇之覆盖索引、联合索引、索引下推
 
 # 安全
 
@@ -200,6 +205,32 @@ https://www.kotlincn.net/
 官方示例：
 
 https://github.com/Kotlin/kotlin-examples
+
+# diff&patch
+
+diff/patch这对工具在数学上来说，diff是对2个集合求差，patch是求和。
+
+```bash
+diff -uNr A B > C #生成A和B的diff文件C,-uNr为最常用的选项
+patch A C #给A打上diff文件得到B
+patch -R B C #B还原为A
+```
+
+## 给目录应用patch。
+
+`patch -p1 <1.patch`
+
+这种情况适合1.patch中包含对多个文件的修改时。
+
+## 批量应用patch
+
+有的时候，patch不是一个patch文件，而是一个目录中的若干个patch文件。这时可用如下办法：
+
+`find . -name "*.patch">1.txt`
+
+`sort 1.txt | xargs cat >2.patch`
+
+`patch -p1 <2.patch`
 
 # 新冠肺炎
 

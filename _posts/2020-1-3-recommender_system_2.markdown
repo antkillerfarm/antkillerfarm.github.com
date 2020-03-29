@@ -280,6 +280,10 @@ https://mp.weixin.qq.com/s/3Lvuja4fDFSiqwyEgdYxlQ
 
 如何快速上手AB Testing？
 
+https://mp.weixin.qq.com/s/0H2KYI3OQbmqxFQBt6-JEA
+
+如何设计一个A/B test？
+
 ## 参考
 
 https://mp.weixin.qq.com/s/vpANPrl86Ou2fBVHgLXtBQ

@@ -185,6 +185,30 @@ ps默认只显示当前用户的进程。这里是全显示的示例。
 
 挂载NFS。挂载点（即上例中的/mnt/nfs）必须事先创建。
 
+`pgrep -u hchen`
+
+按照条件搜索进程ID。
+
+`pstree`
+
+以树形的方式列出进程。
+
+`echo "2*3.5" | bc`
+
+bash只支持整数四则运算，浮点数和复杂运算就靠`bc`了。
+
+`split -b 50m largefile.tar.gz LF_`
+
+分割大文件。
+
+`ldd /usr/bin/java`
+
+查询一个可执行文件所使用的动态链接库。
+
+`lsof | grep TCP`
+
+列出打开的文件。
+
 # GnuGo
 
 GnuGo是一个著名的开源围棋软件，但是它只有文字界面。一般使用Quarry作为它的GUI。
@@ -420,41 +444,3 @@ https://mp.weixin.qq.com/s/T_z2_gsYfs6A-XjVTVV_uQ
 https://mp.weixin.qq.com/s/h75n7sHnrmoLJ4DVAW5AUQ
 
 说说无锁(Lock-Free)编程那些事（下）
-
-https://mp.weixin.qq.com/s/4tAxQ0auQfv5x7Dh3B-85g
-
-Linux内存管理
-
-http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html
-
-进程与线程的一个简单解释
-
-https://mp.weixin.qq.com/s/zVi45pZka_kPpKIoNXNVBA
-
-当初我要是这么学习“进程和线程”就好了
-
-https://mp.weixin.qq.com/s/I7C7cXFgxO7RO0Wpjjj3xQ
-
-一篇文章带你“重新认识”线程上下文切换怎么玩儿
-
-----
-
-https://mp.weixin.qq.com/s/WZyuTtEfaTFLnCfvhOrp7g
-
-虚拟化原理和分类
-
-![](/images/img3/bare_metal.png)
-
-----
-
-https://mp.weixin.qq.com/s/n6D5_6K9TrnuXg3h6AiFNA
-
-华为“鸿蒙”所涉及的微内核到底是什么？一文带你认识微内核
-
-![](/images/img3/Monolithic_vs_Micro.jpg)
-
-![](/images/img3/UNIX.jpg)
-
-https://www.cnblogs.com/liqiuhao/p/9450093.html
-
-关于TOCTTOU攻击的简介

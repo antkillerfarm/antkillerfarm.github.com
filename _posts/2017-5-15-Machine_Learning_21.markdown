@@ -140,6 +140,10 @@ https://mp.weixin.qq.com/s/fcCS4qDKdGBSKnA_SaYmZA
 
 你不知道的Softmax
 
+https://zhuanlan.zhihu.com/p/79585726
+
+浅谈Softmax函数
+
 ## Softmax loss
 
 通常我们使用的Softmax loss，实际上是由softmax和交叉熵(cross-entropy loss)loss组合而成，所以全称是softmax with cross-entropy loss。

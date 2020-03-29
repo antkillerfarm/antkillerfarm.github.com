@@ -88,18 +88,6 @@ ubuntu安装ftp服务器
 
 # Ubuntu使用小技巧
 
-安装 7zip：
-
-`sudo apt-get install p7zip`
-
-安装 rar:
-
-`sudo apt-get install rar unrar`
-
-rar比较奇怪，压缩和解压是使用不同的包，这点和7zip是不一样的。
-
-常按Win键，会弹出Unity所用的键盘快捷键。
-
 ## ape文件的处理
 
 Monkey's Audio，是一种常见的无损音频压缩编码格式，扩展名为.ape。

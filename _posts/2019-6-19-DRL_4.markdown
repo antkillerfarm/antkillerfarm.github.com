@@ -152,6 +152,10 @@ https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/6
 
 Distributed Proximal Policy Optimization(DPPO)
 
+https://mp.weixin.qq.com/s/3uzx54YtqPeG6EDCVTE0YA
+
+24分钟让AI跑起飞车类游戏（Distributed PPO）
+
 # IMPALA
 
 论文：
@@ -195,6 +199,10 @@ AlphaStar之IMPALA
 https://mp.weixin.qq.com/s/1zJyw67B6DqsHEJ3avbsfQ
 
 DeepMind推出分布式深度强化学习架构IMPALA，让一个Agent学会多种技能
+
+https://mp.weixin.qq.com/s/nfsm1v7MuI6mSpRb-rGBBQ
+
+谷歌推出分布式强化学习框架SEED，性能“完爆”IMPALA，可扩展数千台机器，还很便宜
 
 # reward modeling
 

@@ -248,6 +248,34 @@ https://mp.weixin.qq.com/s/nCDn89eMWkom0AfQAWGjsA
 
 图表示学习Graph Embedding综述
 
+https://mp.weixin.qq.com/s/vhtgZLrn8zeDn0Lr_dWF4w
+
+图神经网络表达能力的研究综述，41页pdf
+
+https://mp.weixin.qq.com/s/QvPB3wNT3IeFuqLB8_nxsw
+
+从Word2vec到DeepWalk
+
+https://zhuanlan.zhihu.com/p/98483266
+
+Fi-GNN通过图神经网络建模特征交互作用来进行CTR预测
+
+https://mp.weixin.qq.com/s/RKtVkO9lITJ4QSNL3PgUbQ
+
+基于GNN，强于GNN：胶囊图神经网络的PyTorch实现
+
+https://zhuanlan.zhihu.com/p/114798371
+
+“推荐系统”加上“图神经网络”
+
+https://mp.weixin.qq.com/s/BXovM5bHshLxdmBg93EQrA
+
+阿尔伯塔大学博士毕业论文：基于图结构的自然语言处理
+
+https://mp.weixin.qq.com/s/RP6_H8ZHwJIlUt9YrsxvCA
+
+图卷积神经网络蒸馏知识，Distillating Knowledge from GCN
+
 # 深度推荐系统+
 
 https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w
@@ -317,18 +345,6 @@ https://mp.weixin.qq.com/s/fUdKIqygxqlkuv0P4wiIRg
 https://zhuanlan.zhihu.com/p/102918124
 
 微信看一看Embedding
-
-https://zhuanlan.zhihu.com/p/98483266
-
-Fi-GNN通过图神经网络建模特征交互作用来进行CTR预测
-
-https://mp.weixin.qq.com/s/RKtVkO9lITJ4QSNL3PgUbQ
-
-基于GNN，强于GNN：胶囊图神经网络的PyTorch实现
-
-https://zhuanlan.zhihu.com/p/114798371
-
-“推荐系统”加上“图神经网络”
 
 # 肺炎版《黄冈密卷》
 

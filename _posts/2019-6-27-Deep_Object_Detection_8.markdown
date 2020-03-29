@@ -278,6 +278,10 @@ https://zhuanlan.zhihu.com/p/114700229
 
 目标检测中的特征冲突与不对齐问题
 
+https://blog.csdn.net/sanshibayuan/article/details/103642419
+
+单阶段实例分割（Single Shot Instance Segmentation）
+
 # 设计模式
 
 面向对象的设计模式有七大基本原则：

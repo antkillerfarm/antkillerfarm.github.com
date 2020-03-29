@@ -262,3 +262,37 @@ https://mp.weixin.qq.com/s/thd_dtd4erqSf7p6ZON72w
 https://zhuanlan.zhihu.com/p/96420594
 
 特征工程架构性好文
+
+# NLP参考资源+
+
+https://mp.weixin.qq.com/s/21bhPa4ECNFmUcF0GOQSkw
+
+从字符级的语言建模开始，了解语言模型与序列建模的基本概念
+
+https://speechlab.sjtu.edu.cn/pages/sz128/homepage/year/10/27/survey-on-grammar-retrieval/
+
+论文调研：基于“规则、槽值”检索的口语语义理解
+
+https://mp.weixin.qq.com/s/BdvBV542AZnMw7hnjDSwWw
+
+百度语义计算技术及其应用
+
+https://mp.weixin.qq.com/s/KQPLDhnlxks4DQNZEhEacQ
+
+百度阅读理解技术研究及应用
+
+https://zhuanlan.zhihu.com/p/94768011
+
+流言止于“智”者：网络虚假信息的特征与检测
+
+https://mp.weixin.qq.com/s/ucFtWopoErtUCYDTLv2kFg
+
+一文了解Text-to-SQL
+
+https://mp.weixin.qq.com/s/T2Nv7dQvZR6sVht1LfKSlw
+
+NLP技术在微博feed流中的应用
+
+https://mp.weixin.qq.com/s/mVNHAiHY__Z0xTXkDDyZTw
+
+如何打造高质量的NLP数据集

@@ -289,3 +289,47 @@ https://mp.weixin.qq.com/s/DlRbHavllHghzi-Xr5Y1Hg
 https://mp.weixin.qq.com/s/4hL6wWQ73icEWHfK6QKSMw
 
 频域学习，Learning in the Frequency Domain
+
+# Linux参考资源+
+
+https://mp.weixin.qq.com/s/4tAxQ0auQfv5x7Dh3B-85g
+
+Linux内存管理
+
+http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html
+
+进程与线程的一个简单解释
+
+https://mp.weixin.qq.com/s/zVi45pZka_kPpKIoNXNVBA
+
+当初我要是这么学习“进程和线程”就好了
+
+https://mp.weixin.qq.com/s/I7C7cXFgxO7RO0Wpjjj3xQ
+
+一篇文章带你“重新认识”线程上下文切换怎么玩儿
+
+----
+
+https://mp.weixin.qq.com/s/WZyuTtEfaTFLnCfvhOrp7g
+
+虚拟化原理和分类
+
+![](/images/img3/bare_metal.png)
+
+----
+
+https://mp.weixin.qq.com/s/n6D5_6K9TrnuXg3h6AiFNA
+
+华为“鸿蒙”所涉及的微内核到底是什么？一文带你认识微内核
+
+![](/images/img3/Monolithic_vs_Micro.jpg)
+
+![](/images/img3/UNIX.jpg)
+
+https://www.cnblogs.com/liqiuhao/p/9450093.html
+
+关于TOCTTOU攻击的简介
+
+https://mp.weixin.qq.com/s/2QAm6F109LV2koC64xIpqA
+
+简直不要太硬了！一文带你彻底理解文件系统

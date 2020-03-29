@@ -359,6 +359,6 @@ Ctrl+Alt+T：启动Terminal
 
 Ctrl+Shift+T：在terminal中打开多个标签
 
-alt+1 alt+2 alt+3........：切换标签
+alt+1 alt+2 alt+3...：切换标签
 
 Ctrl+Super+D：最小化所有窗口

@@ -16,6 +16,20 @@ https://zhuanlan.zhihu.com/c_1174996853811335168
 
 一个多核&并行的专栏
 
+## 并发和并行
+
+并发(concurrency)是指能处理多个同时性活动的能力，并发事件之间不一定要同一时刻发生。
+
+并行(parallelism)是指同时发生的两个并发事件，具有并发的含义，而并发则不一定并行。
+
+来个比喻：并发和并行的区别就是一个人同时吃三个馒头和三个人同时吃三个馒头。
+
+参考：
+
+https://mp.weixin.qq.com/s/23QCWf0NOoXlwRGAHfx4oQ
+
+还在疑惑并发和并行？
+
 ## 参考
 
 https://mp.weixin.qq.com/s/ai_XI8ddP5I2m3ChCqnQsA
@@ -353,31 +367,3 @@ https://mp.weixin.qq.com/s/6IO-pAP6Jcct5W-tReaLtw
 https://zhuanlan.zhihu.com/p/26461511
 
 关于WordNet，我的一些用法和思路
-
-https://speechlab.sjtu.edu.cn/pages/sz128/homepage/year/10/27/survey-on-grammar-retrieval/
-
-论文调研：基于“规则、槽值”检索的口语语义理解
-
-https://mp.weixin.qq.com/s/BdvBV542AZnMw7hnjDSwWw
-
-百度语义计算技术及其应用
-
-https://mp.weixin.qq.com/s/KQPLDhnlxks4DQNZEhEacQ
-
-百度阅读理解技术研究及应用
-
-https://zhuanlan.zhihu.com/p/94768011
-
-流言止于“智”者：网络虚假信息的特征与检测
-
-https://mp.weixin.qq.com/s/ucFtWopoErtUCYDTLv2kFg
-
-一文了解Text-to-SQL
-
-https://mp.weixin.qq.com/s/T2Nv7dQvZR6sVht1LfKSlw
-
-NLP技术在微博feed流中的应用
-
-https://mp.weixin.qq.com/s/mVNHAiHY__Z0xTXkDDyZTw
-
-如何打造高质量的NLP数据集

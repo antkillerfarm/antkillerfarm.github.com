@@ -70,6 +70,20 @@ http://blog.china.com/u/060803/5544/200608/15355.html
 
 # 各种压缩包的压缩和解压方法
 
+## 安装
+
+安装 7zip：
+
+`sudo apt-get install p7zip`
+
+安装 rar:
+
+`sudo apt-get install rar unrar`
+
+rar比较奇怪，压缩和解压是使用不同的包，这点和7zip是不一样的。
+
+常按Win键，会弹出Unity所用的键盘快捷键。
+
 ## .tar.gz和.tgz
 
 解压：`tar zxvf FileName.tar.gz`
@@ -168,44 +182,23 @@ PS:tar命令对于长选项和短选项的顺序有要求，例如，不覆盖�
 
 sEx只是调用相关程序，本身并无压缩、解压功能，请注意！
 
-sEx请到： http://sourceforge.net/projects/sex下载！
+sEx官网：
 
-## betty
+http://sourceforge.net/projects/sex
 
-betty是Jeff Pickhardt开发的人工智能助手，可以将英文转换成Linux命令。
+## 7zip
 
-安装方法如下：
-
-```bash
-sudo apt-get install git curl ruby
-cd ~
-git clone https://github.com/pickhardt/betty
-sudo nano ~/.bashrc
-```
-
-在.bashrc末尾添加以下内容：
-
-`alias betty="/home/sk/betty/main.rb"`
-
-重启终端即可。
-
-使用方法：
-
-`betty compress test/ test.tar.gz`
-
-## Hubot
-
-Hubot是个和betty类似的开源聊天机器人，可以用来做一些自动化任务，如部署网站，翻译语言等等。
+7-Zip是Igor Pavlov于1999年开发的压缩软件。
 
 官网：
 
-https://hubot.github.com/
+https://sparanoid.com/lab/7z/
 
-参考：
+它虽然支持多种压缩算法，但最重要的还是LZMA（Lempel-Ziv-Markov chain-Algorithm）算法。
 
-https://segmentfault.com/a/1190000004855149
+该算法的SDK：
 
-Hubot 的简单用法
+https://sparanoid.com/lab/7z/sdk.html
 
 # 开源社区分裂史
 
@@ -234,4 +227,3 @@ Hubot 的简单用法
 DivX本来是个开源项目。但有一天，几个项目管理者建立了一个商业公司，出于商业目的，而将其变成了闭源项目。这样一来，就激怒了为该项目无偿贡献代码的开源社区。作为回应，开源社区发起了Xvid项目。
 
 事情的结局有点童话色彩：开源的Xvid最终战胜了不厚道的DivX。但背后的逻辑并没有那么童话。开源软件由于拥有成本为0，天生就是商业软件，尤其是收费商业软件的克星，这其实是经济规律在起作用。一般来说，如果以100分为满分，免费软件只要拿80分，收费软件就没有什么戏了。而开源软件只要拿70分，闭源软件也同样没戏了。
-

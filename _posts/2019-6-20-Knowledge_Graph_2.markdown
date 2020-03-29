@@ -344,6 +344,10 @@ https://mp.weixin.qq.com/s/6c8imZFRAoxgs18rk_tlEw
 
 炼丹感悟：On the Generalization of RL
 
+https://mp.weixin.qq.com/s/PpBMu-5ozc9UOBbFhjsf3A
+
+漫谈强化学习中的引导搜索策略（GPS方法）
+
 # Python+
 
 https://mp.weixin.qq.com/s/Hv0rPD29PPd3Rn6lW6w5dg

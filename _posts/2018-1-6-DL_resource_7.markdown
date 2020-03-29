@@ -342,7 +342,7 @@ https://mp.weixin.qq.com/s/OkSjIw54TNbRtKN0I2Ug1Q
 
 LeCun哈佛演讲：《机器怎样才能像人和动物一样学习》（135页PPT）
 
-# NLP参考资源+
+# NLP参考资源
 
 https://mp.weixin.qq.com/s/JDAlR3Z3_V0XfQlMCOM8PQ
 
@@ -371,7 +371,3 @@ https://mp.weixin.qq.com/s/lHhmUR-DXMceJSxwIn7QGw
 https://mp.weixin.qq.com/s/X1h6EfLVDAnDj2pKZUqyJA
 
 英文文本挖掘预处理流程
-
-https://mp.weixin.qq.com/s/21bhPa4ECNFmUcF0GOQSkw
-
-从字符级的语言建模开始，了解语言模型与序列建模的基本概念

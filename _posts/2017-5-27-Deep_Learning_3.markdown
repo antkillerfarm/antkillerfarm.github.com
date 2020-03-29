@@ -63,6 +63,20 @@ Batch Normalization是Google提出的一种神经网络优化技巧。
 
 3.减少模型训练对初始化的依赖。
 
+----
+
+Normalization：
+
+$$x'=\frac{x-\min(x)}{\max(x)-\min(x)}$$
+
+Standardization：
+
+$$x'=\frac{x-\overline{x}}{\sigma}$$
+
+Standardization虽然也能约束取值空间，但没有Normalization那么严格。它的主要目的是**将数据映射为正态分布**，因此对于异常点，超出$$3\sigma$$也是有可能的。
+
+----
+
 参考：
 
 http://blog.csdn.net/malefactor/article/details/51476961
@@ -104,6 +118,10 @@ https://www.jianshu.com/p/35a3bf866c46
 https://blog.csdn.net/u010315668/article/details/80374711
 
 机器学习之特征归一化（normalization）
+
+https://www.jianshu.com/p/95a8f035c86c
+
+归一化（Normalization）、标准化（Standardization）和中心化/零均值化（Zero-centered）
 
 ## 鞍点
 

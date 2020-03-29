@@ -367,3 +367,7 @@ https://mp.weixin.qq.com/s/GqqU3Ixht1BzMnQeRYQEqQ
 https://mp.weixin.qq.com/s/2f91Ksj19rk_emoFpEmPfA
 
 从BERT看大规模数据的无监督利用
+
+https://mp.weixin.qq.com/s/hF4EcKqmaTm_gemxX7Kftg
+
+BERT的嵌入层是如何实现的？

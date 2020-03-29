@@ -419,7 +419,7 @@ https://blog.csdn.net/w174504744/article/details/73187697
 
 ZeroMQ
 
-# Linux参考资源+
+# Linux参考资源
 
 https://mp.weixin.qq.com/s/snQ3T86usv4rXz0MMQvFfQ
 

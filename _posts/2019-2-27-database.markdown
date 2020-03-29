@@ -116,7 +116,7 @@ https://mp.weixin.qq.com/s/4AnLu0m2IILGwyPyuK37Fg
 
 ## LSM (Log Structured Merge)
 
-十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。
+十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。其核心思想就是放弃部分读能力，换取写入的最大化能力。
 
 http://www.open-open.com/lib/view/open1424916275249.html
 
@@ -125,6 +125,10 @@ Log Structured Merge Trees(LSM)原理
 https://mp.weixin.qq.com/s/CmYg22NObamkNOqGjKg0-w
 
 解读现代存储系统背后的经典算法
+
+https://mp.weixin.qq.com/s/9L_HOCfRwC_QxjzJyVjKXA
+
+字节跳动在RocksDB存储引擎上的改进实践
 
 ## 分布式算法
 
@@ -304,45 +308,44 @@ https://mp.weixin.qq.com/s/m_JMXU6iMS4SckzWZYtIUA
 
 ·/etc/my.cnf是默认的MySQL配置文件。
 
-## 常用操作
+## 导入csv文件
 
-登录方法：
+http://www.mysqltutorial.org/import-csv-file-mysql-table/
 
-`mysql -h 192.168.4.251 -u root -p`
+Import CSV File Into MySQL Table
 
-语句以“;”结尾。
+示例：
 
-| 名称 | 操作 |
-|:--|:--|
-| 添加用户 | insert into mysql.user(Host,User,Password) <br/>values("localhost","test",password("1234")); |
-| 列出所有数据库 | show database; |
-| 切换数据库 | use 数据库名; |
-| 列出所有表 | show tables; |
-| 显示数据表结构 | describe 表名; |
-| 创建自增ID | create table github(id int auto_increment primary key not null,name varchar(256)); |
-| 查询头N条记录 | select * from shop_info limit N; |
-| 检索记录行 6-15 | select * from table limit 5,10; |
-| 删除记录 | delete from shop_info where shop_id="1"; |
-| 排序+别名+分组+count | select city_name,count(*) as city_count from shop_info group by city_name <br/>order by city_count desc limit 5; |
-| 两列排序+两列相乘 | select shop_id,count(*)*per_pay from shop_info order by per_pay desc,shop_id desc; |
-| 每日统计 | select count(shop_id),date(time_stamp) as dates from user_pay <br/>where shop_id='1234' group by dates order by dates asc; |
-| 年月日 | select year(ordertime),month(ordertime),day(ordertime) from book; |
-| 周数+星期几 | select week(ordertime),weekday(ordertime) from book; |
-| 统计表中的记录条数 | select count(*) from user_pay; |
-| 统计某一列中不同值的个数 | select count(distinct user_id) from user_pay; |
+```sql
+LOAD DATA LOCAL INFILE 'c:/tmp/discounts.csv' 
+INTO TABLE discounts 
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+```
 
-参考：
+上面的语句中，LOCAL必不可少，否则会报如下错误：
 
-http://www.cnblogs.com/wuhou/archive/2008/09/28/1301071.html
+`ERROR 1290 (HY000): The MySQL server is running with the --secure-file-priv option so it cannot execute this statement`
 
-Ubuntu安装配置Mysql
+## 中间数据的存储
 
-http://www.cnblogs.com/wanghetao/p/3806888.html
+有的时候，SQL中间处理的结果需要存储起来，以备后用。这时有两种办法：
 
-MySQL添加用户、删除用户与授权
+1.创建View。
 
-## 执行脚本
+```sql
+CREATE VIEW view_name AS
+SELECT column_name(s)
+FROM table_name
+WHERE condition;
+```
 
-mysql命令行下执行：
+View并不在数据库中存储数据，而是在查询时，执行其中的select语句（每次查询，都会执行），生成中间结果。因此，View从原理来说，更像是一种语法糖，而非存储机制。
 
-`source a.sql`
+2.使用select语句创建table。
+
+`Create table new_table_name (Select * from old_table_name);`
+
+这种方法会将中间结果存储到数据库中，下次使用的时候，就无需重新生成了。但缺点是原table中的更新不会体现到新table中，只适合处理历史数据。

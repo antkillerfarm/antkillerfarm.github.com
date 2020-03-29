@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Ubuntu使用技巧（三）, 硬盘安装Linux（UEFI）, diff&patch, awk&sed&grep
+title:  Ubuntu使用技巧（三）, 硬盘安装Linux（UEFI）, awk&sed&grep
 category: linux 
 ---
 
@@ -269,31 +269,42 @@ https://github.com/tomaspinho/rtl8821ce
 
 安装驱动之前，需要进UEFI，关闭Secure Boot选项。这个选项会拒绝未验证的系统或驱动。Ubuntu官方的镜像经过了MS的认证，可以正常安装。但是UbuntuKylin不行，第三方驱动显然也不行。
 
-# diff&patch
+# betty
 
-diff/patch这对工具在数学上来说，diff是对2个集合求差，patch是求和。
+betty是Jeff Pickhardt开发的人工智能助手，可以将英文转换成Linux命令。
+
+安装方法如下：
 
 ```bash
-diff -uNr A B > C #生成A和B的diff文件C,-uNr为最常用的选项
-patch A C #给A打上diff文件得到B
-patch -R B C #B还原为A
+sudo apt-get install git curl ruby
+cd ~
+git clone https://github.com/pickhardt/betty
+sudo nano ~/.bashrc
 ```
 
-## 给目录应用patch。
+在.bashrc末尾添加以下内容：
 
-`patch -p1 <1.patch`
+`alias betty="/home/sk/betty/main.rb"`
 
-这种情况适合1.patch中包含对多个文件的修改时。
+重启终端即可。
 
-## 批量应用patch
+使用方法：
 
-有的时候，patch不是一个patch文件，而是一个目录中的若干个patch文件。这时可用如下办法：
+`betty compress test/ test.tar.gz`
 
-`find . -name "*.patch">1.txt`
+# Hubot
 
-`sort 1.txt | xargs cat >2.patch`
+Hubot是个和betty类似的开源聊天机器人，可以用来做一些自动化任务，如部署网站，翻译语言等等。
 
-`patch -p1 <2.patch`
+官网：
+
+https://hubot.github.com/
+
+参考：
+
+https://segmentfault.com/a/1190000004855149
+
+Hubot的简单用法
 
 # awk&sed&grep
 
