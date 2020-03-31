@@ -112,6 +112,10 @@ https://www.zhihu.com/question/290088641/answer/543419468
 
 CNN文本分类中是否可以使用字向量代替词向量？
 
+https://mp.weixin.qq.com/s/zDneR1BU6xvt8cndEF4_Xw
+
+深入浅出Word2Vec原理解析
+
 # RNN
 
 ## RNN的基本结构

@@ -226,6 +226,10 @@ https://www.jianshu.com/p/55755fc649b1
 
 如何轻松愉快地理解条件随机场（CRF）？
 
+https://zhuanlan.zhihu.com/p/34261803
+
+白话条件随机场（conditional random field）
+
 ## BiLSTM+CRF
 
 ![](/images/img2/BiLSTM_CRF.jpg)
@@ -248,7 +252,7 @@ https://www.zhihu.com/question/62399257
 
 https://mp.weixin.qq.com/s/1FCWMRapGMXjxTLoA2fYCg
 
-CRF和LSTM 模型在序列标注上的优劣？
+CRF和LSTM模型在序列标注上的优劣？
 
 https://zhuanlan.zhihu.com/p/97676647
 
@@ -258,34 +262,18 @@ https://zhuanlan.zhihu.com/p/44042528
 
 最通俗易懂的BiLSTM-CRF模型中的CRF层介绍
 
-# 自适应滤波器
+https://mp.weixin.qq.com/s/0WVqQkvzb6TYFA9gEh73ZQ
 
-《自适应滤波器原理（Adaptive Filter Theory）》，Simon Haykin著。
+BiLSTM上的CRF，用命名实体识别任务来解释CRF（1）
 
-## 基本估计
+https://mp.weixin.qq.com/s/VG5C9NFMejetrj60KIbWug
 
-三种基本的信息处理运算：
+BiLSTM上的CRF，用命名实体识别任务来解释CRF（2）损失函数
 
-**滤波（Filter）**：利用$$[0,t]$$的数据，来估计t时刻信息的运算过程。
+https://mp.weixin.qq.com/s/PaunoXYUz13s0lbgzcqE9A
 
-**平滑（Smoothing）**：利用$$[0,t]$$的数据，来估计$$t'(t'<t)$$时刻信息的运算过程。
+BiLSTM上的CRF，用命名实体识别任务来解释CRF（3）推理
 
-**预测（Prediction）**：利用$$[0,t]$$的数据，来估计$$t+\tau(\tau>0)$$时刻信息的运算过程。
+https://mp.weixin.qq.com/s/xJ7MpUkVfLQKxRYyJs29NQ
 
-可见，滤波和预测是实时运算，而平滑是非实时运算。
-
-## Optimal Wiener Filters
-
->Norbert Wiener，1894～1964，美国数学家，控制论之父。18岁获得Harvard博士。MIT教授。
-
-Wiener Filter主要用于**平稳状态下的线性滤波**。该滤波器在均方误差意义上是最优的。误差信号均方值相对于线性滤波器可调参数的曲线，称为**误差性能曲面**。该曲面的极小点即为Wiener solutions。
-
-根据滤波器的记忆能力，可将线性滤波器分为Finite Impulse Response和Infinite Impulse Response，分别代表有限记忆和无限长但衰减的记忆。
-
-在非平稳环境下，误差性能曲面随时间变化而变化，但只要输入数据的变化与算法学习率相比是慢的，则滤波器就能跟踪住。
-
-参考：
-
-https://blog.csdn.net/bluecol/article/details/46242355
-
-图像去模糊（维纳滤波）
+BiLSTM上的CRF，用命名实体识别任务来解释CRF（4）

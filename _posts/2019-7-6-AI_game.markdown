@@ -305,3 +305,29 @@ https://mp.weixin.qq.com/s/pejkWw0mqKMAErfj3u_Vpg
 https://mp.weixin.qq.com/s/Mdq9fL10Zcjs_z3PeqtN9Q
 
 腾讯AI单挑碾压王者荣耀职业玩家：人类15场只能赢1局，坚持不到8分钟
+
+# CPU+
+
+https://mp.weixin.qq.com/s/PzD1lCe5h3VkMrhFb7CfQg
+
+后SoC时代或将迎来Chiplet拐点
+
+https://mp.weixin.qq.com/s/oMA9RSaq0nuSNgKDRwHavQ
+
+Chiplet最强科普
+
+https://zhuanlan.zhihu.com/p/114448236
+
+什么是Win10的“现代待机”？为什么它未来会越来越重要？这篇文章部分解释了我的第一个平板为什么那么耗电。
+
+----
+
+![](/images/img3/Memristor.png)
+
+https://mp.weixin.qq.com/s/k0u7pVzf7tjVF4UjZ3ai7A
+
+忆阻器的前世今生
+
+https://mp.weixin.qq.com/s/rSGRXfN4z3ElP7iQX1umjQ
+
+基于新型忆阻器的存内计算原理、研究和挑战

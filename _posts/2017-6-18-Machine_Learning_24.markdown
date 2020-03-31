@@ -145,6 +145,10 @@ https://mp.weixin.qq.com/s/1ZNCbj5kMFENzP_SapQYgg
 
 Softmax分类及与SVM比较
 
+https://mp.weixin.qq.com/s/j_LzPcESaou0FOS2Z4f3kA
+
+关于SVM，面试官们都怎么问
+
 ## 数据不平衡问题
 
 SVM中超参数C决定了错误分类的惩罚值，为了处理不平衡类别的问题，我们可以给C按类加权重：
@@ -168,6 +172,30 @@ SVM的概率输出（Platt scaling）
 https://mp.weixin.qq.com/s/lYj-GVNSDp26czRXbf0iNw
 
 如果你会模型融合！那么，我要和你做朋友！！
+
+## GBDT+LR
+
+论文：
+
+《Practical Lessons from Predicting Clicks on Ads at Facebook》
+
+GBDT除了单独使用之外，也可以和其他模型Stack使用。
+
+![](/images/img3/GBDT_LR.png)
+
+上图就是GBDT+LR的示意图。上图中，GBDT有红蓝两个子树。黑色样本经子树分类后，落在子树打勾的分支中。将分类结果进行编码，然后交给LR进行进一步的分类。
+
+当然了，把GBDT换成其他决策树，如XGBoost，把LR换成SVM，显然也是可行的。相对于LR之类的模型，决策树在特征提取方面，还是很有优势的。
+
+参考：
+
+https://www.cnblogs.com/wkang/p/9657032.html
+
+GBDT+LR算法解析及Python实现
+
+https://blog.csdn.net/losteng/article/details/78378958
+
+学习GBDT+LR
 
 # 特征工程
 

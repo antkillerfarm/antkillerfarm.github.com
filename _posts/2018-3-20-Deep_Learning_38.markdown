@@ -138,6 +138,10 @@ https://mp.weixin.qq.com/s/PsToV8Z17tRzXW_AbaMNmg
 
 Blazeface人脸检测器
 
+https://mp.weixin.qq.com/s/5ANMZNaR2ayYMUQEJ6aM3w
+
+人脸识别基于通用表示学习
+
 # RNN进阶
 
 ## IndRNN

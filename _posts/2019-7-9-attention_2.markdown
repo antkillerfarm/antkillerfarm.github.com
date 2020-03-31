@@ -44,6 +44,10 @@ https://zhuanlan.zhihu.com/p/92017824
 
 浅谈Transformer-based模型中的位置表示
 
+https://mp.weixin.qq.com/s/ENpXBYQ4hfdTLSXBIoF00Q
+
+如何优雅地编码文本中的位置信息？三种positioanl encoding方法简述
+
 ## Hard Attention
 
 论文：

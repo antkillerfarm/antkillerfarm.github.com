@@ -347,3 +347,7 @@ https://mp.weixin.qq.com/s/eUQQEB_0ts0K9h1mw7GQcA
 https://mp.weixin.qq.com/s/wPKSUpQcB-WrpgsU1Q4iZA
 
 使用MAML元学习的少样本图分类
+
+https://mp.weixin.qq.com/s/CBAdmV4sItmAjxPIA8Fa2w
+
+元学习: 深度阐述元学习的理论模型

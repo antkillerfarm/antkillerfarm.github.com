@@ -439,4 +439,3 @@ jre/lib/security/java.policy文件中新增
 `permission javax.management.MBeanTrustPermission "register";`
 
 4.以es用户的身份解压各压缩包，否则会有一大堆的权限错误。
-

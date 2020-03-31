@@ -363,3 +363,7 @@ AutoML在计算机视觉领域的能与不能
 https://mp.weixin.qq.com/s/MIJHiYk-CjYtmW_9zW4hjA
 
 Hyper-Parameter Optimization，56页pdf
+
+https://mp.weixin.qq.com/s/y-5Gh0Jy3Fpz8xvw_tOICg
+
+MixPath：基于权重共享的神经网络搜索统一方法

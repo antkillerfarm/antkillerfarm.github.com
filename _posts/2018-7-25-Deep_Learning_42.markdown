@@ -248,6 +248,10 @@ https://mp.weixin.qq.com/s/HxYckWC7rKEq8L6bUMKHTg
 
 手机拍出单反照片，苏黎世理工单个深度卷积模型取代ISP
 
+https://zhuanlan.zhihu.com/p/107840206
+
+深度学习替代手机ISP可行吗？
+
 # LSM
 
 liquid state machine (LSM)

@@ -56,6 +56,10 @@ https://zhuanlan.zhihu.com/p/28445511
 
 浅析深度学习框架设计中的关键技术
 
+https://www.zhihu.com/question/57799212
+
+ring allreduce和tree allreduce的具体区别是什么？
+
 https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
 
 IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能

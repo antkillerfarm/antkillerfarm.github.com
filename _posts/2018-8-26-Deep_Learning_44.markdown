@@ -250,6 +250,10 @@ https://mp.weixin.qq.com/s/kgQBQz2u8aMzZaHFhWF_VQ
 
 拍照总被路人甲抢镜？那就用这个项目消Ta
 
+https://mp.weixin.qq.com/s/nlqaKavnU-jEjj1lasq96Q
+
+宫崎骏动画里的新垣结衣见过没？这个开源动漫生成器让你的照片秒变手绘日漫
+
 # 自动求导
 
 DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。

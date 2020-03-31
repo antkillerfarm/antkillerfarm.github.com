@@ -262,7 +262,7 @@ https://zhuanlan.zhihu.com/p/108625273
 
 Self-Supervised Learning入门介绍
 
-https://mp.weixin.qq.com/s/Ekh0CqHuXGxKsy7sFropoA
+https://zhuanlan.zhihu.com/p/108906502
 
 Self-supervised Learning再次入门
 

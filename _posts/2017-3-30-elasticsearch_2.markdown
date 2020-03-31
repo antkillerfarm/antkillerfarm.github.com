@@ -215,6 +215,10 @@ https://mp.weixin.qq.com/s/0TMESj2Z-XK2PzwBQo0Mpg
 
 Elasticsearch调优实践
 
+https://mp.weixin.qq.com/s/pT-6-U9mF4ttg0arp6BsVQ
+
+Python+ElasticSearch：有了这个超级武器，你也可以报名参加诗词大会了！
+
 # Flume & Kafka
 
 Flume和Kafka都是日志系统。

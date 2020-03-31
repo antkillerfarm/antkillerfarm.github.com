@@ -26,6 +26,10 @@ https://mp.weixin.qq.com/s/2RRzZcoy4L92n3VZH0o07w
 
 无偏见排序学习：理论与实践135页PPT教程
 
+https://www.comp.nus.edu.sg/~xiangnan/icmr18-recsys.pdf
+
+中科大何向南的推荐系统教程
+
 ## 算法
 
 深度推荐系统的算法包括：

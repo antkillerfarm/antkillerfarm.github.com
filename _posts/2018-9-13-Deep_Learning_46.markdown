@@ -276,6 +276,18 @@ https://mp.weixin.qq.com/s/RP6_H8ZHwJIlUt9YrsxvCA
 
 图卷积神经网络蒸馏知识，Distillating Knowledge from GCN
 
+https://zhuanlan.zhihu.com/p/63207928
+
+图卷积网络在VQA问题中的应用
+
+https://mp.weixin.qq.com/s/YwvXKreRjk_07t3SSXUilg
+
+图神经网络(GNN)结构化数据分析
+
+https://mp.weixin.qq.com/s/GnjSuQ_BihO5bP5xO2xHJg
+
+万字长文带你入门GCN
+
 # 深度推荐系统+
 
 https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w
@@ -345,6 +357,14 @@ https://mp.weixin.qq.com/s/fUdKIqygxqlkuv0P4wiIRg
 https://zhuanlan.zhihu.com/p/102918124
 
 微信看一看Embedding
+
+https://zhuanlan.zhihu.com/p/115781834
+
+深度学习在花椒直播中的应用——推荐系统冷启动算法
+
+https://mp.weixin.qq.com/s/ec88cMR4K6pWyHhJs7FEFQ
+
+智能推荐算法在花椒直播中的应用
 
 # 肺炎版《黄冈密卷》
 

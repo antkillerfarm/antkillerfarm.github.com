@@ -134,6 +134,8 @@ https://github.com/xukai871105/contiki_cc2530_iar/
 
 # 各种智能家居通信技术比较
 
+2015.12
+
 <table>
   <tr>
     <th>名称</th>
@@ -202,6 +204,12 @@ https://github.com/xukai871105/contiki_cc2530_iar/
     <td></td>
   </tr>
 </table>
+
+----
+
+https://mp.weixin.qq.com/s/J700Ifq5FfJqtgmO2VVn6g
+
+Cat 1大热背后，NB-IoT该何去何从？
 
 # 边缘计算
 

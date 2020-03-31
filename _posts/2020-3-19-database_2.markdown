@@ -290,6 +290,18 @@ https://xueqiu.com/1913820214/140236918
 
 吉利德发家史：5次豪赌，从小药厂到世界巨头的30年蜕变！
 
+----
+
+瑞德西韦（Remdesivir）、法匹拉韦（Favipiravir）、巴洛沙韦（Baloxavir）、洛匹那韦（lopinavir）、利托那韦（ritonavir）
+
+盘尼西林、阿莫西林、配尼西林、替卡西林、羧苄西林、匹美西林
+
+青霉素、庆大霉素、万古霉素
+
+https://mp.weixin.qq.com/s/8XlUuq6HoppIJbeR58LrnA
+
+想成为一个合格的药？选择姓什么很重要
+
 ## 蝙蝠
 
 https://mp.weixin.qq.com/s/QN2GQ6T9Q2cwT_CN6aX_YQ
@@ -345,29 +357,3 @@ https://mp.weixin.qq.com/s/MJamXXj44e-fxaP9WRyhgw
 http://www.sohu.com/a/370615513_105067
 
 网传饶毅致信舒红兵：您夫人不适合领导武汉病毒所
-
-# CPU+
-
-https://mp.weixin.qq.com/s/PzD1lCe5h3VkMrhFb7CfQg
-
-后SoC时代或将迎来Chiplet拐点
-
-https://mp.weixin.qq.com/s/oMA9RSaq0nuSNgKDRwHavQ
-
-Chiplet最强科普
-
-https://zhuanlan.zhihu.com/p/114448236
-
-什么是Win10的“现代待机”？为什么它未来会越来越重要？这篇文章部分解释了我的第一个平板为什么那么耗电。
-
-----
-
-![](/images/img3/Memristor.png)
-
-https://mp.weixin.qq.com/s/k0u7pVzf7tjVF4UjZ3ai7A
-
-忆阻器的前世今生
-
-https://mp.weixin.qq.com/s/rSGRXfN4z3ElP7iQX1umjQ
-
-基于新型忆阻器的存内计算原理、研究和挑战

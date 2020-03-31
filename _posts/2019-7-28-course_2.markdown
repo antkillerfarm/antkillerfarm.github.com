@@ -106,6 +106,10 @@ https://missing.csail.mit.edu/
 
 The Missing Semester of Your CS Education
 
+https://engineering.purdue.edu/ChanGroup/ECE595/index.html
+
+ECE 595: Machine Learning
+
 # English
 
 SOTA(state of the art)：目前最高水平

@@ -100,6 +100,8 @@ https://zhuanlan.zhihu.com/p/27921878
 
 # 其他前端问题
 
+![](/images/img3/speech_signal_processing.jpg)
+
 ## 语音增强
 
 语音增强是指当语音信号被各种各样的噪声(包括语音)干扰甚至淹没后，从含噪声的语音信号中提取出纯净语音的过程。

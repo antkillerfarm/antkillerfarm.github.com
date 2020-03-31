@@ -377,3 +377,7 @@ http://www.makertime.org/
 https://mp.weixin.qq.com/s/ynaXjlSkfFAlW5Wpc4ZhGg
 
 牛顿的超级女粉丝：夏特莱侯爵夫人
+
+https://mp.weixin.qq.com/s/cBjB_lhnpbkwjnoDw2QvOQ
+
+原来，自动搅拌杯的原理比想象中的还要简单！（热电效应）

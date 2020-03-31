@@ -204,6 +204,10 @@ https://mp.weixin.qq.com/s/nfsm1v7MuI6mSpRb-rGBBQ
 
 谷歌推出分布式强化学习框架SEED，性能“完爆”IMPALA，可扩展数千台机器，还很便宜
 
+https://mp.weixin.qq.com/s/FQ7h0vixcztBUu70iFeYXw
+
+Google发布"强化学习"框架"SEED RL"
+
 # reward modeling
 
 ![](/images/img2/reward_modeling.jpg)

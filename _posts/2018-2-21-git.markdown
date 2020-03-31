@@ -123,7 +123,9 @@ git的reset和checkout的区别
 
 `git diff SHA1 SHA2` 比较两个历史版本之间的差异，SHA1和SHA2是两次commit的SHA值。
 
-应用patch：`git am`
+应用patch：`git am`和`git apply`。
+
+`git apply`并不会将commit message等打上去，打完patch后需要重新`git add`和`git commit`，而`git am`会直接将patch的所有信息打上去。
 
 9.使用tag
 

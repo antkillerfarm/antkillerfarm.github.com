@@ -234,6 +234,10 @@ https://www.zhihu.com/question/375143619
 
 新冠病毒会像乙肝病毒和艾滋病毒一样终身携带吗?
 
+https://mp.weixin.qq.com/s/mpY95yvWR_96KT5SL4T-Xg
+
+新冠病毒是如何为自己“加冕”的？
+
 ----
 
 ![](/images/img3/season.png)

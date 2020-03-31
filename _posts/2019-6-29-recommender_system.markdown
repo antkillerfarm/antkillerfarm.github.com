@@ -330,7 +330,13 @@ https://mp.weixin.qq.com/s/wIMVTZPOc4iGVRrnimbZhg
 
 推荐系统从入门到接着入门
 
+https://mp.weixin.qq.com/s/Ppvz4KkzWkMy6jXfbv6VqA
+
+推荐系统之矩阵分解家族
+
 # 推荐算法中的常用排序算法
+
+![](/images/img3/ranking.png)
 
 ## Pointwise方法
 
