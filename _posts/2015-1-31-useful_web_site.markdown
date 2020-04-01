@@ -450,3 +450,9 @@ https://mp.weixin.qq.com/s/_S-GY-1ZiG2OBGMcg5sXUg
 https://mp.weixin.qq.com/s/swrxHw76In_Zr_GFm8ieXw
 
 N95之父华裔科学家Peter Tsai教你如何正确戴口罩
+
+----
+
+KN95是中国标准，主要用于工业场景，且不要求油性防护，因此只是用氯化钠颗粒物检测，要求规过滤效果大于95%。此外中国还有KP95标准，支持油性防护。其中，“N”表示不耐油（not resistant to oil），“P”表示防油（oil proof）。
+
+KN95医用标准GB19083，工业标准是GB2626。
