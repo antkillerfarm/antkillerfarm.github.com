@@ -409,35 +409,7 @@ http://ftp.gnome.org/pub/GNOME/sources/
 
 # 新冠肺炎
 
-## 口罩
-
-https://mp.weixin.qq.com/s/IVmgIp-LC6JiqfyCfXBJhg
-
-口罩惊险史，听说内衣也可以“救急”？
-
-https://mp.weixin.qq.com/s/WoQyr__tUBJ6HQrj3lnZuw
-
-一图彻底了解怎么戴口罩！国家卫健委图解《不同人群预防新型冠状病毒感染口罩选择与使用技术指引》
-
-https://mp.weixin.qq.com/s/lekdAyT0woQGwSO-xDSAMA
-
-“疫不容辞” 这些电子厂“转型”口罩厂
-
-https://mp.weixin.qq.com/s/iC0p5jFbZfoFAPL82zJAkQ
-
-中国能生产多少口罩？解析从石油到医用口罩的制造流程
-
-https://cj.sina.com.cn/articles/view/1650111241/625ab30901900p4r1
-
-为什么口罩还是不好买？原来……
-
-https://mp.weixin.qq.com/s/2LMnpJtSvO0KEDZ3GBtrog
-
-为什么全国口罩日产量超1亿个，你却连1个都买不到？看完我惊了...
-
-https://mp.weixin.qq.com/s/pSYJizQDQP_T2-krWPGUoA
-
-疫情下的口罩“疯狂制造”：物料飚涨40倍, 3天回本“印钞机”
+## 口罩（续）
 
 https://mp.weixin.qq.com/s/OuyBccDAzMiH6yLc1vtgOQ
 
@@ -456,3 +428,7 @@ N95之父华裔科学家Peter Tsai教你如何正确戴口罩
 KN95是中国标准，主要用于工业场景，且不要求油性防护，因此只是用氯化钠颗粒物检测，要求规过滤效果大于95%。此外中国还有KP95标准，支持油性防护。其中，“N”表示不耐油（not resistant to oil），“P”表示防油（oil proof）。
 
 KN95医用标准GB19083，工业标准是GB2626。
+
+https://zhuanlan.zhihu.com/p/105650218
+
+关于新冠病毒，这应该是最全的口罩科普贴了！
