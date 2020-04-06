@@ -60,6 +60,12 @@ Conda是一个开源的软件包管理系统和环境管理系统，用于安装
 
 https://conda.io/docs/
 
+参考：
+
+https://mp.weixin.qq.com/s/NX2zWc7y8Y2kK9ZNxlUBVA
+
+conda+jupyter玩转数据科学环境搭建
+
 ## Anaconda
 
 Anaconda是一个科学计算方面的python发行版，下面提到的所有工具都可以通过Anaconda一站式安装。

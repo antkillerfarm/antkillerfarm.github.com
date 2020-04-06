@@ -236,6 +236,10 @@ https://mp.weixin.qq.com/s/Cdi0CcWDLgS6Kk7Kx71Vaw
 
 深入理解提升树（Boosting Tree）算法
 
+https://mp.weixin.qq.com/s/fsT6rzpL5cuzh2usNjzzbA
+
+一文学习模型融合！从加权融合到stacking, boosting
+
 # 关联规则挖掘
 
 ## 基本概念

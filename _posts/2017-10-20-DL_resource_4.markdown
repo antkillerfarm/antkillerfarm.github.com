@@ -337,3 +337,7 @@ https://mp.weixin.qq.com/s/2QAm6F109LV2koC64xIpqA
 https://mp.weixin.qq.com/s/Y_GYtL9m3zmY-5VZMbCfWg
 
 Linux中用户的简介与管理
+
+https://linux.cn/article-8290-1.html
+
+漫画赏析：Linux内核到底长啥样

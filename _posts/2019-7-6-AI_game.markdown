@@ -58,10 +58,6 @@ http://www.biologic.com.au/bugbrain/
 
 BugBrain是一个神经网络相关的益智游戏。
 
-https://mp.weixin.qq.com/s/zbki0baZw-NjAgZwKcfgFg
-
-《星际争霸》与人工智能
-
 https://mp.weixin.qq.com/s/xnbNkKOomwvwYC_ThKPJ_g
 
 田渊栋报告：游戏中的人工智能：成就与挑战
@@ -70,41 +66,9 @@ https://mp.weixin.qq.com/s/napcf9UDwTVmUXV7BBzdaw
 
 田渊栋：深度学习如何进行游戏推理？
 
-https://mp.weixin.qq.com/s/Jdd7S6JFKRdsVe2w-W01IA
-
-Facebook田渊栋开源游戏平台ELF，简化版《星际争霸》完美测试人工智能
-
-https://mp.weixin.qq.com/s/QD6BdAB332xHoSH3dIfM5Q
-
-学习顶级玩家Replay，人工智能学会了星际争霸的“大局观”
-
-https://mp.weixin.qq.com/s/0Q-Kg6pNVRl3tqv8-wH-bg
-
-Facebook开源史上最大星际争霸AI研究数据集
-
-https://mp.weixin.qq.com/s/KbFvs8EcEfm29zhLCPt0Iw
-
-DeepMind进军星际争霸2，谷歌Facebook打响通用AI战争
-
-https://mp.weixin.qq.com/s/WTRD3wRQ_wSXjjlt7jiwSg
-
-CommandCenter：基于暴雪官方API的星际争霸2 AI Bot
-
 https://mp.weixin.qq.com/s/cCnSvD5oEWZSu48Oyec-Kg
 
 从FPS到RTS，一文概述游戏人工智能中的深度学习算法
-
-https://mp.weixin.qq.com/s/CQmZcwI4bgrEiWHP0gBLfQ
-
-DeepMind星际争霸2开源机器学习平台入门
-
-https://zhuanlan.zhihu.com/p/28434323
-
-迈向通用人工智能：星际争霸2人工智能研究环境SC2LE完全入门指南
-
-https://zhuanlan.zhihu.com/p/29246185
-
-重现DeepMind星际争霸强化学习算法
 
 https://mp.weixin.qq.com/s/SAp0alFSLKN1CHX0_vdTjg
 
@@ -126,14 +90,6 @@ https://mp.weixin.qq.com/s/WMDbCdrX_3W22Qfh_joB-A
 
 一文读懂人工智能打德扑
 
-https://mp.weixin.qq.com/s/x0G-LNCano7qjGdpj-fpCQ
-
-2017年度星际争霸AI竞赛结果出炉
-
-https://mp.weixin.qq.com/s/AndV-htPeTXlpAm1GONNtA
-
-中科院开源星际争霸2宏观运营研究数据集MSC
-
 https://mp.weixin.qq.com/s/0OlKixcT20wao4xkWa6M5A
 
 超越蒙特卡洛树搜索：北大提出深度交替网络和长期评估围棋模型
@@ -145,10 +101,6 @@ https://mp.weixin.qq.com/s/2b82VzQ2dJF9kWg-FfMelQ
 https://mp.weixin.qq.com/s/c160AUDdgw37L1XruPoZ-w
 
 电竞数据化：英雄联盟总决赛也靠它！
-
-https://zhuanlan.zhihu.com/p/29222384
-
-sc2-101: 第一个rule-base的星际二agent
 
 https://mp.weixin.qq.com/s/rmi5ulyLdRIw11sKDxPYvQ
 
@@ -226,45 +178,13 @@ https://mp.weixin.qq.com/s/OdQ_zH9jbZgEqOD3vHtkng
 
 不设目标也能通关“马里奥”的AI算法，全靠好奇心学习
 
-https://mp.weixin.qq.com/s/h0be7yRQMjLFi8EteTzuMQ
-
-腾讯AI在星际2完整对战中击败“作弊级”内建Bot
-
 https://mp.weixin.qq.com/s/BnS5KECLiUNGFd0EtTovTw
 
 南大AI单机训练一天，击败最高难度内置Bot
 
-https://mp.weixin.qq.com/s/I9gfoCxEYW5lSIy5QGyt6w
-
-2018星际AI大赛（2018.11）冠军诞生！一个个机器学习算法，都输给不会学习的韩国bot
-
-https://github.com/TeamSAIDA/SAIDA
-
-2018.11冠军SAIDA的github
-
-https://github.com/TorchCraft/TorchCraft
-
-2018.11亚军CherryPi的github
-
-https://github.com/bmnielsen/Locutus/
-
-2018.8冠军Locutus的github
-
-https://mp.weixin.qq.com/s/yAYF2i-Pr84RliKrJyPaUA
-
-伯克利星际争霸II AI“撞车”腾讯，作者：我们不一样
-
-https://mp.weixin.qq.com/s/uC8gi4kN_muRTwRL0RCZjQ
-
-要玩转这个星际争霸II开源AI，你只需要i5+GTX1050
-
 https://mp.weixin.qq.com/s/Q3WWqEnUaIvnLwoFHY5lfQ
 
 腾讯王者荣耀AI论文首次曝光：五AI王者局开黑与人类战队打成平手
-
-https://mp.weixin.qq.com/s/wyn-V4-DcjjOKziith3pXw
-
-开源星际争霸2多智能体挑战smac
 
 https://mp.weixin.qq.com/s/WabOUqqK6RW8mTNR53esYQ
 
@@ -306,6 +226,10 @@ https://mp.weixin.qq.com/s/Mdq9fL10Zcjs_z3PeqtN9Q
 
 腾讯AI单挑碾压王者荣耀职业玩家：人类15场只能赢1局，坚持不到8分钟
 
+https://mp.weixin.qq.com/s/94OzNo6HFgzA9lM2hDUjRw
+
+微软麻将AI论文发布，首次公开技术细节
+
 # CPU+
 
 https://mp.weixin.qq.com/s/PzD1lCe5h3VkMrhFb7CfQg
@@ -319,6 +243,10 @@ Chiplet最强科普
 https://zhuanlan.zhihu.com/p/114448236
 
 什么是Win10的“现代待机”？为什么它未来会越来越重要？这篇文章部分解释了我的第一个平板为什么那么耗电。
+
+https://mp.weixin.qq.com/s/OQ3KUAi6HMyOS8k3J_1e6g
+
+关于超长指令集VLIW的一些讨论
 
 ----
 

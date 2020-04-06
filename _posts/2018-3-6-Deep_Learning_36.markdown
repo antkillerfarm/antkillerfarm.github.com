@@ -316,6 +316,22 @@ https://mp.weixin.qq.com/s/oY51Rk6qD7fxeSRIf7HAFg
 
 # BERT+
 
+https://mp.weixin.qq.com/s/dV4RkxZOC9o2BxNi0GljKQ
+
+谷歌最强NLP模型BERT官方中文版来了！多语言模型支持100种语言
+
+https://mp.weixin.qq.com/s/fz-bQMAi5bs2_bvRhf3ERg
+
+从Word Embedding到Bert模型—自然语言处理中的预训练技术发展史
+
+https://mp.weixin.qq.com/s/k_33UK1RkMyHn6TSudU6Kg
+
+详解谷歌最强NLP模型BERT
+
+https://mp.weixin.qq.com/s/d2MZQbamdo0EC_MVtf-HZA
+
+BERT详解：开创性自然语言处理框架的全面指南
+
 https://mp.weixin.qq.com/s/pD4it8vQ-aE474uSMQG0YQ
 
 两行代码玩转Google BERT句向量词向量

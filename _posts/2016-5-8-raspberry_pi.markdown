@@ -277,6 +277,10 @@ https://mp.weixin.qq.com/s/onN61A13xuJzNk9zE0hM-w
 
 你有特斯拉，我有树莓派，纯手工打造车载车牌识别检测系统，家用车秒变智能车
 
+https://mp.weixin.qq.com/s/rqIZSX-zRNQ3uyae3LlnZQ
+
+树莓派也能实时训练agent玩Atari
+
 ## Raspberry Pi 4
 
 2019.6

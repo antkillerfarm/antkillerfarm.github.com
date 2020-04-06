@@ -110,6 +110,10 @@ https://mp.weixin.qq.com/s/H6OTkpdIgSdugDrEMBLybw
 
 超越MobileNetV3的轻量级网络（GhostNet）
 
+https://mp.weixin.qq.com/s/KuZ-mZKt7bTWhzygK1lmSg
+
+加速目标检测
+
 # 知识蒸馏
 
 ## 基本概念

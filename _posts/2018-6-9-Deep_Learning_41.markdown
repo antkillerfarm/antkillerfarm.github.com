@@ -246,10 +246,6 @@ https://mp.weixin.qq.com/s/P4kGtXZRW_fMbKbkGIJEfA
 
 迁移学习比赛：OpenAI喊你重温“音速小子索尼克”
 
-https://mp.weixin.qq.com/s/e4iv6FJAMZACEqWFmxeSFg
-
-让AI掌握星际争霸微操：中科院提出强化学习+课程迁移学习方法
-
 https://mp.weixin.qq.com/s/ovSltv5Ct8AsPcxCFsYwYw
 
 用于部分迁移学习的加权对抗网络

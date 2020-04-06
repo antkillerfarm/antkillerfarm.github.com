@@ -350,6 +350,10 @@ https://mp.weixin.qq.com/s/PfyGOK2Ov6Qi-L5aqMfNjg
 
 DeepMind发布强化学习库RLax
 
+https://github.com/thu-ml/tianshou
+
+清华开源“天授”强化学习平台
+
 # 概述
 
 ![](/images/img2/RL_intro.png)

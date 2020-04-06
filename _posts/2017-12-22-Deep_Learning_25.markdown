@@ -122,6 +122,10 @@ https://mp.weixin.qq.com/s/-SHLp26oGDDp9HG-23cetg
 
 多任务学习在推荐算法中的应用
 
+https://mp.weixin.qq.com/s/avWy3-mju0d0QjufX_bi4Q
+
+Multi-task Learning的三个实用小知识
+
 # 人脸检测/识别
 
 ## OHEM

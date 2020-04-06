@@ -277,3 +277,25 @@ BiLSTM上的CRF，用命名实体识别任务来解释CRF（3）推理
 https://mp.weixin.qq.com/s/xJ7MpUkVfLQKxRYyJs29NQ
 
 BiLSTM上的CRF，用命名实体识别任务来解释CRF（4）
+
+# Python+
+
+https://mp.weixin.qq.com/s/Hv0rPD29PPd3Rn6lW6w5dg
+
+教你使用Python制作酷炫二维码
+
+https://mp.weixin.qq.com/s/8Fgzb8JiAoNSJqUanSi85Q
+
+鼠年做只奔跑的猫呗，卖萌式监控系统资源~（QSystemTrayIcon）
+
+https://mp.weixin.qq.com/s/2RRJDStTL7l2Ra3SnNEEYg
+
+发布自己的python库到pypi
+
+https://mp.weixin.qq.com/s/PBaDdLcYxDso2V4aZcFXpA
+
+盘一盘Python错误类型
+
+https://mp.weixin.qq.com/s/8uxc2t53N_j_mRPYbiG0sA
+
+5个案例让Python输出漂亮的命令行表格！

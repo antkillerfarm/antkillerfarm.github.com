@@ -300,6 +300,26 @@ https://mp.weixin.qq.com/s/2_MXIEk5-JP5KwsV6al9XQ
 
 预训练语言模型的前世今生：BERT，开启NLP新时代的王者
 
+https://mp.weixin.qq.com/s/yRn1AELGK3jgfOaaxIo67Q
+
+预训练语言模型的前世今生：Huggingface简介及BERT代码浅析
+
+https://mp.weixin.qq.com/s/sMocYFvESXoBGtX_NWmQkQ
+
+预训练语言模型的前世今生：百度出品ERNIE合集，问国产预训练语言模型哪家强
+
+https://mp.weixin.qq.com/s/WDXGCC_MPK_sBCj4Bx6EDw
+
+从静态到动态，词表征近几十年发展回顾
+
+https://mp.weixin.qq.com/s/vW8jglstKsR7OSbyjexKrQ
+
+自然语言处理嵌入：语义向量表示理论与进展，从Word2Vec到BERT，163页pdf
+
+https://mp.weixin.qq.com/s/tokxh7Conb-hajj8pnr2fA
+
+Google BERT作者Jacob斯坦福亲授《上下文词向量与预训练语言模型: BERT到T5》43页ppt
+
 ## ELMo
 
 https://mp.weixin.qq.com/s/I315hYPrxV0YYryqsUysXw
@@ -329,33 +349,3 @@ https://mp.weixin.qq.com/s/i7EJSNzDsNNbK2YA_YNu8g
 https://mp.weixin.qq.com/s/qbXZGiKYEuTI-2l4iYZlbQ
 
 图文并茂带你细致了解ELMo的各种细节
-
-## GPT
-
-GPT-1论文：
-
-《Improving Language Understandingby Generative Pre-Training》
-
-GPT-2论文：
-
-《Language Models are Unsupervised Multitask Learners》
-
-![](/images/img3/GPT.png)
-
-Jay Alammar的教程：
-
-https://jalammar.github.io/illustrated-gpt2/
-
-参考：
-
-https://mp.weixin.qq.com/s/E7FLbXYvE9irSpJ9Cdx5tg
-
-GLUE排行榜上全面超越BERT的模型近日公布了
-
-https://mp.weixin.qq.com/s/ZitIqX-9MNk6L1mAC_AwBQ
-
-OpenAI发布参数量高达15亿的通用语言模型GPT-2
-
-https://mp.weixin.qq.com/s/7u_W4LTYqQBmz3geux5QNQ
-
-对标Bert？刷屏的GPT 2.0意味着什么

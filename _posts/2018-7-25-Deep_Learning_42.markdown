@@ -134,6 +134,10 @@ https://mp.weixin.qq.com/s/WwA_IP4rIpZ6GgFkzQ3sNA
 
 增量学习不只有finetune，三星AI提出增量式少样本目标检测算法ONCE
 
+https://mp.weixin.qq.com/s/rTP3-IdQk7iDz058SyOpIQ
+
+零样本图像识别综述论文
+
 # 深度ISP
 
 ## 数据集

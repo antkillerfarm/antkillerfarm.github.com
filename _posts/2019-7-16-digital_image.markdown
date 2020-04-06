@@ -301,6 +301,10 @@ https://mp.weixin.qq.com/s/sXC263Lq25tKp2AK2Tsb-A
 
 Omnivision HDR sensor简介
 
+https://mp.weixin.qq.com/s/NuJYejYJ1kKdD2pRo5Wxlw
+
+HDR Imaging(2)--Digital Overlap
+
 https://mp.weixin.qq.com/s/m_EKOLjWjTyx4RBxsAAAGg
 
 4x4阵列摄/“深感”摄

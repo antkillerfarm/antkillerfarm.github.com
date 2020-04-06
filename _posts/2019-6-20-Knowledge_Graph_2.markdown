@@ -258,7 +258,23 @@ https://mp.weixin.qq.com/s/5G-xon0i5Aq-M4i0rHJPBg
 
 如何从0构建知识图谱
 
-# DRL参考资源+
+# DRL参考资源
+
+https://mp.weixin.qq.com/s/aVWHlwOmNIqOlu3025_RXQ
+
+DeepMind提出多任务强化学习新方法Distral
+
+https://mp.weixin.qq.com/s/gFHbLF-q91sddMAX1CRbEQ
+
+俞扬：“审时度势”的高效强化学习
+
+https://mp.weixin.qq.com/s/lstCIiNs_qA6k7GCYUBv2w
+
+阿尔伯塔大学提出新型多步强化学习方法，结合已有TD算法实现更好性能
+
+https://mp.weixin.qq.com/s/ybyZpaHr-JJg7CCdXGOl5A
+
+Seq2seq强化学习实战
 
 https://mp.weixin.qq.com/s/vYDb1rTdPxO1sIS38VX5xA
 
@@ -348,24 +364,30 @@ https://mp.weixin.qq.com/s/PpBMu-5ozc9UOBbFhjsf3A
 
 漫谈强化学习中的引导搜索策略（GPS方法）
 
-# Python+
+https://mp.weixin.qq.com/s/TUk1PWT9CfPGEW77UKxpjw
 
-https://mp.weixin.qq.com/s/Hv0rPD29PPd3Rn6lW6w5dg
+三招武林绝学带你玩转“强化学习”
 
-教你使用Python制作酷炫二维码
+https://mp.weixin.qq.com/s/W9yhj7_frLYWJocoBR1TMQ
 
-https://mp.weixin.qq.com/s/8Fgzb8JiAoNSJqUanSi85Q
+避免AI错把黑人识别为大猩猩：伯克利大学提出协同反向强化学习
 
-鼠年做只奔跑的猫呗，卖萌式监控系统资源~（QSystemTrayIcon）
+https://mp.weixin.qq.com/s/p2hlc2PsLgrvxOF8wBZANg
 
-https://mp.weixin.qq.com/s/2RRJDStTL7l2Ra3SnNEEYg
+李飞飞高徒范麟熙解析强化学习在游戏和现实中的应用
 
-发布自己的python库到pypi
+http://mp.weixin.qq.com/s/EPbKE-TAnAPugJDhXHEyNA
 
-https://mp.weixin.qq.com/s/PBaDdLcYxDso2V4aZcFXpA
+DeepMind开源Psychlab平台——搭建AI和认知心理学的桥梁
 
-盘一盘Python错误类型
+https://mp.weixin.qq.com/s/xJ_g3BvbM-WaIyLthHdhEw
 
-https://mp.weixin.qq.com/s/8uxc2t53N_j_mRPYbiG0sA
+DeepMind发布通用强化学习新范式，自主机器人可学会任何任务
 
-5个案例让Python输出漂亮的命令行表格！
+https://mp.weixin.qq.com/s/U0K79ELLj4wsOR4sd5G4Vw
+
+Vicarious详解新型图式网络：赋予强化学习泛化能力
+
+https://mp.weixin.qq.com/s/C8hsGkHGtoaS9Vzm6Ub4tw
+
+Berkeley提出“随机搜索”训练线性策略，提高RL的性能

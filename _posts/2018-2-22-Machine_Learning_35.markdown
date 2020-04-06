@@ -194,6 +194,10 @@ https://mp.weixin.qq.com/s/Jlux3pZ4keVzkwWzgoPrEQ
 
 深入浅出讲解卡尔曼滤波
 
+https://mp.weixin.qq.com/s/BeIEjASATt3Qpef_Ag-cSw
+
+卡尔曼滤波系列——经典卡尔曼滤波推导
+
 # 图论
 
 ## 基本概念

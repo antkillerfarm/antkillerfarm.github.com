@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/vNYG6vq_LAotj_21PG_P9w
 
 扫描式SSD用于公式检测，代码已开源
 
+https://mp.weixin.qq.com/s/5M9AIjEs6i1tPMVXA2a2Zg
+
+TE141K：用于文字风格转换的大规模艺术文字数据库
+
 # Graph NN+
 
 https://mp.weixin.qq.com/s/r4_5GwA8Olqh6M1p_6eYPg
@@ -288,6 +292,22 @@ https://mp.weixin.qq.com/s/GnjSuQ_BihO5bP5xO2xHJg
 
 万字长文带你入门GCN
 
+https://mp.weixin.qq.com/s/B84aHi6z0z2cGyaUdKqSUw
+
+从矩阵分解到GNN：社会化推荐的演化
+
+https://mp.weixin.qq.com/s/oVJnVNQBuAPsWKTgOCxCRw
+
+韩家炜：最新《异构网络表示学习》2020综述论文大全
+
+https://mp.weixin.qq.com/s/GHJQ_oLfC7S1JgPwhptfKw
+
+异构图Transformer
+
+https://mp.weixin.qq.com/s/bPDqQE58zmJIsol96bP74g
+
+图网络GNN(特别篇)：一文遍览图网络中16种典型的图卷积和9种图池化Graph Pooling
+
 # 深度推荐系统+
 
 https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w
@@ -365,6 +385,14 @@ https://zhuanlan.zhihu.com/p/115781834
 https://mp.weixin.qq.com/s/ec88cMR4K6pWyHhJs7FEFQ
 
 智能推荐算法在花椒直播中的应用
+
+https://zhuanlan.zhihu.com/p/68897114
+
+如何刻画用户的多样兴趣——MIND network阅读笔记
+
+https://mp.weixin.qq.com/s/sbdnEMez_BKPzXOl1Z4AzQ
+
+DeepMatch：用于推荐&广告的深度召回匹配算法库
 
 # 肺炎版《黄冈密卷》
 

@@ -233,6 +233,10 @@ http://blog.csdn.net/apunix/archive/2008/01/14/2043945.aspx
 
 UNREFERENCED_PARAMETER的作用
 
+https://mp.weixin.qq.com/s/1ELGzBkIdO1xa6LZV80raQ
+
+C++中Future和Promise的一种简单实现
+
 # boost
 
 ## 安装&编译

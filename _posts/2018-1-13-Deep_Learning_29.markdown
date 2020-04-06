@@ -208,6 +208,10 @@ https://mp.weixin.qq.com/s/PEltOwR1Am7RX6N-4UN9vw
 
 集成图网络模型实现、基准测试，清华推出图表示学习工具包（CogDL）
 
+https://mp.weixin.qq.com/s/zS2Slg33yAi3xKNjP_-oWg
+
+灵活、轻便，阿里开源简化GNN应用框架Graph-Learn
+
 ## DeepWalk
 
 https://mp.weixin.qq.com/s/SXnRyUj_mMs8UEtNyP6qNw

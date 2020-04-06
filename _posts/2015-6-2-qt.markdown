@@ -163,6 +163,10 @@ https://www.jianshu.com/p/a24aa3c63d50
 
 从TCP角度出发，看看连接池的优点
 
+https://mp.weixin.qq.com/s/baYuX8aCwQ9PP6k7TDl2Ww
+
+Java线程池实现原理及其在美团业务中的实践
+
 # WebService
 
 WebService经过近二十年的发展，已经有非常多的框架了。知名的有：Axis1、Axis2、Xfire、CXF、JWS等。

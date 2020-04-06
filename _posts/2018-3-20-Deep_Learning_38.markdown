@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/5ANMZNaR2ayYMUQEJ6aM3w
 
 人脸识别基于通用表示学习
 
+https://mp.weixin.qq.com/s/jrynQZgoljFi6zdVKWo5nw
+
+在浏览器中实现AR试妆
+
 # RNN进阶
 
 ## IndRNN

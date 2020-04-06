@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/IcaxjdDLjihCK-nKBlJVWg
 
 从α到μ：DeepMind棋盘游戏AI进化史
 
+https://mp.weixin.qq.com/s/BWWCqAoSRkNAWXMiTOFhAA
+
+DeepMind推出Agent57，在所有雅达利游戏上超越人类玩家
+
 ## Leela Zero
 
 Leela Zero是比利时人Gian-Carlo Pascutto开源的围棋AI。它的算法与AlphaGo Zero相同。而训练采用GTP协议，集合全球算力，进行分布式训练。

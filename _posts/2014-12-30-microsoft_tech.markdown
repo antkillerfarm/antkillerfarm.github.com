@@ -242,10 +242,6 @@ https://mp.weixin.qq.com/s?__biz=MzU1NTMyOTI4Mw==&mid=2247494226&idx=1&sn=a96ea0
 
 以YouTube论文学习如何在推荐场景应用强化学习
 
-https://mp.weixin.qq.com/s/JbCIBFDRvg5qcpZ11g58dw
-
-DeepMind提出关系性深度强化学习：在星际争霸2任务中获得最优水平
-
 https://mp.weixin.qq.com/s/SpCorsAiTWGYGiohT_gZtg
 
 如何训练智能体Agent玩毁灭战士ViZDoom？

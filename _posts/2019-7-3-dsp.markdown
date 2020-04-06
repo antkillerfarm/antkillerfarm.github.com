@@ -356,6 +356,10 @@ https://mp.weixin.qq.com/s/Jty0eHlQ7gmihKkdp76XyQ
 
 北大：一种基于新闻特征抽取和循环神经网络的股票预测方法
 
+https://mp.weixin.qq.com/s/mMVyuaorN-Zmvr2Gab6uiw
+
+波动率预测：基于CNN的图像识别策略
+
 ## 金融模型
 
 ![](/images/img3/Quant.jpg)

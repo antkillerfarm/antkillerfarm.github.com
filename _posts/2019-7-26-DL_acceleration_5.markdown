@@ -314,6 +314,10 @@ https://mp.weixin.qq.com/s/NPM4E2gGOf3awQw7-_s6Uw
 
 令人拍案叫绝的EfficientNet和EfficientDet
 
+https://mp.weixin.qq.com/s/_eJ27nKULYzUNzDEf62x2w
+
+何恺明团队最新力作RegNet：超越EfficientNet，GPU上提速5倍
+
 https://mp.weixin.qq.com/s/jHv3Amti1YZq51Df2mNFtg
 
 network sliming:加快模型速度同时不损失精度

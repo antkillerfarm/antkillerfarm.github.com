@@ -310,6 +310,10 @@ http://www.cnblogs.com/qcloud1001/p/8074771.html
 
 神经张量网络（NTN）：探索文本实体之间的关系
 
+https://mp.weixin.qq.com/s/iB-gaxIygWLjS1mKwKUGog
+
+浅谈嵌套命名实体识别（Nested NER）
+
 ## 文本摘要
 
 https://mp.weixin.qq.com/s/jk1XgnuydrsTg3HvV0CVvw
@@ -359,6 +363,10 @@ https://mp.weixin.qq.com/s/vjnENPxXzrjKW2ACD3HDkA
 https://mp.weixin.qq.com/s/Bmou2Fx8a0-60Aqycrg4ug
 
 基于句子嵌入的无监督文本摘要
+
+https://mp.weixin.qq.com/s/trDAoPgcsHr0Tz0AT5N3HQ
+
+京东电商场景下的AI实践-基于关键词自动生成摘要
 
 ## 句法分析
 

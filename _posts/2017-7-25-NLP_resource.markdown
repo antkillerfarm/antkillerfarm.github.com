@@ -200,6 +200,10 @@ https://mp.weixin.qq.com/s/SATpFOdUsMjCX4YfbGnM5w
 
 关系提取简述
 
+https://mp.weixin.qq.com/s/knsAHKOvZ-ht7qS0tt-vvg
+
+新手入门：Kaggle NLP比赛总结
+
 ## 分词
 
 https://mp.weixin.qq.com/s/Xy_jaOex72pLe4wwieKeUg

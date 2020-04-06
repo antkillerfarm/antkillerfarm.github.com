@@ -338,3 +338,7 @@ https://mp.weixin.qq.com/s/HRGk5bfaOdj-6X4opEYA-w
 https://mp.weixin.qq.com/s/1TbplmZ2nMUWcft_gKX2BA
 
 每天几十万条用户反馈，高德工程师如何提升处理效率？
+
+https://mp.weixin.qq.com/s/NUD3i2nEJL9P-tNpcty2CQ
+
+推荐系统的人工调控

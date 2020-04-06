@@ -238,6 +238,10 @@ https://mp.weixin.qq.com/s/mpY95yvWR_96KT5SL4T-Xg
 
 新冠病毒是如何为自己“加冕”的？
 
+https://mp.weixin.qq.com/s/zsu6KbIDKi_AlBI-eevA9w
+
+在你的基因里，到处都有病毒来过的痕迹
+
 ----
 
 ![](/images/img3/season.png)

@@ -4,9 +4,37 @@ title:  Attention（四）——BERT（2）
 category: Attention 
 ---
 
-# BERT
+# BERT（续）
 
-## GPT（续）
+## GPT
+
+GPT-1论文：
+
+《Improving Language Understandingby Generative Pre-Training》
+
+GPT-2论文：
+
+《Language Models are Unsupervised Multitask Learners》
+
+![](/images/img3/GPT.png)
+
+Jay Alammar的教程：
+
+https://jalammar.github.io/illustrated-gpt2/
+
+参考：
+
+https://mp.weixin.qq.com/s/E7FLbXYvE9irSpJ9Cdx5tg
+
+GLUE排行榜上全面超越BERT的模型近日公布了
+
+https://mp.weixin.qq.com/s/ZitIqX-9MNk6L1mAC_AwBQ
+
+OpenAI发布参数量高达15亿的通用语言模型GPT-2
+
+https://mp.weixin.qq.com/s/7u_W4LTYqQBmz3geux5QNQ
+
+对标Bert？刷屏的GPT 2.0意味着什么
 
 https://mp.weixin.qq.com/s/1GIQGBwciP22CZvFxhmLzA
 
@@ -315,19 +343,3 @@ https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
 https://mp.weixin.qq.com/s/vFdm-UHns7Nhbmdoiu6jWg
 
 谷歌终于开源BERT代码：3亿参数量，机器之心全面解读
-
-https://mp.weixin.qq.com/s/dV4RkxZOC9o2BxNi0GljKQ
-
-谷歌最强NLP模型BERT官方中文版来了！多语言模型支持100种语言
-
-https://mp.weixin.qq.com/s/fz-bQMAi5bs2_bvRhf3ERg
-
-从Word Embedding到Bert模型—自然语言处理中的预训练技术发展史
-
-https://mp.weixin.qq.com/s/k_33UK1RkMyHn6TSudU6Kg
-
-详解谷歌最强NLP模型BERT
-
-https://mp.weixin.qq.com/s/d2MZQbamdo0EC_MVtf-HZA
-
-BERT详解：开创性自然语言处理框架的全面指南
