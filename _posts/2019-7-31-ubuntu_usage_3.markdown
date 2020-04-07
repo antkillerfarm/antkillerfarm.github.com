@@ -237,7 +237,7 @@ https://www.cnblogs.com/iamnewsea/p/7701464.html
 
 - Ubuntu分区有个小技巧，数据分区的挂载点最好不要设为默认的`/home`。
 
-因为，这个路径下的很多隐藏文件是和系统相关的。如果今后要升级，比如Ubuntu 18.04升为Ubuntu 20.04，这些文件在Ubuntu 20.04下常用兼容问题，还不如完全重装系统。
+因为，这个路径下的很多隐藏文件是和系统相关的。如果今后要升级，比如Ubuntu 18.04升为Ubuntu 20.04，这些文件在Ubuntu 20.04下常有兼容问题，还不如完全重装系统。
 
 挂载到其他地方就可以避免这个问题，比如挂载到`/home/data`。
 
@@ -268,6 +268,18 @@ https://mirrors.tuna.tsinghua.edu.cn/ubuntu/
 https://github.com/tomaspinho/rtl8821ce
 
 安装驱动之前，需要进UEFI，关闭Secure Boot选项。这个选项会拒绝未验证的系统或驱动。Ubuntu官方的镜像经过了MS的认证，可以正常安装。但是UbuntuKylin不行，第三方驱动显然也不行。
+
+## DKMS
+
+我们都知道，如果要使用没有集成到内核之中的Linux驱动程序需要手动编译。而Linux模块和内核是有依赖关系的，如果遇到因为发行版更新造成的内核版本的变动，之前编译的模块是无法继续使用的，我们只能手动再编译一遍。
+
+DKMS（Dynamic Kernel Module Support）可以帮我们维护内核外的这些驱动程序，在内核版本变动之后，可以自动重新生成新的模块。
+
+参考：
+
+https://blog.csdn.net/fouweng/article/details/53435602
+
+DKMS简介
 
 # betty
 
