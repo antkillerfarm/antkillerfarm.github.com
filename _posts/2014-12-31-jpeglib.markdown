@@ -136,6 +136,12 @@ PS:tar命令对于长选项和短选项的顺序有要求，例如，不覆盖�
 
 解压：`tar jxvf FileName.tar.bz`
 
+## .tar.xz
+
+解压：`tar xvJf FileName.tar.xz`
+
+压缩：`tar cvJf FileName.tar.xz DirName`
+
 ## .Z
 
 解压：`uncompress FileName.Z`
