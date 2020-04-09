@@ -299,3 +299,7 @@ https://mp.weixin.qq.com/s/PBaDdLcYxDso2V4aZcFXpA
 https://mp.weixin.qq.com/s/8uxc2t53N_j_mRPYbiG0sA
 
 5个案例让Python输出漂亮的命令行表格！
+
+https://mp.weixin.qq.com/s/3pGw9QdAZVE3OKZ-zGyb4g
+
+使用Python远程登陆服务器的最佳实践

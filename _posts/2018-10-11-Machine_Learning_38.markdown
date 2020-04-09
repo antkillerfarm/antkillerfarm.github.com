@@ -166,6 +166,10 @@ https://mp.weixin.qq.com/s/TyOYhId90N0Cm7nw98nXMg
 
 PageRank、最小生成树：ML开发者应该了解的五种图算法
 
+https://mp.weixin.qq.com/s/4N14KhSjNt3_TvVzu4IrgQ
+
+抽取式摘要：TextRank和BertSum
+
 # 社交网络
 
 ## 信息传播模型

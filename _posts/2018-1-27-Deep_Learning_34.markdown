@@ -358,6 +358,10 @@ https://zhuanlan.zhihu.com/p/36479489
 
 图像检索：因缘际会与前瞻
 
+https://mp.weixin.qq.com/s/jv6PvFHsweK_rFOuz-p-mg
+
+图像检索从入门到进阶
+
 https://mp.weixin.qq.com/s/aRndRlVnY5ZRBFnNbVNecg
 
 李飞飞CS231n项目：这两位工程师想用神经网络帮你还原买家秀
@@ -377,3 +381,7 @@ KDD2018阿里巴巴论文揭示自家大规模视觉搜索算法
 https://mp.weixin.qq.com/s/CS4iAMprZizrXhpXDhySzg
 
 视频分类/行为识别研究综述，从数据集到方法
+
+http://yongyuan.name/blog/layer-selection-and-finetune-for-cbir.html
+
+图像检索：layer选择与fine-tuning性能提升验证

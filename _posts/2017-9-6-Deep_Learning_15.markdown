@@ -30,10 +30,6 @@ http://blog.csdn.net/sinat_26917383/article/details/54999868
 
 caffe中fine-tuning模型三重天（函数详解、框架简述）+微调技巧
 
-http://yongyuan.name/blog/layer-selection-and-finetune-for-cbir.html
-
-图像检索：layer选择与fine-tuning性能提升验证
-
 h1ttps://www.zhihu.com/question/49534423
 
 迁移学习与fine-tuning有什么区别？
