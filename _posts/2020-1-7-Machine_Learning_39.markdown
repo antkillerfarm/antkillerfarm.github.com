@@ -289,3 +289,35 @@ https://mp.weixin.qq.com/s/EOBjLqvi_WcSjiDb8b5Nwg
 https://mp.weixin.qq.com/s/uz5hjoG-m2PpnQxXZbHbFw
 
 深度学习中的异常实例检测:综述论文
+
+# 新冠肺炎+
+
+## 武汉病毒所
+
+1956年，著名病毒学家高尚荫院士、著名微生物学家陈华癸院士和简浩然教授等老一辈科学家创建了武汉病毒所。
+
+----
+
+石正丽，女，1964年生。现任中国科学院武汉病毒研究所研究员。人称“蝙蝠女侠”。美国微生物科学院院士。
+
+https://mp.weixin.qq.com/s/-79fGDSCN0Dsaq40btPO3w
+
+崔永元：科学家用“生命担保”，靠谱吗？
+
+https://mp.weixin.qq.com/s/nzw3ETVAklJLXPwOqohp1g
+
+武汉病毒所石正丽：一直提醒预防，没想到疫情就发生在自己生活的城市
+
+----
+
+https://mp.weixin.qq.com/s/MJamXXj44e-fxaP9WRyhgw
+
+武汉病毒所申请瑞得西韦用途专利能否获得授权？有无价值？
+
+----
+
+王延轶出生于1981年，现任中国科学院武汉病毒研究所所长，分子免疫学学科组组长，致公党武汉市副主任委员。
+
+http://www.sohu.com/a/370615513_105067
+
+网传饶毅致信舒红兵：您夫人不适合领导武汉病毒所

@@ -387,3 +387,7 @@ https://mp.weixin.qq.com/s/2f91Ksj19rk_emoFpEmPfA
 https://mp.weixin.qq.com/s/hF4EcKqmaTm_gemxX7Kftg
 
 BERT的嵌入层是如何实现的？
+
+https://mp.weixin.qq.com/s/CdjNQKSNuklVUsXe4InSoA
+
+FastBERT：放飞BERT的推理速度

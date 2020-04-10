@@ -287,6 +287,10 @@ https://www.zhihu.com/question/27322045
 
 Docker容器里运行的程序是否与操作系统有关？
 
+https://zhuanlan.zhihu.com/p/115845957
+
+两个奇技淫巧，将Docker镜像体积减小99%
+
 # 多维数组的行优先和列优先
 
 这里以numpy为工具，介绍一下多维数组的行优先和列优先的概念。

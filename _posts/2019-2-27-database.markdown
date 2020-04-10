@@ -44,6 +44,14 @@ http://web.utk.edu/~jplyon/sqlite/SQLite_optimization_FAQ.html
 
 数据处理大致可以分成两大类：联机事务处理OLTP（on-line transaction processing）、联机分析处理OLAP（On-Line Analytical Processing）。OLTP是传统的关系型数据库的主要应用，主要是基本的、日常的事务处理，例如银行交易。OLAP是数据仓库系统的主要应用，支持复杂的分析操作，侧重决策支持，并且提供直观易懂的查询结果。
 
+OLAP有多种实现方法，根据存储数据的方式不同可以分为ROLAP、MOLAP、HOLAP。
+
+ROLAP表示基于关系数据库的OLAP实现（Relational OLAP）。这种方式查询效率最低。
+
+MOLAP表示基于多维数据组织的OLAP实现（Multidimensional OLAP）。多维数据在存储中将形成"立方块（Cube）"的结构,在MOLAP中对"立方块"的"旋转"、"切块"、"切片"是产生多维数据报表的主要技术。特点是将细节数据和聚合后的数据均保存在cube中，所以以空间换效率，查询时效率高，但生成cube时需要大量的时间和空间。
+
+HOLAP表示基于混合数据组织的OLAP实现（Hybrid OLAP）。如低层是关系型的，高层是多维矩阵型的。这种方式具有更好的灵活性。
+
 参考：
 
 https://blog.csdn.net/zhangzheng0413/article/details/8271322
@@ -66,6 +74,10 @@ https://mp.weixin.qq.com/s/2VutJPwMLUW51o2P0P0QLw
 
 Sophon：Hulu智能OLAP缓存层技术实践
 
+https://blog.csdn.net/liu251/article/details/40785291
+
+ROLAP、MOLAP和HOLAP联机分析处理区别
+
 ## Apache Kylin
 
 Apache Kylin是一个开源的分布式分析引擎，最初由eBay开发贡献至开源社区。它提供Hadoop之上的SQL查询接口及多维分析（OLAP）能力以支持大规模数据，能够处理TB乃至PB级别的分析任务，能够在亚秒级查询巨大的Hive表，并支持高并发。
@@ -87,6 +99,16 @@ OLAP系统解析：Apache Kylin和Baidu Palo哪家强？
 https://blog.csdn.net/zhangzheng0413/article/details/8271322
 
 OLAP、OLTP的介绍和比较
+
+## Apache Doris
+
+Apache Kylin属于MOLAP，而Apache Doris属于ROLAP。
+
+参考：
+
+https://mp.weixin.qq.com/s/wzVc-FngOBbqbMzJjRqajw
+
+Apache Doris在美团外卖数仓中的应用实践
 
 ## GraphQL
 
@@ -311,45 +333,3 @@ https://mp.weixin.qq.com/s/m_JMXU6iMS4SckzWZYtIUA
 安装过程中，会提示输入root用户的密码。注意：这里的root是mysql的登录帐号，而不是系统的登录帐号。
 
 ·/etc/my.cnf是默认的MySQL配置文件。
-
-## 导入csv文件
-
-http://www.mysqltutorial.org/import-csv-file-mysql-table/
-
-Import CSV File Into MySQL Table
-
-示例：
-
-```sql
-LOAD DATA LOCAL INFILE 'c:/tmp/discounts.csv' 
-INTO TABLE discounts 
-FIELDS TERMINATED BY ',' 
-ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
-IGNORE 1 ROWS;
-```
-
-上面的语句中，LOCAL必不可少，否则会报如下错误：
-
-`ERROR 1290 (HY000): The MySQL server is running with the --secure-file-priv option so it cannot execute this statement`
-
-## 中间数据的存储
-
-有的时候，SQL中间处理的结果需要存储起来，以备后用。这时有两种办法：
-
-1.创建View。
-
-```sql
-CREATE VIEW view_name AS
-SELECT column_name(s)
-FROM table_name
-WHERE condition;
-```
-
-View并不在数据库中存储数据，而是在查询时，执行其中的select语句（每次查询，都会执行），生成中间结果。因此，View从原理来说，更像是一种语法糖，而非存储机制。
-
-2.使用select语句创建table。
-
-`Create table new_table_name (Select * from old_table_name);`
-
-这种方法会将中间结果存储到数据库中，下次使用的时候，就无需重新生成了。但缺点是原table中的更新不会体现到新table中，只适合处理历史数据。

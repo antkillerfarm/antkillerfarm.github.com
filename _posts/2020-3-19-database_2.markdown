@@ -6,6 +6,48 @@ category: technology
 
 # Mysql（续）
 
+## 导入csv文件
+
+http://www.mysqltutorial.org/import-csv-file-mysql-table/
+
+Import CSV File Into MySQL Table
+
+示例：
+
+```sql
+LOAD DATA LOCAL INFILE 'c:/tmp/discounts.csv' 
+INTO TABLE discounts 
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+```
+
+上面的语句中，LOCAL必不可少，否则会报如下错误：
+
+`ERROR 1290 (HY000): The MySQL server is running with the --secure-file-priv option so it cannot execute this statement`
+
+## 中间数据的存储
+
+有的时候，SQL中间处理的结果需要存储起来，以备后用。这时有两种办法：
+
+1.创建View。
+
+```sql
+CREATE VIEW view_name AS
+SELECT column_name(s)
+FROM table_name
+WHERE condition;
+```
+
+View并不在数据库中存储数据，而是在查询时，执行其中的select语句（每次查询，都会执行），生成中间结果。因此，View从原理来说，更像是一种语法糖，而非存储机制。
+
+2.使用select语句创建table。
+
+`Create table new_table_name (Select * from old_table_name);`
+
+这种方法会将中间结果存储到数据库中，下次使用的时候，就无需重新生成了。但缺点是原table中的更新不会体现到新table中，只适合处理历史数据。
+
 ## 常用操作
 
 登录方法：
@@ -327,33 +369,3 @@ https://mp.weixin.qq.com/s/e3MaPaBZrxwqWtykB9f_JQ
 http://news.ifeng.com/c/7uRKv3JARr9
 
 伊朗女副总统感染新冠病毒，40年前她在美国家喻户晓
-
-## 武汉病毒所
-
-1956年，著名病毒学家高尚荫院士、著名微生物学家陈华癸院士和简浩然教授等老一辈科学家创建了武汉病毒所。
-
-----
-
-石正丽，女，1964年生。现任中国科学院武汉病毒研究所研究员。人称“蝙蝠女侠”。美国微生物科学院院士。
-
-https://mp.weixin.qq.com/s/-79fGDSCN0Dsaq40btPO3w
-
-崔永元：科学家用“生命担保”，靠谱吗？
-
-https://mp.weixin.qq.com/s/nzw3ETVAklJLXPwOqohp1g
-
-武汉病毒所石正丽：一直提醒预防，没想到疫情就发生在自己生活的城市
-
-----
-
-https://mp.weixin.qq.com/s/MJamXXj44e-fxaP9WRyhgw
-
-武汉病毒所申请瑞得西韦用途专利能否获得授权？有无价值？
-
-----
-
-王延轶出生于1981年，现任中国科学院武汉病毒研究所所长，分子免疫学学科组组长，致公党武汉市副主任委员。
-
-http://www.sohu.com/a/370615513_105067
-
-网传饶毅致信舒红兵：您夫人不适合领导武汉病毒所

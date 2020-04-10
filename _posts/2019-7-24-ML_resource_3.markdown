@@ -401,3 +401,7 @@ https://mp.weixin.qq.com/s/0dUlVC9I8qmv3f2BB0IFew
 https://mp.weixin.qq.com/s/_Di73PkEWJV1-OLLHfz7yQ
 
 组合在线学习：实时反馈玩转组合优化
+
+https://mp.weixin.qq.com/s/_Ze8C8UQV9UZXnSX6qq2GA
+
+强化学习玩王者荣耀

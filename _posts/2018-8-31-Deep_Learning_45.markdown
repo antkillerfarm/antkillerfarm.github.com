@@ -68,6 +68,14 @@ http://blog.csdn.net/u014380165/article/details/78525500
 
 自学网络结构（一）：Neural Architecture Search With Reinforcement Learning
 
+https://mp.weixin.qq.com/s/zAHbuwOyUbvii8u6GdK9uA
+
+AutoML&NAS综述（上）
+
+https://mp.weixin.qq.com/s/PWhzZzs0kkFWci6Lhm4R3Q
+
+AutoML&NAS综述（下）
+
 https://mp.weixin.qq.com/s/FdKcWsynTpfD6rbABPTEOQ
 
 神经架构搜索研究指南，只看这一篇就够了
