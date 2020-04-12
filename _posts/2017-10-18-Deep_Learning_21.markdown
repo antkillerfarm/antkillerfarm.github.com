@@ -4,23 +4,9 @@ title:  深度学习（二十一）——图像超分辨率, SRCNN, DRCN
 category: DL 
 ---
 
-# Ultra Deep Network（续）
+# Ultra Deep Network
 
-## Dual Path Networks
-
-DPN是冯佳时和颜水成团队的Yunpeng Chen的作品。
-
->冯佳时，中国科学技术大学自动化系学士，新加坡国立大学电子与计算机工程系博士。现任新加坡国立大学电子与计算机工程系助理教授。
-
-论文：
-
-《Dual Path Networks》
-
-代码：
-
-https://github.com/cypw/DPNs
-
-这篇论文首先从拓扑关系的角度分析了ResNet、DenseNet和HORNN（Higher Order RNN）之间的联系。
+## Dual Path Networks（续）
 
 ![](/images/img2/DPN_3.png)
 
@@ -87,6 +73,14 @@ SR目前主要有两个用途：
 >Harry Nyquist，1889~1976，University of North Dakota本硕（1914,1915）+耶鲁博士（1917）。AT&T贝尔实验室电子工程师。IEEE Medal of Honor获得者（1960）。
 
 >IEEE Medal of Honor是IEEE的最高奖，除了1963年之外，每年只有1人得奖，个别年份甚至会轮空。
+
+参考：
+
+https://mp.weixin.qq.com/s/NhFUCCu9I4SGH7sbqvQeuw
+
+数字通信时代的引路人：奈奎斯特（Nyquist）
+
+----
 
 最简单的当然是《图像处理理论（二）》中提到的梯度锐化和拉普拉斯锐化，这种简单算法当然不要指望有什么好效果，聊胜于无而已。这是1995年以前的主流做法。
 

@@ -265,3 +265,37 @@ https://mp.weixin.qq.com/s/3Pe5wJ0VomzwKMF84OqcMg
 https://mp.weixin.qq.com/s/afX8Y84nTS20q4Y36uOWqQ
 
 复旦提出GaitSet算法，步态识别的重大突破！
+
+# 模型压缩与加速+
+
+https://mp.weixin.qq.com/s/m9I5TM9uJcgZvMusO667OA
+
+5MB的神经网络也高效，Facebook新压缩算法造福嵌入式设备
+
+https://mp.weixin.qq.com/s/FFs0-ROvbXSAIOspW_rMbw
+
+超越MobileNetV3！谷歌大脑提出MixNet轻量级网络
+
+https://mp.weixin.qq.com/s/nys9R6xCJXt0vG06gnQzFQ
+
+模型剪枝，不可忽视的推断效率提升方法
+
+https://mp.weixin.qq.com/s/EuT-4_eEtIVKh6QdLDbohg
+
+解读小米MoGA：超过MobileNetV3的移动端GPU敏感型搜索
+
+https://mp.weixin.qq.com/s/L49cqZ2PXP-x4Y6xBJG5cQ
+
+旷视研究院提出MetaPruning：基于元学习和AutoML的模型压缩新方法
+
+https://mp.weixin.qq.com/s/F_p414ezQ0RDhPnZj36SUA
+
+网络剪枝中的AutoML方法
+
+https://zhuanlan.zhihu.com/c_151876233
+
+如何Finetune一个小网络到移动端（时空性能分析篇）
+
+https://mp.weixin.qq.com/s/kU0_BuQW8VQihUwBuZ90cA
+
+发布可伸缩超网SCARLET，小米AutoML团队NAS三部曲杀青

@@ -233,3 +233,19 @@ https://mp.weixin.qq.com/s/okx0jZR6PmFm3ikCCUbNkg
 https://mp.weixin.qq.com/s/geANIVbd4C0qpSig0IB2zA
 
 梯形DenseNets结构实现语义分割新高度！
+
+## Dual Path Networks
+
+DPN是冯佳时和颜水成团队的Yunpeng Chen的作品。
+
+>冯佳时，中国科学技术大学自动化系学士，新加坡国立大学电子与计算机工程系博士。现任新加坡国立大学电子与计算机工程系助理教授。
+
+论文：
+
+《Dual Path Networks》
+
+代码：
+
+https://github.com/cypw/DPNs
+
+这篇论文首先从拓扑关系的角度分析了ResNet、DenseNet和HORNN（Higher Order RNN）之间的联系。

@@ -6,6 +6,32 @@ category: DL acceleration
 
 # 模型压缩与加速（续）
 
+## 参考
+
+https://github.com/memoiry/Awesome-model-compression-and-acceleration
+
+模型压缩与加速相关资源汇总
+
+https://mp.weixin.qq.com/s/bndECrtEcNCkCF5EG0wO-A
+
+移动端机器学习资源合集
+
+https://blog.csdn.net/hw5226349/article/details/84888416
+
+Deep Compression/Acceleration：模型压缩加速论文汇总
+
+https://zhuanlan.zhihu.com/p/58805980
+
+深度学习的模型加速与模型裁剪方法
+
+https://mp.weixin.qq.com/s/pAEoVs8xu0SY9tfBqOJHHA
+
+Google DeepMind最新报告—深度神经网络压缩进展
+
+http://blog.csdn.net/shuzfan/article/details/51383809
+
+神经网络压缩：Deep Compression
+
 https://mp.weixin.qq.com/s/2NOFyu_twx1EciDeDPBLKw
 
 深度神经网络加速与压缩
@@ -361,35 +387,3 @@ https://mp.weixin.qq.com/s/af-z73asc-PmpEsI_yEulA
 https://mp.weixin.qq.com/s/AOI2LUjiKPUJFE0D7zX0Hw
 
 谷歌新研究：基于数据共享的神经网络快速训练方法
-
-https://mp.weixin.qq.com/s/m9I5TM9uJcgZvMusO667OA
-
-5MB的神经网络也高效，Facebook新压缩算法造福嵌入式设备
-
-https://mp.weixin.qq.com/s/FFs0-ROvbXSAIOspW_rMbw
-
-超越MobileNetV3！谷歌大脑提出MixNet轻量级网络
-
-https://mp.weixin.qq.com/s/nys9R6xCJXt0vG06gnQzFQ
-
-模型剪枝，不可忽视的推断效率提升方法
-
-https://mp.weixin.qq.com/s/EuT-4_eEtIVKh6QdLDbohg
-
-解读小米MoGA：超过MobileNetV3的移动端GPU敏感型搜索
-
-https://mp.weixin.qq.com/s/L49cqZ2PXP-x4Y6xBJG5cQ
-
-旷视研究院提出MetaPruning：基于元学习和AutoML的模型压缩新方法
-
-https://mp.weixin.qq.com/s/F_p414ezQ0RDhPnZj36SUA
-
-网络剪枝中的AutoML方法
-
-https://zhuanlan.zhihu.com/c_151876233
-
-如何Finetune一个小网络到移动端（时空性能分析篇）
-
-https://mp.weixin.qq.com/s/kU0_BuQW8VQihUwBuZ90cA
-
-发布可伸缩超网SCARLET，小米AutoML团队NAS三部曲杀青

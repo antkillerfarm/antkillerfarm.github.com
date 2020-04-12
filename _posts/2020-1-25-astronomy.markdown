@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/ucW-yFzdyArhjz7lZpzNjg
 
 宇宙在膨胀，人们是怎么发现的？
 
+https://mp.weixin.qq.com/s/epPBEXZVZoiobDuUMISPFA
+
+地球是个球体，那宇宙是个啥？
+
 ## 流浪地球
 
 https://mp.weixin.qq.com/s/O8tAEBMmZ29N1fr7BGW_UQ
@@ -301,19 +305,3 @@ https://mp.weixin.qq.com/s/sIPKApVO-2OYlMKuSl1ZKg
 https://mp.weixin.qq.com/s/xPAJ00EImF4mnv79aeVltg
 
 浅析黑洞成像背后的稀疏重构算法原理
-
-https://mp.weixin.qq.com/s/Jmm-dJ84IYhaVFv9OW1WoQ
-
-人类首张黑洞照片幕后英雄：29岁女算法工程师
-
-https://mp.weixin.qq.com/s/dAAjBL3P0FAZQqvWT5CoVw
-
-心酸科研路：3年前CVPR论文，仅被引用11次，如今成就黑洞照片！
-
-https://mp.weixin.qq.com/s/BoF3-GGCFSr7MhVjJ1Erbg
-
-反转？MIT女博士遭质疑：代码贡献太少，黑洞照片功臣另有其人
-
-https://mp.weixin.qq.com/s/VdZLGE3DU80Ycid1ePIR6w
-
-DIY发现新行星操作指南：谷歌开源了行星发现代码

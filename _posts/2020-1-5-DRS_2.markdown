@@ -365,3 +365,27 @@ https://mp.weixin.qq.com/s/Y4g2T6qMGzCcE67bINPiGA
 https://zhuanlan.zhihu.com/p/100019681
 
 推荐系统技术演进趋势：从召回到排序再到重排
+
+https://zhuanlan.zhihu.com/p/102918124
+
+微信看一看Embedding
+
+https://zhuanlan.zhihu.com/p/115781834
+
+深度学习在花椒直播中的应用——推荐系统冷启动算法
+
+https://mp.weixin.qq.com/s/ec88cMR4K6pWyHhJs7FEFQ
+
+智能推荐算法在花椒直播中的应用
+
+https://zhuanlan.zhihu.com/p/68897114
+
+如何刻画用户的多样兴趣——MIND network阅读笔记
+
+https://mp.weixin.qq.com/s/sbdnEMez_BKPzXOl1Z4AzQ
+
+DeepMatch：用于推荐&广告的深度召回匹配算法库
+
+https://zhuanlan.zhihu.com/p/127030405
+
+对话推荐系统综述论文

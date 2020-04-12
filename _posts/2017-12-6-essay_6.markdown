@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 摩尔定律的瓶颈, 四行仓库
+title: 四行仓库, 饺子级航母, 张宗昌诗选
 category: essay 
 ---
 
@@ -22,58 +22,6 @@ https://zhuanlan.zhihu.com/p/44862021
 
 他们的“九一八”：邦媛妹妹，祝你可爱的前途光明……
 
-# 摩尔定律的瓶颈
-
-上世纪60年代，摩尔发现半导体晶体管制程发展的速度对于一个半导体厂商至关重要。
-
-随着制程的进化，同样的芯片的制造成本会更低，因为单位面积晶体管数量提升导致相同的芯片所需要的面积缩小。所以制程发展速度如果过慢，则意味着芯片制作成本居高不下，导致利润无法扩大。
-
-另一方面，如果孤注一掷把所有的资本都用来发展新制程，则风险太大，一旦研发失败公司就完蛋了。
-
-摩尔发现当时市场上成功的半导体厂商的制程进化速度大约是每年半导体芯片上集成的晶体管数量翻倍，于是写了著名的论文告诉大家这个发展速度是成本与风险之间一个良好的折中，半导体业以后发展可以按照这个速度来。
-
-芯片的成本包括NRE成本（Non-Recurring Engineering，指芯片设计和掩膜制作成本，对于一块芯片而言这些成本是一次性的）和制造成本（即每块芯片制造的成本）。
-
-在先进工艺制程，由于工艺的复杂性，NRE成本非常高。例如FinFET工艺往往需要使用double patterning技术，而且金属层数可达15层之多，导致掩膜制作非常昂贵。另外，复杂工艺的设计规则也非常复杂，工程师需要许多时间去学习，这也增加了NRE成本。
-
-对于由先进制程制造的芯片，每块芯片的毛利率较使用落后制程制造的芯片要高，但是高昂的NRE成本意味着由先进制程制作的芯片需要更多的销量才能实现真正盈利。这使得芯片设计和制造所需要的资本越来越高，而无力负担先进工艺制程的中小厂商则不得不继续使用较旧的工艺。这也部分地打破了摩尔定律“投资发展制程-芯片生产成本降低-用部分利润继续投资发展制程”的逻辑。
-
-![](/images/article/moore.jpg)
-
-**Andy gives, Bill takes away.**
-
-![](/images/img3/IC_process.jpg)
-
-![](/images/img3/IC_process_2.jpg)
-
-https://mp.weixin.qq.com/s/TmLSHVkeyqfU-9Jgir0czA
-
-摩尔定律究竟死没死
-
-![](/images/img3/IC_process_3.jpg)
-
-https://www.zhihu.com/question/290382241
-
-为什么memory制程比CPU的制程低？
-
-----
-
-![](/images/img2/Makimoto-Wave.jpg)
-
->Tsugio Makimoto（牧本次生），IEEE Robert N. Noyce Medal（2018）。曾任索尼CTO。半导体工业从NMOS到CMOS演进的先驱。
-
-![](/images/img3/broadcom.jpg)
-
-----
-
-https://mp.weixin.qq.com/s/7kRePPUk_Xat8-7PsAO5XQ
-
-晶体管逐渐变小，Dennard定律比摩尔定律更值得关注，散热和功耗推动芯片专业化
-
-----
-
-PPA（Power-Performance-Area）
-
 # 四行仓库
 
 2018.1
@@ -93,6 +41,214 @@ PPA（Power-Performance-Area）
 https://www.zhihu.com/question/274584145/answer/510094835
 
 迟浩田三个人不费一枪一弹，抓获国民党青年军第204师上校副师长，迫使其师部及三个营放下武器
+
+# 饺子级航母
+
+米畜教你下饺子的正确姿势：
+
+1.Essex 31 December 1942
+
+2.Independence 14 January 1943
+
+3.Lexington 17 February 1943
+
+4.Princeton 25 February 1943
+
+5.Belleau Wood 31 March 1943
+
+6.Yorktown 15 April 1943
+
+7.Bunker Hill 25 May 1943
+
+8.Cowpens 28 May 1943
+
+9.Monterey 17 June 1943
+
+10.Cabot 24 July 1943
+
+11.Intrepid 16 August 1943
+
+12.Langley 31 August 1943
+
+13.Bataan 17 November 1943
+
+14.Hornet 20 November 1943
+
+15.Wasp 24 November 1943
+
+16.San Jacinto 15 December 1943
+
+17.Franklin 31 January 1944
+
+18.Hancock 15 April 1944
+
+19.Ticonderoga 8 May 1944
+
+20.Bennington 6 August 1944
+
+21.Shangri-la 15 September 1944
+
+22.Randolph 9 October 1944
+
+23.Bon Homme Richard 26 November 1944
+
+24.Antietam 28 January 1945
+
+25.Boxer 16 April 1945
+
+26.Lake Champlain 3 July 1945
+
+17艘CV+9艘CVL
+
+![](/images/img3/Shipyard.jpg)
+
+蹩脚的厨师：
+
+1.にぎつ丸 January 1942
+
+2.龍鳳 November 1942
+
+3.大鳳 March 1943
+
+4.千代田 December 1943
+
+5.千歳 January 1944
+
+6.天城 August 1944
+
+7.雲龍 August 1944
+
+8.葛城 October 1944
+
+9.信濃 November 1944
+
+10.山汐丸 January 1945
+
+11.しまね丸 February 1945
+
+12.熊野丸 March 1945
+
+----
+
+https://zhuanlan.zhihu.com/p/28221950
+
+埃塞克斯级----饺子级的前世今生(上)
+
+https://zhuanlan.zhihu.com/p/29837980
+
+埃塞克斯级————饺子级的前世今生(下)
+
+# 张宗昌诗选
+
+以下诗文有说是张宗昌所作，也有说是后人伪作的张宗昌诗作，反正挺有趣的。
+
+----
+
+《笑刘邦》
+
+听说项羽力拔山，吓得刘邦就要窜。
+
+不是俺家小张良，奶奶早已回沛县。
+
+----
+
+《大风歌》
+
+大炮开兮轰他娘，威加海内兮回家乡。
+
+数英雄兮张宗昌，安得巨鲸兮吞扶桑。
+
+----
+
+《游泰山》
+
+远看泰山黑糊糊，上头细来下头粗。
+
+如把泰山倒过来，下头细来上头粗。
+
+----
+
+《咏闪电》
+
+忽见天上一火镰，疑是玉皇要抽烟。
+
+如果玉皇不抽烟，为何又是一火镰?
+
+----
+
+《大明湖》
+
+大明湖，明湖大。
+
+大明湖里有荷花，荷花上面有蛤蟆，一戳一蹦达。
+
+----
+
+《游蓬莱阁》
+
+好个蓬莱阁，他妈真不错。
+
+神仙能到的，俺也坐一坐。
+
+靠窗摆下酒，对海唱高歌。
+
+来来猜几拳，舅子怕喝多!
+
+----
+
+《游趵突泉》
+
+趵突泉，泉趵突，三个眼子一般粗，
+
+三股水，光咕嘟，咕嘟咕嘟光咕嘟。
+
+----
+
+《求雨》
+
+玉皇爷爷也姓张，为啥为难俺张宗昌?
+
+三天之内不下雨，先扒龙皇庙，再用大炮轰你娘。
+
+----
+
+《咏雪》
+
+什么东西天上飞，东一堆来西一堆。
+
+莫非玉皇盖金殿，筛石灰呀筛石灰。
+
+----
+
+《破冰歌》
+
+看见地上一条缝，灌上凉水就上冻。
+
+如果不是冻化了，谁知这里有条缝。
+
+----
+
+《混蛋诗》
+
+你叫我去这样干，他叫我去那样干。
+
+真是一群大混蛋，全都混你妈的蛋。
+
+----
+
+《无题》
+
+要问女人有几何，俺也不知多少个。
+
+昨天一孩喊俺爹，不知他娘是哪个?
+
+----
+
+《游西方》
+
+早听西方好，他妈真不孬。
+
+本想多玩玩，睁眼却没了。
 
 # 世说新语
 

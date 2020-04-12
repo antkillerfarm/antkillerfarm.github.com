@@ -4,7 +4,25 @@ title: Falcon heavy, 阿波罗50年
 category: Nature 
 ---
 
-# 黑洞成像（续）
+# 黑洞成像
+
+## Katie Bouman（续）
+
+https://mp.weixin.qq.com/s/Jmm-dJ84IYhaVFv9OW1WoQ
+
+人类首张黑洞照片幕后英雄：29岁女算法工程师
+
+https://mp.weixin.qq.com/s/dAAjBL3P0FAZQqvWT5CoVw
+
+心酸科研路：3年前CVPR论文，仅被引用11次，如今成就黑洞照片！
+
+https://mp.weixin.qq.com/s/BoF3-GGCFSr7MhVjJ1Erbg
+
+反转？MIT女博士遭质疑：代码贡献太少，黑洞照片功臣另有其人
+
+https://mp.weixin.qq.com/s/VdZLGE3DU80Ycid1ePIR6w
+
+DIY发现新行星操作指南：谷歌开源了行星发现代码
 
 ## 视觉中国
 
@@ -210,6 +228,14 @@ NASA传奇数学家去世，她曾笔算了登月轨道
 
 ----
 
+由于飞行前的制造和测试错误，氧气罐中的电线暴露了出来。在那个致命的夜晚，氧气罐中暴露的电线产生的火花引发了火灾，引爆了氧气罐，将服务舱外的隔热层炸飞。。。
+
+https://mp.weixin.qq.com/s/NmS1dbeIsQomsWYI8-OyZg
+
+阿波罗13号“伟大失败”50周年，NASA发布纪录片追忆奥德赛号逃生往事
+
+----
+
 ![](/images/img3/india_moon.jpg)
 
 https://www.zhihu.com/question/344795065/
@@ -221,6 +247,14 @@ https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
 印度失联的月球探测器依然成功了95%？那些年我们一起追过的月球
 
 # 病毒（续）
+
+https://mp.weixin.qq.com/s/Bx7AZrL168OkygBbg0qflQ
+
+病毒与人类的战争（下）： 人类守望者
+
+https://mp.weixin.qq.com/s/9iWT9v4msuHgzN_92Ptf7A
+
+关于新冠病毒，人们最关心的七个科学问题
 
 https://mp.weixin.qq.com/s/ruMiimYqAbsVwU-mnyq8oQ
 
@@ -287,31 +321,3 @@ https://mp.weixin.qq.com/s/UoKrSYw6109QR57af2odew
 https://mp.weixin.qq.com/s/ShSjz0ZEBneT6KqGYGjtcg
 
 历年世界各地的“瘟疫”，人们都是怎么战胜的？
-
-https://mp.weixin.qq.com/s/uoLGz_giq88nkNJ4-80n3Q
-
-全球百年视角再审视：历次突发疫情是如何消退的？
-
-https://mp.weixin.qq.com/s/CBwRBdGHFcjItdA81SfdOg
-
-美国从百年前的那场大流感里学到了什么？
-
-https://mp.weixin.qq.com/s/_ye9rCrsh6pdPgVHrzveEQ
-
-166年前的那场大霍乱，伦敦做对了什么？
-
-https://mp.weixin.qq.com/s/pkhE3o2ioSV4CBmg0Y2WvQ
-
-“零号病人”：瘟疫大流行的超级背锅侠
-
-----
-
-在这场争论中，最早推广Pfeifer氏菌疫苗的William Park展示了自我纠错的勇气，与George McCoy一起，成为否定细菌疫苗发声最多的专家。
-
-100年前的条件和科学水平与当前无法相比，但以William Park为代表的美国科学家所展示的勇于纠错、实事求是的精神永远不会过时。
-
->William Hallock Park，1863～1939，美国医学家。Columbia University博士（1886）。长期供职于卫生部纽约实验室（也就是现在的William Park实验室）。
-
-https://mp.weixin.qq.com/s/dhNuZo0yTI1CR8oH9LYlKA
-
-以史为鉴：回顾1918年美国流感疫苗开发的闹剧

@@ -110,6 +110,10 @@ https://engineering.purdue.edu/ChanGroup/ECE595/index.html
 
 ECE 595: Machine Learning
 
+https://github.com/glouppe/info8010-deep-learning
+
+Gilles Louppe: Deep Learning
+
 # English
 
 SOTA(state of the art)：目前最高水平

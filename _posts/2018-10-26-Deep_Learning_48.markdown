@@ -200,6 +200,10 @@ https://zhuanlan.zhihu.com/p/109514384
 
 医学图像分割的Non-local U-Nets
 
+https://mp.weixin.qq.com/s/cumrVJPexV_BtCKoUprrLA
+
+当UNet遇见ResNet会发生什么？
+
 # 语义分割进阶
 
 https://mp.weixin.qq.com/s/_q8N8keNpcD-jXLrRd_8dw

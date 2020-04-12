@@ -291,29 +291,3 @@ https://www.zhihu.com/question/62068158
 《AMC: AutoML for Model Compression and Acceleration on Mobile Devices》
 
 这是韩松组的何宜晖的作品。该论文采用深度强化学习的DDPG网络来优化目标网络，从而大大减少了需要搜索的状态空间。
-
-## 参考
-
-https://github.com/memoiry/Awesome-model-compression-and-acceleration
-
-模型压缩与加速相关资源汇总
-
-https://mp.weixin.qq.com/s/bndECrtEcNCkCF5EG0wO-A
-
-移动端机器学习资源合集
-
-https://blog.csdn.net/hw5226349/article/details/84888416
-
-Deep Compression/Acceleration：模型压缩加速论文汇总
-
-https://zhuanlan.zhihu.com/p/58805980
-
-深度学习的模型加速与模型裁剪方法
-
-https://mp.weixin.qq.com/s/pAEoVs8xu0SY9tfBqOJHHA
-
-Google DeepMind最新报告—深度神经网络压缩进展
-
-http://blog.csdn.net/shuzfan/article/details/51383809
-
-神经网络压缩：Deep Compression

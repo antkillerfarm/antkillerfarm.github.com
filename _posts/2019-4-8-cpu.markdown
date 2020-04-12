@@ -1,8 +1,60 @@
 ---
 layout: post
-title:  CPU
+title:  摩尔定律的瓶颈, CPU
 category: resource 
 ---
+
+# 摩尔定律的瓶颈
+
+上世纪60年代，摩尔发现半导体晶体管制程发展的速度对于一个半导体厂商至关重要。
+
+随着制程的进化，同样的芯片的制造成本会更低，因为单位面积晶体管数量提升导致相同的芯片所需要的面积缩小。所以制程发展速度如果过慢，则意味着芯片制作成本居高不下，导致利润无法扩大。
+
+另一方面，如果孤注一掷把所有的资本都用来发展新制程，则风险太大，一旦研发失败公司就完蛋了。
+
+摩尔发现当时市场上成功的半导体厂商的制程进化速度大约是每年半导体芯片上集成的晶体管数量翻倍，于是写了著名的论文告诉大家这个发展速度是成本与风险之间一个良好的折中，半导体业以后发展可以按照这个速度来。
+
+芯片的成本包括NRE成本（Non-Recurring Engineering，指芯片设计和掩膜制作成本，对于一块芯片而言这些成本是一次性的）和制造成本（即每块芯片制造的成本）。
+
+在先进工艺制程，由于工艺的复杂性，NRE成本非常高。例如FinFET工艺往往需要使用double patterning技术，而且金属层数可达15层之多，导致掩膜制作非常昂贵。另外，复杂工艺的设计规则也非常复杂，工程师需要许多时间去学习，这也增加了NRE成本。
+
+对于由先进制程制造的芯片，每块芯片的毛利率较使用落后制程制造的芯片要高，但是高昂的NRE成本意味着由先进制程制作的芯片需要更多的销量才能实现真正盈利。这使得芯片设计和制造所需要的资本越来越高，而无力负担先进工艺制程的中小厂商则不得不继续使用较旧的工艺。这也部分地打破了摩尔定律“投资发展制程-芯片生产成本降低-用部分利润继续投资发展制程”的逻辑。
+
+![](/images/article/moore.jpg)
+
+**Andy gives, Bill takes away.**
+
+![](/images/img3/IC_process.jpg)
+
+![](/images/img3/IC_process_2.jpg)
+
+https://mp.weixin.qq.com/s/TmLSHVkeyqfU-9Jgir0czA
+
+摩尔定律究竟死没死
+
+![](/images/img3/IC_process_3.jpg)
+
+https://www.zhihu.com/question/290382241
+
+为什么memory制程比CPU的制程低？
+
+----
+
+![](/images/img2/Makimoto-Wave.jpg)
+
+>Tsugio Makimoto（牧本次生），IEEE Robert N. Noyce Medal（2018）。曾任索尼CTO。半导体工业从NMOS到CMOS演进的先驱。
+
+![](/images/img3/broadcom.jpg)
+
+----
+
+https://mp.weixin.qq.com/s/7kRePPUk_Xat8-7PsAO5XQ
+
+晶体管逐渐变小，Dennard定律比摩尔定律更值得关注，散热和功耗推动芯片专业化
+
+----
+
+PPA（Power-Performance-Area）
 
 # CPU
 
@@ -297,109 +349,3 @@ IGBT的现状与发展
 https://zhuanlan.zhihu.com/p/56864499
 
 CPU是怎么调节输入电压的？为什么要这么做？
-
-https://zhuanlan.zhihu.com/p/57780996
-
-内存延迟：因与果
-
-https://mp.weixin.qq.com/s/LreWWlXAQL-dqQBCk93soQ
-
-解读两大精简指令集：RISC-V和MIPS
-
-https://mp.weixin.qq.com/s/5uie8Ci5dK_wy54Z70Gklg
-
-RISC-V精简到何种程度？能省的都省了！
-
-https://mp.weixin.qq.com/s/XcC18tulYdnwqlusg2QrxA
-
-嵌入式内存STT-MRAM趋势分析
-
-https://mp.weixin.qq.com/s/26se041cc9aBRw16kvPPjA
-
-芯片制造新模式--像搭积木一样造芯片
-
-https://mp.weixin.qq.com/s/570O2BloWjy3q0_m_mfiZg
-
-CPU缓存一致性协议
-
-https://mp.weixin.qq.com/s/9y5HFTQr2QP12iR858BFtg
-
-图解intel芯片生产全过程！
-
-https://zhuanlan.zhihu.com/p/62234511
-
-DDR3 vs DDR4? 为什么说内存是个很傻的设备？DDR5在哪里？
-
-https://mp.weixin.qq.com/s/QwE_VTEUS9kGDDrHlzPYmg
-
-硅片为什么不是方的？
-
-https://zhuanlan.zhihu.com/p/63494668
-
-显存为什么不能当内存使？内存、Cache和Cache一致性
-
-https://zhuanlan.zhihu.com/p/32378843
-
-ARM攒机指南-汽车篇
-
-https://mp.weixin.qq.com/s/Hq9hzkyfGcCQa_FfzSDoRg
-
-5nm工艺节点以后，半导体器件的发展方向
-
-https://zhuanlan.zhihu.com/p/66263349
-
-为什么内存和闪存制程比CPU低？它们现在都在什么节点？
-
-https://mp.weixin.qq.com/s/lz6EoLiLtPtWFMG1FJCuQw
-
-化合物半导体的机遇
-
-https://mp.weixin.qq.com/s/QF9Nsh_YyX9LZQ_D-4hP-A
-
-芯片是怎么制造的？央视最强科普！
-
-https://mp.weixin.qq.com/s/bKgYpZdXxAexlEtmPQ9oGw
-
-科普：芯片是怎么从沙子中一步步炼成的！
-
-https://mp.weixin.qq.com/s/tTtySk3u6m2BGUkDto5Ojw
-
-可重构芯片的方法学原理
-
-https://mp.weixin.qq.com/s/RkRZX_scr__Q_mLPhaaWAA
-
-AMD Zen 2处理器架构为何要如此设计？
-
-https://mp.weixin.qq.com/s/dRv4xWV8laCYBaZ0DwOC3A
-
-如何从零开始设计一颗芯片？
-
-https://mp.weixin.qq.com/s/eAzdtKvfw7EVz5Ax3nXeZg
-
-自己动手设计专用处理器
-
-https://mp.weixin.qq.com/s/NfNJVoAC5aW1sgToAmYsGw
-
-3nm芯片终结者
-
-https://mp.weixin.qq.com/s/o8C6n-ZRw3vFS8E-hikXJQ
-
-移动的王者：深入分析ARM最强处理器Cortex A77
-
-https://www.cnblogs.com/f-ck-need-u/p/11141636.html
-
-关于CPU的一些基本知识总结
-
-https://mp.weixin.qq.com/s/vTOGmcahRxQBH8RgkTJ2GA
-
-中文系同学都能听懂的集成电路设计流程
-
-https://mp.weixin.qq.com/s/O-2ecxYVOgEfRuwEoS7gRA
-
-Fab的那些事儿
-
->Fab的全称叫Fabrication，也就是集成电路制造的工厂、车间。
-
-https://mp.weixin.qq.com/s/aSCcdTHUoogP7TOK5MIsVw
-
-一颗芯片的全球之旅

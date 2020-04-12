@@ -122,6 +122,14 @@ LN的特点：
 
 和BN一样，LN通常也忽略公式7中的b。
 
+从实践来看，LN在NLP任务上的表现比BN好。
+
+参考：
+
+https://mp.weixin.qq.com/s/-QzsVs6V2pwvFQlRVYVx2Q
+
+LayerNorm是Transformer的最优解吗？
+
 ## Weight Normalization
 
 WN的公式如下：

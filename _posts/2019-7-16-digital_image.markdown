@@ -305,6 +305,10 @@ https://mp.weixin.qq.com/s/NuJYejYJ1kKdD2pRo5Wxlw
 
 HDR Imaging(2)--Digital Overlap
 
+https://mp.weixin.qq.com/s/_znyQAPeGt_IiZ8C5Rv6zw
+
+HDR imaging(3)----split/sub pixel技术
+
 https://mp.weixin.qq.com/s/m_EKOLjWjTyx4RBxsAAAGg
 
 4x4阵列摄/“深感”摄
