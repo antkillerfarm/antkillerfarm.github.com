@@ -162,7 +162,7 @@ https://zhuanlan.zhihu.com/p/33397147
 
 条件随机场(Conditional Random Field)由Lafferty等人于2001年提出，结合了最大熵模型和隐马尔可夫模型的特点，是一种无向图模型，近年来在分词、词性标注和命名实体识别等序列标注任务中取得了很好的效果。
 
-https://mp.weixin.qq.com/s/heYpeVLrZBRjXtMQou2BAA
+https://zhuanlan.zhihu.com/p/35969159
 
 如何轻松愉快的理解条件随机场（CRF）？
 
@@ -185,10 +185,6 @@ https://mp.weixin.qq.com/s/1rx_R1BGRVAIDqKixNLMQA
 https://mp.weixin.qq.com/s/GXbFxlExDtjtQe-OPwfokA
 
 一文轻松搞懂-条件随机场CRF
-
-https://zhuanlan.zhihu.com/p/35969159
-
-CRF条件随机场
 
 https://mp.weixin.qq.com/s/0FIns5Xt2G1seqFbpGvzTQ
 
@@ -303,3 +299,7 @@ https://mp.weixin.qq.com/s/8uxc2t53N_j_mRPYbiG0sA
 https://mp.weixin.qq.com/s/3pGw9QdAZVE3OKZ-zGyb4g
 
 使用Python远程登陆服务器的最佳实践
+
+https://mp.weixin.qq.com/s/Bllw4rSkxd378LLUCh6oJA
+
+Python炫技操作：合并字典的七种方法

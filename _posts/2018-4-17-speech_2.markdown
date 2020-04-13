@@ -68,6 +68,10 @@ https://mp.weixin.qq.com/s/jvxUkwfPf3kqqdnvTQLlkA
 
 CoVoST：Facebook发布的多语种语音-文本翻译语料库
 
+https://mp.weixin.qq.com/s/opP5-gPGAKJT16nXaoOAWg
+
+Google发布的语音分离数据集与深度学习模型
+
 # 基本框架
 
 语音识别系统主要有四部分组成：信号处理和特征提取、声学模型、语言模型（Language Model, LM）和解码器(Decoder)。

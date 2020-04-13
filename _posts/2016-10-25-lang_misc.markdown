@@ -70,7 +70,7 @@ Python、Ruby，随便学一个。
 
 这是《The Art of Computer Programming》一书的作者Donald Knuth的杰作。从中可以看到后来的HTML、JavaScript、CSS等的影子。MS Office中的格式刷也是参考了Tex的设计。
 
-Tex最为称道的是数学公式的排版。MS Office直到2007才有了类似的效果。
+Tex最为称道的是数学公式的排版。MS Office直到2007版本才有了类似的效果。
 
 Tex广泛应用于欧美国家科学论文的排版领域，成为顶级科学期刊事实上的格式标准，可说是科研狗的必备技能。
 

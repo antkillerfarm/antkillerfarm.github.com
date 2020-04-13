@@ -350,6 +350,10 @@ https://mp.weixin.qq.com/s/FdQ7IF4N3BhiqjZ32ZMirg
 
 中文细粒度命名实体识别数据集来了
 
+https://mp.weixin.qq.com/s/jkM0iYFMjIXdfFQVxw86Bg
+
+KdConv：多领域知识驱动的中文多轮对话数据集
+
 ## CV
 
 http://www.cvpapers.com/datasets.html
@@ -359,15 +363,3 @@ http://www.cvpapers.com/datasets.html
 https://mp.weixin.qq.com/s/SKZhcd3QpoVMubTkD14iWw
 
 Fashion-MNIST：替代MNIST手写数字集的图像数据集
-
-https://niessner.github.io/Matterport/
-
-全球最大的3D数据集公开了！标记好的10800张全景图
-
-https://mp.weixin.qq.com/s/FciCPM8CjOwGKlltJsH0XA
-
-超全的3D视觉数据集汇总
-
-https://mp.weixin.qq.com/s/q2lsD4MSqQG-LqRmVjEHeg
-
-图像配对数据集TTL：展现人类和机器判断图像相似性的差异

@@ -214,9 +214,19 @@ https://coronavirus.jhu.edu/map.html
 
 JHU的全球实时统计网站
 
+https://github.com/CSSEGISandData/COVID-19
+
+上述网站的代码
+
 https://view.inews.qq.com/a/20200404A0GES400
 
 全球最可靠疫情图每天点击量超10亿，由两名中国留美博士生操盘
+
+https://mp.weixin.qq.com/s/biMYttSdoe7k99v7m9H4oQ
+
+美国确诊超50万，约翰·霍普金斯大学疫情地图成全球瞩目中心
+
+----
 
 https://mp.weixin.qq.com/s/lv-C9MDiW0SwNszDy54i0g
 

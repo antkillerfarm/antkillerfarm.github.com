@@ -134,6 +134,10 @@ https://mp.weixin.qq.com/s/nsZ64_7jgugvDlBZoiJ1ZA
 
 UnrealText：基于虚拟场景的真实场景文本图像合成
 
+https://mp.weixin.qq.com/s/TnS4-seRxAs45A6SDSoACg
+
+图神经网络的预训练策略
+
 # Graph NN+
 
 https://mp.weixin.qq.com/s/r4_5GwA8Olqh6M1p_6eYPg
@@ -312,6 +316,14 @@ https://mp.weixin.qq.com/s/GnjSuQ_BihO5bP5xO2xHJg
 
 万字长文带你入门GCN
 
+https://mp.weixin.qq.com/s/4J0wL4vSugmx1Zow8zdT2Q
+
+DGL深度图神经网络实战教程
+
+https://mp.weixin.qq.com/s/v9aOoK2sHP0a9hZP0jWW0Q
+
+图神经网络的新基准
+
 # 深度推荐系统+
 
 https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w
@@ -377,6 +389,10 @@ https://mp.weixin.qq.com/s/jIjdYIbdls5lIbF7TVfbdA
 https://mp.weixin.qq.com/s/fUdKIqygxqlkuv0P4wiIRg
 
 智能推荐算法在直播场景中的应用
+
+https://mp.weixin.qq.com/s/HE0ckOe71dROafTZt-2mAA
+
+最新边信息推荐系统综述
 
 # 肺炎版《黄冈密卷》
 

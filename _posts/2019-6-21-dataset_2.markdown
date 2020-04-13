@@ -8,6 +8,18 @@ category: resource
 
 ## CV（续）
 
+https://niessner.github.io/Matterport/
+
+全球最大的3D数据集公开了！标记好的10800张全景图
+
+https://mp.weixin.qq.com/s/FciCPM8CjOwGKlltJsH0XA
+
+超全的3D视觉数据集汇总
+
+https://mp.weixin.qq.com/s/q2lsD4MSqQG-LqRmVjEHeg
+
+图像配对数据集TTL：展现人类和机器判断图像相似性的差异
+
 https://mp.weixin.qq.com/s/Y__z-0nxAZNuZsZefCm4IA
 
 纽约大学联合谷歌大脑提出“COG”数据集，可提高系统的“视觉推理”能力
@@ -369,23 +381,3 @@ https://zhuanlan.zhihu.com/p/40984645
 http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201703/t20170310_1471429.html
 
 国家统计局：最新县及县以上行政区划代码
-
-https://github.com/wecatch/china_regions
-
-最全最新中国省，市，地区json及sql数据
-
-https://mp.weixin.qq.com/s/h38VZnInkuOjkgcEmsTtMg
-
-让机器帮你做行测题，UCLA朱松纯团队提出关系和类比视觉推理数据集RAVEN
-
-https://mp.weixin.qq.com/s/8wiHVMhKjzlg8BqMMLLgYw
-
-神经网络也能解数学题，DeepMind发布千万数学题海数据集
-
-https://mp.weixin.qq.com/s/YU4tRplyLxFpJdkqclhXyQ
-
-DeepMind大放送：开放4个多物体表征学习数据集，还有一篇智能体新研究
-
-https://mp.weixin.qq.com/s/fCoQv6zMQw_8eOwANS16OQ
-
-图神经网络的ImageNet？斯坦福大学等开源百万量级OGB基准测试数据集

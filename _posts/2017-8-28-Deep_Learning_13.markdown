@@ -14,7 +14,21 @@ category: DL
 
 ![](/images/article/max_pooling.png)
 
-上图是Max Pooling的示意图。除了max之外，常用的池化函数还有mean、min等。
+上图是Max Pool的示意图，也就是选择池子里最大的那个值。
+
+除了max之外，常用的池化函数还有：
+
+Min Pool:
+
+$$Y=\min(P)$$
+
+Average Pool:
+
+$$Y=\text{mean}(P)$$
+
+L2 Pool:
+
+$$Y=\sqrt{\frac{\sum p^2}{n}}$$
 
 ICLR2013上，Zeiler提出了另一种pooling手段stochastic pooling。只需对Pooling区域中的元素按照其概率值大小随机选择，即元素值大的被选中的概率也大。而不像max-pooling那样，永远只取那个最大值元素。
 
@@ -38,7 +52,7 @@ Stochastic-pooling则介于两者之间，通过对像素点按照数值大小�
 
 ## 全局平均池化
 
-Global Average Pooling是另一类池化操作，一般用于替换FullConnection层。
+Global Average Pool是另一类池化操作，一般用于替换FullConnection层。
 
 ![](/images/article/global_average_pooling.png)
 
@@ -59,6 +73,8 @@ Global Average Pooling是另一类池化操作，一般用于替换FullConnectio
 1.计算每个通道的feature map的均值。
 
 2.将不同通道的均值连接成一个一维tensor。
+
+GAP实际上就是kernel size等于WxH的AP。类似的，还有Global Max Pool。
 
 ## UnPooling
 

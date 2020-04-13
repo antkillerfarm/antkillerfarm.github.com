@@ -334,6 +334,10 @@ https://mp.weixin.qq.com/s/Ppvz4KkzWkMy6jXfbv6VqA
 
 推荐系统之矩阵分解家族
 
+https://mp.weixin.qq.com/s/eIldlMXri3WbyTzc3HeXsA
+
+个性化搜索的介绍，推荐和搜索的强强结合
+
 # 推荐算法中的常用排序算法
 
 ![](/images/img3/ranking.png)

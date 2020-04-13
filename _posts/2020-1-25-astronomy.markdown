@@ -130,6 +130,24 @@ https://mp.weixin.qq.com/s/epPBEXZVZoiobDuUMISPFA
 
 地球是个球体，那宇宙是个啥？
 
+----
+
+![](/images/img3/Hadley_Cell.png)
+
+考虑自转偏向力的Hadley Cells
+
+![](/images/img3/Hadley_Cell.png)
+
+不考虑自转偏向力的Hadley Cells（金星）
+
+https://mp.weixin.qq.com/s/UcchOEf59hku7uclxZFMrA
+
+距离地球630光年的地方，下起了“铁雨”
+
+https://www.seas.harvard.edu/climate/eli/research/equable/hadley.html
+
+Hadley Cells
+
 ## 流浪地球
 
 https://mp.weixin.qq.com/s/O8tAEBMmZ29N1fr7BGW_UQ

@@ -57,6 +57,10 @@ https://mp.weixin.qq.com/s/Prfc7biv2VJBcgNIMbn7Ow
 
 如果数据分布是非正态的怎么办？用切比雪夫不等式呀！
 
+https://mp.weixin.qq.com/s/SEXU8_SXXZ6OZkwK77OjQQ
+
+随机矩阵的中心极限定理
+
 # Bézier curve
 
 Bézier curve在数学界发现的时间很早——它是1912年由Sergei Natanovich Bernstein提出的。然而，真正将之发扬广大的，却是法国工程师Pierre Étienne Bézier。

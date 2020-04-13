@@ -308,6 +308,12 @@ http://news.ifeng.com/c/7uRKv3JARr9
 
 伊朗女副总统感染新冠病毒，40年前她在美国家喻户晓
 
+----
+
+https://mp.weixin.qq.com/s/srkQ4in3bLP6exZIZawzuw
+
+英国全能数学家John Conway因新冠去世，他是数学疯子，也是游戏疯子：没有谁比我更爱玩游戏了！
+
 ## Gilead Sciences
 
 Gilead Sciences，1987年6月22日注册成立，是一家以研究为基础，从事药品的开发和销售的生物制药公司。主要重点领域包括人类免疫缺陷病毒（HIV）/艾滋病，肝脏疾病，如乙型肝炎和丙型肝炎和心血管/代谢和呼吸条件。

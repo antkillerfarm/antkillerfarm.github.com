@@ -334,3 +334,7 @@ https://mp.weixin.qq.com/s/7UhB8mSXQUfOPbDKqqg4rg
 https://zhuanlan.zhihu.com/p/92230537
 
 求解稀疏优化问题——半光滑牛顿方法
+
+https://mp.weixin.qq.com/s/aLOd_W3juLuWaQeTdzAPjg
+
+数值优化（1）——引入，线搜索：步长选取条件

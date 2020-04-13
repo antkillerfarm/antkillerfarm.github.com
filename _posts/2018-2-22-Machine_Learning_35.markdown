@@ -212,6 +212,10 @@ Graph非常适合用于描述non-Euclidean space的数据：
 
 ## 参考
 
+https://mp.weixin.qq.com/s/LqCfwf90bzZKVMLLY5dbXA
+
+图数据分析与可视化，538页pdf
+
 https://mp.weixin.qq.com/s/zOdy-1vCJD_dPFSoe0ELFA
 
 图论与图学习（一）：图的基本概念

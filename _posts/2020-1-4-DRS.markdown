@@ -300,6 +300,10 @@ https://zhuanlan.zhihu.com/p/35484389
 
 深度学习在CTR预估中的应用
 
+https://mp.weixin.qq.com/s/5A0mnFIMGX1GViD65vURcg
+
+浅谈CTR预估模型发展史
+
 https://mp.weixin.qq.com/s/nboZ6p_l30L__FJNyz6Ohw
 
 深度学习如何应用在广告、推荐及搜索业务？

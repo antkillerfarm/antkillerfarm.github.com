@@ -360,10 +360,6 @@ https://mp.weixin.qq.com/s/AjSjXgrKug6XpfUhmQX0kA
 
 75天疫情产生260000吨医疗垃圾，去哪了？谁赚了？
 
-----
+https://mp.weixin.qq.com/s/i0o9Xb-AViIZ8DGMOtDaig
 
-不得不感慨，美国的产业空心化已经到了如此严重的地步。如果给GM充足的时间，他们应该也可以搞出BYD这种产品线。但是造价会贵4~5倍，研发投产的周期至少要半年以上。
-
-https://mp.weixin.qq.com/s/tFc15hulgBUE-m338xBhzQ
-
-突发：CDC终于推荐民众戴口罩，谁又有谁来为3亿人美国人生产口罩？
+被英国首相点名后，戴森承诺造15000台呼吸机
