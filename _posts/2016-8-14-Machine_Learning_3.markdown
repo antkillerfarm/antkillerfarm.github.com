@@ -93,13 +93,13 @@ $$p(\theta\mid x)=\frac{p(x\mid \theta)p(\theta)}{p(x)}$$
 
 常见的生成式模型有Naive Bayes，Mixtures of Gaussians， HMMs，Markov Random Fields等。
 
-判别式模型，优点是分类边界灵活，学习简单，性能较好；缺点是不能得到概率分布。
+**判别式模型**，优点是分类边界灵活，学习简单，性能较好；缺点是不能得到概率分布。
 
-生成式模型，优点是收敛速度快，可学习分布，可应对隐变量；缺点是学习复杂，分类性能较差。
+**生成式模型**，优点是收敛速度快，可学习分布，可应对隐变量；缺点是学习复杂，分类性能较差。
 
 ![](/images/img2/Discriminative_Generative.jpg)
 
-上面是一个分类例子，可知判别式模型，有清晰的分界面，而生成式模型，有清晰的概率密度分布。生成式模型，可以转换为判别式模型，反之则不能。
+上面是一个分类例子，可知判别式模型，有清晰的分界面，而生成式模型，有清晰的概率密度分布，也就是所谓的生成label的能力。生成式模型，可以转换为判别式模型，反之则不能。
 
 参考：
 
@@ -225,7 +225,3 @@ $$\begin{align}p(y=1\mid x)&=\frac{p(x\mid y=1)p(y=1)}{p(x\mid y=1)p(y=1)+p(x\mi
 为了简化问题，我们假设$$p(x_i\mid y)$$是条件独立的。这个假设被称为朴素贝叶斯假设（Naive Bayes (NB) assumption）。使用这个假设的算法被称为朴素贝叶斯分类器（Naive Bayes classifier）。
 
 从数学角度，NB假设是个很严格的条件，但是实际使用中，即使样本集不满足NB假设，使用NB方法的效果一般还是不错的。
-
-$$\begin{align}p(x_1,\dots,x_{50000}\mid y)&=p(x_1\mid y)p(x_2\mid y,x_1)p(x_3\mid y,x_1,x_2)\cdots p(x_{50000}\mid y,x_1,\dots,x_{49999})(条件概率的乘法公式)
-\\&=p(x_1\mid y)p(x_2\mid y)p(x_3\mid y)\cdots p(x_{50000}\mid y)(NB假设)=\prod_{i=1}^np(x_i\mid y)
-\end{align}$$

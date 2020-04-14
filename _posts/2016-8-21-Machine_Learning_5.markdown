@@ -4,7 +4,17 @@ title:  机器学习（五）——SVM（2）
 category: ML 
 ---
 
-## KKT条件（续）
+## KKT条件
+
+拉格朗日对偶公式中使$$p^*=d^*$$成立的条件，被称为KKT条件（Karush-Kuhn-Tucker conditions）：
+
+$$\begin{align}
+\frac{\partial}{\partial w_i}\mathcal{L}(w^*,\alpha^*,\beta^*) & =0,i=1,\dots,n & \\
+\frac{\partial}{\partial \beta_i}\mathcal{L}(w^*,\alpha^*,\beta^*) & =0,i=1,\dots,l & \\
+\alpha_i^*g_i(w^*)& =0,i=1,\dots,k & \tag{1}\\
+g_i(w^*)& \le 0,i=1,\dots,k & \\
+\alpha_i^* & \ge 0,i=1,\dots,k & \\
+\end{align}$$
 
 其中的$$w^*,\alpha^*,\beta^*$$表示满足KKT条件的相应变量的取值。条件1也被称为KKT对偶互补条件（KKT dual complementarity condition）。显然这些$$w^*,\alpha^*,\beta^*$$既是原始问题的解，也是对偶问题的解。
 
@@ -230,5 +240,3 @@ k(x,x') &=& k_1(x,x')
 \\ k(x,x') &=& k_a(x_a,x_a') + k_b(x_b,x_b')
 \\ k(x,x') &=& k_a(x_a,x_a')k_b(x_b,x_b')
 \end{eqnarray}$$
-
-其中$$c>0$$是一个常数，$$f(\cdot)$$是任意函数，$$q(\cdot)$$是一个系数非负的多项式，$$\phi(x)$$是一个从$$x$$到$$\mathbb{R}^M$$的函数，$$k_3(\cdot, \cdot)$$是$$\mathbb{R}^M$$中的一个有效的核，$$A$$是一个对称半正定矩阵，$$x_a, x_b$$是变量（未必不相交），且$$x = (x_a, x_b)$$。$$k_a,k_b$$是各自空间的有效的核函数。

@@ -146,6 +146,14 @@ https://www.zhihu.com/question/314292163
 
 如何评价SpaceX载人龙飞船成功首飞并与国际空间站对接？
 
+https://www.zhihu.com/question/54009933
+
+空间站是怎么取暖？或者说是维持温度的呢？
+
+https://www.zhihu.com/question/329267129
+
+中国空间站和国际空间站的区别在哪？
+
 ----
 
 小布什签署的美国航天发展规划，直接规定了要求NASA退出近地空间，要求他们重新带领美国航天天顶科技。与此同时，美国的商业航天开始全面崛起，后来大名鼎鼎的space-x，bigelow，blue origin大都从此时起步。

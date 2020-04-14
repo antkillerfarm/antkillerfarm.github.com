@@ -4,9 +4,11 @@ title:  机器学习（十七）——主成分分析
 category: ML 
 ---
 
-# 协同过滤的ALS算法
+# 协同过滤的ALS算法（续）
 
-## 隐式反馈（续）
+## 隐式反馈
+
+用户给商品评分是个非常简单粗暴的用户行为。在实际的电商网站中，还有大量的用户行为，同样能够间接反映用户的喜好，比如用户的购买记录、搜索关键字，甚至是鼠标的移动。我们将这些间接用户行为称之为隐式反馈（implicit feedback），以区别于评分这样的显式反馈（explicit feedback）。
 
 隐式反馈有以下几个特点：
 
@@ -296,23 +298,3 @@ https://mp.weixin.qq.com/s/cfeILnMsWlMC_T6lcSEW7A
 https://mp.weixin.qq.com/s/C-tZRvHKcpO5jQArZi_GQA
 
 数据降维算法-从PCA到LargeVis
-
-PCA还可用于升维：
-
-https://www.cnblogs.com/lochan/p/7011831.html
-
-核化主成分分析（Kernel PCA）应用及调参
-
-https://zhuanlan.zhihu.com/p/59644996
-
-Kernel Principal Component Analysis(KPCA核主成分分析)
-
-## 参考
-
-https://mp.weixin.qq.com/s/tJ_FbL2nFQfkvKqpQJ8kmg
-
-从特征分解到协方差矩阵：详细剖析和实现PCA算法
-
-https://mp.weixin.qq.com/s/dDdyaA7Nxqa8tBE_qQ80Dw
-
-典型相关性分析(CCA)详解

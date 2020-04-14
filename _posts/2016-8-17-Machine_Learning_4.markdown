@@ -6,6 +6,10 @@ category: ML
 
 ## 朴素贝叶斯方法（续）
 
+$$\begin{align}p(x_1,\dots,x_{50000}\mid y)&=p(x_1\mid y)p(x_2\mid y,x_1)p(x_3\mid y,x_1,x_2)\cdots p(x_{50000}\mid y,x_1,\dots,x_{49999})(条件概率的乘法公式)
+\\&=p(x_1\mid y)p(x_2\mid y)p(x_3\mid y)\cdots p(x_{50000}\mid y)(NB假设)=\prod_{i=1}^np(x_i\mid y)
+\end{align}$$
+
 因此：
 
 $$\begin{align}p(y=1\mid x)&=\frac{p(x\mid y=1)p(y=1)}{p(x)}
@@ -217,15 +221,3 @@ $$d^*=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\underset{w}{\ope
 https://mp.weixin.qq.com/s/IhvdhEnyRI2DRns9EkCy5Q
 
 拉格朗日对偶理论
-
-## KKT条件
-
-拉格朗日对偶公式中使$$p^*=d^*$$成立的条件，被称为KKT条件（Karush-Kuhn-Tucker conditions）：
-
-$$\begin{align}
-\frac{\partial}{\partial w_i}\mathcal{L}(w^*,\alpha^*,\beta^*) & =0,i=1,\dots,n & \\
-\frac{\partial}{\partial \beta_i}\mathcal{L}(w^*,\alpha^*,\beta^*) & =0,i=1,\dots,l & \\
-\alpha_i^*g_i(w^*)& =0,i=1,\dots,k & \tag{1}\\
-g_i(w^*)& \le 0,i=1,\dots,k & \\
-\alpha_i^* & \ge 0,i=1,\dots,k & \\
-\end{align}$$

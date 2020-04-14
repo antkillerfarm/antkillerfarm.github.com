@@ -4,6 +4,44 @@ title:  机器学习（十）——高斯混合模型和EM算法
 category: ML 
 ---
 
+# K-Means算法（续）
+
+由于畸变函数J是非凸函数，意味着我们不能保证算法取得的最小值是全局最小值，也就是说k-means对质心初始位置的选取比较敏感。但一般情况下k-means达到的局部最优已经满足需求。但如果你怕陷入局部最优，那么可以选取不同的初始值跑多遍k-means，然后取其中最小的J对应的$$\mu$$和c输出。
+
+参考：
+
+http://www.csdn.net/article/2012-07-03/2807073-k-means
+
+深入浅出K-Means算法
+
+http://www.cnblogs.com/leoo2sk/archive/2010/09/20/k-means.html
+
+k均值聚类(K-means)
+
+http://www.cnblogs.com/jerrylead/archive/2011/04/06/2006910.html
+
+K-means聚类算法
+
+https://mp.weixin.qq.com/s/86MlCMKAG0ax3gvfsgmYtg
+
+K-Means聚类算法详解
+
+https://mp.weixin.qq.com/s/Sl3lTS1zvq0BgAayAUcOXg
+
+K-Means实战与调优详解
+
+https://mp.weixin.qq.com/s/6ErpBtVg0r2dhsBGbIkvDg
+
+Bisecting K-Means算法
+
+https://mp.weixin.qq.com/s/oAvNzxENTfaxUkSRypCo1g
+
+K-Means算法的10个有趣用例
+
+https://zhuanlan.zhihu.com/p/45408671
+
+K-Means小谈
+
 ## 聚类结果的评价
 
 可考虑用以下几个指标来评价聚类效果：
@@ -220,32 +258,3 @@ $$\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}=c$$
 $$Q_i(z^{(i)})\propto p(x^{(i)},z^{(i)};\theta)$$
 
 其中的$$\propto$$符号是两者成正比例的意思。
-
-从中还可以推导出：
-
-$$\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}=c=\frac{\sum_zp(x^{(i)},z^{(i)};\theta)}{\sum_zQ_i(z^{(i)})}$$
-
-因为$$\sum_zQ_i(z^{(i)})=1$$，所以上式可变形为：
-
-$$Q_i(z^{(i)})=\frac{p(x^{(i)},z^{(i)};\theta)}{\sum_zp(x^{(i)},z^{(i)};\theta)}=\frac{p(x^{(i)},z^{(i)};\theta)}{p(x^{(i)};\theta)}=p(z^{(i)}\mid x^{(i)};\theta)$$
-
-可见，当$$Q_i(z^{(i)})$$为$$z^{(i)}$$的后验分布时，$$\ell(\theta)$$的下界达到最大值。
-
-因此，EM算法的过程为：
-
->Repeat until convergence {   
->>(E-step) For each i：   
->>>$$Q_i(z^{(i)}):=p(z^{(i)}\mid x^{(i)};\theta)$$   
->>
->>(M-step) Update the parameters：   
->>>$$\theta:=\arg\max_\theta\sum_i\sum_zQ_i(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}$$      
->
->}
-
-如何保证算法的收敛性呢？
-
-如果我们用$$\theta^{(t)}$$和$$\theta^{(t+1)}$$表示EM算法第t次和第t+1次迭代后的结果，那么我们的任务就是证明$$\ell(\theta^{(t)})\le \ell(\theta^{(t+1)})$$。
-
-由公式1和2可得：
-
-$$\ell(\theta)\ge\sum_i\sum_{z^{(i)}}Q_i(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}\tag{3}$$

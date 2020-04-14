@@ -1,8 +1,118 @@
 ---
 layout: post
-title:  机器学习（三十）——HMM, NLP机器翻译常用评价度量
+title:  机器学习（三十）——概率图模型, HMM
 category: ML 
 ---
+
+# 概率图模型
+
+## 资料
+
+probabilistic graphical model（PGM）最早由Judea Pearl发明。
+
+这方面比较重要的文章和书籍有：
+
+http://www.cis.upenn.edu/~mkearns/papers/barbados/jordan-tut.pdf
+
+Michael Irwin Jordan著。
+
+《Probabilistic Graphical Models: Principles and Techniques》，Daphne Koller，Nir Friedman著（2009年）。
+
+>注：Judea Pearl，1936年生，以色列-美国计算机科学家，UCLA教授。2011年获得图灵奖。
+
+>Michael Irwin Jordan，1956年生，美国计算机科学家。UCSD博士，先后执教于MIT和UCB。吴恩达的导师。
+
+>Daphne Koller，女，1968年生，以色列-美国计算机科学家。斯坦福大学博士及教授。和吴恩达共同创立在线教育平台Coursera。
+
+>Nir Friedman，1967年生，以色列计算机科学家。斯坦福大学博士，耶路撒冷希伯来大学教授。
+
+http://www.cs.cmu.edu/~epxing/Class/10708-14/lectures/
+
+CMU的邢波（Eric Xing）所开的概率图模型课程。
+
+## 概述
+
+概率图模型的三要素：Graph：$$\mathcal{G}$$、Model：$$\mathcal{M}$$和Data：$$\mathcal{D}\equiv\{X^{(i)}_1,\dots,X^{(i)}_m\}^N_{i=1}$$。
+
+它要解决的三大问题：
+
+1.**表示**。如何获取或定义真实世界的不确定度？如何对领域知识/假设/约束编码？
+
+2.**推断**。根据模型/数据，推断答案。
+
+$$\text{e.g.}:P(x_i\mid \mathcal{D})$$
+
+3.**学习**。根据数据确定哪个模型是正确的。
+
+$$\text{e.g.}:\mathcal{M}=\arg\max_{\mathcal{M}\in M}F(\mathcal{D};\mathcal{M})$$
+
+![](/images/article/PGM.png)
+
+上图是PGM的一个示例。其中$$X_i$$表示随机变量，图中共有8个随机变量，假设它们均为二值变量，则整个状态空间共有$$2^8$$种组合。遍历这样大的状态空间无疑是一件极为费力的事情。
+
+如果$$X_i$$是条件独立的话，则由上图可得：
+
+$$P(X_1,\dots,X_8)=P(X_2)P(X_4\mid X_2)P(X_5\mid X_2)P(X_1)P(X_3\mid X_1)\\P(X_6\mid X_3,X_4)P(X_7\mid X_6)P(X_8\mid X_5,X_6)$$
+
+这样，状态空间就缩小为$$2+4+4+2+4+8+4+8=36$$种组合了。
+
+根据边的类型，PGM可分为两类：
+
+1.有向边表示变量间的**因果**关系（单向依赖）。这样的PGM，常称为Bayesia Network（BN）或Directed Graphical Model（DGM）。
+
+2.无向边表示变量间的**相关**关系（互相依赖）。这样的PGM，常称为Markov Random Field（MRF）或Undirected Graphical Model（UGM）。
+
+>注：因果关系是一种强逻辑关系，需要变量间有深刻的内在联系。而相关关系要弱的多，典型的例子就是《机器学习（十七）》中的尿布和啤酒的故事。尿布和啤酒虽然正相关，然而它们本身却没有多大的联系。
+
+根据模型的不同，PGM又可分为生成模型（Generative Model, GM）和判别模型（Discriminative Model, DM）。两者的区别在《机器学习（二）》中已经简单提到过，这里做一个扩展。
+
+之前提到的机器学习算法，主要是建立特征向量X和标签Y之间的联系。但是实际情况下，X中的状态不一定都能得到，因此可以根据可见性，将X分为可观测变量集合O和其他变量集合R，Y也不一定是一个标签，而可能是一个变量集合。即：
+
+$$GM:P(Y,R,O)\to P(Y\mid O)$$
+
+$$DM:P(Y,R\mid O)\to P(Y\mid O)$$
+
+注意，在贝叶斯学派的观点中，模型的参数也是随机变量，因此，R在某些情况下，不仅包含不可观测的变量，也包含模型参数。
+
+![](/images/img3/PGM.jpg)
+
+上图是按照GM/DM分类的各主要PGM的关系图。其中上一行是GM，而下一行是DM。
+
+## 贝叶斯网络
+
+贝叶斯网络是最简单的有向图模型。
+
+首先给出几个术语的定义：
+
+**有向无环图(Directed Acyclic Graph, DAG)**：这个术语的字面意思很清楚，不解释。
+
+**马尔可夫毯(Markov Blanket, MB)**：有向图——结点A的父结点+A的子结点+A的子结点的其他父结点。如下图所示：
+
+![](/images/article/Markov_blanket.png)
+
+无向图——结点A的邻近结点。
+
+下图是图模型的部分变种之间的关系图。
+
+![](/images/article/Generative_Models.png)
+
+## 参考
+
+https://mp.weixin.qq.com/s/srLs_88QOFkBiKMiLZH9HA
+
+想了解概率图模型？你要先理解图论的基本定义与形式
+
+https://mp.weixin.qq.com/s/S-6Mb6zNzVPpxR8DbWdT-A
+
+读懂概率图模型：你需要从基本概念和参数估计开始
+
+https://mp.weixin.qq.com/s/b_0sxD0noWnuIkCxxUBlDA
+
+终极入门：马尔可夫网络 (Markov Networks)
+
+https://mp.weixin.qq.com/s/QvD97vfnv1x8w-e33WymRA
+
+从贝叶斯理论到图像马尔科夫随机场
 
 # HMM
 
@@ -16,9 +126,11 @@ category: ML
 
 因此一个HMM可以表示为：
 
-$$\mu=(A,B,\Pi)$$
+$$\mu=(A,B,\pi)$$
 
-其中，A是transition probability，B是emission probability，$$\Pi$$是start probability。
+其中，A是transition probability，B是emission probability，$$\pi$$是start probability。
+
+A、B、$$\pi$$加上可见状态X、隐含状态Y，就构成了**HMM的5要素**。
 
 如果可见状态和隐含状态之间，存在一对一的关系，那么HMM就退化成普通的Markov链了。
 
@@ -115,119 +227,3 @@ forward算法是求解问题2的常用算法。
 ![](/images/article/forward_algorithm.png)
 
 上图是某骰子序列的穷举计算过程，可以看出第3步计算的概率和公式的某些项，实际上在之前的步骤中已经计算出来了，前向递推的计算量并没有想象中的大。
-
-## Baum–Welch算法
-
-Baum–Welch算法是求解问题3的常用算法，由Baum和Welch于1972年提出。它虽然是EM算法的一个特例，但后者却是1977年才提出的。
-
->Leonard Esau Baum，1931～2017，美国数学家，哈佛博士（1958）。国防分析研究所研究员，70年代末，加盟对冲基金——文艺复兴科技公司。
-
->Lloyd Richard Welch，生于1927年，美国数学家，加州理工博士（1958），南加州大学教授。美国工程院院士，Shannon Award获得者（2003）。
-
-Baum–Welch算法也叫前向后向算法。因为它包含了前向和后向两个步骤。
-
-1:expectation，计算隐变量的概率分布，并得到可观察变量与隐变量联合概率的log-likelihood在前面求得的隐变量概率分布下的期望。这个步骤就是所谓的前向步骤，算法和求解问题2的forward算法是一致的
-
-2:maximization求得使上述期望最大的新的模型参数。若达到收敛条件则退出，否则回到步骤1。
-
-前向后向算法则主要是解决Expectation这步中求隐变量概率分布的一个算法，它利用dynamic programming大大减少了计算量。
-
-此外，训练HMM模型时，也需要对模型参数进行随机初始化，不然和神经网络一样，由于参数没有差异性，而无法进行训练。
-
-参考：
-
-https://blog.csdn.net/xmu_jupiter/article/details/50965039
-
-HMM的Baum-Welch算法和Viterbi算法公式推导细节
-
-## HMM在NLP领域的应用
-
-具体到分词系统，可以将“标签”当作隐含状态，“字或词”当作可见状态。那么，几个NLP的问题就可以转化为：
-
-词性标注：给定一个词的序列（也就是句子），找出最可能的词性序列（标签是词性）。如ansj分词和ICTCLAS分词等。
-
-分词：给定一个字的序列，找出最可能的标签序列（断句符号：[词尾]或[非词尾]构成的序列）。结巴分词目前就是利用BMES标签来分词的，B（开头）,M（中间),E(结尾),S(独立成词）
-
-命名实体识别：给定一个词的序列，找出最可能的标签序列（内外符号：[内]表示词属于命名实体，[外]表示不属于）。如ICTCLAS实现的人名识别、翻译人名识别、地名识别都是用同一个Tagger实现的。
-
-综上，**在监督学习中，一般把训练数据当作HMM的可见状态，而把标签当作隐含状态。**当然这里的标签可能是生成最终训练标签的一个概率模型的参数。
-
-参考：
-
-http://blog.sina.com.cn/s/blog_8267db980102wq4l.html
-
-HMM识别新词
-
-https://mp.weixin.qq.com/s/dwfuruet361IT6lQQcYWjA
-
-HMM模型在贝壳对话系统中的应用
-
-# NLP机器翻译常用评价度量
-
-机器翻译的评价指标主要有：BLEU、NIST、Rouge、METEOR等。
-
-参考：
-
-http://blog.csdn.net/joshuaxx316/article/details/58696552
-
-BLEU，ROUGE，METEOR，ROUGE-浅述自然语言处理机器翻译常用评价度量
-
-http://blog.csdn.net/guolindonggld/article/details/56966200
-
-机器翻译评价指标之BLEU
-
-https://mp.weixin.qq.com/s/niVOM-lnzI2-Tgxn8Qterw
-
-NLP中评价文本输出都有哪些方法？为什么要小心使用BLEU？
-
-http://blog.csdn.net/han_xiaoyang/article/details/10118517
-
-机器翻译评估标准介绍和计算方法
-
-http://blog.csdn.net/lcj369387335/article/details/69845385
-
-自动文档摘要评价方法---Edmundson和ROUGE
-
-https://mp.weixin.qq.com/s/XiZ6Uc5cHZjczn-qoupQnA
-
-对话系统评价方法综述
-
-https://zhuanlan.zhihu.com/p/33088748
-
-数据集和评价指标介绍
-
-https://mp.weixin.qq.com/s/9hoM_yF96XxSbQHEP6oasw
-
-怎样生成语言才能更自然，斯坦福提出超越Perplexity的评估新方法
-
-# Robust PCA
-
-http://www.cnblogs.com/quarryman/p/robust_pca.html
-
-最优化之Robust PCA
-
-http://www.aiuxian.com/article/p-2634727.html
-
-Robust PCA
-
-http://blog.csdn.net/abcjennifer/article/details/8572994
-
-Robust PCA学习笔记
-
-http://patternrecognition.cn/~jin/gs/seminar/20140515_jinzhong.ppt
-
-Robust PCA-模式识别
-
-# 热传导推荐算法
-
-https://www.zhihu.com/question/20184666
-
-推荐系统中用到的热传导算法和物质扩散是怎么用的？
-
-http://tis.hrbeu.edu.cn/oa/pdfdow.aspx?Sid=20160307
-
-基于影响力控制的热传导算法
-
-http://www.doc88.com/p-7082821463697.html
-
-改进的热传导和物质扩散混合推荐算法

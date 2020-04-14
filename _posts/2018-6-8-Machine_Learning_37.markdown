@@ -111,6 +111,16 @@ autoregressive conditional heteroskedasticity, ARCH
 
 generalized autoregressive conditional heteroskedasticity, GARCH
 
+上面介绍的序列建模方法主要针对的是：预测未来节点，即所谓的走势分析问题。
+
+时间序列的常见问题还包括：
+
+- 判断不同序列类别，即序列分类问题。
+
+- 不同时序对应的状态的分析，即序列标注问题。
+
+这些问题的常见工具包括HMM、CRF、RNN等，可参见其他相关章节。
+
 ## Prophet
 
 Prophet是FaceBook提出的时间序列算法。同时，也是该算法的工具包的名字。

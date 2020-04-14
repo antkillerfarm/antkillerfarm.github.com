@@ -4,7 +4,13 @@ title:  机器学习（九）——K-Means算法
 category: ML 
 ---
 
-## 特征选择（续）
+## 特征选择
+
+特征选择（Feature Selection）严格来说也是模型选择中的一种。
+
+假设我们想对维度为n的样本点进行回归，如果，n远远大于训练样例数m，且你认为其中只有很少的特征起关键作用的话，就可以对整个特征集进行特征选择，以减少特征的数量。
+
+对于n个特征的$$\mathcal{M}$$来说，根据特征是否包含在最终结果中，可以写出$$2^n$$个不同的$$M_i$$。直接使用上面的交叉验证方法，计算量过大。这时可以采用如下启发式算法：
 
 >1.初始化特征集$$\mathcal{F}=\emptyset$$。   
 >2.Repeat {   
@@ -208,39 +214,3 @@ K-means算法面对的第一个问题是如何保证收敛。前面的算法中�
 $$J(c,\mu)=\sum_{i=1}^m\|x^{(i)}-\mu_{c^{(i)}}\|^2$$
 
 J函数表示每个样本点到其质心的距离平方和。K-means算法的目的是要将J调整到最小。假设当前J没有达到最小值，那么首先可以固定每个类的质心$$\mu_j$$，调整每个样例的所属的类别$$c^{(i)}$$来让J函数减小，同样，固定$$c^{(i)}$$，调整每个类的质心$$\mu_j$$，也可以使J减小。 这两个过程就是内循环中使J单调递减的过程。当J递减到最小时，$$\mu$$和c也同时收敛。（在理论上，可以有多组不同的$$\mu$$和c值，能够使得J取得最小值，但这种现象实际上很少见。）
-
-由于畸变函数J是非凸函数，意味着我们不能保证算法取得的最小值是全局最小值，也就是说k-means对质心初始位置的选取比较敏感。但一般情况下k-means达到的局部最优已经满足需求。但如果你怕陷入局部最优，那么可以选取不同的初始值跑多遍k-means，然后取其中最小的J对应的$$\mu$$和c输出。
-
-参考：
-
-http://www.csdn.net/article/2012-07-03/2807073-k-means
-
-深入浅出K-Means算法
-
-http://www.cnblogs.com/leoo2sk/archive/2010/09/20/k-means.html
-
-k均值聚类(K-means)
-
-http://www.cnblogs.com/jerrylead/archive/2011/04/06/2006910.html
-
-K-means聚类算法
-
-https://mp.weixin.qq.com/s/86MlCMKAG0ax3gvfsgmYtg
-
-K-Means聚类算法详解
-
-https://mp.weixin.qq.com/s/Sl3lTS1zvq0BgAayAUcOXg
-
-K-Means实战与调优详解
-
-https://mp.weixin.qq.com/s/6ErpBtVg0r2dhsBGbIkvDg
-
-Bisecting K-Means算法
-
-https://mp.weixin.qq.com/s/oAvNzxENTfaxUkSRypCo1g
-
-K-Means算法的10个有趣用例
-
-https://zhuanlan.zhihu.com/p/45408671
-
-K-Means小谈
