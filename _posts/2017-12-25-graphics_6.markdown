@@ -94,10 +94,6 @@ $$B_{new}=B*K_b$$
 
 参考：
 
-http://blog.163.com/hong.lg0518@126/blog/static/18907460200972711556304/
-
-伽马校正（Gamma Correction）
-
 http://www.cnblogs.com/pzxbc/archive/2011/12/26/2302572.html
 
 Gamma矫正(Gamma correction)

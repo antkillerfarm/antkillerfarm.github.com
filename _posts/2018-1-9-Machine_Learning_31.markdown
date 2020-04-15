@@ -58,6 +58,28 @@ https://mp.weixin.qq.com/s/dwfuruet361IT6lQQcYWjA
 
 HMM模型在贝壳对话系统中的应用
 
+# MRF
+
+前文已经指出无向的概率图模型也叫做Markov Random Field。
+
+![](/images/img3/MRF.png)
+
+上图是一个简单的MRF的示意图。无向图的边没有箭头，表示变量之间是相互依赖的。
+
+对于图中结点的一个子集，若其中任意两结点间都有边连接，则称该结点子集为一个**团（clique）**。
+
+若在一个团中，加入另外任何一个结点都不能形成团，则称该团为**极大团（maximal clique）**。
+
+上图中，$$\{x_5,x_6\}$$是团，$$\{x_2,x_5,x_6\}$$是极大团，而$$\{x_1,x_2,x_3\}$$不是团，因为$$x_2,x_3$$之间没有连接。
+
+从团的定义可以看出：
+
+- 无法组团的两个结点之间由于没有依赖关系，因此是相互独立的。
+
+- 每个结点至少出现在一个极大团中。孤立结点的极大团就是它本身。
+
+- 若Q不是一个极大团，则必有极大团Q*包含Q。
+
 # MEMM
 
 Maximum Entropy Markov Model是一种判别模型。
@@ -252,7 +274,7 @@ https://zhuanlan.zhihu.com/p/85558304
 
 深度学习压缩感知（DCS）历史最全资源汇总分享
 
-# Robust PCA
+## Robust PCA
 
 http://www.cnblogs.com/quarryman/p/robust_pca.html
 
@@ -269,20 +291,6 @@ Robust PCA学习笔记
 http://patternrecognition.cn/~jin/gs/seminar/20140515_jinzhong.ppt
 
 Robust PCA-模式识别
-
-# 热传导推荐算法
-
-https://www.zhihu.com/question/20184666
-
-推荐系统中用到的热传导算法和物质扩散是怎么用的？
-
-http://tis.hrbeu.edu.cn/oa/pdfdow.aspx?Sid=20160307
-
-基于影响力控制的热传导算法
-
-http://www.doc88.com/p-7082821463697.html
-
-改进的热传导和物质扩散混合推荐算法
 
 # t-SNE
 

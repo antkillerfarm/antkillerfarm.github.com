@@ -94,10 +94,6 @@ http://blog.sina.com.cn/s/blog_5d1476580101a57j.html
 
 Camshift算法
 
-http://blog.163.com/thomaskjh@126/blog/static/370829982010113133152722/
-
-CAMSHIFT原理
-
 https://wenku.baidu.com/view/59596ac42cc58bd63186bd37.html
 
 Camshift算法原理

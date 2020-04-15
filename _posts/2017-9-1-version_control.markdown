@@ -144,10 +144,6 @@ https://github.com/kohlschutter/boilerpipe
 
 参考：
 
-http://xiaoxinzhou.blog.163.com/blog/static/207045386201332381015146/
-
-Boilerpipe简介
-
 http://baojie.org/blog/2014/06/23/python-text-extraction/
 
 总结Python正文提取的工具包

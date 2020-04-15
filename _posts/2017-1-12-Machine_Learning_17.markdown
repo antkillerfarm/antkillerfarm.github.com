@@ -121,6 +121,10 @@ https://mp.weixin.qq.com/s/NnykbxFA6xnTUbLzX8GVIg
 
 推荐系统之矩阵分解模型：实践篇
 
+https://zhuanlan.zhihu.com/p/130314852
+
+一文读懂协同推荐算法原理（上）
+
 <a name="PCA"/>
 
 # 主成分分析

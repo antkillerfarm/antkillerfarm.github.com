@@ -210,10 +210,6 @@ http://chuansong.me/n/377440751130
 
 异常点检测算法（一）
 
-http://jiangshuxia.9.blog.163.com/blog/static/3487586020083662621887/
-
-异常(Outlier)检测算法综述
-
 http://www.cnblogs.com/fengfenggirl/p/iForest.html
 
 异常检测算法--Isolation Forest

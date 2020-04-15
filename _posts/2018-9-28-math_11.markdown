@@ -238,10 +238,6 @@ https://www.zhihu.com/question/23088613/answer/23942834
 
 如何通俗地解释PID参数整定？
 
-http://blog.163.com/suyanqiang0613@126/blog/static/1100531332012111475650867/
-
-PID算法原理
-
 https://zhuanlan.zhihu.com/p/35473808
 
 PID控制器的贝叶斯理解

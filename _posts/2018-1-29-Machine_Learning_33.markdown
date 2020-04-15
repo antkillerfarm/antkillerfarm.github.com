@@ -338,3 +338,17 @@ https://zhuanlan.zhihu.com/p/92230537
 https://mp.weixin.qq.com/s/aLOd_W3juLuWaQeTdzAPjg
 
 数值优化（1）——引入，线搜索：步长选取条件
+
+# 热传导推荐算法
+
+https://www.zhihu.com/question/20184666
+
+推荐系统中用到的热传导算法和物质扩散是怎么用的？
+
+http://tis.hrbeu.edu.cn/oa/pdfdow.aspx?Sid=20160307
+
+基于影响力控制的热传导算法
+
+http://www.doc88.com/p-7082821463697.html
+
+改进的热传导和物质扩散混合推荐算法

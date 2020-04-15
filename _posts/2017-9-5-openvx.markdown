@@ -344,10 +344,6 @@ http://ishare.iask.sina.com.cn/f/17211495.html
 
 深入浅出谈CUDA技术
 
-http://peghoty.blog.163.com/blog/static/493464092013016113254852/
-
-CUDA编程入门
-
 http://blog.csdn.net/xsc_c/article/category/2186063
 
 某人的并行计算专栏

@@ -109,10 +109,6 @@ checkout远程分支：
 
 7.checkout和reset的区别
 
-http://wbj05791467.blog.163.com/blog/static/120329697201331735158420/
-
-git reset和git checkout
-
 https://segmentfault.com/a/1190000006185954
 
 git的reset和checkout的区别
