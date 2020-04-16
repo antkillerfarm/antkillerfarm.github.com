@@ -370,6 +370,14 @@ https://mp.weixin.qq.com/s/R2OE76ipTX3r_vvj0lYYYQ
 
 精度优秀，速度214.7fps！卡内基梅隆大学开源强大的3D多目标跟踪系统
 
+https://mp.weixin.qq.com/s/Siy_FaRmMRGPn4VBZuVRUQ
+
+基于深度学习的多目标跟踪算法（上）：端到端的数据关联
+
+https://mp.weixin.qq.com/s/7IzqglD0e89Y2Oai9Jv2XQ
+
+打遍天下无敌手，却说它只是个baseline！多目标跟踪FairMOT的烦恼
+
 # Spatial Transformer Networks
 
 论文：

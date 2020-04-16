@@ -97,6 +97,10 @@ https://mp.weixin.qq.com/s/H85oyZh5SzJh6SyF49Pzmg
 
 一文看懂TOF
 
+https://mp.weixin.qq.com/s/jEwrEkAp1-UqSuNAASEwCA
+
+清华创业团队发布3D视觉技术白皮书，万字长文详述ToF
+
 ## 结构光
 
 https://mp.weixin.qq.com/s/o_XsmqLSPhvuC0iiK7xHag

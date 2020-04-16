@@ -338,6 +338,10 @@ https://mp.weixin.qq.com/s/eIldlMXri3WbyTzc3HeXsA
 
 个性化搜索的介绍，推荐和搜索的强强结合
 
+https://mp.weixin.qq.com/s/urGCBjJegKwIqkcCBelptA
+
+深入理解推荐系统：召回
+
 # 推荐算法中的常用排序算法
 
 ![](/images/img3/ranking.png)

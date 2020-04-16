@@ -332,6 +332,10 @@ https://zhuanlan.zhihu.com/p/80985475
 
 图像配准综述
 
+https://zhuanlan.zhihu.com/p/90593936
+
+fluid(流）方法图像配准简介
+
 https://zhuanlan.zhihu.com/p/37404280
 
 图像处理：从bilateral filter到HDRnet

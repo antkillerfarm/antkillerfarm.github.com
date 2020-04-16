@@ -324,6 +324,10 @@ https://mp.weixin.qq.com/s/v9aOoK2sHP0a9hZP0jWW0Q
 
 图神经网络的新基准
 
+https://zhuanlan.zhihu.com/p/111945052
+
+TextGCN
+
 # 深度推荐系统+
 
 https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w
@@ -393,6 +397,10 @@ https://mp.weixin.qq.com/s/fUdKIqygxqlkuv0P4wiIRg
 https://mp.weixin.qq.com/s/HE0ckOe71dROafTZt-2mAA
 
 最新边信息推荐系统综述
+
+https://mp.weixin.qq.com/s/GazjnVwQKItrph7_n7SGTw
+
+飞猪的“猜你喜欢”如何排序？
 
 # 肺炎版《黄冈密卷》
 

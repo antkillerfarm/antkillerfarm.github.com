@@ -340,6 +340,10 @@ https://mp.weixin.qq.com/s/7tffKpKWqFYNcOmHJ7T3Zw
 
 汽车操作系统的前世今生
 
+https://mp.weixin.qq.com/s/ALTjs2vvHtZs5RJe-k0ECQ
+
+自动驾驶中的机器人操作系统ROS
+
 ## PythonRobotics
 
 PythonRobotics是一个机器人算法方面的代码示例库。

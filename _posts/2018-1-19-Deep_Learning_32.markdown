@@ -46,6 +46,10 @@ https://mp.weixin.qq.com/s/XrElAz67uxEo-1zEea9dxA
 
 Video Description视频描述综述论文-方法、数据集和评估指标，UWA
 
+https://mp.weixin.qq.com/s/rbqsBrVBs374GipQ2QXUwg
+
+看图说话之随心所欲
+
 # 点云
 
 ## PCL

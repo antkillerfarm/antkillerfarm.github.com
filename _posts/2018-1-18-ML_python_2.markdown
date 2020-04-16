@@ -84,6 +84,10 @@ https://mp.weixin.qq.com/s/NGXQK8xaSPfahzW9XDfXxg
 
 Pandas技巧：万能转格式、轻松合并、压缩数据，让数据分析更高效
 
+https://mp.weixin.qq.com/s/ipUaCuxv7CNRC3zknZenlw
+
+Pandas实用手册（PART I）
+
 ## 并行Pandas
 
 https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw

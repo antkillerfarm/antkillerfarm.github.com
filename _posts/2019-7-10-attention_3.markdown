@@ -320,6 +320,10 @@ https://mp.weixin.qq.com/s/tokxh7Conb-hajj8pnr2fA
 
 Google BERT作者Jacob斯坦福亲授《上下文词向量与预训练语言模型: BERT到T5》43页ppt
 
+https://mp.weixin.qq.com/s/FRfjOSbnquQeFSBDI1FWwg
+
+6个你应该用用看的用于文本分类的最新开源预训练模型
+
 ## ELMo
 
 https://mp.weixin.qq.com/s/I315hYPrxV0YYryqsUysXw
