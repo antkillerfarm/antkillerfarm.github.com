@@ -152,6 +152,10 @@ https://mp.weixin.qq.com/s/_gTNZKCfhoazYR09hmu5lQ
 
 时间自适应卷积：比自注意力更快的特征提取器
 
+https://mp.weixin.qq.com/s/Oixc46P9rQeiMDjI-0j0cw
+
+Transformer在美团搜索排序中的实践
+
 # BERT
 
 ## 概述

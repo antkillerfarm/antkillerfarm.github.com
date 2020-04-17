@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十一）——CRF, 度量学习, 压缩感知
+title:  机器学习（三十一）——CRF
 category: ML 
 ---
 
@@ -82,7 +82,31 @@ HMM模型在贝壳对话系统中的应用
 
 基于以上性质，我们效仿整数的因子分解，提出了概率图的**极大团分解**：
 
-$$P(x)=\frac{1}{Z^*}\prod_{Q\in C^*}$$
+$$P(x)=\frac{1}{Z^*}\prod_{Q\in C^*}\psi_Q(x_Q)$$
+
+其中，$$\psi_Q$$为Q对应的势函数。
+
+$$Z^*=\sum_x \prod_{Q\in C^*} \psi_Q(x_Q)$$
+
+$$Z^*$$通常被称为规范化因子，用于使输出符合概率的定义（部分概率$$\le 1$$，全概率$$=1$$）。
+
+![](/images/img3/MRF_2.png)
+
+如上图所示，结点集A中的结点到B中的结点，必须经过C中的结点，则称A和B被C分离，C称为**分离集（separating set）**。
+
+显然，A和B由于没有直接关系，因此是相对于C条件独立的。这就是所谓的**global Markov property**。即：
+
+$$P(x_A,x_B|x_C)=P(x_A|x_C)P(x_B|x_C)$$
+
+从结点间的连通性上，还可得以下术语：
+
+**马尔可夫毯(Markov Blanket, MB)**：有向图——结点A的父结点+A的子结点+A的子结点的其他父结点。如下图所示：
+
+![](/images/article/Markov_blanket.png)
+
+无向图——结点A的邻接结点。
+
+和global Markov property类似，还有**local Markov property**：给定某变量的邻接变量，则该变量条件独立于其他变量。
 
 # MEMM
 
@@ -227,74 +251,6 @@ BiLSTM上的CRF，用命名实体识别任务来解释CRF（3）推理
 https://mp.weixin.qq.com/s/xJ7MpUkVfLQKxRYyJs29NQ
 
 BiLSTM上的CRF，用命名实体识别任务来解释CRF（4）
-
-# 度量学习
-
-度量学习（Metric Learning）是机器学习里面的一个研究方向，主要是用来度量数据间距离。
-
-一般来说，对于可度量的数据，我们可以直接通过欧式距离，cosine等方法来做。但对于更广泛的数据我们就很难这样操作，如测量一个视频和一首音乐的距离。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/80656461
-
-Metric Learning科普文
-
-https://mp.weixin.qq.com/s/mvbyddpgxBFQSxC1zZZmFw
-
-如何通过距离度量学习解决Street-to-Shop问题
-
-https://mp.weixin.qq.com/s/iuOmxW0OAhSA7xSoIIn1dw
-
-鲁继文：面向视觉内容理解的深度度量学习
-
-https://zhuanlan.zhihu.com/p/100553403
-
-Deep Metric Learning及其形式
-
-# 压缩感知
-
-https://blog.csdn.net/jbb0523
-
-一个压缩感知+贝叶斯网络方面的blog
-
-http://blog.csdn.net/abcjennifer/article/details/7721834
-
-初识压缩感知Compressive Sensing
-
-http://blog.csdn.net/abcjennifer/article/details/7724360
-
-中国压缩传感资源（China Compressive Sensing Resources）
-
-http://blog.csdn.net/xiahouzuoxin/article/details/38820925
-
-白话压缩感知（含Matlab代码）
-
-http://blog.csdn.net/abcjennifer/article/details/7748833
-
-压缩感知进阶——有关稀疏矩阵
-
-https://zhuanlan.zhihu.com/p/85558304
-
-深度学习压缩感知（DCS）历史最全资源汇总分享
-
-## Robust PCA
-
-http://www.cnblogs.com/quarryman/p/robust_pca.html
-
-最优化之Robust PCA
-
-http://www.aiuxian.com/article/p-2634727.html
-
-Robust PCA
-
-http://blog.csdn.net/abcjennifer/article/details/8572994
-
-Robust PCA学习笔记
-
-http://patternrecognition.cn/~jin/gs/seminar/20140515_jinzhong.ppt
-
-Robust PCA-模式识别
 
 # t-SNE
 

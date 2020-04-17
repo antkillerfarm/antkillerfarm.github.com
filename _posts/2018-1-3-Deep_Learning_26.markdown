@@ -373,3 +373,7 @@ https://mp.weixin.qq.com/s/_GU5y7v8HNDOjEGvWh8Fkw
 https://mp.weixin.qq.com/s/bmJCLUlOA364AvK90sXE3Q
 
 用于算术习题自动批改的结构文本精确识别方法
+
+https://zhuanlan.zhihu.com/p/130855699
+
+怎样构建一个端到端的文字识别系统（CTC Loss）

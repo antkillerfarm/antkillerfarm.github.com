@@ -92,12 +92,6 @@ $$DM:P(Y,R\mid O)\to P(Y\mid O)$$
 
 **有向无环图(Directed Acyclic Graph, DAG)**：这个术语的字面意思很清楚，不解释。
 
-**马尔可夫毯(Markov Blanket, MB)**：有向图——结点A的父结点+A的子结点+A的子结点的其他父结点。如下图所示：
-
-![](/images/article/Markov_blanket.png)
-
-无向图——结点A的邻近结点。
-
 下图是图模型的部分变种之间的关系图。
 
 ![](/images/article/Generative_Models.png)

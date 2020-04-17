@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（十八）——独立成分分析
+title:  机器学习（十八）——独立成分分析, 度量学习, 压缩感知
 category: ML 
 ---
 
@@ -171,6 +171,74 @@ $$\nabla_W\ell(W)=\begin{bmatrix}
 最后，用通常的随机梯度上升算法，求得$$\ell(W)$$的最大值即可。
 
 >注意：我们计算最大似然估计时,假设了$$x^{(i)}$$和$$x^{(j)}$$之间是独立的，然而对于语音信号或者其他具有时间连续依赖特性(比如温度)上，这个假设不能成立。但是在数据足够多时，假设独立对效果影响不大。
+
+# 度量学习
+
+度量学习（Metric Learning）是机器学习里面的一个研究方向，主要是用来度量数据间距离。
+
+一般来说，对于可度量的数据，我们可以直接通过欧式距离，cosine等方法来做。但对于更广泛的数据我们就很难这样操作，如测量一个视频和一首音乐的距离。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/80656461
+
+Metric Learning科普文
+
+https://mp.weixin.qq.com/s/mvbyddpgxBFQSxC1zZZmFw
+
+如何通过距离度量学习解决Street-to-Shop问题
+
+https://mp.weixin.qq.com/s/iuOmxW0OAhSA7xSoIIn1dw
+
+鲁继文：面向视觉内容理解的深度度量学习
+
+https://zhuanlan.zhihu.com/p/100553403
+
+Deep Metric Learning及其形式
+
+# 压缩感知
+
+https://blog.csdn.net/jbb0523
+
+一个压缩感知+贝叶斯网络方面的blog
+
+http://blog.csdn.net/abcjennifer/article/details/7721834
+
+初识压缩感知Compressive Sensing
+
+http://blog.csdn.net/abcjennifer/article/details/7724360
+
+中国压缩传感资源（China Compressive Sensing Resources）
+
+http://blog.csdn.net/xiahouzuoxin/article/details/38820925
+
+白话压缩感知（含Matlab代码）
+
+http://blog.csdn.net/abcjennifer/article/details/7748833
+
+压缩感知进阶——有关稀疏矩阵
+
+https://zhuanlan.zhihu.com/p/85558304
+
+深度学习压缩感知（DCS）历史最全资源汇总分享
+
+## Robust PCA
+
+http://www.cnblogs.com/quarryman/p/robust_pca.html
+
+最优化之Robust PCA
+
+http://www.aiuxian.com/article/p-2634727.html
+
+Robust PCA
+
+http://blog.csdn.net/abcjennifer/article/details/8572994
+
+Robust PCA学习笔记
+
+http://patternrecognition.cn/~jin/gs/seminar/20140515_jinzhong.ppt
+
+Robust PCA-模式识别
 
 # 决策树
 

@@ -6,6 +6,22 @@ category: AI
 
 # Machine Learning之Python篇
 
+## PyFlux
+
+PyFlux是Python中为处理时间序列问题而创建的开源库。该库有一系列极好的时间序列模型，包括但不限于ARIMA、GARCH和VAR模型。
+
+官网：
+
+https://pyflux.readthedocs.io/en/latest/index.html
+
+## ImagePy
+
+ImagePy是国人写的一个图像处理工具。
+
+官网：
+
+https://github.com/Image-Py/imagepy
+
 ## imgaug
 
 imgaug是一个图像数据增强方面的库，可用于扩充机器学习训练时所用的图片数据集。
@@ -411,23 +427,3 @@ https://mp.weixin.qq.com/s/goxciguoxcamTo2WyUd1Lg
 https://mp.weixin.qq.com/s/dQ75O2h1orGzKcaCSDWshQ
 
 自然语言处理是如何工作的？一步步教你构建NLP流水线
-
-https://mp.weixin.qq.com/s/dwxTla5iiYKvELrpbWf1yQ
-
-8个Python高效数据分析的技巧
-
-https://mp.weixin.qq.com/s/TYiqZvY25qxHcmEXRpqO5Q
-
-如何用Python做自动化特征工程
-
-https://mp.weixin.qq.com/s/lfkTryraR22INdPzR0sidg
-
-基于协同过滤的推荐系统实战
-
-https://mp.weixin.qq.com/s/n3gaWuJCt945ycmliJatpA
-
-python语音识别指南终极版
-
-https://mp.weixin.qq.com/s/pDTbiS8xFH0llUBaN1Mb_Q
-
-如何用Python写一个贪吃蛇AI

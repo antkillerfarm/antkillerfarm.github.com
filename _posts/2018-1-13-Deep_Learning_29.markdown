@@ -394,6 +394,10 @@ https://mp.weixin.qq.com/s/2SaBiMJzhSRw1G0giL9TAw
 
 深入理解图注意力机制
 
+https://zhuanlan.zhihu.com/p/132497231
+
+深入理解图注意力机制
+
 https://mp.weixin.qq.com/s/sg9O761F0KHAmCPOfMW_kQ
 
 图卷积网络到底怎么做，这是一份极简的Numpy实现

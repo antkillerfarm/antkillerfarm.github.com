@@ -125,6 +125,10 @@ https://zhuanlan.zhihu.com/p/130314852
 
 一文读懂协同推荐算法原理（上）
 
+https://zhuanlan.zhihu.com/p/132396111
+
+一文读懂协同推荐算法原理（下）
+
 <a name="PCA"/>
 
 # 主成分分析

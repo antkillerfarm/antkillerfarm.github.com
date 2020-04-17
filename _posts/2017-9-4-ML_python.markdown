@@ -443,11 +443,3 @@ https://mp.weixin.qq.com/s/smXMxhHrkZpZSNvUM1DeCg
 https://mp.weixin.qq.com/s/SJRVgBy94E3UWeVAf3TliA
 
 ​16个matplotlib绘图实用小技巧
-
-https://mp.weixin.qq.com/s/fSt27Vk29LoSDPv8KfPHjQ
-
-什么是折线图？怎样用Python绘制？
-
-https://mp.weixin.qq.com/s/E7pk7CNQmF_6Qsjj1_2nRw
-
-Matplotlib绘制漫威英雄战力图，带你飞起来！

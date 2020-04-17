@@ -6,6 +6,20 @@ category: AI
 
 # Machine Learning之Python篇
 
+## Matplotlib（续）
+
+https://mp.weixin.qq.com/s/fSt27Vk29LoSDPv8KfPHjQ
+
+什么是折线图？怎样用Python绘制？
+
+https://mp.weixin.qq.com/s/E7pk7CNQmF_6Qsjj1_2nRw
+
+Matplotlib绘制漫威英雄战力图，带你飞起来！
+
+https://mp.weixin.qq.com/s/2byfIo7Q8f9MShDZUMBiYA
+
+Matplotlib Animation
+
 ## Pandas
 
 Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。
@@ -473,19 +487,3 @@ https://mp.weixin.qq.com/s/tZ3yWQ9--l9e81UqoUoWIQ
 https://mp.weixin.qq.com/s/eaYwiV2LZNRwzPEeOA1XFg
 
 新星JAX ：双挑TensorFlow和PyTorch！有望担纲Google主要科学计算库和神经网络库
-
-## PyFlux
-
-PyFlux是Python中为处理时间序列问题而创建的开源库。该库有一系列极好的时间序列模型，包括但不限于ARIMA、GARCH和VAR模型。
-
-官网：
-
-https://pyflux.readthedocs.io/en/latest/index.html
-
-## ImagePy
-
-ImagePy是国人写的一个图像处理工具。
-
-官网：
-
-https://github.com/Image-Py/imagepy

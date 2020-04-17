@@ -336,6 +336,26 @@ Pytorch中的Distributed Data Parallel与混合精度训练（Apex）
 
 # Machine Learning之Python篇+
 
+https://mp.weixin.qq.com/s/dwxTla5iiYKvELrpbWf1yQ
+
+8个Python高效数据分析的技巧
+
+https://mp.weixin.qq.com/s/TYiqZvY25qxHcmEXRpqO5Q
+
+如何用Python做自动化特征工程
+
+https://mp.weixin.qq.com/s/lfkTryraR22INdPzR0sidg
+
+基于协同过滤的推荐系统实战
+
+https://mp.weixin.qq.com/s/n3gaWuJCt945ycmliJatpA
+
+python语音识别指南终极版
+
+https://mp.weixin.qq.com/s/pDTbiS8xFH0llUBaN1Mb_Q
+
+如何用Python写一个贪吃蛇AI
+
 https://mp.weixin.qq.com/s/WdYa7Q-yA-s_EO59YkYbqw
 
 7个基本机器学习算法Python实现
