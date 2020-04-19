@@ -427,6 +427,10 @@ https://mp.weixin.qq.com/s/O4RavwRUPbwXq8mDZTaA6w
 
 全球疯抢的呼吸机，其产业链啥样？
 
+https://wxn.qq.com/cmsid/TEC2020041800124100
+
+供应断链卡脖呼吸机：核心零部件靠进口订单排到8月
+
 ----
 
 KN95是中国标准，主要用于工业场景，且不要求油性防护，因此只是用氯化钠颗粒物检测，要求规过滤效果大于95%。此外中国还有KP95标准，支持油性防护。其中，“N”表示不耐油（not resistant to oil），“P”表示防油（oil proof）。

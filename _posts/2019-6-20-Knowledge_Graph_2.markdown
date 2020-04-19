@@ -6,6 +6,38 @@ category: resource
 
 # 知识图谱参考资源
 
+https://mp.weixin.qq.com/s/8REGSXSpXXvz0YIMspZm4g
+
+最佳论文：南京大学提出DSKG，将多层RNN用于知识图谱补全
+
+https://mp.weixin.qq.com/s/zusfpa3c2T8mSyRSaXhVLg
+
+健康知识图谱，阿里工程师如何实现？
+
+https://mp.weixin.qq.com/s/8M4MyZ-EUKfGkuqzkuvYgw
+
+金融知识图谱搭建全攻略
+
+https://mp.weixin.qq.com/s/RoiIHPCV3vXAH_sUHhTOYw
+
+为电商而生的知识图谱，如何感应用户需求？
+
+https://mp.weixin.qq.com/s/-D5heoQLfOnp-AcWsJOi7A
+
+哈工大SCIR正式对外发布金融事理图谱Demo V1.0
+
+https://mp.weixin.qq.com/s/HNeInMIpho5pTDoK6dZ-ng
+
+一文详解达观数据知识图谱技术与应用——技术直播回顾
+
+https://mp.weixin.qq.com/s?__biz=MjM5MDI3MjA5MQ==&mid=2697267537&idx=1&sn=3011302613b90749d7ffe0cc3a805d1f
+
+知识图谱在旅游领域有哪些应用？携程度假团队这样回答
+
+https://mp.weixin.qq.com/s/Og5pgNaGIz5gTL_58DvTDw
+
+抛开炒作看知识图谱，为什么现在才爆发？
+
 https://zhuanlan.zhihu.com/p/46235742
 
 基于强化学习的知识图谱问答
@@ -134,22 +166,6 @@ https://mp.weixin.qq.com/s/R-mY_23bqol1VfA1125xiw
 
 67亿美金搞个图，创建知识图谱的成本有多高你知道吗？
 
-https://mp.weixin.qq.com/s/Emlzfgoo99T9xAsTKJRQXg
-
-一文看懂虚假新闻检测
-
-https://mp.weixin.qq.com/s/8qFGiMjIHXSwozDmTe7XbA
-
-《打击假新闻: 识别和缓解技术调查》
-
-https://mp.weixin.qq.com/s/5D5cfLC6flnn9fCYlMplMQ
-
-虚假新闻（Fake News）检测全面综述教程，156页PPT带你进入这一领域
-
-https://mp.weixin.qq.com/s/tBuUozLFagqZYmr5e3AnMQ
-
-如何用AI技术治理假新闻泛滥？看ASU大学舒凯等学者这篇《挖掘虚假信息和假新闻:概念、方法和最新进展》研究综述 
-
 https://mp.weixin.qq.com/s/aEhLCkEnImubZlwEP2ZHBQ
 
 从本体论开始说起，运营商关系图谱的构建及应用
@@ -234,25 +250,9 @@ https://mp.weixin.qq.com/s/0DGyw_PzZp3l3NPhtFbmLw
 
 目标检测新技能！引入知识图谱:Reasoning-RCNN
 
-https://mp.weixin.qq.com/s/vtj1HgDC2slsOw9DGoURCA
-
-知识图谱实体链接：一份“由浅入深”的综述
-
-https://mp.weixin.qq.com/s/0f5E82utl-faCpmvrDoPEg
-
-知识图谱研究综述论文: 表示学习、知识获取与应用，25页pdf详述Knowledge Graphs技术趋势
-
 https://mp.weixin.qq.com/s/g2IA7S4STN61orwAANtBdg
 
 关系图谱在贝壳的构建和应用
-
-https://mp.weixin.qq.com/s/L6fMcRa1_me2DKr2KADAjA
-
-知识图谱前沿跟进: Philip S. Yu团队发布权威综述
-
-https://mp.weixin.qq.com/s/qOt0V1XsQvwpKhNiaAfVjA
-
-胡伟-知识图谱融合方法概述分享
 
 https://mp.weixin.qq.com/s/5G-xon0i5Aq-M4i0rHJPBg
 

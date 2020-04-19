@@ -371,3 +371,7 @@ https://mp.weixin.qq.com/s/mCUdK4i6XGEyaWNCIWA-wQ
 https://mp.weixin.qq.com/s/6x5Wmpy4Im0x3Ddua9rvFw
 
 用python怎样识别验证码？传统方法，非DL
+
+https://mp.weixin.qq.com/s/Xksp457JBr2ySrtqgXYMFw
+
+一文学会入门推荐算法库surprise

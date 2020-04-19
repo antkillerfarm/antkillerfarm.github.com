@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十七）——三维处理
+title:  深度学习（四十七）——三维处理, NetVLAD
 category: DL 
 ---
 
@@ -306,7 +306,71 @@ https://mp.weixin.qq.com/s/SMDzPAJCpgjELsKHeQvW-A
 
 序列化的三维形状生成网络PQ-NET
 
-# AutoDL+
+# NetVLAD
+
+NetVLAD算的上是CNN+传统算子的一个范例。
+
+论文：
+
+《NetVLAD: CNN architecture for weakly supervised place recognition》
+
+《GhostVLAD for set-based face recognition》
+
+数据集：
+
+http://places.csail.mit.edu/
+
+## VLAD
+
+Vector of Locally Aggregated Descriptors
+
+https://www.cnblogs.com/minemine/p/7364950.html
+
+场景分类(scene classification)摘录
+
+http://www.cnblogs.com/mafuqiang/p/6909556.html
+
+图像检索——VLAD
+
+## 参考
+
+https://www.oukohou.wang/2018/11/27/NetVLAD/
+
+论文阅读-NetVLAD
+
+https://www.oukohou.wang/2018/12/26/GhostVLAD/
+
+论文阅读-GhostVLAD
+
+https://mp.weixin.qq.com/s/cfUl0Eym0mu7rSJJL7Zt1A
+
+基于深度学习的视觉实例搜索研究进展
+
+https://zhuanlan.zhihu.com/p/25013378
+
+深度纹理编码网络 (Deep TEN: Texture Encoding Network)
+
+https://blog.csdn.net/LiGuang923/article/details/85416407
+
+图像检索与降维（一）：VLAD
+
+https://blog.csdn.net/LiGuang923/article/details/85470289
+
+图像检索与降维（二）：NetVLAD
+
+https://zhuanlan.zhihu.com/p/96718053
+
+从VLAD到NetVLAD，再到NeXtVlad
+
+https://mp.weixin.qq.com/s/HkaG9KeJ5w6FqZmo15n9JA
+
+短视频潜力预测及其在微视推荐冷启动中的应用
+
+https://mp.weixin.qq.com/s/WUP4C4XBHfVKI_xgHXUXiA
+
+动作识别时序汇合（Temporal Pooling）方法介绍
+
+# AutoDL
 
 https://mp.weixin.qq.com/s/Nmkcy2nBczUccwIdMJiH_A
 
@@ -343,27 +407,3 @@ NAS evaluation is frustratingly hard
 https://mp.weixin.qq.com/s/QEkOQG2dQrPG-aa8OsVSOg
 
 NASNet: Google Brain经典作，改造搜索空间，性能全面超越人工网络，继续领跑NAS领域
-
-https://mp.weixin.qq.com/s/Ho6XDRYmOBs9TqLMq7aPAg
-
-MetaQNN: 与Google同场竞技，MIT经典作，基于Q-Learning的神经网络搜索
-
-https://mp.weixin.qq.com/s/5NGCr6oMW2p5u4kF7YMCPw
-
-NAS太难了，搜索结果堪比随机采样！华为ICLR 2020论文给出6条建议
-
-https://zhuanlan.zhihu.com/p/110527110
-
-Neural Architecture Search
-
-https://zhuanlan.zhihu.com/p/111213620
-
-AutoML在计算机视觉领域的能与不能
-
-https://mp.weixin.qq.com/s/MIJHiYk-CjYtmW_9zW4hjA
-
-Hyper-Parameter Optimization，56页pdf
-
-https://mp.weixin.qq.com/s/y-5Gh0Jy3Fpz8xvw_tOICg
-
-MixPath：基于权重共享的神经网络搜索统一方法

@@ -4,13 +4,13 @@ title:  DLNA, PulseAudio
 category: technology 
 ---
 
-# 参考资料
-
-http://www.miui.com/thread-647727-1-1.html
+# DLNA参考资料
 
 http://pie.pconline.com.cn/443/4434846.html
 
-这两篇文章从用户的角度分析DLNA设备的使用方法。
+So easy!电脑手机玩转DLNA Wifi音箱播放
+
+这篇文章从用户的角度分析DLNA设备的使用方法。
 
 http://en.wikipedia.org/wiki/List_of_UPnP_AV_media_servers_and_clients
 
@@ -22,13 +22,13 @@ http://jorgenmodin.net/index_html/archive/2009/12/26/list-of-open-source-dlnaupn
 
 http://www.right.com.cn/forum/thread-115634-1-1.html
 
+把TL-WR703N打造成真正的AirPlay播放器
+
 http://www.right.com.cn/forum/forum.php?mod=viewthread&action=printable&tid=135975
 
+在OpenWrt上折腾DLNA音频推送(Gmediarender)的总结
+
 这两篇是如何向OpenWRT中添加DLNA、AirPlay功能的帖子。
-
-http://mayecn.com/blog/2013/04/23/dlna/
-
-这也是一篇AirPlay的帖子。
 
 # DLNA各种设备角色的分析
 

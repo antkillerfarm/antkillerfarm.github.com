@@ -100,6 +100,10 @@ https://mp.weixin.qq.com/s/9dXqXmRkINjwJYB4csjU5A
 
 强化学习初探-从多臂老虎机问题说起
 
+https://mp.weixin.qq.com/s/lN-2ORkfx5C3TiX_VMdaDA
+
+Bandit算法在携程推荐系统中的应用与实践
+
 # Q-learning
 
 Q-learning是强化学习中很重要的算法，也是最早被引入DL领域的强化学习算法，对它的研究催生了Deep Q-learning Networks。
@@ -226,23 +230,3 @@ $$v = (I-\gamma \mathcal{P})^{-1}\mathcal{R}$$
 然而这个方法的复杂度是$$O(n^3)$$（n是状态的个数），这对于大的MDP来说，并不好用。这种情况下，常用的解法有：Dynamic programming（动态规划）、Monte-Carlo evaluation和Temporal-Difference learning。
 
 由于MDP对于RL任务进行了Markov假设，这属于一种建模行为，因此它也被归为一种model-based learning的算法。
-
-MDP的扩展主要包括：
-
-a) Observation部分可见的情况下，agent state $$\neq$$ environment state，这时一般叫做partially observable Markov decision process(POMDP)。
-
-b) Infinite and continuous MDP
-
-c) Undiscounted, average reward MDP
-
-扩展MDP的Bellman equation都不是线性方程，没有解析解，只有迭代解。相关解法主要使用了概念图模型，这里不再详述。
-
-参考：
-
-https://mp.weixin.qq.com/s/G8zmooqhSKqcLv1u7uM0bw
-
-AlphaGo等智能体是如何炼成的？你需要懂得马尔科夫链
-
-https://mp.weixin.qq.com/s/KQmKb5NrjgxooCnbZaiTzw
-
-强化学习中无处不在的贝尔曼最优性方程，背后的数学原理为何？

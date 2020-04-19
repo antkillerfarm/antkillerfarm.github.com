@@ -250,6 +250,10 @@ https://mp.weixin.qq.com/s/oytk2jEljYn8nL8a4wycLg
 
 这几年人脸都有哪些有意思的数据集？
 
+https://zhuanlan.zhihu.com/p/130720627
+
+FineGym：面向细粒度动作分析的层级化高质量数据集
+
 ## 推荐系统
 
 http://www.zanmel.com/2015/12/14/10-great-datasets-on-movies/

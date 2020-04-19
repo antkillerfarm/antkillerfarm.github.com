@@ -4,6 +4,28 @@ title:  强化学习（三）——动态规划, Monte-Carlo
 category: RL 
 ---
 
+# Markov Decision Process（续）
+
+MDP的扩展主要包括：
+
+a) Observation部分可见的情况下，agent state $$\neq$$ environment state，这时一般叫做partially observable Markov decision process(POMDP)。
+
+b) Infinite and continuous MDP
+
+c) Undiscounted, average reward MDP
+
+扩展MDP的Bellman equation都不是线性方程，没有解析解，只有迭代解。相关解法主要使用了概念图模型，这里不再详述。
+
+参考：
+
+https://mp.weixin.qq.com/s/G8zmooqhSKqcLv1u7uM0bw
+
+AlphaGo等智能体是如何炼成的？你需要懂得马尔科夫链
+
+https://mp.weixin.qq.com/s/KQmKb5NrjgxooCnbZaiTzw
+
+强化学习中无处不在的贝尔曼最优性方程，背后的数学原理为何？
+
 # 动态规划
 
 Dynamic programming(DP)用于解决那些可分解为**重复子问题（overlapping subproblems）**并具有**最优子结构（optimal substructure）**的问题。这里的programming和编程并无任何关系。
@@ -232,7 +254,3 @@ $$\overline{f(x)}=\sum_{x\in X_n}f(x)/n$$
 假如存在一个实例$$x_0$$使得$$f(x_0)\gg \overline{f(x)}$$，比如快速排序在最坏情况下的复杂度$$O(n)\gg O(n\log n)$$。这时使用sherwood对原始算法进行改进是有价值的。
 
 Sherwood算法通过增加一个较小的额外开销从而使得算法的复杂度与具体实例x无关。例如，在快速排序中，我们是以第一个元素为基准开始排序时，为了避免这样的情况，可以用舍伍德算法解决，也就是使第一个基准元素是随机的。
-
-## 蒙特卡罗（Monte Carlo）算法
-
-举个例子，假如筐里有100个苹果，让我每次闭眼拿1个，挑出最大的。于是我随机拿1个，再随机拿1个跟它比，留下大的，再随机拿1个……我每拿一次，留下的苹果都至少不比上次的小。拿的次数越多，挑出的苹果就越大，但我除非拿100次，否则无法肯定挑出了最大的。这个挑苹果的算法，就属于蒙特卡罗算法——**尽量找好的，但不保证是最好的**。

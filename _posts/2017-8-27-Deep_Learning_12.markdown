@@ -299,3 +299,7 @@ https://zhuanlan.zhihu.com/c_151876233
 https://mp.weixin.qq.com/s/kU0_BuQW8VQihUwBuZ90cA
 
 发布可伸缩超网SCARLET，小米AutoML团队NAS三部曲杀青
+
+https://mp.weixin.qq.com/s/ZfW-jDSo6uaaqdmJtBizOA
+
+从模型精简，硬件实现，到模型剪枝

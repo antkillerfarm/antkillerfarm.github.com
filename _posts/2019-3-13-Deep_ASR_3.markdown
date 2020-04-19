@@ -218,10 +218,6 @@ https://mp.weixin.qq.com/s/UmVFCnwKqSQoowfQdefDdA
 
 昆山杜克大学李明博士：基于端到端深度神经网络的说话人与语言识别综述
 
-https://mp.weixin.qq.com/s/Xc-OmRpDPgw2qIgswsCeSA
-
-从嘈杂视频中提取超清人声，语音增强模型PHASEN已加入微软视频服务
-
 https://mp.weixin.qq.com/s/fc58gK4BVN-NeGdyVxjuPg
 
 沟壑易填：端到端语音翻译中预训练和微调的衔接方法
@@ -383,3 +379,7 @@ https://zhuanlan.zhihu.com/p/91024324
 https://mp.weixin.qq.com/s/oaI_X2SYeKVn7oXWGtFQag
 
 爱奇艺语音转换技术的探索与实践
+
+https://mp.weixin.qq.com/s/qPx1W_OebGgvb4g9Sb944A
+
+使用GAN进行高保真语音合成

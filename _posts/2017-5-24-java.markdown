@@ -276,6 +276,10 @@ https://mp.weixin.qq.com/s/23-S5tXTqi2LSe84OoQvvA
 
 跑得好好的Java进程，怎么突然就瘫痪了？
 
+https://mp.weixin.qq.com/s/GaK4iyTNvDsO9nMCXxrWkQ
+
+看完这篇Exception和Error，和面试官扯皮就没问题了
+
 # Javascript
 
 ### Step2：回调函数嵌套问题（续）

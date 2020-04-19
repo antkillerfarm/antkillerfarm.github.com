@@ -314,6 +314,10 @@ https://mp.weixin.qq.com/s/iB-gaxIygWLjS1mKwKUGog
 
 浅谈嵌套命名实体识别（Nested NER）
 
+https://mp.weixin.qq.com/s/Yr8CrCtJquKQ38tt2T0VCQ
+
+采用BERT的无监督NER
+
 ## 文本摘要
 
 https://mp.weixin.qq.com/s/jk1XgnuydrsTg3HvV0CVvw
@@ -367,6 +371,10 @@ https://mp.weixin.qq.com/s/Bmou2Fx8a0-60Aqycrg4ug
 https://mp.weixin.qq.com/s/trDAoPgcsHr0Tz0AT5N3HQ
 
 京东电商场景下的AI实践-基于关键词自动生成摘要
+
+https://mp.weixin.qq.com/s/Aye9FBwG-v2JO2MLoEjo0g
+
+事实感知的生成式文本摘要
 
 ## 句法分析
 

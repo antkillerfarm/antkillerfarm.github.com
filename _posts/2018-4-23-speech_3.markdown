@@ -156,6 +156,14 @@ https://zhuanlan.zhihu.com/p/43279047
 
 远场语音识别面临的瓶颈与挑战
 
+https://mp.weixin.qq.com/s/Xc-OmRpDPgw2qIgswsCeSA
+
+从嘈杂视频中提取超清人声，语音增强模型PHASEN已加入微软视频服务
+
+https://mp.weixin.qq.com/s/NK5HWZT-I5-opGo_DQ7kCQ
+
+华为提出新的在线视觉语音增强构架OVAnet，可通过视觉模态增强声学模型性能
+
 # 语言模型
 
 语言模型是针对某种语言建立的概率模型，目的是建立一个能够描述给定词序列在语言中的出现的概率的分布。

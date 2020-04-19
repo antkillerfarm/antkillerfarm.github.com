@@ -30,17 +30,21 @@ https://mp.weixin.qq.com/s/aSHhpMtgzV4_6NTElTvPIA
 
 语义分割－多层特征融合
 
+https://mp.weixin.qq.com/s/6EOkYdiVm0Lvkc24WiRbFg
+
+基于自适应显着性的图像分割
+
 # Fast Image Processing
+
+论文：
+
+《Fast Image Processing with Fully-Convolutional Networks》
 
 ![](/images/article/FIP.png)
 
 上图是照片界常用的几种修图方式之一。一般将这些图片风格转换的算法，称为图像处理算子（image processing operators）。如何加速image processing operators的计算，就成为了学界研究的课题之一。
 
 本文提出的模型就是用来加速image processing operators计算的。它是Intel Lab的Qifeng Chen和Jia Xu于2017年提出的。
-
-论文：
-
-《Fast Image Processing with Fully-Convolutional Networks》
 
 代码：
 
@@ -167,6 +171,10 @@ https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ
 https://mp.weixin.qq.com/s/jlD5p5GXFmrWlxg9xvehxg
 
 元学习—Meta Learning的兴起
+
+https://zhuanlan.zhihu.com/p/133159617
+
+Meta-Learning in Neural Networks: A survey
 
 https://mp.weixin.qq.com/s/qoKQwEvOnP384i5Z-_jO1A
 

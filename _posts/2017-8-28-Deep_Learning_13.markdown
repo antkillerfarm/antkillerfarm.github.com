@@ -335,3 +335,7 @@ https://zhuanlan.zhihu.com/p/118183738
 https://mp.weixin.qq.com/s/FSpVcTM9BcyraQwuaJ833Q
 
 服装局部抄袭怎么解决？ 阿里推出区域检索算法
+
+https://mp.weixin.qq.com/s/SMAHf7od8ygNIP6Zh9za3w
+
+KDD Cup 2020 多模态检索赛道：数据分析

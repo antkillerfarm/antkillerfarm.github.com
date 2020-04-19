@@ -316,10 +316,6 @@ https://mp.weixin.qq.com/s/LwYzxFO6Fj9Biiww3Y22qw
 
 斯坦福CS230第一名：图像超级补全，效果惊艳
 
-https://mp.weixin.qq.com/s/MFKhmHcaQvufdRawFqisjA
-
-Distill详述“可微图像参数化“：神经网络可视化和风格迁移利器！
-
 https://mp.weixin.qq.com/s/Mk_EkwTYK2141cU9zC1hvQ
 
 合成逼真图像，试试港中大&英特尔的半参数方法

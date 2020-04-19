@@ -370,32 +370,28 @@ https://mp.weixin.qq.com/s/QklCVuukfElVDBFNxLXNKQ
 
 哈希革新Transformer：这篇ICLR高分论文让一块GPU处理64K长度序列
 
-# Python+
+# AutoDL+
 
-https://mp.weixin.qq.com/s/Hv0rPD29PPd3Rn6lW6w5dg
+https://mp.weixin.qq.com/s/Ho6XDRYmOBs9TqLMq7aPAg
 
-教你使用Python制作酷炫二维码
+MetaQNN: 与Google同场竞技，MIT经典作，基于Q-Learning的神经网络搜索
 
-https://mp.weixin.qq.com/s/8Fgzb8JiAoNSJqUanSi85Q
+https://mp.weixin.qq.com/s/5NGCr6oMW2p5u4kF7YMCPw
 
-鼠年做只奔跑的猫呗，卖萌式监控系统资源~（QSystemTrayIcon）
+NAS太难了，搜索结果堪比随机采样！华为ICLR 2020论文给出6条建议
 
-https://mp.weixin.qq.com/s/2RRJDStTL7l2Ra3SnNEEYg
+https://zhuanlan.zhihu.com/p/110527110
 
-发布自己的python库到pypi
+Neural Architecture Search
 
-https://mp.weixin.qq.com/s/PBaDdLcYxDso2V4aZcFXpA
+https://zhuanlan.zhihu.com/p/111213620
 
-盘一盘Python错误类型
+AutoML在计算机视觉领域的能与不能
 
-https://mp.weixin.qq.com/s/8uxc2t53N_j_mRPYbiG0sA
+https://mp.weixin.qq.com/s/MIJHiYk-CjYtmW_9zW4hjA
 
-5个案例让Python输出漂亮的命令行表格！
+Hyper-Parameter Optimization，56页pdf
 
-https://mp.weixin.qq.com/s/3pGw9QdAZVE3OKZ-zGyb4g
+https://mp.weixin.qq.com/s/y-5Gh0Jy3Fpz8xvw_tOICg
 
-使用Python远程登陆服务器的最佳实践
-
-https://mp.weixin.qq.com/s/Bllw4rSkxd378LLUCh6oJA
-
-Python炫技操作：合并字典的七种方法
+MixPath：基于权重共享的神经网络搜索统一方法

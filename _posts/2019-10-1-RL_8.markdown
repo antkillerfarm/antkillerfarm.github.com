@@ -190,6 +190,10 @@ https://blog.csdn.net/sobermineded/article/details/79601986
 
 >Steven Tadelis，经济学家。Harvard博士（1997），UCB教授。
 
+https://mp.weixin.qq.com/s/U_vDI_PJm-buubTwJgV9pw
+
+数学博弈论与应用，431页pdf，Mathematical Game Theory and Applications
+
 ## 概述
 
 要理解博弈论，可以通过博弈论和决策论的区别开始。

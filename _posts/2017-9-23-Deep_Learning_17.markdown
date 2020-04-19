@@ -274,6 +274,10 @@ https://mp.weixin.qq.com/s/df51T24mBVycBeI_M7QqOQ
 
 无标记数据学习, 83ppt
 
+https://mp.weixin.qq.com/s/2FxD6ga6b_WOdAni16wd2Q
+
+自监督学习在计算机视觉应用最新概述，108页ppt Self-supervised learning
+
 # 语义分割
 
 Semantic segmentation是图像理解的基石性技术，在自动驾驶系统（具体为街景识别与理解）、无人机应用（着陆点判断）以及穿戴式设备应用中举足轻重。

@@ -323,3 +323,7 @@ https://mp.weixin.qq.com/s/fQAkNdNhwkFichSZCwnNqA
 https://mp.weixin.qq.com/s/fA5NWLvLQN6kbB563pJnKg
 
 从16.6%到74.2%，谷歌新模型刷新ImageNet纪录（Noisy Student）
+
+https://mp.weixin.qq.com/s/UPm02RtTwhQhP_YhtmheBg
+
+面向视觉智能的知识蒸馏和Student-Teacher方法，附37页pdf下载

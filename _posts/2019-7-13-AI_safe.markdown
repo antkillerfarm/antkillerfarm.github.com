@@ -210,6 +210,14 @@ https://mp.weixin.qq.com/s/aqoFRrAEtkCkLbKxAVOfCg
 
 中山大学发布最新《图对抗机器学习》2020综述论文，带你全面了解40+种攻防对抗学习方法
 
+https://mp.weixin.qq.com/s/WZGS9NR4jDko0cHqeiuJfA
+
+视觉对抗样本生成技术概述
+
+https://mp.weixin.qq.com/s/MQITI9QVhgnDKj--94B3fg
+
+视听觉深度伪造检测技术研究综述
+
 # 数据结构 & 普通CS算法
 
 ## TopK

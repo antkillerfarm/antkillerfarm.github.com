@@ -251,3 +251,53 @@ https://mp.weixin.qq.com/s/VdvvQetxAvkiNF04hV9PeA
 https://mp.weixin.qq.com/s/dTI3BdgixVTAFsnxtKjq0A
 
 常见图算法介绍
+
+# 新冠肺炎
+
+## 历史
+
+https://mp.weixin.qq.com/s/TkTU7dw_GRBL7M4D1LBRDw
+
+帝国对抗瘟疫的最后一战（伍连德、肺鼠疫）
+
+https://zhuanlan.zhihu.com/p/104182101
+
+百年来最凶猛传染病，如何从天灾变成人祸？（西班牙流感、H1N1）
+
+https://zhuanlan.zhihu.com/p/104267977
+
+一场瘟疫如何重创一座国际化都市？（伦敦鼠疫）
+
+https://zhuanlan.zhihu.com/p/105581224
+
+数十万人因瘟疫逃向全国，印度为何无可奈何？
+
+https://mp.weixin.qq.com/s/UoKrSYw6109QR57af2odew
+
+疫情面前的众生-聊聊美国电影《传染病》
+
+https://mp.weixin.qq.com/s/ShSjz0ZEBneT6KqGYGjtcg
+
+历年世界各地的“瘟疫”，人们都是怎么战胜的？
+
+# 世说新语+
+
+## 2020.4（续）
+
+1926年，《米其林指南》首次出现了用星级评价餐厅的做法，根据食材、厨师技艺水平与食材的融合、厨师的创新水平、是否物有所值与烹饪水准五条准则进行评级，将餐厅划分为一星、二星及三星。这就是“米其林星级餐厅”的由来。
+
+除了星级餐厅，米其林还推出了另外两个平行的评级标准——“米其林餐盘”（Michelin the Plate）与“必比登推介”（Bib Gourmand）。前者是极具摘星可能性的潜力餐厅，后者则是与时俱进推出的平民化餐厅或者小吃。
+
+“必比登”（Bibendum）先生，米其林的卡通标志——一层一层缠满轮胎的小可爱。
+
+https://mp.weixin.qq.com/s/2KQafW-nersf1rC58cbk5g
+
+为什么卖轮胎的米其林能成为顶级餐厅的评级标准？
+
+----
+
+尽管100多年前，在北京的街头和法国的租界中，就出现了俄国人开设的酸奶铺，但中国人真正开始现代化批量发酵和销售酸奶，始于20世纪80年代。现在被称为“老酸奶”的装在陶瓷瓶中的凝固型酸奶，是国人对于酸奶的最初记忆。
+
+https://mp.weixin.qq.com/s/lpbgzNlTw8xGqDmB9aweZw
+
+舌尖的甜蜜记忆：酸奶中的中国故事

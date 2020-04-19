@@ -114,6 +114,10 @@ https://mp.weixin.qq.com/s/QvD97vfnv1x8w-e33WymRA
 
 从贝叶斯理论到图像马尔科夫随机场
 
+https://mp.weixin.qq.com/s/fTyaRMXtw2Hz99WKJ7WWfQ
+
+因果图，Causal Graphs，52页ppt
+
 # HMM
 
 ![](/images/article/HMM.png)

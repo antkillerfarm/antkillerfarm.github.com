@@ -300,6 +300,10 @@ https://mp.weixin.qq.com/s/ViQDmUqNiXCQ1KzvlLI6Wg
 
 OpenCV活体检测
 
+https://mp.weixin.qq.com/s/2I8A_-utI4DqeDXJwwX4UQ
+
+人脸反欺诈活体检测综述
+
 ## DeepFace
 
 《DeepFace: Closing the Gap to Human-Level Performance in Face Verification》

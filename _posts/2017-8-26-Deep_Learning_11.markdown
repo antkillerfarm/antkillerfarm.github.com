@@ -156,6 +156,18 @@ https://mp.weixin.qq.com/s/VmcxU7ZgNJbNUy-Feiz3ig
 
 目标检测：Deformable ConvNets v2算法笔记
 
+https://mp.weixin.qq.com/s/sIeQ9VpQae-eWpkcx3S7Mw
+
+可变形卷积系列(一) 打破常规，MSRA提出DCNv1
+
+https://mp.weixin.qq.com/s/PGXyuKMj4FV3Kk53l7sfQw
+
+可变形卷积系列(二) MSRA提出升级版DCNv2，变形能力更强
+
+https://mp.weixin.qq.com/s/aezywo9xtqpiV7SEXBMdmA
+
+可变形卷积系列(三) 可变形卷积核，大开眼界
+
 ## 3D卷积
 
 3D卷积一般用于视频（2D图像+1D时序）和医学影像（3D立体图像）的分析处理中。

@@ -152,6 +152,18 @@ https://mp.weixin.qq.com/s/iIhiMKutVtYEUgAiErLkVQ
 
 Deep Dream
 
+https://mp.weixin.qq.com/s/z_n_9Z88aiFaQ35jjPMcqg
+
+OpenAI发布“显微镜”，可视化神经网络内部结构
+
+https://mp.weixin.qq.com/s/MFKhmHcaQvufdRawFqisjA
+
+Distill详述“可微图像参数化“：神经网络可视化和风格迁移利器！
+
+https://mp.weixin.qq.com/s/Tm6fTjXG_7BVc70GROPdag
+
+TensorSpace：超酷炫3D神经网络可视化框架
+
 ## DL方法
 
 受到上述事实的启发，2015年德国University of Tuebingen的Leon A. Gatys写了如下两篇论文：
@@ -223,13 +235,3 @@ $$J^{[l]}_{style}(S,G)=\frac{1}{(2n_H^{[l]}n_W^{[l]}n_C^{[l]})}\sum_{k=1}^{n_C^{
 为了提取的“风格”更多，也可以使用多层隐藏层，然后相加，表达式为：
 
 $$J_{style}(S,G)=\sum_l\lambda^{[l]}\cdot J^{[l]}_{style}(S,G)$$
-
-## 实现细节
-
-![](/images/img2/style_transfer.png)
-
-这是原始论文的插图，其符号表示和本文有所差异。其中的A、F、P各层的output，都是使用预训练好的Alex-Net生成的。
-
-可以看出A和P，在整个迭代过程中，只需要进行一次Alex-Net的前向计算，因此可以事先计算好。
-
-为了在迭代过程中，不修改Alex-Net的权重，而只修改F，我们可以使用`tf.constant`来创建Alex-Net的各个参数，进而建立Alex-Net。这样在backward的时候，梯度就只会修正到`tf.Variable`，也就是F上。

@@ -310,6 +310,10 @@ https://mp.weixin.qq.com/s/srkQ4in3bLP6exZIZawzuw
 
 英国全能数学家John Conway因新冠去世，他是数学疯子，也是游戏疯子：没有谁比我更爱玩游戏了！
 
+https://mp.weixin.qq.com/s/Ipky8I11O6AlaT2ACRqVaQ
+
+陶哲轩发文缅怀John Conway：他是所有数学家构成的凸包中的一个极值点
+
 ## Gilead Sciences
 
 Gilead Sciences，1987年6月22日注册成立，是一家以研究为基础，从事药品的开发和销售的生物制药公司。主要重点领域包括人类免疫缺陷病毒（HIV）/艾滋病，肝脏疾病，如乙型肝炎和丙型肝炎和心血管/代谢和呼吸条件。
@@ -363,3 +367,11 @@ https://mp.weixin.qq.com/s/MJamXXj44e-fxaP9WRyhgw
 http://www.sohu.com/a/370615513_105067
 
 网传饶毅致信舒红兵：您夫人不适合领导武汉病毒所
+
+## 科研（续）
+
+双黄连由金银花（双花）、黄芩和连翘三味中药配伍而成。它的历史并不算悠久，但在现有的网络信息中，也无法准确地指出究竟是何人、何时开发出这个如今家喻户晓的方子。有文献可考的历史表明，双黄连方剂产生于文革期间的东北地区——再准确一点，黑龙江哈尔滨，并且与现在的哈药集团有着千丝万缕的联系。
+
+https://mp.weixin.qq.com/s/7YscNLoSsuYhf3XQ5qz36w
+
+双黄连热销背后，那些你不知道的事

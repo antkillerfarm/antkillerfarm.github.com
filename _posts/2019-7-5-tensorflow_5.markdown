@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/Rb0Fh9TZJo-IdEoxlgD4gw
 
 如何让模型在生产环境上推理得更快
 
+https://mp.weixin.qq.com/s/asPSPeBaRF_4eXcRXU-Zfw
+
+TensorFlow模型优化工具包—训练时量化
+
 # C#
 
 ## XmlReader

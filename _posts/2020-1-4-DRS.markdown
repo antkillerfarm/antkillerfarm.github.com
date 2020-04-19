@@ -30,6 +30,10 @@ https://www.comp.nus.edu.sg/~xiangnan/icmr18-recsys.pdf
 
 中科大何向南的推荐系统教程
 
+https://mp.weixin.qq.com/s/tqf-X8qRpeIVxHf4noWFQA
+
+实战推荐系统，Practical Recommender Systems，432页pdf
+
 ## 算法
 
 深度推荐系统的算法包括：

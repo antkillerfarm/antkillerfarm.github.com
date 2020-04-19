@@ -102,6 +102,12 @@ mRNA示意图：
 
 ![](/images/img3/mRNA.png)
 
+----
+
+ADE效应（Antibody Dependent Enhancement，抗体依赖增强）：以登革热病毒为例，其流行的病毒株有四种亚型，如果病人曾经感染过某种亚型，在被其他亚型感染时，有高达80倍的可能性会发生更严重的症状。这就是因为ADE：体内已有的非中和性抗体虽然包裹了病毒，却无法将其杀死，反而保护了其免受其他免疫细胞的攻击。
+
+以此类推，倘若这次的疫情，届时会由疫苗成功控制。那么我们这一代接种了新冠疫苗的人，难道会成为下一批某种冠状病毒流行时ADE的受害者？
+
 参考：
 
 https://mp.weixin.qq.com/s/lwBpRJ4VQxD3DzeMropylQ
@@ -123,23 +129,3 @@ https://mp.weixin.qq.com/s/ebaz8rd7ft3eH8E-cS3YpA
 https://mp.weixin.qq.com/s/7NePVREsxbMFqaZvF5N51w
 
 BBC纪录片：病毒是如何入侵的？
-
-https://mp.weixin.qq.com/s/JAm3eMF1ATMzHTRTiZybIQ
-
-阻击病毒的战场
-
-https://asm.org/
-
-American Society for Microbiology
-
-https://mp.weixin.qq.com/s/SkzRspEEFj53A5OWKj37VA
-
-新型冠状病毒的“帮凶”——病原真菌到底是什么鬼？
-
-https://mp.weixin.qq.com/s/cUtWVBOsUkCBC0abeoKAzA
-
-从病毒到免疫， “科学地”揭开新冠病毒的神秘面纱
-
-https://mp.weixin.qq.com/s/bfhS3Er3NXjfUrKZbju33Q
-
-病毒与人类的战争（上）：百万年的战争

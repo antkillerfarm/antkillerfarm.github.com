@@ -46,6 +46,10 @@ https://mp.weixin.qq.com/s/iN8NQd8SuWL4gCWhRbY6tg
 
 图解基于HTTPS的DNS
 
+https://mp.weixin.qq.com/s/dVY0tPgkUq3W5waVtITFUA
+
+一文看懂：网址，URL，域名，IP地址，DNS，域名解析
+
 https://mp.weixin.qq.com/s/oydBIAEqAswppme6ku70fQ
 
 https加密那点事

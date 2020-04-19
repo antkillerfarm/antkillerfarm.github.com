@@ -72,6 +72,10 @@ https://mp.weixin.qq.com/s/gv0X080hHtKakjZMzVaZ-w
 
 80岁COBOL码农：“扶我起来，这个bug我会修。”
 
+https://mp.weixin.qq.com/s/VeSBuwWMx0xd2GuPSpE0ZA
+
+上古语言从入门到精通：COBOL教程登上GitHub热榜
+
 https://mp.weixin.qq.com/s/XPuJJm3k8gDl17oVmtdGtA
 
 代码回忆录：第一行Hello World，第一个弹窗广告的代码是怎么写的？

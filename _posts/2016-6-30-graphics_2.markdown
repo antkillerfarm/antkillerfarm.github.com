@@ -138,6 +138,10 @@ https://mp.weixin.qq.com/s/q252Lc0Wl5uNc8-tw9nlgw
 
 高中就开始学的正态分布，原来如此重要
 
+https://mp.weixin.qq.com/s/KYxUoaz4dlheFLz3ZinB2w
+
+十种图像模糊算法的总结与实现
+
 # 二维高斯滤波
 
 由标准二维正态分布的正交性，可知二维高斯滤波实际上可以分解为x、y两个方向上的一维高斯滤波。当然，这时候的kernel的尺寸不再是方形的，而是1*n的长条形。

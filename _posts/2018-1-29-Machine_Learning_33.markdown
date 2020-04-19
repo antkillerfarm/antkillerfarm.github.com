@@ -32,6 +32,10 @@ https://mp.weixin.qq.com/s/VuDAdeVsoZsTokh3n_wWFw
 
 一文详解机器学习中最好用的提升方法：Boosting与AdaBoost
 
+https://mp.weixin.qq.com/s/Jnh7yIOmzbTvWk77zh2-lA
+
+周志华：Boosting学习理论的探索——一个跨越30年的故事
+
 # 机器学习的算法体系&相关术语表
 
 ## 算法体系

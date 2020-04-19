@@ -405,3 +405,11 @@ https://mp.weixin.qq.com/s/_Di73PkEWJV1-OLLHfz7yQ
 https://mp.weixin.qq.com/s/_Ze8C8UQV9UZXnSX6qq2GA
 
 强化学习玩王者荣耀
+
+https://mp.weixin.qq.com/s/NkrPfitZ6o75XaGxGC0eZw
+
+谷歌发布离线强化学习新范式，克服RL智能体只能在线训练难题，训练集相当于200多个ImageNet
+
+https://mp.weixin.qq.com/s/nEw0Vem-aL9D6w-1lEAsBQ
+
+字节跳动基于深度强化学习的广告推荐模型DEAR

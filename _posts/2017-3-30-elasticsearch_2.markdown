@@ -219,6 +219,14 @@ https://mp.weixin.qq.com/s/pT-6-U9mF4ttg0arp6BsVQ
 
 Python+ElasticSearch：有了这个超级武器，你也可以报名参加诗词大会了！
 
+https://mp.weixin.qq.com/s/W61SstvGawgVVqQxNa7GyQ
+
+Elasticsearch入门学习权威指南，719页pdf教您构建分布式实时搜索和分析引擎
+
+https://mp.weixin.qq.com/s/Olz-kvHM-SkC-pZr08r7ow
+
+相关搜索—使用Solr和Elasticsearch，360页pdf
+
 # Flume & Kafka
 
 Flume和Kafka都是日志系统。

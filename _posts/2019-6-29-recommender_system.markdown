@@ -342,6 +342,14 @@ https://mp.weixin.qq.com/s/urGCBjJegKwIqkcCBelptA
 
 深入理解推荐系统：召回
 
+https://mp.weixin.qq.com/s/sY_EFq7XF1ab2_0nv19XTg
+
+KDD Cup 2020推荐系统赛道—数据分析
+
+https://mp.weixin.qq.com/s/ZieyCARzUGqa_7ME57WGtA
+
+用机器学习来提升你的用户增长：第一步，了解你的目标
+
 # 推荐算法中的常用排序算法
 
 ![](/images/img3/ranking.png)

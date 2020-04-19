@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/ipUaCuxv7CNRC3zknZenlw
 
 Pandas实用手册（PART I）
 
+https://mp.weixin.qq.com/s/E8wlBfG_AzXxEObznPd1vg
+
+Pandas实用手册（PART II）
+
 ## 并行Pandas
 
 https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw

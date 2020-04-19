@@ -256,6 +256,26 @@ https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
 
 # 病毒（续）
 
+https://mp.weixin.qq.com/s/JAm3eMF1ATMzHTRTiZybIQ
+
+阻击病毒的战场
+
+https://asm.org/
+
+American Society for Microbiology
+
+https://mp.weixin.qq.com/s/SkzRspEEFj53A5OWKj37VA
+
+新型冠状病毒的“帮凶”——病原真菌到底是什么鬼？
+
+https://mp.weixin.qq.com/s/cUtWVBOsUkCBC0abeoKAzA
+
+从病毒到免疫， “科学地”揭开新冠病毒的神秘面纱
+
+https://mp.weixin.qq.com/s/bfhS3Er3NXjfUrKZbju33Q
+
+病毒与人类的战争（上）：百万年的战争
+
 https://mp.weixin.qq.com/s/Bx7AZrL168OkygBbg0qflQ
 
 病毒与人类的战争（下）： 人类守望者
@@ -284,6 +304,10 @@ https://mp.weixin.qq.com/s/zsu6KbIDKi_AlBI-eevA9w
 
 在你的基因里，到处都有病毒来过的痕迹
 
+https://mp.weixin.qq.com/s/UVQuph37AE_XVf_FrTiTKw
+
+病毒启示录：野生动物面前，人类没有特权
+
 ----
 
 ![](/images/img3/season.png)
@@ -301,31 +325,3 @@ https://mp.weixin.qq.com/s/n0QcYI8hdnEG2LBRgoKDzw
 https://mp.weixin.qq.com/s/NFF7bTvW7wtcyzVtMQOoJg
 
 人类消灭天花，是从19世纪初的一艘西班牙帆船开始的
-
-# 新冠肺炎
-
-## 历史
-
-https://mp.weixin.qq.com/s/TkTU7dw_GRBL7M4D1LBRDw
-
-帝国对抗瘟疫的最后一战（伍连德、肺鼠疫）
-
-https://zhuanlan.zhihu.com/p/104182101
-
-百年来最凶猛传染病，如何从天灾变成人祸？（西班牙流感、H1N1）
-
-https://zhuanlan.zhihu.com/p/104267977
-
-一场瘟疫如何重创一座国际化都市？（伦敦鼠疫）
-
-https://zhuanlan.zhihu.com/p/105581224
-
-数十万人因瘟疫逃向全国，印度为何无可奈何？
-
-https://mp.weixin.qq.com/s/UoKrSYw6109QR57af2odew
-
-疫情面前的众生-聊聊美国电影《传染病》
-
-https://mp.weixin.qq.com/s/ShSjz0ZEBneT6KqGYGjtcg
-
-历年世界各地的“瘟疫”，人们都是怎么战胜的？

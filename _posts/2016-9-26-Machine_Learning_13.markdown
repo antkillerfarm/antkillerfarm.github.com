@@ -82,6 +82,10 @@ https://mp.weixin.qq.com/s/4NRkrkV_M2b_IpnpCTn05w
 
 一图胜千言，这本交互式线代教科书让你分分钟理解复杂概念，佐治亚理工出品
 
+https://mp.weixin.qq.com/s/xWiRzBmK1JiGldMiq3BkTg
+
+伯克利一份简明《机器学习数学基础》丝滑入门手册，47页pdf
+
 ## 三角矩阵的求逆问题
 
 $$\begin{bmatrix}
