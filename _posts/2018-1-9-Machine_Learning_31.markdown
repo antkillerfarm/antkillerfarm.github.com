@@ -252,6 +252,34 @@ https://mp.weixin.qq.com/s/xJ7MpUkVfLQKxRYyJs29NQ
 
 BiLSTM上的CRF，用命名实体识别任务来解释CRF（4）
 
+# 新冠肺炎
+
+## 历史
+
+https://mp.weixin.qq.com/s/TkTU7dw_GRBL7M4D1LBRDw
+
+帝国对抗瘟疫的最后一战（伍连德、肺鼠疫）
+
+https://zhuanlan.zhihu.com/p/104182101
+
+百年来最凶猛传染病，如何从天灾变成人祸？（西班牙流感、H1N1）
+
+https://zhuanlan.zhihu.com/p/104267977
+
+一场瘟疫如何重创一座国际化都市？（伦敦鼠疫）
+
+https://zhuanlan.zhihu.com/p/105581224
+
+数十万人因瘟疫逃向全国，印度为何无可奈何？
+
+https://mp.weixin.qq.com/s/UoKrSYw6109QR57af2odew
+
+疫情面前的众生-聊聊美国电影《传染病》
+
+https://mp.weixin.qq.com/s/ShSjz0ZEBneT6KqGYGjtcg
+
+历年世界各地的“瘟疫”，人们都是怎么战胜的？
+
 # t-SNE
 
 ## 概述

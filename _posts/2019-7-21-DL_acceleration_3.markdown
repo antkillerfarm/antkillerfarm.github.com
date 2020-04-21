@@ -80,6 +80,28 @@ https://mp.weixin.qq.com/s/fLGCBeSc8yQVsXHLSdogrA
 
 然而，实际的情况要比理论计算复杂的多。比如有的硬件支持加法/乘法的跳零（忽略对0的加法/乘法）操作，这时无论是Strassen还是Winograd都不会有太好的效果。
 
+## NCHWc layout
+
+常见的NCHW和NHWC两种layout，在硬件加速方面各有所长。因此，后来又出现了NCHWc这样的layout。
+
+![](/images/img3/NCHWc.jpg)
+
+这种layout将C分成了两部分，局部的C放在了最后面，也就是NCHWc中的小写的c。这里c=4，因此又叫做NCHWc4。类似的还有NCHWc8。如果C不能被4整除的话，不足部分用0 pad即可。
+
+c的大小主要由运算单元的block计算能力决定。比如Tensor core的尺寸，SIMD指令集单次运算的操作数个数等。
+
+NCHWc对于CPU的SIMD指令集比较友好，因此被Intel广泛使用。
+
+论文：
+
+《Optimizing N-Dimensional, Winograd-Based Convolution for Manycore CPUs》
+
+参考：
+
+https://www.zhihu.com/question/337513515
+
+Tensor中数据摆放顺序NC4HW4是什么意思，只知道NCHW格式，能解释以下NC4HW4格式吗？
+
 ## 参考
 
 https://colfaxresearch.com/falcon-library/
@@ -267,49 +289,3 @@ bfloat16是Google针对AI领域的特殊情况提出的浮点格式。目前已�
 2.bfloat16的Dynamic Range比float16大，不容易下溢。这点在training阶段更为重要，梯度一般都挺小的，一旦下溢变成0，就传递不了了。
 
 3.bfloat16既可以用于训练又可以用于推断。Amazon也证明Deep Speech模型使用BFloat的训练和推断的效果都足够好。Uint8在大部分情况下不能用于训练，只能用于推断。
-
-论文：
-
-《Mixed Precision Training》
-
-参考：
-
-https://www.zhihu.com/question/275682777
-
-如何评价Google在TensorFlow中引入的bfloat16数据类型？
-
-https://zhuanlan.zhihu.com/p/56114254
-
-PAI自动混合精度训练---TensorCore硬件加速单元在阿里PAI平台落地应用实践
-
-https://mp.weixin.qq.com/s/zBtpwrQ5HtI6uzYOx5VsCQ
-
-模型训练太慢？显存不够用？这个算法让你的GPU老树开新花
-
-## Flexpoint
-
-Flexpoint是Nervana的作品。
-
-论文：
-
-《Flexpoint: An Adaptive Numerical Format for Efficient Training of Deep Neural Networks》
-
-讲了Google的成功案例，这里来讲一个反面教材。
-
-![](/images/img3/flex.png)
-
-这实际上就是INT16的量化，用在inference上应该还是可以的，然而Nervana的目标还有training。
-
-和bfloat16相比，它至少有如下问题：
-
-- 格式转换比bfloat16复杂。
-
-- Dynamic Range小，容易梯度消失，从而造成模型很难收敛。从指数位宽来看，Flexpoint和float16相同，都是5位。然而由于Flexpoint是共享指数，因此它真正的Dynamic Range是不如float16的。float16已经被证明是不适合training的，更遑论Flexpoint了。
-
-事实上，Intel内部已有人评价道：
-
->Flexpoint16三个月converge不了一个网络，而BF16一天就可以converge三个。
-
-- 指数保存在Host上，会造成反复通信的带宽问题。
-
-总的来说，这个方案虽然精巧，但是由于没有对数据特点做充分分析，没有意识到Dynamic Range比底数精度更重要，从而导致了最终的失败。

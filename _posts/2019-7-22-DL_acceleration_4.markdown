@@ -6,7 +6,53 @@ category: DL acceleration
 
 # NN Quantization
 
-## Flexpoint（续）
+## bfloat16（续）
+
+论文：
+
+《Mixed Precision Training》
+
+参考：
+
+https://www.zhihu.com/question/275682777
+
+如何评价Google在TensorFlow中引入的bfloat16数据类型？
+
+https://zhuanlan.zhihu.com/p/56114254
+
+PAI自动混合精度训练---TensorCore硬件加速单元在阿里PAI平台落地应用实践
+
+https://mp.weixin.qq.com/s/zBtpwrQ5HtI6uzYOx5VsCQ
+
+模型训练太慢？显存不够用？这个算法让你的GPU老树开新花
+
+## Flexpoint
+
+Flexpoint是Nervana的作品。
+
+论文：
+
+《Flexpoint: An Adaptive Numerical Format for Efficient Training of Deep Neural Networks》
+
+讲了Google的成功案例，这里来讲一个反面教材。
+
+![](/images/img3/flex.png)
+
+这实际上就是INT16的量化，用在inference上应该还是可以的，然而Nervana的目标还有training。
+
+和bfloat16相比，它至少有如下问题：
+
+- 格式转换比bfloat16复杂。
+
+- Dynamic Range小，容易梯度消失，从而造成模型很难收敛。从指数位宽来看，Flexpoint和float16相同，都是5位。然而由于Flexpoint是共享指数，因此它真正的Dynamic Range是不如float16的。float16已经被证明是不适合training的，更遑论Flexpoint了。
+
+事实上，Intel内部已有人评价道：
+
+>Flexpoint16三个月converge不了一个网络，而BF16一天就可以converge三个。
+
+- 指数保存在Host上，会造成反复通信的带宽问题。
+
+总的来说，这个方案虽然精巧，但是由于没有对数据特点做充分分析，没有意识到Dynamic Range比底数精度更重要，从而导致了最终的失败。
 
 参考：
 
@@ -269,29 +315,3 @@ https://www.zhihu.com/question/62068158
 3.反复多次之后，进入最终prune阶段。修改src/network.c:update_network，令其不更新0权值。
 
 >re-train时的learning rate一般不宜太大。如果出现re-train的效果，还不如直接prune的好，则多半是learning rate设置的问题。
-
-一般采用稀疏化率来描述权值的稀疏化程度。每层的稀疏化率可以相同，也可以不同。前者被称作Magnitude Pruner，而后者被称作Sensitivity Pruner。
-
-权值稀疏化的设置也和网络结构有关。比如分类网络，由于输入图片是高维数据，而分类结果是低维数据，因此在稀疏化处理的时候，**越靠近输出结果的Layer，其稀疏化程度就可以越高。**而最初的几层，即使只加少量稀疏化，也会导致精度的大幅下降，这时往往就不做或者少做稀疏化处理了。
-
-上述方法的问题在于，分类网络的计算量主要集中在最初几层，所以这种triangle prune mode对于压缩计算量的效果一般。
-
-除了训练后的权值稀疏化之外，权值稀疏化训练也是一种方法。
-
-论文：
-
-《FLOPs as a Direct Optimization Objective for Learning Sparse Neural Networks》
-
-这篇论文，将计算量也就是FLOPs作为Loss function设计的一部分，由于稀疏化的权值没有运算量，因此，采用这种Loss训练出的网络，天生就是稀疏化的。
-
-## AutoML
-
-由于模型压缩，本质上是一个精益求精的优化问题，因此采用AutoML技术对于各个超参数进行优化，就成为了一件很有必要的事情。
-
-这里主要的问题在于超参数数量众多，导致状态空间过大。
-
-论文：
-
-《AMC: AutoML for Model Compression and Acceleration on Mobile Devices》
-
-这是韩松组的何宜晖的作品。该论文采用深度强化学习的DDPG网络来优化目标网络，从而大大减少了需要搜索的状态空间。

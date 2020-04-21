@@ -207,7 +207,7 @@ image_tensor = tf.case(decoder, default = decode_png, exclusive = True)
 
 ## 内存布局
 
-Tensorflow和Caffe的内存布局存在较大差异，这是两者模型转换时，最常遇到的问题。一般认为，Caffe的内存布局对硬件加速更友好一些（局部数据在内存中摆放在一起）。
+Tensorflow和Caffe的内存布局存在较大差异，这是两者模型转换时，最常遇到的问题。一般认为，Caffe的内存布局对卷积硬件加速更友好一些。
 
 |  | Tensorflow | Caffe |
 |:--:|:--:|:--:|

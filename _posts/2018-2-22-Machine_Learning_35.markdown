@@ -252,33 +252,71 @@ https://mp.weixin.qq.com/s/dTI3BdgixVTAFsnxtKjq0A
 
 常见图算法介绍
 
-# 新冠肺炎
+# 模型压缩与加速+
 
-## 历史
+https://mp.weixin.qq.com/s/5NM9M1oY8bwsEqdBRVYpMg
 
-https://mp.weixin.qq.com/s/TkTU7dw_GRBL7M4D1LBRDw
+网络规模更小、速度更快，这是谷歌提出的MorphNet
 
-帝国对抗瘟疫的最后一战（伍连德、肺鼠疫）
+https://mp.weixin.qq.com/s/SC3ebx-C4N4H8B_R6K09cg
 
-https://zhuanlan.zhihu.com/p/104182101
+分段的人脸检测在移动端的应用
 
-百年来最凶猛传染病，如何从天灾变成人祸？（西班牙流感、H1N1）
+https://mp.weixin.qq.com/s/_C5AvD3YmRH2dmBjbEZFrQ
 
-https://zhuanlan.zhihu.com/p/104267977
+神经网络子网络压缩10倍，精确度保持不变
 
-一场瘟疫如何重创一座国际化都市？（伦敦鼠疫）
+https://zhuanlan.zhihu.com/p/65348860
 
-https://zhuanlan.zhihu.com/p/105581224
+南邮提出实时语义分割的轻量级网络：LEDNET
 
-数十万人因瘟疫逃向全国，印度为何无可奈何？
+https://zhuanlan.zhihu.com/p/67272163
 
-https://mp.weixin.qq.com/s/UoKrSYw6109QR57af2odew
+百度提出关于网络压缩和加速的新剪枝算法
 
-疫情面前的众生-聊聊美国电影《传染病》
+https://mp.weixin.qq.com/s/jHv3Amti1YZq51Df2mNFtg
 
-https://mp.weixin.qq.com/s/ShSjz0ZEBneT6KqGYGjtcg
+network sliming:加快模型速度同时不损失精度
 
-历年世界各地的“瘟疫”，人们都是怎么战胜的？
+https://mp.weixin.qq.com/s/8jyQ_7DYn7lHMcAWokKbcA
+
+超Mask RCNN速度4倍，仅在单个GPU训练的实时实例分割算法
+
+https://mp.weixin.qq.com/s/TC_Ju2vuKDP6d538v2F8CQ
+
+剪枝需有的放矢，快手&罗切斯特大学提出基于能耗建模的模型压缩
+
+https://mp.weixin.qq.com/s/UkqwPBYgYQuIB9_jGMt2QQ
+
+Rocket Training: 一种提升轻量网络性能的训练方法
+
+https://mp.weixin.qq.com/s/xCzS7sYMFmk5K4ClB1I2YQ
+
+Uber提出SBNet：利用激活的稀疏性加速卷积网络
+
+https://mp.weixin.qq.com/s/6Wj0Y4y30BVA75WrU4oZbQ
+
+SBNet: 提高自动驾驶系统的感知效率
+
+https://mp.weixin.qq.com/s/HXxnhMjAchxKSidu45kOeg
+
+网络压缩最新进展：2019年最新文章概览
+
+https://mp.weixin.qq.com/s/Bl7-hGIxZMsHxscqb7DnMA
+
+200～1000+fps！谷歌公布亚毫秒级人脸检测算法BlazeFace，面向移动GPU
+
+https://mp.weixin.qq.com/s/l2_N-PXjDMCqSRwYxU4BEA
+
+模型加速概述与模型裁剪算法技术解析
+
+https://mp.weixin.qq.com/s/af-z73asc-PmpEsI_yEulA
+
+北邮提出新AI模型压缩算法，显著降低计算复杂度
+
+https://mp.weixin.qq.com/s/AOI2LUjiKPUJFE0D7zX0Hw
+
+谷歌新研究：基于数据共享的神经网络快速训练方法
 
 # 世说新语+
 

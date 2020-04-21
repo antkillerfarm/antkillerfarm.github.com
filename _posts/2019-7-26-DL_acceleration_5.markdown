@@ -4,7 +4,53 @@ title:  深度加速（五）——模型压缩与加速（2）
 category: DL acceleration 
 ---
 
-# 模型压缩与加速（续）
+# 模型压缩与加速
+
+## 权值稀疏化实战（续）
+
+一般采用稀疏化率来描述权值的稀疏化程度。每层的稀疏化率可以相同，也可以不同。前者被称作Magnitude Pruner，而后者被称作Sensitivity Pruner。
+
+权值稀疏化的设置也和网络结构有关。比如分类网络，由于输入图片是高维数据，而分类结果是低维数据，因此在稀疏化处理的时候，**越靠近输出结果的Layer，其稀疏化程度就可以越高。**而最初的几层，即使只加少量稀疏化，也会导致精度的大幅下降，这时往往就不做或者少做稀疏化处理了。
+
+上述方法的问题在于，分类网络的计算量主要集中在最初几层，所以这种triangle prune mode对于压缩计算量的效果一般。
+
+除了训练后的权值稀疏化之外，权值稀疏化训练也是一种方法。
+
+论文：
+
+《FLOPs as a Direct Optimization Objective for Learning Sparse Neural Networks》
+
+这篇论文，将计算量也就是FLOPs作为Loss function设计的一部分，由于稀疏化的权值没有运算量，因此，采用这种Loss训练出的网络，天生就是稀疏化的。
+
+## AutoML
+
+由于模型压缩，本质上是一个精益求精的优化问题，因此采用AutoML技术对于各个超参数进行优化，就成为了一件很有必要的事情。
+
+这里主要的问题在于超参数数量众多，导致状态空间过大。
+
+论文：
+
+《AMC: AutoML for Model Compression and Acceleration on Mobile Devices》
+
+这是韩松组的何宜晖的作品。该论文采用深度强化学习的DDPG网络来优化目标网络，从而大大减少了需要搜索的状态空间。
+
+## EfficientNet
+
+https://mp.weixin.qq.com/s/on1YdDexq5ICZL70mvikyw
+
+谷歌大脑提出EfficientNet平衡模型扩展三个维度，取得精度-效率的最大化！
+
+https://mp.weixin.qq.com/s/tCdG9gvpav1SvEzyAyBZXA
+
+谷歌EfficientNet缩放模型，PyTorch实现出炉，登上GitHub热榜
+
+https://mp.weixin.qq.com/s/NPM4E2gGOf3awQw7-_s6Uw
+
+令人拍案叫绝的EfficientNet和EfficientDet
+
+https://mp.weixin.qq.com/s/_eJ27nKULYzUNzDEf62x2w
+
+何恺明团队最新力作RegNet：超越EfficientNet，GPU上提速5倍
 
 ## 参考
 
@@ -307,83 +353,3 @@ https://mp.weixin.qq.com/s/NsvjADgQZrYkUGNN6fzXVg
 https://mp.weixin.qq.com/s/HzgRHtVwdmW6_m7OJwK-ew
 
 SysML 2019论文解读：Accurate and Efficient 2-Bit Quantized Neural Netowrks
-
-https://mp.weixin.qq.com/s/5NM9M1oY8bwsEqdBRVYpMg
-
-网络规模更小、速度更快，这是谷歌提出的MorphNet
-
-https://mp.weixin.qq.com/s/SC3ebx-C4N4H8B_R6K09cg
-
-分段的人脸检测在移动端的应用
-
-https://mp.weixin.qq.com/s/_C5AvD3YmRH2dmBjbEZFrQ
-
-神经网络子网络压缩10倍，精确度保持不变
-
-https://zhuanlan.zhihu.com/p/65348860
-
-南邮提出实时语义分割的轻量级网络：LEDNET
-
-https://zhuanlan.zhihu.com/p/67272163
-
-百度提出关于网络压缩和加速的新剪枝算法
-
-https://mp.weixin.qq.com/s/on1YdDexq5ICZL70mvikyw
-
-谷歌大脑提出EfficientNet平衡模型扩展三个维度，取得精度-效率的最大化！
-
-https://mp.weixin.qq.com/s/tCdG9gvpav1SvEzyAyBZXA
-
-谷歌EfficientNet缩放模型，PyTorch实现出炉，登上GitHub热榜
-
-https://mp.weixin.qq.com/s/NPM4E2gGOf3awQw7-_s6Uw
-
-令人拍案叫绝的EfficientNet和EfficientDet
-
-https://mp.weixin.qq.com/s/_eJ27nKULYzUNzDEf62x2w
-
-何恺明团队最新力作RegNet：超越EfficientNet，GPU上提速5倍
-
-https://mp.weixin.qq.com/s/jHv3Amti1YZq51Df2mNFtg
-
-network sliming:加快模型速度同时不损失精度
-
-https://mp.weixin.qq.com/s/8jyQ_7DYn7lHMcAWokKbcA
-
-超Mask RCNN速度4倍，仅在单个GPU训练的实时实例分割算法
-
-https://mp.weixin.qq.com/s/TC_Ju2vuKDP6d538v2F8CQ
-
-剪枝需有的放矢，快手&罗切斯特大学提出基于能耗建模的模型压缩
-
-https://mp.weixin.qq.com/s/UkqwPBYgYQuIB9_jGMt2QQ
-
-Rocket Training: 一种提升轻量网络性能的训练方法
-
-https://mp.weixin.qq.com/s/xCzS7sYMFmk5K4ClB1I2YQ
-
-Uber提出SBNet：利用激活的稀疏性加速卷积网络
-
-https://mp.weixin.qq.com/s/6Wj0Y4y30BVA75WrU4oZbQ
-
-SBNet: 提高自动驾驶系统的感知效率
-
-https://mp.weixin.qq.com/s/HXxnhMjAchxKSidu45kOeg
-
-网络压缩最新进展：2019年最新文章概览
-
-https://mp.weixin.qq.com/s/Bl7-hGIxZMsHxscqb7DnMA
-
-200～1000+fps！谷歌公布亚毫秒级人脸检测算法BlazeFace，面向移动GPU
-
-https://mp.weixin.qq.com/s/l2_N-PXjDMCqSRwYxU4BEA
-
-模型加速概述与模型裁剪算法技术解析
-
-https://mp.weixin.qq.com/s/af-z73asc-PmpEsI_yEulA
-
-北邮提出新AI模型压缩算法，显著降低计算复杂度
-
-https://mp.weixin.qq.com/s/AOI2LUjiKPUJFE0D7zX0Hw
-
-谷歌新研究：基于数据共享的神经网络快速训练方法
