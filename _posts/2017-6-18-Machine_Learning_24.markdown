@@ -328,3 +328,7 @@ https://mp.weixin.qq.com/s/mVNHAiHY__Z0xTXkDDyZTw
 https://mp.weixin.qq.com/s/tH4-73aJcRaqJAjotlyANg
 
 语法纠错的研究现状
+
+https://mp.weixin.qq.com/s/EHUKSbtX3owR53lX5qu56Q
+
+机器如何生成文本？

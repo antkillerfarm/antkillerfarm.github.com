@@ -373,3 +373,7 @@ https://mp.weixin.qq.com/s/3pGw9QdAZVE3OKZ-zGyb4g
 https://mp.weixin.qq.com/s/Bllw4rSkxd378LLUCh6oJA
 
 Python炫技操作：合并字典的七种方法
+
+https://mp.weixin.qq.com/s/QWH9qhKzECX-1rqDLfZyhw
+
+如何加速Python代码？

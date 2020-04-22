@@ -346,3 +346,7 @@ https://mp.weixin.qq.com/s/1TbplmZ2nMUWcft_gKX2BA
 https://mp.weixin.qq.com/s/NUD3i2nEJL9P-tNpcty2CQ
 
 推荐系统的人工调控
+
+https://mp.weixin.qq.com/s/7hvYdOTnnw5pDDMx6N66Uw
+
+阿里文娱搜索算法实践与思考

@@ -54,7 +54,7 @@ http://blog.sina.com.cn/s/blog_8267db980102wq4l.html
 
 HMM识别新词
 
-https://mp.weixin.qq.com/s/dwfuruet361IT6lQQcYWjA
+https://mp.weixin.qq.com/s/eGx0PHvZXwmykUon-9M-mQ
 
 HMM模型在贝壳对话系统中的应用
 

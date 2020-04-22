@@ -354,26 +354,6 @@ https://github.com/thu-ml/tianshou
 
 清华开源“天授”强化学习平台
 
-# 概述
+https://mp.weixin.qq.com/s/-5KzyKeNFOYBtFQ8ZVZNag
 
-![](/images/img2/RL_intro.png)
-
-上图是深度强化学习的脉络图，参考文献中还有该领域的关键论文列表。
-
-![](/images/img3/RL_methods.png)
-
-![](/images/img3/RL_challenges.png)
-
-原图地址：
-
-http://louiskirsch.com/maps/reinforcement-learning
-
-参考：
-
-https://mp.weixin.qq.com/s/781fVvKr4yuq4q2GI1Y1gA
-
-从Zero到Hero，OpenAI重磅发布深度强化学习资源
-
-https://spinningup.openai.com/en/latest/spinningup/keypapers.html
-
-深度强化学习关键论文列表
+用Python写出Gameboy模拟器，还能训练AI模型：丹麦小哥的大学项目火了

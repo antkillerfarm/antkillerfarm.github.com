@@ -130,6 +130,10 @@ https://mp.weixin.qq.com/s/CPfhGxig9BMAgimBSOLy3g
 
 用于图像检索的等距离等分布三元组损失函数
 
+https://www.zhihu.com/question/375794498
+
+深度学习的多个loss如何平衡？
+
 # 知名数据集+
 
 ## Other（续）

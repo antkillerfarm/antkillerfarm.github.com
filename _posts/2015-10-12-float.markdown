@@ -286,3 +286,7 @@ https://mp.weixin.qq.com/s/qz4wUpSeF8Nlem8x4CrR-Q
 https://mp.weixin.qq.com/s/SGCoCy8wJEhEpLSHrYK3pQ
 
 韩松、朱俊彦等人提出GAN压缩法：算力消耗不到1/9，现已开源
+
+https://mp.weixin.qq.com/s/D-rh9m7G-ERjWEEG6BQJNg
+
+每个人都能用英伟达GAN造脸了

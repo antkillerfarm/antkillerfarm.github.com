@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十三）——Optimizer
+title:  机器学习（二十三）——因果推理, Optimizer
 category: ML 
 ---
 
@@ -27,6 +27,32 @@ https://mp.weixin.qq.com/s/idS2l7u_OBxWi5UBexlK4w
 https://mp.weixin.qq.com/s/ubpRPQ7-1nvY5CzICWi1Cg
 
 似乎没区别，但你混淆过验证集和测试集吗？
+
+# 因果推理
+
+https://mp.weixin.qq.com/s/doi26r9AVIMbpkZ01wsCZA
+
+北京大学何洋波博士《因果推断和因果图模型》机器学习报告
+
+https://mp.weixin.qq.com/s/L1ZY_qXPMXpStIgtUp7AKQ
+
+为机器学习插上因果推理的翅膀：这是一本系统的因果推理开源书
+
+https://mp.weixin.qq.com/s/ejf0qbIZWpq6Mi4G60ssEQ
+
+隐藏着的因果关系，如何让相同的机器学习模型变得不同
+
+https://mp.weixin.qq.com/s/O4JAv4NWp7NL-CzmaB6GxQ
+
+因果关系到底存不存在：反事实和平行宇宙
+
+https://mp.weixin.qq.com/s/-SdFNMxHzdSenDYHtjfldA
+
+因果推理入门指南-必须的7个步骤
+
+https://mp.weixin.qq.com/s/UcE8lHkaM5RT7ghWz0o-MQ
+
+R. A. Fisher和J. Neyman的分歧
 
 # Optimizer
 

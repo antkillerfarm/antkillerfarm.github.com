@@ -4,7 +4,15 @@ title:  深度强化学习（三）——DQN进化史, A2C & A3C
 category: DRL 
 ---
 
-# DQN进化史（续）
+# DQN进化史
+
+![](/images/img2/DQN.jpg)
+
+上图引用自论文：
+
+《Deep Learning for Video Game Playing》
+
+该论文最早发表于2017年，但是作者每年都会更新论文的内容。
 
 ![](/images/img3/DRL.png)
 

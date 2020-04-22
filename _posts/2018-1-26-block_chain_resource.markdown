@@ -389,3 +389,31 @@ https://mp.weixin.qq.com/s/FohJ81sPT_Zk7s1qLuP1-A
 https://mp.weixin.qq.com/s/ya-CHw572C2nnk8XraEMqQ
 
 功率半导体器件现状及未来
+
+# 图数据库+
+
+## 参考
+
+https://mp.weixin.qq.com/s/YfNlDoGOlHtpG9VFBCZHnQ
+
+VLDB2019特邀报告《图处理》综述进展，滑铁卢大学数据库大牛M. Tamer Özsu教授，170页ppt
+
+https://mp.weixin.qq.com/s/PkFscGq8tjzc3HQiF-SSsA
+
+在图数据上做机器学习，应该从哪个点切入？
+
+https://mp.weixin.qq.com/s/uYP8Eyz36JyTWska0hvtuA
+
+字节跳动自研万亿级图数据库&图计算实践
+
+https://mp.weixin.qq.com/s/uZStvVZp3UHLY3BppgaRLg
+
+JanusGraph VS Dgraph：贝壳分布式图数据库技术选型之路
+
+https://mp.weixin.qq.com/s/3rLTRtSWbf31aNRDs4rmoQ
+
+Dgraph简介篇
+
+https://mp.weixin.qq.com/s/rhtaVTON761wxGDqT9EIoQ
+
+Dgraph原理篇

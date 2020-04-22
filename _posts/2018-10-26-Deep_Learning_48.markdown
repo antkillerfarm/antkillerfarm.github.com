@@ -378,6 +378,10 @@ https://mp.weixin.qq.com/s/i6Qj5YyjLINxHSYuHckKzg
 
 YOLACT++：更强的实时实例分割网络，可达33.5 FPS/34.1mAP！
 
+https://mp.weixin.qq.com/s/27nzD9swpAcKfIv8CgvWJw
+
+YOLACT: 首个实时one-stage实例分割模型，29.8mAP/33.5fps
+
 https://mp.weixin.qq.com/s/8I7Lm5DMkVVlvw8v1L_HBA
 
 多感受野的金字塔结构—PSPNet

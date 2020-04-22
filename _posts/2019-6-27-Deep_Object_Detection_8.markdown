@@ -282,6 +282,10 @@ https://blog.csdn.net/sanshibayuan/article/details/103642419
 
 单阶段实例分割（Single Shot Instance Segmentation）
 
+https://mp.weixin.qq.com/s/vpHrLu8kuEuOp5eehT8Hcw
+
+目标检测正负样本区分策略和平衡策略总结(一)
+
 # 设计模式
 
 面向对象的设计模式有七大基本原则：

@@ -328,6 +328,14 @@ https://mp.weixin.qq.com/s/FRfjOSbnquQeFSBDI1FWwg
 
 6个你应该用用看的用于文本分类的最新开源预训练模型
 
+https://mp.weixin.qq.com/s/UVeWDavdHxmziUWW39jrkA
+
+原理篇一：从one-hot到Word2vec
+
+https://mp.weixin.qq.com/s/JSWw5RBgQoW-PrfIhbMtjQ
+
+原理篇二：从ELMo到ALBERT
+
 ## ELMo
 
 https://mp.weixin.qq.com/s/I315hYPrxV0YYryqsUysXw

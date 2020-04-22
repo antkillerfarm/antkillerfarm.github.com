@@ -258,6 +258,14 @@ https://mp.weixin.qq.com/s/5G-xon0i5Aq-M4i0rHJPBg
 
 如何从0构建知识图谱
 
+https://zhuanlan.zhihu.com/p/59762355
+
+推荐系统结合知识图谱简单总结
+
+https://mp.weixin.qq.com/s/NkwyHsmpZCwsQPiQOMK7zw
+
+针对复杂问题的知识图谱问答最新进展
+
 # DRL参考资源
 
 https://mp.weixin.qq.com/s/aVWHlwOmNIqOlu3025_RXQ

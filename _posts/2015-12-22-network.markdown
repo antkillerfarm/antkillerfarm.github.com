@@ -299,6 +299,10 @@ https://mp.weixin.qq.com/s/KFzJAxL_xvrrjhubd7zH-Q
 
 Facebook为何放弃ZooKeeper转用自研配置管理系统？
 
+https://mp.weixin.qq.com/s/DigeE4YxuT55cSeyb1q1tQ
+
+ZooKeeper源码和实践揭秘
+
 # DRL参考资源
 
 https://mp.weixin.qq.com/s/uppNSwxNrw4_8NGBQv85xw

@@ -454,7 +454,3 @@ https://mp.weixin.qq.com/s/HJDkNw_Fuu1QKEpyHY1Q-w
 https://mp.weixin.qq.com/s/v8azzXP1Kl5jnRCFpVdBGg
 
 语义分析的方法简述二
-
-https://zhuanlan.zhihu.com/p/111769969
-
-谈谈文本匹配和多轮检索

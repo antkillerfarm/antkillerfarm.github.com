@@ -198,6 +198,10 @@ https://mp.weixin.qq.com/s/BeIEjASATt3Qpef_Ag-cSw
 
 卡尔曼滤波系列——经典卡尔曼滤波推导
 
+https://mp.weixin.qq.com/s/t4GIPMB-6Vq7i8Q5PN6L-w
+
+《追狗，从入门到精通》
+
 # 图论
 
 ## 基本概念
@@ -253,30 +257,6 @@ https://mp.weixin.qq.com/s/dTI3BdgixVTAFsnxtKjq0A
 常见图算法介绍
 
 # 模型压缩与加速+
-
-https://mp.weixin.qq.com/s/5NM9M1oY8bwsEqdBRVYpMg
-
-网络规模更小、速度更快，这是谷歌提出的MorphNet
-
-https://mp.weixin.qq.com/s/SC3ebx-C4N4H8B_R6K09cg
-
-分段的人脸检测在移动端的应用
-
-https://mp.weixin.qq.com/s/_C5AvD3YmRH2dmBjbEZFrQ
-
-神经网络子网络压缩10倍，精确度保持不变
-
-https://zhuanlan.zhihu.com/p/65348860
-
-南邮提出实时语义分割的轻量级网络：LEDNET
-
-https://zhuanlan.zhihu.com/p/67272163
-
-百度提出关于网络压缩和加速的新剪枝算法
-
-https://mp.weixin.qq.com/s/jHv3Amti1YZq51Df2mNFtg
-
-network sliming:加快模型速度同时不损失精度
 
 https://mp.weixin.qq.com/s/8jyQ_7DYn7lHMcAWokKbcA
 

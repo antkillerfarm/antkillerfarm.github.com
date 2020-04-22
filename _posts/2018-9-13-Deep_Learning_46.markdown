@@ -332,6 +332,10 @@ https://blog.csdn.net/weixin_43269174/article/details/98492487
 
 从图嵌入算法到图神经网络
 
+https://mp.weixin.qq.com/s/CmVhJMGll5HjO8kxsCinaA
+
+图神经网络GNN,GAT&GCN（一）
+
 # 深度推荐系统+
 
 https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w

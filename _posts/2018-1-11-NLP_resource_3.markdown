@@ -200,7 +200,7 @@ https://mp.weixin.qq.com/s/MGPne4SotdHVWu2cIZvfog
 
 深入了解关系抽取你需要知道的东西
 
-# 短文本相似度
+## 短文本相似度
 
 https://wenku.baidu.com/view/d38ab1e8856a561252d36fab.html
 
@@ -213,6 +213,20 @@ https://zhuanlan.zhihu.com/p/113224707
 https://mp.weixin.qq.com/s/rhlSlrGwgUvDITZ06tfSzg
 
 短文本相似度算法研究
+
+## 文本匹配
+
+https://zhuanlan.zhihu.com/p/111769969
+
+谈谈文本匹配和多轮检索
+
+https://mp.weixin.qq.com/s/5toWf90bJeSMGso6HaNTMQ
+
+腾讯提出用于文本匹配的多信道信息交叉模型，在真实任务中表现优异
+
+https://zhuanlan.zhihu.com/p/111768258
+
+Question Answering论文
 
 ## 参考
 
@@ -383,19 +397,3 @@ http://mp.weixin.qq.com/s/OArqUTh0ZLGBTX71K7UUnw
 https://mp.weixin.qq.com/s/GaRL8VFWfbKOwz2jPzvN5A
 
 基于深度学习技术的AI输入法引擎
-
-https://mp.weixin.qq.com/s/xYvYEJA0ssAOZ-NvEXQcZg
-
-阿里小蜜这一年，经历了哪些技术变迁？
-
-https://mp.weixin.qq.com/s/rzglhAUJVNsnbyptORH5lg
-
-对话系统原理和实践
-
-https://mp.weixin.qq.com/s/C0hjVv2YOQw__tvSs8zn1A
-
-OpenAI提出新型神经网络：自动计算词对象，实现实体消岐
-
-https://mp.weixin.qq.com/s/dThV1YtMvYtToJFqgXnEzQ
-
-谷歌大脑提出通过多文档摘要方法生成维基百科，可处理较长序列

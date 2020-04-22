@@ -6,6 +6,22 @@ category: resource
 
 # NLP参考资源
 
+https://mp.weixin.qq.com/s/xYvYEJA0ssAOZ-NvEXQcZg
+
+阿里小蜜这一年，经历了哪些技术变迁？
+
+https://mp.weixin.qq.com/s/rzglhAUJVNsnbyptORH5lg
+
+对话系统原理和实践
+
+https://mp.weixin.qq.com/s/C0hjVv2YOQw__tvSs8zn1A
+
+OpenAI提出新型神经网络：自动计算词对象，实现实体消岐
+
+https://mp.weixin.qq.com/s/dThV1YtMvYtToJFqgXnEzQ
+
+谷歌大脑提出通过多文档摘要方法生成维基百科，可处理较长序列
+
 https://mp.weixin.qq.com/s/odRDdSNNuTd5LnUf8rfRaw
 
 Google发布语义文本相似度研究新成果：通用语句编码器
@@ -69,10 +85,6 @@ https://mp.weixin.qq.com/s/5DvSVL0CRJTymtXPDvS-0w
 https://mp.weixin.qq.com/s/4Tj92Mmj2-zOHfk1Tk167w
 
 白翔：复杂开放场景中的文本理解
-
-https://mp.weixin.qq.com/s/5toWf90bJeSMGso6HaNTMQ
-
-腾讯提出用于文本匹配的多信道信息交叉模型，在真实任务中表现优异
 
 https://mp.weixin.qq.com/s/Z4Mv_L68QaG7KfGmA3pBwQ
 

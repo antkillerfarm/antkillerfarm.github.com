@@ -6,6 +6,10 @@ category: DL
 
 # 三维处理
 
+https://mp.weixin.qq.com/s/19-ggA8nPEmXgMMivI7lLQ
+
+最新“三维深度学习(3D DL):过去与未来”教程，156页ppt
+
 https://github.com/timzhang642/3D-Machine-Learning
 
 3D机器学习资源汇总
