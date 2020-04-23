@@ -218,6 +218,10 @@ https://mp.weixin.qq.com/s/MQITI9QVhgnDKj--94B3fg
 
 视听觉深度伪造检测技术研究综述
 
+https://mp.weixin.qq.com/s/0OiEzrALzCkUEdJz87hPwQ
+
+RIPPLES：BERT控制术
+
 # 数据结构 & 普通CS算法
 
 ## TopK

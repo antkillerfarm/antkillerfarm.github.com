@@ -336,6 +336,10 @@ https://mp.weixin.qq.com/s/CmVhJMGll5HjO8kxsCinaA
 
 图神经网络GNN,GAT&GCN（一）
 
+https://zhuanlan.zhihu.com/p/133739758
+
+全面理解PinSage（工业落地：图神经网络+推荐系统）
+
 # 深度推荐系统+
 
 https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w

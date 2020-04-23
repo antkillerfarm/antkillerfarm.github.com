@@ -342,6 +342,10 @@ https://linux.cn/article-8290-1.html
 
 漫画赏析：Linux内核到底长啥样
 
+https://mp.weixin.qq.com/s/IucIsbJPo4eUUopV8xNN9w
+
+图解Linux程序的链接原理
+
 # 新冠肺炎
 
 ## 科研（续）

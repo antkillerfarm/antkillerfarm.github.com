@@ -260,6 +260,10 @@ https://mp.weixin.qq.com/s/S1IrgEqS1Q4xqGl5adNrlg
 
 目标检测近年综述
 
+https://mp.weixin.qq.com/s/7QT7n9MpbXjo5-r-aY2Yvg
+
+深度学习目标检测方法综述
+
 https://mp.weixin.qq.com/s/5I9uzGCNFD93L1mzakTl0Q
 
 目标检测网络学习总结（RCNN-->YOLO V3）

@@ -134,6 +134,10 @@ https://www.zhihu.com/question/375794498
 
 深度学习的多个loss如何平衡？
 
+https://mp.weixin.qq.com/s/tzY_lG0F9dP5Q-LmwuHLmQ
+
+常见损失函数和评价指标总结
+
 # 知名数据集+
 
 ## Other（续）
