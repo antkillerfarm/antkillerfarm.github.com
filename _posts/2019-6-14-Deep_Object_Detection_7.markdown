@@ -4,7 +4,25 @@ title:  深度目标检测（七）——CenterNet, Anchor-Free, 其它目标检
 category: Deep Object Detection 
 ---
 
-# CornerNet（续）
+# CornerNet
+
+## corner pooling（续）
+
+论文认为corner pooling之所以有效，是因为：
+
+- 目标定位框的中心难以确定，和边界框的4条边相关，但是每个顶点只与边界框的两条边相关，所以corner更容易提取。
+
+- 顶点更有效提供离散的边界空间，使用$$O(w\times h)$$顶点可以表示$$O(w^2\times h^2)$$个anchor boxes。
+
+## 参考
+
+https://mp.weixin.qq.com/s/e74-zFcMZzn67KaFXb_fdQ
+
+CornerNet目标检测开启预测“边界框”到预测“点对”的新思路
+
+https://zhuanlan.zhihu.com/p/41865617
+
+CornerNet：目标检测算法新思路
 
 https://mp.weixin.qq.com/s/e6B22xpue_xZwrXmIlZodw
 
@@ -335,27 +353,3 @@ https://mp.weixin.qq.com/s/p9XaI8PSG0o1NWlkmCIn7w
 https://mp.weixin.qq.com/s/reNCLvOyJHkJZimnMpbIig
 
 目标检测算法优化技巧：Bag of Freebies for Training Object Detection
-
-https://mp.weixin.qq.com/s/psXJNlEawZlQ-ZdktDpjOw
-
-目标检测小tricks之样本不均衡处理
-
-https://zhuanlan.zhihu.com/p/54334986
-
-TridentNet：处理目标检测中尺度变化新思路
-
-https://mp.weixin.qq.com/s/oF3MAkl1UikRkOhrj3equw
-
-深度学习的目标检测算法是如何解决尺度问题的？
-
-https://mp.weixin.qq.com/s/oxStDMh90jB7_EY4vqja2w
-
-目标检测论文阅读：DetNet
-
-https://zhuanlan.zhihu.com/p/55972055
-
-SimpleDet:一套简单通用的目标检测与物体识别框架
-
-https://zhuanlan.zhihu.com/p/55854246
-
-Guided Anchoring: 物体检测器也能自己学Anchor

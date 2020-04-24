@@ -115,9 +115,9 @@ https://mp.weixin.qq.com/s/vmIscEgDotR6ntiIdjGBLg
 
 硬盘安装的步骤如下：
 
-1）EasyBCD和ISO
+- EasyBCD和ISO
 
-2）
+- `C:\NST\menu.lst`：
 
 ```bash
 title Install Ubuntu
@@ -128,17 +128,13 @@ initrd (hd0,0)/initrd.lz
 
 >现在的电脑，一般都有一个Recovery分区，用于在系统崩溃时，恢复系统之用。因此，(hd0,0)需要修改为(hd0,1)，甚至是(hd0,2)。
 
-3）
+- 把准备好的iso用压缩软件或者虚拟光驱打开，找到casper文件夹，复制initrd.lz和vmlinuz到C盘,然后在把iso也拷贝到C盘。
 
-把准备好的iso用压缩软件或者虚拟光驱打开，找到casper文件夹，复制initrd.lz和vmlinuz到C盘,然后在把iso也拷贝到C盘。
-
-4）
+- 正式安装之前：
 
 `sudo umount -l /isodevice`
 
-5）
-
-安装好之后，没有GRUB开机菜单的话：
+- 安装好之后，没有GRUB开机菜单的话：
 
 ```bash
 sudo -i
@@ -146,9 +142,7 @@ mount /dev/sda7 /mnt
 grub-install --root-directory=/mnt /dev/sda
 ```
 
-6)
-
-最近硬盘安装Ubuntu之后，出现了无法进入Windows的问题。原因是由于公司的Dell笔记本的Recovery分区是第一个主分区，因此被错误的认为是Windows分区。
+- 最近硬盘安装Ubuntu之后，出现了无法进入Windows的问题。原因是由于公司的Dell笔记本的Recovery分区是第一个主分区，因此被错误的认为是Windows分区。
 
 这种情况可用boot-repair修复之。
 
@@ -159,9 +153,7 @@ sudo apt-get install -y boot-repair
 sudo boot-repair
 ```
 
-7)
-
-最近Win10升级，把我的grub弄乱了，导致开机出现了grub rescue提示符。
+- 最近Win10升级，把我的grub弄乱了，导致开机出现了grub rescue提示符。
 
 用`grub rescue> ls (hd0,msdos1)/`依次尝试每个分区，直到找到linux分区。
 

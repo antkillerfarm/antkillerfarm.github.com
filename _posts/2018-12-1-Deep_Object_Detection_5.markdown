@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（五）——YOLOv3, Tiny-YOLO, One-stage vs. Two-stage
+title:  深度目标检测（五）——YOLOv3, Tiny-YOLO
 category: Deep Object Detection 
 ---
 
@@ -258,24 +258,22 @@ https://mp.weixin.qq.com/s/LhXXPyvxci1d4xLzT0XFaw
 
 xYOLO：最新最快的实时目标检测
 
-# One-stage vs. Two-stage
+# YOLOv4
 
-虽然我们在概述一节已经提到了One-stage和Two-stage的概念。但鉴于这个概念的重要性，在介绍完主要的目标检测网络之后，很有必要再次总结一下。
+YOLO系列(v1-v3)作者Joe Redmon宣布不再继续CV方向的研究，引起学术圈一篇哗然。
 
-![](/images/img2/One_stage.png)
-
-![](/images/img2/Two_stage.png)
-
-上两图是One-stage(YOLO)和Two-stage(Faster R-CNN)的网络结构图。
-
-One-stage一步搞定分类和bbox问题。
-
-而Two-stage则分为两步：
-
-1.根据区域是foreground，还是background，生成bbox。
-
-2.对bbox进行分类和细调。
+YOLOv4的一作是Alexey Bochkovskiy。YOLO官方的github正式加入YOLOv4的论文和代码链接，也意味着YOLOv4得到了Joe Redmon的认可，也代表着YOLO的停更与交棒。
 
 论文：
 
-《Speed/accuracy trade-offs for modern convolutional object detectors》
+《YOLOv4: Optimal Speed and Accuracy of Object Detection》
+
+代码：
+
+https://github.com/AlexeyAB/darknet
+
+参考：
+
+https://zhuanlan.zhihu.com/p/135909702
+
+大神接棒，YOLOv4来了！

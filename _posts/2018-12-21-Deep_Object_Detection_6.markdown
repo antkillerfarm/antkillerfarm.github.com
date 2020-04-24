@@ -1,10 +1,30 @@
 ---
 layout: post
-title:  深度目标检测（六）——R-FCN, FPN, RetinaNet, CornerNet
+title:  深度目标检测（六）——One-stage vs. Two-stage, R-FCN, FPN, RetinaNet, CornerNet
 category: Deep Object Detection 
 ---
 
-# One-stage vs. Two-stage（续）
+# One-stage vs. Two-stage
+
+虽然我们在概述一节已经提到了One-stage和Two-stage的概念。但鉴于这个概念的重要性，在介绍完主要的目标检测网络之后，很有必要再次总结一下。
+
+![](/images/img2/One_stage.png)
+
+![](/images/img2/Two_stage.png)
+
+上两图是One-stage(YOLO)和Two-stage(Faster R-CNN)的网络结构图。
+
+One-stage一步搞定分类和bbox问题。
+
+而Two-stage则分为两步：
+
+1.根据区域是foreground，还是background，生成bbox。
+
+2.对bbox进行分类和细调。
+
+论文：
+
+《Speed/accuracy trade-offs for modern convolutional object detectors》
 
 通常来说，One-stage模型运算速度比Two-stage模型快，但精度略有不足。究其原因主要是“类别不平衡”问题。
 
@@ -223,19 +243,3 @@ corner pooling是CornerNet新提出的一种操作。其步骤如下图所示：
 依top-left corner pooling为例，对每个channel，分别提取特征图的水平和垂直方向的最大值，然后求和。具体的计算如下图所示：
 
 ![](/images/img3/corner_pooling_2.png)
-
-论文认为corner pooling之所以有效，是因为：
-
-- 目标定位框的中心难以确定，和边界框的4条边相关，但是每个顶点只与边界框的两条边相关，所以corner更容易提取。
-
-- 顶点更有效提供离散的边界空间，使用$$O(w\times h)$$顶点可以表示$$O(w^2\times h^2)$$个anchor boxes。
-
-## 参考
-
-https://mp.weixin.qq.com/s/e74-zFcMZzn67KaFXb_fdQ
-
-CornerNet目标检测开启预测“边界框”到预测“点对”的新思路
-
-https://zhuanlan.zhihu.com/p/41865617
-
-CornerNet：目标检测算法新思路
