@@ -297,31 +297,3 @@ https://mp.weixin.qq.com/s/af-z73asc-PmpEsI_yEulA
 https://mp.weixin.qq.com/s/AOI2LUjiKPUJFE0D7zX0Hw
 
 谷歌新研究：基于数据共享的神经网络快速训练方法
-
-# 病毒（续）
-
-https://mp.weixin.qq.com/s/zsu6KbIDKi_AlBI-eevA9w
-
-在你的基因里，到处都有病毒来过的痕迹
-
-https://mp.weixin.qq.com/s/UVQuph37AE_XVf_FrTiTKw
-
-病毒启示录：野生动物面前，人类没有特权
-
-----
-
-![](/images/img3/season.png)
-
-https://mp.weixin.qq.com/s/n0QcYI8hdnEG2LBRgoKDzw
-
-新冠肺炎会随着夏天的到来，自然消失吗？
-
-----
-
-19世纪初，预防天花的牛痘疫苗保质期只有12天。为了将牛痘传到遥远的新大陆，他们决心采用“人链”为疫苗“保鲜”：几个成年人带着一群孩子，毅然离开熟悉的家园远航。他们付出了惊人的努力，也有生命的代价，最终使接种疫苗预防天花的观念广为人知，奠定了人类消灭天花的重要基石。
-
-在越洋的航程开始的时候，他们先用疫苗为两个孩子接种，以确保在其中一个接种失败的情况下，还有另一个作为备份。当牛痘病毒在孩子体内发作，长出脓疱的时候，他们再以孩子身上的牛痘脓物作为疫苗，接种下一组的两个孩子……这个接力方案遵循着严格的时间表，因此，当船抵达新大陆的时候，就一定会有孩子可以成为疫苗的来源。
-
-https://mp.weixin.qq.com/s/NFF7bTvW7wtcyzVtMQOoJg
-
-人类消灭天花，是从19世纪初的一艘西班牙帆船开始的

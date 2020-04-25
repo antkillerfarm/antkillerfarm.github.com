@@ -276,54 +276,6 @@ patch -R B C #B还原为A
 
 # 新冠肺炎
 
-## 历史（续）
-
-https://mp.weixin.qq.com/s/uoLGz_giq88nkNJ4-80n3Q
-
-全球百年视角再审视：历次突发疫情是如何消退的？
-
-https://mp.weixin.qq.com/s/CBwRBdGHFcjItdA81SfdOg
-
-美国从百年前的那场大流感里学到了什么？
-
-https://mp.weixin.qq.com/s/_ye9rCrsh6pdPgVHrzveEQ
-
-166年前的那场大霍乱，伦敦做对了什么？
-
-https://mp.weixin.qq.com/s/pkhE3o2ioSV4CBmg0Y2WvQ
-
-“零号病人”：瘟疫大流行的超级背锅侠
-
-https://mp.weixin.qq.com/s/gGJrQXdxX2WwkXj140Ld2w
-
-全球化的每一步，都是流行病的一大步
-
-----
-
-在这场争论中，最早推广Pfeifer氏菌疫苗的William Park展示了自我纠错的勇气，与George McCoy一起，成为否定细菌疫苗发声最多的专家。
-
-100年前的条件和科学水平与当前无法相比，但以William Park为代表的美国科学家所展示的勇于纠错、实事求是的精神永远不会过时。
-
->William Hallock Park，1863～1939，美国医学家。Columbia University博士（1886）。长期供职于卫生部纽约实验室（也就是现在的William Park实验室）。
-
-https://mp.weixin.qq.com/s/dhNuZo0yTI1CR8oH9LYlKA
-
-以史为鉴：回顾1918年美国流感疫苗开发的闹剧
-
-----
-
-pandemics：世界性流行病
-
-epidemics：流行病
-
-quarantine源自拉丁语里的“四十”。由来是当年威尼斯人在瘟疫的时候，让外来船只停40天再下船的操作。
-
-----
-
-1619年，被后来人称为“16世纪死神”的法国医生查尔斯·德洛姆（Charles de Lorme）发明了一种诡异的银制面具，外形设计呈鸟嘴状，由皮革包裹，面具的眼睛部分用玻璃嵌入，至于最关键的过滤系统，则用棉花、樟脑、玫瑰等填充物构成，置于鸟嘴处，一定程度上阻隔了空气中的病菌。
-
-![](/images/img3/Doctor_Schnabel.jpg)
-
 ## 钟南山
 
 20世纪50年代，时任广州中山医学院儿科教授兼主任的钟世藩，开始了乙脑病毒的培养和分离工作。因为缺乏研究经费，他自费买来小白鼠，在自家书房研究，顺便还把自己儿子培养成了一名“小白鼠饲养员”。

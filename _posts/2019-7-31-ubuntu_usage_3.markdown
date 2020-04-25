@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Ubuntu使用技巧（三）, 硬盘安装Linux（UEFI）, awk&sed&grep
+title:  Ubuntu使用技巧（三）, 硬盘安装Linux（UEFI）
 category: linux 
 ---
 
@@ -219,6 +219,10 @@ https://www.cnblogs.com/iamnewsea/p/7701464.html
 
 可以用`sudo fdisk -l`查看分区名称，例如SSD分区一般叫做`/dev/nvme0n1p4`。
 
+或者
+
+`sudo umount -l /cdrom`
+
 而且我们还可以看到，系统的第一个分区，并不是Windows分区，而是EFI分区。这也是UEFI启动的特殊之处。这个分区对于一般应用是不可见的，也就没有了文件或分区被误删的问题。安装新OS的风险也大大减少了。
 
 - 安装必须要联网，否则会失败。（搞不懂这个镜像有何意义。。。囧）
@@ -281,6 +285,42 @@ https://blog.csdn.net/fouweng/article/details/53435602
 
 DKMS简介
 
+# Ubuntu 20.04使用手记
+
+Ubuntu 20.04是2020.4.24发布的。我第一时间上手体验了一番。
+
+UI方面最大的特点是：菜单栏变成了菜单按钮。这种风格最早来自Chrome的设计，后来部分系统应用也采用了该风格，这次算是收尾阶段了吧。
+
+内核：5.4
+
+LibreOffice：6.4
+
+----
+
+这里必须吐槽一下近期这几个版本的安装过程。不知道从18.04的哪一个版本开始，离线安装OS这样的正常需求，就成了一件不可能的事情。无论你选择什么选项，都要从网上下载一堆文件（170M+）才能安装成功。
+
+众所周知，ubuntu官方的网速，在国内一直不快，即便是安装镜像已经换用`cn.archive.ubuntu.com`，也同样快不了多少。速度飞快的aliyun，不好意思，至少在安装阶段是无法换用的。
+
+碰巧我是尝鲜的，正赶上大家都在尝鲜的时候，那个下载速度实在太感人了。。。囧
+
+但是我也意外发现，3点以后，网速就飞快了（8+M/s）。这点数据也就1分钟的事情。
+
+虽然有1个月之前安装18.04的经验，然而这次还是遇到了新的麻烦：
+
+离线安装，grub是坏的。好容易在线装，安装成功，但是grub没有Ubuntu的选项。
+
+解决办法：使用boot-repair修理grub。
+
+然而boot-repair既然号称修理，自然是把EFI分区里的`.efi`文件一网打尽，每个文件都是一个启动项。众所周知，一个OS往往不止一个`.efi`，于是那个条目数简直多的没法看。。。
+
+解决办法：修改`/boot/grub/grub.cfg`，去掉多余的条目。
+
+这里主要参考的是以下文章：
+
+https://www.cnblogs.com/schips/p/10141278.html
+
+使用boot-repair对Windows+Ubuntu双系统引导修复
+
 # betty
 
 betty是Jeff Pickhardt开发的人工智能助手，可以将英文转换成Linux命令。
@@ -317,66 +357,3 @@ https://hubot.github.com/
 https://segmentfault.com/a/1190000004855149
 
 Hubot的简单用法
-
-# awk&sed&grep
-
-这三个工具是文本处理中用的比较多的工具，各有各的特色，且都支持正则表达式。
-
-一般来说，行处理优先考虑使用sed和grep，列处理优先考虑使用awk。通常情况下，组合使用多个命令，其命令编写的难度小于只使用一个命令。比如sed和grep也可以进行列处理，但语法难度远超awk，反之亦然。
-
-这里不打算列出各个命令的选项，而仅列出使用它们的一些示例：
-
-这里假设我们有一文件名为ab。
-
-## awk
-
-```bash
-awk '{print $1}' ab #显示第一列
-```
-
-参考：
-
-https://mp.weixin.qq.com/s/-mWYn195TBSB1lDlncuYeA
-
-常用命令之awk常用实例
-
-## sed
-
-```bash
-sed '1d' ab #删除第一行 
-sed '$d' ab #删除最后一行
-sed '1,2d' ab #删除第一行到第二行
-sed '2,$d' ab #删除第二行到最后一行
-
-sed -n '1p' ab    #显示第一行 
-sed -n '$p' ab    #显示最后一行
-sed -n '1,2p' ab  #显示第一行到第二行
-sed -n '2,$p' ab  #显示第二行到最后一行
-
-sed -n '/ruby/p' ab #查询包括关键字ruby所在所有行
-sed -n '/\$/p' ab #查询包括关键字$所在所有行，使用反斜线\屏蔽特殊含义
-
-sed -n '/ruby/p' ab | sed 's/ruby/bird/g'    #替换ruby为bird
-sed -n '/ruby/p' ab | sed 's/ruby//g'        #删除ruby
-
-sed -e 's/.$//' mydos.txt > myunix.txt #dos->unix
-```
-
-## grep
-
-```bash
-grep 'ruby' ab #查询包括关键字ruby所在所有行
-grep -nri 'ruby' #n 显示行号，r 子目录搜索，i 忽略大小写
-```
-
-## 综合
-
-```bash
-ip addr show br-lan | grep 'inet ' | awk  '{print $2}' | sed 's/\/.*//g'
-```
-
-参考：
-
-https://mp.weixin.qq.com/s/o1vuL3RrWz9tyUPguZeSWA
-
-简单快捷的数据处理，数据科学需要注意的命令行
