@@ -108,6 +108,10 @@ https://mp.weixin.qq.com/s/e1g1B-6bLe0IjNAHMJtGOw
 
 英伟达发布最强图像生成器StyleGAN2，生成图像逼真到吓人
 
+https://zhuanlan.zhihu.com/p/136392096
+
+看GAN如何一步步控制图像生成风格？详解StyleGAN进化过程
+
 # BigGAN
 
 论文：
