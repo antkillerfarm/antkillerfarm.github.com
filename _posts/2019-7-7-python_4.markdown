@@ -286,6 +286,14 @@ https://mp.weixin.qq.com/s/rBR4d_wyU8TKy1K9az4C-Q
 
 从VBA到Python，Excel工作效率如何提高？
 
+https://mp.weixin.qq.com/s/3nr8uHnRoSgs-Zu6QxGiqw
+
+Python实现数据库一键导出为Excel表格！大大的增加了工作效率！
+
+https://mp.weixin.qq.com/s/ZI7KDxH9z_UR2p3umBCNsA
+
+一套代码批量编辑Word和Excel，告别工具人
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA
@@ -348,10 +356,6 @@ https://mp.weixin.qq.com/s/ST7TQ5Wkn_owv5bpTiTKVA
 
 2018年最好用的5个python网站开发框架
 
-https://mp.weixin.qq.com/s/3nr8uHnRoSgs-Zu6QxGiqw
-
-Python实现数据库一键导出为Excel表格！大大的增加了工作效率！
-
 https://mp.weixin.qq.com/s/dmJI2GlzgUJgYllfVOPt4g
 
 两句话轻松掌握Python最难知识点
@@ -378,7 +382,7 @@ Python标准库之LRU缓存实现学习
 
 https://mp.weixin.qq.com/s/VPCUd5op6Vd-b0LbFEMSYQ
 
-秒懂Python编程中的if __name__ == 'main' 的作用和原理
+秒懂Python编程中的`if __name__ == 'main'`的作用和原理
 
 https://mp.weixin.qq.com/s/FtlAkInyXgvUxDnSCikTIw
 
@@ -455,19 +459,3 @@ https://mp.weixin.qq.com/s/fTs_r7DLbLWoos4uRM3KYA
 https://mp.weixin.qq.com/s/kt5isheTBnpwKUhJAuXnYw
 
 视频剪辑什么鬼？Python带你高效创作短视频
-
-https://mp.weixin.qq.com/s/G5qx3-1Wq4gcRSuRfrczuw
-
-Python趣味打怪：60秒学会一个例子，147段简单代码助你从入门到大师
-
-https://mp.weixin.qq.com/s/zIHJsyankFEf_ig4Xnb0Uw
-
-工具推荐！我是如何使用Python脚本分析CPU使用情况的？
-
-https://mp.weixin.qq.com/s/v-N5jUTVFBb-wV0a_RAg5A
-
-Python实现代码雨效果
-
-https://mp.weixin.qq.com/s/0wJRlGS2QXpEL2XaU_Ke-g
-
-Python实现烟花特效

@@ -340,6 +340,10 @@ https://zhuanlan.zhihu.com/p/133739758
 
 全面理解PinSage（工业落地：图神经网络+推荐系统）
 
+https://mp.weixin.qq.com/s/VctNZsALrbDQDW3_zhGJsw
+
+在NLP中应用GCN的几种构图方法整理
+
 # 深度推荐系统+
 
 https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w

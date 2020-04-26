@@ -278,6 +278,10 @@ https://mp.weixin.qq.com/s/2FxD6ga6b_WOdAni16wd2Q
 
 自监督学习在计算机视觉应用最新概述，108页ppt Self-supervised learning
 
+https://mp.weixin.qq.com/s/3kwLoojFjJoPz4pUuEVA8g
+
+神奇的自监督场景去遮挡
+
 # 语义分割
 
 Semantic segmentation是图像理解的基石性技术，在自动驾驶系统（具体为街景识别与理解）、无人机应用（着陆点判断）以及穿戴式设备应用中举足轻重。

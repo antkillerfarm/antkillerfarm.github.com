@@ -290,6 +290,10 @@ https://mp.weixin.qq.com/s/4hL6wWQ73icEWHfK6QKSMw
 
 频域学习，Learning in the Frequency Domain
 
+https://mp.weixin.qq.com/s/Ax_Iv8IbDWid7EIO5usTbw
+
+可解释人工智能(XAI): 工业界挑战与经验教训，180页ppt
+
 # Linux参考资源+
 
 https://mp.weixin.qq.com/s/4tAxQ0auQfv5x7Dh3B-85g
@@ -345,35 +349,3 @@ https://linux.cn/article-8290-1.html
 https://mp.weixin.qq.com/s/IucIsbJPo4eUUopV8xNN9w
 
 图解Linux程序的链接原理
-
-# 新冠肺炎
-
-## 科研（续）
-
-https://mp.weixin.qq.com/s/vWpQLlfHFcAPleuuEvJdhw
-
-中国人更易感染新冠肺炎吗？
-
-https://mp.weixin.qq.com/s/zu009F4bS_fcSwYEPdFb-g
-
-全球首次用抗体检测破解新冠传播链条，痊愈病人被证明是新加坡疫情传播者
-
-https://mp.weixin.qq.com/s/jm9vpHxbmpODFPi5phDW1g
-
-这款硬核抗疫游戏火了，20万玩家在线科研拯救世界，美国名校出品，Nature曾点名表扬
-
-----
-
-伤寒玛丽”（Typhoid Mary），本名叫玛丽·梅伦（Mary Mallon，1869年9月23日——1938年11月11日），生于爱尔兰，15岁时移民美国。起初，她给人当女佣。后来，她发现自己很有烹调才能，于是转行当了厨师，每月能赚到比做女佣高出很多的薪水。玛丽虽然身体一直健康，却携带伤寒杆菌。后来玛丽相继传染多人，最终被隔离在纽约附近的北兄弟岛（North Brother Island）上的传染病房。
-
-https://www.zhihu.com/question/368287285/answer/989275113
-
-如何看待女子从武汉回河南后至今无症状，其5名亲人患新型肺炎？
-
-----
-
-抗病毒药一般以vir结尾，例如Remdesivir。所以药品的中文名一般就是XXX韦。
-
-https://mp.weixin.qq.com/s/GAAeUD5ZDROltfxcoSFaeA
-
-期待救急，你了解“老药新用”吗？

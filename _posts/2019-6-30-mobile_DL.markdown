@@ -367,27 +367,3 @@ GPU通信技术初探
 https://zhuanlan.zhihu.com/p/67785062
 
 不止显卡！这些硬件因素也影响着你的深度学习模型性能
-
-# 新冠肺炎
-
-## 口罩（续）
-
-https://mp.weixin.qq.com/s/IXp36BDIi_cblf1nk-iidw
-
-40万公里的征途，一场消毒除菌产品与病毒的赛跑（立白集团）
-
-----
-
-LVMH集团宣布，旗下Dior、Givenchy和娇兰三个品牌的香水生产线，将用于生产含酒精的消毒洗手液。
-
-奢侈品牌Prada将一家在佩鲁贾开设的工厂，改造成了口罩及医疗用品生产工厂，并计划在4月6日前，向意大利托斯卡纳医院运送8万件防护服，及11万只口罩。
-
-重症监护用肺呼吸机制造商Siare Engineering取消了占其营业额90％的外国订单，转而专为意大利提供机械，该公司产能从每月125台提升到到现在的500台。
-
-----
-
-3M公司的全称是明尼苏达矿务及制造业公司（Minnesota Mining and Manufacturing Company）。
-
-https://mp.weixin.qq.com/s/wE69bNC7DicO6kSWhsfq2A
-
-全球新冠确诊破200万，我们为什么比以往更需要3M？

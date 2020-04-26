@@ -269,118 +269,80 @@ https://mp.weixin.qq.com/s/o1vuL3RrWz9tyUPguZeSWA
 
 简单快捷的数据处理，数据科学需要注意的命令行
 
-# 新冠肺炎
+# 推荐系统的工程细节+
 
-## 国外疫情（续）
+https://mp.weixin.qq.com/s/ZggfBVw0Z0ODxjqAC4-Lbg
 
-https://mp.weixin.qq.com/s/7MmspadwBVdnKKaQ6mssig
+淘宝搜索模型如何全面实时化？
 
-新冠在日本：行走在暴发的边缘
+https://mp.weixin.qq.com/s/SPtNy_1_6fiFXKukMmVPlA
 
-https://mp.weixin.qq.com/s/aki6c574T6CxkBnhpI3eDg
+深度学习在网易严选智能客服中的应用
 
-Fauci采访
+https://mp.weixin.qq.com/s/dw988NgHl93B8sC2UFjtPg
 
-https://mp.weixin.qq.com/s/ZcxtiHR5l-Jcenef3JswHg
+推荐系统之数据与特征工程
 
-美国抗疫时间线
+https://mp.weixin.qq.com/s/TcxI-XSjj7UtHvx3xC55jg
 
-https://mp.weixin.qq.com/s/dwXUZ4mOP3Uv-TJ6Y77gOA
+微信读书怎么给你做推荐的？
 
-航母疑云！戒备森严的美法军舰缘何相继中招？
+https://mp.weixin.qq.com/s/MAfK4B2F8sPXRLodXkwnmw
 
-https://wxn.qq.com/cmsid/20200418A04EQF00
+Query理解和语义召回在知乎搜索中的应用
 
-反转！从抵触到支持，一文剖析欧美“戴口罩”观念转变原因
+https://mp.weixin.qq.com/s/t7LYfItthkszzvRp6opG5w
 
-https://mp.weixin.qq.com/s/RV0NYm2K7MoECnIbcJwr9Q
+机器学习在微博O系列广告中的应用
 
-One World演唱会：我依然相信音乐可以改变世界
+https://mp.weixin.qq.com/s/3urKkPfhi4JC7Qe2pLclsg
 
-https://mp.weixin.qq.com/s/EAbbPBWfQeGr3Fe9HYPvnw
+搜索模型核心技术公开，淘宝如何做用户建模？
 
-没用上5G的One World演唱会，视频会议软件Zoom和思科WebEX立功了
+https://mp.weixin.qq.com/s/0_G3jMpwJVbdJ85TajubIg
 
-----
+个性化海报在爱奇艺视频推荐场景中的实践
 
-“我亲爱的安吉奥，我觉得我们被中国人骗了！”
+https://mp.weixin.qq.com/s/YkABleB5hlHt_Zn6M6DgBw
 
-“哦何出此言啊我的总统先生？”
+从零开始构建企业级推荐系统
 
-“中国人说新冠死亡率在1-2%，咱们这儿都快5%死亡率了！他们是如何做到那么低死亡率的？”
+https://mp.weixin.qq.com/s/WOXSSA5srCqaNPO-j-Ogqw
 
-“总统先生，你需要党中央，国务院，中央军委，发改委，9个工业部门，8000多家配套工厂，还有10万多兢兢业业敢于冒生命危险冲上前线的医护人员，以及14亿积极响应政府号召自觉在家隔离共同抗击疫情的人民。总之，你需要一个伟大的国家。”
+优酷：如何让视频算法为质量服务？
 
-----
+https://mp.weixin.qq.com/s/ewkaYPQlFZ4EvVM8e8HK-g
 
-Biogen的高层领袖会议（Biogen Leadership Conference）。这个大会好比武汉的华南市场，甚至更加恶劣，因为大会上发生的都是人传人案例。
+今日头条、抖音推荐算法原理全文详解！
 
-与会175人，至今为止100多位已传染。也就是说，基本全灭。
+https://mp.weixin.qq.com/s/NVQPv5ua9kxw1MK8UVQcuQ
 
-----
+广告算法在阿里文娱用户增长中的实践
 
-特朗普这次遇到了一位真正的对手——新型冠状病毒！
+https://mp.weixin.qq.com/s/QxQzGtsBUFYknvl4uOdMvw
 
-它不看推特。
+深度学习在省钱快报推荐排序中的应用与实践
 
-它不做交易。
+https://mp.weixin.qq.com/s/FcZ1E9EZ_nwhi1JZ5jBV0Q
 
-它不怕制裁。
+机器学习加持的Airbnb体验搜索排序实践
 
-它不怕退群。
+https://mp.weixin.qq.com/s/HRGk5bfaOdj-6X4opEYA-w
 
-它不怕提高关税。
+美图个性化推送的AI探索之路
 
-他不能对它极限使压。
+https://mp.weixin.qq.com/s/1TbplmZ2nMUWcft_gKX2BA
 
-他不能讹诈或者勒索它。
+每天几十万条用户反馈，高德工程师如何提升处理效率？
 
-他不能派无人机斩首它。
+https://mp.weixin.qq.com/s/NUD3i2nEJL9P-tNpcty2CQ
 
-它不怕任何人，就算是蓝星第一帝国！
+推荐系统的人工调控
 
-----
+https://mp.weixin.qq.com/s/7hvYdOTnnw5pDDMx6N66Uw
 
-理应作为中流砥柱的CDC和DOH，在过去一周频繁更新指南，对于医护人员的防护装备，从悍马直接改成了汗马。
+阿里文娱搜索算法实践与思考
 
-比如对于口罩的使用上，刚开始对所有人员均推荐使用N95口罩，后来改成只有近距离操作人员才有资格用N95，其他人用外科口罩即可，再后来改成对同一个病人的N95可以重复使用，只需要放在塑料袋即可。
+https://mp.weixin.qq.com/s/j7j3u0YGo4DomXnJFmzoGA
 
-再比如对密切接触者的隔离，刚开始推荐对高中危接触者进行14天的隔离，后来改成如果没有症状，可以继续上班，监测症状即可，再后来改成即使病毒检测呈阳性，如果症状轻微，也可以继续上班，只需要戴口罩即可。戴什么口罩呢？没错，戴那些重复使用的口罩即可。
-
-----
-
-![](/images/img3/3_12.jpg)
-
-----
-
-伦敦一个医院icu，三个等待插管的病人戴着氧气面罩聊天。​
-
-“你是怎么来到医院的？”​
-
-“我相信了鲍里斯的群体免疫，被感染了。你呢？”​
-
-“我反对鲍里斯的群体免疫上街抗议，被感染了。那么你呢？我亲爱的先生。”​
-
-“我就是鲍里斯。”
-
-----
-
-在意大利，能歌善舞的人们在阳台上弹起了《Bella Ciao》，中文版是《啊朋友再见》。
-
-## 科研
-
-https://mp.weixin.qq.com/s/hG0AO43AicEN1o4GGg463w
-
-快速检测新型冠状病毒 是怎么做到的？
-
-https://mp.weixin.qq.com/s/aawHwJ8IIuHPE7Dc9yn1Ow
-
-从试剂盒到实验室 盘点一下影响确诊人数的客观因素
-
-https://mp.weixin.qq.com/s/zbqdndZTt4B0-v3KfIm5uA
-
-既没新样本，也没实验，如何猜到新冠病毒“喜欢”感染哪些细胞？
-
-https://mp.weixin.qq.com/s/T4GQWgnazMyljsa3Jg0E8Q
-
-一文分清P1、P2、P3、P4实验室四兄弟
+万字长文讲解如何基于智能推荐的精细化运营

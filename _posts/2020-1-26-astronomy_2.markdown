@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Falcon heavy, 阿波罗50年
+title: Falcon heavy, 两弹一星, 阿波罗50年
 category: Nature 
 ---
 
@@ -186,7 +186,7 @@ https://mp.weixin.qq.com/s/0lDJiu1nyS0j1aj7C4tT-g
 
 火箭狂人不幸坠亡，生前坚信“地平说”
 
-----
+# 两弹一星
 
 1958年5月17日，毛泽东在中共八大二次会议上发表了讲话，提出“我们也要搞人造卫星！”。出于一贯的幽默，他还补充道：“我们要抛就抛两万千克的，也许要从较小的抛起，但像美国那样只有鸡蛋大的，我们不抛!”
 

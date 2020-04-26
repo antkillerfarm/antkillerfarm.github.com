@@ -277,3 +277,7 @@ https://github.com/AlexeyAB/darknet
 https://zhuanlan.zhihu.com/p/135909702
 
 大神接棒，YOLOv4来了！
+
+https://mp.weixin.qq.com/s/Ia1ZhAeTgt8anXVd4qxE3A
+
+一张图梳理YOLOv4论文

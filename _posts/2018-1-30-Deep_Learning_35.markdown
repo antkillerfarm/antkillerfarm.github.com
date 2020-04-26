@@ -266,6 +266,10 @@ https://mp.weixin.qq.com/s/KdsHDoPEdrYZgqcW7SMfSw
 
 从DeepNet到HRNet，这有一份深度学习“人体姿势估计”全指南
 
+https://mp.weixin.qq.com/s/p3SsatJHrg1BOuwnoYo8xw
+
+打通多个视觉任务的全能Backbone:HRNet
+
 https://mp.weixin.qq.com/s/spaI9rPy9H3wnlStoncBqQ
 
 中科大&微软开源：基于高清表示网络的人体姿态估计

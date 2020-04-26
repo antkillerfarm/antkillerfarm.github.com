@@ -413,3 +413,7 @@ https://mp.weixin.qq.com/s/NkrPfitZ6o75XaGxGC0eZw
 https://mp.weixin.qq.com/s/nEw0Vem-aL9D6w-1lEAsBQ
 
 字节跳动基于深度强化学习的广告推荐模型DEAR
+
+https://mp.weixin.qq.com/s/xG7IboDg6tn13rRIgKSICg
+
+强化学习中从仿真器到现实环境的迁移

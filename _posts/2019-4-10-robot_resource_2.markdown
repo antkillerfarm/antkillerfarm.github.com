@@ -106,6 +106,32 @@ https://mp.weixin.qq.com/s/BLEP6nmGSfPY3iMh_N3JKw
 
 组合导航系列文章（二）：惯性器件综述
 
+## 泊车
+
+**半自动泊车**系统为驾驶员操控车速，计算平台根据车速及周边环境来确定并执行转向，对应于SAE自动驾驶级别中的L1；
+
+**全自动泊车**为计算平台根据周边环境来确定并执行转向和加减速等全部操作，驾驶员可在车内或车外监控，对应于SAE L2级。
+
+**自主泊车**又称为代客泊车或一键泊车：指驾驶员可以在指定地点处召唤停车位上的车辆，或让当前驾驶的车辆停入指定或随机的停车位。整个过程正常状态下无需人员操作和监管，对应于SAE L3级别。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/56236181
+
+自动/自主泊车技术简介
+
+https://mp.weixin.qq.com/s/GN4u91Dc5uYLP8N8rptczA
+
+全自动泊车辅助F-APA简介
+
+https://mp.weixin.qq.com/s/o74udojH7jGPPoxJSSBdMg
+
+停车不再难，L2到L4的泊车辅助系统技术剖析
+
+https://mp.weixin.qq.com/s/M5VphyTAFXiK2mJhIsvyvA
+
+从自动泊车到自主泊车
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/26988866
@@ -381,43 +407,3 @@ https://zhuanlan.zhihu.com/p/57077589
 https://zhuanlan.zhihu.com/p/57169482
 
 自动驾驶研发模拟仿真系统的工作介绍
-
-https://zhuanlan.zhihu.com/p/109900137
-
-传感器融合-任务篇
-
-https://zhuanlan.zhihu.com/p/109895639
-
-传感器融合-数据篇
-
-https://mp.weixin.qq.com/s/1sbL2vmugiIlSn_ehIOuig
-
-车载多传感器融合定位方案：GPS +IMU+MM
-
-https://zhuanlan.zhihu.com/p/56236181
-
-自动/自主泊车技术简介
-
-https://mp.weixin.qq.com/s/5kJfhp3vi9uuSFaeONKfrA
-
-打破传统方法，MIT新芯片帮自动驾驶汽车穿越浓雾
-
-https://zhuanlan.zhihu.com/p/57781001
-
-自动驾驶系统的硬件平台讨论
-
-https://mp.weixin.qq.com/s/ZUxkZXLC0tPkzptFKtudhw
-
-让机器人也能“问路”的视觉语言导航新方法
-
-https://mp.weixin.qq.com/s/6OkLjK1bMbw6a3bvYn_DCQ
-
-深度学习在自动驾驶感知领域的应用
-
-https://zhuanlan.zhihu.com/p/57029694
-
-自动驾驶中单目摄像头检测输出3-D边界框的方法一览
-
-https://mp.weixin.qq.com/s/bgP_xMfi3hXayscf9D5JIg
-
-谷歌提出Sim2Real：让机器人像人类一样观察世界

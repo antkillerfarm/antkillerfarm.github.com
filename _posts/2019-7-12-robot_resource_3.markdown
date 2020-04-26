@@ -110,10 +110,6 @@ https://mp.weixin.qq.com/s/ShLqAgB8VJJQjCS9iako6Q
 
 一文了解超级电容器
 
-https://mp.weixin.qq.com/s/GN4u91Dc5uYLP8N8rptczA
-
-全自动泊车辅助F-APA简介
-
 https://mp.weixin.qq.com/s/b4cnjOByE2j0gIljF7IXCw
 
 F-APA车位搜索及障碍物识别控制原理
@@ -297,10 +293,6 @@ https://mp.weixin.qq.com/s/sxm2cD7DAhJ6eIhUDvYRKA
 https://mp.weixin.qq.com/s/hs6uMkRctASmH1YrNOKFdw
 
 脱手检测在自动驾驶中的原理及应用
-
-https://mp.weixin.qq.com/s/o74udojH7jGPPoxJSSBdMg
-
-停车不再难，L2到L4的泊车辅助系统技术剖析
 
 https://zhuanlan.zhihu.com/p/83129242
 

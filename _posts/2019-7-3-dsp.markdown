@@ -441,3 +441,7 @@ https://mp.weixin.qq.com/s/Z27oInh5rdxnxt1-KFAiRA
 https://mp.weixin.qq.com/s/8mpc7AblZyRw7LCh35vL2g
 
 哈工大讯飞联合实验室发布知识蒸馏工具TextBrewer
+
+https://mp.weixin.qq.com/s/Zu_IPBQVJtcwNln-xvEZxQ
+
+DarkLabel：支持检测、跟踪、ReID数据集的标注软件

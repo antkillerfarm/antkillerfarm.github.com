@@ -144,6 +144,20 @@ https://blog.csdn.net/xxradon/article/details/86504906
 
 pytorch JIT浅解析
 
+## 
+
+TorchServe是由AWS和Facebook合作开发的 PyTorch 模型服务库。
+
+代码：
+
+https://github.com/pytorch/serve
+
+参考：
+
+https://mp.weixin.qq.com/s/AtuSS5paEZ_0RvpyLEJk2g
+
+Facebook联合AWS推出PyTorch模型服务框架：可让模型快速投入生产
+
 ## 参考
 
 https://mp.weixin.qq.com/s/zhkaenFdnB5KgaEYb-XDEQ

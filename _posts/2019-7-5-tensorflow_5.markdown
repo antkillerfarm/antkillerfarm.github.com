@@ -277,76 +277,52 @@ NuGet是C#项目的包管理工具，作用类似maven、pip。
 
 https://www.nuget.org/
 
-# 推荐系统的工程细节+
+# Python+
 
-https://mp.weixin.qq.com/s/ZggfBVw0Z0ODxjqAC4-Lbg
+https://mp.weixin.qq.com/s/G5qx3-1Wq4gcRSuRfrczuw
 
-淘宝搜索模型如何全面实时化？
+Python趣味打怪：60秒学会一个例子，147段简单代码助你从入门到大师
 
-https://mp.weixin.qq.com/s/SPtNy_1_6fiFXKukMmVPlA
+https://mp.weixin.qq.com/s/zIHJsyankFEf_ig4Xnb0Uw
 
-深度学习在网易严选智能客服中的应用
+工具推荐！我是如何使用Python脚本分析CPU使用情况的？
 
-https://mp.weixin.qq.com/s/dw988NgHl93B8sC2UFjtPg
+https://mp.weixin.qq.com/s/v-N5jUTVFBb-wV0a_RAg5A
 
-推荐系统之数据与特征工程
+Python实现代码雨效果
 
-https://mp.weixin.qq.com/s/TcxI-XSjj7UtHvx3xC55jg
+https://mp.weixin.qq.com/s/0wJRlGS2QXpEL2XaU_Ke-g
 
-微信读书怎么给你做推荐的？
+Python实现烟花特效
 
-https://mp.weixin.qq.com/s/MAfK4B2F8sPXRLodXkwnmw
+https://mp.weixin.qq.com/s/Hv0rPD29PPd3Rn6lW6w5dg
 
-Query理解和语义召回在知乎搜索中的应用
+教你使用Python制作酷炫二维码
 
-https://mp.weixin.qq.com/s/t7LYfItthkszzvRp6opG5w
+https://mp.weixin.qq.com/s/8Fgzb8JiAoNSJqUanSi85Q
 
-机器学习在微博O系列广告中的应用
+鼠年做只奔跑的猫呗，卖萌式监控系统资源~（QSystemTrayIcon）
 
-https://mp.weixin.qq.com/s/3urKkPfhi4JC7Qe2pLclsg
+https://mp.weixin.qq.com/s/2RRJDStTL7l2Ra3SnNEEYg
 
-搜索模型核心技术公开，淘宝如何做用户建模？
+发布自己的python库到pypi
 
-https://mp.weixin.qq.com/s/0_G3jMpwJVbdJ85TajubIg
+https://mp.weixin.qq.com/s/PBaDdLcYxDso2V4aZcFXpA
 
-个性化海报在爱奇艺视频推荐场景中的实践
+盘一盘Python错误类型
 
-https://mp.weixin.qq.com/s/YkABleB5hlHt_Zn6M6DgBw
+https://mp.weixin.qq.com/s/8uxc2t53N_j_mRPYbiG0sA
 
-从零开始构建企业级推荐系统
+5个案例让Python输出漂亮的命令行表格！
 
-https://mp.weixin.qq.com/s/WOXSSA5srCqaNPO-j-Ogqw
+https://mp.weixin.qq.com/s/3pGw9QdAZVE3OKZ-zGyb4g
 
-优酷：如何让视频算法为质量服务？
+使用Python远程登陆服务器的最佳实践
 
-https://mp.weixin.qq.com/s/ewkaYPQlFZ4EvVM8e8HK-g
+https://mp.weixin.qq.com/s/Bllw4rSkxd378LLUCh6oJA
 
-今日头条、抖音推荐算法原理全文详解！
+Python炫技操作：合并字典的七种方法
 
-https://mp.weixin.qq.com/s/NVQPv5ua9kxw1MK8UVQcuQ
+https://mp.weixin.qq.com/s/QWH9qhKzECX-1rqDLfZyhw
 
-广告算法在阿里文娱用户增长中的实践
-
-https://mp.weixin.qq.com/s/QxQzGtsBUFYknvl4uOdMvw
-
-深度学习在省钱快报推荐排序中的应用与实践
-
-https://mp.weixin.qq.com/s/FcZ1E9EZ_nwhi1JZ5jBV0Q
-
-机器学习加持的Airbnb体验搜索排序实践
-
-https://mp.weixin.qq.com/s/HRGk5bfaOdj-6X4opEYA-w
-
-美图个性化推送的AI探索之路
-
-https://mp.weixin.qq.com/s/1TbplmZ2nMUWcft_gKX2BA
-
-每天几十万条用户反馈，高德工程师如何提升处理效率？
-
-https://mp.weixin.qq.com/s/NUD3i2nEJL9P-tNpcty2CQ
-
-推荐系统的人工调控
-
-https://mp.weixin.qq.com/s/7hvYdOTnnw5pDDMx6N66Uw
-
-阿里文娱搜索算法实践与思考
+如何加速Python代码？
