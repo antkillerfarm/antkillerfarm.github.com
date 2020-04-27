@@ -34,6 +34,10 @@ https://mp.weixin.qq.com/s/6EOkYdiVm0Lvkc24WiRbFg
 
 基于自适应显着性的图像分割
 
+https://mp.weixin.qq.com/s/WuWZS25aAWDLpVZQKuP2Tw
+
+美团无人配送CVPR2020论文CenterMask解读
+
 # Fast Image Processing
 
 论文：

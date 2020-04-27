@@ -194,6 +194,10 @@ https://mp.weixin.qq.com/s/hOymVfSV7DCwqAX3GW5XGg
 
 纪念中国首颗人造卫星东方红一号发射50周年：念念不忘 必有回响
 
+https://mp.weixin.qq.com/s/QILTyVijDS8KfNZO-2bydg
+
+东方红一号最新照片，长这样！
+
 ----
 
 ![](/images/article/nuclear.png)

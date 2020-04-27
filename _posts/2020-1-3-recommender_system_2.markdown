@@ -284,6 +284,10 @@ https://mp.weixin.qq.com/s/0H2KYI3OQbmqxFQBt6-JEA
 
 如何设计一个A/B test？
 
+https://mp.weixin.qq.com/s/-y16GrLSMafoSF7ZT-KCiQ
+
+A/B测试的设计和执行
+
 ## 参考
 
 https://mp.weixin.qq.com/s/vpANPrl86Ou2fBVHgLXtBQ

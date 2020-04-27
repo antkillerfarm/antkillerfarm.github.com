@@ -310,6 +310,10 @@ https://mp.weixin.qq.com/s/vpHrLu8kuEuOp5eehT8Hcw
 
 目标检测正负样本区分策略和平衡策略总结(一)
 
+https://mp.weixin.qq.com/s/gJuXl6Oh_N_fJgQ9jT268w
+
+旷视研究院提出密集场景检测新方法：一个候选框，多个预测结果
+
 # 设计模式
 
 面向对象的设计模式有七大基本原则：

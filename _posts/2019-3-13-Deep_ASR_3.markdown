@@ -274,6 +274,10 @@ https://mp.weixin.qq.com/s/wjVDgwHpLYM3vZWL5AJvDg
 
 解决“鸡尾酒会问题”的利器-基于盲源分离的前端信号处理框架
 
+https://mp.weixin.qq.com/s/bJ4xdXcHPI8VQcXAvE8i1w
+
+可控时延语音识别文本后处理技术
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw
@@ -367,23 +371,3 @@ https://mp.weixin.qq.com/s/McWHS0esRRhIiBlB4CAGXA
 https://mp.weixin.qq.com/s?__biz=MzIzNjc0MTMwMA==&mid=2247491892&idx=1&sn=d23d0c20e3af340e5a55f19f98636811
 
 2019深度学习语音合成指南
-
-https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652055045&idx=3&sn=5c2a564350bdf5c2acb8679d05cba219
-
-DeepMind推出GAN-TTS：用生成对抗网络实现高保真语音
-
-https://mp.weixin.qq.com/s/-X2bgZ5P5BrPZFDJ-Dl1AQ
-
-MelGAN：基于生成对抗网络快速生成音频
-
-https://zhuanlan.zhihu.com/p/91024324
-
-变分自编码器（VAE）在语音合成中的应用
-
-https://mp.weixin.qq.com/s/oaI_X2SYeKVn7oXWGtFQag
-
-爱奇艺语音转换技术的探索与实践
-
-https://mp.weixin.qq.com/s/qPx1W_OebGgvb4g9Sb944A
-
-使用GAN进行高保真语音合成
