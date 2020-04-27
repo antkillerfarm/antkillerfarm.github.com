@@ -372,6 +372,10 @@ https://mp.weixin.qq.com/s/1OODeAFaRLFK3elECyZcng
 
 机器学习模型可解释性的详尽介绍
 
+https://mp.weixin.qq.com/s/Ax_Iv8IbDWid7EIO5usTbw
+
+可解释人工智能(XAI): 工业界挑战与经验教训，180页ppt
+
 # 行人重识别+
 
 https://mp.weixin.qq.com/s/Vi_1Sg8OKG-EG4aC4QTCWA

@@ -235,37 +235,3 @@ gl-matrix 3.0以后添加了名字空间glMatrix，所以老旧的代码可能�
 ## 其他库
 
 https://deck.gl/
-
-# DRL参考资源
-
-https://mp.weixin.qq.com/s?__biz=MzU1NTMyOTI4Mw==&mid=2247494226&idx=1&sn=a96ea0ad8961ec3698301cf0c4514843
-
-以YouTube论文学习如何在推荐场景应用强化学习
-
-https://mp.weixin.qq.com/s/SpCorsAiTWGYGiohT_gZtg
-
-如何训练智能体Agent玩毁灭战士ViZDoom？
-
-https://mp.weixin.qq.com/s/ewC2_8O29Gg0blxK7mHsYA
-
-比TD、MC、MCTS指数级快，性能超越A3C、DDQN等模型，这篇RL算法论文在Reddit上火了
-
-https://mp.weixin.qq.com/s/Q9QzXo_M3jYKjBWSsLYwgQ
-
-强化学习+树搜索：一种新型程序合成方法
-
-https://mp.weixin.qq.com/s/l46yJdRaftMlwr6odiSiHg
-
-Yoshua Bengio团队基于深度强化学习打造聊天机器人MILABOT
-
-https://mp.weixin.qq.com/s/6_cW22DCzSw3DpUDrLXLcA
-
-OpenAI提出强化学习近端策略优化，可替代策略梯度法
-
-http://mp.weixin.qq.com/s/S4jhpNKYZP5YQWaiiOQGFA
-
-DeepMind：“预测地图”海马体催生强化学习新算法
-
-https://mp.weixin.qq.com/s/KZHidOi5KYgg393R_JspBA
-
-DeepMind都拿不下的游戏，刚刚被OpenAI玩出历史最高分

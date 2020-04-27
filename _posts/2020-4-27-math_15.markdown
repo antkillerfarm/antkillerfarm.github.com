@@ -1,0 +1,115 @@
+---
+layout: post
+title:  数学狂想曲（十五）——阴影面积, 肺炎版《黄冈密卷》
+category: math 
+---
+
+# 阴影面积
+
+![](/images/img3/p0.png)
+
+题如上图，已知正方形边长为10，求阴影面积。
+
+解：
+
+旋转图形建立坐标系如下图：
+
+![](/images/img3/p1.png)
+
+阴影部分上下曲边公式如下：
+
+$$\begin{cases}
+x^2+y^2=5^2 \\
+x^2+(y+5\sqrt{2})^2=10^2
+\end{cases}$$
+
+求解交点坐标：
+
+$$(y+5\sqrt{2})^2-y^2=75 \to 10\sqrt{2}y+50=75$$
+
+$$\begin{cases}
+y=\frac{5\sqrt{2}}{4} \\
+x=\sqrt{\frac{175}{8}}
+\end{cases}$$
+
+用积分法求解阴影面积：
+
+$$\begin{align}
+\frac{S}{4} & =\int_0^{\sqrt{\frac{175}{8}}}\sqrt{(5^2-x^2)}-(\sqrt{(10^2-x^2)}-5\sqrt{2})\mathrm{d}x \\
+& = \int_0^{\sqrt{\frac{175}{8}}}\sqrt{(5^2-x^2)}\mathrm{d}x - \int_0^{\sqrt{\frac{175}{8}}}\sqrt{(10^2-x^2)}\mathrm{d}x + 5\sqrt{2} \cdot \sqrt{\frac{175}{8}} 
+\end{align}$$
+
+查常用积分表，可得：
+
+$$\int \sqrt{a^2 - x^2}\mathrm{d}{x} = \frac12 \left(x\sqrt{a^2 - x^2} + a^2\arcsin\frac xa\right) + C$$
+
+$$\begin{align}
+\frac{S}{4} & =\left[\frac{25}{16}\sqrt{7} + \frac{25}{2}\arcsin(\frac{\sqrt{\frac{7}{2}}}{2})\right] - \left[\frac{125}{16}\sqrt{7} + 50\arcsin(\frac{\sqrt{\frac{7}{2}}}{4})\right] + \frac{25}{2}\sqrt{7} \\
+& = \frac{25}{4}\sqrt{7} + \frac{25}{2}\arcsin(\frac{\sqrt{\frac{7}{2}}}{2}) - 50\arcsin(\frac{\sqrt{\frac{7}{2}}}{4})
+\end{align}$$
+
+$$S=25\sqrt{7} + 50\arcsin(\frac{\sqrt{\frac{7}{2}}}{2}) - 200\arcsin(\frac{\sqrt{\frac{7}{2}}}{4})\approx 29.27625$$
+
+参考：
+
+https://www.zhihu.com/question/60697114
+
+网传无锡小升初题，求阴影面积
+
+http://wuli.wiki//online/ITable.html
+
+积分表
+
+http://wuli.wiki//online/
+
+小时物理百科
+
+# 肺炎版《黄冈密卷》
+
+问题由来：
+
+https://mp.weixin.qq.com/s/dR7fg6PTCVAnezlW6gTY2w
+
+新冠病毒最“强”管控，《黄冈密卷》数学题到底有多难
+
+----
+
+1.设$$\sqrt{3+\sqrt{2}+\sqrt{3}+\sqrt{6}}=\sqrt{x}+\sqrt{y}+\sqrt{z}$$，且x、y、z为有理数，则$$xyz$$=?
+
+解：
+
+$$3+\sqrt{2}+\sqrt{3}+\sqrt{6} = x+y+z+2\sqrt{xy}+2\sqrt{xz}+2\sqrt{yz}$$
+
+由x、y、z为有理数可得：
+
+$$4xy=2, 4xz=3, 4yz=6$$
+
+由于x、y、z在原式中是对称的，所以上式中选择哪个等于2、3、6，都是无所谓的。
+
+三式相乘可得：
+
+$$4^3 \cdot (xyz)^2 = 36$$
+
+$$(xyz)^2 = 9/16$$
+
+$$xyz = 3/4$$
+
+----
+
+2.设二次函数$$f(x)=ax^2+ax+1$$的图像开口向下，且满足$$f(f(1))=f(3)$$，则$$2a=?$$
+
+解：
+
+令$$y=2a$$，则$$f(1)=2a+1=y+1$$
+
+$$f(f(1))=f(y+1)=f(3)$$
+
+$$a(y+1)^2+a(y+1)+1=9a+3a+1$$
+
+$$(y+1)^2+(y+1)=12$$
+
+$$y^2+3y-10=0$$
+
+$$(y+5)(y-2)=0$$
+
+因为图像开口向下，所以$$2a=-5$$。

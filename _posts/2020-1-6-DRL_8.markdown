@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度强化学习（八）——Dota 2, DRL参考资源（2）
+title:  深度强化学习（八）——Dota 2, DRL参考资源（1）
 category: DRL 
 ---
 

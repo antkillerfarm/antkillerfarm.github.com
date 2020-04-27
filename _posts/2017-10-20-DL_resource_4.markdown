@@ -290,10 +290,6 @@ https://mp.weixin.qq.com/s/4hL6wWQ73icEWHfK6QKSMw
 
 频域学习，Learning in the Frequency Domain
 
-https://mp.weixin.qq.com/s/Ax_Iv8IbDWid7EIO5usTbw
-
-可解释人工智能(XAI): 工业界挑战与经验教训，180页ppt
-
 # Linux参考资源+
 
 https://mp.weixin.qq.com/s/4tAxQ0auQfv5x7Dh3B-85g

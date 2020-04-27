@@ -62,6 +62,12 @@ https://mp.weixin.qq.com/s/oZTU7TAEf-gYzlSXdt0_BA
 
 在《机器学习（一）》中，我们已经指出梯度下降是解决凸优化问题的一般方法。而如何更有效率的梯度下降，就是本节中Optimizer的责任了。
 
+## 教程
+
+http://www.stat.cmu.edu/~ryantibs/convexopt/
+
+Machine Learning 10-725: Convex Optimization
+
 ## 原始版本
 
 早期的梯度下降法一般用以下公式确定学习率：

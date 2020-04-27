@@ -418,34 +418,16 @@ https://mp.weixin.qq.com/s/TglQzG1iE0keEGLKZ-pGIg
 
 Python数据处理实战——使用Scikit-Learn进行多类文本分类
 
-# 新冠肺炎
+# GAN参考资源+
 
-## 疫情建模
+https://mp.weixin.qq.com/s/SGCoCy8wJEhEpLSHrYK3pQ
 
-https://mp.weixin.qq.com/s/2XsZzfZI-gAHC-D5HGNZXw
+韩松、朱俊彦等人提出GAN压缩法：算力消耗不到1/9，现已开源
 
-从目前的数据，再次分析一下武汉的新冠肺炎患者数量和死亡率
+https://mp.weixin.qq.com/s/D-rh9m7G-ERjWEEG6BQJNg
 
-https://mp.weixin.qq.com/s/I5I5Jh7brFGRBTAFah-C4w
+每个人都能用英伟达GAN造脸了
 
-武汉新冠肺炎传播的动力学模型及预测
+https://mp.weixin.qq.com/s/qRW344wWgS9PJ6UCwknS8g
 
-https://mp.weixin.qq.com/s/-C03P-I4w91kLSGsuhxAKQ
-
-新型冠状病毒传播与扩散的控制模型
-
-https://mp.weixin.qq.com/s/gZCD8ATxGrpHSZLKpcHfiA
-
-基于元胞自动机模拟新型肺炎病毒的传播和预防
-
-https://mp.weixin.qq.com/s/ZOPncvPpFyLIwH_XChAdbg
-
-基于微分方程和元胞自动机模拟新型肺炎病毒的传播
-
-https://mp.weixin.qq.com/s/4w6CTGaKKEH9APVNH9Ue8w
-
-扩散信息、交通管制、自我隔离，哪个更能遏制病毒传播？
-
-https://mp.weixin.qq.com/s/tBoM9o3pK89bprK8npHLWA
-
-可能会说谎的地图！全国疫情地理格局的重新审视
+Local GAN
