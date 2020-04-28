@@ -312,6 +312,14 @@ https://mp.weixin.qq.com/s/sMocYFvESXoBGtX_NWmQkQ
 
 预训练语言模型的前世今生：百度出品ERNIE合集，问国产预训练语言模型哪家强
 
+https://mp.weixin.qq.com/s/uOGNoePkwfeixTtI4q4t8Q
+
+预训练语言模型的前世今生：MT-DNN(KD) : 预训练、多任务、知识蒸馏的结合
+
+https://mp.weixin.qq.com/s/-fQ9VlaOjssDufcZuCe91w
+
+预训练语言模型的前世今生：结合HuggingFace代码浅析Transformer
+
 https://mp.weixin.qq.com/s/WDXGCC_MPK_sBCj4Bx6EDw
 
 从静态到动态，词表征近几十年发展回顾
@@ -335,33 +343,3 @@ https://mp.weixin.qq.com/s/UVeWDavdHxmziUWW39jrkA
 https://mp.weixin.qq.com/s/JSWw5RBgQoW-PrfIhbMtjQ
 
 原理篇二：从ELMo到ALBERT
-
-## ELMo
-
-https://mp.weixin.qq.com/s/I315hYPrxV0YYryqsUysXw
-
-NLP的游戏规则从此改写？从word2vec, ELMo到BERT
-
-https://mp.weixin.qq.com/s/VL09dIQE6kAUzj5-CRFoXA
-
-ELMo的朋友圈：预训练语言模型真的一枝独秀吗？
-
-https://mp.weixin.qq.com/s/1nZV6wXzeIxIAAovFOageA
-
-手把手教你用ELMo模型提取文本特征
-
-https://mp.weixin.qq.com/s/S3dISq03PDXPvFsL4xjzNQ
-
-通俗理解ELMo
-
-https://zhuanlan.zhihu.com/p/37684922
-
-ELMo
-
-https://mp.weixin.qq.com/s/i7EJSNzDsNNbK2YA_YNu8g
-
-词向量与ELMo模型
-
-https://mp.weixin.qq.com/s/qbXZGiKYEuTI-2l4iYZlbQ
-
-图文并茂带你细致了解ELMo的各种细节

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Mysql, 安全, Kotlin, diff&patch
+title:  Mysql, 安全, diff&patch
 category: technology 
 ---
 
@@ -188,6 +188,10 @@ http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
 
 理解OAuth 2.0
 
+https://my.oschina.net/u/4231722/blog/3154805
+
+IM的扫码登录功能如何实现？一文搞懂主流的扫码登录技术原理
+
 https://mp.weixin.qq.com/s/QsKceFcxELbUDSbehs8QpQ
 
 解读https的正确姿势
@@ -219,34 +223,6 @@ https://mp.weixin.qq.com/s/nWoo-Pr50341WJNwtSZq1w
 https://mp.weixin.qq.com/s/z5zMETSMUGoTiZYMooKZ-g
 
 内核空间镜像攻击揭秘：ARM硬件特性，竟能开启安卓8终端的上帝模式？
-
-# Kotlin
-
-Kotlin是一门编程语言，由JetBrains公司开发，与Java 100%互通。
-
-官网：
-
-http://kotlinlang.org/
-
-官网文档：
-
-http://kotlinlang.org/docs/reference/android-overview.html
-
-国内中文文档：
-
-https://huanglizhuo.gitbooks.io/kotlin-in-chinese/content/
-
-国内中文文档2：
-
-http://www.liying-cn.net/kotlin/docs/reference/
-
-国内中文文档3：
-
-https://www.kotlincn.net/
-
-官方示例：
-
-https://github.com/Kotlin/kotlin-examples
 
 # diff&patch
 

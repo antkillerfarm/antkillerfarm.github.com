@@ -265,3 +265,7 @@ https://zhuanlan.zhihu.com/p/59762355
 https://mp.weixin.qq.com/s/NkwyHsmpZCwsQPiQOMK7zw
 
 针对复杂问题的知识图谱问答最新进展
+
+https://mp.weixin.qq.com/s/IIsmVvlblyEj6Ijn77DneQ
+
+知识图谱中的实体摘要:算法、评价和应用，123页ppt

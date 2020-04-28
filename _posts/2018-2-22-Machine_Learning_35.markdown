@@ -297,3 +297,7 @@ https://mp.weixin.qq.com/s/af-z73asc-PmpEsI_yEulA
 https://mp.weixin.qq.com/s/AOI2LUjiKPUJFE0D7zX0Hw
 
 谷歌新研究：基于数据共享的神经网络快速训练方法
+
+https://mp.weixin.qq.com/s/Q0XyKIrbOIrA3YsYHmwK1Q
+
+移动端高效率的分组网络都发展到什么程度了？

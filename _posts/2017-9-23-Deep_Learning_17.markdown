@@ -1,8 +1,123 @@
 ---
 layout: post
-title:  深度学习（十七）——无监督/半监督/自监督深度学习, 语义分割
+title:  深度学习（十七）——自动求导, 无监督/半监督/自监督深度学习
 category: DL 
 ---
+
+# 自动求导
+
+DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。
+
+论文：
+
+《Automatic Differentiation in Machine Learning: a Survey》
+
+## Numerical differentiation
+
+数值微分最大的特点就是很直观，好计算，它直接利用了导数定义：
+
+$$f'(x)=\lim_{h\to 0}{f(x+h)-f(x)\over h}$$
+
+不过这里有一个很大的问题：h怎么选择？选大了，误差会很大；选小了，不小心就陷进了浮点数的精度极限里，造成舍入误差。
+
+第二个问题是对于参数比较多时，对深度学习模型来说，上面的计算是不够高效的，因为每计算一个参数的导数，你都需要重新计算$$f(x+h)$$。
+
+因此，这种方法并不常用，而主要用于做梯度检查（Gradient check），你可以用这种不高效但简单的方法去检查其他方法得到的梯度是否正确。
+
+## Symbolic differentiation
+
+符号微分的主要步骤如下：
+
+1.需要预置基本运算单元的求导公式。
+
+2.遍历计算图，得到运算表达式。
+
+3.根据导数的代入法则和四则运算法则，求出复杂运算的求导公式。
+
+这种方法没有误差，是目前的主流，但遍历比较费时间。
+
+## Automatic differentiation
+
+除此之外，常用的自动求导技术，还有Automatic differentiation。（请注意这里的AD是一个很狭义的概念。）
+
+类比复数的概念：
+
+$$x = a + bi \quad (i^2 = -1)$$
+
+我们定义Dual number：
+
+$$x \mapsto x = x + \dot{x} d \quad (d^2=0)$$
+
+定义Dual number的运算法则：
+
+$$(x + \dot{x}d) + ( y + \dot{y}d) = x + y + (\dot{x} + \dot{y})d$$
+
+$$(x + \dot{x}d) ( y + \dot{y}d) = xy + \dot{x}yd + x\dot{y}d  +  \dot{x}\dot{y}d^2 = xy + (\dot{x}y+ x\dot{y})d$$
+
+$$-(x + \dot{x}d) = - x - \dot{x}d$$
+
+$$\frac{1}{x + \dot{x}d} = \frac{1}{x} - \frac{\dot{x}}{x^2}d$$
+
+dual number有很多非常不错的性质。以下面的指数运算多项式为例：
+
+$$f(x) = p_0 + p_1x + p_2x^2 + ... + p_nx^n$$
+
+用$$x + \dot{x}d$$替换x，则有：
+
+$$f(x + \dot{x}d) =   p_0 + p_1(x + \dot{x}d) + ... +  p_n(x + \dot{x}d)^n \\ 
+= p_0 + p_1x + p_2x^2 + ... + p_nx^n + \\ 
+p_1\dot{x}d + 2p_2x\dot{x}d + ... + np_{n-1}x\dot{x}d\\ 
+= f(x) + f'(x)\dot{x}d$$
+
+可以看出d的系数就是$$f'(x)$$。
+
+## 不可导函数的求导
+
+不可导函数的求导，一般采用泰勒展开的方式。典型的算法有PGD（Proximal Gradient Descent）。
+
+参考：
+
+https://blog.csdn.net/bingecuilab/article/details/50628634
+
+Proximal Gradient Descent for L1 Regularization
+
+## 参考
+
+https://mp.weixin.qq.com/s/7Z2tDhSle-9MOslYEUpq6g
+
+从概念到实践，我们该如何构建自动微分库
+
+https://mp.weixin.qq.com/s/bigKoR3IX_Jvo-re9UjqUA
+
+机器学习之——自动求导
+
+https://www.jianshu.com/p/4c2032c685dc
+
+自动求导框架综述
+
+https://mp.weixin.qq.com/s/xXwbV46-kTobAMRwfKyk_w
+
+自动求导--Deep Learning框架必备技术二三事
+
+https://mp.weixin.qq.com/s/f0xFfA1inOVOdJnSZR4k6Q
+
+自动微分技术
+
+https://mp.weixin.qq.com/s/0tTlPG4hd9hcHORkZF6w1A
+
+PyTorch的自动求导机制详细解析，PyTorch的核心魔法
+
+https://mp.weixin.qq.com/s/PELBuCvu-7KQ33XBtlYfYQ
+
+深度学习中的微分
+
+https://zhuanlan.zhihu.com/p/24709748
+
+矩阵求导术（上）
+
+https://zhuanlan.zhihu.com/p/24863977
+
+矩阵求导术（下）
 
 # 无监督/半监督/自监督深度学习
 
@@ -245,101 +360,3 @@ OpenAI科学家一文详解自监督学习
 https://mp.weixin.qq.com/s/fy1gUElWVWcOVvzv6fGmdg
 
 谷歌大脑推出视觉领域任务自适应基准：VTAB
-
-https://zhuanlan.zhihu.com/p/80815225
-
-Image-Level弱监督图像语义分割汇总简析
-
-https://mp.weixin.qq.com/s/5czWf0xpqva5pmuvJDn5AQ
-
-Google研究院提出FixMatch，简单粗暴却极其有效的半监督学习方法，附14页PDF下载
-
-https://zhuanlan.zhihu.com/p/108088719
-
-SSL:Self-Supervised Learning(自监督学习)
-
-https://zhuanlan.zhihu.com/p/108625273
-
-Self-Supervised Learning入门介绍
-
-https://zhuanlan.zhihu.com/p/108906502
-
-Self-supervised Learning再次入门
-
-https://mp.weixin.qq.com/s/VvUj0S2OTf8BowGRjDuVag
-
-图解自监督学习，人工智能蛋糕中最大的一块
-
-https://mp.weixin.qq.com/s/df51T24mBVycBeI_M7QqOQ
-
-无标记数据学习, 83ppt
-
-https://mp.weixin.qq.com/s/2FxD6ga6b_WOdAni16wd2Q
-
-自监督学习在计算机视觉应用最新概述，108页ppt Self-supervised learning
-
-https://mp.weixin.qq.com/s/3kwLoojFjJoPz4pUuEVA8g
-
-神奇的自监督场景去遮挡
-
-# 语义分割
-
-Semantic segmentation是图像理解的基石性技术，在自动驾驶系统（具体为街景识别与理解）、无人机应用（着陆点判断）以及穿戴式设备应用中举足轻重。
-
-我们都知道，图像是由许多像素（Pixel）组成，而“语义分割”顾名思义就是将像素按照图像中表达语义含义的不同进行分组（Grouping）/分割（Segmentation）。
-
-![](/images/article/image_enet.png)
-
-上图是语义分割网络ENet的实际效果图。其中，左图为原始图像，右图为分割任务的真实标记（Ground truth）。
-
-显然，在图像语义分割任务中，其输入为一张HxWx3的三通道彩色图像，输出则是对应的一个HxW矩阵，矩阵的每一个元素表明了原图中对应位置像素所表示的语义类别（Semantic label）。
-
-因此，图像语义分割也称为“图像语义标注”（Image semantic labeling）、“像素语义标注”（Semantic pixel labeling）或“像素语义分组”（Semantic pixel grouping）。
-
-由于图像语义分割不仅要识别出对象，还要标出每个对象的边界。因此，与分类目的不同，相关模型要具有像素级的密集预测能力。
-
-目前用于语义分割研究的两个最重要数据集是PASCAL VOC和MSCOCO。
-
-参考：
-
-https://mp.weixin.qq.com/s/Nmr5oLe_MSLjYjWXUILiMw
-
-视觉分割任务：论文与评测基准列表汇总
-
-https://zhuanlan.zhihu.com/p/21824299
-
-从特斯拉到计算机视觉之“图像语义分割”
-
-https://zhuanlan.zhihu.com/SemanticSegmentation
-
-一个语义分割的专栏
-
-https://mp.weixin.qq.com/s/zZ-i54_wqzVQxTCFABNIMQ
-
-闲聊图像分割这件事儿
-
-https://mp.weixin.qq.com/s/9F2UB_5ah1nEe3dfyoeRhg
-
-图像分割算法综述
-
-# 语义分割常见评价指标
-
-假设总计有k+1分类(标记为$$L_0$$到$$L_k$$，其中包含一个背景类别)，$$P_{ij}$$表示类别为i的像素被预测为类别为j的数目，这样来说$$P_{ii}$$就表示TP(true positives)，$$P_{ij}$$与$$P_{ji}$$分别表示为FP(false positives)与FN(false negatives)。
-
-- PA(Pixel Accuracy)
-
-最简单的度量计算，总的像素跟预测正确像素的比率：
-
-$$PA=\frac{\sum_{i=0}^k P_{ii}}{\sum_{i=0}^k \sum_{j=0}^k P_{ij}}$$
-
-- MPA(Mean Pixel Accuracy)
-
-基于每个类别正确的像素总数与每个类别总数比率求和得到的均值：
-
-$$MPA=\frac{1}{k+1}\sum_{i=0}^k\frac{P_{ii}}{\sum_{j=0}^k P_{ij}}$$
-
-- MIoU(Mean Intersection over Union)
-
-它通过计算交并比来度量，这里交并比代指ground truth与预测分割结果之间。是重新计算TP跟 (TP + FN+FP)之和之间的比率。IoU是基于每个类别计算，然后再求均值。公式如下：
-
-$$MIoU=\frac{1}{k+1}\sum_{i=0}^k\frac{P_{ii}}{\sum_{j=0}^k P_{ij} + \sum_{j=0}^k P_{ji}-P_{ii}}$$

@@ -157,6 +157,10 @@ https://www.zhihu.com/question/33952003
 
 如何通过词向量技术来计算2个文档的相似度?
 
+https://mp.weixin.qq.com/s/x_y_yygV0L5FdqfKM9xzig
+
+Doc2vec原理解析及代码实践
+
 ## FastText
 
 Word2Vec作者Mikolov加盟Facebook之后，提出了文本分类新作FastText。

@@ -318,6 +318,10 @@ https://mp.weixin.qq.com/s/Yr8CrCtJquKQ38tt2T0VCQ
 
 采用BERT的无监督NER
 
+https://zhuanlan.zhihu.com/p/135453456
+
+命名实体识别NER论文综述：那些年，我们一起追过的却仍未知道的花名（一）
+
 ## 文本摘要
 
 https://mp.weixin.qq.com/s/jk1XgnuydrsTg3HvV0CVvw

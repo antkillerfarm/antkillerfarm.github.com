@@ -224,6 +224,12 @@ Byte Pair Encoding(BPE)本来是一种数据压缩算法，后来被用于分词
 
 https://github.com/rsennrich/subword-nmt
 
+参考：
+
+https://www.cnblogs.com/huangyc/p/10223075.html
+
+一文读懂BERT中的WordPiece
+
 # Image Caption Generation
 
 Image Caption Generation的目标是：给定一张图片，让计算机用一句话来描述这张图片。如果将这里的Image换成Video，那就是Video Caption Generation了。

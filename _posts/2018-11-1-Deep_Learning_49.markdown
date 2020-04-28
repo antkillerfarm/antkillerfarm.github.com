@@ -4,44 +4,6 @@ title:  深度学习（四十九）——Fast Image Processing, DMN, 元学习
 category: DL 
 ---
 
-# 语义分割进阶（续）
-
-https://mp.weixin.qq.com/s/LZNla-NKAu8wmi-OaJD8yA
-
-旷视研究院推出可学习的树状滤波器，实现保留结构信息的特征变换
-
-https://mp.weixin.qq.com/s/lTPm229gzV_9RU-aiY-xQg
-
-2019年5篇图像分割算法最佳综述
-
-https://mp.weixin.qq.com/s/n9Xdj5RKGR9cyXXNzxzvSw
-
-基于深度学习的图像分割在高德的实践
-
-https://blog.csdn.net/sanshibayuan/article/details/103642419
-
-单阶段实例分割（Single Shot Instance Segmentation）
-
-https://mp.weixin.qq.com/s/v_TTwTWx0lu2rJmxvzQQ4g
-
-北航、旷视联合，打造最强实时语义分割网络
-
-https://mp.weixin.qq.com/s/aSHhpMtgzV4_6NTElTvPIA
-
-语义分割－多层特征融合
-
-https://mp.weixin.qq.com/s/6EOkYdiVm0Lvkc24WiRbFg
-
-基于自适应显着性的图像分割
-
-https://mp.weixin.qq.com/s/WuWZS25aAWDLpVZQKuP2Tw
-
-美团无人配送CVPR2020论文CenterMask解读
-
-https://zhuanlan.zhihu.com/p/134111177
-
-实例分割新思路: Deep Snake
-
 # Fast Image Processing
 
 论文：
@@ -187,6 +149,10 @@ Meta-Learning in Neural Networks: A survey
 https://mp.weixin.qq.com/s/qoKQwEvOnP384i5Z-_jO1A
 
 CVPR2019最新元学习教程：基于元学习的计算机视觉应用
+
+https://zhuanlan.zhihu.com/p/136975128
+
+一文入门元学习（Meta-Learning）
 
 https://mp.weixin.qq.com/s/KtO3OTZ-bZ6m0ZSI6jTyjw
 

@@ -336,6 +336,10 @@ https://www.zhihu.com/question/339002300
 
 One-Shot 神经网络搜索(NAS)的searching阶段到底在做什么？
 
+https://mp.weixin.qq.com/s/vq4HrSxhkN6gNIrb0BCxuQ
+
+SMASH：经典One-Shot神经网络搜索，仅需单卡
+
 https://mp.weixin.qq.com/s/323RA6UtnyTySoXVXcJ2vA
 
 华人团队打造：AutoML+GAN=AutoGAN！AI设计GAN模型比人类更好
@@ -371,3 +375,7 @@ https://mp.weixin.qq.com/s/smAlLm-JZn_s2utSCVk7ig
 https://mp.weixin.qq.com/s/E0ULyXGz3UEcD0cIg-XkNA
 
 优化方法可以进行自动搜索学习吗？
+
+https://mp.weixin.qq.com/s/439I6hHIfq6KpkLEwAgDrw
+
+MIT韩松团队开发“万金油”母网，嵌套10^19个子网，包下全球所有设备

@@ -343,3 +343,7 @@ VAE系解纠缠：从VAE到βVAE，再到β-TCVAE
 https://mp.weixin.qq.com/s/YZcw5pnHzuACSvEmGZHnEQ
 
 自回归模型:PixelCNN
+
+https://mp.weixin.qq.com/s/yB7tq2vcBpVBnM-j9PgRsw
+
+人脸合成效果媲美StyleGAN，而它是个自编码器

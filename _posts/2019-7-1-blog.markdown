@@ -6,6 +6,8 @@ category: essay
 
 # Blog维护日志
 
+2020.4.28 添加Segmentation分类。
+
 2020.1.23 添加Nature分类。
 
 2020.1.1 文章数达到350篇。添加Recommender system分类。
@@ -256,10 +258,6 @@ https://mp.weixin.qq.com/s/kns2pGuqU8ifcNz7CpZoEg
 
 影响半导体发展进程的六个华人
 
-https://mp.weixin.qq.com/s/Fkcbb-4LC_NsVJHCM-zRWQ
-
-3M：世界上最不务正业公司——不只是口罩，好像哪里都离不开他！芯片制造也需要3M！
-
 https://mp.weixin.qq.com/s/aLkbYlLvVWyYdK8iiL45Pw
 
 芯片设计的起源（Lynn Conway）
@@ -267,6 +265,10 @@ https://mp.weixin.qq.com/s/aLkbYlLvVWyYdK8iiL45Pw
 https://mp.weixin.qq.com/s/jqP52LFcmd5oGRLBfE2J_A
 
 光刻机编年史（1959-1969）
+
+https://mp.weixin.qq.com/s/_YTvP1MN0HXzOY0XJ1Ri3Q
+
+1976-2021 45年苹果电脑CPU之变迁
 
 ----
 

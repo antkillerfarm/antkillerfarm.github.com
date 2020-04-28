@@ -110,6 +110,18 @@ https://mp.weixin.qq.com/s/oVJnVNQBuAPsWKTgOCxCRw
 
 韩家炜：最新《异构网络表示学习》2020综述论文大全
 
+https://mp.weixin.qq.com/s/f61AX_Gt_UNEopw1JrkKCw
+
+图神经网络推理，27页ppt精炼讲解
+
+https://mp.weixin.qq.com/s/4wqIxphHauecSCRxy-6p3w
+
+元学习与图神经网络逻辑推导，55页ppt
+
+https://mp.weixin.qq.com/s/fUZ0G0lzqfzaCjPSYBNIzQ
+
+图神经网络，Graph Neural Networks，附60页ppt
+
 ## 综述
 
 《A Comprehensive Survey on Graph Neural Networks》

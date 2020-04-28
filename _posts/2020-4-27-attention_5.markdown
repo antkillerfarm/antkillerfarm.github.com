@@ -1,10 +1,42 @@
 ---
 layout: post
-title:  Attention（四）——BERT（3）
+title:  Attention（五）——BERT（3）
 category: Attention 
 ---
 
 # BERT
+
+https://zhuanlan.zhihu.com/p/66053631
+
+BERT
+
+https://mp.weixin.qq.com/s/WEbJnO04DOrsxUbzpgL66g
+
+BERT源码分析（PART I）
+
+https://mp.weixin.qq.com/s/iXjE7KoyvFQ8uekLKRK4jw
+
+BERT源码分析（PART II）
+
+https://mp.weixin.qq.com/s/DxBC_x5ZWC6SECfnwDGnVg
+
+BERT源码分析（PART III）
+
+https://mp.weixin.qq.com/s/kI_k_plZbRzmdeXxt2_2WA
+
+从Transformer到BERT模型
+
+https://mp.weixin.qq.com/s/Bnk0nIjBdb58WVJEY8MqnA
+
+NLP中各种各样的编码器
+
+https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
+
+预训练BERT，官方代码发布前他们是这样用TensorFlow解决的
+
+https://mp.weixin.qq.com/s/vFdm-UHns7Nhbmdoiu6jWg
+
+谷歌终于开源BERT代码：3亿参数量，机器之心全面解读
 
 https://zhuanlan.zhihu.com/p/58425003
 
@@ -333,3 +365,7 @@ BERT的嵌入层是如何实现的？
 https://mp.weixin.qq.com/s/CdjNQKSNuklVUsXe4InSoA
 
 FastBERT：放飞BERT的推理速度
+
+https://zhuanlan.zhihu.com/p/132361501
+
+BERT是如何分词的

@@ -14,6 +14,10 @@ https://flink.apache.org
 
 参考：
 
+https://mp.weixin.qq.com/s/MrcBcdGIT4ESPUL0_sI3oQ
+
+流数据处理，Streaming Data，219页pdf
+
 https://mp.weixin.qq.com/s/WNcs0P5baLclZFBmEH3CCA
 
 Spark比拼Flink：下一代大数据计算引擎之争，谁主沉浮？

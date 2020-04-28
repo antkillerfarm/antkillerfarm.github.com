@@ -130,6 +130,10 @@ https://www.intechopen.com/books/time-series-analysis-data-methods-and-applicati
 
 开源新书《时间序列分析，数据/方法/应用》，6章110页pdf带你了解最新进展
 
+https://mp.weixin.qq.com/s/7c9gfwNjuKD4XyrODnyS5w
+
+时间序列预测：理论与实践，379页ppt阐述大规模时序预测工具与方法
+
 https://mp.weixin.qq.com/s/zv264-dqDQYRkYmjX_QZpQ
 
 郑宇解读地理传感器时间序列预测问题

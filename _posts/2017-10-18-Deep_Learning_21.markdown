@@ -112,6 +112,16 @@ ML时代的代表算法还有：
 
 这篇论文提出的算法，在形式上和后文这些DL算法已经非常类似了，也是基于HR和LR配对的有监督训练。区别只在于这篇论文使用矩阵的稀疏表示来拟合SR函数，而DL算法使用神经网络拟合SR函数。前者是线性变换，而后者是非线性变换。
 
+参考：
+
+https://mp.weixin.qq.com/s/A8c-15OgKaGPiTETEqyWbw
+
+华人计算机视觉鼻祖、双院外籍院士黄煦涛逝世，昔日名师门徒遍天下
+
+https://mp.weixin.qq.com/s/pgXEWIGvGGc8o1RefWTXAw
+
+Super Res Zoom
+
 ## 参考
 
 https://mp.weixin.qq.com/s/93HfbJxG-5hFeEm1li-0tw

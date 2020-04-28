@@ -6,6 +6,36 @@ category: Attention
 
 # BERT（续）
 
+## ELMo
+
+https://mp.weixin.qq.com/s/I315hYPrxV0YYryqsUysXw
+
+NLP的游戏规则从此改写？从word2vec, ELMo到BERT
+
+https://mp.weixin.qq.com/s/VL09dIQE6kAUzj5-CRFoXA
+
+ELMo的朋友圈：预训练语言模型真的一枝独秀吗？
+
+https://mp.weixin.qq.com/s/1nZV6wXzeIxIAAovFOageA
+
+手把手教你用ELMo模型提取文本特征
+
+https://mp.weixin.qq.com/s/S3dISq03PDXPvFsL4xjzNQ
+
+通俗理解ELMo
+
+https://zhuanlan.zhihu.com/p/37684922
+
+ELMo
+
+https://mp.weixin.qq.com/s/i7EJSNzDsNNbK2YA_YNu8g
+
+词向量与ELMo模型
+
+https://mp.weixin.qq.com/s/qbXZGiKYEuTI-2l4iYZlbQ
+
+图文并茂带你细致了解ELMo的各种细节
+
 ## GPT
 
 GPT-1论文：
@@ -311,35 +341,3 @@ https://mp.weixin.qq.com/s/SZMYj4rMneR3OWST007H-Q
 https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
 
 详细解读谷歌新模型BERT为什么嗨翻AI圈
-
-https://zhuanlan.zhihu.com/p/66053631
-
-BERT
-
-https://mp.weixin.qq.com/s/WEbJnO04DOrsxUbzpgL66g
-
-BERT源码分析（PART I）
-
-https://mp.weixin.qq.com/s/iXjE7KoyvFQ8uekLKRK4jw
-
-BERT源码分析（PART II）
-
-https://mp.weixin.qq.com/s/DxBC_x5ZWC6SECfnwDGnVg
-
-BERT源码分析（PART III）
-
-https://mp.weixin.qq.com/s/kI_k_plZbRzmdeXxt2_2WA
-
-从Transformer到BERT模型
-
-https://mp.weixin.qq.com/s/Bnk0nIjBdb58WVJEY8MqnA
-
-NLP中各种各样的编码器
-
-https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
-
-预训练BERT，官方代码发布前他们是这样用TensorFlow解决的
-
-https://mp.weixin.qq.com/s/vFdm-UHns7Nhbmdoiu6jWg
-
-谷歌终于开源BERT代码：3亿参数量，机器之心全面解读
