@@ -254,15 +254,3 @@ https://mp.weixin.qq.com/s/MYA6l9V4BYIZO8Jgtds6GA
 http://www.cnblogs.com/fnng/archive/2012/12/15/2819367.html
 
 图形脚本语言sikuli
-
-# 世说新语+
-
-## 2020.4（续）
-
-https://www.zhihu.com/question/389733485
-
-如何评价中国银行推出的“原油宝”产品穿仓，中国银行会要求客户赔偿吗？
-
-https://mp.weixin.qq.com/s/xhor1Qtzzk1VdlM5IqTkHQ
-
-混知财经--先搞懂期货，才知道中行是咋亏的！

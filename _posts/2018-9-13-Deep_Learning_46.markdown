@@ -134,11 +134,31 @@ https://mp.weixin.qq.com/s/nsZ64_7jgugvDlBZoiJ1ZA
 
 UnrealText：基于虚拟场景的真实场景文本图像合成
 
-https://mp.weixin.qq.com/s/TnS4-seRxAs45A6SDSoACg
-
-图神经网络的预训练策略
-
 # Graph NN+
+
+https://mp.weixin.qq.com/s/0B1ROCg7SMn0I7-5HVeMIg
+
+用图神经网络改善视频的多标签分类
+
+https://mp.weixin.qq.com/s/M7nzr6n4tZAMR1CXo3Q0OQ
+
+基于图神经网络的CTR预测中的特征交互建模
+
+https://mp.weixin.qq.com/s/ee_Mq2vzJ2z253B7PZZc9w
+
+2019年，异质图神经网络领域有哪些值得读的顶会论文？
+
+https://mp.weixin.qq.com/s/QONDTuzv_jIbVwSXxHMyIw
+
+一文读懂图卷积GCN
+
+https://mp.weixin.qq.com/s/lwqYZurdie3lJ_-X9zgoyQ
+
+加深图卷积神经网络的可能性探索
+
+https://github.com/microsoft/tf-gnn-samples
+
+微软开源了一个用TF实现的GNN例程库
 
 https://mp.weixin.qq.com/s/r4_5GwA8Olqh6M1p_6eYPg
 
@@ -212,10 +232,6 @@ https://mp.weixin.qq.com/s/TepgHukJ-Gx63pTjMH9R2g
 
 2020年，我终于决定入门GCN
 
-https://mp.weixin.qq.com/s/-QEwQgZ0t33r92W6kcqSIw
-
-图神经网络表达能力的研究综述，41页pdf
-
 https://mp.weixin.qq.com/s/a_svzOS1Z2a98gIzBBk1dw
 
 从文本分类来看图卷积神经网络
@@ -260,10 +276,6 @@ https://mp.weixin.qq.com/s/nCDn89eMWkom0AfQAWGjsA
 
 图表示学习Graph Embedding综述
 
-https://mp.weixin.qq.com/s/vhtgZLrn8zeDn0Lr_dWF4w
-
-图神经网络表达能力的研究综述，41页pdf
-
 https://mp.weixin.qq.com/s/QvPB3wNT3IeFuqLB8_nxsw
 
 从Word2vec到DeepWalk
@@ -295,10 +307,6 @@ https://zhuanlan.zhihu.com/p/63207928
 https://mp.weixin.qq.com/s/B84aHi6z0z2cGyaUdKqSUw
 
 从矩阵分解到GNN：社会化推荐的演化
-
-https://mp.weixin.qq.com/s/oVJnVNQBuAPsWKTgOCxCRw
-
-韩家炜：最新《异构网络表示学习》2020综述论文大全
 
 https://mp.weixin.qq.com/s/GHJQ_oLfC7S1JgPwhptfKw
 
@@ -343,6 +351,10 @@ https://zhuanlan.zhihu.com/p/133739758
 https://mp.weixin.qq.com/s/VctNZsALrbDQDW3_zhGJsw
 
 在NLP中应用GCN的几种构图方法整理
+
+https://mp.weixin.qq.com/s/TnS4-seRxAs45A6SDSoACg
+
+图神经网络的预训练策略
 
 # 深度推荐系统+
 
@@ -421,3 +433,7 @@ https://mp.weixin.qq.com/s/GazjnVwQKItrph7_n7SGTw
 https://mp.weixin.qq.com/s/x4Q5di8oVAAZBJBTlY8usw
 
 深入理解推荐系统：梳理YouTube推荐算法
+
+https://zhuanlan.zhihu.com/p/128988454
+
+谷歌最新双塔DNN召回模型——应用于YouTube大规模视频推荐场景

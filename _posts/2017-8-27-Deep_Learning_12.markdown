@@ -303,3 +303,7 @@ https://mp.weixin.qq.com/s/kU0_BuQW8VQihUwBuZ90cA
 https://mp.weixin.qq.com/s/ZfW-jDSo6uaaqdmJtBizOA
 
 从模型精简，硬件实现，到模型剪枝
+
+https://mp.weixin.qq.com/s/5ywMyedmplCSLzWlnoFDSQ
+
+模型剪枝技术原理及其发展现状和展望

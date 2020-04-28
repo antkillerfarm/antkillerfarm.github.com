@@ -382,6 +382,10 @@ https://mp.weixin.qq.com/s/27nzD9swpAcKfIv8CgvWJw
 
 YOLACT: 首个实时one-stage实例分割模型，29.8mAP/33.5fps
 
+https://mp.weixin.qq.com/s/Lz0Gk-1yDC4S9IQDcocxeA
+
+YOLACT++: 实时实例分割，从29.8mAP/33.5fps到34.1mAP/33.5fps
+
 https://mp.weixin.qq.com/s/8I7Lm5DMkVVlvw8v1L_HBA
 
 多感受野的金字塔结构—PSPNet

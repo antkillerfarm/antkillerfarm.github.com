@@ -250,6 +250,10 @@ https://mp.weixin.qq.com/s/DpqI4AfjiygCh8dqq_Kgmw
 
 基于TensorFlow Serving的深度学习在线预估
 
+https://mp.weixin.qq.com/s/LRxyvVazRAOR_B0as7ujvg
+
+腾讯互娱基于CPU环境的分布式YOLOv3实现
+
 https://mp.weixin.qq.com/s/XcqVtFBY5rIn0FgPEx0eTg
 
 工业领域中的AI：BHGE通过使用TensorFlow概率编程工具包开发的基于物理的概率深度学习

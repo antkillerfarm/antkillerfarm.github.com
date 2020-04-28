@@ -339,3 +339,7 @@ https://mp.weixin.qq.com/s/FSpVcTM9BcyraQwuaJ833Q
 https://mp.weixin.qq.com/s/SMAHf7od8ygNIP6Zh9za3w
 
 KDD Cup 2020 多模态检索赛道：数据分析
+
+https://mp.weixin.qq.com/s/W8YlrSyM7K84-_jwiD6E7g
+
+微信扫一扫识物的技术揭秘：抠图与检索

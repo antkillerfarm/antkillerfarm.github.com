@@ -317,6 +317,10 @@ https://mp.weixin.qq.com/s/ucFtWopoErtUCYDTLv2kFg
 
 一文了解Text-to-SQL
 
+https://mp.weixin.qq.com/s/FtsA4O_VTUqhhYS3Gq3G8Q
+
+语义解析(Text-to-SQL)技术研究及应用 上篇
+
 https://mp.weixin.qq.com/s/T2Nv7dQvZR6sVht1LfKSlw
 
 NLP技术在微博feed流中的应用

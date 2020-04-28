@@ -345,6 +345,10 @@ https://zhuanlan.zhihu.com/p/57083034
 
 Deep Domain Adaptation论文集(四)：基于生成对抗网络GAN
 
+https://mp.weixin.qq.com/s/jYdeaCCaQJwqxK9h6MzJuA
+
+基于深度神经网络的少样本学习综述
+
 # 模型压缩与加速
 
 https://mp.weixin.qq.com/s/5NM9M1oY8bwsEqdBRVYpMg

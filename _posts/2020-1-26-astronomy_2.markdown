@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/0lDJiu1nyS0j1aj7C4tT-g
 
 1958年5月17日，毛泽东在中共八大二次会议上发表了讲话，提出“我们也要搞人造卫星！”。出于一贯的幽默，他还补充道：“我们要抛就抛两万千克的，也许要从较小的抛起，但像美国那样只有鸡蛋大的，我们不抛!”
 
+1958年10月，为了对人造卫星的情况有更深入的了解，中国科学院组织了代表团去苏联考察，团长就是赵九章先生。尽管当时中苏关系还处于比较好的时期，苏方接待人员的态度也很热情，但当考察团成员看到用蒙布包裹的人造卫星，希望能够打开蒙布一睹人造卫星的真容时，得到的却是礼貌而坚决的拒绝。回国以后，赵九章说：“美国、苏联发射了这么多卫星，但是重要的资料一定是保密的，不会告诉我们的。我们必须有自己的卫星，有自己的探测手段，只有掌握第一手的材料才能走到空间科学的最前沿。”
+
+当时无线电技术不成熟，任务通讯只能靠长途电话线，60万民兵出动保护电线杆。
+
 https://mp.weixin.qq.com/s/hOymVfSV7DCwqAX3GW5XGg
 
 纪念中国首颗人造卫星东方红一号发射50周年：念念不忘 必有回响
@@ -197,6 +201,18 @@ https://mp.weixin.qq.com/s/hOymVfSV7DCwqAX3GW5XGg
 https://mp.weixin.qq.com/s/QILTyVijDS8KfNZO-2bydg
 
 东方红一号最新照片，长这样！
+
+https://mp.weixin.qq.com/s/CUefu_-Tzcw0Cxn7sgrZ0g
+
+东方红一号还在唱歌吗？我爸说亲眼见过它，是不是在吹牛？
+
+https://mp.weixin.qq.com/s/AWgYiHJoyQ0vMBaof_c9AA
+
+中国为什么要有人造卫星？答案也许就在五十年前的这封信中
+
+https://mp.weixin.qq.com/s/3OWh2w9h1NQLlniIb1fH9A
+
+东方红一号还在飞！50年前中国人拿什么造的？
 
 ----
 
@@ -211,6 +227,20 @@ https://mp.weixin.qq.com/s/QILTyVijDS8KfNZO-2bydg
 多少一点困难怕什么。封锁吧，封锁十年八年，中国的一切问题都解决了。中国人死都不怕，还怕困难吗？
 
 那么美国人之前用来进行运载火箭发射的吹除用送风总管是从哪里来的呢？答案很简单，有超过90%的这种部件全部是进口自中方的。然而自从发生在中美之间的经济纠纷开始之后，停止向美国输送这种关键零件，就成为了中方对美国制裁中的一个很重要部分。
+
+----
+
+2019.12.17 山东号航空母舰入列。
+
+![](/images/img3/Carrier.jpg)
+
+![](/images/img3/Carrier_2.jpg)
+
+如果你有一艘航母，你就破坏了你所在地区的稳定。
+
+如果你有两艘，你就会对全球秩序构成威胁。
+
+如果你有一打，你就是全球维和人员。
 
 # 阿波罗50年
 
@@ -251,31 +281,3 @@ https://mp.weixin.qq.com/s/Y1hQJHFB5InSZNB2T2KfVw
 https://mp.weixin.qq.com/s/d6nmsH10qchY1pP8CibiBA
 
 跌跌撞撞的美国
-
-https://mp.weixin.qq.com/s/-KHsG9lZknY952U_LTV7qg
-
-天气太热了，我们去太阳系度假吧
-
-https://mp.weixin.qq.com/s/EPMdW1qxQVl0MVUSjhWxyQ
-
-NASA传奇数学家去世，她曾笔算了登月轨道
-
-----
-
-由于飞行前的制造和测试错误，氧气罐中的电线暴露了出来。在那个致命的夜晚，氧气罐中暴露的电线产生的火花引发了火灾，引爆了氧气罐，将服务舱外的隔热层炸飞。。。
-
-https://mp.weixin.qq.com/s/NmS1dbeIsQomsWYI8-OyZg
-
-阿波罗13号“伟大失败”50周年，NASA发布纪录片追忆奥德赛号逃生往事
-
-----
-
-![](/images/img3/india_moon.jpg)
-
-https://www.zhihu.com/question/344795065/
-
-印度“月船2号”登陆月球失败，失败原因可能是什么？有什么影响和教训？
-
-https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
-
-印度失联的月球探测器依然成功了95%？那些年我们一起追过的月球

@@ -6,6 +6,30 @@ category: DL
 
 # Graph NN（续）
 
+https://mp.weixin.qq.com/s/DUv5c6ce-dgLOBAE4ChiQg
+
+图神经网络为何如此强大？看完这份斯坦福31页PPT就懂了！
+
+https://mp.weixin.qq.com/s/OV-rXGU8DTNqv3QZcKo00Q
+
+Graph Learning
+
+https://mp.weixin.qq.com/s/2SaBiMJzhSRw1G0giL9TAw
+
+深入理解图注意力机制
+
+https://zhuanlan.zhihu.com/p/132497231
+
+深入理解图注意力机制
+
+https://mp.weixin.qq.com/s/sg9O761F0KHAmCPOfMW_kQ
+
+图卷积网络到底怎么做，这是一份极简的Numpy实现
+
+https://mp.weixin.qq.com/s/PkUJsnZdihPM7q9BpvO8Ag
+
+深度学习中不得不学的Graph Embedding方法
+
 https://mp.weixin.qq.com/s/PxNGJ0hcmCo-2zvWD-rfug
 
 GCN作者Thomas Kipf最新Talk：利用图神经网络进行无监督学习
@@ -365,27 +389,3 @@ CIKM最佳应用论文：11亿节点的大型图，看闲鱼如何用图卷积�
 https://mp.weixin.qq.com/s/6RSYTlNvw7TyOJsjHf1iYQ
 
 基于图上下文知识融入的预训练语言模型
-
-https://mp.weixin.qq.com/s/0B1ROCg7SMn0I7-5HVeMIg
-
-用图神经网络改善视频的多标签分类
-
-https://mp.weixin.qq.com/s/M7nzr6n4tZAMR1CXo3Q0OQ
-
-基于图神经网络的CTR预测中的特征交互建模
-
-https://mp.weixin.qq.com/s/ee_Mq2vzJ2z253B7PZZc9w
-
-2019年，异质图神经网络领域有哪些值得读的顶会论文？
-
-https://mp.weixin.qq.com/s/QONDTuzv_jIbVwSXxHMyIw
-
-一文读懂图卷积GCN
-
-https://mp.weixin.qq.com/s/lwqYZurdie3lJ_-X9zgoyQ
-
-加深图卷积神经网络的可能性探索
-
-https://github.com/microsoft/tf-gnn-samples
-
-微软开源了一个用TF实现的GNN例程库

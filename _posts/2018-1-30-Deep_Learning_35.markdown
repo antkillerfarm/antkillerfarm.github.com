@@ -369,3 +369,7 @@ https://zhuanlan.zhihu.com/p/112836018
 https://mp.weixin.qq.com/s/8vdTlIe9LV88AVw9kAcVjA
 
 基于空间AdaIN的深度姿态迁移
+
+https://zhuanlan.zhihu.com/p/129279351
+
+X3D Facebook视频理解/行为识别新作

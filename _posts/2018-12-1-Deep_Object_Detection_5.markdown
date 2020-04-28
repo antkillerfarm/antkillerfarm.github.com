@@ -281,3 +281,15 @@ https://zhuanlan.zhihu.com/p/135909702
 https://mp.weixin.qq.com/s/Ia1ZhAeTgt8anXVd4qxE3A
 
 一张图梳理YOLOv4论文
+
+https://mp.weixin.qq.com/s/ugx6CwMTqGR8CT5xpye6vw
+
+对象检测YOLOv4版本来了！
+
+https://mp.weixin.qq.com/s/XEPhK81Ms-wdDnoz5oPZgA
+
+YOLO v4它来了：接棒者出现，速度效果双提升
+
+https://mp.weixin.qq.com/s/Ny_4lK1E3bqz-LL-hHiFlg
+
+YOLO项目复活！大神接过衣钵，YOLO之父隐退2月后，v4版正式发布，性能大幅提升

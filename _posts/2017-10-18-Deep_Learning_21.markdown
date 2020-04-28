@@ -52,6 +52,10 @@ http://blog.csdn.net/u014380165/article/details/75676216
 
 DPN（Dual Path Network）算法详解
 
+https://mp.weixin.qq.com/s/m4cRV9yX-8r4BI0EkVRYig
+
+残差网络家族10多个变种学习卡片，请收下！
+
 # 图像超分辨率
 
 ![](/images/img2/Super_Resolution.png)

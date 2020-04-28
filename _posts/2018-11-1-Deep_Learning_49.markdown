@@ -38,6 +38,10 @@ https://mp.weixin.qq.com/s/WuWZS25aAWDLpVZQKuP2Tw
 
 美团无人配送CVPR2020论文CenterMask解读
 
+https://zhuanlan.zhihu.com/p/134111177
+
+实例分割新思路: Deep Snake
+
 # Fast Image Processing
 
 论文：

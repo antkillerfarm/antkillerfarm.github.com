@@ -98,6 +98,18 @@ https://mp.weixin.qq.com/s/B3BFZkmHkLT7WsI4ssdODA
 
 AGL:可扩展工业图机器学习系统
 
+https://mp.weixin.qq.com/s/_qhqJTntrty-hr3BC_Kskg
+
+图表示学习算法推理，46页ppt，Petar@DeepMind
+
+https://mp.weixin.qq.com/s/-QEwQgZ0t33r92W6kcqSIw
+
+图神经网络表达能力的研究综述，41页pdf
+
+https://mp.weixin.qq.com/s/oVJnVNQBuAPsWKTgOCxCRw
+
+韩家炜：最新《异构网络表示学习》2020综述论文大全
+
 ## 综述
 
 《A Comprehensive Survey on Graph Neural Networks》
@@ -385,27 +397,3 @@ https://mp.weixin.qq.com/s/mTCrTPzyeogwRHfgitfK6Q
 https://mp.weixin.qq.com/s/B8rJRlnwGJKUSI17Ot66Xw
 
 从CNN到GCN的联系与区别——GCN从入门到精（fang）通（qi）
-
-https://mp.weixin.qq.com/s/DUv5c6ce-dgLOBAE4ChiQg
-
-图神经网络为何如此强大？看完这份斯坦福31页PPT就懂了！
-
-https://mp.weixin.qq.com/s/OV-rXGU8DTNqv3QZcKo00Q
-
-Graph Learning
-
-https://mp.weixin.qq.com/s/2SaBiMJzhSRw1G0giL9TAw
-
-深入理解图注意力机制
-
-https://zhuanlan.zhihu.com/p/132497231
-
-深入理解图注意力机制
-
-https://mp.weixin.qq.com/s/sg9O761F0KHAmCPOfMW_kQ
-
-图卷积网络到底怎么做，这是一份极简的Numpy实现
-
-https://mp.weixin.qq.com/s/PkUJsnZdihPM7q9BpvO8Ag
-
-深度学习中不得不学的Graph Embedding方法
