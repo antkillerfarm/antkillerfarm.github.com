@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/x9uDExR-Un8fAI43TOQ7CA
 
 个性化推荐系统入门指南
 
+https://mp.weixin.qq.com/s/KSW47hbNLaHTw9Ib0wMO8g
+
+图推荐算法在E&E问题上的应用
+
 ## 负采样策略 & 非采样策略
 
 推荐系统中经常用到的数据是隐式反馈数据（Implicit Feedback Data），如浏览历史，点击日志等。这些数据往往只有正反馈而没有负反馈，并且数据是高度稀疏的（相比于用户点击过的产品，没有被点击过的产品的数量非常多）。在推荐系统中使用隐式反馈数据，有两种常见的学习方法：

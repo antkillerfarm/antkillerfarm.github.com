@@ -4,9 +4,17 @@ title:  深度目标检测（七）——CenterNet, Anchor-Free, 其它目标检
 category: Deep Object Detection 
 ---
 
-# CornerNet
+# CornerNet（续）
 
-## corner pooling（续）
+## corner pooling
+
+corner pooling是CornerNet新提出的一种操作。其步骤如下图所示：
+
+![](/images/img3/corner_pooling.png)
+
+依top-left corner pooling为例，对每个channel，分别提取特征图的水平和垂直方向的最大值，然后求和。具体的计算如下图所示：
+
+![](/images/img3/corner_pooling_2.png)
 
 论文认为corner pooling之所以有效，是因为：
 
@@ -337,19 +345,3 @@ https://mp.weixin.qq.com/s/groq55Cbts272k1mfhJwaQ
 https://mp.weixin.qq.com/s/BXwL33qOf3f7BtJvHsi23Q
 
 目标检测：Segmentation is All You Need？
-
-https://mp.weixin.qq.com/s/NWILStthG4klkwrYVcGQSQ
-
-ILC：用于自然场景多目标的计数模型
-
-https://mp.weixin.qq.com/s/9BCf0rCp660a5xQ2JNz3AQ
-
-深入理解one-stage目标检测算法（上篇）
-
-https://mp.weixin.qq.com/s/p9XaI8PSG0o1NWlkmCIn7w
-
-深入理解one-stage目标检测算法（下篇）
-
-https://mp.weixin.qq.com/s/reNCLvOyJHkJZimnMpbIig
-
-目标检测算法优化技巧：Bag of Freebies for Training Object Detection

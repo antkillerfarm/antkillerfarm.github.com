@@ -4,6 +4,24 @@ title:  深度目标检测（六）——One-stage vs. Two-stage, R-FCN, FPN, Re
 category: Deep Object Detection 
 ---
 
+# YOLOv4（续）
+
+https://mp.weixin.qq.com/s/ugx6CwMTqGR8CT5xpye6vw
+
+对象检测YOLOv4版本来了！
+
+https://mp.weixin.qq.com/s/XEPhK81Ms-wdDnoz5oPZgA
+
+YOLO v4它来了：接棒者出现，速度效果双提升
+
+https://mp.weixin.qq.com/s/Ny_4lK1E3bqz-LL-hHiFlg
+
+YOLO项目复活！大神接过衣钵，YOLO之父隐退2月后，v4版正式发布，性能大幅提升
+
+https://mp.weixin.qq.com/s/9SR5CUDIBmdJeYEWABASWA
+
+YOLOv4的各种新实现、配置、测试、训练资源汇总
+
 # One-stage vs. Two-stage
 
 虽然我们在概述一节已经提到了One-stage和Two-stage的概念。但鉴于这个概念的重要性，在介绍完主要的目标检测网络之后，很有必要再次总结一下。
@@ -233,13 +251,3 @@ CornerNet堆叠两个Hourglass Network生成Top-left和Bottom-right corners，�
 - embedding vector使相同目标的两个顶点（左上角和右下角）距离最短。或者也可以反过来说，**两个顶点的embedding vector越相近，则它们越有可能配对。**
 
 - offsets用于调整生成更加紧密的边界定位框。
-
-## corner pooling
-
-corner pooling是CornerNet新提出的一种操作。其步骤如下图所示：
-
-![](/images/img3/corner_pooling.png)
-
-依top-left corner pooling为例，对每个channel，分别提取特征图的水平和垂直方向的最大值，然后求和。具体的计算如下图所示：
-
-![](/images/img3/corner_pooling_2.png)

@@ -362,6 +362,10 @@ https://mp.weixin.qq.com/s/nhe5nnvvWlv0ZiOgbDK21w
 
 我是这样搞定第一次单目相机测距的
 
+https://mp.weixin.qq.com/s/LV5Yk-7SDL0FYaFN2lOdsg
+
+相机激光标定算法：从理论到实践
+
 # Python
 
 https://mp.weixin.qq.com/s/5YWAgp8LKi5q_NDrNUtyGQ

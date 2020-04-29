@@ -86,6 +86,8 @@ https://github.com/microsoft/onnxruntime
 
 Kubernetes是Google开源的容器集群管理系统，基于Docker构建一个容器的调度服务，提供资源调度、均衡容灾、服务注册、动态扩缩容等功能套件。
 
+![](/images/img3/Kubernetes.png)
+
 官网：
 
 https://kubernetes.io/

@@ -225,3 +225,13 @@ ImageMagick将PDF转换为PNG的示例：
 ## Others
 
 Linux平台的绘图软件还有KolourPaint、mtPaint、MyPaint。
+
+## Webp
+
+WebP格式是google于2010年推出的一种旨在加快图片加载速度的图片格式。图片压缩体积大约只有JPEG的2/3，并能节省大量的服务器宽带资源和数据空间。
+
+`sudo apt-get install webp`
+
+`cwebp -q 80 image.png -o image.webp`
+
+`dwebp image.webp -o image.png`

@@ -347,3 +347,21 @@ CMU&谷歌大脑提出新型问答模型QANet：仅使用卷积和自注意力�
 https://mp.weixin.qq.com/s/c64XucML13OwI26_UE9xDQ
 
 滴滴披露语音识别新进展：基于Attention显著提升中文识别率
+
+# NLP参考资源+
+
+https://mp.weixin.qq.com/s/T2Nv7dQvZR6sVht1LfKSlw
+
+NLP技术在微博feed流中的应用
+
+https://mp.weixin.qq.com/s/mVNHAiHY__Z0xTXkDDyZTw
+
+如何打造高质量的NLP数据集
+
+https://mp.weixin.qq.com/s/tH4-73aJcRaqJAjotlyANg
+
+语法纠错的研究现状
+
+https://mp.weixin.qq.com/s/EHUKSbtX3owR53lX5qu56Q
+
+机器如何生成文本？

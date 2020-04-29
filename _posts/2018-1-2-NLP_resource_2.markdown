@@ -380,6 +380,10 @@ https://mp.weixin.qq.com/s/Aye9FBwG-v2JO2MLoEjo0g
 
 事实感知的生成式文本摘要
 
+https://zhuanlan.zhihu.com/p/113219895
+
+Text Summarization文本摘要与注意力机制
+
 ## 句法分析
 
 传统方法主要是PCFG （Probabilistic Context-Free Grammar）。

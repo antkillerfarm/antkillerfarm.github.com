@@ -8,6 +8,42 @@ category: Nature
 
 ## 国外疫情（续）
 
+## 国外疫情
+
+https://coronavirus.jhu.edu/map.html
+
+JHU的全球实时统计网站
+
+https://github.com/CSSEGISandData/COVID-19
+
+上述网站的代码
+
+https://view.inews.qq.com/a/20200404A0GES400
+
+全球最可靠疫情图每天点击量超10亿，由两名中国留美博士生操盘
+
+https://mp.weixin.qq.com/s/biMYttSdoe7k99v7m9H4oQ
+
+美国确诊超50万，约翰·霍普金斯大学疫情地图成全球瞩目中心
+
+----
+
+https://mp.weixin.qq.com/s/lv-C9MDiW0SwNszDy54i0g
+
+突发！5名英国人间接感染新冠病毒，不在同一时空也躺枪！
+
+https://mp.weixin.qq.com/s/Qm48nT1TFSuY-HKJS7tbhg
+
+174人感染：日本豪华邮轮海上隔离的一周
+
+https://mp.weixin.qq.com/s/8_ZtLuYwJzh_6J9NAtJg8Q
+
+迄今为止无与伦比的神操作-钻石公主号乘客下船，就地解散
+
+https://www.zhihu.com/question/370846703
+
+新加坡目前的新型冠状病毒肺炎疫情怎么样了？采取了哪些措施？
+
 https://mp.weixin.qq.com/s/SVlILAZX5PGGkuZrqKGJgA
 
 看剧情发展，可能轮到我们给日本捐口罩了
@@ -277,23 +313,3 @@ https://mp.weixin.qq.com/s/jlKlNwMp2-2TvyIWHU71LQ
 https://mp.weixin.qq.com/s/IXp36BDIi_cblf1nk-iidw
 
 40万公里的征途，一场消毒除菌产品与病毒的赛跑（立白集团）
-
-----
-
-LVMH集团宣布，旗下Dior、Givenchy和娇兰三个品牌的香水生产线，将用于生产含酒精的消毒洗手液。
-
-奢侈品牌Prada将一家在佩鲁贾开设的工厂，改造成了口罩及医疗用品生产工厂，并计划在4月6日前，向意大利托斯卡纳医院运送8万件防护服，及11万只口罩。
-
-重症监护用肺呼吸机制造商Siare Engineering取消了占其营业额90％的外国订单，转而专为意大利提供机械，该公司产能从每月125台提升到到现在的500台。
-
-----
-
-盛传美国“最先进”的核酸检测，雅培恒温扩增仪，测一次5分钟，但是灵敏度和特异度仍不如PCR法。而且恒温扩增一次只能测一个样品，PCR法一批几十个样品可以一起测。所以恒温扩增只是在特定场景有优势，比如不需要p2+实验室，可以在办公楼里自己测。
-
-https://www.zhihu.com/question/384168786
-
-美国第六代新冠病毒检测试剂5分钟出结果，准确率95%，还能检测到抗体，是否说明美国科技领域引领世界？
-
-https://www.zhihu.com/question/383152585
-
-如何看待近日美国雅培公司推出的5分钟快速检测的新冠病毒检测盒月产量可达500万份？

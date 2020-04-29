@@ -230,10 +230,6 @@ https://mp.weixin.qq.com/s/K9j4tX6_U8rdtItKntJkVQ
 
 基于关系网络的视觉建模：有望替代卷积神经网络
 
-https://mp.weixin.qq.com/s/-ZhYXTIiEFHd-G-NZEqlcA
-
-深度学习可解释性！深度taylor分解
-
 https://mp.weixin.qq.com/s/Ou8a9ZkluYdSJhw-y7_jQQ
 
 京东城市6篇论文展示AI和大数据在智能城市的落地应用

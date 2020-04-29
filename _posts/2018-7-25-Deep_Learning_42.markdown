@@ -138,6 +138,10 @@ https://mp.weixin.qq.com/s/rTP3-IdQk7iDz058SyOpIQ
 
 零样本图像识别综述论文
 
+https://mp.weixin.qq.com/s/DLcyMGTVfRoA58VHc6z6eg
+
+最新《迁移学习:域自适应理论》综述论文，128页ppt讲解迁移学习与最优传输
+
 # 深度ISP
 
 ## 数据集
@@ -375,6 +379,14 @@ https://mp.weixin.qq.com/s/1OODeAFaRLFK3elECyZcng
 https://mp.weixin.qq.com/s/Ax_Iv8IbDWid7EIO5usTbw
 
 可解释人工智能(XAI): 工业界挑战与经验教训，180页ppt
+
+https://mp.weixin.qq.com/s/-ZhYXTIiEFHd-G-NZEqlcA
+
+深度学习可解释性！深度taylor分解
+
+https://mp.weixin.qq.com/s/yzCTQvjeyyF2IFORzrTBVg
+
+黑盒模型实际上比逻辑回归更具可解释性
 
 # 行人重识别+
 

@@ -369,3 +369,7 @@ FastBERT：放飞BERT的推理速度
 https://zhuanlan.zhihu.com/p/132361501
 
 BERT是如何分词的
+
+https://mp.weixin.qq.com/s/Tld9V1jdmWs06zNxiJNkZg
+
+BART&MASS自然语言生成任务上的进步

@@ -291,7 +291,7 @@ https://zhuanlan.zhihu.com/p/96420594
 
 特征工程架构性好文
 
-# NLP参考资源+
+# NLP参考资源
 
 https://mp.weixin.qq.com/s/21bhPa4ECNFmUcF0GOQSkw
 
@@ -321,18 +321,6 @@ https://mp.weixin.qq.com/s/FtsA4O_VTUqhhYS3Gq3G8Q
 
 语义解析(Text-to-SQL)技术研究及应用 上篇
 
-https://mp.weixin.qq.com/s/T2Nv7dQvZR6sVht1LfKSlw
+https://mp.weixin.qq.com/s/5lTLW5OOuRMo2zjbzMxr_Q
 
-NLP技术在微博feed流中的应用
-
-https://mp.weixin.qq.com/s/mVNHAiHY__Z0xTXkDDyZTw
-
-如何打造高质量的NLP数据集
-
-https://mp.weixin.qq.com/s/tH4-73aJcRaqJAjotlyANg
-
-语法纠错的研究现状
-
-https://mp.weixin.qq.com/s/EHUKSbtX3owR53lX5qu56Q
-
-机器如何生成文本？
+语义解析(Text-to-SQL)技术研究及应用 下篇

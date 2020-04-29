@@ -6,6 +6,22 @@ category: Nature
 
 # 病毒（续）
 
+mRNA示意图：
+
+![](/images/img3/mRNA.png)
+
+----
+
+ADE效应（Antibody Dependent Enhancement，抗体依赖增强）：以登革热病毒为例，其流行的病毒株有四种亚型，如果病人曾经感染过某种亚型，在被其他亚型感染时，有高达80倍的可能性会发生更严重的症状。这就是因为ADE：体内已有的非中和性抗体虽然包裹了病毒，却无法将其杀死，反而保护了其免受其他免疫细胞的攻击。
+
+以此类推，倘若这次的疫情，届时会由疫苗成功控制。那么我们这一代接种了新冠疫苗的人，难道会成为下一批某种冠状病毒流行时ADE的受害者？
+
+参考：
+
+https://mp.weixin.qq.com/s/lwBpRJ4VQxD3DzeMropylQ
+
+病毒简史：人类对大自然的不知敬畏，才是一切灾难的源头
+
 https://mp.weixin.qq.com/s/Zh9-8C-hilrlKk8jrVo60g
 
 入侵&反击！病原体和人体的攻防战
@@ -295,39 +311,3 @@ https://mp.weixin.qq.com/s/knHLOhn8u6uEBWWsVKCbAQ
 https://www.kunlunce.com/ssjj/guojipinglun/2020-02-11/140446.html
 
 李玲：疫情演化至今，是制度不足还是人的问题？
-
-## 国外疫情
-
-https://coronavirus.jhu.edu/map.html
-
-JHU的全球实时统计网站
-
-https://github.com/CSSEGISandData/COVID-19
-
-上述网站的代码
-
-https://view.inews.qq.com/a/20200404A0GES400
-
-全球最可靠疫情图每天点击量超10亿，由两名中国留美博士生操盘
-
-https://mp.weixin.qq.com/s/biMYttSdoe7k99v7m9H4oQ
-
-美国确诊超50万，约翰·霍普金斯大学疫情地图成全球瞩目中心
-
-----
-
-https://mp.weixin.qq.com/s/lv-C9MDiW0SwNszDy54i0g
-
-突发！5名英国人间接感染新冠病毒，不在同一时空也躺枪！
-
-https://mp.weixin.qq.com/s/Qm48nT1TFSuY-HKJS7tbhg
-
-174人感染：日本豪华邮轮海上隔离的一周
-
-https://mp.weixin.qq.com/s/8_ZtLuYwJzh_6J9NAtJg8Q
-
-迄今为止无与伦比的神操作-钻石公主号乘客下船，就地解散
-
-https://www.zhihu.com/question/370846703
-
-新加坡目前的新型冠状病毒肺炎疫情怎么样了？采取了哪些措施？
