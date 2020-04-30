@@ -224,6 +224,10 @@ https://mp.weixin.qq.com/s/z5zMETSMUGoTiZYMooKZ-g
 
 内核空间镜像攻击揭秘：ARM硬件特性，竟能开启安卓8终端的上帝模式？
 
+https://mp.weixin.qq.com/s/f6SY7Me9Ls3AZNxK0rHz7g
+
+密码加密时的加盐（salt）是什么
+
 # diff&patch
 
 diff/patch这对工具在数学上来说，diff是对2个集合求差，patch是求和。

@@ -50,6 +50,10 @@ https://mp.weixin.qq.com/s/IlJhZo5Ue2G2hu4nPMbY4A
 
 基于关联语义注意力模型的图像修复
 
+https://mp.weixin.qq.com/s/BlrViDMRKm8Hdj9nvkzxvQ
+
+AI图像智能修复老照片，效果惊艳到我了
+
 # 抠图
 
 https://mp.weixin.qq.com/s/dRa1mss4dve487FhS4KjTg

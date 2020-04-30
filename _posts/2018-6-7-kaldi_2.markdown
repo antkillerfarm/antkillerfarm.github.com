@@ -269,6 +269,10 @@ https://mp.weixin.qq.com/s/Cx066B8MCnkl4XY1f2AbbA
 
 NIST评测（SRE19）获胜团队声纹识别技术分析
 
+https://mp.weixin.qq.com/s/buTWsIPPmx9npt6MxSo7EQ
+
+解锁声纹技术中的说话人日志
+
 # 汽车声学
 
 https://zhuanlan.zhihu.com/p/22722073

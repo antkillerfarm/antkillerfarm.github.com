@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  TensorFlow（五）
+title:  TensorFlow（五）, 流体力学
 category: AI 
 ---
 
@@ -190,52 +190,50 @@ https://mp.weixin.qq.com/s/asPSPeBaRF_4eXcRXU-Zfw
 
 TensorFlow模型优化工具包—训练时量化
 
-# Python+
+# 流体力学
 
-https://mp.weixin.qq.com/s/G5qx3-1Wq4gcRSuRfrczuw
+https://mp.weixin.qq.com/s/ei84HDZIkXQr2k0ghlN_Mw
 
-Python趣味打怪：60秒学会一个例子，147段简单代码助你从入门到大师
+C罗踢球时在想什么？这是一篇空气动力学的blog
 
-https://mp.weixin.qq.com/s/zIHJsyankFEf_ig4Xnb0Uw
+https://mp.weixin.qq.com/s/67vQtycjDEo-JdUpUA1hqg
 
-工具推荐！我是如何使用Python脚本分析CPU使用情况的？
+荷兰人发明的新客机是劈叉的！乘客坐在机翼上
 
-https://mp.weixin.qq.com/s/v-N5jUTVFBb-wV0a_RAg5A
+https://mp.weixin.qq.com/s/t2EM1l7ujoSquGl2x5hBBA
 
-Python实现代码雨效果
+21世纪最强王者纸飞机：用一张A4纸拿到了吉尼斯世界记录
 
-https://mp.weixin.qq.com/s/0wJRlGS2QXpEL2XaU_Ke-g
+https://mp.weixin.qq.com/s/yghERug4kqRNxL9lDsM_vw
 
-Python实现烟花特效
+飞机飞行原理3D动态图，形象生动解析飞行原理
 
-https://mp.weixin.qq.com/s/Hv0rPD29PPd3Rn6lW6w5dg
+https://mp.weixin.qq.com/s/uTZ1OdLov1EdiKLgy2ZVtw
 
-教你使用Python制作酷炫二维码
+德国惊现神操作！物理学家创造最强涡环公式！用空气打破吉尼斯世界纪录！
 
-https://mp.weixin.qq.com/s/8Fgzb8JiAoNSJqUanSi85Q
+https://mp.weixin.qq.com/s/kDdQCOi7nQWOZrktNrk8dQ
 
-鼠年做只奔跑的猫呗，卖萌式监控系统资源~（QSystemTrayIcon）
+中国惊现变态神人！竟赤足走炭火，暴力吊打一众科学家！（莱顿弗罗斯特效应）
 
-https://mp.weixin.qq.com/s/2RRJDStTL7l2Ra3SnNEEYg
+https://mp.weixin.qq.com/s/IyK6sa8ig_LX-tMupqSvVg
 
-发布自己的python库到pypi
+倒啤酒竟能拿到诺贝尔物理学大奖！
 
-https://mp.weixin.qq.com/s/PBaDdLcYxDso2V4aZcFXpA
+https://mp.weixin.qq.com/s/MYHr2GkOlhTZ87sg1z3TBA
 
-盘一盘Python错误类型
+德国惊现神操作！物理学家创造最强涡环公式！用空气打破吉尼斯世界纪录！看完跪了......
 
-https://mp.weixin.qq.com/s/8uxc2t53N_j_mRPYbiG0sA
+----
 
-5个案例让Python输出漂亮的命令行表格！
+**桑格尔弹道**其实就是利用了打水漂原理，从起点发射一枚穿越出大气层的导弹，由于重力作用这枚弹道会落回大气层，当达到大气层界面时就出现了打水漂的现象，导弹会被再次弹出大气层，经过详细设计之后，最后弹道落回地面，达到攻击点。这种弹道我们称为**助推-跳跃弹道**。
 
-https://mp.weixin.qq.com/s/3pGw9QdAZVE3OKZ-zGyb4g
+与桑格尔弹道对应的就是**钱学森弹道**。二战结束后，钱学森跟德国物理学家就导弹方面进行了详细的交流，钱学森发现了桑格尔导弹的不足——导弹在大气层上的跳跃并不可控而且不好预测。因此，钱学森在该方案上提出，当导弹第一次进入大气层之后不再弹出而是在大气层中滑行，达到攻击点。这种弹道我们称为**助推-滑翔弹道**。
 
-使用Python远程登陆服务器的最佳实践
+https://mp.weixin.qq.com/s/vJDY58Qi_-VhVMHOjGSo8w
 
-https://mp.weixin.qq.com/s/Bllw4rSkxd378LLUCh6oJA
+伦敦大学惊现数学神人！创造最完美打水漂方程，一块石头破吉尼斯世界纪录！
 
-Python炫技操作：合并字典的七种方法
+https://mp.weixin.qq.com/s/9NnfCJUmbxMXkDxNsNOuyw
 
-https://mp.weixin.qq.com/s/QWH9qhKzECX-1rqDLfZyhw
-
-如何加速Python代码？
+敲黑板——物理学家教你们打水漂！！！

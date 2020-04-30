@@ -359,3 +359,7 @@ https://mp.weixin.qq.com/s/TnS4-seRxAs45A6SDSoACg
 https://mp.weixin.qq.com/s/Pgz8cnDpX2mgexASnRzfhA
 
 浅谈图神经网络的局限性
+
+https://mp.weixin.qq.com/s/hQ-Fo_aizkcTxvzW0FSIEw
+
+VGAE：利用变分自编码器完成图重构

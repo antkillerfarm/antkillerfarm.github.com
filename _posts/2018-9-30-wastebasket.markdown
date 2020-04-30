@@ -4,40 +4,6 @@ title:  垃圾筐
 category: Nature 
 ---
 
-# 空气动力学
-
-https://mp.weixin.qq.com/s/ei84HDZIkXQr2k0ghlN_Mw
-
-C罗踢球时在想什么？这是一篇空气动力学的blog
-
-https://mp.weixin.qq.com/s/67vQtycjDEo-JdUpUA1hqg
-
-荷兰人发明的新客机是劈叉的！乘客坐在机翼上
-
-https://mp.weixin.qq.com/s/t2EM1l7ujoSquGl2x5hBBA
-
-21世纪最强王者纸飞机：用一张A4纸拿到了吉尼斯世界记录
-
-https://mp.weixin.qq.com/s/vJDY58Qi_-VhVMHOjGSo8w
-
-伦敦大学惊现数学神人！创造最完美打水漂方程，一块石头破吉尼斯世界纪录！
-
-https://mp.weixin.qq.com/s/yghERug4kqRNxL9lDsM_vw
-
-飞机飞行原理3D动态图，形象生动解析飞行原理
-
-https://mp.weixin.qq.com/s/uTZ1OdLov1EdiKLgy2ZVtw
-
-德国惊现神操作！物理学家创造最强涡环公式！用空气打破吉尼斯世界纪录！
-
-https://mp.weixin.qq.com/s/kDdQCOi7nQWOZrktNrk8dQ
-
-中国惊现变态神人！竟赤足走炭火，暴力吊打一众科学家！（莱顿弗罗斯特效应）
-
-https://mp.weixin.qq.com/s/IyK6sa8ig_LX-tMupqSvVg
-
-倒啤酒竟能拿到诺贝尔物理学大奖！
-
 # 垃圾筐
 
 Introspective Neural Networks
