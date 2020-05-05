@@ -337,6 +337,10 @@ https://mp.weixin.qq.com/s/f2tegV4KwjyttMAhoHknMg
 
 jieba分词快速入门
 
+https://mp.weixin.qq.com/s/rzF_Er6yJdQaQB7hyoc9Bw
+
+浅谈结巴分词算法原理
+
 ### NLPIR
 
 NLPIR汉语分词系统(又名ICTCLAS2013)，是中科院张华平博士的作品。官网：

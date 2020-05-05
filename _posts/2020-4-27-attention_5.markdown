@@ -6,6 +6,18 @@ category: Attention
 
 # BERT
 
+https://mp.weixin.qq.com/s/INDOBcpg5p7vtPBChAIjAA
+
+最强预训练模型BERT的Pytorch实现
+
+https://mp.weixin.qq.com/s/SZMYj4rMneR3OWST007H-Q
+
+解读谷歌最强NLP模型BERT：模型、数据和训练
+
+https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
+
+详细解读谷歌新模型BERT为什么嗨翻AI圈
+
 https://zhuanlan.zhihu.com/p/66053631
 
 BERT
@@ -373,3 +385,21 @@ BERT是如何分词的
 https://mp.weixin.qq.com/s/Tld9V1jdmWs06zNxiJNkZg
 
 BART&MASS自然语言生成任务上的进步
+
+https://mp.weixin.qq.com/s/G995ulqe6Ifxml_AJqapAw
+
+BERT在小米NLP业务中的实战探索
+
+# Attention进阶
+
+https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ
+
+深度学习注意力机制-Attention in Deep learning-附101页PPT
+
+https://mp.weixin.qq.com/s/_mBa-GTdILrvluJtegz8fw
+
+南洋理工大学：注意力神经网络，Attention Neural Networks，78页ppt
+
+https://mp.weixin.qq.com/s/pKxqPB9qIGmE_PslPa6EyA
+
+长文详解Attention的前世今生

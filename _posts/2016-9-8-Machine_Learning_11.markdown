@@ -77,6 +77,10 @@ https://mp.weixin.qq.com/s/192sLXAvLKzwsTKCZs-AuA
 
 一文详尽系列之EM算法
 
+https://mp.weixin.qq.com/s/D2Am1tyCt3DQLvF0ylLJrg
+
+深入浅出聚类算法！如何对王者英雄聚类分析，探索英雄之间的秘密
+
 ## 重新审视混合高斯模型
 
 下面给出混合高斯模型各参数的推导过程。

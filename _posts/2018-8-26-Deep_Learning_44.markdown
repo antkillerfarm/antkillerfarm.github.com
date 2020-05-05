@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/b8MjrsSt4gNaNMsyHVqe1Q
 
 DeepFake新高度：一阶运动模型让“万物皆可动”
 
+https://mp.weixin.qq.com/s/J9DIDMHc6uHPQ8snadRcPA
+
+中国女博士的“水淹食堂”大法：单目视频完美重建3D场景，画面毫无违和感
+
 # 深度推荐系统+
 
 https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w

@@ -8,16 +8,6 @@ category: DL
 
 ## Dual Path Networks（续）
 
-![](/images/img2/DPN_3.png)
-
-如上所示，RNN相当于共享权值的串联的ResNet，而DenseNet则相当于并联的RNN。
-
-更进一步的，上述三者都可表述为以下通式：
-
-$$h^k=g^k\left[\sum_{t=0}^{k-1}f_t^k(h^t)\right]$$
-
-其中，$$h^t$$表示t时刻的隐层状态；索引k表示当前时刻；$$x^t$$表示t时刻的输入；$$f_t^k(⋅)$$表示特征提取；$$g^k$$表示对提取特征做输出前的变换。
-
 如果$$f_t^k(\cdot)$$和$$g^k(\cdot)$$每个Step都共享，那么就是HORNN，如果只有$$f_t^k(\cdot)$$共享，那么就是ResNet，两者都不共享，那就是DenseNet。
 
 ![](/images/img2/DPN.png)
@@ -117,6 +107,10 @@ ML时代的代表算法还有：
 https://mp.weixin.qq.com/s/A8c-15OgKaGPiTETEqyWbw
 
 华人计算机视觉鼻祖、双院外籍院士黄煦涛逝世，昔日名师门徒遍天下
+
+https://mp.weixin.qq.com/s/asa10LOLI5V8tu1j_VcaDQ
+
+张正友忆华人计算机视觉宗师Thomas S. Huang
 
 https://mp.weixin.qq.com/s/pgXEWIGvGGc8o1RefWTXAw
 

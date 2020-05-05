@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十一）——CRF
+title:  机器学习（三十一）——MRF, CRF
 category: ML 
 ---
 
@@ -112,6 +112,8 @@ $$P(x_A,x_B|x_C)=P(x_A|x_C)P(x_B|x_C)$$
 
 Maximum Entropy Markov Model是一种判别模型。
 
+![](/images/img3/)
+
 http://www.cnblogs.com/en-heng/p/6201893.html
 
 中文分词：最大熵马尔可夫模型MEMM
@@ -203,6 +205,10 @@ https://www.jianshu.com/p/55755fc649b1
 https://zhuanlan.zhihu.com/p/34261803
 
 白话条件随机场（conditional random field）
+
+https://mp.weixin.qq.com/s/K-J4hbPpl8RQtpu1X6k1QQ
+
+CRF原理及实现代码
 
 ## BiLSTM+CRF
 

@@ -250,7 +250,7 @@ https://ensmallen.org/
 
 NVIDIA作为行业龙头，其影响力甚至在Khronos Group之上，它提出的标准很多成为了行业的事实标准。
 
->最近（2018.2），公司副总M给我们讲座的时候，回顾他早年在NVIDIA的经历，当时他曾拥有数万股NV的股票，可惜早都卖了。这十几年来，NV股票经过5次分拆，当初的一股现在要值6500美元。他要不卖，现在可能已经是亿万富翁了。。。
+>最近（2018.2），公司副总M给我们讲座的时候，回顾他早年在NVIDIA的经历，当时他作为公司骨干，曾拥有数万股NV的股票，可惜早都卖了。这十几年来，NV股票经过5次分拆，当初的一股现在要值6500美元。他要不卖，现在可能已经是亿万富翁了。。。
 
 ![](/images/img3/nvidia.jpg)
 
@@ -259,6 +259,22 @@ NVIDIA作为行业龙头，其影响力甚至在Khronos Group之上，它提出�
 iGPU：Integrated Graphics Processing Unit。
 
 dGPU：Discrete Graphics Processing Unit。
+
+## 驱动安装
+
+查看显卡硬件型号：
+
+`ubuntu-drivers devices`
+
+安装驱动：
+
+`sudo ubuntu-drivers autoinstall`
+
+参考：
+
+https://zhuanlan.zhihu.com/p/59618999
+
+Ubuntu 18.04安装NVIDIA显卡驱动
 
 ## CUDA
 

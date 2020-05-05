@@ -1,44 +1,8 @@
 ---
 layout: post
-title:  深度学习（十九）——SegNet, DeconvNet, DeepLab, ENet, GCN, Mask R-CNN
+title:  深度学习（十九）——DeconvNet, DeepLab, ENet, GCN, Mask R-CNN
 category: DL 
 ---
-
-# SegNet
-
-SegNet是Vijay Badrinarayanan于2015年提出的。
-
-论文：
-
-《SegNet: A Deep Convolutional Encoder-Decoder Architecture for Robust Semantic Pixel-Wise Labelling》
-
-代码：
-
-https://github.com/alexgkendall/caffe-segnet
-
-除此之外，还有一个demo网站：
-
-http://mi.eng.cam.ac.uk/projects/segnet/
-
->Vijay Badrinarayanan，印度人，班加罗尔大学本科（2001年）+Georgia理工硕士（2005年）+法国INRIA博士（2009年）。剑桥大学讲师。
-
->Alex Kendall，新西兰奥克兰大学本科（2014年）+剑桥大学博士在读。本文二作，但是代码和demo都是他写的。
-
->Roberto Cipolla，剑桥大学本科（1984年）+宾夕法尼亚大学硕士（1985年）+牛津大学博士（1991年）。剑桥大学教授。
-
-![](/images/article/SegNet.png)
-
-相比于CNN下采样阶段的结构规整，FCN上采样时的结构就显得凌乱了。因此，SegNet采用了几乎和下采样对称的上采样结构。
-
-参考：
-
-http://blog.csdn.net/fate_fjh/article/details/53467948
-
-SegNet
-
-https://mp.weixin.qq.com/s/YwmHiQ0vyFAx_dhjsmOlAQ
-
-编解码结构SegNet
 
 # DeconvNet
 
@@ -291,3 +255,21 @@ keypoint branch的输出结果是一个keypoint的heatmap（每个keypoint都有
 当然ROI区域和原图，无论是坐标，还是尺寸，都有差异，需要通过插值恢复回去。Mask R-CNN使用的是bicubic插值，该方法计算量较大，因此实际中，多采用下文所述的基于Taylor展开的方法进行插值。
 
 《Invariant Features from Interest Point Groups》
+
+参考：
+
+https://zhuanlan.zhihu.com/p/25954683
+
+Mask R-CNN个人理解
+
+https://mp.weixin.qq.com/s/E0P2B798pukbtRarWooUkg
+
+Mask R-CNN的Keras/TensorFlow/Pytorch代码实现
+
+https://zhuanlan.zhihu.com/p/30967656
+
+从R-CNN到Mask R-CNN
+
+https://www.zhihu.com/question/57403701
+
+如何评价Kaiming He最新的Mask R-CNN?

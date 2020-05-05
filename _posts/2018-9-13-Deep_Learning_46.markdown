@@ -136,6 +136,34 @@ UnrealText：基于虚拟场景的真实场景文本图像合成
 
 # Graph NN+
 
+https://mp.weixin.qq.com/s/EKb9hN9cFrwNtSWWBpE4dw
+
+首次基于神经架构搜索自动生成图卷积结构，刷新人体动作识别准确率
+
+https://mp.weixin.qq.com/s/-Fw8HcrQjBoYA4lXk0NZ3Q
+
+图变换网络：Graph Transformer Network
+
+https://mp.weixin.qq.com/s/nigeDLq-HrtELfhfWj5qow
+
+自注意力图池化
+
+https://mp.weixin.qq.com/s/_uoyv-NAn8GypYXGsLvjhg
+
+Graph U-Nets
+
+https://zhuanlan.zhihu.com/p/78466344
+
+从源头探讨GCN的行文思路
+
+https://mp.weixin.qq.com/s/YNIwmR8K-H2eKbKoZSZZ-Q
+
+CIKM最佳应用论文：11亿节点的大型图，看闲鱼如何用图卷积过滤垃圾评论
+
+https://mp.weixin.qq.com/s/6RSYTlNvw7TyOJsjHf1iYQ
+
+基于图上下文知识融入的预训练语言模型
+
 https://mp.weixin.qq.com/s/0B1ROCg7SMn0I7-5HVeMIg
 
 用图神经网络改善视频的多标签分类
@@ -363,3 +391,15 @@ https://mp.weixin.qq.com/s/Pgz8cnDpX2mgexASnRzfhA
 https://mp.weixin.qq.com/s/hQ-Fo_aizkcTxvzW0FSIEw
 
 VGAE：利用变分自编码器完成图重构
+
+https://zhuanlan.zhihu.com/p/137223381
+
+推荐系统的图方法
+
+https://mp.weixin.qq.com/s/hFtFjR4EIVN_9g93YjtuoQ
+
+GCMC：GNN在推荐系统中的应用
+
+https://mp.weixin.qq.com/s/u8XAbOautjZTA7ZhdSBaDA
+
+经典重温：图表示学习经典算法node2vec

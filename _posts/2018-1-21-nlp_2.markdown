@@ -427,3 +427,7 @@ https://mp.weixin.qq.com/s/sWrUlwEe4CBPQklzFWNE3A
 https://mp.weixin.qq.com/s/L84Ll2PlJLHhQYo134bcFQ
 
 如何基于Apache Pulsar和Spark进行批流一体的弹性数据处理？
+
+https://mp.weixin.qq.com/s/zqvKzJkP5LtDriuRXojn7Q
+
+我们为什么从Kafka迁移至Pulsar？

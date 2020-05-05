@@ -6,6 +6,18 @@ category: Attention
 
 # BERT（续）
 
+## NMT
+
+BERT的论文并未提到执行NMT任务时的网络结构，但从下面的论文：
+
+《Incorporating BERT into Neural Machine Translation》
+
+可以看出NMT的网络结构仍然是和Transformer类似的seq2seq结构：
+
+![](/images/img3/BERT_5.png)
+
+也就是说，仍然有decoder部分，仍然不能完全并行。
+
 ## ELMo
 
 https://mp.weixin.qq.com/s/I315hYPrxV0YYryqsUysXw
@@ -329,15 +341,3 @@ https://www.zhihu.com/question/298203515
 https://mp.weixin.qq.com/s/Fao3i99kZ1a6aa3UhAYKhA
 
 全面超越人类！Google称霸SQuAD，BERT横扫11大NLP测试
-
-https://mp.weixin.qq.com/s/INDOBcpg5p7vtPBChAIjAA
-
-最强预训练模型BERT的Pytorch实现
-
-https://mp.weixin.qq.com/s/SZMYj4rMneR3OWST007H-Q
-
-解读谷歌最强NLP模型BERT：模型、数据和训练
-
-https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
-
-详细解读谷歌新模型BERT为什么嗨翻AI圈

@@ -6,6 +6,30 @@ category: DL
 
 # Graph NN（续）
 
+https://mp.weixin.qq.com/s/aeQyZ8cpz81cK8Dg-84mjA
+
+网络表征学习综述
+
+https://mp.weixin.qq.com/s/bsNDI9YxFdaB2Q5aRz9ECw
+
+图卷积神经网络的变种与挑战
+
+https://mp.weixin.qq.com/s/oKwxWbCkH-xqYSJIBdb92A
+
+2018超网络节点表示学习
+
+https://mp.weixin.qq.com/s/WQlSghxG89JCroNZSmop8w
+
+朱军：关于图的表达学习
+
+https://mp.weixin.qq.com/s/mTCrTPzyeogwRHfgitfK6Q
+
+为什么说图网络是AI的未来？
+
+https://mp.weixin.qq.com/s/B8rJRlnwGJKUSI17Ot66Xw
+
+从CNN到GCN的联系与区别——GCN从入门到精（fang）通（qi）
+
 https://mp.weixin.qq.com/s/DUv5c6ce-dgLOBAE4ChiQg
 
 图神经网络为何如此强大？看完这份斯坦福31页PPT就懂了！
@@ -361,31 +385,3 @@ https://mp.weixin.qq.com/s/olt_i6JxfslFSdbz0Dx4oA
 https://mp.weixin.qq.com/s/LzaP6BWaKXL4O_Jf9QN7Rw
 
 基于层次化注意力图网络和多视角学习的商品推荐
-
-https://mp.weixin.qq.com/s/EKb9hN9cFrwNtSWWBpE4dw
-
-首次基于神经架构搜索自动生成图卷积结构，刷新人体动作识别准确率
-
-https://mp.weixin.qq.com/s/-Fw8HcrQjBoYA4lXk0NZ3Q
-
-图变换网络：Graph Transformer Network
-
-https://mp.weixin.qq.com/s/nigeDLq-HrtELfhfWj5qow
-
-自注意力图池化
-
-https://mp.weixin.qq.com/s/_uoyv-NAn8GypYXGsLvjhg
-
-Graph U-Nets
-
-https://zhuanlan.zhihu.com/p/78466344
-
-从源头探讨GCN的行文思路
-
-https://mp.weixin.qq.com/s/YNIwmR8K-H2eKbKoZSZZ-Q
-
-CIKM最佳应用论文：11亿节点的大型图，看闲鱼如何用图卷积过滤垃圾评论
-
-https://mp.weixin.qq.com/s/6RSYTlNvw7TyOJsjHf1iYQ
-
-基于图上下文知识融入的预训练语言模型

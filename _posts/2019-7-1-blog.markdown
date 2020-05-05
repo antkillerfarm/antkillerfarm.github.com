@@ -6,7 +6,7 @@ category: essay
 
 # Blog维护日志
 
-2020.4.28 添加Segmentation分类。
+2020.4.28 添加Segmentation分类。添了一个Technical University of Munich的follower。
 
 2020.1.23 添加Nature分类。
 
@@ -270,46 +270,20 @@ https://mp.weixin.qq.com/s/_YTvP1MN0HXzOY0XJ1Ri3Q
 
 1976-2021 45年苹果电脑CPU之变迁
 
+https://mp.weixin.qq.com/s/fUl-YjMlfZs9XXZ1W4DFBQ
+
+GPU历史系列（一）：故事从19世纪70年代讲起
+
+https://mp.weixin.qq.com/s/QuvpUYNhmf3htl0ea9TT8Q
+
+GPU历史系列（二）：改变游戏规则的3Dfx Voodoo
+
+https://mp.weixin.qq.com/s/bdfYwgfu8iDo00Qfbp0tsA
+
+Arm芯片三十五年
+
 ----
 
 https://baike.baidu.com/item/Full Mask - MPW/16508899
 
 Full Mask和MPW都是集成电路的一种流片（将设计结果交出去进行生产制造）方式。Full Mask是“全掩膜”的意思，即制造流程中的全部掩膜都为某个设计服务；而MPW（Multi Project Wafer），直译为多项目晶圆，即多个项目共享某个晶圆，也即同一次制造流程可以承担多个IC设计的制造任务。
-
-# 数学杂谈+
-
-https://mp.weixin.qq.com/s/BwCLtH2mpWLHoXxLlIp5ww
-
-“待我长发及腰”，女生说这话什么意思？
-
-https://www.zhihu.com/question/40167866
-
-学数学的和学物理的，真心惹不起啊。。。
-
-https://mp.weixin.qq.com/s/hTExoHwP8kzUWyRuUL8G_g
-
-宅在家做蛋糕如何“合理把握”烘焙时间？模小数用数学建模告诉你
-
-https://mp.weixin.qq.com/s/_uu1dFzSC257vKS4mPjVfg
-
-父子反目，遭亲爹打压数年，数学第一家族中最憋屈的科学家（Daniel Bernoull）
-
-https://mp.weixin.qq.com/s/1Rmdfv4VTIteEPZV-MVJLA
-
-17世纪的鼠疫与疫区的牛顿
-
-https://zhuanlan.zhihu.com/p/109768913
-
-来自表情包的一道极限计算题
-
-https://mp.weixin.qq.com/s/9dphMMCaTRtJ-HtbygOP7w
-
-从青年欧拉对巴塞尔问题的解法说起
-
-https://mp.weixin.qq.com/s/68K3L_pD7xfobr_jA1QgWA
-
-陈景润究竟为证明哥德巴赫猜想做出了哪些贡献？
-
-https://mp.weixin.qq.com/s/HKe_rY9OgwFFc3JH8luokw
-
-数学编年史：数学的起源与发展历程

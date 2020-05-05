@@ -360,6 +360,10 @@ https://mp.weixin.qq.com/s/mMVyuaorN-Zmvr2Gab6uiw
 
 波动率预测：基于CNN的图像识别策略
 
+https://mp.weixin.qq.com/s/cEGZJGNhT31pN_OJ8IpkjA
+
+当深度学习遇上量化交易——因子挖掘篇
+
 ## 金融模型
 
 ![](/images/img3/Quant.jpg)

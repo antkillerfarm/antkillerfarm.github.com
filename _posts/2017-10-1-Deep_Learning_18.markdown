@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十八）——FCN
+title:  深度学习（十八）——FCN, SegNet
 category: DL 
 ---
 
@@ -151,3 +151,39 @@ https://www.zhihu.com/question/56688854
 https://mp.weixin.qq.com/s/AXfyMeFnCENIMc2qS8hNtA
 
 10分钟看懂全卷积神经网络（FCN）：语义分割深度模型先驱
+
+# SegNet
+
+SegNet是Vijay Badrinarayanan于2015年提出的。
+
+论文：
+
+《SegNet: A Deep Convolutional Encoder-Decoder Architecture for Robust Semantic Pixel-Wise Labelling》
+
+代码：
+
+https://github.com/alexgkendall/caffe-segnet
+
+除此之外，还有一个demo网站：
+
+http://mi.eng.cam.ac.uk/projects/segnet/
+
+>Vijay Badrinarayanan，印度人，班加罗尔大学本科（2001年）+Georgia理工硕士（2005年）+法国INRIA博士（2009年）。剑桥大学讲师。
+
+>Alex Kendall，新西兰奥克兰大学本科（2014年）+剑桥大学博士在读。本文二作，但是代码和demo都是他写的。
+
+>Roberto Cipolla，剑桥大学本科（1984年）+宾夕法尼亚大学硕士（1985年）+牛津大学博士（1991年）。剑桥大学教授。
+
+![](/images/article/SegNet.png)
+
+相比于CNN下采样阶段的结构规整，FCN上采样时的结构就显得凌乱了。因此，SegNet采用了几乎和下采样对称的上采样结构。
+
+参考：
+
+http://blog.csdn.net/fate_fjh/article/details/53467948
+
+SegNet
+
+https://mp.weixin.qq.com/s/YwmHiQ0vyFAx_dhjsmOlAQ
+
+编解码结构SegNet

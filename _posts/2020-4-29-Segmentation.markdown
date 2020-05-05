@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  语义分割（一）——概述, 语义分割常见评价指标, 前DL时代的语义分割, 语义分割之DL进化史
+title:  语义分割（一）——概述, 常见评价指标, 前DL时代, DL进化史
 category: Segmentation 
 ---
 
@@ -44,7 +44,7 @@ https://mp.weixin.qq.com/s/9F2UB_5ah1nEe3dfyoeRhg
 
 图像分割算法综述
 
-# 语义分割常见评价指标
+# 常见评价指标
 
 假设总计有k+1分类(标记为$$L_0$$到$$L_k$$，其中包含一个背景类别)，$$P_{ij}$$表示类别为i的像素被预测为类别为j的数目，这样来说$$P_{ii}$$就表示TP(true positives)，$$P_{ij}$$与$$P_{ji}$$分别表示为FP(false positives)与FN(false negatives)。
 
@@ -80,7 +80,7 @@ https://mp.weixin.qq.com/s/87U2CZsca9XtIg-BXZPJhw
 
 深度学习图像语义分割常见评价指标详解
 
-# 前DL时代的语义分割
+# 前DL时代
 
 ![](/images/img3/Image_Segmentation.png)
 
@@ -126,7 +126,7 @@ https://mp.weixin.qq.com/s/AiuwMytfux9BMt__eVtj6w
 
 基于图割算法的木材表面缺陷图像分析
 
-# 语义分割之DL进化史
+# DL进化史
 
 ![](/images/img3/segmentation.png)
 

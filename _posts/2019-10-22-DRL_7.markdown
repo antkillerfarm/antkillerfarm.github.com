@@ -195,6 +195,10 @@ https://mp.weixin.qq.com/s/pLN-FHNSDYPcKmJCa4vOYA
 
 机器人在线“偷懒”怎么办？阿里研究出了这两套算法
 
+https://mp.weixin.qq.com/s/dkJr29LqO2PdSR6ds7X2qg
+
+协作多智能体强化学习中的回报函数设计
+
 # StarCraft & AI
 
 AIIDE（Artificial Intelligence and Interactive Digital Entertainment）
@@ -336,19 +340,3 @@ DeepMind首个战胜星际2职业玩家的AI为何无敌？新视角揭秘AI里�
 https://mp.weixin.qq.com/s/_t2vLFfIG6VYAdWDalpIXQ
 
 说人话教AI打游戏，Facebook开源迷你版星际争霸，成果登上NeurIPS 2019
-
-https://mp.weixin.qq.com/s/X7QQn6W2dB3y_Ljii-sJ3w
-
-Alphastar再登Nature！星际争霸任一种族，战网狂虐99.8%人类玩家
-
-https://zhuanlan.zhihu.com/p/102749648
-
-基于多智能体强化学习主宰星际争霸游戏
-
-https://zhuanlan.zhihu.com/p/92543229
-
-AlphaStar
-
-https://zhuanlan.zhihu.com/p/97720096
-
-浅谈AlphaStar

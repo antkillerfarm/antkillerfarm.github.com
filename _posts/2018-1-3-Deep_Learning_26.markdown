@@ -128,6 +128,10 @@ https://mp.weixin.qq.com/s/lV2yjhvnRLDfNbZXOSjofg
 
 ctpn：图像文字检测方法
 
+https://mp.weixin.qq.com/s/yxNIw8WDkJZ782HSDyfniw
+
+深度解析文本检测网络CTPN
+
 ## 参考
 
 https://mp.weixin.qq.com/s/h7HVyGbmtLmNVJp4p0rCRQ

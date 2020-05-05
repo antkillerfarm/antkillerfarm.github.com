@@ -6,6 +6,30 @@ category: DRL
 
 # DRL参考资源
 
+https://mp.weixin.qq.com/s/K-z_dX2-NepkEHbr45QlvQ
+
+微软研究院开源项目TextWorld：可用于强化学习训练的文本游戏
+
+https://mp.weixin.qq.com/s/K2DW_ntSWrlySpxgorF9dA
+
+Python强化学习实战，Anaconda公司的高级数据科学家讲解
+
+https://zhuanlan.zhihu.com/p/32089849
+
+概要：NIPS 2017 Deep Learning for Robotics Keynote
+
+https://mp.weixin.qq.com/s/CCQOHRCAolsorm8FEPdjoQ
+
+什么时候强化学习未必好用？
+
+https://mp.weixin.qq.com/s/Ctn1Wr68lph1UK_wjfCY1Q
+
+策略梯度搜索：不使用搜索树的在线规划和专家迭代
+
+https://mp.weixin.qq.com/s/78ir-Z4ch8_aVpjC6aCPGg
+
+DeepMind综述深度强化学习中的快与慢，智能体应该像人一样学习
+
 https://mp.weixin.qq.com/s?__biz=MzU1NTMyOTI4Mw==&mid=2247494226&idx=1&sn=a96ea0ad8961ec3698301cf0c4514843
 
 以YouTube论文学习如何在推荐场景应用强化学习
@@ -305,3 +329,7 @@ https://mp.weixin.qq.com/s/xG7IboDg6tn13rRIgKSICg
 https://mp.weixin.qq.com/s/CcJrsbYO70GwOcedUXnHdg
 
 除了网红，强化学习也能带货？
+
+https://mp.weixin.qq.com/s/ptgHNil1gqrH2p-x3UZoFw
+
+紧急更新下降难度，《王者荣耀》绝悟AI难倒一片玩家

@@ -8,6 +8,40 @@ category: Nature
 
 ## 口罩（续）
 
+https://mp.weixin.qq.com/s/tLljo8q-1eybDIk7CLQiSA
+
+滴~37℃（温度计、额温枪、红外线测温仪，它们都是怎么测量体温的呢？）
+
+https://mp.weixin.qq.com/s/SwYQFBv5lnej0g08bsBF1A
+
+“英伟达呼吸机”开源：计算机架构大师打造，成本暴减98%，黄仁勋点赞
+
+----
+
+KN95是中国标准，主要用于工业场景，且不要求油性防护，因此只是用氯化钠颗粒物检测，要求规过滤效果大于95%。此外中国还有KP95标准，支持油性防护。其中，“N”表示不耐油（not resistant to oil），“P”表示防油（oil proof）。
+
+KN95医用标准GB19083，工业标准是GB2626。
+
+https://zhuanlan.zhihu.com/p/105650218
+
+关于新冠病毒，这应该是最全的口罩科普贴了！
+
+----
+
+https://mp.weixin.qq.com/s/IXp36BDIi_cblf1nk-iidw
+
+40万公里的征途，一场消毒除菌产品与病毒的赛跑（立白集团）
+
+----
+
+Medtronic成立于1949年，致力于为心血管疾病，神经科，糖尿病，脊椎疾病以及五官科疾病患者提供治疗、诊断及监测方案。1957年，美敦力制造出第一台便携式体外心脏起搏器，随后于1960年制造出第一台可靠的可植入式心脏起搏系统。
+
+https://mp.weixin.qq.com/s/jlKlNwMp2-2TvyIWHU71LQ
+
+全球呼吸机告急！医疗科技巨头美敦力“开源”设计图和源代码
+
+----
+
 LVMH集团宣布，旗下Dior、Givenchy和娇兰三个品牌的香水生产线，将用于生产含酒精的消毒洗手液。
 
 奢侈品牌Prada将一家在佩鲁贾开设的工厂，改造成了口罩及医疗用品生产工厂，并计划在4月6日前，向意大利托斯卡纳医院运送8万件防护服，及11万只口罩。
@@ -193,6 +227,14 @@ https://xueqiu.com/1913820214/140236918
 
 ----
 
+Rem 人民 de 的 sivir 希望
+
+https://mp.weixin.qq.com/s/aZLWs6VT-zfEMaBt_cRfzg
+
+“人民的希望”跌落神坛，竟因中国的临床试验？
+
+----
+
 瑞德西韦（Remdesivir）、法匹拉韦（Favipiravir）、巴洛沙韦（Baloxavir）、洛匹那韦（lopinavir）、利托那韦（ritonavir）
 
 盘尼西林、阿莫西林、配尼西林、替卡西林、羧苄西林、匹美西林
@@ -232,53 +274,3 @@ https://mp.weixin.qq.com/s/MJamXXj44e-fxaP9WRyhgw
 http://www.sohu.com/a/370615513_105067
 
 网传饶毅致信舒红兵：您夫人不适合领导武汉病毒所
-
-## 疫情建模
-
-https://mp.weixin.qq.com/s/2XsZzfZI-gAHC-D5HGNZXw
-
-从目前的数据，再次分析一下武汉的新冠肺炎患者数量和死亡率
-
-https://mp.weixin.qq.com/s/I5I5Jh7brFGRBTAFah-C4w
-
-武汉新冠肺炎传播的动力学模型及预测
-
-https://mp.weixin.qq.com/s/-C03P-I4w91kLSGsuhxAKQ
-
-新型冠状病毒传播与扩散的控制模型
-
-https://mp.weixin.qq.com/s/gZCD8ATxGrpHSZLKpcHfiA
-
-基于元胞自动机模拟新型肺炎病毒的传播和预防
-
-https://mp.weixin.qq.com/s/ZOPncvPpFyLIwH_XChAdbg
-
-基于微分方程和元胞自动机模拟新型肺炎病毒的传播
-
-https://mp.weixin.qq.com/s/4w6CTGaKKEH9APVNH9Ue8w
-
-扩散信息、交通管制、自我隔离，哪个更能遏制病毒传播？
-
-https://mp.weixin.qq.com/s/tBoM9o3pK89bprK8npHLWA
-
-可能会说谎的地图！全国疫情地理格局的重新审视
-
-https://mp.weixin.qq.com/s/bVNkCHl7BPU_eEcAWksmww
-
-关于武汉新型冠状病毒肺炎的传播预测模型
-
-https://mp.weixin.qq.com/s/Lg1tJmO7aN9XNpZ6bs0cJA
-
-程序员硬核劝告：现在还不是出门的时候
-
-https://mp.weixin.qq.com/s/sv07R8HQXX2U0QOi5_dOwg
-
-河南1105例新冠肺炎数据告诉我们什么？
-
-https://mp.weixin.qq.com/s/qRzkS2itp-eloaBlA-VSGA
-
-基于排队论模型浅析各地医护人员驰援武汉的重要意义
-
-https://mp.weixin.qq.com/s/Rs2cTVPIa02NIkApvr076w
-
-全球COVID-19研究数据集正式开放，内含近3万篇论文和所需AI研究工具！

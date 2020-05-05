@@ -211,6 +211,10 @@ https://mp.weixin.qq.com/s/LLrq1F2uEC2xEWZrd9uijA
 
 一行代码自动调参，支持模型压缩指定大小，Facebook升级FastText
 
+https://mp.weixin.qq.com/s/VxODwO8qA33Cr1n62YXYBQ
+
+fastText：极快的文本分类工具
+
 ## RNNLM
 
 RNNLM是Mikolov早期提出的文本分类的工具。（其实就是他的博士毕业论文）

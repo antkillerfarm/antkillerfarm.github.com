@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Mysql, 安全, diff&patch
+title:  Mysql, 安全
 category: technology 
 ---
 
@@ -178,6 +178,10 @@ https://www.jianshu.com/p/bdc9e57ccf8b
 
 mysql索引篇之覆盖索引、联合索引、索引下推
 
+https://mp.weixin.qq.com/s/PgGDeowQaQ6MlUExZE-TMA
+
+如果是MySQL引起的CPU消耗过大，你会如何优化？
+
 # 安全
 
 https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
@@ -227,32 +231,6 @@ https://mp.weixin.qq.com/s/z5zMETSMUGoTiZYMooKZ-g
 https://mp.weixin.qq.com/s/f6SY7Me9Ls3AZNxK0rHz7g
 
 密码加密时的加盐（salt）是什么
-
-# diff&patch
-
-diff/patch这对工具在数学上来说，diff是对2个集合求差，patch是求和。
-
-```bash
-diff -uNr A B > C #生成A和B的diff文件C,-uNr为最常用的选项
-patch A C #给A打上diff文件得到B
-patch -R B C #B还原为A
-```
-
-## 给目录应用patch。
-
-`patch -p1 <1.patch`
-
-这种情况适合1.patch中包含对多个文件的修改时。
-
-## 批量应用patch
-
-有的时候，patch不是一个patch文件，而是一个目录中的若干个patch文件。这时可用如下办法：
-
-`find . -name "*.patch">1.txt`
-
-`sort 1.txt | xargs cat >2.patch`
-
-`patch -p1 <2.patch`
 
 # 机器人/无人驾驶参考资源+
 

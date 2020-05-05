@@ -122,6 +122,14 @@ https://mp.weixin.qq.com/s/fUZ0G0lzqfzaCjPSYBNIzQ
 
 图神经网络，Graph Neural Networks，附60页ppt
 
+https://mp.weixin.qq.com/s/So07A88G2fGYDiDZgrv3EA
+
+最新图学习推荐系统综述：Graph Learning Approaches to Recommender Systems
+
+https://mp.weixin.qq.com/s/Nvgt70529OQ5f7fkGH2Pgw
+
+最新《图卷积神经网络GCN》2020概述，76页ppt，NTU-Xavier Bresson，纽约大学深度学习课程
+
 ## 综述
 
 《A Comprehensive Survey on Graph Neural Networks》
@@ -385,27 +393,3 @@ https://mp.weixin.qq.com/s/lt9lZbulkW0C8A_xi6hodQ
 https://mp.weixin.qq.com/s/XSug_qOqq_QaphkiRlGkIg
 
 图卷积GCN前沿方法介绍
-
-https://mp.weixin.qq.com/s/aeQyZ8cpz81cK8Dg-84mjA
-
-网络表征学习综述
-
-https://mp.weixin.qq.com/s/bsNDI9YxFdaB2Q5aRz9ECw
-
-图卷积神经网络的变种与挑战
-
-https://mp.weixin.qq.com/s/oKwxWbCkH-xqYSJIBdb92A
-
-2018超网络节点表示学习
-
-https://mp.weixin.qq.com/s/WQlSghxG89JCroNZSmop8w
-
-朱军：关于图的表达学习
-
-https://mp.weixin.qq.com/s/mTCrTPzyeogwRHfgitfK6Q
-
-为什么说图网络是AI的未来？
-
-https://mp.weixin.qq.com/s/B8rJRlnwGJKUSI17Ot66Xw
-
-从CNN到GCN的联系与区别——GCN从入门到精（fang）通（qi）

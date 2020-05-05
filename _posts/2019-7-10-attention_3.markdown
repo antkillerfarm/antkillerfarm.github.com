@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（三）——BERT（1）
+title:  Attention（三）——预训练语言模型进化史, BERT（1）
 category: Attention 
 ---
 
@@ -156,6 +156,88 @@ https://mp.weixin.qq.com/s/Oixc46P9rQeiMDjI-0j0cw
 
 Transformer在美团搜索排序中的实践
 
+https://mp.weixin.qq.com/s/S_RELwKsqInvacTxdwJBPg
+
+浅谈Transformer模型中的位置表示
+
+# 预训练语言模型进化史
+
+![](/images/img3/BERT.jpg)
+
+![](/images/img3/PTM.jpg)
+
+https://mp.weixin.qq.com/s/kwKZfNSYTzc-PGKxTxm8-w
+
+复旦大学：最新《预训练语言模型》2020综述论文
+
+https://zhuanlan.zhihu.com/p/115014536
+
+全面总结！PTMs：NLP预训练模型
+
+https://mp.weixin.qq.com/s/1ixYjJN-bJPGrr7v-4d7Rw
+
+预训练语言模型的前世今生：萌芽时代
+
+https://mp.weixin.qq.com/s/g4jEVU3BkRem-DYXCn5eFQ
+
+预训练语言模型的前世今生：风起云涌
+
+https://mp.weixin.qq.com/s/U8f0cXoPrN32PM3944Oqkg
+
+预训练语言模型的前世今生：十分钟了解文本分类通用训练技巧
+
+https://mp.weixin.qq.com/s/uAJ_05g0Zo33mgygTnow1Q
+
+预训练语言模型的前世今生：银色独角兽GPT家族
+
+https://mp.weixin.qq.com/s/2_MXIEk5-JP5KwsV6al9XQ
+
+预训练语言模型的前世今生：BERT，开启NLP新时代的王者
+
+https://mp.weixin.qq.com/s/yRn1AELGK3jgfOaaxIo67Q
+
+预训练语言模型的前世今生：Huggingface简介及BERT代码浅析
+
+https://mp.weixin.qq.com/s/sMocYFvESXoBGtX_NWmQkQ
+
+预训练语言模型的前世今生：百度出品ERNIE合集，问国产预训练语言模型哪家强
+
+https://mp.weixin.qq.com/s/uOGNoePkwfeixTtI4q4t8Q
+
+预训练语言模型的前世今生：MT-DNN(KD) : 预训练、多任务、知识蒸馏的结合
+
+https://mp.weixin.qq.com/s/-fQ9VlaOjssDufcZuCe91w
+
+预训练语言模型的前世今生：结合HuggingFace代码浅析Transformer
+
+https://mp.weixin.qq.com/s/MXZ3ygSqwyXqOH1PrWEGqg
+
+预训练语言模型的前世今生：Transformer-XL超长上下文注意力模型
+
+https://mp.weixin.qq.com/s/WDXGCC_MPK_sBCj4Bx6EDw
+
+从静态到动态，词表征近几十年发展回顾
+
+https://mp.weixin.qq.com/s/vW8jglstKsR7OSbyjexKrQ
+
+自然语言处理嵌入：语义向量表示理论与进展，从Word2Vec到BERT，163页pdf
+
+https://mp.weixin.qq.com/s/tokxh7Conb-hajj8pnr2fA
+
+Google BERT作者Jacob斯坦福亲授《上下文词向量与预训练语言模型: BERT到T5》43页ppt
+
+https://mp.weixin.qq.com/s/FRfjOSbnquQeFSBDI1FWwg
+
+6个你应该用用看的用于文本分类的最新开源预训练模型
+
+https://mp.weixin.qq.com/s/UVeWDavdHxmziUWW39jrkA
+
+原理篇一：从one-hot到Word2vec
+
+https://mp.weixin.qq.com/s/JSWw5RBgQoW-PrfIhbMtjQ
+
+原理篇二：从ELMo到ALBERT
+
 # BERT
 
 ## 概述
@@ -257,89 +339,3 @@ BERT对于input embeddings也做了改进。（如下图所示）
 ![](/images/img3/BERT_4.png)
 
 其中，Segment Embeddings用于区分输入中的不同句子。这一方案的使用，使得输入文本不再局限于一句话之内，从而大大增加了输入文本的长度，对于获得文本的全局信息，很有好处。
-
-## NMT
-
-BERT的论文并未提到执行NMT任务时的网络结构，但从下面的论文：
-
-《Incorporating BERT into Neural Machine Translation》
-
-可以看出NMT的网络结构仍然是和Transformer类似的seq2seq结构：
-
-![](/images/img3/BERT_5.png)
-
-也就是说，仍然有decoder部分，仍然不能完全并行。
-
-## 预训练语言模型进化史
-
-![](/images/img3/BERT.jpg)
-
-![](/images/img3/PTM.jpg)
-
-https://mp.weixin.qq.com/s/kwKZfNSYTzc-PGKxTxm8-w
-
-复旦大学：最新《预训练语言模型》2020综述论文
-
-https://zhuanlan.zhihu.com/p/115014536
-
-全面总结！PTMs：NLP预训练模型
-
-https://mp.weixin.qq.com/s/1ixYjJN-bJPGrr7v-4d7Rw
-
-预训练语言模型的前世今生：萌芽时代
-
-https://mp.weixin.qq.com/s/g4jEVU3BkRem-DYXCn5eFQ
-
-预训练语言模型的前世今生：风起云涌
-
-https://mp.weixin.qq.com/s/U8f0cXoPrN32PM3944Oqkg
-
-预训练语言模型的前世今生：十分钟了解文本分类通用训练技巧
-
-https://mp.weixin.qq.com/s/uAJ_05g0Zo33mgygTnow1Q
-
-预训练语言模型的前世今生：银色独角兽GPT家族
-
-https://mp.weixin.qq.com/s/2_MXIEk5-JP5KwsV6al9XQ
-
-预训练语言模型的前世今生：BERT，开启NLP新时代的王者
-
-https://mp.weixin.qq.com/s/yRn1AELGK3jgfOaaxIo67Q
-
-预训练语言模型的前世今生：Huggingface简介及BERT代码浅析
-
-https://mp.weixin.qq.com/s/sMocYFvESXoBGtX_NWmQkQ
-
-预训练语言模型的前世今生：百度出品ERNIE合集，问国产预训练语言模型哪家强
-
-https://mp.weixin.qq.com/s/uOGNoePkwfeixTtI4q4t8Q
-
-预训练语言模型的前世今生：MT-DNN(KD) : 预训练、多任务、知识蒸馏的结合
-
-https://mp.weixin.qq.com/s/-fQ9VlaOjssDufcZuCe91w
-
-预训练语言模型的前世今生：结合HuggingFace代码浅析Transformer
-
-https://mp.weixin.qq.com/s/WDXGCC_MPK_sBCj4Bx6EDw
-
-从静态到动态，词表征近几十年发展回顾
-
-https://mp.weixin.qq.com/s/vW8jglstKsR7OSbyjexKrQ
-
-自然语言处理嵌入：语义向量表示理论与进展，从Word2Vec到BERT，163页pdf
-
-https://mp.weixin.qq.com/s/tokxh7Conb-hajj8pnr2fA
-
-Google BERT作者Jacob斯坦福亲授《上下文词向量与预训练语言模型: BERT到T5》43页ppt
-
-https://mp.weixin.qq.com/s/FRfjOSbnquQeFSBDI1FWwg
-
-6个你应该用用看的用于文本分类的最新开源预训练模型
-
-https://mp.weixin.qq.com/s/UVeWDavdHxmziUWW39jrkA
-
-原理篇一：从one-hot到Word2vec
-
-https://mp.weixin.qq.com/s/JSWw5RBgQoW-PrfIhbMtjQ
-
-原理篇二：从ELMo到ALBERT

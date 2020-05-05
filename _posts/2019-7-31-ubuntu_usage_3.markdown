@@ -315,6 +315,8 @@ LibreOffice：6.4
 
 解决办法：修改`/boot/grub/grub.cfg`，去掉多余的条目。
 
+>不要直接修改该文件本身，否则系统一旦更新之后，又要再来一遍。该文件开头的注释中介绍了该文件是如何生成的。
+
 这里主要参考的是以下文章：
 
 https://www.cnblogs.com/schips/p/10141278.html

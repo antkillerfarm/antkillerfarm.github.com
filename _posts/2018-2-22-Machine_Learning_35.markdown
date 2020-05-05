@@ -301,3 +301,7 @@ https://mp.weixin.qq.com/s/AOI2LUjiKPUJFE0D7zX0Hw
 https://mp.weixin.qq.com/s/Q0XyKIrbOIrA3YsYHmwK1Q
 
 移动端高效率的分组网络都发展到什么程度了？
+
+https://mp.weixin.qq.com/s/l3790PuutrOF27RRmVqJhQ
+
+面对千万级推荐，如何压缩模型最高效？这是腾讯看点新框架

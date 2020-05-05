@@ -1,0 +1,352 @@
+---
+layout: post
+title:  bash, diff&patch, awk&sed&grep
+category: linux 
+---
+
+# bash
+
+手册：
+
+https://www.gnu.org/software/bash/manual/bash.pdf
+
+## 历史
+
+![](/images/img3/sh.gif)
+
+参考：
+
+https://www.ibm.com/developerworks/cn/linux/l-linux-shells/
+
+评估Linux中的shell
+
+### Thompson shell
+
+Ken Thompson于1971年开发了第一个用于UNIX的shell，名为V6 shell。该shell为重定向（< > 和 >>）和管道（| 或 ^）引入了一种紧凑的语法，并支持参数扩展的模式匹配，比如`*.txt`。但它缺少编写脚本的能力。
+
+### bsh
+
+Bourne shell，由AT&T公司的Steve Bourne开发（1977）。它引入了控制流、循环和变量，从而具备了脚本的能力。
+
+>Stephen Richard "Steve" Bourne，1944年生，英国计算机学家。King's College London本科+Cambridge博士。先后工作于Bell Labs、Silicon Graphics, DEC, Sun和Cisco。ACM主席、皇家天文学会会员。除了bsh之外，他还发明了adb debugger for UNIX。
+
+### csh
+
+csh是Bill Joy设计的（1978），它的语法类似C语言，故名。主要改进是添加了历史记录。
+
+>William (Bill) Nelson Joy，1954年生，美国计算机科学家。University of Michigan本科+UCB硕士（1979）。他的知名作品包括BSD、vi、csh、chroot、TCP/IP driver、Java、SPARC、Solaris、NFS。Sun创始人兼首席科学家。
+
+### tcsh
+
+tcsh由Ken Greer在CMU开发（1981），它在csh的基础上，提供了文件名补全的功能。后来Mike Ellis又加入了命令补全的功能（1983）。
+
+### ksh
+
+Korn shell (ksh) 由David Korn设计的（1983），它在bsh的基础上添加了一些csh、tcsh引入的功能。
+
+### bash
+
+Bourne-Again Shell（或 Bash）是一个开源 GNU 项目，旨在取代 Bourne shell。它由Brian Fox开发（1989），吸取了ksh、csh等的功能，现已成为世上最流行的shell。在通常语境中，如果没有特指的话，shell一般就是指的bash。
+
+### zsh
+
+zsh由Paul Falstad开发（1990）。它的功能极其强大，但也由于配置过于复杂，所以初期无人问津。直到有一天，国外有个穷极无聊的程序员开发出了一个能够让你快速上手的zsh项目，叫做“oh my zsh”：
+
+https://github.com/ohmyzsh/ohmyzsh
+
+参考：
+
+https://zhuanlan.zhihu.com/p/19556676
+
+终极Shell——ZSH
+
+### Fish Shell
+
+吸取了zsh的经验，Fish Shell主打的是开箱即用。
+
+官网：
+
+http://fishshell.com/
+
+参考：
+
+http://www.ruanyifeng.com/blog/2017/05/fish_shell.html
+
+Fish shell入门教程
+
+### BusyBox
+
+BusyBox由Bruce Perens设计（1995），号称是“The Swiss Army knife of Embedded Linux”。
+
+Thompson shell以及之后的shell，其设计思路是一个shell主程序+若干命令程序。这里的命令甚至包括shell中的一些语法成分，比如test和`[`。是的，你没看错，`[`也是一个应用程序。
+
+而BusyBox为了发布和部署的方便，将一个shell和所有命令合并到一个可执行文件中。
+
+官网：
+
+https://busybox.net/
+
+## 空格和TAB的细节
+
+在大多数编程语言中，空格和TAB都不是有意义的字符，有没有或者有多少都无所谓。但Linux Shell不是这样的，尽管它看起来并没有如python那样的对缩进的强制语言规定。
+
+以下是它在使用空格和TAB时的一些细节：
+
+1.makefile文件中，规则定义部分的shell脚本命令需要使用TAB开头，使用空格会出错。
+
+2.if命令的格式：
+
+```bash
+if [ "$yn" == "Y" ] || [ "$yn" == "y" ]; then
+	echo "OK, continue"
+fi
+```
+
+注意一下上面脚本中的表达式[]之间的部分。其中所使用的空格不可省略，否则会出错。bash在处理[]表达式的时候，实际上调用了`/usr/bin/[`命令。如果把`[`当作特殊名称的普通命令的话，就会发现这里的空格用法实际上并不奇怪。
+
+## 查看当前使用的shell
+
+实时查看：
+
+`ps |  grep $$  |  awk '{print $4}'`
+
+非实时查看：
+
+`echo $SHELL`
+
+## return和exit的区别
+
+return用于函数的返回，它只能用在函数中。
+
+exit用于整个shell脚本的退出。
+
+## 预定义变量
+
+`$?`: 上条命令的返回值
+
+`$$`: 当前shell的PID。
+
+## shell如何把多行内容输出到一个文件
+
+一行一行echo重定向显然是个笨办法，这里可以使用Here Documents语法。
+
+例子：
+
+```bash
+(
+cat<<EOF
+line 1
+line 2
+EOF
+)>a.txt
+```
+
+参考：
+
+https://linux.die.net/abs-guide/here-docs.html
+
+Here Documents
+
+## 目录切换
+
+`cd -`：回到上一次所在的路径的命令。当需要在两个相隔较远的路径下，相互切换的时候，可以使用该命令。
+
+`pushd <dir1>`：将dir1添加到一个栈顶。栈中每个目录都有一个序号（栈顶为0）。使用`pushd +n`将第n个目录切换到栈顶。（栈顶即为当前目录，所以无论添加还是切换栈顶，都可以切换当前目录）
+
+`pushd -n`的含义刚好相反，它从栈底向栈顶方向计数。
+
+`popd`和`popd +n`用于从栈中删除目录。
+
+`dirs -v`用于查看栈中元素。
+
+参考：
+
+https://www.jianshu.com/p/53cccae3c443
+
+Linux中的pushd和popd
+
+## 批量修改后缀名
+
+`rename 's/\.pgf/\.tex/' *`
+
+## 快捷方式
+
+复制：Ctrl+Shift+c
+
+粘贴：Ctrl+Shift+v
+
+历史命令搜索：Ctrl+r
+
+## 彩色字符
+
+https://mp.weixin.qq.com/s/DQzlfQXt4dV9PYwoVdomaw
+
+如何开发多彩动感的终端UI应用
+
+## 参考
+
+https://github.com/dylanaraps/pure-bash-bible
+
+本项目主要汇总了bash脚本经常会使用到的一些代码片段，并按照字符串、数组、正则表达式、文件处理、变量等常用功能进行分类，并给出了具体的Demo，非常适合初学者以及希望提升工作效率的朋友使用。
+
+https://blog.csdn.net/iot_flower/article/details/69055590
+
+shell脚本第一行：#!/bin/bash的含义
+
+https://mp.weixin.qq.com/s/ZaIX8jv9LMWmrHQb4ew-dQ
+
+写好shell脚本的13个技巧
+
+http://www.ywnds.com/?p=12325
+
+Shell版俄罗斯方块
+
+https://mp.weixin.qq.com/s/SBVEo53irSZfI40sBFZXWQ
+
+shift：解决shell编程中的入参问题
+
+https://mp.weixin.qq.com/s/T_XwLS6CIrkXbgXJVIo2Jw
+
+一文了解十大Linux命令行工具！
+
+https://mp.weixin.qq.com/s/euTQJy0HFVQotAY-KI2OzA
+
+10个实战及面试常用Shell脚本编写
+
+https://github.com/jaywcjlove/linux-command
+
+Linux命令大全搜索工具
+
+https://mp.weixin.qq.com/s/xuC_pH1X_GmyK0vVWrBzWQ
+
+10个实战与面试常用Shell脚本编写
+
+https://zhuanlan.zhihu.com/p/84774691
+
+bash下可控任务数的并发执行脚本
+
+# betty
+
+betty是Jeff Pickhardt开发的人工智能助手，可以将英文转换成Linux命令。
+
+安装方法如下：
+
+```bash
+sudo apt-get install git curl ruby
+cd ~
+git clone https://github.com/pickhardt/betty
+sudo nano ~/.bashrc
+```
+
+在.bashrc末尾添加以下内容：
+
+`alias betty="/home/sk/betty/main.rb"`
+
+重启终端即可。
+
+使用方法：
+
+`betty compress test/ test.tar.gz`
+
+# Hubot
+
+Hubot是个和betty类似的开源聊天机器人，可以用来做一些自动化任务，如部署网站，翻译语言等等。
+
+官网：
+
+https://hubot.github.com/
+
+参考：
+
+https://segmentfault.com/a/1190000004855149
+
+Hubot的简单用法
+
+# diff&patch
+
+diff/patch这对工具在数学上来说，diff是对2个集合求差，patch是求和。
+
+```bash
+diff -uNr A B > C #生成A和B的diff文件C,-uNr为最常用的选项
+patch A C #给A打上diff文件得到B
+patch -R B C #B还原为A
+```
+
+## 给目录应用patch。
+
+`patch -p1 <1.patch`
+
+这种情况适合1.patch中包含对多个文件的修改时。
+
+## 批量应用patch
+
+有的时候，patch不是一个patch文件，而是一个目录中的若干个patch文件。这时可用如下办法：
+
+`find . -name "*.patch">1.txt`
+
+`sort 1.txt | xargs cat >2.patch`
+
+`patch -p1 <2.patch`
+
+# awk&sed&grep
+
+这三个工具是文本处理中用的比较多的工具，各有各的特色，且都支持正则表达式。
+
+一般来说，行处理优先考虑使用sed和grep，列处理优先考虑使用awk。通常情况下，组合使用多个命令，其命令编写的难度小于只使用一个命令。比如sed和grep也可以进行列处理，但语法难度远超awk，反之亦然。
+
+这里不打算列出各个命令的选项，而仅列出使用它们的一些示例：
+
+这里假设我们有一文件名为ab。
+
+## awk
+
+```bash
+awk '{print $1}' ab #显示第一列
+```
+
+参考：
+
+https://mp.weixin.qq.com/s/-mWYn195TBSB1lDlncuYeA
+
+常用命令之awk常用实例
+
+## sed
+
+```bash
+sed '1d' ab #删除第一行 
+sed '$d' ab #删除最后一行
+sed '1,2d' ab #删除第一行到第二行
+sed '2,$d' ab #删除第二行到最后一行
+
+sed -n '1p' ab    #显示第一行 
+sed -n '$p' ab    #显示最后一行
+sed -n '1,2p' ab  #显示第一行到第二行
+sed -n '2,$p' ab  #显示第二行到最后一行
+
+sed -n '/ruby/p' ab #查询包括关键字ruby所在所有行
+sed -n '/\$/p' ab #查询包括关键字$所在所有行，使用反斜线\屏蔽特殊含义
+
+sed -n '/ruby/p' ab | sed 's/ruby/bird/g'    #替换ruby为bird
+sed -n '/ruby/p' ab | sed 's/ruby//g'        #删除ruby
+
+sed -e 's/.$//' mydos.txt > myunix.txt #dos->unix
+```
+
+## grep
+
+```bash
+grep 'ruby' ab #查询包括关键字ruby所在所有行
+grep -nri 'ruby' #n 显示行号，r 子目录搜索，i 忽略大小写
+```
+
+## 综合
+
+```bash
+ip addr show br-lan | grep 'inet ' | awk  '{print $2}' | sed 's/\/.*//g'
+```
+
+参考：
+
+https://mp.weixin.qq.com/s/o1vuL3RrWz9tyUPguZeSWA
+
+简单快捷的数据处理，数据科学需要注意的命令行
