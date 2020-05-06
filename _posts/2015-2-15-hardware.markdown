@@ -145,7 +145,7 @@ IAP（In-Application Programming）指MCU可以在系统中获取新代码并对
 
 flash按照内部存储结构不同，分为两种：nor flash和nand flash。
 
-NorFLASH使用方便，易于连接，可以在芯片上直接运行代码，稳定性出色，传输速率高，在小容量时有很高的性价比，这使其很适合应于嵌入式系统中作为FLASH ROM。
+NorFLASH使用方便，易于连接，可以在芯片上直接运行代码（eXecute In Place），稳定性出色，传输速率高，在小容量时有很高的性价比，这使其很适合应于嵌入式系统中作为FLASH ROM。
 
 在通信方式上Nor Flash分为两种类型：CFI Flash和SPI Flash。
 

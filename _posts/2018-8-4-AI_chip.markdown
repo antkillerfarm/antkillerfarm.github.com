@@ -32,6 +32,8 @@ NN计算问题的瓶颈主要包括两类：
 
 深鉴科技是一家AI Chip公司。成立于2016年3月，2018年7月被Xilinx收购。
 
+深鉴科技与云天励飞、寒武纪和地平线共同被称为“天寒地鉴”的中国AI芯片四小龙。
+
 官网：
 
 http://www.deephi.com/
@@ -266,17 +268,3 @@ https://mp.weixin.qq.com/s/j053qtpdz21IdgS22uGwAw
 https://mp.weixin.qq.com/s/XXO4hkjJkcZ5sTVVKWghEw
 
 TPU的起源，Jeff Dean综述后摩尔定律时代的ML硬件与算法
-
-## Groq 
-
-Groq是Google TPU团队的部分成员创立的AI芯片公司。
-
-官网：
-
-https://groq.com/
-
-参考：
-
-https://zhuanlan.zhihu.com/p/102357412
-
-Groq，“软件定义硬件”概念的背后

@@ -270,6 +270,32 @@ https://mp.weixin.qq.com/s/bgP_xMfi3hXayscf9D5JIg
 
 谷歌提出Sim2Real：让机器人像人类一样观察世界
 
+# 硬盘
+
+https://zhuanlan.zhihu.com/p/34858149
+
+128G的固态硬盘为什么有的标120G，有的标100G？固态硬盘容量背后的秘密
+
+https://zhuanlan.zhihu.com/p/38847308
+
+为什么硬盘转速是5400或者7200这么奇怪的数字？7200转的硬盘一定比5400快吗？
+
+https://www.zhihu.com/question/288500826/answer/470917953
+
+Windows等操作系统是如何做到复制几G文件不出错的？
+
+https://zhuanlan.zhihu.com/p/53547723
+
+一篇文章告诉你SLC、MLC、TLC和QLC究竟有啥区别?
+
+https://zhuanlan.zhihu.com/p/92712620
+
+SLC、MLC、TLC、QLC究竟有什么不同
+
+https://zhuanlan.zhihu.com/p/71267390
+
+固态硬盘和u盘的区别
+
 # CPU
 
 https://zhuanlan.zhihu.com/p/57780996
