@@ -342,6 +342,10 @@ https://mp.weixin.qq.com/s/8fxqbSFj9Nkj_iFX8YEjzQ
 
 以点代物，同时执行目标检测和跟踪，这个新方法破解目标跟踪难题
 
+https://mp.weixin.qq.com/s/vQf0TmcM9A56k_FtFvao3g
+
+RDSNet：统一目标检测和实例分割的新型网络
+
 # 设计模式
 
 面向对象的设计模式有七大基本原则：
