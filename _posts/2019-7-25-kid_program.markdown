@@ -169,6 +169,28 @@ https://mp.weixin.qq.com/s/DxE3YOE1GDq6ZXRhpzfC0w
 
 使用Go语言徒手撸一个简单的负载均衡器
 
+## GTK
+
+熟悉我的朋友都知道，新语言的GTK demo是一定要有的。毕竟helloworld太简单了，容易让人产生从三到万的错觉。
+
+go的GTK绑定主要有两个项目：
+
+For GTK3:
+
+https://github.com/gotk3/gotk3
+
+For GTK2:
+
+https://github.com/mattn/go-gtk
+
+需要注意的是，第一个项目由于没有使用GObject Introspection，所以只支持了主要功能。项目作者也介绍说，当初发起项目的时候，并不知道GObject Introspection这样的神器，也许以后的某个时间会迁移过去。至于GTK2就不用说了，GI是只有GTK3才有的福利。
+
+参考：
+
+https://www.jianshu.com/p/be197980d4bb
+
+2019，Go GUI项目爆发的一年？
+
 # Julia
 
 Julia是新晋发布1.0版本的科学计算类语言，号称兼具C++、python、matlab的优点。
@@ -319,6 +341,10 @@ https://mp.weixin.qq.com/s/JBlzMIhMa7TB5tHGSRhVkQ
 
 ​半小时入门Rust，这是一篇Rust代码风暴
 
+https://mp.weixin.qq.com/s/xGBAGBGsxBDuKkSxXOZRjQ
+
+在Rust代码中编写Python是种怎样的体验？
+
 # Javascript（续）
 
 ## TypeScript
@@ -456,31 +482,3 @@ JS/CSS体积减少了67%，我们是如何做到的？
 https://mp.weixin.qq.com/s/c1bMljAx1QWz9QQJX7sHmg
 
 大部分教程不会告诉你的12个JS技巧
-
-https://www.jianshu.com/p/c8b86b09daf0
-
-函数防抖和节流
-
-https://mp.weixin.qq.com/s/vEbTP1SDP3GW20XAP825jw
-
-一种字体，变成千姿百态艺术字，可尖可圆可开花，隔壁设计师馋哭了
-
-https://mp.weixin.qq.com/s/fEAfuVzfOwKjnTB-mdS5UA
-
-用JS写一个同Excel表现的智能填充算法
-
-https://mp.weixin.qq.com/s/D-XvKCSUCzMGcEz_xWTwqg
-
-现代CSS进化史
-
-https://mp.weixin.qq.com/s/zDt92-5NVaAFZJRfEHCUvg
-
-什么是Native、Web App、Hybrid、React Native和Weex？
-
-https://mp.weixin.qq.com/s/IIWgNvqp0jxcD-J_CikV8w
-
-代码变油画，精细到毛发，这个前端小姐姐只用HTML+CSS，让美术设计也惊叹
-
-https://www.cnblogs.com/zzd0916/p/11977995.html
-
-浏览器工作原理与实践

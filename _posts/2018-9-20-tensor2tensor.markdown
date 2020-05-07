@@ -334,6 +334,10 @@ https://mp.weixin.qq.com/s/52Wz4pUI8egKugMFuknWKw
 
 Pytorch中的Distributed Data Parallel与混合精度训练（Apex）
 
+https://mp.weixin.qq.com/s/KP4etDrGlJmRAMQmR1mTJA
+
+基于C++的PyTorch模型部署
+
 # Machine Learning之Python篇+
 
 https://mp.weixin.qq.com/s/dwxTla5iiYKvELrpbWf1yQ

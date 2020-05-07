@@ -303,7 +303,7 @@ LibreOffice：6.4
 
 碰巧我是尝鲜的，正赶上大家都在尝鲜的时候，那个下载速度实在太感人了。。。囧
 
-但是我也意外发现，3点以后，网速就飞快了（8+M/s）。这点数据也就1分钟的事情。
+但是我也意外发现，3点以后，网速就飞快了（8+M/s）。这点数据也就是1分钟的事情。
 
 虽然有1个月之前安装18.04的经验，然而这次还是遇到了新的麻烦：
 
@@ -322,40 +322,3 @@ LibreOffice：6.4
 https://www.cnblogs.com/schips/p/10141278.html
 
 使用boot-repair对Windows+Ubuntu双系统引导修复
-
-# betty
-
-betty是Jeff Pickhardt开发的人工智能助手，可以将英文转换成Linux命令。
-
-安装方法如下：
-
-```bash
-sudo apt-get install git curl ruby
-cd ~
-git clone https://github.com/pickhardt/betty
-sudo nano ~/.bashrc
-```
-
-在.bashrc末尾添加以下内容：
-
-`alias betty="/home/sk/betty/main.rb"`
-
-重启终端即可。
-
-使用方法：
-
-`betty compress test/ test.tar.gz`
-
-# Hubot
-
-Hubot是个和betty类似的开源聊天机器人，可以用来做一些自动化任务，如部署网站，翻译语言等等。
-
-官网：
-
-https://hubot.github.com/
-
-参考：
-
-https://segmentfault.com/a/1190000004855149
-
-Hubot的简单用法

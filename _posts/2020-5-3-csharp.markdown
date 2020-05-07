@@ -139,6 +139,36 @@ https://www.kotlincn.net/
 
 https://github.com/Kotlin/kotlin-examples
 
+# Javascript+
+
+https://www.jianshu.com/p/c8b86b09daf0
+
+函数防抖和节流
+
+https://mp.weixin.qq.com/s/vEbTP1SDP3GW20XAP825jw
+
+一种字体，变成千姿百态艺术字，可尖可圆可开花，隔壁设计师馋哭了
+
+https://mp.weixin.qq.com/s/fEAfuVzfOwKjnTB-mdS5UA
+
+用JS写一个同Excel表现的智能填充算法
+
+https://mp.weixin.qq.com/s/D-XvKCSUCzMGcEz_xWTwqg
+
+现代CSS进化史
+
+https://mp.weixin.qq.com/s/zDt92-5NVaAFZJRfEHCUvg
+
+什么是Native、Web App、Hybrid、React Native和Weex？
+
+https://mp.weixin.qq.com/s/IIWgNvqp0jxcD-J_CikV8w
+
+代码变油画，精细到毛发，这个前端小姐姐只用HTML+CSS，让美术设计也惊叹
+
+https://www.cnblogs.com/zzd0916/p/11977995.html
+
+浏览器工作原理与实践
+
 # Python+
 
 https://mp.weixin.qq.com/s/5YWAgp8LKi5q_NDrNUtyGQ
@@ -268,47 +298,3 @@ Python炫技操作：合并字典的七种方法
 https://mp.weixin.qq.com/s/QWH9qhKzECX-1rqDLfZyhw
 
 如何加速Python代码？
-
-# 新冠肺炎
-
-## 疫情建模
-
-https://mp.weixin.qq.com/s/2XsZzfZI-gAHC-D5HGNZXw
-
-从目前的数据，再次分析一下武汉的新冠肺炎患者数量和死亡率
-
-https://mp.weixin.qq.com/s/I5I5Jh7brFGRBTAFah-C4w
-
-武汉新冠肺炎传播的动力学模型及预测
-
-https://mp.weixin.qq.com/s/-C03P-I4w91kLSGsuhxAKQ
-
-新型冠状病毒传播与扩散的控制模型
-
-https://mp.weixin.qq.com/s/gZCD8ATxGrpHSZLKpcHfiA
-
-基于元胞自动机模拟新型肺炎病毒的传播和预防
-
-https://mp.weixin.qq.com/s/ZOPncvPpFyLIwH_XChAdbg
-
-基于微分方程和元胞自动机模拟新型肺炎病毒的传播
-
-https://mp.weixin.qq.com/s/4w6CTGaKKEH9APVNH9Ue8w
-
-扩散信息、交通管制、自我隔离，哪个更能遏制病毒传播？
-
-https://mp.weixin.qq.com/s/tBoM9o3pK89bprK8npHLWA
-
-可能会说谎的地图！全国疫情地理格局的重新审视
-
-https://mp.weixin.qq.com/s/bVNkCHl7BPU_eEcAWksmww
-
-关于武汉新型冠状病毒肺炎的传播预测模型
-
-https://mp.weixin.qq.com/s/Lg1tJmO7aN9XNpZ6bs0cJA
-
-程序员硬核劝告：现在还不是出门的时候
-
-https://mp.weixin.qq.com/s/sv07R8HQXX2U0QOi5_dOwg
-
-河南1105例新冠肺炎数据告诉我们什么？

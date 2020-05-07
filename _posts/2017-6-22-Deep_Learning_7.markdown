@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/LEPalstOc15CX6fuqMRJ8Q
 
 超越ReLU却鲜为人知，3年后被挖掘：BERT、GPT-2等都在用的激活函数（GELU）
 
+https://kexue.fm/archives/7309
+
+GELU的两个初等函数近似是怎么来的
+
 ## Swish
 
 Swish是Google大脑团队提出的一个新的激活函数：

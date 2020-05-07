@@ -403,3 +403,7 @@ GCMC：GNN在推荐系统中的应用
 https://mp.weixin.qq.com/s/u8XAbOautjZTA7ZhdSBaDA
 
 经典重温：图表示学习经典算法node2vec
+
+https://mp.weixin.qq.com/s/zxFgW6ofimYQ9wlChTK8cw
+
+Recommender System with GNN

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  网络杂谈
+title:  网络杂谈, GTK学习心得（二）
 category: technology 
 ---
 
@@ -273,32 +273,20 @@ WPS分为PBC(BUTTON)和PIN两种方式
 
 输入完PIN码后,点下一步,一会儿后,WPS安全连接成功建立。
 
-# Zookeeper
+# GTK学习心得
 
-http://zookeeper.apache.org/
+## GIO网络应用开发
 
-`bin/zkServer.sh status`
+GIO提供了以GSocket为首的低级API，和以GSocketClient、GSocketConnection为首的高级API。
 
-http://www.cnblogs.com/lpshou/archive/2013/06/14/3136904.html
+高级API的使用示例如下：
 
-zookeeper原理
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/glib/network
 
-https://mp.weixin.qq.com/s/WPyJC4nyLQGWk-OQylUHHw
+## GObject Introspection
 
-Zookeeper简单介绍
+GObject对于跨语言绑定有很大的好处，它可以很方便的生成对应语言的桩，这也是GTK相对Qt的重大优势：几乎所有语言都有GTK绑定，但只有少数语言能绑定到Qt上，而且除了原生C++语言之外，其他的都是功能阉割版。
 
-http://www.ibm.com/developerworks/cn/opensource/os-cn-zookeeper/index.html
+参见：
 
-分布式服务框架 Zookeeper--管理分布式环境中的数据
-
-https://mp.weixin.qq.com/s/uMj3JEhgyYw4CaIhP1-GTQ
-
-阿里巴巴为什么不用ZooKeeper做服务发现？
-
-https://mp.weixin.qq.com/s/KFzJAxL_xvrrjhubd7zH-Q
-
-Facebook为何放弃ZooKeeper转用自研配置管理系统？
-
-https://mp.weixin.qq.com/s/DigeE4YxuT55cSeyb1q1tQ
-
-ZooKeeper源码和实践揭秘
+https://gi.readthedocs.io/en/latest/

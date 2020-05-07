@@ -10,6 +10,12 @@ category: linux
 
 https://www.gnu.org/software/bash/manual/bash.pdf
 
+cheatsheet：
+
+https://devhints.io/bash
+
+这个网站除了bash的cheatsheet之外，还有好多其他方面的cheatsheet。
+
 ## 历史
 
 ![](/images/img3/sh.gif)
@@ -350,3 +356,40 @@ ip addr show br-lan | grep 'inet ' | awk  '{print $2}' | sed 's/\/.*//g'
 https://mp.weixin.qq.com/s/o1vuL3RrWz9tyUPguZeSWA
 
 简单快捷的数据处理，数据科学需要注意的命令行
+
+# betty
+
+betty是Jeff Pickhardt开发的人工智能助手，可以将英文转换成Linux命令。
+
+安装方法如下：
+
+```bash
+sudo apt-get install git curl ruby
+cd ~
+git clone https://github.com/pickhardt/betty
+sudo nano ~/.bashrc
+```
+
+在.bashrc末尾添加以下内容：
+
+`alias betty="/home/sk/betty/main.rb"`
+
+重启终端即可。
+
+使用方法：
+
+`betty compress test/ test.tar.gz`
+
+# Hubot
+
+Hubot是个和betty类似的开源聊天机器人，可以用来做一些自动化任务，如部署网站，翻译语言等等。
+
+官网：
+
+https://hubot.github.com/
+
+参考：
+
+https://segmentfault.com/a/1190000004855149
+
+Hubot的简单用法

@@ -38,6 +38,14 @@ https://zhuanlan.zhihu.com/p/31181247
 
 从人脸识别到行人重识别，下一个风口
 
+https://mp.weixin.qq.com/s/QeNcO_JahvkscxWnd50xLw
+
+最新《深度学习行人重识别》综述论文，24页pdf
+
+https://mp.weixin.qq.com/s/Dy3_I27fa1j7ZdweoPXImw
+
+深度学习行人重识别ReID最新综述与展望
+
 https://mp.weixin.qq.com/s/zRdJktyk1LZWUd2cyTjpiw
 
 基于图像检索的行人重识别
@@ -285,10 +293,6 @@ Group LSTM：拥挤场景的群体轨迹预测
 https://mp.weixin.qq.com/s/JZPLz1Xczby86id4Zvy1UQ
 
 CrowdHuman+Double Anchor：强强联合，推动密集行人检测技术落地
-
-https://mp.weixin.qq.com/s/Dy3_I27fa1j7ZdweoPXImw
-
-深度学习行人重识别ReID最新综述与展望
 
 # 数据增强
 

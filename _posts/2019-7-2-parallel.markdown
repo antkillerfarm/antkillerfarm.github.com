@@ -310,6 +310,10 @@ https://mp.weixin.qq.com/s/3uu50NWFJqA_MTb8wSxIKA
 
 如何优雅地训练大型模型？
 
+https://mp.weixin.qq.com/s/-CTVyKWtdTK0RIfzzPVyNQ
+
+分布式与高效深度学习，140页ppt详述深度学习压缩与联邦学习训练技术进展
+
 # NLP参考资源
 
 https://mp.weixin.qq.com/s/gJFwWnKn7BV_BcADu_vJCg

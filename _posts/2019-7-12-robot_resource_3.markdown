@@ -409,3 +409,7 @@ https://mp.weixin.qq.com/s/21Gq9T-G98w2J17sNGZ57A
 https://mp.weixin.qq.com/s/mYPis61u-rW7zfnBQIloYA
 
 GTA 5真香！哦不，我在用深度学习做自动驾驶
+
+https://mp.weixin.qq.com/s/Ri51M3xkk2qVUoC9Z4OmGA
+
+自动驾驶中的交通标志识别原理及控制应用

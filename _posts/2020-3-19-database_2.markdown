@@ -296,11 +296,45 @@ https://zhuanlan.zhihu.com/p/71267390
 
 固态硬盘和u盘的区别
 
-# CPU
+# 内存
+
+https://mp.weixin.qq.com/s/HOhBNZfOf5xQIFLYQ5ntCw
+
+内存的故事
+
+https://mp.weixin.qq.com/s/qhR0St3CLWEYqV_kl_oXAw
+
+Rambus之战
+
+https://mp.weixin.qq.com/s/gh9cL0BPzCQ2JFOoXdtqyg
+
+内存的技术发展
+
+https://mp.weixin.qq.com/s/kHPTZlDtjqtr0Vi-5OWycQ
+
+金士顿的传说
 
 https://zhuanlan.zhihu.com/p/57780996
 
 内存延迟：因与果
+
+https://mp.weixin.qq.com/s/XcC18tulYdnwqlusg2QrxA
+
+嵌入式内存STT-MRAM趋势分析
+
+https://zhuanlan.zhihu.com/p/63494668
+
+显存为什么不能当内存使？内存、Cache和Cache一致性
+
+https://zhuanlan.zhihu.com/p/62234511
+
+DDR3 vs DDR4?为什么说内存是个很傻的设备？DDR5在哪里？
+
+https://zhuanlan.zhihu.com/p/40601422
+
+双通道、四通道内存对游戏重要吗？
+
+# CPU
 
 https://mp.weixin.qq.com/s/LreWWlXAQL-dqQBCk93soQ
 
@@ -309,10 +343,6 @@ https://mp.weixin.qq.com/s/LreWWlXAQL-dqQBCk93soQ
 https://mp.weixin.qq.com/s/5uie8Ci5dK_wy54Z70Gklg
 
 RISC-V精简到何种程度？能省的都省了！
-
-https://mp.weixin.qq.com/s/XcC18tulYdnwqlusg2QrxA
-
-嵌入式内存STT-MRAM趋势分析
 
 https://mp.weixin.qq.com/s/26se041cc9aBRw16kvPPjA
 
@@ -326,17 +356,9 @@ https://mp.weixin.qq.com/s/9y5HFTQr2QP12iR858BFtg
 
 图解intel芯片生产全过程！
 
-https://zhuanlan.zhihu.com/p/62234511
-
-DDR3 vs DDR4? 为什么说内存是个很傻的设备？DDR5在哪里？
-
 https://mp.weixin.qq.com/s/QwE_VTEUS9kGDDrHlzPYmg
 
 硅片为什么不是方的？
-
-https://zhuanlan.zhihu.com/p/63494668
-
-显存为什么不能当内存使？内存、Cache和Cache一致性
 
 https://zhuanlan.zhihu.com/p/32378843
 

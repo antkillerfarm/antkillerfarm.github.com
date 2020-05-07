@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  TensorFlow（五）, 流体力学
+title:  TensorFlow（五）
 category: AI 
 ---
 
@@ -189,51 +189,3 @@ https://mp.weixin.qq.com/s/Rb0Fh9TZJo-IdEoxlgD4gw
 https://mp.weixin.qq.com/s/asPSPeBaRF_4eXcRXU-Zfw
 
 TensorFlow模型优化工具包—训练时量化
-
-# 流体力学
-
-https://mp.weixin.qq.com/s/ei84HDZIkXQr2k0ghlN_Mw
-
-C罗踢球时在想什么？这是一篇空气动力学的blog
-
-https://mp.weixin.qq.com/s/67vQtycjDEo-JdUpUA1hqg
-
-荷兰人发明的新客机是劈叉的！乘客坐在机翼上
-
-https://mp.weixin.qq.com/s/t2EM1l7ujoSquGl2x5hBBA
-
-21世纪最强王者纸飞机：用一张A4纸拿到了吉尼斯世界记录
-
-https://mp.weixin.qq.com/s/yghERug4kqRNxL9lDsM_vw
-
-飞机飞行原理3D动态图，形象生动解析飞行原理
-
-https://mp.weixin.qq.com/s/uTZ1OdLov1EdiKLgy2ZVtw
-
-德国惊现神操作！物理学家创造最强涡环公式！用空气打破吉尼斯世界纪录！
-
-https://mp.weixin.qq.com/s/kDdQCOi7nQWOZrktNrk8dQ
-
-中国惊现变态神人！竟赤足走炭火，暴力吊打一众科学家！（莱顿弗罗斯特效应）
-
-https://mp.weixin.qq.com/s/IyK6sa8ig_LX-tMupqSvVg
-
-倒啤酒竟能拿到诺贝尔物理学大奖！
-
-https://mp.weixin.qq.com/s/MYHr2GkOlhTZ87sg1z3TBA
-
-德国惊现神操作！物理学家创造最强涡环公式！用空气打破吉尼斯世界纪录！看完跪了......
-
-----
-
-**桑格尔弹道**其实就是利用了打水漂原理，从起点发射一枚穿越出大气层的导弹，由于重力作用这枚弹道会落回大气层，当达到大气层界面时就出现了打水漂的现象，导弹会被再次弹出大气层，经过详细设计之后，最后弹道落回地面，达到攻击点。这种弹道我们称为**助推-跳跃弹道**。
-
-与桑格尔弹道对应的就是**钱学森弹道**。二战结束后，钱学森跟德国物理学家就导弹方面进行了详细的交流，钱学森发现了桑格尔导弹的不足——导弹在大气层上的跳跃并不可控而且不好预测。因此，钱学森在该方案上提出，当导弹第一次进入大气层之后不再弹出而是在大气层中滑行，达到攻击点。这种弹道我们称为**助推-滑翔弹道**。
-
-https://mp.weixin.qq.com/s/vJDY58Qi_-VhVMHOjGSo8w
-
-伦敦大学惊现数学神人！创造最完美打水漂方程，一块石头破吉尼斯世界纪录！
-
-https://mp.weixin.qq.com/s/9NnfCJUmbxMXkDxNsNOuyw
-
-敲黑板——物理学家教你们打水漂！！！

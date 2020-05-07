@@ -238,6 +238,10 @@ https://mp.weixin.qq.com/s/JSWw5RBgQoW-PrfIhbMtjQ
 
 原理篇二：从ELMo到ALBERT
 
+https://zhuanlan.zhihu.com/p/69290203
+
+Transformer结构及其应用详解--GPT、BERT、MT-DNN、GPT-2
+
 # BERT
 
 ## 概述

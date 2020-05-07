@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GTK学习心得
+title:  GTK学习心得（一）
 category: technology 
 ---
 
@@ -39,7 +39,7 @@ Glade仍然是GTK+3默认的UI设计工具。与GTK+3配合的Glade版本是Glad
 
 事件回调函数只能返回一个用户数据指针，有的时候某个按键动作会同时对几个控件进行操作。这个时候就需要通过某种方式来获得各个控件的指针。
 
- 如示例（http://code.google.com/p/antkillfarm-source-pool/source/browse/tags/first_demo.7z）中的do_cmd_ipod函数所示：
+如示例（http://code.google.com/p/antkillfarm-source-pool/source/browse/tags/first_demo.7z）中的do_cmd_ipod函数所示：
 
 1--首先在Glade中，将main_box的指针设为用户数据指针。
 
@@ -53,7 +53,7 @@ g_list_next函数的参数是当前节点main_box_child，而不是链表的指�
 
 ## 5）多窗体开发
 
- 单窗口GTK+程序的编程，很快就掌握了。下一步开始实践点击一个按钮，生成一个新窗口的功能。网上的例程多数都是基于GTK+ 2的。由于GTK+和Glade的版本升级，这样的方式虽然仍然可用，但却不再是最简便的方式了。
+单窗口GTK+程序的编程，很快就掌握了。下一步开始实践点击一个按钮，生成一个新窗口的功能。网上的例程多数都是基于GTK+ 2的。由于GTK+和Glade的版本升级，这样的方式虽然仍然可用，但却不再是最简便的方式了。
 
 首先还是使用Glade编辑ui文件。一个ui文件可以包含若干个窗口定义。调用gtk_builder_add_from_file生成这些窗口的数据 结构。可以将生成的窗口结构通过user_data的方式传递给按钮的回调函数。但是需要注意的是，传递给回调函数的窗口结构必须是有效的。
 
@@ -65,7 +65,7 @@ g_list_next函数的参数是当前节点main_box_child，而不是链表的指�
 
 2)重载B窗口的关闭消息，让它只是隐藏而不是销毁窗口。
 
-对于第2种方案，网上的例子很少，有也基本都是重载窗口的destroy信号。但实际上delete-event才是关闭事件的信号，只有做完了 delete-event才会执行destroy。这一点在GTK的用户手册上有详细的说明。同时，手册还推荐使用 gtk_widget_hide_on_delete函数来实现第2种方案。
+对于第2种方案，网上的例子很少，有也基本都是重载窗口的destroy信号。但实际上delete-event才是关闭事件的信号，只有做完了delete-event才会执行destroy。这一点在GTK的用户手册上有详细的说明。同时，手册还推荐使用 gtk_widget_hide_on_delete函数来实现第2种方案。
 
 ## 6）change-value和value-changed
 
@@ -206,13 +206,8 @@ WebkitGtk调用Webkit内核渲染网页。它的安装方法：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gtk_browser
 
-这里有两个例子，一个是helloworld型的，用于确定开发环境。另一个是从http://imtx.me/archives/1124.html中摘录的，原始的版本基于Gtk 2.x，现在改用Gtk 3.x。
+这里有两个例子，一个是helloworld型的，用于确定开发环境。另一个是从
 
-# GIO网络应用开发
+http://imtx.me/archives/1124.html
 
-GIO提供了以GSocket为首的低级API，和以GSocketClient、GSocketConnection为首的高级API。
-
-高级API的使用示例如下：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/glib/network
-
+中摘录的，原始的版本基于Gtk 2.x，现在改用Gtk 3.x。
