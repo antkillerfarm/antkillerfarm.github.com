@@ -141,6 +141,22 @@ https://github.com/Kotlin/kotlin-examples
 
 # Javascript+
 
+https://mp.weixin.qq.com/s/pdOVONHbjfIJPW45nEw1fg
+
+前端本地文件操作与上传
+
+http://chrome.360.cn/test/html5/index.html
+
+一个用于检测浏览器对html 5支持情况的网页
+
+https://www.zhihu.com/question/59578433
+
+为什么现在又流行服务端渲染html？
+
+https://mp.weixin.qq.com/s/aNPAfJIHL14NFtLfRvxUpQ
+
+10万人的大场馆如何“画座位”？
+
 https://www.jianshu.com/p/c8b86b09daf0
 
 函数防抖和节流

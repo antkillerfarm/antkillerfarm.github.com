@@ -130,6 +130,10 @@ https://mp.weixin.qq.com/s/Nvgt70529OQ5f7fkGH2Pgw
 
 最新《图卷积神经网络GCN》2020概述，76页ppt，NTU-Xavier Bresson，纽约大学深度学习课程
 
+https://mp.weixin.qq.com/s/byVdEPcCmVPJOk-uIyGsbw
+
+GCN大佬Thomas Kipf博士论文《深度学习图结构表示》178页pdf阐述图卷积神经网络等机制与应用
+
 ## 综述
 
 《A Comprehensive Survey on Graph Neural Networks》

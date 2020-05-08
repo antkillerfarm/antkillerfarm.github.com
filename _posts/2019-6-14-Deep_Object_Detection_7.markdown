@@ -224,6 +224,10 @@ https://mp.weixin.qq.com/s/E8FXhe5H9VqXkkGSUsxYqA
 
 目标检测中Anchor的本质分析
 
+https://mp.weixin.qq.com/s/LQOzrlaEOsrsMHj-V8l3hQ
+
+FreeAnchor：抛弃单一的IoU匹配，更自由的anchor匹配方法
+
 # 其它目标检测网络
 
 ## A-Fast-RCNN

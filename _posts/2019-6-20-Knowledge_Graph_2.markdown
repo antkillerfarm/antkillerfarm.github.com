@@ -6,6 +6,18 @@ category: resource
 
 # 知识图谱参考资源
 
+https://mp.weixin.qq.com/s/4huHklyr_H6fFDb6VJ7ozw
+
+知识图谱的前世今生：为什么我们需要知识图谱？
+
+https://mp.weixin.qq.com/s/gm-46sXSUb1mdp4g5DuTfA
+
+知识表示：知识图谱如何表示结构化的知识？
+
+https://mp.weixin.qq.com/s/XTgYPCejKwy1WyQYQYXZvQ
+
+基于知识库的问答：生成查询图进行语义分析
+
 https://mp.weixin.qq.com/s/8REGSXSpXXvz0YIMspZm4g
 
 最佳论文：南京大学提出DSKG，将多层RNN用于知识图谱补全

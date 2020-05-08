@@ -295,3 +295,7 @@ https://mp.weixin.qq.com/s/PFUjEyf3lZY_ZYL2BAxO0A
 https://mp.weixin.qq.com/s/5InRjVu3naxrA_9KAD2IJA
 
 深度学习是如何在美团点评推荐业务中实践的？
+
+https://mp.weixin.qq.com/s/VkCio3oyoTJuiMHrpL1s4g
+
+阿里飞猪“猜你喜欢”推荐排序实践

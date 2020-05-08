@@ -147,4 +147,4 @@ VS2015以后，MS不再提供VS的离线安装包，因为安装文件实在是�
 
 2.安装证书。证书在offline\certificates下。
 
-3.运行运行offline\vs_community.exe。
+3.运行offline\vs_community.exe。

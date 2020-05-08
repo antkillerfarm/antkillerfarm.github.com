@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Clojure, Groovy, Javascript在客户端的使用, perl, Scala, VS Code, VS
+title:  Clojure, Groovy, Javascript在客户端的使用, perl, Scala, VS Code
 category: language 
 ---
 
@@ -224,7 +224,9 @@ https://code.visualstudio.com/
 
 ## 细节
 
-Ctrl+P 命令行
+Ctrl+P 文件名搜索
+
+Ctrl+Shift+P 命令行
 
 View--> Toggle Word Wrap 自动换行
 
@@ -250,7 +252,11 @@ Ubuntu：Ctrl + Shift + I
 
 filesize：在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间。
 
-Beautify：格式化代码。
+Beautify：格式化JS/CSS/HTML代码。
+
+Clang-format: 格式化C/C++/Java/Objective-C代码。需要安装Clang-format：
+
+`sudo apt install clang-format`
 
 ## 新版的空格显示问题
 
@@ -301,21 +307,3 @@ language server protocol是一种跨编辑器的语言支持实现规范。它�
 官网：
 
 https://microsoft.github.io/language-server-protocol/
-
-# Javascript+
-
-https://mp.weixin.qq.com/s/pdOVONHbjfIJPW45nEw1fg
-
-前端本地文件操作与上传
-
-http://chrome.360.cn/test/html5/index.html
-
-一个用于检测浏览器对html 5支持情况的网页
-
-https://www.zhihu.com/question/59578433
-
-为什么现在又流行服务端渲染html？
-
-https://mp.weixin.qq.com/s/aNPAfJIHL14NFtLfRvxUpQ
-
-10万人的大场馆如何“画座位”？

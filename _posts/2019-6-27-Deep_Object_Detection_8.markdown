@@ -346,6 +346,10 @@ https://mp.weixin.qq.com/s/vQf0TmcM9A56k_FtFvao3g
 
 RDSNet：统一目标检测和实例分割的新型网络
 
+https://mp.weixin.qq.com/s/iPx5K2cSs5jlCt9d9oKpww
+
+VoVNet：实时目标检测的新backbone网络
+
 # 设计模式
 
 面向对象的设计模式有七大基本原则：

@@ -78,6 +78,10 @@ https://mp.weixin.qq.com/s/qrP_tWlHyc3ZAMPOqu9E0A
 
 知识图谱的发展概述
 
+https://mp.weixin.qq.com/s/fWaEJvxdGbW2p-uYKYgrDA
+
+知识图谱最新研究综述
+
 https://zhuanlan.zhihu.com/p/44497869
 
 知识图谱中的深度学习技术应用概述
@@ -409,15 +413,3 @@ https://mp.weixin.qq.com/s/sCpKkkf2Tj37Nr5j7S7M6Q
 https://mp.weixin.qq.com/s/kTrBLTH46KtfcAK4aZ2H0A
 
 请查收本周份“知识图谱”专题论文解读
-
-https://mp.weixin.qq.com/s/4huHklyr_H6fFDb6VJ7ozw
-
-知识图谱的前世今生：为什么我们需要知识图谱？
-
-https://mp.weixin.qq.com/s/gm-46sXSUb1mdp4g5DuTfA
-
-知识表示：知识图谱如何表示结构化的知识？
-
-https://mp.weixin.qq.com/s/XTgYPCejKwy1WyQYQYXZvQ
-
-基于知识库的问答：生成查询图进行语义分析

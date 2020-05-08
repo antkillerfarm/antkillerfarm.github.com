@@ -30,6 +30,10 @@ https://zhuanlan.zhihu.com/p/50387521
 
 从零开始行人重识别
 
+https://mp.weixin.qq.com/s/iAMjUHK5ZrVEGVliA0JE9Q
+
+行人Re-ID研究概述
+
 https://mp.weixin.qq.com/s/_NDw7pFmDB07mliHTA6VYQ
 
 旷视行人再识别（ReID）突破

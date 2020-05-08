@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ML参考资源（三）
+title:  ML参考资源（三）, 上古软件开发
 category: resource 
 ---
 
@@ -229,3 +229,73 @@ https://mp.weixin.qq.com/s/WJUGbyPgLgVX6Q8SXjOP1A
 https://zhuanlan.zhihu.com/p/114264831
 
 Kernel Distribution Embedding（用于测试两批数据是否来自同一个分布采样）
+
+# 上古软件开发
+
+https://github.com/chrislgarry/Apollo-11
+
+Apollo 11登月代码成Github热度第一
+
+https://mp.weixin.qq.com/s/0WAXiveeT3BPyowya0y2Ag
+
+揭秘阿波罗11号大脑：人类的一大步，也是机器的一大步！
+
+https://mp.weixin.qq.com/s/5aezQzLIqNwJBEYR62-TQg
+
+我在1969年写代码
+
+https://mp.weixin.qq.com/s/ksAz2w5F7GF5TGJtF13OLA
+
+50年前的程序员们，拯救了阿波罗号登月飞船
+
+https://mp.weixin.qq.com/s/t8q-i5k5V44RfbCtSVQonw
+
+改变世界的代码行
+
+https://mp.weixin.qq.com/s/t8q-i5k5V44RfbCtSVQonw
+
+诺基亚经典游戏《贪吃蛇》的前世今生
+
+https://mp.weixin.qq.com/s?__biz=MzA4MDExMDEyMw==&mid=2247487079&idx=1&sn=9d29f53cd518b4dcb8ab8c27159dee41
+
+互联网大佬学历背景大调查，不要再相信“学习无用论”
+
+https://mp.weixin.qq.com/s/UGAxJCgOwsBTHnecSouYWQ
+
+图灵奖得主、Unix之父39年前的密码终于被破解了！
+
+https://www.zhihu.com/question/320728455/answer/658973076
+
+为什么上古编程语言（比如COBOL）总喜欢把代码全部写成大写字母？
+
+https://mp.weixin.qq.com/s/gv0X080hHtKakjZMzVaZ-w
+
+80岁COBOL码农：“扶我起来，这个bug我会修。”
+
+https://mp.weixin.qq.com/s/VeSBuwWMx0xd2GuPSpE0ZA
+
+上古语言从入门到精通：COBOL教程登上GitHub热榜
+
+https://mp.weixin.qq.com/s/XPuJJm3k8gDl17oVmtdGtA
+
+代码回忆录：第一行Hello World，第一个弹窗广告的代码是怎么写的？
+
+https://www.zhihu.com/question/30290082/answer/840708044
+
+怎样评价《数码宝贝》第一部中的泉光子郎的编程水平？
+
+https://mp.weixin.qq.com/s/yDaIuhjhjqL-Vtl1gwcd0A
+
+计算机编程的历史演进：用50种编程语言写“Hello,World!”程序
+
+https://mp.weixin.qq.com/s/Dqe5B0ooayRU79CGulq71g
+
+重启尘封十年的代码！回到未来的人人网，如何用新技术唤醒老数据？
+
+https://www.zhihu.com/question/50076174
+
+为什么魂斗罗只有128KB却可以实现那么长的剧情？
+
+https://mp.weixin.qq.com/s/_rybr3Pnmt6Rr3RWxGTCXQ
+
+为什么有32个关卡的超级马里奥兄弟只要64KB？

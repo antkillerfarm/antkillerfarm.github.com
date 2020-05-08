@@ -50,6 +50,10 @@ https://www.zhihu.com/question/26933554
 
 如何评价知乎的回答排序算法？（威尔逊置信区间下界）
 
+https://mp.weixin.qq.com/s/lx-3T5J8R29MT5jfeuTmVg
+
+深入理解推荐系统：排序
+
 # 用户画像
 
 https://mp.weixin.qq.com/s/TydTE50NzxMbGAigqv6BCw

@@ -407,3 +407,7 @@ https://mp.weixin.qq.com/s/u8XAbOautjZTA7ZhdSBaDA
 https://mp.weixin.qq.com/s/zxFgW6ofimYQ9wlChTK8cw
 
 Recommender System with GNN
+
+https://mp.weixin.qq.com/s/_vbcLre5HIrOGbAjTzLFjA
+
+动态网络表征学习在推荐领域的创新与实践
