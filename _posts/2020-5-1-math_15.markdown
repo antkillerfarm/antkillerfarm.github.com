@@ -152,100 +152,70 @@ https://mp.weixin.qq.com/s/HKe_rY9OgwFFc3JH8luokw
 
 数学编年史：数学的起源与发展历程
 
-# 阿波罗50年+
+https://mp.weixin.qq.com/s/rM78u0bF2bqI7eQ4t6lxpw
 
-https://mp.weixin.qq.com/s/-KHsG9lZknY952U_LTV7qg
+国内奇葩小学数学题横扫推特，老外被难哭了
 
-天气太热了，我们去太阳系度假吧
+# 新冠肺炎+
 
-https://mp.weixin.qq.com/s/EPMdW1qxQVl0MVUSjhWxyQ
+## 疫情建模
 
-NASA传奇数学家去世，她曾笔算了登月轨道
+https://mp.weixin.qq.com/s/2XsZzfZI-gAHC-D5HGNZXw
 
-https://mp.weixin.qq.com/s/8vRFfFLdLWSPpTzHjUKegQ
+从目前的数据，再次分析一下武汉的新冠肺炎患者数量和死亡率
 
-哈勃太空望远镜30岁生日快乐！我们看到的宇宙因你而不同
+https://mp.weixin.qq.com/s/I5I5Jh7brFGRBTAFah-C4w
 
-----
+武汉新冠肺炎传播的动力学模型及预测
 
-由于飞行前的制造和测试错误，氧气罐中的电线暴露了出来。在那个致命的夜晚，氧气罐中暴露的电线产生的火花引发了火灾，引爆了氧气罐，将服务舱外的隔热层炸飞。。。
+https://mp.weixin.qq.com/s/-C03P-I4w91kLSGsuhxAKQ
 
-https://mp.weixin.qq.com/s/NmS1dbeIsQomsWYI8-OyZg
+新型冠状病毒传播与扩散的控制模型
 
-阿波罗13号“伟大失败”50周年，NASA发布纪录片追忆奥德赛号逃生往事
+https://mp.weixin.qq.com/s/gZCD8ATxGrpHSZLKpcHfiA
 
-----
+基于元胞自动机模拟新型肺炎病毒的传播和预防
 
-![](/images/img3/india_moon.jpg)
+https://mp.weixin.qq.com/s/ZOPncvPpFyLIwH_XChAdbg
 
-https://www.zhihu.com/question/344795065/
+基于微分方程和元胞自动机模拟新型肺炎病毒的传播
 
-印度“月船2号”登陆月球失败，失败原因可能是什么？有什么影响和教训？
+https://mp.weixin.qq.com/s/4w6CTGaKKEH9APVNH9Ue8w
 
-https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
+扩散信息、交通管制、自我隔离，哪个更能遏制病毒传播？
 
-印度失联的月球探测器依然成功了95%？那些年我们一起追过的月球
+https://mp.weixin.qq.com/s/tBoM9o3pK89bprK8npHLWA
 
-# 世说新语+
+可能会说谎的地图！全国疫情地理格局的重新审视
 
-## 2020.4（续）
+https://mp.weixin.qq.com/s/bVNkCHl7BPU_eEcAWksmww
 
-1905年9月5日，《朴茨茅斯和约》签署的当天，失望的日本民众聚集在东京日比谷公园召开国民大会，反对《朴茨茅斯和约》，因为日本得到的只是战略利益，而非民众指望的大笔赔偿金。群情愤怒的日本国民宣布废弃该条约。参会者与警察发生了冲突，民众猛烈地袭击了公园附近的内相官邸，发生的烧、打事件。骚乱持续了3天，最终被政府军镇压。
+关于武汉新型冠状病毒肺炎的传播预测模型
 
-----
+https://mp.weixin.qq.com/s/Lg1tJmO7aN9XNpZ6bs0cJA
 
-《蒲元别传》是姜维的代表作。蒲元，是中国历史上极少能够在文人所编写的历史文献资料中留下自己姓名和事迹的工匠之一，这大概是因为蒲元随军作战的缘故吧。
+程序员硬核劝告：现在还不是出门的时候
 
-----
+https://mp.weixin.qq.com/s/sv07R8HQXX2U0QOi5_dOwg
 
-肌肉车（Muscle car）是一种由后轮驱动，装备大马力V8发动机的强力汽车。它们简化了车身装饰和内饰，连电子系统都弱化了，就为了提供在直道上更快、更凌厉的加速。
+河南1105例新冠肺炎数据告诉我们什么？
 
-小马车（Pony car）保持了肌肉车的后驱动形式，略微降低了发动机性能和车重，也降低了造价和油耗。
+https://mp.weixin.qq.com/s/qRzkS2itp-eloaBlA-VSGA
 
-----
+基于排队论模型浅析各地医护人员驰援武汉的重要意义
 
-1926年，《米其林指南》首次出现了用星级评价餐厅的做法，根据食材、厨师技艺水平与食材的融合、厨师的创新水平、是否物有所值与烹饪水准五条准则进行评级，将餐厅划分为一星、二星及三星。这就是“米其林星级餐厅”的由来。
+https://mp.weixin.qq.com/s/Rs2cTVPIa02NIkApvr076w
 
-除了星级餐厅，米其林还推出了另外两个平行的评级标准——“米其林餐盘”（Michelin the Plate）与“必比登推介”（Bib Gourmand）。前者是极具摘星可能性的潜力餐厅，后者则是与时俱进推出的平民化餐厅或者小吃。
+全球COVID-19研究数据集正式开放，内含近3万篇论文和所需AI研究工具！
 
-“必比登”（Bibendum）先生，米其林的卡通标志——一层一层缠满轮胎的小可爱。
+https://mp.weixin.qq.com/s/ueuvLFxQAGNzBLHHyaBYMA
 
-https://mp.weixin.qq.com/s/2KQafW-nersf1rC58cbk5g
+如果新冠病毒是在亚美尼亚爆发会发生什么？程序员用Python进行模拟
 
-为什么卖轮胎的米其林能成为顶级餐厅的评级标准？
+https://mp.weixin.qq.com/s/LGNGFf-LBMz3qyUFPr_BHA
 
-----
+新冠疫情下，如何降低复工的职场感染风险？
 
-尽管100多年前，在北京的街头和法国的租界中，就出现了俄国人开设的酸奶铺，但中国人真正开始现代化批量发酵和销售酸奶，始于20世纪80年代。现在被称为“老酸奶”的装在陶瓷瓶中的凝固型酸奶，是国人对于酸奶的最初记忆。
+https://mp.weixin.qq.com/s/0k1o-m8F5aWUWA4Nj8WnIQ
 
-https://mp.weixin.qq.com/s/lpbgzNlTw8xGqDmB9aweZw
-
-舌尖的甜蜜记忆：酸奶中的中国故事
-
-----
-
-https://www.zhihu.com/question/389733485
-
-如何评价中国银行推出的“原油宝”产品穿仓，中国银行会要求客户赔偿吗？
-
-https://mp.weixin.qq.com/s/xhor1Qtzzk1VdlM5IqTkHQ
-
-混知财经--先搞懂期货，才知道中行是咋亏的！
-
-## 2020.5
-
-https://mp.weixin.qq.com/s/9V1zXwagOb13FZ5rA7l3iQ
-
-拒绝加班要赔钱？拿什么拯救“社畜”
-
-----
-
-https://zhuanlan.zhihu.com/p/19803854
-
-海洋石油981事件始末
-
-----
-
-https://view.inews.qq.com/a/20200507A001Q400
-
-爆笑！特朗普都懵了：一名前美国特种兵给美国捅了个大篓子
+我国疫情预测模型遭权威期刊退回！钟南山等人用LSTM力证“早发现早隔离”重要性

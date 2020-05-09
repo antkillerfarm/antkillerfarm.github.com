@@ -266,6 +266,10 @@ https://mp.weixin.qq.com/s/J9DIDMHc6uHPQ8snadRcPA
 
 中国女博士的“水淹食堂”大法：单目视频完美重建3D场景，画面毫无违和感
 
+https://mp.weixin.qq.com/s/CpK0b5buUvG_HqF3mGzUyg
+
+用深度学习实现2D到3D的转换
+
 # 深度推荐系统+
 
 https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w

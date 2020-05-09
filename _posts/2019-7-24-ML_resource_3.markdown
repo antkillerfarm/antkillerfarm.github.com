@@ -299,3 +299,7 @@ https://www.zhihu.com/question/50076174
 https://mp.weixin.qq.com/s/_rybr3Pnmt6Rr3RWxGTCXQ
 
 为什么有32个关卡的超级马里奥兄弟只要64KB？
+
+https://www.w3cschool.cn/article/leijuncode
+
+分享雷军22年前编写的代码

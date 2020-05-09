@@ -328,14 +328,6 @@ https://mp.weixin.qq.com/s/T2ms6xXd14O3CrQb7X1ZOw
 
 人类用了2000年就为画张地图
 
-https://mp.weixin.qq.com/s/lB6dfjS5TAxjMndLCXMWgQ
-
-憋住不放的屁最后去哪了？知道真相的我再也不忍屁了！
-
-https://mp.weixin.qq.com/s/BIy4Ly3eIMOrXRbpjFRFYQ
-
-男人最喜欢在家干的这件事，居然是在马桶上......
-
 http://www.makertime.org/
 
 一个硬核的geek网站
@@ -359,3 +351,37 @@ https://mp.weixin.qq.com/s/XZyOXfqvq7bJ1_2eUPknAA
 https://mp.weixin.qq.com/s/hiXfq_eR3OWbp_xq9hpxHg
 
 神经生物学家贝尔斯：我真的度过了最好的一生
+
+https://zhuanlan.zhihu.com/p/53237519
+
+一文读懂印尼海啸的真正原因
+
+https://mp.weixin.qq.com/s/FeSKZqe394-8xT4i-BOEog
+
+掉入地下一万米
+
+https://www.zhihu.com/question/285058234
+
+永暑岛怎么会发现淡水资源？（淡水透镜体效应）
+
+----
+
+http://blog.sina.com.cn/s/blog_4b7c1f540100t0rq.html
+
+瓦依昂大坝的悲剧
+
+http://blog.sina.com.cn/s/blog_4b7c1f540100t4sy.html
+
+重力坝战时抗打击能力问答
+
+https://www.zhihu.com/question/30137203/answer/303210942
+
+瓦伊昂大坝
+
+----
+
+![](/images/img2/salt_sea.jpg)
+
+https://www.zhihu.com/question/30137203/answer/303210942
+
+咸海覆灭

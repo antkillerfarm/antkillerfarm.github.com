@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  boost, Test framework, Objective-C, Haskell, Lua
+title:  boost, Test framework, Objective-C, Haskell
 category: language 
 ---
 
@@ -139,6 +139,12 @@ for(auto& item: list)
   //do sth
 }
 ```
+
+还有一些方法可用于统计：
+
+std::all_of, std::any_of, std::none_of：全都是/至少有一个是/全都不是XXX。
+
+std::count, std::count_if：计数。
 
 ----
 
@@ -297,6 +303,18 @@ https://mp.weixin.qq.com/s/5ireHbuWFrVY6T9qnvs3rQ
 
 浅谈C++元编程
 
+## BGL
+
+官网：
+
+https://www.boost.org/doc/libs/1_73_0/libs/graph/doc/
+
+参考：
+
+https://www.ibm.com/developerworks/cn/aix/library/au-aix-boost-graph/
+
+探索Boost Graph Library
+
 # Test framework
 
 ## boost.test
@@ -420,19 +438,3 @@ https://www.haskellstack.org/
 然而国内访问不了，幸好有github：
 
 https://github.com/commercialhaskell/stack/releases/
-
-# Lua
-
-Lua的包管理工具叫做LuaRocks。官网：
-
-https://luarocks.org/
-
-参考：
-
-https://mp.weixin.qq.com/s/nwhSDxz1Pu2JCU_IeMR9ww
-
-Lua程序逆向之Luac文件格式分析
-
-http://lua-users.org/wiki/GraphicalUserInterfaceToolkits
-
-Lua的GUI工具列表

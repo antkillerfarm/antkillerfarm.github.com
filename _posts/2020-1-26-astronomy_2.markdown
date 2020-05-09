@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Falcon heavy, 两弹一星, 阿波罗50年
+title: Falcon heavy, 两弹一星
 category: Nature 
 ---
 
@@ -186,6 +186,14 @@ https://mp.weixin.qq.com/s/0lDJiu1nyS0j1aj7C4tT-g
 
 火箭狂人不幸坠亡，生前坚信“地平说”
 
+----
+
+https://news.qq.com/a/20180927/005739.htm
+
+离职能直接影响中国登月的人才，只配待在国企底层？
+
+据《财经》报道，从融资和估值来看，蓝箭航天、零壹空间、星际荣耀已经成为目前众多民营航天企业的第一梯队，备受市场的关注。除此之外，还包括翎客航天、星途探索、九州云箭、灵动飞天、深蓝航天等。
+
 # 两弹一星
 
 1958年5月17日，毛泽东在中共八大二次会议上发表了讲话，提出“我们也要搞人造卫星！”。出于一贯的幽默，他还补充道：“我们要抛就抛两万千克的，也许要从较小的抛起，但像美国那样只有鸡蛋大的，我们不抛!”
@@ -243,43 +251,3 @@ https://mp.weixin.qq.com/s/3OWh2w9h1NQLlniIb1fH9A
 如果你有两艘，你就会对全球秩序构成威胁。
 
 如果你有一打，你就是全球维和人员。
-
-# 阿波罗50年
-
-https://mp.weixin.qq.com/s/79e6p2TYpttO-NR1of21jw
-
-月之梦的起源
-
-https://mp.weixin.qq.com/s/QtvKdwbuzUJICjdKbcPIlg
-
-登月究竟是真是假？
-
-https://view.inews.qq.com/a/TEC201907170006770C
-
-别误会，那个经典的月球脚印不是阿姆斯特朗的（巴兹·奥尔德林）
-
-https://mp.weixin.qq.com/s/OdMaaP_gE1rR_rd14LfA9w
-
-战争与登月的渊源
-
-https://mp.weixin.qq.com/s/YRJpHvlEulfBFm8HpBYBZQ
-
-苏联开启的登月序曲
-
-https://mp.weixin.qq.com/s/v3HNhV08vWYPGdeXAZ47ag
-
-月球来到你身边
-
-https://view.inews.qq.com/a/TEC2019072100124408
-
-一文俯瞰从阿波罗1号到17号全舰队
-
-![](/images/img3/Apollo11_AnnotatedHero.jpg)
-
-https://mp.weixin.qq.com/s/Y1hQJHFB5InSZNB2T2KfVw
-
-10万镜子反射月光，组成3.6平方公里巨幅头像，谷歌花式纪念登月50年
-
-https://mp.weixin.qq.com/s/d6nmsH10qchY1pP8CibiBA
-
-跌跌撞撞的美国

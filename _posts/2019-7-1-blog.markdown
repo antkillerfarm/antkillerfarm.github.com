@@ -290,8 +290,44 @@ https://mp.weixin.qq.com/s/bdfYwgfu8iDo00Qfbp0tsA
 
 Arm芯片三十五年
 
+http://vga.zol.com.cn/341/3419805.html
+
+末日将至 看天堂里我们能用的显卡品牌
+
+https://view.inews.qq.com/a/TEC201904280033680A
+
+手机基带芯片往事：欧洲退出竞争，全球只剩五名玩家
+
+https://mp.weixin.qq.com/s/L6VeZb79-8EU0NywtKd83w
+
+日韩科技战争简史：究竟谁是芯片、半导体、屏幕之王？
+
 ----
 
 https://baike.baidu.com/item/Full Mask - MPW/16508899
 
 Full Mask和MPW都是集成电路的一种流片（将设计结果交出去进行生产制造）方式。Full Mask是“全掩膜”的意思，即制造流程中的全部掩膜都为某个设计服务；而MPW（Multi Project Wafer），直译为多项目晶圆，即多个项目共享某个晶圆，也即同一次制造流程可以承担多个IC设计的制造任务。
+
+----
+
+1891年，有一个名叫史端乔（Almon Brown Strowger）的殡仪馆老板，就吃了人工交换机的大亏。
+
+他发现，打到自己店里的生意电话，总会被话务员转接到另一家殡仪馆。后来才知道，原来当地话务员是那家殡仪馆老板的堂弟。于是，他很生气，发誓一定要发明一个不需要人工操作的交换机。
+
+结果，他还真的做到了。
+
+他在自己的车库里，制作了世界上第一台步进制电话交换机。
+
+除了步进制交换机之外，大家经常在电视上看到的旋转式拨号盘，也是他发明的。
+
+https://mp.weixin.qq.com/s/QP8q478MWV1ilHxQek4JOA
+
+通信交换的百年沧桑
+
+----
+
+https://www.zhihu.com/question/34411294/answer/683230849
+
+HTC为什么衰败？
+
+好感慨啊。10年前，HTC全盛时期，我先后在两家公司做事，主要客户都是HTC。至今我还记得，初见HTC G1时，那惊艳的感觉。

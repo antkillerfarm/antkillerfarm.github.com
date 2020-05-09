@@ -365,3 +365,7 @@ https://mp.weixin.qq.com/s/sc3ROchBFK9pAb-FCKNwLg
 https://mp.weixin.qq.com/s/jUPhF6OHtVrmTbg29sQV2Q
 
 谷歌提出TVN视频架构：单CPU处理1s视频仅需37ms、GPU仅需10ms
+
+https://mp.weixin.qq.com/s/wwHUjME5vR1uF3ad_wlMzw
+
+更准确的弱监督视频动作定位，从生成注意力模型出发

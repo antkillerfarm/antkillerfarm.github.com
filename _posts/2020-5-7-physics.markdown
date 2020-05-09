@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 流体力学
+title: 流体力学, 台风, 化学工业
 category: Nature 
 ---
 
@@ -68,7 +68,181 @@ https://mp.weixin.qq.com/s/_14_Q59yV0PhrScN7Xp2QQ
 
 虎门大桥异常抖动的原因找到了，竟然真是被风吹起来的？
 
-# 新冠肺炎+
+# 台风
+
+台风莎莉，是1996年的我国的初台，什么叫“初台”，初台是指当年登陆我国的第一个台风，正常年份的初台一般是在7月份，而这一年的初台去到了9月份，积蓄了大半年的能量，一次爆发，也让萨利的杀伤力极其罕见。
+
+https://zhuanlan.zhihu.com/p/44353953
+
+建国以来对广东最具有破坏力的台风
+
+![](/images/img2/Tropical_cyclones_1945_2006_wikicolor.png)
+
+上图可以看出一些有趣的事实：
+
+1.西北太平洋是头号重灾区。
+
+2.不光加勒比海的热带气旋叫飓风（hurricane），东北太平洋的也叫hurricane。
+
+3.南印度洋、澳大利亚到西南太平洋的台风，基本呈带状均匀分布，没有明显的重灾区。
+
+4.东南太平洋和南大西洋几乎没有台风。
+
+5.虽然上图未标出，但地中海有温带气旋，只是风力最多也就10级左右，还达不到台风的标准。
+
+http://typhoon.zjwater.gov.cn/default.aspx
+
+这个网址可以查看台风信息。
+
+![](/images/img2/Maria_Bopha_and_Saomai.jpg)
+
+上图是罕见的三台风同台。当然还有更多的，比如今年北大西洋的四风同台（Florence, Helene, Isaac, and Joyce）。
+
+![](/images/img2/shanzhu.png)
+
+上图中左为Florence飓风（今年北大西洋风王？），中为台风飞燕，右为台风山竹。
+
+https://en.wikipedia.org/wiki/List_of_the_most_intense_tropical_cyclones
+
+这个网页记录了现代观测记录以来的大台风。从中可以看出西太平洋的台风虽然能量大，气压低，但风速不如东太平洋和北大西洋的同伙。
+
+Typhoon Tip是最强的台风，也是最低气压保持者。而Hurricane Patricia是最大风速保持者。
+
+https://www.jianshu.com/p/cc612800607e
+
+香港“李氏力场”与台风
+
+1883年夏季，香港天文台正式创办。天文台最初的职责包括：授时、气象、磁场及水文观察，与天文毫无关系，可是当时负责翻译的华人却错译为“天文台”，一直沿用至今。
+
+台风也并非都诞生于海洋，比如今年的Florence飓风，就诞生于西非内陆，离海边起码有300公里。
+
+![](/images/img2/Florence_2018_track.png)
+
+----
+
+https://mp.weixin.qq.com/s/Ld28qHczQ1NfFPGlJQGXKQ
+
+台风最喜欢在我国哪个省市登陆？
+
+# 化学工业
+
+https://wallstreetcn.com/articles/250536
+
+巴斯夫原本是它小弟，德国化工产业的代名词：揭秘史前化工巨兽 IG 法本
+
+http://blog.sina.com.cn/s/blog_52f526870102w7xo.html
+
+历经百年兴衰 德国化工三巨头为何屹立不倒
+
+http://www.weixinso.com/document/KPyZBb.html
+
+陶氏化学发展史
+
+http://www.pnchina.com/cn/Detail.aspx?id=1361250587
+
+业界经典：陶氏化学Styrofoam之75年
+
+https://new.qq.com/omn/20180819/20180819A011JT.html
+
+起于硝烟的化工帝国：杜邦是怎么与化工行业同呼吸共命运的？
+
+http://www.qdaily.com/articles/18872.html
+
+杜邦要合并了，过去一百年，这家公司的发明都改变了些什么？
+
+----
+
+![](/images/img2/SI.png)
+
+![](/images/img2/periodic_table.png)
+
+话说NIST上的好东西真不少。。。
+
+----
+
+![](/images/img2/U.jpg)
+
+伊朗时任总统内贾德视察伊朗首枚首枚燃料棒装填作业。从图中可以看出完全不需要任何防护，左边小哥戴的手套以及右边大叔戴的口罩与其说是在保护他们自己，不如说是在保护燃料棒束，避免其沾染汗渍和唾液。
+
+https://www.zhihu.com/question/26946942
+
+天然铀的放射性类型是什么？近距离接触对人有危害吗？
+
+----
+
+https://mp.weixin.qq.com/s/jOHoph9yFf5NYLp_o7fWLA
+
+王志珍：人工合成胰岛素中，一个少为人知的科学故事
+
+>邹承鲁（1923.05.17-2006.11.23），男，祖籍江苏无锡，出生于山东青岛，生物化学家。1945年，毕业于西南联合大学化学系。1951年，获英国剑桥大学生物化学博士学位。中国科学院院士。
+
+----
+
+黑索金，或译海扫更，是英文Hexogen的译称，化学名环三亚甲基三硝胺，缩写RDX。原设想用于医药，后来因为威力巨大（比硝化甘油强，是TNT的158%），被发展作炸药用途。爆速在密度为1.7g/cm3时达8350m/s，而且起爆容易，是综合性极佳的炸药。1899年德国在发表的专利中首次叙述制造黑索金。
+
+C-4炸弹，（英文全称Composition C-4）是一种塑料炸药。塑料炸药也叫高聚物粘结炸药(PBX)，其基本原理是将易爆化学物与塑料粘合剂材料结合起来。粘合剂有两个重要作用：包裹爆炸材料，降低它对冲击和热的敏感程度。这样可以相对安全地处理炸药。使爆炸材料具有高度的延展性。可将其塑成不同的形状，从而改变爆炸的方向。
+
+C-4 = RDX + 塑料
+
+https://zhuanlan.zhihu.com/p/23350434
+
+“史上最阴险地雷” 700枚钢珠把你轰成渣
+
+----
+
+https://mp.weixin.qq.com/s/Vam7uTbwPfF8Ht365lGtvA
+
+一般不扯淡--直男口红入门！
+
+# 物理
+
+https://mp.weixin.qq.com/s/lB6dfjS5TAxjMndLCXMWgQ
+
+憋住不放的屁最后去哪了？知道真相的我再也不忍屁了！
+
+https://mp.weixin.qq.com/s/BIy4Ly3eIMOrXRbpjFRFYQ
+
+男人最喜欢在家干的这件事，居然是在马桶上......
+
+----
+
+$$\pi$$的平方与重力加速度g在数值上极其接近。
+
+也许有人就会跳出来说，各星球重力加速度不同、量纲不同，这一看就是巧合啊。
+
+其实，这个巧合是历史上第一个关于“米”的定义导致的。
+
+在1688年，英国人威尔金斯建议用钟摆的方法来确定标准长度。然后，在1790年，法国国民议会将“米”定义为：“纬度45度的海平面上半周期为1秒的单摆的摆长”。
+
+那么，根据单摆的周期公式：
+
+$$T=2\pi\sqrt{\frac{L}{g}}$$
+
+令T=2,L=1即得。
+
+----
+
+之前我一直有个疑问，从能量守恒的角度来说，电网负荷过大的话，发电机肯定带不起。那么反过来，如果负荷一下子消失，发电机会怎么样呢？
+
+这里给出了答案：
+
+https://www.zhihu.com/question/29028681
+
+失去负荷后如果电厂的汽轮机不紧急停机直接的后果是飞车。飞车将导致发电机和汽轮机报废。
+
+# 新冠肺炎
+
+## Gilead Sciences（续）
+
+瑞德西韦（Remdesivir）、法匹拉韦（Favipiravir）、巴洛沙韦（Baloxavir）、洛匹那韦（lopinavir）、利托那韦（ritonavir）
+
+盘尼西林、阿莫西林、配尼西林、替卡西林、羧苄西林、匹美西林
+
+青霉素、庆大霉素、万古霉素
+
+https://mp.weixin.qq.com/s/8XlUuq6HoppIJbeR58LrnA
+
+想成为一个合格的药？选择姓什么很重要
 
 ## 武汉病毒所
 
@@ -99,65 +273,3 @@ https://mp.weixin.qq.com/s/MJamXXj44e-fxaP9WRyhgw
 http://www.sohu.com/a/370615513_105067
 
 网传饶毅致信舒红兵：您夫人不适合领导武汉病毒所
-
-## 疫情建模
-
-https://mp.weixin.qq.com/s/2XsZzfZI-gAHC-D5HGNZXw
-
-从目前的数据，再次分析一下武汉的新冠肺炎患者数量和死亡率
-
-https://mp.weixin.qq.com/s/I5I5Jh7brFGRBTAFah-C4w
-
-武汉新冠肺炎传播的动力学模型及预测
-
-https://mp.weixin.qq.com/s/-C03P-I4w91kLSGsuhxAKQ
-
-新型冠状病毒传播与扩散的控制模型
-
-https://mp.weixin.qq.com/s/gZCD8ATxGrpHSZLKpcHfiA
-
-基于元胞自动机模拟新型肺炎病毒的传播和预防
-
-https://mp.weixin.qq.com/s/ZOPncvPpFyLIwH_XChAdbg
-
-基于微分方程和元胞自动机模拟新型肺炎病毒的传播
-
-https://mp.weixin.qq.com/s/4w6CTGaKKEH9APVNH9Ue8w
-
-扩散信息、交通管制、自我隔离，哪个更能遏制病毒传播？
-
-https://mp.weixin.qq.com/s/tBoM9o3pK89bprK8npHLWA
-
-可能会说谎的地图！全国疫情地理格局的重新审视
-
-https://mp.weixin.qq.com/s/bVNkCHl7BPU_eEcAWksmww
-
-关于武汉新型冠状病毒肺炎的传播预测模型
-
-https://mp.weixin.qq.com/s/Lg1tJmO7aN9XNpZ6bs0cJA
-
-程序员硬核劝告：现在还不是出门的时候
-
-https://mp.weixin.qq.com/s/sv07R8HQXX2U0QOi5_dOwg
-
-河南1105例新冠肺炎数据告诉我们什么？
-
-https://mp.weixin.qq.com/s/qRzkS2itp-eloaBlA-VSGA
-
-基于排队论模型浅析各地医护人员驰援武汉的重要意义
-
-https://mp.weixin.qq.com/s/Rs2cTVPIa02NIkApvr076w
-
-全球COVID-19研究数据集正式开放，内含近3万篇论文和所需AI研究工具！
-
-https://mp.weixin.qq.com/s/ueuvLFxQAGNzBLHHyaBYMA
-
-如果新冠病毒是在亚美尼亚爆发会发生什么？程序员用Python进行模拟
-
-https://mp.weixin.qq.com/s/LGNGFf-LBMz3qyUFPr_BHA
-
-新冠疫情下，如何降低复工的职场感染风险？
-
-https://mp.weixin.qq.com/s/0k1o-m8F5aWUWA4Nj8WnIQ
-
-我国疫情预测模型遭权威期刊退回！钟南山等人用LSTM力证“早发现早隔离”重要性

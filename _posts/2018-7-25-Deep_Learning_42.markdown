@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/DLcyMGTVfRoA58VHc6z6eg
 
 最新《迁移学习:域自适应理论》综述论文，128页ppt讲解迁移学习与最优传输
 
+https://mp.weixin.qq.com/s/MCJcHhB2g-wDPqnhp7f6Xw
+
+仅需少量视频观看数据，即可精准推断用户习惯：腾讯、谷歌、中科大团队提出迁移学习架构PeterRec
+
 # 深度ISP
 
 ## 数据集

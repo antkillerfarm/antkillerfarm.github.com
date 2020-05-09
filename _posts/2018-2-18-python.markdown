@@ -106,6 +106,10 @@ https://www.jianshu.com/p/b183b464a611
 
 python requirements文件生成与使用
 
+https://mp.weixin.qq.com/s/9q0bLHTpzS-SvzfzHtZBXg
+
+Python依赖库管理哪家强？pip、pipreqs、pigar、pip-tools、pipdeptree任君挑选
+
 ## IDE
 
 官方自带的IDLE，以现代IDE的观点来看，只是个精致的小玩具而已。

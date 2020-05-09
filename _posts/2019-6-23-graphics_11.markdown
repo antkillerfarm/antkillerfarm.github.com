@@ -68,6 +68,24 @@ https://zhuanlan.zhihu.com/p/41874735
 
 # CV/CG参考资源
 
+![](/images/img2/l_hires.jpg)
+
+原图地址：
+
+http://www.lenna.org/full/l_hires.jpg
+
+>Lena Söderberg，1951年生，瑞典人。Playboy Playmate（1972.11）。
+
+https://mp.weixin.qq.com/s/XyKQ9sg97eh5K7vDd14DsQ
+
+一张大尺度美女图，竟然推进了图片算法的进步。。。
+
+https://mp.weixin.qq.com/s/-CF69Soq9Bdw-Wsffyv9Hw
+
+这40个冷知识，据说只有1%的人知道……颠覆你的认知！
+
+----
+
 https://github.com/gzr2017/ImageProcessing100Wen
 
 图像处理入门100题
