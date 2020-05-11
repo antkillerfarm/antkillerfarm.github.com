@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  C#, Lisp, Kotlin, Lua
+title:  C#, Lisp, Kotlin, Lua, Haskell
 category: language 
 ---
 
@@ -155,6 +155,32 @@ http://lua-users.org/wiki/GraphicalUserInterfaceToolkits
 
 Lua的GUI工具列表
 
+# Haskell
+
+官网：
+
+https://www.haskell.org/
+
+Haskell主要有两套包管理系统cabal和stack，它们的仓库都是一样的，只是前端语法不同。stack相对比较新，也是目前的首选。
+
+Haskell的官方仓库：
+
+http://hackage.haskell.org/
+
+清华镜像：
+
+https://mirrors.tuna.tsinghua.edu.cn/help/hackage/
+
+Haskell的安装有多种模式，推荐Stack模式，直接使用Stack安装所需要的依赖。
+
+Stack的官网：
+
+https://www.haskellstack.org/
+
+然而国内访问不了，幸好有github：
+
+https://github.com/commercialhaskell/stack/releases/
+
 # Javascript+
 
 https://mp.weixin.qq.com/s/pdOVONHbjfIJPW45nEw1fg
@@ -201,7 +227,7 @@ https://www.cnblogs.com/zzd0916/p/11977995.html
 
 浏览器工作原理与实践
 
-# Python+
+# Python
 
 https://mp.weixin.qq.com/s/5YWAgp8LKi5q_NDrNUtyGQ
 
@@ -302,31 +328,3 @@ Python实现烟花特效
 https://mp.weixin.qq.com/s/Hv0rPD29PPd3Rn6lW6w5dg
 
 教你使用Python制作酷炫二维码
-
-https://mp.weixin.qq.com/s/8Fgzb8JiAoNSJqUanSi85Q
-
-鼠年做只奔跑的猫呗，卖萌式监控系统资源~（QSystemTrayIcon）
-
-https://mp.weixin.qq.com/s/2RRJDStTL7l2Ra3SnNEEYg
-
-发布自己的python库到pypi
-
-https://mp.weixin.qq.com/s/PBaDdLcYxDso2V4aZcFXpA
-
-盘一盘Python错误类型
-
-https://mp.weixin.qq.com/s/8uxc2t53N_j_mRPYbiG0sA
-
-5个案例让Python输出漂亮的命令行表格！
-
-https://mp.weixin.qq.com/s/3pGw9QdAZVE3OKZ-zGyb4g
-
-使用Python远程登陆服务器的最佳实践
-
-https://mp.weixin.qq.com/s/Bllw4rSkxd378LLUCh6oJA
-
-Python炫技操作：合并字典的七种方法
-
-https://mp.weixin.qq.com/s/QWH9qhKzECX-1rqDLfZyhw
-
-如何加速Python代码？

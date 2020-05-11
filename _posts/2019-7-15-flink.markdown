@@ -262,6 +262,48 @@ https://mp.weixin.qq.com/s/KBaagb1zrkAmLyVgmkzJ3A
 
 ceph基本架构及数据分布原理
 
+# Machine Learning之Python篇+
+
+https://mp.weixin.qq.com/s/dwxTla5iiYKvELrpbWf1yQ
+
+8个Python高效数据分析的技巧
+
+https://mp.weixin.qq.com/s/TYiqZvY25qxHcmEXRpqO5Q
+
+如何用Python做自动化特征工程
+
+https://mp.weixin.qq.com/s/lfkTryraR22INdPzR0sidg
+
+基于协同过滤的推荐系统实战
+
+https://mp.weixin.qq.com/s/n3gaWuJCt945ycmliJatpA
+
+python语音识别指南终极版
+
+https://mp.weixin.qq.com/s/pDTbiS8xFH0llUBaN1Mb_Q
+
+如何用Python写一个贪吃蛇AI
+
+https://mp.weixin.qq.com/s/WdYa7Q-yA-s_EO59YkYbqw
+
+7个基本机器学习算法Python实现
+
+https://mp.weixin.qq.com/s/EqLzNzzMcwq5SEyBoTsuug
+
+11种NLP文本预处理Python代码，简洁实用
+
+https://mp.weixin.qq.com/s/mCUdK4i6XGEyaWNCIWA-wQ
+
+集五福，我用Python
+
+https://mp.weixin.qq.com/s/6x5Wmpy4Im0x3Ddua9rvFw
+
+用python怎样识别验证码？传统方法，非DL
+
+https://mp.weixin.qq.com/s/Xksp457JBr2ySrtqgXYMFw
+
+一文学会入门推荐算法库surprise
+
 # NLP参考资源+
 
 https://mp.weixin.qq.com/s/T2Nv7dQvZR6sVht1LfKSlw

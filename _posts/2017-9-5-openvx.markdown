@@ -391,3 +391,7 @@ CUDA编程精品教材分享《基于GPU-多核-集群等并行化编程》
 https://mp.weixin.qq.com/s/bCb5VsH58JII886lpg9lvg
 
 如何在CUDA中为Transformer编写一个PyTorch自定义层
+
+https://mp.weixin.qq.com/s/OYSzol-vufiKPuU9YxtbuA
+
+矩阵相乘在GPU上的终极优化：深度解析Maxas汇编器工作原理

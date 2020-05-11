@@ -288,6 +288,26 @@ https://mp.weixin.qq.com/s/4hL6wWQ73icEWHfK6QKSMw
 
 # Linux参考资源+
 
+https://mp.weixin.qq.com/s/OWGi1htNugOv81ZFPinRGw
+
+汇编实现的memcpy和memset
+
+https://www.jianshu.com/p/fad3339e3448
+
+浅析Linux中的零拷贝技术
+
+https://mp.weixin.qq.com/s/6R8UcLLjm9gdWud-eNHztw
+
+中断及其初始化
+
+https://mp.weixin.qq.com/s/qwouMWc4CFtqG_jra4xbIg
+
+IDT及中断处理的实现
+
+https://mp.weixin.qq.com/s/pRsXWAv7wgYcN_jlzcA2YA
+
+内存都没了，还能运行程序？
+
 https://mp.weixin.qq.com/s/4tAxQ0auQfv5x7Dh3B-85g
 
 Linux内存管理

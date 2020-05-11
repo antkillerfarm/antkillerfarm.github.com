@@ -220,7 +220,9 @@ Graph非常适合用于描述non-Euclidean space的数据：
 
 ![](/images/img3/graph.png)
 
+BFS：Breadth First Search
 
+DFS：Depth First Search
 
 ## 参考
 

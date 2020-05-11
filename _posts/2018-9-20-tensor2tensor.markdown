@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Tensor2Tensor, NN中间语言, MXNet
+title:  Tensor2Tensor, NN中间语言, MXNet, TVM
 category: AI 
 ---
 
@@ -160,6 +160,10 @@ https://onnx.ai/
 
 https://github.com/onnx
 
+![](/images/img3/ONNX.jpg)
+
+截止2020.5，ONNX已经获得压倒性的胜利，成为了事实上的标准。
+
 参考：
 
 https://mp.weixin.qq.com/s/etSrI8Z3-NWbrqNWIbfzjw
@@ -300,82 +304,58 @@ https://zhuanlan.zhihu.com/p/42345854
 
 如何基于gluon训练一个强有力的Reid Baseline
 
-# Pytorch+
+# TVM
 
-https://zhuanlan.zhihu.com/p/76638962
+TVM是陈天奇领导的一个DL加速框架项目。它处于DL框架（如tensorflow、pytorch）和硬件后端（如CUDA、OpenCL）之间，兼顾了前者的易用性和后者的执行效率。
 
-Pytorch分布式训练
+官网：
 
-https://mp.weixin.qq.com/s/0aSBHvscloEnPMRLyNjQsg
+https://tvm.apache.org/
 
-PyTorch分布式训练简明教程
+代码：
 
-https://mp.weixin.qq.com/s/S1dRfmqpiLzR3tnsocmfvw
+https://github.com/apache/incubator-tvm
 
-Pytorch中的数据增强方式最全解释
+![](/images/img3/tvm_stack.png)
 
-https://zhuanlan.zhihu.com/p/29904755
+参考：
 
-Autograd:PyTorch中的梯度计算
+https://zhuanlan.zhihu.com/p/139552817
 
-https://mp.weixin.qq.com/s/BTFMvV2ppmRBXYg95YlK4w
+一篇关于深度学习编译器架构的综述论文
 
-PyTorch实现L2和L1正则化的方法
+https://mp.weixin.qq.com/s/irvBbPKENiZX9G_6wh5c-Q
 
-https://zhuanlan.zhihu.com/p/98535650
+陈天奇等人提出TVM：深度学习自动优化代码生成器
 
-研究生应当掌握的并行训练方法（单机多卡）
+https://mp.weixin.qq.com/s/28n8g_epHsYB0I9GVc_lww
 
-https://zhuanlan.zhihu.com/p/86441879
+陈天奇团队TVM重磅更新：直接在浏览器使用GPU
 
-pytorch多gpu并行训练
+https://mp.weixin.qq.com/s/7JGLm-hkCZBNDLA98qvWNA
 
-https://mp.weixin.qq.com/s/52Wz4pUI8egKugMFuknWKw
+自动生成硬件优化内核：陈天奇等人发布深度学习编译器TVM
 
-Pytorch中的Distributed Data Parallel与混合精度训练（Apex）
+https://mp.weixin.qq.com/s/YVIvdMznb3oatIXqD5a5_A
 
-https://mp.weixin.qq.com/s/KP4etDrGlJmRAMQmR1mTJA
+陈天奇等人提出AutoTVM：让AI来编译优化AI系统底层算子
 
-基于C++的PyTorch模型部署
+https://mp.weixin.qq.com/s/HquT_mKm7x_rbDGz4Voqpw
 
-# Machine Learning之Python篇+
+阿里巴巴最新实践：TVM+TensorFlow提高神经机器翻译性能
 
-https://mp.weixin.qq.com/s/dwxTla5iiYKvELrpbWf1yQ
+https://zhuanlan.zhihu.com/p/50529704
 
-8个Python高效数据分析的技巧
+手把手带你遨游TVM
 
-https://mp.weixin.qq.com/s/TYiqZvY25qxHcmEXRpqO5Q
+https://mp.weixin.qq.com/s/z5rsU_uAAaRxgD9YAxDkZA
 
-如何用Python做自动化特征工程
+陈天奇：深度学习编译技术的现状和未来
 
-https://mp.weixin.qq.com/s/lfkTryraR22INdPzR0sidg
+https://zhuanlan.zhihu.com/p/75203171
 
-基于协同过滤的推荐系统实战
+如何利用TVM快速实现超越Numpy(MKL)的GEMM
 
-https://mp.weixin.qq.com/s/n3gaWuJCt945ycmliJatpA
+https://zhuanlan.zhihu.com/p/58918363
 
-python语音识别指南终极版
-
-https://mp.weixin.qq.com/s/pDTbiS8xFH0llUBaN1Mb_Q
-
-如何用Python写一个贪吃蛇AI
-
-https://mp.weixin.qq.com/s/WdYa7Q-yA-s_EO59YkYbqw
-
-7个基本机器学习算法Python实现
-
-https://mp.weixin.qq.com/s/EqLzNzzMcwq5SEyBoTsuug
-
-11种NLP文本预处理Python代码，简洁实用
-
-https://mp.weixin.qq.com/s/mCUdK4i6XGEyaWNCIWA-wQ
-
-集五福，我用Python
-
-https://mp.weixin.qq.com/s/6x5Wmpy4Im0x3Ddua9rvFw
-
-用python怎样识别验证码？传统方法，非DL
-
-https://mp.weixin.qq.com/s/Xksp457JBr2ySrtqgXYMFw
-
-一文学会入门推荐算法库surprise
+TVM: Deep Learning模型的优化编译器

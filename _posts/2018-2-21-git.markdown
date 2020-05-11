@@ -72,6 +72,7 @@ https://learngitbranching.js.org
 - C -> B : `git reset --soft HEAD^`
 - 修改最后一次提交: `git commit --amend`
 - 只修改内容，不改msg: `git commit --amend --no-edit`
+- 修改最后一次提交的author: `git commit --amend --reset-author` 这里直接用当前author信息替换之，所以需要在修改前，设置好author信息
 
 3.暂存本地修改及恢复
 
@@ -166,7 +167,7 @@ cat ~/.ssh/id_rsa.pub
 
 有的时候，包太大了，可以将之分成若干小包（submodule）。
 
-`git submodule update --init --remote`
+`git submodule update --init --remote --rebase`
 
 如果使用SSH的话，有的时候会update失败。
 
@@ -409,6 +410,10 @@ https://mp.weixin.qq.com/s/PUUL913fig6cFfqy4OKcGA
 
 工作流一目了然，看小姐姐用动图展示10大Git命令
 
+https://blog.csdn.net/mocoe/article/details/84344411
+
+修改git commit的author信息
+
 # ZeroMQ
 
 ZeroMQ是个在Socket之上，而在MQ之下的网络通信库。正如名称所言，它实际上并不是一个完整的MQ，而仅仅只有MQ的一些子功能罢了。
@@ -442,23 +447,3 @@ https://mp.weixin.qq.com/s/oKtu3AA9D3y--xMDQ8EARw
 https://mp.weixin.qq.com/s/4o_cSzWeJdLJMObJBhaZlw
 
 计算机系统中的内存
-
-https://mp.weixin.qq.com/s/OWGi1htNugOv81ZFPinRGw
-
-汇编实现的memcpy和memset
-
-https://www.jianshu.com/p/fad3339e3448
-
-浅析Linux中的零拷贝技术
-
-https://mp.weixin.qq.com/s/6R8UcLLjm9gdWud-eNHztw
-
-中断及其初始化
-
-https://mp.weixin.qq.com/s/qwouMWc4CFtqG_jra4xbIg
-
-IDT及中断处理的实现
-
-https://mp.weixin.qq.com/s/pRsXWAv7wgYcN_jlzcA2YA
-
-内存都没了，还能运行程序？

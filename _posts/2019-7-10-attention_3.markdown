@@ -166,6 +166,8 @@ https://mp.weixin.qq.com/s/S_RELwKsqInvacTxdwJBPg
 
 ![](/images/img3/PTM.jpg)
 
+![](/images/img3/PTM.png)
+
 https://mp.weixin.qq.com/s/kwKZfNSYTzc-PGKxTxm8-w
 
 复旦大学：最新《预训练语言模型》2020综述论文

@@ -411,3 +411,7 @@ Recommender System with GNN
 https://mp.weixin.qq.com/s/_vbcLre5HIrOGbAjTzLFjA
 
 动态网络表征学习在推荐领域的创新与实践
+
+https://zhuanlan.zhihu.com/p/139359188
+
+关于GCN，我有三种写法
