@@ -286,6 +286,10 @@ https://mp.weixin.qq.com/s/rbdke7cKAkXbxvSyFMXX4g
 
 独家下载！阿里如何用AI写代码？
 
+https://mp.weixin.qq.com/s/tTx5kbr4tPEdme3R410uEA
+
+layoutGAN是如何实现自动排版的
+
 ## CV
 
 https://mp.weixin.qq.com/s/gsHu7vNs9cm1tH2nz9mmMg

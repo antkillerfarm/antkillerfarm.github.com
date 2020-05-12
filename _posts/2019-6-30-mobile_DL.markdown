@@ -84,7 +84,7 @@ https://github.com/microsoft/onnxruntime
 
 # Kubernetes
 
-Kubernetes是Google开源的容器集群管理系统，基于Docker构建一个容器的调度服务，提供资源调度、均衡容灾、服务注册、动态扩缩容等功能套件。
+Kubernetes是Google开源的容器集群管理系统，基于Docker构建一个容器的调度服务，提供资源调度、均衡容灾、服务注册、动态扩缩容等功能套件。因为Kubernetes中K和s之间有8个字母，因此又简称为K8s。类似的还有 internationalization被称为i18n。
 
 ![](/images/img3/Kubernetes.png)
 
@@ -141,6 +141,10 @@ https://mp.weixin.qq.com/s/zzn61ADe2RA7K0L4-EMAOA
 https://mp.weixin.qq.com/s/2TRVWe01jHUtOioW31ukeg
 
 如何轻松学习Kubernetes？
+
+https://developer.aliyun.com/article/754267
+
+31篇技术文章，带你从零入门K8s
 
 # Dubbo
 

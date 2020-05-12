@@ -136,6 +136,18 @@ UnrealText：基于虚拟场景的真实场景文本图像合成
 
 # Graph NN+
 
+https://mp.weixin.qq.com/s/emPDgw_c68JgbpYnem4JvA
+
+一文读懂简化的图卷积网络GCN（SGC）
+
+https://mp.weixin.qq.com/s/olt_i6JxfslFSdbz0Dx4oA
+
+用于深度时空图建模的Graph WaveNet
+
+https://mp.weixin.qq.com/s/LzaP6BWaKXL4O_Jf9QN7Rw
+
+基于层次化注意力图网络和多视角学习的商品推荐
+
 https://mp.weixin.qq.com/s/EKb9hN9cFrwNtSWWBpE4dw
 
 首次基于神经架构搜索自动生成图卷积结构，刷新人体动作识别准确率
@@ -415,3 +427,7 @@ https://mp.weixin.qq.com/s/_vbcLre5HIrOGbAjTzLFjA
 https://zhuanlan.zhihu.com/p/139359188
 
 关于GCN，我有三种写法
+
+https://mp.weixin.qq.com/s/QF9-Pz2X4qToObGWwViFBQ
+
+EGES：阿里在图嵌入领域中的探索

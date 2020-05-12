@@ -190,10 +190,6 @@ https://mp.weixin.qq.com/s/dfobYDv-98W9NAmAbzwQKw
 
 字符级NLP优劣分析：在某些场景中比词向量更好用
 
-https://mp.weixin.qq.com/s/r1uXn2jGsHZcZ8Nk7GnGFA
-
-语义表征的无监督对比学习：一个新理论框架
-
 https://mp.weixin.qq.com/s/-YmB6QSQ01EsHfXB40MMcQ
 
 Generative QA: Learning to Answer the Whole Question

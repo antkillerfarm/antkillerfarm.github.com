@@ -134,6 +134,10 @@ https://mp.weixin.qq.com/s/byVdEPcCmVPJOk-uIyGsbw
 
 GCN大佬Thomas Kipf博士论文《深度学习图结构表示》178页pdf阐述图卷积神经网络等机制与应用
 
+https://mp.weixin.qq.com/s/6kzFlHqJPYzHPhyS2nxLOw
+
+最新《图机器学习》综述论文，38页pdf阐述最新图表示学习进展
+
 ## 综述
 
 《A Comprehensive Survey on Graph Neural Networks》
@@ -381,19 +385,3 @@ https://mp.weixin.qq.com/s/U51C2t92nlE7Tv7oKXgx2A
 https://mp.weixin.qq.com/s/vK0bzljCNdR1OumUmsi2sA
 
 斯坦福大牛Jure Leskovec：图神经网络研究最新进展
-
-https://mp.weixin.qq.com/s/WMpcamrHjUDnYwqyISdooA
-
-斯坦福Jure Leskovec图表示学习：无监督和有监督方法
-
-https://mp.weixin.qq.com/s/8zhO5phIVc2gz70omn9xKA
-
-Jure Leskovec：图神经网络GNN研究进展：表达性、预训练、OGB，71页ppt
-
-https://mp.weixin.qq.com/s/lt9lZbulkW0C8A_xi6hodQ
-
-浅析图卷积神经网络
-
-https://mp.weixin.qq.com/s/XSug_qOqq_QaphkiRlGkIg
-
-图卷积GCN前沿方法介绍

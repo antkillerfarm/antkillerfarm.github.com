@@ -324,6 +324,10 @@ https://zhuanlan.zhihu.com/p/139552817
 
 一篇关于深度学习编译器架构的综述论文
 
+https://mp.weixin.qq.com/s/8bXwxYyNjdThlGQQ70cgWQ
+
+TVM：端到端自动深度学习编译器，244页ppt
+
 https://mp.weixin.qq.com/s/irvBbPKENiZX9G_6wh5c-Q
 
 陈天奇等人提出TVM：深度学习自动优化代码生成器

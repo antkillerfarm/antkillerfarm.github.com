@@ -104,6 +104,10 @@ https://mp.weixin.qq.com/s/lN-2ORkfx5C3TiX_VMdaDA
 
 Bandit算法在携程推荐系统中的应用与实践
 
+https://mp.weixin.qq.com/s/6zzOU_hrtAGFPnDz2KuqVg
+
+基于强化学习的Contextual Bandits算法在推荐场景中的应用
+
 # Q-learning
 
 Q-learning是强化学习中很重要的算法，也是最早被引入DL领域的强化学习算法，对它的研究催生了Deep Q-learning Networks。

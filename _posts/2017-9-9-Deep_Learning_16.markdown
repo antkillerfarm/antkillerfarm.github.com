@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/OzancX-44Si13ZtZiONnpQ
 
 基于感知损失的实时风格迁移与超分辨率重建
 
+https://mp.weixin.qq.com/s/yr9fNyzpOBt7dLsnh2T2xg
+
+使用TFLite在移动设备上优化与部署风格转化模型
+
 # 人脸检测/识别
 
 ## Cascade CNN

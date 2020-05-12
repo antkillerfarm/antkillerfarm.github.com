@@ -315,3 +315,7 @@ https://mp.weixin.qq.com/s/Q0XyKIrbOIrA3YsYHmwK1Q
 https://mp.weixin.qq.com/s/l3790PuutrOF27RRmVqJhQ
 
 面对千万级推荐，如何压缩模型最高效？这是腾讯看点新框架
+
+https://mp.weixin.qq.com/s/n_LY6mmJRH5k_cubYOTq1A
+
+模型剪枝有哪些关键技术，如何对其进行长期深入学习

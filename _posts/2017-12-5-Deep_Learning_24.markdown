@@ -386,6 +386,10 @@ https://mp.weixin.qq.com/s/eN9PgGBbM-5R3xQ6zSFiYA
 
 多目标跟踪（MOT）领域近期值得读的几篇论文
 
+https://zhuanlan.zhihu.com/p/138443415
+
+从UMA Tracker(CVPR2020)出发谈谈SOT类MOT算法
+
 # L2 Normalization
 
 L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：

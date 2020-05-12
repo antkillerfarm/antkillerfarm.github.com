@@ -42,6 +42,14 @@ https://mp.weixin.qq.com/s/3kwLoojFjJoPz4pUuEVA8g
 
 神奇的自监督场景去遮挡
 
+https://mp.weixin.qq.com/s/r1uXn2jGsHZcZ8Nk7GnGFA
+
+语义表征的无监督对比学习：一个新理论框架
+
+https://mp.weixin.qq.com/s/SOaA9XNnymLgGgJ5JNSdBg
+
+对比学习（Contrastive Learning）相关进展梳理
+
 # 语义分割进阶（续）
 
 https://mp.weixin.qq.com/s/LZNla-NKAu8wmi-OaJD8yA

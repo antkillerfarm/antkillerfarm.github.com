@@ -6,6 +6,22 @@ category: DL
 
 # Graph NN（续）
 
+https://mp.weixin.qq.com/s/WMpcamrHjUDnYwqyISdooA
+
+斯坦福Jure Leskovec图表示学习：无监督和有监督方法
+
+https://mp.weixin.qq.com/s/8zhO5phIVc2gz70omn9xKA
+
+Jure Leskovec：图神经网络GNN研究进展：表达性、预训练、OGB，71页ppt
+
+https://mp.weixin.qq.com/s/lt9lZbulkW0C8A_xi6hodQ
+
+浅析图卷积神经网络
+
+https://mp.weixin.qq.com/s/XSug_qOqq_QaphkiRlGkIg
+
+图卷积GCN前沿方法介绍
+
 https://mp.weixin.qq.com/s/aeQyZ8cpz81cK8Dg-84mjA
 
 网络表征学习综述
@@ -373,15 +389,3 @@ https://zhuanlan.zhihu.com/p/86216369
 https://mp.weixin.qq.com/s/ceC1_39cmpqYOoHsu-4sCQ
 
 HEC-Montreal唐建博士：图神经网络推理
-
-https://mp.weixin.qq.com/s/emPDgw_c68JgbpYnem4JvA
-
-一文读懂简化的图卷积网络GCN（SGC）
-
-https://mp.weixin.qq.com/s/olt_i6JxfslFSdbz0Dx4oA
-
-用于深度时空图建模的Graph WaveNet
-
-https://mp.weixin.qq.com/s/LzaP6BWaKXL4O_Jf9QN7Rw
-
-基于层次化注意力图网络和多视角学习的商品推荐

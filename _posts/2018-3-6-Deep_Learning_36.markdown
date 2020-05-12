@@ -321,3 +321,29 @@ https://zhuanlan.zhihu.com/p/114672282
 https://mp.weixin.qq.com/s/oY51Rk6qD7fxeSRIf7HAFg
 
 图像生成玩腻了？视频生成技术何不来了解一下
+
+# 行人重识别+
+
+https://mp.weixin.qq.com/s/Vi_1Sg8OKG-EG4aC4QTCWA
+
+半监督学习的新助力：无监督数据扩增法
+
+https://mp.weixin.qq.com/s/omUtD3GFOpP1dvfWZgLDww
+
+计算机视觉模型效果不佳，你可能是被相机的Exif信息坑了
+
+https://mp.weixin.qq.com/s/pV7C2sSJwP3rBO6OYeF-nw
+
+基于马尔可夫链的数据增强
+
+https://mp.weixin.qq.com/s/6yfHwsk-fTEtQhrciMEBug
+
+重识别（re-ID）特征适合直接用于跟踪（tracking）问题么？
+
+https://mp.weixin.qq.com/s/Q34wjziJBBOrb1VPhQJK8g
+
+行人重识别简介
+
+https://mp.weixin.qq.com/s/OALGxuvUdQMbsK1k4g2V7Q
+
+遮挡也能识别？地平线提出用时序信息提升行人检测准确度

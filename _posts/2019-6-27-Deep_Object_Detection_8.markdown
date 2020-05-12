@@ -182,6 +182,14 @@ https://mp.weixin.qq.com/s/XoKdsQKyaI3LsDxF7uyKuQ
 
 聊聊目标检测中的多尺度检测（Multi-Scale），从YOLO到FPN，SNIPER，SSD填坑贴和极大极小目标识别
 
+https://mp.weixin.qq.com/s/UQLvHDf62iV8KeZ5LoQdsA
+
+在小目标检测上另辟蹊径的SNIP
+
+https://mp.weixin.qq.com/s/GpZHGksl0elxMcaQYosK-A
+
+SNIP的升级版SNIPER（效果比Mosaic更佳）
+
 https://mp.weixin.qq.com/s/XdH54ImSfgadCoISmVyyVg
 
 基于单目摄像头的物体检测
