@@ -31,7 +31,7 @@ http://blog.csdn.net/leixiaohua1020/
 中国传媒大学雷霄骅博士的blog，专注ffmpeg等的音视频研究。
 
 >2020.2   
->一直奇怪雷神的blog怎么从2016年之后就不再更新了。最近才知道，他早已于该年7月17日猝死。。。
+>一直奇怪雷神的blog怎么从2016年之后就不再更新了。最近才知道，原来他早已于该年7月17日猝死。。。
 
 https://blog.csdn.net/machh/article/details/52109231
 
@@ -54,6 +54,8 @@ http://academic.research.microsoft.com/
 http://cn.arxiv.org/
 
 最著名的论文网站arxiv.org的中国镜像网站。arxiv.org中的论文都有编号。比如1608.06993v4，1608表示这是2016年8月的文章，v4表示这是第4版。
+
+![](/images/img3/Xiv.png)
 
 https://github.com/CyC2018/CS-Notes
 

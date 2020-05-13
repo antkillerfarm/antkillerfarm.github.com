@@ -372,3 +372,7 @@ https://mp.weixin.qq.com/s/4LIq3kZaXgaoEEyb8TQvwg
 https://mp.weixin.qq.com/s/ETGPXVDGRHOq0W-ef_q2_A
 
 RankSRGAN:排序学习+GAN用于超分辨率
+
+https://zhuanlan.zhihu.com/p/140507840
+
+图像超分：USRNet
