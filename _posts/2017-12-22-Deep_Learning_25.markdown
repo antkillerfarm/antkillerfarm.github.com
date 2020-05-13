@@ -236,6 +236,12 @@ S3FD: Single Shot Scale-invariant Face Detector
 
 人脸属性包括：人脸年龄、表情、颜值等。
 
+相关应用可分为两类：
+
+Get类：从图片中获得人脸属性，比如年龄估计、表情识别、颜值打分等。
+
+Set类：编辑人脸属性。比如给一张年轻时的照片，来预估年老时的样子。
+
 参考：
 
 https://mp.weixin.qq.com/s/M952HsJnmfx3EGmiDcySGQ
@@ -269,6 +275,14 @@ https://mp.weixin.qq.com/s/s2SFQgUOZLV-f6auqymVOg
 https://mp.weixin.qq.com/s/I3MS1gB1yjSnadex4LfOYA
 
 旷视提出极轻量级年龄估计模型C3AE
+
+https://mp.weixin.qq.com/s/76DJk4mZ5tBEjQENWmFAEg
+
+STGAN: 人脸高精度属性编辑模型
+
+https://mp.weixin.qq.com/s/BwqOABORt6B9qd9mEufa7w
+
+人脸年龄编辑：无可奈何花落去，似曾相似春又来！
 
 ## 活体检测
 

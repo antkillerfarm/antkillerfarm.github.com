@@ -354,6 +354,18 @@ https://mp.weixin.qq.com/s/ZieyCARzUGqa_7ME57WGtA
 
 用机器学习来提升你的用户增长：第一步，了解你的目标
 
+https://mp.weixin.qq.com/s/B7BV0mp-kfmyFZIf77mg2g
+
+Netflix推荐算法，让每个人看到不一样的电影海报
+
+https://mp.weixin.qq.com/s/S5_7wQynrBR0yLtNRKC-kw
+
+多模型融合推荐算法在达观数据的运用
+
+https://mp.weixin.qq.com/s/2Fu3s1Hy6ZW8Ex8yLPDnyQ
+
+提速100倍，秒杀传统A/B测试！Netflix推出交错测试个性化推荐算法
+
 # 推荐算法中的常用排序算法
 
 ![](/images/img3/ranking.png)
@@ -365,31 +377,3 @@ Pranking (NIPS 2002), OAP-BPM (EMCL 2003), Ranking with Large Margin Principles 
 ## Pairwise方法
 
 Learning to Retrieve Information (SCC 1995), Learning to Order Things (NIPS 1998), Ranking SVM (ICANN 1999), RankBoost (JMLR 2003), LDM (SIGIR 2005), RankNet (ICML 2005), Frank (SIGIR 2007), MHR(SIGIR 2007), Round Robin Ranking (ECML 2003), GBRank (SIGIR 2007), QBRank (NIPS 2007), MPRank (ICML 2007), IRSVM (SIGIR 2006)。
-
-## Listwise方法
-
-LambdaRank (NIPS 2006), AdaRank (SIGIR 2007), SVM-MAP (SIGIR 2007), SoftRank (LR4IR 2007), GPRank (LR4IR 2007), CCA (SIGIR 2007), RankCosine (IP&M 2007), ListNet (ICML 2007), ListMLE (ICML 2008) 。
-
-## LambdaMART
-
-https://www.zhihu.com/question/41418093
-
-求解LambdaMART的疑惑？
-
-https://liam0205.me/2016/07/10/a-not-so-simple-introduction-to-lambdamart/
-
-LambdaMART不太简短之介绍
-
-http://blog.csdn.net/huagong_adu/article/details/40710305
-
-Learning To Rank之LambdaMART的前世今生
-
-## 参考
-
-https://mp.weixin.qq.com/s/YjYVE6jzySVsZmXSPivB5w
-
-达观数据搜索引擎排序实践（上篇）
-
-https://mp.weixin.qq.com/s/UpN7tAMjbFLSPcDYsWaykg
-
-达观数据搜索引擎排序实践（下篇）

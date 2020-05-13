@@ -244,6 +244,10 @@ https://mp.weixin.qq.com/s/Sn4RPdghzzQhQc-r4z8Iuw
 
 Kaldi单音素GMM学习笔记
 
+https://mp.weixin.qq.com/s/u-oOQre6LTUfMBu2XlHknA
+
+基于HMM-GMM的语音识别算法介绍
+
 # LDA-MLLT
 
 Maximum Likelihood Linear Transform (MLLT)，又名Global Semi-tied Covariance (STC)。因此，在科技文献中，常被称作STC/MLLT。

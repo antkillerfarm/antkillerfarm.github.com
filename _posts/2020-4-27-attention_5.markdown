@@ -390,6 +390,10 @@ https://mp.weixin.qq.com/s/G995ulqe6Ifxml_AJqapAw
 
 BERT在小米NLP业务中的实战探索
 
+https://www.cnblogs.com/gczr/p/12874409.html
+
+Sentence-BERT: 一种能快速计算句子相似度的孪生网络
+
 # Attention进阶
 
 https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ

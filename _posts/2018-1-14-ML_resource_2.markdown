@@ -50,10 +50,6 @@ https://zhuanlan.zhihu.com/p/30785455
 
 《羞羞的铁拳》好不好看 8万观众说了算 Part 2
 
-https://mp.weixin.qq.com/s/tXpdPwnZyCtur9Q-rJfYFg
-
-当AI遇上证券投资
-
 https://mp.weixin.qq.com/s/DUz76rLOEL6iK1aytku7sQ
 
 基于机器学习方法的POI品类推荐算法
@@ -61,10 +57,6 @@ https://mp.weixin.qq.com/s/DUz76rLOEL6iK1aytku7sQ
 https://mp.weixin.qq.com/s/seIwEHqoCoWk5JzXGpL3rQ
 
 用一座冠军奖杯的实力讲述资讯个性化推荐
-
-https://mp.weixin.qq.com/s/yQs8Mhe0kM6XMA7JfjRuPA
-
-达观数据推荐系统算法实践—重排序
 
 https://mp.weixin.qq.com/s/Dqe3XX-OFdM5vNshrVrsTg
 
@@ -118,25 +110,9 @@ https://mp.weixin.qq.com/s/TUwg5y7Pse0SlvsXGwvl7w
 
 沿着地铁买房怎样更划算？2017上海城市大数据报告发布
 
-https://mp.weixin.qq.com/s/Q-emQCpmlibK8WAqzLTxAw
-
-让推荐系统变得会“说话”———达观推荐理由设计实践
-
-https://mp.weixin.qq.com/s/1Iqcx4fSCnKHALV0Z6rO3g
-
-达观数据是如何基于用户历史行为进行精准个性化推荐的？
-
-https://mp.weixin.qq.com/s/S5_7wQynrBR0yLtNRKC-kw
-
-多模型融合推荐算法在达观数据的运用
-
 https://mp.weixin.qq.com/s/ZbSdzHuKz1cR-qS0gAwOYg
 
 智能分析最佳实践——指标逻辑树
-
-https://mp.weixin.qq.com/s/2Fu3s1Hy6ZW8Ex8yLPDnyQ
-
-提速100倍，秒杀传统A/B测试！Netflix推出交错测试个性化推荐算法
 
 https://mp.weixin.qq.com/s/KU6T1ZPQS3JcILA2TUB53Q
 
@@ -145,10 +121,6 @@ https://mp.weixin.qq.com/s/KU6T1ZPQS3JcILA2TUB53Q
 https://mp.weixin.qq.com/s/qJwCsT_DQg7oUERRaWczIQ
 
 产品中的机器学习：从已受训模型到预测服务器
-
-https://mp.weixin.qq.com/s/B7BV0mp-kfmyFZIf77mg2g
-
-Netflix推荐算法，让每个人看到不一样的电影海报
 
 https://mp.weixin.qq.com/s/WCj0SbWbzvGPAODKUUdrOA
 
@@ -202,10 +174,6 @@ https://mp.weixin.qq.com/s/sVYzPd73rmjlm8owUGCciw
 
 南京大学提出SSWL：从半监督弱标注数据中学习多标签学习问题
 
-https://mp.weixin.qq.com/s/BffCFKpgjf-MDKMH4V_Dig
-
-红豆Live推荐算法中召回和排序的应用和策略
-
 https://mp.weixin.qq.com/s/rE1UlhFpiaOIxQd6K9UNQg
 
 南京大学提出用于聚类的最优间隔分布机
@@ -233,10 +201,6 @@ https://mp.weixin.qq.com/s/dPJpFyIa5SnhpY80En1EJQ
 https://mp.weixin.qq.com/s/WkIfTx6uvauxQcnHZx4LMw
 
 COTA：通过自然语言处理和机器学习改进Uber客户服务
-
-https://mp.weixin.qq.com/s/b9lHY6jirAv_GKK6WM0eAg
-
-视频推荐中用户兴趣建模、识别的挑战和解法
 
 https://mp.weixin.qq.com/s/pS4Eypr2qWREXt6yUEZKTg
 
@@ -266,10 +230,6 @@ https://mp.weixin.qq.com/s/AZjEct_8xpMMqhmbUL1FXw
 
 基于贝叶斯生存分析的《冰与火之歌》人物死亡率分析
 
-https://mp.weixin.qq.com/s/5LUI7ChqARFT2PUom1ue9w
-
-今日头条推荐算法详解
-
 https://mp.weixin.qq.com/s/li6l-efZ80Y72bpgzxtFzA
 
 数学教你不犯错----2017年照片大数据分析
@@ -294,18 +254,6 @@ https://mp.weixin.qq.com/s/TDazJQVnLp9bfRi-pdHAhw
 
 每天1800万单，1小时送到，美团外卖如何优化配送模型？
 
-https://mp.weixin.qq.com/s/RP9AfRNfztgKR9JTqhTTqQ
-
-资本资产定价模型简介
-
-https://blog.csdn.net/CoderPai/article/details/80138774
-
-使用数据驱动进行配对交易：简单交易策略
-
-https://blog.csdn.net/CoderPai/article/details/80143990
-
-量化交易：相关系数
-
 https://mp.weixin.qq.com/s/wahPinRhpEO13h_Jrh6a-Q
 
 “蝴蝶效应”也能预测了？看机器学习如何解释混沌系统
@@ -329,10 +277,6 @@ https://mp.weixin.qq.com/s/wygcR4ukL22jS_qizp0VEA
 https://mp.weixin.qq.com/s/3enk8alUaYoYqtf4hju7mA
 
 通俗解释优化的线性感知机算法：Pocket PLA
-
-https://mp.weixin.qq.com/s/824-TbpwJz9n_jT9uuOE8g
-
-中小企业如何做好推荐系统？
 
 https://mp.weixin.qq.com/s/qfsakjq9D06DeIe6yx8aJw
 
@@ -393,3 +337,71 @@ https://mp.weixin.qq.com/s/_AHqFqf1zFNtBifayiTfXQ
 https://mp.weixin.qq.com/s/me5opXSju1KZIrzscmBK0g
 
 节约亿级成本！Sigma:阿里的在线调度优化
+
+https://mp.weixin.qq.com/s/s2XpGne0sAqnuN-u6g5k1A
+
+资金流因子全面测试兼正交化方法详解
+
+https://mp.weixin.qq.com/s/oblwg01BUIJjVhBeHa9HQQ
+
+程序员分析了50万条拼多多商品数据，告诉你到底是消费升级还是降级！
+
+https://mp.weixin.qq.com/s/4HVkEnk6_hONWJYdi8L53g
+
+闲聊结构化预测（structured learning）
+
+https://mp.weixin.qq.com/s/GP_t_fhklpVNhC6J6i0YbA
+
+再聊聊自然语言处理中的结构化预测问题
+
+https://mp.weixin.qq.com/s/G6-XbqCO5iuwGDen-r6aWg
+
+唐宏:基于概率主题模型的高分辨率遥感图像非监督语义分割
+
+https://mp.weixin.qq.com/s/l4W7qmKJ4Pc-rlF-KvhrPA
+
+机器学习在信用评分卡中的应用
+
+https://mp.weixin.qq.com/s/O3SIexXUeWM1svdI_ygrDg
+
+非精确图匹配方法综述
+
+https://mp.weixin.qq.com/s/vOZust2RceSVoYPH6nauJw
+
+机器学习模型该如何选择和评估？希望这个小册子能帮到你！
+
+https://mp.weixin.qq.com/s/eW3fGJAQQMS12EmmeqZsYQ
+
+如何打开黑盒子模型？41页最新机器学习可解释模型综述论文
+
+https://mp.weixin.qq.com/s/Z1ixoRmUDl17CF4k7JS4zg
+
+浅谈物流网络中的选址规划问题
+
+https://mp.weixin.qq.com/s/voumCoLRPJO2eHFUVGm0PA
+
+理解Scikit-Learn中分类性能度量指标
+
+https://mp.weixin.qq.com/s/JW62V3wBguSPSAkyWKAEpQ
+
+一个数据分析师眼中的数据预测与监控
+
+https://mp.weixin.qq.com/s/Xk1myDvYQxvKKyQ7RKqcyw
+
+机器学习可重复性最佳实践
+
+https://mp.weixin.qq.com/s/tnkS6xtuv29A_TGlPUAxlQ
+
+我猜，每个程序员对着电梯都想过调度算法吧！
+
+https://mp.weixin.qq.com/s/0m5DuJzh92aYUgdiQ3PfIg
+
+数据竞赛大杀器之模型融合(stacking & blending)
+
+https://mp.weixin.qq.com/s/21LVssq2ynMgp_x1lwSC9w
+
+基于稀疏自表示与模糊双C均值聚类的SAR图像分割
+
+https://mp.weixin.qq.com/s/Oi1yJty_guzTUbRGZ5MuEw
+
+使用高斯过程的因果推理：GP CaKe的基本思路

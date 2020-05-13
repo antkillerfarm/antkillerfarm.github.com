@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 流体力学, 台风, 化学工业
+title: 流体力学, 台风, 化学, 物理
 category: Nature 
 ---
 
@@ -124,33 +124,7 @@ https://mp.weixin.qq.com/s/Ld28qHczQ1NfFPGlJQGXKQ
 
 台风最喜欢在我国哪个省市登陆？
 
-# 化学工业
-
-https://wallstreetcn.com/articles/250536
-
-巴斯夫原本是它小弟，德国化工产业的代名词：揭秘史前化工巨兽 IG 法本
-
-http://blog.sina.com.cn/s/blog_52f526870102w7xo.html
-
-历经百年兴衰 德国化工三巨头为何屹立不倒
-
-http://www.weixinso.com/document/KPyZBb.html
-
-陶氏化学发展史
-
-http://www.pnchina.com/cn/Detail.aspx?id=1361250587
-
-业界经典：陶氏化学Styrofoam之75年
-
-https://new.qq.com/omn/20180819/20180819A011JT.html
-
-起于硝烟的化工帝国：杜邦是怎么与化工行业同呼吸共命运的？
-
-http://www.qdaily.com/articles/18872.html
-
-杜邦要合并了，过去一百年，这家公司的发明都改变了些什么？
-
-----
+# 化学
 
 ![](/images/img2/SI.png)
 
@@ -193,6 +167,40 @@ https://zhuanlan.zhihu.com/p/23350434
 https://mp.weixin.qq.com/s/Vam7uTbwPfF8Ht365lGtvA
 
 一般不扯淡--直男口红入门！
+
+https://mp.weixin.qq.com/s/a3z7PKTOqmxlEosi2EgoaA
+
+blue生色，九寨沟不得不说的“蓝”题
+
+https://mp.weixin.qq.com/s/XZyOXfqvq7bJ1_2eUPknAA
+
+千年锈色耐人寻——古代铜锡铅合金锈蚀谜题
+
+## 化学工业
+
+https://wallstreetcn.com/articles/250536
+
+巴斯夫原本是它小弟，德国化工产业的代名词：揭秘史前化工巨兽 IG 法本
+
+http://blog.sina.com.cn/s/blog_52f526870102w7xo.html
+
+历经百年兴衰 德国化工三巨头为何屹立不倒
+
+http://www.weixinso.com/document/KPyZBb.html
+
+陶氏化学发展史
+
+http://www.pnchina.com/cn/Detail.aspx?id=1361250587
+
+业界经典：陶氏化学Styrofoam之75年
+
+https://new.qq.com/omn/20180819/20180819A011JT.html
+
+起于硝烟的化工帝国：杜邦是怎么与化工行业同呼吸共命运的？
+
+http://www.qdaily.com/articles/18872.html
+
+杜邦要合并了，过去一百年，这家公司的发明都改变了些什么？
 
 # 物理
 
@@ -241,3 +249,7 @@ https://www.zhihu.com/question/29028681
 https://mp.weixin.qq.com/s/_eFtWkHfsdsw9O28-I_NPQ
 
 半导体是个好东西，不仅能做芯片，还能用来做“炒酸奶”
+
+https://mp.weixin.qq.com/s/cBjB_lhnpbkwjnoDw2QvOQ
+
+原来，自动搅拌杯的原理比想象中的还要简单！（热电效应）

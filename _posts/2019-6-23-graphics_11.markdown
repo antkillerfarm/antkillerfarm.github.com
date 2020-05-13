@@ -230,6 +230,38 @@ https://www.zhihu.com/question/294625837
 
 # 推荐系统的工程细节+
 
+https://mp.weixin.qq.com/s/b8DkQWZbUc5-jzWKBd8iUA
+
+深度学习技术在美图个性化推荐的应用实践
+
+https://mp.weixin.qq.com/s/R0GG6Kg-h50RTRU6DIrZCg
+
+爱奇艺效果广告的个性化探索与实践
+
+https://mp.weixin.qq.com/s/QqWGdVGVxSComuJT1SDo0Q
+
+360展示广告召回系统的演进
+
+https://mp.weixin.qq.com/s/zxFGxnQk016Kh72XyPDSSg
+
+阿里文娱首次公开！AI如何对爆款内容未卜先知？
+
+https://mp.weixin.qq.com/s/b0_o4lHOxs7v4PCCL_I4DA
+
+Instagram推荐系统：每秒预测9000万个模型是怎么做到的？
+
+https://mp.weixin.qq.com/s/MGeuFEQ4wvEERSrSVVihJg
+
+推荐系统提供web服务的2种方式
+
+https://mp.weixin.qq.com/s/BNQRi4hHnWXMDkSDbno_kg
+
+不要犯战略性的失误——如何合理制定推荐系统的优化目标？
+
+https://mp.weixin.qq.com/s/VFUryyuIY-cWhWK-oU9byg
+
+推荐系统的人工调控
+
 https://mp.weixin.qq.com/s/ZggfBVw0Z0ODxjqAC4-Lbg
 
 淘宝搜索模型如何全面实时化？
@@ -321,3 +353,27 @@ https://mp.weixin.qq.com/s/5InRjVu3naxrA_9KAD2IJA
 https://mp.weixin.qq.com/s/VkCio3oyoTJuiMHrpL1s4g
 
 阿里飞猪“猜你喜欢”推荐排序实践
+
+https://mp.weixin.qq.com/s/Q-emQCpmlibK8WAqzLTxAw
+
+让推荐系统变得会“说话”———达观推荐理由设计实践
+
+https://mp.weixin.qq.com/s/1Iqcx4fSCnKHALV0Z6rO3g
+
+达观数据是如何基于用户历史行为进行精准个性化推荐的？
+
+https://mp.weixin.qq.com/s/BffCFKpgjf-MDKMH4V_Dig
+
+红豆Live推荐算法中召回和排序的应用和策略
+
+https://mp.weixin.qq.com/s/b9lHY6jirAv_GKK6WM0eAg
+
+视频推荐中用户兴趣建模、识别的挑战和解法
+
+https://mp.weixin.qq.com/s/5LUI7ChqARFT2PUom1ue9w
+
+今日头条推荐算法详解
+
+https://mp.weixin.qq.com/s/824-TbpwJz9n_jT9uuOE8g
+
+中小企业如何做好推荐系统？

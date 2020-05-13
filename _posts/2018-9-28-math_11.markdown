@@ -242,6 +242,10 @@ https://zhuanlan.zhihu.com/p/35473808
 
 PID控制器的贝叶斯理解
 
+https://zhuanlan.zhihu.com/p/139244173
+
+广告出价--如何使用PID控制广告投放成本
+
 ## 串级PID控制
 
 实际使用中，为了改善PID控制的效果，一般还会用到串级PID控制。

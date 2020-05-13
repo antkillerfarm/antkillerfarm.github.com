@@ -200,6 +200,10 @@ https://mp.weixin.qq.com/s/LKjVfhyhL4GVx6l5WC6-CQ
 
 如何用深度学习实现用户行为预测与推荐
 
+https://zhuanlan.zhihu.com/p/114590897
+
+回顾经典，Netflix的推荐系统架构
+
 https://mp.weixin.qq.com/s/UrMsMHAkqNHJEl5lhAvLtA
 
 腾讯提出并行贝叶斯在线深度学习框架PBODL：预测广告系统的点击率

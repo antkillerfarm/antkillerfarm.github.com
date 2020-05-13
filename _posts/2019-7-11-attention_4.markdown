@@ -4,7 +4,7 @@ title:  Attention（四）——BERT（2）
 category: Attention 
 ---
 
-# BERT（续）
+# BERT
 
 ## NMT
 

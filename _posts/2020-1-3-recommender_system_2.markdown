@@ -6,6 +6,34 @@ category: Recommender System
 
 # 推荐算法中的常用排序算法（续）
 
+## Listwise方法
+
+LambdaRank (NIPS 2006), AdaRank (SIGIR 2007), SVM-MAP (SIGIR 2007), SoftRank (LR4IR 2007), GPRank (LR4IR 2007), CCA (SIGIR 2007), RankCosine (IP&M 2007), ListNet (ICML 2007), ListMLE (ICML 2008) 。
+
+## LambdaMART
+
+https://www.zhihu.com/question/41418093
+
+求解LambdaMART的疑惑？
+
+https://liam0205.me/2016/07/10/a-not-so-simple-introduction-to-lambdamart/
+
+LambdaMART不太简短之介绍
+
+http://blog.csdn.net/huagong_adu/article/details/40710305
+
+Learning To Rank之LambdaMART的前世今生
+
+## 参考
+
+https://mp.weixin.qq.com/s/YjYVE6jzySVsZmXSPivB5w
+
+达观数据搜索引擎排序实践（上篇）
+
+https://mp.weixin.qq.com/s/UpN7tAMjbFLSPcDYsWaykg
+
+达观数据搜索引擎排序实践（下篇）
+
 https://mp.weixin.qq.com/s/xigME-griWFwEvvPNqWuvg
 
 美团点评联盟广告的场景化定向排序机制
@@ -53,6 +81,10 @@ https://www.zhihu.com/question/26933554
 https://mp.weixin.qq.com/s/lx-3T5J8R29MT5jfeuTmVg
 
 深入理解推荐系统：排序
+
+https://mp.weixin.qq.com/s/yQs8Mhe0kM6XMA7JfjRuPA
+
+达观数据推荐系统算法实践—重排序
 
 # 用户画像
 
@@ -349,35 +381,3 @@ https://mp.weixin.qq.com/s/Od2_u1uP5S7htjDKuEDSTw
 https://mp.weixin.qq.com/s/FXlxT6qSridawZDIdGD1mw
 
 UC信息流推荐模型在多目标和模型优化方面的进展
-
-https://mp.weixin.qq.com/s/b8DkQWZbUc5-jzWKBd8iUA
-
-深度学习技术在美图个性化推荐的应用实践
-
-https://mp.weixin.qq.com/s/R0GG6Kg-h50RTRU6DIrZCg
-
-爱奇艺效果广告的个性化探索与实践
-
-https://mp.weixin.qq.com/s/QqWGdVGVxSComuJT1SDo0Q
-
-360展示广告召回系统的演进
-
-https://mp.weixin.qq.com/s/zxFGxnQk016Kh72XyPDSSg
-
-阿里文娱首次公开！AI如何对爆款内容未卜先知？
-
-https://mp.weixin.qq.com/s/b0_o4lHOxs7v4PCCL_I4DA
-
-Instagram推荐系统：每秒预测9000万个模型是怎么做到的？
-
-https://mp.weixin.qq.com/s/MGeuFEQ4wvEERSrSVVihJg
-
-推荐系统提供web服务的2种方式
-
-https://mp.weixin.qq.com/s/BNQRi4hHnWXMDkSDbno_kg
-
-不要犯战略性的失误——如何合理制定推荐系统的优化目标？
-
-https://mp.weixin.qq.com/s/VFUryyuIY-cWhWK-oU9byg
-
-推荐系统的人工调控
