@@ -212,6 +212,10 @@ https://mp.weixin.qq.com/s/BIy4Ly3eIMOrXRbpjFRFYQ
 
 男人最喜欢在家干的这件事，居然是在马桶上......
 
+https://mp.weixin.qq.com/s/mDgnsn1xsI1WN3UhxPGPrQ
+
+通过这些动图，让你秒懂高中物理原理!
+
 ----
 
 $$\pi$$的平方与重力加速度g在数值上极其接近。

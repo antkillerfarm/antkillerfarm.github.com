@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度强化学习（一）——教程, 概述
+title:  深度强化学习（一）——教程, 工具/框架
 category: DRL 
 ---
 
@@ -235,6 +235,10 @@ https://mp.weixin.qq.com/s/mZSOmlHRrowPcTKjnlB4wA
 https://github.com/zhoubolei/introRL
 
 港中文周博磊：强化学习纲要
+
+https://mp.weixin.qq.com/s/e-xGWG1qWb_zuyorvhZpJA
+
+John Schulman总结深度强化学习理论、模型及编码调参技巧
 
 # 论文
 

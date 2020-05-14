@@ -347,3 +347,17 @@ https://mp.weixin.qq.com/s/Q34wjziJBBOrb1VPhQJK8g
 https://mp.weixin.qq.com/s/OALGxuvUdQMbsK1k4g2V7Q
 
 遮挡也能识别？地平线提出用时序信息提升行人检测准确度
+
+# 人脸检测/识别+
+
+https://mp.weixin.qq.com/s/PsToV8Z17tRzXW_AbaMNmg
+
+Blazeface人脸检测器
+
+https://mp.weixin.qq.com/s/5ANMZNaR2ayYMUQEJ6aM3w
+
+人脸识别基于通用表示学习
+
+https://mp.weixin.qq.com/s/jrynQZgoljFi6zdVKWo5nw
+
+在浏览器中实现AR试妆

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度强化学习（二）——Deep Q-learning Network
+title:  深度强化学习（二）——概述, Deep Q-learning Network
 category: DRL 
 ---
 

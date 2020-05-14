@@ -6,6 +6,18 @@ category: DL
 
 # 人脸检测/识别（续）
 
+https://mp.weixin.qq.com/s/p0Y3Svrk1WWTed6R4AFWLQ
+
+异质人脸识别研究综述
+
+https://mp.weixin.qq.com/s/yoCVFWlqReUHx1Wmo0-rtw
+
+强大的姿势感知模型用于姿势不变的人脸识别
+
+https://mp.weixin.qq.com/s/MEB-qLGiOKcvdee-vlsjYw
+
+改进的阴影抑制用于光照鲁棒的人脸识别
+
 https://mp.weixin.qq.com/s/BE0bBFNVOoKjXLUH5vr5Kg
 
 在警察领域高级人脸识别技术的一致性
@@ -133,18 +145,6 @@ https://mp.weixin.qq.com/s/VOclUEBXnAtmAZmZrzQQoA
 https://zhuanlan.zhihu.com/p/112140909
 
 基于深度学习的人脸识别方法介绍
-
-https://mp.weixin.qq.com/s/PsToV8Z17tRzXW_AbaMNmg
-
-Blazeface人脸检测器
-
-https://mp.weixin.qq.com/s/5ANMZNaR2ayYMUQEJ6aM3w
-
-人脸识别基于通用表示学习
-
-https://mp.weixin.qq.com/s/jrynQZgoljFi6zdVKWo5nw
-
-在浏览器中实现AR试妆
 
 # RNN进阶
 

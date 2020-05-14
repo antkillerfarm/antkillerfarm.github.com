@@ -8,6 +8,30 @@ category: DL
 
 ## 参考（续）
 
+https://mp.weixin.qq.com/s/tum24mzS2cUiKW87a1weFA
+
+人脸识别全面总结：从传统方法到深度学习
+
+https://mp.weixin.qq.com/s/bFnuGu4xLJiRfANi0Rkduw
+
+人脸识别的前世今生：从人工特征的百花齐放到深度学习的一统江湖
+
+https://zhuanlan.zhihu.com/p/32702868
+
+人脸检测背景介绍和发展现状
+
+https://zhuanlan.zhihu.com/p/69777256
+
+简述人脸识别开发原理。这篇文章对传统算法做了一个很好的总结。
+
+https://zhuanlan.zhihu.com/p/79863225
+
+人脸识别特征介绍以及难题概括
+
+https://mp.weixin.qq.com/s/QvmHO_fulTtYJYB4MdoKGw
+
+初学深度学习人脸识别和验证必读文章
+
 http://mp.weixin.qq.com/s/KQxGQdLa3XzKVIFYqlrV7g
 
 人脸检测与识别的趋势和分析
@@ -363,15 +387,3 @@ https://mp.weixin.qq.com/s/B8r2YEd9UbKMTT8Tup2Y_w
 https://zhuanlan.zhihu.com/p/62954487
 
 旷视研究院新出8000点人脸关键点，堪比电影级表情捕捉
-
-https://mp.weixin.qq.com/s/p0Y3Svrk1WWTed6R4AFWLQ
-
-异质人脸识别研究综述
-
-https://mp.weixin.qq.com/s/yoCVFWlqReUHx1Wmo0-rtw
-
-强大的姿势感知模型用于姿势不变的人脸识别
-
-https://mp.weixin.qq.com/s/MEB-qLGiOKcvdee-vlsjYw
-
-改进的阴影抑制用于光照鲁棒的人脸识别

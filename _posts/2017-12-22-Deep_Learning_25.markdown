@@ -318,6 +318,10 @@ https://mp.weixin.qq.com/s/2I8A_-utI4DqeDXJwwX4UQ
 
 人脸反欺诈活体检测综述
 
+https://mp.weixin.qq.com/s/8q2gk9ruVw4yxf72mgZkww
+
+CVPR2020人脸防伪检测挑战赛冠军方案开源
+
 ## DeepFace
 
 《DeepFace: Closing the Gap to Human-Level Performance in Face Verification》
@@ -405,27 +409,3 @@ https://mp.weixin.qq.com/s/__b-7Cl482taXwIVb_9vwQ
 https://mp.weixin.qq.com/s/eZ78biXN-mVw3s9Ky_LBZg
 
 如何走近深度学习人脸识别？你需要这篇超长综述
-
-https://mp.weixin.qq.com/s/tum24mzS2cUiKW87a1weFA
-
-人脸识别全面总结：从传统方法到深度学习
-
-https://mp.weixin.qq.com/s/bFnuGu4xLJiRfANi0Rkduw
-
-人脸识别的前世今生：从人工特征的百花齐放到深度学习的一统江湖
-
-https://zhuanlan.zhihu.com/p/32702868
-
-人脸检测背景介绍和发展现状
-
-https://zhuanlan.zhihu.com/p/69777256
-
-简述人脸识别开发原理。这篇文章对传统算法做了一个很好的总结。
-
-https://zhuanlan.zhihu.com/p/79863225
-
-人脸识别特征介绍以及难题概括
-
-https://mp.weixin.qq.com/s/QvmHO_fulTtYJYB4MdoKGw
-
-初学深度学习人脸识别和验证必读文章
