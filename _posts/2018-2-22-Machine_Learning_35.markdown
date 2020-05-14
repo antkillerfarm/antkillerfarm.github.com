@@ -319,3 +319,7 @@ https://mp.weixin.qq.com/s/l3790PuutrOF27RRmVqJhQ
 https://mp.weixin.qq.com/s/n_LY6mmJRH5k_cubYOTq1A
 
 模型剪枝有哪些关键技术，如何对其进行长期深入学习
+
+https://zhuanlan.zhihu.com/p/138059904
+
+一文看懂深度学习模型压缩和加速

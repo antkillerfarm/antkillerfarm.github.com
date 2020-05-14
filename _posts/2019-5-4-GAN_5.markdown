@@ -64,6 +64,10 @@ https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247492415&idx=1&sn=a359e7
 
 InfoGAN：一种无监督生成方法
 
+https://zhuanlan.zhihu.com/p/140544756
+
+InfoGAN与betaVAE
+
 # ProGAN
 
 论文：
