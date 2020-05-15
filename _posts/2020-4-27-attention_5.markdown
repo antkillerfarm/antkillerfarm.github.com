@@ -394,6 +394,10 @@ https://www.cnblogs.com/gczr/p/12874409.html
 
 Sentence-BERT: 一种能快速计算句子相似度的孪生网络
 
+https://mp.weixin.qq.com/s/0hUNG6tC-hlfyTJtuzwU5w
+
+NLP中的Mask全解
+
 # Attention进阶
 
 https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ

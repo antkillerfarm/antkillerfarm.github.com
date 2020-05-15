@@ -232,6 +232,10 @@ https://mp.weixin.qq.com/s/f6SY7Me9Ls3AZNxK0rHz7g
 
 密码加密时的加盐（salt）是什么
 
+https://mp.weixin.qq.com/s/isNd6ByZKdMjFtFL8LOVGA
+
+什么？用5G需要换SIM卡？！
+
 # 机器人/无人驾驶参考资源+
 
 https://zhuanlan.zhihu.com/p/109900137

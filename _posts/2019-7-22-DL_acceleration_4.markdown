@@ -236,6 +236,10 @@ https://mp.weixin.qq.com/s/xnszH9WSKGBwqtHUuYua1g
 
 混合精度训练，提速，减内存
 
+https://mp.weixin.qq.com/s/YImszcJDsvw5ygo2wCj3Hw
+
+模型量化的核心技术点有哪些，如何对其进行长期深入学习
+
 # 模型压缩与加速
 
 对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。

@@ -26,6 +26,14 @@ https://mp.weixin.qq.com/s/iGhYxBLdGHPydVi2FgkNtg
 
 YOLO系列：V1,V2,V3,V4简介
 
+https://mp.weixin.qq.com/s/E5TS0NuSWCWmxrJnN8AUKA
+
+想读懂YOLOV4，你需要先了解下列技术(一)
+
+https://mp.weixin.qq.com/s/5usz-wraHArK6_HcE4RuZw
+
+想读懂YOLOV4，你需要先了解下列技术(二)
+
 # One-stage vs. Two-stage
 
 虽然我们在概述一节已经提到了One-stage和Two-stage的概念。但鉴于这个概念的重要性，在介绍完主要的目标检测网络之后，很有必要再次总结一下。

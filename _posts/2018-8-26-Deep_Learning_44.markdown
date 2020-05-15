@@ -371,3 +371,7 @@ https://mp.weixin.qq.com/s/D57jP5EwIx4Y1n4mteGOjQ
 https://mp.weixin.qq.com/s/VHRV1Z6F8-3o6b-3v-5_BA
 
 深度时空网络、记忆网络与特征表达学习在CTR预估中的应用
+
+https://mp.weixin.qq.com/s/j34nJGomvR23ZJiqIFMoAQ
+
+推荐系统中稀疏特征Embedding的优化表示方法

@@ -56,6 +56,10 @@ https://mp.weixin.qq.com/s/Q1Ovl1LrT5Y6amVqlYpdbA
 
 基于GEMM实现的CNN底层算法被改？Google提出全新间接卷积算法
 
+https://jackwish.net/2019/gemm-optimization.html
+
+通用矩阵乘（GEMM）优化算法
+
 ## CNN的反向传播算法
 
 由于卷积和池化两层，不是一般的神经网络结构。因此CNN的反向传播算法实际上也是很有技巧的。

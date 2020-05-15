@@ -222,6 +222,10 @@ https://mp.weixin.qq.com/s/1T5Iv87JRVdTS66yAzs-DQ
 
 IJCAI获奖团队答辩干货独家放送
 
+https://mp.weixin.qq.com/s/3cER2nr7oiF0IrqDem3bkQ
+
+时间序列异常检测—节假日效应的应对之道
+
 # Redis
 
 REmote DIctionary Server(Redis) 是一个由Salvatore Sanfilippo写的key-value存储系统。

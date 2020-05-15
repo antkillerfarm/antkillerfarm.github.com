@@ -118,6 +118,10 @@ https://mp.weixin.qq.com/s/fTyaRMXtw2Hz99WKJ7WWfQ
 
 因果图，Causal Graphs，52页ppt
 
+https://mp.weixin.qq.com/s/LpUj_nyxK0_V2edcucJ2iQ
+
+概率图模型笔记（PART I）
+
 # HMM
 
 ![](/images/article/HMM.png)

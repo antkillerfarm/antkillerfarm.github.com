@@ -173,7 +173,7 @@ SRCNN（Super-Resolution CNN）是汤晓鸥小组的Chao Dong的作品。
 >吐槽一下，这种表格属于论文必须有，但是却没什么营养的部分，且不乏造假的例子。原因很简单，一个idea，如果没有好效果，paper连发都发不了。但是，没有好效果的idea，未必没有价值，不说是否能启发人们的思维，至少能让后来者，不用再掉到同一个坑里。   
 >比如化学领域，失败的实验远远多于成功的实验。在计算能力不发达的时代，人们主要关注成功的案例，但现在大家逐渐意识到：失败的案例才是更大的财富。
 
-这里对其中的指标做一个简介。
+这里对其中的指标IQA（image quality assessment）做一个简介。
 
 **PSNR（Peak Signal to Noise Ratio，峰值信噪比）**
 
@@ -206,6 +206,10 @@ $$MSSIM(X,Y)=\frac{1}{N}\sum_{k=1}^NSSIM(x_k,y_k)$$
 需要指出的是，PSNR和SSIM都是一些物理指标，它和人眼的视觉感受有一定的差异，不见得指标差的图就一定不如指标好的图（比如SRGAN）。
 
 主观得分一般采用MOS（mean opinion score）作为评价指标。
+
+其他指标参见论文：
+
+《Comparison of Image Quality Models for Optimization of Image Processing Systems》
 
 参考：
 

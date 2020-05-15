@@ -176,6 +176,10 @@ https://mp.weixin.qq.com/s/XZyOXfqvq7bJ1_2eUPknAA
 
 千年锈色耐人寻——古代铜锡铅合金锈蚀谜题
 
+https://mp.weixin.qq.com/s/v_6w1XOs5iqnoZ-y04B3XQ
+
+一个只涉及三个电子的化学反应居然这么复杂？
+
 ## 化学工业
 
 https://wallstreetcn.com/articles/250536

@@ -387,3 +387,7 @@ https://zhuanlan.zhihu.com/p/96025520
 https://mp.weixin.qq.com/s/iLAE_WR-rQrqd4dtYWB_gA
 
 史上最全GAN综述2020版：算法、理论及应用
+
+https://mp.weixin.qq.com/s/4CPfejPrAhJuYMgSj6aGsw
+
+生成式对抗网络(GANs)最新2020综述，41页pdf阐述GAN训练、挑战、解决方案和未来方向

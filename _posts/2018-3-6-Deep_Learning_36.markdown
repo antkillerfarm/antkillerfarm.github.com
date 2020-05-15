@@ -348,6 +348,10 @@ https://mp.weixin.qq.com/s/OALGxuvUdQMbsK1k4g2V7Q
 
 遮挡也能识别？地平线提出用时序信息提升行人检测准确度
 
+https://mp.weixin.qq.com/s/2v-Y_-_si6_dxq3cICy-lg
+
+疫情蔓延让这项CV技术突然火了，盘点开源代码
+
 # 人脸检测/识别+
 
 https://mp.weixin.qq.com/s/PsToV8Z17tRzXW_AbaMNmg

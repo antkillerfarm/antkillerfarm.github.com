@@ -176,6 +176,10 @@ https://mp.weixin.qq.com/s/q2XL-_XoRLL1xLzGmzlo6A
 
 分布式快照算法: Chandy-Lamport
 
+https://zhuanlan.zhihu.com/p/130332285
+
+分布式一致性算法-Paxos、Raft、ZAB、Gossip
+
 ## 参考
 
 https://mp.weixin.qq.com/s/ActS6PxbtZGqPb0jOn0iFg

@@ -112,7 +112,15 @@ $$P(x_A,x_B|x_C)=P(x_A|x_C)P(x_B|x_C)$$
 
 Maximum Entropy Markov Model是一种判别模型。
 
-![](/images/img3/)
+![](/images/img3/HMM.jpg)
+
+上图是HMM的概率图表示。其中，i表示状态节点，o表示观测节点。从中可以看出，$$o_t$$的状态，只取决于$$i_t$$，而$$i_t$$的状态，只取决于$$i_{t-1}$$的状态。
+
+![](/images/img3/MEMM.jpg)
+
+上图是MEMM的概率图表示。
+
+参考：
 
 http://www.cnblogs.com/en-heng/p/6201893.html
 
