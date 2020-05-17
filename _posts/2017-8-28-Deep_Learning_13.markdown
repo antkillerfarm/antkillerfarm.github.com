@@ -188,6 +188,10 @@ https://www.cnblogs.com/guoyaohua/p/9229190.html
 
 DSSM：深度语义匹配模型（及其变体CLSM、LSTM-DSSM）
 
+https://zhuanlan.zhihu.com/p/141545370
+
+深度学习语义相似度系列：Ranking Similarity
+
 ## CDSSM
 
 《Learning semantic representations using convolutional neural networks for web search》
