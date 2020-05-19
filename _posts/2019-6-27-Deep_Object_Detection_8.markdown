@@ -154,6 +154,10 @@ https://mp.weixin.qq.com/s/LtXylKTKsHdjMPw9Q1HyXA
 
 优于MobileNet、YOLOv2：移动设备上的实时目标检测系统Pelee
 
+https://mp.weixin.qq.com/s/xpk9LhsZ3dRMvqR6Uc5jeg
+
+Pelee：移动端实时检测骨干网络
+
 https://mp.weixin.qq.com/s/Gq3bflJq59Tx-nDCvbweNA
 
 无需预训练分类器，清华&旷视提出专用于目标检测的骨干网络DetNet

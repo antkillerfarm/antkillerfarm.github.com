@@ -10,7 +10,7 @@ Graph Neural Networks是2019年以来比较热门的方向。然而由于没有�
 
 ![](/images/img3/GNN.jpg)
 
-由于Graph Neural Networks和图表示学习(Represent Learning for Graph)有很密切的联系。因此章节编排上如无特殊说明，不对两者的内容加以区分。
+由于Graph Neural Networks和图表示学习(Represent Learning for Graph)有很密切的联系。因此，这里的章节编排上如无特殊说明，不对两者的内容加以区分。
 
 ## 教程
 

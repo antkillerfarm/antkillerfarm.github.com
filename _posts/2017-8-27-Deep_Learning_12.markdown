@@ -122,9 +122,43 @@ https://mp.weixin.qq.com/s/ao7gOfMYDJDPsNMVV9-Dlg
 
 后ResNet时代：SENet与SKNet
 
+# Non-local
+
+https://zhuanlan.zhihu.com/p/33345791
+
+Non-local neural networks
+
+https://zhuanlan.zhihu.com/p/109514384
+
+医学图像分割的Non-local U-Nets
+
 https://mp.weixin.qq.com/s/Tox7jEFNHFHZQ-KdojMIpA
 
 GCNet：当Non-local遇见SENet
+
+https://zhuanlan.zhihu.com/p/48198502
+
+Non-local Neural Networks论文笔记
+
+https://mp.weixin.qq.com/s/zHZO1pmY8PCoI9vkDOaUgw
+
+CCNet--于"阡陌交通"处超越恺明的Non-local
+
+https://mp.weixin.qq.com/s/6q2q9OVhOYjk4ZrhLvAdkA
+
+Non-local Neural Networks及自注意力机制思考
+
+https://mp.weixin.qq.com/s/v4IK4gJvZ3J03Ikrujiyhw
+
+视觉注意力机制：Non-local模块与Self-attention的之间的关系与区别？
+
+https://mp.weixin.qq.com/s/EElEYaDbfdxlGWL_jBEwzQ
+
+Non-local与SENet、CBAM模块融合：GCNet、DANet
+
+https://mp.weixin.qq.com/s/lZxamQryotfLTKpRJKaA5Q
+
+Non-local模块如何改进？来看CCNet、ANN
 
 # 姿态/行为检测
 
@@ -283,27 +317,3 @@ https://mp.weixin.qq.com/s/nys9R6xCJXt0vG06gnQzFQ
 https://mp.weixin.qq.com/s/EuT-4_eEtIVKh6QdLDbohg
 
 解读小米MoGA：超过MobileNetV3的移动端GPU敏感型搜索
-
-https://mp.weixin.qq.com/s/L49cqZ2PXP-x4Y6xBJG5cQ
-
-旷视研究院提出MetaPruning：基于元学习和AutoML的模型压缩新方法
-
-https://mp.weixin.qq.com/s/F_p414ezQ0RDhPnZj36SUA
-
-网络剪枝中的AutoML方法
-
-https://zhuanlan.zhihu.com/c_151876233
-
-如何Finetune一个小网络到移动端（时空性能分析篇）
-
-https://mp.weixin.qq.com/s/kU0_BuQW8VQihUwBuZ90cA
-
-发布可伸缩超网SCARLET，小米AutoML团队NAS三部曲杀青
-
-https://mp.weixin.qq.com/s/ZfW-jDSo6uaaqdmJtBizOA
-
-从模型精简，硬件实现，到模型剪枝
-
-https://mp.weixin.qq.com/s/5ywMyedmplCSLzWlnoFDSQ
-
-模型剪枝技术原理及其发展现状和展望

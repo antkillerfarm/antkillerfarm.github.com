@@ -377,3 +377,7 @@ https://mp.weixin.qq.com/s/5LUI7ChqARFT2PUom1ue9w
 https://mp.weixin.qq.com/s/824-TbpwJz9n_jT9uuOE8g
 
 中小企业如何做好推荐系统？
+
+https://mp.weixin.qq.com/s/6oyETsNIEdP9gz0U-UjNOA
+
+搜索相关性算法在DiDi Food中的探索

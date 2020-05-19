@@ -6,6 +6,24 @@ category: resource
 
 # NLP参考资源
 
+## 句法分析（续）
+
+https://mp.weixin.qq.com/s/XP0V6v__O4wxpjPSC5O7vw
+
+一文了解成分句法分析
+
+https://mp.weixin.qq.com/s/DN_PeqF1JUZfIl0kNCwFng
+
+联合汉语分词和依存句法分析的统一模型：当前效果最佳
+
+https://mp.weixin.qq.com/s/Vy7OxAojvgndgGkvmFrBKw
+
+61页slides理解句法分析过程
+
+https://mp.weixin.qq.com/s/CxpyMUPnKFCTpw6WgG0kqg
+
+依存句法分析的任务以及形式化定义
+
 ## 阅读理解
 
 https://mp.weixin.qq.com/s/kdbaMyDLC5YaOMqTAOyLAg
@@ -381,19 +399,3 @@ https://mp.weixin.qq.com/s/Y-_Y8PLBRLE3wn1CPRogsw
 https://mp.weixin.qq.com/s/FZOgJR5aKl4fV3xCX2zkwA
 
 主题模型如何帮助法律部门提取PDF摘要及可视化
-
-http://mp.weixin.qq.com/s/Rw2Bz8k3wpcY-WCO2AJcpg
-
-如何解决90％的自然语言处理问题：分步指南奉上
-
-https://mp.weixin.qq.com/s/2Y66uCi1qS0VTaizyCg3cA
-
-阿里小蜜背后的技术秘密
-
-http://mp.weixin.qq.com/s/OArqUTh0ZLGBTX71K7UUnw
-
-记忆网络之Gated End-to-End Memory Networks
-
-https://mp.weixin.qq.com/s/GaRL8VFWfbKOwz2jPzvN5A
-
-基于深度学习技术的AI输入法引擎

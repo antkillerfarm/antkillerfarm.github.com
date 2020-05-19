@@ -220,3 +220,7 @@ https://zhuanlan.zhihu.com/p/33088748
 https://mp.weixin.qq.com/s/9hoM_yF96XxSbQHEP6oasw
 
 怎样生成语言才能更自然，斯坦福提出超越Perplexity的评估新方法
+
+https://mp.weixin.qq.com/s/TnAZUjFSn7ATtRmBexJlXw
+
+文本生成评价方法 BLEU ROUGE CIDEr SPICE Perplexity METEOR

@@ -314,64 +314,10 @@ https://mp.weixin.qq.com/s/-CTVyKWtdTK0RIfzzPVyNQ
 
 分布式与高效深度学习，140页ppt详述深度学习压缩与联邦学习训练技术进展
 
-# NLP参考资源
+https://mp.weixin.qq.com/s/nTBuYuW7h9wZYuo3w1xGmQ
 
-https://mp.weixin.qq.com/s/gJFwWnKn7BV_BcADu_vJCg
+分布式训练的方案和效率对比
 
-谷歌语义文本最新进展+两个开源新模型
+https://mp.weixin.qq.com/s/LOTQfD9KKtAq0zz4rObCGA
 
-https://mp.weixin.qq.com/s/f8NoGxirMkTzwLERKon1Vw
-
-北京大学提出基于CNN的学术论文自动评分模型
-
-https://mp.weixin.qq.com/s/ILn-XqAQ_DYCFsiRgqYBrQ
-
-微软亚洲研究院院长副院长周明：语言智能的进展
-
-https://mp.weixin.qq.com/s/A4r01mV-X8CTJy3vPa9BPw
-
-对话式交互技术原理及流程揭秘
-
-https://mp.weixin.qq.com/s/JoYmVC_9bw3NHK6WXggAcA
-
-通用句子语义编码器，谷歌在语义文本相似性上的探索
-
-https://mp.weixin.qq.com/s/foknrQWnBxc4b0bpkFKSdQ
-
-上海科技大学ACL2018高分论文：混合高斯隐向量文法
-
-https://zhuanlan.zhihu.com/p/37621168
-
-微博关键词抽取：借力评论信息
-
-https://mp.weixin.qq.com/s/znafd7_N_TrQBFWvxYM_hg
-
-基于强化学习的中文零指代消解模型
-
-https://mp.weixin.qq.com/s/2QQ_lWUCExvdiXn2wJJeRQ
-
-地理文本处理技术在高德的演进(上)
-
-https://mp.weixin.qq.com/s/9GuyWUZ_qCH5Q_rin1yQwg
-
-地理文本处理技术在高德的演进(下)
-
-https://mp.weixin.qq.com/s/-zDMPfR1wWSV9A7HDzJlZA
-
-事件抽取及推理(上)
-
-https://mp.weixin.qq.com/s/GtO3Zf87BTbBQqHAtgAmlA
-
-事件抽取及推理(下)
-
-https://mp.weixin.qq.com/s/tvfCW7Lwkug9ILKpJuMnUA
-
-上下文敏感的改写式回复生成模型
-
-https://mp.weixin.qq.com/s/6IO-pAP6Jcct5W-tReaLtw
-
-基于深度强化学习的远程监督数据集的降噪
-
-https://zhuanlan.zhihu.com/p/26461511
-
-关于WordNet，我的一些用法和思路
+EB级系统空中换引擎：阿里调度执行框架如何全面升级？（DAG 2.0）

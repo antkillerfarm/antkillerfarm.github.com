@@ -4,7 +4,45 @@ title:  Attention（六）——Attention进阶
 category: Attention 
 ---
 
+# BERT
+
+https://mp.weixin.qq.com/s/CdjNQKSNuklVUsXe4InSoA
+
+FastBERT：放飞BERT的推理速度
+
+https://zhuanlan.zhihu.com/p/132361501
+
+BERT是如何分词的
+
+https://mp.weixin.qq.com/s/Tld9V1jdmWs06zNxiJNkZg
+
+BART&MASS自然语言生成任务上的进步
+
+https://mp.weixin.qq.com/s/G995ulqe6Ifxml_AJqapAw
+
+BERT在小米NLP业务中的实战探索
+
+https://www.cnblogs.com/gczr/p/12874409.html
+
+Sentence-BERT: 一种能快速计算句子相似度的孪生网络
+
+https://mp.weixin.qq.com/s/0hUNG6tC-hlfyTJtuzwU5w
+
+NLP中的Mask全解
+
 # Attention进阶
+
+https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ
+
+深度学习注意力机制-Attention in Deep learning-附101页PPT
+
+https://mp.weixin.qq.com/s/_mBa-GTdILrvluJtegz8fw
+
+南洋理工大学：注意力神经网络，Attention Neural Networks，78页ppt
+
+https://mp.weixin.qq.com/s/pKxqPB9qIGmE_PslPa6EyA
+
+长文详解Attention的前世今生
 
 https://mp.weixin.qq.com/s/eq1iTyKguQm5t6Xoc7KUgw
 
@@ -133,10 +171,6 @@ https://zhuanlan.zhihu.com/p/33158614
 https://mp.weixin.qq.com/s/tVKEJ9rqlMaZ9bx6ngIelw
 
 自注意力机制在计算机视觉中的应用
-
-https://mp.weixin.qq.com/s/6q2q9OVhOYjk4ZrhLvAdkA
-
-Non-local Neural Networks及自注意力机制思考
 
 https://mp.weixin.qq.com/s/-gAISWjSiG6ccPuOPAEg3A
 

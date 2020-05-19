@@ -375,3 +375,7 @@ https://mp.weixin.qq.com/s/VHRV1Z6F8-3o6b-3v-5_BA
 https://mp.weixin.qq.com/s/j34nJGomvR23ZJiqIFMoAQ
 
 推荐系统中稀疏特征Embedding的优化表示方法
+
+https://mp.weixin.qq.com/s/1xVPRIVwQQJfEen0RiNYvg
+
+谈谈推荐系统中的用户行为序列建模最新进展

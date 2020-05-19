@@ -304,6 +304,10 @@ https://zhuanlan.zhihu.com/p/42345854
 
 如何基于gluon训练一个强有力的Reid Baseline
 
+https://www.zhihu.com/question/392035070
+
+如何看待亚马逊AI李沐团队大批人员离职?
+
 # TVM
 
 TVM是陈天奇领导的一个DL加速框架项目。它处于DL框架（如tensorflow、pytorch）和硬件后端（如CUDA、OpenCL）之间，兼顾了前者的易用性和后者的执行效率。

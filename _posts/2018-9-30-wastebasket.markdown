@@ -377,3 +377,11 @@ https://www.zhihu.com/question/30137203/answer/303210942
 https://www.zhihu.com/question/30137203/answer/303210942
 
 咸海覆灭
+
+----
+
+古陆核（craton）是指大陆地壳上长期稳定的构造单元 ，即大陆地壳中长期不受造山运动影响，只受造陆运动发生过变形的相对稳定部分，常与造山带（Orogen）对应。
+
+https://mp.weixin.qq.com/s/-TZH-zVnHcoffyUzhEzwaA
+
+中国为什么地震频发？

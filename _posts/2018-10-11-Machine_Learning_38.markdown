@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十八）——PageRank算法, 社交网络, 数据清洗, 三门问题
+title:  机器学习（三十八）——PageRank算法, 社交网络
 category: ML 
 ---
 
@@ -132,6 +132,24 @@ $$W(S_i,S_j)=\frac{|\{w_k|w_k\in S_i \& w_k\in S_j\}|}{\log(|S_i|)+\log(|S_j|)}$
 
 上面说的是关键词的计算方法。计算自动摘要的时候，将句子定义为结点，并认为全部句子都是相邻的即可。自动摘要所用的权重函数，一般采用BM25算法。
 
+## HITS
+
+HITS算法和PageRank算法可以看作兄弟算法。因为他们是同时期提出的对网页进行排序的两种算法。并且他们的原理有相似之处，都考虑了权威性网站的作用。
+
+但这两种算法也有区别：
+
+- HITS计算每个网页的权威值和枢纽值，将二者分开考虑。而PageRank只计算PageRank值。
+
+- HITS只处理与关键词相关的网页集合，范围很小。而PageRank是全局算法，会计算互联网中所有网页的PageRank值。
+
+因为上一点的缘故，HITS算法更适合部署在客户端，而PageRank更适合部署在服务器端。
+
+参考：
+
+https://mp.weixin.qq.com/s/9g174YP-M2HWsPR-9ikgcg
+
+什么是HITS算法
+
 ## 参考
 
 http://www.cnblogs.com/rubinorth/p/5799848.html
@@ -250,38 +268,6 @@ https://mp.weixin.qq.com/s/2aKc4yM0b52X-SViGQycwA
 
 大规模网络的社区检测和排序问题综述
 
-# 数据清洗
+https://mp.weixin.qq.com/s/_HOdAo2ClhJqbUrDvsc-3w
 
-https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g
-
-数据挖掘中的数据清洗方法大全
-
-https://mp.weixin.qq.com/s/FHdo2DTapoTryA-hOM-y_w
-
-还在为数据清洗抓狂？这里有一个简单实用的清洗代码集
-
-https://mp.weixin.qq.com/s/r7ngZOM9tO-_OSfvs2aDJw
-
-数据清洗&预处理入门完整指南
-
-https://mp.weixin.qq.com/s/r4ycLnjOl5hSPBMwKpnmsQ
-
-如何打造高质量的NLP数据集
-
-# 三门问题
-
-https://www.zhihu.com/question/26709273/
-
-蒙提霍尔问题（又称三门问题、山羊汽车问题）的正解是什么？
-
-https://zhuanlan.zhihu.com/p/21461266
-
-数学杂谈——“三门问题”：Monty Hall Problem
-
-https://zhuanlan.zhihu.com/p/23338174
-
-蒙提霍尔问题/三门问题（Monty Hall problem）
-
-https://mp.weixin.qq.com/s/xHm4AjopGKSUE0-uAk5IHg
-
-用概率论告诉你：直觉到底有多不靠谱。包括了三门问题和本福特定律。
+Philip S. Yu 团队最新综述！社区发现的深度学习方法：进展、挑战、机遇

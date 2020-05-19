@@ -337,3 +337,7 @@ https://mp.weixin.qq.com/s/ptgHNil1gqrH2p-x3UZoFw
 https://mp.weixin.qq.com/s/u44neSzF2Iqyv-i1Fc4lsQ
 
 脱胎换骨的生成模式：强化学习重排
+
+https://mp.weixin.qq.com/s/nk-X88bF6LiAywnqRz3REQ
+
+Youtube推荐RL首弹，基于Top-K的Off-Policy矫正解决推荐中的信息茧房困境

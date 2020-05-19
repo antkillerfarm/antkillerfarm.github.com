@@ -227,6 +227,10 @@ https://www.cnblogs.com/zzd0916/p/11977995.html
 
 浏览器工作原理与实践
 
+https://mp.weixin.qq.com/s/MwWC0doO_sp_eRkInbE0hw
+
+今天网站都变成灰色了，这其中是怎么实现的？
+
 # Python
 
 https://mp.weixin.qq.com/s/5YWAgp8LKi5q_NDrNUtyGQ

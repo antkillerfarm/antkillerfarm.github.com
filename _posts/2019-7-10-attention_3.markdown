@@ -160,6 +160,14 @@ https://mp.weixin.qq.com/s/S_RELwKsqInvacTxdwJBPg
 
 浅谈Transformer模型中的位置表示
 
+https://mp.weixin.qq.com/s/_lEOcyAovKMJYxBYsQIWUQ
+
+万字长文带你一览ICLR2020最新Transformers进展（上）
+
+https://mp.weixin.qq.com/s/4KCcFHBEYJ3nWaHplqVRNA
+
+万字长文带你一览ICLR2020最新Transformers进展（下）
+
 # 预训练语言模型进化史
 
 ![](/images/img3/BERT.jpg)
@@ -341,11 +349,3 @@ fine-tuning是针对实际业务数据进行的微调。下图展示了在若干
 值得一提的是，GPT 2.0的实践表明：海量的无监督训练已经能达到很好的效果，fine-tuning只是锦上添花而已。
 
 事实上，在CV领域也可以看到，通过海量图片训练出的预训练网络，比随机初始化有效率多了。
-
-## input embeddings
-
-BERT对于input embeddings也做了改进。（如下图所示）
-
-![](/images/img3/BERT_4.png)
-
-其中，Segment Embeddings用于区分输入中的不同句子。这一方案的使用，使得输入文本不再局限于一句话之内，从而大大增加了输入文本的长度，对于获得文本的全局信息，很有好处。

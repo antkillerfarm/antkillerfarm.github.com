@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十五）——Probabilistic Robotics, Kalman filters, 图论
+title:  机器学习（三十五）——Probabilistic Robotics, Kalman filters, 图论, 数据清洗, 三门问题
 category: ML 
 ---
 
@@ -270,60 +270,38 @@ https://mp.weixin.qq.com/s/dTI3BdgixVTAFsnxtKjq0A
 
 常见图算法介绍
 
-# 模型压缩与加速+
+# 数据清洗
 
-https://mp.weixin.qq.com/s/8jyQ_7DYn7lHMcAWokKbcA
+https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g
 
-超Mask RCNN速度4倍，仅在单个GPU训练的实时实例分割算法
+数据挖掘中的数据清洗方法大全
 
-https://mp.weixin.qq.com/s/TC_Ju2vuKDP6d538v2F8CQ
+https://mp.weixin.qq.com/s/FHdo2DTapoTryA-hOM-y_w
 
-剪枝需有的放矢，快手&罗切斯特大学提出基于能耗建模的模型压缩
+还在为数据清洗抓狂？这里有一个简单实用的清洗代码集
 
-https://mp.weixin.qq.com/s/UkqwPBYgYQuIB9_jGMt2QQ
+https://mp.weixin.qq.com/s/r7ngZOM9tO-_OSfvs2aDJw
 
-Rocket Training: 一种提升轻量网络性能的训练方法
+数据清洗&预处理入门完整指南
 
-https://mp.weixin.qq.com/s/xCzS7sYMFmk5K4ClB1I2YQ
+https://mp.weixin.qq.com/s/r4ycLnjOl5hSPBMwKpnmsQ
 
-Uber提出SBNet：利用激活的稀疏性加速卷积网络
+如何打造高质量的NLP数据集
 
-https://mp.weixin.qq.com/s/6Wj0Y4y30BVA75WrU4oZbQ
+# 三门问题
 
-SBNet: 提高自动驾驶系统的感知效率
+https://www.zhihu.com/question/26709273/
 
-https://mp.weixin.qq.com/s/HXxnhMjAchxKSidu45kOeg
+蒙提霍尔问题（又称三门问题、山羊汽车问题）的正解是什么？
 
-网络压缩最新进展：2019年最新文章概览
+https://zhuanlan.zhihu.com/p/21461266
 
-https://mp.weixin.qq.com/s/Bl7-hGIxZMsHxscqb7DnMA
+数学杂谈——“三门问题”：Monty Hall Problem
 
-200～1000+fps！谷歌公布亚毫秒级人脸检测算法BlazeFace，面向移动GPU
+https://zhuanlan.zhihu.com/p/23338174
 
-https://mp.weixin.qq.com/s/l2_N-PXjDMCqSRwYxU4BEA
+蒙提霍尔问题/三门问题（Monty Hall problem）
 
-模型加速概述与模型裁剪算法技术解析
+https://mp.weixin.qq.com/s/xHm4AjopGKSUE0-uAk5IHg
 
-https://mp.weixin.qq.com/s/af-z73asc-PmpEsI_yEulA
-
-北邮提出新AI模型压缩算法，显著降低计算复杂度
-
-https://mp.weixin.qq.com/s/AOI2LUjiKPUJFE0D7zX0Hw
-
-谷歌新研究：基于数据共享的神经网络快速训练方法
-
-https://mp.weixin.qq.com/s/Q0XyKIrbOIrA3YsYHmwK1Q
-
-移动端高效率的分组网络都发展到什么程度了？
-
-https://mp.weixin.qq.com/s/l3790PuutrOF27RRmVqJhQ
-
-面对千万级推荐，如何压缩模型最高效？这是腾讯看点新框架
-
-https://mp.weixin.qq.com/s/n_LY6mmJRH5k_cubYOTq1A
-
-模型剪枝有哪些关键技术，如何对其进行长期深入学习
-
-https://zhuanlan.zhihu.com/p/138059904
-
-一文看懂深度学习模型压缩和加速
+用概率论告诉你：直觉到底有多不靠谱。包括了三门问题和本福特定律。

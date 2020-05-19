@@ -361,3 +361,7 @@ https://linux.cn/article-8290-1.html
 https://mp.weixin.qq.com/s/IucIsbJPo4eUUopV8xNN9w
 
 图解Linux程序的链接原理
+
+https://mp.weixin.qq.com/s/zBtdhjAOjwcJbGluccwOlA
+
+我和面试官之间关于操作系统的一场对弈！写了很久，希望对你有帮助！

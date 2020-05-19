@@ -50,7 +50,45 @@ https://mp.weixin.qq.com/s/SOaA9XNnymLgGgJ5JNSdBg
 
 对比学习（Contrastive Learning）相关进展梳理
 
-# 语义分割进阶（续）
+# Graph NN+
+
+https://mp.weixin.qq.com/s/_vbcLre5HIrOGbAjTzLFjA
+
+动态网络表征学习在推荐领域的创新与实践
+
+https://zhuanlan.zhihu.com/p/139359188
+
+关于GCN，我有三种写法
+
+https://mp.weixin.qq.com/s/QF9-Pz2X4qToObGWwViFBQ
+
+EGES：阿里在图嵌入领域中的探索
+
+https://mp.weixin.qq.com/s/WnF-fqQyr2VNqr75Jzoqsw
+
+Diff Pool：网络图的层次化表达
+
+https://mp.weixin.qq.com/s/8kCKqM3yuohc4xOoFd8hGg
+
+Heterogeneous Graph Neural Network
+
+# 语义分割进阶+
+
+https://mp.weixin.qq.com/s/HJzbMoCa7GenNm78sz7YAg
+
+全景分割是什么？
+
+https://mp.weixin.qq.com/s/PUHytS_nLKPjlrv8RYxo8A
+
+一文看懂实时语义分割
+
+https://zhuanlan.zhihu.com/p/77834369
+
+语义分割中的Attention和低秩重建
+
+https://mp.weixin.qq.com/s/wAWB2SLaqD2SmP9-j0Ut7g
+
+速度提升一倍，无需实例掩码预测即可实现全景分割
 
 https://mp.weixin.qq.com/s/LZNla-NKAu8wmi-OaJD8yA
 

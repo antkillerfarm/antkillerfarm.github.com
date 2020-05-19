@@ -6,6 +6,14 @@ category: Attention
 
 # BERT
 
+## input embeddings
+
+BERT对于input embeddings也做了改进。（如下图所示）
+
+![](/images/img3/BERT_4.png)
+
+其中，Segment Embeddings用于区分输入中的不同句子。这一方案的使用，使得输入文本不再局限于一句话之内，从而大大增加了输入文本的长度，对于获得文本的全局信息，很有好处。
+
 ## NMT
 
 BERT的论文并未提到执行NMT任务时的网络结构，但从下面的论文：
@@ -317,31 +325,3 @@ $$p(x)=\prod_{x\in Mask}p(x_t|context)$$
 - 缺点：由于训练中采用了MASK标记，导致预训练与微调阶段不一致的问题。此外对于生成式问题，AE模型也显得捉襟见肘，这也是目前BERT为数不多没有实现大的突破的领域。
 
 - 优点：能够很好的编码上下文语义信息，在自然语言理解(NLU)相关的下游任务上表现突出。
-
-## UniLM
-
-https://mp.weixin.qq.com/s/m_FU4NmjUsvxusRidDb-Xg
-
-UniLM:一种既能阅读又能自动生成的预训练模型
-
-https://mp.weixin.qq.com/s/yyUPqxpfBwUSRbwM6SSAcQ
-
-UniLM论文阅读笔记
-
-https://mp.weixin.qq.com/s/RjeuHXa8O3MzSpTOuOHMkQ
-
-站在BERT肩膀上的NLP新秀们：XLMs、MASS和UNILM
-
-https://mp.weixin.qq.com/s/UEBKSKEkZTbpR49_Rh50Jg
-
-微软统一预训练语言模型UniLM 2.0解读
-
-## 参考
-
-https://www.zhihu.com/question/298203515
-
-如何评价BERT模型？
-
-https://mp.weixin.qq.com/s/Fao3i99kZ1a6aa3UhAYKhA
-
-全面超越人类！Google称霸SQuAD，BERT横扫11大NLP测试

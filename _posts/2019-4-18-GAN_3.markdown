@@ -70,7 +70,7 @@ Inception来源于Google的Inception Net，因为计算这个score需要用到In
 
 ![](/images/img2/mode_collapse.jpg)
 
-假设某个data distribution有两个模式（如上图所示），generator可能就学到一个mode，另一个mode则完全没学到。
+假设某个data distribution有两个模式（如上图所示），generator可能就只学到一个mode，另一个mode则完全没学到。
 
 参考：
 

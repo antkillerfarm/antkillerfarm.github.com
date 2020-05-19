@@ -52,6 +52,10 @@ https://mp.weixin.qq.com/s/qynApDntA9xiGRBQpoIsjQ
 
 FFM：Field-aware Factorization Machines
 
+https://mp.weixin.qq.com/s/Fg9GKw-QLlOskEqX7pl1dA
+
+推荐系统之FM算法原理及实现（附代码）
+
 ## PITF
 
 配对互动张量分解（Pairwise Interaction Tensor Factorization）算法，也是最早由Rendle引入推荐系统领域的。

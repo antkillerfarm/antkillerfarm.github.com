@@ -196,13 +196,17 @@ https://zhuanlan.zhihu.com/p/55193930
 
 Attention U-Net论文笔记
 
-https://zhuanlan.zhihu.com/p/109514384
-
-医学图像分割的Non-local U-Nets
-
 https://mp.weixin.qq.com/s/cumrVJPexV_BtCKoUprrLA
 
 当UNet遇见ResNet会发生什么？
+
+https://mp.weixin.qq.com/s/5rqCc_ozJNNFb1zYs8JOQQ
+
+总结U-Net网络及他的变体
+
+https://zhuanlan.zhihu.com/p/44958351
+
+研习U-Net
 
 # 语义分割进阶
 
@@ -237,6 +241,10 @@ https://mp.weixin.qq.com/s/V4_euZRcyyxeimXAA_waAg
 https://mp.weixin.qq.com/s/M1Oo4ST2aspgZF8UeSUDww
 
 如何妙笔勾檀妆：像素级语义理解
+
+https://www.zhihu.com/question/390783647
+
+语义分割该如何走下去？
 
 https://mp.weixin.qq.com/s/xalo2XtKtzR5tA_dPFzaJw
 
@@ -294,10 +302,6 @@ https://mp.weixin.qq.com/s/1wqguIqDS4FNsS67Yj77Qw
 
 牛津大学&Emotech首次严谨评估语义分割模型对对抗攻击的鲁棒性
 
-https://zhuanlan.zhihu.com/p/48198502
-
-Non-local Neural Networks论文笔记
-
 https://mp.weixin.qq.com/s/EzfvKzs8Ue8i9x9TFgZ-CQ
 
 爱奇艺蒙版AI：弹幕穿人过，爱豆心中坐
@@ -345,10 +349,6 @@ Fast-OCNet:更快更好的OCNet
 https://zhuanlan.zhihu.com/p/56887843
 
 MIT和Google等提出：新全景分割算法DeeperLab
-
-https://mp.weixin.qq.com/s/zHZO1pmY8PCoI9vkDOaUgw
-
-CCNet--于"阡陌交通"处超越恺明的Non-local
 
 https://mp.weixin.qq.com/s/1tohID6SM3weS476XU5okw
 
@@ -405,19 +405,3 @@ https://zhuanlan.zhihu.com/p/67423280
 https://mp.weixin.qq.com/s/XTTzAkgVF-WMJT7IYWxJYg
 
 病理图像的全景分割
-
-https://mp.weixin.qq.com/s/HJzbMoCa7GenNm78sz7YAg
-
-全景分割是什么？
-
-https://mp.weixin.qq.com/s/PUHytS_nLKPjlrv8RYxo8A
-
-一文看懂实时语义分割
-
-https://zhuanlan.zhihu.com/p/77834369
-
-语义分割中的Attention和低秩重建
-
-https://mp.weixin.qq.com/s/wAWB2SLaqD2SmP9-j0Ut7g
-
-速度提升一倍，无需实例掩码预测即可实现全景分割

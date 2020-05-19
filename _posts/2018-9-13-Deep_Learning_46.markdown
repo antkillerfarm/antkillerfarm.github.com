@@ -134,7 +134,11 @@ https://mp.weixin.qq.com/s/nsZ64_7jgugvDlBZoiJ1ZA
 
 UnrealText：基于虚拟场景的真实场景文本图像合成
 
-# Graph NN+
+https://mp.weixin.qq.com/s/Fku4chvC9VX0p7NI8yYc0Q
+
+OCR光学字符识别方法汇总
+
+# Graph NN
 
 https://mp.weixin.qq.com/s/emPDgw_c68JgbpYnem4JvA
 
@@ -419,15 +423,3 @@ https://mp.weixin.qq.com/s/u8XAbOautjZTA7ZhdSBaDA
 https://mp.weixin.qq.com/s/zxFgW6ofimYQ9wlChTK8cw
 
 Recommender System with GNN
-
-https://mp.weixin.qq.com/s/_vbcLre5HIrOGbAjTzLFjA
-
-动态网络表征学习在推荐领域的创新与实践
-
-https://zhuanlan.zhihu.com/p/139359188
-
-关于GCN，我有三种写法
-
-https://mp.weixin.qq.com/s/QF9-Pz2X4qToObGWwViFBQ
-
-EGES：阿里在图嵌入领域中的探索

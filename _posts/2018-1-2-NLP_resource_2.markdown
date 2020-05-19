@@ -384,6 +384,14 @@ https://zhuanlan.zhihu.com/p/113219895
 
 Text Summarization文本摘要与注意力机制
 
+https://zhuanlan.zhihu.com/p/135468859
+
+2015-2019年摘要模型（Summarization Model）发展综述（一）
+
+https://zhuanlan.zhihu.com/p/138282654
+
+2015-2019年摘要模型（Summarization Model）发展综述（二）
+
 ## 句法分析
 
 传统方法主要是PCFG （Probabilistic Context-Free Grammar）。
@@ -403,19 +411,3 @@ http://www.cnblogs.com/CheeseZH/p/5768389.html
 https://mp.weixin.qq.com/s/r-mndw2BKHdVq-jKLinYZQ
 
 别说还不懂依存句法分析
-
-https://mp.weixin.qq.com/s/XP0V6v__O4wxpjPSC5O7vw
-
-一文了解成分句法分析
-
-https://mp.weixin.qq.com/s/DN_PeqF1JUZfIl0kNCwFng
-
-联合汉语分词和依存句法分析的统一模型：当前效果最佳
-
-https://mp.weixin.qq.com/s/Vy7OxAojvgndgGkvmFrBKw
-
-61页slides理解句法分析过程
-
-https://mp.weixin.qq.com/s/CxpyMUPnKFCTpw6WgG0kqg
-
-依存句法分析的任务以及形式化定义

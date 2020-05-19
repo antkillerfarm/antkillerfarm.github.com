@@ -436,21 +436,3 @@ A Tour to LLVM IR（下）
 https://mp.weixin.qq.com/s/4FJzxPyCmakjIU-9xlQmJQ
 
 阁下可知文言编程之精妙？CMU本科生开源文言文编程语言，数天2K星
-
-# NLP参考资源
-
-https://mp.weixin.qq.com/s/vLw-krU2vorr5ZUAPI7VMA
-
-李航：自然语言的现状和发展
-
-https://mp.weixin.qq.com/s/CQDYzRvFqJHPVXDu94pgLA
-
-思必驰和上交大提出口语语义理解新方法：基于对抗多任务学习的半监督训练
-
-https://mp.weixin.qq.com/s/HJDkNw_Fuu1QKEpyHY1Q-w
-
-语义分析的方法简述之文本基本处理
-
-https://mp.weixin.qq.com/s/v8azzXP1Kl5jnRCFpVdBGg
-
-语义分析的方法简述二

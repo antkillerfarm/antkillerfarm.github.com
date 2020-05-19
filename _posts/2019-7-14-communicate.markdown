@@ -346,6 +346,10 @@ https://mp.weixin.qq.com/s/chT6mWmH1_zE-eH1vdB01A
 
 是技术也是艺术 使用geopandas玩转地图可视化
 
+https://mp.weixin.qq.com/s/JMcn3PRcWdT2PpE6PTSzfA
+
+基于geopandas的空间数据分析—geoplot篇(下)
+
 https://mp.weixin.qq.com/s/6wp4rlBODJAkYf3O4O-2GA
 
 SciPy库以及图像高斯模糊实战

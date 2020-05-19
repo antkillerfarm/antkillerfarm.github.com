@@ -38,6 +38,10 @@ https://mp.weixin.qq.com/s/dsxyQLHcOsNIlNAIf8FQfw
 
 Facebook开源相似性搜索类库Faiss，超越已知最快算法8.5倍
 
+https://mp.weixin.qq.com/s/zLBq2VVSAr0AUtozK7qqVA
+
+浅析Faiss在推荐系统中的应用及原理
+
 https://mp.weixin.qq.com/s/3r8c63BOiiYfts9KLkXovw
 
 谷歌发布自然语言框架语义解析器SLING

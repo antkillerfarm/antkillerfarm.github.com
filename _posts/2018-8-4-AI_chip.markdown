@@ -102,6 +102,12 @@ Imagination目前主要的客户是：
 
 https://www.imgtec.com/vision-ai/
 
+参考：
+
+https://mp.weixin.qq.com/s/W7GNhEq-em18V0YjCZ7MBw
+
+被苹果抛弃的芯片供应商，现状如何？
+
 ## Habana
 
 Habana Labs是一家位于以色列特拉维夫和加州圣何塞的无晶圆厂半导体公司，创立于2016年。
@@ -252,19 +258,3 @@ https://mp.weixin.qq.com/s/vncPcczTyqglndeZAgjWfw
 https://www.nextplatform.com/2018/05/10/tearing-apart-googles-tpu-3-0-ai-coprocessor/
 
 Tearing Apart Google’s TPU 3.0 AI Coprocessor
-
-https://mp.weixin.qq.com/s/3DubSQ1D59Z-PCovjHiidQ
-
-TPU(灵魂三问 WHAT? WHY? HOW?)
-
-https://mp.weixin.qq.com/s/lP7sLiqiGGR2IY-FaorIPw
-
-英伟达：AI芯片还可以这样做
-
-https://mp.weixin.qq.com/s/j053qtpdz21IdgS22uGwAw
-
-深入剖析卷积乘累加的硬件加速技术
-
-https://mp.weixin.qq.com/s/XXO4hkjJkcZ5sTVVKWghEw
-
-TPU的起源，Jeff Dean综述后摩尔定律时代的ML硬件与算法

@@ -162,6 +162,10 @@ https://zhuanlan.zhihu.com/p/114264831
 
 Kernel Distribution Embedding（用于测试两批数据是否来自同一个分布采样）
 
+https://mp.weixin.qq.com/s/zJfafmJfmmQIjmjsLh_j-g
+
+百度内部PPT流出：数据分析的道与术
+
 # 上古软件开发
 
 https://github.com/chrislgarry/Apollo-11

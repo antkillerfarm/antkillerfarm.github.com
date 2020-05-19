@@ -264,6 +264,10 @@ https://mp.weixin.qq.com/s/nlskrbG5x6rG7Mu6qDeRxw
 
 青出于蓝而胜于蓝，这是一款脱胎于Jupyter Notebook的新型编程环境
 
+https://mp.weixin.qq.com/s/nVRFgtYsR72nJrJvy31s5A
+
+Jupyter官方神器：可视化Debug工具!
+
 ## Autograd
 
 一个基于numpy的自动求导库。它是由Harvard Intelligent Probabilistic Systems Group开发的。

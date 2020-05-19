@@ -52,6 +52,10 @@ https://mp.weixin.qq.com/s/0JmB0sMUVsiuwrVObN_10g
 
 浙江大学提出设计网络嵌入算法的度惩罚原则，可有效保留无标度特性
 
+https://mp.weixin.qq.com/s/YGBvWIENE9TASvb_t_Pebw
+
+爱奇艺深度语义表示学习的探索与实践
+
 ## 参考
 
 http://kexue.fm/archives/4667/

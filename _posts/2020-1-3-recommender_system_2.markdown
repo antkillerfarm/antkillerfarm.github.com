@@ -324,6 +324,10 @@ https://mp.weixin.qq.com/s/-y16GrLSMafoSF7ZT-KCiQ
 
 A/B测试的设计和执行
 
+https://mp.weixin.qq.com/s/45JEBLXgC6gRjAudL5fMvg
+
+Netflix：使用A/B测试来找到最佳的插图
+
 ## 参考
 
 https://mp.weixin.qq.com/s/vpANPrl86Ou2fBVHgLXtBQ

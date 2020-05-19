@@ -365,3 +365,7 @@ https://mp.weixin.qq.com/s/5ANMZNaR2ayYMUQEJ6aM3w
 https://mp.weixin.qq.com/s/jrynQZgoljFi6zdVKWo5nw
 
 在浏览器中实现AR试妆
+
+https://mp.weixin.qq.com/s/lr9OVNiIN0x7k4cmNZoCUw
+
+用于人脸检测的SSH算法

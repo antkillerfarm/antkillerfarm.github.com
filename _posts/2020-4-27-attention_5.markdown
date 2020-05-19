@@ -6,6 +6,34 @@ category: Attention
 
 # BERT
 
+## UniLM
+
+https://mp.weixin.qq.com/s/m_FU4NmjUsvxusRidDb-Xg
+
+UniLM:一种既能阅读又能自动生成的预训练模型
+
+https://mp.weixin.qq.com/s/yyUPqxpfBwUSRbwM6SSAcQ
+
+UniLM论文阅读笔记
+
+https://mp.weixin.qq.com/s/RjeuHXa8O3MzSpTOuOHMkQ
+
+站在BERT肩膀上的NLP新秀们：XLMs、MASS和UNILM
+
+https://mp.weixin.qq.com/s/UEBKSKEkZTbpR49_Rh50Jg
+
+微软统一预训练语言模型UniLM 2.0解读
+
+## 参考
+
+https://www.zhihu.com/question/298203515
+
+如何评价BERT模型？
+
+https://mp.weixin.qq.com/s/Fao3i99kZ1a6aa3UhAYKhA
+
+全面超越人类！Google称霸SQuAD，BERT横扫11大NLP测试
+
 https://mp.weixin.qq.com/s/INDOBcpg5p7vtPBChAIjAA
 
 最强预训练模型BERT的Pytorch实现
@@ -373,41 +401,3 @@ https://mp.weixin.qq.com/s/2f91Ksj19rk_emoFpEmPfA
 https://mp.weixin.qq.com/s/hF4EcKqmaTm_gemxX7Kftg
 
 BERT的嵌入层是如何实现的？
-
-https://mp.weixin.qq.com/s/CdjNQKSNuklVUsXe4InSoA
-
-FastBERT：放飞BERT的推理速度
-
-https://zhuanlan.zhihu.com/p/132361501
-
-BERT是如何分词的
-
-https://mp.weixin.qq.com/s/Tld9V1jdmWs06zNxiJNkZg
-
-BART&MASS自然语言生成任务上的进步
-
-https://mp.weixin.qq.com/s/G995ulqe6Ifxml_AJqapAw
-
-BERT在小米NLP业务中的实战探索
-
-https://www.cnblogs.com/gczr/p/12874409.html
-
-Sentence-BERT: 一种能快速计算句子相似度的孪生网络
-
-https://mp.weixin.qq.com/s/0hUNG6tC-hlfyTJtuzwU5w
-
-NLP中的Mask全解
-
-# Attention进阶
-
-https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ
-
-深度学习注意力机制-Attention in Deep learning-附101页PPT
-
-https://mp.weixin.qq.com/s/_mBa-GTdILrvluJtegz8fw
-
-南洋理工大学：注意力神经网络，Attention Neural Networks，78页ppt
-
-https://mp.weixin.qq.com/s/pKxqPB9qIGmE_PslPa6EyA
-
-长文详解Attention的前世今生

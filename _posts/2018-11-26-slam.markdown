@@ -370,6 +370,10 @@ https://mp.weixin.qq.com/s/LV5Yk-7SDL0FYaFN2lOdsg
 
 相机激光标定算法：从理论到实践
 
+https://mp.weixin.qq.com/s/7EKBehM3Dd0Oq7HTkjrm0g
+
+图像去畸变矫正及双线性内插法
+
 # Python+
 
 https://mp.weixin.qq.com/s/8Fgzb8JiAoNSJqUanSi85Q

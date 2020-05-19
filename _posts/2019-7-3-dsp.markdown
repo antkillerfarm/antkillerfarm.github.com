@@ -384,6 +384,10 @@ https://mp.weixin.qq.com/s/tXpdPwnZyCtur9Q-rJfYFg
 
 当AI遇上证券投资
 
+https://mp.weixin.qq.com/s/fvdRQmxEDKk0SYcaO-n82Q
+
+比特币像个醉汉，S2F模型是它回家的路！
+
 ## 金融模型
 
 ![](/images/img3/Quant.jpg)
@@ -399,3 +403,21 @@ Carhart four-factor model
 https://mp.weixin.qq.com/s/4qZkMN5lw-vzV7FEB8iTGA
 
 信用风险建模
+
+# AI Chip+
+
+https://mp.weixin.qq.com/s/b_Hy0JSZ5ZGT9AsczCkp9Q
+
+ISSCC 2020：AI芯片架构的转变
+
+https://mp.weixin.qq.com/s/kq5F47N3LS43ZKdwe9-CUQ
+
+端侧智能存算一体芯片的需求、现状与挑战
+
+https://zhuanlan.zhihu.com/p/115219461
+
+张量在神经网络加速器中的应用
+
+https://pan.baidu.com/s/1zcXdXTaN3dbJ9VGplViHZw 提取码:ews4
+
+AI芯片体系架构和软件专题报告会2020论文下载
