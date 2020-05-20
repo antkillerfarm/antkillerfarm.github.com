@@ -183,6 +183,10 @@ https://mp.weixin.qq.com/s/P_LBnjeau4Au02Qef0OEsQ
 
 搜索引擎核心技术与算法——词项词典与倒排索引优化
 
+https://mp.weixin.qq.com/s/Z_HdxKrAUSa4QtVNpqvx5w
+
+面试官：请介绍搜索引擎背后的经典数据结构和算法
+
 ## start命令
 
 Solr的运行需要启动相应的服务程序。启动命令如下：

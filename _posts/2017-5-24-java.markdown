@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java, Javascript（二）
+title:  Java
 category: language 
 ---
 
@@ -279,75 +279,3 @@ https://mp.weixin.qq.com/s/23-S5tXTqi2LSe84OoQvvA
 https://mp.weixin.qq.com/s/GaK4iyTNvDsO9nMCXxrWkQ
 
 看完这篇Exception和Error，和面试官扯皮就没问题了
-
-# Javascript
-
-### Step2：回调函数嵌套问题（续）
-
-回调嵌套的解决方法有三种：
-
-1.使用Promise。
-
-2.使用Generator。
-
-3.使用递归函数。
-
-虽然JS递归函数的例子在教程中不太多，但和C语言类似，JS也拥有定义递归函数的能力，且语法也和C类似。这里使用递归函数解决回调嵌套的问题，代码在：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello/super_button2.html
-
-### Step3:延迟动画
-
-除了Step2的办法之外，还可以用设置延迟属性animation-delay的办法，设定动画的播放次序。这种方法的灵活性超过前种方法，但控制难度较高，需要通过公式计算各动画的起始时间，以达到正确的效果。示例代码：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello/super_button3.html
-
-这里还解决了Step2的一个Bug。在Step2中，每点击一次按钮，就会添加一次AnimationEnd事件处理函数，但是新添加的函数并不会覆盖原来的事件处理函数。而是在原来的事件处理函数之后，执行新添加的事件处理函数。利用console.log可以很容易的确认这一点。
-
-因此，AnimationEnd事件处理函数仅需要在开始时，添加一次即可。
-
-Step3还添加了fadeOutLeft动画，为了在两种动画之间切换，引入了全局变量flag，作为状态变量。
-
-由于JS事件处理函数，不能传递参数。因此，也就不能很方便的将动画开始播放时的flag值传递过去，留待动画结束时使用。所以，flag值只有在所有动画都结束之后，才能改变。
-
-这里通过添加引用计数的方法，来判定所有动画是否都已结束。不用担心引用计数的临界问题，因为JS是单线程执行的。
-
-此外，还要注意display和opacity的差异，前者如果不显示了，就会彻底消失，而后者不显示时，仍然还会占据它原来所在的位置。
-
-### JS细节
-
-#### onclick与href='javascript:function()'的区别
-
-1.onclick事件会比href属性先执行。
-
-2.`<a href="javascript:void(0);" onclick="function()"></a>`或者`<a href="javascript:;" onclick="function()"></a>`表示这个链接不跳转，而执行一段js脚本。
-
-#### import js的时机
-
-和C/Java/Python等不同，js的加载并不一定需要在html的开头，而可以在任意位置。有些特效甚至必须在布局元素之后，再加载。
-
-比如D3的绘图代码，必须出现在需要绘图的div之后。否则d3.select之类的操作选择不到任何对象。
-
-## JS特效资料
-
-https://github.com/wagerfield/flat-surface-shader
-
-这个网站提供一种浮动的多边形表面的特效，适合作为登录页的背景。
-
-https://mp.weixin.qq.com/s/p8ll1R9aXc5aELtL3MAEcA
-
-用H5打造用户专属的3D机房（WebGL）
-
-## Monaco Editor
-
-Monaco Editor是MS开源的一个在线代码编辑工具，可提供类似VS code的功能。
-
-官网：
-
-https://microsoft.github.io/monaco-editor/
-
-参考：
-
-https://www.cnblogs.com/isaboy/p/monaco-editor.html
-
-微软开源代码编辑器monaco-editor

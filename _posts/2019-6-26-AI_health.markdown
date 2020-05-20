@@ -320,6 +320,10 @@ https://mp.weixin.qq.com/s/jLBI1bEp0wDOqZo9zDsbDw
 
 全面！手把手教你决策树可视化
 
+https://mp.weixin.qq.com/s/2uP5i7eFWgYRA7mt_rR39g
+
+深度学习模型图难画论文难中？这个ML Visual利器帮你快速画出漂亮的模型图
+
 ## howmuch.net
 
 howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：

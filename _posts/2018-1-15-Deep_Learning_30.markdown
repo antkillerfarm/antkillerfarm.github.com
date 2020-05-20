@@ -338,6 +338,10 @@ https://mp.weixin.qq.com/s/IcLk-fMjKO19BaHbuUCeXg
 
 GraphSAGE算法原理，实现和应用
 
+https://zhuanlan.zhihu.com/p/142205899
+
+GraphSAGE源码解析
+
 https://mp.weixin.qq.com/s/C-Pa1jznQntyhocdxS-4Hg
 
 节点嵌入训练加快300倍！解读开源高性能图嵌入系统GraphVite

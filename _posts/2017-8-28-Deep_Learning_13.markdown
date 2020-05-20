@@ -192,6 +192,14 @@ https://zhuanlan.zhihu.com/p/141545370
 
 深度学习语义相似度系列：Ranking Similarity
 
+## 表示型和交互型
+
+从模型的本质来看可以分为两种类型：表示型和交互型。表示型的模型会在最后一层对待匹配的两个句子进行相似度计算，交互型模型会尽早的让两个句子交互，充分应用交互特征。
+
+https://mp.weixin.qq.com/s/5_QqP3CIBpM4zM5CWIxYuA
+
+深度语义匹配模型原理篇一：表示型
+
 ## CDSSM
 
 《Learning semantic representations using convolutional neural networks for web search》
@@ -311,39 +319,3 @@ https://mp.weixin.qq.com/s/AWsiAYyVWY83s5uJ01Lg6Q
 https://mp.weixin.qq.com/s/fw5dRWmvZ17lqzxjKFrCtQ
 
 相关性特征在图片搜索中的实践
-
-https://mp.weixin.qq.com/s/jjbiUkmJ71rM9BYs5yKFSA
-
-从算法原理到应用部署！微信“扫一扫”识物的背后技术揭秘
-
-https://mp.weixin.qq.com/s/38d90XC2DjMHRoWnKEeVIw
-
-基于图像查询的视频检索
-
-https://mp.weixin.qq.com/s/fDaZ2HU7W6LnIY_8n-Zg_A
-
-视频版权检测算法​​
-
-https://mp.weixin.qq.com/s/_iTmh4vPnL78HPA-0wY95g
-
-阿里文娱搜索算法实践和思考
-
-https://zhuanlan.zhihu.com/p/113244063
-
-搜索中的深度匹配模型
-
-https://zhuanlan.zhihu.com/p/118183738
-
-搜索中的深度匹配模型（下）
-
-https://mp.weixin.qq.com/s/FSpVcTM9BcyraQwuaJ833Q
-
-服装局部抄袭怎么解决？ 阿里推出区域检索算法
-
-https://mp.weixin.qq.com/s/SMAHf7od8ygNIP6Zh9za3w
-
-KDD Cup 2020 多模态检索赛道：数据分析
-
-https://mp.weixin.qq.com/s/W8YlrSyM7K84-_jwiD6E7g
-
-微信扫一扫识物的技术揭秘：抠图与检索

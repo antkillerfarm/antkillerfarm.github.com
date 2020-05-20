@@ -499,3 +499,7 @@ https://mp.weixin.qq.com/s/tZ3yWQ9--l9e81UqoUoWIQ
 https://mp.weixin.qq.com/s/eaYwiV2LZNRwzPEeOA1XFg
 
 新星JAX ：双挑TensorFlow和PyTorch！有望担纲Google主要科学计算库和神经网络库
+
+https://mp.weixin.qq.com/s/NhMbr_niHjSaqh2azuSaog
+
+只知道TF和PyTorch还不够，快来看看怎么从PyTorch转向自动微分神器JAX

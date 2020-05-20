@@ -50,6 +50,52 @@ https://mp.weixin.qq.com/s/SOaA9XNnymLgGgJ5JNSdBg
 
 对比学习（Contrastive Learning）相关进展梳理
 
+https://mp.weixin.qq.com/s/U0pTQkW55evm94iQORwGeA
+
+图解SimCLR框架，用对比学习得到一个好的视觉预训练模型
+
+# 深度信息检索+
+
+https://mp.weixin.qq.com/s/jjbiUkmJ71rM9BYs5yKFSA
+
+从算法原理到应用部署！微信“扫一扫”识物的背后技术揭秘
+
+https://mp.weixin.qq.com/s/38d90XC2DjMHRoWnKEeVIw
+
+基于图像查询的视频检索
+
+https://mp.weixin.qq.com/s/fDaZ2HU7W6LnIY_8n-Zg_A
+
+视频版权检测算法​​
+
+https://mp.weixin.qq.com/s/_iTmh4vPnL78HPA-0wY95g
+
+阿里文娱搜索算法实践和思考
+
+https://zhuanlan.zhihu.com/p/113244063
+
+搜索中的深度匹配模型
+
+https://zhuanlan.zhihu.com/p/118183738
+
+搜索中的深度匹配模型（下）
+
+https://mp.weixin.qq.com/s/FSpVcTM9BcyraQwuaJ833Q
+
+服装局部抄袭怎么解决？ 阿里推出区域检索算法
+
+https://mp.weixin.qq.com/s/SMAHf7od8ygNIP6Zh9za3w
+
+KDD Cup 2020多模态检索赛道：数据分析
+
+https://mp.weixin.qq.com/s/W8YlrSyM7K84-_jwiD6E7g
+
+微信扫一扫识物的技术揭秘：抠图与检索
+
+https://zhuanlan.zhihu.com/p/112719984
+
+全面理解搜索Query：当你在搜索引擎中敲下回车后，发生了什么？
+
 # Graph NN+
 
 https://mp.weixin.qq.com/s/_vbcLre5HIrOGbAjTzLFjA
@@ -71,6 +117,10 @@ Diff Pool：网络图的层次化表达
 https://mp.weixin.qq.com/s/8kCKqM3yuohc4xOoFd8hGg
 
 Heterogeneous Graph Neural Network
+
+https://mp.weixin.qq.com/s/HUjq4TopxWLx3QTh5ZxfIQ
+
+最新《图卷积神经网络》中文综述论文，26页pdf
 
 # 语义分割进阶+
 

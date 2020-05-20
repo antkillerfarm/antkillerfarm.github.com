@@ -341,3 +341,11 @@ https://mp.weixin.qq.com/s/u44neSzF2Iqyv-i1Fc4lsQ
 https://mp.weixin.qq.com/s/nk-X88bF6LiAywnqRz3REQ
 
 Youtube推荐RL首弹，基于Top-K的Off-Policy矫正解决推荐中的信息茧房困境
+
+https://mp.weixin.qq.com/s/EPLvdQFiT1MiGgG7u4Qoqg
+
+基于强化学习的无地图机器人导航，Reinforcement Learning Based MRN
+
+https://mp.weixin.qq.com/s/X8STHGKlJYN2Qizz4t8Llg
+
+Accelerating DRL via Human knowledge

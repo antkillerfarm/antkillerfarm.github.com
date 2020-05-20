@@ -245,6 +245,10 @@ https://mp.weixin.qq.com/s/SqaR_7gwJpUNPM7g4IHaYw
 
 深度人脸识别中不同损失函数的性能对比
 
+https://zhuanlan.zhihu.com/p/138850070
+
+从Triplet loss看推荐系统中文章Embedding
+
 ## Coupled Cluster Loss
 
 论文：

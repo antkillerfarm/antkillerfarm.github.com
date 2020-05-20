@@ -346,6 +346,10 @@ https://www.zhihu.com/question/290767285/answer/1200063036
 
 据报道称“浏览器内核有上千万行代码”，浏览器内核真的很复杂吗？
 
+https://zhuanlan.zhihu.com/p/96986818
+
+万字详文：深入理解浏览器原理
+
 # 数据结构 & 普通CS算法
 
 https://www.cnblogs.com/BCOI/p/9072444.html

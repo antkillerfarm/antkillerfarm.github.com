@@ -146,6 +146,14 @@ https://mp.weixin.qq.com/s/MCJcHhB2g-wDPqnhp7f6Xw
 
 仅需少量视频观看数据，即可精准推断用户习惯：腾讯、谷歌、中科大团队提出迁移学习架构PeterRec
 
+https://mp.weixin.qq.com/s/s0Kxv0-v6OY1ziAiSDth3g
+
+小样本分割综述
+
+https://mp.weixin.qq.com/s/wtY66E0zMGzmdnPGWL3aQw
+
+迁移学习了解下
+
 # 深度ISP
 
 ## 数据集

@@ -344,6 +344,10 @@ https://mp.weixin.qq.com/s/AdmEd1FHxpZUwSGYy3qggg
 
 ## 参考
 
+https://mp.weixin.qq.com/s/JiYRhcTv2qgLfVyGzI8uHQ
+
+印度小哥用Python和Java实现所有AI算法
+
 https://mp.weixin.qq.com/s/52JFdyaLwZq7nWiZq6z6qA
 
 二叉堆是什么鬼？
@@ -375,23 +379,3 @@ https://mp.weixin.qq.com/s/d9yNsUVFg9UZN62xuOdxow
 https://mp.weixin.qq.com/s/o0JFTpGa4MLtDKHf4B2Ing
 
 快速理解为啥这个查询使用索引，那个查询不使用索引
-
-https://mp.weixin.qq.com/s/-_DqyBIG3aSDWIYtkD7xuA
-
-看动画轻松理解“递归“与“动态规划”
-
-https://mp.weixin.qq.com/s/M8U9B7UA2AdfnJi5EpTv-g
-
-算法面试中经常问的“字符串”问题
-
-https://mp.weixin.qq.com/s/QHounf4el7nmXnpMSJHjvg
-
-这个问题不简单：寻找缺失元素
-
-https://blog.csdn.net/changtao381/article/details/8936765
-
-Splay Tree（一种二叉排序树）
-
-https://blog.csdn.net/simpsonk/article/details/72832959
-
-史上最强图解Treap总结

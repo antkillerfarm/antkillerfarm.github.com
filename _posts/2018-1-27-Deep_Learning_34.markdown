@@ -336,6 +336,10 @@ https://mp.weixin.qq.com/s/0e4GHNRCF9xKFELAZ4zRFA
 
 A simple tutorial for Bayesian neural network
 
+https://mp.weixin.qq.com/s/NkRemHPRnEcEwbs5b-Mz9w
+
+贝叶斯编程，378页pdf，Bayesian Programming
+
 # 图像检索
 
 ## 传统方法

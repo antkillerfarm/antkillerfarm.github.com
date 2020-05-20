@@ -399,7 +399,7 @@ http://www.cnblogs.com/wingyip/p/5185593.html
 
 FlatBuffers初探
 
-# 数据结构 & 普通CS算法+
+# 数据结构 & 普通CS算法
 
 https://mp.weixin.qq.com/s/bdZ5e8CaiPuI8TpLNRrFUQ
 

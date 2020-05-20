@@ -306,6 +306,10 @@ https://mp.weixin.qq.com/s/CkAHKXWi24tDBz4HiWkhBw
 
 模型小快好！微软预训练语言模型通用压缩方法MiniLM助你“事半功倍”
 
+https://mp.weixin.qq.com/s/LF8TiVccYcm4B6krCOGVTQ
+
+ALBERT论文图解介绍
+
 ## AR vs AE
 
 **AR**: Aotoregressive Lanuage Modeling，又叫自回归语言模型。它指的是，依据前面(或后面)出现的tokens来预测当前时刻的token，代表模型有ELMO、GTP等。

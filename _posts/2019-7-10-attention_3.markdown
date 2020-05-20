@@ -228,6 +228,10 @@ https://mp.weixin.qq.com/s/6XX2tkp2dbIEKqumnIQWbg
 
 预训练语言模型的前世今生：跨语种语言模型
 
+https://mp.weixin.qq.com/s/U1O3j4FBRdiwlRjjlzbWJQ
+
+预训练语言模型的前世今生：XLNet：公平一战！多项任务效果超越BERT
+
 https://mp.weixin.qq.com/s/WDXGCC_MPK_sBCj4Bx6EDw
 
 从静态到动态，词表征近几十年发展回顾

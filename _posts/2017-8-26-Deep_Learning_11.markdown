@@ -305,3 +305,7 @@ https://mp.weixin.qq.com/s/rXr_XBc2Psh3NSA0pj4ptQ
 https://mp.weixin.qq.com/s/i8vOeAVEYX-hRAvPSe6DEA
 
 一文看尽神经网络中不同种类的卷积层
+
+https://mp.weixin.qq.com/s/hZc8MgHoE010hnzLU-trIA
+
+高性能涨点的动态卷积DyNet与CondConv、DynamicConv有什么区别联系？

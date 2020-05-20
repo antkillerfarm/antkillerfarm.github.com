@@ -307,6 +307,10 @@ https://mp.weixin.qq.com/s/X4nrtI6WODRHYiZ66xRshQ
 
 PySpark和SparkSQL基础：如何利用Python编程执行Spark
 
+https://zhuanlan.zhihu.com/p/108454557
+
+超全spark性能优化总结
+
 # Zookeeper
 
 http://zookeeper.apache.org/

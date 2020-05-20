@@ -266,6 +266,10 @@ https://mp.weixin.qq.com/s/3NiCkJoTBt2qLaOsMAkCNg
 
 MAML-Tracker:用目标检测思路做目标跟踪？小样本即可得高准确率
 
+https://mp.weixin.qq.com/s/vFEHZv6qh1dWhQ27WUEDEQ
+
+目标跟踪系列--C-COT算法
+
 ## FlowNet
 
 论文：
