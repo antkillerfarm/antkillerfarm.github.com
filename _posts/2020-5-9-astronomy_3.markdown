@@ -82,7 +82,7 @@ https://mp.weixin.qq.com/s/nwVRBs06zAAyyvROClGE2g
 
 斗争是团结的手段，团结是斗争的目的。以斗争求团结则团结存，以退让求团结则团结亡。
 
-我们的同志在困难的时候，要看到成绩，要看到光明，要提高我们的勇气版。
+我们的同志在困难的时候，要看到成绩，要看到光明，要提高我们的勇气。
 
 http://www.china.com.cn/ch-America/Wenxian/53-9-12.htm
 

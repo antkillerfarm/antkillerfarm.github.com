@@ -285,3 +285,17 @@ https://mp.weixin.qq.com/s/DlRbHavllHghzi-Xr5Y1Hg
 https://mp.weixin.qq.com/s/4hL6wWQ73icEWHfK6QKSMw
 
 频域学习，Learning in the Frequency Domain
+
+# 深度推荐系统+
+
+https://mp.weixin.qq.com/s/j34nJGomvR23ZJiqIFMoAQ
+
+推荐系统中稀疏特征Embedding的优化表示方法
+
+https://mp.weixin.qq.com/s/1xVPRIVwQQJfEen0RiNYvg
+
+谈谈推荐系统中的用户行为序列建模最新进展
+
+https://mp.weixin.qq.com/s/n5MYTk6V77Hazodw4pxnSQ
+
+基于多任务学习和负反馈的深度召回模型

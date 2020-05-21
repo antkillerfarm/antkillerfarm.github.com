@@ -267,6 +267,10 @@ https://mp.weixin.qq.com/s/GxQ27vY5naaAXtp_ZTV0ZA
 
 通用的图像-文本语言表征学习：多模态预训练模型 UNITER
 
+https://mp.weixin.qq.com/s/rjWOkwzX3IE59Kc9P9leAQ
+
+格“物”致知：多模态预训练再次入门
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

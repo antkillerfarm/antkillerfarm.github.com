@@ -370,6 +370,10 @@ https://mp.weixin.qq.com/s/2Fu3s1Hy6ZW8Ex8yLPDnyQ
 
 提速100倍，秒杀传统A/B测试！Netflix推出交错测试个性化推荐算法
 
+https://mp.weixin.qq.com/s/6OMMboBdbLVA-HsEjA3bSA
+
+Ctr预估之Calibration
+
 # 推荐算法中的常用排序算法
 
 ![](/images/img3/ranking.png)

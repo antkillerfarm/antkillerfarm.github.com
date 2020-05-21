@@ -278,7 +278,7 @@ https://mp.weixin.qq.com/s/3yaXYPjNWAXXtDJEWz2T0w
 
 90后“六指魔琴”AI修复100年前老北京影像，他还是程序员里最会画画的作曲家
 
-# 深度推荐系统+
+# 深度推荐系统
 
 https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w
 
@@ -371,11 +371,3 @@ https://mp.weixin.qq.com/s/D57jP5EwIx4Y1n4mteGOjQ
 https://mp.weixin.qq.com/s/VHRV1Z6F8-3o6b-3v-5_BA
 
 深度时空网络、记忆网络与特征表达学习在CTR预估中的应用
-
-https://mp.weixin.qq.com/s/j34nJGomvR23ZJiqIFMoAQ
-
-推荐系统中稀疏特征Embedding的优化表示方法
-
-https://mp.weixin.qq.com/s/1xVPRIVwQQJfEen0RiNYvg
-
-谈谈推荐系统中的用户行为序列建模最新进展
