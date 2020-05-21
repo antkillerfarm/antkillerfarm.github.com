@@ -56,6 +56,22 @@ https://mp.weixin.qq.com/s/U0pTQkW55evm94iQORwGeA
 
 # 深度信息检索+
 
+https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
+
+MySQL智能调度系统。这篇blog其实和MySQL关系不大，算是DL在负载均衡方面的应用吧。
+
+https://mp.weixin.qq.com/s/fzdK4YPTUgiW0D0aeH7WlQ
+
+用于跨模态检索的综合距离保持自编码器
+
+https://mp.weixin.qq.com/s/AWsiAYyVWY83s5uJ01Lg6Q
+
+千亿级照片，毫秒间匹配最佳结果，微软开源Bing搜索背后的关键算法
+
+https://mp.weixin.qq.com/s/fw5dRWmvZ17lqzxjKFrCtQ
+
+相关性特征在图片搜索中的实践
+
 https://mp.weixin.qq.com/s/jjbiUkmJ71rM9BYs5yKFSA
 
 从算法原理到应用部署！微信“扫一扫”识物的背后技术揭秘
@@ -121,6 +137,10 @@ Heterogeneous Graph Neural Network
 https://mp.weixin.qq.com/s/HUjq4TopxWLx3QTh5ZxfIQ
 
 最新《图卷积神经网络》中文综述论文，26页pdf
+
+https://mp.weixin.qq.com/s/RuCxY92qlhWnbZVYDXY_BQ
+
+Mila唐建博士最新《图表示学习:算法与应用》2020研究进展，附59页ppt
 
 # 语义分割进阶+
 

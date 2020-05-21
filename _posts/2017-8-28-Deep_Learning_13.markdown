@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十三）——花式池化, 深度信息检索
+title:  深度学习（十三）——花式池化, Regularization, 深度信息检索
 category: DL 
 ---
 
@@ -125,6 +125,16 @@ https://mp.weixin.qq.com/s/K1RBux3AfxVFT8_uezYHFA
 https://mp.weixin.qq.com/s/J4opJ6NvbTxbHWAWNHEltw
 
 自然语言处理中CNN模型几种常见的Max Pooling操作
+
+# Regularization
+
+DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：
+
+$$loss(W;x;y) = loss_D(W;x;y) + \lambda_R R(W) + \lambda_g \sum_{l=1}^{L} R_g(W_l^{(G)})$$
+
+$$R_g(w^{(g)}) = \sum_{g=1}^{G} \lVert w^{(g)} \rVert_g = \sum_{g=1}^{G} \sum_{i=1}^{|w^{(g)}|} {(w_i^{(g)})}^2$$
+
+Group Regularization也叫做Block Regularization或Structured Regularization。
 
 # 深度信息检索
 
@@ -303,19 +313,3 @@ https://mp.weixin.qq.com/s/N3JBHlqneG9dI0I26M3wHQ
 https://mp.weixin.qq.com/s/8Twe3e3WKCY9pTiNtnW2sg
 
 重磅！谷歌等推出基于机器学习的数据库SageDB
-
-https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
-
-MySQL智能调度系统。这篇blog其实和MySQL关系不大，算是DL在负载均衡方面的应用吧。
-
-https://mp.weixin.qq.com/s/fzdK4YPTUgiW0D0aeH7WlQ
-
-用于跨模态检索的综合距离保持自编码器
-
-https://mp.weixin.qq.com/s/AWsiAYyVWY83s5uJ01Lg6Q
-
-千亿级照片，毫秒间匹配最佳结果，微软开源Bing搜索背后的关键算法
-
-https://mp.weixin.qq.com/s/fw5dRWmvZ17lqzxjKFrCtQ
-
-相关性特征在图片搜索中的实践

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Clojure, Groovy, perl, Scala, VS Code
+title:  Clojure, Groovy, perl, Scala, VS Code, VS
 category: language 
 ---
 
@@ -279,3 +279,27 @@ language server protocol是一种跨编辑器的语言支持实现规范。它�
 官网：
 
 https://microsoft.github.io/language-server-protocol/
+
+# VS
+
+## 分栏显示
+
+1.Window -> New Window
+
+2.Window -> New Vertical Tab Group
+
+## Visual Studio Tab转换为空格的设置
+
+打开“Tools --> Options --> Text Editor”，如果是编写C/C++程序，就打开“C/C++-->Tabs”，在这里，选中“Insert spaces”即可。
+
+## 离线安装
+
+VS2015以后，MS不再提供VS的离线安装包，因为安装文件实在是太大了（10GB+），取而代之的是offline模式。
+
+1.首先下载在线安装器vs_community.exe，打开命令行：
+
+`vs_community.exe --layout D:\vs2017\offline --lang zh-CN`
+
+2.安装证书。证书在offline\certificates下。
+
+3.运行offline\vs_community.exe。

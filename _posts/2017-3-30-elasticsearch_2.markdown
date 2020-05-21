@@ -8,6 +8,22 @@ category: AI
 
 ## ELK的配置部署（续）
 
+2.新建用户
+
+ES不允许以root用户执行。因此需要创建新用户：
+
+`adduser es`
+
+3.
+
+>access denied (javax.management.MBeanTrustPermission register) 
+
+jre/lib/security/java.policy文件中新增
+
+`permission javax.management.MBeanTrustPermission "register";`
+
+4.以es用户的身份解压各压缩包，否则会有一大堆的权限错误。
+
 5.Bootstrap checks failing
 
 当配置的host不是localhost的时候，ES会进行Bootstrap checks。其主要目的是增加ES能够获得的各种资源。一般不推荐在实际生产环境中，关闭Bootstrap checks。

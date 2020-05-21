@@ -46,7 +46,7 @@ HMM的Baum-Welch算法和Viterbi算法公式推导细节
 
 正由于标签是概率模型的，存在一个建模的过程，因此HMM实际上是一种生成模型算法。
 
-HMM只遵循了一阶马尔科夫假设，即1-gram。如果数据的依赖超过1-gram，则不能使用HMM。
+HMM只遵循了一阶马尔科夫假设，即1-gram。如果数据的依赖超过1-gram，则不能使用HMM，而需要使用高阶HMM。
 
 参考：
 
@@ -57,6 +57,10 @@ HMM识别新词
 https://mp.weixin.qq.com/s/eGx0PHvZXwmykUon-9M-mQ
 
 HMM模型在贝壳对话系统中的应用
+
+https://www.cnblogs.com/en-heng/p/6183522.html
+
+二阶隐马尔可夫模型2-HMM
 
 # MRF
 
@@ -82,7 +86,7 @@ HMM模型在贝壳对话系统中的应用
 
 基于以上性质，我们效仿整数的因子分解，提出了概率图的**极大团分解**：
 
-$$P(x)=\frac{1}{Z^*}\prod_{Q\in C^*}\psi_Q(x_Q)$$
+$$P(x)=\frac{1}{Z^*}\prod_{Q\in C^*}\psi_Q(x_Q)\tag{1}$$
 
 其中，$$\psi_Q$$为Q对应的势函数。
 
@@ -110,7 +114,21 @@ $$P(x_A,x_B|x_C)=P(x_A|x_C)P(x_B|x_C)$$
 
 # MEMM
 
-Maximum Entropy Markov Model是一种判别模型。
+Maximum Entropy Markov Model是一种判别模型。它和HMM的联系和区别主要表现在以下方面：
+
+- 生成 vs 判别
+
+正如《机器学习（三）》中提到的，MEMM既然是判别模型，那它实际上就是一个确定决策边界的分类问题。分类问题使用Maximum Entropy建模就是一件很自然的事情了。
+
+单纯的ME，由于没有利用历史信息，对于序列问题的效果并不好。因此，仿照HMM，又引入了Markov Model，这也就是MEMM得名的原因。
+
+我们回过头来，再看《机器学习（三十）》中的图：
+
+![](/images/img3/PGM.jpg)
+
+显然，如果考虑历史信息的话，Naive Bayes就变成了HMMs，同理，LR就变成了CRF。（MEMM和CRF在这一点上是一致的）
+
+- 概率图表示
 
 ![](/images/img3/HMM.jpg)
 
@@ -118,7 +136,35 @@ Maximum Entropy Markov Model是一种判别模型。
 
 ![](/images/img3/MEMM.jpg)
 
-上图是MEMM的概率图表示。
+上图是MEMM的概率图表示。MEMM当前隐藏状态$$i_t$$依赖于当前时刻的观测节点$$o_t$$和上一时刻的隐藏节点$$i_{t-1}$$。
+
+- 特征建模
+
+HMM的建模实际上是比较简单的了，主要就是状态转移概率矩阵和观测概率矩阵。这些都是一阶线性的特征了。
+
+MEMM不局限于这样的简单特征，你可以用任意复杂的方式定义特征。一般将特征函数表示为：$$f_a(i,o)$$。其中，a表示特征。一个MEMM模型可以包含任意多个特征。
+
+综上，我们可以给出MEMM的公式：
+
+$$P(I|O)=\prod_{t=1}^n\frac{\exp(\sum_a \lambda_a f_a(i,o))}{Z(i,o)}\tag{2}$$
+
+其中Z为归一化因子：$$Z=\sum_i \exp(\sum_a \lambda_a f_a(i,o))$$
+
+这里的$$\lambda_a$$就是模型需要学习的参数。
+
+MEMM存在labeling bias问题。
+
+![](/images/img3/MEMM.png)
+
+如上面的例子，可以看出：
+
+- 无论观测值，State 1总是更倾向于转移到State 2；
+
+- 无论观测值，State 2总是更倾向于转移到State 2；
+
+因此，无论初值如何，Most Likely Path最终待在State 2中，才是合理的。然而MEMM却认为待在State 1中才合理。
+
+产生这种现象的原因是，State 1有2个转移方式，而State 2有5个转移方式。这就导致尽管State 1->State 1是小概率事件，但也比State 2的任意一个转移事件的概率大。谁叫后者的概率这么分散呢？
 
 参考：
 
@@ -150,9 +196,31 @@ https://zhuanlan.zhihu.com/p/33397147
 
 条件随机场(Conditional Random Field)由Lafferty等人于2001年提出，结合了最大熵模型和隐马尔可夫模型的特点，是一种无向图模型，近年来在分词、词性标注和命名实体识别等序列标注任务中取得了很好的效果。
 
+上面我们为了解释HMM和MEMM的区别，对MEMM做了一定的简化，事实上MEMM还可以是这样的：
+
+![](/images/img3/MEMM_2.png)
+
+CRF是一种特殊的MRF。MRF定义的是联合概率，而CRF定义的是条件概率，故名。
+
+在CRF中，最常用的是Linear-chain CRF。有的时候，Linear-chain CRF也被不加区分的简称为CRF。下文如无特指，CRF均指的是Linear-chain CRF，它的概率图如下所示：
+
+![](/images/img3/CRF.png)
+
+根据MRF的公式（公式1）和MEMM的公式（公式2），我们可以得到CRF的公式如下：
+
+$$P(I|O)=\frac{\prod_{t=1}^n\exp(\sum_a \lambda_a f_a(i,o))}{Z(i,o)}$$
+
+由于Z位置的不同，CRF的概率是全局归一化的，而MEMM是局部归一化的，因此CRF没有labeling bias的问题。
+
+参考：
+
 https://zhuanlan.zhihu.com/p/35969159
 
 如何轻松愉快的理解条件随机场（CRF）？
+
+https://www.cnblogs.com/en-heng/p/6214023.html
+
+条件随机场CRF
 
 http://www.chokkan.org/software/crfsuite/
 
@@ -189,121 +257,3 @@ https://mp.weixin.qq.com/s/4r4k6JIj4xvHHmt3QqmbuA
 https://mp.weixin.qq.com/s/JsqhwwJ7wnNcgOuAR6ekxw
 
 理解条件随机场
-
-https://mp.weixin.qq.com/s/79M6ehrQTiUc0l_sO9fUqA
-
-用于序列标注问题的条件随机场（Conditional Random Field, CRF）
-
-https://zhuanlan.zhihu.com/p/78006020
-
-NCRF++学习笔记
-
-https://zhuanlan.zhihu.com/p/91031332
-
-用腻了CRF，试试LAN吧？
-
-https://zhuanlan.zhihu.com/p/100576406
-
-条件随机场及Mininum Risk Training
-
-https://www.jianshu.com/p/55755fc649b1
-
-如何轻松愉快地理解条件随机场（CRF）？
-
-https://zhuanlan.zhihu.com/p/34261803
-
-白话条件随机场（conditional random field）
-
-https://mp.weixin.qq.com/s/K-J4hbPpl8RQtpu1X6k1QQ
-
-CRF原理及实现代码
-
-## BiLSTM+CRF
-
-![](/images/img2/BiLSTM_CRF.jpg)
-
-https://mp.weixin.qq.com/s/vbBNYzKq6AnsDTy8lFsKAw
-
-TensorFlow RNN深度学习BiLSTM+CRF实现sequence labeling序列标注
-
-https://www.jianshu.com/p/97cb3b6db573
-
-BiLSTM模型中CRF层的运行原理-1
-
-https://www.jianshu.com/p/7c83478eeb56
-
-BiLSTM模型中CRF层的运行原理-2
-
-https://www.zhihu.com/question/62399257
-
-如何理解LSTM后接CRF？
-
-https://mp.weixin.qq.com/s/1FCWMRapGMXjxTLoA2fYCg
-
-CRF和LSTM模型在序列标注上的优劣？
-
-https://zhuanlan.zhihu.com/p/97676647
-
-手撕BiLSTM-CRF
-
-https://zhuanlan.zhihu.com/p/44042528
-
-最通俗易懂的BiLSTM-CRF模型中的CRF层介绍
-
-https://mp.weixin.qq.com/s/0WVqQkvzb6TYFA9gEh73ZQ
-
-BiLSTM上的CRF，用命名实体识别任务来解释CRF（1）
-
-https://mp.weixin.qq.com/s/VG5C9NFMejetrj60KIbWug
-
-BiLSTM上的CRF，用命名实体识别任务来解释CRF（2）损失函数
-
-https://mp.weixin.qq.com/s/PaunoXYUz13s0lbgzcqE9A
-
-BiLSTM上的CRF，用命名实体识别任务来解释CRF（3）推理
-
-https://mp.weixin.qq.com/s/xJ7MpUkVfLQKxRYyJs29NQ
-
-BiLSTM上的CRF，用命名实体识别任务来解释CRF（4）
-
-# t-SNE
-
-## 概述
-
-t-SNE(t-distributed stochastic neighbor embedding)是用于降维的一种机器学习算法，是由Laurens van der Maaten和Geoffrey Hinton在08年提出来。此外，t-SNE 是一种非线性降维算法，非常适用于高维数据降维到2维或者3维，进行可视化。
-
-论文：
-
-《Visualizing Data using t-SNE》
-
-以下是几种常见的降维算法：
-
-1.主成分分析（线性）
-
-2.t-SNE（非参数/非线性）
-
-3.萨蒙映射（非线性）
-
-4.等距映射（非线性）
-
-5.局部线性嵌入（非线性）
-
-6.规范相关分析（非线性）
-
-7.SNE（非线性）
-
-8.最小方差无偏估计（非线性）
-
-9.拉普拉斯特征图（非线性）
-
-PCA的相关内容参见《机器学习（十六）》。
-
-## SNE
-
-在介绍t-SNE之前，我们首先介绍一下SNE（Stochastic Neighbor Embedding）的原理。
-
-假设我们有数据集X，它共有N个数据点。每一个数据点$$x_i$$的维度为D，我们希望降低为d维。在一般用于可视化的条件下，d的取值为 2，即在平面上表示出所有数据。
-
-SNE将数据点间的欧几里德距离转化为条件概率来表征相似性：
-
-$$p_{j\mid i}=\frac{\exp(-\|x_i-x_j\|^2/2\sigma^2)}{\sum_{k\neq i}\exp(-\|x_i-x_k\|^2/2\sigma^2)}$$

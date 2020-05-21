@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十五）——Probabilistic Robotics, Kalman filters, 图论, 数据清洗, 三门问题
+title:  机器学习（三十五）——Probabilistic Robotics, Kalman filters, Adaboost
 category: ML 
 ---
 
@@ -214,94 +214,82 @@ https://zhuanlan.zhihu.com/p/141059329
 
 自动驾驶感知融合-无迹卡尔曼滤波(Lidar&Radar)
 
-# 图论
+# Adaboost
 
-## 基本概念
+Adaboost是Yoav Freund和Robert Schapire于1997年提出的算法。两人后来因为该算法被授予Gödel Prize（2003）。
 
-**图(Graph)**，是一种由若干个结点(Node)及连接两个结点的边(Edge)所构成的图形，用于刻画不同结点之间的关系。
+>Yoav Freund，UCSC博士，UCSD教授。
 
-Graph非常适合用于描述non-Euclidean space的数据：
+>Robert Elias Schapire，MIT博士。先后供职于Princeton University、AT&T Labs和Microsoft Research。
 
-![](/images/img3/graph.png)
+>Gödel Prize，由欧洲计算机学会（EATCS）与美国计算机学会基础理论专业组织（ACM SIGACT）于1993年共同设立，颁给理论计算机领域最杰出的学术论文。其名称取自Kurt Gödel。
 
-BFS：Breadth First Search
+>Kurt Friedrich Gödel，1906～1978，奥地利逻辑学家，数学家，哲学家，后加入美国藉。维也纳大学博士（1930）。在逻辑学方面，他是继Aristotle、Gottlob Frege之后最伟大的逻辑学家。在数学方面，他以哥德尔不完备定理著称，和Bertrand Russell、 David Hilbert、Georg Cantor齐名。
 
-DFS：Depth First Search
+Adaboost既可用于分类问题，也可用于回归问题。这里仅针对二分类问题进行讨论。
 
-## 参考
+假设我们有数据集$$\{(x_1, y_1), \ldots, (x_N, y_N)\}$$，其中$$y_i \in \{-1, 1\}$$，还有一系列弱分类器$$\{k_1, \ldots, k_L\}$$。
 
-https://mp.weixin.qq.com/s/LqCfwf90bzZKVMLLY5dbXA
+由于Boost算法是个串行算法，每次迭代就会加入一个弱分类器。这样m-1次迭代之后的分类器如下所示：
 
-图数据分析与可视化，538页pdf
+$$C_{(m-1)}(x_i) = \alpha_1k_1(x_i) + \cdots + \alpha_{m-1}k_{m-1}(x_i)$$
 
-https://mp.weixin.qq.com/s/zOdy-1vCJD_dPFSoe0ELFA
+而m次迭代之后的分类器则为：
 
-图论与图学习（一）：图的基本概念
+$$C_{m}(x_i) = C_{(m-1)}(x_i) + \alpha_m k_m(x_i)$$
 
-https://mp.weixin.qq.com/s/0ZdS1WOSDZiXnxP8fybBAw
+如何选择新加入的弱分类器$$k_m$$和对应的权重$$\alpha_m$$呢？我们可以定义误差E如下所示：
 
-图论与图学习（二）：图算法
+$$E = \sum_{i=1}^N e^{-y_i C_m(x_i)}$$
 
-https://mp.weixin.qq.com/s/BkKw2C3n9WsmIchJkkZxUw
+令$$w_i^{(1)} = 1,w_i^{(m)} = e^{-y_i C_{m-1}(x_i)}$$，则：
 
-从七桥问题开始：全面介绍图论及其应用
+$$E = \sum_{i=1}^N w_i^{(m)}e^{-y_i\alpha_m k_m(x_i)}$$
 
-https://mp.weixin.qq.com/s/ZDY3Yt67eXK5pjXgvJkkyQ
+因为$$k_m$$分类正确时，$$y_i k_m(x_i) = 1$$，分类错误时，$$y_i k_m(x_i) = -1$$。所以：
 
-图论的各种基本算法
+$$E = \sum_{y_i = k_m(x_i)} w_i^{(m)}e^{-\alpha_m} + \sum_{y_i \neq k_m(x_i)} w_i^{(m)}e^{\alpha_m}\\= \sum_{i=1}^N w_i^{(m)}e^{-\alpha_m} + \sum_{y_i \neq k_m(x_i)} w_i^{(m)}(e^{\alpha_m}-e^{-\alpha_m})$$
 
-https://mp.weixin.qq.com/s/2h1dgvPbYKBOYZPiixg9iw
+可以看出和$$k_m$$相关的实际上只有上式的右半部分。显然，使得$$\sum_{y_i \neq k_m(x_i)} w_i^{(m)}$$最小的$$k_m$$，也会令E最小，这也就是我们选择加入的$$k_m$$。
 
-手把手：四色猜想、七桥问题…程序员眼里的图论，了解下？
+对E求导，得：
 
-https://mp.weixin.qq.com/s/ra9v1pgFsbOcJrtONoZNvQ
+$$\frac{d E}{d \alpha_m} = \frac{d (\sum_{y_i = k_m(x_i)} w_i^{(m)}e^{-\alpha_m} + \sum_{y_i \neq k_m(x_i)} w_i^{(m)}e^{\alpha_m}) }{d \alpha_m}$$
 
-图论基础与图存储结构
+令导数为0，可得：
 
-https://mp.weixin.qq.com/s/Y7qZlJdJ8fav5BXFGwdSOQ
+$$\alpha_m = \frac{1}{2}\ln\left(\frac{\sum_{y_i = k_m(x_i)} w_i^{(m)}}{\sum_{y_i \neq k_m(x_i)} w_i^{(m)}}\right)$$
 
-Graph Analysis and Its Application
+令$$\epsilon_m = \sum_{y_i \neq k_m(x_i)} w_i^{(m)} / \sum_{i=1}^N w_i^{(m)}$$，则：
 
-https://mp.weixin.qq.com/s/VdvvQetxAvkiNF04hV9PeA
+$$\alpha_m = \frac{1}{2}\ln\left( \frac{1 - \epsilon_m}{\epsilon_m}\right)$$
 
-图搜索算法介绍(RRT/RRT*)
+参考：
 
-https://mp.weixin.qq.com/s/dTI3BdgixVTAFsnxtKjq0A
+https://mp.weixin.qq.com/s/G06VDc6iTwmNGsH4IfSeJQ
 
-常见图算法介绍
+Adaboost从原理到实现
 
-# 数据清洗
+https://mp.weixin.qq.com/s/PZ-1fkNvdJmv_8zLbvoW1g
 
-https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g
+Adaboost算法原理小结
 
-数据挖掘中的数据清洗方法大全
+https://mp.weixin.qq.com/s/KoOUgwXLOfJfOjWhbFX52Q
 
-https://mp.weixin.qq.com/s/FHdo2DTapoTryA-hOM-y_w
+如果Boosting你懂，那Adaboost你懂么？
 
-还在为数据清洗抓狂？这里有一个简单实用的清洗代码集
+https://mp.weixin.qq.com/s/Joz2FpGgBY0tC8lpoFz8Mw
 
-https://mp.weixin.qq.com/s/r7ngZOM9tO-_OSfvs2aDJw
+AdaBoost元算法如何提高分类性能——机器学习实战
 
-数据清洗&预处理入门完整指南
+https://mp.weixin.qq.com/s/MLEVUKse5usmKIWJF-yfOQ
 
-https://mp.weixin.qq.com/s/r4ycLnjOl5hSPBMwKpnmsQ
+通俗易懂讲解自适应提升算法AdaBoost
 
-如何打造高质量的NLP数据集
+https://mp.weixin.qq.com/s/VuDAdeVsoZsTokh3n_wWFw
 
-# 三门问题
+一文详解机器学习中最好用的提升方法：Boosting与AdaBoost
 
-https://www.zhihu.com/question/26709273/
+https://mp.weixin.qq.com/s/Jnh7yIOmzbTvWk77zh2-lA
 
-蒙提霍尔问题（又称三门问题、山羊汽车问题）的正解是什么？
-
-https://zhuanlan.zhihu.com/p/21461266
-
-数学杂谈——“三门问题”：Monty Hall Problem
-
-https://zhuanlan.zhihu.com/p/23338174
-
-蒙提霍尔问题/三门问题（Monty Hall problem）
-
-https://mp.weixin.qq.com/s/xHm4AjopGKSUE0-uAk5IHg
-
-用概率论告诉你：直觉到底有多不靠谱。包括了三门问题和本福特定律。
+周志华：Boosting学习理论的探索——一个跨越30年的故事

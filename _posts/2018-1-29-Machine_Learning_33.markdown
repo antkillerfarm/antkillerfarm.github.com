@@ -4,37 +4,31 @@ title:  机器学习（三十三）——机器学习的算法体系&相关术�
 category: ML 
 ---
 
-# Adaboost（续）
+# t-SNE（续）
 
-参考：
+https://yq.aliyun.com/articles/70733
 
-https://mp.weixin.qq.com/s/G06VDc6iTwmNGsH4IfSeJQ
+比PCA降维更高级——（R/Python）t-SNE聚类算法实践指南
 
-Adaboost从原理到实现
+https://mp.weixin.qq.com/s/7Vy7l1YyBT7rMYW2i1AsuA
 
-https://mp.weixin.qq.com/s/PZ-1fkNvdJmv_8zLbvoW1g
+线性判别分析(LDA)原理详解
 
-Adaboost算法原理小结
+https://mp.weixin.qq.com/s/cnzQ7XepftDOZXslCf1MUA
 
-https://mp.weixin.qq.com/s/KoOUgwXLOfJfOjWhbFX52Q
+你真的会用t-SNE么？有关t-SNE的小技巧
 
-如果Boosting你懂，那Adaboost你懂么？
+https://mp.weixin.qq.com/s/lbpe2NO1m8S38wpnp47BEg
 
-https://mp.weixin.qq.com/s/Joz2FpGgBY0tC8lpoFz8Mw
+通过可视化隐藏表示，更好地理解神经网络
 
-AdaBoost元算法如何提高分类性能——机器学习实战
+https://mp.weixin.qq.com/s/F08aOjKsVdRInN6GPNJ7cA
 
-https://mp.weixin.qq.com/s/MLEVUKse5usmKIWJF-yfOQ
+t-SNE：最好的降维方法之一
 
-通俗易懂讲解自适应提升算法AdaBoost
+https://mp.weixin.qq.com/s/qHOmUJgalvxwEBCBiiR7ig
 
-https://mp.weixin.qq.com/s/VuDAdeVsoZsTokh3n_wWFw
-
-一文详解机器学习中最好用的提升方法：Boosting与AdaBoost
-
-https://mp.weixin.qq.com/s/Jnh7yIOmzbTvWk77zh2-lA
-
-周志华：Boosting学习理论的探索——一个跨越30年的故事
+t-SNE
 
 # 机器学习的算法体系&相关术语表
 

@@ -398,24 +398,6 @@ https://zhuanlan.zhihu.com/p/138443415
 
 从UMA Tracker(CVPR2020)出发谈谈SOT类MOT算法
 
-# L2 Normalization
+https://mp.weixin.qq.com/s/lj926JcCYX8qbUOBTRsQIw
 
-L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：
-
-$$x=[x_1,x_2,\dots,x_d]\\
-y=[y_1,y_2,\dots,y_d]\\
-y=\frac{x}{\sqrt{\sum_{i=1}^dx_i^2}}=\frac{x}{\sqrt{x^Tx}}
-$$
-
-对于多维L2 Normalization几乎未曾提及，这里以3维tensor：A[width, height, channel]为例介绍一下多维L2 Normalization的计算方法。
-
-多维L2 Normalization有一个叫axis(有时也叫dim)的参数，如果axis=0的话，实际上就是将整个tensor flatten之后，再L2 Normalization。这个是比较简单的。
-
-这里说说axis=3的情况。axis=3意味着对channel进行Normalization，也就是：
-
-$$B_{xy}=\sum_{z=0}^Z \sqrt{A_{xyz}^2}\\
-C_{xyz}=\frac{A_{xyz}}{B_{xy}}\\
-D_{xyz}=C_{xyz} \cdot S_{z}
-$$
-
-一般来说，求出C被称作L2 Normalization，而求出D被称作L2 Scale Normalization，S被称为Scale。
+实时多人追踪论文--MOTDT

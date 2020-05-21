@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十九）——时间序列分析（2）, 运筹学, 强连通分量算法, 异常检测
+title:  机器学习（三十九）——时间序列分析（2）, 运筹学, 强连通分量算法, 异常检测, 图论, 数据清洗, 三门问题
 category: ML 
 ---
 
@@ -285,3 +285,95 @@ https://mp.weixin.qq.com/s/EOBjLqvi_WcSjiDb8b5Nwg
 https://mp.weixin.qq.com/s/uz5hjoG-m2PpnQxXZbHbFw
 
 深度学习中的异常实例检测:综述论文
+
+# 图论
+
+## 基本概念
+
+**图(Graph)**，是一种由若干个结点(Node)及连接两个结点的边(Edge)所构成的图形，用于刻画不同结点之间的关系。
+
+Graph非常适合用于描述non-Euclidean space的数据：
+
+![](/images/img3/graph.png)
+
+BFS：Breadth First Search
+
+DFS：Depth First Search
+
+## 参考
+
+https://mp.weixin.qq.com/s/LqCfwf90bzZKVMLLY5dbXA
+
+图数据分析与可视化，538页pdf
+
+https://mp.weixin.qq.com/s/zOdy-1vCJD_dPFSoe0ELFA
+
+图论与图学习（一）：图的基本概念
+
+https://mp.weixin.qq.com/s/0ZdS1WOSDZiXnxP8fybBAw
+
+图论与图学习（二）：图算法
+
+https://mp.weixin.qq.com/s/BkKw2C3n9WsmIchJkkZxUw
+
+从七桥问题开始：全面介绍图论及其应用
+
+https://mp.weixin.qq.com/s/ZDY3Yt67eXK5pjXgvJkkyQ
+
+图论的各种基本算法
+
+https://mp.weixin.qq.com/s/2h1dgvPbYKBOYZPiixg9iw
+
+手把手：四色猜想、七桥问题…程序员眼里的图论，了解下？
+
+https://mp.weixin.qq.com/s/ra9v1pgFsbOcJrtONoZNvQ
+
+图论基础与图存储结构
+
+https://mp.weixin.qq.com/s/Y7qZlJdJ8fav5BXFGwdSOQ
+
+Graph Analysis and Its Application
+
+https://mp.weixin.qq.com/s/VdvvQetxAvkiNF04hV9PeA
+
+图搜索算法介绍(RRT/RRT*)
+
+https://mp.weixin.qq.com/s/dTI3BdgixVTAFsnxtKjq0A
+
+常见图算法介绍
+
+# 数据清洗
+
+https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g
+
+数据挖掘中的数据清洗方法大全
+
+https://mp.weixin.qq.com/s/FHdo2DTapoTryA-hOM-y_w
+
+还在为数据清洗抓狂？这里有一个简单实用的清洗代码集
+
+https://mp.weixin.qq.com/s/r7ngZOM9tO-_OSfvs2aDJw
+
+数据清洗&预处理入门完整指南
+
+https://mp.weixin.qq.com/s/r4ycLnjOl5hSPBMwKpnmsQ
+
+如何打造高质量的NLP数据集
+
+# 三门问题
+
+https://www.zhihu.com/question/26709273/
+
+蒙提霍尔问题（又称三门问题、山羊汽车问题）的正解是什么？
+
+https://zhuanlan.zhihu.com/p/21461266
+
+数学杂谈——“三门问题”：Monty Hall Problem
+
+https://zhuanlan.zhihu.com/p/23338174
+
+蒙提霍尔问题/三门问题（Monty Hall problem）
+
+https://mp.weixin.qq.com/s/xHm4AjopGKSUE0-uAk5IHg
+
+用概率论告诉你：直觉到底有多不靠谱。包括了三门问题和本福特定律。

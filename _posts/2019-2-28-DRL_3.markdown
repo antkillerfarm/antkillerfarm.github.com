@@ -60,6 +60,12 @@ $$| \color{blue}{r+\gamma \max_{a'}Q(s',a',w^-)}-Q(s,a,w) |$$
 
 优先级越高，那么采样的概率就越高。
 
+参考：
+
+https://mp.weixin.qq.com/s/qPk3hbFDcuWIanddvBAUNA
+
+优先级经验回放(Prioritized Experience Replay)论文阅读、原理及实现
+
 ## Dueling Network
 
 Dueling Network将Q网络分成了两个通道：

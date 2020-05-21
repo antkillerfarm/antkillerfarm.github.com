@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十四）——Normalization进阶, Regularization
+title:  深度学习（十四）——Normalization进阶
 category: DL 
 ---
 
@@ -248,6 +248,28 @@ https://mp.weixin.qq.com/s/44RvXEYYc5lebsHs_ooswg
 
 全面解读Group Normalization
 
+# L2 Normalization
+
+L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：
+
+$$x=[x_1,x_2,\dots,x_d]\\
+y=[y_1,y_2,\dots,y_d]\\
+y=\frac{x}{\sqrt{\sum_{i=1}^dx_i^2}}=\frac{x}{\sqrt{x^Tx}}
+$$
+
+对于多维L2 Normalization几乎未曾提及，这里以3维tensor：A[width, height, channel]为例介绍一下多维L2 Normalization的计算方法。
+
+多维L2 Normalization有一个叫axis(有时也叫dim)的参数，如果axis=0的话，实际上就是将整个tensor flatten之后，再L2 Normalization。这个是比较简单的。
+
+这里说说axis=3的情况。axis=3意味着对channel进行Normalization，也就是：
+
+$$B_{xy}=\sum_{z=0}^Z \sqrt{A_{xyz}^2}\\
+C_{xyz}=\frac{A_{xyz}}{B_{xy}}\\
+D_{xyz}=C_{xyz} \cdot S_{z}
+$$
+
+一般来说，求出C的运算被称作L2 Normalization，而求出D的运算被称作L2 Scale Normalization，S被称为Scale。
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/69659844
@@ -261,16 +283,6 @@ Conditional Batch Normalization详解
 https://mp.weixin.qq.com/s/w_W4NwkCRdbyZbEwMlrFRQ
 
 超越BN和GN！谷歌提出新的归一化层：FRN
-
-# Regularization
-
-DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：
-
-$$loss(W;x;y) = loss_D(W;x;y) + \lambda_R R(W) + \lambda_g \sum_{l=1}^{L} R_g(W_l^{(G)})$$
-
-$$R_g(w^{(g)}) = \sum_{g=1}^{G} \lVert w^{(g)} \rVert_g = \sum_{g=1}^{G} \sum_{i=1}^{|w^{(g)}|} {(w_i^{(g)})}^2$$
-
-Group Regularization也叫做Block Regularization或Structured Regularization。
 
 # fine-tuning
 

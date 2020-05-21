@@ -232,6 +232,10 @@ https://mp.weixin.qq.com/s/HEBO9uZMD2CZW_Y-8eBK1A
 
 YOLOv1/v2/v3简述
 
+https://mp.weixin.qq.com/s/5IfT9cWVbZq4cwHPLes5vA
+
+你对YOLOV3损失函数真的理解正确了吗？
+
 # Tiny-YOLO
 
 YOLO系列还包括了一个速度更快但精度稍低的嵌入式版本系列——Tiny-YOLO。

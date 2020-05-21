@@ -1,12 +1,128 @@
 ---
 layout: post
-title:  机器学习（三十二）——t-SNE, Adaboost
+title:  机器学习（三十二）——t-SNE
 category: ML 
 ---
 
+# CRF（续）
+
+https://mp.weixin.qq.com/s/79M6ehrQTiUc0l_sO9fUqA
+
+用于序列标注问题的条件随机场（Conditional Random Field, CRF）
+
+https://zhuanlan.zhihu.com/p/78006020
+
+NCRF++学习笔记
+
+https://zhuanlan.zhihu.com/p/91031332
+
+用腻了CRF，试试LAN吧？
+
+https://zhuanlan.zhihu.com/p/100576406
+
+条件随机场及Mininum Risk Training
+
+https://www.jianshu.com/p/55755fc649b1
+
+如何轻松愉快地理解条件随机场（CRF）？
+
+https://zhuanlan.zhihu.com/p/34261803
+
+白话条件随机场（conditional random field）
+
+https://mp.weixin.qq.com/s/K-J4hbPpl8RQtpu1X6k1QQ
+
+CRF原理及实现代码
+
+## BiLSTM+CRF
+
+![](/images/img2/BiLSTM_CRF.jpg)
+
+https://mp.weixin.qq.com/s/vbBNYzKq6AnsDTy8lFsKAw
+
+TensorFlow RNN深度学习BiLSTM+CRF实现sequence labeling序列标注
+
+https://www.jianshu.com/p/97cb3b6db573
+
+BiLSTM模型中CRF层的运行原理-1
+
+https://www.jianshu.com/p/7c83478eeb56
+
+BiLSTM模型中CRF层的运行原理-2
+
+https://www.zhihu.com/question/62399257
+
+如何理解LSTM后接CRF？
+
+https://mp.weixin.qq.com/s/1FCWMRapGMXjxTLoA2fYCg
+
+CRF和LSTM模型在序列标注上的优劣？
+
+https://zhuanlan.zhihu.com/p/97676647
+
+手撕BiLSTM-CRF
+
+https://zhuanlan.zhihu.com/p/44042528
+
+最通俗易懂的BiLSTM-CRF模型中的CRF层介绍
+
+https://mp.weixin.qq.com/s/0WVqQkvzb6TYFA9gEh73ZQ
+
+BiLSTM上的CRF，用命名实体识别任务来解释CRF（1）
+
+https://mp.weixin.qq.com/s/VG5C9NFMejetrj60KIbWug
+
+BiLSTM上的CRF，用命名实体识别任务来解释CRF（2）损失函数
+
+https://mp.weixin.qq.com/s/PaunoXYUz13s0lbgzcqE9A
+
+BiLSTM上的CRF，用命名实体识别任务来解释CRF（3）推理
+
+https://mp.weixin.qq.com/s/xJ7MpUkVfLQKxRYyJs29NQ
+
+BiLSTM上的CRF，用命名实体识别任务来解释CRF（4）
+
 # t-SNE
 
-## SNE（续）
+## 概述
+
+t-SNE(t-distributed stochastic neighbor embedding)是用于降维的一种机器学习算法，是由Laurens van der Maaten和Geoffrey Hinton在08年提出来。此外，t-SNE 是一种非线性降维算法，非常适用于高维数据降维到2维或者3维，进行可视化。
+
+论文：
+
+《Visualizing Data using t-SNE》
+
+以下是几种常见的降维算法：
+
+1.主成分分析（线性）
+
+2.t-SNE（非参数/非线性）
+
+3.萨蒙映射（非线性）
+
+4.等距映射（非线性）
+
+5.局部线性嵌入（非线性）
+
+6.规范相关分析（非线性）
+
+7.SNE（非线性）
+
+8.最小方差无偏估计（非线性）
+
+9.拉普拉斯特征图（非线性）
+
+PCA的相关内容参见《机器学习（十六）》。
+
+## SNE
+
+在介绍t-SNE之前，我们首先介绍一下SNE（Stochastic Neighbor Embedding）的原理。
+
+假设我们有数据集X，它共有N个数据点。每一个数据点$$x_i$$的维度为D，我们希望降低为d维。在一般用于可视化的条件下，d的取值为 2，即在平面上表示出所有数据。
+
+SNE将数据点间的欧几里德距离转化为条件概率来表征相似性：
+
+$$p_{j\mid i}=\frac{\exp(-\|x_i-x_j\|^2/2\sigma^2)}{\sum_{k\neq i}\exp(-\|x_i-x_k\|^2/2\sigma^2)}$$
 
 如果以数据点在$$x_i$$为中心的高斯分布所占的概率密度为标准选择近邻，那么$$p_{j\mid i}$$就代表$$x_i$$将选择$$x_j$$作为它的近邻。对于相近的数据点，条件概率$$p_{j\mid i}$$是相对较高的，然而对于分离的数据点，$$p_{j\mid i}$$几乎是无穷小量（若高斯分布的方差$$\sigma_i$$选择合理）。
 
@@ -117,78 +233,3 @@ https://mp.weixin.qq.com/s/_DXMlNZHVKm2jMnLGQFM_Q
 http://www.datakit.cn/blog/2017/02/05/t_sne_full.html
 
 t-SNE完整笔记
-
-https://yq.aliyun.com/articles/70733
-
-比PCA降维更高级——（R/Python）t-SNE聚类算法实践指南
-
-https://mp.weixin.qq.com/s/7Vy7l1YyBT7rMYW2i1AsuA
-
-线性判别分析(LDA)原理详解
-
-https://mp.weixin.qq.com/s/cnzQ7XepftDOZXslCf1MUA
-
-你真的会用t-SNE么？有关t-SNE的小技巧
-
-https://mp.weixin.qq.com/s/lbpe2NO1m8S38wpnp47BEg
-
-通过可视化隐藏表示，更好地理解神经网络
-
-https://mp.weixin.qq.com/s/F08aOjKsVdRInN6GPNJ7cA
-
-t-SNE：最好的降维方法之一
-
-https://mp.weixin.qq.com/s/qHOmUJgalvxwEBCBiiR7ig
-
-t-SNE
-
-# Adaboost
-
-Adaboost是Yoav Freund和Robert Schapire于1997年提出的算法。两人后来因为该算法被授予Gödel Prize（2003）。
-
->Yoav Freund，UCSC博士，UCSD教授。
-
->Robert Elias Schapire，MIT博士。先后供职于Princeton University、AT&T Labs和Microsoft Research。
-
->Gödel Prize，由欧洲计算机学会（EATCS）与美国计算机学会基础理论专业组织（ACM SIGACT）于1993年共同设立，颁给理论计算机领域最杰出的学术论文。其名称取自Kurt Gödel。
-
->Kurt Friedrich Gödel，1906～1978，奥地利逻辑学家，数学家，哲学家，后加入美国藉。维也纳大学博士（1930）。在逻辑学方面，他是继Aristotle、Gottlob Frege之后最伟大的逻辑学家。在数学方面，他以哥德尔不完备定理著称，和Bertrand Russell、 David Hilbert、Georg Cantor齐名。
-
-Adaboost既可用于分类问题，也可用于回归问题。这里仅针对二分类问题进行讨论。
-
-假设我们有数据集$$\{(x_1, y_1), \ldots, (x_N, y_N)\}$$，其中$$y_i \in \{-1, 1\}$$，还有一系列弱分类器$$\{k_1, \ldots, k_L\}$$。
-
-由于Boost算法是个串行算法，每次迭代就会加入一个弱分类器。这样m-1次迭代之后的分类器如下所示：
-
-$$C_{(m-1)}(x_i) = \alpha_1k_1(x_i) + \cdots + \alpha_{m-1}k_{m-1}(x_i)$$
-
-而m次迭代之后的分类器则为：
-
-$$C_{m}(x_i) = C_{(m-1)}(x_i) + \alpha_m k_m(x_i)$$
-
-如何选择新加入的弱分类器$$k_m$$和对应的权重$$\alpha_m$$呢？我们可以定义误差E如下所示：
-
-$$E = \sum_{i=1}^N e^{-y_i C_m(x_i)}$$
-
-令$$w_i^{(1)} = 1,w_i^{(m)} = e^{-y_i C_{m-1}(x_i)}$$，则：
-
-$$E = \sum_{i=1}^N w_i^{(m)}e^{-y_i\alpha_m k_m(x_i)}$$
-
-因为$$k_m$$分类正确时，$$y_i k_m(x_i) = 1$$，分类错误时，$$y_i k_m(x_i) = -1$$。所以：
-
-$$E = \sum_{y_i = k_m(x_i)} w_i^{(m)}e^{-\alpha_m} + \sum_{y_i \neq k_m(x_i)} w_i^{(m)}e^{\alpha_m}\\= \sum_{i=1}^N w_i^{(m)}e^{-\alpha_m} + \sum_{y_i \neq k_m(x_i)} w_i^{(m)}(e^{\alpha_m}-e^{-\alpha_m})$$
-
-可以看出和$$k_m$$相关的实际上只有上式的右半部分。显然，使得$$\sum_{y_i \neq k_m(x_i)} w_i^{(m)}$$最小的$$k_m$$，也会令E最小，这也就是我们选择加入的$$k_m$$。
-
-对E求导，得：
-
-$$\frac{d E}{d \alpha_m} = \frac{d (\sum_{y_i = k_m(x_i)} w_i^{(m)}e^{-\alpha_m} + \sum_{y_i \neq k_m(x_i)} w_i^{(m)}e^{\alpha_m}) }{d \alpha_m}$$
-
-令导数为0，可得：
-
-$$\alpha_m = \frac{1}{2}\ln\left(\frac{\sum_{y_i = k_m(x_i)} w_i^{(m)}}{\sum_{y_i \neq k_m(x_i)} w_i^{(m)}}\right)$$
-
-令$$\epsilon_m = \sum_{y_i \neq k_m(x_i)} w_i^{(m)} / \sum_{i=1}^N w_i^{(m)}$$，则：
-
-$$\alpha_m = \frac{1}{2}\ln\left( \frac{1 - \epsilon_m}{\epsilon_m}\right)$$
-
