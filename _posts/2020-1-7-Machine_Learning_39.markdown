@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十九）——时间序列分析（2）, 运筹学, 强连通分量算法, 异常检测, 图论, 数据清洗, 三门问题
+title:  机器学习（三十九）——时间序列分析（2）, 运筹学, 强连通分量算法, 异常检测, 图论
 category: ML 
 ---
 
@@ -290,15 +290,31 @@ https://mp.weixin.qq.com/s/uz5hjoG-m2PpnQxXZbHbFw
 
 ## 基本概念
 
-**图(Graph)**，是一种由若干个结点(Node)及连接两个结点的边(Edge)所构成的图形，用于刻画不同结点之间的关系。
+**图(Graph)**，是一种由若干个结点(Node)及连接两个结点的边(Edge)所构成的图形，用于刻画不同结点之间的关系。Graph有时也被称为Network。本文如无特指，则这两者均为同义词。
 
 Graph非常适合用于描述non-Euclidean space的数据：
 
 ![](/images/img3/graph.png)
 
+与Network相关的任务主要包括：
+
+- Node classification：预测结点的类型。
+
+- Link prediction：预测两个结点的连接性。
+
+- Community detection：识别有密切关系的结点簇（clusters）。
+
+- Network similarity：度量两个Node/Network的相似性。
+
+术语：
+
 BFS：Breadth First Search
 
 DFS：Depth First Search
+
+Node embedding：将结点映射到高维空间，以使相似的结点，距离也较近。
+
+
 
 ## 参考
 
@@ -341,39 +357,3 @@ https://mp.weixin.qq.com/s/VdvvQetxAvkiNF04hV9PeA
 https://mp.weixin.qq.com/s/dTI3BdgixVTAFsnxtKjq0A
 
 常见图算法介绍
-
-# 数据清洗
-
-https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g
-
-数据挖掘中的数据清洗方法大全
-
-https://mp.weixin.qq.com/s/FHdo2DTapoTryA-hOM-y_w
-
-还在为数据清洗抓狂？这里有一个简单实用的清洗代码集
-
-https://mp.weixin.qq.com/s/r7ngZOM9tO-_OSfvs2aDJw
-
-数据清洗&预处理入门完整指南
-
-https://mp.weixin.qq.com/s/r4ycLnjOl5hSPBMwKpnmsQ
-
-如何打造高质量的NLP数据集
-
-# 三门问题
-
-https://www.zhihu.com/question/26709273/
-
-蒙提霍尔问题（又称三门问题、山羊汽车问题）的正解是什么？
-
-https://zhuanlan.zhihu.com/p/21461266
-
-数学杂谈——“三门问题”：Monty Hall Problem
-
-https://zhuanlan.zhihu.com/p/23338174
-
-蒙提霍尔问题/三门问题（Monty Hall problem）
-
-https://mp.weixin.qq.com/s/xHm4AjopGKSUE0-uAk5IHg
-
-用概率论告诉你：直觉到底有多不靠谱。包括了三门问题和本福特定律。

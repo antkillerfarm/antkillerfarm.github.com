@@ -230,6 +230,10 @@ https://www.w3.org/TR/jsgf/
 
 虽然音子只有60个，但是排列组合后的三音子态就多达几千个了。
 
+综上，GMM-HMM的本质就是：**用GMM提取特征，而用HMM进行分类**。
+
+所以，它的后续演化也就不难猜测了——GMM被RNN所取代，而HMM则被CTC loss所取代。
+
 参考：
 
 https://blog.csdn.net/abcjennifer/article/details/27346787

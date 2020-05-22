@@ -10,10 +10,6 @@ https://mp.weixin.qq.com/s/79M6ehrQTiUc0l_sO9fUqA
 
 用于序列标注问题的条件随机场（Conditional Random Field, CRF）
 
-https://zhuanlan.zhihu.com/p/78006020
-
-NCRF++学习笔记
-
 https://zhuanlan.zhihu.com/p/91031332
 
 用腻了CRF，试试LAN吧？
@@ -36,7 +32,13 @@ CRF原理及实现代码
 
 ## BiLSTM+CRF
 
+上文已经提到CRF/MEMM中，有个概念叫做特征函数。和其他机器学习算法一样，这里的特征函数也是和领域相关的，并没有一个通用的做法。
+
+DL兴起之后，一个很自然的想法就是，我们能不能**用神经网络来作为特征函数**呢？于是就有了BiLSTM+CRF：
+
 ![](/images/img2/BiLSTM_CRF.jpg)
+
+这里使用BiLSTM来提取序列特征，用CRF来预测label。
 
 https://mp.weixin.qq.com/s/vbBNYzKq6AnsDTy8lFsKAw
 

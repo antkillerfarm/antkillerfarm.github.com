@@ -122,7 +122,7 @@ Maximum Entropy Markov Model是一种判别模型。它和HMM的联系和区别�
 
 单纯的ME，由于没有利用历史信息，对于序列问题的效果并不好。因此，仿照HMM，又引入了Markov Model，这也就是MEMM得名的原因。
 
-我们回过头来，再看《机器学习（三十）》中的图：
+我们回过头来，再看《机器学习（三十）》中的这张图：
 
 ![](/images/img3/PGM.jpg)
 
@@ -152,7 +152,7 @@ $$P(I|O)=\prod_{t=1}^n\frac{\exp(\sum_a \lambda_a f_a(i,o))}{Z(i,o)}\tag{2}$$
 
 这里的$$\lambda_a$$就是模型需要学习的参数。
 
-MEMM存在labeling bias问题。
+MEMM存在**labeling bias**问题。
 
 ![](/images/img3/MEMM.png)
 
@@ -194,17 +194,25 @@ https://zhuanlan.zhihu.com/p/33397147
 
 # CRF
 
+## 概述
+
 条件随机场(Conditional Random Field)由Lafferty等人于2001年提出，结合了最大熵模型和隐马尔可夫模型的特点，是一种无向图模型，近年来在分词、词性标注和命名实体识别等序列标注任务中取得了很好的效果。
 
 上面我们为了解释HMM和MEMM的区别，对MEMM做了一定的简化，事实上MEMM还可以是这样的：
 
 ![](/images/img3/MEMM_2.png)
 
-CRF是一种特殊的MRF。MRF定义的是联合概率，而CRF定义的是条件概率，故名。
+这表明，MEMM可以利用观测序列的全序列信息，而不仅仅是当前的观测值。至于MEMM的隐藏状态，则还是只依赖上一个隐藏状态。
 
-在CRF中，最常用的是Linear-chain CRF。有的时候，Linear-chain CRF也被不加区分的简称为CRF。下文如无特指，CRF均指的是Linear-chain CRF，它的概率图如下所示：
+CRF是一种特殊的MRF。**MRF定义的是联合概率，而CRF定义的是条件概率**，故名。
+
+在CRF中，最常用的是Linear-chain CRF。
 
 ![](/images/img3/CRF.png)
+
+Linear-chain CRF和MEMM类似，也对隐藏状态的依赖进行了约束：只依赖上一个隐藏状态。
+
+有的时候，Linear-chain CRF也被不加区分的简称为CRF。下文如无特指，CRF均指的是Linear-chain CRF，它的概率图如下所示：
 
 根据MRF的公式（公式1）和MEMM的公式（公式2），我们可以得到CRF的公式如下：
 
@@ -212,15 +220,13 @@ $$P(I|O)=\frac{\prod_{t=1}^n\exp(\sum_a \lambda_a f_a(i,o))}{Z(i,o)}$$
 
 由于Z位置的不同，CRF的概率是全局归一化的，而MEMM是局部归一化的，因此CRF没有labeling bias的问题。
 
-参考：
+## CRF的训练和推断
 
-https://zhuanlan.zhihu.com/p/35969159
+CRF/MEMM由于是判别模型，其训练过程和普通分类问题一致，没有特别之处。
 
-如何轻松愉快的理解条件随机场（CRF）？
+CRF/MEMM的推断仍然使用Viterbi算法，选择最大概率路径即可。区别仅在于两者计算概率的公式不同，这在上文已有讨论，不再赘述。
 
-https://www.cnblogs.com/en-heng/p/6214023.html
-
-条件随机场CRF
+## 相关工具
 
 http://www.chokkan.org/software/crfsuite/
 
@@ -233,6 +239,20 @@ A python binding for crfsuite
 http://taku910.github.io/crfpp/
 
 CRF++: Yet Another CRF toolkit
+
+https://zhuanlan.zhihu.com/p/78006020
+
+NCRF++学习笔记
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/35969159
+
+如何轻松愉快的理解条件随机场（CRF）？
+
+https://www.cnblogs.com/en-heng/p/6214023.html
+
+条件随机场CRF
 
 https://mp.weixin.qq.com/s/1rx_R1BGRVAIDqKixNLMQA
 

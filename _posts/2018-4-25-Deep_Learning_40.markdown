@@ -380,6 +380,10 @@ https://mp.weixin.qq.com/s/YtL7GeIGYm9xtdofnabu1g
 
 如何选择最合适的数据增强操作
 
+https://zhuanlan.zhihu.com/p/43665254
+
+数据增广之详细理解
+
 # Spatial Transformer Networks
 
 论文：

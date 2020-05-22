@@ -310,6 +310,10 @@ https://mp.weixin.qq.com/s/LF8TiVccYcm4B6krCOGVTQ
 
 ALBERT论文图解介绍
 
+https://mp.weixin.qq.com/s/QdrwlaFZi3VRGptw4cYJSQ
+
+别再蒸馏3层BERT了！变矮又能变瘦的DynaBERT了解一下
+
 ## AR vs AE
 
 **AR**: Aotoregressive Lanuage Modeling，又叫自回归语言模型。它指的是，依据前面(或后面)出现的tokens来预测当前时刻的token，代表模型有ELMO、GTP等。

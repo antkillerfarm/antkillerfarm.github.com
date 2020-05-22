@@ -276,6 +276,10 @@ https://zhuanlan.zhihu.com/p/109677830
 
 Distance-IoU Loss
 
+https://zhuanlan.zhihu.com/p/94799295
+
+IoU、GIoU、DIoU、CIoU损失函数的那点事儿
+
 # 目标检测进阶
 
 https://mp.weixin.qq.com/s/1nlOJ7X9ogBHTl1j2adqyg
