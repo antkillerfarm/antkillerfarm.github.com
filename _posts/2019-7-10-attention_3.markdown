@@ -168,6 +168,10 @@ https://mp.weixin.qq.com/s/4KCcFHBEYJ3nWaHplqVRNA
 
 万字长文带你一览ICLR2020最新Transformers进展（下）
 
+https://mp.weixin.qq.com/s/8tVste5Wuwy4o4jh-jx5hA
+
+Transformer温故知新
+
 # 预训练语言模型进化史
 
 ![](/images/img3/BERT.jpg)

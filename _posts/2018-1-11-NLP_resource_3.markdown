@@ -332,10 +332,6 @@ http://www.jianshu.com/p/f45c3540c56e
 
 Chatbot架构
 
-https://mp.weixin.qq.com/s/6cTG9347dOLxiUs_-tdpnQ
-
-百度开源：语义匹配应用介绍和源代码
-
 https://mp.weixin.qq.com/s/zfgx2iViwFm-tzBGvgHVuw
 
 百度开源：语义表示应用介绍和源代码

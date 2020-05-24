@@ -210,10 +210,6 @@ http://mp.weixin.qq.com/s/Or6oDt0aZFlnlMr8EBr-xQ
 
 三角兽首席科学家王宝勋：热度之下的对话生成
 
-https://mp.weixin.qq.com/s/Xnea50Eisq9rzhGFa1iTFA
-
-DRr-Net：基于动态重读机制的句子语义匹配方法
-
 https://mp.weixin.qq.com/s/M_UE4yI-ZDXhGtWXprGYjA
 
 自然语言处理常识推理综述论文
@@ -389,3 +385,11 @@ https://mp.weixin.qq.com/s/efID_R9ajL34P95eGKkrQA
 https://github.com/THUNLP-MT/TG-Reading-List
 
 文本生成公开数据集/开源工具/经典论文详细列表分享
+
+https://mp.weixin.qq.com/s/21bhPa4ECNFmUcF0GOQSkw
+
+从字符级的语言建模开始，了解语言模型与序列建模的基本概念
+
+https://speechlab.sjtu.edu.cn/pages/sz128/homepage/year/10/27/survey-on-grammar-retrieval/
+
+论文调研：基于“规则、槽值”检索的口语语义理解

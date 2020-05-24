@@ -265,3 +265,9 @@ https://mp.weixin.qq.com/s/_eFtWkHfsdsw9O28-I_NPQ
 https://mp.weixin.qq.com/s/cBjB_lhnpbkwjnoDw2QvOQ
 
 原来，自动搅拌杯的原理比想象中的还要简单！（热电效应）
+
+----
+
+https://mp.weixin.qq.com/s/UDjHYZCpZjSDCDmBDI8y8Q
+
+一粒爆米花的传奇

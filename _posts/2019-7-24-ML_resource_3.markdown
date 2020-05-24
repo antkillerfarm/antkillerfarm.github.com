@@ -239,3 +239,7 @@ https://mp.weixin.qq.com/s/_rybr3Pnmt6Rr3RWxGTCXQ
 https://www.w3cschool.cn/article/leijuncode
 
 分享雷军22年前编写的代码
+
+https://mp.weixin.qq.com/s/movz5aesYdZZZHle-hHRIw
+
+诞生于穿孔纸带时期的语言，ALGOL 60今年60岁了

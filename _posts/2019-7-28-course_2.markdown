@@ -148,6 +148,8 @@ w/o：without
 
 N.B.:nota bene 注意,留心
 
+Ad-hoc：for this purpose only
+
 ----
 
 Bill is short for William

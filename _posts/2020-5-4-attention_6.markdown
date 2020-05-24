@@ -32,6 +32,10 @@ NLP中的Mask全解
 
 # Attention进阶
 
+https://zhuanlan.zhihu.com/p/40920384
+
+真正的完全图解Seq2Seq Attention模型
+
 https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ
 
 深度学习注意力机制-Attention in Deep learning-附101页PPT

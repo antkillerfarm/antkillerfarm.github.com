@@ -316,14 +316,6 @@ https://zhuanlan.zhihu.com/p/52876883
 
 深度CTR预估模型中的特征自动组合机制演化简史
 
-https://mp.weixin.qq.com/s/OFCzl8stFU5b1MWrkDU7NA
-
-阿里电商推荐中如何进行特征蒸馏提升模型效果
-
-https://mp.weixin.qq.com/s/ZNjC30F28uX2lBkHBAAU3g
-
-双DNN排序模型：在线知识蒸馏在爱奇艺推荐的实践
-
 https://mp.weixin.qq.com/s/Ni42SEukRBGDUHu_bh3Lig
 
 基于LSTM模型的广告库存预估算法
@@ -367,6 +359,10 @@ https://mp.weixin.qq.com/s/Bpw-q3wISbCAKHsuYQo0QQ
 https://mp.weixin.qq.com/s/D57jP5EwIx4Y1n4mteGOjQ
 
 深度学习推荐系统中各类流行的Embedding方法（上）
+
+https://mp.weixin.qq.com/s/N76XuNJ7yGzdP6NHk2Rs-w
+
+深度学习推荐系统中各类流行的Embedding方法（下）
 
 https://mp.weixin.qq.com/s/VHRV1Z6F8-3o6b-3v-5_BA
 

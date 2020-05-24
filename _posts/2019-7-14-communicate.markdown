@@ -168,6 +168,10 @@ https://mp.weixin.qq.com/s/unzge23Aw0jrvBST-iW0Qw
 
 HTTP/3的过去、现在和未来
 
+https://mp.weixin.qq.com/s/MHYMOYHqhrAbQ0xtTkV2ig
+
+HTTP/3原理实战
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。
@@ -435,3 +439,7 @@ https://mp.weixin.qq.com/s/D-rh9m7G-ERjWEEG6BQJNg
 https://mp.weixin.qq.com/s/qRW344wWgS9PJ6UCwknS8g
 
 Local GAN
+
+https://mp.weixin.qq.com/s/-rwzlX-WipaIdV6ESOimxw
+
+GAN加持！英伟达发布“山寨”游戏创造器，已完美复现《吃豆人》

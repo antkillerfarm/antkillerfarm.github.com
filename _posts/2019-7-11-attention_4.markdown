@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/mPPnPwAvPzvJtv0B8jjDbw
 
 详解ERNIE-Baidu进化史及应用场景
 
+https://mp.weixin.qq.com/s/r5Vk_hc5-jsZ69y0dfqIfg
+
+登顶GLUE的百度ERNIE再突破：语言生成预训练模型ERNIE-GEN刷新SOTA
+
 ## XLNet
 
 https://mp.weixin.qq.com/s/29y2bg4KE-HNwsimD3aauw

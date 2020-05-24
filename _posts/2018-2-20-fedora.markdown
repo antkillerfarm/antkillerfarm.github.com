@@ -299,23 +299,9 @@ https://mp.weixin.qq.com/s/I7C7cXFgxO7RO0Wpjjj3xQ
 
 一篇文章带你“重新认识”线程上下文切换怎么玩儿
 
-----
+https://mp.weixin.qq.com/s/DG7RjJ_HXSRb6nAZuoTz3g
 
-https://mp.weixin.qq.com/s/WZyuTtEfaTFLnCfvhOrp7g
-
-虚拟化原理和分类
-
-![](/images/img3/bare_metal.png)
-
-----
-
-https://mp.weixin.qq.com/s/n6D5_6K9TrnuXg3h6AiFNA
-
-华为“鸿蒙”所涉及的微内核到底是什么？一文带你认识微内核
-
-![](/images/img3/Monolithic_vs_Micro.jpg)
-
-![](/images/img3/UNIX.jpg)
+详解Linux中3个文件查找相关命令
 
 https://www.cnblogs.com/liqiuhao/p/9450093.html
 
@@ -340,3 +326,21 @@ https://mp.weixin.qq.com/s/IucIsbJPo4eUUopV8xNN9w
 https://mp.weixin.qq.com/s/zBtdhjAOjwcJbGluccwOlA
 
 我和面试官之间关于操作系统的一场对弈！写了很久，希望对你有帮助！
+
+----
+
+https://mp.weixin.qq.com/s/WZyuTtEfaTFLnCfvhOrp7g
+
+虚拟化原理和分类
+
+![](/images/img3/bare_metal.png)
+
+----
+
+https://mp.weixin.qq.com/s/n6D5_6K9TrnuXg3h6AiFNA
+
+华为“鸿蒙”所涉及的微内核到底是什么？一文带你认识微内核
+
+![](/images/img3/Monolithic_vs_Micro.jpg)
+
+![](/images/img3/UNIX.jpg)

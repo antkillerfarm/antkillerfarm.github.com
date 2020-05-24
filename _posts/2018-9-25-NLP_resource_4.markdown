@@ -158,10 +158,6 @@ https://www.zhihu.com/question/46272554
 
 如何评价SyntaxNet
 
-https://mp.weixin.qq.com/s/PxyazOPKV3eB-qat8hM9ZQ
-
-神经网络语义匹配技术
-
 https://mp.weixin.qq.com/s/6_FHq8IrkAW_Y5FSYcJ0fw
 
 CMU与谷歌大脑联合出品：62页PPT带你理解SQuAD大赛冠军--QANet

@@ -202,6 +202,26 @@ https://zhuanlan.zhihu.com/p/141545370
 
 深度学习语义相似度系列：Ranking Similarity
 
+https://mp.weixin.qq.com/s/2UJQkPuhvFYT2jmuxLJ8VA
+
+实践篇：语义匹配在贝壳找房智能客服中的应用
+
+https://mp.weixin.qq.com/s/6cTG9347dOLxiUs_-tdpnQ
+
+百度开源：语义匹配应用介绍和源代码
+
+https://mp.weixin.qq.com/s/PxyazOPKV3eB-qat8hM9ZQ
+
+神经网络语义匹配技术
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650749368&idx=3&sn=fc20d9e6682c74227282df3133cea06c
+
+基于IR-transformer、IRGAN模型，解读搜狗语义匹配技术
+
+https://mp.weixin.qq.com/s/Xnea50Eisq9rzhGFa1iTFA
+
+DRr-Net：基于动态重读机制的句子语义匹配方法
+
 ## 表示型和交互型
 
 从模型的本质来看可以分为两种类型：表示型和交互型。表示型的模型会在最后一层对待匹配的两个句子进行相似度计算，交互型模型会尽早的让两个句子交互，充分应用交互特征。

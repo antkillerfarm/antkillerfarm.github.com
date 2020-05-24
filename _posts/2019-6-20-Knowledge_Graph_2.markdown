@@ -351,3 +351,7 @@ https://mp.weixin.qq.com/s/8mpc7AblZyRw7LCh35vL2g
 https://mp.weixin.qq.com/s/Zu_IPBQVJtcwNln-xvEZxQ
 
 DarkLabel：支持检测、跟踪、ReID数据集的标注软件
+
+https://mp.weixin.qq.com/s/5klwQCPtiZOwFJYHDOpWFg
+
+语义分割标注工具Semantic Segmentation Editor快速安装指南
