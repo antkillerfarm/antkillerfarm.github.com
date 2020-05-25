@@ -224,3 +224,7 @@ https://mp.weixin.qq.com/s/9hoM_yF96XxSbQHEP6oasw
 https://mp.weixin.qq.com/s/TnAZUjFSn7ATtRmBexJlXw
 
 文本生成评价方法 BLEU ROUGE CIDEr SPICE Perplexity METEOR
+
+https://mp.weixin.qq.com/s/n4OnRGkrn5DYuZUmmrmzpg
+
+NLG任务评价指标BLEU与ROUGE

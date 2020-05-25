@@ -282,6 +282,10 @@ https://mp.weixin.qq.com/s/IIsmVvlblyEj6Ijn77DneQ
 
 知识图谱中的实体摘要:算法、评价和应用，123页ppt
 
+https://mp.weixin.qq.com/s/wlk9UlgBze1QL9AlTKXEDg
+
+基于知识图谱嵌入的链接预测综述，43页pdf
+
 # AI工具+
 
 https://mp.weixin.qq.com/s/3eoN0YHI84oomdTZO6TrvQ

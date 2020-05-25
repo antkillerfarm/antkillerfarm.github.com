@@ -141,6 +141,12 @@ https://www.jianshu.com/p/95a8f035c86c
 
 这是各种优化方法逃离鞍点的动画。
 
+参考：
+
+https://mp.weixin.qq.com/s/Cava8C_s4JikR0BTHx__KQ
+
+神经网络逃离鞍点
+
 ## 欠拟合和过拟合
 
 在DL领域，欠拟合意味着神经网络没有学到该学习的特征，而过拟合则意味着神经网络学习到了不该学习的特征。

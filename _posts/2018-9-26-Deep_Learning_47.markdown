@@ -310,6 +310,10 @@ https://mp.weixin.qq.com/s/SMDzPAJCpgjELsKHeQvW-A
 
 序列化的三维形状生成网络PQ-NET
 
+https://mp.weixin.qq.com/s/qZOCUuLt98fTpstGpC1ilg
+
+Variational DropPath：提高3D CNN时空融合分析效率的秘诀
+
 # NetVLAD
 
 NetVLAD算的上是CNN+传统算子的一个范例。

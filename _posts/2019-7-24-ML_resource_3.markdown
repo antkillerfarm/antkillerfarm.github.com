@@ -243,3 +243,7 @@ https://www.w3cschool.cn/article/leijuncode
 https://mp.weixin.qq.com/s/movz5aesYdZZZHle-hHRIw
 
 诞生于穿孔纸带时期的语言，ALGOL 60今年60岁了
+
+https://mp.weixin.qq.com/s/aYGcJaLwbuXzjI5z1Crsrw
+
+LeCun自曝使用C语言23年之久，2年前才上手Python，还曾短暂尝试Lua

@@ -286,6 +286,10 @@ https://mp.weixin.qq.com/s/4hL6wWQ73icEWHfK6QKSMw
 
 频域学习，Learning in the Frequency Domain
 
+https://mp.weixin.qq.com/s/sRGdNquZyt7VbvuKL5JXYQ
+
+不仅搞定“梯度消失”，还让CNN更具泛化性：港科大开源深度神经网络训练新方法
+
 # 深度推荐系统+
 
 https://mp.weixin.qq.com/s/j34nJGomvR23ZJiqIFMoAQ

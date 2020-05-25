@@ -304,6 +304,10 @@ https://mp.weixin.qq.com/s/_OmRvwFmvuuOpBf7DQG8IA
 
 Python30个编程技巧
 
+https://mp.weixin.qq.com/s/Y3ZV3phzkPGxHIvoT8Ez7Q
+
+53个Python经典面试题详解
+
 https://github.com/leisurelicht/wtfpython-cn
 
 《What the f*ck Python!》中文版

@@ -178,14 +178,6 @@ https://mp.weixin.qq.com/s/IQ8YSyp-m2jCIDfLtuh_ew
 
 天上会掉金子吗？会！你现在用的这些就是！
 
-https://mp.weixin.qq.com/s/lu4wQOIzVtsFvwhO1c2d0A
-
-一大坨泥巴在移动，没人能够阻止它
-
-https://mp.weixin.qq.com/s/R5EonufyiXy8bzD2fddnEg
-
-不喷岩浆喷泥浆，这些火山是要闹哪样？
-
 https://mp.weixin.qq.com/s/KUr8kkHov0XgolEo0y6z8g
 
 不同颜色的尿液颜，是怎么形成的？
@@ -205,10 +197,6 @@ https://mp.weixin.qq.com/s/NHjfCLp6k7GYh8fScL_UWg
 https://mp.weixin.qq.com/s/XDBvVjIRfjtDrTN4zd92yg
 
 高铁辐射致癌，为什么会有这种令人喷饭的言论出现？
-
-https://mp.weixin.qq.com/s/WRd_kx-HeSSgDtPTdgk09A
-
-山上“飞”来只火凤凰，这里的居民却要杀掉它？
 
 ![](/images/img3/Universe.jpg)
 
@@ -324,10 +312,6 @@ https://mp.weixin.qq.com/s/tU6Incnq63fT61z6y9E-Jg
 
 一个5000多年的老古董，竟有人把它玩出吉尼斯世界纪录，这波操作我跪服......（陀螺）
 
-https://mp.weixin.qq.com/s/T2ms6xXd14O3CrQb7X1ZOw
-
-人类用了2000年就为画张地图
-
 http://www.makertime.org/
 
 一个硬核的geek网站
@@ -344,18 +328,6 @@ https://mp.weixin.qq.com/s/hiXfq_eR3OWbp_xq9hpxHg
 
 神经生物学家贝尔斯：我真的度过了最好的一生
 
-https://zhuanlan.zhihu.com/p/53237519
-
-一文读懂印尼海啸的真正原因
-
-https://mp.weixin.qq.com/s/FeSKZqe394-8xT4i-BOEog
-
-掉入地下一万米
-
-https://www.zhihu.com/question/285058234
-
-永暑岛怎么会发现淡水资源？（淡水透镜体效应）
-
 ----
 
 http://blog.sina.com.cn/s/blog_4b7c1f540100t0rq.html
@@ -369,19 +341,3 @@ http://blog.sina.com.cn/s/blog_4b7c1f540100t4sy.html
 https://www.zhihu.com/question/30137203/answer/303210942
 
 瓦伊昂大坝
-
-----
-
-![](/images/img2/salt_sea.jpg)
-
-https://www.zhihu.com/question/30137203/answer/303210942
-
-咸海覆灭
-
-----
-
-古陆核（craton）是指大陆地壳上长期稳定的构造单元 ，即大陆地壳中长期不受造山运动影响，只受造陆运动发生过变形的相对稳定部分，常与造山带（Orogen）对应。
-
-https://mp.weixin.qq.com/s/-TZH-zVnHcoffyUzhEzwaA
-
-中国为什么地震频发？
