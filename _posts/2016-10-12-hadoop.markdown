@@ -173,6 +173,26 @@ jps是Java提供的虚拟机进程查看工具。
 | nimbus | Storm nimbus |
 | supervisor | Storm supervisor |
 
+其他JDK工具还有：
+
+jshell：交互式的Java命令行工具。
+
+jcmd：一个强大的工具集。
+
+jhsdb：一个可视化的Java内存调试工具。
+
+jmap：查看堆信息。
+
+jstack：查看栈信息。
+
+jstat：一个JVM监控工具
+
+参考：
+
+https://www.cnblogs.com/noKing/p/9457541.html
+
+JDK常用命令行工具
+
 ## MapReduce编程
 
 教程：

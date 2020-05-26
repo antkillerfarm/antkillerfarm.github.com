@@ -290,7 +290,15 @@ https://mp.weixin.qq.com/s/uz5hjoG-m2PpnQxXZbHbFw
 
 ## 基本概念
 
-**图(Graph)**，是一种由若干个结点(Node)及连接两个结点的边(Edge)所构成的图形，用于刻画不同结点之间的关系。Graph有时也被称为Network。本文如无特指，则这两者均为同义词。
+**图(Graph)**，是一种由若干个结点(Node)及连接两个结点的边(Edge)所构成的图形，用于刻画不同结点之间的关系。
+
+以下术语，每组均为同义词，下文将不加区分的任意使用：
+
+Objects: nodes, vertices --> N
+
+Interactions: links, edges --> E
+
+System: network, graph --> G(N,E)
 
 Graph非常适合用于描述non-Euclidean space的数据：
 
