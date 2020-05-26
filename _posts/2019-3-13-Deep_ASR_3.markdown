@@ -286,6 +286,14 @@ https://mp.weixin.qq.com/s/CXIO05_09vwWFJwfDyZQUA
 
 迈向语音识别领域的ImageNet时刻
 
+https://mp.weixin.qq.com/s/Izn6LPCRKNxkTHmkqbAzeg
+
+从算法到应用：滴滴端到端语音AI技术实践
+
+https://mp.weixin.qq.com/s/YTQOgGvFfBdasV18PmboGQ
+
+深度学习在单声道录音中的说话人角色识别优化实践
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw
@@ -363,19 +371,3 @@ https://mp.weixin.qq.com/s/aHupAjPNFdUdaG9Uof_obQ
 https://mp.weixin.qq.com/s/JEYucJ16Zsxc6yWHPHGaZA
 
 浙大研发AudioFace：随心录语音就能实时生成3D面部动画
-
-https://mp.weixin.qq.com/s/HubxAFbxCdoaFHNOhfm9QQ
-
-Facebook频谱图模型生成比尔·盖茨声音，性能完胜WaveNet、MAESTRO
-
-https://mp.weixin.qq.com/s/QbSPOHvYD9CGnbPmigeYdA
-
-多语言语音合成和跨语言语音克隆
-
-https://mp.weixin.qq.com/s/McWHS0esRRhIiBlB4CAGXA
-
-柯南变声器的算法原理解析
-
-https://mp.weixin.qq.com/s?__biz=MzIzNjc0MTMwMA==&mid=2247491892&idx=1&sn=d23d0c20e3af340e5a55f19f98636811
-
-2019深度学习语音合成指南

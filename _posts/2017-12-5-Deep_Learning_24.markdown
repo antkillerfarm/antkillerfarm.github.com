@@ -401,3 +401,15 @@ https://zhuanlan.zhihu.com/p/138443415
 https://mp.weixin.qq.com/s/lj926JcCYX8qbUOBTRsQIw
 
 实时多人追踪论文--MOTDT
+
+https://zhuanlan.zhihu.com/p/143798072
+
+One Shot MOT Overview
+
+https://mp.weixin.qq.com/s/rIMOKYgXaFEbvRZ14brrjw
+
+Deep SORT论文阅读总结
+
+https://mp.weixin.qq.com/s/wjKbKF8McGOjbjudi3cOVQ
+
+FairMOT：统一检测、重识别的多目标跟踪框架，全新Baseline

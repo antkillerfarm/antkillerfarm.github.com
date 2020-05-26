@@ -84,6 +84,8 @@ https://mp.weixin.qq.com/s/nwVRBs06zAAyyvROClGE2g
 
 我们的同志在困难的时候，要看到成绩，要看到光明，要提高我们的勇气。
 
+![](/images/img3/korea_war.webp)
+
 http://www.china.com.cn/ch-America/Wenxian/53-9-12.htm
 
 毛泽东:抗美援朝的胜利和意义

@@ -399,3 +399,11 @@ MixPath：基于权重共享的神经网络搜索统一方法
 https://mp.weixin.qq.com/s/tYV_ratEA0NxzJukF-RTSA
 
 玩转网络结构搜索？你需要更大的搜索空间
+
+https://mp.weixin.qq.com/s/IRDE4RqwXR5W7QFhD_tSPQ
+
+AutoML在深度学习模型设计和优化中有哪些用处？
+
+https://zhuanlan.zhihu.com/p/143730467
+
+One Shot NAS总结

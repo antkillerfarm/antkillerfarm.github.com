@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/UjBCjwNDIxDoAoyQAf8V6A
 
 旷视研究院提出Circle Loss，革新深度特征学习范式
 
+https://mp.weixin.qq.com/s/5RpbXzuHp_tR6C_nBdiXGA
+
+Circle Loss：从统一的相似性对的优化角度进行深度特征学习
+
 https://mp.weixin.qq.com/s/CPfhGxig9BMAgimBSOLy3g
 
 用于图像检索的等距离等分布三元组损失函数

@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  语音识别（七）——WFST（2）, 声纹识别
+title:  语音识别（七）——WFST（2）
 category: speech 
 ---
 
-# WFST
+# WFST（续）
 
 ## FSM
 

@@ -310,6 +310,10 @@ https://mp.weixin.qq.com/s/rml_wqePIx8vOk2ZO9_GMA
 
 深入理解Cache（下）
 
+https://mp.weixin.qq.com/s/Lydg1TMlNO_98Z-NF5BIBQ
+
+理解CPU Cache
+
 https://mp.weixin.qq.com/s/8g33nTI_-i9Rzmu-5Up-HA
 
 高性能编程：三级缓存（LLC）访问优化
