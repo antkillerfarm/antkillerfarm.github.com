@@ -300,6 +300,8 @@ Interactions: links, edges --> E
 
 System: network, graph --> G(N,E)
 
+Network, node, link偏重于现实中的系统，而Graph, vertex, edge就是纯数学的表示了。
+
 Graph非常适合用于描述non-Euclidean space的数据：
 
 ![](/images/img3/graph.png)

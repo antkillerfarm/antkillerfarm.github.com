@@ -6,6 +6,20 @@ category: Attention
 
 # BERT
 
+## AR vs AE（续）
+
+- 缺点：它只能利用单向语义而不能同时利用上下文信息。ELMO通过双向都做AR模型，然后进行拼接，但从结果来看，效果并不是太好。
+
+- 优点：对自然语言生成任务(NLG)友好，天然符合生成式任务的生成过程。这也是为什么GPT能够编故事的原因。
+
+**AE**:Autoencoding Language Modeling，又叫自编码语言。通过上下文信息来预测当前被mask的token，代表有BERT，Word2Vec(CBOW)。
+
+$$p(x)=\prod_{x\in Mask}p(x_t|context)$$
+
+- 缺点：由于训练中采用了MASK标记，导致预训练与微调阶段不一致的问题。此外对于生成式问题，AE模型也显得捉襟见肘，这也是目前BERT为数不多没有实现大的突破的领域。
+
+- 优点：能够很好的编码上下文语义信息，在自然语言理解(NLU)相关的下游任务上表现突出。
+
 ## UniLM
 
 https://mp.weixin.qq.com/s/m_FU4NmjUsvxusRidDb-Xg
@@ -369,35 +383,3 @@ https://mp.weixin.qq.com/s/zz3j9HEuzw5e92MQXxSQsA
 https://mp.weixin.qq.com/s/IN4YfoZnlBozwEFdhSvLZg
 
 用可视化解构BERT，我们从上亿参数中提取出了6种直观模式
-
-https://mp.weixin.qq.com/s/nIT3GIU0dUIYyGChxsiOWw
-
-Google BERT应用之《红楼梦》对话人物提取
-
-https://mp.weixin.qq.com/s/dcp_ANYijRmicMYX7OpJmA
-
-如何用最强模型BERT做NLP迁移学习？
-
-https://mp.weixin.qq.com/s/DR4SkgOfUT7KYiaXm5NynQ
-
-跨语言版BERT：Facebook提出跨语言预训练模型XLM
-
-https://mp.weixin.qq.com/s/epjjHmlmMFhWtRO_cCUITA
-
-用BERT进行多标签文本分类
-
-https://mp.weixin.qq.com/s/Wk6gvOS_Qnud6ib1esMFXA
-
-加入Transformer-XL，这个PyTorch包能调用各种NLP预训练模型！
-
-https://mp.weixin.qq.com/s/GqqU3Ixht1BzMnQeRYQEqQ
-
-谷歌NLP深度学习模型BERT特征的可解释性表现怎么样？
-
-https://mp.weixin.qq.com/s/2f91Ksj19rk_emoFpEmPfA
-
-从BERT看大规模数据的无监督利用
-
-https://mp.weixin.qq.com/s/hF4EcKqmaTm_gemxX7Kftg
-
-BERT的嵌入层是如何实现的？

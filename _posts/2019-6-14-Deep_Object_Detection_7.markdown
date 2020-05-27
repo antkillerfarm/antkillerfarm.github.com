@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（七）——CenterNet, Anchor-Free, 其它目标检测网络, 目标检测进阶（1）
+title:  深度目标检测（七）——CenterNet, Anchor-Free, 其它目标检测网络, 3D目标检测
 category: Deep Object Detection 
 ---
 
@@ -280,6 +280,72 @@ https://zhuanlan.zhihu.com/p/94799295
 
 IoU、GIoU、DIoU、CIoU损失函数的那点事儿
 
+# 3D目标检测
+
+https://mp.weixin.qq.com/s/bAV74fxvwI73Qt7qm_jPJA
+
+一文读懂深度学习在摄像头和激光雷达融合的3-D目标检测中的应用
+
+https://mp.weixin.qq.com/s/8an3eBrOZ5d6_PdNp6QkyA
+
+一文教你读懂3D目标检测
+
+https://zhuanlan.zhihu.com/p/112836340
+
+谷歌最新论文：从图像中进行3-D目标检测
+
+https://mp.weixin.qq.com/s/DxDkYfzW5BqhidPlqT772Q
+
+从单幅图像到双目立体视觉的3D目标检测算法
+
+https://blog.csdn.net/savant_ning/article/details/69950588
+
+多视图3D目标检测学习笔记
+
+https://mp.weixin.qq.com/s/3JzwA2HAzoWtE_j2UhZCSw
+
+Stereo R-CNN 3D目标检测
+
+https://zhuanlan.zhihu.com/p/58734240
+
+3D Object Detection Overview - 2019
+
+https://mp.weixin.qq.com/s/n3ZUsq2I0CaJ5pIl2nZUFQ
+
+3D目标检测：MonoDIS
+
+https://mp.weixin.qq.com/s/WBiDyIBV9OaKbxUhBml2AA
+
+GS3D(monocular 3D detection)
+
+https://mp.weixin.qq.com/s/G7YNTR8FAsCtkCxLQv1-dQ
+
+Facebook开源3D目标检测框架VoteNet，曾刷新两大数据集最高精度
+
+https://mp.weixin.qq.com/s/s_cAZ--KHvNZq3thrIGx3w
+
+MVX-Net：多模型三位像素网络用于3D目标检测
+
+https://mp.weixin.qq.com/s/ouBxEXcY4s894Sec4ifBtQ
+
+基于YOLO的3D目标检测：YOLO-6D
+
+https://mp.weixin.qq.com/s/yCu5Xx6peDKyU06yBlixpA
+
+首个实时单目3D目标检测算法：RTM3D
+
+https://zhuanlan.zhihu.com/p/101346137
+
+Det3D-首个通用3D目标检测框架
+
+https://zhuanlan.zhihu.com/p/85686290
+
+MLOD：基于鲁棒特征融合方法的多视点三维目标检测
+
+https://mp.weixin.qq.com/s/LN2l67jhivb0hyy6JSLMVA
+
+3D目标检测深度学习方法数据预处理综述
+
 # 目标检测进阶
 
 https://mp.weixin.qq.com/s/1nlOJ7X9ogBHTl1j2adqyg
@@ -293,63 +359,3 @@ https://mp.weixin.qq.com/s/HmUhlw90b2aTsoEwBdYbdQ
 https://mp.weixin.qq.com/s/S1IrgEqS1Q4xqGl5adNrlg
 
 目标检测近年综述
-
-https://mp.weixin.qq.com/s/7QT7n9MpbXjo5-r-aY2Yvg
-
-深度学习目标检测方法综述
-
-https://mp.weixin.qq.com/s/5I9uzGCNFD93L1mzakTl0Q
-
-目标检测网络学习总结（RCNN-->YOLO V3）
-
-https://mp.weixin.qq.com/s/8Vac8MRpmviVDKRrAeFR0A
-
-后R-CNN时代，Faster R-CNN、SSD、YOLO各类变体统治下的目标检测综述：Faster R-CNN系列胜了吗？
-
-https://mp.weixin.qq.com/s/zeruKQOye_QNWgluVIN0BA
-
-从R-CNN到RFBNet，目标检测架构5年演进全盘点
-
-https://mp.weixin.qq.com/s/sCGNUI-mUSYxD69uBDQNoQ
-
-基于深度学习的目标检测算法综述：算法改进
-
-https://mp.weixin.qq.com/s/yswy7VwEapQJ9M5n_Uo93w
-
-目标检测最新进展总结与展望
-
-https://mp.weixin.qq.com/s/s1qmCA8djEEanwCxeLSV2Q
-
-63页《深度CNN-目标检测》综述
-
-https://mp.weixin.qq.com/s/j-arl6qiD6mei4crfQPrgw
-
-《深度学习显著目标检测综述》
-
-https://mp.weixin.qq.com/s/2PLp2xNfhkHB3fPQr5Ts6g
-
-密歇根大学40页《20年目标检测综述》最新论文，带你全面了解目标检测方法
-
-https://mp.weixin.qq.com/s/Pl8HABuVN27CZv-lvGROTw
-
-基于深度学习的目标检测算法近5年发展历史
-
-https://mp.weixin.qq.com/s/S6sz5dPgGNcJvrIAZ3ZjGg
-
-基于深度学习的通用物体检测算法对比探索
-
-https://zhuanlan.zhihu.com/p/59915784
-
-目标检测中的Consistent Optimization
-
-https://mp.weixin.qq.com/s/ts4WFnuN4cHLfUh8--96Kw
-
-Libra R-CNN：全面平衡的目标检测器
-
-https://mp.weixin.qq.com/s/groq55Cbts272k1mfhJwaQ
-
-超越bounding box的代表性点集：视觉物体表示的新方法
-
-https://mp.weixin.qq.com/s/BXwL33qOf3f7BtJvHsi23Q
-
-目标检测：Segmentation is All You Need？

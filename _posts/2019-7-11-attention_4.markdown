@@ -6,6 +6,18 @@ category: Attention
 
 # BERT
 
+## fine-tuning
+
+fine-tuning是针对实际业务数据进行的微调。下图展示了在若干任务中进行fine-tuning的网络设计。
+
+![](/images/img3/BERT_3.png)
+
+>其他NLP任务的网络设计，可以参看后面《GPT》一节的配图。
+
+值得一提的是，GPT 2.0的实践表明：海量的无监督训练已经能达到很好的效果，fine-tuning只是锦上添花而已。
+
+事实上，在CV领域也可以看到，通过海量图片训练出的预训练网络，比随机初始化有效率多了。
+
 ## input embeddings
 
 BERT对于input embeddings也做了改进。（如下图所示）
@@ -325,15 +337,3 @@ https://mp.weixin.qq.com/s/QdrwlaFZi3VRGptw4cYJSQ
 $$\text{forward:}p(x)=\prod_{t=1}^Tp(x_t|x_{<t})$$
 
 $$\text{backward:}p(x)=\prod_{t=T}^1p(x_t|x_{>t})$$
-
-- 缺点：它只能利用单向语义而不能同时利用上下文信息。ELMO通过双向都做AR模型，然后进行拼接，但从结果来看，效果并不是太好。
-
-- 优点：对自然语言生成任务(NLG)友好，天然符合生成式任务的生成过程。这也是为什么GPT能够编故事的原因。
-
-**AE**:Autoencoding Language Modeling，又叫自编码语言。通过上下文信息来预测当前被mask的token，代表有BERT，Word2Vec(CBOW)。
-
-$$p(x)=\prod_{x\in Mask}p(x_t|context)$$
-
-- 缺点：由于训练中采用了MASK标记，导致预训练与微调阶段不一致的问题。此外对于生成式问题，AE模型也显得捉襟见肘，这也是目前BERT为数不多没有实现大的突破的领域。
-
-- 优点：能够很好的编码上下文语义信息，在自然语言理解(NLU)相关的下游任务上表现突出。

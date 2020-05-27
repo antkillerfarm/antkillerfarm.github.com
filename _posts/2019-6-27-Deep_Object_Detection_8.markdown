@@ -1,10 +1,70 @@
 ---
 layout: post
-title:  深度目标检测（八）——目标检测进阶（2）
+title:  深度目标检测（八）——目标检测进阶
 category: Deep Object Detection 
 ---
 
 # 目标检测进阶
+
+https://mp.weixin.qq.com/s/7QT7n9MpbXjo5-r-aY2Yvg
+
+深度学习目标检测方法综述
+
+https://mp.weixin.qq.com/s/5I9uzGCNFD93L1mzakTl0Q
+
+目标检测网络学习总结（RCNN-->YOLO V3）
+
+https://mp.weixin.qq.com/s/8Vac8MRpmviVDKRrAeFR0A
+
+后R-CNN时代，Faster R-CNN、SSD、YOLO各类变体统治下的目标检测综述：Faster R-CNN系列胜了吗？
+
+https://mp.weixin.qq.com/s/zeruKQOye_QNWgluVIN0BA
+
+从R-CNN到RFBNet，目标检测架构5年演进全盘点
+
+https://mp.weixin.qq.com/s/sCGNUI-mUSYxD69uBDQNoQ
+
+基于深度学习的目标检测算法综述：算法改进
+
+https://mp.weixin.qq.com/s/yswy7VwEapQJ9M5n_Uo93w
+
+目标检测最新进展总结与展望
+
+https://mp.weixin.qq.com/s/s1qmCA8djEEanwCxeLSV2Q
+
+63页《深度CNN-目标检测》综述
+
+https://mp.weixin.qq.com/s/j-arl6qiD6mei4crfQPrgw
+
+《深度学习显著目标检测综述》
+
+https://mp.weixin.qq.com/s/2PLp2xNfhkHB3fPQr5Ts6g
+
+密歇根大学40页《20年目标检测综述》最新论文，带你全面了解目标检测方法
+
+https://mp.weixin.qq.com/s/Pl8HABuVN27CZv-lvGROTw
+
+基于深度学习的目标检测算法近5年发展历史
+
+https://mp.weixin.qq.com/s/S6sz5dPgGNcJvrIAZ3ZjGg
+
+基于深度学习的通用物体检测算法对比探索
+
+https://zhuanlan.zhihu.com/p/59915784
+
+目标检测中的Consistent Optimization
+
+https://mp.weixin.qq.com/s/ts4WFnuN4cHLfUh8--96Kw
+
+Libra R-CNN：全面平衡的目标检测器
+
+https://mp.weixin.qq.com/s/groq55Cbts272k1mfhJwaQ
+
+超越bounding box的代表性点集：视觉物体表示的新方法
+
+https://mp.weixin.qq.com/s/BXwL33qOf3f7BtJvHsi23Q
+
+目标检测：Segmentation is All You Need？
 
 https://mp.weixin.qq.com/s/NWILStthG4klkwrYVcGQSQ
 
@@ -266,10 +326,6 @@ https://mp.weixin.qq.com/s/8k0Mhver2mLnKmV8rVqJHQ
 
 小目标检测相关技巧总结
 
-https://mp.weixin.qq.com/s/ouBxEXcY4s894Sec4ifBtQ
-
-基于YOLO的3D目标检测：YOLO-6D
-
 https://mp.weixin.qq.com/s/dFoUO4xArZpmtbKg1Kx6Zg
 
 COCO mAP 53.3！骨干网合成算法CBNet带来目标检测精度新突破
@@ -306,10 +362,6 @@ https://mp.weixin.qq.com/s/q9qKVpjluzp8OS2GFpZC6g
 
 张兆翔：基于深度学习的物体检测进展和趋势
 
-https://mp.weixin.qq.com/s/yCu5Xx6peDKyU06yBlixpA
-
-首个实时单目3D目标检测算法：RTM3D
-
 https://zhuanlan.zhihu.com/p/102817180
 
 目标检测比赛中的trick
@@ -333,55 +385,3 @@ https://zhuanlan.zhihu.com/p/114700229
 https://blog.csdn.net/sanshibayuan/article/details/103642419
 
 单阶段实例分割（Single Shot Instance Segmentation）
-
-https://mp.weixin.qq.com/s/vpHrLu8kuEuOp5eehT8Hcw
-
-目标检测正负样本区分策略和平衡策略总结(一)
-
-https://mp.weixin.qq.com/s/kz74yb857gmG1h7MyOWx_Q
-
-目标检测正负样本区分策略和平衡策略总结(二)
-
-https://mp.weixin.qq.com/s/gJuXl6Oh_N_fJgQ9jT268w
-
-旷视研究院提出密集场景检测新方法：一个候选框，多个预测结果
-
-https://mp.weixin.qq.com/s/23KvIquNpCJqeOXtBrkfbA
-
-YOLT:大尺寸图像目标检测的解决方案
-
-https://mp.weixin.qq.com/s/8fxqbSFj9Nkj_iFX8YEjzQ
-
-以点代物，同时执行目标检测和跟踪，这个新方法破解目标跟踪难题
-
-https://mp.weixin.qq.com/s/vQf0TmcM9A56k_FtFvao3g
-
-RDSNet：统一目标检测和实例分割的新型网络
-
-https://mp.weixin.qq.com/s/iPx5K2cSs5jlCt9d9oKpww
-
-VoVNet：实时目标检测的新backbone网络
-
-# 设计模式
-
-面向对象的设计模式有七大基本原则：
-
-开闭原则（Open Closed Principle，OCP）
-
-单一职责原则（Single Responsibility Principle, SRP）
-
-里氏代换原则（Liskov Substitution Principle，LSP）
-
-依赖倒转原则（Dependency Inversion Principle，DIP）
-
-接口隔离原则（Interface Segregation Principle，ISP）
-
-合成/聚合复用原则（Composite/Aggregate Reuse Principle，CARP）
-
-最少知识原则（Least Knowledge Principle，LKP）或者迪米特法则（Law of Demeter，LOD）
-
-参考：
-
-https://mp.weixin.qq.com/s/9gDGQhzRAL3pj35VAinZbQ
-
-设计模式在外卖营销业务中的实践

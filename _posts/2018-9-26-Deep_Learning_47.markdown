@@ -26,10 +26,6 @@ https://mp.weixin.qq.com/s/WDInIzWa9_SYSaXXPhdQuw
 
 基于深度学习的视觉三维重建研究总结
 
-https://zhuanlan.zhihu.com/p/101346137
-
-Det3D-首个通用3D目标检测框架
-
 https://mp.weixin.qq.com/s/tTdKqRZqBFxFFiZaDD9AJw
 
 三维深度学习中的目标分类与语义分割
@@ -42,17 +38,9 @@ https://mp.weixin.qq.com/s/SBWGvu84oPKZkY5d8gz-oQ
 
 3D实例分割
 
-https://mp.weixin.qq.com/s/8an3eBrOZ5d6_PdNp6QkyA
-
-一文教你读懂3D目标检测
-
 https://mp.weixin.qq.com/s/BVP7vJ1RxwyRoU0purj0Xw
 
 3D数据分类深度学习方法综述，25页论文带你全面了解最新进展
-
-https://mp.weixin.qq.com/s/DxDkYfzW5BqhidPlqT772Q
-
-从单幅图像到双目立体视觉的3D目标检测算法
 
 https://zhuanlan.zhihu.com/p/59865273
 
@@ -109,10 +97,6 @@ MIT新算法骗过神经网络3D物体分类，成功率超90%
 https://mp.weixin.qq.com/s/1R9ttaKnXso_quIGTY1nfA
 
 海康、UCLA、北理联合提出3D DescriptorNet：可按条件生成3D形状，克服模式崩溃
-
-https://blog.csdn.net/savant_ning/article/details/69950588
-
-多视图3D目标检测学习笔记
 
 https://mp.weixin.qq.com/s/wIdcZh3EkUIm6-91pT2oSQ
 
@@ -198,14 +182,6 @@ https://mp.weixin.qq.com/s/adSbAAV7POblqE_jaOGZhg
 
 深度学习新应用：在PyTorch中用单个2D图像创建3D模型
 
-https://mp.weixin.qq.com/s/3JzwA2HAzoWtE_j2UhZCSw
-
-Stereo R-CNN 3D目标检测
-
-https://zhuanlan.zhihu.com/p/58734240
-
-3D Object Detection Overview - 2019
-
 https://mp.weixin.qq.com/s/l7RNfRB-KvxRHRKNYx1oeQ
 
 云从3D人体重建登顶三项榜单，一张照片就能生成3D形象
@@ -238,25 +214,9 @@ https://mp.weixin.qq.com/s/pPgjBmct11POKqeVv8ymIA
 
 3D重建：硬派几何求解vs深度学习打天下？
 
-https://mp.weixin.qq.com/s/n3ZUsq2I0CaJ5pIl2nZUFQ
-
-3D目标检测：MonoDIS
-
 https://mp.weixin.qq.com/s/uKCQVpkN6Va8jZisAyAfNA
 
 3D人脸技术漫游指南
-
-https://mp.weixin.qq.com/s/WBiDyIBV9OaKbxUhBml2AA
-
-GS3D(monocular 3D detection)
-
-https://mp.weixin.qq.com/s/G7YNTR8FAsCtkCxLQv1-dQ
-
-Facebook开源3D目标检测框架VoteNet，曾刷新两大数据集最高精度
-
-https://zhuanlan.zhihu.com/p/85686290
-
-MLOD：基于鲁棒特征融合方法的多视点三维目标检测
 
 https://mp.weixin.qq.com/s/S6cf_d6CxPblRS-hnM-jSg
 
@@ -282,25 +242,13 @@ https://mp.weixin.qq.com/s/_59iRdLATm2n99M89JBqQA
 
 KITTI立体匹配霸榜论文算法详解
 
-https://mp.weixin.qq.com/s/s_cAZ--KHvNZq3thrIGx3w
-
-MVX-Net：多模型三位像素网络用于3D目标检测
-
 https://mp.weixin.qq.com/s/npKNDrlXZ6oIlE0NG80BpQ
 
 Geoffrey Hinton再出神作：通过神经网络估计有关节可变形的三维模型
 
-https://mp.weixin.qq.com/s/bAV74fxvwI73Qt7qm_jPJA
-
-一文读懂深度学习在摄像头和激光雷达融合的3-D目标检测中的应用
-
 https://zhuanlan.zhihu.com/p/112103579
 
 深度学习在三维环境重建中的应用
-
-https://zhuanlan.zhihu.com/p/112836340
-
-谷歌最新论文：从图像中进行3-D目标检测
 
 https://mp.weixin.qq.com/s/cBbDCE4kQrahT8vLo3uMOw
 

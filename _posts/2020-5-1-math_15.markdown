@@ -228,7 +228,7 @@ https://www.zhihu.com/question/366835590
 
 ----
 
-Mercator projection：由荷兰地图学家墨卡托(G.Mercator)于1569年创立。如果循着墨卡托投影图上两点间的直线航行，方向不变可以一直到达目的地。
+Mercator projection：由荷兰地图学家墨卡托(G.Mercator)于1569年创立。如果循着墨卡托投影图上两点间的直线航行，可以方向不变一直到达目的地。
 
 Lambert projection：大比例尺地图/省级地图
 

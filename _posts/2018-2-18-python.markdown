@@ -78,6 +78,10 @@ http://pypi.douban.com/simple/
 
 `pip install -v pycrypto==2.3`
 
+查看可用的版本：
+
+随便输一个不可能出现的版本号，出错信息里有所有可用的版本信息。
+
 列出已安装的包：
 
 `pip list`
