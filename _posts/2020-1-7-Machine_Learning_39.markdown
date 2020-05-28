@@ -294,11 +294,11 @@ https://mp.weixin.qq.com/s/uz5hjoG-m2PpnQxXZbHbFw
 
 以下术语，每组均为同义词，下文将不加区分的任意使用：
 
-Objects: nodes, vertices --> N
+**Objects: nodes, vertices --> N**
 
-Interactions: links, edges --> E
+**Interactions: links, edges --> E**
 
-System: network, graph --> G(N,E)
+**System: network, graph --> G(N,E)**
 
 Network, node, link偏重于现实中的系统，而Graph, vertex, edge就是纯数学的表示了。
 
@@ -318,13 +318,15 @@ Graph非常适合用于描述non-Euclidean space的数据：
 
 术语：
 
-BFS：Breadth First Search
+**BFS**：Breadth First Search
 
-DFS：Depth First Search
+**DFS**：Depth First Search
 
-Node embedding：将结点映射到高维空间，以使相似的结点，距离也较近。
+**Node Embedding**：将结点映射到高维空间，以使相似的结点，距离也较近。
 
+**Node Degree**：结点的边的数量。对于有向图还可分为in-degree和out-degree。
 
+**Complete Graph**：在N个结点的图中，任意一个结点都和其他结点连接。显然在相同结点数的图中，完全图的边数最多：$$E_{max}=\frac{N(N-1)}{2}$$。
 
 ## 参考
 

@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/6BnCJKHU2krEvizEQczuaQ
 
 一站式解决：隐马尔可夫模型（HMM）全过程推导及实现
 
+https://mp.weixin.qq.com/s/gOgH-tsQTp7ijOWqpAJi_Q
+
+概率图模型笔记（PART II）隐马尔科夫模型
+
 ## Viterbi算法
 
 Viterbi算法是求解最大似然状态路径的常用算法，被广泛应用于通信（CDMA技术的理论基础之一）和NLP领域。
