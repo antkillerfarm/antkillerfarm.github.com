@@ -116,6 +116,10 @@ https://mp.weixin.qq.com/s/mSBwsMpOcn4RyVsyWSaYnQ
 
 用户画像必会的行为偏好计算方法
 
+https://mp.weixin.qq.com/s/lD1UCWLKc8yzEQBDZ3htRw
+
+用户画像技术及方法论
+
 # 推荐系统的工程细节
 
 推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。

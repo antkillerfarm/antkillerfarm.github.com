@@ -291,6 +291,10 @@ https://zhuanlan.zhihu.com/p/96420594
 
 特征工程架构性好文
 
+https://mp.weixin.qq.com/s/demEVr5ZXKeSLbBIO1XgsQ
+
+AutoFIS: 因数分解模型中用于预测点击率的自动特征交互选择
+
 # 数据清洗
 
 https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g

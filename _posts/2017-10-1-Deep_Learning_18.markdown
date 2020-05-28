@@ -54,6 +54,10 @@ https://mp.weixin.qq.com/s/U0pTQkW55evm94iQORwGeA
 
 图解SimCLR框架，用对比学习得到一个好的视觉预训练模型
 
+https://mp.weixin.qq.com/s/eROWWPQkUs91bcv4VsQqSA
+
+NLP中的自监督表示学习，全是动图，很过瘾的
+
 # 深度信息检索+
 
 https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
@@ -141,6 +145,10 @@ https://mp.weixin.qq.com/s/HUjq4TopxWLx3QTh5ZxfIQ
 https://mp.weixin.qq.com/s/RuCxY92qlhWnbZVYDXY_BQ
 
 Mila唐建博士最新《图表示学习:算法与应用》2020研究进展，附59页ppt
+
+https://mp.weixin.qq.com/s/2PY1baildUoZaetYlsukIQ
+
+图卷积网络(GCN)的谱分析
 
 # 语义分割进阶+
 

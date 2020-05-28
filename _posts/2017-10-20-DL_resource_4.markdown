@@ -304,6 +304,10 @@ https://mp.weixin.qq.com/s/n5MYTk6V77Hazodw4pxnSQ
 
 基于多任务学习和负反馈的深度召回模型
 
+https://mp.weixin.qq.com/s/CuTEW0y7juWSBGlhltB7qw
+
+FGCNN：使用CNN进行特征生成的CTR预测模型
+
 # 目标检测进阶+
 
 https://mp.weixin.qq.com/s/vpHrLu8kuEuOp5eehT8Hcw

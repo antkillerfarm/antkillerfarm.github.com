@@ -256,6 +256,10 @@ https://mp.weixin.qq.com/s/jMWuMuIvI1cFThC-WQGbHQ
 
 大家一直在谈的领域驱动设计（DDD），我们在互联网业务系统是这么实践的
 
+https://mp.weixin.qq.com/s/dVK64_v60qEUAX7kQnfSxw
+
+基于DDD的golang实现
+
 https://mp.weixin.qq.com/s/WzfzTIPAYlQjkHwmNjiInA
 
 Shield：支撑美团点评品类最丰富业务的移动端模块化框架开源了
@@ -311,6 +315,10 @@ https://mp.weixin.qq.com/s/fx6XfBpuzozsJCvllMcCqw
 https://mp.weixin.qq.com/s/yBquVKyKnhpy2yPxY-0eqA
 
 大白话聊聊分布式事务
+
+https://mp.weixin.qq.com/s/2AL3uJ5BG2X3Y2Vxg0XqnQ
+
+如何选择分布式事务解决方案？
 
 http://www.cnblogs.com/zhangweizhong/category/879056.html
 

@@ -278,6 +278,10 @@ https://mp.weixin.qq.com/s/3yaXYPjNWAXXtDJEWz2T0w
 
 90后“六指魔琴”AI修复100年前老北京影像，他还是程序员里最会画画的作曲家
 
+https://mp.weixin.qq.com/s/uU1-DwHnU4pPMLtQZNQyVQ
+
+北大图灵班本科生带来动画CG福音，「最懂骨骼的卷积网络」，无需配对样本实现动作迁移
+
 # 深度推荐系统
 
 https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w

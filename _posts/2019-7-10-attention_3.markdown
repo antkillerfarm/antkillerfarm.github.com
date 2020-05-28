@@ -176,6 +176,10 @@ https://zhuanlan.zhihu.com/p/143852458
 
 NLP中更好&更快的Transformer
 
+https://mp.weixin.qq.com/s/b5Ont9vHPeCPnAjuDGv5Bg
+
+Facebook开源新思路！DETR：用Transformers来进行端到端的目标检测
+
 # 预训练语言模型进化史
 
 ![](/images/img3/BERT.jpg)

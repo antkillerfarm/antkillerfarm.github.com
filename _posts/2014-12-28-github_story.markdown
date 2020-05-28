@@ -96,11 +96,71 @@ http://jekyllthemes.org/
 
 jekyll的官方主题站点
 
-## Markdown
+## GitHub下载速度慢
+
+219.76.4.4  http://github-cloud.s3.amazonaws.com
+
+## arxiv下载速度慢
+
+http://xxx.itp.ac.cn
+
+## Git LFS
+
+Git LFS（Large File Storage）是Github开发的一个Git的扩展，用于实现Git对大文件的支持。
+
+Git LFS可以把音乐、图片、视频等指定的任意文件存在Git仓库之外，而在Git仓库中用一个占用空间1KB不到的文本指针来代替文件的存在。
+
+通过把大文件存储在Git仓库之外，可以减小Git仓库本身的体积，使克隆Git仓库的速度加快，也使得Git不会因为仓库中充满大文件而损失性能。
+
+官网：
+
+https://git-lfs.github.com
+
+中文简介：
+
+https://gitee.com/help/articles/4235
+
+安装：
+
+```bash
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+sudo apt-get install git-lfs
+git lfs install
+```
+
+没有带宽问题的话，可以直接`git lfs fetch --all`。但是考虑到国内的访问速度，最好还是指定单个文件，逐个下载比较好。
+
+白名单：
+
+`git config lfs.fetchinclude '<file path>'`
+
+黑名单：
+
+`git config lfs.fetchexclude '<file path>'`
+
+然后：
+
+`git lfs fetch --recent`
+
+>gitee由于将LFS当作收费功能，竟然丧心病狂的将黑名单设为`*`，导致fetch不到任何东西。。。
+
+最后：
+
+`git lfs checkout`
+
+使用中遇到问题，可以查询设置：
+
+`git lfs env`
+
+列出repo里所有lfs文件：
+
+`git lfs ls-files`
+
+# Markdown
 
 自从我在github建立blog以来，一直都在使用markdown语言。这里仅针对我使用过程中遇到的问题做一个笔记。
 
-### markdown渲染器
+## markdown渲染器
 
 Jekyll原生支持maruku，rdiscount，kramdown，redcarpet等markdown渲染器。其中的maruku由于已经不维护，在Jekyll 3.0以后被抛弃。
 
@@ -118,25 +178,17 @@ Jekyll原生支持maruku，rdiscount，kramdown，redcarpet等markdown渲染器�
 
 正确写法：`<td rowspan="2">`
 
-### 语法高亮
+## 语法高亮
 
 之前一直使用pygments作为语法高亮的着色器。近来，github推荐我使用rouge。经过一番研究才发现，pygments是用python写的，难怪windows环境下的Jekyll老是无法集成pygments。
 
-### StackEdit
+## StackEdit
 
 StackEdit是一个在线的markdown编辑工具，被CSDN等网站所使用。
 
 官网：
 
 https://stackedit.io/
-
-## GitHub下载速度慢
-
-219.76.4.4  http://github-cloud.s3.amazonaws.com
-
-## arxiv下载速度慢
-
-http://xxx.itp.ac.cn
 
 ## Hexo
 
@@ -192,34 +244,6 @@ https://mp.weixin.qq.com/s/CHca0V7LR4NhomtLIPhc4w
 
 剩下的问题就简单了，找一个好用的邮箱。使用邮箱的手机客户端，将邮件下载到手机上，这样每天的早报就有了:)
 
-# 我的AI简史
-
-2018.5
-
-上一篇技术简史还是2014.12的事情，时间又过了3年半。除了在智能硬件上捣鼓了一年多以外，这几年就主要是在AI上折腾了。
-
-2016.3的AlphaGo大战李世石事件，虽然新闻效应很大，对我的震撼也很大，但对于我从事AI，实际上并无直接关联。
-
-我的AI路的开端实际上非常偶然。某天闲逛，无意发现了一个开源app的UI使用了毛玻璃特效。作者特意指出该特效使用了Gauss filter。
-
-接着便搜索到了一个介绍Gauss filter的blog，这是该博主OpenCV系列的其中一篇，于是从此入了CV的坑。这大概是2016年3月底的事情，距离AlphaGo大战李世石不过一周左右。
-
-2016.4，公司开始涉足大数据研发，但暂时和我没有交集。
-
-2016.5，参加某安防展，看到了CV在停车场中，对于车辆跟踪的应用，对CV兴趣更浓。同时得知同事L是此中高手。
-
-2016.7，在OpenCV的官方手册中，发现了ML一词。接着找到了吴恩达早期的ML讲义，从此入坑ML。
-
-2016.8，大数据项目进入开展阶段，我自告奋勇，负责算法的设计。从此成为职业AI人。
-
-2016.10，入坑NLP。
-
-2016.12，入坑DL。但是由于初期ML的基础较差，因此在看完MLP之后，暂时停了一阵子。2017.5以后，全面转入DL。
-
-2017.10，入坑RL。
-
-2018.3，入坑ASR。
-
 # BBR
 
 **B**ottleneck **B**andwidth and **R**ound-trip propagation time是Google于2016年10月提出的TCP拥塞控制算法，其相关代码目前已经加入Linux内核中。
@@ -241,6 +265,10 @@ Making Linux TCP Fast
 https://www.zhihu.com/question/53559433
 
 Linux Kernel 4.9 中的BBR算法与之前的TCP拥塞控制相比有什么优势？
+
+https://zhuanlan.zhihu.com/p/144273871
+
+TCP拥塞控制详解
 
 http://blog.csdn.net/dog250/article/details/52895080
 

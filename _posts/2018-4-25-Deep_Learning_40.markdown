@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十）——行人重识别, 数据增强, Spatial Transformer Networks
+title:  深度学习（四十）——行人重识别, 数据增强
 category: DL 
 ---
 
@@ -278,6 +278,10 @@ https://mp.weixin.qq.com/s/kl01FypFQAmG_TiMTNnvNw
 
 旷视研究院提出VANet：具备视角感知力的车辆重识别网络
 
+https://mp.weixin.qq.com/s/2WgYJR6z3aDpOKqhVtSRVA
+
+最新综述：车辆重识别技术
+
 https://mp.weixin.qq.com/s/nqRJQ6K6e1TC6IUa57dw0g
 
 基于自然语言的跨模态行人ReID的SOTA方法简述
@@ -384,30 +388,10 @@ https://zhuanlan.zhihu.com/p/43665254
 
 数据增广之详细理解
 
-# Spatial Transformer Networks
+https://mp.weixin.qq.com/s/g65jpWaf3Oo31zYCyquH1Q
 
-论文：
+基于深度学习的数据增广技术一览
 
-《Spatial Transformer Networks》
+https://mp.weixin.qq.com/s/r3pGr3FD1dGDzw2zgQdK9g
 
-参考：
-
-http://www.cnblogs.com/neopenx/p/4851806.html
-
-Spatial Transformer Networks(空间变换神经网络)
-
-http://blog.csdn.net/shaoxiaohu1/article/details/51809605
-
-论文笔记：Spatial Transformer Networks
-
-http://blog.csdn.net/shaoxiaohu1/article/details/51809605
-
-Spatial Transformer Networks
-
-https://mp.weixin.qq.com/s/ciqQMezcB-oM24X8eQqTNg
-
-花式玩耍Spatial Transformation Networks
-
-https://mp.weixin.qq.com/s/4VE2lZeFf05AyLp_s3nTFQ
-
-理解Spatial Transformer Networks
+简易快速数据增强库使用手册

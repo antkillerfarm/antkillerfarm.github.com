@@ -373,3 +373,7 @@ https://mp.weixin.qq.com/s/jrynQZgoljFi6zdVKWo5nw
 https://mp.weixin.qq.com/s/lr9OVNiIN0x7k4cmNZoCUw
 
 用于人脸检测的SSH算法
+
+https://mp.weixin.qq.com/s/A5-Z6APwS1iFCUgYxtYNyA
+
+重磅！GroupFace人脸识别，刷新9个数据集SOTA

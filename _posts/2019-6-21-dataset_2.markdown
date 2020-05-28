@@ -196,6 +196,10 @@ https://mp.weixin.qq.com/s/WvkIQ85CpCR7yhHiPbX6HA
 
 Objects365：大且高质量的数据集用于目标检测
 
+https://mp.weixin.qq.com/s/yj-8sTl_ZT17IvpqPs89IA
+
+改变多目标跟踪领域！CMU等推出大规模多类别MOT数据集TAO
+
 ## 人脸/行为
 
 http://blog.csdn.net/wangkr111/article/details/44514097

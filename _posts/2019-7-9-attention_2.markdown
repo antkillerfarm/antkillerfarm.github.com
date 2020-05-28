@@ -22,6 +22,20 @@ category: Attention
 
 - self-attention借鉴CNN中multi-kernel的思想，进一步进化成为Multi-Head attention。每一个不同的head使用不同的线性变换，学习不同的relationship。
 
+----
+
+![](/images/img2/self_attention.jpg)
+
+- 一维卷积的感受野是有限的，注意力机制的感受野是无限的（全局的）。
+
+- 一维卷积的连接强度（权重）是与输入无关的，注意力机制的连接强度是与输入相关的。
+
+参考：
+
+https://www.zhihu.com/question/288081659
+
+attention跟一维卷积的区别是啥？
+
 ## Position Embedding
 
 然而，只要稍微思考一下就会发现，这样的模型并不能捕捉序列的顺序！换句话说，如果将K,V按行打乱顺序（相当于句子中的词序打乱），那么Attention的结果还是一样的。这就表明了，到目前为止，Attention模型顶多是一个非常精妙的“词袋模型”而已。

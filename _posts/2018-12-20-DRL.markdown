@@ -361,3 +361,7 @@ https://github.com/thu-ml/tianshou
 https://mp.weixin.qq.com/s/-5KzyKeNFOYBtFQ8ZVZNag
 
 用Python写出Gameboy模拟器，还能训练AI模型：丹麦小哥的大学项目火了
+
+https://mp.weixin.qq.com/s/Ewiz8YB0Tel9127cHcdRqw
+
+用TF-AGENTS进行强化学习

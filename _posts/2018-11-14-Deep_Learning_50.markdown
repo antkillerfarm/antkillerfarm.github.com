@@ -288,6 +288,10 @@ https://zhuanlan.zhihu.com/p/62532887
 
 双线性池化（Bilinear Pooling）详解、改进及应用
 
+https://mp.weixin.qq.com/s/vQkb2-5D9T2ejUa2qrPlow
+
+卷积神经网络中的即插即用模块
+
 # AI前沿
 
 人工智能前沿7大热点：

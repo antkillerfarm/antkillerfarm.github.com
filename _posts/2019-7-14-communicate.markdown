@@ -98,6 +98,10 @@ https://mp.weixin.qq.com/s/3-6T0YS0UsbWndu1xgrW_A
 
 白话Session与Cookie：从经营杂货店开始
 
+https://mp.weixin.qq.com/s/JyPuFauAycot6bvvaunNlw
+
+把cookie聊清楚
+
 https://mp.weixin.qq.com/s/ct3wknW9b9oZBoXwZTh-Fg
 
 面试官问我：一个TCP连接可以发多少个HTTP请求？我竟然回答不上来...

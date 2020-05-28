@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blog维护日志
+title: Blog维护日志, 我的AI简史
 category: essay 
 ---
 
@@ -86,127 +86,51 @@ category: essay
 
 2014.12.23 围观大徐的blog有感，特在github上安家落户，废弃了原来的搜狐blog。
 
-# Inverse Reinforcement Learning（续）
+# 我的AI简史
 
-通俗的说法就是：**我们用优化控制或强化学习得到的策略能用来解释人类的行为吗？**
+2018.5
 
-比如让一个人去拿桌子上的一个橘子，那手的轨迹一定不是一条从起点到目标的直线，而是有一些弯曲的轨迹，也就是带有偏差的较优行为，但是这种偏差其实并不重要，只要最后拿到橘子就行了，也就是说：
+上一篇技术简史还是2014.12的事情，时间又过了3年半。除了在智能硬件上捣鼓了一年多以外，这几年就主要是在AI上折腾了。
 
-1.有过程中一些偏差是不重要的，但另一些偏差就比较重要了（如最后没拿到）。
+2016.3的AlphaGo大战李世石事件，虽然新闻效应很大，对我的震撼也很大，但对于我从事AI，实际上并无直接关联。
 
-2.每次拿橘子的动作也是不一样的，因此人的动作带有一定的随机性。
+我的AI之路的开端实际上非常偶然。某天闲逛，无意发现了一个开源app的UI使用了毛玻璃特效。作者特意指出该特效使用了Gauss filter。
 
-3.我们可以认为人类行为轨迹分布是以最优策略为峰的随机分布。
+接着便搜索到了一个介绍Gauss filter的blog，这是该博主OpenCV系列的其中一篇，于是从此入了CV的坑。这大概是2016年3月底的事情，距离AlphaGo大战李世石不过一周左右。
 
-![](/images/img3/GAN_vs_IRL.png)
+2016.4，公司开始涉足大数据研发，但暂时和我没有交集。
 
-参考：
+2016.5，参加某安防展，看到了CV在停车场中，对于车辆跟踪的应用，对CV兴趣更浓。同时得知同事L是此中高手。
 
-https://zhuanlan.zhihu.com/p/61674994
+2016.7，在OpenCV的官方手册中，发现了ML一词。接着找到了吴恩达早期的ML讲义，从此入坑ML。
 
-Algorithms for Inverse Reinforcement Learning
+2016.8，大数据项目进入开展阶段，我自告奋勇，负责算法的设计。从此成为职业AI人。
 
-https://zhuanlan.zhihu.com/p/32502503
+2016.10，入坑NLP。
 
-CS 294：IRL
+2016.12，入坑DL。但是由于初期ML的基础较差，因此在看完MLP之后，暂时停了一阵子。2017.5以后，全面转入DL。
 
-# 模仿学习
+2017.10，入坑RL。
 
-https://zhuanlan.zhihu.com/p/27935902
+2018.3，入坑ASR。
 
-机器人学习Robot Learning之模仿学习Imitation Learning的发展
+----
 
-https://zhuanlan.zhihu.com/p/25688750
+2020.5
 
-模仿学习（Imitation Learning）完全介绍
+非常遗憾，ASR方面由于公司另有团队在做，没有跟下去了（2018.10）。
 
-https://mp.weixin.qq.com/s/naq73D27vsCOUBperKto8A
+2018.8～10 研究Transformer。
 
-从监督式到DAgger，综述论文描绘模仿学习全貌
+2018.11~2019.3 研究style transfer。
 
-https://mp.weixin.qq.com/s/LNNqp2KsEAljG26hY43mUw
+2018.12 研究Wave-U-NET。
 
-ICML2018 模仿学习教程
+2019.3~5 研究GAN。
 
-https://mp.weixin.qq.com/s/f9vSgH1HQwGXBDb0UGHQyQ
+2019.8~2020.1 研究DRL。
 
-深度学习进阶之无人车行为克隆
-
-https://mp.weixin.qq.com/s/To3pnx1hVq_4p7UnQVMw9A
-
-斯坦福大学&DeepMind联合提出机器人控制新方法，RL+IL端到端地学习视觉运动策略
-
-https://mp.weixin.qq.com/s/O0Q1XoTA-7Yshr1ZqOZ90w
-
-加州理工：什么是模仿学习, 这62页ppt带你了解进展
-
-# RL与神经科学
-
-Pavlov Model（1901）
-
-Rescorla-Wagner Model（1972）
-
-Thorndike’s Puzzle Box（1910）
-
-参考：
-
-https://zhuanlan.zhihu.com/p/24437724
-
-学习理论之Rescorla-Wagner模型
-
-https://zhuanlan.zhihu.com/p/104261195
-
-生物，AI，心理：目前的大脑/认知/意识/AGI/DRL模型
-
-# RL参考资源
-
-https://mp.weixin.qq.com/s/sIS9VvZ3yTtn6puJScuHig
-
-强化学习70年演进：从精确动态规划到基于模型
-
-https://mp.weixin.qq.com/s/Fn1s9Ia8L1ckgn6iP24FhQ
-
-如何让神经网络具有好奇心
-
-https://mp.weixin.qq.com/s/PBf-YrkhwhPYXuiOGyahxQ
-
-强化学习遭遇瓶颈！分层RL将成为突破的希望
-
-https://zhuanlan.zhihu.com/p/58815288
-
-强化学习之值函数学习
-
-https://mp.weixin.qq.com/s/8Cqknze_iosz6Z6cqnuK5w
-
-谷歌提出强化学习新算法SimPLe，模拟策略学习效率提高2倍
-
-https://mp.weixin.qq.com/s/hKGS4Ek5prwTRJoMCaxQLA
-
-强化学习Exploration漫游
-
-https://zhuanlan.zhihu.com/p/65116688
-
-值分布强化学习（01）
-
-https://zhuanlan.zhihu.com/p/65364484
-
-值分布强化学习（02）
-
-https://zhuanlan.zhihu.com/p/62363784
-
-强化学习之策略搜索
-
-https://mp.weixin.qq.com/s/j9Cs5M9gyITu2u_XDkKm-g
-
-Policy Gradient——一种不以loss来反向传播的策略梯度方法
-
-https://mp.weixin.qq.com/s/x6gKTuYIx8y25KX-fCc5bA
-
-蒙特卡洛梯度估计方法（MCGE）简述
-
-https://mp.weixin.qq.com/s/jUKTsJdlBLPWbiBa6TlPPA
-
-基于模型的强化学习—LQR与iLQR
+2020.4 研究PGM。
 
 # 电子科技史+
 
