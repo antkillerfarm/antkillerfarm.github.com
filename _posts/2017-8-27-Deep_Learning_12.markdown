@@ -164,6 +164,10 @@ https://mp.weixin.qq.com/s/2O-T6akdPjGe2rUZKoE4Kw
 
 Self-attention机制及其应用：Non-local网络模块
 
+https://zhuanlan.zhihu.com/p/138444916
+
+写写non local network
+
 # 姿态/行为检测
 
 基于CNN的2D多人姿态估计方法，通常有2个思路（Bottom-Up Approaches和Top-Down Approaches）：

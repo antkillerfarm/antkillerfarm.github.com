@@ -332,6 +332,10 @@ https://mp.weixin.qq.com/s/45JEBLXgC6gRjAudL5fMvg
 
 Netflix：使用A/B测试来找到最佳的插图
 
+https://mp.weixin.qq.com/s/v3Fvp6Hed7ZGoE8FGlGMvQ
+
+美团配送A/B评估体系建设与实践
+
 ## 参考
 
 https://mp.weixin.qq.com/s/vpANPrl86Ou2fBVHgLXtBQ

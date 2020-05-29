@@ -6,6 +6,8 @@ category: essay
 
 # Blog维护日志
 
+2020.5.29 添加Graph分类。
+
 2020.4.28 添加Segmentation分类。添了一个Technical University of Munich的follower。
 
 2020.1.23 添加Nature分类。

@@ -1,0 +1,125 @@
+---
+layout: post
+title:  Graph ML（一）——图论基础
+category: graph 
+---
+
+# 图论基础
+
+## 基本概念
+
+**图(Graph)**，是一种由若干个结点(Node)及连接两个结点的边(Edge)所构成的图形，用于刻画不同结点之间的关系。
+
+以下术语，每组均为同义词，下文将不加区分的任意使用：
+
+**Objects: nodes, vertices --> N**
+
+**Interactions: links, edges --> E**
+
+**System: network, graph --> G(N,E)**
+
+Network, node, link偏重于现实中的系统，而Graph, vertex, edge就是纯数学的表示了。
+
+Graph非常适合用于描述non-Euclidean space的数据：
+
+![](/images/img3/graph.png)
+
+与Network相关的任务主要包括：
+
+- Node classification：预测结点的类型。
+
+- Link prediction：预测两个结点的连接性。
+
+- Community detection：识别有密切关系的结点簇（clusters）。
+
+- Network similarity：度量两个Node/Network的相似性。
+
+**BFS**：Breadth First Search
+
+**DFS**：Depth First Search
+
+**Node Embedding**：将结点映射到高维空间，以使相似的结点，距离也较近。
+
+**Node Degree**：结点的边的数量。对于有向图还可分为in-degree和out-degree。
+
+**Complete Graph**：在N个结点的图中，任意一个结点都和其他结点连接。显然在相同结点数的图中，完全图的边数最多：$$E_{max}=\frac{N(N-1)}{2}$$。
+
+**Bipartite Graph**：
+
+![](/images/img3/Bipartite_Graph.png)
+
+上图中结点被分为U、V两个子集，且每条边都是一个U中的结点连接上一个V中的结点。
+
+Bipartite Graph典型例子是演员-电影关系图，显然演员是一个子集，而电影是另一个子集。
+
+![](/images/img3/Bipartite_Graph_2.png)
+
+如上图，Bipartite Graph可被用来进行图结构的变换。
+
+图的表示方法：
+
+- **Adjacency Matrix**
+
+- **Adjacency List**
+
+- **Edge List**
+
+对于真实的网络来说，每个结点的邻接结点数量一般远小于网络的结点数N，即$$E\ll E_{max}$$。这种情况下，图的邻接矩阵是一个稀疏矩阵，因此采用Adjacency List/Edge List会更有效率一些。
+
+除了标准图之外，还有若干图的变种：
+
+- **Weighted**：边有权重属性的图。
+
+- **Self-edges (self-loops)**：结点和自己之间有边的图。
+
+- **Multigraph**：两个结点间有不止一个边的图。
+
+![](/images/img3/graph_2.png)
+
+上左图中，绿色的边去掉之后，图就不连通了，这样的边被称为**Bridge edge**。
+
+上左图中，蓝色的结点去掉之后，图就不连通了，这样的结点被称为**Articulation node**。
+
+
+
+## 参考
+
+https://mp.weixin.qq.com/s/LqCfwf90bzZKVMLLY5dbXA
+
+图数据分析与可视化，538页pdf
+
+https://mp.weixin.qq.com/s/zOdy-1vCJD_dPFSoe0ELFA
+
+图论与图学习（一）：图的基本概念
+
+https://mp.weixin.qq.com/s/0ZdS1WOSDZiXnxP8fybBAw
+
+图论与图学习（二）：图算法
+
+https://mp.weixin.qq.com/s/BkKw2C3n9WsmIchJkkZxUw
+
+从七桥问题开始：全面介绍图论及其应用
+
+https://mp.weixin.qq.com/s/ZDY3Yt67eXK5pjXgvJkkyQ
+
+图论的各种基本算法
+
+https://mp.weixin.qq.com/s/2h1dgvPbYKBOYZPiixg9iw
+
+手把手：四色猜想、七桥问题…程序员眼里的图论，了解下？
+
+https://mp.weixin.qq.com/s/ra9v1pgFsbOcJrtONoZNvQ
+
+图论基础与图存储结构
+
+https://mp.weixin.qq.com/s/Y7qZlJdJ8fav5BXFGwdSOQ
+
+Graph Analysis and Its Application
+
+https://mp.weixin.qq.com/s/VdvvQetxAvkiNF04hV9PeA
+
+图搜索算法介绍(RRT/RRT*)
+
+https://mp.weixin.qq.com/s/dTI3BdgixVTAFsnxtKjq0A
+
+常见图算法介绍
