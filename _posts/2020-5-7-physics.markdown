@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 流体力学, 台风, 化学, 物理
+title: 流体力学, 台风, 物理
 category: Nature 
 ---
 
@@ -128,88 +128,6 @@ https://mp.weixin.qq.com/s/Ld28qHczQ1NfFPGlJQGXKQ
 
 台风最喜欢在我国哪个省市登陆？
 
-# 化学
-
-![](/images/img2/SI.png)
-
-![](/images/img2/periodic_table.png)
-
-话说NIST上的好东西真不少。。。
-
-----
-
-![](/images/img2/U.jpg)
-
-伊朗时任总统内贾德视察伊朗首枚首枚燃料棒装填作业。从图中可以看出完全不需要任何防护，左边小哥戴的手套以及右边大叔戴的口罩与其说是在保护他们自己，不如说是在保护燃料棒束，避免其沾染汗渍和唾液。
-
-https://www.zhihu.com/question/26946942
-
-天然铀的放射性类型是什么？近距离接触对人有危害吗？
-
-----
-
-https://mp.weixin.qq.com/s/jOHoph9yFf5NYLp_o7fWLA
-
-王志珍：人工合成胰岛素中，一个少为人知的科学故事
-
->邹承鲁（1923.05.17-2006.11.23），男，祖籍江苏无锡，出生于山东青岛，生物化学家。1945年，毕业于西南联合大学化学系。1951年，获英国剑桥大学生物化学博士学位。中国科学院院士。
-
-----
-
-黑索金，或译海扫更，是英文Hexogen的译称，化学名环三亚甲基三硝胺，缩写RDX。原设想用于医药，后来因为威力巨大（比硝化甘油强，是TNT的158%），被发展作炸药用途。爆速在密度为1.7g/cm3时达8350m/s，而且起爆容易，是综合性极佳的炸药。1899年德国在发表的专利中首次叙述制造黑索金。
-
-C-4炸弹，（英文全称Composition C-4）是一种塑料炸药。塑料炸药也叫高聚物粘结炸药(PBX)，其基本原理是将易爆化学物与塑料粘合剂材料结合起来。粘合剂有两个重要作用：包裹爆炸材料，降低它对冲击和热的敏感程度。这样可以相对安全地处理炸药。使爆炸材料具有高度的延展性。可将其塑成不同的形状，从而改变爆炸的方向。
-
-C-4 = RDX + 塑料
-
-https://zhuanlan.zhihu.com/p/23350434
-
-“史上最阴险地雷” 700枚钢珠把你轰成渣
-
-----
-
-https://mp.weixin.qq.com/s/Vam7uTbwPfF8Ht365lGtvA
-
-一般不扯淡--直男口红入门！
-
-https://mp.weixin.qq.com/s/a3z7PKTOqmxlEosi2EgoaA
-
-blue生色，九寨沟不得不说的“蓝”题
-
-https://mp.weixin.qq.com/s/XZyOXfqvq7bJ1_2eUPknAA
-
-千年锈色耐人寻——古代铜锡铅合金锈蚀谜题
-
-https://mp.weixin.qq.com/s/v_6w1XOs5iqnoZ-y04B3XQ
-
-一个只涉及三个电子的化学反应居然这么复杂？
-
-## 化学工业
-
-https://wallstreetcn.com/articles/250536
-
-巴斯夫原本是它小弟，德国化工产业的代名词：揭秘史前化工巨兽 IG 法本
-
-http://blog.sina.com.cn/s/blog_52f526870102w7xo.html
-
-历经百年兴衰 德国化工三巨头为何屹立不倒
-
-http://www.weixinso.com/document/KPyZBb.html
-
-陶氏化学发展史
-
-http://www.pnchina.com/cn/Detail.aspx?id=1361250587
-
-业界经典：陶氏化学Styrofoam之75年
-
-https://new.qq.com/omn/20180819/20180819A011JT.html
-
-起于硝烟的化工帝国：杜邦是怎么与化工行业同呼吸共命运的？
-
-http://www.qdaily.com/articles/18872.html
-
-杜邦要合并了，过去一百年，这家公司的发明都改变了些什么？
-
 # 物理
 
 https://mp.weixin.qq.com/s/lB6dfjS5TAxjMndLCXMWgQ
@@ -271,3 +189,11 @@ https://mp.weixin.qq.com/s/cBjB_lhnpbkwjnoDw2QvOQ
 https://mp.weixin.qq.com/s/UDjHYZCpZjSDCDmBDI8y8Q
 
 一粒爆米花的传奇
+
+----
+
+因为原子仅吸收特定波长的光，所以科学家会确保将激光波长调整为刚好大于静止时原子的吸收波长。这样，根据多普勒效应，当原子向光子移动时，光的波长会被压缩，当光的波长被压缩到恰好等于该原子的吸收波长时，原子就会吸收光子，原子就会从基态跃迁到激发态，原子的运动速度减慢，动能减小；而当原子停止或沿着光子同向运动时，原子就不会吸收光子了。
+
+https://mp.weixin.qq.com/s/oSuSaPe2RYdm3NY0VZAiVQ
+
+激光一定是火热的吗？人家制冷时超cool

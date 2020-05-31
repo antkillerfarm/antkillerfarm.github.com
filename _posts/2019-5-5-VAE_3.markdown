@@ -347,3 +347,7 @@ https://mp.weixin.qq.com/s/YZcw5pnHzuACSvEmGZHnEQ
 https://mp.weixin.qq.com/s/yB7tq2vcBpVBnM-j9PgRsw
 
 人脸合成效果媲美StyleGAN，而它是个自编码器
+
+https://mp.weixin.qq.com/s/J59d1K5WX-wnzhws3k60AQ
+
+万字长文带你了解变分自编码器VAEs

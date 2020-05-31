@@ -84,6 +84,10 @@ https://mp.weixin.qq.com/s/xJ7MpUkVfLQKxRYyJs29NQ
 
 BiLSTM上的CRF，用命名实体识别任务来解释CRF（4）
 
+https://mp.weixin.qq.com/s/LszJDl3x6kYQOd-p_FTx0g
+
+BiLSTM+CRF命名实体识别：达观杯败走记（下篇）
+
 # t-SNE
 
 ## 概述

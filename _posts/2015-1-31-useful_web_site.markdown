@@ -381,6 +381,10 @@ https://zhuanlan.zhihu.com/p/74249758
 
 陈天奇：机器学习科研的十年
 
+https://zhuanlan.zhihu.com/p/90255939
+
+创始人Alexandra Elbakyan亲自发长文讲述Sci-Hub的前世今生
+
 # 知名AI公司技术主页
 
 http://uber.ai/

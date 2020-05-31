@@ -1,10 +1,26 @@
 ---
 layout: post
-title:  机器学习（二十四）——单分类SVM&多分类SVM, Stacking, 特征工程, 数据清洗
+title:  机器学习（二十四）——单分类SVM&多分类SVM, Stacking, 特征工程
 category: ML 
 ---
 
 # Optimizer（续）
+
+https://mp.weixin.qq.com/s/idmt0F49tOCh-ghWdHLdUw
+
+吴恩达导师Michael I.Jordan学术演讲：如何有效避开鞍点。这是Jordan半年后的另一个演讲，有些新内容。
+
+https://mp.weixin.qq.com/s/jVjemfcLzIWOdWdxMgoxsA
+
+超越Adam，从适应性学习率家族出发解读ICLR 2018高分论文
+
+https://mp.weixin.qq.com/s/B9nUwPtgpsLkEyCOlSAO5A
+
+1cycle策略：实践中的学习率设定应该是先增再降
+
+https://mp.weixin.qq.com/s/dseeCB-CRtZnzC3d4_8pYw
+
+AMSGrad能够取代Adam吗
 
 https://zhuanlan.zhihu.com/p/81020717
 
@@ -294,21 +310,3 @@ https://zhuanlan.zhihu.com/p/96420594
 https://mp.weixin.qq.com/s/demEVr5ZXKeSLbBIO1XgsQ
 
 AutoFIS: 因数分解模型中用于预测点击率的自动特征交互选择
-
-# 数据清洗
-
-https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g
-
-数据挖掘中的数据清洗方法大全
-
-https://mp.weixin.qq.com/s/FHdo2DTapoTryA-hOM-y_w
-
-还在为数据清洗抓狂？这里有一个简单实用的清洗代码集
-
-https://mp.weixin.qq.com/s/r7ngZOM9tO-_OSfvs2aDJw
-
-数据清洗&预处理入门完整指南
-
-https://mp.weixin.qq.com/s/r4ycLnjOl5hSPBMwKpnmsQ
-
-如何打造高质量的NLP数据集

@@ -276,6 +276,10 @@ https://mp.weixin.qq.com/s/AXfyMeFnCENIMc2qS8hNtA
 
 10分钟看懂全卷积神经网络（FCN）：语义分割深度模型先驱
 
+https://mp.weixin.qq.com/s/d9ghEpsDgZE1cvW7TfNPQg
+
+图像分割2020，架构，损失函数，数据集，框架的整理和总结
+
 # SegNet
 
 SegNet是Vijay Badrinarayanan于2015年提出的。

@@ -68,6 +68,10 @@ http://www.stat.cmu.edu/~ryantibs/convexopt/
 
 Machine Learning 10-725: Convex Optimization
 
+https://mp.weixin.qq.com/s/9BRhZd6x-JCNNVzt2ndYKQ
+
+最新《深度学习优化问题》教程，78页ppt，台大林智仁教授讲解
+
 ## 原始版本
 
 早期的梯度下降法一般用以下公式确定学习率：
@@ -333,19 +337,3 @@ https://mp.weixin.qq.com/s/4XOI8Dq6fqe8rhtJjeyxeA
 http://mp.weixin.qq.com/s/Q5kBCNZs3a6oiznC9-2bVg
 
 Michael Jordan新研究官方解读：如何有效地避开鞍点
-
-https://mp.weixin.qq.com/s/idmt0F49tOCh-ghWdHLdUw
-
-吴恩达导师Michael I.Jordan学术演讲：如何有效避开鞍点。这是Jordan半年后的另一个演讲，有些新内容。
-
-https://mp.weixin.qq.com/s/jVjemfcLzIWOdWdxMgoxsA
-
-超越Adam，从适应性学习率家族出发解读ICLR 2018高分论文
-
-https://mp.weixin.qq.com/s/B9nUwPtgpsLkEyCOlSAO5A
-
-1cycle策略：实践中的学习率设定应该是先增再降
-
-https://mp.weixin.qq.com/s/dseeCB-CRtZnzC3d4_8pYw
-
-AMSGrad能够取代Adam吗

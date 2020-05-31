@@ -6,9 +6,7 @@ category: resource
 
 # 通信协议
 
-https://mp.weixin.qq.com/s/_bWOYpZNjA4p7ZWM1J_4mw
-
-通信协议之序列化
+## HTTPS
 
 https://mp.weixin.qq.com/s/C68icGtwh3IzuUbANaRXEg
 
@@ -18,9 +16,23 @@ https://mp.weixin.qq.com/s/ewI7sHDFj1AHaNAtBDM8uA
 
 HTTPS到底加密了什么？
 
-https://mp.weixin.qq.com/s/CP_Egs4LUx7I8BXSqrS_dQ
+https://mp.weixin.qq.com/s/IcpaoCU6WXYRTqOuC4AmKQ
 
-互联网协议入门（一）
+用信鸽来解释HTTPS
+
+https://mp.weixin.qq.com/s/Yn2yJ-tQOIvwr1YJZabFuw
+
+HTTPS协议
+
+https://mp.weixin.qq.com/s/oydBIAEqAswppme6ku70fQ
+
+https加密那点事
+
+https://mp.weixin.qq.com/s/iN8NQd8SuWL4gCWhRbY6tg
+
+图解基于HTTPS的DNS
+
+## TCP
 
 https://mp.weixin.qq.com/s/zU1Mw3yaNmk4D5pP9vxxaw
 
@@ -34,6 +46,24 @@ https://mp.weixin.qq.com/s/yH3PzGEFopbpA-jw4MythQ
 
 TCP三次握手原理，你真的理解吗？
 
+https://mp.weixin.qq.com/s/ct3wknW9b9oZBoXwZTh-Fg
+
+面试官问我：一个TCP连接可以发多少个HTTP请求？我竟然回答不上来...
+
+https://zhuanlan.zhihu.com/p/101702312
+
+详解TCP超时与重传机制
+
+## 参考
+
+https://mp.weixin.qq.com/s/_bWOYpZNjA4p7ZWM1J_4mw
+
+通信协议之序列化
+
+https://mp.weixin.qq.com/s/CP_Egs4LUx7I8BXSqrS_dQ
+
+互联网协议入门（一）
+
 https://mp.weixin.qq.com/s/DDk5YZv9Q7CaqdiKvQxZGQ
 
 从理论到实践，全方位认识DNS（理论篇）
@@ -42,17 +72,9 @@ https://mp.weixin.qq.com/s/rZU35kVTXs5ebf7k6lnheQ
 
 从理论到实践，全方位认识DNS（实践篇）
 
-https://mp.weixin.qq.com/s/iN8NQd8SuWL4gCWhRbY6tg
-
-图解基于HTTPS的DNS
-
 https://mp.weixin.qq.com/s/dVY0tPgkUq3W5waVtITFUA
 
 一文看懂：网址，URL，域名，IP地址，DNS，域名解析
-
-https://mp.weixin.qq.com/s/oydBIAEqAswppme6ku70fQ
-
-https加密那点事
 
 https://mp.weixin.qq.com/s/Lee4DRNCQuGCTTAsSYR8ng
 
@@ -65,10 +87,6 @@ https://mp.weixin.qq.com/s/PAuijOCx8TLCsyU_RGs11w
 https://mp.weixin.qq.com/s/W_JjnDuinmLrahIpPY8h-g
 
 tcp服务端一直sleep，客户端发送数据问题总结
-
-https://mp.weixin.qq.com/s/IcpaoCU6WXYRTqOuC4AmKQ
-
-用信鸽来解释HTTPS
 
 https://mp.weixin.qq.com/s/bUrTDj1atJSZvFeWA8H-SA
 
@@ -102,17 +120,9 @@ https://mp.weixin.qq.com/s/JyPuFauAycot6bvvaunNlw
 
 把cookie聊清楚
 
-https://mp.weixin.qq.com/s/ct3wknW9b9oZBoXwZTh-Fg
-
-面试官问我：一个TCP连接可以发多少个HTTP请求？我竟然回答不上来...
-
 https://mp.weixin.qq.com/s/Btlj2A329KUbRU9It79OKQ
 
 面试环节：在浏览器输入URL回车之后发生了什么？
-
-https://zhuanlan.zhihu.com/p/101702312
-
-详解TCP超时与重传机制
 
 https://mp.weixin.qq.com/s/Mc7vpJw5r_vcbsxLXwfeNA
 

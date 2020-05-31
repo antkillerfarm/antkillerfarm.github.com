@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十九）——时间序列分析（2）, 运筹学, 强连通分量算法, 异常检测, 图论
+title:  机器学习（三十九）——时间序列分析（2）, 运筹学, 强连通分量算法, 异常检测, 数据清洗
 category: ML 
 ---
 
@@ -285,3 +285,21 @@ https://mp.weixin.qq.com/s/EOBjLqvi_WcSjiDb8b5Nwg
 https://mp.weixin.qq.com/s/uz5hjoG-m2PpnQxXZbHbFw
 
 深度学习中的异常实例检测:综述论文
+
+# 数据清洗
+
+https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g
+
+数据挖掘中的数据清洗方法大全
+
+https://mp.weixin.qq.com/s/FHdo2DTapoTryA-hOM-y_w
+
+还在为数据清洗抓狂？这里有一个简单实用的清洗代码集
+
+https://mp.weixin.qq.com/s/r7ngZOM9tO-_OSfvs2aDJw
+
+数据清洗&预处理入门完整指南
+
+https://mp.weixin.qq.com/s/r4ycLnjOl5hSPBMwKpnmsQ
+
+如何打造高质量的NLP数据集
