@@ -284,6 +284,10 @@ https://mp.weixin.qq.com/s/UwPCDA89GH5X-HubeJddnQ
 
 怎么画高大上的神经网络结构？试试这个！
 
+https://mp.weixin.qq.com/s/paIumcvQOsACntKM8YwcbA
+
+12个神经网络结构可视化工具
+
 https://mp.weixin.qq.com/s/MMzvZA55Xb2sOA7rJiXiEw
 
 那些酷炫的深度学习网络图怎么画出来的？

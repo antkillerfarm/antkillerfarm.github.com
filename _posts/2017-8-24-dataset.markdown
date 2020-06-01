@@ -216,6 +216,10 @@ https://www.datasetlist.com/
 
 收藏：全网最大机器学习数据集，视觉、NLP、音频都在这了
 
+https://mp.weixin.qq.com/s/_7uGn2HadW896co4qSzC3g
+
+这是一份非常全面的开源数据集！
+
 ## NLP
 
 https://mp.weixin.qq.com/s/xoOFbUjABKmQIVzTcHE6KQ

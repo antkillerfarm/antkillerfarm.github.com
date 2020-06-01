@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/avWy3-mju0d0QjufX_bi4Q
 
 Multi-task Learning的三个实用小知识
 
+https://mp.weixin.qq.com/s/hLJB8yH8V0Ncug77jHU1Bw
+
+模型独立学习：多任务学习与迁移学习
+
 # 人脸检测/识别
 
 ## OHEM

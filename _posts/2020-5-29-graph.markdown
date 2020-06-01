@@ -123,3 +123,7 @@ https://mp.weixin.qq.com/s/VdvvQetxAvkiNF04hV9PeA
 https://mp.weixin.qq.com/s/dTI3BdgixVTAFsnxtKjq0A
 
 常见图算法介绍
+
+https://mp.weixin.qq.com/s/dsPiw-n8iclT8uWkeTiBUA
+
+图数据表征学习，绝不止图神经网络一种方法

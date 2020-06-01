@@ -138,6 +138,10 @@ https://mp.weixin.qq.com/s/Fku4chvC9VX0p7NI8yYc0Q
 
 OCR光学字符识别方法汇总
 
+https://mp.weixin.qq.com/s/cKR3B6Av_C4nBzMeAoDYEA
+
+截屏、文字提取一气呵成，超实用OCR开源小工具
+
 # Graph NN
 
 https://mp.weixin.qq.com/s/emPDgw_c68JgbpYnem4JvA

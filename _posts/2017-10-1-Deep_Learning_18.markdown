@@ -150,6 +150,10 @@ https://mp.weixin.qq.com/s/2PY1baildUoZaetYlsukIQ
 
 图卷积网络(GCN)的谱分析
 
+https://mp.weixin.qq.com/s/F9zt7eyHxTX7Gp0zpvnfcg
+
+一文直击Graph Embedding图表示学习的原理及应用
+
 # 语义分割进阶+
 
 https://mp.weixin.qq.com/s/HJzbMoCa7GenNm78sz7YAg

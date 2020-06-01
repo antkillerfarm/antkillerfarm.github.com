@@ -247,3 +247,7 @@ https://mp.weixin.qq.com/s/movz5aesYdZZZHle-hHRIw
 https://mp.weixin.qq.com/s/aYGcJaLwbuXzjI5z1Crsrw
 
 LeCun自曝使用C语言23年之久，2年前才上手Python，还曾短暂尝试Lua
+
+https://mp.weixin.qq.com/s/vBFOQjJr27AeRsqCej85iA
+
+70年前，在苏联第一家AI LAB从事AI研究是种什么体验？

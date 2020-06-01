@@ -323,23 +323,3 @@ https://mp.weixin.qq.com/s/fQAkNdNhwkFichSZCwnNqA
 https://mp.weixin.qq.com/s/fA5NWLvLQN6kbB563pJnKg
 
 从16.6%到74.2%，谷歌新模型刷新ImageNet纪录（Noisy Student）
-
-https://mp.weixin.qq.com/s/UPm02RtTwhQhP_YhtmheBg
-
-面向视觉智能的知识蒸馏和Student-Teacher方法，附37页pdf下载
-
-https://zhuanlan.zhihu.com/p/143155437
-
-知识蒸馏在推荐系统的应用
-
-https://mp.weixin.qq.com/s/OFCzl8stFU5b1MWrkDU7NA
-
-阿里电商推荐中如何进行特征蒸馏提升模型效果
-
-https://mp.weixin.qq.com/s/ZNjC30F28uX2lBkHBAAU3g
-
-双DNN排序模型：在线知识蒸馏在爱奇艺推荐的实践
-
-https://mp.weixin.qq.com/s/_Wq7qawac1nTfZnV_AKG6w
-
-模型压缩中知识蒸馏技术原理及其发展现状和展望

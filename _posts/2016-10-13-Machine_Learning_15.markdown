@@ -64,7 +64,7 @@ $$\|x\|_\infty=max(\mid x_1\mid ,\dots,\mid x_n\mid )$$
 
 ![](/images/article/lp_ball.png)
 
-其中，0范数表示向量中非0元素的个数。上图中的图形被称为$$l_p$$ ball。表征在同一范数条件下，具有相同距离的点的集合。
+其中，L0范数表示向量中非0元素的个数。上图中的图形被称为$$l_p$$ ball。表征在同一范数条件下，具有相同距离的点的集合。
 
 范数满足如下不等式：
 
@@ -267,6 +267,10 @@ Lasso Regression
 https://mp.weixin.qq.com/s/kFEwvgBC4-Y05vL3lmRbXQ
 
 正则的一些intuition，一分钟发明新正则
+
+https://mp.weixin.qq.com/s/oZZGBZLRoJVsY7M-CP5MRg
+
+矩阵L2,1/L2,p范数扫盲
 
 # Krylov subspace
 

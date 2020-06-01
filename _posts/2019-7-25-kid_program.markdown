@@ -84,6 +84,12 @@ turtle是python对于LOGO语言图形库的实现。大概是出于照顾初学�
 
 https://docs.python.org/3/library/turtle.html
 
+参考：
+
+https://mp.weixin.qq.com/s/HaxaJHKZnctyGJZnvloCKA
+
+What?!Python一行代码，能玩这么多童年的游戏？
+
 ## 其他
 
 https://mp.weixin.qq.com/s/WJcLbYwH3-cTRHkMYNjJZA

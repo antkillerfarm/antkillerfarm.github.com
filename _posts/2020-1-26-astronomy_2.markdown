@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Falcon heavy, 两弹一星
+title: SpaceX, 两弹一星
 category: Nature 
 ---
 
@@ -108,7 +108,7 @@ https://mp.weixin.qq.com/s/5NyYCE1vt99i2O_r-ThAGA
 
 下一次去哪？金星、木卫一，还是海卫一？
 
-# Falcon heavy
+# SpaceX
 
 2018.2
 
@@ -153,6 +153,24 @@ https://www.zhihu.com/question/54009933
 https://www.zhihu.com/question/329267129
 
 中国空间站和国际空间站的区别在哪？
+
+----
+
+2020.5
+
+https://mp.weixin.qq.com/s/0zAIoiflCgwC2jMEdnJ6WQ
+
+马斯克的星际飞船，爆炸了
+
+https://mp.weixin.qq.com/s/tDdu0-wqtiqBetOuULgeTg
+
+马斯克又实现了一个“梦想”！人类首个商业载人航天飞船发射成功！
+
+https://mp.weixin.qq.com/s/q8qpmoDcHaEYWPpk0kFTFw
+
+Space X龙飞船成功发射，它和NASA到底有什么关系？
+
+![](/images/img3/NASA.png)
 
 ----
 

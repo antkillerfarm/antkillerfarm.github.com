@@ -390,6 +390,14 @@ https://mp.weixin.qq.com/s/lQKD83sKwgcrBH6o_QUxvg
 
 抛弃爬下来的灰色数据，有门槛的风控怎么做？
 
+https://mp.weixin.qq.com/s/DVUgCMHjq26bn8s9SnwcsQ
+
+电商薅羊毛研究报告
+
+https://mp.weixin.qq.com/s/y5zmR3vmBaodtxz2fG1F9Q
+
+全面介绍金融风控反欺诈之图算法
+
 https://mp.weixin.qq.com/s/wJ2lD-llSB4KedD4RixqLQ
 
 苏宁场景实践：小包裹背后的大智慧

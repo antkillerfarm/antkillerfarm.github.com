@@ -336,6 +336,10 @@ https://mp.weixin.qq.com/s/v3Fvp6Hed7ZGoE8FGlGMvQ
 
 美团配送A/B评估体系建设与实践
 
+https://mp.weixin.qq.com/s/UBAQC4xB-aPI7B7JUKE95g
+
+携程是如何做AB实验分流的？
+
 ## 参考
 
 https://mp.weixin.qq.com/s/vpANPrl86Ou2fBVHgLXtBQ

@@ -122,6 +122,10 @@ https://zhuanlan.zhihu.com/p/80215294
 
 GPT：第一个引入Transformer的预训练模型
 
+https://mp.weixin.qq.com/s/dibf3bU4hQ7nXTPGMFsKbg
+
+GPT-3王者来袭！1750亿参数少样本无需微调，网友：“调参侠”都没的当了
+
 ## ERNIE
 
 ERNIE是百度2019年提出的。
