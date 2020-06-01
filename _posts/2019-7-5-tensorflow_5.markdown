@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  TensorFlow（五）
+title:  TensorFlow（五）, TVM
 category: AI 
 ---
 
@@ -189,6 +189,66 @@ https://mp.weixin.qq.com/s/Rb0Fh9TZJo-IdEoxlgD4gw
 https://mp.weixin.qq.com/s/asPSPeBaRF_4eXcRXU-Zfw
 
 TensorFlow模型优化工具包—训练时量化
+
+# TVM
+
+TVM是陈天奇领导的一个DL加速框架项目。它处于DL框架（如tensorflow、pytorch）和硬件后端（如CUDA、OpenCL）之间，兼顾了前者的易用性和后者的执行效率。
+
+官网：
+
+https://tvm.apache.org/
+
+代码：
+
+https://github.com/apache/incubator-tvm
+
+![](/images/img3/tvm_stack.png)
+
+参考：
+
+https://zhuanlan.zhihu.com/p/139552817
+
+一篇关于深度学习编译器架构的综述论文
+
+https://mp.weixin.qq.com/s/8bXwxYyNjdThlGQQ70cgWQ
+
+TVM：端到端自动深度学习编译器，244页ppt
+
+https://mp.weixin.qq.com/s/irvBbPKENiZX9G_6wh5c-Q
+
+陈天奇等人提出TVM：深度学习自动优化代码生成器
+
+https://mp.weixin.qq.com/s/28n8g_epHsYB0I9GVc_lww
+
+陈天奇团队TVM重磅更新：直接在浏览器使用GPU
+
+https://mp.weixin.qq.com/s/7JGLm-hkCZBNDLA98qvWNA
+
+自动生成硬件优化内核：陈天奇等人发布深度学习编译器TVM
+
+https://mp.weixin.qq.com/s/YVIvdMznb3oatIXqD5a5_A
+
+陈天奇等人提出AutoTVM：让AI来编译优化AI系统底层算子
+
+https://mp.weixin.qq.com/s/HquT_mKm7x_rbDGz4Voqpw
+
+阿里巴巴最新实践：TVM+TensorFlow提高神经机器翻译性能
+
+https://zhuanlan.zhihu.com/p/50529704
+
+手把手带你遨游TVM
+
+https://mp.weixin.qq.com/s/z5rsU_uAAaRxgD9YAxDkZA
+
+陈天奇：深度学习编译技术的现状和未来
+
+https://zhuanlan.zhihu.com/p/75203171
+
+如何利用TVM快速实现超越Numpy(MKL)的GEMM
+
+https://zhuanlan.zhihu.com/p/58918363
+
+TVM: Deep Learning模型的优化编译器
 
 # 新冠肺炎+
 

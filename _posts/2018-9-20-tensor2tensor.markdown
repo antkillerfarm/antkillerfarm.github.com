@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Tensor2Tensor, NN中间语言, MXNet, TVM
+title:  Tensor2Tensor, NN中间语言, MXNet
 category: AI 
 ---
 
@@ -164,6 +164,16 @@ https://github.com/onnx
 
 截止2020.5，ONNX已经获得压倒性的胜利，成为了事实上的标准。
 
+中文指南：
+
+https://zhuanlan.zhihu.com/p/41255090
+
+ONNX--跨框架的模型中间表达框架
+
+修改ONNX模型：
+
+https://github.com/saurabh-shandilya/onnx-utils
+
 参考：
 
 https://mp.weixin.qq.com/s/etSrI8Z3-NWbrqNWIbfzjw
@@ -173,6 +183,10 @@ https://mp.weixin.qq.com/s/etSrI8Z3-NWbrqNWIbfzjw
 https://mp.weixin.qq.com/s/D5rQ6r3s54PR_esAAu5rhQ
 
 开源一年多的模型交换格式ONNX，已经一统框架江湖了？
+
+https://blog.csdn.net/xxradon/article/details/104715524
+
+onnx模型如何增加或者去除里面node，即修改图方法
 
 ## NNVM
 
@@ -307,63 +321,3 @@ https://zhuanlan.zhihu.com/p/42345854
 https://www.zhihu.com/question/392035070
 
 如何看待亚马逊AI李沐团队大批人员离职?
-
-# TVM
-
-TVM是陈天奇领导的一个DL加速框架项目。它处于DL框架（如tensorflow、pytorch）和硬件后端（如CUDA、OpenCL）之间，兼顾了前者的易用性和后者的执行效率。
-
-官网：
-
-https://tvm.apache.org/
-
-代码：
-
-https://github.com/apache/incubator-tvm
-
-![](/images/img3/tvm_stack.png)
-
-参考：
-
-https://zhuanlan.zhihu.com/p/139552817
-
-一篇关于深度学习编译器架构的综述论文
-
-https://mp.weixin.qq.com/s/8bXwxYyNjdThlGQQ70cgWQ
-
-TVM：端到端自动深度学习编译器，244页ppt
-
-https://mp.weixin.qq.com/s/irvBbPKENiZX9G_6wh5c-Q
-
-陈天奇等人提出TVM：深度学习自动优化代码生成器
-
-https://mp.weixin.qq.com/s/28n8g_epHsYB0I9GVc_lww
-
-陈天奇团队TVM重磅更新：直接在浏览器使用GPU
-
-https://mp.weixin.qq.com/s/7JGLm-hkCZBNDLA98qvWNA
-
-自动生成硬件优化内核：陈天奇等人发布深度学习编译器TVM
-
-https://mp.weixin.qq.com/s/YVIvdMznb3oatIXqD5a5_A
-
-陈天奇等人提出AutoTVM：让AI来编译优化AI系统底层算子
-
-https://mp.weixin.qq.com/s/HquT_mKm7x_rbDGz4Voqpw
-
-阿里巴巴最新实践：TVM+TensorFlow提高神经机器翻译性能
-
-https://zhuanlan.zhihu.com/p/50529704
-
-手把手带你遨游TVM
-
-https://mp.weixin.qq.com/s/z5rsU_uAAaRxgD9YAxDkZA
-
-陈天奇：深度学习编译技术的现状和未来
-
-https://zhuanlan.zhihu.com/p/75203171
-
-如何利用TVM快速实现超越Numpy(MKL)的GEMM
-
-https://zhuanlan.zhihu.com/p/58918363
-
-TVM: Deep Learning模型的优化编译器
