@@ -269,3 +269,7 @@ https://mp.weixin.qq.com/s/3OWh2w9h1NQLlniIb1fH9A
 如果你有两艘，你就会对全球秩序构成威胁。
 
 如果你有一打，你就是全球维和人员。
+
+CTOL（conventional take-off and landing）
+
+STOVL（Short Take Off Vertical Landing）

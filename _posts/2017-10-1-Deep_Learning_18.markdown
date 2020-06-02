@@ -58,6 +58,10 @@ https://mp.weixin.qq.com/s/eROWWPQkUs91bcv4VsQqSA
 
 NLP中的自监督表示学习，全是动图，很过瘾的
 
+https://mp.weixin.qq.com/s/gXqB7JJyIEJa74McbYcrzg
+
+只有正样本和无标记数据的半监督学习（PU Learning）
+
 # 深度信息检索+
 
 https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
@@ -115,6 +119,10 @@ https://mp.weixin.qq.com/s/W8YlrSyM7K84-_jwiD6E7g
 https://zhuanlan.zhihu.com/p/112719984
 
 全面理解搜索Query：当你在搜索引擎中敲下回车后，发生了什么？
+
+https://mp.weixin.qq.com/s/kS-FPeuz0nMN2YvbwAjbIw
+
+线上搜索结果大幅提升！亚马逊提出对抗式query-doc相关性模型
 
 # Graph NN+
 

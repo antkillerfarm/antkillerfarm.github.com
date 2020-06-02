@@ -46,6 +46,10 @@ https://blog.csdn.net/gsww404/article/details/80705950
 
 策略梯度（Policy Gradient）
 
+https://zhuanlan.zhihu.com/p/122663529
+
+从Mirror Descent的视角统一强化学习中的策略优化
+
 # Actor-Critic
 
 ## 概述

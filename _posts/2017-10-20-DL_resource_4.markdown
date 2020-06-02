@@ -20,6 +20,10 @@ https://mp.weixin.qq.com/s/UHjGE5VNoVguYMylT6SLjg
 
 基于特征的图像配准用于缺陷检测
 
+https://mp.weixin.qq.com/s/MjG2YZWe80sN5eqWpQfxOw
+
+基于深度学习的表面缺陷检测方法综述
+
 ## 参考
 
 https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748834&idx=3&sn=805564d2d9956dff6bb888ccb61e9b7b

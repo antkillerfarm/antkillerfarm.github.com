@@ -386,3 +386,11 @@ https://mp.weixin.qq.com/s/_Wq7qawac1nTfZnV_AKG6w
 https://mp.weixin.qq.com/s/W8mLxU48dgWBB4eEFnU2rQ
 
 知识蒸馏经典解读
+
+https://zhuanlan.zhihu.com/p/144982430
+
+强化学习如何用于模型蒸馏？
+
+https://zhuanlan.zhihu.com/p/144987182
+
+模型蒸馏的核心技术点有哪些，如何对其进行长期深入学习

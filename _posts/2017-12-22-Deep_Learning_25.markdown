@@ -130,6 +130,10 @@ https://mp.weixin.qq.com/s/hLJB8yH8V0Ncug77jHU1Bw
 
 模型独立学习：多任务学习与迁移学习
 
+https://zhuanlan.zhihu.com/p/138597214
+
+Multi-task Learning and Beyond: 过去，现在与未来
+
 # 人脸检测/识别
 
 ## OHEM

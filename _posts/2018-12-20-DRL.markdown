@@ -290,6 +290,10 @@ https://github.com/seungjaeryanlee/awesome-rl-competitions
 
 # 工具/框架
 
+https://www.zhihu.com/question/377263715
+
+目前最好用的大规模强化学习算法训练库是什么？
+
 https://mp.weixin.qq.com/s/5ScRIl2MHNGaUyIEJJKnKw
 
 DeepMind开源强化学习研究环境Control Suite

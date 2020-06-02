@@ -248,6 +248,14 @@ https://mp.weixin.qq.com/s/jlgTGqxBpD-va2R2KT0E6Q
 
 ## 二维码
 
+https://www.zhihu.com/question/33941757
+
+二维码会不会有一天用完？
+
+https://www.cnblogs.com/alantu2018/p/8504373.html
+
+二维码的生成细节和原理
+
 https://mp.weixin.qq.com/s/zZNJKUYlmKKSuSRCM1sgeg
 
 OpenCV二维码检测与定位
