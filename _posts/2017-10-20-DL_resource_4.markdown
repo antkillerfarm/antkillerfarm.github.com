@@ -341,3 +341,7 @@ RDSNet：统一目标检测和实例分割的新型网络
 https://mp.weixin.qq.com/s/iPx5K2cSs5jlCt9d9oKpww
 
 VoVNet：实时目标检测的新backbone网络
+
+https://mp.weixin.qq.com/s/FHHIdoXyaU4skX-zyZFQew
+
+已开源！全新水下目标检测算法SWIPENet+IMA框架

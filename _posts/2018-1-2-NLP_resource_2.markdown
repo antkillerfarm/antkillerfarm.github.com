@@ -196,6 +196,10 @@ https://mp.weixin.qq.com/s/hZQxz5u-Z0_SEmtLL7T4Hg
 
 基于Aspect的情感分析模型总结
 
+https://mp.weixin.qq.com/s/k-gS6k3-hy-ZI_r901IGvg
+
+情感分析算法在阿里小蜜的应用实践
+
 ## 命名实体识别
 
 https://mp.weixin.qq.com/s/LrrqGCNBncDr3ZacoIHHBg

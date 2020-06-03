@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十九）——时间序列分析（2）, 运筹学, 强连通分量算法, 异常检测, 数据清洗
+title:  机器学习（三十九）——时间序列分析（2）, 运筹学, 异常检测, 数据清洗
 category: ML 
 ---
 
@@ -164,23 +164,21 @@ https://mp.weixin.qq.com/s/DbR-Px_-vK-4xOweqsQKxw
 
 基于网络单纯形法求解的最小流费用问题
 
-# 强连通分量算法
+----
 
-http://ishare.iask.sina.com.cn/f/34626295.html
+在1978年，新的廉价航空公司进入市场。这些航空公司以劳动力成本低，操作简单(点对点)，服务简单，规模效应，以及技术变革的优势，能够以远低于全服务航空公司的票价获取利润。
 
-矩阵不可约的充要条件
+大型航空公司需要一种策略来重新抓住这些以休闲为目的的旅客。然而，对这些巨头们来说，与后起之秀之间的全面价格战几乎是自杀式的。
 
-http://www.cnblogs.com/saltless/archive/2010/11/08/1871430.html
+“美利坚航空公司”（American Airlines）当时的营销副总裁罗伯特·克兰德尔(Robert Crandall)被普遍认为是解决这一问题的创新者。
 
-求强连通分量的Tarjan算法
+首先，他们设计了对购买有重大限制的折扣:必须在出发前30天购买，不可退款，并且要求至少7天的停留时间。这些限制是为了防止大多数商务旅行者购买低价机票。（价格维度的策略）
 
-http://blog.csdn.net/dm_vincent/article/details/8554244
+与此同时，美利坚航空公司限制了每趟航班的折扣座位数量，这种方案提供了与新兴航空公司在价格上竞争的手段，同时又不会损害他们的核心商务旅行者收入。（数量维度的策略）
 
-求解强连通分量算法之---Kosaraju算法
+https://mp.weixin.qq.com/s/CYNbgL2UBPub8-ZFFfn2ug
 
-http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
-
-强连通分支算法--Kosaraju算法、Tarjan算法和Gabow算法
+浅谈收益管理与动态定价
 
 # 异常检测
 

@@ -90,6 +90,10 @@ https://mp.weixin.qq.com/s/ty5xy6s0z3rvMYZptdTdBQ
 
 Python热图进阶
 
+https://mp.weixin.qq.com/s/mJpk0ZM9kvxBKOiyRJvAQw
+
+Python+Kepler.gl轻松制作酷炫路径动画
+
 ## 参考
 
 https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg

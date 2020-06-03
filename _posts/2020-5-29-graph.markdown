@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Graph ML（一）——图论基础
+title:  Graph ML（一）——图论基础, 强连通分量算法
 category: graph 
 ---
 
@@ -127,3 +127,21 @@ https://mp.weixin.qq.com/s/dTI3BdgixVTAFsnxtKjq0A
 https://mp.weixin.qq.com/s/dsPiw-n8iclT8uWkeTiBUA
 
 图数据表征学习，绝不止图神经网络一种方法
+
+# 强连通分量算法
+
+http://ishare.iask.sina.com.cn/f/34626295.html
+
+矩阵不可约的充要条件
+
+http://www.cnblogs.com/saltless/archive/2010/11/08/1871430.html
+
+求强连通分量的Tarjan算法
+
+http://blog.csdn.net/dm_vincent/article/details/8554244
+
+求解强连通分量算法之---Kosaraju算法
+
+http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
+
+强连通分支算法--Kosaraju算法、Tarjan算法和Gabow算法

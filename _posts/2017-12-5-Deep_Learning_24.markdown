@@ -270,6 +270,10 @@ https://mp.weixin.qq.com/s/vFEHZv6qh1dWhQ27WUEDEQ
 
 目标跟踪系列--C-COT算法
 
+https://mp.weixin.qq.com/s/nDkaOb4q9cPSqW4w76kcNg
+
+码隆科技提出SiamAttn，将孪生网络跟踪器的性能提至最优水平
+
 ## FlowNet
 
 论文：

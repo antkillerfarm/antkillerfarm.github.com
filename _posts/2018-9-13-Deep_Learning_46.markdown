@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/cKR3B6Av_C4nBzMeAoDYEA
 
 截屏、文字提取一气呵成，超实用OCR开源小工具
 
+https://mp.weixin.qq.com/s/t5LdXMHW3SyBzMST-3ZtgQ
+
+比OCR更强大的PPT图片一键转文档重建技术
+
 # Graph NN
 
 https://mp.weixin.qq.com/s/emPDgw_c68JgbpYnem4JvA

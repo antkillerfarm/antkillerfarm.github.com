@@ -354,6 +354,10 @@ https://mp.weixin.qq.com/s/axCd8GZZ8tGg4S90NyApbw
 
 综述：基于GAN的图像翻译模型盘点
 
+https://mp.weixin.qq.com/s/p0n4ex2RRTMU98d94SEP7g
+
+近年图像翻译先进模型小结
+
 https://mp.weixin.qq.com/s/grEBwYzGN-573cvY5goT6g
 
 详解GAN中的一致优化问题
