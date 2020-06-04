@@ -210,6 +210,10 @@ https://mp.weixin.qq.com/s/aPlNov77l-3hBRePbIEOrg
 
 一文道尽“人脸数据集”
 
+https://mp.weixin.qq.com/s/VX5IIzDwPXCxCxvocAji0g
+
+最全1.5万字长文解读7大方向人脸数据集v2.0版
+
 https://mp.weixin.qq.com/s/BCgVMYe011O-Jse4ZFBbxg
 
 谷歌发布人类动作识别数据集AVA，精确标注多人动作

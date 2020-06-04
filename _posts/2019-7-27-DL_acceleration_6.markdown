@@ -114,6 +114,10 @@ https://mp.weixin.qq.com/s/KuZ-mZKt7bTWhzygK1lmSg
 
 加速目标检测
 
+https://mp.weixin.qq.com/s/1EnPWdJk8vGzxxdzAwPO4A
+
+剪枝乱炖
+
 # 知识蒸馏
 
 ## 基本概念

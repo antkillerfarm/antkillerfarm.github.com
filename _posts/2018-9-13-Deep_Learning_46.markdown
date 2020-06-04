@@ -146,6 +146,10 @@ https://mp.weixin.qq.com/s/t5LdXMHW3SyBzMST-3ZtgQ
 
 比OCR更强大的PPT图片一键转文档重建技术
 
+https://mp.weixin.qq.com/s/rm7G6MqMjSyy8oGjSOWk3A
+
+CV赛题总结：人民币面值与编码识别
+
 # Graph NN
 
 https://mp.weixin.qq.com/s/emPDgw_c68JgbpYnem4JvA
@@ -427,6 +431,10 @@ GCMC：GNN在推荐系统中的应用
 https://mp.weixin.qq.com/s/u8XAbOautjZTA7ZhdSBaDA
 
 经典重温：图表示学习经典算法node2vec
+
+https://mp.weixin.qq.com/s/soH6jX7_fjq0iBBH-5bMsA
+
+Node2Vec论文+代码笔记
 
 https://mp.weixin.qq.com/s/zxFgW6ofimYQ9wlChTK8cw
 

@@ -358,6 +358,10 @@ https://mp.weixin.qq.com/s/232DjhM5sqWqPTv7PCaORA
 
 ElementAI提出超复杂多尺度细粒度图像分类Attention模型
 
+https://mp.weixin.qq.com/s/G-4w5jMuN-_zVARPeb0cqA
+
+细粒度实体分类论文综述
+
 # 显著性检测
 
 https://blog.csdn.net/dawnlooo

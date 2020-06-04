@@ -272,6 +272,14 @@ https://zhuanlan.zhihu.com/p/69290203
 
 Transformer结构及其应用详解--GPT、BERT、MT-DNN、GPT-2
 
+https://mp.weixin.qq.com/s/Jf0uKIjwaBbzNCB7IiTjpA
+
+预训练模型专辑（一）
+
+https://mp.weixin.qq.com/s/pl27hVrphiFHYqZU85KGFw
+
+预训练模型专辑（二）
+
 # BERT
 
 ## 概述

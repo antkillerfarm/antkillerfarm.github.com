@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/1EvILWkBHKu2RV_xBuU8VQ
 
 条件变分自编码器（CVAE）
 
+https://mp.weixin.qq.com/s/hi0cVv4danL8IXT2BGxXbw
+
+条件变分自动编码器CVAE：基本原理简介和keras实现
+
 ## VAE的另一个介绍
 
 以下章节的内容主要摘自：

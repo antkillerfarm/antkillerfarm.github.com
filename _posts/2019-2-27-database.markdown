@@ -156,6 +156,10 @@ https://mp.weixin.qq.com/s/9L_HOCfRwC_QxjzJyVjKXA
 
 Paxos、Raft、Gossip、Nuorum NWR、PBFT、Anti-Entropy、POW、ZAB等等
 
+https://zhuanlan.zhihu.com/p/130974371
+
+分布式一致性协议概述
+
 https://mp.weixin.qq.com/s/NqLpT47ZWD6oJzfo_tWceA
 
 Paxos（分布式一致性算法）

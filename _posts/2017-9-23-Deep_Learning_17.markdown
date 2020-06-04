@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十七）——自动求导, 无监督/半监督/自监督深度学习
+title:  深度学习（十七）——自动求导, 无监督/半监督/自监督深度学习（1）
 category: DL 
 ---
 
@@ -118,6 +118,10 @@ https://zhuanlan.zhihu.com/p/24709748
 https://zhuanlan.zhihu.com/p/24863977
 
 矩阵求导术（下）
+
+https://mp.weixin.qq.com/s/2hu6a0wScJedwk3a5aKbIw
+
+自动微分到底是什么？这里有一份自我简述
 
 # 无监督/半监督/自监督深度学习
 
@@ -356,15 +360,3 @@ https://mp.weixin.qq.com/s/LdfLd2cZCdpvNYLKHUNwuA
 https://mp.weixin.qq.com/s/qaLQK3uzaeyp68AbL0aOOQ
 
 怎么在视频标注上省钱？这里有一个面向视频推荐的多视图主动学习
-
-https://mp.weixin.qq.com/s/-cXOUw9zJteVUkbpRMIWtQ
-
-何恺明一作，刷新7项检测分割任务，无监督预训练完胜有监督
-
-https://mp.weixin.qq.com/s/wtHrHFoT2E_HLHukPdJUig
-
-OpenAI科学家一文详解自监督学习
-
-https://mp.weixin.qq.com/s/fy1gUElWVWcOVvzv6fGmdg
-
-谷歌大脑推出视觉领域任务自适应基准：VTAB

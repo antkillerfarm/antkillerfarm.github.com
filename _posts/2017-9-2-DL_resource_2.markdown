@@ -72,10 +72,6 @@ https://mp.weixin.qq.com/s/S6_HzgyTnoNvc8vp4_C1kw
 
 利用Matlab实现深度学习
 
-https://mp.weixin.qq.com/s/z360mTVRqeDFMBiJ0Q_9SQ
-
-调参心得：超参数优化之旅
-
 https://mp.weixin.qq.com/s/miKs4tWu8Hh1yHvx-XZFwg
 
 构建深度神经网络，我有20条“不成熟”的小建议

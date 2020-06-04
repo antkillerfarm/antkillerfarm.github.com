@@ -156,6 +156,14 @@ https://zhuanlan.zhihu.com/p/35050923
 
 跬步至千里：揭秘谷歌AutoML背后的渐进式搜索技术
 
+https://mp.weixin.qq.com/s/z360mTVRqeDFMBiJ0Q_9SQ
+
+调参心得：超参数优化之旅
+
+https://mp.weixin.qq.com/s/2u3_ky2hFe3cldvF74gLDA
+
+机器学习模型的超参数优化
+
 https://mp.weixin.qq.com/s/wGt3Xk_ARqHei-ddU9iXNg
 
 算力节省240倍！上交大、MIT新方法低成本达到谷歌AutoML性能
@@ -367,15 +375,3 @@ https://mp.weixin.qq.com/s/ClqOWx1RJGzoS0akI2s93w
 https://mp.weixin.qq.com/s/QtYNb1bVnWghNFK6fbynLw
 
 激活函数如何进行自动学习和配置
-
-https://mp.weixin.qq.com/s/smAlLm-JZn_s2utSCVk7ig
-
-归一化(Normalization)方法如何进行自动学习和配置
-
-https://mp.weixin.qq.com/s/E0ULyXGz3UEcD0cIg-XkNA
-
-优化方法可以进行自动搜索学习吗？
-
-https://mp.weixin.qq.com/s/439I6hHIfq6KpkLEwAgDrw
-
-MIT韩松团队开发“万金油”母网，嵌套10^19个子网，包下全球所有设备

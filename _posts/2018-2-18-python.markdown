@@ -190,11 +190,21 @@ http://www.pygtk.org/
 
 但由于PyGTK库本质上来说，使用了和一般的Python调用C库一样的方法，因此每导入一个库，都需要编写大量的接口文件。GNOME工程有那么多项目，采用这种办法显然是不太可行的。
 
-于是，GNOME工程发起了GObject Introspection项目。众所周知，GNOME工程诸多项目的基石是GObject。这是一个很成功的类型系统，使用该系统可以获得远比普通C库更强的支持。GObject Introspection项目的目标就是创建一个用于跨语言绑定的中间层。这个项目的官网是：
+于是，GNOME工程发起了GObject Introspection项目。众所周知，GNOME工程诸多项目的基石是GObject。这是一个很成功的类型系统，使用该系统可以获得远比普通C库更强的支持。GObject Introspection项目的目标就是创建一个用于跨语言绑定的中间层。
+
+这也是GTK相对Qt的重大优势：几乎所有语言都有GTK绑定，但只有少数语言能绑定到Qt上，而且除了原生C++语言之外，其他的都是功能阉割版。
+
+这个项目的官网是：
 
 https://wiki.gnome.org/Projects/GObjectIntrospection
 
-随着GObject Introspection项目的进展，越来越多的语言绑定开始使用这套系统，python也不例外。PyGObject项目就是这种方法的成果，目前它已经取代了PyGTK库，成为GTK+ 3时代Python调用GTK+的官方方案。它的官网是：
+文档：
+
+https://gi.readthedocs.io/en/latest/
+
+PyGObject项目就是这种方法的成果，目前它已经取代了PyGTK库，成为GTK+ 3时代Python调用GTK+的官方方案。
+
+它的官网是：
 
 https://wiki.gnome.org/Projects/PyGObject
 

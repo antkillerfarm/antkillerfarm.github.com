@@ -173,3 +173,29 @@ https://mp.weixin.qq.com/s/JbdwtpA3iRXReyerO4HYIg
 https://mp.weixin.qq.com/s/MFNKDNTrF-8VuKrwcsTDLw
 
 纵览图像语义分割发展史，11篇关键文章简介
+
+# FCN
+
+深度学习最初流行的分割方法是，打补丁式的分类方法 (patch classification) 。逐像素地抽取周围像素对中心像素进行分类。由于当时的卷积网络末端都使用全连接层 (full connected layers) ，所以只能使用这种逐像素的分割方法。
+
+Fully Convolutional Networks是Jonathan Long和Evan Shelhamer于2014年提出的网络结构。
+
+论文：
+
+《Fully Convolutional Networks for Semantic Segmentation》
+
+代码：
+
+https://github.com/shelhamer/fcn.berkeleyvision.org
+
+>Jonathan Long，CMU本科（2010年）+UCB博士在读。   
+>个人主页：   
+>https://people.eecs.berkeley.edu/~jonlong/
+
+>Evan Shelhamer，UCB博士在读。   
+>个人主页：   
+>http://imaginarynumber.net/
+
+>Trevor Darrell，University of Pennsylvania本科（1988年）+MIT硕博（1992年、1996年）。MIT教授（1999～2008）。UCB教授。   
+>个人主页：   
+>https://people.eecs.berkeley.edu/~trevor/

@@ -282,11 +282,3 @@ GIO提供了以GSocket为首的低级API，和以GSocketClient、GSocketConnecti
 高级API的使用示例如下：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/glib/network
-
-## GObject Introspection
-
-GObject对于跨语言绑定有很大的好处，它可以很方便的生成对应语言的桩，这也是GTK相对Qt的重大优势：几乎所有语言都有GTK绑定，但只有少数语言能绑定到Qt上，而且除了原生C++语言之外，其他的都是功能阉割版。
-
-参见：
-
-https://gi.readthedocs.io/en/latest/

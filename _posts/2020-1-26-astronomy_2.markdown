@@ -172,6 +172,22 @@ Space X龙飞船成功发射，它和NASA到底有什么关系？
 
 ![](/images/img3/NASA.png)
 
+https://mp.weixin.qq.com/s/u5BuBhkrgLkUfuGWHA5ZRg
+
+美国国防先进研究计划局（Defense Advanced Research Projects Agency, DARPA），如何成为美国科技的核心引擎？
+
+https://mp.weixin.qq.com/s/LTE-m0u6469kNk1Dple4Zg
+
+史上最全SpaceX火箭数据开源，核心、组员舱、起落架、发射信息全都有！
+
+https://www.zhihu.com/question/396878847
+
+SpaceX龙飞船中的新触控交互操作系统，意味着什么？
+
+https://mp.weixin.qq.com/s/m6UgJjvsNjQkMm_20tz5sQ
+
+成本相差5384倍，编程用C++和Python！马斯克如何搞翻航天圈（SpaceX的系统冗余设计）
+
 ----
 
 小布什签署的美国航天发展规划，直接规定了要求NASA退出近地空间，要求他们重新带领美国航天天顶科技。与此同时，美国的商业航天开始全面崛起，后来大名鼎鼎的space-x，bigelow，blue origin大都从此时起步。
@@ -255,21 +271,3 @@ https://mp.weixin.qq.com/s/3OWh2w9h1NQLlniIb1fH9A
 多少一点困难怕什么。封锁吧，封锁十年八年，中国的一切问题都解决了。中国人死都不怕，还怕困难吗？
 
 那么美国人之前用来进行运载火箭发射的吹除用送风总管是从哪里来的呢？答案很简单，有超过90%的这种部件全部是进口自中方的。然而自从发生在中美之间的经济纠纷开始之后，停止向美国输送这种关键零件，就成为了中方对美国制裁中的一个很重要部分。
-
-----
-
-2019.12.17 山东号航空母舰入列。
-
-![](/images/img3/Carrier.jpg)
-
-![](/images/img3/Carrier_2.jpg)
-
-如果你有一艘航母，你就破坏了你所在地区的稳定。
-
-如果你有两艘，你就会对全球秩序构成威胁。
-
-如果你有一打，你就是全球维和人员。
-
-CTOL（conventional take-off and landing）
-
-STOVL（Short Take Off Vertical Landing）

@@ -316,6 +316,12 @@ https://mp.weixin.qq.com/s/-mWYn195TBSB1lDlncuYeA
 
 常用命令之awk常用实例
 
+https://mp.weixin.qq.com/s/IXHKtRKd7Zl8iT9zd2ONsg
+
+活跃了40年的AWK现在怎么样了？
+
+AWK，1977年诞生于贝尔实验室。其名称来自其作者的名字缩写：Alfred Aho，Peter Weinberger和Brian Kernighan。
+
 ## sed
 
 ```bash

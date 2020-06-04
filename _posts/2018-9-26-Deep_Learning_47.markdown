@@ -356,6 +356,22 @@ https://mp.weixin.qq.com/s/4VE2lZeFf05AyLp_s3nTFQ
 
 # AutoDL
 
+https://mp.weixin.qq.com/s/smAlLm-JZn_s2utSCVk7ig
+
+归一化(Normalization)方法如何进行自动学习和配置
+
+https://mp.weixin.qq.com/s/E0ULyXGz3UEcD0cIg-XkNA
+
+优化方法可以进行自动搜索学习吗？
+
+https://mp.weixin.qq.com/s/439I6hHIfq6KpkLEwAgDrw
+
+MIT韩松团队开发“万金油”母网，嵌套10^19个子网，包下全球所有设备
+
+https://mp.weixin.qq.com/s/OL_MuzKqAaDoOU3LF3Xmow
+
+强化学习如何用于自动模型设计(NAS)与优化？
+
 https://mp.weixin.qq.com/s/Nmkcy2nBczUccwIdMJiH_A
 
 MaskConnect: 探究网络结构搜索中的Module间更好的连接
