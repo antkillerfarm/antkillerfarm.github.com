@@ -82,6 +82,10 @@ https://mp.weixin.qq.com/s/JwwrmsfmUsph8eSl1o0EaQ
 
 39个slides带你回顾那些传统数据挖掘算法
 
+https://mp.weixin.qq.com/s/M5Hj5exvdPwb1PWgoFfFHw
+
+机器学习中的七宗罪
+
 http://url.cn/40IkU7z
 
 盘点机器学习常用的35大算法

@@ -330,6 +330,14 @@ https://mp.weixin.qq.com/s/m_JMXU6iMS4SckzWZYtIUA
 
 腾讯分布式数据库TDSQL金融级能力的架构原理解读
 
+https://mp.weixin.qq.com/s/jdPE9WClBuimIHVxJnwwUw
+
+字节跳动自研强一致在线KV&表格存储实践-上篇
+
+https://mp.weixin.qq.com/s/DvUBnWBqb0XGnicKUb-iqg
+
+字节跳动自研强一致在线KV&表格存储实践-下篇
+
 # Mysql
 
 ## 安装

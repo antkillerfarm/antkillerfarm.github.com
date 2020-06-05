@@ -199,6 +199,8 @@ Dropout是神经网络中解决过拟合问题的一种常见方法。
 
 2.因为dropout程序导致两个神经元不一定每次都在一个dropout网络中出现。这会迫使网络去学习更加鲁棒的特征。换句话说，假如我们的神经网络是在做出某种预测，它不应该对一些特定的线索片段太过敏感，即使丢失特定的线索，它也应该可以从众多其它线索中学习一些共同的模式（鲁棒性）。
 
+Dropout还有若干变种，如Annealed dropout（Dropout rate decreases by epochs）、Standout（Each neural has different dropout rate）。
+
 除了Dropout之外，还有**DropConnect**。两者原理上类似，后者只隐藏神经元之间的连接。DropConnect也被称作Weight dropout。
 
 总的来说，Dropout类似于机器学习中的L1、L2规则化等增加稀疏性的算法，也类似于随机森林、模拟退火之类的增加随机性的算法。
@@ -249,7 +251,13 @@ https://mp.weixin.qq.com/s/L7DwT5LpfWoS474MwWOiLA
 
 $$W_{ij} \to (1-p)W_{ij}$$
 
-Dropout还有若干变种，如Annealed dropout（Dropout rate decreases by epochs）、Standout（Each neural has different dropout rate）。
+这种修正在预测阶段看来是有些不方便的，因此又出现了Inverted Dropout。它的做法是训练阶段在dropout之后，接上一个除以p的rescale操作，这样的话在预测阶段，就可以忽略dropout操作了。
+
+参考：
+
+https://mp.weixin.qq.com/s/cP8KO3JPIn4lK-n-KdUejA
+
+Dropout有哪些细节问题？
 
 # 深度学习常用术语解释
 

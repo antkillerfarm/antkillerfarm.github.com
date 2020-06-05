@@ -1,8 +1,68 @@
 ---
 layout: post
-title:  深度强化学习（七）——MARL, StarCraft & AI, AlphaStar
+title:  深度强化学习（七）——MARL, StarCraft & AI
 category: DRL 
 ---
+
+# AlphaGo
+
+## 参考（续）
+
+https://zhuanlan.zhihu.com/p/32089487
+
+AlphaZero实战：从零学下五子棋
+
+http://mp.weixin.qq.com/s/72riTTC3w0q9oF5H-51kXA
+
+手把手教你搭建AlphaZero（使用Python和Keras）
+
+https://mp.weixin.qq.com/s/Qw2tT7H1PwDvPgOYy8YUsQ
+
+AlphaGo Zero代码迟迟不开源，TF等不及自己推了一个
+
+https://mp.weixin.qq.com/s/Vq-osjgNXJQu5avGkxQdsw
+
+手把手：AlphaGo有啥了不起，我也能教你做一个
+
+https://mp.weixin.qq.com/s/ajajJ9yJZsOy4Vc0ULBxXg
+
+国际象棋版AlphaZero出来了诶，还开源了Keras实现
+
+https://zhuanlan.zhihu.com/p/41814142
+
+从源码解密AlphaGo Zero背后基本原理
+
+https://www.ifanr.com/630602
+
+AlphaGo的棋局，与人工智能有关，与人生无关
+
+https://mp.weixin.qq.com/s/J0w6kzzdKTbsaiZitbQdoA
+
+达观数据：一文详解AlphaGo原理
+
+https://mp.weixin.qq.com/s/BBQ54HHrFiqxXkC-EI6ELw
+
+Science封面：AlphaZero达成终极进化体，史上最强棋类AI降临！
+
+https://mp.weixin.qq.com/s/Pgw_xaCNl_kCPCg8NFzUBQ
+
+人类没法下了！DeepMind贝叶斯优化调参AlphaGo，自弈胜率大涨16.5%
+
+https://mp.weixin.qq.com/s/eE3oL6c5zHmTglHE-dgBvg
+
+详解AlphaGo到AlphaGo Zero！
+
+https://mp.weixin.qq.com/s/aAF0Gr7yEPkHRLASecJipw
+
+百度正用谷歌AlphaGo，解决一个比围棋更难的问题
+
+https://hackernoon.com/the-3-tricks-that-made-alphago-zero-work-f3d47b6686ef
+
+The 3 Tricks That Made AlphaGo Zero Work
+
+https://web.stanford.edu/~surag/posts/alphazero.html
+
+A Simple Alpha(Go) Zero Tutorial
 
 # MARL
 
@@ -199,6 +259,10 @@ https://mp.weixin.qq.com/s/dkJr29LqO2PdSR6ds7X2qg
 
 协作多智能体强化学习中的回报函数设计
 
+https://mp.weixin.qq.com/s/m18xiMRryXl_BoCxKVUbTA
+
+多Agent强化学习综述
+
 # StarCraft & AI
 
 AIIDE（Artificial Intelligence and Interactive Digital Entertainment）
@@ -276,67 +340,3 @@ https://mp.weixin.qq.com/s/yAYF2i-Pr84RliKrJyPaUA
 https://mp.weixin.qq.com/s/uC8gi4kN_muRTwRL0RCZjQ
 
 要玩转这个星际争霸II开源AI，你只需要i5+GTX1050
-
-https://mp.weixin.qq.com/s/wyn-V4-DcjjOKziith3pXw
-
-开源星际争霸2多智能体挑战smac
-
-https://mp.weixin.qq.com/s/e4iv6FJAMZACEqWFmxeSFg
-
-让AI掌握星际争霸微操：中科院提出强化学习+课程迁移学习方法
-
-https://mp.weixin.qq.com/s/JbCIBFDRvg5qcpZ11g58dw
-
-DeepMind提出关系性深度强化学习：在星际争霸2任务中获得最优水平
-
-https://mp.weixin.qq.com/s/h0be7yRQMjLFi8EteTzuMQ
-
-腾讯AI在星际2完整对战中击败“作弊级”内建Bot
-
-https://zhuanlan.zhihu.com/p/29222384
-
-sc2-101: 第一个rule-base的星际二agent
-
-# AlphaStar
-
-AlphaStar是DeepMind在解决了围棋问题之后，在RTS游戏领域的尝试。
-
-里程碑事件：
-
-2018.12 5:0击败TLO，5:0击败MaNa。
-
-2019.1 表演赛不敌MaNa。
-
-论文：
-
-《Grandmaster level in StarCraft II using multi-agent reinforcement learning》
-
-参考：
-
-https://mp.weixin.qq.com/s/_Y0bCjTu9UrHfnen15htqQ
-
-AlphaStar称霸星际争霸2！AI史诗级胜利，DeepMind再度碾压人类
-
-https://mp.weixin.qq.com/s/axr5VFbHQmYo0shW9ilBaQ
-
-DeepMind回应一切：AlphaStar两百年相当于人类多长时间？
-
-https://www.zhihu.com/question/310011363
-
-如何评价DeepMind在北京时间19年1月25日2点的《星际争霸 2》项目演示？
-
-https://mp.weixin.qq.com/s/k0l2uoik-Z9aA9zax7AoZg
-
-中科院自动化所深度解析：Deepmind AlphaStar如何战胜人类职业玩家
-
-https://zhuanlan.zhihu.com/p/55781614
-
-AlphaStar背后的机器学习原理
-
-https://mp.weixin.qq.com/s/XljE82cJZfFOgf2KrXWSKA
-
-DeepMind首个战胜星际2职业玩家的AI为何无敌？新视角揭秘AI里程碑
-
-https://mp.weixin.qq.com/s/_t2vLFfIG6VYAdWDalpIXQ
-
-说人话教AI打游戏，Facebook开源迷你版星际争霸，成果登上NeurIPS 2019

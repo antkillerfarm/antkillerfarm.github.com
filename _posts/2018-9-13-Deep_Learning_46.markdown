@@ -150,6 +150,10 @@ https://mp.weixin.qq.com/s/rm7G6MqMjSyy8oGjSOWk3A
 
 CV赛题总结：人民币面值与编码识别
 
+https://mp.weixin.qq.com/s/5rny9_oF2-urF2JUp13fUw
+
+OpenCV实现银行卡号识别，字符识别算法你知多少？
+
 # Graph NN
 
 https://mp.weixin.qq.com/s/emPDgw_c68JgbpYnem4JvA

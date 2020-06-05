@@ -16,6 +16,10 @@ https://blog.csdn.net/CoderPai/article/details/105050924
 
 NLP任务总结
 
+https://mp.weixin.qq.com/s/qskKTKKSeBBV8qJbPURL8A
+
+一文看尽各种NLP任务
+
 ## 教程
 
 http://cs224d.stanford.edu/

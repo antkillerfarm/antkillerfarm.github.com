@@ -4,6 +4,42 @@ title:  深度强化学习（三）——DQN进化史, A2C & A3C
 category: DRL 
 ---
 
+# Deep Q-learning Network
+
+## 参考（续）
+
+https://mp.weixin.qq.com/s/x-qCA0TzoVUtZ8VAf8ey0A
+
+深度Q学习介绍
+
+https://mp.weixin.qq.com/s/SqU74jYBrjtp9L-bnBuboA
+
+教你完美实现深度强化学习算法DQN
+
+https://mp.weixin.qq.com/s/Vdt5h8APAFoeVxFYKlywpg
+
+用DeepMind的DQN解数学题，准确率提升15%
+
+https://mp.weixin.qq.com/s/RH4ifA46njdC7fyRI9kVMg
+
+深度Q网络与视觉格斗类游戏
+
+https://mp.weixin.qq.com/s/uymKtR_7IgMpfXcekfkCDg
+
+从强化学习基本概念到Q学习的实现，打造自己的迷宫智能体
+
+https://mp.weixin.qq.com/s/9ZvaZQ1yumhr75okBxNyeA
+
+优化强化学习Q-learning算法进行股市交易
+
+https://mp.weixin.qq.com/s/QkRdv0xMoqwaXsNAMAHR0A
+
+一图尽展视频游戏AI技术，DQN无愧众算法之鼻祖
+
+https://zhuanlan.zhihu.com/p/35882937
+
+强化学习——从Q-Learning到DQN到底发生了什么？
+
 # DQN进化史
 
 ![](/images/img2/DQN.jpg)
@@ -302,29 +338,3 @@ https://zhuanlan.zhihu.com/p/70360272
 https://mp.weixin.qq.com/s/R308ohdMU8b7Ap4CLofvDg
 
 OpenAI开源算法ACKTR与A2C：把可扩展的自然梯度应用到强化学习
-
-# DDPG
-
-论文：
-
-《Continuous control with deep reinforcement learning》
-
-DDPG主要从：**PG->DPG->DDPG**发展而来。
-
-Policy Gradient的概念参见《强化学习（七）》，这里不再赘述。
-
-## DPG
-
-Deterministic Policy Gradient是Deepmind的D.Silver等在2014年提出的，即确定性的行为策略，每一步的行为通过函数$$\mu$$直接获得确定的值：
-
-$$a_{t} = \mu(s_{t} | \theta^{\mu})$$
-
-换句话说就是：**PG的action是采样出来的，而DPG是算出来的。**
-
-为何需要确定性的策略？简单来说，PG方法有以下缺点：
-
-- 即使通过PG学习得到了随机策略之后，在每一步行为时，我们还需要对得到的最优策略概率分布进行采样，才能获得action的具体值；而action通常是高维的向量，比如25维、50维，在高维的action空间的频繁采样，无疑是很耗费计算能力的；
-
-- 在PG的学习过程中，每一步计算policy gradient都需要在整个action space进行积分：
-
-$$\triangledown_{\theta} =  \int_{\mathcal{S}} \int_{A} \rho(s) \pi_{\theta}(a|s)Q^{\pi} (s,a)\mathrm{d}a \mathrm{d}s$$

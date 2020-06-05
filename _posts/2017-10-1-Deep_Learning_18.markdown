@@ -136,6 +136,10 @@ https://mp.weixin.qq.com/s/kS-FPeuz0nMN2YvbwAjbIw
 
 线上搜索结果大幅提升！亚马逊提出对抗式query-doc相关性模型
 
+https://mp.weixin.qq.com/s/4UBehc0eikVqcsFP7xL_Zw
+
+京东电商搜索中的语义检索与商品排序
+
 # Graph NN+
 
 https://mp.weixin.qq.com/s/_vbcLre5HIrOGbAjTzLFjA

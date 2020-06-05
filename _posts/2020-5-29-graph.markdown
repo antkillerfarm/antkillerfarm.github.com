@@ -80,7 +80,11 @@ Bipartite Graph典型例子是演员-电影关系图，显然演员是一个子�
 
 上左图中，蓝色的结点去掉之后，图就不连通了，这样的结点被称为**Articulation node**。
 
+对于有向图来说，它的连通性有如下术语：
 
+**Strongly connected directed graph**：图中任意两点A、B之间，既有A->B的路径，也有B->A的路径。这里的路径可以是两点间的直接连接，也可以是路过其他点的间接连接。
+
+**Weakly connected directed graph**：图中至少有两点间，只有单向的路径。
 
 ## 参考
 

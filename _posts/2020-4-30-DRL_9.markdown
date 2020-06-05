@@ -6,6 +6,66 @@ category: DRL
 
 # DRL参考资源
 
+https://mp.weixin.qq.com/s/P-iSI80IVmb5s-Q15Re2HQ
+
+All In!我学会了用强化学习打德州扑克
+
+https://zhuanlan.zhihu.com/p/36322095
+
+最前沿：从虚拟到现实，DRL让小狗机器人跑起来了！
+
+https://mp.weixin.qq.com/s/xr-2cNoSYpCftLI3dV6zEw
+
+如何使用深度强化学习帮助自动驾驶汽车通过交叉路口？
+
+https://mp.weixin.qq.com/s/R_pfTXDMaLHmiCaSV2t_YA
+
+英特尔Nervana发布强化学习库Coach：支持多种价值与策略优化算法
+
+https://mp.weixin.qq.com/s/AyW7oOC7yxVtmswaMT1DGQ
+
+腾讯AI Lab获得计算机视觉权威赛事MSCOCO Captions冠军
+
+https://mp.weixin.qq.com/s/4aENmxUMEEPVPnexLKrg7Q
+
+新型强化学习算法ACKTR
+
+https://mp.weixin.qq.com/s/5PzTiPoXPC1gH3xszzT2dQ
+
+邓力等人提出BBQ网络：将深度强化学习用于对话系统
+
+https://mp.weixin.qq.com/s/pM8oykHmtu5O5jYJBZjO_w
+
+伯克利研究人员使用内在激励，教AI学会好奇
+
+https://mp.weixin.qq.com/s/3WI3QgfHXcrCPbvmHWOEkg
+
+强化学习在生成对抗网络文本生成中的作用
+
+https://mp.weixin.qq.com/s/IvR0O6dpz2GJCG7UQb5kUQ
+
+清华大学冯珺：基于强化学习的关系抽取和文本分类
+
+https://zhuanlan.zhihu.com/p/31579144
+
+让我们从零开始做一个机械手臂(强化学习)
+
+https://mp.weixin.qq.com/s/FiR_GRYqJYpJRO-2p44-Cg
+
+伯克利强化学习新研究：机器人只用几分钟随机数据就能学会轨迹跟踪
+
+https://mp.weixin.qq.com/s/_dHjZQ_7_7H34PHhV_lC3w
+
+全新强化学习算法详解，看贝叶斯神经网络如何进行策略搜索
+
+https://mp.weixin.qq.com/s/YCPXkFzYdC1gMfnprZsVXg
+
+如何让机器人多技能？通过最大熵强化学习
+
+https://mp.weixin.qq.com/s/dbtdNsT3nvLt4UKsrNsn_Q
+
+量化深度强化学习算法的泛化能力
+
 https://mp.weixin.qq.com/s/K-z_dX2-NepkEHbr45QlvQ
 
 微软研究院开源项目TextWorld：可用于强化学习训练的文本游戏
@@ -309,43 +369,3 @@ https://mp.weixin.qq.com/s/0dUlVC9I8qmv3f2BB0IFew
 https://mp.weixin.qq.com/s/_Di73PkEWJV1-OLLHfz7yQ
 
 组合在线学习：实时反馈玩转组合优化
-
-https://mp.weixin.qq.com/s/_Ze8C8UQV9UZXnSX6qq2GA
-
-强化学习玩王者荣耀
-
-https://mp.weixin.qq.com/s/NkrPfitZ6o75XaGxGC0eZw
-
-谷歌发布离线强化学习新范式，克服RL智能体只能在线训练难题，训练集相当于200多个ImageNet
-
-https://mp.weixin.qq.com/s/nEw0Vem-aL9D6w-1lEAsBQ
-
-字节跳动基于深度强化学习的广告推荐模型DEAR
-
-https://mp.weixin.qq.com/s/xG7IboDg6tn13rRIgKSICg
-
-强化学习中从仿真器到现实环境的迁移
-
-https://mp.weixin.qq.com/s/CcJrsbYO70GwOcedUXnHdg
-
-除了网红，强化学习也能带货？
-
-https://mp.weixin.qq.com/s/ptgHNil1gqrH2p-x3UZoFw
-
-紧急更新下降难度，《王者荣耀》绝悟AI难倒一片玩家
-
-https://mp.weixin.qq.com/s/u44neSzF2Iqyv-i1Fc4lsQ
-
-脱胎换骨的生成模式：强化学习重排
-
-https://mp.weixin.qq.com/s/nk-X88bF6LiAywnqRz3REQ
-
-Youtube推荐RL首弹，基于Top-K的Off-Policy矫正解决推荐中的信息茧房困境
-
-https://mp.weixin.qq.com/s/EPLvdQFiT1MiGgG7u4Qoqg
-
-基于强化学习的无地图机器人导航，Reinforcement Learning Based MRN
-
-https://mp.weixin.qq.com/s/X8STHGKlJYN2Qizz4t8Llg
-
-Accelerating DRL via Human knowledge

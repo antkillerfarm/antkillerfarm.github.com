@@ -251,3 +251,7 @@ LeCun自曝使用C语言23年之久，2年前才上手Python，还曾短暂尝�
 https://mp.weixin.qq.com/s/vBFOQjJr27AeRsqCej85iA
 
 70年前，在苏联第一家AI LAB从事AI研究是种什么体验？
+
+https://mp.weixin.qq.com/s/jHXri6x6a1fPISEwlm_4Eg
+
+《红警1》源码放出，众网友GitHub怀古！4K高清“重制版”开启预售，登顶Steam畅销榜第三

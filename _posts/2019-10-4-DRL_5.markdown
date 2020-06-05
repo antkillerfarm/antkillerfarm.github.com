@@ -4,7 +4,49 @@ title:  深度强化学习（五）——OpenAI, AlphaGo（1）
 category: DRL 
 ---
 
-# PILCO（续）
+# Hierarchical RL（续）
+
+其他算法：
+
+FuN (FeUdal Networks for Hierarchical Reinforcement Learning)
+
+HIRO (Data Efficient Hierarchical Reinforcement Learning)
+
+HAC (Learning Multi-Level Hierarchies with Hindsight)
+
+参考：
+
+https://zhuanlan.zhihu.com/p/78098982
+
+Hierarchical IL/RL(ICML 2018)
+
+https://blog.csdn.net/zhkmxx930xperia/article/details/87742722
+
+Integrating Temporal Abstraction and Intrinsic Motivation
+
+https://blog.csdn.net/songrotek/article/details/51384752
+
+DRL前沿之：Hierarchical Deep Reinforcement Learning
+
+https://mp.weixin.qq.com/s/IYyGgnoXZm6YfamLejqoNQ
+
+深度强化学习试金石：DeepMind和OpenAI攻克蒙特祖玛复仇的真正意义
+
+https://mp.weixin.qq.com/s/iBWjobr9srhB3MTiE_Wwmg
+
+史上最强Atari游戏通关算法：蒙特祖玛获分超过200万！
+
+# PILCO
+
+论文：
+
+《PILCO： A Model-Based and Data-Efficient Approach to Policy Search》
+
+《Efficient Reinforcement Learning using Gaussian Processes》
+
+《Data-Efficient Reinforcement Learning in Continuous-State POMDPs》
+
+《Improving PILCO with Bayesian Neural Network Dynamics Models》
 
 参考：
 
@@ -267,25 +309,3 @@ AlphaGo Zero对AlphaGo进行了全面提升：
 - 骨干结构采用了Resnet，层数大大增加。
 
 - 完全采用自我博弈，去掉了人类棋谱。
-
-- 取消了Fast rollout。AlphaGo Zero的实践表明，如果有足够好的Value函数的话，MCTS的采样效率要远远高于传统的alpha-beta剪枝。因此，rollout也不是必须的。
-
->稍后的AlphaZero的实践表明：AlphaZero搜索80000个节点的棋力，已经超过了Stockfish搜索70000000个节点的棋力。
-
-- Policy Gradient vs. Policy Iteration
-
-AlphaGo依赖快速走子的结果，获得最终的结果信息。因此，它的奖励来源比较单一：只有对局的最终结果。这种做法实际上就是通常说的Policy Gradient。
-
-但正如之前指出的：棋下输了，不意味着每步棋都是臭棋。因此，只使用最终结果，既会导致奖励稀疏，也不利于实时评估走子的价值。
-
-AlphaGo Zero转而采用Policy Iteration方法，实时对盘面进行估计，不再依赖终局结果。
-
-![](/images/img3/AlphaGo_Zero_2.jpg)
-
-## AlphaZero
-
-论文：
-
-《Mastering Chess and Shogi by Self-Play with aGeneral Reinforcement Learning Algorithm》
-
-AlphaZero相对于AlphaGo Zero的改进不算大，毕竟也就只差2个月。它的贡献在于，证明了DRL对于很多棋类都是有效的。

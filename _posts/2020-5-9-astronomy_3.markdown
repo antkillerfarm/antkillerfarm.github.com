@@ -6,21 +6,11 @@ category: Nature
 
 # 两弹一星（续）
 
-2019.12.17 山东号航空母舰入列。
+今天，为了义和团在去年的所作所为而惩罚中国，西方在禁止向中国出口的物品中包括武器，关于这一点，一位贵胄子弟曾对我说：“**很好，这将迫使我们成为生产者，且请记住我的话，总有一天我们会成为出口商，不仅那样，而且还会比现在的制造商卖的更便宜。**”——1900年清廷海关总税务司赫德
 
-![](/images/img3/Carrier.jpg)
+多少一点困难怕什么。封锁吧，封锁十年八年，中国的一切问题都解决了。中国人死都不怕，还怕困难吗？
 
-![](/images/img3/Carrier_2.jpg)
-
-如果你有一艘航母，你就破坏了你所在地区的稳定。
-
-如果你有两艘，你就会对全球秩序构成威胁。
-
-如果你有一打，你就是全球维和人员。
-
-CTOL（conventional take-off and landing）
-
-STOVL（Short Take Off Vertical Landing）
+那么美国人之前用来进行运载火箭发射的吹除用送风总管是从哪里来的呢？答案很简单，有超过90%的这种部件全部是进口自中方的。然而自从发生在中美之间的经济纠纷开始之后，停止向美国输送这种关键零件，就成为了中方对美国制裁中的一个很重要部分。
 
 ----
 
@@ -187,15 +177,3 @@ https://mp.weixin.qq.com/s/8vRFfFLdLWSPpTzHjUKegQ
 https://mp.weixin.qq.com/s/NmS1dbeIsQomsWYI8-OyZg
 
 阿波罗13号“伟大失败”50周年，NASA发布纪录片追忆奥德赛号逃生往事
-
-----
-
-![](/images/img3/india_moon.jpg)
-
-https://www.zhihu.com/question/344795065/
-
-印度“月船2号”登陆月球失败，失败原因可能是什么？有什么影响和教训？
-
-https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
-
-印度失联的月球探测器依然成功了95%？那些年我们一起追过的月球

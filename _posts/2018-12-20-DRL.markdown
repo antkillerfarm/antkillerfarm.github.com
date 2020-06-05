@@ -353,19 +353,3 @@ https://mp.weixin.qq.com/s/PYrE6vUCivusWuFvdiUbNQ
 https://mp.weixin.qq.com/s/AUKMBRFMifcgZmdXBjDl3Q
 
 从“小”培养AI安全意识：OpenAI开源最新强化学习训练工具，安全约束自由定制，开箱即用
-
-https://mp.weixin.qq.com/s/PfyGOK2Ov6Qi-L5aqMfNjg
-
-DeepMind发布强化学习库RLax
-
-https://github.com/thu-ml/tianshou
-
-清华开源“天授”强化学习平台
-
-https://mp.weixin.qq.com/s/-5KzyKeNFOYBtFQ8ZVZNag
-
-用Python写出Gameboy模拟器，还能训练AI模型：丹麦小哥的大学项目火了
-
-https://mp.weixin.qq.com/s/Ewiz8YB0Tel9127cHcdRqw
-
-用TF-AGENTS进行强化学习

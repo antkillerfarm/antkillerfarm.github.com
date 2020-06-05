@@ -312,6 +312,10 @@ https://mp.weixin.qq.com/s/CuTEW0y7juWSBGlhltB7qw
 
 FGCNN：使用CNN进行特征生成的CTR预测模型
 
+https://zhuanlan.zhihu.com/p/143161957
+
+点积 vs. MLP：推荐模型到底用哪个更好？
+
 # 目标检测进阶+
 
 https://mp.weixin.qq.com/s/vpHrLu8kuEuOp5eehT8Hcw

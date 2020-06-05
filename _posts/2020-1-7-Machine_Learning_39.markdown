@@ -42,6 +42,10 @@ https://mp.weixin.qq.com/s/rIgjtILF7EtuBS5UWCEFcQ
 
 重大事件后，股价将何去何从？
 
+https://mp.weixin.qq.com/s/Y9d55KI64y-uRrWPRbDBzA
+
+Kaggle知识点：时序数据与Embedding
+
 # 运筹学
 
 http://www.cnblogs.com/6DAN_HUST/archive/2010/11/11/1874681.html

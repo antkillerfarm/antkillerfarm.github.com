@@ -230,6 +230,46 @@ java.nio
 
 Mina，Grizzly
 
+## synchronized
+
+https://blog.csdn.net/javazejian/article/details/72828483
+
+深入理解Java并发之synchronized实现原理
+
+https://www.cnblogs.com/ytxiao/p/12182679.html
+
+synchronized的CPU原语级别是如何实现的？
+
+https://blog.csdn.net/zqz_zqz/article/details/70233767
+
+java中的锁--偏向锁、轻量级锁、自旋锁、重量级锁
+
+https://blog.csdn.net/z69183787/article/details/104407842
+
+Java volatile关键字内存原语
+
+https://www.zhihu.com/question/23955356
+
+协程和纤程的区别？
+
+----
+
+FixedThreadPool：固定数量线程池。
+
+CachedPool：这个是只有提交了任务时才会启动一个线程。一开始是没有线程的，来一个任务就开启一个线程，当然前提是线程池里没有空闲的并且存活的线程。
+
+SingleThreadPool：线程池中同一时刻只有一个线程在执行。适合于对同步要求比较高的情况。
+
+ScheduledPool：定时执行的线程池。
+
+WorkStealingPool：每个线程都有自己维护的队列，当一个线程处理完自己的队列后，会去‘偷’别人的任务队列进行处理。
+
+ForkJoinPool：这个线程池的设计思想与MapReduce极其相似，将一个大的任务分解成一个个小的任务当多个线程来执行。然后将计算的结果汇总得到最终结果。这也是用到了递归的思想。其中它的任务分为两种一种没有返回值是RecursiveAction，一种有返回值RecursiveTask。
+
+https://blog.csdn.net/z_xindong/article/details/103144219
+
+Java常用六种线程池
+
 ## 参考
 
 https://mp.weixin.qq.com/s/t1Cx1n6irN1RWG8HQyHU2w

@@ -6,6 +6,34 @@ category: Nature
 
 # 新冠肺炎
 
+## 科研（续）
+
+抗病毒药一般以vir结尾，例如Remdesivir。所以药品的中文名一般就是XXX韦。
+
+https://mp.weixin.qq.com/s/GAAeUD5ZDROltfxcoSFaeA
+
+期待救急，你了解“老药新用”吗？
+
+----
+
+双黄连由金银花（双花）、黄芩和连翘三味中药配伍而成。它的历史并不算悠久，但在现有的网络信息中，也无法准确地指出究竟是何人、何时开发出这个如今家喻户晓的方子。有文献可考的历史表明，双黄连方剂产生于文革期间的东北地区——再准确一点，黑龙江哈尔滨，并且与现在的哈药集团有着千丝万缕的联系。
+
+https://mp.weixin.qq.com/s/7YscNLoSsuYhf3XQ5qz36w
+
+双黄连热销背后，那些你不知道的事
+
+----
+
+![](/images/img3/covid.jpg)
+
+![](/images/img3/covid_2.jpg)
+
+大概在年初，新冠发生过一次重要的变异，就是D614G，在最早武汉上传的病毒序列中，这个位置的氨基酸是编码天冬氨酸(Asparagine,缩写为D)，也就是D614，而后来该位置发生了变异，氨基酸变成了甘氨酸（Glycine，缩写为G）。而变异后的结果就是这个突变株获得了更大的生存优势，更容易感染。
+
+https://www.zhihu.com/question/26658191
+
+南方汉族中Y染色体的相同率较高，线粒体DNA的相同率很低，是否说明北方汉族对南方男性进行过灭族屠杀？
+
 ## 口罩
 
 https://mp.weixin.qq.com/s/IVmgIp-LC6JiqfyCfXBJhg
@@ -200,7 +228,7 @@ https://mp.weixin.qq.com/s/Vi-PRPhFEnBEnNxGNzA6VA
 
 ## 国际援助
 
-- 日本援助中国
+### 日本援助中国
 
 盛唐时，日本遣人来中国学习佛法。长屋（日本的相国）赠送中国大德的上千件袈裟，边缘都绣着一首偈子：
 
@@ -226,7 +254,7 @@ https://mp.weixin.qq.com/s/Vi-PRPhFEnBEnNxGNzA6VA
 
 崎岖路，长情在。
 
-- 中国援助韩国
+### 中国援助韩国
 
 道不远人，人无异国。
 
@@ -234,45 +262,10 @@ https://mp.weixin.qq.com/s/Vi-PRPhFEnBEnNxGNzA6VA
 
 >崔致远，字孤云，号海云，谥号文昌。朝鲜半岛新罗王京人。十二岁时，即唐懿宗咸通九年(公元868年)乘船西渡入唐，留唐十六年。朝鲜汉文学的开山鼻祖。有“东国儒宗”、“东国文学之祖”的称誉。
 
-- 小米援助意大利
+### 小米援助意大利
 
 We are waves of the same sea, leaves of the same tree, flowers of the same garden.
 
 ——Lucius Annaeus Seneca
 
 >Lucius Annaeus Seneca，公元前4年～65年，古罗马政治家、斯多葛派哲学家、悲剧作家、雄辩家。暴君Nero的老师，被逼自杀。
-
-- 马云援助意大利
-
-“消失吧，黑夜！黎明时我们将获胜！”
-
-——《Turandot》， Giacomo Puccini
-
->Giacomo Puccini，1858～1924，意大利歌剧作曲家，代表作有《波希米亚人》、《托斯卡》与《蝴蝶夫人》等。   
->《Turandot（图兰朵）》是Puccini最后的作品，在他去世时仍未完成。后来，Franco Alfano根据普契尼的草稿将全剧完成。《今夜无人入睡》（Nessun Dorma）是其中最著名的一段咏叹调。
-
-## 知名患者
-
-一个健康的社会不应该只有一个声音--By 李文亮
-
-https://mp.weixin.qq.com/s/e3MaPaBZrxwqWtykB9f_JQ
-
-86岁院士因感染冠状病毒去世，华中科技大学已痛失4位知名学者
-
-----
-
-根据伊朗宪法，总统可以在无需议会批准的情况下任命副总统，人数可达十多位，每位副总统一般负责一个与总统事务有关的组织机构。除第一副总统外，副总统的重要性无法与负责具体行政事务的内阁部长相比。
-
-http://news.ifeng.com/c/7uRKv3JARr9
-
-伊朗女副总统感染新冠病毒，40年前她在美国家喻户晓
-
-----
-
-https://mp.weixin.qq.com/s/srkQ4in3bLP6exZIZawzuw
-
-英国全能数学家John Conway因新冠去世，他是数学疯子，也是游戏疯子：没有谁比我更爱玩游戏了！
-
-https://mp.weixin.qq.com/s/Ipky8I11O6AlaT2ACRqVaQ
-
-陶哲轩发文缅怀John Conway：他是所有数学家构成的凸包中的一个极值点

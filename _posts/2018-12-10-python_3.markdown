@@ -204,6 +204,12 @@ for i in tqdm(range(9)):
 
 `print("\r" + "xxx", end="")`：这样的话会先把console里面当前的行清除掉、再输出xxx。
 
+参考：
+
+https://mp.weixin.qq.com/s/1YZ7-i3X8Cb2LYEuWtd1KA
+
+给Python代码加上酷炫进度条的几种姿势
+
 ## Captcha
 
 Captcha是一个Python验证码库，能够生成音频和图片验证码。

@@ -113,6 +113,10 @@ https://cloud.tencent.com/developer/article/1063652
 
 Linux性能分析工具与图形化方法
 
+https://mp.weixin.qq.com/s/HvADkICPYflS2VTuSB16rg
+
+Linux入门必看：如何60秒内分析Linux性能
+
 # 时间的表示方法
 
 一般遵循ISO 8601标准：

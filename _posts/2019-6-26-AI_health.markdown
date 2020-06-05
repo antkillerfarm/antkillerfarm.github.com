@@ -328,6 +328,10 @@ https://mp.weixin.qq.com/s/2uP5i7eFWgYRA7mt_rR39g
 
 深度学习模型图难画论文难中？这个ML Visual利器帮你快速画出漂亮的模型图
 
+https://mp.weixin.qq.com/s/Y8PW3mKbUKgGPdxerqVNKA
+
+数学表达式一键变图，CMU开发实用工具Penrose，堪称图解界LaTeX
+
 ## howmuch.net
 
 howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：

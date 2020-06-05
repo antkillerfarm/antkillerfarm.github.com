@@ -4,7 +4,31 @@ title:  深度强化学习（六）——AlphaGo（2）
 category: DRL 
 ---
 
-# AlphaGo（续）
+# AlphaGo
+
+## AlphaGo Zero（续）
+
+- 取消了Fast rollout。AlphaGo Zero的实践表明，如果有足够好的Value函数的话，MCTS的采样效率要远远高于传统的alpha-beta剪枝。因此，rollout也不是必须的。
+
+>稍后的AlphaZero的实践表明：AlphaZero搜索80000个节点的棋力，已经超过了Stockfish搜索70000000个节点的棋力。
+
+- Policy Gradient vs. Policy Iteration
+
+AlphaGo依赖快速走子的结果，获得最终的结果信息。因此，它的奖励来源比较单一：只有对局的最终结果。这种做法实际上就是通常说的Policy Gradient。
+
+但正如之前指出的：棋下输了，不意味着每步棋都是臭棋。因此，只使用最终结果，既会导致奖励稀疏，也不利于实时评估走子的价值。
+
+AlphaGo Zero转而采用Policy Iteration方法，实时对盘面进行估计，不再依赖终局结果。
+
+![](/images/img3/AlphaGo_Zero_2.jpg)
+
+## AlphaZero
+
+论文：
+
+《Mastering Chess and Shogi by Self-Play with aGeneral Reinforcement Learning Algorithm》
+
+AlphaZero相对于AlphaGo Zero的改进不算大，毕竟也就只差2个月。它的贡献在于，证明了DRL对于很多棋类都是有效的。
 
 ## MuZero
 
@@ -291,59 +315,3 @@ https://zhuanlan.zhihu.com/p/31809930
 https://zhuanlan.zhihu.com/p/32073374
 
 浅述：从Minimax到AlphaZero，完全信息博弈之路（2）
-
-https://zhuanlan.zhihu.com/p/32089487
-
-AlphaZero实战：从零学下五子棋
-
-http://mp.weixin.qq.com/s/72riTTC3w0q9oF5H-51kXA
-
-手把手教你搭建AlphaZero（使用Python和Keras）
-
-https://mp.weixin.qq.com/s/Qw2tT7H1PwDvPgOYy8YUsQ
-
-AlphaGo Zero代码迟迟不开源，TF等不及自己推了一个
-
-https://mp.weixin.qq.com/s/Vq-osjgNXJQu5avGkxQdsw
-
-手把手：AlphaGo有啥了不起，我也能教你做一个
-
-https://mp.weixin.qq.com/s/ajajJ9yJZsOy4Vc0ULBxXg
-
-国际象棋版AlphaZero出来了诶，还开源了Keras实现
-
-https://zhuanlan.zhihu.com/p/41814142
-
-从源码解密AlphaGo Zero背后基本原理
-
-https://www.ifanr.com/630602
-
-AlphaGo的棋局，与人工智能有关，与人生无关
-
-https://mp.weixin.qq.com/s/J0w6kzzdKTbsaiZitbQdoA
-
-达观数据：一文详解AlphaGo原理
-
-https://mp.weixin.qq.com/s/BBQ54HHrFiqxXkC-EI6ELw
-
-Science封面：AlphaZero达成终极进化体，史上最强棋类AI降临！
-
-https://mp.weixin.qq.com/s/Pgw_xaCNl_kCPCg8NFzUBQ
-
-人类没法下了！DeepMind贝叶斯优化调参AlphaGo，自弈胜率大涨16.5%
-
-https://mp.weixin.qq.com/s/eE3oL6c5zHmTglHE-dgBvg
-
-详解AlphaGo到AlphaGo Zero！
-
-https://mp.weixin.qq.com/s/aAF0Gr7yEPkHRLASecJipw
-
-百度正用谷歌AlphaGo，解决一个比围棋更难的问题
-
-https://hackernoon.com/the-3-tricks-that-made-alphago-zero-work-f3d47b6686ef
-
-The 3 Tricks That Made AlphaGo Zero Work
-
-https://web.stanford.edu/~surag/posts/alphazero.html
-
-A Simple Alpha(Go) Zero Tutorial

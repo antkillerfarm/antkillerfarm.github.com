@@ -197,3 +197,15 @@ https://mp.weixin.qq.com/s/UDjHYZCpZjSDCDmBDI8y8Q
 https://mp.weixin.qq.com/s/oSuSaPe2RYdm3NY0VZAiVQ
 
 激光一定是火热的吗？人家制冷时超cool
+
+# 阿波罗50年+
+
+![](/images/img3/india_moon.jpg)
+
+https://www.zhihu.com/question/344795065/
+
+印度“月船2号”登陆月球失败，失败原因可能是什么？有什么影响和教训？
+
+https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
+
+印度失联的月球探测器依然成功了95%？那些年我们一起追过的月球

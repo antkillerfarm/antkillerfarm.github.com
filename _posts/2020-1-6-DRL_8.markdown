@@ -1,10 +1,74 @@
 ---
 layout: post
-title:  深度强化学习（八）——Dota 2, DRL参考资源（1）
+title:  深度强化学习（八）——AlphaStar, Dota 2, DRL参考资源（1）
 category: DRL 
 ---
 
-# AlphaStar（续）
+# StarCraft & AI（续）
+
+https://mp.weixin.qq.com/s/wyn-V4-DcjjOKziith3pXw
+
+开源星际争霸2多智能体挑战smac
+
+https://mp.weixin.qq.com/s/e4iv6FJAMZACEqWFmxeSFg
+
+让AI掌握星际争霸微操：中科院提出强化学习+课程迁移学习方法
+
+https://mp.weixin.qq.com/s/JbCIBFDRvg5qcpZ11g58dw
+
+DeepMind提出关系性深度强化学习：在星际争霸2任务中获得最优水平
+
+https://mp.weixin.qq.com/s/h0be7yRQMjLFi8EteTzuMQ
+
+腾讯AI在星际2完整对战中击败“作弊级”内建Bot
+
+https://zhuanlan.zhihu.com/p/29222384
+
+sc2-101: 第一个rule-base的星际二agent
+
+# AlphaStar
+
+AlphaStar是DeepMind在解决了围棋问题之后，在RTS游戏领域的尝试。
+
+里程碑事件：
+
+2018.12 5:0击败TLO，5:0击败MaNa。
+
+2019.1 表演赛不敌MaNa。
+
+论文：
+
+《Grandmaster level in StarCraft II using multi-agent reinforcement learning》
+
+参考：
+
+https://mp.weixin.qq.com/s/_Y0bCjTu9UrHfnen15htqQ
+
+AlphaStar称霸星际争霸2！AI史诗级胜利，DeepMind再度碾压人类
+
+https://mp.weixin.qq.com/s/axr5VFbHQmYo0shW9ilBaQ
+
+DeepMind回应一切：AlphaStar两百年相当于人类多长时间？
+
+https://www.zhihu.com/question/310011363
+
+如何评价DeepMind在北京时间19年1月25日2点的《星际争霸 2》项目演示？
+
+https://mp.weixin.qq.com/s/k0l2uoik-Z9aA9zax7AoZg
+
+中科院自动化所深度解析：Deepmind AlphaStar如何战胜人类职业玩家
+
+https://zhuanlan.zhihu.com/p/55781614
+
+AlphaStar背后的机器学习原理
+
+https://mp.weixin.qq.com/s/XljE82cJZfFOgf2KrXWSKA
+
+DeepMind首个战胜星际2职业玩家的AI为何无敌？新视角揭秘AI里程碑
+
+https://mp.weixin.qq.com/s/_t2vLFfIG6VYAdWDalpIXQ
+
+说人话教AI打游戏，Facebook开源迷你版星际争霸，成果登上NeurIPS 2019
 
 https://mp.weixin.qq.com/s/X7QQn6W2dB3y_Ljii-sJ3w
 
@@ -321,63 +385,3 @@ https://mp.weixin.qq.com/s/6Sj2QIELQvI28Rpp7A39Fg
 https://mp.weixin.qq.com/s/lR6BSa_pJzcinkSaSWsM2A
 
 伯克利提出强化学习新方法，可让智能体同时学习多个解决方案
-
-https://mp.weixin.qq.com/s/P-iSI80IVmb5s-Q15Re2HQ
-
-All In!我学会了用强化学习打德州扑克
-
-https://zhuanlan.zhihu.com/p/36322095
-
-最前沿：从虚拟到现实，DRL让小狗机器人跑起来了！
-
-https://mp.weixin.qq.com/s/xr-2cNoSYpCftLI3dV6zEw
-
-如何使用深度强化学习帮助自动驾驶汽车通过交叉路口？
-
-https://mp.weixin.qq.com/s/R_pfTXDMaLHmiCaSV2t_YA
-
-英特尔Nervana发布强化学习库Coach：支持多种价值与策略优化算法
-
-https://mp.weixin.qq.com/s/AyW7oOC7yxVtmswaMT1DGQ
-
-腾讯AI Lab获得计算机视觉权威赛事MSCOCO Captions冠军
-
-https://mp.weixin.qq.com/s/4aENmxUMEEPVPnexLKrg7Q
-
-新型强化学习算法ACKTR
-
-https://mp.weixin.qq.com/s/5PzTiPoXPC1gH3xszzT2dQ
-
-邓力等人提出BBQ网络：将深度强化学习用于对话系统
-
-https://mp.weixin.qq.com/s/pM8oykHmtu5O5jYJBZjO_w
-
-伯克利研究人员使用内在激励，教AI学会好奇
-
-https://mp.weixin.qq.com/s/3WI3QgfHXcrCPbvmHWOEkg
-
-强化学习在生成对抗网络文本生成中的作用
-
-https://mp.weixin.qq.com/s/IvR0O6dpz2GJCG7UQb5kUQ
-
-清华大学冯珺：基于强化学习的关系抽取和文本分类
-
-https://zhuanlan.zhihu.com/p/31579144
-
-让我们从零开始做一个机械手臂(强化学习)
-
-https://mp.weixin.qq.com/s/FiR_GRYqJYpJRO-2p44-Cg
-
-伯克利强化学习新研究：机器人只用几分钟随机数据就能学会轨迹跟踪
-
-https://mp.weixin.qq.com/s/_dHjZQ_7_7H34PHhV_lC3w
-
-全新强化学习算法详解，看贝叶斯神经网络如何进行策略搜索
-
-https://mp.weixin.qq.com/s/YCPXkFzYdC1gMfnprZsVXg
-
-如何让机器人多技能？通过最大熵强化学习
-
-https://mp.weixin.qq.com/s/dbtdNsT3nvLt4UKsrNsn_Q
-
-量化深度强化学习算法的泛化能力

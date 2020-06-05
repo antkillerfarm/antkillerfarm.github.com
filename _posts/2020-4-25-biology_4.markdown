@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 病毒, 新冠肺炎（1）
+title: 病毒, DNA鉴定, 新冠肺炎（1）
 category: Nature 
 ---
 
@@ -146,6 +146,24 @@ https://mp.weixin.qq.com/s/NFF7bTvW7wtcyzVtMQOoJg
 
 人类消灭天花，是从19世纪初的一艘西班牙帆船开始的
 
+# DNA鉴定
+
+https://mp.weixin.qq.com/s/8QEmodonoo_rc1m85kmMOQ
+
+追溯祖先，寻找罪犯……DNA能告诉我们多少信息？
+
+https://mp.weixin.qq.com/s/W3H4PQVhPWwdb-Doywe5vg
+
+28年前的“南医大”杀人凶手，是如何在三天内被发现的？
+
+https://www.f793.club/blog/liusheng1/
+
+关于Y141213是中山靖王刘胜的探讨
+
+https://mp.weixin.qq.com/s/_eLI8hfKhxbL8Qn9350MZw
+
+从28年悬案告破说起：Y染色体的倔强进化史
+
 # 新冠肺炎
 
 ## 历史
@@ -261,27 +279,3 @@ https://github.com/2019ncovmemory/nCovMemory
 https://mp.weixin.qq.com/s/9291PPNwxz3KoF-7klwMrA
 
 新型肺炎严重程度升级！已明确会人传人......
-
-https://mp.weixin.qq.com/s/S6oKrc_CbO7ywWiRYiqbfQ
-
-武汉肺炎重症患者：一床难求
-
-https://mp.weixin.qq.com/s/9Lgl9h44gO9-XkPUrtfxRQ
-
-武汉肺炎一线医生口述：大爆发期或将到来
-
-http://www.eeo.com.cn/2020/0206/375757.shtml
-
-万家宴后的百步亭
-
-![](/images/img3/2019-nCoV.jpg)
-
-![](/images/img3/covid_19.jpg)
-
-https://view.inews.qq.com/a/20200207A0JG1Z00
-
-武汉时间：从专家组抵达到封城的谜之20天
-
-https://mp.weixin.qq.com/s/OElG_rIrFC89INpJlELEdQ
-
-雷神山背后：基建狂魔70年

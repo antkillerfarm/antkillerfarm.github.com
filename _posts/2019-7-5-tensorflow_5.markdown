@@ -250,7 +250,45 @@ https://zhuanlan.zhihu.com/p/58918363
 
 TVM: Deep Learning模型的优化编译器
 
-# 新冠肺炎+
+# 新冠肺炎
+
+## 国际援助（续）
+
+### 马云援助意大利
+
+“消失吧，黑夜！黎明时我们将获胜！”
+
+——《Turandot》， Giacomo Puccini
+
+>Giacomo Puccini，1858～1924，意大利歌剧作曲家，代表作有《波希米亚人》、《托斯卡》与《蝴蝶夫人》等。   
+>《Turandot（图兰朵）》是Puccini最后的作品，在他去世时仍未完成。后来，Franco Alfano根据普契尼的草稿将全剧完成。《今夜无人入睡》（Nessun Dorma）是其中最著名的一段咏叹调。
+
+## 知名患者
+
+一个健康的社会不应该只有一个声音--By 李文亮
+
+https://mp.weixin.qq.com/s/e3MaPaBZrxwqWtykB9f_JQ
+
+86岁院士因感染冠状病毒去世，华中科技大学已痛失4位知名学者
+
+----
+
+根据伊朗宪法，总统可以在无需议会批准的情况下任命副总统，人数可达十多位，每位副总统一般负责一个与总统事务有关的组织机构。除第一副总统外，副总统的重要性无法与负责具体行政事务的内阁部长相比。
+
+http://news.ifeng.com/c/7uRKv3JARr9
+
+伊朗女副总统感染新冠病毒，40年前她在美国家喻户晓
+
+----
+
+https://mp.weixin.qq.com/s/srkQ4in3bLP6exZIZawzuw
+
+英国全能数学家John Conway因新冠去世，他是数学疯子，也是游戏疯子：没有谁比我更爱玩游戏了！
+
+https://mp.weixin.qq.com/s/Ipky8I11O6AlaT2ACRqVaQ
+
+陶哲轩发文缅怀John Conway：他是所有数学家构成的凸包中的一个极值点
+
 
 ## Gilead Sciences
 
@@ -335,43 +373,3 @@ https://mp.weixin.qq.com/s/gZCD8ATxGrpHSZLKpcHfiA
 https://mp.weixin.qq.com/s/ZOPncvPpFyLIwH_XChAdbg
 
 基于微分方程和元胞自动机模拟新型肺炎病毒的传播
-
-https://mp.weixin.qq.com/s/4w6CTGaKKEH9APVNH9Ue8w
-
-扩散信息、交通管制、自我隔离，哪个更能遏制病毒传播？
-
-https://mp.weixin.qq.com/s/tBoM9o3pK89bprK8npHLWA
-
-可能会说谎的地图！全国疫情地理格局的重新审视
-
-https://mp.weixin.qq.com/s/bVNkCHl7BPU_eEcAWksmww
-
-关于武汉新型冠状病毒肺炎的传播预测模型
-
-https://mp.weixin.qq.com/s/Lg1tJmO7aN9XNpZ6bs0cJA
-
-程序员硬核劝告：现在还不是出门的时候
-
-https://mp.weixin.qq.com/s/sv07R8HQXX2U0QOi5_dOwg
-
-河南1105例新冠肺炎数据告诉我们什么？
-
-https://mp.weixin.qq.com/s/qRzkS2itp-eloaBlA-VSGA
-
-基于排队论模型浅析各地医护人员驰援武汉的重要意义
-
-https://mp.weixin.qq.com/s/Rs2cTVPIa02NIkApvr076w
-
-全球COVID-19研究数据集正式开放，内含近3万篇论文和所需AI研究工具！
-
-https://mp.weixin.qq.com/s/ueuvLFxQAGNzBLHHyaBYMA
-
-如果新冠病毒是在亚美尼亚爆发会发生什么？程序员用Python进行模拟
-
-https://mp.weixin.qq.com/s/LGNGFf-LBMz3qyUFPr_BHA
-
-新冠疫情下，如何降低复工的职场感染风险？
-
-https://mp.weixin.qq.com/s/0k1o-m8F5aWUWA4Nj8WnIQ
-
-我国疫情预测模型遭权威期刊退回！钟南山等人用LSTM力证“早发现早隔离”重要性

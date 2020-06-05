@@ -86,6 +86,10 @@ https://mp.weixin.qq.com/s/DwtA6GivVCDvL4MXNDBFWg
 
 阿里巴巴提出DR Loss：解决目标检测的样本不平衡问题
 
+https://zhuanlan.zhihu.com/p/145927429
+
+DR Loss
+
 https://blog.csdn.net/shanglianlm/article/details/85019768
 
 十九种损失函数

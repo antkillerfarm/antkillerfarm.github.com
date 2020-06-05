@@ -287,3 +287,49 @@ https://mp.weixin.qq.com/s/x6gKTuYIx8y25KX-fCc5bA
 https://mp.weixin.qq.com/s/jUKTsJdlBLPWbiBa6TlPPA
 
 基于模型的强化学习—LQR与iLQR
+
+# DRL参考资源+
+
+https://mp.weixin.qq.com/s/_Ze8C8UQV9UZXnSX6qq2GA
+
+强化学习玩王者荣耀
+
+https://mp.weixin.qq.com/s/NkrPfitZ6o75XaGxGC0eZw
+
+谷歌发布离线强化学习新范式，克服RL智能体只能在线训练难题，训练集相当于200多个ImageNet
+
+https://mp.weixin.qq.com/s/nEw0Vem-aL9D6w-1lEAsBQ
+
+字节跳动基于深度强化学习的广告推荐模型DEAR
+
+https://mp.weixin.qq.com/s/xG7IboDg6tn13rRIgKSICg
+
+强化学习中从仿真器到现实环境的迁移
+
+https://mp.weixin.qq.com/s/CcJrsbYO70GwOcedUXnHdg
+
+除了网红，强化学习也能带货？
+
+https://mp.weixin.qq.com/s/ptgHNil1gqrH2p-x3UZoFw
+
+紧急更新下降难度，《王者荣耀》绝悟AI难倒一片玩家
+
+https://mp.weixin.qq.com/s/u44neSzF2Iqyv-i1Fc4lsQ
+
+脱胎换骨的生成模式：强化学习重排
+
+https://mp.weixin.qq.com/s/nk-X88bF6LiAywnqRz3REQ
+
+Youtube推荐RL首弹，基于Top-K的Off-Policy矫正解决推荐中的信息茧房困境
+
+https://mp.weixin.qq.com/s/EPLvdQFiT1MiGgG7u4Qoqg
+
+基于强化学习的无地图机器人导航，Reinforcement Learning Based MRN
+
+https://mp.weixin.qq.com/s/X8STHGKlJYN2Qizz4t8Llg
+
+Accelerating DRL via Human knowledge
+
+https://zhuanlan.zhihu.com/p/145983063
+
+大规模深度强化学习的发展

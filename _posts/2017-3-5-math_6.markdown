@@ -130,6 +130,10 @@ https://mp.weixin.qq.com/s?__biz=MjM5NDQ3NTkwMA==&mid=2650144001&idx=1&sn=10b9fc
 
 常见统计检验的本质是线性模型
 
+https://mp.weixin.qq.com/s/LEfTGM2uliZA99ngTomCdw
+
+使用假设检验分析PS4，XBox，Switch谁是最好的游戏主机
+
 ## KS检验
 
 Kolmogorov–Smirnov test用于对样本是否属于某种分布进行假设检验。

@@ -6,7 +6,29 @@ category: DRL
 
 # DDPG
 
-## DPG（续）
+论文：
+
+《Continuous control with deep reinforcement learning》
+
+DDPG主要从：**PG->DPG->DDPG**发展而来。
+
+Policy Gradient的概念参见《强化学习（七）》，这里不再赘述。
+
+## DPG
+
+Deterministic Policy Gradient是Deepmind的D.Silver等在2014年提出的，即确定性的行为策略，每一步的行为通过函数$$\mu$$直接获得确定的值：
+
+$$a_{t} = \mu(s_{t} | \theta^{\mu})$$
+
+换句话说就是：**PG的action是采样出来的，而DPG是算出来的。**
+
+为何需要确定性的策略？简单来说，PG方法有以下缺点：
+
+- 即使通过PG学习得到了随机策略之后，在每一步行为时，我们还需要对得到的最优策略概率分布进行采样，才能获得action的具体值；而action通常是高维的向量，比如25维、50维，在高维的action空间的频繁采样，无疑是很耗费计算能力的；
+
+- 在PG的学习过程中，每一步计算policy gradient都需要在整个action space进行积分：
+
+$$\triangledown_{\theta} =  \int_{\mathcal{S}} \int_{A} \rho(s) \pi_{\theta}(a|s)Q^{\pi} (s,a)\mathrm{d}a \mathrm{d}s$$
 
 这个积分我们一般通过Monte Carlo 采样来进行估算，需要在高维的action空间进行采样，耗费计算能力。
 
@@ -239,45 +261,3 @@ DeepMind发布新奖励机制：让智能体不再“碰瓷”
 该论文的主要思路就是，弄一个两个层级的神经网络，顶层用于决策，确定下一步的目标，底层用于具体行为。 
 
 这里的内在目标是人工确定的，因此智能程度不高，但是比较实用。
-
-其他算法：
-
-FuN (FeUdal Networks for Hierarchical Reinforcement Learning)
-
-HIRO (Data Efficient Hierarchical Reinforcement Learning)
-
-HAC (Learning Multi-Level Hierarchies with Hindsight)
-
-参考：
-
-https://zhuanlan.zhihu.com/p/78098982
-
-Hierarchical IL/RL(ICML 2018)
-
-https://blog.csdn.net/zhkmxx930xperia/article/details/87742722
-
-Integrating Temporal Abstraction and Intrinsic Motivation
-
-https://blog.csdn.net/songrotek/article/details/51384752
-
-DRL前沿之：Hierarchical Deep Reinforcement Learning
-
-https://mp.weixin.qq.com/s/IYyGgnoXZm6YfamLejqoNQ
-
-深度强化学习试金石：DeepMind和OpenAI攻克蒙特祖玛复仇的真正意义
-
-https://mp.weixin.qq.com/s/iBWjobr9srhB3MTiE_Wwmg
-
-史上最强Atari游戏通关算法：蒙特祖玛获分超过200万！
-
-# PILCO
-
-论文：
-
-《PILCO： A Model-Based and Data-Efficient Approach to Policy Search》
-
-《Efficient Reinforcement Learning using Gaussian Processes》
-
-《Data-Efficient Reinforcement Learning in Continuous-State POMDPs》
-
-《Improving PILCO with Bayesian Neural Network Dynamics Models》

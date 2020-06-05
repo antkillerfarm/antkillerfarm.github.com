@@ -262,6 +262,10 @@ https://zhuanlan.zhihu.com/p/130720627
 
 FineGym：面向细粒度动作分析的层级化高质量数据集
 
+https://mp.weixin.qq.com/s/e4XcUJ7goqygu9LlBy8yOA
+
+全网唯一秃头数据集：20万张人像，网罗各类秃头
+
 ## 推荐系统
 
 http://www.zanmel.com/2015/12/14/10-great-datasets-on-movies/
