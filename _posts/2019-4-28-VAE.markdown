@@ -137,6 +137,10 @@ https://mp.weixin.qq.com/s/1VSgqFXMt_xyT7Ugi3-Hhg
 
 详解生成模型VAE的数学原理
 
+https://zhuanlan.zhihu.com/p/96924903
+
+变分推断与变分自编码器(VAE)
+
 # Vanilla VAE
 
 变分自编码器（Variational Auto-Encoder，VAE）是Autoencoder的一种扩展。

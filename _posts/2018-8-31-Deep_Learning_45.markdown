@@ -76,6 +76,10 @@ https://mp.weixin.qq.com/s/PWhzZzs0kkFWci6Lhm4R3Q
 
 AutoML&NAS综述（下）
 
+https://mp.weixin.qq.com/s/j3oZ-Y953U4aX0nXeWuZlg
+
+西北大学最新《神经架构搜索NAS》2020综述综述论文
+
 https://mp.weixin.qq.com/s/FdKcWsynTpfD6rbABPTEOQ
 
 神经架构搜索研究指南，只看这一篇就够了

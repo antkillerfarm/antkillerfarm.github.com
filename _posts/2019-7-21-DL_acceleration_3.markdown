@@ -148,6 +148,10 @@ https://mp.weixin.qq.com/s/Ji2PjZowifkIdGlHJPwEaw
 
 解析卷积的高速计算中的细节，一步步代码带你飞
 
+https://zhuanlan.zhihu.com/p/102351953
+
+详解Winograd变换矩阵生成原理
+
 # NN Quantization
 
 ![](/images/img3/NN_Quantization.jpg)

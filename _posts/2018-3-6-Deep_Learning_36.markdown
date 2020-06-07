@@ -326,6 +326,10 @@ https://mp.weixin.qq.com/s/sfdhG7Wv3s2XW6yYA1ELQA
 
 基于记忆增强的全局-局部整合网络：更准确的视频物体检测方法
 
+https://mp.weixin.qq.com/s/B5XrN3rxHsu4VrJLgL3bvg
+
+视频分类与行为识别有哪些核心技术，对其进行长期深入学习
+
 # 行人重识别+
 
 https://mp.weixin.qq.com/s/Vi_1Sg8OKG-EG4aC4QTCWA

@@ -86,6 +86,31 @@ Bipartite Graph典型例子是演员-电影关系图，显然演员是一个子�
 
 **Weakly connected directed graph**：图中至少有两点间，只有单向的路径。
 
+**Strongly connected components (SCCs)**：一个图的所有子图中，满足强连通条件的子图。
+
+**In-component**：能够到达SCC的结点，被称为该SCC的In-component。类似的还有**Out-component**。
+
+## Network Properties
+
+Network Properties是一些用于定量描述Network的指标。常见的主要有：
+
+- **Degree distribution**：P(k)
+
+![](/images/img3/graph_3.png)
+
+$$P(k)=N_k/N$$
+
+其中，$$N_k$$表示degree为k的结点的数量。
+
+- **Path length**：h
+
+- **Clustering coefficient**：C
+
+- **Connected components**：s
+
+
+
+
 ## 参考
 
 https://mp.weixin.qq.com/s/LqCfwf90bzZKVMLLY5dbXA

@@ -222,6 +222,10 @@ ImageMagick将PDF转换为PNG的示例：
 
 `<policy domain="coder" rights="read|write" pattern="PDF" />`
 
+Word转PDF：
+
+`libreoffice --convert-to pdf xxx.doc --outdir .`
+
 ## Others
 
 Linux平台的绘图软件还有KolourPaint、mtPaint、MyPaint。
