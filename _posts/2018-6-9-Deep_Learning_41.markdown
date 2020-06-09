@@ -228,7 +228,13 @@ https://mp.weixin.qq.com/s/Kw5v9nKP0FbVDH8aO7LtcA
 
 https://mp.weixin.qq.com/s/TUwhd7ruF-156GDmInpA7w
 
-《小样本学习(Few-shot learning)》最新41页综述论文，来自港科大和第四范式
+《小样本学习(Few-shot learning)
+
+![](/images/img3/few_shot.jpg)
+
+https://zhuanlan.zhihu.com/p/146777068
+
+标注样本少怎么办？“文本增强+半监督”方法总结
 
 https://mp.weixin.qq.com/s/FHmijTVqQ26osp6PzZsbvQ
 

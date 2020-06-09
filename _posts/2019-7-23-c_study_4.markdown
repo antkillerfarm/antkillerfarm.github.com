@@ -243,6 +243,10 @@ https://mp.weixin.qq.com/s/1ELGzBkIdO1xa6LZV80raQ
 
 C++中Future和Promise的一种简单实现
 
+https://www.zhihu.com/question/24301047
+
+如何理解C++11的六种memory order？
+
 # boost
 
 ## 安装&编译

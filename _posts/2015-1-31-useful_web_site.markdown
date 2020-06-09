@@ -63,29 +63,33 @@ https://github.com/CyC2018/CS-Notes
 
 ## 工具软件及其官网
 
-Box2D---www.box2d.org
+http://www.box2d.org
 
-一个游戏物理引擎。
+Box2D---一个游戏物理引擎。
 
-WinPcap---www.winpcap.org
+http://www.winpcap.org
 
-一个windows下的网络抓包工具。
+WinPcap---一个windows下的网络抓包工具。
 
-CommMonitor---http://www.ceiwei.com/CommMonitor.html
+http://www.ceiwei.com/CommMonitor.html
 
-一个串口监控工具。
+CommMonitor---一个串口监控工具。
 
-Android FFmpeg---https://github.com/appunite/AndroidFFmpeg
+https://github.com/appunite/AndroidFFmpeg
 
-Android上的一个FFmpeg开源实现。
+Android FFmpeg---Android上的一个FFmpeg开源实现。
 
-Conky---http://conky.sourceforge.net/
+http://conky.sourceforge.net/
 
-自由软件，用于X视窗系统的系统监视。
+Conky---自由软件，用于X视窗系统的系统监视。
 
-ocenaudio---http://www.ocenaudio.com/
+http://www.ocenaudio.com/
 
-用于音频剪辑处理的工具。免费但不开源。
+ocenaudio---用于音频剪辑处理的工具。免费但不开源。
+
+https://obsproject.com/
+
+OBS Studio---一个录屏软件
 
 https://xue.glgoo.net/
 

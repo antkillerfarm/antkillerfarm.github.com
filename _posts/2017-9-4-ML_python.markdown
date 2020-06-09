@@ -232,6 +232,23 @@ https://zhuanlan.zhihu.com/p/71639781
 
 一个函数打天下，einsum
 
+### pad
+
+`arr1D = np.array([1, 1, 2, 2, 3, 4])`
+
+```bash
+constant:  [0 0 1 1 2 2 3 4 0 0 0]
+edge:  [1 1 1 1 2 2 3 4 4 4 4]
+linear_ramp:  [0 0 1 1 2 2 3 4 3 1 0]
+maximum:  [4 4 1 1 2 2 3 4 4 4 4]
+mean:  [2 2 1 1 2 2 3 4 2 2 2]
+median:  [2 2 1 1 2 2 3 4 2 2 2]
+minimum:  [1 1 1 1 2 2 3 4 1 1 1]
+reflect:  [2 1 1 1 2 2 3 4 3 2 2]
+symmetric:  [1 1 1 1 2 2 3 4 4 3 2]
+wrap:  [3 4 1 1 2 2 3 4 1 1 2]
+```
+
 ### 参考
 
 https://mp.weixin.qq.com/s/FVI3zEp4it-fd99-3MU9vA
