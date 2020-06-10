@@ -243,6 +243,10 @@ https://mp.weixin.qq.com/s/L7DwT5LpfWoS474MwWOiLA
 
 华为开源自研算法Disout，多项任务表现更佳
 
+https://zhuanlan.zhihu.com/p/146876678
+
+一文看尽12种Dropout及其变体（在DNN、CNN和RNN中的应用）
+
 ## Dropout预测阶段
 
 经Dropout处理过的模型，在预测阶段不再Dropout，而是打开所有的神经元。这样的效果类似于集成学习，即若干个弱分类器，集成为一个强分类器。
