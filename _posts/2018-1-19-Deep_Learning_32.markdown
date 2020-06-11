@@ -170,6 +170,10 @@ https://mp.weixin.qq.com/s/xvAF_-rRlU5-hYmClFvTjA
 
 一文览尽“基于激光雷达点云（lidar）的目标检测方法”
 
+https://mp.weixin.qq.com/s/fn0EAanAEFT-Aupl4Skpcw
+
+基于深度学习处理点云数据入门经典：PointNet、PointNet++
+
 # AutoDL
 
 DL领域目前存在的主要问题之一是：如何设计网络结构和调整超参数。目前的做法，通常依赖于作者的直觉，属于典型的拍脑袋想点子。
@@ -376,3 +380,7 @@ RankSRGAN:排序学习+GAN用于超分辨率
 https://zhuanlan.zhihu.com/p/140507840
 
 图像超分：USRNet
+
+https://mp.weixin.qq.com/s/sju4SYFxzDkJevk3mi68Rw
+
+图像超分辨率网络：EDSR

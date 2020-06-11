@@ -146,29 +146,9 @@ https://mp.weixin.qq.com/s/tzY_lG0F9dP5Q-LmwuHLmQ
 
 常见损失函数和评价指标总结
 
-# 知名数据集+
+https://mp.weixin.qq.com/s/lw9frtqocqsS-q2KGfzO1Q
 
-## Other（续）
-
-https://github.com/wecatch/china_regions
-
-最全最新中国省，市，地区json及sql数据
-
-https://mp.weixin.qq.com/s/h38VZnInkuOjkgcEmsTtMg
-
-让机器帮你做行测题，UCLA朱松纯团队提出关系和类比视觉推理数据集RAVEN
-
-https://mp.weixin.qq.com/s/8wiHVMhKjzlg8BqMMLLgYw
-
-神经网络也能解数学题，DeepMind发布千万数学题海数据集
-
-https://mp.weixin.qq.com/s/YU4tRplyLxFpJdkqclhXyQ
-
-DeepMind大放送：开放4个多物体表征学习数据集，还有一篇智能体新研究
-
-https://mp.weixin.qq.com/s/fCoQv6zMQw_8eOwANS16OQ
-
-图神经网络的ImageNet？斯坦福大学等开源百万量级OGB基准测试数据集
+深入理解计算机视觉中的损失函数
 
 # 自适应滤波器
 

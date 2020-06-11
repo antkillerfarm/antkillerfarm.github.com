@@ -4,9 +4,29 @@ title:  Attention（三）——预训练语言模型进化史, BERT（1）
 category: Attention 
 ---
 
-# Transformer
+# Transformer（续）
 
-## 参考（续）
+## 参考
+
+https://zhuanlan.zhihu.com/p/39034683
+
+Attention is all you need模型笔记
+
+https://zhuanlan.zhihu.com/p/40920384
+
+真正的完全图解Seq2Seq Attention模型
+
+https://mp.weixin.qq.com/s/RLxWevVWHXgX-UcoxDS70w
+
+细讲《Attention Is All You Need》
+
+https://mp.weixin.qq.com/s/1wReNLTtpKySPwi5u1iXMA
+
+All Attention You Need
+
+https://mp.weixin.qq.com/s/lUqpCae3TPkZlgT7gUatpg
+
+Self-Attention与Transformer
 
 https://mp.weixin.qq.com/s/O8_oOCtCCcU-kVklgxRoBg
 
@@ -180,6 +200,14 @@ https://mp.weixin.qq.com/s/b5Ont9vHPeCPnAjuDGv5Bg
 
 Facebook开源新思路！DETR：用Transformers来进行端到端的目标检测
 
+https://mp.weixin.qq.com/s/JpBds6NQIBZ0S8GsMo4LEA
+
+这六大方法，如何让Transformer轻松应对高难度长文本序列？
+
+https://mp.weixin.qq.com/s/R5jqk1ow_3cKLzM1XlDbUg
+
+告别自注意力，谷歌为Transformer打造新内核Synthesizer
+
 # 预训练语言模型进化史
 
 ![](/images/img3/BERT.jpg)
@@ -347,17 +375,3 @@ BERT主要用了两个任务：
 - Next Sentence Prediction。预测下一段话。
 
 这两个任务，算是NLP的老任务了。但在传统的NLP pipeline中，属于非常下游的任务。BERT利用它们的特点，进行无监督学习，算是一个很大的突破了。
-
-## 海量文本
-
-BERT以及后来的GPT 2.0取得重大突破的关键，还在于海量的训练文本。
-
-BERT拥有3.3亿个参数，训练数据包括：BooksCorpus（800M words）和English Wikipedia（2500M words）
-
-GPT 2.0拥有15亿个参数，训练数据除了上述之外，还包括了800M个网页的文本。
-
-如此海量的参数和数据，注定了这些模型的训练是一个超费算力的过程。NLP的游戏规则将变成：
-
-- 土豪大科技公司靠暴力上数据规模，上GPU或者TPU集群，训练好预训练模型发布出来，不断刷出大新闻。通过暴力美学横扫一切，这是土豪端的玩法。
-
-- 而对于大多数人来说，你能做的是在别人放出来的预训练模型上做小修正或者刷应用或者刷各种榜单，逐步走向了应用人员的方向，这是大多数NLP从业者未来几年要面对的dilemma。

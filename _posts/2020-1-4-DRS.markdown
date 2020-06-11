@@ -126,6 +126,10 @@ https://zhuanlan.zhihu.com/p/48057256
 
 用TensorFlow实现支持多值、稀疏、共享权重的DeepFM
 
+https://mp.weixin.qq.com/s/jQGNWEdxH0meVwk-YDN4gw
+
+手把手带你实现DeepFM
+
 ## 参考
 
 https://zhuanlan.zhihu.com/learningdeep

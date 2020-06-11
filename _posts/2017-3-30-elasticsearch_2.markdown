@@ -243,6 +243,10 @@ https://mp.weixin.qq.com/s/Olz-kvHM-SkC-pZr08r7ow
 
 相关搜索—使用Solr和Elasticsearch，360页pdf
 
+https://mp.weixin.qq.com/s/ipuIq_E5rOPPF7_XdS5PGQ
+
+腾讯万亿级Elasticsearch内存效率提升技术解密
+
 # Flume & Kafka
 
 Flume和Kafka都是日志系统。

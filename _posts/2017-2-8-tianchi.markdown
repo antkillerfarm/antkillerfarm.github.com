@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  天池大赛, Redis
+title:  天池大赛
 category: AI 
 ---
 
@@ -230,44 +230,26 @@ https://mp.weixin.qq.com/s/3cER2nr7oiF0IrqDem3bkQ
 
 时间序列异常检测—节假日效应的应对之道
 
-# Redis
+# 知名数据集+
 
-REmote DIctionary Server(Redis) 是一个由Salvatore Sanfilippo写的key-value存储系统。
+## Other（续）
 
-http://www.runoob.com/redis/redis-tutorial.html
+https://github.com/wecatch/china_regions
 
-Redis教程
+最全最新中国省，市，地区json及sql数据
 
-http://www.yiibai.com/redis/
+https://mp.weixin.qq.com/s/h38VZnInkuOjkgcEmsTtMg
 
-另一个Redis教程
+让机器帮你做行测题，UCLA朱松纯团队提出关系和类比视觉推理数据集RAVEN
 
-参考：
+https://mp.weixin.qq.com/s/8wiHVMhKjzlg8BqMMLLgYw
 
-https://mp.weixin.qq.com/s/3WmGpZkEuSz-ox_2CPCsqg
+神经网络也能解数学题，DeepMind发布千万数学题海数据集
 
-伯克利推出世界最快的KVS数据库Anna：秒杀Redis和Cassandra
+https://mp.weixin.qq.com/s/YU4tRplyLxFpJdkqclhXyQ
 
-https://mp.weixin.qq.com/s/320HQlFOXdzbBh2ofrpANA
+DeepMind大放送：开放4个多物体表征学习数据集，还有一篇智能体新研究
 
-Redis高负载下的中断优化
+https://mp.weixin.qq.com/s/fCoQv6zMQw_8eOwANS16OQ
 
-https://mp.weixin.qq.com/s/3ISOT_9HTFrnxpJdnHTnsg
-
-redis哈希表的rehash分析
-
-https://www.jianshu.com/p/dbc62ed27f03
-
-玩转Redis集群
-
-https://mp.weixin.qq.com/s/My6gZIVBVEjjDoQ5IpPKCw
-
-Redis查漏补缺：最易错过的技术要点大扫盲
-
-https://mp.weixin.qq.com/s/T2AmwNTYwTPlB0WbCsy-3g
-
-Redis单线程架构
-
-https://mp.weixin.qq.com/s/XZYxHEUx0AJozQ2oM5fTrw
-
-秒杀Redis的KVS上云了！伯克利重磅开源Anna 1.0
+图神经网络的ImageNet？斯坦福大学等开源百万量级OGB基准测试数据集

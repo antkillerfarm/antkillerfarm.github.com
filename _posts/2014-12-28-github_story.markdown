@@ -156,6 +156,12 @@ git lfs install
 
 `git lfs ls-files`
 
+参考：
+
+https://mp.weixin.qq.com/s/yoSeUTy13LoKyS1UFKaUbA
+
+如何存储Git大文件？
+
 # Markdown
 
 自从我在github建立blog以来，一直都在使用markdown语言。这里仅针对我使用过程中遇到的问题做一个笔记。

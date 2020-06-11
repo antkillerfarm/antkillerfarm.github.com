@@ -106,6 +106,14 @@ https://mp.weixin.qq.com/s/kUNOE3u40NZmKxUSN7Ie8w
 
 Facebook发布Detectron2，下一个万星目标检测新框架
 
+https://mp.weixin.qq.com/s/L4brTp6ApFC7Zqs5DFpQcA
+
+物体检测和分割轻松上手：从detectron2开始（上篇）
+
+https://mp.weixin.qq.com/s/qFHqFE1jx9K0vOn61Am50Q
+
+物体检测和分割轻松上手：从detectron2开始（下篇）
+
 http://mp.weixin.qq.com/s/TByhSlSbVU5oHqLTLIJgwA
 
 NiftyNet：开源的卷积神经网络和医疗影像分析平台

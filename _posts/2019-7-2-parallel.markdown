@@ -40,6 +40,10 @@ https://mp.weixin.qq.com/s/RAjusu-Jyqb8K19N8KZ_3w
 
 一份552页《大规模数据系统：Large-scale Data Systems》硬核课程PPT
 
+https://mp.weixin.qq.com/s/_1Yr_BbFhlNEW7UtYvAaoA
+
+分布式深度学习，93页ppt概述最新DDL技术发展
+
 https://zhuanlan.zhihu.com/p/58806183
 
 深度学习的分布和并行处理系统

@@ -6,7 +6,39 @@ category: Attention
 
 # BERT
 
-## AR vs AE（续）
+## 轻量化BERT（续）
+
+http://mitchgordon.me/machine/learning/2019/11/18/all-the-ways-to-compress-BERT.html
+
+15篇论文全面概览BERT压缩方法
+
+https://mp.weixin.qq.com/s/5tYuP09dtkmYYGX2R-mCPQ
+
+从transformer到albert
+
+https://zhuanlan.zhihu.com/p/110934513
+
+关于BERT的模型压缩简介
+
+https://mp.weixin.qq.com/s/CkAHKXWi24tDBz4HiWkhBw
+
+模型小快好！微软预训练语言模型通用压缩方法MiniLM助你“事半功倍”
+
+https://mp.weixin.qq.com/s/LF8TiVccYcm4B6krCOGVTQ
+
+ALBERT论文图解介绍
+
+https://mp.weixin.qq.com/s/QdrwlaFZi3VRGptw4cYJSQ
+
+别再蒸馏3层BERT了！变矮又能变瘦的DynaBERT了解一下
+
+## AR vs AE
+
+**AR**: Aotoregressive Lanuage Modeling，又叫自回归语言模型。它指的是，依据前面(或后面)出现的tokens来预测当前时刻的token，代表模型有ELMO、GTP等。
+
+$$\text{forward:}p(x)=\prod_{t=1}^Tp(x_t|x_{<t})$$
+
+$$\text{backward:}p(x)=\prod_{t=T}^1p(x_t|x_{>t})$$
 
 - 缺点：它只能利用单向语义而不能同时利用上下文信息。ELMO通过双向都做AR模型，然后进行拼接，但从结果来看，效果并不是太好。
 
@@ -347,39 +379,3 @@ https://mp.weixin.qq.com/s/6i9eQISKsWU0jawKzWg8nQ
 https://mp.weixin.qq.com/s/dV4RkxZOC9o2BxNi0GljKQ
 
 谷歌最强NLP模型BERT官方中文版来了！多语言模型支持100种语言
-
-https://mp.weixin.qq.com/s/fz-bQMAi5bs2_bvRhf3ERg
-
-从Word Embedding到Bert模型—自然语言处理中的预训练技术发展史
-
-https://mp.weixin.qq.com/s/k_33UK1RkMyHn6TSudU6Kg
-
-详解谷歌最强NLP模型BERT
-
-https://mp.weixin.qq.com/s/d2MZQbamdo0EC_MVtf-HZA
-
-BERT详解：开创性自然语言处理框架的全面指南
-
-https://mp.weixin.qq.com/s/pD4it8vQ-aE474uSMQG0YQ
-
-两行代码玩转Google BERT句向量词向量
-
-https://mp.weixin.qq.com/s/osmUZxAAX3x-oTHYJbzemA
-
-谷歌BERT模型fine-tune终极实践教程
-
-https://mp.weixin.qq.com/s/XmeDjHSFI0UsQmKeOgwnyA
-
-小数据福音！BERT在极小数据下带来显著提升的开源实现
-
-https://mp.weixin.qq.com/s/HXYDO5PM8UIoXgEPGe8p-w
-
-图解当前最强语言模型BERT：NLP是如何攻克迁移学习的？
-
-https://mp.weixin.qq.com/s/zz3j9HEuzw5e92MQXxSQsA
-
-遗珠之作？谷歌Quoc Le这篇NLP预训练模型论文值得一看
-
-https://mp.weixin.qq.com/s/IN4YfoZnlBozwEFdhSvLZg
-
-用可视化解构BERT，我们从上亿参数中提取出了6种直观模式

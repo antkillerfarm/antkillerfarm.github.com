@@ -374,6 +374,10 @@ https://mp.weixin.qq.com/s/6OMMboBdbLVA-HsEjA3bSA
 
 Ctr预估之Calibration
 
+https://mp.weixin.qq.com/s/WVPgLXN7KZueNbmfTJNhDA
+
+推荐系统的PMF-概率矩阵分解和协同过滤
+
 # 推荐算法中的常用排序算法
 
 ![](/images/img3/ranking.png)

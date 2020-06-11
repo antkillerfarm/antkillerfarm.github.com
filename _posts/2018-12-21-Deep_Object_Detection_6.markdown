@@ -34,6 +34,10 @@ https://mp.weixin.qq.com/s/5usz-wraHArK6_HcE4RuZw
 
 想读懂YOLOV4，你需要先了解下列技术(二)
 
+https://mp.weixin.qq.com/s/v2x3u3_FELz2lHqBJKR-dg
+
+Yolov3和Yolov4核心内容、代码梳理
+
 # One-stage vs. Two-stage
 
 虽然我们在概述一节已经提到了One-stage和Two-stage的概念。但鉴于这个概念的重要性，在介绍完主要的目标检测网络之后，很有必要再次总结一下。

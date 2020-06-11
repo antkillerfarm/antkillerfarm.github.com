@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Flink, Parquet, Beam, ORC, Apache Arrow, Ceph
+title:  Flink, Parquet, Beam, ORC, Apache Arrow, Ceph, Redis
 category: AI 
 ---
 
@@ -262,7 +262,47 @@ https://mp.weixin.qq.com/s/KBaagb1zrkAmLyVgmkzJ3A
 
 ceph基本架构及数据分布原理
 
-# Redis+
+# Redis
+
+REmote DIctionary Server(Redis) 是一个由Salvatore Sanfilippo写的key-value存储系统。
+
+http://www.runoob.com/redis/redis-tutorial.html
+
+Redis教程
+
+http://www.yiibai.com/redis/
+
+另一个Redis教程
+
+参考：
+
+https://mp.weixin.qq.com/s/3WmGpZkEuSz-ox_2CPCsqg
+
+伯克利推出世界最快的KVS数据库Anna：秒杀Redis和Cassandra
+
+https://mp.weixin.qq.com/s/320HQlFOXdzbBh2ofrpANA
+
+Redis高负载下的中断优化
+
+https://mp.weixin.qq.com/s/3ISOT_9HTFrnxpJdnHTnsg
+
+redis哈希表的rehash分析
+
+https://www.jianshu.com/p/dbc62ed27f03
+
+玩转Redis集群
+
+https://mp.weixin.qq.com/s/My6gZIVBVEjjDoQ5IpPKCw
+
+Redis查漏补缺：最易错过的技术要点大扫盲
+
+https://mp.weixin.qq.com/s/T2AmwNTYwTPlB0WbCsy-3g
+
+Redis单线程架构
+
+https://mp.weixin.qq.com/s/XZYxHEUx0AJozQ2oM5fTrw
+
+秒杀Redis的KVS上云了！伯克利重磅开源Anna 1.0
 
 https://mp.weixin.qq.com/s/FyYhLS3X7LDe0PLxooz_cQ
 
@@ -275,6 +315,10 @@ https://mp.weixin.qq.com/s/X1gh_mtXvc9KnI2jK-cTyw
 https://mp.weixin.qq.com/s/ZsmcJc9L-EI2msRiga9-VA
 
 redis持久化
+
+https://mp.weixin.qq.com/s/uTzPJJmL6OY4bxarJ_x95g
+
+Redis你掌握多少了，来个查漏补缺？
 
 ## Pika
 

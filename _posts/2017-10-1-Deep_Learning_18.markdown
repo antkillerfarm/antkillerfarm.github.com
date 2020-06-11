@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/qgZwi3ieMqPrg3t5lyjaZw
 
 元图(Meta-Graph)：元学习小样本连接预测
 
+https://mp.weixin.qq.com/s/17ozbpr2IIoq36VpBl3Crw
+
+基于知识图谱和图卷积神经网络的应用和开发
+
 # 语义分割进阶+
 
 https://mp.weixin.qq.com/s/HJzbMoCa7GenNm78sz7YAg
@@ -235,3 +239,11 @@ https://mp.weixin.qq.com/s/WuWZS25aAWDLpVZQKuP2Tw
 https://zhuanlan.zhihu.com/p/134111177
 
 实例分割新思路: Deep Snake
+
+https://mp.weixin.qq.com/s/81yI3xrDJJzy3MTGyqtUvw
+
+基于深度卷积神经网络的小样本分割算法综述
+
+https://mp.weixin.qq.com/s/1Z8EN9lWy5r0JIu8u61Rig
+
+从注意力机制出发，上海交大提出实时语义分割新网络LRNNet

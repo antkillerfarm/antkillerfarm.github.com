@@ -154,6 +154,10 @@ https://mp.weixin.qq.com/s/wtY66E0zMGzmdnPGWL3aQw
 
 迁移学习了解下
 
+https://mp.weixin.qq.com/s/6aBzR0O3pwA8-btsuDX82g
+
+现代NLP中的零样本学习
+
 # 深度ISP
 
 ## 数据集

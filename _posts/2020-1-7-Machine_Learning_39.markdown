@@ -48,6 +48,14 @@ Kaggle知识点：时序数据与Embedding
 
 # 运筹学
 
+https://zhuanlan.zhihu.com/p/25579864
+
+人工智能的“引擎”--运筹学，一门建模、优化、决策的科学
+
+https://mp.weixin.qq.com/s/Fn7FtrbCVDlYEXCzMUkTBg
+
+运筹学发展简史之1979-2004
+
 http://www.cnblogs.com/6DAN_HUST/archive/2010/11/11/1874681.html
 
 运筹学——线性规划及单纯形法求解

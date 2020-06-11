@@ -260,6 +260,10 @@ https://zhuanlan.zhihu.com/p/106330900
 
 解读－Stacked Capsule AutoEncoder－堆叠的胶囊自编码器
 
+https://mp.weixin.qq.com/s/ubi1L1Zlh4yZqCjZnpD58w
+
+Capsule Network深度解读
+
 # ESN
 
 Echo State Network
@@ -359,6 +363,10 @@ https://mp.weixin.qq.com/s/OALGxuvUdQMbsK1k4g2V7Q
 https://mp.weixin.qq.com/s/2v-Y_-_si6_dxq3cICy-lg
 
 疫情蔓延让这项CV技术突然火了，盘点开源代码
+
+https://mp.weixin.qq.com/s/Z6l9R5uzWsAn_DTgTsGstg
+
+京东发布FastReID：目前最强悍的目标重识别开源库！
 
 # 人脸检测/识别+
 

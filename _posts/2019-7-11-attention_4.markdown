@@ -6,6 +6,20 @@ category: Attention
 
 # BERT
 
+## 海量文本
+
+BERT以及后来的GPT 2.0取得重大突破的关键，还在于海量的训练文本。
+
+BERT拥有3.3亿个参数，训练数据包括：BooksCorpus（800M words）和English Wikipedia（2500M words）
+
+GPT 2.0拥有15亿个参数，训练数据除了上述之外，还包括了800M个网页的文本。
+
+如此海量的参数和数据，注定了这些模型的训练是一个超费算力的过程。NLP的游戏规则将变成：
+
+- 土豪大科技公司靠暴力上数据规模，上GPU或者TPU集群，训练好预训练模型发布出来，不断刷出大新闻。通过暴力美学横扫一切，这是土豪端的玩法。
+
+- 而对于大多数人来说，你能做的是在别人放出来的预训练模型上做小修正或者刷应用或者刷各种榜单，逐步走向了应用人员的方向，这是大多数NLP从业者未来几年要面对的dilemma。
+
 ## fine-tuning
 
 fine-tuning是针对实际业务数据进行的微调。下图展示了在若干任务中进行fine-tuning的网络设计。
@@ -309,35 +323,3 @@ BERT瘦身之路：Distillation，Quantization，Pruning
 https://mp.weixin.qq.com/s/DAsY9-Dl5T6peo_71ICOtw
 
 基于ALBERT的文本相似度计算
-
-http://mitchgordon.me/machine/learning/2019/11/18/all-the-ways-to-compress-BERT.html
-
-15篇论文全面概览BERT压缩方法
-
-https://mp.weixin.qq.com/s/5tYuP09dtkmYYGX2R-mCPQ
-
-从transformer到albert
-
-https://zhuanlan.zhihu.com/p/110934513
-
-关于BERT的模型压缩简介
-
-https://mp.weixin.qq.com/s/CkAHKXWi24tDBz4HiWkhBw
-
-模型小快好！微软预训练语言模型通用压缩方法MiniLM助你“事半功倍”
-
-https://mp.weixin.qq.com/s/LF8TiVccYcm4B6krCOGVTQ
-
-ALBERT论文图解介绍
-
-https://mp.weixin.qq.com/s/QdrwlaFZi3VRGptw4cYJSQ
-
-别再蒸馏3层BERT了！变矮又能变瘦的DynaBERT了解一下
-
-## AR vs AE
-
-**AR**: Aotoregressive Lanuage Modeling，又叫自回归语言模型。它指的是，依据前面(或后面)出现的tokens来预测当前时刻的token，代表模型有ELMO、GTP等。
-
-$$\text{forward:}p(x)=\prod_{t=1}^Tp(x_t|x_{<t})$$
-
-$$\text{backward:}p(x)=\prod_{t=T}^1p(x_t|x_{>t})$$

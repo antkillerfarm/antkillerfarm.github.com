@@ -330,6 +330,10 @@ https://mp.weixin.qq.com/s/5fl9jmEolYOxMjaMw746OQ
 
 基于深度学习的命名实体识别
 
+https://zhuanlan.zhihu.com/p/70618710
+
+初识NER
+
 ## 文本摘要
 
 https://mp.weixin.qq.com/s/jk1XgnuydrsTg3HvV0CVvw

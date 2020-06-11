@@ -337,6 +337,10 @@ https://mp.weixin.qq.com/s/aLOd_W3juLuWaQeTdzAPjg
 
 数值优化（1）——引入，线搜索：步长选取条件
 
+https://zhuanlan.zhihu.com/p/68748778
+
+指数移动平均（EMA）的原理
+
 # 热传导推荐算法
 
 https://www.zhihu.com/question/20184666

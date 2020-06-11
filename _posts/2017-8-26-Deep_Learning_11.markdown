@@ -22,15 +22,15 @@ $$f * K = f * (V * H) = f * V * H$$
 
 显然，不是所有的卷积核都满足可分离条件。但是不要紧，NN有自动学习并逼近函数的能力。经过训练之后：$$K \approx V * H$$
 
-## 1 x 1卷积
+## 1x1卷积
 
 1、升维或降维。
 
-如果卷积的输出输入都只是一个平面，那么1x1卷积核并没有什么意义，它是完全不考虑像素与周边其他像素关系。 但卷积的输出输入是长方体，所以1 x 1卷积实际上是对每个像素点，在不同的channels上进行线性组合（信息整合），且保留了图片的原有平面结构，调控depth，从而完成升维或降维的功能。
+如果卷积的输出输入都只是一个平面，那么1x1卷积核并没有什么意义，它是完全不考虑像素与周边其他像素关系。 但卷积的输出输入是长方体，所以1x1卷积实际上是对每个像素点，在不同的channels上进行线性组合（信息整合），且保留了图片的原有平面结构，调控depth，从而完成升维或降维的功能。
 
 ![](/images/article/conv_1x1.png)
 
-2、加入非线性。卷积层之后经过激励层，1 x 1的卷积在前一层的学习表示上添加了非线性激励（non-linear activation），提升网络的表达能力；
+2、加入非线性。卷积层之后经过激励层，1x1的卷积在前一层的学习表示上添加了非线性激励（non-linear activation），提升网络的表达能力；
 
 3.促进不同通道之间的信息交换。
 
@@ -309,3 +309,11 @@ https://mp.weixin.qq.com/s/i8vOeAVEYX-hRAvPSe6DEA
 https://mp.weixin.qq.com/s/hZc8MgHoE010hnzLU-trIA
 
 高性能涨点的动态卷积DyNet与CondConv、DynamicConv有什么区别联系？
+
+https://www.yuque.com/yahei/hey-yahei/condconv
+
+CondConv：按需定制的卷积权重
+
+https://mp.weixin.qq.com/s/eRZ3jNuceMYKE3lEj-g1aw
+
+动态卷积：自适应调整卷积参数，显著提升模型表达能力

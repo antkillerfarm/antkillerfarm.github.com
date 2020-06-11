@@ -340,6 +340,10 @@ https://mp.weixin.qq.com/s/UBAQC4xB-aPI7B7JUKE95g
 
 携程是如何做AB实验分流的？
 
+https://mp.weixin.qq.com/s/MwXG85RdbNqvwkjauTfk2Q
+
+不只是A/B测试：多臂老虎机赌徒实验
+
 ## 参考
 
 https://mp.weixin.qq.com/s/vpANPrl86Ou2fBVHgLXtBQ
@@ -377,23 +381,3 @@ https://mp.weixin.qq.com/s/lTYBrYJBnW_ZNEdsQ-lorw
 https://mp.weixin.qq.com/s/hNz9Op4lYtaX8tznUmHd9Q
 
 OCPC广告算法在凤凰新媒体的实践探索
-
-https://mp.weixin.qq.com/s/WWqaCRtsSqfvO-qDLvehdg
-
-阿里妈妈：品牌广告中的NLP算法实践
-
-https://mp.weixin.qq.com/s/sboWpGTuf8rpRUz4G7PdKw
-
-深度学习在美图个性化推荐的应用实践
-
-https://mp.weixin.qq.com/s/QThtXNF9oIE5bXF5kaSg5w
-
-如何优化大规模推荐？下一代算法技术JTM来了
-
-https://mp.weixin.qq.com/s/Od2_u1uP5S7htjDKuEDSTw
-
-数据质量良莠不齐？携程是这样来做多场景下的内容智能发现的
-
-https://mp.weixin.qq.com/s/FXlxT6qSridawZDIdGD1mw
-
-UC信息流推荐模型在多目标和模型优化方面的进展

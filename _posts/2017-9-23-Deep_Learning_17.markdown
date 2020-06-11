@@ -95,6 +95,10 @@ https://www.jianshu.com/p/4c2032c685dc
 
 自动求导框架综述
 
+https://mp.weixin.qq.com/s/WiZ00mkEB7CND3VyIM5Swg
+
+最新《自动微分手册》77页pdf
+
 https://mp.weixin.qq.com/s/xXwbV46-kTobAMRwfKyk_w
 
 自动求导--Deep Learning框架必备技术二三事

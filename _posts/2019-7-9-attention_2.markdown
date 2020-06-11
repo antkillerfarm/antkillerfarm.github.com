@@ -242,6 +242,10 @@ https://juejin.im/post/5e57d69b6fb9a07c8a5a1aa2
 
 啥是Attention?
 
+https://mp.weixin.qq.com/s/PF02OwP0CHDf6l4BHHDqow
+
+一文读懂Attention机制
+
 # Transformer
 
 之前的文章已经介绍了Attention和《Attention is All You Need》。但实际上，《Attention is All You Need》不仅提出了两种Attention模块，而且还提出了如下图所示的Transformer模型。该模型主要用于NMT领域，由于Attention不依赖上一刻的数据，同时精度也不弱于LSTM，因此有很好并行计算特性，在工业界得到了广泛应用。阿里巴巴和搜狗目前的NMT方案都是基于Transformer模型的。
@@ -287,25 +291,3 @@ https://mp.weixin.qq.com/s/-45YL1mzPmSOESfWlxUclA
 https://mp.weixin.qq.com/s/wJbbki3S8l10rSpFTWFpgg
 
 对Reformer的深入解读
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/39034683
-
-Attention is all you need模型笔记
-
-https://zhuanlan.zhihu.com/p/40920384
-
-真正的完全图解Seq2Seq Attention模型
-
-https://mp.weixin.qq.com/s/RLxWevVWHXgX-UcoxDS70w
-
-细讲《Attention Is All You Need》
-
-https://mp.weixin.qq.com/s/1wReNLTtpKySPwi5u1iXMA
-
-All Attention You Need
-
-https://mp.weixin.qq.com/s/lUqpCae3TPkZlgT7gUatpg
-
-Self-Attention与Transformer

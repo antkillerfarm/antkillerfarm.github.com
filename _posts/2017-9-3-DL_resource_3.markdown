@@ -395,3 +395,7 @@ https://mp.weixin.qq.com/s/4kWUE8ml_o6iF0F1TREyiA
 https://mp.weixin.qq.com/s/w1u1O7DRh1R0xQNEeLBUBA
 
 阿里巴巴研究型实习生面试复盘
+
+https://zhuanlan.zhihu.com/p/140936496
+
+Facebook、AWS、Google、Microsoft面试小记
