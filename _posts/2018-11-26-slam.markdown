@@ -134,6 +134,10 @@ http://www.cnblogs.com/gaoxiang12/p/3695962.html
 
 视觉SLAM漫谈
 
+https://mp.weixin.qq.com/s/zjIMn0OsPSJvoElCyuaSuw
+
+SLAM中的几何与学习方法，62页pdf
+
 https://mp.weixin.qq.com/s/zIYgNQcuxDJboABzXSPGQw
 
 迈向几何型深度SLAM
