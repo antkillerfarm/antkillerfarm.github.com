@@ -189,6 +189,8 @@ $$m=O_{\gamma,\delta}(d)$$
 
 这个方法被称为k-折叠（k-fold）交叉验证。一般来说k取值为10，这样训练数据稀疏时，基本上也能进行训练，缺点是训练和测试次数过多。
 
+![](/images/img3/k-fold.png)
+
 更极端的，如果$$k=m$$，则该方法又被称为leave-one-out交叉验证。
 
 参考：
@@ -196,3 +198,7 @@ $$m=O_{\gamma,\delta}(d)$$
 https://mp.weixin.qq.com/s/OmSxnVL6pYYzB9_jDV4Lqg
 
 模型评估方法基础总结
+
+https://mp.weixin.qq.com/s/lrNvC8EWcq6cT16FU8nUbQ
+
+5种常用的交叉验证技术，保证评估模型的稳定性

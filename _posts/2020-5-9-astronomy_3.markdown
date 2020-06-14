@@ -118,6 +118,12 @@ https://mp.weixin.qq.com/s/zwlOZzdGlqTFGSg3H9zNxQ
 
 珠峰变“绿”，“隐者”现身，这些年的珠峰发生了什么？
 
+https://mp.weixin.qq.com/s/MCAR8M2DoV30-McdsjTxDw
+
+徒步横穿南极大陆第一人
+
+>秦大河，1947年生，地理学家，中国科学院院士，第三世界科学院院士。曾任中国气象局局长、中国科学技术协会副主席等
+
 # 阿波罗50年
 
 https://mp.weixin.qq.com/s/79e6p2TYpttO-NR1of21jw
@@ -169,11 +175,3 @@ NASA传奇数学家去世，她曾笔算了登月轨道
 https://mp.weixin.qq.com/s/8vRFfFLdLWSPpTzHjUKegQ
 
 哈勃太空望远镜30岁生日快乐！我们看到的宇宙因你而不同
-
-----
-
-由于飞行前的制造和测试错误，氧气罐中的电线暴露了出来。在那个致命的夜晚，氧气罐中暴露的电线产生的火花引发了火灾，引爆了氧气罐，将服务舱外的隔热层炸飞。。。
-
-https://mp.weixin.qq.com/s/NmS1dbeIsQomsWYI8-OyZg
-
-阿波罗13号“伟大失败”50周年，NASA发布纪录片追忆奥德赛号逃生往事

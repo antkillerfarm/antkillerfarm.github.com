@@ -405,3 +405,7 @@ https://mp.weixin.qq.com/s/824-TbpwJz9n_jT9uuOE8g
 https://mp.weixin.qq.com/s/6oyETsNIEdP9gz0U-UjNOA
 
 搜索相关性算法在DiDi Food中的探索
+
+https://mp.weixin.qq.com/s/X6xjNUMqb4en55Yd1pdOYw
+
+外卖送达时间预估，让每位用户吃上一口热乎饭的算法

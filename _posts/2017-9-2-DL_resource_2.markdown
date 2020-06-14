@@ -372,6 +372,10 @@ https://mp.weixin.qq.com/s/1ZnacYeqkd_y_HoK8XIWWQ
 
 旷视成都研究院负责人刘帅成：图像对齐及其应用
 
+https://mp.weixin.qq.com/s/FQ8uqDxXemJVLGmktGuZCQ
+
+真实场景中的玻璃检测，有趣的应用
+
 ## 光神经网络
 
 https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ

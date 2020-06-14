@@ -384,9 +384,9 @@ https://mp.weixin.qq.com/s/b19SLduKoiOIeE5CA3ZOjg
 
 Python标准库之LRU缓存实现学习
 
-https://mp.weixin.qq.com/s/VPCUd5op6Vd-b0LbFEMSYQ
+https://mp.weixin.qq.com/s/zABXQksUX6le8zWJeWUQXw
 
-秒懂Python编程中的`if __name__ == 'main'`的作用和原理
+Python的`__name__`变量，到底是个什么东西？
 
 https://mp.weixin.qq.com/s/FtlAkInyXgvUxDnSCikTIw
 

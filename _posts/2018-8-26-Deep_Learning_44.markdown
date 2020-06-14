@@ -280,7 +280,11 @@ https://mp.weixin.qq.com/s/3yaXYPjNWAXXtDJEWz2T0w
 
 https://mp.weixin.qq.com/s/uU1-DwHnU4pPMLtQZNQyVQ
 
-北大图灵班本科生带来动画CG福音，「最懂骨骼的卷积网络」，无需配对样本实现动作迁移
+北大图灵班本科生带来动画CG福音，“最懂骨骼的卷积网络”，无需配对样本实现动作迁移
+
+https://mp.weixin.qq.com/s/FgWNjWY9CyFlr4LL4_bkDw
+
+图像超清化+老照片修复技术，拯救你所有的模糊、破损照片
 
 # 深度推荐系统
 

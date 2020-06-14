@@ -4,6 +4,34 @@ title: 病毒, DNA鉴定, 新冠肺炎（1）
 category: Nature 
 ---
 
+# 生命起源（续）
+
+值得一提的是，**细菌虽然不会衰老，但却学会了自杀**，这是细菌对付噬菌体的一种手段。噬菌体就是细菌的病毒，它们本身不具备繁殖的能力，只能依靠活细菌来复制自己。细菌没有免疫系统，没办法杀死它们，所以一旦某个细菌被噬菌体感染，只能立刻自杀，防止自己成为噬菌体的繁殖场，以此来保护周围的同类。
+
+**衰老的根本原因就在于核基因组和线粒体基因组的不匹配。**前文说过，这两套基因组必须配合得天衣无缝才能让ATP合成顺利进行，只要双方稍微有一点不匹配，ATP生产效率就会直线下降，于是衰老就发生了。但这两套基因组是相互独立的，不匹配的现象早晚有一天会发生，所以衰老和死亡是无法避免的，差别只是时间问题。
+
+**生命的意义不是让自己的身体永不衰老，而是让自己的基因永远延续下去。**所以自然选择根本不关心衰老问题，它只关心繁殖。凡是涉及到繁殖的功能都进化得越来越好，但涉及到衰老时就进化得三心二意，马马虎虎。
+
+----
+
+参考：
+
+https://mp.weixin.qq.com/s/_b5wRtOMwmGi8N5fxgMFEw看破
+
+生命三问（上）：生命是如何进化出来的？
+
+https://mp.weixin.qq.com/s/uPVAlv6SwtYsXOPgIQG8Xg
+
+生命三问（中）：为什么要有性？
+
+https://mp.weixin.qq.com/s/16ZUo4XXHV1GCMbZYiRVJw
+
+生命三问（下）：银河系里到底有没有外星人？
+
+https://mp.weixin.qq.com/s/mXUIdAW-u-ftgh-29AwsZQ
+
+医生，我的线粒体出问题了！别急，它会自己好的
+
 # 病毒
 
 **正义单链RNA病毒**：冠状病毒科就属此类，包括能够感染动物的冠状病毒，会引发我们普通感冒的温和的冠状病毒，以及导致了SARS、MERS和此次疫情的三种厉害的冠状病毒。它们的遗传物质都是一条长长的RNA单链，入侵细胞后扮演了信使RNA的角色，欺骗细胞以它们为模板来生产病毒的蛋白质。
@@ -218,68 +246,6 @@ https://mp.weixin.qq.com/s/gGJrQXdxX2WwkXj140Ld2w
 
 ----
 
-在这场争论中，最早推广Pfeifer氏菌疫苗的William Park展示了自我纠错的勇气，与George McCoy一起，成为否定细菌疫苗发声最多的专家。
-
-100年前的条件和科学水平与当前无法相比，但以William Park为代表的美国科学家所展示的勇于纠错、实事求是的精神永远不会过时。
-
->William Hallock Park，1863～1939，美国医学家。Columbia University博士（1886）。长期供职于卫生部纽约实验室（也就是现在的William Park实验室）。
-
-https://mp.weixin.qq.com/s/dhNuZo0yTI1CR8oH9LYlKA
-
-以史为鉴：回顾1918年美国流感疫苗开发的闹剧
-
-----
-
-pandemics：世界性流行病
-
-epidemics：流行病
-
-quarantine源自拉丁语里的“四十”。由来是当年威尼斯人在瘟疫的时候，让外来船只停40天再下船的操作。
-
-----
-
 1619年，被后来人称为“16世纪死神”的法国医生查尔斯·德洛姆（Charles de Lorme）发明了一种诡异的银制面具，外形设计呈鸟嘴状，由皮革包裹，面具的眼睛部分用玻璃嵌入，至于最关键的过滤系统，则用棉花、樟脑、玫瑰等填充物构成，置于鸟嘴处，一定程度上阻隔了空气中的病菌。
 
 ![](/images/img3/Doctor_Schnabel.jpg)
-
-## SARS
-
-https://mp.weixin.qq.com/s/f5YPi3JuGMiB-FwMZK8F1g
-
-非典十三年祭：不说，并不代表遗忘
-
-https://news.yorkbbs.ca/2030923
-
-应对SARS疫情：多伦多的教训
-
-![](/images/img3/sars.jpg)
-
-https://mp.weixin.qq.com/s/Iu5y3AIgp7rgswjH89txJw
-
-哪些城市的新型肺炎疫情可能被低估：人流迁徙大数据+SARS传播路径
-
-https://mp.weixin.qq.com/s/cvIZzSBEg50FKqjf2x7fAg
-
-“小汤山”隔离模式，对武汉肺炎有何启发？
-
-https://mp.weixin.qq.com/s/ME6mAC0RgYsTLrHIz2kJSA
-
-被遗忘的案例：淘大花园往事与现实防控的意义
-
-https://mp.weixin.qq.com/s/kRp7Uw77BWSjFB5QOrydSg
-
-非典，已过去十七年：那些活着的后遗症患者
-
-## 国内疫情
-
-https://github.com/wuhan2020/wuhan2020
-
-新型冠状病毒防疫信息收集平台
-
-https://github.com/2019ncovmemory/nCovMemory
-
-2020新冠肺炎记忆
-
-https://mp.weixin.qq.com/s/9291PPNwxz3KoF-7klwMrA
-
-新型肺炎严重程度升级！已明确会人传人......

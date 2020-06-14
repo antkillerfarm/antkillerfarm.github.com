@@ -6,6 +6,24 @@ category: Deep Object Detection
 
 # CornerNet（续）
 
+## Hourglass Network
+
+这是CornerNet的骨干部分。详情参见《深度学习（十二）》。
+
+## Bottom-right corners & Top-left Corners Prediction Module
+
+CornerNet堆叠两个Hourglass Network生成Top-left和Bottom-right corners，每一个corners都包括corners Pooling，以及对应的Heatmaps, Embeddings vector和offsets。
+
+![](/images/img3/CornerNet.png)
+
+上图是Heatmaps, Embeddings vector的示意图。
+
+- heatmaps包含C channels（C是目标的类别，没有background channel），每个channel是二进制掩膜，表示相应类别的顶点位置。
+
+- embedding vector使相同目标的两个顶点（左上角和右下角）距离最短。或者也可以反过来说，**两个顶点的embedding vector越相近，则它们越有可能配对。**
+
+- offsets用于调整生成更加紧密的边界定位框。
+
 ## corner pooling
 
 corner pooling是CornerNet新提出的一种操作。其步骤如下图所示：
@@ -313,49 +331,3 @@ https://zhuanlan.zhihu.com/p/58734240
 https://mp.weixin.qq.com/s/n3ZUsq2I0CaJ5pIl2nZUFQ
 
 3D目标检测：MonoDIS
-
-https://mp.weixin.qq.com/s/WBiDyIBV9OaKbxUhBml2AA
-
-GS3D(monocular 3D detection)
-
-https://mp.weixin.qq.com/s/G7YNTR8FAsCtkCxLQv1-dQ
-
-Facebook开源3D目标检测框架VoteNet，曾刷新两大数据集最高精度
-
-https://mp.weixin.qq.com/s/s_cAZ--KHvNZq3thrIGx3w
-
-MVX-Net：多模型三位像素网络用于3D目标检测
-
-https://mp.weixin.qq.com/s/ouBxEXcY4s894Sec4ifBtQ
-
-基于YOLO的3D目标检测：YOLO-6D
-
-https://mp.weixin.qq.com/s/yCu5Xx6peDKyU06yBlixpA
-
-首个实时单目3D目标检测算法：RTM3D
-
-https://zhuanlan.zhihu.com/p/101346137
-
-Det3D-首个通用3D目标检测框架
-
-https://zhuanlan.zhihu.com/p/85686290
-
-MLOD：基于鲁棒特征融合方法的多视点三维目标检测
-
-https://mp.weixin.qq.com/s/LN2l67jhivb0hyy6JSLMVA
-
-3D目标检测深度学习方法数据预处理综述
-
-# 目标检测进阶
-
-https://mp.weixin.qq.com/s/1nlOJ7X9ogBHTl1j2adqyg
-
-83页《目标分类和目标检测综述（2D和3D数据）》论文
-
-https://mp.weixin.qq.com/s/HmUhlw90b2aTsoEwBdYbdQ
-
-目标检测二十年技术综述
-
-https://mp.weixin.qq.com/s/S1IrgEqS1Q4xqGl5adNrlg
-
-目标检测近年综述

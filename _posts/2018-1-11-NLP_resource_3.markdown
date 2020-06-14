@@ -6,7 +6,25 @@ category: resource
 
 # NLP参考资源
 
-## 句法分析（续）
+## 句法分析
+
+传统方法主要是PCFG （Probabilistic Context-Free Grammar）。
+
+https://blog.csdn.net/continueOo/article/details/72851724
+
+统计自然语言处理（概率上下文无关文法）
+
+http://mp.weixin.qq.com/s?__biz=MzI4MDYzNzg4Mw==&mid=2247483922&idx=1&sn=cffbaf797cc58e303a65a8a2ae370b86
+
+句法分析（syntactic parsing）在NLP领域的应用是怎样的？
+
+http://www.cnblogs.com/CheeseZH/p/5768389.html
+
+依存句法分析与语义依存分析的区别
+
+https://mp.weixin.qq.com/s/r-mndw2BKHdVq-jKLinYZQ
+
+别说还不懂依存句法分析
 
 https://mp.weixin.qq.com/s/XP0V6v__O4wxpjPSC5O7vw
 
@@ -375,23 +393,3 @@ https://mp.weixin.qq.com/s/w5A5rvJxqRSJYMeEMlFXsQ
 https://mp.weixin.qq.com/s/apwceKm6BvAJ2962b1mnBg
 
 基于注意力机制的神经匹配模型用于短文本检索
-
-https://mp.weixin.qq.com/s/SfFRXlekKkEapbjoSeKEog
-
-自然语言处理中N-Gram模型介绍
-
-https://mp.weixin.qq.com/s/KVONdK44T8JKU5pFB5ydrQ
-
-SQuAD文本理解挑战赛十大模型解读
-
-https://mp.weixin.qq.com/s/Zrxi0AK0oimjKNr5kG_MMA
-
-数据挖掘之父韩家炜：文本语料库的数据挖掘
-
-https://mp.weixin.qq.com/s/Y-_Y8PLBRLE3wn1CPRogsw
-
-重磅！一文彻底读懂智能对话系统！当前研究综述和未来趋势
-
-https://mp.weixin.qq.com/s/FZOgJR5aKl4fV3xCX2zkwA
-
-主题模型如何帮助法律部门提取PDF摘要及可视化

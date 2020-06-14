@@ -150,6 +150,10 @@ https://mp.weixin.qq.com/s/lw9frtqocqsS-q2KGfzO1Q
 
 深入理解计算机视觉中的损失函数
 
+https://mp.weixin.qq.com/s/_HQ5an_krRCYMVnwEgGJow
+
+深度学习的多个loss如何平衡 & 有哪些“魔改”损失函数，曾经拯救了你的深度学习模型？
+
 # 自适应滤波器
 
 《自适应滤波器原理（Adaptive Filter Theory）》，Simon Haykin著。

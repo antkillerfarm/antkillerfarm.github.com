@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/mDgnsn1xsI1WN3UhxPGPrQ
 
 通过这些动图，让你秒懂高中物理原理!
 
+https://mp.weixin.qq.com/s/2n-60v-ocfszU9xhbG4Ofg
+
+达·芬奇和宋代画家告诉你，除了诗和远方，世上还有散射现象（瑞利散射、米氏散射）
+
 ----
 
 $$\pi$$的平方与重力加速度g在数值上极其接近。
@@ -198,7 +202,23 @@ https://mp.weixin.qq.com/s/oSuSaPe2RYdm3NY0VZAiVQ
 
 激光一定是火热的吗？人家制冷时超cool
 
+----
+
+希兰姆·珀西·马克沁是著名的机枪之父马克沁的儿子。他从小就很喜欢射击。但是当时枪支的噪音非常大。在森林里打猎时，每开一枪都会惊扰周围的猎物；而且还会影响周围的居民。因此，他在1902年时发明了第一代“马克沁消音器”。
+
+https://mp.weixin.qq.com/s/vII5zOWBArxDvsHiyAyYGQ
+
+消音器
+
 # 阿波罗50年+
+
+由于飞行前的制造和测试错误，氧气罐中的电线暴露了出来。在那个致命的夜晚，氧气罐中暴露的电线产生的火花引发了火灾，引爆了氧气罐，将服务舱外的隔热层炸飞。。。
+
+https://mp.weixin.qq.com/s/NmS1dbeIsQomsWYI8-OyZg
+
+阿波罗13号“伟大失败”50周年，NASA发布纪录片追忆奥德赛号逃生往事
+
+----
 
 ![](/images/img3/india_moon.jpg)
 

@@ -6,6 +6,14 @@ category: DL
 
 # OCR（续）
 
+https://mp.weixin.qq.com/s/bmJCLUlOA364AvK90sXE3Q
+
+用于算术习题自动批改的结构文本精确识别方法
+
+https://zhuanlan.zhihu.com/p/130855699
+
+怎样构建一个端到端的文字识别系统（CTC Loss）
+
 https://mp.weixin.qq.com/s/5eTugA70myKxDTZUby87Pw
 
 任意形状文本检测：Look More Than Once
@@ -411,35 +419,3 @@ https://zhuanlan.zhihu.com/p/133739758
 https://mp.weixin.qq.com/s/VctNZsALrbDQDW3_zhGJsw
 
 在NLP中应用GCN的几种构图方法整理
-
-https://mp.weixin.qq.com/s/TnS4-seRxAs45A6SDSoACg
-
-图神经网络的预训练策略
-
-https://mp.weixin.qq.com/s/Pgz8cnDpX2mgexASnRzfhA
-
-浅谈图神经网络的局限性
-
-https://mp.weixin.qq.com/s/hQ-Fo_aizkcTxvzW0FSIEw
-
-VGAE：利用变分自编码器完成图重构
-
-https://zhuanlan.zhihu.com/p/137223381
-
-推荐系统的图方法
-
-https://mp.weixin.qq.com/s/hFtFjR4EIVN_9g93YjtuoQ
-
-GCMC：GNN在推荐系统中的应用
-
-https://mp.weixin.qq.com/s/u8XAbOautjZTA7ZhdSBaDA
-
-经典重温：图表示学习经典算法node2vec
-
-https://mp.weixin.qq.com/s/soH6jX7_fjq0iBBH-5bMsA
-
-Node2Vec论文+代码笔记
-
-https://mp.weixin.qq.com/s/zxFgW6ofimYQ9wlChTK8cw
-
-Recommender System with GNN

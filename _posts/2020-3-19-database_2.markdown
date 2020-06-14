@@ -4,7 +4,17 @@ title:  Mysql, 安全
 category: technology 
 ---
 
-# Mysql（续）
+# Mysql
+
+## 安装
+
+`sudo apt-get install mysql-server mysql-client mysql-workbench`
+
+其中，mysql-workbench是一个查看mysql的GUI工具。
+
+安装过程中，会提示输入root用户的密码。注意：这里的root是mysql的登录帐号，而不是系统的登录帐号。
+
+·/etc/my.cnf是默认的MySQL配置文件。
 
 ## 导入csv文件
 
@@ -235,44 +245,6 @@ https://mp.weixin.qq.com/s/f6SY7Me9Ls3AZNxK0rHz7g
 https://mp.weixin.qq.com/s/isNd6ByZKdMjFtFL8LOVGA
 
 什么？用5G需要换SIM卡？！
-
-# 机器人/无人驾驶参考资源+
-
-https://zhuanlan.zhihu.com/p/109900137
-
-传感器融合-任务篇
-
-https://zhuanlan.zhihu.com/p/109895639
-
-传感器融合-数据篇
-
-https://mp.weixin.qq.com/s/1sbL2vmugiIlSn_ehIOuig
-
-车载多传感器融合定位方案：GPS +IMU+MM
-
-https://mp.weixin.qq.com/s/5kJfhp3vi9uuSFaeONKfrA
-
-打破传统方法，MIT新芯片帮自动驾驶汽车穿越浓雾
-
-https://zhuanlan.zhihu.com/p/57781001
-
-自动驾驶系统的硬件平台讨论
-
-https://mp.weixin.qq.com/s/ZUxkZXLC0tPkzptFKtudhw
-
-让机器人也能“问路”的视觉语言导航新方法
-
-https://mp.weixin.qq.com/s/6OkLjK1bMbw6a3bvYn_DCQ
-
-深度学习在自动驾驶感知领域的应用
-
-https://zhuanlan.zhihu.com/p/57029694
-
-自动驾驶中单目摄像头检测输出3-D边界框的方法一览
-
-https://mp.weixin.qq.com/s/bgP_xMfi3hXayscf9D5JIg
-
-谷歌提出Sim2Real：让机器人像人类一样观察世界
 
 # 硬盘
 

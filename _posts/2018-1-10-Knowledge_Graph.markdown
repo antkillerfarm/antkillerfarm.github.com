@@ -168,6 +168,10 @@ http://www.sohu.com/a/116866488_465975
 
 基于翻译模型(Trans系列)的知识表示学习
 
+https://mp.weixin.qq.com/s/2YbfL_1_SyM4wNozyaj4lw
+
+知识图谱嵌入的Translate模型汇总（TransE，TransH，TransR，TransD）
+
 ### ComplEx
 
 论文：

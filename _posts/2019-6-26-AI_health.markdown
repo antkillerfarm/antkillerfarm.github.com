@@ -332,6 +332,10 @@ https://mp.weixin.qq.com/s/Y8PW3mKbUKgGPdxerqVNKA
 
 数学表达式一键变图，CMU开发实用工具Penrose，堪称图解界LaTeX
 
+https://mp.weixin.qq.com/s/EPstYM7u3O6mAWf3J5Lmkg
+
+无代码工具的自动化概念概述
+
 ## howmuch.net
 
 howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：

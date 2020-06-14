@@ -132,7 +132,11 @@ https://zhuanlan.zhihu.com/p/30905298
 
 XML和MATLAB交互的基本操作
 
-# GNU Octave
+https://mp.weixin.qq.com/s/QkICCbTp53lWOyeZx63-sw
+
+后MATLAB时代的七种开源替代，一种堪称完美！
+
+## GNU Octave
 
 GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。
 
@@ -143,6 +147,14 @@ https://gnu.org/software/octave/
 安装方法:
 
 `sudo apt-get install octave`
+
+## spyder
+
+spyder是一个Python的IDE，提供了和Matlab类似的数据可视化界面。
+
+安装：
+
+`sudo apt install spyder`
 
 # 数据描述语言
 

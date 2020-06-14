@@ -254,6 +254,14 @@ TVM: Deep Learning模型的优化编译器
 
 ## 国际援助（续）
 
+### 小米援助意大利
+
+We are waves of the same sea, leaves of the same tree, flowers of the same garden.
+
+——Lucius Annaeus Seneca
+
+>Lucius Annaeus Seneca，公元前4年～65年，古罗马政治家、斯多葛派哲学家、悲剧作家、雄辩家。暴君Nero的老师，被逼自杀。
+
 ### 马云援助意大利
 
 “消失吧，黑夜！黎明时我们将获胜！”
@@ -361,15 +369,3 @@ https://mp.weixin.qq.com/s/2XsZzfZI-gAHC-D5HGNZXw
 https://mp.weixin.qq.com/s/I5I5Jh7brFGRBTAFah-C4w
 
 武汉新冠肺炎传播的动力学模型及预测
-
-https://mp.weixin.qq.com/s/-C03P-I4w91kLSGsuhxAKQ
-
-新型冠状病毒传播与扩散的控制模型
-
-https://mp.weixin.qq.com/s/gZCD8ATxGrpHSZLKpcHfiA
-
-基于元胞自动机模拟新型肺炎病毒的传播和预防
-
-https://mp.weixin.qq.com/s/ZOPncvPpFyLIwH_XChAdbg
-
-基于微分方程和元胞自动机模拟新型肺炎病毒的传播

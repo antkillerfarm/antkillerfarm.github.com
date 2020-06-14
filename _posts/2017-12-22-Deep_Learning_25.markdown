@@ -18,9 +18,9 @@ https://mp.weixin.qq.com/s/A-CVKTz_moaFzTYywSt2gg
 
 张宇 杨强：多任务学习概述
 
-https://mp.weixin.qq.com/s/ZlCI02UdRuFBc-uKqIPE_w
+https://zhuanlan.zhihu.com/p/148132708
 
-深度学习多任务学习综述
+最新《深度多任务学习》综述论文
 
 https://zhuanlan.zhihu.com/p/67524006
 
@@ -133,6 +133,10 @@ https://mp.weixin.qq.com/s/hLJB8yH8V0Ncug77jHU1Bw
 https://zhuanlan.zhihu.com/p/138597214
 
 Multi-task Learning and Beyond: 过去，现在与未来
+
+https://mp.weixin.qq.com/s/gIEJoE9B8mmNx6u6bqLspQ
+
+最新《深度多任务学习》综述论文，22页pdf
 
 # 人脸检测/识别
 

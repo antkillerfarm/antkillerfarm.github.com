@@ -170,11 +170,21 @@ Cerebras在这方面更为极端，它的芯片采用了一整张300mm晶圆，�
 
 ![](/images/img3/nvidia_roadmap.png)
 
+超大芯片主要有两个问题：
+
+- 良品率问题。这个问题可以通过冗余设计来解决。比如Intel的i5、i7实际上都是同一批生产出来的。如果所有核都OK，那就是i7；否则的话，屏蔽不好的核，这就是i5，因此i5常有6核这样的奇怪数字出现。
+
+- 散热问题。
+
 参考：
 
 https://mp.weixin.qq.com/s/Zsmvsy8I_qKZWrONj9Juuw
 
 史上最大芯片正式推出世界最快AI计算机：1/30体积、1/5功耗、3倍性能！谷歌TPU V3在它面前就是“渣”
+
+https://mp.weixin.qq.com/s/nGzDVR9dlF-jL4ZIkss0Ow
+
+这家用一整块硅片做AI芯片的公司成功了？
 
 ## TPU
 

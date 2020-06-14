@@ -6,7 +6,67 @@ category: Nature
 
 # 新冠肺炎
 
-## 国内疫情（续）
+## 历史（续）
+
+在这场争论中，最早推广Pfeifer氏菌疫苗的William Park展示了自我纠错的勇气，与George McCoy一起，成为否定细菌疫苗发声最多的专家。
+
+100年前的条件和科学水平与当前无法相比，但以William Park为代表的美国科学家所展示的勇于纠错、实事求是的精神永远不会过时。
+
+>William Hallock Park，1863～1939，美国医学家。Columbia University博士（1886）。长期供职于卫生部纽约实验室（也就是现在的William Park实验室）。
+
+https://mp.weixin.qq.com/s/dhNuZo0yTI1CR8oH9LYlKA
+
+以史为鉴：回顾1918年美国流感疫苗开发的闹剧
+
+----
+
+pandemics：世界性流行病
+
+epidemics：流行病
+
+quarantine源自拉丁语里的“四十”。由来是当年威尼斯人在瘟疫的时候，让外来船只停40天再下船的操作。
+
+## SARS
+
+https://mp.weixin.qq.com/s/f5YPi3JuGMiB-FwMZK8F1g
+
+非典十三年祭：不说，并不代表遗忘
+
+https://news.yorkbbs.ca/2030923
+
+应对SARS疫情：多伦多的教训
+
+![](/images/img3/sars.jpg)
+
+https://mp.weixin.qq.com/s/Iu5y3AIgp7rgswjH89txJw
+
+哪些城市的新型肺炎疫情可能被低估：人流迁徙大数据+SARS传播路径
+
+https://mp.weixin.qq.com/s/cvIZzSBEg50FKqjf2x7fAg
+
+“小汤山”隔离模式，对武汉肺炎有何启发？
+
+https://mp.weixin.qq.com/s/ME6mAC0RgYsTLrHIz2kJSA
+
+被遗忘的案例：淘大花园往事与现实防控的意义
+
+https://mp.weixin.qq.com/s/kRp7Uw77BWSjFB5QOrydSg
+
+非典，已过去十七年：那些活着的后遗症患者
+
+## 国内疫情
+
+https://github.com/wuhan2020/wuhan2020
+
+新型冠状病毒防疫信息收集平台
+
+https://github.com/2019ncovmemory/nCovMemory
+
+2020新冠肺炎记忆
+
+https://mp.weixin.qq.com/s/9291PPNwxz3KoF-7klwMrA
+
+新型肺炎严重程度升级！已明确会人传人......
 
 https://mp.weixin.qq.com/s/S6oKrc_CbO7ywWiRYiqbfQ
 
@@ -267,51 +327,3 @@ https://mp.weixin.qq.com/s/hG0AO43AicEN1o4GGg463w
 https://mp.weixin.qq.com/s/aawHwJ8IIuHPE7Dc9yn1Ow
 
 从试剂盒到实验室 盘点一下影响确诊人数的客观因素
-
-https://mp.weixin.qq.com/s/zbqdndZTt4B0-v3KfIm5uA
-
-既没新样本，也没实验，如何猜到新冠病毒“喜欢”感染哪些细胞？
-
-https://mp.weixin.qq.com/s/T4GQWgnazMyljsa3Jg0E8Q
-
-一文分清P1、P2、P3、P4实验室四兄弟
-
-https://mp.weixin.qq.com/s/vWpQLlfHFcAPleuuEvJdhw
-
-中国人更易感染新冠肺炎吗？
-
-https://mp.weixin.qq.com/s/zu009F4bS_fcSwYEPdFb-g
-
-全球首次用抗体检测破解新冠传播链条，痊愈病人被证明是新加坡疫情传播者
-
-https://mp.weixin.qq.com/s/jm9vpHxbmpODFPi5phDW1g
-
-这款硬核抗疫游戏火了，20万玩家在线科研拯救世界，美国名校出品，Nature曾点名表扬
-
-https://mp.weixin.qq.com/s/NI2OtzUsRXUMoqfI11YV_A
-
-详解医学顶刊《柳叶刀》最新发表新型冠状病毒研究论文
-
-https://zhuanlan.zhihu.com/p/77352210
-
-“非典”真的是吃野味吃出来的吗？
-
-https://mp.weixin.qq.com/s/4pmzP2s9YZPR0yAX0XrjsQ
-
-流感病毒在衣服袖子和电梯按钮上能活多久？
-
-https://mp.weixin.qq.com/s/OaWBlQVr3DZ6HOMQFs9J3Q
-
-新型冠状病毒是这样被发现的……他们惊呼“这跟鼠疫一个级别！”
-
-https://view.inews.qq.com/a/20200130A08EVN00
-
-控制新发传染病，是以科研为主，还是以人民健康为主？公卫专家评武汉疫情
-
-----
-
-伤寒玛丽”（Typhoid Mary），本名叫玛丽·梅伦（Mary Mallon，1869年9月23日——1938年11月11日），生于爱尔兰，15岁时移民美国。起初，她给人当女佣。后来，她发现自己很有烹调才能，于是转行当了厨师，每月能赚到比做女佣高出很多的薪水。玛丽虽然身体一直健康，却携带伤寒杆菌。后来玛丽相继传染多人，最终被隔离在纽约附近的北兄弟岛（North Brother Island）上的传染病房。
-
-https://www.zhihu.com/question/368287285/answer/989275113
-
-如何看待女子从武汉回河南后至今无症状，其5名亲人患新型肺炎？

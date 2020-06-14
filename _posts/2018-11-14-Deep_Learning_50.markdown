@@ -338,6 +338,10 @@ https://mp.weixin.qq.com/s/7HALWPQN4PD8JMdeu7zCig
 
 深度哈希方法综述
 
+https://mp.weixin.qq.com/s/EsGCPljYNysFkyMHp1IeUQ
+
+深度哈希图像检索综述论文，14页pdf
+
 https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg
 
 深度离散哈希算法，可用于图像检索！

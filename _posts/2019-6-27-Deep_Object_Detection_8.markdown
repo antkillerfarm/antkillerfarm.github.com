@@ -4,11 +4,61 @@ title:  深度目标检测（八）——目标检测进阶
 category: Deep Object Detection 
 ---
 
+# 3D目标检测（续）
+
+https://mp.weixin.qq.com/s/WBiDyIBV9OaKbxUhBml2AA
+
+GS3D(monocular 3D detection)
+
+https://mp.weixin.qq.com/s/G7YNTR8FAsCtkCxLQv1-dQ
+
+Facebook开源3D目标检测框架VoteNet，曾刷新两大数据集最高精度
+
+https://mp.weixin.qq.com/s/s_cAZ--KHvNZq3thrIGx3w
+
+MVX-Net：多模型三位像素网络用于3D目标检测
+
+https://mp.weixin.qq.com/s/ouBxEXcY4s894Sec4ifBtQ
+
+基于YOLO的3D目标检测：YOLO-6D
+
+https://mp.weixin.qq.com/s/yCu5Xx6peDKyU06yBlixpA
+
+首个实时单目3D目标检测算法：RTM3D
+
+https://zhuanlan.zhihu.com/p/101346137
+
+Det3D-首个通用3D目标检测框架
+
+https://zhuanlan.zhihu.com/p/85686290
+
+MLOD：基于鲁棒特征融合方法的多视点三维目标检测
+
+https://mp.weixin.qq.com/s/LN2l67jhivb0hyy6JSLMVA
+
+3D目标检测深度学习方法数据预处理综述
+
 # 目标检测进阶
+
+https://mp.weixin.qq.com/s/1nlOJ7X9ogBHTl1j2adqyg
+
+83页《目标分类和目标检测综述（2D和3D数据）》论文
+
+https://mp.weixin.qq.com/s/HmUhlw90b2aTsoEwBdYbdQ
+
+目标检测二十年技术综述
+
+https://mp.weixin.qq.com/s/S1IrgEqS1Q4xqGl5adNrlg
+
+目标检测近年综述
 
 https://mp.weixin.qq.com/s/7QT7n9MpbXjo5-r-aY2Yvg
 
 深度学习目标检测方法综述
+
+https://mp.weixin.qq.com/s/0B08Mzn8ngL6GoNilrjsGA
+
+基于深度学习目标检测方法一览
 
 https://mp.weixin.qq.com/s/5I9uzGCNFD93L1mzakTl0Q
 
@@ -337,51 +387,3 @@ https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247499933&idx=1&sn=b9fe7d
 https://zhuanlan.zhihu.com/p/84890413
 
 PolarMask：一阶段实例分割新思路
-
-https://mp.weixin.qq.com/s/IRD0iIVXyENlUOyfSbmlBA
-
-目标检测的渐进域自适应
-
-https://mp.weixin.qq.com/s/10EhUj03NGPTnyOCvLqDQw
-
-港大提出视频显著物体检测算法MGA，大幅提升分割精度
-
-https://mp.weixin.qq.com/s/mqB9wtUjMJ1EhINrUUEf9Q
-
-香港中文大学博士陈恺：物体检测中的训练样本采样
-
-https://mp.weixin.qq.com/s/syoJTnh6KMMRUYPQjUnEAg
-
-一个算法同时解决两大CV任务，让目标检测和实例分割互相帮助
-
-https://mp.weixin.qq.com/s/ba5rQp4IVYbVbHq3Ef7mEg
-
-深度学习检测小目标常用方法
-
-https://mp.weixin.qq.com/s/q9qKVpjluzp8OS2GFpZC6g
-
-张兆翔：基于深度学习的物体检测进展和趋势
-
-https://zhuanlan.zhihu.com/p/102817180
-
-目标检测比赛中的trick
-
-https://mp.weixin.qq.com/s/ZQ6KlSFiKhcGVGoS9R_k4w
-
-Anchor free的目标检测进阶版本
-
-https://mp.weixin.qq.com/s/Aq2OJqGnT6z4zoG-6rslkQ
-
-商汤科技提出新弱监督目标检测框架
-
-https://zhuanlan.zhihu.com/p/82371629
-
-Imbalance Problems in Object Detection: A Review
-
-https://zhuanlan.zhihu.com/p/114700229
-
-目标检测中的特征冲突与不对齐问题
-
-https://blog.csdn.net/sanshibayuan/article/details/103642419
-
-单阶段实例分割（Single Shot Instance Segmentation）

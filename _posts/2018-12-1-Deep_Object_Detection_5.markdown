@@ -270,7 +270,7 @@ xYOLO：最新最快的实时目标检测
 
 YOLO系列(v1-v3)作者Joe Redmon宣布不再继续CV方向的研究，引起学术圈一篇哗然。
 
-YOLOv4的一作是Alexey Bochkovskiy。YOLO官方的github正式加入YOLOv4的论文和代码链接，也意味着YOLOv4得到了Joe Redmon的认可，也代表着YOLO的停更与交棒。
+YOLOv4（2020.4）的一作是Alexey Bochkovskiy。YOLO官方的github正式加入YOLOv4的论文和代码链接，也意味着YOLOv4得到了Joe Redmon的认可，也代表着YOLO的停更与交棒。
 
 论文：
 
@@ -279,13 +279,3 @@ YOLOv4的一作是Alexey Bochkovskiy。YOLO官方的github正式加入YOLOv4的�
 代码：
 
 https://github.com/AlexeyAB/darknet
-
-参考：
-
-https://zhuanlan.zhihu.com/p/135909702
-
-大神接棒，YOLOv4来了！
-
-https://mp.weixin.qq.com/s/Ia1ZhAeTgt8anXVd4qxE3A
-
-一张图梳理YOLOv4论文

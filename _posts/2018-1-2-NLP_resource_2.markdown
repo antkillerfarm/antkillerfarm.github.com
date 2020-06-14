@@ -206,6 +206,10 @@ https://mp.weixin.qq.com/s/LrrqGCNBncDr3ZacoIHHBg
 
 一文读懂命名实体识别
 
+https://mp.weixin.qq.com/s/Cpn87G1JBFYWVHmY5Mqp5A
+
+序列标注的方法中有多种标注方式BIO、BIOSE、IOB、BILOU、BMEWO的异同
+
 https://mp.weixin.qq.com/s/PSs0H237ldauSZhlMlNHXA
 
 CMU邢波：基于双向语言模型的生物医学命名实体识别，无标签数据提升NER效果
@@ -403,23 +407,3 @@ https://zhuanlan.zhihu.com/p/135468859
 https://zhuanlan.zhihu.com/p/138282654
 
 2015-2019年摘要模型（Summarization Model）发展综述（二）
-
-## 句法分析
-
-传统方法主要是PCFG （Probabilistic Context-Free Grammar）。
-
-https://blog.csdn.net/continueOo/article/details/72851724
-
-统计自然语言处理（概率上下文无关文法）
-
-http://mp.weixin.qq.com/s?__biz=MzI4MDYzNzg4Mw==&mid=2247483922&idx=1&sn=cffbaf797cc58e303a65a8a2ae370b86
-
-句法分析（syntactic parsing）在NLP领域的应用是怎样的？
-
-http://www.cnblogs.com/CheeseZH/p/5768389.html
-
-依存句法分析与语义依存分析的区别
-
-https://mp.weixin.qq.com/s/r-mndw2BKHdVq-jKLinYZQ
-
-别说还不懂依存句法分析

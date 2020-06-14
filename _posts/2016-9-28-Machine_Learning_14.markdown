@@ -200,6 +200,10 @@ https://mp.weixin.qq.com/s/bYTS9UXH7ecwrq6_WIangw
 
 如何让奇异值分解(SVD)变得不“奇异”？
 
+https://mp.weixin.qq.com/s/54_qLczv8ooqoQQioIeUww
+
+通俗易懂的讲解奇异值分解(SVD)和主成分分析(PCA)
+
 ## 矩阵的秩
 
 一个矩阵A的列（行）秩是A的线性独立的列（行）的极大数。

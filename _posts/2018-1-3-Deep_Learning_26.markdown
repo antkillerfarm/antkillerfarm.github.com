@@ -214,6 +214,10 @@ http://mp.weixin.qq.com/s/n8C80a3B54FhrCe-GhhcDA
 
 文档扫描：深度神经网络在移动端的实践
 
+https://mp.weixin.qq.com/s/NT9dTaTvX8T-NTbtv4OWaQ
+
+最新《自然场景中文本检测与识别》综述论文，26页pdf
+
 https://mp.weixin.qq.com/s/MYhQt9uC16BadiZKWjPTzA
 
 华中科技大学提出多向文本检测方法：基于角定位与区域分割
@@ -373,11 +377,3 @@ https://mp.weixin.qq.com/s/fZN8mtZdB4Fd6gj2dAKURw
 https://mp.weixin.qq.com/s/_GU5y7v8HNDOjEGvWh8Fkw
 
 旷视研究院提出文字检测新方法：像素聚合网络PAN
-
-https://mp.weixin.qq.com/s/bmJCLUlOA364AvK90sXE3Q
-
-用于算术习题自动批改的结构文本精确识别方法
-
-https://zhuanlan.zhihu.com/p/130855699
-
-怎样构建一个端到端的文字识别系统（CTC Loss）

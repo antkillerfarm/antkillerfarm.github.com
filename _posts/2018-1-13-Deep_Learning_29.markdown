@@ -138,6 +138,10 @@ https://mp.weixin.qq.com/s/6kzFlHqJPYzHPhyS2nxLOw
 
 最新《图机器学习》综述论文，38页pdf阐述最新图表示学习进展
 
+https://mp.weixin.qq.com/s/aDQFz_IYrhOmAXGvjbCKXg
+
+图神经网络导论，清华大学刘知远
+
 ## 综述
 
 《A Comprehensive Survey on Graph Neural Networks》

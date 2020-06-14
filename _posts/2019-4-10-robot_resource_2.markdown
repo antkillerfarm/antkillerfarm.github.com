@@ -150,6 +150,10 @@ https://zhuanlan.zhihu.com/p/87416772
 
 自动驾驶中深度学习-综述
 
+https://mp.weixin.qq.com/s/W5f08aPQr0omAsJoXnbJIA
+
+最新《深度学习自动驾驶》技术综述论文，28页pdf
+
 https://mp.weixin.qq.com/s/Z6j3YA_WPxRTRWS7-avE6w
 
 自动驾驶汽车的计算机视觉全面综述论文：问题、数据集和现状

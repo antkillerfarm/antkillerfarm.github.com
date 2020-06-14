@@ -278,6 +278,14 @@ https://mp.weixin.qq.com/s/RvwVhXYNA11Jn1fnqe0XPA
 
 多人种人脸识别
 
+https://mp.weixin.qq.com/s/wQoECc52tlWOYQ4IDfQEZQ
+
+ICRA 2020轨迹预测竞赛冠军的方法总结
+
+https://mp.weixin.qq.com/s/XRqwii0TkYO0qcyQzAIqUg
+
+竞赛总结：天池OGeek算法挑战赛
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA

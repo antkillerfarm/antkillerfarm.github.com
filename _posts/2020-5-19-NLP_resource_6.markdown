@@ -6,6 +6,26 @@ category: resource
 
 # NLP参考资源
 
+https://mp.weixin.qq.com/s/SfFRXlekKkEapbjoSeKEog
+
+自然语言处理中N-Gram模型介绍
+
+https://mp.weixin.qq.com/s/KVONdK44T8JKU5pFB5ydrQ
+
+SQuAD文本理解挑战赛十大模型解读
+
+https://mp.weixin.qq.com/s/Zrxi0AK0oimjKNr5kG_MMA
+
+数据挖掘之父韩家炜：文本语料库的数据挖掘
+
+https://mp.weixin.qq.com/s/Y-_Y8PLBRLE3wn1CPRogsw
+
+重磅！一文彻底读懂智能对话系统！当前研究综述和未来趋势
+
+https://mp.weixin.qq.com/s/FZOgJR5aKl4fV3xCX2zkwA
+
+主题模型如何帮助法律部门提取PDF摘要及可视化
+
 https://mp.weixin.qq.com/s/BdvBV542AZnMw7hnjDSwWw
 
 百度语义计算技术及其应用

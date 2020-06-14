@@ -30,6 +30,20 @@ NCNN是腾讯的作品。
 
 https://github.com/Tencent/ncnn
 
+## TNN
+
+TNN是腾讯新近（2020.6）推出的作品。
+
+代码：
+
+https://github.com/Tencent/TNN
+
+参考：
+
+https://mp.weixin.qq.com/s/6V5ccGLAGcKwM3pi1nonZQ
+
+腾讯优图移动端推理框架TNN开源啦！
+
 ## MACE
 
 MACE是小米的作品。

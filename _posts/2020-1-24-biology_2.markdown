@@ -16,6 +16,44 @@ https://www.zhihu.com/question/357660483/answer/965379804
 
 ----
 
+https://mp.weixin.qq.com/s/dzu6nXrewi3LQm_blhj-xw
+
+放下那把瓜子！向日葵背后是个悲伤的故事（菊科植物的进化）
+
+https://mp.weixin.qq.com/s/NOs-EPRgcafv3zasR-zXCw
+
+什么？“地三鲜”其实是一家人？（茄科植物的进化）
+
+上面两个blog提到了一个有趣的地方：这两科植物都是原产于南美洲，然而它们在北美洲的历史却晚于非洲，原因自然是大陆漂移了。
+
+https://www.zhihu.com/question/66546041/answer/244077246
+
+大陆漂移学说中的“盘古大陆”和“泛大洋”是否太理想化了？
+
+https://www.zhihu.com/question/55297222/answer/143876823
+
+大陆可能经过漂移，再次成为一个整体的大陆吗？
+
+https://mp.weixin.qq.com/s/lPm8S46l0cV5BRbTsUKgjg?
+
+2.5亿年后，超大陆地球会是什么样？
+
+还有物种的反复迁移其实也是很常见的，比如人类曾两次走出非洲，第二批击败了第一批，发展成了现代人。所以元谋人、北京人实际上都不是现代人的祖先。
+
+https://mp.weixin.qq.com/s/VhMrHhL0gMPUob0g8vD_Cw
+
+人类迁徙图鉴
+
+https://mp.weixin.qq.com/s/72eH_vRJMC3IK26eco9JuQ
+
+尼安德特人表示：符合国际ISO标准的绳子，我们四万年前就会编了
+
+https://mp.weixin.qq.com/s/kdL2rLpiHRvsalJIshTH4w
+
+见过1万年前的人类脚印吗？男男女女成群结队的那种
+
+----
+
 **内温性**是指一种生物可以保持其身体新陈代谢有利的温度,并且主要依靠自身产生的热量维持体温,而不是主要依靠环境的热量来维持，典型的代表是大部分哺乳动物和鸟类。
 
 **外温性**是指一种生物主要依靠外部热源的热量来调节体温，它们的体温因此也多随着环境温度变化，蜥蜴、鳄鱼和大部分龟鳖类都是外温性生物。
@@ -51,16 +89,6 @@ https://mp.weixin.qq.com/s/f158ZXGB2xmGIlwM9IG6LQ
 ![](/images/img3/ringspecies.gif)
 
 这是美国加州的一种蜥蜴的分布，可以看出它最早应该发源于加州北部。
-
-----
-
-平塔岛的长脖子大龟已经绝种,“孤独的乔治”是已知的最后一只，1972年在平塔岛上发现。所有让乔治与其他岛上的雌龟交配的努力统统失败。2012年，乔治老死。
-
-乔治死去两年之后的2014年，人们意外地在伊萨贝拉岛的活火山狼山附近发现了上百只乔治的后代！据说曾经有捕鲸船抓的龟太多带不走，又扔回海里去了。显然，可怜的龟爬上岸，抖干身上的水，又为自己开辟出了一片新天地。
-
-https://mp.weixin.qq.com/s/JVn0D_o_RgE7bVqoNHMNiA
-
-达尔文到访过的加拉帕戈斯群岛，现在是什么样子？
 
 ----
 
@@ -189,13 +217,3 @@ https://mp.weixin.qq.com/s/L-yU7Qk6dTnpqubElTn_HA
 >Stanley Miller，1930～2007，美国化学家。UCB本科（1951）+University of Chicago博士（1954）。UCSD教授。美国科学院院士。Harold Urey的学生。
 
 >Harold Clayton Urey，1893~1981，美国化学家、物理学家。University of Montana本科（1917）+UCB博士（1923）。Columbia University、University of Chicago教授。参与曼哈顿计划，负责铀235和铀238分离。诺贝尔化学奖得主（1934）。
-
-Peter Mitchell是少数几个具有大局观的科学家，他意识到生命和其所处的环境是密不可分的，两者必须结合起来加以研究。他发现ATP分子是靠细胞膜两侧的电压差来充电的（1961）。这个理论听上去太反常识了，人们不相信生命竟然会用如此之笨的办法来为细胞活动提供能量。
-
->Peter Mitchell，1920～1992，英国生化学家。Cambridge博士（1951），Edinburgh University教授。诺贝尔化学奖得主（1978）。
-
-不过，在另一些人看来，**生命之所以采取了这种奇怪的方式生产ATP，只能说明一个问题，那就是地球上最早的那个生命就是用的这个方法**。要知道，能量供应对于生命而言实在是太重要了，一刻也不能停，所以此后的所有生命形式只能继续沿用这一方式，没有任何试错的余地，也就无法进化出更合理或者更高效的方法。
-
-换句话说，**地球生命很可能起源于一个具有天然质子浓度梯度的地方**。
-
-1988年，一位名叫麦克尔·拉塞尔（Michael Russell）的美国地质学家在《自然》杂志上发表了一篇简短的读者来信，首次提出“碱性热液喷口”（Alkaline Hydrothermal Vent）才是真正的生命发源地。

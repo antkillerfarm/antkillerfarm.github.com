@@ -208,6 +208,14 @@ https://mp.weixin.qq.com/s/R5jqk1ow_3cKLzM1XlDbUg
 
 告别自注意力，谷歌为Transformer打造新内核Synthesizer
 
+https://mp.weixin.qq.com/s/RrIUxwkRaGxzJo0hIx3SIA
+
+TTSR：用Transformer来实现端到端的超分辨率任务
+
+https://mp.weixin.qq.com/s/N1I4mGKzsHJiAluZL17sDQ
+
+Transformers是一种图神经网络
+
 # 预训练语言模型进化史
 
 ![](/images/img3/BERT.jpg)
@@ -307,6 +315,14 @@ https://mp.weixin.qq.com/s/Jf0uKIjwaBbzNCB7IiTjpA
 https://mp.weixin.qq.com/s/pl27hVrphiFHYqZU85KGFw
 
 预训练模型专辑（二）
+
+https://zhuanlan.zhihu.com/p/145701656
+
+预训练语言模型们(上)
+
+https://zhuanlan.zhihu.com/p/146193549
+
+预训练语言模型们(下)
 
 # BERT
 

@@ -142,6 +142,38 @@ https://mp.weixin.qq.com/s/4UBehc0eikVqcsFP7xL_Zw
 
 # Graph NN+
 
+https://mp.weixin.qq.com/s/TnS4-seRxAs45A6SDSoACg
+
+图神经网络的预训练策略
+
+https://mp.weixin.qq.com/s/Pgz8cnDpX2mgexASnRzfhA
+
+浅谈图神经网络的局限性
+
+https://mp.weixin.qq.com/s/hQ-Fo_aizkcTxvzW0FSIEw
+
+VGAE：利用变分自编码器完成图重构
+
+https://zhuanlan.zhihu.com/p/137223381
+
+推荐系统的图方法
+
+https://mp.weixin.qq.com/s/hFtFjR4EIVN_9g93YjtuoQ
+
+GCMC：GNN在推荐系统中的应用
+
+https://mp.weixin.qq.com/s/u8XAbOautjZTA7ZhdSBaDA
+
+经典重温：图表示学习经典算法node2vec
+
+https://mp.weixin.qq.com/s/soH6jX7_fjq0iBBH-5bMsA
+
+Node2Vec论文+代码笔记
+
+https://mp.weixin.qq.com/s/zxFgW6ofimYQ9wlChTK8cw
+
+Recommender System with GNN
+
 https://mp.weixin.qq.com/s/_vbcLre5HIrOGbAjTzLFjA
 
 动态网络表征学习在推荐领域的创新与实践

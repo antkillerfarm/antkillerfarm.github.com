@@ -176,9 +176,17 @@ http://www.applet-magic.com/fireball.htm
 
 The Expansion of the Fireball of an Explosion
 
+推导主要用到了物理学的等式两边量纲齐次的原则，并不是很复杂。
+
 实测值2.46和理论值符合的非常好。
 
 这里的推导和热力学统计其实没多大关系，算是本人学习玻尔兹曼分布的副产品吧。
+
+参考：
+
+https://mp.weixin.qq.com/s/VOeBV4gufdeV1FQ1ol2whA
+
+爆炸的能量（当量）有多大？
 
 ----
 

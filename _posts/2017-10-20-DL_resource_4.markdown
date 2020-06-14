@@ -316,36 +316,56 @@ https://zhuanlan.zhihu.com/p/143161957
 
 点积 vs. MLP：推荐模型到底用哪个更好？
 
-# 目标检测进阶+
+# 目标检测进阶
+
+https://mp.weixin.qq.com/s/IRD0iIVXyENlUOyfSbmlBA
+
+目标检测的渐进域自适应
+
+https://mp.weixin.qq.com/s/10EhUj03NGPTnyOCvLqDQw
+
+港大提出视频显著物体检测算法MGA，大幅提升分割精度
+
+https://mp.weixin.qq.com/s/mqB9wtUjMJ1EhINrUUEf9Q
+
+香港中文大学博士陈恺：物体检测中的训练样本采样
+
+https://mp.weixin.qq.com/s/syoJTnh6KMMRUYPQjUnEAg
+
+一个算法同时解决两大CV任务，让目标检测和实例分割互相帮助
+
+https://mp.weixin.qq.com/s/ba5rQp4IVYbVbHq3Ef7mEg
+
+深度学习检测小目标常用方法
+
+https://mp.weixin.qq.com/s/q9qKVpjluzp8OS2GFpZC6g
+
+张兆翔：基于深度学习的物体检测进展和趋势
+
+https://zhuanlan.zhihu.com/p/102817180
+
+目标检测比赛中的trick
+
+https://mp.weixin.qq.com/s/ZQ6KlSFiKhcGVGoS9R_k4w
+
+Anchor free的目标检测进阶版本
+
+https://mp.weixin.qq.com/s/Aq2OJqGnT6z4zoG-6rslkQ
+
+商汤科技提出新弱监督目标检测框架
+
+https://zhuanlan.zhihu.com/p/82371629
+
+Imbalance Problems in Object Detection: A Review
+
+https://zhuanlan.zhihu.com/p/114700229
+
+目标检测中的特征冲突与不对齐问题
+
+https://blog.csdn.net/sanshibayuan/article/details/103642419
+
+单阶段实例分割（Single Shot Instance Segmentation）
 
 https://mp.weixin.qq.com/s/vpHrLu8kuEuOp5eehT8Hcw
 
 目标检测正负样本区分策略和平衡策略总结(一)
-
-https://mp.weixin.qq.com/s/kz74yb857gmG1h7MyOWx_Q
-
-目标检测正负样本区分策略和平衡策略总结(二)
-
-https://mp.weixin.qq.com/s/gJuXl6Oh_N_fJgQ9jT268w
-
-旷视研究院提出密集场景检测新方法：一个候选框，多个预测结果
-
-https://mp.weixin.qq.com/s/23KvIquNpCJqeOXtBrkfbA
-
-YOLT:大尺寸图像目标检测的解决方案
-
-https://mp.weixin.qq.com/s/8fxqbSFj9Nkj_iFX8YEjzQ
-
-以点代物，同时执行目标检测和跟踪，这个新方法破解目标跟踪难题
-
-https://mp.weixin.qq.com/s/vQf0TmcM9A56k_FtFvao3g
-
-RDSNet：统一目标检测和实例分割的新型网络
-
-https://mp.weixin.qq.com/s/iPx5K2cSs5jlCt9d9oKpww
-
-VoVNet：实时目标检测的新backbone网络
-
-https://mp.weixin.qq.com/s/FHHIdoXyaU4skX-zyZFQew
-
-已开源！全新水下目标检测算法SWIPENet+IMA框架

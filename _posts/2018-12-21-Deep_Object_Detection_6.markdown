@@ -6,6 +6,16 @@ category: Deep Object Detection
 
 # YOLOv4（续）
 
+参考：
+
+https://zhuanlan.zhihu.com/p/135909702
+
+大神接棒，YOLOv4来了！
+
+https://mp.weixin.qq.com/s/Ia1ZhAeTgt8anXVd4qxE3A
+
+一张图梳理YOLOv4论文
+
 https://mp.weixin.qq.com/s/ugx6CwMTqGR8CT5xpye6vw
 
 对象检测YOLOv4版本来了！
@@ -37,6 +47,20 @@ https://mp.weixin.qq.com/s/5usz-wraHArK6_HcE4RuZw
 https://mp.weixin.qq.com/s/v2x3u3_FELz2lHqBJKR-dg
 
 Yolov3和Yolov4核心内容、代码梳理
+
+# YOLOv5
+
+YOLOv5由Darknet的另一贡献者Ultralytics创建并维护（2010.5）。这是一家总部位于美国的粒子物理和人工智能初创公司。
+
+代码：
+
+https://github.com/ultralytics/yolov5
+
+参考：
+
+https://mp.weixin.qq.com/s/0tNVoD4H6fRGenUJXuJ8yg
+
+YOLOv5来了！基于PyTorch，体积比YOLOv4小巧90%，速度却超2倍
 
 # One-stage vs. Two-stage
 
@@ -249,21 +273,3 @@ CornerNet认为Two-stage目标检测最明显的缺点是在Region Proposal阶�
 ![](/images/img3/CornerNet_2.png)
 
 上图是CornerNet的网络结构。可以看出它主要由两部分组成：
-
-## Hourglass Network
-
-这是CornerNet的骨干部分。详情参见《深度学习（十二）》。
-
-## Bottom-right corners & Top-left Corners Prediction Module
-
-CornerNet堆叠两个Hourglass Network生成Top-left和Bottom-right corners，每一个corners都包括corners Pooling，以及对应的Heatmaps, Embeddings vector和offsets。
-
-![](/images/img3/CornerNet.png)
-
-上图是Heatmaps, Embeddings vector的示意图。
-
-- heatmaps包含C channels（C是目标的类别，没有background channel），每个channel是二进制掩膜，表示相应类别的顶点位置。
-
-- embedding vector使相同目标的两个顶点（左上角和右下角）距离最短。或者也可以反过来说，**两个顶点的embedding vector越相近，则它们越有可能配对。**
-
-- offsets用于调整生成更加紧密的边界定位框。

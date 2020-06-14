@@ -32,6 +32,22 @@ https://www.cnblogs.com/ahu-lichang/
 
 一个数据库+大数据的blog
 
+## 数据库分类
+
+- 键值数据库
+- 文档数据库
+- 关系型数据库
+- 图数据库
+- 列族数据库
+- 时序数据库
+- 搜索引擎
+
+参考：
+
+https://mp.weixin.qq.com/s/SsrDWrcmCHXCb3lZFzJC7w
+
+数据库有哪些分类？应该怎样选择？
+
 ## Sqlite
 
 《Inside Sqlite》是最好的参考书，目前已经有人把它翻译成中文，可以在CSDN上找到。
@@ -337,15 +353,3 @@ https://mp.weixin.qq.com/s/jdPE9WClBuimIHVxJnwwUw
 https://mp.weixin.qq.com/s/DvUBnWBqb0XGnicKUb-iqg
 
 字节跳动自研强一致在线KV&表格存储实践-下篇
-
-# Mysql
-
-## 安装
-
-`sudo apt-get install mysql-server mysql-client mysql-workbench`
-
-其中，mysql-workbench是一个查看mysql的GUI工具。
-
-安装过程中，会提示输入root用户的密码。注意：这里的root是mysql的登录帐号，而不是系统的登录帐号。
-
-·/etc/my.cnf是默认的MySQL配置文件。
