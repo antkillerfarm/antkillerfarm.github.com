@@ -164,6 +164,10 @@ https://mp.weixin.qq.com/s/VgFnREuG_D6lbTvs3JLBHg
 
 集成学习基础通俗入门
 
+https://mp.weixin.qq.com/s/I41c-i-6y-pPdZOeiMM_0Q
+
+通俗讲解集成学习算法！
+
 https://mp.weixin.qq.com/s/2EtQTsumOcHmYFjxOlPApQ
 
 决策树算法及实现

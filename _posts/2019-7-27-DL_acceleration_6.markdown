@@ -236,6 +236,10 @@ https://zhuanlan.zhihu.com/p/24337627
 
 深度压缩之蒸馏模型
 
+https://mp.weixin.qq.com/s/qE1makMUIaFNrWk4nqOxDw
+
+最新《知识蒸馏》2020综述论文，30页pdf，悉尼大学
+
 https://zhuanlan.zhihu.com/p/51563760
 
 知识蒸馏（Knowledge Distillation）最新进展（一）

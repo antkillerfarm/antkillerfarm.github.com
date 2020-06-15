@@ -390,6 +390,8 @@ Wi-Fi简史
 
 最少知识原则（Least Knowledge Principle，LKP）或者迪米特法则（Law of Demeter，LOD）
 
+在架构领域，有两种常见架构方法RUP和TOGAF。
+
 参考：
 
 https://mp.weixin.qq.com/s/9gDGQhzRAL3pj35VAinZbQ

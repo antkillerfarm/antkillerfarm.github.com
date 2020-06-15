@@ -221,3 +221,7 @@ $$d^*=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\underset{w}{\ope
 https://mp.weixin.qq.com/s/IhvdhEnyRI2DRns9EkCy5Q
 
 拉格朗日对偶理论
+
+https://www.zhihu.com/question/58584814
+
+如何通俗地讲解对偶问题？尤其是拉格朗日对偶lagrangian duality？
