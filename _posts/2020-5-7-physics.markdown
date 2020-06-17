@@ -146,6 +146,10 @@ https://mp.weixin.qq.com/s/2n-60v-ocfszU9xhbG4Ofg
 
 达·芬奇和宋代画家告诉你，除了诗和远方，世上还有散射现象（瑞利散射、米氏散射）
 
+https://mp.weixin.qq.com/s/foZaIzpyxiRf9_9O7f6EaQ
+
+985大学首次登上Nature封面（超疏水材料）
+
 ----
 
 $$\pi$$的平方与重力加速度g在数值上极其接近。

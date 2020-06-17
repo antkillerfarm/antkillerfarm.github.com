@@ -457,3 +457,7 @@ Local GAN
 https://mp.weixin.qq.com/s/-rwzlX-WipaIdV6ESOimxw
 
 GAN加持！英伟达发布“山寨”游戏创造器，已完美复现《吃豆人》
+
+https://mp.weixin.qq.com/s/orm5r4XHyotBCpBKqfZ-ng
+
+GANSynth：使用GAN制作音乐

@@ -323,3 +323,7 @@ https://mp.weixin.qq.com/s/23-S5tXTqi2LSe84OoQvvA
 https://mp.weixin.qq.com/s/GaK4iyTNvDsO9nMCXxrWkQ
 
 看完这篇Exception和Error，和面试官扯皮就没问题了
+
+https://mp.weixin.qq.com/s/01fj7l3xsxHVstlkrJ0epw
+
+Java如何实现动态脚本？

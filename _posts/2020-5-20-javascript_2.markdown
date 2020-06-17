@@ -182,6 +182,16 @@ https://mp.weixin.qq.com/s/LRGNOuFwHXALs_lhPyN3Zw
 
 爱奇艺直播WebAssembly优化之路
 
+## 多线程编程
+
+Javascript原则上是单线程的，阻塞和其他异步的需求是通过循环来解决的。当线程需要处理大规模的计算的时候，需要使用Web Worker进行多线程操作。
+
+参考：
+
+https://mp.weixin.qq.com/s/87C9GAFb0Y_i5iPbIL5Hzg
+
+Javascript多线程编程​的前世今生
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/22989691

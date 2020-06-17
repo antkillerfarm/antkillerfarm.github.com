@@ -225,3 +225,7 @@ https://mp.weixin.qq.com/s/EHUKSbtX3owR53lX5qu56Q
 https://mp.weixin.qq.com/s/TSFxYQdjjHuyrIJLM2fdcw
 
 深度文本的表征与聚类在小样本场景中的探索
+
+https://mp.weixin.qq.com/s/vMfZW0P4hfHd5aI6lqF3Sw
+
+如何有效提升中文NER性能？词汇增强方法总结

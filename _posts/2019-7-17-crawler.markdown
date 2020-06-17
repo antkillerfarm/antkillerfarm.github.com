@@ -378,7 +378,7 @@ Wi-Fi简史
 
 开闭原则（Open Closed Principle，OCP）
 
-单一职责原则（Single Responsibility Principle, SRP）
+单一职责原则（Single Responsibility Principle，SRP）
 
 里氏代换原则（Liskov Substitution Principle，LSP）
 

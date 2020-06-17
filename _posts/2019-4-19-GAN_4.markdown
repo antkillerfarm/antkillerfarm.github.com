@@ -280,6 +280,10 @@ https://mp.weixin.qq.com/s/iFuZ8IqyrKGTxJ2ChU6NJA
 
 CycleGAN之美：赛马翻译成斑马背后的直觉和数学
 
+https://mp.weixin.qq.com/s/zLsIhb-KhchiWlJLnMO7Wg
+
+循环生成网络CycleGan原理介绍
+
 # StarGAN
 
 论文：

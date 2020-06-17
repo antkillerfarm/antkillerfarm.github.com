@@ -353,3 +353,7 @@ https://mp.weixin.qq.com/s/jdPE9WClBuimIHVxJnwwUw
 https://mp.weixin.qq.com/s/DvUBnWBqb0XGnicKUb-iqg
 
 字节跳动自研强一致在线KV&表格存储实践-下篇
+
+https://mp.weixin.qq.com/s/oV5F_K2mmE_kK77uEZSjLg
+
+字节跳动分布式表格存储系统的演进

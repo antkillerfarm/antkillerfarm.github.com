@@ -74,6 +74,10 @@ https://mp.weixin.qq.com/s/gXqB7JJyIEJa74McbYcrzg
 
 只有正样本和无标记数据的半监督学习（PU Learning）
 
+https://mp.weixin.qq.com/s/kGProJmrf43-2O48PMPM5g
+
+正样本和无标签学习（PU Learning）：使用机器学习恢复数据的标签
+
 # 深度信息检索+
 
 https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
@@ -279,3 +283,7 @@ https://mp.weixin.qq.com/s/81yI3xrDJJzy3MTGyqtUvw
 https://mp.weixin.qq.com/s/1Z8EN9lWy5r0JIu8u61Rig
 
 从注意力机制出发，上海交大提出实时语义分割新网络LRNNet
+
+https://mp.weixin.qq.com/s/Zy9mCZOL8AneNjbvFpR3jg
+
+即插即用！将双边超分辨率用于语义分割网络，提升图像分辨率的有效策略
