@@ -425,3 +425,7 @@ AI芯片体系架构和软件专题报告会2020论文下载
 https://mp.weixin.qq.com/s/cBVio3W64np8fXwUQs2wIw
 
 机器学习如何用于芯片系统设计？Jeff Dean推荐Google最新《机器学习系统芯片设计》70页ppt为你讲解
+
+https://mp.weixin.qq.com/s/WZQDmyjGgkGMpLjVP5jKlw
+
+Graphcore

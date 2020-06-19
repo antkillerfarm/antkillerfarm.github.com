@@ -6,13 +6,31 @@ category: AI
 
 # Machine Learning之Python篇
 
-## PyFlux
+## JAX
 
-PyFlux是Python中为处理时间序列问题而创建的开源库。该库有一系列极好的时间序列模型，包括但不限于ARIMA、GARCH和VAR模型。
+一款由谷歌团队打造（非官方发布），用于从纯Python和Numpy机器学习程序中生成高性能加速器（accelerator）代码，且特定于域的跟踪JIT编译器。
 
-官网：
+代码：
 
-https://pyflux.readthedocs.io/en/latest/index.html
+https://github.com/google/jax
+
+参考：
+
+https://mp.weixin.qq.com/s/IMMdbF33ZHEz7N_XwgIhHA
+
+试试谷歌这个新工具：说不定比TensorFlow还好用！
+
+https://mp.weixin.qq.com/s/tZ3yWQ9--l9e81UqoUoWIQ
+
+要替代TensorFlow？谷歌开源机器学习库JAX
+
+https://mp.weixin.qq.com/s/eaYwiV2LZNRwzPEeOA1XFg
+
+新星JAX ：双挑TensorFlow和PyTorch！有望担纲Google主要科学计算库和神经网络库
+
+https://mp.weixin.qq.com/s/NhMbr_niHjSaqh2azuSaog
+
+只知道TF和PyTorch还不够，快来看看怎么从PyTorch转向自动微分神器JAX
 
 ## ImagePy
 
@@ -407,27 +425,3 @@ https://mp.weixin.qq.com/s/Ij9L-swxx6gmaEH4YQb0tQ
 https://mp.weixin.qq.com/s/5YHyM7gILvCItScvYYoANQ
 
 Python实现文字转语音功能
-
-https://mp.weixin.qq.com/s/-s5K8gl4Xdjh_1xgTn9PZg
-
-维基百科中的数据科学：手把手教你用Python读懂全球最大百科全书
-
-https://mp.weixin.qq.com/s/LiilfmvA5YUaY3QUQD6odA
-
-如何用Python将数据预处理速度提升2至6倍？
-
-https://mp.weixin.qq.com/s/4s7lDKlQjV1mUoVv558Y7Q
-
-面向云数据库，超低延迟文件系统PolarFS诞生了
-
-https://mp.weixin.qq.com/s/VfmudolvWzQN4ghgnI2rZA
-
-机器学习中Python库的3个简单实践——你的图片将由你来创造
-
-https://mp.weixin.qq.com/s/goxciguoxcamTo2WyUd1Lg
-
-大吉大利，今晚如何用Python解锁“吃鸡”的正确姿势
-
-https://mp.weixin.qq.com/s/dQ75O2h1orGzKcaCSDWshQ
-
-自然语言处理是如何工作的？一步步教你构建NLP流水线

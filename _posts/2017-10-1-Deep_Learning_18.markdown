@@ -78,6 +78,10 @@ https://mp.weixin.qq.com/s/kGProJmrf43-2O48PMPM5g
 
 正样本和无标签学习（PU Learning）：使用机器学习恢复数据的标签
 
+https://mp.weixin.qq.com/s/vm1p3YceIC0nd191xsktfg
+
+自监督学习的视觉语言建模，115页ppt讲述多模态预训练进展
+
 # 深度信息检索+
 
 https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ

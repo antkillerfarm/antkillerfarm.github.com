@@ -4,7 +4,55 @@ title:  机器学习（三十三）——机器学习的算法体系&相关术�
 category: ML 
 ---
 
-# t-SNE（续）
+# t-SNE
+
+## t-SNE（续）
+
+![](/images/img2/t-SNE.png)
+
+![](/images/img2/Sammon.png)
+
+上图分别是使用t-SNE和Sammon mapping可视化MNIST数据集后的效果图。从中可以看出t-SNE图中，数据更成团状，可视化效果更好。
+
+t-SNE的不足主要有四个:
+
+>主要用于可视化，很难用于其他目的。比如测试集合降维，因为他没有显式的预估部分，不能在测试集合直接降维；比如降维到10维，因为t分布偏重长尾，1个自由度的t分布很难保存好局部特征，可能需要设置成更高的自由度。
+
+>t-SNE倾向于保存局部特征，对于本征维数(intrinsic dimensionality)本身就很高的数据集，是不可能完整的映射到2-3维的空间
+
+>t-SNE没有唯一最优解，且没有预估部分。如果想要做预估，可以考虑降维之后，再构建一个回归方程之类的模型去做。但是要注意，t-sne中距离本身是没有意义，都是概率分布问题。
+
+>训练太慢。有很多基于树的算法在t-sne上做一些改进。
+
+## FastTSNE
+
+该工具包提供了两种快速实现tSNE的方法：
+
+Barnes-hut tsne：源于Multicore tSNE，适用于小规模数据集，时间复杂度为O(nlogn)。
+
+Fit-SNE：源于Fit-SNE的C++实现方法，适用于样本量在10,000以上的大规模数据集，时间复杂度为O(n)。
+
+代码：
+
+https://github.com/pavlin-policar/fastTSNE
+
+## 参考
+
+https://www.zhihu.com/question/52022955
+
+t-sne数据可视化算法的作用是啥？为了降维还是认识数据？
+
+https://mp.weixin.qq.com/s/Rs9ri6Xs5R-yitrda8pJMg
+
+详解可视化利器t-SNE算法：数无形时少直觉
+
+https://mp.weixin.qq.com/s/_DXMlNZHVKm2jMnLGQFM_Q
+
+还在用PCA降维？快学学大牛最爱的t-SNE算法吧
+
+http://www.datakit.cn/blog/2017/02/05/t_sne_full.html
+
+t-SNE完整笔记
 
 https://yq.aliyun.com/articles/70733
 
@@ -272,74 +320,6 @@ https://mp.weixin.qq.com/s/rHkfb1pZhtzVjzYiTRB4WA
 https://mp.weixin.qq.com/s/4uaaeZSXavbVuU8d1AZA6Q
 
 浅谈交替方向乘子法(ADMM)的经典使用
-
-https://mp.weixin.qq.com/s/E3Iq8YpIZRZOk7SP-cu1xQ
-
-如何找到全局最小值？先让局部极小值消失吧
-
-https://mp.weixin.qq.com/s/el1E-61YjLkhFd6AgFUc7w
-
-拳打Adam，脚踢SGD：北大提出全新优化算法AdaBound
-
-https://mp.weixin.qq.com/s/TfrJ-rep-TIg345SXursbw
-
-为了围剿SGD大家这些年想过的那十几招
-
-https://mp.weixin.qq.com/s/9laU3EW0B64rwVb7so1BEA
-
-机器学习中的最优化算法总结
-
-https://mp.weixin.qq.com/s/mylRodVvvzI3e0-9-fEzTw
-
-深度研究自然梯度优化，从入门到放弃
-
-https://mp.weixin.qq.com/s/P0qzzyVQke_c-RUF0Faitw
-
-怎么判断一个优化问题是凸优化还是非凸优化？
-
-https://mp.weixin.qq.com/s/scGkuMJ4lZULhmK69vWYpA
-
-中国博士生提出最先进AI训练优化器RAdam，收敛快精度高，网友亲测：Adam可以退休了
-
-https://mp.weixin.qq.com/s/010zXPYu36oLOoSkaA8YMg
-
-RAdam优化器又进化：与LookAhead强强结合，性能更优速度更快（Ranger）
-
-https://mp.weixin.qq.com/s/g5mPfqxtEQBUvJQr0ORVBg
-
-可以丢掉SGD和Adam了，新的深度学习优化器Ranger：RAdam + LookAhead强强结合
-
-https://mp.weixin.qq.com/s/OtmMKR0OWytcUgbCMrSc-A
-
-不是我们喜新厌旧，而是RAdam确实是好用，新的State of the Art优化器RAdam
-
-https://www.zhihu.com/question/305694880
-
-为什么K-FAC这种二阶优化方法没有得到广泛的应用？
-
-https://mp.weixin.qq.com/s/etv5Ucyo2tiu64ZtUygz0A
-
-离线优化器
-
-https://mp.weixin.qq.com/s/zy5ALOInXHIh8LHmihu1UA
-
-在线优化器之FOBOS
-
-https://mp.weixin.qq.com/s/7UhB8mSXQUfOPbDKqqg4rg
-
-非光滑优化的光滑化
-
-https://zhuanlan.zhihu.com/p/92230537
-
-求解稀疏优化问题——半光滑牛顿方法
-
-https://mp.weixin.qq.com/s/aLOd_W3juLuWaQeTdzAPjg
-
-数值优化（1）——引入，线搜索：步长选取条件
-
-https://zhuanlan.zhihu.com/p/68748778
-
-指数移动平均（EMA）的原理
 
 # 热传导推荐算法
 

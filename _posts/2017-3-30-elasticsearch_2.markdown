@@ -301,6 +301,10 @@ https://mp.weixin.qq.com/s/l0AL89M0xPbWMFj6U7yYZw
 
 消息中间件选型分析：从Kafka与RabbitMQ的对比看全局
 
+https://mp.weixin.qq.com/s/SaXRwTUaMlC64Z6qHvXiqg
+
+非常强悍的RabbitMQ总结
+
 https://mp.weixin.qq.com/s/oKBUb2IbG_h1xDhL42TbuQ
 
 360开源又一力作——KafkaBridge：让操作kafka更简单！
@@ -406,27 +410,3 @@ https://zhuanlan.zhihu.com/p/53260242
 https://mp.weixin.qq.com/s/FJA8Tctq_p4Mj-KgNn_OGg
 
 为什么让GAN一家独大？Facebook提出非对抗式生成方法GLANN
-
-https://mp.weixin.qq.com/s/xr9fDv9DFkwi2ImV4RZAHg
-
-换个角度看GAN：另一种损失函数
-
-https://mp.weixin.qq.com/s/U1rrPfJDLgXHRj__XwrMZw
-
-只有条件GAN才能稳定训练？对抗+自监督的无监督方法了解一下
-
-https://mp.weixin.qq.com/s/xHKQlFFkBQLBg2GdZuGPSw
-
-提升GAN训练的技巧汇总
-
-https://mp.weixin.qq.com/s/ctB90bNhaMYvbLE4yketHQ
-
-一文读懂对抗机器学习Universal adversarial perturbations
-
-https://mp.weixin.qq.com/s/zRNtEKS2dKxyQU4VZm6Mwg
-
-用GANs来自动生成音乐
-
-https://mp.weixin.qq.com/s/zwzl-Tel3Avc4Dm7L5FS5A
-
-NLP中的对抗训练+PyTorch实现

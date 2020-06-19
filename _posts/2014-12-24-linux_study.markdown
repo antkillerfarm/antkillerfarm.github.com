@@ -247,6 +247,12 @@ https://mp.weixin.qq.com/s/2RhYd8b38pa_vAx_7DpQhQ
 
 Tornado原理浅析及应用场景探讨
 
+## 参考
+
+https://www.zhihu.com/question/19732473/answer/241673170
+
+怎样理解阻塞非阻塞与同步异步的区别？
+
 # 启动脚本
 
 Linux启动时，运行一个叫做init的程序，然后由它来启动后面的任务，包括多用户环境，网络等。

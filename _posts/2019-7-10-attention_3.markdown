@@ -232,54 +232,6 @@ https://zhuanlan.zhihu.com/p/115014536
 
 全面总结！PTMs：NLP预训练模型
 
-https://mp.weixin.qq.com/s/1ixYjJN-bJPGrr7v-4d7Rw
-
-预训练语言模型的前世今生：萌芽时代
-
-https://mp.weixin.qq.com/s/g4jEVU3BkRem-DYXCn5eFQ
-
-预训练语言模型的前世今生：风起云涌
-
-https://mp.weixin.qq.com/s/U8f0cXoPrN32PM3944Oqkg
-
-预训练语言模型的前世今生：十分钟了解文本分类通用训练技巧
-
-https://mp.weixin.qq.com/s/uAJ_05g0Zo33mgygTnow1Q
-
-预训练语言模型的前世今生：银色独角兽GPT家族
-
-https://mp.weixin.qq.com/s/2_MXIEk5-JP5KwsV6al9XQ
-
-预训练语言模型的前世今生：BERT，开启NLP新时代的王者
-
-https://mp.weixin.qq.com/s/yRn1AELGK3jgfOaaxIo67Q
-
-预训练语言模型的前世今生：Huggingface简介及BERT代码浅析
-
-https://mp.weixin.qq.com/s/sMocYFvESXoBGtX_NWmQkQ
-
-预训练语言模型的前世今生：百度出品ERNIE合集，问国产预训练语言模型哪家强
-
-https://mp.weixin.qq.com/s/uOGNoePkwfeixTtI4q4t8Q
-
-预训练语言模型的前世今生：MT-DNN(KD) : 预训练、多任务、知识蒸馏的结合
-
-https://mp.weixin.qq.com/s/-fQ9VlaOjssDufcZuCe91w
-
-预训练语言模型的前世今生：结合HuggingFace代码浅析Transformer
-
-https://mp.weixin.qq.com/s/MXZ3ygSqwyXqOH1PrWEGqg
-
-预训练语言模型的前世今生：Transformer-XL超长上下文注意力模型
-
-https://mp.weixin.qq.com/s/6XX2tkp2dbIEKqumnIQWbg
-
-预训练语言模型的前世今生：跨语种语言模型
-
-https://mp.weixin.qq.com/s/U1O3j4FBRdiwlRjjlzbWJQ
-
-预训练语言模型的前世今生：XLNet：公平一战！多项任务效果超越BERT
-
 https://mp.weixin.qq.com/s/WDXGCC_MPK_sBCj4Bx6EDw
 
 从静态到动态，词表征近几十年发展回顾
@@ -323,6 +275,60 @@ https://zhuanlan.zhihu.com/p/145701656
 https://zhuanlan.zhihu.com/p/146193549
 
 预训练语言模型们(下)
+
+## 预训练语言模型的前世今生
+
+https://mp.weixin.qq.com/s/1ixYjJN-bJPGrr7v-4d7Rw
+
+萌芽时代
+
+https://mp.weixin.qq.com/s/g4jEVU3BkRem-DYXCn5eFQ
+
+风起云涌
+
+https://mp.weixin.qq.com/s/U8f0cXoPrN32PM3944Oqkg
+
+十分钟了解文本分类通用训练技巧
+
+https://mp.weixin.qq.com/s/uAJ_05g0Zo33mgygTnow1Q
+
+银色独角兽GPT家族
+
+https://mp.weixin.qq.com/s/2_MXIEk5-JP5KwsV6al9XQ
+
+BERT，开启NLP新时代的王者
+
+https://mp.weixin.qq.com/s/yRn1AELGK3jgfOaaxIo67Q
+
+Huggingface简介及BERT代码浅析
+
+https://mp.weixin.qq.com/s/sMocYFvESXoBGtX_NWmQkQ
+
+百度出品ERNIE合集，问国产预训练语言模型哪家强
+
+https://mp.weixin.qq.com/s/uOGNoePkwfeixTtI4q4t8Q
+
+MT-DNN(KD) : 预训练、多任务、知识蒸馏的结合
+
+https://mp.weixin.qq.com/s/-fQ9VlaOjssDufcZuCe91w
+
+结合HuggingFace代码浅析Transformer
+
+https://mp.weixin.qq.com/s/MXZ3ygSqwyXqOH1PrWEGqg
+
+Transformer-XL超长上下文注意力模型
+
+https://mp.weixin.qq.com/s/6XX2tkp2dbIEKqumnIQWbg
+
+跨语种语言模型
+
+https://mp.weixin.qq.com/s/U1O3j4FBRdiwlRjjlzbWJQ
+
+XLNet：公平一战！多项任务效果超越BERT
+
+https://mp.weixin.qq.com/s/f6RwSHz3Nc68oipHdYDVTw
+
+RoBERTa: 捍卫BERT的尊严
 
 # BERT
 

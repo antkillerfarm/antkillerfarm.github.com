@@ -409,3 +409,7 @@ https://mp.weixin.qq.com/s/6oyETsNIEdP9gz0U-UjNOA
 https://mp.weixin.qq.com/s/X6xjNUMqb4en55Yd1pdOYw
 
 外卖送达时间预估，让每位用户吃上一口热乎饭的算法
+
+https://mp.weixin.qq.com/s/mcETNOICbabRRq9BBdL4zw
+
+深度召回在招聘推荐中的挑战和实践

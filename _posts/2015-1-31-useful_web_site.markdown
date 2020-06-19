@@ -424,3 +424,31 @@ http://ftp.gnome.org/pub/GNOME/sources/
 ## 杂项
 
 向后兼容处理的是一个以较早版本编译的程序集是否可以在较新版本上执行的问题。向前兼容处理的是一个以较新版本编译的程序集是否可以在较老版本上执行的问题。
+
+# 化学+
+
+## 化学工业
+
+https://wallstreetcn.com/articles/250536
+
+巴斯夫原本是它小弟，德国化工产业的代名词：揭秘史前化工巨兽 IG 法本
+
+http://blog.sina.com.cn/s/blog_52f526870102w7xo.html
+
+历经百年兴衰 德国化工三巨头为何屹立不倒
+
+http://www.weixinso.com/document/KPyZBb.html
+
+陶氏化学发展史
+
+http://www.pnchina.com/cn/Detail.aspx?id=1361250587
+
+业界经典：陶氏化学Styrofoam之75年
+
+https://new.qq.com/omn/20180819/20180819A011JT.html
+
+起于硝烟的化工帝国：杜邦是怎么与化工行业同呼吸共命运的？
+
+http://www.qdaily.com/articles/18872.html
+
+杜邦要合并了，过去一百年，这家公司的发明都改变了些什么？

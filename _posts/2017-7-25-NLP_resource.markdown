@@ -204,6 +204,10 @@ https://mp.weixin.qq.com/s/knsAHKOvZ-ht7qS0tt-vvg
 
 新手入门：Kaggle NLP比赛总结
 
+https://mp.weixin.qq.com/s/yCtI7lYzMa4nJXGQihqU2Q
+
+NLP中的文本分析和特征工程
+
 ## 分词
 
 https://mp.weixin.qq.com/s/Xy_jaOex72pLe4wwieKeUg
@@ -396,20 +400,6 @@ https://mp.weixin.qq.com/s/8xGPwxLZX0ZJ586fZogkpg
 
 NAACL2019-使用感知句法词表示的句法增强神经机器翻译
 
-## 文本分类
+https://mp.weixin.qq.com/s/OkjYWxWB0C3qnWTe6vSQVA
 
-http://www.jianshu.com/p/0273c377c34e
-
-机器学习算法在文本分类中的应用综述
-
-https://mp.weixin.qq.com/s/xIkYLncxmLKqLQqeq-XxAw
-
-深度学习文本分类方法综述
-
-https://mp.weixin.qq.com/s/sJnDrGe7U_1XtJ8sYIcWiw
-
-深度文本分类综述
-
-https://mp.weixin.qq.com/s/ylRJrP-wnnelX5uUR0fukw
-
-一文综述经典的深度文本分类方法
+ST-NMT：软目标模板助力神经机器翻译

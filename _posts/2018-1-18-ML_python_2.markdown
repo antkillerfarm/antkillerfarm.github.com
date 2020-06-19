@@ -392,6 +392,10 @@ https://mp.weixin.qq.com/s/R6NclZO1MqjScRlLJ6Vefw
 
 Python地图可视化三大秘密武器（bokeh、basemap、geopandas）
 
+https://mp.weixin.qq.com/s/XKjo5Dj7bpIlBtxkbozekA
+
+掌握这几点，轻松玩转Bokeh可视化
+
 ## Chartify
 
 Chartify在Bokeh的基础上又封装了一层，提供了更友好的API。
@@ -482,28 +486,10 @@ mlpy是一个开源的ML库。只是它最近的一次更新，已经是2012年�
 
 http://mlpy.sourceforge.net
 
-## JAX
+## PyFlux
 
-一款由谷歌团队打造（非官方发布），用于从纯Python和Numpy机器学习程序中生成高性能加速器（accelerator）代码，且特定于域的跟踪JIT编译器。
+PyFlux是Python中为处理时间序列问题而创建的开源库。该库有一系列极好的时间序列模型，包括但不限于ARIMA、GARCH和VAR模型。
 
-代码：
+官网：
 
-https://github.com/google/jax
-
-参考：
-
-https://mp.weixin.qq.com/s/IMMdbF33ZHEz7N_XwgIhHA
-
-试试谷歌这个新工具：说不定比TensorFlow还好用！
-
-https://mp.weixin.qq.com/s/tZ3yWQ9--l9e81UqoUoWIQ
-
-要替代TensorFlow？谷歌开源机器学习库JAX
-
-https://mp.weixin.qq.com/s/eaYwiV2LZNRwzPEeOA1XFg
-
-新星JAX ：双挑TensorFlow和PyTorch！有望担纲Google主要科学计算库和神经网络库
-
-https://mp.weixin.qq.com/s/NhMbr_niHjSaqh2azuSaog
-
-只知道TF和PyTorch还不够，快来看看怎么从PyTorch转向自动微分神器JAX
+https://pyflux.readthedocs.io/en/latest/index.html

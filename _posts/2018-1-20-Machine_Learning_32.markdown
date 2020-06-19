@@ -4,7 +4,69 @@ title:  机器学习（三十二）——t-SNE
 category: ML 
 ---
 
-# CRF（续）
+# CRF
+
+## CRF的训练和推断（续）
+
+- 学习问题
+
+给定训练数据集X和对应的标记序列Y，K个特征函数$$f_k(x,y)$$，需要学习linear-CRF的模型参数$$w_k$$和条件概率$$P_w(y\mid x)$$。（梯度下降法，牛顿法，拟牛顿法，迭代尺度法）
+
+CRF/MEMM由于是判别模型，其训练过程和普通分类问题一致，没有特别之处。
+
+CRF/MEMM的推断仍然使用Viterbi算法，选择最大概率路径即可。区别仅在于两者计算概率的公式不同，这在上文已有讨论，不再赘述。
+
+## 相关工具
+
+http://www.chokkan.org/software/crfsuite/
+
+CRFsuite: A fast implementation of Conditional Random Fields (CRFs)
+
+https://github.com/scrapinghub/python-crfsuite
+
+A python binding for crfsuite
+
+http://taku910.github.io/crfpp/
+
+CRF++: Yet Another CRF toolkit
+
+https://zhuanlan.zhihu.com/p/78006020
+
+NCRF++学习笔记
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/35969159
+
+如何轻松愉快的理解条件随机场（CRF）？
+
+https://www.cnblogs.com/en-heng/p/6214023.html
+
+条件随机场CRF
+
+https://mp.weixin.qq.com/s/1rx_R1BGRVAIDqKixNLMQA
+
+终极入门 马尔可夫网络 (Markov Networks)——概率图模型
+
+https://mp.weixin.qq.com/s/GXbFxlExDtjtQe-OPwfokA
+
+一文轻松搞懂-条件随机场CRF
+
+https://mp.weixin.qq.com/s/0FIns5Xt2G1seqFbpGvzTQ
+
+长文详解基于并行计算的条件随机场
+
+https://blog.csdn.net/liuyuemaicha/article/details/73147548
+
+从PGM到HMM再到CRF
+
+https://mp.weixin.qq.com/s/4r4k6JIj4xvHHmt3QqmbuA
+
+以RNN形式做CRF后处理—CRFasRNN
+
+https://mp.weixin.qq.com/s/JsqhwwJ7wnNcgOuAR6ekxw
+
+理解条件随机场
 
 https://mp.weixin.qq.com/s/79M6ehrQTiUc0l_sO9fUqA
 
@@ -197,49 +259,3 @@ t-sne的有效性，也可以从上图中看到：横轴表示距离，纵轴表
 >对于不相似的点，用一个较小的距离会产生较大的梯度来让这些点排斥开来。
 
 >这种排斥又不会无限大(梯度中分母)，避免不相似的点距离太远。
-
-![](/images/img2/t-SNE.png)
-
-![](/images/img2/Sammon.png)
-
-上图分别是使用t-SNE和Sammon mapping可视化MNIST数据集后的效果图。从中可以看出t-SNE图中，数据更成团状，可视化效果更好。
-
-t-SNE的不足主要有四个:
-
->主要用于可视化，很难用于其他目的。比如测试集合降维，因为他没有显式的预估部分，不能在测试集合直接降维；比如降维到10维，因为t分布偏重长尾，1个自由度的t分布很难保存好局部特征，可能需要设置成更高的自由度。
-
->t-SNE倾向于保存局部特征，对于本征维数(intrinsic dimensionality)本身就很高的数据集，是不可能完整的映射到2-3维的空间
-
->t-SNE没有唯一最优解，且没有预估部分。如果想要做预估，可以考虑降维之后，再构建一个回归方程之类的模型去做。但是要注意，t-sne中距离本身是没有意义，都是概率分布问题。
-
->训练太慢。有很多基于树的算法在t-sne上做一些改进。
-
-## FastTSNE
-
-该工具包提供了两种快速实现tSNE的方法：
-
-Barnes-hut tsne：源于Multicore tSNE，适用于小规模数据集，时间复杂度为O(nlogn)。
-
-Fit-SNE：源于Fit-SNE的C++实现方法，适用于样本量在10,000以上的大规模数据集，时间复杂度为O(n)。
-
-代码：
-
-https://github.com/pavlin-policar/fastTSNE
-
-## 参考
-
-https://www.zhihu.com/question/52022955
-
-t-sne数据可视化算法的作用是啥？为了降维还是认识数据？
-
-https://mp.weixin.qq.com/s/Rs9ri6Xs5R-yitrda8pJMg
-
-详解可视化利器t-SNE算法：数无形时少直觉
-
-https://mp.weixin.qq.com/s/_DXMlNZHVKm2jMnLGQFM_Q
-
-还在用PCA降维？快学学大牛最爱的t-SNE算法吧
-
-http://www.datakit.cn/blog/2017/02/05/t_sne_full.html
-
-t-SNE完整笔记

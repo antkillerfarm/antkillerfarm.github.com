@@ -4,7 +4,15 @@ title:  机器学习（三十一）——MRF, CRF
 category: ML 
 ---
 
-# HMM（续）
+# HMM
+
+## 前向算法（续）
+
+穷举法的计算量太大，不适用于计算较长的马尔可夫链。但是我们可以观察一下穷举法的计算步骤。
+
+![](/images/article/forward_algorithm.png)
+
+上图是某骰子序列的穷举计算过程，可以看出第3步计算的概率和公式的某些项，实际上在之前的步骤中已经计算出来了，前向递推的计算量并没有想象中的大。
 
 ## Baum–Welch算法
 
@@ -222,58 +230,12 @@ $$P(I|O)=\frac{\prod_{t=1}^n\exp(\sum_a \lambda_a f_a(i,o))}{Z(i,o)}$$
 
 ## CRF的训练和推断
 
-CRF/MEMM由于是判别模型，其训练过程和普通分类问题一致，没有特别之处。
+与HMM类似，CRF也有三个基本问题：
 
-CRF/MEMM的推断仍然使用Viterbi算法，选择最大概率路径即可。区别仅在于两者计算概率的公式不同，这在上文已有讨论，不再赘述。
+- 计算问题
 
-## 相关工具
+给定条件随机场$$P(Y\mid X)$$，输入序列x和输出序列y，计算条件概率和以及对应的期望。（前向后向算法）
 
-http://www.chokkan.org/software/crfsuite/
+- 解码问题
 
-CRFsuite: A fast implementation of Conditional Random Fields (CRFs)
-
-https://github.com/scrapinghub/python-crfsuite
-
-A python binding for crfsuite
-
-http://taku910.github.io/crfpp/
-
-CRF++: Yet Another CRF toolkit
-
-https://zhuanlan.zhihu.com/p/78006020
-
-NCRF++学习笔记
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/35969159
-
-如何轻松愉快的理解条件随机场（CRF）？
-
-https://www.cnblogs.com/en-heng/p/6214023.html
-
-条件随机场CRF
-
-https://mp.weixin.qq.com/s/1rx_R1BGRVAIDqKixNLMQA
-
-终极入门 马尔可夫网络 (Markov Networks)——概率图模型
-
-https://mp.weixin.qq.com/s/GXbFxlExDtjtQe-OPwfokA
-
-一文轻松搞懂-条件随机场CRF
-
-https://mp.weixin.qq.com/s/0FIns5Xt2G1seqFbpGvzTQ
-
-长文详解基于并行计算的条件随机场
-
-https://blog.csdn.net/liuyuemaicha/article/details/73147548
-
-从PGM到HMM再到CRF
-
-https://mp.weixin.qq.com/s/4r4k6JIj4xvHHmt3QqmbuA
-
-以RNN形式做CRF后处理—CRFasRNN
-
-https://mp.weixin.qq.com/s/JsqhwwJ7wnNcgOuAR6ekxw
-
-理解条件随机场
+给定条件随机场$$P(Y\mid X)$$和输入序列x，求条件概率最大的输出序列y，即对观测序列进行标注。（维特比算法）

@@ -286,6 +286,10 @@ https://mp.weixin.qq.com/s/wlk9UlgBze1QL9AlTKXEDg
 
 基于知识图谱嵌入的链接预测综述，43页pdf
 
+https://mp.weixin.qq.com/s/BtdUEjJsqqmkNYHz8LHgQw
+
+基于Knowledge Embedding的多跳知识图谱问答
+
 # AI工具+
 
 https://mp.weixin.qq.com/s/3eoN0YHI84oomdTZO6TrvQ

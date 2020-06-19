@@ -122,6 +122,14 @@ https://mp.weixin.qq.com/s/LpUj_nyxK0_V2edcucJ2iQ
 
 概率图模型笔记（PART I）
 
+https://mp.weixin.qq.com/s/gOgH-tsQTp7ijOWqpAJi_Q
+
+概率图模型笔记（PART II）隐马尔科夫模型
+
+https://mp.weixin.qq.com/s/2Uh_PgQp7hqk8IrFQzthQw
+
+概率图模型笔记（PART III）条件随机场简介
+
 # HMM
 
 ![](/images/article/HMM.png)
@@ -190,10 +198,6 @@ https://mp.weixin.qq.com/s/6BnCJKHU2krEvizEQczuaQ
 
 一站式解决：隐马尔可夫模型（HMM）全过程推导及实现
 
-https://mp.weixin.qq.com/s/gOgH-tsQTp7ijOWqpAJi_Q
-
-概率图模型笔记（PART II）隐马尔科夫模型
-
 ## Viterbi算法
 
 Viterbi算法是求解最大似然状态路径的常用算法，被广泛应用于通信（CDMA技术的理论基础之一）和NLP领域。
@@ -233,9 +237,3 @@ https://zhuanlan.zhihu.com/p/110007411
 forward算法是求解问题2的常用算法。
 
 仍以上面的掷骰子为例，要算用正常的三个骰子掷出这个结果的概率，其实就是将所有可能情况的概率进行加和计算。同样，简单而暴力的方法就是把穷举所有的骰子序列，还是计算每个骰子序列对应的概率，但是这回，我们不挑最大值了，而是把所有算出来的概率相加，得到的总概率就是我们要求的结果。
-
-穷举法的计算量太大，不适用于计算较长的马尔可夫链。但是我们可以观察一下穷举法的计算步骤。
-
-![](/images/article/forward_algorithm.png)
-
-上图是某骰子序列的穷举计算过程，可以看出第3步计算的概率和公式的某些项，实际上在之前的步骤中已经计算出来了，前向递推的计算量并没有想象中的大。

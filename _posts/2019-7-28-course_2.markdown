@@ -375,3 +375,7 @@ Accelerating DRL via Human knowledge
 https://zhuanlan.zhihu.com/p/145983063
 
 大规模深度强化学习的发展
+
+https://zhuanlan.zhihu.com/p/53326459
+
+深度强化学习中的好奇心
