@@ -354,6 +354,10 @@ https://zhuanlan.zhihu.com/p/70618710
 
 初识NER
 
+https://mp.weixin.qq.com/s/yJC3NtD13LEVovDYK7-u1A
+
+命名实体识别难在哪？
+
 ## 文本摘要
 
 https://mp.weixin.qq.com/s/jk1XgnuydrsTg3HvV0CVvw

@@ -40,6 +40,10 @@ https://zhuanlan.zhihu.com/p/35882937
 
 强化学习——从Q-Learning到DQN到底发生了什么？
 
+https://mp.weixin.qq.com/s/D2a06cTOIqXozwQ2x7M2ew
+
+Python还能实现哪些AI游戏？
+
 # DQN进化史
 
 ![](/images/img2/DQN.jpg)

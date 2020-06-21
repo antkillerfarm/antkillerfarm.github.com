@@ -415,3 +415,7 @@ AutoML在深度学习模型设计和优化中有哪些用处？
 https://zhuanlan.zhihu.com/p/143730467
 
 One Shot NAS总结
+
+https://mp.weixin.qq.com/s/e7Whr2Im5fu8O7zF95Afkw
+
+进化算法如何用于自动模型搜索(NAS)
