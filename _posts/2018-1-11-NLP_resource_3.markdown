@@ -6,6 +6,28 @@ category: resource
 
 # NLP参考资源
 
+## 文本摘要（续）
+
+https://mp.weixin.qq.com/s/trDAoPgcsHr0Tz0AT5N3HQ
+
+京东电商场景下的AI实践-基于关键词自动生成摘要
+
+https://mp.weixin.qq.com/s/Aye9FBwG-v2JO2MLoEjo0g
+
+事实感知的生成式文本摘要
+
+https://zhuanlan.zhihu.com/p/113219895
+
+Text Summarization文本摘要与注意力机制
+
+https://zhuanlan.zhihu.com/p/135468859
+
+2015-2019年摘要模型（Summarization Model）发展综述（一）
+
+https://zhuanlan.zhihu.com/p/138282654
+
+2015-2019年摘要模型（Summarization Model）发展综述（二）
+
 ## 句法分析
 
 传统方法主要是PCFG （Probabilistic Context-Free Grammar）。
@@ -373,23 +395,3 @@ https://mp.weixin.qq.com/s/t2eP09f7tLwhgLO9m1S-9Q
 https://mp.weixin.qq.com/s/7yi67lPjseigeaqTD269mQ
 
 触类旁通，专业技能热度智能分析
-
-https://mp.weixin.qq.com/s/Zo6LjGE__vQMsWyuoZm6Hw
-
-文本特征工程之N-Gram
-
-http://www.cnblogs.com/qcloud1001/p/7910255.html
-
-LSF-SCNN：一种基于CNN的短文本表达模型及相似度计算的全新优化模型
-
-https://mp.weixin.qq.com/s/Y-skeJvkWlgkwKBpCjPaKA
-
-中文文本挖掘流程详解
-
-https://mp.weixin.qq.com/s/w5A5rvJxqRSJYMeEMlFXsQ
-
-递归卷积神经网络在解析和实体识别中的应用
-
-https://mp.weixin.qq.com/s/apwceKm6BvAJ2962b1mnBg
-
-基于注意力机制的神经匹配模型用于短文本检索

@@ -382,14 +382,6 @@ https://mp.weixin.qq.com/s/WVPgLXN7KZueNbmfTJNhDA
 
 推荐系统的PMF-概率矩阵分解和协同过滤
 
-# 推荐算法中的常用排序算法
+https://zhuanlan.zhihu.com/p/148951213
 
-![](/images/img3/ranking.png)
-
-## Pointwise方法
-
-Pranking (NIPS 2002), OAP-BPM (EMCL 2003), Ranking with Large Margin Principles (NIPS 2002), Constraint Ordinal Regression (ICML 2005)。
-
-## Pairwise方法
-
-Learning to Retrieve Information (SCC 1995), Learning to Order Things (NIPS 1998), Ranking SVM (ICANN 1999), RankBoost (JMLR 2003), LDM (SIGIR 2005), RankNet (ICML 2005), Frank (SIGIR 2007), MHR(SIGIR 2007), Round Robin Ranking (ECML 2003), GBRank (SIGIR 2007), QBRank (NIPS 2007), MPRank (ICML 2007), IRSVM (SIGIR 2006)。
+Item-CF的几种优化方式

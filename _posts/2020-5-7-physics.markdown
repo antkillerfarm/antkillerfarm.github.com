@@ -150,6 +150,14 @@ https://mp.weixin.qq.com/s/foZaIzpyxiRf9_9O7f6EaQ
 
 985大学首次登上Nature封面（超疏水材料）
 
+https://mp.weixin.qq.com/s/hnDjc8H9US4vZM4PZADZYg
+
+如何修建岩浆护城河
+
+https://mp.weixin.qq.com/s/KsGGMCKsQlHYxXONOTthGQ
+
+当你按下“除湿”键时，空调内究竟发生了什么？
+
 ----
 
 $$\pi$$的平方与重力加速度g在数值上极其接近。
@@ -215,6 +223,38 @@ https://mp.weixin.qq.com/s/vII5zOWBArxDvsHiyAyYGQ
 消音器
 
 # 阿波罗50年+
+
+https://mp.weixin.qq.com/s/v3HNhV08vWYPGdeXAZ47ag
+
+月球来到你身边
+
+https://view.inews.qq.com/a/TEC2019072100124408
+
+一文俯瞰从阿波罗1号到17号全舰队
+
+![](/images/img3/Apollo11_AnnotatedHero.jpg)
+
+https://mp.weixin.qq.com/s/Y1hQJHFB5InSZNB2T2KfVw
+
+10万镜子反射月光，组成3.6平方公里巨幅头像，谷歌花式纪念登月50年
+
+https://mp.weixin.qq.com/s/d6nmsH10qchY1pP8CibiBA
+
+跌跌撞撞的美国
+
+https://mp.weixin.qq.com/s/-KHsG9lZknY952U_LTV7qg
+
+天气太热了，我们去太阳系度假吧
+
+https://mp.weixin.qq.com/s/EPMdW1qxQVl0MVUSjhWxyQ
+
+NASA传奇数学家去世，她曾笔算了登月轨道
+
+https://mp.weixin.qq.com/s/8vRFfFLdLWSPpTzHjUKegQ
+
+哈勃太空望远镜30岁生日快乐！我们看到的宇宙因你而不同
+
+----
 
 由于飞行前的制造和测试错误，氧气罐中的电线暴露了出来。在那个致命的夜晚，氧气罐中暴露的电线产生的火花引发了火灾，引爆了氧气罐，将服务舱外的隔热层炸飞。。。
 

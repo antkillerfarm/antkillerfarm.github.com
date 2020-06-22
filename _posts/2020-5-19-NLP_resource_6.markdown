@@ -6,6 +6,26 @@ category: resource
 
 # NLP参考资源
 
+https://mp.weixin.qq.com/s/Zo6LjGE__vQMsWyuoZm6Hw
+
+文本特征工程之N-Gram
+
+http://www.cnblogs.com/qcloud1001/p/7910255.html
+
+LSF-SCNN：一种基于CNN的短文本表达模型及相似度计算的全新优化模型
+
+https://mp.weixin.qq.com/s/Y-skeJvkWlgkwKBpCjPaKA
+
+中文文本挖掘流程详解
+
+https://mp.weixin.qq.com/s/w5A5rvJxqRSJYMeEMlFXsQ
+
+递归卷积神经网络在解析和实体识别中的应用
+
+https://mp.weixin.qq.com/s/apwceKm6BvAJ2962b1mnBg
+
+基于注意力机制的神经匹配模型用于短文本检索
+
 https://mp.weixin.qq.com/s/SfFRXlekKkEapbjoSeKEog
 
 自然语言处理中N-Gram模型介绍

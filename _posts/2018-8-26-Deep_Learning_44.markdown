@@ -6,6 +6,38 @@ category: DL
 
 # 图像变换（续）
 
+https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247505181&idx=1&sn=2e817ec2ae918fd85c0ebcf85e810997
+
+惊！史上最佳GAN现身，超真实AI假照片，行家们都沸腾了
+
+https://mp.weixin.qq.com/s/MPdGF2-cJbNcvaEx-2BnFg
+
+把2D公路变成3D飞车游戏，MIT、清华打破图像编辑的次元壁
+
+https://mp.weixin.qq.com/s/h6sktVd1ywCCncUb9iwyFQ
+
+中科院自动化所：高清真实图像生成领域及GAN研究在人脸识别领域的进展
+
+https://mp.weixin.qq.com/s/9LvP3AH1PJhjrokTGg3blA
+
+心中无码：这是一个能自动脑补漫画空缺部分的AI项目
+
+https://mp.weixin.qq.com/s/cBTnX1lNHJhCMDX926aujA
+
+想怎么GAN就怎么GAN，一键拯救发际线
+
+https://mp.weixin.qq.com/s/HinUtoYNq_e8HYBqPKozsQ
+
+GAN：艺术家眼里生成作品的创作利器
+
+https://mp.weixin.qq.com/s/Cyy4FgVZyVN-4KvG-9pHMA
+
+品质超高！超火的漫画线稿上色AI最新版来了
+
+https://mp.weixin.qq.com/s/lp769k6wsyh-991ACf5upw
+
+计算机也会ps图片：TL-GAN
+
 https://mp.weixin.qq.com/s/OmSb1dl9smyZt_uASOcofQ
 
 人人都是画家：朱俊彦&周博磊等人的GAN画笔帮你开启艺术生涯
@@ -45,10 +77,6 @@ https://mp.weixin.qq.com/s/xdFxQfgj61pgB-aCq31rLA
 https://mp.weixin.qq.com/s/4hKIh77UfsuJCSKwtvpq3Q
 
 最强GAN修图魔术师：美颜生发摘眼镜、草绘秒变真人脸
-
-https://mp.weixin.qq.com/s/-iPQBni4dWvdARAy9_T32g
-
-神还原女神照片！GAN为百年旧照上色
 
 https://mp.weixin.qq.com/s/zvEIUJpgrjSM9-TLSzr3sQ
 
@@ -106,17 +134,9 @@ https://mp.weixin.qq.com/s/entoLCunjKY7PYWI8-aAgg
 
 谷歌AI秀神技：大脸畸变一键还原，拍照无需抢C位，实时运行毫无PS痕迹
 
-https://mp.weixin.qq.com/s/hx2CFdosvydg2xly8vuVJA
-
-AI还原半世纪前的黑白电影和照片：效果惊艳在线可玩，网友大呼“鹅妹子嘤”
-
 https://xyang35.github.io/2017/08/20/paper-2/
 
 图像去雾算法专题
-
-https://mp.weixin.qq.com/s/VbRxHizSBZbUnmTlhK9GPw
-
-GitHub5800星！一键还原百年老电影、黑白旧照片本色
 
 https://mp.weixin.qq.com/s/uhbKu69K6N-pxFZCRwAz1g
 
@@ -173,18 +193,6 @@ https://mp.weixin.qq.com/s/6bI8tvRbzopGGBwayB1XBA
 https://mp.weixin.qq.com/s/v5Sy-fxW-hm8u6XiyuRXlA
 
 Anime4K：目前最热的开源实时动漫放大算法
-
-https://mp.weixin.qq.com/s/W4ghsuSRhe2aTDn5GkNuAg
-
-基于深度学习的图像修补/完整方法分析
-
-https://mp.weixin.qq.com/s/JYa-kX6GadXorS1kJ1Heyw
-
-Image inpainting图像修补最新综述
-
-https://mp.weixin.qq.com/s/AbCxbG4NJvvZ1WLNze_HuQ
-
-拍照太糊？你需要了解下美图人像画质修复技术
 
 https://mp.weixin.qq.com/s/rdN8-h33Hyulx4Cq3Anr4g
 
@@ -274,17 +282,9 @@ https://mp.weixin.qq.com/s/8hs3xbKPaCz5Xs_Nkj4ZKA
 
 1.9K star量，解救无聊网友，小姐姐的“动画师”项目可一键生成个人角色
 
-https://mp.weixin.qq.com/s/3yaXYPjNWAXXtDJEWz2T0w
-
-90后“六指魔琴”AI修复100年前老北京影像，他还是程序员里最会画画的作曲家
-
 https://mp.weixin.qq.com/s/uU1-DwHnU4pPMLtQZNQyVQ
 
 北大图灵班本科生带来动画CG福音，“最懂骨骼的卷积网络”，无需配对样本实现动作迁移
-
-https://mp.weixin.qq.com/s/FgWNjWY9CyFlr4LL4_bkDw
-
-图像超清化+老照片修复技术，拯救你所有的模糊、破损照片
 
 # 深度推荐系统
 

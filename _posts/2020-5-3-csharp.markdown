@@ -155,6 +155,10 @@ http://lua-users.org/wiki/GraphicalUserInterfaceToolkits
 
 Lua的GUI工具列表
 
+https://mp.weixin.qq.com/s/BFIBTkdHAy38FiNGiuLYbQ
+
+深入理解Lua虚拟机
+
 # Haskell
 
 官网：

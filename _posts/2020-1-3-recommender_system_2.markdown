@@ -4,7 +4,17 @@ title:  推荐系统（二）——用户画像, 工程细节
 category: Recommender System 
 ---
 
-# 推荐算法中的常用排序算法（续）
+# 推荐算法中的常用排序算法
+
+![](/images/img3/ranking.png)
+
+## Pointwise方法
+
+Pranking (NIPS 2002), OAP-BPM (EMCL 2003), Ranking with Large Margin Principles (NIPS 2002), Constraint Ordinal Regression (ICML 2005)。
+
+## Pairwise方法
+
+Learning to Retrieve Information (SCC 1995), Learning to Order Things (NIPS 1998), Ranking SVM (ICANN 1999), RankBoost (JMLR 2003), LDM (SIGIR 2005), RankNet (ICML 2005), Frank (SIGIR 2007), MHR(SIGIR 2007), Round Robin Ranking (ECML 2003), GBRank (SIGIR 2007), QBRank (NIPS 2007), MPRank (ICML 2007), IRSVM (SIGIR 2006)。
 
 ## Listwise方法
 
@@ -361,23 +371,3 @@ Hulu：视频广告系统中的算法实践
 https://mp.weixin.qq.com/s/Eih4J51C8Eh-cuZ8vznESg
 
 当推荐遇到社交：美图的推荐算法设计优化实践
-https://mp.weixin.qq.com/s/WWqaCRtsSqfvO-qDLvehdg
-https://mp.weixin.qq.com/s/8jcaMIwNJQ1408VM-ucr_g
-
-快看漫画个性化推荐探索与实践
-
-https://mp.weixin.qq.com/s/G5O4-ne2Ll4qJnKlQ_MWog
-
-微博广告策略工程架构体系演进
-
-https://mp.weixin.qq.com/s/T6eNEVJF5xLwSZ4Ui7rvZQ
-
-推荐系统应该如何保障推荐的多样性？
-
-https://mp.weixin.qq.com/s/lTYBrYJBnW_ZNEdsQ-lorw
-
-透着浓浓工业风的Facebook深度学习推荐系统论文
-
-https://mp.weixin.qq.com/s/hNz9Op4lYtaX8tznUmHd9Q
-
-OCPC广告算法在凤凰新媒体的实践探索

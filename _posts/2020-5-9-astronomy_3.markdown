@@ -1,10 +1,28 @@
 ---
 layout: post
-title: 阿波罗50年
+title: 两弹一星, 阿波罗50年
 category: Nature 
 ---
 
 # 两弹一星（续）
+
+2019.12.17 山东号航空母舰入列。
+
+![](/images/img3/Carrier.jpg)
+
+![](/images/img3/Carrier_2.jpg)
+
+如果你有一艘航母，你就破坏了你所在地区的稳定。
+
+如果你有两艘，你就会对全球秩序构成威胁。
+
+如果你有一打，你就是全球维和人员。
+
+CTOL（conventional take-off and landing）
+
+STOVL（Short Take Off Vertical Landing）
+
+----
 
 今天，为了义和团在去年的所作所为而惩罚中国，西方在禁止向中国出口的物品中包括武器，关于这一点，一位贵胄子弟曾对我说：“**很好，这将迫使我们成为生产者，且请记住我的话，总有一天我们会成为出口商，不仅那样，而且还会比现在的制造商卖的更便宜。**”——1900年清廷海关总税务司赫德
 
@@ -14,7 +32,7 @@ category: Nature
 
 ----
 
-詹天佑于1911年在广州约集工程界同志，创立中华工程学会，是工程师有团体组织之始；后颜德庆先生又在上海创立中华工学会，又有徐文炯先生等组设路工同人共济会； 不久三会合并，改名为中华工程师会，选詹天佑为会长，以汉口为会址。民国3年（1912年），改名为中华工程师学会。
+詹天佑于1911年在广州约集工程界同志，创立中华工程学会，是工程师有团体组织之始；后颜德庆先生又在上海创立中华工学会，又有徐文炯先生等组设路工同人共济会；不久三会合并，改名为中华工程师会，选詹天佑为会长，以汉口为会址。民国3年（1912年），改名为中华工程师学会。
 
 1934年10月，中国电机工程学会的前身中国电机工程师学会在上海成立；1956年6月，中华全国自然科学专门学会联合会作出成立中国电机工程学会筹备委员会决定；1957年7月，中国电机工程学会在北京召开中国电机工程学会筹委会常务委员会第一次会议宣告学会成立。
 
@@ -149,33 +167,3 @@ https://mp.weixin.qq.com/s/OdMaaP_gE1rR_rd14LfA9w
 https://mp.weixin.qq.com/s/YRJpHvlEulfBFm8HpBYBZQ
 
 苏联开启的登月序曲
-
-https://mp.weixin.qq.com/s/v3HNhV08vWYPGdeXAZ47ag
-
-月球来到你身边
-
-https://view.inews.qq.com/a/TEC2019072100124408
-
-一文俯瞰从阿波罗1号到17号全舰队
-
-![](/images/img3/Apollo11_AnnotatedHero.jpg)
-
-https://mp.weixin.qq.com/s/Y1hQJHFB5InSZNB2T2KfVw
-
-10万镜子反射月光，组成3.6平方公里巨幅头像，谷歌花式纪念登月50年
-
-https://mp.weixin.qq.com/s/d6nmsH10qchY1pP8CibiBA
-
-跌跌撞撞的美国
-
-https://mp.weixin.qq.com/s/-KHsG9lZknY952U_LTV7qg
-
-天气太热了，我们去太阳系度假吧
-
-https://mp.weixin.qq.com/s/EPMdW1qxQVl0MVUSjhWxyQ
-
-NASA传奇数学家去世，她曾笔算了登月轨道
-
-https://mp.weixin.qq.com/s/8vRFfFLdLWSPpTzHjUKegQ
-
-哈勃太空望远镜30岁生日快乐！我们看到的宇宙因你而不同

@@ -216,6 +216,10 @@ https://mp.weixin.qq.com/s/k-gS6k3-hy-ZI_r901IGvg
 
 情感分析算法在阿里小蜜的应用实践
 
+https://www.zhihu.com/question/31471793
+
+大数据舆情情感分析，如何提取情感并使用什么样的工具？
+
 ## 命名实体识别
 
 https://mp.weixin.qq.com/s/LrrqGCNBncDr3ZacoIHHBg
@@ -407,23 +411,3 @@ https://mp.weixin.qq.com/s/vjnENPxXzrjKW2ACD3HDkA
 https://mp.weixin.qq.com/s/Bmou2Fx8a0-60Aqycrg4ug
 
 基于句子嵌入的无监督文本摘要
-
-https://mp.weixin.qq.com/s/trDAoPgcsHr0Tz0AT5N3HQ
-
-京东电商场景下的AI实践-基于关键词自动生成摘要
-
-https://mp.weixin.qq.com/s/Aye9FBwG-v2JO2MLoEjo0g
-
-事实感知的生成式文本摘要
-
-https://zhuanlan.zhihu.com/p/113219895
-
-Text Summarization文本摘要与注意力机制
-
-https://zhuanlan.zhihu.com/p/135468859
-
-2015-2019年摘要模型（Summarization Model）发展综述（一）
-
-https://zhuanlan.zhihu.com/p/138282654
-
-2015-2019年摘要模型（Summarization Model）发展综述（二）

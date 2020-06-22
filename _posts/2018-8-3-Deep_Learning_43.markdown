@@ -54,6 +54,38 @@ https://mp.weixin.qq.com/s/BlrViDMRKm8Hdj9nvkzxvQ
 
 AI图像智能修复老照片，效果惊艳到我了
 
+https://mp.weixin.qq.com/s/W4ghsuSRhe2aTDn5GkNuAg
+
+基于深度学习的图像修补/完整方法分析
+
+https://mp.weixin.qq.com/s/JYa-kX6GadXorS1kJ1Heyw
+
+Image inpainting图像修补最新综述
+
+https://mp.weixin.qq.com/s/AbCxbG4NJvvZ1WLNze_HuQ
+
+拍照太糊？你需要了解下美图人像画质修复技术
+
+https://mp.weixin.qq.com/s/FgWNjWY9CyFlr4LL4_bkDw
+
+图像超清化+老照片修复技术，拯救你所有的模糊、破损照片
+
+https://mp.weixin.qq.com/s/3yaXYPjNWAXXtDJEWz2T0w
+
+90后“六指魔琴”AI修复100年前老北京影像，他还是程序员里最会画画的作曲家
+
+https://mp.weixin.qq.com/s/-iPQBni4dWvdARAy9_T32g
+
+神还原女神照片！GAN为百年旧照上色
+
+https://mp.weixin.qq.com/s/hx2CFdosvydg2xly8vuVJA
+
+AI还原半世纪前的黑白电影和照片：效果惊艳在线可玩，网友大呼“鹅妹子嘤”
+
+https://mp.weixin.qq.com/s/VbRxHizSBZbUnmTlhK9GPw
+
+GitHub5800星！一键还原百年老电影、黑白旧照片本色
+
 # 抠图
 
 https://mp.weixin.qq.com/s/dRa1mss4dve487FhS4KjTg
@@ -173,6 +205,10 @@ https://mp.weixin.qq.com/s/1cUM8_AUZ40JWGI37HsqFw
 https://zhuanlan.zhihu.com/p/101402677
 
 最新综述论文“DeepFakes and Beyond”
+
+https://mp.weixin.qq.com/s/O1pjer3BQkoLdvIMNUUoXA
+
+图像生成都有哪些核心技术，如何对其进行长期深入学习
 
 ## 艺术字
 
@@ -347,35 +383,3 @@ https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748774&idx=4&sn=efb794
 https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
 
 分分钟学会基于深度学习的图像真实风格迁移！
-
-https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247505181&idx=1&sn=2e817ec2ae918fd85c0ebcf85e810997
-
-惊！史上最佳GAN现身，超真实AI假照片，行家们都沸腾了
-
-https://mp.weixin.qq.com/s/MPdGF2-cJbNcvaEx-2BnFg
-
-把2D公路变成3D飞车游戏，MIT、清华打破图像编辑的次元壁
-
-https://mp.weixin.qq.com/s/h6sktVd1ywCCncUb9iwyFQ
-
-中科院自动化所：高清真实图像生成领域及GAN研究在人脸识别领域的进展
-
-https://mp.weixin.qq.com/s/9LvP3AH1PJhjrokTGg3blA
-
-心中无码：这是一个能自动脑补漫画空缺部分的AI项目
-
-https://mp.weixin.qq.com/s/cBTnX1lNHJhCMDX926aujA
-
-想怎么GAN就怎么GAN，一键拯救发际线
-
-https://mp.weixin.qq.com/s/HinUtoYNq_e8HYBqPKozsQ
-
-GAN：艺术家眼里生成作品的创作利器
-
-https://mp.weixin.qq.com/s/Cyy4FgVZyVN-4KvG-9pHMA
-
-品质超高！超火的漫画线稿上色AI最新版来了
-
-https://mp.weixin.qq.com/s/lp769k6wsyh-991ACf5upw
-
-计算机也会ps图片：TL-GAN

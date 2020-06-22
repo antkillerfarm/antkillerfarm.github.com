@@ -226,6 +226,10 @@ https://mp.weixin.qq.com/s/17ozbpr2IIoq36VpBl3Crw
 
 基于知识图谱和图卷积神经网络的应用和开发
 
+https://mp.weixin.qq.com/s/mbr3u9SiYVPysBT9xuX0vg
+
+Hyperbolic Graph Convolutional Neural Networks
+
 # 语义分割进阶+
 
 https://mp.weixin.qq.com/s/HJzbMoCa7GenNm78sz7YAg

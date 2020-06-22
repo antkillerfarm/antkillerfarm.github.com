@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Graph ML（一）——图论基础, 强连通分量算法
+title:  Graph ML（一）——图论基础, 强连通分量算法, 社交网络
 category: graph 
 ---
 
@@ -174,3 +174,103 @@ http://blog.csdn.net/dm_vincent/article/details/8554244
 http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
 
 强连通分支算法--Kosaraju算法、Tarjan算法和Gabow算法
+
+# 社交网络
+
+## 信息传播模型
+
+### 感染模型
+
+SI、SIR等模型。
+
+https://www.cnblogs.com/scikit-learn/p/6937326.html
+
+基本的传染病模型：SI、SIS、SIR及其Python代码实现
+
+https://blog.csdn.net/robin_Xu_shuai/article/details/73699207
+
+SI疾病传播模型实现
+
+### 影响力模型
+
+IC、LT等模型。
+
+https://blog.csdn.net/asialee_bird/article/details/79673418
+
+社交网络影响力最大化
+
+http://cjc.ict.ac.cn/online/onlinepaper/wzj-201672182158.pdf
+
+基于社交内容的潜在影响力传播模型
+
+## 链接预测
+
+Link Prediction是指如何通过已知的网络节点以及网络结构等信息预测网络中尚未产生连边的两个节点之间产生链接的可能性。这种预测既包含了对未知链接（exist yet unknown links）的预测也包含了对未来链接（future links）的预测。该问题的研究在理论和应用两个方面都具有重要的意义和价值。
+
+http://www.docin.com/p-810499317.html
+
+社交网络中的链接预测研究
+
+## 社区发现
+
+社区发现（Community Detection）算法用来发现网络中的社区结构，也可以视为一种广义的聚类算法。
+
+https://blog.csdn.net/itplus/article/details/9286905
+
+Community Detection算法
+
+https://www.zhihu.com/question/29042018
+
+社区发现(Community detection)的经典方法有哪些？该领域最新的研究进展如何？
+
+http://www.mapequation.org/index.html
+
+这是一个复杂网络方面的网站，提供了很多算法的代码。例如infomap
+
+https://www.cnblogs.com/nolonely/p/6262508.html
+
+社区发现算法总结（一）
+
+https://www.cnblogs.com/nolonely/p/6268150.html
+
+社区发现算法总结（二）
+
+https://sikasjc.github.io/2017/12/20/GN/
+
+GN算法--复杂网络中社区发现与Python实现
+
+https://www.cnblogs.com/LittleHann/p/9078909.html
+
+社区发现算法-Fast Unfolding（Louvian）算法初探
+
+http://blog.sina.com.cn/s/blog_617032070100er0r.html
+
+Infomap算法描述
+
+https://mp.weixin.qq.com/s/S0vUBFCfizjVe_L4SIrGqQ
+
+网络新闻真假难辨？机器学习来助你一臂之力
+
+https://mp.weixin.qq.com/s/2aKc4yM0b52X-SViGQycwA
+
+大规模网络的社区检测和排序问题综述
+
+https://mp.weixin.qq.com/s/_HOdAo2ClhJqbUrDvsc-3w
+
+Philip S. Yu 团队最新综述！社区发现的深度学习方法：进展、挑战、机遇
+
+## Social Listening
+
+企业们通过捕捉网络上与品牌/产品/营销事件相关的关键词，去监测消费者都对品牌/产品/营销事件说了什么的行为，被称作社会化聆听（Social Listening）。
+
+https://mp.weixin.qq.com/s/htzfVSv3V8b00vae6nKm-A
+
+如何利用Social Listening从社会化媒体中“提炼”有价值的信息？
+
+https://mp.weixin.qq.com/s/0khbV1yOFZ5vNLZPRKYA6g
+
+Social Listening和传统市场调研的关系是怎样的？
+
+https://mp.weixin.qq.com/s/QrI23je3HqCFYkeVb9af8g
+
+如何利用Social Listening从在线垂直社区提炼有价值的信息---以汽车之家的口碑数据挖掘为例
