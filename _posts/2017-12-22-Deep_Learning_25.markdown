@@ -138,6 +138,10 @@ https://mp.weixin.qq.com/s/gIEJoE9B8mmNx6u6bqLspQ
 
 最新《深度多任务学习》综述论文，22页pdf
 
+https://mp.weixin.qq.com/s/ifTNRW0W7-P_LyfNldtavQ
+
+多任务学习方法在推荐中的演变
+
 # 人脸检测/识别
 
 ## OHEM

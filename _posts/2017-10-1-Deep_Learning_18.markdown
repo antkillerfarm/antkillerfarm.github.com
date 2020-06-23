@@ -82,6 +82,10 @@ https://mp.weixin.qq.com/s/vm1p3YceIC0nd191xsktfg
 
 自监督学习的视觉语言建模，115页ppt讲述多模态预训练进展
 
+https://mp.weixin.qq.com/s/PCXcvzwv8DF693_KzXK5bg
+
+计算机视觉研究新方向：自监督表示学习总结
+
 # 深度信息检索+
 
 https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ

@@ -94,6 +94,26 @@ https://blog.csdn.net/liu251/article/details/40785291
 
 ROLAP、MOLAP和HOLAP联机分析处理区别
 
+## SQL
+
+![](/images/img3/sql_join.png)
+
+https://mp.weixin.qq.com/s/O9wBAG1L5SrNGI8JteFirQ
+
+一文搞懂SQL：基础知识和业务实践总结
+
+https://mp.weixin.qq.com/s/WQh-Ro03e9F1Yrhk0tTZ0A
+
+图解SQL的JOIN
+
+https://mp.weixin.qq.com/s/NbV76hDZXKzvark4JEoyMA
+
+我是如何用2个Unix命令给SQL提速的
+
+https://mp.weixin.qq.com/s/2hJzdILGgLwcw8mkCY1uLw
+
+当我们输入一条SQL查询语句时，发生了什么？
+
 ## Apache Kylin
 
 Apache Kylin是一个开源的分布式分析引擎，最初由eBay开发贡献至开源社区。它提供Hadoop之上的SQL查询接口及多维分析（OLAP）能力以支持大规模数据，能够处理TB乃至PB级别的分析任务，能够在亚秒级查询巨大的Hive表，并支持高并发。
@@ -266,14 +286,6 @@ https://mp.weixin.qq.com/s/yQSMSLBYg4iauu8yeUfvjw
 
 深度解读！时序数据库HiTSDB：分布式流式聚合引擎
 
-https://mp.weixin.qq.com/s/WQh-Ro03e9F1Yrhk0tTZ0A
-
-图解SQL的JOIN
-
-https://mp.weixin.qq.com/s/NbV76hDZXKzvark4JEoyMA
-
-我是如何用2个Unix命令给SQL提速的
-
 https://mp.weixin.qq.com/s/gQAA2-YuvTHrL2IP8Bco6w
 
 缓存与数据库的数据一致性方案介绍
@@ -293,10 +305,6 @@ https://mp.weixin.qq.com/s/pZnAcjFlBM2I4Hyctd6MHw
 https://mp.weixin.qq.com/s/O3A5gVewRQ11Z8RdPcs-9w
 
 一文看懂Pinterest如何构建时间序列数据库系统Goku
-
-https://mp.weixin.qq.com/s/2hJzdILGgLwcw8mkCY1uLw
-
-当我们输入一条SQL查询语句时，发生了什么？
 
 https://mp.weixin.qq.com/s/5Qcbz6dT20Sa_OvRfbNXNw
 

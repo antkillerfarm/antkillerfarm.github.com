@@ -28,6 +28,10 @@ https://fullstackdeeplearning.com/march2019
 
 UCB: Full Stack Deep Learning。这个课程是专门讲述如何部署DL工程到实际产品中。
 
+https://mp.weixin.qq.com/s/A-bTzUZiuZ-Ua6bTHinReg
+
+深度神经网络高效处理，82页pdf论述DNN计算加速设计原理技术
+
 # Winograd
 
 矩阵方面的数值计算，Shmuel Winograd是一个无法绕开的人物。

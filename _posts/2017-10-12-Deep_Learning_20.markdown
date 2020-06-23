@@ -98,6 +98,10 @@ https://mp.weixin.qq.com/s/I1Ajguj6b7B1CZGKJoPbqw
 
 SOTA实例分割算法BlendMask，超越mask-rcnn
 
+https://mp.weixin.qq.com/s/8gMMglCkFH6iJgv1ajJGfQ
+
+从零开始学Mask RCNN：一，原理回顾&&项目文档翻译
+
 # Ultra Deep Network
 
 ## FractalNet

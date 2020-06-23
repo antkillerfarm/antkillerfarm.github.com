@@ -330,6 +330,10 @@ https://mp.weixin.qq.com/s/f6RwSHz3Nc68oipHdYDVTw
 
 RoBERTa: 捍卫BERT的尊严
 
+https://mp.weixin.qq.com/s/fneyUitoQL6ZqX3xU9WpDg
+
+跨模态语言模型
+
 # BERT
 
 ## 概述

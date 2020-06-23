@@ -200,6 +200,10 @@ https://mp.weixin.qq.com/s/rkTL1cj7tG5FaLP9cYRb4A
 
 CNN模型之SqueezeNet
 
+https://mp.weixin.qq.com/s/kE2WW3EaLsEoYTQdzL30RA
+
+SqueezeNet/SqueezeNext简述
+
 ## 其他知名CNN
 
 ### Network In Network

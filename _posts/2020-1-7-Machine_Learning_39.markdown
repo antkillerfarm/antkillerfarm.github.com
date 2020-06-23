@@ -383,3 +383,7 @@ https://mp.weixin.qq.com/s/aLOd_W3juLuWaQeTdzAPjg
 https://zhuanlan.zhihu.com/p/68748778
 
 指数移动平均（EMA）的原理
+
+https://mp.weixin.qq.com/s/x7UQhSAiE9VJCzUSZfpytA
+
+大规模锥优化之Splitting Conic Solver(SCS)

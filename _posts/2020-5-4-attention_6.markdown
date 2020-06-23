@@ -102,6 +102,10 @@ https://mp.weixin.qq.com/s/cyNcVNImoCOmTrsS0QVq4w
 
 用Siamese和Dual BERT来做多源文本分类
 
+https://mp.weixin.qq.com/s/uv74FKtUNtgjIBQZbsX7Qw
+
+你finetune BERT的姿势可能不对哦？
+
 # Attention进阶
 
 https://zhuanlan.zhihu.com/p/40920384

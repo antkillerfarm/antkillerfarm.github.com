@@ -419,3 +419,7 @@ One Shot NAS总结
 https://mp.weixin.qq.com/s/e7Whr2Im5fu8O7zF95Afkw
 
 进化算法如何用于自动模型搜索(NAS)
+
+https://mp.weixin.qq.com/s/dS3nHGcQ1VoOyVBcRPFtkg
+
+AutoML都有哪些核心技术，如何对其进行长期深入学习
