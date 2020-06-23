@@ -299,3 +299,87 @@ https://mp.weixin.qq.com/s/1Z8EN9lWy5r0JIu8u61Rig
 https://mp.weixin.qq.com/s/Zy9mCZOL8AneNjbvFpR3jg
 
 即插即用！将双边超分辨率用于语义分割网络，提升图像分辨率的有效策略
+
+# 行人重识别+
+
+https://mp.weixin.qq.com/s/Vi_1Sg8OKG-EG4aC4QTCWA
+
+半监督学习的新助力：无监督数据扩增法
+
+https://mp.weixin.qq.com/s/omUtD3GFOpP1dvfWZgLDww
+
+计算机视觉模型效果不佳，你可能是被相机的Exif信息坑了
+
+https://mp.weixin.qq.com/s/pV7C2sSJwP3rBO6OYeF-nw
+
+基于马尔可夫链的数据增强
+
+https://mp.weixin.qq.com/s/6yfHwsk-fTEtQhrciMEBug
+
+重识别（re-ID）特征适合直接用于跟踪（tracking）问题么？
+
+https://mp.weixin.qq.com/s/Q34wjziJBBOrb1VPhQJK8g
+
+行人重识别简介
+
+https://mp.weixin.qq.com/s/OALGxuvUdQMbsK1k4g2V7Q
+
+遮挡也能识别？地平线提出用时序信息提升行人检测准确度
+
+https://mp.weixin.qq.com/s/2v-Y_-_si6_dxq3cICy-lg
+
+疫情蔓延让这项CV技术突然火了，盘点开源代码
+
+https://mp.weixin.qq.com/s/Z6l9R5uzWsAn_DTgTsGstg
+
+京东发布FastReID：目前最强悍的目标重识别开源库！
+
+# AutoDL+
+
+https://mp.weixin.qq.com/s/Ho6XDRYmOBs9TqLMq7aPAg
+
+MetaQNN: 与Google同场竞技，MIT经典作，基于Q-Learning的神经网络搜索
+
+https://mp.weixin.qq.com/s/5NGCr6oMW2p5u4kF7YMCPw
+
+NAS太难了，搜索结果堪比随机采样！华为ICLR 2020论文给出6条建议
+
+https://zhuanlan.zhihu.com/p/110527110
+
+Neural Architecture Search
+
+https://zhuanlan.zhihu.com/p/111213620
+
+AutoML在计算机视觉领域的能与不能
+
+https://mp.weixin.qq.com/s/MIJHiYk-CjYtmW_9zW4hjA
+
+Hyper-Parameter Optimization，56页pdf
+
+https://mp.weixin.qq.com/s/y-5Gh0Jy3Fpz8xvw_tOICg
+
+MixPath：基于权重共享的神经网络搜索统一方法
+
+https://mp.weixin.qq.com/s/tYV_ratEA0NxzJukF-RTSA
+
+玩转网络结构搜索？你需要更大的搜索空间
+
+https://mp.weixin.qq.com/s/IRDE4RqwXR5W7QFhD_tSPQ
+
+AutoML在深度学习模型设计和优化中有哪些用处？
+
+https://zhuanlan.zhihu.com/p/143730467
+
+One Shot NAS总结
+
+https://mp.weixin.qq.com/s/e7Whr2Im5fu8O7zF95Afkw
+
+进化算法如何用于自动模型搜索(NAS)
+
+https://mp.weixin.qq.com/s/dS3nHGcQ1VoOyVBcRPFtkg
+
+AutoML都有哪些核心技术，如何对其进行长期深入学习
+
+https://mp.weixin.qq.com/s/A3Bg4-WoEQxFk3G5hCKNPQ
+
+连续可微分架构如何用于网络结构搜索

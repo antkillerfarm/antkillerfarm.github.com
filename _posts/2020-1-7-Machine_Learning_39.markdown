@@ -46,6 +46,10 @@ https://mp.weixin.qq.com/s/Y9d55KI64y-uRrWPRbDBzA
 
 Kaggle知识点：时序数据与Embedding
 
+https://mp.weixin.qq.com/s/DxRoTGtdrwqcjXL_ot57eg
+
+如何找到时序数据中线性的趋势
+
 # 运筹学
 
 https://zhuanlan.zhihu.com/p/25579864

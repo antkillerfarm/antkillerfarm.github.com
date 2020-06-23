@@ -217,6 +217,10 @@ https://mp.weixin.qq.com/s/0qgaJnZjYsf0WP2z5yGgrg
 
 面试集锦：HDFS
 
+https://mp.weixin.qq.com/s/9A0z0S9IthG6j8pZe6gCnw
+
+YARN在字节跳动的优化与实践
+
 # 机器人/无人驾驶参考资源+
 
 https://zhuanlan.zhihu.com/p/109900137

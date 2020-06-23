@@ -216,6 +216,10 @@ https://mp.weixin.qq.com/s/N1I4mGKzsHJiAluZL17sDQ
 
 Transformers是一种图神经网络
 
+https://mp.weixin.qq.com/s/IOc-gxOa6a415Hf1VBmiQw
+
+"Linformer"拍了拍"被吊打Transformers的后浪们"
+
 # 预训练语言模型进化史
 
 ![](/images/img3/BERT.jpg)
@@ -333,6 +337,10 @@ RoBERTa: 捍卫BERT的尊严
 https://mp.weixin.qq.com/s/fneyUitoQL6ZqX3xU9WpDg
 
 跨模态语言模型
+
+https://mp.weixin.qq.com/s/vgEKI9HjWDpkeSZQT2d8Qg
+
+ENRIE(Tsinghua)：知识图谱与BERT相结合，为语言模型赋能助力
 
 # BERT
 

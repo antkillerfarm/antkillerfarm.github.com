@@ -122,6 +122,10 @@ https://mp.weixin.qq.com/s/ao7gOfMYDJDPsNMVV9-Dlg
 
 后ResNet时代：SENet与SKNet
 
+https://mp.weixin.qq.com/s/_7Iir2DZ_lROyR-BxScbnA
+
+SANet：视觉注意力SE模块的改进，并用于语义分割
+
 # Non-local
 
 https://zhuanlan.zhihu.com/p/33345791

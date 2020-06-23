@@ -179,6 +179,10 @@ https://github.com/LantaoYu/MARL-Papers
 
 Paper list of multi-agent reinforcement learning (MARL)
 
+https://mp.weixin.qq.com/s/5I8-_4Xsj8wzJwmDOQpkWQ
+
+多智能体学习231页PPT总结
+
 https://blog.csdn.net/qq_38163755/article/details/98057751
 
 Game Theory and Multi-agent Reinforcement Learning笔记1

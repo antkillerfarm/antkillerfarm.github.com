@@ -116,6 +116,10 @@ https://blog.csdn.net/jbb0523/article/details/42028587
 
 从傅里叶(Fourier)变换到伽柏(Gabor)变换再到小波(Wavelet)变换
 
+https://mp.weixin.qq.com/s/U96qNphaZOPQJj97xexluw
+
+让机器“看见”：图像数据的特征提取方法
+
 # Schmid滤波
 
 Schmid滤波器是一种类Gabor滤波器。其计算公式为：

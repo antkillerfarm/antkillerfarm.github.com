@@ -202,6 +202,34 @@ https://zhuanlan.zhihu.com/p/104216734
 
 序列特征的处理方法之二：基于卷积神经网络方法
 
+https://mp.weixin.qq.com/s/t-hRxqppW5m6abpvYvZTDg
+
+序列循环神经网络，141页ppt，Sequences and Recurrent Network
+
+## 时空序列
+
+顾名思义，时空序列问题包含了时间和空间两个方面的因素。
+
+https://mp.weixin.qq.com/s/x2Tpd1-prppwjRla-yvTZw
+
+什么是时空序列问题？这类问题主要应用了哪些模型？主要应用在哪些领域？
+
+https://mp.weixin.qq.com/s/mEt1K5OdJ4IZ7ugxEgWLVQ
+
+Convolutional LSTM Network-paper reading
+
+https://mp.weixin.qq.com/s/hnzjG09DDtiM4GUVIdxWPA
+
+时空序列模型之STGCN
+
+https://mp.weixin.qq.com/s/iiJIHVv84namKHtdvHaMBg
+
+时空序列预测模型之轨迹GRU
+
+https://mp.weixin.qq.com/s/bE_k9D9RFYXKn7dnTBb7AA
+
+时空序列预测模型之CubicLSTM
+
 # Capsule
 
 https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Network/
@@ -333,40 +361,6 @@ https://mp.weixin.qq.com/s/sfdhG7Wv3s2XW6yYA1ELQA
 https://mp.weixin.qq.com/s/B5XrN3rxHsu4VrJLgL3bvg
 
 视频分类与行为识别有哪些核心技术，对其进行长期深入学习
-
-# 行人重识别+
-
-https://mp.weixin.qq.com/s/Vi_1Sg8OKG-EG4aC4QTCWA
-
-半监督学习的新助力：无监督数据扩增法
-
-https://mp.weixin.qq.com/s/omUtD3GFOpP1dvfWZgLDww
-
-计算机视觉模型效果不佳，你可能是被相机的Exif信息坑了
-
-https://mp.weixin.qq.com/s/pV7C2sSJwP3rBO6OYeF-nw
-
-基于马尔可夫链的数据增强
-
-https://mp.weixin.qq.com/s/6yfHwsk-fTEtQhrciMEBug
-
-重识别（re-ID）特征适合直接用于跟踪（tracking）问题么？
-
-https://mp.weixin.qq.com/s/Q34wjziJBBOrb1VPhQJK8g
-
-行人重识别简介
-
-https://mp.weixin.qq.com/s/OALGxuvUdQMbsK1k4g2V7Q
-
-遮挡也能识别？地平线提出用时序信息提升行人检测准确度
-
-https://mp.weixin.qq.com/s/2v-Y_-_si6_dxq3cICy-lg
-
-疫情蔓延让这项CV技术突然火了，盘点开源代码
-
-https://mp.weixin.qq.com/s/Z6l9R5uzWsAn_DTgTsGstg
-
-京东发布FastReID：目前最强悍的目标重识别开源库！
 
 # 人脸检测/识别+
 
