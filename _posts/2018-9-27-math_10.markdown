@@ -8,6 +8,20 @@ category: math
 
 ## 统计热力学定义（续）
 
+$$\begin{cases}
+\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_1} = \frac{\mathrm{d}f(\Omega_1\times\Omega_2)}{\mathrm{d}(\Omega_1\times\Omega_2)}\mathrm{d}\Omega_2 \\
+\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_2} = \frac{\mathrm{d}f(\Omega_1\times\Omega_2)}{\mathrm{d}(\Omega_1\times\Omega_2)}\mathrm{d}\Omega_1 \\
+\end{cases}
+\Rightarrow
+\begin{cases}
+\Omega_1\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_1} = \frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega}\Omega \\
+\Omega_2\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_2} = \frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega}\Omega \\
+\end{cases}$$
+
+$$\Omega_1\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_1} =\Omega_2\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_2}=\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega}\Omega = K$$
+
+$$\mathrm{d}f(\Omega)=K\frac{\mathrm{d}\Omega}{\Omega}\Rightarrow f(\Omega) = K\ln \Omega + C$$
+
 根据热力学第三定律，使用绝对零度作为原点，则：
 
 $$S=K\ln \Omega$$
@@ -233,19 +247,3 @@ $$u(n)=\frac{1}{2\pi}\int_{-\pi}^{\pi}e^{j\omega n}\mathrm{d}Z(\omega)\tag{5}$$
 其中，$$\mathrm{d}Z(\omega)$$被称为**增量过程（increment process）**。
 
 >Harald Cramér，1893～1985，瑞典数学家、统计学家。Stockholm University博士（1917）、教授、校长、瑞典高等教育系统大臣。被誉为“统计理论的巨人”。
-
-由公式2和5，可得：
-
-$$U_N(\omega)=\frac{1}{2\pi}\int_{-\pi}^{\pi}\sum_{n=-N}^N e^{(-j(\omega-v) n)}\mathrm{d}Z(v)\tag{6}$$
-
-我们定义：
-
-$$K_N(\omega)=\sum_{n=-N}^N e^{j\omega n}=\frac{\sin((2N+1)\omega/2)}{\sin(\omega/2)}\tag{7}$$
-
-则公式6可改写为：
-
-$$U_N(\omega)=\frac{1}{2\pi}\int_{-\pi}^{\pi}K_N(\omega-v)\mathrm{d}Z(v)\tag{8}$$
-
-这里的K被称作Dirichlet Kernel。参见《数学狂想曲（一）》的相关章节。
-
-一般来说，在公式8中，$$U_N(\omega)$$是已知的，而$$\mathrm{d}Z(\omega)$$是未知的。从数学上来说，这个积分方程可看做第一类Fredholm积分方程的一个例子。

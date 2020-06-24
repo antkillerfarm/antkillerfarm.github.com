@@ -44,6 +44,10 @@ https://mp.weixin.qq.com/s/DygWoZSEvbW_BBFVBOJNbg
 
 新手也能彻底搞懂的目标检测Anchor是什么？怎么科学设置？
 
+https://zhuanlan.zhihu.com/p/150332784
+
+目标检测Anchor的What/Where/When/Why/How
+
 ## 非极大值抑制（NMS）
 
 RCNN会从一张图片中找出n个可能是物体的矩形框，然后为每个矩形框为做类别分类概率（如上图所示）。我们需要判别哪些矩形框是没用的。

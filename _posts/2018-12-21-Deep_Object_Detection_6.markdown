@@ -48,6 +48,10 @@ https://mp.weixin.qq.com/s/v2x3u3_FELz2lHqBJKR-dg
 
 Yolov3和Yolov4核心内容、代码梳理
 
+https://zhuanlan.zhihu.com/p/143747206
+
+深入浅出Yolo系列之Yolov3&Yolov4核心基础知识完整讲解
+
 # YOLOv5
 
 YOLOv5由Darknet的另一贡献者Ultralytics创建并维护（2010.5）。这是一家总部位于美国的粒子物理和人工智能初创公司。

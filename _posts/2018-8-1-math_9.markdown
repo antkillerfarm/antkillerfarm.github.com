@@ -6,6 +6,10 @@ category: math
 
 # 随机过程（续）
 
+### 中心极限定理
+
+中心极限定理：研究何种条件下独立随机变量之和的极限分布为正态分布的一系列命题的统称。它是数理统计学和误差分析的理论基础，指出了大量随机变量积累分布函数逐点收敛到正态分布的积累分布函数的条件。自然界与生产中，一些现象受到许多相互独立的随机因素的影响，如果每个因素所产生的影响都很微小时，总的影响可以看作是服从正态分布的。
+
 #### 独立同分布的中心极限定理
 
 设相互独立的随机变量$$X_1,X_2,\dots,X_n$$具有相同的概率分布，且有有限的数学期望和方差：$$E(X_k)=\mu,D(X_k)=\mu ^2\neq 0(k=1,2,\dots,n)$$，则随机变量：
@@ -224,17 +228,3 @@ $$\Omega=\Omega_1\times \Omega_2$$
 令$$S=f(\Omega)$$，则：
 
 $$S_1=f(\Omega_1),S_2=f(\Omega_2),S=f(\Omega_1)+f(\Omega_1)=f(\Omega_1\times \Omega_2)$$
-
-$$\begin{cases}
-\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_1} = \frac{\mathrm{d}f(\Omega_1\times\Omega_2)}{\mathrm{d}(\Omega_1\times\Omega_2)}\mathrm{d}\Omega_2 \\
-\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_2} = \frac{\mathrm{d}f(\Omega_1\times\Omega_2)}{\mathrm{d}(\Omega_1\times\Omega_2)}\mathrm{d}\Omega_1 \\
-\end{cases}
-\Rightarrow
-\begin{cases}
-\Omega_1\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_1} = \frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega}\Omega \\
-\Omega_2\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_2} = \frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega}\Omega \\
-\end{cases}$$
-
-$$\Omega_1\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_1} =\Omega_2\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega_2}=\frac{\mathrm{d}f(\Omega)}{\mathrm{d}\Omega}\Omega = K$$
-
-$$\mathrm{d}f(\Omega)=K\frac{\mathrm{d}\Omega}{\Omega}\Rightarrow f(\Omega) = K\ln \Omega + C$$

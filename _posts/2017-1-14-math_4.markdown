@@ -251,6 +251,12 @@ https://zhuanlan.zhihu.com/p/20042215
 
 ![](/images/article/hyperbolic.jpg)
 
+参考：
+
+https://mp.weixin.qq.com/s/VOPis0wgmi-U-uM3Vnapbw
+
+这根链子什么来头？
+
 # Gabriel's Horn
 
 Gabriel's Horn，又名托里拆利小号（Torricelli's trumpet），是数学史上非常经典的模型。它最早由Evangelista Torricelli提出，故名。

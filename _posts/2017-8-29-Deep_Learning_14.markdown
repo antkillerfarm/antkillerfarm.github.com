@@ -248,6 +248,10 @@ https://mp.weixin.qq.com/s/44RvXEYYc5lebsHs_ooswg
 
 全面解读Group Normalization
 
+https://mp.weixin.qq.com/s/J8i0Qsl0q9sYS2iAc-M44w
+
+BN，LN，IN，GN都是什么？不同归一化方法的比较
+
 # L2 Normalization
 
 L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：

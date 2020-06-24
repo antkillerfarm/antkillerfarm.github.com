@@ -4,6 +4,38 @@ title:  数学狂想曲（十二）——数学杂谈
 category: math 
 ---
 
+# PID算法（续）
+
+https://www.zhihu.com/question/23088613/answer/23942834
+
+如何通俗地解释PID参数整定？
+
+https://zhuanlan.zhihu.com/p/35473808
+
+PID控制器的贝叶斯理解
+
+https://zhuanlan.zhihu.com/p/139244173
+
+广告出价--如何使用PID控制广告投放成本
+
+https://zhuanlan.zhihu.com/p/39573490
+
+PID控制算法原理
+
+## 串级PID控制
+
+实际使用中，为了改善PID控制的效果，一般还会用到串级PID控制。
+
+参考：
+
+https://blog.csdn.net/qq_25005909/article/details/77941243
+
+串级PID控制四轴飞行状态-分析
+
+https://blog.csdn.net/nemol1990/article/details/45131603
+
+四轴PID讲解
+
 # 数学杂谈
 
 有一次正在做穿过欧洲的旅行，他与一个陌生人聊天，他很谦虚的自我介绍：“我是Daniel Bernoullis。”
@@ -275,31 +307,3 @@ https://blog.csdn.net/ChangHengyi/article/details/80577318
 https://mp.weixin.qq.com/s/AQgFded7GWp1yPE_voT0QQ
 
 看完这45组酷炫数学动图，原来数学这么有意思！
-
-https://mp.weixin.qq.com/s/SlbWkTrO3UlWd15jrKYvdg
-
-史上最强律师，用代数暴力破解军事密码，无情吊打荷兰数学家，被誉为“代数学之父”（弗朗索瓦·韦达）
-
-https://mp.weixin.qq.com/s/_HnWeNxH6p2VAMC8tG2gFg
-
-斯坦福再出变态神人！竟用一个数学模型，暴力解开“掰手指”的奥秘！看完我跪了......
-
-https://mp.weixin.qq.com/s/Rw3O5MDbEIfgmWCVgFe95w
-
-五次方程的微分方程解法
-
-https://mp.weixin.qq.com/s/eYzhlrV822X8mHsOGgv1Qw
-
-如何计算一只鸡的表面积？看完中外神人的奇葩解法，我发誓下辈子不做理科生......
-
-https://mp.weixin.qq.com/s/43XCOdNqeKxMmpfkX3JTGw
-
-一个退休程序员，用高中几何方法，让百年数学难题逼近理论极限（万有覆盖问题）
-
-https://mp.weixin.qq.com/s/a1TEh1c1VZ345rmj8UiPgA
-
-“科比球”背后的数学
-
-https://mp.weixin.qq.com/s/WbmIc6NQ9Yw87R51tj63hQ
-
-为什么数学家除了老婆，竟然还要有个情人
