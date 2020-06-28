@@ -114,7 +114,7 @@ https://mp.weixin.qq.com/s/UDJAYB79KaPB0pgnnCIPTw
 
 https://blog.csdn.net/jbb0523/article/details/42028587
 
-从傅里叶(Fourier)变换到伽柏(Gabor)变换再到小波(Wavelet)变换
+从傅立叶(Fourier)变换到伽柏(Gabor)变换再到小波(Wavelet)变换
 
 https://mp.weixin.qq.com/s/U96qNphaZOPQJj97xexluw
 

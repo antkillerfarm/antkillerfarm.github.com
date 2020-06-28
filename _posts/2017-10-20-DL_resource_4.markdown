@@ -196,7 +196,7 @@ https://mp.weixin.qq.com/s/M7w7tMVd23YToIW7DypYjA
 
 https://mp.weixin.qq.com/s/7dpYRLKpRn0MSa5bz_sBDg
 
-从傅里叶分析角度解读深度学习的泛化能力
+从傅立叶分析角度解读深度学习的泛化能力
 
 https://mp.weixin.qq.com/s/iZZHmxGFHQHk1rlzMzDQcg
 
@@ -293,28 +293,6 @@ https://mp.weixin.qq.com/s/4hL6wWQ73icEWHfK6QKSMw
 https://mp.weixin.qq.com/s/sRGdNquZyt7VbvuKL5JXYQ
 
 不仅搞定“梯度消失”，还让CNN更具泛化性：港科大开源深度神经网络训练新方法
-
-# 深度推荐系统+
-
-https://mp.weixin.qq.com/s/j34nJGomvR23ZJiqIFMoAQ
-
-推荐系统中稀疏特征Embedding的优化表示方法
-
-https://mp.weixin.qq.com/s/1xVPRIVwQQJfEen0RiNYvg
-
-谈谈推荐系统中的用户行为序列建模最新进展
-
-https://mp.weixin.qq.com/s/n5MYTk6V77Hazodw4pxnSQ
-
-基于多任务学习和负反馈的深度召回模型
-
-https://mp.weixin.qq.com/s/CuTEW0y7juWSBGlhltB7qw
-
-FGCNN：使用CNN进行特征生成的CTR预测模型
-
-https://zhuanlan.zhihu.com/p/143161957
-
-点积 vs. MLP：推荐模型到底用哪个更好？
 
 # 目标检测进阶
 

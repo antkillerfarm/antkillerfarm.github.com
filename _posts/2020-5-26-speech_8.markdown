@@ -180,6 +180,10 @@ https://mp.weixin.qq.com/s/qPx1W_OebGgvb4g9Sb944A
 
 使用GAN进行高保真语音合成
 
+https://mp.weixin.qq.com/s/5cn3UBZbA5Cwk4YvKteYBA
+
+吃下文本吐出语音，DeepMind提出新型端到端TTS模型EATS
+
 # 新冠肺炎+
 
 ## 疫情建模（续）

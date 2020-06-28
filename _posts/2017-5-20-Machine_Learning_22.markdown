@@ -154,6 +154,10 @@ https://mp.weixin.qq.com/s/_HQ5an_krRCYMVnwEgGJow
 
 深度学习的多个loss如何平衡 & 有哪些“魔改”损失函数，曾经拯救了你的深度学习模型？
 
+https://blog.csdn.net/shanglianlm/article/details/85019768
+
+十九种损失函数
+
 # 自适应滤波器
 
 《自适应滤波器原理（Adaptive Filter Theory）》，Simon Haykin著。

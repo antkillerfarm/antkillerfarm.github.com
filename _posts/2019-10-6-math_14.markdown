@@ -236,19 +236,19 @@ https://blog.csdn.net/sinat_26545113/article/details/78835038
 
 https://zhuanlan.zhihu.com/p/66189212
 
-从傅里叶变换进阶到小波变换（一）
+从傅立叶变换进阶到小波变换（一）
 
 https://zhuanlan.zhihu.com/p/66246381
 
-从傅里叶变换进阶到小波变换（二）
+从傅立叶变换进阶到小波变换（二）
 
 https://zhuanlan.zhihu.com/p/68323379
 
-从傅里叶变换进阶到小波变换（三）
+从傅立叶变换进阶到小波变换（三）
 
 https://zhuanlan.zhihu.com/p/69956002
 
-从傅里叶变换进阶到小波变换（四）
+从傅立叶变换进阶到小波变换（四）
 
 # 张量分析
 

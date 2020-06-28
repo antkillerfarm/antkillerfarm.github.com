@@ -24,6 +24,10 @@ https://mp.weixin.qq.com/s/VXjqm-FH-c46l44edIbnpw
 
 是时候考虑使用Plotly作图了
 
+https://mp.weixin.qq.com/s/s9hU3TIFmIMc9jMvqGSm5g
+
+用Python绘制一套“会跳舞”的动态图形给你看看
+
 ## Pandas
 
 Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。

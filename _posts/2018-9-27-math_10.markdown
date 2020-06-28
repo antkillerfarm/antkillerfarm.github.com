@@ -64,6 +64,10 @@ https://zhuanlan.zhihu.com/p/74075915
 
 交叉熵、相对熵（KL散度）、JS散度和Wasserstein距离（推土机距离）
 
+https://mp.weixin.qq.com/s/sglAI17L5NvZLvPg1P2ZSA
+
+熵、交叉熵和KL散度的基本概念和交叉熵损失函数的通俗介绍
+
 ## Landauer’s Erasure Principle
 
 在量子力学中，如同电荷、质量、时间有最小单位一样，热力学熵也有最小单位。Landauer’s Erasure Principle指出这个单位为$$K_B\ln(2)$$，其中$$K_B$$为玻尔兹曼常数。

@@ -383,6 +383,10 @@ https://mp.weixin.qq.com/s/J-H638ZzhB-GOXMeAQ9aww
 
 Camelot: 三行代码提取PDF表格数据
 
+https://mp.weixin.qq.com/s/c0hszsSDS-u4z-83Y7km8Q
+
+pdf文档解析之pdfminer
+
 ## mypy
 
 mypy是一个针对python语言的静态类型检查工具。

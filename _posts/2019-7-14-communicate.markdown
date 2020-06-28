@@ -56,6 +56,10 @@ https://zhuanlan.zhihu.com/p/101702312
 
 ## 参考
 
+https://www.cnblogs.com/maybe2030/p/4781555.html
+
+计算机网络基础知识总结
+
 https://mp.weixin.qq.com/s/_bWOYpZNjA4p7ZWM1J_4mw
 
 通信协议之序列化

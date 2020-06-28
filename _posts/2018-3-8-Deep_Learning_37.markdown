@@ -68,6 +68,10 @@ https://mp.weixin.qq.com/s/Z06oUe7oExgkKZ8g2_PnPw
 
 科普人脸表情识别技术
 
+https://mp.weixin.qq.com/s/U1g1pNjVn5CP6Q5ZosFc4Q
+
+深度人脸识别算法串讲
+
 https://mp.weixin.qq.com/s/_hAxj4UX0qIxddVQSL_iWA
 
 一种快速准确的人脸检测、识别和验证系统

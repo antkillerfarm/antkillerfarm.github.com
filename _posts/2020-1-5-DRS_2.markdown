@@ -6,6 +6,26 @@ category: Recommender System
 
 # 深度推荐系统
 
+https://mp.weixin.qq.com/s/frUPjpCQGlZc7Dag_v7r3A
+
+2018年最全的推荐系统干货
+
+https://mp.weixin.qq.com/s/3NStfKyn3rGmLUrgk4b9lQ
+
+想了解推荐系统最新研究进展？请收好这16篇论文
+
+https://mp.weixin.qq.com/s/7I8k3sKZfaGr8vj1WHbS7g
+
+99页推荐系统情感分析教程发布
+
+https://mp.weixin.qq.com/s/5ryEfgQnX-JXCvhwzKSCjA
+
+点击率预估界的“神算子”是如何炼成的？
+
+https://mp.weixin.qq.com/s/npZg46MK5MZ7h9cqvrAYiQ
+
+机器如何猜你所想？阿里小蜜预测平台揭秘
+
 https://zhuanlan.zhihu.com/p/46755166
 
 利用评论文本交互提升推荐系统
@@ -361,31 +381,3 @@ https://mp.weixin.qq.com/s/RQ1iBs8ftvNR0_xB7X8Erg
 https://mp.weixin.qq.com/s/Y4g2T6qMGzCcE67bINPiGA
 
 推荐场景中召回模型的演化过程
-
-https://zhuanlan.zhihu.com/p/100019681
-
-推荐系统技术演进趋势：从召回到排序再到重排
-
-https://zhuanlan.zhihu.com/p/102918124
-
-微信看一看Embedding
-
-https://zhuanlan.zhihu.com/p/115781834
-
-深度学习在花椒直播中的应用——推荐系统冷启动算法
-
-https://mp.weixin.qq.com/s/ec88cMR4K6pWyHhJs7FEFQ
-
-智能推荐算法在花椒直播中的应用
-
-https://zhuanlan.zhihu.com/p/68897114
-
-如何刻画用户的多样兴趣——MIND network阅读笔记
-
-https://mp.weixin.qq.com/s/sbdnEMez_BKPzXOl1Z4AzQ
-
-DeepMatch：用于推荐&广告的深度召回匹配算法库
-
-https://zhuanlan.zhihu.com/p/127030405
-
-对话推荐系统综述论文

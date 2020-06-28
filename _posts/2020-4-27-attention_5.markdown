@@ -8,6 +8,26 @@ category: Attention
 
 ## 轻量化BERT（续）
 
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771134&idx=2&sn=012082a897dbf125000e38b73520c51d
+
+TinyBERT：模型小7倍，速度快8倍，华中科大、华为出品
+
+https://mp.weixin.qq.com/s/i82wGiSOlA4l4ozimrE2gg
+
+加速BERT模型有多少种方法？从架构优化、模型压缩到模型蒸馏最新进展详解！
+
+https://mp.weixin.qq.com/s/R2MW_5kskvXyuSOh7kfJaA
+
+ALBERT：更轻更快的NLP预训练模型
+
+https://mp.weixin.qq.com/s/dWzpqP_U8Y5DyfWHVTl5Vg
+
+BERT瘦身之路：Distillation，Quantization，Pruning
+
+https://mp.weixin.qq.com/s/DAsY9-Dl5T6peo_71ICOtw
+
+基于ALBERT的文本相似度计算
+
 http://mitchgordon.me/machine/learning/2019/11/18/all-the-ways-to-compress-BERT.html
 
 15篇论文全面概览BERT压缩方法
@@ -355,27 +375,3 @@ https://mp.weixin.qq.com/s/hI9XAiqKaHLq-Z9JkaWA_A
 https://mp.weixin.qq.com/s/55B0ToIKDusiPI5farR19w
 
 NLP这两年：15个预训练模型对比分析与剖析
-
-https://mp.weixin.qq.com/s/SPfa17p3QetZXCC01DwmQA
-
-解密BERT
-
-https://zhuanlan.zhihu.com/p/72805778
-
-BERT的演进和应用
-
-https://mp.weixin.qq.com/s/9YuBY0wLLVQ8ZrT9fiNICA
-
-语音版BERT？滴滴提出无监督预训练模型，中文识别性能提升10%以上
-
-https://mp.weixin.qq.com/s/OXkXjPHhaMXsKw2YevV6sw
-
-邱锡鹏：从Transformer到BERT--自然语言处理中的表示学习进展
-
-https://mp.weixin.qq.com/s/6i9eQISKsWU0jawKzWg8nQ
-
-超越bert，最新预训练模型ELECTRA论文阅读笔记
-
-https://mp.weixin.qq.com/s/dV4RkxZOC9o2BxNi0GljKQ
-
-谷歌最强NLP模型BERT官方中文版来了！多语言模型支持100种语言

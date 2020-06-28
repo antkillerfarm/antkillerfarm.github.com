@@ -86,6 +86,22 @@ https://zhuanlan.zhihu.com/p/97720096
 
 浅谈AlphaStar
 
+## 启元世界
+
+启元世界是国内的一家AI公司，碰巧也搞星际争霸2。研究员Flood Sung后来也加盟了该团队。
+
+2020.6.21 启元AI 2：0 人类选手《星际争霸I/II》全国冠军黄慧明（TooDming）和中国星际最强人族选手、黄金总决赛三连冠选手李培楠（TIME）。
+
+参考：
+
+https://mp.weixin.qq.com/s/ev6F_prsP5nAtFKze3-zCQ
+
+启元AI两局2：0战胜中国星际争霸冠军，仅用顶级科技巨头1%算力
+
+https://www.zhihu.com/question/402678197
+
+如何看待启元世界AI星际指挥官打败人族选手TIME？
+
 # Dota 2
 
 Dota 2的AI项目主要是OpenAI来搞，算是DRL在MOBA游戏上的应用。
@@ -361,27 +377,3 @@ https://mp.weixin.qq.com/s/6wPtb9Qdhr9FiMk15xrUsQ
 https://mp.weixin.qq.com/s/lU3_ONAIGDUv_AVv2Xn14w
 
 仅需2小时学习，基于模型的强化学习方法可以在Atari上实现人类水平
-
-https://mp.weixin.qq.com/s/w0_g5FlC6vx2MRAhADPq2g
-
-深度强化学习在智能对话上的应用
-
-https://mp.weixin.qq.com/s/4SZ1NN5hUUcO_dSe4Bv0NQ
-
-利用鲁棒控制实现深度强化学习驾驶策略的迁移
-
-https://mp.weixin.qq.com/s/rwqtw5b2Nap5UPU9DWBXqg
-
-强化学习与文本生成
-
-https://mp.weixin.qq.com/s/VPCtsv2Q73qVcNAa4Xufag
-
-从虚拟到现实，北大等提出基于强化学习的端到端主动目标跟踪方法
-
-https://mp.weixin.qq.com/s/6Sj2QIELQvI28Rpp7A39Fg
-
-如何通过结构化智能体完成物理构造任务？
-
-https://mp.weixin.qq.com/s/lR6BSa_pJzcinkSaSWsM2A
-
-伯克利提出强化学习新方法，可让智能体同时学习多个解决方案

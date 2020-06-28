@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/bE_k9D9RFYXKn7dnTBb7AA
 
 时空序列预测模型之CubicLSTM
 
+https://mp.weixin.qq.com/s/XZWReRiIHqykN8yZulBiOg
+
+混合时空图卷积网络：更精准的时空预测模型
+
 # Capsule
 
 https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Network/

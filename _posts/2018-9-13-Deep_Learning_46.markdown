@@ -162,6 +162,10 @@ https://mp.weixin.qq.com/s/5rny9_oF2-urF2JUp13fUw
 
 OpenCV实现银行卡号识别，字符识别算法你知多少？
 
+https://mp.weixin.qq.com/s/P8TiEk482o2Mye76_YC0rg
+
+EasyOCR: 支持40+语言的OCR模块
+
 # Graph NN
 
 https://mp.weixin.qq.com/s/emPDgw_c68JgbpYnem4JvA

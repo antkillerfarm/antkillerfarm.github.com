@@ -158,6 +158,10 @@ http://coderskychen.cn/2015/12/11/%E6%9A%97%E9%80%9A%E9%81%93%E5%8E%BB%E9%9B%BE%
 
 这两篇blog介绍了何恺明的成名之作。
 
+https://mp.weixin.qq.com/s/-ALThz4RR9tIhTl5cVbJ8Q
+
+生成组合仿射变换矩阵，裁剪+缩放+平移+斜切+旋转
+
 # 计算机图形学
 
 http://blog.csdn.net/pizi0475/article/details/6650851

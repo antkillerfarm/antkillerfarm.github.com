@@ -12,11 +12,11 @@ category: graph
 
 以下术语，每组均为同义词，下文将不加区分的任意使用：
 
-**Objects: nodes, vertices --> N**
+**Objects: nodes, vertices --> V**
 
 **Interactions: links, edges --> E**
 
-**System: network, graph --> G(N,E)**
+**System: network, graph --> G(V,E)**
 
 Network, node, link偏重于现实中的系统，而Graph, vertex, edge就是纯数学的表示了。
 
@@ -104,12 +104,51 @@ $$P(k)=N_k/N$$
 
 - **Path length**：h
 
+沿着图中的边的方向，从一个结点到另一个相邻结点的行为被称为**Step Walk**。
+
+**Path**：一系列**连续**的Step Walk所形成的结点序列。
+
+Path通常有两种表示方式：
+
+结点表示：$$P_n = \{i_0 ,i_1 ,i_2 ,\dots,i_n \}$$
+
+边表示：$$P_n = \{(i_0 ,i_1 ),(i_1 ,i_2 ),(i_2 ,i_3 ),\dots,(i_{n-1} ,i_n )\}$$
+
+序列中边的个数被称为**Path length**。
+
+一条路径可以经过同一个顶点或同一条边若干次。
+
+如果路径上的各顶点均不重复，则称这样的路径为**Simple path**。如果路径上的第一个顶点与最后一个顶点重合，这样的路径称为**回路(cycle)或环或圈**。
+
+两点间长度最短的路径被称为**shortest path**。shortest path的长度被称为两点间的**Distance**。两个不连接结点间的距离，通常定义为正无穷。
+
+对于有向图来说，$$h_{B,C}$$通常不等于$$h_{C,B}$$。
+
+图中所有结点间距离的最大值，被称为**Diameter**。
+
+强连通图中，所有结点间距离的平均值，被称为**Average path length**。
+
+$$\overline h = \frac{1}{2E_{max}}\sum_{i,j\neq i}h_{ij}$$
+
 - **Clustering coefficient**：C
+
+$$C_i=\frac{2e_i}{k_i(k_i-1)}$$
+
+其中，$$e_i$$表示结点i的邻居之间的边的个数。$$k_i$$表示i的degree。
+
+![](/images/img3/Clustering_coefficient.png)
+
+以上左图为例，i结点有4个邻居，也就是$$k_i$$为4。这些邻居之间有6条边，即$$e_i$$为6。综上可得，$$C_i=1$$。
+
+由于$$k_i(k_i-1)$$是完全有向图的边数，所以$$C_i\in [0,1]$$。
+
+图中所有结点的$$C_i$$平均值被称为**Average clustering coefficient**：
+
+$$C=\frac{1}{N}\sum_i^N C_i$$
 
 - **Connected components**：s
 
-
-
+这里用s表示图中最大的连通子图（Largest component / Giant component）的结点数。
 
 ## 参考
 
@@ -274,3 +313,4 @@ Social Listening和传统市场调研的关系是怎样的？
 https://mp.weixin.qq.com/s/QrI23je3HqCFYkeVb9af8g
 
 如何利用Social Listening从在线垂直社区提炼有价值的信息---以汽车之家的口碑数据挖掘为例
+

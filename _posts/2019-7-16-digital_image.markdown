@@ -403,9 +403,13 @@ http://frozengene.github.io/
 
 一个LLVM方面的blog
 
+https://zhuanlan.zhihu.com/c_1250484713606819840
+
+一个LLVM方面的专栏
+
 https://zhuanlan.zhihu.com/p/28637279
 
-使用LLVM + PLY实现一个C语言子集的玩具编译器
+使用LLVM+PLY实现一个C语言子集的玩具编译器
 
 ![](/images/img3/ART.png)
 

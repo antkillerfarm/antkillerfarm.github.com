@@ -93,6 +93,14 @@ IRQ的响应并不及时，从Verilog仿真来看，IRQ会延迟几个指令周�
 
 总之，每个时代限制系统速度的瓶颈不同，因而完全有可能昨天的结论和今天的结论完全相反。
 
+![](/images/img3/ISA.png)
+
+![](/images/img3/ISA_2.png)
+
+https://mp.weixin.qq.com/s/8w3V-ndKBD2fReM9QZokwA
+
+ARM架构要逆天？
+
 # pin 1
 
 一般的排线为了能够方便的识别pin 1，通常会在pin 1处标一个小三角，并且pin 1线的颜色也与其他的线不同。

@@ -156,6 +156,10 @@ https://mp.weixin.qq.com/s/GuM0jZlI4mC-DFSWybtG1A
 
 贝叶斯优化简介
 
+https://mp.weixin.qq.com/s/YtSYiw23J3oTXUXwNeoIEg
+
+一文读懂贝叶斯优化
+
 # Beam Search
 
 ## 概述

@@ -353,3 +353,7 @@ https://mp.weixin.qq.com/s/PYrE6vUCivusWuFvdiUbNQ
 https://mp.weixin.qq.com/s/AUKMBRFMifcgZmdXBjDl3Q
 
 从“小”培养AI安全意识：OpenAI开源最新强化学习训练工具，安全约束自由定制，开箱即用
+
+https://mp.weixin.qq.com/s/oPK9eNgIPMP6ICwBB-4kQA
+
+Facebook推基于NetHack的深度强化学习利器，超轻量级架构性价比远超GPT-2和BERT

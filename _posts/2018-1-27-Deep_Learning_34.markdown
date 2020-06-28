@@ -56,6 +56,10 @@ https://mp.weixin.qq.com/s/YGBvWIENE9TASvb_t_Pebw
 
 爱奇艺深度语义表示学习的探索与实践
 
+https://mp.weixin.qq.com/s/SN6qnaorfYpIYMNcZQTR8Q
+
+推荐系统embedding技术实践总结
+
 ## 参考
 
 http://kexue.fm/archives/4667/

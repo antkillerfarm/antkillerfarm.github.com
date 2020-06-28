@@ -247,6 +247,12 @@ print(data)
 dbDisconnect(conn)
 ```
 
+参考：
+
+https://mp.weixin.qq.com/s/VEKg-KEtge1L7Sa4oo2xQg
+
+从R连接MySQL数据库
+
 ### 内置数据集
 
 R语言本身已经内置了一些数据集，可以`data()`查看之。
@@ -365,7 +371,7 @@ R语言的高质量图形渲染库Cairo
 
 https://mp.weixin.qq.com/s/GN0KARrvosWb7Gr_BKYhCQ
 
-10 种机器学习算法的要点（附Python和R代码）
+10种机器学习算法的要点（附Python和R代码）
 
 https://zhuanlan.zhihu.com/p/22852262
 

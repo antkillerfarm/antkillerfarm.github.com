@@ -6,6 +6,18 @@ category: Attention
 
 # BERT
 
+## pre-training（续）
+
+如何进行无监督学习呢？
+
+BERT主要用了两个任务：
+
+- Masked Language Model。随机盖住一句话的某个词，让NN去预测这个被盖住的词。
+
+- Next Sentence Prediction。预测下一段话。
+
+这两个任务，算是NLP的老任务了。但在传统的NLP pipeline中，属于非常下游的任务。BERT利用它们的特点，进行无监督学习，算是一个很大的突破了。
+
 ## 海量文本
 
 BERT以及后来的GPT 2.0取得重大突破的关键，还在于海量的训练文本。
@@ -274,6 +286,10 @@ https://mp.weixin.qq.com/s/EozsQNQ2YrczRg18hTZBhA
 
 什么是XLNet中的双流自注意力
 
+https://mp.weixin.qq.com/s/VfytCWa-h8CmUZW1RWAdnQ
+
+从XLNet的多流机制看最新预训练模型的研究进展
+
 ## 轻量化BERT
 
 | Paper | Prune | Factor | Distill | W. Sharing | Quant. | Pre-train | Downstream |
@@ -303,23 +319,3 @@ https://www.zhihu.com/question/347898375
 https://mp.weixin.qq.com/s/a0d0b1jSm5HxHso9Lz8MSQ
 
 小版BERT也能出奇迹：最火的预训练语言库探索小巧之路
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771134&idx=2&sn=012082a897dbf125000e38b73520c51d
-
-TinyBERT：模型小7倍，速度快8倍，华中科大、华为出品
-
-https://mp.weixin.qq.com/s/i82wGiSOlA4l4ozimrE2gg
-
-加速BERT模型有多少种方法？从架构优化、模型压缩到模型蒸馏最新进展详解！
-
-https://mp.weixin.qq.com/s/R2MW_5kskvXyuSOh7kfJaA
-
-ALBERT：更轻更快的NLP预训练模型
-
-https://mp.weixin.qq.com/s/dWzpqP_U8Y5DyfWHVTl5Vg
-
-BERT瘦身之路：Distillation，Quantization，Pruning
-
-https://mp.weixin.qq.com/s/DAsY9-Dl5T6peo_71ICOtw
-
-基于ALBERT的文本相似度计算

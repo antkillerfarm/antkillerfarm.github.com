@@ -347,6 +347,10 @@ https://mp.weixin.qq.com/s/geT7x5RG4xhD-Ro1eZvrdg
 
 深入浅出Serverless：优势、意义与应用
 
+https://mp.weixin.qq.com/s/6Rl1uvIeysG844W2TtGocg
+
+一文看懂当红Serverless
+
 https://mp.weixin.qq.com/s/esunl-zyplt-V70PgPDWqA
 
 我收集了12款自动生成器，无聊人士自娱自乐专用

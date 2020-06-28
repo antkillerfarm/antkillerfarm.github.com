@@ -92,6 +92,10 @@ http://hongjiang.info/semigroup-and-monoid/
 
 半群(semigroup)与幺半群(monoid)
 
+https://mp.weixin.qq.com/s/wejmP4rrUCJ9uNcGqxXTfA
+
+群论，Group Theory，135页pdf
+
 ## Sum(Union)
 
 介绍完WFST的定义，再来介绍一下定义在它之上的运算。

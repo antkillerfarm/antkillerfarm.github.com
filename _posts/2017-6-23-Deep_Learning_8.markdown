@@ -148,6 +148,10 @@ https://mp.weixin.qq.com/s/scFnuqx0zOtBvFh0JYA0UA
 
 来聊聊ResNet及其变种
 
+https://mp.weixin.qq.com/s/W4IqXMRZJbQ-7fGEF43-sA
+
+真正的最强ResNet改进，高性能“即插即用”金字塔卷积
+
 # Bi-directional RNN
 
 众所周知，RNN在处理长距离依赖关系时会出现问题。LSTM虽然改进了一些，但也只能缓解问题，而不能解决该问题。

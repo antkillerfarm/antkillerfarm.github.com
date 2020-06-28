@@ -168,6 +168,10 @@ https://mp.weixin.qq.com/s/XJ5uVzYULWHLRjhb5iE8Qg
 
 一文读懂图像定位及跟踪技术
 
+https://mp.weixin.qq.com/s/OqMqQRwI5c6H6FzvgdwWfg
+
+目标追踪综述
+
 # Meanshift
 
 ## Meanshift聚类

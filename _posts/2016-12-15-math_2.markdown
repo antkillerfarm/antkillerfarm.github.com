@@ -68,7 +68,7 @@ https://mp.weixin.qq.com/s/MLe_MtQE27rZTncaQeU4cg
 
 https://mp.weixin.qq.com/s/TEtZbh0NHSemgWQlrgo2Vw
 
-傅里叶变换还能这么玩
+傅立叶变换还能这么玩
 
 https://bl.ocks.org/jinroh/7524988
 
@@ -76,7 +76,7 @@ Fourier series visualisation with d3.js
 
 https://mp.weixin.qq.com/s/OEo0aboqxQ42ZfMFACXQPw
 
-信号与系统公式大全（傅里叶变换、拉普拉斯变换、Z变换、卷积...）
+信号与系统公式大全（傅立叶变换、拉普拉斯变换、Z变换、卷积...）
 
 # DFT
 
@@ -115,7 +115,7 @@ Real DFT Using the Complex DFT
 
 http://blog.miskcoo.com/2018/01/real-dft
 
-实序列离散傅里叶变换的快速算法
+实序列离散傅立叶变换的快速算法
 
 # 拉普拉斯变换
 
