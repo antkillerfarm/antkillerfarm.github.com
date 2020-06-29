@@ -4,7 +4,7 @@ title:  Attention（六）——Attention进阶
 category: Attention 
 ---
 
-# BERT
+# BERT进阶
 
 https://mp.weixin.qq.com/s/SPfa17p3QetZXCC01DwmQA
 
@@ -130,6 +130,10 @@ https://mp.weixin.qq.com/s/uv74FKtUNtgjIBQZbsX7Qw
 
 你finetune BERT的姿势可能不对哦？
 
+https://mp.weixin.qq.com/s/BvM5zx-3XrsZj8BQ5WEa4A
+
+一文带你了解MultiBERT
+
 # Attention进阶
 
 https://zhuanlan.zhihu.com/p/40920384
@@ -151,6 +155,10 @@ https://mp.weixin.qq.com/s/_mBa-GTdILrvluJtegz8fw
 https://mp.weixin.qq.com/s/pKxqPB9qIGmE_PslPa6EyA
 
 长文详解Attention的前世今生
+
+https://mp.weixin.qq.com/s/2kFZAmb_WnTNYUXT_jVMqg
+
+Attention注意力机制的前世今生
 
 https://mp.weixin.qq.com/s/eq1iTyKguQm5t6Xoc7KUgw
 

@@ -96,6 +96,10 @@ https://mp.weixin.qq.com/s/OMzx3nKqn1un2fCZseID2Q
 
 怎样设计最优的卷积神经网络架构？NAS原理剖析
 
+https://mp.weixin.qq.com/s/x_DcgxVLbCGsac2cjdmjeg
+
+神经架构搜索（NAS）简要介绍
+
 https://mp.weixin.qq.com/s/D0HngY-U7_fP4vqDIjvaew
 
 自动选模型+调参：谷歌AutoML背后的技术解析

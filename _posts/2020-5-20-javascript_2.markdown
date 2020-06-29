@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/LRGNOuFwHXALs_lhPyN3Zw
 
 爱奇艺直播WebAssembly优化之路
 
+https://mp.weixin.qq.com/s/I0grz0IfFZo98sfaCNh-Vw
+
+可能是世界上最简单的用Go来写WebAssembly的教程
+
 ## 多线程编程
 
 Javascript原则上是单线程的，阻塞和其他异步的需求是通过循环来解决的。当线程需要处理大规模的计算的时候，需要使用Web Worker进行多线程操作。

@@ -320,6 +320,10 @@ https://zhuanlan.zhihu.com/p/82415579
 
 浅谈Deep Auto-encoder
 
+https://mp.weixin.qq.com/s/PJ-FiDQ7zYN_9rFVWkpeQA
+
+降维算法：主成分分析 VS 自动编码器
+
 # 词向量
 
 ## One-hot Representation

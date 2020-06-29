@@ -354,6 +354,10 @@ https://mp.weixin.qq.com/s/MwXG85RdbNqvwkjauTfk2Q
 
 不只是A/B测试：多臂老虎机赌徒实验
 
+https://mp.weixin.qq.com/s/ayvBYilRX0BFEYkAa2EikQ
+
+A/B测试是好，但不适合创新
+
 ## 参考
 
 https://mp.weixin.qq.com/s/vpANPrl86Ou2fBVHgLXtBQ

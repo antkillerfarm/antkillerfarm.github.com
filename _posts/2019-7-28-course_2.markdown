@@ -118,6 +118,10 @@ http://www.stat.cmu.edu/~ryantibs/statcomp/
 
 Statistics 36-350: Statistical Computing
 
+https://cseweb.ucsd.edu/~mkchandraker/teaching.html
+
+UCSD的Manmohan Chandraker的CV课程
+
 # English
 
 SOTA(state of the art)：目前最高水平

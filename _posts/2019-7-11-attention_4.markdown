@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（四）——BERT（2）
+title:  Attention（四）——ELMo, GPT, ERNIE, XLNet, 轻量化BERT
 category: Attention 
 ---
 
@@ -64,7 +64,7 @@ BERT的论文并未提到执行NMT任务时的网络结构，但从下面的论�
 
 也就是说，仍然有decoder部分，仍然不能完全并行。
 
-## ELMo
+# ELMo
 
 https://mp.weixin.qq.com/s/I315hYPrxV0YYryqsUysXw
 
@@ -94,7 +94,7 @@ https://mp.weixin.qq.com/s/qbXZGiKYEuTI-2l4iYZlbQ
 
 图文并茂带你细致了解ELMo的各种细节
 
-## GPT
+# GPT
 
 GPT-1论文：
 
@@ -152,7 +152,7 @@ https://mp.weixin.qq.com/s/dibf3bU4hQ7nXTPGMFsKbg
 
 GPT-3王者来袭！1750亿参数少样本无需微调，网友：“调参侠”都没的当了
 
-## ERNIE
+# ERNIE
 
 ERNIE是百度2019年提出的。
 
@@ -236,7 +236,7 @@ https://mp.weixin.qq.com/s/r5Vk_hc5-jsZ69y0dfqIfg
 
 登顶GLUE的百度ERNIE再突破：语言生成预训练模型ERNIE-GEN刷新SOTA
 
-## XLNet
+# XLNet
 
 https://mp.weixin.qq.com/s/29y2bg4KE-HNwsimD3aauw
 
@@ -290,7 +290,7 @@ https://mp.weixin.qq.com/s/VfytCWa-h8CmUZW1RWAdnQ
 
 从XLNet的多流机制看最新预训练模型的研究进展
 
-## 轻量化BERT
+# 轻量化BERT
 
 | Paper | Prune | Factor | Distill | W. Sharing | Quant. | Pre-train | Downstream |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|

@@ -284,3 +284,11 @@ https://mp.weixin.qq.com/s/mcETNOICbabRRq9BBdL4zw
 https://mp.weixin.qq.com/s/sy2GNXwwpn-yUQUIZoMuxA
 
 淘宝at KDD 2019，解决推荐中带约束的Top-K优化问题
+
+https://mp.weixin.qq.com/s/B_lSu5zCXFZZlbgFe7gjMQ
+
+推荐模型为什么干不过李佳琦们
+
+https://mp.weixin.qq.com/s/D3qxlzZgwnMprzEVuMpmgg
+
+机器学习在高德搜索建议中的应用优化实践

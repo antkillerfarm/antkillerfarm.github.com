@@ -1,12 +1,10 @@
 ---
 layout: post
-title:  Attention（五）——BERT（3）
+title:  Attention（五）——BERT进阶
 category: Attention 
 ---
 
-# BERT
-
-## 轻量化BERT（续）
+# 轻量化BERT（续）
 
 https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771134&idx=2&sn=012082a897dbf125000e38b73520c51d
 
@@ -51,6 +49,8 @@ ALBERT论文图解介绍
 https://mp.weixin.qq.com/s/QdrwlaFZi3VRGptw4cYJSQ
 
 别再蒸馏3层BERT了！变矮又能变瘦的DynaBERT了解一下
+
+# BERT进阶
 
 ## AR vs AE
 

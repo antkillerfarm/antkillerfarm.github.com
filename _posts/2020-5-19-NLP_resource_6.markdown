@@ -249,3 +249,7 @@ https://mp.weixin.qq.com/s/TSFxYQdjjHuyrIJLM2fdcw
 https://mp.weixin.qq.com/s/vMfZW0P4hfHd5aI6lqF3Sw
 
 如何有效提升中文NER性能？词汇增强方法总结
+
+https://mp.weixin.qq.com/s/AKkXyuK8S6nMBifknwZI4w
+
+一文超详细讲解文本风格迁移

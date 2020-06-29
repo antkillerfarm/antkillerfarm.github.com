@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（三）——预训练语言模型进化史, BERT（1）
+title:  Attention（三）——预训练语言模型进化史, BERT
 category: Attention 
 ---
 

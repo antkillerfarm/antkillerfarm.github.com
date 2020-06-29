@@ -236,6 +236,10 @@ https://zhuanlan.zhihu.com/p/146777068
 
 标注样本少怎么办？“文本增强+半监督”方法总结
 
+https://mp.weixin.qq.com/s/H0CAeFR7VymwxWbE330kDg
+
+浅谈文本增强技术
+
 https://mp.weixin.qq.com/s/FHmijTVqQ26osp6PzZsbvQ
 
 付彦伟：零样本、小样本以及开集条件下的社交媒体分析

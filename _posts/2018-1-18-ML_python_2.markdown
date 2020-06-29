@@ -382,6 +382,10 @@ https://mp.weixin.qq.com/s/HpOx6BWM2lbgDpJcF6XncA
 
 可视化神器Seaborn的超全介绍
 
+https://mp.weixin.qq.com/s/94nwkxn20ZixmcsX8oUJIw
+
+Seaborn绘图
+
 ## Bokeh
 
 Bokeh是一个数据可视化的库。它不仅提供了和Matplotlib类似的静态图功能，还提供了生成交互动态图的功能。
