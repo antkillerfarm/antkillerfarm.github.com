@@ -295,3 +295,9 @@ https://finance.sina.com.cn/stock/usstock/c/2020-06-21/doc-iirczymk8124657.shtml
 https://mp.weixin.qq.com/s/ztPg8Z2_eotvOW5F7MmbHg
 
 乘风破浪的中国葡萄酒，藏着怎样的时代风华
+
+----
+
+http://dangshi.people.com.cn/n/2015/0915/c85037-27587323.html
+
+延安时期的“黄克功案件”及其现实警示
