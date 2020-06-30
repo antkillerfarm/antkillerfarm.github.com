@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/B6ZpJ0Yw9GBZ9_MyNwjlXQ
 
 构建强化学习系统，你需要先了解这些背景知识
 
+https://zhuanlan.zhihu.com/p/146212198
+
+强化学习经典算法理论
+
 https://mp.weixin.qq.com/s/AKuuIJnESMmck8k210CnWg
 
 易忽略的强化学习知识之基础知识及MDP（上）

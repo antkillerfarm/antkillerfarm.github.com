@@ -96,6 +96,10 @@ https://mp.weixin.qq.com/s/GdNcQqDeVQ1vtIJrAIYpWw
 
 目标检测之非极大值抑制(NMS)各种变体
 
+https://zhuanlan.zhihu.com/p/151914931
+
+一文打尽目标检测NMS——精度提升篇
+
 ## NMS的快速算法
 
 RCNN系列的NMS的一个经典取值是：从N=6000个排好序的矩形框中，选出M=300个独立的目标框。
