@@ -230,6 +230,14 @@ Clang-format: 格式化C/C++/Java/Objective-C代码。需要安装Clang-format�
 
 `sudo apt install clang-format`
 
+## 调试
+
+1.安装各个语言的插件。
+
+2.按F5开始调试。首次调试时会让你设置调试配置。
+
+3.调试python时，按下下方状态栏中的python版本信息，可以选择python环境，包括venv环境。
+
 ## 新版的空格显示问题
 
 自2019.6之后，新版VS code在新版Ubuntu的默认显示总是很诡异，空格的宽度很小，总让人怀疑是否有空格。

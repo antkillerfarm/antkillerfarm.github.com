@@ -112,6 +112,8 @@ Anaconda多环境多版本python配置指导
 
 安装：
 
+`sudo apt install python3-pip python3-virtualenv`
+
 `pip3 install virtualenv`
 
 创建env：

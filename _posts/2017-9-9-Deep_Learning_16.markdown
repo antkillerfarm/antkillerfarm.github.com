@@ -194,6 +194,10 @@ https://mp.weixin.qq.com/s/yr9fNyzpOBt7dLsnh2T2xg
 
 使用TFLite在移动设备上优化与部署风格转化模型
 
+https://mp.weixin.qq.com/s/9AEYcY04lAl3dCRK9LPBeQ
+
+人脸风格化核心技术与数据集总结
+
 # 人脸检测/识别
 
 ## Cascade CNN

@@ -204,6 +204,10 @@ https://mp.weixin.qq.com/s/54_qLczv8ooqoQQioIeUww
 
 通俗易懂的讲解奇异值分解(SVD)和主成分分析(PCA)
 
+https://mp.weixin.qq.com/s/R54brOW-TBD3UGJUwE2QOg
+
+SVD加速：rSVD
+
 ## 矩阵的秩
 
 一个矩阵A的列（行）秩是A的线性独立的列（行）的极大数。

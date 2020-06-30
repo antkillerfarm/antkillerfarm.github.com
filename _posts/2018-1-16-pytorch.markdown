@@ -48,17 +48,32 @@ https://pytorch.org/deep-learning-with-pytorch-thank-you
 
 Pytorch的安装方法在官网首页就可查到，非常方便。
 
+https://pytorch.org/get-started/locally/
+
 这是我的平台的安装方法：
 
 `pip3 install http://download.pytorch.org/whl/cpu/torch-0.4.1-cp36-cp36m-linux_x86_64.whl`
 
 `pip3 install torchvision`
 
+测试：
+
+```python
+import torch
+torch.cuda.is_available()
+```
+
 参考：
 
 https://zhuanlan.zhihu.com/p/44068797
 
 Windows装TensorFlow+MXNet+PyTorch
+
+## 示例
+
+Lenet+MNIST+GPU：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/pytorch/mnist_gpu.py
 
 ## 项目
 
@@ -415,23 +430,3 @@ https://mp.weixin.qq.com/s/EXuFXbPBIbzTyi0fUjvvPw
 https://zhuanlan.zhihu.com/p/73711222
 
 巧用torch.backends.cudnn.benchmark减少训练时间
-
-https://www.zhihu.com/question/303070254
-
-PyTorch中在反向传播前为什么要手动将梯度清零？
-
-https://mp.weixin.qq.com/s/HQnI8rzPvZN6Q_5c8d1nVQ
-
-唯快不破：基于Apex的混合精度加速
-
-https://mp.weixin.qq.com/s/NupSd4e01cvQ3CRnjy1npw
-
-超原版速度110倍，针对PyTorch的CPU到GPU张量迁移工具开源
-
-https://zhuanlan.zhihu.com/p/87572724
-
-一文看懂align_corners
-
-https://www.zhihu.com/question/274635237
-
-Pytorch有什么节省内存（显存）的小技巧？

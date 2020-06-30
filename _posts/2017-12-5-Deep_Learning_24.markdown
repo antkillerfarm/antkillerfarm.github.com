@@ -417,3 +417,7 @@ Deep SORT论文阅读总结
 https://mp.weixin.qq.com/s/wjKbKF8McGOjbjudi3cOVQ
 
 FairMOT：统一检测、重识别的多目标跟踪框架，全新Baseline
+
+https://zhuanlan.zhihu.com/p/151105050
+
+基于图卷积GNN的多目标跟踪算法解析

@@ -366,6 +366,10 @@ https://mp.weixin.qq.com/s/B5XrN3rxHsu4VrJLgL3bvg
 
 视频分类与行为识别有哪些核心技术，对其进行长期深入学习
 
+https://mp.weixin.qq.com/s/x-fBo5pFD6UlKLh7p68H2A
+
+用机器学习打造计数君，谷歌RepNet可自动计数视频重复片段
+
 # 人脸检测/识别+
 
 https://mp.weixin.qq.com/s/PsToV8Z17tRzXW_AbaMNmg

@@ -351,3 +351,7 @@ https://mp.weixin.qq.com/s/yB7tq2vcBpVBnM-j9PgRsw
 https://mp.weixin.qq.com/s/J59d1K5WX-wnzhws3k60AQ
 
 万字长文带你了解变分自编码器VAEs
+
+https://mp.weixin.qq.com/s/g-OPU4vp66HWcpqjdD2bBg
+
+使用PyTorch从理论到实践理解变分自编码器VAE
