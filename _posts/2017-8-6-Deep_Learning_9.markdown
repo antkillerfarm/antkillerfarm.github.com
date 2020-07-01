@@ -8,6 +8,16 @@ category: DL
 
 ## 计算机视觉（续）
 
+参考：
+
+https://github.com/weiaicunzai/awesome-image-classification
+
+GitHub：图像分类最全资料集锦
+
+https://mp.weixin.qq.com/s/nK__d-PV6DY5mDfA_UgDmQ
+
+全解：目标检测，图像分类、分割、生成……
+
 https://mp.weixin.qq.com/s/Go8AQay7tgykXLRtfHGLmg
 
 改变你对世界看法的五大计算机视觉技术！
@@ -287,5 +297,3 @@ http://blog.csdn.net/whiteinblue/article/details/43312059
 第五步，是计算两张照片得到的Y的相似程度，如果超过特定的阈值，就认定是同一个人。
 
 深度学习的到来对整个流程有一个巨大的冲击。
-
-一开始，研究者用深度学习完成人脸检测、特征点定位、预处理、特征提取和识别等每个独立的步骤。而后首先被砍掉的是预处理，我们发现这个步骤是完全不必要的。理论上来解释，深度学习学出来的底层滤波器本身就可以完成光照的预处理，而且这个预处理是以“识别更准确”为目标进行的，而不是像原来的预处理一样，以“让人看得更清楚”为目标。人的知识和机器的知识其实是有冲突的，人类觉得好的知识不一定对机器识别有利。

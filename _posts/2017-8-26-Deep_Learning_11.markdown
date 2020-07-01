@@ -4,7 +4,33 @@ title:  深度学习（十一）——花式卷积（2）
 category: DL 
 ---
 
-# 花式卷积（续）
+# 花式卷积
+
+## 分组卷积（续）
+
+https://mp.weixin.qq.com/s/0MvCnm46pgeMGEw-EdNv_w
+
+CNN模型之ShuffleNet
+
+https://mp.weixin.qq.com/s/tceLrEalafgL8R44DZYP9g
+
+旷视科技提出新型轻量架构ShuffleNet V2：从理论复杂度到实用设计准则
+
+https://mp.weixin.qq.com/s/Yhvuog6NZOlVWEZURyqWxA
+
+ShuffleNetV2：轻量级CNN网络中的桂冠
+
+https://mp.weixin.qq.com/s/zLf0aKeMYwqMwC1TymMxgQ
+
+移动端高效网络，卷积拆分和分组的精髓
+
+https://zhuanlan.zhihu.com/p/86095608
+
+Learnable Group Convolutions:可以学习的分组卷积
+
+https://mp.weixin.qq.com/s/liCS3JoRj1scpc0jXFA4-w
+
+分组卷积最新进展，全自动学习的分组有哪些经典模型？
 
 ## Separable convolution
 
@@ -277,43 +303,3 @@ CNN-反卷积
 http://buptldy.github.io/2016/10/29/2016-10-29-deconv/
 
 Transposed Convolution, Fractionally Strided Convolution or Deconvolution（中文blog）
-
-https://mp.weixin.qq.com/s/ybI8kJPRn7sH-hJbc5uqnw
-
-CMU研究者探索新卷积方法：在实验中可媲美基准CNN
-
-https://zhuanlan.zhihu.com/p/46633171
-
-深度卷积神经网络中的降采样
-
-https://mp.weixin.qq.com/s/1gBC-bp4Q4dPr0XMYPStXA
-
-万字长文带你看尽深度学习中的各种卷积网络
-
-https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
-
-微软亚洲研究院：逐层集中Attention的卷积模型
-
-http://blog.csdn.net/shuzfan/article/details/77964370
-
-不规则卷积神经网络
-
-https://mp.weixin.qq.com/s/rXr_XBc2Psh3NSA0pj4ptQ
-
-常建龙：深度卷积网络中的卷积算子研究进展
-
-https://mp.weixin.qq.com/s/i8vOeAVEYX-hRAvPSe6DEA
-
-一文看尽神经网络中不同种类的卷积层
-
-https://mp.weixin.qq.com/s/hZc8MgHoE010hnzLU-trIA
-
-高性能涨点的动态卷积DyNet与CondConv、DynamicConv有什么区别联系？
-
-https://www.yuque.com/yahei/hey-yahei/condconv
-
-CondConv：按需定制的卷积权重
-
-https://mp.weixin.qq.com/s/eRZ3jNuceMYKE3lEj-g1aw
-
-动态卷积：自适应调整卷积参数，显著提升模型表达能力

@@ -4,9 +4,25 @@ title:  深度学习（八）——ResNet, Bi-directional RNN, seq2seq
 category: DL 
 ---
 
-# 神经元激活函数进阶
+# 神经元激活函数进阶（续）
 
-## 参考（续）
+### soft sign
+
+$$\text{softsign}(x)=\frac{x}{1+\mid x\mid }$$
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/22142013
+
+深度学习中的激活函数导引
+
+http://blog.csdn.net/u012328159/article/details/69898137
+
+几种常见的激活函数
+
+https://mp.weixin.qq.com/s/Hic01RxwWT_YwnErsJaipQ
+
+什么是激活函数？
 
 https://mp.weixin.qq.com/s/4gElB_8AveWuDVjtLw5JUA
 
@@ -321,13 +337,3 @@ https://mp.weixin.qq.com/s/_1lr612F3x8ld9gvXj9L2A
 **实例分割**：把图像中的每一个像素分到其所属物体实例。数据集：PASCAL, COCO
 
 **关键点检测**：检测物体上一组预定义关键点的位置，例如人体上或者人脸上的关键点。数据集：COCO
-
-参考：
-
-https://github.com/weiaicunzai/awesome-image-classification
-
-GitHub：图像分类最全资料集锦
-
-https://mp.weixin.qq.com/s/nK__d-PV6DY5mDfA_UgDmQ
-
-全解：目标检测，图像分类、分割、生成……

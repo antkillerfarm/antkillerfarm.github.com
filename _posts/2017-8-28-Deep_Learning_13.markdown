@@ -4,6 +4,48 @@ title:  深度学习（十三）——花式池化, Regularization, 深度信息
 category: DL 
 ---
 
+# 花式卷积（续）
+
+https://mp.weixin.qq.com/s/ybI8kJPRn7sH-hJbc5uqnw
+
+CMU研究者探索新卷积方法：在实验中可媲美基准CNN
+
+https://zhuanlan.zhihu.com/p/46633171
+
+深度卷积神经网络中的降采样
+
+https://mp.weixin.qq.com/s/1gBC-bp4Q4dPr0XMYPStXA
+
+万字长文带你看尽深度学习中的各种卷积网络
+
+https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
+
+微软亚洲研究院：逐层集中Attention的卷积模型
+
+http://blog.csdn.net/shuzfan/article/details/77964370
+
+不规则卷积神经网络
+
+https://mp.weixin.qq.com/s/rXr_XBc2Psh3NSA0pj4ptQ
+
+常建龙：深度卷积网络中的卷积算子研究进展
+
+https://mp.weixin.qq.com/s/i8vOeAVEYX-hRAvPSe6DEA
+
+一文看尽神经网络中不同种类的卷积层
+
+https://mp.weixin.qq.com/s/hZc8MgHoE010hnzLU-trIA
+
+高性能涨点的动态卷积DyNet与CondConv、DynamicConv有什么区别联系？
+
+https://www.yuque.com/yahei/hey-yahei/condconv
+
+CondConv：按需定制的卷积权重
+
+https://mp.weixin.qq.com/s/eRZ3jNuceMYKE3lEj-g1aw
+
+动态卷积：自适应调整卷积参数，显著提升模型表达能力
+
 # 花式池化
 
 池化和卷积一样，都是信号采样的一种方式。
@@ -277,59 +319,3 @@ https://github.com/harpribot/awesome-information-retrieval
 https://mp.weixin.qq.com/s/5ba3EM6e9R-i3UpzUhm49w
 
 神经信息检索导论，微软研究员129页最新书册
-
-https://mp.weixin.qq.com/s/jZCHyjhTW9JHW3xQSTzyYA
-
-深度学习搜索，Deep Learning for Search，327页pdf
-
-https://mp.weixin.qq.com/s/aZsj1FQnzHOr-YBcy_ljpw
-
-DNN在搜索场景中的应用
-
-https://mp.weixin.qq.com/s/1jgdI-Pt0PtN3oAs0Wh4XA
-
-阿里提出电商搜索全局排序方法，淘宝无线主搜GMV提升5%
-
-https://mp.weixin.qq.com/s/9Fcj5lO-JPfFVnRSSM_56w
-
-深度学习在美团搜索广告排序的应用实践
-
-https://mp.weixin.qq.com/s/wni3F9lKuO4OT32BVe0QDQ
-
-谷歌发大招：搜索全面AI化，不用关键词就能轻松“撩书”
-
-https://mp.weixin.qq.com/s/TrWwp-DBTrKqIT_Pfy_o5w
-
-阿里妈妈首次公开新一代智能广告检索模型，重新定义传统搜索框架
-
-https://mp.weixin.qq.com/s/fZv9FgbdQ1bWPoNdl9sF1A
-
-“宝石迷阵”与信息检索
-
-https://mp.weixin.qq.com/s/Vvo3Ti3XiGQz0IwLgATfWQ
-
-电商搜索算法技术的演进
-
-https://mp.weixin.qq.com/s/MpuUdZi8CWcu0b-ij-bHjA
-
-Jeff Dean出品：用机器学习索引替代B-Trees，3倍性能提升，10-100倍空间缩小
-
-https://mp.weixin.qq.com/s/uztYEW_azetOkOGiZcbCuw
-
-JeffDean又用深度学习搞事情：这次要颠覆整个计算机系统结构设计。这篇blog介绍了如何用DL方法提高内存访问的命中率。
-
-https://zhuanlan.zhihu.com/p/37020639
-
-读论文系列：CVPR2018 SSAH
-
-https://mp.weixin.qq.com/s/TdnstQaBcLaXg8BvuR7oYA
-
-基于素描图的细粒度图像检索
-
-https://mp.weixin.qq.com/s/N3JBHlqneG9dI0I26M3wHQ
-
-如何做好大规模视觉搜索？eBay基于实践总结出了7条建议
-
-https://mp.weixin.qq.com/s/8Twe3e3WKCY9pTiNtnW2sg
-
-重磅！谷歌等推出基于机器学习的数据库SageDB

@@ -1,10 +1,26 @@
 ---
 layout: post
-title:  深度学习（三）——Neural Network Zoo, CNN
+title:  深度学习（三）——深度学习常用术语解释, Neural Network Zoo, CNN
 category: DL 
 ---
 
-# 深度学习常用术语解释（续）
+# 深度学习常用术语解释
+
+## 深度学习中epoch、batch size、iterations的区别
+
+one epoch：所有的训练样本完成一次Forword运算和BP运算。
+
+batch size：一次Forword运算以及BP运算中所需要的训练样本数目，其实深度学习每一次参数的更新所需要损失函数并不是由一个{data：label}获得的，而是由一组数据加权得到的，这一组数据的数量就是[batch size]。当然batch size越大，所需的内存就越大，要量力而行。
+
+iterations（迭代）：每一次迭代都是一次权重更新，每一次权重更新需要batch size个数据进行Forward运算得到损失函数，再BP算法更新参数。
+
+最后可以得到一个公式one epoch = numbers of iterations = N = 训练样本的数量/batch size
+
+参考：
+
+https://zhuanlan.zhihu.com/p/83626029
+
+浅析深度学习中Batch Size大小对训练过程的影响
 
 ## Vanilla
 
@@ -266,25 +282,3 @@ CNN网络中，2D全连接的神经元则控制了局部感受野，有利于解
 https://mp.weixin.qq.com/s/dIIWAKv9woLO8M0CyN8lsw
 
 传统计算机视觉技术落伍了吗？不，它们是深度学习的“新动能”
-
-### 池化
-
-Pooling操作（也称Subsampling）使输入表示（特征维度）变得更小，并且网络中的参数和计算的数量更加可控的减小，因此，可以控制过拟合。
-
-它还可使网络对于输入图像中更小的变化、冗余和变换变得不变性。
-
-### Gaussian Connections
-
-LeNet-5最后一步的Gaussian Connections是一个当年的历史遗迹，目前已经被Softmax所取代。它的含义在上面提到的Yann LeCun的原始论文中有描述。
-
->注意：现代版的LeNet-5最后一步的Softmax层，实际上包含了$$Wx+b$$和Softmax两种计算。相当于用Softmax函数替换Sigmoid/ReLU函数。
-
-### 其他
-
-![](/images/article/CNN_1.jpg)
-
-上图展示了不同分类的图片特征在特征空间中的分布，可以看出在CNN的低层中，这些特征是混杂在一起的；而到了CNN的高层，这些特征就被区分开来了。
-
-![](/images/article/CNN_2.jpg)
-
-上图是若干ML、DL算法按照不同维度划分的情况。

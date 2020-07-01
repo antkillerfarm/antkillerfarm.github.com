@@ -160,6 +160,10 @@ https://mp.weixin.qq.com/s/KsGGMCKsQlHYxXONOTthGQ
 
 ----
 
+![](/images/img3/spectrum.png)
+
+----
+
 $$\pi$$的平方与重力加速度g在数值上极其接近。
 
 也许有人就会跳出来说，各星球重力加速度不同、量纲不同，这一看就是巧合啊。

@@ -1,10 +1,31 @@
 ---
 layout: post
-title:  深度学习（四）——AutoEncoder, 词向量（1）
-category: DL 
+title:  深度学习（四）——AutoEncoder
 ---
 
 # CNN（续）
+
+### 池化
+
+Pooling操作（也称Subsampling）使输入表示（特征维度）变得更小，并且网络中的参数和计算的数量更加可控的减小，因此，可以控制过拟合。
+
+它还可使网络对于输入图像中更小的变化、冗余和变换变得不变性。
+
+### Gaussian Connections
+
+LeNet-5最后一步的Gaussian Connections是一个当年的历史遗迹，目前已经被Softmax所取代。它的含义在上面提到的Yann LeCun的原始论文中有描述。
+
+>注意：现代版的LeNet-5最后一步的Softmax层，实际上包含了$$Wx+b$$和Softmax两种计算。相当于用Softmax函数替换Sigmoid/ReLU函数。
+
+### 其他
+
+![](/images/article/CNN_1.jpg)
+
+上图展示了不同分类的图片特征在特征空间中的分布，可以看出在CNN的低层中，这些特征是混杂在一起的；而到了CNN的高层，这些特征就被区分开来了。
+
+![](/images/article/CNN_2.jpg)
+
+上图是若干ML、DL算法按照不同维度划分的情况。
 
 ## 多通道卷积
 
@@ -323,15 +344,3 @@ https://zhuanlan.zhihu.com/p/82415579
 https://mp.weixin.qq.com/s/PJ-FiDQ7zYN_9rFVWkpeQA
 
 降维算法：主成分分析 VS 自动编码器
-
-# 词向量
-
-## One-hot Representation
-
-NLP是ML和DL的重要研究领域。但是多数的ML或DL算法都是针对数值进行计算的，因此如何将自然语言中的文本表示为数值，就成为了一个重要的基础问题。
-
-词向量顾名思义就是单词的向量化表示。最简单的词向量表示法当属**One-hot Representation**：
-
-假设语料库的单词表中有N个单词，则词向量可表示为N维向量$$[0,\dots,0,1,0,\dots,0]$$
-
-这种表示法由于N维向量中只有一个非零元素，故名。该非零元素的序号，就是所表示的单词在单词表中的序号。

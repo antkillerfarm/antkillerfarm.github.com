@@ -4,19 +4,31 @@ title:  深度学习（七）——神经元激活函数进阶
 category: DL 
 ---
 
-# LSTM
+# LSTM（续）
 
-### 确定更新的信息（续）
+## 步骤详解
+
+神经网络的设计方式和其他算法不同，我们不需要指定具体的参数，而只需要给出一个功能的实现机制，然后借助误差的反向传播算法，训练得到相应的参数。这一点在LSTM上体现的尤为明显。
+
+LSTM主要包括以下4个步骤（也可称为4个功能或门）：
+
+- 决定丢弃信息
+
+![](/images/article/LSTM_1.png)
+
+这一部分也被称为**忘记门**。
+
+- 确定更新的信息
 
 ![](/images/article/LSTM_2.png)
 
 这一部分也被称为**输入门**。
 
-### 更新细胞状态
+- 更新细胞状态
 
 ![](/images/article/LSTM_3.png)
 
-### 输出信息
+- 输出信息
 
 ![](/images/article/LSTM_4.png)
 
@@ -323,21 +335,3 @@ $$\text{HardSigmoid}(x)=\begin{cases}
 \end{cases}$$
 
 ![](/images/img3/hard_sigmoid2.png)
-
-### soft sign
-
-$$\text{softsign}(x)=\frac{x}{1+\mid x\mid }$$
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/22142013
-
-深度学习中的激活函数导引
-
-http://blog.csdn.net/u012328159/article/details/69898137
-
-几种常见的激活函数
-
-https://mp.weixin.qq.com/s/Hic01RxwWT_YwnErsJaipQ
-
-什么是激活函数？

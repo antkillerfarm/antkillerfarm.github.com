@@ -142,6 +142,64 @@ https://zhuanlan.zhihu.com/p/143161957
 
 点积 vs. MLP：推荐模型到底用哪个更好？
 
+# 深度信息检索+
+
+https://mp.weixin.qq.com/s/jZCHyjhTW9JHW3xQSTzyYA
+
+深度学习搜索，Deep Learning for Search，327页pdf
+
+https://mp.weixin.qq.com/s/aZsj1FQnzHOr-YBcy_ljpw
+
+DNN在搜索场景中的应用
+
+https://mp.weixin.qq.com/s/1jgdI-Pt0PtN3oAs0Wh4XA
+
+阿里提出电商搜索全局排序方法，淘宝无线主搜GMV提升5%
+
+https://mp.weixin.qq.com/s/9Fcj5lO-JPfFVnRSSM_56w
+
+深度学习在美团搜索广告排序的应用实践
+
+https://mp.weixin.qq.com/s/wni3F9lKuO4OT32BVe0QDQ
+
+谷歌发大招：搜索全面AI化，不用关键词就能轻松“撩书”
+
+https://mp.weixin.qq.com/s/TrWwp-DBTrKqIT_Pfy_o5w
+
+阿里妈妈首次公开新一代智能广告检索模型，重新定义传统搜索框架
+
+https://mp.weixin.qq.com/s/fZv9FgbdQ1bWPoNdl9sF1A
+
+“宝石迷阵”与信息检索
+
+https://mp.weixin.qq.com/s/Vvo3Ti3XiGQz0IwLgATfWQ
+
+电商搜索算法技术的演进
+
+https://mp.weixin.qq.com/s/MpuUdZi8CWcu0b-ij-bHjA
+
+Jeff Dean出品：用机器学习索引替代B-Trees，3倍性能提升，10-100倍空间缩小
+
+https://mp.weixin.qq.com/s/uztYEW_azetOkOGiZcbCuw
+
+JeffDean又用深度学习搞事情：这次要颠覆整个计算机系统结构设计。这篇blog介绍了如何用DL方法提高内存访问的命中率。
+
+https://zhuanlan.zhihu.com/p/37020639
+
+读论文系列：CVPR2018 SSAH
+
+https://mp.weixin.qq.com/s/TdnstQaBcLaXg8BvuR7oYA
+
+基于素描图的细粒度图像检索
+
+https://mp.weixin.qq.com/s/N3JBHlqneG9dI0I26M3wHQ
+
+如何做好大规模视觉搜索？eBay基于实践总结出了7条建议
+
+https://mp.weixin.qq.com/s/8Twe3e3WKCY9pTiNtnW2sg
+
+重磅！谷歌等推出基于机器学习的数据库SageDB
+
 # 语义分割的展望
 
 俗话说，“没有免费的午餐”（“No free lunch”）。基于深度学习的图像语义分割技术虽然可以取得相比传统方法突飞猛进的分割效果，但是其对数据标注的要求过高：不仅需要海量图像数据，同时这些图像还需提供精确到像素级别的标记信息（Semantic labels）。因此，越来越多的研究者开始将注意力转移到弱监督（Weakly-supervised）条件下的图像语义分割问题上。在这类问题中，图像仅需提供图像级别标注（如，有“人”，有“车”，无“电视”）而不需要昂贵的像素级别信息即可取得与现有方法可比的语义分割精度。

@@ -1,12 +1,20 @@
 ---
 layout: post
-title:  深度学习（五）——词向量（2）
+title:  深度学习（五）——词向量
 category: DL 
 ---
 
 # 词向量
 
-## One-hot Representation（续）
+## One-hot Representation
+
+NLP是ML和DL的重要研究领域。但是多数的ML或DL算法都是针对数值进行计算的，因此如何将自然语言中的文本表示为数值，就成为了一个重要的基础问题。
+
+词向量顾名思义就是单词的向量化表示。最简单的词向量表示法当属**One-hot Representation**：
+
+假设语料库的单词表中有N个单词，则词向量可表示为N维向量$$[0,\dots,0,1,0,\dots,0]$$
+
+这种表示法由于N维向量中只有一个非零元素，故名。该非零元素的序号，就是所表示的单词在单词表中的序号。
 
 某牛点评：
 
@@ -262,9 +270,3 @@ https://mp.weixin.qq.com/s/Ta2Im4WCWq5eQ8SF-mNpuQ
 https://mp.weixin.qq.com/s/6XJuZBTmfRWWFwS9J3HOsQ
 
 推荐技术随谈
-
-## word2vec/doc2vec的缺点
-
-1.word2vec/doc2vec基于BOW（Bag Of Word，词袋）模型。该模型的特点是忽略词序，因此对于那些交换词序会改变含义的句子，无法准确评估它们的区别。
-
-2.虽然我们一般使用word2vec/doc2vec来比较文本相似度，但是从原理来说，word2vec/doc2vec提供的是关联性（relatedness），而不是相似性（similarity）。这会带来以下问题：不但近义词的词向量相似，反义词的词向量也相似。因为它们和其他词的关系（也就是语境）是类似的。

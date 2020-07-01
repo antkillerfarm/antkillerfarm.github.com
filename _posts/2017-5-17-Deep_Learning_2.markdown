@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二）——神经元激活函数, Dropout, 深度学习常用术语解释
+title:  深度学习（二）——神经元激活函数, Dropout
 category: DL 
 ---
 
@@ -21,6 +21,8 @@ $$\sqrt{\frac{2}{n_l}}$$
 
 何恺明在训练ResNet的时候发现Xavier方法对于ReLU激活不是太有效，故而提出了新方法。
 
+除了随机初始化之外，还有**预训练初始化**。比较早期的方法是使用greedy layerwise auto-encoder做无监督学习的预训练，经典代表为Deep Belief Network；而现在更为常见的是有监督的预训练+模型微调。
+
 参考：
 
 https://pouannes.github.io/blog/initialization/
@@ -34,6 +36,10 @@ https://mp.weixin.qq.com/s/_wt-zTpbd25OL3os0X6cJg
 https://mp.weixin.qq.com/s/Nmi4u8LKrsjYKH3_3vmaVQ
 
 神经网络初始化trick：大神何凯明教你如何训练网络！
+
+https://mp.weixin.qq.com/s/DCYusE1lwvm14qpsnPYMpw
+
+初始化：你真的了解我吗？
 
 ## BP算法的缺点
 
@@ -262,21 +268,3 @@ $$W_{ij} \to (1-p)W_{ij}$$
 https://mp.weixin.qq.com/s/cP8KO3JPIn4lK-n-KdUejA
 
 Dropout有哪些细节问题？
-
-# 深度学习常用术语解释
-
-## 深度学习中epoch、batch size、iterations的区别
-
-one epoch：所有的训练样本完成一次Forword运算和BP运算。
-
-batch size：一次Forword运算以及BP运算中所需要的训练样本数目，其实深度学习每一次参数的更新所需要损失函数并不是由一个{data：label}获得的，而是由一组数据加权得到的，这一组数据的数量就是[batch size]。当然batch size越大，所需的内存就越大，要量力而行。
-
-iterations（迭代）：每一次迭代都是一次权重更新，每一次权重更新需要batch size个数据进行Forward运算得到损失函数，再BP算法更新参数。
-
-最后可以得到一个公式one epoch = numbers of iterations = N = 训练样本的数量/batch size
-
-参考：
-
-https://zhuanlan.zhihu.com/p/83626029
-
-浅析深度学习中Batch Size大小对训练过程的影响
