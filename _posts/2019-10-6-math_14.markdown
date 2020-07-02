@@ -152,43 +152,9 @@ https://mp.weixin.qq.com/s/zoMJpYQeAAt6GmjPDx863Q
 
 这个“橡皮泥几何”，竟然解决了城中村难题！实在是太牛了！
 
-# Lie Groups
-
-《State estimation for Robotics: A Matrix Lie Group Approach》
-
->Marius Sophus Lie，1842～1899，挪威数学家。University of Christiania博士（1871），University of Leipzig教授。当时德国的大学，一个系只有一个教授，所以这里的教授相当于现在的系主任或者院长。Lie接的是Felix Klein的班，后者跑到University of Göttingen当教授去了。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/33156814
-
-李群和李代数
-
-https://zhuanlan.zhihu.com/p/76959511
-
-李群和李代数（一）：刚体的三维运动
-
-https://zhuanlan.zhihu.com/p/77576417
-
-李群和李代数（二）：矩阵李群基础
-
-https://zhuanlan.zhihu.com/p/80663767
-
-李群和李代数（三）：优化基础
-
-https://zhuanlan.zhihu.com/p/87438999
-
-李群和李代数（四）：姿态估计小结
-
-## Sophus
-
-Sophus是一个C++写的Lie Groups的库。显然，它得名自Marius Sophus Lie。
-
-代码：
-
-https://github.com/strasdat/Sophus
-
 # 莫比乌斯反演
+
+>August Ferdinand Möbius，1790～1868，德国数学家、天文学家。University of Leipzig毕业后，曾在University of Göttingen访学，导师Gauss。University of Leipzig教授，Leipzig天文台台长。
 
 http://blog.csdn.net/acdreamers/article/details/8542292
 
@@ -213,6 +179,34 @@ http://blog.csdn.net/hzj1054689699/article/details/51659994
 http://blog.csdn.net/outer_form/article/details/50588307
 
 莫比乌斯反演定理证明
+
+https://zhuanlan.zhihu.com/p/36390998
+
+Möbius inversion and Dirichlet convolution
+
+----
+
+Mobius Band可能是Mobius更著名的发现。
+
+![](/images/img3/Mobius_band.jpg)
+
+类似的还有Klein bottle。
+
+![](/images/img3/Klein_bottle.jpg)
+
+>Felix Christian Klein，1849~1925，德国数学家。University of Bonn博士（1868），先后执教于Institute of Technology in Munich、Universities of Leipzig、Göttingen。
+
+需要注意的是，Mobius Band一种2维变换，所以可以映射到3维空间，而Klein bottle本身是3维变换，只有在4维空间才能看到它的真面目，所以克莱因瓶实际上是造不出来的。
+
+https://www.zhihu.com/question/23922861
+
+克莱因瓶能否制造出来？
+
+参考：
+
+https://mp.weixin.qq.com/s/E-I_3C-3m0KTI1XjYaKWcA
+
+陶哲轩挑战失败的百年数学问题，被两名在家隔离的数学家破解了。（任何简单闭合环路，是否总能在其上找到四个点形成一个任意长宽比矩形？）
 
 # Wavelet & Chirplet
 

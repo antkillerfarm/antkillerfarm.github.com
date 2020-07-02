@@ -1,10 +1,42 @@
 ---
 layout: post
-title: 两弹一星, 阿波罗50年
+title: 两弹一星
 category: Nature 
 ---
 
 # 两弹一星（续）
+
+1970年4月24日，发射当天，由于通讯指挥的需要，需要动用全国60%的通讯线路，来确保航线安全。
+
+当时，全国60多万人，在广袤的祖国大地2000多公里航线沿线上，守护着一棵棵电杆、一段段电线，确保了通信畅通。
+
+https://mp.weixin.qq.com/s/hOymVfSV7DCwqAX3GW5XGg
+
+纪念中国首颗人造卫星东方红一号发射50周年：念念不忘 必有回响
+
+https://mp.weixin.qq.com/s/QILTyVijDS8KfNZO-2bydg
+
+东方红一号最新照片，长这样！
+
+https://mp.weixin.qq.com/s/CUefu_-Tzcw0Cxn7sgrZ0g
+
+东方红一号还在唱歌吗？我爸说亲眼见过它，是不是在吹牛？
+
+https://mp.weixin.qq.com/s/AWgYiHJoyQ0vMBaof_c9AA
+
+中国为什么要有人造卫星？答案也许就在五十年前的这封信中
+
+https://mp.weixin.qq.com/s/3OWh2w9h1NQLlniIb1fH9A
+
+东方红一号还在飞！50年前中国人拿什么造的？
+
+----
+
+![](/images/article/nuclear.png)
+
+美国那点原子弹，消灭不了中国人。即使美国原子弹威力再大，投到中国来，把地球打穿了，把地球炸毁了，对于太阳系来说还算是一件大事，但对整个宇宙来说，也算不了什么。
+
+----
 
 2019.12.17 山东号航空母舰入列。
 
@@ -113,57 +145,3 @@ https://mp.weixin.qq.com/s/nwVRBs06zAAyyvROClGE2g
 斗争是团结的手段，团结是斗争的目的。以斗争求团结则团结存，以退让求团结则团结亡。
 
 我们的同志在困难的时候，要看到成绩，要看到光明，要提高我们的勇气。
-
-![](/images/img3/korea_war.webp)
-
-http://www.china.com.cn/ch-America/Wenxian/53-9-12.htm
-
-毛泽东:抗美援朝的胜利和意义
-
-----
-
-![](/images/img3/top10.png)
-
-https://mp.weixin.qq.com/s/1NXjgkr3xWDzqm7Y-9x7-Q
-
-从核潜艇到华龙一号：“其他大国有的，我们也要有”
-
-https://mp.weixin.qq.com/s/sRVb8qGtbsuqCvHSrlL9mQ
-
-卡住中国脖子的35项技术
-
-https://mp.weixin.qq.com/s/wsGgWzyaslXCQflaP2ccXA
-
-60年前首登珠峰，他是唯一在世亲历者
-
-https://mp.weixin.qq.com/s/zwlOZzdGlqTFGSg3H9zNxQ
-
-珠峰变“绿”，“隐者”现身，这些年的珠峰发生了什么？
-
-https://mp.weixin.qq.com/s/MCAR8M2DoV30-McdsjTxDw
-
-徒步横穿南极大陆第一人
-
->秦大河，1947年生，地理学家，中国科学院院士，第三世界科学院院士。曾任中国气象局局长、中国科学技术协会副主席等
-
-# 阿波罗50年
-
-https://mp.weixin.qq.com/s/79e6p2TYpttO-NR1of21jw
-
-月之梦的起源
-
-https://mp.weixin.qq.com/s/QtvKdwbuzUJICjdKbcPIlg
-
-登月究竟是真是假？
-
-https://view.inews.qq.com/a/TEC201907170006770C
-
-别误会，那个经典的月球脚印不是阿姆斯特朗的（巴兹·奥尔德林）
-
-https://mp.weixin.qq.com/s/OdMaaP_gE1rR_rd14LfA9w
-
-战争与登月的渊源
-
-https://mp.weixin.qq.com/s/YRJpHvlEulfBFm8HpBYBZQ
-
-苏联开启的登月序曲

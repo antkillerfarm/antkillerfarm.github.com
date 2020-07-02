@@ -6,6 +6,22 @@ category: AI
 
 # OpenCV
 
+https://mp.weixin.qq.com/s/PibBxTkVJNM0n_wXHS99KQ
+
+OpenCV基于Landmark实现人脸交换
+
+https://mp.weixin.qq.com/s/DN2bl429DjVB3HWp-2HTTg
+
+OpenCV图像噪声与去噪函数方法对比使用介绍
+
+https://mp.weixin.qq.com/s/V-msRCrMDUD5nwp6y0tiPQ
+
+OpenCV人脸检测与三角剖分绘制
+
+https://mp.weixin.qq.com/s/mqgKVvZWnrNlImbTmay5PA
+
+OpenCV实现图像连通组件标记与分析
+
 https://mp.weixin.qq.com/s/II76kX7khztkHtDIvKvHqw
 
 OpenCV中实现曲线与圆拟合

@@ -276,6 +276,14 @@ https://mp.weixin.qq.com/s/X-CEAOiOc46B7NrjGH9Mjg
 
 二维码检测哪家强？五大开源库测评比较
 
+https://mp.weixin.qq.com/s/Hv0rPD29PPd3Rn6lW6w5dg
+
+教你使用Python制作酷炫二维码
+
+https://mp.weixin.qq.com/s/LAqomHKhyc6nkr6d5OxyHw
+
+生成自定义二维码，5行Python代码就搞定
+
 ## 参考
 
 https://mp.weixin.qq.com/s/R2kGr7NHorfnpHV9OD18Qw
@@ -441,19 +449,3 @@ OpenCV基于DLCO描述子匹配
 https://mp.weixin.qq.com/s/JVuxMUmN2_DNfg1Ol5b8cw
 
 OpenCV3新特性-图像无缝克隆函数演示
-
-https://mp.weixin.qq.com/s/PibBxTkVJNM0n_wXHS99KQ
-
-OpenCV基于Landmark实现人脸交换
-
-https://mp.weixin.qq.com/s/DN2bl429DjVB3HWp-2HTTg
-
-OpenCV图像噪声与去噪函数方法对比使用介绍
-
-https://mp.weixin.qq.com/s/V-msRCrMDUD5nwp6y0tiPQ
-
-OpenCV人脸检测与三角剖分绘制
-
-https://mp.weixin.qq.com/s/mqgKVvZWnrNlImbTmay5PA
-
-OpenCV实现图像连通组件标记与分析

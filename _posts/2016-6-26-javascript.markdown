@@ -252,6 +252,10 @@ https://mp.weixin.qq.com/s/pBKoRBO_Grp1otGlDp5pUw
 
 教你做个属于自己的Markdown编辑器
 
+https://mp.weixin.qq.com/s/vq2znBRXqW3kAtk5Ixn_Jg
+
+JavaScript和Node.js简史，前端未来走向何方？
+
 ## CEF
 
 Chromium Embedded Framework的官网是：

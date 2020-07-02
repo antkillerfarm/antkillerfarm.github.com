@@ -354,6 +354,10 @@ https://mp.weixin.qq.com/s/dk_sl3OvPwvnRWPpPJ4D_Q
 
 USB3.1 Type-C高速接口设计指南
 
+https://zhuanlan.zhihu.com/p/153254485
+
+为什么短路的USB设备不会烧掉你的主板？著名的USB Killer又是怎么干掉主板的？
+
 https://mp.weixin.qq.com/s/AJA01Cvm3k2HntUUAg9FPg
 
 关于“陶瓷电容”，你不知道的事

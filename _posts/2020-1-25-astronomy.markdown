@@ -80,6 +80,20 @@ https://www.zhihu.com/question/47287395/answer/106715405
 
 金星每八年的运行轨迹真的是五角形吗？
 
+----
+
+![](/images/img3/Chicxulub-Crater-Yucatan.jpg)
+
+![](/images/img3/NEA.png)
+
+希克苏鲁伯陨石坑（Chicxulub Crater）是一个在墨西哥犹加敦或称尤卡坦半岛发现的陨石坑撞击遗迹。它的中心在一个叫做Chicxulub的村庄上，故名。然而由于坑太大，在坑底反而是一马平川，没啥坑。
+
+参见：
+
+https://mp.weixin.qq.com/s/-8WDtspQqL0ztmb7PJtokw
+
+当小行星来袭，除了让地球流浪，我们还能怎么做？
+
 ## 天体物理
 
 https://www.zhihu.com/question/40030083
@@ -310,22 +324,11 @@ https://github.com/achael/eht-imaging
 
 https://people.csail.mit.edu/klbouman/
 
+----
+
 Margaret Heafield Hamilton，1936年生，美国计算机科学家。发明了“software engineering”一词。在MIT期间，负责领导了Apollo计划的飞行软件的设计工作。
 
 ![](/images/img2/Margaret_Hamilton.jpg)
 
 上图是1969年Margaret和她的小组所编写的软件代码的合影。
 
-Hedy Lamarr，1913～2000，美国好莱坞默片时期著名女演员，生于奥地利一个富裕的犹太人银行家庭。她曾与克拉克·盖博等顶级男星合作，主演了多部热门影片。19岁时在电影《神魂颠倒》中裸泳成为世界电影史上第一位裸体出镜的女演员。一生曾有过八次婚姻。
-
-她曾被认为是全欧最美的女人，并因美貌盖过了演技而被人称为花瓶。有意思的是，她其实数学和通信功底很深，是现代无线通信的核心专利跳频技术的第一发明者，CDMA、WiFi等技术都以此为基础。美国电话局主席安东尼·罗德（Anthony Loder）对她的评价所说：“虽然Hedy Lamarr已经被大家遗忘了，但她所做出的一切仍然影响着一代又一代的人。”
-
-参考：
-
-https://mp.weixin.qq.com/s/sIPKApVO-2OYlMKuSl1ZKg
-
-黑洞成像背后的算法
-
-https://mp.weixin.qq.com/s/xPAJ00EImF4mnv79aeVltg
-
-浅析黑洞成像背后的稀疏重构算法原理

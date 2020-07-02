@@ -222,6 +222,10 @@ https://mp.weixin.qq.com/s/0OiEzrALzCkUEdJz87hPwQ
 
 RIPPLES：BERT控制术
 
+https://mp.weixin.qq.com/s/kmxRXvURSsRnIKRNVQkmmg
+
+同态加密技术及其在机器学习中的应用详解
+
 # 数据结构 & 普通CS算法
 
 ## TopK

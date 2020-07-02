@@ -258,6 +258,10 @@ https://mp.weixin.qq.com/s/MGPne4SotdHVWu2cIZvfog
 
 深入了解关系抽取你需要知道的东西
 
+https://mp.weixin.qq.com/s/J1-0A2Wc2xNqqW14uIkigQ
+
+NLP中关系抽取的概念，发展及其展望
+
 ## 短文本相似度
 
 https://wenku.baidu.com/view/d38ab1e8856a561252d36fab.html
