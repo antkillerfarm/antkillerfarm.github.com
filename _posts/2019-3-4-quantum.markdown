@@ -97,6 +97,10 @@ https://mp.weixin.qq.com/s/xgF61ageCtk4hZMsQqgpEg
 
 为什么Google的量子霸权纯属忽悠大众
 
+https://mp.weixin.qq.com/s/GBeTausaAIf0W2cD7wt47Q
+
+从基础量子位到当下火热的量子计算机，一文助你入门量子计算
+
 # 遗传算法 & 进化算法
 
 http://blog.csdn.net/u010945683/article/details/40987331

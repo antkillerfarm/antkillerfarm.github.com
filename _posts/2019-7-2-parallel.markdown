@@ -328,6 +328,16 @@ EB级系统空中换引擎：阿里调度执行框架如何全面升级？（DAG
 
 # 图数据库+
 
+## 其他图数据库
+
+开源的、流行的图数据库主要有以下几种：Neo4j、OrientDB、ArangoDB、JanusGraph、Dgraph。
+
+Neo4j历史悠久，且长期处于图数据库领域的龙头地位，但它开源的社区版本只支持单机，不支持分布式。
+
+OrientDB和ArangoDB起步比较早，最初是一个单机的图数据库，后来随着用户数据量的不断增加，增加了分布式模式，但支持的不是很好。
+
+JanusGraph和Dgraph发展的比较晚，从设计之初就考虑了分布式和扩展性，所以对分布式支持的非常好，且都是完全开源免费的。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/YfNlDoGOlHtpG9VFBCZHnQ
@@ -353,3 +363,7 @@ Dgraph简介篇
 https://mp.weixin.qq.com/s/rhtaVTON761wxGDqT9EIoQ
 
 Dgraph原理篇
+
+https://mp.weixin.qq.com/s/5nBS0FiOynhGS6mY2dZ1ng
+
+分布式图数据库在贝壳的应用实践

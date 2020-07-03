@@ -208,6 +208,10 @@ https://zhuanlan.zhihu.com/p/44958351
 
 研习U-Net
 
+https://mp.weixin.qq.com/s/34HxF5qCulGd1zyATH7ZuA
+
+将U-Net用于图像去雾任务，一种具有密集特征融合的多尺度增强去雾网络
+
 # 语义分割进阶
 
 https://mp.weixin.qq.com/s/_q8N8keNpcD-jXLrRd_8dw

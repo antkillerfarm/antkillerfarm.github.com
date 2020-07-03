@@ -129,7 +129,7 @@ http://files.cnblogs.com/files/leoleo/matrix_rules.pdf
 
 https://zhuanlan.zhihu.com/p/35323714
 
-梯度、散度、旋度、Jacobian、Hessian、Laplacian 的关系图
+梯度、散度、旋度、Jacobian、Hessian、Laplacian的关系图
 
 ## 梯度下降算法
 

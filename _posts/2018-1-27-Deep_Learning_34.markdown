@@ -266,6 +266,10 @@ https://zhuanlan.zhihu.com/p/109935332
 
 万物皆可embedding
 
+https://mp.weixin.qq.com/s/iMU2LPDadmVMgzUifw3-XA
+
+浅谈电商搜索推荐中ID类特征的统一建模：Hema Embedding解读
+
 # 深度贝叶斯学习
 
 https://mp.weixin.qq.com/s/4sDNUZiOiS6VH_oRSnW6HQ

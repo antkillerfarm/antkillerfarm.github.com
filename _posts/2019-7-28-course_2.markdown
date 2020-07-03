@@ -415,3 +415,7 @@ https://zhuanlan.zhihu.com/p/53326459
 https://zhuanlan.zhihu.com/p/79712897
 
 动态环境下基于DRL的无人车自适应路径规划方法
+
+https://mp.weixin.qq.com/s/LdkPnm8vo8oeYzIC0Imlvw
+
+俞扬：强化学习真实环境不好用？那就模拟器来凑！

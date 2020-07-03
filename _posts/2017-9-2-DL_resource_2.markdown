@@ -376,6 +376,10 @@ https://mp.weixin.qq.com/s/FQ8uqDxXemJVLGmktGuZCQ
 
 真实场景中的玻璃检测，有趣的应用
 
+https://mp.weixin.qq.com/s/6L328q9nR7XEYeKdFH3xpQ
+
+CVPR 2020 论文大盘点-去雨去雾去模糊篇
+
 ## 光神经网络
 
 https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
