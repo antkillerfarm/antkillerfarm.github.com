@@ -247,9 +247,17 @@ DosBox是Linux平台玩DOS老游戏的法宝。
 
 ![](/images/article/linux_perf_tools_full.png)
 
+![](/images/img3/linux_kernel_map.png)
+
 原图地址：
 
 http://www.brendangregg.com/linuxperf.html
+
+参考：
+
+https://mp.weixin.qq.com/s/-iCuxQjSghtDGaPMqaDSgQ
+
+Linux思维导图整理
 
 # minicom
 
