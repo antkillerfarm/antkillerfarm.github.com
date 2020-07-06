@@ -291,6 +291,10 @@ https://mp.weixin.qq.com/s/4tAxQ0auQfv5x7Dh3B-85g
 
 Linux内存管理
 
+https://mp.weixin.qq.com/s/jDPxu6IVo3_VpK5l6_-jdQ
+
+Linux系统内存知识
+
 http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html
 
 进程与线程的一个简单解释

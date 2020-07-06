@@ -379,3 +379,11 @@ https://www.top500.org/
 https://zhuanlan.zhihu.com/p/33956771
 
 超算排名之中的地区和架构之争
+
+----
+
+![](/images/img3/SC.png)
+
+https://mp.weixin.qq.com/s/gJWTiMCovGMQ8ye_TovdOw
+
+富士通的这颗芯片凭啥让日本走向了世界之巅？

@@ -172,6 +172,10 @@ https://mp.weixin.qq.com/s/4AnLu0m2IILGwyPyuK37Fg
 
 基本操作：Go创建GraphQL API
 
+https://zhuanlan.zhihu.com/p/157314533
+
+直接干掉RESTful：GraphQL是真的香！
+
 ## LSM (Log Structured Merge)
 
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。其核心思想就是放弃部分读能力，换取写入的最大化能力。
@@ -345,23 +349,3 @@ https://mp.weixin.qq.com/s/ufficZ7cCvRFdEpaAfm8Fg
 https://www.jianshu.com/p/0355d9e5ba0e
 
 数据库三大范式
-
-https://www.cnblogs.com/ahu-lichang/p/10899747.html
-
-数据库三大范式（1NF,2NF,3NF）及ER图
-
-https://mp.weixin.qq.com/s/m_JMXU6iMS4SckzWZYtIUA
-
-腾讯分布式数据库TDSQL金融级能力的架构原理解读
-
-https://mp.weixin.qq.com/s/jdPE9WClBuimIHVxJnwwUw
-
-字节跳动自研强一致在线KV&表格存储实践-上篇
-
-https://mp.weixin.qq.com/s/DvUBnWBqb0XGnicKUb-iqg
-
-字节跳动自研强一致在线KV&表格存储实践-下篇
-
-https://mp.weixin.qq.com/s/oV5F_K2mmE_kK77uEZSjLg
-
-字节跳动分布式表格存储系统的演进

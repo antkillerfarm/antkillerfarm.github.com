@@ -244,6 +244,10 @@ https://mp.weixin.qq.com/s/fsT6rzpL5cuzh2usNjzzbA
 
 一文学习模型融合！从加权融合到stacking, boosting
 
+https://mp.weixin.qq.com/s/lTAekav7kgcbF47Yk-LL-g
+
+最全！两万字带你完整掌握八大决策树！
+
 # 关联规则挖掘
 
 ## 基本概念

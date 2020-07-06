@@ -62,6 +62,10 @@ https://mp.weixin.qq.com/s/p8ll1R9aXc5aELtL3MAEcA
 
 用H5打造用户专属的3D机房（WebGL）
 
+https://github.com/hustcc/canvas-nest.js
+
+动态线条特效
+
 ## Monaco Editor
 
 Monaco Editor是MS开源的一个在线代码编辑工具，可提供类似VS code的功能。

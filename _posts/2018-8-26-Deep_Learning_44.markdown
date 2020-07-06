@@ -289,3 +289,7 @@ https://mp.weixin.qq.com/s/uU1-DwHnU4pPMLtQZNQyVQ
 https://mp.weixin.qq.com/s/klr3jBmiutu2GzH32QcTMA
 
 抖音漫画效果解密
+
+https://mp.weixin.qq.com/s/21yLEWTcRLHNXOuZ3mApRA
+
+一秒拥有自己的卡通头像！

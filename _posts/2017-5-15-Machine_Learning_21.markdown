@@ -284,29 +284,3 @@ https://mp.weixin.qq.com/s/aKRUJt-_1QSQFcRVtuyJ4w
 https://zhuanlan.zhihu.com/p/55036597
 
 样本贡献不均：Focal Loss和Gradient Harmonizing Mechanism
-
-https://mp.weixin.qq.com/s/LfCuOEndS4Y5dPqXTsE_hA
-
-剖析Focal Loss损失函数： 消除类别不平衡+挖掘难分样本
-
-https://mp.weixin.qq.com/s/Ryxu1qsmL_Roi5zDb1KSRQ
-
-AP-Loss：提高单阶段目标检测性能的分类损失，超越Focal loss
-
-## Other Loss
-
-https://mp.weixin.qq.com/s/7Jg-YvS3nvcPJ-zYhK96EA
-
-分享神经网络中设计loss function的一些技巧
-
-https://mp.weixin.qq.com/s/cYcztl8N9JF-XXp9xLJIxg
-
-一文道尽softmax loss及其变种
-
-https://mp.weixin.qq.com/s/MTeuRYutMiCmthEAObyAIg
-
-从最优化的角度看待Softmax损失函数
-
-https://zhuanlan.zhihu.com/p/23340343
-
-Center Loss及其在人脸识别中的应用

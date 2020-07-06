@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  孩子的编程语言, Go, Julia, Rust
+title:  孩子的编程语言, Go, Julia, Rust, 地理
 category: language 
 ---
 
@@ -354,3 +354,97 @@ https://mp.weixin.qq.com/s/JBlzMIhMa7TB5tHGSRhVkQ
 https://mp.weixin.qq.com/s/xGBAGBGsxBDuKkSxXOZRjQ
 
 在Rust代码中编写Python是种怎样的体验？
+
+# 地理
+
+古陆核（craton）是指大陆地壳上长期稳定的构造单元 ，即大陆地壳中长期不受造山运动影响，只受造陆运动发生过变形的相对稳定部分，常与造山带（Orogen）对应。
+
+https://mp.weixin.qq.com/s/-TZH-zVnHcoffyUzhEzwaA
+
+中国为什么地震频发？
+
+----
+
+2017.8.8
+
+九寨沟的7.0级地震，成都有感。这是我有感的第一次7级地震。
+
+汶川地震，我在北京，公司在2楼，完全无感。
+
+芦山地震，我在广州出差，无感。
+
+----
+
+https://mp.weixin.qq.com/s/SukZFrroUmldi25Vfvp2gA
+
+拿下杜克全奖的学霸男神, 却选择了在汶川地震中失去双腿和女儿的她....
+
+----
+
+![](/images/img2/salt_sea.jpg)
+
+https://www.zhihu.com/question/30137203/answer/303210942
+
+咸海覆灭
+
+----
+
+汉初以前，今嘉陵江上游诸水本是古汉水的上游，由于河道壅塞，在今陕西略阳以上形成河道型的山间湖泊“天池大泽”。公元前186年的武都道大地震，震中约在今陕西略阳、宁强一带，造成今陕西宁强汉王山一带山体发生巨大滑坡。
+
+祁山道和陈仓道实际上是依托西汉水和嘉陵江的，这也就意味着在难走的秦岭山脉，韩信的运粮渠道并不艰难，可以通过一艘艘大船使命必达。
+
+武都大地震之后，汉水断了，西汉水最终和嘉陵江源头汇入了今天的嘉陵江。粮草辎重无法再通过水路直接通到祁山道和陈仓道了。
+
+http://economy.guoxue.com/?p=1428
+
+汉初武都大地震与汉水上游的水系变迁
+
+https://www.zhihu.com/question/366835590
+
+如果把诸葛亮替换成韩信，蜀汉能统一中国吗？
+
+----
+
+Mercator projection：由荷兰地图学家墨卡托(G.Mercator)于1569年创立。如果循着墨卡托投影图上两点间的直线航行，可以方向不变一直到达目的地。
+
+Lambert projection：大比例尺地图/省级地图
+
+Gauss-Kruger projection：中纬度大区域地图/世界地图/中国地图
+
+https://mp.weixin.qq.com/s/V8o6lNajB6v8u80VvaO1kw
+
+如何给地球拍一张“素颜照”？
+
+----
+
+https://zhuanlan.zhihu.com/p/53237519
+
+一文读懂印尼海啸的真正原因（喀拉喀托之子）
+
+https://mp.weixin.qq.com/s/FeSKZqe394-8xT4i-BOEog
+
+掉入地下一万米
+
+https://www.zhihu.com/question/285058234
+
+永暑岛怎么会发现淡水资源？（淡水透镜体效应）
+
+https://mp.weixin.qq.com/s/T2ms6xXd14O3CrQb7X1ZOw
+
+人类用了2000年就为画张地图
+
+https://mp.weixin.qq.com/s/WRd_kx-HeSSgDtPTdgk09A
+
+山上“飞”来只火凤凰，这里的居民却要杀掉它？
+
+https://mp.weixin.qq.com/s/lu4wQOIzVtsFvwhO1c2d0A
+
+一大坨泥巴在移动，没人能够阻止它（圣安德列斯断层）
+
+https://mp.weixin.qq.com/s/R5EonufyiXy8bzD2fddnEg
+
+不喷岩浆喷泥浆，这些火山是要闹哪样？
+
+https://mp.weixin.qq.com/s/_DlXbYZ6JmqarUf6egD2fw
+
+暴雨后不见彩虹，却引来一场持续四个月的火山喷发？（基拉韦厄火山）

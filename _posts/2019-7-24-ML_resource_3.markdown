@@ -166,6 +166,10 @@ https://mp.weixin.qq.com/s/zJfafmJfmmQIjmjsLh_j-g
 
 百度内部PPT流出：数据分析的道与术
 
+https://zhuanlan.zhihu.com/p/146557232
+
+标注数据存在错误怎么办？MIT&Google提出用置信学习找出错误标注
+
 # 上古软件开发
 
 https://github.com/chrislgarry/Apollo-11
@@ -259,6 +263,10 @@ https://mp.weixin.qq.com/s/jHXri6x6a1fPISEwlm_4Eg
 https://mp.weixin.qq.com/s/L6GP0LiCQX0Z2lps3Y0ekQ
 
 Matlab简史
+
+https://mp.weixin.qq.com/s/7cf14CEDa-LHFvO8gyedzg
+
+为什么老编辑器Vim这么难用，却很受欢迎？
 
 # 化学
 

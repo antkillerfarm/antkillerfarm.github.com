@@ -74,6 +74,10 @@ https://mp.weixin.qq.com/s/3yaXYPjNWAXXtDJEWz2T0w
 
 90后“六指魔琴”AI修复100年前老北京影像，他还是程序员里最会画画的作曲家
 
+https://mp.weixin.qq.com/s/6mZ9RhgUpFV-RyOkWibEwQ
+
+剃头挑子、京韵大鼓、摆地摊，AI技术重现的老北京原声影像又火了，网友：这口音太过真实
+
 https://mp.weixin.qq.com/s/-iPQBni4dWvdARAy9_T32g
 
 神还原女神照片！GAN为百年旧照上色

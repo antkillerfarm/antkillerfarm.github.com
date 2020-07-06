@@ -394,3 +394,7 @@ https://zhuanlan.zhihu.com/p/144982430
 https://zhuanlan.zhihu.com/p/144987182
 
 模型蒸馏的核心技术点有哪些，如何对其进行长期深入学习
+
+https://mp.weixin.qq.com/s/3zpri6pfVtp-3-5_004B1Q
+
+优势特征蒸馏在淘宝推荐中的应用

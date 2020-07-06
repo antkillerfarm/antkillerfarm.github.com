@@ -120,6 +120,10 @@ https://mp.weixin.qq.com/s/Qod-SHNa-El48_n-w5PCLQ
 
 超越H.265，中科大使用多帧数据改进视频压缩新方法
 
+https://zhuanlan.zhihu.com/p/150340687
+
+可逆图像缩放：完美恢复降采样后的高清图片
+
 # 深度时间序列
 
 https://mp.weixin.qq.com/s/cChJO6YrE_XAgeInS7J1Vw

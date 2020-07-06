@@ -192,6 +192,28 @@ https://mp.weixin.qq.com/s/PgGDeowQaQ6MlUExZE-TMA
 
 如果是MySQL引起的CPU消耗过大，你会如何优化？
 
+# 数据库参考资源
+
+https://www.cnblogs.com/ahu-lichang/p/10899747.html
+
+数据库三大范式（1NF,2NF,3NF）及ER图
+
+https://mp.weixin.qq.com/s/m_JMXU6iMS4SckzWZYtIUA
+
+腾讯分布式数据库TDSQL金融级能力的架构原理解读
+
+https://mp.weixin.qq.com/s/jdPE9WClBuimIHVxJnwwUw
+
+字节跳动自研强一致在线KV&表格存储实践-上篇
+
+https://mp.weixin.qq.com/s/DvUBnWBqb0XGnicKUb-iqg
+
+字节跳动自研强一致在线KV&表格存储实践-下篇
+
+https://mp.weixin.qq.com/s/oV5F_K2mmE_kK77uEZSjLg
+
+字节跳动分布式表格存储系统的演进
+
 # 安全
 
 https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126

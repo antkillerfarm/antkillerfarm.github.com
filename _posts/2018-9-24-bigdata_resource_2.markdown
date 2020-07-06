@@ -206,7 +206,7 @@ https://mp.weixin.qq.com/s/mYwaGszQGod_o6f3p2QbDw
 
 深度对比Delta、Iceberg和Hudi三大开源数据湖方案
 
-# 世说新语+
+# 世说新语
 
 ## 2020.6（续）
 
@@ -313,9 +313,3 @@ https://www.zhihu.com/question/271535502
 https://mp.weixin.qq.com/s/NikIMN6wjsdOlOFu1FFV2w
 
 吴蛮：她凭一己之力，改变了世界对琵琶的印象
-
-----
-
-https://baike.baidu.com/item/%E5%92%96%E5%96%B1%E5%92%96%E5%96%B1/20793781
-
-咖喱咖喱

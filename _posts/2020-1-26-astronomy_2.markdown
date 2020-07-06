@@ -152,8 +152,6 @@ https://mp.weixin.qq.com/s/UDHAT3vLMS_yo4w0wbcpJQ
 
 ![](/images/img2/rocket.jpg)
 
-![](/images/img2/Elon_Musk.jpg)
-
 https://www.zhihu.com/question/266793958
 
 如何看待SpaceX猎鹰重型火箭在美国时间2月6日发射并且回收成功？
@@ -177,6 +175,14 @@ https://www.zhihu.com/question/54009933
 https://www.zhihu.com/question/329267129
 
 中国空间站和国际空间站的区别在哪？
+
+----
+
+![](/images/img2/Elon_Musk.jpg)
+
+https://mp.weixin.qq.com/s/dQXL6L7Ct08QaczC9rdgqA
+
+专访梅耶·马斯克：硅谷钢铁侠是怎样被炼成的？
 
 ----
 

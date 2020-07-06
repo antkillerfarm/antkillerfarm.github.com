@@ -292,3 +292,11 @@ https://mp.weixin.qq.com/s/B_lSu5zCXFZZlbgFe7gjMQ
 https://mp.weixin.qq.com/s/D3qxlzZgwnMprzEVuMpmgg
 
 机器学习在高德搜索建议中的应用优化实践
+
+https://zhuanlan.zhihu.com/p/124324598
+
+Context-aware/Sequencial/Session-based的区别
+
+https://mp.weixin.qq.com/s/ewb9IlqPmQgfXGEUSRNXwQ
+
+搜索广告之自动化创意

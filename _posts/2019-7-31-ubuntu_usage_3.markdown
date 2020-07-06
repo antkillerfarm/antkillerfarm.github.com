@@ -219,6 +219,10 @@ http://www.china.com.cn/ch-America/Wenxian/53-9-12.htm
 
 ----
 
+为了阻止中国发展全球定位系统，美国1985年的时候就展示了反卫星能力。但是2007年1月11日，美国看到了这样一幕，中国使用机动陆基导弹SC-19实现了反卫星，这让美国明白了意思。美国如果敢摧毁中国卫星，中国将毫不犹豫的摧毁美国的卫星。
+
+----
+
 ![](/images/img3/top10.png)
 
 https://mp.weixin.qq.com/s/1NXjgkr3xWDzqm7Y-9x7-Q

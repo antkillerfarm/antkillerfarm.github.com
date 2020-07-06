@@ -338,7 +338,7 @@ https://zhuanlan.zhihu.com/p/54510782
 
 DANet论文笔记
 
-https://mp.weixin.qq.com/s/94XHMHejqKmkFVA0Vzfrsw
+https://www.zhihu.com/question/272988870
 
 有关语义分割的奇技淫巧有哪些？
 

@@ -6,7 +6,37 @@ category: ML
 
 # Loss function详解
 
-## Other Loss（续）
+## Focal Loss（续）
+
+https://mp.weixin.qq.com/s/LfCuOEndS4Y5dPqXTsE_hA
+
+剖析Focal Loss损失函数： 消除类别不平衡+挖掘难分样本
+
+https://mp.weixin.qq.com/s/Ryxu1qsmL_Roi5zDb1KSRQ
+
+AP-Loss：提高单阶段目标检测性能的分类损失，超越Focal loss
+
+https://mp.weixin.qq.com/s/lzb-R0CQ3YRY4a8WBbdOhw
+
+Focal Loss详解以及为什么能够提高处理不平衡数据分类的表现
+
+## Other Loss
+
+https://mp.weixin.qq.com/s/7Jg-YvS3nvcPJ-zYhK96EA
+
+分享神经网络中设计loss function的一些技巧
+
+https://mp.weixin.qq.com/s/cYcztl8N9JF-XXp9xLJIxg
+
+一文道尽softmax loss及其变种
+
+https://mp.weixin.qq.com/s/MTeuRYutMiCmthEAObyAIg
+
+从最优化的角度看待Softmax损失函数
+
+https://zhuanlan.zhihu.com/p/23340343
+
+Center Loss及其在人脸识别中的应用
 
 https://zhuanlan.zhihu.com/p/34404607
 
@@ -90,10 +120,6 @@ https://zhuanlan.zhihu.com/p/145927429
 
 DR Loss
 
-https://blog.csdn.net/shanglianlm/article/details/85019768
-
-十九种损失函数
-
 https://mp.weixin.qq.com/s/AmXF0xA_T-ZjjnOt4XRgRw
 
 谷歌提出新分类损失函数：将噪声对训练结果影响降到最低
@@ -158,37 +184,9 @@ https://blog.csdn.net/shanglianlm/article/details/85019768
 
 十九种损失函数
 
-# 自适应滤波器
+https://mp.weixin.qq.com/s/8oKiVRjtPQIH1D2HltsREQ
 
-《自适应滤波器原理（Adaptive Filter Theory）》，Simon Haykin著。
-
-## 基本估计
-
-三种基本的信息处理运算：
-
-**滤波（Filter）**：利用$$[0,t]$$的数据，来估计t时刻信息的运算过程。
-
-**平滑（Smoothing）**：利用$$[0,t]$$的数据，来估计$$t'(t'<t)$$时刻信息的运算过程。
-
-**预测（Prediction）**：利用$$[0,t]$$的数据，来估计$$t+\tau(\tau>0)$$时刻信息的运算过程。
-
-可见，滤波和预测是实时运算，而平滑是非实时运算。
-
-## Optimal Wiener Filters
-
->Norbert Wiener，1894～1964，美国数学家，控制论之父。18岁获得Harvard博士。MIT教授。
-
-Wiener Filter主要用于**平稳状态下的线性滤波**。该滤波器在均方误差意义上是最优的。误差信号均方值相对于线性滤波器可调参数的曲线，称为**误差性能曲面**。该曲面的极小点即为Wiener solutions。
-
-根据滤波器的记忆能力，可将线性滤波器分为Finite Impulse Response和Infinite Impulse Response，分别代表有限记忆和无限长但衰减的记忆。
-
-在非平稳环境下，误差性能曲面随时间变化而变化，但只要输入数据的变化与算法学习率相比是慢的，则滤波器就能跟踪住。
-
-参考：
-
-https://blog.csdn.net/bluecol/article/details/46242355
-
-图像去模糊（维纳滤波）
+图像分割损失函数最全面、最详细总结
 
 # 机器学习分类器性能指标
 

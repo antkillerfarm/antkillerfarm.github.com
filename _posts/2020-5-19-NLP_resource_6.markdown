@@ -253,3 +253,49 @@ https://mp.weixin.qq.com/s/vMfZW0P4hfHd5aI6lqF3Sw
 https://mp.weixin.qq.com/s/AKkXyuK8S6nMBifknwZI4w
 
 一文超详细讲解文本风格迁移
+
+# 世说新语+
+
+## 2020.7
+
+https://baike.baidu.com/item/%E5%92%96%E5%96%B1%E5%92%96%E5%96%B1/20793781
+
+咖喱咖喱
+
+----
+
+https://mp.weixin.qq.com/s/cPY7GRyEDo53-f0O0PsVgw
+
+自古女性带巫术？
+
+----
+
+1906年，五十来岁的威廉·沃伊特谎称自己是一名上尉军官，他在柏林街头拦住两队德国士兵，说奉最高司令的命令，要带领他们去执行一项紧急任务，然后带他们乘坐火车到了克珀尼克，从该市财政部门“没收”了4000多马克，还开了收据。然后他在火车站的洗手间换上了平民服装，带着钱坐火车回了柏林。
+
+科佩尼克上尉的事迹自1931年后被数次搬上银屏，上海制片译制厂在1985年就引进了56版《科佩尼克上尉》的中文版。
+
+英国人觉得这件事太好笑了，认为这种事不会发生在英国。但四年后，小说家伍尔夫、画家格兰特等一群人包上头巾，戴着假胡子，声称他们是埃塞俄比亚皇室成员，登上了皇家海军的无畏号战舰参观，海军以高规模接待了他们。
+
+https://www.zhihu.com/question/28700153/answer/587453345
+
+Wlhelm Voigt
+
+https://mp.weixin.qq.com/s/MuIdNLmCtyMlACFEmlEyHg
+
+腾讯们为什么会被骗？
+
+----
+
+https://www.zhihu.com/question/294248283
+
+如何评价电影《冒牌上尉》？
+
+https://zhuanlan.zhihu.com/p/57149916
+
+埃姆斯兰刽子手
+
+----
+
+![](/images/img3/Trump.jpg)
+
+![](/images/img3/Trump_2.jpg)

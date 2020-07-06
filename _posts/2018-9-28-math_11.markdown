@@ -24,7 +24,7 @@ $$U_N(\omega)=\frac{1}{2\pi}\int_{-\pi}^{\pi}K_N(\omega-v)\mathrm{d}Z(v)\tag{8}$
 
 >Erik Ivar Fredholm，1866～1927，瑞典数学家。Uppsala University博士（1898）+Stockholm University教授。不知道是不是瑞典的保险业比较发达，他和Cramér居然都当过兼职的精算师。。。瑞典皇家科学院院士。
 
->Uppsala University是瑞典，也是北欧最古老的大学，始建于1477年。
+>Uppsala University是瑞典，也是北欧，最古老的大学，始建于1477年。
 
 功率谱密度的估计方法主要包括参数法和非参数法两大类。
 
@@ -70,9 +70,9 @@ Moment（矩）的定义为：
 
 $$\mu_n = \int_{-\infty}^\infty (x - c)^n\,f(x)\,\mathrm{d}x$$
 
-其中，当c=0时，被称作Raw Moment。当c为均值时，被称作Central Moment。如果用$$\mu_n/\sigma^n$$替换$$\mu_n$$，就是所谓的Normalised Moment了。
+其中，当c=0时，被称作Raw Moment。当c为均值时，被称作Central Moment。如果用$$\mu_n/\sigma^n$$替换$$\mu_n$$，就是所谓的Normalised Moment（标准矩）了。
 
-1阶Raw Moment，常称为Mean。2阶Central Moment，常称为Variance。3阶Normalised Moment，常称为Skewness。4阶Normalised Moment，常称为kurtosis。
+1阶Raw Moment，常称为Mean。2阶Central Moment，常称为Variance（方差）。3阶Normalised Moment，常称为Skewness（偏态）。4阶Normalised Moment，常称为Kurtosis（峰度）。
 
 ## Cumulants
 
@@ -154,6 +154,10 @@ https://wenku.baidu.com/view/136b666c561252d380eb6e8c.html
 
 高阶统计量的定义与性质
 
+https://mp.weixin.qq.com/s/SOpBf0fAoqau0ac5kXlQIQ
+
+数学好吃吗？好吃！
+
 # 勾股定理
 
 勾股定理在西方被称为Pythagorean theorem。它的命题本身并不复杂，也就是初中几何的内容，但是内涵非常丰富。即使大学数学也未必能穷尽其中的奥妙。这里仅罗列一二。
@@ -220,7 +224,7 @@ $$u(t) = K_\text{p} e(t)\tag{1}$$
 
 $$u(t) = K_\text{p} e(t) + K_\text{i} \int_0^t e(\tau) \,d\tau\tag{2}$$
 
-$$K_\text{i}$$被称为积分系数。积分环节的意义就相当于你增加了一个水龙头，这个水龙头的开关规则是水位比预定高度低就一直往大了拧，比预定高度高就往小了拧。如果漏水速度不变，那么总有一天这个水龙头出水的速度恰好跟漏水的速度相等了，系统就和第一小节的那个一样了。那时，静差就没有了。这就是所谓的积分环节可以消除系统静差。
+$$K_\text{i}$$被称为积分系数。积分环节的意义就相当于你增加了一个水龙头，这个水龙头的开关规则是水位比预定高度低就一直往大了拧，比预定高度高就往小了拧。如果漏水速度不变，那么总有一天这个水龙头出水的速度恰好跟漏水的速度相等了，系统就和第一小节的那个一样了。那时，静差就没有了。这就是所谓的**积分环节可以消除系统静差**。
 
 **场景3**：假设用户的用水量是变化的，即$$c(t)$$。
 

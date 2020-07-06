@@ -179,6 +179,10 @@ https://mp.weixin.qq.com/s/cR3k5-looApwD01ZzgixSw
 
 关于Fourier和Laplace
 
+https://mp.weixin.qq.com/s/gYpT_cLcxy6xJ5nww-Obqw
+
+一文读懂傅立叶变换处理图像的原理
+
 # 随机变量的特征函数
 
 特征函数（Characteristic function）是描述随机变量概率分布的重要工具，其定义如下。

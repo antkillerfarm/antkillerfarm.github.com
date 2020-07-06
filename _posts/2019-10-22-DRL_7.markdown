@@ -267,6 +267,10 @@ https://mp.weixin.qq.com/s/m18xiMRryXl_BoCxKVUbTA
 
 多Agent强化学习综述
 
+https://mp.weixin.qq.com/s/R12bVEDWpHydNair-P5TzA
+
+多智能体深度强化学习中的Q值路径分解
+
 # StarCraft & AI
 
 AIIDE（Artificial Intelligence and Interactive Digital Entertainment）
