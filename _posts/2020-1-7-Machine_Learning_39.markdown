@@ -391,3 +391,7 @@ https://zhuanlan.zhihu.com/p/68748778
 https://mp.weixin.qq.com/s/x7UQhSAiE9VJCzUSZfpytA
 
 大规模锥优化之Splitting Conic Solver(SCS)
+
+https://mp.weixin.qq.com/s/EmWRaAOTNYE0Maf6_r41oA
+
+Adam那么棒，为什么还对SGD念念不忘？一个框架看懂深度学习优化算法
