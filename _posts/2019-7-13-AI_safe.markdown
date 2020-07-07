@@ -226,6 +226,10 @@ https://mp.weixin.qq.com/s/kmxRXvURSsRnIKRNVQkmmg
 
 同态加密技术及其在机器学习中的应用详解
 
+https://mp.weixin.qq.com/s/r6zm2VMOehP7EbxU5R39uA
+
+GAN生成对抗样本的方法解析
+
 # 数据结构 & 普通CS算法
 
 ## TopK

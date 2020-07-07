@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/I0grz0IfFZo98sfaCNh-Vw
 
 可能是世界上最简单的用Go来写WebAssembly的教程
 
+https://mp.weixin.qq.com/s/yTebereUkcyvwJbLssZjPQ
+
+5分钟看懂WebAssembly
+
 ----
 
 V8开发者Vyacheslav Egorov和Mozilla Hacks之间的source-map之战了。对于同一份source-map库的JS代码，Vyacheslav所魔改出的纯JS版本，其性能一举反超了Mozilla重写的Rust版。

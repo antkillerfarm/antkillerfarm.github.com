@@ -6,6 +6,22 @@ category: resource
 
 # 知识图谱参考资源
 
+https://mp.weixin.qq.com/s/RpPEqjRUnBIHpX7_guItoQ
+
+如何构建行业知识图谱
+
+https://mp.weixin.qq.com/s/CK-rtWoqjq8pb_6xK4xssQ
+
+知识图谱的前世今生与RDF的实践
+
+https://mp.weixin.qq.com/s/sCpKkkf2Tj37Nr5j7S7M6Q
+
+基于Freebase的问答研究
+
+https://mp.weixin.qq.com/s/kTrBLTH46KtfcAK4aZ2H0A
+
+请查收本周份“知识图谱”专题论文解读
+
 https://mp.weixin.qq.com/s/4huHklyr_H6fFDb6VJ7ozw
 
 知识图谱的前世今生：为什么我们需要知识图谱？

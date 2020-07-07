@@ -120,6 +120,10 @@ https://mp.weixin.qq.com/s/zDneR1BU6xvt8cndEF4_Xw
 
 深入浅出Word2Vec原理解析
 
+https://mp.weixin.qq.com/s/CQ9FdFcWuW0Ku3UtbGmmgg
+
+Word Vectors
+
 # RNN
 
 ## RNN的基本结构

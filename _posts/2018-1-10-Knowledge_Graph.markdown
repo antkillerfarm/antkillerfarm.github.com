@@ -82,6 +82,10 @@ https://mp.weixin.qq.com/s/fWaEJvxdGbW2p-uYKYgrDA
 
 知识图谱最新研究综述
 
+https://mp.weixin.qq.com/s/cldY4iJFwzWqppn6UVT1rA
+
+新瓶装旧酒：为什么需要知识图谱？什么是知识图谱？——KG的前世今生
+
 https://zhuanlan.zhihu.com/p/44497869
 
 知识图谱中的深度学习技术应用概述
@@ -405,19 +409,3 @@ https://mp.weixin.qq.com/s/DALB8eBgVWHhFcZoJFLSpg
 https://mp.weixin.qq.com/s/An9mGawI8mhtlqyrVxTzYw
 
 SIGIR 2018基于知识图谱的文本信息检索
-
-https://mp.weixin.qq.com/s/RpPEqjRUnBIHpX7_guItoQ
-
-如何构建行业知识图谱
-
-https://mp.weixin.qq.com/s/CK-rtWoqjq8pb_6xK4xssQ
-
-知识图谱的前世今生与RDF的实践
-
-https://mp.weixin.qq.com/s/sCpKkkf2Tj37Nr5j7S7M6Q
-
-基于Freebase的问答研究
-
-https://mp.weixin.qq.com/s/kTrBLTH46KtfcAK4aZ2H0A
-
-请查收本周份“知识图谱”专题论文解读

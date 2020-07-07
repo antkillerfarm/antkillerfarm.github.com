@@ -304,6 +304,10 @@ https://mp.weixin.qq.com/s/Zy9mCZOL8AneNjbvFpR3jg
 
 即插即用！将双边超分辨率用于语义分割网络，提升图像分辨率的有效策略
 
+https://mp.weixin.qq.com/s/V6ldPntqboIMIefQQtj4mw
+
+CondInst：沈春华团队新作，将条件卷积引入实例分割
+
 # 行人重识别+
 
 https://mp.weixin.qq.com/s/Vi_1Sg8OKG-EG4aC4QTCWA
