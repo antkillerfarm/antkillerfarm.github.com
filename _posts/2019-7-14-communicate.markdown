@@ -451,25 +451,3 @@ https://mp.weixin.qq.com/s/VmLphhs8rGabdNXtvllgdQ
 https://mp.weixin.qq.com/s/TglQzG1iE0keEGLKZ-pGIg
 
 Python数据处理实战——使用Scikit-Learn进行多类文本分类
-
-# GAN参考资源+
-
-https://mp.weixin.qq.com/s/SGCoCy8wJEhEpLSHrYK3pQ
-
-韩松、朱俊彦等人提出GAN压缩法：算力消耗不到1/9，现已开源
-
-https://mp.weixin.qq.com/s/D-rh9m7G-ERjWEEG6BQJNg
-
-每个人都能用英伟达GAN造脸了
-
-https://mp.weixin.qq.com/s/qRW344wWgS9PJ6UCwknS8g
-
-Local GAN
-
-https://mp.weixin.qq.com/s/-rwzlX-WipaIdV6ESOimxw
-
-GAN加持！英伟达发布“山寨”游戏创造器，已完美复现《吃豆人》
-
-https://mp.weixin.qq.com/s/orm5r4XHyotBCpBKqfZ-ng
-
-GANSynth：使用GAN制作音乐

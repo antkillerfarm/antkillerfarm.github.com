@@ -363,3 +363,7 @@ DarkLabel：支持检测、跟踪、ReID数据集的标注软件
 https://mp.weixin.qq.com/s/5klwQCPtiZOwFJYHDOpWFg
 
 语义分割标注工具Semantic Segmentation Editor快速安装指南
+
+https://mp.weixin.qq.com/s/NmB8Jbm8zEwxQ8PGoz_wvg
+
+关键词匹配利器FlashText

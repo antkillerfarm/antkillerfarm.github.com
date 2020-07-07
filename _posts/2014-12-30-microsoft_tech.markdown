@@ -235,3 +235,29 @@ gl-matrix 3.0以后添加了名字空间glMatrix，所以老旧的代码可能�
 ## 其他库
 
 https://deck.gl/
+
+# GAN参考资源+
+
+https://mp.weixin.qq.com/s/SGCoCy8wJEhEpLSHrYK3pQ
+
+韩松、朱俊彦等人提出GAN压缩法：算力消耗不到1/9，现已开源
+
+https://mp.weixin.qq.com/s/D-rh9m7G-ERjWEEG6BQJNg
+
+每个人都能用英伟达GAN造脸了
+
+https://mp.weixin.qq.com/s/qRW344wWgS9PJ6UCwknS8g
+
+Local GAN
+
+https://mp.weixin.qq.com/s/-rwzlX-WipaIdV6ESOimxw
+
+GAN加持！英伟达发布“山寨”游戏创造器，已完美复现《吃豆人》
+
+https://mp.weixin.qq.com/s/orm5r4XHyotBCpBKqfZ-ng
+
+GANSynth：使用GAN制作音乐
+
+https://mp.weixin.qq.com/s/4zKgFfyLGAmqgHtf_Wb0nw
+
+使用GAN生成序列数据

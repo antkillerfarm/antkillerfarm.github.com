@@ -58,6 +58,10 @@ https://mp.weixin.qq.com/s/Us7K5SBLltJIKzaJZQqltw
 
 简单粗暴二分类分割方法Riddler-Calvard详解
 
+https://mp.weixin.qq.com/s/gylWAKk4q0UNlhxIXrFHkQ
+
+基于OpenCV的图像阈值分割处理
+
 # 方框滤波（Box Filter）
 
 $$g=f\otimes h,h=\alpha

@@ -146,6 +146,20 @@ https://mp.weixin.qq.com/s/wzVc-FngOBbqbMzJjRqajw
 
 Apache Doris在美团外卖数仓中的应用实践
 
+## Apache Druid
+
+Apache Druid也是MOLAP。
+
+参考：
+
+https://yuzhouwan.com/posts/5845/
+
+Apache Druid：一款高效的OLAP引擎
+
+https://mp.weixin.qq.com/s/XxSTsHluORTDwtiopAxQ0w
+
+深入分析Druid存储结构
+
 ## GraphQL
 
 GraphQL是在Facebook内部应用多年的一套数据查询语言和runtime。

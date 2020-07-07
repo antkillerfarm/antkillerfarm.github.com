@@ -36,6 +36,10 @@ https://blog.csdn.net/songzitea/article/details/17969375
 
 角点匹配方法
 
+https://mp.weixin.qq.com/s/LeFT029sd7-kRw1QTFUKmA
+
+特征检测之Harris角点检测
+
 # Optical flow
 
 ## 基本概念

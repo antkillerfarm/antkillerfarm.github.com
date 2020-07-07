@@ -86,6 +86,10 @@ https://mp.weixin.qq.com/s/PCXcvzwv8DF693_KzXK5bg
 
 计算机视觉研究新方向：自监督表示学习总结
 
+https://mp.weixin.qq.com/s/TOwOa3noN_UYrd5g0Nrrrg
+
+半监督学习技术在金融文本分类上的实践
+
 # 深度信息检索
 
 https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ

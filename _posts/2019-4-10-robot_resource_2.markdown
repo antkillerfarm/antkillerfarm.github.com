@@ -132,6 +132,44 @@ https://mp.weixin.qq.com/s/M5VphyTAFXiK2mJhIsvyvA
 
 从自动泊车到自主泊车
 
+## 软件仿真
+
+https://mp.weixin.qq.com/s/yNr4_tEyYg_VBmNjIrjYug
+
+自动驾驶车辆仿真模拟软件盘点
+
+https://zhuanlan.zhihu.com/p/66961439
+
+交通模型仿真工具SUMO介绍
+
+https://mp.weixin.qq.com/s/eQJ8dgNNd3iE2fXXUcXG2A
+
+一贴集齐86种交通建模与仿真软件综述
+
+https://mp.weixin.qq.com/s/Ja6DxqadbFBIWUk44DjGqw
+
+密集场景中自动驾驶车辆的仿真与导航
+
+https://mp.weixin.qq.com/s/pMnbVWDDVgIdFpzkfSUd5Q
+
+时延MPC自主车辆协同控制算法与仿真
+
+https://zhuanlan.zhihu.com/p/57169482
+
+自动驾驶研发模拟仿真系统的工作介绍
+
+https://zhuanlan.zhihu.com/p/66963787
+
+自动驾驶模拟仿真系统中的传感器模型
+
+https://mp.weixin.qq.com/s/E-Vo3mqANB21Gv-X3b6o1A
+
+用虚拟仿真平台实现ADAS目标融合、检测和跟踪
+
+https://mp.weixin.qq.com/s/seAKqsJDcPHAa_BZDfav_w
+
+谈谈自动驾驶仿真
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/26988866
@@ -292,10 +330,6 @@ https://mp.weixin.qq.com/s/PYqhSHzlyO5HqLvBaEqlwQ
 
 直接建模视觉智能体？让“小狗”动起来～
 
-https://mp.weixin.qq.com/s/Ja6DxqadbFBIWUk44DjGqw
-
-密集场景中自动驾驶车辆的仿真与导航
-
 https://mp.weixin.qq.com/s/mZbO-y4haBx-IodgEtdUBA
 
 LSTM之父最新力作：手把手教你训练一个有世界观的AI赛车手
@@ -356,10 +390,6 @@ https://mp.weixin.qq.com/s/mc11Ozbf7-DpDagmy553OA
 
 基于多点预瞄最优控制的智能车辆路径跟踪
 
-https://mp.weixin.qq.com/s/pMnbVWDDVgIdFpzkfSUd5Q
-
-时延MPC自主车辆协同控制算法与仿真
-
 https://mp.weixin.qq.com/s/VUsVB2mo8WMs0MoYNIhhqA
 
 深度学习应用于复杂系统控制
@@ -367,47 +397,3 @@ https://mp.weixin.qq.com/s/VUsVB2mo8WMs0MoYNIhhqA
 https://mp.weixin.qq.com/s/g8MQyq9GFcUzP-W7fbNYRw
 
 四维图新：高精度地图构建的实时物体检测和分割
-
-https://mp.weixin.qq.com/s/Gn1FCcWLyXMviWBUP6SLGQ
-
-迭代学习控制算法在自动驾驶车辆轨迹跟踪中的应用
-
-https://mp.weixin.qq.com/s/F2Vyx3LXKcz2C2J5KHGVLg
-
-基于深度学习的多模态情绪识别与疲劳驾驶检测
-
-https://mp.weixin.qq.com/s/Uq2Acgo8eSD321AzdiPeJw
-
-用霍夫变换&SCNN码一个车道追踪器
-
-https://mp.weixin.qq.com/s/bSf1BGcKdFcIcfm7CxH4-w
-
-不用GPS和地图，世界上最大的“蚂蚁”机器人诞生了
-
-https://mp.weixin.qq.com/s/vKkjYdf6Ast7wWcW9oIEuA
-
-88美元的自动驾驶“自制原子弹”，最著名黑客详解panda系统
-
-https://mp.weixin.qq.com/s/SPUDLKgSw7wjGnnJk2swRw
-
-有触觉，懂策略，能交互！MIT开发出比你更灵活的搭积木大师，还发了Science子刊
-
-https://mp.weixin.qq.com/s/FmqMg-j-Mf2nguHbuCyXAA
-
-自动驾驶中的驾驶行为建模和预测方法
-
-https://mp.weixin.qq.com/s/qZwqp5x6yEXbMBHGzevm0g
-
-ACC自适应巡航控制系统介绍
-
-https://zhuanlan.zhihu.com/p/43285246
-
-自动驾驶决策控制技术-A Survey
-
-https://zhuanlan.zhihu.com/p/57077589
-
-自动驾驶中路上行人的行为和意图理解及预测
-
-https://zhuanlan.zhihu.com/p/57169482
-
-自动驾驶研发模拟仿真系统的工作介绍

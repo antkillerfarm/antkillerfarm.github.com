@@ -172,6 +172,10 @@ https://mp.weixin.qq.com/s/OqMqQRwI5c6H6FzvgdwWfg
 
 目标追踪综述
 
+https://mp.weixin.qq.com/s/_BVJZxY0TiS18nGgb88LVw
+
+视觉目标跟踪漫谈：从原理到应用
+
 # Meanshift
 
 ## Meanshift聚类

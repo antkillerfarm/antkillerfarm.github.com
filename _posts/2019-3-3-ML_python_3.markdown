@@ -6,6 +6,52 @@ category: AI
 
 # Machine Learning之Python篇
 
+## Pyecharts（续）
+
+https://mp.weixin.qq.com/s/20cxuC_tAVmofA7lvquEMQ
+
+Python可视化神器——pyecharts的超详细使用指南！
+
+https://mp.weixin.qq.com/s/5GJKIt5OkMh7C3xqoTJsTA
+
+PyEcharts
+
+https://mp.weixin.qq.com/s/6rusBFuLGw4gpDt6tSQTIw
+
+PyEcharts TreeMap
+
+https://mp.weixin.qq.com/s/6LhoraTo2cLtLJaXbKpt-A
+
+教你用pyecharts制作交互式桑基图，赶快学起来吧！
+
+https://mp.weixin.qq.com/s/3NYEM2MsfGigRPscP-RVZQ
+
+使用pyecharts绘制词云图-淘宝商品评论展示
+
+## Yellowbrick
+
+Yellowbrick是和Scikit-Learn配套的ML可视化库。
+
+官网：
+
+https://www.scikit-yb.org/en/latest/
+
+## mlpy
+
+mlpy是一个开源的ML库。只是它最近的一次更新，已经是2012年的事情了。
+
+官网：
+
+http://mlpy.sourceforge.net
+
+## PyFlux
+
+PyFlux是Python中为处理时间序列问题而创建的开源库。该库有一系列极好的时间序列模型，包括但不限于ARIMA、GARCH和VAR模型。
+
+官网：
+
+https://pyflux.readthedocs.io/en/latest/index.html
+
 ## JAX
 
 一款由谷歌团队打造（非官方发布），用于从纯Python和Numpy机器学习程序中生成高性能加速器（accelerator）代码，且特定于域的跟踪JIT编译器。
@@ -389,39 +435,3 @@ https://mp.weixin.qq.com/s/440osIoULBRDOHq7Bk8awA
 https://mp.weixin.qq.com/s/tJwgNXKVwoJby-WkeMeBqQ
 
 40行Python代码实现“旅行者困境“演化过程
-
-https://mp.weixin.qq.com/s/xYNCKy36n8CoaGzABlI5Wg
-
-从零开始用python搭建推荐引擎
-
-https://mp.weixin.qq.com/s/vAn_rnUt036-3jy7ZahF8w
-
-文本挖掘，带你看金庸笔下不一样的恩怨情仇
-
-https://mp.weixin.qq.com/s/84Rk5CP2uLaCBIifL465VQ
-
-从统计到概率，入门者都能用Python试验的机器学习基础
-
-https://mp.weixin.qq.com/s/O9QDUNXftZeEohxiW6LtZw
-
-朴素贝叶斯详解及中文舆情分析
-
-https://mp.weixin.qq.com/s/wIaDAewwOBMPRDr28DqGoQ
-
-Feature Tools：可自动构造机器学习特征的Python库
-
-https://mp.weixin.qq.com/s/zfAVXJJmvHgi3JkM_ryDVA
-
-Python高效数据分析的8个技巧
-
-https://mp.weixin.qq.com/s/Ke3K3i8paNlweciJepiuwQ
-
-复旦中文文本分类过程
-
-https://mp.weixin.qq.com/s/Ij9L-swxx6gmaEH4YQb0tQ
-
-如何用Python检测视频真伪？
-
-https://mp.weixin.qq.com/s/5YHyM7gILvCItScvYYoANQ
-
-Python实现文字转语音功能

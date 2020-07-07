@@ -90,6 +90,10 @@ https://mp.weixin.qq.com/s/vtj1HgDC2slsOw9DGoURCA
 
 知识图谱实体链接：一份“由浅入深”的综述
 
+https://mp.weixin.qq.com/s/UADUq4rdw30wpAuJG8mUpg
+
+实体链接：信息抽取中的NLP的基础任务
+
 https://mp.weixin.qq.com/s/0f5E82utl-faCpmvrDoPEg
 
 知识图谱研究综述论文: 表示学习、知识获取与应用，25页pdf详述Knowledge Graphs技术趋势

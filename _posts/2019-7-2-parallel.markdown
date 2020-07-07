@@ -326,44 +326,6 @@ https://mp.weixin.qq.com/s/LOTQfD9KKtAq0zz4rObCGA
 
 EB级系统空中换引擎：阿里调度执行框架如何全面升级？（DAG 2.0）
 
-# 图数据库+
+https://mp.weixin.qq.com/s/_85oWK2plv2QOX5Qfg_-ZA
 
-## 其他图数据库
-
-开源的、流行的图数据库主要有以下几种：Neo4j、OrientDB、ArangoDB、JanusGraph、Dgraph。
-
-Neo4j历史悠久，且长期处于图数据库领域的龙头地位，但它开源的社区版本只支持单机，不支持分布式。
-
-OrientDB和ArangoDB起步比较早，最初是一个单机的图数据库，后来随着用户数据量的不断增加，增加了分布式模式，但支持的不是很好。
-
-JanusGraph和Dgraph发展的比较晚，从设计之初就考虑了分布式和扩展性，所以对分布式支持的非常好，且都是完全开源免费的。
-
-## 参考
-
-https://mp.weixin.qq.com/s/YfNlDoGOlHtpG9VFBCZHnQ
-
-VLDB2019特邀报告《图处理》综述进展，滑铁卢大学数据库大牛M. Tamer Özsu教授，170页ppt
-
-https://mp.weixin.qq.com/s/PkFscGq8tjzc3HQiF-SSsA
-
-在图数据上做机器学习，应该从哪个点切入？
-
-https://mp.weixin.qq.com/s/uYP8Eyz36JyTWska0hvtuA
-
-字节跳动自研万亿级图数据库&图计算实践
-
-https://mp.weixin.qq.com/s/uZStvVZp3UHLY3BppgaRLg
-
-JanusGraph VS Dgraph：贝壳分布式图数据库技术选型之路
-
-https://mp.weixin.qq.com/s/3rLTRtSWbf31aNRDs4rmoQ
-
-Dgraph简介篇
-
-https://mp.weixin.qq.com/s/rhtaVTON761wxGDqT9EIoQ
-
-Dgraph原理篇
-
-https://mp.weixin.qq.com/s/5nBS0FiOynhGS6mY2dZ1ng
-
-分布式图数据库在贝壳的应用实践
+大规模机器学习优化，195页ppt与视频

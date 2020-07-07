@@ -247,6 +247,10 @@ https://mp.weixin.qq.com/s/ipuIq_E5rOPPF7_XdS5PGQ
 
 腾讯万亿级Elasticsearch内存效率提升技术解密
 
+https://mp.weixin.qq.com/s/eejvp9yCJxP_Crj8P9jqew
+
+Elasticsearch索引容量管理实践
+
 # Flume & Kafka
 
 Flume和Kafka都是日志系统。

@@ -8,6 +8,30 @@ category: AI
 
 ## Matplotlib（续）
 
+https://mp.weixin.qq.com/s/RctPwneKUIUZCcLr1Ry_8g
+
+数据分析最有用的Top 50 Matplotlib图(下)
+
+https://mp.weixin.qq.com/s/bD9XDg2kMtXDb45xMvY5tA
+
+Python绘图还在用Matplotlib？发现一款手绘可视化神器！
+
+https://mp.weixin.qq.com/s/PvK1acmL1D3byEylmhtEaQ
+
+数据可视化简易入门（Matplotlib和Seaborn）
+
+https://mp.weixin.qq.com/s/A15Oqa0yVSvLnh5h_SvtOQ
+
+那些不为人知的优秀python可视化库
+
+https://mp.weixin.qq.com/s/smXMxhHrkZpZSNvUM1DeCg
+
+五分钟学会C++高效图表绘制神器调用
+
+https://mp.weixin.qq.com/s/SJRVgBy94E3UWeVAf3TliA
+
+​16个matplotlib绘图实用小技巧
+
 https://mp.weixin.qq.com/s/fSt27Vk29LoSDPv8KfPHjQ
 
 什么是折线图？怎样用Python绘制？
@@ -461,47 +485,3 @@ http://pyecharts.org/
 https://mp.weixin.qq.com/s/3T594c4DzuRmPW5A4zu8Dg
 
 Pyecharts：极其强大的Python数据可视化模块
-
-https://mp.weixin.qq.com/s/20cxuC_tAVmofA7lvquEMQ
-
-Python可视化神器——pyecharts的超详细使用指南！
-
-https://mp.weixin.qq.com/s/5GJKIt5OkMh7C3xqoTJsTA
-
-PyEcharts
-
-https://mp.weixin.qq.com/s/6rusBFuLGw4gpDt6tSQTIw
-
-PyEcharts TreeMap
-
-https://mp.weixin.qq.com/s/6LhoraTo2cLtLJaXbKpt-A
-
-教你用pyecharts制作交互式桑基图，赶快学起来吧！
-
-https://mp.weixin.qq.com/s/3NYEM2MsfGigRPscP-RVZQ
-
-使用pyecharts绘制词云图-淘宝商品评论展示
-
-## Yellowbrick
-
-Yellowbrick是和Scikit-Learn配套的ML可视化库。
-
-官网：
-
-https://www.scikit-yb.org/en/latest/
-
-## mlpy
-
-mlpy是一个开源的ML库。只是它最近的一次更新，已经是2012年的事情了。
-
-官网：
-
-http://mlpy.sourceforge.net
-
-## PyFlux
-
-PyFlux是Python中为处理时间序列问题而创建的开源库。该库有一系列极好的时间序列模型，包括但不限于ARIMA、GARCH和VAR模型。
-
-官网：
-
-https://pyflux.readthedocs.io/en/latest/index.html

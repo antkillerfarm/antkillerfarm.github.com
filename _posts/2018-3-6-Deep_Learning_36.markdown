@@ -374,6 +374,10 @@ https://mp.weixin.qq.com/s/x-fBo5pFD6UlKLh7p68H2A
 
 用机器学习打造计数君，谷歌RepNet可自动计数视频重复片段
 
+https://mp.weixin.qq.com/s/9Vt41Ygn767SnpjoXgnEEg
+
+基于语义流的快速而准确的场景解析
+
 # 人脸检测/识别+
 
 https://mp.weixin.qq.com/s/PsToV8Z17tRzXW_AbaMNmg

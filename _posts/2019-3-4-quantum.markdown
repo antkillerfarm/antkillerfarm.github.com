@@ -344,3 +344,41 @@ MegEngine是旷视提出的深度学习框架。
 官网:
 
 https://megengine.org.cn/
+
+# Machine Learning之Python篇
+
+https://mp.weixin.qq.com/s/xYNCKy36n8CoaGzABlI5Wg
+
+从零开始用python搭建推荐引擎
+
+https://mp.weixin.qq.com/s/vAn_rnUt036-3jy7ZahF8w
+
+文本挖掘，带你看金庸笔下不一样的恩怨情仇
+
+https://mp.weixin.qq.com/s/84Rk5CP2uLaCBIifL465VQ
+
+从统计到概率，入门者都能用Python试验的机器学习基础
+
+https://mp.weixin.qq.com/s/O9QDUNXftZeEohxiW6LtZw
+
+朴素贝叶斯详解及中文舆情分析
+
+https://mp.weixin.qq.com/s/wIaDAewwOBMPRDr28DqGoQ
+
+Feature Tools：可自动构造机器学习特征的Python库
+
+https://mp.weixin.qq.com/s/zfAVXJJmvHgi3JkM_ryDVA
+
+Python高效数据分析的8个技巧
+
+https://mp.weixin.qq.com/s/Ke3K3i8paNlweciJepiuwQ
+
+复旦中文文本分类过程
+
+https://mp.weixin.qq.com/s/Ij9L-swxx6gmaEH4YQb0tQ
+
+如何用Python检测视频真伪？
+
+https://mp.weixin.qq.com/s/5YHyM7gILvCItScvYYoANQ
+
+Python实现文字转语音功能

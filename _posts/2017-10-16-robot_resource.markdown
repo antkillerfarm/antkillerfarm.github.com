@@ -286,20 +286,6 @@ https://blog.csdn.net/AdamShan
 
 一个无人驾驶的blog
 
-## 软件
-
-https://mp.weixin.qq.com/s/yNr4_tEyYg_VBmNjIrjYug
-
-自动驾驶车辆仿真模拟软件盘点
-
-https://zhuanlan.zhihu.com/p/66961439
-
-交通模型仿真工具SUMO介绍
-
-https://mp.weixin.qq.com/s/eQJ8dgNNd3iE2fXXUcXG2A
-
-一贴集齐86种交通建模与仿真软件综述
-
 ## ROS
 
 http://www.ros.org/

@@ -34,10 +34,6 @@ https://mp.weixin.qq.com/s/eOxle3q_QgejlX10kc30Rg
 
 Apollo无人车自定位技术入门
 
-https://mp.weixin.qq.com/s/1xNsKVw-OUr3Lmb3Ob33Ow
-
-自动驾驶研发模拟仿真系统的工作介绍
-
 https://zhuanlan.zhihu.com/p/59890550
 
 自动驾驶中的目标跟踪方法
@@ -145,10 +141,6 @@ https://mp.weixin.qq.com/s/GnJRfbc6_smyeWjCKzsc7g
 https://zhuanlan.zhihu.com/p/68127887
 
 驾驶员监控DMS
-
-https://zhuanlan.zhihu.com/p/66963787
-
-自动驾驶模拟仿真系统中的传感器模型
 
 https://mp.weixin.qq.com/s/AlYTOetU43VDaSlotRDUDg
 
@@ -265,10 +257,6 @@ https://mp.weixin.qq.com/s/N39CF1M7nV2cwUUMGRnG7g
 https://mp.weixin.qq.com/s/DrWeZOIhJV1dbpg7Ns6gJQ
 
 控制技术详解——控制器的类型
-
-https://mp.weixin.qq.com/s/E-Vo3mqANB21Gv-X3b6o1A
-
-用虚拟仿真平台实现ADAS目标融合、检测和跟踪
 
 https://mp.weixin.qq.com/s/Q4me1G9B8uwwRIr6dfETEA
 

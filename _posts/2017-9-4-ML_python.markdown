@@ -66,6 +66,10 @@ https://mp.weixin.qq.com/s/NX2zWc7y8Y2kK9ZNxlUBVA
 
 conda+jupyter玩转数据科学环境搭建
 
+https://mp.weixin.qq.com/s/SGhKcD9zakXOInkZSmKX9A
+
+Conda太慢？试试这个加速工具！
+
 ## Anaconda
 
 Anaconda是一个科学计算方面的python发行版，下面提到的所有工具都可以通过Anaconda一站式安装。
@@ -438,27 +442,3 @@ Python绘图，我只用Matplotlib
 https://mp.weixin.qq.com/s/pBTsByIftGbMMUumSKCvFw
 
 数据分析最有用的Top 50 Matplotlib图(上)
-
-https://mp.weixin.qq.com/s/RctPwneKUIUZCcLr1Ry_8g
-
-数据分析最有用的Top 50 Matplotlib图(下)
-
-https://mp.weixin.qq.com/s/bD9XDg2kMtXDb45xMvY5tA
-
-Python绘图还在用Matplotlib？发现一款手绘可视化神器！
-
-https://mp.weixin.qq.com/s/PvK1acmL1D3byEylmhtEaQ
-
-数据可视化简易入门（Matplotlib和Seaborn）
-
-https://mp.weixin.qq.com/s/A15Oqa0yVSvLnh5h_SvtOQ
-
-那些不为人知的优秀python可视化库
-
-https://mp.weixin.qq.com/s/smXMxhHrkZpZSNvUM1DeCg
-
-五分钟学会C++高效图表绘制神器调用
-
-https://mp.weixin.qq.com/s/SJRVgBy94E3UWeVAf3TliA
-
-​16个matplotlib绘图实用小技巧
