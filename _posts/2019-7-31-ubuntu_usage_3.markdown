@@ -233,6 +233,20 @@ http://www.china.com.cn/ch-America/Wenxian/53-9-12.htm
 
 ----
 
+步履式挖掘机1965年由列支敦士登的“kaiser（凯撒）”公司发明。这种挖掘机由于有四个可以独立移动的支腿，因此可以在山地、沼泽等普通挖掘机不能使用的地区使用。
+
+2001年，徐工集团决定接下这个任务。2004年初整车开始了高原测试，两辆原型车被拉到了工程兵某部位于西藏羊八井附近山区中的工地，当地海拔接近5000米。结果测试完车没下来，直接就被驻军扣下了。后来好说歹说还了一台，剩下的一台我15年去徐工的时候，据说依然活跃在中印边境上，十多年没出过大故障。
+
+中国：building，construction completed，new construction options，unit ready.
+
+印度：Insufficient fund，cannot deploy here，building，low power，unit lost.
+
+https://www.zhihu.com/question/404380682
+
+如何看待徐工机械的全地形挖掘机?
+
+----
+
 ![](/images/img3/top10.png)
 
 https://mp.weixin.qq.com/s/1NXjgkr3xWDzqm7Y-9x7-Q
@@ -308,23 +322,3 @@ NASA传奇数学家去世，她曾笔算了登月轨道
 https://mp.weixin.qq.com/s/8vRFfFLdLWSPpTzHjUKegQ
 
 哈勃太空望远镜30岁生日快乐！我们看到的宇宙因你而不同
-
-----
-
-由于飞行前的制造和测试错误，氧气罐中的电线暴露了出来。在那个致命的夜晚，氧气罐中暴露的电线产生的火花引发了火灾，引爆了氧气罐，将服务舱外的隔热层炸飞。。。
-
-https://mp.weixin.qq.com/s/NmS1dbeIsQomsWYI8-OyZg
-
-阿波罗13号“伟大失败”50周年，NASA发布纪录片追忆奥德赛号逃生往事
-
-----
-
-![](/images/img3/india_moon.jpg)
-
-https://www.zhihu.com/question/344795065/
-
-印度“月船2号”登陆月球失败，失败原因可能是什么？有什么影响和教训？
-
-https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
-
-印度失联的月球探测器依然成功了95%？那些年我们一起追过的月球

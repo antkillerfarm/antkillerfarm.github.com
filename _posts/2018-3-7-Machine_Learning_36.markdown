@@ -158,6 +158,10 @@ https://mp.weixin.qq.com/s/uvUN4JiqSb-bS4HAVCDTIQ
 
 集成模型Xgboost！机器学习最热研究方向入门，附学习路线图
 
+https://mp.weixin.qq.com/s/-aRRORqBnTMmBDXuW749_w
+
+在没有技术术语的情况下介绍Adaptive、GBDT、XGboosting等提升算法的原理简介
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。

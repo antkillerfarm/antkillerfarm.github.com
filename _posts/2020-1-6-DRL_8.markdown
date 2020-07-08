@@ -270,6 +270,10 @@ https://zhuanlan.zhihu.com/p/43496459
 
 解决Sparse Reward RL任务的简单回顾
 
+https://mp.weixin.qq.com/s/tuEhP3CDZ4PW7S66yP8AbA
+
+如何解决稀疏奖励下的强化学习？
+
 https://mp.weixin.qq.com/s/G99vqIYeWzgQ4kL4p77cKA
 
 用强化学习做神经机器翻译：中山大学&MSRA填补多项空白

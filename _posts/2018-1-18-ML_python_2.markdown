@@ -56,6 +56,14 @@ https://zhuanlan.zhihu.com/p/152221261
 
 一行代码画出美丽且专业的论文图（SciencePlots）
 
+https://mp.weixin.qq.com/s/jg4B5zKGajR3IX85altEMA
+
+如何在科研论文中画出漂亮的插图？
+
+https://mp.weixin.qq.com/s/gyu_w_AHenwUT6cAqtGC0w
+
+一行代码实现数据分析与可视化！
+
 ## Pandas
 
 Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。
@@ -145,6 +153,10 @@ Pandas实用手册（PART II）
 https://mp.weixin.qq.com/s/7T4BVm2fyYw4nZQKV4sJlA
 
 DataFrame的真正含义正在被杀死，什么才是真正的DataFrame？
+
+https://mp.weixin.qq.com/s/Go7ZUEiItrdc_KOWEAc3sg
+
+如何用Pandas处理文本数据？
 
 ## 并行Pandas
 

@@ -268,6 +268,10 @@ https://mp.weixin.qq.com/s/7cf14CEDa-LHFvO8gyedzg
 
 为什么老编辑器Vim这么难用，却很受欢迎？
 
+https://mp.weixin.qq.com/s/b-34Y230B_I56Epf64hYDQ
+
+宇宙第一IDE到底是谁？
+
 # 化学
 
 ![](/images/img2/SI.png)

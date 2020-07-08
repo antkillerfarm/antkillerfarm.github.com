@@ -251,6 +251,10 @@ https://mp.weixin.qq.com/s/eejvp9yCJxP_Crj8P9jqew
 
 Elasticsearch索引容量管理实践
 
+https://mp.weixin.qq.com/s/Osw6IAK5G6v11nyhq5u-HA
+
+Elasticsearch遇上BERT：使用Elasticsearch和BERT构建搜索引擎
+
 # Flume & Kafka
 
 Flume和Kafka都是日志系统。

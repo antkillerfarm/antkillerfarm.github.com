@@ -58,6 +58,10 @@ https://mp.weixin.qq.com/s/4baaoCCdGX4iTw2MO_Y9rA
 
 熊元骏：人类行为理解研究进展
 
+https://mp.weixin.qq.com/s/3e1K_Dw6wSDR5DC8E8SSXg
+
+行为识别综述
+
 https://mp.weixin.qq.com/s/pTlELRhUL9Zg50HXDWjbqw
 
 基于双流递归神经网络的人体骨架行为识别！

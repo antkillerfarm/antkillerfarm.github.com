@@ -308,3 +308,11 @@ https://github.com/petewarden/extract_loudest_section
 https://www.kaggle.com/davids1992/speech-representation-and-data-exploration/notebook
 
 包含对Speech Commands Datasets的数据处理过程的blog
+
+----
+
+Google的声音理解团队发布了由200万个人标记的10秒YouTube视频音轨组成的数据集，标签来自600多个音频事件类，数据集命名为Audioset。
+
+https://zhuanlan.zhihu.com/p/157842463
+
+深入解读VGGish

@@ -54,6 +54,10 @@ https://mp.weixin.qq.com/s/QdrwlaFZi3VRGptw4cYJSQ
 
 ## AR vs AE
 
+自回归模型，是统计上一种处理时间序列的方法，用同一变数例如x的之前各期，亦即$$x_1$$至$$x_{t-1}$$来预测本期$$x_t$$的表现，并假设它们为一线性关系。因为这是从回归分析中的线性回归发展而来，只是不用x预测y，而是用x预测x自己，所以叫做自回归。
+
+----
+
 **AR**: Autoregressive Lanuage Modeling，又叫自回归语言模型。它指的是，依据前面(或后面)出现的tokens来预测当前时刻的token，代表模型有ELMO、GTP等。
 
 $$\text{forward:}p(x)=\prod_{t=1}^Tp(x_t|x_{<t})$$
@@ -71,6 +75,12 @@ $$p(x)=\prod_{x\in Mask}p(x_t|context)$$
 - 缺点：由于训练中采用了MASK标记，导致预训练与微调阶段不一致的问题。此外对于生成式问题，AE模型也显得捉襟见肘，这也是目前BERT为数不多没有实现大的突破的领域。
 
 - 优点：能够很好的编码上下文语义信息，在自然语言理解(NLU)相关的下游任务上表现突出。
+
+参考：
+
+https://mp.weixin.qq.com/s/n6F6MTjrUCmvEoaLiVZpxA
+
+更深的编码器+更浅的解码器=更快的自回归模型
 
 ## UniLM
 
