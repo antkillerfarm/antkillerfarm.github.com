@@ -54,7 +54,7 @@ https://mp.weixin.qq.com/s/QdrwlaFZi3VRGptw4cYJSQ
 
 ## AR vs AE
 
-**AR**: Aotoregressive Lanuage Modeling，又叫自回归语言模型。它指的是，依据前面(或后面)出现的tokens来预测当前时刻的token，代表模型有ELMO、GTP等。
+**AR**: Autoregressive Lanuage Modeling，又叫自回归语言模型。它指的是，依据前面(或后面)出现的tokens来预测当前时刻的token，代表模型有ELMO、GTP等。
 
 $$\text{forward:}p(x)=\prod_{t=1}^Tp(x_t|x_{<t})$$
 

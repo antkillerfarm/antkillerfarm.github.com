@@ -64,6 +64,10 @@ https://zhuanlan.zhihu.com/p/108636766
 
 从RAID到分布式系统的副本分布
 
+https://mp.weixin.qq.com/s/UTJL98BhrQ3yLvAQrl1P8A
+
+​我们的系统需要什么样的分布式锁？
+
 # 大数据平台参考资源
 
 ![](/images/img3/big_data.png)

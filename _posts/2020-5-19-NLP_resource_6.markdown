@@ -299,3 +299,7 @@ https://zhuanlan.zhihu.com/p/57149916
 ![](/images/img3/Trump.jpg)
 
 ![](/images/img3/Trump_2.jpg)
+
+----
+
+真空中的球形鸡源自一个物理学笑话。用于讽刺盲目简化条件假设前提、过度简化(物理)模型，以至于得出的结论完全不符合现实的情况。

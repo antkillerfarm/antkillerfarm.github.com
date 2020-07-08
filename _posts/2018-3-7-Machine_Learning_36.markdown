@@ -224,6 +224,10 @@ https://mp.weixin.qq.com/s/l6Fp5WTNH0b_cl2y7Az76Q
 
 深入理解LightGBM
 
+https://mp.weixin.qq.com/s/H9zkyO9oZAysWMyigd1tNw
+
+LightGBM
+
 # CatBoost
 
 这是Yandex推出的Boost工具包。

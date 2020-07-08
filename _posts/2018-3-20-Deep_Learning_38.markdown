@@ -362,6 +362,10 @@ https://mp.weixin.qq.com/s/G-4w5jMuN-_zVARPeb0cqA
 
 细粒度实体分类论文综述
 
+https://mp.weixin.qq.com/s/FcSzjphpsWCB-nrtbjs4gg
+
+如何掌握好图像分类算法？
+
 # 显著性检测
 
 https://blog.csdn.net/dawnlooo

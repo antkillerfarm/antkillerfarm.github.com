@@ -221,6 +221,10 @@ https://blog.csdn.net/weixin_38490884/article/details/83009344
 
 光场的可视化与重聚焦原理
 
+https://mp.weixin.qq.com/s/pzfZcfytXMyGSz3kc6Jm9A
+
+空间-角度信息交互的光场图像超分辨
+
 https://mp.weixin.qq.com/s/ofoh7xH9MB0ifORi-ZQbcA
 
 苹果iphone Xs/Xr camera有哪些改进
