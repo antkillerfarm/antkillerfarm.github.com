@@ -247,6 +247,16 @@ https://www.zhihu.com/question/404380682
 
 ----
 
+1、凡是中国和外国都掌握的，都是没什么难度的技术；
+
+2、凡是中国掌握而外国没掌握的，都是没用的技术；
+
+3、凡是外国掌握而中国没掌握的，都是屌炸天的技术。
+
+有这三句话，喷遍知乎不成问题。
+
+----
+
 ![](/images/img3/top10.png)
 
 https://mp.weixin.qq.com/s/1NXjgkr3xWDzqm7Y-9x7-Q
