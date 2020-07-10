@@ -290,6 +290,10 @@ https://mp.weixin.qq.com/s/s7sHzzLANOp8-1LxgXQskA
 
 谷歌开发者大会上，蚂蚁金服开源ElasticDL分布式深度学习系统
 
+https://mp.weixin.qq.com/s/IQMXg6nIJO-9-IG3mJpvRg
+
+ElasticDL：同时提升集群利用率和研发效率的分布式深度学习框架
+
 https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771181&idx=1&sn=30b2a5abc7261b4f2ea122e8e96fdabf
 
 世界第一超算跑深度学习模型，2.76万块V100 GPU将分布式训练扩展到极致

@@ -257,6 +257,16 @@ https://www.zhihu.com/question/404380682
 
 ----
 
+1946年，当时的国民党政府和美国签了一份《中美友好通商航海条约》。这个条约在当时，看上去非常自由，比如，双方的包括船舶可以自由的在对方任何口岸、地方或领水内自由航行，开入对方“对外国商务或航业不开放之任何口岸、地方或领水”。
+
+当时，在中国国内，普遍认为这个条约是超越了二十一条的卖国条约。对美国开放了全部中国的领土，从水上到陆地，从海洋到内河。
+
+这个条约，表面上确实是两国平等的。但这个条约，现在的美国政府绝对不敢签署了。
+
+为什么美国人当时愿意签，因为1946年，美国在航运、经济、科技、金融、工业具有绝对的优势，所以可以签。现在，美国的优势没这么大了，所以就不敢签了。
+
+----
+
 ![](/images/img3/top10.png)
 
 https://mp.weixin.qq.com/s/1NXjgkr3xWDzqm7Y-9x7-Q
@@ -280,55 +290,3 @@ https://mp.weixin.qq.com/s/MCAR8M2DoV30-McdsjTxDw
 徒步横穿南极大陆第一人
 
 >秦大河，1947年生，地理学家，中国科学院院士，第三世界科学院院士。曾任中国气象局局长、中国科学技术协会副主席等
-
-# 阿波罗50年
-
-https://mp.weixin.qq.com/s/79e6p2TYpttO-NR1of21jw
-
-月之梦的起源
-
-https://mp.weixin.qq.com/s/QtvKdwbuzUJICjdKbcPIlg
-
-登月究竟是真是假？
-
-https://view.inews.qq.com/a/TEC201907170006770C
-
-别误会，那个经典的月球脚印不是阿姆斯特朗的（巴兹·奥尔德林）
-
-https://mp.weixin.qq.com/s/OdMaaP_gE1rR_rd14LfA9w
-
-战争与登月的渊源
-
-https://mp.weixin.qq.com/s/YRJpHvlEulfBFm8HpBYBZQ
-
-苏联开启的登月序曲
-
-https://mp.weixin.qq.com/s/v3HNhV08vWYPGdeXAZ47ag
-
-月球来到你身边
-
-https://view.inews.qq.com/a/TEC2019072100124408
-
-一文俯瞰从阿波罗1号到17号全舰队
-
-![](/images/img3/Apollo11_AnnotatedHero.jpg)
-
-https://mp.weixin.qq.com/s/Y1hQJHFB5InSZNB2T2KfVw
-
-10万镜子反射月光，组成3.6平方公里巨幅头像，谷歌花式纪念登月50年
-
-https://mp.weixin.qq.com/s/d6nmsH10qchY1pP8CibiBA
-
-跌跌撞撞的美国
-
-https://mp.weixin.qq.com/s/-KHsG9lZknY952U_LTV7qg
-
-天气太热了，我们去太阳系度假吧
-
-https://mp.weixin.qq.com/s/EPMdW1qxQVl0MVUSjhWxyQ
-
-NASA传奇数学家去世，她曾笔算了登月轨道
-
-https://mp.weixin.qq.com/s/8vRFfFLdLWSPpTzHjUKegQ
-
-哈勃太空望远镜30岁生日快乐！我们看到的宇宙因你而不同

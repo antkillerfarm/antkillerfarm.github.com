@@ -6,6 +6,14 @@ category: Attention
 
 # 轻量化BERT（续）
 
+https://www.zhihu.com/question/347898375
+
+如何看待瘦身成功版BERT——ALBERT？
+
+https://mp.weixin.qq.com/s/a0d0b1jSm5HxHso9Lz8MSQ
+
+小版BERT也能出奇迹：最火的预训练语言库探索小巧之路
+
 https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771134&idx=2&sn=012082a897dbf125000e38b73520c51d
 
 TinyBERT：模型小7倍，速度快8倍，华中科大、华为出品
@@ -361,27 +369,3 @@ SpanBERT：提出基于分词的预训练模型，多项任务性能超越现有
 https://zhuanlan.zhihu.com/p/76912493
 
 nlp中的预训练语言模型总结(单向模型、BERT系列模型、XLNet)
-
-https://mp.weixin.qq.com/s/pYSs6NhIAB6DuwNnKZhkZQ
-
-Bert改进：如何融入知识
-
-https://mp.weixin.qq.com/s/in5SDWlQg8ts4E8DTmHxMQ
-
-BERT在推荐系统领域可能会有什么作为？
-
-https://mp.weixin.qq.com/s/kJhOrz0VaYc-k-6XJS02ag
-
-8篇论文梳理BERT相关模型进展与反思
-
-https://mp.weixin.qq.com/s/-eBL9gFbAGFtmqkLMAoUTw
-
-文本+视觉，多篇Visual/Video BERT论文介绍
-
-https://mp.weixin.qq.com/s/hI9XAiqKaHLq-Z9JkaWA_A
-
-解决自然语言歧义问题，斯坦福教授、IJCAI卓越研究奖得主提出SenseBERT模型
-
-https://mp.weixin.qq.com/s/55B0ToIKDusiPI5farR19w
-
-NLP这两年：15个预训练模型对比分析与剖析

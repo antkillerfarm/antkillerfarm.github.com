@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/iFlnZ8z5baUdWCZxIGkq5g
 
 机器学习实战——LBP特征提取
 
+https://mp.weixin.qq.com/s/Kj1enaH_O-vVu3APDDX8sQ
+
+如何在较暗环境进行人脸检测？
+
 # Fisherface
 
 Fisherface由Peter N. Belhumeur, Joao P. Hespanha和David J. Kriegman于1997年提出。

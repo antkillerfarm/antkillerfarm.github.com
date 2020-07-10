@@ -224,7 +224,17 @@ https://mp.weixin.qq.com/s/-Y7Qy-5aJNJ5bx8QJf3k2w
 
 Transformer及其变种
 
+https://mp.weixin.qq.com/s/M0zLw9hA5xzontKB7Zj23Q
+
+Memory Transformer，一种简单明了的Transformer改造方案
+
 # 预训练语言模型进化史
+
+![](/images/img3/Sesame_Street.jpg)
+
+Sesame Street（芝麻街）是是美国公共广播协会（PBS）制作播出的儿童教育电视节目，该节目于1969年11月10日在全国教育电视台（PBS的前身）上首次播出。它是迄今为止，获得艾美奖奖项最多的一个儿童节目。
+
+从ELMO开始，一系列的预训练语言模型皆以该剧中的角色命名，甚至ERNIE还有清华和百度两个版本。。。
 
 ![](/images/img3/BERT.jpg)
 
@@ -393,13 +403,3 @@ A Visual Guide to Using BERT for the First Time
 上图是BERT的网络结构图。
 
 BERT是Bidirectional Encoder Representations from Transformers的缩写。从这个名字可以看出它将Transformer中的encoder作为一个基本单元，然后采用了类似双向RNN的方式，做了一个双向的Transformer的结构。
-
-## pre-training
-
-BERT的强大，主要不在网络结构上。上面提到的GPT 1.0虽然输给了BERT，但网络更深、向量维度也更大的GPT 2.0却赢了BERT，可见单向或者双向的Transformer，并不是问题的关键。让这些模型真正强大的原因主要在于pre-training。
-
-![](/images/img3/BERT_2.png)
-
-上图是BERT的pre-training和fine-tuning的结构图。
-
-所谓的pre-training其实就是海量文本的无监督学习。

@@ -44,6 +44,10 @@ https://mp.weixin.qq.com/s/6V5ccGLAGcKwM3pi1nonZQ
 
 腾讯优图移动端推理框架TNN开源啦！
 
+https://mp.weixin.qq.com/s/31gFtdMqfv-IfmHAuAXTvg
+
+深度学习推理引擎：MNN pk TNN
+
 ## MACE
 
 MACE是小米的作品。

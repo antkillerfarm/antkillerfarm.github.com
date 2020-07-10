@@ -142,6 +142,36 @@ https://zhuanlan.zhihu.com/p/143161957
 
 点积 vs. MLP：推荐模型到底用哪个更好？
 
+# 人脸检测/识别+
+
+https://mp.weixin.qq.com/s/-VknGwKKY14cT-lZ7sC43A
+
+人脸识别--基于深度学习以人类为中心的图像理解
+
+https://mp.weixin.qq.com/s/bAlaCWg4OEprpoZqQFQg1w
+
+百度提出PyramidBox人脸检测算法
+
+https://mp.weixin.qq.com/s/CYZvFb7kryE-8HV3teGRzA
+
+有效遮挡检测的鲁棒人脸识别
+
+https://mp.weixin.qq.com/s/XTIl505glmfCItuiwuPLwg
+
+人脸聚类——Linkage Based Face Clustering via GCN
+
+https://mp.weixin.qq.com/s/CR4Nf_RklcXA45mswPv8Zw
+
+腾讯优图开源人脸检测算法DSFD，刷新两项数据集纪录
+
+https://mp.weixin.qq.com/s/B8r2YEd9UbKMTT8Tup2Y_w
+
+腾讯（优图）新技术的人脸检测（DSFD）
+
+https://zhuanlan.zhihu.com/p/62954487
+
+旷视研究院新出8000点人脸关键点，堪比电影级表情捕捉
+
 # 深度信息检索+
 
 https://mp.weixin.qq.com/s/jZCHyjhTW9JHW3xQSTzyYA

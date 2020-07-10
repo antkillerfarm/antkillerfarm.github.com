@@ -8,6 +8,30 @@ category: DL
 
 ## 参考（续）
 
+https://github.com/jiankangdeng/handbook
+
+人脸识别手册 (分类论文集)
+
+https://github.com/ShownX/FacePaperCollection
+
+人脸相关文献代码集锦：人脸检测、人脸识别、人脸生成等
+
+https://zhuanlan.zhihu.com/p/74603794
+
+基于深度学习的人脸检测和识别方法介绍
+
+https://mp.weixin.qq.com/s/FMremLz7777x-XGc02mmkA
+
+深度学习人脸检测入门必读文章
+
+https://mp.weixin.qq.com/s/__b-7Cl482taXwIVb_9vwQ
+
+以人为本的计算机视觉研究：WIDER Challenge 2019（人脸检测/行人检测/人物检索）
+
+https://mp.weixin.qq.com/s/eZ78biXN-mVw3s9Ky_LBZg
+
+如何走近深度学习人脸识别？你需要这篇超长综述
+
 https://mp.weixin.qq.com/s/tum24mzS2cUiKW87a1weFA
 
 人脸识别全面总结：从传统方法到深度学习
@@ -363,31 +387,3 @@ libfacedetection算法开源
 https://mp.weixin.qq.com/s/DkvQ86tgU4DarsmY_qTLdg
 
 最快人脸检测遇敌手！ZQCNN vs libfacedetection
-
-https://mp.weixin.qq.com/s/-VknGwKKY14cT-lZ7sC43A
-
-人脸识别--基于深度学习以人类为中心的图像理解
-
-https://mp.weixin.qq.com/s/bAlaCWg4OEprpoZqQFQg1w
-
-百度提出PyramidBox人脸检测算法
-
-https://mp.weixin.qq.com/s/CYZvFb7kryE-8HV3teGRzA
-
-有效遮挡检测的鲁棒人脸识别
-
-https://mp.weixin.qq.com/s/XTIl505glmfCItuiwuPLwg
-
-人脸聚类——Linkage Based Face Clustering via GCN
-
-https://mp.weixin.qq.com/s/CR4Nf_RklcXA45mswPv8Zw
-
-腾讯优图开源人脸检测算法DSFD，刷新两项数据集纪录
-
-https://mp.weixin.qq.com/s/B8r2YEd9UbKMTT8Tup2Y_w
-
-腾讯（优图）新技术的人脸检测（DSFD）
-
-https://zhuanlan.zhihu.com/p/62954487
-
-旷视研究院新出8000点人脸关键点，堪比电影级表情捕捉

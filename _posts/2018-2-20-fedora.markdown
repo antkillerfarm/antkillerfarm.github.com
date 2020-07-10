@@ -335,6 +335,10 @@ https://mp.weixin.qq.com/s/zBtdhjAOjwcJbGluccwOlA
 
 我和面试官之间关于操作系统的一场对弈！写了很久，希望对你有帮助！
 
+https://mp.weixin.qq.com/s/3Pp7wkDO6Rnxb5aZP0sacw
+
+一文了解操作系统I/O
+
 ----
 
 https://mp.weixin.qq.com/s/WZyuTtEfaTFLnCfvhOrp7g

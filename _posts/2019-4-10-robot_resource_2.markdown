@@ -92,6 +92,10 @@ https://mp.weixin.qq.com/s/aaqd0crHdk2WyKO4J9hmDg
 
 自动驾驶中的车道线跟踪技术
 
+https://mp.weixin.qq.com/s/NvVh3GO9iOGsftYgOlRb3Q
+
+300+FPS！浙大提出一种超快速车道线检测方法
+
 ## 组合导航
 
 https://mp.weixin.qq.com/s/F8aLNue_qDlMyTAznBLC7g

@@ -419,7 +419,7 @@ https://mp.weixin.qq.com/s/tguC-WOleKRWLfTmGdJlQg
 
 Linux文件系统的实现
 
-https://mp.weixin.qq.com/s/hTD9HEIbSx69wJhA_dv9Qg
+https://www.cnblogs.com/biyeymyhjob/archive/2012/07/20/2601655.html
 
 Linux写时拷贝技术(copy-on-write)
 

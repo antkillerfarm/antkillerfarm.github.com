@@ -114,36 +114,6 @@ cmd
 
 到opensuse的官网下载mingw32-libintl的rpm包。用7-zip解压安装到gtk包中即可。
 
-2015.11
-
-稍早的时候，我在安装pygtk的环境时，发现pygi-aio安装程序提供的GTK版本已经到了3.14。但GTK官方这时仍然没有进展，版本停留在3.6.4。于是我又打算使用pygtk提供的更新来进行编程，但pygtk只提供了.dll文件，而没有.h和.lib文件，实际上并不好用，因此只得放弃之。
-
-最近再上官网，发现其已经提供了更好的解决办法——MSYS2。MSYS2是Martell Malone维护的一个开源项目，旨在提供一个方便易安装的MSYS开发环境，其中也包括为各种开发包提供更新维护，GTK就是其中之一。（当前的版本为Gtk 3.18.3）
-
-现将安装步骤罗列如下：
-
-1.在http://www.msys2.org/，下载安装程序，并按照网页提示，更新pacman。
-
-2.使用pacman下载必要的开发包。
-
-`pacman -S autoconf autogen automake-wrapper pkg-config make gcc gdb`
-
-`pacman -Ss <name>`: 查询相关的软件包是否存在。
-
-`pacman -Syu`: 更新已安装的软件包。
-
-MSYS2提供的环境除了安装友好，便于更新之外，对bash的支持也优于之前的版本。现在已经不需要单独为Windows平台提供特殊的makefile文件了。
-
-还可在如下网址查询packages：
-
-https://github.com/Alexpux/MINGW-packages
-
-https://github.com/Alexpux/MSYS2-packages
-
-MSYS2提供了两套API：mingw32和mingw64。可用以下方法（以gcc为例）查询需要安装的package的名字：
-
-`pacman -Sl | grep gcc`
-
 # GTK & OpenGL
 
 众所周知，OpenGL只是一个图形渲染库，没有对于窗口系统的支持，而glut等也只是提供了最基本的窗口操作，使用起来并不方便。因此最好的做法是在一个成熟的GUI库的基础上添加OpenGL的支持。
@@ -211,3 +181,11 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gtk_browser
 http://imtx.me/archives/1124.html
 
 中摘录的，原始的版本基于Gtk 2.x，现在改用Gtk 3.x。
+
+# GIO网络应用开发
+
+GIO提供了以GSocket为首的低级API，和以GSocketClient、GSocketConnection为首的高级API。
+
+高级API的使用示例如下：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/glib/network

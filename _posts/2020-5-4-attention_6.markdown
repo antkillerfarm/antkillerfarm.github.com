@@ -6,6 +6,30 @@ category: Attention
 
 # BERT进阶
 
+https://mp.weixin.qq.com/s/pYSs6NhIAB6DuwNnKZhkZQ
+
+Bert改进：如何融入知识
+
+https://mp.weixin.qq.com/s/in5SDWlQg8ts4E8DTmHxMQ
+
+BERT在推荐系统领域可能会有什么作为？
+
+https://mp.weixin.qq.com/s/kJhOrz0VaYc-k-6XJS02ag
+
+8篇论文梳理BERT相关模型进展与反思
+
+https://mp.weixin.qq.com/s/-eBL9gFbAGFtmqkLMAoUTw
+
+文本+视觉，多篇Visual/Video BERT论文介绍
+
+https://mp.weixin.qq.com/s/hI9XAiqKaHLq-Z9JkaWA_A
+
+解决自然语言歧义问题，斯坦福教授、IJCAI卓越研究奖得主提出SenseBERT模型
+
+https://mp.weixin.qq.com/s/55B0ToIKDusiPI5farR19w
+
+NLP这两年：15个预训练模型对比分析与剖析
+
 https://mp.weixin.qq.com/s/SPfa17p3QetZXCC01DwmQA
 
 解密BERT
@@ -133,6 +157,10 @@ https://mp.weixin.qq.com/s/uv74FKtUNtgjIBQZbsX7Qw
 https://mp.weixin.qq.com/s/BvM5zx-3XrsZj8BQ5WEa4A
 
 一文带你了解MultiBERT
+
+https://mp.weixin.qq.com/s/mFRhp9pJRa9yHwqc98FMbg
+
+BERT在美团搜索核心排序的探索和实践
 
 # Attention进阶
 

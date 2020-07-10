@@ -300,6 +300,14 @@ https://mp.weixin.qq.com/s/BwqOABORt6B9qd9mEufa7w
 
 人脸年龄编辑：无可奈何花落去，似曾相似春又来！
 
+https://mp.weixin.qq.com/s/17Q21OazunLEicOaJUyMxg
+
+人脸属性编辑都有哪些核心知识点，如何长期进行学习
+
+https://mp.weixin.qq.com/s/hjeOBKuyR87zBWZHqb3gow
+
+想提前目睹人到中年的发型？试试这款自制秃头生成器
+
 ## 活体检测
 
 https://mp.weixin.qq.com/s/zOnmKSnQctnyx7pKXX-tpQ
@@ -401,27 +409,3 @@ https://github.com/ChanChiChoi/awesome-Face_Recognition
 https://mp.weixin.qq.com/s/FqH_5ztUWRDqb6X9_QggJw
 
 深度学习在人脸检测中的应用
-
-https://github.com/jiankangdeng/handbook
-
-人脸识别手册 (分类论文集)
-
-https://github.com/ShownX/FacePaperCollection
-
-人脸相关文献代码集锦：人脸检测、人脸识别、人脸生成等
-
-https://zhuanlan.zhihu.com/p/74603794
-
-基于深度学习的人脸检测和识别方法介绍
-
-https://mp.weixin.qq.com/s/FMremLz7777x-XGc02mmkA
-
-深度学习人脸检测入门必读文章
-
-https://mp.weixin.qq.com/s/__b-7Cl482taXwIVb_9vwQ
-
-以人为本的计算机视觉研究：WIDER Challenge 2019（人脸检测/行人检测/人物检索）
-
-https://mp.weixin.qq.com/s/eZ78biXN-mVw3s9Ky_LBZg
-
-如何走近深度学习人脸识别？你需要这篇超长综述

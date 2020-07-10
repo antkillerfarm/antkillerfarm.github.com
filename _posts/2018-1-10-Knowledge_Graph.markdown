@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  知识图谱参考资源（一）
-category: resource 
+category: graph 
 ---
 
 # 知识图谱参考资源
@@ -109,6 +109,10 @@ https://mp.weixin.qq.com/s/L6fMcRa1_me2DKr2KADAjA
 https://mp.weixin.qq.com/s/qOt0V1XsQvwpKhNiaAfVjA
 
 胡伟-知识图谱融合方法概述分享
+
+https://mp.weixin.qq.com/s/6lTxdxBsw-HJzuKhvNMhcg
+
+基于知识图谱的推荐系统综述
 
 ## blog
 

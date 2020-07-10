@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  知识图谱参考资源（二）
-category: resource 
+category: graph 
 ---
 
 # 知识图谱参考资源

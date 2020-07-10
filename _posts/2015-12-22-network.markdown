@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  网络杂谈, GTK学习心得（二）
+title:  网络杂谈
 category: technology 
 ---
 
@@ -272,16 +272,6 @@ WPS分为PBC(BUTTON)和PIN两种方式
 记住AP的PIN码,然后打开客户端（无线网卡）WPS设置软件,选择以AP的PIN码来进行连接。
 
 输入完PIN码后,点下一步,一会儿后,WPS安全连接成功建立。
-
-# GTK学习心得
-
-## GIO网络应用开发
-
-GIO提供了以GSocket为首的低级API，和以GSocketClient、GSocketConnection为首的高级API。
-
-高级API的使用示例如下：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/glib/network
 
 # 目标检测进阶+
 

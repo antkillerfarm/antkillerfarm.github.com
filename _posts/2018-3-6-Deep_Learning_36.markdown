@@ -378,7 +378,7 @@ https://mp.weixin.qq.com/s/9Vt41Ygn767SnpjoXgnEEg
 
 基于语义流的快速而准确的场景解析
 
-# 人脸检测/识别+
+# 人脸检测/识别
 
 https://mp.weixin.qq.com/s/PsToV8Z17tRzXW_AbaMNmg
 

@@ -4,9 +4,17 @@ title:  Attention（四）——ELMo, GPT, ERNIE, XLNet, 轻量化BERT
 category: Attention 
 ---
 
-# BERT
+# BERT（续）
 
-## pre-training（续）
+## pre-training
+
+BERT的强大，主要不在网络结构上。上面提到的GPT 1.0虽然输给了BERT，但网络更深、向量维度也更大的GPT 2.0却赢了BERT，可见单向或者双向的Transformer，并不是问题的关键。让这些模型真正强大的原因主要在于pre-training。
+
+![](/images/img3/BERT_2.png)
+
+上图是BERT的pre-training和fine-tuning的结构图。
+
+所谓的pre-training其实就是海量文本的无监督学习。
 
 如何进行无监督学习呢？
 
@@ -311,11 +319,3 @@ https://mp.weixin.qq.com/s/VfytCWa-h8CmUZW1RWAdnQ
 | MobileBERT: Task-Agnostic Compression of BERT by Progressive Knowledge Transfer |  |  | Y |  |  | Y |  |
 | Q8BERT: Quantized 8Bit BERT |  |  |  |  | Y |  | Y |
 | Q-BERT: Hessian Based Ultra Low Precision Quantization of BERT |  |  |  |  | Y |  | Y |
-
-https://www.zhihu.com/question/347898375
-
-如何看待瘦身成功版BERT——ALBERT？
-
-https://mp.weixin.qq.com/s/a0d0b1jSm5HxHso9Lz8MSQ
-
-小版BERT也能出奇迹：最火的预训练语言库探索小巧之路

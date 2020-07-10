@@ -70,6 +70,8 @@ GBDT的核心在于**累加所有树的结果作为最终结果**。例如根到
 
 上面举的例子中，越靠近叶子，其决策值的绝对值越小。这不是偶然的。决策树的基本思路就是“分而治之”，自然越靠近根结点，其划分的粒度越粗。每划分一次，预测误差（即残差r）就小一点。
 
+![](/images/img3/Boost.png)
+
 我们将$$\{x^{(i)},r^{(i)}\}$$组成训练集，交给下一步的弱分类器，这样也就变相提高了下一步划分中预测错误项的权重。由于这个过程，在原理上和梯度下降类似，这也就是算法名称中Gradient的由来，尽管实际上我们并不需要求导计算Gradient。
 
 为了防止过拟合，GBDT还采用了Shrinkage（缩减）的思想，每次只走一小步来逐渐逼近结果，这样各个树的残差就是渐变的，而不是陡变的。
@@ -248,6 +250,10 @@ https://mp.weixin.qq.com/s/lTAekav7kgcbF47Yk-LL-g
 
 最全！两万字带你完整掌握八大决策树！
 
+https://mp.weixin.qq.com/s/pJe3-XiMwaIQmSzwSgTqhA
+
+硬核拆解GBDT，带你入门机器学习
+
 # 关联规则挖掘
 
 ## 基本概念
@@ -285,15 +291,3 @@ $$support(X)=\frac{count(X\subseteq T)}{\mid D\mid }$$
 $$R：X\Rightarrow Y$$
 
 其中$$X\subset I$$，$$Y\subset I$$，并且$$X\cap Y=\varnothing$$。表示项集X在某一交易中出现，则导致Y以某一概率也会出现。用户关心的关联规则，可以用两个标准来衡量：支持度和可信度。
-
-**定义六**：关联规则R的**支持度**是交易集同时包含X和Y的交易数与$$\mid D\mid$$之比。即：
-
-$$support(X\Rightarrow Y)=\frac{count(X\cap Y)}{\mid D\mid }$$
-
-支持度反映了X、Y同时出现的概率。关联规则的支持度等于频繁集的支持度。
-
-**定义七**：对于关联规则R，**可信度**是指包含X和Y的交易数与包含X的交易数之比。即：
-
-$$confidence(X\Rightarrow Y)=\frac{support(X\Rightarrow Y)}{support(X)}$$
-
-可信度反映了如果交易中包含X，则交易包含Y的概率。一般来说，只有支持度和可信度较高的关联规则才是用户感兴趣的。
