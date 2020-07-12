@@ -68,6 +68,10 @@ https://zhuanlan.zhihu.com/p/78561555
 
 KNN的实现方式有哪些？
 
+https://mp.weixin.qq.com/s/92Dld5zg5vLtpkdnhmSldg
+
+K近邻算法哪家强？KDTree、Annoy、HNSW原理和使用方法介绍
+
 # AutoML
 
 ## 概述

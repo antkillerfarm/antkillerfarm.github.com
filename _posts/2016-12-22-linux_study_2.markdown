@@ -117,6 +117,10 @@ https://mp.weixin.qq.com/s/HvADkICPYflS2VTuSB16rg
 
 Linux入门必看：如何60秒内分析Linux性能
 
+https://mp.weixin.qq.com/s/7ZVpdQOwNkIjW-16Mp8dcA
+
+Linux企业运维人员最常用150个命令汇总
+
 # 时间的表示方法
 
 一般遵循ISO 8601标准：

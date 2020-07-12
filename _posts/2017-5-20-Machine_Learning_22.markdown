@@ -20,6 +20,10 @@ https://mp.weixin.qq.com/s/lzb-R0CQ3YRY4a8WBbdOhw
 
 Focal Loss详解以及为什么能够提高处理不平衡数据分类的表现
 
+https://zhuanlan.zhihu.com/p/147691786
+
+大白话Generalized Focal Loss
+
 ## Other Loss
 
 https://mp.weixin.qq.com/s/7Jg-YvS3nvcPJ-zYhK96EA

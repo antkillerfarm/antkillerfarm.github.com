@@ -158,6 +158,10 @@ https://mp.weixin.qq.com/s/FjmlXqlpaRVLdAbjqspOJA
 
 这是一份你必须学习的强化学习算法清单
 
+https://mp.weixin.qq.com/s/GISY-FvV1Vml3CNLInjgYg
+
+Tensorflow2.0实现29种深度强化学习算法大汇总
+
 https://mp.weixin.qq.com/s/lfXQqllfFPtuNIrQZiD-NQ
 
 深度强化学习十大原则

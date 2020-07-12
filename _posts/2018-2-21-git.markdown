@@ -414,6 +414,10 @@ https://blog.csdn.net/mocoe/article/details/84344411
 
 修改git commit的author信息
 
+https://mp.weixin.qq.com/s/9Ey04P5Xv4W95N2FEioZ1g
+
+如何选择Git分支模式？
+
 # ZeroMQ
 
 ZeroMQ是个在Socket之上，而在MQ之下的网络通信库。正如名称所言，它实际上并不是一个完整的MQ，而仅仅只有MQ的一些子功能罢了。

@@ -314,3 +314,7 @@ https://mp.weixin.qq.com/s/On-pHCdGg3piTQtDV88kQA
 https://mp.weixin.qq.com/s/t8pVNeW2Y-QQwD8H9Nk83w
 
 定向和密集的目标检测怎么办？动态优化网络来解决
+
+https://zhuanlan.zhihu.com/p/158907507
+
+From VanillaDet to AutoAssign

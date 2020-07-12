@@ -308,6 +308,10 @@ https://mp.weixin.qq.com/s/hjeOBKuyR87zBWZHqb3gow
 
 想提前目睹人到中年的发型？试试这款自制秃头生成器
 
+https://mp.weixin.qq.com/s/egU6SkpKjCznConQfg_Zmw
+
+人脸妆造迁移核心技术总结
+
 ## 活体检测
 
 https://mp.weixin.qq.com/s/zOnmKSnQctnyx7pKXX-tpQ

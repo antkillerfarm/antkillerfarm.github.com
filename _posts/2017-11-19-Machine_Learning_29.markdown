@@ -218,6 +218,10 @@ https://mp.weixin.qq.com/s/BuvLXx0ZItOvhno4XAUpTg
 
 十分钟读懂Beam Search(2/2)
 
+https://mp.weixin.qq.com/s/HFXzBZtf6-s_IQpZvdQ8Tw
+
+Beam Search、GREEDY DECODER、SAMPLING DECODER等解码器工作原理可视化
+
 # 模型驱动 vs 数据驱动
 
 最近阅读了这篇文章，深有感慨：

@@ -80,6 +80,10 @@ https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
 
 生的伟大，死的光荣——致敬卡西尼号土星探测器
 
+https://mp.weixin.qq.com/s/sg24WvUClEZnLxhJio0BuQ
+
+被磨难环绕的“伽利略号”的一生
+
 https://mp.weixin.qq.com/s/ros-kBOIgTgQF2SaGc99qQ
 
 哈佛名镜的前世今生

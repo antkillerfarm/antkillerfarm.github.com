@@ -300,3 +300,7 @@ Context-aware/Sequencial/Session-based的区别
 https://mp.weixin.qq.com/s/ewb9IlqPmQgfXGEUSRNXwQ
 
 搜索广告之自动化创意
+
+https://mp.weixin.qq.com/s/_hGIdl9Y7hWuRDeCmZUMmg
+
+微信“看一看”推荐排序技术揭秘

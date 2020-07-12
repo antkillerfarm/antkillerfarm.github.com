@@ -352,6 +352,10 @@ https://mp.weixin.qq.com/s/NkRemHPRnEcEwbs5b-Mz9w
 
 贝叶斯编程，378页pdf，Bayesian Programming
 
+https://mp.weixin.qq.com/s/DDg4HTp-APwEIul1ZaFFPQ
+
+最新《贝叶斯推断》教程，125页ppt与视频，DeepMind Shakir Mohamed博士
+
 # 图像检索
 
 ## 传统方法

@@ -377,3 +377,7 @@ https://mp.weixin.qq.com/s/8vdTlIe9LV88AVw9kAcVjA
 https://zhuanlan.zhihu.com/p/129279351
 
 X3D Facebook视频理解/行为识别新作
+
+https://zhuanlan.zhihu.com/p/149429010
+
+TAM: 针对动作识别的时序自适应模块

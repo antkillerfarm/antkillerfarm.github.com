@@ -240,6 +240,10 @@ https://mp.weixin.qq.com/s/e-xGWG1qWb_zuyorvhZpJA
 
 John Schulman总结深度强化学习理论、模型及编码调参技巧
 
+https://mp.weixin.qq.com/s/YTiNTQzRs7VkhEfiER5C3g
+
+最新《深度强化学习》教程，165页ppt与视频，Mila Doina Precup
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

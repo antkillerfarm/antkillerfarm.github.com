@@ -327,6 +327,10 @@ https://mp.weixin.qq.com/s/h4LwSRAsDgRqOq3mLt_SCw
 
 浅谈mmap
 
+https://mp.weixin.qq.com/s/djEPqxZSfMp13Uf_h6TSiA
+
+认真分析mmap：是什么 为什么 怎么用
+
 https://mp.weixin.qq.com/s/pSUXoLrwQeaxsI2LI-13EA
 
 带你用生活大白话理解NIO

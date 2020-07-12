@@ -34,6 +34,10 @@ http://blog.sina.com.cn/s/blog_4c9dc2a10102vua9.html
 
 Perplexity（困惑度）详解
 
+https://mp.weixin.qq.com/s/VwSmjv03LyqFFseQHJpgdQ
+
+主题模型的主题数确定和可视化
+
 ## LDA漫游指南
 
 除了rickjin的《LDA数学八卦》之外，马晨写的《LDA漫游指南》也是这方面的中文新作。

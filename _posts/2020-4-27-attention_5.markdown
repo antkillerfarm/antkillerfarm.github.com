@@ -58,6 +58,10 @@ https://mp.weixin.qq.com/s/QdrwlaFZi3VRGptw4cYJSQ
 
 别再蒸馏3层BERT了！变矮又能变瘦的DynaBERT了解一下
 
+https://mp.weixin.qq.com/s/1ZqLWCeyUeb8rsuwTJeZQw
+
+如何修剪BERT达到加速目的？理论与实现
+
 # BERT进阶
 
 ## AR vs AE

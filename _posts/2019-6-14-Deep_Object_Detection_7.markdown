@@ -214,6 +214,10 @@ https://mp.weixin.qq.com/s/ebTbbo-IeqyzDqSn2bgjsQ
 
 带你捋一捋anchor-free的检测模型：FCOS
 
+https://zhuanlan.zhihu.com/p/156112318
+
+FCOS算法的原理与实现
+
 https://mp.weixin.qq.com/s/04h80ubIxjJbT9BxQy5FSw
 
 目标检测：Anchor-Free时代

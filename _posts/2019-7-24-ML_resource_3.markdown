@@ -272,6 +272,10 @@ https://mp.weixin.qq.com/s/b-34Y230B_I56Epf64hYDQ
 
 宇宙第一IDE到底是谁？
 
+https://mp.weixin.qq.com/s/gSW5lxCoo9JkH1JRp6hfzA
+
+30年前未曾发行的任天堂红白机游戏，被这个团队从21张软盘中重新恢复了，还是3D的
+
 # 化学
 
 ![](/images/img2/SI.png)

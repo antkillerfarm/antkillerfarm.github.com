@@ -14,7 +14,41 @@ category: essay
 
 # 世说新语
 
-## 2019.4（续）
+## 2019.3（续）
+
+https://www.zhihu.com/question/22869308/answer/623204879
+
+为什么写论文时一定要引用论文？（钱伟长）
+
+----
+
+https://996.icu/
+
+工作996，生病ICU
+
+https://github.com/MSWorkers/support.996.ICU
+
+Microsoft and GitHub Workers Support 996.ICU
+
+----
+
+历史上的大理段氏，在五代后晋时期建立大理国，统治了云南地区318年（937年—1254年），随后投降蒙古军，成为蒙古汗国和元帝国的大理总管，又继续统治了今天云南中西部地区128年，于明初洪武十五年（1382年）被明军攻灭，作为我国云南地区统治者一共存在了446年。
+
+https://www.zhihu.com/question/20666711/answer/524642062
+
+为什么金庸先生在《天龙八部》里会把大理段氏写成一个江湖味十足的皇权，难道历史上这个政权真的很江湖么？
+
+## 2019.4
+
+https://mp.weixin.qq.com/s/XAUGateD00MJvxTjwBI_3w
+
+颠覆认知！看完这些图，你的世界观还好吗？
+
+----
+
+中国有一座无人敢提及的城市，没有名称，只有一个代号叫404（中国核城）
+
+----
 
 西北政法大学在建新校区时，不小心发现了西汉廷尉张汤的墓，被戏称是挖出了“祖师爷”。从此以后每逢考试，学生们都会集体在澡堂祭拜“祖师爷”。
 
@@ -247,55 +281,3 @@ https://www.zhihu.com/question/36509150/answer/67878788
 ----
 
 央视的军事·农业频道，被网友们亲切地称为“耕战频道”，并由此衍生“外国间谍看央视7套最后变成养猪专业户”的笑谈。
-
-----
-
-棋经有云，布局有三忌，炮忌轻发，马忌躁进，车忌迟开。
-
-----
-
-https://mp.weixin.qq.com/s/S0IJB1avA0GCxDZXeOJyfA
-
-这所学校只为一个学生开放，毕业典礼轰动全岛，“校霸”背后的故事却暖哭了所有人
-
-----
-
-https://media.weibo.cn/article?id=2309404385183922015915
-
-王莽爱改名
-
-----
-
-https://www.zhihu.com/question/271443445/answer/692061772
-
-学术圈修仙记
-
-## 2019.7
-
-https://www.zhihu.com/question/30046079/answer/83892467
-
-如何理清五代十国的历史？
-
-----
-
-https://mp.weixin.qq.com/s/ZHIpG4TN-wyHtcD67s7Y8A
-
-毛遂自荐贴
-
-----
-
-在欧洲，Software as a science（软件即科学）
-
-在美国，Software as a business（软件即商业）
-
-在印度，Software as a service（软件即服务）
-
-在日本，Software as a production（软件即制造）
-
-在中国，Software as a 996（囧）
-
-----
-
-http://news.ifeng.com/history/phtv/tfzg/detail_2011_08/22/8584366_0.shtml
-
-新中国第一艘万吨轮为何首航驶往日本时沉没？

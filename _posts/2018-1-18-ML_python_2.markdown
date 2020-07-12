@@ -158,6 +158,14 @@ https://mp.weixin.qq.com/s/Go7ZUEiItrdc_KOWEAc3sg
 
 如何用Pandas处理文本数据？
 
+https://mp.weixin.qq.com/s/E-5JHJn5Mq883Tx3nXxRVQ
+
+Pandas进阶修炼120题
+
+https://mp.weixin.qq.com/s/biIjn9qPPDyX_tdvmdyRLA
+
+Pandas处理时序数据
+
 ## 并行Pandas
 
 https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw

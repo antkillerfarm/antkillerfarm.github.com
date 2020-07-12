@@ -186,6 +186,10 @@ https://www.cnblogs.com/skyfsm/category/1123384.html
 
 一个OCR方面的blog
 
+https://zhuanlan.zhihu.com/c_1261635421517598720
+
+一个OCR方面的专栏
+
 https://mp.weixin.qq.com/s/WmsHrTIMJhSt8MtFO7-yXA
 
 证件全文本OCR技术，了解一下

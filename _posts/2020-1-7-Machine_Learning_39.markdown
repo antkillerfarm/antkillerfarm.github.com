@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十九）——时间序列分析（2）, 运筹学, 异常检测, 数据清洗
+title:  机器学习（三十九）——时间序列分析（2）, 运筹学, 异常检测, 数据清洗, 因果推理
 category: ML 
 ---
 
@@ -49,6 +49,10 @@ Kaggle知识点：时序数据与Embedding
 https://mp.weixin.qq.com/s/DxRoTGtdrwqcjXL_ot57eg
 
 如何找到时序数据中线性的趋势
+
+https://mp.weixin.qq.com/s/iDUFr11-YX6oa6bLXWK3iQ
+
+时序特征挖掘的奇技淫巧
 
 # 运筹学
 
@@ -318,80 +322,32 @@ https://mp.weixin.qq.com/s/r4ycLnjOl5hSPBMwKpnmsQ
 
 如何打造高质量的NLP数据集
 
-# Optimizer进阶+
+# 因果推理
 
-https://mp.weixin.qq.com/s/E3Iq8YpIZRZOk7SP-cu1xQ
+https://mp.weixin.qq.com/s/doi26r9AVIMbpkZ01wsCZA
 
-如何找到全局最小值？先让局部极小值消失吧
+北京大学何洋波博士《因果推断和因果图模型》机器学习报告
 
-https://mp.weixin.qq.com/s/el1E-61YjLkhFd6AgFUc7w
+https://mp.weixin.qq.com/s/L1ZY_qXPMXpStIgtUp7AKQ
 
-拳打Adam，脚踢SGD：北大提出全新优化算法AdaBound
+为机器学习插上因果推理的翅膀：这是一本系统的因果推理开源书
 
-https://mp.weixin.qq.com/s/TfrJ-rep-TIg345SXursbw
+https://mp.weixin.qq.com/s/ejf0qbIZWpq6Mi4G60ssEQ
 
-为了围剿SGD大家这些年想过的那十几招
+隐藏着的因果关系，如何让相同的机器学习模型变得不同
 
-https://mp.weixin.qq.com/s/9laU3EW0B64rwVb7so1BEA
+https://mp.weixin.qq.com/s/O4JAv4NWp7NL-CzmaB6GxQ
 
-机器学习中的最优化算法总结
+因果关系到底存不存在：反事实和平行宇宙
 
-https://mp.weixin.qq.com/s/mylRodVvvzI3e0-9-fEzTw
+https://mp.weixin.qq.com/s/-SdFNMxHzdSenDYHtjfldA
 
-深度研究自然梯度优化，从入门到放弃
+因果推理入门指南-必须的7个步骤
 
-https://mp.weixin.qq.com/s/P0qzzyVQke_c-RUF0Faitw
+https://mp.weixin.qq.com/s/UcE8lHkaM5RT7ghWz0o-MQ
 
-怎么判断一个优化问题是凸优化还是非凸优化？
+R. A. Fisher和J. Neyman的分歧
 
-https://mp.weixin.qq.com/s/scGkuMJ4lZULhmK69vWYpA
+https://mp.weixin.qq.com/s/oZTU7TAEf-gYzlSXdt0_BA
 
-中国博士生提出最先进AI训练优化器RAdam，收敛快精度高，网友亲测：Adam可以退休了
-
-https://mp.weixin.qq.com/s/010zXPYu36oLOoSkaA8YMg
-
-RAdam优化器又进化：与LookAhead强强结合，性能更优速度更快（Ranger）
-
-https://mp.weixin.qq.com/s/g5mPfqxtEQBUvJQr0ORVBg
-
-可以丢掉SGD和Adam了，新的深度学习优化器Ranger：RAdam + LookAhead强强结合
-
-https://mp.weixin.qq.com/s/OtmMKR0OWytcUgbCMrSc-A
-
-不是我们喜新厌旧，而是RAdam确实是好用，新的State of the Art优化器RAdam
-
-https://www.zhihu.com/question/305694880
-
-为什么K-FAC这种二阶优化方法没有得到广泛的应用？
-
-https://mp.weixin.qq.com/s/etv5Ucyo2tiu64ZtUygz0A
-
-离线优化器
-
-https://mp.weixin.qq.com/s/zy5ALOInXHIh8LHmihu1UA
-
-在线优化器之FOBOS
-
-https://mp.weixin.qq.com/s/7UhB8mSXQUfOPbDKqqg4rg
-
-非光滑优化的光滑化
-
-https://zhuanlan.zhihu.com/p/92230537
-
-求解稀疏优化问题——半光滑牛顿方法
-
-https://mp.weixin.qq.com/s/aLOd_W3juLuWaQeTdzAPjg
-
-数值优化（1）——引入，线搜索：步长选取条件
-
-https://zhuanlan.zhihu.com/p/68748778
-
-指数移动平均（EMA）的原理
-
-https://mp.weixin.qq.com/s/x7UQhSAiE9VJCzUSZfpytA
-
-大规模锥优化之Splitting Conic Solver(SCS)
-
-https://mp.weixin.qq.com/s/EmWRaAOTNYE0Maf6_r41oA
-
-Adam那么棒，为什么还对SGD念念不忘？一个框架看懂深度学习优化算法
+因果推断在阿里文娱用户增长中的应用

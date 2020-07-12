@@ -280,6 +280,10 @@ https://zhuanlan.zhihu.com/p/140926754
 
 低光图像处理方案
 
+https://mp.weixin.qq.com/s/uT4eln61NNCdHYWLeTNsbQ
+
+对数字屏幕拍照时的摩尔纹怎么去除？
+
 # LSM
 
 liquid state machine (LSM)
