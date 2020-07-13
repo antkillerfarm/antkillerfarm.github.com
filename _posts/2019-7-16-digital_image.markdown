@@ -415,16 +415,6 @@ https://zhuanlan.zhihu.com/p/28637279
 
 使用LLVM+PLY实现一个C语言子集的玩具编译器
 
-![](/images/img3/ART.png)
-
-https://mp.weixin.qq.com/s/vnaI8FwB4Ot46weAgq18Eg
-
-华为新贵！方舟编译器的荣光和使命
-
-https://www.zhihu.com/question/344231876/answer/812481811
-
-周志德（Fred Chow)
-
 https://mp.weixin.qq.com/s/7wmBsJgPnOtPXcYaoQd1qA
 
 基于LLVM的源码级依赖分析方案的设计与实现
@@ -444,3 +434,23 @@ A Tour to LLVM IR（下）
 https://mp.weixin.qq.com/s/4FJzxPyCmakjIU-9xlQmJQ
 
 阁下可知文言编程之精妙？CMU本科生开源文言文编程语言，数天2K星
+
+## Android编译
+
+![](/images/img3/ART.png)
+
+https://mp.weixin.qq.com/s/vnaI8FwB4Ot46weAgq18Eg
+
+华为新贵！方舟编译器的荣光和使命
+
+https://www.zhihu.com/question/344231876/answer/812481811
+
+周志德（Fred Chow)
+
+----
+
+为了在Android中支持新的Java7-8-9的新特性，Google又开发了D8和R8。
+
+https://juejin.im/post/5d70fb2ce51d4557ca7fddaa
+
+Android CPU, Compilers, D8 & R8
