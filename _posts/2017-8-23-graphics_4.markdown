@@ -200,6 +200,10 @@ https://mp.weixin.qq.com/s/g-F-D5PC75BjbaRBmifnZw
 
 人脸Haar特征与快速计算神器：积分图
 
+https://mp.weixin.qq.com/s/0yaBwb_HZQXV27ep87ch_A
+
+基于Adaboost算法的人脸检测分类器！
+
 # SIFT
 
 ## 概述

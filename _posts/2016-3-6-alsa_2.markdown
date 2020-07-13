@@ -372,6 +372,10 @@ https://mp.weixin.qq.com/s/IaYnfEZ2bUXIpQvN3ZqFGA
 
 图解红黑树
 
+https://juejin.im/post/5e509b27f265da57455b3f33
+
+面试被问“红黑树”，我一脸懵逼......
+
 https://blog.csdn.net/wo541075754/article/details/54632929
 
 Merkle Tree（默克尔树）算法解析（Merkle Tree，通常也被称作Hash Tree，顾名思义，就是存储hash值的一棵树。）

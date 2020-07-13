@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GTK学习心得（一）
+title:  GTK学习心得
 category: technology 
 ---
 
@@ -79,6 +79,20 @@ https://blog.csdn.net/taiyang1987912/article/category/5778511
 
 一个GTK的专栏
 
+## 2020.7
+
+有4年半时间没有上GTK官网了。这回GTK和Gnome的官网，都改了风格设计，不再是10年前的老样子了。
+
+GTK4已经出了4个预览版，看起来就要正式发布了。从API层面来看，加入了MVVM的设计，CSS应用的也更广了。
+
+12年前，我接触GTK，主要是为了学习Linux GUI编程。
+
+7年前，我研究GTK，开始将工作从Windows转向Linux，那时的目标是写出两个平台都能跑的软件。cygwin/makefile是这时的常客。
+
+5年前，工作全面转入Linux，Windows+Virtual Box。家用双系统。
+
+3年前，工作电脑双系统，几乎不用Windows。
+
 # 在Windows下使用GTK+3
 
 2013.9
@@ -89,7 +103,13 @@ https://blog.csdn.net/taiyang1987912/article/category/5778511
 
 ## 2)下载GTK+3 for Windows
 
-到http://www.tarnyko.net/下载GTK+3的包。该网站是个法国佬办的。在www.gtk.org官方的维护GTK+ for Windows的人员闪人之后，这是少数几个移植GTK+3到Windows，且成功的版本。
+到
+
+http://www.tarnyko.net/
+
+下载GTK+3的包。
+
+该网站是个法国佬办的。在www.gtk.org官方的维护GTK+ for Windows的人员闪人之后，这是少数几个移植GTK+3到Windows，且成功的版本。
 
 该网站还有一篇GTK+3 Installation Tutorial for Windows的文章，介绍如何安装他制作的GTK包。里面还附带有一个Hello World程序代码，对于初始的学习很有帮助。
 
