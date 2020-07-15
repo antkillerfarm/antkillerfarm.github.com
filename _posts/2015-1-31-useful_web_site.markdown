@@ -8,6 +8,10 @@ category: resource
 
 ## 教程类
 
+https://encyclopedia.thefreedictionary.com
+
+Wiki的一个替代品
+
 http://softwaredev.blog.sohu.com/105412003.html
 
 C++库大全
@@ -41,7 +45,7 @@ https://blog.csdn.net/machh/article/details/52109231
 
 http://www.uedtech.com/
 
-UED方面的教程网站。
+UED方面的教程网站。用户体验设计（User Experience Design）。
 
 https://github.com/HQarroum/awesome-iot
 

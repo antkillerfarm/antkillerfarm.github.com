@@ -114,6 +114,35 @@ $$(y+5)(y-2)=0$$
 
 因为图像开口向下，所以$$2a=-5$$。
 
+# 平面几何
+
+## 共线向量定理
+
+![](/images/img3/geo.jpg)
+
+$$\triangle ABC$$中，点D在直线BC上的充要条件是:
+
+$$\overrightarrow{AD}=\frac{\overline{DC}}{\overline{BC}}\cdot\overrightarrow{AB}+\frac{\overline{BD}}{\overline{BC}}\cdot\overrightarrow{AC}$$
+
+其中，$$\overrightarrow{AD}$$表示向量，$$\overline{DC}$$表示向量的数量。
+
+## Menelaus' Theorem
+
+![](/images/img3/MenelausTheorem.gif)
+
+$$AD\cdot BE\cdot CF=BD\cdot CE\cdot AF$$
+
+>Menelaus of Alexandria，公元70～140年，古希腊数学家，天文学家。青年时期求学于Alexandria，后定居于Rome。他第一个认识到曲面上的测地线（geodesics）可以类比于平面上的直线。   
+>Menelaus' theorem现存最早的记录是Menelaus的著作《Spherics》。书中将平面版本的Menelaus' theorem作为引理引入，并将之推广到球面三角形。按照当时的写作习惯，引理一般记述的是前人的成果，因此Menelaus' theorem应该是更早的人发现的。
+
+## Ceva's Theorem
+
+![](/images/img3/CevasTheorem.gif)
+
+$$BD\cdot CE\cdot AF=AE\cdot BF\cdot CD$$
+
+>Giovanni Ceva，1647～1734，意大利数学家。Ceva's Theorem是Ceva于1678年提出的。
+
 # 三门问题
 
 https://www.zhihu.com/question/26709273/
@@ -319,45 +348,3 @@ Wiener Filter主要用于**平稳状态下的线性滤波**。该滤波器在均
 https://blog.csdn.net/bluecol/article/details/46242355
 
 图像去模糊（维纳滤波）
-
-# 图数据库+
-
-## 其他图数据库
-
-开源的、流行的图数据库主要有以下几种：Neo4j、OrientDB、ArangoDB、JanusGraph、Dgraph。
-
-Neo4j历史悠久，且长期处于图数据库领域的龙头地位，但它开源的社区版本只支持单机，不支持分布式。
-
-OrientDB和ArangoDB起步比较早，最初是一个单机的图数据库，后来随着用户数据量的不断增加，增加了分布式模式，但支持的不是很好。
-
-JanusGraph和Dgraph发展的比较晚，从设计之初就考虑了分布式和扩展性，所以对分布式支持的非常好，且都是完全开源免费的。
-
-## 参考
-
-https://mp.weixin.qq.com/s/YfNlDoGOlHtpG9VFBCZHnQ
-
-VLDB2019特邀报告《图处理》综述进展，滑铁卢大学数据库大牛M. Tamer Özsu教授，170页ppt
-
-https://mp.weixin.qq.com/s/PkFscGq8tjzc3HQiF-SSsA
-
-在图数据上做机器学习，应该从哪个点切入？
-
-https://mp.weixin.qq.com/s/uYP8Eyz36JyTWska0hvtuA
-
-字节跳动自研万亿级图数据库&图计算实践
-
-https://mp.weixin.qq.com/s/uZStvVZp3UHLY3BppgaRLg
-
-JanusGraph VS Dgraph：贝壳分布式图数据库技术选型之路
-
-https://mp.weixin.qq.com/s/3rLTRtSWbf31aNRDs4rmoQ
-
-Dgraph简介篇
-
-https://mp.weixin.qq.com/s/rhtaVTON761wxGDqT9EIoQ
-
-Dgraph原理篇
-
-https://mp.weixin.qq.com/s/5nBS0FiOynhGS6mY2dZ1ng
-
-分布式图数据库在贝壳的应用实践
