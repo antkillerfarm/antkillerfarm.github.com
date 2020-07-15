@@ -1,10 +1,48 @@
 ---
 layout: post
-title:  深度目标检测（六）——One-stage vs. Two-stage, R-FCN, FPN, RetinaNet, CornerNet
+title:  深度目标检测（六）——Tiny-YOLO, YOLOv4, One-stage vs. Two-stage, R-FCN, FPN, RetinaNet
 category: Deep Object Detection 
 ---
 
-# YOLOv4（续）
+# Tiny-YOLO
+
+YOLO系列还包括了一个速度更快但精度稍低的嵌入式版本系列——Tiny-YOLO。
+
+到了YOLOv3时代，Tiny-YOLO被改名为YOLO-LITE。
+
+此外，还有使用其他轻量级骨干网络的YOLO变种，如MobileNet-YOLOv3。
+
+参考：
+
+https://mp.weixin.qq.com/s/xNaXPwI1mQsJ2Y7TT07u3g
+
+YOLO-LITE:专门面向CPU的实时目标检测
+
+https://zhuanlan.zhihu.com/p/50170492
+
+重磅！YOLO-LITE来了
+
+https://zhuanlan.zhihu.com/p/52928205
+
+重磅！MobileNet-YOLOv3来了
+
+https://mp.weixin.qq.com/s/LhXXPyvxci1d4xLzT0XFaw
+
+xYOLO：最新最快的实时目标检测
+
+# YOLOv4
+
+YOLO系列(v1-v3)作者Joe Redmon宣布不再继续CV方向的研究，引起学术圈一篇哗然。
+
+YOLOv4（2020.4）的一作是Alexey Bochkovskiy。YOLO官方的github正式加入YOLOv4的论文和代码链接，也意味着YOLOv4得到了Joe Redmon的认可，也代表着YOLO的停更与交棒。
+
+论文：
+
+《YOLOv4: Optimal Speed and Accuracy of Object Detection》
+
+代码：
+
+https://github.com/AlexeyAB/darknet
 
 参考：
 
@@ -249,31 +287,3 @@ https://blog.csdn.net/jningwei/article/details/80038594
 https://zhuanlan.zhihu.com/p/68786098
 
 再谈RetinaNet
-
-# CornerNet
-
-传统的目标检测网络，无论是One-stage还是Two-stage，都有基于Anchor的。Anchor的作用主要在于：**显式枚举出不同的scale和aspect ratio的基准bbox。**
-
-但就本质而言，**框对于物体来说不是一个最好的表示。**框的顶点可能甚至都不在物体上，离物体本身已经很远了。
-
-因此，自2018年以来，逐渐有一些不基于anchor的目标检测方法出现，形成了一股Anchor-Free的热潮。下面将首先介绍一下，该类方法的开山之作——CornerNet。
-
->CornerNet并非第一个提出Anchor-Free思想的模型，但却是第一个精度和性能达到与anchor base方法同等水平的Anchor-Free模型。
-
-----
-
-CornerNet是Princeton University的Hei Law的作品。（2018.8）
-
-论文：
-
-《CornerNet: Detecting Objects as Paired Keypoints》
-
-CornerNet认为Two-stage目标检测最明显的缺点是在Region Proposal阶段需要提取anchor boxes。这样做导致两个问题：
-
-- 提取的anchor boxes数量较多，比如DSSD使用40k，RetinaNet使用100k，anchor boxes众多造成正负样本不均衡。
-
-- Anchor boxes需要调整很多超参数，比如anchor boxes数量、尺寸、比率，影响模型的训练和推断速率。
-
-![](/images/img3/CornerNet_2.png)
-
-上图是CornerNet的网络结构。可以看出它主要由两部分组成：

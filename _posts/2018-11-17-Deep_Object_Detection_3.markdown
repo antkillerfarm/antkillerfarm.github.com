@@ -6,6 +6,20 @@ category: Deep Object Detection
 
 # SPPNet（续）
 
+对于Problem 2我们分析一下：
+
+这个问题涉及的流程主要有: 图像输入->卷积层1->池化1->...->卷积层n->池化n->全连接层。
+
+引发问题的原因主要有：全连接层的输入维度是固定死的，导致池化n的输出必须与之匹配，继而导致图像输入的尺寸必须固定。
+
+解决办法可能有：
+
+1.想办法让不同尺寸的图像也可以使池化n产生固定的输出维度。（打破图像输入的固定性）
+
+2.想办法让全连接层（罪魁祸首）可以接受非固定的输入维度。（打破全连接层的固定性，继而也打破了图像输入的固定性）
+
+以上的方法1就是SPPnet的思想。
+
 ![](/images/article/spp.png)
 
 **Step 1**：为图像建立不同尺度的图像金字塔。上图为3层。
@@ -245,35 +259,3 @@ Faster RCNN详解
 https://zhuanlan.zhihu.com/p/31426458
 
 一文读懂Faster RCNN
-
-https://mp.weixin.qq.com/s/IZ9Q3fDJVawiEbD6x9WRLg
-
-Object Detection系列（三）Fast R-CNN
-
-https://mp.weixin.qq.com/s/M_i38L2brq69BYzmaPeJ9w
-
-像玩乐高一样拆解Faster R-CNN：详解目标检测的实现过程
-
-https://mp.weixin.qq.com/s/oTo12fgl1p5D7yzdfWIT8Q
-
-使用Faster R-CNN、ResNet诊断皮肤病，深度学习再次超越人类专家
-
-https://mp.weixin.qq.com/s/5OkPWPLRyf07mZwLRSZ3Fw
-
-机器视觉目标检测补习贴之R-CNN系列—R-CNN,Fast R-CNN,Faster R-CNN
-
-https://mp.weixin.qq.com/s/KL6gB0SsclyHqedS_tThXA
-
-里程碑式成果Faster RCNN复现难？我们试了一下
-
-# YOLO
-
-YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检测软件。它的原理基于Joseph Chet Redmon 2016年的论文：
-
-《You Only Look Once: Unified, Real-Time Object Detection》
-
-这也是Ross Girshick去Facebook之后，参与的又一力作。
-
-官网：
-
-https://pjreddie.com/darknet/yolo/

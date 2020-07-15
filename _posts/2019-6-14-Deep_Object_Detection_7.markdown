@@ -1,10 +1,36 @@
 ---
 layout: post
-title:  深度目标检测（七）——CenterNet, Anchor-Free, 其它目标检测网络, 3D目标检测
+title:  深度目标检测（七）——CornerNet, CenterNet, Anchor-Free, 其它目标检测网络
 category: Deep Object Detection 
 ---
 
-# CornerNet（续）
+# CornerNet
+
+传统的目标检测网络，无论是One-stage还是Two-stage，都有基于Anchor的。Anchor的作用主要在于：**显式枚举出不同的scale和aspect ratio的基准bbox。**
+
+但就本质而言，**框对于物体来说不是一个最好的表示。**框的顶点可能甚至都不在物体上，离物体本身已经很远了。
+
+因此，自2018年以来，逐渐有一些不基于anchor的目标检测方法出现，形成了一股Anchor-Free的热潮。下面将首先介绍一下，该类方法的开山之作——CornerNet。
+
+>CornerNet并非第一个提出Anchor-Free思想的模型，但却是第一个精度和性能达到与anchor base方法同等水平的Anchor-Free模型。
+
+----
+
+CornerNet是Princeton University的Hei Law的作品。（2018.8）
+
+论文：
+
+《CornerNet: Detecting Objects as Paired Keypoints》
+
+CornerNet认为Two-stage目标检测最明显的缺点是在Region Proposal阶段需要提取anchor boxes。这样做导致两个问题：
+
+- 提取的anchor boxes数量较多，比如DSSD使用40k，RetinaNet使用100k，anchor boxes众多造成正负样本不均衡。
+
+- Anchor boxes需要调整很多超参数，比如anchor boxes数量、尺寸、比率，影响模型的训练和推断速率。
+
+![](/images/img3/CornerNet_2.png)
+
+上图是CornerNet的网络结构。可以看出它主要由两部分组成：
 
 ## Hourglass Network
 
@@ -271,71 +297,3 @@ G-CNN是MaryLand大学的工作，论文主要的思路也是消除region propos
 http://blog.csdn.net/zijin0802034/article/details/53535647
 
 G-CNN: an Iterative Grid Based Object Detector
-
-# 花式IOU
-
-https://zhuanlan.zhihu.com/p/57992040
-
-使用GIoU作为检测任务的Loss
-
-https://mp.weixin.qq.com/s/ZbryNlV3EnODofKs2d01RA
-
-目标检测回归损失函数简介：Smooth L1/IoU/GIoU/DIoU/CIoU Loss
-
-https://mp.weixin.qq.com/s/F07Wp-cXIOE4-qdL55WtJQ
-
-基于DIou改进的YOLOv3目标检测
-
-https://mp.weixin.qq.com/s/YeyxuN6RCgF2TcxctXiJQg
-
-使用GIoU作为目标检测新loss
-
-https://mp.weixin.qq.com/s/m8D5uutwlvkQNucFX_TnGw
-
-DIoU和CIoU：IoU在目标检测中的正确打开方式
-
-https://mp.weixin.qq.com/s/VtBfIVj74dhg9HjpxN7rhw
-
-DIoU损失函数详解
-
-https://zhuanlan.zhihu.com/p/109677830
-
-Distance-IoU Loss
-
-https://zhuanlan.zhihu.com/p/94799295
-
-IoU、GIoU、DIoU、CIoU损失函数的那点事儿
-
-# 3D目标检测
-
-https://mp.weixin.qq.com/s/bAV74fxvwI73Qt7qm_jPJA
-
-一文读懂深度学习在摄像头和激光雷达融合的3-D目标检测中的应用
-
-https://mp.weixin.qq.com/s/8an3eBrOZ5d6_PdNp6QkyA
-
-一文教你读懂3D目标检测
-
-https://zhuanlan.zhihu.com/p/112836340
-
-谷歌最新论文：从图像中进行3-D目标检测
-
-https://mp.weixin.qq.com/s/DxDkYfzW5BqhidPlqT772Q
-
-从单幅图像到双目立体视觉的3D目标检测算法
-
-https://blog.csdn.net/savant_ning/article/details/69950588
-
-多视图3D目标检测学习笔记
-
-https://mp.weixin.qq.com/s/3JzwA2HAzoWtE_j2UhZCSw
-
-Stereo R-CNN 3D目标检测
-
-https://zhuanlan.zhihu.com/p/58734240
-
-3D Object Detection Overview - 2019
-
-https://mp.weixin.qq.com/s/n3ZUsq2I0CaJ5pIl2nZUFQ
-
-3D目标检测：MonoDIS

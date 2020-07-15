@@ -275,6 +275,38 @@ WPS分为PBC(BUTTON)和PIN两种方式
 
 # 目标检测进阶+
 
+https://mp.weixin.qq.com/s/VtlSVF4d9LwPJhDEYSbgTg
+
+无监督难分样本挖掘改进目标检测
+
+https://mp.weixin.qq.com/s/AupXIoVmhcOBrX1z1vgdtw
+
+弱监督实现精确目标检测，上交大提出协同学习框架
+
+https://mp.weixin.qq.com/s/Lt00ASVSb_fDDJdtCO0-tQ
+
+物体检测中的结构推理网络
+
+https://mp.weixin.qq.com/s/f0Ynln-27z5A6LXt8j5qKQ
+
+据说以后在探头下面用帽子挡脸没用了：SymmNet遮挡物检测的对称卷积神经网络
+
+https://mp.weixin.qq.com/s/cEg6HmS651riJVAtHdPafg
+
+基于域适应弱监督学习的目标检测
+
+https://mp.weixin.qq.com/s/A51X1e9E9T9pPbYdQVQtSg
+
+你是个成熟的C位检测器了，应该可以自动找C位了
+
+https://blog.csdn.net/u014380165/article/details/80602027
+
+Cascade RCNN算法笔记
+
+https://mp.weixin.qq.com/s/KupXlIt8bHLLGF6qWFH6vQ
+
+从Grid R-CNN到Grid R-CNN Plus：基于网格的目标检测演化
+
 https://mp.weixin.qq.com/s/kz74yb857gmG1h7MyOWx_Q
 
 目标检测正负样本区分策略和平衡策略总结(二)

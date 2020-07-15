@@ -1,12 +1,108 @@
 ---
 layout: post
-title: 新冠肺炎（3）
+title: 新冠肺炎（2）
 category: Nature 
 ---
 
 # 新冠肺炎
 
 ## 国外疫情（续）
+
+https://www.zhihu.com/question/374859112
+
+如何看待北海道知事铃木直道要求道内中小学停课，并表示“所有结果，都将由我知事本人负责。”?
+
+https://zhuanlan.zhihu.com/p/109585819
+
+他是日本政坛最靓的仔！（铃木直道）
+
+https://mp.weixin.qq.com/s/kYouLzPyVNx0ZrqUQhSaWA
+
+我们究竟离pandemic还有多远？
+
+https://mp.weixin.qq.com/s/wDkqwwEfpy2-As-DEdlwug
+
+新加坡"佛系防疫"，为什么能控住疫情？
+
+https://mp.weixin.qq.com/s/7MmspadwBVdnKKaQ6mssig
+
+新冠在日本：行走在暴发的边缘
+
+https://mp.weixin.qq.com/s/aki6c574T6CxkBnhpI3eDg
+
+Fauci采访
+
+https://mp.weixin.qq.com/s/ZcxtiHR5l-Jcenef3JswHg
+
+美国抗疫时间线
+
+https://mp.weixin.qq.com/s/dwXUZ4mOP3Uv-TJ6Y77gOA
+
+航母疑云！戒备森严的美法军舰缘何相继中招？
+
+https://wxn.qq.com/cmsid/20200418A04EQF00
+
+反转！从抵触到支持，一文剖析欧美“戴口罩”观念转变原因
+
+https://mp.weixin.qq.com/s/RV0NYm2K7MoECnIbcJwr9Q
+
+One World演唱会：我依然相信音乐可以改变世界
+
+https://mp.weixin.qq.com/s/EAbbPBWfQeGr3Fe9HYPvnw
+
+没用上5G的One World演唱会，视频会议软件Zoom和思科WebEX立功了
+
+----
+
+“我亲爱的安吉奥，我觉得我们被中国人骗了！”
+
+“哦何出此言啊我的总统先生？”
+
+“中国人说新冠死亡率在1-2%，咱们这儿都快5%死亡率了！他们是如何做到那么低死亡率的？”
+
+“总统先生，你需要党中央，国务院，中央军委，发改委，9个工业部门，8000多家配套工厂，还有10万多兢兢业业敢于冒生命危险冲上前线的医护人员，以及14亿积极响应政府号召自觉在家隔离共同抗击疫情的人民。总之，你需要一个伟大的国家。”
+
+----
+
+Biogen的高层领袖会议（Biogen Leadership Conference）。这个大会好比武汉的华南市场，甚至更加恶劣，因为大会上发生的都是人传人案例。
+
+与会175人，至今为止100多位已传染。也就是说，基本全灭。
+
+----
+
+特朗普这次遇到了一位真正的对手——新型冠状病毒！
+
+它不看推特。
+
+它不做交易。
+
+它不怕制裁。
+
+它不怕退群。
+
+它不怕提高关税。
+
+他不能对它极限使压。
+
+他不能讹诈或者勒索它。
+
+他不能派无人机斩首它。
+
+它不怕任何人，就算是蓝星第一帝国！
+
+----
+
+伦敦一个医院icu，三个等待插管的病人戴着氧气面罩聊天。​
+
+“你是怎么来到医院的？”​
+
+“我相信了鲍里斯的群体免疫，被感染了。你呢？”​
+
+“我反对鲍里斯的群体免疫上街抗议，被感染了。那么你呢？我亲爱的先生。”​
+
+“我就是鲍里斯。”
+
+----
 
 ![](/images/img3/3_12.jpg)
 
@@ -205,63 +301,3 @@ LVMH集团宣布，旗下Dior、Givenchy和娇兰三个品牌的香水生产线�
 奢侈品牌Prada将一家在佩鲁贾开设的工厂，改造成了口罩及医疗用品生产工厂，并计划在4月6日前，向意大利托斯卡纳医院运送8万件防护服，及11万只口罩。
 
 重症监护用肺呼吸机制造商Siare Engineering取消了占其营业额90％的外国订单，转而专为意大利提供机械，该公司产能从每月125台提升到到现在的500台。
-
-----
-
-盛传美国“最先进”的核酸检测，雅培恒温扩增仪，测一次5分钟，但是灵敏度和特异度仍不如PCR法。而且恒温扩增一次只能测一个样品，PCR法一批几十个样品可以一起测。所以恒温扩增只是在特定场景有优势，比如不需要p2+实验室，可以在办公楼里自己测。
-
-https://www.zhihu.com/question/384168786
-
-美国第六代新冠病毒检测试剂5分钟出结果，准确率95%，还能检测到抗体，是否说明美国科技领域引领世界？
-
-https://www.zhihu.com/question/383152585
-
-如何看待近日美国雅培公司推出的5分钟快速检测的新冠病毒检测盒月产量可达500万份？
-
-----
-
-3M公司的全称是明尼苏达矿务及制造业公司（Minnesota Mining and Manufacturing Company）。
-
-https://mp.weixin.qq.com/s/wE69bNC7DicO6kSWhsfq2A
-
-全球新冠确诊破200万，我们为什么比以往更需要3M？
-
-https://mp.weixin.qq.com/s/Fkcbb-4LC_NsVJHCM-zRWQ
-
-3M：世界上最不务正业公司——不只是口罩，好像哪里都离不开他！芯片制造也需要3M！
-
-----
-
-不得不感慨，美国的产业空心化已经到了如此严重的地步。如果给GM充足的时间，他们应该也可以搞出BYD这种产品线。但是造价会贵4~5倍，研发投产的周期至少要半年以上。
-
-https://mp.weixin.qq.com/s/tFc15hulgBUE-m338xBhzQ
-
-突发：CDC终于推荐民众戴口罩，谁又有谁来为3亿人美国人生产口罩？
-
-https://mp.weixin.qq.com/s/9YiERlc3Xyp95eSfakd3wg
-
-7天建起全球最大口罩生产线，比亚迪与兰博基尼转产猛飙“速度与激情”
-
-----
-
-人民需要什么，五菱就造什么。
-
-1928年，桂系领袖李宗仁在这里修建了一家柳州机械厂，开始组装飞机，制造步枪、手榴弹；
-
-1933年，因为广西被封锁，石油匮乏，又造出了时速40公里/小时的木炭车，不烧油，烧炭跑，成为战时大后方的主要运输工具；
-
-https://mp.weixin.qq.com/s/8rP-ZIvqAPlIW_j99jtMvQ
-
-五菱的76个小时，改变了中国口罩
-
-![](/images/img3/wuling.jpg)
-
-6月1日，李克强总理在山东烟台考察时强调，地摊经济、小店经济是就业岗位的重要来源，是人间的烟火，和"高大上"一样，是中国的生机。
-
-https://www.zhihu.com/question/399164650
-
-怎么看待五菱荣光翼的售货车主打地摊经济？
-
-https://mp.weixin.qq.com/s/pmW4gEAD533uXojUQ9d1QQ
-
-聊聊“地摊经济学”

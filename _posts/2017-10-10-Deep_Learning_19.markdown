@@ -142,6 +142,10 @@ https://zhuanlan.zhihu.com/p/143161957
 
 点积 vs. MLP：推荐模型到底用哪个更好？
 
+https://mp.weixin.qq.com/s/MSzojHCW8WPFNyF3aM1l2w
+
+腾讯&微博 GateNet: 使用门机制提升点击率预估效果
+
 # 人脸检测/识别+
 
 https://mp.weixin.qq.com/s/-VknGwKKY14cT-lZ7sC43A

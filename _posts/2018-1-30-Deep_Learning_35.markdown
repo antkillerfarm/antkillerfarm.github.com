@@ -34,6 +34,18 @@ https://zhuanlan.zhihu.com/p/108381336
 
 基于深度学习目标姿态估计的论文一览（下）
 
+https://zhuanlan.zhihu.com/p/104917833
+
+人体姿态估计(Human Pose Estimation)经典方法整理
+
+https://mp.weixin.qq.com/s/7hCtECn_mKWyTJpTZmmLtQ
+
+基于深度学习目标姿态估计的论文一览（2017-2020）
+
+https://zhuanlan.zhihu.com/p/112836018
+
+基于深度学习的人体姿态估计介绍
+
 https://mp.weixin.qq.com/s/6pNZ8Crs4Lel2C0TlFAc4Q
 
 真能“穿墙识人”，MIT人体姿态估计系统创历史最高精度！
@@ -353,31 +365,3 @@ https://mp.weixin.qq.com/s/oPYWwZ6GkaE4L4YMxh7WGA
 https://mp.weixin.qq.com/s/6HsL2B7p-XyvGWAb4SwALA
 
 图灵奖得主Geoffrey Hinton最新研究NASA：一种更好地学习三维模型动作的方法
-
-https://mp.weixin.qq.com/s/-HEYU_El8xysk8atHYx1Mg
-
-基于3D行人姿态和步态预测的神经网络模型
-
-https://zhuanlan.zhihu.com/p/72561165
-
-重新思考人体姿态估计 Rethinking Human Pose Estimation
-
-https://mp.weixin.qq.com/s/7hCtECn_mKWyTJpTZmmLtQ
-
-基于深度学习目标姿态估计的论文一览（2017-2020）
-
-https://zhuanlan.zhihu.com/p/112836018
-
-基于深度学习的人体姿态估计介绍
-
-https://mp.weixin.qq.com/s/8vdTlIe9LV88AVw9kAcVjA
-
-基于空间AdaIN的深度姿态迁移
-
-https://zhuanlan.zhihu.com/p/129279351
-
-X3D Facebook视频理解/行为识别新作
-
-https://zhuanlan.zhihu.com/p/149429010
-
-TAM: 针对动作识别的时序自适应模块

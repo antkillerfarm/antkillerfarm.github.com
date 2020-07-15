@@ -4,7 +4,39 @@ title:  深度目标检测（四）——YOLO, SSD, YOLOv2
 category: Deep Object Detection 
 ---
 
-# YOLO（续）
+# Faster R-CNN（续）
+
+https://mp.weixin.qq.com/s/IZ9Q3fDJVawiEbD6x9WRLg
+
+Object Detection系列（三）Fast R-CNN
+
+https://mp.weixin.qq.com/s/M_i38L2brq69BYzmaPeJ9w
+
+像玩乐高一样拆解Faster R-CNN：详解目标检测的实现过程
+
+https://mp.weixin.qq.com/s/oTo12fgl1p5D7yzdfWIT8Q
+
+使用Faster R-CNN、ResNet诊断皮肤病，深度学习再次超越人类专家
+
+https://mp.weixin.qq.com/s/5OkPWPLRyf07mZwLRSZ3Fw
+
+机器视觉目标检测补习贴之R-CNN系列—R-CNN,Fast R-CNN,Faster R-CNN
+
+https://mp.weixin.qq.com/s/KL6gB0SsclyHqedS_tThXA
+
+里程碑式成果Faster RCNN复现难？我们试了一下
+
+# YOLO
+
+YOLO: Real-Time Object Detection，是一个基于神经网络的实时对象检测软件。它的原理基于Joseph Chet Redmon 2016年的论文：
+
+《You Only Look Once: Unified, Real-Time Object Detection》
+
+这也是Ross Girshick去Facebook之后，参与的又一力作。
+
+官网：
+
+https://pjreddie.com/darknet/yolo/
 
 >注：Joseph Chet Redmon，Middlebury College本科+华盛顿大学博士（在读）。网名：pjreddie。
 
@@ -277,9 +309,3 @@ YOLOv2对YOLO做了较多改进，实际上更像是SSD的升级版。
 ### batch normalization
 
 YOLOv2网络通过在每一个卷积层后添加batch normalization，极大的改善了收敛速度同时减少了对其它regularization方法的依赖（舍弃了dropout优化后依然没有过拟合），使得mAP获得了2%的提升。
-
-### High Resolution Classifier
-
-所有state-of-the-art的检测方法基本上都会使用ImageNet预训练过的模型（classifier）来提取特征，例如AlexNet输入图片会被resize到不足256x256，这导致分辨率不够高，给检测带来困难。所以YOLO(v1)先以分辨率224x224训练分类网络，然后需要增加分辨率到448x448，这样做不仅将网络切换为检测网络，也改变了分辨率。所以作者想能不能在预训练的时候就把分辨率提高了，训练的时候只是由分类网络切换为检测网络。
-
-YOLOv2首先修改预训练分类网络的分辨率为448x448，在ImageNet数据集上训练10轮（10 epochs）。这个过程让网络有足够的时间调整filter去适应高分辨率的输入。然后fine tune为检测网络。mAP获得了4%的提升。

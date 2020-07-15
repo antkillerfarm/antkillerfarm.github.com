@@ -304,3 +304,7 @@ https://mp.weixin.qq.com/s/ewb9IlqPmQgfXGEUSRNXwQ
 https://mp.weixin.qq.com/s/_hGIdl9Y7hWuRDeCmZUMmg
 
 微信“看一看”推荐排序技术揭秘
+
+https://mp.weixin.qq.com/s/FLwnxDPgcziaIY94qG9jDw
+
+社交推荐系统中的用户交互

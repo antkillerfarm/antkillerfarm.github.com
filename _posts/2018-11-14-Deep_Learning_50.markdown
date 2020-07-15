@@ -377,3 +377,25 @@ https://mp.weixin.qq.com/s/3Z2Zc8zTq2uiPyw7ZuuZfw
 https://mp.weixin.qq.com/s/QklCVuukfElVDBFNxLXNKQ
 
 哈希革新Transformer：这篇ICLR高分论文让一块GPU处理64K长度序列
+
+# 姿态/行为检测进阶+
+
+https://mp.weixin.qq.com/s/-HEYU_El8xysk8atHYx1Mg
+
+基于3D行人姿态和步态预测的神经网络模型
+
+https://zhuanlan.zhihu.com/p/72561165
+
+重新思考人体姿态估计 Rethinking Human Pose Estimation
+
+https://mp.weixin.qq.com/s/8vdTlIe9LV88AVw9kAcVjA
+
+基于空间AdaIN的深度姿态迁移
+
+https://zhuanlan.zhihu.com/p/129279351
+
+X3D Facebook视频理解/行为识别新作
+
+https://zhuanlan.zhihu.com/p/149429010
+
+TAM: 针对动作识别的时序自适应模块

@@ -144,6 +144,10 @@ https://mp.weixin.qq.com/s/UwijIjGOF-eRb2GjDxB95g
 
 漫画汉化组福音：深度学习工具一键抠图
 
+https://mp.weixin.qq.com/s/U7JQTURr4Ey9SS9s_DKBHA
+
+基于监督学习+自监督学习的智能抠图，精确到发丝
+
 ## 换脸技术
 
 https://mp.weixin.qq.com/s/X_cBFBc42qUFpuNGBtISRw

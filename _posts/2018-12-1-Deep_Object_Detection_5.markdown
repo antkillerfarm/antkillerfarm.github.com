@@ -1,10 +1,16 @@
 ---
 layout: post
-title:  深度目标检测（五）——YOLOv3, Tiny-YOLO
+title:  深度目标检测（五）——YOLOv3
 category: Deep Object Detection 
 ---
 
 # YOLOv2（续）
+
+### High Resolution Classifier
+
+所有state-of-the-art的检测方法基本上都会使用ImageNet预训练过的模型（classifier）来提取特征，例如AlexNet输入图片会被resize到不足256x256，这导致分辨率不够高，给检测带来困难。所以YOLO(v1)先以分辨率224x224训练分类网络，然后需要增加分辨率到448x448，这样做不仅将网络切换为检测网络，也改变了分辨率。所以作者想能不能在预训练的时候就把分辨率提高了，训练的时候只是由分类网络切换为检测网络。
+
+YOLOv2首先修改预训练分类网络的分辨率为448x448，在ImageNet数据集上训练10轮（10 epochs）。这个过程让网络有足够的时间调整filter去适应高分辨率的输入。然后fine tune为检测网络。mAP获得了4%的提升。
 
 ### Convolutional With Anchor Boxes
 
@@ -240,42 +246,6 @@ https://mp.weixin.qq.com/s/biPLPaunfkQtpywaHbBfLg
 
 YOLOV3损失函数再思考
 
-# Tiny-YOLO
+https://mp.weixin.qq.com/s/Cws-3Cni-_v3AED918eB4A
 
-YOLO系列还包括了一个速度更快但精度稍低的嵌入式版本系列——Tiny-YOLO。
-
-到了YOLOv3时代，Tiny-YOLO被改名为YOLO-LITE。
-
-此外，还有使用其他轻量级骨干网络的YOLO变种，如MobileNet-YOLOv3。
-
-参考：
-
-https://mp.weixin.qq.com/s/xNaXPwI1mQsJ2Y7TT07u3g
-
-YOLO-LITE:专门面向CPU的实时目标检测
-
-https://zhuanlan.zhihu.com/p/50170492
-
-重磅！YOLO-LITE来了
-
-https://zhuanlan.zhihu.com/p/52928205
-
-重磅！MobileNet-YOLOv3来了
-
-https://mp.weixin.qq.com/s/LhXXPyvxci1d4xLzT0XFaw
-
-xYOLO：最新最快的实时目标检测
-
-# YOLOv4
-
-YOLO系列(v1-v3)作者Joe Redmon宣布不再继续CV方向的研究，引起学术圈一篇哗然。
-
-YOLOv4（2020.4）的一作是Alexey Bochkovskiy。YOLO官方的github正式加入YOLOv4的论文和代码链接，也意味着YOLOv4得到了Joe Redmon的认可，也代表着YOLO的停更与交棒。
-
-论文：
-
-《YOLOv4: Optimal Speed and Accuracy of Object Detection》
-
-代码：
-
-https://github.com/AlexeyAB/darknet
+高斯YoloV3目标检测

@@ -347,3 +347,23 @@ https://blog.csdn.net/sanshibayuan/article/details/103642419
 https://mp.weixin.qq.com/s/vpHrLu8kuEuOp5eehT8Hcw
 
 目标检测正负样本区分策略和平衡策略总结(一)
+
+https://mp.weixin.qq.com/s/kdD658xzC-JxuWGYqLRtcQ
+
+性能达到SOTA的CSP对象检测网络
+
+https://mp.weixin.qq.com/s/8k0Mhver2mLnKmV8rVqJHQ
+
+小目标检测相关技巧总结
+
+https://mp.weixin.qq.com/s/dFoUO4xArZpmtbKg1Kx6Zg
+
+COCO mAP 53.3！骨干网合成算法CBNet带来目标检测精度新突破
+
+https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247499933&idx=1&sn=b9fe7d6714c44acedd12a60cfe6b1c60
+
+小样本域适应的目标检测
+
+https://zhuanlan.zhihu.com/p/84890413
+
+PolarMask：一阶段实例分割新思路

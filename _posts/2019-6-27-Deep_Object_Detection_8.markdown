@@ -1,10 +1,76 @@
 ---
 layout: post
-title:  深度目标检测（八）——目标检测进阶
+title:  深度目标检测（八）——花式IOU, 3D目标检测
 category: Deep Object Detection 
 ---
 
-# 3D目标检测（续）
+# 花式IOU
+
+https://zhuanlan.zhihu.com/p/57992040
+
+使用GIoU作为检测任务的Loss
+
+https://mp.weixin.qq.com/s/ZbryNlV3EnODofKs2d01RA
+
+目标检测回归损失函数简介：Smooth L1/IoU/GIoU/DIoU/CIoU Loss
+
+https://mp.weixin.qq.com/s/F07Wp-cXIOE4-qdL55WtJQ
+
+基于DIou改进的YOLOv3目标检测
+
+https://mp.weixin.qq.com/s/YeyxuN6RCgF2TcxctXiJQg
+
+使用GIoU作为目标检测新loss
+
+https://mp.weixin.qq.com/s/m8D5uutwlvkQNucFX_TnGw
+
+DIoU和CIoU：IoU在目标检测中的正确打开方式
+
+https://mp.weixin.qq.com/s/VtBfIVj74dhg9HjpxN7rhw
+
+DIoU损失函数详解
+
+https://zhuanlan.zhihu.com/p/109677830
+
+Distance-IoU Loss
+
+https://zhuanlan.zhihu.com/p/94799295
+
+IoU、GIoU、DIoU、CIoU损失函数的那点事儿
+
+# 3D目标检测
+
+https://mp.weixin.qq.com/s/bAV74fxvwI73Qt7qm_jPJA
+
+一文读懂深度学习在摄像头和激光雷达融合的3-D目标检测中的应用
+
+https://mp.weixin.qq.com/s/8an3eBrOZ5d6_PdNp6QkyA
+
+一文教你读懂3D目标检测
+
+https://zhuanlan.zhihu.com/p/112836340
+
+谷歌最新论文：从图像中进行3-D目标检测
+
+https://mp.weixin.qq.com/s/DxDkYfzW5BqhidPlqT772Q
+
+从单幅图像到双目立体视觉的3D目标检测算法
+
+https://blog.csdn.net/savant_ning/article/details/69950588
+
+多视图3D目标检测学习笔记
+
+https://mp.weixin.qq.com/s/3JzwA2HAzoWtE_j2UhZCSw
+
+Stereo R-CNN 3D目标检测
+
+https://zhuanlan.zhihu.com/p/58734240
+
+3D Object Detection Overview - 2019
+
+https://mp.weixin.qq.com/s/n3ZUsq2I0CaJ5pIl2nZUFQ
+
+3D目标检测：MonoDIS
 
 https://mp.weixin.qq.com/s/WBiDyIBV9OaKbxUhBml2AA
 
@@ -335,55 +401,3 @@ https://mp.weixin.qq.com/s/aLYQepnr_BjS27Fb-zoZ_g
 https://zhuanlan.zhihu.com/p/43655912
 
 “别挡我，我要C位出道！”谈谈深度学习目标检测中的遮挡问题
-
-https://mp.weixin.qq.com/s/VtlSVF4d9LwPJhDEYSbgTg
-
-无监督难分样本挖掘改进目标检测
-
-https://mp.weixin.qq.com/s/AupXIoVmhcOBrX1z1vgdtw
-
-弱监督实现精确目标检测，上交大提出协同学习框架
-
-https://mp.weixin.qq.com/s/Lt00ASVSb_fDDJdtCO0-tQ
-
-物体检测中的结构推理网络
-
-https://mp.weixin.qq.com/s/f0Ynln-27z5A6LXt8j5qKQ
-
-据说以后在探头下面用帽子挡脸没用了：SymmNet遮挡物检测的对称卷积神经网络
-
-https://mp.weixin.qq.com/s/cEg6HmS651riJVAtHdPafg
-
-基于域适应弱监督学习的目标检测
-
-https://mp.weixin.qq.com/s/A51X1e9E9T9pPbYdQVQtSg
-
-你是个成熟的C位检测器了，应该可以自动找C位了
-
-https://blog.csdn.net/u014380165/article/details/80602027
-
-Cascade RCNN算法笔记
-
-https://mp.weixin.qq.com/s/KupXlIt8bHLLGF6qWFH6vQ
-
-从Grid R-CNN到Grid R-CNN Plus：基于网格的目标检测演化
-
-https://mp.weixin.qq.com/s/kdD658xzC-JxuWGYqLRtcQ
-
-性能达到SOTA的CSP对象检测网络
-
-https://mp.weixin.qq.com/s/8k0Mhver2mLnKmV8rVqJHQ
-
-小目标检测相关技巧总结
-
-https://mp.weixin.qq.com/s/dFoUO4xArZpmtbKg1Kx6Zg
-
-COCO mAP 53.3！骨干网合成算法CBNet带来目标检测精度新突破
-
-https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247499933&idx=1&sn=b9fe7d6714c44acedd12a60cfe6b1c60
-
-小样本域适应的目标检测
-
-https://zhuanlan.zhihu.com/p/84890413
-
-PolarMask：一阶段实例分割新思路

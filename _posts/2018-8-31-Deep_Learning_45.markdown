@@ -383,3 +383,7 @@ https://mp.weixin.qq.com/s/ClqOWx1RJGzoS0akI2s93w
 https://mp.weixin.qq.com/s/QtYNb1bVnWghNFK6fbynLw
 
 激活函数如何进行自动学习和配置
+
+https://mp.weixin.qq.com/s/0fVNW5hekUNCsD6L9KL1iQ
+
+PNAS：渐进式神经网络搜索，准确率预测，21倍加速
