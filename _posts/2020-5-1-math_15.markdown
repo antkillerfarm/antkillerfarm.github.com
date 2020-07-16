@@ -132,8 +132,8 @@ $$\overrightarrow{AD}=\frac{\overline{DC}}{\overline{BC}}\cdot\overrightarrow{AB
 
 $$AD\cdot BE\cdot CF=BD\cdot CE\cdot AF$$
 
->Menelaus of Alexandria，公元70～140年，古希腊数学家，天文学家。青年时期求学于Alexandria，后定居于Rome。他第一个认识到曲面上的测地线（geodesics）可以类比于平面上的直线。   
->Menelaus' theorem现存最早的记录是Menelaus的著作《Spherics》。书中将平面版本的Menelaus' theorem作为引理引入，并将之推广到球面三角形。按照当时的写作习惯，引理一般记述的是前人的成果，因此Menelaus' theorem应该是更早的人发现的。
+>Menelaus of Alexandria，公元70～140年，古希腊数学家、天文学家。青年时期求学于Alexandria，后定居于Rome。他第一个认识到曲面上的测地线（geodesics）可以类比于平面上的直线。   
+>Menelaus' theorem现存最早的记录是Menelaus的著作《Spherics》。书中将平面版本的Menelaus' theorem作为引理引入，并将之推广到球面三角形。按照当时的写作习惯，引理一般记述的是前人的成果，因此Menelaus' theorem的发现者应该另有其人。
 
 ## Ceva's Theorem
 
