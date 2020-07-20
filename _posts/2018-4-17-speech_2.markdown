@@ -140,6 +140,10 @@ https://mp.weixin.qq.com/s/wowvIK5sspVR7ogF-3keYA
 
 语音识别基础：（四）前端处理
 
+https://mp.weixin.qq.com/s/uUCIm4YBQ0pTfzWnF_YaLQ
+
+语音识别基础：（五）训练与解码
+
 # Microphone
 
 麦克风作为业界通俗的一种叫法，是英文Microphone的音译名称，国内的称呼乱一些，有时候也简单称作话筒，香港和台湾地区也会称作微音器、拾音器。麦克风的中文学术名称是传声器，这是一种将声音转换成电子信号的换能器，即把声信号转成电信号，这其实和光电转换的原理是完全一致的。 

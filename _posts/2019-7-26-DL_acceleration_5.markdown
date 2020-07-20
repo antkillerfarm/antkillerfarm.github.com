@@ -1,12 +1,34 @@
 ---
 layout: post
-title:  深度加速（五）——模型压缩与加速（2）
+title:  深度加速（五）——知识蒸馏
 category: DL acceleration 
 ---
 
 # 模型压缩与加速
 
-## 权值稀疏化实战（续）
+## Network Pruning（续）
+
+还可以看看图森科技的论文：
+
+https://www.zhihu.com/question/62068158
+
+如何评价图森科技连发的三篇关于深度模型压缩的文章？
+
+图森的思路比较有意思。其中的方法之一，是利用L1规则化会导致结果的稀疏化的特性，制造出一批接近0的参数。从而达到去除不重要的参数的目的。
+
+除此之外，矩阵量化、Kronecker内积、霍夫曼编码、模型剪枝等也是常见的模型压缩方法。
+
+## 权值稀疏化实战
+
+这里讲一下韩松论文提到的裁剪方法中，最简单的一种——“权值稀疏化“的工程实现细节。以darknet框架为例。
+
+1.在src/parser.c中找到save_XXX_weights函数。判断权值是否接近0，如果是，则强制设为0。
+
+2.使用修改后的weights进行re-train。训练好之后，重复第1、2步。
+
+3.反复多次之后，进入最终prune阶段。修改src/network.c:update_network，令其不更新0权值。
+
+>re-train时的learning rate一般不宜太大。如果出现re-train的效果，还不如直接prune的好，则多半是learning rate设置的问题。
 
 一般采用稀疏化率来描述权值的稀疏化程度。每层的稀疏化率可以相同，也可以不同。前者被称作Magnitude Pruner，而后者被称作Sensitivity Pruner。
 
@@ -82,10 +104,6 @@ https://mp.weixin.qq.com/s/2NOFyu_twx1EciDeDPBLKw
 
 深度神经网络加速与压缩
 
-https://mp.weixin.qq.com/s/0KlnQ8UUxpyhBRdeo0EOAA
-
-用于网络压缩的滤波器级别剪枝算法ThiNet
-
 https://mp.weixin.qq.com/s/lO2UM04PfSM5VJYh6vINhw
 
 为模型减减肥：谈谈移动／嵌入式端的深度学习
@@ -98,61 +116,21 @@ https://mp.weixin.qq.com/s/1JwLP0FmV1AGJ65iDgLWQw
 
 神经网络模型压缩技术
 
-https://mp.weixin.qq.com/s/rzv8VCAxBQi0HsUcnLqqUA
-
-处理移动端传感器时序数据的深度学习框架：DeepSense
-
-https://mp.weixin.qq.com/s/UYk3YQmFW7-44RUojUqfGg
-
-上交大ICCV：精度保证下的新型深度网络压缩框架
-
-https://mp.weixin.qq.com/s/ZuEi32ZBSjruvtyUimBgxQ
-
-揭秘支付宝中的深度学习引擎：xNN
-
 http://mp.weixin.qq.com/s/iapih9Mme-VKCfsFCmO7hQ
 
 简单聊聊压缩网络
-
-https://mp.weixin.qq.com/s/3qstz-KoRuxwpmfE4XDI-Q
-
-面向卷积神经网络的卷积核冗余消除策略
 
 https://mp.weixin.qq.com/s/dEdWz4bovmk65fwLknHBhg
 
 韩松毕业论文：面向深度学习的高效方法与硬件
 
-https://mp.weixin.qq.com/s/GFE2XYHZXPP0doQ5nd0JNQ
-
-当前深度神经网络模型压缩和加速方法速览
-
-https://mp.weixin.qq.com/s/Faej1LKqurtwEIreUVJ0cw
-
-普林斯顿新算法自动生成高性能神经网络，同时超高效压缩
-
-https://mp.weixin.qq.com/s/uK-HasmiavM3jv6hNRY11A
-
-深度梯度压缩：降低分布式训练的通信带宽
-
-https://mp.weixin.qq.com/s/_MDbbGzDOGHk5TBgbu_-oA
-
-中大商汤等提出深度网络加速新方法，具有强大兼容能力
-
-https://mp.weixin.qq.com/s/gbOmpP7XO1Hz_ld4iSEsrw
-
-三星提出移动端神经网络模型加速框架DeepRebirth
-
-https://mp.weixin.qq.com/s/rTFLiZ7DCo6vzD5O64UnMQ
-
-阿里提出新神经网络算法，压缩掉最后一个比特
-
 https://mp.weixin.qq.com/s/f1SCK0J5oTWNJvtld3UAHQ
 
 神经网络修剪最新研究进展
 
-https://mp.weixin.qq.com/s/3oL0Bso3mwbsfaG8X5-xoA
+https://mp.weixin.qq.com/s/GFE2XYHZXPP0doQ5nd0JNQ
 
-英特尔提出新型压缩技术DeepThin，适合移动端设备深度神经网络
+当前深度神经网络模型压缩和加速方法速览
 
 https://mp.weixin.qq.com/s/JnW7RnOQKG-dPOOAQeOmSA
 
@@ -162,194 +140,132 @@ https://mp.weixin.qq.com/s/YUg2dZZhDSsRpSftdNfiIQ
 
 极致的优化：智能手机是如何处理大型神经网络的
 
-https://mp.weixin.qq.com/s/Ck_GDv1Xo-YMZcu-00gTOA
-
-中星微夺冠国际人工智能算法竞赛，目标检测一步法精度速度双赢
-
-https://mp.weixin.qq.com/s/qWJarPrjOrwxSX77xQ9rCw
-
-面向卷积神经网络的卷积核冗余消除策略
-
-https://mp.weixin.qq.com/s/QSGgvhkMUj3cXVlQwlzTFQ
-
-深度神经网络加速和压缩新进展年度报告
-
-https://zhuanlan.zhihu.com/p/37074222
-
-CVPR 2018 高效小网络探密（上）
-
-https://zhuanlan.zhihu.com/p/37919669
-
-CVPR 2018 高效小网络探密（下）
-
-https://zhuanlan.zhihu.com/p/38046989
-
-从ISCA论文看AI硬件加速的新技巧
-
-https://mp.weixin.qq.com/s/jqRBrs9Y_-3qvemL0RTflA
-
-支付宝如何优化移动端深度学习引擎？
-
-https://mp.weixin.qq.com/s/-V6hlZAKp1vuARSibZDBQQ
-
-深度学习高效计算与处理器设计
-
-https://mp.weixin.qq.com/s/NJzGR-tY_WWeccbdshHckA
-
-基于交错组卷积的高效深度神经网络
-
-https://mp.weixin.qq.com/s/ccFccLb2UTyFyMwFPjsDaA
-
-让CNN跑得更快，腾讯优图提出全局和动态过滤器剪枝
-
 https://mp.weixin.qq.com/s/vswtn3D1-VZZlyKLJmHc7A
 
 纪荣嵘：深度神经网络压缩及应用
-
-https://mp.weixin.qq.com/s/cSYCT1I1asaSCIc5Hgu0Jw
-
-计算成本降低35倍！谷歌发布手机端自动设计神经网络MnasNet
-
-https://zhuanlan.zhihu.com/p/42474017
-
-MnasNet：终端轻量化模型新思路
-
-https://mp.weixin.qq.com/s/p_qdKcQwQ8y_JUw3gQUEnA
-
-谷歌大脑用强化学习为移动设备量身定做最好最快的CNN模型
-
-https://mp.weixin.qq.com/s/OyEIcS5o6kWUu2UzuWZi3g
-
-这么Deep且又轻量的Network，实时目标检测
 
 https://mp.weixin.qq.com/s/mWfZ4jfuby4myGfi6TW3wQ
 
 从超参数到架构，一文简述模型优化策略
 
-https://mp.weixin.qq.com/s/8NDOf_8qxMMpcuXIZGJCGg
-
-Google又发大招：高效实时实现视频目标检测
-
-https://mp.weixin.qq.com/s/IxVMMu_7UL5zFsDCcYfzYA
-
-AutoML自动模型压缩再升级，MIT韩松团队利用强化学习全面超越手工调参
-
 https://mp.weixin.qq.com/s/fU-AeaPz-lHlg0CBgqnpZQ
 
 轻量化神经网络综述
 
-https://mp.weixin.qq.com/s/BMsvhXytSy2nWIsGOSOSBQ
+https://mp.weixin.qq.com/s/n7neAptKozRz5p5ctvKZrQ
 
-自动生成高效DNN，适用于边缘设备的生成合成工具FermiNets
+模型压缩——结构篇
 
-https://mp.weixin.qq.com/s/nEMvoiqImd0RxrskIH7c9A
+https://mp.weixin.qq.com/s/MGR36sC581WuQ-2WMnf5vA
 
-仅17KB、一万个权重的微型风格迁移网络！
+深度压缩网络总结
 
-https://mp.weixin.qq.com/s/pc8fJx5StxnX9it2AVU5NA
+https://mp.weixin.qq.com/s/1EnPWdJk8vGzxxdzAwPO4A
 
-基于手机系统的实时目标检测
+剪枝乱炖
 
-https://mp.weixin.qq.com/s/6wzmyhIvUVeAN4Xjfhb1Yw
+https://mp.weixin.qq.com/s/UmtCq6WzIDQs3IAxhRFgNw
 
-论文解读：Channel pruning for Accelerating Very Deep Neural Networks
+浅谈模型压缩之量化、剪枝、权重共享
 
-https://mp.weixin.qq.com/s/-X7NYTzOzljzOaQL7_jOkw
+# 知识蒸馏
 
-惊呆了！速度高达15000fps的人脸检测算法！
+## 基本概念
 
-https://mp.weixin.qq.com/s/6eyEMW9dVBR5cZrHxn8iqA
+知识蒸馏是另一大类的模型压缩方法。
 
-腾讯AI Lab详解3大热点：模型压缩、自动机器学习及最优化算法
+这类方法的开山之作，当属Geoffrey Hinton和Jeff Dean的论文：
 
-https://xmfbit.github.io/2018/02/24/paper-ssl-dnn/
+《Distilling the Knowledge in a Neural Network》
 
-论文-Learning Structured Sparsity in Deep Neural Networks
+一个很大的DNN往往训练出来的效果会比较好，并且多个DNN一起ensemble的话效果会更好。但是实际应用中，过于庞大的DNN ensemble会增大计算量，从而影响应用。于是一个问题就被提出了：有没有一个方法，能使降低网络的规模，但是保持（一定程度上的）精确度呢？
 
-https://mp.weixin.qq.com/s/d6HFVbbHwkxPGdnbyVuMyQ
+Hinton举了一个仿生学的例子，就是昆虫在幼生期的时候往往都是一样的，适于它们从环境中摄取能量和营养；然而当它们成长到成熟期，会基于不同的环境或者身份，变成另外一种形态以适应这种环境。
 
-密歇根州立大学提出NestDNN：动态分配多任务资源的移动端深度学习框架
+那么对于DNN是不是存在类似的方法？在一开始training的过程中比较庞杂，但是当后来需要拿去deploy的时候，可以转换成一个更小的模型。他把这种方法叫做**Knowledge Distillation(KD)**。
 
-https://mp.weixin.qq.com/s/lUTusig94Htf7_4Z3X1fTQ
+![](/images/img2/Distilling.jpg)
 
-清华&伯克利ICLR论文：重新思考6大剪枝方法
+上图是KD的网络结构图。它的主要思想就是通过一个performance非常好的大网络（有可能是ensemble的）来教一个小网络进行学习。这里我们可以把大网络叫为：teacher network，小网络叫为：student network。
 
-https://mp.weixin.qq.com/s/g3y9mRhkFtzSuSMAornnDQ
+teacher network可以被固定（正如在精炼过程中）或联合优化，甚至同时训练多个不同大小的student network。
 
-韩松博士论文：面向深度学习的高效方法与硬件
+![](/images/img2/Distilling_2.jpg)
 
-https://mp.weixin.qq.com/s/aH1zQ7we8OE59-O9n4IXhw
+上图是另一篇论文的图：
 
-应对未来物联网大潮：如何在内存有限的情况下部署深度学习？
+《Object detection at 200 Frames Per Second》
 
-https://mp.weixin.qq.com/s/IfvXrsUq8-cBDC4_3O5v_w
+该论文的中文版：
 
-Facebook新研究优化硬件浮点运算，强化AI模型运行速率
+https://mp.weixin.qq.com/s/OCG1TiHl2dsuS24uacQ-MA
 
-https://mp.weixin.qq.com/s/Jsxiha_BFtWVLvO4HMwJ3Q
+又快又准确，新目标检测器速度可达每秒200帧
 
-工业界第一手实战经验：深度学习高效网络结构设计
+## soft target
 
-https://mp.weixin.qq.com/s/uXbLb5ITHOU0dZRSWNobVg
+由于有teacher network的存在，student network的训练也和普通的监督学习有所不同。
 
-算力限制场景下的目标检测实战浅谈
+论文：
 
-https://mp.weixin.qq.com/s/DoeoPGnS88HQmxagKJWLlg
+《Articulatory and Spectrum Features Integration using Generalized Distillation Framework》
 
-小米开源FALSR算法：快速精确轻量级的超分辨率模型
+![](/images/img3/KD.png)
 
-https://mp.weixin.qq.com/s/wT39oUWfrQK-dg7hGXRynQ
+上图是两者的训练过程。
 
-实时单人姿态估计，在自己手机上就能实现
+这里解释一下，何为soft target？
 
-https://mp.weixin.qq.com/s/GJ7JMtWiKBku7dVJWOfLOA
+Hinton给了个例子：比如说在MNIST数据集中，有两个数字“2”，但是写法是不一样的：一个可能写的比较像3（后面多出了一点头），一个写的比较像7（出的头特别的短）。在这样的情况下，grund truth label都是“2”，然而一个学习的很好的大网络会给label“3”和“7”都有一定的概率值。通常叫这种信息为“soft targets”；相对的，gt label是一种“hard targets”因为它是one－hot label。总的来说就是，通过大网络的“soft targets”，能得到更加多的信息来更好的训练小网络。
 
-CNN能同时兼顾速度与准确度吗？CMU提出AdaScale
+soft targets的计算方法如下：
 
-https://mp.weixin.qq.com/s/pmel2k2J159zQi87ib3q8A
+$$q_i = \frac{exp(z_i/T)}{\sum_j exp(z_j / T)}$$
 
-如何让CNN高效地在移动端运行
+上式实际上是Boltzmann distribution的PDF。（参见[《数学狂想曲（五）》](/math/2017/03/02/math_5.html#Boltzmann)）所以T也被称为温度，通常默认1。对于分类任务来说使用$$T=1$$往往会导致不同类的概率差距很大，过度集中于某一个类，而其他类别的信息难以利用，这就是所谓的hard targets。
 
-https://mp.weixin.qq.com/s/m-wQRm3VpfQkEOoUAxEdoA
+如果增大T的话，不同类别的差异就变小了，这也就是soft targets。类似于Label smoothing Regularization(LSR)。
 
-论文解读: Quantized Convolutional Neural Networks for Mobile Devices
+如果T接近于0，则最大的值会越近1，其它值会接近0，近似于one-hot编码。
 
-https://mp.weixin.qq.com/s/w7O2JxDH2ECqPn50sLfxpg
+如果T等于无穷，那就是一个均匀分布。
 
-不用重新训练，直接将现有模型转换为MobileNet
+综上，KD的流程就很自然了：
 
-https://mp.weixin.qq.com/s/EW6jvf98ifBucVz74SfSIA
+- 先训练一个teacher网络。
 
-文档扫描：深度神经网络在移动端的实践
+- 然后使用这个teacher网络的输出和数据的真实标签去训练student网络。
 
-https://mp.weixin.qq.com/s/FvR6loJ8KUxm7qwclestcQ
+参考：
 
-专门为卷积神经网络设计的训练方法：RePr
+https://www.zhihu.com/question/50519680
 
-https://mp.weixin.qq.com/s/67GSnZnJySFrCESvmwhO9A
+如何理解soft target这一做法？
 
-论文解读Channel pruning for Accelerating Very Deep Neural Networks
+## KD的进化史
 
-https://mp.weixin.qq.com/s/Lkxc_9sbRY157sMWaD5c7g
+![](/images/img3/KD.jpg)
 
-视频分割在移动端的算法进展综述
+## Theseus压缩
 
-https://mp.weixin.qq.com/s/F0ykoKv027ycinsAZZjbWQ
+研究者受到著名哲学思想实验“忒修斯之船”（The Ship of Theseus）启发（如果船上的木头逐渐被替换，直到所有的木头都不是原来的木头，那这艘船还是原来的那艘船吗？），提出了Theseus Compression for BERT(BERT-of-Theseus)，该方法逐步将BERT的原始模块替换成参数更少的替代模块。研究者将原始模型叫做“前辈”（predecessor），将压缩后的模型叫做“接替者“（successor），分别对应KD中的教师和学生。
 
-ThunderNet：国防科大、旷视提出首个在ARM上实时运行的通用目标检测算法
+参考：
 
-https://mp.weixin.qq.com/s/J3ftOKDPBY5YYD4jkS5-aQ
+https://mp.weixin.qq.com/s/HdG3_CaSdZP3lCp8J_VRQA
 
-ThunderNet：Two-stage形式的目标检测也可很快而且精度很高
+只需一个损失函数、一个超参数即可压缩BERT，MSRA提出模型压缩新方法
 
-https://mp.weixin.qq.com/s/ie2O5BPT-QxTRhK3S0Oa0Q
+## 参考
 
-剪枝需有的放矢，快手&罗切斯特大学提出基于能耗建模的模型压缩
+https://github.com/dkozlov/awesome-knowledge-distillation
 
-https://mp.weixin.qq.com/s/NsvjADgQZrYkUGNN6fzXVg
+知识蒸馏从入门到精通
 
-驭势科技推出“东风网络”：如何找到速度-精度的最优解？
+https://zhuanlan.zhihu.com/p/24894102
 
-https://mp.weixin.qq.com/s/HzgRHtVwdmW6_m7OJwK-ew
+《Distilling the Knowledge in a Neural Network》阅读笔记
 
-SysML 2019论文解读：Accurate and Efficient 2-Bit Quantized Neural Netowrks
+https://luofanghao.github.io/blog/2016/07/20/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%20%E3%80%8ADistilling%20the%20Knowledge%20in%20a%20Neural%20Network%E3%80%8B/
+
+论文笔记《Distilling the Knowledge in a Neural Network》

@@ -166,6 +166,10 @@ https://mp.weixin.qq.com/s/P8TiEk482o2Mye76_YC0rg
 
 EasyOCR: 支持40+语言的OCR模块
 
+https://mp.weixin.qq.com/s/i1Dm18qp93jzWnMoqRU2gA
+
+8.6M超轻量中英文OCR模型开源，训练部署一条龙
+
 # Graph NN
 
 https://mp.weixin.qq.com/s/emPDgw_c68JgbpYnem4JvA

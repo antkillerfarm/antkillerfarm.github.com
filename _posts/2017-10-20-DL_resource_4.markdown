@@ -294,6 +294,10 @@ https://mp.weixin.qq.com/s/sRGdNquZyt7VbvuKL5JXYQ
 
 不仅搞定“梯度消失”，还让CNN更具泛化性：港科大开源深度神经网络训练新方法
 
+https://mp.weixin.qq.com/s/P6BCFLDtzEkPluWIKMD2AA
+
+最新《几何深度学习》教程，100页ppt，Geometric Deep Learning
+
 # 目标检测进阶
 
 https://mp.weixin.qq.com/s/IRD0iIVXyENlUOyfSbmlBA

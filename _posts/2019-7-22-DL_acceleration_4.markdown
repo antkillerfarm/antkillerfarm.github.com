@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度加速（四）——模型压缩与加速（1）
+title:  深度加速（四）——模型压缩与加速
 category: DL acceleration 
 ---
 
@@ -52,7 +52,7 @@ Flexpoint是Nervana的作品。
 
 - 指数保存在Host上，会造成反复通信的带宽问题。
 
-总的来说，这个方案虽然精巧，但是由于没有对数据特点做充分分析，没有意识到Dynamic Range比底数精度更重要，从而导致了最终的失败。
+总的来说，这个方案虽然精巧，但是由于没有对数据特点做充分分析，没有意识到**Dynamic Range比底数精度更重要**，从而导致了最终的失败。
 
 参考：
 
@@ -67,6 +67,26 @@ Flexpoint——利用一种自适应的数据类型加速神经网络训练
 https://mp.weixin.qq.com/s/z4OEPrAAtaNmBQoyvEd7Nw
 
 从春秋到战国—论Nervana的倒掉
+
+## TF32
+
+![](/images/img3/tf32.png)
+
+这是Nvidia推出的格式，有BF16珠玉在前，这个的设计只能说中规中矩了。
+
+优点：底数精度虽然不如Dynamic Range重要，但对于运算结果还是有一定的影响的。这点在CNN中不太显著，但在RNN/Transformer中还是有所体现的。
+
+缺点：毕竟不是16位，运算速度只有FP16/BF16的一半，但比FP32快一些。
+
+参考：
+
+https://mp.weixin.qq.com/s/cGKtvtZzR--sGL4oNSZfAw
+
+深度分析NVIDIA A100显卡架构
+
+https://zhuanlan.zhihu.com/p/143499632
+
+NVIDIA A100 GPU中的TF32将AI训练与HPC速度提升20倍
 
 ## Saturate Quantization
 
@@ -305,25 +325,3 @@ https://zhuanlan.zhihu.com/p/31575074
 Weight Pruning需要相关硬件支持跳零操作才能真正加速运算，而Filter/Layer Pruning则无需特殊硬件支持。
 
 虽然这些参数、结点和层相对不重要，但是去掉之后，仍然会对准确度有所影响。这时可以对精简之后的模型，用训练样本进行re-train，通过残差对模型进行一定程度的修正，以提高准确度。
-
-还可以看看图森科技的论文：
-
-https://www.zhihu.com/question/62068158
-
-如何评价图森科技连发的三篇关于深度模型压缩的文章？
-
-图森的思路比较有意思。其中的方法之一，是利用L1规则化会导致结果的稀疏化的特性，制造出一批接近0的参数。从而达到去除不重要的参数的目的。
-
-除此之外，矩阵量化、Kronecker内积、霍夫曼编码、模型剪枝等也是常见的模型压缩方法。
-
-## 权值稀疏化实战
-
-这里讲一下韩松论文提到的裁剪方法中，最简单的一种——“权值稀疏化“的工程实现细节。以darknet框架为例。
-
-1.在src/parser.c中找到save_XXX_weights函数。判断权值是否接近0，如果是，则强制设为0。
-
-2.使用修改后的weights进行re-train。训练好之后，重复第1、2步。
-
-3.反复多次之后，进入最终prune阶段。修改src/network.c:update_network，令其不更新0权值。
-
->re-train时的learning rate一般不宜太大。如果出现re-train的效果，还不如直接prune的好，则多半是learning rate设置的问题。

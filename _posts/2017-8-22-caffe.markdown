@@ -361,40 +361,18 @@ https://mp.weixin.qq.com/s/YYwmRwq5TN7JPah_arNyaQ
 
 Facebook开源产业级深度学习框架Caffe2
 
-# 知识蒸馏+
+# 两弹一星++
 
-https://mp.weixin.qq.com/s/UPm02RtTwhQhP_YhtmheBg
+https://mp.weixin.qq.com/s/wsGgWzyaslXCQflaP2ccXA
 
-面向视觉智能的知识蒸馏和Student-Teacher方法，附37页pdf下载
+60年前首登珠峰，他是唯一在世亲历者
 
-https://zhuanlan.zhihu.com/p/143155437
+https://mp.weixin.qq.com/s/zwlOZzdGlqTFGSg3H9zNxQ
 
-知识蒸馏在推荐系统的应用
+珠峰变“绿”，“隐者”现身，这些年的珠峰发生了什么？
 
-https://mp.weixin.qq.com/s/OFCzl8stFU5b1MWrkDU7NA
+https://mp.weixin.qq.com/s/MCAR8M2DoV30-McdsjTxDw
 
-阿里电商推荐中如何进行特征蒸馏提升模型效果
+徒步横穿南极大陆第一人
 
-https://mp.weixin.qq.com/s/ZNjC30F28uX2lBkHBAAU3g
-
-双DNN排序模型：在线知识蒸馏在爱奇艺推荐的实践
-
-https://mp.weixin.qq.com/s/_Wq7qawac1nTfZnV_AKG6w
-
-模型压缩中知识蒸馏技术原理及其发展现状和展望
-
-https://mp.weixin.qq.com/s/W8mLxU48dgWBB4eEFnU2rQ
-
-知识蒸馏经典解读
-
-https://zhuanlan.zhihu.com/p/144982430
-
-强化学习如何用于模型蒸馏？
-
-https://zhuanlan.zhihu.com/p/144987182
-
-模型蒸馏的核心技术点有哪些，如何对其进行长期深入学习
-
-https://mp.weixin.qq.com/s/3zpri6pfVtp-3-5_004B1Q
-
-优势特征蒸馏在淘宝推荐中的应用
+>秦大河，1947年生，地理学家，中国科学院院士，第三世界科学院院士。曾任中国气象局局长、中国科学技术协会副主席等

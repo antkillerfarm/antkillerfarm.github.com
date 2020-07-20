@@ -90,6 +90,14 @@ https://zhuanlan.zhihu.com/p/143747206
 
 深入浅出Yolo系列之Yolov3&Yolov4核心基础知识完整讲解
 
+https://zhuanlan.zhihu.com/p/150127712
+
+YOLO V4—网络结构解析
+
+https://zhuanlan.zhihu.com/p/159209199
+
+YOLO V4—损失函数解析
+
 # YOLOv5
 
 YOLOv5由Darknet的另一贡献者Ultralytics创建并维护（2010.5）。这是一家总部位于美国的粒子物理和人工智能初创公司。

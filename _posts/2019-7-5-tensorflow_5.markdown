@@ -250,126 +250,92 @@ https://zhuanlan.zhihu.com/p/58918363
 
 TVM: Deep Learning模型的优化编译器
 
-# 新冠肺炎+
+# 模型压缩与加速进阶+
 
-## 国际援助
+https://mp.weixin.qq.com/s/gwXXkWumGWy24oWuZKSyAQ
 
-### 日本援助中国
+MIT韩松组推出升级版AutoML方法，一个网络适配所有硬件
 
-盛唐时，日本遣人来中国学习佛法。长屋（日本的相国）赠送中国大德的上千件袈裟，边缘都绣着一首偈子：
+https://zhuanlan.zhihu.com/p/76909380
 
-山川异域，风月同天。寄诸佛子，共结来缘。
+轻量型网络：MoGA简介
 
-这也是鉴真法师决心东渡日本传戒的缘由之一。
+https://mp.weixin.qq.com/s/kgl7mz4bK7SywkbViY_qhQ
 
-----
+利用LSTM思想来做CNN剪枝，北大提出Gate Decorator
 
-岂曰无衣？与子同袍。王于兴师，修我戈矛。与子同仇。
+https://mp.weixin.qq.com/s/3_famaAmkAN-4xVEupSXSA
 
-岂曰无衣？与子同泽。王于兴师，修我矛戟。与子偕作。
+华为、北大等首创GAN剪枝算法，线上加速3倍以上
 
-岂曰无衣？与子同裳。王于兴师，修我甲兵。与子偕行。
+https://mp.weixin.qq.com/s/DLNyb-GtzmSYuXcn6VQz4Q
 
-——《诗经·秦风·无衣》
+高效轻量级深度模型的研究和实践
 
-----
+https://mp.weixin.qq.com/s/3SWtxtV9b0dFpvqfTNlqIg
 
-相知无远近，万里尚为邻。
+Slimmable Neural Networks
 
-四海皆兄弟，谁为行路人。
+https://mp.weixin.qq.com/s/lc7IoOV6S2Uz5xi7cPQUqg
 
-崎岖路，长情在。
+基于元学习和AutoML的模型压缩新方法
 
-### 中国援助韩国
+https://zhuanlan.zhihu.com/p/64400678
 
-道不远人，人无异国。
+轻量卷积神经网络的设计
 
-——新罗 崔致远
+https://mp.weixin.qq.com/s/pJk84bNzRn7LZZfQfSjs5A
 
->崔致远，字孤云，号海云，谥号文昌。朝鲜半岛新罗王京人。十二岁时，即唐懿宗咸通九年(公元868年)乘船西渡入唐，留唐十六年。朝鲜汉文学的开山鼻祖。有“东国儒宗”、“东国文学之祖”的称誉。
+VarGFaceNet：地平线提出轻量级、有效可变组卷积的人脸识别网络
 
-### 小米援助意大利
+https://mp.weixin.qq.com/s/cYimAphdyFO_XqKfT2Hbeg
 
-We are waves of the same sea, leaves of the same tree, flowers of the same garden.
+如何使用强化学习进行模型剪枝
 
-——Lucius Annaeus Seneca
+https://mp.weixin.qq.com/s/SgELZgoHzIvbg2-jzJw6Tw
 
->Lucius Annaeus Seneca，公元前4年～65年，古罗马政治家、斯多葛派哲学家、悲剧作家、雄辩家。暴君Nero的老师，被逼自杀。
+港科大、清华与旷视提出基于元学习的自动化神经网络通道剪枝网络
 
-### 马云援助意大利
+https://mp.weixin.qq.com/s/q5-91AAKwBiYzTMmqadEcg
 
-“消失吧，黑夜！黎明时我们将获胜！”
+RefineDetLite：腾讯提出轻量级高精度目标检测网络
 
-——《Turandot》， Giacomo Puccini
+https://mp.weixin.qq.com/s/oDwvMtET0moHVGgtQLfCow
 
->Giacomo Puccini，1858～1924，意大利歌剧作曲家，代表作有《波希米亚人》、《托斯卡》与《蝴蝶夫人》等。   
->《Turandot（图兰朵）》是Puccini最后的作品，在他去世时仍未完成。后来，Franco Alfano根据普契尼的草稿将全剧完成。《今夜无人入睡》（Nessun Dorma）是其中最著名的一段咏叹调。
+5个可以让你的模型在边缘设备上高效推理的算法
 
-## 知名患者
+https://mp.weixin.qq.com/s/nbEa0csbaMvEM3TCI3fn0Q
 
-一个健康的社会不应该只有一个声音--By 李文亮
+当前模型剪枝有哪些可用的开源工具？
 
-https://mp.weixin.qq.com/s/e3MaPaBZrxwqWtykB9f_JQ
+https://mp.weixin.qq.com/s/0_66CScEk0qhGlTvfpmqBA
 
-86岁院士因感染冠状病毒去世，华中科技大学已痛失4位知名学者
+2019年的最后一个月，这里有6种你必须要知道的最新剪枝技术
 
-----
+https://mp.weixin.qq.com/s/u94NZVwb_ywqjTMla2upbQ
 
-根据伊朗宪法，总统可以在无需议会批准的情况下任命副总统，人数可达十多位，每位副总统一般负责一个与总统事务有关的组织机构。除第一副总统外，副总统的重要性无法与负责具体行政事务的内阁部长相比。
+模型压缩究竟在做什么？我们真的需要模型压缩么？
 
-http://news.ifeng.com/c/7uRKv3JARr9
+https://mp.weixin.qq.com/s/Qr2Q2ARht0pEP3F8l3k98g
 
-伊朗女副总统感染新冠病毒，40年前她在美国家喻户晓
+滴滴&东北大学提出自动结构化剪枝压缩算法框架，性能提升高达120倍
 
-----
+https://zhuanlan.zhihu.com/p/104447447
 
-https://mp.weixin.qq.com/s/srkQ4in3bLP6exZIZawzuw
+剪枝实践：图像检索如何加速和省显存？
 
-英国全能数学家John Conway因新冠去世，他是数学疯子，也是游戏疯子：没有谁比我更爱玩游戏了！
+https://zhuanlan.zhihu.com/p/105064255
 
-https://mp.weixin.qq.com/s/Ipky8I11O6AlaT2ACRqVaQ
+Slimmable Networks
 
-陶哲轩发文缅怀John Conway：他是所有数学家构成的凸包中的一个极值点
+https://mp.weixin.qq.com/s/EBCcBWob_iFa51-gOVPYQA
 
+揭秘微信“扫一扫”识物为什么这么快？
 
-## Gilead Sciences
+https://mp.weixin.qq.com/s/H6OTkpdIgSdugDrEMBLybw
 
-Gilead Sciences，1987年6月22日注册成立，是一家以研究为基础，从事药品的开发和销售的生物制药公司。主要重点领域包括人类免疫缺陷病毒（HIV）/艾滋病，肝脏疾病，如乙型肝炎和丙型肝炎和心血管/代谢和呼吸条件。
+超越MobileNetV3的轻量级网络（GhostNet）
 
-https://www.huxiu.com/article/338515.html
+https://mp.weixin.qq.com/s/KuZ-mZKt7bTWhzygK1lmSg
 
-研发瑞德西韦的医药公司吉利德，真是抗毒传奇？
-
-https://xueqiu.com/1913820214/140236918
-
-吉利德发家史：5次豪赌，从小药厂到世界巨头的30年蜕变！
-
-----
-
-Rem 人民 de 的 sivir 希望
-
-https://mp.weixin.qq.com/s/aZLWs6VT-zfEMaBt_cRfzg
-
-“人民的希望”跌落神坛，竟因中国的临床试验？
-
-----
-
-瑞德西韦（Remdesivir）、法匹拉韦（Favipiravir）、巴洛沙韦（Baloxavir）、洛匹那韦（lopinavir）、利托那韦（ritonavir）
-
-盘尼西林、阿莫西林、配尼西林、替卡西林、羧苄西林、匹美西林
-
-青霉素、庆大霉素、万古霉素
-
-https://mp.weixin.qq.com/s/8XlUuq6HoppIJbeR58LrnA
-
-想成为一个合格的药？选择姓什么很重要
-
-## 疫情建模
-
-https://mp.weixin.qq.com/s/2XsZzfZI-gAHC-D5HGNZXw
-
-从目前的数据，再次分析一下武汉的新冠肺炎患者数量和死亡率
-
-https://mp.weixin.qq.com/s/I5I5Jh7brFGRBTAFah-C4w
-
-武汉新冠肺炎传播的动力学模型及预测
+加速目标检测

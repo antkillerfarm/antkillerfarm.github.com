@@ -188,162 +188,104 @@ https://mp.weixin.qq.com/s/eqMs7B70PZO4M7U5S1g5tg
 
 跟郎朗媳妇有得一拼的AI，只看弹琴动作，完美复现原声
 
-# 新冠肺炎++
+# 地理
 
-## 疫情建模（续）
+古陆核（craton）是指大陆地壳上长期稳定的构造单元 ，即大陆地壳中长期不受造山运动影响，只受造陆运动发生过变形的相对稳定部分，常与造山带（Orogen）对应。
 
-https://mp.weixin.qq.com/s/-C03P-I4w91kLSGsuhxAKQ
+https://mp.weixin.qq.com/s/-TZH-zVnHcoffyUzhEzwaA
 
-新型冠状病毒传播与扩散的控制模型
-
-https://mp.weixin.qq.com/s/gZCD8ATxGrpHSZLKpcHfiA
-
-基于元胞自动机模拟新型肺炎病毒的传播和预防
-
-https://mp.weixin.qq.com/s/ZOPncvPpFyLIwH_XChAdbg
-
-基于微分方程和元胞自动机模拟新型肺炎病毒的传播
-
-https://mp.weixin.qq.com/s/4w6CTGaKKEH9APVNH9Ue8w
-
-扩散信息、交通管制、自我隔离，哪个更能遏制病毒传播？
-
-https://mp.weixin.qq.com/s/tBoM9o3pK89bprK8npHLWA
-
-可能会说谎的地图！全国疫情地理格局的重新审视
-
-https://mp.weixin.qq.com/s/bVNkCHl7BPU_eEcAWksmww
-
-关于武汉新型冠状病毒肺炎的传播预测模型
-
-https://mp.weixin.qq.com/s/Lg1tJmO7aN9XNpZ6bs0cJA
-
-程序员硬核劝告：现在还不是出门的时候
-
-https://mp.weixin.qq.com/s/sv07R8HQXX2U0QOi5_dOwg
-
-河南1105例新冠肺炎数据告诉我们什么？
-
-https://mp.weixin.qq.com/s/qRzkS2itp-eloaBlA-VSGA
-
-基于排队论模型浅析各地医护人员驰援武汉的重要意义
-
-https://mp.weixin.qq.com/s/Rs2cTVPIa02NIkApvr076w
-
-全球COVID-19研究数据集正式开放，内含近3万篇论文和所需AI研究工具！
-
-https://mp.weixin.qq.com/s/ueuvLFxQAGNzBLHHyaBYMA
-
-如果新冠病毒是在亚美尼亚爆发会发生什么？程序员用Python进行模拟
-
-https://mp.weixin.qq.com/s/LGNGFf-LBMz3qyUFPr_BHA
-
-新冠疫情下，如何降低复工的职场感染风险？
-
-https://mp.weixin.qq.com/s/0k1o-m8F5aWUWA4Nj8WnIQ
-
-我国疫情预测模型遭权威期刊退回！钟南山等人用LSTM力证“早发现早隔离”重要性
-
-## 钟南山
-
-20世纪50年代，时任广州中山医学院儿科教授兼主任的钟世藩，开始了乙脑病毒的培养和分离工作。因为缺乏研究经费，他自费买来小白鼠，在自家书房研究，顺便还把自己儿子培养成了一名“小白鼠饲养员”。
-
-小鼠也引领了钟世藩的儿子踏上从医之路。2003年，这位“小鼠饲养员”在SARS防控期间赢得国人敬意；2020年1月18日，在成为“小鼠饲养员”半个多世纪之后，钟南山离开广州，再赴前线与病毒交手。
-
-参考：
-
-https://mp.weixin.qq.com/s/j3CHXw9Keu7gKWOPrJ4wTQ
-
-这个鼠年太难过了！再难，也不能没有鼠
-
-https://www.sohu.com/a/383137819_260616
-
-钟南山战疫60天全记录
+中国为什么地震频发？
 
 ----
 
-钟南山的母亲廖月琴毕业于协和医科大学的高级护理专业。新中国成立后曾担任现中山医科大学肿瘤医院副院长，是广东省肿瘤医院的创始人。
+2017.8.8
 
-钟南山的妻子李少芬，女子篮球运动员，出生于1936年，广东省广州市花都区人。
+九寨沟的7.0级地震，成都有感。这是我有感的第一次7级地震。
 
-1951年入广东队。1952年被选入国家队。历任广东女子篮球队教练、广东省体育工作队副大队长、中国篮球协会副主席。
+汶川地震，我在北京，公司在2楼，完全无感。
 
-他们的女儿钟惟月在20世纪90年代是中国国内优秀的游泳运动员，获得过世界短池游泳锦标赛100米蝶泳冠军，在1994年还打破了短池蝶泳世界纪录；同年因为尿检阳性被禁赛。
-
-他们的儿子钟惟德是广州市第一人民医院泌尿科医生。
-
-## 蝙蝠
-
-https://mp.weixin.qq.com/s/QN2GQ6T9Q2cwT_CN6aX_YQ
-
-你所不知道的蝙蝠——常态“发烧”，体内如“毒蛊”
-
-https://mp.weixin.qq.com/s/Vi-PRPhFEnBEnNxGNzA6VA
-
-蝙蝠是极为有益的动物，然而也是最容易被误解的动物之一
-
-## 武汉病毒所
-
-1956年，著名病毒学家高尚荫院士、著名微生物学家陈华癸院士和简浩然教授等老一辈科学家创建了武汉病毒所。
+芦山地震，我在广州出差，无感。
 
 ----
 
-石正丽，女，1964年生。现任中国科学院武汉病毒研究所研究员。人称“蝙蝠女侠”。美国微生物科学院院士。
+https://mp.weixin.qq.com/s/SukZFrroUmldi25Vfvp2gA
 
-https://mp.weixin.qq.com/s/-79fGDSCN0Dsaq40btPO3w
-
-崔永元：科学家用“生命担保”，靠谱吗？
-
-https://mp.weixin.qq.com/s/nzw3ETVAklJLXPwOqohp1g
-
-武汉病毒所石正丽：一直提醒预防，没想到疫情就发生在自己生活的城市
+拿下杜克全奖的学霸男神, 却选择了在汶川地震中失去双腿和女儿的她....
 
 ----
 
-https://mp.weixin.qq.com/s/MJamXXj44e-fxaP9WRyhgw
+![](/images/img2/salt_sea.jpg)
 
-武汉病毒所申请瑞得西韦用途专利能否获得授权？有无价值？
+https://www.zhihu.com/question/30137203/answer/303210942
 
-----
-
-王延轶出生于1981年，现任中国科学院武汉病毒研究所所长，分子免疫学学科组组长，致公党武汉市副主任委员。
-
-http://www.sohu.com/a/370615513_105067
-
-网传饶毅致信舒红兵：您夫人不适合领导武汉病毒所
-
-## 口罩+
-
-不得不感慨，美国的产业空心化已经到了如此严重的地步。如果给GM充足的时间，他们应该也可以搞出BYD这种产品线。但是造价会贵4~5倍，研发投产的周期至少要半年以上。
-
-https://mp.weixin.qq.com/s/tFc15hulgBUE-m338xBhzQ
-
-突发：CDC终于推荐民众戴口罩，谁又有谁来为3亿人美国人生产口罩？
-
-https://mp.weixin.qq.com/s/9YiERlc3Xyp95eSfakd3wg
-
-7天建起全球最大口罩生产线，比亚迪与兰博基尼转产猛飙“速度与激情”
+咸海覆灭
 
 ----
 
-人民需要什么，五菱就造什么。
+汉初以前，今嘉陵江上游诸水本是古汉水的上游，由于河道壅塞，在今陕西略阳以上形成河道型的山间湖泊“天池大泽”。公元前186年的武都道大地震，震中约在今陕西略阳、宁强一带，造成今陕西宁强汉王山一带山体发生巨大滑坡。
 
-1928年，桂系领袖李宗仁在这里修建了一家柳州机械厂，开始组装飞机，制造步枪、手榴弹；
+祁山道和陈仓道实际上是依托西汉水和嘉陵江的，这也就意味着在难走的秦岭山脉，韩信的运粮渠道并不艰难，可以通过一艘艘大船使命必达。
 
-1933年，因为广西被封锁，石油匮乏，又造出了时速40公里/小时的木炭车，不烧油，烧炭跑，成为战时大后方的主要运输工具；
+武都大地震之后，汉水断了，西汉水最终和嘉陵江源头汇入了今天的嘉陵江。粮草辎重无法再通过水路直接通到祁山道和陈仓道了。
 
-https://mp.weixin.qq.com/s/8rP-ZIvqAPlIW_j99jtMvQ
+http://economy.guoxue.com/?p=1428
 
-五菱的76个小时，改变了中国口罩
+汉初武都大地震与汉水上游的水系变迁
 
-![](/images/img3/wuling.jpg)
+https://www.zhihu.com/question/366835590
 
-6月1日，李克强总理在山东烟台考察时强调，地摊经济、小店经济是就业岗位的重要来源，是人间的烟火，和"高大上"一样，是中国的生机。
+如果把诸葛亮替换成韩信，蜀汉能统一中国吗？
 
-https://www.zhihu.com/question/399164650
+----
 
-怎么看待五菱荣光翼的售货车主打地摊经济？
+Mercator projection：由荷兰地图学家墨卡托(G.Mercator)于1569年创立。如果循着墨卡托投影图上两点间的直线航行，可以方向不变一直到达目的地。
 
-https://mp.weixin.qq.com/s/pmW4gEAD533uXojUQ9d1QQ
+Lambert projection：大比例尺地图/省级地图
 
-聊聊“地摊经济学”
+Gauss-Kruger projection：中纬度大区域地图/世界地图/中国地图
+
+https://mp.weixin.qq.com/s/V8o6lNajB6v8u80VvaO1kw
+
+如何给地球拍一张“素颜照”？
+
+----
+
+https://zhuanlan.zhihu.com/p/53237519
+
+一文读懂印尼海啸的真正原因（喀拉喀托之子）
+
+https://mp.weixin.qq.com/s/FeSKZqe394-8xT4i-BOEog
+
+掉入地下一万米
+
+https://www.zhihu.com/question/285058234
+
+永暑岛怎么会发现淡水资源？（淡水透镜体效应）
+
+https://mp.weixin.qq.com/s/T2ms6xXd14O3CrQb7X1ZOw
+
+人类用了2000年就为画张地图
+
+https://mp.weixin.qq.com/s/WRd_kx-HeSSgDtPTdgk09A
+
+山上“飞”来只火凤凰，这里的居民却要杀掉它？
+
+https://mp.weixin.qq.com/s/lu4wQOIzVtsFvwhO1c2d0A
+
+一大坨泥巴在移动，没人能够阻止它（圣安德列斯断层）
+
+https://mp.weixin.qq.com/s/R5EonufyiXy8bzD2fddnEg
+
+不喷岩浆喷泥浆，这些火山是要闹哪样？
+
+https://mp.weixin.qq.com/s/_DlXbYZ6JmqarUf6egD2fw
+
+暴雨后不见彩虹，却引来一场持续四个月的火山喷发？（基拉韦厄火山）
+
+https://mp.weixin.qq.com/s/GDV1Wp8Ij9VpyDFXmkwN5A
+
+一场大规模的火山爆发，终结了罗马共和国？（公元前43年发生在阿拉斯加的奧克莫克火山爆发）
+
+https://mp.weixin.qq.com/s/63d-A5knRit6T13cgGtJrg
+
+带来毁灭，又给予重生。火山如何记录完整地球故事？

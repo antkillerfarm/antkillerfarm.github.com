@@ -339,6 +339,14 @@ https://mp.weixin.qq.com/s/3Pp7wkDO6Rnxb5aZP0sacw
 
 一文了解操作系统I/O
 
+https://mp.weixin.qq.com/s/xM8uvYbX6VY8MVZrYkvCUg
+
+链接选项rpath的原理和应用
+
+https://juejin.im/post/5e8844996fb9a03c6675b9d6
+
+我们按下电脑开机键的背后发生了什么？
+
 ----
 
 https://mp.weixin.qq.com/s/WZyuTtEfaTFLnCfvhOrp7g

@@ -216,6 +216,12 @@ https://mp.weixin.qq.com/s/oV5F_K2mmE_kK77uEZSjLg
 
 # 安全
 
+RSA是1977年由Ron Rivest、Adi Shamir和Leonard Adleman一起提出的。
+
+https://mp.weixin.qq.com/s/A7JCTffgFQHljLeQYMNoFg
+
+理解RSA算法
+
 https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
 
 前端安全系列之一：如何防止XSS攻击？

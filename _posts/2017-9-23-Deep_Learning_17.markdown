@@ -197,6 +197,10 @@ https://mp.weixin.qq.com/s/3aAaM1DWsnCWEEbP7dOZEg
 
 伯克利等提出无监督特征学习新方法，代码已开源
 
+https://mp.weixin.qq.com/s/kNTRpDbKQIalzJi_rx0noQ
+
+无标签表示学习，222页ppt，DeepMind
+
 https://mp.weixin.qq.com/s/ZDPPWH570Vc6e1irwP1b1Q
 
 精细识别现实世界图像：李飞飞团队提出半监督适应性模型
