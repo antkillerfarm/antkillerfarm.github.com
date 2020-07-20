@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  孩子的编程语言, Go, Julia, Rust, 地理
+title:  孩子的编程语言, Go, Julia, Rust
 category: language 
 ---
 

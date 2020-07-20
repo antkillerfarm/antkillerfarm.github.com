@@ -136,6 +136,10 @@ https://mp.weixin.qq.com/s/UDHAT3vLMS_yo4w0wbcpJQ
 
 十问北斗
 
+https://mp.weixin.qq.com/s/SQPVTNYBU8JIRPYFqsXgtA
+
+神秘力量？上帝使者？彗星的“人设”早就崩塌了
+
 ----
 
 现代农历是民国时期开始用的。自古每当王朝更迭，第一件事就是改历法，一方面体现新朝气象，一方面也因为旧历使用多年，已经有了误差。

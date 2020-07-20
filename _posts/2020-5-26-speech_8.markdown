@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  语音识别（八）——声纹识别
+title:  语音识别（八）——声纹识别, 地理
 category: speech 
 ---
 
