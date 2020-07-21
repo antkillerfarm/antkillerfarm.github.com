@@ -94,7 +94,7 @@ ML时代的代表算法还有：
 
 这篇论文是黄煦涛和马毅小组的Jianchao Yang的作品。
 
->黄煦涛（Thomas Huang），1936年生。生于上海，国立台湾大学本科（1956）+MIT硕博（1960,1963）。UIUC教授。美国工程院院士，中国科学院+中国工程院外籍院士。
+>黄煦涛（Thomas Huang），1936~2020。生于上海，国立台湾大学本科（1956）+MIT硕博（1960,1963）。UIUC教授。美国工程院院士，中国科学院+中国工程院外籍院士。
 
 >马毅，清华本科（1995）+UCB硕博（1997,2000）。UCB教授。IEEE fellow。   
 >个人主页：   
@@ -111,6 +111,10 @@ https://mp.weixin.qq.com/s/A8c-15OgKaGPiTETEqyWbw
 https://mp.weixin.qq.com/s/asa10LOLI5V8tu1j_VcaDQ
 
 张正友忆华人计算机视觉宗师Thomas S. Huang
+
+https://mp.weixin.qq.com/s/XPepZGmkFQAp9e-KFpaG_A
+
+纪念黄煦涛教授
 
 https://mp.weixin.qq.com/s/pgXEWIGvGGc8o1RefWTXAw
 

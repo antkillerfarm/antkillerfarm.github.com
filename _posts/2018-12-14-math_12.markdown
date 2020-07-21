@@ -138,6 +138,36 @@ http://www.matrix67.com/
 
 ----
 
+卡尔.皮尔逊在皇家科学院宣读过的获奖文章，由于数学过多，被生物学家们认为不适合在生物杂志发表。于是，1901年，由高尔顿成立的生物统计信托基金慷慨资助，高尔顿、威尔登以及皮尔逊三人共同担任编委，统计学界最具有影响力的杂志之一——《生物统计》（Biometrika）就此诞生了。
+
+费希尔早期写的一类文章数学性非常强——使用大量的数学符号，一页里有一多半都是数学公式。这样的文章对大众几乎是“令人生畏”的，就是数学基础不弱的同时代统计界大拿前辈们（戈塞特、皮尔逊）也在通信中直接表示：**看不懂**。
+
+费希尔的成功，与新的写作风格大有关系。他1925年出版的在农业和生物领域影响深远的名作《研究工作者的统计方法》完全没有公式推导和证明！他显然预估了读者群，觉得最省力的方法就是“不证明”，结果也确实非常成功。这些工作很快在科学界流行，且需求量非常大。你只需要对一个实验室技术员进行最低限度的数学培训，他就可以使用这些书中提供的方法。
+
+好用归好用，成功归成功，但费希尔的工作（特别是其背后的原理和思想）几乎是公认的难于理解。1945年，瑞典数学家克拉默写了一本书《统计学的数学方法》，对费希尔很多说法提供了具体证明过程。此书一经发表就成为人们解读费希尔的范本和经典。
+
+1970年，耶鲁大学的萨维奇又重新研究了费希尔的原始论文，发现了克拉默遗漏的许多东西；他甚至惊奇地发现，费希尔早已完成了人们后来做的一些工作，而且解决了20世纪70年代许多仍然没有解决的问题。
+
+漫谈现代统计“四大天王”：
+
+https://mp.weixin.qq.com/s/fuHLVyjt2iRYBEjRH8u8ig
+
+卡尔.皮尔逊
+
+https://mp.weixin.qq.com/s/pgD1Jh-DHdpT3lgBUrg1hg
+
+费希尔
+
+https://mp.weixin.qq.com/s/tfEcWGp0BjIid-b2EqvrkA
+
+埃贡.皮尔逊（Egon Pearson）
+
+https://mp.weixin.qq.com/s/tmkqSxkk4mGjkJIKwtov7g
+
+内曼（Jerzy Neyman）
+
+----
+
 https://www.zhihu.com/question/40852906
 
 拿破仑时代的炮兵究竟数学要多好？
@@ -249,71 +279,3 @@ https://mp.weixin.qq.com/s/CM7WLc7iSp877WrkH8R_7g
 https://mp.weixin.qq.com/s/QJQnRCrBu9j94-VhNq_4tA
 
 群论的创立：两个少年天才的接力
-
-https://mp.weixin.qq.com/s/rZwqxyBmQg07Pq1ihTjNMg
-
-动图解释泰勒级数（一）
-
-https://mp.weixin.qq.com/s/yqAnIjGmXpubgSsGDx6O8w
-
-动图解释泰勒级数（二）
-
-https://zhuanlan.zhihu.com/p/36230460
-
-黑盒函数的探索
-
-http://www.matrix67.com/blog/archives/4570
-
-再谈Julia集与Mandelbrot集
-
-https://mp.weixin.qq.com/s/6XsH71CKaVikqnL6kVPqtg
-
-各种语言的Mandelbrot set示例代码
-
-https://mp.weixin.qq.com/s/gnPiCmsua0ByO5UwWqxuag
-
-史上最牛逼的文科生：学历史成为物理学家，却获得了数学界的最高荣誉，出了350部书，外号火星人！（Edward Witten）
-
-https://mp.weixin.qq.com/s/5p5ai_HKZMvbQ9Inu6ASbA
-
-史上最硬核老师：17年间，拿着菜刀把400个混混送进了哈佛耶鲁麻省！（Jaime Escalante）
-
-https://mp.weixin.qq.com/s/vLqJIaTXOkz0kYJzKguQaQ
-
-99%的数学家都算不出这道题（亲和数）
-
-https://mp.weixin.qq.com/s/ULzU9gwU-X6oSMM4mv5xhA
-
-两次入狱，数次移民，从罗马尼亚地下党到卡耐基梅隆教授—整数规划奠基者Egon Balas的彪悍人生
-
-https://mp.weixin.qq.com/s/NX0j_CgBqalBMVVdRkG59g
-
-数学界再出变态神人！竟用一个比基尼方程，暴力吊打美国数学家！（沙发问题）
-
-https://mp.weixin.qq.com/s?__biz=MjM5MDE3OTk2Ng==&mid=2657461772&idx=1&sn=fa141219528ace2a22b2f109c71bfa74
-
-麻省理工牛人解说数学体系
-
-https://mp.weixin.qq.com/s/GHIFsFleS7aGMP0ye_SCCQ
-
-我居然从一只猫身上学到了斐波那契数列
-
-https://mp.weixin.qq.com/s/y6H1YV7FUkBlqznoNbTLng
-
-太震撼了！2600年数学文明画在了一张图上
-
-https://mp.weixin.qq.com/s/JZKSzd97Og9YHPaHWNTWKQ
-
-史上最能忽悠的数学家，哲学出身竟引发数学千年危机，最终却惨遭处死（芝诺）
-
-https://mp.weixin.qq.com/s/ZRMmByhNkjcfbaOcwxQ5dg
-
-日本数学界惊现神操作！偷偷研究飞刀方程致使厕所爆炸，连美国总统特朗普都忍不住发文怒怼
-
-https://blog.csdn.net/ChangHengyi/article/details/80577318
-
-一片文章带你理解再生核希尔伯特空间（RKHS）以及各种空间
-
-https://mp.weixin.qq.com/s/AQgFded7GWp1yPE_voT0QQ
-
-看完这45组酷炫数学动图，原来数学这么有意思！

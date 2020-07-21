@@ -24,6 +24,10 @@ https://mp.weixin.qq.com/s/MjG2YZWe80sN5eqWpQfxOw
 
 基于深度学习的表面缺陷检测方法综述
 
+https://mp.weixin.qq.com/s/15iowD4AocB6Ut_j8kGHeg
+
+一种先分割后分类的两阶段同步端到端缺陷检测方法
+
 ## 参考
 
 https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748834&idx=3&sn=805564d2d9956dff6bb888ccb61e9b7b

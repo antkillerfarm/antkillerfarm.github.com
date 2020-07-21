@@ -347,6 +347,14 @@ https://juejin.im/post/5e8844996fb9a03c6675b9d6
 
 我们按下电脑开机键的背后发生了什么？
 
+https://mp.weixin.qq.com/s/DCqkgksOHa81EI-I0oaZvg
+
+Linux下9种优秀的代码比对工具推荐
+
+https://zhuanlan.zhihu.com/p/162366167
+
+Linux下C++so热更新
+
 ----
 
 https://mp.weixin.qq.com/s/WZyuTtEfaTFLnCfvhOrp7g

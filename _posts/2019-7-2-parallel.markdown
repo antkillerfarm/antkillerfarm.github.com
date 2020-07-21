@@ -333,3 +333,9 @@ EB级系统空中换引擎：阿里调度执行框架如何全面升级？（DAG
 https://mp.weixin.qq.com/s/_85oWK2plv2QOX5Qfg_-ZA
 
 大规模机器学习优化，195页ppt与视频
+
+# 目标检测进阶++
+
+https://mp.weixin.qq.com/s/xk8OdEWNuydxEtyQNOgCaQ
+
+语义分割的落地应用-故障检测与异常检测

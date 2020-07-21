@@ -69,6 +69,10 @@ https://mp.weixin.qq.com/s/eqNaX0YorcaMN8D9lnQprw
 
 简单上手一波Cython
 
+http://gashero.yeax.com/?p=38
+
+使用C/C++扩展Python
+
 ## Pythran
 
 Pythran是一个将python翻译成C++的库，而Cython和SWIG则是对C++进行python封装。

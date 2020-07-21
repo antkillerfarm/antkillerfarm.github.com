@@ -125,6 +125,10 @@ https://mp.weixin.qq.com/s/7ZVpdQOwNkIjW-16Mp8dcA
 
 Linux企业运维人员最常用150个命令汇总
 
+https://mp.weixin.qq.com/s/LwWhHvc2Zdvv2OYBG6kCyw
+
+Linux调试三剑客——strace,lsof,tcpdump
+
 # 时间的表示方法
 
 一般遵循ISO 8601标准：
