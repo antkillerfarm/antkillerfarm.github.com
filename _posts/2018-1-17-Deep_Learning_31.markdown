@@ -192,6 +192,8 @@ https://zmlarry.github.io
 
 ## Subword
 
+对于英文来说，文字的粒度从细到粗依次是character, subword, word。character和word都很好理解，分别是字母和单词。而subword相当于英文中的词根、前缀、后缀等。
+
 之前的Neural Machine Translation基本上都是基于word单词作为基本单位的，但是其缺点是不能很好的解决out-of-vocabulary即单词不在词汇库里的情况，且对于单词的一些词法上的修饰(morphology)处理的也不是很好。一个自然的想法就是能够利用比word更基本的组成来建立模型，以更好的解决这些问题。
 
 参考：
@@ -211,6 +213,10 @@ https://zhuanlan.zhihu.com/p/86965595
 https://mp.weixin.qq.com/s/TPRqDyGpkVuJcgomTu774A
 
 子词技巧：The Tricks of Subword
+
+https://mp.weixin.qq.com/s/fe7-wimFCAtp3ohB3TVywg
+
+通俗讲解Subword Models
 
 ## BPE
 
@@ -321,19 +327,3 @@ https://mp.weixin.qq.com/s/BQy3qpmQqeQquhf92hwcvQ
 https://mp.weixin.qq.com/s/0yb-YRGe-q4-vpKpuE4D_w
 
 多种注意力机制互补完成VQA（视觉问答）
-
-https://mp.weixin.qq.com/s/YBaELQlBHOZTGEqc2WI9NQ
-
-MIT等提出NS-VQA：结合深度学习与符号推理的视觉问答
-
-https://mp.weixin.qq.com/s/gaNSQ_8JGqX4a3lGuf-9fA
-
-如何让电脑成为看图说话的高手？
-
-https://mp.weixin.qq.com/s/-b8FuEQlpEb5G0L0QAxVEA
-
-如何使用深度学习为照片自动生成文本描述
-
-https://zhuanlan.zhihu.com/p/50784504
-
-《Reconstruction Network for Video Captioning》阅读笔记

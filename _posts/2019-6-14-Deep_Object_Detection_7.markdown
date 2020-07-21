@@ -142,6 +142,10 @@ https://mp.weixin.qq.com/s/7lwEn49G-3RDnBKBv5c7Ag
 
 论文也撞衫，你更喜欢哪个无锚点CenterNet？
 
+https://mp.weixin.qq.com/s/lE_HoLUfz8ehNmuj0fmstg
+
+PyTorch版CenterNet训练自己的数据集
+
 # Anchor-Free
 
 在前面的章节，我们已经简要的分析了Anchor Free和Anchor Base模型的差异，并介绍了两个Anchor-Free的模型——CornerNet和CenterNet。
@@ -271,6 +275,10 @@ Anchor-free目标检测之ExtremeNet
 https://mp.weixin.qq.com/s/nI_3kilFCsDHhtjFhRKytA
 
 RepPoints:替代边界框，基于点集的物体表示新方法
+
+https://mp.weixin.qq.com/s/VTb6CUOWnPpyU6WnYdYJ-g
+
+RepPoint V2：将角点检测和前景热图引入纯回归目标检测算法
 
 https://mp.weixin.qq.com/s/E8FXhe5H9VqXkkGSUsxYqA
 

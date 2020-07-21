@@ -274,9 +274,9 @@ http://www.alloyteam.com/2016/03/node-embedded-database-nedb/
 
 Node嵌入式数据库——NeDB
 
-# HTML & CSS
+## HTML & CSS
 
-## name、id、class的区别
+### name、id、class的区别
 
 name、id、class都可以用来标识元素。
 
@@ -286,7 +286,7 @@ id在一个页面中是唯一的。但这个唯一性由程序员保证，浏览
 
 class允许多个类型的组合，比如`<p class="a b"/>`表示p既属于a类，也属于b类。
 
-## CSS选择器
+### CSS选择器
 
 CSS的语法如下：
 
@@ -300,9 +300,7 @@ selector {property1: value1; property2: value2; ... propertyN: valueN}
 
 name没有快捷的选择方法，但可以采用属性的方式进行选择，例如：`input[name="you"]`
 
-## CSS动画
-
-### 动画
+## 动画
 
 HTML动画一般有两种实现方式：
 
@@ -310,7 +308,7 @@ HTML动画一般有两种实现方式：
 
 2.CSS3。CSS3引入了一些动画属性，它由浏览器直接解释执行。这种方式执行效率很高，但需要浏览器本身支持CSS3。并且，有些复杂的动画，可能会超出CSS3的能力范围，这时不可避免的还是会用到JS。
 
-### Animate.css
+## Animate.css
 
 Animate.css是Daniel Eden使用CSS3的animation制作的动画效果的CSS集合。其官网是：
 

@@ -150,6 +150,12 @@ $$C=\frac{1}{N}\sum_i^N C_i$$
 
 这里用s表示图中最大的连通子图（Largest component / Giant component）的结点数。
 
+## Random Graph Model
+
+上面讲述了图的统计特性，反过来给定了统计特性，我们也可以生成相应的图。这种生成图的方法通常称为Random Graph Model。
+
+例如我们以$$G_{np}$$表示，
+
 ## 参考
 
 https://mp.weixin.qq.com/s/LqCfwf90bzZKVMLLY5dbXA

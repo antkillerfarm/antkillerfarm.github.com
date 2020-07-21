@@ -170,7 +170,11 @@ https://mp.weixin.qq.com/s/i1Dm18qp93jzWnMoqRU2gA
 
 8.6M超轻量中英文OCR模型开源，训练部署一条龙
 
-# Graph NN
+https://mp.weixin.qq.com/s/RqsjyYwvbj41cMCXkFj6sg
+
+B站UP主自制的开源OCR翻译器走红Github
+
+# Graph NN+
 
 https://mp.weixin.qq.com/s/emPDgw_c68JgbpYnem4JvA
 
@@ -423,11 +427,3 @@ https://blog.csdn.net/weixin_43269174/article/details/98492487
 https://mp.weixin.qq.com/s/CmVhJMGll5HjO8kxsCinaA
 
 图神经网络GNN,GAT&GCN（一）
-
-https://zhuanlan.zhihu.com/p/133739758
-
-全面理解PinSage（工业落地：图神经网络+推荐系统）
-
-https://mp.weixin.qq.com/s/VctNZsALrbDQDW3_zhGJsw
-
-在NLP中应用GCN的几种构图方法整理

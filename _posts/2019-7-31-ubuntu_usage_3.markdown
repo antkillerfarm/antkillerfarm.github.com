@@ -207,6 +207,34 @@ https://www.cnblogs.com/schips/p/10141278.html
 
 使用boot-repair对Windows+Ubuntu双系统引导修复
 
+# Linux参考资源+
+
+https://mp.weixin.qq.com/s/qnZL4ENAbTvVMVcImVTtYw
+
+深入浅出CAS
+
+比较并交换(compare and swap, CAS)，是原子操作的一种，可用于在多线程编程中实现不被打断的数据交换操作，从而避免多线程同时改写某一数据时由于执行顺序不确定性以及中断的不可预知性产生的数据不一致问题。
+
+https://mp.weixin.qq.com/s/T_z2_gsYfs6A-XjVTVV_uQ
+
+说说无锁(Lock-Free)编程那些事（上）
+
+https://mp.weixin.qq.com/s/h75n7sHnrmoLJ4DVAW5AUQ
+
+说说无锁(Lock-Free)编程那些事（下）
+
+https://mp.weixin.qq.com/s/snQ3T86usv4rXz0MMQvFfQ
+
+如何回答性能优化的问题，才能打动阿里面试官？
+
+https://www.cnblogs.com/zhouyu629/p/3734494.html
+
+一次心惊肉跳的服务器误删文件的恢复过程
+
+https://mp.weixin.qq.com/s/A8TnhOFLQOhEqphE760yvw
+
+15个相见恨晚的Linux神器，你可能一个都没见过
+
 # 两弹一星+
 
 我们将不但有一个强大的陆军，而且有一个强大的空军和一个强大的海军。让那些内外反动派在我们面前发抖罢，让他们去说我们这也不行那也不行罢，中国人民的不屈不挠的努力必将稳步地达到自己的目的。
@@ -274,25 +302,3 @@ https://www.zhihu.com/question/404380682
 3、凡是外国掌握而中国没掌握的，都是屌炸天的技术。
 
 有这三句话，喷遍知乎不成问题。
-
-----
-
-1946年，当时的国民党政府和美国签了一份《中美友好通商航海条约》。这个条约在当时，看上去非常自由，比如，双方的船舶可以自由的在对方任何口岸、地方或领水内自由航行，开入对方“对外国商务或航业不开放之任何口岸、地方或领水”。
-
-当时，在中国国内，普遍认为这个条约是超越了二十一条的卖国条约。对美国开放了全部中国的领土，从水上到陆地，从海洋到内河。
-
-这个条约，表面上确实是两国平等的。但这个条约，现在的美国政府绝对不敢签署了。
-
-为什么美国人当时愿意签，因为1946年，美国在航运、经济、科技、金融、工业具有绝对的优势，所以可以签。现在，美国的优势没这么大了，所以就不敢签了。
-
-----
-
-![](/images/img3/top10.png)
-
-https://mp.weixin.qq.com/s/1NXjgkr3xWDzqm7Y-9x7-Q
-
-从核潜艇到华龙一号：“其他大国有的，我们也要有”
-
-https://mp.weixin.qq.com/s/sRVb8qGtbsuqCvHSrlL9mQ
-
-卡住中国脖子的35项技术

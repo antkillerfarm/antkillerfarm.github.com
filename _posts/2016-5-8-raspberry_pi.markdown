@@ -247,6 +247,22 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/other/vncserver
 
 默认的hostname是raspberrypi。将/etc/hostname和/etc/hosts中的相应字段，改成你想要的名字，保存重启即可。
 
+## Raspberry Pi 4
+
+2019.6
+
+时间过的好快啊，现在Raspberry Pi 4也出来了。
+
+| 串口 | Raspberry Pi 3 | Raspberry Pi 4 |
+|:--:|:--:|:--:|
+| CPU | BCM2837 | BCM2711 |
+| CPU core | 4 Cortex-A53, 1.2GHz | 4 Cortex-A72, 1.5GHz |
+| GPU | 400MHz VideoCore IV | 500MHz VideoCore IV |
+| USB | 4 USB 2.0 | 2 USB 2.0+2 USB 3.0 |
+| Video | 2560x1600 | Dual 4K |
+
+>VideoCore是Broadcom旗下的GPU产品。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/YeoBILcLy2LNzDAnxygKAg
@@ -285,18 +301,6 @@ https://mp.weixin.qq.com/s/pPTaxiCOTL_Y89TuKGHQmg
 
 微软放弃的游戏被他们复活了：Windows经典“三维弹球”现实版，CAD建模、Arduino编程、数控机床打造，硬核致敬童年
 
-## Raspberry Pi 4
+https://mp.weixin.qq.com/s/mgdDjjIJX4y1-DXzazDhPA
 
-2019.6
-
-时间过的好快啊，现在Raspberry Pi 4也出来了。
-
-| 串口 | Raspberry Pi 3 | Raspberry Pi 4 |
-|:--:|:--:|:--:|
-| CPU | BCM2837 | BCM2711 |
-| CPU core | 4 Cortex-A53, 1.2GHz | 4 Cortex-A72, 1.5GHz |
-| GPU | 400MHz VideoCore IV | 500MHz VideoCore IV |
-| USB | 4 USB 2.0 | 2 USB 2.0+2 USB 3.0 |
-| Video | 2560x1600 | Dual 4K |
-
->VideoCore是Broadcom旗下的GPU产品。
+不会编程的外国小姐姐，3天、850块，徒手用树莓派DIY了个数码相机

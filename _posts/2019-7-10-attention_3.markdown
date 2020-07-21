@@ -220,14 +220,6 @@ https://mp.weixin.qq.com/s/IOc-gxOa6a415Hf1VBmiQw
 
 “Linformer”拍了拍“被吊打Transformers的后浪们”
 
-https://mp.weixin.qq.com/s/-Y7Qy-5aJNJ5bx8QJf3k2w
-
-Transformer及其变种
-
-https://mp.weixin.qq.com/s/M0zLw9hA5xzontKB7Zj23Q
-
-Memory Transformer，一种简单明了的Transformer改造方案
-
 # 预训练语言模型进化史
 
 ![](/images/img3/Sesame_Street.jpg)

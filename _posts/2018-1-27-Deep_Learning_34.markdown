@@ -32,6 +32,10 @@ https://zhuanlan.zhihu.com/p/36788547
 
 网络表示学习论文引介
 
+https://mp.weixin.qq.com/s/TaLsCHNIYPRAog38gu5N8g
+
+word2vec, node2vec, graph2vec, X2vec：构建向量嵌入表示理论，120页ppt
+
 https://mp.weixin.qq.com/s/zTNX_LeVMeHhJG7kPewn2g
 
 除了自然语言处理，你还可以用Word2Vec做什么？

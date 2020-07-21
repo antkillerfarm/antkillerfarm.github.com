@@ -6,6 +6,22 @@ category: DL
 
 # Image Caption Generation（续）
 
+https://mp.weixin.qq.com/s/YBaELQlBHOZTGEqc2WI9NQ
+
+MIT等提出NS-VQA：结合深度学习与符号推理的视觉问答
+
+https://mp.weixin.qq.com/s/gaNSQ_8JGqX4a3lGuf-9fA
+
+如何让电脑成为看图说话的高手？
+
+https://mp.weixin.qq.com/s/-b8FuEQlpEb5G0L0QAxVEA
+
+如何使用深度学习为照片自动生成文本描述
+
+https://zhuanlan.zhihu.com/p/50784504
+
+《Reconstruction Network for Video Captioning》阅读笔记
+
 https://mp.weixin.qq.com/s/tEzZ770T1NpYLAxUK-MwIg
 
 综述：Image Caption 任务之语句多样性
@@ -174,6 +190,10 @@ https://mp.weixin.qq.com/s/fn0EAanAEFT-Aupl4Skpcw
 
 基于深度学习处理点云数据入门经典：PointNet、PointNet++
 
+https://mp.weixin.qq.com/s/1M22-5ns3Mbd9_VJjTdGBQ
+
+3D物体检测、行为预测和运动检测，一文解析激光雷达中时序融合的研究现状和发展方向
+
 # AutoDL
 
 DL领域目前存在的主要问题之一是：如何设计网络结构和调整超参数。目前的做法，通常依赖于作者的直觉，属于典型的拍脑袋想点子。
@@ -254,6 +274,10 @@ https://mp.weixin.qq.com/s/SwJs0OUzBlhiIOyFHFBK_g
 https://mp.weixin.qq.com/s/Jw2kzCf2uFibhIpREnjO_A
 
 图解高效神经网络结构搜索（ENAS）
+
+https://mp.weixin.qq.com/s/RfONzym6-FQgF1J8wru35A
+
+ENAS：首个权值共享的神经网络搜索方法，千倍加速
 
 ## DARTS
 
@@ -360,27 +384,3 @@ https://mp.weixin.qq.com/s/PIq78vhNQxAKntnZilL4pQ
 https://mp.weixin.qq.com/s/G55dxHfMYxWzjz4_8YnUaw
 
 深度学习超分辨率最新综述：一文道尽技术分类与效果评测
-
-https://zhuanlan.zhihu.com/p/67613641
-
-基于多级神经纹理迁移的图像超分辨方法(Adobe Research)
-
-https://mp.weixin.qq.com/s/IStOD22WgZ6EBFCvIHkNSg
-
-图像超分辨率网络：RCAN
-
-https://mp.weixin.qq.com/s/4LIq3kZaXgaoEEyb8TQvwg
-
-图像超分辨率重建--AI研究
-
-https://mp.weixin.qq.com/s/ETGPXVDGRHOq0W-ef_q2_A
-
-RankSRGAN:排序学习+GAN用于超分辨率
-
-https://zhuanlan.zhihu.com/p/140507840
-
-图像超分：USRNet
-
-https://mp.weixin.qq.com/s/sju4SYFxzDkJevk3mi68Rw
-
-图像超分辨率网络：EDSR

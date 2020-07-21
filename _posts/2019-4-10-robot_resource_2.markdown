@@ -96,6 +96,10 @@ https://mp.weixin.qq.com/s/NvVh3GO9iOGsftYgOlRb3Q
 
 300+FPS！浙大提出一种超快速车道线检测方法
 
+https://mp.weixin.qq.com/s/ekN9AvS4V0dcDdBlGCs3Bg
+
+车道线检测：SCNN
+
 ## 组合导航
 
 https://mp.weixin.qq.com/s/F8aLNue_qDlMyTAznBLC7g

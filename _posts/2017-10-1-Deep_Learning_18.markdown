@@ -90,7 +90,19 @@ https://mp.weixin.qq.com/s/TOwOa3noN_UYrd5g0Nrrrg
 
 半监督学习技术在金融文本分类上的实践
 
-# 深度信息检索
+https://mp.weixin.qq.com/s/uh25WRHVsFpoKwFyTSZtIw
+
+计算机视觉中的半监督学习
+
+https://mp.weixin.qq.com/s/lweM2STVbldYEGwPcK1YEg
+
+图像自标记的可视化指南
+
+https://mp.weixin.qq.com/s/hLFPWiHmDIzeUlQjInbgGw
+
+ActBERT: 自监督多模态视频文字学习
+
+# 深度信息检索+
 
 https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
 
@@ -156,7 +168,19 @@ https://mp.weixin.qq.com/s/4UBehc0eikVqcsFP7xL_Zw
 
 京东电商搜索中的语义检索与商品排序
 
-# Graph NN+
+https://mp.weixin.qq.com/s/8lRzE5nGCNfD6sQ0lDRDyg
+
+信息检索中的神经匹配和重要性学习，163页pdf
+
+# Graph NN++
+
+https://zhuanlan.zhihu.com/p/133739758
+
+全面理解PinSage（工业落地：图神经网络+推荐系统）
+
+https://mp.weixin.qq.com/s/VctNZsALrbDQDW3_zhGJsw
+
+在NLP中应用GCN的几种构图方法整理
 
 https://mp.weixin.qq.com/s/TnS4-seRxAs45A6SDSoACg
 
@@ -311,40 +335,6 @@ https://mp.weixin.qq.com/s/Zy9mCZOL8AneNjbvFpR3jg
 https://mp.weixin.qq.com/s/V6ldPntqboIMIefQQtj4mw
 
 CondInst：沈春华团队新作，将条件卷积引入实例分割
-
-# 行人重识别+
-
-https://mp.weixin.qq.com/s/Vi_1Sg8OKG-EG4aC4QTCWA
-
-半监督学习的新助力：无监督数据扩增法
-
-https://mp.weixin.qq.com/s/omUtD3GFOpP1dvfWZgLDww
-
-计算机视觉模型效果不佳，你可能是被相机的Exif信息坑了
-
-https://mp.weixin.qq.com/s/pV7C2sSJwP3rBO6OYeF-nw
-
-基于马尔可夫链的数据增强
-
-https://mp.weixin.qq.com/s/6yfHwsk-fTEtQhrciMEBug
-
-重识别（re-ID）特征适合直接用于跟踪（tracking）问题么？
-
-https://mp.weixin.qq.com/s/Q34wjziJBBOrb1VPhQJK8g
-
-行人重识别简介
-
-https://mp.weixin.qq.com/s/OALGxuvUdQMbsK1k4g2V7Q
-
-遮挡也能识别？地平线提出用时序信息提升行人检测准确度
-
-https://mp.weixin.qq.com/s/2v-Y_-_si6_dxq3cICy-lg
-
-疫情蔓延让这项CV技术突然火了，盘点开源代码
-
-https://mp.weixin.qq.com/s/Z6l9R5uzWsAn_DTgTsGstg
-
-京东发布FastReID：目前最强悍的目标重识别开源库！
 
 # AutoDL+
 

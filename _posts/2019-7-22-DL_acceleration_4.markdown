@@ -172,6 +172,10 @@ http://blog.csdn.net/tangwei2014/article/details/55077172
 
 二值化神经网络介绍
 
+https://mp.weixin.qq.com/s/0twiT2mrVdnwyS-mqgrjVA
+
+低比特量化之XNOR-Net
+
 https://mp.weixin.qq.com/s/oumf8l28ijYLxc9fge0FMQ
 
 嵌入式深度学习之神经网络二值化（1）

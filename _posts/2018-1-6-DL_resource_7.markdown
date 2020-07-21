@@ -341,3 +341,21 @@ https://mp.weixin.qq.com/s/r-tl6ooNcQ_j4OFzV-5f3w
 https://mp.weixin.qq.com/s/OkSjIw54TNbRtKN0I2Ug1Q
 
 LeCun哈佛演讲：《机器怎样才能像人和动物一样学习》（135页PPT）
+
+# Attention进阶+
+
+https://mp.weixin.qq.com/s/GGRORF5EfJ5xzMLwAsJt5w
+
+从词袋到Transfomer，NLP十年突破史
+
+https://mp.weixin.qq.com/s/fxEg8UOa3MeJ6qx5SjEHog
+
+NLP领域中各式各样Attention知识系统性的梳理和总结
+
+https://mp.weixin.qq.com/s/LAInpFPa-3R1rfv6idILnw
+
+注意力机制发展如何了，如何学习它在各类任务中的应用？
+
+https://zhuanlan.zhihu.com/p/151640509
+
+注意力机制在推荐系统中的应用

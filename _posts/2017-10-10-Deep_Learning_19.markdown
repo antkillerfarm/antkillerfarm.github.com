@@ -176,7 +176,7 @@ https://zhuanlan.zhihu.com/p/62954487
 
 旷视研究院新出8000点人脸关键点，堪比电影级表情捕捉
 
-# 深度信息检索+
+# 深度信息检索++
 
 https://mp.weixin.qq.com/s/jZCHyjhTW9JHW3xQSTzyYA
 

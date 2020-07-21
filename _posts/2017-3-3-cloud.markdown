@@ -205,6 +205,20 @@ https://spark.apache.org/mllib/
 
 和Spark的其他部分一样，MLlib也存在RDD API和DataFrame API两套API。其中前者已经停止开发，而后者的设计思想显然来自R语言。RDD API在spark.mllib包中，而DataFrame API在spark.ml包中。
 
+## Hive
+
+http://www.cnblogs.com/bluejoe/p/5115845.html
+
+Hive体系结构介绍
+
+https://mp.weixin.qq.com/s/XDqe6iqayJWxJGLUt_9QKA
+
+Hive的基本认识
+
+https://mp.weixin.qq.com/s/qSiYQFgaqaoEgmZUJhbqHw
+
+DDL与DML操作
+
 ## 参考
 
 http://www.cnblogs.com/zlslch/p/5723857.html
@@ -230,14 +244,6 @@ http://www.csdn.net/article/1970-01-01/2825748
 http://www.cnblogs.com/bluejoe/p/5115846.html
 
 学习GraphX
-
-http://www.cnblogs.com/bluejoe/p/5115845.html
-
-Hive体系结构介绍
-
-https://mp.weixin.qq.com/s/XDqe6iqayJWxJGLUt_9QKA
-
-Hive的基本认识
 
 https://mp.weixin.qq.com/s/vM5DM6CEVuKjcWBxZZSbhA
 

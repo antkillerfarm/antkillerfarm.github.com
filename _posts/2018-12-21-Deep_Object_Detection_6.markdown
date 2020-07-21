@@ -112,6 +112,10 @@ https://mp.weixin.qq.com/s/0tNVoD4H6fRGenUJXuJ8yg
 
 YOLOv5来了！基于PyTorch，体积比YOLOv4小巧90%，速度却超2倍
 
+https://zhuanlan.zhihu.com/p/161083602
+
+一文读懂YOLO V5与YOLO V4
+
 # One-stage vs. Two-stage
 
 虽然我们在概述一节已经提到了One-stage和Two-stage的概念。但鉴于这个概念的重要性，在介绍完主要的目标检测网络之后，很有必要再次总结一下。

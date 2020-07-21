@@ -405,3 +405,7 @@ https://mp.weixin.qq.com/s/Ri51M3xkk2qVUoC9Z4OmGA
 https://mp.weixin.qq.com/s/3OTsr7P7Gyg5XG0Tb86lEQ
 
 谷俊丽：一万字解答ADAS系统的今天和未来
+
+https://mp.weixin.qq.com/s/1nAR-hWWljsYoVKVwqjtdw
+
+自动驾驶规划方法综述

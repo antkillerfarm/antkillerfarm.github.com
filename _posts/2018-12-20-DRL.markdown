@@ -244,6 +244,10 @@ https://mp.weixin.qq.com/s/YTiNTQzRs7VkhEfiER5C3g
 
 最新《深度强化学习》教程，165页ppt与视频，Mila Doina Precup
 
+https://mp.weixin.qq.com/s/vHFLhlftGstuMcN8fswO5w
+
+基于模型的强化学习方法教程，279页ppt
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

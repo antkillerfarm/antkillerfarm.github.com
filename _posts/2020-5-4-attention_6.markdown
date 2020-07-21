@@ -162,6 +162,24 @@ https://mp.weixin.qq.com/s/mFRhp9pJRa9yHwqc98FMbg
 
 BERT在美团搜索核心排序的探索和实践
 
+# Transformer进阶
+
+https://mp.weixin.qq.com/s/-Y7Qy-5aJNJ5bx8QJf3k2w
+
+Transformer及其变种
+
+https://mp.weixin.qq.com/s/M0zLw9hA5xzontKB7Zj23Q
+
+Memory Transformer，一种简单明了的Transformer改造方案
+
+https://mp.weixin.qq.com/s/FJeZ8X9gtyciqCTs9zvlLA
+
+Transformer是CNN是GNN是RNN，Attention is all you need！
+
+https://mp.weixin.qq.com/s/d1qqRw7sWyLdoyfnqMBdJQ
+
+深度自适应Transformer
+
 # Attention进阶
 
 https://zhuanlan.zhihu.com/p/40920384
@@ -391,19 +409,3 @@ BERT、RoBERTa、DistilBERT与XLNet，我们到底该如何选择？
 https://mp.weixin.qq.com/s/Di-TbseiezMBc-MUYoEFHg
 
 CV领域的注意力机制
-
-https://mp.weixin.qq.com/s/GGRORF5EfJ5xzMLwAsJt5w
-
-从词袋到Transfomer，NLP十年突破史
-
-https://mp.weixin.qq.com/s/fxEg8UOa3MeJ6qx5SjEHog
-
-NLP领域中各式各样Attention知识系统性的梳理和总结
-
-https://mp.weixin.qq.com/s/LAInpFPa-3R1rfv6idILnw
-
-注意力机制发展如何了，如何学习它在各类任务中的应用？
-
-https://zhuanlan.zhihu.com/p/151640509
-
-注意力机制在推荐系统中的应用

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数字成像, 编译原理
+title:  数字成像
 category: resource 
 ---
 
@@ -166,6 +166,10 @@ https://zhuanlan.zhihu.com/p/56236308
 https://mp.weixin.qq.com/s/j4jfTKkbdQ9bHD7IZFdkbA
 
 国防科大提出双目超分辨算法，效果优异代码已开源
+
+https://mp.weixin.qq.com/s/QDMMP05hUqj6tqUWyCDiTQ
+
+来聊聊双目视觉的基础知识
 
 ## 参考
 
@@ -397,64 +401,22 @@ https://mp.weixin.qq.com/s/2uNcJxU-USpb-LZkka__eQ
 
 剖析苹果的激光雷达及参数估计
 
-# 编译原理
+https://mp.weixin.qq.com/s/DLsmHtUz3gAXMdzNsUTyFA
 
-https://zhuanlan.zhihu.com/frozengene
+苹果的DTOF中的SPAD原理和特性
 
-一个编译器方面的专栏
+# 两弹一星+++
 
-http://frozengene.github.io/
+https://mp.weixin.qq.com/s/wsGgWzyaslXCQflaP2ccXA
 
-一个LLVM方面的blog
+60年前首登珠峰，他是唯一在世亲历者
 
-https://zhuanlan.zhihu.com/c_1250484713606819840
+https://mp.weixin.qq.com/s/zwlOZzdGlqTFGSg3H9zNxQ
 
-一个LLVM方面的专栏
+珠峰变“绿”，“隐者”现身，这些年的珠峰发生了什么？
 
-https://zhuanlan.zhihu.com/p/28637279
+https://mp.weixin.qq.com/s/MCAR8M2DoV30-McdsjTxDw
 
-使用LLVM+PLY实现一个C语言子集的玩具编译器
+徒步横穿南极大陆第一人
 
-https://mp.weixin.qq.com/s/7wmBsJgPnOtPXcYaoQd1qA
-
-基于LLVM的源码级依赖分析方案的设计与实现
-
-https://mp.weixin.qq.com/s/vOJPxzH_1SUyXzNeE85zHQ
-
-编译器入门：没有siri的那些年，我们如何实现人机对话？
-
-https://zhuanlan.zhihu.com/p/66793637
-
-A Tour to LLVM IR（上）
-
-https://zhuanlan.zhihu.com/p/66909226
-
-A Tour to LLVM IR（下）
-
-https://mp.weixin.qq.com/s/4FJzxPyCmakjIU-9xlQmJQ
-
-阁下可知文言编程之精妙？CMU本科生开源文言文编程语言，数天2K星
-
-## Android编译
-
-![](/images/img3/ART.png)
-
-AOT：Ahead Of Time，指在运行前编译，比如普通的静态编译。
-
-JIT：Just In Time，指在运行时编译，边运行边编译，比如java虚拟机在运行时就用到JIT技术。
-
-https://mp.weixin.qq.com/s/vnaI8FwB4Ot46weAgq18Eg
-
-华为新贵！方舟编译器的荣光和使命
-
-https://www.zhihu.com/question/344231876/answer/812481811
-
-周志德（Fred Chow)
-
-----
-
-为了在Android中支持新的Java7-8-9的新特性，Google又开发了D8和R8。
-
-https://juejin.im/post/5d70fb2ce51d4557ca7fddaa
-
-Android CPU, Compilers, D8 & R8
+>秦大河，1947年生，地理学家，中国科学院院士，第三世界科学院院士。曾任中国气象局局长、中国科学技术协会副主席等

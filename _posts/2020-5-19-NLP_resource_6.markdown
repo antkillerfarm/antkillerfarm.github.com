@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NLP参考资源（六）
+title:  NLP参考资源（六）, 编译原理
 category: resource 
 ---
 
@@ -299,6 +299,68 @@ Dgraph原理篇
 https://mp.weixin.qq.com/s/5nBS0FiOynhGS6mY2dZ1ng
 
 分布式图数据库在贝壳的应用实践
+
+# 编译原理
+
+https://zhuanlan.zhihu.com/frozengene
+
+一个编译器方面的专栏
+
+http://frozengene.github.io/
+
+一个LLVM方面的blog
+
+https://zhuanlan.zhihu.com/c_1250484713606819840
+
+一个LLVM方面的专栏
+
+https://zhuanlan.zhihu.com/p/28637279
+
+使用LLVM+PLY实现一个C语言子集的玩具编译器
+
+https://mp.weixin.qq.com/s/7wmBsJgPnOtPXcYaoQd1qA
+
+基于LLVM的源码级依赖分析方案的设计与实现
+
+https://mp.weixin.qq.com/s/vOJPxzH_1SUyXzNeE85zHQ
+
+编译器入门：没有siri的那些年，我们如何实现人机对话？
+
+https://zhuanlan.zhihu.com/p/66793637
+
+A Tour to LLVM IR（上）
+
+https://zhuanlan.zhihu.com/p/66909226
+
+A Tour to LLVM IR（下）
+
+https://mp.weixin.qq.com/s/4FJzxPyCmakjIU-9xlQmJQ
+
+阁下可知文言编程之精妙？CMU本科生开源文言文编程语言，数天2K星
+
+## Android编译
+
+![](/images/img3/ART.png)
+
+AOT：Ahead Of Time，指在运行前编译，比如普通的静态编译。
+
+JIT：Just In Time，指在运行时编译，边运行边编译，比如java虚拟机在运行时就用到JIT技术。
+
+https://mp.weixin.qq.com/s/vnaI8FwB4Ot46weAgq18Eg
+
+华为新贵！方舟编译器的荣光和使命
+
+https://www.zhihu.com/question/344231876/answer/812481811
+
+周志德（Fred Chow)
+
+----
+
+为了在Android中支持新的Java7-8-9的新特性，Google又开发了D8和R8。
+
+https://juejin.im/post/5d70fb2ce51d4557ca7fddaa
+
+Android CPU, Compilers, D8 & R8
 
 # 世说新语+
 

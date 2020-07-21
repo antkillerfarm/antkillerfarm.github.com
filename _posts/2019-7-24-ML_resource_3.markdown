@@ -276,6 +276,10 @@ https://mp.weixin.qq.com/s/gSW5lxCoo9JkH1JRp6hfzA
 
 30年前未曾发行的任天堂红白机游戏，被这个团队从21张软盘中重新恢复了，还是3D的
 
+https://mp.weixin.qq.com/s/cfBT0wsqzZRwedMO7Qz_vA
+
+“任性”的C语言之父：因拒付论文装订费错失博士学位，论文52年后重见天日（Dennis Ritchie）
+
 # 化学
 
 ![](/images/img2/SI.png)

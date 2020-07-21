@@ -72,6 +72,10 @@ Non-Maximum Suppression顾名思义就是抑制不是极大值的元素，搜索
 
 参考：
 
+https://mp.weixin.qq.com/s/NPoB4_kpTIYAO34qZFRbQA
+
+对象检测网络中的NMS算法详解
+
 http://mp.weixin.qq.com/s/Cg9tHG1YgDCdI3NPYl5-vQ
 
 如何用Soft-NMS实现目标检测并提升准确率
@@ -88,10 +92,6 @@ https://mp.weixin.qq.com/s/ro0lG3uMUPYNZA9rM3I_YQ
 
 目标检测算法中检测框合并策略技术综述
 
-https://mp.weixin.qq.com/s/NPoB4_kpTIYAO34qZFRbQA
-
-对象检测网络中的NMS算法详解
-
 https://mp.weixin.qq.com/s/GdNcQqDeVQ1vtIJrAIYpWw
 
 目标检测之非极大值抑制(NMS)各种变体
@@ -103,6 +103,10 @@ https://zhuanlan.zhihu.com/p/151914931
 https://zhuanlan.zhihu.com/p/157900024
 
 一文打尽目标检测NMS——效率提升篇
+
+https://zhuanlan.zhihu.com/p/151398233
+
+一文了解目标检测边界框概率分布
 
 ## NMS的快速算法
 

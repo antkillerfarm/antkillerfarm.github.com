@@ -367,3 +367,7 @@ http://www.cvpapers.com/datasets.html
 https://mp.weixin.qq.com/s/SKZhcd3QpoVMubTkD14iWw
 
 Fashion-MNIST：替代MNIST手写数字集的图像数据集
+
+https://mp.weixin.qq.com/s/77VZ8HPQXWAPvmpZA97kmg
+
+CV预训练模型全集

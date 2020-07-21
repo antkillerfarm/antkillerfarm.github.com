@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/qZOCUuLt98fTpstGpC1ilg
 
 Variational DropPath：提高3D CNN时空融合分析效率的秘诀
 
+https://mp.weixin.qq.com/s/BNYUkocbKzqTjTNbGuNBzg
+
+基于3DMM的三维人脸重建技术总结
+
 # NetVLAD
 
 NetVLAD算的上是CNN+传统算子的一个范例。
