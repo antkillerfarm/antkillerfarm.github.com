@@ -339,3 +339,27 @@ https://mp.weixin.qq.com/s/H6OTkpdIgSdugDrEMBLybw
 https://mp.weixin.qq.com/s/KuZ-mZKt7bTWhzygK1lmSg
 
 加速目标检测
+
+# 两弹一星++
+
+步履式挖掘机1965年由列支敦士登的“kaiser（凯撒）”公司发明。这种挖掘机由于有四个可以独立移动的支腿，因此可以在山地、沼泽等普通挖掘机不能使用的地区使用。
+
+2001年，徐工集团决定接下这个任务。2004年初整车开始了高原测试，两辆原型车被拉到了工程兵某部位于西藏羊八井附近山区中的工地，当地海拔接近5000米。结果测试完车没下来，直接就被驻军扣下了。后来好说歹说还了一台，剩下的一台我15年去徐工的时候，据说依然活跃在中印边境上，十多年没出过大故障。
+
+中国：building，construction completed，new construction options，unit ready.
+
+印度：Insufficient fund，cannot deploy here，building，low power，unit lost.
+
+https://www.zhihu.com/question/404380682
+
+如何看待徐工机械的全地形挖掘机?
+
+----
+
+1、凡是中国和外国都掌握的，都是没什么难度的技术；
+
+2、凡是中国掌握而外国没掌握的，都是没用的技术；
+
+3、凡是外国掌握而中国没掌握的，都是屌炸天的技术。
+
+有这三句话，喷遍知乎不成问题。

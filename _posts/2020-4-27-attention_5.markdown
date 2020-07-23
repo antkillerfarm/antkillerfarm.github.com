@@ -62,6 +62,10 @@ https://mp.weixin.qq.com/s/1ZqLWCeyUeb8rsuwTJeZQw
 
 如何修剪BERT达到加速目的？理论与实现
 
+https://mp.weixin.qq.com/s/I_MbkbpyQWKCA8QQu5355A
+
+MobileBERT：一个在资源有限设备上使用的BERT模型
+
 # BERT进阶
 
 ## AR vs AE
