@@ -336,6 +336,10 @@ https://mp.weixin.qq.com/s/V6ldPntqboIMIefQQtj4mw
 
 CondInst：沈春华团队新作，将条件卷积引入实例分割
 
+https://mp.weixin.qq.com/s/xk8OdEWNuydxEtyQNOgCaQ
+
+语义分割的落地应用-故障检测与异常检测
+
 # AutoDL+
 
 https://mp.weixin.qq.com/s/Ho6XDRYmOBs9TqLMq7aPAg

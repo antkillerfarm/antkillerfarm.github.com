@@ -255,6 +255,10 @@ https://mp.weixin.qq.com/s/Osw6IAK5G6v11nyhq5u-HA
 
 Elasticsearch遇上BERT：使用Elasticsearch和BERT构建搜索引擎
 
+https://mp.weixin.qq.com/s/MDT5-I5kza1yJdA_JWpPkA
+
+ElasticSearch介绍及使用方法
+
 # Flume & Kafka
 
 Flume和Kafka都是日志系统。

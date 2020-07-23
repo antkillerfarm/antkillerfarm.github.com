@@ -336,6 +336,6 @@ https://mp.weixin.qq.com/s/_85oWK2plv2QOX5Qfg_-ZA
 
 # 目标检测进阶++
 
-https://mp.weixin.qq.com/s/xk8OdEWNuydxEtyQNOgCaQ
+https://mp.weixin.qq.com/s/GL_q4VLCgbjTZq_zpTLq0w
 
-语义分割的落地应用-故障检测与异常检测
+Label Assign：提升目标检测上限
