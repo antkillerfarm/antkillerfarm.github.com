@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  摩尔定律的瓶颈, CPU
+title:  摩尔定律的瓶颈, CPU(一)
 category: resource 
 ---
 

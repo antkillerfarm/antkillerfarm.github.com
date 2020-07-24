@@ -39,6 +39,16 @@ https://blog.csdn.net/machh/article/details/52109231
 
 ----
 
+https://www.cnblogs.com/vamei
+
+也是一个去世的博士：
+
+https://www.sohu.com/a/299731374_463994
+
+痛心！31岁程序员因抑郁症突然离世...
+
+----
+
 http://www.uedtech.com/
 
 UED方面的教程网站。用户体验设计（User Experience Design）。
@@ -150,10 +160,6 @@ http://www.hello2025.com/
 http://intellif.com/
 
 云天励飞——一家人脸识别的公司
-
-http://blog.shengbin.me/posts/multi-user-video-conference-based-on-webrtc
-
-基于WebRTC的多人视频会议
 
 http://chongzhuang.windowszj.com/
 

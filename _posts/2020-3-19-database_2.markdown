@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Mysql, 安全
+title:  Mysql, WebRTC
 category: technology 
 ---
 
@@ -214,200 +214,112 @@ https://mp.weixin.qq.com/s/oV5F_K2mmE_kK77uEZSjLg
 
 字节跳动分布式表格存储系统的演进
 
-# 安全
+# WebRTC
 
-RSA是1977年由Ron Rivest、Adi Shamir和Leonard Adleman一起提出的。
+Gobal IP Solutions，简称GIPS。这是一家1990年成立于瑞典斯德哥尔摩的VoIP软件开发商，提供了可以说是世界上最好的语音引擎。
 
-https://mp.weixin.qq.com/s/A7JCTffgFQHljLeQYMNoFg
+Skype、腾讯 QQ、WebEx、Vidyo 等都使用了它的音频处理引擎，包含了受专利保护的回声消除算法，适应网络抖动和丢包的低延迟算法，以及先进的音频编解码器。
 
-理解RSA算法
+Google在2011年收购了GIPS，并将其源代码开源，加上在2010年收购的On2获取到的VPx系列视频编解码器，WebRTC开源项目应运而生，即GIPS音视频引擎+替换掉H.264的VPx视频编解码器。
 
-https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
+https://mp.weixin.qq.com/s/DhQ0kks7SnyAROYEH_1BQg
 
-前端安全系列之一：如何防止XSS攻击？
+进击的WebRTC：我们为什么需要它？
 
-http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
+http://blog.shengbin.me/posts/multi-user-video-conference-based-on-webrtc
 
-理解OAuth 2.0
+基于WebRTC的多人视频会议
 
-https://my.oschina.net/u/4231722/blog/3154805
+# Graph NN++
 
-IM的扫码登录功能如何实现？一文搞懂主流的扫码登录技术原理
+https://zhuanlan.zhihu.com/p/133739758
 
-https://mp.weixin.qq.com/s/QsKceFcxELbUDSbehs8QpQ
+全面理解PinSage（工业落地：图神经网络+推荐系统）
 
-解读https的正确姿势
+https://mp.weixin.qq.com/s/VctNZsALrbDQDW3_zhGJsw
 
-https://www.cnblogs.com/linianhui/category/929878.html
+在NLP中应用GCN的几种构图方法整理
 
-一个认证授权方面的专栏
+https://mp.weixin.qq.com/s/TnS4-seRxAs45A6SDSoACg
 
-https://mp.weixin.qq.com/s/OLg_wocXJz7VGDabTtxdWQ
+图神经网络的预训练策略
 
-Web登录很简单？开玩笑！
+https://mp.weixin.qq.com/s/Pgz8cnDpX2mgexASnRzfhA
 
-https://mp.weixin.qq.com/s/agS2-wu6HGO__QfbIt7Esw
+浅谈图神经网络的局限性
 
-数字签名是什么？
+https://mp.weixin.qq.com/s/hQ-Fo_aizkcTxvzW0FSIEw
 
-https://mp.weixin.qq.com/s/YNMw8u7O6u7Bc4-mnrwRXg
+VGAE：利用变分自编码器完成图重构
 
-老听别人说加密算法，现在给你个机会深入了解下
+https://zhuanlan.zhihu.com/p/137223381
 
-http://www.xfyun.cn/share/?p=2626
+推荐系统的图方法
 
-开发者常犯的十大加密错误
+https://mp.weixin.qq.com/s/hFtFjR4EIVN_9g93YjtuoQ
 
-https://mp.weixin.qq.com/s/nWoo-Pr50341WJNwtSZq1w
+GCMC：GNN在推荐系统中的应用
 
-工程师的灵魂拷问：你的密钥安全吗？
+https://mp.weixin.qq.com/s/u8XAbOautjZTA7ZhdSBaDA
 
-https://mp.weixin.qq.com/s/z5zMETSMUGoTiZYMooKZ-g
+经典重温：图表示学习经典算法node2vec
 
-内核空间镜像攻击揭秘：ARM硬件特性，竟能开启安卓8终端的上帝模式？
+https://mp.weixin.qq.com/s/soH6jX7_fjq0iBBH-5bMsA
 
-https://mp.weixin.qq.com/s/f6SY7Me9Ls3AZNxK0rHz7g
+Node2Vec论文+代码笔记
 
-密码加密时的加盐（salt）是什么
+https://mp.weixin.qq.com/s/zxFgW6ofimYQ9wlChTK8cw
 
-https://mp.weixin.qq.com/s/isNd6ByZKdMjFtFL8LOVGA
+Recommender System with GNN
 
-什么？用5G需要换SIM卡？！
+https://mp.weixin.qq.com/s/_vbcLre5HIrOGbAjTzLFjA
 
-# 硬盘
+动态网络表征学习在推荐领域的创新与实践
 
-https://zhuanlan.zhihu.com/p/34858149
+https://zhuanlan.zhihu.com/p/139359188
 
-128G的固态硬盘为什么有的标120G，有的标100G？固态硬盘容量背后的秘密
+关于GCN，我有三种写法
 
-https://zhuanlan.zhihu.com/p/38847308
+https://mp.weixin.qq.com/s/QF9-Pz2X4qToObGWwViFBQ
 
-为什么硬盘转速是5400或者7200这么奇怪的数字？7200转的硬盘一定比5400快吗？
+EGES：阿里在图嵌入领域中的探索
 
-https://www.zhihu.com/question/288500826/answer/470917953
+https://mp.weixin.qq.com/s/WnF-fqQyr2VNqr75Jzoqsw
 
-Windows等操作系统是如何做到复制几G文件不出错的？
+Diff Pool：网络图的层次化表达
 
-https://zhuanlan.zhihu.com/p/53547723
+https://mp.weixin.qq.com/s/8kCKqM3yuohc4xOoFd8hGg
 
-一篇文章告诉你SLC、MLC、TLC和QLC究竟有啥区别?
+Heterogeneous Graph Neural Network
 
-https://zhuanlan.zhihu.com/p/92712620
+https://mp.weixin.qq.com/s/HUjq4TopxWLx3QTh5ZxfIQ
 
-SLC、MLC、TLC、QLC究竟有什么不同
+最新《图卷积神经网络》中文综述论文，26页pdf
 
-https://zhuanlan.zhihu.com/p/71267390
+https://mp.weixin.qq.com/s/RuCxY92qlhWnbZVYDXY_BQ
 
-固态硬盘和u盘的区别
+Mila唐建博士最新《图表示学习:算法与应用》2020研究进展，附59页ppt
 
-https://mp.weixin.qq.com/s/7athL-OWrFSxMwxqvR73TA
+https://mp.weixin.qq.com/s/2PY1baildUoZaetYlsukIQ
 
-为了让你的硬盘资源能完好地传给曾曾曾孙，科学家想到了这些办法
+图卷积网络(GCN)的谱分析
 
-----
+https://mp.weixin.qq.com/s/F9zt7eyHxTX7Gp0zpvnfcg
 
-早期，磁带和硬盘驱动器的面密度相似。但由于的市场规模和硬盘销售收入的增加，为更大规模的研发工作提供了资金，这使得他们的制造商能够更积极地扩大存储密度。因此，大容量硬盘驱动器的当前面密度约为最新磁带驱动器的100倍。
+一文直击Graph Embedding图表示学习的原理及应用
 
-相比之下，磁带存储设备目前的区域密度远低于超顺磁极限。因此，磁带的摩尔定律可以持续十年或更长时间，而不会遇到基础物理学方面的障碍。
+https://mp.weixin.qq.com/s/qgZwi3ieMqPrg3t5lyjaZw
 
-参考：
+元图(Meta-Graph)：元学习小样本连接预测
 
-https://mp.weixin.qq.com/s/Fzu5YmWYxEohDJjmcGGjhQ
+https://mp.weixin.qq.com/s/17ozbpr2IIoq36VpBl3Crw
 
-为什么说，数据存储的未来属于磁带
+基于知识图谱和图卷积神经网络的应用和开发
 
-# 内存
+https://mp.weixin.qq.com/s/mbr3u9SiYVPysBT9xuX0vg
 
-https://mp.weixin.qq.com/s/HOhBNZfOf5xQIFLYQ5ntCw
+Hyperbolic Graph Convolutional Neural Networks
 
-内存的故事
+https://www.zhihu.com/question/366088445
 
-https://mp.weixin.qq.com/s/qhR0St3CLWEYqV_kl_oXAw
-
-Rambus之战
-
-https://mp.weixin.qq.com/s/gh9cL0BPzCQ2JFOoXdtqyg
-
-内存的技术发展
-
-https://mp.weixin.qq.com/s/kHPTZlDtjqtr0Vi-5OWycQ
-
-金士顿的传说
-
-https://zhuanlan.zhihu.com/p/57780996
-
-内存延迟：因与果
-
-https://mp.weixin.qq.com/s/XcC18tulYdnwqlusg2QrxA
-
-嵌入式内存STT-MRAM趋势分析
-
-https://zhuanlan.zhihu.com/p/63494668
-
-显存为什么不能当内存使？内存、Cache和Cache一致性
-
-https://zhuanlan.zhihu.com/p/62234511
-
-DDR3 vs DDR4?为什么说内存是个很傻的设备？DDR5在哪里？
-
-https://zhuanlan.zhihu.com/p/40601422
-
-双通道、四通道内存对游戏重要吗？
-
-https://mp.weixin.qq.com/s/ziJ8OFiLA1it3sQvycN7Mg
-
-翻越缓存的三座大山
-
-# CPU
-
-https://mp.weixin.qq.com/s/LreWWlXAQL-dqQBCk93soQ
-
-解读两大精简指令集：RISC-V和MIPS
-
-https://mp.weixin.qq.com/s/5uie8Ci5dK_wy54Z70Gklg
-
-RISC-V精简到何种程度？能省的都省了！
-
-https://mp.weixin.qq.com/s/26se041cc9aBRw16kvPPjA
-
-芯片制造新模式--像搭积木一样造芯片
-
-https://mp.weixin.qq.com/s/570O2BloWjy3q0_m_mfiZg
-
-CPU缓存一致性协议
-
-https://mp.weixin.qq.com/s/9y5HFTQr2QP12iR858BFtg
-
-图解intel芯片生产全过程！
-
-https://mp.weixin.qq.com/s/QwE_VTEUS9kGDDrHlzPYmg
-
-硅片为什么不是方的？
-
-https://zhuanlan.zhihu.com/p/32378843
-
-ARM攒机指南-汽车篇
-
-https://mp.weixin.qq.com/s/Hq9hzkyfGcCQa_FfzSDoRg
-
-5nm工艺节点以后，半导体器件的发展方向
-
-https://zhuanlan.zhihu.com/p/66263349
-
-为什么内存和闪存制程比CPU低？它们现在都在什么节点？
-
-https://mp.weixin.qq.com/s/lz6EoLiLtPtWFMG1FJCuQw
-
-化合物半导体的机遇
-
-https://mp.weixin.qq.com/s/QF9Nsh_YyX9LZQ_D-4hP-A
-
-芯片是怎么制造的？央视最强科普！
-
-https://mp.weixin.qq.com/s/bKgYpZdXxAexlEtmPQ9oGw
-
-科普：芯片是怎么从沙子中一步步炼成的！
-
-https://mp.weixin.qq.com/s/tTtySk3u6m2BGUkDto5Ojw
-
-可重构芯片的方法学原理
+请问全连接的图卷积网络(GCN)和self-attention这些机制有什么区别联系吗？

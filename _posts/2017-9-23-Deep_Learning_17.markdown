@@ -4,6 +4,40 @@ title:  深度学习（十七）——自动求导, 无监督/半监督/自监�
 category: DL 
 ---
 
+# 人脸检测/识别
+
+## MTCNN（续）
+
+参考：
+
+http://blog.csdn.net/qq_14845119/article/details/52680940
+
+MTCNN（Multi-task convolutional neural networks）人脸对齐
+
+http://blog.csdn.net/shuzfan/article/details/52668935
+
+人脸检测——MTCNN
+
+https://mp.weixin.qq.com/s/IrZEQ69RNUdcs0Fl8fHmmQ
+
+如何应用MTCNN和FaceNet模型实现人脸检测及识别
+
+https://mp.weixin.qq.com/s/NfqFj5iCIkbRD34Eu2Lb5g
+
+MTCNN实时人脸检测网络详解与代码演示
+
+## 人脸识别
+
+人脸检测是从一张图片中，识别出人脸，这和通常的目标检测没有太大的差别。**而人脸识别，则是精确到具体的人。**
+
+人脸识别通常的做法是：
+
+1.使用人脸检测，得到人脸区域的图像。
+
+2.提取人脸特征。一般采用CNN+FC+loss的结构。其中，CNN+FC用于提取特征，而loss仅用于训练阶段。在推理阶段，我们使用CNN+FC得到人脸的特征向量即可。
+
+3.特征的对比。比较两个特征向量的相似度（可以使用LMS或者cos相似度）。超过阈值，即认为是同一张脸。
+
 # 自动求导
 
 DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模块了。针对新运算层出不穷的现状，各大DL框架基本都实现了自动求导的功能。
@@ -320,51 +354,3 @@ https://mp.weixin.qq.com/s/ys9iiiBL3iL2SJL247AMlA
 https://mp.weixin.qq.com/s/V6xiG931OUJyVx15QFb_mQ
 
 弱监督视觉理解笔记
-
-https://mp.weixin.qq.com/s/HopNSLS75TgE28LfY02qog
-
-不同视角构造cycle-consistency，降低视频标注成本
-
-https://mp.weixin.qq.com/s/XiLBHkraT8lJcOu2faqK5g
-
-关于弱监督学习，这可能是目前最详尽的一篇科普文
-
-https://mp.weixin.qq.com/s/VnOfYuHQQf_q92VHVE3mrQ
-
-谷歌新发布的半监督学习算法降低4倍错误率
-
-https://mp.weixin.qq.com/s/rOj_J1zNYf-Vj9tqLG5KOQ
-
-超强半监督学习MixMatch
-
-https://zhuanlan.zhihu.com/p/66389797
-
-虚拟对抗训练（VAT）：一种新颖的半监督学习正则化方法
-
-https://mp.weixin.qq.com/s/DAtHXSfCpqCAZ0iVsfWkDA
-
-半监督学习理论及其研究进展概述
-
-https://mp.weixin.qq.com/s/eHzNIO-RSY-uf-K-OwtWfw
-
-集多种半监督学习范式为一体，谷歌新研究提出新型半监督方法MixMatch
-
-https://mp.weixin.qq.com/s/3el7bPAeJrTQGfWW29ewuA
-
-新技术“红”不过十年，半监督学习为什么是个例外？
-
-https://mp.weixin.qq.com/s/alnji5kgTxc34O7k78uGiA
-
-无监督学习中的目标检测
-
-https://mp.weixin.qq.com/s/8FtDhpgc-1j3TSL771N-Ng
-
-无标注数据是鸡肋还是宝藏？阿里工程师这样用它
-
-https://mp.weixin.qq.com/s/LdfLd2cZCdpvNYLKHUNwuA
-
-简述无监督图像分类发展现状
-
-https://mp.weixin.qq.com/s/qaLQK3uzaeyp68AbL0aOOQ
-
-怎么在视频标注上省钱？这里有一个面向视频推荐的多视图主动学习

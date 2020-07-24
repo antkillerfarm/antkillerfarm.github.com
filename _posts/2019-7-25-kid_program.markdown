@@ -354,3 +354,11 @@ https://mp.weixin.qq.com/s/JBlzMIhMa7TB5tHGSRhVkQ
 https://mp.weixin.qq.com/s/xGBAGBGsxBDuKkSxXOZRjQ
 
 在Rust代码中编写Python是种怎样的体验？
+
+# 世说新语++
+
+## 2020.7（续）
+
+https://mp.weixin.qq.com/s/fbJQs87R9c8_j_B5-zTsVg
+
+古代没有冰箱，夏天冰块是怎么来的？

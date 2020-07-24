@@ -6,7 +6,27 @@ category: AI
 
 # Machine Learning之Python篇
 
-## Pyecharts（续）
+## ImageAI
+
+ImageAI是一个CV方面的库，集成了大量的DL模型，其目标是使用数十行代码完成一个CV任务。
+
+代码：
+
+https://github.com/OlafenwaMoses/ImageAI
+
+## Pyecharts
+
+py是一个用于生成Echarts图表的类库。Echarts是百度开源的一个数据可视化JS库。
+
+官网：
+
+http://pyecharts.org/
+
+参考：
+
+https://mp.weixin.qq.com/s/3T594c4DzuRmPW5A4zu8Dg
+
+Pyecharts：极其强大的Python数据可视化模块
 
 https://mp.weixin.qq.com/s/20cxuC_tAVmofA7lvquEMQ
 
@@ -423,15 +443,3 @@ https://mp.weixin.qq.com/s/4PyXz2p00Lf783bEUg_N2Q
 https://mp.weixin.qq.com/s/E0INxsn_p-MBNA-wg-2nbQs
 
 无监督学习—聚类、层次聚类、t-SNE，DBSCAN
-
-https://mp.weixin.qq.com/s/EL1lST59dVibr6vIbqkdzw
-
-如何用200行Python代码换张脸
-
-https://mp.weixin.qq.com/s/440osIoULBRDOHq7Bk8awA
-
-一文带你了解Python集合与基本的集合运算
-
-https://mp.weixin.qq.com/s/tJwgNXKVwoJby-WkeMeBqQ
-
-40行Python代码实现“旅行者困境“演化过程

@@ -6,6 +6,54 @@ category: DL
 
 # 无监督/半监督/自监督深度学习（续）
 
+https://mp.weixin.qq.com/s/HopNSLS75TgE28LfY02qog
+
+不同视角构造cycle-consistency，降低视频标注成本
+
+https://mp.weixin.qq.com/s/XiLBHkraT8lJcOu2faqK5g
+
+关于弱监督学习，这可能是目前最详尽的一篇科普文
+
+https://mp.weixin.qq.com/s/VnOfYuHQQf_q92VHVE3mrQ
+
+谷歌新发布的半监督学习算法降低4倍错误率
+
+https://mp.weixin.qq.com/s/rOj_J1zNYf-Vj9tqLG5KOQ
+
+超强半监督学习MixMatch
+
+https://zhuanlan.zhihu.com/p/66389797
+
+虚拟对抗训练（VAT）：一种新颖的半监督学习正则化方法
+
+https://mp.weixin.qq.com/s/DAtHXSfCpqCAZ0iVsfWkDA
+
+半监督学习理论及其研究进展概述
+
+https://mp.weixin.qq.com/s/eHzNIO-RSY-uf-K-OwtWfw
+
+集多种半监督学习范式为一体，谷歌新研究提出新型半监督方法MixMatch
+
+https://mp.weixin.qq.com/s/3el7bPAeJrTQGfWW29ewuA
+
+新技术“红”不过十年，半监督学习为什么是个例外？
+
+https://mp.weixin.qq.com/s/alnji5kgTxc34O7k78uGiA
+
+无监督学习中的目标检测
+
+https://mp.weixin.qq.com/s/8FtDhpgc-1j3TSL771N-Ng
+
+无标注数据是鸡肋还是宝藏？阿里工程师这样用它
+
+https://mp.weixin.qq.com/s/LdfLd2cZCdpvNYLKHUNwuA
+
+简述无监督图像分类发展现状
+
+https://mp.weixin.qq.com/s/qaLQK3uzaeyp68AbL0aOOQ
+
+怎么在视频标注上省钱？这里有一个面向视频推荐的多视图主动学习
+
 https://mp.weixin.qq.com/s/-cXOUw9zJteVUkbpRMIWtQ
 
 何恺明一作，刷新7项检测分割任务，无监督预训练完胜有监督
@@ -171,100 +219,6 @@ https://mp.weixin.qq.com/s/4UBehc0eikVqcsFP7xL_Zw
 https://mp.weixin.qq.com/s/8lRzE5nGCNfD6sQ0lDRDyg
 
 信息检索中的神经匹配和重要性学习，163页pdf
-
-# Graph NN++
-
-https://zhuanlan.zhihu.com/p/133739758
-
-全面理解PinSage（工业落地：图神经网络+推荐系统）
-
-https://mp.weixin.qq.com/s/VctNZsALrbDQDW3_zhGJsw
-
-在NLP中应用GCN的几种构图方法整理
-
-https://mp.weixin.qq.com/s/TnS4-seRxAs45A6SDSoACg
-
-图神经网络的预训练策略
-
-https://mp.weixin.qq.com/s/Pgz8cnDpX2mgexASnRzfhA
-
-浅谈图神经网络的局限性
-
-https://mp.weixin.qq.com/s/hQ-Fo_aizkcTxvzW0FSIEw
-
-VGAE：利用变分自编码器完成图重构
-
-https://zhuanlan.zhihu.com/p/137223381
-
-推荐系统的图方法
-
-https://mp.weixin.qq.com/s/hFtFjR4EIVN_9g93YjtuoQ
-
-GCMC：GNN在推荐系统中的应用
-
-https://mp.weixin.qq.com/s/u8XAbOautjZTA7ZhdSBaDA
-
-经典重温：图表示学习经典算法node2vec
-
-https://mp.weixin.qq.com/s/soH6jX7_fjq0iBBH-5bMsA
-
-Node2Vec论文+代码笔记
-
-https://mp.weixin.qq.com/s/zxFgW6ofimYQ9wlChTK8cw
-
-Recommender System with GNN
-
-https://mp.weixin.qq.com/s/_vbcLre5HIrOGbAjTzLFjA
-
-动态网络表征学习在推荐领域的创新与实践
-
-https://zhuanlan.zhihu.com/p/139359188
-
-关于GCN，我有三种写法
-
-https://mp.weixin.qq.com/s/QF9-Pz2X4qToObGWwViFBQ
-
-EGES：阿里在图嵌入领域中的探索
-
-https://mp.weixin.qq.com/s/WnF-fqQyr2VNqr75Jzoqsw
-
-Diff Pool：网络图的层次化表达
-
-https://mp.weixin.qq.com/s/8kCKqM3yuohc4xOoFd8hGg
-
-Heterogeneous Graph Neural Network
-
-https://mp.weixin.qq.com/s/HUjq4TopxWLx3QTh5ZxfIQ
-
-最新《图卷积神经网络》中文综述论文，26页pdf
-
-https://mp.weixin.qq.com/s/RuCxY92qlhWnbZVYDXY_BQ
-
-Mila唐建博士最新《图表示学习:算法与应用》2020研究进展，附59页ppt
-
-https://mp.weixin.qq.com/s/2PY1baildUoZaetYlsukIQ
-
-图卷积网络(GCN)的谱分析
-
-https://mp.weixin.qq.com/s/F9zt7eyHxTX7Gp0zpvnfcg
-
-一文直击Graph Embedding图表示学习的原理及应用
-
-https://mp.weixin.qq.com/s/qgZwi3ieMqPrg3t5lyjaZw
-
-元图(Meta-Graph)：元学习小样本连接预测
-
-https://mp.weixin.qq.com/s/17ozbpr2IIoq36VpBl3Crw
-
-基于知识图谱和图卷积神经网络的应用和开发
-
-https://mp.weixin.qq.com/s/mbr3u9SiYVPysBT9xuX0vg
-
-Hyperbolic Graph Convolutional Neural Networks
-
-https://www.zhihu.com/question/366088445
-
-请问全连接的图卷积网络(GCN)和self-attention这些机制有什么区别联系吗？
 
 # 语义分割进阶+
 

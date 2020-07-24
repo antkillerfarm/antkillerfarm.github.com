@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  移动端推理框架, Kubernetes, Dubbo, Arm ML, DRL实战, GPU通信技术
+title:  移动端推理框架, DL Backend, GPU通信技术, Kubernetes, DRL实战
 category: AI 
 ---
 
@@ -88,9 +88,103 @@ https://mp.weixin.qq.com/s/EcwmGKpCfVy22BWTB0Ro2g
 
 淘宝开源深度学习推理引擎MNN，移动AI的挑战与应对全面解读
 
-## ONNX Runtime
+# DL Backend
 
-ONNX Runtime是MS的作品。
+DL Backend是框架和硬件驱动之间的一层软件，用于向上提供AI硬件加速的能力。在AI芯片层出不穷的当下，相应的DL Backend也同样丰富。
+
+## Arm ML
+
+Arm ML是Arm的作品。它包括了两部分：Arm NN和Arm Compute Library。
+
+官网：
+
+https://mlplatform.org/
+
+### Arm NN
+
+官网：
+
+https://developer.arm.com/ip-products/processors/machine-learning/arm-nn
+
+代码：
+
+https://github.com/Arm-software/armnn
+
+### Arm Compute Library
+
+官网：
+
+https://developer.arm.com/ip-products/processors/machine-learning/compute-library
+
+代码：
+
+https://github.com/ARM-software/ComputeLibrary
+
+### CMSIS NN
+
+CMSIS NN是ARM提供的一个针对Cortex-M CPU的NN计算库。
+
+论文：
+
+《CMSIS-NN: Efficient Neural Network Kernels for Arm Cortex-M CPUs》
+
+官网：
+
+http://www.keil.com/pack/doc/CMSIS_Dev/NN/html/index.html
+
+代码：
+
+https://github.com/ARM-software/CMSIS_5
+
+### 概述
+
+![](/images/img3/arm_nn_frameworks.png)
+
+![](/images/img3/arm_ml_platforms.png)
+
+### 其他
+
+https://www.veryarm.com/872.html
+
+armel、armhf和arm64区别选择
+
+## Intel
+
+和ARM类似，Intel的方案包括了高层库nGraph和低层库DNNL。
+
+### nGraph
+
+nGraph是Intel推出的一款能兼容所有框架的深度神经网络（DNN）模型编译器，可用于多种硬件设备（其实主要还是Intel家的硬件）。
+
+官网：
+
+https://ngraph.nervanasys.com/docs/latest/
+
+参考：
+
+https://www.zhihu.com/question/269332944
+
+如何评价英特尔开源的nGraph编译器？
+
+### MKL
+
+Intel Math Kernel Library是一套经过高度优化和广泛线程化的数学例程，专为需要极致性能的科学、工程及金融等领域的应用而设计。
+
+官网：
+
+https://software.intel.com/zh-cn/mkl
+
+针对DNN加速，Intel推出了MKL-DNN库，后改名DNNL。
+
+官网：
+
+https://github.com/intel/mkl-dnn
+
+## MS
+
+MS也是一样：高层库WinML+中层库ONNX Runtime+低层库DirectML。
+
+### ONNX Runtime
 
 官网：
 
@@ -99,6 +193,56 @@ https://microsoft.github.io/onnxruntime/
 代码：
 
 https://github.com/microsoft/onnxruntime
+
+### DirectML
+
+基于DirectX 12提出的加速方案。
+
+# GPU通信技术
+
+## RDMA
+
+RDMA网卡（Remote Direct Memory Access，这是一种硬件的网络技术，它使得计算机访问远程的内存时无需远程机器上CPU的干预）已经可以提供50~100Gbps的网络带宽和微秒级的传输延迟。
+
+目前许多以深度学习为目标应用的GPU机群都部署了这样的网络。
+
+参考：
+
+https://mp.weixin.qq.com/s/_xcE8RUs0m4gwk3kxpe9jA
+
+基于HTM/RDMA的可扩展内存事务处理系统
+
+## NVLink
+
+NVLink技术提供比PCIe 3更高的带宽与更多的链路，并可提升多GPU和多GPU/CPU系统配置的可扩展性。
+
+官网：
+
+https://www.nvidia.cn/data-center/nvlink/
+
+![](/images/img3/nvlink.png)
+
+Tesla V100中以NVLink连接的GPU至GPU和GPU至CPU通信。
+
+![](/images/img3/nvlink_2.png)
+
+在DGX-1V服务器中，混合立体网络拓扑使用NVLink连接8个Tesla V100加速器。每个GPU有6条nvlink通道，总带宽高达300GB/s。
+
+从上图可以看到，即使每个GPU拥有6条nvlink通道，仍然无法做到“全连接”（即任意两个GPU之间存在双向通道）。这就引出了下一个更加疯狂的技术：nvswitch。
+
+![](/images/img3/nvswitch.png)
+
+NVSwitch是首款节点交换架构，可支持单个服务器节点中16个全互联的GPU，并可使全部8个GPU对分别以300GB/s的惊人速度进行同时通信。这16个全互联的GPU还可作为单个大型加速器，拥有0.5 TB统一显存空间和2 PetaFLOPS计算性能。
+
+## 参考
+
+https://www.infoq.cn/article/3D4MsRVS8ZOtGCj7*krT
+
+GPU通信技术初探
+
+https://zhuanlan.zhihu.com/p/67785062
+
+不止显卡！这些硬件因素也影响着你的深度学习模型性能
 
 # Kubernetes
 
@@ -167,90 +311,6 @@ https://developer.aliyun.com/article/754267
 https://mp.weixin.qq.com/s/mr_D_AA0zdux8F_10iRIHg
 
 自动化弹性伸缩如何支持字节跳动百万级核心错峰混部
-
-# Dubbo
-
-Dubbo是一个分布式服务框架，致力于提供高性能和透明化的RPC远程服务调用方案，是阿里巴巴SOA服务化治理方案的核心框架，每天为2,000+个服务提供3,000,000,000+次访问量支持，并被广泛应用于阿里巴巴集团的各成员站点。
-
->阿里巴巴算是国内开源较多的IT企业了。但是早期仅仅满足于开源本身，对于开源项目的维护没有章法。Dubbo就是典型一例，开源之后的数年，没有任何官方升级和维护。社区由于官方的缺位，也没有大的动静。直到2016年，才纳入正轨。
-
-官网：
-
-http://dubbo.io/
-
-官网的用户指南写的不错，非常值得一看。
-
-https://mp.weixin.qq.com/s/bcwIMIir2RHPbQQr8HgTOQ
-
-如何快速开发一个Dubbo应用？
-
-https://mp.weixin.qq.com/s/fnrGjiywiySA8iAZh_cF0Q
-
-阿里巴巴新开源项目Nacos发布第一个版本，助力构建Dubbo生态
-
-https://mp.weixin.qq.com/s/AAcQRHZPvW11jvlbrLfRJA
-
-携程的Dubbo之路
-
-https://mp.weixin.qq.com/s/ZW4tO01gC65kZgOUappL9Q
-
-漫话：什么是RPC
-
-# Arm ML
-
-Arm ML是Arm的作品。它包括了两部分：Arm NN和Arm Compute Library。
-
-官网：
-
-https://mlplatform.org/
-
-## Arm NN
-
-官网：
-
-https://developer.arm.com/ip-products/processors/machine-learning/arm-nn
-
-代码：
-
-https://github.com/Arm-software/armnn
-
-## Arm Compute Library
-
-官网：
-
-https://developer.arm.com/ip-products/processors/machine-learning/compute-library
-
-代码：
-
-https://github.com/ARM-software/ComputeLibrary
-
-## CMSIS NN
-
-CMSIS NN是ARM提供的一个针对Cortex-M CPU的NN计算库。
-
-论文：
-
-《CMSIS-NN: Efficient Neural Network Kernels for Arm Cortex-M CPUs》
-
-官网：
-
-http://www.keil.com/pack/doc/CMSIS_Dev/NN/html/index.html
-
-代码：
-
-https://github.com/ARM-software/CMSIS_5
-
-## 概述
-
-![](/images/img3/arm_nn_frameworks.png)
-
-![](/images/img3/arm_ml_platforms.png)
-
-## 其他
-
-https://www.veryarm.com/872.html
-
-armel、armhf和arm64区别选择
 
 # DRL实战
 
@@ -353,49 +413,3 @@ https://github.com/tensorflow/models/tree/master/research/a3c_blogpost
 https://mp.weixin.qq.com/s/atQHJ5U2pJpSG6PguN7J4Q
 
 如何保持运动小车上的旗杆屹立不倒？TensorFlow利用A3C算法训练智能体玩CartPole游戏
-
-# GPU通信技术
-
-## RDMA
-
-RDMA网卡（Remote Direct Memory Access，这是一种硬件的网络技术，它使得计算机访问远程的内存时无需远程机器上CPU的干预）已经可以提供50~100Gbps的网络带宽和微秒级的传输延迟。
-
-目前许多以深度学习为目标应用的GPU机群都部署了这样的网络。
-
-参考：
-
-https://mp.weixin.qq.com/s/_xcE8RUs0m4gwk3kxpe9jA
-
-基于HTM/RDMA的可扩展内存事务处理系统
-
-## NVLink
-
-NVLink技术提供比PCIe 3更高的带宽与更多的链路，并可提升多GPU和多GPU/CPU系统配置的可扩展性。
-
-官网：
-
-https://www.nvidia.cn/data-center/nvlink/
-
-![](/images/img3/nvlink.png)
-
-Tesla V100中以NVLink连接的GPU至GPU和GPU至CPU通信。
-
-![](/images/img3/nvlink_2.png)
-
-在DGX-1V服务器中，混合立体网络拓扑使用NVLink连接8个Tesla V100加速器。每个GPU有6条nvlink通道，总带宽高达300GB/s。
-
-从上图可以看到，即使每个GPU拥有6条nvlink通道，仍然无法做到“全连接”（即任意两个GPU之间存在双向通道）。这就引出了下一个更加疯狂的技术：nvswitch。
-
-![](/images/img3/nvswitch.png)
-
-NVSwitch是首款节点交换架构，可支持单个服务器节点中16个全互联的GPU，并可使全部8个GPU对分别以300GB/s的惊人速度进行同时通信。这16个全互联的GPU还可作为单个大型加速器，拥有0.5 TB统一显存空间和2 PetaFLOPS计算性能。
-
-## 参考
-
-https://www.infoq.cn/article/3D4MsRVS8ZOtGCj7*krT
-
-GPU通信技术初探
-
-https://zhuanlan.zhihu.com/p/67785062
-
-不止显卡！这些硬件因素也影响着你的深度学习模型性能

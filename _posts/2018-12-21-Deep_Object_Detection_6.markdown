@@ -98,6 +98,10 @@ https://zhuanlan.zhihu.com/p/159209199
 
 YOLO V4—损失函数解析
 
+https://mp.weixin.qq.com/s/KRJ5e50NuACk2ZXi1Rxkxw
+
+YOLOv4中的数据增强
+
 # YOLOv5
 
 YOLOv5由Darknet的另一贡献者Ultralytics创建并维护（2010.5）。这是一家总部位于美国的粒子物理和人工智能初创公司。

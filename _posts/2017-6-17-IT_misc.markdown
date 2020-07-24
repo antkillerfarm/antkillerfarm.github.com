@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  IT杂谈, 电子科技史
-category: technology 
+category: resource 
 ---
 
 # IT杂谈

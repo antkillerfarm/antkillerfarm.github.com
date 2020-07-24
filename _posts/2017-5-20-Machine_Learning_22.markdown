@@ -24,6 +24,10 @@ https://zhuanlan.zhihu.com/p/147691786
 
 大白话Generalized Focal Loss
 
+https://mp.weixin.qq.com/s/is8veFCOPpJDXA2okn7pNA
+
+10分钟理解Focal loss数学原理与Pytorch代码
+
 ## Other Loss
 
 https://mp.weixin.qq.com/s/7Jg-YvS3nvcPJ-zYhK96EA

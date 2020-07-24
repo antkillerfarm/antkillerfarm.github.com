@@ -252,7 +252,7 @@ https://mp.weixin.qq.com/s/J8i0Qsl0q9sYS2iAc-M44w
 
 BN，LN，IN，GN都是什么？不同归一化方法的比较
 
-# L2 Normalization
+## L2 Normalization
 
 L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：
 
@@ -274,22 +274,20 @@ $$
 
 一般来说，求出C的运算被称作L2 Normalization，而求出D的运算被称作L2 Scale Normalization，S被称为Scale。
 
-## 参考
+## Local Response Normalization
 
-https://zhuanlan.zhihu.com/p/69659844
+![](/images/img3/LRN.png)
 
-如何区分并记住常见的几种Normalization算法
+LRN最早出自Alexnet，虽然后来由于效果不佳，已经很少使用了，但它的思路还是可以借鉴的。
 
-https://mp.weixin.qq.com/s/KYGqSOftm8FWDXk_C13iCQ
+LRN分为Inter-Channel LRN和Intra-Channel LRN两种，如果不加说明的话，一般是指前者。
 
-Conditional Batch Normalization详解
+Inter-Channel LRN：
 
-https://mp.weixin.qq.com/s/w_W4NwkCRdbyZbEwMlrFRQ
+$$b_{x,y}^i=a_{x,y}^i / \left( k+\alpha \sum_{j=\max (0,i-n/2)}^{\min(N-1,i+n/2)}(a_{x,y}^j)^2\right)^\beta$$
 
-超越BN和GN！谷歌提出新的归一化层：FRN
+其中，$$a_{x,y}^i$$表示feature map第i通道上坐标为x,y的点的值。因此，Inter-Channel LRN的做法就是：将相邻的几个通道上相同坐标的点的值，代入公式，进行Normalization。
 
-# fine-tuning
+这实际上和1x1的卷积比较像，不同之处在于：1x1的卷积处理所有通道，而Inter-Channel LRN只处理相邻通道。
 
-fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
-
-举个例子，假设今天老板给你一个新的数据集，让你做一下图片分类，这个数据集是关于Flowers的。问题是，数据集中flower的类别很少，数据集中的数据也不多，你发现从零训练开始训练CNN的效果很差，很容易过拟合。怎么办呢，于是你想到了使用Transfer Learning，用别人已经训练好的Imagenet的模型来做。
+上式中的$$k,n,\alpha,\beta$$均为超参数，N为通道数。显然，如果$$(k,\alpha,\beta,n)=(0,1,1,N)$$的话，就是Channel Normalization了。

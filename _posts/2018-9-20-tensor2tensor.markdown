@@ -208,14 +208,6 @@ MMdnn是微软推出的工具集，也是目前功能最强的工具集。
 
 https://github.com/Microsoft/MMdnn
 
-## nGraph
-
-nGraph是Intel推出的一款能兼容所有框架的深度神经网络（DNN）模型编译器，可用于多种硬件设备（其实主要还是Intel家的硬件）。
-
-官网：
-
-https://ngraph.nervanasys.com/docs/latest/
-
 ## 展望
 
 总的来说，DL方面的中间语言/接口/编译器架构都太多了。下图是Google最近（2019.4）推出的MLIR对自家各种优化技术的总结，这里还不包括其他家的相关技术。
@@ -233,10 +225,6 @@ https://zhuanlan.zhihu.com/p/32711259
 https://mp.weixin.qq.com/s/jjT0x99ht8xtfWmzL-0R1A
 
 深度学习的IR“之争”
-
-https://www.zhihu.com/question/269332944
-
-如何评价英特尔开源的nGraph编译器？
 
 # CATIA
 

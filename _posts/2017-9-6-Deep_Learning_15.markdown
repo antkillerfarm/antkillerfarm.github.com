@@ -4,7 +4,41 @@ title:  深度学习（十五）——fine-tuning, Style Transfer（1）
 category: DL 
 ---
 
-# fine-tuning（续）
+# Normalization进阶
+
+## Local Response Normalization（续）
+
+Intra-Channel LRN：
+
+$$b_{x,y}^k=a_{x,y}^k / \left( k+\alpha \sum_{i=\max (0,x-n/2)}^{\min(W,x+n/2)}\sum_{j=\max (0,y-n/2)}^{\min(H,y+n/2)}(a_{i,j}^k)^2\right)^\beta$$
+
+Intra-Channel LRN和平均池化非常类似，它处理的是W,H上的相邻关系。
+
+参考：
+
+https://mc.ai/difference-between-local-response-normalization-and-batch-normalization/
+
+Difference between Local Response Normalization and Batch Normalization
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/69659844
+
+如何区分并记住常见的几种Normalization算法
+
+https://mp.weixin.qq.com/s/KYGqSOftm8FWDXk_C13iCQ
+
+Conditional Batch Normalization详解
+
+https://mp.weixin.qq.com/s/w_W4NwkCRdbyZbEwMlrFRQ
+
+超越BN和GN！谷歌提出新的归一化层：FRN
+
+# fine-tuning
+
+fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。
+
+举个例子，假设今天老板给你一个新的数据集，让你做一下图片分类，这个数据集是关于Flowers的。问题是，数据集中flower的类别很少，数据集中的数据也不多，你发现从零训练开始训练CNN的效果很差，很容易过拟合。怎么办呢，于是你想到了使用Transfer Learning，用别人已经训练好的Imagenet的模型来做。
 
 由于ImageNet数以百万计带标签的训练集数据，使得如CaffeNet之类的预训练的模型具有非常强大的泛化能力，这些预训练的模型的中间层包含非常多一般性的视觉元素，我们只需要对他的后几层进行微调，再应用到我们的数据上，通常就可以得到非常好的结果。最重要的是，**在目标任务上达到很高performance所需要的数据的量相对很少**。
 
@@ -223,15 +257,3 @@ $$J_{content}(C,G)=\frac12||a^{[l](C)}-a^{[l](G)}||^2$$
 接下来，我们定义图片的风格矩阵（style matrix）为：
 
 $$G_{kk'}^{[l]}=\sum_{i=1}^{n_H^{[l]}}\sum_{j=1}^{n_W^{[l]}}a_{ijk}^{[l]}a_{ijk'}^{[l]}$$
-
-风格矩阵$$G_{kk'}^{[l]}$$计算第l层隐藏层不同通道对应的所有激活函数输出和。若两个通道之间相似性高，则对应的$$G_{kk'}^{[l]}$$较大。从数学的角度来说，这里的风格矩阵实际上就是两个tensor的**互相关矩阵**，也就是上面提到的Gram矩阵。
-
-Gram矩阵描述的是全局特征的自相关，如果输出图与风格图的这种自相关相近，那么差不多是我们所理解的”风格”。当然，其实也可以用很多其他的统计信息进行描绘风格。比如有用直方图的, 甚至还可以直接简化成”均值+方差”的。
-
-风格矩阵$$G_{kk'}^{[l][S]}$$表征了风格图片S第l层隐藏层的“风格”。相应地，生成图片G也有$$G_{kk'}^{[l][G]}$$。那么，$$G_{kk'}^{[l][S]}$$与$$G_{kk'}^{[l][G]}$$越相近，则表示G的风格越接近S。这样，我们就可以定义出$$J^{[l]}_{style}(S,G)$$的表达式：
-
-$$J^{[l]}_{style}(S,G)=\frac{1}{(2n_H^{[l]}n_W^{[l]}n_C^{[l]})}\sum_{k=1}^{n_C^{[l]}}\sum_{k'=1}^{n_C^{[l]}}||G_{kk'}^{[l][S]}-G_{kk'}^{[l][G]}||^2$$
-
-为了提取的“风格”更多，也可以使用多层隐藏层，然后相加，表达式为：
-
-$$J_{style}(S,G)=\sum_l\lambda^{[l]}\cdot J^{[l]}_{style}(S,G)$$

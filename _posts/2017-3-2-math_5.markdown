@@ -193,6 +193,10 @@ https://mp.weixin.qq.com/s/a3TlUFwSm9aIptfhy6MnGA
 
 机器学习是如何借鉴物理学思想的？从伊辛模型谈起
 
+https://mp.weixin.qq.com/s/_DxdlaJahSscXe4O2fw1uA
+
+伊辛模型百年小史：最经典的复杂系统模型，却险些被科学界遗忘
+
 https://zhuanlan.zhihu.com/p/39241895
 
 深度学习与物理，有效场论，重整化群

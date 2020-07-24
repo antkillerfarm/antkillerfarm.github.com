@@ -4,7 +4,21 @@ title:  深度学习（十六）——Style Transfer（2）, 人脸检测/识别
 category: DL 
 ---
 
-# Style Transfer（续）
+# Style Transfer
+
+## Cost Function（续）
+
+风格矩阵$$G_{kk'}^{[l]}$$计算第l层隐藏层不同通道对应的所有激活函数输出和。若两个通道之间相似性高，则对应的$$G_{kk'}^{[l]}$$较大。从数学的角度来说，这里的风格矩阵实际上就是两个tensor的**互相关矩阵**，也就是上面提到的Gram矩阵。
+
+Gram矩阵描述的是全局特征的自相关，如果输出图与风格图的这种自相关相近，那么差不多是我们所理解的”风格”。当然，其实也可以用很多其他的统计信息进行描绘风格。比如有用直方图的, 甚至还可以直接简化成”均值+方差”的。
+
+风格矩阵$$G_{kk'}^{[l][S]}$$表征了风格图片S第l层隐藏层的“风格”。相应地，生成图片G也有$$G_{kk'}^{[l][G]}$$。那么，$$G_{kk'}^{[l][S]}$$与$$G_{kk'}^{[l][G]}$$越相近，则表示G的风格越接近S。这样，我们就可以定义出$$J^{[l]}_{style}(S,G)$$的表达式：
+
+$$J^{[l]}_{style}(S,G)=\frac{1}{(2n_H^{[l]}n_W^{[l]}n_C^{[l]})}\sum_{k=1}^{n_C^{[l]}}\sum_{k'=1}^{n_C^{[l]}}||G_{kk'}^{[l][S]}-G_{kk'}^{[l][G]}||^2$$
+
+为了提取的“风格”更多，也可以使用多层隐藏层，然后相加，表达式为：
+
+$$J_{style}(S,G)=\sum_l\lambda^{[l]}\cdot J^{[l]}_{style}(S,G)$$
 
 ## 实现细节
 
@@ -259,33 +273,3 @@ stage3: 和stage2相似，只不过增加了更强的约束：5个人脸关键�
 上面三图分别是P-Net、R-Net和O-Net的网络结构图。
 
 需要注意的是，Cascade CNN和MTCNN都是比较早期的方案了，这里的人脸候选框，一般是用**滑动窗口**的方式生成的，这种方法的效率不高，不仅比不上Faster RCNN以后的RPN Layer，就连RCNN的Selective Search也颇有不如，完全就是Viola-Jones方法的简单翻版。
-
-参考：
-
-http://blog.csdn.net/qq_14845119/article/details/52680940
-
-MTCNN（Multi-task convolutional neural networks）人脸对齐
-
-http://blog.csdn.net/shuzfan/article/details/52668935
-
-人脸检测——MTCNN
-
-https://mp.weixin.qq.com/s/IrZEQ69RNUdcs0Fl8fHmmQ
-
-如何应用MTCNN和FaceNet模型实现人脸检测及识别
-
-https://mp.weixin.qq.com/s/NfqFj5iCIkbRD34Eu2Lb5g
-
-MTCNN实时人脸检测网络详解与代码演示
-
-## 人脸识别
-
-人脸检测是从一张图片中，识别出人脸，这和通常的目标检测没有太大的差别。**而人脸识别，则是精确到具体的人。**
-
-人脸识别通常的做法是：
-
-1.使用人脸检测，得到人脸区域的图像。
-
-2.提取人脸特征。一般采用CNN+FC+loss的结构。其中，CNN+FC用于提取特征，而loss仅用于训练阶段。在推理阶段，我们使用CNN+FC得到人脸的特征向量即可。
-
-3.特征的对比。比较两个特征向量的相似度（可以使用LMS或者cos相似度）。超过阈值，即认为是同一张脸。
