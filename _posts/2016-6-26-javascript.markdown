@@ -4,9 +4,7 @@ title:  Javascript（一）
 category: language 
 ---
 
-# Javascript
-
-## 参考指南 & 教程
+# 参考指南 & 教程
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 
@@ -26,11 +24,11 @@ http://www.bootcss.com/
 
 这个网站虽然只是Bootstrap的教程网站，然而它首页的项目推荐，几乎涵盖了前端开发所用的各种JS库。
 
-## Javascript和C的互相调用
+# Javascript和C的互相调用
 
 Javascript本质上是服务器发出的，由客户端执行的脚本。出于安全原因，本地功能比较弱。所谓Javascript和C的互相调用，基本上都依赖于浏览器的实现。比如，在IE中依赖于ActiveX插件，在Firefox中依赖于JSAPI。
 
-## CDN
+# CDN
 
 CDN的全称是Content Delivery Network，即内容分发网络。这里主要使用它来存储一些通用的JS库，比如JQuery，以达到节省带宽和提高加载速度的目的。
 
@@ -46,7 +44,7 @@ http://libs.useso.com/js/jquery/1.9.1/jquery.min.js
 
 http://developer.baidu.com/wiki/index.php?title=docs/cplat/libs
 
-## Template Engine
+# Template Engine
 
 ![](/images/article/web.png)
 
@@ -56,39 +54,39 @@ http://developer.baidu.com/wiki/index.php?title=docs/cplat/libs
 
 Template Engine有很多种。例如：
 
-### hbs
+## hbs
 
 https://www.npmjs.com/package/hbs
 
-### jade
+## jade
 
 http://jade-lang.com/
 
-## jslint
+# jslint
 
 http://www.jslint.com/
 
 jslint是一个JavaScript语法的检查工具。
 
-## UI控件库
+# UI控件库
 
-### jQuery UI
+## jQuery UI
 
 这是jQuery官方推出的UI库。官网：
 
 http://jqueryui.com/
 
-### jQuerytools
+## jQuerytools
 
 另一个基于jQuery的UI库。
 
-### YUI
+## YUI
 
 Yahoo User Interface library。这是一个大型的JS工具库，已经停止更新及维护。官网：
 
 http://yuilibrary.com/
 
-### Other
+## Other
 
 Bootstrap、Foundation、Semantic UI。
 
@@ -274,9 +272,9 @@ http://www.alloyteam.com/2016/03/node-embedded-database-nedb/
 
 Node嵌入式数据库——NeDB
 
-## HTML & CSS
+# HTML & CSS
 
-### name、id、class的区别
+## name、id、class的区别
 
 name、id、class都可以用来标识元素。
 
@@ -286,7 +284,7 @@ id在一个页面中是唯一的。但这个唯一性由程序员保证，浏览
 
 class允许多个类型的组合，比如`<p class="a b"/>`表示p既属于a类，也属于b类。
 
-### CSS选择器
+## CSS选择器
 
 CSS的语法如下：
 
@@ -300,13 +298,15 @@ selector {property1: value1; property2: value2; ... propertyN: valueN}
 
 name没有快捷的选择方法，但可以采用属性的方式进行选择，例如：`input[name="you"]`
 
-## 动画
+# 动画
 
-HTML动画一般有两种实现方式：
+HTML动画一般有三种实现方式：
 
 1.JS。JS脚本通过动态改变HTML、CSS的内容来实现动画效果。这种方式功能全面，且可在旧版本浏览器中执行。
 
-2.CSS3。CSS3引入了一些动画属性，它由浏览器直接解释执行。这种方式执行效率很高，但需要浏览器本身支持CSS3。并且，有些复杂的动画，可能会超出CSS3的能力范围，这时不可避免的还是会用到JS。
+2.CSS3。CSS3引入了一些动画属性，它由浏览器直接解释执行，执行效率很高（可利用硬件加速），但需要浏览器本身支持CSS3。并且，有些复杂的动画，可能会超出CSS3的能力范围，这时不可避免的还是会用到JS。
+
+3.Web Animation API。为了解决CSS3的问题，2014年Google又提出了Web Animation API。这套API让JS拥有了不逊于CSS3的性能。
 
 ## Animate.css
 
@@ -320,7 +320,7 @@ http://www.dowebok.com/98.html
 
 animate.css–齐全的CSS3动画库
 
-### Step1：事件触发动画
+## Step1：事件触发动画
 
 网上的CSS动画例子，多数是加载网页时直接触发（这种最简单），少部分是鼠标移动到控件上时触发（这种方式主要使用了:hover选择器）。
 
@@ -336,8 +336,6 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello
 
 4.和AnimationEnd类似的事件，还有AnimationIteration和AnimationStart。
 
-### Step2：回调函数嵌套问题
+## Step2：回调函数嵌套问题
 
 在上面的例子中，所有的button都是同步动画的。如果想要一个接着一个播放动画的话。一种思路就是：在上一个动画的AnimationEnd事件处理函数中，启动下一个动画。但这种方法会导致回调函数的嵌套问题。
-
-首先需要明确一点：回调嵌套并没有执行效率的问题。JS脚本都是单线程执行的，因此无论采用何种写法，都不会改变函数的执行顺序。回调嵌套的问题主要出在可读性方面。

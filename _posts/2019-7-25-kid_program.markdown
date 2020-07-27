@@ -355,10 +355,40 @@ https://mp.weixin.qq.com/s/xGBAGBGsxBDuKkSxXOZRjQ
 
 在Rust代码中编写Python是种怎样的体验？
 
-# 世说新语++
+# Javascript+
 
-## 2020.7（续）
+https://mp.weixin.qq.com/s/GQ2azFxcmXrY78rTAdxuVA
 
-https://mp.weixin.qq.com/s/fbJQs87R9c8_j_B5-zTsVg
+JS/CSS体积减少了67%，我们是如何做到的？
 
-古代没有冰箱，夏天冰块是怎么来的？
+https://mp.weixin.qq.com/s/c1bMljAx1QWz9QQJX7sHmg
+
+大部分教程不会告诉你的12个JS技巧
+
+https://mp.weixin.qq.com/s/pdOVONHbjfIJPW45nEw1fg
+
+前端本地文件操作与上传
+
+http://chrome.360.cn/test/html5/index.html
+
+一个用于检测浏览器对html 5支持情况的网页
+
+https://www.zhihu.com/question/59578433
+
+为什么现在又流行服务端渲染html？
+
+https://mp.weixin.qq.com/s/aNPAfJIHL14NFtLfRvxUpQ
+
+10万人的大场馆如何“画座位”？
+
+https://www.jianshu.com/p/c8b86b09daf0
+
+函数防抖和节流
+
+https://mp.weixin.qq.com/s/vEbTP1SDP3GW20XAP825jw
+
+一种字体，变成千姿百态艺术字，可尖可圆可开花，隔壁设计师馋哭了
+
+https://mp.weixin.qq.com/s/0pI0F6c-BSLiGdLetQ5qNQ
+
+彻底弄懂浏览器缓存策略

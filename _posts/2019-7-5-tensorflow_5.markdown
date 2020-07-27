@@ -204,6 +204,10 @@ https://github.com/apache/incubator-tvm
 
 ![](/images/img3/tvm_stack.png)
 
+论文：
+
+《TVM: End-to-End Optimization Stack for Deep Learning》
+
 参考：
 
 https://zhuanlan.zhihu.com/p/139552817
@@ -213,6 +217,10 @@ https://zhuanlan.zhihu.com/p/139552817
 https://mp.weixin.qq.com/s/8bXwxYyNjdThlGQQ70cgWQ
 
 TVM：端到端自动深度学习编译器，244页ppt
+
+https://www.zhihu.com/question/267167829
+
+如何看待Tensor Comprehensions？与TVM有何异同？（这个问题下的答案不多，但基本都是陈天奇、贾扬清之类的大佬）
 
 https://mp.weixin.qq.com/s/irvBbPKENiZX9G_6wh5c-Q
 
@@ -249,6 +257,20 @@ https://zhuanlan.zhihu.com/p/75203171
 https://zhuanlan.zhihu.com/p/58918363
 
 TVM: Deep Learning模型的优化编译器
+
+https://zhuanlan.zhihu.com/p/111680367
+
+Polyhedral Model, Interval Analysis and Compilers
+
+https://www.zhihu.com/question/65708935
+
+深入学习auto vectorization和polyhedral变换方面的优化技术有哪些资料？
+
+# GLOW
+
+https://zhuanlan.zhihu.com/p/102127047
+
+Glow: Graph Lowering Compiler for Neural Networks
 
 # 模型压缩与加速进阶+
 
@@ -339,37 +361,3 @@ https://mp.weixin.qq.com/s/H6OTkpdIgSdugDrEMBLybw
 https://mp.weixin.qq.com/s/KuZ-mZKt7bTWhzygK1lmSg
 
 加速目标检测
-
-# 两弹一星++
-
-步履式挖掘机1965年由列支敦士登的“kaiser（凯撒）”公司发明。这种挖掘机由于有四个可以独立移动的支腿，因此可以在山地、沼泽等普通挖掘机不能使用的地区使用。
-
-2001年，徐工集团决定接下这个任务。2004年初整车开始了高原测试，两辆原型车被拉到了工程兵某部位于西藏羊八井附近山区中的工地，当地海拔接近5000米。结果测试完车没下来，直接就被驻军扣下了。后来好说歹说还了一台，剩下的一台我15年去徐工的时候，据说依然活跃在中印边境上，十多年没出过大故障。
-
-中国：building，construction completed，new construction options，unit ready.
-
-印度：Insufficient fund，cannot deploy here，building，low power，unit lost.
-
-https://www.zhihu.com/question/404380682
-
-如何看待徐工机械的全地形挖掘机?
-
-----
-
-1、凡是中国和外国都掌握的，都是没什么难度的技术；
-
-2、凡是中国掌握而外国没掌握的，都是没用的技术；
-
-3、凡是外国掌握而中国没掌握的，都是屌炸天的技术。
-
-有这三句话，喷遍知乎不成问题。
-
-----
-
-https://mp.weixin.qq.com/s/nwVRBs06zAAyyvROClGE2g
-
-他是业内人士公认的“中国爱因斯坦”，却被迫扫了十几年厕所，尸骨也草埋操场……
-
-对束星北先生的能力，除了佩服，已经完全找不到其他词可以形容了。能够在一个领域成为专家，就已经是很不容易的事了。可束先生于理论物理之外，还能开创雷达、气象物理、海洋物理等多个领域，学神二字似乎也不足以说明他的牛逼。
-
-束先生的人生遭遇...一声叹息啊...

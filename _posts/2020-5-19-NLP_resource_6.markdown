@@ -302,6 +302,18 @@ https://mp.weixin.qq.com/s/5nBS0FiOynhGS6mY2dZ1ng
 
 # 编译原理
 
+## 教程
+
+《Principles of Compiler Design Compilers: Principles, Techniques, and Tools》。该书由于封面上有龙的图案，又被称为“龙书”。下面的虎书、鲸书也是一样的。
+
+《Modern Compiler Implementation in C》，虎书。
+
+《Advanced Compiler Design and Implementation》，鲸书。
+
+以上三本书，被称为编译器领域的圣经。
+
+## blog
+
 https://zhuanlan.zhihu.com/frozengene
 
 一个编译器方面的专栏
@@ -361,31 +373,3 @@ https://www.zhihu.com/question/344231876/answer/812481811
 https://juejin.im/post/5d70fb2ce51d4557ca7fddaa
 
 Android CPU, Compilers, D8 & R8
-
-# 世说新语+
-
-## 2020.7（续）
-
-科学岛是中国科学院合肥物质科学研究院(以下简称合肥研究院)的别称。合肥研究院位于合肥市西郊的蜀山湖畔的董铺岛上，面积2.65平方公里。江泽民总书记1998年莅临视察时，对这里的科研环境给予了很高的评价，并欣然题词"科学岛"。
-
-https://www.zhihu.com/question/407163721
-
-如何看待中科院合肥研究院90多名科研人员集体辞职？
-
-----
-
-银行家的儿子问爸爸：“爸爸，银行里的钱都是客户和储户的。那你是怎样赚来房子、奔驰车和游艇的呢？”银行家：“儿子，冰箱里有一块肥肉，你把它拿来。”儿子拿来了。“再放回去吧。”儿子问：“什么意思？”银行家说：“你看你的手指上是不是有油啊？”
-
-----
-
-https://www.zhihu.com/question/384570256
-
-古代攻城会耗费大量人力物力，为什么守城将军却会选择出城作战而不是依靠城墙死守？
-
-https://www.zhihu.com/question/404648647
-
-古代攻城战，士兵为什么情愿被派上去送死？
-
-----
-
-最近有个新词，叫“约素炮”。指：俩人开房不发生关系，就是单纯抱在一起聊个天、睡个觉。

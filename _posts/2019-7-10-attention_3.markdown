@@ -76,6 +76,10 @@ https://mp.weixin.qq.com/s/YDaSv5oHLEtyJrp4Y5e64A
 
 Transformer注解及PyTorch实现（下）
 
+https://mp.weixin.qq.com/s/BIwUYRq0yP9nE80OOlMWaQ
+
+关于Transformer那些的你不知道的事
+
 https://mp.weixin.qq.com/s/j0KRAOf8Sd0_tTlRadnw9Q
 
 利用篇章信息提升机器翻译质量
@@ -95,10 +99,6 @@ Facebook推出最新跨语言预训练模型，刷新多项跨语言任务记录
 https://mp.weixin.qq.com/s/C0p1U0-x6aRipvYJItn8-g
 
 Transformer在进化！谷歌大脑用架构搜索方法找到Evolved Transformer
-
-https://mp.weixin.qq.com/s/E7wygpWbSHoq6R7wlalFkA
-
-放弃幻想，全面拥抱Transformer！NLP三大特征抽取器（CNN/RNN/TF）比较
 
 https://mp.weixin.qq.com/s/cs4IjkmdPmu2-3Mu36f8UQ
 

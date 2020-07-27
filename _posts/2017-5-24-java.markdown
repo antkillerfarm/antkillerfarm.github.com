@@ -328,7 +328,7 @@ https://mp.weixin.qq.com/s/01fj7l3xsxHVstlkrJ0epw
 
 Java如何实现动态脚本？
 
-# Javascript+
+# Javascript++
 
 https://mp.weixin.qq.com/s/fEAfuVzfOwKjnTB-mdS5UA
 

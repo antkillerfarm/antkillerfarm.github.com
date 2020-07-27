@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Git, ZeroMQ
+title:  Git
 category: technology 
 ---
 
@@ -163,13 +163,7 @@ cat ~/.ssh/id_rsa.pub
 
 >`ssh-keygen`命令会生成两个文件id_rsa和id_rsa.pub，前者是私钥，后者是公钥，不要弄错了。
 
-13.submodule
-
-有的时候，包太大了，可以将之分成若干小包（submodule）。
-
-`git submodule update --init --remote --rebase`
-
-如果使用SSH的话，有的时候会update失败。
+使用SSH有的时候会update失败。
 
 解决办法：
 
@@ -183,11 +177,11 @@ https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key
 
 Generating Your SSH Public Key
 
-14.`git blame`查看一行代码是谁改的。
+13.`git blame`查看一行代码是谁改的。
 
-15.`HEAD`表示当前版本，`HEAD^^`表示当前版本之前的两个版本，如果回溯的版本较多也可以写作`HEAD~100`。
+14.`HEAD`表示当前版本，`HEAD^^`表示当前版本之前的两个版本，如果回溯的版本较多也可以写作`HEAD~100`。
 
-16.cherry-pick用于将分支A上的修改C，移植到分支B上。
+15.cherry-pick用于将分支A上的修改C，移植到分支B上。
 
 `git cherry-pick <commit id>`
 
@@ -384,6 +378,28 @@ Gerrit，一种免费、开放源代码的代码审查软件，它使用Git作�
 
 https://www.gerritcodereview.com/
 
+## Git多项目管理
+
+项目越来越大，一些通用的模块我们希望将他抽离出来作为单独的项目，以便其他项目也可以使用，或者使用一些第三方库，可能我们并不想将代码直接拷贝进我们的项目里面，而仅仅只是单纯的引用。
+
+基于Git有多种方式来解决这个问题：
+
+- Git Submodul。
+
+- Git Subtree。这两个已经集成到git中。
+
+- GitSlave。一个git插件，需要额外安装。
+
+- Google Repo。基于git的python脚本。Android项目的官方工具。
+
+`git submodule update --init --remote --rebase`
+
+参考：
+
+https://www.jianshu.com/p/284ded3d191b
+
+Git多项目管理
+
 ## 参考
 
 https://mp.weixin.qq.com/s/z_zFveiiLu9vLvWuBcsaIg
@@ -417,15 +433,3 @@ https://blog.csdn.net/mocoe/article/details/84344411
 https://mp.weixin.qq.com/s/9Ey04P5Xv4W95N2FEioZ1g
 
 如何选择Git分支模式？
-
-# ZeroMQ
-
-ZeroMQ是个在Socket之上，而在MQ之下的网络通信库。正如名称所言，它实际上并不是一个完整的MQ，而仅仅只有MQ的一些子功能罢了。
-
-http://zeromq.org
-
-参考：
-
-https://blog.csdn.net/w174504744/article/details/73187697
-
-ZeroMQ

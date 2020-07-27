@@ -1,415 +1,305 @@
 ---
 layout: post
-title:  深度学习（四十八）——花式U-NET, 语义分割进阶
+title:  深度学习（四十八）——深度信息检索
 category: DL 
 ---
 
-# 花式U-NET
+# 深度信息检索
 
-## U-NET的另类用法
+Information Retrieval是用户进行信息查询和获取的主要方式，是查找信息的方法和手段。狭义的信息检索仅指信息查询（Information Search）。即用户根据需要，采用一定的方法，借助检索工具，从信息集合中找出所需要信息的查找过程。广义的信息检索是信息按一定的方式进行加工、整理、组织并存储起来，再根据信息用户特定的需要将相关信息准确的查找出来的过程。
 
-U-NET除了用于语义分割之外，还可用于语音分离——将人声/音乐从原始混合声音数据中分离出来。比如卡拉OK中的常见的原声抑制功能。
+这方面的DL应用可参见以下的综述文章：
 
-论文：
+《MatchZoo: A Toolkit for Deep Text Matching》
 
-《Singing Voice Separation With Deep U-net Convolutional Networks》
+## ARC-I & ARC-II
 
-代码：
+《Convolutional neural network architectures for matching natural language sentences》
 
-https://github.com/Xiao-Ming/UNet-VocalSeparation-Chainer
-
-Chainer版本的实现
-
-https://github.com/Jeongseungwoo/Singing-Voice-Separation
-
-Tensorflow版本的实现
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/Singing-Voice-Separation
-
-Jeongseungwoo的版本一次加载了全部的数据集到内存中，对PC的要求较高（估计起码要32GB内存才能跑），这是我修改后的版本。用户可以根据自己PC的性能，调整batch size。
-
-https://github.com/f90/Wave-U-Net
-
-另一个Tensorflow版本的实现。这哥们还有个使用Semi-supervised adversarial学习分离人声的项目（他也是该项目论文的一作）：
-
-https://github.com/f90/AdversarialAudioSeparation
-
-![](/images/img2/wave_u_net.png)
-
-这种用途的U-NET和原始U-NET的区别在于：
-
-1.输入和输出是音频数据的时序频谱图，从某种意义上来说，其实就是一张二维图片。
-
-2.输入是包含混音的数据，而输出是纯净的人声/音乐的Mask。混音数据*Mask=纯净声音。由于标注数据比较难获得，因此通常的做法是使用纯音和若干噪声进行合成得到混音数据。
-
-3.由于最终结果不再是像素级的分类问题，因此Loss采用了absolute difference。
-
-从上面的论述可以看出，该论文主要是用到了语义分割网络中**输入和输出的尺寸等大**这个特点，算是一种很灵巧的构思了。
-
-这方面的数据集主要有：
-
-***CCMixter：***
-
-https://members.loria.fr/ALiutkus/kam/
-
-这个数据集的每个文件夹下有3个wav文件：
-
-source-01.wav：纯音乐。
-
-source-02.wav：人声。
-
-mix.wav：混合后的声音。
-
-***MUSDB18：***
-
-https://sigsep.github.io/datasets/musdb.html
-
-类似这样用法的还有：
-
-《Learning to See in the Dark》
-
-代码：
-
-https://github.com/cchen156/Learning-to-See-in-the-Dark
-
-![](/images/img2/SID.png)
-
-如上图所示，该文的目标是使用神经网络替换传统的相机ISP过程。由于输入和输出的尺寸等大，照例又到了U-NET出场的时间。
-
-为了实现这一目标，作者收集了一个新的原始图像数据集，在弱光条件下快速曝光。同时，每个微光图像都有相应的长曝光、高质量的参考图像。
-
-参考：
-
-https://mp.weixin.qq.com/s/cr0BJLkyN2kW35-w1pebGQ
-
-学习在黑暗中看世界（Learning to See in the Dark）
-
-https://mp.weixin.qq.com/s/iv4ixoXvyPMp60hp2XhK8A
-
-港中文&腾讯优图等提出：暗光下的图像增强
-
-https://mp.weixin.qq.com/s/p2Vr9Y9vl4BlHZB_DIzTbw
-
-基于深度学习的低光照图像增强方法总结（2017-2019）
-
-https://mp.weixin.qq.com/s/E20ucf5bfexKYH4R7zK-WA
-
-最好用的音轨分离软件spleeter
-
-## 花式U-Net
-
-本节主要摘抄自：
-
-https://zhuanlan.zhihu.com/p/57530767
-
-图像分割的U-Net系列方法
-
-### 3D U-Net
+## DSSM
 
 论文：
 
-《3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation》
+《Learning deep structured semantic models for web search using clickthrough data》
 
-![](/images/img3/U-Net_3D.png)
+### Word Hashing
 
-这个算是3D领域的base-line了，而且效果还不错。好多新网络还未必比得过它。
+DSSM已经意识到one-hot是一种低效的词向量表示方式，因此，它转而采用了一种叫做Word Hashing的技术。
 
-### ResUnet
+Word Hashing是非常重要的一个trick，以英文单词来说，比如good，它可以写成`#good#`，然后按tri-grams来进行分解为`#go goo ood od#`，再将这个tri-grams灌入到bag-of-word中，这种方式可以非常有效的解决vocabulary太大的问题(因为在真实的web search中vocabulary就是异常的大)，另外也不会出现oov问题，因此英文单词才26个，3个字母的组合都是有限的，很容易枚举光。
 
-论文：
+那么问题就来了，这样两个不同的单词会不会产出相同的tri-grams，paper里面做了统计，说了这个冲突的概率非常的低，500K个word可以降到30k维，冲突的概率为0.0044%。
 
-《Road Extraction by Deep Residual U-Net》
+但是在中文场景下，这个Word Hashing估计没有这么有效了。
 
-![](/images/img3/ResUnet.png)
+上面讲述了Word Hashing的词向量的构建方法，这种方法也可以扩展到句子：统计一下句子中每个tri-grams出现的次数，然后用次数组成句子向量即可。
 
-### DenseUnet
+### 网络结构
 
-论文：
+![](/images/img3/DSSM.png)
 
-《Fully Dense UNet for 2D Sparse Photoacoustic Tomography Artifact Removal》
+上图是DSSM的网络结构：句子向量经过若干层的神经网络之后，得到了语义向量（semantic concept vectors）。计算两个语义向量的cos相似度，得到两个句子的匹配程度。
 
-![](/images/img3/DenseUnet.png)
+### 参考
 
-![](/images/img3/DenseUnet_2.png)
+https://www.microsoft.com/en-us/research/project/dssm/
 
-### MultiResUNet
+微软的DSSM模型
 
-论文：
+https://www.cnblogs.com/baiting/p/7195998.html
 
-《MultiResUNet : Rethinking the U-Net Architecture for Multimodal Biomedical Image Segmentation》
+深度语义匹配模型-DSSM及其变种
 
-ResUnet和DenseUnet基本属于排列组合式的灌水。下面的MultiResUNet还是有些干货的。
+https://blog.csdn.net/u013074302/article/details/76422551
 
-![](/images/img3/MultiResUNet.png)
+语义相似度计算——DSSM
 
-上图是该论文提出的MultiRes block结构。
+https://mp.weixin.qq.com/s/U2r4qDLh4WZFgAIoF_SRPg
 
-![](/images/img3/MultiResUNet_2.png)
+金融客服AI新玩法：语言学运用、LSTM+DSSM算法、多模态情感交互
 
-还有下采样和上采样之间的Res path结构。
+https://mp.weixin.qq.com/s/HMhvcAYRatN0n5EiiNVoXQ
 
-![](/images/img3/MultiResUNet_3.png)
+详解深度语义匹配模型DSSM
 
-这是最终的网络结构图。基本上把concat和add的各种组合都撸了一遍。
+https://www.cnblogs.com/guoyaohua/p/9229190.html
 
-### R2U-Net
+DSSM：深度语义匹配模型（及其变体CLSM、LSTM-DSSM）
 
-论文：
+https://zhuanlan.zhihu.com/p/141545370
 
-《Recurrent Residual Convolutional Neural Network based on U-Net (R2U-Net) for Medical Image Segmentation》
+深度学习语义相似度系列：Ranking Similarity
 
-![](/images/img3/R2U-Net.png)
+https://mp.weixin.qq.com/s/2UJQkPuhvFYT2jmuxLJ8VA
 
-注意，这里的Recurrent Convolutional是Convolutional的一个变种，和RNN没有关系。
+实践篇：语义匹配在贝壳找房智能客服中的应用
 
-### Attention U-Net
+https://mp.weixin.qq.com/s/6cTG9347dOLxiUs_-tdpnQ
 
-论文：
+百度开源：语义匹配应用介绍和源代码
 
-《Attention U-Net: Learning Where to Look for the Pancreas》
+https://mp.weixin.qq.com/s/PxyazOPKV3eB-qat8hM9ZQ
 
-![](/images/img3/AttU-Net.png)
+神经网络语义匹配技术
 
-Attention也难逃毒手。
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650749368&idx=3&sn=fc20d9e6682c74227282df3133cea06c
 
-### Attention R2U-Net
+基于IR-transformer、IRGAN模型，解读搜狗语义匹配技术
 
-![](/images/img3/AttR2U-Net.png)
+https://mp.weixin.qq.com/s/Xnea50Eisq9rzhGFa1iTFA
 
-继续组合。不过作者还是有廉耻的，这个没有写论文灌水。
+DRr-Net：基于动态重读机制的句子语义匹配方法
 
-R2U-Net, Attention U-Net, Attention R2U-Net的代码都在这里：
+## 表示型和交互型
 
-https://github.com/LeeJunHyun/Image_Segmentation
+从模型的本质来看可以分为两种类型：表示型和交互型。表示型的模型会在最后一层对待匹配的两个句子进行相似度计算，交互型模型会尽早的让两个句子交互，充分应用交互特征。
+
+https://mp.weixin.qq.com/s/5_QqP3CIBpM4zM5CWIxYuA
+
+深度语义匹配模型原理篇一：表示型
+
+## CDSSM
+
+《Learning semantic representations using convolutional neural networks for web search》
+
+## MV-LSTM
+
+《A deep architecture for semantic matching with multiple positional sentence representations》
+
+## CNTN
+
+《Convolutional Neural Tensor Network Architecture for Community-Based Question Answering》
+
+## DRMM
+
+《A deep relevance matching model for ad-hoc retrieval》
+
+## MatchPyramid
+
+《Text Matching as Image Recognition》
+
+## Match-SRNN
+
+《Match-SRNN: Modeling the Recursive Matching Structure with Spatial RNN》
+
+## K-NRM
+
+《End-to-End Neural Ad-hoc Ranking with Kernel Pooling》
+
+## 代码搜索
+
+https://mp.weixin.qq.com/s/B3Uv-dhB5VYJnu06N4lYBg
+
+深度学习遇见代码搜索，一篇论文概览神经代码搜索
+
+https://mp.weixin.qq.com/s/GFIxA9kEGNJ9rg96mRw0PQ
+
+自然语言语义代码搜索之路
 
 ## 参考
 
-https://www.zhihu.com/question/269914775
+https://github.com/harpribot/awesome-information-retrieval
 
-Unet神经网络为什么会在医学图像分割表现好？
+信息检索优质资源汇总
 
-https://mp.weixin.qq.com/s?__biz=MzIwMTE1NjQxMQ==&mid=2247488752&idx=3&sn=23f223fb82c64c14eb925ebd19d16fc5
+https://mp.weixin.qq.com/s/5ba3EM6e9R-i3UpzUhm49w
 
-图像分割中的深度学习：U-Net体系结构
+神经信息检索导论，微软研究员129页最新书册
 
-https://zhuanlan.zhihu.com/p/55193930
+https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
 
-Attention U-Net论文笔记
+MySQL智能调度系统。这篇blog其实和MySQL关系不大，算是DL在负载均衡方面的应用吧。
 
-https://mp.weixin.qq.com/s/cumrVJPexV_BtCKoUprrLA
+https://mp.weixin.qq.com/s/fzdK4YPTUgiW0D0aeH7WlQ
 
-当UNet遇见ResNet会发生什么？
+用于跨模态检索的综合距离保持自编码器
 
-https://mp.weixin.qq.com/s/5rqCc_ozJNNFb1zYs8JOQQ
+https://mp.weixin.qq.com/s/AWsiAYyVWY83s5uJ01Lg6Q
 
-总结U-Net网络及他的变体
+千亿级照片，毫秒间匹配最佳结果，微软开源Bing搜索背后的关键算法
 
-https://zhuanlan.zhihu.com/p/44958351
+https://mp.weixin.qq.com/s/fw5dRWmvZ17lqzxjKFrCtQ
 
-研习U-Net
+相关性特征在图片搜索中的实践
 
-https://mp.weixin.qq.com/s/34HxF5qCulGd1zyATH7ZuA
+https://mp.weixin.qq.com/s/jjbiUkmJ71rM9BYs5yKFSA
 
-将U-Net用于图像去雾任务，一种具有密集特征融合的多尺度增强去雾网络
+从算法原理到应用部署！微信“扫一扫”识物的背后技术揭秘
 
-# 语义分割进阶
+https://mp.weixin.qq.com/s/38d90XC2DjMHRoWnKEeVIw
 
-https://mp.weixin.qq.com/s/_q8N8keNpcD-jXLrRd_8dw
+基于图像查询的视频检索
 
-深度学习时代下的语义分割综述
+https://mp.weixin.qq.com/s/fDaZ2HU7W6LnIY_8n-Zg_A
 
-https://mp.weixin.qq.com/s/7EMDH-vuNCOHWmbpyWA3ow
+视频版权检测算法​​
 
-基于深度学习的语义分割综述
+https://mp.weixin.qq.com/s/_iTmh4vPnL78HPA-0wY95g
 
-https://blog.csdn.net/yorkhunter/article/details/104057159
+阿里文娱搜索算法实践和思考
 
-arXiv综述论文“Image Segmentation Using Deep Learning: A Survey”
+https://zhuanlan.zhihu.com/p/113244063
 
-https://mp.weixin.qq.com/s/BSJ-F_Inp1-eHxSJDsQ3AQ
+搜索中的深度匹配模型
 
-12篇文章带你逛遍主流分割网络
+https://zhuanlan.zhihu.com/p/118183738
 
-https://mp.weixin.qq.com/s/cANlqQAI-A2mC9vnd3imQA
+搜索中的深度匹配模型（下）
 
-Instance-Aware图像语义分割
+https://mp.weixin.qq.com/s/FSpVcTM9BcyraQwuaJ833Q
 
-https://mp.weixin.qq.com/s/v_TLYYq6cFWuwR9tXM8m-A
+服装局部抄袭怎么解决？ 阿里推出区域检索算法
 
-如何通过CRF-RNN模型实现图像语义分割任务
+https://mp.weixin.qq.com/s/SMAHf7od8ygNIP6Zh9za3w
 
-https://mp.weixin.qq.com/s/ceCC7Q6yr0QKESeZXi6lWQ
+KDD Cup 2020多模态检索赛道：数据分析
 
-堆叠解卷积网络实现图像语义分割顶尖效果
+https://mp.weixin.qq.com/s/W8YlrSyM7K84-_jwiD6E7g
 
-https://mp.weixin.qq.com/s/V4_euZRcyyxeimXAA_waAg
+微信扫一扫识物的技术揭秘：抠图与检索
 
-贾佳亚：最有效的COCO物体分割算法
+https://zhuanlan.zhihu.com/p/112719984
 
-https://mp.weixin.qq.com/s/M1Oo4ST2aspgZF8UeSUDww
+全面理解搜索Query：当你在搜索引擎中敲下回车后，发生了什么？
 
-如何妙笔勾檀妆：像素级语义理解
+https://mp.weixin.qq.com/s/kS-FPeuz0nMN2YvbwAjbIw
 
-https://www.zhihu.com/question/390783647
+线上搜索结果大幅提升！亚马逊提出对抗式query-doc相关性模型
 
-语义分割该如何走下去？
+https://mp.weixin.qq.com/s/4UBehc0eikVqcsFP7xL_Zw
 
-https://mp.weixin.qq.com/s/xalo2XtKtzR5tA_dPFzaJw
+京东电商搜索中的语义检索与商品排序
 
-一文介绍3篇无需Proposal的实例分割论文
+https://mp.weixin.qq.com/s/8lRzE5nGCNfD6sQ0lDRDyg
 
-https://mp.weixin.qq.com/s/BL1xZ_YuuPe9frIc9E1fkA
+信息检索中的神经匹配和重要性学习，163页pdf
 
-南开大学提出新物体分割评价指标
+https://mp.weixin.qq.com/s/jZCHyjhTW9JHW3xQSTzyYA
 
-https://mp.weixin.qq.com/s/3rfZUhio4Bk1RUGkEk5xoQ
+深度学习搜索，Deep Learning for Search，327页pdf
 
-ETH Zurich提出新型网络“ROAD-Net”，解决语义分割域适配问题
+https://mp.weixin.qq.com/s/aZsj1FQnzHOr-YBcy_ljpw
 
-https://mp.weixin.qq.com/s/qMLCi-CghxvTcwyPnvFxnQ
+DNN在搜索场景中的应用
 
-ConvCRF：一种结合条件随机场与CNN的高效语义分割方法
+https://mp.weixin.qq.com/s/1jgdI-Pt0PtN3oAs0Wh4XA
 
-https://mp.weixin.qq.com/s/deepxMWCpIEe3jk_kanfMg
+阿里提出电商搜索全局排序方法，淘宝无线主搜GMV提升5%
 
-金字塔注意力网络：一种利用底层像素与高级特征的语义分割网络
+https://mp.weixin.qq.com/s/9Fcj5lO-JPfFVnRSSM_56w
 
-https://mp.weixin.qq.com/s/5n3jpvv_LxnHB0w4hsCEzQ
+深度学习在美团搜索广告排序的应用实践
 
-NVIDIA ECCV18论文:超像素采样网络助力语义分割与光流估计
+https://mp.weixin.qq.com/s/wni3F9lKuO4OT32BVe0QDQ
 
-https://mp.weixin.qq.com/s/MiChpWim5pGlRj88rcQtaA
+谷歌发大招：搜索全面AI化，不用关键词就能轻松“撩书”
 
-谷歌等祭出图像语义理解分割神器，PS再也不用专业设计师！
+https://mp.weixin.qq.com/s/TrWwp-DBTrKqIT_Pfy_o5w
 
-https://mp.weixin.qq.com/s/J6UMzWSpcmSQVGwWKtm2Hw
+阿里妈妈首次公开新一代智能广告检索模型，重新定义传统搜索框架
 
-UC伯克利提出基于自适应相似场的语义分割
+https://mp.weixin.qq.com/s/fZv9FgbdQ1bWPoNdl9sF1A
 
-https://zhuanlan.zhihu.com/p/43774180
+“宝石迷阵”与信息检索
 
-提升密集预测的平滑的空洞卷积
+https://mp.weixin.qq.com/s/Vvo3Ti3XiGQz0IwLgATfWQ
 
-https://mp.weixin.qq.com/s/sjD36kUDQ5iCmIKpR8_rlA
+电商搜索算法技术的演进
 
-双重注意力网络：中科院自动化所提出新的自然场景图像分割框架
+https://mp.weixin.qq.com/s/MpuUdZi8CWcu0b-ij-bHjA
 
-https://mp.weixin.qq.com/s/Sn3N8IxHtgp53Y0VLIPJCQ
+Jeff Dean出品：用机器学习索引替代B-Trees，3倍性能提升，10-100倍空间缩小
 
-17毫秒每帧！实时语义分割与深度估计
+https://mp.weixin.qq.com/s/uztYEW_azetOkOGiZcbCuw
 
-https://mp.weixin.qq.com/s/iNz82GUULxDndBIiGSArmQ
+JeffDean又用深度学习搞事情：这次要颠覆整个计算机系统结构设计。这篇blog介绍了如何用DL方法提高内存访问的命中率。
 
-新开源！实时语义分割算法Light-Weight RefineNet
+https://zhuanlan.zhihu.com/p/37020639
 
-https://mp.weixin.qq.com/s/2QBifDubR5mMoJNKkdBNIw
+读论文系列：CVPR2018 SSAH
 
-多分辨率特征融合—RefineNet
+https://mp.weixin.qq.com/s/TdnstQaBcLaXg8BvuR7oYA
 
-https://mp.weixin.qq.com/s/1wqguIqDS4FNsS67Yj77Qw
+基于素描图的细粒度图像检索
 
-牛津大学&Emotech首次严谨评估语义分割模型对对抗攻击的鲁棒性
+https://mp.weixin.qq.com/s/N3JBHlqneG9dI0I26M3wHQ
 
-https://mp.weixin.qq.com/s/EzfvKzs8Ue8i9x9TFgZ-CQ
+如何做好大规模视觉搜索？eBay基于实践总结出了7条建议
 
-爱奇艺蒙版AI：弹幕穿人过，爱豆心中坐
+https://mp.weixin.qq.com/s/8Twe3e3WKCY9pTiNtnW2sg
 
-https://mp.weixin.qq.com/s/19uMhoNXEygLRTYT2PbsYQ
+重磅！谷歌等推出基于机器学习的数据库SageDB
 
-图像分割技术介绍
+https://mp.weixin.qq.com/s/WpITPvYmixMHa0ha0MgWVA
 
-https://mp.weixin.qq.com/s/-wwDenAWRGCvJmprxsl15Q
+神马搜索如何提升搜索的时效性？
 
-基于多特征地图和深度学习的实时交通场景分割
+# 人脸检测/识别+
 
-https://mp.weixin.qq.com/s/ygWCfLnakHIwLVk7hRAKNg
+https://mp.weixin.qq.com/s/-VknGwKKY14cT-lZ7sC43A
 
-全景分割任务介绍及其最新进展
+人脸识别--基于深度学习以人类为中心的图像理解
 
-https://mp.weixin.qq.com/s/ZN9ZYPTcgVP2c9mCx9Ox3g
+https://mp.weixin.qq.com/s/bAlaCWg4OEprpoZqQFQg1w
 
-全景分割这一年，端到端之路
+百度提出PyramidBox人脸检测算法
 
-https://mp.weixin.qq.com/s/x95XWQW2euTEcUW5vkIEoA
+https://mp.weixin.qq.com/s/CYZvFb7kryE-8HV3teGRzA
 
-何恺明组又出神作！最新论文提出全景分割新方法（Panoptic FPN）
+有效遮挡检测的鲁棒人脸识别
 
-https://zhuanlan.zhihu.com/p/54510782
+https://mp.weixin.qq.com/s/XTIl505glmfCItuiwuPLwg
 
-DANet论文笔记
+人脸聚类——Linkage Based Face Clustering via GCN
 
-https://www.zhihu.com/question/272988870
+https://mp.weixin.qq.com/s/CR4Nf_RklcXA45mswPv8Zw
 
-有关语义分割的奇技淫巧有哪些？
+腾讯优图开源人脸检测算法DSFD，刷新两项数据集纪录
 
-https://zhuanlan.zhihu.com/p/55263898
+https://mp.weixin.qq.com/s/B8r2YEd9UbKMTT8Tup2Y_w
 
-语义分割江湖的那些事儿——从旷视说起
+腾讯（优图）新技术的人脸检测（DSFD）
 
-https://mp.weixin.qq.com/s/x6MJqCz3Yvcbc9onEO8OMQ
+https://zhuanlan.zhihu.com/p/62954487
 
-语义分割：context relation
-
-https://mp.weixin.qq.com/s/eLU-YNvV_QGc8HDK15P7Og
-
-Fast-OCNet:更快更好的OCNet
-
-https://zhuanlan.zhihu.com/p/56887843
-
-MIT和Google等提出：新全景分割算法DeeperLab
-
-https://mp.weixin.qq.com/s/1tohID6SM3weS476XU5okw
-
-全景分割：Attention-guided Unified Network
-
-https://mp.weixin.qq.com/s/ilQzQ-5RyiOYzS0RRMihLg
-
-语义分割原理与CNN架构变迁
-
-https://zhuanlan.zhihu.com/p/59141570
-
-漫谈全景分割
-
-https://mp.weixin.qq.com/s/fSaBskCxMkNwVXDtCI7ZZg
-
-Decoders对于语义分割的重要性
-
-https://mp.weixin.qq.com/s/eackv0HypWm3mTW9OAHv8g
-
-旷视实时语义分割技术DFANet：高清虚化无需双摄
-
-https://zhuanlan.zhihu.com/p/62652145
-
-加州大学提出：实时实例分割算法YOLACT，可达33 FPS/30mAP！现已开源！
-
-https://mp.weixin.qq.com/s/i6Qj5YyjLINxHSYuHckKzg
-
-YOLACT++：更强的实时实例分割网络，可达33.5 FPS/34.1mAP！
-
-https://mp.weixin.qq.com/s/27nzD9swpAcKfIv8CgvWJw
-
-YOLACT: 首个实时one-stage实例分割模型，29.8mAP/33.5fps
-
-https://mp.weixin.qq.com/s/Lz0Gk-1yDC4S9IQDcocxeA
-
-YOLACT++: 实时实例分割，从29.8mAP/33.5fps到34.1mAP/33.5fps
-
-https://mp.weixin.qq.com/s/8I7Lm5DMkVVlvw8v1L_HBA
-
-多感受野的金字塔结构—PSPNet
-
-https://mp.weixin.qq.com/s/TNHTvXmefRBlc6zfHW7C8A
-
-全局特征与局部特征的交响曲—ParseNet
-
-https://mp.weixin.qq.com/s/riS79dU5Zpzsl8vB64sPIg
-
-BRNN下的RGB-D分割—LSTM-CF
-
-https://zhuanlan.zhihu.com/p/67423280
-
-无监督域适应语义分割
-
-https://mp.weixin.qq.com/s/XTTzAkgVF-WMJT7IYWxJYg
-
-病理图像的全景分割
+旷视研究院新出8000点人脸关键点，堪比电影级表情捕捉

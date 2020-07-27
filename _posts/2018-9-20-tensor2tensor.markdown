@@ -140,6 +140,8 @@ Tensorflow Model / ONNX / Caffe Model / ... ---> DL IR (nGraph IR / *.IR) ---> L
 
 在LLVM IR出现以前，很多编译器都有几层的IR表示，比如 C++ ----> 1st IR ----> OPT ----> 2nd IR ----> .... -> Target，只是LLVM出来以后，LLVM IR做了统一，编译器变为了 C++ ----> LLVM IR ---> OPT ----> LLVM IR ----> Target
 
+![](/images/img3/IR.jpg)
+
 ## NNEF
 
 Neural Network Exchange Format是Khronos制定的用于交换NN模型数据的数据格式标准。

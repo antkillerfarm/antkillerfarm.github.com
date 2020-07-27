@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Mysql, WebRTC
+title:  Mysql, WebRTC, ZeroMQ
 category: technology 
 ---
 
@@ -234,96 +234,14 @@ http://blog.shengbin.me/posts/multi-user-video-conference-based-on-webrtc
 
 基于WebRTC的多人视频会议
 
-# Graph NN++
+# ZeroMQ
 
-https://zhuanlan.zhihu.com/p/133739758
+ZeroMQ是个在Socket之上，而在MQ之下的网络通信库。正如名称所言，它实际上并不是一个完整的MQ，而仅仅只有MQ的一些子功能罢了。
 
-全面理解PinSage（工业落地：图神经网络+推荐系统）
+http://zeromq.org
 
-https://mp.weixin.qq.com/s/VctNZsALrbDQDW3_zhGJsw
+参考：
 
-在NLP中应用GCN的几种构图方法整理
+https://blog.csdn.net/w174504744/article/details/73187697
 
-https://mp.weixin.qq.com/s/TnS4-seRxAs45A6SDSoACg
-
-图神经网络的预训练策略
-
-https://mp.weixin.qq.com/s/Pgz8cnDpX2mgexASnRzfhA
-
-浅谈图神经网络的局限性
-
-https://mp.weixin.qq.com/s/hQ-Fo_aizkcTxvzW0FSIEw
-
-VGAE：利用变分自编码器完成图重构
-
-https://zhuanlan.zhihu.com/p/137223381
-
-推荐系统的图方法
-
-https://mp.weixin.qq.com/s/hFtFjR4EIVN_9g93YjtuoQ
-
-GCMC：GNN在推荐系统中的应用
-
-https://mp.weixin.qq.com/s/u8XAbOautjZTA7ZhdSBaDA
-
-经典重温：图表示学习经典算法node2vec
-
-https://mp.weixin.qq.com/s/soH6jX7_fjq0iBBH-5bMsA
-
-Node2Vec论文+代码笔记
-
-https://mp.weixin.qq.com/s/zxFgW6ofimYQ9wlChTK8cw
-
-Recommender System with GNN
-
-https://mp.weixin.qq.com/s/_vbcLre5HIrOGbAjTzLFjA
-
-动态网络表征学习在推荐领域的创新与实践
-
-https://zhuanlan.zhihu.com/p/139359188
-
-关于GCN，我有三种写法
-
-https://mp.weixin.qq.com/s/QF9-Pz2X4qToObGWwViFBQ
-
-EGES：阿里在图嵌入领域中的探索
-
-https://mp.weixin.qq.com/s/WnF-fqQyr2VNqr75Jzoqsw
-
-Diff Pool：网络图的层次化表达
-
-https://mp.weixin.qq.com/s/8kCKqM3yuohc4xOoFd8hGg
-
-Heterogeneous Graph Neural Network
-
-https://mp.weixin.qq.com/s/HUjq4TopxWLx3QTh5ZxfIQ
-
-最新《图卷积神经网络》中文综述论文，26页pdf
-
-https://mp.weixin.qq.com/s/RuCxY92qlhWnbZVYDXY_BQ
-
-Mila唐建博士最新《图表示学习:算法与应用》2020研究进展，附59页ppt
-
-https://mp.weixin.qq.com/s/2PY1baildUoZaetYlsukIQ
-
-图卷积网络(GCN)的谱分析
-
-https://mp.weixin.qq.com/s/F9zt7eyHxTX7Gp0zpvnfcg
-
-一文直击Graph Embedding图表示学习的原理及应用
-
-https://mp.weixin.qq.com/s/qgZwi3ieMqPrg3t5lyjaZw
-
-元图(Meta-Graph)：元学习小样本连接预测
-
-https://mp.weixin.qq.com/s/17ozbpr2IIoq36VpBl3Crw
-
-基于知识图谱和图卷积神经网络的应用和开发
-
-https://mp.weixin.qq.com/s/mbr3u9SiYVPysBT9xuX0vg
-
-Hyperbolic Graph Convolutional Neural Networks
-
-https://www.zhihu.com/question/366088445
-
-请问全连接的图卷积网络(GCN)和self-attention这些机制有什么区别联系吗？
+ZeroMQ

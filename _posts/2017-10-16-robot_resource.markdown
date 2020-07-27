@@ -427,3 +427,7 @@ https://mp.weixin.qq.com/s/u6gibvshU4KI3fEE6h9KeQ
 https://mp.weixin.qq.com/s/tjn6Fob1L9aWnl2b35rjgA
 
 一文读懂总线技术
+
+https://mp.weixin.qq.com/s/d35w8Gs0Zzf1yHPkXFv9iQ
+
+CAN总线必看经典

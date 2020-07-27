@@ -1,335 +1,333 @@
 ---
 layout: post
-title:  深度学习（十九）——Mask R-CNN
+title:  深度学习（十九）——LSTM进阶
 category: DL 
 ---
 
-# 深度推荐系统+
+# LSTM进阶
 
-https://zhuanlan.zhihu.com/p/100019681
+## 《Long short-term memory》
 
-推荐系统技术演进趋势：从召回到排序再到重排
+这是最早提出LSTM这个概念的论文。这篇论文偏重数学推导，实话说不太适合入门之用。但既然是起点，还是有列出来的必要。
 
-https://zhuanlan.zhihu.com/p/102918124
+## 《LSTM Neural Networks for Language Modeling》
 
-微信看一看Embedding
+这也是一篇重要的论文。
 
-https://zhuanlan.zhihu.com/p/115781834
+## 《Sequence to Sequence - Video to Text》
 
-深度学习在花椒直播中的应用——推荐系统冷启动算法
+https://vsubhashini.github.io/s2vt.html
 
-https://mp.weixin.qq.com/s/ec88cMR4K6pWyHhJs7FEFQ
-
-智能推荐算法在花椒直播中的应用
-
-https://zhuanlan.zhihu.com/p/68897114
-
-如何刻画用户的多样兴趣——MIND network阅读笔记
-
-https://mp.weixin.qq.com/s/sbdnEMez_BKPzXOl1Z4AzQ
-
-DeepMatch：用于推荐&广告的深度召回匹配算法库
-
-https://zhuanlan.zhihu.com/p/127030405
-
-对话推荐系统综述论文
-
-https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w
-
-多值类别特征加入CTR预估模型的方法汇总
-
-https://zhuanlan.zhihu.com/p/101298495
-
-稠密特征加入CTR预估模型有哪些方法？
-
-https://zhuanlan.zhihu.com/p/101136699
-
-推荐系统中的深度匹配模型
-
-https://mp.weixin.qq.com/s/POEnU7bNG44Mz9844WuzIw
-
-腾讯视频是如何给你高效精准推送的
-
-https://zhuanlan.zhihu.com/p/99953120
-
-YouTube推荐系统算法梳理
-
-https://mp.weixin.qq.com/s/zeF7C7YrLqOjIWPen04K2Q
-
-搜索模型核心技术公开，淘宝如何做用户建模？
-
-https://www.zhihu.com/question/362190044
-
-推荐系统领域有啥巧妙的idea？
-
-https://zhuanlan.zhihu.com/p/96796043
-
-推荐系统中如何做多目标优化
-
-https://zhuanlan.zhihu.com/p/52876883
-
-深度CTR预估模型中的特征自动组合机制演化简史
-
-https://mp.weixin.qq.com/s/Ni42SEukRBGDUHu_bh3Lig
-
-基于LSTM模型的广告库存预估算法
-
-https://mp.weixin.qq.com/s/FYghBvkye8J7BqPje4JhFw
-
-汽车之家推荐系统排序算法迭代之路
-
-https://mp.weixin.qq.com/s/2whZpeQPXggHRDSEUnQZ-w
-
-加州大学-Liwei Wu博士论文：协同过滤与排序进展，150页pdf
-
-https://mp.weixin.qq.com/s/jIjdYIbdls5lIbF7TVfbdA
-
-阿里又出排序新模型，还被国际顶会认可了
-
-https://mp.weixin.qq.com/s/fUdKIqygxqlkuv0P4wiIRg
-
-智能推荐算法在直播场景中的应用
-
-https://mp.weixin.qq.com/s/HE0ckOe71dROafTZt-2mAA
-
-最新边信息推荐系统综述
-
-https://mp.weixin.qq.com/s/GazjnVwQKItrph7_n7SGTw
-
-飞猪的“猜你喜欢”如何排序？
-
-https://mp.weixin.qq.com/s/x4Q5di8oVAAZBJBTlY8usw
-
-深入理解推荐系统：梳理YouTube推荐算法
-
-https://zhuanlan.zhihu.com/p/128988454
-
-谷歌最新双塔DNN召回模型——应用于YouTube大规模视频推荐场景
-
-https://mp.weixin.qq.com/s/Bpw-q3wISbCAKHsuYQo0QQ
-
-阿里DMR:融合Match中协同过滤思想的深度排序模型
-
-https://mp.weixin.qq.com/s/D57jP5EwIx4Y1n4mteGOjQ
-
-深度学习推荐系统中各类流行的Embedding方法（上）
-
-https://mp.weixin.qq.com/s/N76XuNJ7yGzdP6NHk2Rs-w
-
-深度学习推荐系统中各类流行的Embedding方法（下）
-
-https://mp.weixin.qq.com/s/VHRV1Z6F8-3o6b-3v-5_BA
-
-深度时空网络、记忆网络与特征表达学习在CTR预估中的应用
-
-https://mp.weixin.qq.com/s/j34nJGomvR23ZJiqIFMoAQ
-
-推荐系统中稀疏特征Embedding的优化表示方法
-
-https://mp.weixin.qq.com/s/1xVPRIVwQQJfEen0RiNYvg
-
-谈谈推荐系统中的用户行为序列建模最新进展
-
-https://mp.weixin.qq.com/s/n5MYTk6V77Hazodw4pxnSQ
-
-基于多任务学习和负反馈的深度召回模型
-
-https://mp.weixin.qq.com/s/CuTEW0y7juWSBGlhltB7qw
-
-FGCNN：使用CNN进行特征生成的CTR预测模型
-
-https://zhuanlan.zhihu.com/p/143161957
-
-点积 vs. MLP：推荐模型到底用哪个更好？
-
-https://mp.weixin.qq.com/s/MSzojHCW8WPFNyF3aM1l2w
-
-腾讯&微博 GateNet: 使用门机制提升点击率预估效果
-
-# 人脸检测/识别+
-
-https://mp.weixin.qq.com/s/-VknGwKKY14cT-lZ7sC43A
-
-人脸识别--基于深度学习以人类为中心的图像理解
-
-https://mp.weixin.qq.com/s/bAlaCWg4OEprpoZqQFQg1w
-
-百度提出PyramidBox人脸检测算法
-
-https://mp.weixin.qq.com/s/CYZvFb7kryE-8HV3teGRzA
-
-有效遮挡检测的鲁棒人脸识别
-
-https://mp.weixin.qq.com/s/XTIl505glmfCItuiwuPLwg
-
-人脸聚类——Linkage Based Face Clustering via GCN
-
-https://mp.weixin.qq.com/s/CR4Nf_RklcXA45mswPv8Zw
-
-腾讯优图开源人脸检测算法DSFD，刷新两项数据集纪录
-
-https://mp.weixin.qq.com/s/B8r2YEd9UbKMTT8Tup2Y_w
-
-腾讯（优图）新技术的人脸检测（DSFD）
-
-https://zhuanlan.zhihu.com/p/62954487
-
-旷视研究院新出8000点人脸关键点，堪比电影级表情捕捉
-
-# 深度信息检索++
-
-https://mp.weixin.qq.com/s/jZCHyjhTW9JHW3xQSTzyYA
-
-深度学习搜索，Deep Learning for Search，327页pdf
-
-https://mp.weixin.qq.com/s/aZsj1FQnzHOr-YBcy_ljpw
-
-DNN在搜索场景中的应用
-
-https://mp.weixin.qq.com/s/1jgdI-Pt0PtN3oAs0Wh4XA
-
-阿里提出电商搜索全局排序方法，淘宝无线主搜GMV提升5%
-
-https://mp.weixin.qq.com/s/9Fcj5lO-JPfFVnRSSM_56w
-
-深度学习在美团搜索广告排序的应用实践
-
-https://mp.weixin.qq.com/s/wni3F9lKuO4OT32BVe0QDQ
-
-谷歌发大招：搜索全面AI化，不用关键词就能轻松“撩书”
-
-https://mp.weixin.qq.com/s/TrWwp-DBTrKqIT_Pfy_o5w
-
-阿里妈妈首次公开新一代智能广告检索模型，重新定义传统搜索框架
-
-https://mp.weixin.qq.com/s/fZv9FgbdQ1bWPoNdl9sF1A
-
-“宝石迷阵”与信息检索
-
-https://mp.weixin.qq.com/s/Vvo3Ti3XiGQz0IwLgATfWQ
-
-电商搜索算法技术的演进
-
-https://mp.weixin.qq.com/s/MpuUdZi8CWcu0b-ij-bHjA
-
-Jeff Dean出品：用机器学习索引替代B-Trees，3倍性能提升，10-100倍空间缩小
-
-https://mp.weixin.qq.com/s/uztYEW_azetOkOGiZcbCuw
-
-JeffDean又用深度学习搞事情：这次要颠覆整个计算机系统结构设计。这篇blog介绍了如何用DL方法提高内存访问的命中率。
-
-https://zhuanlan.zhihu.com/p/37020639
-
-读论文系列：CVPR2018 SSAH
-
-https://mp.weixin.qq.com/s/TdnstQaBcLaXg8BvuR7oYA
-
-基于素描图的细粒度图像检索
-
-https://mp.weixin.qq.com/s/N3JBHlqneG9dI0I26M3wHQ
-
-如何做好大规模视觉搜索？eBay基于实践总结出了7条建议
-
-https://mp.weixin.qq.com/s/8Twe3e3WKCY9pTiNtnW2sg
-
-重磅！谷歌等推出基于机器学习的数据库SageDB
-
-https://mp.weixin.qq.com/s/WpITPvYmixMHa0ha0MgWVA
-
-神马搜索如何提升搜索的时效性？
-
-# 语义分割的展望
-
-俗话说，“没有免费的午餐”（“No free lunch”）。基于深度学习的图像语义分割技术虽然可以取得相比传统方法突飞猛进的分割效果，但是其对数据标注的要求过高：不仅需要海量图像数据，同时这些图像还需提供精确到像素级别的标记信息（Semantic labels）。因此，越来越多的研究者开始将注意力转移到弱监督（Weakly-supervised）条件下的图像语义分割问题上。在这类问题中，图像仅需提供图像级别标注（如，有“人”，有“车”，无“电视”）而不需要昂贵的像素级别信息即可取得与现有方法可比的语义分割精度。
-
-另外，示例级别（Instance level）的图像语义分割问题也同样热门。该类问题不仅需要对不同语义物体进行图像分割，同时还要求对同一语义的不同个体进行分割（例如需要对图中出现的九把椅子的像素用不同颜色分别标示出来）。
-
-![](/images/article/Instance_level.jpg)
-
-此外，基于视频的前景／物体分割（Video segmentation）也是今后计算机视觉语义分割领域的新热点之一，这一设定其实更加贴合自动驾驶系统的真实应用环境。
-
-最后，目前使用的分割模型在对分割注释有限的大型概念词汇的识别方面表现欠佳。原因在于它们忽略了所有概念的固有分类和语义层次。例如，长颈鹿、斑马和马同属于有蹄类动物，这个大类描绘了它们的共同视觉特征，使得它们很容易与猫/狗区分开来。对人来说，即使你没见过斑马，但也不会把它错误的认成猫/狗。但目前的DL模型在这方面的能力还很薄弱。
+![](/images/article/S2VTarchitecture.png)
 
 参考：
 
-https://mp.weixin.qq.com/s/palhFeMnWOZj-T2cqQN7tw
+https://mp.weixin.qq.com/s/HqffHVMKJkA6H1E9ItQU4A
 
-新型语义分割模型：动态结构化语义传播网络DSSPN
+《sequence to sequence: video to text》视频描述的全文翻译
 
-# Mask R-CNN
+## 《Long-term Recurrent Convolutional Networks for Visual Recognition and Description》
 
-Mask R-CNN虽然挂着R-CNN的名头，但却是一个对象实例分割（不仅要分出对象的类别，连同一类对象的不同实例也要分出来）的网络。它是何恺明2017年的新作。
+Long-term Recurrent Convolutional Networks是LSTM的一种应用方式，它结合了LSTM、CNN、CRF等不同网络组件。
+
+![](/images/article/LSTM_X.png)
+
+上图展示了LSTM在动作识别、图片和视频描述等任务中的网络结构。
+
+![](/images/article/LSTM_X_2.png)
+
+上图展示了图片描述任务中几种不同的网络连接方式：
+
+1.单层LRCN。
+
+2.双层LRCN。CNN连接在第一个LSTM层。传统的LSTM只有一个输入，这里的CNN是第二个输入，也就是所谓的静态输入。可参看caffe的LSTM实现。
+
+2.双层LRCN。CNN连接在第二个LSTM层。
+
+![](/images/article/LSTM_X_3.png)
+
+![](/images/article/LSTM_X_4.png)
+
+![](/images/article/LSTM_X_5.png)
+
+这是视频描述任务中LSTM和CRF结合的示例。
+
+## 《Training RNNs as Fast as CNNs》
+
+这篇论文提出了如下图所示的Simple Recurrent Unit（SRU）的新结构：
+
+![](/images/article/SRU.jpg)
+
+由于普通LSTM计算步骤中，很多当前时刻的计算都依赖$$h_{t-1}$$的值，导致整个网络的计算无法并行化。SRU针对这一点去掉了当前时刻计算对于$$h_{t-1}$$的依赖，而仅保留$$C_{t-1}$$（这个计算较为廉价）以记忆信息，大大改善了整个RNN网络计算的并行性。
+
+但是SRU的精度没有LSTM高，需要通过增加layer和filter的数量来达到相同的精度，当然即使这样，计算时间仍然小于LSTM。
+
+参考：
+
+https://mp.weixin.qq.com/s/PsIa3XDFqZlY2tKcvqvddw
+
+Training RNNs as Fast as CNNs
+
+## 《Neural Machine Translation in Linear Time》
+
+该论文是Deepmind的作品，它提出的ByteNet，计算复杂度为线性，也是LSTM的优化方案之一。
+
+## 《Long Short-Term Memory Based Recurrent Neural Network Architectures for Large Vocabulary Speech Recognition》
+
+$$
+i_t=\delta(W_{ix}x_t+W_{im}m_{t-1}+W_{ic}c_{t-1}+b_i)\\
+f_t=\delta(W_{fx}x_t+W_{fm}m_{t-1}+W_{fc}c_{t-1}+b_i)\\
+c_t=f_t\odot c_{t-1}+i_t\odot g(W_{cx}x_t+W_{cm}m_{t-1}+b_c)\\
+o_t=\delta(W_{ox}x_t+W_{om}m_{t-1}+W_{oc}c_{t}+b_o)\\
+m_t=o_t\odot h(c_t)\\
+\color{blue}{y_t=W_{ym}m_t+b_y}
+$$
+
+上式是LSTM的公式（其中的最后一步在多数模型中，往往直接用$$y_t=m_t$$代替。），从中可以看出类似$$W_{ix}x_t+W_{im}m_{t-1}+W_{ic}c_{t-1}+b_i$$的FC运算占据了LSTM的绝大部分运算量。其中W的参数量为：
+
+$$W=\color{blue}{n_c\times n_c\times 4}+n_i\times n_c\times 4+\color{red}{n_c\times n_o}+n_c\times 3$$
+
+为了精简相关运算，Google的Hasim Sak于2014年提出了LSTMP。
+
+>Hasim Sak，土耳其伊斯坦布尔海峡大学博士，Google研究员。
+
+LSTMP的结构图如下：
+
+![](/images/img2/LSTMP.png)
+
+改写成数学公式就是：
+
+$$
+i_t=\delta(W_{ix}x_t+W_{im}r_{t-1}+W_{ic}c_{t-1}+b_i)\\
+f_t=\delta(W_{fx}x_t+W_{fm}r_{t-1}+W_{fc}c_{t-1}+b_i)\\
+c_t=f_t\odot c_{t-1}+i_t\odot g(W_{cx}x_t+W_{cm}r_{t-1}+b_c)\\
+o_t=\delta(W_{ox}x_t+W_{om}r_{t-1}+W_{oc}c_{t}+b_o)\\
+m_t=o_t\odot h(c_t)\\
+\color{blue}{r_t = W_{rm}m_t\\
+p_t = W_{pm}m_t\\
+y_t = W_{yr}r_t + W_{yp}p_t + b_y}
+$$
+
+LSTMP的主要思想是对$$m_t$$做一个映射，只有部分数据$$r_t$$参与recurrent运算，其余部分$$p_t$$直接输出即可（这一步是可选项，所以用虚框表示）。
+
+这样W的参数量为：
+
+$$W=\color{blue}{n_c\times n_r\times 4}+n_i\times n_c\times 4+\color{red}{n_r\times n_o+n_c\times n_r}+n_c\times 3$$
+
+参数量公式用蓝色和红色标出修改前后对应的部分，可以看出计算量有了明显下降。
+
+参考：
+
+http://blog.csdn.net/xmdxcsj/article/details/53326109
+
+模型压缩lstmp
+
+## Android NN
+
+Android NN除了支持原始版本的LSTM之外，还可支持peephole、CIFG、LSTMP、Layer Normalization等变种，以及它们的组合。其公式如下：
+
+$$\begin{eqnarray*}
+i_t =& \sigma(LN(W_{xi}x_t+W_{hi}h_{t-1}+W_{ci}C_{t-1})+b_i) & \\
+f_t =& \sigma(LN(W_{xf}x_t+W_{hf}h_{t-1}+W_{cf}C_{t-1})+b_f) & \\
+C_t =& clip(f_t \odot C_{t-1} + i_t \odot g(LN(W_{xc}x_t+W_{hc}h_{t-1})+b_c),\ t_{cell}) & \\ o_t =& \sigma(LN(W_{xo}x_t+W_{ho}h_{t-1}+W_{co}C_t)+b_o) & \\ & & \\
+ & clip(W_{proj}(o_t \odot g(C_t))+b_{proj},\ t_{proj}) & if\ there\ is\ a\ projection; \\
+h_t =& & \\ & o_t \odot g(C_t) & otherwise. \\ 
+\end{eqnarray*}$$
+
+## 《On the compression of recurrent neural networks with an application to lvcsr acoustic modeling for embedded speech recognition》
+
+![](/images/img2/RNN_SVD.png)
+
+这是另一篇RNN模型压缩的论文。上图中的a是原始RNN，而b是对$$W_h^l$$使用了SVD之后的RNN。
+
+## 《Video Summarization with Long Short-term Memory》
+
+这是一篇用于提取视频关键帧（也叫静态视频摘要）的论文，是南加州大学沙飞小组的作品。
+
+![](/images/img2/dppLSTM.png)
+
+上图是该文提出的DPP LSTM的网络结构图。它的主体是一个BiLSTM，算是中规中矩吧。
+
+该文的创新点在于提出了DPP loss的概念。上图中的$$y_t$$表示帧的分值（越大表示越重要），$$\phi_t$$表示帧之间的相似度。该文的实验表明，将两个特征分开抽取，有助于提升模型的准确度。
+
+这篇论文主要用到了3个数据集：
+
+TVSum dataset: 
+
+https://github.com/yalesong/tvsum
+
+这个需要Yahoo账号和一个高校的邮件地址才行。
+
+SumMe dataset: 
+
+https://people.ee.ethz.ch/~gyglim/vsum/#benchmark
+
+OVP and YouTube datasets: 
+
+https://sites.google.com/site/vsummsite/
+
+需要翻墙。
+
+## LSTM运算加速技巧
+
+LSTM的主要运算量集中在$$W[h_{t-1},x_t]$$上，这里实际上可以用$$W[(h_{t-2}+\Delta h_{t-1}),x_t]$$代替。
+
+由于时间序列通常具有惯性，因此$$\Delta h_{t-1}$$一般包含了大量的0，这对于某些具有跳0功能的硬件来说，是非常有利的。
+
+## Convolutional LSTM Network
 
 论文：
 
-《Mask R-CNN》
+《Convolutional LSTM Network: A Machine Learning Approach for Precipitation Nowcasting》
 
-代码：
+## 参考
 
-官方Pytorch版本：
+https://mp.weixin.qq.com/s/4IHzOAvNhHG9c8GP0zXVkQ
 
-https://github.com/facebookresearch/maskrcnn-benchmark
+Simple Recurrent Unit For Sentence Classification
 
-TensorFlow版本：
+https://mp.weixin.qq.com/s/fCzHbOi7aJ8-W9GzctUFNg
 
-https://github.com/hillox/TFMaskRCNN
+LSTM文本分类实战
 
-MXNet版本：
+http://mp.weixin.qq.com/s/3nwgft9c27ih172ANwHzvg
 
-https://github.com/TuSimple/mx-maskrcnn
+从零开始：如何使用LSTM预测汇率变化趋势
 
-![](/images/img2/mask_rcnn.png)
+https://mp.weixin.qq.com/s/M18c3sgvjV2b2ksCsyOxbQ
 
-上图是Mask R-CNN的网络结构图。它实际上就是在Faster R-CNN的基础上添加了一个FCN。
+Nested LSTM：一种能处理更长期信息的新型LSTM扩展
 
-![](/images/img3/Mask_R-CNN.png)
+https://mp.weixin.qq.com/s/XAbzaMXP3QOret_vxqVF9A
 
-上图也是Mask R-CNN的网络结构图，但它对Faster R-CNN中与本主题无关的部分做了省略。
+用深度学习LSTM炒股：对冲基金案例分析
 
-Mask R-CNN的要点主要有：
+https://mp.weixin.qq.com/s/eeA5RZh35BvlFt45ywVvFg
 
-- **RoI Align**
+可视化LSTM网络：探索“记忆”的形成
 
-RoI Align避免对RoI的边界或者块（bins）做任何量化，例如直接使用x/16代替[x/16]。
+https://mp.weixin.qq.com/s/h-MYTNTLy7ToPPEZ2JVHpw
 
-然而这就引来一个问题：如果x/16不是整数该怎么采样呢？
+阿里巴巴论文提出Advanced LSTM：关于更优时间依赖性刻画在情感识别方面的应用
 
-答案：对临近的整数采样点，使用双线性插值（bilinear interpolation）拟合，得到非整数采样点的值。
+https://mp.weixin.qq.com/s/pv3gQfCayGmsmGKLbMIFpA
 
-![](/images/img3/ROI_Align.png)
+神奇！只有遗忘门的LSTM性能优于标准LSTM
 
-- **独立的类别预测**
+https://mp.weixin.qq.com/s/8BPZ_M8EGk3KxkSleYWSNw
 
-把loss由`tf.nn.softmax_cross_entropy_with_logits`换成`tf.nn.sigmoid_cross_entropy_with_logits`。参见[《深度目标检测（五）》](/deep object detection/2018/12/01/Deep_Object_Detection_5.html#YOLOv3)的YOLOv3一节。没错，YOLOv3借鉴了Mask R-CNN的这一设计思路。
+训练可解释、可压缩、高准确率的LSTM
 
-- **对象实例分割**
+https://hanxiao.github.io/2018/06/24/4-Encoding-Blocks-You-Need-to-Know-Besides-LSTM-RNN-in-Tensorflow/
 
-Mask R-CNN只对RoI Align后的区域进行分割，而不像U-NET等会对全景进行分割。因此，更适合抠图之类的应用。
+4 Sequence Encoding Blocks You Must Know Besides RNN/LSTM in Tensorflow
 
-Mask R-CNN除了可以用于实例分割以外，还可用于关键点检测。这点在原始论文和FB的代码中有体现，但是在通常的介绍中往往被忽略。
+https://mp.weixin.qq.com/s/zMCBQ2D21HoDcDgDolmGMA
 
-![](/images/img3/Mask_R-CNN_keypoint.png)
+上海交大：基于近似随机Dropout的LSTM训练加速
 
-keypoint branch的输出结果是一个keypoint的heatmap（每个keypoint都有自己的heatmap），显然，heatmap中值最大的点就是keypoint的所在。
+https://mp.weixin.qq.com/s/wPYd2jLUPzlPwIZkb_wSbA
 
-当然ROI区域和原图，无论是坐标，还是尺寸，都有差异，需要通过插值恢复回去。Mask R-CNN使用的是bicubic插值，该方法计算量较大，因此实际中，多采用下文所述的基于Taylor展开的方法进行插值。
+深度递归LSTM-LRP非线性时变多因子模型
 
-《Invariant Features from Interest Point Groups》
+https://mp.weixin.qq.com/s/3djAWJs6ecDdPSpQMxqmrg
 
-参考：
+清华、李飞飞团队等提出强记忆力E3D-LSTM网络
 
-https://zhuanlan.zhihu.com/p/25954683
+https://mp.weixin.qq.com/s/__qC6Wzy4jaGNGzWr3eOIg
 
-Mask R-CNN个人理解
+引入额外门控运算，LSTM稍做修改，性能便堪比Transformer-XL
 
-https://mp.weixin.qq.com/s/E0P2B798pukbtRarWooUkg
+# Graph NN++
 
-Mask R-CNN的Keras/TensorFlow/Pytorch代码实现
+https://zhuanlan.zhihu.com/p/133739758
 
-https://zhuanlan.zhihu.com/p/30967656
+全面理解PinSage（工业落地：图神经网络+推荐系统）
 
-从R-CNN到Mask R-CNN
+https://mp.weixin.qq.com/s/VctNZsALrbDQDW3_zhGJsw
 
-https://www.zhihu.com/question/57403701
+在NLP中应用GCN的几种构图方法整理
 
-如何评价Kaiming He最新的Mask R-CNN?
+https://mp.weixin.qq.com/s/TnS4-seRxAs45A6SDSoACg
+
+图神经网络的预训练策略
+
+https://mp.weixin.qq.com/s/Pgz8cnDpX2mgexASnRzfhA
+
+浅谈图神经网络的局限性
+
+https://mp.weixin.qq.com/s/hQ-Fo_aizkcTxvzW0FSIEw
+
+VGAE：利用变分自编码器完成图重构
+
+https://zhuanlan.zhihu.com/p/137223381
+
+推荐系统的图方法
+
+https://mp.weixin.qq.com/s/hFtFjR4EIVN_9g93YjtuoQ
+
+GCMC：GNN在推荐系统中的应用
+
+https://mp.weixin.qq.com/s/u8XAbOautjZTA7ZhdSBaDA
+
+经典重温：图表示学习经典算法node2vec
+
+https://mp.weixin.qq.com/s/soH6jX7_fjq0iBBH-5bMsA
+
+Node2Vec论文+代码笔记
+
+https://mp.weixin.qq.com/s/zxFgW6ofimYQ9wlChTK8cw
+
+Recommender System with GNN
+
+https://mp.weixin.qq.com/s/_vbcLre5HIrOGbAjTzLFjA
+
+动态网络表征学习在推荐领域的创新与实践
+
+https://zhuanlan.zhihu.com/p/139359188
+
+关于GCN，我有三种写法
+
+https://mp.weixin.qq.com/s/QF9-Pz2X4qToObGWwViFBQ
+
+EGES：阿里在图嵌入领域中的探索
+
+https://mp.weixin.qq.com/s/WnF-fqQyr2VNqr75Jzoqsw
+
+Diff Pool：网络图的层次化表达
+
+https://mp.weixin.qq.com/s/8kCKqM3yuohc4xOoFd8hGg
+
+Heterogeneous Graph Neural Network
+
+https://mp.weixin.qq.com/s/HUjq4TopxWLx3QTh5ZxfIQ
+
+最新《图卷积神经网络》中文综述论文，26页pdf
+
+https://mp.weixin.qq.com/s/RuCxY92qlhWnbZVYDXY_BQ
+
+Mila唐建博士最新《图表示学习:算法与应用》2020研究进展，附59页ppt
+
+https://mp.weixin.qq.com/s/2PY1baildUoZaetYlsukIQ
+
+图卷积网络(GCN)的谱分析
+
+https://mp.weixin.qq.com/s/F9zt7eyHxTX7Gp0zpvnfcg
+
+一文直击Graph Embedding图表示学习的原理及应用
+
+https://mp.weixin.qq.com/s/qgZwi3ieMqPrg3t5lyjaZw
+
+元图(Meta-Graph)：元学习小样本连接预测
+
+https://mp.weixin.qq.com/s/17ozbpr2IIoq36VpBl3Crw
+
+基于知识图谱和图卷积神经网络的应用和开发
+
+https://mp.weixin.qq.com/s/mbr3u9SiYVPysBT9xuX0vg
+
+Hyperbolic Graph Convolutional Neural Networks
+
+https://www.zhihu.com/question/366088445
+
+请问全连接的图卷积网络(GCN)和self-attention这些机制有什么区别联系吗？

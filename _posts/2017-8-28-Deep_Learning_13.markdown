@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十三）——花式池化, Regularization, 深度信息检索
+title:  深度学习（十三）——花式池化, Regularization
 category: DL 
 ---
 
@@ -182,144 +182,144 @@ $$R_g(w^{(g)}) = \sum_{g=1}^{G} \lVert w^{(g)} \rVert_g = \sum_{g=1}^{G} \sum_{i
 
 Group Regularization也叫做Block Regularization或Structured Regularization。
 
-# 深度信息检索
+# 深度推荐系统+
 
-Information Retrieval是用户进行信息查询和获取的主要方式，是查找信息的方法和手段。狭义的信息检索仅指信息查询（Information Search）。即用户根据需要，采用一定的方法，借助检索工具，从信息集合中找出所需要信息的查找过程。广义的信息检索是信息按一定的方式进行加工、整理、组织并存储起来，再根据信息用户特定的需要将相关信息准确的查找出来的过程。
+https://zhuanlan.zhihu.com/p/100019681
 
-这方面的DL应用可参见以下的综述文章：
+推荐系统技术演进趋势：从召回到排序再到重排
 
-《MatchZoo: A Toolkit for Deep Text Matching》
+https://zhuanlan.zhihu.com/p/102918124
 
-## ARC-I & ARC-II
+微信看一看Embedding
 
-《Convolutional neural network architectures for matching natural language sentences》
+https://zhuanlan.zhihu.com/p/115781834
 
-## DSSM
+深度学习在花椒直播中的应用——推荐系统冷启动算法
 
-论文：
+https://mp.weixin.qq.com/s/ec88cMR4K6pWyHhJs7FEFQ
 
-《Learning deep structured semantic models for web search using clickthrough data》
+智能推荐算法在花椒直播中的应用
 
-### Word Hashing
+https://zhuanlan.zhihu.com/p/68897114
 
-DSSM已经意识到one-hot是一种低效的词向量表示方式，因此，它转而采用了一种叫做Word Hashing的技术。
+如何刻画用户的多样兴趣——MIND network阅读笔记
 
-Word Hashing是非常重要的一个trick，以英文单词来说，比如good，它可以写成`#good#`，然后按tri-grams来进行分解为`#go goo ood od#`，再将这个tri-grams灌入到bag-of-word中，这种方式可以非常有效的解决vocabulary太大的问题(因为在真实的web search中vocabulary就是异常的大)，另外也不会出现oov问题，因此英文单词才26个，3个字母的组合都是有限的，很容易枚举光。
+https://mp.weixin.qq.com/s/sbdnEMez_BKPzXOl1Z4AzQ
 
-那么问题就来了，这样两个不同的单词会不会产出相同的tri-grams，paper里面做了统计，说了这个冲突的概率非常的低，500K个word可以降到30k维，冲突的概率为0.0044%。
+DeepMatch：用于推荐&广告的深度召回匹配算法库
 
-但是在中文场景下，这个Word Hashing估计没有这么有效了。
+https://zhuanlan.zhihu.com/p/127030405
 
-上面讲述了Word Hashing的词向量的构建方法，这种方法也可以扩展到句子：统计一下句子中每个tri-grams出现的次数，然后用次数组成句子向量即可。
+对话推荐系统综述论文
 
-### 网络结构
+https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w
 
-![](/images/img3/DSSM.png)
+多值类别特征加入CTR预估模型的方法汇总
 
-上图是DSSM的网络结构：句子向量经过若干层的神经网络之后，得到了语义向量（semantic concept vectors）。计算两个语义向量的cos相似度，得到两个句子的匹配程度。
+https://zhuanlan.zhihu.com/p/101298495
 
-### 参考
+稠密特征加入CTR预估模型有哪些方法？
 
-https://www.microsoft.com/en-us/research/project/dssm/
+https://zhuanlan.zhihu.com/p/101136699
 
-微软的DSSM模型
+推荐系统中的深度匹配模型
 
-https://www.cnblogs.com/baiting/p/7195998.html
+https://mp.weixin.qq.com/s/POEnU7bNG44Mz9844WuzIw
 
-深度语义匹配模型-DSSM及其变种
+腾讯视频是如何给你高效精准推送的
 
-https://blog.csdn.net/u013074302/article/details/76422551
+https://zhuanlan.zhihu.com/p/99953120
 
-语义相似度计算——DSSM
+YouTube推荐系统算法梳理
 
-https://mp.weixin.qq.com/s/U2r4qDLh4WZFgAIoF_SRPg
+https://mp.weixin.qq.com/s/zeF7C7YrLqOjIWPen04K2Q
 
-金融客服AI新玩法：语言学运用、LSTM+DSSM算法、多模态情感交互
+搜索模型核心技术公开，淘宝如何做用户建模？
 
-https://mp.weixin.qq.com/s/HMhvcAYRatN0n5EiiNVoXQ
+https://www.zhihu.com/question/362190044
 
-详解深度语义匹配模型DSSM
+推荐系统领域有啥巧妙的idea？
 
-https://www.cnblogs.com/guoyaohua/p/9229190.html
+https://zhuanlan.zhihu.com/p/96796043
 
-DSSM：深度语义匹配模型（及其变体CLSM、LSTM-DSSM）
+推荐系统中如何做多目标优化
 
-https://zhuanlan.zhihu.com/p/141545370
+https://zhuanlan.zhihu.com/p/52876883
 
-深度学习语义相似度系列：Ranking Similarity
+深度CTR预估模型中的特征自动组合机制演化简史
 
-https://mp.weixin.qq.com/s/2UJQkPuhvFYT2jmuxLJ8VA
+https://mp.weixin.qq.com/s/Ni42SEukRBGDUHu_bh3Lig
 
-实践篇：语义匹配在贝壳找房智能客服中的应用
+基于LSTM模型的广告库存预估算法
 
-https://mp.weixin.qq.com/s/6cTG9347dOLxiUs_-tdpnQ
+https://mp.weixin.qq.com/s/FYghBvkye8J7BqPje4JhFw
 
-百度开源：语义匹配应用介绍和源代码
+汽车之家推荐系统排序算法迭代之路
 
-https://mp.weixin.qq.com/s/PxyazOPKV3eB-qat8hM9ZQ
+https://mp.weixin.qq.com/s/2whZpeQPXggHRDSEUnQZ-w
 
-神经网络语义匹配技术
+加州大学-Liwei Wu博士论文：协同过滤与排序进展，150页pdf
 
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650749368&idx=3&sn=fc20d9e6682c74227282df3133cea06c
+https://mp.weixin.qq.com/s/jIjdYIbdls5lIbF7TVfbdA
 
-基于IR-transformer、IRGAN模型，解读搜狗语义匹配技术
+阿里又出排序新模型，还被国际顶会认可了
 
-https://mp.weixin.qq.com/s/Xnea50Eisq9rzhGFa1iTFA
+https://mp.weixin.qq.com/s/fUdKIqygxqlkuv0P4wiIRg
 
-DRr-Net：基于动态重读机制的句子语义匹配方法
+智能推荐算法在直播场景中的应用
 
-## 表示型和交互型
+https://mp.weixin.qq.com/s/HE0ckOe71dROafTZt-2mAA
 
-从模型的本质来看可以分为两种类型：表示型和交互型。表示型的模型会在最后一层对待匹配的两个句子进行相似度计算，交互型模型会尽早的让两个句子交互，充分应用交互特征。
+最新边信息推荐系统综述
 
-https://mp.weixin.qq.com/s/5_QqP3CIBpM4zM5CWIxYuA
+https://mp.weixin.qq.com/s/GazjnVwQKItrph7_n7SGTw
 
-深度语义匹配模型原理篇一：表示型
+飞猪的“猜你喜欢”如何排序？
 
-## CDSSM
+https://mp.weixin.qq.com/s/x4Q5di8oVAAZBJBTlY8usw
 
-《Learning semantic representations using convolutional neural networks for web search》
+深入理解推荐系统：梳理YouTube推荐算法
 
-## MV-LSTM
+https://zhuanlan.zhihu.com/p/128988454
 
-《A deep architecture for semantic matching with multiple positional sentence representations》
+谷歌最新双塔DNN召回模型——应用于YouTube大规模视频推荐场景
 
-## CNTN
+https://mp.weixin.qq.com/s/Bpw-q3wISbCAKHsuYQo0QQ
 
-《Convolutional Neural Tensor Network Architecture for Community-Based Question Answering》
+阿里DMR:融合Match中协同过滤思想的深度排序模型
 
-## DRMM
+https://mp.weixin.qq.com/s/D57jP5EwIx4Y1n4mteGOjQ
 
-《A deep relevance matching model for ad-hoc retrieval》
+深度学习推荐系统中各类流行的Embedding方法（上）
 
-## MatchPyramid
+https://mp.weixin.qq.com/s/N76XuNJ7yGzdP6NHk2Rs-w
 
-《Text Matching as Image Recognition》
+深度学习推荐系统中各类流行的Embedding方法（下）
 
-## Match-SRNN
+https://mp.weixin.qq.com/s/VHRV1Z6F8-3o6b-3v-5_BA
 
-《Match-SRNN: Modeling the Recursive Matching Structure with Spatial RNN》
+深度时空网络、记忆网络与特征表达学习在CTR预估中的应用
 
-## K-NRM
+https://mp.weixin.qq.com/s/j34nJGomvR23ZJiqIFMoAQ
 
-《End-to-End Neural Ad-hoc Ranking with Kernel Pooling》
+推荐系统中稀疏特征Embedding的优化表示方法
 
-## 代码搜索
+https://mp.weixin.qq.com/s/1xVPRIVwQQJfEen0RiNYvg
 
-https://mp.weixin.qq.com/s/B3Uv-dhB5VYJnu06N4lYBg
+谈谈推荐系统中的用户行为序列建模最新进展
 
-深度学习遇见代码搜索，一篇论文概览神经代码搜索
+https://mp.weixin.qq.com/s/n5MYTk6V77Hazodw4pxnSQ
 
-https://mp.weixin.qq.com/s/GFIxA9kEGNJ9rg96mRw0PQ
+基于多任务学习和负反馈的深度召回模型
 
-自然语言语义代码搜索之路
+https://mp.weixin.qq.com/s/CuTEW0y7juWSBGlhltB7qw
 
-## 参考
+FGCNN：使用CNN进行特征生成的CTR预测模型
 
-https://github.com/harpribot/awesome-information-retrieval
+https://zhuanlan.zhihu.com/p/143161957
 
-信息检索优质资源汇总
+点积 vs. MLP：推荐模型到底用哪个更好？
 
-https://mp.weixin.qq.com/s/5ba3EM6e9R-i3UpzUhm49w
+https://mp.weixin.qq.com/s/MSzojHCW8WPFNyF3aM1l2w
 
-神经信息检索导论，微软研究员129页最新书册
+腾讯&微博 GateNet: 使用门机制提升点击率预估效果

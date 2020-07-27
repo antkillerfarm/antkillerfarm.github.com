@@ -4,9 +4,11 @@ title:  Javascript（二）
 category: language 
 ---
 
-# Javascript
+# Animate.css
 
-### Step2：回调函数嵌套问题（续）
+## Step2：回调函数嵌套问题（续）
+
+首先需要明确一点：回调嵌套并没有执行效率的问题。JS脚本都是单线程执行的，因此无论采用何种写法，都不会改变函数的执行顺序。回调嵌套的问题主要出在可读性方面。
 
 回调嵌套的解决方法有三种：
 
@@ -20,7 +22,7 @@ category: language
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello/super_button2.html
 
-### Step3:延迟动画
+## Step3:延迟动画
 
 除了Step2的办法之外，还可以用设置延迟属性animation-delay的办法，设定动画的播放次序。这种方法的灵活性超过前种方法，但控制难度较高，需要通过公式计算各动画的起始时间，以达到正确的效果。示例代码：
 
@@ -38,21 +40,37 @@ Step3还添加了fadeOutLeft动画，为了在两种动画之间切换，引入�
 
 此外，还要注意display和opacity的差异，前者如果不显示了，就会彻底消失，而后者不显示时，仍然还会占据它原来所在的位置。
 
-### JS细节
+## JS细节
 
-#### onclick与href='javascript:function()'的区别
+### onclick与href='javascript:function()'的区别
 
 1.onclick事件会比href属性先执行。
 
 2.`<a href="javascript:void(0);" onclick="function()"></a>`或者`<a href="javascript:;" onclick="function()"></a>`表示这个链接不跳转，而执行一段js脚本。
 
-#### import js的时机
+### import js的时机
 
 和C/Java/Python等不同，js的加载并不一定需要在html的开头，而可以在任意位置。有些特效甚至必须在布局元素之后，再加载。
 
 比如D3的绘图代码，必须出现在需要绘图的div之后。否则d3.select之类的操作选择不到任何对象。
 
-## JS特效资料
+## Web Animation API
+
+教程：
+
+danielcwilson.com/blog/2015/07/animations-intro/
+
+Web Animation API目前已经被大多数主流浏览器支持，对于不支持的，可以使用如下库，进行兼容调用：
+
+https://github.com/web-animations/web-animations-js
+
+参考：
+
+https://zhuanlan.zhihu.com/p/27570643
+
+CSS Animations vs Web Animations API
+
+# JS特效资料
 
 https://github.com/wagerfield/flat-surface-shader
 
@@ -66,7 +84,7 @@ https://github.com/hustcc/canvas-nest.js
 
 动态线条特效
 
-## Monaco Editor
+# Monaco Editor
 
 Monaco Editor是MS开源的一个在线代码编辑工具，可提供类似VS code的功能。
 
@@ -80,7 +98,7 @@ https://www.cnblogs.com/isaboy/p/monaco-editor.html
 
 微软开源代码编辑器monaco-editor
 
-## Javascript在客户端的使用
+# Javascript在客户端的使用
 
 Javascript在服务器前端的成功，促使人们思考其在客户端的使用。
 
@@ -104,7 +122,7 @@ DirectUI技术最早出现在Windows XP中。比如，“我的电脑”左侧�
 
 2012年以后，以CEF（Chromium Embedded Framework）和XULRunner为代表的浏览器派，开始逐渐崭露头角。从此，开发桌面应用程序，不再是Javascript的禁区。桌面应用UI和网页前端开始呈现融合的局面。
 
-## TypeScript
+# TypeScript
 
 TypeScript是JavaScript的一个超集，而且本质上向这个语言添加了可选的静态类型和基于类的面向对象编程。
 
@@ -122,7 +140,7 @@ TypeScript文件的后缀是`.ts`，它不能直接在浏览器中运行，而�
 
 `tsc helloworld.ts`
 
-## D3.js
+# D3.js
 
 D3.js是一个数据可视化的库。
 
@@ -136,7 +154,7 @@ https://www.cnblogs.com/fastmover/p/7779660.html
 
 D3.js从入门到“放弃”指南
 
-## Traffic Demo
+# Traffic Demo
 
 2019.9
 
@@ -156,11 +174,11 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/traff
 
 众所周知，js是单线程的，所以这个版本也是单线程的，逻辑稍微复杂了一些。
 
-## 框架
+# 框架
 
 React、Angular、Vue.js似乎是目前最流行的三个框架了。
 
-## WebAssembly
+# WebAssembly
 
 WebAssembly，简称Wasm，是一种能在浏览器上执行的二进制虚拟机字节码。
 
@@ -202,7 +220,7 @@ https://www.zhihu.com/question/402807137/answer/1322391162
 
 有没有让JavaScript在JS引擎上稳定、更快运行的Style Guide?
 
-## 多线程编程
+# 多线程编程
 
 Javascript原则上是单线程的，阻塞和其他异步的需求是通过循环来解决的。当线程需要处理大规模的计算的时候，需要使用Web Worker进行多线程操作。
 
@@ -212,7 +230,7 @@ https://mp.weixin.qq.com/s/87C9GAFb0Y_i5iPbIL5Hzg
 
 Javascript多线程编程​的前世今生
 
-## Flex
+# Flex
 
 http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
 
@@ -226,7 +244,7 @@ https://mp.weixin.qq.com/s/9f4UaZWzYSJB_ZdwhS3A3A
 
 40个CSS布局技巧
 
-## 参考
+# 参考
 
 https://zhuanlan.zhihu.com/p/22989691
 
@@ -271,39 +289,3 @@ GitHub已完全弃用jQuery，问题是为什么？
 https://mp.weixin.qq.com/s/WHh9v3icCc90PwiLyv0Hng
 
 为什么Facebook的API以一个循环作为开头？
-
-https://mp.weixin.qq.com/s/GQ2azFxcmXrY78rTAdxuVA
-
-JS/CSS体积减少了67%，我们是如何做到的？
-
-https://mp.weixin.qq.com/s/c1bMljAx1QWz9QQJX7sHmg
-
-大部分教程不会告诉你的12个JS技巧
-
-https://mp.weixin.qq.com/s/pdOVONHbjfIJPW45nEw1fg
-
-前端本地文件操作与上传
-
-http://chrome.360.cn/test/html5/index.html
-
-一个用于检测浏览器对html 5支持情况的网页
-
-https://www.zhihu.com/question/59578433
-
-为什么现在又流行服务端渲染html？
-
-https://mp.weixin.qq.com/s/aNPAfJIHL14NFtLfRvxUpQ
-
-10万人的大场馆如何“画座位”？
-
-https://www.jianshu.com/p/c8b86b09daf0
-
-函数防抖和节流
-
-https://mp.weixin.qq.com/s/vEbTP1SDP3GW20XAP825jw
-
-一种字体，变成千姿百态艺术字，可尖可圆可开花，隔壁设计师馋哭了
-
-https://mp.weixin.qq.com/s/0pI0F6c-BSLiGdLetQ5qNQ
-
-彻底弄懂浏览器缓存策略
