@@ -230,6 +230,8 @@ https://mp.weixin.qq.com/s/zPvvf1VptQ1M7iVEcxN-AQ
 
 Halide也是一个高性能的图形DSL+编译器的项目。它影响了后来的TVM、Taichi等计算引擎项目。
 
+如果你想用普通的CPU做加速，又不想去优化算法，那么halide将是非常优秀的选择。唯一要做的，就是把算法用halide重写一遍即可。
+
 官网：
 
 https://halide-lang.org/
@@ -240,7 +242,25 @@ https://www.zhihu.com/question/294625837
 
 如何评价Halide？
 
-# 推荐系统的工程细节
+https://zhuanlan.zhihu.com/p/122217135
+
+halide编程技术指南
+
+## Lift
+
+Lift也是一种并行编程及优化的语言。
+
+官网：
+
+http://www.lift-project.org/
+
+参考：
+
+https://www.zhihu.com/question/313697268
+
+如何评价lift编程语言?
+
+# 推荐系统的工程细节+
 
 https://mp.weixin.qq.com/s/8jcaMIwNJQ1408VM-ucr_g
 
@@ -389,23 +409,3 @@ https://mp.weixin.qq.com/s/7hvYdOTnnw5pDDMx6N66Uw
 https://mp.weixin.qq.com/s/j7j3u0YGo4DomXnJFmzoGA
 
 万字长文讲解如何基于智能推荐的精细化运营
-
-https://mp.weixin.qq.com/s/OB2r761_8xcR2CXKS3JwYQ
-
-在搜索引擎广告关键词生成上，算法可以做什么？
-
-https://mp.weixin.qq.com/s/PFUjEyf3lZY_ZYL2BAxO0A
-
-文本反垃圾在花椒直播中的应用概述
-
-https://mp.weixin.qq.com/s/5InRjVu3naxrA_9KAD2IJA
-
-深度学习是如何在美团点评推荐业务中实践的？
-
-https://mp.weixin.qq.com/s/VkCio3oyoTJuiMHrpL1s4g
-
-阿里飞猪“猜你喜欢”推荐排序实践
-
-https://mp.weixin.qq.com/s/Q-emQCpmlibK8WAqzLTxAw
-
-让推荐系统变得会“说话”———达观推荐理由设计实践

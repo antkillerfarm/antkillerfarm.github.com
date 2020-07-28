@@ -258,48 +258,6 @@ https://mp.weixin.qq.com/s/KxgA1U-mh9Tc1J1T9Aedrw
 
 NLP中各框架对变长序列的处理全解
 
-# 图数据库+
-
-## 其他图数据库
-
-开源的、流行的图数据库主要有以下几种：Neo4j、OrientDB、ArangoDB、JanusGraph、Dgraph。
-
-Neo4j历史悠久，且长期处于图数据库领域的龙头地位，但它开源的社区版本只支持单机，不支持分布式。
-
-OrientDB和ArangoDB起步比较早，最初是一个单机的图数据库，后来随着用户数据量的不断增加，增加了分布式模式，但支持的不是很好。
-
-JanusGraph和Dgraph发展的比较晚，从设计之初就考虑了分布式和扩展性，所以对分布式支持的非常好，且都是完全开源免费的。
-
-## 参考
-
-https://mp.weixin.qq.com/s/YfNlDoGOlHtpG9VFBCZHnQ
-
-VLDB2019特邀报告《图处理》综述进展，滑铁卢大学数据库大牛M. Tamer Özsu教授，170页ppt
-
-https://mp.weixin.qq.com/s/PkFscGq8tjzc3HQiF-SSsA
-
-在图数据上做机器学习，应该从哪个点切入？
-
-https://mp.weixin.qq.com/s/uYP8Eyz36JyTWska0hvtuA
-
-字节跳动自研万亿级图数据库&图计算实践
-
-https://mp.weixin.qq.com/s/uZStvVZp3UHLY3BppgaRLg
-
-JanusGraph VS Dgraph：贝壳分布式图数据库技术选型之路
-
-https://mp.weixin.qq.com/s/3rLTRtSWbf31aNRDs4rmoQ
-
-Dgraph简介篇
-
-https://mp.weixin.qq.com/s/rhtaVTON761wxGDqT9EIoQ
-
-Dgraph原理篇
-
-https://mp.weixin.qq.com/s/5nBS0FiOynhGS6mY2dZ1ng
-
-分布式图数据库在贝壳的应用实践
-
 # 编译原理
 
 ## 教程
@@ -373,3 +331,49 @@ https://www.zhihu.com/question/344231876/answer/812481811
 https://juejin.im/post/5d70fb2ce51d4557ca7fddaa
 
 Android CPU, Compilers, D8 & R8
+
+## Polyhedral Model
+
+基于多面体模型的编译优化技术代表了程序自动并行化领域众多方向最先进的水平,成为国际上多个编译研发团队的研究热点。
+
+https://www.cs.colostate.edu/~pouchet/
+
+888.11-Polyhedral Compilation Foundations
+
+http://www.jos.org.cn/jos/ch/reader/create_pdf.aspx?file_no=5563
+
+基于多面体模型的编译“黑魔法”
+
+https://zhuanlan.zhihu.com/p/111680367
+
+Polyhedral Model, Interval Analysis and Compilers
+
+https://www.zhihu.com/question/65708935
+
+深入学习auto vectorization和polyhedral变换方面的优化技术有哪些资料？
+
+https://pliss2019.github.io/albert_cohen_slides.pdf
+
+Polyhedral Compilation as a Design Pattern for Compiler Construction
+
+## PPCG
+
+Polyhedral Parallel Code Generation
+
+代码：
+
+https://github.com/Meinersbur/ppcg
+
+## PLUTO
+
+An automatic parallelizer and locality optimizer for affine loop nests
+
+官网：
+
+http://pluto-compiler.sourceforge.net/
+
+参考：
+
+https://www.zhihu.com/question/329294933
+
+如何评价PLUTO编译器？

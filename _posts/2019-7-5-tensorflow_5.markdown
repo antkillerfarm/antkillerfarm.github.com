@@ -258,15 +258,21 @@ https://zhuanlan.zhihu.com/p/58918363
 
 TVM: Deep Learning模型的优化编译器
 
-https://zhuanlan.zhihu.com/p/111680367
+https://zhuanlan.zhihu.com/p/87664838
 
-Polyhedral Model, Interval Analysis and Compilers
+也谈TVM和深度学习编译器
 
-https://www.zhihu.com/question/65708935
+https://zhuanlan.zhihu.com/p/91283238
 
-深入学习auto vectorization和polyhedral变换方面的优化技术有哪些资料？
+TVM图编译器Relay简单探究
 
 # GLOW
+
+代码：
+
+https://github.com/pytorch/glow
+
+参考：
 
 https://zhuanlan.zhihu.com/p/102127047
 
