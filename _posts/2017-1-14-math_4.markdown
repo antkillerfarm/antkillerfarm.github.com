@@ -1,10 +1,57 @@
 ---
 layout: post
-title:  数学狂想曲（四）——矩阵&向量的积, 20世纪10大算法, 双曲函数和悬链线, Gabriel's Horn
+title:  数学狂想曲（四）——矩阵&向量的积, 20世纪10大算法, 双曲函数和悬链线
 category: math 
 ---
 
-# 统计杂谈（续）
+# 统计杂谈
+
+### Mersenne Twister（续）
+
+官方的代码由于要考虑各种兼容性，写的复杂无比，这里有一个精简版：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/Tool/Gcc/random/philox.c
+
+还有一个进阶版，增加了多线程并行生成、均匀分布变换、正态分布变换的功能：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/Tool/Gcc/random/philox_1.c
+
+----
+
+https://bashtage.github.io/randomgen/index.html
+
+这是一个RNG（Random Number Generation）项目，集成了多种算法。
+
+参考：
+
+https://blog.csdn.net/wuha391/article/details/78486021
+
+随机算法mt19937
+
+https://blog.csdn.net/caimouse/article/details/55668071
+
+mt19937是什么鬼？
+
+http://michaelbrundage.com/note/2005/01/05/random-number-generation/
+
+这是一篇RNG方面的综述。
+
+http://www.azillionmonkeys.com/qed/random.html
+
+这篇blog讲述了将随机整数变为浮点数，需要注意的问题。
+
+## 统计力学与组合优化
+
+MCMC和Gibbs Sampling最早都是统计力学的概念，后来才被用于机器学习领域。现将统计力学与组合优化的对应关系罗列如下：
+
+| 统计力学 | 组合优化 |
+|:--:|:--:|
+| 样本 | 问题实例 |
+| 状态（构形） | 构形 |
+| 能量 | 代价函数 |
+| 温度 | 控制参数 |
+| 基态能量 | 最小代价 |
+| 基态构形 | 最小构形 |
 
 ## 频率统计学派 vs. 贝叶斯学派
 
@@ -236,33 +283,3 @@ https://mp.weixin.qq.com/s/AFTaowkCz1pfFzaMDen-RA
 悬链线背后的故事和推导，百度百科已经比较详细了，不再赘述。参见：
 
 http://baike.baidu.com/view/45656.htm
-
-然而对于实际工程中的悬索结构，由于悬索自身的重量较其所提拉的跨度结构要轻得多，在力学简单计算中可以忽略，结构受力模式成为在水平长度范围内的均布荷载。这种荷载模式与拱结构相同，因此可以推导出在该荷载模式下的悬垂线为一抛物线，线型与拱结构相同，但内力为拉力。
-
-在工程中完全按照悬链线进行设计的结构，恐怕只有高压输电线了。由于不承担任何自重以外的附加荷载，输电线的数学曲线会与悬链线完全一致。
-
-双曲函数的性质，参见：
-
-https://zhuanlan.zhihu.com/p/20042215
-
-可能是最好的讲解双曲函数的文章
-
-![](/images/article/trigonometric.jpg)
-
-![](/images/article/hyperbolic.jpg)
-
-参考：
-
-https://mp.weixin.qq.com/s/VOPis0wgmi-U-uM3Vnapbw
-
-这根链子什么来头？
-
-# Gabriel's Horn
-
-Gabriel's Horn，又名托里拆利小号（Torricelli's trumpet），是数学史上非常经典的模型。它最早由Evangelista Torricelli提出，故名。
-
->注：Evangelista Torricelli，1608~1647，意大利物理学家和数学家。主要研究气压、水压，提出了托里拆利原理，并发明了气压计。
-
-![](/images/article/GabrielHorn.png)
-
-上图是Gabriel's Horn的图像，它由$$y=\frac{1}{x}(x>1)$$绕x轴旋转得到。Torricelli发现Gabriel's Horn是个**体积有限，而表面积无限**的形状。

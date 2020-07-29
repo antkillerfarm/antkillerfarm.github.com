@@ -50,6 +50,10 @@ https://mp.weixin.qq.com/s/2cBTzaIrPuG3oHVM_niYGQ
 
 机器学习中特征选择怎么做？这篇文章告诉你
 
+https://mp.weixin.qq.com/s/JM5ny8JPumXoL6wLD4-rpg
+
+数据维度爆炸怎么办？详解5大常用的特征选择方法
+
 ## KL散度
 
 KL散度（Kullback–Leibler divergence）是两个随机分布间距离的度量。其定义如下：

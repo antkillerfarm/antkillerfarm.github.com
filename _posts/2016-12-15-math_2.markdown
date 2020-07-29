@@ -235,6 +235,22 @@ $$\Gamma({1 \over 2})=\sqrt{\pi}$$
 
 $$B(m,n) = \frac{\Gamma(m)\Gamma(n)}{\Gamma(m+n)}$$
 
+上式中的B函数，也就是现在的Beta函数。
+
+对Gamma函数的定义做一个变形，就可以得到如下式子：
+
+$$\int_0^{\infty} \frac{x^{\alpha-1}e^{-x}}{\Gamma(\alpha)}dx = 1$$
+
+取积分中的函数作为概率密度，就得到一个形式最简单的Gamma分布的密度函数：
+
+$$Gamma(x|\alpha) = \frac{x^{\alpha-1}e^{-x}}{\Gamma(\alpha)}$$
+
+如果做一个变换$$x=\beta t$$，就得到Gamma分布的更一般的形式：
+
+$$Gamma(t|\alpha, \beta) = \frac{\beta^\alpha t^{\alpha-1}e^{-\beta t}}{\Gamma(\alpha)}$$
+
+其中$$\alpha$$称为shape parameter，主要决定了分布曲线的形状; 而$$\beta$$称为rate parameter或者inverse scale parameter($$1/\beta$$称为scale parameter)，主要决定曲线有多陡。
+
 参考：
 
 http://blog.csdn.net/u010945683/article/details/48950063
@@ -290,19 +306,3 @@ $$\Pr(Y=k) = (1 - p)^k\,p\,$$
 如果p为定值，$$n\to\infty$$，则极限分布为正态分布。正态分布的性质参见[《图像处理理论（二）》](/graphics/2016/06/30/graphics_2.html#Gauss)。
 
 如果$$p\to 0,n\to\infty$$，则极限分布为泊松分布（Poisson distribution）。
-
-## 泊松分布
-
-泊松分布有两个定义：
-
-定义一：一个随机变量X, 只能取值非负整数（x=0,1,2,...），且相应的概率为$$e^{-\lambda }\frac{\lambda ^x}{x!}$$，则称该变量服从poisson分布。
-
-定义二：假定一个事件在一段时间内随机发生，且符合以下条件：
-
-（1）将该时间段无限分隔成若干个小的时间段，在这个接近于零的小时间段里，该事件发生一次的概率与这个极小时间段的长度成正比。
-
-（2）在每一个极小时间段内，该事件发生两次及以上的概率恒等于零。
-
-（3）该事件在不同的小时间段里，发生与否相互独立。
-
-则该事件称为poisson process。

@@ -380,10 +380,6 @@ https://mp.weixin.qq.com/s/5klwQCPtiZOwFJYHDOpWFg
 
 语义分割标注工具Semantic Segmentation Editor快速安装指南
 
-https://mp.weixin.qq.com/s/NmB8Jbm8zEwxQ8PGoz_wvg
-
-关键词匹配利器FlashText
-
 https://mp.weixin.qq.com/s/1EeYmZGoa-xpWmIvUoqCyw
 
 瑞士小哥开源文本英雄Texthero：一行代码完成数据预处理

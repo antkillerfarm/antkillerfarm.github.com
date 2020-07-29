@@ -238,3 +238,7 @@ https://mp.weixin.qq.com/s/A8TnhOFLQOhEqphE760yvw
 https://mp.weixin.qq.com/s/ejGjsGA1ijPP--j3BLcEFA
 
 Linux并发与同步
+
+https://mp.weixin.qq.com/s/CAPU8bjJWobQs6JHHMasvQ
+
+Linux服务端最大并发数是多少？

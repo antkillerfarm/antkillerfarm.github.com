@@ -32,6 +32,10 @@ https://mp.weixin.qq.com/s/rOgI5Vmj5i43RI1iHdSVXg
 
 866页《计算机视觉：原理，算法，应用，学习》最新第五版-附下载
 
+https://mp.weixin.qq.com/s/8ensybSIt8nedFtNZctKpA
+
+图像处理手册第七版，1032页pdf
+
 # 历史
 
 ## 模拟图像

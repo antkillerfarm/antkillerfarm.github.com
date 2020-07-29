@@ -196,6 +196,10 @@ https://www.cnblogs.com/mengdd/p/3237991.html
 
 图形学理论知识BRDF双向反射分布函数（Bidirectional Reflectance Distribution Function）
 
+https://zhuanlan.zhihu.com/p/163305630
+
+如何判断点在三角形内部
+
 ## 术语
 
 Material Point Method（物质点法）

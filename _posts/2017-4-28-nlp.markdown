@@ -419,18 +419,6 @@ https://zhuanlan.zhihu.com/p/48504619
 
 写给NLP研究者的编程指南
 
-### TorchNLP
-
-代码：
-
-https://github.com/kolloldas/torchnlp
-
-参考：
-
-https://mp.weixin.qq.com/s/xCHvB7gKCBxXk1_rAtG0sw
-
-基于PyTorch/TorchText的自然语言处理库
-
 ### FlashText
 
 在NLP任务中，清理文本数据通常需要替换句子中的关键词或从句子中提取关键词。通常，这样的操作可以用正则表达式来完成，但是如果要搜索的词汇量过大，操作就会变得麻烦。Python中基于FlashText算法的FlashText模块，为这种情况提供了一个合适的替代方案。
@@ -449,10 +437,10 @@ https://mp.weixin.qq.com/s/IKxweABi4IEyXjKNw9BJgA
 
 正则表达式太慢？这里有一个提速100倍的方案：FlashText
 
-### fuzzywuzzy
+https://mp.weixin.qq.com/s/ImtSR6VwYalN6gTgjVJOsQ
 
-fuzzywuzzy可以很容易地实现诸如字符串比较比率、token比率等操作。对于匹配不同数据库中的记录也很方便。
+十五分钟完成Regex五天任务：FlashText，语料库数据快速清理利器
 
-代码：
+https://mp.weixin.qq.com/s/NmB8Jbm8zEwxQ8PGoz_wvg
 
-https://github.com/seatgeek/fuzzywuzzy
+关键词匹配利器FlashText

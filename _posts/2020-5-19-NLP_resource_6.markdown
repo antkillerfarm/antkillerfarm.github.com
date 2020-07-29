@@ -356,6 +356,18 @@ https://pliss2019.github.io/albert_cohen_slides.pdf
 
 Polyhedral Compilation as a Design Pattern for Compiler Construction
 
+https://mp.weixin.qq.com/s/QEooKxP1sm5O90AUiqKQEQ
+
+Polyhedral Model—AI芯片软硬件优化利器（一）
+
+https://mp.weixin.qq.com/s/NRtud1UImE5ArZ2zQWFRyg
+
+Polyhedral Model—AI芯片软硬件优化利器（二）
+
+https://mp.weixin.qq.com/s/bLBIrJb82IsnyoXSEr2xtw
+
+Polyhedral Model—AI芯片软硬件优化利器（三）
+
 ## PPCG
 
 Polyhedral Parallel Code Generation

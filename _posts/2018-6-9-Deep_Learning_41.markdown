@@ -48,6 +48,10 @@ https://mp.weixin.qq.com/s/sZOlUiqOjNjt7q17B_5QnQ
 
 新一代联邦学习技术及应用实战
 
+https://mp.weixin.qq.com/s/f9Wskw0DFwYXD8TEMvL9Tw
+
+人工智能新技术：联邦学习的前世今生
+
 ## 参考
 
 >龙明盛，清华本科（2008）+博士（2016），迁移学习的最早提出者之一。清华大学副教授，博导。   

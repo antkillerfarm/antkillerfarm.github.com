@@ -4,19 +4,27 @@ title:  数学狂想曲（五）——玻尔兹曼分布, 概率分布（2）
 category: math 
 ---
 
-# Gabriel's Horn（续）
+# 双曲函数和悬链线（续）
 
-$$V=\pi\int\limits_1^a\left(\frac{1}{x}\right)^2\mathrm{d}x=\pi\left(1-\frac{1}{a}\right)$$
+然而对于实际工程中的悬索结构，由于悬索自身的重量较其所提拉的跨度结构要轻得多，在力学简单计算中可以忽略，结构受力模式成为在水平长度范围内的均布荷载。这种荷载模式与拱结构相同，因此可以推导出在该荷载模式下的悬垂线为一抛物线，线型与拱结构相同，但内力为拉力。
 
-$$\lim_{a\to\infty}V=\lim_{a\to\infty}\pi\left(1-\frac{1}{a}\right)=\pi\cdot\lim_{a\to\infty}\left(1-\frac{1}{a}\right)=\pi$$
+在工程中完全按照悬链线进行设计的结构，恐怕只有高压输电线了。由于不承担任何自重以外的附加荷载，输电线的数学曲线会与悬链线完全一致。
 
-$$A=2\pi\int\limits_1^a {\frac{1}{x}}\sqrt{1+\left(-\frac{1}{x^2}\right)^2}\mathrm{d}x > 2\pi\int\limits_1^a \frac{\mathrm{d}x}{x}=2\pi\ln(a)$$
+双曲函数的性质，参见：
 
-$$\lim_{a\to\infty}A\ge\lim_{a\to\infty}2\pi\ln(a)=\infty$$
+https://zhuanlan.zhihu.com/p/20042215
 
-但是反过来的情况，即表面积有限，而体积无限的情况，也就是所谓的Gabriel's horn逆现象，是不存在的。——实际上，众所周知的是表面积一定的形状中，球形体积最大。
+可能是最好的讲解双曲函数的文章
 
-Gabriel's horn现象不仅存在于表面积/体积中，也存在于长度/面积中，即所谓的无限长海岸线问题。对此的进一步研究，开拓了数学中的分形几何领域。
+![](/images/article/trigonometric.jpg)
+
+![](/images/article/hyperbolic.jpg)
+
+参考：
+
+https://mp.weixin.qq.com/s/VOPis0wgmi-U-uM3Vnapbw
+
+这根链子什么来头？
 
 <a name="Boltzmann"/>
 

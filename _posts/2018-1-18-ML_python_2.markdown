@@ -166,6 +166,10 @@ https://mp.weixin.qq.com/s/biIjn9qPPDyX_tdvmdyRLA
 
 Pandas处理时序数据
 
+https://mp.weixin.qq.com/s/rVqzgyV-oCJNbY_49iAPnA
+
+array, list, tensor，Dataframe，Series之间互相转换总结
+
 ## 并行Pandas
 
 https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw

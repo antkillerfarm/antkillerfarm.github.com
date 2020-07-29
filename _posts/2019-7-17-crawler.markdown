@@ -258,6 +258,10 @@ https://mp.weixin.qq.com/s/E3PGP6FDBFUcghYfpe6vsg
 
 唯一ID生成算法剖析
 
+https://mp.weixin.qq.com/s/ZbZRMFjbl5oG8yncv8hCtQ
+
+认识“雪花ID”：如何在分布式环境中大规模生成唯一ID？
+
 # IEEE 802
 
 IEEE 802是一系列关于局域网和城域网的标准。

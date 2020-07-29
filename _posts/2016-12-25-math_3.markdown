@@ -4,9 +4,23 @@ title:  数学狂想曲（三）——统计杂谈
 category: math 
 ---
 
-# 概率分布（1）
+# 概率分布（1）（续）
 
-## 泊松分布（续）
+## 泊松分布
+
+泊松分布有两个定义：
+
+定义一：一个随机变量X, 只能取值非负整数（x=0,1,2,...），且相应的概率为$$e^{-\lambda }\frac{\lambda ^x}{x!}$$，则称该变量服从poisson分布。
+
+定义二：假定一个事件在一段时间内随机发生，且符合以下条件：
+
+（1）将该时间段无限分隔成若干个小的时间段，在这个接近于零的小时间段里，该事件发生一次的概率与这个极小时间段的长度成正比。
+
+（2）在每一个极小时间段内，该事件发生两次及以上的概率恒等于零。
+
+（3）该事件在不同的小时间段里，发生与否相互独立。
+
+则该事件称为poisson process。
 
 比如，一段时间t内，电话交换站收到的呼叫次数k，就是泊松分布的。很显然，呼叫次数和时间是有关系的，时间越长，呼叫次数越多。反之，$$t\to 0$$，则$$k\to 0$$。这正好符合二项分布的泊松极限的定义。
 
@@ -159,6 +173,10 @@ https://mp.weixin.qq.com/s/ELZhHhHAfK-hQbKXQslIZA
 
 深度学习必懂的13种概率分布
 
+https://mp.weixin.qq.com/s/UAXSGp0Lx_-HvIMEH3ttLg
+
+tweedie回归在信贷业务中的应用
+
 # 统计杂谈
 
 ## 统计模拟
@@ -234,47 +252,3 @@ http://www.thesalmons.org/john/random123/
 
 Philox算法的实现一般以philox_4x32_10的形式命名，它表明算法一次能生成4个32位的无符号数，10表示运算迭代的次数。
 
-官方的代码由于要考虑各种兼容性，写的复杂无比，这里有一个精简版：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/Tool/Gcc/random/philox.c
-
-还有一个进阶版，增加了多线程并行生成、均匀分布变换、正态分布变换的功能：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/Tool/Gcc/random/philox_1.c
-
-----
-
-https://bashtage.github.io/randomgen/index.html
-
-这是一个RNG（Random Number Generation）项目，集成了多种算法。
-
-参考：
-
-https://blog.csdn.net/wuha391/article/details/78486021
-
-随机算法mt19937
-
-https://blog.csdn.net/caimouse/article/details/55668071
-
-mt19937是什么鬼？
-
-http://michaelbrundage.com/note/2005/01/05/random-number-generation/
-
-这是一篇RNG方面的综述。
-
-http://www.azillionmonkeys.com/qed/random.html
-
-这篇blog讲述了将随机整数变为浮点数，需要注意的问题。
-
-## 统计力学与组合优化
-
-MCMC和Gibbs Sampling最早都是统计力学的概念，后来才被用于机器学习领域。现将统计力学与组合优化的对应关系罗列如下：
-
-| 统计力学 | 组合优化 |
-|:--:|:--:|
-| 样本 | 问题实例 |
-| 状态（构形） | 构形 |
-| 能量 | 代价函数 |
-| 温度 | 控制参数 |
-| 基态能量 | 最小代价 |
-| 基态构形 | 最小构形 |
