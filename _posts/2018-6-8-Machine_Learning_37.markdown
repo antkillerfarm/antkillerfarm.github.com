@@ -287,7 +287,7 @@ https://mp.weixin.qq.com/s/NlJ4-b5SjIjPGgvLUuSxFw
 
 孩子，有时候并不是生活欺骗了你，而是你可能还不懂概率统计……
 
-# 模型压缩与加速+
+# 模型压缩与加速进阶++
 
 https://mp.weixin.qq.com/s/L49cqZ2PXP-x4Y6xBJG5cQ
 

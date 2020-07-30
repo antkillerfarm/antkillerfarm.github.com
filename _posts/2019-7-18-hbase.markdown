@@ -195,11 +195,17 @@ https://mp.weixin.qq.com/s/vyF0VAF8xjEWrBnS1_DtkA
 
 # Docker
 
+## 概述
+
 Docker是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的Linux机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。
 
 官网：
 
 https://www.docker.com/
+
+教程：
+
+https://www.runoob.com/docker/docker-tutorial.html
 
 下图显示了Docker和VM之间的差别：
 
@@ -217,7 +223,41 @@ https://www.docker.com/
 
 https://download.docker.com/linux/static/stable/x86_64/
 
+## 使用
+
+1.镜像和容器的关系，类似于类和对象的关系，它们有各自不同的ID。
+
+保存/加载镜像：`docker save/load`
+
+保存/加载容器：`docker export/import`
+
+启动镜像：`docker run`
+
+启动容器：`docker start`
+
+2.
+
+列出镜像：`docker images`
+
+操作镜像：`docker image`
+
+3.容器和宿主机的文件交换
+
+从容器往宿主机copy：
+
+`docker cp 容器id:/path_in_container /path_on_host`
+
+从宿主机往容器copy：
+
+`docker cp /pathonhost 容器id:/pathincontainer`
+
 参考：
+
+https://www.cnblogs.com/dyh004/p/9122639.html
+
+docker容器与宿主交互数据
+
+## 参考
 
 http://blog.csdn.net/colorant/article/details/20608157
 

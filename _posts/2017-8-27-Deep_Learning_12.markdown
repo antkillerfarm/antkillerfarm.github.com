@@ -312,7 +312,7 @@ https://mp.weixin.qq.com/s/afX8Y84nTS20q4Y36uOWqQ
 
 复旦提出GaitSet算法，步态识别的重大突破！
 
-# 模型压缩与加速
+# 模型压缩与加速进阶+
 
 https://mp.weixin.qq.com/s/m9I5TM9uJcgZvMusO667OA
 

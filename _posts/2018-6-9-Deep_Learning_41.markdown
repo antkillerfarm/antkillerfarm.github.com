@@ -359,32 +359,14 @@ https://zhuanlan.zhihu.com/p/57083034
 
 Deep Domain Adaptation论文集(四)：基于生成对抗网络GAN
 
-https://mp.weixin.qq.com/s/jYdeaCCaQJwqxK9h6MzJuA
+https://zhuanlan.zhihu.com/p/57656210
 
-基于深度神经网络的少样本学习综述
+Deep Domain Adaptation论文集(五)：基于数据重构的迁移方法
 
-# 模型压缩与加速
+https://zhuanlan.zhihu.com/p/57930557
 
-https://mp.weixin.qq.com/s/5NM9M1oY8bwsEqdBRVYpMg
+Deep Domain Adaptation论文集(六)：源域与目标域特征空间不一致的处理方法
 
-网络规模更小、速度更快，这是谷歌提出的MorphNet
+https://zhuanlan.zhihu.com/p/58514431
 
-https://mp.weixin.qq.com/s/SC3ebx-C4N4H8B_R6K09cg
-
-分段的人脸检测在移动端的应用
-
-https://mp.weixin.qq.com/s/_C5AvD3YmRH2dmBjbEZFrQ
-
-神经网络子网络压缩10倍，精确度保持不变
-
-https://zhuanlan.zhihu.com/p/65348860
-
-南邮提出实时语义分割的轻量级网络：LEDNET
-
-https://zhuanlan.zhihu.com/p/67272163
-
-百度提出关于网络压缩和加速的新剪枝算法
-
-https://mp.weixin.qq.com/s/jHv3Amti1YZq51Df2mNFtg
-
-network sliming:加快模型速度同时不损失精度
+Domain Adaptation：不用深度网络，如何处理源域和目标域异构问题？

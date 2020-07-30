@@ -6,18 +6,6 @@ category: DL
 
 # 迁移学习（续）
 
-https://zhuanlan.zhihu.com/p/57656210
-
-Deep Domain Adaptation论文集(五)：基于数据重构的迁移方法
-
-https://zhuanlan.zhihu.com/p/57930557
-
-Deep Domain Adaptation论文集(六)：源域与目标域特征空间不一致的处理方法
-
-https://zhuanlan.zhihu.com/p/58514431
-
-Domain Adaptation：不用深度网络，如何处理源域和目标域异构问题？
-
 https://mp.weixin.qq.com/s/U45X5kKMw_E4vfHfVmWZTA
 
 FSAF：来自CMU的Single-Shot目标检测算法
@@ -158,6 +146,10 @@ https://mp.weixin.qq.com/s/6aBzR0O3pwA8-btsuDX82g
 
 现代NLP中的零样本学习
 
+https://mp.weixin.qq.com/s/jYdeaCCaQJwqxK9h6MzJuA
+
+基于深度神经网络的少样本学习综述
+
 # 深度ISP
 
 ## 数据集
@@ -283,6 +275,10 @@ https://zhuanlan.zhihu.com/p/140926754
 https://mp.weixin.qq.com/s/uT4eln61NNCdHYWLeTNsbQ
 
 对数字屏幕拍照时的摩尔纹怎么去除？
+
+https://zhuanlan.zhihu.com/p/161806533
+
+论文阅读：神经形态视觉传感器（事件相机）的研究进展及应用综述
 
 # LSM
 
