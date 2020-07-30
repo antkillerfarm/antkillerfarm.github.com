@@ -31,7 +31,7 @@ sigwait(&sigs_to_catch, &sig);
 
 # 查看内存使用情况
 
-## top命令
+## top
 
 top命令可在进程这一级查看内存、运行时间、CPU等的使用情况。并可根据不同属性对结果排序：
 
@@ -55,9 +55,15 @@ https://mp.weixin.qq.com/s/FV13ma9LxI1gsgi9ovU4Mw
 
 30个实例详解TOP命令
 
-## free命令
+## free
 
 free命令的内容比较概括，主要包含系统内存的整体使用情况，不深入到进程一级。
+
+## glances
+
+glances算是top的威力加强版了。
+
+`sudo apt install glances`
 
 # 查看CPU核数
 
