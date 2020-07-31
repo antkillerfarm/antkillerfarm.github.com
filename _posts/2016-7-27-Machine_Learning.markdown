@@ -131,6 +131,14 @@ https://zhuanlan.zhihu.com/p/35323714
 
 梯度、散度、旋度、Jacobian、Hessian、Laplacian的关系图
 
+https://mp.weixin.qq.com/s/869EVyCmYPQKBA-kdo0lNQ
+
+张量101
+
+https://mp.weixin.qq.com/s/iEi2UWEwxsO5C8Ra74jFaQ
+
+张量求导和计算图
+
 ## 梯度下降算法
 
 公式2的求极值问题，实际上就是求驻点（stationary point）的问题，即求$$\nabla(f)=0$$的点的问题。

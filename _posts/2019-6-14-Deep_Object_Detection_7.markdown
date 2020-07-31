@@ -288,6 +288,10 @@ https://mp.weixin.qq.com/s/LQOzrlaEOsrsMHj-V8l3hQ
 
 FreeAnchor：抛弃单一的IoU匹配，更自由的anchor匹配方法
 
+https://zhuanlan.zhihu.com/p/163266388
+
+Anchor-free应用一览：目标检测、实例分割、多目标跟踪
+
 # 其它目标检测网络
 
 ## A-Fast-RCNN

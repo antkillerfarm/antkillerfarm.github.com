@@ -387,6 +387,10 @@ https://mp.weixin.qq.com/s/c0hszsSDS-u4z-83Y7km8Q
 
 pdf文档解析之pdfminer
 
+https://mp.weixin.qq.com/s/1BoBHbXXOGPZ4HK437lH4Q
+
+6款Python特殊文本格式处理库推荐
+
 ## mypy
 
 mypy是一个针对python语言的静态类型检查工具。

@@ -162,6 +162,10 @@ https://mp.weixin.qq.com/s/-ALThz4RR9tIhTl5cVbJ8Q
 
 生成组合仿射变换矩阵，裁剪+缩放+平移+斜切+旋转
 
+https://mp.weixin.qq.com/s/B8LU892NA7Pz7-HjI58LWg
+
+Python还能实现图片去雾？FFA去雾算法、暗通道去雾算法用起来！
+
 # 计算机图形学
 
 https://mp.weixin.qq.com/s/hI9Z3l2eVJxkPbL8zG5uGA

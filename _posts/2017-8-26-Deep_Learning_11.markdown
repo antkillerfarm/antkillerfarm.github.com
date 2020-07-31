@@ -110,6 +110,10 @@ https://blog.csdn.net/tintinetmilou/article/details/81607721
 
 Depthwise卷积与Pointwise卷积
 
+https://mp.weixin.qq.com/s/KEWEC6s0wYQhYpyh6dKvQQ
+
+MixConv：来自Google Brain的混合Depthwise卷积核
+
 ## 感受野
 
 Receptive Field本来是神经科学领域的概念，后来才被推广到DL（尤其是CNN）领域。

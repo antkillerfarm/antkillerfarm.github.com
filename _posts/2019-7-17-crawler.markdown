@@ -401,3 +401,7 @@ Wi-Fi简史
 https://mp.weixin.qq.com/s/9gDGQhzRAL3pj35VAinZbQ
 
 设计模式在外卖营销业务中的实践
+
+https://mp.weixin.qq.com/s/KYq_nEXQ-5WYdYzZvGLGGg
+
+我向面试官讲解了单例模式，他对我竖起了大拇指

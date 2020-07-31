@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十三）——MemNet, RDN, ShuffleSeg, SVDF, LCNN
+title:  深度学习（二十三）——MemNet, RDN, ShuffleSeg, SVDF, LCNN, Image Caption Generation
 category: DL 
 ---
 
@@ -175,3 +175,159 @@ $$S_{[i,:,:]}=X*D_{[i,:]}$$
 http://blog.csdn.net/feynman233/article/details/69785592
 
 LCNN论文阅读笔记
+
+# Image Caption Generation
+
+Image Caption Generation的目标是：给定一张图片，让计算机用一句话来描述这张图片。如果将这里的Image换成Video，那就是Video Caption Generation了。
+
+当然，它也有反操作：Generating Image/Videos from Captions。
+
+参考：
+
+http://geek.csdn.net/news/detail/97193
+
+李理：从Image Caption Generation理解深度学习（part I）
+
+http://geek.csdn.net/news/detail/98776
+
+李理：从Image Caption Generation理解深度学习（part II）
+
+https://mp.weixin.qq.com/s/i4zL-bPaPXUlwpKZzlRtcg
+
+Image Captioning36页最新综述
+
+https://zhuanlan.zhihu.com/p/30893160
+
+CVPR2017 Image Caption有关论文总结
+
+https://mp.weixin.qq.com/s/3l4mYVSVfjFS_06j3OvX8g
+
+阿里提出新图像描述框架，解决梯度消失难题
+
+https://mp.weixin.qq.com/s/O1LqJftEezBuuA8JHeqMzw
+
+基于对比学习的Image Captioning
+
+https://mp.weixin.qq.com/s/-K3WIo64_wJb9p6C49Z5fA
+
+基于属性学习和额外知识库的图像描述生成和视觉问答
+
+https://mp.weixin.qq.com/s/CBqDR7JEPfhIwTc8BDdeoQ
+
+“诗画合一”的跨媒体理解与检索
+
+https://mp.weixin.qq.com/s/vRHA3Hf1ivsgKBB2XuECNg
+
+李飞飞论文：神经网络是怎样给一幅图增加文字描述，实现“看图说话”的？
+
+https://mp.weixin.qq.com/s/DXRiGSI0p8u7yA9uW1hHxA
+
+最新四篇CVPR2018 视频描述生成相关论文—双向注意力、Transformer、重构网络、层次强化学习
+
+https://mp.weixin.qq.com/s/bDLVD_8LscgWSNp0ZNc0Pg
+
+图像和文本的融合表示学习——Text2Image和Image2Text
+
+https://mp.weixin.qq.com/s/oV8gcKqmp43EBYzQhr5S6w
+
+逆视觉问答任务：一种根据回答与图像想问题的模型
+
+https://mp.weixin.qq.com/s/YgYod-gcFZruEGtE4wF87w
+
+牛津大学提出全新生成式模型“SQAIR”，用于移动目标的视频理解
+
+https://mp.weixin.qq.com/s/eBNoTDOMLlVymiU3LUqSgQ
+
+用Attention模型自动生成图像字幕
+
+https://mp.weixin.qq.com/s/4wuYNYGDesNgsJ13y65XQA
+
+AI都可以将文字轻松转成图像
+
+https://mp.weixin.qq.com/s/TtU0R8P-YIq8JOJrgHP07w
+
+Facobook开源视觉问答VQA框架：Pythia
+
+https://mp.weixin.qq.com/s/a0Xt_hkcW2OVlEzhQFWugg
+
+由浅及深，细致解读图像问答 VQA 2018 Challenge冠军模型Pythia
+
+https://zhuanlan.zhihu.com/p/35305264
+
+一文看懂深度学习中的VQA(视觉问答)技术
+
+https://mp.weixin.qq.com/s/shBHKh2emSIL5uWV7po8cw
+
+梅涛：“看图说话”
+
+https://mp.weixin.qq.com/s/BQy3qpmQqeQquhf92hwcvQ
+
+2017 VQA Challenge第一名技术报告
+
+https://mp.weixin.qq.com/s/0yb-YRGe-q4-vpKpuE4D_w
+
+多种注意力机制互补完成VQA（视觉问答）
+
+https://mp.weixin.qq.com/s/YBaELQlBHOZTGEqc2WI9NQ
+
+MIT等提出NS-VQA：结合深度学习与符号推理的视觉问答
+
+https://mp.weixin.qq.com/s/gaNSQ_8JGqX4a3lGuf-9fA
+
+如何让电脑成为看图说话的高手？
+
+https://mp.weixin.qq.com/s/-b8FuEQlpEb5G0L0QAxVEA
+
+如何使用深度学习为照片自动生成文本描述
+
+https://zhuanlan.zhihu.com/p/50784504
+
+《Reconstruction Network for Video Captioning》阅读笔记
+
+https://mp.weixin.qq.com/s/tEzZ770T1NpYLAxUK-MwIg
+
+综述：Image Caption 任务之语句多样性
+
+https://zhuanlan.zhihu.com/p/53220566
+
+《Adaptive Co-Attention Network for NER in Tweet》阅读笔记
+
+https://mp.weixin.qq.com/s/sQoqt-7EqZmy5gvIWTtMKQ
+
+更有智慧的眼睛：图像描述（Image Caption）&视觉问答（VQA）综述（上）
+
+https://mp.weixin.qq.com/s/3Y5f7JsxsmmuCjAX625h1Q
+
+MirrorGAN出世！浙大等提出文本-图像新框架
+
+https://mp.weixin.qq.com/s/1rtONnhwEc3Osf9gP5fBCQ
+
+李飞飞CVPR最新论文“文本转图”效果优化可多一步：物体关系描述
+
+https://mp.weixin.qq.com/s/9XiAJzC2_vmZturE9ELVLA
+
+多级语言与视觉集成用于文本-剪辑检索
+
+https://mp.weixin.qq.com/s/UehKCDiBRnjZWLEcx_iU-g
+
+微软最新提出ObjGAN，输入一句话秒生成图片
+
+https://mp.weixin.qq.com/s/p8K4eixOwCiUkhzntKYa-Q
+
+视觉问答：VQA经典模型Up-Down以及VQA 2017challenge 冠军方案解读
+
+https://mp.weixin.qq.com/s/hGaX4I_WsPv9P_WAHaDuog
+
+NLP+CV《桥接视觉与语言的研究综述》，带你全面了解视觉+语言最新应用和方法
+
+https://mp.weixin.qq.com/s/XrElAz67uxEo-1zEea9dxA
+
+Video Description视频描述综述论文-方法、数据集和评估指标，UWA
+
+https://mp.weixin.qq.com/s/rbqsBrVBs374GipQ2QXUwg
+
+看图说话之随心所欲
+
+https://mp.weixin.qq.com/s/St6ndWeW9P1vvnhNBF4Nyw
+
+使用神经网络为图像生成标题

@@ -162,6 +162,10 @@ https://mp.weixin.qq.com/s/mFRhp9pJRa9yHwqc98FMbg
 
 BERT在美团搜索核心排序的探索和实践
 
+https://mp.weixin.qq.com/s/MPGF3tkNn3PBA_7S-fo9eg
+
+谷歌新模型突破BERT局限：NLP版“芝麻街”新成员Big Bird长这样
+
 # Transformer进阶
 
 https://mp.weixin.qq.com/s/-Y7Qy-5aJNJ5bx8QJf3k2w

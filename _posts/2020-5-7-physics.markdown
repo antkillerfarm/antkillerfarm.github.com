@@ -146,36 +146,6 @@ https://mp.weixin.qq.com/s/Ld28qHczQ1NfFPGlJQGXKQ
 
 # 物理
 
-https://mp.weixin.qq.com/s/lB6dfjS5TAxjMndLCXMWgQ
-
-憋住不放的屁最后去哪了？知道真相的我再也不忍屁了！
-
-https://mp.weixin.qq.com/s/BIy4Ly3eIMOrXRbpjFRFYQ
-
-男人最喜欢在家干的这件事，居然是在马桶上......
-
-https://mp.weixin.qq.com/s/mDgnsn1xsI1WN3UhxPGPrQ
-
-通过这些动图，让你秒懂高中物理原理!
-
-https://mp.weixin.qq.com/s/2n-60v-ocfszU9xhbG4Ofg
-
-达·芬奇和宋代画家告诉你，除了诗和远方，世上还有散射现象（瑞利散射、米氏散射）
-
-https://mp.weixin.qq.com/s/foZaIzpyxiRf9_9O7f6EaQ
-
-985大学首次登上Nature封面（超疏水材料）
-
-https://mp.weixin.qq.com/s/hnDjc8H9US4vZM4PZADZYg
-
-如何修建岩浆护城河
-
-https://mp.weixin.qq.com/s/KsGGMCKsQlHYxXONOTthGQ
-
-当你按下“除湿”键时，空调内究竟发生了什么？
-
-----
-
 ![](/images/img3/spectrum.png)
 
 ----
@@ -273,3 +243,9 @@ https://mp.weixin.qq.com/s/DS4XYkaaQBV5NjMRLovO_g
 http://lssf.cas.cn/lssf/kpyd/zsk/kyjd/201006/t20100616_4513340.html
 
 欧洲核子研究中心（CERN）
+
+----
+
+过去玻璃窗的制作方法基本都是吹个球或者静置，但这种方法制作的玻璃基本都不平，所以那时的玻璃窗只能小块用木头框隔开。
+
+英国皮尔金顿平板玻璃兄弟有限公司的阿拉斯塔、皮尔金顿于1952年在一次偶然的机会，看到一层油漂浮在水面上，该公司根据上述这一设想，发明了一种生产平板玻璃的革命性的方法-浮法工艺。它是因玻璃液漂浮在熔融的金属表面上获得抛光成型而得名的。

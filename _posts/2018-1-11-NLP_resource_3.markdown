@@ -280,6 +280,10 @@ https://mp.weixin.qq.com/s/rhlSlrGwgUvDITZ06tfSzg
 
 短文本相似度算法研究
 
+https://zhuanlan.zhihu.com/p/164957257
+
+WMD系列方法介绍（词移距离方法）
+
 ## 文本匹配
 
 https://zhuanlan.zhihu.com/p/111769969

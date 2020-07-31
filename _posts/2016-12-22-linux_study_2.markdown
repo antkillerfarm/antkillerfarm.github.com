@@ -65,6 +65,14 @@ glances算是top的威力加强版了。
 
 `sudo apt install glances`
 
+## bashtop
+
+bashtop是一个用Bash编写的Linux资源监视器，可以显示处理器、内存、磁盘、网络和进程的使用情况与状态。
+
+代码：
+
+https://github.com/aristocratos/bashtop
+
 # 查看CPU核数
 
 复杂版：

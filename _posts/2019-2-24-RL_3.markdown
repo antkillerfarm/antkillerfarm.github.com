@@ -229,6 +229,14 @@ https://zhuanlan.zhihu.com/p/81819678
 
 矩阵特征分解求动态规划的终极解法
 
+https://mp.weixin.qq.com/s/630VEIh0Cbu7i8imE7L39w
+
+回溯算法和动态规划，到底谁是谁爹？
+
+https://mp.weixin.qq.com/s/-_DqyBIG3aSDWIYtkD7xuA
+
+看动画轻松理解“递归“与“动态规划”
+
 # Monte-Carlo
 
 ## 概率算法

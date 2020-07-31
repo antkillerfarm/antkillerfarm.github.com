@@ -174,256 +174,64 @@ https://mp.weixin.qq.com/s/RqsjyYwvbj41cMCXkFj6sg
 
 B站UP主自制的开源OCR翻译器走红Github
 
-# Graph NN+
+https://mp.weixin.qq.com/s/K_qAWYTA9fBTAeNRR7s82A
 
-https://mp.weixin.qq.com/s/emPDgw_c68JgbpYnem4JvA
+文字识别在高德地图数据生产中的演进
 
-一文读懂简化的图卷积网络GCN（SGC）
+https://mp.weixin.qq.com/s/x-HE-86T5SK6Y_SVX_ZJBA
 
-https://mp.weixin.qq.com/s/olt_i6JxfslFSdbz0Dx4oA
+使用神经网络提取PDF表格工具来了，支持图片
 
-用于深度时空图建模的Graph WaveNet
+# AutoDL+
 
-https://mp.weixin.qq.com/s/LzaP6BWaKXL4O_Jf9QN7Rw
+https://mp.weixin.qq.com/s/Ho6XDRYmOBs9TqLMq7aPAg
 
-基于层次化注意力图网络和多视角学习的商品推荐
+MetaQNN: 与Google同场竞技，MIT经典作，基于Q-Learning的神经网络搜索
 
-https://mp.weixin.qq.com/s/EKb9hN9cFrwNtSWWBpE4dw
+https://mp.weixin.qq.com/s/5NGCr6oMW2p5u4kF7YMCPw
 
-首次基于神经架构搜索自动生成图卷积结构，刷新人体动作识别准确率
+NAS太难了，搜索结果堪比随机采样！华为ICLR 2020论文给出6条建议
 
-https://mp.weixin.qq.com/s/-Fw8HcrQjBoYA4lXk0NZ3Q
+https://zhuanlan.zhihu.com/p/110527110
 
-图变换网络：Graph Transformer Network
+Neural Architecture Search
 
-https://mp.weixin.qq.com/s/nigeDLq-HrtELfhfWj5qow
+https://zhuanlan.zhihu.com/p/111213620
 
-自注意力图池化
+AutoML在计算机视觉领域的能与不能
 
-https://mp.weixin.qq.com/s/_uoyv-NAn8GypYXGsLvjhg
+https://mp.weixin.qq.com/s/MIJHiYk-CjYtmW_9zW4hjA
 
-Graph U-Nets
+Hyper-Parameter Optimization，56页pdf
 
-https://zhuanlan.zhihu.com/p/78466344
+https://mp.weixin.qq.com/s/y-5Gh0Jy3Fpz8xvw_tOICg
 
-从源头探讨GCN的行文思路
+MixPath：基于权重共享的神经网络搜索统一方法
 
-https://mp.weixin.qq.com/s/YNIwmR8K-H2eKbKoZSZZ-Q
+https://mp.weixin.qq.com/s/tYV_ratEA0NxzJukF-RTSA
 
-CIKM最佳应用论文：11亿节点的大型图，看闲鱼如何用图卷积过滤垃圾评论
+玩转网络结构搜索？你需要更大的搜索空间
 
-https://mp.weixin.qq.com/s/6RSYTlNvw7TyOJsjHf1iYQ
+https://mp.weixin.qq.com/s/IRDE4RqwXR5W7QFhD_tSPQ
 
-基于图上下文知识融入的预训练语言模型
+AutoML在深度学习模型设计和优化中有哪些用处？
 
-https://mp.weixin.qq.com/s/0B1ROCg7SMn0I7-5HVeMIg
+https://zhuanlan.zhihu.com/p/143730467
 
-用图神经网络改善视频的多标签分类
+One Shot NAS总结
 
-https://mp.weixin.qq.com/s/M7nzr6n4tZAMR1CXo3Q0OQ
+https://mp.weixin.qq.com/s/e7Whr2Im5fu8O7zF95Afkw
 
-基于图神经网络的CTR预测中的特征交互建模
+进化算法如何用于自动模型搜索(NAS)
 
-https://mp.weixin.qq.com/s/ee_Mq2vzJ2z253B7PZZc9w
+https://mp.weixin.qq.com/s/dS3nHGcQ1VoOyVBcRPFtkg
 
-2019年，异质图神经网络领域有哪些值得读的顶会论文？
+AutoML都有哪些核心技术，如何对其进行长期深入学习
 
-https://mp.weixin.qq.com/s/QONDTuzv_jIbVwSXxHMyIw
+https://mp.weixin.qq.com/s/A3Bg4-WoEQxFk3G5hCKNPQ
 
-一文读懂图卷积GCN
+连续可微分架构如何用于网络结构搜索
 
-https://mp.weixin.qq.com/s/lwqYZurdie3lJ_-X9zgoyQ
+https://mp.weixin.qq.com/s/0AE8w_0cZGcMZIwjUTKPrg
 
-加深图卷积神经网络的可能性探索
-
-https://github.com/microsoft/tf-gnn-samples
-
-微软开源了一个用TF实现的GNN例程库
-
-https://mp.weixin.qq.com/s/r4_5GwA8Olqh6M1p_6eYPg
-
-图神经网络！2020 AI研究趋势！是什么？有什么用？
-
-https://mp.weixin.qq.com/s/ae515_P6zA5SLN5-Edxbig
-
-图卷积网络Graph Convolutional Networks
-
-https://mp.weixin.qq.com/s/LbMblqRWeitShSUsnebDAg
-
-基于GNN的图表示学习
-
-https://mp.weixin.qq.com/s/eg_H0D8m0LdVBJixsc-dNA
-
-张量图卷积网络(TensorGCN)文本分类
-
-https://mp.weixin.qq.com/s/sXCwe8hXWxdNbpl2i7YBtg
-
-完全基于注意力机制的图表征学习模型Graph-Bert
-
-https://mp.weixin.qq.com/s/dXYjUHAXVZINXQkvM_ssZA
-
-从图网络表示到图神经网络
-
-https://mp.weixin.qq.com/s/DI7C8GKcVsMzAVpGxflUpg
-
-图机器学习，Graph-Powered Machine Learning
-
-https://mp.weixin.qq.com/s/1AO7ALoojMK9Qx3yMQcclQ
-
-GNN实战：手把手教你使用tf_geometric构建图自编码器GAE
-
-https://mp.weixin.qq.com/s/jPIo4p4QCn1UVZ1CtPjP-A
-
-GNN如何进行池化以及挑战
-
-https://mp.weixin.qq.com/s/i_v1GoR-VzVxmy2Wm97t4w
-
-中科院自动化所等首次用图卷积网络解决语义分割难题
-
-https://mp.weixin.qq.com/s/inBGhCnzr-xZZqtIbrG3bA
-
-异质图神经网络:模型与应用
-
-https://mp.weixin.qq.com/s/MBRTs2pIVypQxrcMOY4Lcg
-
-图卷积网络（GCN）入门详解
-
-https://mp.weixin.qq.com/s/phiRXPGfVHaxCN1aLZTzlw
-
-图神经网络三剑客：GCN、GAT与GraphSAGE
-
-https://mp.weixin.qq.com/s/WBUYk__k-86vGqOA6N6iCw
-
-图神经网络入门
-
-https://mp.weixin.qq.com/s/A-4JZG9tF7fnSuBa4YH3iw
-
-图神经网络预训练的策略
-
-https://mp.weixin.qq.com/s/1Kdrz6i83-hKEaY1O7quZg
-
-稀疏数据半监督学习的分解图表示
-
-https://mp.weixin.qq.com/s/oc-o6W087jA-npxy89QMFw
-
-图自编码器的起源和应用
-
-https://mp.weixin.qq.com/s/TepgHukJ-Gx63pTjMH9R2g
-
-2020年，我终于决定入门GCN
-
-https://mp.weixin.qq.com/s/a_svzOS1Z2a98gIzBBk1dw
-
-从文本分类来看图卷积神经网络
-
-https://mp.weixin.qq.com/s/-ukPx32Vjkdz2_udBb55EA
-
-解读三种经典GCN中的Parameter Sharing
-
-https://mp.weixin.qq.com/s/JlUqwie3BtOSIwgSKvRz4w
-
-深入探讨图注意力模型：Graph Attention
-
-https://mp.weixin.qq.com/s/3FoBdd64CtklQu-3T97SIQ
-
-异构图Transformer
-
-https://zhuanlan.zhihu.com/p/86181013
-
-网络图模型综述
-
-https://zhuanlan.zhihu.com/p/114452245
-
-图神经网络时代的深度聚类
-
-https://mp.weixin.qq.com/s/6dIfZXH2EOOgroyRiDxeJA
-
-深度聚类的可视化解释
-
-https://mp.weixin.qq.com/s/WYiWGtedfR4kryztvJKyRw
-
-谱聚类方法推导和对拉普拉斯矩阵的理解
-
-https://zhuanlan.zhihu.com/p/113762102
-
-图卷积网络加速训练方法综述
-
-https://mp.weixin.qq.com/s/9-1zJCAogvWMTHnJPQGvmA
-
-图神经网络在医学影像中的应用
-
-https://mp.weixin.qq.com/s/W7xDBQNlTkSGQ16Lf2C4kQ
-
-图神经网络(GNN)结构化数据分析
-
-https://mp.weixin.qq.com/s/nCDn89eMWkom0AfQAWGjsA
-
-图表示学习Graph Embedding综述
-
-https://mp.weixin.qq.com/s/QvPB3wNT3IeFuqLB8_nxsw
-
-从Word2vec到DeepWalk
-
-https://zhuanlan.zhihu.com/p/98483266
-
-Fi-GNN通过图神经网络建模特征交互作用来进行CTR预测
-
-https://mp.weixin.qq.com/s/RKtVkO9lITJ4QSNL3PgUbQ
-
-基于GNN，强于GNN：胶囊图神经网络的PyTorch实现
-
-https://zhuanlan.zhihu.com/p/114798371
-
-“推荐系统”加上“图神经网络”
-
-https://mp.weixin.qq.com/s/BXovM5bHshLxdmBg93EQrA
-
-阿尔伯塔大学博士毕业论文：基于图结构的自然语言处理
-
-https://mp.weixin.qq.com/s/RP6_H8ZHwJIlUt9YrsxvCA
-
-图卷积神经网络蒸馏知识，Distillating Knowledge from GCN
-
-https://zhuanlan.zhihu.com/p/63207928
-
-图卷积网络在VQA问题中的应用
-
-https://mp.weixin.qq.com/s/B84aHi6z0z2cGyaUdKqSUw
-
-从矩阵分解到GNN：社会化推荐的演化
-
-https://mp.weixin.qq.com/s/GHJQ_oLfC7S1JgPwhptfKw
-
-异构图Transformer
-
-https://mp.weixin.qq.com/s/bPDqQE58zmJIsol96bP74g
-
-图网络GNN(特别篇)：一文遍览图网络中16种典型的图卷积和9种图池化Graph Pooling
-
-https://mp.weixin.qq.com/s/YwvXKreRjk_07t3SSXUilg
-
-图神经网络(GNN)结构化数据分析
-
-https://mp.weixin.qq.com/s/GnjSuQ_BihO5bP5xO2xHJg
-
-万字长文带你入门GCN
-
-https://mp.weixin.qq.com/s/4J0wL4vSugmx1Zow8zdT2Q
-
-DGL深度图神经网络实战教程
-
-https://mp.weixin.qq.com/s/v9aOoK2sHP0a9hZP0jWW0Q
-
-图神经网络的新基准
-
-https://zhuanlan.zhihu.com/p/111945052
-
-TextGCN
-
-https://blog.csdn.net/weixin_43269174/article/details/98492487
-
-从图嵌入算法到图神经网络
-
-https://mp.weixin.qq.com/s/CmVhJMGll5HjO8kxsCinaA
-
-图神经网络GNN,GAT&GCN（一）
+如何学习AutoML在模型优化中的应用，这12篇文章可以作为一个参考

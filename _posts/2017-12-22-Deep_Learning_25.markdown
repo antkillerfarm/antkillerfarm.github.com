@@ -312,6 +312,10 @@ https://mp.weixin.qq.com/s/egU6SkpKjCznConQfg_Zmw
 
 人脸妆造迁移核心技术总结
 
+https://mp.weixin.qq.com/s/FSRwIAwTBZUsT1GVPglZkA
+
+深度学习换脸算法都有哪些？
+
 ## 活体检测
 
 https://mp.weixin.qq.com/s/zOnmKSnQctnyx7pKXX-tpQ

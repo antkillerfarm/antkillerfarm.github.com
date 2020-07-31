@@ -286,6 +286,10 @@ https://blog.csdn.net/shenxiaolu1984/article/details/51428392
 
 Stacked Hourglass算法详解
 
+https://mp.weixin.qq.com/s/nfPBRBLG1ThsY3DvONHYrA
+
+CenterNet骨干网络之hourglass
+
 ## 评价度量
 
 Object Keypoint Similarity(OKS)：
