@@ -6,6 +6,26 @@ category: language
 
 # Python
 
+## SWIG
+
+Simplified Wrapper and Interface Generator可以为C/C++的库生成其他高级脚本语言的Wrapper。
+
+官网：
+
+http://swig.org/
+
+PLY和SWIG的作者都是David Beazley。
+
+>David M. Beazley，犹他大学博士。IEEE Gordon Bell Prize(1993,1998)。先后在Los Alamos和University of Chicago工作执教。超算领域专家。python语言核心开发者。
+
+## SLY
+
+Sly Lex Yacc是David Beazley的新作，号称新一代的PLY。
+
+官网：
+
+https://sly.readthedocs.io/en/latest/
+
 ## Cython
 
 和SWIG功能类似的替代品。
@@ -443,27 +463,3 @@ https://mp.weixin.qq.com/s/wr18ylCJyJOX83BhbvGXng
 https://mp.weixin.qq.com/s/S_mIspLOrmj8ny0VHP52ZA
 
 Python高级技巧：lazy property
-
-https://mp.weixin.qq.com/s/06-iOG5TkRkHb4RZl1bXNQ
-
-史上最全Python迭代器与生成器
-
-https://mp.weixin.qq.com/s/lv_sjvXx8vWf6TsVoYoxFw
-
-Python处理文件系统的10种方法
-
-https://mp.weixin.qq.com/s/KCiR6ZE1EpYVfySaCG097A
-
-上半年最常见的Python面试题
-
-https://mp.weixin.qq.com/s/0dw2LHsIKFv8B_JaIMoekg
-
-python字符编码处理总结
-
-https://mp.weixin.qq.com/s/fTs_r7DLbLWoos4uRM3KYA
-
-10个Python常见面试题，这些弄不明白不要说学过Python！
-
-https://mp.weixin.qq.com/s/kt5isheTBnpwKUhJAuXnYw
-
-视频剪辑什么鬼？Python带你高效创作短视频

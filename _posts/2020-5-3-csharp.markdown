@@ -185,7 +185,31 @@ https://www.haskellstack.org/
 
 https://github.com/commercialhaskell/stack/releases/
 
-# Python
+# Python+
+
+https://mp.weixin.qq.com/s/06-iOG5TkRkHb4RZl1bXNQ
+
+史上最全Python迭代器与生成器
+
+https://mp.weixin.qq.com/s/lv_sjvXx8vWf6TsVoYoxFw
+
+Python处理文件系统的10种方法
+
+https://mp.weixin.qq.com/s/KCiR6ZE1EpYVfySaCG097A
+
+上半年最常见的Python面试题
+
+https://mp.weixin.qq.com/s/0dw2LHsIKFv8B_JaIMoekg
+
+python字符编码处理总结
+
+https://mp.weixin.qq.com/s/fTs_r7DLbLWoos4uRM3KYA
+
+10个Python常见面试题，这些弄不明白不要说学过Python！
+
+https://mp.weixin.qq.com/s/kt5isheTBnpwKUhJAuXnYw
+
+视频剪辑什么鬼？Python带你高效创作短视频
 
 https://mp.weixin.qq.com/s/5YWAgp8LKi5q_NDrNUtyGQ
 
@@ -306,17 +330,3 @@ https://mp.weixin.qq.com/s/3pGw9QdAZVE3OKZ-zGyb4g
 https://mp.weixin.qq.com/s/Bllw4rSkxd378LLUCh6oJA
 
 Python炫技操作：合并字典的七种方法
-
-https://mp.weixin.qq.com/s/QWH9qhKzECX-1rqDLfZyhw
-
-如何加速Python代码？
-
-https://mp.weixin.qq.com/s/OT9yRMFsNowXBbwKqmzP-Q
-
-一起来尝试借助哈密顿环自动玩贪吃蛇小游戏呀~
-
-哈密顿图：由指定的起点前往指定的终点，途中经过所有其他节点且只经过一次。
-
-https://segmentfault.com/a/1190000000414339
-
-一行Python代码实现并行

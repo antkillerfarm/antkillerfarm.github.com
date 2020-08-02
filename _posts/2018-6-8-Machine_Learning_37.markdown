@@ -195,6 +195,10 @@ http://blog.csdn.net/kicilove/article/details/78315335
 
 时间序列初级理论篇
 
+https://mp.weixin.qq.com/s/Y342U71oicbpJbWl4E0ZEQ
+
+时间序列基本概念
+
 https://mp.weixin.qq.com/s/K-XGuaWTcF6BDPJagaJDPQ
 
 时序数据与事件的关联分析

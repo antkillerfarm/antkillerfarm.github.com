@@ -392,3 +392,19 @@ https://mp.weixin.qq.com/s/vEbTP1SDP3GW20XAP825jw
 https://mp.weixin.qq.com/s/0pI0F6c-BSLiGdLetQ5qNQ
 
 彻底弄懂浏览器缓存策略
+
+# Python++
+
+https://mp.weixin.qq.com/s/QWH9qhKzECX-1rqDLfZyhw
+
+如何加速Python代码？
+
+https://mp.weixin.qq.com/s/OT9yRMFsNowXBbwKqmzP-Q
+
+一起来尝试借助哈密顿环自动玩贪吃蛇小游戏呀~
+
+哈密顿图：由指定的起点前往指定的终点，途中经过所有其他节点且只经过一次。
+
+https://segmentfault.com/a/1190000000414339
+
+一行Python代码实现并行

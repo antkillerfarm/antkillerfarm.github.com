@@ -210,6 +210,10 @@ https://mp.weixin.qq.com/s/1YZ7-i3X8Cb2LYEuWtd1KA
 
 给Python代码加上酷炫进度条的几种姿势
 
+https://mp.weixin.qq.com/s/OVb4g1KzIsxgMKjJk_hG6A
+
+在Python中妥善使用进度条
+
 ## Captcha
 
 Captcha是一个Python验证码库，能够生成音频和图片验证码。
@@ -448,23 +452,3 @@ JPype：实现在python中调用JAVA
 http://www.cnblogs.com/yu-zhang/p/3817024.html
 
 python调用java程序--jpype
-
-## SWIG
-
-Simplified Wrapper and Interface Generator可以为C/C++的库生成其他高级脚本语言的Wrapper。
-
-官网：
-
-http://swig.org/
-
-PLY和SWIG的作者都是David Beazley。
-
->David M. Beazley，犹他大学博士。IEEE Gordon Bell Prize(1993,1998)。先后在Los Alamos和University of Chicago工作执教。超算领域专家。python语言核心开发者。
-
-## SLY
-
-Sly Lex Yacc是David Beazley的新作，号称新一代的PLY。
-
-官网：
-
-https://sly.readthedocs.io/en/latest/

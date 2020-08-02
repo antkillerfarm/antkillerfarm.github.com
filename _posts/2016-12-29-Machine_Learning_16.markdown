@@ -108,6 +108,8 @@ $$T(x,y)=\frac{\mid X\cap Y\mid }{\mid X\cup Y\mid }=\frac{\mid X\cap Y\mid }{\m
 
 该系数由Taffee T. Tanimoto于1960年提出。Tanimoto生平不详，从名字来看，应该是个日本人。在其他领域，它还有另一个名字Jaccard similarity coefficient。（两者的系数公式一致，但距离公式略有差异。）
 
+如果向量的每个维度取值是二值（0或1），那么Tanimoto系数就等同Jaccard距离。
+
 >注：Paul Jaccard，1868～1944，苏黎世联邦理工学院（ETH Zurich）博士，苏黎世联邦理工学院植物学教授。ETH Zurich可是出了24个诺贝尔奖得主的。
 
 参见：
@@ -121,6 +123,10 @@ https://www.cnblogs.com/daniel-D/p/3244718.html
 https://mp.weixin.qq.com/s/rrIdxEEwFJMWbvbhn_DYDw
 
 协同过滤算法分布式实现
+
+https://zhuanlan.zhihu.com/p/138107999
+
+常见的距离算法和相似度计算方法
 
 ## ALS算法原理
 
