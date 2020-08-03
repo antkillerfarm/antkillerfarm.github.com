@@ -190,10 +190,6 @@ https://mp.weixin.qq.com/s/KJyvT_MsD2DZ6QvwXh32ug
 
 假如把地球46亿年历史压缩到一天
 
-https://mp.weixin.qq.com/s/NHjfCLp6k7GYh8fScL_UWg
-
-几天前，一颗小行星与地球擦肩而过，我们几乎毫不知情
-
 https://mp.weixin.qq.com/s/XDBvVjIRfjtDrTN4zd92yg
 
 高铁辐射致癌，为什么会有这种令人喷饭的言论出现？

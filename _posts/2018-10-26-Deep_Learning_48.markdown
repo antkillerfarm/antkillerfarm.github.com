@@ -274,6 +274,10 @@ https://mp.weixin.qq.com/s/WpITPvYmixMHa0ha0MgWVA
 
 神马搜索如何提升搜索的时效性？
 
+https://zhuanlan.zhihu.com/p/163358322
+
+learning to match for product search
+
 # 人脸检测/识别+
 
 https://mp.weixin.qq.com/s/-VknGwKKY14cT-lZ7sC43A

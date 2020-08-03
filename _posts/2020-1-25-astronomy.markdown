@@ -94,6 +94,14 @@ https://mp.weixin.qq.com/s/-8WDtspQqL0ztmb7PJtokw
 
 当小行星来袭，除了让地球流浪，我们还能怎么做？
 
+https://mp.weixin.qq.com/s/NHjfCLp6k7GYh8fScL_UWg
+
+几天前，一颗小行星与地球擦肩而过，我们几乎毫不知情
+
+https://mp.weixin.qq.com/s/SaerXt0jYjtwKdWa-d2bPA
+
+不确定的未来：人类会因小天体的撞击而灭亡吗？
+
 ## 天体物理
 
 https://www.zhihu.com/question/40030083

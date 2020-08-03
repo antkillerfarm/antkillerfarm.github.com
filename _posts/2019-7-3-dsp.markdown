@@ -396,6 +396,10 @@ https://mp.weixin.qq.com/s/TGGSmY-EyaOOZFdeUIPp-Q
 
 风控评分卡模型构建流程
 
+https://mp.weixin.qq.com/s/HWmquQCEfppe0JGeNi2o6Q
+
+Python金融大数据分析，566页pdf
+
 ## 金融模型
 
 ![](/images/img3/Quant.jpg)

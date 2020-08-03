@@ -294,6 +294,10 @@ https://mp.weixin.qq.com/s/YTQOgGvFfBdasV18PmboGQ
 
 深度学习在单声道录音中的说话人角色识别优化实践
 
+https://mp.weixin.qq.com/s/PAHwyoxNbi8HDMGh2JtJPQ
+
+58同城语音识别技术的探索和实践
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw

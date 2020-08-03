@@ -210,6 +210,10 @@ https://mp.weixin.qq.com/s/AGmxdVSw8F0z-NdkhFtPUg
 
 一文全览，深度学习时代下，复杂场景下的OCR如何实现？
 
+https://mp.weixin.qq.com/s/F1d_pZQoVeUd9Uy5Z0Hc1Q
+
+深度学习时代的OCR
+
 https://mp.weixin.qq.com/s/axpA7Y_Rhiols5bDIdc6jg
 
 Tesseract-OCR 3.0.1训练自己的语言库之图像文字识别
