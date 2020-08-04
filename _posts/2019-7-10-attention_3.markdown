@@ -286,6 +286,10 @@ https://zhuanlan.zhihu.com/p/146193549
 
 预训练语言模型们(下)
 
+https://mp.weixin.qq.com/s/BhcnTmSje983MYT_alEiiw
+
+一文盘点预训练神经语言模型
+
 ## 预训练语言模型的前世今生
 
 https://mp.weixin.qq.com/s/1ixYjJN-bJPGrr7v-4d7Rw

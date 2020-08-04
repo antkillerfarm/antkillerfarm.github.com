@@ -383,3 +383,7 @@ https://mp.weixin.qq.com/s/5klwQCPtiZOwFJYHDOpWFg
 https://mp.weixin.qq.com/s/1EeYmZGoa-xpWmIvUoqCyw
 
 瑞士小哥开源文本英雄Texthero：一行代码完成数据预处理
+
+https://mp.weixin.qq.com/s/p9HpH2e5ShQCFcCxVNvMbg
+
+清华开源迁移学习算法库
