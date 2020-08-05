@@ -154,6 +154,10 @@ https://mp.weixin.qq.com/s/3zpri6pfVtp-3-5_004B1Q
 
 优势特征蒸馏在淘宝推荐中的应用
 
+https://zhuanlan.zhihu.com/p/163477538
+
+知识蒸馏与推荐系统
+
 # 模型压缩与加速进阶
 
 https://mp.weixin.qq.com/s/Ck_GDv1Xo-YMZcu-00gTOA

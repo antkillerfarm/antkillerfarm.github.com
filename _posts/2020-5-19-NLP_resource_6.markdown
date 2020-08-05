@@ -316,6 +316,8 @@ AOT：Ahead Of Time，指在运行前编译，比如普通的静态编译。
 
 JIT：Just In Time，指在运行时编译，边运行边编译，比如java虚拟机在运行时就用到JIT技术。
 
+![](/images/img3/aot_jit.jpg)
+
 https://mp.weixin.qq.com/s/vnaI8FwB4Ot46weAgq18Eg
 
 华为新贵！方舟编译器的荣光和使命

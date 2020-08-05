@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  孩子的编程语言, Go, Julia, Rust
+title:  孩子的编程语言, Go, Julia, Rust, perl, VS
 category: language 
 ---
 
@@ -354,6 +354,48 @@ https://mp.weixin.qq.com/s/JBlzMIhMa7TB5tHGSRhVkQ
 https://mp.weixin.qq.com/s/xGBAGBGsxBDuKkSxXOZRjQ
 
 在Rust代码中编写Python是种怎样的体验？
+
+# perl
+
+中文教程：
+
+http://www.runoob.com/perl/perl-tutorial.html
+
+perl的语法和C差别不算太大，好多语法大致上从关键字也可以猜出来。这里仅对一些符号做个简短的说明。
+
+`$name`：变量name。
+
+`@name`：数组name。
+
+`&name`：函数name。这种情况下，name的定义在使用之后。如果name的定义在使用之前，`&`可省略。
+
+`%name`：哈希数组name。
+
+perl的包管理器叫做cpan。这实际上也是该工具网站的名字。
+
+# VS
+
+## 分栏显示
+
+1.Window -> New Window
+
+2.Window -> New Vertical Tab Group
+
+## Visual Studio Tab转换为空格的设置
+
+打开“Tools --> Options --> Text Editor”，如果是编写C/C++程序，就打开“C/C++-->Tabs”，在这里，选中“Insert spaces”即可。
+
+## 离线安装
+
+VS2015以后，MS不再提供VS的离线安装包，因为安装文件实在是太大了（10GB+），取而代之的是offline模式。
+
+1.首先下载在线安装器vs_community.exe，打开命令行：
+
+`vs_community.exe --layout D:\vs2017\offline --lang zh-CN`
+
+2.安装证书。证书在offline\certificates下。
+
+3.运行offline\vs_community.exe。
 
 # Javascript+
 

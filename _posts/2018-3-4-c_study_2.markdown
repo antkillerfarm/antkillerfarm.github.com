@@ -92,6 +92,10 @@ https://stackoverflow.com/questions/27475977/c-undefined-reference-to-sqrt-even-
 
 C - undefined reference to “sqrt” even with '-lm'
 
+## -Werror
+
+有的时候会遇到`-Werror=XXXX`这样的编译错误，如果确实不想改代码的话，可以用`-Wno-error=XXXX`或者`-Wno-XXXX`来回避之。
+
 # 左值和右值
 
 **左值**是可以放在赋值号左边可以被赋值的值；左值必须要在内存中有实体；

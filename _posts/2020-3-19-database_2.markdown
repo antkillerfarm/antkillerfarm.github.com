@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Mysql, WebRTC, ZeroMQ
+title:  Mysql, WebRTC, ZeroMQ, CMake
 category: technology 
 ---
 
@@ -245,6 +245,44 @@ http://zeromq.org
 https://blog.csdn.net/w174504744/article/details/73187697
 
 ZeroMQ
+
+# CMake
+
+1. 添加头文件目录
+
+`include_directories(../../../thirdparty/comm/include)`
+
+2. 添加需要链接的库文件目录
+
+`link_directories("/home/server/third/lib")`
+
+3. 查找库所在目录
+
+`find_library(RUNTIME_LIB rt /usr/lib  /usr/local/lib NO_DEFAULT_PATH)`
+
+4. 添加需要链接的库文件路径
+
+`link_libraries(“/home/server/third/lib/libcommon.a”)`
+
+5. 设置要链接的库文件的名称
+
+`target_link_libraries(myProject libcomm.so)`
+
+6. 为工程生成目标文件
+
+`add_executable(demo main.cpp)`
+
+参考：
+
+https://www.cnblogs.com/binbinjx/p/5626916.html
+
+cmake添加头文件目录，链接动态、静态库
+
+## cross compile
+
+需要用`-DCMAKE_TOOLCHAIN_FILE=XXXX`来指定toolchain file。后者的示例如下：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/other/toolchain-arm-imx8qm.cmake
 
 # 推荐系统的工程细节++
 

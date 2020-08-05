@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Clojure, Groovy, perl, Scala, VS Code, VS, MSYS2
+title:  Clojure, Groovy, Scala, VS Code, MSYS2
 category: language 
 ---
 
@@ -90,24 +90,6 @@ http://www.groovy-lang.org/
 代码参见：
 
 https://github.com/antkillerfarm/antkillerfarm_rubbish/tree/master/groovy/javafx
-
-# perl
-
-中文教程：
-
-http://www.runoob.com/perl/perl-tutorial.html
-
-perl的语法和C差别不算太大，好多语法大致上从关键字也可以猜出来。这里仅对一些符号做个简短的说明。
-
-`$name`：变量name。
-
-`@name`：数组name。
-
-`&name`：函数name。这种情况下，name的定义在使用之后。如果name的定义在使用之前，`&`可省略。
-
-`%name`：哈希数组name。
-
-perl的包管理器叫做cpan。这实际上也是该工具网站的名字。
 
 # Scala
 
@@ -248,6 +230,28 @@ Clang-format: 格式化C/C++/Java/Objective-C代码。需要安装Clang-format�
 
 Consolas,'Courier New',monospace
 
+## remote-ssh
+
+remote-ssh是vscode远程编辑/调试的组件。它分为本地端和服务器端两部分，且两者版本必须一致才行。所以，这里主要的问题就是如何下载服务器端，尤其在后者不能联网的时候。
+
+下载地址：
+
+`https://update.code.visualstudio.com/commit:<commit-id>/server-linux-x64/stable`
+
+or
+
+`https://update.code.visualstudio.com/commit:<commit-id>/server-linux-x64/insider`
+
+这里的`commit-id`可以在vscode的“About”上查到。
+
+将下载的`vscode-server-linux-x64.tar.gz`解压到`~/.vscode-server/bin/<commit-id>`下。
+
+参考：
+
+https://blog.csdn.net/wyg1997/article/details/101460961
+
+Remote-ssh服务器端vscode-server安装失败
+
 ## 参考
 
 https://blog.csdn.net/GossipHHH/article/details/78132398
@@ -288,29 +292,6 @@ language server protocol是一种跨编辑器的语言支持实现规范。它�
 
 https://microsoft.github.io/language-server-protocol/
 
-# VS
-
-## 分栏显示
-
-1.Window -> New Window
-
-2.Window -> New Vertical Tab Group
-
-## Visual Studio Tab转换为空格的设置
-
-打开“Tools --> Options --> Text Editor”，如果是编写C/C++程序，就打开“C/C++-->Tabs”，在这里，选中“Insert spaces”即可。
-
-## 离线安装
-
-VS2015以后，MS不再提供VS的离线安装包，因为安装文件实在是太大了（10GB+），取而代之的是offline模式。
-
-1.首先下载在线安装器vs_community.exe，打开命令行：
-
-`vs_community.exe --layout D:\vs2017\offline --lang zh-CN`
-
-2.安装证书。证书在offline\certificates下。
-
-3.运行offline\vs_community.exe。
 
 # MSYS2
 
