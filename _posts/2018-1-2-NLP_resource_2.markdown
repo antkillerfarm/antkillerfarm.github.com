@@ -362,6 +362,10 @@ https://mp.weixin.qq.com/s/yJC3NtD13LEVovDYK7-u1A
 
 命名实体识别难在哪？
 
+https://mp.weixin.qq.com/s/DfXTwu2dobjmR1Xd3PG9Zg
+
+美团搜索中NER技术的探索与实践
+
 ## 文本摘要
 
 https://mp.weixin.qq.com/s/jk1XgnuydrsTg3HvV0CVvw

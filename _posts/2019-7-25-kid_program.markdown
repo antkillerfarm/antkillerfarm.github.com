@@ -399,6 +399,22 @@ VS2015以后，MS不再提供VS的离线安装包，因为安装文件实在是�
 
 # Javascript+
 
+https://mp.weixin.qq.com/s/zfOZAmgpndcqgxHHaS1j3g
+
+用Vue和React构建相同应用程序，区别在哪？
+
+https://mp.weixin.qq.com/s/DHxEqsTMOyc7pHfmJrfNEg
+
+一篇文章理解JS继承
+
+https://mp.weixin.qq.com/s/tNi5LJmotuXSoHbZhNgPcw
+
+GitHub已完全弃用jQuery，问题是为什么？
+
+https://mp.weixin.qq.com/s/WHh9v3icCc90PwiLyv0Hng
+
+为什么Facebook的API以一个循环作为开头？
+
 https://mp.weixin.qq.com/s/GQ2azFxcmXrY78rTAdxuVA
 
 JS/CSS体积减少了67%，我们是如何做到的？
@@ -450,3 +466,7 @@ https://mp.weixin.qq.com/s/OT9yRMFsNowXBbwKqmzP-Q
 https://segmentfault.com/a/1190000000414339
 
 一行Python代码实现并行
+
+https://mp.weixin.qq.com/s/Ln5EPqbdNjy3HrVM7Wwe2g
+
+Heartrate：一个牛逼的工具，Python执行实时可视化

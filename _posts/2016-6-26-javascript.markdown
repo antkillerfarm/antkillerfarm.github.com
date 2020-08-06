@@ -298,6 +298,12 @@ selector {property1: value1; property2: value2; ... propertyN: valueN}
 
 name没有快捷的选择方法，但可以采用属性的方式进行选择，例如：`input[name="you"]`
 
+## 参考
+
+https://www.zhihu.com/question/21775016
+
+网页布局都有哪种？一般都用什么布局？
+
 # 动画
 
 HTML动画一般有三种实现方式：
@@ -335,7 +341,3 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello
 3.动画结束时，会触发AnimationEnd事件。在该事件处理函数中，使用removeClass函数，去掉rotate_mill样式，以恢复原状。否则，下次click时，由于样式没变化，就不会触发动画效果了。
 
 4.和AnimationEnd类似的事件，还有AnimationIteration和AnimationStart。
-
-## Step2：回调函数嵌套问题
-
-在上面的例子中，所有的button都是同步动画的。如果想要一个接着一个播放动画的话。一种思路就是：在上一个动画的AnimationEnd事件处理函数中，启动下一个动画。但这种方法会导致回调函数的嵌套问题。

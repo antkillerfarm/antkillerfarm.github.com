@@ -4,9 +4,11 @@ title:  Javascript（二）
 category: language 
 ---
 
-# Animate.css
+# 动画（续）
 
-## Step2：回调函数嵌套问题（续）
+## Step2：回调函数嵌套问题
+
+在上面的例子中，所有的button都是同步动画的。如果想要一个接着一个播放动画的话。一种思路就是：在上一个动画的AnimationEnd事件处理函数中，启动下一个动画。但这种方法会导致回调函数的嵌套问题。
 
 首先需要明确一点：回调嵌套并没有执行效率的问题。JS脚本都是单线程执行的，因此无论采用何种写法，都不会改变函数的执行顺序。回调嵌套的问题主要出在可读性方面。
 
@@ -273,19 +275,3 @@ https://mp.weixin.qq.com/s/Sjg6jgl1D6IkYgsuQSgFHg
 https://zhuanlan.zhihu.com/p/35551654
 
 基于React的高质量坦克大战复刻版
-
-https://mp.weixin.qq.com/s/zfOZAmgpndcqgxHHaS1j3g
-
-用Vue和React构建相同应用程序，区别在哪？
-
-https://mp.weixin.qq.com/s/DHxEqsTMOyc7pHfmJrfNEg
-
-一篇文章理解JS继承
-
-https://mp.weixin.qq.com/s/tNi5LJmotuXSoHbZhNgPcw
-
-GitHub已完全弃用jQuery，问题是为什么？
-
-https://mp.weixin.qq.com/s/WHh9v3icCc90PwiLyv0Hng
-
-为什么Facebook的API以一个循环作为开头？
