@@ -252,6 +252,10 @@ https://blog.csdn.net/wyg1997/article/details/101460961
 
 Remote-ssh服务器端vscode-server安装失败
 
+https://mp.weixin.qq.com/s/n7zyDFOeHd9K5oSKz7Zg9Q
+
+vsCode离线安装remote-ssh插件搭建远程开发环境
+
 ## 参考
 
 https://blog.csdn.net/GossipHHH/article/details/78132398
