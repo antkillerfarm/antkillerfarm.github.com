@@ -223,6 +223,22 @@ https://mp.weixin.qq.com/s/RS7O7prvkCvKyxkK3YQxtA
 
 Litho的使用及原理剖析
 
+## adb
+
+手机->PC：
+
+`adb pull sdcard/contacts_app.db`
+
+PC->手机：
+
+`adb push aaa/contacts_app.db /sdcard/`
+
+----
+
+https://www.cnblogs.com/caoxinyu/p/10568463.html
+
+Ubuntu adb报错：no permissions (user in plugdev group; are your udev rules wrong?);
+
 ## 参考
 
 https://mp.weixin.qq.com/s/twfpUMf9CfXcgwtFFkJ4Ig
