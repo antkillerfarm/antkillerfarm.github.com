@@ -4,6 +4,9 @@ title:  深度加速（三）——Winograd（3）, NN Quantization
 category: DL acceleration 
 ---
 
+* toc
+{:toc}
+
 # Winograd
 
 ## Winograd for CNN（续）

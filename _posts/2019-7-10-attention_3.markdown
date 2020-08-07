@@ -4,6 +4,9 @@ title:  Attention（三）——预训练语言模型进化史, BERT
 category: Attention 
 ---
 
+* toc
+{:toc}
+
 # Transformer（续）
 
 ## 参考

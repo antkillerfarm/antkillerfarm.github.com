@@ -4,6 +4,9 @@ title:  DL参考资源（三）
 category: resource 
 ---
 
+* toc
+{:toc}
+
 # DL参考资源
 
 ## gcForest

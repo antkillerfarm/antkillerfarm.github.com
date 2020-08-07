@@ -4,6 +4,9 @@ title:  孩子的编程语言, Go, Julia, Rust, perl, VS
 category: language 
 ---
 
+* toc
+{:toc}
+
 # 孩子的编程语言
 
 ## 概述

@@ -4,6 +4,9 @@ title:  GTK学习心得
 category: technology 
 ---
 
+* toc
+{:toc}
+
 # GTK
 
 ## 1）安装环境

@@ -4,6 +4,9 @@ title:  Python（一）
 category: language 
 ---
 
+* toc
+{:toc}
+
 # Python
 
 ## 教程

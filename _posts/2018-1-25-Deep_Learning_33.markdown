@@ -4,6 +4,9 @@ title:  深度学习（三十三）——Capsule
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # Capsule
 
 Capsule是深度学习先驱Hinton于2017年提出的概念。

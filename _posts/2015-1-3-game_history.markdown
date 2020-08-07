@@ -1,8 +1,11 @@
 ---
 layout: post
 title:  我的PC Game（一）
-category: essay
+category: essay 
 ---
+
+* toc
+{:toc}
 
 # 2010.2
 

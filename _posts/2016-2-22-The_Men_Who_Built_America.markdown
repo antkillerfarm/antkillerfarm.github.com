@@ -4,6 +4,9 @@ title:  The Men Who Built America（一）
 category: essay 
 ---
 
+* toc
+{:toc}
+
 ## 序
 
 《The Men Who Built America》首播于2012-02-08。这部专题叙事片以编年史的角度，展示了资本主义发展鼎盛时期的美国，几位富豪巨头如何在无拘无束、乏序少则的前提下，肆意吞并和拓展事业版图，如何充满创造性地在财富王国中勾心斗角、神机妙算和攻城掠地。

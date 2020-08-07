@@ -4,6 +4,9 @@ title:  深度学习（二十五）——多任务学习, 人脸检测/识别（
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # 多任务学习
 
 http://cs330.stanford.edu/

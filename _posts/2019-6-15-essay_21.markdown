@@ -4,6 +4,9 @@ title: Tu-4
 category: essay 
 ---
 
+* toc
+{:toc}
+
 # Tupolev Tu-4
 
 按照Wiki的说法，Tupolev Tu-4飞机的确是美国Boeing B-29 Superfortress的复制品，其来历也是有一段故事的。

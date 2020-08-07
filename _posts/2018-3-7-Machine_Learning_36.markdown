@@ -4,6 +4,9 @@ title:  机器学习（三十六）——XGBoost, LightGBM, CatBoost, Parameter 
 category: ML 
 ---
 
+* toc
+{:toc}
+
 # XGBoost
 
 XGBoost是陈天奇于2014年提出的一套并行boost算法的工具库。

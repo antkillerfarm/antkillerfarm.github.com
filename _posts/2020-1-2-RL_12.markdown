@@ -4,6 +4,9 @@ title:  强化学习（十二）——Exploration & Exploitation
 category: RL 
 ---
 
+* toc
+{:toc}
+
 # Integrating Learning and Planning
 
 ## Game Tree

@@ -4,6 +4,9 @@ title:  GAN（五）——InfoGAN, ProGAN, GAN参考资源（1）
 category: GAN & VAE 
 ---
 
+* toc
+{:toc}
+
 # StarGAN（续）
 
 StarGAN给出的办法是：所有的Domain共享一个G网络。如上图右半部分所示。

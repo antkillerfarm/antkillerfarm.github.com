@@ -4,6 +4,9 @@ title:  GAN（四）——Stack GAN, GAN Ensemble, Pix2Pix, CycleGAN, StarGAN
 category: GAN & VAE 
 ---
 
+* toc
+{:toc}
+
 # EBGAN & BEGAN（续）
 
 AutoEncoder：Encoder->Decoder

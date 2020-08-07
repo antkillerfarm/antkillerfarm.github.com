@@ -4,6 +4,9 @@ title:  机器学习（三十八）——PageRank算法
 category: ML 
 ---
 
+* toc
+{:toc}
+
 # PageRank算法
 
 ## 概述

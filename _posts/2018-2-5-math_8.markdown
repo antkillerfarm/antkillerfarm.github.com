@@ -4,6 +4,9 @@ title:  数学狂想曲（八）——莱洛三角形, 核弹当量问题, 随�
 category: math 
 ---
 
+* toc
+{:toc}
+
 # 函数连续性
 
 ## Weierstrass Function（续）

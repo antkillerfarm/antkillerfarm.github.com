@@ -4,6 +4,9 @@ title:  Cocos2d-x v3在Qt 5上的移植, lex&yacc
 category: technology 
 ---
 
+* toc
+{:toc}
+
 # 前言
 
 首先对讨论的内容做个解释。

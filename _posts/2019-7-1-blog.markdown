@@ -4,7 +4,12 @@ title: Blog维护日志, 我的AI简史
 category: essay 
 ---
 
+* toc
+{:toc}
+
 # Blog维护日志
+
+2020.8.7 添加TOC。可命名为v5.0。
 
 2020.5.29 添加Graph分类。
 

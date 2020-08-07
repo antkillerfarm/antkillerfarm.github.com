@@ -4,6 +4,9 @@ title:  数学狂想曲（一）——搞笑图片的数学原理, 欧拉公式
 category: math 
 ---
 
+* toc
+{:toc}
+
 # 搞笑图片的数学原理
 
 ![](/images/article/integral.jpg)

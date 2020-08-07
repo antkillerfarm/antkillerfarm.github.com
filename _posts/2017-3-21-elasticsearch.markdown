@@ -4,6 +4,9 @@ title:  Elasticsearch（一）
 category: AI 
 ---
 
+* toc
+{:toc}
+
 # Elasticsearch
 
 ## 概况

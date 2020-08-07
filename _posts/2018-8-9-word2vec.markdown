@@ -4,6 +4,9 @@ title:  word2vec, LSTM Speech Recognition实战, 图数据库
 category: AI 
 ---
 
+* toc
+{:toc}
+
 # word2vec
 
 word2vec是Google于2013年开源推出的一个用于获取word vector的工具包。作者是Tomas Mikolov。

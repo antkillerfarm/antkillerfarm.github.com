@@ -4,6 +4,9 @@ title:  C/C++编程心得（三）
 category: language 
 ---
 
+* toc
+{:toc}
+
 # decltype
 
 和auto的用法类似，auto不仅要推导类型，还要定义变量，而decltype则只进行类型推导。

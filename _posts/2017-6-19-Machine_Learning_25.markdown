@@ -4,6 +4,9 @@ title:  机器学习（二十五）——Tri-training, 聚类算法, 元胞自�
 category: ML 
 ---
 
+* toc
+{:toc}
+
 # Tri-training
 
 ## 半监督学习

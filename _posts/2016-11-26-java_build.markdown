@@ -4,6 +4,9 @@ title:  Java构建工具, ZeroC ICE, Jam
 category: technology 
 ---
 
+* toc
+{:toc}
+
 # Java构建工具
 
 构建工具的意义在于，提供一种独立于IDE的软件构建方式。而且通常来说，构建工具更适合特大项目的构建。比如，即使是以功能强大著称的Visual Studio，也提供nmake用以处理特大项目。

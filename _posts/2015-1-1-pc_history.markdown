@@ -4,6 +4,9 @@ title:  我的PC简史
 category: essay 
 ---
 
+* toc
+{:toc}
+
 # PC篇
 
 2012.10

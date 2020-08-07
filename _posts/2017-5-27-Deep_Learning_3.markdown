@@ -4,6 +4,9 @@ title:  深度学习（三）——深度学习常用术语解释, Neural Networ
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # 深度学习常用术语解释
 
 ## 深度学习中epoch、batch size、iterations的区别

@@ -4,6 +4,9 @@ title:  深度学习（十四）——Normalization进阶
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # Normalization进阶
 
 ## Batch Normalization

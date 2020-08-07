@@ -4,6 +4,9 @@ title:  写在AlphaGo与李世石的人机大战之后（一）
 category: essay 
 ---
 
+* toc
+{:toc}
+
 # 写在AlphaGo与李世石的人机大战之后
 
 2016.3

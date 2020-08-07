@@ -4,6 +4,9 @@ title: SCR-300 & SCR-536
 category: essay 
 ---
 
+* toc
+{:toc}
+
 # SCR-300 & SCR-536
 
 ## Motorola

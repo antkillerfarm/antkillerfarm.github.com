@@ -4,6 +4,9 @@ title:  Python（四）
 category: language 
 ---
 
+* toc
+{:toc}
+
 # Python
 
 ## SWIG

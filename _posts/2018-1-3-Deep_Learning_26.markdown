@@ -4,6 +4,9 @@ title:  深度学习（二十六）——OCR（1）
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # OCR
 
 ## 概述

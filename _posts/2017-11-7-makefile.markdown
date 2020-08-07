@@ -4,6 +4,9 @@ title:  makefile, Autotools, premake, Bazel
 category: technology 
 ---
 
+* toc
+{:toc}
+
 # makefile
 
 简单的规则可以查看《GNU makefile指南》一文，Goerge Foot写的。地址就不贴了，中文版基本到处都是。但是该文只是入门级的，最专业的还是GNU官方的手册：

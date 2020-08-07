@@ -4,6 +4,9 @@ title:  深度语音识别（三）——语音合成参考资源
 category: speech 
 ---
 
+* toc
+{:toc}
+
 # 语音识别参考资源（续）
 
 https://zhuanlan.zhihu.com/p/24979135

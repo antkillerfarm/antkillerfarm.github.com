@@ -4,6 +4,9 @@ title:  戈登的另一面（二）, The Men Who Built America（三）, 七年�
 category: essay 
 ---
 
+* toc
+{:toc}
+
 # 戈登的另一面（二）
 
 ## 苏州事件（续）

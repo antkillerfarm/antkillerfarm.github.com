@@ -4,6 +4,9 @@ title:  深度学习（四十六）——OCR（2）
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # OCR（续）
 
 https://mp.weixin.qq.com/s/bmJCLUlOA364AvK90sXE3Q

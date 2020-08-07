@@ -4,6 +4,9 @@ title:  Tensor2Tensor, NN中间语言, MXNet
 category: AI 
 ---
 
+* toc
+{:toc}
+
 # Tensor2Tensor
 
 T2T库利用TensorFlow工具来开发，定义了一个深度学习系统中需要的多个部分：数据集、模型架构、优化工具、学习速率衰减计划，以及超参数等等。

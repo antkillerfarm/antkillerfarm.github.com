@@ -4,6 +4,9 @@ title:  Java
 category: language 
 ---
 
+* toc
+{:toc}
+
 # Java
 
 ## Java反射机制

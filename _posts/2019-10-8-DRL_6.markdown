@@ -4,6 +4,9 @@ title:  深度强化学习（六）——AlphaGo（2）
 category: DRL 
 ---
 
+* toc
+{:toc}
+
 # AlphaGo
 
 ## AlphaGo Zero（续）

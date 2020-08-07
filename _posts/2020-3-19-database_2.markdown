@@ -4,6 +4,9 @@ title:  Mysql, WebRTC, ZeroMQ, CMake, MSYS2
 category: technology 
 ---
 
+* toc
+{:toc}
+
 # Mysql
 
 ## 安装

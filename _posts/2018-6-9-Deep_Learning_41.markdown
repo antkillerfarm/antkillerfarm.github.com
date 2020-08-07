@@ -4,6 +4,9 @@ title:  深度学习（四十一）——迁移学习
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # 迁移学习
 
 ![](/images/img2/small_data.png)

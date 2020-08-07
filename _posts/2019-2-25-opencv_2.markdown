@@ -4,6 +4,9 @@ title:  OpenCV（二）, Dlib, OpenVINO
 category: AI 
 ---
 
+* toc
+{:toc}
+
 # OpenCV
 
 https://mp.weixin.qq.com/s/PibBxTkVJNM0n_wXHS99KQ

@@ -4,6 +4,9 @@ title:  AI医疗, 可视化, 超算
 category: resource 
 ---
 
+* toc
+{:toc}
+
 # AI医疗
 
 ![](/images/img2/AI_healthcare.png)

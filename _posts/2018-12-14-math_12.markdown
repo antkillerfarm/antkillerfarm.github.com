@@ -4,6 +4,9 @@ title:  数学狂想曲（十二）——数学杂谈
 category: math 
 ---
 
+* toc
+{:toc}
+
 # PID算法（续）
 
 https://www.zhihu.com/question/23088613/answer/23942834

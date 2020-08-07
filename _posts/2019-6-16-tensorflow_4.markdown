@@ -4,6 +4,9 @@ title:  TensorFlow（四）
 category: AI 
 ---
 
+* toc
+{:toc}
+
 # TensorFlow
 
 https://mp.weixin.qq.com/s/JSZwQkyxSSwfBWKJ578j3A

@@ -4,6 +4,9 @@ title:  Machine Learning之Java篇, Matlab, 数据描述语言
 category: AI 
 ---
 
+* toc
+{:toc}
+
 # Machine Learning之Java篇
 
 http://machinelearningmastery.com/java-machine-learning/

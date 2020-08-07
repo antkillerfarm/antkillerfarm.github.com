@@ -4,6 +4,9 @@ title: 生物
 category: Nature 
 ---
 
+* toc
+{:toc}
+
 # 生物
 
 ![](/images/img3/whale_pump.jpg)

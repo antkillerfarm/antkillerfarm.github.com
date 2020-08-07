@@ -4,6 +4,9 @@ title:  Transifex与GTK文档翻译, Linux镜像文件, 外设接口杂谈, 中�
 category: technology 
 ---
 
+* toc
+{:toc}
+
 # Transifex与GTK文档翻译
 
 ## 参与GTK+开发的一段小经历（2013.10）

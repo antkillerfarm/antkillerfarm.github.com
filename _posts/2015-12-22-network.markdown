@@ -4,6 +4,9 @@ title:  网络杂谈
 category: technology 
 ---
 
+* toc
+{:toc}
+
 # 网络杂谈
 
 ## 集线器&交换机&路由器

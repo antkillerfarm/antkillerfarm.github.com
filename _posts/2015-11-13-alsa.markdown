@@ -4,6 +4,9 @@ title:  ALSA（一）
 category: technology 
 ---
 
+* toc
+{:toc}
+
 # 参考文献
 
 ALSA（Advanced Linux Sound Architecture）是Linux内核默认的音频驱动框架。以下是一些参考资料：

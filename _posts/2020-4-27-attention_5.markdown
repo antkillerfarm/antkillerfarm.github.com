@@ -4,6 +4,9 @@ title:  Attention（五）——BERT进阶
 category: Attention 
 ---
 
+* toc
+{:toc}
+
 # 轻量化BERT（续）
 
 https://www.zhihu.com/question/347898375

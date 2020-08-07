@@ -4,6 +4,9 @@ title:  语音识别（一）——概述
 category: speech 
 ---
 
+* toc
+{:toc}
+
 # 概述
 
 虽然现在的语音识别中，DL已经应用的非常广泛了，但是语音识别终究还是有一些领域知识的，将之归类为DL或者ML，似乎都不妥当。特形成本系列文章，用以描述automatic speech recognition的领域知识和传统方法。

@@ -4,6 +4,9 @@ title:  ML参考资源（二）
 category: resource 
 ---
 
+* toc
+{:toc}
+
 # ML参考资源
 
 https://zhuanlan.zhihu.com/p/30383356

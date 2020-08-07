@@ -4,6 +4,9 @@ title:  深度学习（八）——ResNet, Bi-directional RNN, seq2seq
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # 神经元激活函数进阶（续）
 
 ### soft sign

@@ -4,6 +4,9 @@ title: 入行以来涉及的技术简史（二）, Firefox
 category: essay 
 ---
 
+* toc
+{:toc}
+
 # 入行以来涉及的技术简史（续）
 
 ### 3）QT

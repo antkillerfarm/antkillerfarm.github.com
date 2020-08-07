@@ -4,6 +4,9 @@ title:  大数据平台参考资源（二）
 category: resource 
 ---
 
+* toc
+{:toc}
+
 # 大数据平台参考资源
 
 https://mp.weixin.qq.com/s/Kv1Qq4118I2itYwPYyQUoA

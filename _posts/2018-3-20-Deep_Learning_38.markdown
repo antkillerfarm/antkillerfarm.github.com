@@ -4,6 +4,9 @@ title:  深度学习（三十八）——RNN进阶, 细粒度分类, 显著性�
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # 人脸检测/识别（续）
 
 https://mp.weixin.qq.com/s/p0Y3Svrk1WWTed6R4AFWLQ

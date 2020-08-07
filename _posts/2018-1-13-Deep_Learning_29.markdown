@@ -4,6 +4,9 @@ title:  深度学习（二十九）——Graph NN（1）
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # Graph NN
 
 Graph Neural Networks是2019年以来比较热门的方向。然而由于没有大佬全面投入，相关研究比较零散，被人戏称paper survey比paper还多。。。囧

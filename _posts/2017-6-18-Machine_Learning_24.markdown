@@ -4,6 +4,9 @@ title:  机器学习（二十四）——单分类SVM&多分类SVM, Stacking, �
 category: ML 
 ---
 
+* toc
+{:toc}
+
 # Optimizer（续）
 
 https://mp.weixin.qq.com/s/idmt0F49tOCh-ghWdHLdUw

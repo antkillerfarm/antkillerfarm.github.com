@@ -4,6 +4,9 @@ title:  Emacs, Vi, IDE
 category: language 
 ---
 
+* toc
+{:toc}
+
 # emacs学习心得
 
 emacs是大名鼎鼎的Richard Stallman的作品，我闻名已久。但作为早期一直在Windows操作系统下打拼的程序员，很少有机会用到emacs。用的最多的还是Notepad和UltraEdit。

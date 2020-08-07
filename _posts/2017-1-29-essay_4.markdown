@@ -4,6 +4,9 @@ title: 我的平板 & 手机 & 数码相机简史, 写在AlphaGo与李世石的�
 category: essay 
 ---
 
+* toc
+{:toc}
+
 # PC篇（续）
 
 ## 其他PC

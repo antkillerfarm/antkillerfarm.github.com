@@ -4,6 +4,9 @@ title:  深度学习（二十八）——SOM, 多模态学习, Recursive NN
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # RBM & DBN & Deep Autoencoder（续）
 
 ## DBN

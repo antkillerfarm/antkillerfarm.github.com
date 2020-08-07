@@ -4,6 +4,9 @@ title:  机器学习（九）——K-Means算法
 category: ML 
 ---
 
+* toc
+{:toc}
+
 ## 特征选择
 
 特征选择（Feature Selection）严格来说也是模型选择中的一种。

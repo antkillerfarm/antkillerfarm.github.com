@@ -4,6 +4,9 @@ title:  语音识别（二）——基本框架, Microphone Array
 category: speech 
 ---
 
+* toc
+{:toc}
+
 # 概述
 
 ## 数据集（续）

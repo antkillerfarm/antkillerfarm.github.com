@@ -4,6 +4,9 @@ title:  Machine Learning之Python篇（三）
 category: AI 
 ---
 
+* toc
+{:toc}
+
 # Machine Learning之Python篇
 
 ## ImageAI

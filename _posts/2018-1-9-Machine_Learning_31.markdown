@@ -4,6 +4,9 @@ title:  机器学习（三十一）——MRF, CRF
 category: ML 
 ---
 
+* toc
+{:toc}
+
 # HMM
 
 ## 前向算法（续）

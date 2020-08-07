@@ -4,6 +4,9 @@ title:  深度学习（三十一）——依存分析
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # NLP历史
 
 ![](/images/img2/text.jpg)

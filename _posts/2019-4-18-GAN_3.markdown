@@ -4,6 +4,9 @@ title:  GAN（三）——GAN的评估指标, DCGAN, WGAN-GP, CGAN, BEGAN & EBGA
 category: GAN & VAE 
 ---
 
+* toc
+{:toc}
+
 # GAN进阶
 
 ## GAN的理论解释

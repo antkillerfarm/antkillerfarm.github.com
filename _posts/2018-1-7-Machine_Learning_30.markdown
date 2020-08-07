@@ -4,6 +4,9 @@ title:  机器学习（三十）——概率图模型, HMM
 category: ML 
 ---
 
+* toc
+{:toc}
+
 # 概率图模型
 
 ## 资料

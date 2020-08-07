@@ -4,6 +4,9 @@ title:  深度目标检测（七）——CornerNet, CenterNet, Anchor-Free, 其�
 category: Deep Object Detection 
 ---
 
+* toc
+{:toc}
+
 # CornerNet
 
 传统的目标检测网络，无论是One-stage还是Two-stage，都有基于Anchor的。Anchor的作用主要在于：**显式枚举出不同的scale和aspect ratio的基准bbox。**

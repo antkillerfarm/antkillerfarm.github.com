@@ -4,6 +4,9 @@ title:  图像处理理论（八）——目标跟踪, Meanshift
 category: graphics 
 ---
 
+* toc
+{:toc}
+
 # Viola-Jones（续）
 
 ## 概述

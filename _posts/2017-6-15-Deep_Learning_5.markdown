@@ -4,6 +4,9 @@ title:  深度学习（五）——词向量
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # 词向量
 
 ## One-hot Representation

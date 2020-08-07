@@ -4,6 +4,9 @@ title:  机器学习（十五）——机器学习中的矩阵方法（3）病�
 category: ML 
 ---
 
+* toc
+{:toc}
+
 ## 正定矩阵
 
 positive definite matrix的定义：

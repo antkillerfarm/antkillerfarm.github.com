@@ -4,6 +4,9 @@ title: 再谈高考（二）, 汽水
 category: essay 
 ---
 
+* toc
+{:toc}
+
 # 再谈高考（续）
 
 参见：

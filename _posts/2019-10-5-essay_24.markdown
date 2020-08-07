@@ -4,6 +4,9 @@ title: 高考
 category: essay 
 ---
 
+* toc
+{:toc}
+
 # 高考
 
 ![](/images/img2/gaokao.jpg)

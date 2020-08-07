@@ -4,6 +4,9 @@ title: 步步高, 印度
 category: essay 
 ---
 
+* toc
+{:toc}
+
 # 步步高
 
 https://www.zhihu.com/question/21338484

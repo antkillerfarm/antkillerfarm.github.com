@@ -4,6 +4,9 @@ title:  图像处理理论（十）——Optical flow, Particle filter, 从BOW�
 category: graphics 
 ---
 
+* toc
+{:toc}
+
 # Harris
 
 ## Harris角点的性质（续）

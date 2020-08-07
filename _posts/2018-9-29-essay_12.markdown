@@ -4,6 +4,9 @@ title: 我的PC Game（二）
 category: essay 
 ---
 
+* toc
+{:toc}
+
 # 我的PC Game
 
 ## 2017.2

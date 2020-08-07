@@ -4,6 +4,9 @@ title:  FreeType, FFmpeg, SDL, 图像处理软件
 category: technology 
 ---
 
+* toc
+{:toc}
+
 # FreeType使用指南
 
 FreeType是一套跨平台的字体文件编程开发包。它的官网是www.freetype.org，你可以到这个网站获得最新的源代码。

@@ -4,6 +4,9 @@ title:  Hadoop
 category: AI 
 ---
 
+* toc
+{:toc}
+
 # Hadoop
 
 最近（2016.4），参加公司组织的内部培训，对Hadoop有了一些认识，特记录如下。

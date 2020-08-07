@@ -4,6 +4,9 @@ title:  ALSA（二）, GStreamer（三）, WebSocket, CoAP & MQTT, WebKit
 category: technology 
 ---
 
+* toc
+{:toc}
+
 # 从Gstreamer到ALSA（续）
 
 ## 4.SOC_SINGLE类宏

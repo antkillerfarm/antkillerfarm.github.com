@@ -4,6 +4,9 @@ title: 对Geoffrey Everest Hinton的深度挖掘, 向阳红10号
 category: essay 
 ---
 
+* toc
+{:toc}
+
 # 对Geoffrey Everest Hinton的深度挖掘
 
 2017.1

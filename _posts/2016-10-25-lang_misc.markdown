@@ -4,6 +4,9 @@ title:  小众语言集中营, Lua, Github显示数学公式
 category: language 
 ---
 
+* toc
+{:toc}
+
 # 小众语言集中营
 
 ## 前言

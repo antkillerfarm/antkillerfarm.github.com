@@ -4,6 +4,9 @@ title:  Python（三）
 category: language 
 ---
 
+* toc
+{:toc}
+
 # Python
 
 ## range & xrange

@@ -4,6 +4,9 @@ title:  大杂烩, 硬盘安装Linux（legacy）, Mac OS X
 category: linux 
 ---
 
+* toc
+{:toc}
+
 # Symbian开发
 
 1)试着装好了Carbide c++以及S60 3rd SDK后，却发现不能在C盘以外的地方建工程（在默认的C:\Symbian\Carbide\workspace之外建工程是可以的），真没想到Nokia出的工具还有这样不友好的限制。

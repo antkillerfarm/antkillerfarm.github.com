@@ -4,6 +4,9 @@ title:  深度推荐系统（二）
 category: Recommender System 
 ---
 
+* toc
+{:toc}
+
 # 深度推荐系统
 
 https://mp.weixin.qq.com/s/frUPjpCQGlZc7Dag_v7r3A

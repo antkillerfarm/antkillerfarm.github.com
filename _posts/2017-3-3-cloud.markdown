@@ -4,6 +4,9 @@ title:  云计算论文集, Spark, Zookeeper
 category: AI 
 ---
 
+* toc
+{:toc}
+
 # 云计算论文集
 
 这里列出一些在这个领域产生重大影响的论文。仅作备忘，肯定不全，Google是其中的绝对主力。

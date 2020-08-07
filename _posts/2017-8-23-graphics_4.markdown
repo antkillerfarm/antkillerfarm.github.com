@@ -4,6 +4,9 @@ title:  图像处理理论（四）——Schmid滤波, HOG, Haar, SIFT
 category: graphics 
 ---
 
+* toc
+{:toc}
+
 # Gabor滤波
 
 ## Gabor filter（续）

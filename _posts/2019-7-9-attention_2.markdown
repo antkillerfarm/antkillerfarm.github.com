@@ -4,6 +4,9 @@ title:  Attention（二）——花式Attention, Transformer
 category: Attention 
 ---
 
+* toc
+{:toc}
+
 # 花式Attention
 
 ## Self Attention（续）

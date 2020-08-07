@@ -4,6 +4,9 @@ title:  深度学习（五十）——深度推理, CNN进阶, AI前沿, 深度�
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # 深度推理
 
 https://mp.weixin.qq.com/s/rE96BprEO1ZatVOQeO-4YA

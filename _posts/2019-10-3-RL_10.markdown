@@ -4,6 +4,9 @@ title:  强化学习（十）——Integrating Learning and Planning（1）
 category: RL 
 ---
 
+* toc
+{:toc}
+
 # 博弈论（续）
 
 ## 其他博弈问题

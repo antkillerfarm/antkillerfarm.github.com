@@ -4,6 +4,9 @@ title:  深度加速（二）——Winograd（2）
 category: DL acceleration 
 ---
 
+* toc
+{:toc}
+
 # Winograd
 
 ## 最大公约数和Euclidean algorithm（续）

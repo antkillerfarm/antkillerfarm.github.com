@@ -4,6 +4,9 @@ title:  Ubuntu使用技巧（一）
 category: linux 
 ---
 
+* toc
+{:toc}
+
 # 在Ubuntu上安装VMWare tools
 
 VMWare自带的VMWare tools在新版的Ubuntu上总是安装不上，其实解决方法也很简单。

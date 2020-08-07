@@ -4,6 +4,9 @@ title:  机器学习（二十八）——KNN, AutoML, 数据不平衡问题, 花
 category: ML 
 ---
 
+* toc
+{:toc}
+
 # KNN
 
 K最近邻(k-Nearest Neighbor，KNN)分类算法，是一个理论上比较成熟的方法，也是最简单的机器学习算法之一。

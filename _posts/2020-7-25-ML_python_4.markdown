@@ -4,6 +4,9 @@ title:  Machine Learning之Python篇（四）, 多维数组的行优先和列优
 category: AI 
 ---
 
+* toc
+{:toc}
+
 # Machine Learning之Python篇
 
 https://mp.weixin.qq.com/s/xYNCKy36n8CoaGzABlI5Wg

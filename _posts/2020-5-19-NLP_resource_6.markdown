@@ -4,6 +4,9 @@ title:  NLP参考资源（六）, 编译原理
 category: resource 
 ---
 
+* toc
+{:toc}
+
 # NLP参考资源
 
 https://mp.weixin.qq.com/s/Zo6LjGE__vQMsWyuoZm6Hw

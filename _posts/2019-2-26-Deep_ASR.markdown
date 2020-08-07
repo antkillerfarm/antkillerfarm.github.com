@@ -4,6 +4,9 @@ title:  深度语音识别（一）——概述, CTC
 category: speech 
 ---
 
+* toc
+{:toc}
+
 # 概述
 
 ## end-to-end（E2E）

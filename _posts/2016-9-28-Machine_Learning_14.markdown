@@ -4,6 +4,9 @@ title:  机器学习（十四）——机器学习中的矩阵方法（2）特�
 category: ML 
 ---
 
+* toc
+{:toc}
+
 ## 矩阵的特征值和特征向量
 
 设A是一个n阶方阵，$$\lambda$$是一个数，如果方程$$Ax=\lambda x$$存在非零解向量，则称$$\lambda$$为A的一个特征值（Eigenvalue），相应的非零解向量x称为属于特征值$$\lambda$$的特征向量（eigenvector）。

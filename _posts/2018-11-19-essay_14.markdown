@@ -4,6 +4,9 @@ title: 世说新语专辑（一）
 category: essay 
 ---
 
+* toc
+{:toc}
+
 # 世说新语
 
 ## 2018.10（续）

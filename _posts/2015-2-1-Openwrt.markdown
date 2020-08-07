@@ -4,6 +4,9 @@ title:  OpenWrt配置篇
 category: linux 
 ---
 
+* toc
+{:toc}
+
 # OpenWrt编译
 
 1.下载代码

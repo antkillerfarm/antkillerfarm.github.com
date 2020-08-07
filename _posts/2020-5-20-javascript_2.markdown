@@ -4,6 +4,9 @@ title:  Javascript（二）
 category: language 
 ---
 
+* toc
+{:toc}
+
 # 动画（续）
 
 ## Step2：回调函数嵌套问题

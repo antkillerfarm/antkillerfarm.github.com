@@ -4,6 +4,9 @@ title:  深度学习（二十三）——MemNet, RDN, ShuffleSeg, SVDF, LCNN, Im
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # DemosaicNet（续）
 
 和之前的网络不同，DemosaicNet的输入是原始的Bayer Array数据，而输出是处理好的图片。

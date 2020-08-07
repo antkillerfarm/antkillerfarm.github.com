@@ -4,6 +4,9 @@ title:  机器学习（四）——SVM（1）
 category: ML 
 ---
 
+* toc
+{:toc}
+
 ## 朴素贝叶斯方法（续）
 
 $$\begin{align}p(x_1,\dots,x_{50000}\mid y)&=p(x_1\mid y)p(x_2\mid y,x_1)p(x_3\mid y,x_1,x_2)\cdots p(x_{50000}\mid y,x_1,\dots,x_{49999})(条件概率的乘法公式)

@@ -4,6 +4,9 @@ title:  ML参考资源（三）, 上古软件开发
 category: resource 
 ---
 
+* toc
+{:toc}
+
 # ML参考资源
 
 https://mp.weixin.qq.com/s/vLvjo8Cso_bYEuW-AFoyiA

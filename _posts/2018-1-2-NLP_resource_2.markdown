@@ -4,6 +4,9 @@ title:  NLP参考资源（二）
 category: resource 
 ---
 
+* toc
+{:toc}
+
 # NLP参考资源
 
 ## 文本分类

@@ -4,6 +4,9 @@ title:  图像处理理论（一）——概述, 直方图, 二值化
 category: graphics 
 ---
 
+* toc
+{:toc}
+
 # 书籍
 
 《Digital Image Processing》，Rafael C. Gonzalez、Richard E. Woods著。

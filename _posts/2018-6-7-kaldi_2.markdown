@@ -4,6 +4,9 @@ title:  Kaldi（二）
 category: AI 
 ---
 
+* toc
+{:toc}
+
 # ARPA文件格式（续）
 
 1-grams部分中每一条包括了3项，其中第二项显然是条目文本本身。

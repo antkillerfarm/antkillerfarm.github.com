@@ -4,6 +4,9 @@ title:  Pytorch
 category: AI 
 ---
 
+* toc
+{:toc}
+
 # Pytorch
 
 ## 概述

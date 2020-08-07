@@ -4,6 +4,9 @@ title:  DL参考资源（七）
 category: resource 
 ---
 
+* toc
+{:toc}
+
 # DL参考资源
 
 https://mp.weixin.qq.com/s/iZ3MpyypVw-wYKAd2gBwwA

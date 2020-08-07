@@ -4,6 +4,9 @@ title:  深度学习（十二）——Siamese network, SENet, 姿态/行为检�
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # Siamese network
 
 Siamese和Chinese有点像。Siam是古时候泰国的称呼，中文译作暹罗。Siamese也就是“暹罗”人或“泰国”人。Siamese在英语中是“孪生”、“连体”的意思，这是为什么呢？

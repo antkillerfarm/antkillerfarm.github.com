@@ -4,6 +4,9 @@ title:  Ubuntu使用技巧（三）
 category: linux 
 ---
 
+* toc
+{:toc}
+
 # Ubuntu 18.04使用手记
 
 又是两年过去了，这次是Ubuntu 18.04（2018.4.26发布）。

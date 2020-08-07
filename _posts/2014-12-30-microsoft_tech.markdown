@@ -4,6 +4,9 @@ title:  这些年微软相关的技术总结, WxWidget, WebGL
 category: technology 
 ---
 
+* toc
+{:toc}
+
 # VS
 
 ## 1.选择CPU的类型

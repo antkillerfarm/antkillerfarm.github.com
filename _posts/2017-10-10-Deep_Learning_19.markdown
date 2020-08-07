@@ -4,6 +4,9 @@ title:  深度学习（十九）——LSTM进阶
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # LSTM进阶
 
 ## 《Long short-term memory》

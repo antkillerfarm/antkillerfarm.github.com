@@ -4,6 +4,9 @@ title:  Javascript（一）
 category: language 
 ---
 
+* toc
+{:toc}
+
 # 参考指南 & 教程
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference

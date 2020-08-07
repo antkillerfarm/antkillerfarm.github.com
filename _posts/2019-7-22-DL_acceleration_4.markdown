@@ -4,6 +4,9 @@ title:  深度加速（四）——模型压缩与加速
 category: DL acceleration 
 ---
 
+* toc
+{:toc}
+
 # NN Quantization
 
 ## bfloat16（续）

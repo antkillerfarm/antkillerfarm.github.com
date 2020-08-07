@@ -4,6 +4,9 @@ title:  ML参考资源（一）
 category: resource 
 ---
 
+* toc
+{:toc}
+
 # ML参考资源
 
 ## blog

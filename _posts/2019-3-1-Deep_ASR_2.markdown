@@ -4,6 +4,9 @@ title:  深度语音识别（二）——Deep Speech, 语音合成, 语音识别
 category: speech 
 ---
 
+* toc
+{:toc}
+
 # CTC（续）
 
 ## 参考

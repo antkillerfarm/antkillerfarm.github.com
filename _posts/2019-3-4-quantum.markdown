@@ -4,6 +4,9 @@ title:  量子计算, 遗传算法 & 进化算法, PaddlePaddle, X-Deep Learning
 category: resource 
 ---
 
+* toc
+{:toc}
+
 # 量子计算
 
 https://www.zhihu.com/people/xuan-xing-29/posts

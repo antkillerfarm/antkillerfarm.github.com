@@ -4,6 +4,9 @@ title:  图像处理理论（九）——Camshift, Harris
 category: graphics 
 ---
 
+* toc
+{:toc}
+
 # Meanshift（续）
 
 ## Meanshift与目标跟踪

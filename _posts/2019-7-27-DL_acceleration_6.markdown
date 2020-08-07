@@ -4,6 +4,9 @@ title:  深度加速（六）——模型压缩与加速进阶
 category: DL acceleration 
 ---
 
+* toc
+{:toc}
+
 # 知识蒸馏（续）
 
 http://blog.csdn.net/zhongshaoyy/article/details/53582048

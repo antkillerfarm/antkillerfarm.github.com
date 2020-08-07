@@ -4,6 +4,9 @@ title:  版本管理工具的前世今生, Kannel, Win10历险记, 运维工具�
 category: technology 
 ---
 
+* toc
+{:toc}
+
 # 版本管理工具的前世今生
 
 参考Wiki的相关词条，可将版本工具分为三代：

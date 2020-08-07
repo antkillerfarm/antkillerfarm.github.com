@@ -4,6 +4,9 @@ title:  深度学习（六）——RNN, LSTM
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # 词向量（续）
 
 ## word2vec/doc2vec的缺点

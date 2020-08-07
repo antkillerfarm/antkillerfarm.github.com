@@ -4,6 +4,9 @@ title:  Kaldi（一）
 category: AI 
 ---
 
+* toc
+{:toc}
+
 # Kaldi
 
 Kaldi是一个语音识别的工具包。它由Daniel Povey于2009年创建。

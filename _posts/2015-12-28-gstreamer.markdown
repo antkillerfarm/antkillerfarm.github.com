@@ -4,6 +4,9 @@ title:  GStreamer（一）
 category: technology 
 ---
 
+* toc
+{:toc}
+
 # 概况
 
 当前GStreamer主要有两个大的版本分支：

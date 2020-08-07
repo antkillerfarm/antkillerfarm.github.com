@@ -4,6 +4,9 @@ title:  深度学习（十八）——无监督/半监督/自监督深度学习�
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # 无监督/半监督/自监督深度学习（续）
 
 https://mp.weixin.qq.com/s/HopNSLS75TgE28LfY02qog

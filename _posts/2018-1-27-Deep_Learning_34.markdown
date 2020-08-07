@@ -4,6 +4,9 @@ title:  深度学习（三十四）——词向量进阶, 深度贝叶斯学习,
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # 词向量进阶
 
 ## All is Embedding

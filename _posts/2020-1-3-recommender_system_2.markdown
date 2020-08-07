@@ -4,6 +4,9 @@ title:  推荐系统（二）——用户画像, 工程细节
 category: Recommender System 
 ---
 
+* toc
+{:toc}
+
 # 推荐算法中的常用排序算法
 
 ![](/images/img3/ranking.png)

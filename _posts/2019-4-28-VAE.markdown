@@ -4,6 +4,9 @@ title:  VAE（一）——Variational Inference, Vanilla VAE（1）
 category: GAN & VAE 
 ---
 
+* toc
+{:toc}
+
 # Variational Inference
 
 论文：

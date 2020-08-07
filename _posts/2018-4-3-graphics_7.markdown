@@ -4,6 +4,9 @@ title:  图像处理理论（七）——LBP, Fisherface, Viola-Jones
 category: graphics 
 ---
 
+* toc
+{:toc}
+
 # Eigenface
 
 ## 计算Eigenface（续）

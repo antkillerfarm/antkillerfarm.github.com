@@ -4,6 +4,9 @@ title:  垃圾筐
 category: Nature 
 ---
 
+* toc
+{:toc}
+
 # 垃圾筐
 
 Introspective Neural Networks

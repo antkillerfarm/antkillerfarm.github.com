@@ -4,6 +4,9 @@ title:  机器学习（三十四）——机器学习语录, Linear Discriminant
 category: ML 
 ---
 
+* toc
+{:toc}
+
 # 机器学习语录
 
 这里收录一些网上的只言片语式的心得，以区别于一般的教程。

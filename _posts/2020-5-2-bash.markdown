@@ -4,6 +4,9 @@ title:  bash, diff&patch, awk&sed&grep
 category: linux 
 ---
 
+* toc
+{:toc}
+
 # bash
 
 手册：

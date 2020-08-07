@@ -4,6 +4,9 @@ title:  VAE（三）——VAE vs GAN, Normalizing Flow, VAE参考资源
 category: GAN & VAE 
 ---
 
+* toc
+{:toc}
+
 # Vanilla VAE
 
 ## VAE的另一个介绍（续）

@@ -4,6 +4,9 @@ title:  Elasticsearch（二）, Flume & Kafka, 计算机体系结构
 category: AI 
 ---
 
+* toc
+{:toc}
+
 # Elasticsearch
 
 ## ELK的配置部署（续）

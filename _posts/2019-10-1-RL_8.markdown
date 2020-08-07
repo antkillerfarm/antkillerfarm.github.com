@@ -4,6 +4,9 @@ title:  强化学习（八）——Actor-Critic, 博弈论（1）
 category: RL 
 ---
 
+* toc
+{:toc}
+
 # 策略梯度（续）
 
 ## Policy Gradient Theorem

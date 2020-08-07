@@ -4,6 +4,9 @@ title:  NLP参考资源（四）
 category: resource 
 ---
 
+* toc
+{:toc}
+
 # NLP参考资源
 
 https://mp.weixin.qq.com/s/xYvYEJA0ssAOZ-NvEXQcZg

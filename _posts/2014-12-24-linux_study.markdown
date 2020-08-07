@@ -4,6 +4,9 @@ title:  linux学习心得（一）
 category: linux 
 ---
 
+* toc
+{:toc}
+
 # GUI设计工具
 
 GTK+的程序可以使用Glade来设计界面，它会生成一个脚本，运行该脚本，并make就行了。

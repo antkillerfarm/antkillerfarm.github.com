@@ -4,6 +4,9 @@ title:  深度学习（十）——花式卷积（1）
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # CNN进化史
 
 ## 总结（续）

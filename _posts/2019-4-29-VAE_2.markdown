@@ -4,6 +4,9 @@ title:  VAE（二）——Vanilla VAE（2）
 category: GAN & VAE 
 ---
 
+* toc
+{:toc}
+
 # Vanilla VAE（续）
 
 ## VAE初现

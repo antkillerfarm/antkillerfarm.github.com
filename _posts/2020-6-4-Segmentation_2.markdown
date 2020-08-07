@@ -4,6 +4,9 @@ title:  语义分割（二）——FCN, SegNet, DeconvNet, DeepLab, ENet, GCN
 category: Segmentation 
 ---
 
+* toc
+{:toc}
+
 # FCN（续）
 
 通常CNN网络在卷积层之后会接上若干个全连接层, 将卷积层产生的特征图(feature map)映射成一个固定长度的特征向量。以AlexNet为代表的经典CNN结构适合于图像级的分类和回归任务，因为它们最后都期望得到整个输入图像的一个数值描述（概率），比如AlexNet的ImageNet模型输出一个1000维的向量表示输入图像属于每一类的概率(softmax归一化)。

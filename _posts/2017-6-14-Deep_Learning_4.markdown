@@ -1,7 +1,11 @@
 ---
 layout: post
 title:  深度学习（四）——AutoEncoder
+category: DL 
 ---
+
+* toc
+{:toc}
 
 # CNN（续）
 

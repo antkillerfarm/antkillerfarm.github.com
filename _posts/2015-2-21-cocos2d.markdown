@@ -4,6 +4,9 @@ title:  cocos2d, Box2D
 category: technology 
 ---
 
+* toc
+{:toc}
+
 # 安装
 
 cocos2d和cocos2d-x虽然都是一家的产品，但前者是用python写的，而后者是用C++写的。

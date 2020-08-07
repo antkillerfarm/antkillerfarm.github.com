@@ -4,6 +4,9 @@ title:  机器学习（三十二）——t-SNE
 category: ML 
 ---
 
+* toc
+{:toc}
+
 # CRF
 
 ## CRF的训练和推断（续）

@@ -4,6 +4,9 @@ title:  名校机器学习相关课程（二）, 5G
 category: resource 
 ---
 
+* toc
+{:toc}
+
 # 名校机器学习相关课程
 
 https://mp.weixin.qq.com/s/pMOePInkrfx6o6PNJKlhZA

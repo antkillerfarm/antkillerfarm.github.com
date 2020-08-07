@@ -4,6 +4,9 @@ title:  深度学习（二十四）——深度目标跟踪, L2 Normalization
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # 深度目标跟踪
 
 ![](/images/img3/recent_Tracker_development.png)

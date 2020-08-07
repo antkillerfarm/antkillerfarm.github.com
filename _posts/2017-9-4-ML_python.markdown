@@ -4,6 +4,9 @@ title:  Machine Learning之Python篇（一）
 category: AI 
 ---
 
+* toc
+{:toc}
+
 # Machine Learning之Python篇
 
 ## 概述

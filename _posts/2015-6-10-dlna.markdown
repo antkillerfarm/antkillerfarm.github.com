@@ -4,6 +4,9 @@ title:  DLNA, PulseAudio
 category: technology 
 ---
 
+* toc
+{:toc}
+
 # DLNA参考资料
 
 http://pie.pconline.com.cn/443/4434846.html

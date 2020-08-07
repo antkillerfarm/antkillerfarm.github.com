@@ -4,6 +4,9 @@ title:  OpenWrt编程篇
 category: linux 
 ---
 
+* toc
+{:toc}
+
 # 编译OpenWrt模块--Hello World
 
 1）SDK

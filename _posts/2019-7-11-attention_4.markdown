@@ -4,6 +4,9 @@ title:  Attention（四）——ELMo, GPT, ERNIE, XLNet, 轻量化BERT
 category: Attention 
 ---
 
+* toc
+{:toc}
+
 # BERT（续）
 
 ## pre-training

@@ -4,6 +4,9 @@ title:  C#, Lisp, Kotlin, Lua, Haskell
 category: language 
 ---
 
+* toc
+{:toc}
+
 # C#
 
 ## XmlReader

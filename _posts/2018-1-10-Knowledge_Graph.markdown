@@ -4,6 +4,9 @@ title:  知识图谱参考资源（一）
 category: graph 
 ---
 
+* toc
+{:toc}
+
 # 知识图谱参考资源
 
 ## 教程

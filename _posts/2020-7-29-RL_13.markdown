@@ -4,6 +4,9 @@ title:  强化学习（十三）——模仿学习, 化学
 category: RL 
 ---
 
+* toc
+{:toc}
+
 # Inverse Reinforcement Learning（续）
 
 通俗的说法就是：**我们用优化控制或强化学习得到的策略能用来解释人类的行为吗？**

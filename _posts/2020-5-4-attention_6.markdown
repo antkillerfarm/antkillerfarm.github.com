@@ -4,6 +4,9 @@ title:  Attention（六）——Attention进阶
 category: Attention 
 ---
 
+* toc
+{:toc}
+
 # BERT进阶
 
 https://mp.weixin.qq.com/s/pYSs6NhIAB6DuwNnKZhkZQ

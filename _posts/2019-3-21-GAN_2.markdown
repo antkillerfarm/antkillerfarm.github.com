@@ -4,6 +4,9 @@ title:  GAN（二）——GAN进阶
 category: GAN & VAE 
 ---
 
+* toc
+{:toc}
+
 # 概况（续）
 
 ## 小结

@@ -4,6 +4,9 @@ title:  语音识别（七）——WFST（2）
 category: speech 
 ---
 
+* toc
+{:toc}
+
 # WFST（续）
 
 ## FSM

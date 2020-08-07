@@ -4,6 +4,9 @@ title:  深度强化学习（八）——AlphaStar, Dota 2, DRL参考资源（1�
 category: DRL 
 ---
 
+* toc
+{:toc}
+
 # StarCraft & AI（续）
 
 https://mp.weixin.qq.com/s/wyn-V4-DcjjOKziith3pXw

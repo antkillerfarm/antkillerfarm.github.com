@@ -4,6 +4,9 @@ title:  GAN（六）——GAN参考资源（2）
 category: GAN & VAE 
 ---
 
+* toc
+{:toc}
+
 # GAN参考资源
 
 https://mp.weixin.qq.com/s/8Vt3p8iXFq9rI-ph1Syt-Q

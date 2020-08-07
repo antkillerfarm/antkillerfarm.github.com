@@ -4,6 +4,9 @@ title:  深度学习（十三）——花式池化, Regularization
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # 花式卷积（续）
 
 https://mp.weixin.qq.com/s/ybI8kJPRn7sH-hJbc5uqnw

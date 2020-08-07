@@ -4,6 +4,9 @@ title:  机器学习（三十五）——Probabilistic Robotics, Kalman filters,
 category: ML 
 ---
 
+* toc
+{:toc}
+
 # Probabilistic Robotics
 
 这篇心得主要根据Sebastian Thrun的Probabilistic Robotics课程的ppt来写。

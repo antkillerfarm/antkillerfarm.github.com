@@ -4,6 +4,9 @@ title:  强化学习（十一）——Integrating Learning and Planning（2）
 category: RL 
 ---
 
+* toc
+{:toc}
+
 # Integrating Learning and Planning
 
 ## Dyna-Q Algorithm（续）

@@ -4,6 +4,9 @@ title:  机器学习（一）——线性回归
 category: ML 
 ---
 
+* toc
+{:toc}
+
 # 序
 
 >Machine Learning = Statistics + Optimization   

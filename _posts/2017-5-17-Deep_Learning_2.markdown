@@ -4,6 +4,9 @@ title:  深度学习（二）——神经元激活函数, Dropout
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # BP算法
 
 ## 随机初始化（续）

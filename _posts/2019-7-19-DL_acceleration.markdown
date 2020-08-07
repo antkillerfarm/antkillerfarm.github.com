@@ -4,6 +4,9 @@ title:  深度加速（一）——概述, Winograd（1）
 category: DL acceleration 
 ---
 
+* toc
+{:toc}
+
 # 概述
 
 ## 书籍

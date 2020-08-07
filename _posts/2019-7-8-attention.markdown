@@ -4,6 +4,9 @@ title:  Attention（一）——Vanilla Attention, Neural Turing Machines
 category: Attention 
 ---
 
+* toc
+{:toc}
+
 # Vanilla Attention
 
 众所周知，RNN在处理长距离依赖关系时会出现问题。理论上，LSTM这类结构能够处理这个问题，但在实践中，长距离依赖关系仍旧是个问题。例如，研究人员发现将原文倒序（将其倒序输入编码器）产生了显著改善的结果，因为从解码器到编码器对应部分的路径被缩短了。同样，两次输入同一个序列似乎也有助于网络更好地记忆。

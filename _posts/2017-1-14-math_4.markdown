@@ -4,6 +4,9 @@ title:  数学狂想曲（四）——矩阵&向量的积, 20世纪10大算法, 
 category: math 
 ---
 
+* toc
+{:toc}
+
 # 统计杂谈
 
 ### Mersenne Twister（续）

@@ -4,6 +4,9 @@ title:  深度学习（七）——神经元激活函数进阶
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # LSTM（续）
 
 ## 步骤详解

@@ -4,6 +4,9 @@ title:  深度学习（三十）——Graph NN（2）
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # Graph NN（续）
 
 https://mp.weixin.qq.com/s/WMpcamrHjUDnYwqyISdooA

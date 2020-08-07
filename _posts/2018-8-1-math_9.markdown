@@ -4,6 +4,9 @@ title:  数学狂想曲（九）——Bézier curve, 熵
 category: math 
 ---
 
+* toc
+{:toc}
+
 # 随机过程（续）
 
 ### 中心极限定理

@@ -4,6 +4,9 @@ title:  机器学习（二十一）——Loss function详解（1）
 category: ML 
 ---
 
+* toc
+{:toc}
+
 # Loss function详解
 
 ![](/images/img2/loss.png)

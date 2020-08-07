@@ -4,6 +4,9 @@ title:  机器学习（二十六）——Latent Dirichlet Allocation
 category: ML 
 ---
 
+* toc
+{:toc}
+
 # Latent Dirichlet Allocation
 
 Latent Dirichlet Allocation，简称LDA。注意不要和Linear Discriminant Analysis搞混了。

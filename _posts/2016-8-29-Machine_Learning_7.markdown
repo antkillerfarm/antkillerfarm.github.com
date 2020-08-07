@@ -4,6 +4,9 @@ title:  机器学习（七）——学习理论
 category: ML 
 ---
 
+* toc
+{:toc}
+
 # SVM
 
 ## 序列最小优化方法（续）

@@ -4,6 +4,9 @@ title:  AI游戏
 category: resource 
 ---
 
+* toc
+{:toc}
+
 # AI游戏
 
 CFR（Counterfactual Regret Minimization）

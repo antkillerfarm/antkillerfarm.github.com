@@ -4,6 +4,9 @@ title:  移动端推理框架, DL Backend, GPU通信技术, Kubernetes, DRL实�
 category: AI 
 ---
 
+* toc
+{:toc}
+
 # 移动端推理框架
 
 最知名的移动端推理框架毫无疑问是Google的Tensorflow Lite和Android NN。这两个框架在本blog的Tensorflow章节已有描述。

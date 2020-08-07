@@ -4,6 +4,9 @@ title:  linux学习心得（二）
 category: linux 
 ---
 
+* toc
+{:toc}
+
 # 文件锁
 
 Linux系统上的文件锁主要分为协同锁(advisory lock)和强制锁(mandatory lock)。前者是应用层锁，实现方式与信号量相似。后者是内核层锁。

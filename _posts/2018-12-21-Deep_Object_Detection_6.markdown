@@ -4,6 +4,9 @@ title:  深度目标检测（六）——Tiny-YOLO, YOLOv4, One-stage vs. Two-st
 category: Deep Object Detection 
 ---
 
+* toc
+{:toc}
+
 # Tiny-YOLO
 
 YOLO系列还包括了一个速度更快但精度稍低的嵌入式版本系列——Tiny-YOLO。

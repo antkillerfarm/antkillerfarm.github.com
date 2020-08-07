@@ -4,6 +4,9 @@ title:  Ubuntu使用技巧（二）
 category: linux 
 ---
 
+* toc
+{:toc}
+
 # Ubuntu 16.04使用手记
 
 Ubuntu 16.04正式发布（2016.4.21）之后，我第一时间下载了下来。

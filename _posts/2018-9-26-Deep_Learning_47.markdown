@@ -4,6 +4,9 @@ title:  深度学习（四十七）——三维处理, NetVLAD, Spatial Transfor
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # 三维处理
 
 https://mp.weixin.qq.com/s/19-ggA8nPEmXgMMivI7lLQ

@@ -4,6 +4,9 @@ title:  Android研究（一）
 category: technology 
 ---
 
+* toc
+{:toc}
+
 # Android研究
 
 ## JNI

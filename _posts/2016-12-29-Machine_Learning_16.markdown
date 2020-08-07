@@ -4,6 +4,9 @@ title:  机器学习（十六）——协同过滤的ALS算法
 category: ML 
 ---
 
+* toc
+{:toc}
+
 # 协同过滤的ALS算法
 
 ## 协同过滤概述

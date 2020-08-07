@@ -4,6 +4,9 @@ title:  R
 category: language 
 ---
 
+* toc
+{:toc}
+
 # R
 
 R语言是另一个应用较广的数学工具语言和环境，主要应用于统计学和数据挖掘等领域。在这些领域，其影响力甚至超过了Matlab。

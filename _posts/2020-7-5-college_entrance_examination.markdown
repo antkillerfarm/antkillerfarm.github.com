@@ -4,6 +4,9 @@ title: 再谈高考（一）
 category: essay 
 ---
 
+* toc
+{:toc}
+
 # 再谈高考
 
 https://www.zhihu.com/question/404784733/

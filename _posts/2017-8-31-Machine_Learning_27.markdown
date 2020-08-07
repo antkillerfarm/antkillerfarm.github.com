@@ -4,6 +4,9 @@ title:  机器学习（二十七）——EMD, LSA
 category: ML 
 ---
 
+* toc
+{:toc}
+
 # Latent Dirichlet Allocation（续）
 
 ## 如何确定LDA的topic个数

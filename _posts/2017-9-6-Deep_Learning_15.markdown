@@ -4,6 +4,9 @@ title:  深度学习（十五）——fine-tuning, Style Transfer（1）
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # Normalization进阶
 
 ## Local Response Normalization（续）

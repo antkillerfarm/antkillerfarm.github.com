@@ -4,6 +4,9 @@ title:  深度学习（二十）——Ultra Deep Network
 category: DL 
 ---
 
+* toc
+{:toc}
+
 # Ultra Deep Network
 
 ## FractalNet

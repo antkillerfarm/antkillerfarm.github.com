@@ -4,6 +4,9 @@ title:  语音识别（六）——FBank, 语音识别的评价指标, 声学模
 category: speech 
 ---
 
+* toc
+{:toc}
+
 # Mel-Frequency Analysis（续）
 
 ## 参考

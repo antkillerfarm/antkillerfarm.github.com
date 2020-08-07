@@ -4,6 +4,9 @@ title:  机器学习（十九）——决策树
 category: ML 
 ---
 
+* toc
+{:toc}
+
 # 决策树
 
 ## Lorenz curve（续）

@@ -4,6 +4,9 @@ title:  推荐系统（一）——推荐系统进阶, 常用排序算法
 category: Recommender System 
 ---
 
+* toc
+{:toc}
+
 # 推荐系统进阶
 
 除了《机器学习（十六～十七）》提及的ALS和PCA之外，相关的算法还包括：

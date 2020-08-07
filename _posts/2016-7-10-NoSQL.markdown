@@ -4,6 +4,9 @@ title:  NoSQL, Velocity, ActiveMQ, 12306, MongoDB
 category: AI 
 ---
 
+* toc
+{:toc}
+
 # NoSQL
 
 ## ACID

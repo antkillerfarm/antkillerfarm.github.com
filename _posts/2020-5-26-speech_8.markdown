@@ -4,6 +4,9 @@ title:  语音识别（八）——声纹识别, 地理
 category: speech 
 ---
 
+* toc
+{:toc}
+
 # WFST（续）
 
 https://blog.csdn.net/dearwind153/article/details/70053704

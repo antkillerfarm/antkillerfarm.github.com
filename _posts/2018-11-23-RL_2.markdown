@@ -4,6 +4,9 @@ title:  强化学习（二）——K-摇臂赌博机, Q-learning, MDP
 category: RL 
 ---
 
+* toc
+{:toc}
+
 # K-摇臂赌博机
 
 ![](/images/article/Multi-Armed_Bandit.jpg)

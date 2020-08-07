@@ -4,6 +4,9 @@ title:  古希腊三大数学书（二）
 category: essay 
 ---
 
+* toc
+{:toc}
+
 # 古希腊三大数学书
 
 ### 几何（续）

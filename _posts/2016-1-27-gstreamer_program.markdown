@@ -4,6 +4,9 @@ title:  GStreamer（二）
 category: technology 
 ---
 
+* toc
+{:toc}
+
 # GStreamer应用（续）
 
 ## TCP远程播放

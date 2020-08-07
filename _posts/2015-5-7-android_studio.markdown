@@ -4,6 +4,9 @@ title:  Android Studio
 category: technology 
 ---
 
+* toc
+{:toc}
+
 # Android Studio配置
 
 又是两年不曾摸过Android的开发了，一切又需要从头开始。这次卷土重来，windows已经不是我首选的平台了，因此以下的内容都是在Ubuntu 14.04下完成的。PS：除了网银、游戏、公司的工作，我现在已经基本不在windows下玩了。

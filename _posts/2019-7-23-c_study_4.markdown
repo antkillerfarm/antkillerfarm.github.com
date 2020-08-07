@@ -4,6 +4,9 @@ title:  boost, Test framework, Objective-C
 category: language 
 ---
 
+* toc
+{:toc}
+
 # C/C++编程心得
 
 ## 虚函数

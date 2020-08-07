@@ -4,6 +4,9 @@ title:  机器学习（十八）——独立成分分析, 度量学习, 压缩�
 category: ML 
 ---
 
+* toc
+{:toc}
+
 # 主成分分析
 
 ## Other（续）

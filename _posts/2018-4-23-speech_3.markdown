@@ -4,6 +4,9 @@ title:  语音识别（三）——声源定位
 category: speech 
 ---
 
+* toc
+{:toc}
+
 # Microphone
 
 ## Microphone Array与语音交互技术架构（续）

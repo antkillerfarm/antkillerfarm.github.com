@@ -4,6 +4,9 @@ title:  Graph ML（一）——图论基础, 强连通分量算法, 社交网络
 category: graph 
 ---
 
+* toc
+{:toc}
+
 # 图论基础
 
 ## 基本概念

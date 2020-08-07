@@ -4,6 +4,9 @@ title:  IT杂谈, 电子科技史
 category: resource 
 ---
 
+* toc
+{:toc}
+
 # IT杂谈
 
 ## Bill Gates和MS-DOS

@@ -4,6 +4,9 @@ title:  C/C++编程心得（一）
 category: language 
 ---
 
+* toc
+{:toc}
+
 # 参考资料
 
 https://en.cppreference.com/

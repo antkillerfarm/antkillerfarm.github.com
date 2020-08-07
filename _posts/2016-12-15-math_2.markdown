@@ -4,6 +4,9 @@ title:  数学狂想曲（二）——傅立叶变换, DFT, 拉普拉斯变换, 
 category: math 
 ---
 
+* toc
+{:toc}
+
 # 欧拉公式（续）
 
 https://mp.weixin.qq.com/s/vdxfzuGEMoiwGARYYzXbKg

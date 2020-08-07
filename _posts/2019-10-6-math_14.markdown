@@ -4,6 +4,9 @@ title:  数学狂想曲（十四）——数学的深渊, Wavelet & Chirplet, La
 category: math 
 ---
 
+* toc
+{:toc}
+
 # 软件滤波算法（续）
 
 ## 加权递推平均滤波法

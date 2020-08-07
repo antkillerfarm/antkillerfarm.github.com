@@ -4,6 +4,9 @@ title:  并行 & 框架
 category: resource 
 ---
 
+* toc
+{:toc}
+
 # 并行 & 框架
 
 ## 论文
