@@ -245,6 +245,10 @@ https://mp.weixin.qq.com/s/bwUZEzgAzANPgaWTFa3GHA
 
 马斯克是如何给NASA省钱的？
 
+https://mp.weixin.qq.com/s/J3bk8C-yp3O_PBxn_I9Ywg
+
+马斯克的星际飞船首次起飞测试成功！起跳150米后平稳着陆，“火星在望”
+
 ----
 
 小布什签署的美国航天发展规划，直接规定了要求NASA退出近地空间，要求他们重新带领美国航天天顶科技。与此同时，美国的商业航天开始全面崛起，后来大名鼎鼎的space-x，bigelow，blue origin大都从此时起步。

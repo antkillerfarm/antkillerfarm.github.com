@@ -88,6 +88,10 @@ https://mp.weixin.qq.com/s/veFDawkUJFidUFLFaykmGg
 
 双目立体视觉原理及应用
 
+https://mp.weixin.qq.com/s/8YRosO_wuE7Nx-IowldloQ
+
+关于双目立体视觉的三大基本算法及发展现状的总结
+
 http://mp.weixin.qq.com/s/MWQDwMoRc0c1ofkENzn3Ew
 
 结构光，TOF，双目视觉的异同

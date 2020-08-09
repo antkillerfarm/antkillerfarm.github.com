@@ -148,11 +148,15 @@ https://mp.weixin.qq.com/s/bf_CHcoZMjqP6Is4ebD58g
 
 https://mp.weixin.qq.com/s/pJTDJrMCfv5y4LQ2itt1tQ
 
-Facebook的 Prophet 算法简介与使用
+Facebook的Prophet算法简介与使用
 
 https://mp.weixin.qq.com/s/675ASxDSVH_8BX6W8WRRqg
 
 基于Prophet的时间序列预测
+
+https://mp.weixin.qq.com/s/4rJL3cccsjVqgrNDjcMIJw
+
+Prophet：Facebook创造的先知
 
 ## Lebesgue积分
 
@@ -253,6 +257,10 @@ https://mp.weixin.qq.com/s/2teyejpbpM6x5UCiYL8s-Q
 https://mp.weixin.qq.com/s/Aqh9lZvyDncyCdXgxH1lSQ
 
 短小时序，如何预测？——基于特征重构的张量ARIMA
+
+https://mp.weixin.qq.com/s/NHwMVzZWOU24pdbjzcchAg
+
+从AR到ARIMA
 
 # 辛普森悖论
 
@@ -371,11 +379,3 @@ https://mp.weixin.qq.com/s/l3790PuutrOF27RRmVqJhQ
 https://mp.weixin.qq.com/s/n_LY6mmJRH5k_cubYOTq1A
 
 模型剪枝有哪些关键技术，如何对其进行长期深入学习
-
-https://zhuanlan.zhihu.com/p/138059904
-
-一文看懂深度学习模型压缩和加速
-
-https://mp.weixin.qq.com/s/4aVY9vUBX_Bxht953r00sA
-
-在Keras中利用TensorNetwork加速神经网络

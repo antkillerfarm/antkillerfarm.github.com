@@ -307,6 +307,10 @@ https://mp.weixin.qq.com/s/B8r2YEd9UbKMTT8Tup2Y_w
 
 腾讯（优图）新技术的人脸检测（DSFD）
 
+https://mp.weixin.qq.com/s/iI-q0s8aSojeDFbasiFVKw
+
+人脸检测器：对DSFD的理解
+
 https://zhuanlan.zhihu.com/p/62954487
 
 旷视研究院新出8000点人脸关键点，堪比电影级表情捕捉

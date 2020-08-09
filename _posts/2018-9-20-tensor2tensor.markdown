@@ -317,22 +317,6 @@ https://www.zhihu.com/question/392035070
 
 # 化学+
 
-https://mp.weixin.qq.com/s/Vam7uTbwPfF8Ht365lGtvA
-
-一般不扯淡--直男口红入门！
-
-https://mp.weixin.qq.com/s/a3z7PKTOqmxlEosi2EgoaA
-
-blue生色，九寨沟不得不说的“蓝”题
-
-https://mp.weixin.qq.com/s/XZyOXfqvq7bJ1_2eUPknAA
-
-千年锈色耐人寻——古代铜锡铅合金锈蚀谜题
-
-https://mp.weixin.qq.com/s/v_6w1XOs5iqnoZ-y04B3XQ
-
-一个只涉及三个电子的化学反应居然这么复杂？
-
 https://mp.weixin.qq.com/s/LUeWIT-gUFZTPs2CFJ3ygQ
 
 卡姆吸毒被抓，北京大学的这项黑科技一直在闷声干大事！
@@ -344,6 +328,10 @@ Tony老师，我明明染的蓝黑，怎么就绿了？？
 https://mp.weixin.qq.com/s/NvF5cEpM3pomDgMNjg2QbQ
 
 你拿得起放不下的甜，都是糖的味道吗？
+
+https://mp.weixin.qq.com/s/ge3FBSKFPvZgpWWbCAvm3A
+
+让许幻山放不下的蓝色烟花，有多难生产？
 
 ## 化学工业
 

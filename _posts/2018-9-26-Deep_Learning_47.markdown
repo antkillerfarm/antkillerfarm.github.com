@@ -361,7 +361,7 @@ https://mp.weixin.qq.com/s/4VE2lZeFf05AyLp_s3nTFQ
 
 理解Spatial Transformer Networks
 
-# AutoDL
+# AutoDL+
 
 https://mp.weixin.qq.com/s/smAlLm-JZn_s2utSCVk7ig
 

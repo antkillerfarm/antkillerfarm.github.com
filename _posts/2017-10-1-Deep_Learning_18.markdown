@@ -117,6 +117,10 @@ https://mp.weixin.qq.com/s/U0pTQkW55evm94iQORwGeA
 
 图解SimCLR框架，用对比学习得到一个好的视觉预训练模型
 
+https://mp.weixin.qq.com/s/1RJ4bbfDC5LiN2PNIxdzew
+
+SimCLR框架的理解和代码实现以及代码讲解
+
 https://mp.weixin.qq.com/s/eROWWPQkUs91bcv4VsQqSA
 
 NLP中的自监督表示学习，全是动图，很过瘾的
@@ -152,6 +156,10 @@ https://mp.weixin.qq.com/s/lweM2STVbldYEGwPcK1YEg
 https://mp.weixin.qq.com/s/hLFPWiHmDIzeUlQjInbgGw
 
 ActBERT: 自监督多模态视频文字学习
+
+https://mp.weixin.qq.com/s/1hK3k6Mf3uTEXrqMFr1evA
+
+Kaggle知识点：伪标签Pseudo Label
 
 # Graph NN+
 

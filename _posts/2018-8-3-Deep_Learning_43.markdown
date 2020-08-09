@@ -73,14 +73,6 @@ https://mp.weixin.qq.com/s/FgWNjWY9CyFlr4LL4_bkDw
 
 图像超清化+老照片修复技术，拯救你所有的模糊、破损照片
 
-https://mp.weixin.qq.com/s/3yaXYPjNWAXXtDJEWz2T0w
-
-90后“六指魔琴”AI修复100年前老北京影像，他还是程序员里最会画画的作曲家
-
-https://mp.weixin.qq.com/s/6mZ9RhgUpFV-RyOkWibEwQ
-
-剃头挑子、京韵大鼓、摆地摊，AI技术重现的老北京原声影像又火了，网友：这口音太过真实
-
 https://mp.weixin.qq.com/s/-iPQBni4dWvdARAy9_T32g
 
 神还原女神照片！GAN为百年旧照上色
@@ -93,7 +85,31 @@ https://mp.weixin.qq.com/s/VbRxHizSBZbUnmTlhK9GPw
 
 GitHub5800星！一键还原百年老电影、黑白旧照片本色
 
-# 抠图
+## 大谷
+
+大谷1991年生于北京，获得了纽约视觉艺术学院电脑艺术硕士学位，艺术家，音乐家，程序员和独立的游戏设计师。
+
+https://mp.weixin.qq.com/s/3yaXYPjNWAXXtDJEWz2T0w
+
+90后“六指魔琴”AI修复100年前老北京影像，他还是程序员里最会画画的作曲家
+
+https://mp.weixin.qq.com/s/6mZ9RhgUpFV-RyOkWibEwQ
+
+剃头挑子、京韵大鼓、摆地摊，AI技术重现的老北京原声影像又火了，网友：这口音太过真实
+
+----
+
+最左边的那位是北洋政府第一任总理唐绍仪之第八女名甘唐宝玫（1902-1941）（后离婚再嫁改姓岑）～中国历史上的首个大型时装show的组织者。
+
+最右边的那位是上海著名建筑设计师范文照先生的夫人范萧宝莲（1909-1984）～民国时期上海滩社交圈知名人士。
+
+中间那位说英文的解说者是宋氏三姐妹的表弟之妻温施惠珍（1906-2004）～丈夫是国内无线电传讯技术的顶级专家温毓庆先生。
+
+https://mp.weixin.qq.com/s/_DryX1xebOVzw8-lZ0P8LA
+
+真·名媛！AI复原百年前“上海时装秀”
+
+## 抠图
 
 https://mp.weixin.qq.com/s/dRa1mss4dve487FhS4KjTg
 
@@ -362,35 +378,3 @@ https://mp.weixin.qq.com/s/4UH-XWyIxYHq_ErRfkzzsQ
 https://mp.weixin.qq.com/s/FTfpjo-qT_PK4cbR5j0ulw
 
 AI当“暖男”：给裸照自动穿上比基尼
-
-https://mp.weixin.qq.com/s/LwYzxFO6Fj9Biiww3Y22qw
-
-斯坦福CS230第一名：图像超级补全，效果惊艳
-
-https://mp.weixin.qq.com/s/Mk_EkwTYK2141cU9zC1hvQ
-
-合成逼真图像，试试港中大&英特尔的半参数方法
-
-https://mp.weixin.qq.com/s/K2kptEfezAbcQTE8OgPMtQ
-
-手把手教你用OpenCV和Python实现图像和视频神经风格迁移
-
-https://mp.weixin.qq.com/s/l33D8zNtHVcaMjlw4IY05g
-
-想让照片里的美女“回头”？清华MIT谷歌用AI帮你实现了
-
-https://mp.weixin.qq.com/s/UySQTv8uuGungjxFNeHbRw
-
-给动漫人物轻松换装、编舞，这家游戏公司用GAN做到了！
-
-https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652026913&idx=2&sn=fc38fa94211c277d616f4f37aa6d8b5d
-
-pix2pix 3D版：几笔线条生成超炫猫咪霹雳舞！
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748774&idx=4&sn=efb794e4e418493f17138e7fa7eb84ab
-
-这种两阶段深度着色模型，为黑白照披上了彩衣
-
-https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
-
-分分钟学会基于深度学习的图像真实风格迁移！

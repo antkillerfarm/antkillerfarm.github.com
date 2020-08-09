@@ -187,6 +187,14 @@ https://mp.weixin.qq.com/s/d1qqRw7sWyLdoyfnqMBdJQ
 
 深度自适应Transformer
 
+https://mp.weixin.qq.com/s/IOc-gxOa6a415Hf1VBmiQw
+
+“Linformer”拍了拍“被吊打Transformers的后浪们”
+
+https://mp.weixin.qq.com/s/UowNtBm_hqnes-Lz3POXGQ
+
+Transformers中的Beam Search高效实现
+
 # Attention进阶
 
 https://zhuanlan.zhihu.com/p/40920384
@@ -400,19 +408,3 @@ https://mp.weixin.qq.com/s/7ETHeN2xV_hEwkDxrhJyNg
 https://mp.weixin.qq.com/s/e_LEhLf2Rh-1zkEBmqS4nA
 
 NLP这两年：15个预训练模型对比分析与剖析
-
-https://mp.weixin.qq.com/s/0EDN-ILeL_diZ1G11ikwjw
-
-T5模型：NLP Text-to-Text预训练模型超大规模探索
-
-https://zhuanlan.zhihu.com/p/89719631
-
-T5: Text-to-Text Transfer Transformer阅读笔记
-
-https://mp.weixin.qq.com/s/X1mLXPzJU7k_ANMzvVPxjA
-
-BERT、RoBERTa、DistilBERT与XLNet，我们到底该如何选择？
-
-https://mp.weixin.qq.com/s/Di-TbseiezMBc-MUYoEFHg
-
-CV领域的注意力机制

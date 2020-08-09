@@ -250,6 +250,10 @@ https://www.zhihu.com/question/24301047
 
 如何理解C++11的六种memory order？
 
+https://mp.weixin.qq.com/s/en9T7WfQDvFan9tu1q8oRA
+
+c++11与内存模型
+
 # boost
 
 ## 安装&编译

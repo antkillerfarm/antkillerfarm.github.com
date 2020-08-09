@@ -334,3 +334,7 @@ Hyperbolic Graph Convolutional Neural Networks
 https://www.zhihu.com/question/366088445
 
 请问全连接的图卷积网络(GCN)和self-attention这些机制有什么区别联系吗？
+
+https://mp.weixin.qq.com/s/LxdZ5xRuqQjNbG9FhhD0Aw
+
+图神经网络越深，表现就一定越好吗？

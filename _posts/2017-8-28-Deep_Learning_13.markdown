@@ -326,3 +326,41 @@ https://zhuanlan.zhihu.com/p/143161957
 https://mp.weixin.qq.com/s/MSzojHCW8WPFNyF3aM1l2w
 
 腾讯&微博 GateNet: 使用门机制提升点击率预估效果
+
+https://zhuanlan.zhihu.com/p/162980539
+
+2018年kdd阿里召回系统tdm读后感
+
+# 行人重识别+
+
+https://mp.weixin.qq.com/s/Vi_1Sg8OKG-EG4aC4QTCWA
+
+半监督学习的新助力：无监督数据扩增法
+
+https://mp.weixin.qq.com/s/omUtD3GFOpP1dvfWZgLDww
+
+计算机视觉模型效果不佳，你可能是被相机的Exif信息坑了
+
+https://mp.weixin.qq.com/s/pV7C2sSJwP3rBO6OYeF-nw
+
+基于马尔可夫链的数据增强
+
+https://mp.weixin.qq.com/s/6yfHwsk-fTEtQhrciMEBug
+
+重识别（re-ID）特征适合直接用于跟踪（tracking）问题么？
+
+https://mp.weixin.qq.com/s/Q34wjziJBBOrb1VPhQJK8g
+
+行人重识别简介
+
+https://mp.weixin.qq.com/s/OALGxuvUdQMbsK1k4g2V7Q
+
+遮挡也能识别？地平线提出用时序信息提升行人检测准确度
+
+https://mp.weixin.qq.com/s/2v-Y_-_si6_dxq3cICy-lg
+
+疫情蔓延让这项CV技术突然火了，盘点开源代码
+
+https://mp.weixin.qq.com/s/Z6l9R5uzWsAn_DTgTsGstg
+
+京东发布FastReID：目前最强悍的目标重识别开源库！

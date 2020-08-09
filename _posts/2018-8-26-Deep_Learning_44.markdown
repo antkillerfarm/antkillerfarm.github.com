@@ -9,6 +9,38 @@ category: DL
 
 # 图像变换（续）
 
+https://mp.weixin.qq.com/s/LwYzxFO6Fj9Biiww3Y22qw
+
+斯坦福CS230第一名：图像超级补全，效果惊艳
+
+https://mp.weixin.qq.com/s/Mk_EkwTYK2141cU9zC1hvQ
+
+合成逼真图像，试试港中大&英特尔的半参数方法
+
+https://mp.weixin.qq.com/s/K2kptEfezAbcQTE8OgPMtQ
+
+手把手教你用OpenCV和Python实现图像和视频神经风格迁移
+
+https://mp.weixin.qq.com/s/l33D8zNtHVcaMjlw4IY05g
+
+想让照片里的美女“回头”？清华MIT谷歌用AI帮你实现了
+
+https://mp.weixin.qq.com/s/UySQTv8uuGungjxFNeHbRw
+
+给动漫人物轻松换装、编舞，这家游戏公司用GAN做到了！
+
+https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652026913&idx=2&sn=fc38fa94211c277d616f4f37aa6d8b5d
+
+pix2pix 3D版：几笔线条生成超炫猫咪霹雳舞！
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748774&idx=4&sn=efb794e4e418493f17138e7fa7eb84ab
+
+这种两阶段深度着色模型，为黑白照披上了彩衣
+
+https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
+
+分分钟学会基于深度学习的图像真实风格迁移！
+
 https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247505181&idx=1&sn=2e817ec2ae918fd85c0ebcf85e810997
 
 惊！史上最佳GAN现身，超真实AI假照片，行家们都沸腾了
@@ -304,40 +336,6 @@ https://mp.weixin.qq.com/s/21yLEWTcRLHNXOuZ3mApRA
 https://mp.weixin.qq.com/s/sMUyTZd_yME70_nWicqP7g
 
 两图生万物！这个超强图像转换神器，小样本一秒猫狗合体变新物种
-
-# 行人重识别+
-
-https://mp.weixin.qq.com/s/Vi_1Sg8OKG-EG4aC4QTCWA
-
-半监督学习的新助力：无监督数据扩增法
-
-https://mp.weixin.qq.com/s/omUtD3GFOpP1dvfWZgLDww
-
-计算机视觉模型效果不佳，你可能是被相机的Exif信息坑了
-
-https://mp.weixin.qq.com/s/pV7C2sSJwP3rBO6OYeF-nw
-
-基于马尔可夫链的数据增强
-
-https://mp.weixin.qq.com/s/6yfHwsk-fTEtQhrciMEBug
-
-重识别（re-ID）特征适合直接用于跟踪（tracking）问题么？
-
-https://mp.weixin.qq.com/s/Q34wjziJBBOrb1VPhQJK8g
-
-行人重识别简介
-
-https://mp.weixin.qq.com/s/OALGxuvUdQMbsK1k4g2V7Q
-
-遮挡也能识别？地平线提出用时序信息提升行人检测准确度
-
-https://mp.weixin.qq.com/s/2v-Y_-_si6_dxq3cICy-lg
-
-疫情蔓延让这项CV技术突然火了，盘点开源代码
-
-https://mp.weixin.qq.com/s/Z6l9R5uzWsAn_DTgTsGstg
-
-京东发布FastReID：目前最强悍的目标重识别开源库！
 
 # 图像超分辨率进阶+
 

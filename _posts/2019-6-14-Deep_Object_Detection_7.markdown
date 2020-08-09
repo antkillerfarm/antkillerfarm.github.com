@@ -149,6 +149,10 @@ https://mp.weixin.qq.com/s/lE_HoLUfz8ehNmuj0fmstg
 
 PyTorch版CenterNet训练自己的数据集
 
+https://mp.weixin.qq.com/s/MZDtlZogXvgYNqlmc87LYg
+
+CenterNet的骨干网络之DLASeg
+
 # Anchor-Free
 
 在前面的章节，我们已经简要的分析了Anchor Free和Anchor Base模型的差异，并介绍了两个Anchor-Free的模型——CornerNet和CenterNet。

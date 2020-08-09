@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 火星探测, 两弹一星（1）
+title: 火星探测, 阿波罗50年, 两弹一星（1）
 category: Nature 
 ---
 
@@ -54,6 +54,76 @@ https://mp.weixin.qq.com/s/5F4wORf1k2XDIMKzFZBTDw
 https://mp.weixin.qq.com/s/VMfL5iF3BJg9Xnu5zI3RAA
 
 NASA毅力号直播攻略来了！万字长文详解火星任务：直升机飞行测试、寻找生命迹象、开启往返火星第一步
+
+# 阿波罗50年
+
+https://mp.weixin.qq.com/s/79e6p2TYpttO-NR1of21jw
+
+月之梦的起源
+
+https://mp.weixin.qq.com/s/QtvKdwbuzUJICjdKbcPIlg
+
+登月究竟是真是假？
+
+https://view.inews.qq.com/a/TEC201907170006770C
+
+别误会，那个经典的月球脚印不是阿姆斯特朗的（巴兹·奥尔德林）
+
+https://mp.weixin.qq.com/s/OdMaaP_gE1rR_rd14LfA9w
+
+战争与登月的渊源
+
+https://mp.weixin.qq.com/s/YRJpHvlEulfBFm8HpBYBZQ
+
+苏联开启的登月序曲
+
+https://mp.weixin.qq.com/s/v3HNhV08vWYPGdeXAZ47ag
+
+月球来到你身边
+
+https://view.inews.qq.com/a/TEC2019072100124408
+
+一文俯瞰从阿波罗1号到17号全舰队
+
+![](/images/img3/Apollo11_AnnotatedHero.jpg)
+
+https://mp.weixin.qq.com/s/Y1hQJHFB5InSZNB2T2KfVw
+
+10万镜子反射月光，组成3.6平方公里巨幅头像，谷歌花式纪念登月50年
+
+https://mp.weixin.qq.com/s/d6nmsH10qchY1pP8CibiBA
+
+跌跌撞撞的美国
+
+https://mp.weixin.qq.com/s/-KHsG9lZknY952U_LTV7qg
+
+天气太热了，我们去太阳系度假吧
+
+https://mp.weixin.qq.com/s/EPMdW1qxQVl0MVUSjhWxyQ
+
+NASA传奇数学家去世，她曾笔算了登月轨道
+
+https://mp.weixin.qq.com/s/8vRFfFLdLWSPpTzHjUKegQ
+
+哈勃太空望远镜30岁生日快乐！我们看到的宇宙因你而不同
+
+由于飞行前的制造和测试错误，氧气罐中的电线暴露了出来。在那个致命的夜晚，氧气罐中暴露的电线产生的火花引发了火灾，引爆了氧气罐，将服务舱外的隔热层炸飞。。。
+
+https://mp.weixin.qq.com/s/NmS1dbeIsQomsWYI8-OyZg
+
+阿波罗13号“伟大失败”50周年，NASA发布纪录片追忆奥德赛号逃生往事
+
+----
+
+![](/images/img3/india_moon.jpg)
+
+https://www.zhihu.com/question/344795065/
+
+印度“月船2号”登陆月球失败，失败原因可能是什么？有什么影响和教训？
+
+https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
+
+印度失联的月球探测器依然成功了95%？那些年我们一起追过的月球
 
 # 两弹一星
 
@@ -117,6 +187,10 @@ CTOL（conventional take-off and landing）
 
 STOVL（Short Take Off Vertical Landing）
 
+052D/055 导弹驱逐舰
+
+075 两栖攻击舰
+
 ----
 
 今天，为了义和团在去年的所作所为而惩罚中国，西方在禁止向中国出口的物品中包括武器，关于这一点，一位贵胄子弟曾对我说：“**很好，这将迫使我们成为生产者，且请记住我的话，总有一天我们会成为出口商，不仅那样，而且还会比现在的制造商卖的更便宜。**”——1900年清廷海关总税务司赫德
@@ -153,20 +227,8 @@ https://mp.weixin.qq.com/s/-6hNbww_Q4i5zk9rwsW1lQ
 
 ----
 
-核电站压力容器是核电站核心部件之一，而密封件则是防止外泄的关键部件。中国核电站压力容器已经实现了全国产化,其中C形密封件由中国最大的静密封生产公司之一的浙江天生密封件公司设计制造，价格30万左右，美帝的价格则是超过300万人民币。国内秦山，红河等核电站都实现了应用。C形密封件目前只有中国和美国能造，法国和日本都是核电强国，但是密封件却不能实现自产，要从美国购买昂贵的密封件，成本上无法和中国核电竞争。实际上，中国的C形密封件出来并且成功应用以后，美帝300万的密封件基本就要退出市场了。
-
-----
-
 https://view.inews.qq.com/a/20171125A0E3WT00
 
 我国机载雷达为何一下就从极端落后跨越到世界领先？
 
 80年代初一个研究所懂数字电路的人不到2%，到了90年代中期，几乎90%的人都只在数字电路上设计工作。
-
-----
-
-Kyligence CEO韩卿：
-
-我毕业后加入的第一家公司叫做：浙大中控（中控集团），一家提供自动化与信息化技术和产品的高科技公司。自动化，非常抽象，说的简单点，化工厂，啤酒厂，水泥厂等流程行业，各个环节的控制不可能靠人工去监控和调节各种参数、温度等，必须有一整套的自动化系统来管理和控制，确保稳定的工艺，及更重要的安全性等。然而，这样一套系统，以前都是被霍尼韦尔等国外巨头垄断，每个化工厂都需要购买，且没有谈判价格的余地。今天，依然记得很清楚，入职培训的时候，负责技术的金总讲过的那些故事。中控在那个年代，做出的第一代产品推销极难，只能在浙江的小厂不断实验和验证，不断的获取客户的信任，不断改进产品和技术。艰苦的几年后终于获得了行业的认可，当有能力做到领先水平的时候，国外巨头却不断降价来封杀来竞争。不过竞争的结果，中控在国内今天是自动化控制行业的龙头，承担863计划，有博士后工作站，不得不说，如果没有中控，作为基础行业的化工等行业在这块的技术极大可能还将被垄断在国外巨头手中。
-
-![](/images/img2/China_USA.jpg)

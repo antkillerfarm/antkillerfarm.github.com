@@ -250,7 +250,7 @@ SpeechBrain是一个基于pytorch的语音工具包，目前（2019.9）正在�
 
 https://speechbrain.github.io/
 
-# 数学杂谈++
+# 数学杂谈+
 
 https://blog.csdn.net/ChangHengyi/article/details/80577318
 

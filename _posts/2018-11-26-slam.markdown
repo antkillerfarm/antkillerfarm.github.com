@@ -165,6 +165,14 @@ https://mp.weixin.qq.com/s/mjhPt2fnFSYlr8q-C_i-0g
 
 SLAM：视觉里程计
 
+https://zhuanlan.zhihu.com/p/170735395
+
+推荐一些视觉SLAM的深度学习方法（上）
+
+https://zhuanlan.zhihu.com/p/173351259
+
+推荐一些视觉SLAM的深度学习方法（下）
+
 https://mp.weixin.qq.com/s/ANP_dlwWjhe-lXzf2ocKkg
 
 视觉SLAM中直接法的应用实践

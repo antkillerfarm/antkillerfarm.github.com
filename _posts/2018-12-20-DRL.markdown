@@ -251,6 +251,10 @@ https://mp.weixin.qq.com/s/vHFLhlftGstuMcN8fswO5w
 
 基于模型的强化学习方法教程，279页ppt
 
+https://mp.weixin.qq.com/s/heFN7QU5uFTDLZytXgUrkw
+
+强化学习教程，83页ppt
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

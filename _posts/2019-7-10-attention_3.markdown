@@ -219,10 +219,6 @@ https://mp.weixin.qq.com/s/N1I4mGKzsHJiAluZL17sDQ
 
 Transformers是一种图神经网络
 
-https://mp.weixin.qq.com/s/IOc-gxOa6a415Hf1VBmiQw
-
-“Linformer”拍了拍“被吊打Transformers的后浪们”
-
 # 预训练语言模型进化史
 
 ![](/images/img3/Sesame_Street.jpg)

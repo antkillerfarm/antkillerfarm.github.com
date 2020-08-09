@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  推荐系统（一）——推荐系统进阶, 常用排序算法
+title:  推荐系统（一）——推荐系统进阶
 category: Recommender System 
 ---
 

@@ -253,6 +253,14 @@ https://www.jianshu.com/p/db72c38233f3
 
 标准化流(Normalizing Flow)（二）：现代标准化流技术
 
+https://mp.weixin.qq.com/s/oUQuHvy0lYco4HsocqvH3Q
+
+Normalizing Flows入门(上)
+
+https://mp.weixin.qq.com/s/XtlK3m-EHgFRKrtcwJHZCw
+
+Normalizing Flows入门(中)
+
 # VAE参考资源
 
 https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw

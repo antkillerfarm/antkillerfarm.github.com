@@ -233,6 +233,12 @@ java.nio
 
 Mina，Grizzly
 
+参考：
+
+https://mp.weixin.qq.com/s/K9Oyn0cbwqVCh1j3N5bd_w
+
+I/O与Netty原理精讲
+
 ## synchronized
 
 https://blog.csdn.net/javazejian/article/details/72828483
@@ -331,6 +337,10 @@ https://mp.weixin.qq.com/s/01fj7l3xsxHVstlkrJ0epw
 
 Java如何实现动态脚本？
 
+https://mp.weixin.qq.com/s/ag5u2EPObx7bZr7hkcrOTg
+
+新一代垃圾回收器ZGC的探索与实践
+
 # Javascript++
 
 https://mp.weixin.qq.com/s/fEAfuVzfOwKjnTB-mdS5UA
@@ -361,22 +371,6 @@ https://mp.weixin.qq.com/s/VTULhAjEUNfAph-xkkUTsg
 
 手写一个解析器
 
-# 阿波罗50年+
+https://mp.weixin.qq.com/s/3sYrI9kxgAYLiNT-xavRLw
 
-由于飞行前的制造和测试错误，氧气罐中的电线暴露了出来。在那个致命的夜晚，氧气罐中暴露的电线产生的火花引发了火灾，引爆了氧气罐，将服务舱外的隔热层炸飞。。。
-
-https://mp.weixin.qq.com/s/NmS1dbeIsQomsWYI8-OyZg
-
-阿波罗13号“伟大失败”50周年，NASA发布纪录片追忆奥德赛号逃生往事
-
-----
-
-![](/images/img3/india_moon.jpg)
-
-https://www.zhihu.com/question/344795065/
-
-印度“月船2号”登陆月球失败，失败原因可能是什么？有什么影响和教训？
-
-https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
-
-印度失联的月球探测器依然成功了95%？那些年我们一起追过的月球
+“秒开”浏览器实现起来有多难？

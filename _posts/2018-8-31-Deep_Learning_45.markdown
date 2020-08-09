@@ -127,6 +127,10 @@ https://mp.weixin.qq.com/s/0te0JUKYZlSLs3kzsFV-NA
 
 神经网络架构搜索（NAS）综述
 
+https://mp.weixin.qq.com/s/W9bdVJI6Jesm9-wE5pQ-mw
+
+神经网络架构搜索（NAS）基础入门
+
 https://zhuanlan.zhihu.com/p/44576620
 
 让算法解放算法工程师----NAS综述
@@ -378,15 +382,3 @@ https://mp.weixin.qq.com/s/VdjHp5Tb1fSyV3CQblPQmw
 https://mp.weixin.qq.com/s/d60EKUJjYfYfcfhMnaCpPA
 
 基于强化学习的自动搜索
-
-https://mp.weixin.qq.com/s/ClqOWx1RJGzoS0akI2s93w
-
-多媒体的AutoML与元学习，清华大学朱文武教授等
-
-https://mp.weixin.qq.com/s/QtYNb1bVnWghNFK6fbynLw
-
-激活函数如何进行自动学习和配置
-
-https://mp.weixin.qq.com/s/0fVNW5hekUNCsD6L9KL1iQ
-
-PNAS：渐进式神经网络搜索，准确率预测，21倍加速

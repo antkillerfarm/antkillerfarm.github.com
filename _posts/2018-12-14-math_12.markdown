@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十二）——数学杂谈
+title:  数学狂想曲（十二）——数学杂谈（1）
 category: math 
 ---
 

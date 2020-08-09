@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十五）——阴影面积, 肺炎版《黄冈密卷》, Gabriel's Horn, 三门问题
+title:  数学狂想曲（十五）——阴影面积, 肺炎版《黄冈密卷》, Gabriel's Horn, 三门问题, 数学杂谈（2）
 category: math 
 ---
 
@@ -276,7 +276,7 @@ https://blog.csdn.net/bluecol/article/details/46242355
 
 图像去模糊（维纳滤波）
 
-# 数学杂谈+
+# 数学杂谈
 
 https://mp.weixin.qq.com/s/rZwqxyBmQg07Pq1ihTjNMg
 

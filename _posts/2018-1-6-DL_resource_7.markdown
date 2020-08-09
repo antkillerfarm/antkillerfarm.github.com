@@ -347,6 +347,22 @@ LeCun哈佛演讲：《机器怎样才能像人和动物一样学习》（135页
 
 # Attention进阶+
 
+https://mp.weixin.qq.com/s/0EDN-ILeL_diZ1G11ikwjw
+
+T5模型：NLP Text-to-Text预训练模型超大规模探索
+
+https://zhuanlan.zhihu.com/p/89719631
+
+T5: Text-to-Text Transfer Transformer阅读笔记
+
+https://mp.weixin.qq.com/s/X1mLXPzJU7k_ANMzvVPxjA
+
+BERT、RoBERTa、DistilBERT与XLNet，我们到底该如何选择？
+
+https://mp.weixin.qq.com/s/Di-TbseiezMBc-MUYoEFHg
+
+CV领域的注意力机制
+
 https://mp.weixin.qq.com/s/GGRORF5EfJ5xzMLwAsJt5w
 
 从词袋到Transfomer，NLP十年突破史

@@ -434,3 +434,7 @@ https://mp.weixin.qq.com/s/tjn6Fob1L9aWnl2b35rjgA
 https://mp.weixin.qq.com/s/d35w8Gs0Zzf1yHPkXFv9iQ
 
 CAN总线必看经典
+
+https://mp.weixin.qq.com/s/K-EqcqX8X7oeNA2czT2qIA
+
+高手写的CAN总线入门总结

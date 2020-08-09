@@ -328,6 +328,10 @@ https://mp.weixin.qq.com/s/xN0mX9XWvVUpi0p5Tc6vLA
 
 利用SciPy求解非线性规划问题
 
+https://mp.weixin.qq.com/s/44RjMdARJMSM1_seImaSbg
+
+SciPy稀疏矩阵
+
 ## sklearn
 
 Scikit-learn提供了常见的机器学习算法的实现。
