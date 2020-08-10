@@ -114,6 +114,10 @@ https://mp.weixin.qq.com/s/6_BSs7SK2HWq0-7RgNeuzA
 
 理解生成模型与判别模型
 
+https://zhuanlan.zhihu.com/p/37768413
+
+小白之通俗易懂的贝叶斯定理（Bayes' Theorem）
+
 ## 高斯分布的向量形式
 
 高斯分布的向量形式$$N(\mu,\Sigma)$$的概率密度函数为：

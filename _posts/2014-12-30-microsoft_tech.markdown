@@ -264,3 +264,7 @@ GANSynth：使用GAN制作音乐
 https://mp.weixin.qq.com/s/4zKgFfyLGAmqgHtf_Wb0nw
 
 使用GAN生成序列数据
+
+https://mp.weixin.qq.com/s/oRCbr0TCzFmTuf5jpWKBaA
+
+GAN版马里奥创作家来了：一个样本即可训练，生成关卡要素丰富

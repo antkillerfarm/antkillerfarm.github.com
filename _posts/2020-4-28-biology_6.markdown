@@ -11,6 +11,42 @@ category: Nature
 
 ## 国外疫情（续）
 
+除此之外，MS的网站做的也不错。
+
+https://www.bing.com/covid
+
+Bing新型冠状病毒肺炎追踪
+
+https://covid.msra.cn/
+
+COVID Insights
+
+https://mp.weixin.qq.com/s/d0yif60S7NjwritA-U_6Hw
+
+增加“传播与干预模型”，COVID Insights网站新功能上线
+
+----
+
+https://mp.weixin.qq.com/s/lv-C9MDiW0SwNszDy54i0g
+
+突发！5名英国人间接感染新冠病毒，不在同一时空也躺枪！
+
+https://mp.weixin.qq.com/s/Qm48nT1TFSuY-HKJS7tbhg
+
+174人感染：日本豪华邮轮海上隔离的一周
+
+https://mp.weixin.qq.com/s/8_ZtLuYwJzh_6J9NAtJg8Q
+
+迄今为止无与伦比的神操作-钻石公主号乘客下船，就地解散
+
+https://www.zhihu.com/question/370846703
+
+新加坡目前的新型冠状病毒肺炎疫情怎么样了？采取了哪些措施？
+
+https://mp.weixin.qq.com/s/SVlILAZX5PGGkuZrqKGJgA
+
+看剧情发展，可能轮到我们给日本捐口罩了
+
 https://www.zhihu.com/question/374859112
 
 如何看待北海道知事铃木直道要求道内中小学停课，并表示“所有结果，都将由我知事本人负责。”?
@@ -221,72 +257,6 @@ https://www.zhihu.com/question/26658191
 
 ## 口罩
 
-https://mp.weixin.qq.com/s/IVmgIp-LC6JiqfyCfXBJhg
-
-口罩惊险史，听说内衣也可以“救急”？
-
-https://mp.weixin.qq.com/s/WoQyr__tUBJ6HQrj3lnZuw
-
-一图彻底了解怎么戴口罩！国家卫健委图解《不同人群预防新型冠状病毒感染口罩选择与使用技术指引》
-
-https://mp.weixin.qq.com/s/lekdAyT0woQGwSO-xDSAMA
-
-“疫不容辞” 这些电子厂“转型”口罩厂
-
-https://mp.weixin.qq.com/s/iC0p5jFbZfoFAPL82zJAkQ
-
-中国能生产多少口罩？解析从石油到医用口罩的制造流程
-
-https://cj.sina.com.cn/articles/view/1650111241/625ab30901900p4r1
-
-为什么口罩还是不好买？原来……
-
-https://mp.weixin.qq.com/s/2LMnpJtSvO0KEDZ3GBtrog
-
-为什么全国口罩日产量超1亿个，你却连1个都买不到？看完我惊了...
-
-https://mp.weixin.qq.com/s/pSYJizQDQP_T2-krWPGUoA
-
-疫情下的口罩“疯狂制造”：物料飚涨40倍, 3天回本“印钞机”
-
-https://mp.weixin.qq.com/s/AjSjXgrKug6XpfUhmQX0kA
-
-75天疫情产生260000吨医疗垃圾，去哪了？谁赚了？
-
-https://mp.weixin.qq.com/s/i0o9Xb-AViIZ8DGMOtDaig
-
-被英国首相点名后，戴森承诺造15000台呼吸机
-
-https://mp.weixin.qq.com/s/OuyBccDAzMiH6yLc1vtgOQ
-
-一张图告诉你：全球离“口罩自由”还有多远？
-
-https://mp.weixin.qq.com/s/_S-GY-1ZiG2OBGMcg5sXUg
-
-抗疫重器呼吸机原理浅析
-
-https://mp.weixin.qq.com/s/swrxHw76In_Zr_GFm8ieXw
-
-N95之父华裔科学家Peter Tsai教你如何正确戴口罩
-
-https://mp.weixin.qq.com/s/O4RavwRUPbwXq8mDZTaA6w
-
-全球疯抢的呼吸机，其产业链啥样？
-
-https://wxn.qq.com/cmsid/TEC2020041800124100
-
-供应断链卡脖呼吸机：核心零部件靠进口订单排到8月
-
-https://mp.weixin.qq.com/s/tLljo8q-1eybDIk7CLQiSA
-
-滴~37℃（温度计、额温枪、红外线测温仪，它们都是怎么测量体温的呢？）
-
-https://mp.weixin.qq.com/s/SwYQFBv5lnej0g08bsBF1A
-
-“英伟达呼吸机”开源：计算机架构大师打造，成本暴减98%，黄仁勋点赞
-
-----
-
 KN95是中国标准，主要用于工业场景，且不要求油性防护，因此只是用氯化钠颗粒物检测，要求规过滤效果大于95%。此外中国还有KP95标准，支持油性防护。其中，“N”表示不耐油（not resistant to oil），“P”表示防油（oil proof）。
 
 KN95医用标准GB19083，工业标准是GB2626。
@@ -308,3 +278,23 @@ Medtronic成立于1949年，致力于为心血管疾病，神经科，糖尿病�
 https://mp.weixin.qq.com/s/jlKlNwMp2-2TvyIWHU71LQ
 
 全球呼吸机告急！医疗科技巨头美敦力“开源”设计图和源代码
+
+----
+
+LVMH集团宣布，旗下Dior、Givenchy和娇兰三个品牌的香水生产线，将用于生产含酒精的消毒洗手液。
+
+奢侈品牌Prada将一家在佩鲁贾开设的工厂，改造成了口罩及医疗用品生产工厂，并计划在4月6日前，向意大利托斯卡纳医院运送8万件防护服，及11万只口罩。
+
+重症监护用肺呼吸机制造商Siare Engineering取消了占其营业额90％的外国订单，转而专为意大利提供机械，该公司产能从每月125台提升到到现在的500台。
+
+----
+
+不得不感慨，美国的产业空心化已经到了如此严重的地步。如果给GM充足的时间，他们应该也可以搞出BYD这种产品线。但是造价会贵4~5倍，研发投产的周期至少要半年以上。
+
+https://mp.weixin.qq.com/s/tFc15hulgBUE-m338xBhzQ
+
+突发：CDC终于推荐民众戴口罩，谁又有谁来为3亿人美国人生产口罩？
+
+https://mp.weixin.qq.com/s/9YiERlc3Xyp95eSfakd3wg
+
+7天建起全球最大口罩生产线，比亚迪与兰博基尼转产猛飙“速度与激情”

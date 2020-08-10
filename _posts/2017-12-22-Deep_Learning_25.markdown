@@ -319,6 +319,10 @@ https://mp.weixin.qq.com/s/FSRwIAwTBZUsT1GVPglZkA
 
 深度学习换脸算法都有哪些？
 
+https://mp.weixin.qq.com/s/m1TBxG_1wlfUUeDwP6Aleg
+
+人脸算法新热点，人脸编辑都有哪些方向，如何学习
+
 ## 活体检测
 
 https://mp.weixin.qq.com/s/zOnmKSnQctnyx7pKXX-tpQ
@@ -356,6 +360,10 @@ https://mp.weixin.qq.com/s/2I8A_-utI4DqeDXJwwX4UQ
 https://mp.weixin.qq.com/s/8q2gk9ruVw4yxf72mgZkww
 
 CVPR2020人脸防伪检测挑战赛冠军方案开源
+
+https://mp.weixin.qq.com/s/wQcP_dqv9KI3jEQ0soYbMw
+
+人脸静默活体检测最新综述
 
 ## DeepFace
 

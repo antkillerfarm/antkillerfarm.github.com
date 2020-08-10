@@ -65,6 +65,10 @@ https://mp.weixin.qq.com/s/WozN8-FdASaku0UKT9EQ3A
 
 机器学习实用指南
 
+https://mp.weixin.qq.com/s/tDn9_4-EFolRth87O-E4NA
+
+机器学习模型训练全流程！
+
 https://mp.weixin.qq.com/s/ejdrNCY6ZdAqwT-_EjC8rQ
 
 近千人点赞！哈佛博士放出超多资源，机器学习课程教程小抄全都有

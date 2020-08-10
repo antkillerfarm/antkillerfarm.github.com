@@ -217,6 +217,10 @@ https://zhuanlan.zhihu.com/p/141059329
 
 自动驾驶感知融合-无迹卡尔曼滤波(Lidar&Radar)
 
+https://zhuanlan.zhihu.com/p/134595781
+
+卡尔曼滤波(Kalman filter)含详细数学推导
+
 # Adaboost
 
 Adaboost是Yoav Freund和Robert Schapire于1997年提出的算法。两人后来因为该算法被授予Gödel Prize（2003）。

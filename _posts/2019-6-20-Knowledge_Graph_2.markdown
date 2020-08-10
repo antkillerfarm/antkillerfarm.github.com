@@ -309,6 +309,10 @@ https://mp.weixin.qq.com/s/BtdUEjJsqqmkNYHz8LHgQw
 
 基于Knowledge Embedding的多跳知识图谱问答
 
+https://mp.weixin.qq.com/s/cJZz_BfkfbJzV2l8NiPaFg
+
+电商知识图谱
+
 # AI工具+
 
 https://mp.weixin.qq.com/s/3eoN0YHI84oomdTZO6TrvQ

@@ -147,6 +147,10 @@ https://mp.weixin.qq.com/s/Ld28qHczQ1NfFPGlJQGXKQ
 
 台风最喜欢在我国哪个省市登陆？
 
+https://mp.weixin.qq.com/s/pQIYEvo72vSL7V4rCCsIzg
+
+我们离台风发电还有多远？
+
 # 物理
 
 ![](/images/img3/spectrum.png)

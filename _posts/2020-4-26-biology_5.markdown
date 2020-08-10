@@ -7,19 +7,85 @@ category: Nature
 * toc
 {:toc}
 
-# 病毒（续）
+# 病毒
 
-19世纪初，预防天花的牛痘疫苗保质期只有12天。为了将牛痘传到遥远的新大陆，他们决心采用“人链”为疫苗“保鲜”：几个成年人带着一群孩子，毅然离开熟悉的家园远航。他们付出了惊人的努力，也有生命的代价，最终使接种疫苗预防天花的观念广为人知，奠定了人类消灭天花的重要基石。
+## 参考（续）
 
-在越洋的航程开始的时候，他们先用疫苗为两个孩子接种，以确保在其中一个接种失败的情况下，还有另一个作为备份。当牛痘病毒在孩子体内发作，长出脓疱的时候，他们再以孩子身上的牛痘脓物作为疫苗，接种下一组的两个孩子……这个接力方案遵循着严格的时间表，因此，当船抵达新大陆的时候，就一定会有孩子可以成为疫苗的来源。
+https://mp.weixin.qq.com/s/bgF5p9g47FmnPmR2hcvU3Q
 
-https://mp.weixin.qq.com/s/NFF7bTvW7wtcyzVtMQOoJg
+病毒，那条静止的河流
 
-人类消灭天花，是从19世纪初的一艘西班牙帆船开始的
+https://mp.weixin.qq.com/s/ebaz8rd7ft3eH8E-cS3YpA
 
-https://mp.weixin.qq.com/s/OykrRcejQvw49ONj7nEAVA
+病毒从哪里来？
 
-全世界都对新冠疫苗翘首以盼，你知道疫苗在中国是怎么普及的吗？
+https://mp.weixin.qq.com/s/7NePVREsxbMFqaZvF5N51w
+
+BBC纪录片：病毒是如何入侵的？
+
+https://mp.weixin.qq.com/s/JAm3eMF1ATMzHTRTiZybIQ
+
+阻击病毒的战场
+
+https://asm.org/
+
+American Society for Microbiology
+
+https://mp.weixin.qq.com/s/SkzRspEEFj53A5OWKj37VA
+
+新型冠状病毒的“帮凶”——病原真菌到底是什么鬼？
+
+https://mp.weixin.qq.com/s/cUtWVBOsUkCBC0abeoKAzA
+
+从病毒到免疫， “科学地”揭开新冠病毒的神秘面纱
+
+https://mp.weixin.qq.com/s/bfhS3Er3NXjfUrKZbju33Q
+
+病毒与人类的战争（上）：百万年的战争
+
+https://mp.weixin.qq.com/s/Bx7AZrL168OkygBbg0qflQ
+
+病毒与人类的战争（下）： 人类守望者
+
+https://mp.weixin.qq.com/s/9iWT9v4msuHgzN_92Ptf7A
+
+关于新冠病毒，人们最关心的七个科学问题
+
+https://mp.weixin.qq.com/s/ruMiimYqAbsVwU-mnyq8oQ
+
+病毒从动物转移到人类身上，会发生什么？
+
+https://mp.weixin.qq.com/s/-xi04Of1VSnACMIG0B8jEQ
+
+小小的抗体，如何承担起保护我们的重任？
+
+https://www.zhihu.com/question/375143619
+
+新冠病毒会像乙肝病毒和艾滋病毒一样终身携带吗?
+
+https://mp.weixin.qq.com/s/mpY95yvWR_96KT5SL4T-Xg
+
+新冠病毒是如何为自己“加冕”的？
+
+https://mp.weixin.qq.com/s/zsu6KbIDKi_AlBI-eevA9w
+
+在你的基因里，到处都有病毒来过的痕迹
+
+https://mp.weixin.qq.com/s/UVQuph37AE_XVf_FrTiTKw
+
+病毒启示录：野生动物面前，人类没有特权
+
+https://mp.weixin.qq.com/s/vXM_QnRtB1rF0-lhqAWxww
+
+流感疫苗：跑在病毒肆虐之前
+
+https://xueqiu.com/5828850316/134638481
+
+洗浴能传染梅毒吗？来看梅毒的前世今生
+
+https://mp.weixin.qq.com/s/c6PCwwvEyrwHIocDoAHijA
+
+鲜有人知：鉴定冠状病毒第一人阿尔梅达
 
 # DNA鉴定
 
@@ -288,41 +354,3 @@ https://mp.weixin.qq.com/s/biMYttSdoe7k99v7m9H4oQ
 https://mp.weixin.qq.com/s/rtTUT9TlAEaVci12KvsznA
 
 美国CDC、JHU在用的疫情数据库，来自这个武汉姑娘的华人团队
-
-----
-
-除此之外，MS的网站做的也不错。
-
-https://www.bing.com/covid
-
-Bing新型冠状病毒肺炎追踪
-
-https://covid.msra.cn/
-
-COVID Insights
-
-https://mp.weixin.qq.com/s/d0yif60S7NjwritA-U_6Hw
-
-增加“传播与干预模型”，COVID Insights网站新功能上线
-
-----
-
-https://mp.weixin.qq.com/s/lv-C9MDiW0SwNszDy54i0g
-
-突发！5名英国人间接感染新冠病毒，不在同一时空也躺枪！
-
-https://mp.weixin.qq.com/s/Qm48nT1TFSuY-HKJS7tbhg
-
-174人感染：日本豪华邮轮海上隔离的一周
-
-https://mp.weixin.qq.com/s/8_ZtLuYwJzh_6J9NAtJg8Q
-
-迄今为止无与伦比的神操作-钻石公主号乘客下船，就地解散
-
-https://www.zhihu.com/question/370846703
-
-新加坡目前的新型冠状病毒肺炎疫情怎么样了？采取了哪些措施？
-
-https://mp.weixin.qq.com/s/SVlILAZX5PGGkuZrqKGJgA
-
-看剧情发展，可能轮到我们给日本捐口罩了

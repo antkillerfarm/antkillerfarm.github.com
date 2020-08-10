@@ -313,3 +313,7 @@ https://zhuanlan.zhihu.com/p/96420594
 https://mp.weixin.qq.com/s/demEVr5ZXKeSLbBIO1XgsQ
 
 AutoFIS: 因数分解模型中用于预测点击率的自动特征交互选择
+
+https://mp.weixin.qq.com/s/Z5cs6X1tFq9uKGfo3aHgmw
+
+简介机器学习中的特征工程

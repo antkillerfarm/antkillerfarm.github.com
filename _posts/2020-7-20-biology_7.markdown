@@ -11,26 +11,6 @@ category: Nature
 
 ## 口罩（续）
 
-LVMH集团宣布，旗下Dior、Givenchy和娇兰三个品牌的香水生产线，将用于生产含酒精的消毒洗手液。
-
-奢侈品牌Prada将一家在佩鲁贾开设的工厂，改造成了口罩及医疗用品生产工厂，并计划在4月6日前，向意大利托斯卡纳医院运送8万件防护服，及11万只口罩。
-
-重症监护用肺呼吸机制造商Siare Engineering取消了占其营业额90％的外国订单，转而专为意大利提供机械，该公司产能从每月125台提升到到现在的500台。
-
-----
-
-不得不感慨，美国的产业空心化已经到了如此严重的地步。如果给GM充足的时间，他们应该也可以搞出BYD这种产品线。但是造价会贵4~5倍，研发投产的周期至少要半年以上。
-
-https://mp.weixin.qq.com/s/tFc15hulgBUE-m338xBhzQ
-
-突发：CDC终于推荐民众戴口罩，谁又有谁来为3亿人美国人生产口罩？
-
-https://mp.weixin.qq.com/s/9YiERlc3Xyp95eSfakd3wg
-
-7天建起全球最大口罩生产线，比亚迪与兰博基尼转产猛飙“速度与激情”
-
-----
-
 人民需要什么，五菱就造什么。
 
 1928年，桂系领袖李宗仁在这里修建了一家柳州机械厂，开始组装飞机，制造步枪、手榴弹；
@@ -52,6 +32,96 @@ https://www.zhihu.com/question/399164650
 https://mp.weixin.qq.com/s/pmW4gEAD533uXojUQ9d1QQ
 
 聊聊“地摊经济学”
+
+----
+
+盛传美国“最先进”的核酸检测，雅培恒温扩增仪，测一次5分钟，但是灵敏度和特异度仍不如PCR法。而且恒温扩增一次只能测一个样品，PCR法一批几十个样品可以一起测。所以恒温扩增只是在特定场景有优势，比如不需要p2+实验室，可以在办公楼里自己测。
+
+https://www.zhihu.com/question/384168786
+
+美国第六代新冠病毒检测试剂5分钟出结果，准确率95%，还能检测到抗体，是否说明美国科技领域引领世界？
+
+https://www.zhihu.com/question/383152585
+
+如何看待近日美国雅培公司推出的5分钟快速检测的新冠病毒检测盒月产量可达500万份？
+
+----
+
+3M公司的全称是明尼苏达矿务及制造业公司（Minnesota Mining and Manufacturing Company）。
+
+https://mp.weixin.qq.com/s/wE69bNC7DicO6kSWhsfq2A
+
+全球新冠确诊破200万，我们为什么比以往更需要3M？
+
+https://mp.weixin.qq.com/s/Fkcbb-4LC_NsVJHCM-zRWQ
+
+3M：世界上最不务正业公司——不只是口罩，好像哪里都离不开他！芯片制造也需要3M！
+
+----
+
+https://mp.weixin.qq.com/s/IVmgIp-LC6JiqfyCfXBJhg
+
+口罩惊险史，听说内衣也可以“救急”？
+
+https://mp.weixin.qq.com/s/WoQyr__tUBJ6HQrj3lnZuw
+
+一图彻底了解怎么戴口罩！国家卫健委图解《不同人群预防新型冠状病毒感染口罩选择与使用技术指引》
+
+https://mp.weixin.qq.com/s/lekdAyT0woQGwSO-xDSAMA
+
+“疫不容辞” 这些电子厂“转型”口罩厂
+
+https://mp.weixin.qq.com/s/iC0p5jFbZfoFAPL82zJAkQ
+
+中国能生产多少口罩？解析从石油到医用口罩的制造流程
+
+https://cj.sina.com.cn/articles/view/1650111241/625ab30901900p4r1
+
+为什么口罩还是不好买？原来……
+
+https://mp.weixin.qq.com/s/2LMnpJtSvO0KEDZ3GBtrog
+
+为什么全国口罩日产量超1亿个，你却连1个都买不到？看完我惊了...
+
+https://mp.weixin.qq.com/s/pSYJizQDQP_T2-krWPGUoA
+
+疫情下的口罩“疯狂制造”：物料飚涨40倍, 3天回本“印钞机”
+
+https://mp.weixin.qq.com/s/AjSjXgrKug6XpfUhmQX0kA
+
+75天疫情产生260000吨医疗垃圾，去哪了？谁赚了？
+
+https://mp.weixin.qq.com/s/i0o9Xb-AViIZ8DGMOtDaig
+
+被英国首相点名后，戴森承诺造15000台呼吸机
+
+https://mp.weixin.qq.com/s/OuyBccDAzMiH6yLc1vtgOQ
+
+一张图告诉你：全球离“口罩自由”还有多远？
+
+https://mp.weixin.qq.com/s/_S-GY-1ZiG2OBGMcg5sXUg
+
+抗疫重器呼吸机原理浅析
+
+https://mp.weixin.qq.com/s/swrxHw76In_Zr_GFm8ieXw
+
+N95之父华裔科学家Peter Tsai教你如何正确戴口罩
+
+https://mp.weixin.qq.com/s/O4RavwRUPbwXq8mDZTaA6w
+
+全球疯抢的呼吸机，其产业链啥样？
+
+https://wxn.qq.com/cmsid/TEC2020041800124100
+
+供应断链卡脖呼吸机：核心零部件靠进口订单排到8月
+
+https://mp.weixin.qq.com/s/tLljo8q-1eybDIk7CLQiSA
+
+滴~37℃（温度计、额温枪、红外线测温仪，它们都是怎么测量体温的呢？）
+
+https://mp.weixin.qq.com/s/SwYQFBv5lnej0g08bsBF1A
+
+“英伟达呼吸机”开源：计算机架构大师打造，成本暴减98%，黄仁勋点赞
 
 ## 国际援助
 
@@ -132,7 +202,6 @@ https://mp.weixin.qq.com/s/Ipky8I11O6AlaT2ACRqVaQ
 
 陶哲轩发文缅怀John Conway：他是所有数学家构成的凸包中的一个极值点
 
-
 ## Gilead Sciences
 
 Gilead Sciences，1987年6月22日注册成立，是一家以研究为基础，从事药品的开发和销售的生物制药公司。主要重点领域包括人类免疫缺陷病毒（HIV）/艾滋病，肝脏疾病，如乙型肝炎和丙型肝炎和心血管/代谢和呼吸条件。
@@ -164,68 +233,6 @@ https://mp.weixin.qq.com/s/aZLWs6VT-zfEMaBt_cRfzg
 https://mp.weixin.qq.com/s/8XlUuq6HoppIJbeR58LrnA
 
 想成为一个合格的药？选择姓什么很重要
-
-## 疫情建模
-
-https://mp.weixin.qq.com/s/2XsZzfZI-gAHC-D5HGNZXw
-
-从目前的数据，再次分析一下武汉的新冠肺炎患者数量和死亡率
-
-https://mp.weixin.qq.com/s/I5I5Jh7brFGRBTAFah-C4w
-
-武汉新冠肺炎传播的动力学模型及预测
-
-https://mp.weixin.qq.com/s/-C03P-I4w91kLSGsuhxAKQ
-
-新型冠状病毒传播与扩散的控制模型
-
-https://mp.weixin.qq.com/s/gZCD8ATxGrpHSZLKpcHfiA
-
-基于元胞自动机模拟新型肺炎病毒的传播和预防
-
-https://mp.weixin.qq.com/s/ZOPncvPpFyLIwH_XChAdbg
-
-基于微分方程和元胞自动机模拟新型肺炎病毒的传播
-
-https://mp.weixin.qq.com/s/4w6CTGaKKEH9APVNH9Ue8w
-
-扩散信息、交通管制、自我隔离，哪个更能遏制病毒传播？
-
-https://mp.weixin.qq.com/s/tBoM9o3pK89bprK8npHLWA
-
-可能会说谎的地图！全国疫情地理格局的重新审视
-
-https://mp.weixin.qq.com/s/bVNkCHl7BPU_eEcAWksmww
-
-关于武汉新型冠状病毒肺炎的传播预测模型
-
-https://mp.weixin.qq.com/s/Lg1tJmO7aN9XNpZ6bs0cJA
-
-程序员硬核劝告：现在还不是出门的时候
-
-https://mp.weixin.qq.com/s/sv07R8HQXX2U0QOi5_dOwg
-
-河南1105例新冠肺炎数据告诉我们什么？
-
-https://mp.weixin.qq.com/s/qRzkS2itp-eloaBlA-VSGA
-
-基于排队论模型浅析各地医护人员驰援武汉的重要意义
-
-https://mp.weixin.qq.com/s/Rs2cTVPIa02NIkApvr076w
-
-全球COVID-19研究数据集正式开放，内含近3万篇论文和所需AI研究工具！
-
-https://mp.weixin.qq.com/s/ueuvLFxQAGNzBLHHyaBYMA
-
-如果新冠病毒是在亚美尼亚爆发会发生什么？程序员用Python进行模拟
-
-https://mp.weixin.qq.com/s/LGNGFf-LBMz3qyUFPr_BHA
-
-新冠疫情下，如何降低复工的职场感染风险？
-
-https://mp.weixin.qq.com/s/0k1o-m8F5aWUWA4Nj8WnIQ
-
-我国疫情预测模型遭权威期刊退回！钟南山等人用LSTM力证“早发现早隔离”重要性
 
 ## 钟南山
 
