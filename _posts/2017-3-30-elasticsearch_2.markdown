@@ -396,7 +396,7 @@ https://mp.weixin.qq.com/s/FJX9eeRkxS5nJ4XIhRVwkg
 
 从ServerSwitch到SONiC Chassis：数据中心交换机技术的十年探索历程
 
-# GAN参考资源
+# GAN参考资源+
 
 https://mp.weixin.qq.com/s/cUFQ6EADa39h2eFoa_Dh0A
 

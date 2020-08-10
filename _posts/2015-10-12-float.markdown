@@ -167,6 +167,10 @@ GeForce产品专为互动游戏与消费类应用而设计。
 
 ![](/images/article/opencl_cuda.jpg)
 
+## OpenMp
+
+https://github.com/lapesd/libgomp
+
 ## 教程
 
 http://blog.csdn.net/augusdi/article/details/12833235
@@ -236,7 +240,7 @@ https://mp.weixin.qq.com/s/wJAt-RqmsoyECLGgdlH6RA
 
 基于数据的分布式鲁棒优化算法及其应用
 
-# 数据结构 & 普通CS算法+
+# 数据结构 & 普通CS算法+++
 
 https://mp.weixin.qq.com/s/M8U9B7UA2AdfnJi5EpTv-g
 
@@ -254,7 +258,7 @@ https://blog.csdn.net/simpsonk/article/details/72832959
 
 史上最强图解Treap总结
 
-# GAN参考资源
+# GAN参考资源++
 
 https://mp.weixin.qq.com/s/xr9fDv9DFkwi2ImV4RZAHg
 

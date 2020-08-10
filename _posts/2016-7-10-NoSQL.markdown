@@ -179,6 +179,10 @@ https://docs.mongodb.com/getting-started/shell/tutorial/install-mongodb-on-ubunt
 
 参考：
 
+https://www.cnblogs.com/chinesern/p/5581422.html
+
+MongoDB与Redis的比较
+
 https://docs.mongodb.com/manual/reference/sql-comparison/
 
 这里提供了MongoDB查询语法和SQL查询之间的对应关系表。
