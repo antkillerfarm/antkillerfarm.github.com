@@ -133,6 +133,14 @@ http://www.docin.com/p-976961701.html
 
 >注：杨元喜，1956年生，大地测量学家。中国科学院院士。
 
+https://zhuanlan.zhihu.com/c_1131936304564453376
+
+专栏：现代控制理论
+
+https://zhuanlan.zhihu.com/ClassicControl
+
+专栏：经典控制理论
+
 https://blog.csdn.net/tiandijun/article/details/72469471
 
 通俗理解卡尔曼滤波及其算法实现

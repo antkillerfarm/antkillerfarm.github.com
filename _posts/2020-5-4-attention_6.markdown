@@ -169,6 +169,10 @@ https://mp.weixin.qq.com/s/MPGF3tkNn3PBA_7S-fo9eg
 
 谷歌新模型突破BERT局限：NLP版“芝麻街”新成员Big Bird长这样
 
+https://zhuanlan.zhihu.com/p/165893466
+
+BERT及其变种
+
 # Transformer进阶
 
 https://mp.weixin.qq.com/s/-Y7Qy-5aJNJ5bx8QJf3k2w

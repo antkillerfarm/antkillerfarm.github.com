@@ -254,6 +254,14 @@ https://mp.weixin.qq.com/s/gj6Zw8SvOdSZqRx8KP9wWw
 
 20张图揭开内存管理的迷雾，瞬间豁然开朗
 
+http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html
+
+Systemd入门教程：命令篇
+
+http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html
+
+Systemd入门教程：实战篇
+
 # 新冠肺炎+
 
 ## 疫情建模
