@@ -291,10 +291,6 @@ https://mp.weixin.qq.com/s/epb4AIyg8_OqjAgGEbB9Ag
 
 31年前的北美大停电 背后的神秘力量是谁？（太阳风暴）
 
-https://mp.weixin.qq.com/s/-NAua2Zecz5I43Ner73-ww
-
-PNAS前沿：厄尔尼诺现象大概率将在2020下半年爆发
-
 https://mp.weixin.qq.com/s/uIYvfBlmzYkXS5hcgsCAKg
 
 一滴水从高处落下来，会不会砸死人？
@@ -336,3 +332,31 @@ http://blog.sina.com.cn/s/blog_4b7c1f540100t4sy.html
 https://www.zhihu.com/question/30137203/answer/303210942
 
 瓦伊昂大坝
+
+# 气象
+
+![](/images/img3/Hadley_Cell.png)
+
+考虑自转偏向力的Hadley Cells
+
+![](/images/img3/Hadley_Cell.png)
+
+不考虑自转偏向力的Hadley Cells（金星）
+
+https://mp.weixin.qq.com/s/UcchOEf59hku7uclxZFMrA
+
+距离地球630光年的地方，下起了“铁雨”
+
+https://www.seas.harvard.edu/climate/eli/research/equable/hadley.html
+
+Hadley Cells
+
+----
+
+https://mp.weixin.qq.com/s/0ZQvZNHOmiMZ1dr_-VXR6Q
+
+谁奠定了气候变化的基础？（John Tyndall）
+
+https://mp.weixin.qq.com/s/-NAua2Zecz5I43Ner73-ww
+
+PNAS前沿：厄尔尼诺现象大概率将在2020下半年爆发

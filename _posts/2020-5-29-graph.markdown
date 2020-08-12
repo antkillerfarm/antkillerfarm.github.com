@@ -313,6 +313,10 @@ https://mp.weixin.qq.com/s/_HOdAo2ClhJqbUrDvsc-3w
 
 Philip S. Yu 团队最新综述！社区发现的深度学习方法：进展、挑战、机遇
 
+https://mp.weixin.qq.com/s/HGpay4KZwtz7t5QBIeE8Rg
+
+图机器学习经典算法louvain完全解读
+
 ## Social Listening
 
 企业们通过捕捉网络上与品牌/产品/营销事件相关的关键词，去监测消费者都对品牌/产品/营销事件说了什么的行为，被称作社会化聆听（Social Listening）。

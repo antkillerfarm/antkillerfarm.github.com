@@ -158,3 +158,25 @@ https://new.qq.com/omn/20180819/20180819A011JT.html
 http://www.qdaily.com/articles/18872.html
 
 杜邦要合并了，过去一百年，这家公司的发明都改变了些什么？
+
+# 世说新语+++
+
+## 2020.8（续）
+
+https://mp.weixin.qq.com/s/Nq3xCWpn8bUC-mth2VoeSA
+
+守护最好的大盘鸡
+
+----
+
+JK制服、洛丽塔和汉服，江湖人称“破产三姐妹”。
+
+https://mp.weixin.qq.com/s/zq27aLwl4NNS01bflsMTsw
+
+“出圈”的JK制服，能摆脱幼齿审美吗？
+
+----
+
+细软快短：Infi、Th000、fly、Ted。
+
+鱼丸欺诈者：斗鱼有打赏用的鱼丸系统。

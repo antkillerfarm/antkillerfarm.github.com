@@ -71,6 +71,10 @@ https://mp.weixin.qq.com/s/UTJL98BhrQ3yLvAQrl1P8A
 
 ​我们的系统需要什么样的分布式锁？
 
+https://mp.weixin.qq.com/s/foAit8ratliRG6R2KC05Hg
+
+浅谈分布式锁
+
 # 大数据平台参考资源
 
 ![](/images/img3/big_data.png)
@@ -414,23 +418,3 @@ https://mp.weixin.qq.com/s/pxNRzWs3sZmbr-K18FvnrA
 https://mp.weixin.qq.com/s/UYN4cxH4gT0WsFTrBKRKGA
 
 美团酒旅实时数据规则引擎应用实践
-
-https://mp.weixin.qq.com/s/oYiQEMelkXHbT3ke2BmHOw
-
-如何逐步去构建一个大型网站系统
-
-https://mp.weixin.qq.com/s/xlCO__HucTUd_gYNRTueGg
-
-携程基于大数据分析的实时风控体系
-
-https://mp.weixin.qq.com/s/y6ntgPxTaLFBJDn3usBd1g
-
-美团点评广告实时索引的设计与实现
-
-https://mp.weixin.qq.com/s/-K2K22fLOz4Hl7MIUAJfRA
-
-美团点评数据平台Kerberos优化实战
-
-https://mp.weixin.qq.com/s/NwjYJde9_TC4PXMPpYw1Gw
-
-聊聊开源消息中间件的架构和原理

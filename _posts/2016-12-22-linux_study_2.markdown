@@ -290,6 +290,10 @@ https://mp.weixin.qq.com/s/-iCuxQjSghtDGaPMqaDSgQ
 
 Linux思维导图整理
 
+https://mp.weixin.qq.com/s/sLyD6z2xBXRxfBZnImTgtQ
+
+40+张最全Linux/C/C++思维导图，收藏！
+
 # minicom
 
 1.查看串口设备
@@ -449,27 +453,3 @@ Linux从程序到进程
 https://mp.weixin.qq.com/s/tguC-WOleKRWLfTmGdJlQg
 
 Linux文件系统的实现
-
-https://www.cnblogs.com/biyeymyhjob/archive/2012/07/20/2601655.html
-
-Linux写时拷贝技术(copy-on-write)
-
-https://mp.weixin.qq.com/s/1JiXL1f3SSjsBojlJSNOpQ
-
-Linux的启动流程
-
-https://mp.weixin.qq.com/s/ZfprFQjVANuCE2N693gZBQ
-
-用户空间和内核空间
-
-https://mp.weixin.qq.com/s/mTOzcdjaak-z6ypL9MR2Lw
-
-小白科普：悲观锁和乐观锁
-
-https://mp.weixin.qq.com/s/t-jZ9GoqW46rU3t9ahHqCQ
-
-mysql悲观锁总结和实践
-
-https://mp.weixin.qq.com/s/6MRi_UEcMybKn4YXi6qWng
-
-操作系统中锁的实现原理

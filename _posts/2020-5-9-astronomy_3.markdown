@@ -171,6 +171,14 @@ https://mp.weixin.qq.com/s/3OWh2w9h1NQLlniIb1fH9A
 
 ----
 
+核潜艇，一万年也要搞出来！
+
+https://mp.weixin.qq.com/s/GtxS2Y2obtUROnJqyoGqJw
+
+为什么美国要制裁中国核动力工业时，中国只是轻蔑地"呸"了一声!
+
+----
+
 2019.12.17 山东号航空母舰入列。
 
 ![](/images/img3/Carrier.jpg)
