@@ -69,6 +69,10 @@ https://mp.weixin.qq.com/s/I_MbkbpyQWKCA8QQu5355A
 
 MobileBERT：一个在资源有限设备上使用的BERT模型
 
+https://mp.weixin.qq.com/s/jBJvrR71OIov2aOucFfd6Q
+
+BERT模型压缩技术概览
+
 # BERT进阶
 
 ## AR vs AE

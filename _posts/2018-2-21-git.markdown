@@ -33,6 +33,8 @@ https://learngitbranching.js.org
 
 `gitk --all`：展示所有分支。
 
+`gitk v1.0`：展示特定分支。
+
 - git-gui：主要用于提交文件。
 
 安装：

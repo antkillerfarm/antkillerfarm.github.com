@@ -282,3 +282,7 @@ https://mp.weixin.qq.com/s/gSW5lxCoo9JkH1JRp6hfzA
 https://mp.weixin.qq.com/s/cfBT0wsqzZRwedMO7Qz_vA
 
 “任性”的C语言之父：因拒付论文装订费错失博士学位，论文52年后重见天日（Dennis Ritchie）
+
+https://mp.weixin.qq.com/s/E3_UrGoN1uSmD_4NYG-YWw
+
+来看看比尔盖茨当年写的BASIC解释器源代码吧，你就知道泰勒级数有什么用了

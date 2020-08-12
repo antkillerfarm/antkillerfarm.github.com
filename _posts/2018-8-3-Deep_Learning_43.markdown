@@ -85,6 +85,10 @@ https://mp.weixin.qq.com/s/VbRxHizSBZbUnmTlhK9GPw
 
 GitHub5800星！一键还原百年老电影、黑白旧照片本色
 
+https://mp.weixin.qq.com/s/dm0tld_LdS4RKr9ngebnAA
+
+使用TensorFlow创建能够图像重建的自编码器模型
+
 ## 大谷
 
 大谷1991年生于北京，获得了纽约视觉艺术学院电脑艺术硕士学位，艺术家，音乐家，程序员和独立的游戏设计师。

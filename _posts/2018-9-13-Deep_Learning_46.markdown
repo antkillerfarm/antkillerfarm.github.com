@@ -332,3 +332,7 @@ https://mp.weixin.qq.com/s/_hGIdl9Y7hWuRDeCmZUMmg
 https://mp.weixin.qq.com/s/FLwnxDPgcziaIY94qG9jDw
 
 社交推荐系统中的用户交互
+
+https://www.zhihu.com/question/19662693
+
+计算广告与推荐系统有哪些区别？

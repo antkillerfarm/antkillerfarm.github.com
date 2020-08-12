@@ -301,6 +301,10 @@ https://mp.weixin.qq.com/s/PAHwyoxNbi8HDMGh2JtJPQ
 
 58同城语音识别技术的探索和实践
 
+https://mp.weixin.qq.com/s/A9bSp3H3UzAEgL4N7o1KpQ
+
+使用tensorflow进行音乐类型的分类
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw
