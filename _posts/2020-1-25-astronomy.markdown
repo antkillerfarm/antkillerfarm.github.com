@@ -295,6 +295,10 @@ Atacama Large Millimeter/submillimeter Array是EHT计划的主力天文台。由
 
 这是基地车的正面图。
 
+https://mp.weixin.qq.com/s/NIMcgoXzTeAAumODJfEH_A
+
+在地球上，哪里能看到最澄澈的星空？（冰穹A）
+
 ## Katie Bouman
 
 ![](/images/img2/Katie_Bouman.jpg)

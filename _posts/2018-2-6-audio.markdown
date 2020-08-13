@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  音频常识, 区块链, Sikuli
+title:  音频常识, 区块链, Sikuli, Ansible
 category: technology 
 ---
 
@@ -261,3 +261,17 @@ https://mp.weixin.qq.com/s/MYA6l9V4BYIZO8Jgtds6GA
 http://www.cnblogs.com/fnng/archive/2012/12/15/2819367.html
 
 图形脚本语言sikuli
+
+# Ansible
+
+Ansible is Simple IT Automation——简单的自动化IT工具。这个工具的目标有这么几项：让我们自动化部署APP；自动化管理配置项；自动化的持续交付；自动化的（AWS）云服务管理。简单的说就是：**批量的在远程服务器上执行命令。**
+
+官网：
+
+https://www.ansible.com/
+
+参考：
+
+http://www.ansible.com.cn/
+
+Ansible中文权威指南

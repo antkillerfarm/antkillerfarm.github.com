@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Fedora, CentOS, 硬盘安装Linux（UEFI）, linux学习心得（三）
+title:  Fedora, CentOS, 硬盘安装Linux（UEFI）, Linux镜像文件
 category: linux 
 ---
 
@@ -244,116 +244,56 @@ https://blog.csdn.net/fouweng/article/details/53435602
 
 DKMS简介
 
-# Linux参考资源
+# Linux镜像文件
 
-https://www.cnblogs.com/biyeymyhjob/archive/2012/07/20/2601655.html
+## vmlinux
 
-Linux写时拷贝技术(copy-on-write)
+这是源代码直接生成的镜像文件。以x86平台为例：
 
-https://mp.weixin.qq.com/s/1JiXL1f3SSjsBojlJSNOpQ
+arch\x86\kernel\vmlinux.lds.S--这是链接脚本的源代码，经过C语言的宏预处理之后会生成vmlinux.lds，使用这个脚本，链接即可得到vmlinux，其过程与普通应用程序并无太大区别，也就是个elf文件罢了。
 
-Linux的启动流程
+## image
 
-https://mp.weixin.qq.com/s/ZfprFQjVANuCE2N693gZBQ
+vmlinux使用objcopy处理之后，生成的不包含符号表的镜像文件。这是linux默认生成的结果。
 
-用户空间和内核空间
+## zImage
 
-https://mp.weixin.qq.com/s/mTOzcdjaak-z6ypL9MR2Lw
+zImage = 使用gzip压缩后的image + GZip自解压代码。使用`make zImage`或者`make bzImage`创建。两者的区别是zImage只适用于大小在640KB以内的内核镜像。
 
-小白科普：悲观锁和乐观锁
+## uImage
 
-https://mp.weixin.qq.com/s/t-jZ9GoqW46rU3t9ahHqCQ
+uImage = uImage header + zImage。使用uboot提供的mkimage工具创建。
 
-mysql悲观锁总结和实践
+以上的这些镜像文件的关系可参见：
 
-https://mp.weixin.qq.com/s/6MRi_UEcMybKn4YXi6qWng
+http://www.cnblogs.com/armlinux/archive/2011/11/06/2396786.html
 
-操作系统中锁的实现原理
+http://www.linuxidc.com/Linux/2011-02/32096.htm
 
-https://mp.weixin.qq.com/s/oKtu3AA9D3y--xMDQ8EARw
+## Flash镜像
 
-携程一次Dubbo连接超时问题的排查
+一般来说，一个完整的linux系统，不仅包括内核，还包括bootloader和若干分区。这些镜像文件散布，不利于批量生产的进行。这时就需要将之打包，并生成一个可直接用于生产烧写的Flash镜像。
 
-https://mp.weixin.qq.com/s/4o_cSzWeJdLJMObJBhaZlw
+可使用mtd-utils库中的ubinize工具生成Flash镜像。
 
-计算机系统中的内存
+mtd-utils的官网是：
 
-https://mp.weixin.qq.com/s/OWGi1htNugOv81ZFPinRGw
+http://www.linux-mtd.infradead.org/
 
-汇编实现的memcpy和memset
+安装方法：
 
-https://mp.weixin.qq.com/s/6RoQAPsenD7Pu9enTqGeoQ
+`sudo apt-get install mtd-utils`
 
-移动端arm cpu优化学习笔记之内联汇编入门
+mtd-utils还可用于烧写分区。例如如下命令：
 
-https://www.jianshu.com/p/fad3339e3448
+`mtd write xyz.uimage linux`
 
-浅析Linux中的零拷贝技术
+其中`xyz.uimage`是镜像文件名，`linux`是分区名称。
 
-https://mp.weixin.qq.com/s/6R8UcLLjm9gdWud-eNHztw
+参考：
 
-中断及其初始化
+http://blog.csdn.net/andy205214/article/details/7390287
 
-https://mp.weixin.qq.com/s/qwouMWc4CFtqG_jra4xbIg
+利用mkfs.ubifs和ubinize两个工具制作UBI镜像
 
-IDT及中断处理的实现
-
-https://mp.weixin.qq.com/s/pRsXWAv7wgYcN_jlzcA2YA
-
-内存都没了，还能运行程序？
-
-https://mp.weixin.qq.com/s/4tAxQ0auQfv5x7Dh3B-85g
-
-Linux内存管理
-
-https://mp.weixin.qq.com/s/jDPxu6IVo3_VpK5l6_-jdQ
-
-Linux系统内存知识
-
-http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html
-
-进程与线程的一个简单解释
-
-https://mp.weixin.qq.com/s/zVi45pZka_kPpKIoNXNVBA
-
-当初我要是这么学习“进程和线程”就好了
-
-https://mp.weixin.qq.com/s/I7C7cXFgxO7RO0Wpjjj3xQ
-
-一篇文章带你“重新认识”线程上下文切换怎么玩儿
-
-https://mp.weixin.qq.com/s/DG7RjJ_HXSRb6nAZuoTz3g
-
-详解Linux中3个文件查找相关命令
-
-https://www.cnblogs.com/liqiuhao/p/9450093.html
-
-关于TOCTTOU攻击的简介
-
-https://mp.weixin.qq.com/s/2QAm6F109LV2koC64xIpqA
-
-简直不要太硬了！一文带你彻底理解文件系统
-
-https://mp.weixin.qq.com/s/Y_GYtL9m3zmY-5VZMbCfWg
-
-Linux中用户的简介与管理
-
-https://linux.cn/article-8290-1.html
-
-漫画赏析：Linux内核到底长啥样
-
-https://mp.weixin.qq.com/s/IucIsbJPo4eUUopV8xNN9w
-
-图解Linux程序的链接原理
-
-https://mp.weixin.qq.com/s/zBtdhjAOjwcJbGluccwOlA
-
-我和面试官之间关于操作系统的一场对弈！写了很久，希望对你有帮助！
-
-https://mp.weixin.qq.com/s/3Pp7wkDO6Rnxb5aZP0sacw
-
-一文了解操作系统I/O
-
-https://mp.weixin.qq.com/s/xM8uvYbX6VY8MVZrYkvCUg
-
-链接选项rpath的原理和应用
+从代码来查看板子的MTD分区方案，主要是搜索mtd_partition类型的使用定义。比如mini2440板子的分区方案可在mini2440_default_nand_part数组中查到。

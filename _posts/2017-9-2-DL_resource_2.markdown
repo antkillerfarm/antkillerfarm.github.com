@@ -177,6 +177,10 @@ https://mp.weixin.qq.com/s/SeNIQQL_MqjFG4ek_wJoIg
 
 必须了解的8种神经网络架构
 
+https://zhuanlan.zhihu.com/p/152362317
+
+22张深度学习精炼图笔记总结
+
 ## 行业
 
 李开复的这篇文章不可不读：

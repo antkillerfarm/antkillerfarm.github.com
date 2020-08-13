@@ -83,6 +83,10 @@ https://mp.weixin.qq.com/s/j3oZ-Y953U4aX0nXeWuZlg
 
 西北大学最新《神经架构搜索NAS》2020综述综述论文
 
+https://mp.weixin.qq.com/s/O6ZnVMFXqEdoRiXhxa2r8A
+
+《神经架构搜索NAS》最新进展综述，25页pdf
+
 https://mp.weixin.qq.com/s/FdKcWsynTpfD6rbABPTEOQ
 
 神经架构搜索研究指南，只看这一篇就够了

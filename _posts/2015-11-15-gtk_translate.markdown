@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Transifex与GTK文档翻译, Linux镜像文件, 外设接口杂谈, 中文编码格式问题, Ansible
+title:  Transifex与GTK文档翻译, 外设接口杂谈, 中文编码格式问题, Graphics Framework
 category: technology 
 ---
 
@@ -127,58 +127,6 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/glib
 
 需要注意的是，此例中Server端采用的是阻塞式操作，因此会将main loop阻塞住。如果main loop需要处理其他事件的话，这里可使用GThreadedSocketService启动单独的线程，处理之。
 
-# Linux镜像文件
-
-## vmlinux
-
-这是源代码直接生成的镜像文件。以x86平台为例：
-
-arch\x86\kernel\vmlinux.lds.S--这是链接脚本的源代码，经过C语言的宏预处理之后会生成vmlinux.lds，使用这个脚本，链接即可得到vmlinux，其过程与普通应用程序并无太大区别，也就是个elf文件罢了。
-
-## image
-
-vmlinux使用objcopy处理之后，生成的不包含符号表的镜像文件。这是linux默认生成的结果。
-
-## zImage
-
-zImage = 使用gzip压缩后的image + GZip自解压代码。使用`make zImage`或者`make bzImage`创建。两者的区别是zImage只适用于大小在640KB以内的内核镜像。
-
-## uImage
-
-uImage = uImage header + zImage。使用uboot提供的mkimage工具创建。
-
-以上的这些镜像文件的关系可参见：
-
-http://www.cnblogs.com/armlinux/archive/2011/11/06/2396786.html
-
-http://www.linuxidc.com/Linux/2011-02/32096.htm
-
-## Flash镜像
-
-一般来说，一个完整的linux系统，不仅包括内核，还包括bootloader和若干分区。这些镜像文件散布，不利于批量生产的进行。这时就需要将之打包，并生成一个可直接用于生产烧写的Flash镜像。
-
-可使用mtd-utils库中的ubinize工具生成Flash镜像。
-
-mtd-utils的官网是：
-
-http://www.linux-mtd.infradead.org/
-
-安装方法：
-
-`sudo apt-get install mtd-utils`
-
-mtd-utils还可用于烧写分区。例如如下命令：
-
-`mtd write xyz.uimage linux`
-
-其中`xyz.uimage`是镜像文件名，`linux`是分区名称。
-
-参考：
-
-http://blog.csdn.net/andy205214/article/details/7390287
-
-从代码来查看板子的MTD分区方案，主要是搜索mtd_partition类型的使用定义。比如mini2440板子的分区方案可在mini2440_default_nand_part数组中查到。
-
 # 外设接口杂谈
 
 ## USB_IN和USB_OUT
@@ -249,17 +197,54 @@ https://mp.weixin.qq.com/s/q-VmuWrsKSBMhWxjafPsng
 
 Unicode与UTF-8的区别
 
-# Ansible
+# Graphics Framework
 
-Ansible is Simple IT Automation——简单的自动化IT工具。这个工具的目标有这么几项：让我们自动化部署APP；自动化管理配置项；自动化的持续交付；自动化的（AWS）云服务管理。简单的说就是：**批量的在远程服务器上执行命令。**
+## Linux Graphics Framework
 
-官网：
+fbdev - video driver for framebuffer device
 
-https://www.ansible.com/
+libkms(Kernel ModeSetting）
 
-参考：
+DRM(Direct Rendering Manager)
 
-http://www.ansible.com.cn/
+GBM(Generic Buffer Management)
 
-Ansible中文权威指南
+Wayland是一套display server(Wayland compositor)与client间的通信协议，而Weston是Wayland compositor的参考实现。
 
+https://www.cnblogs.com/armlinux/archive/2010/08/30/2396932.html
+
+全面的framebuffer详解
+
+https://blog.csdn.net/fyh2003/article/details/49253713
+
+Wayland与Weston简介
+
+https://www.cnblogs.com/lenomirei/p/11379535.html
+
+渲染显示相关概念
+
+## Android Graphics Framework
+
+SurfaceFlinger
+
+VSYNC
+
+前置Buffer是当前显示在萤幕上的缓冲区，后置Buffer是尚未显示在萤幕上的缓冲区。
+
+Single Buffering使用一个前置缓冲区，在着色的同时影像立即显示在萤幕上。因此当萤幕更新影像时会出现闪烁的现象。Single Buffering在目前的程序中已很少使用。
+
+Double Buffering则使用两个缓冲区，一个前置Buffer，一个后置Buffer。前置缓存的像素在屏幕上显示的同时，显卡正在紧张地着色后置缓存中的像素。
+
+Triple Buffering使用一个前置缓存和两个后置缓存。在着色完第一个后置缓冲区的数据后，立即开始处理第二个后置缓冲区，没有Vsync等待的时间。
+
+Gralloc
+
+https://source.android.google.cn/devices/graphics
+
+https://www.sohu.com/a/308763349_100093134
+
+深入浅出Android BufferQueue
+
+https://blog.csdn.net/jinzhuojun/article/details/39698317
+
+Android中的GraphicBuffer同步机制-Fence

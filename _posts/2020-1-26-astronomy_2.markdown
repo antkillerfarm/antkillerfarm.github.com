@@ -233,6 +233,8 @@ Space X龙飞船成功发射，它和NASA到底有什么关系？
 
 ![](/images/img3/NASA.png)
 
+![](/images/img3/Canaveral.jpg)
+
 https://mp.weixin.qq.com/s/u5BuBhkrgLkUfuGWHA5ZRg
 
 美国国防先进研究计划局（Defense Advanced Research Projects Agency, DARPA），如何成为美国科技的核心引擎？
@@ -286,6 +288,10 @@ https://news.qq.com/a/20180927/005739.htm
 据《财经》报道，从融资和估值来看，蓝箭航天、零壹空间、星际荣耀已经成为目前众多民营航天企业的第一梯队，备受市场的关注。除此之外，还包括翎客航天、星途探索、九州云箭、灵动飞天、深蓝航天等。
 
 ----
+
+https://www.zhihu.com/question/395220918
+
+为什么中国有四个航天发射场？各有什么优势？
 
 https://mp.weixin.qq.com/s/uVayftwQ-mJU04XGn67QoQ
 

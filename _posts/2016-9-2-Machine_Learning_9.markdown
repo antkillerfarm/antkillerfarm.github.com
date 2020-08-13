@@ -61,6 +61,10 @@ https://mp.weixin.qq.com/s/FJWtQjL741Ff4sr1SBPkVA
 
 这3个Scikit-learn的特征选择技术，能够有效的提高你的数据预处理能力
 
+https://mp.weixin.qq.com/s/aqnbUutDZWux-WT8O9FdQg
+
+为什么要停止过度使用置换重要性来寻找特征
+
 ## KL散度
 
 KL散度（Kullback–Leibler divergence）是两个随机分布间距离的度量。其定义如下：
