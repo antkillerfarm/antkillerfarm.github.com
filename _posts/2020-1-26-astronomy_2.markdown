@@ -135,6 +135,10 @@ https://mp.weixin.qq.com/s/UDHAT3vLMS_yo4w0wbcpJQ
 
 十问北斗
 
+https://zhuanlan.zhihu.com/p/29213504
+
+从沙漏和星盘到六分仪和航海钟——恼人的航海定位
+
 https://mp.weixin.qq.com/s/SQPVTNYBU8JIRPYFqsXgtA
 
 神秘力量？上帝使者？彗星的“人设”早就崩塌了

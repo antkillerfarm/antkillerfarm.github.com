@@ -181,6 +181,26 @@ Alt+Enter：自动import
 </tr>
 </table>
 
+## HashMap
+
+![](/images/img3/hashmap.png)
+
+HashMap采用是数组+链表/红黑树的组合来作为底层结构，也就是开放地址法+链地址法的方式来实现HashMap。
+
+Hashtable是线程安全的，已被废弃。HashMap不是线程安全的，但它的效率比Hashtable好很多。
+
+当需要多线程操作的时候，可以使用线程安全的ConcurrentHashMap。同为线程安全的，它的效率比Hashtable好：因为它使用了分段锁，并不对整个数据进行锁定。
+
+参考：
+
+https://blog.csdn.net/wangxing233/article/details/79452946
+
+HashMap与HashTable的区别
+
+https://blog.csdn.net/NYfor2017/article/details/105454097
+
+HashMap的加载因子为什么是0.75？
+
 ## Log4j & SLF4J & Logback
 
 Log4j是Apache的一个开源项目，通过使用Log4j，我们可以控制日志信息输送的目的地是控制台、文件、GUI组件，甚至是套接口服务器、NT的事件记录器、UNIX Syslog守护进程等；我们也可以控制每一条日志的输出格式；通过定义每一条日志信息的级别，我们能够更加细致地控制日志的生成过程。
@@ -344,37 +364,3 @@ Java如何实现动态脚本？
 https://mp.weixin.qq.com/s/ag5u2EPObx7bZr7hkcrOTg
 
 新一代垃圾回收器ZGC的探索与实践
-
-# Javascript++
-
-https://mp.weixin.qq.com/s/fEAfuVzfOwKjnTB-mdS5UA
-
-用JS写一个同Excel表现的智能填充算法
-
-https://mp.weixin.qq.com/s/D-XvKCSUCzMGcEz_xWTwqg
-
-现代CSS进化史
-
-https://mp.weixin.qq.com/s/zDt92-5NVaAFZJRfEHCUvg
-
-什么是Native、Web App、Hybrid、React Native和Weex？
-
-https://mp.weixin.qq.com/s/IIWgNvqp0jxcD-J_CikV8w
-
-代码变油画，精细到毛发，这个前端小姐姐只用HTML+CSS，让美术设计也惊叹
-
-https://www.cnblogs.com/zzd0916/p/11977995.html
-
-浏览器工作原理与实践
-
-https://mp.weixin.qq.com/s/MwWC0doO_sp_eRkInbE0hw
-
-今天网站都变成灰色了，这其中是怎么实现的？
-
-https://mp.weixin.qq.com/s/VTULhAjEUNfAph-xkkUTsg
-
-手写一个解析器
-
-https://mp.weixin.qq.com/s/3sYrI9kxgAYLiNT-xavRLw
-
-“秒开”浏览器实现起来有多难？
