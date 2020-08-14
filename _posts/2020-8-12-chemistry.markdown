@@ -193,6 +193,14 @@ https://mp.weixin.qq.com/s/zq27aLwl4NNS01bflsMTsw
 
 ----
 
+如果你是爱尔兰的大地主，你是把收上来的燕麦以近似于零的价格卖给灾民，还是按市场价卖给英格兰的工人？
+
+在大量的爱尔兰人快饿死的情况下，爱尔兰的农场每年有4000艘货船满载粮食开往英格兰的港口。
+
 https://mp.weixin.qq.com/s/QSortTy--_JZ0Zqiy2fcVg
 
 霜霉病引发的大饥荒，让爱尔兰失去了一半的人口
+
+https://www.thepaper.cn/newsDetail_forward_1723927
+
+“饥荒孤女”血泪史：爱尔兰大饥荒之后的女性
