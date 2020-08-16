@@ -7,9 +7,45 @@ category: DRL
 * toc
 {:toc}
 
-# Deep Q-learning Network
+# Deep Q-learning Network（续）
 
-## 参考（续）
+## 参考
+
+https://zhuanlan.zhihu.com/p/21262246
+
+DQN从入门到放弃1 DQN与增强学习
+
+https://zhuanlan.zhihu.com/p/21292697
+
+DQN从入门到放弃2 增强学习与MDP
+
+https://zhuanlan.zhihu.com/p/21340755
+
+DQN从入门到放弃3 价值函数与Bellman方程
+
+https://zhuanlan.zhihu.com/p/21378532
+
+DQN从入门到放弃4 动态规划与Q-Learning
+
+https://zhuanlan.zhihu.com/p/21421729
+
+DQN从入门到放弃5 深度解读DQN算法
+
+https://zhuanlan.zhihu.com/p/21547911
+
+DQN从入门到放弃6 DQN的各种改进
+
+https://zhuanlan.zhihu.com/p/21609472
+
+DQN从入门到放弃7 连续控制DQN算法-NAF
+
+https://zhuanlan.zhihu.com/p/56023723
+
+通过Q-learning深入理解强化学习（上）
+
+https://mp.weixin.qq.com/s/0HukwNmg3k-rBrIBByLhnQ
+
+深度Q学习：一步步实现能玩《毁灭战士》的智能体
 
 https://mp.weixin.qq.com/s/x-qCA0TzoVUtZ8VAf8ey0A
 
@@ -297,51 +333,3 @@ https://github.com/NVlabs/GA3C
 ![](/images/img3/GA3C.png)
 
 这是GA3C的网络结构图。
-
-## AC vs. GAN
-
-论文：
-
-《Connecting Generative Adversarial Networks and Actor-Critic Methods》
-
-| ![](/images/img3/AC_vs_GAN.png) | ![](/images/img3/AC_vs_GAN_2.png) |
-
-左图是GAN，右图是AC。
-
-| Method | GANs | AC |
-|:--:|:--:|:--:|
-| Freezing learning | yes | yes |
-| Label smoothing | yes | no |
-| Historical averaging | yes | no |
-| Minibatch discrimination | yes | no |
-| Batch normalization | yes | yes |
-| Target networks | n/a | yes |
-| Replay buffers | no | yes |
-| Entropy regularization | no | yes |
-| Compatibility | no | yes |
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/51645768
-
-强化学习AC、A2C、A3C算法原理与实现！
-
-https://mp.weixin.qq.com/s/c4xoy4CJ_hsVdmGe1n3rTQ
-
-A3C——一种异步强化学习方法
-
-https://mp.weixin.qq.com/s/5kI72vg4JNAZWD93EYAUWA
-
-直观的强化学习算法(A2C)
-
-https://blog.csdn.net/u013236946/article/details/73195035
-
-A3C
-
-https://zhuanlan.zhihu.com/p/70360272
-
-最前沿：深度解读Soft Actor-Critic算法
-
-https://mp.weixin.qq.com/s/R308ohdMU8b7Ap4CLofvDg
-
-OpenAI开源算法ACKTR与A2C：把可扩展的自然梯度应用到强化学习

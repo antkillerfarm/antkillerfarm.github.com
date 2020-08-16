@@ -336,3 +336,7 @@ https://mp.weixin.qq.com/s/FLwnxDPgcziaIY94qG9jDw
 https://www.zhihu.com/question/19662693
 
 计算广告与推荐系统有哪些区别？
+
+https://mp.weixin.qq.com/s/wKJ3buhA-6xtJPZ7DQ0pow
+
+机器学习模型在携程海外酒店推荐场景中的应用

@@ -172,9 +172,9 @@ https://mp.weixin.qq.com/s/svNVryWhiGxWFBz0s0dX5g
 
 概率论简史
 
-https://mp.weixin.qq.com/s/ELZhHhHAfK-hQbKXQslIZA
+https://zhuanlan.zhihu.com/p/158801020
 
-深度学习必懂的13种概率分布
+深度学习那些需要掌握的概率分布
 
 https://mp.weixin.qq.com/s/UAXSGp0Lx_-HvIMEH3ttLg
 

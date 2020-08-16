@@ -43,6 +43,10 @@ https://mp.weixin.qq.com/s/RAjusu-Jyqb8K19N8KZ_3w
 
 一份552页《大规模数据系统：Large-scale Data Systems》硬核课程PPT
 
+https://mp.weixin.qq.com/s/AeCQK2hFy60pq6y1tRcs_A
+
+20页pdf，A Survey on Large-scale Machine
+
 https://mp.weixin.qq.com/s/_1Yr_BbFhlNEW7UtYvAaoA
 
 分布式深度学习，93页ppt概述最新DDL技术发展
@@ -336,6 +340,10 @@ EB级系统空中换引擎：阿里调度执行框架如何全面升级？（DAG
 https://mp.weixin.qq.com/s/_85oWK2plv2QOX5Qfg_-ZA
 
 大规模机器学习优化，195页ppt与视频
+
+https://mp.weixin.qq.com/s/soruo90Dbtzi6d1kA63Akg
+
+阿里提出智能算力引擎DCAF，节省20%GPU算力
 
 # 目标检测进阶++
 

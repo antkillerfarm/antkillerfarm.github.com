@@ -9,6 +9,30 @@ category: DRL
 
 # 工具/框架（续）
 
+https://mp.weixin.qq.com/s/La43IWrxuDLoppnfRAYtbA
+
+ReinforceJS库（动态展示DP、TD、DQN算法运行过程）
+
+https://mp.weixin.qq.com/s/HUf41-OBAwZm7zlISkIx0w
+
+DRL在Unity自行车环境中配置与实践
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771231&idx=3&sn=09410e8fd9f34cacfac7df6abf4d9973
+
+集合三大类无模型强化学习算法，BAIR开源RL代码库rlpyt
+
+https://mp.weixin.qq.com/s/PYrE6vUCivusWuFvdiUbNQ
+
+几行代码轻松实现，Tensorlayer 2.0推出深度强化学习基准库
+
+https://mp.weixin.qq.com/s/AUKMBRFMifcgZmdXBjDl3Q
+
+从“小”培养AI安全意识：OpenAI开源最新强化学习训练工具，安全约束自由定制，开箱即用
+
+https://mp.weixin.qq.com/s/oPK9eNgIPMP6ICwBB-4kQA
+
+Facebook推基于NetHack的深度强化学习利器，超轻量级架构性价比远超GPT-2和BERT
+
 https://mp.weixin.qq.com/s/PfyGOK2Ov6Qi-L5aqMfNjg
 
 DeepMind发布强化学习库RLax
@@ -229,41 +253,3 @@ $$L=(\color{blue}{r+\gamma \max_{a'}Q(s',a',w^-)}-Q(s,a,w))^2$$
 这在下文介绍的Leela Zero项目的训练过程中体现的很明显：一开始我们只训练一个简单的AI，然后逐渐加深加大网络，淘汰废物AI，得到更优秀的AI。
 
 为了使进化生效，在一段时间内保持目标Q网络不变就是很显然的了——你过不了我这关，就没资格继续下去了。
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/21262246
-
-DQN从入门到放弃1 DQN与增强学习
-
-https://zhuanlan.zhihu.com/p/21292697
-
-DQN从入门到放弃2 增强学习与MDP
-
-https://zhuanlan.zhihu.com/p/21340755
-
-DQN从入门到放弃3 价值函数与Bellman方程
-
-https://zhuanlan.zhihu.com/p/21378532
-
-DQN从入门到放弃4 动态规划与Q-Learning
-
-https://zhuanlan.zhihu.com/p/21421729
-
-DQN从入门到放弃5 深度解读DQN算法
-
-https://zhuanlan.zhihu.com/p/21547911
-
-DQN从入门到放弃6 DQN的各种改进
-
-https://zhuanlan.zhihu.com/p/21609472
-
-DQN从入门到放弃7 连续控制DQN算法-NAF
-
-https://zhuanlan.zhihu.com/p/56023723
-
-通过Q-learning深入理解强化学习（上）
-
-https://mp.weixin.qq.com/s/0HukwNmg3k-rBrIBByLhnQ
-
-深度Q学习：一步步实现能玩《毁灭战士》的智能体

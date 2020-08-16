@@ -9,6 +9,38 @@ category: DRL
 
 # StarCraft & AI（续）
 
+https://mp.weixin.qq.com/s/x0G-LNCano7qjGdpj-fpCQ
+
+2017年度星际争霸AI竞赛结果出炉
+
+https://mp.weixin.qq.com/s/AndV-htPeTXlpAm1GONNtA
+
+中科院开源星际争霸2宏观运营研究数据集MSC
+
+https://mp.weixin.qq.com/s/I9gfoCxEYW5lSIy5QGyt6w
+
+2018星际AI大赛（2018.11）冠军诞生！一个个机器学习算法，都输给不会学习的韩国bot
+
+https://github.com/TeamSAIDA/SAIDA
+
+2018.11冠军SAIDA的github
+
+https://github.com/TorchCraft/TorchCraft
+
+2018.11亚军CherryPi的github
+
+https://github.com/bmnielsen/Locutus/
+
+2018.8冠军Locutus的github
+
+https://mp.weixin.qq.com/s/yAYF2i-Pr84RliKrJyPaUA
+
+伯克利星际争霸II AI“撞车”腾讯，作者：我们不一样
+
+https://mp.weixin.qq.com/s/uC8gi4kN_muRTwRL0RCZjQ
+
+要玩转这个星际争霸II开源AI，你只需要i5+GTX1050
+
 https://mp.weixin.qq.com/s/wyn-V4-DcjjOKziith3pXw
 
 开源星际争霸2多智能体挑战smac
@@ -356,35 +388,3 @@ https://mp.weixin.qq.com/s/eEQhwV1cA4nEgEBcOKDenA
 https://mp.weixin.qq.com/s/cO1VlYGwdRBAbPs7IgvcAA
 
 超越传统强化学习的价值分布方法
-
-https://mp.weixin.qq.com/s/S2eGPTON3XmfN830m4vaaA
-
-腾讯AI Lab：可自适应于不同环境和任务的强化学习方法
-
-https://mp.weixin.qq.com/s/dlOFM7LuOF2npDP_EaITvg
-
-效率提高50倍！谷歌提出从图像中学习世界的强化学习新方法（PlaNet）
-
-https://mp.weixin.qq.com/s/3qWN6DjuGUZgCpxH7XF4fg
-
-谷歌重磅开源RL智能体Dreamer，仅靠图像学习从机器人到Atari的控制策略，样本效率暴增20倍
-
-https://mp.weixin.qq.com/s/Maoy2feVWj5hpn4Ysh_47A
-
-你追踪，我逃跑：一种用于主动视觉跟踪的对抗博弈机制
-
-https://mp.weixin.qq.com/s/4w3wIyy4H0UGeqOGhNcIbA
-
-强化学习落地！京东等发布综述《深度强化学习在搜索，推荐和在线广告中的应用》
-
-https://mp.weixin.qq.com/s/F_GsfAJRFJ_o8PETqUL35g
-
-谷歌大脑AI飞速解锁雅达利，训练不用两小时：预测能力“前所未有”
-
-https://mp.weixin.qq.com/s/6wPtb9Qdhr9FiMk15xrUsQ
-
-强化跨模态匹配和自监督模仿学习
-
-https://mp.weixin.qq.com/s/lU3_ONAIGDUv_AVv2Xn14w
-
-仅需2小时学习，基于模型的强化学习方法可以在Atari上实现人类水平

@@ -133,6 +133,10 @@ https://mp.weixin.qq.com/s/ge3FBSKFPvZgpWWbCAvm3A
 
 让许幻山放不下的蓝色烟花，有多难生产？
 
+https://mp.weixin.qq.com/s/u_Xg4naj0UetFs8tROHK8A
+
+从“垃圾元素”到“爱情金属”，它是怎么咸鱼翻身的？（铂）
+
 ## 化学工业
 
 https://wallstreetcn.com/articles/250536

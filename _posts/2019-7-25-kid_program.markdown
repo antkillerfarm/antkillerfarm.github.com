@@ -473,3 +473,7 @@ https://segmentfault.com/a/1190000000414339
 https://mp.weixin.qq.com/s/Ln5EPqbdNjy3HrVM7Wwe2g
 
 Heartrate：一个牛逼的工具，Python执行实时可视化
+
+https://mp.weixin.qq.com/s/J8IHOdUevyn9YS09D8Ou-g
+
+聊聊Python发送邮件的几种方式

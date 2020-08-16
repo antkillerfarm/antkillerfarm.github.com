@@ -241,6 +241,14 @@ self.player.seek(1.0, Gst.Format.TIME, Gst.SeekFlags.FLUSH, Gst.SeekType.SET,\
 
 https://www.djangoproject.com/
 
+中文教程：
+
+https://www.runoob.com/django/django-tutorial.html
+
+安装：
+
+`sudo pip install Django`
+
 参考：
 
 https://mp.weixin.qq.com/s/-CaMHjsY580et8Hh_D2FSg

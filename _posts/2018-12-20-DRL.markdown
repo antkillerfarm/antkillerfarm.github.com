@@ -55,6 +55,12 @@ CS 285/294: Deep Reinforcement Learning
 
 此外，还是老惯例，推荐一下李宏毅DL课程中的DRL部分。
 
+https://zhuanlan.zhihu.com/p/186093914
+
+深度强化学习工程师/研究员面试指南
+
+这个指南包含了DRL的绝大多数的研究方向，适合入门之后，选择若干深入方向之用。
+
 https://inst.eecs.berkeley.edu/~cs188/fa18/index.html
 
 CS 188: Introduction to Artificial Intelligence。这个课程偏重RL和机器人，有贝叶斯网络的内容，但没有DL的内容。
@@ -348,27 +354,3 @@ https://zhuanlan.zhihu.com/p/68462431
 https://mp.weixin.qq.com/s/BhTX4KQnLxUQLvPUfY3q6Q
 
 物理实验成本为零！南大LAMDA开源虚拟RL训练环境
-
-https://mp.weixin.qq.com/s/La43IWrxuDLoppnfRAYtbA
-
-ReinforceJS库（动态展示DP、TD、DQN算法运行过程）
-
-https://mp.weixin.qq.com/s/HUf41-OBAwZm7zlISkIx0w
-
-DRL在Unity自行车环境中配置与实践
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771231&idx=3&sn=09410e8fd9f34cacfac7df6abf4d9973
-
-集合三大类无模型强化学习算法，BAIR开源RL代码库rlpyt
-
-https://mp.weixin.qq.com/s/PYrE6vUCivusWuFvdiUbNQ
-
-几行代码轻松实现，Tensorlayer 2.0推出深度强化学习基准库
-
-https://mp.weixin.qq.com/s/AUKMBRFMifcgZmdXBjDl3Q
-
-从“小”培养AI安全意识：OpenAI开源最新强化学习训练工具，安全约束自由定制，开箱即用
-
-https://mp.weixin.qq.com/s/oPK9eNgIPMP6ICwBB-4kQA
-
-Facebook推基于NetHack的深度强化学习利器，超轻量级架构性价比远超GPT-2和BERT

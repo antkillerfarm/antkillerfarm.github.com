@@ -205,3 +205,7 @@ https://mp.weixin.qq.com/s/OmSxnVL6pYYzB9_jDV4Lqg
 https://mp.weixin.qq.com/s/lrNvC8EWcq6cT16FU8nUbQ
 
 5种常用的交叉验证技术，保证评估模型的稳定性
+
+https://mp.weixin.qq.com/s/B7jIE8W3jHT_YS4psLJZCw
+
+交叉验证和超参数调整:如何优化你的机器学习模型

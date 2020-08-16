@@ -1,11 +1,61 @@
 ---
 layout: post
-title:  深度强化学习（四）——DDPG, PPO, IMPALA, Hierarchical RL
+title:  深度强化学习（四）——DDPG, PPO, IMPALA
 category: DRL 
 ---
 
 * toc
 {:toc}
+
+# A2C & A3C（续）
+
+## AC vs. GAN
+
+论文：
+
+《Connecting Generative Adversarial Networks and Actor-Critic Methods》
+
+| ![](/images/img3/AC_vs_GAN.png) | ![](/images/img3/AC_vs_GAN_2.png) |
+
+左图是GAN，右图是AC。
+
+| Method | GANs | AC |
+|:--:|:--:|:--:|
+| Freezing learning | yes | yes |
+| Label smoothing | yes | no |
+| Historical averaging | yes | no |
+| Minibatch discrimination | yes | no |
+| Batch normalization | yes | yes |
+| Target networks | n/a | yes |
+| Replay buffers | no | yes |
+| Entropy regularization | no | yes |
+| Compatibility | no | yes |
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/51645768
+
+强化学习AC、A2C、A3C算法原理与实现！
+
+https://mp.weixin.qq.com/s/c4xoy4CJ_hsVdmGe1n3rTQ
+
+A3C——一种异步强化学习方法
+
+https://mp.weixin.qq.com/s/5kI72vg4JNAZWD93EYAUWA
+
+直观的强化学习算法(A2C)
+
+https://blog.csdn.net/u013236946/article/details/73195035
+
+A3C
+
+https://zhuanlan.zhihu.com/p/70360272
+
+最前沿：深度解读Soft Actor-Critic算法
+
+https://mp.weixin.qq.com/s/R308ohdMU8b7Ap4CLofvDg
+
+OpenAI开源算法ACKTR与A2C：把可扩展的自然梯度应用到强化学习
 
 # DDPG
 
@@ -248,19 +298,3 @@ DeepMind重磅论文：通过奖励模型，让AI按照人类意图行事
 https://mp.weixin.qq.com/s/TIWnnCmVZnFQNH9Fig5aTw
 
 DeepMind发布新奖励机制：让智能体不再“碰瓷”
-
-# Hierarchical RL
-
-![](/images/img3/Montezuma.png)
-
-之前已经提到，在DeepMind测试的40多款游戏中，有那么几款游戏无论怎么训练，结果都是0，也就是DQN完全无效。上面就是其中最知名的代表游戏《Montezuma’s Revenge》。这是一个解谜游戏，比如图中要拿到钥匙，然后去开门。这对我们而言是通过先验知识得到的。但是很难想象计算机如何仅仅通过图像感知这些内容。感知不到，那么这种游戏也就无从解决。
-
-论文：
-
-《Hierarchical Deep Reinforcement Learning: Integrating Temporal Abstraction and Intrinsic Motivation》
-
-![](/images/img3/HRL.png)
-
-该论文的主要思路就是，弄一个两个层级的神经网络，顶层用于决策，确定下一步的目标，底层用于具体行为。 
-
-这里的内在目标是人工确定的，因此智能程度不高，但是比较实用。

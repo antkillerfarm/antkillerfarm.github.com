@@ -9,6 +9,38 @@ category: DRL
 
 # DRL参考资源
 
+https://mp.weixin.qq.com/s/S2eGPTON3XmfN830m4vaaA
+
+腾讯AI Lab：可自适应于不同环境和任务的强化学习方法
+
+https://mp.weixin.qq.com/s/dlOFM7LuOF2npDP_EaITvg
+
+效率提高50倍！谷歌提出从图像中学习世界的强化学习新方法（PlaNet）
+
+https://mp.weixin.qq.com/s/3qWN6DjuGUZgCpxH7XF4fg
+
+谷歌重磅开源RL智能体Dreamer，仅靠图像学习从机器人到Atari的控制策略，样本效率暴增20倍
+
+https://mp.weixin.qq.com/s/Maoy2feVWj5hpn4Ysh_47A
+
+你追踪，我逃跑：一种用于主动视觉跟踪的对抗博弈机制
+
+https://mp.weixin.qq.com/s/4w3wIyy4H0UGeqOGhNcIbA
+
+强化学习落地！京东等发布综述《深度强化学习在搜索，推荐和在线广告中的应用》
+
+https://mp.weixin.qq.com/s/F_GsfAJRFJ_o8PETqUL35g
+
+谷歌大脑AI飞速解锁雅达利，训练不用两小时：预测能力“前所未有”
+
+https://mp.weixin.qq.com/s/6wPtb9Qdhr9FiMk15xrUsQ
+
+强化跨模态匹配和自监督模仿学习
+
+https://mp.weixin.qq.com/s/lU3_ONAIGDUv_AVv2Xn14w
+
+仅需2小时学习，基于模型的强化学习方法可以在Atari上实现人类水平
+
 https://mp.weixin.qq.com/s/w0_g5FlC6vx2MRAhADPq2g
 
 深度强化学习在智能对话上的应用
@@ -332,39 +364,3 @@ https://mp.weixin.qq.com/s/cyaQt-SO7sgG49kuUyPJbQ
 https://mp.weixin.qq.com/s/curzH8WrFyl5WWT4lDfpwQ
 
 Chrome暗藏的恐龙跳一跳，已经被AI轻松掌握了
-
-https://mp.weixin.qq.com/s/1b3_AiFhwXqxb7FozdRYIQ
-
-最in强化学习+NLP技术分享会
-
-https://mp.weixin.qq.com/s/RKQb7-mQ-ELRRq18db02Pg
-
-DeepMind大突破！AI模拟大脑导航功能，学会像动物一样“抄近路”
-
-https://mp.weixin.qq.com/s/qBwszD9rn4gKazXdwqexSQ
-
-MIT提出使用“深度强化学习”帮助智能体在运动中做出“动作决策”
-
-https://mp.weixin.qq.com/s/i-udn1M4kiJpF8U7u5Uepg
-
-专家解读DeepMind最新论文：深度学习模型复现大脑网格细胞
-
-https://mp.weixin.qq.com/s/AS1VFjBFnSk19QJ28tBVWA
-
-NIPS 2017斯坦福赛题大公开：强化学习模拟人类肌肉骨骼模型
-
-https://mp.weixin.qq.com/s/TWjFWe6-dZWDoTi5gN1BxA
-
-深度强化学习在指代消解中的一种尝试
-
-https://mp.weixin.qq.com/s/YnMgJDAh3XhyyNdI8RXmtw
-
-腾讯知文等提出新型生成式摘要模型：结合主题信息和强化训练生成更优摘要
-
-https://mp.weixin.qq.com/s/VrVdsxn94ux_46mIyS8f0w
-
-谷歌大脑实现更宽广的智能体视野，在Atari2600上可持续超越人类玩家！
-
-https://mp.weixin.qq.com/s/P5EysBHBaR6L3IfeSgo6fw
-
-强化学习20分钟，剑桥博士教汽车学会自动驾驶！

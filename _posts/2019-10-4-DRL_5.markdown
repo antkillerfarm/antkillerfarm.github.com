@@ -1,13 +1,27 @@
 ---
 layout: post
-title:  深度强化学习（五）——OpenAI, AlphaGo（1）
+title:  深度强化学习（五）——Hierarchical RL, OpenAI, AlphaGo（1）
 category: DRL 
 ---
 
 * toc
 {:toc}
 
-# Hierarchical RL（续）
+# Hierarchical RL
+
+![](/images/img3/Montezuma.png)
+
+之前已经提到，在DeepMind测试的40多款游戏中，有那么几款游戏无论怎么训练，结果都是0，也就是DQN完全无效。上面就是其中最知名的代表游戏《Montezuma’s Revenge》。这是一个解谜游戏，比如图中要拿到钥匙，然后去开门。这对我们而言是通过先验知识得到的。但是很难想象计算机如何仅仅通过图像感知这些内容。感知不到，那么这种游戏也就无从解决。
+
+论文：
+
+《Hierarchical Deep Reinforcement Learning: Integrating Temporal Abstraction and Intrinsic Motivation》
+
+![](/images/img3/HRL.png)
+
+该论文的主要思路就是，弄一个两个层级的神经网络，顶层用于决策，确定下一步的目标，底层用于具体行为。 
+
+这里的内在目标是人工确定的，因此智能程度不高，但是比较实用。
 
 其他算法：
 
@@ -294,21 +308,3 @@ AlphaGo不是一个纯粹的DRL，它还是使用了人类棋谱的先验数据�
 由于很多人类的棋局都是因为中间偶然的失误导致了全盘覆灭（所谓“一着不慎满盘皆输”），其中的偶然性非常大，局部的优劣往往和棋局的最终结果无关，因此Value Network并没有用人类棋谱来训练。
 
 AlphaGo每更新一个“小版本”后，都要将这个版本和迄今最好的版本对比，如果新的版本胜率超过55%，才会用来取代以前最好的版本。这样做显然是为了防止AlphaGo自我博弈得“走火入魔”，陷入局部最优。
-
-## AlphaGo Zero
-
-论文：
-
-《Mastering the game of Go without human knowledge》
-
-![](/images/img3/AlphaGo_Zero.png)
-
-AlphaGo Zero对AlphaGo进行了全面提升：
-
-- input plane去掉了手工特征，基本全由历史信息组成。
-
-- Policy Network和Value Network不再是两个同构的独立网络，而是合并成了一个网络，只是该网络有两个输出——Policy Head和Value Head。
-
-- 骨干结构采用了Resnet，层数大大增加。
-
-- 完全采用自我博弈，去掉了人类棋谱。

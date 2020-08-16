@@ -205,7 +205,11 @@ https://mp.weixin.qq.com/s?__biz=MzA4MDExMDEyMw==&mid=2247487079&idx=1&sn=9d29f5
 
 https://mp.weixin.qq.com/s/UGAxJCgOwsBTHnecSouYWQ
 
-图灵奖得主、Unix之父39年前的密码终于被破解了！
+图灵奖得主、Unix之父Ken Thompson39年前的密码终于被破解了！
+
+https://mp.weixin.qq.com/s/ktiQhiIcNLJ7UUJvlyWlfg
+
+仅仅只花4天半就解开了史上最难密码，这下整个圈子都炸开了......
 
 https://www.zhihu.com/question/320728455/answer/658973076
 

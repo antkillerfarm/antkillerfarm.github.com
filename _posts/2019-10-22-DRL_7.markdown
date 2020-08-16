@@ -11,6 +11,26 @@ category: DRL
 
 ## 参考（续）
 
+https://mp.weixin.qq.com/s/qYWsFBKNCKCGUmizX_1sVg
+
+AlphaGo 教学工具终于上线了！
+
+https://mp.weixin.qq.com/s/JxbIeDk8_wnYu_ewUHp29g
+
+深度学习与围棋实战书籍《Deep Learning and the Game of Go》
+
+https://mp.weixin.qq.com/s/gsRnbknytz2FY2dWgdWEYg
+
+精通国际象棋的AI研究员：AlphaZero真的是一次突破吗？
+
+https://zhuanlan.zhihu.com/p/31809930
+
+浅述：从Minimax到AlphaZero，完全信息博弈之路（1）
+
+https://zhuanlan.zhihu.com/p/32073374
+
+浅述：从Minimax到AlphaZero，完全信息博弈之路（2）
+
 https://zhuanlan.zhihu.com/p/32089487
 
 AlphaZero实战：从零学下五子棋
@@ -319,35 +339,3 @@ https://zhuanlan.zhihu.com/p/29246185
 https://mp.weixin.qq.com/s/vA9cHv73iHgTy9Q_bk4KCw
 
 DeforGAN：用GAN实现星际争霸开全图外挂！
-
-https://mp.weixin.qq.com/s/x0G-LNCano7qjGdpj-fpCQ
-
-2017年度星际争霸AI竞赛结果出炉
-
-https://mp.weixin.qq.com/s/AndV-htPeTXlpAm1GONNtA
-
-中科院开源星际争霸2宏观运营研究数据集MSC
-
-https://mp.weixin.qq.com/s/I9gfoCxEYW5lSIy5QGyt6w
-
-2018星际AI大赛（2018.11）冠军诞生！一个个机器学习算法，都输给不会学习的韩国bot
-
-https://github.com/TeamSAIDA/SAIDA
-
-2018.11冠军SAIDA的github
-
-https://github.com/TorchCraft/TorchCraft
-
-2018.11亚军CherryPi的github
-
-https://github.com/bmnielsen/Locutus/
-
-2018.8冠军Locutus的github
-
-https://mp.weixin.qq.com/s/yAYF2i-Pr84RliKrJyPaUA
-
-伯克利星际争霸II AI“撞车”腾讯，作者：我们不一样
-
-https://mp.weixin.qq.com/s/uC8gi4kN_muRTwRL0RCZjQ
-
-要玩转这个星际争霸II开源AI，你只需要i5+GTX1050

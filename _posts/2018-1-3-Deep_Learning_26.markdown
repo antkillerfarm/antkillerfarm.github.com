@@ -249,6 +249,10 @@ https://mp.weixin.qq.com/s/FjoJA0gF4LgsB8hw24I0EQ
 
 华科白翔老师团队ECCV2018 OCR论文：Mask TextSpotter
 
+https://mp.weixin.qq.com/s/SulL2Y83xUlkv8qFbu6K7w
+
+Mask TextSpotter v3来了！最强端到端文本识别模型
+
 https://mp.weixin.qq.com/s/x-_fuVPgDYnle23IDsYCTw
 
 百度深度学习图像识别决赛代码分享
