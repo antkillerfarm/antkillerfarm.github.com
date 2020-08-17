@@ -1,66 +1,83 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
 <head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>{{ page.title }}</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>{{ page.title }}</title>
 
-   <!-- syntax highlighting CSS -->
-   <link rel="stylesheet" href="/css/pygments/pygments.css" type="text/css" />
+  <!-- syntax highlighting CSS -->
+  <link rel="stylesheet" href="/css/pygments/pygments.css" type="text/css" />
 
-   <!-- Homepage CSS -->
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+  <!-- Homepage CSS -->
+  <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
 
-	<!-- MathJax Section -->
+  <!-- MathJax Section -->
 
-	<script type="text/javascript"
-		src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-	<script>
-	MathJax.Hub.Config({
-		tex2jax: {
-			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-		},
-		"HTML-CSS": {
-		    minScaleAdjust: 130        // don't reduce font size to match surrounding font
-	    }
-	});
-	
-	MathJax.Hub.Queue(function() {
-		var all = MathJax.Hub.getAllJax(), i;
-		for(i=0; i < all.length; i += 1) {
-			all[i].SourceElement().parentNode.className += ' has-jax';
-		}
-	});
-	</script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 
-<!-- Typekit -->
+  <script>
+    window.MathJax = {
+      options: {
+        renderActions: {
+          findScript: [9, function (doc) {
+            for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {
+                node: text,
+                delim: '',
+                n: 0
+              };
+              math.end = {
+                node: text,
+                delim: '',
+                n: 0
+              };
+              doc.math.push(math);
+            }
+            doc.findMath();
+          }, '']
+        }
+      }
+    };
+  </script>
+
+  <!-- Typekit -->
 </head>
+
 <body>
 
 
-<div class="site">
-  <div class="title">
-    <a href="/">Antkillerfarm Hacking</a>
-    <a class="extra" href="/">home</a>
-    <a class="extra" href="/">ShareNotes</a>
-  </div>
- 
- {{ content }}
-
-<div class="footer">
-    <div class="contact">
-      <p>
-        Antkillerfarm<br />
-        antkillerfarm@sohu.com
-      </p>
+  <div class="site">
+    <div class="title">
+      <a href="/">Antkillerfarm Hacking</a>
+      <a class="extra" href="/">home</a>
+      <a class="extra" href="/">ShareNotes</a>
     </div>
-    <div class="contact">
-      <p>
-        <a href="http://github.com/antkillerfarm">github.com/antkillerfarm</a><br />
-      </p>
-    </div>
-</div>
 
-<a href="http://github.com/antkillerfarm"><img style="position: absolute; top: 0; right: 0; border: 0;" src="/images/forkme_right_red.png" alt="Fork me on GitHub" /></a>
+    {{ content }}
+
+    <div class="footer">
+      <div class="contact">
+        <p>
+          Antkillerfarm<br />
+          antkillerfarm@sohu.com
+        </p>
+      </div>
+      <div class="contact">
+        <p>
+          <a href="http://github.com/antkillerfarm">github.com/antkillerfarm</a><br />
+        </p>
+      </div>
+    </div>
+
+    <a href="http://github.com/antkillerfarm"><img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="/images/forkme_right_red.png" alt="Fork me on GitHub" /></a>
 
 </body>
+
 </html>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  小众语言集中营, Lua, Github显示数学公式
+title:  小众语言集中营, Github显示数学公式
 category: language 
 ---
 
@@ -17,7 +17,9 @@ category: language
 
 比如说这篇文章中提到的：
 
-http://imgtec.eetrend.com/blog/5317
+https://www.cnblogs.com/rosee-1224/p/5167878.html
+
+程序员思考、学习新技术的原则和方式
 
 “他的单位有一位写Ruby的老员工，一个庞大的工程，代码里面居然只有一个上帝类，就搞定了所有的问题。”
 
@@ -141,15 +143,27 @@ Mathjax与LaTex公式简介
 
 https://casual-effects.com/markdeep/
 
-示例如下：
+## MathJax v3
+
+MathJax v3和v2的接口发生了较大的变化，升级方法参见以下文件的git log。
+
+https://github.com/antkillerfarm/antkillerfarm.github.com/blob/master/_layouts/default.html
+
+参考：
+
+https://chrisyeh96.github.io/2020/03/29/mathjax3.html
+
+Painful Upgrade to MathJax 3
+
+## 示例
 
 $$
 \vec{p}(t)=\vec{o} + t\vec{d}
 $$
 
-`\[
+\\[
 (x-o_x)^2+(x-o_y)^2+(x-o_z)^2-R^2=0
-\]`
+\\]
 
 $$A\xrightarrow[\alpha]{\beta}B$$
 
@@ -167,6 +181,8 @@ $$\text{vxRPNLayer}\left\{
 $$\sum\limits_{k=1}^KG_t = \sum\nolimits_{k=1}^KG_t$$
 
 $$\angle APB=\angle BPC=\angle CPA=120^{\circ}$$
+
+$$A\xrightarrow{\enclose{circle}{j}+\enclose{circle}{i}k}B$$
 
 ## 注意
 
