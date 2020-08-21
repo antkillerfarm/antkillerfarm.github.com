@@ -305,6 +305,10 @@ https://mp.weixin.qq.com/s/A9bSp3H3UzAEgL4N7o1KpQ
 
 使用tensorflow进行音乐类型的分类
 
+https://mp.weixin.qq.com/s/j9Kis3AsyYjo3EYOJ6XzBA
+
+端到端声源分离研究：现状、进展和未来
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw
@@ -370,19 +374,3 @@ https://mp.weixin.qq.com/s/1glxeUx-4DCWRjJQMW7IiQ
 https://mp.weixin.qq.com/s/c1QSGia52ICTc25i-C91Rg
 
 GAN跨界合成高保真音乐，Jeff Dean听了都陶醉
-
-https://mp.weixin.qq.com/s/f1W7PFLwkoJtVXb_7Rh3sw
-
-极大提升合成速度，百度提出首个全并行语音合成模型ParaNet
-
-https://mp.weixin.qq.com/s/aHupAjPNFdUdaG9Uof_obQ
-
-速度提升270倍！微软和浙大联合推出全新语音合成系统FastSpeech
-
-https://mp.weixin.qq.com/s/gaoZ6pQmiXBP3BNDec1nQg
-
-FastSpeech语音合成系统技术升级，微软联合浙大提出FastSpeech2
-
-https://mp.weixin.qq.com/s/JEYucJ16Zsxc6yWHPHGaZA
-
-浙大研发AudioFace：随心录语音就能实时生成3D面部动画

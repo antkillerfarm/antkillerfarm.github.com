@@ -141,6 +141,10 @@ https://mp.weixin.qq.com/s/uDwX0iq9RWs1sK1ct0tiCg
 
 浅谈Node.js在携程的应用
 
+https://mp.weixin.qq.com/s/L4Vq7BhjuAw7WBY7sV2ICw
+
+有意思的Node.js内存泄漏问题（JS虚拟机）
+
 ## NPM
 
 npm是node.js的软件包管理工具。它的官网是：
@@ -307,40 +311,64 @@ https://www.zhihu.com/question/21775016
 
 网页布局都有哪种？一般都用什么布局？
 
-# 动画
+# Traffic Demo
 
-HTML动画一般有三种实现方式：
+2019.9
 
-1.JS。JS脚本通过动态改变HTML、CSS的内容来实现动画效果。这种方式功能全面，且可在旧版本浏览器中执行。
+最近心血来潮，翻出了本科时代的作业。其中有一个交通仿真的小demo，最早是用Java Applet写的。岂料，现在别说浏览器了，就连专门看这个的AppletViewer在新版SDK中，都不见踪影了。。。
 
-2.CSS3。CSS3引入了一些动画属性，它由浏览器直接解释执行，执行效率很高（可利用硬件加速），但需要浏览器本身支持CSS3。并且，有些复杂的动画，可能会超出CSS3的能力范围，这时不可避免的还是会用到JS。
+于是，只好做现代化移植。本来首选JavaFX的，不料刚开始写，就发现JavaFX对于多线程渲染做的很差，而这个Demo正是个多线程的版本。
 
-3.Web Animation API。为了解决CSS3的问题，2014年Google又提出了Web Animation API。这套API让JS拥有了不逊于CSS3的性能。
+反正都要大改，还不如直接移植到js上，连编译都省了。
 
-## Animate.css
+原始版本：
 
-Animate.css是Daniel Eden使用CSS3的animation制作的动画效果的CSS集合。其官网是：
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/java/trafic
 
-http://daneden.github.io/animate.css/
+新版本：
 
-教程：
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/traffic
 
-http://www.dowebok.com/98.html
+众所周知，js是单线程的，所以这个版本也是单线程的，逻辑稍微复杂了一些。
 
-animate.css–齐全的CSS3动画库
+# WebAssembly
 
-## Step1：事件触发动画
+WebAssembly，简称Wasm，是一种能在浏览器上执行的二进制虚拟机字节码。
 
-网上的CSS动画例子，多数是加载网页时直接触发（这种最简单），少部分是鼠标移动到控件上时触发（这种方式主要使用了:hover选择器）。
+官网：
 
-这里介绍一下，click事件触发动画的机制。示例代码：
+https://webassembly.org/
 
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/hello/super_button.html
+参考：
 
-1.在sb.css中，自定义按钮旋转动画的样式rotate_mill。
+https://www.ibm.com/developerworks/cn/web/wa-lo-webassembly-status-and-reality/index.html
 
-2.在click事件处理函数中，使用addClass函数，将rotate_mill应用到控件上，就可以触发动画效果。
+WebAssembly现状与实战
 
-3.动画结束时，会触发AnimationEnd事件。在该事件处理函数中，使用removeClass函数，去掉rotate_mill样式，以恢复原状。否则，下次click时，由于样式没变化，就不会触发动画效果了。
+https://www.jianshu.com/p/bff8aa23fe4d
 
-4.和AnimationEnd类似的事件，还有AnimationIteration和AnimationStart。
+几张图让你看懂WebAssembly
+
+https://www.zhihu.com/question/31415286
+
+如何评论浏览器最新的WebAssembly字节码技术？
+
+https://mp.weixin.qq.com/s/LRGNOuFwHXALs_lhPyN3Zw
+
+爱奇艺直播WebAssembly优化之路
+
+https://mp.weixin.qq.com/s/I0grz0IfFZo98sfaCNh-Vw
+
+可能是世界上最简单的用Go来写WebAssembly的教程
+
+https://mp.weixin.qq.com/s/yTebereUkcyvwJbLssZjPQ
+
+5分钟看懂WebAssembly
+
+----
+
+V8开发者Vyacheslav Egorov和Mozilla Hacks之间的source-map之战了。对于同一份source-map库的JS代码，Vyacheslav所魔改出的纯JS版本，其性能一举反超了Mozilla重写的Rust版。
+
+https://www.zhihu.com/question/402807137/answer/1322391162
+
+有没有让JavaScript在JS引擎上稳定、更快运行的Style Guide?

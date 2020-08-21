@@ -283,6 +283,26 @@ learning to match for product search
 
 # 人脸检测/识别+
 
+https://mp.weixin.qq.com/s/PsToV8Z17tRzXW_AbaMNmg
+
+Blazeface人脸检测器
+
+https://mp.weixin.qq.com/s/5ANMZNaR2ayYMUQEJ6aM3w
+
+人脸识别基于通用表示学习
+
+https://mp.weixin.qq.com/s/jrynQZgoljFi6zdVKWo5nw
+
+在浏览器中实现AR试妆
+
+https://mp.weixin.qq.com/s/lr9OVNiIN0x7k4cmNZoCUw
+
+用于人脸检测的SSH算法
+
+https://mp.weixin.qq.com/s/A5-Z6APwS1iFCUgYxtYNyA
+
+重磅！GroupFace人脸识别，刷新9个数据集SOTA
+
 https://mp.weixin.qq.com/s/-VknGwKKY14cT-lZ7sC43A
 
 人脸识别--基于深度学习以人类为中心的图像理解

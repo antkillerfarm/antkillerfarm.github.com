@@ -299,6 +299,10 @@ https://blog.csdn.net/tonygsw/article/details/81280364
 
 因果卷积（causal）与扩展卷积（dilated）
 
+https://zhuanlan.zhihu.com/p/161667958
+
+NLP模型也能用来解决时间序列问题？WaveNet详解
+
 ## WaveRNN
 
 WaveRNN是WaveNet的升级版。

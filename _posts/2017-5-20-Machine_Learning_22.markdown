@@ -79,6 +79,10 @@ https://mp.weixin.qq.com/s/gw3hoDSaojVQUiD6YsMabA
 
 理解神经网络中的目标函数
 
+https://mp.weixin.qq.com/s/l0FRj78M73vQGqppNSyBwQ
+
+深度学习常用损失函数总览：基本形式、原理、特点
+
 https://mp.weixin.qq.com/s/h-QbwEbaivvHjdhDhE4V1A
 
 如何为单变量模型选择最佳的回归函数

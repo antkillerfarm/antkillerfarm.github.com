@@ -1,15 +1,33 @@
 ---
 layout: post
-title:  机器学习（十八）——独立成分分析, 度量学习, 压缩感知
+title:  机器学习（十八）——独立成分分析, 压缩感知
 category: ML 
 ---
 
 * toc
 {:toc}
 
-# 主成分分析
+# 主成分分析（续）
 
-## Other（续）
+## Other
+
+常见的降维算法还有：
+
+https://www.cnblogs.com/lochan/p/6627511.html
+
+数据降维之多维缩放MDS（Multiple Dimensional Scaling）
+
+https://mp.weixin.qq.com/s/cfeILnMsWlMC_T6lcSEW7A
+
+图像降维之MDS特征抽取方法
+
+https://mp.weixin.qq.com/s/C-tZRvHKcpO5jQArZi_GQA
+
+数据降维算法-从PCA到LargeVis
+
+https://mp.weixin.qq.com/s/HGBB1RLr5eux9xLtXJpokg
+
+哈工大硕士生用Python实现了11种经典数据降维算法，源代码库已开放
 
 PCA还可用于升维：
 
@@ -174,30 +192,6 @@ $$\nabla_W\ell(W)=\begin{bmatrix}
 最后，用通常的随机梯度上升算法，求得$$\ell(W)$$的最大值即可。
 
 >注意：我们计算最大似然估计时,假设了$$x^{(i)}$$和$$x^{(j)}$$之间是独立的，然而对于语音信号或者其他具有时间连续依赖特性(比如温度)上，这个假设不能成立。但是在数据足够多时，假设独立对效果影响不大。
-
-# 度量学习
-
-度量学习（Metric Learning）是机器学习里面的一个研究方向，主要是用来度量数据间距离。
-
-一般来说，对于可度量的数据，我们可以直接通过欧式距离，cosine等方法来做。但对于更广泛的数据我们就很难这样操作，如测量一个视频和一首音乐的距离。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/80656461
-
-Metric Learning科普文
-
-https://mp.weixin.qq.com/s/mvbyddpgxBFQSxC1zZZmFw
-
-如何通过距离度量学习解决Street-to-Shop问题
-
-https://mp.weixin.qq.com/s/iuOmxW0OAhSA7xSoIIn1dw
-
-鲁继文：面向视觉内容理解的深度度量学习
-
-https://zhuanlan.zhihu.com/p/100553403
-
-Deep Metric Learning及其形式
 
 # 压缩感知
 

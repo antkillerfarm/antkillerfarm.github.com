@@ -299,11 +299,3 @@ https://mp.weixin.qq.com/s/onN61A13xuJzNk9zE0hM-w
 https://mp.weixin.qq.com/s/rqIZSX-zRNQ3uyae3LlnZQ
 
 树莓派也能实时训练agent玩Atari
-
-https://mp.weixin.qq.com/s/pPTaxiCOTL_Y89TuKGHQmg
-
-微软放弃的游戏被他们复活了：Windows经典“三维弹球”现实版，CAD建模、Arduino编程、数控机床打造，硬核致敬童年
-
-https://mp.weixin.qq.com/s/mgdDjjIJX4y1-DXzazDhPA
-
-不会编程的外国小姐姐，3天、850块，徒手用树莓派DIY了个数码相机

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  区块链参考资源, 传感器
+title:  区块链参考资源
 category: resource 
 ---
 
@@ -267,132 +267,76 @@ https://mp.weixin.qq.com/s/DGx3Y3cu00QN-p-AjkNx7g
 
 深入剖析实现比特币减半的十五行代码
 
-# 传感器
+https://mp.weixin.qq.com/s/rlTJVV0PXjII2YJYENlwlw
 
-这里主要讨论自动驾驶方面的传感器，但也包括了一些非自动驾驶类的传感器知识。
+数字人民币官宣内测，双离线支付 “碰一碰”完成 转账！四个城市抢先试点！
 
-## 激光雷达
+# 数学杂谈++
 
-https://mp.weixin.qq.com/s/biiTHllmpsKSgMiaZbBYrQ
+https://mp.weixin.qq.com/s/_uu1dFzSC257vKS4mPjVfg
 
-激光雷达科普文
+父子反目，遭亲爹打压数年，数学第一家族中最憋屈的科学家（Daniel Bernoull）
 
-https://mp.weixin.qq.com/s/4HNaS8Dpi9pcPzE_nN-BvA
+https://mp.weixin.qq.com/s/1Rmdfv4VTIteEPZV-MVJLA
 
-全球12家顶级激光雷达公司解读：谁有机会撼动Velodyne
+17世纪的鼠疫与疫区的牛顿
 
-https://mp.weixin.qq.com/s/Ef6aWgs9xkHaAwTX4rxjKA
+https://zhuanlan.zhihu.com/p/109768913
 
-用激光雷达感知世界
+来自表情包的一道极限计算题
 
-https://mp.weixin.qq.com/s/mlwDZ1DUDbHIn4hQvkumAw
+https://mp.weixin.qq.com/s/9dphMMCaTRtJ-HtbygOP7w
 
-自动驾驶感知神器——激光雷达概述
+从青年欧拉对巴塞尔问题的解法说起
 
-https://mp.weixin.qq.com/s/hVhutvHeXsZOvJZfG1xaFw
+https://mp.weixin.qq.com/s/68K3L_pD7xfobr_jA1QgWA
 
-自动驾驶车载激光雷达技术现状分析
+陈景润究竟为证明哥德巴赫猜想做出了哪些贡献？
 
-https://mp.weixin.qq.com/s/zX2Jy5a32AVnhOUeLgS_wA
+https://mp.weixin.qq.com/s/HKe_rY9OgwFFc3JH8luokw
 
-摄像头、雷达、激光雷达——自动驾驶几大传感器系统大揭秘
+数学编年史：数学的起源与发展历程
 
-https://mp.weixin.qq.com/s/ecqeQdOo3xUV-PvL_T48eA
+https://mp.weixin.qq.com/s/rM78u0bF2bqI7eQ4t6lxpw
 
-一文读懂三角法和TOF激光雷达
+国内奇葩小学数学题横扫推特，老外被难哭了
 
-https://mp.weixin.qq.com/s/kO5yy7x0r3LhttBhLVpT5w
+https://mp.weixin.qq.com/s/SV3A5tFtZyWgTVXW-1s74w
 
-固态激光雷达研究进展
+数学，原来可以这么美！
 
-https://mp.weixin.qq.com/s/1MAb4tZfY4qQPaodo3xHoA
+https://mp.weixin.qq.com/s/xVzLUDmDlnzyGtbReoHDuQ
 
-激光雷达原理
+曾被无视多年，却成就19世纪最伟大的一场革命，影响了整个世界！（非欧几何）
 
-https://mp.weixin.qq.com/s/4zW8ZW90v6pLYb6B8RurMg
+https://mp.weixin.qq.com/s/LOI2HeWgmjlAqnwHS0vh9Q
 
-聊传感器激光雷达
+最强科研寺庙！北大、清华博士为什么跑到这？北大神童：出国不如出家！
 
-## 参考
+https://mp.weixin.qq.com/s/0NKhNt6nFDZCcjHE_njnpw
 
-https://mp.weixin.qq.com/s/Ee18sjKXNGMowKwqLB0jVg
+图G上的随机游走：如何用数学方法估算一个女生前男友的数量？
 
-给自动驾驶一双"通天眼"——环境感知器篇
+https://mp.weixin.qq.com/s/NMIyXOZkAqbt-YTz94TMug
 
-https://mp.weixin.qq.com/s/dusPUCjKUzhfmTRhzXte-A
+超励志！美国囚犯发现数论新规律，堪比大数学家！带着其他囚犯学数学
 
-新的图像传感器给汽车装上眼睛
+https://mp.weixin.qq.com/s/H1fvyQYRFcOe0pqclD-3yg
 
-https://mp.weixin.qq.com/s/45xNWa_32DAsKdlfYY_QfA
+“最大数之父”葛立恒逝世，他是20世纪数学巨匠，也是一个杂技演员
 
-Uber自动驾驶撞死行人视频公布：无人车环境感知解决方案该如何优化？
+https://mp.weixin.qq.com/s/rXbP1dvFmwl6QhVCDMr2Bw
 
-https://mp.weixin.qq.com/s/VBpOwGrTPs0nlmTyXvqDwA
+神童、数学家、抑郁症患者，控制论之父诺伯特·维纳的一生
 
-为什么只用摄像头和光学雷达是不够的：我们能从Uber的自动驾驶车致死事件中学到什么
+https://mp.weixin.qq.com/s/htCZU2de_7CCcL1q4v-NGg
 
-https://mp.weixin.qq.com/s/WiS-iJHA1zoIyb1cvKiuZQ
+比肩爱因斯坦的天才：如果再给他一次机会，他可能不会再熬夜了......（麦克斯韦）
 
-自动驾驶传感器“一哥之争”，这事儿你怎么看？
+https://mp.weixin.qq.com/s/BCszlYgbgvKUSkpJCSRQxg
 
-https://mp.weixin.qq.com/s/WWm1tkCXVJgdlVbsXCTYIg
+电影院今天复工，应该如何排座位？这是个数学家研究了几百年的问题
 
-自动驾驶汽车硬件系统概述
+https://mp.weixin.qq.com/s/R0nuIqlIefkEppr07Y8gnQ
 
-https://mp.weixin.qq.com/s/C77q2LEA-lMEabtsO30LxQ
-
-自动驾驶需要几个camera
-
-https://mp.weixin.qq.com/s/2-PB-5tTNeGPLPHQBdRwBA
-
-40张动态图详解全部传感器工作原理
-
-https://mp.weixin.qq.com/s/oCEeIM_DhmQ67zT_KLVb7Q
-
-Face ID与3D传感技术科普
-
-https://blog.csdn.net/carson2005/article/details/72972414
-
-光纤陀螺简介
-
-https://mp.weixin.qq.com/s/ZRakGZWXlQaUgtMfe2c2aw
-
-不要轻易碰我，不然我就知道你有多软了
-
->鲍哲南，女，1970年生，芝加哥大学博士（1995）。现为Stanford教授，美国工程院院士。
-
-https://mp.weixin.qq.com/s/NwptdxWiN4SadjUQafA5rw
-
-高端MEMS固体波动陀螺的发展与应用
-
-https://blog.csdn.net/richard_liujh/article/details/49615395
-
-光学心率测量原理
-
-https://mp.weixin.qq.com/s/NrNojDc9gEU3F_GybKA67Q
-
-三大屏下指纹技术方案对比
-
-https://mp.weixin.qq.com/s/g5VKcxcp6QWesfegcU_GuQ
-
-手机指纹解锁和密码解锁，哪个更安全？
-
-https://mp.weixin.qq.com/s/2TKkoWZcYVVvlEKvA6iNyA
-
-近年值得关注的新兴MEMS和传感器技术
-
-https://mp.weixin.qq.com/s/elSezCSBPnuEqOFmHACLVg
-
-24GHz雷达的应用案例
-
-https://mp.weixin.qq.com/s/SgUcLH3kfRVha661PLyMeg
-
-体声波(BAW)是什么？
-
-https://mp.weixin.qq.com/s/FohJ81sPT_Zk7s1qLuP1-A
-
-动态视觉传感器（DVS）：高级自动驾驶的“超眼”
-
-https://mp.weixin.qq.com/s/ya-CHw572C2nnk8XraEMqQ
-
-功率半导体器件现状及未来
+用一中学数学公式，中了14次彩票头奖，多国彩票规则因他改变

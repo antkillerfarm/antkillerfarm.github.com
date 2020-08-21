@@ -163,6 +163,10 @@ https://mp.weixin.qq.com/s/dibf3bU4hQ7nXTPGMFsKbg
 
 GPT-3王者来袭！1750亿参数少样本无需微调，网友：“调参侠”都没的当了
 
+https://mp.weixin.qq.com/s/aPA0PEqVn509u3xbgmhIwQ
+
+一天star量破千，300行代码，特斯拉AI总监Karpathy写了个GPT的Pytorch训练库
+
 # ERNIE
 
 ERNIE是百度2019年提出的。

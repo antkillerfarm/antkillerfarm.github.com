@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Zigbee音频, 6LowPAN, 各种智能家居通信技术比较, 边缘计算, Autoware
+title:  Zigbee音频, 6LowPAN, 各种智能家居通信技术比较, 边缘计算
 category: technology 
 ---
 
@@ -246,68 +246,16 @@ https://mp.weixin.qq.com/s/eXRy9kZqDlph96BdWwWwXQ
 
 49页ppt，Edge Computing for Infrastructure
 
-# Autoware
+# Raspberry Pi+
 
-Autoware是另一个开源的无人驾驶平台。不像Apollo，没有百度这样的强势公司的介入，社区氛围更浓一些，相对的，功能也要弱一些。
+https://mp.weixin.qq.com/s/pPTaxiCOTL_Y89TuKGHQmg
 
-官网：
+微软放弃的游戏被他们复活了：Windows经典“三维弹球”现实版，CAD建模、Arduino编程、数控机床打造，硬核致敬童年
 
-https://www.autoware.org/
+https://mp.weixin.qq.com/s/mgdDjjIJX4y1-DXzazDhPA
 
-主要由一下组件构成：
+不会编程的外国小姐姐，3天、850块，徒手用树莓派DIY了个数码相机
 
-- autoware.ai
+https://mp.weixin.qq.com/s/rM3SkUiQIxsGz9MNIg1skQ
 
-https://www.autoware.ai/
-
-这个组件基于ROS 1.0，是目前的方案。
-
-- autoware.auto
-
-https://www.autoware.auto/
-
-这个组件基于ROS 2.0，是面向未来的方案。
-
-- autoware.io
-
-https://www.autoware.io/
-
-autoware提供的模拟器。
-
-代码仓库：
-
-https://gitlab.com/autowarefoundation/autoware.ai
-
-# 传感器+
-
-https://mp.weixin.qq.com/s/bNhd7owOIdCdzO2xOtBMRw
-
-谈谈超结功率半导体器件
-
-https://mp.weixin.qq.com/s/0K595c2GdhPrdWBgpvU-Gw
-
-超声波雷达在汽车上的应用
-
-https://mp.weixin.qq.com/s/j0-Lj8lOyDP0RArB7NzUNw
-
-特斯拉的整车传感器配置方案
-
-https://mp.weixin.qq.com/s/WIjbYMvMis-YBr_ev_wjmQ
-
-霍尔元件及其应用
-
-https://mp.weixin.qq.com/s/vbTR1A0rgzCQY8XG70SNPQ
-
-了不起的MEMS发明人
-
-https://mp.weixin.qq.com/s/ns8riNkUILB-y07VMtGhSw
-
-MEMS培训讲义
-
-https://mp.weixin.qq.com/s/gHvvMG7D_W0M2RFntyRaDw
-
-车载抬头显示AR HUD成像技术大解密
-
-https://mp.weixin.qq.com/s/qOnMNbA9C7bcwZ6IvOxyCA
-
-一组动图看懂3D打印原理
+用树莓派DIY波士顿机器狗，帮你省下50万：教程开源，人人皆可上手

@@ -93,6 +93,10 @@ https://mp.weixin.qq.com/s/_T-UP5aU88MfkSTUGBa-TQ
 
 使用注意力机制来做医学图像分割的解释和Pytorch实现
 
+https://zhuanlan.zhihu.com/p/159173338
+
+FCN、Unet、Unet++医学图像分割那点事儿
+
 # 语义分割进阶
 
 https://mp.weixin.qq.com/s/_q8N8keNpcD-jXLrRd_8dw
@@ -366,3 +370,7 @@ CondInst：沈春华团队新作，将条件卷积引入实例分割
 https://mp.weixin.qq.com/s/xk8OdEWNuydxEtyQNOgCaQ
 
 语义分割的落地应用-故障检测与异常检测
+
+https://mp.weixin.qq.com/s/gn3ETYW2TCsgV31Jz3Wxqw
+
+OCRNet化解语义分割上下文信息缺失难题

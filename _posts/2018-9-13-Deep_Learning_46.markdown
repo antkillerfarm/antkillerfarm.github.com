@@ -185,6 +185,10 @@ https://mp.weixin.qq.com/s/x-HE-86T5SK6Y_SVX_ZJBA
 
 使用神经网络提取PDF表格工具来了，支持图片
 
+https://mp.weixin.qq.com/s/4lRwiR-3devARVX1rQLzEQ
+
+文档智能：通用文档预训练模型与数据集，推动NLP落地升级
+
 # AutoDL++
 
 https://mp.weixin.qq.com/s/ClqOWx1RJGzoS0akI2s93w

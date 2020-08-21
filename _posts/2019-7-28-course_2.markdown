@@ -125,6 +125,10 @@ https://cseweb.ucsd.edu/~mkchandraker/teaching.html
 
 UCSD的Manmohan Chandraker的CV课程
 
+https://mp.weixin.qq.com/s/E-1Anh9aEz9v7WiFu0mPpQ
+
+机器学习信号处理，100页ppt
+
 # English
 
 SOTA(state of the art)：目前最高水平

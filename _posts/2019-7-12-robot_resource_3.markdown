@@ -404,19 +404,3 @@ GTA 5真香！哦不，我在用深度学习做自动驾驶
 https://mp.weixin.qq.com/s/Ri51M3xkk2qVUoC9Z4OmGA
 
 自动驾驶中的交通标志识别原理及控制应用
-
-https://mp.weixin.qq.com/s/3OTsr7P7Gyg5XG0Tb86lEQ
-
-谷俊丽：一万字解答ADAS系统的今天和未来
-
-https://mp.weixin.qq.com/s/1nAR-hWWljsYoVKVwqjtdw
-
-自动驾驶规划方法综述
-
-https://mp.weixin.qq.com/s/5wnZeFp4Fv2Vf3ouu0iDkw
-
-万字综述交通流仿真
-
-https://zhuanlan.zhihu.com/p/143439775
-
-强化学习自主导航

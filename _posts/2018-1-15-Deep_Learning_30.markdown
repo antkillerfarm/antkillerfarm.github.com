@@ -57,11 +57,11 @@ https://mp.weixin.qq.com/s/OV-rXGU8DTNqv3QZcKo00Q
 
 Graph Learning
 
-https://mp.weixin.qq.com/s/2SaBiMJzhSRw1G0giL9TAw
+https://zhuanlan.zhihu.com/p/132497231
 
 深入理解图注意力机制
 
-https://zhuanlan.zhihu.com/p/132497231
+https://zhuanlan.zhihu.com/p/57168713
 
 深入理解图注意力机制
 

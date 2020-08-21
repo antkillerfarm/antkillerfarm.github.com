@@ -275,9 +275,13 @@ http://www.uta.edu/faculty/rcli/TopTen/topten.pdf
 
 http://blog.csdn.net/v_JULY_v/article/details/6127953
 
+细数二十世纪最伟大的10大算法
+
 类似的，还有奥地利符号计算研究所（Research Institute for Symbolic Computation，简称RISC）的Christoph Koutschan博士，针对计算机科学家所做的调查，选出的最重要的32个算法：
 
 https://mp.weixin.qq.com/s/AFTaowkCz1pfFzaMDen-RA
+
+计算机科学中最重要的32个算法
 
 # 双曲函数和悬链线
 

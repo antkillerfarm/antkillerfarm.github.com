@@ -297,19 +297,3 @@ $$X_{n\times m}\approx U_{n\times k}Y_{k\times m}$$
 ## PCA和特征选择的区别
 
 两者虽然都是降维算法，但特征选择是在原有的n个特征中选择k个特征，而PCA是重建k个新的特征。
-
-## Other
-
-常见的降维算法还有：
-
-https://www.cnblogs.com/lochan/p/6627511.html
-
-数据降维之多维缩放MDS（Multiple Dimensional Scaling）
-
-https://mp.weixin.qq.com/s/cfeILnMsWlMC_T6lcSEW7A
-
-图像降维之MDS特征抽取方法
-
-https://mp.weixin.qq.com/s/C-tZRvHKcpO5jQArZi_GQA
-
-数据降维算法-从PCA到LargeVis

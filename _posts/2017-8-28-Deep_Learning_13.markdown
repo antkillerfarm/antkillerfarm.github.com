@@ -175,6 +175,10 @@ https://mp.weixin.qq.com/s/J4opJ6NvbTxbHWAWNHEltw
 
 自然语言处理中CNN模型几种常见的Max Pooling操作
 
+https://mp.weixin.qq.com/s/KGFsMl3X52_T50h7Bhk65w
+
+CNN一定需要池化层吗？
+
 # Regularization
 
 DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：
@@ -330,6 +334,10 @@ https://mp.weixin.qq.com/s/MSzojHCW8WPFNyF3aM1l2w
 https://zhuanlan.zhihu.com/p/162980539
 
 2018年kdd阿里召回系统tdm读后感
+
+https://mp.weixin.qq.com/s/Hsw_IbphFotR-Q89wKpMXQ
+
+Embedding在腾讯应用宝的推荐实践
 
 # 行人重识别+
 

@@ -388,3 +388,7 @@ https://mp.weixin.qq.com/s/WVPgLXN7KZueNbmfTJNhDA
 https://zhuanlan.zhihu.com/p/148951213
 
 Item-CF的几种优化方式
+
+https://mp.weixin.qq.com/s/sDG5xm1JZ8rIEaVXeVQ5cA
+
+主流推荐引擎技术及优缺点分析

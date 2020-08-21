@@ -59,6 +59,14 @@ https://movie.douban.com/review/8439855/
 
 ----
 
+古生物学中，A ⊂ A-formes ⊂ A-morpha算是通则：
+
+主龙类（Archosauria） ⊂ 主龙形类（Archosauriformes） ⊂ 主龙形态类（Archosauromorpha）
+
+哺乳类（Mammalia） ⊂ 哺乳形类（Mammaliaformes） ⊂ 哺乳形态类（Mammaliamorpha）
+
+----
+
 https://zhuanlan.zhihu.com/p/43472599
 
 为什么现在的动物不如恐龙那样巨大？

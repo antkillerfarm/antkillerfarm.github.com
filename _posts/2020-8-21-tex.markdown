@@ -1,0 +1,297 @@
+---
+layout: post
+title:  Github显示数学公式
+category: language 
+---
+
+* toc
+{:toc}
+
+# Github显示数学公式
+
+这里主要用到了LaTeX和MathJax。
+
+LaTeX是TeX的扩展包，用于书写数学公式。它的官网是：
+
+http://www.latex-project.org/
+
+MathJax是一个JavaScript包，可以将LaTeX书写的数学公式转换成HTML。它的官网是：
+
+https://www.mathjax.org/
+
+源代码地址：
+
+https://github.com/mathjax/MathJax
+
+如果官网的网速不好的话，还可采用以下CDN地址：
+
+http://cdn.bootcss.com/mathjax/2.4.0/MathJax.js
+
+一般而言，从一个巨大的符号表中查询所需要的特定符号是一件令人沮丧的事情。在此向大家介绍一个LATEX手写符号识别系统：
+
+http://detexify.kirelabs.org/classify.html
+
+LaTeX和MathJax联合使用的方法参见：
+
+http://www.cnblogs.com/linxd/p/4955530.html
+
+Mathjax与LaTex公式简介
+
+http://3iter.com/2015/10/14/Mathjax%E4%B8%8ELaTex%E5%85%AC%E5%BC%8F%E7%AE%80%E4%BB%8B/
+
+Mathjax与LaTex公式简介
+
+如果在Vscode下编辑Markdown和Latex的话，可以使用`Markdown All in One`插件。
+
+如果是其他编辑器的话，推荐使用：
+
+https://casual-effects.com/markdeep/
+
+## MathJax v3
+
+MathJax v3和v2的接口发生了较大的变化，升级方法参见以下文件的git log。
+
+https://github.com/antkillerfarm/antkillerfarm.github.com/blob/master/_layouts/default.html
+
+参考：
+
+https://chrisyeh96.github.io/2020/03/29/mathjax3.html
+
+Painful Upgrade to MathJax 3
+
+## 示例
+
+$$
+\vec{p}(t)=\vec{o} + t\vec{d}
+$$
+
+\\[
+(x-o_x)^2+(x-o_y)^2+(x-o_z)^2-R^2=0
+\\]
+
+$$A\xrightarrow[\alpha]{\beta}B$$
+
+$$\text{vxRPNLayer}\left\{ 
+\begin{array}{l}
+\begin{aligned}
+\text{softmax} &  \left\{ \begin{aligned}\text{background scores} \\ \text{foreground scores}\end{aligned} \right.
+\end{aligned}  \hfill \\
+\left.\begin{aligned}\text{proposal}  & \Rightarrow \color{red}{\text{axis_aligned_bbox_transform}}\\
+\text{sort} \\
+\text{nms} & \left\{ \begin{aligned} \Rightarrow  & \color{red}{\text{detection_postprocess(hard nms)}} \\ \Rightarrow & \color{red}{\text{box_with_nms_limit(soft nms)}}\end{aligned} \right. \\
+\text{retrieve}\end{aligned}\right\} \Rightarrow  \color{red}{\text{generate_proposals}}
+\end{array} \right.$$
+
+$$\sum\limits_{k=1}^KG_t = \sum\nolimits_{k=1}^KG_t$$
+
+$$\angle APB=\angle BPC=\angle CPA=120^{\circ}$$
+
+$$A\xrightarrow{\enclose{circle}{j}+\enclose{circle}{i}k}B$$
+
+## 注意
+
+绝对值符号虽然键盘上有这个键，但由于和Markdown的表格功能有冲突，需要采用\mid、\vert、\lvert、\rvert替代之。
+
+微分符号$$\rm{d}$$要用正体：\mathrm{d}或\rm{d}。
+
+偏微分符号$$\partial$$：\partial
+
+空格：\<space>，<space>表示键盘上的空格键。
+
+维基百科中出现的公式，可以在编辑界面中获得TeX代码。
+
+## \mathop
+
+$$\mathop{\arg\min}_{\theta,\theta_\Delta}$$
+
+$${\arg\min}_{\theta,\theta_\Delta}$$
+
+$$\arg\min_{\theta,\theta_\Delta}$$
+
+## CTAN
+
+CTAN是tex包的一个集中资源站，类似于perl的CPAN。
+
+官网：
+
+https://ctan.org/
+
+Tex/Latex的历史非常悠久，多数基本包都诞生于90年代中期之前，此后的十几年进入了一个沉闷期，发展很缓慢，有些包也年久失修了。最近这些年，随着科研人群的增加，一些明星包尤其是Tikz/Beamer的 更新逐渐变得活跃。当然也少不了github的功劳，其他代码托管的网站太难用了，包括十年前的标杆——sourceforge。
+
+## tlmgr
+
+tlmgr是texlive提供的包管理器。
+
+`tlmgr install <package>`
+
+## TikZ
+
+TikZ是PGF（portable graphics format）提供的用户层API，主要用于绘图。TikZ ist kein Zeichenprogram(TikZ is not a drawing program)。
+
+官网：
+
+https://pgf-tikz.github.io/
+
+代码：
+
+https://github.com/pgf-tikz/pgf
+
+官方文档：
+
+https://pgf-tikz.github.io/pgf/pgfmanual.pdf
+
+安装：
+
+`sudo apt install qtikz texlive-fonts-recommended texlive-xetex texlive-lang-chinese`
+
+此外，ubuntu上还有一个叫做texdoctk的程序，可以查看各种tex包的用户手册。
+
+在线编辑：
+
+https://www.sharelatex.com/
+
+代码示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/tikz
+
+由于qtikz对于某些包支持的不好，我也不知道该怎样配置，因此采用了原始的命令行方式：
+
+`pdflatex xxx.tex`
+
+`evince xxx.pdf`
+
+>有的时候，会报没有`.aux`的错误，但实际上该文件是存在的，这时只需要再运行一遍`pdflatex`即可。
+
+tikz的衍生包也不少，比如：
+
+`tikz-network`：绘制网络图。
+
+`tikz-cd`：绘制通用图表，接口更友好。
+
+参考：
+
+http://www.hahack.com/tools/pgftikz-resources/
+
+PGF/TikZ资源汇总
+
+http://www.texample.net/tikz/examples/
+
+各种tikz示例的网站
+
+https://en.wikibooks.org/wiki/LaTeX/PGF/TikZ
+
+TikZ入门教程
+
+http://www.fuzihao.org/blog/2015/08/11/TikZ%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/
+
+另一个TikZ入门教程
+
+http://www.cnblogs.com/wangl393/
+
+一个TikZ的blog
+
+https://sandrocirulli.net/how-to-plot-functions-with-latex/
+
+安装pgfplots
+
+http://www.latexstudio.net/archives/category/tex-graphics/tikz-example
+
+一个tikz的论坛
+
+## Tikz+Gnuplot
+
+`sudo apt install gnuplot`
+
+`pdflatex --enable-write18 --shell-escape xxx.tex`
+
+## 中文支持
+
+Latex的中文支持方案很多，早期有CCT、天元、CJK等，后来又有了Ctex套装。目前主流的是texlive+xelatex+xeCJK。
+
+示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/helloworld/tikz/mindmap/mindmap_2.tex
+
+`xelatex xxx.tex`
+
+原始的Tex/Latex虽然比较稳定，但一者功能有限，二者使用步骤比较繁琐，因此才有paflatex/xelatex之类的一站式方案。
+
+## gridslides
+
+gridslides是一个用于制作slide的tex包。
+
+官网：
+
+https://github.com/minad/gridslides
+
+安装依赖：
+
+`sudo apt install biber texlive-latex-extra texlive-fonts-extra texlive-extra-utils`
+
+## Mathpix Snip
+
+Mathpix Snip可以用来将图片变成Latex公式。目前已经收费。。。
+
+官网：
+
+https://mathpix.com/
+
+安装：
+
+`sudo snap install mathpix-snipping-tool`
+
+快捷键：
+
+Ctrl+Alt+M
+
+参考：
+
+https://mp.weixin.qq.com/s/fY936R9trn0RcTICE8EAAA
+
+免费数学神器Mathpix发布移动版，一起来写更快的公式
+
+## Mathpix原理
+
+论文：
+
+《What You Get Is What You See:A Visual Markup Decompiler》
+
+代码：
+
+https://github.com/harvardnlp/im2markup/
+
+官方实现（torch版本）
+
+https://github.com/ritheshkumar95/im2latex-tensorflow
+
+tensorflow版本
+
+https://github.com/yixuanzhou/image2latex
+
+上个版本的GUI封装
+
+https://github.com/ssampang/im2latex
+
+另一个TF实现
+
+https://github.com/guillaumegenthial/im2latex
+
+另一个TF实现
+
+## 参考
+
+https://www.zhihu.com/question/40763253
+
+如何在Word和PowerPoint中优雅地插入Latex公式？
+
+https://mp.weixin.qq.com/s/3RtKAT3WE8P2YIZRA2dZ3A
+
+LaTeX的历史：图灵奖得主1977年开启的计划，引发学术圈重大变革
+
+https://mp.weixin.qq.com/s/KMWhz5_EXWoxgmHUek6zBA
+
+不会用latex写公式？看看这个python转latex的库
+
+https://mp.weixin.qq.com/s/LumDQL9VKTHWK3RkOhKFcg
+
+1行代码搞定Latex公式编写，这个4.6M的Python小插件，堪称论文必备神器

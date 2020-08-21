@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十九）——时间序列分析（2）, 运筹学, 异常检测, 数据清洗, 因果推理
+title:  机器学习（三十九）——时间序列分析（2）, 运筹学, 异常检测, 数据清洗, 因果推理, 度量学习
 category: ML 
 ---
 
@@ -354,3 +354,27 @@ R. A. Fisher和J. Neyman的分歧
 https://mp.weixin.qq.com/s/oZTU7TAEf-gYzlSXdt0_BA
 
 因果推断在阿里文娱用户增长中的应用
+
+# 度量学习
+
+度量学习（Metric Learning）是机器学习里面的一个研究方向，主要是用来度量数据间距离。
+
+一般来说，对于可度量的数据，我们可以直接通过欧式距离，cosine等方法来做。但对于更广泛的数据我们就很难这样操作，如测量一个视频和一首音乐的距离。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/80656461
+
+Metric Learning科普文
+
+https://mp.weixin.qq.com/s/mvbyddpgxBFQSxC1zZZmFw
+
+如何通过距离度量学习解决Street-to-Shop问题
+
+https://mp.weixin.qq.com/s/iuOmxW0OAhSA7xSoIIn1dw
+
+鲁继文：面向视觉内容理解的深度度量学习
+
+https://zhuanlan.zhihu.com/p/100553403
+
+Deep Metric Learning及其形式

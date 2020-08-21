@@ -245,6 +245,10 @@ https://mp.weixin.qq.com/s/XZWReRiIHqykN8yZulBiOg
 
 混合时空图卷积网络：更精准的时空预测模型
 
+https://mp.weixin.qq.com/s/40iqr-Yg4-CGe6QEsLpxhw
+
+时空序列预测模型之LightNet
+
 # Capsule
 
 https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Network/
@@ -381,28 +385,10 @@ https://mp.weixin.qq.com/s/x-fBo5pFD6UlKLh7p68H2A
 
 用机器学习打造计数君，谷歌RepNet可自动计数视频重复片段
 
+https://mp.weixin.qq.com/s/BSaacpLOVhrm94ufaSPtWA
+
+RepNet：对视频中的重复周期进行计数
+
 https://mp.weixin.qq.com/s/9Vt41Ygn767SnpjoXgnEEg
 
 基于语义流的快速而准确的场景解析
-
-# 人脸检测/识别
-
-https://mp.weixin.qq.com/s/PsToV8Z17tRzXW_AbaMNmg
-
-Blazeface人脸检测器
-
-https://mp.weixin.qq.com/s/5ANMZNaR2ayYMUQEJ6aM3w
-
-人脸识别基于通用表示学习
-
-https://mp.weixin.qq.com/s/jrynQZgoljFi6zdVKWo5nw
-
-在浏览器中实现AR试妆
-
-https://mp.weixin.qq.com/s/lr9OVNiIN0x7k4cmNZoCUw
-
-用于人脸检测的SSH算法
-
-https://mp.weixin.qq.com/s/A5-Z6APwS1iFCUgYxtYNyA
-
-重磅！GroupFace人脸识别，刷新9个数据集SOTA

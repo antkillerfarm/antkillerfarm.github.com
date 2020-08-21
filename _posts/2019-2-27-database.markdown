@@ -366,3 +366,7 @@ https://mp.weixin.qq.com/s/ufficZ7cCvRFdEpaAfm8Fg
 https://www.jianshu.com/p/0355d9e5ba0e
 
 数据库三大范式
+
+https://mp.weixin.qq.com/s/QbwTY8Tfkv1uUdsL9vk8iw
+
+一文看懂阿里文娱大数据OLAP选型

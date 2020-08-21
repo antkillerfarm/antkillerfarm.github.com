@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  通信协议, Apollo, 硬件
+title:  通信协议, 硬件, 传感器
 category: resource 
 ---
 
@@ -57,6 +57,28 @@ https://zhuanlan.zhihu.com/p/101702312
 
 详解TCP超时与重传机制
 
+## DNS
+
+https://mp.weixin.qq.com/s/DDk5YZv9Q7CaqdiKvQxZGQ
+
+从理论到实践，全方位认识DNS（理论篇）
+
+https://mp.weixin.qq.com/s/rZU35kVTXs5ebf7k6lnheQ
+
+从理论到实践，全方位认识DNS（实践篇）
+
+https://mp.weixin.qq.com/s/dVY0tPgkUq3W5waVtITFUA
+
+一文看懂：网址，URL，域名，IP地址，DNS，域名解析
+
+https://mp.weixin.qq.com/s/cSWjUlO-TaBrqnkt-IK6hA
+
+一文讲懂什么是vlan、三层交换机、网关、DNS、子网掩码、MAC地址
+
+https://mp.weixin.qq.com/s/1x1tUuPJ0fkiPj0G_uTSmg
+
+美国如果把根域名服务器封了，中国会从网络上消失？
+
 ## 参考
 
 https://www.cnblogs.com/maybe2030/p/4781555.html
@@ -74,18 +96,6 @@ https://mp.weixin.qq.com/s/CP_Egs4LUx7I8BXSqrS_dQ
 https://mp.weixin.qq.com/s/KoqN7Dq1aLhqEFAJP8V0KA
 
 66条计算机网络的知识点
-
-https://mp.weixin.qq.com/s/DDk5YZv9Q7CaqdiKvQxZGQ
-
-从理论到实践，全方位认识DNS（理论篇）
-
-https://mp.weixin.qq.com/s/rZU35kVTXs5ebf7k6lnheQ
-
-从理论到实践，全方位认识DNS（实践篇）
-
-https://mp.weixin.qq.com/s/dVY0tPgkUq3W5waVtITFUA
-
-一文看懂：网址，URL，域名，IP地址，DNS，域名解析
 
 https://mp.weixin.qq.com/s/Lee4DRNCQuGCTTAsSYR8ng
 
@@ -205,116 +215,6 @@ https://mp.weixin.qq.com/s/MHYMOYHqhrAbQ0xtTkV2ig
 
 HTTP/3原理实战
 
-# Apollo
-
-Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。
-
-官网：
-
-http://apollo.auto/
-
-代码：
-
-https://github.com/ApolloAuto/apollo
-
-参考：
-
-https://github.com/TeamStuQ/skill-map/blob/master/data/map-Apollo.md
-
-Apollo自动驾驶工程师技能图谱
-
-https://mp.weixin.qq.com/s/qtoHF4Mnj_aeGBJbkjJUMA
-
-Apollo小度车载系统
-
-https://mp.weixin.qq.com/s/rWhnazEC35U7nsVpsxhFEg
-
-Apollo 2.0软硬件框架初探（一）
-
-https://mp.weixin.qq.com/s/GccST3xJ1QRIVM7cFgsn3A
-
-Apollo 2.0软硬件框架初探（二）
-
-https://mp.weixin.qq.com/s/UHQXF2Ju8erw9thm0Jjt2A
-
-Apollo 2.0框架及源码分析(三)
-
-https://mp.weixin.qq.com/s/3i8mJn4OPjt-KV1fp8bZQQ
-
-Apollo Planning模块源代码分析（上）
-
-https://mp.weixin.qq.com/s/DfdMDOQMncTau-9zGq9CYw
-
-Apollo Planning模块源代码分析（下）
-
-https://mp.weixin.qq.com/s/bH6khM8gO3JE4YT9i8hSlQ
-
-Apollo 2.0自动驾驶平台技术解析与应用
-
-https://mp.weixin.qq.com/s/EgsdlDhd8lIXU3bnTYJh0w
-
-Apollo高精地图解析
-
-https://mp.weixin.qq.com/s/027QogNXtW2NPIDVcGQGzw
-
-Apollo“云+端”研发迭代新模式实战
-
-https://mp.weixin.qq.com/s/Pjfhs-03HxFeyeKo1BmAPw
-
-Apollo小度车载系统打造更舒心的出行
-
-https://mp.weixin.qq.com/s/j4faPastB3nFmgH_nhVW6g
-
-Apollo仿真平台如何Hold住99.9999%的复杂场景？
-
-https://mp.weixin.qq.com/s/PFCCRBGWmaTQkeyOlG1qng
-
-Apollo 2.0多传感器融合定位模块
-
-https://mp.weixin.qq.com/s/KEdXmwUGHysy_LZAfdkmlw
-
-Apollo的分布式可扩展计算平台探索
-
-https://mp.weixin.qq.com/s/MfTsH9mowuWFA54z7vs5fA
-
-Apollo Control模块源码解析
-
-https://mp.weixin.qq.com/s/bIjnm74cJcHP8Zab4kt5zA
-
-Apollo 2.5实时相对地图的分享
-
-https://mp.weixin.qq.com/s/hU8__GPgxaCStSgv4FyLIw
-
-无人驾驶行业及Apollo的Overview
-
-https://mp.weixin.qq.com/s/48DcWP1kAoze0Lv8jHY3Ow
-
-Apollo 2.5预测系统介绍
-
-https://mp.weixin.qq.com/s/7ftd941pycD7h_R10cDecg
-
-Apollo 2.5自动驾驶规划控制
-
-https://mp.weixin.qq.com/s/y_mOKpgLEvDjoO-UdMBcyw
-
-Apollo AdaperManager和Routing模块源代码分析
-
-https://mp.weixin.qq.com/s/k5GNHhxEE6mIOnxXlCpKXg
-
-Apollo 3.5软件架构
-
-https://mp.weixin.qq.com/s/Xhy1w87l_b47_hS3zzCgaA
-
-3D障碍物感知
-
-https://mp.weixin.qq.com/s?__biz=MzI1NjkxOTMyNQ==&mid=2247488270&idx=1&sn=25b6e9b4fbe02ef6c84f3171c4bd2e2a
-
-Apollo决策技术分享
-
-https://mp.weixin.qq.com/s/E65x4kNNZ4ctc12e5v095w
-
-自动驾驶专用计算框架探索和实践
-
 # 硬件
 
 https://mp.weixin.qq.com/s/ZexnsNmqsD2yq-7YNASohw
@@ -376,3 +276,165 @@ https://mp.weixin.qq.com/s/AJA01Cvm3k2HntUUAg9FPg
 https://mp.weixin.qq.com/s/NKWvIJ7-J_IugnAgUehVIg
 
 博通要卖掉的射频前端，是个怎样的市场？
+
+# 传感器
+
+这里主要讨论自动驾驶方面的传感器，但也包括了一些非自动驾驶类的传感器知识。
+
+## 激光雷达
+
+https://mp.weixin.qq.com/s/biiTHllmpsKSgMiaZbBYrQ
+
+激光雷达科普文
+
+https://mp.weixin.qq.com/s/4HNaS8Dpi9pcPzE_nN-BvA
+
+全球12家顶级激光雷达公司解读：谁有机会撼动Velodyne
+
+https://mp.weixin.qq.com/s/Ef6aWgs9xkHaAwTX4rxjKA
+
+用激光雷达感知世界
+
+https://mp.weixin.qq.com/s/mlwDZ1DUDbHIn4hQvkumAw
+
+自动驾驶感知神器——激光雷达概述
+
+https://mp.weixin.qq.com/s/hVhutvHeXsZOvJZfG1xaFw
+
+自动驾驶车载激光雷达技术现状分析
+
+https://mp.weixin.qq.com/s/zX2Jy5a32AVnhOUeLgS_wA
+
+摄像头、雷达、激光雷达——自动驾驶几大传感器系统大揭秘
+
+https://mp.weixin.qq.com/s/ecqeQdOo3xUV-PvL_T48eA
+
+一文读懂三角法和TOF激光雷达
+
+https://mp.weixin.qq.com/s/kO5yy7x0r3LhttBhLVpT5w
+
+固态激光雷达研究进展
+
+https://mp.weixin.qq.com/s/1MAb4tZfY4qQPaodo3xHoA
+
+激光雷达原理
+
+https://mp.weixin.qq.com/s/4zW8ZW90v6pLYb6B8RurMg
+
+聊传感器激光雷达
+
+## 参考
+
+https://mp.weixin.qq.com/s/Ee18sjKXNGMowKwqLB0jVg
+
+给自动驾驶一双"通天眼"——环境感知器篇
+
+https://mp.weixin.qq.com/s/dusPUCjKUzhfmTRhzXte-A
+
+新的图像传感器给汽车装上眼睛
+
+https://mp.weixin.qq.com/s/45xNWa_32DAsKdlfYY_QfA
+
+Uber自动驾驶撞死行人视频公布：无人车环境感知解决方案该如何优化？
+
+https://mp.weixin.qq.com/s/VBpOwGrTPs0nlmTyXvqDwA
+
+为什么只用摄像头和光学雷达是不够的：我们能从Uber的自动驾驶车致死事件中学到什么
+
+https://mp.weixin.qq.com/s/WiS-iJHA1zoIyb1cvKiuZQ
+
+自动驾驶传感器“一哥之争”，这事儿你怎么看？
+
+https://mp.weixin.qq.com/s/WWm1tkCXVJgdlVbsXCTYIg
+
+自动驾驶汽车硬件系统概述
+
+https://mp.weixin.qq.com/s/C77q2LEA-lMEabtsO30LxQ
+
+自动驾驶需要几个camera
+
+https://mp.weixin.qq.com/s/2-PB-5tTNeGPLPHQBdRwBA
+
+40张动态图详解全部传感器工作原理
+
+https://mp.weixin.qq.com/s/oCEeIM_DhmQ67zT_KLVb7Q
+
+Face ID与3D传感技术科普
+
+https://blog.csdn.net/carson2005/article/details/72972414
+
+光纤陀螺简介
+
+https://mp.weixin.qq.com/s/ZRakGZWXlQaUgtMfe2c2aw
+
+不要轻易碰我，不然我就知道你有多软了
+
+>鲍哲南，女，1970年生，芝加哥大学博士（1995）。现为Stanford教授，美国工程院院士。
+
+https://mp.weixin.qq.com/s/NwptdxWiN4SadjUQafA5rw
+
+高端MEMS固体波动陀螺的发展与应用
+
+https://blog.csdn.net/richard_liujh/article/details/49615395
+
+光学心率测量原理
+
+https://mp.weixin.qq.com/s/NrNojDc9gEU3F_GybKA67Q
+
+三大屏下指纹技术方案对比
+
+https://mp.weixin.qq.com/s/g5VKcxcp6QWesfegcU_GuQ
+
+手机指纹解锁和密码解锁，哪个更安全？
+
+https://mp.weixin.qq.com/s/2TKkoWZcYVVvlEKvA6iNyA
+
+近年值得关注的新兴MEMS和传感器技术
+
+https://mp.weixin.qq.com/s/elSezCSBPnuEqOFmHACLVg
+
+24GHz雷达的应用案例
+
+https://mp.weixin.qq.com/s/SgUcLH3kfRVha661PLyMeg
+
+体声波(BAW)是什么？
+
+https://mp.weixin.qq.com/s/FohJ81sPT_Zk7s1qLuP1-A
+
+动态视觉传感器（DVS）：高级自动驾驶的“超眼”
+
+https://mp.weixin.qq.com/s/ya-CHw572C2nnk8XraEMqQ
+
+功率半导体器件现状及未来
+
+https://mp.weixin.qq.com/s/bNhd7owOIdCdzO2xOtBMRw
+
+谈谈超结功率半导体器件
+
+https://mp.weixin.qq.com/s/0K595c2GdhPrdWBgpvU-Gw
+
+超声波雷达在汽车上的应用
+
+https://mp.weixin.qq.com/s/j0-Lj8lOyDP0RArB7NzUNw
+
+特斯拉的整车传感器配置方案
+
+https://mp.weixin.qq.com/s/WIjbYMvMis-YBr_ev_wjmQ
+
+霍尔元件及其应用
+
+https://mp.weixin.qq.com/s/vbTR1A0rgzCQY8XG70SNPQ
+
+了不起的MEMS发明人
+
+https://mp.weixin.qq.com/s/ns8riNkUILB-y07VMtGhSw
+
+MEMS培训讲义
+
+https://mp.weixin.qq.com/s/gHvvMG7D_W0M2RFntyRaDw
+
+车载抬头显示AR HUD成像技术大解密
+
+https://mp.weixin.qq.com/s/qOnMNbA9C7bcwZ6IvOxyCA
+
+一组动图看懂3D打印原理
