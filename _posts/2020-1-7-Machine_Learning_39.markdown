@@ -1,61 +1,11 @@
 ---
 layout: post
-title:  机器学习（三十九）——时间序列分析（2）, 运筹学, 异常检测, 数据清洗, 因果推理, 度量学习
+title:  机器学习（三十九）——运筹学, 异常检测, 数据清洗, 因果推理, 度量学习
 category: ML 
 ---
 
 * toc
 {:toc}
-
-# 时间序列分析
-
-https://www.kaggle.com/thebrownviking20/everything-you-can-do-with-a-time-series/notebook
-
-时间序列入门教程，从理论到业务实践，Kaggle kernels Master整理分享
-
-https://mp.weixin.qq.com/s/FRSe1mJTvk9U66ta-r9iCQ
-
-手把手教你用Python玩转时序数据，从采样、预测到聚类
-
-https://mp.weixin.qq.com/s/Q82YzANWDMkKWm5k2XmPkA
-
-严谨解决5种机器学习算法在预测股价的应用
-
-https://mp.weixin.qq.com/s/iKM6zMSm1F2icjy79F9Hcg
-
-季节性的分析才不简单，小心不要在随机数据中也分析出季节性
-
-https://mp.weixin.qq.com/s/avLWHXj2JkjXOomCipj8kA
-
-使用希尔伯特-黄变换（HHT）进行时间序列分析
-
-https://mp.weixin.qq.com/s/p8oN4xh-FHnay2eTsk6Gng
-
-基于高阶模糊认知图与小波变换的时间序列预测
-
-https://mp.weixin.qq.com/s/lmJk-iIzxxPmnZa6D8i_nw
-
-一文简述如何使用嵌套交叉验证方法处理时序数据
-
-https://mp.weixin.qq.com/s/05WAZcklXnL_hFPLZW9t7Q
-
-时间序列模型之相空间重构模型
-
-https://mp.weixin.qq.com/s/rIgjtILF7EtuBS5UWCEFcQ
-
-重大事件后，股价将何去何从？
-
-https://mp.weixin.qq.com/s/Y9d55KI64y-uRrWPRbDBzA
-
-Kaggle知识点：时序数据与Embedding
-
-https://mp.weixin.qq.com/s/DxRoTGtdrwqcjXL_ot57eg
-
-如何找到时序数据中线性的趋势
-
-https://mp.weixin.qq.com/s/iDUFr11-YX6oa6bLXWK3iQ
-
-时序特征挖掘的奇技淫巧
 
 # 运筹学
 

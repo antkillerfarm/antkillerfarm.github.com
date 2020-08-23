@@ -173,6 +173,10 @@ https://mp.weixin.qq.com/s/rVqzgyV-oCJNbY_49iAPnA
 
 array, list, tensor，Dataframe，Series之间互相转换总结
 
+https://mp.weixin.qq.com/s/ksCNIKyrwEJyPfGQMtmIkA
+
+pandas参数设置小技巧
+
 ## 并行Pandas
 
 https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw
@@ -474,27 +478,3 @@ Chartify在Bokeh的基础上又封装了一层，提供了更友好的API。
 官网：
 
 https://github.com/spotify/chartify
-
-## Plotly
-
-Plotly也是Matplotlib的威力加强版，主打交互式绘图。
-
-官网：
-
-https://plot.ly/python/
-
-它还有一个高级封装叫做Plotly Express。
-
-官网：
-
-https://www.plotly.express/
-
-参考：
-
-https://www.jianshu.com/p/57bad75139ca
-
-python plotly使用教程
-
-https://mp.weixin.qq.com/s/RkuLhwj_to_B01RJDQsGcA
-
-强烈推荐一款Python可视化神器！

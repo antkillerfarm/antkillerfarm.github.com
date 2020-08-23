@@ -149,6 +149,12 @@ Parameter Exploration的优点：得到基于某一策略的一段持续性的�
 
 缺点：对个体曾经到过的状态空间毫无记忆，也就是个体也许会进入一个之前曾经进入过的状态而并不知道其曾到过该状态，不能利用已经到过这个状态这个信息。
 
+参考：
+
+https://mp.weixin.qq.com/s/FX-1IlIaFDLaQEVFN813jA
+
+探索(Exploration)还是利用(Exploitation)？强化学习如何tradeoff？
+
 ## UCB
 
 $$\epsilon$$-greedy和softmax算法的缺陷：

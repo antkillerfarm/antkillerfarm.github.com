@@ -25,6 +25,10 @@ https://mp.weixin.qq.com/s/xc_TnMLs3o2LQ8eM4naZDw
 
 AAAI2019 Tutorial《图表示学习》, 180页PPT带你从入门到精通
 
+https://mp.weixin.qq.com/s/tD49ynMOyVTK-oWllcUWaw
+
+图神经网络新书《图表示学习》，140页pdf，William L. Hamilton-McGill University
+
 https://mp.weixin.qq.com/s/rgcDlFA1_Qbu8xRH7WZrtA
 
 清华大学《图神经网络-算法、理论和应用》教程
@@ -381,18 +385,10 @@ https://mp.weixin.qq.com/s/hyW3b7o4kRZN0oflMLYlTw
 
 图嵌入概述
 
+https://mp.weixin.qq.com/s/4YlDC24vC-H7PHRZhhiZJg
+
+图节点嵌入(Node Embeddings)概述，9页pdf
+
 https://mp.weixin.qq.com/s/s6E2vV1KrQDI4SeAnkYTKw
 
 图神经网络将成AI下一拐点！MIT斯坦福一文综述GNN到底有多强
-
-https://mp.weixin.qq.com/s/5oOobY_3blbXYYxuuQmShQ
-
-一文读懂图神经网络
-
-https://mp.weixin.qq.com/s/U51C2t92nlE7Tv7oKXgx2A
-
-一份完全解读：是什么使神经网络变成图神经网络？
-
-https://mp.weixin.qq.com/s/vK0bzljCNdR1OumUmsi2sA
-
-斯坦福大牛Jure Leskovec：图神经网络研究最新进展

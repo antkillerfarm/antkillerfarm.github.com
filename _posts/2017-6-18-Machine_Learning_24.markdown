@@ -317,3 +317,7 @@ AutoFIS: 因数分解模型中用于预测点击率的自动特征交互选择
 https://mp.weixin.qq.com/s/Z5cs6X1tFq9uKGfo3aHgmw
 
 简介机器学习中的特征工程
+
+https://mp.weixin.qq.com/s/VBA02WHBJmU77RPLtIzprA
+
+特征工程入门：应该保留和去掉那些特征

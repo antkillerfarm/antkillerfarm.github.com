@@ -213,6 +213,10 @@ https://zhuanlan.zhihu.com/p/86965595
 
 深入理解NLP Subword算法：BPE、WordPiece、ULM
 
+https://mp.weixin.qq.com/s/la3nZNFDviRcSFNVso29oQ
+
+NLP三大Subword模型详解：BPE、WordPiece、ULM
+
 https://mp.weixin.qq.com/s/TPRqDyGpkVuJcgomTu774A
 
 子词技巧：The Tricks of Subword

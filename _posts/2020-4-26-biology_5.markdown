@@ -7,9 +7,23 @@ category: Nature
 * toc
 {:toc}
 
-# 病毒
+# 病毒（续）
 
-## 参考（续）
+![](/images/img3/season.png)
+
+https://mp.weixin.qq.com/s/n0QcYI8hdnEG2LBRgoKDzw
+
+新冠肺炎会随着夏天的到来，自然消失吗？
+
+## 参考
+
+https://mp.weixin.qq.com/s/lwBpRJ4VQxD3DzeMropylQ
+
+病毒简史：人类对大自然的不知敬畏，才是一切灾难的源头
+
+https://mp.weixin.qq.com/s/Zh9-8C-hilrlKk8jrVo60g
+
+入侵&反击！病原体和人体的攻防战
 
 https://mp.weixin.qq.com/s/bgF5p9g47FmnPmR2hcvU3Q
 
@@ -120,6 +134,10 @@ https://mp.weixin.qq.com/s/-9nmfhYlPtCs2Fx74Yv6Xw
 https://mp.weixin.qq.com/s/DVtPA14nXgZPU-GBOiSdDg
 
 它是国家一级保护动物，在海底默默记录着古代的天气（砗磲）
+
+https://mp.weixin.qq.com/s/RMBG1dnmKD6p1itU1OKXvA
+
+克里彭杀妻案，百年前的一场谋杀
 
 # 新冠肺炎
 
@@ -344,25 +362,3 @@ https://www.kunlunce.com/ssjj/guojipinglun/2020-02-11/140446.html
 ----
 
 **混样检测**：将5~10个人的样本混在一起变成1个样本，这样就可以减少5~10倍时间。混样后的样品经检测如果出现阳性，再对这5~10人进行细查。
-
-## 国外疫情
-
-https://coronavirus.jhu.edu/map.html
-
-JHU的全球实时统计网站
-
-https://github.com/CSSEGISandData/COVID-19
-
-上述网站的代码
-
-https://view.inews.qq.com/a/20200404A0GES400
-
-全球最可靠疫情图每天点击量超10亿，由两名中国留美博士生操盘
-
-https://mp.weixin.qq.com/s/biMYttSdoe7k99v7m9H4oQ
-
-美国确诊超50万，约翰·霍普金斯大学疫情地图成全球瞩目中心
-
-https://mp.weixin.qq.com/s/rtTUT9TlAEaVci12KvsznA
-
-美国CDC、JHU在用的疫情数据库，来自这个武汉姑娘的华人团队

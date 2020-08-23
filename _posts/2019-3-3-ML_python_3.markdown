@@ -9,6 +9,30 @@ category: AI
 
 # Machine Learning之Python篇
 
+## Plotly
+
+Plotly也是Matplotlib的威力加强版，主打交互式绘图。
+
+官网：
+
+https://plot.ly/python/
+
+它还有一个高级封装叫做Plotly Express。
+
+官网：
+
+https://www.plotly.express/
+
+参考：
+
+https://www.jianshu.com/p/57bad75139ca
+
+python plotly使用教程
+
+https://mp.weixin.qq.com/s/RkuLhwj_to_B01RJDQsGcA
+
+强烈推荐一款Python可视化神器！
+
 ## ImageAI
 
 ImageAI是一个CV方面的库，集成了大量的DL模型，其目标是使用数十行代码完成一个CV任务。
@@ -422,27 +446,3 @@ https://mp.weixin.qq.com/s/E0TsD57voXy9C8bIqFvt_g
 https://mp.weixin.qq.com/s/HGLBPA9Ob7-3DzSNuF39Mg
 
 用Python搭建机器学习模型预测黄金价格
-
-https://mp.weixin.qq.com/s/wlUH5aavqHDXOvBTnxvAdg
-
-详解中文维基百科数据处理流程及脚本代码
-
-https://mp.weixin.qq.com/s/Y0fcVw6KUfoM8UWvk8VoPg
-
-Scikit-learn玩得很熟了？这些功能你都知道吗？
-
-https://mp.weixin.qq.com/s/iN-hXd6iGkFC8bxAjwxHNw
-
-一文简述多种无监督聚类算法的Python实现
-
-https://mp.weixin.qq.com/s/rDg0mPA715zHmwpDMC_83Q
-
-用Python写一个抖音漂亮小姐姐发掘器。使用腾讯人脸API
-
-https://mp.weixin.qq.com/s/4PyXz2p00Lf783bEUg_N2Q
-
-距离产生美？k近邻算法python实现
-
-https://mp.weixin.qq.com/s/E0INxsn_p-MBNA-wg-2nbQs
-
-无监督学习—聚类、层次聚类、t-SNE，DBSCAN

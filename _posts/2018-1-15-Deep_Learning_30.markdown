@@ -9,6 +9,18 @@ category: DL
 
 # Graph NN（续）
 
+https://mp.weixin.qq.com/s/5oOobY_3blbXYYxuuQmShQ
+
+一文读懂图神经网络
+
+https://mp.weixin.qq.com/s/U51C2t92nlE7Tv7oKXgx2A
+
+一份完全解读：是什么使神经网络变成图神经网络？
+
+https://mp.weixin.qq.com/s/vK0bzljCNdR1OumUmsi2sA
+
+斯坦福大牛Jure Leskovec：图神经网络研究最新进展
+
 https://mp.weixin.qq.com/s/WMpcamrHjUDnYwqyISdooA
 
 斯坦福Jure Leskovec图表示学习：无监督和有监督方法
@@ -373,22 +385,6 @@ https://mp.weixin.qq.com/s/XoVUJln3oyhk2jMOtWwfog
 
 基于图神经网络的协同过滤算法
 
-https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247515242&idx=2&sn=7497044ec2f80215061fb0de8abb2f72
-
-用于Web级推荐系统的图卷积神经网络
-
-https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247515402&idx=2&sn=726b417a71789e65430cbd931c78959e
-
-基于门控图网络实现图到序列学习
-
-https://mp.weixin.qq.com/s/aIU8mP5nlnqR4Qt-4RfMgQ
-
-孙付伟：Graph Embedding在知乎的应用实践
-
-https://blog.csdn.net/yyl424525/article/details/100057907
-
-Cluster-GCN: An Efficient Algorithm for Training Deep and Large Graph Convolutional Networks
-
 https://zhuanlan.zhihu.com/p/86216369
 
 从3/4层拓展到56层，如何训练超级深层的图卷积神经网络
@@ -396,3 +392,7 @@ https://zhuanlan.zhihu.com/p/86216369
 https://mp.weixin.qq.com/s/ceC1_39cmpqYOoHsu-4sCQ
 
 HEC-Montreal唐建博士：图神经网络推理
+
+https://mp.weixin.qq.com/s/aIU8mP5nlnqR4Qt-4RfMgQ
+
+孙付伟：Graph Embedding在知乎的应用实践

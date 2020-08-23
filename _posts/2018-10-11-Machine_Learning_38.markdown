@@ -1,197 +1,137 @@
 ---
 layout: post
-title:  机器学习（三十八）——PageRank算法
+title:  机器学习（三十八）——Optimizer进阶, 时间序列分析（2）
 category: ML 
 ---
 
 * toc
 {:toc}
 
-# PageRank算法
+# Optimizer进阶
 
-## 概述
+https://mp.weixin.qq.com/s/GS3TvS9nZw-CSJds-Aw_ug
 
-在PageRank提出之前，已经有研究者提出利用网页的入链数量来进行链接分析计算，这种入链方法假设一个网页的入链越多，则该网页越重要。早期的很多搜索引擎也采纳了入链数量作为链接分析方法，对于搜索引擎效果提升也有较明显的效果。PageRank除了考虑到入链数量的影响，还参考了网页质量因素，两者相结合获得了更好的网页重要性评价标准。
+UIUC孙若愚：60页论文综述深度学习优化
 
-对于某个互联网网页A来说，该网页PageRank的计算基于以下两个基本假设：
+https://mp.weixin.qq.com/s/7E8o1TnvmAvZgB7_AWCunQ
 
-**数量假设**：在Web图模型中，如果一个页面节点接收到的其他网页指向的入链数量越多，那么这个页面越重要。
+2018值得尝试的无参数全局优化新算法
 
-**质量假设**：指向页面A的入链质量不同，质量高的页面会通过链接向其他页面传递更多的权重。所以越是质量高的页面指向页面A，则页面A越重要。
+https://mp.weixin.qq.com/s/T-v9OTcJa5OQ71QmYrFtbg
 
-利用以上两个假设，PageRank算法刚开始赋予每个网页相同的重要性得分，通过迭代递归计算来更新每个页面节点的PageRank得分，直到得分稳定为止。PageRank计算得出的结果是网页的重要性评价，这和用户输入的查询是没有任何关系的，即算法是主题无关的。
+斯坦福大学提出SGD动量自调节器YellowFin
 
-**优点**：
+https://mp.weixin.qq.com/s/6u5W7Lm81Wtczdzp5WCJWw
 
-这是一个与查询无关的静态算法，所有网页的PageRank值通过离线计算获得；有效减少在线查询时的计算量，极大降低了查询响应时间。
+DeepMind提出新型超参数最优化方法：性能超越手动调参和贝叶斯优化
 
-**缺点**：
+https://mp.weixin.qq.com/s/0V8B-u5_bRM5Fu9oOAYjqw
 
-1）人们的查询具有主题特征，PageRank忽略了主题相关性，导致结果的相关性和主题性降低。
+清华大学：通过在单纯形上软门限投影的加速随机贪心坐标下降
 
-2）旧的页面等级会比新页面高。因为即使是非常好的新页面也不会有很多上游链接，除非它是某个站点的子站点。
+https://mp.weixin.qq.com/s/LuuvvL9yZ3ucXxRq0pZfsg
 
-## 马尔可夫链
+优化策略：Label Smoothing Regularization_LSR原理分析
 
-Markov链的基本定义参见《机器学习（二十六）》。
+https://zhuanlan.zhihu.com/p/23866364
 
-这里补充一些定义：
+从梯度下降到Hessian-Free优化
 
-**定义1**：设C为状态空间的一个子集，如果从C内任一状态i不能到C外的任何状态，则称C为**闭集**。除了整个状态空间之外，没有别的闭集的Markov链被称为**不可约的**。
+https://mp.weixin.qq.com/s/HPrjEdszBSvVoVS66W-Fjw
 
-如果用状态转移图表示Markov链的话，上面的定义表征了Markov链的**连通性**。
+2017年深度学习优化算法研究亮点最新综述
 
-**定义2**：如果有正整数d，只有当$$n=d,2d,\dots$$时，$$P_{ii}^{(n)}>0$$，或者说当n不能被d整除时，$$P_{ii}^{(n)}=0$$，则称i状态为**周期性状态**。如果除了$$d=1$$之外，使$$P_{ii}^{(n)}>0$$的各n值没有公约数，则称该状态i为**非周期性状态**。
+https://mp.weixin.qq.com/s/W06YcuGWalDbyUaZa_kZnQ
 
-这个定义表征了Markov链各状态的**独立性**。
+2017年深度学习优化算法最新综述
 
-**定义3**：
+https://mp.weixin.qq.com/s/WQ6CxRS-v_y-7PnYY-1ffg
 
-$$f_{ij}^{(n)}=P(X_{m+v}\neq j,X_{m+n}=j|X_m=i)$$
+在局部误差边界条件下的随机子梯度方法的加速
 
-其中，$$n>1,1\le v\le n-1$$。
+https://mp.weixin.qq.com/s/rOltA6fDzWmxcSyoHYqeSg
 
-上式表示由i出发，首次到达j的概率，也叫**首中概率**。
+谷歌提出最新参数优化方法Adafactor，已在TensorFlow中开源
 
-相应的还有**最终概率**：
+https://mp.weixin.qq.com/s/eTVPLSpZir4A49bhmWAibQ
 
-$$f_{ij}=\sum_{n=1}^\infty f_{ij}^{(n)}$$
+深度学习中的各种优化算法
 
-**定义4**：
+https://mp.weixin.qq.com/s/CQpIhVinDPhXpp70WhyYww
 
-如果$$f_{ii}=1$$, 则称状态i为**常返**的，如果$$f_{ii}<1$$, 则称状态i为**非常返**的。
+当前训练神经网络最快的方式：AdamW优化算法+超级收敛
 
-令$$u_i=\sum_{n=1}^\infty nf_{ii}^{(n)}$$，则$$u_i$$表示由i出发i，再返回i的**平均返回时间**。
+https://mp.weixin.qq.com/s/y3ThoC2A04q4uWiOsuhUJw
 
-如果$$u_i=\infty$$，则称i为**零常返**的。
+腾讯AI Lab提出误差补偿式量化SGD：显著降低分布式机器学习的通信成本
 
-常返态表征Markov链的极限分布。显然如果长期来看，状态i“入不敷出”的话，则其最终的极限概率为0。
+https://mp.weixin.qq.com/s/aBt0qXPHFvwSs-0MtJYKjQ
 
-根据上面的定义，还可得到Markov链的三个推论：
+一文告诉你Adam、AdamW、Amsgrad区别和联系，助你实现Super-convergence的终极目标
 
-**推论1**：有限状态的不可约非周期Markov链必存在平稳分布。
+https://mp.weixin.qq.com/s/aZlJNZsSv60ZZi2heGo_Mw
 
-**推论2**：若不可约Markov链的所有状态是非常返或零常返的，则不存在平稳分布。
+一文简述深度学习优化方法——梯度下降
 
-**推论3**：若$$X_j$$是不可约的非周期的Markov链的平稳分布，则$$\lim_{n\to\infty}P_{ij}^{(n)}=X_j$$，即极限分布等于平稳分布。
+https://mp.weixin.qq.com/s/DsmjjfInV_yPFWB2oSq-dA
 
-## 简易推导
+取代学习率衰减的新方法：谷歌大脑提出增加Batch Size
 
-![](/images/article/page_rank.jpg)
+https://mp.weixin.qq.com/s/jgOQGDqDKtbJXbAj3EpI9A
 
-上图是一个Web图模型的示例。其中的节点表示网页，箭头表示网页链接。因此，从图论的角度来说，这是一个有向图。而从随机过程的角度，这也可以看做是一个Markov链。
+别用大批量mini-batch训练神经网络，用局部SGD！
 
-上图中，A有两个入链B和C，则：
+https://zhuanlan.zhihu.com/p/45298186
 
-$$PR(A)=PR(B)+PR(C)$$
+Matrix Factorization方法证明总结
 
-然而图中除了C之外，B和D都不止有一条出链，所以上面的计算式并不准确：
+https://mp.weixin.qq.com/s/0z4mt8iVk5gLRDwbhznV2g
 
-$$PR(A) = \frac{PR(B)}{2} + \frac{PR(C)}{1}$$
+如何理解深度学习的优化？通过分析梯度下降的轨迹
 
-一般化，即：
+https://mp.weixin.qq.com/s/5MI1J16sEkr4UR4rSrw1wA
 
-$$PR(A)= \frac{PR(B)}{L(B)}+ \frac{PR(C)}{L(C)}$$
+Michael Jordan新研究：采样可以比优化更快地收敛
 
-其中，L表示外链个数。
+https://mp.weixin.qq.com/s/g8GLF0rf3IPAjRb9wZaS4w
 
-更一般化，可得：
+神经网络的奥秘之优化器的妙用
 
-$$PR(u) = \sum_{v \in B_u} \frac{PR(v)}{L(v)}$$
+https://mp.weixin.qq.com/s/i-fE4aISTJ0584aIHJ8R0Q
 
-这里有两种异常情况需要处理。
+二阶优化！训练ImageNet仅需35个Epoch
 
-1.互联网中不乏一些没有出链的网页，为了满足Markov链的收敛性，设定其对所有的网页（包括它自己）都有出链。
+https://mp.weixin.qq.com/s/LY1-F5hEyM40DrvobYRexA
 
-2.互联网中一个网页只有对自己的出链，或者几个网页的出链形成一个循环圈。那么在不断地迭代过程中，这一个或几个网页的PR值将只增不减，显然不合理。
+腾讯AI Lab&北大提出基于随机路径积分的差分估计子非凸优化方法
 
-对于这种情况，我们假定有一个确定的概率$$\alpha$$会输入网址直接跳转到一个随机的网页，并且跳转到每个网页的概率是一样的。即：
+https://mp.weixin.qq.com/s/5KyODpSjkdYJ9q-itQDsAA
 
-$$PR(p_{i}) = \alpha \sum_{p_{j} \in M_{p_{i}}} \frac{PR(p_{j})}{L(p_{j})} + \frac{(1 - \alpha)}{N}$$
+自Adam出现以来，深度学习优化器发生了什么变化？
 
-$$\alpha$$也叫阻尼系数，一般设定为0.85。
+https://mp.weixin.qq.com/s/3FSZOlA2sGQwiPj77ShTIQ
 
-由Markov链的收敛性可知，无论每个网页的PR初始值如何设定，都不影响最终的PR值。
+最优化算法鸟视解读
 
-在实际计算中，由于网页数量众多，而其中的链接关系相对较少，因此这个计算过程，实际上是一个巨维稀疏矩阵的凸优化问题，此处不再赘述。
+https://mp.weixin.qq.com/s/4hSar7SuCjLkZUjuIfu1Lg
 
-## TextRank
+如何选择最适合你的学习率变更策略
 
-TextRank算法是PageRank算法在NLP领域的扩展，被广泛用于自动摘要和提取关键词。
+https://zhuanlan.zhihu.com/p/32923584
 
-将原文本拆分为句子，在每个句子中过滤掉停用词（可选），并只保留指定词性的单词（可选）。由此可以得到句子的集合和单词的集合。
+Tensorflow中learning rate decay的奇技淫巧
 
-每个单词作为TextRank中的一个节点。假设一个句子依次由下面的单词组成：$$w_1,\dots,w_n$$。从中取出k个连续的单词序列，组成一个窗口。我们认为窗口中任意两个单词间存在一个无向边，从而构建出一个图模型。
+https://mp.weixin.qq.com/s/qk3cw05ZdlYEKDGRG0fnLg
 
-对该图模型应用PageRank算法，可得：
+距离几何优化问题--从美国计算机教授追回被抢车辆谈起
 
-$$WS(V_i)=(1-d)+d\sum_{V_j \in In(V_i)}\frac{w_{ji}}{\sum_{V_k \in Out(V_j)}w_{jk}}WS(V_j)$$
+https://mp.weixin.qq.com/s/rHkfb1pZhtzVjzYiTRB4WA
 
-上式的W为权重（也可叫做结点相似度），一般采用以下定义：
+交替方向乘子法（ADMM）的基本原理
 
-$$W(S_i,S_j)=\frac{|\{w_k|w_k\in S_i \& w_k\in S_j\}|}{\log(|S_i|)+\log(|S_j|)}$$
+https://mp.weixin.qq.com/s/4uaaeZSXavbVuU8d1AZA6Q
 
-其中，$$\mid S_i\mid$$是句子i的单词数。
-
-上面说的是关键词的计算方法。计算自动摘要的时候，将句子定义为结点，并认为全部句子都是相邻的即可。自动摘要所用的权重函数，一般采用BM25算法。
-
-## HITS
-
-HITS算法和PageRank算法可以看作兄弟算法。因为他们是同时期提出的对网页进行排序的两种算法。并且他们的原理有相似之处，都考虑了权威性网站的作用。
-
-但这两种算法也有区别：
-
-- HITS计算每个网页的权威值和枢纽值，将二者分开考虑。而PageRank只计算PageRank值。
-
-- HITS只处理与关键词相关的网页集合，范围很小。而PageRank是全局算法，会计算互联网中所有网页的PageRank值。
-
-因为上一点的缘故，HITS算法更适合部署在客户端，而PageRank更适合部署在服务器端。
-
-参考：
-
-https://mp.weixin.qq.com/s/9g174YP-M2HWsPR-9ikgcg
-
-什么是HITS算法
-
-## 参考
-
-http://www.cnblogs.com/rubinorth/p/5799848.html
-
-PageRank算法--从原理到实现
-
-http://blog.csdn.net/hguisu/article/details/7996185
-
-PageRank算法
-
-http://www.docin.com/p-1231683333.html
-
-有限不可约马尔可夫链的非周期状态
-
-http://www.docin.com/p-630952720.html
-
-马尔科夫链
-
-https://mp.weixin.qq.com/s/J9OmqFzQK-GS95FjgAJkTw
-
-浅析PageRank算法
-
-https://mp.weixin.qq.com/s/fGaEYvo3WYKdzA3r8l6O3g
-
-基于TextRank算法的文本摘要
-
-https://mp.weixin.qq.com/s/0ZNsP7sEfagZhjyaLZohSQ
-
-程序员拒绝单曲循环：曲子只有5分钟，也得不重样播放450多天
-
-https://mp.weixin.qq.com/s/TyOYhId90N0Cm7nw98nXMg
-
-PageRank、最小生成树：ML开发者应该了解的五种图算法
-
-https://mp.weixin.qq.com/s/4N14KhSjNt3_TvVzu4IrgQ
-
-抽取式摘要：TextRank和BertSum
-
-# Optimizer进阶+
+浅谈交替方向乘子法(ADMM)的经典使用
 
 https://mp.weixin.qq.com/s/E3Iq8YpIZRZOk7SP-cu1xQ
 
@@ -268,3 +208,53 @@ https://mp.weixin.qq.com/s/x7UQhSAiE9VJCzUSZfpytA
 https://mp.weixin.qq.com/s/EmWRaAOTNYE0Maf6_r41oA
 
 Adam那么棒，为什么还对SGD念念不忘？一个框架看懂深度学习优化算法
+
+# 时间序列分析
+
+https://www.kaggle.com/thebrownviking20/everything-you-can-do-with-a-time-series/notebook
+
+时间序列入门教程，从理论到业务实践，Kaggle kernels Master整理分享
+
+https://mp.weixin.qq.com/s/FRSe1mJTvk9U66ta-r9iCQ
+
+手把手教你用Python玩转时序数据，从采样、预测到聚类
+
+https://mp.weixin.qq.com/s/Q82YzANWDMkKWm5k2XmPkA
+
+严谨解决5种机器学习算法在预测股价的应用
+
+https://mp.weixin.qq.com/s/iKM6zMSm1F2icjy79F9Hcg
+
+季节性的分析才不简单，小心不要在随机数据中也分析出季节性
+
+https://mp.weixin.qq.com/s/avLWHXj2JkjXOomCipj8kA
+
+使用希尔伯特-黄变换（HHT）进行时间序列分析
+
+https://mp.weixin.qq.com/s/p8oN4xh-FHnay2eTsk6Gng
+
+基于高阶模糊认知图与小波变换的时间序列预测
+
+https://mp.weixin.qq.com/s/lmJk-iIzxxPmnZa6D8i_nw
+
+一文简述如何使用嵌套交叉验证方法处理时序数据
+
+https://mp.weixin.qq.com/s/05WAZcklXnL_hFPLZW9t7Q
+
+时间序列模型之相空间重构模型
+
+https://mp.weixin.qq.com/s/rIgjtILF7EtuBS5UWCEFcQ
+
+重大事件后，股价将何去何从？
+
+https://mp.weixin.qq.com/s/Y9d55KI64y-uRrWPRbDBzA
+
+Kaggle知识点：时序数据与Embedding
+
+https://mp.weixin.qq.com/s/DxRoTGtdrwqcjXL_ot57eg
+
+如何找到时序数据中线性的趋势
+
+https://mp.weixin.qq.com/s/iDUFr11-YX6oa6bLXWK3iQ
+
+时序特征挖掘的奇技淫巧

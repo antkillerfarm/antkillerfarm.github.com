@@ -205,6 +205,10 @@ https://mp.weixin.qq.com/s/2_TF11zy4aM0cZZTuRQhMg
 
 从零开始学Mask RCNN：三，Mask RCNN网络架构解析及TensorFlow和Keras的交互
 
+https://mp.weixin.qq.com/s/fDwQRj-aoqUAvQ-q9wJNSg
+
+一文读懂RoIPooling、RoIAlign和RoIWarp
+
 # 花式U-NET
 
 ## U-NET的另类用法

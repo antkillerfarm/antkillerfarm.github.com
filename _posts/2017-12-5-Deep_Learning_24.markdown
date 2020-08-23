@@ -331,7 +331,7 @@ https://mp.weixin.qq.com/s/qpNbHKZ0V5do77jQlZDBBw
 
 从零开始学习Deep SORT+YOLO V3进行多目标跟踪
 
-# 目标检测进阶+
+# 目标检测进阶++
 
 https://mp.weixin.qq.com/s/VtlSVF4d9LwPJhDEYSbgTg
 
@@ -412,3 +412,7 @@ From VanillaDet to AutoAssign
 https://mp.weixin.qq.com/s/GL_q4VLCgbjTZq_zpTLq0w
 
 Label Assign：提升目标检测上限
+
+https://mp.weixin.qq.com/s/EO5h1zW4yrToqwTCnXtz4g
+
+TTFNet: 最大程度提高训练效率的实时目标检测

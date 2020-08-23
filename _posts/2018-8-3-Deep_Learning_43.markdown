@@ -113,6 +113,14 @@ https://mp.weixin.qq.com/s/_DryX1xebOVzw8-lZ0P8LA
 
 真·名媛！AI复原百年前“上海时装秀”
 
+## 古罗马皇帝
+
+![](/images/img3/Roman_Emperors.jpg)
+
+https://mp.weixin.qq.com/s/vuIfa9r-X5eeDf-TOag4pw
+
+从雕像到肖像画，这位设计师用GAN和PS复原了他眼中的古罗马皇帝“群像”
+
 ## 抠图
 
 https://mp.weixin.qq.com/s/dRa1mss4dve487FhS4KjTg
@@ -366,19 +374,3 @@ https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247504381&idx=2&sn=465027
 https://mp.weixin.qq.com/s/3Aq1HXpBzgNdcB130tCKbQ
 
 GAN网络图像翻译机：图像复原、模糊变清晰、素描变彩图
-
-https://mp.weixin.qq.com/s/djkjAfUO_DefTP2drzY_iQ
-
-在《绝地求生》中玩《堡垒之夜》！深度学习帮你转换画风
-
-https://mp.weixin.qq.com/s/moDVf7h8Q2S1SL0IuxXQtQ
-
-算法音乐往事：二次元女神“初音未来”诞生记
-
-https://mp.weixin.qq.com/s/4UH-XWyIxYHq_ErRfkzzsQ
-
-与神经网络相比，你对P图一无所知
-
-https://mp.weixin.qq.com/s/FTfpjo-qT_PK4cbR5j0ulw
-
-AI当“暖男”：给裸照自动穿上比基尼

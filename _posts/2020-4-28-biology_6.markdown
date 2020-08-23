@@ -9,7 +9,27 @@ category: Nature
 
 # 新冠肺炎
 
-## 国外疫情（续）
+## 国外疫情
+
+https://coronavirus.jhu.edu/map.html
+
+JHU的全球实时统计网站
+
+https://github.com/CSSEGISandData/COVID-19
+
+上述网站的代码
+
+https://view.inews.qq.com/a/20200404A0GES400
+
+全球最可靠疫情图每天点击量超10亿，由两名中国留美博士生操盘
+
+https://mp.weixin.qq.com/s/biMYttSdoe7k99v7m9H4oQ
+
+美国确诊超50万，约翰·霍普金斯大学疫情地图成全球瞩目中心
+
+https://mp.weixin.qq.com/s/rtTUT9TlAEaVci12KvsznA
+
+美国CDC、JHU在用的疫情数据库，来自这个武汉姑娘的华人团队
 
 除此之外，MS的网站做的也不错。
 
@@ -286,11 +306,3 @@ Medtronic成立于1949年，致力于为心血管疾病，神经科，糖尿病�
 https://mp.weixin.qq.com/s/jlKlNwMp2-2TvyIWHU71LQ
 
 全球呼吸机告急！医疗科技巨头美敦力“开源”设计图和源代码
-
-----
-
-LVMH集团宣布，旗下Dior、Givenchy和娇兰三个品牌的香水生产线，将用于生产含酒精的消毒洗手液。
-
-奢侈品牌Prada将一家在佩鲁贾开设的工厂，改造成了口罩及医疗用品生产工厂，并计划在4月6日前，向意大利托斯卡纳医院运送8万件防护服，及11万只口罩。
-
-重症监护用肺呼吸机制造商Siare Engineering取消了占其营业额90％的外国订单，转而专为意大利提供机械，该公司产能从每月125台提升到到现在的500台。

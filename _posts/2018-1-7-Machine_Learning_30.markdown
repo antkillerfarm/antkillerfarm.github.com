@@ -133,6 +133,10 @@ https://mp.weixin.qq.com/s/2Uh_PgQp7hqk8IrFQzthQw
 
 概率图模型笔记（PART III）条件随机场简介
 
+https://mp.weixin.qq.com/s/1V-AVzAZtKTLHejAo-4OAA
+
+用Python构建概率图模型，173页pdf
+
 # HMM
 
 ![](/images/article/HMM.png)

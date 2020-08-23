@@ -163,6 +163,18 @@ Kaggle知识点：伪标签Pseudo Label
 
 # Graph NN+
 
+https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247515242&idx=2&sn=7497044ec2f80215061fb0de8abb2f72
+
+用于Web级推荐系统的图卷积神经网络
+
+https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247515402&idx=2&sn=726b417a71789e65430cbd931c78959e
+
+基于门控图网络实现图到序列学习
+
+https://blog.csdn.net/yyl424525/article/details/100057907
+
+Cluster-GCN: An Efficient Algorithm for Training Deep and Large Graph Convolutional Networks
+
 https://mp.weixin.qq.com/s/emPDgw_c68JgbpYnem4JvA
 
 一文读懂简化的图卷积网络GCN（SGC）

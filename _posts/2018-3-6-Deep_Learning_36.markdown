@@ -249,6 +249,10 @@ https://mp.weixin.qq.com/s/40iqr-Yg4-CGe6QEsLpxhw
 
 时空序列预测模型之LightNet
 
+https://mp.weixin.qq.com/s/aQxK6JvoEev_jUXHJEGnhg
+
+时间卷积网络TCN：时间序列处理的新模型
+
 # Capsule
 
 https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Network/

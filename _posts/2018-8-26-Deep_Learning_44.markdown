@@ -9,6 +9,22 @@ category: DL
 
 # 图像变换（续）
 
+https://mp.weixin.qq.com/s/djkjAfUO_DefTP2drzY_iQ
+
+在《绝地求生》中玩《堡垒之夜》！深度学习帮你转换画风
+
+https://mp.weixin.qq.com/s/moDVf7h8Q2S1SL0IuxXQtQ
+
+算法音乐往事：二次元女神“初音未来”诞生记
+
+https://mp.weixin.qq.com/s/4UH-XWyIxYHq_ErRfkzzsQ
+
+与神经网络相比，你对P图一无所知
+
+https://mp.weixin.qq.com/s/FTfpjo-qT_PK4cbR5j0ulw
+
+AI当“暖男”：给裸照自动穿上比基尼
+
 https://mp.weixin.qq.com/s/LwYzxFO6Fj9Biiww3Y22qw
 
 斯坦福CS230第一名：图像超级补全，效果惊艳
@@ -340,29 +356,3 @@ https://mp.weixin.qq.com/s/sMUyTZd_yME70_nWicqP7g
 https://mp.weixin.qq.com/s/yk7fIYFp1fEPn3deZXsE-g
 
 傻瓜式无限P图，MIT朱俊彦团队“重写”深度生成模型
-
-# 图像超分辨率进阶+
-
-https://zhuanlan.zhihu.com/p/67613641
-
-基于多级神经纹理迁移的图像超分辨方法(Adobe Research)
-
-https://mp.weixin.qq.com/s/IStOD22WgZ6EBFCvIHkNSg
-
-图像超分辨率网络：RCAN
-
-https://mp.weixin.qq.com/s/4LIq3kZaXgaoEEyb8TQvwg
-
-图像超分辨率重建--AI研究
-
-https://mp.weixin.qq.com/s/ETGPXVDGRHOq0W-ef_q2_A
-
-RankSRGAN:排序学习+GAN用于超分辨率
-
-https://zhuanlan.zhihu.com/p/140507840
-
-图像超分：USRNet
-
-https://mp.weixin.qq.com/s/sju4SYFxzDkJevk3mi68Rw
-
-图像超分辨率网络：EDSR

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Graph ML（一）——图论基础, 强连通分量算法, 社交网络
+title:  Graph ML（一）——图论基础, 社交网络
 category: graph 
 ---
 
@@ -153,15 +153,21 @@ $$C=\frac{1}{N}\sum_i^N C_i$$
 
 这里用s表示图中最大的连通子图（Largest component / Giant component）的结点数。
 
-## Random Graph Model
+## Erdös-Renyi Random Graph Model
 
-上面讲述了图的统计特性，反过来给定了统计特性，我们也可以生成相应的图。这种生成图的方法通常称为Random Graph Model。
+上面讲述了图的统计特性，反过来给定了统计特性，我们也可以生成相应的图。这种生成图的方法通常称为Erdös-Renyi Random Graph Model。
 
 我们用$$G_{np}$$表示n个结点的无向图中，每个边出现的概率是p。用$$G_{nm}$$表示n个结点的无向图中，随机均匀的选择m个边。
 
 由于这是一个随机选择的过程，因此同样的n和p可以对应很多组不同的图。
 
 对于$$G_{np}$$来说，由于每条边只有选择和不选择两种可能，因此总的来看，它的Degree distribution满足二项分布。即：
+
+$$P(k) = \binom {n-1} k p^k(1-p)^{n-1-k}$$
+
+这里使用n-1，而不是n，主要是因为：对于n个结点的图来说，每个结点最多只能有n-1条边。
+
+k的均值为：$$\overline{k}=p(n-1)$$
 
 $$$$
 
@@ -211,23 +217,9 @@ https://mp.weixin.qq.com/s/dsPiw-n8iclT8uWkeTiBUA
 
 图数据表征学习，绝不止图神经网络一种方法
 
-# 强连通分量算法
+https://mp.weixin.qq.com/s/iZLwlmBuXWrbpzvkm8nOrw
 
-http://ishare.iask.sina.com.cn/f/34626295.html
-
-矩阵不可约的充要条件
-
-http://www.cnblogs.com/saltless/archive/2010/11/08/1871430.html
-
-求强连通分量的Tarjan算法
-
-http://blog.csdn.net/dm_vincent/article/details/8554244
-
-求解强连通分量算法之---Kosaraju算法
-
-http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
-
-强连通分支算法--Kosaraju算法、Tarjan算法和Gabow算法
+拉普拉斯矩阵和瑞利熵
 
 # 社交网络
 
@@ -316,20 +308,3 @@ Philip S. Yu 团队最新综述！社区发现的深度学习方法：进展、�
 https://mp.weixin.qq.com/s/HGpay4KZwtz7t5QBIeE8Rg
 
 图机器学习经典算法louvain完全解读
-
-## Social Listening
-
-企业们通过捕捉网络上与品牌/产品/营销事件相关的关键词，去监测消费者都对品牌/产品/营销事件说了什么的行为，被称作社会化聆听（Social Listening）。
-
-https://mp.weixin.qq.com/s/htzfVSv3V8b00vae6nKm-A
-
-如何利用Social Listening从社会化媒体中“提炼”有价值的信息？
-
-https://mp.weixin.qq.com/s/0khbV1yOFZ5vNLZPRKYA6g
-
-Social Listening和传统市场调研的关系是怎样的？
-
-https://mp.weixin.qq.com/s/QrI23je3HqCFYkeVb9af8g
-
-如何利用Social Listening从在线垂直社区提炼有价值的信息---以汽车之家的口碑数据挖掘为例
-

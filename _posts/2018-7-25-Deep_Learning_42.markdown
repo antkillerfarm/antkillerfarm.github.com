@@ -157,6 +157,10 @@ https://mp.weixin.qq.com/s/fhTfNXjPeM5wMeLK2Y-yHA
 
 适用于少量数据的深度学习结构
 
+https://mp.weixin.qq.com/s/zQuLpzIptpFQC_f2Xx26og
+
+迁移学习在新闻推荐中的应用
+
 # 深度ISP
 
 ## 数据集

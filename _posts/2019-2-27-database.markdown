@@ -117,6 +117,10 @@ https://mp.weixin.qq.com/s/2hJzdILGgLwcw8mkCY1uLw
 
 当我们输入一条SQL查询语句时，发生了什么？
 
+https://juejin.im/post/6844903790571700231
+
+SQL语法速成手册
+
 ## Apache Kylin
 
 Apache Kylin是一个开源的分布式分析引擎，最初由eBay开发贡献至开源社区。它提供Hadoop之上的SQL查询接口及多维分析（OLAP）能力以支持大规模数据，能够处理TB乃至PB级别的分析任务，能够在亚秒级查询巨大的Hive表，并支持高并发。
