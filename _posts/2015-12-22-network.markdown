@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  网络杂谈
+title:  网络杂谈, WebRTC
 category: technology 
 ---
 
@@ -275,3 +275,19 @@ WPS分为PBC(BUTTON)和PIN两种方式
 记住AP的PIN码,然后打开客户端（无线网卡）WPS设置软件,选择以AP的PIN码来进行连接。
 
 输入完PIN码后,点下一步,一会儿后,WPS安全连接成功建立。
+
+# WebRTC
+
+Gobal IP Solutions，简称GIPS。这是一家1990年成立于瑞典斯德哥尔摩的VoIP软件开发商，提供了可以说是世界上最好的语音引擎。
+
+Skype、腾讯 QQ、WebEx、Vidyo 等都使用了它的音频处理引擎，包含了受专利保护的回声消除算法，适应网络抖动和丢包的低延迟算法，以及先进的音频编解码器。
+
+Google在2011年收购了GIPS，并将其源代码开源，加上在2010年收购的On2获取到的VPx系列视频编解码器，WebRTC开源项目应运而生，即GIPS音视频引擎+替换掉H.264的VPx视频编解码器。
+
+https://mp.weixin.qq.com/s/DhQ0kks7SnyAROYEH_1BQg
+
+进击的WebRTC：我们为什么需要它？
+
+http://blog.shengbin.me/posts/multi-user-video-conference-based-on-webrtc
+
+基于WebRTC的多人视频会议

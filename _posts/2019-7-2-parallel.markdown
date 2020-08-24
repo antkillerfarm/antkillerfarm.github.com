@@ -344,3 +344,7 @@ https://mp.weixin.qq.com/s/_85oWK2plv2QOX5Qfg_-ZA
 https://mp.weixin.qq.com/s/soruo90Dbtzi6d1kA63Akg
 
 阿里提出智能算力引擎DCAF，节省20%GPU算力
+
+https://zhuanlan.zhihu.com/p/79030485
+
+AllReduce算法的前世今生

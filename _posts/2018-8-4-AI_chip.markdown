@@ -255,19 +255,3 @@ AlphaGo Master最新架构和算法，谷歌云与TPU拆解
 https://mp.weixin.qq.com/s/Yo0uKd1Mzy4mmS4r0mxfVw
 
 有图有真相：深度拆解谷歌TPU3.0，新一代AI协同处理器
-
-https://mp.weixin.qq.com/s/kPrZ0PuevXEJjVB7RXs70g
-
-谷歌TPU率队，颠覆3350亿美元的半导体行业
-
-https://mp.weixin.qq.com/s/wunqEHC6c-yUVXTl4yTG4w
-
-仅需1/5成本：TPU是如何超越GPU，成为深度学习首选处理器的
-
-https://mp.weixin.qq.com/s/vncPcczTyqglndeZAgjWfw
-
-一文读懂：谷歌千元级Edge TPU为何如此之快？
-
-https://www.nextplatform.com/2018/05/10/tearing-apart-googles-tpu-3-0-ai-coprocessor/
-
-Tearing Apart Google’s TPU 3.0 AI Coprocessor

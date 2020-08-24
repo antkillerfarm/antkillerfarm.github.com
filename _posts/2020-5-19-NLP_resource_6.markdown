@@ -311,6 +311,30 @@ https://mp.weixin.qq.com/s/4FJzxPyCmakjIU-9xlQmJQ
 
 阁下可知文言编程之精妙？CMU本科生开源文言文编程语言，数天2K星
 
+## 术语
+
+AST：abstract syntax tree
+
+## Pass
+
+![](/images/img3/single_pass.jpg)
+
+![](/images/img3/multi_pass.jpg)
+
+以上两图展示了One pass/Single pass与Two pass/Multi pass之间的差异。
+
+https://www.geeksforgeeks.org/single-pass-two-pass-and-multi-pass-compilers/
+
+Single pass, Two pass, and Multi pass Compilers
+
+https://xz.aliyun.com/t/7257
+
+初探LLVM&clang&pass
+
+llvm.org/docs/WritingAnLLVMPass.html
+
+Writing an LLVM Pass
+
 ## Android编译
 
 ![](/images/img3/ART.png)

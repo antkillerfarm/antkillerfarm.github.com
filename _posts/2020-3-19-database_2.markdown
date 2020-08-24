@@ -1,11 +1,51 @@
 ---
 layout: post
-title:  Mysql, WebRTC, ZeroMQ, CMake, MSYS2
+title:  数据库（二）, Mysql, ZeroMQ, CMake, MSYS2
 category: technology 
 ---
 
 * toc
 {:toc}
+
+# 数据库
+
+## 参考（续）
+
+https://mp.weixin.qq.com/s/5Qcbz6dT20Sa_OvRfbNXNw
+
+如何给新来的师妹解释什么是数据库的脏读、不可重复读和幻读
+
+https://mp.weixin.qq.com/s/1zarqgOh9-3chlBsB4TsuA
+
+物联网时代数据数据库如何选型？
+
+https://mp.weixin.qq.com/s/O94Q1Dxe8TnbCMv9d_hlOg
+
+Uber推出数据湖集成神器DBEvents，支持MySQL、Cassandra等
+
+https://mp.weixin.qq.com/s/AcuFiHgRJg2OcNGtfjRxYA
+
+我们对比了5款数据库，告诉你NewSQL的独到之处
+
+https://mp.weixin.qq.com/s/DaspXFLPASYE7N0WHllcYQ
+
+Cassandra的过去、现在、未来
+
+https://mp.weixin.qq.com/s/cLIrRmcS5sbiDVl0cwDlIw
+
+Cassandra在时空数据上的探索
+
+https://mp.weixin.qq.com/s/ufficZ7cCvRFdEpaAfm8Fg
+
+面试官问：讲讲高并发下的接口幂等性怎么实现？
+
+https://www.jianshu.com/p/0355d9e5ba0e
+
+数据库三大范式
+
+https://mp.weixin.qq.com/s/QbwTY8Tfkv1uUdsL9vk8iw
+
+一文看懂阿里文娱大数据OLAP选型
 
 # Mysql
 
@@ -224,22 +264,6 @@ https://mp.weixin.qq.com/s/oV5F_K2mmE_kK77uEZSjLg
 https://mp.weixin.qq.com/s/ZjnRzI18plggKTv_nPBsEw
 
 字节跳动表格存储中的事务
-
-# WebRTC
-
-Gobal IP Solutions，简称GIPS。这是一家1990年成立于瑞典斯德哥尔摩的VoIP软件开发商，提供了可以说是世界上最好的语音引擎。
-
-Skype、腾讯 QQ、WebEx、Vidyo 等都使用了它的音频处理引擎，包含了受专利保护的回声消除算法，适应网络抖动和丢包的低延迟算法，以及先进的音频编解码器。
-
-Google在2011年收购了GIPS，并将其源代码开源，加上在2010年收购的On2获取到的VPx系列视频编解码器，WebRTC开源项目应运而生，即GIPS音视频引擎+替换掉H.264的VPx视频编解码器。
-
-https://mp.weixin.qq.com/s/DhQ0kks7SnyAROYEH_1BQg
-
-进击的WebRTC：我们为什么需要它？
-
-http://blog.shengbin.me/posts/multi-user-video-conference-based-on-webrtc
-
-基于WebRTC的多人视频会议
 
 # ZeroMQ
 

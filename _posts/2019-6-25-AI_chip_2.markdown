@@ -11,6 +11,22 @@ category: AI
 
 ## TPU（续）
 
+https://mp.weixin.qq.com/s/kPrZ0PuevXEJjVB7RXs70g
+
+谷歌TPU率队，颠覆3350亿美元的半导体行业
+
+https://mp.weixin.qq.com/s/wunqEHC6c-yUVXTl4yTG4w
+
+仅需1/5成本：TPU是如何超越GPU，成为深度学习首选处理器的
+
+https://mp.weixin.qq.com/s/vncPcczTyqglndeZAgjWfw
+
+一文读懂：谷歌千元级Edge TPU为何如此之快？
+
+https://www.nextplatform.com/2018/05/10/tearing-apart-googles-tpu-3-0-ai-coprocessor/
+
+Tearing Apart Google’s TPU 3.0 AI Coprocessor
+
 https://mp.weixin.qq.com/s/3DubSQ1D59Z-PCovjHiidQ
 
 TPU(灵魂三问 WHAT? WHY? HOW?)
@@ -40,6 +56,16 @@ https://groq.com/
 https://zhuanlan.zhihu.com/p/102357412
 
 Groq，“软件定义硬件”概念的背后
+
+## Graphcore
+
+Graphcore是一家英国芯片设计企业，成立于2012年。它的产品被称为IPU。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/103963276
+
+深度剖析AI芯片初创公司Graphcore的IPU
 
 ## HBM
 
@@ -390,31 +416,3 @@ https://mp.weixin.qq.com/s/JYTqJDlGw6Q2gNLaYIGLcQ
 https://mp.weixin.qq.com/s/R1_mXxBrQYgIPlUDGz8w6Q
 
 片上多核系统的互联需求
-
-![](/images/img3/Wallace_Tree.png)
-
-https://mp.weixin.qq.com/s/_n1FA7H5q4AwXqeBg9tekA
-
-硬件实现快速累加
-
->Christopher Stewart "Chris" Wallace，1933～2004，澳大利亚计算机科学家和物理学家。University of Sydney博士（1959）。Monash University教授。ACM fellow。在早期计算机的软件/硬件方面皆有重大贡献。
-
-https://mp.weixin.qq.com/s/XXef4F9HEZizoWRYXwHitw
-
-如何配置一台深度学习工作站?
-
-https://mp.weixin.qq.com/s/_xFRRkVyN9qevLeek7bFxQ
-
-深度学习中GPU和显存分析
-
-https://mp.weixin.qq.com/s/k5Xx-nnaf-yfWqGLIY3LEg
-
-特斯拉的芯片究竟多强
-
-https://zhuanlan.zhihu.com/p/88927564
-
-窥探神经网络加速器的数据复用（一）
-
-https://mp.weixin.qq.com/s/YARcCzQXqnJmWRtV2zd_FQ
-
-国内外AI芯片发展现状

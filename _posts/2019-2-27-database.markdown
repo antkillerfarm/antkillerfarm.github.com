@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数据库
+title:  数据库（一）
 category: technology 
 ---
 
@@ -245,6 +245,32 @@ https://zhuanlan.zhihu.com/p/130332285
 
 分布式一致性算法-Paxos、Raft、ZAB、Gossip
 
+## Cache
+
+**缓存雪崩**指大量缓存同一时间段集体失效，或者缓存整体不能提供服务，导致大量的请求全部到达数据库 对数据CPU和内存造成巨大压力，严重的会造成数据库宕机。
+
+使用随机过期时间。为每一个key都合理的设计一个过期时间，这样可以避免大量的key在同一时刻集体失效。
+
+https://mp.weixin.qq.com/s/RME5b3plT97nYfUaCl9ePw
+
+关于缓存和数据库强一致的可行方案
+
+https://mp.weixin.qq.com/s/gQAA2-YuvTHrL2IP8Bco6w
+
+缓存与数据库的数据一致性方案介绍
+
+https://mp.weixin.qq.com/s/Gm7S0a5VN9L57wlry4-t6w
+
+缓存关注点——先写DB还是“缓存”？
+
+https://mp.weixin.qq.com/s/q-R7kv4696LooHy3Hn-H1A
+
+分布式系统关注点——缓存背后的“毁灭种子”
+
+https://mp.weixin.qq.com/s/cUBSOGFfkWNu91r9agXszQ
+
+高并发系统三大利器之缓存
+
 ## 参考
 
 https://mp.weixin.qq.com/s/ActS6PxbtZGqPb0jOn0iFg
@@ -283,10 +309,6 @@ https://mp.weixin.qq.com/s/jCFjhkwQpj1_P-seQurPqQ
 
 SQL解析在美团点评中的应用
 
-https://mp.weixin.qq.com/s/RME5b3plT97nYfUaCl9ePw
-
-关于缓存和数据库强一致的可行方案
-
 https://mp.weixin.qq.com/s/Al0yvkv0FUPjEBtcxS6Fmg
 
 传统数据仓库和云数据仓库的区别
@@ -311,10 +333,6 @@ https://mp.weixin.qq.com/s/yQSMSLBYg4iauu8yeUfvjw
 
 深度解读！时序数据库HiTSDB：分布式流式聚合引擎
 
-https://mp.weixin.qq.com/s/gQAA2-YuvTHrL2IP8Bco6w
-
-缓存与数据库的数据一致性方案介绍
-
 https://mp.weixin.qq.com/s/m76PFxbcY6_-XyeU7uu4Jg
 
 数据库的最简单实现
@@ -330,47 +348,3 @@ https://mp.weixin.qq.com/s/pZnAcjFlBM2I4Hyctd6MHw
 https://mp.weixin.qq.com/s/O3A5gVewRQ11Z8RdPcs-9w
 
 一文看懂Pinterest如何构建时间序列数据库系统Goku
-
-https://mp.weixin.qq.com/s/5Qcbz6dT20Sa_OvRfbNXNw
-
-如何给新来的师妹解释什么是数据库的脏读、不可重复读和幻读
-
-https://mp.weixin.qq.com/s/1zarqgOh9-3chlBsB4TsuA
-
-物联网时代数据数据库如何选型？
-
-https://mp.weixin.qq.com/s/O94Q1Dxe8TnbCMv9d_hlOg
-
-Uber推出数据湖集成神器DBEvents，支持MySQL、Cassandra等
-
-https://mp.weixin.qq.com/s/AcuFiHgRJg2OcNGtfjRxYA
-
-我们对比了5款数据库，告诉你NewSQL的独到之处
-
-https://mp.weixin.qq.com/s/Gm7S0a5VN9L57wlry4-t6w
-
-缓存关注点——先写DB还是“缓存”？
-
-https://mp.weixin.qq.com/s/q-R7kv4696LooHy3Hn-H1A
-
-分布式系统关注点——缓存背后的“毁灭种子”
-
-https://mp.weixin.qq.com/s/DaspXFLPASYE7N0WHllcYQ
-
-Cassandra的过去、现在、未来
-
-https://mp.weixin.qq.com/s/cLIrRmcS5sbiDVl0cwDlIw
-
-Cassandra在时空数据上的探索
-
-https://mp.weixin.qq.com/s/ufficZ7cCvRFdEpaAfm8Fg
-
-面试官问：讲讲高并发下的接口幂等性怎么实现？
-
-https://www.jianshu.com/p/0355d9e5ba0e
-
-数据库三大范式
-
-https://mp.weixin.qq.com/s/QbwTY8Tfkv1uUdsL9vk8iw
-
-一文看懂阿里文娱大数据OLAP选型

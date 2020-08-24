@@ -241,6 +241,26 @@ https://deck.gl/
 
 # GAN参考资源+++
 
+https://zhuanlan.zhihu.com/p/50790727
+
+SeqGAN: Sequence GAN with Policy Gradient
+
+https://mp.weixin.qq.com/s/bH5yYbwq6NGQJ84xUDhoxg
+
+生成对抗网络在图像翻译上的应用
+
+https://mp.weixin.qq.com/s/3Gsmrl4HbcnXpje0nyAq2w
+
+中国西北大学和北京大学的研究结果是否将终结CAPTCHA验证码时代？
+
+https://zhuanlan.zhihu.com/p/53260242
+
+抛开复杂证明，我们从直觉上理解W-GAN为啥这么好训
+
+https://mp.weixin.qq.com/s/FJA8Tctq_p4Mj-KgNn_OGg
+
+为什么让GAN一家独大？Facebook提出非对抗式生成方法GLANN
+
 https://mp.weixin.qq.com/s/SGCoCy8wJEhEpLSHrYK3pQ
 
 韩松、朱俊彦等人提出GAN压缩法：算力消耗不到1/9，现已开源

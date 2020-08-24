@@ -237,6 +237,50 @@ https://www.zhihu.com/question/406517759
 
 如何看待Linus Torvalds对AVX512的评价？
 
+## Cache
+
+https://mp.weixin.qq.com/s/cSu-P-aDSXH0CYLN2HNrxw
+
+深入理解Cache（上）
+
+https://mp.weixin.qq.com/s/rml_wqePIx8vOk2ZO9_GMA
+
+深入理解Cache（下）
+
+https://mp.weixin.qq.com/s/Lydg1TMlNO_98Z-NF5BIBQ
+
+理解CPU Cache
+
+https://mp.weixin.qq.com/s/8g33nTI_-i9Rzmu-5Up-HA
+
+高性能编程：三级缓存（LLC）访问优化
+
+https://mp.weixin.qq.com/s/QidAD9OuVdEXFqxRMPx5lQ
+
+响应速度不给力？解锁正确缓存姿势
+
+https://mp.weixin.qq.com/s/570O2BloWjy3q0_m_mfiZg
+
+CPU缓存一致性协议
+
+https://mp.weixin.qq.com/s/ziJ8OFiLA1it3sQvycN7Mg
+
+翻越缓存的三座大山
+
+https://zhuanlan.zhihu.com/p/63494668
+
+显存为什么不能当内存使？内存、Cache和Cache一致性
+
+## Bélády's Algorithm
+
+Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。
+
+>László Bélády，1928年生，匈牙利计算机科学家。Technical University of Budapest本硕。IBM研究员。
+
+https://mp.weixin.qq.com/s/AdmEd1FHxpZUwSGYy3qggg
+
+利用cpu缓存实现高性能程序
+
 ## 参考
 
 https://mp.weixin.qq.com/s/Cij_95iLbAm0AEtrSb72_A
@@ -292,49 +336,3 @@ https://zhuanlan.zhihu.com/p/34223088
 https://zhuanlan.zhihu.com/p/30565679
 
 人工智能技术热潮中，是否存在破解苹果A11处理器的可能？
-
-https://mp.weixin.qq.com/s/UWpp2r0_yDxNyJk-cldVyA
-
-处理器高危漏洞无人幸免？树莓派：我们不受影响
-
->最近的Meltdown和Spectre漏洞被炒的沸沸扬扬，然而能用python语言讲述复杂的CPU计算原理，这是该文的一大创见。
-
-https://mp.weixin.qq.com/s/v_BsfSFp-LwiCOFKaMIS_g
-
-后摩尔时代，如何给你的CPU减负？
-
-https://mp.weixin.qq.com/s/gpfMOW7gzVa2HhYOlDy2nQ
-
-从Intel和ARM争霸战，看看做芯片有多难
-
-https://mp.weixin.qq.com/s/7QKbyJ-Xa2dgHIkwBWJ4eA
-
-关于芯片，这篇说得最详细！
-
-https://zhuanlan.zhihu.com/p/43768401
-
-如何像搭积木一样构建CPU？Intel和AMD都是怎么做的？
-
-https://mp.weixin.qq.com/s/cSu-P-aDSXH0CYLN2HNrxw
-
-深入理解Cache（上）
-
-https://mp.weixin.qq.com/s/rml_wqePIx8vOk2ZO9_GMA
-
-深入理解Cache（下）
-
-https://mp.weixin.qq.com/s/Lydg1TMlNO_98Z-NF5BIBQ
-
-理解CPU Cache
-
-https://mp.weixin.qq.com/s/8g33nTI_-i9Rzmu-5Up-HA
-
-高性能编程：三级缓存（LLC）访问优化
-
-https://mp.weixin.qq.com/s/QidAD9OuVdEXFqxRMPx5lQ
-
-响应速度不给力？解锁正确缓存姿势
-
-https://zhuanlan.zhihu.com/p/48593932
-
-CPU底部的小块是干什么用的？为什么CPU这么多电源引脚？

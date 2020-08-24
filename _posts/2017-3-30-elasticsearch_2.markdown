@@ -368,11 +368,19 @@ https://en.wikipedia.org/wiki/Flynn%27s_taxonomy
 
 CPU通常是SISD和SIMD的，而GPU则是SIMD的，超级计算机则是MIMD的。
 
+SIMT: Single Instruction Multiple Threads.
+
+SIMT最早是Nvidia发明的概念，仅用于GPU领域。它和SIMD的差异很小。
+
 参考：
 
 https://zhuanlan.zhihu.com/p/31271788
 
 SIMD指令集
+
+https://zhuanlan.zhihu.com/p/113360369
+
+从现代GPU编程角度看SIMD与SIMT
 
 ## 术语
 
@@ -405,23 +413,3 @@ https://mp.weixin.qq.com/s/cUFQ6EADa39h2eFoa_Dh0A
 https://mp.weixin.qq.com/s/_tABIMkWX8L5xQFmvPI7rw
 
 有效稳定对抗模型训练过程，伯克利提出变分判别器瓶颈
-
-https://zhuanlan.zhihu.com/p/50790727
-
-SeqGAN: Sequence GAN with Policy Gradient
-
-https://mp.weixin.qq.com/s/bH5yYbwq6NGQJ84xUDhoxg
-
-生成对抗网络在图像翻译上的应用
-
-https://mp.weixin.qq.com/s/3Gsmrl4HbcnXpje0nyAq2w
-
-中国西北大学和北京大学的研究结果是否将终结CAPTCHA验证码时代？
-
-https://zhuanlan.zhihu.com/p/53260242
-
-抛开复杂证明，我们从直觉上理解W-GAN为啥这么好训
-
-https://mp.weixin.qq.com/s/FJA8Tctq_p4Mj-KgNn_OGg
-
-为什么让GAN一家独大？Facebook提出非对抗式生成方法GLANN

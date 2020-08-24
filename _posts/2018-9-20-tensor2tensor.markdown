@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Tensor2Tensor, NN中间语言, MXNet
+title:  Tensor2Tensor, NN中间语言, MXNet, Horovod
 category: AI 
 ---
 
@@ -314,3 +314,21 @@ https://zhuanlan.zhihu.com/p/42345854
 https://www.zhihu.com/question/392035070
 
 如何看待亚马逊AI李沐团队大批人员离职?
+
+# Horovod
+
+Horovod是Uber开源的一套分布式深度学习框架。
+
+官网：
+
+https://eng.uber.com/horovod/
+
+代码：
+
+https://github.com/horovod/horovod
+
+参考：
+
+https://zhuanlan.zhihu.com/p/40578792
+
+Horovod-基于TensorFlow分布式深度学习框架

@@ -321,6 +321,10 @@ https://mp.weixin.qq.com/s/hiXfq_eR3OWbp_xq9hpxHg
 
 ----
 
+双曲拱坝具有极高的厚高比。例如，瓦依昂拱坝，高262m，最大底厚22.1m，厚高比仅0.084。
+
+副坝：只能挡水，而没有泄洪能力的坝体。
+
 http://blog.sina.com.cn/s/blog_4b7c1f540100t0rq.html
 
 瓦依昂大坝的悲剧

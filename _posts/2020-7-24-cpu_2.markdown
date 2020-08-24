@@ -9,6 +9,32 @@ category: resource
 
 # CPU
 
+https://mp.weixin.qq.com/s/UWpp2r0_yDxNyJk-cldVyA
+
+处理器高危漏洞无人幸免？树莓派：我们不受影响
+
+>最近的Meltdown和Spectre漏洞被炒的沸沸扬扬，然而能用python语言讲述复杂的CPU计算原理，这是该文的一大创见。
+
+https://mp.weixin.qq.com/s/v_BsfSFp-LwiCOFKaMIS_g
+
+后摩尔时代，如何给你的CPU减负？
+
+https://mp.weixin.qq.com/s/gpfMOW7gzVa2HhYOlDy2nQ
+
+从Intel和ARM争霸战，看看做芯片有多难
+
+https://mp.weixin.qq.com/s/7QKbyJ-Xa2dgHIkwBWJ4eA
+
+关于芯片，这篇说得最详细！
+
+https://zhuanlan.zhihu.com/p/43768401
+
+如何像搭积木一样构建CPU？Intel和AMD都是怎么做的？
+
+https://zhuanlan.zhihu.com/p/48593932
+
+CPU底部的小块是干什么用的？为什么CPU这么多电源引脚？
+
 https://zhuanlan.zhihu.com/p/51145563
 
 TDP是CPU的功耗吗？TDP是固定不变的吗？
@@ -44,10 +70,6 @@ RISC-V精简到何种程度？能省的都省了！
 https://mp.weixin.qq.com/s/26se041cc9aBRw16kvPPjA
 
 芯片制造新模式--像搭积木一样造芯片
-
-https://mp.weixin.qq.com/s/570O2BloWjy3q0_m_mfiZg
-
-CPU缓存一致性协议
 
 https://mp.weixin.qq.com/s/9y5HFTQr2QP12iR858BFtg
 
@@ -219,10 +241,6 @@ https://mp.weixin.qq.com/s/XcC18tulYdnwqlusg2QrxA
 
 嵌入式内存STT-MRAM趋势分析
 
-https://zhuanlan.zhihu.com/p/63494668
-
-显存为什么不能当内存使？内存、Cache和Cache一致性
-
 https://zhuanlan.zhihu.com/p/62234511
 
 DDR3 vs DDR4?为什么说内存是个很傻的设备？DDR5在哪里？
@@ -230,10 +248,6 @@ DDR3 vs DDR4?为什么说内存是个很傻的设备？DDR5在哪里？
 https://zhuanlan.zhihu.com/p/40601422
 
 双通道、四通道内存对游戏重要吗？
-
-https://mp.weixin.qq.com/s/ziJ8OFiLA1it3sQvycN7Mg
-
-翻越缓存的三座大山
 
 # 安全
 
