@@ -381,6 +381,10 @@ https://mp.weixin.qq.com/s/QklCVuukfElVDBFNxLXNKQ
 
 哈希革新Transformer：这篇ICLR高分论文让一块GPU处理64K长度序列
 
+https://zhuanlan.zhihu.com/p/161058660
+
+⾼维特征的哈希技巧
+
 # 姿态/行为检测进阶+
 
 https://mp.weixin.qq.com/s/-HEYU_El8xysk8atHYx1Mg

@@ -394,3 +394,7 @@ https://mp.weixin.qq.com/s/1EeYmZGoa-xpWmIvUoqCyw
 https://mp.weixin.qq.com/s/p9HpH2e5ShQCFcCxVNvMbg
 
 清华开源迁移学习算法库
+
+https://mp.weixin.qq.com/s/vzUt-5C_dRAChEfQYLp4lA
+
+PyTorch实现，GitHub 4000星：这是微软开源的计算机视觉库

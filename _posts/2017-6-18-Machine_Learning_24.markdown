@@ -321,3 +321,7 @@ https://mp.weixin.qq.com/s/Z5cs6X1tFq9uKGfo3aHgmw
 https://mp.weixin.qq.com/s/VBA02WHBJmU77RPLtIzprA
 
 特征工程入门：应该保留和去掉那些特征
+
+https://mp.weixin.qq.com/s/BfZ9BQXtOsEXCkAR3QYHhA
+
+特征工程了解一下
