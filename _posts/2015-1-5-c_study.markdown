@@ -394,7 +394,7 @@ typedef struct Student
 
 但是在C++中：
 
-```c++
+```cpp
 struct Student
 {
   int a;
@@ -405,7 +405,7 @@ struct Student
 
 所以当给C++的库提供C的接口时，经常可以看见如下用法：
 
-```c++
+```cpp
 typedef struct Student Student;
 ```
 

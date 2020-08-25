@@ -321,7 +321,17 @@ AST：abstract syntax tree
 
 ![](/images/img3/multi_pass.jpg)
 
-以上两图展示了One pass/Single pass与Two pass/Multi pass之间的差异。
+以上两图展示了One pass/Single pass与Two pass/Multi pass之间的差异。所谓Pass，就是将代码/AST扫描并处理一遍。
+
+早期的编译器一般是Single pass的，它虽然结构简单，但是不便于扩展。所以后来又出现了Multi pass。与之对应的编译器流程，亦被分为前端和后端两部分。
+
+前端：source code -> AST
+
+后端：AST -> target code
+
+而编译流程的每一步，则被抽象为Pass，这个称呼最早为LLVM采用，进而扩展到整个编译原理领域。
+
+pass分为两类，一类是分析(analysis)pass，负责收集信息共其它pass使用，辅助调试或使程序可视化；另一类是变换(transform)pass，改变程序的dataflow/controlflow。
 
 https://www.geeksforgeeks.org/single-pass-two-pass-and-multi-pass-compilers/
 

@@ -156,6 +156,25 @@ int sum(Args&&... args) {
 
 上述函数是一个对`+`运算符的fold expression。
 
+再来一个dispatch的例子：
+
+```cpp
+CheckDispatch<bool, float, double, uint8_t, uint16_t, uint32_t, uint64_t, int8_t, int16_t>();
+
+template <typename Type, typename Next, typename... Types>
+void CheckDispatch() {
+  if (type == GetType<Type>())
+    Check<Type>();
+  else
+    CheckDispatch<Next, Types...>();
+}
+
+template <>
+void Check<float>() {
+    //do sth
+}
+```
+
 参考：
 
 https://www.jianshu.com/p/d22904f30930
@@ -220,6 +239,14 @@ typeid可用于打印类型名称。这里的类型可以是固定类型，也�
 
 `cout << typeid(int).name() << typeid(T).name() << endl;`
 
+# 判断模板参数的实际类型
+
+```cpp
+if (std::is_same<float, T>::value) {
+    //do sth
+}
+```
+
 # C++ thread
 
 长期以来，C/C++的线程编程主要依赖pthread库，但是这个情况在C++ 11之后有所改观，因为C++ 11的标准库已经支持thread了。
@@ -258,7 +285,7 @@ https://segmentfault.com/a/1190000006679917
 
 # explicit
 
-```c++
+```cpp
 class Point {
 public:
     int x, y;
@@ -353,7 +380,7 @@ X x;
 
 default仅用于类的特殊成员函数，且该特殊成员函数没有默认参数。这里的特殊成员函数包括：默认构造函数，析构函数，拷贝函数以及拷贝赋值函数。
 
-```c++
+```cpp
 class X {
 public:
     int f() = default: //错误，f()非特殊成员函数
@@ -383,7 +410,7 @@ std::cout << std::endl;
 
 # const
 
-```c++
+```cpp
 class A
 {
    void function() const; //常成员函数, 它不改变对象的成员变量,

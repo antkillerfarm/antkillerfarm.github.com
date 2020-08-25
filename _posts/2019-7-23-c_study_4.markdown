@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  boost, Test framework, Objective-C
+title:  C/C++编程心得（四）, boost, Test framework, Objective-C
 category: language 
 ---
 
@@ -11,7 +11,7 @@ category: language
 
 ## 虚函数
 
-```c++
+```cpp
 class Shape {
 public:
     virtual void Draw() const = 0;    // 1) 纯虚函数
@@ -25,7 +25,7 @@ class Rectangle: public Shape { ... };
 
 基类和派生类都有该函数：
 
-```c++
+```cpp
 Rectangel rc; // rc is an object of type Rectangle
 Shape *pB = &rc; // get pointer to rc
 Rectangle *pD = &rc; // get pointer to rc
@@ -40,7 +40,7 @@ pD->ObjectID(); // calls Rectagle::ObjectID()
 
 基类和派生类都有该函数：
 
-```c++
+```cpp
 Rectangel rc; // rc is an object of type Rectangle
 Shape *pB = &rc; // get pointer to rc
 Rectangle *pD = &rc; // get pointer to rc
@@ -53,7 +53,7 @@ pD->ObjectID(); // calls Rectagle::ObjectID()
 
 - 纯虚函数虽然要求派生类必须实现该函数，但并不意味着基类就不可以实现。但需要用特殊的语法才能调用基类实现。
 
-```c++
+```cpp
 ps1->Shape::Draw(); // calls Shape::draw
 ```
 
@@ -63,7 +63,7 @@ ps1->Shape::Draw(); // calls Shape::draw
 
 这是override的4种错误情况：
 
-```c++
+```cpp
 class Base {
 public:
     virtual void mf1() const;
@@ -83,7 +83,7 @@ public:
 
 由于声明上的差异，这4种情况均无法override，且不易查找。
 
-```c++
+```cpp
 class Derived: public Base {
 public:
     virtual void mf1() const override;// adding "virtual" is OK, but not necessary
@@ -124,7 +124,7 @@ ANSI和K&R两种函数定义风格
 
 对于std::vector来说，begin()/end()返回iterator，而front()/back()返回的是element。此外，还有cbegin()/cend()返回const iterator。
 
-```c++
+```cpp
 template< class InputIt >
 vector( InputIt first, InputIt last,
         const Allocator& alloc = Allocator() );
@@ -165,7 +165,7 @@ map和set都不允许重复值，如果需要重复的话，可以使用multiset
 
 ----
 
-```c++
+```cpp
 template<typename T>
 struct S {
     template<typename U> void foo(){}
@@ -186,7 +186,7 @@ void bar()
 
 数字转字符串：
 
-```c++
+```cpp
 double a = 123.32;
 string res;
 stringstream ss;
@@ -196,7 +196,7 @@ ss >> res;//Or res = ss.str();
 
 字符串转数字：
 
-```c++
+```cpp
 string a = "123.32";
 double res;
 stringstream ss;

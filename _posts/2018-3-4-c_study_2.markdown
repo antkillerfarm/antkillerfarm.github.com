@@ -55,7 +55,9 @@ strtok函数多用于分割字符串，但它会改变被分割字符串的值�
 
 **次要的不同**：calloc返回的是一个数组，而malloc返回的是一个对象。
 
-## 惰性求值
+# 惰性求值
+
+使用延迟求值的时候，表达式不在它被绑定到变量之后就立即求值，而是在后面的某个时候求值。
 
 http://www.cnblogs.com/gtarcoder/p/4811614.html
 
@@ -233,7 +235,7 @@ std::unique_ptr<std::FILE, decltype(&close_file)> fp(std::fopen("demo.txt", "r")
 
 `shared_ptr`既然号称共享，那自然有一定的共享规则在：
 
-```c++
+```cpp
 shared_ptr<int> sp1(new int(10));
 shared_ptr<int> sp2(sp1), sp3;
 sp3 = sp1;
@@ -248,7 +250,7 @@ sp1,sp2,sp3是相互关联的共享指针，共同控制所指内存的生存期
 
 ----
 
-```c++
+```cpp
 auto p = std::make_unique<XXX>();
 void f(XXX*);
 f(p); // error
