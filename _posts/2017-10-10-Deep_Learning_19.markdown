@@ -338,3 +338,7 @@ https://www.zhihu.com/question/366088445
 https://mp.weixin.qq.com/s/LxdZ5xRuqQjNbG9FhhD0Aw
 
 图神经网络越深，表现就一定越好吗？
+
+https://mp.weixin.qq.com/s/d_gf12bzVySHkXFl5rqVTQ
+
+图神经网络前沿综述：动态图网络

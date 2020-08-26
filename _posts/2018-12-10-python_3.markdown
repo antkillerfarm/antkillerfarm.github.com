@@ -134,6 +134,10 @@ https://mp.weixin.qq.com/s/HcmOmwWQFBIOZs8p3nr7CQ
 
 让Python更加充分的使用Sqlite3
 
+https://mp.weixin.qq.com/s/V2wdmpb_eAGwj6DELEn2vg
+
+原来Python自带了数据库，用起来真方便！
+
 ## zip
 
 Python的zip函数和数据压缩的zip算法没有任何关系。
