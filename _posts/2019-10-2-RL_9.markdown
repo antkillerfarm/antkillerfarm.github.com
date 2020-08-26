@@ -73,6 +73,12 @@ category: RL
 
 >Vilfredo Pareto，1848~1923，意大利经济学家、社会学家。
 
+参考：
+
+https://www.zhihu.com/question/414629107
+
+帕累托最优和功利主义有区别吗?
+
 ## 纳什均衡
 
 Nash equilibrium的定义：
