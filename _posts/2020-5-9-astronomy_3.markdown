@@ -77,6 +77,10 @@ https://mp.weixin.qq.com/s/VMfL5iF3BJg9Xnu5zI3RAA
 
 NASA毅力号直播攻略来了！万字长文详解火星任务：直升机飞行测试、寻找生命迹象、开启往返火星第一步
 
+https://mp.weixin.qq.com/s/rv2ayzNS4OpFHFKyW0Papw
+
+火星陨石的地球“流浪记”
+
 # 阿波罗50年
 
 https://mp.weixin.qq.com/s/79e6p2TYpttO-NR1of21jw

@@ -256,6 +256,16 @@ https://en.wikipedia.org/wiki/Sensitivity_and_specificity
 
 如果是做搜索，那就是保证召回的情况下提升准确率；如果做疾病监测、反垃圾，则是保准确率的条件下，提升召回率。所以，在两者都要求高的情况下，可以用F-measure来衡量。
 
+虽然precision、recall和F1为我们提供了一个单值度量，但它们不考虑返回的搜索结果的顺序。为了解决这一局限性，人们设计了以下排序感知的度量标准：
+
+Mean Reciprocal Rank(MRR)
+
+Average Precision(AP)
+
+Mean Average Precision(MAP)
+
+----
+
 Accuracy和Precision是一对容易混淆的概念。其一般定义如下图所示：
 
 ![](/images/article/Accuracy_and_precision.svg)
@@ -271,6 +281,24 @@ Accuracy和Precision是一对容易混淆的概念。其一般定义如下图所
 **Golden**：Golden这个术语的使用范围并不局限于ML领域，凡是能够给出“标准答案”的地方，都可以将该答案称为Golden。
 
 比如在DL领域的硬件优化中，通常使用标准算法生成Golden结果，然后用优化之后的运算结果与之比对，以验证优化的正确性。
+
+----
+
+上述内容中，预测结果和标签之间只有真和假两种关系，因此又被称为**二元相关性**问题。
+
+类似的还有**分等级的相关性**问题。例如，我们有一个排序模型，它会为一个特定的查询返回5个最相关的结果。这时预测结果和ground-truth之间就不是简单的真和假的关系了。
+
+比如，预测结果的第一名虽然不是ground-truth的第一名，但却是ground-truth的第二名。这样的话，显然就不能直接否定预测结果了。
+
+评估这类问题，可以采用如下度量：
+
+Cumulative Gain
+
+Discounted Cumulative Gain
+
+Normalized Discounted Cumulative Gain
+
+----
 
 参考：
 
@@ -305,6 +333,10 @@ https://mp.weixin.qq.com/s/u-QTHFSA-8rwvL0KBVYXjQ
 https://mp.weixin.qq.com/s/sKiAwLoxdP9yyZX0-R4UrA
 
 一文读懂AUC-ROC
+
+https://mp.weixin.qq.com/s/k-Jm24aMlPgWMtFYaKNlog
+
+信息检索中的度量指标全解析
 
 # 训练集、验证集和测试集
 

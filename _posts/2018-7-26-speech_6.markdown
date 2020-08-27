@@ -27,6 +27,10 @@ https://zhuanlan.zhihu.com/p/26680599
 
 语音信号预处理及特征参数提取
 
+https://mp.weixin.qq.com/s/QuqdbDmdKCQ_KPmwLm0GRg
+
+机器学习中的音频特征：理解Mel频谱图
+
 # FBank
 
 Filter bank和MFCC的计算步骤基本一致，只是没有做IDFT而已。

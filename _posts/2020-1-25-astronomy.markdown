@@ -125,6 +125,16 @@ https://www.atnf.csiro.au/outreach/education/senior/astrophysics/stellarevolutio
 
 The Hertzsprung-Russell Diagram
 
+----
+
+![](/images/img3/B2FH.jpg)
+
+https://mp.weixin.qq.com/s/ZIHqRmKHLUXm_cj-U7HYFw
+
+出格者弗雷德·霍伊尔
+
+----
+
 https://mp.weixin.qq.com/s/tqUNYZk8I1Yf-u3DEIxNxA
 
 一篇读懂超新星——宇宙中最酷的星

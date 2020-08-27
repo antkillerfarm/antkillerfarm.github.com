@@ -129,6 +129,10 @@ https://mp.weixin.qq.com/s/E-1Anh9aEz9v7WiFu0mPpQ
 
 机器学习信号处理，100页ppt
 
+https://www.mit.edu/~amidi/teaching/data-science-tools/
+
+Data science tools
+
 # English
 
 SOTA(state of the art)：目前最高水平

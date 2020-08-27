@@ -145,6 +145,18 @@ http://www.archives.sh.cn/shjy/scbq/201403/t20140310_40396.html
 
 ----
 
+任何一个民族、一个国家，都需要学习别的民族、别的国家的长处，学习人家的先进科学技术。我们不仅因为今天科学技术落后，需要努力向外国学习，即使我们的科学技术赶上了世界先进水平，也还要学习人家的长处。
+
+你告诉邓小平，他可以派10万人。
+
+参考：
+
+https://mp.weixin.qq.com/s/29zU7VYU4P2gRR1x_saBeA
+
+​1978-2018：四十年中国人赴美留学史
+
+----
+
 ![](/images/img3/top10.png)
 
 https://mp.weixin.qq.com/s/1NXjgkr3xWDzqm7Y-9x7-Q

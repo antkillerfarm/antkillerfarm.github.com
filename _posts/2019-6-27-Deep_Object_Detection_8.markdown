@@ -107,6 +107,28 @@ https://mp.weixin.qq.com/s/LN2l67jhivb0hyy6JSLMVA
 
 3D目标检测深度学习方法数据预处理综述
 
+# 旋转框检测
+
+在真实的场景中，许多时候，我们不仅仅需要找一个“方方正正”的框把物体框起来(英文中，这种框称之为Axis-Aligned)，而可能更需要的是能够找一个，“有一些旋转角度的，能够把物体完全的包络起来的框”。
+
+![](/images/img3/rotated_OD.jpg)
+
+上右图使用水平的检测框从图中将物体扣出，效果会很差，因为：
+
+1、每个检测框中还会同时包含很多其他物体的“一部分”。
+
+2、水平检测框相互之间的IoU值较高，在NMS过程中很容易被抑制掉。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/105841613
+
+旋转框检测方法综述-FasterRCNN的问题
+
+https://zhuanlan.zhihu.com/p/105881332
+
+旋转框检测方法综述-RotateAnchor系列
+
 # 目标检测进阶
 
 https://mp.weixin.qq.com/s/1nlOJ7X9ogBHTl1j2adqyg
@@ -380,27 +402,3 @@ https://mp.weixin.qq.com/s/XdH54ImSfgadCoISmVyyVg
 https://mp.weixin.qq.com/s/h_ENriEXr7WI_XR_DtxpMQ
 
 这样可以更精确的目标检测——超网络
-
-https://mp.weixin.qq.com/s?__biz=MzI5MDUyMDIxNA==&mid=2247486104&idx=1&sn=5580a4680f3190adb98638471e9b5982
-
-百度视觉团队斩获 ECCV Google AI 目标检测竞赛冠军，获奖方案全解读
-
-https://zhuanlan.zhihu.com/p/54182158
-
-GHM（解决one-stage样本不平衡问题）目标检测算法论文阅读笔记
-
-https://mp.weixin.qq.com/s/nL9l7hvG3RG7G7LzCzzvug
-
-旷视科技2018 COCO负责人俞刚：如何构建检测与分割的冠军系统
-
-https://mp.weixin.qq.com/s/ZQqcsJenqkXtH1czOe5WnA
-
-阿里巴巴提出Auto-Context R-CNN算法，刷出Faster RCNN目标检测新高度
-
-https://mp.weixin.qq.com/s/aLYQepnr_BjS27Fb-zoZ_g
-
-迈向完全可学习的物体检测器：可学习区域特征提取方法
-
-https://zhuanlan.zhihu.com/p/43655912
-
-“别挡我，我要C位出道！”谈谈深度学习目标检测中的遮挡问题

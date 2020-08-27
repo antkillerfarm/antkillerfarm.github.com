@@ -105,6 +105,10 @@ https://mp.weixin.qq.com/s/KRJ5e50NuACk2ZXi1Rxkxw
 
 YOLOv4中的数据增强
 
+https://mp.weixin.qq.com/s/a_roXfjNX2szJMUrww0Fmg
+
+YOLOv4中的Mish激活函数
+
 # YOLOv5
 
 YOLOv5由Darknet的另一贡献者Ultralytics创建并维护（2010.5）。这是一家总部位于美国的粒子物理和人工智能初创公司。

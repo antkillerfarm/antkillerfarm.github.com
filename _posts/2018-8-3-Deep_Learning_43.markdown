@@ -101,6 +101,10 @@ https://mp.weixin.qq.com/s/6mZ9RhgUpFV-RyOkWibEwQ
 
 剃头挑子、京韵大鼓、摆地摊，AI技术重现的老北京原声影像又火了，网友：这口音太过真实
 
+https://mp.weixin.qq.com/s/h5gZCKRGZlG03DZL-2FWIw
+
+大谷老师又双叒叕有新作品啦！这一次，他让兵马俑活了过来
+
 ----
 
 最左边的那位是北洋政府第一任总理唐绍仪之第八女名甘唐宝玫（1902-1941）（后离婚再嫁改姓岑）～中国历史上的首个大型时装show的组织者。

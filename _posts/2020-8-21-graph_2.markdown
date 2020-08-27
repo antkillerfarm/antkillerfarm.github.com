@@ -25,6 +25,12 @@ https://mp.weixin.qq.com/s/QrI23je3HqCFYkeVb9af8g
 
 如何利用Social Listening从在线垂直社区提炼有价值的信息---以汽车之家的口碑数据挖掘为例
 
+## 其他
+
+https://mp.weixin.qq.com/s/Xp3BQA91dN73PiSWQd0Avw
+
+深度学习技术在社会化推荐场景中的总结
+
 # PageRank算法
 
 ## 概述

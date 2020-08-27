@@ -103,6 +103,10 @@ https://mp.weixin.qq.com/s/ekN9AvS4V0dcDdBlGCs3Bg
 
 车道线检测：SCNN
 
+https://mp.weixin.qq.com/s/pQUKFZRgG1LNPmE6oHY3GA
+
+CurcveLane-NAS：华为&中大提出一种结合NAS的曲线车道检测算法
+
 ## 组合导航
 
 https://mp.weixin.qq.com/s/F8aLNue_qDlMyTAznBLC7g

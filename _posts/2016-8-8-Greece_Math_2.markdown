@@ -125,13 +125,17 @@ https://mp.weixin.qq.com/s/K4EIQyLSPvR3VTZp3dG4_g
 
 3.爱因斯坦在此基础上导出狭义相对论和原子弹理论。
 
-4.群众表示不服，你丫的理论的idea是洛伦兹的。
+4.群众表示不服，你丫的idea是洛伦兹的。
 
 5.爱因斯坦：我要放大招，看我的广义相对论。
 
 6.群众表示：看不懂。。。
 
 7.爱因斯坦：这就对了。
+
+https://mp.weixin.qq.com/s/ZkaaAJV7xuXpfogF4e7KQA
+
+窥探渣男天才爱因斯坦的一生
 
 ---
 

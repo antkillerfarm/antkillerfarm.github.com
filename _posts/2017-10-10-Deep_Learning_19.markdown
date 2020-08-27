@@ -342,3 +342,7 @@ https://mp.weixin.qq.com/s/LxdZ5xRuqQjNbG9FhhD0Aw
 https://mp.weixin.qq.com/s/d_gf12bzVySHkXFl5rqVTQ
 
 图神经网络前沿综述：动态图网络
+
+https://mp.weixin.qq.com/s/ea3sOkabOmaymlkeQJlZ1A
+
+图算法工程师 面试基础

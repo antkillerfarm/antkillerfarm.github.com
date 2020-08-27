@@ -179,6 +179,14 @@ npm有两种安装方式：
 
 然而也不用太过担心空间问题，npm有cache功能。下载的npm包放在~/.npm下，且每个包只有一份。所以暂时不用的工程，把node_modules删掉就行了。再次安装时，由于不用下载文件，速度还是非常快的。
 
+## yarn
+
+yarn是facebook开源的一款代替npm的js包管理工具。注意别和Hadoop YARN搞混了。
+
+https://www.jianshu.com/p/f05eabdf3ab6
+
+使用yarn包管理工具
+
 ## NW.js
 
 NW.js，也就是之前的node-webkit，是一个基于node.js的客户端开发SDK。其官网为：

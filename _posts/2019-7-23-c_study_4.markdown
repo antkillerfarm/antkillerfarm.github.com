@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  C/C++编程心得（四）, boost, Test framework, Objective-C
+title:  C/C++编程心得（四）, boost, Test framework
 category: language 
 ---
 
@@ -203,6 +203,22 @@ stringstream ss;
 ss << a;
 ss >> res;
 ```
+
+## POD
+
+POD，全称plain old data，plain代表它是一个普通类型，old代表它可以与c兼容，可以使用比如memcpy()这类c中最原始函数进行操作。
+
+POD数据类型主要用来解决C++与C之间数据类型的兼容性，以实现C++程序与C函数的交互。
+
+参考：
+
+https://blog.csdn.net/fu_zk/article/details/17028669
+
+C++的POD数据类型
+
+https://www.cnblogs.com/DswCnblog/p/6371071.html
+
+C++11 POD类型
 
 ## 参考
 
@@ -423,19 +439,3 @@ CTest是CMake集成的一个测试工具。
 https://www.cnblogs.com/457220157-FTD/p/4139149.html
 
 CTest
-
-# Objective-C
-
-## 环境搭建
-
-PC上搭建Objective-C（以下简称OC）开发环境，主要借助GNUstep开源项目的成果。
-
-以Ubuntu为例，步骤如下：
-
-1.安装软件包。
-
-`sudo apt-get install gnustep-devel libjpeg-dev libtiff5-dev gobjc-4.9`
-
-2.设置环境变量。
-
-`GNUSTEP_MAKEFILES=/usr/share/GNUstep/Makefiles`

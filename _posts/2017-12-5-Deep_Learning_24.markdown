@@ -251,6 +251,10 @@ https://zhuanlan.zhihu.com/p/97449724
 
 多目标跟踪（MOT）入门
 
+https://mp.weixin.qq.com/s/hCg0kn2x8q-K9n_96-7p8A
+
+基于深度学习的多目标跟踪（MOT）技术一览
+
 https://zhuanlan.zhihu.com/p/36462982
 
 多目标追踪算法：条件随机场算法
@@ -332,6 +336,30 @@ https://mp.weixin.qq.com/s/qpNbHKZ0V5do77jQlZDBBw
 从零开始学习Deep SORT+YOLO V3进行多目标跟踪
 
 # 目标检测进阶++
+
+https://mp.weixin.qq.com/s?__biz=MzI5MDUyMDIxNA==&mid=2247486104&idx=1&sn=5580a4680f3190adb98638471e9b5982
+
+百度视觉团队斩获 ECCV Google AI 目标检测竞赛冠军，获奖方案全解读
+
+https://zhuanlan.zhihu.com/p/54182158
+
+GHM（解决one-stage样本不平衡问题）目标检测算法论文阅读笔记
+
+https://mp.weixin.qq.com/s/nL9l7hvG3RG7G7LzCzzvug
+
+旷视科技2018 COCO负责人俞刚：如何构建检测与分割的冠军系统
+
+https://mp.weixin.qq.com/s/ZQqcsJenqkXtH1czOe5WnA
+
+阿里巴巴提出Auto-Context R-CNN算法，刷出Faster RCNN目标检测新高度
+
+https://mp.weixin.qq.com/s/aLYQepnr_BjS27Fb-zoZ_g
+
+迈向完全可学习的物体检测器：可学习区域特征提取方法
+
+https://zhuanlan.zhihu.com/p/43655912
+
+“别挡我，我要C位出道！”谈谈深度学习目标检测中的遮挡问题
 
 https://mp.weixin.qq.com/s/VtlSVF4d9LwPJhDEYSbgTg
 

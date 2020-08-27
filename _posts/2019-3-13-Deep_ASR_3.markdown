@@ -309,7 +309,15 @@ https://mp.weixin.qq.com/s/j9Kis3AsyYjo3EYOJ6XzBA
 
 端到端声源分离研究：现状、进展和未来
 
+https://mp.weixin.qq.com/s/RC2Yj0cCXBBJaPpflBLB-w
+
+语种识别
+
 # 语音合成参考资源
+
+https://mp.weixin.qq.com/s/jwV4glj8vIUKSelzeRrxSg
+
+语音合成
 
 https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw
 
