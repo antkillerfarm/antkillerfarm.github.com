@@ -7,7 +7,6 @@ category: linux
 * toc
 {:toc}
 
-
 # Uart驱动分析
 
 ## Write

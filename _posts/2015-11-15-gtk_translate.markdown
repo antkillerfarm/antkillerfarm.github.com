@@ -181,6 +181,12 @@ I2C相比于UART和SPI，其优点在于一个接口可以外接多个设备（�
 
 SMBus(System Management Bus,系统管理总线)是1995年由Intel提出的，应用于移动PC和桌面PC系统中的低速率通讯总线。由于它大部分基于I2C总线规范，因此在Linux内核中，被归类为I2C总线。
 
+参考：
+
+https://zhuanlan.zhihu.com/p/201075632
+
+什么是I3C总线？它和I2C和SMBus是什么关系？
+
 # 中文编码格式问题
 
 常用的中文编码格式，主要包括大陆的GB系列和台湾的BIG5系列。
