@@ -158,11 +158,11 @@ $$\delta_v = r + \gamma V_v(s') - V_v(s)$$
 上述方法不仅可用于TD方法，还可用于MC方法等，以下不加讨论的给出如下结论：
 
 $$\begin{align}
-\nabla_\theta J(\theta) &= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)\color{red}{v_t}] & \text{REINFORCE}\\
-&= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)\color{red}{Q_w(s,a)}] & \text{Q Actor-Critic}\\
-&= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)\color{red}{A_w(s,a)}] & \text{Advantage Actor-Critic}\\
-&= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)\color{red}{\delta}] & \text{TD Actor-Critic}\\
-&= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)\color{red}{\delta e}] & \text{TD(}\lambda\text{) Actor-Critic}
+\nabla_\theta J(\theta) &= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a){\color{red}{v_t}}] & \text{REINFORCE}\\
+&= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a){\color{red}{Q_w(s,a)}}] & \text{Q Actor-Critic}\\
+&= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a){\color{red}{A_w(s,a)}}] & \text{Advantage Actor-Critic}\\
+&= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a){\color{red}{\delta}}] & \text{TD Actor-Critic}\\
+&= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a){\color{red}{\delta e}}] & \text{TD(}\lambda\text{) Actor-Critic}
 \end{align}$$
 
 ## 参考

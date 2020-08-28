@@ -204,7 +204,12 @@ $$\chi^2 = \sum_{i=1}^n \frac{(O_i - E_i)^2}{E_i}$$
 
 ### 全自信度
 
-$$all\_confidence(A,B)=\frac{P(A\cap B)}{max\{P(A),P(B)\}}\\=min\{P(B|A),P(A|B)\}=min\{confidence(A\to B),confidence(B\to A)\}$$
+$$
+\begin{array}\\
+all\_confidence(A,B)=\frac{P(A\cap B)}{max\{P(A),P(B)\}}\\
+=min\{P(B|A),P(A|B)\}=min\{confidence(A\to B),confidence(B\to A)\}
+\end{array}
+$$
 
 ### 最大自信度
 
@@ -216,7 +221,12 @@ $$kulc(A,B)=\frac{confidence(A\to B)+confidence(B\to A)}{2}$$
 
 ### cosine距离
 
-$$cosine(A,B)=\frac{P(A\cap B)}{sqrt(P(A)*P(B))}=sqrt(P(A|B)*P(B|A))\\=sqrt(confidence(A\to B)*confidence(B\to A))$$
+$$
+\begin{array}\\
+cosine(A,B)=\frac{P(A\cap B)}{sqrt(P(A)*P(B))}=sqrt(P(A|B)*P(B|A))\\
+=sqrt(confidence(A\to B)*confidence(B\to A))
+\end{array}
+$$
 
 ### Leverage
 

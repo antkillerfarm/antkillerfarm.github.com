@@ -117,7 +117,7 @@ Python还能实现哪些AI游戏？
 
 ## Double DQN
 
-$$L=\left(\color{blue}{r+\gamma Q(s',\color{red}{\mathop{\arg\max}_{a'}Q(s',a',w)},w^-)}-Q(s,a,w)\right)^2$$
+$$L=\left({\color{blue}{r+\gamma Q(s',{\color{red}{\mathop{\arg\max}_{a'}Q(s',a',w)}},w^-)}}-Q(s,a,w)\right)^2$$
 
 Nature DQN的两个Q网络分离的还不够彻底，Double DQN用当前的Q网络来选择动作（公式中红色部分所示），而用目标Q网络来计算目标Q。
 
@@ -135,7 +135,7 @@ DQN系列(2): Double DQN算法原理与实现
 
 采样优先级采用目标Q值与当前Q值的差值来表示：
 
-$$| \color{blue}{r+\gamma \max_{a'}Q(s',a',w^-)}-Q(s,a,w) |$$
+$$| {\color{blue}{r+\gamma \max_{a'}Q(s',a',w^-)}}-Q(s,a,w) |$$
 
 优先级越高，那么采样的概率就越高。
 

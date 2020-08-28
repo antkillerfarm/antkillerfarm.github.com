@@ -148,6 +148,20 @@ https://mp.weixin.qq.com/s/LwWhHvc2Zdvv2OYBG6kCyw
 
 Linux调试三剑客——strace,lsof,tcpdump
 
+## LTP
+
+上面提到的主要是黑盒测试工具。
+
+白盒测试工具主要是Linux Test Project。
+
+官网：
+
+http://linux-test-project.github.io/
+
+代码：
+
+https://github.com/linux-test-project/ltp
+
 # 时间的表示方法
 
 一般遵循ISO 8601标准：

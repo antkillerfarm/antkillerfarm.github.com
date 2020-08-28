@@ -228,7 +228,7 @@ $$Q(s,a)=R(s,a)+\gamma \max(Q(\tilde s,\tilde a))$$
 
 显然从Q函数的定义来看，这两者是等价的。因此，我们的目标就是使这两者尽可能的一致，即：
 
-$$L=E[(\color{blue}{r+\gamma \max_{a'}Q(s',a',w)}-Q(s,a,w))^2]$$
+$$L=E[({\color{blue}{r+\gamma \max_{a'}Q(s',a',w)}}-Q(s,a,w))^2]$$
 
 上式中蓝色的部分即为target Q-value。
 
@@ -242,7 +242,7 @@ DQN最早发表于NIPS 2013，该版本的DQN，也被称为NIPS DQN。NIPS DQN�
 
 2015年初，Deepmind在Nature上提出了改进版本，是为Nature DQN。它改进了Loss函数：
 
-$$L=(\color{blue}{r+\gamma \max_{a'}Q(s',a',w^-)}-Q(s,a,w))^2$$
+$$L=({\color{blue}{r+\gamma \max_{a'}Q(s',a',w^-)}}-Q(s,a,w))^2$$
 
 上式中，计算目标Q值的网络使用的参数是$$w^-$$，而不是w。也就是说，原来NIPS DQN的target Q网络是动态变化的，跟着Q网络的更新而变化，这样不利于计算目标Q值，导致目标Q值和当前的Q值相关性较大。
 

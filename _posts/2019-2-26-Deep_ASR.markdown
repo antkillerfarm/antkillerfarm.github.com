@@ -213,8 +213,10 @@ CTC的输入/输出是many-to-one的，不支持one-to-one或one-to-many。比�
 Encoder-Decoder模型是sequence问题最常用的框架，它的数学形式为：
 
 $$
+\begin{array}\\
 H=encode(X)\\
 p(Y\mid X)=decode(H)
+\end{array}
 $$
 
 这里的H是模型的hidden representation。

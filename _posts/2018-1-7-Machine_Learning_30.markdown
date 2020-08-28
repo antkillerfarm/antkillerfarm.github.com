@@ -55,7 +55,12 @@ $$\text{e.g.}:\mathcal{M}=\arg\max_{\mathcal{M}\in M}F(\mathcal{D};\mathcal{M})$
 
 如果$$X_i$$是条件独立的话，则由上图可得：
 
-$$P(X_1,\dots,X_8)=P(X_2)P(X_4\mid X_2)P(X_5\mid X_2)P(X_1)P(X_3\mid X_1)\\P(X_6\mid X_3,X_4)P(X_7\mid X_6)P(X_8\mid X_5,X_6)$$
+$$
+\begin{array}\\
+P(X_1,\dots,X_8)=P(X_2)P(X_4\mid X_2)P(X_5\mid X_2)P(X_1)P(X_3\mid X_1)\\
+P(X_6\mid X_3,X_4)P(X_7\mid X_6)P(X_8\mid X_5,X_6)
+\end{array}
+$$
 
 这样，状态空间就缩小为$$2+4+4+2+4+8+4+8=36$$种组合了。
 

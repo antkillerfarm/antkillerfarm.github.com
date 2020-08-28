@@ -86,8 +86,11 @@ $$\sum_{i=1}^{n}p_i=1\tag{3}$$
 
 将公式2和公式3所述的两个约束，代入公式1，可得如下Lagrange乘子：
 
-$$J(p_i)=H_n/k-\alpha(\sum_{i=1}^{n}p_i-1)-\sum_{j=1}^{M}\beta_j(\sum_{i=1}^{n}f_i^{(j)}p_i-F_j)
-\\=-\sum_{i=1}^{n}p_i\ln p_i-\alpha\sum_{i=1}^{n}p_i+\alpha-\sum_{j=1}^{M}\sum_{i=1}^{n}\beta_jf_i^{(j)}p_i+\sum_{j=1}^{M}\beta_jF_j$$
+$$\begin{array}\\
+J(p_i)=H_n/k-\alpha(\sum_{i=1}^{n}p_i-1)-\sum_{j=1}^{M}\beta_j(\sum_{i=1}^{n}f_i^{(j)}p_i-F_j)\\
+=-\sum_{i=1}^{n}p_i\ln p_i-\alpha\sum_{i=1}^{n}p_i+\alpha-\sum_{j=1}^{M}\sum_{i=1}^{n}\beta_jf_i^{(j)}p_i+\sum_{j=1}^{M}\beta_jF_j
+\end{array}
+$$
 
 对$$p_i$$求导，可得：
 

@@ -341,7 +341,7 @@ https://xz.aliyun.com/t/7257
 
 初探LLVM&clang&pass
 
-llvm.org/docs/WritingAnLLVMPass.html
+http://llvm.org/docs/WritingAnLLVMPass.html
 
 Writing an LLVM Pass
 

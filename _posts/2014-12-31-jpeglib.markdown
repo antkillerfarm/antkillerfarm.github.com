@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Jpeglib使用指南, 各种压缩包的压缩和解压方法, 开源社区分裂史
+title:  Jpeglib使用指南, 各种压缩包的压缩和解压方法
 category: technology 
 ---
 
@@ -70,6 +70,20 @@ jpeg_read_scanlines(&cinfo, pBuffer, 1)执行之后，扫描线的内容被放�
 这一点还可以参考以下文档，不过该文针对的好像是旧版本，使用时要注意。
 
 http://blog.china.com/u/060803/5544/200608/15355.html
+
+# stb_image
+
+stb_image是一个C语言的图像解码库，支持JPG, PNG, TGA, BMP, PSD, GIF, HDR, PIC等格式。
+
+代码：
+
+https://github.com/nothings/stb
+
+参考：
+
+https://www.jianshu.com/p/5e4b99586282
+
+简单易用的图像解码库介绍——stb_image
 
 # 各种压缩包的压缩和解压方法
 
@@ -208,35 +222,3 @@ https://sparanoid.com/lab/7z/
 该算法的SDK：
 
 https://sparanoid.com/lab/7z/sdk.html
-
-# 开源社区分裂史
-
-有人的地方，就有江湖，开源社区也同样如此。本来一个战壕的弟兄，因为种种原因，而分道扬镳（或者专业一点叫做fork），从而导致社区的分裂，这并不是什么稀罕事。比如最知名的开源软件Linux，在早期的时候，就有所谓的ac分支，也就是Alan Cox发布的分支。只不过Alan Cox没有另起山头，因此这个只算分支，而不算分裂。但本文下面所要讲述的，可就不是这么小打小闹了。
-
-## ffmpeg vs libav
-
-2011年的时候，一群ffmpeg开发者，由于对项目管理者（肯定不是Fabrice Bellard，从log可以看出，这位老兄当时已经不管这个项目很多年了。）不满，而另立山头，创建了libav项目。这从两个项目的图标就可以看出来。话说libav的图标其实是ffmpeg早先的图标，只不过图标的创建者加入了libav项目，因此ffmpeg不得不换了一个类似的图标。
-
-应该说libav项目开局时的思路还是比较好的。但ffmpeg毕竟是个老项目，即使因为惯性，也足以继续吸引开发者开发并使用。这从提交的次数就可以看的很明显，从2011年8月（也就是libav起义时）到2012年底，libav提交6600次，而ffmpeg同期提交了16600次！
-
-当然，ffmpeg项目提交的内容实际上有很多都来自libav。Libav开发者指责FFmpeg项目负责人Michael Niedermayer盗用了他们的成果。据说Michael将Libav的代码合并到FFmpeg，让他成为了FFmpeg最大的贡献者，他递交的代码一度占了新增代码的80%。但正是因为有这样的搬运工的存在，使得ffmpeg最终赢得了这场竞争。
-
-2011年的时候，由于Debian的一个维护者，本身加入了libav项目的缘故，导致Debian/Ubuntu这个linux最大的发行版采用了libav。（典型的以权谋私，哈哈）但最终到了2015年，Debian社区在历时一年的讨论之后，还是放弃了libav项目。
-
-结论：ffmpeg胜。一般来说，后来者需要付出更大的努力，才能夺取先行者的领先地位。而ffmpeg在市场领先的情况下，仍采取虚心接纳的策略，基本杜绝了libav胜出的可能性。
-
-## OpenOffice vs LibreOffice
-
-同样是2011年，LibreOffice从OpenOffice中fork出来。fork的原因是由于Oracle收购Sun。众所周知，Oracle是仅次于MS的开源社区二号公敌。因此当Google挑头发起LibreOffice项目之后，开发者几乎一边倒的投向LibreOffice，基本没花什么功夫就打垮了OpenOffice。
-
-结论：LibreOffice胜。开源软件的生命力和魅力都在于开源，人心向背是开源软件胜负的根本。
-
-2020.5
-
-和LibreOffice同样遭遇的还有MySQL vs MariaDB。Oracle果然是开源社区的公敌。。。
-
-## DivX vs Xvid
-
-DivX本来是个开源项目。但有一天，几个项目管理者建立了一个商业公司，出于商业目的，而将其变成了闭源项目。这样一来，就激怒了为该项目无偿贡献代码的开源社区。作为回应，开源社区发起了Xvid项目。
-
-事情的结局有点童话色彩：开源的Xvid最终战胜了不厚道的DivX。但背后的逻辑并没有那么童话。开源软件由于拥有成本为0，天生就是商业软件，尤其是收费商业软件的克星，这其实是经济规律在起作用。一般来说，如果以100分为满分，免费软件只要拿80分，收费软件就没有什么戏了。而开源软件只要拿70分，闭源软件也同样没戏了。

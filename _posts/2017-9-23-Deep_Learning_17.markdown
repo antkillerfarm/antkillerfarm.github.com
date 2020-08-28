@@ -101,10 +101,13 @@ $$f(x) = p_0 + p_1x + p_2x^2 + ... + p_nx^n$$
 
 用$$x + \dot{x}d$$替换x，则有：
 
-$$f(x + \dot{x}d) =   p_0 + p_1(x + \dot{x}d) + ... +  p_n(x + \dot{x}d)^n \\ 
+$$
+\begin{array}\\
+f(x + \dot{x}d) =   p_0 + p_1(x + \dot{x}d) + ... +  p_n(x + \dot{x}d)^n \\ 
 = p_0 + p_1x + p_2x^2 + ... + p_nx^n + \\ 
 p_1\dot{x}d + 2p_2x\dot{x}d + ... + np_{n-1}x\dot{x}d\\ 
-= f(x) + f'(x)\dot{x}d$$
+= f(x) + f'(x)\dot{x}d
+\end{array}$$
 
 可以看出d的系数就是$$f'(x)$$。
 

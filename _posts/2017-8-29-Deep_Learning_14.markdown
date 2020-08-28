@@ -259,9 +259,12 @@ BN，LN，IN，GN都是什么？不同归一化方法的比较
 
 L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：
 
-$$x=[x_1,x_2,\dots,x_d]\\
+$$
+\begin{array}\\
+x=[x_1,x_2,\dots,x_d]\\
 y=[y_1,y_2,\dots,y_d]\\
 y=\frac{x}{\sqrt{\sum_{i=1}^dx_i^2}}=\frac{x}{\sqrt{x^Tx}}
+\end{array}
 $$
 
 对于多维L2 Normalization几乎未曾提及，这里以3维tensor：A[width, height, channel]为例介绍一下多维L2 Normalization的计算方法。

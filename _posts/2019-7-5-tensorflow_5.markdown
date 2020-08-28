@@ -281,6 +281,30 @@ https://zhuanlan.zhihu.com/p/102127047
 
 Glow: Graph Lowering Compiler for Neural Networks
 
+# 编译原理+
+
+## LLVM
+
+LLVM最初设计时，主要做优化方面的研究，所以当时的全称叫Low Level Virtual Machine。后来因为成为了编译器，官方放弃了这个称呼，但保留了LLVM的简称。
+
+官网：
+
+http://llvm.org/
+
+LLVM的主要作者是Chris Lattner。
+
+他的个人主页：
+
+http://nondot.org/sabre/
+
+>Chris Lattner，1978年生，美国人。University of Portland本科（2000）+UIUC博士（2005）。LLVM、Swift、MLIR的作者。先后任职于Apple、Tesla、Google、SiFive。
+
+架构设计：
+
+http://www.aosabook.org/en/llvm.html
+
+>顺便提一下，这个网站本身就是个宝库。
+
 # 新冠肺炎+
 
 ## 钟南山（续）

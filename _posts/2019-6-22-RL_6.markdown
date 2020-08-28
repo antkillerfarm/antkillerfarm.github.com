@@ -29,8 +29,11 @@ category: RL
 
 2.对于该Episode里出现的每一个状态/行为对更新：
 
-$$N(S_t,A_t)\leftarrow N(S_t,A_t)+1\\
+$$
+\begin{array}\\
+N(S_t,A_t)\leftarrow N(S_t,A_t)+1\\
 Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\frac{1}{N(S_t,A_t)}(G_t-Q(S_t,A_t))
+\end{array}
 $$
 
 3.基于新的Q函数改善：
@@ -179,8 +182,11 @@ $$V(S_t)\leftarrow V(S_t)+\alpha\left(\frac{\pi(A_t\mid S_t)}{\mu(A_t\mid S_t)}(
 
 在实际应用中，对于状态和行为空间都比较大的情况，精确获得各种v(s)和q(s,a)几乎是不可能的。这时候需要找到近似的函数。具体来说，可以使用线性组合、神经网络以及其他方法来近似价值函数：
 
-$$\hat v(s,w)\approx v_\pi(s)\\
+$$
+\begin{array}\\
+\hat v(s,w)\approx v_\pi(s)\\
 \hat q(s,a,w)\approx q_\pi(s,a)
+\end{array}
 $$
 
 其中w是该近似函数的参数。
@@ -216,15 +222,15 @@ $$\hat v(S,w)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}\begin
 因此，我们需要找到一个替代$$v_\pi(S)$$的目标函数。
 
 |:--:|:--:|:--:|:--:|
-| MC | $$\Delta w=\alpha (\color{red}{G_t}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、无偏采样 | 收敛至一个局部最优解 |
-| TD(0) | $$\Delta w=\alpha (\color{red}{R_{t+1}+\gamma\hat v(S_{t+1},w)}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、有偏采样 | 收敛至全局最优解 |
-| TD($$\lambda$$) | $$\Delta w=\alpha (\color{red}{G_t^\lambda}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、有偏采样 |  |
+| MC | $$\Delta w=\alpha ({\color{red}{G_t}}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、无偏采样 | 收敛至一个局部最优解 |
+| TD(0) | $$\Delta w=\alpha ({\color{red}{R_{t+1}+\gamma\hat v(S_{t+1},w)}}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、有偏采样 | 收敛至全局最优解 |
+| TD($$\lambda$$) | $$\Delta w=\alpha ({\color{red}{G_t^\lambda}}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、有偏采样 |  |
 
 上面公式中，红色的部分就是目标函数。
 
 对于$$\hat q(S,A,w)$$，我们也有类似的结论：
 
 |:--:|:--:|:--:|:--:|
-| MC | $$\Delta w=\alpha (\color{red}{G_t}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、无偏采样 | 收敛至一个局部最优解 |
-| TD(0) | $$\Delta w=\alpha (\color{red}{R_{t+1}+\gamma\hat q(S_{t+1},A_{t+1},w)}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 | 收敛至全局最优解 |
-| TD($$\lambda$$) | $$\Delta w=\alpha (\color{red}{q_t^\lambda}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 |  |
+| MC | $$\Delta w=\alpha ({\color{red}{G_t}}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、无偏采样 | 收敛至一个局部最优解 |
+| TD(0) | $$\Delta w=\alpha ({\color{red}{R_{t+1}+\gamma\hat q(S_{t+1},A_{t+1},w)}}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 | 收敛至全局最优解 |
+| TD($$\lambda$$) | $$\Delta w=\alpha ({\color{red}{q_t^\lambda}}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 |  |

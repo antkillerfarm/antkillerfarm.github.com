@@ -145,7 +145,13 @@ RNN是Recurrent Neural Network和Recursive Neural Network的简称。前者主�
 
 RNN的误差反向传播算法，被称作**Backpropagation Through Time（BPTT）**。其主要公式如下：
 
-$$\nabla U=\frac{\partial E}{\partial U}=\sum_t\frac{\partial e_t}{\partial U} \\\nabla V=\frac{\partial E}{\partial V}=\sum_t\frac{\partial e_t}{\partial V} \\\nabla W=\frac{\partial E}{\partial W}=\sum_t\frac{\partial e_t}{\partial W}$$
+$$
+\begin{array}\\
+\nabla U=\frac{\partial E}{\partial U}=\sum_t\frac{\partial e_t}{\partial U} \\
+\nabla V=\frac{\partial E}{\partial V}=\sum_t\frac{\partial e_t}{\partial V} \\
+\nabla W=\frac{\partial E}{\partial W}=\sum_t\frac{\partial e_t}{\partial W}
+\end{array}
+$$
 
 从上式可以看出，三个误差梯度实际上都是**时域的积分**。
 
