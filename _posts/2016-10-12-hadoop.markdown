@@ -298,6 +298,10 @@ https://mp.weixin.qq.com/s/_3iJCO4gQz7mWcW7G8kimQ
 
 Pytorch实现卷积神经网络训练量化（QAT）
 
+https://zhuanlan.zhihu.com/p/104019160
+
+PyTorch常用代码段
+
 # 模型压缩与加速进阶++
 
 https://mp.weixin.qq.com/s/oDwvMtET0moHVGgtQLfCow

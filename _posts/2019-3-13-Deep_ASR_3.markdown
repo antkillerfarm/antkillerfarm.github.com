@@ -313,6 +313,10 @@ https://mp.weixin.qq.com/s/RC2Yj0cCXBBJaPpflBLB-w
 
 语种识别
 
+https://mp.weixin.qq.com/s/w6Uxr8oB_PHvIHf9ksTVsw
+
+LRSpeech：极低资源下的语音合成与识别
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/jwV4glj8vIUKSelzeRrxSg

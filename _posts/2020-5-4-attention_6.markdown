@@ -203,6 +203,10 @@ https://mp.weixin.qq.com/s/UowNtBm_hqnes-Lz3POXGQ
 
 Transformers中的Beam Search高效实现
 
+https://mp.weixin.qq.com/s/KdKbOrjeeo7Db095V7mSFA
+
+Transformer之自适应宽度注意力
+
 # Attention进阶
 
 https://zhuanlan.zhihu.com/p/40920384

@@ -149,6 +149,10 @@ https://mp.weixin.qq.com/s/aDQFz_IYrhOmAXGvjbCKXg
 
 图神经网络导论，清华大学刘知远
 
+https://mp.weixin.qq.com/s/AMGhs8XEJrr9-L5NRiSYWw
+
+神经网络的图结构，48页ppt（尤佳轩&何恺明）
+
 ## 综述
 
 《A Comprehensive Survey on Graph Neural Networks》

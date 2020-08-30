@@ -137,6 +137,10 @@ https://mp.weixin.qq.com/s/u_Xg4naj0UetFs8tROHK8A
 
 从“垃圾元素”到“爱情金属”，它是怎么咸鱼翻身的？（铂）
 
+https://mp.weixin.qq.com/s/ZJWx-7byW9dDrC58Q6f_hw
+
+从冰淇淋到洗衣粉，它们靠“香”行走江湖
+
 ## 化学工业
 
 https://wallstreetcn.com/articles/250536

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（八）——花式IOU, 3D目标检测
+title:  深度目标检测（八）——花式IOU, 3D目标检测, 旋转框检测
 category: Deep Object Detection 
 ---
 
@@ -128,6 +128,10 @@ https://zhuanlan.zhihu.com/p/105841613
 https://zhuanlan.zhihu.com/p/105881332
 
 旋转框检测方法综述-RotateAnchor系列
+
+https://mp.weixin.qq.com/s/nOBfPFfJMBkkkVEPV0TG0Q
+
+PIoU Loss：倾斜目标检测专用损失函数，公开超难倾斜目标数据集Retail50K
 
 # 目标检测进阶
 

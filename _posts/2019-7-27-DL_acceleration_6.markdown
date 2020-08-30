@@ -57,6 +57,10 @@ http://coderskychen.cn/2019/02/23/distilling/
 
 知识蒸馏三部曲：从模型蒸馏、数据蒸馏到任务蒸馏
 
+https://mp.weixin.qq.com/s/5_qgj33tyVTHivpXkU4LDw
+
+一个知识蒸馏的简单介绍
+
 https://zhuanlan.zhihu.com/p/93287223
 
 从入门到放弃：深度学习中的模型蒸馏技术

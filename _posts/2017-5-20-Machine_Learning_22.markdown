@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十二）——机器学习分类器性能指标, 训练集、验证集和测试集
+title:  机器学习（二十二）——机器学习分类器性能指标
 category: ML 
 ---
 
@@ -175,6 +175,10 @@ https://mp.weixin.qq.com/s/5RpbXzuHp_tR6C_nBdiXGA
 
 Circle Loss：从统一的相似性对的优化角度进行深度特征学习
 
+https://mp.weixin.qq.com/s/LOewKsxtWm7dFJS6ioryuw
+
+Siamese网络，Triplet Loss以及Circle Loss的解释
+
 https://mp.weixin.qq.com/s/CPfhGxig9BMAgimBSOLy3g
 
 用于图像检索的等距离等分布三元组损失函数
@@ -337,7 +341,3 @@ https://mp.weixin.qq.com/s/sKiAwLoxdP9yyZX0-R4UrA
 https://mp.weixin.qq.com/s/k-Jm24aMlPgWMtFYaKNlog
 
 信息检索中的度量指标全解析
-
-# 训练集、验证集和测试集
-
-对于一个模型来说，其参数可以分为**普通参数**和**超参数**。在不引入强化学习的前提下，那么普通参数就是可以被梯度下降所更新的，也就是训练集所更新的参数。另外，还有超参数的概念，比如网络层数、网络节点数、迭代次数、学习率等等，这些参数不在梯度下降的更新范围内。尽管现在已经有一些算法可以用来搜索模型的超参数，但多数情况下我们还是自己人工根据验证集来调。

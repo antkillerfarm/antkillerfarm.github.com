@@ -31,6 +31,10 @@ https://mp.weixin.qq.com/s/15iowD4AocB6Ut_j8kGHeg
 
 一种先分割后分类的两阶段同步端到端缺陷检测方法
 
+https://mp.weixin.qq.com/s/Jb4UgRB1kC6c2_CzSQDKeg
+
+使用计算机视觉的方法在钢铁平面上检测焊接缺陷
+
 ## 参考
 
 https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748834&idx=3&sn=805564d2d9956dff6bb888ccb61e9b7b

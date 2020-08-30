@@ -177,6 +177,10 @@ https://mp.weixin.qq.com/s/ksCNIKyrwEJyPfGQMtmIkA
 
 pandas参数设置小技巧
 
+https://mp.weixin.qq.com/s/zrMtCvsBfqiHEtzdwH4JsA
+
+你可能不知道的pandas的5个基本技巧
+
 ## 并行Pandas
 
 https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw

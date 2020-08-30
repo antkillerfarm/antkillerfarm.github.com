@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  TensorFlow（五）, TVM
+title:  TensorFlow（五）, TVM, LLVM, gcc
 category: AI 
 ---
 
@@ -193,6 +193,10 @@ https://mp.weixin.qq.com/s/asPSPeBaRF_4eXcRXU-Zfw
 
 TensorFlow模型优化工具包—训练时量化
 
+https://mp.weixin.qq.com/s/xSJRhHbjcgk14Kr_-Ycr5A
+
+输入示例，自动生成代码：TensorFlow官方工具TF-Coder已开源
+
 # TVM
 
 TVM是陈天奇领导的一个DL加速框架项目。它处于DL框架（如tensorflow、pytorch）和硬件后端（如CUDA、OpenCL）之间，兼顾了前者的易用性和后者的执行效率。
@@ -281,15 +285,19 @@ https://zhuanlan.zhihu.com/p/102127047
 
 Glow: Graph Lowering Compiler for Neural Networks
 
-# 编译原理+
+# LLVM
 
-## LLVM
+## 概述
 
 LLVM最初设计时，主要做优化方面的研究，所以当时的全称叫Low Level Virtual Machine。后来因为成为了编译器，官方放弃了这个称呼，但保留了LLVM的简称。
 
 官网：
 
 http://llvm.org/
+
+代码：
+
+https://github.com/llvm/llvm-project
 
 LLVM的主要作者是Chris Lattner。
 
@@ -304,6 +312,28 @@ http://nondot.org/sabre/
 http://www.aosabook.org/en/llvm.html
 
 >顺便提一下，这个网站本身就是个宝库。
+
+## 框架
+
+# gcc
+
+GNU C Compiler在1987年3月22日发布了第一个beta版本，Richard Stallman原本想利用Free University Compiler Kit，但作者Andy Tanenbaum不想免费提供，RMS因此决定GNU的首个项目将是编译器。GCC是基于一个现有的Pastel编译器，使其扩展支持编译C，后用C进行重写。
+
+代码：
+
+`git clone git://gcc.gnu.org/git/gcc.git`
+
+## 资料
+
+http://www.hellogcc.org/
+
+一个有关GCC和GDB的博客。其中的大牛teawater（朱辉）开发了一个Linux动态跟踪器KGTP，他的blog：
+
+http://teawater.github.io/
+
+https://www.cnblogs.com/kuoAT/p/9590606.html
+
+深入分析GCC（王亚刚 著）
 
 # 新冠肺炎+
 

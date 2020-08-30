@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十六）——OCR（2）
+title:  深度学习（四十六）——OCR（2）, AI可解释性
 category: DL 
 ---
 
@@ -189,6 +189,50 @@ https://mp.weixin.qq.com/s/4lRwiR-3devARVX1rQLzEQ
 
 文档智能：通用文档预训练模型与数据集，推动NLP落地升级
 
+# AI可解释性
+
+XAI(Explainable Artificial Intelligence)
+
+https://github.com/pbiecek/xai_resources
+
+AI可解释性资源汇总
+
+https://mp.weixin.qq.com/s/XVl6voP5cwdC7DcvTMQvVQ
+
+机器学习可解释性工具箱XAI
+
+https://github.com/jphall663/awesome-machine-learning-interpretability
+
+最全的机器学习可解释性资料
+
+https://mp.weixin.qq.com/s/OV4vXu7TAuyV7qU9BAMF6g
+
+机器学习模型的“可解释性”到底有多重要？
+
+https://mp.weixin.qq.com/s/33VQNVvb7JGlk10Jc3mmeg
+
+从可视化到新模型：纵览深度学习的视觉可解释性
+
+https://github.com/ModelOriented/DrWhy
+
+可解释AI(XAI)工具集—DrWhy
+
+https://mp.weixin.qq.com/s/1OODeAFaRLFK3elECyZcng
+
+机器学习模型可解释性的详尽介绍
+
+https://mp.weixin.qq.com/s/Ax_Iv8IbDWid7EIO5usTbw
+
+可解释人工智能(XAI): 工业界挑战与经验教训，180页ppt
+
+https://mp.weixin.qq.com/s/-ZhYXTIiEFHd-G-NZEqlcA
+
+深度学习可解释性！深度taylor分解
+
+https://mp.weixin.qq.com/s/yzCTQvjeyyF2IFORzrTBVg
+
+黑盒模型实际上比逻辑回归更具可解释性
+
 # AutoDL++
 
 https://mp.weixin.qq.com/s/ClqOWx1RJGzoS0akI2s93w
@@ -344,29 +388,3 @@ https://www.zhihu.com/question/19662693
 https://mp.weixin.qq.com/s/wKJ3buhA-6xtJPZ7DQ0pow
 
 机器学习模型在携程海外酒店推荐场景中的应用
-
-# 图像超分辨率进阶+
-
-https://zhuanlan.zhihu.com/p/67613641
-
-基于多级神经纹理迁移的图像超分辨方法(Adobe Research)
-
-https://mp.weixin.qq.com/s/IStOD22WgZ6EBFCvIHkNSg
-
-图像超分辨率网络：RCAN
-
-https://mp.weixin.qq.com/s/4LIq3kZaXgaoEEyb8TQvwg
-
-图像超分辨率重建--AI研究
-
-https://mp.weixin.qq.com/s/ETGPXVDGRHOq0W-ef_q2_A
-
-RankSRGAN:排序学习+GAN用于超分辨率
-
-https://zhuanlan.zhihu.com/p/140507840
-
-图像超分：USRNet
-
-https://mp.weixin.qq.com/s/sju4SYFxzDkJevk3mi68Rw
-
-图像超分辨率网络：EDSR

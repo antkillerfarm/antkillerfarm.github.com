@@ -247,6 +247,8 @@ https://www.zhihu.com/question/406517759
 
 ## Cache
 
+Cache分为硬件Cache和软件Cache两种，这里只讨论前者。后者参见《数据库（一）》。
+
 https://mp.weixin.qq.com/s/cSu-P-aDSXH0CYLN2HNrxw
 
 深入理解Cache（上）
@@ -278,6 +280,10 @@ https://mp.weixin.qq.com/s/ziJ8OFiLA1it3sQvycN7Mg
 https://zhuanlan.zhihu.com/p/63494668
 
 显存为什么不能当内存使？内存、Cache和Cache一致性
+
+https://mp.weixin.qq.com/s/AekR-mv9EOD-4V5SKqI9YQ
+
+一文看懂缓存
 
 ## Bélády's Algorithm
 

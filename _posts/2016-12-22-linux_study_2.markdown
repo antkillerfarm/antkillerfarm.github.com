@@ -128,6 +128,8 @@ dstat是后起之秀，号称可以替代vmstat、iostat、ifstat。
 
 # 性能分析
 
+## 黑盒测试
+
 Linux上主要有perf、gprof和valgrind三个性能分析工具。
 
 参考：
@@ -148,11 +150,11 @@ https://mp.weixin.qq.com/s/LwWhHvc2Zdvv2OYBG6kCyw
 
 Linux调试三剑客——strace,lsof,tcpdump
 
-## LTP
+## 白盒测试
 
 上面提到的主要是黑盒测试工具。
 
-白盒测试工具主要是Linux Test Project。
+白盒测试工具主要是Linux Test Project和Gcov。
 
 官网：
 
@@ -161,6 +163,12 @@ http://linux-test-project.github.io/
 代码：
 
 https://github.com/linux-test-project/ltp
+
+参考：
+
+https://mp.weixin.qq.com/s/Od17bQhpd3FYE2GQd-kvaQ
+
+iOS代码染色原理及技术实践（gcov，gcno，gcda）
 
 # 时间的表示方法
 

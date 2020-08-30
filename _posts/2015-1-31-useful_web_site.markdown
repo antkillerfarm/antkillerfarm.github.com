@@ -23,10 +23,6 @@ http://www.alldatasheet.com/
 
 可以查找各类芯片的手册。
 
-http://www.hellogcc.org/
-
-一个有关GCC和GDB的博客。其中的大牛teawater（朱辉）开发了一个Linux动态跟踪器KGTP，他的blog：http://teawater.github.io/
-
 ----
 
 http://blog.csdn.net/leixiaohua1020/

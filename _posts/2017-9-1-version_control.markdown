@@ -121,6 +121,10 @@ www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html
 
 持续集成服务Travis CI教程
 
+https://mp.weixin.qq.com/s/wmpbdj2GMb10xRtjRUpesw
+
+携程旅行App iOS工程编译优化实践
+
 ## Walle
 
 Walle一个web部署系统工具，配置简单、功能完善、界面流畅、开箱即用！支持git、svn版本管理，支持各种web代码发布，PHP，Python，JAVA等代码的发布、回滚，可以通过web来一键完成。

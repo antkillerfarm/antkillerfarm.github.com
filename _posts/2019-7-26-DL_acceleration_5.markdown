@@ -239,6 +239,10 @@ $$q_i = \frac{exp(z_i/T)}{\sum_j exp(z_j / T)}$$
 
 - 然后使用这个teacher网络的输出和数据的真实标签去训练student网络。
 
+![](/images/img3/KD_2.png)
+
+![](/images/img3/KD_3.png)
+
 参考：
 
 https://www.zhihu.com/question/50519680

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十二）——深度ISP, Spiking Neuron Networks, AI可解释性
+title:  深度学习（四十二）——深度ISP, Spiking Neuron Networks
 category: DL 
 ---
 
@@ -160,6 +160,10 @@ https://mp.weixin.qq.com/s/fhTfNXjPeM5wMeLK2Y-yHA
 https://mp.weixin.qq.com/s/zQuLpzIptpFQC_f2Xx26og
 
 迁移学习在新闻推荐中的应用
+
+https://mp.weixin.qq.com/s/sKVCFScJq7ql1T6BmTFLow
+
+少标签数据学习，61页ppt，宾夕法尼亚大学
 
 # 深度ISP
 
@@ -375,46 +379,28 @@ https://mp.weixin.qq.com/s/ku78_exDM-OUwWPBCNahCg
 
 Spiking-YOLO：前沿性研究，脉冲神经网络在目标检测的首次尝试
 
-# AI可解释性
+# 图像超分辨率进阶+
 
-XAI(Explainable Artificial Intelligence)
+https://zhuanlan.zhihu.com/p/67613641
 
-https://github.com/pbiecek/xai_resources
+基于多级神经纹理迁移的图像超分辨方法(Adobe Research)
 
-AI可解释性资源汇总
+https://mp.weixin.qq.com/s/IStOD22WgZ6EBFCvIHkNSg
 
-https://mp.weixin.qq.com/s/XVl6voP5cwdC7DcvTMQvVQ
+图像超分辨率网络：RCAN
 
-机器学习可解释性工具箱XAI
+https://mp.weixin.qq.com/s/4LIq3kZaXgaoEEyb8TQvwg
 
-https://github.com/jphall663/awesome-machine-learning-interpretability
+图像超分辨率重建--AI研究
 
-最全的机器学习可解释性资料
+https://mp.weixin.qq.com/s/ETGPXVDGRHOq0W-ef_q2_A
 
-https://mp.weixin.qq.com/s/OV4vXu7TAuyV7qU9BAMF6g
+RankSRGAN:排序学习+GAN用于超分辨率
 
-机器学习模型的“可解释性”到底有多重要？
+https://zhuanlan.zhihu.com/p/140507840
 
-https://mp.weixin.qq.com/s/33VQNVvb7JGlk10Jc3mmeg
+图像超分：USRNet
 
-从可视化到新模型：纵览深度学习的视觉可解释性
+https://mp.weixin.qq.com/s/sju4SYFxzDkJevk3mi68Rw
 
-https://github.com/ModelOriented/DrWhy
-
-可解释AI(XAI)工具集—DrWhy
-
-https://mp.weixin.qq.com/s/1OODeAFaRLFK3elECyZcng
-
-机器学习模型可解释性的详尽介绍
-
-https://mp.weixin.qq.com/s/Ax_Iv8IbDWid7EIO5usTbw
-
-可解释人工智能(XAI): 工业界挑战与经验教训，180页ppt
-
-https://mp.weixin.qq.com/s/-ZhYXTIiEFHd-G-NZEqlcA
-
-深度学习可解释性！深度taylor分解
-
-https://mp.weixin.qq.com/s/yzCTQvjeyyF2IFORzrTBVg
-
-黑盒模型实际上比逻辑回归更具可解释性
+图像超分辨率网络：EDSR

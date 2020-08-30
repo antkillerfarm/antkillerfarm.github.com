@@ -420,3 +420,7 @@ https://mp.weixin.qq.com/s/7hvYdOTnnw5pDDMx6N66Uw
 https://mp.weixin.qq.com/s/j7j3u0YGo4DomXnJFmzoGA
 
 万字长文讲解如何基于智能推荐的精细化运营
+
+https://zhuanlan.zhihu.com/p/188228577
+
+推荐系统实用分析技巧

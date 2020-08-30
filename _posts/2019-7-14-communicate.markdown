@@ -261,6 +261,20 @@ https://zhuanlan.zhihu.com/p/54517790
 
 内存条应该怎么插？为什么要从远端插起？不遵循为啥还可以work？有啥副作用？
 
+https://mp.weixin.qq.com/s/AJA01Cvm3k2HntUUAg9FPg
+
+关于“陶瓷电容”，你不知道的事
+
+https://mp.weixin.qq.com/s/NKWvIJ7-J_IugnAgUehVIg
+
+博通要卖掉的射频前端，是个怎样的市场？
+
+## USB
+
+https://mp.weixin.qq.com/s/pL_98GmL2qkvt71hw6A-DA
+
+终结混乱，USB族谱终极整理！
+
 https://zhuanlan.zhihu.com/p/65478149
 
 为什么USB Type C电缆正反插都可以？它是怎么做到的？
@@ -272,14 +286,6 @@ USB3.1 Type-C高速接口设计指南
 https://zhuanlan.zhihu.com/p/153254485
 
 为什么短路的USB设备不会烧掉你的主板？著名的USB Killer又是怎么干掉主板的？
-
-https://mp.weixin.qq.com/s/AJA01Cvm3k2HntUUAg9FPg
-
-关于“陶瓷电容”，你不知道的事
-
-https://mp.weixin.qq.com/s/NKWvIJ7-J_IugnAgUehVIg
-
-博通要卖掉的射频前端，是个怎样的市场？
 
 # 传感器
 
@@ -442,3 +448,7 @@ https://mp.weixin.qq.com/s/gHvvMG7D_W0M2RFntyRaDw
 https://mp.weixin.qq.com/s/qOnMNbA9C7bcwZ6IvOxyCA
 
 一组动图看懂3D打印原理
+
+https://mp.weixin.qq.com/s/oN6n7GXnqASKBbVS54rfGg
+
+陀螺仪工作原理及其厂家
