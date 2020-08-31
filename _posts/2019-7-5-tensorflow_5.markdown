@@ -225,6 +225,10 @@ https://mp.weixin.qq.com/s/8bXwxYyNjdThlGQQ70cgWQ
 
 TVM：端到端自动深度学习编译器，244页ppt
 
+https://zhuanlan.zhihu.com/p/163717035
+
+AI编译优化
+
 https://www.zhihu.com/question/267167829
 
 如何看待Tensor Comprehensions？与TVM有何异同？（这个问题下的答案不多，但基本都是陈天奇、贾扬清之类的大佬）

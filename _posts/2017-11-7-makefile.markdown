@@ -173,6 +173,8 @@ https://github.com/bazelbuild/bazel/releases
 
 `./bazel-<version>-installer-linux-x86_64.sh --user`
 
+>需要注意的是，即使这种安装也只是部分安装，安装后仍然需要联网下载依赖，并不能达到离线安装的效果。这也是Bazel的安装文件体积越来越小的根本原因。只有早期100M+的安装包，才是能离线安装的。
+
 bazel使用Starlark语言编写扩展，后者的语法主要源自python，但并不是通用语言，也没有python那么强的功能。
 
 Starlark官网：
