@@ -102,3 +102,33 @@ SDL尽管使用广泛，但从代码来看基本上是Sam Lantinga的个人作�
 Sam Lantinga早年创建了Loki Software，专门将Windows游戏移植到Linux平台上，SDL正是这个时期的产物。著名的《英雄无敌3》Linux版就是Loki Software制作的。
 
 后来他先后供职于Blizzard Entertainment和Valve Software，是暴雪的主力程序员之一。
+
+# 两弹一星+
+
+![](/images/img3/top10.png)
+
+https://mp.weixin.qq.com/s/1NXjgkr3xWDzqm7Y-9x7-Q
+
+从核潜艇到华龙一号：“其他大国有的，我们也要有”
+
+https://mp.weixin.qq.com/s/sRVb8qGtbsuqCvHSrlL9mQ
+
+卡住中国脖子的35项技术
+
+https://mp.weixin.qq.com/s/wsGgWzyaslXCQflaP2ccXA
+
+60年前首登珠峰，他是唯一在世亲历者
+
+https://mp.weixin.qq.com/s/zwlOZzdGlqTFGSg3H9zNxQ
+
+珠峰变“绿”，“隐者”现身，这些年的珠峰发生了什么？
+
+https://mp.weixin.qq.com/s/MCAR8M2DoV30-McdsjTxDw
+
+徒步横穿南极大陆第一人
+
+>秦大河，1947年生，地理学家，中国科学院院士，第三世界科学院院士。曾任中国气象局局长、中国科学技术协会副主席等
+
+https://mp.weixin.qq.com/s/3aLHfKF5grL6hunO7r_TAQ
+
+中国第一个发《Nature》的竟然是清朝人！被皇帝夸天下第一，他却觉得羞耻...（徐寿、华蘅芳、徐建寅）
