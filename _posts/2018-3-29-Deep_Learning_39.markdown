@@ -305,6 +305,10 @@ https://mp.weixin.qq.com/s/THUjd-wXI6_57mdw4XfYUQ
 
 商汤-港中文MMLab开源图像视频超分辨率工具箱MMSR
 
+https://zhuanlan.zhihu.com/p/209133135
+
+基于深度学习的视频超分辨率技术：全面调研（2015-2020）
+
 https://mp.weixin.qq.com/s/XZ-fn_Xd7vVoLiVr6Esb3g
 
 Ranking Attention-适用于视频分割的全新Attention机制
