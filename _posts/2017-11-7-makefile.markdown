@@ -17,6 +17,8 @@ http://www.gnu.org/software/make/manual/html_node/index.html
 
 http://www.gnu.org/software/make/manual/html_node/Quick-Reference.html
 
+使用`make -n`或`make VERBOSE=1`将显示make命令正在试图做的事情。 
+
 # Autotools
 
 ## 概述
