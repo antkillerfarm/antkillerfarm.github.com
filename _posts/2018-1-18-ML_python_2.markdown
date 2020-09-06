@@ -181,6 +181,10 @@ https://mp.weixin.qq.com/s/zrMtCvsBfqiHEtzdwH4JsA
 
 你可能不知道的pandas的5个基本技巧
 
+https://mp.weixin.qq.com/s/ttYIWPKnNs46TfAbEZaHig
+
+PandaSQL：一个让你能够通过SQL语句进行pandas的操作的python包
+
 ## 并行Pandas
 
 https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw

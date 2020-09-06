@@ -73,6 +73,10 @@ https://mp.weixin.qq.com/s/bGWlOG4BEJ4wZvlhry2vMg
 
 小行星命名背后，为啥是这颗叫“南仁东星”
 
+https://mp.weixin.qq.com/s/iJoPJiP3KxDXz6ZOBN4seQ
+
+发现第三种类型的黑洞了？！
+
 # 天文杂谈
 
 https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
@@ -146,6 +150,10 @@ https://mp.weixin.qq.com/s/SQPVTNYBU8JIRPYFqsXgtA
 https://mp.weixin.qq.com/s/pAUiirbHyfrEgWUE21x93Q
 
 另一个费曼（Richard Feynman的妹妹Joan Feynman）
+
+https://mp.weixin.qq.com/s/iznVJzjkYA2I5Y-P0NKrdA
+
+美丽天文图片下，有哪些不为人知的“套路”
 
 ----
 

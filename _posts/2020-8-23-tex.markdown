@@ -296,7 +296,7 @@ https://mp.weixin.qq.com/s/LumDQL9VKTHWK3RkOhKFcg
 
 1行代码搞定Latex公式编写，这个4.6M的Python小插件，堪称论文必备神器
 
-# 世说新语++++
+# 世说新语+++
 
 ## 2020.8（续）
 

@@ -211,3 +211,33 @@ http://tis.hrbeu.edu.cn/oa/pdfdow.aspx?Sid=20160307
 http://www.doc88.com/p-7082821463697.html
 
 改进的热传导和物质扩散混合推荐算法
+
+# 目标检测进阶+++
+
+https://mp.weixin.qq.com/s/dFoUO4xArZpmtbKg1Kx6Zg
+
+COCO mAP 53.3！骨干网合成算法CBNet带来目标检测精度新突破
+
+https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247499933&idx=1&sn=b9fe7d6714c44acedd12a60cfe6b1c60
+
+小样本域适应的目标检测
+
+https://zhuanlan.zhihu.com/p/84890413
+
+PolarMask：一阶段实例分割新思路
+
+https://mp.weixin.qq.com/s/t8pVNeW2Y-QQwD8H9Nk83w
+
+定向和密集的目标检测怎么办？动态优化网络来解决
+
+https://zhuanlan.zhihu.com/p/158907507
+
+From VanillaDet to AutoAssign
+
+https://mp.weixin.qq.com/s/GL_q4VLCgbjTZq_zpTLq0w
+
+Label Assign：提升目标检测上限
+
+https://mp.weixin.qq.com/s/EO5h1zW4yrToqwTCnXtz4g
+
+TTFNet: 最大程度提高训练效率的实时目标检测

@@ -153,6 +153,10 @@ https://mp.weixin.qq.com/s/AMGhs8XEJrr9-L5NRiSYWw
 
 神经网络的图结构，48页ppt（尤佳轩&何恺明）
 
+https://mp.weixin.qq.com/s/hvVxgND75-sKUdWhr-OWOw
+
+图神经网络:基础与应用，322页ppt
+
 ## 综述
 
 《A Comprehensive Survey on Graph Neural Networks》

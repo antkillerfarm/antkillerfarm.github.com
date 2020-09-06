@@ -293,6 +293,10 @@ https://mp.weixin.qq.com/s/nfPBRBLG1ThsY3DvONHYrA
 
 CenterNet骨干网络之hourglass
 
+https://mp.weixin.qq.com/s/lzxd9J97nkOBLXgEcbdoKA
+
+使用Hourglass网络来理解人体姿态
+
 ## 评价度量
 
 Object Keypoint Similarity(OKS)：

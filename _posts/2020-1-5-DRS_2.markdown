@@ -109,6 +109,10 @@ https://mp.weixin.qq.com/s/-EDxUwAKdXnmUKeLJTiAUw
 
 解构阿里深度兴趣网络（DIN）：如何将注意力机制引入推荐系统？
 
+https://mp.weixin.qq.com/s/SZktX3FgFrd0os8S9jcVfw
+
+DIN: 阿里点击率预估之深度兴趣网络
+
 https://zhuanlan.zhihu.com/p/54838663
 
 也评Deep Interest Evolution Network

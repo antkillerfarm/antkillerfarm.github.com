@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十九）——在线学习, 贝叶斯学习, Beam Search
+title:  机器学习（二十九）——在线学习, 贝叶斯学习, Beam Search, 集成学习
 category: ML 
 ---
 
@@ -228,3 +228,25 @@ https://mp.weixin.qq.com/s/BuvLXx0ZItOvhno4XAUpTg
 https://mp.weixin.qq.com/s/HFXzBZtf6-s_IQpZvdQ8Tw
 
 Beam Search、GREEDY DECODER、SAMPLING DECODER等解码器工作原理可视化
+
+# 集成学习
+
+https://mp.weixin.qq.com/s/hGoprRIeyoXPt5OnzgV-bg
+
+集成学习算法(Ensemble Method)浅析
+
+https://mp.weixin.qq.com/s/_rKnE833oPkRTUfkZGn7fQ
+
+机器学习之集成学习
+
+https://mp.weixin.qq.com/s/VgFnREuG_D6lbTvs3JLBHg
+
+集成学习基础通俗入门
+
+https://mp.weixin.qq.com/s/I41c-i-6y-pPdZOeiMM_0Q
+
+通俗讲解集成学习算法！
+
+https://mp.weixin.qq.com/s/z42pMRSOSt8GkOCRHcDtNg
+
+集成深度学习在生物信息学中的应用

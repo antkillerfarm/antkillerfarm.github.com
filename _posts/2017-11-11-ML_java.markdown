@@ -95,6 +95,10 @@ https://mp.weixin.qq.com/s/UZWSUUuPWcyv6yUx-woF4g
 
 Smile实战（一）SVM
 
+https://mp.weixin.qq.com/s/WE7afgw1VzvClKdbAaXVnA
+
+Smile一下，轻松用Java玩转机器学习
+
 ## java-string-similarity
 
 这个库虽然功能有限，但却针对字符处理进行了优化。比如Jaccard距离，weka没有实现，ELKI提供的是通用的集合类实现，用起来没有java-string-similarity方便。

@@ -198,7 +198,9 @@ https://github.com/ascetic85/quick-cocos2d-x-20130509
 
 这个代码有些老，是基于cocos2d-x v2的，但是基本的思路是一样的。
 
-# lex&yacc（2014.2）
+# lex&yacc
+
+2014.2
 
 * 前言
 
@@ -212,13 +214,11 @@ https://github.com/ascetic85/quick-cocos2d-x-20130509
 
 * 前置条件
 
-要想研究lex和yacc，除了需要有C语言的基础之外。还需要对正则式和BNF（Backus-Naur Form）有所了解。顺便提一下，John Warner Backus，FORTRAN、ALGOL语言之父，1977年ACM图灵奖得主。他在中学时代居然是个勉强毕业的差生，在大学里换了两次专业，还是一事无成。。。
+要想研究lex和yacc，除了需要有C语言的基础之外。还需要对正则式和BNF（Backus-Naur Form）有所了解。
 
 * 教材
 
 LEX & YACC TUTORIAL by Tom Niemann——这本书比较简练，且附有代码，入门级的极品
-
-Aho, Alfred V., Ravi Sethi and Jeffrey D. Ullman [2006]. Compilers, Prinicples, Techniques and Tools——这本书是编译原理方面的权威作品，堪称编译原理界的TAOCP，不过篇幅太长了。。。
 
 * 心得
 

@@ -345,6 +345,10 @@ https://mp.weixin.qq.com/s/bU-MYGcbas6y7JY-oRrNdA
 
 JVM面试大法
 
+https://mp.weixin.qq.com/s/h2_eAtoE9IWdi_OERul0Mw
+
+Tencent JDK国产化CPU架构支持分享
+
 https://mp.weixin.qq.com/s/MxMcpJlqSEZRO0CssQglOg
 
 Android兼容Java 8语法特性的原理分析

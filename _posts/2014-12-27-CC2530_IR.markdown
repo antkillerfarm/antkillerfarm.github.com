@@ -264,3 +264,7 @@ Nginx相关介绍
 https://mp.weixin.qq.com/s/XsyXkaOIJ3m8sdCt8Pl5Ig
 
 计算密集型服务的负载均衡策略
+
+https://mp.weixin.qq.com/s/SmpUPJRK0TMdA0rkb_Q6VQ
+
+什么是集群？什么又是负载均衡？

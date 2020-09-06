@@ -271,6 +271,28 @@ https://mp.weixin.qq.com/s/rlTJVV0PXjII2YJYENlwlw
 
 数字人民币官宣内测，双离线支付 “碰一碰”完成 转账！四个城市抢先试点！
 
+# VAE参考资源+
+
+https://mp.weixin.qq.com/s/hwb3eRWbwa9weCWz1ypOxw
+
+VAE系解纠缠：从VAE到βVAE，再到β-TCVAE
+
+https://mp.weixin.qq.com/s/YZcw5pnHzuACSvEmGZHnEQ
+
+自回归模型:PixelCNN
+
+https://mp.weixin.qq.com/s/yB7tq2vcBpVBnM-j9PgRsw
+
+人脸合成效果媲美StyleGAN，而它是个自编码器
+
+https://mp.weixin.qq.com/s/J59d1K5WX-wnzhws3k60AQ
+
+万字长文带你了解变分自编码器VAEs
+
+https://mp.weixin.qq.com/s/g-OPU4vp66HWcpqjdD2bBg
+
+使用PyTorch从理论到实践理解变分自编码器VAE
+
 # 数学杂谈++
 
 https://mp.weixin.qq.com/s/_uu1dFzSC257vKS4mPjVfg

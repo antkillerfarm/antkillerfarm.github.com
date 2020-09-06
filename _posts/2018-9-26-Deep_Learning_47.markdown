@@ -25,7 +25,7 @@ https://mp.weixin.qq.com/s/CGF-6P4RDtzQnc2XClu5zw
 
 3D计算机视觉简介
 
-https://mp.weixin.qq.com/s/WDInIzWa9_SYSaXXPhdQuw
+https://zhuanlan.zhihu.com/p/79628068
 
 基于深度学习的视觉三维重建研究总结
 

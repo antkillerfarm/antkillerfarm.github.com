@@ -145,6 +145,10 @@ https://mp.weixin.qq.com/s/aSCcdTHUoogP7TOK5MIsVw
 
 一颗芯片的全球之旅
 
+https://mp.weixin.qq.com/s/_NcQ-PxNpEtpYdo450Uukg
+
+半导体材料全球格局
+
 https://mp.weixin.qq.com/s/PzD1lCe5h3VkMrhFb7CfQg
 
 后SoC时代或将迎来Chiplet拐点
@@ -251,11 +255,23 @@ https://zhuanlan.zhihu.com/p/40601422
 
 # 安全
 
+## RSA
+
 RSA是1977年由Ron Rivest、Adi Shamir和Leonard Adleman一起提出的。
 
 https://mp.weixin.qq.com/s/A7JCTffgFQHljLeQYMNoFg
 
 理解RSA算法
+
+https://mp.weixin.qq.com/s/9mDvyrQY3o_a6RFlNil0-w
+
+世界上迄今为止最安全的加密算法（RSA算法）
+
+https://mp.weixin.qq.com/s/UNjMKLZYYVnTsT5nkeHQcg
+
+什么是RSA算法
+
+## 参考
 
 https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
 
@@ -380,3 +396,7 @@ https://mp.weixin.qq.com/s/GuXzR6Xf46ByomcVLzai3Q
 https://mp.weixin.qq.com/s/ZxdeUFnkwfBH18hDrBDVcQ
 
 为什么夏天更容易出轨？
+
+https://mp.weixin.qq.com/s/dIJS9gebnqFh-nnaoosumA
+
+科学家还是灭世者？记那些原子弹背后的人

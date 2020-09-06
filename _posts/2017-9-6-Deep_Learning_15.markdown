@@ -37,6 +37,10 @@ https://mp.weixin.qq.com/s/w_W4NwkCRdbyZbEwMlrFRQ
 
 超越BN和GN！谷歌提出新的归一化层：FRN
 
+https://mp.weixin.qq.com/s/T5vDmlaVdqvvxtqd1t3lww
+
+Unsupervised Batch Normalization
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。

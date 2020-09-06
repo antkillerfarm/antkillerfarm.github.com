@@ -97,10 +97,6 @@ https://mp.weixin.qq.com/s/8KEWJROGSe-7nmBlrkQ7Nw
 
 雇水军刷分有效吗？虚假评论的影响研究分析
 
-https://github.com/yzhao062/awesome-ensemble-learning
-
-集成学习相关资源大列表
-
 https://mp.weixin.qq.com/s/csQoFtE0v1jUAGC08NtX3g
 
 解读：滴滴“猜你去哪儿”功能的算法实现

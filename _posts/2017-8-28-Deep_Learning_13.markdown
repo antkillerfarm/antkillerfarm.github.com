@@ -339,6 +339,14 @@ https://mp.weixin.qq.com/s/Hsw_IbphFotR-Q89wKpMXQ
 
 Embedding在腾讯应用宝的推荐实践
 
+https://mp.weixin.qq.com/s/SRd7Cr16kpa_aUWDNwww_g
+
+淘宝搜索模型核心技术：用户建模篇
+
+https://mp.weixin.qq.com/s/YtQCGWNXDdUQGyF9mYKFHg
+
+莫比乌斯: 百度的下一代query-ad匹配算法
+
 # 行人重识别+
 
 https://mp.weixin.qq.com/s/Vi_1Sg8OKG-EG4aC4QTCWA

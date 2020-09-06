@@ -161,22 +161,6 @@ https://zhuanlan.zhihu.com/p/179286622
 
 Random Forest可以用来做聚类吗？
 
-https://mp.weixin.qq.com/s/hGoprRIeyoXPt5OnzgV-bg
-
-集成学习算法(Ensemble Method)浅析
-
-https://mp.weixin.qq.com/s/_rKnE833oPkRTUfkZGn7fQ
-
-机器学习之集成学习
-
-https://mp.weixin.qq.com/s/VgFnREuG_D6lbTvs3JLBHg
-
-集成学习基础通俗入门
-
-https://mp.weixin.qq.com/s/I41c-i-6y-pPdZOeiMM_0Q
-
-通俗讲解集成学习算法！
-
 https://mp.weixin.qq.com/s/2EtQTsumOcHmYFjxOlPApQ
 
 决策树算法及实现

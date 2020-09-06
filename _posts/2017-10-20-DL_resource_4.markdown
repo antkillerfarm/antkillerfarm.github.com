@@ -309,6 +309,10 @@ https://mp.weixin.qq.com/s/P6BCFLDtzEkPluWIKMD2AA
 
 最新《几何深度学习》教程，100页ppt，Geometric Deep Learning
 
+https://mp.weixin.qq.com/s/PGZiJuZ2Dg6Vhkv55vfxKQ
+
+对损失信息进行建模，实现信号处理高保真还原
+
 # 目标检测进阶+
 
 https://mp.weixin.qq.com/s/IRD0iIVXyENlUOyfSbmlBA
@@ -370,15 +374,3 @@ https://mp.weixin.qq.com/s/kdD658xzC-JxuWGYqLRtcQ
 https://mp.weixin.qq.com/s/8k0Mhver2mLnKmV8rVqJHQ
 
 小目标检测相关技巧总结
-
-https://mp.weixin.qq.com/s/dFoUO4xArZpmtbKg1Kx6Zg
-
-COCO mAP 53.3！骨干网合成算法CBNet带来目标检测精度新突破
-
-https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247499933&idx=1&sn=b9fe7d6714c44acedd12a60cfe6b1c60
-
-小样本域适应的目标检测
-
-https://zhuanlan.zhihu.com/p/84890413
-
-PolarMask：一阶段实例分割新思路

@@ -125,6 +125,10 @@ https://github.com/hustcc/canvas-nest.js
 
 动态线条特效
 
+https://mp.weixin.qq.com/s/0dJeYLuXkmJpqvuNHx7L8A
+
+爆红Github！20多个练手前端小型项目的集合，随你造！
+
 # 参考
 
 https://zhuanlan.zhihu.com/p/22989691

@@ -428,19 +428,3 @@ https://mp.weixin.qq.com/s/-x9A1eG5BfGmqV31SdMCMg
 https://mp.weixin.qq.com/s/On-pHCdGg3piTQtDV88kQA
 
 特定场景下Yolo改进算法：Poly-Yolo
-
-https://mp.weixin.qq.com/s/t8pVNeW2Y-QQwD8H9Nk83w
-
-定向和密集的目标检测怎么办？动态优化网络来解决
-
-https://zhuanlan.zhihu.com/p/158907507
-
-From VanillaDet to AutoAssign
-
-https://mp.weixin.qq.com/s/GL_q4VLCgbjTZq_zpTLq0w
-
-Label Assign：提升目标检测上限
-
-https://mp.weixin.qq.com/s/EO5h1zW4yrToqwTCnXtz4g
-
-TTFNet: 最大程度提高训练效率的实时目标检测
