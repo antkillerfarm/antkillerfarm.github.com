@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  C/C++编程心得（四）, boost, Test framework
+title:  C/C++编程心得（四）, boost
 category: language 
 ---
 
@@ -8,6 +8,29 @@ category: language
 {:toc}
 
 # C/C++编程心得
+
+## 打印vector的N种方法
+
+```cpp
+auto vec = make_index_vector(std::make_index_sequence<10>());
+for(auto i : vec) {std::cout << i << ' ';}
+std::cout << std::endl;
+std::iota(vec.begin(), vec.end(), 999);
+std::copy(vec.begin(), vec.end(), std::ostream_iterator<int>(std::cout, " "));
+std::cout << std::endl;
+std::for_each(std::begin(vec),std::end(vec),[](int n){std::cout<<n<<" ";});
+std::cout << std::endl;
+```
+
+## const
+
+```cpp
+class A
+{
+   void function() const; //常成员函数, 它不改变对象的成员变量,
+                        //也不能调用类中任何非const的成员函数。
+} 
+```
 
 ## 虚函数
 
@@ -355,87 +378,3 @@ test2：批量添加边+拓扑排序。
 test3：顶点改为字符串数据类型，使用BGL API。
 
 test4：顶点改为字符串数据类型，不使用BGL API。
-
-# Test framework
-
-## boost.test
-
-boost.test是一个C++的单元测试框架。
-
-代码示例：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/boost_test
-
-要点：
-
-- 测试代码无须main函数。
-
-- 编译：`-DBOOST_TEST_DYN_LINK`
-
-- 链接：`-lboost_unit_test_framework`
-
-打印所有的log：
-
-`unit_test --log_level=all`
-
-参考：
-
-https://www.ibm.com/developerworks/cn/aix/library/au-ctools1_boost/
-
-了解Boost单元测试框架
-
-https://www.ibm.com/developerworks/cn/aix/library/au-ctools2_cppunit/index.html
-
-了解CppUnit
-
-https://www.ibm.com/developerworks/cn/aix/library/au-ctools3_ccptest/
-
-了解CppTest。上面这3篇算是比较权威的C++单元测试工具的教程了，作者都是Arpan Sen。
-
-https://my.oschina.net/vaero/blog/227528
-
-C++单元测试：boost.test
-
-https://remonstrate.wordpress.com/2011/07/06/boost-%e7%9a%84-unit-test/
-
-boost的unit test
-
-## googletest
-
-安装：
-
-`sudo apt install libgtest-dev`
-
-代码：
-
-https://github.com/google/googletest
-
-`gtest_filter`是一个很有用的选项。
-
-示例：
-
-`./foo_test --gtest_filter=FooTest*.*-FooTest.Bar:FooTest2.Bar`
-
-运行所有“测试案例名称(testcase_name)”为FooTest的案例，但是除了FooTest.Bar和FooTest2.Bar。
-
-`-`表示去除，`:`表示并列。
-
-参考：
-
-https://www.ibm.com/developerworks/cn/aix/library/au-googletestingframework.html
-
-Google C++ Testing Framework简介
-
-https://www.cnblogs.com/coderzh/archive/2009/04/06/1426755.html
-
-玩转Google开源C++单元测试框架Google Test系列(gtest)
-
-## CTest
-
-CTest是CMake集成的一个测试工具。
-
-参考：
-
-https://www.cnblogs.com/457220157-FTD/p/4139149.html
-
-CTest

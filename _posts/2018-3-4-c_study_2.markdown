@@ -101,6 +101,18 @@ C - undefined reference to “sqrt” even with '-lm'
 
 有的时候会遇到`-Werror=XXXX`这样的编译错误，如果确实不想改代码的话，可以用`-Wno-error=XXXX`或者`-Wno-XXXX`来回避之。
 
+## nm和readelf
+
+这两个命令都可以查看可执行文件的符号表。
+
+示例：
+
+`nm XXX.so`
+
+`readelf -h XXX.so`
+
+这两个命令虽然很早就在gcc工具链中了，但是早期版本只能查看本工具链编译的可执行文件。现在的话，主流的CPU指令集都可以支持了，不必采用`arm-readelf`这样的特殊前缀版本了。
+
 # 左值和右值
 
 **左值**是可以放在赋值号左边可以被赋值的值；左值必须要在内存中有实体；
@@ -247,30 +259,3 @@ cout << sp1.use_count() << " " << sp2.use_count() << " "
 ```
 
 sp1,sp2,sp3是相互关联的共享指针，共同控制所指内存的生存期，sp4虽然指向同样的内存，却是与sp1,sp2,sp3独立的，sp4按自己的引用计数来关联内存的释放。
-
-----
-
-```cpp
-auto p = std::make_unique<XXX>();
-void f(XXX*);
-f(p); // error
-f(p.get()); // OK
-```
-
-虽然，类似`p->YYY()`的用法和普通指针一致，但是作为f函数参数的时候，就不行了。
-
-----
-
-参考：
-
-https://mp.weixin.qq.com/s/32aeGOPaySjTmyKcjFKgYA
-
-窥见C++11智能指针
-
-https://www.cnblogs.com/wangkeqin/p/9351191.html
-
-C++内存管理之shared_ptr
-
-https://blog.csdn.net/River_Lethe/article/details/78734879
-
-shared_ptr的使用和陷阱

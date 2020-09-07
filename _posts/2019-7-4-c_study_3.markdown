@@ -7,6 +7,33 @@ category: language
 * toc
 {:toc}
 
+# 各类ptr（续）
+
+```cpp
+auto p = std::make_unique<XXX>();
+void f(XXX*);
+f(p); // error
+f(p.get()); // OK
+```
+
+虽然，类似`p->YYY()`的用法和普通指针一致，但是作为f函数参数的时候，就不行了。
+
+----
+
+参考：
+
+https://mp.weixin.qq.com/s/32aeGOPaySjTmyKcjFKgYA
+
+窥见C++11智能指针
+
+https://www.cnblogs.com/wangkeqin/p/9351191.html
+
+C++内存管理之shared_ptr
+
+https://blog.csdn.net/River_Lethe/article/details/78734879
+
+shared_ptr的使用和陷阱
+
 # decltype
 
 和auto的用法类似，auto不仅要推导类型，还要定义变量，而decltype则只进行类型推导。
@@ -394,26 +421,3 @@ public:
 https://www.ibm.com/developerworks/cn/aix/library/1212_lufang_c11new/index.html
 
 C++11标准新特性：Defaulted和Deleted函数
-
-# 打印vector的N种方法
-
-```cpp
-auto vec = make_index_vector(std::make_index_sequence<10>());
-for(auto i : vec) {std::cout << i << ' ';}
-std::cout << std::endl;
-std::iota(vec.begin(), vec.end(), 999);
-std::copy(vec.begin(), vec.end(), std::ostream_iterator<int>(std::cout, " "));
-std::cout << std::endl;
-std::for_each(std::begin(vec),std::end(vec),[](int n){std::cout<<n<<" ";});
-std::cout << std::endl;
-```
-
-# const
-
-```cpp
-class A
-{
-   void function() const; //常成员函数, 它不改变对象的成员变量,
-                        //也不能调用类中任何非const的成员函数。
-} 
-```

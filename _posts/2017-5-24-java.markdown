@@ -349,6 +349,10 @@ https://mp.weixin.qq.com/s/h2_eAtoE9IWdi_OERul0Mw
 
 Tencent JDK国产化CPU架构支持分享
 
+https://www.jianshu.com/p/25b328753017
+
+压缩20M文件从30秒到1秒的优化过程
+
 https://mp.weixin.qq.com/s/MxMcpJlqSEZRO0CssQglOg
 
 Android兼容Java 8语法特性的原理分析

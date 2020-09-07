@@ -35,7 +35,7 @@ https://en.cppreference.com/w/cpp/compiler_support
 
 https://www.edg.com/
 
-这是EDG的官网。它是一家专门做C++前端的公司。因此，他们的更新和开源项目gcc/Clang一样勤，也就不足为奇了。
+这是EDG的官网。它是一家专门做C++前端的公司。因此，他们的更新和开源项目gcc/Clang一样勤，也就不足为奇了。事实上它的商业模式就是：如果硬件公司没有实力或财力做编译器，那么就购买我的前端好了。
 
 # 头文件被多个源文件引用
 
