@@ -414,15 +414,3 @@ DGL深度图神经网络实战教程
 https://mp.weixin.qq.com/s/v9aOoK2sHP0a9hZP0jWW0Q
 
 图神经网络的新基准
-
-https://zhuanlan.zhihu.com/p/111945052
-
-TextGCN
-
-https://blog.csdn.net/weixin_43269174/article/details/98492487
-
-从图嵌入算法到图神经网络
-
-https://mp.weixin.qq.com/s/CmVhJMGll5HjO8kxsCinaA
-
-图神经网络GNN,GAT&GCN（一）

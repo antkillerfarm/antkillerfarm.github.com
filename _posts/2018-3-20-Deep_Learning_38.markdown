@@ -281,8 +281,6 @@ pytorch中如何处理RNN输入变长序列padding
 
 多标签分类问题，通常有两种解决方案，即转换为多个单标签分类问题，或者直接联合研究。前者，可以训练多个分类器，来判断该维度属性的是否，损失函数常使用softmax loss。后者，则直接训练一个多标签的分类器，所使用的标签为0,1,0,0…这样的向量，使用hanmming距离等作为优化目标。
 
-
-
 参考：
 
 https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw
@@ -368,6 +366,10 @@ https://mp.weixin.qq.com/s/G-4w5jMuN-_zVARPeb0cqA
 https://mp.weixin.qq.com/s/FcSzjphpsWCB-nrtbjs4gg
 
 如何掌握好图像分类算法？
+
+https://mp.weixin.qq.com/s/IeLYy0Pp3HC_UujA0KYn1Q
+
+多标签长尾识别前沿进展
 
 # 显著性检测
 

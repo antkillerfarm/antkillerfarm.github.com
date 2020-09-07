@@ -242,3 +242,49 @@ https://github.com/rsennrich/subword-nmt
 https://www.cnblogs.com/huangyc/p/10223075.html
 
 一文读懂BERT中的WordPiece
+
+# Graph NN+++
+
+https://mp.weixin.qq.com/s/nGPUcDHTrG6KwAqDCkfA1w
+
+基于超图网络模型的图网络进化算法
+
+https://mp.weixin.qq.com/s/XoVUJln3oyhk2jMOtWwfog
+
+基于图神经网络的协同过滤算法
+
+https://zhuanlan.zhihu.com/p/86216369
+
+从3/4层拓展到56层，如何训练超级深层的图卷积神经网络
+
+https://mp.weixin.qq.com/s/ceC1_39cmpqYOoHsu-4sCQ
+
+HEC-Montreal唐建博士：图神经网络推理
+
+https://mp.weixin.qq.com/s/aIU8mP5nlnqR4Qt-4RfMgQ
+
+孙付伟：Graph Embedding在知乎的应用实践
+
+https://zhuanlan.zhihu.com/p/111945052
+
+TextGCN
+
+https://blog.csdn.net/weixin_43269174/article/details/98492487
+
+从图嵌入算法到图神经网络
+
+https://mp.weixin.qq.com/s/CmVhJMGll5HjO8kxsCinaA
+
+图神经网络GNN,GAT&GCN（一）
+
+https://mp.weixin.qq.com/s/LxdZ5xRuqQjNbG9FhhD0Aw
+
+图神经网络越深，表现就一定越好吗？
+
+https://mp.weixin.qq.com/s/d_gf12bzVySHkXFl5rqVTQ
+
+图神经网络前沿综述：动态图网络
+
+https://mp.weixin.qq.com/s/ea3sOkabOmaymlkeQJlZ1A
+
+图算法工程师 面试基础

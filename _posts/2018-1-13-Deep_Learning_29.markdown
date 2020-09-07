@@ -157,6 +157,10 @@ https://mp.weixin.qq.com/s/hvVxgND75-sKUdWhr-OWOw
 
 图神经网络:基础与应用，322页ppt
 
+https://mp.weixin.qq.com/s/-Aj9DsuDokSXIC6Nzv71gA
+
+图深度学习:基础、进展与应用，182页ppt
+
 ## 综述
 
 《A Comprehensive Survey on Graph Neural Networks》
@@ -380,23 +384,3 @@ https://www.cnblogs.com/SivilTaram/p/graph_neural_network_1.html
 https://www.cnblogs.com/SivilTaram/p/graph_neural_network_2.html
 
 从图(Graph)到图卷积(Graph Convolution)：漫谈图神经网络模型 (二)
-
-https://www.cnblogs.com/SivilTaram/p/graph_neural_network_3.html
-
-从图(Graph)到图卷积(Graph Convolution)：漫谈图神经网络模型 (三)
-
-https://mp.weixin.qq.com/s/Irs_fLrf4oybc3sAfpmEeA
-
-图嵌入（Graph embedding）综述
-
-https://mp.weixin.qq.com/s/hyW3b7o4kRZN0oflMLYlTw
-
-图嵌入概述
-
-https://mp.weixin.qq.com/s/4YlDC24vC-H7PHRZhhiZJg
-
-图节点嵌入(Node Embeddings)概述，9页pdf
-
-https://mp.weixin.qq.com/s/s6E2vV1KrQDI4SeAnkYTKw
-
-图神经网络将成AI下一拐点！MIT斯坦福一文综述GNN到底有多强

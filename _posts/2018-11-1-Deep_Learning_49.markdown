@@ -344,3 +344,7 @@ https://mp.weixin.qq.com/s/CBAdmV4sItmAjxPIA8Fa2w
 https://zhuanlan.zhihu.com/p/113701629
 
 深度阐述元学习的理论模型
+
+https://mp.weixin.qq.com/s/L8eqDp62rMR6Lyco0uGQUQ
+
+南加州大学等开源元学习研究库learn2learn

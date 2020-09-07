@@ -9,6 +9,26 @@ category: DL
 
 # Graph NN（续）
 
+https://www.cnblogs.com/SivilTaram/p/graph_neural_network_3.html
+
+从图(Graph)到图卷积(Graph Convolution)：漫谈图神经网络模型 (三)
+
+https://mp.weixin.qq.com/s/Irs_fLrf4oybc3sAfpmEeA
+
+图嵌入（Graph embedding）综述
+
+https://mp.weixin.qq.com/s/hyW3b7o4kRZN0oflMLYlTw
+
+图嵌入概述
+
+https://mp.weixin.qq.com/s/4YlDC24vC-H7PHRZhhiZJg
+
+图节点嵌入(Node Embeddings)概述，9页pdf
+
+https://mp.weixin.qq.com/s/s6E2vV1KrQDI4SeAnkYTKw
+
+图神经网络将成AI下一拐点！MIT斯坦福一文综述GNN到底有多强
+
 https://mp.weixin.qq.com/s/5oOobY_3blbXYYxuuQmShQ
 
 一文读懂图神经网络
@@ -376,23 +396,3 @@ https://mp.weixin.qq.com/s/xJ05ctlYhyVy__6CaOm4WQ
 https://zhuanlan.zhihu.com/p/81350196
 
 GAT（图注意力模型）
-
-https://mp.weixin.qq.com/s/nGPUcDHTrG6KwAqDCkfA1w
-
-基于超图网络模型的图网络进化算法
-
-https://mp.weixin.qq.com/s/XoVUJln3oyhk2jMOtWwfog
-
-基于图神经网络的协同过滤算法
-
-https://zhuanlan.zhihu.com/p/86216369
-
-从3/4层拓展到56层，如何训练超级深层的图卷积神经网络
-
-https://mp.weixin.qq.com/s/ceC1_39cmpqYOoHsu-4sCQ
-
-HEC-Montreal唐建博士：图神经网络推理
-
-https://mp.weixin.qq.com/s/aIU8mP5nlnqR4Qt-4RfMgQ
-
-孙付伟：Graph Embedding在知乎的应用实践
