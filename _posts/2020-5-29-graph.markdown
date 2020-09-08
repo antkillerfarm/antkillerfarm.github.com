@@ -221,6 +221,10 @@ https://mp.weixin.qq.com/s/iZLwlmBuXWrbpzvkm8nOrw
 
 拉普拉斯矩阵和瑞利熵
 
+https://mp.weixin.qq.com/s/0Iih4TBYUIPY5R4LfWxUNQ
+
+10种常用的图算法直观可视化解释
+
 # 社交网络
 
 ## 信息传播模型

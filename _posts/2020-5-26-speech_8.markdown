@@ -33,6 +33,10 @@ https://mp.weixin.qq.com/s/2Un2Vy33dkxPwe8n7d_Yng
 
 一个有限状态机的C++实现
 
+https://mp.weixin.qq.com/s/Li4GUgFcnotVrswgcX4QFQ
+
+语音识别系列之高阶解码器技术
+
 # 声纹识别
 
 声纹识别关心的“**谁在说**”，用于解决**生物身份确认和识别**；而语音识别关心的“**说了什么**”，用于解决**对说话内容的识别**。

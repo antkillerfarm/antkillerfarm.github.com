@@ -301,3 +301,37 @@ https://mp.weixin.qq.com/s/EICefFM3dfv5A6V9kVqGWw
 https://mp.weixin.qq.com/s/NlJ4-b5SjIjPGgvLUuSxFw
 
 孩子，有时候并不是生活欺骗了你，而是你可能还不懂概率统计……
+
+# Loss function详解+
+
+https://mp.weixin.qq.com/s/CPfhGxig9BMAgimBSOLy3g
+
+用于图像检索的等距离等分布三元组损失函数
+
+https://www.zhihu.com/question/375794498
+
+深度学习的多个loss如何平衡？
+
+https://mp.weixin.qq.com/s/tzY_lG0F9dP5Q-LmwuHLmQ
+
+常见损失函数和评价指标总结
+
+https://mp.weixin.qq.com/s/lw9frtqocqsS-q2KGfzO1Q
+
+深入理解计算机视觉中的损失函数
+
+https://mp.weixin.qq.com/s/_HQ5an_krRCYMVnwEgGJow
+
+深度学习的多个loss如何平衡 & 有哪些“魔改”损失函数，曾经拯救了你的深度学习模型？
+
+https://blog.csdn.net/shanglianlm/article/details/85019768
+
+十九种损失函数
+
+https://mp.weixin.qq.com/s/8oKiVRjtPQIH1D2HltsREQ
+
+图像分割损失函数最全面、最详细总结
+
+https://zhuanlan.zhihu.com/p/158853633
+
+一文理解Ranking Loss/Margin Loss/Triplet Loss

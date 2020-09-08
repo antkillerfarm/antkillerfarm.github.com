@@ -286,3 +286,7 @@ https://mp.weixin.qq.com/s/cfBT0wsqzZRwedMO7Qz_vA
 https://mp.weixin.qq.com/s/E3_UrGoN1uSmD_4NYG-YWw
 
 来看看比尔盖茨当年写的BASIC解释器源代码吧，你就知道泰勒级数有什么用了
+
+https://mp.weixin.qq.com/s/RzrQpJ8M4SoY6YXhUQNWHg
+
+你上世纪写的代码现在还work吗？挑战者：我需要一个读磁带的机器

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 化学
+title: 化学, Maxwell's equations
 category: Nature 
 ---
 
@@ -141,6 +141,10 @@ https://mp.weixin.qq.com/s/ZJWx-7byW9dDrC58Q6f_hw
 
 从冰淇淋到洗衣粉，它们靠“香”行走江湖
 
+https://mp.weixin.qq.com/s/pry9NlLCql74XhdvRADBiQ
+
+它是“地球保护伞”，也可能是危险的隐形反派
+
 ## 化学工业
 
 https://wallstreetcn.com/articles/250536
@@ -166,3 +170,24 @@ https://new.qq.com/omn/20180819/20180819A011JT.html
 http://www.qdaily.com/articles/18872.html
 
 杜邦要合并了，过去一百年，这家公司的发明都改变了些什么？
+
+# Maxwell's equations
+
+| Name | Differential form | Integral form |
+|:--:|:--:|:--:|
+| Gauss's law | $$\nabla \cdot \mathbf{D} = \rho$$ | $$\oint_S \mathbf{D} \cdot d\mathbf{A} =  \int_V \rho \cdot dV$$ |
+| Gauss' law for magnetism | $$\nabla \cdot \mathbf{B} = 0$$ | $$\oint_S \mathbf{B} \cdot d\mathbf{A} = 0$$ |
+| Faraday's law of induction | $$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}} {\partial t}$$ | $$\oint_C \mathbf{E} \cdot d\mathbf{l} - \oint_C \mathbf {B} \times \mathbf{v} \cdot d{\mathbf {l}}  = - \ { d \over dt }   \int_S   \mathbf{B} \cdot d\mathbf{A}$$ |
+| Ampère's law | $$\nabla \times \mathbf{H} = \mathbf{J} + \frac{\partial \mathbf{D}} {\partial t}$$ | $$\oint_C \mathbf{H} \cdot d\mathbf{l} = \int_S \mathbf{J} \cdot d \mathbf{A} + \int_S\frac{\partial \mathbf{D} }{\partial t}\cdot d \mathbf{A}$$ |
+
+| Symbol | Meaning |
+|:--:|:--:|
+| $$\mathbf{E}$$ | electric field |
+| $$\mathbf{H}$$ | magnetic field |
+| $$\mathbf{D}$$ | electric displacement field |
+| $$\mathbf{B}$$ | Magnetic field density |
+| $$\rho$$ | electric charge |
+| $$\mathbf{J}$$ | current density |
+| $$\mathbf{v}$$ | velocity |
+| $$\nabla \cdot$$ | divergence operator |
+| $$\nabla \times$$ | curl operator |

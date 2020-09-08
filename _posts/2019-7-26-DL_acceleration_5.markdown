@@ -77,6 +77,10 @@ https://mp.weixin.qq.com/s/_eJ27nKULYzUNzDEf62x2w
 
 何恺明团队最新力作RegNet：超越EfficientNet，GPU上提速5倍
 
+https://mp.weixin.qq.com/s/WYG0XAhoPTOn_qCilT9yfw
+
+​一文读懂EfficientDet
+
 ## 参考
 
 https://github.com/memoiry/Awesome-model-compression-and-acceleration

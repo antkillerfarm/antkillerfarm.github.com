@@ -137,6 +137,10 @@ https://mp.weixin.qq.com/s/MFKYddfINEQnUO-WPTTdGg
 
 用户画像基础
 
+https://mp.weixin.qq.com/s/-VVM5RIRdPOgA4MscwQ7MQ
+
+推荐系统之用户画像基础
+
 # 推荐系统的工程细节
 
 推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。

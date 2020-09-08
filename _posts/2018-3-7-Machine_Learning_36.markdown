@@ -165,6 +165,10 @@ https://mp.weixin.qq.com/s/-aRRORqBnTMmBDXuW749_w
 
 在没有技术术语的情况下介绍Adaptive、GBDT、XGboosting等提升算法的原理简介
 
+https://mp.weixin.qq.com/s/umGzRySCnJo25e5_0nO7cw
+
+如何用XGBoost做时间序列预测？
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。
@@ -323,17 +327,3 @@ https://mp.weixin.qq.com/s/Na2SJkfC9LzgfbTfSCclOw
 https://zhuanlan.zhihu.com/p/82116922
 
 一文读懂“Parameter Server”的分布式机器学习训练原理
-
-# Bloom Filter
-
-https://blog.csdn.net/zhaodedong/article/details/78186450
-
-Bloom Filter的原理和实现
-
-https://blog.csdn.net/zhaodedong/article/details/78445910
-
-Bloom Filter的数学背景
-
-https://mp.weixin.qq.com/s/aPepcwG_VMioqGQ_Fp3deg
-
-海量数据处理利器之布隆过滤器

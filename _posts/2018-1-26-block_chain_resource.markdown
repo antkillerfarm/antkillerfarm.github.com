@@ -362,3 +362,15 @@ https://mp.weixin.qq.com/s/BCszlYgbgvKUSkpJCSRQxg
 https://mp.weixin.qq.com/s/R0nuIqlIefkEppr07Y8gnQ
 
 用一中学数学公式，中了14次彩票头奖，多国彩票规则因他改变
+
+https://mp.weixin.qq.com/s/FCysnxxWBFiGS027qCxHTw
+
+世界上最伟大的十大公式
+
+https://www.zhihu.com/question/20866833
+
+为什么正多面体只有5种？
+
+https://mp.weixin.qq.com/s/qfbfzToypKTxh7CxJ0ifHw
+
+正十二面体的一个最基本谜题被破解了

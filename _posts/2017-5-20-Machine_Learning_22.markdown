@@ -179,38 +179,6 @@ https://mp.weixin.qq.com/s/LOewKsxtWm7dFJS6ioryuw
 
 Siamese网络，Triplet Loss以及Circle Loss的解释
 
-https://mp.weixin.qq.com/s/CPfhGxig9BMAgimBSOLy3g
-
-用于图像检索的等距离等分布三元组损失函数
-
-https://www.zhihu.com/question/375794498
-
-深度学习的多个loss如何平衡？
-
-https://mp.weixin.qq.com/s/tzY_lG0F9dP5Q-LmwuHLmQ
-
-常见损失函数和评价指标总结
-
-https://mp.weixin.qq.com/s/lw9frtqocqsS-q2KGfzO1Q
-
-深入理解计算机视觉中的损失函数
-
-https://mp.weixin.qq.com/s/_HQ5an_krRCYMVnwEgGJow
-
-深度学习的多个loss如何平衡 & 有哪些“魔改”损失函数，曾经拯救了你的深度学习模型？
-
-https://blog.csdn.net/shanglianlm/article/details/85019768
-
-十九种损失函数
-
-https://mp.weixin.qq.com/s/8oKiVRjtPQIH1D2HltsREQ
-
-图像分割损失函数最全面、最详细总结
-
-https://zhuanlan.zhihu.com/p/158853633
-
-一文理解Ranking Loss/Margin Loss/Triplet Loss
-
 # 机器学习分类器性能指标
 
 很多学习器是为测试样本产生一个实值或概率预测，然后将这个预测值与一个分类阈值（threshold）进行比较，若大于阈值则分为正类，否则为反类。这个实值或概率预测结果的好坏，直接决定了学习器的泛化能力。实际上，根据这个实值或概率预测结果，我们可将测试样本进行**排序**，“最可能”是正例的排在最前面，“最不可能”是正例的排在最后面。这样，分类过程就相当于在这个排序中以某个“截断点”（cut point）将样本分为两部分，前一部分判作正例，后一部分则判作反例。
@@ -341,3 +309,11 @@ https://mp.weixin.qq.com/s/sKiAwLoxdP9yyZX0-R4UrA
 https://mp.weixin.qq.com/s/k-Jm24aMlPgWMtFYaKNlog
 
 信息检索中的度量指标全解析
+
+https://mp.weixin.qq.com/s/Q_lN83h6nA242_Tv9hqtPQ
+
+关于个性化排序任务评价指标的大讨论
+
+https://zhuanlan.zhihu.com/p/161703182
+
+深挖一下F1 score

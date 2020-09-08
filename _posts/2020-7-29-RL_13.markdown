@@ -133,6 +133,10 @@ https://mp.weixin.qq.com/s/jUKTsJdlBLPWbiBa6TlPPA
 
 基于模型的强化学习—LQR与iLQR
 
+https://mp.weixin.qq.com/s/tv8Tq9hIsll9_aPGUKI8qQ
+
+强化学习《奖励函数设计: Reward Shaping》详细解读
+
 # DRL参考资源+
 
 https://mp.weixin.qq.com/s/1b3_AiFhwXqxb7FozdRYIQ

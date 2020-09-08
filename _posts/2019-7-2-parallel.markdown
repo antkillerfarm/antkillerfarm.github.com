@@ -348,3 +348,7 @@ https://mp.weixin.qq.com/s/soruo90Dbtzi6d1kA63Akg
 https://zhuanlan.zhihu.com/p/79030485
 
 AllReduce算法的前世今生
+
+https://mp.weixin.qq.com/s/oDak7peTT5ynNYrH7LSWTg
+
+分布式层次GPU参数服务器架构

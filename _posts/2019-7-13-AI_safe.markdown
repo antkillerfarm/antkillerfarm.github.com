@@ -347,6 +347,20 @@ https://mp.weixin.qq.com/s/gBHmBLGILd6rZ-6cuelw0Q
 
 这可能是你听说过最快的稳定排序算法（Timsort）
 
+# Bloom Filter
+
+https://blog.csdn.net/zhaodedong/article/details/78186450
+
+Bloom Filter的原理和实现
+
+https://blog.csdn.net/zhaodedong/article/details/78445910
+
+Bloom Filter的数学背景
+
+https://mp.weixin.qq.com/s/aPepcwG_VMioqGQ_Fp3deg
+
+海量数据处理利器之布隆过滤器
+
 ## 参考
 
 https://mp.weixin.qq.com/s/JiYRhcTv2qgLfVyGzI8uHQ

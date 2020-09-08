@@ -241,3 +241,7 @@ Label Assign：提升目标检测上限
 https://mp.weixin.qq.com/s/EO5h1zW4yrToqwTCnXtz4g
 
 TTFNet: 最大程度提高训练效率的实时目标检测
+
+https://mp.weixin.qq.com/s/6R3myLyAeMMS0lR1GSlvcA
+
+细说物体检测中的Anchors

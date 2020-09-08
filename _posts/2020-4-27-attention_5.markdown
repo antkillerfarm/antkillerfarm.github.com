@@ -21,6 +21,10 @@ https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771134&idx=2&sn=012082
 
 TinyBERT：模型小7倍，速度快8倍，华中科大、华为出品
 
+https://mp.weixin.qq.com/s/rBiafIT8JUuSe_zib9yssw
+
+TinyBert: 模型蒸馏的全方位应用
+
 https://mp.weixin.qq.com/s/i82wGiSOlA4l4ozimrE2gg
 
 加速BERT模型有多少种方法？从架构优化、模型压缩到模型蒸馏最新进展详解！

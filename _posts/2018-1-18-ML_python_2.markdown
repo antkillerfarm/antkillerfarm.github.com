@@ -461,6 +461,10 @@ https://mp.weixin.qq.com/s/GKrqAD0tud6WOFjNwQVVZw
 
 使用Seaborn绘制常用图表
 
+https://mp.weixin.qq.com/s/Lrag8Wilf4B6abVG2UcMZw
+
+详解seaborn可视化中的kdeplot、rugplot、distplot与jointplot
+
 ## Bokeh
 
 Bokeh是一个数据可视化的库。它不仅提供了和Matplotlib类似的静态图功能，还提供了生成交互动态图的功能。
