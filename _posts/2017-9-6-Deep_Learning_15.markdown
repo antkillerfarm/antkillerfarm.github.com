@@ -11,6 +11,16 @@ category: DL
 
 ## Local Response Normalization（续）
 
+Inter-Channel LRN：
+
+$$b_{x,y}^i=a_{x,y}^i / \left( k+\alpha \sum_{j=\max (0,i-n/2)}^{\min(N-1,i+n/2)}(a_{x,y}^j)^2\right)^\beta$$
+
+其中，$$a_{x,y}^i$$表示feature map第i通道上坐标为x,y的点的值。因此，Inter-Channel LRN的做法就是：将相邻的几个通道上相同坐标的点的值，代入公式，进行Normalization。
+
+这实际上和1x1的卷积比较像，不同之处在于：1x1的卷积处理所有通道，而Inter-Channel LRN只处理相邻通道。
+
+上式中的$$k,n,\alpha,\beta$$均为超参数，N为通道数。显然，如果$$(k,\alpha,\beta,n)=(0,1,1,N)$$的话，就是Channel Normalization了。
+
 Intra-Channel LRN：
 
 $$b_{x,y}^k=a_{x,y}^k / \left( k+\alpha \sum_{i=\max (0,x-n/2)}^{\min(W,x+n/2)}\sum_{j=\max (0,y-n/2)}^{\min(H,y+n/2)}(a_{i,j}^k)^2\right)^\beta$$
@@ -40,6 +50,10 @@ https://mp.weixin.qq.com/s/w_W4NwkCRdbyZbEwMlrFRQ
 https://mp.weixin.qq.com/s/T5vDmlaVdqvvxtqd1t3lww
 
 Unsupervised Batch Normalization
+
+https://mp.weixin.qq.com/s/f-S_Wgc2B_2oN7Nk-20y8g
+
+正则化与标准化大总结
 
 # fine-tuning
 
@@ -256,15 +270,3 @@ $$J(G)=\alpha \cdot J_{content}(C,G)+\beta \cdot J_{style}(S,G)$$
 我们先来看J(G)的第一部分$$J_{content}(C,G)$$，它表示内容图片C与生成图片G之间的相似度。
 
 使用的CNN网络是之前预训练好的模型，例如Alex-Net。**C，S，G共用相同模型和参数。**
-
-首先，需要选择合适的层数l来计算$$J_{content}(C,G)$$。
-
-如前所述，CNN的每个隐藏层分别提取原始图片的不同深度特征，由简单到复杂。如果l太小，则G与C在像素上会非常接近，没有迁移效果；如果l太深，则G上某个区域将直接会出现C中的物体。因此，l既不能太浅也不能太深，一般选择网络中间层。
-
-若C和G在l层的激活函数输出$$a^{[l](C)}$$与$$a^{[l](G)}$$，则相应的$$J_{content}(C,G)$$的表达式为：
-
-$$J_{content}(C,G)=\frac12||a^{[l](C)}-a^{[l](G)}||^2$$
-
-接下来，我们定义图片的风格矩阵（style matrix）为：
-
-$$G_{kk'}^{[l]}=\sum_{i=1}^{n_H^{[l]}}\sum_{j=1}^{n_W^{[l]}}a_{ijk}^{[l]}a_{ijk'}^{[l]}$$

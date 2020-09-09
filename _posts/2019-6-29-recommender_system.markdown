@@ -357,6 +357,10 @@ https://mp.weixin.qq.com/s/urGCBjJegKwIqkcCBelptA
 
 深入理解推荐系统：召回
 
+https://mp.weixin.qq.com/s/lx-3T5J8R29MT5jfeuTmVg
+
+深入理解推荐系统：排序
+
 https://mp.weixin.qq.com/s/sY_EFq7XF1ab2_0nv19XTg
 
 KDD Cup 2020推荐系统赛道—数据分析
@@ -392,3 +396,7 @@ Item-CF的几种优化方式
 https://mp.weixin.qq.com/s/sDG5xm1JZ8rIEaVXeVQ5cA
 
 主流推荐引擎技术及优缺点分析
+
+https://mp.weixin.qq.com/s/EFDmHH8oUmJk-rG5PNnsAg
+
+阿里妈妈深度树匹配技术演进：TDM->JTM->BSAT

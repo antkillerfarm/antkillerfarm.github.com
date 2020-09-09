@@ -302,6 +302,10 @@ https://zhuanlan.zhihu.com/p/104019160
 
 PyTorch常用代码段
 
+https://mp.weixin.qq.com/s/MJgQqwWa4wyNgtKZaX_ADQ
+
+Tensorboard可视化与Hook机制
+
 # 模型压缩与加速进阶++
 
 https://mp.weixin.qq.com/s/oDwvMtET0moHVGgtQLfCow

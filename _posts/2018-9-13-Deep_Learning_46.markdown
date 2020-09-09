@@ -388,3 +388,7 @@ https://www.zhihu.com/question/19662693
 https://mp.weixin.qq.com/s/wKJ3buhA-6xtJPZ7DQ0pow
 
 机器学习模型在携程海外酒店推荐场景中的应用
+
+https://mp.weixin.qq.com/s/V1eKYF-5gJf7qX-I2SsJ1Q
+
+深度CTR预估模型在应用宝推荐系统中的探索

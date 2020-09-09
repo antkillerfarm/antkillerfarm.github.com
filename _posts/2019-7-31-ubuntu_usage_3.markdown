@@ -216,6 +216,10 @@ https://www.cnblogs.com/biyeymyhjob/archive/2012/07/20/2601655.html
 
 Linux写时拷贝技术(copy-on-write)
 
+https://mp.weixin.qq.com/s/MNzSES3dlMuiwkffLWJGIg
+
+文件系统：隐匿在Linux背后的机制
+
 https://mp.weixin.qq.com/s/1JiXL1f3SSjsBojlJSNOpQ
 
 Linux的启动流程

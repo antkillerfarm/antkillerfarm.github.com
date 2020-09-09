@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十四）——词向量进阶, 深度贝叶斯学习, 图像检索
+title:  深度学习（三十四）——词向量进阶, 深度贝叶斯学习
 category: DL 
 ---
 
@@ -66,6 +66,10 @@ https://mp.weixin.qq.com/s/YGBvWIENE9TASvb_t_Pebw
 https://mp.weixin.qq.com/s/SN6qnaorfYpIYMNcZQTR8Q
 
 推荐系统embedding技术实践总结
+
+https://mp.weixin.qq.com/s/ziKG-fvXyVc59eyNjoXseA
+
+不要再对类别变量进行独热编码了
 
 ## 参考
 
@@ -281,6 +285,10 @@ https://lumingdong.cn/application-practice-of-embedding-in-recommendation-system
 
 推荐系统的中embedding的应用实践
 
+https://mp.weixin.qq.com/s/76BaQ6b1FYz05pZUbplGhQ
+
+一文总结词向量的计算、评估与优化
+
 # 深度贝叶斯学习
 
 https://mp.weixin.qq.com/s/4sDNUZiOiS6VH_oRSnW6HQ
@@ -362,57 +370,3 @@ https://mp.weixin.qq.com/s/NkRemHPRnEcEwbs5b-Mz9w
 https://mp.weixin.qq.com/s/DDg4HTp-APwEIul1ZaFFPQ
 
 最新《贝叶斯推断》教程，125页ppt与视频，DeepMind Shakir Mohamed博士
-
-# 图像检索
-
-## 传统方法
-
-https://mp.weixin.qq.com/s/sM78DCOK3fuG2JrP2QaSZA
-
-SIFT与CNN的碰撞：万字长文回顾图像检索任务十年探索历程（上）
-
-https://mp.weixin.qq.com/s/yzVMDEpwbXVS0y-CwWSBEA
-
-SIFT与CNN的碰撞：万字长文回顾图像检索任务十年探索历程（下）
-
-https://mp.weixin.qq.com/s/Sda94q-40goiZGSYGgm_Yw
-
-基于内容的图像检索技术综述-传统经典方法
-
-https://mp.weixin.qq.com/s/ED-zovVT_vHId4mYXdEo5w
-
-高效大规模图像搜索开源实现
-
-## DL方法
-
-https://zhuanlan.zhihu.com/p/36479489
-
-图像检索：因缘际会与前瞻
-
-https://mp.weixin.qq.com/s/jv6PvFHsweK_rFOuz-p-mg
-
-图像检索从入门到进阶
-
-https://mp.weixin.qq.com/s/aRndRlVnY5ZRBFnNbVNecg
-
-李飞飞CS231n项目：这两位工程师想用神经网络帮你还原买家秀
-
-https://mp.weixin.qq.com/s/zHSDFR_Nd4LfvIaq9kSrww
-
-BMVC2018图像检索论文—使用区域注意力网络改进R-MAC方法
-
-https://mp.weixin.qq.com/s/FJCZvc8pl-CwFhyiCD6E-g
-
-Pinterest视觉搜索工程师孙彦：视觉搜索不是“鸡肋”
-
-https://mp.weixin.qq.com/s/QgYtfvsLGcfqLA98mp19tg
-
-KDD2018阿里巴巴论文揭示自家大规模视觉搜索算法
-
-https://mp.weixin.qq.com/s/CS4iAMprZizrXhpXDhySzg
-
-视频分类/行为识别研究综述，从数据集到方法
-
-http://yongyuan.name/blog/layer-selection-and-finetune-for-cbir.html
-
-图像检索：layer选择与fine-tuning性能提升验证

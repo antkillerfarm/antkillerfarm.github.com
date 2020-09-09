@@ -129,7 +129,7 @@ https://mp.weixin.qq.com/s/0dJeYLuXkmJpqvuNHx7L8A
 
 爆红Github！20多个练手前端小型项目的集合，随你造！
 
-# 参考
+# Javascript参考资源
 
 https://zhuanlan.zhihu.com/p/22989691
 
@@ -242,3 +242,7 @@ https://mp.weixin.qq.com/s/VTULhAjEUNfAph-xkkUTsg
 https://mp.weixin.qq.com/s/3sYrI9kxgAYLiNT-xavRLw
 
 “秒开”浏览器实现起来有多难？
+
+https://mp.weixin.qq.com/s/LciDtj6YmPI7WxcCQM-lIA
+
+前端性能分析工具利器

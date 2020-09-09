@@ -245,3 +245,11 @@ TTFNet: 最大程度提高训练效率的实时目标检测
 https://mp.weixin.qq.com/s/6R3myLyAeMMS0lR1GSlvcA
 
 细说物体检测中的Anchors
+
+https://mp.weixin.qq.com/s/UbCLqfyEOKUGnvySweUzMw
+
+使用关键点进行小目标检测
+
+https://mp.weixin.qq.com/s/BsoqlaOlhXc9irSuBc6vGg
+
+在物体检测中搞定小目标

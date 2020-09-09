@@ -468,6 +468,10 @@ http://mazhuang.org/2016/12/14/rtfsc-with-opengrok/
 
 # Linux参考资源
 
+https://mp.weixin.qq.com/s/QB-IHiCIWEu3bALm2Dp46Q
+
+操作系统课程知识结构
+
 https://www.zhihu.com/question/270348678/answer/460715569
 
 生产力应用大汇总

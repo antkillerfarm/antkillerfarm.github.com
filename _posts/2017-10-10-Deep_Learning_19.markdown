@@ -247,6 +247,18 @@ https://mp.weixin.qq.com/s/__qC6Wzy4jaGNGzWr3eOIg
 
 # Graph NN++
 
+https://mp.weixin.qq.com/s/GnjSuQ_BihO5bP5xO2xHJg
+
+万字长文带你入门GCN
+
+https://mp.weixin.qq.com/s/4J0wL4vSugmx1Zow8zdT2Q
+
+DGL深度图神经网络实战教程
+
+https://mp.weixin.qq.com/s/v9aOoK2sHP0a9hZP0jWW0Q
+
+图神经网络的新基准
+
 https://zhuanlan.zhihu.com/p/133739758
 
 全面理解PinSage（工业落地：图神经网络+推荐系统）
@@ -326,15 +338,3 @@ https://mp.weixin.qq.com/s/F9zt7eyHxTX7Gp0zpvnfcg
 https://mp.weixin.qq.com/s/qgZwi3ieMqPrg3t5lyjaZw
 
 元图(Meta-Graph)：元学习小样本连接预测
-
-https://mp.weixin.qq.com/s/17ozbpr2IIoq36VpBl3Crw
-
-基于知识图谱和图卷积神经网络的应用和开发
-
-https://mp.weixin.qq.com/s/mbr3u9SiYVPysBT9xuX0vg
-
-Hyperbolic Graph Convolutional Neural Networks
-
-https://www.zhihu.com/question/366088445
-
-请问全连接的图卷积网络(GCN)和self-attention这些机制有什么区别联系吗？

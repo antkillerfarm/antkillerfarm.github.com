@@ -293,6 +293,32 @@ https://mp.weixin.qq.com/s/tTx5kbr4tPEdme3R410uEA
 
 layoutGAN是如何实现自动排版的
 
+## 图像配准
+
+https://mp.weixin.qq.com/s/0BeqQ6-ZZM-T38sJJWeX1Q
+
+图像配准的前世今生：从人工设计特征到深度学习
+
+https://zhuanlan.zhihu.com/p/80985475
+
+图像配准综述
+
+https://zhuanlan.zhihu.com/p/90593936
+
+fluid(流）方法图像配准简介
+
+https://mp.weixin.qq.com/s/bYr1BAlAn2vp9jUAPhgXDA
+
+用MNIST数据集进行基于深度学习的可变形图像配准的验证实验
+
+https://mp.weixin.qq.com/s?__biz=MzI0ODcxODk5OA==&mid=2247508603&idx=2&sn=cfb091884ccc7a0ea03af38b1a629823
+
+巧解图像处理经典难题之图像配准
+
+https://mp.weixin.qq.com/s/4F-goAdut2qrb4m5fRVN2g
+
+基于深度学习的2D和3D仿射变换配准
+
 ## CV
 
 https://mp.weixin.qq.com/s/gsHu7vNs9cm1tH2nz9mmMg
@@ -330,18 +356,6 @@ https://mp.weixin.qq.com/s/sOeBUZi5-7fGkqcd1MPmiQ
 https://zhuanlan.zhihu.com/p/55286828
 
 当低级视觉任务遇上高级视觉任务
-
-https://mp.weixin.qq.com/s/0BeqQ6-ZZM-T38sJJWeX1Q
-
-图像配准的前世今生：从人工设计特征到深度学习
-
-https://zhuanlan.zhihu.com/p/80985475
-
-图像配准综述
-
-https://zhuanlan.zhihu.com/p/90593936
-
-fluid(流）方法图像配准简介
 
 https://zhuanlan.zhihu.com/p/37404280
 

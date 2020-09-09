@@ -61,9 +61,13 @@ PPA（Power-Performance-Area）
 
 # CPU
 
-## 行业划分
+## 行业
 
 IC行业的公司一般分为全流程的（IDM），著名公司如德州仪器，英特尔，三星，意法半导体，只做设计自己没有晶圆厂的（Fabless），比如英伟达，AMD，只负责制造的（Foundry），比如台积电。
+
+----
+
+台湾三大科学园区为竹科（新竹科学工业园）、中科（中部科学工业园）、南科（南部科学工业园）。台积电研发主要在竹科、量产在中科及南科。
 
 ## 3D芯片
 
@@ -297,6 +301,14 @@ https://mp.weixin.qq.com/s/AdmEd1FHxpZUwSGYy3qggg
 
 ## 参考
 
+https://zhuanlan.zhihu.com/p/34003929
+
+调试程序时，设置断点的原理是什么？
+
+>Visual Studio有个有趣的特性是debug编译后，会把0xcc（INT 3）填入代码的空隙，这样一旦程序越界就会被VS捕捉而容易发现错误。而0xCCCC在中国的GBK编码是“烫”。有中国程序员翻看内存到代码段会发现很多"烫烫烫"，不明所以，以为发生了什么神奇的事情。
+
+----
+
 https://mp.weixin.qq.com/s/Cij_95iLbAm0AEtrSb72_A
 
 关于CPU科普，这篇说得最详细
@@ -324,29 +336,3 @@ https://zhuanlan.zhihu.com/p/30409360
 https://zhuanlan.zhihu.com/p/33145828
 
 什么是Speculative Execution？为什么要有它？
-
-http://mp.weixin.qq.com/s/sshhUppVPP6qM7LH1V3nSQ
-
-四位计算机的原理及其实现
-
-https://zhuanlan.zhihu.com/p/33579054
-
-Reset重启后发生了什么？它和关机后再开机有什么区别？
-
-https://zhuanlan.zhihu.com/p/34003929
-
-调试程序时，设置断点的原理是什么？
-
->Visual Studio有个有趣的特性是debug编译后，会把0xcc（INT 3）填入代码的空隙，这样一旦程序越界就会被VS捕捉而容易发现错误。而0xCCCC在中国的GBK编码是“烫”。有中国程序员翻看内存到代码段会发现很多"烫烫烫"，不明所以，以为发生了什么神奇的事情。
-
-https://zhuanlan.zhihu.com/p/34091597
-
-ARM攒机指南-网络篇
-
-https://zhuanlan.zhihu.com/p/34223088
-
-如何进入BIOS？
-
-https://zhuanlan.zhihu.com/p/30565679
-
-人工智能技术热潮中，是否存在破解苹果A11处理器的可能？

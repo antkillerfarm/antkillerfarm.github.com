@@ -325,3 +325,7 @@ https://mp.weixin.qq.com/s/VBA02WHBJmU77RPLtIzprA
 https://mp.weixin.qq.com/s/BfZ9BQXtOsEXCkAR3QYHhA
 
 特征工程了解一下
+
+https://mp.weixin.qq.com/s/dPnb7Mho-sQA6euvCdQV7w
+
+类别特征目标编码

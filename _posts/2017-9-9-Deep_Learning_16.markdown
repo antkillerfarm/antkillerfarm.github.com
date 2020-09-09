@@ -11,6 +11,18 @@ category: DL
 
 ## Cost Function（续）
 
+首先，需要选择合适的层数l来计算$$J_{content}(C,G)$$。
+
+如前所述，CNN的每个隐藏层分别提取原始图片的不同深度特征，由简单到复杂。如果l太小，则G与C在像素上会非常接近，没有迁移效果；如果l太深，则G上某个区域将直接会出现C中的物体。因此，l既不能太浅也不能太深，一般选择网络中间层。
+
+若C和G在l层的激活函数输出$$a^{[l](C)}$$与$$a^{[l](G)}$$，则相应的$$J_{content}(C,G)$$的表达式为：
+
+$$J_{content}(C,G)=\frac12||a^{[l](C)}-a^{[l](G)}||^2$$
+
+接下来，我们定义图片的风格矩阵（style matrix）为：
+
+$$G_{kk'}^{[l]}=\sum_{i=1}^{n_H^{[l]}}\sum_{j=1}^{n_W^{[l]}}a_{ijk}^{[l]}a_{ijk'}^{[l]}$$
+
 风格矩阵$$G_{kk'}^{[l]}$$计算第l层隐藏层不同通道对应的所有激活函数输出和。若两个通道之间相似性高，则对应的$$G_{kk'}^{[l]}$$较大。从数学的角度来说，这里的风格矩阵实际上就是两个tensor的**互相关矩阵**，也就是上面提到的Gram矩阵。
 
 Gram矩阵描述的是全局特征的自相关，如果输出图与风格图的这种自相关相近，那么差不多是我们所理解的”风格”。当然，其实也可以用很多其他的统计信息进行描绘风格。比如有用直方图的, 甚至还可以直接简化成”均值+方差”的。
@@ -41,7 +53,7 @@ Gatys的方法虽然是里程碑式的进步，但仍然有如下缺点：
 
 2.需要根据风格的不同，调整不同的超参数。换句话说，就是一个Style Transfer的模型就只能用于转换一种Style，通用型不强。
 
-因此，之后的研究主要集中在对这两方面的改进上。针对前者的改进可称作fast style transfer，而后者可称作Universal Style Transfer。
+因此，之后的研究主要集中在对这两方面的改进上。针对前者的改进可称作**fast style transfer**，而后者可称作**Universal Style Transfer**。
 
 此外，**不是所有的style transfer都是DL方法，很多新特效往往还是用传统的滤镜实现的**。比如最近比较火的“新海诚风格”。
 
@@ -266,13 +278,3 @@ stage1: 在构建图像金字塔的基础上，利用fully convolutional network
 stage2: 将通过stage1的所有窗口输入作进一步判断，同时也要做boundingbox regression和NMS。
 
 stage3: 和stage2相似，只不过增加了更强的约束：5个人脸关键点（landmark）。
-
-![](/images/img3/P-Net.jpg)
-
-![](/images/img3/R-Net.jpg)
-
-![](/images/img3/O-Net.jpg)
-
-上面三图分别是P-Net、R-Net和O-Net的网络结构图。
-
-需要注意的是，Cascade CNN和MTCNN都是比较早期的方案了，这里的人脸候选框，一般是用**滑动窗口**的方式生成的，这种方法的效率不高，不仅比不上Faster RCNN以后的RPN Layer，就连RCNN的Selective Search也颇有不如，完全就是Viola-Jones方法的简单翻版。

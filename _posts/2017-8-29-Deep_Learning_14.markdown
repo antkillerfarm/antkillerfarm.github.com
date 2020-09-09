@@ -71,6 +71,14 @@ BN的误差反向算法相对复杂，这里不再赘述。
 
 由公式7可以看出，BN不是针对x（输入的），而是针对Wx+b的。而W每个channel都不同。因此，对于Layer: `batch*channel*height*width`来说，对`batch*height*width`个像素点统计得到一个均值和一个标准差，这样总共会得到channel组参数。
 
+前面指出：
+
+- relu得用Kaiming初始化。
+
+- tanh得用Xavier初始化。
+
+而在网络层的激活函数前加上BN的话，采用什么初始化都无所谓。
+
 ## Instance Normalization
 
 Instance Normalization主要用于CV领域。
@@ -287,13 +295,3 @@ $$
 LRN最早出自Alexnet，虽然后来由于效果不佳，已经很少使用了，但它的思路还是可以借鉴的。
 
 LRN分为Inter-Channel LRN和Intra-Channel LRN两种，如果不加说明的话，一般是指前者。
-
-Inter-Channel LRN：
-
-$$b_{x,y}^i=a_{x,y}^i / \left( k+\alpha \sum_{j=\max (0,i-n/2)}^{\min(N-1,i+n/2)}(a_{x,y}^j)^2\right)^\beta$$
-
-其中，$$a_{x,y}^i$$表示feature map第i通道上坐标为x,y的点的值。因此，Inter-Channel LRN的做法就是：将相邻的几个通道上相同坐标的点的值，代入公式，进行Normalization。
-
-这实际上和1x1的卷积比较像，不同之处在于：1x1的卷积处理所有通道，而Inter-Channel LRN只处理相邻通道。
-
-上式中的$$k,n,\alpha,\beta$$均为超参数，N为通道数。显然，如果$$(k,\alpha,\beta,n)=(0,1,1,N)$$的话，就是Channel Normalization了。

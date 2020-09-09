@@ -9,6 +9,18 @@ category: DL
 
 # 无监督/半监督/自监督深度学习（续）
 
+https://mp.weixin.qq.com/s/FpIaa8XoJ9GsHxL-W1Cl5Q
+
+斯坦福AI实验室机器学习编程新范式：弱监督
+
+https://mp.weixin.qq.com/s/ys9iiiBL3iL2SJL247AMlA
+
+多伦多大学&NVIDIA最新成果：图像标注速度提升10倍！
+
+https://mp.weixin.qq.com/s/V6xiG931OUJyVx15QFb_mQ
+
+弱监督视觉理解笔记
+
 https://mp.weixin.qq.com/s/HopNSLS75TgE28LfY02qog
 
 不同视角构造cycle-consistency，降低视频标注成本
@@ -402,15 +414,3 @@ https://mp.weixin.qq.com/s/bPDqQE58zmJIsol96bP74g
 https://mp.weixin.qq.com/s/YwvXKreRjk_07t3SSXUilg
 
 图神经网络(GNN)结构化数据分析
-
-https://mp.weixin.qq.com/s/GnjSuQ_BihO5bP5xO2xHJg
-
-万字长文带你入门GCN
-
-https://mp.weixin.qq.com/s/4J0wL4vSugmx1Zow8zdT2Q
-
-DGL深度图神经网络实战教程
-
-https://mp.weixin.qq.com/s/v9aOoK2sHP0a9hZP0jWW0Q
-
-图神经网络的新基准

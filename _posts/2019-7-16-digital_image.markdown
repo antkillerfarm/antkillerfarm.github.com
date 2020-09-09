@@ -192,6 +192,10 @@ https://mp.weixin.qq.com/s/1IHHo4sV79sXdtXNzKNhMA
 
 计算摄影--google相机的王者之道
 
+https://mp.weixin.qq.com/s/CDeatCRZ1utgx2X20H_4Lg
+
+CMOS图像传感器科普
+
 https://mp.weixin.qq.com/s/T4XULnykHANEetmDIhZdaw
 
 mobile camera sensor技术方向选择的经验与教训

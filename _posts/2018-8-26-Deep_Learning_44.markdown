@@ -356,3 +356,7 @@ https://mp.weixin.qq.com/s/sMUyTZd_yME70_nWicqP7g
 https://mp.weixin.qq.com/s/yk7fIYFp1fEPn3deZXsE-g
 
 傻瓜式无限P图，MIT朱俊彦团队“重写”深度生成模型
+
+https://mp.weixin.qq.com/s/yn_TQ-Mdcph3M1dfLu-KMw
+
+好好的人，说没就没了：这个视频“橡皮擦”让你瞬间消失，头发丝都不留

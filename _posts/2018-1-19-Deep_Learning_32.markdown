@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十二）——点云, AutoDL（1）, 图像超分辨率进阶
+title:  深度学习（三十二）——点云, AutoDL（1）, 图像超分辨率进阶, 图像检索
 category: DL 
 ---
 
@@ -236,6 +236,10 @@ https://mp.weixin.qq.com/s/bjVTpdaKFx4fFtT8BjMNew
 
 指数级加速架构搜索：CMU提出基于梯度下降的可微架构搜索方法（DARTS）
 
+https://mp.weixin.qq.com/s/Ihn-faO0XvfDDqtEwfWDzg
+
+DARTS：基于梯度下降的经典网络搜索方法，开启端到端的网络搜索
+
 # 图像超分辨率进阶
 
 https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
@@ -325,3 +329,57 @@ https://mp.weixin.qq.com/s/PIq78vhNQxAKntnZilL4pQ
 https://mp.weixin.qq.com/s/G55dxHfMYxWzjz4_8YnUaw
 
 深度学习超分辨率最新综述：一文道尽技术分类与效果评测
+
+# 图像检索
+
+## 传统方法
+
+https://mp.weixin.qq.com/s/sM78DCOK3fuG2JrP2QaSZA
+
+SIFT与CNN的碰撞：万字长文回顾图像检索任务十年探索历程（上）
+
+https://mp.weixin.qq.com/s/yzVMDEpwbXVS0y-CwWSBEA
+
+SIFT与CNN的碰撞：万字长文回顾图像检索任务十年探索历程（下）
+
+https://mp.weixin.qq.com/s/Sda94q-40goiZGSYGgm_Yw
+
+基于内容的图像检索技术综述-传统经典方法
+
+https://mp.weixin.qq.com/s/ED-zovVT_vHId4mYXdEo5w
+
+高效大规模图像搜索开源实现
+
+## DL方法
+
+https://zhuanlan.zhihu.com/p/36479489
+
+图像检索：因缘际会与前瞻
+
+https://mp.weixin.qq.com/s/jv6PvFHsweK_rFOuz-p-mg
+
+图像检索从入门到进阶
+
+https://mp.weixin.qq.com/s/aRndRlVnY5ZRBFnNbVNecg
+
+李飞飞CS231n项目：这两位工程师想用神经网络帮你还原买家秀
+
+https://mp.weixin.qq.com/s/zHSDFR_Nd4LfvIaq9kSrww
+
+BMVC2018图像检索论文—使用区域注意力网络改进R-MAC方法
+
+https://mp.weixin.qq.com/s/FJCZvc8pl-CwFhyiCD6E-g
+
+Pinterest视觉搜索工程师孙彦：视觉搜索不是“鸡肋”
+
+https://mp.weixin.qq.com/s/QgYtfvsLGcfqLA98mp19tg
+
+KDD2018阿里巴巴论文揭示自家大规模视觉搜索算法
+
+https://mp.weixin.qq.com/s/CS4iAMprZizrXhpXDhySzg
+
+视频分类/行为识别研究综述，从数据集到方法
+
+http://yongyuan.name/blog/layer-selection-and-finetune-for-cbir.html
+
+图像检索：layer选择与fine-tuning性能提升验证

@@ -245,6 +245,18 @@ https://www.cnblogs.com/huangyc/p/10223075.html
 
 # Graph NN+++
 
+https://mp.weixin.qq.com/s/17ozbpr2IIoq36VpBl3Crw
+
+基于知识图谱和图卷积神经网络的应用和开发
+
+https://mp.weixin.qq.com/s/mbr3u9SiYVPysBT9xuX0vg
+
+Hyperbolic Graph Convolutional Neural Networks
+
+https://www.zhihu.com/question/366088445
+
+请问全连接的图卷积网络(GCN)和self-attention这些机制有什么区别联系吗？
+
 https://mp.weixin.qq.com/s/nGPUcDHTrG6KwAqDCkfA1w
 
 基于超图网络模型的图网络进化算法

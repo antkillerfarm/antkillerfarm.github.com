@@ -9,6 +9,26 @@ category: resource
 
 # CPU
 
+http://mp.weixin.qq.com/s/sshhUppVPP6qM7LH1V3nSQ
+
+四位计算机的原理及其实现
+
+https://zhuanlan.zhihu.com/p/33579054
+
+Reset重启后发生了什么？它和关机后再开机有什么区别？
+
+https://zhuanlan.zhihu.com/p/34091597
+
+ARM攒机指南-网络篇
+
+https://zhuanlan.zhihu.com/p/34223088
+
+如何进入BIOS？
+
+https://zhuanlan.zhihu.com/p/30565679
+
+人工智能技术热潮中，是否存在破解苹果A11处理器的可能？
+
 https://mp.weixin.qq.com/s/UWpp2r0_yDxNyJk-cldVyA
 
 处理器高危漏洞无人幸免？树莓派：我们不受影响
@@ -400,3 +420,7 @@ https://mp.weixin.qq.com/s/ZxdeUFnkwfBH18hDrBDVcQ
 https://mp.weixin.qq.com/s/dIJS9gebnqFh-nnaoosumA
 
 科学家还是灭世者？记那些原子弹背后的人
+
+https://mp.weixin.qq.com/s/cEGUr0kmP9UwlAoxgFuKGQ
+
+想减肥么？要不把体重秤摆在树荫下试试？（光压）

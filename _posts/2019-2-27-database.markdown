@@ -271,6 +271,14 @@ https://mp.weixin.qq.com/s/cUBSOGFfkWNu91r9agXszQ
 
 高并发系统三大利器之缓存
 
+## 数据管理工具
+
+数据管理工具主要有：Navicat和DataGrip。
+
+https://www.cnblogs.com/zuge/p/7397255.html
+
+DataGrip使用入门
+
 ## 参考
 
 https://mp.weixin.qq.com/s/ActS6PxbtZGqPb0jOn0iFg

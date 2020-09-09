@@ -287,6 +287,10 @@ https://mp.weixin.qq.com/s/x4Q5di8oVAAZBJBTlY8usw
 
 深入理解推荐系统：梳理YouTube推荐算法
 
+https://mp.weixin.qq.com/s/s-BCi-vS6YKCaexlgNCy8g
+
+深入理解推荐系统：推荐系统中的attention机制
+
 https://zhuanlan.zhihu.com/p/128988454
 
 谷歌最新双塔DNN召回模型——应用于YouTube大规模视频推荐场景

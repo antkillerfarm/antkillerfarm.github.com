@@ -335,6 +335,10 @@ https://mp.weixin.qq.com/s/ALTjs2vvHtZs5RJe-k0ECQ
 
 自动驾驶中的机器人操作系统ROS
 
+https://mp.weixin.qq.com/s/IBY2RMSEXde5uZpuRi3cuA
+
+ROS概述与环境搭建
+
 ## PythonRobotics
 
 PythonRobotics是一个机器人算法方面的代码示例库。

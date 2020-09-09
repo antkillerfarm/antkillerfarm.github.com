@@ -376,3 +376,7 @@ Java如何实现动态脚本？
 https://mp.weixin.qq.com/s/ag5u2EPObx7bZr7hkcrOTg
 
 新一代垃圾回收器ZGC的探索与实践
+
+https://mp.weixin.qq.com/s/Uw7YaphnlMQGGazIBYplgQ
+
+我调研了100来个Java开源博客系统，发现这5个最好用！

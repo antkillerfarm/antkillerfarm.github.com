@@ -86,6 +86,10 @@ https://mp.weixin.qq.com/s/xiVmQjJDqY_iOBz_bB_O7g
 
 距离度量，浅谈！
 
+https://mp.weixin.qq.com/s/dpeuDMLIyXyhGYrwaLt-PA
+
+机器学习特性缩放的介绍，什么时候为什么使用
+
 # 函数连续性
 
 函数连续性本质上是刻画函数在自变量变化的情况下，函数值变化的稳定程度。

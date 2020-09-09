@@ -403,6 +403,10 @@ https://mp.weixin.qq.com/s/HWmquQCEfppe0JGeNi2o6Q
 
 Python金融大数据分析，566页pdf
 
+https://mp.weixin.qq.com/s/JRYxslbs-yTgQDhHOUb1sw
+
+ASRF模型
+
 ## 金融模型
 
 ![](/images/img3/Quant.jpg)

@@ -258,3 +258,7 @@ https://mp.weixin.qq.com/s/DxRoTGtdrwqcjXL_ot57eg
 https://mp.weixin.qq.com/s/iDUFr11-YX6oa6bLXWK3iQ
 
 时序特征挖掘的奇技淫巧
+
+https://mp.weixin.qq.com/s/S3xjk9QekWoni0eEvBhlLQ
+
+特征工程之处理时间序列数据
