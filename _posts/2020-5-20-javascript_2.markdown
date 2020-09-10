@@ -155,14 +155,6 @@ https://mp.weixin.qq.com/s/Sjg6jgl1D6IkYgsuQSgFHg
 
 十个最流行的前端CSS库
 
-https://zhuanlan.zhihu.com/p/35551654
-
-基于React的高质量坦克大战复刻版
-
-https://mp.weixin.qq.com/s/zfOZAmgpndcqgxHHaS1j3g
-
-用Vue和React构建相同应用程序，区别在哪？
-
 https://mp.weixin.qq.com/s/DHxEqsTMOyc7pHfmJrfNEg
 
 一篇文章理解JS继承
@@ -218,10 +210,6 @@ https://mp.weixin.qq.com/s/fEAfuVzfOwKjnTB-mdS5UA
 https://mp.weixin.qq.com/s/D-XvKCSUCzMGcEz_xWTwqg
 
 现代CSS进化史
-
-https://mp.weixin.qq.com/s/zDt92-5NVaAFZJRfEHCUvg
-
-什么是Native、Web App、Hybrid、React Native和Weex？
 
 https://mp.weixin.qq.com/s/IIWgNvqp0jxcD-J_CikV8w
 

@@ -179,6 +179,22 @@ https://www.cnblogs.com/isaboy/p/monaco-editor.html
 
 React、Angular、Vue.js似乎是目前最流行的三个框架了。
 
+https://zhuanlan.zhihu.com/p/35551654
+
+基于React的高质量坦克大战复刻版
+
+https://mp.weixin.qq.com/s/zfOZAmgpndcqgxHHaS1j3g
+
+用Vue和React构建相同应用程序，区别在哪？
+
+https://mp.weixin.qq.com/s/zDt92-5NVaAFZJRfEHCUvg
+
+什么是Native、Web App、Hybrid、React Native和Weex？
+
+https://mp.weixin.qq.com/s/RC3eVNfYeVx4mQT3WQHMcw
+
+6个常用的React组件库
+
 ## 多线程编程
 
 Javascript原则上是单线程的，阻塞和其他异步的需求是通过循环来解决的。当线程需要处理大规模的计算的时候，需要使用Web Worker进行多线程操作。

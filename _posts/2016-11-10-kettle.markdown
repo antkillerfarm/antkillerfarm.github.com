@@ -190,6 +190,10 @@ https://mp.weixin.qq.com/s/Z_HdxKrAUSa4QtVNpqvx5w
 
 面试官：请介绍搜索引擎背后的经典数据结构和算法
 
+https://mp.weixin.qq.com/s/R36zW4CVKkdiTQ8ZQCwEGw
+
+通用搜索引擎背后的技术点
+
 ## start命令
 
 Solr的运行需要启动相应的服务程序。启动命令如下：
