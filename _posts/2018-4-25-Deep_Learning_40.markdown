@@ -37,6 +37,10 @@ https://mp.weixin.qq.com/s/iAMjUHK5ZrVEGVliA0JE9Q
 
 行人Re-ID研究概述
 
+https://mp.weixin.qq.com/s/T-Odxp4K1E0I7Gq-fjCM7g
+
+行人跟踪算法及应用综述
+
 https://mp.weixin.qq.com/s/_NDw7pFmDB07mliHTA6VYQ
 
 旷视行人再识别（ReID）突破

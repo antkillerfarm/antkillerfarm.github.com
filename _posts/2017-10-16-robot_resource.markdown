@@ -339,6 +339,10 @@ https://mp.weixin.qq.com/s/IBY2RMSEXde5uZpuRi3cuA
 
 ROS概述与环境搭建
 
+https://mp.weixin.qq.com/s/eyqyaOFenPGA721cMGAC0Q
+
+ROS通信机制
+
 ## PythonRobotics
 
 PythonRobotics是一个机器人算法方面的代码示例库。
