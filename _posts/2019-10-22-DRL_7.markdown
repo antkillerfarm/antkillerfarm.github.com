@@ -294,6 +294,10 @@ https://mp.weixin.qq.com/s/R12bVEDWpHydNair-P5TzA
 
 多智能体深度强化学习中的Q值路径分解
 
+https://mp.weixin.qq.com/s/1JJo0FgMVlhIy6R9CxI_sQ
+
+多智能体强化学习算法理论研究
+
 # StarCraft & AI
 
 AIIDE（Artificial Intelligence and Interactive Digital Entertainment）

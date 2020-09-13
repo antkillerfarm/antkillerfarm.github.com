@@ -199,6 +199,10 @@ https://mp.weixin.qq.com/s/IOc-gxOa6a415Hf1VBmiQw
 
 “Linformer”拍了拍“被吊打Transformers的后浪们”
 
+https://mp.weixin.qq.com/s/cDQW5992hTaeGoA7zL7Vzg
+
+Linformer: 线性复杂度的Attention
+
 https://mp.weixin.qq.com/s/UowNtBm_hqnes-Lz3POXGQ
 
 Transformers中的Beam Search高效实现

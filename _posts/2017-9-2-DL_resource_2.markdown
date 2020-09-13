@@ -341,10 +341,6 @@ https://mp.weixin.qq.com/s/SN1Fc48sa4NZzm_K16kUnw
 
 通过空间上下文特征进行阴影检测
 
-https://mp.weixin.qq.com/s/oOru4Dn2uyVuHVOLDxvsBg
-
-最新的图像质量评价
-
 https://mp.weixin.qq.com/s/fTFyH5jaLEWWPka_XP9EaQ
 
 视觉识别新范式：开放世界下的大规模长尾识别
@@ -396,6 +392,10 @@ https://mp.weixin.qq.com/s/1ZnacYeqkd_y_HoK8XIWWQ
 https://mp.weixin.qq.com/s/FQ8uqDxXemJVLGmktGuZCQ
 
 真实场景中的玻璃检测，有趣的应用
+
+https://zhuanlan.zhihu.com/p/89205060
+
+图像分类中常用的tricks
 
 ## 光神经网络
 

@@ -239,6 +239,10 @@ https://mp.weixin.qq.com/s/H9zkyO9oZAysWMyigd1tNw
 
 LightGBM
 
+https://mp.weixin.qq.com/s/RaWeiQwlQjCi1zz5S3tOmA
+
+LightGBM的参数详解以及如何调优
+
 # CatBoost
 
 这是Yandex推出的Boost工具包。

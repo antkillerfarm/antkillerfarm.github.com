@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数据库（二）, Mysql, ZeroMQ, CMake, MSYS2
+title:  数据库（二）, Mysql, ZeroMQ, ActiveMQ, CMake, MSYS2
 category: technology 
 ---
 
@@ -276,6 +276,14 @@ http://zeromq.org
 https://blog.csdn.net/w174504744/article/details/73187697
 
 ZeroMQ
+
+# ActiveMQ
+
+ActiveMQ 是Apache出品，最流行的，能力强劲的开源消息总线。
+
+http://blog.csdn.net/jiuqiyuliang/article/details/46701559
+
+深入浅出JMS(一)--JMS基本概念
 
 # CMake
 

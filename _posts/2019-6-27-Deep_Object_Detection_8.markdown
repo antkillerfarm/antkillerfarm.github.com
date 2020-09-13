@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（八）——花式IOU, 3D目标检测, 旋转框检测
+title:  深度目标检测（八）——花式IOU, 3D目标检测, 旋转框检测, 小目标检测
 category: Deep Object Detection 
 ---
 
@@ -132,6 +132,36 @@ https://zhuanlan.zhihu.com/p/105881332
 https://mp.weixin.qq.com/s/nOBfPFfJMBkkkVEPV0TG0Q
 
 PIoU Loss：倾斜目标检测专用损失函数，公开超难倾斜目标数据集Retail50K
+
+# 小目标检测
+
+https://mp.weixin.qq.com/s/8k0Mhver2mLnKmV8rVqJHQ
+
+小目标检测相关技巧总结
+
+https://mp.weixin.qq.com/s/svqygu4nFkW4ci7dYMnKsw
+
+小目标检测的数据增广秘籍
+
+https://blog.csdn.net/wq604887956/article/details/83053927
+
+2018小目标检测文章总结
+
+https://mp.weixin.qq.com/s/UQLvHDf62iV8KeZ5LoQdsA
+
+在小目标检测上另辟蹊径的SNIP
+
+https://mp.weixin.qq.com/s/iaeHnfepyeLuOioHqMO9bQ
+
+一种小目标检测中有效的数据增强方法
+
+https://mp.weixin.qq.com/s/UbCLqfyEOKUGnvySweUzMw
+
+使用关键点进行小目标检测
+
+https://mp.weixin.qq.com/s/1v84QyvH-k0lzRPOEyaBgw
+
+我们是如何改进YOLOv3进行红外小目标检测的？
 
 # 目标检测进阶
 
@@ -267,10 +297,6 @@ https://mp.weixin.qq.com/s/apLEAMshqd3O8nU8Q0Wycg
 
 李祥泰：Context modeling in semantic segmentation
 
-https://mp.weixin.qq.com/s/svqygu4nFkW4ci7dYMnKsw
-
-小目标检测的数据增广秘籍
-
 https://mp.weixin.qq.com/s/bzgMWR2kzAI9NeXEY92GmA
 
 目标检测任务的优化策略tricks
@@ -367,10 +393,6 @@ https://mp.weixin.qq.com/s/Gq3bflJq59Tx-nDCvbweNA
 
 无需预训练分类器，清华&旷视提出专用于目标检测的骨干网络DetNet
 
-https://blog.csdn.net/wq604887956/article/details/83053927
-
-2018小目标检测文章总结
-
 https://mp.weixin.qq.com/s/u3eXhoFvo7vZujc0XoQQWQ
 
 旷视研究院解读Light-Head R-CNN：平衡精准度和速度
@@ -386,23 +408,3 @@ https://mp.weixin.qq.com/s/1vOdOMyByBacSBMVrscq5Q
 https://mp.weixin.qq.com/s/-PeXMU_gkcT5YnMcLoaKag
 
 CVPR清华大学研究，高效视觉目标检测框架RON
-
-https://mp.weixin.qq.com/s/XoKdsQKyaI3LsDxF7uyKuQ
-
-聊聊目标检测中的多尺度检测（Multi-Scale），从YOLO到FPN，SNIPER，SSD填坑贴和极大极小目标识别
-
-https://mp.weixin.qq.com/s/UQLvHDf62iV8KeZ5LoQdsA
-
-在小目标检测上另辟蹊径的SNIP
-
-https://mp.weixin.qq.com/s/GpZHGksl0elxMcaQYosK-A
-
-SNIP的升级版SNIPER（效果比Mosaic更佳）
-
-https://mp.weixin.qq.com/s/XdH54ImSfgadCoISmVyyVg
-
-基于单目摄像头的物体检测
-
-https://mp.weixin.qq.com/s/h_ENriEXr7WI_XR_DtxpMQ
-
-这样可以更精确的目标检测——超网络

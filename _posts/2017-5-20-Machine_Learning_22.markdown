@@ -317,3 +317,7 @@ https://mp.weixin.qq.com/s/Q_lN83h6nA242_Tv9hqtPQ
 https://zhuanlan.zhihu.com/p/161703182
 
 深挖一下F1 score
+
+https://zhuanlan.zhihu.com/p/69101372
+
+分类问题的评估指标一览

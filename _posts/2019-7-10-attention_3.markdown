@@ -289,6 +289,10 @@ https://mp.weixin.qq.com/s/BhcnTmSje983MYT_alEiiw
 
 一文盘点预训练神经语言模型
 
+https://mp.weixin.qq.com/s/RKA_RxTQkIeJX3_VIKJiRQ
+
+周明：预训练模型在多语言、多模态任务的进展
+
 ## 预训练语言模型的前世今生
 
 https://mp.weixin.qq.com/s/1ixYjJN-bJPGrr7v-4d7Rw

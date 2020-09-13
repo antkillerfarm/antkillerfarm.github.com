@@ -299,6 +299,26 @@ https://mp.weixin.qq.com/s/0AE8w_0cZGcMZIwjUTKPrg
 
 如何学习AutoML在模型优化中的应用，这12篇文章可以作为一个参考
 
+https://mp.weixin.qq.com/s/LxLTsz7T_lAkqfZ9voSX5Q
+
+强化学习网络结构搜索(一)
+
+https://mp.weixin.qq.com/s/wL0prNVm5bKWOvEg3PE33g
+
+强化学习网络结构搜索(二)
+
+https://mp.weixin.qq.com/s/9vGQUqKyf9Ct6im0zv6YiQ
+
+强化学习网络结构搜索(三)
+
+https://mp.weixin.qq.com/s/1XDknbIapmuQi5eb61Jlaw
+
+遗传算法与网络结构搜索
+
+https://mp.weixin.qq.com/s/1zm2iMXD142Ug0_coVIGMg
+
+Darts: 可微结构搜索
+
 # 推荐系统的工程细节++
 
 https://mp.weixin.qq.com/s/OB2r761_8xcR2CXKS3JwYQ

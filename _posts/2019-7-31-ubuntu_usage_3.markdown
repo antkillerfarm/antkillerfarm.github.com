@@ -340,6 +340,10 @@ https://zhuanlan.zhihu.com/p/162366167
 
 Linux下C++so热更新
 
+https://mp.weixin.qq.com/s/rH7WqriomFTA55ecacV8Gw
+
+键盘敲入A字母时，操作系统期间发生了什么...
+
 ----
 
 https://mp.weixin.qq.com/s/WZyuTtEfaTFLnCfvhOrp7g

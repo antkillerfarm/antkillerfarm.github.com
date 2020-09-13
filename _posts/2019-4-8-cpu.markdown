@@ -119,9 +119,35 @@ https://mp.weixin.qq.com/s/jqP52LFcmd5oGRLBfE2J_A
 
 光刻机编年史（1959-1969）
 
+## 芯片制造
+
+https://mp.weixin.qq.com/s/QF9Nsh_YyX9LZQ_D-4hP-A
+
+芯片是怎么制造的？央视最强科普！
+
+https://mp.weixin.qq.com/s/bKgYpZdXxAexlEtmPQ9oGw
+
+科普：芯片是怎么从沙子中一步步炼成的！
+
+https://mp.weixin.qq.com/s/9y5HFTQr2QP12iR858BFtg
+
+图解intel芯片生产全过程！
+
+https://mp.weixin.qq.com/s/aSCcdTHUoogP7TOK5MIsVw
+
+一颗芯片的全球之旅
+
 https://mp.weixin.qq.com/s/LcnyAhOofWyGHikYwfIlIA
 
 芯片的诞生
+
+https://mp.weixin.qq.com/s/lD2bkDIX6ey-VHchSdbW7g
+
+漫画芯片
+
+https://mp.weixin.qq.com/s/v3wauOfWw6TLlxTH4QKR6w
+
+一文详解MOS管
 
 ## 封装
 
@@ -320,19 +346,3 @@ CPU制造的那些事之一：i7和i5其实是孪生兄弟！？
 https://zhuanlan.zhihu.com/p/29767262
 
 CPU制造的那些事之二：Die的大小和良品率
-
-https://zhuanlan.zhihu.com/p/31848803
-
-为什么CPU越来越多地采用硅脂而不是焊锡散热？
-
-https://zhuanlan.zhihu.com/p/27624654
-
-CPU风扇停转后会发生什么？CPU凭什么烧不坏
-
-https://zhuanlan.zhihu.com/p/30409360
-
-为什么CPU的频率止步于4G?我们触到频率天花板了吗？
-
-https://zhuanlan.zhihu.com/p/33145828
-
-什么是Speculative Execution？为什么要有它？

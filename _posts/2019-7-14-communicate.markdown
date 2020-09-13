@@ -275,6 +275,10 @@ https://mp.weixin.qq.com/s/pL_98GmL2qkvt71hw6A-DA
 
 终结混乱，USB族谱终极整理！
 
+https://mp.weixin.qq.com/s/EDv1ArAG5s8al33FoBfmfQ
+
+USB的前世今生
+
 https://zhuanlan.zhihu.com/p/65478149
 
 为什么USB Type C电缆正反插都可以？它是怎么做到的？

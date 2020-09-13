@@ -373,6 +373,10 @@ https://mp.weixin.qq.com/s/yTebereUkcyvwJbLssZjPQ
 
 5分钟看懂WebAssembly
 
+https://mp.weixin.qq.com/s/QDjxfoY7gjcCmOeV0kq1pw
+
+web多媒体技术在视频编辑场景的应用
+
 ----
 
 V8开发者Vyacheslav Egorov和Mozilla Hacks之间的source-map之战了。对于同一份source-map库的JS代码，Vyacheslav所魔改出的纯JS版本，其性能一举反超了Mozilla重写的Rust版。

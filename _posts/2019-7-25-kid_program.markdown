@@ -182,6 +182,10 @@ https://mp.weixin.qq.com/s/SWfPV6tUC5olZgIdVabd3A
 
 从入门到掉坑：Go内存池/对象池技术介绍
 
+https://mp.weixin.qq.com/s/UqwwUfJEITHuMU8EhhGNRw
+
+图解Golang的内存分配
+
 ## GTK
 
 熟悉我的朋友都知道，新语言的GTK demo是一定要有的。毕竟helloworld太简单了，容易让人产生从三到万的错觉。

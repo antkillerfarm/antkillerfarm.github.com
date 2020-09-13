@@ -313,6 +313,10 @@ https://mp.weixin.qq.com/s/PGZiJuZ2Dg6Vhkv55vfxKQ
 
 对损失信息进行建模，实现信号处理高保真还原
 
+https://mp.weixin.qq.com/s/NBVPlFGO12PhMTF0dUL2hw
+
+DeepGBM:使用树蒸馏提升在线预测任务下深度模型效果
+
 # 目标检测进阶+
 
 https://mp.weixin.qq.com/s/IRD0iIVXyENlUOyfSbmlBA
@@ -370,7 +374,3 @@ https://mp.weixin.qq.com/s/vpHrLu8kuEuOp5eehT8Hcw
 https://mp.weixin.qq.com/s/kdD658xzC-JxuWGYqLRtcQ
 
 性能达到SOTA的CSP对象检测网络
-
-https://mp.weixin.qq.com/s/8k0Mhver2mLnKmV8rVqJHQ
-
-小目标检测相关技巧总结

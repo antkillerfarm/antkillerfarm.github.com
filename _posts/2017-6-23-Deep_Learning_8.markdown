@@ -63,6 +63,10 @@ https://mp.weixin.qq.com/s/XttlCNKGvGZrD7OQZOQGnw
 
 如何发现“将死”的ReLu？
 
+https://mp.weixin.qq.com/s/_qeqicHWnJ50BfiQpLWVVA
+
+Dynamic ReLU：微软推出提点神器，可能是最好的ReLU改进
+
 # ResNet
 
 无论采用何种方法，可训练的神经网络的层数都不可能无限深。有的时候，即使没有梯度消失，也存在训练退化（即深层网络的效果还不如浅层网络）的问题。

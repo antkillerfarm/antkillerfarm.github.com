@@ -211,6 +211,10 @@ https://mp.weixin.qq.com/s/yCtI7lYzMa4nJXGQihqU2Q
 
 NLP中的文本分析和特征工程
 
+https://mp.weixin.qq.com/s/KCDnacvBpsgZPodfeEpQ9g
+
+4种常见的NLP实践思路
+
 ## 分词
 
 https://mp.weixin.qq.com/s/Xy_jaOex72pLe4wwieKeUg

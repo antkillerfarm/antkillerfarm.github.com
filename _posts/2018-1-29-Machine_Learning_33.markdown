@@ -214,6 +214,22 @@ http://www.doc88.com/p-7082821463697.html
 
 # 目标检测进阶+++
 
+https://mp.weixin.qq.com/s/XoKdsQKyaI3LsDxF7uyKuQ
+
+聊聊目标检测中的多尺度检测（Multi-Scale），从YOLO到FPN，SNIPER，SSD填坑贴和极大极小目标识别
+
+https://mp.weixin.qq.com/s/GpZHGksl0elxMcaQYosK-A
+
+SNIP的升级版SNIPER（效果比Mosaic更佳）
+
+https://mp.weixin.qq.com/s/XdH54ImSfgadCoISmVyyVg
+
+基于单目摄像头的物体检测
+
+https://mp.weixin.qq.com/s/h_ENriEXr7WI_XR_DtxpMQ
+
+这样可以更精确的目标检测——超网络
+
 https://mp.weixin.qq.com/s/dFoUO4xArZpmtbKg1Kx6Zg
 
 COCO mAP 53.3！骨干网合成算法CBNet带来目标检测精度新突破
@@ -245,10 +261,6 @@ TTFNet: 最大程度提高训练效率的实时目标检测
 https://mp.weixin.qq.com/s/6R3myLyAeMMS0lR1GSlvcA
 
 细说物体检测中的Anchors
-
-https://mp.weixin.qq.com/s/UbCLqfyEOKUGnvySweUzMw
-
-使用关键点进行小目标检测
 
 https://mp.weixin.qq.com/s/BsoqlaOlhXc9irSuBc6vGg
 

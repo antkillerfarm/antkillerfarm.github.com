@@ -232,6 +232,14 @@ https://mp.weixin.qq.com/s/hGum0fXrKUHCoaInVVS3rQ
 
 除了MSE loss，也可以试试用它：SSIM的原理和代码实现
 
+https://mp.weixin.qq.com/s/UKxQQx0IJGWOFikz3pncAw
+
+最新的图像质量评价
+
+https://zhuanlan.zhihu.com/p/120254892
+
+谈谈图像质量量化评估标准
+
 # DRCN
 
 DRCN（deeply-recursive convolutional network）是韩国首尔国立大学的作品。

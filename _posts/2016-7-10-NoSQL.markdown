@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NoSQL, Velocity, ActiveMQ, 12306, MongoDB
+title:  NoSQL, Velocity, 12306, MongoDB
 category: AI 
 ---
 
@@ -75,6 +75,14 @@ BASE是反ACID的，它完全不同于ACID模型，牺牲强一致性，获得�
 
 CAP、BASE理论是当前在互联网领域非常流行的NoSQL的理论基础。
 
+>一致性一般分为：强一致性、顺序一致性、最终一致性。
+
+参考：
+
+https://mp.weixin.qq.com/s/k18Udp-06w5qBJoBfe4wcA
+
+提到数据库一致性，每个开发人员都应该知道这些
+
 ## NoSQL
 
 NoSQL领域的相关知识点参见如下思维导图：
@@ -122,14 +130,6 @@ https://mp.weixin.qq.com/s/M3GtZ-6p7FWgyCKmRO-FyA
 Velocity是一个基于java的模板引擎（template engine），它允许任何人仅仅简单的使用模板语言（template language）来引用由java代码定义的对象。
 
 Velocity基本等价于之前的JSP，但语法规则和后者有较大差异，其所使用的模板文件为.vm文件。
-
-# ActiveMQ
-
-ActiveMQ 是Apache出品，最流行的，能力强劲的开源消息总线。
-
-http://blog.csdn.net/jiuqiyuliang/article/details/46701559
-
-深入浅出JMS(一)--JMS基本概念
 
 # 12306
 

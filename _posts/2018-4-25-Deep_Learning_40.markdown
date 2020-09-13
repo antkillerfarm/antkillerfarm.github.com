@@ -277,6 +277,10 @@ https://github.com/xingkongliang/Pedestrian-Detection
 
 行人检测（Pedestrian Detection）论文整理
 
+https://mp.weixin.qq.com/s/TGjW7AjtGe2aMU8G-c177Q
+
+自动驾驶中的行人检测方法设计
+
 https://zhuanlan.zhihu.com/p/85383077
 
 视频行人重识别2019各顶会顶刊文章阅读笔记
@@ -354,10 +358,6 @@ https://mp.weixin.qq.com/s/sXV9epWguGbJEZYo4yNp5Q
 https://zhuanlan.zhihu.com/p/46833956
 
 图像数据增强之弹性形变（Elastic Distortions）
-
-https://mp.weixin.qq.com/s/iaeHnfepyeLuOioHqMO9bQ
-
-一种小目标检测中有效的数据增强方法
 
 https://mp.weixin.qq.com/s/ws1R-VPyJY6J18OttBDYog
 

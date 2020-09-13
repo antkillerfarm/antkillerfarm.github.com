@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/tOcyfK68jW7Tr-PGCvdXMA
 
 特征工程最后一个要点:特征预处理
 
+https://mp.weixin.qq.com/s/GWMZ1jwbchE8O0r6EduYtQ
+
+一文讲解特征工程！经典外文PPT及中文解析
+
 https://mp.weixin.qq.com/s/c9iHdgtErVd_iitwny7_zw
 
 Kaggle前1%参赛者经验：特征工程为何如此重要？
