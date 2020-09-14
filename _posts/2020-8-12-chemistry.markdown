@@ -145,6 +145,10 @@ https://mp.weixin.qq.com/s/pry9NlLCql74XhdvRADBiQ
 
 它是“地球保护伞”，也可能是危险的隐形反派
 
+https://www.zhihu.com/question/411561262
+
+现代制造的刀放到古代算不算名刀？
+
 ## 化学工业
 
 https://wallstreetcn.com/articles/250536
