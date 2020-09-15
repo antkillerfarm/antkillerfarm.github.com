@@ -221,9 +221,27 @@ https://mp.weixin.qq.com/s/pfQiTjUhgwBNz76sKpij1Q
 
 使用2D卷积技术进行时间序列预测
 
+## TCN
+
 https://mp.weixin.qq.com/s/hE0elaJcywb084rmWZzTAw
 
 告别RNN，迎来TCN！股市预测任务是时候拥抱新技术了
+
+https://mp.weixin.qq.com/s/aQxK6JvoEev_jUXHJEGnhg
+
+时间卷积网络TCN：时间序列处理的新模型
+
+https://mp.weixin.qq.com/s/mIuAn4G9l3AKFAswpbaQdA
+
+时间卷积网络（TCN）将取代RNN成为NLP预测领域王者
+
+https://blog.csdn.net/Kuo_Jun_Lin/article/details/80602776
+
+TCN_时间卷积网络_原理与优势
+
+https://mp.weixin.qq.com/s/iLNuBSwWQ13sc4XfNzPuHw
+
+RNN已老，TCN崛起！李飞飞团队提出口语语音识别新方法
 
 ## 时空序列
 
@@ -256,10 +274,6 @@ https://mp.weixin.qq.com/s/XZWReRiIHqykN8yZulBiOg
 https://mp.weixin.qq.com/s/40iqr-Yg4-CGe6QEsLpxhw
 
 时空序列预测模型之LightNet
-
-https://mp.weixin.qq.com/s/aQxK6JvoEev_jUXHJEGnhg
-
-时间卷积网络TCN：时间序列处理的新模型
 
 # Capsule
 

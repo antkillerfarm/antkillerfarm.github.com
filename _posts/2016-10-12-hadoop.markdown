@@ -306,6 +306,10 @@ https://mp.weixin.qq.com/s/MJgQqwWa4wyNgtKZaX_ADQ
 
 Tensorboard可视化与Hook机制
 
+https://mp.weixin.qq.com/s/x1Z4jkMvfo4mD-_rKqvjuw
+
+在PyTorch中使用DistributedDataParallel进行多GPU分布式模型训练
+
 # 模型压缩与加速进阶++
 
 https://mp.weixin.qq.com/s/oDwvMtET0moHVGgtQLfCow

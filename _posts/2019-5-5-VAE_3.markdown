@@ -265,6 +265,10 @@ https://mp.weixin.qq.com/s/TRgTFBz_NmBJygQjOYwdqw
 
 GAN/VAE地位难保？Flow在零样本识别任务上大显身手
 
+https://mp.weixin.qq.com/s/xMO9jhzQH6P5NEA_D-uyIA
+
+这个模型的脑补能力比GAN更强，ETH提出新型超分辨率模型SRFlow
+
 # VAE参考资源
 
 https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw

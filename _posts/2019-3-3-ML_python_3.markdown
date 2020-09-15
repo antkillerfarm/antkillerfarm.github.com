@@ -205,6 +205,26 @@ https://mp.weixin.qq.com/s/mJpk0ZM9kvxBKOiyRJvAQw
 
 Python+Kepler.gl轻松制作酷炫路径动画
 
+----
+
+GCJ-02是由中国国家测绘局（G表示Guojia国家，C表示Cehui测绘，J表示Ju局）制订的地理信息系统的坐标系统。又名“火星坐标系”。
+
+国内出版的各种地图系统（包括电子形式），必须至少采用GCJ-02对地理位置进行首次加密。
+
+CGCS2000坐标系是目前在测绘和地理信息以及工程建设领域主推的坐标系。
+
+粗略转换：GCJ(wgs) ≈ wgs，由此 GCJ(GCJ(wgs)) - GCJ(wgs) ≈ GCJ(wgs) - wgs。因此使用 GCJ(wgs) - (GCJ(GCJ(wgs)) - GCJ(wgs)) 去逼近 wgs。
+
+精确转换：因为GCJ(wgs1) - GCJ(wgs2) ≈ wgs1 - wgs2，所以使用 wgsGuess <- wgsGuess - (GCJ(wgsGuess) - GCJ(wgsReal)) 来迭代逼近。
+
+https://zhuanlan.zhihu.com/p/100993681
+
+利用Python进行地理坐标系统的转换
+
+https://www.zhihu.com/question/29806566
+
+如何看待“地形图非线性保密处理技术”？
+
 ## 参考
 
 https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg
@@ -418,31 +438,3 @@ https://mp.weixin.qq.com/s/JwsG0XzIGr5jiQqrOTGFGQ
 https://mp.weixin.qq.com/s/4j-DgtlxGKCx8SvLEBgjoA
 
 Python上的图模型与概率建模工具包：pomegranate
-
-https://mp.weixin.qq.com/s/2Gd-2BLZy7LdvOenbM2Fsg
-
-用hmmlearn学习隐马尔科夫模型HMM
-
-https://mp.weixin.qq.com/s/yY_-qJoza2xGRqrm40abkg
-
-每个Kaggle冠军的获胜法门：揭秘Python中的模型集成
-
-https://mp.weixin.qq.com/s/xN5mKrl--7CqgQjf3VKb0A
-
-10分钟教你看懂K线图交易策略
-
-https://mp.weixin.qq.com/s/oJdwwpV-7NOPXw0m0qmgfg
-
-如何在Python中快速进行语料库搜索：近似最近邻算法
-
-https://mp.weixin.qq.com/s/M2YvR8s2Vh-zGRP42v6txg
-
-极简Python带你探索分类与回归的奥秘
-
-https://mp.weixin.qq.com/s/E0TsD57voXy9C8bIqFvt_g
-
-如何在Python中用scikit-learn生成测试数据集
-
-https://mp.weixin.qq.com/s/HGLBPA9Ob7-3DzSNuF39Mg
-
-用Python搭建机器学习模型预测黄金价格

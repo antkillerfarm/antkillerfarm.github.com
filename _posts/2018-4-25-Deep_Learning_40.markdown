@@ -25,6 +25,10 @@ https://mp.weixin.qq.com/s/ZmX_ir1pSUZbCaFpbcQ6Lw
 
 一文读懂行人检测算法
 
+https://mp.weixin.qq.com/s/a4zRYKIJUNatTW9YJZtu2Q
+
+关注度越来越高的行人重识别，有哪些热点？
+
 https://zhuanlan.zhihu.com/p/26168232
 
 行人重识别：从哈利波特地图说起

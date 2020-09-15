@@ -412,3 +412,7 @@ https://mp.weixin.qq.com/s/wKJ3buhA-6xtJPZ7DQ0pow
 https://mp.weixin.qq.com/s/V1eKYF-5gJf7qX-I2SsJ1Q
 
 深度CTR预估模型在应用宝推荐系统中的探索
+
+https://zhuanlan.zhihu.com/p/221725328
+
+推荐系统的多样性：用户视角

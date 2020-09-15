@@ -293,6 +293,10 @@ https://mp.weixin.qq.com/s/RKA_RxTQkIeJX3_VIKJiRQ
 
 周明：预训练模型在多语言、多模态任务的进展
 
+https://mp.weixin.qq.com/s/3fmZs1sFNW4IGmtql4KsVQ
+
+邱锡鹏：自然语言处理中的预训练模型，90页ppt
+
 ## 预训练语言模型的前世今生
 
 https://mp.weixin.qq.com/s/1ixYjJN-bJPGrr7v-4d7Rw

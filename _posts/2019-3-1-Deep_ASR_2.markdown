@@ -291,10 +291,6 @@ https://mp.weixin.qq.com/s/u1UnAuGllcWn8Ik5wDPY6w
 
 可视化语音分析：深度对比Wavenet、t-SNE和PCA等算法
 
-https://blog.csdn.net/Kuo_Jun_Lin/article/details/80602776
-
-TCN_时间卷积网络_原理与优势
-
 https://blog.csdn.net/tonygsw/article/details/81280364
 
 因果卷积（causal）与扩展卷积（dilated）

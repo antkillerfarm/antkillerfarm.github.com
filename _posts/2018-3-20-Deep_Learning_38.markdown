@@ -201,10 +201,6 @@ https://mp.weixin.qq.com/s/_q69BV1r46S9X5wnLuFPSw
 
 关于序列建模，是时候抛弃RNN和LSTM了
 
-https://mp.weixin.qq.com/s/mIuAn4G9l3AKFAswpbaQdA
-
-时间卷积网络（TCN）将取代RNN成为NLP预测领域王者
-
 https://mp.weixin.qq.com/s/m5GRNp6qDfVfC0mkQ4m4Yw
 
 神经语言模型如何利用上下文信息：长距离上下文的词序并不重要

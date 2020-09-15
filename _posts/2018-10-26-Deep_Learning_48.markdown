@@ -281,6 +281,10 @@ https://zhuanlan.zhihu.com/p/163358322
 
 learning to match for product search
 
+https://mp.weixin.qq.com/s/_MpfRGYG_pleaEQMpQT5Mg
+
+深度学习在视觉搜索和匹配中的应用
+
 # 人脸检测/识别+
 
 https://mp.weixin.qq.com/s/PsToV8Z17tRzXW_AbaMNmg
