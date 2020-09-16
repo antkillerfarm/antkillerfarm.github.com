@@ -167,6 +167,44 @@ https://mp.weixin.qq.com/s/RMBG1dnmKD6p1itU1OKXvA
 
 ## 历史
 
+Snow寻思，如果水泵周围死亡的人数，比其他地方多出很多，那不就能证明这个水泵就是传染源了吗？
+
+https://mp.weixin.qq.com/s/_ye9rCrsh6pdPgVHrzveEQ
+
+166年前的那场大霍乱，伦敦做对了什么？
+
+https://zhuanlan.zhihu.com/p/103903194
+
+伦敦霍乱死亡地图
+
+----
+
+1619年，被后来人称为“16世纪死神”的法国医生查尔斯·德洛姆（Charles de Lorme）发明了一种诡异的银制面具，外形设计呈鸟嘴状，由皮革包裹，面具的眼睛部分用玻璃嵌入，至于最关键的过滤系统，则用棉花、樟脑、玫瑰等填充物构成，置于鸟嘴处，一定程度上阻隔了空气中的病菌。
+
+![](/images/img3/Doctor_Schnabel.jpg)
+
+----
+
+在这场争论中，最早推广Pfeifer氏菌疫苗的William Park展示了自我纠错的勇气，与George McCoy一起，成为否定细菌疫苗发声最多的专家。
+
+100年前的条件和科学水平与当前无法相比，但以William Park为代表的美国科学家所展示的勇于纠错、实事求是的精神永远不会过时。
+
+>William Hallock Park，1863～1939，美国医学家。Columbia University博士（1886）。长期供职于卫生部纽约实验室（也就是现在的William Park实验室）。
+
+https://mp.weixin.qq.com/s/dhNuZo0yTI1CR8oH9LYlKA
+
+以史为鉴：回顾1918年美国流感疫苗开发的闹剧
+
+----
+
+pandemics：世界性流行病
+
+epidemics：流行病
+
+quarantine源自拉丁语里的“四十”。由来是当年威尼斯人在瘟疫的时候，让外来船只停40天再下船的操作。
+
+----
+
 https://mp.weixin.qq.com/s/TkTU7dw_GRBL7M4D1LBRDw
 
 帝国对抗瘟疫的最后一战（伍连德、肺鼠疫）
@@ -211,43 +249,9 @@ https://www.jianshu.com/p/9f035620f80e
 
 那些改变人类历史的疾病（这是一个系列文章）
 
-----
+https://mp.weixin.qq.com/s/-_MK_cBF1plUA9U9XNfhpQ
 
-Snow寻思，如果水泵周围死亡的人数，比其他地方多出很多，那不就能证明这个水泵就是传染源了吗？
-
-https://mp.weixin.qq.com/s/_ye9rCrsh6pdPgVHrzveEQ
-
-166年前的那场大霍乱，伦敦做对了什么？
-
-https://zhuanlan.zhihu.com/p/103903194
-
-伦敦霍乱死亡地图
-
-----
-
-1619年，被后来人称为“16世纪死神”的法国医生查尔斯·德洛姆（Charles de Lorme）发明了一种诡异的银制面具，外形设计呈鸟嘴状，由皮革包裹，面具的眼睛部分用玻璃嵌入，至于最关键的过滤系统，则用棉花、樟脑、玫瑰等填充物构成，置于鸟嘴处，一定程度上阻隔了空气中的病菌。
-
-![](/images/img3/Doctor_Schnabel.jpg)
-
-----
-
-在这场争论中，最早推广Pfeifer氏菌疫苗的William Park展示了自我纠错的勇气，与George McCoy一起，成为否定细菌疫苗发声最多的专家。
-
-100年前的条件和科学水平与当前无法相比，但以William Park为代表的美国科学家所展示的勇于纠错、实事求是的精神永远不会过时。
-
->William Hallock Park，1863～1939，美国医学家。Columbia University博士（1886）。长期供职于卫生部纽约实验室（也就是现在的William Park实验室）。
-
-https://mp.weixin.qq.com/s/dhNuZo0yTI1CR8oH9LYlKA
-
-以史为鉴：回顾1918年美国流感疫苗开发的闹剧
-
-----
-
-pandemics：世界性流行病
-
-epidemics：流行病
-
-quarantine源自拉丁语里的“四十”。由来是当年威尼斯人在瘟疫的时候，让外来船只停40天再下船的操作。
+因为那一次疫情，重症监护出现了
 
 ## SARS
 
@@ -279,74 +283,24 @@ https://mp.weixin.qq.com/s/kRp7Uw77BWSjFB5QOrydSg
 
 ## 国内疫情
 
-https://github.com/wuhan2020/wuhan2020
+北京的和睦家是不错的综合性医院，先前也被列入发热门诊医疗机构，但是之后不久以“升级改造”为由关闭发热门诊。
 
-新型冠状病毒防疫信息收集平台
+https://www.kunlunce.com/ssjj/guojipinglun/2020-02-11/140446.html
 
-https://github.com/2019ncovmemory/nCovMemory
+李玲：疫情演化至今，是制度不足还是人的问题？
 
-2020新冠肺炎记忆
+----
 
-https://mp.weixin.qq.com/s/9291PPNwxz3KoF-7klwMrA
+**混样检测**：将5~10个人的样本混在一起变成1个样本，这样就可以减少5~10倍时间。混样后的样品经检测如果出现阳性，再对这5~10人进行细查。
 
-新型肺炎严重程度升级！已明确会人传人......
+----
 
-https://mp.weixin.qq.com/s/S6oKrc_CbO7ywWiRYiqbfQ
+在全国封城阻拦的基础上。全国支援了湖北316台ECMO，其中支援武汉200台ECMO、支援了湖北16000台呼吸机，其中武汉6000台，支援武汉四万二千医护人员。抢建了火神山雷神山和16个方舱医院，新建4个自动化实验室，改建扩建23个实验室。
 
-武汉肺炎重症患者：一床难求
+然后全国动员了二百万以上的志愿者设卡堵截，停止人员流动。为了防疫，全国还累计紧急改建扩建了超过1000个实验室，进行本地快速核酸检测筛查。最多的时候全国一天就做了八十万例核酸检查。整个2月中国总计1100万例核酸检查。意大利全国目前只做了6万例筛查，实验室已经快崩溃了的样子。
 
-https://mp.weixin.qq.com/s/9Lgl9h44gO9-XkPUrtfxRQ
+其中一百多台ECMO是以天价紧急进口的，中国现在ECMO存量500多，占世界三分之一还多。全国紧急增产医疗设备、耗材、药品。光直接医药费开支四百亿就丢进去了。
 
-武汉肺炎一线医生口述：大爆发期或将到来
+全欧盟+英国，加起来才400多台，意大利全国才60几台。德国法国西班牙的存量应该也差不多。小国有的个位数的ECMO。
 
-http://www.eeo.com.cn/2020/0206/375757.shtml
-
-万家宴后的百步亭
-
-![](/images/img3/2019-nCoV.jpg)
-
-![](/images/img3/covid_19.jpg)
-
-https://view.inews.qq.com/a/20200207A0JG1Z00
-
-武汉时间：从专家组抵达到封城的谜之20天
-
-https://mp.weixin.qq.com/s/OElG_rIrFC89INpJlELEdQ
-
-雷神山背后：基建狂魔70年
-
-https://mp.weixin.qq.com/s/kfe-7hP8c_HJaRBpFAf9fA
-
-疫情会让更多人成为“生存狂”吗？
-
-https://mp.weixin.qq.com/s/CaFAkn7GuhRYlcIvOqueww
-
-武汉封城后的有些秘密，只有外卖小哥知道
-
-https://mp.weixin.qq.com/s/U7nJSc9wODyxrvYjiTYrXA
-
-CDC最新7万病例统计报告：首次描绘流行曲线、整体病死率2.3%，湖北比省外高7倍
-
-https://mp.weixin.qq.com/s/VQGawbJ-21tus7UevcJ5Hw
-
-世卫考察组代表：要认识到武汉人民的贡献，世界亏欠你们！
-
-https://zhuanlan.zhihu.com/p/103836857
-
-五年前的冠状病毒模组让《瘟疫公司》再度翻红，创作者是预言家？
-
-https://mp.weixin.qq.com/s/mgMnLnVJzkY0EMHUTtzLbQ
-
-他们下山来摘桃子了（安康市中心医院抗疫补助事件）
-
-https://mp.weixin.qq.com/s/roTg_r57btmPD_vXa21Izg
-
-今天是微信公号诞生以来最荒谬的一天
-
-https://mp.weixin.qq.com/s/4IvGptHaIJWPeLH5vtfEDA
-
-除了“雷火”，武汉还有这样一家医院（泰康同济）
-
-https://view.inews.qq.com/a/20200418A03W3800
-
-1传43！哈尔滨聚集性疫情，出现“跨省”传播
+欧洲还真以为中国医疗落后呢。

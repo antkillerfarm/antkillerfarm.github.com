@@ -43,7 +43,7 @@ https://www.zhihu.com/question/267166775
 
 ----
 
-https://www.zhihu.com/question/303562583/answer/564059120
+https://www.zhihu.com/answer/564059120
 
 水星为什么没有卫星？这个答案同样可以解释——为什么卫星没有卫星？
 
@@ -79,7 +79,7 @@ https://en.wikipedia.org/wiki/Orbital_resonance
 
 参见：
 
-https://www.zhihu.com/question/47287395/answer/106715405
+https://www.zhihu.com/answer/106715405
 
 金星每八年的运行轨迹真的是五角形吗？
 
@@ -147,7 +147,7 @@ https://mp.weixin.qq.com/s/UsNxfDC94RKOkGfu4HQMGQ
 
 任时光匆匆流去，我只在乎宇宙的过去
 
-https://www.zhihu.com/question/300723940/answer/598468527
+https://www.zhihu.com/answer/598468527
 
 为什么有人说人类有可能是宇宙中的第一个文明？
 

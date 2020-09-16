@@ -350,6 +350,10 @@ https://zhuanlan.zhihu.com/p/115845957
 
 两个奇技淫巧，将Docker镜像体积减小99%
 
+https://mp.weixin.qq.com/s/Zmu57U-HlPsyby_qvHSVHQ
+
+VMware/KVM/Docker原来是这么回事儿
+
 # Pulsar
 
 https://mp.weixin.qq.com/s/O8pj4pChyw8PK-G_4A3DWg

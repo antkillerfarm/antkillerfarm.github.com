@@ -360,3 +360,7 @@ https://mp.weixin.qq.com/s/yk7fIYFp1fEPn3deZXsE-g
 https://mp.weixin.qq.com/s/yn_TQ-Mdcph3M1dfLu-KMw
 
 好好的人，说没就没了：这个视频“橡皮擦”让你瞬间消失，头发丝都不留
+
+https://mp.weixin.qq.com/s/-HKWSLDBwswuDYho29q5Kg
+
+怎样用Python控制图片人物动起来？一文就能Get！

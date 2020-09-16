@@ -225,10 +225,6 @@ https://mp.weixin.qq.com/s/iEMGS1tbNPYXYIM7pKkq4A
 
 达观数据：计算广告系统算法与架构综述
 
-https://mp.weixin.qq.com/s/pWcFuOecG-dZHZ365clDjg
-
-阿里妈妈新突破！深度树匹配如何扛住千万级推荐系统压力
-
 https://mp.weixin.qq.com/s/R6-y-W0CGhlEUPXDkYdtJw
 
 Item-Based协同过滤算法
@@ -276,10 +272,6 @@ https://zhuanlan.zhihu.com/p/74978160
 https://mp.weixin.qq.com/s/S9-GgQTlx2c14mN_3kNQiQ
 
 基于标签的实时短视频推荐系统
-
-https://mp.weixin.qq.com/s/sw16_sUsyYuzpqqy39RsdQ
-
-阿里妈妈深度树检索技术（TDM）及应用框架的探索实践
 
 https://mp.weixin.qq.com/s/_zSe_Ia4DPrFKqsqW3iQ8w
 
@@ -396,7 +388,3 @@ Item-CF的几种优化方式
 https://mp.weixin.qq.com/s/sDG5xm1JZ8rIEaVXeVQ5cA
 
 主流推荐引擎技术及优缺点分析
-
-https://mp.weixin.qq.com/s/EFDmHH8oUmJk-rG5PNnsAg
-
-阿里妈妈深度树匹配技术演进：TDM->JTM->BSAT

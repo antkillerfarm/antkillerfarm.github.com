@@ -144,7 +144,7 @@ $$M^*=(\overline M)^T=\overline{M^T}$$
 
 参见：
 
-https://www.zhihu.com/question/22237507/answer/53804902
+https://www.zhihu.com/answer/53804902
 
 奇异值的物理意义是什么？
 

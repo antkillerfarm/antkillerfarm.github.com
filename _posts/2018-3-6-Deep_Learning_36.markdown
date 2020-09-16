@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十六）——手势识别, 深度图像压缩, 深度时间序列
+title:  深度学习（三十六）——手势识别, 深度图像压缩, 深度时间序列, 深度树学习
 category: DL 
 ---
 
@@ -275,76 +275,74 @@ https://mp.weixin.qq.com/s/40iqr-Yg4-CGe6QEsLpxhw
 
 时空序列预测模型之LightNet
 
-# Capsule
+# 深度树学习
 
-https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Network/
+决策树是传统ML领域的王者，对于如何将之深度化，一般有两个方向：
 
-“Understanding Matrix capsules with EM Routing (Based on Hinton's Capsule Networks)”
+- 树结构的深度化。代表：gcForest。
 
-https://zhuanlan.zhihu.com/p/42864711
+- 树+DL。一般被称为深度树学习。
 
-胶囊网络到底是什么东东？
+## gcForest
 
-https://zhuanlan.zhihu.com/p/32106577
+http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
 
-酉变换与递归神经网络
+周志华教授gcForest（多粒度级联森林）算法预测股指期货涨跌
 
-https://github.com/freefuiiismyname/capsule-mrc
+https://mp.weixin.qq.com/s/GU9-rH0gFan620Jhc1HTDg
 
-基于capsule的观点型阅读理解模型
+周志华提出的gcForest能否取代深度神经网络？
 
-https://mp.weixin.qq.com/s/cskdgsysD7R_FKChAKmlDg
+https://mp.weixin.qq.com/s/dEmox_pi6KGXwFoevbv14Q
 
-利用Capsule重构过程，Hinton等人实现对抗样本的自动检测
+周志华：首个基于森林的自编码器，性能优于DNN
 
-https://mp.weixin.qq.com/s/7fBXMvT4eyZrKhPKQTAIZQ
+http://mp.weixin.qq.com/s/IfEgSOIkIPA-YtC9NQW1ng
 
-你听说过胶囊网络吗？
+非神经网络的深度模型gcForest
 
-https://www.cnblogs.com/CZiFan/p/9803067.html
+https://mp.weixin.qq.com/s/N80l9PZQposbIOKXbv8ayw
 
-CapsNet胶囊网络
+周志华：最新实验表明gcForest已经是最好的非深度神经网络方法
 
-https://mp.weixin.qq.com/s/F9SGZPZj6gup_nOVuDel6A
+https://mp.weixin.qq.com/s/8QP5X9Hxi_6qyfxP4O0Gwg
 
-与胶囊网络异曲同工：Bengio等提出四元数循环神经网络
+周志华团队和蚂蚁金服合作：用分布式深度森林算法检测套现欺诈
 
-https://mp.weixin.qq.com/s/4o9XHGwx5lYsJ7YfUNHSoQ
+https://mp.weixin.qq.com/s/bE9BZQ6wCICvrgomdySDuw
 
-百年老图难倒谷歌AI，网友：是鸭是兔？连我都不能确定
+周志华组提出可做表征学习的多层梯度提升决策树
 
-https://mp.weixin.qq.com/s/dN1p7nuv6xtnIsSuY73CcA
+https://mp.weixin.qq.com/s/AwvSTF8j0AinS-EgmPFJTA
 
-基于GNN，强于GNN：胶囊图神经网络的PyTorch实现
+周志华团队：深度森林挑战多标签学习，9大数据集超越传统方法
 
-https://mp.weixin.qq.com/s/lcJcaiMtYXGVOwa_sVsVfA
+## 深度树学习
 
-Hinton老爷子CapsNet再升级，结合无监督，接近当前最佳效果
+https://mp.weixin.qq.com/s/GO7bXBY0cVfGIEEAtp0sKg
 
-https://mp.weixin.qq.com/s/A0m3lkIBCTFf5bzTQlYbgQ
+什么时候以及为什么基于树的模型可以超过神经网络模型？
 
-基于胶囊网络的计算机视觉应用
+https://mp.weixin.qq.com/s/bjOVQu0FZyTWQRlwEn8IVA
 
-https://mp.weixin.qq.com/s/BqsFIUrVEVz5kOFh3W93gQ
+基于深度树学习的Zero-shot人脸检测识别
 
-胶囊网络升级新版本，推特2000+赞
+https://mp.weixin.qq.com/s/pWcFuOecG-dZHZ365clDjg
 
-https://zhuanlan.zhihu.com/p/106330900
+阿里妈妈新突破！深度树匹配如何扛住千万级推荐系统压力
 
-解读－Stacked Capsule AutoEncoder－堆叠的胶囊自编码器
+https://mp.weixin.qq.com/s/sw16_sUsyYuzpqqy39RsdQ
 
-https://mp.weixin.qq.com/s/ubi1L1Zlh4yZqCjZnpD58w
+阿里妈妈深度树检索技术（TDM）及应用框架的探索实践
 
-Capsule Network深度解读
+https://mp.weixin.qq.com/s/EFDmHH8oUmJk-rG5PNnsAg
 
-# ESN
+阿里妈妈深度树匹配技术演进：TDM->JTM->BSAT
 
-Echo State Network
+https://mp.weixin.qq.com/s/6r8y7tMqo53lnACWG1K4xA
 
-https://blog.csdn.net/zwqhehe/article/details/77025035
+深度树学习用于Zero-shot人脸的反欺诈
 
-回声状态网络(ESN)原理详解
+https://mp.weixin.qq.com/s/NBVPlFGO12PhMTF0dUL2hw
 
-https://mp.weixin.qq.com/s/tjawT2-bhPrit0Fd4knSgA
-
-基于回声状态网络预测股票价格
+DeepGBM:使用树蒸馏提升在线预测任务下深度模型效果

@@ -9,6 +9,24 @@ category: Segmentation
 
 # 花式U-NET
 
+### ResUnet
+
+论文：
+
+《Road Extraction by Deep Residual U-Net》
+
+![](/images/img3/ResUnet.png)
+
+### DenseUnet
+
+论文：
+
+《Fully Dense UNet for 2D Sparse Photoacoustic Tomography Artifact Removal》
+
+![](/images/img3/DenseUnet.png)
+
+![](/images/img3/DenseUnet_2.png)
+
 ### MultiResUNet
 
 论文：

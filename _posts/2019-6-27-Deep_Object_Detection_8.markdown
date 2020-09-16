@@ -265,6 +265,10 @@ https://zhuanlan.zhihu.com/p/54334986
 
 TridentNet：处理目标检测中尺度变化新思路
 
+https://mp.weixin.qq.com/s/eODjZUQQiROID9i4WOeEFQ
+
+三分支网络——目前目标检测性能最佳网络框架
+
 https://mp.weixin.qq.com/s/oF3MAkl1UikRkOhrj3equw
 
 深度学习的目标检测算法是如何解决尺度问题的？

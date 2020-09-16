@@ -9,6 +9,32 @@ category: AI
 
 # Machine Learning之Python篇
 
+## Bokeh
+
+Bokeh是一个数据可视化的库。它不仅提供了和Matplotlib类似的静态图功能，还提供了生成交互动态图的功能。
+
+官网：
+
+http://bokeh.pydata.org/en/latest/
+
+参考：
+
+https://mp.weixin.qq.com/s/R6NclZO1MqjScRlLJ6Vefw
+
+Python地图可视化三大秘密武器（bokeh、basemap、geopandas）
+
+https://mp.weixin.qq.com/s/XKjo5Dj7bpIlBtxkbozekA
+
+掌握这几点，轻松玩转Bokeh可视化
+
+## Chartify
+
+Chartify在Bokeh的基础上又封装了一层，提供了更友好的API。
+
+官网：
+
+https://github.com/spotify/chartify
+
 ## Plotly
 
 Plotly也是Matplotlib的威力加强版，主打交互式绘图。
@@ -410,31 +436,3 @@ Python的开源人脸识别库：离线识别率高达99.38%
 https://zhuanlan.zhihu.com/p/30630608
 
 Python和MATLAB交互的基本操作
-
-https://mp.weixin.qq.com/s/drpd1O502TcL54cHSEdl_g
-
-如何为时间序列数据优化K-均值聚类速度？
-
-https://mp.weixin.qq.com/s/Di4xVdD1jOGGCiIB-vdkkg
-
-Python可以被用来做哪些神奇好玩的事情
-
-https://mp.weixin.qq.com/s/-SHD9rXUGQ-yp21RtFhJpg
-
-Python挖掘用户评论典型意见并自动生产报告
-
-https://mp.weixin.qq.com/s/ZbT5ASvnTODkodTJjBGhnw
-
-Python环境下的8种简单线性回归算法
-
-https://mp.weixin.qq.com/s/iL53BraKspGJ1rw7LK-3bA
-
-Logistic回归Python实战，评估销售系统的盈利能力
-
-https://mp.weixin.qq.com/s/JwsG0XzIGr5jiQqrOTGFGQ
-
-8种用Python实现线性回归的方法，究竟哪个方法最高效？
-
-https://mp.weixin.qq.com/s/4j-DgtlxGKCx8SvLEBgjoA
-
-Python上的图模型与概率建模工具包：pomegranate

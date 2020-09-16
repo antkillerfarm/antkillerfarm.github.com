@@ -291,3 +291,33 @@ https://mp.weixin.qq.com/s/DhQ0kks7SnyAROYEH_1BQg
 http://blog.shengbin.me/posts/multi-user-video-conference-based-on-webrtc
 
 基于WebRTC的多人视频会议
+
+# 数据结构 & 普通CS算法++
+
+https://www.cnblogs.com/BCOI/p/9072444.html
+
+TREAP
+
+https://blog.csdn.net/yishizuofei/article/details/81660841
+
+多路查找树：2-3树、2-3-4树、B树、B+树、B*树、R树
+
+http://www.cppblog.com/mysileng/archive/2013/04/06/199159.html
+
+Skip List（跳跃表）原理详解与实现
+
+https://mp.weixin.qq.com/s/M5syxE9Ln4UDLThPh5iuJg
+
+各种字符串Hash函数比较
+
+https://mp.weixin.qq.com/s/IaYnfEZ2bUXIpQvN3ZqFGA
+
+图解红黑树
+
+https://juejin.im/post/5e509b27f265da57455b3f33
+
+面试被问“红黑树”，我一脸懵逼......
+
+https://blog.csdn.net/wo541075754/article/details/54632929
+
+Merkle Tree（默克尔树）算法解析（Merkle Tree，通常也被称作Hash Tree，顾名思义，就是存储hash值的一棵树。）

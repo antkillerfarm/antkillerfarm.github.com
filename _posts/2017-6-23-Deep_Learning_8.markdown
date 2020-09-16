@@ -1,13 +1,53 @@
 ---
 layout: post
-title:  深度学习（八）——ResNet, Bi-directional RNN, seq2seq
+title:  深度学习（八）——ResNet, Bi-directional RNN
 category: DL 
 ---
 
 * toc
 {:toc}
 
-# 神经元激活函数进阶（续）
+# 神经元激活函数进阶
+
+## Swish（续）
+
+苏剑林据此提出了自己的激活函数：
+
+$$\max(x, x\cdot e^{-\mid x\mid })$$
+
+该函数的图像如上图的蓝色曲线所示。
+
+参考：
+
+https://mp.weixin.qq.com/s/JticD0itOWH7Aq7ye1yzvg
+
+谷歌大脑提出新型激活函数Swish惹争议：可直接替换并优于ReLU？
+
+http://kexue.fm/archives/4647/
+
+浅谈神经网络中激活函数的设计
+
+## 其他激活函数
+
+### hard tanh
+
+$$\text{HardTanh}(x)=\begin{cases}
+-1, & x<-1 \\
+x, & -1\le x \le 1 \\
+1, & x>1 \\
+\end{cases}$$
+
+![](/images/article/hard_tanh.png)
+
+### hard sigmoid
+
+$$\text{HardSigmoid}(x)=\begin{cases}
+0, & x<-2.5 \\
+0.2x, & -2.5\le x \le 2.5 \\
+1, & x>2.5 \\
+\end{cases}$$
+
+![](/images/img3/hard_sigmoid2.png)
 
 ### soft sign
 
@@ -206,124 +246,6 @@ https://mp.weixin.qq.com/s/W4IqXMRZJbQ-7fGEF43-sA
 https://mp.weixin.qq.com/s/_CENjzEK1kjsFpvX0H5gpQ
 
 结合堆叠与深度转换的新型神经翻译架构：爱丁堡大学提出BiDeep RNN
-
-# seq2seq
-
-seq2seq最早用于Neural Machine Translation领域（与之相对应的有Statistical Machine Translation）。训练后的seq2seq模型，可以根据输入语句，自动生成翻译后的输出语句。
-
-![](/images/article/seq2seq.png)
-
-上图是seq2seq的结构图。可以看出seq2seq实际上是一种Encoder-Decoder结构。
-
-在Encoder阶段，RNN依次读入输入序列。但由于这时，没有输出序列与之对应，因此这仅仅相当于一个对隐层的编码过程，即将句子的语义编码为隐层的状态向量。
-
-从中发现一个问题：状态向量的维数决定了存储的语义的内容上限（显然不能指望，一个200维的向量，能够表示一部百科全书。）因此，seq2seq通常只用于短文本的翻译。
-
-在Decoder阶段，我们根据输出序列，反向修正RNN的参数，以达到训练神经网络的目的。
-
-## Beam Search Decoder
-
-https://guillaumegenthial.github.io/sequence-to-sequence.html
-
-Seq2Seq with Attention and Beam Search
-
-https://blog.csdn.net/mr_tyting/article/details/78604721
-
-Seq2Seq Learning(Encoder-Decoder,Beam Search,Attention)
-
-## 参考
-
-https://github.com/ematvey/tensorflow-seq2seq-tutorials
-
-一步步的seq2seq教程
-
-http://blog.csdn.net/sunlylorn/article/details/50607376
-
-seq2seq模型
-
-http://datartisan.com/article/detail/120.html
-
-Seq2Seq的DIY简介
-
-https://mp.weixin.qq.com/s/U5yqXBHFD9LgIQJrqOlXFw
-
-机器翻译不可不知的Seq2Seq模型
-
-http://www.cnblogs.com/Determined22/p/6650373.html
-
-DL4NLP——seq2seq+attention机制的应用：文档自动摘要（Automatic Text Summarization）
-
-https://mp.weixin.qq.com/s/m-Z0UBgmFQ4CE0yLKYoHZw
-
-seq2seq和attention如何应用到文档自动摘要
-
-http://blog.csdn.net/young_gy/article/details/73412285
-
-基于RNN的语言模型与机器翻译NMT
-
-http://karpathy.github.io/2015/05/21/rnn-effectiveness/
-
-The Unreasonable Effectiveness of Recurrent Neural Networks
-
-https://mp.weixin.qq.com/s/8u3v9XzECkwcNn5Ay-kYQQ
-
-基于Depthwise Separable Convolutions的Seq2Seq模型_SliceNet原理解析
-
-https://mp.weixin.qq.com/s/H6eYxS7rXGDH_B8Znrxqsg
-
-seq2seq中的beam search算法过程
-
-https://mp.weixin.qq.com/s/U1yHIc5Zq0yKCezRm185VA
-
-Attentive Sequence to Sequence Networks
-
-https://mp.weixin.qq.com/s/cGXANj7BB2ktTdPAL4ZEWA
-
-图解神经网络机器翻译原理：LSTM、seq2seq到Zero-Shot
-
-https://mp.weixin.qq.com/s/jYUAKyTpm69J6Q34A06E-w
-
-百度提出冷聚变方法：使用语言模型训练Seq2Seq模型
-
-https://mp.weixin.qq.com/s/Fp6G1aI_utDd_kTbdHvEVQ
-
-完全基于卷积神经网络的seq2seq
-
-http://localhost:4500/theory/2017/06/21/Deep_Learning_6.html
-
-从2017年顶会论文看Attention Model
-
-https://mp.weixin.qq.com/s/Op_oYiNvaTXvsvAnl8Heew
-
-基于Self-attention的文本向量表示方法，悉尼科技大学和华盛顿大学最新工作
-
-https://mp.weixin.qq.com/s/fBrt4g_Kjmt1tGVZw5KgrQ
-
-从LSTM到Seq2Seq
-
-https://mp.weixin.qq.com/s/riIC6ybvqAJx9mzb-AQIOw
-
-Facebook AI发布新版本FairSeq序列到序列(Seq2Seq)学习工具，可生成故事与快速推断
-
-https://mp.weixin.qq.com/s/DIqjVxF_kACkivzez4_Hog
-
-编码器-解码器网络：神经翻译模型详解
-
-https://mp.weixin.qq.com/s/Alg4rOXNvb4GA8N4Joy-Jg
-
-Seq2seq强化，Pointer Network简介
-
-https://mp.weixin.qq.com/s/kdmmgVdWxz2nJPmjcprvqg
-
-机器学习中的编码器-解码器结构哲学
-
-https://mp.weixin.qq.com/s/OcrT2-sAWJg-ILdHwi4t5Q
-
-seq2seq最新变体，稀疏序列模型
-
-https://mp.weixin.qq.com/s/_1lr612F3x8ld9gvXj9L2A
-
-推断速度达seq2seq模型的100倍，谷歌开源文本生成新方法LaserTagger
 
 # CNN进化史
 

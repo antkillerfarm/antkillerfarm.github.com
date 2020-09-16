@@ -339,6 +339,10 @@ https://mp.weixin.qq.com/s/EPstYM7u3O6mAWf3J5Lmkg
 
 无代码工具的自动化概念概述
 
+https://mp.weixin.qq.com/s/0BBvsqLFP1qRvO3TUaS8Tw
+
+10个流行的可视化面板
+
 ## howmuch.net
 
 howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：

@@ -9,6 +9,34 @@ category: AI
 
 # Machine Learning之Python篇
 
+https://mp.weixin.qq.com/s/drpd1O502TcL54cHSEdl_g
+
+如何为时间序列数据优化K-均值聚类速度？
+
+https://mp.weixin.qq.com/s/Di4xVdD1jOGGCiIB-vdkkg
+
+Python可以被用来做哪些神奇好玩的事情
+
+https://mp.weixin.qq.com/s/-SHD9rXUGQ-yp21RtFhJpg
+
+Python挖掘用户评论典型意见并自动生产报告
+
+https://mp.weixin.qq.com/s/ZbT5ASvnTODkodTJjBGhnw
+
+Python环境下的8种简单线性回归算法
+
+https://mp.weixin.qq.com/s/iL53BraKspGJ1rw7LK-3bA
+
+Logistic回归Python实战，评估销售系统的盈利能力
+
+https://mp.weixin.qq.com/s/JwsG0XzIGr5jiQqrOTGFGQ
+
+8种用Python实现线性回归的方法，究竟哪个方法最高效？
+
+https://mp.weixin.qq.com/s/4j-DgtlxGKCx8SvLEBgjoA
+
+Python上的图模型与概率建模工具包：pomegranate
+
 https://mp.weixin.qq.com/s/2Gd-2BLZy7LdvOenbM2Fsg
 
 用hmmlearn学习隐马尔科夫模型HMM

@@ -127,6 +127,20 @@ https://mp.weixin.qq.com/s/UEBKSKEkZTbpR49_Rh50Jg
 
 微软统一预训练语言模型UniLM 2.0解读
 
+## Electra
+
+https://mp.weixin.qq.com/s/dFT7KKMH56unkOEA9H4Kuw
+
+吊打BERT Large的小型预训练模型ELECTRA终于开源！真相却让人...
+
+https://mp.weixin.qq.com/s/6i9eQISKsWU0jawKzWg8nQ
+
+超越bert，最新预训练模型ELECTRA论文阅读笔记
+
+https://mp.weixin.qq.com/s/lkB1xn6G2P5Nivj7DcYg5w
+
+Electra: 判别还是生成，这是一个选择
+
 ## 参考
 
 https://www.zhihu.com/question/298203515
@@ -269,10 +283,6 @@ https://mp.weixin.qq.com/s/V4pbjP5na1OYp-TorUik8g
 
 详聊如何用BERT实现关系抽取
 
-https://mp.weixin.qq.com/s/dFT7KKMH56unkOEA9H4Kuw
-
-吊打BERT Large的小型预训练模型ELECTRA终于开源！真相却让人...
-
 https://mp.weixin.qq.com/s/s5YIG6rBEy6fZkFLh-CzoA
 
 后BERT时代生存指南之VL-BERT篇
@@ -368,23 +378,3 @@ https://zhuanlan.zhihu.com/p/70389596
 https://mp.weixin.qq.com/s/h1VUSY7_UZF3PmjSN0DMSg
 
 从One-hot, Word embedding到Transformer，一步步教你理解Bert
-
-https://mp.weixin.qq.com/s/UJlmjFHWhnlXXJoRv4zkEQ
-
-虽被BERT碾压，但还是有必要谈谈BERT时代与后时代的NLP
-
-https://mp.weixin.qq.com/s/e4dgIdwzDzcLSkdgr1yZpg
-
-LeCun力荐：Facebook推出十亿参数超大容量存储器
-
-https://mp.weixin.qq.com/s/zXXtbuSvyMOkgrWJwB83kg
-
-预训练语言模型的最新探索
-
-https://mp.weixin.qq.com/s/WzGa5XVi2Op4Lz-1uQXfxQ
-
-SpanBERT：提出基于分词的预训练模型，多项任务性能超越现有模型！
-
-https://zhuanlan.zhihu.com/p/76912493
-
-nlp中的预训练语言模型总结(单向模型、BERT系列模型、XLNet)

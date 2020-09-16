@@ -242,7 +242,7 @@ http://www.ikvm.net/
 
 https://github.com/stanfordnlp/stanfordnlp
 
-看来在AI领域，Java是越来越不行了。2年前，好多AI库沿袭了大数据开发的语言习惯，使用了Java语言。然而，Google的tensorflow的出现，硬是将生态扭到了python语言一边。正如若干年前，Google在Android开发中引入Java一样，当时的业界基本都是C++的天下。
+看来在AI领域，Java是越来越不行了。2年前，好多AI库沿袭了大数据开发的语言习惯，使用了Java语言。然而，Google的tensorflow的出现，硬是将生态扭到了python语言一边。正如若干年前，Google在Android开发中引入Java一样，当时的手机业界基本都是C++的天下。
 
 ### THUCTC
 

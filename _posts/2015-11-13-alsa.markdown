@@ -27,6 +27,14 @@ http://blog.chinaunix.net/uid-20602659-id-2981336.html
 
 系列文章共2篇。主要偏重于ASOC驱动的具体实现，而不是背后的机制原理。
 
+https://www.alsa-project.org/alsa-doc/alsa-lib/
+
+C library reference
+
+http://equalarea.com/paul/alsa-audio.html
+
+A Tutorial on Using the ALSA Audio API
+
 # 关于ALSA的应用层
 
 ## 查找PC本机驱动
@@ -97,6 +105,14 @@ http://www.alsa-project.org/main/index.php/ASoC
 
 3.Machine driver。这部分用于前两部分之间的协调，起到粘合剂的作用。它通常是与具体使用的机器相关的。
 
+参考：
+
+https://processors.wiki.ti.com/index.php/Sitara_Linux_Audio_Driver_Overview
+
+Sitara Linux Audio Driver Overview
+
+----
+
 以三星设备为例，Platform driver和Machine driver在sound/soc/samsung下，该文件夹的Makefile节选如下：
 
 ```bash
@@ -164,6 +180,10 @@ DAPM：Dynamic Audio Power Management
 网上的文章有不少都是针对2.6.X的老内核的，现将3.X引入的变化，罗列如下：（自己摘录，仅供备忘，非官方内容）
 
 1.snd_card_create改为snd_card_new。
+
+http://www.rosoo.net/a/201203/15847.html
+
+ALSA SOC在Linux3.1上的一些改进
 
 # 从Gstreamer到ALSA
 
@@ -284,33 +304,3 @@ ALSA的音量操作步骤：（只讨论硬音量）
 `alsa-lib/src/mixer/simple_none.c: _snd_mixer_selem_set_volume`
 
 这一步将volume数据放到selem_none_t.str.vol结构中。后面都是针对这个结构的写操作。
-
-`alsa-lib/src/mixer/simple_none.c: selem_write`
-
-`alsa-lib/src/mixer/simple_none.c: selem_write_main`
-
-`alsa-lib/src/mixer/simple_none.c: elem_write_volume`
-
-`alsa-lib/src/control/hcontrol.c: snd_hctl_elem_write`
-
-`alsa-lib/src/control/control.c: snd_ctl_elem_write`
-
-`alsa-lib/src/control/control_hw.c: snd_ctl_hw_elem_write`
-
-这个函数调用ioctl系统调用，参数为SNDRV_CTL_IOCTL_ELEM_WRITE，进入内核空间。
-
-`linux-kernel/sound/core/control.c: snd_ctl_elem_write_user`
-
-`linux-kernel/sound/core/control.c: snd_ctl_elem_write`
-
-驱动上层的数据放在snd_card.controls链表中。这个链表中的元素是snd_kcontrol类型的。而驱动底层使用snd_kcontrol_new类型的数据。
-
-在设备初始化时，使用snd_soc_cnew或snd_ctl_new1函数从snd_kcontrol_new类型的模板中，生成相应的snd_kcontrol类型的数据。snd_kcontrol_new类型的数据可以用SOC_SINGLE、SOC_DOUBLE_VALUE之类的宏生成，其默认的put函数是snd_soc_put_volsw。
-
-`linux-kernel/sound/soc/soc-ops.c: snd_soc_put_volsw`
-
-`linux-kernel/sound/soc/soc-io.c: snd_soc_component_update_bits`
-
-`linux-kernel/drivers/base/regmap/regmap.c: regmap_update_bits_check`
-
-使用regmap技术映射I2C、SPI接口地址之后，即可调用相关函数修改相关音频外设的寄存器值了。

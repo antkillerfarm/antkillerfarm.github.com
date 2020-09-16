@@ -374,3 +374,7 @@ https://www.zhihu.com/question/20866833
 https://mp.weixin.qq.com/s/qfbfzToypKTxh7CxJ0ifHw
 
 正十二面体的一个最基本谜题被破解了
+
+https://mp.weixin.qq.com/s/uptfQb8ELfpb5P4ySvofpg
+
+一个被我们“嫌弃”了23年的数学天才，累死才知道他的价值（陆家羲）

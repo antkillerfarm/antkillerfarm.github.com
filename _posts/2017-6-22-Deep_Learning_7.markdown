@@ -7,7 +7,21 @@ category: DL
 * toc
 {:toc}
 
-# LSTM（续）
+# LSTM
+
+## LSTM结构图（续）
+
+我们首先回顾一下之前的模型在这里的处理。
+
+MLP的该映射关系为：
+
+$$h=\sigma (W\cdot x+b)$$
+
+RNN在上式基础上添加了历史状态$$h_{t-1}$$：
+
+$$h_t=\sigma (W\cdot [h_{t-1},x_t]+b)$$
+
+LSTM不仅添加了历史状态$$h_{t-1}$$，还添加了所谓的**细胞状态**$$C_{t-1}$$，即上图中图像上部的水平横线。
 
 ## 步骤详解
 
@@ -253,8 +267,6 @@ GLU一般用在NLP领域，它和CNN结合，也就是所谓的GCNN了。
 
 ## RRelu
 
-
-
 论文：
 
 《Empirical Evaluation of Rectified Activations in Convolution Network》
@@ -300,41 +312,3 @@ Swish在原点附近不是饱和的，只有负半轴远离原点区域才是饱
 特别是由于诸如BN之类的策略，输出都自动近似满足均值为0的正态分布，因此这些情况都有一半的参数位于ReLu的饱和区。
 
 相比之下，Swish好一点，因为它在负半轴也有一定的不饱和区，所以参数的利用率更大。
-
-苏剑林据此提出了自己的激活函数：
-
-$$\max(x, x\cdot e^{-\mid x\mid })$$
-
-该函数的图像如上图的蓝色曲线所示。
-
-参考：
-
-https://mp.weixin.qq.com/s/JticD0itOWH7Aq7ye1yzvg
-
-谷歌大脑提出新型激活函数Swish惹争议：可直接替换并优于ReLU？
-
-http://kexue.fm/archives/4647/
-
-浅谈神经网络中激活函数的设计
-
-## 其他激活函数
-
-### hard tanh
-
-$$\text{HardTanh}(x)=\begin{cases}
--1, & x<-1 \\
-x, & -1\le x \le 1 \\
-1, & x>1 \\
-\end{cases}$$
-
-![](/images/article/hard_tanh.png)
-
-### hard sigmoid
-
-$$\text{HardSigmoid}(x)=\begin{cases}
-0, & x<-2.5 \\
-0.2x, & -2.5\le x \le 2.5 \\
-1, & x>2.5 \\
-\end{cases}$$
-
-![](/images/img3/hard_sigmoid2.png)

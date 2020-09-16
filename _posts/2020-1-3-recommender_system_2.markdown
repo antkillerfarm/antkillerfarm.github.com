@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  推荐系统（二）——常用排序算法, 用户画像, 工程细节
+title:  推荐系统（二）——常用排序算法, 用户画像, 工程细节（1）
 category: Recommender System 
 ---
 

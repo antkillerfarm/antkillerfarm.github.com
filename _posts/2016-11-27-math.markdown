@@ -89,7 +89,7 @@ $$e^{ix}=\cos x + i \sin x$$
 
 推荐阅读以下文章：
 
-https://www.zhihu.com/question/20296247/answer/29370489
+https://www.zhihu.com/answer/29370489
 
 数学里的e为什么叫做自然底数？是不是自然界里什么东西恰好是e？
 

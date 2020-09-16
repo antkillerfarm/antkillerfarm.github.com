@@ -265,6 +265,10 @@ https://mp.weixin.qq.com/s/ZjnRzI18plggKTv_nPBsEw
 
 字节跳动表格存储中的事务
 
+https://mp.weixin.qq.com/s/PPlrrtcdrtKT3afgWOU8Pg
+
+为什么数据库不应该使用外键
+
 # ZeroMQ
 
 ZeroMQ是个在Socket之上，而在MQ之下的网络通信库。正如名称所言，它实际上并不是一个完整的MQ，而仅仅只有MQ的一些子功能罢了。

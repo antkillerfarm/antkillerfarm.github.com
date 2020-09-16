@@ -233,6 +233,14 @@ https://zhuanlan.zhihu.com/p/134595781
 
 卡尔曼滤波(Kalman filter)含详细数学推导
 
+https://zhuanlan.zhihu.com/p/166342719
+
+卡尔曼滤波器详解——从零开始(1)
+
+https://zhuanlan.zhihu.com/p/179480833
+
+卡尔曼滤波器详解——从零开始(2)
+
 # Adaboost
 
 Adaboost是Yoav Freund和Robert Schapire于1997年提出的算法。两人后来因为该算法被授予Gödel Prize（2003）。
@@ -296,19 +304,3 @@ Adaboost算法原理小结
 https://mp.weixin.qq.com/s/KoOUgwXLOfJfOjWhbFX52Q
 
 如果Boosting你懂，那Adaboost你懂么？
-
-https://mp.weixin.qq.com/s/Joz2FpGgBY0tC8lpoFz8Mw
-
-AdaBoost元算法如何提高分类性能——机器学习实战
-
-https://mp.weixin.qq.com/s/MLEVUKse5usmKIWJF-yfOQ
-
-通俗易懂讲解自适应提升算法AdaBoost
-
-https://mp.weixin.qq.com/s/VuDAdeVsoZsTokh3n_wWFw
-
-一文详解机器学习中最好用的提升方法：Boosting与AdaBoost
-
-https://mp.weixin.qq.com/s/Jnh7yIOmzbTvWk77zh2-lA
-
-周志华：Boosting学习理论的探索——一个跨越30年的故事

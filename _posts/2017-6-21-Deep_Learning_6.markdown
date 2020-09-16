@@ -115,7 +115,7 @@ https://mp.weixin.qq.com/s/nHEyJLU18AE-SatW9HKeOw
 
 Word2Vec——深度学习的一小步，自然语言处理的一大步
 
-https://www.zhihu.com/question/290088641/answer/543419468
+https://www.zhihu.com/answer/543419468
 
 CNN文本分类中是否可以使用字向量代替词向量？
 
@@ -292,15 +292,3 @@ http://www.jianshu.com/p/9dc9f41f0b29
 ![](/images/article/LSTM.png)
 
 和RNN的时序展开图类似，这里的每个方框表示**某个时刻从输入层到隐层的映射**。
-
-我们首先回顾一下之前的模型在这里的处理。
-
-MLP的该映射关系为：
-
-$$h=\sigma (W\cdot x+b)$$
-
-RNN在上式基础上添加了历史状态$$h_{t-1}$$：
-
-$$h_t=\sigma (W\cdot [h_{t-1},x_t]+b)$$
-
-LSTM不仅添加了历史状态$$h_{t-1}$$，还添加了所谓的**细胞状态**$$C_{t-1}$$，即上图中图像上部的水平横线。

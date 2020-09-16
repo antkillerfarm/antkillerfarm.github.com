@@ -198,6 +198,10 @@ http://www.latexstudio.net/archives/category/tex-graphics/tikz-example
 
 一个tikz的论坛
 
+https://mp.weixin.qq.com/s/cetQ_Ddzc9Tov3x_w-Z72g
+
+快速入门使用tikz绘制深度学习网络图
+
 ## Tikz+Gnuplot
 
 `sudo apt install gnuplot`

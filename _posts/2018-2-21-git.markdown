@@ -365,7 +365,7 @@ http://www.ruanyifeng.com/blog/2016/07/google-monolithic-source-repository.html
 
 谷歌的代码管理
 
-https://www.zhihu.com/question/25491925/answer/175222330
+https://www.zhihu.com/answer/175222330
 
 代码版本控制用SVN还是Git好？
 

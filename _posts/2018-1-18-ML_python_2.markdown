@@ -185,6 +185,10 @@ https://mp.weixin.qq.com/s/ttYIWPKnNs46TfAbEZaHig
 
 PandaSQL：一个让你能够通过SQL语句进行pandas的操作的python包
 
+https://mp.weixin.qq.com/s/UJ7P6nrBijidW3U2ApMGEQ
+
+Vaex：突破pandas，快速分析100GB大数据集
+
 ## 并行Pandas
 
 https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw
@@ -464,29 +468,3 @@ https://mp.weixin.qq.com/s/GKrqAD0tud6WOFjNwQVVZw
 https://mp.weixin.qq.com/s/Lrag8Wilf4B6abVG2UcMZw
 
 详解seaborn可视化中的kdeplot、rugplot、distplot与jointplot
-
-## Bokeh
-
-Bokeh是一个数据可视化的库。它不仅提供了和Matplotlib类似的静态图功能，还提供了生成交互动态图的功能。
-
-官网：
-
-http://bokeh.pydata.org/en/latest/
-
-参考：
-
-https://mp.weixin.qq.com/s/R6NclZO1MqjScRlLJ6Vefw
-
-Python地图可视化三大秘密武器（bokeh、basemap、geopandas）
-
-https://mp.weixin.qq.com/s/XKjo5Dj7bpIlBtxkbozekA
-
-掌握这几点，轻松玩转Bokeh可视化
-
-## Chartify
-
-Chartify在Bokeh的基础上又封装了一层，提供了更友好的API。
-
-官网：
-
-https://github.com/spotify/chartify

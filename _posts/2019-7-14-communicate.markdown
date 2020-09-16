@@ -219,6 +219,10 @@ https://mp.weixin.qq.com/s/MHYMOYHqhrAbQ0xtTkV2ig
 
 HTTP/3原理实战
 
+https://mp.weixin.qq.com/s/DiaruzlgPPKmJCiBg19_og
+
+为什么HTTP3.0使用UDP协议
+
 # 硬件
 
 https://mp.weixin.qq.com/s/ZexnsNmqsD2yq-7YNASohw

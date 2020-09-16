@@ -283,6 +283,12 @@ https://github.com/cchen156/Learning-to-See-in-the-Dark
 
 为了实现这一目标，作者收集了一个新的原始图像数据集，在弱光条件下快速曝光。同时，每个微光图像都有相应的长曝光、高质量的参考图像。
 
+SID算是这类问题的里程碑作品，后续还有：
+
+《YOLO in the Dark》
+
+这是将YOLO用于黑暗图像的目标检测的论文。
+
 参考：
 
 https://mp.weixin.qq.com/s/cr0BJLkyN2kW35-w1pebGQ
@@ -301,6 +307,10 @@ https://mp.weixin.qq.com/s/E20ucf5bfexKYH4R7zK-WA
 
 最好用的音轨分离软件spleeter
 
+https://mp.weixin.qq.com/s/ONoBoCNFzoPh-rsVuiD6Jg
+
+YOLO in the Dark让黑夜里的目标检测成为可能
+
 ## 花式U-Net
 
 本节主要摘抄自：
@@ -318,21 +328,3 @@ https://zhuanlan.zhihu.com/p/57530767
 ![](/images/img3/U-Net_3D.png)
 
 这个算是3D领域的base-line了，而且效果还不错。好多新网络还未必比得过它。
-
-### ResUnet
-
-论文：
-
-《Road Extraction by Deep Residual U-Net》
-
-![](/images/img3/ResUnet.png)
-
-### DenseUnet
-
-论文：
-
-《Fully Dense UNet for 2D Sparse Photoacoustic Tomography Artifact Removal》
-
-![](/images/img3/DenseUnet.png)
-
-![](/images/img3/DenseUnet_2.png)

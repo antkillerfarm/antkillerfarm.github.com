@@ -7,6 +7,68 @@ category: DL
 * toc
 {:toc}
 
+# Capsule+
+
+https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Network/
+
+“Understanding Matrix capsules with EM Routing (Based on Hinton's Capsule Networks)”
+
+https://zhuanlan.zhihu.com/p/42864711
+
+胶囊网络到底是什么东东？
+
+https://zhuanlan.zhihu.com/p/32106577
+
+酉变换与递归神经网络
+
+https://github.com/freefuiiismyname/capsule-mrc
+
+基于capsule的观点型阅读理解模型
+
+https://mp.weixin.qq.com/s/cskdgsysD7R_FKChAKmlDg
+
+利用Capsule重构过程，Hinton等人实现对抗样本的自动检测
+
+https://mp.weixin.qq.com/s/7fBXMvT4eyZrKhPKQTAIZQ
+
+你听说过胶囊网络吗？
+
+https://www.cnblogs.com/CZiFan/p/9803067.html
+
+CapsNet胶囊网络
+
+https://mp.weixin.qq.com/s/F9SGZPZj6gup_nOVuDel6A
+
+与胶囊网络异曲同工：Bengio等提出四元数循环神经网络
+
+https://mp.weixin.qq.com/s/4o9XHGwx5lYsJ7YfUNHSoQ
+
+百年老图难倒谷歌AI，网友：是鸭是兔？连我都不能确定
+
+https://mp.weixin.qq.com/s/dN1p7nuv6xtnIsSuY73CcA
+
+基于GNN，强于GNN：胶囊图神经网络的PyTorch实现
+
+https://mp.weixin.qq.com/s/lcJcaiMtYXGVOwa_sVsVfA
+
+Hinton老爷子CapsNet再升级，结合无监督，接近当前最佳效果
+
+https://mp.weixin.qq.com/s/A0m3lkIBCTFf5bzTQlYbgQ
+
+基于胶囊网络的计算机视觉应用
+
+https://mp.weixin.qq.com/s/BqsFIUrVEVz5kOFh3W93gQ
+
+胶囊网络升级新版本，推特2000+赞
+
+https://zhuanlan.zhihu.com/p/106330900
+
+解读－Stacked Capsule AutoEncoder－堆叠的胶囊自编码器
+
+https://mp.weixin.qq.com/s/ubi1L1Zlh4yZqCjZnpD58w
+
+Capsule Network深度解读
+
 # LSTM进阶
 
 ## 《Long short-term memory》
@@ -244,97 +306,3 @@ https://mp.weixin.qq.com/s/3djAWJs6ecDdPSpQMxqmrg
 https://mp.weixin.qq.com/s/__qC6Wzy4jaGNGzWr3eOIg
 
 引入额外门控运算，LSTM稍做修改，性能便堪比Transformer-XL
-
-# Graph NN++
-
-https://mp.weixin.qq.com/s/GnjSuQ_BihO5bP5xO2xHJg
-
-万字长文带你入门GCN
-
-https://mp.weixin.qq.com/s/4J0wL4vSugmx1Zow8zdT2Q
-
-DGL深度图神经网络实战教程
-
-https://mp.weixin.qq.com/s/v9aOoK2sHP0a9hZP0jWW0Q
-
-图神经网络的新基准
-
-https://zhuanlan.zhihu.com/p/133739758
-
-全面理解PinSage（工业落地：图神经网络+推荐系统）
-
-https://mp.weixin.qq.com/s/VctNZsALrbDQDW3_zhGJsw
-
-在NLP中应用GCN的几种构图方法整理
-
-https://mp.weixin.qq.com/s/TnS4-seRxAs45A6SDSoACg
-
-图神经网络的预训练策略
-
-https://mp.weixin.qq.com/s/Pgz8cnDpX2mgexASnRzfhA
-
-浅谈图神经网络的局限性
-
-https://mp.weixin.qq.com/s/hQ-Fo_aizkcTxvzW0FSIEw
-
-VGAE：利用变分自编码器完成图重构
-
-https://zhuanlan.zhihu.com/p/137223381
-
-推荐系统的图方法
-
-https://mp.weixin.qq.com/s/hFtFjR4EIVN_9g93YjtuoQ
-
-GCMC：GNN在推荐系统中的应用
-
-https://mp.weixin.qq.com/s/u8XAbOautjZTA7ZhdSBaDA
-
-经典重温：图表示学习经典算法node2vec
-
-https://mp.weixin.qq.com/s/soH6jX7_fjq0iBBH-5bMsA
-
-Node2Vec论文+代码笔记
-
-https://mp.weixin.qq.com/s/zxFgW6ofimYQ9wlChTK8cw
-
-Recommender System with GNN
-
-https://mp.weixin.qq.com/s/_vbcLre5HIrOGbAjTzLFjA
-
-动态网络表征学习在推荐领域的创新与实践
-
-https://zhuanlan.zhihu.com/p/139359188
-
-关于GCN，我有三种写法
-
-https://mp.weixin.qq.com/s/QF9-Pz2X4qToObGWwViFBQ
-
-EGES：阿里在图嵌入领域中的探索
-
-https://mp.weixin.qq.com/s/WnF-fqQyr2VNqr75Jzoqsw
-
-Diff Pool：网络图的层次化表达
-
-https://mp.weixin.qq.com/s/8kCKqM3yuohc4xOoFd8hGg
-
-Heterogeneous Graph Neural Network
-
-https://mp.weixin.qq.com/s/HUjq4TopxWLx3QTh5ZxfIQ
-
-最新《图卷积神经网络》中文综述论文，26页pdf
-
-https://mp.weixin.qq.com/s/RuCxY92qlhWnbZVYDXY_BQ
-
-Mila唐建博士最新《图表示学习:算法与应用》2020研究进展，附59页ppt
-
-https://mp.weixin.qq.com/s/2PY1baildUoZaetYlsukIQ
-
-图卷积网络(GCN)的谱分析
-
-https://mp.weixin.qq.com/s/F9zt7eyHxTX7Gp0zpvnfcg
-
-一文直击Graph Embedding图表示学习的原理及应用
-
-https://mp.weixin.qq.com/s/qgZwi3ieMqPrg3t5lyjaZw
-
-元图(Meta-Graph)：元学习小样本连接预测

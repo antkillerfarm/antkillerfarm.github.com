@@ -123,7 +123,7 @@ $$h(t)=\int_{-\infty}^\infty H(f)e^{-2\pi i ft}\mathrm{d}f$$
 
 参考：
 
-https://www.zhihu.com/question/340426968/answer/790986702
+https://www.zhihu.com/answer/790986702
 
 怎样让安卓手机均匀连续地循环播放某一频率段的声波？
 

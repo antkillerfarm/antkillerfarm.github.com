@@ -203,6 +203,12 @@ CC2530的空中升级可以使用以下两种方法：
 
 但由于即使最优化的Zstack协议栈也至少有140KB，而CC2530最多只有256KB，因此第2个条件实际上是不可能满足的。
 
+# 休眠
+
+http://home.eeworld.com.cn/home.php?mod=space&uid=361439&do=blog&id=118277
+
+如何实现ZigBee休眠与唤醒
+
 # Wifi设备的三种模式
 
 通常情况下，两个Wifi设备的连接方式如下所示：

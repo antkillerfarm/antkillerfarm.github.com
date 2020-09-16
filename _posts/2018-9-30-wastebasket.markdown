@@ -333,7 +333,7 @@ http://blog.sina.com.cn/s/blog_4b7c1f540100t4sy.html
 
 重力坝战时抗打击能力问答
 
-https://www.zhihu.com/question/30137203/answer/303210942
+https://www.zhihu.com/answer/303210942
 
 瓦伊昂大坝
 

@@ -370,11 +370,3 @@ https://mp.weixin.qq.com/s/GGRORF5EfJ5xzMLwAsJt5w
 https://mp.weixin.qq.com/s/fxEg8UOa3MeJ6qx5SjEHog
 
 NLP领域中各式各样Attention知识系统性的梳理和总结
-
-https://mp.weixin.qq.com/s/LAInpFPa-3R1rfv6idILnw
-
-注意力机制发展如何了，如何学习它在各类任务中的应用？
-
-https://zhuanlan.zhihu.com/p/151640509
-
-注意力机制在推荐系统中的应用

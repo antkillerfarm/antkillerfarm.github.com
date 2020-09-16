@@ -1,13 +1,45 @@
 ---
 layout: post
-title:  ALSA（二）, GStreamer（三）, WebSocket, CoAP & MQTT, WebKit
+title:  ALSA（二）, GStreamer（三）, WebSocket, CoAP & MQTT
 category: technology 
 ---
 
 * toc
 {:toc}
 
-# 从Gstreamer到ALSA（续）
+# 从Gstreamer到ALSA
+
+## 3.音量操作（续）
+
+`alsa-lib/src/mixer/simple_none.c: selem_write`
+
+`alsa-lib/src/mixer/simple_none.c: selem_write_main`
+
+`alsa-lib/src/mixer/simple_none.c: elem_write_volume`
+
+`alsa-lib/src/control/hcontrol.c: snd_hctl_elem_write`
+
+`alsa-lib/src/control/control.c: snd_ctl_elem_write`
+
+`alsa-lib/src/control/control_hw.c: snd_ctl_hw_elem_write`
+
+这个函数调用ioctl系统调用，参数为SNDRV_CTL_IOCTL_ELEM_WRITE，进入内核空间。
+
+`linux-kernel/sound/core/control.c: snd_ctl_elem_write_user`
+
+`linux-kernel/sound/core/control.c: snd_ctl_elem_write`
+
+驱动上层的数据放在snd_card.controls链表中。这个链表中的元素是snd_kcontrol类型的。而驱动底层使用snd_kcontrol_new类型的数据。
+
+在设备初始化时，使用snd_soc_cnew或snd_ctl_new1函数从snd_kcontrol_new类型的模板中，生成相应的snd_kcontrol类型的数据。snd_kcontrol_new类型的数据可以用SOC_SINGLE、SOC_DOUBLE_VALUE之类的宏生成，其默认的put函数是snd_soc_put_volsw。
+
+`linux-kernel/sound/soc/soc-ops.c: snd_soc_put_volsw`
+
+`linux-kernel/sound/soc/soc-io.c: snd_soc_component_update_bits`
+
+`linux-kernel/drivers/base/regmap/regmap.c: regmap_update_bits_check`
+
+使用regmap技术映射I2C、SPI接口地址之后，即可调用相关函数修改相关音频外设的寄存器值了。
 
 ## 4.SOC_SINGLE类宏
 
@@ -168,6 +200,12 @@ Z表示Codec设备的从机地址。
 
 这种情况用两个独立的card来解决就可以了。
 
+# ALSA参考资源
+
+https://blog.csdn.net/huyugv_830913/article/details/6159054
+
+ALSA driver(Control)
+
 # GStreamer编程（续）
 
 以下是教程的一些细节的学习心得。
@@ -262,6 +300,16 @@ new_pad_type = new_pad.query_caps(None).to_string()
 
 从这里也可以看出，gst_parse_launch会自动处理媒体流的格式匹配问题，而使用普通函数的时候，必须自己编程处理格式匹配的问题。
 
+## 参考
+
+https://blog.csdn.net/sakulafly/article/details/22216775
+
+GStreamer播放教程01——playbin2的使用
+
+https://ubuntuforums.org/showthread.php?t=822338
+
+GStreamer Volume Control
+
 # WebSocket
 
 在浏览器中通过http仅能实现单向的通信。AJAX通过轮询方式，达到全双工通信，但效率不高。
@@ -314,71 +362,3 @@ https://mp.weixin.qq.com/s/i1WziUgG9TcLvvX1-2Nizw
 https://mp.weixin.qq.com/s/ZaBkqlmWboOT7SEpQOln_Q
 
 MQTT协议之连接
-
-# WebKit
-
-WebKit的代码可以从它的官网www.webkit.org下获得。
-
-在以下网页可以获得webkit向各种GUI移植的相关信息。
-
-http://trac.webkit.org/wiki
-
-由于获得的代码比较新，所以在linux平台下常有一些组件由于过于古老而导致编译失败。所以需要使用yum或者apt-get之类的工具从网上更新相关的组件。这里不推荐使用RHEL或者CentOS之类的服务器版本，因为服务器版本为了追求稳定性，不但组件不是最新的，就连网上的组件源也不是最新的。
-
-可以使用ubuntu 9.04桌面版，不过里面缺少很多开发用的组件，除了
-
-http://trac.webkit.org/wiki/BuildingGtk
-
-列出的之外，还有不少组件需要下载。主要有：
-
-1)autoconf
-
-2)libtool
-
-3)gtk-doc-tools
-
-4)libgail-dev
-
-参考：
-
-https://mp.weixin.qq.com/s/QqpPGWf3IVEDN1t80CZ06Q
-
-深入理解浏览器原理
-
-https://www.zhihu.com/question/290767285/answer/1200063036
-
-据报道称“浏览器内核有上千万行代码”，浏览器内核真的很复杂吗？
-
-https://zhuanlan.zhihu.com/p/96986818
-
-万字详文：深入理解浏览器原理
-
-# 数据结构 & 普通CS算法++
-
-https://www.cnblogs.com/BCOI/p/9072444.html
-
-TREAP
-
-https://blog.csdn.net/yishizuofei/article/details/81660841
-
-多路查找树：2-3树、2-3-4树、B树、B+树、B*树、R树
-
-http://www.cppblog.com/mysileng/archive/2013/04/06/199159.html
-
-Skip List（跳跃表）原理详解与实现
-
-https://mp.weixin.qq.com/s/M5syxE9Ln4UDLThPh5iuJg
-
-各种字符串Hash函数比较
-
-https://mp.weixin.qq.com/s/IaYnfEZ2bUXIpQvN3ZqFGA
-
-图解红黑树
-
-https://juejin.im/post/5e509b27f265da57455b3f33
-
-面试被问“红黑树”，我一脸懵逼......
-
-https://blog.csdn.net/wo541075754/article/details/54632929
-
-Merkle Tree（默克尔树）算法解析（Merkle Tree，通常也被称作Hash Tree，顾名思义，就是存储hash值的一棵树。）

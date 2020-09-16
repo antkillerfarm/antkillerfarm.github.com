@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十三）——花式池化, Regularization
+title:  深度学习（十三）——花式池化, Regularization, seq2seq
 category: DL 
 ---
 
@@ -189,167 +189,123 @@ $$R_g(w^{(g)}) = \sum_{g=1}^{G} \lVert w^{(g)} \rVert_g = \sum_{g=1}^{G} \sum_{i
 
 Group Regularization也叫做Block Regularization或Structured Regularization。
 
-# 深度推荐系统+
+# seq2seq
 
-https://zhuanlan.zhihu.com/p/100019681
+seq2seq最早用于Neural Machine Translation领域（与之相对应的有Statistical Machine Translation）。训练后的seq2seq模型，可以根据输入语句，自动生成翻译后的输出语句。
 
-推荐系统技术演进趋势：从召回到排序再到重排
+![](/images/article/seq2seq.png)
 
-https://zhuanlan.zhihu.com/p/102918124
+上图是seq2seq的结构图。可以看出seq2seq实际上是一种Encoder-Decoder结构。
 
-微信看一看Embedding
+在Encoder阶段，RNN依次读入输入序列。但由于这时，没有输出序列与之对应，因此这仅仅相当于一个对隐层的编码过程，即将句子的语义编码为隐层的状态向量。
 
-https://zhuanlan.zhihu.com/p/115781834
+从中发现一个问题：状态向量的维数决定了存储的语义的内容上限（显然不能指望，一个200维的向量，能够表示一部百科全书。）因此，seq2seq通常只用于短文本的翻译。
 
-深度学习在花椒直播中的应用——推荐系统冷启动算法
+在Decoder阶段，我们根据输出序列，反向修正RNN的参数，以达到训练神经网络的目的。
 
-https://mp.weixin.qq.com/s/ec88cMR4K6pWyHhJs7FEFQ
+## Beam Search Decoder
 
-智能推荐算法在花椒直播中的应用
+https://guillaumegenthial.github.io/sequence-to-sequence.html
 
-https://zhuanlan.zhihu.com/p/68897114
+Seq2Seq with Attention and Beam Search
 
-如何刻画用户的多样兴趣——MIND network阅读笔记
+https://blog.csdn.net/mr_tyting/article/details/78604721
 
-https://mp.weixin.qq.com/s/sbdnEMez_BKPzXOl1Z4AzQ
+Seq2Seq Learning(Encoder-Decoder,Beam Search,Attention)
 
-DeepMatch：用于推荐&广告的深度召回匹配算法库
+## 参考
 
-https://zhuanlan.zhihu.com/p/127030405
+https://github.com/ematvey/tensorflow-seq2seq-tutorials
 
-对话推荐系统综述论文
+一步步的seq2seq教程
 
-https://mp.weixin.qq.com/s/kPdYAzVYelE9LxvGvi4f8w
+http://blog.csdn.net/sunlylorn/article/details/50607376
 
-多值类别特征加入CTR预估模型的方法汇总
+seq2seq模型
 
-https://zhuanlan.zhihu.com/p/101298495
+http://datartisan.com/article/detail/120.html
 
-稠密特征加入CTR预估模型有哪些方法？
+Seq2Seq的DIY简介
 
-https://zhuanlan.zhihu.com/p/101136699
+https://mp.weixin.qq.com/s/U5yqXBHFD9LgIQJrqOlXFw
 
-推荐系统中的深度匹配模型
+机器翻译不可不知的Seq2Seq模型
 
-https://mp.weixin.qq.com/s/POEnU7bNG44Mz9844WuzIw
+http://www.cnblogs.com/Determined22/p/6650373.html
 
-腾讯视频是如何给你高效精准推送的
+DL4NLP——seq2seq+attention机制的应用：文档自动摘要（Automatic Text Summarization）
 
-https://zhuanlan.zhihu.com/p/99953120
+https://mp.weixin.qq.com/s/m-Z0UBgmFQ4CE0yLKYoHZw
 
-YouTube推荐系统算法梳理
+seq2seq和attention如何应用到文档自动摘要
 
-https://mp.weixin.qq.com/s/zeF7C7YrLqOjIWPen04K2Q
+http://blog.csdn.net/young_gy/article/details/73412285
 
-搜索模型核心技术公开，淘宝如何做用户建模？
+基于RNN的语言模型与机器翻译NMT
 
-https://www.zhihu.com/question/362190044
+http://karpathy.github.io/2015/05/21/rnn-effectiveness/
 
-推荐系统领域有啥巧妙的idea？
+The Unreasonable Effectiveness of Recurrent Neural Networks
 
-https://zhuanlan.zhihu.com/p/96796043
+https://mp.weixin.qq.com/s/8u3v9XzECkwcNn5Ay-kYQQ
 
-推荐系统中如何做多目标优化
+基于Depthwise Separable Convolutions的Seq2Seq模型_SliceNet原理解析
 
-https://zhuanlan.zhihu.com/p/52876883
+https://mp.weixin.qq.com/s/H6eYxS7rXGDH_B8Znrxqsg
 
-深度CTR预估模型中的特征自动组合机制演化简史
+seq2seq中的beam search算法过程
 
-https://mp.weixin.qq.com/s/Ni42SEukRBGDUHu_bh3Lig
+https://mp.weixin.qq.com/s/U1yHIc5Zq0yKCezRm185VA
 
-基于LSTM模型的广告库存预估算法
+Attentive Sequence to Sequence Networks
 
-https://mp.weixin.qq.com/s/FYghBvkye8J7BqPje4JhFw
+https://mp.weixin.qq.com/s/cGXANj7BB2ktTdPAL4ZEWA
 
-汽车之家推荐系统排序算法迭代之路
+图解神经网络机器翻译原理：LSTM、seq2seq到Zero-Shot
 
-https://mp.weixin.qq.com/s/2whZpeQPXggHRDSEUnQZ-w
+https://mp.weixin.qq.com/s/jYUAKyTpm69J6Q34A06E-w
 
-加州大学-Liwei Wu博士论文：协同过滤与排序进展，150页pdf
+百度提出冷聚变方法：使用语言模型训练Seq2Seq模型
 
-https://mp.weixin.qq.com/s/jIjdYIbdls5lIbF7TVfbdA
+https://mp.weixin.qq.com/s/Fp6G1aI_utDd_kTbdHvEVQ
 
-阿里又出排序新模型，还被国际顶会认可了
+完全基于卷积神经网络的seq2seq
 
-https://mp.weixin.qq.com/s/fUdKIqygxqlkuv0P4wiIRg
+http://localhost:4500/theory/2017/06/21/Deep_Learning_6.html
 
-智能推荐算法在直播场景中的应用
+从2017年顶会论文看Attention Model
 
-https://mp.weixin.qq.com/s/HE0ckOe71dROafTZt-2mAA
+https://mp.weixin.qq.com/s/Op_oYiNvaTXvsvAnl8Heew
 
-最新边信息推荐系统综述
+基于Self-attention的文本向量表示方法，悉尼科技大学和华盛顿大学最新工作
 
-https://mp.weixin.qq.com/s/GazjnVwQKItrph7_n7SGTw
+https://mp.weixin.qq.com/s/fBrt4g_Kjmt1tGVZw5KgrQ
 
-飞猪的“猜你喜欢”如何排序？
+从LSTM到Seq2Seq
 
-https://mp.weixin.qq.com/s/x4Q5di8oVAAZBJBTlY8usw
+https://mp.weixin.qq.com/s/riIC6ybvqAJx9mzb-AQIOw
 
-深入理解推荐系统：梳理YouTube推荐算法
+Facebook AI发布新版本FairSeq序列到序列(Seq2Seq)学习工具，可生成故事与快速推断
 
-https://mp.weixin.qq.com/s/s-BCi-vS6YKCaexlgNCy8g
+https://mp.weixin.qq.com/s/DIqjVxF_kACkivzez4_Hog
 
-深入理解推荐系统：推荐系统中的attention机制
+编码器-解码器网络：神经翻译模型详解
 
-https://zhuanlan.zhihu.com/p/128988454
+https://mp.weixin.qq.com/s/Alg4rOXNvb4GA8N4Joy-Jg
 
-谷歌最新双塔DNN召回模型——应用于YouTube大规模视频推荐场景
+Seq2seq强化，Pointer Network简介
 
-https://mp.weixin.qq.com/s/Bpw-q3wISbCAKHsuYQo0QQ
+https://mp.weixin.qq.com/s/kdmmgVdWxz2nJPmjcprvqg
 
-阿里DMR:融合Match中协同过滤思想的深度排序模型
+机器学习中的编码器-解码器结构哲学
 
-https://mp.weixin.qq.com/s/D57jP5EwIx4Y1n4mteGOjQ
+https://mp.weixin.qq.com/s/OcrT2-sAWJg-ILdHwi4t5Q
 
-深度学习推荐系统中各类流行的Embedding方法（上）
+seq2seq最新变体，稀疏序列模型
 
-https://mp.weixin.qq.com/s/N76XuNJ7yGzdP6NHk2Rs-w
+https://mp.weixin.qq.com/s/_1lr612F3x8ld9gvXj9L2A
 
-深度学习推荐系统中各类流行的Embedding方法（下）
-
-https://mp.weixin.qq.com/s/VHRV1Z6F8-3o6b-3v-5_BA
-
-深度时空网络、记忆网络与特征表达学习在CTR预估中的应用
-
-https://mp.weixin.qq.com/s/j34nJGomvR23ZJiqIFMoAQ
-
-推荐系统中稀疏特征Embedding的优化表示方法
-
-https://mp.weixin.qq.com/s/1xVPRIVwQQJfEen0RiNYvg
-
-谈谈推荐系统中的用户行为序列建模最新进展
-
-https://mp.weixin.qq.com/s/n5MYTk6V77Hazodw4pxnSQ
-
-基于多任务学习和负反馈的深度召回模型
-
-https://mp.weixin.qq.com/s/CuTEW0y7juWSBGlhltB7qw
-
-FGCNN：使用CNN进行特征生成的CTR预测模型
-
-https://zhuanlan.zhihu.com/p/143161957
-
-点积 vs. MLP：推荐模型到底用哪个更好？
-
-https://mp.weixin.qq.com/s/MSzojHCW8WPFNyF3aM1l2w
-
-腾讯&微博 GateNet: 使用门机制提升点击率预估效果
-
-https://zhuanlan.zhihu.com/p/162980539
-
-2018年kdd阿里召回系统tdm读后感
-
-https://mp.weixin.qq.com/s/Hsw_IbphFotR-Q89wKpMXQ
-
-Embedding在腾讯应用宝的推荐实践
-
-https://mp.weixin.qq.com/s/SRd7Cr16kpa_aUWDNwww_g
-
-淘宝搜索模型核心技术：用户建模篇
-
-https://mp.weixin.qq.com/s/YtQCGWNXDdUQGyF9mYKFHg
-
-莫比乌斯: 百度的下一代query-ad匹配算法
+推断速度达seq2seq模型的100倍，谷歌开源文本生成新方法LaserTagger
 
 # 行人重识别+
 

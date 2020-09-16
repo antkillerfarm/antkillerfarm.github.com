@@ -45,10 +45,6 @@ https://mp.weixin.qq.com/s/4J_pPkNoE9eSDQK4NVs0sw
 
 看一眼就知道你的BMI：基于Keras与迁移学习的人脸预测系统
 
-https://mp.weixin.qq.com/s/B7PgyhSROXnEUzfdQc4jOw
-
-基于深度树学习的Zero-shot人脸检测识别
-
 https://mp.weixin.qq.com/s/CwMGZUWaopT3HAIXmlowsA
 
 目前最强开源人脸检测算法RetinaFace
@@ -112,10 +108,6 @@ https://mp.weixin.qq.com/s/zSawuk6vn2D6oM5d1pJyWw
 https://mp.weixin.qq.com/s/RY26yEIfX4NwSlL65_6RTQ
 
 人脸检测小江湖
-
-https://mp.weixin.qq.com/s/bjOVQu0FZyTWQRlwEn8IVA
-
-基于深度树学习的Zero-shot人脸检测识别
 
 https://mp.weixin.qq.com/s/bAf5x1OOf8xqcQyMdTlWyg
 

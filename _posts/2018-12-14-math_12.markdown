@@ -9,7 +9,7 @@ category: math
 
 # PID算法（续）
 
-https://www.zhihu.com/question/23088613/answer/23942834
+https://www.zhihu.com/answer/23942834
 
 如何通俗地解释PID参数整定？
 

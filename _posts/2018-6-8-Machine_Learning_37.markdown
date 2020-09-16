@@ -7,6 +7,38 @@ category: ML
 * toc
 {:toc}
 
+# Parameter Server（续）
+
+参考：
+
+https://www.zhihu.com/question/26998075
+
+最近比较火的parameter server是什么？
+
+http://blog.csdn.net/cyh_24/article/details/50545780
+
+Parameter Server详解
+
+https://mp.weixin.qq.com/s/yuHavuGTYMH5JDC_1fnjcg
+
+阿里妈妈基于TensorFlow做了哪些深度优化？TensorFlowRS架构解析
+
+https://zhuanlan.zhihu.com/p/29968773
+
+大规模机器学习框架的四重境界
+
+https://mp.weixin.qq.com/s/2RCH2Or_ITUTGrlfYLB8mg
+
+腾讯千亿级参数分布式ML系统无量背后的秘密
+
+https://mp.weixin.qq.com/s/Na2SJkfC9LzgfbTfSCclOw
+
+如何基于Ray使用15行代码实现参数服务器
+
+https://zhuanlan.zhihu.com/p/82116922
+
+一文读懂“Parameter Server”的分布式机器学习训练原理
+
 # 时间序列分析
 
 ## 书籍和教程
@@ -20,6 +52,10 @@ http://people.duke.edu/%7Ernau/411home.htm
 回归和时间序列分析
 
 《应用时间序列分析》，王燕著。
+
+https://mp.weixin.qq.com/s/w_u6_lG-_b0t4m4YubjeRQ
+
+最新《时间序列分析》课程笔记，477页pdf
 
 ## 概述
 

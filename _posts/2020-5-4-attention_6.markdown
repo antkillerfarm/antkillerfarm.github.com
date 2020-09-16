@@ -9,6 +9,26 @@ category: Attention
 
 # BERT进阶
 
+https://mp.weixin.qq.com/s/UJlmjFHWhnlXXJoRv4zkEQ
+
+虽被BERT碾压，但还是有必要谈谈BERT时代与后时代的NLP
+
+https://mp.weixin.qq.com/s/e4dgIdwzDzcLSkdgr1yZpg
+
+LeCun力荐：Facebook推出十亿参数超大容量存储器
+
+https://mp.weixin.qq.com/s/zXXtbuSvyMOkgrWJwB83kg
+
+预训练语言模型的最新探索
+
+https://mp.weixin.qq.com/s/WzGa5XVi2Op4Lz-1uQXfxQ
+
+SpanBERT：提出基于分词的预训练模型，多项任务性能超越现有模型！
+
+https://zhuanlan.zhihu.com/p/76912493
+
+nlp中的预训练语言模型总结(单向模型、BERT系列模型、XLNet)
+
 https://mp.weixin.qq.com/s/pYSs6NhIAB6DuwNnKZhkZQ
 
 Bert改进：如何融入知识
@@ -48,10 +68,6 @@ https://mp.weixin.qq.com/s/9YuBY0wLLVQ8ZrT9fiNICA
 https://mp.weixin.qq.com/s/OXkXjPHhaMXsKw2YevV6sw
 
 邱锡鹏：从Transformer到BERT--自然语言处理中的表示学习进展
-
-https://mp.weixin.qq.com/s/6i9eQISKsWU0jawKzWg8nQ
-
-超越bert，最新预训练模型ELECTRA论文阅读笔记
 
 https://mp.weixin.qq.com/s/dV4RkxZOC9o2BxNi0GljKQ
 
@@ -396,31 +412,3 @@ HAN：基于双层注意力机制的异质图深度神经网络
 https://mp.weixin.qq.com/s/SBrLPZjx2RdBwZpPQQ5DXQ
 
 HAN：异构图注意力网络
-
-https://mp.weixin.qq.com/s/aixpv9t1PLPRWUP6PvZ0EQ
-
-用自注意力增强卷积：这是新老两代神经网络的对话
-
-https://mp.weixin.qq.com/s/i3Xd_IB7R0-QPztn-pgpng
-
-遍地开花的Attention，你真的懂吗？
-
-https://mp.weixin.qq.com/s/rrbwItXt-1EaGiqtDEGvog
-
-为节约而生：从标准Attention到稀疏Attention
-
-https://mp.weixin.qq.com/s/G4mFW8cn-ho3KGmbw5sSTw
-
-计算机视觉中注意力机制原理及其模型发展和应用
-
-https://mp.weixin.qq.com/s/MzHmvbwxFCaFjmMkjfjeSg
-
-遍地开花的Attention，你真的懂吗？
-
-https://mp.weixin.qq.com/s/7ETHeN2xV_hEwkDxrhJyNg
-
-用Attention玩转CV，一文总览自注意力语义分割进展
-
-https://mp.weixin.qq.com/s/e_LEhLf2Rh-1zkEBmqS4nA
-
-NLP这两年：15个预训练模型对比分析与剖析

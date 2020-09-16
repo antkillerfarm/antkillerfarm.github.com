@@ -137,7 +137,7 @@ http://www.csdn.net/article/2015-02-10/2823900
 
 技术揭秘12306改造
 
-https://www.zhihu.com/question/21217971/answer/17575573
+https://www.zhihu.com/answer/17575573
 
 超级计算机能不能用于12306？
 

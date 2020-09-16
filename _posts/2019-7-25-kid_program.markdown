@@ -443,3 +443,7 @@ Heartrate：一个牛逼的工具，Python执行实时可视化
 https://mp.weixin.qq.com/s/J8IHOdUevyn9YS09D8Ou-g
 
 聊聊Python发送邮件的几种方式
+
+https://mp.weixin.qq.com/s/L0FoYh1npy-3rwRQWcj71g
+
+五大自动化测试的Python框架

@@ -297,3 +297,7 @@ http://blog.csdn.net/andy205214/article/details/7390287
 利用mkfs.ubifs和ubinize两个工具制作UBI镜像
 
 从代码来查看板子的MTD分区方案，主要是搜索mtd_partition类型的使用定义。比如mini2440板子的分区方案可在mini2440_default_nand_part数组中查到。
+
+MTD(memory technology device):内存技术设备，是linux用于描述ROM，NAND，NOR等内存设备的子系统的抽象。
+
+除了MTD之外，常用的还有SPI Flash方案。

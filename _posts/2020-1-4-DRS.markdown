@@ -159,6 +159,10 @@ https://zhuanlan.zhihu.com/p/104307718
 
 CTR预估模型发展过程与关系图谱
 
+https://mp.weixin.qq.com/s/eSWJFzzNEgIyEQodrnx2-g
+
+CTR预估系列炼丹入门手册
+
 https://mp.weixin.qq.com/s/Rqz9yuSxpx_os54FrzyMqQ
 
 一文尽览推荐系统模型演变史

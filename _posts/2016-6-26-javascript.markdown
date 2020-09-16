@@ -377,10 +377,14 @@ https://mp.weixin.qq.com/s/QDjxfoY7gjcCmOeV0kq1pw
 
 web多媒体技术在视频编辑场景的应用
 
+https://mp.weixin.qq.com/s/G3NGVV9wSHMMtFtq0MB6SA
+
+快速上手WebAssembly应用开发：Emscripten使用入门
+
 ----
 
 V8开发者Vyacheslav Egorov和Mozilla Hacks之间的source-map之战了。对于同一份source-map库的JS代码，Vyacheslav所魔改出的纯JS版本，其性能一举反超了Mozilla重写的Rust版。
 
-https://www.zhihu.com/question/402807137/answer/1322391162
+https://www.zhihu.com/answer/1322391162
 
 有没有让JavaScript在JS引擎上稳定、更快运行的Style Guide?

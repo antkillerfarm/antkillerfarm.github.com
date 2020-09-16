@@ -390,7 +390,7 @@ https://mp.weixin.qq.com/s/6gX1UFSykuzw358ARUzifw
 
 张溪梦：14年数据分析经历，我总结为这三点“道、术、器”
 
-https://www.zhihu.com/question/30022694/answer/224543003
+https://www.zhihu.com/answer/224543003
 
 田渊栋：作为入行数年的专业科研工作者，你每周看几篇paper？
 

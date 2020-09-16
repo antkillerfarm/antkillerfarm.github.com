@@ -252,7 +252,7 @@ Tornado原理浅析及应用场景探讨
 
 ## 参考
 
-https://www.zhihu.com/question/19732473/answer/241673170
+https://www.zhihu.com/answer/241673170
 
 怎样理解阻塞非阻塞与同步异步的区别？
 

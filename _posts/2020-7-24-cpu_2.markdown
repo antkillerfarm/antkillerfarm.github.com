@@ -207,7 +207,7 @@ https://zhuanlan.zhihu.com/p/38847308
 
 为什么硬盘转速是5400或者7200这么奇怪的数字？7200转的硬盘一定比5400快吗？
 
-https://www.zhihu.com/question/288500826/answer/470917953
+https://www.zhihu.com/answer/470917953
 
 Windows等操作系统是如何做到复制几G文件不出错的？
 
@@ -348,3 +348,45 @@ https://mp.weixin.qq.com/s/isNd6ByZKdMjFtFL8LOVGA
 https://mp.weixin.qq.com/s/ChAfcT5xDgExiEXytTfynw
 
 关于存储技术的最强入门科普
+
+# Attention进阶++
+
+https://mp.weixin.qq.com/s/aixpv9t1PLPRWUP6PvZ0EQ
+
+用自注意力增强卷积：这是新老两代神经网络的对话
+
+https://mp.weixin.qq.com/s/i3Xd_IB7R0-QPztn-pgpng
+
+遍地开花的Attention，你真的懂吗？
+
+https://mp.weixin.qq.com/s/rrbwItXt-1EaGiqtDEGvog
+
+为节约而生：从标准Attention到稀疏Attention
+
+https://mp.weixin.qq.com/s/G4mFW8cn-ho3KGmbw5sSTw
+
+计算机视觉中注意力机制原理及其模型发展和应用
+
+https://mp.weixin.qq.com/s/MzHmvbwxFCaFjmMkjfjeSg
+
+遍地开花的Attention，你真的懂吗？
+
+https://mp.weixin.qq.com/s/7ETHeN2xV_hEwkDxrhJyNg
+
+用Attention玩转CV，一文总览自注意力语义分割进展
+
+https://mp.weixin.qq.com/s/e_LEhLf2Rh-1zkEBmqS4nA
+
+NLP这两年：15个预训练模型对比分析与剖析
+
+https://mp.weixin.qq.com/s/LAInpFPa-3R1rfv6idILnw
+
+注意力机制发展如何了，如何学习它在各类任务中的应用？
+
+https://zhuanlan.zhihu.com/p/151640509
+
+注意力机制在推荐系统中的应用
+
+https://mp.weixin.qq.com/s/-SU5cNbklI31WLmTawZJIQ
+
+自注意模型学不好？这个方法帮你解决！

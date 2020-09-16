@@ -207,7 +207,7 @@ https://mp.weixin.qq.com/s/ktiQhiIcNLJ7UUJvlyWlfg
 
 仅仅只花4天半就解开了史上最难密码，这下整个圈子都炸开了......
 
-https://www.zhihu.com/question/320728455/answer/658973076
+https://www.zhihu.com/answer/658973076
 
 为什么上古编程语言（比如COBOL）总喜欢把代码全部写成大写字母？
 
@@ -223,7 +223,7 @@ https://mp.weixin.qq.com/s/XPuJJm3k8gDl17oVmtdGtA
 
 代码回忆录：第一行Hello World，第一个弹窗广告的代码是怎么写的？
 
-https://www.zhihu.com/question/30290082/answer/840708044
+https://www.zhihu.com/answer/840708044
 
 怎样评价《数码宝贝》第一部中的泉光子郎的编程水平？
 
