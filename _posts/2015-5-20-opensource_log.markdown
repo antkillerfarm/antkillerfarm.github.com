@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  从版本库看开源项目的发展史, WebKit
+title:  从版本库看开源项目的发展史, WebKit, CMake, MSYS2
 category: technology 
 ---
 
@@ -140,3 +140,105 @@ https://www.zhihu.com/answer/1200063036
 https://zhuanlan.zhihu.com/p/96986818
 
 万字详文：深入理解浏览器原理
+
+# CMake
+
+1. 添加头文件目录
+
+`include_directories(../../../thirdparty/comm/include)`
+
+2. 添加需要链接的库文件目录
+
+`link_directories("/home/server/third/lib")`
+
+3. 查找库所在目录
+
+`find_library(RUNTIME_LIB rt /usr/lib  /usr/local/lib NO_DEFAULT_PATH)`
+
+4. 添加需要链接的库文件路径
+
+`link_libraries(“/home/server/third/lib/libcommon.a”)`
+
+5. 设置要链接的库文件的名称
+
+`target_link_libraries(myProject libcomm.so)`
+
+6. 为工程生成目标文件
+
+`add_executable(demo main.cpp)`
+
+参考：
+
+https://www.cnblogs.com/binbinjx/p/5626916.html
+
+cmake添加头文件目录，链接动态、静态库
+
+## cross compile
+
+需要用`-DCMAKE_TOOLCHAIN_FILE=XXXX`来指定toolchain file。后者的示例如下：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/other/toolchain-arm-imx8qm.cmake
+
+# MSYS2
+
+2015.11
+
+稍早的时候，我在安装pygtk的环境时，发现pygi-aio安装程序提供的GTK版本已经到了3.14。但GTK官方这时仍然没有进展，版本停留在3.6.4。于是我又打算使用pygtk提供的更新来进行编程，但pygtk只提供了.dll文件，而没有.h和.lib文件，实际上并不好用，因此只得放弃之。
+
+最近再上官网，发现其已经提供了更好的解决办法——MSYS2。MSYS2是Martell Malone维护的一个开源项目，旨在提供一个方便易安装的MSYS开发环境，其中也包括为各种开发包提供更新维护，GTK就是其中之一。（当前的版本为Gtk 3.18.3）
+
+现将安装步骤罗列如下：
+
+1.在http://www.msys2.org/，下载安装程序，并按照网页提示，更新pacman。
+
+2.使用pacman下载必要的开发包。
+
+`pacman -S autoconf autogen automake-wrapper pkg-config make gcc gdb`
+
+`pacman -Ss <name>`: 查询相关的软件包是否存在。
+
+`pacman -Syu`: 更新已安装的软件包。
+
+MSYS2提供的环境除了安装友好，便于更新之外，对bash的支持也优于之前的版本。现在已经不需要单独为Windows平台提供特殊的makefile文件了。
+
+还可在如下网址查询packages：
+
+https://github.com/Alexpux/MINGW-packages
+
+https://github.com/Alexpux/MSYS2-packages
+
+MSYS2提供了两套API：mingw32和mingw64。可用以下方法（以gcc为例）查询需要安装的package的名字：
+
+`pacman -Sl | grep gcc`
+
+与MSYS2类似的还有Cygwin、MinGW等。
+
+参见：
+
+https://www.zhihu.com/question/22137175
+
+Cygwin和MinGW的区别与联系是怎样的？
+
+# WSL
+
+Cygwin：提供了兼容POSIX接口的应用层接口，性能不佳。
+
+MinGW：直接接Win32 API，只移植了GNU工具链，功能不全。
+
+MSYS2：MinGW+Cygwin部分工具包+pacman。
+
+WSL（Windows Subsystem for Linux），刚出来的时候叫“Bash on Ubuntu on Windows”：POSIX接口直接接到NT内核，性能超过Cygwin。
+
+WSL2：虚拟机，有独立的Linux内核。和VirtualBox之类类似。
+
+https://www.zhihu.com/question/50144689
+
+win10 linux子系统和cygwin有什么不同？
+
+https://mp.weixin.qq.com/s/ZCkboBBFYFm57pLEGftpCw
+
+双系统的日子结束了：Windows和Linux将合二为一
+
+https://zhuanlan.zhihu.com/p/57774611
+
+盘点与Cygwin相似和相反的项目

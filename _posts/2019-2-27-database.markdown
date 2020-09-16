@@ -233,6 +233,14 @@ https://mp.weixin.qq.com/s/Fj4zERz9PEuNumd_SI0bEA
 
 浅谈CAP和Paxos共识算法
 
+https://mp.weixin.qq.com/s/42cStPudXRHjs61gjSIgWw
+
+一文读懂区块链与传统数据库之共识机制
+
+https://blog.csdn.net/blockchain_lemon/article/details/84801413
+
+一文读懂11个主流共识算法, 彻底搞懂PoS,PoW,dPoW,PBFT,dBFT这些究竟是什么鬼...
+
 https://zhuanlan.zhihu.com/p/113612578
 
 Chandy-Lamport算法核心解读
@@ -344,15 +352,3 @@ https://mp.weixin.qq.com/s/yQSMSLBYg4iauu8yeUfvjw
 https://mp.weixin.qq.com/s/m76PFxbcY6_-XyeU7uu4Jg
 
 数据库的最简单实现
-
-https://mp.weixin.qq.com/s/rZuGW9Fe0TA3dNEY7dh_Jg
-
-TimescaleDB比拼InfluxDB：如何选择合适的时序数据库？
-
-https://mp.weixin.qq.com/s/pZnAcjFlBM2I4Hyctd6MHw
-
-图数据库真的比关系数据库更先进吗？
-
-https://mp.weixin.qq.com/s/O3A5gVewRQ11Z8RdPcs-9w
-
-一文看懂Pinterest如何构建时间序列数据库系统Goku

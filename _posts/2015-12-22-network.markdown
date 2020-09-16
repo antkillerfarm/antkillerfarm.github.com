@@ -302,6 +302,10 @@ https://blog.csdn.net/yishizuofei/article/details/81660841
 
 多路查找树：2-3树、2-3-4树、B树、B+树、B*树、R树
 
+https://mp.weixin.qq.com/s/D9kdAPws1XXZUyd0IKUzyw
+
+理解B+树
+
 http://www.cppblog.com/mysileng/archive/2013/04/06/199159.html
 
 Skip List（跳跃表）原理详解与实现

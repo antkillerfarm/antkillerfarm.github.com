@@ -243,10 +243,6 @@ https://mp.weixin.qq.com/s/Xxi50rDBjrqG-7MIloZMDw
 
 浅谈区块链技术与阿里云的探索实践
 
-https://blog.csdn.net/blockchain_lemon/article/details/84801413
-
-一文读懂11个主流共识算法, 彻底搞懂PoS,PoW,dPoW,PBFT,dBFT这些究竟是什么鬼...
-
 https://mp.weixin.qq.com/s/cxzI5oFBAUdtV6akre678w
 
 当区块链与人工智能相遇，会有怎样火花？这篇23页《Blockchain for AI》综述论文告诉你

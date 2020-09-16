@@ -172,3 +172,7 @@ ActBERT: 自监督多模态视频文字学习
 https://mp.weixin.qq.com/s/1hK3k6Mf3uTEXrqMFr1evA
 
 Kaggle知识点：伪标签Pseudo Label
+
+https://mp.weixin.qq.com/s/qVGveKfCfNKqJoqwMbUVKg
+
+长文总结半监督学习

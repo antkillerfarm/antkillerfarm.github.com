@@ -234,3 +234,7 @@ https://mp.weixin.qq.com/s/3sYrI9kxgAYLiNT-xavRLw
 https://mp.weixin.qq.com/s/LciDtj6YmPI7WxcCQM-lIA
 
 前端性能分析工具利器
+
+https://mp.weixin.qq.com/s/c4saBdDZDehokU5gJ-9fPw
+
+JavaScript与ES的25个重要知识点
