@@ -241,6 +241,10 @@ https://zhuanlan.zhihu.com/p/179480833
 
 卡尔曼滤波器详解——从零开始(2)
 
+https://mp.weixin.qq.com/s/3K9qdH9FXnYABpJoJkFcqw
+
+使用卡尔曼滤波平滑时间序列，提高时序预测的准确率
+
 # Adaboost
 
 Adaboost是Yoav Freund和Robert Schapire于1997年提出的算法。两人后来因为该算法被授予Gödel Prize（2003）。

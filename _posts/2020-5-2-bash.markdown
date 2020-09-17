@@ -297,6 +297,12 @@ patch -R B C #B还原为A
 
 `patch -p1 <2.patch`
 
+参考：
+
+https://mp.weixin.qq.com/s/VlQnDAD4dGQpmHNil7uPuQ
+
+如何在Linux上使用xargs命令
+
 # awk&sed&grep
 
 这三个工具是文本处理中用的比较多的工具，各有各的特色，且都支持正则表达式。

@@ -212,7 +212,7 @@ http://www.doc88.com/p-7082821463697.html
 
 改进的热传导和物质扩散混合推荐算法
 
-# 目标检测进阶+++
+# 目标检测进阶++
 
 https://mp.weixin.qq.com/s/XoKdsQKyaI3LsDxF7uyKuQ
 

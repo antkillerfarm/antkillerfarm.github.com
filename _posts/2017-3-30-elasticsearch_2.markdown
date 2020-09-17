@@ -403,13 +403,3 @@ https://blog.csdn.net/edonlii/article/details/8755205
 https://mp.weixin.qq.com/s/FJX9eeRkxS5nJ4XIhRVwkg
 
 从ServerSwitch到SONiC Chassis：数据中心交换机技术的十年探索历程
-
-# GAN参考资源+
-
-https://mp.weixin.qq.com/s/cUFQ6EADa39h2eFoa_Dh0A
-
-最高76%破解成功率！GAN已经能造出“万能指纹”，你的手机还安全吗？
-
-https://mp.weixin.qq.com/s/_tABIMkWX8L5xQFmvPI7rw
-
-有效稳定对抗模型训练过程，伯克利提出变分判别器瓶颈

@@ -143,17 +143,27 @@ https://mp.weixin.qq.com/s/jglebP4Zb9rZtb2EhWiQDA
 
 BigGAN被干了！DeepMind发布LOGAN：FID提升32%，华人一作领衔
 
-# S2GAN
-
-论文：
-
-《》
-
 # SAGAN
 
 论文：
 
-《》
+《Self-Attention Generative Adversarial Networks》
+
+# S3GAN
+
+论文：
+
+《High-Fidelity Image Generation With Fewer Labels》
+
+# DAGAN
+
+论文：
+
+《Data Augmentation Generative Adversarial Networks》
+
+这是一篇用GAN来进行数据增强的论文。
+
+![](/images/img3/DAGAN.png)
 
 # FUNIT
 
