@@ -422,6 +422,18 @@ PC上搭建Objective-C（以下简称OC）开发环境，主要借助GNUstep开�
 
 # Python++
 
+https://mp.weixin.qq.com/s/weEZEr4g8pI11Gijc-St0Q
+
+DeBug Python代码全靠print函数？换用这个一天2K+Star的工具吧
+
+https://mp.weixin.qq.com/s/wr18ylCJyJOX83BhbvGXng
+
+13个Python开发者必知的Python GUI库
+
+https://mp.weixin.qq.com/s/S_mIspLOrmj8ny0VHP52ZA
+
+Python高级技巧：lazy property
+
 https://mp.weixin.qq.com/s/QWH9qhKzECX-1rqDLfZyhw
 
 如何加速Python代码？

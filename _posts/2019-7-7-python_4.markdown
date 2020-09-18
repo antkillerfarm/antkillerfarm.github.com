@@ -329,6 +329,22 @@ https://mp.weixin.qq.com/s/ZI7KDxH9z_UR2p3umBCNsA
 
 一套代码批量编辑Word和Excel，告别工具人
 
+## python执行shell脚本
+
+示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/misc/hello_cmd.py
+
+需要注意的是`shell`这个选项是有讲究的。
+
+`shell=True`:
+
+`args = ["ls -al ."]`
+
+`shell=False`:
+
+`args = ["ls","-al","."]`
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA
@@ -358,10 +374,6 @@ https://mp.weixin.qq.com/s/O5okcuVKuf339BZzhmxiew
 https://mp.weixin.qq.com/s/hIMwss4h5k10oLanCYYS1g
 
 49个Python学习资源
-
-https://mp.weixin.qq.com/s/jHnkmpnOz1LApVCLJL-8Tw
-
-如何写出优雅又地道的Python代码？
 
 https://mp.weixin.qq.com/s/5xs1ivkrUAP_Rr9P-EMc5g
 
@@ -462,15 +474,3 @@ Python制作一款简易音乐播放器
 https://mp.weixin.qq.com/s/d2_MTvfbOFZmppej5UOwUw
 
 关于使用Python析构函数的正确姿势
-
-https://mp.weixin.qq.com/s/weEZEr4g8pI11Gijc-St0Q
-
-DeBug Python代码全靠print函数？换用这个一天2K+Star的工具吧
-
-https://mp.weixin.qq.com/s/wr18ylCJyJOX83BhbvGXng
-
-13个Python开发者必知的Python GUI库
-
-https://mp.weixin.qq.com/s/S_mIspLOrmj8ny0VHP52ZA
-
-Python高级技巧：lazy property
