@@ -189,6 +189,14 @@ https://mp.weixin.qq.com/s/4lRwiR-3devARVX1rQLzEQ
 
 文档智能：通用文档预训练模型与数据集，推动NLP落地升级
 
+https://mp.weixin.qq.com/s/xuJxpJ970uoFNva-45y2eA
+
+微信OCR(1)——公众号图文识别中的文本检测
+
+https://mp.weixin.qq.com/s/KpEJYs6ANLqUbVz1CazF6Q
+
+微信OCR（2）--深度序列学习助力文字识别
+
 # AI可解释性
 
 XAI(Explainable Artificial Intelligence)
@@ -233,7 +241,59 @@ https://mp.weixin.qq.com/s/yzCTQvjeyyF2IFORzrTBVg
 
 黑盒模型实际上比逻辑回归更具可解释性
 
-# AutoDL++
+# AutoDL+
+
+https://mp.weixin.qq.com/s/smAlLm-JZn_s2utSCVk7ig
+
+归一化(Normalization)方法如何进行自动学习和配置
+
+https://mp.weixin.qq.com/s/E0ULyXGz3UEcD0cIg-XkNA
+
+优化方法可以进行自动搜索学习吗？
+
+https://mp.weixin.qq.com/s/439I6hHIfq6KpkLEwAgDrw
+
+MIT韩松团队开发“万金油”母网，嵌套10^19个子网，包下全球所有设备
+
+https://mp.weixin.qq.com/s/OL_MuzKqAaDoOU3LF3Xmow
+
+强化学习如何用于自动模型设计(NAS)与优化？
+
+https://mp.weixin.qq.com/s/Nmkcy2nBczUccwIdMJiH_A
+
+MaskConnect: 探究网络结构搜索中的Module间更好的连接
+
+https://mp.weixin.qq.com/s/of9C3l2cmzAVEt9opIgfKw
+
+损失函数也可以进行自动搜索学习吗？
+
+https://mp.weixin.qq.com/s/OX0C9h5l6xffcQt6HOe_tQ
+
+DetNAS：首个搜索物体检测Backbone的方法
+
+https://mp.weixin.qq.com/s/c7S_hV_8iRhR4ZoFxQYGYQ
+
+CVPR 2019神经网络架构搜索进展综述
+
+https://mp.weixin.qq.com/s/hWRStNp0Gu_ZO7J1Sjr6-w
+
+视频架构搜索的研究
+
+https://mp.weixin.qq.com/s/ABNPCpgyk_2EeYwnJFFehg
+
+自动优化架构，这个算法能帮工程师设计神经网络
+
+https://mp.weixin.qq.com/s/0kGJfKARKs2TuIQ4YJYbUA
+
+比手工模型快10~100倍，谷歌揭秘视频NAS三大法宝
+
+https://zhuanlan.zhihu.com/p/100570132
+
+NAS evaluation is frustratingly hard
+
+https://mp.weixin.qq.com/s/QEkOQG2dQrPG-aa8OsVSOg
+
+NASNet: Google Brain经典作，改造搜索空间，性能全面超越人工网络，继续领跑NAS领域
 
 https://mp.weixin.qq.com/s/ClqOWx1RJGzoS0akI2s93w
 

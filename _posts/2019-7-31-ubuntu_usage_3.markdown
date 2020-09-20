@@ -304,6 +304,10 @@ https://mp.weixin.qq.com/s/2QAm6F109LV2koC64xIpqA
 
 简直不要太硬了！一文带你彻底理解文件系统
 
+https://mp.weixin.qq.com/s/0jR4Y3sT8RRW7FYEOmBsXg
+
+一口气搞懂文件系统，就靠这25张图了
+
 https://mp.weixin.qq.com/s/Y_GYtL9m3zmY-5VZMbCfWg
 
 Linux中用户的简介与管理
@@ -405,15 +409,3 @@ https://mp.weixin.qq.com/s/iKfWSfzauzNjcAvXPNhq0Q
 https://mp.weixin.qq.com/s/gj6Zw8SvOdSZqRx8KP9wWw
 
 20张图揭开内存管理的迷雾，瞬间豁然开朗
-
-http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html
-
-Systemd入门教程：命令篇
-
-http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html
-
-Systemd入门教程：实战篇
-
-https://mp.weixin.qq.com/s/bPqnaMqhi_4p1mwjmvyoIw
-
-多图详解10大高性能开发核心技术

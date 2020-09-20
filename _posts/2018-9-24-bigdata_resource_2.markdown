@@ -224,7 +224,3 @@ https://blog.csdn.net/weixin_45932995/article/details/103419125
 https://mp.weixin.qq.com/s/Ue4toNlLD0-zAstVJP2ynA
 
 爱奇艺大数据实时分析平台的建设与实践
-
-https://mp.weixin.qq.com/s/mYwaGszQGod_o6f3p2QbDw
-
-深度对比Delta、Iceberg和Hudi三大开源数据湖方案

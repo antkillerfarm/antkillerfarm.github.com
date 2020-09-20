@@ -287,6 +287,20 @@ https://www.cnblogs.com/zuge/p/7397255.html
 
 DataGrip使用入门
 
+## 数据湖
+
+数仓：“结构化”地存数据。典型代表：用Excel记账目。
+
+我们平时写东西的时候不一定都是开excel：写个文档用word，拍个照片存相册里面，这些数据没法像数仓一样“结构化”：如果有个人告诉你说“你把照片都放Excel里面”，你会觉得他疯了，对吧。但是这些东西最好都放一块存起来，别丢了——在家你可能就存硬盘里面，存移动硬盘里面，或者fancy一点，存云盘里面。把数据“放一块”，先不担心怎么把它有条有理做成大Excel表格，这个就是**数据湖**。
+
+https://mp.weixin.qq.com/s/mYwaGszQGod_o6f3p2QbDw
+
+深度对比Delta、Iceberg和Hudi三大开源数据湖方案
+
+https://mp.weixin.qq.com/s/O94Q1Dxe8TnbCMv9d_hlOg
+
+Uber推出数据湖集成神器DBEvents，支持MySQL、Cassandra等
+
 ## 参考
 
 https://mp.weixin.qq.com/s/ActS6PxbtZGqPb0jOn0iFg
@@ -316,39 +330,3 @@ sysbench在美团点评中的应用
 https://mp.weixin.qq.com/s/lJfIkLQaZnN4e9DxX163SA
 
 一款可能解放DBA的分布式数据库RadonDB的体验之旅
-
-http://mp.weixin.qq.com/s/idz6b2rls97W4Iw6J-ubng
-
-美团点评SQL优化工具SQLAdvisor开源
-
-https://mp.weixin.qq.com/s/jCFjhkwQpj1_P-seQurPqQ
-
-SQL解析在美团点评中的应用
-
-https://mp.weixin.qq.com/s/Al0yvkv0FUPjEBtcxS6Fmg
-
-传统数据仓库和云数据仓库的区别
-
-https://mp.weixin.qq.com/s/GXGSDxukbIAM5W-YSX0pDg
-
-美团点评数据库高可用架构的演进与设想
-
-https://mp.weixin.qq.com/s/crluKkEdvfZlHyF_gQm1ZA
-
-漫谈推荐系统及数据库技术
-
-https://mp.weixin.qq.com/s/CwUW-Ntb4qphrqha24P-Og
-
-漫谈推荐系统及数据库技术（二）——分布式数据库技术
-
-https://mp.weixin.qq.com/s/1pXMCcO6NR1SMBzsyES-cw
-
-分布式数据库又支持关系数据模型了？
-
-https://mp.weixin.qq.com/s/yQSMSLBYg4iauu8yeUfvjw
-
-深度解读！时序数据库HiTSDB：分布式流式聚合引擎
-
-https://mp.weixin.qq.com/s/m76PFxbcY6_-XyeU7uu4Jg
-
-数据库的最简单实现

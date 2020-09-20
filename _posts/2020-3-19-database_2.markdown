@@ -11,6 +11,42 @@ category: technology
 
 ## 参考（续）
 
+http://mp.weixin.qq.com/s/idz6b2rls97W4Iw6J-ubng
+
+美团点评SQL优化工具SQLAdvisor开源
+
+https://mp.weixin.qq.com/s/jCFjhkwQpj1_P-seQurPqQ
+
+SQL解析在美团点评中的应用
+
+https://mp.weixin.qq.com/s/Al0yvkv0FUPjEBtcxS6Fmg
+
+传统数据仓库和云数据仓库的区别
+
+https://mp.weixin.qq.com/s/GXGSDxukbIAM5W-YSX0pDg
+
+美团点评数据库高可用架构的演进与设想
+
+https://mp.weixin.qq.com/s/crluKkEdvfZlHyF_gQm1ZA
+
+漫谈推荐系统及数据库技术
+
+https://mp.weixin.qq.com/s/CwUW-Ntb4qphrqha24P-Og
+
+漫谈推荐系统及数据库技术（二）——分布式数据库技术
+
+https://mp.weixin.qq.com/s/1pXMCcO6NR1SMBzsyES-cw
+
+分布式数据库又支持关系数据模型了？
+
+https://mp.weixin.qq.com/s/yQSMSLBYg4iauu8yeUfvjw
+
+深度解读！时序数据库HiTSDB：分布式流式聚合引擎
+
+https://mp.weixin.qq.com/s/m76PFxbcY6_-XyeU7uu4Jg
+
+数据库的最简单实现
+
 https://mp.weixin.qq.com/s/rZuGW9Fe0TA3dNEY7dh_Jg
 
 TimescaleDB比拼InfluxDB：如何选择合适的时序数据库？
@@ -30,10 +66,6 @@ https://mp.weixin.qq.com/s/5Qcbz6dT20Sa_OvRfbNXNw
 https://mp.weixin.qq.com/s/1zarqgOh9-3chlBsB4TsuA
 
 物联网时代数据数据库如何选型？
-
-https://mp.weixin.qq.com/s/O94Q1Dxe8TnbCMv9d_hlOg
-
-Uber推出数据湖集成神器DBEvents，支持MySQL、Cassandra等
 
 https://mp.weixin.qq.com/s/AcuFiHgRJg2OcNGtfjRxYA
 

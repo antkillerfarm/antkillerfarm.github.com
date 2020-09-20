@@ -243,6 +243,10 @@ https://mp.weixin.qq.com/s/iLNuBSwWQ13sc4XfNzPuHw
 
 RNN已老，TCN崛起！李飞飞团队提出口语语音识别新方法
 
+https://zhuanlan.zhihu.com/p/188400946
+
+时间卷积网络：时间序列的下一场革命？
+
 ## 时空序列
 
 顾名思义，时空序列问题包含了时间和空间两个方面的因素。

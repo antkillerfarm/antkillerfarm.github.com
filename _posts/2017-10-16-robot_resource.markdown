@@ -446,3 +446,7 @@ CAN总线必看经典
 https://mp.weixin.qq.com/s/K-EqcqX8X7oeNA2czT2qIA
 
 高手写的CAN总线入门总结
+
+https://mp.weixin.qq.com/s/5ZfFcbnhkpyO-CdXyw6SKw
+
+一文详解LIN总线

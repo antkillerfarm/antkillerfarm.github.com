@@ -189,6 +189,10 @@ https://mp.weixin.qq.com/s/UJ7P6nrBijidW3U2ApMGEQ
 
 Vaex：突破pandas，快速分析100GB大数据集
 
+https://mp.weixin.qq.com/s/AO6VwMklnRQFqKMMv2NwYA
+
+Pandas处理时间序列数据的20个关键知识点
+
 ## 并行Pandas
 
 https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw

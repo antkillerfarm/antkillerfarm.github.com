@@ -127,7 +127,7 @@ http://mp.weixin.qq.com/s/IWagHP0MSQFAJ50NeoyOjw
 
 基于神经网络的高性能依存句法分析器
 
-## NLP的女学霸们
+## 陈丹琦
 
 https://www.cs.princeton.edu/~danqic/
 
@@ -137,9 +137,9 @@ http://theory.stanford.edu/~yuhch123/
 
 陈丹琦的老公俞华程也是个学霸。而且从高中就和陈丹琦同校，直到博士毕业。
 
-https://homes.cs.washington.edu/~luheng/
+![](/images/img3/cdq.png)
 
-何律恒，上海交大本科（2010）+宾夕法尼亚大学硕士（2012）+华盛顿大学博士生。
+左二陈丹琦，右一俞华程。两者同为IOI2008金牌得主。
 
 ## CNN在NLP中的应用
 

@@ -175,6 +175,10 @@ https://mp.weixin.qq.com/s/iNr-Ou6iBAeccFlAC_3Wlg
 
 宇宙的10个关键瞬间
 
+https://mp.weixin.qq.com/s/P085EcjDO7XhBpx1mAmrdg
+
+20岁就得出诺奖级别的成果，却惨遭导师手撕论文、学界猛烈抨击，含冤50年后终获诺奖被认可（Subrahmanyan Chandrasekhar）
+
 ## 流浪地球
 
 https://mp.weixin.qq.com/s/O8tAEBMmZ29N1fr7BGW_UQ
