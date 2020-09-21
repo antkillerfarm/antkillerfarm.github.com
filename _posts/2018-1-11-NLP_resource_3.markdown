@@ -187,6 +187,10 @@ https://mp.weixin.qq.com/s/7BVVtILwtKuFUKLIjrsNaw
 
 端到端学习对话人工智能，附237页PPT下载
 
+https://mp.weixin.qq.com/s/Xv9c5D3sEBVHhcBcbg5SEg
+
+聊天机器人技术的研究进展
+
 ## 关系抽取
 
 https://mp.weixin.qq.com/s/Rbom_XNFcc0PrJQRvWkVfA

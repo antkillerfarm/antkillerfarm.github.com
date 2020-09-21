@@ -257,6 +257,10 @@ https://zhuanlan.zhihu.com/p/221725328
 
 推荐系统的多样性：用户视角
 
+https://mp.weixin.qq.com/s/lDKumZHHHuA1JTKxtDdN7w
+
+如何构建一个生产环境的推荐系统
+
 # 深度推荐系统+
 
 https://zhuanlan.zhihu.com/p/100019681

@@ -55,6 +55,10 @@ https://mp.weixin.qq.com/s/f9Wskw0DFwYXD8TEMvL9Tw
 
 人工智能新技术：联邦学习的前世今生
 
+https://mp.weixin.qq.com/s/bwguSX8rfGCHti0qOlyz4g
+
+Federated Learning: 架构
+
 ## 参考
 
 >龙明盛，清华本科（2008）+博士（2016），迁移学习的最早提出者之一。清华大学副教授，博导。   

@@ -353,6 +353,10 @@ https://mp.weixin.qq.com/s/lx-3T5J8R29MT5jfeuTmVg
 
 深入理解推荐系统：排序
 
+https://mp.weixin.qq.com/s/YmCv9ZPGrOtc9EmlDI1Wsg
+
+深入理解推荐系统：Fairness、Bias和Debias
+
 https://mp.weixin.qq.com/s/sY_EFq7XF1ab2_0nv19XTg
 
 KDD Cup 2020推荐系统赛道—数据分析

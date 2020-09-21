@@ -343,6 +343,10 @@ https://mp.weixin.qq.com/s/0BBvsqLFP1qRvO3TUaS8Tw
 
 10个流行的可视化面板
 
+https://mp.weixin.qq.com/s/VqHN-cIdNa8l1lKlu4AD4w
+
+24种可视化图表优缺点对比
+
 ## howmuch.net
 
 howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：

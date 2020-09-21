@@ -265,6 +265,10 @@ https://mp.weixin.qq.com/s/z06l-s3RUomxlhANz8SfUg
 
 任务式对话中的自然语言理解
 
+https://mp.weixin.qq.com/s/ybkbU8p_3jgKuCGdNWeG8w
+
+同义变换在百度搜索广告中的应用
+
 # 两弹一星+
 
 我国早期的核潜艇噪音水平非常糟糕，曾被赤裸裸地嘲讽为“海底拖拉机”，“只要一下海，远在万里之外的英国都能听到。”
