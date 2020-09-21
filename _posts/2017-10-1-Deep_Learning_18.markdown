@@ -176,3 +176,49 @@ Kaggle知识点：伪标签Pseudo Label
 https://mp.weixin.qq.com/s/qVGveKfCfNKqJoqwMbUVKg
 
 长文总结半监督学习
+
+# 数学杂谈+
+
+https://mp.weixin.qq.com/s/6XsH71CKaVikqnL6kVPqtg
+
+各种语言的Mandelbrot set示例代码
+
+https://mp.weixin.qq.com/s/gnPiCmsua0ByO5UwWqxuag
+
+史上最牛逼的文科生：学历史成为物理学家，却获得了数学界的最高荣誉，出了350部书，外号火星人！（Edward Witten）
+
+https://mp.weixin.qq.com/s/5p5ai_HKZMvbQ9Inu6ASbA
+
+史上最硬核老师：17年间，拿着菜刀把400个混混送进了哈佛耶鲁麻省！（Jaime Escalante）
+
+https://mp.weixin.qq.com/s/vLqJIaTXOkz0kYJzKguQaQ
+
+99%的数学家都算不出这道题（亲和数）
+
+https://mp.weixin.qq.com/s/ULzU9gwU-X6oSMM4mv5xhA
+
+两次入狱，数次移民，从罗马尼亚地下党到卡耐基梅隆教授—整数规划奠基者Egon Balas的彪悍人生
+
+https://mp.weixin.qq.com/s/NX0j_CgBqalBMVVdRkG59g
+
+数学界再出变态神人！竟用一个比基尼方程，暴力吊打美国数学家！（沙发问题）
+
+https://mp.weixin.qq.com/s?__biz=MjM5MDE3OTk2Ng==&mid=2657461772&idx=1&sn=fa141219528ace2a22b2f109c71bfa74
+
+麻省理工牛人解说数学体系
+
+https://mp.weixin.qq.com/s/GHIFsFleS7aGMP0ye_SCCQ
+
+我居然从一只猫身上学到了斐波那契数列
+
+https://mp.weixin.qq.com/s/y6H1YV7FUkBlqznoNbTLng
+
+太震撼了！2600年数学文明画在了一张图上
+
+https://mp.weixin.qq.com/s/JZKSzd97Og9YHPaHWNTWKQ
+
+史上最能忽悠的数学家，哲学出身竟引发数学千年危机，最终却惨遭处死（芝诺）
+
+https://mp.weixin.qq.com/s/ZRMmByhNkjcfbaOcwxQ5dg
+
+日本数学界惊现神操作！偷偷研究飞刀方程致使厕所爆炸，连美国总统特朗普都忍不住发文怒怼

@@ -289,7 +289,7 @@ https://mp.weixin.qq.com/s/g-OPU4vp66HWcpqjdD2bBg
 
 使用PyTorch从理论到实践理解变分自编码器VAE
 
-# 数学杂谈++
+# 数学杂谈+++
 
 https://mp.weixin.qq.com/s/_uu1dFzSC257vKS4mPjVfg
 

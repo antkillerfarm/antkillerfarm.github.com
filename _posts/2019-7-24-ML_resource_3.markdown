@@ -290,3 +290,7 @@ https://mp.weixin.qq.com/s/E3_UrGoN1uSmD_4NYG-YWw
 https://mp.weixin.qq.com/s/RzrQpJ8M4SoY6YXhUQNWHg
 
 你上世纪写的代码现在还work吗？挑战者：我需要一个读磁带的机器
+
+https://zhuanlan.zhihu.com/p/257089138
+
+C语言发展史的点点滴滴

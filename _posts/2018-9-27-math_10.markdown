@@ -160,6 +160,33 @@ https://mp.weixin.qq.com/s/MXHCVFW2mMw7PqMuHB_5Tw
 
 他擅长解决数学难题，却视考试成为终生噩梦
 
+## 复变积分
+
+反常积分（Improper Integral）又叫广义积分，是对普通定积分的推广，指含有无穷上限/下限，或者被积函数含有瑕点的积分，前者称为无穷限广义积分，后者称为瑕积分（Singular Integral，又称无界函数的反常积分）。
+
+如果存在正数$$\theta$$，使得任意$$\theta>\delta>0$$
+，都有函数
+在
+的左领域
+内无界或函数
+在
+的右邻域
+内无界，则称点
+为
+的一个瑕点。
+
+柯西主值积分
+
+
+
+https://www.zhihu.com/question/419790453s
+
+一道积分题
+
+https://blog.csdn.net/qq_45011547/article/details/90147363
+
+反常积分的性质与收敛判别
+
 # 平稳离散时间随机过程
 
 ## Toeplitz矩阵
@@ -234,23 +261,3 @@ $$S(\omega)=\lim_{N\to\infty}\frac{1}{N}E[\mid U_N(\omega)\mid^2]=\sum_{l=-\inft
 其中，$$S(\omega)$$就是**功率谱密度（power spectral density, PSD）**，也称为功率谱（power spectrum）。
 
 自相关函数和功率谱密度组成了傅立叶变换对，这种关系又被称为**EWK（Einstein-Wiener-Khintchine）关系**。
-
->Einstein最早提出idea，Wiener证明了一个特例，Khintchine做了扩展证明。
-
->Aleksandr Yakovlevich Khinchin，1894～1959，苏联数学家。莫斯科州立大学毕业，并留校任教，直到去世。苏联概率学派的重要人物。苏联科学院院士。概率论中，著名的Khintchine inequality就是他的成果。
-
-在频域上，我们有Nyquist频率，相应的在时域上，我们也有**Nyquist间隔**：在这个间隔之外，$$S(\omega)$$是周期性的。
-
-**离散时间随机过程的功率谱密度是非负实函数。**
-
-$$S_o(\omega)=\mid H(e^{j\omega})\mid S(\omega)\tag{4}$$
-
-其中，H为系统函数，$$S_o$$输出信号的功率谱密度。
-
-功率谱密度的Cramér表示：
-
-$$u(n)=\frac{1}{2\pi}\int_{-\pi}^{\pi}e^{j\omega n}\mathrm{d}Z(\omega)\tag{5}$$
-
-其中，$$\mathrm{d}Z(\omega)$$被称为**增量过程（increment process）**。
-
->Harald Cramér，1893～1985，瑞典数学家、统计学家。Stockholm University博士（1917）、教授、校长、瑞典高等教育系统大臣。被誉为“统计理论的巨人”。
