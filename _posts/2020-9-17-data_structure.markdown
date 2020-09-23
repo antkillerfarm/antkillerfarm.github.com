@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数据结构 & 普通CS算法
+title:  数据结构 & 普通CS算法, 设计模式
 category: resource 
 ---
 
@@ -240,6 +240,36 @@ Splay Tree（一种二叉排序树）
 https://blog.csdn.net/simpsonk/article/details/72832959
 
 史上最强图解Treap总结
+
+# 设计模式
+
+面向对象的设计模式有七大基本原则：
+
+开闭原则（Open Closed Principle，OCP）
+
+单一职责原则（Single Responsibility Principle，SRP）
+
+里氏代换原则（Liskov Substitution Principle，LSP）
+
+依赖倒转原则（Dependency Inversion Principle，DIP）
+
+接口隔离原则（Interface Segregation Principle，ISP）
+
+合成/聚合复用原则（Composite/Aggregate Reuse Principle，CARP）
+
+最少知识原则（Least Knowledge Principle，LKP）或者迪米特法则（Law of Demeter，LOD）
+
+在架构领域，有两种常见架构方法RUP和TOGAF。
+
+参考：
+
+https://mp.weixin.qq.com/s/9gDGQhzRAL3pj35VAinZbQ
+
+设计模式在外卖营销业务中的实践
+
+https://mp.weixin.qq.com/s/KYq_nEXQ-5WYdYzZvGLGGg
+
+我向面试官讲解了单例模式，他对我竖起了大拇指
 
 # GAN参考资源+
 

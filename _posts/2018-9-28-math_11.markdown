@@ -1,13 +1,31 @@
 ---
 layout: post
-title:  数学狂想曲（十一）——高阶统计, PID算法
+title:  数学狂想曲（十一）——功率谱, 高阶统计, PID算法
 category: math 
 ---
 
 * toc
 {:toc}
 
-# 功率谱（续）
+# 功率谱
+
+随机过程（设时间序列为$$u(n)$$）二阶统计：
+
+时域——**自相关函数**：
+
+$$r_N(n-k)=E[u_N(n)u_N^*(k)]\tag{1}$$
+
+其中，$$u_N^*(k)$$是$$u_N(k)$$的复共轭。
+
+频域：
+
+$$U_N(\omega)=\sum_{n=-N}^Nu_N(n)e^{-j\omega n}\tag{2}$$
+
+$$S(\omega)=\lim_{N\to\infty}\frac{1}{N}E[\mid U_N(\omega)\mid^2]=\sum_{l=-\infty}^{+\infty}r(l)e^{-j\omega l}\tag{3}$$
+
+其中，$$S(\omega)$$就是**功率谱密度（power spectral density, PSD）**，也称为功率谱（power spectrum）。
+
+自相关函数和功率谱密度组成了傅立叶变换对，这种关系又被称为**EWK（Einstein-Wiener-Khintchine）关系**。
 
 >Einstein最早提出idea，Wiener证明了一个特例，Khintchine做了扩展证明。
 
@@ -232,15 +250,3 @@ $$L(s) = K_\text{p} + K_\text{i}/s + K_\text{d} s\tag{4}$$
 从公式4可以看出，PID controller的数学原理和锁相环（Phase-locked loop）非常类似，它们实际上都是Feedback Control系统。
 
 ![](/images/article/PLL.png)
-
-参考：
-
-https://en.wikipedia.org/wiki/PID_controller
-
-《Feedback Control of Dynamic Systems》，Gene F. Franklin，J David Powell，Abbas Emami-Naeini著。
-
->注：Gene F. Franklin，1927~2012，美国控制论学家。哥伦比亚大学博士，斯坦福大学教授。
-
->J David Powell，美国航空航天学家。斯坦福大学博士和教授。
-
->Abbas Emami-Naeini，斯坦福大学博士和讲师，SC Solutions公司总监。

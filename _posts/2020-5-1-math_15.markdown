@@ -192,6 +192,12 @@ $$AD\cdot BE\cdot CF=BD\cdot CE\cdot AF$$
 >Menelaus of Alexandria，公元70～140年，古希腊数学家、天文学家。青年时期求学于Alexandria，后定居于Rome。他第一个认识到曲面上的测地线（geodesics）可以类比于平面上的直线。   
 >Menelaus' theorem现存最早的记录是Menelaus的著作《Spherics》。书中将平面版本的Menelaus' theorem作为引理引入，并将之推广到球面三角形。按照当时的写作习惯，引理一般记述的是前人的成果，因此Menelaus' theorem的发现者应该另有其人。
 
+参考：
+
+https://zhuanlan.zhihu.com/p/27355643
+
+三角术
+
 ## Ceva's Theorem
 
 ![](/images/img3/CevasTheorem.gif)
@@ -200,7 +206,15 @@ $$BD\cdot CE\cdot AF=AE\cdot BF\cdot CD$$
 
 >Giovanni Ceva，1647～1734，意大利数学家。Ceva's Theorem是Ceva于1678年提出的。
 
-阿基米德中点定理/阿基米德折弦定理
+## Archimedes' Theorem of the Broken Chord
+
+阿基米德中点定理/阿基米德折弦定理：
+
+![](/images/img3/TBC.png)
+
+AB和BC是圆的两条弦（即ABC是圆的一条折弦），BC>AB，M是弧ABC的中点，则从M向BC所作垂线之垂足D是折弦ABC的中点，即CD=AB+BD。
+
+定义：从圆周上任一点出发的两条弦，所组成的折线，我们称之为该图的一条**折弦**。
 
 # 三门问题
 
@@ -309,21 +323,3 @@ Wiener Filter主要用于**平稳状态下的线性滤波**。该滤波器在均
 https://blog.csdn.net/bluecol/article/details/46242355
 
 图像去模糊（维纳滤波）
-
-# 数学杂谈
-
-https://mp.weixin.qq.com/s/rZwqxyBmQg07Pq1ihTjNMg
-
-动图解释泰勒级数（一）
-
-https://mp.weixin.qq.com/s/yqAnIjGmXpubgSsGDx6O8w
-
-动图解释泰勒级数（二）
-
-https://zhuanlan.zhihu.com/p/36230460
-
-黑盒函数的探索
-
-http://www.matrix67.com/blog/archives/4570
-
-再谈Julia集与Mandelbrot集

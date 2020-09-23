@@ -9,6 +9,18 @@ category: math
 
 # PID算法（续）
 
+参考：
+
+https://en.wikipedia.org/wiki/PID_controller
+
+《Feedback Control of Dynamic Systems》，Gene F. Franklin，J David Powell，Abbas Emami-Naeini著。
+
+>注：Gene F. Franklin，1927~2012，美国控制论学家。哥伦比亚大学博士，斯坦福大学教授。
+
+>J David Powell，美国航空航天学家。斯坦福大学博士和教授。
+
+>Abbas Emami-Naeini，斯坦福大学博士和讲师，SC Solutions公司总监。
+
 https://www.zhihu.com/answer/23942834
 
 如何通俗地解释PID参数整定？
@@ -262,23 +274,3 @@ https://mp.weixin.qq.com/s/5PR4OUubguj0WLB85aa9Mg
 http://www.matrix67.com/blog/archives/6750
 
 趣题：两个方阵是怎样互相穿过对方的？
-
-https://mp.weixin.qq.com/s/r95iMIKMctgjko1GRn9-5A
-
-史上最贱的数学题
-
-https://mp.weixin.qq.com/s/JSnAK22gohPDCGZ_BipHqg
-
-sin1°是否为超越数？
-
-https://mp.weixin.qq.com/s/qhqCqHo9xGr_Tc-2bnS4mw
-
-用数学方程和不等式创作艺术
-
-https://mp.weixin.qq.com/s/CM7WLc7iSp877WrkH8R_7g
-
-如何用数学方法估算一个女生前男友的数量？
-
-https://mp.weixin.qq.com/s/QJQnRCrBu9j94-VhNq_4tA
-
-群论的创立：两个少年天才的接力

@@ -243,6 +243,18 @@ https://www.cnblogs.com/DswCnblog/p/6371071.html
 
 C++11 POD类型
 
+## 命令行解析
+
+https://github.com/jarro2783/cxxopts
+
+https://github.com/tanakh/cmdline
+
+https://github.com/gflags/gflags
+
+前两个是轻量级的库，只要包含header即可。gflags是Google的产品，适合比较高端的用法。
+
+此外，boost::program_options也是一个选择。
+
 # C/C++参考资源
 
 https://mp.weixin.qq.com/s/Hpn7KqYlBKz0JdryiozqyQ

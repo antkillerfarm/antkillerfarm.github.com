@@ -177,7 +177,57 @@ https://mp.weixin.qq.com/s/qVGveKfCfNKqJoqwMbUVKg
 
 长文总结半监督学习
 
+# Hilbert Transform
+
+$$g(y)=H[f(x)]=\frac{1}{\pi}$$
+
+$$f(x)=H^{-1}[g(y)]=-\frac{1}{\pi}$$
+
+https://www.sohu.com/a/223899744_100011708
+
+希尔伯特变换（Hilbert Transform）简介及其物理意义
+
+https://www.cnblogs.com/hdu-zsk/p/4799470.html
+
+Hilbert-Huang Transform（希尔伯特-黄变换）
+
+https://mp.weixin.qq.com/s/avLWHXj2JkjXOomCipj8kA
+
+使用希尔伯特-黄变换（HHT）进行时间序列分析
+
 # 数学杂谈+
+
+https://www.sohu.com/a/223262966_115479
+
+史上最贱的数学题
+
+https://www.zhihu.com/question/290982731
+
+sin1°是否为超越数？
+
+https://blog.csdn.net/FnqTyr45/article/details/80248927
+
+如何用数学方法估算一个女生前男友的数量？
+
+https://zhuanlan.zhihu.com/p/157126167
+
+群论的创立：两个少年天才的接力
+
+https://mp.weixin.qq.com/s/rZwqxyBmQg07Pq1ihTjNMg
+
+动图解释泰勒级数（一）
+
+https://mp.weixin.qq.com/s/yqAnIjGmXpubgSsGDx6O8w
+
+动图解释泰勒级数（二）
+
+https://zhuanlan.zhihu.com/p/36230460
+
+黑盒函数的探索
+
+http://www.matrix67.com/blog/archives/4570
+
+再谈Julia集与Mandelbrot集
 
 https://mp.weixin.qq.com/s/6XsH71CKaVikqnL6kVPqtg
 

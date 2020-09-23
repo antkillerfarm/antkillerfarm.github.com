@@ -91,7 +91,7 @@ Nagios是一款开源的免费网络监视工具，能有效监控Windows、Linu
 
 https://www.nagios.org/
 
-# Ganglia
+## Ganglia
 
 Ganglia是伯克利开发的一个集群监控软件。可以监视和显示集群中的节点的各种状态信息，比如如：cpu 、mem、硬盘利用率， I/O负载、网络流量情况等，同时可以将历史数据以曲线方式通过php页面呈现。
 
@@ -137,29 +137,19 @@ Apache JMeter是Apache组织开发的基于Java的压力测试工具。用于对
 
 http://jmeter.apache.org/
 
-## boilerpipe
+## H5ai
 
-各个网站的HTML版面样式多种多样，如何从中提取正文，是一个很有挑战性的课题。
-
-传统的html解析或者正则式，虽能完成任务，但需要给每个网站单独提供一个模板，通用性不佳，而且一旦网站改版，相应的解析模板也需要修改，这导致后期的维护成本也很高。
-
-boilerpipe是一个用于提取HTML正文的库。它采用机器学习的思想，通过提取DOM树的特征，学习得到正文的内容。
+H5ai是一款功能强大php文件目录列表程序，由德国开发者Lars Jung主导开发，它提供多种文件目录列表呈现方式。
 
 官网：
 
-https://github.com/kohlschutter/boilerpipe
+https://larsjung.de/h5ai/
 
 参考：
 
-http://baojie.org/blog/2014/06/23/python-text-extraction/
+https://www.tok9.com/archives/374/
 
-总结Python正文提取的工具包
-
-# 如何在HTTPS里调用HTTP资源
-
-浏览器默认是不允许在HTTPS里面引用HTTP资源的，一般都会弹出提示框，用户确认后才会继续加载，用户体验非常差。
-
-对于同时支持HTTPS和HTTP的资源，引用的时候要把引用资源的URL里的协议头去掉，例如：//www.example.com/scirpt.js，这样相当于相对路径，即浏览器会自动根据当前是HTTPS还是HTTP来给资源URL补上协议头的，可以达到无缝切换。
+H5ai完整安装及使用教程
 
 # Android研究
 

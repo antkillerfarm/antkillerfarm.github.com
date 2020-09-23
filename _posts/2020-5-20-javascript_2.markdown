@@ -95,6 +95,12 @@ Step3还添加了fadeOutLeft动画，为了在两种动画之间切换，引入�
 
 比如D3的绘图代码，必须出现在需要绘图的div之后。否则d3.select之类的操作选择不到任何对象。
 
+### 如何在HTTPS里调用HTTP资源
+
+浏览器默认是不允许在HTTPS里面引用HTTP资源的，一般都会弹出提示框，用户确认后才会继续加载，用户体验非常差。
+
+对于同时支持HTTPS和HTTP的资源，引用的时候要把引用资源的URL里的协议头去掉，例如：//www.example.com/scirpt.js，这样相当于相对路径，即浏览器会自动根据当前是HTTPS还是HTTP来给资源URL补上协议头的，可以达到无缝切换。
+
 ## Web Animation API
 
 教程：

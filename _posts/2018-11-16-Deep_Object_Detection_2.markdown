@@ -155,6 +155,12 @@ CNN训练的时候，本来就是对bounding box的物体进行识别分类训�
 
 VGG、AlexNet都是常见的CNN base。
 
+![](/images/img3/backbone.jpg)
+
+https://zhuanlan.zhihu.com/p/93451942
+
+Backbone与Detection head
+
 ## 评价标准
 
 目标检测一般采用mAP（mean Average Precision）作为评价标准。AP的含义参见《机器学习（二十二）》。

@@ -23,6 +23,24 @@ http://www.cnblogs.com/codemind/p/smart_spider_parser.html
 
 爬虫数据采集技术趋势－智能化解析
 
+# boilerpipe
+
+各个网站的HTML版面样式多种多样，如何从中提取正文，是一个很有挑战性的课题。
+
+传统的html解析或者正则式，虽能完成任务，但需要给每个网站单独提供一个模板，通用性不佳，而且一旦网站改版，相应的解析模板也需要修改，这导致后期的维护成本也很高。
+
+boilerpipe是一个用于提取HTML正文的库。它采用机器学习的思想，通过提取DOM树的特征，学习得到正文的内容。
+
+官网：
+
+https://github.com/kohlschutter/boilerpipe
+
+参考：
+
+http://baojie.org/blog/2014/06/23/python-text-extraction/
+
+总结Python正文提取的工具包
+
 ## 参考
 
 https://mp.weixin.qq.com/s/X9NPFFTHTk62V21o63ceOA
@@ -378,33 +396,3 @@ https://mp.weixin.qq.com/s/2Jo1dGu7_Lu3yC5Xwe-IMg
 https://mp.weixin.qq.com/s/D_1nn0702Z1y7rKOzegs5g
 
 Wi-Fi简史
-
-# 设计模式
-
-面向对象的设计模式有七大基本原则：
-
-开闭原则（Open Closed Principle，OCP）
-
-单一职责原则（Single Responsibility Principle，SRP）
-
-里氏代换原则（Liskov Substitution Principle，LSP）
-
-依赖倒转原则（Dependency Inversion Principle，DIP）
-
-接口隔离原则（Interface Segregation Principle，ISP）
-
-合成/聚合复用原则（Composite/Aggregate Reuse Principle，CARP）
-
-最少知识原则（Least Knowledge Principle，LKP）或者迪米特法则（Law of Demeter，LOD）
-
-在架构领域，有两种常见架构方法RUP和TOGAF。
-
-参考：
-
-https://mp.weixin.qq.com/s/9gDGQhzRAL3pj35VAinZbQ
-
-设计模式在外卖营销业务中的实践
-
-https://mp.weixin.qq.com/s/KYq_nEXQ-5WYdYzZvGLGGg
-
-我向面试官讲解了单例模式，他对我竖起了大拇指
