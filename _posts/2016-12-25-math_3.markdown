@@ -7,7 +7,71 @@ category: math
 * toc
 {:toc}
 
-# 概率分布（1）（续）
+# 概率分布（1）
+
+## 伽马函数（续）
+
+如果做一个变换$$x=\beta t$$，就得到Gamma分布的更一般的形式：
+
+$$Gamma(t|\alpha, \beta) = \frac{\beta^\alpha t^{\alpha-1}e^{-\beta t}}{\Gamma(\alpha)}$$
+
+其中$$\alpha$$称为shape parameter，主要决定了分布曲线的形状; 而$$\beta$$称为rate parameter或者inverse scale parameter($$1/\beta$$称为scale parameter)，主要决定曲线有多陡。
+
+参考：
+
+http://blog.csdn.net/u010945683/article/details/48950063
+
+贝塔、伽马分布
+
+## 排列组合
+
+排列组合是高中数学的内容，这里仅列出公式，以备参考。
+
+$$P^m_n=\frac{n!}{(n-m)!}$$
+
+$$C^m_n=\frac{P^m_n}{m!}=\frac{n!}{m!(n-m)!}$$
+
+$$C^m_n$$有时也被记作$$\binom{n}{m}$$，注意这两种表示法的上下标的顺序。
+
+## 伯努利试验
+
+伯努利试验(Bernoulli experiment)是在同样的条件下重复地、**相互独立**地进行的一种随机试验。其特点是该随机试验只有两种可能结果：**发生**或者**不发生**。然后我们假设该项试验独立重复地进行了n次，那么我们就称这一系列重复独立的随机试验为n重伯努利试验，或称为伯努利概型。
+
+n重伯努利试验导出了两个重要的分布。
+
+### 二项分布
+
+n重伯努利试验中，事件A发生K次的概率是：
+
+$$\Pr(X = k) = \binom n k p^k(1-p)^{n-k}$$
+
+其中，p为单次试验中，事件A发生的概率。
+
+这种分布，被称为二项分布（Binomial Distribution）。特别的，当n=1时，被称为伯努利分布。
+
+### 几何分布
+
+几何分布（Geometric distribution）有两个定义：
+
+1.在n重伯努利试验中，试验k次才得到第一次成功的概率：
+
+$$\Pr(X = k) = (1-p)^{k-1}\,p\,$$
+
+1.在n重伯努利试验中，第一次成功之前，失败k次的概率：
+
+$$\Pr(Y=k) = (1 - p)^k\,p\,$$
+
+显然$$Y=X-1$$。
+
+## 二项分布的极限
+
+二项分布实际上有两个极限分布。
+
+如上所述，二项分布有两个参数n和p。
+
+如果p为定值，$$n\to\infty$$，则极限分布为正态分布。正态分布的性质参见[《图像处理理论（二）》](/graphics/2016/06/30/graphics_2.html#Gauss)。
+
+如果$$p\to 0,n\to\infty$$，则极限分布为泊松分布（Poisson distribution）。
 
 ## 泊松分布
 
@@ -218,40 +282,3 @@ Z_1 & = \sqrt{-2\ln U_1} sin(2\pi U_2)
 https://mp.weixin.qq.com/s?__biz=MzI1MTIzMzI2MA==&mid=2650561098&idx=1&sn=675375265279cce7fdb1ecd94fd7a549
 
 生成特定分布随机数的方法
-
-### numpy实战
-
-从上面的描述可以看出，统计模拟一般包括两步：
-
-1.生成均匀分布的随机数（Random generator）。例如：`numpy.random.rand`或`tf.random.uniform`。
-
-2.通过采样（Draw samples）将分布变为特定分布。例如：`numpy.random.multinomial`或`tf.random.categorical`。
-
-### Mersenne Twister
-
-LCG是最古老，也是最知名的伪随机序列生成器算法（Pseudorandom number generator, PRNG）。然而它也有一些缺点：
-
-1.如果用于选择n维空间中的点，那么这些点至多会位于$$(n! \cdot m)^{1/n}$$超平面（Marsaglia's Theorem）。
-
-2.当m为2的幂时，低阶比特周期较短。
-
-因此，在Monte Carlo模拟或者加密算法领域，通常要使用更高质量的PRNG。
-
-Mersenne Twister算法是1997年由Makoto Matsumoto(松本 眞)和Takuji Nishimura(西村 拓士)提出的算法。这种算法由于和梅森素数（Mersenne prime）有关，故名。
-
-该算法最常见的实现基于梅森素数$$2^{19937}-1$$，因此又被称为MT19937。原始的MT19937可以生成32位的随机数，它还有64位的版本：MT19937-64。
-
-MT算法的实现也很多了，参见原作者的官网：
-
-http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html
-
-----
-
-除了MT算法之外，Philox算法也是比较常用的，且后者更适合并行，速度也更快。
-
-Philox原作者官网：
-
-http://www.thesalmons.org/john/random123/
-
-Philox算法的实现一般以philox_4x32_10的形式命名，它表明算法一次能生成4个32位的无符号数，10表示运算迭代的次数。
-

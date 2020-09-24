@@ -7,7 +7,9 @@ category: math
 * toc
 {:toc}
 
-# 欧拉公式（续）
+# 欧拉公式
+
+## 参考（续）
 
 https://mp.weixin.qq.com/s/vdxfzuGEMoiwGARYYzXbKg
 
@@ -41,6 +43,25 @@ $$\hat{f}(\xi) = \int_{-\infty}^{+\infty} f(x)\ e^{- 2\pi i x \xi}\mathrm{d}x$$
 
 ![](/images/article/fourier_2.jpg)
 
+周期为T的函数可展开为：
+
+$$f(x)=a_0+\sum_{n=1}^{\infty}\left(a_n\cos(\frac{2\pi n}{T}x)+b_n\sin(\frac{2\pi n}{T}x)\right)\tag{1}$$
+
+公式1被称为函数的**傅立叶展开式**。这里是傅立叶展开式的三角形式，后面还有复指数形式。
+
+
+
+将欧拉公式的两个变种：
+
+$$cos(\theta)=\frac{e^{i\theta}+e^{-i\theta}}{2}, sin(\theta)=\frac{e^{i\theta}-e^{-i\theta}}{2i}=-i\cdot \frac{e^{i\theta}-e^{-i\theta}}{2}$$
+
+代入公式1：
+
+$$\begin{align}
+f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty}{[a_{n}\frac{e^{in\omega x}+e^{-in\omega x}}{2}-ib_{n}\frac{e^{in\omega x}-e^{-in\omega x}}{2}]}\\
+=\frac{a_{0}}{2}+\sum_{n=1}^{\infty}{[\frac{a_{n}-ib_{n}}{2}e^{in\omega x}+\frac{a_{n}+ib_{n}}{2}e^{-in\omega x}]} \\
+\end{align}$$
+
 欧拉公式：
 
 ![](/images/article/euler.jpg)
@@ -53,17 +74,25 @@ $$\hat{f}(\xi) = \int_{-\infty}^{+\infty} f(x)\ e^{- 2\pi i x \xi}\mathrm{d}x$$
 
 参考：
 
+https://www.zhihu.com/question/21665935
+
+傅里叶级数和傅里叶变换是什么关系？
+
 https://zhuanlan.zhihu.com/p/19763358
 
 傅立叶分析之掐死教程
 
-https://mp.weixin.qq.com/s/fFN54auRn1O3EZpPeOwIhQ
+https://zhuanlan.zhihu.com/p/41455378
 
-傅立叶变换就是这么简单，你学会了吗? 
+傅立叶级数的推导
 
-https://mp.weixin.qq.com/s/kWRhRQQEGSNQxCzfGJkGYg
+https://zhuanlan.zhihu.com/p/41875010
 
-如何直观形象、生动有趣地介绍傅立叶变换？
+傅立叶变换的推导
+
+https://zhuanlan.zhihu.com/p/75521342
+
+离散傅里叶变换（DFT）
 
 https://mp.weixin.qq.com/s/MLe_MtQE27rZTncaQeU4cg
 
@@ -84,6 +113,14 @@ https://mp.weixin.qq.com/s/OEo0aboqxQ42ZfMFACXQPw
 https://mp.weixin.qq.com/s/57WKK0xEBti9BjUD1xVlRQ
 
 手把手教你编写傅立叶动画
+
+https://mp.weixin.qq.com/s/gYpT_cLcxy6xJ5nww-Obqw
+
+一文读懂傅立叶变换处理图像的原理
+
+https://mp.weixin.qq.com/s/vzXejSzH9rzvhfYJEYSyrQ
+
+傅立叶变换有什么用
 
 # DFT
 
@@ -186,14 +223,6 @@ https://mp.weixin.qq.com/s/cR3k5-looApwD01ZzgixSw
 
 关于Fourier和Laplace
 
-https://mp.weixin.qq.com/s/gYpT_cLcxy6xJ5nww-Obqw
-
-一文读懂傅立叶变换处理图像的原理
-
-https://mp.weixin.qq.com/s/vzXejSzH9rzvhfYJEYSyrQ
-
-傅立叶变换有什么用
-
 # 随机变量的特征函数
 
 特征函数（Characteristic function）是描述随机变量概率分布的重要工具，其定义如下。
@@ -256,64 +285,3 @@ $$\int_0^{\infty} \frac{x^{\alpha-1}e^{-x}}{\Gamma(\alpha)}dx = 1$$
 
 $$Gamma(x|\alpha) = \frac{x^{\alpha-1}e^{-x}}{\Gamma(\alpha)}$$
 
-如果做一个变换$$x=\beta t$$，就得到Gamma分布的更一般的形式：
-
-$$Gamma(t|\alpha, \beta) = \frac{\beta^\alpha t^{\alpha-1}e^{-\beta t}}{\Gamma(\alpha)}$$
-
-其中$$\alpha$$称为shape parameter，主要决定了分布曲线的形状; 而$$\beta$$称为rate parameter或者inverse scale parameter($$1/\beta$$称为scale parameter)，主要决定曲线有多陡。
-
-参考：
-
-http://blog.csdn.net/u010945683/article/details/48950063
-
-贝塔、伽马分布
-
-## 排列组合
-
-排列组合是高中数学的内容，这里仅列出公式，以备参考。
-
-$$P^m_n=\frac{n!}{(n-m)!}$$
-
-$$C^m_n=\frac{P^m_n}{m!}=\frac{n!}{m!(n-m)!}$$
-
-$$C^m_n$$有时也被记作$$\binom{n}{m}$$，注意这两种表示法的上下标的顺序。
-
-## 伯努利试验
-
-伯努利试验(Bernoulli experiment)是在同样的条件下重复地、**相互独立**地进行的一种随机试验。其特点是该随机试验只有两种可能结果：**发生**或者**不发生**。然后我们假设该项试验独立重复地进行了n次，那么我们就称这一系列重复独立的随机试验为n重伯努利试验，或称为伯努利概型。
-
-n重伯努利试验导出了两个重要的分布。
-
-### 二项分布
-
-n重伯努利试验中，事件A发生K次的概率是：
-
-$$\Pr(X = k) = \binom n k p^k(1-p)^{n-k}$$
-
-其中，p为单次试验中，事件A发生的概率。
-
-这种分布，被称为二项分布（Binomial Distribution）。特别的，当n=1时，被称为伯努利分布。
-
-### 几何分布
-
-几何分布（Geometric distribution）有两个定义：
-
-1.在n重伯努利试验中，试验k次才得到第一次成功的概率：
-
-$$\Pr(X = k) = (1-p)^{k-1}\,p\,$$
-
-1.在n重伯努利试验中，第一次成功之前，失败k次的概率：
-
-$$\Pr(Y=k) = (1 - p)^k\,p\,$$
-
-显然$$Y=X-1$$。
-
-## 二项分布的极限
-
-二项分布实际上有两个极限分布。
-
-如上所述，二项分布有两个参数n和p。
-
-如果p为定值，$$n\to\infty$$，则极限分布为正态分布。正态分布的性质参见[《图像处理理论（二）》](/graphics/2016/06/30/graphics_2.html#Gauss)。
-
-如果$$p\to 0,n\to\infty$$，则极限分布为泊松分布（Poisson distribution）。

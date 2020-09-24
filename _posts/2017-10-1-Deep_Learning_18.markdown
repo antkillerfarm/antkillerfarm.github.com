@@ -177,11 +177,53 @@ https://mp.weixin.qq.com/s/qVGveKfCfNKqJoqwMbUVKg
 
 长文总结半监督学习
 
+# 20世纪10大算法
+
+2000年，IEEE评选出20世纪10大算法。名单如下：
+
+1.[Metropolis Algorithm for Monte Carlo](http://en.wikipedia.org/wiki/Metropolis_Algorithm)
+
+2.[Simplex Method for Linear Programming](http://en.wikipedia.org/wiki/Simplex_Method)
+
+3.[Krylov Subspace Iteration Methods](http://en.wikipedia.org/wiki/Krylov_subspace_methods)
+
+4.[The Decompositional Approach to Matrix Computations](http://en.wikipedia.org/wiki/Matrix_(mathematics)#Decomposition)
+
+5.[The Fortran Optimizing Compiler](http://en.wikipedia.org/wiki/Fortran#History)
+
+6.[QR Algorithm for Computing Eigenvalues](http://en.wikipedia.org/wiki/QR_algorithm)
+
+7.[Quicksort Algorithm for Sorting](http://en.wikipedia.org/wiki/Quicksort)
+
+8.[Fast Fourier Transform](http://en.wikipedia.org/wiki/Fast_Fourier_Transform)
+
+9.[Integer Relation Detection](http://en.wikipedia.org/wiki/Integer_relation_algorithm)
+
+10.[Fast Multipole Method](http://en.wikipedia.org/wiki/Fast_Multipole_Method)
+
+详细内容参见：
+
+http://www.uta.edu/faculty/rcli/TopTen/topten.pdf
+
+中文版本：
+
+http://blog.csdn.net/v_JULY_v/article/details/6127953
+
+细数二十世纪最伟大的10大算法
+
+类似的，还有奥地利符号计算研究所（Research Institute for Symbolic Computation，简称RISC）的Christoph Koutschan博士，针对计算机科学家所做的调查，选出的最重要的32个算法：
+
+https://mp.weixin.qq.com/s/AFTaowkCz1pfFzaMDen-RA
+
+计算机科学中最重要的32个算法
+
 # Hilbert Transform
 
-$$g(y)=H[f(x)]=\frac{1}{\pi}$$
+$$g(y)=H[f(x)]=\frac{1}{\pi}\int_{-\infty}^{+\infty}\frac{f(x)\mathrm{d}x}{x-y}$$
 
-$$f(x)=H^{-1}[g(y)]=-\frac{1}{\pi}$$
+$$f(x)=H^{-1}[g(y)]=-\frac{1}{\pi}\int_{-\infty}^{+\infty}\frac{g(y)\mathrm{d}y}{y-x}$$
+
+这里的积分是Cauchy Principal Value积分。
 
 https://www.sohu.com/a/223899744_100011708
 

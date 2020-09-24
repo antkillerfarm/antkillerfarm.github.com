@@ -163,6 +163,22 @@ spyder是一个Python的IDE，提供了和Matlab类似的数据可视化界面�
 
 `sudo apt install spyder`
 
+## GeoGebra
+
+GeoGebra是一个结合“几何”、“代数”与“微积分”的动态数学软件，由佛罗里达州亚特兰大学的数学教授Markus Hohenwarter所设计。
+
+官网：
+
+https://www.geogebra.org/
+
+## Maxima
+
+微积分的数值解很多软件都能计算，但解析解就不行了。Maxima就是这样一款Computer Algebra System的软件。
+
+官网：
+
+http://maxima.sourceforge.net/
+
 # 数据描述语言
 
 ## JSON

@@ -67,14 +67,6 @@ $$W=UI=\frac{U^2}{R}=I^2R$$
 
 >注：Marc-Antoine Parseval des Chênes，1755～1836，法国数学家。曾5次参选法国科学院院士，但都落选了。
 
-## Maxima
-
-微积分的数值解很多软件都能计算，但解析解就不行了。Maxima就是这样一款Computer Algebra System的软件。
-
-官网：
-
-http://maxima.sourceforge.net/
-
 # 欧拉公式
 
 由于欧拉大神的贡献很多，数学上以其命名的公式也有很多，而且知名度都不低。日常使用时，如果不以领域做区分，人们根本就不知道谈论的是哪个欧拉公式。
@@ -252,6 +244,18 @@ $$e^z=e^x(\cos y + i \sin y)$$
 《古今数学思想》
 
 《不可思议的e》
+
+## Other
+
+正文的考古工作到此结束，下面写一些相关的冷知识。
+
+$$e^i=\lim_{n\to\infty} \left( 1 + \frac{i}{n} \right)^n$$
+
+如果$$e^{i\theta}$$表示幅角为$$\theta$$的单位向量，那么$$e^{i\omega t}$$就表示角速度为$$\omega$$的旋转单位向量。
+
+![](/images/img3/e.png)
+
+## 参考
 
 https://mp.weixin.qq.com/s/kwfA7CqBz1myyUR3NBKp1g
 
