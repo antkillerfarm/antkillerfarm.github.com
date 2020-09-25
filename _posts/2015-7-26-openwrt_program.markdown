@@ -263,9 +263,9 @@ kmod-button-hotplug          Button Hotplug driver
 
 这两个内核模块不在内核主线中，需要在`make menuconfig`中单独勾选。
 
-# Openwrt对autotools、Cmake的支持
+# Openwrt对autotools、CMake的支持
 
-autotools和Cmake是目前应用最广的两套编译配置系统。Openwrt对它们支持的代码在/include/autotools.mk和/include/cmake.mk中。
+autotools和CMake是目前应用最广的两套编译配置系统。Openwrt对它们支持的代码在/include/autotools.mk和/include/cmake.mk中。
 
 # libubox
 

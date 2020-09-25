@@ -52,7 +52,7 @@ http://cocos2d-x.org/programmersguide/
 
 compile相关的内容在tools/cocos2d-console/plugins/project_compile/project_compile.py中。
 
-从py脚本可以看出在Linux平台编译代码主要用到了Cmake。
+从py脚本可以看出在Linux平台编译代码主要用到了CMake。
 
 # 调试
 
@@ -78,13 +78,13 @@ cocos命令有个选项`-m`可以用于选择是Release还是Debug。
 
 将就着使用了CCLOG一阵子之后，终于遇到了一个问题，必须要用gdb才能解决。但是gdb找不到符号，因此无法断点。
 
-3.Cmake
+3.CMake
 
 硬着头皮，打开CMakeLists.txt。
 
 很快发现了CMAKE_CXX_FLAGS_DEBUG中已经定义了COCOS2D_DEBUG=1。那么问题很显然是CMAKE_CXX_FLAGS_DEBUG没有起作用所致。胡乱修改相关宏的定义之后，发现程序实际上确实用的是CMAKE_CXX_FLAGS。
 
-那么问题就转化为Cmake是如何选择CMAKE_CXX_FLAGS_DEBUG和CMAKE_CXX_FLAGS的呢？
+那么问题就转化为CMake是如何选择CMAKE_CXX_FLAGS_DEBUG和CMAKE_CXX_FLAGS的呢？
 
 网上查了一下，发现可以用
 

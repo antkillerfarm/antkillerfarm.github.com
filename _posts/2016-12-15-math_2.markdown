@@ -45,22 +45,62 @@ $$\hat{f}(\xi) = \int_{-\infty}^{+\infty} f(x)\ e^{- 2\pi i x \xi}\mathrm{d}x$$
 
 周期为T的函数可展开为：
 
-$$f(x)=a_0+\sum_{n=1}^{\infty}\left(a_n\cos(\frac{2\pi n}{T}x)+b_n\sin(\frac{2\pi n}{T}x)\right)\tag{1}$$
+$$f(t)=a_0+\sum_{n=1}^{\infty}\left(a_n\cos(\frac{2\pi n}{T}t)+b_n\sin(\frac{2\pi n}{T}t)\right)\tag{1}$$
 
-公式1被称为函数的**傅立叶展开式**。这里是傅立叶展开式的三角形式，后面还有复指数形式。
+公式1被称为函数的**傅立叶展开式（Fourier expansion）**。这里是傅立叶展开式的**三角形式**，后面还有复指数形式。
 
+令$$\omega=\frac{2\pi}{T}$$，则公式1可改写为：
 
+$$f(t)=a_0+\sum_{n=1}^{\infty}\left(a_n\cos(n\omega t)+b_n\sin(n\omega t)\right)\tag{2}$$
+
+这里的$$\omega$$被称作**角速度（Angular Velocity）**。而这里的$$a_n,b_n$$则被称为**傅立叶级数（Fourier series）**。
+
+对公式2两边进行积分：
+
+$$\begin{align}
+\int_{-\pi}^{\pi}f(t)\mathrm{d}t&=\int_{-\pi}^{\pi}A_{0}\mathrm{d}t+\int_{-\pi}^{\pi}\sum_{n=1}^{\infty}{[a_{n}cos(n\omega t)+b_{n}sin(n\omega t)]}\mathrm{d}t\\
+&=\int_{-\pi}^{\pi}A_{0}\mathrm{d}t+0=2\pi A_{0}
+\end{align}$$
+
+$$A_{0}=\frac{1}{2\pi}\int_{-\pi}^{\pi}f(t)\mathrm{d}t$$
+
+类似的：
+
+$$\begin{align}
+a_{n}=\frac{2}{T}\int_{t_{0}}^{t_{0}+T}f(t)cos(n\omega t)\mathrm{d}t\\
+b_{n}=\frac{2}{T}\int_{t_{0}}^{t_{0}+T}f(t)sin(n\omega t)\mathrm{d}t\\
+\end{align}$$
 
 将欧拉公式的两个变种：
 
 $$cos(\theta)=\frac{e^{i\theta}+e^{-i\theta}}{2}, sin(\theta)=\frac{e^{i\theta}-e^{-i\theta}}{2i}=-i\cdot \frac{e^{i\theta}-e^{-i\theta}}{2}$$
 
-代入公式1：
+代入公式2：
 
 $$\begin{align}
-f(x)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty}{[a_{n}\frac{e^{in\omega x}+e^{-in\omega x}}{2}-ib_{n}\frac{e^{in\omega x}-e^{-in\omega x}}{2}]}\\
-=\frac{a_{0}}{2}+\sum_{n=1}^{\infty}{[\frac{a_{n}-ib_{n}}{2}e^{in\omega x}+\frac{a_{n}+ib_{n}}{2}e^{-in\omega x}]} \\
+f(t)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty}{[a_{n}\frac{e^{in\omega t}+e^{-in\omega t}}{2}-ib_{n}\frac{e^{in\omega t}-e^{-in\omega t}}{2}]}\\
+=\frac{a_{0}}{2}+\sum_{n=1}^{\infty}{[\frac{a_{n}-ib_{n}}{2}e^{in\omega t}+\frac{a_{n}+ib_{n}}{2}e^{-in\omega t}]}\\
 \end{align}$$
+
+将$$a_n,b_n$$代入：
+
+$$f(t)=\frac{1}{T}\sum_{n=-\infty}^{+\infty}\int_{t_{0}}^{t_{0}+T}f(t)e^{-inwt}\mathrm{d}t\cdot e^{in\omega t}\tag{3}$$
+
+上式为Fourier expansion的**复指数形式**。
+
+----
+
+傅立叶的时代，电学尚不成熟，因此傅立叶级数的落脚点实际上是求解热传导方程，这也就是求解偏微分方程的分离变量法。
+
+https://zhuanlan.zhihu.com/p/131385010
+
+偏微分方程-热传导方程及连续性方程的导出
+
+https://zhuanlan.zhihu.com/p/138032373
+
+偏微分方程基础——分离变量法
+
+----
 
 欧拉公式：
 
@@ -185,7 +225,7 @@ $$F(s) =\int_0^{+\infty} e^{-st} f(t)\mathrm{d}t,s = \sigma + i \omega \tag{1}$$
 
 此外，傅立叶变换和拉普拉斯变换之所以在计算上比较方便，还在于**指数函数正好是线性微分方程的特征函数**。
 
-由于一阶微分方程$$\frac{dy}{dt}=\lambda y$$的解是$$e^{\lambda t}$$。由线性代数中的特征向量可类比得到，$$e^{\lambda t}$$是线性微分方程的特征函数，从而可以将线性微分方程转换为线性方程。
+由于一阶微分方程$$\frac{\mathrm{d}y}{\mathrm{d}t}=\lambda y$$的解是$$e^{\lambda t}$$。由线性代数中的特征向量可类比得到，$$e^{\lambda t}$$是线性微分方程的特征函数，从而可以将线性微分方程转换为线性方程。
 
 公式1的另一个值得注意的地方是：它的积分范围是$$[0, +\infty)$$。这样的变换一般被称为Unilateral Laplace transform或者One-sided Laplace transform，也就是通常意义下的Laplace transform。
 

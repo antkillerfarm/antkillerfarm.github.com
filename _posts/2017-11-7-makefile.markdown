@@ -61,7 +61,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gtk_browser/aut
 
 4.运行automake之前，需要先用autoheader生成config.h文件。
 
-从整个流程来说，autotools相比Cmake无疑复杂的多了。但实际使用中，由于这几个步骤都是流程化的，简化起来也比较容易。因此新版本提供了autoreconf命令，用来一站式生成所需的编译配置文件。其示例如下：
+从整个流程来说，autotools相比CMake无疑复杂的多了。但实际使用中，由于这几个步骤都是流程化的，简化起来也比较容易。因此新版本提供了autoreconf命令，用来一站式生成所需的编译配置文件。其示例如下：
 
 `autoreconf -fi`
 
@@ -97,9 +97,9 @@ http://www.mike.org.cn/articles/description-configure-pkg-config-pkg_config_path
 
 ## CMake和pkg-config的协同工作
 
-Cmake虽然主要用于Qt项目，但用于GTK项目，实际上也没有什么问题。
+CMake虽然主要用于Qt项目，但用于GTK项目，实际上也没有什么问题。
 
-Cmake使用的pkg_check_modules宏，和上面的PKG_CHECK_MODULES宏，从原理来说，是类似的。这里不再赘述。
+CMake使用的pkg_check_modules宏，和上面的PKG_CHECK_MODULES宏，从原理来说，是类似的。这里不再赘述。
 
 参考文档：
 
@@ -249,7 +249,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/scons
 
 从个人角度，我认为一个好的构建工具需要具备以下特点：
 
-- 常见任务书写简单。换句话说就是预先内置好了大量规则。make在这一点上做的不太好，手工任务太多，以致出现了Autotools和Cmake这样的辅助工具。
+- 常见任务书写简单。换句话说就是预先内置好了大量规则。make在这一点上做的不太好，手工任务太多，以致出现了Autotools和CMake这样的辅助工具。
 
 - 特殊任务扩展简单。make系列工具的DSL都不是完备的语言，这一点是比不了python的。
 
@@ -292,3 +292,11 @@ WAF是一个python写的构建工具。
 官网：
 
 https://waf.io
+
+## vcpkg
+
+这是MS提供的一个C/C++包管理工具，一般配合CMake使用。支持平台包括Windows/Linux/MacOS。
+
+官网：
+
+https://github.com/Microsoft/vcpkg

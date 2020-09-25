@@ -47,7 +47,7 @@ honghaier的blog，近乎是手把手操作的流水账，对于关键的理论�
 
 # 编译环境
 
-可供选择的方案无非两种，或者采用Qt的Qmake，或者采用cocos2d-x的Cmake。
+可供选择的方案无非两种，或者采用Qt的Qmake，或者采用cocos2d-x的CMake。
 
 以下是稍早写的一篇心得。
 
