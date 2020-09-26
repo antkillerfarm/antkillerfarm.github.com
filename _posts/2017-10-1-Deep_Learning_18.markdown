@@ -177,140 +177,20 @@ https://mp.weixin.qq.com/s/qVGveKfCfNKqJoqwMbUVKg
 
 长文总结半监督学习
 
-# 20世纪10大算法
-
-2000年，IEEE评选出20世纪10大算法。名单如下：
-
-1.[Metropolis Algorithm for Monte Carlo](http://en.wikipedia.org/wiki/Metropolis_Algorithm)
-
-2.[Simplex Method for Linear Programming](http://en.wikipedia.org/wiki/Simplex_Method)
-
-3.[Krylov Subspace Iteration Methods](http://en.wikipedia.org/wiki/Krylov_subspace_methods)
-
-4.[The Decompositional Approach to Matrix Computations](http://en.wikipedia.org/wiki/Matrix_(mathematics)#Decomposition)
-
-5.[The Fortran Optimizing Compiler](http://en.wikipedia.org/wiki/Fortran#History)
-
-6.[QR Algorithm for Computing Eigenvalues](http://en.wikipedia.org/wiki/QR_algorithm)
-
-7.[Quicksort Algorithm for Sorting](http://en.wikipedia.org/wiki/Quicksort)
-
-8.[Fast Fourier Transform](http://en.wikipedia.org/wiki/Fast_Fourier_Transform)
-
-9.[Integer Relation Detection](http://en.wikipedia.org/wiki/Integer_relation_algorithm)
-
-10.[Fast Multipole Method](http://en.wikipedia.org/wiki/Fast_Multipole_Method)
-
-详细内容参见：
-
-http://www.uta.edu/faculty/rcli/TopTen/topten.pdf
-
-中文版本：
-
-http://blog.csdn.net/v_JULY_v/article/details/6127953
-
-细数二十世纪最伟大的10大算法
-
-类似的，还有奥地利符号计算研究所（Research Institute for Symbolic Computation，简称RISC）的Christoph Koutschan博士，针对计算机科学家所做的调查，选出的最重要的32个算法：
-
-https://mp.weixin.qq.com/s/AFTaowkCz1pfFzaMDen-RA
-
-计算机科学中最重要的32个算法
-
-# Hilbert Transform
-
-$$g(y)=H[f(x)]=\frac{1}{\pi}\int_{-\infty}^{+\infty}\frac{f(x)\mathrm{d}x}{x-y}$$
-
-$$f(x)=H^{-1}[g(y)]=-\frac{1}{\pi}\int_{-\infty}^{+\infty}\frac{g(y)\mathrm{d}y}{y-x}$$
-
-这里的积分是Cauchy Principal Value积分。
-
-https://www.sohu.com/a/223899744_100011708
-
-希尔伯特变换（Hilbert Transform）简介及其物理意义
-
-https://www.cnblogs.com/hdu-zsk/p/4799470.html
-
-Hilbert-Huang Transform（希尔伯特-黄变换）
-
-https://mp.weixin.qq.com/s/avLWHXj2JkjXOomCipj8kA
-
-使用希尔伯特-黄变换（HHT）进行时间序列分析
-
 # 数学杂谈+
 
-https://www.sohu.com/a/223262966_115479
+https://mp.weixin.qq.com/s/FCysnxxWBFiGS027qCxHTw
 
-史上最贱的数学题
+世界上最伟大的十大公式
 
-https://www.zhihu.com/question/290982731
+https://www.zhihu.com/question/20866833
 
-sin1°是否为超越数？
+为什么正多面体只有5种？
 
-https://blog.csdn.net/FnqTyr45/article/details/80248927
+https://mp.weixin.qq.com/s/qfbfzToypKTxh7CxJ0ifHw
 
-如何用数学方法估算一个女生前男友的数量？
+正十二面体的一个最基本谜题被破解了
 
-https://zhuanlan.zhihu.com/p/157126167
+https://mp.weixin.qq.com/s/uptfQb8ELfpb5P4ySvofpg
 
-群论的创立：两个少年天才的接力
-
-https://mp.weixin.qq.com/s/rZwqxyBmQg07Pq1ihTjNMg
-
-动图解释泰勒级数（一）
-
-https://mp.weixin.qq.com/s/yqAnIjGmXpubgSsGDx6O8w
-
-动图解释泰勒级数（二）
-
-https://zhuanlan.zhihu.com/p/36230460
-
-黑盒函数的探索
-
-http://www.matrix67.com/blog/archives/4570
-
-再谈Julia集与Mandelbrot集
-
-https://mp.weixin.qq.com/s/6XsH71CKaVikqnL6kVPqtg
-
-各种语言的Mandelbrot set示例代码
-
-https://mp.weixin.qq.com/s/gnPiCmsua0ByO5UwWqxuag
-
-史上最牛逼的文科生：学历史成为物理学家，却获得了数学界的最高荣誉，出了350部书，外号火星人！（Edward Witten）
-
-https://mp.weixin.qq.com/s/5p5ai_HKZMvbQ9Inu6ASbA
-
-史上最硬核老师：17年间，拿着菜刀把400个混混送进了哈佛耶鲁麻省！（Jaime Escalante）
-
-https://mp.weixin.qq.com/s/vLqJIaTXOkz0kYJzKguQaQ
-
-99%的数学家都算不出这道题（亲和数）
-
-https://mp.weixin.qq.com/s/ULzU9gwU-X6oSMM4mv5xhA
-
-两次入狱，数次移民，从罗马尼亚地下党到卡耐基梅隆教授—整数规划奠基者Egon Balas的彪悍人生
-
-https://mp.weixin.qq.com/s/NX0j_CgBqalBMVVdRkG59g
-
-数学界再出变态神人！竟用一个比基尼方程，暴力吊打美国数学家！（沙发问题）
-
-https://mp.weixin.qq.com/s?__biz=MjM5MDE3OTk2Ng==&mid=2657461772&idx=1&sn=fa141219528ace2a22b2f109c71bfa74
-
-麻省理工牛人解说数学体系
-
-https://mp.weixin.qq.com/s/GHIFsFleS7aGMP0ye_SCCQ
-
-我居然从一只猫身上学到了斐波那契数列
-
-https://mp.weixin.qq.com/s/y6H1YV7FUkBlqznoNbTLng
-
-太震撼了！2600年数学文明画在了一张图上
-
-https://mp.weixin.qq.com/s/JZKSzd97Og9YHPaHWNTWKQ
-
-史上最能忽悠的数学家，哲学出身竟引发数学千年危机，最终却惨遭处死（芝诺）
-
-https://mp.weixin.qq.com/s/ZRMmByhNkjcfbaOcwxQ5dg
-
-日本数学界惊现神操作！偷偷研究飞刀方程致使厕所爆炸，连美国总统特朗普都忍不住发文怒怼
+一个被我们“嫌弃”了23年的数学天才，累死才知道他的价值（陆家羲）

@@ -1,15 +1,63 @@
 ---
 layout: post
-title:  数学狂想曲（三）——统计杂谈
+title:  数学狂想曲（三）——概率分布（1）
 category: math 
 ---
 
 * toc
 {:toc}
 
+# 随机变量的特征函数（续）
+
+根据上述定义，$$\varphi_X(t)$$是$$F_X(x)$$的傅立叶变换。因此$$\varphi_X(t)$$和$$F_X(x)$$包含相同的信息，且是一一对应的。特别的，若X的PDF $$f_X(x)$$存在，则可通过傅立叶逆变换得到：
+
+$$f_X(x)=\frac{1}{2\pi}\int_{-\infty}^{+\infty}e^{-itx}\varphi_X(t)\mathrm{d}t$$
+
+特征函数具有连续可微等良好的分析性质，因此对于那些矩母函数（Moment Generating Function，MGF）不存在的分布（如柯西分布和对数正态分布）很有用处。
+
+特征函数本质上不是概率论的内容，而属于函数论的内容。不用傅立叶变换，用拉普拉斯变换、希尔伯特变换等等，也可能产生类似效果，当然具体结论会颇有不同。
+
 # 概率分布（1）
 
-## 伽马函数（续）
+进入正题之前，先介绍两个函数：贝塔函数和伽马函数。
+
+## 贝塔函数
+
+$$B(\alpha,\beta)=\int_{0}^{1}x^{\alpha-1}(1-x)^{\beta-1}dx$$
+
+## 伽马函数
+
+$$\Gamma(\theta)=\int_{0}^{\infty}x^{\theta-1}e^{-x}dx$$
+
+http://cos.name/2013/01/lda-math-gamma-function/
+
+神奇的Gamma函数
+
+这篇文章对伽马函数的历史由来，讲的比较透彻。
+
+简单来说，伽马函数就是阶乘算子在复数域的扩展。
+
+伽马函数有以下一些性质：
+
+$$\Gamma(x+1)=x\Gamma(x)$$
+
+$$\Gamma(n)=(n-1)!,n为整数$$
+
+$${\Gamma(1-x)\Gamma(x)}=\frac{\pi}{\sin(\pi x)},x\in{(0,1)}$$
+
+$$\Gamma({1 \over 2})=\sqrt{\pi}$$
+
+$$B(m,n) = \frac{\Gamma(m)\Gamma(n)}{\Gamma(m+n)}$$
+
+上式中的B函数，也就是现在的Beta函数。
+
+对Gamma函数的定义做一个变形，就可以得到如下式子：
+
+$$\int_0^{\infty} \frac{x^{\alpha-1}e^{-x}}{\Gamma(\alpha)}dx = 1$$
+
+取积分中的函数作为概率密度，就得到一个形式最简单的Gamma分布的密度函数：
+
+$$Gamma(x|\alpha) = \frac{x^{\alpha-1}e^{-x}}{\Gamma(\alpha)}$$
 
 如果做一个变换$$x=\beta t$$，就得到Gamma分布的更一般的形式：
 
@@ -217,68 +265,3 @@ Dirichlet Distribution, Dirichlet Process and Dirichlet Process Mixture
 https://zhuanlan.zhihu.com/p/59550457
 
 Categorical Distribution
-
-## 各种概率分布的关系
-
-![](/images/article/distribution.jpg)
-
-参考：
-
-http://www.math.wm.edu/~leemis/2008amstat.pdf
-
-Univariate Distribution Relationships
-
-http://www.wzchen.com/s/probability_cheatsheet.pdf
-
-Probability Cheatsheet v2.0
-
-https://mp.weixin.qq.com/s/svNVryWhiGxWFBz0s0dX5g
-
-概率论简史
-
-https://zhuanlan.zhihu.com/p/158801020
-
-深度学习那些需要掌握的概率分布
-
-https://mp.weixin.qq.com/s/UAXSGp0Lx_-HvIMEH3ttLg
-
-tweedie回归在信贷业务中的应用
-
-# 统计杂谈
-
-## 统计模拟
-
-统计模拟是数理统计中非常有用的工具之一， 它是利用计算机产生某概率模型的随机数，再通过这些随机数来模拟真实模型。
-
-这方面的书籍首推Sheldon M.Ross所著的《Simulation》。
-
->注：Sheldon M.Ross，斯坦福大学统计学博士（1968），UCB教授（1976～2004），南加州大学Industrial and Systems Engineering系主任。
-
-以下仅记录一些简单的结论。
-
-### 均匀分布
-
-通过线性同余生成器（linear congruential generator, LCG）可以生成伪随机数，且该随机数满足均匀分布。
-
-$$x_n=ax_{n-1}\quad \mathrm{modulo} \quad m$$
-
-这里的a和m通常都是大质数。
-
-### 正态分布
-
-**Box-Muller变换**：如果随机变量$$U_1,U_2$$独立且$$U_1, U_2 \sim Uniform(0,1)$$，
-
-$$\begin{align} 
-Z_0 & = \sqrt{-2\ln U_1} cos(2\pi U_2) \\ 
-Z_1 & = \sqrt{-2\ln U_1} sin(2\pi U_2) 
-\end{align}$$
-
-则$$Z_0,Z_1$$独立且服从标准正态分布。
-
->注：George Edward Pelham Box，1919~2013，英国统计学家。伦敦学院大学博士，先后供职于普林斯顿大学和威斯康辛-麦迪逊大学。Ronald Aylmer Fisher的女婿。英国皇家学会会员，美国统计协会主席，数理统计学会（这是一个国际组织）主席。
-
->Mervin Edgar Muller，俄亥俄州立大学教授。
-
-https://mp.weixin.qq.com/s?__biz=MzI1MTIzMzI2MA==&mid=2650561098&idx=1&sn=675375265279cce7fdb1ecd94fd7a549
-
-生成特定分布随机数的方法

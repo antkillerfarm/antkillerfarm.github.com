@@ -1,13 +1,47 @@
 ---
 layout: post
-title:  数学狂想曲（五）——玻尔兹曼分布, 概率分布（2）
+title:  数学狂想曲（五）——双曲函数和悬链线, 玻尔兹曼分布
 category: math 
 ---
 
 * toc
 {:toc}
 
-# 双曲函数和悬链线（续）
+# 矩阵&向量的积（续）
+
+## Hadamard product
+
+又叫Schur product或entrywise product。
+
+>注：Jacques Salomon Hadamard，1865～1963，法国数学家。巴黎高等师范学校博士，波尔多大学教授。他曾于1936年访华，执教于清华大学。中国偏微分方程研究事业的主要创始人之一——吴新谋教授，就是他的学生。
+
+$$\left(\begin{array}{ccc}
+    \mathrm{a}_{11} & \mathrm{a}_{12} & \mathrm{a}_{13}\\
+    \mathrm{a}_{21} & \mathrm{a}_{22} & \mathrm{a}_{23}\\
+    \mathrm{a}_{31} & \mathrm{a}_{32} & \mathrm{a}_{33}
+  \end{array}\right) \circ \left(\begin{array}{ccc}
+    \mathrm{b}_{11} & \mathrm{b}_{12} & \mathrm{b}_{13}\\
+    \mathrm{b}_{21} & \mathrm{b}_{22} & \mathrm{b}_{23}\\
+    \mathrm{b}_{31} & \mathrm{b}_{32} & \mathrm{b}_{33}
+  \end{array}\right) = \left(\begin{array}{ccc}
+    \mathrm{a}_{11}\, \mathrm{b}_{11} & \mathrm{a}_{12}\, \mathrm{b}_{12} & \mathrm{a}_{13}\, \mathrm{b}_{13}\\
+    \mathrm{a}_{21}\, \mathrm{b}_{21} & \mathrm{a}_{22}\, \mathrm{b}_{22} & \mathrm{a}_{23}\, \mathrm{b}_{23}\\
+    \mathrm{a}_{31}\, \mathrm{b}_{31} & \mathrm{a}_{32}\, \mathrm{b}_{32} & \mathrm{a}_{33}\, \mathrm{b}_{33}
+  \end{array}\right)$$
+
+参考：
+
+https://mp.weixin.qq.com/s/K_aNhzaxmchynDWTE1QFCQ
+
+给你一些点与线，只用动画就能看懂张量乘法，还能证明迹循环定理
+
+# 双曲函数和悬链线
+
+悬链线 (Catenary) 是一种曲线，因其与两端固定的绳子在均匀引力作用下下垂相似而得名。适当选择坐标系后，悬链线的方程是一个双曲余弦函数。
+
+悬链线背后的故事和推导，百度百科已经比较详细了，不再赘述。参见：
+
+http://baike.baidu.com/view/45656.htm
 
 然而对于实际工程中的悬索结构，由于悬索自身的重量较其所提拉的跨度结构要轻得多，在力学简单计算中可以忽略，结构受力模式成为在水平长度范围内的均布荷载。这种荷载模式与拱结构相同，因此可以推导出在该荷载模式下的悬垂线为一抛物线，线型与拱结构相同，但内力为拉力。
 
@@ -210,59 +244,3 @@ https://mp.weixin.qq.com/s/a3TlUFwSm9aIptfhy6MnGA
 https://mp.weixin.qq.com/s/_DxdlaJahSscXe4O2fw1uA
 
 伊辛模型百年小史：最经典的复杂系统模型，却险些被科学界遗忘
-
-https://zhuanlan.zhihu.com/p/39241895
-
-深度学习与物理，有效场论，重整化群
-
-https://mp.weixin.qq.com/s/7NrB0UtmELXD3UNO3C6jGA
-
-我就不信看完这篇你还搞不懂信息熵
-
-https://mp.weixin.qq.com/s/_s8kxlzcL5Nt2ILUIfAuNQ
-
-不要把所有的鸡蛋放在一个篮子里--谈谈最大熵模型
-
-# 概率分布（2）
-
-上一篇《概率分布（1）》写的意犹未尽，这里继续写。本篇主要关注$$\chi^2$$分布、t分布和F分布，也就是统计学的三大祖师爷各自的看家本领。
-
-## $$\chi^2$$分布
-
-设$$X_1,\dots,X_n$$是来自总体$$N(0,1)$$的样本，则称统计量
-
-$$\chi^2=X_1^2+\dots+X_n^2\tag{1}$$
-
-服从自由度为n的$$\chi^2$$分布（chi-squared distribution），记作$$\chi^2\sim \chi^2(n)$$。其PDF为：
-
-$$f(x;\,n) =
-\begin{cases}
-  \dfrac{x^{(n/2-1)} e^{-x/2}}{2^{n/2} \Gamma\left(\frac n 2 \right)},  & x > 0; \\ 0, & \text{otherwise}.
-\end{cases}$$
-
-## t分布
-
-设$$X\sim N(0,1),Y\sim\chi^2(n)$$，并且X、Y独立，则称随机变量
-
-$$t=\frac{X}{\sqrt{Y/n}}\tag{2}$$
-
-服从自由度为n的t分布（t distribution），记作$$t\sim t(n)$$。其PDF为：
-
-$$f(t) = \frac{\Gamma(\frac{n+1}{2})} {\sqrt{n\pi}\,\Gamma(\frac{n}{2})} \left(1+\frac{t^2}{n} \right)^{\!-\frac{n+1}{2}}$$
-
-## F分布
-
-设$$U\sim \chi^2(d_1),V\sim\chi^2(d_2)$$，并且U、V独立，则称随机变量
-
-$$F=\frac{U/d_1}{V/d_2}\tag{3}$$
-
-服从自由度为$$(d_1,d_2)$$的F分布（F distribution），记作$$F\sim F(d_1,d_2)$$。其PDF为：
-
-$$\begin{align}
-f(x; d_1,d_2) &= \frac{\sqrt{\frac{(d_1\,x)^{d_1}\,\,d_2^{d_2}} {(d_1\,x+d_2)^{d_1+d_2}}}} {x\,\mathrm{B}\!\left(\frac{d_1}{2},\frac{d_2}{2}\right)} \\
-&=\frac{1}{\mathrm{B}\!\left(\frac{d_1}{2},\frac{d_2}{2}\right)} \left(\frac{d_1}{d_2}\right)^{\frac{d_1}{2}} x^{\frac{d_1}{2} - 1} \left(1+\frac{d_1}{d_2}\,x\right)^{-\frac{d_1+d_2}{2}}
-\end{align}$$
-
-显然：
-
-$$\frac{1}{F}\sim F(d_2,d_1)$$

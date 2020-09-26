@@ -1,15 +1,69 @@
 ---
 layout: post
-title:  数学狂想曲（六）——自相关&互相关&卷积
+title:  数学狂想曲（六）——概率分布（2）
 category: math 
 ---
 
 * toc
 {:toc}
 
+# 玻尔兹曼分布（续）
+
+https://zhuanlan.zhihu.com/p/39241895
+
+深度学习与物理，有效场论，重整化群
+
+https://mp.weixin.qq.com/s/7NrB0UtmELXD3UNO3C6jGA
+
+我就不信看完这篇你还搞不懂信息熵
+
+https://mp.weixin.qq.com/s/_s8kxlzcL5Nt2ILUIfAuNQ
+
+不要把所有的鸡蛋放在一个篮子里--谈谈最大熵模型
+
 # 概率分布（2）
 
-## F分布（续）
+上一篇《概率分布（1）》写的意犹未尽，这里继续写。本篇主要关注$$\chi^2$$分布、t分布和F分布，也就是统计学的三大祖师爷各自的看家本领。
+
+## $$\chi^2$$分布
+
+设$$X_1,\dots,X_n$$是来自总体$$N(0,1)$$的样本，则称统计量
+
+$$\chi^2=X_1^2+\dots+X_n^2\tag{1}$$
+
+服从自由度为n的$$\chi^2$$分布（chi-squared distribution），记作$$\chi^2\sim \chi^2(n)$$。其PDF为：
+
+$$f(x;\,n) =
+\begin{cases}
+  \dfrac{x^{(n/2-1)} e^{-x/2}}{2^{n/2} \Gamma\left(\frac n 2 \right)},  & x > 0; \\ 0, & \text{otherwise}.
+\end{cases}$$
+
+## t分布
+
+设$$X\sim N(0,1),Y\sim\chi^2(n)$$，并且X、Y独立，则称随机变量
+
+$$t=\frac{X}{\sqrt{Y/n}}\tag{2}$$
+
+服从自由度为n的t分布（t distribution），记作$$t\sim t(n)$$。其PDF为：
+
+$$f(t) = \frac{\Gamma(\frac{n+1}{2})} {\sqrt{n\pi}\,\Gamma(\frac{n}{2})} \left(1+\frac{t^2}{n} \right)^{\!-\frac{n+1}{2}}$$
+
+## F分布
+
+设$$U\sim \chi^2(d_1),V\sim\chi^2(d_2)$$，并且U、V独立，则称随机变量
+
+$$F=\frac{U/d_1}{V/d_2}\tag{3}$$
+
+服从自由度为$$(d_1,d_2)$$的F分布（F distribution），记作$$F\sim F(d_1,d_2)$$。其PDF为：
+
+$$\begin{align}
+f(x; d_1,d_2) &= \frac{\sqrt{\frac{(d_1\,x)^{d_1}\,\,d_2^{d_2}} {(d_1\,x+d_2)^{d_1+d_2}}}} {x\,\mathrm{B}\!\left(\frac{d_1}{2},\frac{d_2}{2}\right)} \\
+&=\frac{1}{\mathrm{B}\!\left(\frac{d_1}{2},\frac{d_2}{2}\right)} \left(\frac{d_1}{d_2}\right)^{\frac{d_1}{2}} x^{\frac{d_1}{2} - 1} \left(1+\frac{d_1}{d_2}\,x\right)^{-\frac{d_1+d_2}{2}}
+\end{align}$$
+
+显然：
+
+$$\frac{1}{F}\sim F(d_2,d_1)$$
 
 参考：
 
@@ -168,44 +222,3 @@ Kolmogorov–Smirnov test用于对样本是否属于某种分布进行假设检�
 上图的红线是某随机变量假设分布的CDF，而蓝线是该随机变量样本的累积分布曲线，即ECDF（Empirical Distribution Function）。
 
 显然若假设正确的话，两条曲线应该是基本重合的。反之，若两条曲线差异较大，则该假设检验不成立。这就是KS检验的基本原理。
-
-KS检验的统计量定义如下：
-
-$$D_n= \sup_x |F_n(x)-F(x)|$$
-
-其中$$\sup$$表示最小上界，
-
-$$F_n(x)={1 \over n}\sum_{i=1}^n I_{[-\infty,x]}(X_i)$$
-
-$$I_{[-\infty,x]}(X_i)=\begin{cases}
-1, & X_i \le x \\
-0, & \text{otherwise} \\
-\end{cases}$$
-
-KS检验更深入的解释，涉及到布朗运动和维纳过程，这里不再赘述。
-
-# 自相关&互相关&卷积
-
-![](/images/article/Comparison_convolution_correlation.svg)
-
-1.**自相关（Autocorrelation）**。这个最简单，就是平移之后，自己和自己比。显然当平移为0的时候，自相关值最大，因此这类操作通常用于信号的检测。信号接收端模拟发射端的信号序列，对实际接收到的信号进行相关操作，只有当两者的序列接近重合时，才会检测到信号峰值。
-
-2.**互相关（Cross-correlation）**。检测两个序列的相似度，显然两者越相似，互相关值越大。这在统计学方面用的比较多。
-
-在信号处理领域，Cross-correlation常用于信号的调制和解调。下图就是常见的正交调制解调（orthogonal modulation and demodulation）的原理图：
-
-![](/images/article/iq_modulator.png)
-
-![](/images/article/iq_demodulator.png)
-
-3.**卷积（Convolution）**。卷积主要用于线性时不变系统的信号处理。相比于互相关操作，卷积有个旋转180度的操作，这里解释一下它的物理意义。
-
-例如，当一个拳击选手遭到对方连续两次击打身体的同一部位时，第二次被击打时他感觉到的疼痛是第一次被击打所遗留的疼痛与第二次被击打的疼痛之和。即：
-
-$$f(2)=f_1(2)+f_2(1)$$
-
-其中，$$f_i(t)$$中，i表示第i次击打，t表示击打发生之后经过的时间。可以看出i和t的顺序正好是相反的，这也就是Convolution这个名词的本意。这里假设g为常数。
-
-4.这三个操作在离散域最终都可以变为求和操作，也就是向量内积运算。我们一般使用$$a\cdot b$$或者$$\langle a,b\rangle$$表示向量的内积运算。即：
-
-$$\langle a,b\rangle=a_0b_0+a_1b_1+\dots+a_nb_n$$

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（二）——傅立叶变换, DFT, 拉普拉斯变换, 随机变量的特征函数, 概率分布（1）
+title:  数学狂想曲（二）——傅立叶变换, DFT, 拉普拉斯变换, 随机变量的特征函数
 category: math 
 ---
 
@@ -25,10 +25,6 @@ https://mp.weixin.qq.com/s/G7eZMTQbQZBjJf4HfDk21A
 
 # 傅立叶变换
 
-$$\hat{f}(\xi) = \int_{-\infty}^{+\infty} f(x)\ e^{- 2\pi i x \xi}\mathrm{d}x$$
-
-傅立叶变换是最基本的频域变换，这里不再赘述，只是提供一些有意思的图示。
-
 正弦波的叠加（傅立叶级数）：
 
 ![](/images/article/Fourier_series_sawtooth_wave_circles_animation.gif)
@@ -38,10 +34,6 @@ $$\hat{f}(\xi) = \int_{-\infty}^{+\infty} f(x)\ e^{- 2\pi i x \xi}\mathrm{d}x$$
 时域、频域、相位：
 
 ![](/images/article/fourier.jpg)
-
-傅立叶级数与傅立叶变换：
-
-![](/images/article/fourier_2.jpg)
 
 周期为T的函数可展开为：
 
@@ -84,9 +76,19 @@ f(t)=\frac{a_{0}}{2}+\sum_{n=1}^{\infty}{[a_{n}\frac{e^{in\omega t}+e^{-in\omega
 
 将$$a_n,b_n$$代入：
 
-$$f(t)=\frac{1}{T}\sum_{n=-\infty}^{+\infty}\int_{t_{0}}^{t_{0}+T}f(t)e^{-inwt}\mathrm{d}t\cdot e^{in\omega t}\tag{3}$$
+$$f(t)=\frac{1}{T}\sum_{n=-\infty}^{+\infty}\int_{t_{0}}^{t_{0}+T}f(t)e^{-in\omega t}\mathrm{d}t\cdot e^{in\omega t}$$
 
 上式为Fourier expansion的**复指数形式**。
+
+令
+
+$$F_n=\frac{1}{T}\int_{t_{0}}^{t_{0}+T}f(t)e^{-in\omega t}\mathrm{d}t$$
+
+则：
+
+$$f(t)=\sum_{n=-\infty}^{+\infty} F_n e^{in\omega t}\tag{3}$$
+
+这里的$$F_n$$被称为**复振幅**。
 
 ----
 
@@ -101,6 +103,32 @@ https://zhuanlan.zhihu.com/p/138032373
 偏微分方程基础——分离变量法
 
 ----
+
+傅立叶级数与傅立叶变换：
+
+![](/images/article/fourier_2.jpg)
+
+傅立叶级数针对的是周期函数。对于**非周期函数**，也就是$$T\to \infty$$的函数，需要有一些特殊的处理。
+
+从公式3可以看出如果$$T\to \infty$$，则$$F_n\to 0$$，但$$F_nT=\frac{2\pi F_n}{\omega}$$可望趋于有限值。我们定义：
+
+$$F(i\omega)=\lim_{T\to \infty}\frac{2\pi F_n}{\omega}$$
+
+因为：
+
+$$f(t)=\sum_{n=-\infty}^{+\infty} F_n e^{in\omega t}=\sum_{n=-\infty}^{+\infty}\frac{F_n}{\omega}e^{in\omega t}\cdot \omega$$
+
+又因为：
+
+$$\text{if }T\to \infty, \text{then }\frac{F_n}{\omega}\to \frac{F(i\omega)}{2\pi}, \omega\to \mathrm{d}\omega, n\omega \to \omega$$
+
+所以：
+
+$$F(i\omega)=\int_{-\infty}^{+\infty}f(t)e^{-i\omega t}\mathrm{d}t\tag{4}$$
+
+$$f(t)=\lim_{T\to \infty}\sum_{n=-\infty}^{+\infty}\frac{F_n}{\omega}e^{in\omega t}\cdot \omega=\frac{1}{2\pi}\int_{-\infty}^{+\infty}F(i\omega)e^{i\omega t}\mathrm{d}\omega\tag{5}$$
+
+公式4为**傅立叶变换**，公式5为**傅立叶逆变换（inverse Fourier transform）**。
 
 欧拉公式：
 
@@ -209,7 +237,7 @@ $$F(s) =\int_0^{+\infty} e^{-st} f(t)\mathrm{d}t,s = \sigma + i \omega \tag{1}$$
 
 为了使不满足这一条件的信号，也能读出它的“频率”，可以采用拉普拉斯变换和Z变换。它们对“频率”的含义做出了扩充，使得大多数有用信号都具有了对应的“频率”域表达式。
 
-拉普拉斯变换将频率从实数推广为复数，因而傅立叶变换变成了拉普拉斯变换的一个特例。当s为纯虚数时，$$x(t)$$的拉普拉斯变换，即为$$x(t)$$的傅立叶变换。
+拉普拉斯变换（Laplace transform）将频率从实数推广为复数，因而傅立叶变换变成了拉普拉斯变换的一个特例。当s为纯虚数时，$$x(t)$$的拉普拉斯变换，即为$$x(t)$$的傅立叶变换。
 
 从图像的角度来说，拉普拉斯变换得到的频谱是一个复平面上的函数。
 
@@ -222,6 +250,8 @@ $$F(s) =\int_0^{+\infty} e^{-st} f(t)\mathrm{d}t,s = \sigma + i \omega \tag{1}$$
 ![](/images/article/laplace_3.jpg)
 
 由复数的指数表示$$z=re^{i\theta}$$可知，复频域可以看作是普通频域（r）+相位谱（$$\theta$$）。
+
+----
 
 此外，傅立叶变换和拉普拉斯变换之所以在计算上比较方便，还在于**指数函数正好是线性微分方程的特征函数**。
 
@@ -236,6 +266,16 @@ $$F(s) =\int_0^{+\infty} e^{-st} f(t)\mathrm{d}t,s = \sigma + i \omega \tag{1}$$
 Laplace transform的积分范围不是随便定的，它隐含了Causality条件：当系统的输出仅与当前的输入或者过去的输入有关，那么这个系统就是causal的。
 
 想看清楚这一点也不难：用-t替换t，然后积分范围就变成了$$(-\infty, 0]$$。
+
+----
+
+我们还可以换一个角度看待Laplace transform和Fourier transform。
+
+绝对可积条件限制了Fourier transform的应用范围，而不满足绝对可积条件的函数，通常在$$\infty$$处的值是$$\infty$$。一个自然的思路是给这样的函数$$f(x)$$，除以一个缩放的系数。显然只有比$$f(x)$$更高阶的函数，才能在$$\infty$$处将函数值约束在一个有限的范围内。
+
+$$e^x$$就是个很合适的选择，它的增长速度超过了多数的常见函数。
+
+----
 
 参考：
 
@@ -274,54 +314,3 @@ $$\varphi_X(t)=E(e^{itX})=\int_{-\infty}^{+\infty}e^{itx}\mathrm{d}F_X(x)$$
 其中，$$i=\sqrt{-1}$$，并且
 
 $$e^{itx}=\cos(tx)+i\sin(tx)$$
-
-根据上述定义，$$\varphi_X(t)$$是$$F_X(x)$$的傅立叶变换。因此$$\varphi_X(t)$$和$$F_X(x)$$包含相同的信息，且是一一对应的。特别的，若X的PDF $$f_X(x)$$存在，则可通过傅立叶逆变换得到：
-
-$$f_X(x)=\frac{1}{2\pi}\int_{-\infty}^{+\infty}e^{-itx}\varphi_X(t)\mathrm{d}t$$
-
-特征函数具有连续可微等良好的分析性质，因此对于那些矩母函数（Moment Generating Function，MGF）不存在的分布（如柯西分布和对数正态分布）很有用处。
-
-特征函数本质上不是概率论的内容，而属于函数论的内容。不用傅立叶变换，用拉普拉斯变换、希尔伯特变换等等，也可能产生类似效果，当然具体结论会颇有不同。
-
-# 概率分布（1）
-
-进入正题之前，先介绍两个函数：贝塔函数和伽马函数。
-
-## 贝塔函数
-
-$$B(\alpha,\beta)=\int_{0}^{1}x^{\alpha-1}(1-x)^{\beta-1}dx$$
-
-## 伽马函数
-
-$$\Gamma(\theta)=\int_{0}^{\infty}x^{\theta-1}e^{-x}dx$$
-
-http://cos.name/2013/01/lda-math-gamma-function/
-
-神奇的Gamma函数
-
-这篇文章对伽马函数的历史由来，讲的比较透彻。
-
-简单来说，伽马函数就是阶乘算子在复数域的扩展。
-
-伽马函数有以下一些性质：
-
-$$\Gamma(x+1)=x\Gamma(x)$$
-
-$$\Gamma(n)=(n-1)!,n为整数$$
-
-$${\Gamma(1-x)\Gamma(x)}=\frac{\pi}{\sin(\pi x)},x\in{(0,1)}$$
-
-$$\Gamma({1 \over 2})=\sqrt{\pi}$$
-
-$$B(m,n) = \frac{\Gamma(m)\Gamma(n)}{\Gamma(m+n)}$$
-
-上式中的B函数，也就是现在的Beta函数。
-
-对Gamma函数的定义做一个变形，就可以得到如下式子：
-
-$$\int_0^{\infty} \frac{x^{\alpha-1}e^{-x}}{\Gamma(\alpha)}dx = 1$$
-
-取积分中的函数作为概率密度，就得到一个形式最简单的Gamma分布的密度函数：
-
-$$Gamma(x|\alpha) = \frac{x^{\alpha-1}e^{-x}}{\Gamma(\alpha)}$$
-

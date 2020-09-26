@@ -1,13 +1,78 @@
 ---
 layout: post
-title:  数学狂想曲（四）——矩阵&向量的积, 双曲函数和悬链线
+title:  数学狂想曲（四）——统计杂谈, 矩阵&向量的积
 category: math 
 ---
 
 * toc
 {:toc}
 
-# 统计杂谈（续）
+# 概率分布（1）（续）
+
+## 各种概率分布的关系
+
+![](/images/article/distribution.jpg)
+
+参考：
+
+http://www.math.wm.edu/~leemis/2008amstat.pdf
+
+Univariate Distribution Relationships
+
+http://www.wzchen.com/s/probability_cheatsheet.pdf
+
+Probability Cheatsheet v2.0
+
+https://mp.weixin.qq.com/s/svNVryWhiGxWFBz0s0dX5g
+
+概率论简史
+
+https://zhuanlan.zhihu.com/p/158801020
+
+深度学习那些需要掌握的概率分布
+
+https://mp.weixin.qq.com/s/UAXSGp0Lx_-HvIMEH3ttLg
+
+tweedie回归在信贷业务中的应用
+
+# 统计杂谈
+
+## 统计模拟
+
+统计模拟是数理统计中非常有用的工具之一， 它是利用计算机产生某概率模型的随机数，再通过这些随机数来模拟真实模型。
+
+这方面的书籍首推Sheldon M.Ross所著的《Simulation》。
+
+>注：Sheldon M.Ross，斯坦福大学统计学博士（1968），UCB教授（1976～2004），南加州大学Industrial and Systems Engineering系主任。
+
+以下仅记录一些简单的结论。
+
+### 均匀分布
+
+通过线性同余生成器（linear congruential generator, LCG）可以生成伪随机数，且该随机数满足均匀分布。
+
+$$x_n=ax_{n-1}\quad \mathrm{modulo} \quad m$$
+
+这里的a和m通常都是大质数。
+
+### 正态分布
+
+**Box-Muller变换**：如果随机变量$$U_1,U_2$$独立且$$U_1, U_2 \sim Uniform(0,1)$$，
+
+$$\begin{align} 
+Z_0 & = \sqrt{-2\ln U_1} cos(2\pi U_2) \\ 
+Z_1 & = \sqrt{-2\ln U_1} sin(2\pi U_2) 
+\end{align}$$
+
+则$$Z_0,Z_1$$独立且服从标准正态分布。
+
+>注：George Edward Pelham Box，1919~2013，英国统计学家。伦敦学院大学博士，先后供职于普林斯顿大学和威斯康辛-麦迪逊大学。Ronald Aylmer Fisher的女婿。英国皇家学会会员，美国统计协会主席，数理统计学会（这是一个国际组织）主席。
+
+>Mervin Edgar Muller，俄亥俄州立大学教授。
+
+https://mp.weixin.qq.com/s?__biz=MzI1MTIzMzI2MA==&mid=2650561098&idx=1&sn=675375265279cce7fdb1ecd94fd7a549
+
+生成特定分布随机数的方法
 
 ### numpy实战
 
@@ -250,37 +315,3 @@ $$\begin{align}\mathbf{u} \otimes \mathbf{v} = \mathbf{u} \mathbf{v}^\mathrm{T}
 >注：Leopold Kronecker，1823～1891，德国数学家。柏林大学博士和教授。导师Dirichlet。他最牛逼的地方是，当Riemann去世的时候，拒绝了哥廷根大学的offer。而这个位置的前任分别是：Carl Gauss、Dirichlet、Riemann。
 
 $$\mathbf{A}\otimes\mathbf{B} = \begin{bmatrix} a_{11} \mathbf{B} & \cdots & a_{1n}\mathbf{B} \\ \vdots & \ddots & \vdots \\ a_{m1} \mathbf{B} & \cdots & a_{mn} \mathbf{B} \end{bmatrix}$$
-
-## Hadamard product
-
-又叫Schur product或entrywise product。
-
->注：Jacques Salomon Hadamard，1865～1963，法国数学家。巴黎高等师范学校博士，波尔多大学教授。他曾于1936年访华，执教于清华大学。中国偏微分方程研究事业的主要创始人之一——吴新谋教授，就是他的学生。
-
-$$\left(\begin{array}{ccc}
-    \mathrm{a}_{11} & \mathrm{a}_{12} & \mathrm{a}_{13}\\
-    \mathrm{a}_{21} & \mathrm{a}_{22} & \mathrm{a}_{23}\\
-    \mathrm{a}_{31} & \mathrm{a}_{32} & \mathrm{a}_{33}
-  \end{array}\right) \circ \left(\begin{array}{ccc}
-    \mathrm{b}_{11} & \mathrm{b}_{12} & \mathrm{b}_{13}\\
-    \mathrm{b}_{21} & \mathrm{b}_{22} & \mathrm{b}_{23}\\
-    \mathrm{b}_{31} & \mathrm{b}_{32} & \mathrm{b}_{33}
-  \end{array}\right) = \left(\begin{array}{ccc}
-    \mathrm{a}_{11}\, \mathrm{b}_{11} & \mathrm{a}_{12}\, \mathrm{b}_{12} & \mathrm{a}_{13}\, \mathrm{b}_{13}\\
-    \mathrm{a}_{21}\, \mathrm{b}_{21} & \mathrm{a}_{22}\, \mathrm{b}_{22} & \mathrm{a}_{23}\, \mathrm{b}_{23}\\
-    \mathrm{a}_{31}\, \mathrm{b}_{31} & \mathrm{a}_{32}\, \mathrm{b}_{32} & \mathrm{a}_{33}\, \mathrm{b}_{33}
-  \end{array}\right)$$
-
-参考：
-
-https://mp.weixin.qq.com/s/K_aNhzaxmchynDWTE1QFCQ
-
-给你一些点与线，只用动画就能看懂张量乘法，还能证明迹循环定理
-
-# 双曲函数和悬链线
-
-悬链线 (Catenary) 是一种曲线，因其与两端固定的绳子在均匀引力作用下下垂相似而得名。适当选择坐标系后，悬链线的方程是一个双曲余弦函数。
-
-悬链线背后的故事和推导，百度百科已经比较详细了，不再赘述。参见：
-
-http://baike.baidu.com/view/45656.htm

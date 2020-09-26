@@ -7,29 +7,22 @@ category: math
 * toc
 {:toc}
 
-# 自相关&互相关&卷积（续）
+# 概率分布（2）（续）
 
-卷积最经典的应用，当属信号处理领域的傅立叶变换：
+KS检验的统计量定义如下：
 
-$$\mathcal{F}\{f * g\} = k\cdot \mathcal{F}\{f\}\cdot \mathcal{F}\{g\}$$
+$$D_n= \sup_x |F_n(x)-F(x)|$$
 
-不管怎么组合，**自相关&互相关&卷积实际上都是向量的内积运算**。
+其中$$\sup$$表示最小上界，
 
-除此之外，还有利用**向量张量积运算**的**相关矩阵**。同样的，也有自相关矩阵和互相关矩阵。
+$$F_n(x)={1 \over n}\sum_{i=1}^n I_{[-\infty,x]}(X_i)$$
 
-4.**循环卷积（Circular convolution）**。
+$$I_{[-\infty,x]}(X_i)=\begin{cases}
+1, & X_i \le x \\
+0, & \text{otherwise} \\
+\end{cases}$$
 
-![](/images/img2/Circular_convolution.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/R0LTEEYY1jCbSS-f6KlIzw
-
-有限长序列的线性卷积和圆周卷积
-
-https://mp.weixin.qq.com/s/UrWEZ5fMGxj5Ngbi6Y1nFg
-
-如何通俗易懂地解释卷积？
+KS检验更深入的解释，涉及到布朗运动和维纳过程，这里不再赘述。
 
 # 马氏距离
 
