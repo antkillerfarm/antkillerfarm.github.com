@@ -215,11 +215,21 @@ https://github.com/Microsoft/MMdnn
 
 ## 展望
 
-总的来说，DL方面的中间语言/接口/编译器架构都太多了。下图是Google最近（2019.4）推出的MLIR对自家各种优化技术的总结，这里还不包括其他家的相关技术。
+总的来说，DL方面的中间语言/接口/编译器架构都太多了。下图是Google（2019.4）推出的MLIR对自家各种优化技术的总结，这里还不包括其他家的相关技术。
 
 ![](/images/img2/MLIR.png)
 
 从趋势来看，仅仅纠结于各种模型的导入/导出已经不再是最佳的做法，DL compiler才是王道。
+
+https://mp.weixin.qq.com/s/fal6vz9gaZMbR41QMGE3AQ
+
+MLIR发布：全新的中介码与编译器框架
+
+Google（2020.9）又推出了IREE项目，定位和TVM类似。
+
+官网：
+
+https://google.github.io/iree/
 
 ## 参考
 

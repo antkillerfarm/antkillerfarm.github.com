@@ -285,10 +285,6 @@ https://developer.arm.com/products/software/mali-drivers/android-nnapi
 
 这是ARM对于Android NN的一个实现。
 
-https://mp.weixin.qq.com/s/fal6vz9gaZMbR41QMGE3AQ
-
-MLIR发布：全新的中介码与编译器框架
-
 ## Broadcast
 
 Broadcast是一种填充元素以使操作数的形状相匹配的操作。例如，对一个[3,2]的张量和一个[3,1]的张量相加在TF中是合法的，TF会使用默认的规则将[3,1]的张量填充为[3,2]的张量，从而使操作能够执行下去。
