@@ -255,6 +255,10 @@ https://mp.weixin.qq.com/s/XRqwii0TkYO0qcyQzAIqUg
 
 竞赛总结：天池OGeek算法挑战赛
 
+https://mp.weixin.qq.com/s/gY7jrDg8qj8v_nDFOLWHWQ
+
+温度预测挑战赛初赛复盘
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA

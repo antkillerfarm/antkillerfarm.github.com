@@ -261,6 +261,26 @@ https://mp.weixin.qq.com/s/lDKumZHHHuA1JTKxtDdN7w
 
 如何构建一个生产环境的推荐系统
 
+https://zhuanlan.zhihu.com/p/259985388
+
+从零开始了解推荐系统全貌
+
+https://mp.weixin.qq.com/s/Hsw_IbphFotR-Q89wKpMXQ
+
+Embedding在腾讯应用宝的推荐实践
+
+https://mp.weixin.qq.com/s/SRd7Cr16kpa_aUWDNwww_g
+
+淘宝搜索模型核心技术：用户建模篇
+
+https://mp.weixin.qq.com/s/YtQCGWNXDdUQGyF9mYKFHg
+
+莫比乌斯: 百度的下一代query-ad匹配算法
+
+https://mp.weixin.qq.com/s/ZtnaQrVIpVOPJpqMdLWOcw
+
+基于用户的协同过滤来构建推荐系统
+
 # 深度推荐系统+
 
 https://zhuanlan.zhihu.com/p/100019681
@@ -386,39 +406,3 @@ https://mp.weixin.qq.com/s/VHRV1Z6F8-3o6b-3v-5_BA
 https://mp.weixin.qq.com/s/j34nJGomvR23ZJiqIFMoAQ
 
 推荐系统中稀疏特征Embedding的优化表示方法
-
-https://mp.weixin.qq.com/s/1xVPRIVwQQJfEen0RiNYvg
-
-谈谈推荐系统中的用户行为序列建模最新进展
-
-https://mp.weixin.qq.com/s/n5MYTk6V77Hazodw4pxnSQ
-
-基于多任务学习和负反馈的深度召回模型
-
-https://mp.weixin.qq.com/s/CuTEW0y7juWSBGlhltB7qw
-
-FGCNN：使用CNN进行特征生成的CTR预测模型
-
-https://zhuanlan.zhihu.com/p/143161957
-
-点积 vs. MLP：推荐模型到底用哪个更好？
-
-https://mp.weixin.qq.com/s/MSzojHCW8WPFNyF3aM1l2w
-
-腾讯&微博 GateNet: 使用门机制提升点击率预估效果
-
-https://zhuanlan.zhihu.com/p/162980539
-
-2018年kdd阿里召回系统tdm读后感
-
-https://mp.weixin.qq.com/s/Hsw_IbphFotR-Q89wKpMXQ
-
-Embedding在腾讯应用宝的推荐实践
-
-https://mp.weixin.qq.com/s/SRd7Cr16kpa_aUWDNwww_g
-
-淘宝搜索模型核心技术：用户建模篇
-
-https://mp.weixin.qq.com/s/YtQCGWNXDdUQGyF9mYKFHg
-
-莫比乌斯: 百度的下一代query-ad匹配算法

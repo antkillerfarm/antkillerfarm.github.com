@@ -209,3 +209,7 @@ https://mp.weixin.qq.com/s/lrNvC8EWcq6cT16FU8nUbQ
 https://mp.weixin.qq.com/s/B7jIE8W3jHT_YS4psLJZCw
 
 交叉验证和超参数调整:如何优化你的机器学习模型
+
+https://mp.weixin.qq.com/s/PQKVSUnNa1SUwWIxo38_lw
+
+8种交叉验证类型的深入解释和可视化介绍

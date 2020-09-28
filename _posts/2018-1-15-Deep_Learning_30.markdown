@@ -205,10 +205,6 @@ https://mp.weixin.qq.com/s/nCDn89eMWkom0AfQAWGjsA
 
 图表示学习Graph Embedding综述
 
-https://mp.weixin.qq.com/s/QvPB3wNT3IeFuqLB8_nxsw
-
-从Word2vec到DeepWalk
-
 https://zhuanlan.zhihu.com/p/98483266
 
 Fi-GNN通过图神经网络建模特征交互作用来进行CTR预测

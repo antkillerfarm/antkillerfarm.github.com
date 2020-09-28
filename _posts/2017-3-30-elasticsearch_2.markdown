@@ -348,6 +348,10 @@ https://zhuanlan.zhihu.com/p/87987916
 
 Kafka基本原理
 
+https://mp.weixin.qq.com/s/46u-qyk00yZM_bIah-zs-A
+
+基于Kafka的实时计算引擎如何选择？Spark or Flink？
+
 # 计算机体系结构
 
 按照Michael J. Flynn的分类方法，计算机的体系结构可分为如下四类：

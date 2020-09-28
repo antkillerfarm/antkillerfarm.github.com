@@ -364,3 +364,33 @@ https://mp.weixin.qq.com/s/4VE2lZeFf05AyLp_s3nTFQ
 https://mp.weixin.qq.com/s/AI_QC8IgnjMSOAZJNbQjfQ
 
 空间变换网络简单介绍
+
+# 深度推荐系统++
+
+https://mp.weixin.qq.com/s/1xVPRIVwQQJfEen0RiNYvg
+
+谈谈推荐系统中的用户行为序列建模最新进展
+
+https://mp.weixin.qq.com/s/n5MYTk6V77Hazodw4pxnSQ
+
+基于多任务学习和负反馈的深度召回模型
+
+https://mp.weixin.qq.com/s/CuTEW0y7juWSBGlhltB7qw
+
+FGCNN：使用CNN进行特征生成的CTR预测模型
+
+https://zhuanlan.zhihu.com/p/143161957
+
+点积 vs. MLP：推荐模型到底用哪个更好？
+
+https://mp.weixin.qq.com/s/MSzojHCW8WPFNyF3aM1l2w
+
+腾讯&微博 GateNet: 使用门机制提升点击率预估效果
+
+https://zhuanlan.zhihu.com/p/162980539
+
+2018年kdd阿里召回系统tdm读后感
+
+https://mp.weixin.qq.com/s/VOZh79VSCXzZlEuDuDdjKQ
+
+CTR神经网络特征交叉汇总

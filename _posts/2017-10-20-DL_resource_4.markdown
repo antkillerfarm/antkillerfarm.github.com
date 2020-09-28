@@ -312,3 +312,7 @@ https://mp.weixin.qq.com/s/P6BCFLDtzEkPluWIKMD2AA
 https://mp.weixin.qq.com/s/PGZiJuZ2Dg6Vhkv55vfxKQ
 
 对损失信息进行建模，实现信号处理高保真还原
+
+https://mp.weixin.qq.com/s/eeubsLVDCGcSiEC0nJekWA
+
+Adaptive Label Smoothing方法让模型结果更加鲁棒

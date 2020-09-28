@@ -119,6 +119,12 @@ $$\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y},\frac{\partial u
 
 4.复数在场论描述中的应用。
 
+参考：
+
+https://zhuanlan.zhihu.com/p/74528525
+
+一个复变函数的专栏
+
 ## 复数求导
 
 信号处理领域，很多需要求导的函数往往是不解析的。比如一系列的二乘loss：MSE、LS、WLS等。这些函数都包含$$\mid e(k)\mid^2=zz^*$$的成分。然而，这个函数是不可导的。

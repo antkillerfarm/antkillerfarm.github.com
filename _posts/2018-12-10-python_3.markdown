@@ -402,6 +402,10 @@ https://mp.weixin.qq.com/s/1BoBHbXXOGPZ4HK437lH4Q
 
 6款Python特殊文本格式处理库推荐
 
+https://mp.weixin.qq.com/s/bz7rCy0YyF1HrrHrWt9Mpw
+
+聊聊Python操作PDF的几种方法
+
 ## mypy
 
 mypy是一个针对python语言的静态类型检查工具。

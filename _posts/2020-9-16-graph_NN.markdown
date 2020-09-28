@@ -297,6 +297,14 @@ https://mp.weixin.qq.com/s/F2jF1vuzK4u8ZPrDK_CyLw
 
 KDD2018网络表示学习最新教程：DeepWalk作者Perozzi等人带你探索最前沿
 
+https://mp.weixin.qq.com/s/QvPB3wNT3IeFuqLB8_nxsw
+
+从Word2vec到DeepWalk
+
+https://mp.weixin.qq.com/s/gsxE1V_fNTDjIMhs3ZW72Q
+
+DeepWalk：图网络与NLP的巧妙融合
+
 # 参考
 
 https://github.com/thunlp/GNNPapers
