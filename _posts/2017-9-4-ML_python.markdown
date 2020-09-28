@@ -453,3 +453,7 @@ https://mp.weixin.qq.com/s/pBTsByIftGbMMUumSKCvFw
 https://zhuanlan.zhihu.com/p/113842270
 
 Matplotlib优雅作图笔记
+
+https://mp.weixin.qq.com/s/s50WdxzmtLEixvBMhEaX7w
+
+完成这50个Matplotlib代码，你也能画出优秀的图表

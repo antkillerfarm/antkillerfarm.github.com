@@ -316,3 +316,23 @@ https://mp.weixin.qq.com/s/PGZiJuZ2Dg6Vhkv55vfxKQ
 https://mp.weixin.qq.com/s/eeubsLVDCGcSiEC0nJekWA
 
 Adaptive Label Smoothing方法让模型结果更加鲁棒
+
+# 知名数据集+
+
+## Other
+
+https://mp.weixin.qq.com/s/VCJoBf2ECdvyRLU7atciYA
+
+浙江大学和帝国理工大学发布的交通速度预测数据集
+
+https://mp.weixin.qq.com/s/dsLVogBtYjYeMULWp4QrhA
+
+一网打尽成语歇后语，GitHub新华字典数据库
+
+https://zhuanlan.zhihu.com/p/40984645
+
+打通推荐系统与知识图谱: 第一个公开的大规模链接数据集合
+
+http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201703/t20170310_1471429.html
+
+国家统计局：最新县及县以上行政区划代码

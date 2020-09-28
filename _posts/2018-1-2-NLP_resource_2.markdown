@@ -369,6 +369,10 @@ https://mp.weixin.qq.com/s/DfXTwu2dobjmR1Xd3PG9Zg
 
 美团搜索中NER技术的探索与实践
 
+https://mp.weixin.qq.com/s/O4DNQbEuvFapZmYWa2jRUQ
+
+命名实体识别的深度学习综述
+
 ## 文本摘要
 
 https://mp.weixin.qq.com/s/jk1XgnuydrsTg3HvV0CVvw

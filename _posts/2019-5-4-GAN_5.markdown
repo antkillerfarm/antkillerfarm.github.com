@@ -119,6 +119,10 @@ https://zhuanlan.zhihu.com/p/136392096
 
 看GAN如何一步步控制图像生成风格？详解StyleGAN进化过程
 
+https://mp.weixin.qq.com/s/cQAl7k7D6P-wG75VM_KyGw
+
+StyleGAN2玩出新高度！从华盛顿到特朗普，无缝切换生成历届美国总统
+
 # BigGAN
 
 论文：

@@ -39,6 +39,10 @@ Learning To Rank之LambdaMART的前世今生
 
 ## 参考
 
+https://lumingdong.cn/learning-to-rank-in-recommendation-system.html
+
+推荐系统中的排序学习
+
 https://mp.weixin.qq.com/s/YjYVE6jzySVsZmXSPivB5w
 
 达观数据搜索引擎排序实践（上篇）
@@ -368,21 +372,3 @@ https://mp.weixin.qq.com/s/MwXG85RdbNqvwkjauTfk2Q
 https://mp.weixin.qq.com/s/ayvBYilRX0BFEYkAa2EikQ
 
 A/B测试是好，但不适合创新
-
-## 参考
-
-https://mp.weixin.qq.com/s/vpANPrl86Ou2fBVHgLXtBQ
-
-京东电商推荐系统实践
-
-https://mp.weixin.qq.com/s/oKayc5612vVm9k8hu50GNw
-
-当个不“佛系”的推荐系统，CTR预估要做哪些工作？
-
-https://mp.weixin.qq.com/s/env2bFsEWZjxB87GK8QqvQ
-
-Hulu：视频广告系统中的算法实践
-
-https://mp.weixin.qq.com/s/Eih4J51C8Eh-cuZ8vznESg
-
-当推荐遇到社交：美图的推荐算法设计优化实践

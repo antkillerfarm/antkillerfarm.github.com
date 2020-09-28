@@ -189,6 +189,10 @@ https://mp.weixin.qq.com/s/_BVJZxY0TiS18nGgb88LVw
 
 视觉目标跟踪漫谈：从原理到应用
 
+https://zhuanlan.zhihu.com/p/257854666
+
+VOT2020-ST Winner（RPT/RPTS）算法方案分享
+
 # Meanshift
 
 ## Meanshift聚类

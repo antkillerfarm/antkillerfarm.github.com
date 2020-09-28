@@ -1,11 +1,29 @@
 ---
 layout: post
-title:  深度目标检测（八）——花式IOU, 3D目标检测, 旋转框检测, 小目标检测
+title:  深度目标检测（八）——其它目标检测网络, 花式IOU, 3D目标检测, 旋转框检测, 小目标检测
 category: Deep Object Detection 
 ---
 
 * toc
 {:toc}
+
+# 其它目标检测网络
+
+## A-Fast-RCNN
+
+A-Fast-RCNN首次将对抗学习引入到了目标检测领域，idea是非常创新的。
+
+http://blog.csdn.net/jesse_mx/article/details/72955981
+
+A-Fast-RCNN论文笔记
+
+## G-CNN
+
+G-CNN是MaryLand大学的工作，论文主要的思路也是消除region proposal，和YOLO，SSD不同，G-CNN的工作借鉴了迭代的想法，把边框检测等价于找到初始边框到最终目标的一个路径。但是使用one-step regression不能处理这个非线性的过程，所以作者采用迭代的方法逐步接近最终的目标。
+
+http://blog.csdn.net/zijin0802034/article/details/53535647
+
+G-CNN: an Iterative Grid Based Object Detector
 
 # 花式IOU
 
@@ -132,6 +150,10 @@ https://zhuanlan.zhihu.com/p/105881332
 https://mp.weixin.qq.com/s/nOBfPFfJMBkkkVEPV0TG0Q
 
 PIoU Loss：倾斜目标检测专用损失函数，公开超难倾斜目标数据集Retail50K
+
+https://mp.weixin.qq.com/s/U8RXvWP7K1xM_tzhdttPfA
+
+BBAVectors：一种Anchor Free的旋转物体检测方法
 
 # 小目标检测
 
@@ -376,39 +398,3 @@ https://mp.weixin.qq.com/s/flXzhQ-Ypf3fwTqLelLzOQ
 https://mp.weixin.qq.com/s/6QsyYtEVjavoLfU_lQF1pw
 
 目标检测新文：Generalized Intersection over Union
-
-https://mp.weixin.qq.com/s/Xs3nThAcUOq62bO2p61YFA
-
-论文解读 Receptive Field Block Net for Accurate and Fast
-
-https://mp.weixin.qq.com/s/dcrBQ-t3tLOTouEyofOBxg
-
-间谍卫星：利用卷积神经网络对卫星影像进行多尺度目标检测
-
-https://mp.weixin.qq.com/s/LtXylKTKsHdjMPw9Q1HyXA
-
-优于MobileNet、YOLOv2：移动设备上的实时目标检测系统Pelee
-
-https://mp.weixin.qq.com/s/xpk9LhsZ3dRMvqR6Uc5jeg
-
-Pelee：移动端实时检测骨干网络
-
-https://mp.weixin.qq.com/s/Gq3bflJq59Tx-nDCvbweNA
-
-无需预训练分类器，清华&旷视提出专用于目标检测的骨干网络DetNet
-
-https://mp.weixin.qq.com/s/u3eXhoFvo7vZujc0XoQQWQ
-
-旷视研究院解读Light-Head R-CNN：平衡精准度和速度
-
-https://mp.weixin.qq.com/s/6cUP9vvfcuv8rIEnGnAFiA
-
-NCSU&阿里巴巴论文：可解释的R-CNN
-
-https://mp.weixin.qq.com/s/1vOdOMyByBacSBMVrscq5Q
-
-黄畅：基于DenesBox的目标检测在自动驾驶中的应用
-
-https://mp.weixin.qq.com/s/-PeXMU_gkcT5YnMcLoaKag
-
-CVPR清华大学研究，高效视觉目标检测框架RON

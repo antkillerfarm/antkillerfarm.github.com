@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（五）——双曲函数和悬链线, 玻尔兹曼分布
+title:  数学狂想曲（五）——玻尔兹曼分布
 category: math 
 ---
 
@@ -8,6 +8,14 @@ category: math
 {:toc}
 
 # 矩阵&向量的积（续）
+
+## 矩阵的张量积
+
+张量积推广到矩阵，即所谓Kronecker product。
+
+>注：Leopold Kronecker，1823～1891，德国数学家。柏林大学博士和教授。导师Dirichlet。他最牛逼的地方是，当Riemann去世的时候，拒绝了哥廷根大学的offer。而这个位置的前任分别是：Carl Gauss、Dirichlet、Riemann。
+
+$$\mathbf{A}\otimes\mathbf{B} = \begin{bmatrix} a_{11} \mathbf{B} & \cdots & a_{1n}\mathbf{B} \\ \vdots & \ddots & \vdots \\ a_{m1} \mathbf{B} & \cdots & a_{mn} \mathbf{B} \end{bmatrix}$$
 
 ## Hadamard product
 
@@ -34,34 +42,6 @@ $$\left(\begin{array}{ccc}
 https://mp.weixin.qq.com/s/K_aNhzaxmchynDWTE1QFCQ
 
 给你一些点与线，只用动画就能看懂张量乘法，还能证明迹循环定理
-
-# 双曲函数和悬链线
-
-悬链线 (Catenary) 是一种曲线，因其与两端固定的绳子在均匀引力作用下下垂相似而得名。适当选择坐标系后，悬链线的方程是一个双曲余弦函数。
-
-悬链线背后的故事和推导，百度百科已经比较详细了，不再赘述。参见：
-
-http://baike.baidu.com/view/45656.htm
-
-然而对于实际工程中的悬索结构，由于悬索自身的重量较其所提拉的跨度结构要轻得多，在力学简单计算中可以忽略，结构受力模式成为在水平长度范围内的均布荷载。这种荷载模式与拱结构相同，因此可以推导出在该荷载模式下的悬垂线为一抛物线，线型与拱结构相同，但内力为拉力。
-
-在工程中完全按照悬链线进行设计的结构，恐怕只有高压输电线了。由于不承担任何自重以外的附加荷载，输电线的数学曲线会与悬链线完全一致。
-
-双曲函数的性质，参见：
-
-https://zhuanlan.zhihu.com/p/20042215
-
-可能是最好的讲解双曲函数的文章
-
-![](/images/article/trigonometric.jpg)
-
-![](/images/article/hyperbolic.jpg)
-
-参考：
-
-https://mp.weixin.qq.com/s/VOPis0wgmi-U-uM3Vnapbw
-
-这根链子什么来头？
 
 <a name="Boltzmann"/>
 

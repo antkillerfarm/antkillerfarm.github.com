@@ -179,6 +179,62 @@ https://mp.weixin.qq.com/s/qVGveKfCfNKqJoqwMbUVKg
 
 # 数学杂谈+
 
+https://mp.weixin.qq.com/s/9dphMMCaTRtJ-HtbygOP7w
+
+从青年欧拉对巴塞尔问题的解法说起
+
+https://mp.weixin.qq.com/s/68K3L_pD7xfobr_jA1QgWA
+
+陈景润究竟为证明哥德巴赫猜想做出了哪些贡献？
+
+https://mp.weixin.qq.com/s/HKe_rY9OgwFFc3JH8luokw
+
+数学编年史：数学的起源与发展历程
+
+https://mp.weixin.qq.com/s/rM78u0bF2bqI7eQ4t6lxpw
+
+国内奇葩小学数学题横扫推特，老外被难哭了
+
+https://mp.weixin.qq.com/s/SV3A5tFtZyWgTVXW-1s74w
+
+数学，原来可以这么美！
+
+https://mp.weixin.qq.com/s/xVzLUDmDlnzyGtbReoHDuQ
+
+曾被无视多年，却成就19世纪最伟大的一场革命，影响了整个世界！（非欧几何）
+
+https://mp.weixin.qq.com/s/LOI2HeWgmjlAqnwHS0vh9Q
+
+最强科研寺庙！北大、清华博士为什么跑到这？北大神童：出国不如出家！
+
+https://mp.weixin.qq.com/s/0NKhNt6nFDZCcjHE_njnpw
+
+图G上的随机游走：如何用数学方法估算一个女生前男友的数量？
+
+https://mp.weixin.qq.com/s/NMIyXOZkAqbt-YTz94TMug
+
+超励志！美国囚犯发现数论新规律，堪比大数学家！带着其他囚犯学数学
+
+https://mp.weixin.qq.com/s/H1fvyQYRFcOe0pqclD-3yg
+
+“最大数之父”葛立恒逝世，他是20世纪数学巨匠，也是一个杂技演员
+
+https://mp.weixin.qq.com/s/rXbP1dvFmwl6QhVCDMr2Bw
+
+神童、数学家、抑郁症患者，控制论之父诺伯特·维纳的一生
+
+https://mp.weixin.qq.com/s/htCZU2de_7CCcL1q4v-NGg
+
+比肩爱因斯坦的天才：如果再给他一次机会，他可能不会再熬夜了......（麦克斯韦）
+
+https://mp.weixin.qq.com/s/BCszlYgbgvKUSkpJCSRQxg
+
+电影院今天复工，应该如何排座位？这是个数学家研究了几百年的问题
+
+https://mp.weixin.qq.com/s/R0nuIqlIefkEppr07Y8gnQ
+
+用一中学数学公式，中了14次彩票头奖，多国彩票规则因他改变
+
 https://mp.weixin.qq.com/s/FCysnxxWBFiGS027qCxHTw
 
 世界上最伟大的十大公式
@@ -216,3 +272,9 @@ https://www.zhihu.com/question/26989877
 ----
 
 黄埔军校的第一任政治部主任戴季陶与炮党一霸张继关系不好，两人吵着吵着大打出手，张继把比他小9岁的戴季陶打得头破血流，戴季陶竟然被打哭了，说啥也不干了，于是让邵元冲继任。邵元冲瞅着战神张继心惊肉跳，天天怕挨打，干了两个月也辞职了，最后毛熊把一个姓周的派去了，周主任的后台太硬，张继得罪不起，这才收敛一点。
+
+----
+
+https://www.sohu.com/a/144246014_349972
+
+1906年大清“彰德秋操”汇聚五位民国总统！

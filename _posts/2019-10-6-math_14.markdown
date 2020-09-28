@@ -9,6 +9,16 @@ category: math
 
 # 软件滤波算法（续）
 
+<a name="Filter"/>
+
+## 一阶滞后滤波法
+
+方法：取a=0~1，本次滤波结果=(1-a)*本次采样值+a*上次滤波结果。
+
+优点：对周期性干扰具有良好的抑制造用，适用于波动频率较高的场合。
+
+缺点：相位滞后，灵敏度低，滞后程度取决于a值大小，不能消弭滤波频率高于采样频率的1/2的干扰信号。
+
 ## 加权递推平均滤波法
 
 方法：这是对递推平均滤波法的改进，即不同时刻的数据加以不同的权，通常是，越接近现时刻的材料，权取得越大，给予新采样值的权系数越大，则灵敏度越高，但信号平滑度越低。
@@ -136,28 +146,6 @@ $$
 又因为：$$size(X\cup Y)\le size(X)+size(Y)$$，所以
 
 $$size(A-C)\le size((A-B)\cup (B-C))\le size(A-B)+size(B-C)$$
-
-# 拓扑学
-
-《Topopogy Without Tears》，University of New South Wales的Sidney A. Morris著。
-
-该书的中文版：
-
-http://www.topologywithouttears.net/topbookchinese.pdf
-
-参考：
-
-https://mp.weixin.qq.com/s/QmDCFY0SP3cl71HvwvthJQ
-
-如果高斯没有故意“坑”黎曼，估计这门神奇的学科就不会出现了……（拓扑学（Topology）是一门研究几何图形或空间在连续改变形状后还能保持不变的一些性质的学科。）
-
-https://mp.weixin.qq.com/s/H6QV5L-Ewdb1NkMKZrNK9w
-
-一杯咖啡背后的拓扑
-
-https://mp.weixin.qq.com/s/zoMJpYQeAAt6GmjPDx863Q
-
-这个“橡皮泥几何”，竟然解决了城中村难题！实在是太牛了！
 
 # 莫比乌斯反演
 

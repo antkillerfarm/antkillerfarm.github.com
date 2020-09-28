@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（七）——CornerNet, CenterNet, Anchor-Free, 其它目标检测网络
+title:  深度目标检测（七）——CornerNet, CenterNet, Anchor-Free
 category: Deep Object Detection 
 ---
 
@@ -259,6 +259,10 @@ https://zhuanlan.zhihu.com/p/156112318
 
 FCOS算法的原理与实现
 
+https://mp.weixin.qq.com/s/Q-DSG-ZAW0z0X6LHDLmFFA
+
+FCOS：全卷积一阶段Anchor Free物体检测器，多种视觉任务的统一框架
+
 https://mp.weixin.qq.com/s/04h80ubIxjJbT9BxQy5FSw
 
 目标检测：Anchor-Free时代
@@ -302,21 +306,3 @@ FreeAnchor：抛弃单一的IoU匹配，更自由的anchor匹配方法
 https://zhuanlan.zhihu.com/p/163266388
 
 Anchor-free应用一览：目标检测、实例分割、多目标跟踪
-
-# 其它目标检测网络
-
-## A-Fast-RCNN
-
-A-Fast-RCNN首次将对抗学习引入到了目标检测领域，idea是非常创新的。
-
-http://blog.csdn.net/jesse_mx/article/details/72955981
-
-A-Fast-RCNN论文笔记
-
-## G-CNN
-
-G-CNN是MaryLand大学的工作，论文主要的思路也是消除region proposal，和YOLO，SSD不同，G-CNN的工作借鉴了迭代的想法，把边框检测等价于找到初始边框到最终目标的一个路径。但是使用one-step regression不能处理这个非线性的过程，所以作者采用迭代的方法逐步接近最终的目标。
-
-http://blog.csdn.net/zijin0802034/article/details/53535647
-
-G-CNN: an Iterative Grid Based Object Detector

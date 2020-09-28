@@ -359,6 +359,10 @@ https://mp.weixin.qq.com/s/vgEKI9HjWDpkeSZQT2d8Qg
 
 ENRIE(Tsinghua)：知识图谱与BERT相结合，为语言模型赋能助力
 
+https://mp.weixin.qq.com/s/hLt2SnVovrLeNpuMUH1OSg
+
+预训练模型的技术演进：乘风破浪的PTM
+
 # BERT
 
 ## 概述
