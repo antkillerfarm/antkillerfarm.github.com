@@ -227,6 +227,10 @@ https://mp.weixin.qq.com/s/KdKbOrjeeo7Db095V7mSFA
 
 Transformer之自适应宽度注意力
 
+https://mp.weixin.qq.com/s/EuCCeWz_rkktwLuFJ75BXA
+
+Transformer+AutoML: 遗传搜索在序列式任务上的应用
+
 # Attention进阶
 
 https://zhuanlan.zhihu.com/p/40920384

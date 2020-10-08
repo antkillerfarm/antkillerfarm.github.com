@@ -7,6 +7,28 @@ category: Deep Object Detection
 * toc
 {:toc}
 
+# Anchor-Free（续）
+
+https://mp.weixin.qq.com/s/nI_3kilFCsDHhtjFhRKytA
+
+RepPoints:替代边界框，基于点集的物体表示新方法
+
+https://mp.weixin.qq.com/s/VTb6CUOWnPpyU6WnYdYJ-g
+
+RepPoint V2：将角点检测和前景热图引入纯回归目标检测算法
+
+https://mp.weixin.qq.com/s/E8FXhe5H9VqXkkGSUsxYqA
+
+目标检测中Anchor的本质分析
+
+https://mp.weixin.qq.com/s/LQOzrlaEOsrsMHj-V8l3hQ
+
+FreeAnchor：抛弃单一的IoU匹配，更自由的anchor匹配方法
+
+https://zhuanlan.zhihu.com/p/163266388
+
+Anchor-free应用一览：目标检测、实例分割、多目标跟踪
+
 # 其它目标检测网络
 
 ## A-Fast-RCNN
@@ -378,23 +400,3 @@ https://mp.weixin.qq.com/s/t5p1xGKVnwd7wbiOzucFqQ
 https://mp.weixin.qq.com/s/-zQZjHVs7bYyGkGuMUf3qg
 
 目标检测领域还有什么可做的？19个方向给你建议
-
-https://mp.weixin.qq.com/s/k8msLl6c2Cp_5h-4xBD6Zw
-
-CVPR2019-目标检测分割技术进展
-
-https://mp.weixin.qq.com/s/uzG8sic5Y6LVqBS6iKQDhw
-
-目标检测中图像增强，mixup如何操作？
-
-https://mp.weixin.qq.com/s/pkFcmm15gnuRJtngFX7f0w
-
-目标检测训练trick超级大礼包—不改模型提升精度，值得拥有
-
-https://mp.weixin.qq.com/s/flXzhQ-Ypf3fwTqLelLzOQ
-
-李沐等将目标检测绝对精度提升5%，不牺牲推理速度
-
-https://mp.weixin.qq.com/s/6QsyYtEVjavoLfU_lQF1pw
-
-目标检测新文：Generalized Intersection over Union

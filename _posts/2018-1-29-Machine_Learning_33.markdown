@@ -214,6 +214,26 @@ http://www.doc88.com/p-7082821463697.html
 
 # 目标检测进阶++
 
+https://mp.weixin.qq.com/s/k8msLl6c2Cp_5h-4xBD6Zw
+
+CVPR2019-目标检测分割技术进展
+
+https://mp.weixin.qq.com/s/uzG8sic5Y6LVqBS6iKQDhw
+
+目标检测中图像增强，mixup如何操作？
+
+https://mp.weixin.qq.com/s/pkFcmm15gnuRJtngFX7f0w
+
+目标检测训练trick超级大礼包—不改模型提升精度，值得拥有
+
+https://mp.weixin.qq.com/s/flXzhQ-Ypf3fwTqLelLzOQ
+
+李沐等将目标检测绝对精度提升5%，不牺牲推理速度
+
+https://mp.weixin.qq.com/s/6QsyYtEVjavoLfU_lQF1pw
+
+目标检测新文：Generalized Intersection over Union
+
 https://mp.weixin.qq.com/s/Xs3nThAcUOq62bO2p61YFA
 
 论文解读 Receptive Field Block Net for Accurate and Fast

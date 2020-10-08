@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（六）——Tiny-YOLO, YOLOv4, One-stage vs. Two-stage, R-FCN, FPN, RetinaNet
+title:  深度目标检测（六）——Tiny-YOLO, YOLOv4, One-stage vs. Two-stage, R-FCN, FPN
 category: Deep Object Detection 
 ---
 
@@ -138,6 +138,10 @@ YOLO系列(从v1到v5)模型解读(中)
 https://zhuanlan.zhihu.com/p/186014243
 
 YOLO系列(从v1到v5)模型解读(下)
+
+https://zhuanlan.zhihu.com/p/143747206
+
+深入浅出Yolo系列之Yolov3&Yolov4&Yolov5核心基础知识完整讲解
 
 # One-stage vs. Two-stage
 
@@ -296,29 +300,3 @@ https://zhuanlan.zhihu.com/p/70523190
 https://mp.weixin.qq.com/s/xMQA97k0USl69v1MC86HKA
 
 多尺度特征金字塔结构用于目标检测
-
-# RetinaNet
-
-RetinaNet也是Tsung-Yi Lin的作品（2017.8）。
-
-论文：
-
-《Focal Loss for Dense Object Detection》
-
-在《深度目标检测（五）》中，我们已经指出“类别不平衡”是导致One-stage模型精度不高的原因。那么如何解决这个问题呢？
-
-答案是：Focal Loss。（参见《机器学习（二十二）》）
-
-![](/images/img3/RetinaNet.png)
-
-上图是RetinaNet的网络结构图，可以看出它是一个One-stage模型。基本相当于：ResNet+FPN+Focal loss。
-
-参考：
-
-https://blog.csdn.net/jningwei/article/details/80038594
-
-论文阅读: RetinaNet
-
-https://zhuanlan.zhihu.com/p/68786098
-
-再谈RetinaNet

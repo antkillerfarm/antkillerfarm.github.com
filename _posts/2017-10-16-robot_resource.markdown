@@ -343,6 +343,10 @@ https://mp.weixin.qq.com/s/eyqyaOFenPGA721cMGAC0Q
 
 ROS通信机制
 
+https://mp.weixin.qq.com/s/Sd6rfFAcoP86m98W3wSJkg
+
+ROS通信机制进阶
+
 ## PythonRobotics
 
 PythonRobotics是一个机器人算法方面的代码示例库。

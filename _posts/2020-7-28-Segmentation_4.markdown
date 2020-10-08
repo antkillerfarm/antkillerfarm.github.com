@@ -392,3 +392,7 @@ https://mp.weixin.qq.com/s/xk8OdEWNuydxEtyQNOgCaQ
 https://mp.weixin.qq.com/s/gn3ETYW2TCsgV31Jz3Wxqw
 
 OCRNet化解语义分割上下文信息缺失难题
+
+https://mp.weixin.qq.com/s/mSz2LGPMgDPqlLPhKfOmFA
+
+实例分割新思路之SOLO v1&v2深度解析

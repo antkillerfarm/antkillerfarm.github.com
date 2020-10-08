@@ -410,6 +410,10 @@ https://zhuanlan.zhihu.com/p/90255939
 
 创始人Alexandra Elbakyan亲自发长文讲述Sci-Hub的前世今生
 
+https://mp.weixin.qq.com/s/EWDRd4JDvrVorOgWvJIksQ
+
+还只是39岁！一个天才年轻程序员的陨落
+
 # 知名AI公司技术主页
 
 http://uber.ai/

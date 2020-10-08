@@ -97,6 +97,10 @@ https://blog.csdn.net/liu251/article/details/40785291
 
 ROLAP、MOLAP和HOLAP联机分析处理区别
 
+https://mp.weixin.qq.com/s/WIF9Oyb5LBoKWtcDjaA45w
+
+OLAP数仓入门：基础篇
+
 ## SQL
 
 ![](/images/img3/sql_join.png)

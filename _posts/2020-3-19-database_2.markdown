@@ -283,6 +283,10 @@ https://mp.weixin.qq.com/s/PgGDeowQaQ6MlUExZE-TMA
 
 如果是MySQL引起的CPU消耗过大，你会如何优化？
 
+https://mp.weixin.qq.com/s/L3ydmN1TP5YsxJ97WeFXGg
+
+万字总结：学习MySQL优化原理，这一篇就够了！
+
 # 数据库参考资源
 
 https://www.cnblogs.com/ahu-lichang/p/10899747.html

@@ -1,11 +1,37 @@
 ---
 layout: post
-title:  深度目标检测（七）——CornerNet, CenterNet, Anchor-Free
+title:  深度目标检测（七）——RetinaNet, CornerNet, CenterNet, Anchor-Free
 category: Deep Object Detection 
 ---
 
 * toc
 {:toc}
+
+# RetinaNet
+
+RetinaNet也是Tsung-Yi Lin的作品（2017.8）。
+
+论文：
+
+《Focal Loss for Dense Object Detection》
+
+在《深度目标检测（五）》中，我们已经指出“类别不平衡”是导致One-stage模型精度不高的原因。那么如何解决这个问题呢？
+
+答案是：Focal Loss。（参见《机器学习（二十二）》）
+
+![](/images/img3/RetinaNet.png)
+
+上图是RetinaNet的网络结构图，可以看出它是一个One-stage模型。基本相当于：ResNet+FPN+Focal loss。
+
+参考：
+
+https://blog.csdn.net/jningwei/article/details/80038594
+
+论文阅读: RetinaNet
+
+https://zhuanlan.zhihu.com/p/68786098
+
+再谈RetinaNet
 
 # CornerNet
 
@@ -286,23 +312,3 @@ https://zhuanlan.zhihu.com/p/62372897
 https://mp.weixin.qq.com/s/m_PvEbq2QbTXNmj_gObKmQ
 
 Anchor-free目标检测之ExtremeNet
-
-https://mp.weixin.qq.com/s/nI_3kilFCsDHhtjFhRKytA
-
-RepPoints:替代边界框，基于点集的物体表示新方法
-
-https://mp.weixin.qq.com/s/VTb6CUOWnPpyU6WnYdYJ-g
-
-RepPoint V2：将角点检测和前景热图引入纯回归目标检测算法
-
-https://mp.weixin.qq.com/s/E8FXhe5H9VqXkkGSUsxYqA
-
-目标检测中Anchor的本质分析
-
-https://mp.weixin.qq.com/s/LQOzrlaEOsrsMHj-V8l3hQ
-
-FreeAnchor：抛弃单一的IoU匹配，更自由的anchor匹配方法
-
-https://zhuanlan.zhihu.com/p/163266388
-
-Anchor-free应用一览：目标检测、实例分割、多目标跟踪

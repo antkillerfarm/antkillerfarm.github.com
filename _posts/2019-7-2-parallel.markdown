@@ -352,3 +352,7 @@ AllReduce算法的前世今生
 https://mp.weixin.qq.com/s/oDak7peTT5ynNYrH7LSWTg
 
 分布式层次GPU参数服务器架构
+
+https://mp.weixin.qq.com/s/4XMVYXnzpYZ4DrIabuTUig
+
+Ring All-reduce: 分布式深度学习的巧妙同步
