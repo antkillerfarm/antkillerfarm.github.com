@@ -119,12 +119,6 @@ https://mp.weixin.qq.com/s/zO9Za2tF7bYM0al9tIbdww
 
 ----
 
-当我在32岁成为哈佛大学终身教授的时候，终于有时间学习如何运算了——是如坐针毡地和一群年龄仅仅是我的一半多点的大学小鬼们一起上课。他们中的一些人还在上我执教的进化生物学。我将自尊搁置一边，来学习微积分。当在追赶中学习时，成绩拿C都费劲。----By Edward Osborne Wilson
-
->Edward Osborne Wilson，1929年生，美国生物学家，以研究蚂蚁著称，被称为生物社会学之父。同时也是一名杰出的科普作家，两获Pulitzer Prize。
-
-----
-
 https://mp.weixin.qq.com/s/rwKi8bKeGKiJg5WcZwRhlA
 
 听说这家粉笔厂倒闭，世界顶级数学家们开始疯狂囤货
@@ -183,94 +177,42 @@ https://mp.weixin.qq.com/s/tmkqSxkk4mGjkJIKwtov7g
 
 ----
 
-https://www.zhihu.com/question/40852906
+从研究数学和物理的角度，牛顿的《自然哲学的数学原理》其实并不适合今天的读者阅读。
 
-拿破仑时代的炮兵究竟数学要多好？
+比如牛顿的第二定律和引力定律，今天主要是以代数的方式求解。即使要运用到真实空间的运动上，也是以解析几何的形式出现。
 
-https://mp.weixin.qq.com/s/_wEKKLg_zYOrDmGjkVGVRw
+但牛顿时代，解析几何才刚出现，更早的开普勒时代，还没有这东西。当时的科学家采用什么方法解决运动问题呢？
 
-美国高校风靡一时的数学游戏，比黎曼猜想更硬核，至今仍是未解之谜（冰雹猜想）
+答案是：古希腊流传下来的几何方法。代表作：《几何原本》、《阿基米德全集》和《圆锥曲线论》。尤其阿波罗尼奥斯的《圆锥曲线论》堪称希腊古典时代的巅峰之作。
 
-https://mp.weixin.qq.com/s/9gflokoja0sA70B29nEHLA
+微积分不是牛顿的发明，他既不是首创者，也非终结者，但却是一个重要的里程碑人物。
 
-谁是世界上最孤独的数？
+微积分的思想首先来源于古希腊哲学家芝诺提出的芝诺悖论，到欧几里得手上，总结得到“穷竭法”，并提出了左右极限的夹逼准则。事实上，高中阶段的极限思想的结论，绝大多数在希腊古典时代已经被得出。
 
-https://mp.weixin.qq.com/s/S7OmcrLO21PVMyuWin-6Bw
+阿基米德应用穷竭法得到了球体积和球表面积公式。
 
-数学上最有趣的数，装得了逼，撩得了妹！（走马灯数）
+阿波罗尼奥斯更在解析几何出现前1800年，就求解了几乎所有的圆锥曲线性质。《圆锥曲线论》后面几卷的一些命题，难度远超高中奥数题。
 
-https://mp.weixin.qq.com/s/sa7ppdn-KotIz6dB-ZuITA
+所以今天的读者如果没有那三本古书的基础，实际上是很难看懂《自然哲学的数学原理》的。
 
-柏拉图：我参透了爱情，却搞不懂为什么只有五种正多面体！
+PS：1.《几何原本》不代表欧几里得的最高水平，那是欧几里得写给学生的教材。他的最高成就体现在《阿基米德全集》和《圆锥曲线论》中。后两书的作者都曾在亚历山大图书馆留学，受到过欧几里得及其门徒的教导，而且他们在书中也提到，某些命题归功于欧几里得。
 
-https://mp.weixin.qq.com/s/-pnk_O7cOn5KNrqC89Ydsg
+2.解析几何中的坐标轴是阿波罗尼奥斯的发明，只是当时代数不发达，不然解析几何的发明者轮不到笛卡尔。阿波罗尼奥斯的天分之高，比笛卡尔强多了。
 
-在数学奥林匹克的125年里，这25个逆天解法称霸江湖！
+3.莱布尼茨说过，读过阿基米德和阿波罗尼奥斯的书之后，就知道世上并没有什么更天才的人物了。
 
-https://mp.weixin.qq.com/s/C83eMExh4Zi3TWD2QhVWsQ
+----
 
-夹逼准则
+日心说这个东西，现在的人总觉得古人脑子怎么不开窍，老以自己为中心，而没有想到地球围绕太阳转。
 
-https://mp.weixin.qq.com/s/K1fJ1wI9T46i7qW1xjMY_w
+其实日心说，古代就有。之所以不流行，是因为遇到了托勒密这个大牛，这哥们对球面几何和三角函数都研究的很深，发明了最早的三角函数表。
 
-比圆周率更神秘的“混沌”常数：4.669201609102...（费根鲍姆常数）
+托勒密的著作中不但建立了地心说模型，而且还有数学推导。这也使得他的反对者，长期以来搞不定他。
 
-https://mp.weixin.qq.com/s/i076Bk9i0kJOP5kGmneBRw
+就是哥白尼，其实也没有能翻案。真正搞定托勒密，要等到开普勒时代了。
 
-有趣的海盗问题
+参考：
 
-https://mp.weixin.qq.com/s/EJj7gonRv2607QnYTZWKqQ
+https://mp.weixin.qq.com/s/jIlE6VDlgOgoIpUBiGzF5w
 
-笛卡尔！！你……你……你这样泡妞真的好吗？！
-
-https://mp.weixin.qq.com/s/6ynBEJLChqhDwfOBTxJv6w
-
-张东升，你的“心形函数”画错了……
-
-http://web.stanford.edu/~tonyfeng/notes
-
-某牛的数学笔记
-
-https://zhuanlan.zhihu.com/p/50206917
-
-数学笔记（Chapter 1-3. 代数和几何的基础）
-
-https://zhuanlan.zhihu.com/p/50311527
-
-数学笔记（Chapter 4-5. 代数几何和分析的基础）
-
-https://zhuanlan.zhihu.com/p/50524005
-
-数学笔记（Chapter 6. L-函数，第1课）
-
-http://www.moe.gov.cn/s78/A16/A16_ztzl/ztzl_kxnt/kxnt_sgxz/201512/t20151218_225337.html
-
-10000个科学难题数学卷
-
-https://mp.weixin.qq.com/s/imqoo3WWgdWtfah2HYYb6Q
-
-糟糕，我学了假的微积分！
-
-https://mp.weixin.qq.com/s/H_4vuzYcvnZwLZrAxIwgDg
-
-3.14特别纪念：π的第100000000000000···
-
-https://mp.weixin.qq.com/s/xin9VUuIVCZqP-KPn_xAlw
-
-没想到，用极坐标画素数时竟然出现了这神奇的一幕！
-
-https://mp.weixin.qq.com/s/GFO84scpniELyqLdf8HzOQ
-
-一个10*10的正方形里，最多可以放多少个直径为1的圆？为啥不是100个？
-
-https://zhuanlan.zhihu.com/p/36297534
-
-x=cos(x)的解析形式
-
-https://mp.weixin.qq.com/s/5PR4OUubguj0WLB85aa9Mg
-
-2018年菲尔兹奖候选人分析
-
-http://www.matrix67.com/blog/archives/6750
-
-趣题：两个方阵是怎样互相穿过对方的？
+他（Claude Ptolemy）是被埋没了1300年的超级学霸，却凭一己之力，影响世界，改变人类文明！
