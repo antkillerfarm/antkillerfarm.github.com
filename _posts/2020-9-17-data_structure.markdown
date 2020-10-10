@@ -380,3 +380,7 @@ https://mp.weixin.qq.com/s/4zKgFfyLGAmqgHtf_Wb0nw
 https://mp.weixin.qq.com/s/oRCbr0TCzFmTuf5jpWKBaA
 
 GAN版马里奥创作家来了：一个样本即可训练，生成关卡要素丰富
+
+https://mp.weixin.qq.com/s/2NrPolWxV-L-dFUXgGOd9w
+
+在GAN中通过上下文的复制和粘贴，在没有数据集的情况下生成新内容

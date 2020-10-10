@@ -269,6 +269,10 @@ https://mp.weixin.qq.com/s/f_rk-NPKNzYpbHOr5bgluw
 
 一文了解半导体的过去、现在和未来
 
+https://mp.weixin.qq.com/s/A6tc00Azj9AM-FApt5CkTQ
+
+AMD YES！背后不为人知的故事
+
 ## AVX
 
 MMX直接使用了80bit的FPU寄存器中的64bit，对CPU整个流水线几乎没有影响；SSE的128bit相比80bit增加了48bit宽度还算可以接受。AVX的256bit，整个CPU的数据通道比80bit增加了三倍多，需要消耗三倍的晶体管，功率也增加了三倍。因此在严格限定功耗的场景如笔记本或者服务器中，CPU运行AVX应用时需要降低频率从而降低功耗。
@@ -336,17 +340,3 @@ https://zhuanlan.zhihu.com/p/34003929
 调试程序时，设置断点的原理是什么？
 
 >Visual Studio有个有趣的特性是debug编译后，会把0xcc（INT 3）填入代码的空隙，这样一旦程序越界就会被VS捕捉而容易发现错误。而0xCCCC在中国的GBK编码是“烫”。有中国程序员翻看内存到代码段会发现很多"烫烫烫"，不明所以，以为发生了什么神奇的事情。
-
-----
-
-https://mp.weixin.qq.com/s/Cij_95iLbAm0AEtrSb72_A
-
-关于CPU科普，这篇说得最详细
-
-https://zhuanlan.zhihu.com/p/29743431
-
-CPU制造的那些事之一：i7和i5其实是孪生兄弟！？
-
-https://zhuanlan.zhihu.com/p/29767262
-
-CPU制造的那些事之二：Die的大小和良品率

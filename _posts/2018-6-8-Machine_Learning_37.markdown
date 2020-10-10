@@ -371,3 +371,7 @@ https://mp.weixin.qq.com/s/8oKiVRjtPQIH1D2HltsREQ
 https://zhuanlan.zhihu.com/p/158853633
 
 一文理解Ranking Loss/Margin Loss/Triplet Loss
+
+https://zhuanlan.zhihu.com/p/235533342
+
+目标检测：Loss整理

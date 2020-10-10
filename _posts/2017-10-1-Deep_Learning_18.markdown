@@ -370,3 +370,7 @@ https://mp.weixin.qq.com/s/qfbfzToypKTxh7CxJ0ifHw
 https://mp.weixin.qq.com/s/uptfQb8ELfpb5P4ySvofpg
 
 一个被我们“嫌弃”了23年的数学天才，累死才知道他的价值（陆家羲）
+
+https://mp.weixin.qq.com/s/wMARrGbRanB2T0NIxISspA
+
+有趣的数学可视化

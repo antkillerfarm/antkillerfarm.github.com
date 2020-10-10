@@ -420,7 +420,7 @@ PC上搭建Objective-C（以下简称OC）开发环境，主要借助GNUstep开�
 
 `GNUSTEP_MAKEFILES=/usr/share/GNUstep/Makefiles`
 
-# Python++
+# Python+++
 
 https://mp.weixin.qq.com/s/weEZEr4g8pI11Gijc-St0Q
 

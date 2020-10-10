@@ -384,3 +384,11 @@ https://mp.weixin.qq.com/s/ag5u2EPObx7bZr7hkcrOTg
 https://mp.weixin.qq.com/s/Uw7YaphnlMQGGazIBYplgQ
 
 我调研了100来个Java开源博客系统，发现这5个最好用！
+
+https://mp.weixin.qq.com/s/tMUUwT0g3bzxyRgq5GeMWg
+
+从0到1!大话动静态代理
+
+https://mp.weixin.qq.com/s/_r1EU66tpHUrOyuGd9yNdA
+
+学会Java中的线程池，这一篇也许就够了！

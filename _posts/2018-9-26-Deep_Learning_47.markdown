@@ -394,3 +394,7 @@ https://zhuanlan.zhihu.com/p/162980539
 https://mp.weixin.qq.com/s/VOZh79VSCXzZlEuDuDdjKQ
 
 CTR神经网络特征交叉汇总
+
+https://mp.weixin.qq.com/s/ioDkJHKZ4t1gvrMVl7kplg
+
+DMR：阿里深度召回排序模型

@@ -231,6 +231,10 @@ https://mp.weixin.qq.com/s/mJpk0ZM9kvxBKOiyRJvAQw
 
 Python+Kepler.gl轻松制作酷炫路径动画
 
+https://mp.weixin.qq.com/s/CztcMqrFh_f01N88ybsQUg
+
+B站爆红的数学视频，竟是用这个神器做的！（manim）
+
 ----
 
 GCJ-02是由中国国家测绘局（G表示Guojia国家，C表示Cehui测绘，J表示Ju局）制订的地理信息系统的坐标系统。又名“火星坐标系”。

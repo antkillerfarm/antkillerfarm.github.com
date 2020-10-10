@@ -329,3 +329,7 @@ https://zhuanlan.zhihu.com/p/200924181
 https://zhuanlan.zhihu.com/p/212842916
 
 计算机视觉中低延迟检测的相关理论和应用（下）
+
+https://mp.weixin.qq.com/s/Z5zFWr04Z2LBpf-6EXIgRg
+
+OpenImage冠军方案：在物体检测中为分类和回归任务使用各自独立的特征图

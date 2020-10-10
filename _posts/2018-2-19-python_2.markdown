@@ -9,7 +9,26 @@ category: language
 
 # Python
 
-## with（续）
+## yield
+
+yield就是return返回一个值，并且记住这个返回的位置，下次迭代就从这个位置后(下一行)开始。
+
+参考：
+
+https://www.jianshu.com/p/d09778f4e055
+
+彻底理解Python中的yield
+
+## with
+
+Python的with语句允许我们非常方便地使用资源，而不必担心资源没有关闭。例如：
+
+```python
+with open('/path/to/file', 'r') as f:
+    f.read()
+```
+
+任何对象，只要正确实现了上下文管理，就可以用于with语句。
 
 实现上下文管理是通过__enter__和__exit__这两个方法实现的：
 
@@ -377,49 +396,6 @@ https://mp.weixin.qq.com/s/bgk375-KxF-is5dIgV_p4g
 
 5张图彻底理解Python中的浅拷贝与深拷贝
 
-## Python 2 to Python 3
-
-https://www.linuxzen.com/qian-yi-dao-python-3.html
-
-迁移到Python 3
-
-https://www.zhihu.com/question/19698598
-
-Python 2和Python 3有哪些主要区别？
-
-https://mp.weixin.qq.com/s/Q3cqLuOZDSMOdAjVrCDrtQ
-
-在Python 2.7即将停止支持时，我们为你准备了一份3.x迁移指南
-
-https://mp.weixin.qq.com/s/J4bBvu9z3BNcwMSmmL5SMQ
-
-Python 2大限来了！113天后自生自灭，官方不再维护更新
-
-文件print：
-
-```python
-Python2: print >>sys.stderr, "fatal error"
-Python3: print("fatal error", file=sys.stderr)
-```
-
-dict切片：
-
-```python
-Python2: 
-self._layers = net.blobs.keys()
-self._layers = self._layers[1:] # TypeError: 'dict_keys' object is not subscriptable
-
-Python3:
-self._layers = list(net.blobs.keys())
-self._layers = self._layers[1:]
-```
-
-检查某对象是否为字符串或Unicode对象：
-
-```python
-Python2: isinstance(anobj, basestring)
-Python3: isinstance(anobj, str)
-```
 ## six
 
 six是一个专门用来兼容Python 2和Python 3的库。它解决了诸如urllib的部分方法不兼容，str和bytes类型不兼容等“知名”问题。2x3=6？这难道就是得名的原因？

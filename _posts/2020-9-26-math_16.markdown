@@ -173,6 +173,14 @@ https://mp.weixin.qq.com/s/zoMJpYQeAAt6GmjPDx863Q
 
 ----
 
+如果你往高尔顿板里倒入很多小球，一个惊人的规律就出现了：在底部堆积的小球的上边缘总是会形成一个近似钟形的曲线。在最接近中心的插槽中，小球会堆得高高的，插槽中的球数从中间向两侧递减，直至为零。
+
+https://mp.weixin.qq.com/s/BwMAiziWQuyKaru8xB9tHw
+
+一文读懂因果推断的起源
+
+----
+
 https://www.sohu.com/a/223262966_115479
 
 史上最贱的数学题

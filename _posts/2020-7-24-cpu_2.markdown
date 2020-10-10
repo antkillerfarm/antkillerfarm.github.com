@@ -9,6 +9,18 @@ category: resource
 
 # CPU
 
+https://mp.weixin.qq.com/s/Cij_95iLbAm0AEtrSb72_A
+
+关于CPU科普，这篇说得最详细
+
+https://zhuanlan.zhihu.com/p/29743431
+
+CPU制造的那些事之一：i7和i5其实是孪生兄弟！？
+
+https://zhuanlan.zhihu.com/p/29767262
+
+CPU制造的那些事之二：Die的大小和良品率
+
 https://zhuanlan.zhihu.com/p/31848803
 
 为什么CPU越来越多地采用硅脂而不是焊锡散热？

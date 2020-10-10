@@ -252,6 +252,10 @@ https://zhuanlan.zhihu.com/p/138850070
 
 从Triplet loss看推荐系统中文章Embedding
 
+https://mp.weixin.qq.com/s/tpI5k5sg15WHGv3YoMp-rA
+
+​Triplet-loss原理与应用
+
 ## Coupled Cluster Loss
 
 论文：

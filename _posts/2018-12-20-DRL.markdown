@@ -358,3 +358,7 @@ https://zhuanlan.zhihu.com/p/68462431
 https://mp.weixin.qq.com/s/BhTX4KQnLxUQLvPUfY3q6Q
 
 物理实验成本为零！南大LAMDA开源虚拟RL训练环境
+
+https://mp.weixin.qq.com/s/MYm17ungMfMhu_7Cm66gqg
+
+Deepmind官方实现的DQN库

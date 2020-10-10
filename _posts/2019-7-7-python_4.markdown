@@ -293,15 +293,57 @@ https://mp.weixin.qq.com/s/20F0ieUjJSZp7yI7ymeJ5Q
 
 试试在终端模拟下雪的效果呗？
 
-## 多线程 & 同步
+## 处理eml文件
 
-http://www.cnblogs.com/Python666/p/7506546.html
+代码示例：
 
-Python单例模式
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/misc/hello_eml.py
 
-https://mp.weixin.qq.com/s/tJsdM-4q_RC-5AhTw3y49w
+这个示例主要使用email包来解析eml文件。
 
-schedule使用进阶
+同时为了处理其中的html的内容，还用到了Beautiful Soup包。其网址为：
+
+https://www.crummy.com/software/BeautifulSoup/
+
+参见：
+
+https://mp.weixin.qq.com/s/p86yvl3uAm3FXw4V9NlNoA
+
+一文带你上手Python网页抓取神器BeautifulSoup库
+
+https://mp.weixin.qq.com/s/3o_T7Tyrstur6jkj0gexMA
+
+BeautifulSoup的使用
+
+## PDF
+
+https://mp.weixin.qq.com/s/fBz__E2Xu4GC7w1Uqx5NAA
+
+手把手教你如何用Python从PDF文件中导出数据
+
+https://mp.weixin.qq.com/s/xCKC3cz7jUvrwl4uvMNKTA
+
+20行Python代码教你批量将PDF转为Word
+
+https://mp.weixin.qq.com/s/IznKbG3cEF6uxP0Fe_0oaQ
+
+印度小哥“神剑”：PDF提取表格so easy！
+
+https://mp.weixin.qq.com/s/J-H638ZzhB-GOXMeAQ9aww
+
+Camelot: 三行代码提取PDF表格数据
+
+https://mp.weixin.qq.com/s/c0hszsSDS-u4z-83Y7km8Q
+
+pdf文档解析之pdfminer
+
+https://mp.weixin.qq.com/s/1BoBHbXXOGPZ4HK437lH4Q
+
+6款Python特殊文本格式处理库推荐
+
+https://mp.weixin.qq.com/s/bz7rCy0YyF1HrrHrWt9Mpw
+
+聊聊Python操作PDF的几种方法
 
 ## excel
 
@@ -426,51 +468,3 @@ Tkinter可视化窗口
 https://mp.weixin.qq.com/s/-erFsz8NvLZ5mOIXyDosFg
 
 使用PyInstaller将python转成可执行文件exe笔记
-
-https://mp.weixin.qq.com/s/b19SLduKoiOIeE5CA3ZOjg
-
-Python标准库之LRU缓存实现学习
-
-https://mp.weixin.qq.com/s/zABXQksUX6le8zWJeWUQXw
-
-Python的`__name__`变量，到底是个什么东西？
-
-https://mp.weixin.qq.com/s/FtlAkInyXgvUxDnSCikTIw
-
-全面深入理解Python面向对象编程
-
-https://mp.weixin.qq.com/s/_PtdgGElw0mvr_rRm5xrCg
-
-Python性能优化的20条招数
-
-https://mp.weixin.qq.com/s/0Rpbuo7LCRo1SnbE8NcH4Q
-
-快速学习Python的全套14张思维导图
-
-https://mp.weixin.qq.com/s/Cujl2nxITCuZL7B72uKVrQ
-
-为什么Python这么慢？
-
-https://mp.weixin.qq.com/s/a3YTmQMfpnviHnidXrhYtg
-
-这17个骚操作你都Ok吗
-
-https://zhuanlan.zhihu.com/p/41293278
-
-把python翻译成C++
-
-https://mp.weixin.qq.com/s/XV4LOBM1pO0N8oShZl7MzQ
-
-手把手教你用Python设计一个命令行界面
-
-https://mp.weixin.qq.com/s/EZh5PAUgXkIDzGbim6wqLQ
-
-用Python带你看白雪飘扬~
-
-https://mp.weixin.qq.com/s/SUyRNz_M7B6bcdV7-YxlZQ
-
-Python制作一款简易音乐播放器
-
-https://mp.weixin.qq.com/s/d2_MTvfbOFZmppej5UOwUw
-
-关于使用Python析构函数的正确姿势

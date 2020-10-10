@@ -9,6 +9,50 @@ category: language
 
 # Python
 
+## Python 2 to Python 3
+
+https://www.linuxzen.com/qian-yi-dao-python-3.html
+
+迁移到Python 3
+
+https://www.zhihu.com/question/19698598
+
+Python 2和Python 3有哪些主要区别？
+
+https://mp.weixin.qq.com/s/Q3cqLuOZDSMOdAjVrCDrtQ
+
+在Python 2.7即将停止支持时，我们为你准备了一份3.x迁移指南
+
+https://mp.weixin.qq.com/s/J4bBvu9z3BNcwMSmmL5SMQ
+
+Python 2大限来了！113天后自生自灭，官方不再维护更新
+
+文件print：
+
+```python
+Python2: print >>sys.stderr, "fatal error"
+Python3: print("fatal error", file=sys.stderr)
+```
+
+dict切片：
+
+```python
+Python2: 
+self._layers = net.blobs.keys()
+self._layers = self._layers[1:] # TypeError: 'dict_keys' object is not subscriptable
+
+Python3:
+self._layers = list(net.blobs.keys())
+self._layers = self._layers[1:]
+```
+
+检查某对象是否为字符串或Unicode对象：
+
+```python
+Python2: isinstance(anobj, basestring)
+Python3: isinstance(anobj, str)
+```
+
 ## range & xrange
 
 1.range会直接生成一个list对象。
@@ -321,7 +365,7 @@ http://www.cnblogs.com/ArtsCrafts/p/gunicorn.html
 
 Gunicorn快速入门
 
-## 并行计算
+## 多线程 & 同步
 
 python异步并发模块concurrent.futures，主要用来实现多线程和多进程的异步并发。
 
@@ -354,57 +398,13 @@ https://mp.weixin.qq.com/s/QIfxxY6z7y77RDE_8gDEIg
 
 并行运算Process Pools
 
-## 处理eml文件
+http://www.cnblogs.com/Python666/p/7506546.html
 
-代码示例：
+Python单例模式
 
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/misc/hello_eml.py
+https://mp.weixin.qq.com/s/tJsdM-4q_RC-5AhTw3y49w
 
-这个示例主要使用email包来解析eml文件。
-
-同时为了处理其中的html的内容，还用到了Beautiful Soup包。其网址为：
-
-https://www.crummy.com/software/BeautifulSoup/
-
-参见：
-
-https://mp.weixin.qq.com/s/p86yvl3uAm3FXw4V9NlNoA
-
-一文带你上手Python网页抓取神器BeautifulSoup库
-
-https://mp.weixin.qq.com/s/3o_T7Tyrstur6jkj0gexMA
-
-BeautifulSoup的使用
-
-## PDF
-
-https://mp.weixin.qq.com/s/fBz__E2Xu4GC7w1Uqx5NAA
-
-手把手教你如何用Python从PDF文件中导出数据
-
-https://mp.weixin.qq.com/s/xCKC3cz7jUvrwl4uvMNKTA
-
-20行Python代码教你批量将PDF转为Word
-
-https://mp.weixin.qq.com/s/IznKbG3cEF6uxP0Fe_0oaQ
-
-印度小哥“神剑”：PDF提取表格so easy！
-
-https://mp.weixin.qq.com/s/J-H638ZzhB-GOXMeAQ9aww
-
-Camelot: 三行代码提取PDF表格数据
-
-https://mp.weixin.qq.com/s/c0hszsSDS-u4z-83Y7km8Q
-
-pdf文档解析之pdfminer
-
-https://mp.weixin.qq.com/s/1BoBHbXXOGPZ4HK437lH4Q
-
-6款Python特殊文本格式处理库推荐
-
-https://mp.weixin.qq.com/s/bz7rCy0YyF1HrrHrWt9Mpw
-
-聊聊Python操作PDF的几种方法
+schedule使用进阶
 
 ## mypy
 
