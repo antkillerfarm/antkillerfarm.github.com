@@ -250,3 +250,13 @@ https://www.zhihu.com/question/263927026
 https://mp.weixin.qq.com/s/qdp3pk11IJ0kTyuUKORRHQ
 
 中国20面！！你的家乡上榜了咩
+
+----
+
+今臣战船尚有十二，出死力拒战，则犹可为也。
+
+----
+
+https://zhuanlan.zhihu.com/p/141028517
+
+石与火的较量-火炮时代的要塞工程学
