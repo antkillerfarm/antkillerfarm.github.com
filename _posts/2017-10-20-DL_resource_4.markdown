@@ -319,6 +319,28 @@ Adaptive Label Smoothing方法让模型结果更加鲁棒
 
 # 知名数据集+
 
+## 医疗
+
+https://mp.weixin.qq.com/s/849fLGndmaRvz_oWt6HWtg
+
+一文道尽医学图像数据集与竞赛
+
+https://mp.weixin.qq.com/s/AW5PGDXCTPMf8hwsPxOfjg
+
+NIHCC发布迄今世界最大的CT医学影像数据集
+
+https://mp.weixin.qq.com/s/M3s3z3YnEBvUxpDVGFVKHw
+
+斯坦福吴恩达团队公布最大医学影像数据集
+
+https://mp.weixin.qq.com/s/9TFLE3R7ct0HzaAwOCfkbw
+
+斯坦福联合MIT，发布两类巨大量级X光胸片数据集
+
+https://mp.weixin.qq.com/s/OhwDbFfHs-farxUVxRDw4Q
+
+吴恩达斯坦福实验室发布MRNet数据集，包含1千多张标注膝关节核磁共振成像
+
 ## Other
 
 https://mp.weixin.qq.com/s/VCJoBf2ECdvyRLU7atciYA

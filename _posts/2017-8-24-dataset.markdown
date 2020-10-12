@@ -65,6 +65,18 @@ http://www.image-net.org/
 
 需要注意的是，由于ImageNet的数据过于庞大，因此主页下载的数据文件，仅仅只是图片的URL而已。
 
+ImageNet的标签包含在图片的文件名中，具体的对应关系参见imagenet_class_index.json：
+
+`"812": ["n04266014", "space_shuttle"],`
+
+以上面片段为例：
+
+`812`：类别ID。
+
+`n04266014`：该类别在图片文件名中的名字前缀。
+
+`space_shuttle`：该类别的真实名称。
+
 ## PASCAL VOC
 
 PASCAL VOC是一个标有物体类别和位置的图片库。
@@ -348,29 +360,3 @@ https://mp.weixin.qq.com/s/txlWG1yAFlSMMVNKYssMsw
 https://mp.weixin.qq.com/s/dlmzRrAeB-jkhk7rbUrNpg
 
 微软亚洲研究院发布业界最全面的语义分析数据集MSParS
-
-https://mp.weixin.qq.com/s/Ud2pwlNSIEb3HncCrniMxA
-
-最全中华古诗词数据库，收录30多万诗词
-
-https://mp.weixin.qq.com/s/FdQ7IF4N3BhiqjZ32ZMirg
-
-中文细粒度命名实体识别数据集来了
-
-https://mp.weixin.qq.com/s/jkM0iYFMjIXdfFQVxw86Bg
-
-KdConv：多领域知识驱动的中文多轮对话数据集
-
-## CV
-
-http://www.cvpapers.com/datasets.html
-
-常见的cvpr研究的数据库下载链接
-
-https://mp.weixin.qq.com/s/SKZhcd3QpoVMubTkD14iWw
-
-Fashion-MNIST：替代MNIST手写数字集的图像数据集
-
-https://mp.weixin.qq.com/s/77VZ8HPQXWAPvmpZA97kmg
-
-CV预训练模型全集

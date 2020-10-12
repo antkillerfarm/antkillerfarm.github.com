@@ -294,3 +294,7 @@ https://mp.weixin.qq.com/s/RzrQpJ8M4SoY6YXhUQNWHg
 https://zhuanlan.zhihu.com/p/257089138
 
 C语言发展史的点点滴滴
+
+https://www.zhihu.com/question/420656795
+
+有哪个高手可以解读“世界黑客编程大赛第一名的作品（97年Mekka ’97 4K Intro）”?
