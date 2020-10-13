@@ -312,6 +312,22 @@ https://mp.weixin.qq.com/s/x1Z4jkMvfo4mD-_rKqvjuw
 
 # 模型压缩与加速进阶++
 
+https://mp.weixin.qq.com/s/NsvjADgQZrYkUGNN6fzXVg
+
+驭势科技推出“东风网络”：如何找到速度-精度的最优解？
+
+https://mp.weixin.qq.com/s/HzgRHtVwdmW6_m7OJwK-ew
+
+SysML 2019论文解读：Accurate and Efficient 2-Bit Quantized Neural Netowrks
+
+https://mp.weixin.qq.com/s/oah61YozMB2fMfpDqPwHjw
+
+Deep Compression神经网络压缩经典之作
+
+https://mp.weixin.qq.com/s/ulrPhfsPunKAWYohBhkh9w
+
+寻找最佳的神经网络架构，韩松组两篇论文解读
+
 https://mp.weixin.qq.com/s/oDwvMtET0moHVGgtQLfCow
 
 5个可以让你的模型在边缘设备上高效推理的算法

@@ -25,6 +25,10 @@ https://zhuanlan.zhihu.com/p/24337627
 
 深度压缩之蒸馏模型
 
+https://mp.weixin.qq.com/s/xcd9CHgE2_vEXrQ4MK019Q
+
+知识蒸馏方法的演进历史综述
+
 https://mp.weixin.qq.com/s/qE1makMUIaFNrWk4nqOxDw
 
 最新《知识蒸馏》2020综述论文，30页pdf，悉尼大学
@@ -382,19 +386,3 @@ ThunderNet：Two-stage形式的目标检测也可很快而且精度很高
 https://mp.weixin.qq.com/s/ie2O5BPT-QxTRhK3S0Oa0Q
 
 剪枝需有的放矢，快手&罗切斯特大学提出基于能耗建模的模型压缩
-
-https://mp.weixin.qq.com/s/NsvjADgQZrYkUGNN6fzXVg
-
-驭势科技推出“东风网络”：如何找到速度-精度的最优解？
-
-https://mp.weixin.qq.com/s/HzgRHtVwdmW6_m7OJwK-ew
-
-SysML 2019论文解读：Accurate and Efficient 2-Bit Quantized Neural Netowrks
-
-https://mp.weixin.qq.com/s/oah61YozMB2fMfpDqPwHjw
-
-Deep Compression神经网络压缩经典之作
-
-https://mp.weixin.qq.com/s/ulrPhfsPunKAWYohBhkh9w
-
-寻找最佳的神经网络架构，韩松组两篇论文解读
