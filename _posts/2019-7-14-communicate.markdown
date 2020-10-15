@@ -223,6 +223,10 @@ https://mp.weixin.qq.com/s/DiaruzlgPPKmJCiBg19_og
 
 为什么HTTP3.0使用UDP协议
 
+https://mp.weixin.qq.com/s/uNXxyPZ5IssZfgFFD-m5dQ
+
+什么是HTTP简史
+
 # 硬件
 
 https://mp.weixin.qq.com/s/ZexnsNmqsD2yq-7YNASohw

@@ -312,7 +312,7 @@ https://docs.scipy.org/doc/scipy/reference/
 
 - Gaussian filter
 
-w = 2*int(truncate*sigma + 0.5) + 1
+`w = 2*int(truncate*sigma + 0.5) + 1`
 
 参考：
 
@@ -331,6 +331,10 @@ https://mp.weixin.qq.com/s/xN0mX9XWvVUpi0p5Tc6vLA
 https://mp.weixin.qq.com/s/44RjMdARJMSM1_seImaSbg
 
 SciPy稀疏矩阵
+
+https://mp.weixin.qq.com/s/5g1WgWEOkA-38MXbkKUtWg
+
+Scipy使用大全
 
 ## sklearn
 

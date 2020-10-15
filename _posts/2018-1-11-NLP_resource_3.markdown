@@ -291,6 +291,10 @@ https://zhuanlan.zhihu.com/p/164957257
 
 WMD系列方法介绍（词移距离方法）
 
+https://mp.weixin.qq.com/s/UTtdu1ONK2XnOOaLSk1hfg
+
+从单词嵌入到文档距离 ：WMD一种有效的文档分类方法
+
 ## 文本匹配
 
 https://zhuanlan.zhihu.com/p/111769969
@@ -390,27 +394,3 @@ https://mp.weixin.qq.com/s/JgQAMknL4x7nMONzZua7tg
 http://www.jianshu.com/p/f45c3540c56e
 
 Chatbot架构
-
-https://mp.weixin.qq.com/s/zfgx2iViwFm-tzBGvgHVuw
-
-百度开源：语义表示应用介绍和源代码
-
-http://www.csdn.net/article/2015-02-05/2823865
-
-让机器搞懂100万种隐含语义，腾讯Peacock大规模主题模型首次全揭秘
-
-https://mp.weixin.qq.com/s/NDsQzT4nktbw1fHLLFUhEQ
-
-KBQA: 基于开放域知识库上的QA系统
-
-http://www.jianshu.com/p/efe92bdb435d
-
-语言模型：Trigram模型的平滑估计
-
-https://mp.weixin.qq.com/s/t2eP09f7tLwhgLO9m1S-9Q
-
-阿里自然语言处理成果
-
-https://mp.weixin.qq.com/s/7yi67lPjseigeaqTD269mQ
-
-触类旁通，专业技能热度智能分析

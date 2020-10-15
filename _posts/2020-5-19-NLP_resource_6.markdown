@@ -9,6 +9,30 @@ category: resource
 
 # NLP参考资源
 
+https://mp.weixin.qq.com/s/zfgx2iViwFm-tzBGvgHVuw
+
+百度开源：语义表示应用介绍和源代码
+
+http://www.csdn.net/article/2015-02-05/2823865
+
+让机器搞懂100万种隐含语义，腾讯Peacock大规模主题模型首次全揭秘
+
+https://mp.weixin.qq.com/s/NDsQzT4nktbw1fHLLFUhEQ
+
+KBQA: 基于开放域知识库上的QA系统
+
+http://www.jianshu.com/p/efe92bdb435d
+
+语言模型：Trigram模型的平滑估计
+
+https://mp.weixin.qq.com/s/t2eP09f7tLwhgLO9m1S-9Q
+
+阿里自然语言处理成果
+
+https://mp.weixin.qq.com/s/7yi67lPjseigeaqTD269mQ
+
+触类旁通，专业技能热度智能分析
+
 https://mp.weixin.qq.com/s/Zo6LjGE__vQMsWyuoZm6Hw
 
 文本特征工程之N-Gram
@@ -300,7 +324,3 @@ Kimball非常惊讶，极力挽留，见挽留不住，Kimball随后给美国移
 顾毓琇是中国现代话剧的发轫人之一，曾创办上海戏剧学院的前身——上海市立实验戏剧学校。
 
 顾毓琇曾任国立音乐院(今中央音乐学院的前身)的首任院长、国立交响乐团团长、国立礼乐馆馆长。日本音乐界称之为“中国古典音乐泰斗”。
-
-----
-
-煤制油技术中国居于世界绝对领先地位，但是今天我们不看煤制油技术，我们看这个庞大系统里面的一个小部件：单向阀。全世界本来只有德国一家公司生产，他们获取了多么高的利润呢，一个小小的阀门，价格高达180万人民币，而寿命最长只有3个小时。折旧费用平均一分钟一万元。中国湖南西迪技术公司研发出单向阀后，价格只有20万人民币，而寿命有1年多。这家德国公司已经彻底退出竞争。世界其他任何国家想搞煤变油技术，如果不买中国的装备，根本无法和中国竞争。

@@ -101,6 +101,10 @@ https://mp.weixin.qq.com/s/WIF9Oyb5LBoKWtcDjaA45w
 
 OLAP数仓入门：基础篇
 
+https://mp.weixin.qq.com/s/O3p1wQYlUfcaIPbGxs4seQ
+
+OLAP数仓入门：进阶篇
+
 ## SQL
 
 ![](/images/img3/sql_join.png)

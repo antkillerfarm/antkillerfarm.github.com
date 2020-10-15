@@ -245,6 +245,10 @@ https://mp.weixin.qq.com/s/pJe3-XiMwaIQmSzwSgTqhA
 
 硬核拆解GBDT，带你入门机器学习
 
+https://mp.weixin.qq.com/s/e80sWpiXykKHnq6RaLGEyQ
+
+GBDT与LR的区别总结
+
 # 关联规则挖掘
 
 ## 基本概念

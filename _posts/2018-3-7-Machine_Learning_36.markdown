@@ -139,14 +139,6 @@ https://mp.weixin.qq.com/s/_uscpKaRXZbwfMiWGoY0Uw
 
 多GPU加速学习，这是一份崭新的XGBoost库
 
-https://mp.weixin.qq.com/s/7RU3Nzy5qkTL8-2LOjg9qg
-
-从基础到实现：集成学习综合教程
-
-https://mp.weixin.qq.com/s/Pkc8KyDZ53ZGO5lNLVjoBg
-
-一份完备的集成学习手册！
-
 https://mp.weixin.qq.com/s/pwuOFj_rT5Z_XY9siZosKQ
 
 线性模型已退场，XGBoost时代早已来

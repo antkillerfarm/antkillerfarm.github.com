@@ -29,6 +29,10 @@ https://mp.weixin.qq.com/s/xcd9CHgE2_vEXrQ4MK019Q
 
 知识蒸馏方法的演进历史综述
 
+https://zhuanlan.zhihu.com/p/265906295
+
+知识蒸馏：如何用一个神经网络训练另一个神经网络
+
 https://mp.weixin.qq.com/s/qE1makMUIaFNrWk4nqOxDw
 
 最新《知识蒸馏》2020综述论文，30页pdf，悉尼大学

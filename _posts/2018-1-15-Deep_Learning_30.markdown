@@ -396,3 +396,7 @@ https://mp.weixin.qq.com/s/3xNRyEsw7QPCzvpQU6chDw
 https://mp.weixin.qq.com/s/k3HTFY3QLdiY_zj81NePAg
 
 腾讯AI Lab联合清华、港中文，万字解读图深度学习历史、最新进展与应用
+
+https://mp.weixin.qq.com/s/TSsKeADBuamrTPrRKUBpBQ
+
+Graph Normalization (GN)：为图神经网络学习一个有效的图归一化

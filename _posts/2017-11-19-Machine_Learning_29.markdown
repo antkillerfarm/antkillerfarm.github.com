@@ -250,3 +250,15 @@ https://mp.weixin.qq.com/s/I41c-i-6y-pPdZOeiMM_0Q
 https://mp.weixin.qq.com/s/z42pMRSOSt8GkOCRHcDtNg
 
 集成深度学习在生物信息学中的应用
+
+https://mp.weixin.qq.com/s/7RU3Nzy5qkTL8-2LOjg9qg
+
+从基础到实现：集成学习综合教程
+
+https://mp.weixin.qq.com/s/Pkc8KyDZ53ZGO5lNLVjoBg
+
+一份完备的集成学习手册！
+
+https://mp.weixin.qq.com/s/jQqSWEaxeUZ6UBeFZO7tJQ
+
+机器学习集成学习与模型融合
