@@ -307,6 +307,10 @@ https://zhuanlan.zhihu.com/mlexplained
 
 一个RL的专栏
 
+https://github.com/Skylark0924/Reinforcement-Learning-in-Robotics
+
+一个机器人RL的专栏
+
 # 比赛
 
 https://github.com/seungjaeryanlee/awesome-rl-competitions

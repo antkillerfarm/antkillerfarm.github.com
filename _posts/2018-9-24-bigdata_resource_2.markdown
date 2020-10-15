@@ -225,6 +225,10 @@ https://mp.weixin.qq.com/s/Ue4toNlLD0-zAstVJP2ynA
 
 爱奇艺大数据实时分析平台的建设与实践
 
+https://mp.weixin.qq.com/s/BYbv5CB5_Va4bfFhvr6o1A
+
+一口气说出“分布式追踪系统”原理！
+
 # 世说新语+++
 
 ## 2020.9（续）

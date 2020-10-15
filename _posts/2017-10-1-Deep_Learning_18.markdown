@@ -177,6 +177,10 @@ https://mp.weixin.qq.com/s/qVGveKfCfNKqJoqwMbUVKg
 
 长文总结半监督学习
 
+https://mp.weixin.qq.com/s/LAnP5OMuJFDhsfJWRoVMFw
+
+无监督领域迁移及文本表示学习的相关进展
+
 # 数学杂谈+
 
 https://www.zhihu.com/question/40167866

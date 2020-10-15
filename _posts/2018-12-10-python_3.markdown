@@ -406,6 +406,10 @@ https://mp.weixin.qq.com/s/tJsdM-4q_RC-5AhTw3y49w
 
 schedule使用进阶
 
+https://mp.weixin.qq.com/s/fwa3cbDI0fIjjztA60XuUQ
+
+同步与异步Python有何不同？
+
 ## mypy
 
 mypy是一个针对python语言的静态类型检查工具。

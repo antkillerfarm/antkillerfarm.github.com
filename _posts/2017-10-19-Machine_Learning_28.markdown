@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十八）——KNN, AutoML, 数据不平衡问题, 花式采样
+title:  机器学习（二十八）——KNN, AutoML, 数据不平衡问题
 category: ML 
 ---
 
@@ -314,45 +314,3 @@ https://mp.weixin.qq.com/s/7_-SSVZpxLfnwn7EmbGyZA
 https://mp.weixin.qq.com/s/fAHlrfchgkQ1Wuc8sfTlZg
 
 堪比Focal Loss！解决目标检测中样本不平衡的无采样方法
-
-# 花式采样
-
-- 分层采样（stratified random sampling）
-
-假设我们需要估计选举中每个候选人的平均票数。现假设该国有3个城镇：
-
-A镇有100万工人，B镇有200万工人，以及C镇有300万退休人员。
-
-如果我们选择从A、B和C镇分别抽取10、20和30个随机样本，那么我们可以在总样本一定的情况下，产生较小的估计误差。
-
-- 蓄水池采样(Reservoir sampling)
-
-采样过程：集合中总元素个数为n，随机选取k个元素。
-
-step1：首先将前k个元素全部选取。
-
-step2：对于第i个元素(i>k)，以概率k/i来决定是否保留该元素，如果保留该元素的话，则随机丢弃掉原有的k个元素中的一个(即原来某个元素被丢掉的概率是1/k)。
-
-结果：每个元素被最终被选取的概率都是k/n。
-
-- 欠采样（Undersampling）和过采样（Oversampling）
-
-![](/images/img3/sampling.png)
-
-- Tomek Links
-
-在这个算法中，我们最终从Tomek Links中删除了大多数元素，这为分类器提供了一个更好的决策边界。
-
-![](/images/img3/Tomek_Links.png)
-
-- SMOE（Synthetic Minority Oversampling Technique）
-
-在现有元素附近合并少数类的元素。
-
-![](/images/img3/SMOE.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/d3bpfnx-JGY7whqnHwAmWw
-
-机器学习中不得不知的5种采样方法，分层、水塘等！

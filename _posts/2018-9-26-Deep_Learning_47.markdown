@@ -398,3 +398,7 @@ CTR神经网络特征交叉汇总
 https://mp.weixin.qq.com/s/ioDkJHKZ4t1gvrMVl7kplg
 
 DMR：阿里深度召回排序模型
+
+https://mp.weixin.qq.com/s/F5HVrgE5tURTNdVRHADRPw
+
+充分利用显式&隐式反馈的深度网络

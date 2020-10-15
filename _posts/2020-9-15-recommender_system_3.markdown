@@ -299,6 +299,10 @@ https://mp.weixin.qq.com/s/ZtnaQrVIpVOPJpqMdLWOcw
 
 基于用户的协同过滤来构建推荐系统
 
+https://mp.weixin.qq.com/s/1hc7G4eBSyk-b8Dv4FsYbg
+
+万字长文解读电商搜索——如何让你买得又快又好
+
 # 深度推荐系统+
 
 https://zhuanlan.zhihu.com/p/100019681

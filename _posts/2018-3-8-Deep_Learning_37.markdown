@@ -390,3 +390,7 @@ libfacedetection算法开源
 https://mp.weixin.qq.com/s/DkvQ86tgU4DarsmY_qTLdg
 
 最快人脸检测遇敌手！ZQCNN vs libfacedetection
+
+https://zhuanlan.zhihu.com/p/234369216
+
+人脸识别最新进展

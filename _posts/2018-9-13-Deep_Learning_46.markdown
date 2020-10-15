@@ -241,6 +241,10 @@ https://mp.weixin.qq.com/s/yzCTQvjeyyF2IFORzrTBVg
 
 黑盒模型实际上比逻辑回归更具可解释性
 
+https://mp.weixin.qq.com/s/gAidXX4YrezZcSa6Jpl8nQ
+
+万字长文概览深度学习的可解释性研究
+
 # AutoDL+
 
 https://mp.weixin.qq.com/s/smAlLm-JZn_s2utSCVk7ig

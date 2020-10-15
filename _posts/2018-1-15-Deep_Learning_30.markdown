@@ -400,3 +400,7 @@ https://mp.weixin.qq.com/s/k3HTFY3QLdiY_zj81NePAg
 https://mp.weixin.qq.com/s/TSsKeADBuamrTPrRKUBpBQ
 
 Graph Normalization (GN)：为图神经网络学习一个有效的图归一化
+
+https://mp.weixin.qq.com/s/oBgPS0s_Fe2w4bmT__664A
+
+动态图上的深度学习-动态时间图网络建模技术综述

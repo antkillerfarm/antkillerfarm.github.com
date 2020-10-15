@@ -182,11 +182,17 @@ gcc还可以用`__attribute__((packed))`
 
 ----
 
-C++ 98标准到C++ 11标准之间长达13年的间隙，给了其他语言赶超并诟病C++的机会。一些厂商为了解决C++的问题，也加了不少私活，从而导致了版本兼容性的分裂。
+C++ 98标准到C++ 11标准之间长达13年的间隙，给了其他语言赶超并诟病C++的机会。一些厂商为了解决C++的问题，也加了不少私货，从而导致了版本兼容性的分裂。
 
 为了解决这个问题，C++标准委员会提出了新的版本发布策略：不再等待某项重要特性的成熟，再集体打包发布。而是成熟一项，发布一项。
 
 所以，可以预见的是，即使没有什么重要新特性，也一定会有C++ 20标准。
+
+----
+
+https://mp.weixin.qq.com/s/lTu8OCecwe9iHIn82bWQaA
+
+现代C++教程：高速上手 C++11/14/17/20，82页pdf
 
 ----
 
@@ -374,45 +380,3 @@ cout<<hex<<i<<endl; //输出十六进制数
 cout<<oct<<i<<endl; //输出八进制数
 cout<<dec<<i<<endl; //输出十进制数
 ```
-
-# typedef struct
-
-在C中：
-
-```c
-typedef struct Student
-{
-  int a;
-}Stu;
-```
-
-于是在声明变量的时候就可：`Stu stu1;`
-
-如果没有typedef就必须用`struct Student stu1;`来声明。
-
-这里的Stu实际上就是struct Student的别名。
-
-但是在C++中：
-
-```cpp
-struct Student
-{
-  int a;
-};
-```
-
-声明变量时可直接`Student stu2；`
-
-所以当给C++的库提供C的接口时，经常可以看见如下用法：
-
-```cpp
-typedef struct Student Student;
-```
-
-这样就可以抹平两者的差异了。
-
-参考：
-
-https://www.cnblogs.com/qyaizs/articles/2039101.html
-
-struct和typedef struct彻底明白了

@@ -9,6 +9,30 @@ category: resource
 
 # 机器人/无人驾驶参考资源
 
+https://mp.weixin.qq.com/s/K1EIKe6U7rmlYAeZkP5O1w
+
+一种新的智能车辆精确定位方法——路面车道线编码
+
+https://mp.weixin.qq.com/s/7kuMFIhJmjvVSRrmeAUE7w
+
+120页高清汽车构造图解，太NB了！每个人都该看看
+
+https://mp.weixin.qq.com/s/EzaqSrhOCnu5i6CooHpZEA
+
+将预测问题简化为选择问题——Apollo车道预测详解
+
+https://mp.weixin.qq.com/s/mc11Ozbf7-DpDagmy553OA
+
+基于多点预瞄最优控制的智能车辆路径跟踪
+
+https://mp.weixin.qq.com/s/VUsVB2mo8WMs0MoYNIhhqA
+
+深度学习应用于复杂系统控制
+
+https://mp.weixin.qq.com/s/g8MQyq9GFcUzP-W7fbNYRw
+
+四维图新：高精度地图构建的实时物体检测和分割
+
 https://mp.weixin.qq.com/s/3OTsr7P7Gyg5XG0Tb86lEQ
 
 谷俊丽：一万字解答ADAS系统的今天和未来
@@ -396,35 +420,3 @@ https://mp.weixin.qq.com/s/kgl7mz4bK7SywkbViY_qhQ
 https://mp.weixin.qq.com/s/3_famaAmkAN-4xVEupSXSA
 
 华为、北大等首创GAN剪枝算法，线上加速3倍以上
-
-https://mp.weixin.qq.com/s/DLNyb-GtzmSYuXcn6VQz4Q
-
-高效轻量级深度模型的研究和实践
-
-https://mp.weixin.qq.com/s/3SWtxtV9b0dFpvqfTNlqIg
-
-Slimmable Neural Networks
-
-https://mp.weixin.qq.com/s/lc7IoOV6S2Uz5xi7cPQUqg
-
-基于元学习和AutoML的模型压缩新方法
-
-https://zhuanlan.zhihu.com/p/64400678
-
-轻量卷积神经网络的设计
-
-https://mp.weixin.qq.com/s/pJk84bNzRn7LZZfQfSjs5A
-
-VarGFaceNet：地平线提出轻量级、有效可变组卷积的人脸识别网络
-
-https://mp.weixin.qq.com/s/cYimAphdyFO_XqKfT2Hbeg
-
-如何使用强化学习进行模型剪枝
-
-https://mp.weixin.qq.com/s/SgELZgoHzIvbg2-jzJw6Tw
-
-港科大、清华与旷视提出基于元学习的自动化神经网络通道剪枝网络
-
-https://mp.weixin.qq.com/s/q5-91AAKwBiYzTMmqadEcg
-
-RefineDetLite：腾讯提出轻量级高精度目标检测网络

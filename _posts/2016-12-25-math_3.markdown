@@ -226,6 +226,10 @@ http://blog.csdn.net/u010945683/article/details/49149815
 
 共轭先验分布
 
+https://mp.weixin.qq.com/s/B-yvH8ecirsROfYZ5CcZjg
+
+一文读懂正态分布与贝塔分布
+
 ## 多项分布和狄利克雷分布
 
 伯努利试验只有两个可能的实验结果，如果实验结果的个数超过2个，那么二项分布就变成了多项分布（multinomial distribution）：

@@ -185,6 +185,18 @@ https://mp.weixin.qq.com/s/seAKqsJDcPHAa_BZDfav_w
 
 谈谈自动驾驶仿真
 
+## 电气&机械
+
+电气&机械虽然不是控制系统算法的一部分，但却是控制系统的物理基础。
+
+https://mp.weixin.qq.com/s/tSrb5wljrCvy3TgfbsyjOQ
+
+汽车电源为何抛弃12V选择48V？
+
+https://mp.weixin.qq.com/s/XJVyoQTDljO8F6GVthsxKw
+
+汽车安全气囊结构原理
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/26988866
@@ -388,27 +400,3 @@ LiDAR技术介绍
 https://www.zhihu.com/question/305705783
 
 工厂里的自动化搬运是如何实现准确定位精准送达的？
-
-https://mp.weixin.qq.com/s/K1EIKe6U7rmlYAeZkP5O1w
-
-一种新的智能车辆精确定位方法——路面车道线编码
-
-https://mp.weixin.qq.com/s/7kuMFIhJmjvVSRrmeAUE7w
-
-120页高清汽车构造图解，太NB了！每个人都该看看
-
-https://mp.weixin.qq.com/s/EzaqSrhOCnu5i6CooHpZEA
-
-将预测问题简化为选择问题——Apollo车道预测详解
-
-https://mp.weixin.qq.com/s/mc11Ozbf7-DpDagmy553OA
-
-基于多点预瞄最优控制的智能车辆路径跟踪
-
-https://mp.weixin.qq.com/s/VUsVB2mo8WMs0MoYNIhhqA
-
-深度学习应用于复杂系统控制
-
-https://mp.weixin.qq.com/s/g8MQyq9GFcUzP-W7fbNYRw
-
-四维图新：高精度地图构建的实时物体检测和分割

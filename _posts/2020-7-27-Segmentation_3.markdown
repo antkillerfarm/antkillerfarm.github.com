@@ -209,6 +209,10 @@ https://mp.weixin.qq.com/s/fDwQRj-aoqUAvQ-q9wJNSg
 
 一文读懂RoIPooling、RoIAlign和RoIWarp
 
+https://zhuanlan.zhihu.com/p/161540817
+
+RoI Pooling与RoI Align的区别
+
 # 花式U-NET
 
 ## U-NET的另类用法

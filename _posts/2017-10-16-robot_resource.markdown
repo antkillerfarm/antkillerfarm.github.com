@@ -347,6 +347,10 @@ https://mp.weixin.qq.com/s/Sd6rfFAcoP86m98W3wSJkg
 
 ROS通信机制进阶
 
+https://mp.weixin.qq.com/s/3CYZidjGtJtjB5pgjSWfAA
+
+ROS运行管理
+
 ## PythonRobotics
 
 PythonRobotics是一个机器人算法方面的代码示例库。
@@ -408,18 +412,6 @@ openpilot是一个开源的自动驾驶（驾驶代理）。
 官网：
 
 https://github.com/commaai/openpilot
-
-## 电气&机械
-
-电气&机械虽然不是控制系统算法的一部分，但却是控制系统的物理基础。
-
-https://mp.weixin.qq.com/s/tSrb5wljrCvy3TgfbsyjOQ
-
-汽车电源为何抛弃12V选择48V？
-
-https://mp.weixin.qq.com/s/XJVyoQTDljO8F6GVthsxKw
-
-汽车安全气囊结构原理
 
 ## CAN
 
