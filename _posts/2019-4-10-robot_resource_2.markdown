@@ -199,6 +199,10 @@ https://mp.weixin.qq.com/s/XJVyoQTDljO8F6GVthsxKw
 
 ## 参考
 
+https://www.zhihu.com/question/404870865
+
+自动驾驶什么时候才会凉凉，估计还要多久？
+
 https://zhuanlan.zhihu.com/p/26988866
 
 机器人学习Robot Learning的发展

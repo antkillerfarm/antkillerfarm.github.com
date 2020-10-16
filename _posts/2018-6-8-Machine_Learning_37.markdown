@@ -194,6 +194,10 @@ https://mp.weixin.qq.com/s/4rJL3cccsjVqgrNDjcMIJw
 
 Prophet：Facebook创造的先知
 
+https://mp.weixin.qq.com/s/Ylvk3IqSWRD2K_AXMZwnoA
+
+手把手教你用Python的Prophet库进行时间序列预测
+
 ## Lebesgue积分
 
 ![](/images/img3/Riemann_Lebesgue.jpg)

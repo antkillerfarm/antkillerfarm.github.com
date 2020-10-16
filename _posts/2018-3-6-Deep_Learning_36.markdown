@@ -221,6 +221,10 @@ https://mp.weixin.qq.com/s/pfQiTjUhgwBNz76sKpij1Q
 
 使用2D卷积技术进行时间序列预测
 
+https://mp.weixin.qq.com/s/M-tz_FVRbgOttbojG1Qe_Q
+
+使用GANs生成时间序列数据：DoppelGANger论文详解
+
 ## TCN
 
 https://mp.weixin.qq.com/s/hE0elaJcywb084rmWZzTAw

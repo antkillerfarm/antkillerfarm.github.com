@@ -335,7 +335,7 @@ https://mp.weixin.qq.com/s/qpNbHKZ0V5do77jQlZDBBw
 
 从零开始学习Deep SORT+YOLO V3进行多目标跟踪
 
-# 世说新语++
+# 世说新语+++
 
 ## 2020.9（续）
 

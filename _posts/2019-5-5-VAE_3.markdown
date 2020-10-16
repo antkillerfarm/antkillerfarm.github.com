@@ -131,6 +131,10 @@ https://mp.weixin.qq.com/s/lnSMdOk8fYfdU4aGeI5j7Q
 
 未标注的数据如何处理？一文读懂变分自编码器VAE
 
+https://mp.weixin.qq.com/s/ELdemKdQixXgBAmlhagDAg
+
+基于可变自动编码器(VAE)的生成建模,理解可变自动编码器背后的原理
+
 https://zhuanlan.zhihu.com/p/27549418
 
 花式解释AutoEncoder与VAE
@@ -342,15 +346,3 @@ https://mp.weixin.qq.com/s/XMLYjw_wN-M8jluczkbcyw
 https://mp.weixin.qq.com/s/0coPJFrW7anW7QuqjPBt3g
 
 深度生成模型在信号处理领域的应用
-
-https://mp.weixin.qq.com/s/GJr-YtV84eV1KbkyVSkcBA
-
-超越BigGAN，DeepMind提出“史上最强非GAN生成器”VQ-VAE-2
-
-https://mp.weixin.qq.com/s/3ZHlWlO0FdnQTnskcrz2IA
-
-生成式模型入门：训练似然模型的技巧
-
-https://mp.weixin.qq.com/s/KtKYk08xEqwA43Phxw2-_w
-
-基于自编码器的通用性文本表征

@@ -167,6 +167,10 @@ https://mp.weixin.qq.com/s/-Aj9DsuDokSXIC6Nzv71gA
 
 图深度学习:基础、进展与应用，182页ppt
 
+https://ericdongyx.github.io/papers/slides-Graph-Rep-Learning-GNN-PreTraining-at-CCF-BAAI-2020.pdf
+
+微软东昱晓《图表示学习: 嵌入，GNNs与预训练》2020教程，100页ppt
+
 ## 综述
 
 《A Comprehensive Survey on Graph Neural Networks》
