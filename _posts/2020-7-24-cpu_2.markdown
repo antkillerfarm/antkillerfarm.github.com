@@ -103,6 +103,10 @@ https://mp.weixin.qq.com/s/4_eGNtXULAdK9UzsP1mwKA
 
 IGBT的现状与发展
 
+https://mp.weixin.qq.com/s/TG6C4P-DvhRTJ2FoU8PFtw
+
+IGBT基础与运用知识
+
 https://zhuanlan.zhihu.com/p/56864499
 
 CPU是怎么调节输入电压的？为什么要这么做？

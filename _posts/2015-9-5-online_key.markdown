@@ -271,4 +271,8 @@ https://www.eclipse.org/jetty/
 
 https://github.com/jasonish/jetty-springmvc-jsp-template
 
-一个Jetty+Spring MVC+JSP的demo。
+一个Jetty+Spring MVC+JSP的demo
+
+https://mp.weixin.qq.com/s/KqrEb_RSOTTVfj90Fo0rQA
+
+Tomcat架构原理解析到架构设计借鉴

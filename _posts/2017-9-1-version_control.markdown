@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  版本管理工具的前世今生, Kannel, Win10历险记, 运维工具集, Android研究（二）, ANTLR
+title:  版本管理工具的前世今生, Kannel, Win10历险记, 运维工具集, Android研究（二）, 负载均衡
 category: technology 
 ---
 
@@ -243,28 +243,54 @@ https://mp.weixin.qq.com/s/eEuNPtTaPwJ7hSghgeU32g
 
 Android Hook技术防范漫谈
 
-# ANTLR
+# 负载均衡
 
-ANTLR—Another Tool for Language Recognition，其前身是PCCTS，它为包括Java，C++，C#,python在内的语言提供了一个通过语法描述来自动构造自定义语言的识别器（recognizer），编译器（parser）和解释器（translator）的框架。
+正向代理，“它代理的是客户端，代客户端发出请求”。
 
-官网：
+反向代理，“它代理的是服务端，代服务端接收请求”。
 
-http://www.antlr.org/
+http://blog.csdn.net/gzh0222/article/details/8540604
 
-参考：
+lvs、haproxy、nginx负载均衡的比较分析
 
-http://yuzhouwan.com/posts/55501/
+https://mp.weixin.qq.com/s/SO1ZLSPaRkk8WwUl9u-JPA
 
-Antlr
+仅需这一篇，吃透“负载均衡”妥妥的
 
-https://www.ibm.com/developerworks/cn/java/j-lo-antlr/index.html
+https://mp.weixin.qq.com/s/3KZ99d94yqRDxEByn7nGWg
 
-使用Antlr开发领域语言
+QPS比Nginx提升60%，阿里Tengine负载均衡算法揭秘
 
-# MPS
+https://mp.weixin.qq.com/s/XsyXkaOIJ3m8sdCt8Pl5Ig
 
-MPS是jetbrains推出的用于构建DSL的工具。
+计算密集型服务的负载均衡策略
 
-官网：
+https://mp.weixin.qq.com/s/SmpUPJRK0TMdA0rkb_Q6VQ
 
-https://www.jetbrains.com/mps/
+什么是集群？什么又是负载均衡？
+
+## Nginx
+
+https://mp.weixin.qq.com/s/31DGDYpDHcYg-4qM4OczxA
+
+深入浅出Nginx
+
+https://mp.weixin.qq.com/s/h9sXZc4Y62f4KOSVXAB1Pg
+
+Nginx基本功能极速入门
+
+https://www.cnblogs.com/wcwnina/p/8728391.html
+
+Nginx相关介绍
+
+https://mp.weixin.qq.com/s/aCAuJQEB2pmL92OTEb_4Xg
+
+Nginx为什么这么快？
+
+https://mp.weixin.qq.com/s/3GSuB1tLe-G5hZPUiAXuVA
+
+Nginx，为什么依旧这么“香”？
+
+https://blog.csdn.net/yujing1314/article/details/107000737
+
+搞懂Nginx一篇文章就够了

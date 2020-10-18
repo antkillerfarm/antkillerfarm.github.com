@@ -418,13 +418,3 @@ https://mp.weixin.qq.com/s/HpgcPkAZb9R5jF-zsGcfcw
 https://mp.weixin.qq.com/s/YsuvIB56OxS9IBMQYSUdUg
 
 深度学习AI美颜系列——人像静态/动态贴纸特效算法实现
-
-## 参考
-
-https://github.com/ChanChiChoi/awesome-Face_Recognition
-
-不止面部识别，一切关于人脸AI的资源都能在这里下载
-
-https://mp.weixin.qq.com/s/FqH_5ztUWRDqb6X9_QggJw
-
-深度学习在人脸检测中的应用

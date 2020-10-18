@@ -371,3 +371,7 @@ https://mp.weixin.qq.com/s/H6OTkpdIgSdugDrEMBLybw
 https://mp.weixin.qq.com/s/KuZ-mZKt7bTWhzygK1lmSg
 
 加速目标检测
+
+https://zhuanlan.zhihu.com/p/261146248
+
+原生模型上的战斗

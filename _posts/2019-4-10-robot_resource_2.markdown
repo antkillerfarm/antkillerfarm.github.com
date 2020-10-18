@@ -107,6 +107,10 @@ https://mp.weixin.qq.com/s/pQUKFZRgG1LNPmE6oHY3GA
 
 CurcveLane-NAS：华为&中大提出一种结合NAS的曲线车道检测算法
 
+https://mp.weixin.qq.com/s/HSh029kg2-rOtD688vLq2w
+
+详解车道线检测算法之传统图像处理
+
 ## 组合导航
 
 https://mp.weixin.qq.com/s/F8aLNue_qDlMyTAznBLC7g

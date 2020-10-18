@@ -121,6 +121,10 @@ https://mp.weixin.qq.com/s/mktVMZ0Fdo0mubstpl2GDA
 
 Repulsion loss：专注于遮挡情况下的行人检测
 
+https://mp.weixin.qq.com/s/NF7j5NYB4TsYZWhA5VGfkQ
+
+Repulsion Loss：遮挡场景下的目标检测
+
 https://mp.weixin.qq.com/s/LZCYx-VyOAMWXBS76ttkFw
 
 如何在不同摄像头里识别行人？多层相似度感知CNN网络解析

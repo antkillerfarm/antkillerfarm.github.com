@@ -9,6 +9,22 @@ category: DL
 
 # Graph NN
 
+https://mp.weixin.qq.com/s/0rs8Wur7Iv6jSpFz5C-KNg
+
+来自IEEE Fellow的GNN综述
+
+https://mp.weixin.qq.com/s/cdbHoR_E_mpIdcvmNGWfDA
+
+掌握图神经网络GNN基本，看这篇文章就够了
+
+https://www.cnblogs.com/SivilTaram/p/graph_neural_network_1.html
+
+从图(Graph)到图卷积(Graph Convolution)：漫谈图神经网络模型 (一)
+
+https://www.cnblogs.com/SivilTaram/p/graph_neural_network_2.html
+
+从图(Graph)到图卷积(Graph Convolution)：漫谈图神经网络模型 (二)
+
 https://www.cnblogs.com/SivilTaram/p/graph_neural_network_3.html
 
 从图(Graph)到图卷积(Graph Convolution)：漫谈图神经网络模型 (三)
@@ -376,23 +392,3 @@ GraphSAGE算法原理，实现和应用
 https://zhuanlan.zhihu.com/p/142205899
 
 GraphSAGE源码解析
-
-https://mp.weixin.qq.com/s/C-Pa1jznQntyhocdxS-4Hg
-
-节点嵌入训练加快300倍！解读开源高性能图嵌入系统GraphVite
-
-https://mp.weixin.qq.com/s/9MWoCmtKPPVs3Rmko-7adQ
-
-10亿节点异构网络中，GCN如何应用？
-
-https://mp.weixin.qq.com/s/gE0jGuduKOQYqkTAuhC2Nw
-
-基于空间对齐的图卷积网络
-
-https://mp.weixin.qq.com/s/xJ05ctlYhyVy__6CaOm4WQ
-
-利用图Transformer实现基于知识图谱的文本生成
-
-https://zhuanlan.zhihu.com/p/81350196
-
-GAT（图注意力模型）

@@ -177,10 +177,6 @@ https://blog.csdn.net/linolzhang/article/details/82780071
 
 OCR文字识别
 
-https://zhuanlan.zhihu.com/p/98703562
-
-旋转目标(遥感/文字)检测方法整理（2017-19年）
-
 https://mp.weixin.qq.com/s/TDlxB6F8wwkcTgqPuWJQPw
 
 如何构建识别图像中字符的自动程序？一文解读OCR与HTR

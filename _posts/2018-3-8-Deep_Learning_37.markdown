@@ -11,6 +11,18 @@ category: DL
 
 ## 参考（续）
 
+https://github.com/ChanChiChoi/awesome-Face_Recognition
+
+不止面部识别，一切关于人脸AI的资源都能在这里下载
+
+https://mp.weixin.qq.com/s/FqH_5ztUWRDqb6X9_QggJw
+
+深度学习在人脸检测中的应用
+
+https://mp.weixin.qq.com/s/lVsQDOJ9hfsgYuAxguKxkA
+
+最新《端到端人脸识别》2020综述论文，44页pdf
+
 https://github.com/jiankangdeng/handbook
 
 人脸识别手册 (分类论文集)
@@ -90,6 +102,10 @@ https://zhuanlan.zhihu.com/p/56619497
 https://mp.weixin.qq.com/s/7cZTbTBttEvN6NvOarSFgw
 
 如何构建自定义人脸识别数据集
+
+https://zhuanlan.zhihu.com/p/234369216
+
+人脸识别最新进展
 
 https://mp.weixin.qq.com/s/Z06oUe7oExgkKZ8g2_PnPw
 
@@ -374,23 +390,3 @@ https://mp.weixin.qq.com/s/Chw_gLxQHdfe0hFJGMk-3A
 https://mp.weixin.qq.com/s/E9Esoe4VHvMdJNTbxF-sXA
 
 ShapeNet:超实时人脸特征点检测与形状拟合开源库
-
-https://mp.weixin.qq.com/s/pmnb_WnncL12T1IZoso5DA
-
-DeepID
-
-https://mp.weixin.qq.com/s/kH3-WUX4rc2SaLJcGzVLcQ
-
-如何检测极小人脸？试试超分辨率
-
-https://github.com/ShiqiYu/libfacedetection
-
-libfacedetection算法开源
-
-https://mp.weixin.qq.com/s/DkvQ86tgU4DarsmY_qTLdg
-
-最快人脸检测遇敌手！ZQCNN vs libfacedetection
-
-https://zhuanlan.zhihu.com/p/234369216
-
-人脸识别最新进展

@@ -225,6 +225,10 @@ https://mp.weixin.qq.com/s/0Iih4TBYUIPY5R4LfWxUNQ
 
 10种常用的图算法直观可视化解释
 
+https://zhuanlan.zhihu.com/p/266604288
+
+图中的谱聚类详解
+
 # 社交网络
 
 ## 信息传播模型
@@ -312,3 +316,7 @@ Philip S. Yu 团队最新综述！社区发现的深度学习方法：进展、�
 https://mp.weixin.qq.com/s/HGpay4KZwtz7t5QBIeE8Rg
 
 图机器学习经典算法louvain完全解读
+
+https://zhuanlan.zhihu.com/p/262235147
+
+图网络中的社群以及相关社群发现算法

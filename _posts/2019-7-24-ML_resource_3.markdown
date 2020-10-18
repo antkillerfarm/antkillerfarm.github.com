@@ -298,3 +298,11 @@ C语言发展史的点点滴滴
 https://www.zhihu.com/question/420656795
 
 有哪个高手可以解读“世界黑客编程大赛第一名的作品（97年Mekka ’97 4K Intro）”?
+
+https://mp.weixin.qq.com/s/21eCFfRZYyTstnw777-Fhg
+
+Java的战争（Oracle vs Google）
+
+https://mp.weixin.qq.com/s/af_MzLovqnt5JemXBQGdxg
+
+Java的战争(后续)

@@ -9,7 +9,59 @@ category: Nature
 
 # 新冠肺炎
 
-## 国内疫情（续）
+## SARS
+
+https://mp.weixin.qq.com/s/f5YPi3JuGMiB-FwMZK8F1g
+
+非典十三年祭：不说，并不代表遗忘
+
+https://news.yorkbbs.ca/2030923
+
+应对SARS疫情：多伦多的教训
+
+![](/images/img3/sars.jpg)
+
+https://mp.weixin.qq.com/s/Iu5y3AIgp7rgswjH89txJw
+
+哪些城市的新型肺炎疫情可能被低估：人流迁徙大数据+SARS传播路径
+
+https://mp.weixin.qq.com/s/cvIZzSBEg50FKqjf2x7fAg
+
+“小汤山”隔离模式，对武汉肺炎有何启发？
+
+https://mp.weixin.qq.com/s/ME6mAC0RgYsTLrHIz2kJSA
+
+被遗忘的案例：淘大花园往事与现实防控的意义
+
+https://mp.weixin.qq.com/s/kRp7Uw77BWSjFB5QOrydSg
+
+非典，已过去十七年：那些活着的后遗症患者
+
+## 国内疫情
+
+北京的和睦家是不错的综合性医院，先前也被列入发热门诊医疗机构，但是之后不久以“升级改造”为由关闭发热门诊。
+
+https://www.kunlunce.com/ssjj/guojipinglun/2020-02-11/140446.html
+
+李玲：疫情演化至今，是制度不足还是人的问题？
+
+----
+
+**混样检测**：将5~10个人的样本混在一起变成1个样本，这样就可以减少5~10倍时间。混样后的样品经检测如果出现阳性，再对这5~10人进行细查。
+
+----
+
+在全国封城阻拦的基础上。全国支援了湖北316台ECMO，其中支援武汉200台ECMO、支援了湖北16000台呼吸机，其中武汉6000台，支援武汉四万二千医护人员。抢建了火神山雷神山和16个方舱医院，新建4个自动化实验室，改建扩建23个实验室。
+
+然后全国动员了二百万以上的志愿者设卡堵截，停止人员流动。为了防疫，全国还累计紧急改建扩建了超过1000个实验室，进行本地快速核酸检测筛查。最多的时候全国一天就做了八十万例核酸检查。整个2月中国总计1100万例核酸检查。意大利全国目前只做了6万例筛查，实验室已经快崩溃了的样子。
+
+其中一百多台ECMO是以天价紧急进口的，中国现在ECMO存量500多，占世界三分之一还多。全国紧急增产医疗设备、耗材、药品。光直接医药费开支四百亿就丢进去了。
+
+全欧盟+英国，加起来才400多台，意大利全国才60几台。德国法国西班牙的存量应该也差不多。小国有的个位数的ECMO。
+
+欧洲还真以为中国医疗落后呢。
+
+----
 
 https://github.com/wuhan2020/wuhan2020
 
@@ -94,6 +146,10 @@ https://mp.weixin.qq.com/s/3NgA56CYBhKvaJnJVsoAzg
 https://mp.weixin.qq.com/s/ASAm6HeeZ7h-uqouyiPe1A
 
 改变新冠诊断标准的女医生张笑春：疫情结束了，我的家散了
+
+https://mp.weixin.qq.com/s/qDkcDsQrkrUbZQw5hJ9YEA
+
+仔细看过后封存，让这段全民痛楚恰当地结束
 
 ## 国外疫情
 
@@ -286,69 +342,3 @@ https://mp.weixin.qq.com/s/FoBmj4jCAaqfclS3F8WraQ
 https://mp.weixin.qq.com/s/XnvN9ocdFCKED_xthmXfOg
 
 欧美新冠疫苗三巨头，如果在一起吃饭会吐哪些“苦水”
-
-## 科研
-
-https://mp.weixin.qq.com/s/hG0AO43AicEN1o4GGg463w
-
-快速检测新型冠状病毒 是怎么做到的？
-
-https://mp.weixin.qq.com/s/aawHwJ8IIuHPE7Dc9yn1Ow
-
-从试剂盒到实验室 盘点一下影响确诊人数的客观因素
-
-https://mp.weixin.qq.com/s/zbqdndZTt4B0-v3KfIm5uA
-
-既没新样本，也没实验，如何猜到新冠病毒“喜欢”感染哪些细胞？
-
-https://mp.weixin.qq.com/s/T4GQWgnazMyljsa3Jg0E8Q
-
-一文分清P1、P2、P3、P4实验室四兄弟
-
-https://mp.weixin.qq.com/s/vWpQLlfHFcAPleuuEvJdhw
-
-中国人更易感染新冠肺炎吗？
-
-https://mp.weixin.qq.com/s/zu009F4bS_fcSwYEPdFb-g
-
-全球首次用抗体检测破解新冠传播链条，痊愈病人被证明是新加坡疫情传播者
-
-https://mp.weixin.qq.com/s/jm9vpHxbmpODFPi5phDW1g
-
-这款硬核抗疫游戏火了，20万玩家在线科研拯救世界，美国名校出品，Nature曾点名表扬
-
-https://mp.weixin.qq.com/s/NI2OtzUsRXUMoqfI11YV_A
-
-详解医学顶刊《柳叶刀》最新发表新型冠状病毒研究论文
-
-https://zhuanlan.zhihu.com/p/77352210
-
-“非典”真的是吃野味吃出来的吗？
-
-https://mp.weixin.qq.com/s/4pmzP2s9YZPR0yAX0XrjsQ
-
-流感病毒在衣服袖子和电梯按钮上能活多久？
-
-https://mp.weixin.qq.com/s/OaWBlQVr3DZ6HOMQFs9J3Q
-
-新型冠状病毒是这样被发现的……他们惊呼“这跟鼠疫一个级别！”
-
-https://view.inews.qq.com/a/20200130A08EVN00
-
-控制新发传染病，是以科研为主，还是以人民健康为主？公卫专家评武汉疫情
-
-----
-
-伤寒玛丽”（Typhoid Mary），本名叫玛丽·梅伦（Mary Mallon，1869年9月23日——1938年11月11日），生于爱尔兰，15岁时移民美国。起初，她给人当女佣。后来，她发现自己很有烹调才能，于是转行当了厨师，每月能赚到比做女佣高出很多的薪水。玛丽虽然身体一直健康，却携带伤寒杆菌。后来玛丽相继传染多人，最终被隔离在纽约附近的北兄弟岛（North Brother Island）上的传染病房。
-
-https://www.zhihu.com/answer/989275113
-
-如何看待女子从武汉回河南后至今无症状，其5名亲人患新型肺炎？
-
-----
-
-抗病毒药一般以vir结尾，例如Remdesivir。所以药品的中文名一般就是XXX韦。
-
-https://mp.weixin.qq.com/s/GAAeUD5ZDROltfxcoSFaeA
-
-期待救急，你了解“老药新用”吗？

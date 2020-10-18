@@ -402,3 +402,7 @@ DMR：阿里深度召回排序模型
 https://mp.weixin.qq.com/s/F5HVrgE5tURTNdVRHADRPw
 
 充分利用显式&隐式反馈的深度网络
+
+https://mp.weixin.qq.com/s/PkoREw_nF-QLHdn7GLDfjw
+
+深入理解推荐系统：特征交叉组合模型演化简史

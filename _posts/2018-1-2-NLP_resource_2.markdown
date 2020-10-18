@@ -157,6 +157,10 @@ https://mp.weixin.qq.com/s/ZmnP321nq_7wX4_HHskv_w
 
 文本分类冷启动和低资源？文本增强了解一下！
 
+https://mp.weixin.qq.com/s/2Ylw8WVjsZ5WXw2H3_cFMg
+
+NLP集大成之文本分类
+
 ## 情感分析
 
 https://mp.weixin.qq.com/s/5VrZTMlNxbgZmaeOxBps_w

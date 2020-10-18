@@ -145,6 +145,68 @@ category: essay
 
 # 电子科技史+
 
+https://baike.baidu.com/item/Full Mask - MPW/16508899
+
+Full Mask和MPW都是集成电路的一种流片（将设计结果交出去进行生产制造）方式。Full Mask是“全掩膜”的意思，即制造流程中的全部掩膜都为某个设计服务；而MPW（Multi Project Wafer），直译为多项目晶圆，即多个项目共享某个晶圆，也即同一次制造流程可以承担多个IC设计的制造任务。
+
+----
+
+1938年，楚泽（Konrad Zuse）发明了世界上第一台二进制计算机，称为 Z1（Zuse1）。在此基础上，他陆续制造了 Z2、Z3、Z - 计算机。其中，他在 1941 年制造出的 Z3 计算机是世界上第一台可编程的计算机，这是具有当时世界上最高水平编程语言的计算机。而且，Z3几乎实现了计算机之父冯·诺依曼在1946年所定义的现代计算机所有功能，楚泽也因此被称为现代计算机发明人之一。
+
+https://mp.weixin.qq.com/s/mcxD1TaD-r9alNydWQQ0Og
+
+意外惊喜：现存最古老计算机的操作手册重见天日
+
+----
+
+https://mp.weixin.qq.com/s/YdoIVBpn1dFUEzDEF5pYJw
+
+被迫离开工作近20年的公司，半导体老兵上演逆袭。林孝平，一个小儿麻痹患者。
+
+https://mp.weixin.qq.com/s/hIWvLLKWksNlO2eaVKcbAA
+
+那个延续摩尔定律的人的传奇人生。Mark Bohr，UIUC硕士（1978），美国工程院院士。
+
+https://mp.weixin.qq.com/s?__biz=MzI1NTA0MDUyMA==&mid=2456660188&idx=1&sn=b9dafaa60e10130442aac48f165800f7
+
+芯片春秋·ARM传
+
+https://mp.weixin.qq.com/s/bggtiz_a-Io8e9UQohxv1A
+
+紫光芯片王国是怎样建成的
+
+https://mp.weixin.qq.com/s/KOjA94ODbWBEOGS-DWCNyw
+
+美国本土的晶圆厂大盘点
+
+https://mp.weixin.qq.com/s/zzlJ1VjgR70jZQrBsUBLMA
+
+日本元器件三龙头的成功秘籍
+
+https://mp.weixin.qq.com/s/p7T-xcyWHDYueEE3V42dfg
+
+德州仪器往事
+
+https://m.uczzd.cn/webview/news?aid=7934419892823166898
+
+仅300员工却垄断全球, 7亿一台供不应求, 买一台都成了巨头（Canon Tokki）
+
+https://mp.weixin.qq.com/s/z4Aik3NgB6XE64YCZolM4w
+
+仙童兴亡史
+
+https://mp.weixin.qq.com/s/GuO87_b9g6jFAepIWxDw5g
+
+闪存技术的52年发展史
+
+https://mp.weixin.qq.com/s/TlCtyF2HG_5l4STgoMJ05w
+
+日本电子产业大败局
+
+https://mp.weixin.qq.com/s/TlhhDjKlLYslif0RtpNotw
+
+世界三大电子展(CES、MWC、IFA)的前世今生
+
 https://zhuanlan.zhihu.com/p/54493905
 
 PC和BIOS的故事
@@ -270,49 +332,3 @@ https://mp.weixin.qq.com/s/nQJV-dcNf3YYlC-6Jvv9SQ
 https://mp.weixin.qq.com/s/wFw03-uf7qCz7TNkFWqaBw
 
 硬核还原：显微镜手撸晶体管，逆向工程还原经典计算器
-
-https://mp.weixin.qq.com/s/Z6qAZEN1PomdLi0iE4BVPg
-
-一窥Intel第一款X86处理器的内部构造
-
-https://mp.weixin.qq.com/s/wPpSXps_ZVVCabIgM2YM-A
-
-英特尔第一颗处理器诞生背后的故事
-
-https://mp.weixin.qq.com/s/tyuz_73p5Vp_RGQB5y60Ow
-
-小时候电视上为啥会有彩条？
-
-https://mp.weixin.qq.com/s/-mlNqAhJ2Zudp4AdTB5gnA
-
-这个行业，居然无一中国公司进入全球前20（赛默飞）
-
-----
-
-https://baike.baidu.com/item/Full Mask - MPW/16508899
-
-Full Mask和MPW都是集成电路的一种流片（将设计结果交出去进行生产制造）方式。Full Mask是“全掩膜”的意思，即制造流程中的全部掩膜都为某个设计服务；而MPW（Multi Project Wafer），直译为多项目晶圆，即多个项目共享某个晶圆，也即同一次制造流程可以承担多个IC设计的制造任务。
-
-----
-
-1891年，有一个名叫史端乔（Almon Brown Strowger）的殡仪馆老板，就吃了人工交换机的大亏。
-
-他发现，打到自己店里的生意电话，总会被话务员转接到另一家殡仪馆。后来才知道，原来当地话务员是那家殡仪馆老板的堂弟。于是，他很生气，发誓一定要发明一个不需要人工操作的交换机。
-
-结果，他还真的做到了。
-
-他在自己的车库里，制作了世界上第一台步进制电话交换机。
-
-除了步进制交换机之外，大家经常在电视上看到的旋转式拨号盘，也是他发明的。
-
-https://mp.weixin.qq.com/s/QP8q478MWV1ilHxQek4JOA
-
-通信交换的百年沧桑
-
-----
-
-https://www.zhihu.com/answer/683230849
-
-HTC为什么衰败？
-
-好感慨啊。10年前，HTC全盛时期，我先后在两家公司做事，主要客户都是HTC。至今我还记得，初见HTC G1时，那惊艳的感觉。

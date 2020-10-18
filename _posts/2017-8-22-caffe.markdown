@@ -363,3 +363,29 @@ https://caffe2.ai/
 https://mp.weixin.qq.com/s/YYwmRwq5TN7JPah_arNyaQ
 
 Facebook开源产业级深度学习框架Caffe2
+
+# 电子科技史++
+
+https://mp.weixin.qq.com/s/Z6qAZEN1PomdLi0iE4BVPg
+
+一窥Intel第一款X86处理器的内部构造
+
+https://mp.weixin.qq.com/s/wPpSXps_ZVVCabIgM2YM-A
+
+英特尔第一颗处理器诞生背后的故事
+
+https://mp.weixin.qq.com/s/tyuz_73p5Vp_RGQB5y60Ow
+
+小时候电视上为啥会有彩条？
+
+https://mp.weixin.qq.com/s/-mlNqAhJ2Zudp4AdTB5gnA
+
+这个行业，居然无一中国公司进入全球前20（赛默飞）
+
+https://mp.weixin.qq.com/s/epI7bBrXq5tPPHDr8QyANQ
+
+1876年，第一场线上婚礼，用电报联结的浪漫
+
+https://mp.weixin.qq.com/s/N44XML7bXRyTU8DM40XDzg
+
+有史以来最贵的计算机bug，是如何让英特尔损失数十亿美元的

@@ -225,6 +225,10 @@ https://mp.weixin.qq.com/s/M-tz_FVRbgOttbojG1Qe_Q
 
 使用GANs生成时间序列数据：DoppelGANger论文详解
 
+https://mp.weixin.qq.com/s/PT5t3q2_9GF7_Wqa-3AiZg
+
+深度学习时序分类，175页pdf
+
 ## TCN
 
 https://mp.weixin.qq.com/s/hE0elaJcywb084rmWZzTAw

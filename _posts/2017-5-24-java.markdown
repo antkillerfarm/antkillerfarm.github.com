@@ -101,7 +101,7 @@ http://www.cnblogs.com/peida/archive/2013/04/24/3036689.html
 
 这种设计方式对调试程序、模块测试很有帮助。我们可以设定某个小模块中的类为主类，来单独测试该模块，而不必将整个系统运行起来。
 
-# static block
+## static block
 
 ```java
 class A  
@@ -392,3 +392,7 @@ https://mp.weixin.qq.com/s/tMUUwT0g3bzxyRgq5GeMWg
 https://mp.weixin.qq.com/s/_r1EU66tpHUrOyuGd9yNdA
 
 学会Java中的线程池，这一篇也许就够了！
+
+https://mp.weixin.qq.com/s/mdYZhkWkAILQz_JnVA5xvA
+
+深入AQS(AbstractQueuedSynchronizer)

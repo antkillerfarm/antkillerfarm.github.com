@@ -9,6 +9,26 @@ category: DL
 
 # Graph NN（续）
 
+https://mp.weixin.qq.com/s/C-Pa1jznQntyhocdxS-4Hg
+
+节点嵌入训练加快300倍！解读开源高性能图嵌入系统GraphVite
+
+https://mp.weixin.qq.com/s/9MWoCmtKPPVs3Rmko-7adQ
+
+10亿节点异构网络中，GCN如何应用？
+
+https://mp.weixin.qq.com/s/gE0jGuduKOQYqkTAuhC2Nw
+
+基于空间对齐的图卷积网络
+
+https://mp.weixin.qq.com/s/xJ05ctlYhyVy__6CaOm4WQ
+
+利用图Transformer实现基于知识图谱的文本生成
+
+https://zhuanlan.zhihu.com/p/81350196
+
+GAT（图注意力模型）
+
 https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247515242&idx=2&sn=7497044ec2f80215061fb0de8abb2f72
 
 用于Web级推荐系统的图卷积神经网络
@@ -404,3 +424,7 @@ Graph Normalization (GN)：为图神经网络学习一个有效的图归一化
 https://mp.weixin.qq.com/s/oBgPS0s_Fe2w4bmT__664A
 
 动态图上的深度学习-动态时间图网络建模技术综述
+
+https://mp.weixin.qq.com/s/N3A8N4DZC-x8YavEXdpfKA
+
+使用图进行特征提取：最有用的图特征机器学习模型介绍

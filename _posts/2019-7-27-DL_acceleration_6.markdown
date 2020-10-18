@@ -73,6 +73,10 @@ https://zhuanlan.zhihu.com/p/93287223
 
 从入门到放弃：深度学习中的模型蒸馏技术
 
+https://zhuanlan.zhihu.com/p/113549023
+
+浅谈知识蒸馏方法研究综述
+
 https://mp.weixin.qq.com/s/mFuxCl0Mzv5hmDFewWZkrw
 
 FAIR&MIT提出知识蒸馏新方法：数据集蒸馏

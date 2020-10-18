@@ -181,6 +181,10 @@ https://mp.weixin.qq.com/s/LAnP5OMuJFDhsfJWRoVMFw
 
 无监督领域迁移及文本表示学习的相关进展
 
+https://mp.weixin.qq.com/s/Tau5jzNbBd0NketdgytvAg
+
+计算机视觉中的自监督表示学习近期进展
+
 # 数学杂谈+
 
 https://www.zhihu.com/question/40167866
@@ -378,3 +382,7 @@ https://mp.weixin.qq.com/s/uptfQb8ELfpb5P4ySvofpg
 https://mp.weixin.qq.com/s/wMARrGbRanB2T0NIxISspA
 
 有趣的数学可视化
+
+https://mp.weixin.qq.com/s/T6ukSjODiTgC1T4pCZCY9g
+
+2，29，541，7919，104729……（素数的故事）

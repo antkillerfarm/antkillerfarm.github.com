@@ -287,6 +287,22 @@ https://mp.weixin.qq.com/s/_MpfRGYG_pleaEQMpQT5Mg
 
 # 人脸检测/识别+
 
+https://mp.weixin.qq.com/s/pmnb_WnncL12T1IZoso5DA
+
+DeepID
+
+https://mp.weixin.qq.com/s/kH3-WUX4rc2SaLJcGzVLcQ
+
+如何检测极小人脸？试试超分辨率
+
+https://github.com/ShiqiYu/libfacedetection
+
+libfacedetection算法开源
+
+https://mp.weixin.qq.com/s/DkvQ86tgU4DarsmY_qTLdg
+
+最快人脸检测遇敌手！ZQCNN vs libfacedetection
+
 https://mp.weixin.qq.com/s/PsToV8Z17tRzXW_AbaMNmg
 
 Blazeface人脸检测器

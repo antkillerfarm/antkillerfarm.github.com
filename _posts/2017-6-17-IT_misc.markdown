@@ -151,50 +151,26 @@ https://mp.weixin.qq.com/s/pH7e5An4SFWbzSWxv2CGug
 
 >李国鼎，1910～2001，中国近代政治家兼经济学家，台湾“科技教父”、总统府资政。中央大学物理系（1930）+剑桥大学博士肄业（1937年抗战回国）。
 
-https://mp.weixin.qq.com/s/YdoIVBpn1dFUEzDEF5pYJw
+----
 
-被迫离开工作近20年的公司，半导体老兵上演逆袭。林孝平，一个小儿麻痹患者。
+1891年，有一个名叫史端乔（Almon Brown Strowger）的殡仪馆老板，就吃了人工交换机的大亏。
 
-https://mp.weixin.qq.com/s/hIWvLLKWksNlO2eaVKcbAA
+他发现，打到自己店里的生意电话，总会被话务员转接到另一家殡仪馆。后来才知道，原来当地话务员是那家殡仪馆老板的堂弟。于是，他很生气，发誓一定要发明一个不需要人工操作的交换机。
 
-那个延续摩尔定律的人的传奇人生。Mark Bohr，UIUC硕士（1978），美国工程院院士。
+结果，他还真的做到了。
 
-https://mp.weixin.qq.com/s?__biz=MzI1NTA0MDUyMA==&mid=2456660188&idx=1&sn=b9dafaa60e10130442aac48f165800f7
+他在自己的车库里，制作了世界上第一台步进制电话交换机。
 
-芯片春秋·ARM传
+除了步进制交换机之外，大家经常在电视上看到的旋转式拨号盘，也是他发明的。
 
-https://mp.weixin.qq.com/s/bggtiz_a-Io8e9UQohxv1A
+https://mp.weixin.qq.com/s/QP8q478MWV1ilHxQek4JOA
 
-紫光芯片王国是怎样建成的
+通信交换的百年沧桑
 
-https://mp.weixin.qq.com/s/KOjA94ODbWBEOGS-DWCNyw
+----
 
-美国本土的晶圆厂大盘点
+https://www.zhihu.com/answer/683230849
 
-https://mp.weixin.qq.com/s/zzlJ1VjgR70jZQrBsUBLMA
+HTC为什么衰败？
 
-日本元器件三龙头的成功秘籍
-
-https://mp.weixin.qq.com/s/p7T-xcyWHDYueEE3V42dfg
-
-德州仪器往事
-
-https://m.uczzd.cn/webview/news?aid=7934419892823166898
-
-仅300员工却垄断全球, 7亿一台供不应求, 买一台都成了巨头（Canon Tokki）
-
-https://mp.weixin.qq.com/s/z4Aik3NgB6XE64YCZolM4w
-
-仙童兴亡史
-
-https://mp.weixin.qq.com/s/GuO87_b9g6jFAepIWxDw5g
-
-闪存技术的52年发展史
-
-https://mp.weixin.qq.com/s/TlCtyF2HG_5l4STgoMJ05w
-
-日本电子产业大败局
-
-https://mp.weixin.qq.com/s/TlhhDjKlLYslif0RtpNotw
-
-世界三大电子展(CES、MWC、IFA)的前世今生
+好感慨啊。10年前，HTC全盛时期，我先后在两家公司做事，主要客户都是HTC。至今我还记得，初见HTC G1时，那惊艳的感觉。

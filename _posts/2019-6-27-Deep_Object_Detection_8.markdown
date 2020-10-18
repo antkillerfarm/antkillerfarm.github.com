@@ -177,6 +177,14 @@ https://mp.weixin.qq.com/s/U8RXvWP7K1xM_tzhdttPfA
 
 BBAVectors：一种Anchor Free的旋转物体检测方法
 
+https://zhuanlan.zhihu.com/p/98703562
+
+旋转目标(遥感/文字)检测方法整理（2017-19年）
+
+https://zhuanlan.zhihu.com/p/163696749
+
+用CenterNet对旋转目标进行检测
+
 # 小目标检测
 
 https://mp.weixin.qq.com/s/8k0Mhver2mLnKmV8rVqJHQ

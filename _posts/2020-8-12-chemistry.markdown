@@ -151,6 +151,10 @@ https://www.zhihu.com/question/411561262
 
 现代制造的刀放到古代算不算名刀？
 
+https://mp.weixin.qq.com/s/HSpZsD7E3S0TAhk_VwUDUg
+
+诺贝尔化学奖历史上的遗珠之憾
+
 ## 化学工业
 
 https://wallstreetcn.com/articles/250536

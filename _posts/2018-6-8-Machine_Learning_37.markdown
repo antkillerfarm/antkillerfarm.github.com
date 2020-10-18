@@ -379,3 +379,7 @@ https://zhuanlan.zhihu.com/p/158853633
 https://zhuanlan.zhihu.com/p/235533342
 
 目标检测：Loss整理
+
+https://zhuanlan.zhihu.com/p/191355122
+
+NLP样本不均衡之常用损失函数对比

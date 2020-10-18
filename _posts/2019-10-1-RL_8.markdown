@@ -201,6 +201,10 @@ https://mp.weixin.qq.com/s/U_vDI_PJm-buubTwJgV9pw
 
 数学博弈论与应用，431页pdf，Mathematical Game Theory and Applications
 
+https://github.com/cheat-sheets/game-theory-cheat-sheet
+
+一个博弈论方面的Cheat Sheet。
+
 ## 概述
 
 要理解博弈论，可以通过博弈论和决策论的区别开始。
@@ -218,11 +222,3 @@ https://mp.weixin.qq.com/s/U_vDI_PJm-buubTwJgV9pw
 **静态博弈**：参与人同时做决策，常用标准型（normal form）表述其策略。如两人零和博弈等。
 
 **动态博弈**：参与人有先后顺序做决策，且后者能观察到前者所做的决策，如围棋等。常用扩展型（extensive form）来表述其策略，常用的扩展型表述为博弈树。
-
-非合作博弈根据参与人是否已知对方的信息，可以分为：完美信息博弈和不完美信息博弈。
-
-**完美信息博弈**：参与人对相关信息完全已知，如棋类游戏。玩家知道对方棋子所在的位置。
-
-**不完美信息博弈**：参与人对相关信息并不完全已知。如牌类游戏，玩家并不知道对手的牌是什么。
-
-当局中人的个数n为有限数且每个局中人的战略空间中的元素只有限个时，称博弈为**有限博弈（finite game）**。

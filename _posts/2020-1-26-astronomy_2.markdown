@@ -195,6 +195,14 @@ https://mp.weixin.qq.com/s/hZBYHvYktdJeOrAHTCKTTA
 
 如何肉眼识别夜空中的人造卫星？
 
+https://mp.weixin.qq.com/s/svBmf2HAPmaoyCy4Uzpjjw
+
+曾被老师评价"无法成为学者"，后来，她揭开了太阳的秘密（Cecilia Payne-Gaposchkin）
+
+https://mp.weixin.qq.com/s/I5eyZejWyL7Vdjh1cBByBw
+
+揭开宇宙中最黑暗的秘密
+
 # SpaceX
 
 2018.2

@@ -193,6 +193,10 @@ https://mp.weixin.qq.com/s/AO6VwMklnRQFqKMMv2NwYA
 
 Pandas处理时间序列数据的20个关键知识点
 
+https://mp.weixin.qq.com/s/DT5OqgzXGlvao4O2c_J74w
+
+再见，可视化！你好，Pandas！
+
 ## 并行Pandas
 
 https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw
@@ -472,3 +476,7 @@ https://mp.weixin.qq.com/s/GKrqAD0tud6WOFjNwQVVZw
 https://mp.weixin.qq.com/s/Lrag8Wilf4B6abVG2UcMZw
 
 详解seaborn可视化中的kdeplot、rugplot、distplot与jointplot
+
+https://mp.weixin.qq.com/s/-TwkUUjGdOiik835xNemfg
+
+14个Seaborn数据可视化图
