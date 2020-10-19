@@ -215,6 +215,10 @@ https://mp.weixin.qq.com/s/4N14KhSjNt3_TvVzu4IrgQ
 
 抽取式摘要：TextRank和BertSum
 
+https://mp.weixin.qq.com/s/Q64r99Fxtut9_9hW9smL7g
+
+从PageRank到反欺诈与TextRank
+
 # 强连通分量算法
 
 http://ishare.iask.sina.com.cn/f/34626295.html
