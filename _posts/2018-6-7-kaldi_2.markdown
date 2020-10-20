@@ -249,3 +249,41 @@ SpeechBrain是一个基于pytorch的语音工具包，目前（2019.9）正在�
 官网：
 
 https://speechbrain.github.io/
+
+# 可视化+
+
+https://mp.weixin.qq.com/s/mGgOhuF5PVWzB5cie_ox0A
+
+Github上10个开源免费的后台控制面板你值得拥有！
+
+https://mp.weixin.qq.com/s/BpruKFMyL37MDXvzkMxnzQ
+
+技术人最不该忽视可视化数据分析
+
+https://mp.weixin.qq.com/s/mnKLpa_uPzoMrh7E7mtupg
+
+别动不动就画折线图了，教你4种酷炫可视化方法
+
+https://mp.weixin.qq.com/s/jLBI1bEp0wDOqZo9zDsbDw
+
+全面！手把手教你决策树可视化
+
+https://mp.weixin.qq.com/s/2uP5i7eFWgYRA7mt_rR39g
+
+深度学习模型图难画论文难中？这个ML Visual利器帮你快速画出漂亮的模型图
+
+https://mp.weixin.qq.com/s/Y8PW3mKbUKgGPdxerqVNKA
+
+数学表达式一键变图，CMU开发实用工具Penrose，堪称图解界LaTeX
+
+https://mp.weixin.qq.com/s/EPstYM7u3O6mAWf3J5Lmkg
+
+无代码工具的自动化概念概述
+
+https://mp.weixin.qq.com/s/0BBvsqLFP1qRvO3TUaS8Tw
+
+10个流行的可视化面板
+
+https://mp.weixin.qq.com/s/VqHN-cIdNa8l1lKlu4AD4w
+
+24种可视化图表优缺点对比

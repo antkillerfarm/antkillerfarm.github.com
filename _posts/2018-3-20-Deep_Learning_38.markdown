@@ -265,6 +265,10 @@ https://mp.weixin.qq.com/s/GN0m5nWuV6VDYsTk0XLoDA
 
 pytorch中如何处理RNN输入变长序列padding
 
+https://mp.weixin.qq.com/s/bts9mdIrGIjO8UCUxSV-xg
+
+Transformer的潜在竞争对手QRNN论文解读，训练更快的RNN
+
 # 细粒度分类
 
 多标签分类问题，通常有两种解决方案，即转换为多个单标签分类问题，或者直接联合研究。前者，可以训练多个分类器，来判断该维度属性的是否，损失函数常使用softmax loss。后者，则直接训练一个多标签的分类器，所使用的标签为0,1,0,0…这样的向量，使用hanmming距离等作为优化目标。

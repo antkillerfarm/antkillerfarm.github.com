@@ -249,6 +249,10 @@ https://zhuanlan.zhihu.com/p/35978617
 
 线性动态系统与卡尔曼滤波
 
+https://mp.weixin.qq.com/s/2rX6iRTYBk47V29fSTAMQQ
+
+图解卡尔曼滤波(Kalman Filter)
+
 # Adaboost
 
 Adaboost是Yoav Freund和Robert Schapire于1997年提出的算法。两人后来因为该算法被授予Gödel Prize（2003）。

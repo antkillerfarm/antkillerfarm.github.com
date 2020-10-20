@@ -69,6 +69,24 @@ https://mp.weixin.qq.com/s/ubi1L1Zlh4yZqCjZnpD58w
 
 Capsule Network深度解读
 
+# 深度推荐系统+++
+
+https://mp.weixin.qq.com/s/D57jP5EwIx4Y1n4mteGOjQ
+
+深度学习推荐系统中各类流行的Embedding方法（上）
+
+https://mp.weixin.qq.com/s/N76XuNJ7yGzdP6NHk2Rs-w
+
+深度学习推荐系统中各类流行的Embedding方法（下）
+
+https://mp.weixin.qq.com/s/VHRV1Z6F8-3o6b-3v-5_BA
+
+深度时空网络、记忆网络与特征表达学习在CTR预估中的应用
+
+https://mp.weixin.qq.com/s/j34nJGomvR23ZJiqIFMoAQ
+
+推荐系统中稀疏特征Embedding的优化表示方法
+
 # LSTM进阶
 
 ## 《Long short-term memory》

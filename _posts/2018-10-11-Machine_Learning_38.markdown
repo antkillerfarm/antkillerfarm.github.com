@@ -304,3 +304,7 @@ https://mp.weixin.qq.com/s/iDUFr11-YX6oa6bLXWK3iQ
 https://mp.weixin.qq.com/s/S3xjk9QekWoni0eEvBhlLQ
 
 特征工程之处理时间序列数据
+
+https://mp.weixin.qq.com/s/15HXAIhmtYLbG3MjwEKDSQ
+
+从移动平均到指数平滑

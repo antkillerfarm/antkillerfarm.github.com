@@ -157,6 +157,10 @@ https://mp.weixin.qq.com/s/v3wauOfWw6TLlxTH4QKR6w
 
 一文详解MOS管
 
+https://mp.weixin.qq.com/s/kzQ-WqozBX-T8ZyS58MPnw
+
+一张图了解芯片到底是如何设计的
+
 ## 封装
 
 ### BGA & QFP
@@ -188,6 +192,10 @@ https://mp.weixin.qq.com/s/WBab6k4mIkZNzpvbgSbpVQ
 https://mp.weixin.qq.com/s/S-YGgvE6ey2t9_YmVmKOFg
 
 一份难得的MOS管封装分析报告
+
+https://mp.weixin.qq.com/s/FVcmCvimpoGCtCtm4RDtUg
+
+浅谈先进封装技术
 
 ## NUMA
 

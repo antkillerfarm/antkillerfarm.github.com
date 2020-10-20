@@ -181,6 +181,10 @@ http://www.qdaily.com/articles/18872.html
 
 杜邦要合并了，过去一百年，这家公司的发明都改变了些什么？
 
+https://mp.weixin.qq.com/s/MkVeQ7xYAHV8mA1zmdr0qg
+
+四川五通桥事故频发：“化工围城”之殇
+
 # Maxwell's equations
 
 | Name | Differential form | Integral form |

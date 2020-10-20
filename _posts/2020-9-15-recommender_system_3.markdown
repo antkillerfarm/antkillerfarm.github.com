@@ -303,6 +303,10 @@ https://mp.weixin.qq.com/s/1hc7G4eBSyk-b8Dv4FsYbg
 
 万字长文解读电商搜索——如何让你买得又快又好
 
+https://mp.weixin.qq.com/s/NJDfrGJgIE2KK_t-yJ-C9Q
+
+向量体系(Embedding)在严选的落地实践
+
 # 深度推荐系统+
 
 https://zhuanlan.zhihu.com/p/100019681
@@ -412,19 +416,3 @@ https://zhuanlan.zhihu.com/p/128988454
 https://mp.weixin.qq.com/s/Bpw-q3wISbCAKHsuYQo0QQ
 
 阿里DMR:融合Match中协同过滤思想的深度排序模型
-
-https://mp.weixin.qq.com/s/D57jP5EwIx4Y1n4mteGOjQ
-
-深度学习推荐系统中各类流行的Embedding方法（上）
-
-https://mp.weixin.qq.com/s/N76XuNJ7yGzdP6NHk2Rs-w
-
-深度学习推荐系统中各类流行的Embedding方法（下）
-
-https://mp.weixin.qq.com/s/VHRV1Z6F8-3o6b-3v-5_BA
-
-深度时空网络、记忆网络与特征表达学习在CTR预估中的应用
-
-https://mp.weixin.qq.com/s/j34nJGomvR23ZJiqIFMoAQ
-
-推荐系统中稀疏特征Embedding的优化表示方法

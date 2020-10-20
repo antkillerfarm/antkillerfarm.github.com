@@ -351,6 +351,10 @@ https://mp.weixin.qq.com/s/3CYZidjGtJtjB5pgjSWfAA
 
 ROS运行管理
 
+https://mp.weixin.qq.com/s/46GnLJw6hciXrkgNLvF12w
+
+ROS常用组件
+
 ## PythonRobotics
 
 PythonRobotics是一个机器人算法方面的代码示例库。

@@ -29,6 +29,10 @@ https://zhuanlan.zhihu.com/p/163266388
 
 Anchor-free应用一览：目标检测、实例分割、多目标跟踪
 
+https://mp.weixin.qq.com/s/4UEmRcSo0ZGoiLh6iKf_oQ
+
+ATSS：自动选择样本，消除Anchor based和Anchor free物体检测方法之间的差别
+
 # 其它目标检测网络
 
 ## A-Fast-RCNN
@@ -392,19 +396,3 @@ https://mp.weixin.qq.com/s/iW-k12CIO0gSx8Y6etTzgA
 https://mp.weixin.qq.com/s/JN1N-IqIL4tAh4rIkZcxpg
 
 Grid R-CNN解读：商汤最新目标检测算法
-
-https://mp.weixin.qq.com/s/_2DwSY6olj3wKy2xKukEGg
-
-商汤开源Grid R-CNN Plus：相比Grid RCNN，速度更快，精度更高
-
-https://mp.weixin.qq.com/s/baPfFVi7deEsCAFu3ColoQ
-
-CVPR2018目标检测算法总览
-
-https://mp.weixin.qq.com/s/t5p1xGKVnwd7wbiOzucFqQ
-
-基于深度学习的目标检测算法剖析与实现
-
-https://mp.weixin.qq.com/s/-zQZjHVs7bYyGkGuMUf3qg
-
-目标检测领域还有什么可做的？19个方向给你建议

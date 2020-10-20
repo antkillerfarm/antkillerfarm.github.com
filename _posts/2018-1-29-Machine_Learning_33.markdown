@@ -333,3 +333,19 @@ https://zhuanlan.zhihu.com/p/212842916
 https://mp.weixin.qq.com/s/Z5zFWr04Z2LBpf-6EXIgRg
 
 OpenImage冠军方案：在物体检测中为分类和回归任务使用各自独立的特征图
+
+https://mp.weixin.qq.com/s/_2DwSY6olj3wKy2xKukEGg
+
+商汤开源Grid R-CNN Plus：相比Grid RCNN，速度更快，精度更高
+
+https://mp.weixin.qq.com/s/baPfFVi7deEsCAFu3ColoQ
+
+CVPR2018目标检测算法总览
+
+https://mp.weixin.qq.com/s/t5p1xGKVnwd7wbiOzucFqQ
+
+基于深度学习的目标检测算法剖析与实现
+
+https://mp.weixin.qq.com/s/-zQZjHVs7bYyGkGuMUf3qg
+
+目标检测领域还有什么可做的？19个方向给你建议

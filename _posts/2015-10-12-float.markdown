@@ -240,7 +240,7 @@ https://mp.weixin.qq.com/s/wJAt-RqmsoyECLGgdlH6RA
 
 基于数据的分布式鲁棒优化算法及其应用
 
-# 物理+
+# 物理++
 
 https://mp.weixin.qq.com/s/cEGUr0kmP9UwlAoxgFuKGQ
 
@@ -261,3 +261,11 @@ https://mp.weixin.qq.com/s/2IZCvRo6YlBwsQwfDDMbxw
 https://www.zhihu.com/answer/1525306973
 
 10月15日《Nature》文章宣称首次在高压下实现室温超导，意味着什么？
+
+https://mp.weixin.qq.com/s/HT2jrh-ICmkgTBFLEl0Qpw
+
+从无量纲常数，到声速极限
+
+https://mp.weixin.qq.com/s/9ym_nblmAzSiiEeIFJ346g
+
+活了九十年十个月零两天的业余科学家，最伟大的显微镜制造者（Antonie Van Leeuwenhoek）

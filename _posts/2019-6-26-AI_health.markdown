@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  AI医疗, 可视化, 超算
+title:  AI医疗, 可视化
 category: resource 
 ---
 
@@ -207,7 +207,69 @@ https://mp.weixin.qq.com/s/QUoW4eD93_DPQ7kP_6jaZg
 
 >3D图形虽然“炫目”和“性感”，却没有传达任何额外的信息，迫使读者“处理冗余和无关的线索”。
 
-参考：
+----
+
+https://mp.weixin.qq.com/s/yF1XJ-_YteoZbVbdIvlbmg
+
+如果伦敦地铁图是数据科学家画的……
+
+>Henry Charles Beck，1902～1974，英国制图师。其1931年绘制的伦敦地铁图成为了现代地铁图的设计范例。
+
+----
+
+最早的Sankey diagram是Charles Minard绘制的1812年拿破仑俄国战役地图（1869年）。这张战役地图将一张桑基图叠加到一张地图上，是一张流程图与地图结合的图表。
+
+![](/images/img4/Nepoleon_1812.png)
+
+Minard的作品在当时相当受欢迎，至少在政府单位间是如此。1850年到1860年，法国政府部门首长希望在自己的画像中都有Minard画的图表。
+
+http://www.uux.cn/viewnews-84270.html
+
+史上最杰出的绘图大师——查尔斯．约瑟夫．米纳德（Charles Joseph Minard）
+
+https://www.ctocio.com/ccnews/16227.html
+
+人类历史上最有影响力的五个数据可视化信息图
+
+https://mp.weixin.qq.com/s/ItbTw9RQ2lR0WfmVLLkEzQ
+
+一张图看懂世界石油分布？用Python轻松搞定！
+
+----
+
+Florence Nightingale
+
+![](/images/img4/Nightingales.jpg)
+
+Florence Nightingale用数据图表的方式展示了那些可预防疾病（蓝色和灰色区域）导致的惊人死亡数字。看过南丁格尔的数据可视化信息图后，卫生和医疗成了英国军队的头号要务。
+
+## howmuch.net
+
+howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：
+
+![](/images/article/top_10_company.jpg)
+
+网址：
+
+https://howmuch.net/
+
+## Gephi
+
+Gephi是一个针对图和网络的可视化工具。
+
+官网：
+
+https://gephi.org/
+
+## Processing
+
+Processing是一个在可视化领域用的比较多的sketchbook，类似于Logo语言的威力加强版。支持Java、python等多种语言。
+
+官网：
+
+https://processing.org
+
+## 参考
 
 https://mp.weixin.qq.com/s/QL9R-bAerxnWIUgJhMz1Rw
 
@@ -232,12 +294,6 @@ https://mp.weixin.qq.com/s/mD732PqDtqYdFZSxZWtvvg
 https://zhuanlan.zhihu.com/c_122608198
 
 一个可视化方面的专栏
-
-https://mp.weixin.qq.com/s/yF1XJ-_YteoZbVbdIvlbmg
-
-如果伦敦地铁图是数据科学家画的……
-
->Henry Charles Beck，1902～1974，英国制图师。其1931年绘制的伦敦地铁图成为了现代地铁图的设计范例。
 
 https://www.zhihu.com/question/21664179
 
@@ -310,91 +366,3 @@ https://visualgo.net/zh
 https://mp.weixin.qq.com/s/ZuzmCHoo4i8e5TjZUOTPGg
 
 17种经典图表总结，轻松玩转数据可视化！
-
-https://mp.weixin.qq.com/s/mGgOhuF5PVWzB5cie_ox0A
-
-Github上10个开源免费的后台控制面板你值得拥有！
-
-https://mp.weixin.qq.com/s/BpruKFMyL37MDXvzkMxnzQ
-
-技术人最不该忽视可视化数据分析
-
-https://mp.weixin.qq.com/s/mnKLpa_uPzoMrh7E7mtupg
-
-别动不动就画折线图了，教你4种酷炫可视化方法
-
-https://mp.weixin.qq.com/s/jLBI1bEp0wDOqZo9zDsbDw
-
-全面！手把手教你决策树可视化
-
-https://mp.weixin.qq.com/s/2uP5i7eFWgYRA7mt_rR39g
-
-深度学习模型图难画论文难中？这个ML Visual利器帮你快速画出漂亮的模型图
-
-https://mp.weixin.qq.com/s/Y8PW3mKbUKgGPdxerqVNKA
-
-数学表达式一键变图，CMU开发实用工具Penrose，堪称图解界LaTeX
-
-https://mp.weixin.qq.com/s/EPstYM7u3O6mAWf3J5Lmkg
-
-无代码工具的自动化概念概述
-
-https://mp.weixin.qq.com/s/0BBvsqLFP1qRvO3TUaS8Tw
-
-10个流行的可视化面板
-
-https://mp.weixin.qq.com/s/VqHN-cIdNa8l1lKlu4AD4w
-
-24种可视化图表优缺点对比
-
-## howmuch.net
-
-howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：
-
-![](/images/article/top_10_company.jpg)
-
-网址：
-
-https://howmuch.net/
-
-## Gephi
-
-Gephi是一个针对图和网络的可视化工具。
-
-官网：
-
-https://gephi.org/
-
-## Processing
-
-Processing是一个在可视化领域用的比较多的sketchbook，类似于Logo语言的威力加强版。支持Java、python等多种语言。
-
-官网：
-
-https://processing.org
-
-# 超算
-
-![](/images/img3/power.aug.gif)
-
-![](/images/img3/Supercomputers-history.png)
-
-Top 500超算之间的差距竟有3个数量级，从榜首到落榜差不多要10年时间。OS从2015年开始全都是Linux了。Windows在超算领域从来没有风光过，之前没钱，自然斗不过UNIX，后来又被Linux打趴下了。
-
-Sunway TaihuLight和Sierra的算力相当，但core的数量竟是后者的6.7倍，功耗是后者的2.06倍。差距明显啊！
-
-https://www.top500.org/
-
-超算排名网站
-
-https://zhuanlan.zhihu.com/p/33956771
-
-超算排名之中的地区和架构之争
-
-----
-
-![](/images/img3/SC.png)
-
-https://mp.weixin.qq.com/s/gJWTiMCovGMQ8ye_TovdOw
-
-富士通的这颗芯片凭啥让日本走向了世界之巅？
