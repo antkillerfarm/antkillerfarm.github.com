@@ -406,3 +406,7 @@ https://mp.weixin.qq.com/s/F5HVrgE5tURTNdVRHADRPw
 https://mp.weixin.qq.com/s/PkoREw_nF-QLHdn7GLDfjw
 
 深入理解推荐系统：特征交叉组合模型演化简史
+
+https://mp.weixin.qq.com/s/OiN608x2cMF4SCpLEzTkWw
+
+DIEN: 阿里点击率预估之深度兴趣进化网络

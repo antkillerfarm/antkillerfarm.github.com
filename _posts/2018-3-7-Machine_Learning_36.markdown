@@ -253,6 +253,10 @@ https://mp.weixin.qq.com/s/RaWeiQwlQjCi1zz5S3tOmA
 
 LightGBM的参数详解以及如何调优
 
+https://mp.weixin.qq.com/s/9gEfkiZyZkoIgwRCYISQgQ
+
+你应该知道的LightGBM各种操作！
+
 # CatBoost
 
 这是Yandex推出的Boost工具包。
@@ -298,6 +302,10 @@ https://mp.weixin.qq.com/s/eCZHpFvtDYnpI6jm2nEtnQ
 https://mp.weixin.qq.com/s/pQ9_0d8sl5Sr5O360Risnw
 
 使用CatBoost进行不确定度估算：模型为何不确定以及如何估计不确定性水平
+
+https://mp.weixin.qq.com/s/o129MwpGzx8tzjUCkz1npw
+
+使用CatBoost和NODE建模表格数据对比测试
 
 # Parameter Server
 

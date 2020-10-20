@@ -352,6 +352,10 @@ https://mp.weixin.qq.com/s/46u-qyk00yZM_bIah-zs-A
 
 基于Kafka的实时计算引擎如何选择？Spark or Flink？
 
+https://mp.weixin.qq.com/s/059DK6v1j5yi9OlqdbI7Cg
+
+从面试角度一文学完Kafka
+
 # 计算机体系结构
 
 按照Michael J. Flynn的分类方法，计算机的体系结构可分为如下四类：

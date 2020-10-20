@@ -185,6 +185,10 @@ https://mp.weixin.qq.com/s/Tau5jzNbBd0NketdgytvAg
 
 计算机视觉中的自监督表示学习近期进展
 
+https://mp.weixin.qq.com/s/uYmHxScroi4jB2okmqwHcA
+
+半监督学习入门基础（一）
+
 # 数学杂谈+
 
 https://www.zhihu.com/question/40167866

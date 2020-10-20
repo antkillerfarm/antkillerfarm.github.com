@@ -342,3 +342,7 @@ https://github.com/horovod/horovod
 https://zhuanlan.zhihu.com/p/40578792
 
 Horovod-基于TensorFlow分布式深度学习框架
+
+https://zhuanlan.zhihu.com/p/158375055
+
+PyTorch单机多卡操作(分布式DataParallel，混合精度，Horovod)

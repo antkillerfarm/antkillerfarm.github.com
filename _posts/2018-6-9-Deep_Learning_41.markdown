@@ -153,6 +153,10 @@ https://mp.weixin.qq.com/s/06FWeGysBjU9wTMUx_eY0Q
 
 一文看懂自然语言处理中迁移学习的现状
 
+https://zhuanlan.zhihu.com/p/258562899
+
+小样本学习——概念、原理与方法简介（Few-shot learning）
+
 https://mp.weixin.qq.com/s/3AhiaNilRyTX_f7F306yng
 
 主动学习（Active Learning）-少标签数据学习

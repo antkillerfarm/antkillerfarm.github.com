@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十八）——Optimizer进阶, 花式采样, 时间序列分析（2）
+title:  机器学习（三十八）——Optimizer进阶, 特征工程, 时间序列分析（2）
 category: ML 
 ---
 
@@ -209,51 +209,131 @@ https://mp.weixin.qq.com/s/EmWRaAOTNYE0Maf6_r41oA
 
 Adam那么棒，为什么还对SGD念念不忘？一个框架看懂深度学习优化算法
 
-# 花式采样
+https://mp.weixin.qq.com/s/sXIOEGWdjE4_NWjVIe2d3Q
 
-- 分层采样（stratified random sampling）
+耶鲁大学等提出AdaBelief的新型优化器，速度快，训练稳，泛化强
 
-假设我们需要估计选举中每个候选人的平均票数。现假设该国有3个城镇：
+# 特征工程
 
-A镇有100万工人，B镇有200万工人，以及C镇有300万退休人员。
+https://mp.weixin.qq.com/s/ibiElLIgrT3wYx3tDYMMTw
 
-如果我们选择从A、B和C镇分别抽取10、20和30个随机样本，那么我们可以在总样本一定的情况下，产生较小的估计误差。
+理解特征工程
 
-- 蓄水池采样(Reservoir sampling)
+https://mp.weixin.qq.com/s/3Ce8uMf_Kyt-hEZUYfdh3g
 
-采样过程：集合中总元素个数为n，随机选取k个元素。
+特征工程之特征选择
 
-step1：首先将前k个元素全部选取。
+https://mp.weixin.qq.com/s/tOcyfK68jW7Tr-PGCvdXMA
 
-step2：对于第i个元素(i>k)，以概率k/i来决定是否保留该元素，如果保留该元素的话，则随机丢弃掉原有的k个元素中的一个(即原来某个元素被丢掉的概率是1/k)。
+特征工程最后一个要点:特征预处理
 
-结果：每个元素被最终被选取的概率都是k/n。
+https://mp.weixin.qq.com/s/GWMZ1jwbchE8O0r6EduYtQ
 
-- 欠采样（Undersampling）和过采样（Oversampling）
+一文讲解特征工程！经典外文PPT及中文解析
 
-![](/images/img3/sampling.png)
+https://mp.weixin.qq.com/s/c9iHdgtErVd_iitwny7_zw
 
-- Tomek Links
+Kaggle前1%参赛者经验：特征工程为何如此重要？
 
-在这个算法中，我们最终从Tomek Links中删除了大多数元素，这为分类器提供了一个更好的决策边界。
+https://mp.weixin.qq.com/s/xbPJD0uoRB-T1x09AUYdzg
 
-![](/images/img3/Tomek_Links.png)
+基于Python的自动特征工程——教你如何自动创建机器学习特征
 
-- SMOE（Synthetic Minority Oversampling Technique）
+https://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&mid=2651664000&idx=1&sn=ae6dda80df6d6278ae33b7bf7fbadcd2
 
-在现有元素附近合并少数类的元素。
+深度特征合成：自动化特征工程的运作机制
 
-![](/images/img3/SMOE.png)
+https://mp.weixin.qq.com/s/R1MhoCfnd5drvg2CGLVsPw
 
-参考：
+哪种特征分析法适合你的任务？Ian Goodfellow提出显著性映射的可用性测试
 
-https://mp.weixin.qq.com/s/d3bpfnx-JGY7whqnHwAmWw
+https://mp.weixin.qq.com/s/XSovbUDVTKe59DDaC1Kl8Q
 
-机器学习中不得不知的5种采样方法，分层、水塘等！
+如何进行特征表达，你知道吗？
 
-https://mp.weixin.qq.com/s/OZ-HfxBgFSvqeH8AEjGluQ
+https://mp.weixin.qq.com/s/vhr5gXoa0S4-QqFcK7uz-w
 
-采样算法哪家强？一个针对主流采样算法的比较
+模型吞噬特征工程
+
+https://mp.weixin.qq.com/s/zgKbG3r_B8d1qQHnrD2NCg
+
+特征工程宝典《Feature Engineering for Machine Learning》翻译及代码实现
+
+https://mp.weixin.qq.com/s/3Clq9ECs6M52Sg-_xMxJGw
+
+最核心的特征工程方法-分箱算法
+
+https://mp.weixin.qq.com/s/ghfh1x_lsEcoA8PFPXE46w
+
+练手扎实基本功必备：非结构文本特征提取方法
+
+https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247515402&idx=1&sn=ee3cd5c64a707246216a532fa3af422b
+
+面向机器学习和数据分析的特征工程
+
+https://mp.weixin.qq.com/s/NKKk8nRd0qn5XhxXgYWknw
+
+手把手带你入门和实践特征工程的万字笔记
+
+https://mp.weixin.qq.com/s/QZeyEN2DDM_etEki7uodMg
+
+一个神奇的特征选择轮子----MLFeatureSelection
+
+https://mp.weixin.qq.com/s/8NI-NayCg_gZmJ6-1FZ_DA
+
+一个Python特征选择工具，助力实现高效机器学习
+
+https://mp.weixin.qq.com/s/LbXHpnC19euqriCtSHeg1Q
+
+UC Berkeley提出特征选择新方法：条件协方差最小化
+
+https://mp.weixin.qq.com/s/V3w5Iu804O6PmnBjmwCbgw
+
+常用文本特征选择
+
+https://mp.weixin.qq.com/s/Rj-ObD-eM5zEfs5fkWamGQ
+
+三大特征选择策略，有效提升你的机器学习水准
+
+https://mp.weixin.qq.com/s/rNipJC5wljzCT6Aq5gvvqw
+
+一款功能强大的特征选择工具（FeatureSelector）
+
+https://mp.weixin.qq.com/s/Bu34hPN0XAj6GmLXuQwVsQ
+
+风控特征—关系网络特征工程入门实践
+
+https://mp.weixin.qq.com/s/thd_dtd4erqSf7p6ZON72w
+
+自动特征工程在推荐系统中的研究
+
+https://zhuanlan.zhihu.com/p/96420594
+
+特征工程架构性好文
+
+https://mp.weixin.qq.com/s/demEVr5ZXKeSLbBIO1XgsQ
+
+AutoFIS: 因数分解模型中用于预测点击率的自动特征交互选择
+
+https://mp.weixin.qq.com/s/Z5cs6X1tFq9uKGfo3aHgmw
+
+简介机器学习中的特征工程
+
+https://mp.weixin.qq.com/s/BNiDjgBpdGQjCY-b96htlQ
+
+机器学习中的特征工程总结
+
+https://mp.weixin.qq.com/s/VBA02WHBJmU77RPLtIzprA
+
+特征工程入门：应该保留和去掉那些特征
+
+https://mp.weixin.qq.com/s/BfZ9BQXtOsEXCkAR3QYHhA
+
+特征工程了解一下
+
+https://mp.weixin.qq.com/s/dPnb7Mho-sQA6euvCdQV7w
+
+类别特征目标编码
 
 # 时间序列分析
 

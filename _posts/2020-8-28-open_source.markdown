@@ -78,3 +78,29 @@ MiniGUI惨淡之后，飞漫公司转战移动APP领域，但从网站上的版�
 3.魅族。魅族在Wince时代，曾有一款深度定制的M8，当初曾寄望于成为国产的iPhone。事实上，如果没有Android的话，这个目标差不多就实现了。并不是说达到iPhone的水平，而是说除了iPhone之外，别人都没有我的好。
 
 可惜Android的出现，使得一般的手机厂商也能造出现代的智能手机，于是魅族的这番努力，其实并没有得到多少的回报。总算魅族并不是手机解决方案商，而是制造商，没办法标新立异，却也不至于被别人甩下来。因此，魅族现在的日子，也还说的过去。
+
+# 数学杂谈++
+
+https://mp.weixin.qq.com/s/SlbWkTrO3UlWd15jrKYvdg
+
+史上最强律师，用代数暴力破解军事密码，无情吊打荷兰数学家，被誉为“代数学之父”（弗朗索瓦·韦达）
+
+https://mp.weixin.qq.com/s/_HnWeNxH6p2VAMC8tG2gFg
+
+斯坦福再出变态神人！竟用一个数学模型，暴力解开“掰手指”的奥秘！看完我跪了......
+
+https://mp.weixin.qq.com/s/Rw3O5MDbEIfgmWCVgFe95w
+
+五次方程的微分方程解法
+
+https://mp.weixin.qq.com/s/eYzhlrV822X8mHsOGgv1Qw
+
+如何计算一只鸡的表面积？看完中外神人的奇葩解法，我发誓下辈子不做理科生......
+
+https://mp.weixin.qq.com/s/43XCOdNqeKxMmpfkX3JTGw
+
+一个退休程序员，用高中几何方法，让百年数学难题逼近理论极限（万有覆盖问题）
+
+https://mp.weixin.qq.com/s/a1TEh1c1VZ345rmj8UiPgA
+
+“科比球”背后的数学

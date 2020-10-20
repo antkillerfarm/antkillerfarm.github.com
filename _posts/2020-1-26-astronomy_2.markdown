@@ -7,9 +7,39 @@ category: Nature
 * toc
 {:toc}
 
-# 黑洞成像
+# 黑洞成像（续）
 
-## Katie Bouman（续）
+## Katie Bouman
+
+![](/images/img2/Katie_Bouman.jpg)
+
+Katherine Louise Bouman，1990年生，University of Michigan本科（2011）+MIT博士（2017）。EHT计划的成像团队的负责人。
+
+![](/images/img2/Katie_Bouman.png)
+
+上图是Katie和装有黑洞成像数据的半吨重硬盘的合影。
+
+论文：
+
+《Computational Imaging for VLBI Image Reconstruction》
+
+代码：
+
+https://github.com/achael/eht-imaging
+
+个人主页：
+
+https://people.csail.mit.edu/klbouman/
+
+----
+
+Margaret Heafield Hamilton，1936年生，美国计算机科学家。发明了“software engineering”一词。在MIT期间，负责领导了Apollo计划的飞行软件的设计工作。
+
+![](/images/img2/Margaret_Hamilton.jpg)
+
+上图是1969年Margaret和她的小组所编写的软件代码的合影。
+
+----
 
 Hedy Lamarr，1913～2000，美国好莱坞默片时期著名女演员，生于奥地利一个富裕的犹太人银行家庭。她曾与克拉克·盖博等顶级男星合作，主演了多部热门影片。19岁时在电影《神魂颠倒》中裸泳成为世界电影史上第一位裸体出镜的女演员。一生曾有过八次婚姻。
 
@@ -170,38 +200,6 @@ https://mp.weixin.qq.com/s/6acgwIaDYC3VjMmdVSYYKQ
 https://mp.weixin.qq.com/s/UDHAT3vLMS_yo4w0wbcpJQ
 
 十问北斗
-
-https://zhuanlan.zhihu.com/p/29213504
-
-从沙漏和星盘到六分仪和航海钟——恼人的航海定位
-
-https://mp.weixin.qq.com/s/SQPVTNYBU8JIRPYFqsXgtA
-
-神秘力量？上帝使者？彗星的“人设”早就崩塌了
-
-https://mp.weixin.qq.com/s/pAUiirbHyfrEgWUE21x93Q
-
-另一个费曼（Richard Feynman的妹妹Joan Feynman）
-
-https://mp.weixin.qq.com/s/iznVJzjkYA2I5Y-P0NKrdA
-
-美丽天文图片下，有哪些不为人知的“套路”
-
-https://mp.weixin.qq.com/s/XqHSyuQEIztQHA2viJfb8A
-
-一个新的宇宙学争议
-
-https://mp.weixin.qq.com/s/hZBYHvYktdJeOrAHTCKTTA
-
-如何肉眼识别夜空中的人造卫星？
-
-https://mp.weixin.qq.com/s/svBmf2HAPmaoyCy4Uzpjjw
-
-曾被老师评价"无法成为学者"，后来，她揭开了太阳的秘密（Cecilia Payne-Gaposchkin）
-
-https://mp.weixin.qq.com/s/I5eyZejWyL7Vdjh1cBByBw
-
-揭开宇宙中最黑暗的秘密
 
 # SpaceX
 

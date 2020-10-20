@@ -314,6 +314,10 @@ https://mp.weixin.qq.com/s/x1Z4jkMvfo4mD-_rKqvjuw
 
 在PyTorch中使用DistributedDataParallel进行多GPU分布式模型训练
 
+https://mp.weixin.qq.com/s/jnV_4REXOR-ema1kOC95Nw
+
+跨越重重“障碍”，我从PyTorch转换为了TensorFlow Lite
+
 # 模型压缩与加速进阶++
 
 https://mp.weixin.qq.com/s/NsvjADgQZrYkUGNN6fzXVg

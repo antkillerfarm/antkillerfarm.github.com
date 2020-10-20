@@ -83,6 +83,10 @@ https://www.zhihu.com/answer/106715405
 
 金星每八年的运行轨迹真的是五角形吗？
 
+https://www.zhihu.com/question/425376324
+
+根据牛顿万有引力定律可知，太阳对月球的引力大于地球对月球的引力，为什么月球仍然绕地球运动？（希尔球）
+
 ----
 
 ![](/images/img3/Chicxulub-Crater-Yucatan.jpg)
@@ -178,6 +182,18 @@ https://mp.weixin.qq.com/s/iNr-Ou6iBAeccFlAC_3Wlg
 https://mp.weixin.qq.com/s/P085EcjDO7XhBpx1mAmrdg
 
 20岁就得出诺奖级别的成果，却惨遭导师手撕论文、学界猛烈抨击，含冤50年后终获诺奖被认可（Subrahmanyan Chandrasekhar）
+
+https://mp.weixin.qq.com/s/svBmf2HAPmaoyCy4Uzpjjw
+
+曾被老师评价"无法成为学者"，后来，她揭开了太阳的秘密（Cecilia Payne-Gaposchkin）
+
+https://mp.weixin.qq.com/s/I5eyZejWyL7Vdjh1cBByBw
+
+揭开宇宙中最黑暗的秘密
+
+https://mp.weixin.qq.com/s/XqHSyuQEIztQHA2viJfb8A
+
+一个新的宇宙学争议
 
 ## 流浪地球
 
@@ -316,33 +332,3 @@ Atacama Large Millimeter/submillimeter Array是EHT计划的主力天文台。由
 https://mp.weixin.qq.com/s/NIMcgoXzTeAAumODJfEH_A
 
 在地球上，哪里能看到最澄澈的星空？（冰穹A）
-
-## Katie Bouman
-
-![](/images/img2/Katie_Bouman.jpg)
-
-Katherine Louise Bouman，1990年生，University of Michigan本科（2011）+MIT博士（2017）。EHT计划的成像团队的负责人。
-
-![](/images/img2/Katie_Bouman.png)
-
-上图是Katie和装有黑洞成像数据的半吨重硬盘的合影。
-
-论文：
-
-《Computational Imaging for VLBI Image Reconstruction》
-
-代码：
-
-https://github.com/achael/eht-imaging
-
-个人主页：
-
-https://people.csail.mit.edu/klbouman/
-
-----
-
-Margaret Heafield Hamilton，1936年生，美国计算机科学家。发明了“software engineering”一词。在MIT期间，负责领导了Apollo计划的飞行软件的设计工作。
-
-![](/images/img2/Margaret_Hamilton.jpg)
-
-上图是1969年Margaret和她的小组所编写的软件代码的合影。

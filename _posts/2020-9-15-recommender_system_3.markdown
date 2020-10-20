@@ -307,6 +307,10 @@ https://mp.weixin.qq.com/s/NJDfrGJgIE2KK_t-yJ-C9Q
 
 向量体系(Embedding)在严选的落地实践
 
+https://mp.weixin.qq.com/s/iGC_zJnHxyRBnKR1gH1czg
+
+智能重排序在推荐场景中的应用
+
 # 深度推荐系统+
 
 https://zhuanlan.zhihu.com/p/100019681

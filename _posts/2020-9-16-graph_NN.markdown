@@ -171,6 +171,10 @@ https://ericdongyx.github.io/papers/slides-Graph-Rep-Learning-GNN-PreTraining-at
 
 微软东昱晓《图表示学习: 嵌入，GNNs与预训练》2020教程，100页ppt
 
+https://mp.weixin.qq.com/s/eu9JVcB83lDW0Um9InUk2Q
+
+图神经网络与网络嵌入前沿进展，142页ppt
+
 ## 综述
 
 《A Comprehensive Survey on Graph Neural Networks》

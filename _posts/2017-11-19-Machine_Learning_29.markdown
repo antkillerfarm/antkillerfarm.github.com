@@ -167,6 +167,10 @@ https://mp.weixin.qq.com/s/7GamrrteCUsePWStOuHbVw
 
 贝叶斯推断随机过程，449页pdf
 
+https://mp.weixin.qq.com/s/kqs5Gwr1XgldX-Yz2iJjzw
+
+贝叶斯优化(Bayesian Optimization)
+
 # Beam Search
 
 ## 概述

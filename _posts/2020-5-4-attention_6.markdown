@@ -193,6 +193,10 @@ https://mp.weixin.qq.com/s/5HZULHPI3-HJypvAMXEOcQ
 
 MT-BERT在文本检索任务中的实践
 
+https://mp.weixin.qq.com/s/0aZdGzcGW5ZA020rhX0qSQ
+
+BERT4Rec:使用Bert进行序列推荐
+
 # Transformer进阶
 
 https://mp.weixin.qq.com/s/-Y7Qy-5aJNJ5bx8QJf3k2w

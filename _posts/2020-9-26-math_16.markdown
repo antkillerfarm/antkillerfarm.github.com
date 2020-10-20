@@ -181,6 +181,18 @@ https://mp.weixin.qq.com/s/BwMAiziWQuyKaru8xB9tHw
 
 ----
 
+当年洛伦茨求解这3个变量的方程组用的是一台Royal McBee LGP-30计算机，放置在MIT第24号楼第五层。这台机器比书桌还大，重约260公斤，可是速度极其缓慢，连今天的笔记本电脑都比它快上一百万倍。
+
+当年，计算机程序是由两位年轻女助手艾伦·费特（Ellen Fetter）和玛格丽特·哈密顿（Margaret Hamilton）负责编写的。她们都是来到洛伦茨实验室工作后才开始学习编写计算机程序。
+
+这位Margaret Hamilton就是后来编写阿波罗登月程序的女主。
+
+https://mp.weixin.qq.com/s/REiUxKrLCRWeRCusVlooYQ
+
+蝴蝶效应和混沌故事（Edward Norton Lorenz）
+
+----
+
 https://www.sohu.com/a/223262966_115479
 
 史上最贱的数学题
@@ -264,27 +276,3 @@ https://blog.csdn.net/ChangHengyi/article/details/80577318
 https://mp.weixin.qq.com/s/AQgFded7GWp1yPE_voT0QQ
 
 看完这45组酷炫数学动图，原来数学这么有意思！
-
-https://mp.weixin.qq.com/s/SlbWkTrO3UlWd15jrKYvdg
-
-史上最强律师，用代数暴力破解军事密码，无情吊打荷兰数学家，被誉为“代数学之父”（弗朗索瓦·韦达）
-
-https://mp.weixin.qq.com/s/_HnWeNxH6p2VAMC8tG2gFg
-
-斯坦福再出变态神人！竟用一个数学模型，暴力解开“掰手指”的奥秘！看完我跪了......
-
-https://mp.weixin.qq.com/s/Rw3O5MDbEIfgmWCVgFe95w
-
-五次方程的微分方程解法
-
-https://mp.weixin.qq.com/s/eYzhlrV822X8mHsOGgv1Qw
-
-如何计算一只鸡的表面积？看完中外神人的奇葩解法，我发誓下辈子不做理科生......
-
-https://mp.weixin.qq.com/s/43XCOdNqeKxMmpfkX3JTGw
-
-一个退休程序员，用高中几何方法，让百年数学难题逼近理论极限（万有覆盖问题）
-
-https://mp.weixin.qq.com/s/a1TEh1c1VZ345rmj8UiPgA
-
-“科比球”背后的数学

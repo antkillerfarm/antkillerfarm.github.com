@@ -155,6 +155,10 @@ https://mp.weixin.qq.com/s/HSpZsD7E3S0TAhk_VwUDUg
 
 诺贝尔化学奖历史上的遗珠之憾
 
+https://mp.weixin.qq.com/s/V0Jh1Qv-RXoSK63Z5C092g
+
+一滴水里最少有几个水分子？5个还是6个？
+
 ## 化学工业
 
 https://wallstreetcn.com/articles/250536
@@ -205,3 +209,29 @@ https://mp.weixin.qq.com/s/MkVeQ7xYAHV8mA1zmdr0qg
 | $$\mathbf{v}$$ | velocity |
 | $$\nabla \cdot$$ | divergence operator |
 | $$\nabla \times$$ | curl operator |
+
+# 天文杂谈+
+
+https://zhuanlan.zhihu.com/p/29213504
+
+从沙漏和星盘到六分仪和航海钟——恼人的航海定位
+
+https://mp.weixin.qq.com/s/SQPVTNYBU8JIRPYFqsXgtA
+
+神秘力量？上帝使者？彗星的“人设”早就崩塌了
+
+https://mp.weixin.qq.com/s/pAUiirbHyfrEgWUE21x93Q
+
+另一个费曼（Richard Feynman的妹妹Joan Feynman）
+
+https://mp.weixin.qq.com/s/iznVJzjkYA2I5Y-P0NKrdA
+
+美丽天文图片下，有哪些不为人知的“套路”
+
+https://mp.weixin.qq.com/s/hZBYHvYktdJeOrAHTCKTTA
+
+如何肉眼识别夜空中的人造卫星？
+
+https://mp.weixin.qq.com/s/lNh3jxjvRbpZ3zZYSZuOVg
+
+曾为地球“挺身而出”的磁场

@@ -406,3 +406,7 @@ https://zhuanlan.zhihu.com/p/151640509
 https://mp.weixin.qq.com/s/-SU5cNbklI31WLmTawZJIQ
 
 自注意模型学不好？这个方法帮你解决！
+
+https://mp.weixin.qq.com/s/K5EbO0djcXHN4K5LQiMh5g
+
+Triplet Attention机制让Channel和Spatial交互更加丰富
