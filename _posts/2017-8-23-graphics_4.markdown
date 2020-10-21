@@ -175,6 +175,10 @@ https://mp.weixin.qq.com/s/9345Y-Ag-2AWPur-NAdiEw
 
 HOG特征详解与行人检测
 
+https://mp.weixin.qq.com/s/eRyCrvZGjsd9ZQ_NbNwB3w
+
+梯度直方图(HOG)用于图像多分类和图像推荐
+
 # Haar
 
 ![](/images/article/Haar.png)

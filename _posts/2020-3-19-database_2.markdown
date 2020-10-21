@@ -287,6 +287,10 @@ https://mp.weixin.qq.com/s/L3ydmN1TP5YsxJ97WeFXGg
 
 万字总结：学习MySQL优化原理，这一篇就够了！
 
+https://mp.weixin.qq.com/s/vmKPKn9Y1FPY8MWy2Xcu6A
+
+MySQL的自增ID用完了，怎么办？
+
 # 数据库参考资源
 
 https://www.cnblogs.com/ahu-lichang/p/10899747.html

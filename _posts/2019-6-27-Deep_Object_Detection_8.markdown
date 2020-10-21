@@ -33,6 +33,10 @@ https://mp.weixin.qq.com/s/4UEmRcSo0ZGoiLh6iKf_oQ
 
 ATSS：自动选择样本，消除Anchor based和Anchor free物体检测方法之间的差别
 
+https://mp.weixin.qq.com/s/UhHh_DFoxKW5K3OCe3Bjqg
+
+目标检测：Anchor-Free时代
+
 # 其它目标检测网络
 
 ## A-Fast-RCNN

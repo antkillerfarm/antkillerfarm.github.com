@@ -179,6 +179,10 @@ https://www.cnblogs.com/binbinjx/p/5626916.html
 
 cmake添加头文件目录，链接动态、静态库
 
+https://mp.weixin.qq.com/s/67lPVyWUXG0SPJm4AOHmBA
+
+一份CMAKE中文实战教程
+
 ## cross compile
 
 需要用`-DCMAKE_TOOLCHAIN_FILE=XXXX`来指定toolchain file。后者的示例如下：

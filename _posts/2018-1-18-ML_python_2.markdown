@@ -197,6 +197,10 @@ https://mp.weixin.qq.com/s/DT5OqgzXGlvao4O2c_J74w
 
 再见，可视化！你好，Pandas！
 
+https://mp.weixin.qq.com/s/37FucjQldvIs33lxkhWpcQ
+
+在pandas中使用数据透视表（pivot_table）
+
 ## 并行Pandas
 
 https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw

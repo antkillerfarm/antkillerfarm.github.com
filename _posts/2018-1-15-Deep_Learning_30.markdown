@@ -413,6 +413,10 @@ https://mp.weixin.qq.com/s/3xNRyEsw7QPCzvpQU6chDw
 
 图神经网络的重要分支：时间图网络
 
+https://mp.weixin.qq.com/s/GibBqURtF_Oak8NOKDjEPg
+
+时序图神经网络
+
 https://mp.weixin.qq.com/s/k3HTFY3QLdiY_zj81NePAg
 
 腾讯AI Lab联合清华、港中文，万字解读图深度学习历史、最新进展与应用

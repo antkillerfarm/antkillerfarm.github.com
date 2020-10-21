@@ -87,6 +87,10 @@ https://mp.weixin.qq.com/s/j34nJGomvR23ZJiqIFMoAQ
 
 推荐系统中稀疏特征Embedding的优化表示方法
 
+https://mp.weixin.qq.com/s/0qidwbxyfTkODTw2DIiRWw
+
+DCN-M：Google提出改进版DCN，用于大规模排序系统的特征交叉学习
+
 # LSTM进阶
 
 ## 《Long short-term memory》

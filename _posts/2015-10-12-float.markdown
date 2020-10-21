@@ -240,36 +240,44 @@ https://mp.weixin.qq.com/s/wJAt-RqmsoyECLGgdlH6RA
 
 基于数据的分布式鲁棒优化算法及其应用
 
-# 物理++
+# 图数据库+
 
-https://mp.weixin.qq.com/s/cEGUr0kmP9UwlAoxgFuKGQ
+## 其他图数据库
 
-想减肥么？要不把体重秤摆在树荫下试试？（光压）
+开源的、流行的图数据库主要有以下几种：Neo4j、OrientDB、ArangoDB、JanusGraph、Dgraph。
 
-https://mp.weixin.qq.com/s/IG4ViVlLuOwPlUzpliyKjg
+Neo4j历史悠久，且长期处于图数据库领域的龙头地位，但它开源的社区版本只支持单机，不支持分布式。
 
-谁统一了两种基本力？（Steven Weinberg）
+OrientDB和ArangoDB起步比较早，最初是一个单机的图数据库，后来随着用户数据量的不断增加，增加了分布式模式，但支持的不是很好。
 
-https://mp.weixin.qq.com/s/bg9w0RGjUl0xIAu8Mjl57w
+JanusGraph和Dgraph发展的比较晚，从设计之初就考虑了分布式和扩展性，所以对分布式支持的非常好，且都是完全开源免费的。
 
-她是奠基“核裂变”理论的物理学家，却拒绝了曼哈顿计划（Lise Meitner）
+## 参考
 
-https://mp.weixin.qq.com/s/2IZCvRo6YlBwsQwfDDMbxw
+https://mp.weixin.qq.com/s/YfNlDoGOlHtpG9VFBCZHnQ
 
-美国原子弹之父被骂了9年！最后他上台领奖，竟一把推开了总统......（Julius Robert Oppenheimer）
+VLDB2019特邀报告《图处理》综述进展，滑铁卢大学数据库大牛M. Tamer Özsu教授，170页ppt
 
-https://www.zhihu.com/answer/1525306973
+https://mp.weixin.qq.com/s/PkFscGq8tjzc3HQiF-SSsA
 
-10月15日《Nature》文章宣称首次在高压下实现室温超导，意味着什么？
+在图数据上做机器学习，应该从哪个点切入？
 
-https://mp.weixin.qq.com/s/HT2jrh-ICmkgTBFLEl0Qpw
+https://mp.weixin.qq.com/s/uYP8Eyz36JyTWska0hvtuA
 
-从无量纲常数，到声速极限
+字节跳动自研万亿级图数据库&图计算实践
 
-https://mp.weixin.qq.com/s/9ym_nblmAzSiiEeIFJ346g
+https://mp.weixin.qq.com/s/uZStvVZp3UHLY3BppgaRLg
 
-活了九十年十个月零两天的业余科学家，最伟大的显微镜制造者（Antonie Van Leeuwenhoek）
+JanusGraph VS Dgraph：贝壳分布式图数据库技术选型之路
 
-https://mp.weixin.qq.com/s/FAG0mFIimWQ875oeshpAOA
+https://mp.weixin.qq.com/s/3rLTRtSWbf31aNRDs4rmoQ
 
-极短时间测量
+Dgraph简介篇
+
+https://mp.weixin.qq.com/s/rhtaVTON761wxGDqT9EIoQ
+
+Dgraph原理篇
+
+https://mp.weixin.qq.com/s/5nBS0FiOynhGS6mY2dZ1ng
+
+分布式图数据库在贝壳的应用实践

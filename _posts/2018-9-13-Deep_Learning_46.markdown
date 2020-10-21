@@ -197,6 +197,10 @@ https://mp.weixin.qq.com/s/KpEJYs6ANLqUbVz1CazF6Q
 
 微信OCR（2）--深度序列学习助力文字识别
 
+https://mp.weixin.qq.com/s/6STRTuKdrM0OP3qrVArfCg
+
+OCR in the Wild：文本检测和识别的SOTA
+
 # AI可解释性
 
 XAI(Explainable Artificial Intelligence)
