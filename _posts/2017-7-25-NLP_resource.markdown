@@ -215,6 +215,10 @@ https://mp.weixin.qq.com/s/KCDnacvBpsgZPodfeEpQ9g
 
 4种常见的NLP实践思路
 
+https://mp.weixin.qq.com/s/lwZQzd4B-EKWv7e91qo18w
+
+自然语言处理机器推理，124页ppt
+
 ## 分词
 
 https://mp.weixin.qq.com/s/Xy_jaOex72pLe4wwieKeUg
@@ -386,27 +390,3 @@ Facebook开源了两个无监督翻译模型，只用单语就能训练双语
 https://mp.weixin.qq.com/s/37qri3eFwF3kOWZxGUISzw
 
 你可能不再需要Attention：这是一个贼简单的神经机器翻译架构
-
-https://mp.weixin.qq.com/s/yA_dvLZ7adBd6Xw2MufhWw
-
-程序翻译新突破：UC伯克利提出树到树的程序翻译神经网络
-
-https://mp.weixin.qq.com/s/jBjs5OKZEcfpoYesz6Pk3w
-
-杨振：低资源神经机器翻译
-
-https://mp.weixin.qq.com/s/KG_X-wFPgWupb0FOWL9LIw
-
-三种提升多语言翻译模型的高效策略
-
-https://mp.weixin.qq.com/s/r9WRkmApBaHvlCQ5F5ypjg
-
-神奇的神经机器翻译：从发展脉络到未来前景
-
-https://mp.weixin.qq.com/s/8xGPwxLZX0ZJ586fZogkpg
-
-NAACL2019-使用感知句法词表示的句法增强神经机器翻译
-
-https://mp.weixin.qq.com/s/OkjYWxWB0C3qnWTe6vSQVA
-
-ST-NMT：软目标模板助力神经机器翻译

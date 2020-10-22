@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度语音识别（二）——Deep Speech, 语音合成, 语音识别参考资源
+title:  深度语音识别（二）——Deep Speech, 语音合成
 category: speech 
 ---
 
@@ -361,6 +361,24 @@ https://mp.weixin.qq.com/s/TTPpOOxSLbCgOmAsI9TLiw
 
 百度发布Deep Voice 3：全卷积注意力机制TTS系统
 
+# 语音分离
+
+https://mp.weixin.qq.com/s/T96S0b7Lp9YWR4cRcMQr6A
+
+一文概览基于深度学习的监督语音分离
+
+https://mp.weixin.qq.com/s/XP4NVYMmKj9RLsgonP3ooQ
+
+无需进行滤波后处理，利用循环推断算法实现歌唱语音分离
+
+https://mp.weixin.qq.com/s/9QrahPP1gDM3eMNgx91spA
+
+深度学习也能实现“鸡尾酒会效应”：谷歌提出新型音频-视觉语音分离模型
+
+https://mp.weixin.qq.com/s/-ULMtt2GsrUk8B-kC6AnXw
+
+入门语音分离，从鸡尾酒问题开始！
+
 # 语音识别参考资源
 
 https://zhuanlan.zhihu.com/p/69637495
@@ -370,11 +388,3 @@ https://zhuanlan.zhihu.com/p/69637495
 https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=400189223&idx=1&sn=1cb32bee42de626443ebadbf065ec79c
 
 百度贾磊：汉语语音识别技术重大突破：LSTM+CTC详解
-
-https://www.zhihu.com/question/46829056
-
-语音识别领域的最新进展目前是什么样的水准？
-
-https://www.zhihu.com/question/29168274
-
-语音识别中，如何理解HMM是一个生成模型，而DNN是一个判别模型呢？

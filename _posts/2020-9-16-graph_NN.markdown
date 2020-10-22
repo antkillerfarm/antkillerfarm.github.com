@@ -175,6 +175,10 @@ https://mp.weixin.qq.com/s/eu9JVcB83lDW0Um9InUk2Q
 
 图神经网络与网络嵌入前沿进展，142页ppt
 
+https://mp.weixin.qq.com/s/CKOjtSekoChNkhrpBn4dUg
+
+图机器学习Neo4j算法与应用，142页pdf
+
 ## 综述
 
 《A Comprehensive Survey on Graph Neural Networks》

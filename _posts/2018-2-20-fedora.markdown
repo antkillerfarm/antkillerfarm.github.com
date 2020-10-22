@@ -319,3 +319,11 @@ https://mp.weixin.qq.com/s/bPqnaMqhi_4p1mwjmvyoIw
 https://mp.weixin.qq.com/s/wmzwvnOToqCkKJz5yw-USQ
 
 低调的Linux文件系统家族
+
+https://mp.weixin.qq.com/s/30Zh_8H6QfDgJuG9e9ORSQ
+
+使用gdb调试多进程程序
+
+https://mp.weixin.qq.com/s/4ZdnacKuqkpWTso6P1Rmjg
+
+如何调试多线程程序

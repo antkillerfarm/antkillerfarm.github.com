@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度语音识别（三）——语音合成参考资源
+title:  深度语音识别（三）——语音识别/语音合成参考资源
 category: speech 
 ---
 
@@ -8,6 +8,14 @@ category: speech
 {:toc}
 
 # 语音识别参考资源（续）
+
+https://www.zhihu.com/question/46829056
+
+语音识别领域的最新进展目前是什么样的水准？
+
+https://www.zhihu.com/question/29168274
+
+语音识别中，如何理解HMM是一个生成模型，而DNN是一个判别模型呢？
 
 https://zhuanlan.zhihu.com/p/24979135
 
@@ -57,17 +65,9 @@ https://mp.weixin.qq.com/s/0AvV268s3TZ0z8WwtJv6sw
 
 一文概览语音识别中尚未解决的问题
 
-https://mp.weixin.qq.com/s/T96S0b7Lp9YWR4cRcMQr6A
-
-一文概览基于深度学习的监督语音分离
-
 http://mp.weixin.qq.com/s/xRA9Xh-FTrhbIg0wLnfzhA
 
 温正棋谈语音质检方案：从关键词检索到情感识别
-
-https://mp.weixin.qq.com/s/XP4NVYMmKj9RLsgonP3ooQ
-
-无需进行滤波后处理，利用循环推断算法实现歌唱语音分离
 
 https://mp.weixin.qq.com/s/GZI4uvCR3QzZDNddpBX2OQ
 
@@ -96,10 +96,6 @@ https://mp.weixin.qq.com/s/mRmbrUJ2MgeDxbZn_0UiIQ
 https://mp.weixin.qq.com/s/xR172RUG3JO59_2cJj_U2A
 
 显著超越流行长短时记忆网络，阿里提出DFSMN语音识别声学模型
-
-https://mp.weixin.qq.com/s/9QrahPP1gDM3eMNgx91spA
-
-深度学习也能实现“鸡尾酒会效应”：谷歌提出新型音频-视觉语音分离模型
 
 https://wenku.baidu.com/view/942891aba98271fe910ef9e3.html
 

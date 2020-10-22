@@ -283,6 +283,8 @@ http://wiki.openwrt.org/doc/devel/gdb
 
 http://h4x3rotab.github.io/blog/2014/02/27/openwrtxia-de-gdbyuan-cheng-diao-shi/
 
+OpenWRT下的GDB远程调试
+
 除了上面列出的内容之外，我还遇到了一个问题：我所用平台的SDK将`-Os`作为全局的编译选项。这在平时自然没什么，但调试的时候就有问题了。如何将`-Os`换成`-O0`呢？可参见以下示例：
 
 ```c

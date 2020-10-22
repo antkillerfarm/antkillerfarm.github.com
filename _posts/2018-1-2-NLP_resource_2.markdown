@@ -9,6 +9,32 @@ category: resource
 
 # NLP参考资源
 
+## 机器翻译（续）
+
+https://mp.weixin.qq.com/s/yA_dvLZ7adBd6Xw2MufhWw
+
+程序翻译新突破：UC伯克利提出树到树的程序翻译神经网络
+
+https://mp.weixin.qq.com/s/jBjs5OKZEcfpoYesz6Pk3w
+
+杨振：低资源神经机器翻译
+
+https://mp.weixin.qq.com/s/KG_X-wFPgWupb0FOWL9LIw
+
+三种提升多语言翻译模型的高效策略
+
+https://mp.weixin.qq.com/s/r9WRkmApBaHvlCQ5F5ypjg
+
+神奇的神经机器翻译：从发展脉络到未来前景
+
+https://mp.weixin.qq.com/s/8xGPwxLZX0ZJ586fZogkpg
+
+NAACL2019-使用感知句法词表示的句法增强神经机器翻译
+
+https://mp.weixin.qq.com/s/OkjYWxWB0C3qnWTe6vSQVA
+
+ST-NMT：软目标模板助力神经机器翻译
+
 ## 文本分类
 
 http://www.jianshu.com/p/0273c377c34e
@@ -377,52 +403,16 @@ https://mp.weixin.qq.com/s/O4DNQbEuvFapZmYWa2jRUQ
 
 命名实体识别的深度学习综述
 
-## 文本摘要
+## 文本匹配
 
-https://mp.weixin.qq.com/s/jk1XgnuydrsTg3HvV0CVvw
+https://zhuanlan.zhihu.com/p/111769969
 
-当深度学习遇见自动文本摘要
+谈谈文本匹配和多轮检索
 
-https://mp.weixin.qq.com/s/NGpDrYilAeuH6pQji0ujaA
+https://mp.weixin.qq.com/s/5toWf90bJeSMGso6HaNTMQ
 
-文本摘要简述
+腾讯提出用于文本匹配的多信道信息交叉模型，在真实任务中表现优异
 
-https://mp.weixin.qq.com/s/bcpjkuRtErSRfJPsAnAWWQ
+https://zhuanlan.zhihu.com/p/111768258
 
-用深度学习做文本摘要
-
-https://zhuanlan.zhihu.com/p/111266615
-
-文本摘要(text summarization)最新研究热点、发展趋势，里程碑论文推荐
-
-https://mp.weixin.qq.com/s/z7BlFHfStYEtNzl1EorokA
-
-文章太长不想看？ML文本自动摘要了解一下
-
-https://mp.weixin.qq.com/s/gDZyTbM1nw3fbEnU--y3nQ
-
-Python利用深度学习进行文本摘要的综合指南
-
-https://mp.weixin.qq.com/s/byKEY726MfEtKwsip-go1Q
-
-AI攒论文指日可待？Transformer生成论文摘要方法已出
-
-https://zhuanlan.zhihu.com/p/83596443
-
-文本自动摘要任务的“不完全”心得总结
-
-https://blog.csdn.net/zhangxb35/article/details/78626799
-
-Text Summarization综述
-
-https://zhuanlan.zhihu.com/p/84730122
-
-BottleSum——文本摘要论文系列解读
-
-https://mp.weixin.qq.com/s/vjnENPxXzrjKW2ACD3HDkA
-
-抽取式摘要之SUMO
-
-https://mp.weixin.qq.com/s/Bmou2Fx8a0-60Aqycrg4ug
-
-基于句子嵌入的无监督文本摘要
+Question Answering论文

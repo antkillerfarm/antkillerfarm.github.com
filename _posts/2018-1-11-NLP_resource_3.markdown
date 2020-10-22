@@ -295,19 +295,55 @@ https://mp.weixin.qq.com/s/UTtdu1ONK2XnOOaLSk1hfg
 
 从单词嵌入到文档距离 ：WMD一种有效的文档分类方法
 
-## 文本匹配
+## 文本摘要
 
-https://zhuanlan.zhihu.com/p/111769969
+https://mp.weixin.qq.com/s/jk1XgnuydrsTg3HvV0CVvw
 
-谈谈文本匹配和多轮检索
+当深度学习遇见自动文本摘要
 
-https://mp.weixin.qq.com/s/5toWf90bJeSMGso6HaNTMQ
+https://mp.weixin.qq.com/s/NGpDrYilAeuH6pQji0ujaA
 
-腾讯提出用于文本匹配的多信道信息交叉模型，在真实任务中表现优异
+文本摘要简述
 
-https://zhuanlan.zhihu.com/p/111768258
+https://mp.weixin.qq.com/s/bcpjkuRtErSRfJPsAnAWWQ
 
-Question Answering论文
+用深度学习做文本摘要
+
+https://zhuanlan.zhihu.com/p/111266615
+
+文本摘要(text summarization)最新研究热点、发展趋势，里程碑论文推荐
+
+https://mp.weixin.qq.com/s/z7BlFHfStYEtNzl1EorokA
+
+文章太长不想看？ML文本自动摘要了解一下
+
+https://mp.weixin.qq.com/s/gDZyTbM1nw3fbEnU--y3nQ
+
+Python利用深度学习进行文本摘要的综合指南
+
+https://mp.weixin.qq.com/s/byKEY726MfEtKwsip-go1Q
+
+AI攒论文指日可待？Transformer生成论文摘要方法已出
+
+https://zhuanlan.zhihu.com/p/83596443
+
+文本自动摘要任务的“不完全”心得总结
+
+https://blog.csdn.net/zhangxb35/article/details/78626799
+
+Text Summarization综述
+
+https://zhuanlan.zhihu.com/p/84730122
+
+BottleSum——文本摘要论文系列解读
+
+https://mp.weixin.qq.com/s/vjnENPxXzrjKW2ACD3HDkA
+
+抽取式摘要之SUMO
+
+https://mp.weixin.qq.com/s/Bmou2Fx8a0-60Aqycrg4ug
+
+基于句子嵌入的无监督文本摘要
 
 ## 参考
 
@@ -362,35 +398,3 @@ https://mp.weixin.qq.com/s/vnqpAiiKZjkamSgF2GAZyw
 https://mp.weixin.qq.com/s/gQ9dV-IPWHTOLbI6u0D67g
 
 可解释推荐系统：身怀绝技，一招击中用户心理
-
-https://mp.weixin.qq.com/s/eCtqMIo3_UDxAR4fWzMjZQ
-
-站在锤子手机背后，小源科技用AI打造短信场景服务
-
-https://mp.weixin.qq.com/s/vgejlnsBlOKMMRt-M3-d-w
-
-深思考：实现人机多轮交互突破是攻克图灵测试的核心
-
-https://mp.weixin.qq.com/s/rqB2COCAKsr3qvVXnhLwMg
-
-数据到文本任务的近期相关工作介绍
-
-https://mp.weixin.qq.com/s/VOyJu8FBIK91MsumCBaMyg
-
-NLP领域的ImageNet时代到来：词嵌入“已死”，语言模型当立
-
-https://www.msra.cn/zh-cn/news/features/ruihua-song-20161226
-
-宋睿华：好玩的文本生成
-
-https://github.com/Gii16/TreeDrawer
-
-A small tool to draw a only-text tree as the result of stanford coreNLP
-
-https://mp.weixin.qq.com/s/JgQAMknL4x7nMONzZua7tg
-
-深度学习要多深，才能读懂人话？阿里小蜜前沿探索
-
-http://www.jianshu.com/p/f45c3540c56e
-
-Chatbot架构

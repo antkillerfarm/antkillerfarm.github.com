@@ -198,6 +198,10 @@ https://zhuanlan.zhihu.com/p/75072046
 
 Gaussian process classification初介绍——回归与分类点点滴滴
 
+https://zhuanlan.zhihu.com/p/75589452
+
+高斯过程Gaussian Processes原理、可视化及代码实现
+
 # 热传导推荐算法
 
 https://www.zhihu.com/question/20184666
