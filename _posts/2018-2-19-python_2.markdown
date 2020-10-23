@@ -299,7 +299,9 @@ https://mp.weixin.qq.com/s/lHFbec5oBshoASjJQHXxtg
 
 ## @的用法
 
-@在python中是装饰器的意思，它的用法比较复杂。参见：
+@在python中是装饰器的意思，它的用法比较复杂。假设我们要增强函数的功能，比如，在函数调用前后自动打印日志，但又不希望修改函数的定义，这种在代码运行期间动态增加功能的方式，称之为“装饰器”（Decorator）。
+
+参见：
 
 https://www.zhihu.com/question/26930016
 
@@ -309,9 +311,13 @@ https://mp.weixin.qq.com/s/1QjJqFfJNNych9b6ae5VUg
 
 深入理解Python装饰器
 
-https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/00143186781871161bc8d6497004764b398401a401d4cce000
+https://www.liaoxuefeng.com/wiki/1016959663602400/1017502538658208
 
 使用@property
+
+https://www.liaoxuefeng.com/wiki/1016959663602400/1017451662295584
+
+装饰器
 
 https://mp.weixin.qq.com/s/qMT46hjOQeXsjVpZPqLRVA
 
