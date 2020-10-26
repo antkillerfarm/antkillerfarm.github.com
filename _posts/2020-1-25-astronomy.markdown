@@ -95,6 +95,8 @@ https://www.zhihu.com/question/425376324
 
 希克苏鲁伯陨石坑（Chicxulub Crater）是一个在墨西哥犹加敦或称尤卡坦半岛发现的陨石坑撞击遗迹。它的中心在一个叫做Chicxulub的村庄上，故名。然而由于坑太大，在坑底反而是一马平川，没啥坑。
 
+巴林格陨星坑（Barringer crater），或称亚利桑那陨石坑：美国亚利桑那沙漠中一个直径1.2公里、深180米的巨大陨星坑，是大约5万年前一个陨星撞击地球而形成的。该陨星坑的名字取自矿业工程师丹尼尔·巴林格（Daniel Barringer），是他在20世纪初最先指出它是陨星撞击所造成的，比人们普遍接受这一观点早50多年。
+
 参见：
 
 https://mp.weixin.qq.com/s/-8WDtspQqL0ztmb7PJtokw
@@ -108,6 +110,10 @@ https://mp.weixin.qq.com/s/NHjfCLp6k7GYh8fScL_UWg
 https://mp.weixin.qq.com/s/SaerXt0jYjtwKdWa-d2bPA
 
 不确定的未来：人类会因小天体的撞击而灭亡吗？
+
+https://www.zhihu.com/question/425874775
+
+人类300多万年的历史上，为何地球很少受到陨石大规模冲击？
 
 ## 天体物理
 
