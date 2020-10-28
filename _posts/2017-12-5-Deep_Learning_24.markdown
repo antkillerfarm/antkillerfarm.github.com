@@ -338,3 +338,109 @@ https://mp.weixin.qq.com/s/bMBBYWk5-o5XEOSzI7DyDg
 https://mp.weixin.qq.com/s/qpNbHKZ0V5do77jQlZDBBw
 
 从零开始学习Deep SORT+YOLO V3进行多目标跟踪
+
+# 目标检测进阶++
+
+https://mp.weixin.qq.com/s/k8msLl6c2Cp_5h-4xBD6Zw
+
+CVPR2019-目标检测分割技术进展
+
+https://mp.weixin.qq.com/s/uzG8sic5Y6LVqBS6iKQDhw
+
+目标检测中图像增强，mixup如何操作？
+
+https://mp.weixin.qq.com/s/pkFcmm15gnuRJtngFX7f0w
+
+目标检测训练trick超级大礼包—不改模型提升精度，值得拥有
+
+https://mp.weixin.qq.com/s/flXzhQ-Ypf3fwTqLelLzOQ
+
+李沐等将目标检测绝对精度提升5%，不牺牲推理速度
+
+https://mp.weixin.qq.com/s/6QsyYtEVjavoLfU_lQF1pw
+
+目标检测新文：Generalized Intersection over Union
+
+https://mp.weixin.qq.com/s/Xs3nThAcUOq62bO2p61YFA
+
+论文解读 Receptive Field Block Net for Accurate and Fast
+
+https://mp.weixin.qq.com/s/dcrBQ-t3tLOTouEyofOBxg
+
+间谍卫星：利用卷积神经网络对卫星影像进行多尺度目标检测
+
+https://mp.weixin.qq.com/s/LtXylKTKsHdjMPw9Q1HyXA
+
+优于MobileNet、YOLOv2：移动设备上的实时目标检测系统Pelee
+
+https://mp.weixin.qq.com/s/xpk9LhsZ3dRMvqR6Uc5jeg
+
+Pelee：移动端实时检测骨干网络
+
+https://mp.weixin.qq.com/s/Gq3bflJq59Tx-nDCvbweNA
+
+无需预训练分类器，清华&旷视提出专用于目标检测的骨干网络DetNet
+
+https://mp.weixin.qq.com/s/u3eXhoFvo7vZujc0XoQQWQ
+
+旷视研究院解读Light-Head R-CNN：平衡精准度和速度
+
+https://mp.weixin.qq.com/s/6cUP9vvfcuv8rIEnGnAFiA
+
+NCSU&阿里巴巴论文：可解释的R-CNN
+
+https://mp.weixin.qq.com/s/1vOdOMyByBacSBMVrscq5Q
+
+黄畅：基于DenesBox的目标检测在自动驾驶中的应用
+
+https://mp.weixin.qq.com/s/-PeXMU_gkcT5YnMcLoaKag
+
+CVPR清华大学研究，高效视觉目标检测框架RON
+
+https://mp.weixin.qq.com/s/XoKdsQKyaI3LsDxF7uyKuQ
+
+聊聊目标检测中的多尺度检测（Multi-Scale），从YOLO到FPN，SNIPER，SSD填坑贴和极大极小目标识别
+
+https://mp.weixin.qq.com/s/GpZHGksl0elxMcaQYosK-A
+
+SNIP的升级版SNIPER（效果比Mosaic更佳）
+
+https://mp.weixin.qq.com/s/XdH54ImSfgadCoISmVyyVg
+
+基于单目摄像头的物体检测
+
+https://mp.weixin.qq.com/s/h_ENriEXr7WI_XR_DtxpMQ
+
+这样可以更精确的目标检测——超网络
+
+https://mp.weixin.qq.com/s/dFoUO4xArZpmtbKg1Kx6Zg
+
+COCO mAP 53.3！骨干网合成算法CBNet带来目标检测精度新突破
+
+https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247499933&idx=1&sn=b9fe7d6714c44acedd12a60cfe6b1c60
+
+小样本域适应的目标检测
+
+https://zhuanlan.zhihu.com/p/84890413
+
+PolarMask：一阶段实例分割新思路
+
+https://mp.weixin.qq.com/s/t8pVNeW2Y-QQwD8H9Nk83w
+
+定向和密集的目标检测怎么办？动态优化网络来解决
+
+https://zhuanlan.zhihu.com/p/158907507
+
+From VanillaDet to AutoAssign
+
+https://mp.weixin.qq.com/s/GL_q4VLCgbjTZq_zpTLq0w
+
+Label Assign：提升目标检测上限
+
+https://mp.weixin.qq.com/s/EO5h1zW4yrToqwTCnXtz4g
+
+TTFNet: 最大程度提高训练效率的实时目标检测
+
+https://mp.weixin.qq.com/s/6R3myLyAeMMS0lR1GSlvcA
+
+细说物体检测中的Anchors

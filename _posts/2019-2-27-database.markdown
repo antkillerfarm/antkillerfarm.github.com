@@ -133,6 +133,10 @@ https://blog.csdn.net/horses/article/details/104553075
 
 SQL编程思想：一切皆关系
 
+https://mp.weixin.qq.com/s/CvXKbp5Id6_lOWNs6ntWiA
+
+SQL最大竞争对手（QUEL）的简史
+
 ## Apache Kylin
 
 Apache Kylin是一个开源的分布式分析引擎，最初由eBay开发贡献至开源社区。它提供Hadoop之上的SQL查询接口及多维分析（OLAP）能力以支持大规模数据，能够处理TB乃至PB级别的分析任务，能够在亚秒级查询巨大的Hive表，并支持高并发。

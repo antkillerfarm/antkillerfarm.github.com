@@ -238,3 +238,21 @@ gl-matrix 3.0以后添加了名字空间glMatrix，所以老旧的代码可能�
 ## 其他库
 
 https://deck.gl/
+
+# 生物+
+
+https://mp.weixin.qq.com/s/fIn-A8nqUntNuzBMeuHLMA
+
+这些神秘圆圈，与图灵的理论有关？
+
+https://mp.weixin.qq.com/s/ERxHmUzeowA-0VFHxgmiIQ
+
+苍蝇还有不吃粑粑的？嗯，有！还特萌！
+
+https://www.zhihu.com/question/424503238
+
+呼吸道和消化道在咽喉部共用一个通道有什么生理意义？
+
+https://mp.weixin.qq.com/s/p-jnRwuWBdOcNhESuw-vJw
+
+Nature：硬！这只“压不死”的虫子，为未来航空航天材料设计提供了新灵感

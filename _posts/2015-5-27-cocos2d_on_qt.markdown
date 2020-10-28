@@ -222,6 +222,10 @@ https://mp.weixin.qq.com/s/QkICCbTp53lWOyeZx63-sw
 
 后MATLAB时代的七种开源替代，一种堪称完美！
 
+https://mp.weixin.qq.com/s/vV8kFF7e1uxjMR48_uRcSw
+
+MATLAB动画没有密秘
+
 ## GNU Octave
 
 GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。
@@ -257,3 +261,27 @@ https://www.geogebra.org/
 官网：
 
 http://maxima.sourceforge.net/
+
+# 两弹一星++
+
+https://mp.weixin.qq.com/s/wsGgWzyaslXCQflaP2ccXA
+
+60年前首登珠峰，他是唯一在世亲历者
+
+https://mp.weixin.qq.com/s/zwlOZzdGlqTFGSg3H9zNxQ
+
+珠峰变“绿”，“隐者”现身，这些年的珠峰发生了什么？
+
+https://mp.weixin.qq.com/s/MCAR8M2DoV30-McdsjTxDw
+
+徒步横穿南极大陆第一人
+
+>秦大河，1947年生，地理学家，中国科学院院士，第三世界科学院院士。曾任中国气象局局长、中国科学技术协会副主席等
+
+https://mp.weixin.qq.com/s/3aLHfKF5grL6hunO7r_TAQ
+
+中国第一个发《Nature》的竟然是清朝人！被皇帝夸天下第一，他却觉得羞耻...（徐寿、华蘅芳、徐建寅）
+
+https://mp.weixin.qq.com/s/Z2xRTxgRRHWWY2VICT4lQg
+
+中国有哪些领跑全球的技术

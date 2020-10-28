@@ -388,3 +388,7 @@ https://mp.weixin.qq.com/s/S3xjk9QekWoni0eEvBhlLQ
 https://mp.weixin.qq.com/s/15HXAIhmtYLbG3MjwEKDSQ
 
 从移动平均到指数平滑
+
+https://mp.weixin.qq.com/s/56so2p7a4wIgo38nVSR44A
+
+时间序列分解总结

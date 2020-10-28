@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十三）——机器学习的算法体系&相关术语表, ACBM算法, 高斯过程回归
+title:  机器学习（三十三）——机器学习的算法体系&相关术语表, ACBM算法, 高斯过程回归, Parameter Server
 category: ML 
 ---
 
@@ -216,140 +216,19 @@ http://www.doc88.com/p-7082821463697.html
 
 改进的热传导和物质扩散混合推荐算法
 
-# 目标检测进阶++
+# Parameter Server
 
-https://mp.weixin.qq.com/s/k8msLl6c2Cp_5h-4xBD6Zw
+在深度学习概念提出之前，算法工程师手头能用的工具其实并不多，就LR、SVM、感知机等寥寥可数、相对固定的若干个模型和算法；那时候要解决一个实际的问题，算法工程师更多的工作主要是在特征工程方面。而特征工程本身并没有很系统化的指导理论（至少目前没有看到系统介绍特征工程的书籍），所以很多时候特征的构造技法显得光怪陆离，是否有用也取决于问题本身、数据样本、模型以及运气。如果给这种方式起一个名字的话，大概是**简单模型+复杂特征**；
 
-CVPR2019-目标检测分割技术进展
+深度学习代表的**简单特征+复杂模型**是解决实际问题的另一种方式。
 
-https://mp.weixin.qq.com/s/uzG8sic5Y6LVqBS6iKQDhw
+两种模式孰优孰劣还难有定论，以点击率预测为例，在计算广告领域往往以海量特征+LR为主流，根据VC维理论，LR的表达能力和特征个数成正比，因此海量的feature也完全可以使LR拥有足够的描述能力。
 
-目标检测中图像增强，mixup如何操作？
+Parameter Server就是处理海量特征计算的一种方法。
 
-https://mp.weixin.qq.com/s/pkFcmm15gnuRJtngFX7f0w
+>我最初也被某系统号称上亿的特征给吓到了，毕竟自己设计的推荐系统搜肠刮肚也不过500左右的特征。后来才了解到，国内几家大公司在特征构造方面的成功率在后期一般不会超过20%。也就是80%的新构造特征往往并没什么正向提升效果。一个特征随便弄一下（窗口滑动、离散化、归一化、开方、平方、笛卡尔积、多重笛卡尔积）就弄出一堆特征。。。   
+>一些所谓从事数据挖掘工作多年的专家，其实从方法论上也没有多高明。特征工程严重依赖领域知识，理论知识嘛，LR又不是多高深的东西。。。
 
-目标检测训练trick超级大礼包—不改模型提升精度，值得拥有
+>2017.5，我曾去某电商面试推荐系统职位。言谈之中发现他们对于DL几乎一无所知，当时就觉得有些古怪。直到接触Parameter Server才明白了他们的玩法。。。非常庆幸他们鄙视了我。后来到了2017.12的时候，他们主动找我，想再次面试，被我婉拒。
 
-https://mp.weixin.qq.com/s/flXzhQ-Ypf3fwTqLelLzOQ
-
-李沐等将目标检测绝对精度提升5%，不牺牲推理速度
-
-https://mp.weixin.qq.com/s/6QsyYtEVjavoLfU_lQF1pw
-
-目标检测新文：Generalized Intersection over Union
-
-https://mp.weixin.qq.com/s/Xs3nThAcUOq62bO2p61YFA
-
-论文解读 Receptive Field Block Net for Accurate and Fast
-
-https://mp.weixin.qq.com/s/dcrBQ-t3tLOTouEyofOBxg
-
-间谍卫星：利用卷积神经网络对卫星影像进行多尺度目标检测
-
-https://mp.weixin.qq.com/s/LtXylKTKsHdjMPw9Q1HyXA
-
-优于MobileNet、YOLOv2：移动设备上的实时目标检测系统Pelee
-
-https://mp.weixin.qq.com/s/xpk9LhsZ3dRMvqR6Uc5jeg
-
-Pelee：移动端实时检测骨干网络
-
-https://mp.weixin.qq.com/s/Gq3bflJq59Tx-nDCvbweNA
-
-无需预训练分类器，清华&旷视提出专用于目标检测的骨干网络DetNet
-
-https://mp.weixin.qq.com/s/u3eXhoFvo7vZujc0XoQQWQ
-
-旷视研究院解读Light-Head R-CNN：平衡精准度和速度
-
-https://mp.weixin.qq.com/s/6cUP9vvfcuv8rIEnGnAFiA
-
-NCSU&阿里巴巴论文：可解释的R-CNN
-
-https://mp.weixin.qq.com/s/1vOdOMyByBacSBMVrscq5Q
-
-黄畅：基于DenesBox的目标检测在自动驾驶中的应用
-
-https://mp.weixin.qq.com/s/-PeXMU_gkcT5YnMcLoaKag
-
-CVPR清华大学研究，高效视觉目标检测框架RON
-
-https://mp.weixin.qq.com/s/XoKdsQKyaI3LsDxF7uyKuQ
-
-聊聊目标检测中的多尺度检测（Multi-Scale），从YOLO到FPN，SNIPER，SSD填坑贴和极大极小目标识别
-
-https://mp.weixin.qq.com/s/GpZHGksl0elxMcaQYosK-A
-
-SNIP的升级版SNIPER（效果比Mosaic更佳）
-
-https://mp.weixin.qq.com/s/XdH54ImSfgadCoISmVyyVg
-
-基于单目摄像头的物体检测
-
-https://mp.weixin.qq.com/s/h_ENriEXr7WI_XR_DtxpMQ
-
-这样可以更精确的目标检测——超网络
-
-https://mp.weixin.qq.com/s/dFoUO4xArZpmtbKg1Kx6Zg
-
-COCO mAP 53.3！骨干网合成算法CBNet带来目标检测精度新突破
-
-https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247499933&idx=1&sn=b9fe7d6714c44acedd12a60cfe6b1c60
-
-小样本域适应的目标检测
-
-https://zhuanlan.zhihu.com/p/84890413
-
-PolarMask：一阶段实例分割新思路
-
-https://mp.weixin.qq.com/s/t8pVNeW2Y-QQwD8H9Nk83w
-
-定向和密集的目标检测怎么办？动态优化网络来解决
-
-https://zhuanlan.zhihu.com/p/158907507
-
-From VanillaDet to AutoAssign
-
-https://mp.weixin.qq.com/s/GL_q4VLCgbjTZq_zpTLq0w
-
-Label Assign：提升目标检测上限
-
-https://mp.weixin.qq.com/s/EO5h1zW4yrToqwTCnXtz4g
-
-TTFNet: 最大程度提高训练效率的实时目标检测
-
-https://mp.weixin.qq.com/s/6R3myLyAeMMS0lR1GSlvcA
-
-细说物体检测中的Anchors
-
-https://mp.weixin.qq.com/s/BsoqlaOlhXc9irSuBc6vGg
-
-在物体检测中搞定小目标
-
-https://zhuanlan.zhihu.com/p/200924181
-
-计算机视觉中低延迟检测的相关理论和应用（上）
-
-https://zhuanlan.zhihu.com/p/212842916
-
-计算机视觉中低延迟检测的相关理论和应用（下）
-
-https://mp.weixin.qq.com/s/Z5zFWr04Z2LBpf-6EXIgRg
-
-OpenImage冠军方案：在物体检测中为分类和回归任务使用各自独立的特征图
-
-https://mp.weixin.qq.com/s/_2DwSY6olj3wKy2xKukEGg
-
-商汤开源Grid R-CNN Plus：相比Grid RCNN，速度更快，精度更高
-
-https://mp.weixin.qq.com/s/baPfFVi7deEsCAFu3ColoQ
-
-CVPR2018目标检测算法总览
-
-https://mp.weixin.qq.com/s/t5p1xGKVnwd7wbiOzucFqQ
-
-基于深度学习的目标检测算法剖析与实现
-
-https://mp.weixin.qq.com/s/-zQZjHVs7bYyGkGuMUf3qg
-
-目标检测领域还有什么可做的？19个方向给你建议
+这类问题的另一个特征是：特征虽多，但单独的一个样本具有的有效特征相对有限，一般不过数百个。使用样本更新参数时，只考虑这几百个特征即可，这也为相关的分布式运算提供了有利条件。

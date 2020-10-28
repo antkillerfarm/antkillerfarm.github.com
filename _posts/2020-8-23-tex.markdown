@@ -300,6 +300,10 @@ https://mp.weixin.qq.com/s/LumDQL9VKTHWK3RkOhKFcg
 
 1行代码搞定Latex公式编写，这个4.6M的Python小插件，堪称论文必备神器
 
+https://zhuanlan.zhihu.com/p/268332132
+
+知乎公式编辑器的高级“玩法”
+
 # boost
 
 ## 安装&编译

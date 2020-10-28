@@ -356,3 +356,7 @@ https://mp.weixin.qq.com/s/oDak7peTT5ynNYrH7LSWTg
 https://mp.weixin.qq.com/s/4XMVYXnzpYZ4DrIabuTUig
 
 Ring All-reduce: 分布式深度学习的巧妙同步
+
+https://zhuanlan.zhihu.com/p/28226956
+
+浮点峰值那些事儿

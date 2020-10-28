@@ -287,6 +287,10 @@ https://mp.weixin.qq.com/s/40iqr-Yg4-CGe6QEsLpxhw
 
 时空序列预测模型之LightNet
 
+https://mp.weixin.qq.com/s/vA8lXb2-m3oXHYT1QUOukA
+
+详解时空序列常用数据集之MovingMnist数据集
+
 # 深度树学习
 
 决策树是传统ML领域的王者，对于如何将之深度化，一般有两个方向：

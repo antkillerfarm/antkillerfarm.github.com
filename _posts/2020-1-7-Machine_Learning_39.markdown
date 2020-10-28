@@ -261,6 +261,10 @@ https://mp.weixin.qq.com/s/XXNw9ttT0BetZgqnrr68hw
 
 深度学习异常检测，180页ppt
 
+https://zhuanlan.zhihu.com/p/266513299
+
+Anomaly Detection综述
+
 # 数据清洗
 
 https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g

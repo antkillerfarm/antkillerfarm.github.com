@@ -7,7 +7,7 @@ category: DL
 * toc
 {:toc}
 
-# 图像变换（续）
+# 图像变换
 
 https://mp.weixin.qq.com/s/djkjAfUO_DefTP2drzY_iQ
 
@@ -364,3 +364,7 @@ https://mp.weixin.qq.com/s/yn_TQ-Mdcph3M1dfLu-KMw
 https://mp.weixin.qq.com/s/-HKWSLDBwswuDYho29q5Kg
 
 怎样用Python控制图片人物动起来？一文就能Get！
+
+https://mp.weixin.qq.com/s/ECxcgclgHtjerFD4P3lvAA
+
+建造自己的“天空之城”，密歇根大学博士后的这项研究可以虚空造物、偷天换日

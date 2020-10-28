@@ -392,3 +392,7 @@ Item-CF的几种优化方式
 https://mp.weixin.qq.com/s/sDG5xm1JZ8rIEaVXeVQ5cA
 
 主流推荐引擎技术及优缺点分析
+
+https://mp.weixin.qq.com/s/rhk5WHRg6HWHmK7KWD-UYw
+
+常见的召回优化方式

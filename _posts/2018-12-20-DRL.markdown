@@ -265,6 +265,10 @@ https://mp.weixin.qq.com/s/1b9rTD6wEgA0U54WNr7YAQ
 
 机器人深度强化学习，128页pdf
 
+https://mp.weixin.qq.com/s/1oy21VNupI1mZADY9KoyKQ
+
+强化学习中基于模型的方法，279页ppt
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

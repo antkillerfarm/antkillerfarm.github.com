@@ -186,6 +186,10 @@ https://mp.weixin.qq.com/s/UqwwUfJEITHuMU8EhhGNRw
 
 图解Golang的内存分配
 
+https://mp.weixin.qq.com/s/eAptnygPQcQ5Ex8-6l0byA
+
+Golang单元测试详尽指引
+
 ## GTK
 
 熟悉我的朋友都知道，新语言的GTK demo是一定要有的。毕竟helloworld太简单了，容易让人产生从三到万的错觉。
@@ -459,3 +463,7 @@ https://mp.weixin.qq.com/s/J8IHOdUevyn9YS09D8Ou-g
 https://mp.weixin.qq.com/s/L0FoYh1npy-3rwRQWcj71g
 
 五大自动化测试的Python框架
+
+https://mp.weixin.qq.com/s/Oq316PWN10FBWzv-X26pAg
+
+高性能Python CPU Memery分析器

@@ -258,3 +258,37 @@ https://blog.csdn.net/zwqhehe/article/details/77025035
 https://mp.weixin.qq.com/s/tjawT2-bhPrit0Fd4knSgA
 
 基于回声状态网络预测股票价格
+
+# 目标检测进阶+++
+
+https://mp.weixin.qq.com/s/BsoqlaOlhXc9irSuBc6vGg
+
+在物体检测中搞定小目标
+
+https://zhuanlan.zhihu.com/p/200924181
+
+计算机视觉中低延迟检测的相关理论和应用（上）
+
+https://zhuanlan.zhihu.com/p/212842916
+
+计算机视觉中低延迟检测的相关理论和应用（下）
+
+https://mp.weixin.qq.com/s/Z5zFWr04Z2LBpf-6EXIgRg
+
+OpenImage冠军方案：在物体检测中为分类和回归任务使用各自独立的特征图
+
+https://mp.weixin.qq.com/s/_2DwSY6olj3wKy2xKukEGg
+
+商汤开源Grid R-CNN Plus：相比Grid RCNN，速度更快，精度更高
+
+https://mp.weixin.qq.com/s/baPfFVi7deEsCAFu3ColoQ
+
+CVPR2018目标检测算法总览
+
+https://mp.weixin.qq.com/s/t5p1xGKVnwd7wbiOzucFqQ
+
+基于深度学习的目标检测算法剖析与实现
+
+https://mp.weixin.qq.com/s/-zQZjHVs7bYyGkGuMUf3qg
+
+目标检测领域还有什么可做的？19个方向给你建议

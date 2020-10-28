@@ -307,6 +307,10 @@ https://mp.weixin.qq.com/s/cDqxmRVQCIqdM5oiUh82YQ
 
 Yee Whye Teh：《贝叶斯深度学习与深度贝叶斯学习》
 
+https://mp.weixin.qq.com/s/JZVl0kygVawdW8qflPps6g
+
+《神经贝叶斯信息处理》教程，220页ppt，国立交通大学
+
 https://mp.weixin.qq.com/s/Zk2YG-IJNhJxTBU8THSM-g
 
 让DL可解释？这一份66页贝叶斯深度学习教程告诉你

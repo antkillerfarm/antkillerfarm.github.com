@@ -410,3 +410,7 @@ X3D Facebook视频理解/行为识别新作
 https://zhuanlan.zhihu.com/p/149429010
 
 TAM: 针对动作识别的时序自适应模块
+
+https://mp.weixin.qq.com/s/skCOaKf9kRABTX7hkdjGXA
+
+谷歌极速人脸、手、人体姿态分析Blaze算法家族

@@ -1,11 +1,193 @@
 ---
 layout: post
-title:  lex&yacc, ANTLR
-category: language 
+title:  编译原理, lex&yacc, ANTLR
+category: technology 
 ---
 
 * toc
 {:toc}
+
+# 编译原理
+
+## 教程
+
+《Principles of Compiler Design Compilers: Principles, Techniques, and Tools》。该书由于封面上有龙的图案，又被称为“龙书”。下面的虎书、鲸书也是一样的。
+
+《Modern Compiler Implementation in C》，虎书。
+
+《Advanced Compiler Design and Implementation》，鲸书。
+
+以上三本书，被称为编译器领域的圣经。
+
+## blog
+
+https://zhuanlan.zhihu.com/frozengene
+
+一个编译器方面的专栏
+
+http://frozengene.github.io/
+
+一个LLVM方面的blog
+
+https://zhuanlan.zhihu.com/c_1250484713606819840
+
+一个LLVM方面的专栏
+
+## 术语
+
+AST：abstract syntax tree
+
+## Pass
+
+![](/images/img3/single_pass.jpg)
+
+![](/images/img3/multi_pass.jpg)
+
+以上两图展示了One pass/Single pass与Two pass/Multi pass之间的差异。所谓Pass，就是将代码/AST扫描并处理一遍。
+
+早期的编译器一般是Single pass的，它虽然结构简单，但是不便于扩展。所以后来又出现了Multi pass。与之对应的编译器流程，亦被分为前端和后端两部分。
+
+前端：source code -> AST
+
+后端：AST -> target code
+
+而编译流程的每一步，则被抽象为Pass，这个称呼最早为LLVM采用，进而扩展到整个编译原理领域。
+
+pass分为两类，一类是分析(analysis)pass，负责收集信息共其它pass使用，辅助调试或使程序可视化；另一类是变换(transform)pass，改变程序的dataflow/controlflow。
+
+https://www.geeksforgeeks.org/single-pass-two-pass-and-multi-pass-compilers/
+
+Single pass, Two pass, and Multi pass Compilers
+
+https://xz.aliyun.com/t/7257
+
+初探LLVM&clang&pass
+
+http://llvm.org/docs/WritingAnLLVMPass.html
+
+Writing an LLVM Pass
+
+## Android编译
+
+![](/images/img3/ART.png)
+
+AOT：Ahead Of Time，指在运行前编译，比如普通的静态编译。
+
+JIT：Just In Time，指在运行时编译，边运行边编译，比如java虚拟机在运行时就用到JIT技术。
+
+![](/images/img3/aot_jit.jpg)
+
+https://mp.weixin.qq.com/s/vnaI8FwB4Ot46weAgq18Eg
+
+华为新贵！方舟编译器的荣光和使命
+
+https://www.zhihu.com/answer/812481811
+
+周志德（Fred Chow)
+
+----
+
+为了在Android中支持新的Java7-8-9的新特性，Google又开发了D8和R8。
+
+https://juejin.im/post/5d70fb2ce51d4557ca7fddaa
+
+Android CPU, Compilers, D8 & R8
+
+## Polyhedral Model
+
+基于多面体模型的编译优化技术代表了程序自动并行化领域众多方向最先进的水平,成为国际上多个编译研发团队的研究热点。
+
+https://www.cs.colostate.edu/~pouchet/
+
+888.11-Polyhedral Compilation Foundations
+
+http://www.jos.org.cn/jos/ch/reader/create_pdf.aspx?file_no=5563
+
+基于多面体模型的编译“黑魔法”
+
+https://zhuanlan.zhihu.com/p/111680367
+
+Polyhedral Model, Interval Analysis and Compilers
+
+https://www.zhihu.com/question/65708935
+
+深入学习auto vectorization和polyhedral变换方面的优化技术有哪些资料？
+
+https://pliss2019.github.io/albert_cohen_slides.pdf
+
+Polyhedral Compilation as a Design Pattern for Compiler Construction
+
+https://mp.weixin.qq.com/s/QEooKxP1sm5O90AUiqKQEQ
+
+Polyhedral Model—AI芯片软硬件优化利器（一）
+
+https://mp.weixin.qq.com/s/NRtud1UImE5ArZ2zQWFRyg
+
+Polyhedral Model—AI芯片软硬件优化利器（二）
+
+https://mp.weixin.qq.com/s/bLBIrJb82IsnyoXSEr2xtw
+
+Polyhedral Model—AI芯片软硬件优化利器（三）
+
+## PPCG
+
+Polyhedral Parallel Code Generation
+
+代码：
+
+https://github.com/Meinersbur/ppcg
+
+## PLUTO
+
+An automatic parallelizer and locality optimizer for affine loop nests
+
+官网：
+
+http://pluto-compiler.sourceforge.net/
+
+参考：
+
+https://www.zhihu.com/question/329294933
+
+如何评价PLUTO编译器？
+
+## 参考
+
+https://github.com/compiler-explorer/compiler-explorer
+
+一个web版本的编译器工具
+
+https://mp.weixin.qq.com/s/MqfteZBSWbnBpHbFYw8Eqw
+
+如何编写一个简单的Python编译器
+
+https://zhuanlan.zhihu.com/p/28637279
+
+使用LLVM+PLY实现一个C语言子集的玩具编译器
+
+https://mp.weixin.qq.com/s/7wmBsJgPnOtPXcYaoQd1qA
+
+基于LLVM的源码级依赖分析方案的设计与实现
+
+https://mp.weixin.qq.com/s/vOJPxzH_1SUyXzNeE85zHQ
+
+编译器入门：没有siri的那些年，我们如何实现人机对话？
+
+https://zhuanlan.zhihu.com/p/66793637
+
+A Tour to LLVM IR（上）
+
+https://zhuanlan.zhihu.com/p/66909226
+
+A Tour to LLVM IR（下）
+
+https://mp.weixin.qq.com/s/4FJzxPyCmakjIU-9xlQmJQ
+
+阁下可知文言编程之精妙？CMU本科生开源文言文编程语言，数天2K星
+
+https://mp.weixin.qq.com/s/7PH8o1tbjLsM4-nOnjbwLw
+
+Java即时编译器原理解析及实践
 
 # lex&yacc
 
@@ -88,152 +270,6 @@ MPS是jetbrains推出的用于构建DSL的工具。
 
 https://www.jetbrains.com/mps/
 
-# 物理+
-
-顾静薇被安排和一名哲学教授去相亲。相亲对象非常浪漫，带她去看晚霞。
-
-顾静薇：“他带我去看晚霞，我跟他讲，这是瑞利散射。他那个表情你是没有看见哦！”
-
-https://mp.weixin.qq.com/s/RPkEHmI2soIsHvukUgpZDg
-
-导演朱虹璇问气象科学家：为什么黄昏能看见红色的晚霞？
-
->顾静薇，或作顾静徽，1900～1983，女，物理学家。1920年入上海大同大学，成为胡刚复的学生。1923年考取留美公费生，入美国康奈尔大学文理学院。康奈尔大学本科（1926）+耶鲁大学硕士（1928）+密歇根大学博士（1931）。中国近代史上第一个物理学女性博士。先后执教于南开大学、大同大学、广西大学和北京钢铁学院。她和丈夫施汝为创办了中国科学院物理研究所，后者为所长。学生有吴健雄、郭永怀等。
-
-过去玻璃窗的制作方法基本都是吹个球或者静置，但这种方法制作的玻璃基本都不平，所以那时的玻璃窗只能小块用木头框隔开。
-
-----
-
-英国皮尔金顿平板玻璃兄弟有限公司的阿拉斯塔、皮尔金顿于1952年在一次偶然的机会，看到一层油漂浮在水面上，该公司根据上述这一设想，发明了一种生产平板玻璃的革命性的方法-浮法工艺。它是因玻璃液漂浮在熔融的金属表面上获得抛光成型而得名的。
-
-----
-
-https://mp.weixin.qq.com/s/1PhFbQUUNJ4_kZB3Vc-y1w
-
-物理学奖给黑洞，或许是因为错过了霍金
-
-https://mp.weixin.qq.com/s/KD3IeebIsFEt0IlZTd4emA
-
-89岁诺奖得主Roger Penrose，有一个令人咂舌的家族
-
-https://mp.weixin.qq.com/s/JRWBEqgnLcr53D5T0C0U-Q
-
-七位彭罗斯
-
-https://mp.weixin.qq.com/s/tlu5kKHgIGFpkF5cnZZaUA
-
-靠数学“拿了”两次诺贝尔奖，彭罗斯从“铺地砖”帮忙发现2011年化学奖的秘密
-
-----
-
-https://mp.weixin.qq.com/s/lB6dfjS5TAxjMndLCXMWgQ
-
-憋住不放的屁最后去哪了？知道真相的我再也不忍屁了！
-
-https://mp.weixin.qq.com/s/BIy4Ly3eIMOrXRbpjFRFYQ
-
-男人最喜欢在家干的这件事，居然是在马桶上......
-
-https://mp.weixin.qq.com/s/mDgnsn1xsI1WN3UhxPGPrQ
-
-通过这些动图，让你秒懂高中物理原理!
-
-https://mp.weixin.qq.com/s/2n-60v-ocfszU9xhbG4Ofg
-
-达·芬奇和宋代画家告诉你，除了诗和远方，世上还有散射现象（瑞利散射、米氏散射）
-
-https://mp.weixin.qq.com/s/foZaIzpyxiRf9_9O7f6EaQ
-
-985大学首次登上Nature封面（超疏水材料）
-
-https://mp.weixin.qq.com/s/hnDjc8H9US4vZM4PZADZYg
-
-如何修建岩浆护城河
-
-https://mp.weixin.qq.com/s/KsGGMCKsQlHYxXONOTthGQ
-
-当你按下“除湿”键时，空调内究竟发生了什么？
-
-https://mp.weixin.qq.com/s/fbJQs87R9c8_j_B5-zTsVg
-
-古代没有冰箱，夏天冰块是怎么来的？
-
-https://mp.weixin.qq.com/s/oweK30KIVInGK6wcFSRrTQ
-
-三伏天，我在伊朗的风塔里惬意乘凉
-
-https://mp.weixin.qq.com/s/Kfiz22KpxHtkQof3C5g81A
-
-卡路里的身世变迁
-
-https://mp.weixin.qq.com/s/b22vJHOrm_mOMa71TidN4w
-
-八大数学预言
-
-https://mp.weixin.qq.com/s/-4yzwG_LS1J_svR1CiOcpQ
-
-一道闪电掉进海里，会电死多少鱼？
-
-https://mp.weixin.qq.com/s/0CHFXs8IAxFIwvy7hOcnnw
-
-不加色素做出彩虹色巧克力，科学家浪漫起来也太硬核了
-
-https://mp.weixin.qq.com/s/GuXzR6Xf46ByomcVLzai3Q
-
-干洗店用的一种东西，居然跟生命起源有关系？
-
-https://mp.weixin.qq.com/s/ZxdeUFnkwfBH18hDrBDVcQ
-
-为什么夏天更容易出轨？
-
-https://mp.weixin.qq.com/s/dIJS9gebnqFh-nnaoosumA
-
-科学家还是灭世者？记那些原子弹背后的人
-
-https://mp.weixin.qq.com/s/iMIkyMxD5vr_iQU8cL7xSg
-
-轻原子核中的宇称不守恒
-
-https://mp.weixin.qq.com/s/cEGUr0kmP9UwlAoxgFuKGQ
-
-想减肥么？要不把体重秤摆在树荫下试试？（光压）
-
-https://mp.weixin.qq.com/s/IG4ViVlLuOwPlUzpliyKjg
-
-谁统一了两种基本力？（Steven Weinberg）
-
-https://mp.weixin.qq.com/s/bg9w0RGjUl0xIAu8Mjl57w
-
-她是奠基“核裂变”理论的物理学家，却拒绝了曼哈顿计划（Lise Meitner）
-
-https://mp.weixin.qq.com/s/2IZCvRo6YlBwsQwfDDMbxw
-
-美国原子弹之父被骂了9年！最后他上台领奖，竟一把推开了总统......（Julius Robert Oppenheimer）
-
-https://www.zhihu.com/answer/1525306973
-
-10月15日《Nature》文章宣称首次在高压下实现室温超导，意味着什么？
-
-https://mp.weixin.qq.com/s/IDvJP1XUVNGISSQuObgUzQ
-
-人类首次实现室温超导，同行们为何评价不一？
-
-https://mp.weixin.qq.com/s/HT2jrh-ICmkgTBFLEl0Qpw
-
-从无量纲常数，到声速极限
-
-https://mp.weixin.qq.com/s/9ym_nblmAzSiiEeIFJ346g
-
-活了九十年十个月零两天的业余科学家，最伟大的显微镜制造者（Antonie Van Leeuwenhoek）
-
-https://mp.weixin.qq.com/s/FAG0mFIimWQ875oeshpAOA
-
-极短时间测量
-
-https://mp.weixin.qq.com/s/sVyC5sBUEJLfAzetL0Fl-Q
-
-什么是非平衡态热力学
-
 # 世说新语++
 
 ## 2020.10（续）
@@ -271,3 +307,13 @@ https://new.qq.com/omn/20201024/20201024A01TSJ00.html
 https://zhuanlan.zhihu.com/p/265634690
 
 为什么明朝皇陵没有一个被盗，而清朝皇陵却被大肆光顾
+
+----
+
+英国18世纪作家、评论家塞缪尔·约翰逊现在一般被称为约翰逊博士，他当年考上了牛津大学，但因为父亲生意失败，无钱交纳学费，被迫从牛津退学。他给报纸写稿挣钱。后来有出版商邀请他编一部英文词典，词典出版20年后，牛津大学给了他博士学位。所以现在人们都称他为约翰逊博士。
+
+----
+
+https://mp.weixin.qq.com/s/urjMik7EMrPTzeP_UWocHw
+
+《夺冠》背后的中国女排，到底有多牛
