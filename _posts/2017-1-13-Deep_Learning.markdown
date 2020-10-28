@@ -218,6 +218,8 @@ $$\frac{\partial E_k}{\partial w_{hj}}=\frac{\partial E_k}{\partial \hat y_j^k}\
 
 ![](/images/article/chain_rule.png)
 
+![](/images/img4/chain_rule.png)
+
 值得注意的是残差梯度实际上包括两部分：$$\Delta x$$和$$\Delta w$$。如下图所示：
 
 ![](/images/img2/BP.png)

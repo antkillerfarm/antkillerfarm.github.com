@@ -227,7 +227,7 @@ Tensorflow和Caffe的内存布局存在较大差异，这是两者模型转换�
 
 https://tensorflow.google.cn/lite/
 
-Tensorflow源代码中自带的toco工具，可用于生成一个可供TensorFlow Lite框架使用的tflite文件。
+Tensorflow源代码中自带的toco（Tensorflow Optimizing COnverter）工具，可用于生成一个可供TensorFlow Lite框架使用的tflite文件。
 
 代码：
 
@@ -267,7 +267,7 @@ TensorFlow Lite微控制器
 
 TFLite是Google的Tensorflow团队开发的移动DL框架，它可以在任意系统（非android，甚至非linux）上执行。而Android NN则是Google的Android团队针对Android平台开发的DL框架。
 
-团队的不同，决定了这两款产品并非完全兼容。一般来说，TFLite由于紧跟Tensorflow，其对新op的支持要更及时一些。但Android NN由于有Facebook等外部客户的需求推动，在个别情况下，也有相反的情况发生。
+团队的不同，决定了这两款产品并非完全兼容。一般来说，TFLite由于紧跟Tensorflow，其对新op的支持要比后者更及时一些。而Android NN由于有Facebook等外部客户的需求推动，在个别情况下，也有相反的情况发生。
 
 Android NN支持的算子的代码在aosp/frameworks/ml/nn/common/operations下。
 
