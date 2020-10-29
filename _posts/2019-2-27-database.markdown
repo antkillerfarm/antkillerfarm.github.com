@@ -137,6 +137,14 @@ https://mp.weixin.qq.com/s/CvXKbp5Id6_lOWNs6ntWiA
 
 SQL最大竞争对手（QUEL）的简史
 
+https://mp.weixin.qq.com/s/NgHyZVcb8zoN8tETwCWEmw
+
+为什么阿里巴巴禁止使用存储过程？
+
+https://mp.weixin.qq.com/s/qjNGpfeOLkg9PHRqy6Hstw
+
+5大SQL数据清洗方法！
+
 ## Apache Kylin
 
 Apache Kylin是一个开源的分布式分析引擎，最初由eBay开发贡献至开源社区。它提供Hadoop之上的SQL查询接口及多维分析（OLAP）能力以支持大规模数据，能够处理TB乃至PB级别的分析任务，能够在亚秒级查询巨大的Hive表，并支持高并发。
@@ -248,6 +256,10 @@ Paxos和Raft的前世今生
 https://mp.weixin.qq.com/s/Fj4zERz9PEuNumd_SI0bEA
 
 浅谈CAP和Paxos共识算法
+
+https://mp.weixin.qq.com/s/KTZQjC1JokmwmCkOH8APdg
+
+一文了解分布式一致性算法EPaxos
 
 https://mp.weixin.qq.com/s/42cStPudXRHjs61gjSIgWw
 

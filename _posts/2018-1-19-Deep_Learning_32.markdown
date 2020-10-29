@@ -151,6 +151,10 @@ Google的这两篇论文在这里做了一些尝试：
 
 这里学到的模型，一般被称为NASNet。
 
+![](/images/img4/NAS.png)
+
+NAS的工作可以根据三个方面进行划分：search space(搜索空间)、search strategy(搜索策略)、performance estimation strategy(性能评估策略)。
+
 AutoDL常用的套路主要有：
 
 - random search/gird search。这是最古老的办法。

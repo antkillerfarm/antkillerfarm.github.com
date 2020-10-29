@@ -324,3 +324,7 @@ https://mp.weixin.qq.com/s/z06l-s3RUomxlhANz8SfUg
 https://mp.weixin.qq.com/s/ybkbU8p_3jgKuCGdNWeG8w
 
 同义变换在百度搜索广告中的应用
+
+https://mp.weixin.qq.com/s/kjD0d_PKmNNFxLSuEobE_A
+
+自训练 + 预训练 = 更好的自然语言理解模型

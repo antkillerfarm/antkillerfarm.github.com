@@ -339,6 +339,10 @@ https://mp.weixin.qq.com/s/qpNbHKZ0V5do77jQlZDBBw
 
 从零开始学习Deep SORT+YOLO V3进行多目标跟踪
 
+https://mp.weixin.qq.com/s/mvx_LyGVzn_H3XpwTsuFMA
+
+多目标跟踪：监控领域你必须要了解的算法
+
 # 目标检测进阶++
 
 https://mp.weixin.qq.com/s/k8msLl6c2Cp_5h-4xBD6Zw

@@ -410,6 +410,10 @@ https://mp.weixin.qq.com/s/fwa3cbDI0fIjjztA60XuUQ
 
 同步与异步Python有何不同？
 
+https://mp.weixin.qq.com/s/3CePY1ljNBSo9TEtitksrw
+
+为什么Python多线程无法利用多核
+
 ## mypy
 
 mypy是一个针对python语言的静态类型检查工具。

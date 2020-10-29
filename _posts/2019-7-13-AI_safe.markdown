@@ -229,6 +229,14 @@ https://mp.weixin.qq.com/s/r6zm2VMOehP7EbxU5R39uA
 
 GAN生成对抗样本的方法解析
 
+https://mp.weixin.qq.com/s/qdVEVzXhHbOSOpnNmfbpsg
+
+图像篡改被动检测技术一览：基于特征提取和卷积神经网络的篡改检测
+
+https://mp.weixin.qq.com/s/pZH6ZZSCqDR3BCY6zopV4Q
+
+最新综述：图像分类中的对抗机器学习
+
 # 目标检测进阶+
 
 https://mp.weixin.qq.com/s/IRD0iIVXyENlUOyfSbmlBA

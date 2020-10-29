@@ -79,6 +79,10 @@ https://mp.weixin.qq.com/s/PWhzZzs0kkFWci6Lhm4R3Q
 
 AutoML&NAS综述（下）
 
+https://mp.weixin.qq.com/s/9fueXYvv8MuP_0gn6587dg
+
+NAS: One-Shot方法总结
+
 https://mp.weixin.qq.com/s/j3oZ-Y953U4aX0nXeWuZlg
 
 西北大学最新《神经架构搜索NAS》2020综述综述论文

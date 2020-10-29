@@ -137,6 +137,10 @@ https://mp.weixin.qq.com/s/07tHvJHJNYmRDw-S0NQDOA
 
 自动驾驶毫米波雷达物体检测技术
 
+https://mp.weixin.qq.com/s/At1nXEk7t6z5az9JoZu2pA
+
+关于数据增强在自动驾驶中的探讨
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。

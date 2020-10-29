@@ -255,6 +255,10 @@ https://zhuanlan.zhihu.com/p/188400946
 
 时间卷积网络：时间序列的下一场革命？
 
+https://mp.weixin.qq.com/s/CGcvWOhNWpboYaaEEtPmQw
+
+时域卷积网络TCN详解：使用卷积进行序列建模和预测
+
 ## 时空序列
 
 顾名思义，时空序列问题包含了时间和空间两个方面的因素。

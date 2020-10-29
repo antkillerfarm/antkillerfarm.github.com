@@ -103,6 +103,8 @@ http://blog.csdn.net/javafreely/article/details/71994247
 - 无手工
 - 端到端学习算法和功能以及预测
 
+![](/images/img4/Meta_Learning.png)
+
 ## 教程
 
 http://web.stanford.edu/class/cs330/
@@ -136,6 +138,10 @@ https://github.com/floodsung/Meta-Learning-Papers
 https://coladrill.github.io/2018/10/24/元学习总览/
 
 元学习总览
+
+https://zhuanlan.zhihu.com/p/261170127
+
+元学习综述
 
 https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ
 

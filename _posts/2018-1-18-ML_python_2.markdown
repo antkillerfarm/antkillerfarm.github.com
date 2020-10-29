@@ -71,6 +71,10 @@ https://mp.weixin.qq.com/s/vSSSaMtRtkfPcJF6LUFqRQ
 
 Matplotlib实操干货
 
+https://mp.weixin.qq.com/s/y8d5TzEQeOg78HLWJJzanA
+
+使用Matplotlib可视化数据的5个强大技巧
+
 ## Pandas
 
 Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。
@@ -204,6 +208,14 @@ https://mp.weixin.qq.com/s/DT5OqgzXGlvao4O2c_J74w
 https://mp.weixin.qq.com/s/37FucjQldvIs33lxkhWpcQ
 
 在pandas中使用数据透视表（pivot_table）
+
+https://mp.weixin.qq.com/s/Zv1r8Svnydwxy8oB_Xz78Q
+
+使用PandasGUI进行探索性数据分析
+
+https://mp.weixin.qq.com/s/iAUpBmG7w3TBg1ymOnu7bw
+
+如何使用Pandas处理超过内存容量的大规模数据
 
 ## 并行Pandas
 

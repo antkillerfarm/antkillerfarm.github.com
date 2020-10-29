@@ -398,3 +398,7 @@ https://mp.weixin.qq.com/s/p9HpH2e5ShQCFcCxVNvMbg
 https://mp.weixin.qq.com/s/vzUt-5C_dRAChEfQYLp4lA
 
 PyTorch实现，GitHub 4000星：这是微软开源的计算机视觉库
+
+https://mp.weixin.qq.com/s/5VeersQKxcT9AtFXS_CXnA
+
+推荐一款超高速、多特性的高性能序列推理引擎——LightSeq

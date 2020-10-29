@@ -193,6 +193,14 @@ https://mp.weixin.qq.com/s/seAKqsJDcPHAa_BZDfav_w
 
 谈谈自动驾驶仿真
 
+https://mp.weixin.qq.com/s/pOX84vc2JlYidkTZt73rcQ
+
+英特尔&丰田联合开源城市驾驶模拟器CARLA
+
+https://mp.weixin.qq.com/s/bs6DQveNwJh6auIAExj4VA
+
+驾驶模拟器之CARLA篇：An Open Urban Driving Simulator
+
 ## 电气&机械
 
 电气&机械虽然不是控制系统算法的一部分，但却是控制系统的物理基础。
@@ -328,10 +336,6 @@ https://mp.weixin.qq.com/s/j_rkmJ09QxhtzFH_Xa1Evw
 https://mp.weixin.qq.com/s/DhA9V5IlNAaa4qpWHVQCPA
 
 一个机器学者的故事：机器人工程师学习计划
-
-https://mp.weixin.qq.com/s/pOX84vc2JlYidkTZt73rcQ
-
-英特尔&丰田联合开源城市驾驶模拟器CARLA
 
 https://mp.weixin.qq.com/s/qEX2cRgce2Lknncsa67HSA
 

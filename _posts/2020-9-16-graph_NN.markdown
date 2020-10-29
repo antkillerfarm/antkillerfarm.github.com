@@ -179,6 +179,10 @@ https://mp.weixin.qq.com/s/CKOjtSekoChNkhrpBn4dUg
 
 图机器学习Neo4j算法与应用，142页pdf
 
+https://mp.weixin.qq.com/s/dnRtAIi7Ro0KGZVozldEvg
+
+多模态网络表示学习教程Multi-modal Network Representation Learning
+
 ## 综述
 
 《A Comprehensive Survey on Graph Neural Networks》
@@ -204,6 +208,10 @@ https://zhuanlan.zhihu.com/p/93828551
 https://zhuanlan.zhihu.com/p/115342917
 
 四大图神经网络架构
+
+https://mp.weixin.qq.com/s/nMs8G3qWLUDsG6Bzo0o2dg
+
+大规模图训练调优指南
 
 ## PyTorch Geometric
 
