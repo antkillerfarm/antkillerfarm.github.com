@@ -173,6 +173,10 @@ https://mp.weixin.qq.com/s/1hK3k6Mf3uTEXrqMFr1evA
 
 Kaggle知识点：伪标签Pseudo Label
 
+https://zhuanlan.zhihu.com/p/157325083
+
+伪标签（Pseudo-Labelling）——锋利的匕首
+
 https://mp.weixin.qq.com/s/qVGveKfCfNKqJoqwMbUVKg
 
 长文总结半监督学习
@@ -188,6 +192,10 @@ https://mp.weixin.qq.com/s/Tau5jzNbBd0NketdgytvAg
 https://mp.weixin.qq.com/s/uYmHxScroi4jB2okmqwHcA
 
 半监督学习入门基础（一）
+
+https://zhuanlan.zhihu.com/p/212873650
+
+Contrastive Self-Supervised Learning
 
 # 数学杂谈+
 

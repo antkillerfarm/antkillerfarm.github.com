@@ -193,6 +193,10 @@ https://mp.weixin.qq.com/s/w_5-3ViQyBpRVyVe0sHFLw
 
 深度学习生命科学：基因组学、药物发现，238页pdf
 
+https://mp.weixin.qq.com/s/5MbMdMhMvPLCEu32r5l59Q
+
+MedMNIST：上海交大发布医学影像领域的MNIST
+
 # 可视化
 
 ![](/images/img2/data_visual.png)

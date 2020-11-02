@@ -295,6 +295,10 @@ https://mp.weixin.qq.com/s/vA8lXb2-m3oXHYT1QUOukA
 
 详解时空序列常用数据集之MovingMnist数据集
 
+https://mp.weixin.qq.com/s/ss0Aj1XXn7ZQafhl-XXN6Q
+
+时空序列预测模型之Self-Attention ConvLSTM
+
 # 深度树学习
 
 决策树是传统ML领域的王者，对于如何将之深度化，一般有两个方向：
