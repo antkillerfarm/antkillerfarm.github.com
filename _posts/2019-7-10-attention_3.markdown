@@ -233,6 +233,17 @@ Sesame Street（芝麻街）是是美国公共广播协会（PBS）制作播出�
 
 ![](/images/img3/PTM.png)
 
+- 传统word2vec无法解决一词多义，语义信息不够丰富，诞生了ELMO。
+- ELMO以lstm堆积，串行且提取特征能力不够，诞生了GPT。
+- GPT 虽然用transformer堆积，但是是单向的，诞生了BERT。
+- BERT虽然双向，但是mask不适用于自编码模型，诞生了XLNET。
+- BERT中mask代替单个字符而非实体或短语，没有考虑词法结构/语法结构，诞生了ERNIE。
+- 为了mask掉中文的词而非字，让BERT更好的应用在中文任务，诞生了BERT-wwm。
+- Bert训练用更多的数据、训练步数、更大的批次，mask机制变为动态的，诞生了RoBERTa。
+- ERNIE的基础上，用大量数据和先验知识，进行多任务的持续学习，诞生了ERNIE2.0。
+- BERT-wwm增加了训练数据集、训练步数，诞生了BERT-wwm-ext。
+- BERT的其他改进模型基本考增加参数和训练数据，考虑轻量化之后，诞生了ALBERT。
+
 https://mp.weixin.qq.com/s/kwKZfNSYTzc-PGKxTxm8-w
 
 复旦大学：最新《预训练语言模型》2020综述论文

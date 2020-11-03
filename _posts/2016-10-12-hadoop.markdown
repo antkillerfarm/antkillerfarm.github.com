@@ -258,14 +258,6 @@ https://mp.weixin.qq.com/s/S1dRfmqpiLzR3tnsocmfvw
 
 Pytorch中的数据增强方式最全解释
 
-https://zhuanlan.zhihu.com/p/29904755
-
-Autograd:PyTorch中的梯度计算
-
-https://zhuanlan.zhihu.com/p/69294347
-
-PyTorch的Autograd
-
 https://mp.weixin.qq.com/s/BTFMvV2ppmRBXYg95YlK4w
 
 PyTorch实现L2和L1正则化的方法

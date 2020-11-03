@@ -157,9 +157,21 @@ https://mp.weixin.qq.com/s/f0xFfA1inOVOdJnSZR4k6Q
 
 自动微分技术
 
-https://mp.weixin.qq.com/s/0tTlPG4hd9hcHORkZF6w1A
+https://zhuanlan.zhihu.com/p/79801410
 
 PyTorch的自动求导机制详细解析，PyTorch的核心魔法
+
+https://zhuanlan.zhihu.com/p/29904755
+
+Autograd:PyTorch中的梯度计算
+
+https://zhuanlan.zhihu.com/p/69294347
+
+PyTorch的Autograd
+
+https://zhuanlan.zhihu.com/p/83172023
+
+Pytorch autograd,backward详解
 
 https://mp.weixin.qq.com/s/PELBuCvu-7KQ33XBtlYfYQ
 

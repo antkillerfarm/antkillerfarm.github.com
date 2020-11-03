@@ -47,6 +47,10 @@ https://mp.weixin.qq.com/s/ph5KbDxS7QR3I_ev-Js2RQ
 
 朴素贝叶斯文本分类实战
 
+https://mp.weixin.qq.com/s/MfzqlQJedEkCLbh2Mb88Jw
+
+算法工程师必备的机器学习--贝叶斯分类器
+
 ## 拉普拉斯平滑
 
 对于样本集中未出现的单词，在其首次出现时，由于先验概率$$p(x_i\mid y=1)=0,p(x_i\mid y=0)=0$$，这时公式1会出现$$\frac{0}{0}$$的情况。
