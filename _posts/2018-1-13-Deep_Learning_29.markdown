@@ -392,3 +392,11 @@ GraphSAGE算法原理，实现和应用
 https://zhuanlan.zhihu.com/p/142205899
 
 GraphSAGE源码解析
+
+https://mp.weixin.qq.com/s/ChXCcXOv-OKPzH8dro_DnA
+
+图模型的信息融合专题
+
+https://zhuanlan.zhihu.com/p/113242299
+
+异质图神经网络学习笔记

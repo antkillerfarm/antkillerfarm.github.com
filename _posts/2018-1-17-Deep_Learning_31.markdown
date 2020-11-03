@@ -292,3 +292,7 @@ https://mp.weixin.qq.com/s/t5p1xGKVnwd7wbiOzucFqQ
 https://mp.weixin.qq.com/s/-zQZjHVs7bYyGkGuMUf3qg
 
 目标检测领域还有什么可做的？19个方向给你建议
+
+https://mp.weixin.qq.com/s/vAPD7VKQRJ7NCyYL7FIt3A
+
+目标检测中的Label Assignment

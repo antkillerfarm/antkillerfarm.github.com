@@ -363,6 +363,10 @@ https://mp.weixin.qq.com/s/IeLYy0Pp3HC_UujA0KYn1Q
 
 多标签长尾识别前沿进展
 
+https://mp.weixin.qq.com/s/m3sgoG15dtacGt1_Anrq6Q
+
+使用NTS理解细粒度图像分类
+
 # 显著性检测
 
 https://blog.csdn.net/dawnlooo

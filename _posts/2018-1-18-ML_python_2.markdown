@@ -217,6 +217,10 @@ https://mp.weixin.qq.com/s/iAUpBmG7w3TBg1ymOnu7bw
 
 如何使用Pandas处理超过内存容量的大规模数据
 
+https://mp.weixin.qq.com/s/x3VNA_SfInegHs2iftY5tA
+
+多快好省地使用pandas分析大型数据集
+
 ## 并行Pandas
 
 https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw

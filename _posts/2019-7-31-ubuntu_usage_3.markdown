@@ -248,14 +248,6 @@ https://mp.weixin.qq.com/s/4o_cSzWeJdLJMObJBhaZlw
 
 计算机系统中的内存
 
-https://mp.weixin.qq.com/s/OWGi1htNugOv81ZFPinRGw
-
-汇编实现的memcpy和memset
-
-https://mp.weixin.qq.com/s/6RoQAPsenD7Pu9enTqGeoQ
-
-移动端arm cpu优化学习笔记之内联汇编入门
-
 https://www.jianshu.com/p/fad3339e3448
 
 浅析Linux中的零拷贝技术
@@ -347,6 +339,10 @@ Linux下C++so热更新
 https://mp.weixin.qq.com/s/rH7WqriomFTA55ecacV8Gw
 
 键盘敲入A字母时，操作系统期间发生了什么...
+
+https://mp.weixin.qq.com/s/vDlWCVK8knxPf5HoqmtZyQ
+
+从创建进程到进入main函数，发生了什么？
 
 ----
 

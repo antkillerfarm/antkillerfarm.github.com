@@ -450,3 +450,7 @@ https://mp.weixin.qq.com/s/K-EqcqX8X7oeNA2czT2qIA
 https://mp.weixin.qq.com/s/5ZfFcbnhkpyO-CdXyw6SKw
 
 一文详解LIN总线
+
+https://mp.weixin.qq.com/s/hxH-e6qz13Cr4kBqjTmVRw
+
+CAN总线的特点和帧结构

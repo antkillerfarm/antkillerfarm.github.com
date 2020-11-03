@@ -239,7 +239,7 @@ gl-matrix 3.0以后添加了名字空间glMatrix，所以老旧的代码可能�
 
 https://deck.gl/
 
-# 生物+
+# 生物++
 
 https://mp.weixin.qq.com/s/fIn-A8nqUntNuzBMeuHLMA
 

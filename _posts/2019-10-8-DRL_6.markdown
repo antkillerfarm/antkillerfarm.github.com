@@ -318,3 +318,7 @@ https://mp.weixin.qq.com/s/tFdnxqV5a5xZrFtB6E0AiQ
 https://mp.weixin.qq.com/s/NwuuNIc9kc2qOGQP2pvRnA
 
 AlphaZero原理与启示
+
+https://mp.weixin.qq.com/s/8Zv3ElL2nWK-UDOHNjKb4g
+
+从源码解密AlphGo Zero背后基本原理

@@ -47,6 +47,10 @@ https://mp.weixin.qq.com/s/AFTaowkCz1pfFzaMDen-RA
 
 计算机科学中最重要的32个算法
 
+https://mp.weixin.qq.com/s/CCN4w3_n8NVrmz4xE-GWlQ
+
+八大应用公式
+
 # 自相关&互相关&卷积
 
 ![](/images/article/Comparison_convolution_correlation.svg)

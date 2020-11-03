@@ -185,6 +185,10 @@ https://mp.weixin.qq.com/s/TJVMuaDVZIjwqzuw6gd8uA
 
 无数据知识蒸馏
 
+https://zhuanlan.zhihu.com/p/90049906
+
+知识蒸馏是什么？一份入门随笔
+
 # 模型压缩与加速进阶
 
 https://mp.weixin.qq.com/s/Ck_GDv1Xo-YMZcu-00gTOA

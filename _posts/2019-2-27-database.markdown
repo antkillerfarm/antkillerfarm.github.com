@@ -109,6 +109,10 @@ OLAP数仓入门：进阶篇
 
 ![](/images/img3/sql_join.png)
 
+https://www.cnblogs.com/liuqifeng/p/9148831.html
+
+数据库操作命令大全
+
 https://mp.weixin.qq.com/s/O9wBAG1L5SrNGI8JteFirQ
 
 一文搞懂SQL：基础知识和业务实践总结

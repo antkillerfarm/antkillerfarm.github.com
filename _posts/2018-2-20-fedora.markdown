@@ -204,6 +204,12 @@ https://www.cnblogs.com/iamnewsea/p/7701464.html
 
 挂载到其他地方就可以避免这个问题，比如挂载到`/home/data`。
 
+除了硬盘安装之外，现在的PC还可以网络安装：
+
+https://mp.weixin.qq.com/s/6vFXphhkPpyYEDSgibl_vA
+
+从无盘启动看Linux启动原理
+
 ## Ubuntu Mirror
 
 Ubuntu官网很慢，可以选择国内的Mirror替换之：

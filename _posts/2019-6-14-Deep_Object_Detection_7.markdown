@@ -183,6 +183,10 @@ https://mp.weixin.qq.com/s/CcUlqZA2KG5P42sCpsj94g
 
 CenterNet之loss计算代码解析
 
+https://mp.weixin.qq.com/s/Vu_qfJkM36v7f8VQPLCU6w
+
+Objects as Points：预测目标中心，无需NMS等后处理操作
+
 # Anchor-Free
 
 在前面的章节，我们已经简要的分析了Anchor Free和Anchor Base模型的差异，并介绍了两个Anchor-Free的模型——CornerNet和CenterNet。
@@ -312,3 +316,7 @@ https://zhuanlan.zhihu.com/p/62372897
 https://mp.weixin.qq.com/s/m_PvEbq2QbTXNmj_gObKmQ
 
 Anchor-free目标检测之ExtremeNet
+
+https://mp.weixin.qq.com/s/LGeNgnXfYaVVAc_37j6-2A
+
+Anchor Free及Transformer时代

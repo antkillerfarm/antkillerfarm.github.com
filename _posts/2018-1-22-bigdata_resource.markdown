@@ -418,3 +418,7 @@ https://mp.weixin.qq.com/s/pxNRzWs3sZmbr-K18FvnrA
 https://mp.weixin.qq.com/s/UYN4cxH4gT0WsFTrBKRKGA
 
 美团酒旅实时数据规则引擎应用实践
+
+https://mp.weixin.qq.com/s/og2fAZCjaUpmQM0FRH76DA
+
+这三年被分布式坑惨了，曝光十大坑

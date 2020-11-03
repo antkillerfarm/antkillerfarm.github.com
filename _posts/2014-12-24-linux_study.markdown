@@ -260,6 +260,10 @@ https://mp.weixin.qq.com/s/CZ3qusMpNQwIudX5mcVeJw
 
 彻底理解IO多路复用
 
+https://mp.weixin.qq.com/s/ElWRnRHgjle8SYhnVQRj2Q
+
+网络IO套路
+
 # 启动脚本
 
 Linux启动时，运行一个叫做init的程序，然后由它来启动后面的任务，包括多用户环境，网络等。

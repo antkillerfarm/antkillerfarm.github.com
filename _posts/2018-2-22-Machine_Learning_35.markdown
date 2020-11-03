@@ -253,6 +253,10 @@ https://mp.weixin.qq.com/s/2rX6iRTYBk47V29fSTAMQQ
 
 图解卡尔曼滤波(Kalman Filter)
 
+https://mp.weixin.qq.com/s/PuvTkDhwbYv8TK8t-Zhcug
+
+基于卡尔曼滤波的注意力机制—广告点击率预估中的用户行为建模
+
 # Adaboost
 
 Adaboost是Yoav Freund和Robert Schapire于1997年提出的算法。两人后来因为该算法被授予Gödel Prize（2003）。

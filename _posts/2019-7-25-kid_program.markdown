@@ -142,6 +142,10 @@ https://www.runoob.com/go/go-tutorial.html
 
 参考：
 
+https://mp.weixin.qq.com/s/Gv_C16cbXZfDda-tYpuT5w
+
+Mastering Go第二版中文版
+
 https://mp.weixin.qq.com/s/ka5woeuvNxX3Y0Y4UMlruw
 
 Go上下文取消操作

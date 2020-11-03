@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Github显示数学公式, boost
+title:  Github显示数学公式, 汇编, boost
 category: language 
 ---
 
@@ -303,6 +303,20 @@ https://mp.weixin.qq.com/s/LumDQL9VKTHWK3RkOhKFcg
 https://zhuanlan.zhihu.com/p/268332132
 
 知乎公式编辑器的高级“玩法”
+
+# 汇编
+
+https://mp.weixin.qq.com/s/OWGi1htNugOv81ZFPinRGw
+
+汇编实现的memcpy和memset
+
+https://mp.weixin.qq.com/s/6RoQAPsenD7Pu9enTqGeoQ
+
+移动端arm cpu优化学习笔记之内联汇编入门
+
+https://mp.weixin.qq.com/s/gr6YKmxbZjwfB4Rft1w55A
+
+一口气看完45个寄存器，CPU核心技术大揭秘
 
 # boost
 

@@ -461,3 +461,7 @@ Matplotlib优雅作图笔记
 https://mp.weixin.qq.com/s/s50WdxzmtLEixvBMhEaX7w
 
 完成这50个Matplotlib代码，你也能画出优秀的图表
+
+https://mp.weixin.qq.com/s/VB55yiKJu-0Mw94qiZBmcw
+
+11类Matplotlib图表

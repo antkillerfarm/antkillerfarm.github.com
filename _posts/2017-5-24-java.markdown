@@ -273,6 +273,10 @@ https://blog.csdn.net/zqz_zqz/article/details/70233767
 
 java中的锁--偏向锁、轻量级锁、自旋锁、重量级锁
 
+https://mp.weixin.qq.com/s/muSUJuE1A45UTXpWTeFxOA
+
+24张图带你彻底理解Java中的21种锁
+
 https://blog.csdn.net/z69183787/article/details/104407842
 
 Java volatile关键字内存原语

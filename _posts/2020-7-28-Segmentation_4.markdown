@@ -396,3 +396,7 @@ OCRNet化解语义分割上下文信息缺失难题
 https://mp.weixin.qq.com/s/mSz2LGPMgDPqlLPhKfOmFA
 
 实例分割新思路之SOLO v1&v2深度解析
+
+https://mp.weixin.qq.com/s/tMTtjrJLM-YgZy_K6T1deA
+
+实时性语义分割算法大盘点
