@@ -105,6 +105,10 @@ https://mp.weixin.qq.com/s/O3p1wQYlUfcaIPbGxs4seQ
 
 OLAP数仓入门：进阶篇
 
+https://mp.weixin.qq.com/s/YSYkvv_74WVDceoJ9XWOjw
+
+关于OLAP数仓，从百万到百亿级数据量实时分析
+
 ## SQL
 
 ![](/images/img3/sql_join.png)
