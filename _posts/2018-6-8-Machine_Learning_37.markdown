@@ -302,6 +302,10 @@ https://mp.weixin.qq.com/s/NHwMVzZWOU24pdbjzcchAg
 
 从AR到ARIMA
 
+https://mp.weixin.qq.com/s/QZ_AcfzuB7JQEE6cDz5G1A
+
+自回归模型
+
 # 辛普森悖论
 
 ![](/images/img2/Simpson.png)

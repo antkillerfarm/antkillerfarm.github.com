@@ -262,6 +262,10 @@ https://mp.weixin.qq.com/s/MDT5-I5kza1yJdA_JWpPkA
 
 ElasticSearch介绍及使用方法
 
+https://mp.weixin.qq.com/s/S29Ro51Oidx5ikO8sj-UEA
+
+新一代搜索引擎项目ZeroSearch设计探索（ES是磁盘检索引擎。而ZS是磁盘检索引擎）
+
 # Flume & Kafka
 
 Flume和Kafka都是日志系统。

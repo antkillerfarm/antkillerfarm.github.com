@@ -420,3 +420,7 @@ https://zhuanlan.zhihu.com/p/128988454
 https://mp.weixin.qq.com/s/Bpw-q3wISbCAKHsuYQo0QQ
 
 阿里DMR:融合Match中协同过滤思想的深度排序模型
+
+https://mp.weixin.qq.com/s/xTjUPEt1-UMOp2W9a3SONQ
+
+腾讯QQ看点团队：用迁移学习架构解决短视频冷启推荐问题
