@@ -237,6 +237,10 @@ https://mp.weixin.qq.com/s/pZH6ZZSCqDR3BCY6zopV4Q
 
 最新综述：图像分类中的对抗机器学习
 
+https://mp.weixin.qq.com/s/cnYnSfeH4uyOwGDPLOpDOA
+
+如何系统地欺骗图像识别神经网络
+
 # 目标检测进阶+
 
 https://mp.weixin.qq.com/s/IRD0iIVXyENlUOyfSbmlBA

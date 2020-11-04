@@ -188,6 +188,10 @@ https://mp.weixin.qq.com/s/lVS3CgZGItUkWG-OtolbSA
 
 数字成像书籍推荐与资料分享
 
+https://mp.weixin.qq.com/s/v6OzcLvjLetSBspNI_NtSA
+
+图像传感器的演进与创新
+
 https://mp.weixin.qq.com/s/1IHHo4sV79sXdtXNzKNhMA
 
 计算摄影--google相机的王者之道
