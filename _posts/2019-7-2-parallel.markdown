@@ -127,10 +127,6 @@ https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
 
 百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
 
-https://mp.weixin.qq.com/s/qOjGrR59Mf0Mzgh4bpDhrA
-
-详解Horovod：Uber开源的TensorFlow分布式深度学习框架
-
 https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
 
 分布式深度学习原理、算法详细介绍

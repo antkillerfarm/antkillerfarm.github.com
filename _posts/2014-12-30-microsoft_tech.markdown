@@ -256,3 +256,11 @@ https://www.zhihu.com/question/424503238
 https://mp.weixin.qq.com/s/p-jnRwuWBdOcNhESuw-vJw
 
 Nature：硬！这只“压不死”的虫子，为未来航空航天材料设计提供了新灵感
+
+https://mp.weixin.qq.com/s/r27j7sJZgiqbUH0D0A7yWg
+
+第一个吃野生香蕉的人会硌着牙么？
+
+https://mp.weixin.qq.com/s/C0R04rlmUaIDZ7TYKAv18Q
+
+恐龙也有“敏感肌”？

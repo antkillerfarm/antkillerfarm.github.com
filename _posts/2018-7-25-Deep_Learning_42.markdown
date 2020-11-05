@@ -404,3 +404,7 @@ https://zhuanlan.zhihu.com/p/140507840
 https://mp.weixin.qq.com/s/sju4SYFxzDkJevk3mi68Rw
 
 图像超分辨率网络：EDSR
+
+https://mp.weixin.qq.com/s/uZQK0oQbV7wm0WVz_QxVQg
+
+DRN：用于单图像超分辨率的对偶回归网络

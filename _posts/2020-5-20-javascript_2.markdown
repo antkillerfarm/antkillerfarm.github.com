@@ -294,3 +294,7 @@ Python的`__name__`变量，到底是个什么东西？
 https://mp.weixin.qq.com/s/FtlAkInyXgvUxDnSCikTIw
 
 全面深入理解Python面向对象编程
+
+https://blog.csdn.net/lys_828/article/details/106489371
+
+字符串模糊匹配及在实战中的应用（FuzzyWuzzy库）

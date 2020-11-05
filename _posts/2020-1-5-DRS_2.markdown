@@ -145,6 +145,10 @@ https://mp.weixin.qq.com/s/J0j9NwSNhxab6bXqBBzaUw
 
 进击的下一代推荐系统：多目标学习如何让知乎用户互动率提升100%？
 
+https://mp.weixin.qq.com/s/c7BdWUM9BFQZfzWP7C_wfQ
+
+多目标学习在推荐系统中的应用
+
 https://mp.weixin.qq.com/s/BInWMRt-fVcRbY8aCiPnpA
 
 淘宝总知道你要什么？万字讲述智能内容生成实践
@@ -388,3 +392,7 @@ https://mp.weixin.qq.com/s/RQ1iBs8ftvNR0_xB7X8Erg
 https://mp.weixin.qq.com/s/Y4g2T6qMGzCcE67bINPiGA
 
 推荐场景中召回模型的演化过程
+
+https://mp.weixin.qq.com/s/k19LrH05lHjtpGRvS8Ro0g
+
+超长用户行为序列建模

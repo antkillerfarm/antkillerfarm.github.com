@@ -346,3 +346,15 @@ Horovod-基于TensorFlow分布式深度学习框架
 https://zhuanlan.zhihu.com/p/158375055
 
 PyTorch单机多卡操作(分布式DataParallel，混合精度，Horovod)
+
+https://mp.weixin.qq.com/s/iQIRj7ifsOEnupYZuQsVwQ
+
+是时候放弃TensorFlow集群，拥抱Horovod了
+
+https://mp.weixin.qq.com/s/qOjGrR59Mf0Mzgh4bpDhrA
+
+详解Horovod：Uber开源的TensorFlow分布式深度学习框架
+
+https://mp.weixin.qq.com/s/yNxjJHpGns6utpBpI-0XDA
+
+分布式训练框架Horovod初步学习

@@ -335,10 +335,6 @@ http://www.cnblogs.com/zhangweizhong/category/879056.html
 
 如何打造一个小而精的电商网站架构
 
-https://mp.weixin.qq.com/s/ow-6rQYGlvX316h63aCGVg
-
-百度正式开源其Raft一致性算法实现braft
-
 https://mp.weixin.qq.com/s/zlPZr1hsyUN3lUo9WzIDbg
 
 Service Mesh实践指南：从单体应用到Service Mesh的曲折历程

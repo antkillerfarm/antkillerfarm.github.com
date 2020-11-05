@@ -237,10 +237,6 @@ https://mp.weixin.qq.com/s/bcLCCvWrJLbMxwDl9GutjQ
 
 TensorFlow动态图5行代码实现迁移学习-识别转变风格的MNIST
 
-https://mp.weixin.qq.com/s/iQIRj7ifsOEnupYZuQsVwQ
-
-是时候放弃TensorFlow集群，拥抱Horovod了
-
 https://mp.weixin.qq.com/s/NMRwXqwr4VFbMUPgI8Uccg
 
 使用Google Cloud上的tf.Transform对TensorFlow管道模式进行预处理

@@ -25,6 +25,12 @@ $$\text{SMAPE} = \frac 1 n \sum_{t=1}^n \frac{\left|F_t-A_t\right|}{(A_t+F_t)/2}
 
 $$\text{SMAPE} = \frac{100\%}{n} \sum_{t=1}^n \frac{|F_t-A_t|}{|A_t|+|F_t|}$$
 
+参考：
+
+https://mp.weixin.qq.com/s/TyjA2M_-gKO1Hm1jLRetZg
+
+MAPE与sMAPE的优缺点
+
 ## Mean Absolute Error(MAE)
 
 $$\mathrm{MAE} = \frac{1}{n}\sum_{i=1}^n \left| f_i-y_i\right| =\frac{1}{n}\sum_{i=1}^n \left| e_i \right|$$

@@ -171,6 +171,10 @@ https://mp.weixin.qq.com/s/hI9Z3l2eVJxkPbL8zG5uGA
 
 图形学基础，427页pdf
 
+http://15462.courses.cs.cmu.edu/fall2020/courseinfo
+
+Computer Graphics
+
 http://blog.csdn.net/pizi0475/article/details/6650851
 
 全局光照模型与Rendering Equation

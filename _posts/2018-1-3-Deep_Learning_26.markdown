@@ -388,3 +388,7 @@ https://mp.weixin.qq.com/s/fZN8mtZdB4Fd6gj2dAKURw
 https://mp.weixin.qq.com/s/_GU5y7v8HNDOjEGvWh8Fkw
 
 旷视研究院提出文字检测新方法：像素聚合网络PAN
+
+https://mp.weixin.qq.com/s/rWqmIfgNGoC4D2wl8INmtQ
+
+OCR深度实践系列：图像预处理

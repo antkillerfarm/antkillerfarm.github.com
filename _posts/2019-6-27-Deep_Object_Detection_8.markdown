@@ -193,6 +193,10 @@ https://zhuanlan.zhihu.com/p/163696749
 
 用CenterNet对旋转目标进行检测
 
+https://mp.weixin.qq.com/s/pDjszZk43vuVO6kY3bRczw
+
+ODTK：来自NVIDIA的旋转框物体检测工具箱
+
 # 小目标检测
 
 https://mp.weixin.qq.com/s/8k0Mhver2mLnKmV8rVqJHQ

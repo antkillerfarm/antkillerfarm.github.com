@@ -201,6 +201,10 @@ https://mp.weixin.qq.com/s/bs6DQveNwJh6auIAExj4VA
 
 驾驶模拟器之CARLA篇：An Open Urban Driving Simulator
 
+https://mp.weixin.qq.com/s/yHP9bKUtQRR1YPcI3nTjiQ
+
+机器人系统仿真
+
 ## 电气&机械
 
 电气&机械虽然不是控制系统算法的一部分，但却是控制系统的物理基础。
