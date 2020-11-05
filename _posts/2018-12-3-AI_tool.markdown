@@ -364,3 +364,11 @@ https://mp.weixin.qq.com/s/6q7wy7Xq7GcepdLkQN-1wA
 https://mp.weixin.qq.com/s/203UyMxZ-Sx14WEX-KMusg
 
 异类框架BigDL，TensorFlow的潜在杀器！
+
+https://mp.weixin.qq.com/s/wDISPCffD-8fnW1GD4EcDg
+
+Kornia开源可微分计算机视觉库
+
+https://mp.weixin.qq.com/s/Ad-LNsbA2KRdvKRNUl2LNw
+
+DeepPavlov: 强大的聊天机器人和对话系统开源AI库

@@ -116,7 +116,7 @@ MP神经元模型如下图所示：
 
 $$y_j=f\left(\sum _{i=1}^nw_{ij}x_i-\theta_j\right)$$
 
-上式其实就是《机器学习（一）》中提到的逻辑回归。f被称为称为激活函数(Activation Function)或转移函数(Transfer Function)，用以提供**非线性表达能力**。
+f被称为称为激活函数(Activation Function)或转移函数(Transfer Function)，用以提供**非线性表达能力**。f的参数其实就是《机器学习（一）》中提到的逻辑回归。
 
 生物神经元和MP神经元模型的对应关系如下表：
 

@@ -121,6 +121,10 @@ https://mp.weixin.qq.com/s/j9h-8Qk82dozM3LH8b9zMA
 
 一文概览知识图谱在推荐系统的发展现状
 
+https://mp.weixin.qq.com/s/4QglQUFNpneeJQpgkp1-KA
+
+知识图谱推理的前世今生
+
 ## blog
 
 https://zhuanlan.zhihu.com/kb-qa

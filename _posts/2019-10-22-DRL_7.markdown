@@ -302,6 +302,10 @@ https://mp.weixin.qq.com/s/1JJo0FgMVlhIy6R9CxI_sQ
 
 多智能体强化学习算法理论研究
 
+https://mp.weixin.qq.com/s/qnAXhfGb74ivRwlGcdApOQ
+
+一文详解多智能体强化学习的基础和应用
+
 # StarCraft & AI
 
 AIIDE（Artificial Intelligence and Interactive Digital Entertainment）

@@ -195,6 +195,10 @@ https://blog.csdn.net/stdcoutzyx/article/details/50926174
 
 二值神经网络（Binary Neural Network，BNN）
 
+https://mp.weixin.qq.com/s/Q54AdQmqa5JD0v9CEeFtSQ
+
+二值化神经网络(BNN)综述
+
 https://mp.weixin.qq.com/s/lVja7woyFWpmr9sH0CitAA
 
 BMXNet：基于MXNet的开源二值神经网络实现

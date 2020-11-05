@@ -432,3 +432,7 @@ https://mp.weixin.qq.com/s/oBgPS0s_Fe2w4bmT__664A
 https://mp.weixin.qq.com/s/N3A8N4DZC-x8YavEXdpfKA
 
 使用图进行特征提取：最有用的图特征机器学习模型介绍
+
+https://mp.weixin.qq.com/s/3XKrFGkhxxXdg-XGNkvXdg
+
+LINE：不得不看的大规模信息网络嵌入

@@ -77,6 +77,18 @@ https://mp.weixin.qq.com/s/jBJvrR71OIov2aOucFfd6Q
 
 BERT模型压缩技术概览
 
+# Linformer
+
+https://mp.weixin.qq.com/s/IOc-gxOa6a415Hf1VBmiQw
+
+“Linformer”拍了拍“被吊打Transformers的后浪们”
+
+https://mp.weixin.qq.com/s/cDQW5992hTaeGoA7zL7Vzg
+
+Linformer: 线性复杂度的Attention
+
+Self-Attention 加速方法一览：ISSA、CCNet、CGNL、Linformer
+
 # BERT进阶
 
 ## AR vs AE

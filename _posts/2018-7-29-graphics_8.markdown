@@ -193,6 +193,10 @@ https://zhuanlan.zhihu.com/p/257854666
 
 VOT2020-ST Winner（RPT/RPTS）算法方案分享
 
+https://mp.weixin.qq.com/s/RkUDFJtlSAa2AI65UA33qw
+
+视频目标跟踪从0到1，概念与方法
+
 # Meanshift
 
 ## Meanshift聚类

@@ -407,6 +407,10 @@ https://mp.weixin.qq.com/s/JRYxslbs-yTgQDhHOUb1sw
 
 ASRF模型
 
+https://mp.weixin.qq.com/s/s6gsVRA7CZuc5IQ9Oxq-Vw
+
+评分卡模型的评估方法论
+
 ## 金融模型
 
 ![](/images/img3/Quant.jpg)

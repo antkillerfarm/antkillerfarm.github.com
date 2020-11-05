@@ -99,6 +99,10 @@ https://mp.weixin.qq.com/s/yQs8Mhe0kM6XMA7JfjRuPA
 
 达观数据推荐系统算法实践—重排序
 
+https://mp.weixin.qq.com/s/vO1lhVQuvIGwJpqg7V2SfA
+
+LTR排序算法LambdaRank原理详解
+
 # 用户画像
 
 https://mp.weixin.qq.com/s/TydTE50NzxMbGAigqv6BCw
@@ -294,6 +298,16 @@ ROI（return on investment）投资回报率
 $$同比=\frac{2010.12}{2009.12}$$
 
 $$环比=\frac{2010.12}{2010.11}$$
+
+独立IP数：是指当天记录的唯一的IP数，一般以IP地址来统计。
+
+独立访客数（Unique Visitor）：指当天有多少台电脑访问，一般以COOKIE来统计。
+
+独立访客高于IP：例如一个局域网对外是相同的一个IP，但是有10个人同时访问，那么这个时候，独立访客为10，唯一IP仅为1。
+
+IP高于独立访客：一个用户，上网的时候频繁掉线，拔号10次均打开了受统计网站，此时，独立访客仅计为1，而IP数则被计为10。
+
+Page View, 即页面浏览量或点击量，用户每次刷新即被计算一次。
 
 ## 数据埋点
 
