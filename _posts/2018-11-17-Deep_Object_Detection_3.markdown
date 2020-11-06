@@ -255,10 +255,6 @@ https://mp.weixin.qq.com/s/VKQufVUQ3TP5m7_2vOxnEQ
 
 通过Faster R-CNN实现当前最佳的目标计数
 
-http://blog.csdn.net/zy1034092330/article/details/62044941
-
-Faster RCNN详解
-
 https://zhuanlan.zhihu.com/p/31426458
 
 一文读懂Faster RCNN

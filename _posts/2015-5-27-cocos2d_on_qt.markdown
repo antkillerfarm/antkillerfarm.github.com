@@ -285,3 +285,7 @@ https://mp.weixin.qq.com/s/3aLHfKF5grL6hunO7r_TAQ
 https://mp.weixin.qq.com/s/Z2xRTxgRRHWWY2VICT4lQg
 
 中国有哪些领跑全球的技术
+
+https://zhuanlan.zhihu.com/p/269051130
+
+川藏铁路有多牛？外国网友：它该叫“川藏地铁”或“川藏过山车”
