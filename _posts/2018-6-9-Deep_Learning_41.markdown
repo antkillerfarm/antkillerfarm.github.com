@@ -381,3 +381,7 @@ Deep Domain Adaptation论文集(六)：源域与目标域特征空间不一致�
 https://zhuanlan.zhihu.com/p/58514431
 
 Domain Adaptation：不用深度网络，如何处理源域和目标域异构问题？
+
+https://mp.weixin.qq.com/s/7QrIfNXQgSqYC1SOFUOlgQ
+
+对迁移学习中域适应的理解和3种技术的介绍

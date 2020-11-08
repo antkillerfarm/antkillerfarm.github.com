@@ -213,6 +213,10 @@ https://zhuanlan.zhihu.com/p/39999667
 
 强化学习路在何方？
 
+https://zhuanlan.zhihu.com/p/25239682
+
+深度强化学习（Deep Reinforcement Learning）入门
+
 https://mp.weixin.qq.com/s/Ns5AUGfDoTeTwnBD-pYdLA
 
 详解强化学习当前进展及未来方向

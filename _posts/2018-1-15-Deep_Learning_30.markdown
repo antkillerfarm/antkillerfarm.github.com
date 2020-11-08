@@ -436,3 +436,7 @@ https://mp.weixin.qq.com/s/N3A8N4DZC-x8YavEXdpfKA
 https://mp.weixin.qq.com/s/3XKrFGkhxxXdg-XGNkvXdg
 
 LINE：不得不看的大规模信息网络嵌入
+
+https://mp.weixin.qq.com/s/BPbUiIl9yU6DJbjKQmrzgw
+
+结合图的结构信息和节点特征的图对比学习

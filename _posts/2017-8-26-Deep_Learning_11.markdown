@@ -201,6 +201,10 @@ https://mp.weixin.qq.com/s/aezywo9xtqpiV7SEXBMdmA
 
 可变形卷积系列(三) 可变形卷积核，大开眼界
 
+https://mp.weixin.qq.com/s/w43wfF1dKMu65as6lAlrsg
+
+可变形卷积在视频学习中的应用:如何利用带有稀疏标记数据的视频帧
+
 ## 3D卷积
 
 3D卷积一般用于视频（2D图像+1D时序）和医学影像（3D立体图像）的分析处理中。

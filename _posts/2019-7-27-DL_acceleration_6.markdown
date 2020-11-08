@@ -189,6 +189,10 @@ https://zhuanlan.zhihu.com/p/90049906
 
 知识蒸馏是什么？一份入门随笔
 
+https://mp.weixin.qq.com/s/rxwHFjl0FEPWEcfMcwXL8w
+
+BERT蒸馏完全指南
+
 # 模型压缩与加速进阶
 
 https://mp.weixin.qq.com/s/Ck_GDv1Xo-YMZcu-00gTOA

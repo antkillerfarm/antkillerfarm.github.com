@@ -27,6 +27,10 @@ https://zhuanlan.zhihu.com/p/147691786
 
 大白话Generalized Focal Loss
 
+https://mp.weixin.qq.com/s/zLDUAnxghsBYiUMQQdbBGQ
+
+Generalized Focal Loss：Focal loss魔改以及预测框概率分布
+
 https://mp.weixin.qq.com/s/is8veFCOPpJDXA2okn7pNA
 
 10分钟理解Focal loss数学原理与Pytorch代码

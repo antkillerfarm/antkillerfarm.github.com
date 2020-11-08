@@ -264,6 +264,16 @@ http://maxima.sourceforge.net/
 
 # 两弹一星++
 
+![](/images/img3/top10.png)
+
+https://mp.weixin.qq.com/s/1NXjgkr3xWDzqm7Y-9x7-Q
+
+从核潜艇到华龙一号：“其他大国有的，我们也要有”
+
+https://mp.weixin.qq.com/s/sRVb8qGtbsuqCvHSrlL9mQ
+
+卡住中国脖子的35项技术
+
 https://mp.weixin.qq.com/s/wsGgWzyaslXCQflaP2ccXA
 
 60年前首登珠峰，他是唯一在世亲历者
@@ -289,3 +299,7 @@ https://mp.weixin.qq.com/s/Z2xRTxgRRHWWY2VICT4lQg
 https://zhuanlan.zhihu.com/p/269051130
 
 川藏铁路有多牛？外国网友：它该叫“川藏地铁”或“川藏过山车”
+
+https://mp.weixin.qq.com/s/NQ4OiPgguAVkRPBn1uEYjg
+
+他奉密令去美国长期潜伏，周总理亲自送行长谈（吴大琨）

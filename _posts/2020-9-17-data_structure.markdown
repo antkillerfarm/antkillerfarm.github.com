@@ -241,6 +241,10 @@ https://blog.csdn.net/simpsonk/article/details/72832959
 
 史上最强图解Treap总结
 
+https://mp.weixin.qq.com/s/p4tddWB4kjFufkv3x2SYpw
+
+图解6种树，你心中有数吗
+
 # 设计模式
 
 面向对象的设计模式有七大基本原则：

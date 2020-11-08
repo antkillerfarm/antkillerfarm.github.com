@@ -379,6 +379,10 @@ https://mp.weixin.qq.com/s/ku78_exDM-OUwWPBCNahCg
 
 Spiking-YOLO：前沿性研究，脉冲神经网络在目标检测的首次尝试
 
+https://blog.csdn.net/u011853479/article/details/61414913
+
+脉冲神经网络的五脏六腑
+
 # 图像超分辨率进阶+
 
 https://zhuanlan.zhihu.com/p/67613641

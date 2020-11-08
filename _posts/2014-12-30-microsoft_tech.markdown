@@ -241,22 +241,6 @@ https://deck.gl/
 
 # 生物++
 
-https://mp.weixin.qq.com/s/fIn-A8nqUntNuzBMeuHLMA
-
-这些神秘圆圈，与图灵的理论有关？
-
-https://mp.weixin.qq.com/s/ERxHmUzeowA-0VFHxgmiIQ
-
-苍蝇还有不吃粑粑的？嗯，有！还特萌！
-
-https://www.zhihu.com/question/424503238
-
-呼吸道和消化道在咽喉部共用一个通道有什么生理意义？
-
-https://mp.weixin.qq.com/s/p-jnRwuWBdOcNhESuw-vJw
-
-Nature：硬！这只“压不死”的虫子，为未来航空航天材料设计提供了新灵感
-
 https://mp.weixin.qq.com/s/r27j7sJZgiqbUH0D0A7yWg
 
 第一个吃野生香蕉的人会硌着牙么？
@@ -264,3 +248,19 @@ https://mp.weixin.qq.com/s/r27j7sJZgiqbUH0D0A7yWg
 https://mp.weixin.qq.com/s/C0R04rlmUaIDZ7TYKAv18Q
 
 恐龙也有“敏感肌”？
+
+https://mp.weixin.qq.com/s/3H2XcbSWgdekYYDRJuNuYw
+
+这个五亿年前的“四不像”，为达尔文进化论再添实锤
+
+https://mp.weixin.qq.com/s/OqYlnWEuyR0cxYvRiQKzQA
+
+被嫌弃的小公鸡的一生
+
+https://mp.weixin.qq.com/s/-KiIhs-QFkpeeNpN2a6d-A
+
+人类进化在加速吗？
+
+https://mp.weixin.qq.com/s/BVlwnC8eXllB_IJPaR8d5w
+
+雌性狮尾狒发育的秘密：爸爸在就晚熟，遇到陌生雄性加快性成熟

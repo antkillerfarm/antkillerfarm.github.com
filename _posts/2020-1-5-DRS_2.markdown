@@ -396,3 +396,7 @@ https://mp.weixin.qq.com/s/Y4g2T6qMGzCcE67bINPiGA
 https://mp.weixin.qq.com/s/k19LrH05lHjtpGRvS8Ro0g
 
 超长用户行为序列建模
+
+https://mp.weixin.qq.com/s/6K9hR3Kqa397BWNmcAWtqQ
+
+序列化推荐系统的挑战，进展和展望

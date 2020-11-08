@@ -9,6 +9,8 @@ category: resource
 
 # 知名数据集
 
+![](/images/img4/dataset.png)
+
 ## MNIST
 
 MNIST是一个手写字符集，也是学习深度学习和SVM的入门必备数据集。目前由Yann LeCun维护。网址：

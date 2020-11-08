@@ -201,6 +201,10 @@ https://blog.csdn.net/NYfor2017/article/details/105454097
 
 HashMap的加载因子为什么是0.75？
 
+https://mp.weixin.qq.com/s/Ahwg2PYXzhHik9yP_WoYzQ
+
+图文并茂，HashMap经典详解！
+
 ## Log4j & SLF4J & Logback
 
 Log4j是Apache的一个开源项目，通过使用Log4j，我们可以控制日志信息输送的目的地是控制台、文件、GUI组件，甚至是套接口服务器、NT的事件记录器、UNIX Syslog守护进程等；我们也可以控制每一条日志的输出格式；通过定义每一条日志信息的级别，我们能够更加细致地控制日志的生成过程。
@@ -408,3 +412,11 @@ https://mp.weixin.qq.com/s/_MVTvyG3gcsJcpidtQEBqg
 https://mp.weixin.qq.com/s/X0foqlams1wMMnRE017XmQ
 
 JDK 5-15都有哪些经典新特性
+
+https://mp.weixin.qq.com/s/iklfWLmSD4XMAKmFcffp9g
+
+底层原理：垃圾回收算法是如何设计的？
+
+https://mp.weixin.qq.com/s/6HKCnN2HDi84bwjElhZBcQ
+
+打工人，从JMM透析volatile与synchronized原理

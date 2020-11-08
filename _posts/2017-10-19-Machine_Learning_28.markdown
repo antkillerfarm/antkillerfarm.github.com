@@ -247,6 +247,10 @@ AutoFeatureENG
 
 ![](/images/img3/imbalance.png)
 
+数据不平衡问题在现实世界中非常普遍。对于真实数据，不同类别的数据量一般不会是理想的uniform分布，而往往会是不平衡的；如果按照不同类别数据出现的频率从高到低排序，就会发现数据分布出现一个“长尾巴”，也即我们所称的长尾效应。大型数据集经常表现出这样的长尾标签分布：
+
+![](/images/img4/imbalance.jpg)
+
 https://mp.weixin.qq.com/s/e0jXXCIhbaZz7xaCZl-YmA
 
 如何处理不均衡数据？
@@ -314,3 +318,7 @@ https://mp.weixin.qq.com/s/7_-SSVZpxLfnwn7EmbGyZA
 https://mp.weixin.qq.com/s/fAHlrfchgkQ1Wuc8sfTlZg
 
 堪比Focal Loss！解决目标检测中样本不平衡的无采样方法
+
+https://zhuanlan.zhihu.com/p/259710601
+
+数据类别不平衡/长尾分布？不妨利用半监督或自监督学习

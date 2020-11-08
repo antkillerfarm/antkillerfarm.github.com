@@ -261,6 +261,10 @@ https://zhuanlan.zhihu.com/p/106662375
 
 More About Attention
 
+https://mp.weixin.qq.com/s/MFxQSUMFNRXjdLQwzveO4w
+
+深度学习中的注意力机制
+
 https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
 
 阿里北大提出新attention建模框架，一个模型预测多种行为

@@ -320,3 +320,7 @@ Anchor-free目标检测之ExtremeNet
 https://mp.weixin.qq.com/s/LGeNgnXfYaVVAc_37j6-2A
 
 Anchor Free及Transformer时代
+
+https://mp.weixin.qq.com/s/52YBmlHioRkUgetZWHMZOw
+
+Anchor-free目标检测：工业应用更友好的新网络

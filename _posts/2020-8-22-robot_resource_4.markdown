@@ -424,3 +424,7 @@ https://mp.weixin.qq.com/s/kgl7mz4bK7SywkbViY_qhQ
 https://mp.weixin.qq.com/s/3_famaAmkAN-4xVEupSXSA
 
 华为、北大等首创GAN剪枝算法，线上加速3倍以上
+
+https://mp.weixin.qq.com/s/s6Z8P8bUkyoKU2mW3z-rNQ
+
+轻量级网络/检测/分割综述

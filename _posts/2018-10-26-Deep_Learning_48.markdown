@@ -285,6 +285,10 @@ https://mp.weixin.qq.com/s/_MpfRGYG_pleaEQMpQT5Mg
 
 深度学习在视觉搜索和匹配中的应用
 
+https://mp.weixin.qq.com/s/s8swIdAPw_VeAWnZTL1riA
+
+搜你所想，从Query意图识别到类目识别的演变
+
 # 人脸检测/识别+
 
 https://mp.weixin.qq.com/s/pmnb_WnncL12T1IZoso5DA

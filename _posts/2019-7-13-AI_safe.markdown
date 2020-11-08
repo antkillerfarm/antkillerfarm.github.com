@@ -241,6 +241,10 @@ https://mp.weixin.qq.com/s/cnYnSfeH4uyOwGDPLOpDOA
 
 如何系统地欺骗图像识别神经网络
 
+https://mp.weixin.qq.com/s/tk5ZNriQremKNzCIl0jJVQ
+
+一文读懂机器学习“数据中毒”
+
 # 目标检测进阶+
 
 https://mp.weixin.qq.com/s/IRD0iIVXyENlUOyfSbmlBA

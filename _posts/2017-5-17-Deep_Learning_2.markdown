@@ -214,6 +214,12 @@ Dropout还有若干变种，如Annealed dropout（Dropout rate decreases by epoc
 
 总的来说，Dropout类似于机器学习中的L1、L2规则化等增加稀疏性的算法，也类似于随机森林、模拟退火之类的增加随机性的算法。
 
+对drop方法的改进有两种明显的趋势:
+
+随机drop-> 自适应drop
+
+像素级drop -> 区域级drop
+
 参考：
 
 https://zhuanlan.zhihu.com/p/23178423
@@ -263,6 +269,10 @@ DropBlock正则化的介绍
 https://mp.weixin.qq.com/s/g1XSxGG_l7MexuokaChlsQ
 
 理解dropout: 组合 or 噪声？
+
+https://mp.weixin.qq.com/s/n5VXSS_t9JPyLE8UNcWlbA
+
+Drop大法
 
 ## Dropout预测阶段
 

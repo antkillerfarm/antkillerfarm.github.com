@@ -194,6 +194,10 @@ https://mp.weixin.qq.com/s/eAptnygPQcQ5Ex8-6l0byA
 
 Golang单元测试详尽指引
 
+https://mp.weixin.qq.com/s/o0qtdwE4TfppqWAKJLDhSw
+
+Go中的循环是如何转为汇编的？看完你懂了吗？
+
 ## GTK
 
 熟悉我的朋友都知道，新语言的GTK demo是一定要有的。毕竟helloworld太简单了，容易让人产生从三到万的错觉。

@@ -240,6 +240,10 @@ https://zhuanlan.zhihu.com/p/120254892
 
 谈谈图像质量量化评估标准
 
+https://mp.weixin.qq.com/s/t1kv9ChSskrXE1lW80dsew
+
+结构相似度索引（SSIM）全攻略：理论+代码
+
 # DRCN
 
 DRCN（deeply-recursive convolutional network）是韩国首尔国立大学的作品。

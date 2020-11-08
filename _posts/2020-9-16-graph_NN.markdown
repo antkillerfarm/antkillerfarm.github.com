@@ -83,6 +83,10 @@ https://mp.weixin.qq.com/s/lK5b3E84e2idh64v3SBfkg
 
 南洋理工Xavier：图深度学习最新进展，35页ppt，Deep Learning on Graphs
 
+https://mp.weixin.qq.com/s/zJ0mL0qNmhzHBQeyhQUafg
+
+南洋理工Xavier：图神经网络架构的最新进展，Graph Network Architectures，附80页ppt
+
 https://mp.weixin.qq.com/s/eA9a3478oxHd3zsepNVTpQ
 
 图数据表示学习综述论文

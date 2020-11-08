@@ -97,6 +97,10 @@ https://github.com/cheungdaven/DeepRec
 
 这是一个基于Tensorflow的深度推荐系统
 
+https://mp.weixin.qq.com/s/LmAtKi3QI71JHZRZWJMTVw
+
+伯乐：一个易用、强大的PyTorch推荐系统开源库
+
 ## Wide & Deep
 
 https://mp.weixin.qq.com/s/G4bDj4a05K0kB4IZ6IosiQ
