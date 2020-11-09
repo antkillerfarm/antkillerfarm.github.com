@@ -37,7 +37,7 @@ http://cs229.stanford.edu/syllabus.html
 
 用吴恩达自己的话来说，他还拿着斯坦福教职，很大程度就是想教这门课。因此，该课程内容每年都有小幅更新。
 
-它在coursera上也有个网页，内容相对简单一些：
+它在coursera上也有个网页，内容相对简单一些（基本不讲数学公式，适合非算法岗的工程人员）：
 
 https://www.coursera.org/learn/machine-learning
 
@@ -223,16 +223,16 @@ $$\theta_j:=\theta_j-\alpha\frac{\partial J(\theta)}{\partial \theta_j} \tag{3}$
 
 $$\theta_j:=\theta_j+\alpha(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j \tag{4}$$
 
-迭代方式分为两种：
+迭代方式很多，常见的有以下几种：
 
-1.批量梯度下降（batch gradient descent）算法。方法如下：
+1.批量梯度下降（Batch Gradient Descent）。方法如下：
 
 >Repeat until convergence {   
 >>$$\theta_j:=\theta_j+\alpha\sum_{i=1}^m(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j$$(for every j)   
 >
 >}
 
-2.随机梯度下降（stochastic gradient descent）算法。方法如下：
+2.随机梯度下降（Stochastic Gradient Descent）。方法如下：
 
 >Loop {   
 >>for i=1 to m, {   
@@ -250,11 +250,21 @@ $$\theta_j:=\theta_j+\alpha(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j \tag{4}$$
 
 ![](/images/article/ogd_vs_mini_batch.png)
 
+3.Mini-batch Gradient Descent，这种方法的行为和效果介于前两者之间。
+
+![](/images/img4/SGD.png)
+
+一些研究认为大Batch训练有可能无法达到最小值。
+
 参考：
 
 https://mp.weixin.qq.com/s/7sS-r6jIF4GAhZicBfFGDA
 
 通过代码原理教你搞懂SGD随机梯度下降、BGD、MBGD
+
+https://www.graphcore.ai/posts/revisiting-small-batch-training-for-deep-neural-networks
+
+Revisiting Small Batch Training for Deep Neural Networks
 
 ## 正规方程组算法
 

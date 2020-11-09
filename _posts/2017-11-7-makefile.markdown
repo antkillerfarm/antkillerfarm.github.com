@@ -17,7 +17,10 @@ http://www.gnu.org/software/make/manual/html_node/index.html
 
 http://www.gnu.org/software/make/manual/html_node/Quick-Reference.html
 
-使用`make -n`或`make VERBOSE=1`将显示make命令正在试图做的事情。 
+使用`make -n`或`make VERBOSE=1`将显示make命令正在试图做的事情。
+
+>问：在常用系统软件，比如find、grep、gcc等，对并发支持得最好的是？   
+>答：make！哈哈哈！所以，Makefile是以前并发编程的一个常用选择。写一些单线程程序，外面用Makefile来调用，轻松并发。
 
 # Autotools
 

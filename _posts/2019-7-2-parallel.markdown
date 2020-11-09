@@ -33,6 +33,10 @@ https://mp.weixin.qq.com/s/23QCWf0NOoXlwRGAHfx4oQ
 
 还在疑惑并发和并行？
 
+## 概述
+
+![](/images/img4/Parallel.png)
+
 ## 参考
 
 https://mp.weixin.qq.com/s/ai_XI8ddP5I2m3ChCqnQsA

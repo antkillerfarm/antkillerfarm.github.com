@@ -37,7 +37,7 @@ Flexpoint是Nervana的作品。
 
 《Flexpoint: An Adaptive Numerical Format for Efficient Training of Deep Neural Networks》
 
-讲了Google的成功案例，这里来讲一个反面教材。
+讲了Google的成功案例，这里来讲一个**反面教材**。
 
 ![](/images/img3/flex.png)
 
@@ -47,7 +47,17 @@ Flexpoint是Nervana的作品。
 
 - 格式转换比bfloat16复杂。
 
-- Dynamic Range小，容易梯度消失，从而造成模型很难收敛。从指数位宽来看，Flexpoint和float16相同，都是5位。然而由于Flexpoint是共享指数，因此它真正的Dynamic Range是不如float16的。float16已经被证明是不适合training的，更遑论Flexpoint了。
+- Dynamic Range小，容易梯度消失，从而造成模型很难收敛。
+
+从指数位宽来看，Flexpoint和float16相同，都是5位。然而由于Flexpoint是共享指数，因此它真正的Dynamic Range是不如float16的。
+
+![](/images/img4/scale.png)
+
+上图是模型训练过程中，相关值的典型范围。
+
+![](/images/img4/FP16.png)
+
+float16已经被证明是不适合training的，更遑论Flexpoint了。
 
 事实上，Intel内部已有人评价道：
 

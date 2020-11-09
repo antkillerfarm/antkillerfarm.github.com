@@ -237,6 +237,10 @@ b) 用Fast R-CNN的网络参数去初始化RPN。之后不断迭代这个过程�
 
 ![](/images/article/4_Step_Alternating_Training.png)
 
+### 数据不平衡问题
+
+如果每幅图的所有anchor都去参与优化loss function，那么最终会因为负样本过多导致最终得到的模型对正样本预测准确率很低。因此，可在每幅图像中随机采样256个anchors去参与计算一次mini-batch的损失。正负比例1:1(如果正样本少于128则补充采样负样本)
+
 ## 总结
 
 ![](/images/article/faster_rcnn_p.png)
