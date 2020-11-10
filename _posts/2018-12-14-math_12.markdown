@@ -220,3 +220,13 @@ PS：1.《几何原本》不代表欧几里得的最高水平，那是欧几里�
 https://mp.weixin.qq.com/s/jIlE6VDlgOgoIpUBiGzF5w
 
 他（Claude Ptolemy）是被埋没了1300年的超级学霸，却凭一己之力，影响世界，改变人类文明！
+
+----
+
+弹球是展示Zeno现象的最简单模型之一。一般来说，Zeno行为的特征可非正式地表示为某些混合动力系统（Hybrid System）在有限时间间隔内发生无限数量的事件。在弹球模型中，球在失去能量的同时，将以越来越小的时间间隔与地面发生多次碰撞。因此，模型会经历Zeno行为。
+
+https://ww2.mathworks.cn/help/simulink/slref/simulation-of-a-bouncing-ball.html
+
+https://blog.csdn.net/handsomeswp/article/details/109535534
+
+Python动画没有秘密

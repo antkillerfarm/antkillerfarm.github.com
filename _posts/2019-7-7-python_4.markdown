@@ -468,7 +468,3 @@ Tkinter可视化窗口
 https://mp.weixin.qq.com/s/-erFsz8NvLZ5mOIXyDosFg
 
 使用PyInstaller将python转成可执行文件exe笔记
-
-https://blog.csdn.net/handsomeswp/article/details/109535534
-
-Python动画没有秘密
