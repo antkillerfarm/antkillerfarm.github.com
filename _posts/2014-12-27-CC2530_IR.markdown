@@ -159,6 +159,8 @@ C/C++ Compiler->Language->C dialect
 
 可变长数组（variable length array，简称VLA）在我看来，是C99标准的最大福利。这一点VC至今都不支持，鄙视之。。。
 
+VLA的实现一般是将栈寄存器向栈顶移动，不牵扯函数调用，因此它的速度远快于malloc函数。同时由于变量的局部性，VLA也无需调用free函数释放，这在代码的编写效率上也有一定的优势。
+
 ## 输出的二进制文件的格式
 
 Linker->Output->Format
