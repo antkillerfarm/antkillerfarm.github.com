@@ -289,6 +289,10 @@ https://mp.weixin.qq.com/s/s8swIdAPw_VeAWnZTL1riA
 
 搜你所想，从Query意图识别到类目识别的演变
 
+https://mp.weixin.qq.com/s/l015FcoP-P2z5BmaTNXpvg
+
+使用Sentence Transformers和Faiss构建语义搜索引擎
+
 # 人脸检测/识别+
 
 https://mp.weixin.qq.com/s/pmnb_WnncL12T1IZoso5DA

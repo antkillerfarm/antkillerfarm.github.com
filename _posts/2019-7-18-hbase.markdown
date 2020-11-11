@@ -362,6 +362,10 @@ https://mp.weixin.qq.com/s/0jFHlWAeH5avIO2NLpTmGA
 
 Docker底层原理浅析
 
+https://mp.weixin.qq.com/s/dFUcSJRnH4_QhG_Dyt1RkQ
+
+为什么不建议把数据库部署在Docker容器内
+
 # Pulsar
 
 https://mp.weixin.qq.com/s/O8pj4pChyw8PK-G_4A3DWg

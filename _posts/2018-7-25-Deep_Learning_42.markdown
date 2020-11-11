@@ -295,6 +295,10 @@ https://zhuanlan.zhihu.com/p/161806533
 
 论文阅读：神经形态视觉传感器（事件相机）的研究进展及应用综述
 
+https://mp.weixin.qq.com/s/yIMaptbjV71cdC-GauGtDg
+
+先拍照后对焦，浅析基于深度估计的景深编辑与背景虚化
+
 # LSM
 
 liquid state machine (LSM)

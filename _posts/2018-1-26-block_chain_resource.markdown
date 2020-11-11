@@ -293,6 +293,10 @@ https://mp.weixin.qq.com/s/gJWTiMCovGMQ8ye_TovdOw
 
 富士通的这颗芯片凭啥让日本走向了世界之巅？
 
+https://www.zhihu.com/question/404217836
+
+如何看待全球超级计算机 TOP 500 榜单日本登顶，中国跌出前三？近年中国超算发展现状如何？
+
 # VAE参考资源+
 
 https://mp.weixin.qq.com/s/GJr-YtV84eV1KbkyVSkcBA

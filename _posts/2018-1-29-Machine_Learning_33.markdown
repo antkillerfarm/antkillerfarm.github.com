@@ -202,6 +202,10 @@ https://zhuanlan.zhihu.com/p/75589452
 
 高斯过程Gaussian Processes原理、可视化及代码实现
 
+https://mp.weixin.qq.com/s/Bw0vD9EEQijjE1gaIAetHw
+
+如何推导高斯过程回归以及深层高斯过程详解
+
 # 热传导推荐算法
 
 https://www.zhihu.com/question/20184666

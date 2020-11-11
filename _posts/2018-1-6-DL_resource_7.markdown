@@ -370,3 +370,7 @@ https://mp.weixin.qq.com/s/GGRORF5EfJ5xzMLwAsJt5w
 https://mp.weixin.qq.com/s/fxEg8UOa3MeJ6qx5SjEHog
 
 NLP领域中各式各样Attention知识系统性的梳理和总结
+
+https://mp.weixin.qq.com/s/_5YaZdYa8bTFiAzHyrMFBg
+
+理解卷积神经网络中的自注意力机制

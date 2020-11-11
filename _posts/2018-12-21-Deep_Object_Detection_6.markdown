@@ -304,3 +304,7 @@ https://zhuanlan.zhihu.com/p/70523190
 https://mp.weixin.qq.com/s/xMQA97k0USl69v1MC86HKA
 
 多尺度特征金字塔结构用于目标检测
+
+https://mp.weixin.qq.com/s/rMR98woa1y_sjSFgG24cGQ
+
+常见特征金字塔网络FPN及变体

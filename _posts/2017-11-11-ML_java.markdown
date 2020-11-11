@@ -35,6 +35,18 @@ https://mp.weixin.qq.com/s/geJDbL1eVcJXDtsO_mu4-w
 
 Deeplearning4j手把手深度学习教程系列完整版
 
+## DJL
+
+Deep Java Library是AWS开源的Java深度学习框架。和DL4J不同，DJL没有自己的运算层，而必须依靠TF或Pytorch进行计算。
+
+https://github.com/awslabs/djl/
+
+参考：
+
+https://mp.weixin.qq.com/s/-GaxCVUOSe_2lFAeLRaIpQ
+
+用Java训练深度学习模型，原来这么简单
+
 ## Joinery
 
 Pandas的等价物。

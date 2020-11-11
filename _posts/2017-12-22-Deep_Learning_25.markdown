@@ -9,9 +9,23 @@ category: DL
 
 # 多任务学习
 
+## 教程
+
 http://cs330.stanford.edu/
 
 CS 330: Deep Multi-Task and Meta Learning
+
+## 论文
+
+《Multi-Task Learning for Dense Prediction Tasks: A Survey》
+
+## 概述
+
+![](/images/img4/MTL.png)
+
+![](/images/img4/MTL_2.png)
+
+## 参考
 
 https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA
 
@@ -24,6 +38,10 @@ https://mp.weixin.qq.com/s/A-CVKTz_moaFzTYywSt2gg
 https://zhuanlan.zhihu.com/p/148132708
 
 最新《深度多任务学习》综述论文
+
+https://zhuanlan.zhihu.com/p/46044947
+
+深度神经网络中多任务学习简介
 
 https://zhuanlan.zhihu.com/p/67524006
 
@@ -144,6 +162,14 @@ https://mp.weixin.qq.com/s/gIEJoE9B8mmNx6u6bqLspQ
 https://mp.weixin.qq.com/s/ifTNRW0W7-P_LyfNldtavQ
 
 多任务学习方法在推荐中的演变
+
+https://zhuanlan.zhihu.com/p/269492239
+
+多任务学习优化（Optimization in Multi-task learning）
+
+https://www.cnblogs.com/RyanXing/p/10730829.html
+
+Cross-stitch Networks for Multi-task Learning
 
 # 人脸检测/识别
 

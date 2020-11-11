@@ -299,6 +299,10 @@ https://mp.weixin.qq.com/s/ss0Aj1XXn7ZQafhl-XXN6Q
 
 时空序列预测模型之Self-Attention ConvLSTM
 
+https://mp.weixin.qq.com/s/fgJ0xP7lsstGWOThPNCNgg
+
+时空序列预测模型之DGGAN
+
 # 深度树学习
 
 决策树是传统ML领域的王者，对于如何将之深度化，一般有两个方向：

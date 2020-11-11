@@ -71,13 +71,19 @@ BN的误差反向算法相对复杂，这里不再赘述。
 
 由公式7可以看出，BN不是针对x（输入的），而是针对Wx+b的。而W每个channel都不同。因此，对于Layer: `batch*channel*height*width`来说，对`batch*height*width`个像素点统计得到一个均值和一个标准差，这样总共会得到channel组参数。
 
-前面指出：
+前面章节曾指出：
 
 - relu得用Kaiming初始化。
 
 - tanh得用Xavier初始化。
 
 而在网络层的激活函数前加上BN的话，采用什么初始化都无所谓。
+
+参考：
+
+https://mp.weixin.qq.com/s/fAiIGJnciAi3pf8MQ7UqKg
+
+使用Batch Normalization折叠来加速模型推理
 
 ## Instance Normalization
 

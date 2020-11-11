@@ -159,6 +159,10 @@ https://mp.weixin.qq.com/s/V0Jh1Qv-RXoSK63Z5C092g
 
 一滴水里最少有几个水分子？5个还是6个？
 
+https://mp.weixin.qq.com/s/tGYqdbrYUkXaIEa_ycAzUQ
+
+幸运的化学，悲催的奠基人（Antoine-Laurent de Lavoisier）
+
 ## 化学工业
 
 https://wallstreetcn.com/articles/250536

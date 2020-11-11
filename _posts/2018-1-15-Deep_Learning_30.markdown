@@ -341,6 +341,10 @@ https://mp.weixin.qq.com/s/soH6jX7_fjq0iBBH-5bMsA
 
 Node2Vec论文+代码笔记
 
+https://mp.weixin.qq.com/s/VQON_WM_wLjGgbY2_UqzSQ
+
+Node2Vec: 可扩展的网络特征学习
+
 https://mp.weixin.qq.com/s/zxFgW6ofimYQ9wlChTK8cw
 
 Recommender System with GNN
@@ -440,3 +444,7 @@ LINE：不得不看的大规模信息网络嵌入
 https://mp.weixin.qq.com/s/BPbUiIl9yU6DJbjKQmrzgw
 
 结合图的结构信息和节点特征的图对比学习
+
+https://mp.weixin.qq.com/s/FwIbHiyZa4EcnMunWoAR1Q
+
+北大发布最新《图神经网络推荐系统》2020综述论文，27页pdf

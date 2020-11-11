@@ -217,6 +217,10 @@ http://doolittle.icarus.com/ntpclient/
 
 ntpd是NTP的另一个实现，既可以当Server，也可以当Client，已经被集成进busybox。
 
+https://mp.weixin.qq.com/s/OEbhKBBbo-eo4NWmLYmGDg
+
+有关部分北京市民“穿越”的科学解读
+
 ## socket通信基本流程
 
 ### TCP

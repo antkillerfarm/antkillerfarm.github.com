@@ -386,3 +386,7 @@ https://mp.weixin.qq.com/s/MwXG85RdbNqvwkjauTfk2Q
 https://mp.weixin.qq.com/s/ayvBYilRX0BFEYkAa2EikQ
 
 A/B测试是好，但不适合创新
+
+https://mp.weixin.qq.com/s/85BBYJRbvpV9CqgYjW9Ayg
+
+推荐系统衡量：ABtest框架

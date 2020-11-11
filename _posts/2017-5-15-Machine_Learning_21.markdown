@@ -171,6 +171,12 @@ $$\mathrm{softmax} ([2,1,0.1])=[0.7,0.2,0.1]$$
 
 由于softmax不像argmax这样只选择唯一的一个，也就是所谓的one-hot ，因此得了soft的名字。
 
+参考：
+
+https://www.zhihu.com/question/294679135
+
+softmax和cross-entropy是什么关系？
+
 ## logits
 
 logits本意是指一个事件发生与该事件不发生的比值的对数。假设一个事件发生的概率为 p，那么该事件的logits为：

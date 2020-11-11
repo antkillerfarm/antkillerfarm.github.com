@@ -299,6 +299,10 @@ https://mp.weixin.qq.com/s/3-NEbE6aZHR6dgW6GCmldw
 
 在频域中学习的DCTNet
 
+https://mp.weixin.qq.com/s/a7GEOdPRWYCBh6XQslxX8w
+
+CNN骨干网络新选择HS-ResNet
+
 # AI前沿
 
 人工智能前沿7大热点：

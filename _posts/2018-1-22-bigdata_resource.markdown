@@ -11,8 +11,6 @@ category: resource
 
 ## 教程
 
-## 教程
-
 https://pdos.csail.mit.edu/6.824/index.html
 
 6.824: Distributed Systems
@@ -79,6 +77,10 @@ https://mp.weixin.qq.com/s/foAit8ratliRG6R2KC05Hg
 
 ![](/images/img3/big_data.png)
 
+![](/images/img4/big_data_storage.png)
+
+![](/images/img4/CAP.png)
+
 https://dzone.com/
 
 这是一个大数据方面的资源网站，但是是英文的
@@ -86,6 +88,10 @@ https://dzone.com/
 https://mp.weixin.qq.com/s/giF05uBffq6WKHnTUqUPvg
 
 这是dzone中一些资源的列表
+
+https://mp.weixin.qq.com/s/m4FR4LjVBxlPGXWAsTne6g
+
+大数据存储技术综述
 
 http://v.kuaidadi.com/
 

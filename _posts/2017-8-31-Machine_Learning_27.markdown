@@ -184,6 +184,10 @@ https://mp.weixin.qq.com/s/Zi9v_sbxPkHWUWwNhMMMAg
 
 编辑距离
 
+https://zhuanlan.zhihu.com/p/270675634
+
+点云距离度量：完全解析EMD距离(Earth Mover's Distance)
+
 # LSA
 
 ## 基本原理

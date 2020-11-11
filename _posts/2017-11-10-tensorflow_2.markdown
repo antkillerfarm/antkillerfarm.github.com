@@ -363,6 +363,10 @@ http://mp.weixin.qq.com/s/hpv6bzr-5VZet-UCHOCQLQ
 
 谷歌TFX：基于TensorFlow可大规模扩展的机器学习平台
 
+https://mp.weixin.qq.com/s/ANoY3MZEvz7SvKXDE-24NQ
+
+迈向ML工程：TensorFlow Extended(TFX)简史
+
 ## op的C++实现
 
 有的时候为了将Tensorflow的op移植到其他平台，需要找到相应op的cpu实现。比如space_to_batch这个op，它的实现在：

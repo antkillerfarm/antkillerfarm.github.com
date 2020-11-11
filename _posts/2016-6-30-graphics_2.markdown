@@ -67,6 +67,8 @@ https://mp.weixin.qq.com/s/gylWAKk4q0UNlhxIXrFHkQ
 
 # 方框滤波（Box Filter）
 
+![](/images/img4/filter.jpg)
+
 $$g=f\otimes h,h=\alpha
 \begin{bmatrix}
      1 & 1 & 1 & \cdots & 1 \\
