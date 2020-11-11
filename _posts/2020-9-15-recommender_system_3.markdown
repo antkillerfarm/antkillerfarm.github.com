@@ -424,3 +424,7 @@ https://mp.weixin.qq.com/s/Bpw-q3wISbCAKHsuYQo0QQ
 https://mp.weixin.qq.com/s/xTjUPEt1-UMOp2W9a3SONQ
 
 腾讯QQ看点团队：用迁移学习架构解决短视频冷启推荐问题
+
+https://mp.weixin.qq.com/s/hPHETfj3qrZlvcJDFezSkA
+
+TensorFlow Ranking框架在海外推荐业务中的实践与应用
