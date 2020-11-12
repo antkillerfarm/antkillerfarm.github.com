@@ -39,6 +39,12 @@ http://www.openslr.org/
 
 http://cn-mirror.openslr.org/
 
+K2是Daniel Povey来到小米之后，提出的新项目。旨在使用TF或Pytorch实现相关的音频算法，主要是Finite State Automaton(FSA)和Finite State Transducer(FST)方面的算法。
+
+代码：
+
+https://github.com/k2-fsa/k2
+
 参考：
 
 https://www.eleanorchodroff.com/tutorial/kaldi/kaldi-intro.html

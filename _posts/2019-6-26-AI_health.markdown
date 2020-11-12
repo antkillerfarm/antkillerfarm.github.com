@@ -253,6 +253,12 @@ Florence Nightingale用数据图表的方式展示了那些可预防疾病（蓝
 
 >Florence Nightingale，1820～1910，英国人，女。护理事业创始人和现代护理教育奠基人。她虽然和当时大多数女性一样，没有接受学校教育，但却接受了良好的家庭教育。
 
+----
+
+https://www.douban.com/group/topic/176322122/
+
+画图小白想问一句，这种核酸检测人数的贪吃蛇图怎...
+
 ## howmuch.net
 
 howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：
