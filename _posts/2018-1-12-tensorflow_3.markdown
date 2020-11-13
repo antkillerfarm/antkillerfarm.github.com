@@ -197,6 +197,18 @@ https://mp.weixin.qq.com/s/jdjX0jirTHOUqsGagJmGLQ
 
 ![](/images/img3/TF_2.png)
 
+```python
+import tensorflow
+main_version = tensorflow.__version__.split('.')[0]
+if int(main_version) == 2:
+    import tensorflow.compat.v1 as tf
+    tf.compat.v1.disable_v2_behavior()
+    import tensorflow.compat.v1.lite as tflite
+else:
+    import tensorflow as tf
+    import tensorflow.contrib.lite as tflite
+```
+
 https://mp.weixin.qq.com/s/BD-nJSZJLjBBq1n7HEHpKw
 
 将您的代码升级至TensorFlow 2.0

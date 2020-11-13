@@ -194,6 +194,12 @@ Generating Your SSH Public Key
 
 `git cherry-pick <commit id>`
 
+16.撤销已经push的内容
+
+`git reset --soft <SHA>`
+
+`git push origin master --force`
+
 ## 如何git超大版本库
 
 自从两次git完整的linux kernel，都因为网络问题，而中途失败之后，不甘心的我，继续在网上寻找答案。
