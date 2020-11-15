@@ -131,6 +131,14 @@ https://blog.csdn.net/bingecuilab/article/details/50628634
 
 Proximal Gradient Descent for L1 Regularization
 
+## 动态图
+
+针对动态图的自动求导，TF提出了GradientTape方法。
+
+https://zhuanlan.zhihu.com/p/102207302
+
+tensorflow计算图与自动求导——tf.GradientTape
+
 ## 参考
 
 https://mp.weixin.qq.com/s/7Z2tDhSle-9MOslYEUpq6g
