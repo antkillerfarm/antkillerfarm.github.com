@@ -37,6 +37,10 @@ https://mp.weixin.qq.com/s/UhHh_DFoxKW5K3OCe3Bjqg
 
 目标检测：Anchor-Free时代
 
+https://mp.weixin.qq.com/s/PqDkdxqvUvSKvTklVojOyA
+
+CPNDet：简单地给CenterNet加入two-stage，更快更强
+
 # 其它目标检测网络
 
 ## A-Fast-RCNN

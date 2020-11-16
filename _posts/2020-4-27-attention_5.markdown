@@ -390,3 +390,7 @@ https://zhuanlan.zhihu.com/p/70389596
 https://mp.weixin.qq.com/s/h1VUSY7_UZF3PmjSN0DMSg
 
 从One-hot, Word embedding到Transformer，一步步教你理解Bert
+
+https://zhuanlan.zhihu.com/p/132554155
+
+超细节的BERT/Transformer知识点

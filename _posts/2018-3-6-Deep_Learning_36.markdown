@@ -229,6 +229,10 @@ https://mp.weixin.qq.com/s/PT5t3q2_9GF7_Wqa-3AiZg
 
 深度学习时序分类，175页pdf
 
+https://mp.weixin.qq.com/s/UjuuspDnm7EoNzfVAeBHJQ
+
+《时序分类:深度序列模型》教程，172页ppt
+
 ## TCN
 
 https://mp.weixin.qq.com/s/hE0elaJcywb084rmWZzTAw

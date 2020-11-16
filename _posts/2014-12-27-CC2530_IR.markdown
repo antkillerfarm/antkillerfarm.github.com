@@ -11,6 +11,10 @@ category: technology
 
 CC2530是德州仪器公司推出的用于物联网领域的基于8051架构的芯片，支持Zigbee、红外等多种无线通讯方式。本文仅对红外相关的寄存器配置做一个简单说明。
 
+https://mp.weixin.qq.com/s/dzi0VmQzbLsN27y2rqw9wA
+
+红外解码原来如此简单
+
 ## 1.配置时钟
 
 配置时钟需要配置CLKCONCMD寄存器。但是需要注意的是OSC、TICKSPD和CLKSPD存在就低不就高的特点，所以如果稍有不慎，最终Timer输出的频率就不正确了。

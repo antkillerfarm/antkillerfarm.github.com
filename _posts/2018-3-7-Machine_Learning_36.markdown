@@ -179,6 +179,10 @@ https://mp.weixin.qq.com/s/umGzRySCnJo25e5_0nO7cw
 
 如何用XGBoost做时间序列预测？
 
+https://mp.weixin.qq.com/s/QYMPBWMVTQf3LACGGWGX7A
+
+样本不平衡处理：xgboost几种权重设置方法比较
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。

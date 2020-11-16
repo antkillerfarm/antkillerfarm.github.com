@@ -131,6 +131,10 @@ https://zhuanlan.zhihu.com/p/138107999
 
 常见的距离算法和相似度计算方法
 
+https://mp.weixin.qq.com/s/OpBKbF1UHEAuosXjNDKqOA
+
+机器学习距离与相似度计算
+
 ## ALS算法原理
 
 http://www.cnblogs.com/luchen927/archive/2012/02/01/2325360.html

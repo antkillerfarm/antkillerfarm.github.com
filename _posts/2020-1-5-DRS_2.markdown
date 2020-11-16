@@ -400,3 +400,7 @@ https://mp.weixin.qq.com/s/k19LrH05lHjtpGRvS8Ro0g
 https://mp.weixin.qq.com/s/6K9hR3Kqa397BWNmcAWtqQ
 
 序列化推荐系统的挑战，进展和展望
+
+https://mp.weixin.qq.com/s/Pn8kSSBuWq-6dULfDKQoSQ
+
+深度多兴趣网络DMIN

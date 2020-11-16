@@ -174,6 +174,10 @@ https://eli.thegreenplace.net/2014/perfect-forwarding-and-universal-references-i
 
 Perfect forwarding and universal references in C++
 
+https://mp.weixin.qq.com/s/tkbnoH3XQW50ceaYKyK8Fg
+
+再谈C++右值引用与完美转发
+
 # RAII
 
 资源获取即初始化（Resource Acquisition Is Initialization），或称RAII，是一种C++编程技术，它将必须在使用前请求的资源（分配的堆内存、执行线程、打开的套接字、打开的文件、锁定的互斥体、磁盘空间、数据库连接等——任何存在受限供给中的事物）的生命周期绑定与一个对象的生存期相绑定。

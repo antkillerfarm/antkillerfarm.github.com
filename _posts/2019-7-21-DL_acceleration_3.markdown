@@ -105,6 +105,10 @@ https://www.zhihu.com/question/337513515
 
 Tensor中数据摆放顺序NC4HW4是什么意思，只知道NCHW格式，能解释以下NC4HW4格式吗？
 
+https://mp.weixin.qq.com/s/1CToXRgyO0F8x0By31dneg
+
+图解神秘的NC4HW4
+
 ## 参考
 
 https://colfaxresearch.com/falcon-library/

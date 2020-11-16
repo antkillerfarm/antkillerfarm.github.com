@@ -364,3 +364,11 @@ https://mp.weixin.qq.com/s/cyaQt-SO7sgG49kuUyPJbQ
 https://mp.weixin.qq.com/s/curzH8WrFyl5WWT4lDfpwQ
 
 Chrome暗藏的恐龙跳一跳，已经被AI轻松掌握了
+
+https://www.cnblogs.com/massquantity/p/13842139.html
+
+Flink+强化学习搭建实时推荐系统
+
+https://mp.weixin.qq.com/s/zfVrmErz3ZaGz7Ha7qGoIw
+
+要提升微信看一看推荐混排的长期收益？试试深度强化学习

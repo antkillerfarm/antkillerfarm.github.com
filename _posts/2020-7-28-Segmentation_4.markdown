@@ -115,6 +115,10 @@ https://zhuanlan.zhihu.com/p/159173338
 
 FCN、Unet、Unet++医学图像分割那点事儿
 
+https://mp.weixin.qq.com/s/TmR9TiB9cfvYGIhQTlctRQ
+
+医学图像分割：UNet++
+
 # 语义分割进阶
 
 https://mp.weixin.qq.com/s/_q8N8keNpcD-jXLrRd_8dw

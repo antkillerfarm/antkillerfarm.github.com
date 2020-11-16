@@ -324,6 +324,14 @@ https://zhuanlan.zhihu.com/p/108454557
 
 超全spark性能优化总结
 
+https://mp.weixin.qq.com/s/vytVTAgU-6_iRG-drf9eYQ
+
+使用Spark进行大规模图形挖掘
+
+https://mp.weixin.qq.com/s/Nyb9qTYn5_XFhQPa8KZojw
+
+最新Apache Spark平台的NLP库,助你轻松搞定自然语言处理任务
+
 # Zookeeper
 
 http://zookeeper.apache.org/

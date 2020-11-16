@@ -215,6 +215,10 @@ https://mp.weixin.qq.com/s/sA8ZNsxNkmvft-ln9-6zjA
 
 如何生成Flink作业的交互式火焰图？
 
+https://mp.weixin.qq.com/s/mOdq33TfAYZRFgyTciqqXQ
+
+深入解析Flink的算子链机制
+
 # Beam
 
 Apache Beam是一个数据处理的通用引擎，集成了多个处理数据框架（包括Cassandra、Elasticesarch、Hadoop-file-system、Hadoop-hbase、Jdbc、Kafka等）。Beam SDK给上层应用的开发者提供了一个统一的编程接口，开发者不需要了解底层的具体的大数据平台的开发接口是什么，直接通过Beam SDK的接口就可以开发数据处理的加工流程，不管输入是用于批处理的有界数据集，还是流式的无界数据集。
@@ -350,6 +354,10 @@ https://mp.weixin.qq.com/s/1woExb3V_PjnrhHYH5Jksg
 https://mp.weixin.qq.com/s/7l_o1iJtxiRnzFauaPjq4w
 
 这可能是你见过最好的Redis主从复制原理
+
+https://mp.weixin.qq.com/s/RJ1sSyGkkD1SCEGsD320Dw
+
+和你们聊聊Redis概念、集群和应用场景！
 
 ## Pika
 

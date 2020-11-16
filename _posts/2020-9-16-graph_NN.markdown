@@ -63,10 +63,6 @@ https://mp.weixin.qq.com/s/b_QqUxFbQ70xmsxGMtoaDQ
 
 网络图模型知识点综述
 
-https://zhuanlan.zhihu.com/p/54505069
-
-图卷积网络(GCN)新手村完全指南
-
 https://mp.weixin.qq.com/s/yGwKK_pl5p9mg_KKFiQkSA
 
 图神经网络GNN的自然语言处理，附315页PPT及作者博士论文下载
@@ -311,89 +307,11 @@ https://mp.weixin.qq.com/s/F4h30cyQnjvJfjbtLfa83A
 
 图神经网络模型集合GraphGallery，TensorFLow&PyTorch一并实现
 
-# DeepWalk
-
-https://mp.weixin.qq.com/s/SXnRyUj_mMs8UEtNyP6qNw
-
-DeepWalk论文解读
-
-https://mp.weixin.qq.com/s/h1vDImYTLEheatZnScZwbg
-
-使用DeepWalk从图中提取特征
-
-https://mp.weixin.qq.com/s/F2jF1vuzK4u8ZPrDK_CyLw
-
-KDD2018网络表示学习最新教程：DeepWalk作者Perozzi等人带你探索最前沿
-
-https://mp.weixin.qq.com/s/QvPB3wNT3IeFuqLB8_nxsw
-
-从Word2vec到DeepWalk
-
-https://mp.weixin.qq.com/s/gsxE1V_fNTDjIMhs3ZW72Q
-
-DeepWalk：图网络与NLP的巧妙融合
-
-# 参考
-
-https://github.com/thunlp/GNNPapers
-
-清华NLP图神经网络GNN论文分门别类，16大应用200+篇论文
-
-https://github.com/nnzhan/Awesome-Graph-Neural-Networks
-
-图神经网络论文列表
-
-https://github.com/DeepGraphLearning/LiteratureDL4Graph
-
-图深度学习资源汇总
-
-https://github.com/IndexFziQ/GNN4NLP-Papers
-
-自然语言领域中图神经网络模型（GNN）应用现状（论文列表）
-
-https://github.com/jdlc105/Must-read-papers-and-continuous-tracking-on-Graph-Neural-Network-GNN-progress
-
-Papers on Graph neural network(GNN)
-
-https://github.com/benedekrozemberczki/awesome-graph-classification
-
-图网络大列表
-
-https://mp.weixin.qq.com/s/SW6V-AxGq1z9Uq7qIJLj5A
-
-Github上热门图深度学习（GraphDL）源码与工业级框架
-
-http://www.p-chao.com/2019-01-20/%e5%9b%be%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9cgnn/
-
-图神经网络GNN的简单理解
-
-https://mp.weixin.qq.com/s/_TAhfkjj1wsWEZDT8q5K8Q
-
-图表示学习极简教程
-
-https://github.com/icoxfog417/graph-convolution-nlp
-
-图卷积神经网络自然语言处理应用代码和教程
-
-https://mp.weixin.qq.com/s/VEAnkznZUyZ1RCJulSnwGg
-
-基于图结构网络的表征学习
-
-https://mp.weixin.qq.com/s/rxZQrhvRk6Dw3AWpGJS4dg
-
-《基于图的句子意思表征》教程, 300多页PPT带你进入这一新兴领域
+# GCN
 
 https://mp.weixin.qq.com/s/bMpugd2Lp35VPr8fQAPzsg
 
 一文概览图卷积网络基本结构和最新进展
-
-https://mp.weixin.qq.com/s/w5ldyp00CqkX8Kp-8Aw0nQ
-
-图深度学习(GraphDL)，下一个人工智能算法热点？一文了解最新GDL相关文章
-
-https://mp.weixin.qq.com/s/Jt6CjMqNFEXWoL5pkLeVyw
-
-洛桑理工：Graph上的深度学习报告
 
 https://mp.weixin.qq.com/s/TGuEvNXw_9S5-9a3KyDvvw
 
@@ -403,6 +321,102 @@ https://mp.weixin.qq.com/s/kcXp-uWcmIsAVfa63mor4g
 
 图卷积网络介绍及进展
 
-https://mp.weixin.qq.com/s/eelcT5x_kWC0dDt0_Ph4qg
+https://zhuanlan.zhihu.com/p/54505069
 
-清华朱文武组一文综述GraphDL五类模型
+图卷积网络(GCN)新手村完全指南
+
+https://mp.weixin.qq.com/s/XSug_qOqq_QaphkiRlGkIg
+
+图卷积GCN前沿方法介绍
+
+https://mp.weixin.qq.com/s/B8rJRlnwGJKUSI17Ot66Xw
+
+从CNN到GCN的联系与区别——GCN从入门到精（fang）通（qi）
+
+https://mp.weixin.qq.com/s/CpDZEqo14X_lCBh6i7feIA
+
+图卷积神经网络(GCN)文本分类详述
+
+https://mp.weixin.qq.com/s/DJAimuhrXIXjAqm2dciTXg
+
+何时能懂你的心——图卷积神经网络（GCN）
+
+https://mp.weixin.qq.com/s/jBQOgP-I4FQT1EU8y72ICA
+
+图神经网络的“开山之作”GCN模型
+
+https://mp.weixin.qq.com/s/ftz8E5LffWFfaSuF9uKqZQ
+
+Graph Neural Network：GCN算法原理，实现和应用
+
+https://zhuanlan.zhihu.com/p/48834333
+
+GCN in 2018：2018年顶会论文中的图卷积神经网络的理论与应用
+
+https://mp.weixin.qq.com/s/c6ZhSk4r3pvnjHsvpwkkSw
+
+用图卷积网络(GCN)来做语义角色标注
+
+https://mp.weixin.qq.com/s/6vhFfSh2mveBiZXB1oZb1Q
+
+图分类：结合胶囊网络Capsule和图卷积GCN
+
+https://mp.weixin.qq.com/s/9MWoCmtKPPVs3Rmko-7adQ
+
+10亿节点异构网络中，GCN如何应用？
+
+https://zhuanlan.zhihu.com/p/78466344
+
+从源头探讨GCN的行文思路
+
+https://mp.weixin.qq.com/s/QONDTuzv_jIbVwSXxHMyIw
+
+一文读懂图卷积GCN
+
+https://mp.weixin.qq.com/s/MBRTs2pIVypQxrcMOY4Lcg
+
+图卷积网络（GCN）入门详解
+
+https://mp.weixin.qq.com/s/phiRXPGfVHaxCN1aLZTzlw
+
+图神经网络三剑客：GCN、GAT与GraphSAGE
+
+https://mp.weixin.qq.com/s/TepgHukJ-Gx63pTjMH9R2g
+
+2020年，我终于决定入门GCN
+
+https://mp.weixin.qq.com/s/-ukPx32Vjkdz2_udBb55EA
+
+解读三种经典GCN中的Parameter Sharing
+
+https://mp.weixin.qq.com/s/RP6_H8ZHwJIlUt9YrsxvCA
+
+图卷积神经网络蒸馏知识，Distillating Knowledge from GCN
+
+https://mp.weixin.qq.com/s/GnjSuQ_BihO5bP5xO2xHJg
+
+万字长文带你入门GCN
+
+https://mp.weixin.qq.com/s/2PY1baildUoZaetYlsukIQ
+
+图卷积网络(GCN)的谱分析
+
+https://zhuanlan.zhihu.com/p/139359188
+
+关于GCN，我有三种写法
+
+https://www.zhihu.com/question/366088445
+
+请问全连接的图卷积网络(GCN)和self-attention这些机制有什么区别联系吗？
+
+https://mp.weixin.qq.com/s/CmVhJMGll5HjO8kxsCinaA
+
+图神经网络GNN,GAT&GCN（一）
+
+https://mp.weixin.qq.com/s/sg9O761F0KHAmCPOfMW_kQ
+
+图卷积网络到底怎么做，这是一份极简的Numpy实现
+
+https://mp.weixin.qq.com/s/ae515_P6zA5SLN5-Edxbig
+
+图卷积网络Graph Convolutional Networks

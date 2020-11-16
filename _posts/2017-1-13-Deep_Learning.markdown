@@ -158,6 +158,8 @@ https://mp.weixin.qq.com/s/W0mVk_KtL2Tr_Uo-1el7Aw
 
 ![](/images/article/ANN_history.png)
 
+![](/images/img4/brain.png)
+
 参考：
 
 https://mp.weixin.qq.com/s/0OqqdbUWlWIbfBrRdMs4PA

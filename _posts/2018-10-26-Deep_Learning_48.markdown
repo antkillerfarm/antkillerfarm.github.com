@@ -93,6 +93,14 @@ https://mp.weixin.qq.com/s/Xnea50Eisq9rzhGFa1iTFA
 
 DRr-Net：基于动态重读机制的句子语义匹配方法
 
+https://mp.weixin.qq.com/s/VlZVAhg7shPLQM6D_3b2vQ
+
+漫谈语义相似度
+
+https://mp.weixin.qq.com/s/JrvdQuN99xaikcSltOqz5Q
+
+推荐系统中不得不说的DSSM双塔模型
+
 ## 表示型和交互型
 
 从模型的本质来看可以分为两种类型：表示型和交互型。表示型的模型会在最后一层对待匹配的两个句子进行相似度计算，交互型模型会尽早的让两个句子交互，充分应用交互特征。

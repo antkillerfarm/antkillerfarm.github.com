@@ -241,6 +241,10 @@ https://zhuanlan.zhihu.com/p/129247756
 
 麻将AI Suphx
 
+https://mp.weixin.qq.com/s/2GQacLs1CNNQXKjmJmPiVQ
+
+用对线阶段数据分析和预测《英雄联盟》的游戏结果
+
 # AI Chip+
 
 ![](/images/img3/Wallace_Tree.png)

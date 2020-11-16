@@ -289,6 +289,18 @@ https://zhuanlan.zhihu.com/p/102127047
 
 Glow: Graph Lowering Compiler for Neural Networks
 
+# NNFusion
+
+代码：
+
+https://github.com/microsoft/nnfusion
+
+参考：
+
+https://mp.weixin.qq.com/s/CMTOW3cYQkkECpPuzZl0nQ
+
+RAMMER如何进一步“压榨”加速器性能
+
 # LLVM
 
 ## 概述

@@ -424,3 +424,7 @@ https://mp.weixin.qq.com/s/UYN4cxH4gT0WsFTrBKRKGA
 https://mp.weixin.qq.com/s/og2fAZCjaUpmQM0FRH76DA
 
 这三年被分布式坑惨了，曝光十大坑
+
+https://mp.weixin.qq.com/s/XE56cWASFcq8r-p1OBvKng
+
+日均5亿字符翻译量，百毫秒内响应，携程机器翻译平台实践

@@ -173,6 +173,10 @@ https://mp.weixin.qq.com/s/OGLJx-1tGYYuLWFricfRKg
 
 ## 参考
 
+https://mp.weixin.qq.com/s/TWEMQL07n7jMJoYecUojww
+
+推荐系统：石器与青铜时代
+
 https://zhuanlan.zhihu.com/p/95350982
 
 推荐算法三视角:矩阵，图，时间线
@@ -396,3 +400,7 @@ https://mp.weixin.qq.com/s/sDG5xm1JZ8rIEaVXeVQ5cA
 https://mp.weixin.qq.com/s/rhk5WHRg6HWHmK7KWD-UYw
 
 常见的召回优化方式
+
+https://mp.weixin.qq.com/s/nUQsFBh2Jyf1fqINNlpmqg
+
+推荐系统Bias与Debias 2020最新综述

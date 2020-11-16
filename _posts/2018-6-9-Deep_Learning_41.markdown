@@ -385,3 +385,7 @@ Domain Adaptation：不用深度网络，如何处理源域和目标域异构问
 https://mp.weixin.qq.com/s/7QrIfNXQgSqYC1SOFUOlgQ
 
 对迁移学习中域适应的理解和3种技术的介绍
+
+https://mp.weixin.qq.com/s/e_ltoKzqBhmicwb7vcFcoQ
+
+迁移学习-该做的和不该做的

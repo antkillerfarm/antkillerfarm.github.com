@@ -454,3 +454,7 @@ https://mp.weixin.qq.com/s/5ZfFcbnhkpyO-CdXyw6SKw
 https://mp.weixin.qq.com/s/hxH-e6qz13Cr4kBqjTmVRw
 
 CAN总线的特点和帧结构
+
+https://mp.weixin.qq.com/s/FmdRkyQm0P-N_bCjMEPLbA
+
+CAN协议标准及相关内容
