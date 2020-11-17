@@ -255,6 +255,8 @@ https://mp.weixin.qq.com/s/MCofTDnwfbz7R9zuqEnX7w
 
 2020.5
 
+![](/images/img4/spaceship.jpg)
+
 https://mp.weixin.qq.com/s/0zAIoiflCgwC2jMEdnJ6WQ
 
 马斯克的星际飞船，爆炸了
@@ -298,6 +300,10 @@ https://mp.weixin.qq.com/s/bwUZEzgAzANPgaWTFa3GHA
 https://mp.weixin.qq.com/s/J3bk8C-yp3O_PBxn_I9Ywg
 
 马斯克的星际飞船首次起飞测试成功！起跳150米后平稳着陆，“火星在望”
+
+https://www.zhihu.com/question/430470879
+
+如何看待SpaceX首次正式发射载人飞船，送四名宇航员进空间站，商业载人航天将进入怎样的新纪元？
 
 ----
 
