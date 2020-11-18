@@ -1,15 +1,71 @@
 ---
 layout: post
-title:  深度学习（七）——神经元激活函数进阶
+title:  深度学习（七）——LSTM, 神经元激活函数进阶
 category: DL 
 ---
 
 * toc
 {:toc}
 
+# RNN
+
+## 参考（续）
+
+http://blog.csdn.net/shenxiaolu1984/article/details/71508892
+
+RNN的梯度消失/爆炸与正交初始化
+
+https://mp.weixin.qq.com/s/vHQ1WbADHAISXCGxOqnP2A
+
+看大牛如何复盘递归神经网络！
+
+https://mp.weixin.qq.com/s/0V9DeG39is_BxAYX0Yomww
+
+为何循环神经网络在众多机器学习方法中脱颖而出？
+
+https://mp.weixin.qq.com/s/-Am9Z4_SsOc-fZA_54Qg3A
+
+深度理解RNN：时间序列数据的首选神经网络！
+
+https://mp.weixin.qq.com/s/ztIrt4_xIPrmCwS1fCn_dA
+
+“魔性”的循环神经网络
+
+https://mp.weixin.qq.com/s/BqVicouktsZu8xLVR-XnFg
+
+完全图解RNN、RNN变体、Seq2Seq、Attention机制
+
+https://mp.weixin.qq.com/s/gGGXKT2fTn2xPPvo7PE8IA
+
+像训练CNN一样快速训练RNN：全新RNN实现，比优化后的LSTM快10倍
+
+https://mp.weixin.qq.com/s/OltT-GFDVxaiukb1HVSY3w
+
+通俗讲解循环神经网络的两种应用
+
+https://mp.weixin.qq.com/s/PZMmjT9eXL7rU2pxkQWTiw
+
+从90年代的SRNN开始，纵览循环神经网络27年的研究进展
+
+https://mp.weixin.qq.com/s/7LcqRGPYX6JXpY_0hbjmbA
+
+循环神经网络(RNN)入门帖：向量到序列，序列到序列，双向RNN，马尔科夫化
+
 # LSTM
 
-## LSTM结构图（续）
+本篇笔记主要摘自：
+
+http://www.jianshu.com/p/9dc9f41f0b29
+
+理解LSTM网络
+
+## LSTM结构图
+
+为了解决原始RNN只有短时记忆的问题，人们又提出了一个RNN的变种——LSTM（Long Short-Term Memory）。其结构图如下所示：
+
+![](/images/article/LSTM.png)
+
+和RNN的时序展开图类似，这里的每个方框表示**某个时刻从输入层到隐层的映射**。
 
 我们首先回顾一下之前的模型在这里的处理。
 
@@ -272,43 +328,3 @@ GLU一般用在NLP领域，它和CNN结合，也就是所谓的GCNN了。
 《Empirical Evaluation of Rectified Activations in Convolution Network》
 
 ![](/images/img3/RRelu.png)
-
-## GELU
-
-论文：
-
-《Gaussian Error Linear Units (GELUs)》
-
-参考：
-
-https://mp.weixin.qq.com/s/pA9JW75p9J5e5KHe3ifcBQ
-
-从ReLU到GELU，一文概览神经网络的激活函数
-
-https://mp.weixin.qq.com/s/LEPalstOc15CX6fuqMRJ8Q
-
-超越ReLU却鲜为人知，3年后被挖掘：BERT、GPT-2等都在用的激活函数（GELU）
-
-https://kexue.fm/archives/7309
-
-GELU的两个初等函数近似是怎么来的
-
-## Swish
-
-Swish是Google大脑团队提出的一个新的激活函数：
-
-$$\text{swish}(x)=x\cdot\sigma(x)=\frac{x}{1+e^{-x}}$$
-
-它的图像如下图中的橙色曲线所示：
-
-![](/images/article/swish.png)
-
-Swish可以看作是GLU的特例（Swish的两组参数相同）。
-
-Swish在原点附近不是饱和的，只有负半轴远离原点区域才是饱和的，而ReLu在原点附近也有一半的空间是饱和的。
-
-而我们在训练模型时，一般采用的初始化参数是均匀初始化或者正态分布初始化，不管是哪种初始化，其均值一般都是0，也就是说，初始化的参数有一半处于ReLu的饱和区域，这使得刚开始时就有一半的参数没有利用上。
-
-特别是由于诸如BN之类的策略，输出都自动近似满足均值为0的正态分布，因此这些情况都有一半的参数位于ReLu的饱和区。
-
-相比之下，Swish好一点，因为它在负半轴也有一定的不饱和区，所以参数的利用率更大。

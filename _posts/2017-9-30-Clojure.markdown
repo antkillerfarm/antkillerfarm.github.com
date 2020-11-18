@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Clojure, Groovy, Scala, VS Code, Test framework
+title:  Clojure, Groovy, Scala, VS Code, C++ Test framework
 category: language 
 ---
 
@@ -303,7 +303,7 @@ language server protocol是一种跨编辑器的语言支持实现规范。它�
 
 https://microsoft.github.io/language-server-protocol/
 
-# Test framework
+# C++ Test framework
 
 ## boost.test
 
@@ -386,3 +386,29 @@ CTest是CMake集成的一个测试工具。
 https://www.cnblogs.com/457220157-FTD/p/4139149.html
 
 CTest
+
+# Java+
+
+https://mp.weixin.qq.com/s/mdYZhkWkAILQz_JnVA5xvA
+
+深入AQS(AbstractQueuedSynchronizer)
+
+https://mp.weixin.qq.com/s/_MVTvyG3gcsJcpidtQEBqg
+
+为什么Java中“1000==1000”为false，而”100==100“为true？
+
+https://mp.weixin.qq.com/s/X0foqlams1wMMnRE017XmQ
+
+JDK 5-15都有哪些经典新特性
+
+https://mp.weixin.qq.com/s/iklfWLmSD4XMAKmFcffp9g
+
+底层原理：垃圾回收算法是如何设计的？
+
+https://mp.weixin.qq.com/s/6HKCnN2HDi84bwjElhZBcQ
+
+打工人，从JMM透析volatile与synchronized原理
+
+https://mp.weixin.qq.com/s/sXv9XIIVDsflXr0FdrGM1A
+
+垃圾回收器是如何演进的？

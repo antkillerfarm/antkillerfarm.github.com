@@ -165,6 +165,8 @@ http://www.cnblogs.com/Anker/p/3265058.html
 
 select、poll、epoll之间的区别总结
 
+除此之外，freeBSD下的kqueue，Windows下的iocp，是其各自平台的官方IO多路复用方案。
+
 ## select函数
 
 ```c

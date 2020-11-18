@@ -183,6 +183,10 @@ https://mp.weixin.qq.com/s/QYMPBWMVTQf3LACGGWGX7A
 
 样本不平衡处理：xgboost几种权重设置方法比较
 
+https://mp.weixin.qq.com/s/d6sVDAKnaU97mAeDs_Gedg
+
+从零解读Xgboost(原理+代码)
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。

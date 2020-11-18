@@ -145,6 +145,10 @@ https://mp.weixin.qq.com/s/WsjZERRkgnReWuDw_z5Hxw
 
 LibRec：一个覆盖70多种算法的推荐系统开源库！
 
+https://mp.weixin.qq.com/s/hn8Es-l1f6raJ_wj5HkqMA
+
+LinkedIn开源Dagli，发布Java机器学习函数库
+
 # 数据描述语言
 
 ## JSON

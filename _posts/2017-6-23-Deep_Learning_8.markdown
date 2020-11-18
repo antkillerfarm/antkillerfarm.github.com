@@ -7,9 +7,47 @@ category: DL
 * toc
 {:toc}
 
-# 神经元激活函数进阶
+# 神经元激活函数进阶（续）
 
-## Swish（续）
+## GELU
+
+论文：
+
+《Gaussian Error Linear Units (GELUs)》
+
+参考：
+
+https://mp.weixin.qq.com/s/pA9JW75p9J5e5KHe3ifcBQ
+
+从ReLU到GELU，一文概览神经网络的激活函数
+
+https://mp.weixin.qq.com/s/LEPalstOc15CX6fuqMRJ8Q
+
+超越ReLU却鲜为人知，3年后被挖掘：BERT、GPT-2等都在用的激活函数（GELU）
+
+https://kexue.fm/archives/7309
+
+GELU的两个初等函数近似是怎么来的
+
+## Swish
+
+Swish是Google大脑团队提出的一个新的激活函数：
+
+$$\text{swish}(x)=x\cdot\sigma(x)=\frac{x}{1+e^{-x}}$$
+
+它的图像如下图中的橙色曲线所示：
+
+![](/images/article/swish.png)
+
+Swish可以看作是GLU的特例（Swish的两组参数相同）。
+
+Swish在原点附近不是饱和的，只有负半轴远离原点区域才是饱和的，而ReLu在原点附近也有一半的空间是饱和的。
+
+而我们在训练模型时，一般采用的初始化参数是均匀初始化或者正态分布初始化，不管是哪种初始化，其均值一般都是0，也就是说，初始化的参数有一半处于ReLu的饱和区域，这使得刚开始时就有一半的参数没有利用上。
+
+特别是由于诸如BN之类的策略，输出都自动近似满足均值为0的正态分布，因此这些情况都有一半的参数位于ReLu的饱和区。
+
+相比之下，Swish好一点，因为它在负半轴也有一定的不饱和区，所以参数的利用率更大。
 
 苏剑林据此提出了自己的激活函数：
 

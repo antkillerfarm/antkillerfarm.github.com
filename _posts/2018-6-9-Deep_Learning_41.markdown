@@ -382,6 +382,10 @@ https://zhuanlan.zhihu.com/p/58514431
 
 Domain Adaptation：不用深度网络，如何处理源域和目标域异构问题？
 
+https://zhuanlan.zhihu.com/p/272508224
+
+Domain Adaptation基础概念与相关文章解读
+
 https://mp.weixin.qq.com/s/7QrIfNXQgSqYC1SOFUOlgQ
 
 对迁移学习中域适应的理解和3种技术的介绍

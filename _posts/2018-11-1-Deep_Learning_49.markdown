@@ -141,7 +141,7 @@ https://coladrill.github.io/2018/10/24/元学习总览/
 
 https://zhuanlan.zhihu.com/p/261170127
 
-元学习综述
+元学习综述《Meta-Learning in Neural Networks: A Survey》
 
 https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ
 

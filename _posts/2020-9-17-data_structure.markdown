@@ -245,6 +245,10 @@ https://mp.weixin.qq.com/s/p4tddWB4kjFufkv3x2SYpw
 
 图解6种树，你心中有数吗
 
+https://mp.weixin.qq.com/s/fAYjIcFlHoXK2E38JJSFpA
+
+C++优先队列priority_queue
+
 # 设计模式
 
 面向对象的设计模式有七大基本原则：

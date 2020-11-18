@@ -9,6 +9,14 @@ category: Attention
 
 # BERT（续）
 
+## 基本结构
+
+![](/images/img3/BERT.png)
+
+上图是BERT的网络结构图。
+
+BERT是Bidirectional Encoder Representations from Transformers的缩写。从这个名字可以看出它将Transformer中的encoder作为一个基本单元，然后采用了类似双向RNN的方式，做了一个双向的Transformer的结构。
+
 ## pre-training
 
 BERT的强大，主要不在网络结构上。上面提到的GPT 1.0虽然输给了BERT，但网络更深、向量维度也更大的GPT 2.0却赢了BERT，可见单向或者双向的Transformer，并不是问题的关键。让这些模型真正强大的原因主要在于pre-training。

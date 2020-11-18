@@ -264,6 +264,22 @@ http://maxima.sourceforge.net/
 
 # 两弹一星++
 
+1914年，杰克伦敦出版了一部短篇小说《无与伦比的入侵》（The Unparalleled Invasion）。
+
+小说中的中国，是一个爱好和平的国家，不想战争，不想扩张，希望的就是和平崛起。但西方世界对中国和平崛起的回应是：用细菌战灭亡了几乎全部中国人，再瘟疫后侥幸逃生的幸存者，也被西方军队一个不留的全部杀死。
+
+当然，这只是小说。但，这是一个广受欢迎的，所谓的”进步“作家，正式出版的小说。
+
+原文：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/doc/The%20Unparalleled%20Invasion.txt
+
+https://mp.weixin.qq.com/s/_98VQ5Ck5ZRm8xIe5qJuog
+
+西方对中国的恐惧
+
+----
+
 ![](/images/img3/top10.png)
 
 https://mp.weixin.qq.com/s/1NXjgkr3xWDzqm7Y-9x7-Q
@@ -277,29 +293,3 @@ https://mp.weixin.qq.com/s/sRVb8qGtbsuqCvHSrlL9mQ
 https://mp.weixin.qq.com/s/wsGgWzyaslXCQflaP2ccXA
 
 60年前首登珠峰，他是唯一在世亲历者
-
-https://mp.weixin.qq.com/s/zwlOZzdGlqTFGSg3H9zNxQ
-
-珠峰变“绿”，“隐者”现身，这些年的珠峰发生了什么？
-
-https://mp.weixin.qq.com/s/MCAR8M2DoV30-McdsjTxDw
-
-徒步横穿南极大陆第一人
-
->秦大河，1947年生，地理学家，中国科学院院士，第三世界科学院院士。曾任中国气象局局长、中国科学技术协会副主席等
-
-https://mp.weixin.qq.com/s/3aLHfKF5grL6hunO7r_TAQ
-
-中国第一个发《Nature》的竟然是清朝人！被皇帝夸天下第一，他却觉得羞耻...（徐寿、华蘅芳、徐建寅）
-
-https://mp.weixin.qq.com/s/Z2xRTxgRRHWWY2VICT4lQg
-
-中国有哪些领跑全球的技术
-
-https://zhuanlan.zhihu.com/p/269051130
-
-川藏铁路有多牛？外国网友：它该叫“川藏地铁”或“川藏过山车”
-
-https://mp.weixin.qq.com/s/NQ4OiPgguAVkRPBn1uEYjg
-
-他奉密令去美国长期潜伏，周总理亲自送行长谈（吴大琨）

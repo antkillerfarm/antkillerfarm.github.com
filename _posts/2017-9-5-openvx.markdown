@@ -27,6 +27,10 @@ https://www.khronos.org/openvx/
 
 ![](/images/article/openvx.png)
 
+![](/images/img4/opencl-api-overview.jpg)
+
+![](/images/img4/opencl-api-overview_2.jpg)
+
 上图给出了OpenVX的主要用途，以及它和Khronos其他兄弟项目之间的关系。
 
 OpenVX本身也是一个系列标准。它包括：

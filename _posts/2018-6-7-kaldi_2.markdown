@@ -287,3 +287,7 @@ https://mp.weixin.qq.com/s/0BBvsqLFP1qRvO3TUaS8Tw
 https://mp.weixin.qq.com/s/VqHN-cIdNa8l1lKlu4AD4w
 
 24种可视化图表优缺点对比
+
+https://mp.weixin.qq.com/s/SH2bNu6UF7PsKrBeweUH4g
+
+纯Python绘制满满艺术感的山脊地图

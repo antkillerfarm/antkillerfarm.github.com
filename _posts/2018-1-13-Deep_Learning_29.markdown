@@ -11,6 +11,8 @@ category: DL
 
 ## GraphSAGE
 
+GraphSAGE取自Graph SAmple and aggreGatE，SAmple指如何对邻居个数进行采样。aggreGatE指拿到邻居的embedding之后如何汇聚这些embedding以更新自己的embedding信息。
+
 https://mp.weixin.qq.com/s/DNePTCpyjrlZEixw5L7w5A
 
 GraphSAGE：我寻思GCN也没我牛逼
@@ -26,6 +28,10 @@ GraphSAGE算法原理，实现和应用
 https://zhuanlan.zhihu.com/p/142205899
 
 GraphSAGE源码解析
+
+https://mp.weixin.qq.com/s/45PlgqZag8dXqZr4xvj9Hw
+
+GraphSAGE算法细节详解
 
 ## GAT
 

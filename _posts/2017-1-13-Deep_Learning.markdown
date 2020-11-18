@@ -148,6 +148,8 @@ http://blog.csdn.net/u013007900/article/details/50066315
 
 ![](/images/img3/infinite_width.gif)
 
+实际上无限宽的神经网络模型等价于Gaussian Processes。
+
 参考：
 
 https://mp.weixin.qq.com/s/W0mVk_KtL2Tr_Uo-1el7Aw
@@ -249,15 +251,3 @@ Quickprop介绍：一个加速梯度下降的学习方法（由于80/90年代的
 随机初始化的方法有如下几种：
 
 1.Gaussian。用给定均值和方差的Gaussian分布设定随机值。这也是最常用的方法。
-
-2.Xavier。该方法基于Gaussian分布或均匀分布产生随机数。其中分布W的均值为零，方差公式如下：
-
-$$\text{Var}(W)=\frac{1}{n_{in}}\tag{1}$$
-
-其中，$$n_{in}$$表示需要输入层的神经元的个数。也有如下变种：
-
-$$\text{Var}(W)=\frac{2}{n_{in}+n_{out}}\tag{2}$$
-
-其中，$$n_{out}$$表示需要输出层的神经元的个数。
-
-公式1也被称作LeCun initializer，公式2也被称作Glorot initializer。

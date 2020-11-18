@@ -7,15 +7,35 @@ category: DL
 * toc
 {:toc}
 
-# CNN（续）
+# CNN
 
-### 池化
+## 卷积（续）
+
+需要注意的是，传统的CV算法中，通常只有单一的卷积运算。而CNN中的卷积层，实际上包括了**卷积+激活**两种运算，即：
+
+$$L_2=\sigma(Conv(L_1,W)+b)$$
+
+因此，相比全连接层而言，卷积层每次只有部分元素参与到最终的激活运算。从宏观角度看，这些元素实际上对应了图片的局部空间二维信息，它和后面的Pooling操作一道，起到了空间降维的作用。
+
+实际上，传统的MLP（MultiLayer Perceptron）网络，就是由于1D全连接的神经元控制了太多参数，而不利于学习到稀疏特征。
+
+CNN网络中，2D全连接的神经元则控制了局部感受野，有利于解离出稀疏特征。
+
+至于激活函数，则是为了保证变换的非线性。这也是CNN被归类为NN的根本原因。
+
+参考：
+
+https://mp.weixin.qq.com/s/dIIWAKv9woLO8M0CyN8lsw
+
+传统计算机视觉技术落伍了吗？不，它们是深度学习的“新动能”
+
+## 池化
 
 Pooling操作（也称Subsampling）使输入表示（特征维度）变得更小，并且网络中的参数和计算的数量更加可控的减小，因此，可以控制过拟合。
 
 它还可使网络对于输入图像中更小的变化、冗余和变换变得不变性。
 
-### Gaussian Connections
+## Gaussian Connections
 
 LeNet-5最后一步的Gaussian Connections是一个当年的历史遗迹，目前已经被Softmax所取代。它的含义在上面提到的Yann LeCun的原始论文中有描述。
 
@@ -296,57 +316,3 @@ http://sofasofa.io/tutorials/anomaly_detection/
 https://zhuanlan.zhihu.com/p/51053142
 
 基于自编码器的时间序列异常检测算法
-
-## 参考
-
-http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/
-
-Autoencoders
-
-http://blog.csdn.net/changyuanchn/article/details/15681853
-
-深度学习之autoencoder
-
-https://mp.weixin.qq.com/s/cago4myCcLZkv1e43T__3g
-
-深入理解自编码器
-
-http://www.cnblogs.com/neopenx/p/4370350.html
-
-降噪自动编码器（Denoising Autoencoder)
-
-https://mp.weixin.qq.com/s/lODy8ucB3Bw9Y1sy1NxTJg
-
-无监督学习中的两个非概率模型：稀疏编码与自编码器
-
-https://mp.weixin.qq.com/s/QuDa__mi1NX1wOxo5Ki94A
-
-深度学习：自动编码器基础和类型
-
-http://blog.csdn.net/losteng/article/details/51067216
-
-CAE(Convolutional Auto-Encode) 卷积自编码
-
-https://mp.weixin.qq.com/s/q-WExyS-zylMA-L8ojOgRg
-
-简单易懂的自动编码器
-
-https://mp.weixin.qq.com/s/Ci0HPy3ENz1ZooB784aMcA
-
-谷歌大脑Wasserstein自编码器：新一代生成模型算法
-
-https://mp.weixin.qq.com/s/Pgf6JMokilV9JxYWi7Y20Q
-
-揭秘自编码器，一种捕捉数据最重要特征的神经网络
-
-https://mp.weixin.qq.com/s/FpPlSMfbtcxg_UnH0lwaqA
-
-手把手教你实现去噪自编码器（Denoise Autoencoder）
-
-https://zhuanlan.zhihu.com/p/82415579
-
-浅谈Deep Auto-encoder
-
-https://mp.weixin.qq.com/s/PJ-FiDQ7zYN_9rFVWkpeQA
-
-降维算法：主成分分析 VS 自动编码器

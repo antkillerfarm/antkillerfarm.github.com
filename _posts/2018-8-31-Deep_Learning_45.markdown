@@ -390,3 +390,7 @@ https://mp.weixin.qq.com/s/VdjHp5Tb1fSyV3CQblPQmw
 https://mp.weixin.qq.com/s/d60EKUJjYfYfcfhMnaCpPA
 
 基于强化学习的自动搜索
+
+https://mp.weixin.qq.com/s/JC1MlSfR2INd5RqSFolV5A
+
+NAS的挑战和解决方案-一份全面的综述

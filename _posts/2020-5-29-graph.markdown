@@ -171,6 +171,20 @@ k的均值为：$$\overline{k}=p(n-1)$$
 
 $$$$
 
+## Laplacian matrix
+
+https://mp.weixin.qq.com/s/iZLwlmBuXWrbpzvkm8nOrw
+
+拉普拉斯矩阵和瑞利熵
+
+https://mp.weixin.qq.com/s/WYiWGtedfR4kryztvJKyRw
+
+谱聚类方法推导和对拉普拉斯矩阵的理解
+
+https://zhuanlan.zhihu.com/p/85287578
+
+拉普拉斯矩阵与拉普拉斯算子的关系
+
 ## 参考
 
 https://mp.weixin.qq.com/s/LqCfwf90bzZKVMLLY5dbXA
@@ -209,6 +223,10 @@ https://mp.weixin.qq.com/s/VdvvQetxAvkiNF04hV9PeA
 
 图搜索算法介绍(RRT/RRT*)
 
+https://mp.weixin.qq.com/s/oqdB1vmkGtAtjEHoBhgwiA
+
+最快速的寻路算法Jump Point Search
+
 https://mp.weixin.qq.com/s/dTI3BdgixVTAFsnxtKjq0A
 
 常见图算法介绍
@@ -216,10 +234,6 @@ https://mp.weixin.qq.com/s/dTI3BdgixVTAFsnxtKjq0A
 https://mp.weixin.qq.com/s/dsPiw-n8iclT8uWkeTiBUA
 
 图数据表征学习，绝不止图神经网络一种方法
-
-https://mp.weixin.qq.com/s/iZLwlmBuXWrbpzvkm8nOrw
-
-拉普拉斯矩阵和瑞利熵
 
 https://mp.weixin.qq.com/s/0Iih4TBYUIPY5R4LfWxUNQ
 

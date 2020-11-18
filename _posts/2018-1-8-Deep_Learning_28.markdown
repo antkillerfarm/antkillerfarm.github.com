@@ -114,6 +114,10 @@ https://blog.csdn.net/hanlin_tan/article/details/62078935
 
 机器学习中的玻尔兹曼分布——最小代价和极大似然
 
+https://mp.weixin.qq.com/s/yodpXMGAoBpEa20_PkFA0w
+
+浅析玻尔兹曼机的原理和实践
+
 # SOM
 
 Self Organizing Maps (SOM)（也叫kohonen network）是一种无监督算法，主要用于聚类和可视化。

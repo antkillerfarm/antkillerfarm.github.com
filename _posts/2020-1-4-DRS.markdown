@@ -115,6 +115,10 @@ https://mp.weixin.qq.com/s/5wdGemYBtkYUvq1n5ioyFg
 
 详解Wide&Deep理论与实践
 
+https://mp.weixin.qq.com/s/SK6RXTnZrGk2emvV7fbUdw
+
+推荐系统经典模型Wide & Deep
+
 ## DeepFM
 
 https://mp.weixin.qq.com/s/JNGKz4-fWG4ygl7f6UkxcQ

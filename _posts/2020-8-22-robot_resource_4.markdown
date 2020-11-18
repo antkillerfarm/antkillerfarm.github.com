@@ -381,6 +381,10 @@ https://zhuanlan.zhihu.com/p/138059904
 
 一文看懂深度学习模型压缩和加速
 
+https://zhuanlan.zhihu.com/p/179945324
+
+一文深入深度学习模型压缩和加速
+
 https://mp.weixin.qq.com/s/4aVY9vUBX_Bxht953r00sA
 
 在Keras中利用TensorNetwork加速神经网络

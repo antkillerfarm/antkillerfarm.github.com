@@ -265,6 +265,10 @@ https://zhuanlan.zhihu.com/p/266513299
 
 Anomaly Detection综述
 
+https://mp.weixin.qq.com/s/mh6RW6XPpyEWZHG7TmBKzg
+
+孤立森林:大数据背景下的最佳异常检测算法之一
+
 # 数据清洗
 
 https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g

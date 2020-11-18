@@ -99,6 +99,10 @@ https://mp.weixin.qq.com/s/PBfopbgkPyv4RbR-Lp0aWQ
 
 逻辑回归与条件随机场
 
+https://mp.weixin.qq.com/s/aWeS_E5qN27dtNbVWKtovw
+
+使用条件随机场（CRF）来提升图像分割的表现
+
 ## BiLSTM+CRF
 
 上文已经提到CRF/MEMM中，有个概念叫做特征函数。和其他机器学习算法一样，这里的特征函数也是和领域相关的，并没有一个通用的做法。

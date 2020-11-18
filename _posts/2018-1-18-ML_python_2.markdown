@@ -101,6 +101,10 @@ http://pandas.pydata.org/pandas-docs/stable/comparison_with_sql.html
 
 Pandas和SQL的比较
 
+https://mp.weixin.qq.com/s/yXgFLUj6W2ZyR6fmHPlOZA
+
+Pandas与SQL的数据操作语句对照
+
 https://mp.weixin.qq.com/s/fXI5suCVna6fBxPnVyKevw
 
 浅谈NumPy和Pandas库

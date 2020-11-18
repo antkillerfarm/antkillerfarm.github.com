@@ -205,10 +205,6 @@ https://mp.weixin.qq.com/s/6dIfZXH2EOOgroyRiDxeJA
 
 深度聚类的可视化解释
 
-https://mp.weixin.qq.com/s/WYiWGtedfR4kryztvJKyRw
-
-谱聚类方法推导和对拉普拉斯矩阵的理解
-
 https://zhuanlan.zhihu.com/p/113762102
 
 图卷积网络加速训练方法综述
@@ -432,3 +428,7 @@ GNN中的Graph Pooling
 https://mp.weixin.qq.com/s/zlgnOGhuzIlOha8Y6cwUxA
 
 快速了解阿里的M2GRL模型
+
+https://mp.weixin.qq.com/s/0Tb5t9K2V-RYb12UKL1cXg
+
+GraphSAGE+FM+Transformer强强联手：评微信的GraphTR模型

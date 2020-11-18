@@ -7,6 +7,62 @@ category: DL
 * toc
 {:toc}
 
+# AutoEncoder（续）
+
+## 参考
+
+http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/
+
+Autoencoders
+
+http://blog.csdn.net/changyuanchn/article/details/15681853
+
+深度学习之autoencoder
+
+https://mp.weixin.qq.com/s/cago4myCcLZkv1e43T__3g
+
+深入理解自编码器
+
+http://www.cnblogs.com/neopenx/p/4370350.html
+
+降噪自动编码器（Denoising Autoencoder)
+
+https://mp.weixin.qq.com/s/lODy8ucB3Bw9Y1sy1NxTJg
+
+无监督学习中的两个非概率模型：稀疏编码与自编码器
+
+https://mp.weixin.qq.com/s/QuDa__mi1NX1wOxo5Ki94A
+
+深度学习：自动编码器基础和类型
+
+http://blog.csdn.net/losteng/article/details/51067216
+
+CAE(Convolutional Auto-Encode) 卷积自编码
+
+https://mp.weixin.qq.com/s/q-WExyS-zylMA-L8ojOgRg
+
+简单易懂的自动编码器
+
+https://mp.weixin.qq.com/s/Ci0HPy3ENz1ZooB784aMcA
+
+谷歌大脑Wasserstein自编码器：新一代生成模型算法
+
+https://mp.weixin.qq.com/s/Pgf6JMokilV9JxYWi7Y20Q
+
+揭秘自编码器，一种捕捉数据最重要特征的神经网络
+
+https://mp.weixin.qq.com/s/FpPlSMfbtcxg_UnH0lwaqA
+
+手把手教你实现去噪自编码器（Denoise Autoencoder）
+
+https://zhuanlan.zhihu.com/p/82415579
+
+浅谈Deep Auto-encoder
+
+https://mp.weixin.qq.com/s/PJ-FiDQ7zYN_9rFVWkpeQA
+
+降维算法：主成分分析 VS 自动编码器
+
 # 词向量
 
 ## One-hot Representation
@@ -237,39 +293,3 @@ http://rnnlm.org/
 yandex后来又提出了一个加速版本的RNNLM：
 
 https://github.com/yandex/faster-rnnlm
-
-## Item2Vec
-
-本质上，word2vec模型是在word-context的co-occurrence矩阵基础上建立起来的。因此，任何基于co-occurrence矩阵的算法模型，都可以套用word2vec算法的思路加以改进。
-
-比如，推荐系统领域的协同过滤算法。
-
-协同过滤算法是建立在一个user-item的co-occurrence矩阵的基础上，通过行向量或列向量的相似性进行推荐。如果我们将同一个user购买的item视为一个context，就可以建立一个item-context的矩阵。进一步的，可以在这个矩阵上借鉴CBoW模型或Skip-gram模型计算出item的向量表达，在更高阶上计算item间的相似度。
-
-论文：
-
-《Item2Vec: Neural Item Embedding for Collaborative Filtering》
-
-在实际的新闻信息流推荐中，Word2Vec的点击效果比ALS要好30%+，主要有两个原因：
-
-1. 用户的兴趣和行为是多样的，局部的行为往往更偏相关，往往整体的样本差异是很大的；
-
-2. 在负样本采样中，ALS 是全局的负样本采样，Word2Vec 更倾向高频，倾向高频的采样更不容易让学习出的结果都与高频（头部）的结果相似。
-
-参考：
-
-https://mp.weixin.qq.com/s/vpxCP1Uw23y9XNTRUhY79w
-
-达观数据推荐算法实现：协同过滤之item embedding
-
-https://www.sohu.com/a/215535516_99992181
-
-有这好事？神经网络模型Word2vec竟能根据个人喜好推荐音乐
-
-https://mp.weixin.qq.com/s/Ta2Im4WCWq5eQ8SF-mNpuQ
-
-万物皆Embedding，从经典的word2vec到深度学习基本操作item2vec
-
-https://mp.weixin.qq.com/s/6XJuZBTmfRWWFwS9J3HOsQ
-
-推荐技术随谈

@@ -39,12 +39,6 @@ http://www.openslr.org/
 
 http://cn-mirror.openslr.org/
 
-K2是Daniel Povey来到小米之后，提出的新项目。旨在使用TF或Pytorch实现相关的音频算法，主要是Finite State Automaton(FSA)和Finite State Transducer(FST)方面的算法。
-
-代码：
-
-https://github.com/k2-fsa/k2
-
 参考：
 
 https://www.eleanorchodroff.com/tutorial/kaldi/kaldi-intro.html
@@ -72,6 +66,26 @@ https://github.com/mravanelli/pytorch-kaldi
 https://mp.weixin.qq.com/s/f0B85WP-y84Xo3HaG3T6dQ
 
 语音识别开源工具PyTorch-Kaldi：兼顾Kaldi效率与PyTorch灵活性
+
+# Kaldi 2
+
+Kaldi 2是Daniel Povey来到小米之后，提出的新项目。
+
+它可以分为三个部分：
+
+- LHOTSE：训练数据的准备。
+
+代码：
+
+https://github.com/lhotse-speech/lhotse
+
+- K2：核心算法，旨在使用TF或Pytorch实现相关的音频算法，主要是Finite State Automaton(FSA)和Finite State Transducer(FST)方面的算法。
+
+代码：
+
+https://github.com/k2-fsa/k2
+
+- Icefall：示例脚本集合。
 
 # 编译
 

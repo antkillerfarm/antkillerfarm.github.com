@@ -413,11 +413,3 @@ http://jalammar.github.io/illustrated-bert/
 https://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/
 
 A Visual Guide to Using BERT for the First Time
-
-## 基本结构
-
-![](/images/img3/BERT.png)
-
-上图是BERT的网络结构图。
-
-BERT是Bidirectional Encoder Representations from Transformers的缩写。从这个名字可以看出它将Transformer中的encoder作为一个基本单元，然后采用了类似双向RNN的方式，做了一个双向的Transformer的结构。

@@ -198,6 +198,18 @@ https://mp.weixin.qq.com/s/o0qtdwE4TfppqWAKJLDhSw
 
 Go中的循环是如何转为汇编的？看完你懂了吗？
 
+https://zhuanlan.zhihu.com/p/299041493
+
+Go netpoller网络模型之源码全面解析
+
+https://zhuanlan.zhihu.com/p/299047984
+
+Go netpoller网络模型之源码全面解析（二）
+
+https://mp.weixin.qq.com/s/BNknXR0wP4vtguchijeY_w
+
+sync.mutex源代码分析
+
 ## GTK
 
 熟悉我的朋友都知道，新语言的GTK demo是一定要有的。毕竟helloworld太简单了，容易让人产生从三到万的错觉。

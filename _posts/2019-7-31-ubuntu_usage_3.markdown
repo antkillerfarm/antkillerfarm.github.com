@@ -405,3 +405,7 @@ https://mp.weixin.qq.com/s/iKfWSfzauzNjcAvXPNhq0Q
 https://mp.weixin.qq.com/s/gj6Zw8SvOdSZqRx8KP9wWw
 
 20张图揭开内存管理的迷雾，瞬间豁然开朗
+
+https://mp.weixin.qq.com/s/IQYUNzVgSOFUHB9c1SM0Bw
+
+10张图22段代码，万字长文带你搞懂虚拟内存模型和malloc内部原理

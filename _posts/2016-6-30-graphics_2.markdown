@@ -295,12 +295,6 @@ $$h_1=\left[\begin{array}{ccc} 0&-1&0\\ -1&4&-1 \\ 0&-1&0\end{array} \right],h_2
 
 拉普拉斯算子和正态分布有很大关联，也有标准差$$\sigma$$的概念。一般来说，中心元素的值越大，$$\sigma$$越小。算子对图像的模糊（或锐化）程度与$$\sigma$$成正比。
 
-参考：
-
-https://zhuanlan.zhihu.com/p/85287578
-
-拉普拉斯矩阵与拉普拉斯算子的关系
-
 ## 对称梯度算子
 
 $$s_x=\left[\begin{array}{ccc} -1&0&1\\ -d&0&d \\ -1&0&1\end{array} \right],s_y=\left[\begin{array}{ccc} 1&d&1\\ 0&0&0 \\ -1&-d&-1\end{array} \right]$$

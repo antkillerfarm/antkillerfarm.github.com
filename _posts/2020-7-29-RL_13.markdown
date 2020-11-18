@@ -173,6 +173,10 @@ https://mp.weixin.qq.com/s/tv8Tq9hIsll9_aPGUKI8qQ
 
 强化学习《奖励函数设计: Reward Shaping》详细解读
 
+https://zhuanlan.zhihu.com/p/25319023
+
+强化学习（Reinforcement Learning）知识整理
+
 # DRL参考资源+
 
 https://mp.weixin.qq.com/s/1b3_AiFhwXqxb7FozdRYIQ

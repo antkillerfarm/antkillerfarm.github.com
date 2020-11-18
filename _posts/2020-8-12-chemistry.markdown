@@ -163,6 +163,10 @@ https://mp.weixin.qq.com/s/tGYqdbrYUkXaIEa_ycAzUQ
 
 幸运的化学，悲催的奠基人（Antoine-Laurent de Lavoisier）
 
+https://mp.weixin.qq.com/s/cUuw9CflfLrxXuSmNbra_A
+
+中学的元素周期表还藏着4000多种……（同位素）
+
 ## 化学工业
 
 https://wallstreetcn.com/articles/250536

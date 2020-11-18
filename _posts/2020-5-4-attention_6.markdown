@@ -227,6 +227,10 @@ https://mp.weixin.qq.com/s/EuCCeWz_rkktwLuFJ75BXA
 
 Transformer+AutoML: 遗传搜索在序列式任务上的应用
 
+https://mp.weixin.qq.com/s/OEpLpWzkdfFUQf4cKNuG4w
+
+Performer:基于正交随机特征的快速注意力计算
+
 # Attention进阶
 
 https://zhuanlan.zhihu.com/p/40920384

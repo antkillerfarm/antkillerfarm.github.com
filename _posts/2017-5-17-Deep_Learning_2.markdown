@@ -11,6 +11,18 @@ category: DL
 
 ## 随机初始化（续）
 
+2.Xavier。该方法基于Gaussian分布或均匀分布产生随机数。其中分布W的均值为零，方差公式如下：
+
+$$\text{Var}(W)=\frac{1}{n_{in}}\tag{1}$$
+
+其中，$$n_{in}$$表示需要输入层的神经元的个数。也有如下变种：
+
+$$\text{Var}(W)=\frac{2}{n_{in}+n_{out}}\tag{2}$$
+
+其中，$$n_{out}$$表示需要输出层的神经元的个数。
+
+公式1也被称作LeCun initializer，公式2也被称作Glorot initializer。
+
 3.MSRA。该方法基于零均值的Gaussian分布产生随机数。Gaussian分布的标准差为：
 
 $$\sqrt{\frac{2}{n_l}}$$
@@ -273,19 +285,3 @@ https://mp.weixin.qq.com/s/g1XSxGG_l7MexuokaChlsQ
 https://mp.weixin.qq.com/s/n5VXSS_t9JPyLE8UNcWlbA
 
 Drop大法
-
-## Dropout预测阶段
-
-经Dropout处理过的模型，在预测阶段不再Dropout，而是打开所有的神经元。这样的效果类似于集成学习，即若干个弱分类器，集成为一个强分类器。
-
-假设p是训练时Dropout的概率。预测阶段由于所有神经元都会参与运算，这会导致$$Wx+b$$是训练阶段的$$\frac{1}{1-p}$$倍，因此需要对W进行相应修正才行，即：
-
-$$W_{ij} \to (1-p)W_{ij}$$
-
-这种修正在预测阶段看来是有些不方便的，因此又出现了Inverted Dropout。它的做法是训练阶段在dropout之后，接上一个除以p的rescale操作，这样的话在预测阶段，就可以忽略dropout操作了。
-
-参考：
-
-https://mp.weixin.qq.com/s/cP8KO3JPIn4lK-n-KdUejA
-
-Dropout有哪些细节问题？

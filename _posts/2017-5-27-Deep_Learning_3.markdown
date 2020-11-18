@@ -7,6 +7,24 @@ category: DL
 * toc
 {:toc}
 
+# Dropout（续）
+
+## Dropout预测阶段
+
+经Dropout处理过的模型，在预测阶段不再Dropout，而是打开所有的神经元。这样的效果类似于集成学习，即若干个弱分类器，集成为一个强分类器。
+
+假设p是训练时Dropout的概率。预测阶段由于所有神经元都会参与运算，这会导致$$Wx+b$$是训练阶段的$$\frac{1}{1-p}$$倍，因此需要对W进行相应修正才行，即：
+
+$$W_{ij} \to (1-p)W_{ij}$$
+
+这种修正在预测阶段看来是有些不方便的，因此又出现了Inverted Dropout。它的做法是训练阶段在dropout之后，接上一个除以p的rescale操作，这样的话在预测阶段，就可以忽略dropout操作了。
+
+参考：
+
+https://mp.weixin.qq.com/s/cP8KO3JPIn4lK-n-KdUejA
+
+Dropout有哪些细节问题？
+
 # 深度学习常用术语解释
 
 ## 深度学习中epoch、batch size、iterations的区别
@@ -252,7 +270,7 @@ LeNet-5的caffe模板：
 
 https://github.com/BVLC/caffe/blob/master/examples/mnist/lenet.prototxt
 
-### 卷积
+## 卷积
 
 在《数学狂想曲（五）》中我们讨论了卷积的数学含义，结合《 图像处理理论（一）》和《 图像处理理论（二）》，不难看出卷积或者模板（算子），在前DL时代，几乎是图像处理算法的基础和灵魂。为了实现各种目的，人们手工定义或发现了一系列算子。
 
@@ -267,21 +285,3 @@ https://github.com/BVLC/caffe/blob/master/examples/mnist/lenet.prototxt
 ![](/images/img3/DL.png)
 
 比如，LeNet-5的C1:6@28*28，其中的6就是算子的个数。显然算子的个数越多，计算越慢。但太少的话，又会导致提取的特征数太少，神经网络学不到东西。
-
-需要注意的是，传统的CV算法中，通常只有单一的卷积运算。而CNN中的卷积层，实际上包括了**卷积+激活**两种运算，即：
-
-$$L_2=\sigma(Conv(L_1,W)+b)$$
-
-因此，相比全连接层而言，卷积层每次只有部分元素参与到最终的激活运算。从宏观角度看，这些元素实际上对应了图片的局部空间二维信息，它和后面的Pooling操作一道，起到了空间降维的作用。
-
-实际上，传统的MLP（MultiLayer Perceptron）网络，就是由于1D全连接的神经元控制了太多参数，而不利于学习到稀疏特征。
-
-CNN网络中，2D全连接的神经元则控制了局部感受野，有利于解离出稀疏特征。
-
-至于激活函数，则是为了保证变换的非线性。这也是CNN被归类为NN的根本原因。
-
-参考：
-
-https://mp.weixin.qq.com/s/dIIWAKv9woLO8M0CyN8lsw
-
-传统计算机视觉技术落伍了吗？不，它们是深度学习的“新动能”

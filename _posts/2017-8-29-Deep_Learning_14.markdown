@@ -79,7 +79,13 @@ BN的误差反向算法相对复杂，这里不再赘述。
 
 而在网络层的激活函数前加上BN的话，采用什么初始化都无所谓。
 
-参考：
+BN的缺点参见：
+
+https://mp.weixin.qq.com/s/l2N_cQAzy_mubCeok1qfnA
+
+Batch Normalization的诅咒
+
+BN推理加速参见：
 
 https://mp.weixin.qq.com/s/fAiIGJnciAi3pf8MQ7UqKg
 

@@ -382,6 +382,12 @@ https://mp.weixin.qq.com/s/059DK6v1j5yi9OlqdbI7Cg
 
 https://en.wikipedia.org/wiki/Flynn%27s_taxonomy
 
+论文：
+
+《Very High-Speed Computing Systems》
+
+>Michael J. Flynn，1934年生，美国计算机科学家。Manhattan College本科（1955）+Syracuse University硕士（1960）+Purdue University博士（1961）。Stanford教授，IEEE Fellow，ACM Fellow。
+
 CPU通常是SISD和SIMD的，而GPU则是SIMD的，超级计算机则是MIMD的。
 
 SIMT: Single Instruction Multiple Threads.
