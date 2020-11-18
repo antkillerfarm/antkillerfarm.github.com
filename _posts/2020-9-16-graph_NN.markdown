@@ -325,6 +325,10 @@ https://zhuanlan.zhihu.com/p/54505069
 
 图卷积网络(GCN)新手村完全指南
 
+https://mp.weixin.qq.com/s/4zXyHaQzfJQ3e1JTaZbBbQ
+
+图卷积神经网络理论基础
+
 https://mp.weixin.qq.com/s/XSug_qOqq_QaphkiRlGkIg
 
 图卷积GCN前沿方法介绍

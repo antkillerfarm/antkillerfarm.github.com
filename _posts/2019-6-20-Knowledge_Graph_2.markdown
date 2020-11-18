@@ -313,6 +313,10 @@ https://mp.weixin.qq.com/s/cJZz_BfkfbJzV2l8NiPaFg
 
 电商知识图谱
 
+https://mp.weixin.qq.com/s/IitK59eds2264sQ3Ej-aog
+
+知识图谱在小米的应用与探索
+
 # AI工具+
 
 https://mp.weixin.qq.com/s/3eoN0YHI84oomdTZO6TrvQ

@@ -142,18 +142,6 @@ https://mp.weixin.qq.com/s/HvADkICPYflS2VTuSB16rg
 
 Linux入门必看：如何60秒内分析Linux性能
 
-https://mp.weixin.qq.com/s/7ZVpdQOwNkIjW-16Mp8dcA
-
-Linux企业运维人员最常用150个命令汇总
-
-https://mp.weixin.qq.com/s/LwWhHvc2Zdvv2OYBG6kCyw
-
-Linux调试三剑客——strace,lsof,tcpdump
-
-https://mp.weixin.qq.com/s/yByM4-526GwIVdJC1ZoE-A
-
-网络状态检测的利器-ss命令
-
 ## 白盒测试
 
 上面提到的主要是黑盒测试工具。
@@ -173,6 +161,28 @@ https://github.com/linux-test-project/ltp
 https://mp.weixin.qq.com/s/Od17bQhpd3FYE2GQd-kvaQ
 
 iOS代码染色原理及技术实践（gcov，gcno，gcda）
+
+# Linux命令参考
+
+https://mp.weixin.qq.com/s/7ZVpdQOwNkIjW-16Mp8dcA
+
+Linux企业运维人员最常用150个命令汇总
+
+https://mp.weixin.qq.com/s/LwWhHvc2Zdvv2OYBG6kCyw
+
+Linux调试三剑客——strace,lsof,tcpdump
+
+https://mp.weixin.qq.com/s/yByM4-526GwIVdJC1ZoE-A
+
+网络状态检测的利器-ss命令
+
+https://mp.weixin.qq.com/s/-Plk7ZrqZFnf4hfP5FcvPQ
+
+Linux网络状态工具ss命令使用详解
+
+https://mp.weixin.qq.com/s/DG7RjJ_HXSRb6nAZuoTz3g
+
+详解Linux中3个文件查找相关命令
 
 # 时间的表示方法
 

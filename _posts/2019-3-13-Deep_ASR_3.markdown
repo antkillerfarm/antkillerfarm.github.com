@@ -317,6 +317,10 @@ https://mp.weixin.qq.com/s/ybanqEzEDtwTJ-y6piBv8Q
 
 黑白键上的字节跳动：全球最大钢琴MIDI数据集背后的故事
 
+https://mp.weixin.qq.com/s/wZfBg175ylxZj-k4Xzggqw
+
+端到端语音识别模型
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/jwV4glj8vIUKSelzeRrxSg

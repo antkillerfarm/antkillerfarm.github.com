@@ -329,6 +329,10 @@ https://mp.weixin.qq.com/s/kjD0d_PKmNNFxLSuEobE_A
 
 自训练+预训练=更好的自然语言理解模型
 
+https://mp.weixin.qq.com/s/VC95nh0iCqzdGs-TPfi5nQ
+
+无监督机器翻译，336页ppt，Unsupervised Machine Translation
+
 # 世说新语++++
 
 ## 2020.11（续）
@@ -370,3 +374,15 @@ https://mp.weixin.qq.com/s/kjD0d_PKmNNFxLSuEobE_A
 https://www.zhihu.com/answer/1560332974
 
 共和党与民主党的主要区别在哪里？
+
+----
+
+https://mp.weixin.qq.com/s/vxk1_WCvTzBxK0vzuhcrpg
+
+阴阳师，如何席卷东亚？
+
+----
+
+https://mp.weixin.qq.com/s/iPmkpqlbl8hxK-1J71PXMA
+
+她在北京摆摊剃头的第十年

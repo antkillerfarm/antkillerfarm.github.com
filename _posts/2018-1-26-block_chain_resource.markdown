@@ -295,7 +295,7 @@ https://mp.weixin.qq.com/s/gJWTiMCovGMQ8ye_TovdOw
 
 https://www.zhihu.com/question/404217836
 
-如何看待全球超级计算机 TOP 500 榜单日本登顶，中国跌出前三？近年中国超算发展现状如何？
+如何看待全球超级计算机TOP 500榜单日本登顶，中国跌出前三？近年中国超算发展现状如何？
 
 # VAE参考资源+
 
@@ -331,3 +331,36 @@ https://mp.weixin.qq.com/s/g-OPU4vp66HWcpqjdD2bBg
 
 使用PyTorch从理论到实践理解变分自编码器VAE
 
+# 模型压缩与加速进阶+++
+
+https://mp.weixin.qq.com/s/DLNyb-GtzmSYuXcn6VQz4Q
+
+高效轻量级深度模型的研究和实践
+
+https://mp.weixin.qq.com/s/3SWtxtV9b0dFpvqfTNlqIg
+
+Slimmable Neural Networks
+
+https://mp.weixin.qq.com/s/lc7IoOV6S2Uz5xi7cPQUqg
+
+基于元学习和AutoML的模型压缩新方法
+
+https://zhuanlan.zhihu.com/p/64400678
+
+轻量卷积神经网络的设计
+
+https://mp.weixin.qq.com/s/pJk84bNzRn7LZZfQfSjs5A
+
+VarGFaceNet：地平线提出轻量级、有效可变组卷积的人脸识别网络
+
+https://mp.weixin.qq.com/s/cYimAphdyFO_XqKfT2Hbeg
+
+如何使用强化学习进行模型剪枝
+
+https://mp.weixin.qq.com/s/SgELZgoHzIvbg2-jzJw6Tw
+
+港科大、清华与旷视提出基于元学习的自动化神经网络通道剪枝网络
+
+https://mp.weixin.qq.com/s/q5-91AAKwBiYzTMmqadEcg
+
+RefineDetLite：腾讯提出轻量级高精度目标检测网络

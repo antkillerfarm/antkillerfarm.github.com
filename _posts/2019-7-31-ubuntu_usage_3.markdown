@@ -284,10 +284,6 @@ https://mp.weixin.qq.com/s/I7C7cXFgxO7RO0Wpjjj3xQ
 
 一篇文章带你“重新认识”线程上下文切换怎么玩儿
 
-https://mp.weixin.qq.com/s/DG7RjJ_HXSRb6nAZuoTz3g
-
-详解Linux中3个文件查找相关命令
-
 https://www.cnblogs.com/liqiuhao/p/9450093.html
 
 关于TOCTTOU攻击的简介

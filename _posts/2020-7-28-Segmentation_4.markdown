@@ -129,6 +129,10 @@ https://mp.weixin.qq.com/s/7EMDH-vuNCOHWmbpyWA3ow
 
 基于深度学习的语义分割综述
 
+https://mp.weixin.qq.com/s/IO4cUTgcFO9hCMT9hTCXiQ
+
+图像分割2020总结：结构，损失函数，数据集和框架
+
 https://blog.csdn.net/yorkhunter/article/details/104057159
 
 arXiv综述论文“Image Segmentation Using Deep Learning: A Survey”

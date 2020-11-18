@@ -169,6 +169,10 @@ https://zhuanlan.zhihu.com/p/146557232
 
 标注数据存在错误怎么办？MIT&Google提出用置信学习找出错误标注
 
+https://mp.weixin.qq.com/s/tdF46p_fLpaVjPfK2WtRgw
+
+如何用运筹学帮助特朗普赢得大选?
+
 # 上古软件开发
 
 https://github.com/chrislgarry/Apollo-11

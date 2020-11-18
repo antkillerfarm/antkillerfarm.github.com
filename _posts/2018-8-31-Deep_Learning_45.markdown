@@ -135,6 +135,10 @@ https://mp.weixin.qq.com/s/0te0JUKYZlSLs3kzsFV-NA
 
 神经网络架构搜索（NAS）综述
 
+https://mp.weixin.qq.com/s/kfq_SOjhD8X-DKPeVeI3-A
+
+2020神经网络架构搜索（NAS）最新技术综述
+
 https://mp.weixin.qq.com/s/W9bdVJI6Jesm9-wE5pQ-mw
 
 神经网络架构搜索（NAS）基础入门

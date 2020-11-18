@@ -224,3 +224,7 @@ https://mp.weixin.qq.com/s/9Vt41Ygn767SnpjoXgnEEg
 https://mp.weixin.qq.com/s/V6UQ8r43p4ULmm4QgjmHSA
 
 OpenCV实现视频稳流
+
+https://mp.weixin.qq.com/s/Wn5k0VoscaiIHHC36_Jm2g
+
+视频目标检测大盘点
