@@ -157,6 +157,12 @@ $$C=\frac{1}{N}\sum_i^N C_i$$
 
 上面讲述了图的统计特性，反过来给定了统计特性，我们也可以生成相应的图。这种生成图的方法通常称为Erdös-Renyi Random Graph Model。
 
+>1959～1968年，数学家Paul Erdos和Alfred Renyi发表了关于随机图（Random Graph）的一系列论文，在图论的研究中融入了组合数学和概率论，建立了一个全新的数学领域分支---随机图论。
+
+>Alfréd Rényi，1921～1970，匈牙利数学家。University of Szeged博士（1947）。匈牙利科学院院士，创建了匈牙利科学院数学研究所。1944年进过纳粹集中营。
+
+>Paul Erdös，1913～1996，匈牙利数学家。Péter Pázmány University博士（1934）。匈牙利科学院院士，美国科学院院士，英国皇家学会会员。Cole Prize（1951）。Wolf Prize（1984）。
+
 我们用$$G_{np}$$表示n个结点的无向图中，每个边出现的概率是p。用$$G_{nm}$$表示n个结点的无向图中，随机均匀的选择m个边。
 
 由于这是一个随机选择的过程，因此同样的n和p可以对应很多组不同的图。
@@ -170,6 +176,12 @@ $$P(k) = \binom {n-1} k p^k(1-p)^{n-1-k}$$
 k的均值为：$$\overline{k}=p(n-1)$$
 
 $$$$
+
+参考：
+
+https://zhuanlan.zhihu.com/p/300861555
+
+随机图模型
 
 ## Laplacian matrix
 

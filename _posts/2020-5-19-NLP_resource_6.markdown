@@ -386,3 +386,9 @@ https://mp.weixin.qq.com/s/vxk1_WCvTzBxK0vzuhcrpg
 https://mp.weixin.qq.com/s/iPmkpqlbl8hxK-1J71PXMA
 
 她在北京摆摊剃头的第十年
+
+----
+
+https://www.sohu.com/a/58658944_180393
+
+《亮剑》中消灭日本军官观战团章节的历史原貌
