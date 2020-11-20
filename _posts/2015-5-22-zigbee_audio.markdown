@@ -259,3 +259,7 @@ https://mp.weixin.qq.com/s/mgdDjjIJX4y1-DXzazDhPA
 https://mp.weixin.qq.com/s/rM3SkUiQIxsGz9MNIg1skQ
 
 用树莓派DIY波士顿机器狗，帮你省下50万：教程开源，人人皆可上手
+
+https://zhuanlan.zhihu.com/p/301860804
+
+如何把树莓派400打造成小霸王游戏机，Retropie包含上万经典老游戏
