@@ -183,6 +183,10 @@ https://mp.weixin.qq.com/s/MFNKDNTrF-8VuKrwcsTDLw
 
 纵览图像语义分割发展史，11篇关键文章简介
 
+https://mp.weixin.qq.com/s/s0tg-6RoLV0KlXtowWHHBQ
+
+一文读懂语义分割与实例分割
+
 # FCN
 
 深度学习最初流行的分割方法是，打补丁式的分类方法 (patch classification) 。逐像素地抽取周围像素对中心像素进行分类。由于当时的卷积网络末端都使用全连接层 (full connected layers) ，所以只能使用这种逐像素的分割方法。

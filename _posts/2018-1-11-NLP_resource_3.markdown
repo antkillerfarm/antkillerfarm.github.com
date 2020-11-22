@@ -43,6 +43,10 @@ http://mp.weixin.qq.com/s?__biz=MzI4MDYzNzg4Mw==&mid=2247483922&idx=1&sn=cffbaf7
 
 句法分析（syntactic parsing）在NLP领域的应用是怎样的？
 
+https://mp.weixin.qq.com/s/80bduM27Xv7zCC4saYgwpQ
+
+句法分析综述
+
 http://www.cnblogs.com/CheeseZH/p/5768389.html
 
 依存句法分析与语义依存分析的区别

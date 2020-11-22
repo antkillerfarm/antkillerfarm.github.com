@@ -73,6 +73,42 @@ https://mp.weixin.qq.com/s/foAit8ratliRG6R2KC05Hg
 
 浅谈分布式锁
 
+https://mp.weixin.qq.com/s/Ey_ofboH7EvAbPxTNHWC3w
+
+13张图彻底搞懂分布式系统服务注册与发现原理
+
+https://mp.weixin.qq.com/s/2xohw5r4cirbbL933EPK5A
+
+分布式服务框架设计要点
+
+https://mp.weixin.qq.com/s/ACQVjdpMDrd7wh_pMLWScw
+
+分布式服务框架设计要点（续）
+
+https://mp.weixin.qq.com/s/yBquVKyKnhpy2yPxY-0eqA
+
+大白话聊聊分布式事务
+
+https://mp.weixin.qq.com/s/2AL3uJ5BG2X3Y2Vxg0XqnQ
+
+如何选择分布式事务解决方案？
+
+https://mp.weixin.qq.com/s/910pclefErC4Tx7NujJamg
+
+分布式缓存---Memcached
+
+https://mp.weixin.qq.com/s/ZGYOwGjg06GSqCW3VoIzYg
+
+万万没想到，分布式存储系统的一致性是……
+
+https://mp.weixin.qq.com/s/og2fAZCjaUpmQM0FRH76DA
+
+这三年被分布式坑惨了，曝光十大坑
+
+http://www.cnblogs.com/rjzheng/p/8994962.html
+
+分布式之消息队列复习精讲
+
 # 大数据平台参考资源
 
 ![](/images/img3/big_data.png)
@@ -205,14 +241,6 @@ https://mp.weixin.qq.com/s/ZMqCwoV3CuDwGuD_rAIsbg
 
 什么是Bitmap算法？
 
-https://mp.weixin.qq.com/s/2xohw5r4cirbbL933EPK5A
-
-分布式服务框架设计要点
-
-https://mp.weixin.qq.com/s/ACQVjdpMDrd7wh_pMLWScw
-
-分布式服务框架设计要点（续）
-
 https://mp.weixin.qq.com/s/x_OPSwc82d1IoWPj7xb6zg
 
 那些你不知道的王者荣耀高并发背后的故事
@@ -228,10 +256,6 @@ https://mp.weixin.qq.com/s/JNTgDjtqCukVwH6u1dp2Vg
 https://mp.weixin.qq.com/s/EmAhBjZnLns_25gR-aVgwg
 
 MillWheel: Google是如何在事件流处理上做到exactly one semantic的
-
-https://mp.weixin.qq.com/s/F7WTNeC3OUr76sZARtqRjw
-
-分布式架构系统生成全局唯一序列号的一个思路
 
 https://mp.weixin.qq.com/s/CxUGWhJZ1ST_Xq3H02c_Ww
 
@@ -329,14 +353,6 @@ https://mp.weixin.qq.com/s/fx6XfBpuzozsJCvllMcCqw
 
 战狼项目：美团点评金融核心交易系统可用性7个9是这样炼成的
 
-https://mp.weixin.qq.com/s/yBquVKyKnhpy2yPxY-0eqA
-
-大白话聊聊分布式事务
-
-https://mp.weixin.qq.com/s/2AL3uJ5BG2X3Y2Vxg0XqnQ
-
-如何选择分布式事务解决方案？
-
 http://www.cnblogs.com/zhangweizhong/category/879056.html
 
 如何打造一个小而精的电商网站架构
@@ -352,14 +368,6 @@ Service Mesh是大方向，那Database Mesh呢？
 https://mp.weixin.qq.com/s/Db6Am-bAyufg3m67Ta5GBQ
 
 当你和天猫精灵对话时，它在想什么？阿里智能对话技术深度解读
-
-https://mp.weixin.qq.com/s/910pclefErC4Tx7NujJamg
-
-分布式缓存---Memcached
-
-https://mp.weixin.qq.com/s/ZGYOwGjg06GSqCW3VoIzYg
-
-万万没想到，分布式存储系统的一致性是……
 
 https://mp.weixin.qq.com/s/EM9EVZYeqd5eJ3YbvgiyEw
 
@@ -420,10 +428,6 @@ https://mp.weixin.qq.com/s/pxNRzWs3sZmbr-K18FvnrA
 https://mp.weixin.qq.com/s/UYN4cxH4gT0WsFTrBKRKGA
 
 美团酒旅实时数据规则引擎应用实践
-
-https://mp.weixin.qq.com/s/og2fAZCjaUpmQM0FRH76DA
-
-这三年被分布式坑惨了，曝光十大坑
 
 https://mp.weixin.qq.com/s/XE56cWASFcq8r-p1OBvKng
 

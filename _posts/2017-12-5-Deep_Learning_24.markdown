@@ -175,6 +175,10 @@ https://mp.weixin.qq.com/s/nDkaOb4q9cPSqW4w76kcNg
 
 码隆科技提出SiamAttn，将孪生网络跟踪器的性能提至最优水平
 
+https://mp.weixin.qq.com/s/DWaKFhK-dv43ap99fRnpAw
+
+概率回归的视觉追踪
+
 ## FlowNet
 
 论文：

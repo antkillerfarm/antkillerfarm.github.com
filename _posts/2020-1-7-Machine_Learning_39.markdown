@@ -269,6 +269,14 @@ https://mp.weixin.qq.com/s/mh6RW6XPpyEWZHG7TmBKzg
 
 孤立森林:大数据背景下的最佳异常检测算法之一
 
+https://mp.weixin.qq.com/s/2J9P_sFjp9TxSvpBRthj0A
+
+工业图像异常检测最新研究总结
+
+https://mp.weixin.qq.com/s/8qR7Ew3oLzOZV2hV1QjMAA
+
+最新49页《深度学习异常检测综述》论文，带你全面了解深度学习异常检测方法
+
 # 数据清洗
 
 https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g

@@ -368,3 +368,15 @@ https://mp.weixin.qq.com/s/oPYWwZ6GkaE4L4YMxh7WGA
 https://mp.weixin.qq.com/s/6HsL2B7p-XyvGWAb4SwALA
 
 图灵奖得主Geoffrey Hinton最新研究NASA：一种更好地学习三维模型动作的方法
+
+https://zhuanlan.zhihu.com/p/26460437
+
+Video Analysis相关领域解读之Action Recognition(行为识别)
+
+https://zhuanlan.zhihu.com/p/26603387
+
+Video Analysis 相关领域解读之Temporal Action Detection(时序行为检测)
+
+https://zhuanlan.zhihu.com/p/26730181
+
+Video Analysis 相关领域介绍之Video Captioning(视频to文字描述)

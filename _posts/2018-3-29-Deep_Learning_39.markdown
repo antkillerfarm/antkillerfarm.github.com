@@ -376,3 +376,7 @@ https://mp.weixin.qq.com/s/jUPhF6OHtVrmTbg29sQV2Q
 https://mp.weixin.qq.com/s/wwHUjME5vR1uF3ad_wlMzw
 
 更准确的弱监督视频动作定位，从生成注意力模型出发
+
+https://mp.weixin.qq.com/s/18KzXb4hHrWvt3QK2UUm3w
+
+使用深度学习从视频中估计车辆的速度

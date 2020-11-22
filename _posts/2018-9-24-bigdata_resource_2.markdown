@@ -41,10 +41,6 @@ https://mp.weixin.qq.com/s/qh88sawJUZedv3X0LIRsAQ
 
 ESearch：58集团基于C++语言自主研发的搜索内核
 
-http://www.cnblogs.com/rjzheng/p/8994962.html
-
-分布式之消息队列复习精讲
-
 https://mp.weixin.qq.com/s/Mcg5rj3QrgVj3wyY4xttnQ
 
 关于商业部署机器学习，这有一篇详尽指南

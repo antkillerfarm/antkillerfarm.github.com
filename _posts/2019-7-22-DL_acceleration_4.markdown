@@ -350,3 +350,11 @@ https://zhuanlan.zhihu.com/p/31575074
 Weight Pruning需要相关硬件支持跳零操作才能真正加速运算，而Filter/Layer Pruning则无需特殊硬件支持。
 
 虽然这些参数、结点和层相对不重要，但是去掉之后，仍然会对准确度有所影响。这时可以对精简之后的模型，用训练样本进行re-train，通过残差对模型进行一定程度的修正，以提高准确度。
+
+![](/images/img4/Pruning.png)
+
+此外还有Stripe-Wise Pruning：
+
+https://mp.weixin.qq.com/s/HohsD57cQtTR5SvuykEDuA
+
+优图NeurIPS 2020论文，刷新滤波器剪枝的SOTA效果

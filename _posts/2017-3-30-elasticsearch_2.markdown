@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Elasticsearch（二）, Flume & Kafka, 计算机体系结构
+title:  Elasticsearch（二）, Flume & Kafka
 category: AI 
 ---
 
@@ -306,6 +306,20 @@ https://mp.weixin.qq.com/s/oiaXjFxNcwJenkGuJBPm5Q
 
 消息中间件的"Style"
 
+## 消息传递语义
+
+message delivery semantic也就是消息传递语义，简单说就是消息传递过程中消息传递的保证性。主要分为三种：
+
+- at most once：最多一次。消息可能丢失也可能被处理，但最多只会被处理一次。
+
+- at least once：至少一次。消息不会丢失，但可能被处理多次。可能重复，不会丢失。
+
+- exactly once：精确传递一次。消息被处理且只会被处理一次。不丢失不重复就一次。
+
+https://mp.weixin.qq.com/s/TScpvjpIlyZyj62e8EwOPg
+
+Kafka消息中间件到底会不会丢消息
+
 ## 参考
 
 https://mp.weixin.qq.com/s/bjlDHFLwxjej2t8iDhVb1A
@@ -363,65 +377,3 @@ https://mp.weixin.qq.com/s/46u-qyk00yZM_bIah-zs-A
 https://mp.weixin.qq.com/s/059DK6v1j5yi9OlqdbI7Cg
 
 从面试角度一文学完Kafka
-
-# 计算机体系结构
-
-按照Michael J. Flynn的分类方法，计算机的体系结构可分为如下四类：
-
-**Single instruction stream single data stream (SISD)**
-
-**Single instruction stream, multiple data streams (SIMD)**
-
-**Multiple instruction streams, single data stream (MISD)**
-
-**Multiple instruction streams, multiple data streams (MIMD)**
-
-![](/images/article/simd_mimd.png)
-
-原图地址：
-
-https://en.wikipedia.org/wiki/Flynn%27s_taxonomy
-
-论文：
-
-《Very High-Speed Computing Systems》
-
->Michael J. Flynn，1934年生，美国计算机科学家。Manhattan College本科（1955）+Syracuse University硕士（1960）+Purdue University博士（1961）。Stanford教授，IEEE Fellow，ACM Fellow。
-
-CPU通常是SISD和SIMD的，而GPU则是SIMD的，超级计算机则是MIMD的。
-
-SIMT: Single Instruction Multiple Threads.
-
-SIMT最早是Nvidia发明的概念，仅用于GPU领域。它和SIMD的差异很小。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/31271788
-
-SIMD指令集
-
-https://zhuanlan.zhihu.com/p/113360369
-
-从现代GPU编程角度看SIMD与SIMT
-
-## 术语
-
-Shared Virtual Memory，SVM
-
-Memory consistency model
-
-Multisample anti-aliasing，MSAA
-
-## 参考
-
-https://blog.csdn.net/do2jiang/article/details/4545889
-
-流水线、超流水线、超标量技术对比
-
-https://blog.csdn.net/edonlii/article/details/8755205
-
-单发射与多发射
-
-https://mp.weixin.qq.com/s/FJX9eeRkxS5nJ4XIhRVwkg
-
-从ServerSwitch到SONiC Chassis：数据中心交换机技术的十年探索历程

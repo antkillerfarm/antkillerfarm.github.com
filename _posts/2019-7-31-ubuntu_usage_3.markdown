@@ -216,6 +216,10 @@ https://www.cnblogs.com/biyeymyhjob/archive/2012/07/20/2601655.html
 
 Linux写时拷贝技术(copy-on-write)
 
+https://mp.weixin.qq.com/s/dZNjq05q9jMFYhJrjae_LA
+
+Linux I/O原理和Zero-copy技术全面揭秘
+
 https://mp.weixin.qq.com/s/MNzSES3dlMuiwkffLWJGIg
 
 文件系统：隐匿在Linux背后的机制

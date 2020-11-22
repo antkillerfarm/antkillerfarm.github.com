@@ -151,6 +151,10 @@ http://abcinstitute.baidu.com/pages/index.html#/specialInfo?specialId=4008
 
 百度的自动驾驶课程
 
+https://mp.weixin.qq.com/s/O-xV6fXtSnF0Y8Z2lxKa1g
+
+自主机器人导论:运动学，感知，定位和规划，241页pdf
+
 ## 自动驾驶入门课程
 
 https://mp.weixin.qq.com/s/yO_Lc5Fo-8fBC9PwVCQBqA

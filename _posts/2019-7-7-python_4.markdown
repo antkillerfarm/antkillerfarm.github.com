@@ -371,6 +371,14 @@ https://mp.weixin.qq.com/s/ZI7KDxH9z_UR2p3umBCNsA
 
 一套代码批量编辑Word和Excel，告别工具人
 
+https://mp.weixin.qq.com/s/4q6poyFBLgwZJPzJNX3y0g
+
+Python操作Excel之一
+
+https://mp.weixin.qq.com/s/NiDZfQCblcfw4XnPzBYIaQ
+
+Python操作Excel之二
+
 ## python执行shell脚本
 
 示例：

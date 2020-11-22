@@ -75,6 +75,10 @@ https://mp.weixin.qq.com/s/fLGCBeSc8yQVsXHLSdogrA
 
 柯尔莫哥洛夫惨遭打脸，没想到这个乘法难题被澳大利亚数学家解决了！
 
+https://mp.weixin.qq.com/s/KxIDHg_2_meBGqACXJW94Q
+
+PyTorch中的傅立叶卷积：通过FFT有效计算大核卷积的数学原理和代码实现
+
 ## Strassen algorithm
 
 ![](/images/img3/Strassen.png)

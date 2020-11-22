@@ -202,6 +202,10 @@ https://mp.weixin.qq.com/s/Ylvk3IqSWRD2K_AXMZwnoA
 
 手把手教你用Python的Prophet库进行时间序列预测
 
+https://mp.weixin.qq.com/s/fMkxWLGSKQm_3fyfLgbQew
+
+详解Prophet模型以及代码示例
+
 ## Lebesgue积分
 
 ![](/images/img3/Riemann_Lebesgue.jpg)
@@ -391,3 +395,7 @@ https://zhuanlan.zhihu.com/p/235533342
 https://zhuanlan.zhihu.com/p/191355122
 
 NLP样本不均衡之常用损失函数对比
+
+https://mp.weixin.qq.com/s/KL_D8pWtcXCJHz7dd70jyw
+
+Face Recognition Loss on Mnist with Pytorch

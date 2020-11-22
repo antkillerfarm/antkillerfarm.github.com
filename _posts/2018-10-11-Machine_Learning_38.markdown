@@ -335,6 +335,10 @@ https://mp.weixin.qq.com/s/dPnb7Mho-sQA6euvCdQV7w
 
 类别特征目标编码
 
+https://mp.weixin.qq.com/s/ZJjQY5g95p_s2Te9Rl2zIA
+
+特征选择介绍及4种基于过滤器的方法来选择相关特征
+
 # 时间序列分析
 
 https://www.kaggle.com/thebrownviking20/everything-you-can-do-with-a-time-series/notebook

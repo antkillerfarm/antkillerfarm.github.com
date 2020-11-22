@@ -53,14 +53,6 @@ https://mp.weixin.qq.com/s/ViX3kAT96aaLZ0r9SNtSWA
 
 强判别能力的深度人脸识别
 
-https://zhuanlan.zhihu.com/p/71003906
-
-开箱即用的动漫头像检测包
-
-https://zhuanlan.zhihu.com/p/75752110
-
-从自动化颜艺挑选看异常检测的实际挑战（可和上一篇配套食用）
-
 https://zhuanlan.zhihu.com/p/55479744
 
 人脸检测与对齐python实现

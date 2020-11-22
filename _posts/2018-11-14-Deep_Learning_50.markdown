@@ -303,6 +303,10 @@ https://mp.weixin.qq.com/s/a7GEOdPRWYCBh6XQslxX8w
 
 CNN骨干网络新选择HS-ResNet
 
+https://mp.weixin.qq.com/s/9zaTjwwGPHHzSv1ZmHf8_g
+
+不妨试试MoCo，来替换ImageNet上pretrain模型！
+
 # AI前沿
 
 人工智能前沿7大热点：

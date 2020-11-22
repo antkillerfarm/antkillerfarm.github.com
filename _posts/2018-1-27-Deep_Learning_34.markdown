@@ -289,6 +289,10 @@ https://mp.weixin.qq.com/s/76BaQ6b1FYz05pZUbplGhQ
 
 一文总结词向量的计算、评估与优化
 
+https://mp.weixin.qq.com/s/BwqVwN-9R8ROjgfnTUcMQg
+
+万字长文聊一聊Embedding技术
+
 # 深度贝叶斯学习
 
 https://mp.weixin.qq.com/s/4sDNUZiOiS6VH_oRSnW6HQ

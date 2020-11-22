@@ -273,6 +273,10 @@ https://mp.weixin.qq.com/s/xMO9jhzQH6P5NEA_D-uyIA
 
 这个模型的脑补能力比GAN更强，ETH提出新型超分辨率模型SRFlow
 
+https://zhuanlan.zhihu.com/p/279121569
+
+Flow-based Generative Model流的生成模型
+
 # VAE参考资源
 
 https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw

@@ -57,6 +57,10 @@ https://mp.weixin.qq.com/s/CkAHKXWi24tDBz4HiWkhBw
 
 模型小快好！微软预训练语言模型通用压缩方法MiniLM助你“事半功倍”
 
+https://mp.weixin.qq.com/s/iLO1FOE-4z1p07RCfCJIaA
+
+MiniLM：通用模型压缩方法
+
 https://mp.weixin.qq.com/s/LF8TiVccYcm4B6krCOGVTQ
 
 ALBERT论文图解介绍

@@ -311,6 +311,18 @@ https://mp.weixin.qq.com/s/iGC_zJnHxyRBnKR1gH1czg
 
 智能重排序在推荐场景中的应用
 
+https://mp.weixin.qq.com/s/j6FWqkdbOdQk-qAmYNmJqQ
+
+58同镇下沉市场中的推荐技术实践
+
+https://mp.weixin.qq.com/s/WfpSSQNLxua53o_AWsq4Gg
+
+如何设计秒杀场景
+
+https://mp.weixin.qq.com/s/UyMDskA0eGN-NmiifwQF6Q
+
+美团本地生活场景的短视频分析
+
 # 深度推荐系统+
 
 https://zhuanlan.zhihu.com/p/100019681

@@ -398,3 +398,7 @@ https://mp.weixin.qq.com/s/wMARrGbRanB2T0NIxISspA
 https://mp.weixin.qq.com/s/T6ukSjODiTgC1T4pCZCY9g
 
 2，29，541，7919，104729……（素数的故事）
+
+https://mp.weixin.qq.com/s/YD6fnPYkqXwxTISjN99JxQ
+
+美国数学能出很厉害的大神，为什么学的却比我们简单？看了他们的黑历史就明白了……

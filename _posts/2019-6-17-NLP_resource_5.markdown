@@ -396,3 +396,7 @@ https://mp.weixin.qq.com/s/21bhPa4ECNFmUcF0GOQSkw
 https://speechlab.sjtu.edu.cn/pages/sz128/homepage/year/10/27/survey-on-grammar-retrieval/
 
 论文调研：基于“规则、槽值”检索的口语语义理解
+
+https://mp.weixin.qq.com/s/mZ6AA7s140Kxo3C2u06g4w
+
+自然语言处理模型可解释性预测，182页ppt

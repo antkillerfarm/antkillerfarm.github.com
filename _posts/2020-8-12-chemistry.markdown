@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 化学, Maxwell's equations
+title: 化学, Maxwell's equations, Doppler effect
 category: Nature 
 ---
 
@@ -218,6 +218,30 @@ https://mp.weixin.qq.com/s/MkVeQ7xYAHV8mA1zmdr0qg
 | $$\nabla \cdot$$ | divergence operator |
 | $$\nabla \times$$ | curl operator |
 
+# Doppler effect
+
+>Christian Johann Doppler，1803～1853，奥地利物理学家，数学家和天文学家。维也纳大学物理学院的第一任院长。
+
+![](/images/img4/Doppler_effect.gif)
+
+v=0
+
+![](/images/img4/Doppler_effect_2.gif)
+
+v<c
+
+![](/images/img4/Doppler_effect_3.gif)
+
+v=c
+
+![](/images/img4/Doppler_effect_4.gif)
+
+v>c
+
+https://mp.weixin.qq.com/s/TU6FOTEfLu_pN9_3Ya085g
+
+多普勒，那个和声音赛跑的男人
+
 # 天文杂谈+
 
 https://zhuanlan.zhihu.com/p/29213504
@@ -255,3 +279,7 @@ https://mp.weixin.qq.com/s/1L10R2c7wCTYFYcxPKiRtA
 https://mp.weixin.qq.com/s/yCmwX5srpmhYrbAkFbC-gQ
 
 20年，241人，5400000000000米（国际空间站）
+
+https://mp.weixin.qq.com/s/Qld7bVs9ASJ23vAhE0h7_w
+
+日月星辰如何指引着中国人前行？（中国古代天文学）

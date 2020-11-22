@@ -281,6 +281,10 @@ https://mp.weixin.qq.com/s/pjSsgryShDESN5Erh2XhyA
 
 一时学习一时爽，"持续学习"持续爽
 
+https://mp.weixin.qq.com/s/cPljbzan-gPmm-48H7L8SA
+
+深度架构持续学习，附150页pdf与Slides
+
 ## 鉴黄
 
 https://mp.weixin.qq.com/s/vTtKUagiFD55mcQIeGDxQw

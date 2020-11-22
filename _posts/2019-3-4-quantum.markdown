@@ -347,3 +347,25 @@ MegEngine是旷视提出的深度学习框架。
 官网:
 
 https://megengine.org.cn/
+
+# 物理++
+
+https://mp.weixin.qq.com/s/u9ofMRsjgKg_mQwQcDd6jg
+
+水下的声波：我坦白，我是弯的
+
+https://mp.weixin.qq.com/s/Or4D9ha5rzRR_76mTgWc3w
+
+这一极限探索，迎来新的机制（中子滴线）
+
+https://mp.weixin.qq.com/s/iSqd2ffjOZJ56JfpN0TEBA
+
+10个已经被驳斥的错误的科学结论
+
+https://mp.weixin.qq.com/s/CMv1yRfCbm_VqSArHXluGg
+
+“中国居里夫人”登美国永久邮票，穿旗袍做实验，世界欠她个诺贝尔奖（吴健雄）
+
+https://mp.weixin.qq.com/s/t4xwQUoQ8FAWetvft7RnqQ
+
+首次在室温条件下，制造出自然界中最坚硬的物质（蓝丝黛尔石）

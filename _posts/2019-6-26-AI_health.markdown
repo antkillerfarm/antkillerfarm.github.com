@@ -382,3 +382,7 @@ https://visualgo.net/zh
 https://mp.weixin.qq.com/s/ZuzmCHoo4i8e5TjZUOTPGg
 
 17种经典图表总结，轻松玩转数据可视化！
+
+https://mp.weixin.qq.com/s/zDXEOHnmmFYYDuWU1ORzFQ
+
+Python中的时间序列数据可视化的完整指南

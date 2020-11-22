@@ -307,6 +307,10 @@ https://mp.weixin.qq.com/s/fgJ0xP7lsstGWOThPNCNgg
 
 时空序列预测模型之DGGAN
 
+https://mp.weixin.qq.com/s/0FWHu1Du5bWJVAe308YUuA
+
+序列知识蒸馏进展，44页ppt
+
 # 深度树学习
 
 决策树是传统ML领域的王者，对于如何将之深度化，一般有两个方向：

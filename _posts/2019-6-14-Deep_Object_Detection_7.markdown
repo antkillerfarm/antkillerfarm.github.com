@@ -125,6 +125,10 @@ https://mp.weixin.qq.com/s/8hN1RdYVJQWOqPpejjfXeQ
 
 CornerNet
 
+https://mp.weixin.qq.com/s/X1FCnSIr-iMwU9Sessxkfw
+
+CentripetalNet：更合理的角点匹配，多方面改进CornerNet
+
 # CenterNet
 
 CenterNet是中科院、牛津、Huawei Noah’s Ark Lab的一个联合团队的作品。（2019.4）
@@ -292,10 +296,6 @@ FCOS算法的原理与实现
 https://mp.weixin.qq.com/s/Q-DSG-ZAW0z0X6LHDLmFFA
 
 FCOS：全卷积一阶段Anchor Free物体检测器，多种视觉任务的统一框架
-
-https://mp.weixin.qq.com/s/04h80ubIxjJbT9BxQy5FSw
-
-目标检测：Anchor-Free时代
 
 https://zhuanlan.zhihu.com/p/66156431
 

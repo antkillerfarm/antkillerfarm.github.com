@@ -215,7 +215,11 @@ https://mp.weixin.qq.com/s/BeIEjASATt3Qpef_Ag-cSw
 
 https://mp.weixin.qq.com/s/t4GIPMB-6Vq7i8Q5PN6L-w
 
-《追狗，从入门到精通》
+追狗，从入门到精通
+
+https://mp.weixin.qq.com/s/EZ4JQM2vynTevUjFpW1h_w
+
+追狗，从入门到精通2.0
 
 https://zhuanlan.zhihu.com/p/128520715
 

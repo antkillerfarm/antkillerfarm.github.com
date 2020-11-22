@@ -17,7 +17,7 @@ https://mp.weixin.qq.com/s/VTb6CUOWnPpyU6WnYdYJ-g
 
 RepPoint V2：将角点检测和前景热图引入纯回归目标检测算法
 
-https://mp.weixin.qq.com/s/E8FXhe5H9VqXkkGSUsxYqA
+https://zhuanlan.zhihu.com/p/84398108
 
 目标检测中Anchor的本质分析
 

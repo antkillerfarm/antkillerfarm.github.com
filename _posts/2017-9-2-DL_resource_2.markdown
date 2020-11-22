@@ -99,10 +99,6 @@ https://mp.weixin.qq.com/s/d85UM4BjiARk42WUj4Xo4w
 
 16篇论文、70多页PPT帮你优化深度学习模型
 
-https://mp.weixin.qq.com/s/8qR7Ew3oLzOZV2hV1QjMAA
-
-最新49页《深度学习异常检测综述》论文，带你全面了解深度学习异常检测方法
-
 https://mp.weixin.qq.com/s/2qvLk4gqSrI2dslD4d9V5g
 
 超详细深度学习debug指南，国外小哥手把手教你如何调试模型

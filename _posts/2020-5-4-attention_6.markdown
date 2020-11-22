@@ -231,6 +231,10 @@ https://mp.weixin.qq.com/s/OEpLpWzkdfFUQf4cKNuG4w
 
 Performer:基于正交随机特征的快速注意力计算
 
+https://mp.weixin.qq.com/s/PD2YnFb6yleDEMhz3ahFSQ
+
+计算机视觉"新"范式: Transformer
+
 # Attention进阶
 
 https://zhuanlan.zhihu.com/p/40920384
@@ -272,6 +276,10 @@ https://mp.weixin.qq.com/s/MFxQSUMFNRXjdLQwzveO4w
 https://mp.weixin.qq.com/s/vkyPwsaxH-SvHqQx09VhVw
 
 深度学习中的注意力机制（二）
+
+https://mp.weixin.qq.com/s/fbAAA7fO2voP_v-NsavQew
+
+深度学习中的注意力机制（三）
 
 https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
 

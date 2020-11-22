@@ -386,3 +386,7 @@ https://mp.weixin.qq.com/s/1XDknbIapmuQi5eb61Jlaw
 https://mp.weixin.qq.com/s/1zm2iMXD142Ug0_coVIGMg
 
 Darts: 可微结构搜索
+
+https://zhuanlan.zhihu.com/p/266102401
+
+Auto Seg-Loss: 自动损失函数设计

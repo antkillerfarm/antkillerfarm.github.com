@@ -153,6 +153,30 @@ https://mp.weixin.qq.com/s/NZUOy4KOL-19fGxC8JHYGw
 
 语音识别系列之决策树
 
+https://mp.weixin.qq.com/s/FsZqX-Uwk1-ciXTH_vCNng
+
+声学发展史之——超声：寻找杰克，始于泰坦尼克号
+
+https://mp.weixin.qq.com/s/_v-H1eapsBshp-sl7KHh2A
+
+盘点欧洲知名声学实验室
+
+https://mp.weixin.qq.com/s/iS0bz8w9qrKCrQIO2PFN6Q
+
+关于主动降噪耳机，你想知道的一切（一）
+
+https://mp.weixin.qq.com/s/BZMvDn4_mlaoV8m1DqT85A
+
+关于主动降噪耳机，你想知道的一切（二）：前馈自适应
+
+https://mp.weixin.qq.com/s/2tq8tMnMGbNfe_javn07Eg
+
+关于主动降噪耳机，你想知道的一切（三）
+
+https://mp.weixin.qq.com/s/PXSsMyWeUCOxrzX-5wkp5g
+
+什么是音色？
+
 # 语音合成参考资源+
 
 https://mp.weixin.qq.com/s/f1W7PFLwkoJtVXb_7Rh3sw
@@ -214,6 +238,14 @@ https://mp.weixin.qq.com/s/5cn3UBZbA5Cwk4YvKteYBA
 https://mp.weixin.qq.com/s/eqMs7B70PZO4M7U5S1g5tg
 
 跟郎朗媳妇有得一拼的AI，只看弹琴动作，完美复现原声
+
+https://zhuanlan.zhihu.com/p/278037596
+
+语音转换Voice Conversion---特征分离技术
+
+https://zhuanlan.zhihu.com/p/278243561
+
+语音转换Voice Conversion ---直接转换技术
 
 # 地理
 
@@ -362,3 +394,7 @@ https://mp.weixin.qq.com/s/YY7JfNxDzcNuku73HYxE8A
 https://mp.weixin.qq.com/s/5jH_PH5SfsmR_i-SWCavJA
 
 这只猫居然2000多岁了，古代的猫奴这么疯狂的吗？居然用它做那种事……（纳斯卡地画）
+
+https://mp.weixin.qq.com/s/28lFYHm_dd9jQdO-MwbmWw
+
+超前的思想，迟到的荣誉（Alfred Lothar Wegener）
