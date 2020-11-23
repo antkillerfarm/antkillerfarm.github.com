@@ -313,6 +313,20 @@ Java的战争(后续)
 
 # 两弹一星+++
 
+![](/images/img3/top10.png)
+
+https://mp.weixin.qq.com/s/1NXjgkr3xWDzqm7Y-9x7-Q
+
+从核潜艇到华龙一号：“其他大国有的，我们也要有”
+
+https://mp.weixin.qq.com/s/sRVb8qGtbsuqCvHSrlL9mQ
+
+卡住中国脖子的35项技术
+
+https://mp.weixin.qq.com/s/wsGgWzyaslXCQflaP2ccXA
+
+60年前首登珠峰，他是唯一在世亲历者
+
 https://mp.weixin.qq.com/s/zwlOZzdGlqTFGSg3H9zNxQ
 
 珠峰变“绿”，“隐者”现身，这些年的珠峰发生了什么？

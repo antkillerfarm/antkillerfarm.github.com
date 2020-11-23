@@ -277,19 +277,3 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/doc/The%20Unpar
 https://mp.weixin.qq.com/s/_98VQ5Ck5ZRm8xIe5qJuog
 
 西方对中国的恐惧
-
-----
-
-![](/images/img3/top10.png)
-
-https://mp.weixin.qq.com/s/1NXjgkr3xWDzqm7Y-9x7-Q
-
-从核潜艇到华龙一号：“其他大国有的，我们也要有”
-
-https://mp.weixin.qq.com/s/sRVb8qGtbsuqCvHSrlL9mQ
-
-卡住中国脖子的35项技术
-
-https://mp.weixin.qq.com/s/wsGgWzyaslXCQflaP2ccXA
-
-60年前首登珠峰，他是唯一在世亲历者

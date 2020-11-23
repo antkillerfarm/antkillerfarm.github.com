@@ -233,6 +233,22 @@ Tensorflow源代码中自带的toco（Tensorflow Optimizing COnverter）工具�
 
 https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/lite/toco
 
+----
+
+tflite模型中间结果的导出，不是太方便，原因是相关内存被复用。
+
+解决办法有两个：
+
+- 把想要dump的tensor设置为网络的output，然后转成tflite。
+
+- 修改tflite.invoke的代码，以导出中间结果。
+
+参考：
+
+https://stackoverflow.com/questions/57139676/savedmodel-tflite-signaturedef-tensorinfo-get-intermediate-layer-outputs
+
+----
+
 参考：
 
 https://www.jianshu.com/p/fa204a54a956
