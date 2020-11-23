@@ -358,19 +358,3 @@ http://www.ruanyifeng.com/blog/2014/07/database_implementation.html
 https://blog.csdn.net/zhengzhb/article/details/8590390
 
 SQL查找删除重复行
-
-https://mp.weixin.qq.com/s/09BlPee0-kP-At2aDyDbMw
-
-中国数据库40年历史：隐秘的江湖与恩怨
-
-https://mp.weixin.qq.com/s/4lZ7My6cs4-VJQ1qGhQxZg
-
-AliSQL X-Cluste：基于X-Paxos的高性能强一致MySQL数据库
-
-https://mp.weixin.qq.com/s/tPzBlQGxGq1WEnXz5ggpxg
-
-sysbench在美团点评中的应用
-
-https://mp.weixin.qq.com/s/lJfIkLQaZnN4e9DxX163SA
-
-一款可能解放DBA的分布式数据库RadonDB的体验之旅

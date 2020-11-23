@@ -326,23 +326,3 @@ https://mp.weixin.qq.com/s/zNs4NikZ912R3V1ZT2DcTg
 ![](/images/img2/The_Event_Horizon_Telescope_and_Global_mm-VLBI_Array_on_the_Earth.jpg)
 
 EHT（蓝绿线）与GMVA（黄线）之望远镜阵列分布。其中ALMA和IRAM同时属于两个阵营。
-
-## ALMA
-
-Atacama Large Millimeter/submillimeter Array是EHT计划的主力天文台。由欧洲南方天文台(European Southern Observatory, ESO)和美国国家射电天文台（National Radio Astronomy Observatory, NRAO）共同负责。
-
-1962年10月5日，德国、法国、比利时、荷兰、瑞典五国在巴黎签署了一份协议，决定共同在南半球建立天文台，并命名为欧洲南方天文台。1960年代中期，ESO考察了智利北部的阿塔卡玛沙漠，最终选定这里作为台址。这里是地球上气候最干燥的地区之一，海拔高，非常适合毫米波天文观测。
-
-![](/images/img2/ALMA.jpg)
-
-66座ALMA天线可用不同的配置法排成阵列，天线间的距离变化多样，最短可以是150米，最长可以到16公里。
-
-图中貌似还乱入了红警的基地车。没错，所有的天线都是可移动的。
-
-![](/images/img2/ALMA_2.jpg)
-
-这是基地车的正面图。
-
-https://mp.weixin.qq.com/s/NIMcgoXzTeAAumODJfEH_A
-
-在地球上，哪里能看到最澄澈的星空？（冰穹A）

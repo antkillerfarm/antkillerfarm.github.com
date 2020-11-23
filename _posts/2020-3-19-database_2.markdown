@@ -11,6 +11,22 @@ category: technology
 
 ## 参考（续）
 
+https://mp.weixin.qq.com/s/09BlPee0-kP-At2aDyDbMw
+
+中国数据库40年历史：隐秘的江湖与恩怨
+
+https://mp.weixin.qq.com/s/4lZ7My6cs4-VJQ1qGhQxZg
+
+AliSQL X-Cluste：基于X-Paxos的高性能强一致MySQL数据库
+
+https://mp.weixin.qq.com/s/tPzBlQGxGq1WEnXz5ggpxg
+
+sysbench在美团点评中的应用
+
+https://mp.weixin.qq.com/s/lJfIkLQaZnN4e9DxX163SA
+
+一款可能解放DBA的分布式数据库RadonDB的体验之旅
+
 http://mp.weixin.qq.com/s/idz6b2rls97W4Iw6J-ubng
 
 美团点评SQL优化工具SQLAdvisor开源
@@ -344,3 +360,43 @@ ActiveMQ 是Apache出品，最流行的，能力强劲的开源消息总线。
 http://blog.csdn.net/jiuqiyuliang/article/details/46701559
 
 深入浅出JMS(一)--JMS基本概念
+
+# 世说新语+++++++
+
+## 2020.11（续）
+
+大部分新娘在婚礼当天要换好几套婚纱：新郎来接亲时的出门纱、迎宾的齐地礼服、拍摄外景的轻便婚纱、婚礼仪式时的主纱以及敬酒穿的礼服，还有中式秀禾礼服。
+
+----
+
+https://zhuanlan.zhihu.com/p/277437564
+
+日本是如何给东北人洗脑的？
+
+----
+
+1950年春，文强被送到北京的功德林“战犯管理处”，在狱中，他拒写悔过书。他说：“我曾任红一师师长兼政委，毛泽东是我表哥，朱德是我上级，周恩来是我老师和入党介绍人，林彪是我部下，刘少奇家离我家不到20里路。是他们没有把我教好，要写悔过书应该他们写，我不写。”
+
+----
+
+8：30 无知的走秀商人正在走向他的灭亡
+
+9：30 肮脏的男权主义沙龙分子即将丢掉德州
+
+10：30 川普似乎拿下了佛罗里达
+
+11：30 特朗普先生在俄亥俄和北卡大获全胜
+
+12：30 尊贵的斗士在宾州和五大湖区所向披靡
+
+13：30 伟大的神皇即将降临他忠诚的白宫
+
+15：30 正直的爱国者在摇摆州遇到了不值一提的抵抗
+
+17：30 唐纳德先生不幸失去了威斯康星
+
+19：30 懂王似乎要丢掉所有的摇摆州
+
+21：30 龌龊的漂白剂服用者正在被推下神坛
+
+23：30 令人作呕的种族主义者将被抛进历史的垃圾堆

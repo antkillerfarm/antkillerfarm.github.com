@@ -331,36 +331,22 @@ https://mp.weixin.qq.com/s/g-OPU4vp66HWcpqjdD2bBg
 
 使用PyTorch从理论到实践理解变分自编码器VAE
 
-# 模型压缩与加速进阶+++
+# 世说新语++++++
 
-https://mp.weixin.qq.com/s/DLNyb-GtzmSYuXcn6VQz4Q
+## 2020.11（续）
 
-高效轻量级深度模型的研究和实践
+美军的驻军司令颁布的《妇女命令》，规定对凡是用“语言、姿势或者行为”侮辱北军士兵的当地妇女，一律按当地从事“娱乐业”的妇女对待，这样变相为士兵随意强奸，开了后门的恶行。
 
-https://mp.weixin.qq.com/s/3SWtxtV9b0dFpvqfTNlqIg
+1876年，格兰特治下的美国政府，实在是腐败不堪，贪污横行，丑闻频发，这给了南方的民主党人以希望，让他们看到了政治翻身的机会，因此在选举中，他们推出了时任纽约州长，出生在北方的塞缪尔·J·蒂尔登，作为民主党的候选人，冲击总统宝座。
 
-Slimmable Neural Networks
+由于时任共和党总统格兰特的名声实在太臭，拖累了共和党的总统候选人拉瑟福德·伯查德·海斯，所以在大选中，代表民主党的蒂尔登，获得了184票，而代表共和党的海斯，仅获得了165票，虽然还有四个州没开票，但是如果真的开完的话，毫无疑问是共和党大败。
 
-https://mp.weixin.qq.com/s/lc7IoOV6S2Uz5xi7cPQUqg
+这个情况震惊了共和党上层，由于当时南方还是处于北方的军事管制之中，或者按照官方的说法，称为军事重建之中，这让北方的所有利益阶层都担心，一个代表南方人的民主党总统，很有可能，会偷走北方在南北战争中获得的利益，所以不能再按游戏规则玩了。
 
-基于元学习和AutoML的模型压缩新方法
+于是格兰特总统当即下令，剩下的四个州立刻停止计票。。。
 
-https://zhuanlan.zhihu.com/p/64400678
+南方一下子群情激愤，大家都乱哄哄的叫嚷着，要重新拿起武器，再打一仗。大家私下里讨价还价了半天，最后达成了一个协议，民主党认栽，但是共和党的总统海斯只能做一届，而且必须把北方的军队从南方撤走，让南方恢复自治，这就是著名的1877年妥协。
 
-轻量卷积神经网络的设计
+https://mp.weixin.qq.com/s/v0RXwimDElmNp1QrZqY6_Q
 
-https://mp.weixin.qq.com/s/pJk84bNzRn7LZZfQfSjs5A
-
-VarGFaceNet：地平线提出轻量级、有效可变组卷积的人脸识别网络
-
-https://mp.weixin.qq.com/s/cYimAphdyFO_XqKfT2Hbeg
-
-如何使用强化学习进行模型剪枝
-
-https://mp.weixin.qq.com/s/SgELZgoHzIvbg2-jzJw6Tw
-
-港科大、清华与旷视提出基于元学习的自动化神经网络通道剪枝网络
-
-https://mp.weixin.qq.com/s/q5-91AAKwBiYzTMmqadEcg
-
-RefineDetLite：腾讯提出轻量级高精度目标检测网络
+依法依规叫停计票的川普，为什么无人理睬呢？

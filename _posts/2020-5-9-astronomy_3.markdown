@@ -173,6 +173,66 @@ https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
 
 # 天文杂谈+
 
+https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
+
+生的伟大，死的光荣——致敬卡西尼号土星探测器
+
+https://mp.weixin.qq.com/s/sg24WvUClEZnLxhJio0BuQ
+
+被磨难环绕的“伽利略号”的一生
+
+https://mp.weixin.qq.com/s/ros-kBOIgTgQF2SaGc99qQ
+
+哈佛名镜的前世今生
+
+https://mp.weixin.qq.com/s/aY4gFbK_aKWcgwvr0Rk5gQ
+
+“波多黎各，波多黎各，世界最大射电望远镜，倒闭了”——让我们阻止这成为事实
+
+https://mp.weixin.qq.com/s/DKMs8sZtE_JzWaxr8o-DWA
+
+你好，冥王星
+
+https://mp.weixin.qq.com/s/sv6McqKzoqJ3snUeDvFfwg
+
+这地儿跟中国一个时区，你却从来没听说过？这个blog介绍了西澳大学和它的天文学成就。
+
+https://mp.weixin.qq.com/s/EZWl8UwhiAkIXWkWE0abUQ
+
+半个世纪的角逐：二战后的国际脉冲星搜寻竞赛
+
+https://mp.weixin.qq.com/s/tmSL5NIyjBpivtbGpbdKqQ
+
+威廉·赫歇尔：我一个德国音乐家，怎么就跑到英国当了天文学家？
+
+https://mp.weixin.qq.com/s/R2Hco-nE-e0S_gmTSImrAA
+
+它曾“超长待机”俯瞰地球，最终在“回家”路上粉身碎骨
+
+![](/images/img2/FYWX.jpg)
+
+https://mp.weixin.qq.com/s/yD3THPdd1rvx3oqBF1tayQ
+
+那个提出“戴森球”的物理学家去世了（Freeman Dyson）
+
+https://mp.weixin.qq.com/s/3dByllGuY9fsvUjoy7fPwg
+
+戴森传奇
+
+https://mp.weixin.qq.com/s/5NyYCE1vt99i2O_r-ThAGA
+
+下一次去哪？金星、木卫一，还是海卫一？
+
+https://mp.weixin.qq.com/s/6acgwIaDYC3VjMmdVSYYKQ
+
+未来的望远镜，能带我们看到宇宙大爆炸的边缘吗？（卡塞格林望远镜）
+
+![](/images/img3/eclipse.png)
+
+https://mp.weixin.qq.com/s/UDHAT3vLMS_yo4w0wbcpJQ
+
+十问北斗
+
 https://zhuanlan.zhihu.com/p/29213504
 
 从沙漏和星盘到六分仪和航海钟——恼人的航海定位
@@ -212,3 +272,17 @@ https://mp.weixin.qq.com/s/yCmwX5srpmhYrbAkFbC-gQ
 https://mp.weixin.qq.com/s/Qld7bVs9ASJ23vAhE0h7_w
 
 日月星辰如何指引着中国人前行？（中国古代天文学）
+
+# 两弹一星
+
+https://zhuanlan.zhihu.com/p/307526876
+
+82年了，中国人即将打通这条血泪之路！（滇缅铁路）
+
+https://zhuanlan.zhihu.com/p/272562189
+
+耗时8年才修通，这条536公里的公路为何这样难修？（刚果（布）一号公路）
+
+https://zhuanlan.zhihu.com/p/77853212
+
+火车通过仅需7分钟的大柱山隧道，为什么修通它却要用13年？

@@ -9,6 +9,26 @@ category: Nature
 
 # 黑洞成像（续）
 
+## ALMA
+
+Atacama Large Millimeter/submillimeter Array是EHT计划的主力天文台。由欧洲南方天文台(European Southern Observatory, ESO)和美国国家射电天文台（National Radio Astronomy Observatory, NRAO）共同负责。
+
+1962年10月5日，德国、法国、比利时、荷兰、瑞典五国在巴黎签署了一份协议，决定共同在南半球建立天文台，并命名为欧洲南方天文台。1960年代中期，ESO考察了智利北部的阿塔卡玛沙漠，最终选定这里作为台址。这里是地球上气候最干燥的地区之一，海拔高，非常适合毫米波天文观测。
+
+![](/images/img2/ALMA.jpg)
+
+66座ALMA天线可用不同的配置法排成阵列，天线间的距离变化多样，最短可以是150米，最长可以到16公里。
+
+图中貌似还乱入了红警的基地车。没错，所有的天线都是可移动的。
+
+![](/images/img2/ALMA_2.jpg)
+
+这是基地车的正面图。
+
+https://mp.weixin.qq.com/s/NIMcgoXzTeAAumODJfEH_A
+
+在地球上，哪里能看到最澄澈的星空？（冰穹A）
+
 ## Katie Bouman
 
 ![](/images/img2/Katie_Bouman.jpg)
@@ -138,68 +158,6 @@ https://www.zhihu.com/question/405115980
 https://mp.weixin.qq.com/s/0zlHeZsr_gVNoaufr_--Hw
 
 给飞过头顶的星星起个响当当的名字
-
-----
-
-https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
-
-生的伟大，死的光荣——致敬卡西尼号土星探测器
-
-https://mp.weixin.qq.com/s/sg24WvUClEZnLxhJio0BuQ
-
-被磨难环绕的“伽利略号”的一生
-
-https://mp.weixin.qq.com/s/ros-kBOIgTgQF2SaGc99qQ
-
-哈佛名镜的前世今生
-
-https://mp.weixin.qq.com/s/aY4gFbK_aKWcgwvr0Rk5gQ
-
-“波多黎各，波多黎各，世界最大射电望远镜，倒闭了”——让我们阻止这成为事实
-
-https://mp.weixin.qq.com/s/DKMs8sZtE_JzWaxr8o-DWA
-
-你好，冥王星
-
-https://mp.weixin.qq.com/s/sv6McqKzoqJ3snUeDvFfwg
-
-这地儿跟中国一个时区，你却从来没听说过？这个blog介绍了西澳大学和它的天文学成就。
-
-https://mp.weixin.qq.com/s/EZWl8UwhiAkIXWkWE0abUQ
-
-半个世纪的角逐：二战后的国际脉冲星搜寻竞赛
-
-https://mp.weixin.qq.com/s/tmSL5NIyjBpivtbGpbdKqQ
-
-威廉·赫歇尔：我一个德国音乐家，怎么就跑到英国当了天文学家？
-
-https://mp.weixin.qq.com/s/R2Hco-nE-e0S_gmTSImrAA
-
-它曾“超长待机”俯瞰地球，最终在“回家”路上粉身碎骨
-
-![](/images/img2/FYWX.jpg)
-
-https://mp.weixin.qq.com/s/yD3THPdd1rvx3oqBF1tayQ
-
-那个提出“戴森球”的物理学家去世了（Freeman Dyson）
-
-https://mp.weixin.qq.com/s/3dByllGuY9fsvUjoy7fPwg
-
-戴森传奇
-
-https://mp.weixin.qq.com/s/5NyYCE1vt99i2O_r-ThAGA
-
-下一次去哪？金星、木卫一，还是海卫一？
-
-https://mp.weixin.qq.com/s/6acgwIaDYC3VjMmdVSYYKQ
-
-未来的望远镜，能带我们看到宇宙大爆炸的边缘吗？（卡塞格林望远镜）
-
-![](/images/img3/eclipse.png)
-
-https://mp.weixin.qq.com/s/UDHAT3vLMS_yo4w0wbcpJQ
-
-十问北斗
 
 # SpaceX
 
