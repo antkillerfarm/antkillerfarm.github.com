@@ -56,6 +56,10 @@ https://mp.weixin.qq.com/s/DCYusE1lwvm14qpsnPYMpw
 
 初始化：你真的了解我吗？
 
+https://zhuanlan.zhihu.com/p/305055975
+
+kaiming初始化的推导
+
 ## BP算法的缺点
 
 虽然传统的BP算法，理论上可以支持任意深度的神经网络。然而实际使用中，却很少能支持3层以上的神经网络。

@@ -360,3 +360,7 @@ Ring All-reduce: 分布式深度学习的巧妙同步
 https://zhuanlan.zhihu.com/p/28226956
 
 浮点峰值那些事儿
+
+https://zhuanlan.zhihu.com/p/285994980
+
+针对深度学习的GPU共享

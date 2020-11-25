@@ -39,6 +39,10 @@ https://mp.weixin.qq.com/s/-BblgnvPLuqpYM8PZ7PQCQ
 
 三行代码实时追踪你的手，只要有浏览器就够了
 
+https://mp.weixin.qq.com/s/C7QdVathJ8YTXF-zXPC-Ow
+
+有人分析了7个基于JS语言的DL框架，发现还有很长的路要走
+
 ## Eager Execution
 
 TensorFlow的Eager Execution可立即评估操作，无需构建图：操作会返回具体的值，而不是构建以后再运行的计算图。这也就是所谓的动态图计算的概念。

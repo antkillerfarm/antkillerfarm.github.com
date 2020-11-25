@@ -396,3 +396,7 @@ https://mp.weixin.qq.com/s/2NrPolWxV-L-dFUXgGOd9w
 https://mp.weixin.qq.com/s/iqCMA7E_vtdymVxxz7bpRA
 
 生成对抗网络（GAN）的数学原理全解
+
+https://mp.weixin.qq.com/s/D0gLR6YU3rYTbFqSCwyi9Q
+
+Semi-Supervised GAN

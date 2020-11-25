@@ -378,3 +378,7 @@ https://mp.weixin.qq.com/s/NkRemHPRnEcEwbs5b-Mz9w
 https://mp.weixin.qq.com/s/DDg4HTp-APwEIul1ZaFFPQ
 
 最新《贝叶斯推断》教程，125页ppt与视频，DeepMind Shakir Mohamed博士
+
+https://zhuanlan.zhihu.com/p/283633149
+
+Bayesian Deep Learning最新研究总结

@@ -235,6 +235,10 @@ https://mp.weixin.qq.com/s/PD2YnFb6yleDEMhz3ahFSQ
 
 计算机视觉"新"范式: Transformer
 
+https://mp.weixin.qq.com/s/wAy3VsOIHxR948eOuXghmA
+
+使用Transformers创建计算机视觉模型
+
 # Attention进阶
 
 https://zhuanlan.zhihu.com/p/40920384

@@ -41,6 +41,10 @@ https://mp.weixin.qq.com/s/PqDkdxqvUvSKvTklVojOyA
 
 CPNDet：简单地给CenterNet加入two-stage，更快更强
 
+https://mp.weixin.qq.com/s/7mHhltqDcnYZdHWoRS_EBg
+
+YOLO之外的另一选择，手机端97FPS的Anchor-Free目标检测模型NanoDet现已开源
+
 # 其它目标检测网络
 
 ## A-Fast-RCNN

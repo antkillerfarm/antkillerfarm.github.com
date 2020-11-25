@@ -193,10 +193,6 @@ https://www.zhihu.com/question/54009933
 
 空间站是怎么取暖？或者说是维持温度的呢？
 
-https://www.zhihu.com/question/329267129
-
-中国空间站和国际空间站的区别在哪？
-
 ----
 
 ![](/images/img2/Elon_Musk.jpg)

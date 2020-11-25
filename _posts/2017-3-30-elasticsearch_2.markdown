@@ -377,3 +377,7 @@ https://mp.weixin.qq.com/s/46u-qyk00yZM_bIah-zs-A
 https://mp.weixin.qq.com/s/059DK6v1j5yi9OlqdbI7Cg
 
 从面试角度一文学完Kafka
+
+https://mp.weixin.qq.com/s/T6gCc8OBgyV-yeAg_MUzPQ
+
+简单理解Kafka的消息可靠性策略

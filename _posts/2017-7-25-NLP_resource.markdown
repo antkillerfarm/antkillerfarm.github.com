@@ -281,6 +281,10 @@ https://mp.weixin.qq.com/s/0NPHChBuF79ZegITOw8euw
 
 中文分词的古今中外，你想知道的都在这里
 
+https://mp.weixin.qq.com/s/a4Mmw7WNKsrkgWca8QhaYQ
+
+分词，就这？
+
 ## 机器翻译
 
 https://mp.weixin.qq.com/s/sREYZGiK2OmuETrPdeJptA

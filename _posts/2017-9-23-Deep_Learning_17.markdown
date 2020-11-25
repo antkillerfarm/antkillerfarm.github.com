@@ -243,6 +243,10 @@ https://mp.weixin.qq.com/s/2Wm6eQodwlc5XkjGKqhwCg
 
 南京大学周志华教授综述论文：弱监督学习
 
+https://mp.weixin.qq.com/s/_3DqXBpZhstVv6BkBR4oag
+
+自监督学习综述
+
 https://mp.weixin.qq.com/s/aCWAU2RXk9fTzfFqOyjqUw
 
 能自主学习的人工突触，为无监督学习开辟新的路径

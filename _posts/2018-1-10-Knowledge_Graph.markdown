@@ -424,3 +424,7 @@ https://mp.weixin.qq.com/s/DALB8eBgVWHhFcZoJFLSpg
 https://mp.weixin.qq.com/s/An9mGawI8mhtlqyrVxTzYw
 
 SIGIR 2018基于知识图谱的文本信息检索
+
+https://mp.weixin.qq.com/s/3aINjnNwALEqbBAuLi6pEA
+
+应用知识图谱的推荐方法与系统

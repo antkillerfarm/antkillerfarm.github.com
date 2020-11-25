@@ -231,6 +231,10 @@ https://mp.weixin.qq.com/s/uNXxyPZ5IssZfgFFD-m5dQ
 
 什么是HTTP简史
 
+https://mp.weixin.qq.com/s/A4OYoKFVu2nZCyDJcoFrQA
+
+从HTTP到HTTP/3的发展简史
+
 # 硬件
 
 https://mp.weixin.qq.com/s/ZexnsNmqsD2yq-7YNASohw

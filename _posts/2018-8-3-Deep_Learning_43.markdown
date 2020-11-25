@@ -378,3 +378,7 @@ https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247504381&idx=2&sn=465027
 https://mp.weixin.qq.com/s/3Aq1HXpBzgNdcB130tCKbQ
 
 GAN网络图像翻译机：图像复原、模糊变清晰、素描变彩图
+
+https://mp.weixin.qq.com/s/DTVjncaERBmDfOkvXv_3qg
+
+皱眉细节完美复刻，阿尔伯塔大学团队标星1.7K的项目生成超逼真的肖像画

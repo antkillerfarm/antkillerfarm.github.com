@@ -392,3 +392,7 @@ https://mp.weixin.qq.com/s/eEQhwV1cA4nEgEBcOKDenA
 https://mp.weixin.qq.com/s/cO1VlYGwdRBAbPs7IgvcAA
 
 超越传统强化学习的价值分布方法
+
+https://mp.weixin.qq.com/s/s7c0oleKCmdI2Kh9pDPsXw
+
+强化学习需要批归一化(Batch Norm)吗？

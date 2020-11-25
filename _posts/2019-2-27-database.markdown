@@ -109,6 +109,10 @@ https://mp.weixin.qq.com/s/YSYkvv_74WVDceoJ9XWOjw
 
 关于OLAP数仓，从百万到百亿级数据量实时分析
 
+https://mp.weixin.qq.com/s/IM57guTCRvx7Pz5wDDgOTA
+
+优酷大数据OLAP技术选型
+
 ## SQL
 
 ![](/images/img3/sql_join.png)

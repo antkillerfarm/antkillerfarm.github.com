@@ -410,3 +410,7 @@ https://mp.weixin.qq.com/s/PkoREw_nF-QLHdn7GLDfjw
 https://mp.weixin.qq.com/s/OiN608x2cMF4SCpLEzTkWw
 
 DIEN: 阿里点击率预估之深度兴趣进化网络
+
+https://mp.weixin.qq.com/s/mA9qa5fNQa3VxyYEYqeGfg
+
+Youtube推荐中的深度神经网络应用
