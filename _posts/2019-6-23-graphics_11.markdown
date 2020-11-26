@@ -357,6 +357,26 @@ https://mp.weixin.qq.com/s/FJX9eeRkxS5nJ4XIhRVwkg
 
 ![](/images/img4/Shader.png)
 
+无论是CPU，还是GPU，或者是现在比较火的NPU，一个Processing Unit，一般都是由上图所示的三部分组成：
+
+- Fetch/Decode。数据的输入/输出单元。
+
+- ALU（arithmetic and logic unit）。运算单元。
+
+- Execution Context。寄存器单元。
+
+CPU强调单core的极致性能，因此广泛使用了如下技术：
+
+- Out-of-order control logic
+
+- Fancy branch predictor 
+
+- Memory pre-fetcher
+
+![](/images/img4/GPU.png)
+
+GPU不追求单core
+
 # 世说新语++++++++
 
 ## 2020.11（续）
