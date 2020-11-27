@@ -167,7 +167,9 @@ MTP类似于HTTP之类的应用层通信协议传输，由于不涉及驱动的�
 
 # 文件校验和
 
-计算文件校验和，一般采用MD5和SHA算法。在Ubuntu中，这些算法的命令包括：md5sum、sha1sum(160-bit) ,sha224sum(224-bit) ,sha256sum(256-bit),sha384sum(384-bit),sha512sum(512-bit)等。
+计算文件校验和，一般采用MD5和SHA算法。在Ubuntu中，这些算法的命令包括：md5sum、sha1sum(160-bit)、sha224sum(224-bit)、sha256sum(256-bit)、sha384sum(384-bit)、sha512sum(512-bit)等。
+
+`sha256sum a.data>a.sha256.txt`
 
 参考：
 
