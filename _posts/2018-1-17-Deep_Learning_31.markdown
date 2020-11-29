@@ -296,3 +296,7 @@ https://mp.weixin.qq.com/s/-zQZjHVs7bYyGkGuMUf3qg
 https://mp.weixin.qq.com/s/vAPD7VKQRJ7NCyYL7FIt3A
 
 目标检测中的Label Assignment
+
+https://zhuanlan.zhihu.com/p/310058362
+
+Sparse R-CNN

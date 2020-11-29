@@ -37,6 +37,10 @@ https://zhuanlan.zhihu.com/p/78098982
 
 Hierarchical IL/RL(ICML 2018)
 
+https://zhuanlan.zhihu.com/p/267524544
+
+分层强化学习survey
+
 https://blog.csdn.net/zhkmxx930xperia/article/details/87742722
 
 Integrating Temporal Abstraction and Intrinsic Motivation

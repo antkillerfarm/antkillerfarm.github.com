@@ -388,17 +388,9 @@ https://mp.weixin.qq.com/s/rrbwItXt-1EaGiqtDEGvog
 
 为节约而生：从标准Attention到稀疏Attention
 
-https://mp.weixin.qq.com/s/G4mFW8cn-ho3KGmbw5sSTw
-
-计算机视觉中注意力机制原理及其模型发展和应用
-
 https://mp.weixin.qq.com/s/MzHmvbwxFCaFjmMkjfjeSg
 
 遍地开花的Attention，你真的懂吗？
-
-https://mp.weixin.qq.com/s/7ETHeN2xV_hEwkDxrhJyNg
-
-用Attention玩转CV，一文总览自注意力语义分割进展
 
 https://mp.weixin.qq.com/s/e_LEhLf2Rh-1zkEBmqS4nA
 

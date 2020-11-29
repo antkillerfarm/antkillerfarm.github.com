@@ -276,6 +276,12 @@ Normalized Discounted Cumulative Gain
 
 ----
 
+![](/images/img4/AUC.jpg)
+
+如图，modelA和modelB的ROC曲线下面积AUC是相等的，但是两个模型在不同区域的预测能力是不相同的，所以我们不能单纯根据AUC的大小来判断模型的好坏。
+
+----
+
 参考：
 
 https://mp.weixin.qq.com/s/5nnHBKEToepi3dhXLfQBtw
@@ -325,3 +331,7 @@ https://zhuanlan.zhihu.com/p/161703182
 https://zhuanlan.zhihu.com/p/69101372
 
 分类问题的评估指标一览
+
+https://zhuanlan.zhihu.com/p/92792702
+
+AUC的缺陷

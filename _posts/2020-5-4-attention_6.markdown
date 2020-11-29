@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（六）——Attention进阶
+title:  Attention（六）——Transformer进阶, Attention进阶
 category: Attention 
 ---
 
@@ -8,6 +8,62 @@ category: Attention
 {:toc}
 
 # BERT进阶
+
+https://mp.weixin.qq.com/s/SDVxn3Ra1dKmr-XgKNg5IA
+
+罗玲：From Word Representation to BERT
+
+https://mp.weixin.qq.com/s/-bh8BL4LxnevS8xnW5U9ZA
+
+中科院自动化所提出BIFT模型：面向自然语言生成，同步双向推断
+
+https://mp.weixin.qq.com/s/7yCnAHk6x0ICtEwBKxXpOw
+
+序列到序列自然语言生成任务超越BERT、GPT！微软提出通用预训练模型MASS
+
+https://mp.weixin.qq.com/s/7sIUaSON53hsXUJjq8uVUA
+
+马聪：NLP中的生成式预训练模型
+
+https://mp.weixin.qq.com/s/s1bQFdA6gtoHeeQMJKQ8UQ
+
+Bert时代的创新：Bert应用模式比较及其它
+
+https://mp.weixin.qq.com/s/zqlWx3e4LOJ3_Zy2DEbCjw
+
+从语言模型看Bert的善变与GPT的坚守
+
+https://mp.weixin.qq.com/s/LngE10Hnqe9bgFzpNfUwLQ
+
+NLP中的词向量对比：word2vec/glove/fastText/elmo/GPT/bert
+
+https://mp.weixin.qq.com/s/MgLLPEY3ynJGkuTgnIXndQ
+
+站在BERT肩膀上的NLP新秀们（PART I）
+
+https://mp.weixin.qq.com/s/yPq1cGnhcbaNLOjadj91pw
+
+Bert时代的创新：Bert在NLP各领域的应用进展
+
+https://mp.weixin.qq.com/s/l-de0vfx-L24g58IxK-NKQ
+
+Jeff Dean强推：可视化Bert网络，发掘其中的语言、语法树与几何学
+
+https://mp.weixin.qq.com/s/nlFXfgM5KKZXnPdwd97JYg
+
+哈工大讯飞联合实验室发布基于全词覆盖的中文BERT预训练模型
+
+https://zhuanlan.zhihu.com/p/70389596
+
+一批高质量中文BERT预训练模型请查收（上）
+
+https://mp.weixin.qq.com/s/h1VUSY7_UZF3PmjSN0DMSg
+
+从One-hot, Word embedding到Transformer，一步步教你理解Bert
+
+https://zhuanlan.zhihu.com/p/132554155
+
+超细节的BERT/Transformer知识点
 
 https://mp.weixin.qq.com/s/UJlmjFHWhnlXXJoRv4zkEQ
 
@@ -40,10 +96,6 @@ BERT在推荐系统领域可能会有什么作为？
 https://mp.weixin.qq.com/s/kJhOrz0VaYc-k-6XJS02ag
 
 8篇论文梳理BERT相关模型进展与反思
-
-https://mp.weixin.qq.com/s/-eBL9gFbAGFtmqkLMAoUTw
-
-文本+视觉，多篇Visual/Video BERT论文介绍
 
 https://mp.weixin.qq.com/s/hI9XAiqKaHLq-Z9JkaWA_A
 
@@ -231,13 +283,9 @@ https://mp.weixin.qq.com/s/OEpLpWzkdfFUQf4cKNuG4w
 
 Performer:基于正交随机特征的快速注意力计算
 
-https://mp.weixin.qq.com/s/PD2YnFb6yleDEMhz3ahFSQ
+https://mp.weixin.qq.com/s/eWQLkiJ_XIo7LpTUE9c0qA
 
-计算机视觉"新"范式: Transformer
-
-https://mp.weixin.qq.com/s/wAy3VsOIHxR948eOuXghmA
-
-使用Transformers创建计算机视觉模型
+Transformer中的相对位置编码
 
 # Attention进阶
 
@@ -305,14 +353,6 @@ https://mp.weixin.qq.com/s/V3brXuey7Gear0f_KAdq2A
 
 基于注意力机制的交易上下文感知推荐，悉尼科技大学和电子科技大学最新工作
 
-http://mp.weixin.qq.com/s/Bt6EMD4opHCnRoHKYitsUA
-
-结合人类视觉注意力进行图像分类
-
-https://mp.weixin.qq.com/s/POYTh4Jf7HttxoLhrHZQhw
-
-基于双向注意力机制视觉问答pyTorch实现
-
 https://mp.weixin.qq.com/s/2gxp7A38epQWoy7wK8Nl6A
 
 谷歌翻译最新突破，“关注机制”让机器读懂词与词的联系
@@ -320,10 +360,6 @@ https://mp.weixin.qq.com/s/2gxp7A38epQWoy7wK8Nl6A
 https://zhuanlan.zhihu.com/p/25928551
 
 用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践
-
-http://blog.csdn.net/leo_xu06/article/details/53491400
-
-视觉注意力的循环神经网络模型
 
 https://mp.weixin.qq.com/s/l4HN0_VzaiO-DwtNp9cLVA
 
@@ -361,10 +397,6 @@ https://mp.weixin.qq.com/s/lZOIK5BRXZrmL_Z9crl6sA
 
 机器翻译新突破！“普适注意力”模型：概念简单参数少，性能大增
 
-https://mp.weixin.qq.com/s/JoTzaInn_uAA9oZgMcfskw
-
-计算机视觉技术self-attention最新进展
-
 https://mp.weixin.qq.com/s/jRfOzKO6OlQLokIzipbqUQ
 
 为什么使用自注意力机制？
@@ -381,58 +413,10 @@ https://mp.weixin.qq.com/s/1LYz5SH5rVnPPJ0tZvRQAA
 
 从各种注意力机制窥探深度学习在NLP中的神威
 
-https://zhuanlan.zhihu.com/p/32928645
-
-计算机视觉中的注意力机制
-
-https://zhuanlan.zhihu.com/p/56501461
-
-计算机视觉中的注意力机制
-
 https://zhuanlan.zhihu.com/p/33078323
 
 数字串识别：基于位置的硬性注意力机制
 
-https://zhuanlan.zhihu.com/p/32971586
-
-图像描述：基于项的注意力机制
-
-https://zhuanlan.zhihu.com/p/33158614
-
-图像识别：基于位置的柔性注意力机制
-
-https://mp.weixin.qq.com/s/tVKEJ9rqlMaZ9bx6ngIelw
-
-自注意力机制在计算机视觉中的应用
-
 https://mp.weixin.qq.com/s/-gAISWjSiG6ccPuOPAEg3A
 
 五张动图，看清神经机器翻译里的Attention！
-
-https://mp.weixin.qq.com/s/Qs6tm50YvzHaJv2rh60WMw
-
-撩一发深度文本分类之RNN via Attention
-
-https://mp.weixin.qq.com/s/MMIZGHTKM5FrvNE6ucQRYQ
-
-33页最新《自然语言处理中神经注意力机制综述》论文
-
-https://mp.weixin.qq.com/s/Q0Ft5bWTuiZUIQSTk7X6ZQ
-
-图解神经机器翻译中的注意力机制
-
-https://mp.weixin.qq.com/s/D7GQ8DRzss9ppP6pyAs1qA
-
-从0到1再读注意力机制
-
-https://mp.weixin.qq.com/s/K_VRt0B9-Xw7YJndmb4WZg
-
-Attention！注意力机制模型最新综述
-
-https://mp.weixin.qq.com/s/hzwp5oGspdtDyNBmq8sMsw
-
-HAN：基于双层注意力机制的异质图深度神经网络
-
-https://mp.weixin.qq.com/s/SBrLPZjx2RdBwZpPQQ5DXQ
-
-HAN：异构图注意力网络

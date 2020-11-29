@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（五）——BERT进阶
+title:  Attention（五）——Attention in CV, BERT进阶
 category: Attention 
 ---
 
@@ -92,6 +92,76 @@ https://mp.weixin.qq.com/s/cDQW5992hTaeGoA7zL7Vzg
 Linformer: 线性复杂度的Attention
 
 Self-Attention 加速方法一览：ISSA、CCNet、CGNL、Linformer
+
+# Attention in CV
+
+https://mp.weixin.qq.com/s/PD2YnFb6yleDEMhz3ahFSQ
+
+计算机视觉"新"范式: Transformer
+
+https://mp.weixin.qq.com/s/wAy3VsOIHxR948eOuXghmA
+
+使用Transformers创建计算机视觉模型
+
+https://zhuanlan.zhihu.com/p/288758894
+
+CV注意力机制论文阅读笔记
+
+https://mp.weixin.qq.com/s/M3VRlz8-McbTbp9VcctU0w
+
+如何让BERT拥有视觉感知能力？两种方式将视频信息注入BERT
+
+https://mp.weixin.qq.com/s/-eBL9gFbAGFtmqkLMAoUTw
+
+文本+视觉，多篇Visual/Video BERT论文介绍
+
+http://mp.weixin.qq.com/s/Bt6EMD4opHCnRoHKYitsUA
+
+结合人类视觉注意力进行图像分类
+
+https://mp.weixin.qq.com/s/POYTh4Jf7HttxoLhrHZQhw
+
+基于双向注意力机制视觉问答pyTorch实现
+
+http://blog.csdn.net/leo_xu06/article/details/53491400
+
+视觉注意力的循环神经网络模型
+
+https://mp.weixin.qq.com/s/JoTzaInn_uAA9oZgMcfskw
+
+计算机视觉技术self-attention最新进展
+
+https://zhuanlan.zhihu.com/p/32928645
+
+计算机视觉中的注意力机制
+
+https://zhuanlan.zhihu.com/p/56501461
+
+计算机视觉中的注意力机制
+
+https://zhuanlan.zhihu.com/p/32971586
+
+图像描述：基于项的注意力机制
+
+https://zhuanlan.zhihu.com/p/33158614
+
+图像识别：基于位置的柔性注意力机制
+
+https://mp.weixin.qq.com/s/tVKEJ9rqlMaZ9bx6ngIelw
+
+自注意力机制在计算机视觉中的应用
+
+https://mp.weixin.qq.com/s/Di-TbseiezMBc-MUYoEFHg
+
+CV领域的注意力机制
+
+https://mp.weixin.qq.com/s/7ETHeN2xV_hEwkDxrhJyNg
+
+用Attention玩转CV，一文总览自注意力语义分割进展
+
+https://mp.weixin.qq.com/s/G4mFW8cn-ho3KGmbw5sSTw
+
+计算机视觉中注意力机制原理及其模型发展和应用
 
 # BERT进阶
 
@@ -283,10 +353,6 @@ https://mp.weixin.qq.com/s/ZEWCcxTEuEMvQ5__t3gkBg
 
 BERT技术体系综述论文：40项分析探究BERT如何work
 
-https://mp.weixin.qq.com/s/M3VRlz8-McbTbp9VcctU0w
-
-如何让BERT拥有视觉感知能力？两种方式将视频信息注入BERT
-
 https://mp.weixin.qq.com/s/OsfeAA_tbzAddh1eunwx2w
 
 关于BERT，面试官们都怎么问
@@ -342,59 +408,3 @@ BERT模型的标准调优和花式调优
 https://mp.weixin.qq.com/s/FwmEIZ3ugeZBbLIGHmH-_g
 
 BERT之后，GLUE基准升级为SuperGLUE：难度更大
-
-https://mp.weixin.qq.com/s/SDVxn3Ra1dKmr-XgKNg5IA
-
-罗玲：From Word Representation to BERT
-
-https://mp.weixin.qq.com/s/-bh8BL4LxnevS8xnW5U9ZA
-
-中科院自动化所提出BIFT模型：面向自然语言生成，同步双向推断
-
-https://mp.weixin.qq.com/s/7yCnAHk6x0ICtEwBKxXpOw
-
-序列到序列自然语言生成任务超越BERT、GPT！微软提出通用预训练模型MASS
-
-https://mp.weixin.qq.com/s/7sIUaSON53hsXUJjq8uVUA
-
-马聪：NLP中的生成式预训练模型
-
-https://mp.weixin.qq.com/s/s1bQFdA6gtoHeeQMJKQ8UQ
-
-Bert时代的创新：Bert应用模式比较及其它
-
-https://mp.weixin.qq.com/s/zqlWx3e4LOJ3_Zy2DEbCjw
-
-从语言模型看Bert的善变与GPT的坚守
-
-https://mp.weixin.qq.com/s/LngE10Hnqe9bgFzpNfUwLQ
-
-NLP中的词向量对比：word2vec/glove/fastText/elmo/GPT/bert
-
-https://mp.weixin.qq.com/s/MgLLPEY3ynJGkuTgnIXndQ
-
-站在BERT肩膀上的NLP新秀们（PART I）
-
-https://mp.weixin.qq.com/s/yPq1cGnhcbaNLOjadj91pw
-
-Bert时代的创新：Bert在NLP各领域的应用进展
-
-https://mp.weixin.qq.com/s/l-de0vfx-L24g58IxK-NKQ
-
-Jeff Dean强推：可视化Bert网络，发掘其中的语言、语法树与几何学
-
-https://mp.weixin.qq.com/s/nlFXfgM5KKZXnPdwd97JYg
-
-哈工大讯飞联合实验室发布基于全词覆盖的中文BERT预训练模型
-
-https://zhuanlan.zhihu.com/p/70389596
-
-一批高质量中文BERT预训练模型请查收（上）
-
-https://mp.weixin.qq.com/s/h1VUSY7_UZF3PmjSN0DMSg
-
-从One-hot, Word embedding到Transformer，一步步教你理解Bert
-
-https://zhuanlan.zhihu.com/p/132554155
-
-超细节的BERT/Transformer知识点
