@@ -345,7 +345,7 @@ https://mp.weixin.qq.com/s/bz7rCy0YyF1HrrHrWt9Mpw
 
 聊聊Python操作PDF的几种方法
 
-## excel
+## word & excel
 
 https://mp.weixin.qq.com/s/lEtE3ejBLzmm9_eo-_8NBg
 
@@ -378,6 +378,10 @@ Python操作Excel之一
 https://mp.weixin.qq.com/s/NiDZfQCblcfw4XnPzBYIaQ
 
 Python操作Excel之二
+
+https://mp.weixin.qq.com/s/m5mrlx3V3bBblqHdBZKa6w
+
+Python操作Word
 
 ## python执行shell脚本
 

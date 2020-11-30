@@ -139,19 +139,47 @@ configure脚本会询问使用什么版本的gcc，填`/usr/bin/gcc-4.9`即可�
 
 此外，Bazel的版本也要和其他部件一致。
 
-这里给出本人试验成功的一组配置：
+具体的要求参见：
 
-| Tensorflow | CUDA | CUDNN | gcc | bazel |
-|:--:|:--:|:--:|:--:|:--:|
-| 1.3.1 | 8.0 | 5.1.5 | 4.9 | 0.5.4 |
+https://www.tensorflow.org/install/source
 
-cudnn官网的链接目前已无法下载。但其实只是换了个地址而已：
+----
 
-https://developer.nvidia.com/rdp/cudnn-download
-
-**2018.11更新**
+2018.11
 
 GPU编译已经没有太大意义了，只需`pip install tensorflow-gpu`即可。但需要注意的是，TF版本需要匹配对应的CUDA版本，否则安装过程不会有错误，但是运行时就会出问题。
+
+----
+
+2020.11
+
+现在TF的GPU版本已经比较完善了，但是相应的Nvidia依赖的安装，仍然比较麻烦。
+
+这里的Nvidia依赖，包括三个层面：
+
+- Nvidia driver
+
+https://www.nvidia.com/download/index.aspx
+
+- CUDA
+
+https://developer.nvidia.com/cuda-toolkit-archive
+
+CUDA自带了特定版本的Driver，但是和driver版本并无对应关系，不使用自带的driver也是完全可以的。
+
+- cuDNN
+
+https://developer.nvidia.com/rdp/cudnn-archive
+
+这个需要注册Nvidia账号才能下载。。。囧
+
+本来Ubuntu 20.04已经自带了相应的软件仓库：
+
+`sudo apt install nvidia-driver-440 nvidia-driver-440 nvidia-utils-440`
+
+然而坑爹的是，TF不支持CUDA的最新版本。。。所以还是只有去官网下载老版本了。相比之下Pytorch就支持的及时多了。
+
+----
 
 参考：
 
@@ -178,6 +206,10 @@ https://mp.weixin.qq.com/s/bxJ7VCI_120psBti-j376w
 https://zhuanlan.zhihu.com/p/81724891
 
 配置ubuntu18.04+cuda9.0+cudnn服务器tensorflow-gpu深度学习环境
+
+https://blog.csdn.net/qq_43202953/article/details/107951031
+
+Ubuntu 20.04安装cuda和cudnn
 
 ## 基本概念
 

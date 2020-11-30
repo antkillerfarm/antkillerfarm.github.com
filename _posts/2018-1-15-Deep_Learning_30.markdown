@@ -436,3 +436,7 @@ GraphSAGE+FM+Transformer强强联手：评微信的GraphTR模型
 https://mp.weixin.qq.com/s/0lNeSjpm4lbu_8mopWJ2oA
 
 图表示学习中的Encoder-Decoder框架
+
+https://mp.weixin.qq.com/s/Ul9BIrJxjlzJwGqRv6E7eg
+
+10分钟了解图嵌入

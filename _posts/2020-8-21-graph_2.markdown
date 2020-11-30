@@ -270,3 +270,7 @@ https://mp.weixin.qq.com/s/SgELZgoHzIvbg2-jzJw6Tw
 https://mp.weixin.qq.com/s/q5-91AAKwBiYzTMmqadEcg
 
 RefineDetLite：腾讯提出轻量级高精度目标检测网络
+
+https://mp.weixin.qq.com/s/Vh5Y9Ru_hbN0CzM7_xGg6A
+
+MicroNet通过极低FLOPs实现图像识别

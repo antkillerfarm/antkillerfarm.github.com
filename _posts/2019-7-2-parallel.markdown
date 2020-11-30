@@ -364,3 +364,7 @@ https://zhuanlan.zhihu.com/p/28226956
 https://zhuanlan.zhihu.com/p/285994980
 
 针对深度学习的GPU共享
+
+https://mp.weixin.qq.com/s/Np4w7RC2JFlB7ZGIduu71w
+
+爱奇艺机器学习平台的建设实践

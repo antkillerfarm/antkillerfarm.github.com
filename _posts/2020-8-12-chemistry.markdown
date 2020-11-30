@@ -167,6 +167,47 @@ https://mp.weixin.qq.com/s/cUuw9CflfLrxXuSmNbra_A
 
 中学的元素周期表还藏着4000多种……（同位素）
 
+## 食品工业
+
+
+![](/images/img3/Mulberry_Dyke_Fish_Pond.png)
+
+https://mp.weixin.qq.com/s/1jYvcT5-XZuwYxBBRPufjA
+
+中国是怎么生产这么多粮食，足够养活十多亿人的？是靠进口还是自给自足？
+
+----
+
+美国有800多家肉类加工厂，但通过历年来对食品生产链的各个环节的整合，只有四家公司主宰着整个行业，它们是美国最大的四家肉类加工厂，即JBS、史密斯菲尔德、泰森和桑德森饲养场公司。
+
+----
+
+https://www.zhihu.com/answer/370657574
+
+军事里说的马润指什么？
+
+http://bbs.tianya.cn/post-no05-401394-372.shtml
+
+"灵肉"传奇：斯帕姆午餐肉
+
+http://war.163.com/15/0108/09/AFE8A8LU00014J0G.html
+
+二战美军面临两大敌人：淋病、午餐肉
+
+http://www.sohu.com/a/64190509_139533
+
+曾经象征食品工业繁荣的罐头，为何已经远离了你的生活
+
+----
+
+https://mp.weixin.qq.com/s/GHgfNAkV7ttXfasGkM083A
+
+用算法改造过的植物肉，有兴趣试试么？
+
+https://www.zhihu.com/question/21171331
+
+火腿肠里真的有肉吗？
+
 ## 化学工业
 
 https://wallstreetcn.com/articles/250536

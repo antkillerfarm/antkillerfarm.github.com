@@ -125,6 +125,18 @@ https://blog.csdn.net/u013010889/article/details/90295078
 
 int8量化和tvm实现
 
+## Trainning Quantization
+
+除了上面这些无条件Quantization之外，训练中的Quantization也是一大类算法。
+
+比如下面提到的PACT量化，不仅对weight进行量化，还通过不断训练，限制每一层tensor的数值范围。
+
+参考：
+
+https://mp.weixin.qq.com/s/7rMnzbvp1hjDLuw_oifbng
+
+我们是这样改进PACT量化算法的
+
 ## 量化技巧
 
 1.设计模型时，需要对输入进行归一化，缩小输入值的值域范围，以减小量化带来的精度损失。
