@@ -81,6 +81,8 @@ http://pypi.douban.com/simple/
 
 `pip install xxx.whl`
 
+pip安装缓存目录:`~/.cache/pip`
+
 指定版本：
 
 `pip install -v pycrypto==2.3`

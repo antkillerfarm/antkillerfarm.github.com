@@ -303,6 +303,10 @@ https://mp.weixin.qq.com/s/cR3k5-looApwD01ZzgixSw
 
 关于Fourier和Laplace
 
+https://zhuanlan.zhihu.com/p/311886981
+
+微分方程VS机器学习，实例讲解二者异同
+
 # 随机变量的特征函数
 
 特征函数（Characteristic function）是描述随机变量概率分布的重要工具，其定义如下。
