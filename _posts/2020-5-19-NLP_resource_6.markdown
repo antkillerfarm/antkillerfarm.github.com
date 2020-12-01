@@ -391,16 +391,6 @@ https://mp.weixin.qq.com/s/ZxYoz55dctX48OzjG9O5Yg
 
 ----
 
-2月25日，蒋公在济南对各高级将领发表谈话，对成为共军“运输大队长”一事，沉痛地说到：
-
-昨天夏总司令说匪军现在吃我们的饭，穿我们的衣，来打我们的军队，这实在是事实。
-
-https://mp.weixin.qq.com/s/q6pHa-owowbRB3UYBmDj0w
-
-精锐美械频送共，蒋介石上线微操拒当“运输大队长”
-
-----
-
 https://mp.weixin.qq.com/s/duqvHrh-iaA381xsnudNAA
 
 天津大学硕士举报其导师学术不端，123页材料称十年造假80篇论文！
