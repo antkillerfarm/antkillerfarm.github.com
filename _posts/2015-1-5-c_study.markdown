@@ -380,3 +380,7 @@ cout<<hex<<i<<endl; //输出十六进制数
 cout<<oct<<i<<endl; //输出八进制数
 cout<<dec<<i<<endl; //输出十进制数
 ```
+
+# uint8_t
+
+对于要求严格位宽的场合，应用程序可以使用uint8_t，uint16_t，uint32_t来获得移植时的一致性。它的头文件是inttypes.h。

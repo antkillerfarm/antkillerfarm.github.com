@@ -246,6 +246,12 @@ ps默认只显示当前用户的进程。这里是全显示的示例。
 
 挂载NFS。挂载点（即上例中的/mnt/nfs）必须事先创建。
 
+`mount: /bak: bad option; for several filesystems (e.g. nfs, cifs) you might need a /sbin/mount.<type> helper program`
+
+出现上面的问题，需要：
+
+`sudo apt install nfs-common libnfs-utils`
+
 `pgrep -u hchen`
 
 按照条件搜索进程ID。
@@ -269,6 +275,20 @@ bash只支持整数四则运算，浮点数和复杂运算就靠`bc`了。
 `lsof | grep TCP`
 
 列出打开的文件。
+
+`sudo adduser tt`
+
+创建新用户、用户的主目录以及密码。
+
+`sudo useradd tt`
+
+只创建新用户。
+
+类似的还有`sudo derlser -r tt`和`sudo userdel tt`。
+
+`chage -d 0 username`
+
+强制密码过期。
 
 # GnuGo
 
@@ -464,22 +484,4 @@ https://github.com/oracle/opengrok
 
 http://mazhuang.org/2016/12/14/rtfsc-with-opengrok/
 
-搭建大型源码阅读环境——使用 OpenGrok
-
-# Linux参考资源
-
-https://mp.weixin.qq.com/s/QB-IHiCIWEu3bALm2Dp46Q
-
-操作系统课程知识结构
-
-https://www.zhihu.com/answer/460715569
-
-生产力应用大汇总
-
-https://mp.weixin.qq.com/s/QsgoONKwI7ds8Hnx2Wer6A
-
-Linux从程序到进程
-
-https://mp.weixin.qq.com/s/tguC-WOleKRWLfTmGdJlQg
-
-Linux文件系统的实现
+搭建大型源码阅读环境——使用OpenGrok

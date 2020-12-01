@@ -271,6 +271,18 @@ https://zhuanlan.zhihu.com/mathNote
 
 某牛的专栏，主要讲自制AlphaGo
 
+http://xtf615.com/2018/02/10/AlphaGo/
+
+Alpha Go论文解析
+
+http://xtf615.com/2018/02/12/AlphaGo-Zero/
+
+AlphaGo Zero论文解析
+
+http://xtf615.com/2018/02/24/AlphaZeroDesign/
+
+AlphaZero问题研究和算法设计与实现
+
 https://mp.weixin.qq.com/s/DC9QqHdWT0xFnowEBuJDbw
 
 自动化所解读“深度强化学习”：从AlphaGo到AlphaGoZero

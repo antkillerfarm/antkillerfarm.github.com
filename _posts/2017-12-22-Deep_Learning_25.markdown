@@ -19,11 +19,17 @@ CS 330: Deep Multi-Task and Meta Learning
 
 《Multi-Task Learning for Dense Prediction Tasks: A Survey》
 
+《Progressive Layered Extraction (PLE): A Novel Multi-Task Learning (MTL) Model for Personalized Recommendations》
+
 ## 概述
 
 ![](/images/img4/MTL.png)
 
 ![](/images/img4/MTL_2.png)
+
+![](/images/img4/Single_MTL.png)
+
+![](/images/img4/Multi_MTL.png)
 
 ## 参考
 
@@ -432,15 +438,3 @@ https://mp.weixin.qq.com/s/D435jGsGPkCH5j-p8Zoksg
 https://mp.weixin.qq.com/s/BV3xv8mH6K7dV1nik0X5aw
 
 PFLD：简单、快速、超高精度人脸特征点检测算法
-
-https://mp.weixin.qq.com/s/kWRW81aAMl18GIDQWqX1Ow
-
-PFLD：简单高效的实用人脸关键点检测算法
-
-https://mp.weixin.qq.com/s/HpgcPkAZb9R5jF-zsGcfcw
-
-美图影像实验室（MTlab）10000点人脸关键点技术全解读
-
-https://mp.weixin.qq.com/s/YsuvIB56OxS9IBMQYSUdUg
-
-深度学习AI美颜系列——人像静态/动态贴纸特效算法实现

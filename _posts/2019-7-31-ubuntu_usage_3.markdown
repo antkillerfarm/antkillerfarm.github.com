@@ -212,6 +212,22 @@ https://www.cnblogs.com/schips/p/10141278.html
 
 # Linux参考资源+
 
+https://mp.weixin.qq.com/s/QB-IHiCIWEu3bALm2Dp46Q
+
+操作系统课程知识结构
+
+https://www.zhihu.com/answer/460715569
+
+生产力应用大汇总
+
+https://mp.weixin.qq.com/s/QsgoONKwI7ds8Hnx2Wer6A
+
+Linux从程序到进程
+
+https://mp.weixin.qq.com/s/tguC-WOleKRWLfTmGdJlQg
+
+Linux文件系统的实现
+
 https://www.cnblogs.com/biyeymyhjob/archive/2012/07/20/2601655.html
 
 Linux写时拷贝技术(copy-on-write)

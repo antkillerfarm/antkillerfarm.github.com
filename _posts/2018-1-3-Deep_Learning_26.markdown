@@ -7,6 +7,22 @@ category: DL
 * toc
 {:toc}
 
+# 人脸检测/识别
+
+## 人脸关键点（续）
+
+https://mp.weixin.qq.com/s/kWRW81aAMl18GIDQWqX1Ow
+
+PFLD：简单高效的实用人脸关键点检测算法
+
+https://mp.weixin.qq.com/s/HpgcPkAZb9R5jF-zsGcfcw
+
+美图影像实验室（MTlab）10000点人脸关键点技术全解读
+
+https://mp.weixin.qq.com/s/YsuvIB56OxS9IBMQYSUdUg
+
+深度学习AI美颜系列——人像静态/动态贴纸特效算法实现
+
 # OCR
 
 ## 概述

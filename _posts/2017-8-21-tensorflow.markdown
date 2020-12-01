@@ -173,11 +173,23 @@ https://developer.nvidia.com/rdp/cudnn-archive
 
 这个需要注册Nvidia账号才能下载。。。囧
 
-本来Ubuntu 20.04已经自带了相应的软件仓库：
+Ubuntu 20.04已经自带了相应的driver和CUDA：
 
-`sudo apt install nvidia-driver-440 nvidia-driver-440 nvidia-utils-440`
+`sudo apt install nvidia-driver-440 nvidia-utils-440`
 
-然而坑爹的是，TF不支持CUDA的最新版本。。。所以还是只有去官网下载老版本了。相比之下Pytorch就支持的及时多了。
+Pytorch可支持最新的CUDA，因此这样就可以了。
+
+而TF不支持最新的CUDA版本，所以还需要：
+
+`sudo apt install libcudart10.1`
+
+cuDNN这个没办法，只有硬装。
+
+装好之后，会有如下提示：
+
+`successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero`
+
+这个是正常的，NUMA是多机多卡才有的东西。
 
 ----
 
@@ -354,23 +366,3 @@ tensorflow和caffe2
 http://tflearn.org/
 
 4.Keras。
-
-5.TensorLayer。这个的封装粒度介于TensorFlow-Slim和TFLearn之间。
-
-https://tensorlayer.readthedocs.io/en/stable/user/tutorials.html
-
-这个Tutorials的内容比较多，除了常见的CNN、RNN之外，还有RL和DAE的内容。
-
-6.Pretty Tensor。来自google的TensorFlow封装。
-
-https://github.com/google/prettytensor
-
-7.Sonnet。来自Deepmind的TensorFlow封装。
-
-https://github.com/deepmind/sonnet
-
-参见：
-
-http://www.infoq.com/cn/articles/introduction-of-tensorflow-part06
-
-深入浅出TensorFlow（六）TensorFlow高层封装

@@ -37,6 +37,12 @@ https://mp.weixin.qq.com/s/tqf-X8qRpeIVxHf4noWFQA
 
 实战推荐系统，Practical Recommender Systems，432页pdf
 
+## 专栏
+
+https://www.jianshu.com/nb/21403842
+
+推荐系统遇上深度学习
+
 ## 算法
 
 深度推荐系统的算法包括：
@@ -118,6 +124,10 @@ https://mp.weixin.qq.com/s/5wdGemYBtkYUvq1n5ioyFg
 https://mp.weixin.qq.com/s/SK6RXTnZrGk2emvV7fbUdw
 
 推荐系统经典模型Wide & Deep
+
+https://mp.weixin.qq.com/s/MtIPY1dJky27vZ9nAgS2cQ
+
+Wide&Deep模型的八个实战细节
 
 ## DeepFM
 

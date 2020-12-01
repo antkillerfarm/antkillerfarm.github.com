@@ -9,6 +9,28 @@ category: AI
 
 # TensorFlow
 
+## TensorFlow高层封装（续）
+
+5.TensorLayer。这个的封装粒度介于TensorFlow-Slim和TFLearn之间。
+
+https://tensorlayer.readthedocs.io/en/stable/user/tutorials.html
+
+这个Tutorials的内容比较多，除了常见的CNN、RNN之外，还有RL和DAE的内容。
+
+6.Pretty Tensor。来自google的TensorFlow封装。
+
+https://github.com/google/prettytensor
+
+7.Sonnet。来自Deepmind的TensorFlow封装。
+
+https://github.com/deepmind/sonnet
+
+参见：
+
+http://www.infoq.com/cn/articles/introduction-of-tensorflow-part06
+
+深入浅出TensorFlow（六）TensorFlow高层封装
+
 ## Slim
 
 代码：
@@ -253,6 +275,20 @@ https://github.com/raymond-li/tflite_tensor_outputter/blob/master/tflite_tensor_
 
 ----
 
+https://www.cnblogs.com/zhouyang209117/p/8087258.html
+
+使用flatbuffers
+
+https://jackwish.net/2020/introducing-tflite-parser-package.html
+
+Introducing TFLite Parser Python Package
+
+https://jackwish.net/tflite/
+
+Easily Parse TFLite Models with Python
+
+----
+
 参考：
 
 https://www.jianshu.com/p/fa204a54a956
@@ -370,39 +406,3 @@ https://mp.weixin.qq.com/s/IPwOZKvDsONegyIuwkG6bQ
 https://mp.weixin.qq.com/s/7nugWFKtD-C6cpwm2TyvdQ
 
 手把手教你如何部署深度学习模型
-
-https://zhuanlan.zhihu.com/p/77664408
-
-如何解决推荐系统工程难题——深度学习推荐模型线上serving？
-
-https://mp.weixin.qq.com/s/vqFRbsM9DGu8ikJ3VNp_-g
-
-TensorFlow Extended(TFX)：面向生产环境的机器学习
-
-http://mp.weixin.qq.com/s/hpv6bzr-5VZet-UCHOCQLQ
-
-谷歌TFX：基于TensorFlow可大规模扩展的机器学习平台
-
-https://mp.weixin.qq.com/s/ANoY3MZEvz7SvKXDE-24NQ
-
-迈向ML工程：TensorFlow Extended(TFX)简史
-
-https://mp.weixin.qq.com/s/DkCGusznH8F8p39oRLuNBQ
-
-TensorFlow Serving模型更新毛刺的完全优化实践
-
-## op的C++实现
-
-有的时候为了将Tensorflow的op移植到其他平台，需要找到相应op的cpu实现。比如space_to_batch这个op，它的实现在：
-
-core/kernels/spacetobatch_op.cc
-
-简单的op一般找到这里就可以了，但space_to_batch还要更深一层：
-
-core/kernels/spacetobatch_functor.cc
-
-一般XXX_impl.cc或者XXX_functor.cc才是op实现真正所在的位置。
-
-此外，TFlite的实现往往更加简单：
-
-tensorflow/contrib/lite/kernels/internal/reference/reference_ops.h

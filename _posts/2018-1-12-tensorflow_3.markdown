@@ -9,6 +9,44 @@ category: AI
 
 # TensorFlow
 
+## TensorFlow Serving（续）
+
+https://zhuanlan.zhihu.com/p/77664408
+
+如何解决推荐系统工程难题——深度学习推荐模型线上serving？
+
+https://mp.weixin.qq.com/s/vqFRbsM9DGu8ikJ3VNp_-g
+
+TensorFlow Extended(TFX)：面向生产环境的机器学习
+
+http://mp.weixin.qq.com/s/hpv6bzr-5VZet-UCHOCQLQ
+
+谷歌TFX：基于TensorFlow可大规模扩展的机器学习平台
+
+https://mp.weixin.qq.com/s/ANoY3MZEvz7SvKXDE-24NQ
+
+迈向ML工程：TensorFlow Extended(TFX)简史
+
+https://mp.weixin.qq.com/s/DkCGusznH8F8p39oRLuNBQ
+
+TensorFlow Serving模型更新毛刺的完全优化实践
+
+## op的C++实现
+
+有的时候为了将Tensorflow的op移植到其他平台，需要找到相应op的cpu实现。比如space_to_batch这个op，它的实现在：
+
+core/kernels/spacetobatch_op.cc
+
+简单的op一般找到这里就可以了，但space_to_batch还要更深一层：
+
+core/kernels/spacetobatch_functor.cc
+
+一般XXX_impl.cc或者XXX_functor.cc才是op实现真正所在的位置。
+
+此外，TFlite的实现往往更加简单：
+
+tensorflow/contrib/lite/kernels/internal/reference/reference_ops.h
+
 ## TensorFlow.js
 
 https://mp.weixin.qq.com/s/dqMS4NjmNYs7IFHm8uFM8w
@@ -354,53 +392,3 @@ Caffe被Caffe 2替代，但使用的广泛度仍超过后者。
 Theano被同样基于计算图的TensorFlow淘汰。2017年9月停止更新。
 
 Torch相对变动最小，它被PyTorch替代。这更可以看作是python对于lua的胜利。
-
-# TensorFlow参考资源
-
-https://mp.weixin.qq.com/s/t1QFIOq-VBNOrSm0zW-PlQ
-
-深度学习TensorFlow实现集合
-
-https://mp.weixin.qq.com/s/IzijD8Sh3G2WsCz7aaxyhg
-
-TensorFlow深度学习概述
-
-https://silencezjl.coding.me/2017/05/01/%E5%81%B7%E4%B8%80%E6%B3%A2%E8%B5%84%E6%BA%90/
-
-各种TensorFlow资源
-
-https://mp.weixin.qq.com/s/haj9lS59yWtk-C75EtGIcw
-
-深度学习工程模板：简化加载数据、构建网络、训练模型和预测样本的流程
-
-https://github.com/zsdev2015/machine_learning
-
-某国内小牛写的中文入门demo，注释非常详细
-
-https://morvanzhou.github.io/tutorials/
-
-一个以python语言教学的ML、DL教程，比较通俗易懂。
-
-https://mp.weixin.qq.com/s/gJBDXf_5ViPR9dNm3eH2Hg
-
-TensorFlow初学者必须了解的55个经典案例
-
-http://mp.weixin.qq.com/s/JZ1ceGQDmQUaNW5wl6biLA
-
-TensorFlow实现流行机器学习算法教程汇集
-
-https://github.com/taki0112/Tensorflow-Cookbook
-
-1500+星标，简单易用TensorFlow代码集
-
-https://mp.weixin.qq.com/s/bjxJyOitynRtCoW0FX1gXw
-
-一文带你入门Tensorflow
-
-https://mp.weixin.qq.com/s/zmTqWNXlYcDyZb_dmEo_5Q
-
-TensorFlow/PyTorch/Sklearn实现的五十种机器学习模型
-
-https://mp.weixin.qq.com/s/O5vvGKHWkJQWzeiL7A_S_g
-
-TensorFlow简单介绍

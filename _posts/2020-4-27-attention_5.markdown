@@ -163,6 +163,10 @@ https://mp.weixin.qq.com/s/G4mFW8cn-ho3KGmbw5sSTw
 
 计算机视觉中注意力机制原理及其模型发展和应用
 
+https://mp.weixin.qq.com/s/gar7zcl68W4oKnFPLFekoQ
+
+Attention增强的卷积网络
+
 # BERT进阶
 
 ## AR vs AE

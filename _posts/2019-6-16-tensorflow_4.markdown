@@ -9,6 +9,54 @@ category: AI
 
 # TensorFlow
 
+https://mp.weixin.qq.com/s/t1QFIOq-VBNOrSm0zW-PlQ
+
+深度学习TensorFlow实现集合
+
+https://mp.weixin.qq.com/s/IzijD8Sh3G2WsCz7aaxyhg
+
+TensorFlow深度学习概述
+
+https://silencezjl.coding.me/2017/05/01/%E5%81%B7%E4%B8%80%E6%B3%A2%E8%B5%84%E6%BA%90/
+
+各种TensorFlow资源
+
+https://mp.weixin.qq.com/s/haj9lS59yWtk-C75EtGIcw
+
+深度学习工程模板：简化加载数据、构建网络、训练模型和预测样本的流程
+
+https://github.com/zsdev2015/machine_learning
+
+某国内小牛写的中文入门demo，注释非常详细
+
+https://morvanzhou.github.io/tutorials/
+
+一个以python语言教学的ML、DL教程，比较通俗易懂。
+
+https://mp.weixin.qq.com/s/gJBDXf_5ViPR9dNm3eH2Hg
+
+TensorFlow初学者必须了解的55个经典案例
+
+http://mp.weixin.qq.com/s/JZ1ceGQDmQUaNW5wl6biLA
+
+TensorFlow实现流行机器学习算法教程汇集
+
+https://github.com/taki0112/Tensorflow-Cookbook
+
+1500+星标，简单易用TensorFlow代码集
+
+https://mp.weixin.qq.com/s/bjxJyOitynRtCoW0FX1gXw
+
+一文带你入门Tensorflow
+
+https://mp.weixin.qq.com/s/zmTqWNXlYcDyZb_dmEo_5Q
+
+TensorFlow/PyTorch/Sklearn实现的五十种机器学习模型
+
+https://mp.weixin.qq.com/s/O5vvGKHWkJQWzeiL7A_S_g
+
+TensorFlow简单介绍
+
 https://mp.weixin.qq.com/s/JSZwQkyxSSwfBWKJ578j3A
 
 TensorFlow最好的入门文章
@@ -380,19 +428,3 @@ https://mp.weixin.qq.com/s/kEowgNPVS1nAGBPbzkatlQ
 https://mp.weixin.qq.com/s/O_IN39FBVPeD5fRYBsPuZQ
 
 用TensorFlow开发问答系统
-
-https://mp.weixin.qq.com/s/8Hrq_z8s_5ms6Q_6OOaU-g
-
-如何使用TensorFlow和自编码器模型生成手写数字
-
-https://mp.weixin.qq.com/s/rQ9eZosHOoDOXg9tAg4t6A
-
-tensorflow Object Detection API使用预训练模型mask r-cnn实现对象检测
-
-https://mp.weixin.qq.com/s/cPWXAI2TBv3_ssnWDFoQ4w
-
-TensorFlow sucks，有人吐槽TensorFlow晦涩难用
-
-https://mp.weixin.qq.com/s/_kr28kN0_1QFP8BR_wGo5w
-
-TensorFlow RNN入门

@@ -9,6 +9,22 @@ category: AI
 
 # TensorFlow
 
+https://mp.weixin.qq.com/s/8Hrq_z8s_5ms6Q_6OOaU-g
+
+如何使用TensorFlow和自编码器模型生成手写数字
+
+https://mp.weixin.qq.com/s/rQ9eZosHOoDOXg9tAg4t6A
+
+tensorflow Object Detection API使用预训练模型mask r-cnn实现对象检测
+
+https://mp.weixin.qq.com/s/cPWXAI2TBv3_ssnWDFoQ4w
+
+TensorFlow sucks，有人吐槽TensorFlow晦涩难用
+
+https://mp.weixin.qq.com/s/_kr28kN0_1QFP8BR_wGo5w
+
+TensorFlow RNN入门
+
 https://mp.weixin.qq.com/s/WqE-FRl-Thys7tHUvFNlWQ
 
 盯住梅西：TensorFlow目标检测实战

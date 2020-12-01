@@ -173,10 +173,6 @@ https://mp.weixin.qq.com/s/V7QODQ2F9q8Q7lfuny8JPw
 
 强化学习用于推荐系统，蚂蚁金服提出生成对抗用户模型
 
-https://mp.weixin.qq.com/s/FevsysNqRhq6Njh0ILCveQ
-
-推荐系统遇上深度学习，9篇阿里推荐论文汇总！
-
 https://mp.weixin.qq.com/s/_YP6zpsgMLgAZemW3PRj3w
 
 基于深度学习的序列推荐系统：概念，算法与评估
