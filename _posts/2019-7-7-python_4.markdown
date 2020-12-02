@@ -399,6 +399,44 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/misc/hel
 
 `args = ["ls","-al","."]`
 
+## SCons
+
+blade的底层用到了SCons。后者是一个python语言写的构建工具，可用于多种编程语言程序的构建。
+
+官网：
+
+http://www.scons.org/
+
+安装：
+
+`sudo apt install scons`
+
+和make类似，可以用如下方式并行编译：
+
+`scons -j 4`
+
+使用示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/scons
+
+项目的工程文件为SConstruct。
+
+从个人角度，我认为一个好的构建工具需要具备以下特点：
+
+- 常见任务书写简单。换句话说就是预先内置好了大量规则。make在这一点上做的不太好，手工任务太多，以致出现了Autotools和CMake这样的辅助工具。
+
+- 特殊任务扩展简单。make系列工具的DSL都不是完备的语言，这一点是比不了python的。
+
+因此，我是比较看好SCons的。
+
+上述特点在Java的构建工具上也得到了体现，ANT书写麻烦，所以被Maven取代，而Maven扩展不便，又被Gradle挑战。
+
+参考：
+
+https://www.ibm.com/developerworks/cn/linux/l-cn-scons/
+
+使用SCons轻松建造程序
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA
@@ -444,39 +482,3 @@ http://blog.csdn.net/linda1000/article/details/8315892
 https://mp.weixin.qq.com/s/czqO4Lo1Jt9zqg2UKNlLYg
 
 手把手教你用Python创建微信聊天机器人
-
-https://mp.weixin.qq.com/s/DMK3gwMKbpsfOrWMxjb5lg
-
-不到20行代码，用Python做一个智能聊天机器人
-
-https://mp.weixin.qq.com/s/wIXCIMzZmh75SV-qJIKbCw
-
-Python程序员最常犯的10个错误，你中招了吗？
-
-https://mp.weixin.qq.com/s/W1j4G_QQqlzDYru231dZFA
-
-Python：编写条件分支代码的技巧
-
-https://mp.weixin.qq.com/s/ST7TQ5Wkn_owv5bpTiTKVA
-
-2018年最好用的5个python网站开发框架
-
-https://mp.weixin.qq.com/s/dmJI2GlzgUJgYllfVOPt4g
-
-两句话轻松掌握Python最难知识点
-
-https://mp.weixin.qq.com/s/PkzD1ig_D5AIUTkO5zH8pQ
-
-Python字节码介绍
-
-https://mp.weixin.qq.com/s/_ZvF6jK5Jo4rFGwHvEoAig
-
-一文读懂Python装饰器由来
-
-https://mp.weixin.qq.com/s/RdnAQPAn9E8qDvtnCEgcKw
-
-Tkinter可视化窗口
-
-https://mp.weixin.qq.com/s/-erFsz8NvLZ5mOIXyDosFg
-
-使用PyInstaller将python转成可执行文件exe笔记

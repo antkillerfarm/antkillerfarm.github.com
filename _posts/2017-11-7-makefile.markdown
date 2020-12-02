@@ -218,6 +218,17 @@ https://www.cnblogs.com/puyangsky/p/7596282.html
 
 bazel的使用
 
+# Bazelisk
+
+这是基于Go语言编写的Bazel启动器，它会为你的工作区下载最适合的Bazel，并且透明的将命令转发给该Bazel。
+
+由于Bazellisk提供了和Bazel一样的接口，因此通常直接将其命名为bazel：
+
+```bash
+sudo wget -O /usr/local/bin/bazel https://github.com/bazelbuild/bazelisk/releases/download/v0.0.8/bazelisk-linux-amd64
+sudo chmod +x /usr/local/bin/bazel
+```
+
 # Other
 
 ## blade
@@ -227,44 +238,6 @@ blade是腾讯出品的构建工具。
 官网：
 
 https://github.com/chen3feng/blade-build
-
-## SCons
-
-blade的底层用到了SCons。后者是一个python语言写的构建工具，可用于多种编程语言程序的构建。
-
-官网：
-
-http://www.scons.org/
-
-安装：
-
-`sudo apt install scons`
-
-和make类似，可以用如下方式并行编译：
-
-`scons -j 4`
-
-使用示例：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/scons
-
-项目的工程文件为SConstruct。
-
-从个人角度，我认为一个好的构建工具需要具备以下特点：
-
-- 常见任务书写简单。换句话说就是预先内置好了大量规则。make在这一点上做的不太好，手工任务太多，以致出现了Autotools和CMake这样的辅助工具。
-
-- 特殊任务扩展简单。make系列工具的DSL都不是完备的语言，这一点是比不了python的。
-
-因此，我是比较看好SCons的。
-
-上述特点在Java的构建工具上也得到了体现，ANT书写麻烦，所以被Maven取代，而Maven扩展不便，又被Gradle挑战。
-
-参考：
-
-https://www.ibm.com/developerworks/cn/linux/l-cn-scons/
-
-使用SCons轻松建造程序
 
 ## MSbuild
 

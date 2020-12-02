@@ -247,6 +247,42 @@ JavaScript与ES的25个重要知识点
 
 # Python++
 
+https://mp.weixin.qq.com/s/DMK3gwMKbpsfOrWMxjb5lg
+
+不到20行代码，用Python做一个智能聊天机器人
+
+https://mp.weixin.qq.com/s/wIXCIMzZmh75SV-qJIKbCw
+
+Python程序员最常犯的10个错误，你中招了吗？
+
+https://mp.weixin.qq.com/s/W1j4G_QQqlzDYru231dZFA
+
+Python：编写条件分支代码的技巧
+
+https://mp.weixin.qq.com/s/ST7TQ5Wkn_owv5bpTiTKVA
+
+2018年最好用的5个python网站开发框架
+
+https://mp.weixin.qq.com/s/dmJI2GlzgUJgYllfVOPt4g
+
+两句话轻松掌握Python最难知识点
+
+https://mp.weixin.qq.com/s/PkzD1ig_D5AIUTkO5zH8pQ
+
+Python字节码介绍
+
+https://mp.weixin.qq.com/s/_ZvF6jK5Jo4rFGwHvEoAig
+
+一文读懂Python装饰器由来
+
+https://mp.weixin.qq.com/s/RdnAQPAn9E8qDvtnCEgcKw
+
+Tkinter可视化窗口
+
+https://mp.weixin.qq.com/s/-erFsz8NvLZ5mOIXyDosFg
+
+使用PyInstaller将python转成可执行文件exe笔记
+
 https://mp.weixin.qq.com/s/EZh5PAUgXkIDzGbim6wqLQ
 
 用Python带你看白雪飘扬~

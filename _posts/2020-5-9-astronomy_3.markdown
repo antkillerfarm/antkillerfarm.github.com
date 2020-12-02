@@ -199,7 +199,11 @@ https://mp.weixin.qq.com/s/ros-kBOIgTgQF2SaGc99qQ
 
 https://mp.weixin.qq.com/s/aY4gFbK_aKWcgwvr0Rk5gQ
 
-“波多黎各，波多黎各，世界最大射电望远镜，倒闭了”——让我们阻止这成为事实
+“波多黎各，波多黎各，世界最大射电望远镜，倒闭了”（Arecibo望远镜）
+
+https://www.zhihu.com/question/432120058
+
+阿雷西博望远镜馈源舱支撑平台塌了，现已决定退役拆除，如何评价它的一生？
 
 https://mp.weixin.qq.com/s/DKMs8sZtE_JzWaxr8o-DWA
 

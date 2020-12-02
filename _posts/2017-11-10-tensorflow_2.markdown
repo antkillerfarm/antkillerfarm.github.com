@@ -279,6 +279,10 @@ https://www.cnblogs.com/zhouyang209117/p/8087258.html
 
 使用flatbuffers
 
+http://harmonyhu.com/2019/02/03/flatbuffers-reflection/
+
+FlatBuffers反射
+
 https://blog.csdn.net/u011279649/article/details/83186550
 
 TFLite:模型文件的结构和解析器
