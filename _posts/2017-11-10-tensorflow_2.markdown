@@ -279,6 +279,10 @@ https://www.cnblogs.com/zhouyang209117/p/8087258.html
 
 使用flatbuffers
 
+https://blog.csdn.net/u011279649/article/details/83186550
+
+TFLite:模型文件的结构和解析器
+
 https://jackwish.net/2020/introducing-tflite-parser-package.html
 
 Introducing TFLite Parser Python Package
