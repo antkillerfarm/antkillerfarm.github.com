@@ -304,4 +304,3 @@ P2.1和P2.2是特殊的GPIO，由于它们和JTAG复用，因此在调试模式�
 ZigBee resides on IEEE 802.15.4 transceivers, which in the 2.4 GHz space communicate at 250 kilobits per second (kbps),  but by the time retries, encryption/decryption, and the fully acknowledged mesh protocol is applied, the actual through- put is closer to 25 kbps.
 
 这是TI官方技术支持的说法，转换成相应的串口波特率大概是38400。也就是说超过这个速度的串口速度对于Zigbee设备来说是处理不过来的。
-

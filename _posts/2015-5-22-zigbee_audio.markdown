@@ -263,3 +263,25 @@ https://mp.weixin.qq.com/s/rM3SkUiQIxsGz9MNIg1skQ
 https://zhuanlan.zhihu.com/p/301860804
 
 如何把树莓派400打造成小霸王游戏机，Retropie包含上万经典老游戏
+
+# 生物+++
+
+https://mp.weixin.qq.com/s/HEcqyGkGJgtUMVewMBDNLg
+
+小龙虾又泛滥成灾，英国人表示捕食没用，中国吃货表示你们方法不对
+
+https://mp.weixin.qq.com/s/X-_yFro-MdyISeqci6YUGA
+
+昆虫界的金针菇，被吃后从屁股逃生
+
+https://mp.weixin.qq.com/s/nGiveZG6297A9e1KiPYTYA
+
+你吃的葵花籽里，藏着大自然的黄金比例
+
+https://mp.weixin.qq.com/s/4kWsQp9jUUpZas09lccOiA
+
+科学家发现1亿年前的精子，长度惊人还刷新了一项记录
+
+https://www.zhihu.com/question/430020050
+
+既然碘在自然界中并不富裕，那么为什么甲状腺激素一定要用碘来合成？

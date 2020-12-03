@@ -288,7 +288,3 @@ https://mp.weixin.qq.com/s/woKbEXxMspCLx70n5ixMgA
 https://mp.weixin.qq.com/s/SNiw6nacj63DFIgN6rnM0g
 
 诺贝尔获奖者绝对没想到，他的一个发现百年后竟然可以驯化全人类，不讲武德......（Ivan Petrovich Pavlov）
-
-https://mp.weixin.qq.com/s/4kWsQp9jUUpZas09lccOiA
-
-科学家发现1亿年前的精子，长度惊人还刷新了一项记录
