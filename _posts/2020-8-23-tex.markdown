@@ -318,6 +318,10 @@ https://mp.weixin.qq.com/s/gr6YKmxbZjwfB4Rft1w55A
 
 一口气看完45个寄存器，CPU核心技术大揭秘
 
+https://mp.weixin.qq.com/s/504MLGjCESZPOvv8AwY6Pw
+
+这篇寄存器讲的有点意思
+
 # boost
 
 ## 安装&编译

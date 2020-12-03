@@ -404,3 +404,7 @@ GTA 5真香！哦不，我在用深度学习做自动驾驶
 https://mp.weixin.qq.com/s/Ri51M3xkk2qVUoC9Z4OmGA
 
 自动驾驶中的交通标志识别原理及控制应用
+
+https://mp.weixin.qq.com/s/MP6A2qY2Gg335WMh-eemFA
+
+时空预测概述及多任务时空网络的交通预测

@@ -81,6 +81,10 @@ Anaconda是一个科学计算方面的python发行版，下面提到的所有工
 
 https://www.anaconda.com/download/
 
+镜像：
+
+https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/
+
 基本命令：
 
 `conda update --all`
@@ -97,9 +101,15 @@ Anaconda同时也支持多个Python版本的并存和切换。它的底层用到
 
 这条命令会在Anaconda/envs下创建一个python2文件夹。
 
+显示env：
+
+`conda env list`
+
 将命令行环境切换到该版本：
 
-`activate python2`
+`conda activate python2`
+
+最新的Anaconda提供了`conda init`命令用于将环境添加到shell中。如果不想要的话，可以到`～/.bashrc`删除之。
 
 参考：
 

@@ -396,3 +396,7 @@ https://mp.weixin.qq.com/s/cO1VlYGwdRBAbPs7IgvcAA
 https://mp.weixin.qq.com/s/s7c0oleKCmdI2Kh9pDPsXw
 
 强化学习需要批归一化(Batch Norm)吗？
+
+https://mp.weixin.qq.com/s/2nn56lpWe7YYU0CrRYrvbA
+
+强化学习在智能交通灯中的应用

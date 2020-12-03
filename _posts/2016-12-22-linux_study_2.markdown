@@ -184,6 +184,10 @@ https://mp.weixin.qq.com/s/DG7RjJ_HXSRb6nAZuoTz3g
 
 详解Linux中3个文件查找相关命令
 
+https://www.cnblogs.com/zqb-all/p/10666474.html
+
+Linux实用命令之xdg-open
+
 # 时间的表示方法
 
 一般遵循ISO 8601标准：

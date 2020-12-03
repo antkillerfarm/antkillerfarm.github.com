@@ -192,6 +192,14 @@ https://mp.weixin.qq.com/s/DQzlfQXt4dV9PYwoVdomaw
 
 如何开发多彩动感的终端UI应用
 
+## 定制提示符
+
+`export PS1="\u@\H >`
+
+https://blog.csdn.net/ice_beauty1/article/details/82923083
+
+定制bash提示符
+
 ## 参考
 
 https://github.com/dylanaraps/pure-bash-bible
