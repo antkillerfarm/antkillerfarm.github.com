@@ -205,6 +205,10 @@ https://www.zhihu.com/question/432120058
 
 阿雷西博望远镜馈源舱支撑平台塌了，现已决定退役拆除，如何评价它的一生？
 
+https://zhuanlan.zhihu.com/p/330003494
+
+美国天眼塌了
+
 https://mp.weixin.qq.com/s/DKMs8sZtE_JzWaxr8o-DWA
 
 你好，冥王星

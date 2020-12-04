@@ -77,10 +77,6 @@ https://mp.weixin.qq.com/s/emPDgw_c68JgbpYnem4JvA
 
 一文读懂简化的图卷积网络GCN（SGC）
 
-https://mp.weixin.qq.com/s/olt_i6JxfslFSdbz0Dx4oA
-
-用于深度时空图建模的Graph WaveNet
-
 https://mp.weixin.qq.com/s/LzaP6BWaKXL4O_Jf9QN7Rw
 
 基于层次化注意力图网络和多视角学习的商品推荐

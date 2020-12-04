@@ -291,6 +291,14 @@ https://mp.weixin.qq.com/s/XZWReRiIHqykN8yZulBiOg
 
 混合时空图卷积网络：更精准的时空预测模型
 
+https://mp.weixin.qq.com/s/olt_i6JxfslFSdbz0Dx4oA
+
+用于深度时空图建模的Graph WaveNet
+
+https://mp.weixin.qq.com/s/O09aiDmLFhoU9A7OLkUh2Q
+
+时空图数据挖掘深度学习技术全面综述
+
 https://mp.weixin.qq.com/s/40iqr-Yg4-CGe6QEsLpxhw
 
 时空序列预测模型之LightNet
