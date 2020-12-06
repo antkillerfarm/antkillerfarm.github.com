@@ -183,6 +183,18 @@ https://mp.weixin.qq.com/s/X73jL5T_uZ87F3iE-uTnpw
 
 Dota2冠军OG如何被AI碾压？OpenAI累积三年的完整论文终于放出
 
+# 王者荣耀
+
+腾讯绝悟也是DRL在MOBA游戏上的尝试。
+
+https://mp.weixin.qq.com/s/ptgHNil1gqrH2p-x3UZoFw
+
+紧急更新下降难度，《王者荣耀》绝悟AI难倒一片玩家
+
+https://mp.weixin.qq.com/s/kAuzmc70NYAr9HmyioD5xA
+
+腾讯绝悟AI完全体研究登上国际顶会与顶刊
+
 # DRL参考资源
 
 https://mp.weixin.qq.com/s/ruAAQEjPIDPWPiuPepKU6Q

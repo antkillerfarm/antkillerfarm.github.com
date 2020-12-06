@@ -9,6 +9,17 @@ category: resource
 
 # CPU
 
+## Bélády's Algorithm
+
+Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。
+
+>László Bélády，1928年生，匈牙利计算机科学家。Technical University of Budapest本硕。IBM研究员。
+
+https://mp.weixin.qq.com/s/AdmEd1FHxpZUwSGYy3qggg
+
+利用cpu缓存实现高性能程序
+
+## Other
 
 https://zhuanlan.zhihu.com/p/34003929
 
@@ -376,6 +387,26 @@ https://mp.weixin.qq.com/s/ChAfcT5xDgExiEXytTfynw
 
 # Attention进阶++
 
+https://mp.weixin.qq.com/s/_3pA8FZwzegSpyz_cK63BQ
+
+Self-Attention GAN中的self-attention机制
+
+https://mp.weixin.qq.com/s/h7sLwVXb_UI8jvJU-oe3Cg
+
+Google AI提出“透明注意力”机制，实现更深层NMT模型
+
+https://mp.weixin.qq.com/s/1LYz5SH5rVnPPJ0tZvRQAA
+
+从各种注意力机制窥探深度学习在NLP中的神威
+
+https://zhuanlan.zhihu.com/p/33078323
+
+数字串识别：基于位置的硬性注意力机制
+
+https://mp.weixin.qq.com/s/-gAISWjSiG6ccPuOPAEg3A
+
+五张动图，看清神经机器翻译里的Attention！
+
 https://mp.weixin.qq.com/s/aixpv9t1PLPRWUP6PvZ0EQ
 
 用自注意力增强卷积：这是新老两代神经网络的对话
@@ -399,15 +430,3 @@ NLP这两年：15个预训练模型对比分析与剖析
 https://mp.weixin.qq.com/s/LAInpFPa-3R1rfv6idILnw
 
 注意力机制发展如何了，如何学习它在各类任务中的应用？
-
-https://zhuanlan.zhihu.com/p/151640509
-
-注意力机制在推荐系统中的应用
-
-https://mp.weixin.qq.com/s/-SU5cNbklI31WLmTawZJIQ
-
-自注意模型学不好？这个方法帮你解决！
-
-https://mp.weixin.qq.com/s/K5EbO0djcXHN4K5LQiMh5g
-
-Triplet Attention机制让Channel和Spatial交互更加丰富

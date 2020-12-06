@@ -27,6 +27,10 @@ https://zhuanlan.zhihu.com/p/147691786
 
 大白话Generalized Focal Loss
 
+https://zhuanlan.zhihu.com/p/313684358
+
+大白话 Generalized Focal Loss V2
+
 https://mp.weixin.qq.com/s/zLDUAnxghsBYiUMQQdbBGQ
 
 Generalized Focal Loss：Focal loss魔改以及预测框概率分布

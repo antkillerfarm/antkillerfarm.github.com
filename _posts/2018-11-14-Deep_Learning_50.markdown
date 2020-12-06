@@ -422,3 +422,11 @@ TAM: 针对动作识别的时序自适应模块
 https://mp.weixin.qq.com/s/skCOaKf9kRABTX7hkdjGXA
 
 谷歌极速人脸、手、人体姿态分析Blaze算法家族
+
+https://zhuanlan.zhihu.com/p/69042249
+
+2020 Pose Estimation人体骨骼关键点检测综述笔记
+
+https://zhuanlan.zhihu.com/p/164603050
+
+3D Pose Estimation关键点检测的算法整理（2020）

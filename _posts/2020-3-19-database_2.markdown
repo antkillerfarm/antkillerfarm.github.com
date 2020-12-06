@@ -9,7 +9,19 @@ category: technology
 
 # 数据库
 
-## 参考（续）
+## 参考
+
+https://mp.weixin.qq.com/s/ActS6PxbtZGqPb0jOn0iFg
+
+不懂数据库索引的底层原理？那是因为你心里没点b树
+
+http://www.ruanyifeng.com/blog/2014/07/database_implementation.html
+
+数据库的最简单实现
+
+https://blog.csdn.net/zhengzhb/article/details/8590390
+
+SQL查找删除重复行
 
 https://mp.weixin.qq.com/s/09BlPee0-kP-At2aDyDbMw
 
@@ -361,7 +373,7 @@ http://blog.csdn.net/jiuqiyuliang/article/details/46701559
 
 深入浅出JMS(一)--JMS基本概念
 
-# 世说新语+++++++
+# 世说新语++++++
 
 ## 2020.11（续）
 
@@ -372,10 +384,6 @@ http://blog.csdn.net/jiuqiyuliang/article/details/46701559
 https://zhuanlan.zhihu.com/p/277437564
 
 日本是如何给东北人洗脑的？
-
-----
-
-1950年春，文强被送到北京的功德林“战犯管理处”，在狱中，他拒写悔过书。他说：“我曾任红一师师长兼政委，毛泽东是我表哥，朱德是我上级，周恩来是我老师和入党介绍人，林彪是我部下，刘少奇家离我家不到20里路。是他们没有把我教好，要写悔过书应该他们写，我不写。”
 
 ----
 

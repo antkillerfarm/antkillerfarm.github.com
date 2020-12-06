@@ -333,7 +333,7 @@ https://mp.weixin.qq.com/s/VC95nh0iCqzdGs-TPfi5nQ
 
 无监督机器翻译，336页ppt，Unsupervised Machine Translation
 
-# 世说新语++++
+# 世说新语+++
 
 ## 2020.10（续）
 

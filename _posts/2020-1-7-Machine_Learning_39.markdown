@@ -277,6 +277,10 @@ https://mp.weixin.qq.com/s/8qR7Ew3oLzOZV2hV1QjMAA
 
 最新49页《深度学习异常检测综述》论文，带你全面了解深度学习异常检测方法
 
+https://mp.weixin.qq.com/s/NDs9xzVih0MHclJv2w1-TA
+
+时序预测竞赛之异常检测算法综述
+
 # 数据清洗
 
 https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g

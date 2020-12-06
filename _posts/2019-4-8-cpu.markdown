@@ -353,12 +353,6 @@ https://mp.weixin.qq.com/s/AekR-mv9EOD-4V5SKqI9YQ
 
 一文看懂缓存
 
-## Bélády's Algorithm
+https://mp.weixin.qq.com/s/FY8sEX4acEUpCu_6ntArYw
 
-Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。
-
->László Bélády，1928年生，匈牙利计算机科学家。Technical University of Budapest本硕。IBM研究员。
-
-https://mp.weixin.qq.com/s/AdmEd1FHxpZUwSGYy3qggg
-
-利用cpu缓存实现高性能程序
+CPU缓存L1/L2/L3工作原理

@@ -157,6 +157,10 @@ https://mp.weixin.qq.com/s/qjNGpfeOLkg9PHRqy6Hstw
 
 5大SQL数据清洗方法！
 
+https://mp.weixin.qq.com/s/QpgGJchCjSr1HvFtSUfzxQ
+
+图解SQL，这也太形象了吧！
+
 ## Apache Kylin
 
 Apache Kylin是一个开源的分布式分析引擎，最初由eBay开发贡献至开源社区。它提供Hadoop之上的SQL查询接口及多维分析（OLAP）能力以支持大规模数据，能够处理TB乃至PB级别的分析任务，能够在亚秒级查询巨大的Hive表，并支持高并发。
@@ -327,6 +331,10 @@ https://mp.weixin.qq.com/s/cUBSOGFfkWNu91r9agXszQ
 
 高并发系统三大利器之缓存
 
+https://mp.weixin.qq.com/s/NdnE4uiT_b7omDx_uBGAtg
+
+你可以说一下缓存击穿、穿透、雪崩的区别和解决方法吗？
+
 ## 数据管理工具
 
 数据管理工具主要有：Navicat和DataGrip。
@@ -348,17 +356,3 @@ https://mp.weixin.qq.com/s/mYwaGszQGod_o6f3p2QbDw
 https://mp.weixin.qq.com/s/O94Q1Dxe8TnbCMv9d_hlOg
 
 Uber推出数据湖集成神器DBEvents，支持MySQL、Cassandra等
-
-## 参考
-
-https://mp.weixin.qq.com/s/ActS6PxbtZGqPb0jOn0iFg
-
-不懂数据库索引的底层原理？那是因为你心里没点b树
-
-http://www.ruanyifeng.com/blog/2014/07/database_implementation.html
-
-数据库的最简单实现
-
-https://blog.csdn.net/zhengzhb/article/details/8590390
-
-SQL查找删除重复行

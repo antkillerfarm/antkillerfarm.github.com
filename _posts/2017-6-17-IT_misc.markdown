@@ -174,3 +174,9 @@ https://www.zhihu.com/answer/683230849
 HTC为什么衰败？
 
 好感慨啊。10年前，HTC全盛时期，我先后在两家公司做事，主要客户都是HTC。至今我还记得，初见HTC G1时，那惊艳的感觉。
+
+----
+
+https://baike.baidu.com/item/Full Mask - MPW/16508899
+
+Full Mask和MPW都是集成电路的一种流片（将设计结果交出去进行生产制造）方式。Full Mask是“全掩膜”的意思，即制造流程中的全部掩膜都为某个设计服务；而MPW（Multi Project Wafer），直译为多项目晶圆，即多个项目共享某个晶圆，也即同一次制造流程可以承担多个IC设计的制造任务。

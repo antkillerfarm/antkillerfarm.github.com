@@ -382,3 +382,7 @@ GAN网络图像翻译机：图像复原、模糊变清晰、素描变彩图
 https://mp.weixin.qq.com/s/DTVjncaERBmDfOkvXv_3qg
 
 皱眉细节完美复刻，阿尔伯塔大学团队标星1.7K的项目生成超逼真的肖像画
+
+https://mp.weixin.qq.com/s/UpfgxiIaSU4iIjbrkS--zA
+
+颠覆视频压缩的不一定是新压缩算法，而可能是GAN！英伟达新算法最高压缩90%流量

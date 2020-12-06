@@ -277,3 +277,11 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/doc/The%20Unpar
 https://mp.weixin.qq.com/s/_98VQ5Ck5ZRm8xIe5qJuog
 
 西方对中国的恐惧
+
+----
+
+20世纪60年代，中国击落美国U－2飞机的消息震动世界。
+
+https://mp.weixin.qq.com/s/ej98QNWc3GmzKkS7HXHhOQ
+
+美军最顶尖的飞机，全世界只击落7架，5架毁在这个中国老人手中（雷达专家张履谦，朱镕基的清华舍友）

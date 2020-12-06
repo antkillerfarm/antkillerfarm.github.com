@@ -331,7 +331,7 @@ https://mp.weixin.qq.com/s/g-OPU4vp66HWcpqjdD2bBg
 
 使用PyTorch从理论到实践理解变分自编码器VAE
 
-# 世说新语++++++
+# 世说新语+++++
 
 ## 2020.11（续）
 

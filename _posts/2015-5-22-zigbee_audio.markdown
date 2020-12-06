@@ -285,3 +285,23 @@ https://mp.weixin.qq.com/s/4kWsQp9jUUpZas09lccOiA
 https://www.zhihu.com/question/430020050
 
 既然碘在自然界中并不富裕，那么为什么甲状腺激素一定要用碘来合成？
+
+https://mp.weixin.qq.com/s/mD-RbgvcbDfgJCrGrTMKYA
+
+鹦鹉重骑扫奥陶
+
+https://mp.weixin.qq.com/s/EGCCycVCa17fvlJvSUttQQ
+
+甲虫的硬壳是怎么来的？
+
+https://mp.weixin.qq.com/s/a0BREVS0BcUHS3RhE-Oo4w
+
+生存技能篇：研蛇者说
+
+https://mp.weixin.qq.com/s/jSP_YsKAXHKgmOpLqhQhVQ
+
+蝙蝠竟然会倒立生孩子，这些生娃瞬间看得我肚子疼
+
+https://mp.weixin.qq.com/s/3y8BF4sI2MYPMQ4q9xRGqw
+
+除了新鲜，你对巴氏牛奶了解多少？

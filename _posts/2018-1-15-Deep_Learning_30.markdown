@@ -436,3 +436,11 @@ https://mp.weixin.qq.com/s/0lNeSjpm4lbu_8mopWJ2oA
 https://mp.weixin.qq.com/s/Ul9BIrJxjlzJwGqRv6E7eg
 
 10分钟了解图嵌入
+
+https://mp.weixin.qq.com/s/w190-7C4WA_JWw-ID9m8gA
+
+没有完整图时，如何使用图深度学习？你需要了解流形学习2.0版本
+
+https://mp.weixin.qq.com/s/O5rDJiuzIUHM1YU6-vBb6Q
+
+Pre-training on Graphs

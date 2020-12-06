@@ -390,3 +390,7 @@ A/B测试是好，但不适合创新
 https://mp.weixin.qq.com/s/85BBYJRbvpV9CqgYjW9Ayg
 
 推荐系统衡量：ABtest框架
+
+https://zhuanlan.zhihu.com/p/96382982
+
+A/B Test的统计原理和效果解读

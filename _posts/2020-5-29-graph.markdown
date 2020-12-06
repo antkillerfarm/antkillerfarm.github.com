@@ -255,6 +255,10 @@ https://zhuanlan.zhihu.com/p/266604288
 
 图中的谱聚类详解
 
+https://mp.weixin.qq.com/s/0nC9Sc1xi9VBjyJSGtUfHA
+
+2020图核方法最新进展与未来挑战，151页pdf
+
 # 社交网络
 
 ## 信息传播模型

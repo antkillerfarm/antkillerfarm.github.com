@@ -7,7 +7,37 @@ category: Attention
 * toc
 {:toc}
 
-# BERT（续）
+# BERT
+
+## 概述（续）
+
+BERT算的上是Google暴力美学的新作了（2018.10）。如果用家用显卡GTX 1080Ti的话，大概需要几个月的训练时间。幸好Google已经提供了预训练的模型：
+
+https://github.com/google-research/bert/blob/master/multilingual.md
+
+这里有一个使用预训练模型的参考代码：
+
+https://github.com/macanv/BERT-BiLSMT-CRF-NER
+
+这里有一个可视化工具：
+
+https://github.com/jessevig/bertviz
+
+Tool for visualizing attention in the Transformer model(BERT, GPT-2, XLNet, and RoBERTa)
+
+https://github.com/thunlp/PLMpapers
+
+预训练语言模型关系图+必读论文列表，清华荣誉出品
+
+老规矩，最佳教程还是推荐Jay Alammar的：
+
+http://jalammar.github.io/illustrated-bert/
+
+图解BERT
+
+https://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/
+
+A Visual Guide to Using BERT for the First Time
 
 ## 基本结构
 
@@ -312,25 +342,3 @@ https://mp.weixin.qq.com/s/EozsQNQ2YrczRg18hTZBhA
 https://mp.weixin.qq.com/s/VfytCWa-h8CmUZW1RWAdnQ
 
 从XLNet的多流机制看最新预训练模型的研究进展
-
-# 轻量化BERT
-
-| Paper | Prune | Factor | Distill | W. Sharing | Quant. | Pre-train | Downstream |
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| Compressing BERT: Studying the Effects of Weight Pruning on Transfer Learning | Y |  |  |  |  | Y | Y |
-| Are Sixteen Heads Really Better than One? | Y |  |  |  |  |  | Y |
-| Pruning a BERT-based Question Answering Model | Y |  |  |  |  |  | Y |
-| Reducing Transformer Depth on Demand with Structured Dropout | Y |  |  |  |  | Y |  |
-| Reweighted Proximal Pruning for Large-Scale Language Representation | Y |  |  |  |  | Y |  |
-| Structured Pruning of Large Language Models |  | Y |  |  |  |  | Y |
-| ALBERT: A Lite BERT for Self-supervised Learning of Language Representations |  | Y |  | Y |  | Y |  |
-| Extreme Language Model Compression with Optimal Subwords and Shared Projections |  |  | Y |  |  | Y |  |
-| DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter |  |  | Y |  |  | Y |  |
-| Distilling Task-Specific Knowledge from BERT into Simple Neural Networks |  |  | Y |  |  |  | Y |
-| Distilling Transformers into Simple Neural Networks with Unlabeled Transfer Data |  |  | Y |  |  |  | Y |
-| Attentive Student Meets Multi-Task Teacher: Improved Knowledge Distillation for Pretrained Models |  |  | Y |  |  | Multi-task  | Y |
-| Patient Knowledge Distillation for BERT Model Compression |  |  | Y |  |  |  | Y |
-| TinyBERT: Distilling BERT for Natural Language Understanding |  |  | Y |  |  | Y | Y |
-| MobileBERT: Task-Agnostic Compression of BERT by Progressive Knowledge Transfer |  |  | Y |  |  | Y |  |
-| Q8BERT: Quantized 8Bit BERT |  |  |  |  | Y |  | Y |
-| Q-BERT: Hessian Based Ultra Low Precision Quantization of BERT |  |  |  |  | Y |  | Y |

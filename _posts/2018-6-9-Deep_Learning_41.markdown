@@ -61,7 +61,7 @@ Federated Learning: 架构
 
 ## 参考
 
->龙明盛，清华本科（2008）+博士（2016），迁移学习的最早提出者之一。清华大学副教授，博导。   
+>龙明盛，清华本科（2008）+博士（2014），迁移学习的最早提出者之一。清华大学副教授，博导。   
 >个人主页：   
 >http://ise.thss.tsinghua.edu.cn/~mlong/
 
@@ -84,6 +84,10 @@ https://www.zhihu.com/question/41979241
 https://mp.weixin.qq.com/s/ThwsfHME_2csqTlKuG5heg
 
 综述论文：四大类深度迁移学习
+
+https://mp.weixin.qq.com/s/l-a8W9CW9aUtYegJRxOVbA
+
+龙明盛：迁移学习理论与算法，59页ppt
 
 https://mp.weixin.qq.com/s/01WLhFsni1WRTYPgqoV0Ww
 

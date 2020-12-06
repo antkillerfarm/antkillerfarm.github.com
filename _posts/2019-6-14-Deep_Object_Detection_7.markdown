@@ -193,6 +193,8 @@ Objects as Points：预测目标中心，无需NMS等后处理操作
 
 # Anchor-Free
 
+![](/images/img4/OD.png)
+
 在前面的章节，我们已经简要的分析了Anchor Free和Anchor Base模型的差异，并介绍了两个Anchor-Free的模型——CornerNet和CenterNet。
 
 这里对其他比较重要的Anchor-Free模型做一个简单介绍。

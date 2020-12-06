@@ -7,7 +7,27 @@ category: Attention
 * toc
 {:toc}
 
-# 轻量化BERT（续）
+# 轻量化BERT
+
+| Paper | Prune | Factor | Distill | W. Sharing | Quant. | Pre-train | Downstream |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| Compressing BERT: Studying the Effects of Weight Pruning on Transfer Learning | Y |  |  |  |  | Y | Y |
+| Are Sixteen Heads Really Better than One? | Y |  |  |  |  |  | Y |
+| Pruning a BERT-based Question Answering Model | Y |  |  |  |  |  | Y |
+| Reducing Transformer Depth on Demand with Structured Dropout | Y |  |  |  |  | Y |  |
+| Reweighted Proximal Pruning for Large-Scale Language Representation | Y |  |  |  |  | Y |  |
+| Structured Pruning of Large Language Models |  | Y |  |  |  |  | Y |
+| ALBERT: A Lite BERT for Self-supervised Learning of Language Representations |  | Y |  | Y |  | Y |  |
+| Extreme Language Model Compression with Optimal Subwords and Shared Projections |  |  | Y |  |  | Y |  |
+| DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter |  |  | Y |  |  | Y |  |
+| Distilling Task-Specific Knowledge from BERT into Simple Neural Networks |  |  | Y |  |  |  | Y |
+| Distilling Transformers into Simple Neural Networks with Unlabeled Transfer Data |  |  | Y |  |  |  | Y |
+| Attentive Student Meets Multi-Task Teacher: Improved Knowledge Distillation for Pretrained Models |  |  | Y |  |  | Multi-task  | Y |
+| Patient Knowledge Distillation for BERT Model Compression |  |  | Y |  |  |  | Y |
+| TinyBERT: Distilling BERT for Natural Language Understanding |  |  | Y |  |  | Y | Y |
+| MobileBERT: Task-Agnostic Compression of BERT by Progressive Knowledge Transfer |  |  | Y |  |  | Y |  |
+| Q8BERT: Quantized 8Bit BERT |  |  |  |  | Y |  | Y |
+| Q-BERT: Hessian Based Ultra Low Precision Quantization of BERT |  |  |  |  | Y |  | Y |
 
 https://www.zhihu.com/question/347898375
 
@@ -80,6 +100,10 @@ MobileBERT：一个在资源有限设备上使用的BERT模型
 https://mp.weixin.qq.com/s/jBJvrR71OIov2aOucFfd6Q
 
 BERT模型压缩技术概览
+
+https://mp.weixin.qq.com/s/LXp6otaW34r0v8yc4TJNog
+
+LSRA: 轻量级Transformer，注意力长短搭配
 
 # Linformer
 
@@ -166,6 +190,10 @@ https://mp.weixin.qq.com/s/G4mFW8cn-ho3KGmbw5sSTw
 https://mp.weixin.qq.com/s/gar7zcl68W4oKnFPLFekoQ
 
 Attention增强的卷积网络
+
+https://zhuanlan.zhihu.com/p/308301901
+
+3W字长文带你轻松入门视觉transformer
 
 # BERT进阶
 
@@ -336,79 +364,3 @@ https://mp.weixin.qq.com/s/0luHJsw7WWJskJWGThR5qg
 https://mp.weixin.qq.com/s/IY8J09LvDAr8owYffKi5Dw
 
 五问BERT：深入理解NLP领域爆红的预训练模型
-
-https://zhuanlan.zhihu.com/p/106901954
-
-BERT, ELMo, & GPT-2: 这些上下文相关的表示到底有多上下文化？
-
-https://mp.weixin.qq.com/s/mkDmn4zy_s87kiiDIkx0VQ
-
-NLP的12种后BERT预训练方法
-
-https://www.zhihu.com/question/327450789
-
-Bert如何解决长文本问题？
-
-https://mp.weixin.qq.com/s/QTELpbr480AJsBINm-FHKQ
-
-代码也能预训练，微软&哈工大最新提出CodeBERT模型，支持自然-编程双语处理
-
-https://mp.weixin.qq.com/s/ZEWCcxTEuEMvQ5__t3gkBg
-
-BERT技术体系综述论文：40项分析探究BERT如何work
-
-https://mp.weixin.qq.com/s/OsfeAA_tbzAddh1eunwx2w
-
-关于BERT，面试官们都怎么问
-
-https://mp.weixin.qq.com/s/e3n_16uB-qGeGSaGwzlBDw
-
-这群工程师，业余将中文NLP推进了一大步（中文预训练模型）
-
-https://mp.weixin.qq.com/s/V4pbjP5na1OYp-TorUik8g
-
-详聊如何用BERT实现关系抽取
-
-https://mp.weixin.qq.com/s/s5YIG6rBEy6fZkFLh-CzoA
-
-后BERT时代生存指南之VL-BERT篇
-
-https://zhuanlan.zhihu.com/p/113326366
-
-如何训练并使用Bert
-
-https://mp.weixin.qq.com/s/dmHxEkmVFXcCGhv8eH91Tw
-
-从Word2Vec到BERT:上下文嵌入(Contextual Embedding)最新综述论文
-
-https://mp.weixin.qq.com/s/g6-NjoFMPpxjsh38X-wTFQ
-
-BERT，GPT-2这些顶尖工具到底该怎么用到我的模型里?
-
-https://mp.weixin.qq.com/s/N6xBFZ82dkSGCbj6vC5nLQ
-
-上下文预训练模型最全整理：原理、应用、开源代码、数据分享
-
-https://mp.weixin.qq.com/s/-6XpuO7_ve_EdSPCMeWE7g
-
-Attention isn’t all you need！BERT的力量之源远不止注意力
-
-https://mp.weixin.qq.com/s/Y2bs2QegRadSR7lbiFFnWg
-
-BERT一作Jacob Devlin斯坦福演讲PPT：BERT介绍与答疑
-
-https://zhuanlan.zhihu.com/p/62308732
-
-浅谈Bert：语言理解中的预训练编码器
-
-https://mp.weixin.qq.com/s/1Cz6js4kYdvc8g4oKjVPeA
-
-BERT烹饪之法：fintune的艺术
-
-https://mp.weixin.qq.com/s/nVM2Kxc_Mn7BAC6-Pig2Uw
-
-BERT模型的标准调优和花式调优
-
-https://mp.weixin.qq.com/s/FwmEIZ3ugeZBbLIGHmH-_g
-
-BERT之后，GLUE基准升级为SuperGLUE：难度更大

@@ -187,6 +187,14 @@ https://mp.weixin.qq.com/s/2Ylw8WVjsZ5WXw2H3_cFMg
 
 NLP集大成之文本分类
 
+https://mp.weixin.qq.com/s/3ClTiucQEGD06MYrxRrJLQ
+
+文本分类综述：迈向NLP大师的第一步（上）
+
+https://mp.weixin.qq.com/s/6CzRKpO88BainkJ_XffWmg
+
+文本分类综述：迈向NLP大师的第一步（中）
+
 ## 情感分析
 
 https://mp.weixin.qq.com/s/5VrZTMlNxbgZmaeOxBps_w

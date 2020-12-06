@@ -308,3 +308,7 @@ https://mp.weixin.qq.com/s/xMQA97k0USl69v1MC86HKA
 https://mp.weixin.qq.com/s/rMR98woa1y_sjSFgG24cGQ
 
 常见特征金字塔网络FPN及变体
+
+https://mp.weixin.qq.com/s/ZqNRxexEFRxVXI7-bGPx0A
+
+Feature Pyramid Network详解特征金字塔网络FPN的来龙去脉

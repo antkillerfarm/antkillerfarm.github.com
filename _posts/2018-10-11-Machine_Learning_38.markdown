@@ -213,6 +213,10 @@ https://mp.weixin.qq.com/s/sXIOEGWdjE4_NWjVIe2d3Q
 
 耶鲁大学等提出AdaBelief的新型优化器，速度快，训练稳，泛化强
 
+https://mp.weixin.qq.com/s/xeRBLkJTUs5wx2hZjyYeeQ
+
+那些年“号称”要超越Adam的优化器
+
 # 特征工程
 
 https://mp.weixin.qq.com/s/ibiElLIgrT3wYx3tDYMMTw

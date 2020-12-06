@@ -390,3 +390,11 @@ Darts: 可微结构搜索
 https://zhuanlan.zhihu.com/p/266102401
 
 Auto Seg-Loss: 自动损失函数设计
+
+https://mp.weixin.qq.com/s/y3SIK1sAscrWQuZ3mB9lew
+
+手动搜索超参数的一个简单方法
+
+https://mp.weixin.qq.com/s/ACxAAvvKK-DX5UDMe-RsXg
+
+最新《神经架构搜索NAS》教程，33页pdf

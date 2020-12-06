@@ -252,6 +252,10 @@ https://zhuanlan.zhihu.com/p/115014536
 
 全面总结！PTMs：NLP预训练模型
 
+https://mp.weixin.qq.com/s/WNsJ9WZdYxvT1UTYwjLTyg
+
+按照时间线帮你梳理10种预训练模型
+
 https://mp.weixin.qq.com/s/WDXGCC_MPK_sBCj4Bx6EDw
 
 从静态到动态，词表征近几十年发展回顾
@@ -385,31 +389,3 @@ https://mp.weixin.qq.com/s/hLt2SnVovrLeNpuMUH1OSg
 代码：
 
 https://github.com/google-research/bert
-
-BERT算的上是Google暴力美学的新作了（2018.10）。如果用家用显卡GTX 1080Ti的话，大概需要几个月的训练时间。幸好Google已经提供了预训练的模型：
-
-https://github.com/google-research/bert/blob/master/multilingual.md
-
-这里有一个使用预训练模型的参考代码：
-
-https://github.com/macanv/BERT-BiLSMT-CRF-NER
-
-这里有一个可视化工具：
-
-https://github.com/jessevig/bertviz
-
-Tool for visualizing attention in the Transformer model(BERT, GPT-2, XLNet, and RoBERTa)
-
-https://github.com/thunlp/PLMpapers
-
-预训练语言模型关系图+必读论文列表，清华荣誉出品
-
-老规矩，最佳教程还是推荐Jay Alammar的：
-
-http://jalammar.github.io/illustrated-bert/
-
-图解BERT
-
-https://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/
-
-A Visual Guide to Using BERT for the First Time

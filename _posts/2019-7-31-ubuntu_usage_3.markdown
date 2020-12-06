@@ -210,6 +210,26 @@ https://www.cnblogs.com/schips/p/10141278.html
 
 使用boot-repair对Windows+Ubuntu双系统引导修复
 
+# Ubuntu字体相关
+
+最近gitk中文显示不正常，明明系统的字体是很多的，但可以设置的却甚少。后来发现这里能够设置的并非系统字体，而只是X11字体。
+
+列出字体：
+
+`xlsfonts`
+
+找到系统字体文件夹，生成`fonts.dir`文件：
+
+`sudo mkfontscale -o fonts.dir .`
+
+加载`fonts.dir`文件：
+
+`xset +fp /usr/share/fonts/X11/misc`
+
+文泉驿字体是最知名的中文免费字体：
+
+`sudo apt install ttf-wqy-microhei ttf-wqy-zenhei`
+
 # Linux参考资源+
 
 https://mp.weixin.qq.com/s/QB-IHiCIWEu3bALm2Dp46Q
@@ -413,15 +433,3 @@ Linux并发与同步
 https://mp.weixin.qq.com/s/CAPU8bjJWobQs6JHHMasvQ
 
 Linux服务端最大并发数是多少？
-
-https://mp.weixin.qq.com/s/iKfWSfzauzNjcAvXPNhq0Q
-
-这些算法都不会还学什么操作系统
-
-https://mp.weixin.qq.com/s/gj6Zw8SvOdSZqRx8KP9wWw
-
-20张图揭开内存管理的迷雾，瞬间豁然开朗
-
-https://mp.weixin.qq.com/s/IQYUNzVgSOFUHB9c1SM0Bw
-
-10张图22段代码，万字长文带你搞懂虚拟内存模型和malloc内部原理

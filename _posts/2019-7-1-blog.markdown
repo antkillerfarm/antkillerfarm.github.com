@@ -145,12 +145,6 @@ category: essay
 
 # 电子科技史+
 
-https://baike.baidu.com/item/Full Mask - MPW/16508899
-
-Full Mask和MPW都是集成电路的一种流片（将设计结果交出去进行生产制造）方式。Full Mask是“全掩膜”的意思，即制造流程中的全部掩膜都为某个设计服务；而MPW（Multi Project Wafer），直译为多项目晶圆，即多个项目共享某个晶圆，也即同一次制造流程可以承担多个IC设计的制造任务。
-
-----
-
 1938年，楚泽（Konrad Zuse）发明了世界上第一台二进制计算机，称为 Z1（Zuse1）。在此基础上，他陆续制造了 Z2、Z3、Z - 计算机。其中，他在 1941 年制造出的 Z3 计算机是世界上第一台可编程的计算机，这是具有当时世界上最高水平编程语言的计算机。而且，Z3几乎实现了计算机之父冯·诺依曼在1946年所定义的现代计算机所有功能，楚泽也因此被称为现代计算机发明人之一。
 
 https://mp.weixin.qq.com/s/mcxD1TaD-r9alNydWQQ0Og
@@ -336,3 +330,15 @@ https://mp.weixin.qq.com/s/wFw03-uf7qCz7TNkFWqaBw
 https://mp.weixin.qq.com/s/E9Q1ceL9lZ7CkoDT61ioMg
 
 贝尔实验室的百年沉浮
+
+https://mp.weixin.qq.com/s/ZWn4k8AoT63Lgl77SxzQow
+
+英特尔史上最强的竞争对手，不是AMD！
+
+https://mp.weixin.qq.com/s/TLe6qAAxWJZnKUXo6EGp5g
+
+上海滩无线和芯片30年史
+
+https://mp.weixin.qq.com/s/CWCPmfLrh3FY2VtpmiWJug
+
+揭秘GPS背后的“隐藏人物”！从小乡村到海军基地，这位女程序员把“地球”带进日常（Gladys West）

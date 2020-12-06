@@ -129,6 +129,10 @@ https://mp.weixin.qq.com/s/MtIPY1dJky27vZ9nAgS2cQ
 
 Wide&Deep模型的八个实战细节
 
+https://www.zhihu.com/question/364517083
+
+DNN可以进行高阶特征交互，为什么Wide&Deep和DeepFM等模型仍然需要显式构造Wide部分？
+
 ## DeepFM
 
 https://mp.weixin.qq.com/s/JNGKz4-fWG4ygl7f6UkxcQ

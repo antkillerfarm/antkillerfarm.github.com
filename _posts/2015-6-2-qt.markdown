@@ -170,6 +170,10 @@ https://mp.weixin.qq.com/s/baYuX8aCwQ9PP6k7TDl2Ww
 
 Java线程池实现原理及其在美团业务中的实践
 
+https://mp.weixin.qq.com/s/8tFPVJfGJ0G8FUu9m5TCug
+
+高并发中的线程与线程池
+
 # WebService
 
 WebService经过近二十年的发展，已经有非常多的框架了。知名的有：Axis1、Axis2、Xfire、CXF、JWS等。
@@ -184,7 +188,11 @@ JWS包含了JAX-WS、JAX-RS、JAXB、JAXR、SAAJ、StAX等组件。这里主要�
 
 http://www.blogjava.net/zjhiphop/archive/2009/04/29/webservice.html
 
+java调用webservice的各种方法总结
+
 http://blog.csdn.net/lifetragedy/article/details/7205832
+
+5天学会jaxws-webservice编程
 
 以上两篇是中文blog。
 

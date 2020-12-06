@@ -392,3 +392,11 @@ https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=400189223&idx=1&sn=1cb32be
 https://mp.weixin.qq.com/s/PXYt4FYWlldUmvryh53kVg
 
 滴滴单通道语音分离与目标说话人提取和抑制技术进展
+
+https://mp.weixin.qq.com/s/MXAxL753oEUPSVtL_H34jA
+
+语音识别中Chain Model的原理和实践
+
+https://mp.weixin.qq.com/s/7C7UFfE2dIM8ZtvwW8kbWQ
+
+使用TensorFlow Lite快速构建移动端声音分类应用

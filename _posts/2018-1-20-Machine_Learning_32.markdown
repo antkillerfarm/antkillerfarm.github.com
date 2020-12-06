@@ -165,7 +165,7 @@ BiLSTM+CRF命名实体识别：达观杯败走记（下篇）
 
 ## 概述
 
-t-SNE(t-distributed stochastic neighbor embedding)是用于降维的一种机器学习算法，是由Laurens van der Maaten和Geoffrey Hinton在08年提出来。此外，t-SNE 是一种非线性降维算法，非常适用于高维数据降维到2维或者3维，进行可视化。
+t-SNE(t-distributed stochastic neighbor embedding)是用于降维的一种机器学习算法，是由Laurens van der Maaten和Geoffrey Hinton在08年提出来。此外，t-SNE是一种非线性降维算法，非常适用于高维数据降维到2维或者3维，进行可视化。
 
 论文：
 
@@ -197,7 +197,7 @@ PCA的相关内容参见《机器学习（十六）》。
 
 在介绍t-SNE之前，我们首先介绍一下SNE（Stochastic Neighbor Embedding）的原理。
 
-假设我们有数据集X，它共有N个数据点。每一个数据点$$x_i$$的维度为D，我们希望降低为d维。在一般用于可视化的条件下，d的取值为 2，即在平面上表示出所有数据。
+假设我们有数据集X，它共有N个数据点。每一个数据点$$x_i$$的维度为D，我们希望降低为d维。在一般用于可视化的条件下，d的取值为2，即在平面上表示出所有数据。
 
 SNE将数据点间的欧几里德距离转化为条件概率来表征相似性：
 

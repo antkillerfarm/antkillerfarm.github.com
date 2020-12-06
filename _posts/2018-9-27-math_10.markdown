@@ -208,6 +208,10 @@ https://blog.csdn.net/qq_45011547/article/details/90147363
 
 反常积分的性质与收敛判别
 
+https://mp.weixin.qq.com/s/JGhAp4FPmEjwOpI4EsXe0A
+
+留数定理与积分
+
 # 平稳离散时间随机过程
 
 ## Toeplitz矩阵

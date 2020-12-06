@@ -221,6 +221,10 @@ https://mp.weixin.qq.com/s/OEbhKBBbo-eo4NWmLYmGDg
 
 有关部分北京市民“穿越”的科学解读
 
+https://mp.weixin.qq.com/s/wX-BXGDAZGm8FYc6-FbUhg
+
+用NTS保证NTP的安全
+
 ## socket通信基本流程
 
 ### TCP
@@ -296,7 +300,7 @@ http://blog.shengbin.me/posts/multi-user-video-conference-based-on-webrtc
 
 基于WebRTC的多人视频会议
 
-# 世说新语+++++
+# 世说新语++++
 
 ## 2020.11（续）
 

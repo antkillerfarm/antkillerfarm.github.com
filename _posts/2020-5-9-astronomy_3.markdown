@@ -57,6 +57,10 @@ https://mp.weixin.qq.com/s/MZrFA6vWEl_hJnRBCFciLw
 
 中国探月工程“三步走”收官：嫦五配胖五，回家之前挖点土
 
+https://mp.weixin.qq.com/s/dZYtp_olAppIB5Av3CKydw
+
+嫦娥五号完成“钻取”采样及封装，正进行“表取”
+
 # 火星探测
 
 在太空动力学，霍曼转移轨道（或译为郝曼转移轨道，Hohmann transfer orbit）是一种变换太空船轨道的方法，途中只需两次引擎推进，相对地节省燃料。此种轨道操纵名称来自Walter Hohmann，他于1925年出版了相关著作。

@@ -259,7 +259,11 @@ https://mp.weixin.qq.com/s/2rX6iRTYBk47V29fSTAMQQ
 
 https://mp.weixin.qq.com/s/PuvTkDhwbYv8TK8t-Zhcug
 
-基于卡尔曼滤波的注意力机制—广告点击率预估中的用户行为建模
+基于卡尔曼滤波的注意力机制—广告点击率预估中的用户行为建模   
+
+https://longaspire.github.io/blog/%E5%8D%A1%E5%B0%94%E6%9B%BC%E6%BB%A4%E6%B3%A2/
+
+卡尔曼滤波器
 
 # Adaboost
 

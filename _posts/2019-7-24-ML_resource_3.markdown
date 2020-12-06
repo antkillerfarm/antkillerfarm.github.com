@@ -313,6 +313,16 @@ Java的战争(后续)
 
 # 两弹一星+++
 
+黑人牙膏品牌最早于1933年由宁波商人严柏林和严中立兄弟创建于上海。严氏兄弟在上海公共租界时期创立好来药物，也就是现有好来化工的前身。其商标原先为戴着黑帽、涂黑脸的男子咧嘴笑，露出洁白牙齿，英文名‘DARKIE’（黑人）是对于非裔人士的蔑称。由于‘DARKIE’具有种族歧视意涵，该品牌1989年改为‘DARLIE’。
+
+在历史上，南方的白人常常称年长的黑人为“叔叔”和“阿姨”，而不是表示尊敬的“先生”或“女士”。
+
+https://finance.sina.com.cn/stock/usstock/c/2020-06-21/doc-iirczymk8124657.shtml
+
+在中国叫了80年的“黑人牙膏“突然要改名了！背后原因竟是....
+
+----
+
 ![](/images/img3/top10.png)
 
 https://mp.weixin.qq.com/s/1NXjgkr3xWDzqm7Y-9x7-Q
@@ -352,3 +362,11 @@ https://mp.weixin.qq.com/s/NQ4OiPgguAVkRPBn1uEYjg
 https://mp.weixin.qq.com/s/z0FdqtVOmhv1mbVRJ42UFA
 
 “奋斗者”号再探万米深海，制造一个深潜器到底有多难？
+
+https://mp.weixin.qq.com/s/toX25yTvQWnwid26oOXROA
+
+深潜海底10909
+
+https://zhuanlan.zhihu.com/p/19803854
+
+海洋石油981事件始末

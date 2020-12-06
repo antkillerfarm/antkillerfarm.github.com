@@ -310,6 +310,18 @@ MTD(memory technology device):内存技术设备，是linux用于描述ROM，NAN
 
 # Linux参考资源++
 
+https://mp.weixin.qq.com/s/iKfWSfzauzNjcAvXPNhq0Q
+
+这些算法都不会还学什么操作系统
+
+https://mp.weixin.qq.com/s/gj6Zw8SvOdSZqRx8KP9wWw
+
+20张图揭开内存管理的迷雾，瞬间豁然开朗
+
+https://mp.weixin.qq.com/s/IQYUNzVgSOFUHB9c1SM0Bw
+
+10张图22段代码，万字长文带你搞懂虚拟内存模型和malloc内部原理
+
 http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html
 
 Systemd入门教程：命令篇
@@ -329,7 +341,3 @@ https://mp.weixin.qq.com/s/wmzwvnOToqCkKJz5yw-USQ
 https://mp.weixin.qq.com/s/30Zh_8H6QfDgJuG9e9ORSQ
 
 使用gdb调试多进程程序
-
-https://mp.weixin.qq.com/s/4ZdnacKuqkpWTso6P1Rmjg
-
-如何调试多线程程序

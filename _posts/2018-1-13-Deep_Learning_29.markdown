@@ -59,6 +59,10 @@ https://zhuanlan.zhihu.com/p/57168713
 
 深入理解图注意力机制
 
+https://mp.weixin.qq.com/s/7LfJ8wDr4K6cVunb8Q_83g
+
+图注意力网络（GAT）详解
+
 ## DeepWalk
 
 https://mp.weixin.qq.com/s/SXnRyUj_mMs8UEtNyP6qNw

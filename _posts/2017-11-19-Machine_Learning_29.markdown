@@ -187,9 +187,9 @@ Beam Search（集束搜索）是一种启发式图搜索算法，通常用在图
 
 当Beam Width为1时，也就是著名的A*算法了。
 
-Beam Search主要用于机器翻译、语音识别等系统。这类系统虽然从理论来说，也就是个多分类系统，然而由于分类数等于词汇数，简单的套用softmax之类的多分类方案，明显是计算量过于巨大了。
+https://mp.weixin.qq.com/s/R7oxzvlTZfyhtxc2wkgbWQ
 
-PS：中文验证码识别估计也可以采用该技术。
+你一直在用的Beam Search，是否真的有效？
 
 ## Beam Search与Viterbi算法
 

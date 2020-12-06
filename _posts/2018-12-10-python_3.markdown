@@ -414,6 +414,10 @@ https://mp.weixin.qq.com/s/3CePY1ljNBSo9TEtitksrw
 
 为什么Python多线程无法利用多核
 
+https://mp.weixin.qq.com/s/6zVU6i75hZ3ZXZAmW0G5Mw
+
+非常适合小白的Asyncio教程
+
 ## mypy
 
 mypy是一个针对python语言的静态类型检查工具。

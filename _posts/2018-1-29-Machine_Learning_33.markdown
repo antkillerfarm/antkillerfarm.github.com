@@ -81,6 +81,14 @@ https://mp.weixin.qq.com/s/qHOmUJgalvxwEBCBiiR7ig
 
 t-SNE
 
+https://mp.weixin.qq.com/s/EaeVywxcQX3goW7WqYiOBA
+
+探究Softmax的替代品：exp(x)的偶次泰勒展开式总是正的
+
+https://mp.weixin.qq.com/s/GEagy8-BwWcuWgzG9e8XbA
+
+t-SNE：可视化效果最好的降维算法
+
 # 机器学习的算法体系&相关术语表
 
 ## 算法体系

@@ -223,6 +223,10 @@ https://mp.weixin.qq.com/s/uHrRBS3Ju9MAWbaukiGnOA
 
 二阶梯度优化新崛起，超越Adam，Transformer只需一半迭代量
 
+https://mp.weixin.qq.com/s/JOyHFbtO7v0DgCKVNmhyYQ
+
+拟牛顿法：BFGS，DFP，DM条件
+
 ## 非梯度优化
 
 对于深度学习模型的优化问题来说，随机梯度下降（SGD）是一种被广为使用方法。然而，实际上 SGD 并非我们唯一的选择。当我们使用一个“黑盒算法”时，即使不知道目标函数 f(x):Rn→R 的精确解析形式（因此不能计算梯度或 Hessian 矩阵）你也可以对 f(x) 进行评估。经典的黑盒优化方法包括“模拟退火算法”、“爬山法”以及“单纯形法”。演化策略（ES）是一类诞生于演化算法（EA）黑盒优化算法。
