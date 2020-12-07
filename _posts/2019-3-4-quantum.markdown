@@ -373,3 +373,11 @@ https://mp.weixin.qq.com/s/t4xwQUoQ8FAWetvft7RnqQ
 https://mp.weixin.qq.com/s/lykIPcbYDOVOy6W-Rd7e2g
 
 拥有惊人弹跳力的马里奥，究竟是不是人类？
+
+https://mp.weixin.qq.com/s/PYRDVMgL1eFHuwlCBsuGng
+
+3W字光谱分析方法综述
+
+https://mp.weixin.qq.com/s/aKqyt60xrPrw-W2u92ApMw
+
+尼古拉·特斯拉，到底有多神？

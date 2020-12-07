@@ -183,6 +183,10 @@ https://mp.weixin.qq.com/s/U7JQTURr4Ey9SS9s_DKBHA
 
 基于监督学习+自监督学习的智能抠图，精确到发丝
 
+https://mp.weixin.qq.com/s/3OtrmC4htM4m2gUL8LfV3g
+
+不用绿幕也能实时抠图，商汤等提出只需单张图像、单个模型的新方法MODNet
+
 ## 换脸技术
 
 https://mp.weixin.qq.com/s/X_cBFBc42qUFpuNGBtISRw

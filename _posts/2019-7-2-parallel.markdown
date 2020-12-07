@@ -372,3 +372,7 @@ https://mp.weixin.qq.com/s/Np4w7RC2JFlB7ZGIduu71w
 https://mp.weixin.qq.com/s/9k6PDusoDHjmz58HAZxZcw
 
 GPipe: 小批量流水线带来的大模型训练
+
+https://mp.weixin.qq.com/s/DwjvEn04lGzKU8mDu-5q4g
+
+大幅提升训练性能，字节跳动与清华提出新型分布式DNN训练架构

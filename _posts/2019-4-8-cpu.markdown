@@ -97,6 +97,8 @@ https://mp.weixin.qq.com/s/YDFtuUlPtAYnJRYDuctOuA
 
 ![](/images/img2/ASML.jpg)
 
+![](/images/img4/photoengraving.png)
+
 参考：
 
 https://mp.weixin.qq.com/s/NZGNrO_LxNc6qrIdofOIfQ
@@ -126,6 +128,10 @@ https://mp.weixin.qq.com/s/jqP52LFcmd5oGRLBfE2J_A
 https://mp.weixin.qq.com/s/YvzxV5NLz4FkKO71bxpAIA
 
 给孩子讲讲光刻机吧
+
+https://mp.weixin.qq.com/s/6Uod0Ngw4wDIISJZVDQ92A
+
+光刻缘何成为卡脖子技术？
 
 ## 芯片制造
 
@@ -344,15 +350,3 @@ CPU缓存一致性协议
 https://mp.weixin.qq.com/s/ziJ8OFiLA1it3sQvycN7Mg
 
 翻越缓存的三座大山
-
-https://zhuanlan.zhihu.com/p/63494668
-
-显存为什么不能当内存使？内存、Cache和Cache一致性
-
-https://mp.weixin.qq.com/s/AekR-mv9EOD-4V5SKqI9YQ
-
-一文看懂缓存
-
-https://mp.weixin.qq.com/s/FY8sEX4acEUpCu_6ntArYw
-
-CPU缓存L1/L2/L3工作原理

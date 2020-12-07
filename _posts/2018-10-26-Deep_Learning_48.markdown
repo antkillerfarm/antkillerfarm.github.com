@@ -301,6 +301,10 @@ https://mp.weixin.qq.com/s/l015FcoP-P2z5BmaTNXpvg
 
 使用Sentence Transformers和Faiss构建语义搜索引擎
 
+https://mp.weixin.qq.com/s/dO3eDlhCSYRh3pjbI_gsQg
+
+深度学习图像检索(CBIR): 十年之大综述
+
 # 人脸检测/识别+
 
 https://mp.weixin.qq.com/s/pmnb_WnncL12T1IZoso5DA

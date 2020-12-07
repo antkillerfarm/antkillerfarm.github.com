@@ -373,7 +373,7 @@ http://blog.csdn.net/jiuqiyuliang/article/details/46701559
 
 深入浅出JMS(一)--JMS基本概念
 
-# 世说新语++++++
+# 世说新语+++++++
 
 ## 2020.11（续）
 

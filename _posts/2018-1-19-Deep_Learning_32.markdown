@@ -250,6 +250,12 @@ DARTS：基于梯度下降的经典网络搜索方法，开启端到端的网络
 
 # 图像超分辨率进阶
 
+![](/images/img4/SR.jpg)
+
+https://zhuanlan.zhihu.com/p/266472242
+
+一文带你入门超分网络及其渐进式上采样方法
+
 https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
 
 NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络

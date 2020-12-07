@@ -317,6 +317,10 @@ https://mp.weixin.qq.com/s/IitK59eds2264sQ3Ej-aog
 
 知识图谱在小米的应用与探索
 
+https://mp.weixin.qq.com/s/iVIoaZxhS1EyC2etRnBf4Q
+
+行业知识图谱构建最新进展
+
 # AI工具+
 
 https://mp.weixin.qq.com/s/3eoN0YHI84oomdTZO6TrvQ

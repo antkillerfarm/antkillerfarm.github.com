@@ -367,7 +367,7 @@ https://www.cnblogs.com/kuoAT/p/9590606.html
 
 深入分析GCC（王亚刚 著）
 
-# 世说新语++
+# 世说新语+++
 
 ## 2020.10（续）
 

@@ -398,3 +398,7 @@ https://mp.weixin.qq.com/s/y3SIK1sAscrWQuZ3mB9lew
 https://mp.weixin.qq.com/s/ACxAAvvKK-DX5UDMe-RsXg
 
 最新《神经架构搜索NAS》教程，33页pdf
+
+https://mp.weixin.qq.com/s/2hSmI8xo1jUHgWrEu3YBIA
+
+一文读懂目前大热的AutoML与NAS
