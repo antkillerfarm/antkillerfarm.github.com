@@ -261,27 +261,3 @@ https://www.geogebra.org/
 官网：
 
 http://maxima.sourceforge.net/
-
-# 两弹一星++
-
-1914年，杰克伦敦出版了一部短篇小说《无与伦比的入侵》（The Unparalleled Invasion）。
-
-小说中的中国，是一个爱好和平的国家，不想战争，不想扩张，希望的就是和平崛起。但西方世界对中国和平崛起的回应是：用细菌战灭亡了几乎全部中国人，再瘟疫后侥幸逃生的幸存者，也被西方军队一个不留的全部杀死。
-
-当然，这只是小说。但，这是一个广受欢迎的，所谓的”进步“作家，正式出版的小说。
-
-原文：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/doc/The%20Unparalleled%20Invasion.txt
-
-https://mp.weixin.qq.com/s/_98VQ5Ck5ZRm8xIe5qJuog
-
-西方对中国的恐惧
-
-----
-
-20世纪60年代，中国击落美国U－2飞机的消息震动世界。
-
-https://mp.weixin.qq.com/s/ej98QNWc3GmzKkS7HXHhOQ
-
-美军最顶尖的飞机，全世界只击落7架，5架毁在这个中国老人手中（雷达专家张履谦，朱镕基的清华舍友）

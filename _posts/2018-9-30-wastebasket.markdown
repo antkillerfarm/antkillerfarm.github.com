@@ -341,6 +341,17 @@ https://www.zhihu.com/answer/303210942
 
 瓦伊昂大坝
 
+----
+
+<video  id="myvideo" width="100%" height="auto" controls="controls" loop="loop">
+    你的浏览器不支持HTML5播放此视频 
+    <source src="/images/img4/gun.mp4" type='video/mp4' />
+</video>
+
+https://www.zhihu.com/question/22910286
+
+日本92式重机枪的弹板供弹系统被诟病为一个败笔，为什么不直接在战场上改装成弹链供弹呢？
+
 # 气象
 
 ![](/images/img3/Hadley_Cell.png)

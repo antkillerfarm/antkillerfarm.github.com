@@ -300,17 +300,3 @@ https://mp.weixin.qq.com/s/Qld7bVs9ASJ23vAhE0h7_w
 https://cooltowel.github.io/2018/04/16/%E5%9B%BD%E9%99%85%E5%A4%A9%E7%90%83%E5%8F%82%E8%80%83%E7%B3%BB%E7%BB%9F%E2%80%94%E2%80%94ICRS%20%E7%AE%80%E4%BB%8B/
 
 国际天球参考系统——ICRS简介
-
-# 两弹一星
-
-https://zhuanlan.zhihu.com/p/307526876
-
-82年了，中国人即将打通这条血泪之路！（滇缅铁路）
-
-https://zhuanlan.zhihu.com/p/272562189
-
-耗时8年才修通，这条536公里的公路为何这样难修？（刚果（布）一号公路）
-
-https://zhuanlan.zhihu.com/p/77853212
-
-火车通过仅需7分钟的大柱山隧道，为什么修通它却要用13年？
