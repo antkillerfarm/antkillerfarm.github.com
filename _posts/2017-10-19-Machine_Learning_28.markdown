@@ -93,6 +93,10 @@ https://mp.weixin.qq.com/s/Gxgm8r5wqZn-oUS13HC5Xg
 
 如何选择最佳的最近邻算法
 
+https://mp.weixin.qq.com/s/Vzj0xxpW-xBceOpiwy0WPw
+
+Facebook工程实践：语义向量召回之ANN检索
+
 # AutoML
 
 ## 概述

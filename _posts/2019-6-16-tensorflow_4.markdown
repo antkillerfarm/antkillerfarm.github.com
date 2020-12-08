@@ -7,6 +7,38 @@ category: AI
 * toc
 {:toc}
 
+# 我的TensorFlow实践
+
+## MNIST+Softmax
+
+代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_mnist.py
+
+## MNIST+CNN
+
+代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_cnn.py
+
+第一个例子中，我对CPU的计算能力还没有切肤之痛，但在这里使用CPU差不多要花半个小时时间。。。
+
+## 框架怀古（2017.9）
+
+http://deeplearning.net/
+
+这个网站是Theano的主站，也是我最早接触DL时浏览的网站。其时，我虽然对DL有浓厚的兴趣，但尚未以此作为工作内容。
+
+从该网站提供的招聘信息来看，Caffe、Theano、Torch是当时主流的三大框架库。
+
+岂料时隔一年半载之后，这三大框架都渐趋式微。
+
+Caffe被Caffe 2替代，但使用的广泛度仍超过后者。
+
+Theano被同样基于计算图的TensorFlow淘汰。2017年9月停止更新。
+
+Torch相对变动最小，它被PyTorch替代。这更可以看作是python对于lua的胜利。
+
 # TensorFlow
 
 https://mp.weixin.qq.com/s/t1QFIOq-VBNOrSm0zW-PlQ
@@ -368,63 +400,3 @@ https://mp.weixin.qq.com/s/ntHkMIef1o2-FF-AJf_bZQ
 https://mp.weixin.qq.com/s/7rTmEBfh613SrNnTQvfSjw
 
 懒人福利：不写代码调优深度模型，谷歌开源的“What-If”了解一下
-
-https://mp.weixin.qq.com/s/eX3LWYiSH-KObH_7F_3QCA
-
-TensorFlow 1.11.0发布，一键多GPU
-
-https://mp.weixin.qq.com/s/316VVXLQfeIsKNk4ld-VRw
-
-TensorFlow语义分割套件开源了ECCV18旷视科技BiSeNet实时分割算法
-
-https://mp.weixin.qq.com/s/XI1J4ardEWKP4UQ4IXZGTQ
-
-TensorFlow Hub,给您带来全新的Web体验
-
-http://www.jianshu.com/p/1da012a83b74
-
-利用TensorFlow实现排序和搜索算法
-
-https://mp.weixin.qq.com/s/oEqMjOTj8xpd3sg60ZUhqA
-
-TensorFlow的c++实践及各种坑
-
-https://mp.weixin.qq.com/s/-5RCRl9ztQ2dQmX00QvfvQ
-
-在Python和TensorFlow上构建Word2Vec词嵌入模型
-
-https://mp.weixin.qq.com/s/Nyjp0mZxcn04vLKjJXLSaw
-
-如何用TensorFlow在安卓设备上实现深度学习推断
-
-https://mp.weixin.qq.com/s/OVWbxBNc4i0_5jgy06xS1A
-
-基于Tensorflow Estimators的文本分类
-
-https://mp.weixin.qq.com/s/c_2_9gvOynHaVW6pi4qQjQ
-
-用TensorFlow让机器人唱首歌给你听
-
-https://mp.weixin.qq.com/s/hn-LqyREkusxP2TOWfTJ6g
-
-使用TensorFlow官方Java API调用TensorFlow模型
-
-https://mp.weixin.qq.com/s/kS92vYyeHLc38RGc_4CZbg
-
-如何应用TFGAN快速实践生成对抗网络？
-
-https://mp.weixin.qq.com/s/hquOoKeeHQXqWcHM6Bkvbw
-
-如何训练一个简单的音频识别网络
-
-https://mp.weixin.qq.com/s/aWez5FYXXnRnDbb0zcXFXQ
-
-如何在TensorFlow中训练提升树模型
-
-https://mp.weixin.qq.com/s/kEowgNPVS1nAGBPbzkatlQ
-
-如何构建高可读性和高可重用的TensorFlow模型
-
-https://mp.weixin.qq.com/s/O_IN39FBVPeD5fRYBsPuZQ
-
-用TensorFlow开发问答系统

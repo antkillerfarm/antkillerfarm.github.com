@@ -247,6 +247,10 @@ https://mp.weixin.qq.com/s/SYlaIkuXBqFrbZ-gDMYqtA
 
 高并发高性能服务器是如何实现的
 
+https://mp.weixin.qq.com/s/73eaj0qvhUFWGbDA4H2MNQ
+
+读取文件时，程序经历了什么？
+
 # 世说新语+++++++++
 
 ## 2020.12

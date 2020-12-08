@@ -206,6 +206,10 @@ https://mp.weixin.qq.com/s/fMkxWLGSKQm_3fyfLgbQew
 
 详解Prophet模型以及代码示例
 
+https://mp.weixin.qq.com/s/s3R-_cuTYR7Z8w9DhlxifQ
+
+NeuralProphet：基于神经网络的时间序列建模库
+
 ## Lebesgue积分
 
 ![](/images/img3/Riemann_Lebesgue.jpg)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十一）——依存分析
+title:  深度学习（三十一）——依存分析, MobileNet
 category: DL 
 ---
 
@@ -258,6 +258,52 @@ https://blog.csdn.net/zwqhehe/article/details/77025035
 https://mp.weixin.qq.com/s/tjawT2-bhPrit0Fd4knSgA
 
 基于回声状态网络预测股票价格
+
+# MobileNet
+
+论文：
+
+《MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications》
+
+代码：
+
+https://github.com/Zehaos/MobileNet
+
+![](/images/article/dwl_pwl.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/f3bmtbCY5BfA4v3movwLVg
+
+向手机端神经网络进发：MobileNet压缩指南
+
+https://mp.weixin.qq.com/s/mcK8M6pnHiZZRAkYVdaYGQ
+
+MobileNet在手机端上的速度评测：iPhone 8 Plus竟不如iPhone 7 Plus
+
+https://mp.weixin.qq.com/s/2XqBeq3N4mvu05S1Jo2UwA
+
+CNN模型之MobileNet
+
+https://mp.weixin.qq.com/s/fdgaDoYm2sfjqO2esv7jyA
+
+Google论文解读：轻量化卷积神经网络MobileNetV2
+
+https://mp.weixin.qq.com/s/7vFxmvRZuM2DqSYN7C88SA
+
+谷歌发布MobileNetV2：可做语义分割的下一代移动端计算机视觉架构
+
+https://mp.weixin.qq.com/s/lu0GHCpWCmogkmHRKnJ8zQ
+
+浅析两代MobileNet
+
+https://mp.weixin.qq.com/s/T6S1_cFXPEuhRAkJo2m8Ig
+
+轻量级CNN网络之MobileNetv2
+
+https://mp.weixin.qq.com/s/RRu3r_dokORhpSq3eyrPDQ
+
+为什么MobileNet及其变体如此之快？
 
 # 目标检测进阶+++
 

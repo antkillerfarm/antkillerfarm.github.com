@@ -105,6 +105,10 @@ http://www.jos.org.cn/jos/ch/reader/create_pdf.aspx?file_no=5563
 
 基于多面体模型的编译“黑魔法”
 
+https://zhuanlan.zhihu.com/p/310142893
+
+编译器领域的多面体模型
+
 https://zhuanlan.zhihu.com/p/111680367
 
 Polyhedral Model, Interval Analysis and Compilers

@@ -9,6 +9,66 @@ category: AI
 
 # TensorFlow
 
+https://mp.weixin.qq.com/s/eX3LWYiSH-KObH_7F_3QCA
+
+TensorFlow 1.11.0发布，一键多GPU
+
+https://mp.weixin.qq.com/s/316VVXLQfeIsKNk4ld-VRw
+
+TensorFlow语义分割套件开源了ECCV18旷视科技BiSeNet实时分割算法
+
+https://mp.weixin.qq.com/s/XI1J4ardEWKP4UQ4IXZGTQ
+
+TensorFlow Hub,给您带来全新的Web体验
+
+http://www.jianshu.com/p/1da012a83b74
+
+利用TensorFlow实现排序和搜索算法
+
+https://mp.weixin.qq.com/s/oEqMjOTj8xpd3sg60ZUhqA
+
+TensorFlow的c++实践及各种坑
+
+https://mp.weixin.qq.com/s/-5RCRl9ztQ2dQmX00QvfvQ
+
+在Python和TensorFlow上构建Word2Vec词嵌入模型
+
+https://mp.weixin.qq.com/s/Nyjp0mZxcn04vLKjJXLSaw
+
+如何用TensorFlow在安卓设备上实现深度学习推断
+
+https://mp.weixin.qq.com/s/OVWbxBNc4i0_5jgy06xS1A
+
+基于Tensorflow Estimators的文本分类
+
+https://mp.weixin.qq.com/s/c_2_9gvOynHaVW6pi4qQjQ
+
+用TensorFlow让机器人唱首歌给你听
+
+https://mp.weixin.qq.com/s/hn-LqyREkusxP2TOWfTJ6g
+
+使用TensorFlow官方Java API调用TensorFlow模型
+
+https://mp.weixin.qq.com/s/kS92vYyeHLc38RGc_4CZbg
+
+如何应用TFGAN快速实践生成对抗网络？
+
+https://mp.weixin.qq.com/s/hquOoKeeHQXqWcHM6Bkvbw
+
+如何训练一个简单的音频识别网络
+
+https://mp.weixin.qq.com/s/aWez5FYXXnRnDbb0zcXFXQ
+
+如何在TensorFlow中训练提升树模型
+
+https://mp.weixin.qq.com/s/kEowgNPVS1nAGBPbzkatlQ
+
+如何构建高可读性和高可重用的TensorFlow模型
+
+https://mp.weixin.qq.com/s/O_IN39FBVPeD5fRYBsPuZQ
+
+用TensorFlow开发问答系统
+
 https://mp.weixin.qq.com/s/8Hrq_z8s_5ms6Q_6OOaU-g
 
 如何使用TensorFlow和自编码器模型生成手写数字
@@ -370,49 +430,3 @@ http://teawater.github.io/
 https://www.cnblogs.com/kuoAT/p/9590606.html
 
 深入分析GCC（王亚刚 著）
-
-# 世说新语+++
-
-## 2020.10（续）
-
-英国18世纪作家、评论家塞缪尔·约翰逊现在一般被称为约翰逊博士，他当年考上了牛津大学，但因为父亲生意失败，无钱交纳学费，被迫从牛津退学。他给报纸写稿挣钱。后来有出版商邀请他编一部英文词典，词典出版20年后，牛津大学给了他博士学位。所以现在人们都称他为约翰逊博士。
-
-----
-
-https://new.qq.com/omn/20201024/20201024A01TSJ00.html
-
-清朝满洲的八旗由什么姓氏掌握？旗主又是怎么更迭的？
-
-----
-
-金戈铁马入东陵，壮士长干斩妖清。
-
-弘历狗头悬碧树，慈禧犬尸喂苍鹰。
-
-驱除鞑虏复中华，尽除螨虫荡膻腥。
-
-至今神州犹传诵，考古当如孙殿英。
-
-“考古专家”孙殿英之子“摸金校尉”孙天义，退休后留在陕西为黄帝墓守灵，任陕西省政协副主席，黄帝陵基金会会长。
-
-明陵的地下结构复杂，墓道九曲十八弯，地宫虽然也位于中轴线上，但墓道却是蛇形的（孝陵，长陵，定陵皆如此），墓道口可能出现在圆形宝城墙的任意一个方向。这样一来，除非极其幸运，否则理论上只有挖出一条环绕宝城的环形探沟才能找到墓道口。
-
-反观清陵就耿直得令人瞠目，几乎一个模子刻出来的：包括墓道在内，所有建筑都在中轴线，诚实得可怕。过了方城明楼就是哑巴院，墓道口就在哑巴院琉璃影壁下。
-
-历代皇陵中，唐陵最为坚固，其次就是明陵。如果放到相同生产力水平下比较，清陵的施工质量甚至还不如西夏陵和北魏陵，所以逢盗必失也就不奇怪了。
-
-https://zhuanlan.zhihu.com/p/265634690
-
-为什么明朝皇陵没有一个被盗，而清朝皇陵却被大肆光顾
-
-----
-
-https://mp.weixin.qq.com/s/urjMik7EMrPTzeP_UWocHw
-
-《夺冠》背后的中国女排，到底有多牛
-
-----
-
-https://www.zhihu.com/question/426879301
-
-《辛丑条约》赔款分39年还清，但10年后大清就亡了，剩下的债怎么办？

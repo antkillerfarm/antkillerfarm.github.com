@@ -37,6 +37,8 @@ Siamese network也可进一步细分：
 
 Siamese network由于输入是一对样本，因此它更能理解样本间的差异，使得数据量相对较小的数据集也能用深度网络训练出不错的效果。
 
+对Siamese network的进一步发展，引出了2020年比较火的对比学习。
+
 参考：
 
 https://blog.csdn.net/shenziheng1/article/details/81213668

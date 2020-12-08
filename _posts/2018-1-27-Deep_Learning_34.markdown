@@ -71,6 +71,10 @@ https://mp.weixin.qq.com/s/ziKG-fvXyVc59eyNjoXseA
 
 不要再对类别变量进行独热编码了
 
+https://mp.weixin.qq.com/s/AjmaX0B7xaCwEWi8sDOJyA
+
+论推荐算法中的Embedding思想
+
 ## 参考
 
 http://kexue.fm/archives/4667/

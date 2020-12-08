@@ -107,6 +107,18 @@ https://jackwish.net/2019/gemm-optimization.html
 
 通用矩阵乘（GEMM）优化算法
 
+https://mp.weixin.qq.com/s/lqVsMDutBwsjiiM_NkGsAg
+
+详解Im2Col+Pack+Sgemm策略更好的优化卷积运算
+
+https://mp.weixin.qq.com/s/EgC2puTsIfEk1uvgWlHXZA
+
+基于how-to-optimize-gemm初探矩阵乘法优化
+
+https://mp.weixin.qq.com/s/w0YCm8TEPxFg0CR6g4A28w
+
+再探矩阵乘法优化
+
 ## CNN的反向传播算法
 
 由于卷积和池化两层，不是一般的神经网络结构。因此CNN的反向传播算法实际上也是很有技巧的。

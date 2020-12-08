@@ -11,6 +11,44 @@ category: AI
 
 ## TensorFlow Serving（续）
 
+参考：
+
+https://zhuanlan.zhihu.com/p/23361413
+
+TensorFlow Serving尝尝鲜
+
+http://www.cnblogs.com/xuchenCN/p/5888638.html
+
+tensorflow serving
+
+https://mp.weixin.qq.com/s/iqvpX6QuBEmF_UK9RMu9eQ
+
+TensorFlow Serving入门
+
+https://mp.weixin.qq.com/s/TL87BY3DdP1bolc0Sxkahg
+
+gRPC客户端创建和调用原理解析
+
+https://zhuanlan.zhihu.com/p/30628048
+
+远程通信协议：从CORBA到gRPC
+
+https://mp.weixin.qq.com/s/b569est_LpcxsoTNWXcfog
+
+TensorFlow Extended帮你快速落地项目
+
+https://mp.weixin.qq.com/s/qOy9fR8Zd3SufvsMmLpoGg
+
+使用TensorFlow Serving优化TensorFlow模型
+
+https://mp.weixin.qq.com/s/IPwOZKvDsONegyIuwkG6bQ
+
+将深度学习模型部署为web应用有多难？答案自己找
+
+https://mp.weixin.qq.com/s/7nugWFKtD-C6cpwm2TyvdQ
+
+手把手教你如何部署深度学习模型
+
 https://zhuanlan.zhihu.com/p/77664408
 
 如何解决推荐系统工程难题——深度学习推荐模型线上serving？
@@ -360,35 +398,3 @@ TensorFlow实际上是Google开发的第二代DL框架。在它之前，Google�
 https://hama.apache.org/
 
 这个项目采用了一种叫做Bulk Synchronous Parallel的并行计算模型。
-
-# 我的TensorFlow实践
-
-## MNIST+Softmax
-
-代码：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_mnist.py
-
-## MNIST+CNN
-
-代码：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_cnn.py
-
-第一个例子中，我对CPU的计算能力还没有切肤之痛，但在这里使用CPU差不多要花半个小时时间。。。
-
-## 框架怀古（2017.9）
-
-http://deeplearning.net/
-
-这个网站是Theano的主站，也是我最早接触DL时浏览的网站。其时，我虽然对DL有浓厚的兴趣，但尚未以此作为工作内容。
-
-从该网站提供的招聘信息来看，Caffe、Theano、Torch是当时主流的三大框架库。
-
-岂料时隔一年半载之后，这三大框架都渐趋式微。
-
-Caffe被Caffe 2替代，但使用的广泛度仍超过后者。
-
-Theano被同样基于计算图的TensorFlow淘汰。2017年9月停止更新。
-
-Torch相对变动最小，它被PyTorch替代。这更可以看作是python对于lua的胜利。

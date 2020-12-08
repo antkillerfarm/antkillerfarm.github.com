@@ -337,6 +337,10 @@ https://zhuanlan.zhihu.com/p/86181485
 
 深度CTR预估模型的演化之路
 
+https://www.zhihu.com/question/341529083
+
+CTR和推荐算法有什么本质区别？
+
 https://mp.weixin.qq.com/s/rAbSWoo3WMdHsHaOx_x6fw
 
 阿里巴巴素材治理算法介绍，为电商大促保驾护航

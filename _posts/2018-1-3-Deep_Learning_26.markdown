@@ -23,6 +23,28 @@ https://mp.weixin.qq.com/s/YsuvIB56OxS9IBMQYSUdUg
 
 深度学习AI美颜系列——人像静态/动态贴纸特效算法实现
 
+## 人脸表情识别
+
+https://mp.weixin.qq.com/s/Z06oUe7oExgkKZ8g2_PnPw
+
+科普人脸表情识别技术
+
+https://mp.weixin.qq.com/s/i4HdS-lCrsv9YR39Hja8ow
+
+深度人脸表情识别技术综述，没有比这更全的了
+
+https://mp.weixin.qq.com/s/Ht8kFTgIWASusfSUQqoaJA
+
+人脸表情识别研究
+
+https://mp.weixin.qq.com/s/UFOB2V12gQQ3mV-Kh9RTUw
+
+高精度人脸表情识别
+
+https://mp.weixin.qq.com/s/xKOVabHYCrcadhBmldjYAg
+
+大规模人脸表情识别
+
 # OCR
 
 ## 概述
@@ -376,35 +398,3 @@ https://mp.weixin.qq.com/s/jO2xc7Ri6TvrHyXHH0uX4w
 https://mp.weixin.qq.com/s/3t8yzjMXiZwgqBb8izVfFg
 
 场景文字检测模型PixelLink详解与使用
-
-https://zhuanlan.zhihu.com/p/68356509
-
-TensorFlow 2.0中文手写字识别（汉字OCR）
-
-https://mp.weixin.qq.com/s/F0bPat3KUEVnej77OdfYAg
-
-文本检测大满贯！自适应文本区域表示改进形状任意的文本检测
-
-https://mp.weixin.qq.com/s/QwkKqybzW0tYcGojQg9r2w
-
-深度学习场景文字检测识别，20页综述带你了解领域最新动态
-
-https://mp.weixin.qq.com/s/j8Xvj7OSoFZp-zIrd3Xjow
-
-华科提出对称性约束的校正网络ScRN，显著改进场景文本识别
-
-https://github.com/ctripcorp/C-OCR
-
-携程自研的OCR项目
-
-https://mp.weixin.qq.com/s/fZN8mtZdB4Fd6gj2dAKURw
-
-金连文：“文字检测与识别：现状及展望”
-
-https://mp.weixin.qq.com/s/_GU5y7v8HNDOjEGvWh8Fkw
-
-旷视研究院提出文字检测新方法：像素聚合网络PAN
-
-https://mp.weixin.qq.com/s/rWqmIfgNGoC4D2wl8INmtQ
-
-OCR深度实践系列：图像预处理

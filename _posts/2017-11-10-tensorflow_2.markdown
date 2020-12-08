@@ -275,6 +275,22 @@ https://github.com/raymond-li/tflite_tensor_outputter/blob/master/tflite_tensor_
 
 ----
 
+tflite模型使用flatbuffers进行序列化，因此也可以使用flatbuffers解析相关模型。
+
+需要注意的是flatbuffers生成的代码，有两种版本：
+
+- 精简版。默认设置。网上的解析代码用的都是这个版本。缺点：无法修改相应的模型。
+
+- 专业版。`--gen-object-api`。新增`UnPack/UnpackTo/Pack`方法，进行对象结构体与table结构体间的转换。
+
+专业版不是所有语言都有，至少ubuntu自带的flatc就没有提供对python的专业版支持。但是tensorflow自带的flatc是可以的。
+
+`bazel build //tensorflow/lite/tools:visualize`
+
+这个命令会生成一个schema_py_generated.py文件，也就是所谓的专业版本了。
+
+参考：
+
 https://www.cnblogs.com/zhouyang209117/p/8087258.html
 
 使用flatbuffers
@@ -376,41 +392,3 @@ TensorFlow Serving实际上是TensorFlow Extended (TFX)的一部分：
 https://tensorflow.google.cn/tfx
 
 TFX还包括了Data Validation、Transform和Model Analysis等方面的功能。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/23361413
-
-TensorFlow Serving尝尝鲜
-
-http://www.cnblogs.com/xuchenCN/p/5888638.html
-
-tensorflow serving
-
-https://mp.weixin.qq.com/s/iqvpX6QuBEmF_UK9RMu9eQ
-
-TensorFlow Serving入门
-
-https://mp.weixin.qq.com/s/TL87BY3DdP1bolc0Sxkahg
-
-gRPC客户端创建和调用原理解析
-
-https://zhuanlan.zhihu.com/p/30628048
-
-远程通信协议：从CORBA到gRPC
-
-https://mp.weixin.qq.com/s/b569est_LpcxsoTNWXcfog
-
-TensorFlow Extended帮你快速落地项目
-
-https://mp.weixin.qq.com/s/qOy9fR8Zd3SufvsMmLpoGg
-
-使用TensorFlow Serving优化TensorFlow模型
-
-https://mp.weixin.qq.com/s/IPwOZKvDsONegyIuwkG6bQ
-
-将深度学习模型部署为web应用有多难？答案自己找
-
-https://mp.weixin.qq.com/s/7nugWFKtD-C6cpwm2TyvdQ
-
-手把手教你如何部署深度学习模型

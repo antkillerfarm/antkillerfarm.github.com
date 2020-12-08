@@ -1,57 +1,45 @@
 ---
 layout: post
-title:  深度学习（二十七）——MobileNet, 问答系统, 李飞飞, RBM & DBN & Deep Autoencoder
+title:  深度学习（二十七）——问答系统, 李飞飞, RBM & DBN & Deep Autoencoder
 category: DL 
 ---
 
 * toc
 {:toc}
 
-# MobileNet
+# OCR（续）
 
-论文：
+https://zhuanlan.zhihu.com/p/68356509
 
-《MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications》
+TensorFlow 2.0中文手写字识别（汉字OCR）
 
-代码：
+https://mp.weixin.qq.com/s/F0bPat3KUEVnej77OdfYAg
 
-https://github.com/Zehaos/MobileNet
+文本检测大满贯！自适应文本区域表示改进形状任意的文本检测
 
-![](/images/article/dwl_pwl.png)
+https://mp.weixin.qq.com/s/QwkKqybzW0tYcGojQg9r2w
 
-参考：
+深度学习场景文字检测识别，20页综述带你了解领域最新动态
 
-https://mp.weixin.qq.com/s/f3bmtbCY5BfA4v3movwLVg
+https://mp.weixin.qq.com/s/j8Xvj7OSoFZp-zIrd3Xjow
 
-向手机端神经网络进发：MobileNet压缩指南
+华科提出对称性约束的校正网络ScRN，显著改进场景文本识别
 
-https://mp.weixin.qq.com/s/mcK8M6pnHiZZRAkYVdaYGQ
+https://github.com/ctripcorp/C-OCR
 
-MobileNet在手机端上的速度评测：iPhone 8 Plus竟不如iPhone 7 Plus
+携程自研的OCR项目
 
-https://mp.weixin.qq.com/s/2XqBeq3N4mvu05S1Jo2UwA
+https://mp.weixin.qq.com/s/fZN8mtZdB4Fd6gj2dAKURw
 
-CNN模型之MobileNet
+金连文：“文字检测与识别：现状及展望”
 
-https://mp.weixin.qq.com/s/fdgaDoYm2sfjqO2esv7jyA
+https://mp.weixin.qq.com/s/_GU5y7v8HNDOjEGvWh8Fkw
 
-Google论文解读：轻量化卷积神经网络MobileNetV2
+旷视研究院提出文字检测新方法：像素聚合网络PAN
 
-https://mp.weixin.qq.com/s/7vFxmvRZuM2DqSYN7C88SA
+https://mp.weixin.qq.com/s/rWqmIfgNGoC4D2wl8INmtQ
 
-谷歌发布MobileNetV2：可做语义分割的下一代移动端计算机视觉架构
-
-https://mp.weixin.qq.com/s/lu0GHCpWCmogkmHRKnJ8zQ
-
-浅析两代MobileNet
-
-https://mp.weixin.qq.com/s/T6S1_cFXPEuhRAkJo2m8Ig
-
-轻量级CNN网络之MobileNetv2
-
-https://mp.weixin.qq.com/s/RRu3r_dokORhpSq3eyrPDQ
-
-为什么MobileNet及其变体如此之快？
+OCR深度实践系列：图像预处理
 
 # 问答系统
 

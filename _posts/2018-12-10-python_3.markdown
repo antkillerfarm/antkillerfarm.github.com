@@ -365,7 +365,7 @@ http://www.cnblogs.com/ArtsCrafts/p/gunicorn.html
 
 Gunicorn快速入门
 
-## 多线程 & 同步
+## 多线程 & 同步 & 异步
 
 python异步并发模块concurrent.futures，主要用来实现多线程和多进程的异步并发。
 
@@ -417,6 +417,10 @@ https://mp.weixin.qq.com/s/3CePY1ljNBSo9TEtitksrw
 https://mp.weixin.qq.com/s/6zVU6i75hZ3ZXZAmW0G5Mw
 
 非常适合小白的Asyncio教程
+
+https://mp.weixin.qq.com/s/nHIQ5uwxZM-9DbSu_jL6DQ
+
+异步Python比同步Python快在哪里？
 
 ## mypy
 

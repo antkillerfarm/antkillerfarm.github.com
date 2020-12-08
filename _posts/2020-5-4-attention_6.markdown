@@ -201,7 +201,7 @@ https://mp.weixin.qq.com/s/dV4RkxZOC9o2BxNi0GljKQ
 
 谷歌最强NLP模型BERT官方中文版来了！多语言模型支持100种语言
 
-https://mp.weixin.qq.com/s/fz-bQMAi5bs2_bvRhf3ERg
+https://zhuanlan.zhihu.com/p/49271699
 
 从Word Embedding到Bert模型—自然语言处理中的预训练技术发展史
 

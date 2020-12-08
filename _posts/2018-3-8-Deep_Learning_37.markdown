@@ -107,10 +107,6 @@ https://zhuanlan.zhihu.com/p/234369216
 
 人脸识别最新进展
 
-https://mp.weixin.qq.com/s/Z06oUe7oExgkKZ8g2_PnPw
-
-科普人脸表情识别技术
-
 https://mp.weixin.qq.com/s/U1g1pNjVn5CP6Q5ZosFc4Q
 
 深度人脸识别算法串讲
@@ -155,10 +151,6 @@ https://mp.weixin.qq.com/s/1g9PXc_3nhKMf1_-E_cVAA
 
 图像识别的原理、过程、应用前景，精华篇！
 
-https://mp.weixin.qq.com/s/i4HdS-lCrsv9YR39Hja8ow
-
-深度人脸表情识别技术综述，没有比这更全的了
-
 https://mp.weixin.qq.com/s/JY9WXneps-_tYmYhJAFlTg
 
 人脸识别/人证比对《DocFace+: ID Document to Selfie Matching》论文解读
@@ -166,10 +158,6 @@ https://mp.weixin.qq.com/s/JY9WXneps-_tYmYhJAFlTg
 https://mp.weixin.qq.com/s/d3aaN4vGAtMfLqOpU9oC6w
 
 香港中文大学助理教授吕健勤：面向人脸分析的深度学习方法
-
-https://mp.weixin.qq.com/s/Ht8kFTgIWASusfSUQqoaJA
-
-人脸表情识别研究
 
 https://mp.weixin.qq.com/s/qUFjfsDtTQfAEjBCuoWHew
 
@@ -190,10 +178,6 @@ https://mp.weixin.qq.com/s/5vx1FGgSOhF71FwHeUwaAQ
 https://mp.weixin.qq.com/s/PW_fjdC0hzzwmeY3gUXPkw
 
 如何降低遮挡对人脸识别的影响
-
-https://mp.weixin.qq.com/s/UFOB2V12gQQ3mV-Kh9RTUw
-
-高精度人脸表情识别
 
 https://zhuanlan.zhihu.com/p/35968767
 

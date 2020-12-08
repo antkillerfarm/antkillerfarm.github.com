@@ -175,7 +175,7 @@ npm有两种安装方式：
 
 普通的包管理工具，一般一个模块只有一个副本，但npm不是这样。比如，A和B都用到了C，那么npm安装之后，A和B的node_modules下都能找到C，无论是本地安装，还是全局安装。
 
-这样做的优点在于，A和B可以使用C的不同版本，且互不影响，缺点是占用的空间过大。
+这样做的优点在于，A和B可以使用C的不同版本，且互不影响，缺点是占用的空间过大。所以，又有arborist项目，用于处理版本共存问题，毕竟多数情况下，大多数的库是不挑版本的。
 
 然而也不用太过担心空间问题，npm有cache功能。下载的npm包放在~/.npm下，且每个包只有一份。所以暂时不用的工程，把node_modules删掉就行了。再次安装时，由于不用下载文件，速度还是非常快的。
 
@@ -376,19 +376,3 @@ https://mp.weixin.qq.com/s/I0grz0IfFZo98sfaCNh-Vw
 https://mp.weixin.qq.com/s/yTebereUkcyvwJbLssZjPQ
 
 5分钟看懂WebAssembly
-
-https://mp.weixin.qq.com/s/QDjxfoY7gjcCmOeV0kq1pw
-
-web多媒体技术在视频编辑场景的应用
-
-https://mp.weixin.qq.com/s/G3NGVV9wSHMMtFtq0MB6SA
-
-快速上手WebAssembly应用开发：Emscripten使用入门
-
-----
-
-V8开发者Vyacheslav Egorov和Mozilla Hacks之间的source-map之战了。对于同一份source-map库的JS代码，Vyacheslav所魔改出的纯JS版本，其性能一举反超了Mozilla重写的Rust版。
-
-https://www.zhihu.com/answer/1322391162
-
-有没有让JavaScript在JS引擎上稳定、更快运行的Style Guide?

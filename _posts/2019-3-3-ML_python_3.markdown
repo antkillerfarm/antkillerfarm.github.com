@@ -9,6 +9,40 @@ category: AI
 
 # Machine Learning之Python篇
 
+## Seaborn
+
+Seaborn是另一个非常棒的Matplotlib的威力加强版，专注于统计绘图，并可无缝对接Pandas库。
+
+官网：
+
+https://seaborn.pydata.org
+
+参考：
+
+https://mp.weixin.qq.com/s/hPbTZHR2iDH4t1eQghNvUQ
+
+数据可视化详解+代码演练
+
+https://mp.weixin.qq.com/s/HpOx6BWM2lbgDpJcF6XncA
+
+可视化神器Seaborn的超全介绍
+
+https://mp.weixin.qq.com/s/94nwkxn20ZixmcsX8oUJIw
+
+Seaborn绘图
+
+https://mp.weixin.qq.com/s/GKrqAD0tud6WOFjNwQVVZw
+
+使用Seaborn绘制常用图表
+
+https://mp.weixin.qq.com/s/Lrag8Wilf4B6abVG2UcMZw
+
+详解seaborn可视化中的kdeplot、rugplot、distplot与jointplot
+
+https://mp.weixin.qq.com/s/-TwkUUjGdOiik835xNemfg
+
+14个Seaborn数据可视化图
+
 ## Bokeh
 
 Bokeh是一个数据可视化的库。它不仅提供了和Matplotlib类似的静态图功能，还提供了生成交互动态图的功能。
@@ -424,23 +458,3 @@ https://mp.weixin.qq.com/s/U46HOaBP5ijghpc2myJCvA
 https://mp.weixin.qq.com/s/HoMr52X9O4fMs2YjtH9oFg
 
 scikit-learn Adaboost类库的实战分析
-
-https://mp.weixin.qq.com/s/61oY3gLEOjQjCJgGkEcABw
-
-支持向量机分类实战
-
-https://mp.weixin.qq.com/s?__biz=MzIxNjA2ODUzNg==&mid=2651435914&idx=1&sn=b0b6f1cda08798dc35bf0930dc9d9096
-
-盘膝而坐--跟你聊聊APP市场的数据分析
-
-https://mp.weixin.qq.com/s/AVSFbfikczjm7flsQQPC1g
-
-2017年最受数据科学欢迎的Top15个Python库
-
-https://mp.weixin.qq.com/s/jBULfMR0_7Ms9nc5CLLIFQ
-
-Python的开源人脸识别库：离线识别率高达99.38%
-
-https://zhuanlan.zhihu.com/p/30630608
-
-Python和MATLAB交互的基本操作

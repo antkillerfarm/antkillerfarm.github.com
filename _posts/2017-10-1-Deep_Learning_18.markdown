@@ -117,22 +117,6 @@ https://mp.weixin.qq.com/s/3kwLoojFjJoPz4pUuEVA8g
 
 神奇的自监督场景去遮挡
 
-https://mp.weixin.qq.com/s/r1uXn2jGsHZcZ8Nk7GnGFA
-
-语义表征的无监督对比学习：一个新理论框架
-
-https://mp.weixin.qq.com/s/SOaA9XNnymLgGgJ5JNSdBg
-
-对比学习（Contrastive Learning）相关进展梳理
-
-https://mp.weixin.qq.com/s/U0pTQkW55evm94iQORwGeA
-
-图解SimCLR框架，用对比学习得到一个好的视觉预训练模型
-
-https://mp.weixin.qq.com/s/1RJ4bbfDC5LiN2PNIxdzew
-
-SimCLR框架的理解和代码实现以及代码讲解
-
 https://mp.weixin.qq.com/s/eROWWPQkUs91bcv4VsQqSA
 
 NLP中的自监督表示学习，全是动图，很过瘾的
@@ -196,6 +180,28 @@ https://mp.weixin.qq.com/s/uYmHxScroi4jB2okmqwHcA
 https://zhuanlan.zhihu.com/p/212873650
 
 Contrastive Self-Supervised Learning
+
+# 对比学习
+
+https://mp.weixin.qq.com/s/r1uXn2jGsHZcZ8Nk7GnGFA
+
+语义表征的无监督对比学习：一个新理论框架
+
+https://mp.weixin.qq.com/s/SOaA9XNnymLgGgJ5JNSdBg
+
+对比学习（Contrastive Learning）相关进展梳理
+
+https://mp.weixin.qq.com/s/U0pTQkW55evm94iQORwGeA
+
+图解SimCLR框架，用对比学习得到一个好的视觉预训练模型
+
+https://mp.weixin.qq.com/s/1RJ4bbfDC5LiN2PNIxdzew
+
+SimCLR框架的理解和代码实现以及代码讲解
+
+https://mp.weixin.qq.com/s/-Vtl_8nND7WCPLdL5bNlMw
+
+探索孪生神经网络：请停止你的梯度传递
 
 # 数学杂谈+
 
