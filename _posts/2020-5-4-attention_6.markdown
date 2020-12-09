@@ -9,6 +9,26 @@ category: Attention
 
 # BERT进阶
 
+https://zhuanlan.zhihu.com/p/91052495
+
+当BERT遇上知识图谱
+
+https://mp.weixin.qq.com/s/wQW-JT-sGMj60OtXwTssyQ
+
+BERT模型推理加速总结
+
+https://mp.weixin.qq.com/s/HOD1Hb70NhTXXCXlopzfng
+
+BERT推理加速实践
+
+https://mp.weixin.qq.com/s/0luHJsw7WWJskJWGThR5qg
+
+使用BERT做文本摘要
+
+https://mp.weixin.qq.com/s/IY8J09LvDAr8owYffKi5Dw
+
+五问BERT：深入理解NLP领域爆红的预训练模型
+
 https://zhuanlan.zhihu.com/p/106901954
 
 BERT, ELMo, & GPT-2: 这些上下文相关的表示到底有多上下文化？
@@ -325,6 +345,10 @@ https://mp.weixin.qq.com/s/0aZdGzcGW5ZA020rhX0qSQ
 
 BERT4Rec:使用Bert进行序列推荐
 
+https://mp.weixin.qq.com/s/fr-THgOeaTspKsv_hXnU2Q
+
+CogLTX：将BERT应用于长文本
+
 # Transformer进阶
 
 https://mp.weixin.qq.com/s/-Y7Qy-5aJNJ5bx8QJf3k2w
@@ -408,19 +432,3 @@ https://mp.weixin.qq.com/s/MFxQSUMFNRXjdLQwzveO4w
 https://mp.weixin.qq.com/s/vkyPwsaxH-SvHqQx09VhVw
 
 深度学习中的注意力机制（二）
-
-https://mp.weixin.qq.com/s/fbAAA7fO2voP_v-NsavQew
-
-深度学习中的注意力机制（三）
-
-https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
-
-阿里北大提出新attention建模框架，一个模型预测多种行为
-
-https://mp.weixin.qq.com/s/Yq3S4WrsQRQC06GvRgGjTQ
-
-打入神经网络思维内部
-
-https://mp.weixin.qq.com/s/MJ1578NdTKbjU-j3Uuo9Ww
-
-基于文档级问答任务的新注意力模型

@@ -345,56 +345,6 @@ https://mp.weixin.qq.com/s/OkSjIw54TNbRtKN0I2Ug1Q
 
 LeCun哈佛演讲：《机器怎样才能像人和动物一样学习》（135页PPT）
 
-# Attention进阶+
+https://www.zhihu.com/question/427088601
 
-https://mp.weixin.qq.com/s/Qs6tm50YvzHaJv2rh60WMw
-
-撩一发深度文本分类之RNN via Attention
-
-https://mp.weixin.qq.com/s/MMIZGHTKM5FrvNE6ucQRYQ
-
-33页最新《自然语言处理中神经注意力机制综述》论文
-
-https://mp.weixin.qq.com/s/Q0Ft5bWTuiZUIQSTk7X6ZQ
-
-图解神经机器翻译中的注意力机制
-
-https://mp.weixin.qq.com/s/D7GQ8DRzss9ppP6pyAs1qA
-
-从0到1再读注意力机制
-
-https://mp.weixin.qq.com/s/K_VRt0B9-Xw7YJndmb4WZg
-
-Attention！注意力机制模型最新综述
-
-https://mp.weixin.qq.com/s/hzwp5oGspdtDyNBmq8sMsw
-
-HAN：基于双层注意力机制的异质图深度神经网络
-
-https://mp.weixin.qq.com/s/SBrLPZjx2RdBwZpPQQ5DXQ
-
-HAN：异构图注意力网络
-
-https://mp.weixin.qq.com/s/0EDN-ILeL_diZ1G11ikwjw
-
-T5模型：NLP Text-to-Text预训练模型超大规模探索
-
-https://zhuanlan.zhihu.com/p/89719631
-
-T5: Text-to-Text Transfer Transformer阅读笔记
-
-https://mp.weixin.qq.com/s/X1mLXPzJU7k_ANMzvVPxjA
-
-BERT、RoBERTa、DistilBERT与XLNet，我们到底该如何选择？
-
-https://mp.weixin.qq.com/s/GGRORF5EfJ5xzMLwAsJt5w
-
-从词袋到Transfomer，NLP十年突破史
-
-https://mp.weixin.qq.com/s/fxEg8UOa3MeJ6qx5SjEHog
-
-NLP领域中各式各样Attention知识系统性的梳理和总结
-
-https://mp.weixin.qq.com/s/_5YaZdYa8bTFiAzHyrMFBg
-
-理解卷积神经网络中的自注意力机制
+在CV/NLP/DL领域中，有哪些修改一行代码或者几行代码提升性能的算法？

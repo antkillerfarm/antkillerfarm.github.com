@@ -105,6 +105,14 @@ https://mp.weixin.qq.com/s/LXp6otaW34r0v8yc4TJNog
 
 LSRA: 轻量级Transformer，注意力长短搭配
 
+# 快速BERT
+
+轻量化BERT是从计算量的角度出发，对于传统BERT的优化。而快速BERT主要着眼于软件工程角度，如何更好的利用各种硬件加速BERT的计算。典型的有NVIDIA的FasterTransformer和腾讯的TurboTransformer。
+
+https://mp.weixin.qq.com/s/1R_plHqxTLE-Fw3TjYnlJQ
+
+GPU BERT上线性能不合格，看看微信AI的PPoPP论文
+
 # Linformer
 
 https://mp.weixin.qq.com/s/IOc-gxOa6a415Hf1VBmiQw
@@ -344,23 +352,3 @@ https://mp.weixin.qq.com/s/D68YzjYvpc2epGWFBP6rIQ
 https://mp.weixin.qq.com/s/iDGofh_ycWJzfqQriPEXGQ
 
 如何用Python和BERT做中文文本二元分类？
-
-https://zhuanlan.zhihu.com/p/91052495
-
-当BERT遇上知识图谱
-
-https://mp.weixin.qq.com/s/wQW-JT-sGMj60OtXwTssyQ
-
-BERT模型推理加速总结
-
-https://mp.weixin.qq.com/s/HOD1Hb70NhTXXCXlopzfng
-
-BERT推理加速实践
-
-https://mp.weixin.qq.com/s/0luHJsw7WWJskJWGThR5qg
-
-使用BERT做文本摘要
-
-https://mp.weixin.qq.com/s/IY8J09LvDAr8owYffKi5Dw
-
-五问BERT：深入理解NLP领域爆红的预训练模型

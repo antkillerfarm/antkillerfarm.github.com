@@ -346,3 +346,7 @@ https://mp.weixin.qq.com/s/vAPD7VKQRJ7NCyYL7FIt3A
 https://zhuanlan.zhihu.com/p/310058362
 
 Sparse R-CNN
+
+https://zhuanlan.zhihu.com/p/332281368
+
+丢弃Transformer，FCN也可以实现E2E检测

@@ -153,6 +153,10 @@ https://mp.weixin.qq.com/s/QYG0l1fk35C1evM2FSHgsw
 
 多轮对话之对话管理：Dialog Management
 
+https://mp.weixin.qq.com/s/auqlefDTGhGIIM3Kp7JqPQ
+
+DST（Dialog State Tracking）模型介绍
+
 https://mp.weixin.qq.com/s/FJtMDoNksSZLYdoEzixJTQ
 
 AI Challenger 2018：细粒度用户评论情感分类冠军思路总结

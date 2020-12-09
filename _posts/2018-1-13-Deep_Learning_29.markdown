@@ -9,6 +9,24 @@ category: DL
 
 # Graph NN
 
+## GCN（续）
+
+https://www.zhihu.com/question/366088445
+
+请问全连接的图卷积网络(GCN)和self-attention这些机制有什么区别联系吗？
+
+https://mp.weixin.qq.com/s/CmVhJMGll5HjO8kxsCinaA
+
+图神经网络GNN,GAT&GCN（一）
+
+https://mp.weixin.qq.com/s/sg9O761F0KHAmCPOfMW_kQ
+
+图卷积网络到底怎么做，这是一份极简的Numpy实现
+
+https://mp.weixin.qq.com/s/ae515_P6zA5SLN5-Edxbig
+
+图卷积网络Graph Convolutional Networks
+
 ## GraphSAGE
 
 GraphSAGE取自Graph SAmple and aggreGatE，SAmple指如何对邻居个数进行采样。aggreGatE指拿到邻居的embedding之后如何汇聚这些embedding以更新自己的embedding信息。
@@ -398,31 +416,3 @@ https://mp.weixin.qq.com/s/aGP8pcsCmEdjdCWVjA82Jg
 https://mp.weixin.qq.com/s/XApSbi-Pg-AeYGkPN3fldg
 
 旷视研究院提出ML-GCN：基于图卷积网络的多标签图像识别模型
-
-https://mp.weixin.qq.com/s/49vnVOO0G_JvKrWcsN2_Ww
-
-关系图注意力网络-Relational Graph Attention Networks
-
-https://mp.weixin.qq.com/s/rvcj9-6KlBsVmF_CAsip2A
-
-超越标准GNN！DeepMind、谷歌提出图匹配网络
-
-https://mp.weixin.qq.com/s/UotqgRjCTpjPrsIEWBRPxA
-
-基于随机游走的图匹配算法
-
-https://mp.weixin.qq.com/s/dDaFhssFEYxS7ElMy4ekJw
-
-基于图嵌入的深度图匹配
-
-https://mp.weixin.qq.com/s/LZvxvDpxQEtlKuXoxT_gTQ
-
-可变形曲面跟踪，亮风台新出基于图匹配的方法
-
-https://mp.weixin.qq.com/s/7DyPJ9LnqZ9XyAop33SxSw
-
-ST-GCN动作识别算法详解
-
-https://mp.weixin.qq.com/s/fxVsN2dDmayxJfxBRIXHhQ
-
-解读PingSage：图卷积神经网络在数十亿数据网络级别推荐系统的应用

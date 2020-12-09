@@ -107,7 +107,7 @@ bazel build --config=opt --config=cuda //tensorflow/tools/pip_package:build_pip_
 bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg #生成wheel文件
 ```
 
-configure脚本会自动选择CPU指令集优化，因此源代码编译的TensorFlow，肯定比pip安装的要运行的快。
+configure脚本会自动选择CPU指令集优化，因此源代码编译的TensorFlow的CPU版本，肯定比pip安装的要运行的快。
 
 注意：这里即使只编译TF for python3，也要安装python2，否则bazel脚本会出错。
 

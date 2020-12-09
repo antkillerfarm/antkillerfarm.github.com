@@ -420,27 +420,3 @@ https://mp.weixin.qq.com/s/FwIbHiyZa4EcnMunWoAR1Q
 https://blog.csdn.net/leviopku/article/details/106949616
 
 GNN中的Graph Pooling
-
-https://mp.weixin.qq.com/s/zlgnOGhuzIlOha8Y6cwUxA
-
-快速了解阿里的M2GRL模型
-
-https://mp.weixin.qq.com/s/0Tb5t9K2V-RYb12UKL1cXg
-
-GraphSAGE+FM+Transformer强强联手：评微信的GraphTR模型
-
-https://mp.weixin.qq.com/s/0lNeSjpm4lbu_8mopWJ2oA
-
-图表示学习中的Encoder-Decoder框架
-
-https://mp.weixin.qq.com/s/Ul9BIrJxjlzJwGqRv6E7eg
-
-10分钟了解图嵌入
-
-https://mp.weixin.qq.com/s/w190-7C4WA_JWw-ID9m8gA
-
-没有完整图时，如何使用图深度学习？你需要了解流形学习2.0版本
-
-https://mp.weixin.qq.com/s/O5rDJiuzIUHM1YU6-vBb6Q
-
-Pre-training on Graphs

@@ -408,19 +408,3 @@ https://mp.weixin.qq.com/s/2PY1baildUoZaetYlsukIQ
 https://zhuanlan.zhihu.com/p/139359188
 
 关于GCN，我有三种写法
-
-https://www.zhihu.com/question/366088445
-
-请问全连接的图卷积网络(GCN)和self-attention这些机制有什么区别联系吗？
-
-https://mp.weixin.qq.com/s/CmVhJMGll5HjO8kxsCinaA
-
-图神经网络GNN,GAT&GCN（一）
-
-https://mp.weixin.qq.com/s/sg9O761F0KHAmCPOfMW_kQ
-
-图卷积网络到底怎么做，这是一份极简的Numpy实现
-
-https://mp.weixin.qq.com/s/ae515_P6zA5SLN5-Edxbig
-
-图卷积网络Graph Convolutional Networks

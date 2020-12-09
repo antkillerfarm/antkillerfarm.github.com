@@ -195,6 +195,10 @@ https://mp.weixin.qq.com/s/6CzRKpO88BainkJ_XffWmg
 
 文本分类综述：迈向NLP大师的第一步（中）
 
+https://mp.weixin.qq.com/s/k7jHxSmdEoG6sO_Z5dO36g
+
+文本分类综述：迈向NLP大师的第一步（下）
+
 ## 情感分析
 
 https://mp.weixin.qq.com/s/5VrZTMlNxbgZmaeOxBps_w

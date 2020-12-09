@@ -363,3 +363,13 @@ Source Insight常用设置和快捷键大全
 http://dcloud.io/index.html
 
 HBuilder，一个html编辑的IDE。
+
+# 十六进制编辑器
+
+https://mp.weixin.qq.com/s/Bq6p3DUePBAUlw1kek86QA
+
+开源十六进制编辑器登顶GitHub热榜
+
+https://zhuanlan.zhihu.com/p/59119723
+
+Linux上最好的十六进制编辑器

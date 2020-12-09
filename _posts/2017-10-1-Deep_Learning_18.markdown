@@ -203,52 +203,68 @@ https://mp.weixin.qq.com/s/-Vtl_8nND7WCPLdL5bNlMw
 
 探索孪生神经网络：请停止你的梯度传递
 
-# 数学杂谈+++
+https://zhuanlan.zhihu.com/p/321642265
 
-https://mp.weixin.qq.com/s/H1fvyQYRFcOe0pqclD-3yg
+《探索简单孪生网络表示学习》阅读笔记
 
-“最大数之父”葛立恒逝世，他是20世纪数学巨匠，也是一个杂技演员
+https://mp.weixin.qq.com/s/6qqFAQBaOFuXtaeRSmQgsQ
 
-https://mp.weixin.qq.com/s/rXbP1dvFmwl6QhVCDMr2Bw
+一文梳理2020年大热的对比学习模型
 
-神童、数学家、抑郁症患者，控制论之父诺伯特·维纳的一生
+# Graph NN+
 
-https://mp.weixin.qq.com/s/htCZU2de_7CCcL1q4v-NGg
+https://mp.weixin.qq.com/s/rvcj9-6KlBsVmF_CAsip2A
 
-比肩爱因斯坦的天才：如果再给他一次机会，他可能不会再熬夜了......（麦克斯韦）
+超越标准GNN！DeepMind、谷歌提出图匹配网络
 
-https://mp.weixin.qq.com/s/BCszlYgbgvKUSkpJCSRQxg
+https://mp.weixin.qq.com/s/UotqgRjCTpjPrsIEWBRPxA
 
-电影院今天复工，应该如何排座位？这是个数学家研究了几百年的问题
+基于随机游走的图匹配算法
 
-https://mp.weixin.qq.com/s/R0nuIqlIefkEppr07Y8gnQ
+https://mp.weixin.qq.com/s/dDaFhssFEYxS7ElMy4ekJw
 
-用一中学数学公式，中了14次彩票头奖，多国彩票规则因他改变
+基于图嵌入的深度图匹配
 
-https://mp.weixin.qq.com/s/FCysnxxWBFiGS027qCxHTw
+https://mp.weixin.qq.com/s/LZvxvDpxQEtlKuXoxT_gTQ
 
-世界上最伟大的十大公式
+可变形曲面跟踪，亮风台新出基于图匹配的方法
 
-https://www.zhihu.com/question/20866833
+https://mp.weixin.qq.com/s/7DyPJ9LnqZ9XyAop33SxSw
 
-为什么正多面体只有5种？
+ST-GCN动作识别算法详解
 
-https://mp.weixin.qq.com/s/qfbfzToypKTxh7CxJ0ifHw
+https://mp.weixin.qq.com/s/fxVsN2dDmayxJfxBRIXHhQ
 
-正十二面体的一个最基本谜题被破解了
+解读PingSage：图卷积神经网络在数十亿数据网络级别推荐系统的应用
 
-https://mp.weixin.qq.com/s/uptfQb8ELfpb5P4ySvofpg
+https://mp.weixin.qq.com/s/49vnVOO0G_JvKrWcsN2_Ww
 
-一个被我们“嫌弃”了23年的数学天才，累死才知道他的价值（陆家羲）
+关系图注意力网络-Relational Graph Attention Networks
 
-https://mp.weixin.qq.com/s/wMARrGbRanB2T0NIxISspA
+https://mp.weixin.qq.com/s/zlgnOGhuzIlOha8Y6cwUxA
 
-有趣的数学可视化
+快速了解阿里的M2GRL模型
 
-https://mp.weixin.qq.com/s/T6ukSjODiTgC1T4pCZCY9g
+https://mp.weixin.qq.com/s/0Tb5t9K2V-RYb12UKL1cXg
 
-2，29，541，7919，104729……（素数的故事）
+GraphSAGE+FM+Transformer强强联手：评微信的GraphTR模型
 
-https://mp.weixin.qq.com/s/YD6fnPYkqXwxTISjN99JxQ
+https://mp.weixin.qq.com/s/0lNeSjpm4lbu_8mopWJ2oA
 
-美国数学能出很厉害的大神，为什么学的却比我们简单？看了他们的黑历史就明白了……
+图表示学习中的Encoder-Decoder框架
+
+https://mp.weixin.qq.com/s/Ul9BIrJxjlzJwGqRv6E7eg
+
+10分钟了解图嵌入
+
+https://mp.weixin.qq.com/s/w190-7C4WA_JWw-ID9m8gA
+
+没有完整图时，如何使用图深度学习？你需要了解流形学习2.0版本
+
+https://mp.weixin.qq.com/s/O5rDJiuzIUHM1YU6-vBb6Q
+
+Pre-training on Graphs
+
+https://mp.weixin.qq.com/s/ejA2DM1iGH-P4dOlefSOSQ
+
+Graph Neural Networks in Recommender Systems

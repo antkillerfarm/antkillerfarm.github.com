@@ -47,6 +47,12 @@ http://libs.useso.com/js/jquery/1.9.1/jquery.min.js
 
 http://developer.baidu.com/wiki/index.php?title=docs/cplat/libs
 
+参考：
+
+https://mp.weixin.qq.com/s/VUxejzYtICqk6GB8iQwRQA
+
+一文搞懂CDN加速原理
+
 # Template Engine
 
 ![](/images/article/web.png)

@@ -321,6 +321,10 @@ https://mp.weixin.qq.com/s/wZfBg175ylxZj-k4Xzggqw
 
 端到端语音识别模型
 
+https://mp.weixin.qq.com/s/kEtoG4QVNn248k3Yhulrvw
+
+《语音识别引擎后端架构设计》58同城
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/jwV4glj8vIUKSelzeRrxSg

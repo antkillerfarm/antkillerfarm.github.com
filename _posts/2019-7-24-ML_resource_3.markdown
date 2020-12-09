@@ -311,80 +311,56 @@ https://mp.weixin.qq.com/s/af_MzLovqnt5JemXBQGdxg
 
 Java的战争(后续)
 
-# 生物++++
+# Attention进阶+
 
-https://mp.weixin.qq.com/s/NRDZY1rjbpQLhQ9qf5LDrA
+https://mp.weixin.qq.com/s/Qs6tm50YvzHaJv2rh60WMw
 
-“水稻虽然种在水田，但其实不喜欢水”？这误会可太大了
+撩一发深度文本分类之RNN via Attention
 
-https://mp.weixin.qq.com/s/omjFAo2nSPRxi6W9fvEnYQ
+https://mp.weixin.qq.com/s/MMIZGHTKM5FrvNE6ucQRYQ
 
-不咬人的虫子是相似的，咬人的虫子各有各的武器！
+33页最新《自然语言处理中神经注意力机制综述》论文
 
-https://mp.weixin.qq.com/s/x9ynEmpQMvUmFdXELt9REw
+https://mp.weixin.qq.com/s/Q0Ft5bWTuiZUIQSTk7X6ZQ
 
-一副纳米隐形眼镜，色盲近视全解决
+图解神经机器翻译中的注意力机制
 
-https://mp.weixin.qq.com/s/H7fJMRBD1Eh_ah5MNNLIog
+https://mp.weixin.qq.com/s/D7GQ8DRzss9ppP6pyAs1qA
 
-我承认，我小瞧了心脏
+从0到1再读注意力机制
 
-https://mp.weixin.qq.com/s/GlGM9FwoU68I_yqPSLHHEg
+https://mp.weixin.qq.com/s/K_VRt0B9-Xw7YJndmb4WZg
 
-周杰伦唱的Mojito到底是啥？（朗姆酒的故事）
+Attention！注意力机制模型最新综述
 
-https://mp.weixin.qq.com/s/Q44kPMyM-7MWHTYNTSkfhA
+https://mp.weixin.qq.com/s/hzwp5oGspdtDyNBmq8sMsw
 
-躺枪的三文鱼究竟是什么鱼
+HAN：基于双层注意力机制的异质图深度神经网络
 
-https://mp.weixin.qq.com/s/GLRmxwlo1MNAhJgYDzBNaQ
+https://mp.weixin.qq.com/s/SBrLPZjx2RdBwZpPQQ5DXQ
 
-“RNA世界学说”中的主角到底有多厉害？
+HAN：异构图注意力网络
 
-https://mp.weixin.qq.com/s/mXRgyE_cxyyfIM5KMH3_Gg
+https://mp.weixin.qq.com/s/0EDN-ILeL_diZ1G11ikwjw
 
-靠自己“逆天改命”？鱿鱼都可以自己改基因啦
+T5模型：NLP Text-to-Text预训练模型超大规模探索
 
-https://mp.weixin.qq.com/s/fmEX7Ce1Am-Wh56r9LnfBQ
+https://zhuanlan.zhihu.com/p/89719631
 
-怀着孩子也怀着孙子，这种奇葩动物给没出世的孩子包办了婚姻（螨虫）
+T5: Text-to-Text Transfer Transformer阅读笔记
 
-https://www.zhihu.com/question/28973610
+https://mp.weixin.qq.com/s/X1mLXPzJU7k_ANMzvVPxjA
 
-一只鸟如何衔着一根树枝飞过太平洋？
+BERT、RoBERTa、DistilBERT与XLNet，我们到底该如何选择？
 
-https://mp.weixin.qq.com/s/uwJD1Oby32sD8nYPuABYew
+https://mp.weixin.qq.com/s/GGRORF5EfJ5xzMLwAsJt5w
 
-你以为的“中产象征”，只不过是远古巨兽吃剩下的……（牛油果）
+从词袋到Transfomer，NLP十年突破史
 
-https://mp.weixin.qq.com/s/2ShQXAQ0ZU1J9YR8UsHzKQ
+https://mp.weixin.qq.com/s/fxEg8UOa3MeJ6qx5SjEHog
 
-我们终于知道，蛇是怎么“飞行”的了
+NLP领域中各式各样Attention知识系统性的梳理和总结
 
-https://mp.weixin.qq.com/s/hp8iPf5g4Gdt1zQQdwDqUQ
+https://mp.weixin.qq.com/s/_5YaZdYa8bTFiAzHyrMFBg
 
-猫薄荷里的致嗨武器是怎么来的
-
-https://mp.weixin.qq.com/s/qh8H4yoaI_4hgpfNa1QgVQ
-
-同样是撸猫，老祖宗可是冒过生命危险的！
-
-https://mp.weixin.qq.com/s/WHALYbp9V7nxzy1sN6irCQ
-
-脑科学史话：巴甫洛夫的心智探寻之路
-
-https://mp.weixin.qq.com/s/fIn-A8nqUntNuzBMeuHLMA
-
-这些神秘圆圈，与图灵的理论有关？
-
-https://mp.weixin.qq.com/s/ERxHmUzeowA-0VFHxgmiIQ
-
-苍蝇还有不吃粑粑的？嗯，有！还特萌！
-
-https://www.zhihu.com/question/424503238
-
-呼吸道和消化道在咽喉部共用一个通道有什么生理意义？
-
-https://www.sohu.com/a/233954413_157078
-
-套路多的何止三文鱼 你买的“鳕鱼”也没几条是真的
+理解卷积神经网络中的自注意力机制

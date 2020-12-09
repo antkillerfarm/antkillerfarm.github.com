@@ -29,6 +29,10 @@ https://mp.weixin.qq.com/s/YDIoVf20kybu8JEUY3GZWg
 
 Lattice Planner规划算法
 
+https://mp.weixin.qq.com/s/KdbiBU_-eWd139T4khXtkA
+
+自动驾驶实时路径规划算法简介（RRT 和Lattice Planner）
+
 https://mp.weixin.qq.com/s/5TyL9bkKe-XMKLl-QbtaZg
 
 西电智能学子斩获ECCV2018无人机挑战赛冠军—算法分享
@@ -326,97 +330,3 @@ autoware提供的模拟器。
 代码仓库：
 
 https://gitlab.com/autowarefoundation/autoware.ai
-
-# 模型压缩与加速进阶+
-
-https://mp.weixin.qq.com/s/m9I5TM9uJcgZvMusO667OA
-
-5MB的神经网络也高效，Facebook新压缩算法造福嵌入式设备
-
-https://mp.weixin.qq.com/s/FFs0-ROvbXSAIOspW_rMbw
-
-超越MobileNetV3！谷歌大脑提出MixNet轻量级网络
-
-https://mp.weixin.qq.com/s/nys9R6xCJXt0vG06gnQzFQ
-
-模型剪枝，不可忽视的推断效率提升方法
-
-https://mp.weixin.qq.com/s/EuT-4_eEtIVKh6QdLDbohg
-
-解读小米MoGA：超过MobileNetV3的移动端GPU敏感型搜索
-
-https://mp.weixin.qq.com/s/L49cqZ2PXP-x4Y6xBJG5cQ
-
-旷视研究院提出MetaPruning：基于元学习和AutoML的模型压缩新方法
-
-https://mp.weixin.qq.com/s/F_p414ezQ0RDhPnZj36SUA
-
-网络剪枝中的AutoML方法
-
-https://zhuanlan.zhihu.com/c_151876233
-
-如何Finetune一个小网络到移动端（时空性能分析篇）
-
-https://mp.weixin.qq.com/s/kU0_BuQW8VQihUwBuZ90cA
-
-发布可伸缩超网SCARLET，小米AutoML团队NAS三部曲杀青
-
-https://mp.weixin.qq.com/s/ZfW-jDSo6uaaqdmJtBizOA
-
-从模型精简，硬件实现，到模型剪枝
-
-https://mp.weixin.qq.com/s/5ywMyedmplCSLzWlnoFDSQ
-
-模型剪枝技术原理及其发展现状和展望
-
-https://mp.weixin.qq.com/s/8jyQ_7DYn7lHMcAWokKbcA
-
-超Mask RCNN速度4倍，仅在单个GPU训练的实时实例分割算法
-
-https://mp.weixin.qq.com/s/TC_Ju2vuKDP6d538v2F8CQ
-
-剪枝需有的放矢，快手&罗切斯特大学提出基于能耗建模的模型压缩
-
-https://mp.weixin.qq.com/s/UkqwPBYgYQuIB9_jGMt2QQ
-
-Rocket Training: 一种提升轻量网络性能的训练方法
-
-https://mp.weixin.qq.com/s/xCzS7sYMFmk5K4ClB1I2YQ
-
-Uber提出SBNet：利用激活的稀疏性加速卷积网络
-
-https://mp.weixin.qq.com/s/6Wj0Y4y30BVA75WrU4oZbQ
-
-SBNet: 提高自动驾驶系统的感知效率
-
-https://mp.weixin.qq.com/s/HXxnhMjAchxKSidu45kOeg
-
-网络压缩最新进展：2019年最新文章概览
-
-https://mp.weixin.qq.com/s/Bl7-hGIxZMsHxscqb7DnMA
-
-200～1000+fps！谷歌公布亚毫秒级人脸检测算法BlazeFace，面向移动GPU
-
-https://mp.weixin.qq.com/s/l2_N-PXjDMCqSRwYxU4BEA
-
-模型加速概述与模型裁剪算法技术解析
-
-https://mp.weixin.qq.com/s/af-z73asc-PmpEsI_yEulA
-
-北邮提出新AI模型压缩算法，显著降低计算复杂度
-
-https://mp.weixin.qq.com/s/AOI2LUjiKPUJFE0D7zX0Hw
-
-谷歌新研究：基于数据共享的神经网络快速训练方法
-
-https://mp.weixin.qq.com/s/Q0XyKIrbOIrA3YsYHmwK1Q
-
-移动端高效率的分组网络都发展到什么程度了？
-
-https://mp.weixin.qq.com/s/l3790PuutrOF27RRmVqJhQ
-
-面对千万级推荐，如何压缩模型最高效？这是腾讯看点新框架
-
-https://mp.weixin.qq.com/s/n_LY6mmJRH5k_cubYOTq1A
-
-模型剪枝有哪些关键技术，如何对其进行长期深入学习

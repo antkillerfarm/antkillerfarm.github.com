@@ -105,6 +105,10 @@ https://mp.weixin.qq.com/s/h5gZCKRGZlG03DZL-2FWIw
 
 大谷老师又双叒叕有新作品啦！这一次，他让兵马俑活了过来
 
+https://mp.weixin.qq.com/s/0hD7x0iCERbBWUkwCMerOw
+
+AI脑补宋明清皇帝长相，四大模型构想真实五官
+
 ----
 
 最左边的那位是北洋政府第一任总理唐绍仪之第八女名甘唐宝玫（1902-1941）（后离婚再嫁改姓岑）～中国历史上的首个大型时装show的组织者。
@@ -374,19 +378,3 @@ https://mp.weixin.qq.com/s/iK7XR0tHV_dE0p1grNQIHw
 https://mp.weixin.qq.com/s/-j4p7nUF-rCGk6yK0nccvw
 
 机器人也会画漫画
-
-https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247504381&idx=2&sn=465027cc2a8f75a7f6ddf400830f61e0
-
-这个品质超高的漫画自动上色AI，让你DIY出喜欢的配色
-
-https://mp.weixin.qq.com/s/3Aq1HXpBzgNdcB130tCKbQ
-
-GAN网络图像翻译机：图像复原、模糊变清晰、素描变彩图
-
-https://mp.weixin.qq.com/s/DTVjncaERBmDfOkvXv_3qg
-
-皱眉细节完美复刻，阿尔伯塔大学团队标星1.7K的项目生成超逼真的肖像画
-
-https://mp.weixin.qq.com/s/UpfgxiIaSU4iIjbrkS--zA
-
-颠覆视频压缩的不一定是新压缩算法，而可能是GAN！英伟达新算法最高压缩90%流量

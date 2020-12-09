@@ -379,4 +379,4 @@ CPU强调单core的极致性能，因此广泛使用了如下技术：
 
 ![](/images/img4/GPU.png)
 
-GPU不追求单core
+GPU不追求单core的性能，因此也没有那些复杂的控制逻辑。这样省下来的电路，可以变成更多的ALU。由于数据处理的局部性，通常可以若干ALU共享一套Fetch/Decode和Ctx。

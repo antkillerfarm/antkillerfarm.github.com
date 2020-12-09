@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  古希腊三大数学书（二）
+title:  古希腊三大数学书（二）, 数学杂谈（1）
 category: math 
 ---
 
@@ -79,7 +79,7 @@ https://mp.weixin.qq.com/s/K4EIQyLSPvR3VTZp3dG4_g
 
 推荐阅读《古今数学思想》一书，可以对数学史产生一个比较全面的认识。
 
-# 数学杂谈+
+# 数学杂谈
 
 https://www.zhihu.com/question/40167866
 

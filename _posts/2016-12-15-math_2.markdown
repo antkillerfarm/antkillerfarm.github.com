@@ -144,7 +144,7 @@ $$f(t)=\lim_{T\to \infty}\sum_{n=-\infty}^{+\infty}\frac{F_n}{\omega}e^{in\omega
 
 https://www.zhihu.com/question/21665935
 
-傅里叶级数和傅里叶变换是什么关系？
+傅立叶级数和傅立叶变换是什么关系？
 
 https://zhuanlan.zhihu.com/p/19763358
 
@@ -160,7 +160,11 @@ https://zhuanlan.zhihu.com/p/41875010
 
 https://zhuanlan.zhihu.com/p/75521342
 
-离散傅里叶变换（DFT）
+离散傅立叶变换（DFT）
+
+https://mp.weixin.qq.com/s/4wv8fYe8pahnt-301t-3Hw
+
+傅立叶变换
 
 https://mp.weixin.qq.com/s/MLe_MtQE27rZTncaQeU4cg
 

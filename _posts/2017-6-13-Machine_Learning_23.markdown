@@ -179,7 +179,13 @@ ncorporating Nesterov Momentum into Adam
 
 ![](/images/img3/Cycle.jpg)
 
-cycle参数的初衷是为了防止网络后期lr十分小导致一直在某个局部最小值中振荡，突然调大lr可以跳出注定不会继续增长的区域探索其他区域。
+cycle参数的初衷是为了防止训练后期LR十分小，导致结果一直在某个局部最小值附近振荡。突然调大LR可以跳出注定不会继续增长的区域探索其他区域。
+
+![](/images/img4/cyclic_lr.jpg)
+
+上图展示了Cyclic LR的另一种用法：
+
+每隔一段时间重启学习率，这样在单位时间内能收敛到多个局部最小值，从而得到很多个模型做集成。
 
 ## 二阶Optimizer
 
@@ -318,19 +324,3 @@ https://mp.weixin.qq.com/s/rUqIfKWmEBVjajlAn2HXfg
 https://mp.weixin.qq.com/s/UfplwSgyWnLNiCdIrconhA
 
 SGD的那些变种，真的比SGD强吗
-
-https://zhuanlan.zhihu.com/p/73441350
-
-从物理角度理解加速梯度下降
-
-https://mp.weixin.qq.com/s/n1Ks8I3Ldgb-u-kVbGBZ5Q
-
-机器学习中的优化方法
-
-https://mp.weixin.qq.com/s/4XOI8Dq6fqe8rhtJjeyxeA
-
-超级收敛：使用超大学习率超快速训练残差网络
-
-http://mp.weixin.qq.com/s/Q5kBCNZs3a6oiznC9-2bVg
-
-Michael Jordan新研究官方解读：如何有效地避开鞍点

@@ -95,6 +95,10 @@ https://zhuanlan.zhihu.com/p/267263561
 
 推荐系统总结之深度召回模型（上）
 
+https://mp.weixin.qq.com/s/jvWJuC0O9eVUb-o2PUSe8w
+
+未来感知的多样化趋势推荐框架
+
 # LSTM进阶
 
 ## 《Long short-term memory》

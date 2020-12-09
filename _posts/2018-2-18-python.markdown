@@ -419,3 +419,7 @@ https://blog.jamespan.me/2016/06/09/remote-debug-your-python-code
 https://www.ibm.com/developerworks/cn/linux/l-cn-pythondebugger/index.html
 
 Python代码调试技巧
+
+https://mp.weixin.qq.com/s/4pxGrn9jgp8So8JsONC-3A
+
+别再用print调试代码了（PySnooper）

@@ -285,43 +285,39 @@ https://mp.weixin.qq.com/s/_CENjzEK1kjsFpvX0H5gpQ
 
 结合堆叠与深度转换的新型神经翻译架构：爱丁堡大学提出BiDeep RNN
 
-# 模型压缩与加速进阶+++
+# 图像变换+
 
-https://mp.weixin.qq.com/s/DLNyb-GtzmSYuXcn6VQz4Q
+https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247504381&idx=2&sn=465027cc2a8f75a7f6ddf400830f61e0
 
-高效轻量级深度模型的研究和实践
+这个品质超高的漫画自动上色AI，让你DIY出喜欢的配色
 
-https://mp.weixin.qq.com/s/3SWtxtV9b0dFpvqfTNlqIg
+https://mp.weixin.qq.com/s/3Aq1HXpBzgNdcB130tCKbQ
 
-Slimmable Neural Networks
+GAN网络图像翻译机：图像复原、模糊变清晰、素描变彩图
 
-https://mp.weixin.qq.com/s/lc7IoOV6S2Uz5xi7cPQUqg
+https://mp.weixin.qq.com/s/DTVjncaERBmDfOkvXv_3qg
 
-基于元学习和AutoML的模型压缩新方法
+皱眉细节完美复刻，阿尔伯塔大学团队标星1.7K的项目生成超逼真的肖像画
 
-https://zhuanlan.zhihu.com/p/64400678
+https://mp.weixin.qq.com/s/UpfgxiIaSU4iIjbrkS--zA
 
-轻量卷积神经网络的设计
+颠覆视频压缩的不一定是新压缩算法，而可能是GAN！英伟达新算法最高压缩90%流量
 
-https://mp.weixin.qq.com/s/pJk84bNzRn7LZZfQfSjs5A
+https://mp.weixin.qq.com/s/yn_TQ-Mdcph3M1dfLu-KMw
 
-VarGFaceNet：地平线提出轻量级、有效可变组卷积的人脸识别网络
+好好的人，说没就没了：这个视频“橡皮擦”让你瞬间消失，头发丝都不留
 
-https://mp.weixin.qq.com/s/cYimAphdyFO_XqKfT2Hbeg
+https://mp.weixin.qq.com/s/-HKWSLDBwswuDYho29q5Kg
 
-如何使用强化学习进行模型剪枝
+怎样用Python控制图片人物动起来？一文就能Get！
 
-https://mp.weixin.qq.com/s/SgELZgoHzIvbg2-jzJw6Tw
+https://mp.weixin.qq.com/s/ECxcgclgHtjerFD4P3lvAA
 
-港科大、清华与旷视提出基于元学习的自动化神经网络通道剪枝网络
+建造自己的“天空之城”，密歇根大学博士后的这项研究可以虚空造物、偷天换日
 
-https://mp.weixin.qq.com/s/q5-91AAKwBiYzTMmqadEcg
+https://mp.weixin.qq.com/s/LoQzVvMLoFDQDV_Xrdup5w
 
-RefineDetLite：腾讯提出轻量级高精度目标检测网络
-
-https://mp.weixin.qq.com/s/Vh5Y9Ru_hbN0CzM7_xGg6A
-
-MicroNet通过极低FLOPs实现图像识别
+升级版APDrawing，人脸照秒变线条肖像画，细节呈现惊人
 
 # CNN进化史
 

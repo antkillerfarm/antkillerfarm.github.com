@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度加速（六）——模型压缩与加速进阶
+title:  深度加速（六）——模型压缩与加速进阶（1）
 category: DL acceleration 
 ---
 
@@ -192,6 +192,12 @@ https://zhuanlan.zhihu.com/p/90049906
 https://mp.weixin.qq.com/s/rxwHFjl0FEPWEcfMcwXL8w
 
 BERT蒸馏完全指南
+
+# 硬件加速技巧
+
+https://mp.weixin.qq.com/s/moQnarr1U-8v834bNJ10Zw
+
+GPU上的高效softmax近似
 
 # 模型压缩与加速进阶
 

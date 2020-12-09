@@ -9,6 +9,22 @@ category: ML
 
 # Optimizer（续）
 
+https://zhuanlan.zhihu.com/p/73441350
+
+从物理角度理解加速梯度下降
+
+https://mp.weixin.qq.com/s/n1Ks8I3Ldgb-u-kVbGBZ5Q
+
+机器学习中的优化方法
+
+https://mp.weixin.qq.com/s/4XOI8Dq6fqe8rhtJjeyxeA
+
+超级收敛：使用超大学习率超快速训练残差网络
+
+http://mp.weixin.qq.com/s/Q5kBCNZs3a6oiznC9-2bVg
+
+Michael Jordan新研究官方解读：如何有效地避开鞍点
+
 https://mp.weixin.qq.com/s/idmt0F49tOCh-ghWdHLdUw
 
 吴恩达导师Michael I.Jordan学术演讲：如何有效避开鞍点。这是Jordan半年后的另一个演讲，有些新内容。
