@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  我的PC简史
-category: essay 
+category: my story 
 ---
 
 * toc

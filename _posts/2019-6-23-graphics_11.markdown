@@ -193,7 +193,11 @@ http://blog.csdn.net/pizi0475/article/details/6650851
 
 https://www.zhihu.com/question/29863225
 
-Ray Tracing，Ray Casting，Path Tracing，Ray Marching 的区别？
+Ray Tracing，Ray Casting，Path Tracing，Ray Marching的区别？
+
+https://www.zhihu.com/question/310930978
+
+实时光线追踪（real-time ray tracing）技术还有哪些未攻克的难题？
 
 https://www.jianshu.com/p/4ec47871973c
 
@@ -376,55 +380,3 @@ CPU强调单core的极致性能，因此广泛使用了如下技术：
 ![](/images/img4/GPU.png)
 
 GPU不追求单core
-
-# 世说新语++++++++
-
-## 2020.11（续）
-
-https://zhuanlan.zhihu.com/p/309430727
-
-日本一把手为什么喜欢黑人？（织田信长&弥助）
-
-----
-
-https://mp.weixin.qq.com/s/pP2Sh9t0w-liavgI02VmAQ
-
-携程四君子
-
-----
-
-https://mp.weixin.qq.com/s/m72bakeHShkM8yvPubMa8A
-
-狂飙突进的“蛋壳”，一触即溃的“蛋壳”
-
-https://mp.weixin.qq.com/s/LWhuImT3W1Pg-4WA0RMq6g
-
-被长租公寓割韭菜的打工一代
-
------
-
-![](/images/img4/deep_state.png)
-
-中国和美国相比，哪一个国家按人口比例来说，当官的更多呢？或者更准确一点说，公务员更多呢？
-
-美国作为一个世界上最发达的民主国家，它的政府肯定是人数最少，效率最高，而且服务态度最好，这还用得着问吗？
-
-但是我接下来告诉大家的答案，可能让所有的人目瞪口呆。
-
-美国有2232万公务员！这是2017年的数据，现在应该又增加了一两百万。
-
-https://mp.weixin.qq.com/s/pznF07f06AAQ_9VgY-z_og
-
-美国到底有没有一个“影子”政府？
-
-----
-
-提高步枪有效射程的关键发明：定装子弹、无烟火药、尖形弹头。定装子弹解决了气密性问题，提高了火药燃气能量的利用率；无烟火药能够提供大大高于黑火药的推进力，提高了弹头初速；尖形弹头重量较轻因此初速更高、空气阻力较小因此射程更远。
-
-https://www.zhihu.com/question/22606876
-
-为何直到二战末才意识到步枪威力过剩？
-
-----
-
-喀秋莎火箭炮：斯大林的管风琴

@@ -25,6 +25,14 @@ Sebastian团队另外一大贡献就是在完成挑战赛后，发表了一篇�
 
 ## 行业
 
+1894年，法国人举办了一次汽车比赛，130公里的总路程，102辆车参赛，其中7辆酒精车，30辆汽油车，4辆电动车，28辆蒸汽车，其他车辆33辆，最后只有9辆车跑完全程，轻松夺冠的是蒸汽汽车。
+
+然而到了1899年，电动车的性能就稳稳超过了其他车辆，跑出了105码的惊人速度。操作简单无需换挡，没有噪音震动废气。同时代蒸汽车要不停加水，更夸张的是启动时，有45分钟的预热时间。而汽油车，虽木有预热时间但是要人力启动。这10年间电动车是一家独大的。
+
+一直到1912年，内燃机车迎来自己的技术飞跃。震动和噪音大幅减少，动力足续航强，而电池技术却限于瓶颈，没有大的进步，辉煌十年匆匆退场。
+
+----
+
 ![](/images/img2/ADAS.jpg)
 
 https://mp.weixin.qq.com/s/Okolok3ZLZhgw0TQ_TROKA
@@ -420,45 +428,3 @@ openpilot是一个开源的自动驾驶（驾驶代理）。
 官网：
 
 https://github.com/commaai/openpilot
-
-## CAN
-
-https://mp.weixin.qq.com/s/8jZKgSeRw7k0F9JOigFJcw
-
-自动驾驶之——CAN总线简介
-
-https://mp.weixin.qq.com/s/U-Nzj3NM3acjkprVuyComg
-
-汽车CAN总线技术详解
-
-https://mp.weixin.qq.com/s/yDQ4zQpo4BVrnnnV_J6dlg
-
-一文看懂四大汽车总线：LIN、CAN、FlexRay、MOST
-
-https://mp.weixin.qq.com/s/u6gibvshU4KI3fEE6h9KeQ
-
-上海大众内训资料：CAN总线讲解
-
-https://mp.weixin.qq.com/s/tjn6Fob1L9aWnl2b35rjgA
-
-一文读懂总线技术
-
-https://mp.weixin.qq.com/s/d35w8Gs0Zzf1yHPkXFv9iQ
-
-CAN总线必看经典
-
-https://mp.weixin.qq.com/s/K-EqcqX8X7oeNA2czT2qIA
-
-高手写的CAN总线入门总结
-
-https://mp.weixin.qq.com/s/5ZfFcbnhkpyO-CdXyw6SKw
-
-一文详解LIN总线
-
-https://mp.weixin.qq.com/s/hxH-e6qz13Cr4kBqjTmVRw
-
-CAN总线的特点和帧结构
-
-https://mp.weixin.qq.com/s/FmdRkyQm0P-N_bCjMEPLbA
-
-CAN协议标准及相关内容

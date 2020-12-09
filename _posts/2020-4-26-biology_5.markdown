@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DNA鉴定, 新冠肺炎（1）
+title: DNA鉴定, 新冠肺炎（一）
 category: Nature 
 ---
 

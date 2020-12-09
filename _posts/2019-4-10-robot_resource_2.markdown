@@ -9,6 +9,48 @@ category: resource
 
 # 机器人/无人驾驶参考资源
 
+## CAN
+
+https://mp.weixin.qq.com/s/8jZKgSeRw7k0F9JOigFJcw
+
+自动驾驶之——CAN总线简介
+
+https://mp.weixin.qq.com/s/U-Nzj3NM3acjkprVuyComg
+
+汽车CAN总线技术详解
+
+https://mp.weixin.qq.com/s/yDQ4zQpo4BVrnnnV_J6dlg
+
+一文看懂四大汽车总线：LIN、CAN、FlexRay、MOST
+
+https://mp.weixin.qq.com/s/u6gibvshU4KI3fEE6h9KeQ
+
+上海大众内训资料：CAN总线讲解
+
+https://mp.weixin.qq.com/s/tjn6Fob1L9aWnl2b35rjgA
+
+一文读懂总线技术
+
+https://mp.weixin.qq.com/s/d35w8Gs0Zzf1yHPkXFv9iQ
+
+CAN总线必看经典
+
+https://mp.weixin.qq.com/s/K-EqcqX8X7oeNA2czT2qIA
+
+高手写的CAN总线入门总结
+
+https://mp.weixin.qq.com/s/5ZfFcbnhkpyO-CdXyw6SKw
+
+一文详解LIN总线
+
+https://mp.weixin.qq.com/s/hxH-e6qz13Cr4kBqjTmVRw
+
+CAN总线的特点和帧结构
+
+https://mp.weixin.qq.com/s/FmdRkyQm0P-N_bCjMEPLbA
+
+CAN协议标准及相关内容
+
 ## 路径规划
 
 https://mp.weixin.qq.com/s/Rt6Gem1kgWK2ACqiIGiDiw
@@ -380,47 +422,3 @@ https://mp.weixin.qq.com/s/E_EEowwxXw0-Dbxh9HSzjw
 https://mp.weixin.qq.com/s/PYqhSHzlyO5HqLvBaEqlwQ
 
 直接建模视觉智能体？让“小狗”动起来～
-
-https://mp.weixin.qq.com/s/mZbO-y4haBx-IodgEtdUBA
-
-LSTM之父最新力作：手把手教你训练一个有世界观的AI赛车手
-
-https://mp.weixin.qq.com/s/k3RbUz9txd09PpiLUEHVfA
-
-无人驾驶汽车系统入门：深度前馈网络，深度学习的正则化，交通信号识别
-
-https://mp.weixin.qq.com/s/09NwPaWTDU5g6ZjSPxLgTw
-
-肖健雄：无人车量产的4大技术储备
-
-https://mp.weixin.qq.com/s/-dGXe4RuU4w8DN8ffCMiFg
-
-让AI自动调参，才是百度无人车的进化方式：适应环境全靠自己
-
-https://mp.weixin.qq.com/s/YDIoVf20kybu8JEUY3GZWg
-
-Lattice Planner规划算法
-
-https://mp.weixin.qq.com/s/5TyL9bkKe-XMKLl-QbtaZg
-
-西电智能学子斩获ECCV2018无人机挑战赛冠军—算法分享
-
-https://mp.weixin.qq.com/s/1SxwYqcxB8zIavr11cIGWg
-
-机器学习及深度学习在自动驾驶中的应用
-
-https://mp.weixin.qq.com/s/2gk1xF3lh2ioIGQeY_ZsHQ
-
-highD：德国提出从空中角度测量车辆数据的新方法
-
-https://mp.weixin.qq.com/s/f25RbCRoWT9Ft6m_G3lyvQ
-
-全美225万公里道路没标识？揭开无人车的极端行驶秘籍
-
-https://mp.weixin.qq.com/s/TvRcJws7NKt-twHUyPlJvw
-
-LiDAR技术介绍
-
-https://www.zhihu.com/question/305705783
-
-工厂里的自动化搬运是如何实现准确定位精准送达的？

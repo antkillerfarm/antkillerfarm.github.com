@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  入行以来涉及的技术简史（一）
-category: essay 
+category: my story 
 ---
 
 * toc

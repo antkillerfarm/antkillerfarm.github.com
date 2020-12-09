@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 化学, Maxwell's equations, Doppler effect
+title: 化学
 category: Nature 
 ---
 
@@ -24,6 +24,10 @@ category: Nature
 https://www.zhihu.com/question/26946942
 
 天然铀的放射性类型是什么？近距离接触对人有危害吗？
+
+----
+
+他是淘宝上的“绝命毒师”，他开了一家只卖化学元素的店铺——冥灵化试。
 
 ----
 
@@ -208,6 +212,14 @@ https://www.zhihu.com/question/21171331
 
 火腿肠里真的有肉吗？
 
+----
+
+可口可乐公司30年代就开始在德国大做广告，到1938年，德国的可口可乐销量已经非常可观。同时可口可乐还与纳粹建立了非常紧密的关系，并参与了大量的纳粹政治活动。甚至最后可口可乐在德国还出现了“一个民族，一个帝国，一杯可乐”这样的广告词。
+
+虽然可口可乐知道德国的分公司在干什么，就算39年欧战爆发，为了可口可乐的销量，大量的可乐原料依然被送往德国。到美国对德宣战以后，德国的可口可乐分公司再也无法获得原料，可乐生产陷入停摆状态。
+
+不过还好，德国化学家终于研制出了替代品：乳清+苹果酒生产剩下的苹果纤维，就是芬达。芬达这种替代品一直生产到战争结束，并在战后被可口可乐公司所吸纳。
+
 ## 化学工业
 
 https://wallstreetcn.com/articles/250536
@@ -237,52 +249,3 @@ http://www.qdaily.com/articles/18872.html
 https://mp.weixin.qq.com/s/MkVeQ7xYAHV8mA1zmdr0qg
 
 四川五通桥事故频发：“化工围城”之殇
-
-# Maxwell's equations
-
-| Name | Differential form | Integral form |
-|:--:|:--:|:--:|
-| Gauss's law | $$\nabla \cdot \mathbf{D} = \rho$$ | $$\oint_S \mathbf{D} \cdot d\mathbf{A} =  \int_V \rho \cdot dV$$ |
-| Gauss' law for magnetism | $$\nabla \cdot \mathbf{B} = 0$$ | $$\oint_S \mathbf{B} \cdot d\mathbf{A} = 0$$ |
-| Faraday's law of induction | $$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}} {\partial t}$$ | $$\oint_C \mathbf{E} \cdot d\mathbf{l} - \oint_C \mathbf {B} \times \mathbf{v} \cdot d{\mathbf {l}}  = - \ { d \over dt }   \int_S   \mathbf{B} \cdot d\mathbf{A}$$ |
-| Ampère's law | $$\nabla \times \mathbf{H} = \mathbf{J} + \frac{\partial \mathbf{D}} {\partial t}$$ | $$\oint_C \mathbf{H} \cdot d\mathbf{l} = \int_S \mathbf{J} \cdot d \mathbf{A} + \int_S\frac{\partial \mathbf{D} }{\partial t}\cdot d \mathbf{A}$$ |
-
-| Symbol | Meaning |
-|:--:|:--:|
-| $$\mathbf{E}$$ | electric field |
-| $$\mathbf{H}$$ | magnetic field |
-| $$\mathbf{D}$$ | electric displacement field |
-| $$\mathbf{B}$$ | Magnetic field density |
-| $$\rho$$ | electric charge |
-| $$\mathbf{J}$$ | current density |
-| $$\mathbf{v}$$ | velocity |
-| $$\nabla \cdot$$ | divergence operator |
-| $$\nabla \times$$ | curl operator |
-
-# Doppler effect
-
->Christian Johann Doppler，1803～1853，奥地利物理学家，数学家和天文学家。维也纳大学物理学院的第一任院长。
-
-![](/images/img4/Doppler_effect.gif)
-
-v=0
-
-![](/images/img4/Doppler_effect_2.gif)
-
-v<c
-
-![](/images/img4/Doppler_effect_3.gif)
-
-v=c
-
-![](/images/img4/Doppler_effect_4.gif)
-
-v>c
-
-https://mp.weixin.qq.com/s/TU6FOTEfLu_pN9_3Ya085g
-
-多普勒，那个和声音赛跑的男人
-
-https://mp.weixin.qq.com/s/j8KvzZ6gvOsW2fVMSwI51Q
-
-多普勒，石破能惊天的孙大圣？还是凡人唐三藏？

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 新冠肺炎（2）
+title: 新冠肺炎（二）
 category: Nature 
 ---
 

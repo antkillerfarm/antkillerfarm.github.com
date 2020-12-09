@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 两弹一星（1）
+title: 两弹一星（一）
 category: Bombs & Satellite 
 ---
 
@@ -53,14 +53,6 @@ https://mp.weixin.qq.com/s/3OWh2w9h1NQLlniIb1fH9A
 
 ----
 
-核潜艇，一万年也要搞出来！
-
-https://mp.weixin.qq.com/s/GtxS2Y2obtUROnJqyoGqJw
-
-为什么美国要制裁中国核动力工业时，中国只是轻蔑地"呸"了一声!
-
-----
-
 2019.12.17 山东号航空母舰入列。
 
 ![](/images/img3/Carrier.jpg)
@@ -84,6 +76,10 @@ STOVL（Short Take Off Vertical Landing）
 https://zhuanlan.zhihu.com/p/196773456
 
 中国的底牌：万一战争爆发，我们能否顶住？
+
+https://www.guancha.cn/ShiYang/2016_10_26_378389.shtml
+
+施洋：“辽宁号”会像“库兹涅佐夫”一样冒黑烟么
 
 ----
 
@@ -176,15 +172,3 @@ https://www.zhihu.com/answer/88285807
 http://news.jstv.com/a/20161028/1477642949557.shtml
 
 一座城的保密往事——记三线建设时期的攀枝花
-
-https://zhuanlan.zhihu.com/p/27611921
-
-攀枝花，一个胜天半子的城市
-
-https://sichuan.scol.com.cn/dwzw/202006/57818375.html
-
-绝密 破解攀枝花钒钛磁铁矿冶炼难题的幕后英雄首次亮相
-
-https://www.sohu.com/a/407049368_307310
-
-不负国家使命！攀钢用50年成就“全球唯一”

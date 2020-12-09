@@ -195,13 +195,13 @@ BERT蒸馏完全指南
 
 # 模型压缩与加速进阶
 
-https://mp.weixin.qq.com/s/Ck_GDv1Xo-YMZcu-00gTOA
+https://zhuanlan.zhihu.com/p/138059904
 
-中星微夺冠国际人工智能算法竞赛，目标检测一步法精度速度双赢
+一文看懂深度学习模型压缩和加速
 
-https://mp.weixin.qq.com/s/qWJarPrjOrwxSX77xQ9rCw
+https://zhuanlan.zhihu.com/p/179945324
 
-面向卷积神经网络的卷积核冗余消除策略
+一文深入深度学习模型压缩和加速
 
 https://mp.weixin.qq.com/s/QSGgvhkMUj3cXVlQwlzTFQ
 
@@ -219,17 +219,13 @@ https://zhuanlan.zhihu.com/p/38046989
 
 从ISCA论文看AI硬件加速的新技巧
 
-https://mp.weixin.qq.com/s/jqRBrs9Y_-3qvemL0RTflA
+https://mp.weixin.qq.com/s/s6Z8P8bUkyoKU2mW3z-rNQ
 
-支付宝如何优化移动端深度学习引擎？
+轻量级网络/检测/分割综述
 
 https://mp.weixin.qq.com/s/-V6hlZAKp1vuARSibZDBQQ
 
 深度学习高效计算与处理器设计
-
-https://mp.weixin.qq.com/s/NJzGR-tY_WWeccbdshHckA
-
-基于交错组卷积的高效深度神经网络
 
 https://mp.weixin.qq.com/s/ccFccLb2UTyFyMwFPjsDaA
 

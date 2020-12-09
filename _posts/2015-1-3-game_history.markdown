@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  我的PC Game（一）
-category: essay 
+category: my story 
 ---
 
 * toc

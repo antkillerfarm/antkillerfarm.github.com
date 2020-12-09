@@ -1,71 +1,13 @@
 ---
 layout: post
 title:  古希腊三大数学书（二）
-category: essay 
+category: math 
 ---
 
 * toc
 {:toc}
 
 # 古希腊三大数学书
-
-### 几何（续）
-
-3.立体几何。
-
-最主要的贡献是球体积和表面积的计算，其解决思想中蕴含着现代的微积分思想的萌芽。
-
-4.圆锥曲线
-
-这是古希腊的独门绝活，其他文明从未系统研究过该类问题（不排除有零星的研究成果）。
-
-5.特殊曲线和三大作图问题
-
-希腊数学家还发明一些特殊曲线，如希庇亚斯（Hippias）发明的割圆曲线、阿基米德发明的螺线、尼科梅德斯（Nicomedes）发明的蚌线和狄奥克勒斯（Diocles）发明的蔓叶线。
-
-这些曲线对于求解三大作图问题，很有帮助。事实上，如果不限定尺规作图的话，三大作图问题在古典时代已经被圆满解决。
-
-这部分内容超出了中学数学的内容。
-
-6.三角学
-
-海伦（Heron）提出了已知三角形三边长度，求三角形面积的公式，即海伦公式。比中国的秦九韶发现类似公式早了1200年。
-
->海伦公式最早是阿基米德提出的，Heron只是获得了冠名权。然而，Heron毕竟不是洛必达，他本人也是大牛，不仅会几何，还在代数、地图学、机械学方面有诸多贡献。在代数上，和丢番图齐名，而在地图学上，则是Eratosthenes之后最牛的地图学家。基本就是一个缩小版的阿基米德。
-
-托勒密（Ptolemy）研究了球面几何的性质，给出了一些后世的黎曼几何空间的初等结论。他是三角函数学的集大成者，做出了最早的三角函数表。
-
-中学三角函数的常用性质，如正弦定理、余弦定理、半角倍角公式、和差化积等，最迟在托勒密时代已经被发现，尽管有些是前人的发现（如欧几里得、梅涅劳斯（Menelaus）等）。
-
-7.数学力学
-
-阿基米德从重心和杠杆原理出发，发明了数学力学。这种方法虽然在现代数学中被分类到几何、代数、解析几何等分支，然而的确是一种很有效的方法。
-
-这部分内容同样超出了中学数学的内容。
-
-### 代数
-
-代数学的历史要晚的多，无论东西方，基本都是公元1世纪产生萌芽，到了公元3世纪才有了初步的雏形。典型代表是中国的《九章算术》和希腊丢番图（Diophantus）的《算术》。
-
-### 解析几何
-
-解析几何虽然进入了现代中学课本，然而其出现的历史非常晚，一般以1637年笛卡尔发表的《几何学》作为解析几何诞生的标志。
-
-### 微积分
-
-中学课本中的微积分知识，非常初步，并不见得比阿基米德、刘徽高明多少，不提也罢。
-
-### 概率论
-
-概率论出现的时间，略早于解析几何，以Girolamo Cardano的《论赌博游戏》为标志。Cardano也是三次方程和四次方程代数解的发现者，详见本人所写的《一元三次方程求根公式的恩恩怨怨》。
-
-中学课本中的概率论，虽然只是古典概率论的部分内容，但的确**超出了古希腊数学家的认知范畴**。
-
-大家可能注意到了，我在介绍中学代数和解析几何的时候，并没有给出“超出了古希腊数学家的认知范畴”这样的结论。这是因为，虽然欧几里得等人没有代数和解析几何这样的数学工具，但是仅仅利用几何学知识，完全能够解普通的一次或二次方程。事实上，这也是西方在丢番图之前，解方程的标准做法，丢番图算是一个另类了。
-
-同样的，开普勒没有利用解析几何，也推出了关于行星运动的三大定律（1619年），这无疑应该归功于阿波罗尼奥斯。
-
-牛顿在《自然哲学的数学原理》中阐述了微积分的思想，他给出的证明也用到了欧几里得和阿波罗尼奥斯的成果。有趣的是，由于笛卡尔在物理上的某个观点是牛顿批驳的对象，所以解析几何被牛爵爷自动无视了。
 
 ### 结论
 
@@ -137,26 +79,160 @@ https://mp.weixin.qq.com/s/K4EIQyLSPvR3VTZp3dG4_g
 
 推荐阅读《古今数学思想》一书，可以对数学史产生一个比较全面的认识。
 
-# 世说新语
+# 数学杂谈+
 
-## 2016.11（续）
+https://www.zhihu.com/question/40167866
 
-光速不变的历史要点：
+学数学的和学物理的，真心惹不起啊。。。
 
-1.莫雷-迈克尔孙干涉实验表明光速不变。
+https://mp.weixin.qq.com/s/hTExoHwP8kzUWyRuUL8G_g
 
-2.洛伦兹认为既然速度不变，那就是距离和时间变了。
+宅在家做蛋糕如何“合理把握”烘焙时间？模小数用数学建模告诉你
 
-3.爱因斯坦在此基础上导出狭义相对论和原子弹理论。
+https://mp.weixin.qq.com/s/_uu1dFzSC257vKS4mPjVfg
 
-4.群众表示不服，你丫的idea是洛伦兹的。
+父子反目，遭亲爹打压数年，数学第一家族中最憋屈的科学家（Daniel Bernoull）
 
-5.爱因斯坦：我要放大招，看我的广义相对论。
+https://mp.weixin.qq.com/s/1Rmdfv4VTIteEPZV-MVJLA
 
-6.群众表示：看不懂。。。
+17世纪的鼠疫与疫区的牛顿
 
-7.爱因斯坦：这就对了。
+https://zhuanlan.zhihu.com/p/109768913
 
-https://mp.weixin.qq.com/s/ZkaaAJV7xuXpfogF4e7KQA
+来自表情包的一道极限计算题
 
-窥探渣男天才爱因斯坦的一生
+https://mp.weixin.qq.com/s/WbmIc6NQ9Yw87R51tj63hQ
+
+为什么数学家除了老婆，竟然还要有个情人
+
+https://mp.weixin.qq.com/s/BwCLtH2mpWLHoXxLlIp5ww
+
+“待我长发及腰”，女生说这话什么意思？
+
+https://www.zhihu.com/question/40852906
+
+拿破仑时代的炮兵究竟数学要多好？
+
+https://mp.weixin.qq.com/s/_wEKKLg_zYOrDmGjkVGVRw
+
+美国高校风靡一时的数学游戏，比黎曼猜想更硬核，至今仍是未解之谜（冰雹猜想）
+
+https://mp.weixin.qq.com/s/9gflokoja0sA70B29nEHLA
+
+谁是世界上最孤独的数？
+
+https://mp.weixin.qq.com/s/S7OmcrLO21PVMyuWin-6Bw
+
+数学上最有趣的数，装得了逼，撩得了妹！（走马灯数）
+
+https://mp.weixin.qq.com/s/sa7ppdn-KotIz6dB-ZuITA
+
+柏拉图：我参透了爱情，却搞不懂为什么只有五种正多面体！
+
+https://mp.weixin.qq.com/s/-pnk_O7cOn5KNrqC89Ydsg
+
+在数学奥林匹克的125年里，这25个逆天解法称霸江湖！
+
+https://mp.weixin.qq.com/s/C83eMExh4Zi3TWD2QhVWsQ
+
+夹逼准则
+
+https://mp.weixin.qq.com/s/K1fJ1wI9T46i7qW1xjMY_w
+
+比圆周率更神秘的“混沌”常数：4.669201609102...（费根鲍姆常数）
+
+https://mp.weixin.qq.com/s/i076Bk9i0kJOP5kGmneBRw
+
+有趣的海盗问题
+
+https://mp.weixin.qq.com/s/EJj7gonRv2607QnYTZWKqQ
+
+笛卡尔！！你……你……你这样泡妞真的好吗？！
+
+https://mp.weixin.qq.com/s/6ynBEJLChqhDwfOBTxJv6w
+
+张东升，你的“心形函数”画错了……
+
+http://web.stanford.edu/~tonyfeng/notes
+
+某牛的数学笔记
+
+https://zhuanlan.zhihu.com/p/50206917
+
+数学笔记（Chapter 1-3. 代数和几何的基础）
+
+https://zhuanlan.zhihu.com/p/50311527
+
+数学笔记（Chapter 4-5. 代数几何和分析的基础）
+
+https://zhuanlan.zhihu.com/p/50524005
+
+数学笔记（Chapter 6. L-函数，第1课）
+
+http://www.moe.gov.cn/s78/A16/A16_ztzl/ztzl_kxnt/kxnt_sgxz/201512/t20151218_225337.html
+
+10000个科学难题数学卷
+
+https://mp.weixin.qq.com/s/imqoo3WWgdWtfah2HYYb6Q
+
+糟糕，我学了假的微积分！
+
+https://mp.weixin.qq.com/s/H_4vuzYcvnZwLZrAxIwgDg
+
+3.14特别纪念：π的第100000000000000···
+
+https://mp.weixin.qq.com/s/xin9VUuIVCZqP-KPn_xAlw
+
+没想到，用极坐标画素数时竟然出现了这神奇的一幕！
+
+https://mp.weixin.qq.com/s/GFO84scpniELyqLdf8HzOQ
+
+一个10*10的正方形里，最多可以放多少个直径为1的圆？为啥不是100个？
+
+https://zhuanlan.zhihu.com/p/36297534
+
+x=cos(x)的解析形式
+
+https://mp.weixin.qq.com/s/5PR4OUubguj0WLB85aa9Mg
+
+2018年菲尔兹奖候选人分析
+
+http://www.matrix67.com/blog/archives/6750
+
+趣题：两个方阵是怎样互相穿过对方的？
+
+https://mp.weixin.qq.com/s/9dphMMCaTRtJ-HtbygOP7w
+
+从青年欧拉对巴塞尔问题的解法说起
+
+https://mp.weixin.qq.com/s/68K3L_pD7xfobr_jA1QgWA
+
+陈景润究竟为证明哥德巴赫猜想做出了哪些贡献？
+
+https://mp.weixin.qq.com/s/HKe_rY9OgwFFc3JH8luokw
+
+数学编年史：数学的起源与发展历程
+
+https://mp.weixin.qq.com/s/rM78u0bF2bqI7eQ4t6lxpw
+
+国内奇葩小学数学题横扫推特，老外被难哭了
+
+https://mp.weixin.qq.com/s/SV3A5tFtZyWgTVXW-1s74w
+
+数学，原来可以这么美！
+
+https://mp.weixin.qq.com/s/xVzLUDmDlnzyGtbReoHDuQ
+
+曾被无视多年，却成就19世纪最伟大的一场革命，影响了整个世界！（非欧几何）
+
+https://mp.weixin.qq.com/s/LOI2HeWgmjlAqnwHS0vh9Q
+
+最强科研寺庙！北大、清华博士为什么跑到这？北大神童：出国不如出家！
+
+https://mp.weixin.qq.com/s/0NKhNt6nFDZCcjHE_njnpw
+
+图G上的随机游走：如何用数学方法估算一个女生前男友的数量？
+
+https://mp.weixin.qq.com/s/NMIyXOZkAqbt-YTz94TMug
+
+超励志！美国囚犯发现数论新规律，堪比大数学家！带着其他囚犯学数学

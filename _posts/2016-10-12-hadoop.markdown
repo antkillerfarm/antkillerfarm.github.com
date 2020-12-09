@@ -383,11 +383,3 @@ https://mp.weixin.qq.com/s/H6OTkpdIgSdugDrEMBLybw
 https://mp.weixin.qq.com/s/Vh5Y9Ru_hbN0CzM7_xGg6A
 
 超越GhostNet！吊打MobileNetV3！MicroNet通过极低FLOPs实现图像识别
-
-https://mp.weixin.qq.com/s/KuZ-mZKt7bTWhzygK1lmSg
-
-加速目标检测
-
-https://zhuanlan.zhihu.com/p/261146248
-
-原生模型上的战斗

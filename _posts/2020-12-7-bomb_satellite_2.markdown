@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 两弹一星（2）
+title: 两弹一星（二）
 category: Bombs & Satellite 
 ---
 
@@ -8,6 +8,18 @@ category: Bombs & Satellite
 {:toc}
 
 # 两弹一星
+
+https://zhuanlan.zhihu.com/p/27611921
+
+攀枝花，一个胜天半子的城市
+
+https://sichuan.scol.com.cn/dwzw/202006/57818375.html
+
+绝密 破解攀枝花钒钛磁铁矿冶炼难题的幕后英雄首次亮相
+
+https://www.sohu.com/a/407049368_307310
+
+不负国家使命！攀钢用50年成就“全球唯一”
 
 https://zhuanlan.zhihu.com/p/307526876
 
@@ -25,6 +37,8 @@ https://zhuanlan.zhihu.com/p/77853212
 
 上个世纪，我国位于西北的核武器研究院“九院”就对外称“221厂”，其所在的地点“金银滩”在1958-1987年间被完全从地图上抹去。 
 
+核潜艇，一万年也要搞出来！
+
 由于严格的保密制度，长期以来，黄旭华不能向亲友透露自己实际上是干什么的，也由于研制工作实在太紧张，从1958～1986年，他没有回过一次老家海丰探望双亲。
 
 >黄旭华，1924年生，交通大学本科（1949）。长期从事核潜艇研制工作，开拓了中国核潜艇的研制领域，是中国第一代核动力潜艇研制创始人之一，被誉为“中国核潜艇之父”。中国工程院院士，获国家最高科学技术奖（2020）。
@@ -36,6 +50,14 @@ https://zhuanlan.zhihu.com/p/77853212
 https://www.sohu.com/a/436691642_260616
 
 伊朗核专家屡次被人“斩首”成功，保密工作有多差？
+
+https://mp.weixin.qq.com/s/GtxS2Y2obtUROnJqyoGqJw
+
+为什么美国要制裁中国核动力工业时，中国只是轻蔑地"呸"了一声!
+
+https://mp.weixin.qq.com/s/1NXjgkr3xWDzqm7Y-9x7-Q
+
+从核潜艇到华龙一号：“其他大国有的，我们也要有”
 
 ----
 
@@ -126,20 +148,6 @@ Kyligence CEO韩卿：
 https://www.zhihu.com/question/403014869
 
 北斗全球系统在太空有没有可能被别的国家破坏或击落？
-
-----
-
-步履式挖掘机1965年由列支敦士登的“kaiser（凯撒）”公司发明。这种挖掘机由于有四个可以独立移动的支腿，因此可以在山地、沼泽等普通挖掘机不能使用的地区使用。
-
-2001年，徐工集团决定接下这个任务。2004年初整车开始了高原测试，两辆原型车被拉到了工程兵某部位于西藏羊八井附近山区中的工地，当地海拔接近5000米。结果测试完车没下来，直接就被驻军扣下了。后来好说歹说还了一台，剩下的一台我15年去徐工的时候，据说依然活跃在中印边境上，十多年没出过大故障。
-
-中国：building，construction completed，new construction options，unit ready.
-
-印度：Insufficient fund，cannot deploy here，building，low power，unit lost.
-
-https://www.zhihu.com/question/404380682
-
-如何看待徐工机械的全地形挖掘机?
 
 ----
 

@@ -1,13 +1,15 @@
 ---
 layout: post
 title: Blog维护日志, 我的AI简史
-category: essay 
+category: my story 
 ---
 
 * toc
 {:toc}
 
 # Blog维护日志
+
+2020.12 添加Bombs & satellite和My story分类。分类数达到23。
 
 2020.9.26 文章数达到400篇，添加img4。
 

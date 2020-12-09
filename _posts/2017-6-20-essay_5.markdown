@@ -1,31 +1,11 @@
 ---
 layout: post
-title: David M. Jones的奇遇, 笕桥英烈传, 冲天, 巨流河
+title: David M. Jones的奇遇, 笕桥英烈传, 冲天
 category: essay 
 ---
 
 * toc
 {:toc}
-
-# 非洲（续）
-
-![](/images/img4/Ethiopia.jpg)
-
-https://www.zhihu.com/question/271535502
-
-埃塞俄比亚复兴大坝的建设会造成什么影响？
-
-https://www.zhihu.com/answer/218497294
-
-中国在非洲的建设项目
-
-https://zhuanlan.zhihu.com/p/51947438
-
-非洲农业黑科技一览
-
-https://zhuanlan.zhihu.com/p/311321195
-
-埃塞俄比亚，打起来了
 
 # David M. Jones的奇遇
 
@@ -200,3 +180,11 @@ https://bbs.hupu.com/18393012.html
 https://zhuanlan.zhihu.com/p/34970776
 
 那些年，为国捐躯的富二代们
+
+# 巨流河
+
+《巨流河》是一本2010年10月由三联书店出版的图书，作者是齐邦媛。
+
+辽河，古代称句骊河，清代称巨流河。
+
+齐邦媛（1924～），女，汉族，辽宁铁岭人，国立武汉大学外文系毕业，1947年到台湾，1968年美国印第安纳大学研究，1969年出任中兴大学新成立之外文系系主任，1988年从台湾大学外文系教授任内退休。
