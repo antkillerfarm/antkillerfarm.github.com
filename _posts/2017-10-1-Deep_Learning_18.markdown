@@ -268,3 +268,7 @@ Pre-training on Graphs
 https://mp.weixin.qq.com/s/ejA2DM1iGH-P4dOlefSOSQ
 
 Graph Neural Networks in Recommender Systems
+
+https://mp.weixin.qq.com/s/9ij8rI_MqyxbwVcjlF3HAA
+
+Google PPRGo:两分钟分类千万节点的最快GNN

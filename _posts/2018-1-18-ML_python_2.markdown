@@ -229,6 +229,10 @@ https://mp.weixin.qq.com/s/OnErgeEvXjVWEC-V9CW5eg
 
 数据清洗指南完整分享
 
+https://mp.weixin.qq.com/s/Stk7U44trzqGjnXKsVd_3g
+
+掌握pandas中的时序数据分组运算
+
 ## 并行Pandas
 
 https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw

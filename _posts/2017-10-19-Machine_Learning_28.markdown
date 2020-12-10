@@ -155,6 +155,10 @@ https://mp.weixin.qq.com/s/Q7Xqb-GZXktFIM5yW8moPg
 
 机器学习中的超参数的选择与交叉验证
 
+https://mp.weixin.qq.com/s/zA7ePAwJ-xcmc8y9qNmE6g
+
+一文详解超参数调优方法
+
 ## 参考
 
 https://mp.weixin.qq.com/s/-0--sZXjMvFKxxo87w4udg

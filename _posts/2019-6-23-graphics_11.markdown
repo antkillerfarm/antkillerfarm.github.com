@@ -15,7 +15,7 @@ ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放�
 
 ![](/images/article/ILSVRC_2010.png)
 
-上图是NEC算法的基本流程图。这里不打算描述整个算法，而仅对其中涉及的术语做一个解释。
+上图是NEC算法的基本流程图。
 
 # 模板匹配
 
@@ -68,6 +68,16 @@ https://www.zhihu.com/question/27623988
 https://zhuanlan.zhihu.com/p/41874735
 
 龙生龙，凤生凤，SLIC生超像素
+
+# Lanczos kernel
+
+>Cornelius (Cornel) Lanczos，1893～1974，匈牙利数学家和物理学家。曾当过爱因斯坦的助手。
+
+Lanczos kernel是一种low-pass filter：
+
+$$L(x)={\begin{cases}1 & {\text{if}}\ x=0,\\{\dfrac {a\sin(\pi x)\sin(\pi x/a)}{\pi ^{2}x^{2}}} & {\text{if}}\ -a\leq x<a\ {\text{and}}\ x\neq 0,\\0 & {\text{otherwise}}.\end{cases}}$$
+
+$$S(x)=\sum _{i=\lfloor x\rfloor -a+1}^{\lfloor x\rfloor +a}s_{i}L(x-i)$$
 
 # CV/CG参考资源
 

@@ -286,6 +286,10 @@ https://mp.weixin.qq.com/s/snNvN4FFP0VEZwDA0TAp1w
 
 强化学习训练Chrome小恐龙Dino Run：最高超过4000分
 
+https://mp.weixin.qq.com/s/35QHMm7Yt-55O631E2BY3A
+
+深度强化学习之：DQN训练超级玛丽闯关
+
 # A2C & A3C
 
 Actor-Critic一般简称AC算法。针对它的一般用法参见《强化学习（八）》。

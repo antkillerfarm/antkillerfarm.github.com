@@ -270,7 +270,7 @@ https://mp.weixin.qq.com/s/tpI5k5sg15WHGv3YoMp-rA
 
 https://zhuanlan.zhihu.com/p/295512971
 
-深度学习从入门到放飞自我：完全解析triplet loss
+完全解析triplet loss
 
 ## Coupled Cluster Loss
 

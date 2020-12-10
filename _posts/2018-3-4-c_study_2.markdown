@@ -67,7 +67,7 @@ http://www.fuzihao.org/blog/2016/02/10/C-%E5%AE%9E%E7%8E%B0%E6%83%B0%E6%80%A7%E6
 
 C++实现惰性求值
 
-# gcc链接器
+# gcc
 
 ## gcc和ld的差异
 
@@ -112,6 +112,14 @@ C - undefined reference to “sqrt” even with '-lm'
 `readelf -h XXX.so`
 
 这两个命令虽然很早就在gcc工具链中了，但是早期版本只能查看本工具链编译的可执行文件。现在的话，主流的CPU指令集都可以支持了，不必采用`arm-readelf`这样的特殊前缀版本了。
+
+## 切换gcc版本
+
+`sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 40`
+
+`sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 50`
+
+`sudo update-alternatives --config gcc`
 
 # 左值和右值
 

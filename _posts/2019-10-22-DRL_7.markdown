@@ -117,6 +117,8 @@ https://zhuanlan.zhihu.com/p/43579796
 
 《Game Theory and Multi-agent Reinforcement Learning》
 
+《Is multiagent deep reinforcement learning the answer or the question? A brief survey》
+
 MARL应用了大量博弈论的知识，可参见《强化学习（十）》。
 
 ----
