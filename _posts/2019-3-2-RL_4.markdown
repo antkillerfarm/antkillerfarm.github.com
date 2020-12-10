@@ -1,13 +1,121 @@
 ---
 layout: post
-title:  强化学习（四）——Temporal-Difference Learning
+title:  强化学习（四）——Monte-Carlo
 category: RL 
 ---
 
 * toc
 {:toc}
 
-# Monte-Carlo（续）
+# 动态规划（续）
+
+## DP的一些扩展
+
+异步动态规划（Asynchronous Dynamic Programming）
+
+采样更新（Sample Backups）
+
+近似动态规划（Approximate Dynamic Programming）
+
+## 参考
+
+http://www.cppblog.com/Fox/archive/2008/05/07/Dynamic_programming.html
+
+动态规划算法（Wikipedia中文翻译版）
+
+https://www.zhihu.com/question/23995189
+
+什么是动态规划？动态规划的意义是什么？
+
+http://www.cnblogs.com/steven_oyj/archive/2010/05/22/1741374.html
+
+动态规划算法
+
+http://www.cppblog.com/menjitianya/archive/2015/10/23/212084.html
+
+动态规划
+
+https://segmentfault.com/a/1190000004454832
+
+动态规划
+
+http://www.cnblogs.com/jmzz/archive/2011/06/26/2090702.html
+
+动态规划
+
+http://www.cnblogs.com/jmzz/archive/2011/07/01/2095158.html
+
+DP之Warshall算法和Floyd算法
+
+http://www.cnblogs.com/jmzz/archive/2011/07/02/2096050.html
+
+DP之最优二叉查找树
+
+http://www.cnblogs.com/jmzz/archive/2011/07/02/2096188.html
+
+DP之矩阵连乘问题
+
+http://www.cnblogs.com/jmzz/archive/2011/07/05/2098630.html
+
+DP之背包问题+记忆递归
+
+http://www.cs.upc.edu/~mmartin/Ag4-4x.pdf
+
+Bellman equations and optimal policies
+
+https://mp.weixin.qq.com/s/a1C1ezL59azNfdM3TFGaGw
+
+递推与储存，是动态规划的关键
+
+http://www.cnblogs.com/SDJL/archive/2008/08/22/1274312.html
+
+通过金矿模型介绍动态规划
+
+https://mp.weixin.qq.com/s/fTQbatHpZFxxU6VGhJNVrg
+
+0-1背包问题的动态规划算法
+
+https://mp.weixin.qq.com/s/1yAnUVhzbckCqG2_ie07wg
+
+什么是动态规划（Dynamic Programming）?
+
+https://zhuanlan.zhihu.com/p/81819678
+
+矩阵特征分解求动态规划的终极解法
+
+https://mp.weixin.qq.com/s/630VEIh0Cbu7i8imE7L39w
+
+回溯算法和动态规划，到底谁是谁爹？
+
+https://mp.weixin.qq.com/s/-_DqyBIG3aSDWIYtkD7xuA
+
+看动画轻松理解“递归“与“动态规划”
+
+# Monte-Carlo
+
+## 概率算法
+
+概率算法是和确定性算法相对的概念。概率算法的一个基本特征是对所求解问题的同一实例用同一概率算法求解两次，可能得到完全不同的效果。这两次求解问题所需的时间甚至所得到的结果，可能会有相当大的差别。
+
+常见的概率算法主要有：数值概率算法，舍伍德（Sherwood）算法，蒙特卡罗（Monte Carlo）算法和拉斯维加斯（Las Vegas）算法。
+
+在《数学狂想曲（三）》中我们已经提到了“统计模拟”的概念，这实际上就是数值概率算法的应用，它主要利用了大数定律与强大数定律。
+
+这里有两个容易混淆的概念：**Monte Carlo method**和**Monte Carlo algorithm**。
+
+Monte Carlo method这个概念的范围非常广，它实际上就是概率算法的别名。诸如用随机投针计算圆周率之类的算法，都可以看作是Monte Carlo method。
+
+Monte Carlo algorithm就要狭义的多了，详情见下文。
+
+## 舍伍德（Sherwood）算法
+
+设A是一个确定算法，$$f(x)$$是解某个实例x的执行时间，设n是一整数，$$X_n$$是大小为n的实例的集合.假定$$X_n$$中每一个实例是等可能出现的，则算法A解$$X_n$$中一个实例的平均执行时间是:
+
+$$\overline{f(x)}=\sum_{x\in X_n}f(x)/n$$
+
+假如存在一个实例$$x_0$$使得$$f(x_0)\gg \overline{f(x)}$$，比如快速排序在最坏情况下的复杂度$$O(n)\gg O(n\log n)$$。这时使用sherwood对原始算法进行改进是有价值的。
+
+Sherwood算法通过增加一个较小的额外开销从而使得算法的复杂度与具体实例x无关。例如，在快速排序中，我们是以第一个元素为基准开始排序时，为了避免这样的情况，可以用舍伍德算法解决，也就是使第一个基准元素是随机的。
 
 ## 蒙特卡罗（Monte Carlo）算法
 
@@ -145,74 +253,3 @@ TD算法相当于在整个返家的过程中（一个Episode），根据已经�
 而对于TD学习，在一开始离开办公室的时候你可能会预估总耗时30分钟，但是当你取到车发现下雨的时候，你会立刻想到原来的预计过于乐观，因为既往的经验告诉你下雨会延长你的返家总时间，此时你会更新目前的状态价值估计，从原来的30分钟提高到40分钟。同样当你驾车离开高速公路时，会一路根据当前的状态（位置、路况等）对应的预估返家剩余时间，直到返回家门得到实际的返家总耗时。这一过程中，你会根据状态的变化实时更新该状态的价值。
 
 ![](/images/img2/TD.png)
-
-## TD vs. MC---1
-
-通过这个例子，我们可以直观的了解到：
-
-1.TD在知道结果之前可以学习，MC必须等到最后结果才能学习；
-
-2.TD可以在没有结果时学习，可以在持续进行的环境里学习。
-
-## TD vs. MC---2
-
-$$G_t = R_{t+1} + \gamma R_{t+2} + \dots + \gamma^{T−1}R_T$$是$$V_{\pi}(S_t)$$的无偏估计值。
-
-True TD target：$$R_{t+1}+\gamma V_{\pi}(S_{t+1})$$，也是$$V_{\pi}(S_t)$$的无偏估计值。
-
-TD target：$$R_{t+1}+\gamma V(S_{t+1})$$，是$$V_{\pi}(S_t)$$的有偏估计值。
-
-MC没有bias，但有着较高的Variance，且对初始值不敏感；
-
-TD低variance, 但有一定程度的bias，对初始值较敏感，通常比MC更高效；
-
-## TD vs. MC---3
-
-再来看如下示例：
-
-现有两个状态(A和B)，MDP未知，衰减系数为1，有如下表所示8个完整Episode的经验及对应的即时奖励，其中除了第1个Episode有状态转移外，其余7个均只有一个状态。
-
-| Episode | 状态转移及奖励 |
-|:--:|:--:|
-| 1 | A:0,B:0 |
-| 2 | B:1 |
-| 3 | B:1 |
-| 4 | B:1 |
-| 5 | B:1 |
-| 6 | B:1 |
-| 7 | B:1 |
-| 8 | B:0 |
-
-问题：依据仅有的Episode，计算状态A，B的价值分别是多少，即V(A)=？， V(B)=？
-
-答案：V(B) = 6/8，V(A)根据不同算法结果不同，用MC算法结果为0，TD则得出6/8。
-
-解释：应用MC算法，由于需要完整的Episode,因此仅Episode1可以用来计算A的状态价值，很明显是0；同时B的价值是6/8。应用TD算法时，TD算法试图利用现有的Episode经验构建一个MDP（图见下节），由于存在一个Episode使得状态A有后继状态B，因此状态A的价值是通过状态B的价值来计算的，同时经验表明A到B的转移概率是100%，且A状态的即时奖励是0，并且没有衰减，因此A的状态价值等于B的状态价值。
-
-MC算法试图收敛至一个能够最小化状态价值与实际收获的均方差的解决方案。TD算法则收敛至一个根据已有经验构建的最大可能的Markov模型的状态价值。
-
-通过比较可以看出，TD算法使用了MDP问题的Markov属性，在Markov环境下更有效；而MC算法并不利用Markov属性，通常在非Markov环境下更有效。
-
-## DP & MC & TD
-
-Monte-Carlo, Temporal-Difference和Dynamic Programming都是计算状态价值的一种方法，区别在于：
-
-- 前两种是在不知道Model的情况下的常用方法，这其中MC方法需要一个完整的Episode来更新状态价值，而TD则不需要完整的Episode；DP方法则是基于Model（知道模型的运作方式）的计算状态价值的方法，它通过计算一个状态S所有可能的转移状态S’及其转移概率以及对应的即时奖励来计算这个状态S的价值。
-
-- 关于是否Bootstrap：MC没有bootstrapping，只使用实际收获；DP和TD都有bootstrapping。
-
-- 关于是否用采样来计算: MC和TD都是应用样本来估计实际的价值函数；而DP则是利用模型直接计算得到实际价值函数，没有采样之说。
-
-![](/images/img2/DP_MC_TD.png)
-
-上图从两个维度解释了四种算法的差别，多了一个穷举法。这两个维度分别是：采样深度和广度。
-
-- 当使用单个采样，同时不走完整个Episode就是TD；
-
-- 当使用单个采样但走完整个Episode就是MC；
-
-- 当考虑全部样本可能性，但对每一个样本并不走完整个Episode时，就是DP；
-
-- 当既考虑所有样本，又把Episode从开始到终止遍历完，就变成了穷举法。
-
-需要提及的是：DP利用的是整个MDP问题的模型，也就是状态转移概率，虽然它并不实际利用样本，但是它利用了整个模型的规律，因此认为是Full Width的。

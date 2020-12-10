@@ -7,9 +7,113 @@ category: RL
 * toc
 {:toc}
 
-# 博弈论
+# 博弈论（续）
 
-## 最大最小策略（续）
+## 高风险下的纳什均衡
+
+在一些特殊情况下，即使犯错误的可能性很小也可能导致大的灾难（比如核电站，出问题就非常严重），纳什均衡就可能不会产生有说服力的解释。考虑如下博弈：
+
+<table>
+  <tr>
+    <td colspan="2" rowspan="2"></td>
+    <td colspan="2" align="center">乙</td>
+  </tr>
+  <tr>
+    <td>左</td>
+    <td>右</td>
+  </tr>
+  <tr>
+    <td rowspan="2">甲</td>
+    <td>上</td>
+    <td>8,10</td>
+    <td>-1000,9</td>
+  </tr>
+  <tr>
+    <td>下</td>
+    <td>7,6</td>
+    <td>6,5</td>
+  </tr>
+</table>
+
+在这个博弈中，参与人甲会选择“下”，因为如果乙不小心（低概率）犯错误，要避免产生右上的灾难性情况。
+
+这个例子说明，**个体可能不想我们所假设的那样完全理性，在遇到高风险的情况下，人们会考虑风险，从而使得最终结果可能偏离纳什均衡战略。**
+
+## 智猪博弈问题
+
+智猪博弈问题是John Nash于1950年提出的问题。
+
+在一个猪圈里养着一头大猪和一头小猪，在猪圈的一端放有一个猪食槽，在另一端安装有一个按钮，它控制着猪食的供应量。假定：
+
+- 猪按一下按钮，就有8单位猪食进槽，但谁按按钮就会首先付出2单位成本；
+- 若大猪先到食槽，则大猪吃到7单位食物，而小猪仅能吃到1单位食物；
+- 若小猪先到，则大猪和小猪各吃到4单位食物；
+- 若两猪同时到，则大猪吃到5单位，小猪仅吃到3单位。
+
+显然，在这里按按钮有两个成本：
+
+- 直接成本：2单位成本。
+- 间接成本：先按按钮的猪，肯定会最后到达食槽。
+
+因此，这个问题写成策略矩阵，则是：
+
+<table>
+  <tr>
+    <td colspan="2" rowspan="2"></td>
+    <td colspan="2" align="center">小猪</td>
+  </tr>
+  <tr>
+    <td>按</td>
+    <td>等待</td>
+  </tr>
+  <tr>
+    <td rowspan="2">大猪</td>
+    <td>按</td>
+    <td>3,1</td>
+    <td>2,4</td>
+  </tr>
+  <tr>
+    <td>等待</td>
+    <td>7,-1</td>
+    <td>0,0</td>
+  </tr>
+</table>
+
+该博弈不存在占优战略均衡，因为尽管小猪有一个严格占优战略，但大猪并没有占优战略。
+
+为了解决这个问题，Nash提出了重复剔除的占优战略均衡（iterated dominance equilibrium）。
+
+其具体做法如下：
+
+**Step 1**：大猪没有劣战略，策略保持不变。
+
+**Step 2**：小猪有一个劣战略: “按”。
+
+“按”的支付值： 1, -1
+
+“等待”的支付值： 4, 0
+
+**Step 3**：剔除小猪的劣战略“按”。
+
+**Step 4**：剔除之后，大猪有一个劣战略：“等待”。
+
+**Step 5**：剔除大猪的劣战略“等待”，剩下最后一个战略组合：
+
+大猪：“按” + 小猪：“等待”
+
+在小企业经营中，学会如何“搭便车”是一个精明的职业经理人最为基本的素质。在某些时候，如果能够注意等待，让其他大的企业首先开发市场，是一种明智的选择。这时候有所不为才能有所为！
+
+## 最大最小策略
+
+0阶理性共识：每个人都是理性的，但不知道其他人是否是理性的；
+
+1阶理性共识：每个人是理性的，并且知道其他每个人也都是理性的，但并不知道其他人是否知道自己是理性的；
+
+2阶理性共识：每个人是理性的，并且知道其他每个人也都是理性的，并且知道其他人知道自己是理性的，但不知道其他人是否知道自己知道其他人都是理性的。。。。。。。3阶、4阶。。。n阶依次类推。
+
+重复剔除不仅要求每个人是理性的，而且要求每个人知道其他人都是理性的，每个人知道每个人知道每个人是理性的，如此等等，即理性是“共识”。
+
+**优势策略均衡与纳什均衡的概念是建立在博弈者理性行为的基础上的**，任何出现的一点错误将可能使博弈者蒙受巨大的损失，因而可能有player会采取比较保守的策略。
 
 其中一种保守的策略是最大最小策略（Maximin strategy)。
 
@@ -164,70 +268,3 @@ $$\hat{R}^a_{s}=\frac{1}{N(s,a)}\sum_{t=1}^T 1(S_t,A_t=s,a)R_t$$
 - 从模型采样构建虚拟经历时，从tuples中随机选择符合$$<s,a,\cdot,\cdot>$$的一个tuple。
 
 这种方法，不再以Episode为最小学习单位，而是以时间步（time-step）为单位，一次学习一个状态转换。
-
-## Planning with a Model
-
-规划的过程相当于求解一个MDP的过程，即给定一个模型$$M_\eta = <P_\eta, R_\eta>$$，求解MDP$$<S, A, P_\eta, R_\eta>$$，找到基于该模型的最优价值函数或最优策略，也就是在给定的状态s下确定最优的行为a。
-
-我们可以使用之前介绍过的价值迭代，策略迭代方法；也可以使用树搜索方法（Tree Search）。
-
-## Sample-Based Planning
-
-Sample-Based Planning使用Model生成采样数据，即一个time-step的虚拟经历。
-
-有了这些虚拟采样，随后使用model-free RL方法来学习得到价值或策略函数。
-
-## Planning with an Inaccurate Model
-
-由于实际经历的不足或者一些无法避免的缺陷，我们通过实际经历学习得到的模型不可能是完美的模型，即：$$<P_\eta, R_\eta> = <P,R>$$
-
-而model-based RL的性能取决于Model的准确度，如果Model不准确的话，往往只能得到一些次优解。
-
-使用近似的模型解决MDP问题与使用价值函数或策略函数的近似表达来解决MDP问题并不冲突，他们是从不同的角度来近似求解MDP问题，有时候构建一个模型来近似求解MDP比构建一个近似的价值函数或策略函数要更加方便，这是model-based RL的可取之处。
-
-同时由于个体经历的更新，模型处在一个动态变化的过程，当利用早期经历构建的模型后来被认为存在很大错误，不适用于当下经历的时候，需要放弃模型，转而使用model-free RL。
-
-此外，可以在模型中，增加一些不确定性，以跳出次优解。
-
-model-based RL适用于连续变量的状态和行为空间。
-
-## Dyna-Q Algorithm
-
-当构建了一个环境的模型后，个体可以有两种经历来源：
-
-- 实际经历(real experience)。
-
-$$S'\sim P_{s,s'}^a, R=R_s^a$$
-
-- 模拟经历(simulated experience)。
-
-$$S'\sim P_\eta(S' | S,A), R=R_\eta(R | S,A)$$
-
-对于Model-Free RL来说，所有的知识都来源于real experience。
-
-对于Model-Based RL来说，Model来源于real experience，而planning相关的知识来源于simulated experience。
-
-于是我们很自然的想到，是否可以把real experience和simulated experience结合起来呢？
-
-![](/images/img3/Dyna.png)
-
-上图是Dyna算法的流程图。它从实际经历中学习得到模型，然后联合使用实际经历和模拟经历，一边学习，一边规划更新价值和（或）策略函数。
-
-Dyna-Q算法流程如下：
-
->Initialize $$Q(s, a)$$ and $$Model(s, a)$$ for all $$s \in S$$ and $$a \in A(s)$$   
->Do forever:   
->>(a) $$S \leftarrow$$ current (nonterminal) state   
->>(b) $$A \leftarrow \epsilon-greedy(S, Q)$$   
->>(c) Execute action A; observe resultant reward, R, and state S'   
->>(d) $$Q(S, A) \leftarrow Q(S, A)+\alpha[R+\gamma \max_a Q(S', a)-Q(S, A)]$$   
->>(e) $$Model(S, A) \leftarrow R,S'$$(assuming deterministic environment)   
->>(f) Repeat n times:   
->>>$$S \leftarrow$$ random previously observed state   
->>>$$A \leftarrow$$ random action previously taken in S   
->>>$$R, S' \leftarrow Model(S, A)$$   
->>>$$Q(S, A) \leftarrow Q(S, A)+\alpha[R+\gamma \max_a Q(S', a)-Q(S, A)]$$
-
-这个算法赋予了个体在与实际环境进行交互式时有一段时间用来思考的能力。其中的步骤：a,b,c,d和e都是从实际经历中学习，d过程是学习价值函数，e过程是学习模型。
-
-在f步，给以个体一定时间（或次数）的思考。在思考环节，个体将使用模型，在之前观测过的状态空间中随机采样一个状态，同时从这个状态下曾经使用过的行为中随机选择一个行为，将两者带入模型得到新的状态和奖励，依据这个来再次更新行为价值函数。

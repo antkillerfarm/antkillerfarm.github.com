@@ -7,9 +7,74 @@ category: RL
 * toc
 {:toc}
 
-# Integrating Learning and Planning
+# Integrating Learning and Planning（续）
 
-## Dyna-Q Algorithm（续）
+## Planning with a Model
+
+规划的过程相当于求解一个MDP的过程，即给定一个模型$$M_\eta = <P_\eta, R_\eta>$$，求解MDP$$<S, A, P_\eta, R_\eta>$$，找到基于该模型的最优价值函数或最优策略，也就是在给定的状态s下确定最优的行为a。
+
+我们可以使用之前介绍过的价值迭代，策略迭代方法；也可以使用树搜索方法（Tree Search）。
+
+## Sample-Based Planning
+
+Sample-Based Planning使用Model生成采样数据，即一个time-step的虚拟经历。
+
+有了这些虚拟采样，随后使用model-free RL方法来学习得到价值或策略函数。
+
+## Planning with an Inaccurate Model
+
+由于实际经历的不足或者一些无法避免的缺陷，我们通过实际经历学习得到的模型不可能是完美的模型，即：$$<P_\eta, R_\eta> = <P,R>$$
+
+而model-based RL的性能取决于Model的准确度，如果Model不准确的话，往往只能得到一些次优解。
+
+使用近似的模型解决MDP问题与使用价值函数或策略函数的近似表达来解决MDP问题并不冲突，他们是从不同的角度来近似求解MDP问题，有时候构建一个模型来近似求解MDP比构建一个近似的价值函数或策略函数要更加方便，这是model-based RL的可取之处。
+
+同时由于个体经历的更新，模型处在一个动态变化的过程，当利用早期经历构建的模型后来被认为存在很大错误，不适用于当下经历的时候，需要放弃模型，转而使用model-free RL。
+
+此外，可以在模型中，增加一些不确定性，以跳出次优解。
+
+model-based RL适用于连续变量的状态和行为空间。
+
+## Dyna-Q Algorithm
+
+当构建了一个环境的模型后，个体可以有两种经历来源：
+
+- 实际经历(real experience)。
+
+$$S'\sim P_{s,s'}^a, R=R_s^a$$
+
+- 模拟经历(simulated experience)。
+
+$$S'\sim P_\eta(S' | S,A), R=R_\eta(R | S,A)$$
+
+对于Model-Free RL来说，所有的知识都来源于real experience。
+
+对于Model-Based RL来说，Model来源于real experience，而planning相关的知识来源于simulated experience。
+
+于是我们很自然的想到，是否可以把real experience和simulated experience结合起来呢？
+
+![](/images/img3/Dyna.png)
+
+上图是Dyna算法的流程图。它从实际经历中学习得到模型，然后联合使用实际经历和模拟经历，一边学习，一边规划更新价值和（或）策略函数。
+
+Dyna-Q算法流程如下：
+
+>Initialize $$Q(s, a)$$ and $$Model(s, a)$$ for all $$s \in S$$ and $$a \in A(s)$$   
+>Do forever:   
+>>(a) $$S \leftarrow$$ current (nonterminal) state   
+>>(b) $$A \leftarrow \epsilon-greedy(S, Q)$$   
+>>(c) Execute action A; observe resultant reward, R, and state S'   
+>>(d) $$Q(S, A) \leftarrow Q(S, A)+\alpha[R+\gamma \max_a Q(S', a)-Q(S, A)]$$   
+>>(e) $$Model(S, A) \leftarrow R,S'$$(assuming deterministic environment)   
+>>(f) Repeat n times:   
+>>>$$S \leftarrow$$ random previously observed state   
+>>>$$A \leftarrow$$ random action previously taken in S   
+>>>$$R, S' \leftarrow Model(S, A)$$   
+>>>$$Q(S, A) \leftarrow Q(S, A)+\alpha[R+\gamma \max_a Q(S', a)-Q(S, A)]$$
+
+这个算法赋予了个体在与实际环境进行交互式时有一段时间用来思考的能力。其中的步骤：a,b,c,d和e都是从实际经历中学习，d过程是学习价值函数，e过程是学习模型。
+
+在f步，给以个体一定时间（或次数）的思考。在思考环节，个体将使用模型，在之前观测过的状态空间中随机采样一个状态，同时从这个状态下曾经使用过的行为中随机选择一个行为，将两者带入模型得到新的状态和奖励，依据这个来再次更新行为价值函数。
 
 ![](/images/img3/Dyna_2.png)
 
@@ -116,31 +181,3 @@ MCTS的Simulation也是有讲究的。
 **第一次迭代**：五角形表示的状态是个体第一次访问的状态，也是第一次被录入搜索树的状态。我们构建搜索树：将当前状态录入搜索树中。使用基于蒙特卡罗树搜索的策略（两个阶段），由于当前搜索树中只有当前状态，全程使用的应该是一个搜索第二阶段的默认随机策略，基于该策略产生一个直到终止状态的完整Episode。图中那些菱形表示中间状态和方格表示的终止状态，在此次迭代过程中并不录入搜索树。终止状态方框内的数字1表示（黑方）在博弈中取得了胜利。此时我们就可以更新搜索树种五角形的状态价值，以分数1/1表示从当前五角形状态开始模拟了一个Episode，其中获胜了1个Episode。
 
 ![](/images/img3/MCTS_2.png)
-
-**第二次迭代**：当前状态仍然是树内的圆形图标指示的状态，从该状态开始决定下一步动作。根据目前已经访问过的状态构建搜索树，依据模拟策略产生一个行为模拟进入白色五角形表示的状态，并将该状态录入搜索树，随后继续该次模拟的对弈直到Episode结束，结果显示黑方失败，因此我们可以更新新加入搜索树的五角形节点的价值为0/1，而搜索树种的圆形节点代表的当前状态其价值估计为1/2，表示进行了2次模拟对弈，赢得了1次，输了1次。
-
-经过前两次的迭代，当位于当前状态（黑色圆形节点）时，当前策略会认为选择某行为进入上图中白色五角形节点状态对黑方不利，策略将得到更新：当前状态时会个体会尝试选择其它行为。
-
-![](/images/img3/MCTS_3.png)
-
-**第三次迭代**：假设选择了一个行为进入白色五角形节点状态，将该节点录入搜索树，模拟一次完整的Episode，结果显示黑方获胜，此时更新新录入节点的状态价值为1/1，同时更新其上级节点的状态价值，这里需要更新当前状态的节点价值为2/3，表明在当前状态下已经模拟了3次对弈，黑方获胜2次。
-
-随着迭代次数的增加，在搜索树里录入的节点开始增多，树内每一个节点代表的状态其价值数据也越来越丰富。在搜索树内依据$$\epsilon$$-greedy策略会使得当个体出于当前状态（圆形节点）时更容易做出到达图中五角形节点代表的状态的行为。
-
-![](/images/img3/MCTS_4.png)
-
-**第四次迭代**：当个体位于当前（圆形节点）状态时，树内策略使其更容易进入左侧的蓝色圆形节点代表的状态，此时录入一个新的节点（五角形节点），模拟完Episode提示黑方失败，更新该节点以及其父节点的状态价值。
-
-![](/images/img3/MCTS_5.png)
-
-**第五次迭代**：更新后的策略使得个体在当前状态时仍然有较大几率进入其左侧圆形节点表示的状态，在该节点，个体避免了进入刚才失败的那次节点，录入了一个新节点，基于模拟策略完成一个完整Episode，黑方获得了胜利，同样的更新搜索树内相关节点代表的状态价值。
-
-如此反复，随着迭代次数的增加，当个体处于当前状态时，其搜索树将越来越深，那些能够引导个体获胜的搜索树内的节点将会被充分的探索，其节点代表的状态价值也越来越有说服力；同时个体也忽略了那些结果不好的一些节点（上图中当前状态右下方价值估计为0/1的节点）。需要注意的是，仍然要对这部分节点进行一定程度的探索，以确保这些节点不会被完全忽视。
-
-![](/images/img3/MCTS_6.png)
-
-总结一下，MCTS可分为如下步骤：
-
-- Selection。从根节点状态出发，迭代地选择最优策略，直到碰到一个叶子节点。叶子节点是搜索树中存在至少一个子节点从未被访问过的状态节点。
-
-- Expansion。对叶子节点进行扩展。选择其一个从未访问过的子节点加入当前的搜索树。

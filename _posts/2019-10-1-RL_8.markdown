@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  强化学习（八）——Actor-Critic, 博弈论（1）
+title:  强化学习（八）——Actor-Critic
 category: RL 
 ---
 
@@ -8,6 +8,110 @@ category: RL
 {:toc}
 
 # 策略梯度（续）
+
+## 策略目标函数（Policy Objective Functions）
+
+首先，我们看看如何评价一个策略的好坏。
+
+- **Start value**：
+
+$$J_1(\theta)=V^{\pi_\theta}(s_1)=E_{\pi_\theta}[v_1]$$
+
+上式表示在能够产生完整Episode的环境下，从状态$$s_1$$开始，直到结束状态所能获得的累计奖励。在这种情况下，由于整个Episode的状态、路径都是确定的，因此奖励也是确定的。我们需要做的只是最大化start value，以找到最佳路径（也就是最佳策略）。
+
+- **Average Value**：
+
+$$J_{avV}(\theta)=\sum_s d^{\pi_\theta}(s)V^{\pi_\theta}(s)$$
+
+对于连续环境条件，不存在一个开始状态，这个时候可以使用average value。上式中的$$d^{\pi_\theta}(s)$$表示$$\pi_\theta$$对应的MDP过程的Markov chain的稳态分布。
+
+- **Average reward per time-step**：
+
+$$J_{avR}(\theta)=\sum_s d^{\pi_\theta}(s)\sum_a\pi_\theta(s,a)R_{s,a}$$
+
+上式表示每一个time-step在各种情况下所能得到的平均奖励。
+
+当然了，在很多情况下，我们未必可以得到一个真实的奖励值，这时使用相关函数的估计值作为奖励值即可。
+
+## 策略优化（Policy Optimisation）
+
+主要分为两大类：
+
+1.非gradient算法。
+
+- Hill climbing
+- Simplex / amoeba / Nelder Mead
+- Genetic algorithms
+
+2.gradient算法。
+
+- Gradient descent
+- Conjugate gradient
+- Quasi-newton
+
+一般来说，gradient算法的优化效率较高，因此本文只讨论gradient算法。
+
+我们可以仿照ML中的梯度优化算法，定义策略的梯度函数：
+
+$$\Delta\theta=\alpha\nabla_\theta J(\theta)$$
+
+其中，
+
+$$\nabla_\theta J(\theta)=\begin{pmatrix} \frac{\partial J(\theta)}{\partial \theta_1} \\ \vdots \\ \frac{\partial J(\theta)}{\partial \theta_n} \end{pmatrix}$$
+
+然而，梯度函数有的时候并不简单，也许并不可微。这时可以使用有限差分法：
+
+$$\frac{\partial J(\theta)}{\partial \theta_k}\approx \frac{J(\theta + \epsilon u_k)-J(\theta)}{\epsilon}$$
+
+这里的$$u_k$$是第k个元素为1，其余元素为0的单位向量。
+
+有限差分法简单，不要求策略函数可微分，适用于任意策略；但有噪声，且大多数时候不高效。
+
+## Monte-Carlo Policy Gradient
+
+$$\nabla_\theta \pi_\theta(s,a) = \pi_\theta(s,a)\frac{\nabla_\theta \pi_\theta(s,a)}{\pi_\theta(s,a)}=\pi_\theta(s,a) \nabla_\theta \log \pi_\theta(s,a)$$
+
+上式一般被称作Likelihood ratios，这里使用到了一个公式：$$\mathrm{d}\log(y)=\mathrm{d}y/y$$
+
+我们定义Score function为：$$\nabla_\theta \log \pi_\theta(s,a)$$
+
+下面讨论几种常见的策略。
+
+## Softmax Policy
+
+Softmax Policy适用于离散行为空间，它把行为权重看成是多个特征在一定权重下的线性代数和：$$\phi(s,a)^T\theta$$，则采取某一行为的概率为：
+
+$$\pi_\theta(s,a)\propto e^{\phi(s,a)^T\theta}$$
+
+相应的Score function为:
+
+$$\nabla_\theta \log \pi_\theta(s,a)=\phi(s,a)-E_{\pi_\theta}[\phi(s,\cdot)]$$
+
+上式中，等号右边第一部分是采取某行为的Score，第二部分是当前状态的期望分值。
+
+## Gaussian Policy
+
+Gaussian Policy适用于连续行为空间。比如，如果控制机器人行走要调整流经某个电机的电流值，而这个电流值是连续值。
+
+它用一个正态分布表示策略：$$a\sim N(\mu(s), \sigma^2)$$，其中$$\mu(s)=\phi(s)^T\theta$$。
+
+相应的Score function为:
+
+$$\nabla_\theta \log \pi_\theta(s,a)=\frac{(a-\mu(s))\phi(s)}{\sigma^2}$$
+
+下面我们用一个图来演示一下相关步骤。
+
+![](/images/img3/pg.png)
+
+左图的蓝点表示采样X，箭头指示该点的梯度方向，既然是正态分布，这些箭头显然是远离中心的。中图表示，X对应的Score function。我们根据Score function更新参数（沿着绿色箭头方向，或者沿着红色箭头的反方向）。最终得到右图中的新的正态分布。
+
+从贝叶斯学习的角度来看，左图相当于先验分布，而中图相当于后验分布。
+
+参考：
+
+https://karpathy.github.io/2016/05/31/rl/
+
+Deep Reinforcement Learning: Pong from Pixels
 
 ## Policy Gradient Theorem
 
@@ -130,95 +234,3 @@ $$Q_w(s,a)\approx Q^{\pi_\theta}(s,a)$$
 $$A(s,a) = Q_w(s,a) - V_v(s)$$
 
 不过实际操作时，我们并不需要计算两个近似函数。这里以TD学习为例说明一下。
-
-根据定义，TD误差$$\delta^{\pi_\theta}$$可以根据真实的状态价值函数$$V^{\pi_\theta}(s)$$算出：
-
-$$\delta^{\pi_\theta} = r + \gamma V^{\pi_\theta}(s') - V^{\pi_\theta}(s)$$
-
-因为：
-
-$$\begin{align}
-E_{\pi_\theta}[\delta^{\pi_\theta} | s,a] &= E_{\pi_\theta}[r + \gamma V^{\pi_\theta}(s') | s,a] - V^{\pi_\theta}(s)\\
-&= Q^{\pi_\theta}(s,a) - V^{\pi_\theta}(s) \\
-&= A^{\pi_\theta}(s,a)
-\end{align}$$
-
-可见$$\delta^{\pi_\theta}$$就是$$A^{\pi_\theta}(s,a)$$的一个无偏估计。
-
-因此，我们就可以使用TD误差来计算策略梯度：
-
-$$\nabla_\theta J(\theta)= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)\delta^{\pi_\theta}]$$
-
-实际运用时，我们使用一个近似的TD误差，即用状态函数的近似函数来代替实际的状态函数：
-
-$$\delta_v = r + \gamma V_v(s') - V_v(s)$$
-
-这也就是说，我们只需要一套参数描述状态价值函数，而不再需要行为价值函数了。
-
-上述方法不仅可用于TD方法，还可用于MC方法等，以下不加讨论的给出如下结论：
-
-$$\begin{align}
-\nabla_\theta J(\theta) &= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a){\color{red}{v_t}}] & \text{REINFORCE}\\
-&= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a){\color{red}{Q_w(s,a)}}] & \text{Q Actor-Critic}\\
-&= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a){\color{red}{A_w(s,a)}}] & \text{Advantage Actor-Critic}\\
-&= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a){\color{red}{\delta}}] & \text{TD Actor-Critic}\\
-&= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a){\color{red}{\delta e}}] & \text{TD(}\lambda\text{) Actor-Critic}
-\end{align}$$
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/51652845
-
-强化学习这都学不会的话，咳咳，你过来下！
-
-https://mp.weixin.qq.com/s/ce9W3FbLdsqAEyvw6px_RA
-
-Actor Critic——一个融合基于策略梯度和基于值优点的强化学习算法
-
-# 博弈论
-
-博弈论（game theory）是一门单独的学科，和RL并无统属关系。然而由于RL，特别是MARL大量应用到了相关的知识，所以这里也把它写在RL系列里了。
-
-## 历史
-
-博弈论最早可追溯到“齐威王田忌赛马”，但它真正的发展是在20世纪下半叶。
-
-RL的历史相对比较晚，因此从渊源来看，RL=博弈论+控制论+ML。
-
-参考：
-
-https://blog.csdn.net/sobermineded/article/details/79601986
-
-博弈论历史、发展与应用
-
-## 教程
-
-《Game Theory: An Introduction》，Steven Tadelis著。
-
->Steven Tadelis，经济学家。Harvard博士（1997），UCB教授。
-
-https://mp.weixin.qq.com/s/U_vDI_PJm-buubTwJgV9pw
-
-数学博弈论与应用，431页pdf，Mathematical Game Theory and Applications
-
-https://github.com/cheat-sheets/game-theory-cheat-sheet
-
-一个博弈论方面的Cheat Sheet。
-
-## 概述
-
-要理解博弈论，可以通过博弈论和决策论的区别开始。
-
-**决策论**是研究局中人在给定其他环境参数条件下的最优选择问题。
-
-**博弈论**研究的是当局中人充分考虑到其他局中人对其战略选择的反应后（即局中人都具有同样充分的理性时）进行最优战略的选择。
-
-博弈论的直接目标不是找到一个玩家的最佳策略，而是找到所有玩家的最理性策略组合。我们称最理性策略组合为**均衡（equilibrium）**。
-
-从宏观上可以将博弈论研究的问题分为：**合作博弈**和**非合作博弈**。现代狭义的博弈论一般是指非合作博弈。
-
-非合作博弈根据参与博弈的参与人做决策的先后顺序可以分为：静态博弈和动态博弈。
-
-**静态博弈**：参与人同时做决策，常用标准型（normal form）表述其策略。如两人零和博弈等。
-
-**动态博弈**：参与人有先后顺序做决策，且后者能观察到前者所做的决策，如围棋等。常用扩展型（extensive form）来表述其策略，常用的扩展型表述为博弈树。

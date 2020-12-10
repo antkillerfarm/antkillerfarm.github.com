@@ -1,13 +1,102 @@
 ---
 layout: post
-title:  强化学习（三）——动态规划, Monte-Carlo
+title:  强化学习（三）——MDP, 动态规划
 category: RL 
 ---
 
 * toc
 {:toc}
 
-# Markov Decision Process（续）
+# Q-learning（续）
+
+>Richard Ernest Bellman，1920～1984，美国应用数学家、控制论学家、数理生物学家。布鲁克林学院本科+威斯康星大学麦迪逊分校硕士+普林斯顿博士。二战期间曾在Los Alamos研究理论物理，后任职于美国智库RAND Corporation，南加州大学教授。美国艺术科学院院士，美国科学院院士。   
+>Bellman–Ford算法的发明人之一。以他命名的奖项有Richard E. Bellman Control Heritage Award和Bellman Prize in Mathematical Biosciences。
+
+在无监督的情况下，agent不断从一个状态转至另一状态进行探索，直到到达目标。我们将agent的每一次探索（从任意初始状态开始，经历若干action，直到到达目标状态的过程）称为一个**episode**。
+
+Q-Learning算法的计算步骤如下：
+
+>**Step 1**：给定参数$$\gamma$$和reward矩阵R。   
+>**Step 2**：初始化Q=0。   
+>**Step 3**：For each episode:
+>>3.1 随机选择一个初始状态s。   
+>>3.2 若未达到目标状态，则：
+>>>(1)在当前s的所有action中，随机选择一个行为a。   
+>>>(2)利用a，得到下一个状态$$\tilde s$$。   
+>>>(3)利用公式1，计算$$Q(s,a)$$。   
+>>>(4)令$$s=\tilde s$$。
+
+由马尔可夫过程的性质（参见[《机器学习（二十六）》](/ml/2017/08/30/Machine_Learning_26.html#Markov)）可知，Q矩阵最终会趋于一个极限，如下所示：
+
+![](/images/article/q_matrix5.gif)
+
+上面的矩阵可用下图表示：
+
+![](/images/article/map5.gif)
+
+显然，沿着Q值最大的边走，就是这个探索问题的最佳答案。（如上图红线所示）即：
+
+$$\pi (s)=\arg \max_a(Q(s,a))$$
+
+参考：
+
+http://blog.csdn.net/itplus/article/details/9361915
+
+一个Q-learning算法的简明教程
+
+http://blog.csdn.net/young_gy/article/details/73485518
+
+强化学习之Q-learning简介
+
+https://mp.weixin.qq.com/s/34E1tEQMZuaxvZA66_HRwA
+
+通过Q-learning深入理解强化学习
+
+https://mp.weixin.qq.com/s/kmk3mKASZPixA8VS9sipcA
+
+走近流行强化学习算法：最优Q-Learning
+
+https://mp.weixin.qq.com/s/o-IzYt62qaUhcTY33E0Ylg
+
+基于强化学习Q-Learning模型构建算法交易策略
+
+https://mp.weixin.qq.com/s/ePssT5BDb9KebCTehn0ugw
+
+5分钟读懂强化学习之Q-learning
+
+https://www.zhihu.com/question/26408259
+
+如何用简单例子讲解Q-learning的具体过程？
+
+# Markov Decision Process
+
+上边Q-Learning的例子中，由于action能够唯一确定状态的变换，因此又被称为**Markov Reward Process**：
+
+$$<\mathcal{S},\mathcal{P},\mathcal{R},\gamma>$$
+
+这个四元组依次代表：states、state transition probability matrix、reward function、discount factor。
+
+实际中，执行特定的动作并不一定能得到特定的状态。
+
+![](/images/article/Markov_Decision_Process.png)
+
+比如上图中，在状态$$S_0$$，执行$$a_0$$，只有0.5的机会，会到达$$S_2$$。这也就是之前提到过的MDP。
+
+标准MDP中的Bellman equation可改为如下形式：
+
+$$v = \mathcal{R} + \gamma \mathcal{P}v$$
+
+其中,$$\mathcal{P},\mathcal{R}$$均为已知。
+
+这里的Bellman equation是线性方程，它的直接解法如下：
+
+$$(I-\gamma \mathcal{P})v = \mathcal{R}$$
+
+$$v = (I-\gamma \mathcal{P})^{-1}\mathcal{R}$$
+
+然而这个方法的复杂度是$$O(n^3)$$（n是状态的个数），这对于大的MDP来说，并不好用。这种情况下，常用的解法有：Dynamic programming（动态规划）、Monte-Carlo evaluation和Temporal-Difference learning。
+
+由于MDP对于RL任务进行了Markov假设，这属于一种建模行为，因此它也被归为一种model-based learning的算法。
 
 MDP的扩展主要包括：
 
@@ -157,111 +246,3 @@ Policy Iteration与Value Iteration的区别在于：
 1.它依赖于概率模型。
 
 2.计算复杂度太高，只适合规模中等（<1M的状态数）的情况。
-
-## DP的一些扩展
-
-异步动态规划（Asynchronous Dynamic Programming）
-
-采样更新（Sample Backups）
-
-近似动态规划（Approximate Dynamic Programming）
-
-## 参考
-
-http://www.cppblog.com/Fox/archive/2008/05/07/Dynamic_programming.html
-
-动态规划算法（Wikipedia中文翻译版）
-
-https://www.zhihu.com/question/23995189
-
-什么是动态规划？动态规划的意义是什么？
-
-http://www.cnblogs.com/steven_oyj/archive/2010/05/22/1741374.html
-
-动态规划算法
-
-http://www.cppblog.com/menjitianya/archive/2015/10/23/212084.html
-
-动态规划
-
-https://segmentfault.com/a/1190000004454832
-
-动态规划
-
-http://www.cnblogs.com/jmzz/archive/2011/06/26/2090702.html
-
-动态规划
-
-http://www.cnblogs.com/jmzz/archive/2011/07/01/2095158.html
-
-DP之Warshall算法和Floyd算法
-
-http://www.cnblogs.com/jmzz/archive/2011/07/02/2096050.html
-
-DP之最优二叉查找树
-
-http://www.cnblogs.com/jmzz/archive/2011/07/02/2096188.html
-
-DP之矩阵连乘问题
-
-http://www.cnblogs.com/jmzz/archive/2011/07/05/2098630.html
-
-DP之背包问题+记忆递归
-
-http://www.cs.upc.edu/~mmartin/Ag4-4x.pdf
-
-Bellman equations and optimal policies
-
-https://mp.weixin.qq.com/s/a1C1ezL59azNfdM3TFGaGw
-
-递推与储存，是动态规划的关键
-
-http://www.cnblogs.com/SDJL/archive/2008/08/22/1274312.html
-
-通过金矿模型介绍动态规划
-
-https://mp.weixin.qq.com/s/fTQbatHpZFxxU6VGhJNVrg
-
-0-1背包问题的动态规划算法
-
-https://mp.weixin.qq.com/s/1yAnUVhzbckCqG2_ie07wg
-
-什么是动态规划（Dynamic Programming）?
-
-https://zhuanlan.zhihu.com/p/81819678
-
-矩阵特征分解求动态规划的终极解法
-
-https://mp.weixin.qq.com/s/630VEIh0Cbu7i8imE7L39w
-
-回溯算法和动态规划，到底谁是谁爹？
-
-https://mp.weixin.qq.com/s/-_DqyBIG3aSDWIYtkD7xuA
-
-看动画轻松理解“递归“与“动态规划”
-
-# Monte-Carlo
-
-## 概率算法
-
-概率算法是和确定性算法相对的概念。概率算法的一个基本特征是对所求解问题的同一实例用同一概率算法求解两次，可能得到完全不同的效果。这两次求解问题所需的时间甚至所得到的结果，可能会有相当大的差别。
-
-常见的概率算法主要有：数值概率算法，舍伍德（Sherwood）算法，蒙特卡罗（Monte Carlo）算法和拉斯维加斯（Las Vegas）算法。
-
-在《数学狂想曲（三）》中我们已经提到了“统计模拟”的概念，这实际上就是数值概率算法的应用，它主要利用了大数定律与强大数定律。
-
-这里有两个容易混淆的概念：**Monte Carlo method**和**Monte Carlo algorithm**。
-
-Monte Carlo method这个概念的范围非常广，它实际上就是概率算法的别名。诸如用随机投针计算圆周率之类的算法，都可以看作是Monte Carlo method。
-
-Monte Carlo algorithm就要狭义的多了，详情见下文。
-
-## 舍伍德（Sherwood）算法
-
-设A是一个确定算法，$$f(x)$$是解某个实例x的执行时间，设n是一整数，$$X_n$$是大小为n的实例的集合.假定$$X_n$$中每一个实例是等可能出现的，则算法A解$$X_n$$中一个实例的平均执行时间是:
-
-$$\overline{f(x)}=\sum_{x\in X_n}f(x)/n$$
-
-假如存在一个实例$$x_0$$使得$$f(x_0)\gg \overline{f(x)}$$，比如快速排序在最坏情况下的复杂度$$O(n)\gg O(n\log n)$$。这时使用sherwood对原始算法进行改进是有价值的。
-
-Sherwood算法通过增加一个较小的额外开销从而使得算法的复杂度与具体实例x无关。例如，在快速排序中，我们是以第一个元素为基准开始排序时，为了避免这样的情况，可以用舍伍德算法解决，也就是使第一个基准元素是随机的。

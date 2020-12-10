@@ -11,6 +11,34 @@ category: RL
 
 相关教程资源参见《深度强化学习（一）》。
 
+## 历史
+
+早期的强化学习有两个主要的丰富绵长的发展线索：
+
+- 源于动物学习的试错法；在早期的人工智能中发展，于二十世纪八十年代促进了强化学习的复兴。
+
+- 最优控制及其解决方案：值函数和动态规划。最优控制大部分没有包括学习。
+
+这两个线索先是分头进展，到二十世纪八十年代，时序差分(temporal-difference)方法出现，形成第三条线索。然后几种线索交织融合到一起，发展成现代强化学习。
+
+最优控制始于二十世纪五十年代，设计控制器来优化动态系统一段时间内行为的性能指标。动态规划是最优控制的一个解决方法，由Richard Bellman等人提出。Bellman还提出离散随机版的最优控制问题，即马尔科夫决策过程(Markov decision processes, MDP)。Ronald Howard在1960年给MDP问题设计了策略迭代方法。
+
+最优控制、动态规划与学习的联系，确认得比较慢。可能的原因是这些领域由不同的学科在发展，而目标也不尽相同。一个流行的观点是动态规划是离线计算的，需要准确的系统模型，并给出Bellman等式的解析解。还有，最简单的动态规划是按时间从后向前运算的，而学习则是从前往后的，这样，则很难把两者联系起来。
+
+试错学习法最早可以追溯到十九世纪五十年代。1911年，Edward Thorndike简明地把试错学习法当成学习的原则：对于同一情况下的几个反应，在其它因素一样时，只有伴随着或紧随动物的喜悦之后的那些反应，才会被更深刻地与当下的情况联系起来，这样，当这些反应再次发生，再次发生的可能性也更大；而只有伴随着或紧随动物的不适之后的那些反应，与当下的情况联系会被削弱，这样，当这些反应再次发生，再次发生的可能性会更小。喜悦或不适的程度越大，联系的加强或减弱的程度也越大。Thorndike称其为“效果定律”(Law of Effect), 因为它描述了强化事件对选择动作的倾向性的效果，也成为许多行为的基本原则。
+
+“强化”这一术语出现于1927年巴甫洛夫(Pavlov)条件反射论文的英译本，晚于Thorndike的效果定律。巴甫洛夫把强化描述成，当动物接收到刺激，也就是强化物，对一种行为模式的加强，而这个刺激与另一个刺激或反应的发生有合适的时间关系。
+
+二十世纪六十年代、七十年代试错学习法有一些发展。Harry Klopf在人工智能领域对试错法在强化学习中的复兴做了重要贡献。Klopf发现，当研究人员专门关注监督学习时，则会错过自适应行为的一些方面。按照Klopf所说，行为的快乐方面被错过了，而这驱动了从环境成功获得结果，控制环境向希望的结果发展，而远离不希望的结果。这是试错法学习的基本思想。Klopf的思想对强化学习之父Richard Sutton和Andrew Barto有深远影响，使得他们深入评估监督学习与强化学习的区别，并最终专注强化学习，包括如何为多层神经元网络设计学习算法。 
+
+时序差分学习部分上起源于动物学习心理学，尤其是次要强化物的概念。次要强化物与像食物和痛苦这样的主要强化物相伴而来，所以也就有相应的强化特点。明斯基于1954年意识到这样的心理学原则可能对人工学习系统的重要意义；1959年，Arthur Samuel在其著名的国际跳棋程序中，第一次提出并实现了包括时序差分学习的学习方法。Klopf在1972年把试错学习法与时序差分学习联系起来。
+
+Sutton和Barto于1981年提出了行动者-评价者体系结构，把时序差分学习与试错学习结合起来。Sutton1984年的博士论文深入讨论了这个方法。Sutton于1988年把时序差分学习与控制分开，把它当做一种通用的预测方法。
+
+1989年，Chris Watkins提出Q学习，把时序差分学习、最优控制、试错学习法三个线索完全融合到一起。这时，开始在机器学习和人工智能领域出现大量的强化学习方面的研究。
+
+1992年，Gerry Tesauro成功地使用强化学习和神经元网络设计西洋双陆棋(Backgammon)的TD-Gammon算法。
+
 ## 监督学习的局限
 
 举个例子，如果我们想让机器学会开车，一个很直接的想法是观察人类行为，并且模仿人类，在相应观测下做出人类所做行为。这种方法也叫作模仿学习（Imitation Learning）。
@@ -112,119 +140,3 @@ $$R_t=r_t+\gamma(r_{t+1}+\gamma (r_{t+2}+\dots))=r_t+\gamma R_{t+1}$$
 如果$$\gamma=1$$，意味着环境是确定的，相同的动作总会获得相同的奖励（也就是cyclic Markov processes）。
 
 因此实际中$$\gamma$$往往取类似0.9这样的值。因此我们的任务变成了找到一个策略，最大化将来的奖励R。
-
-## Policy, Value, Transition Model
-
-增强学习中，比较重要的几个概念：
-
-**Policy**：我们的算法追求的目标，可以看做一个函数，在输入state的时候，能够返回此时应该执行的action或者action的概率分布。
-
-$$\pi(a \mid  s) = P[A_t = a \mid  S_t = s]$$
-
-**Value**：价值函数，表示在输入state，action的时候，能够返回在state下，执行这个action能得到的Discounted future reward的（期望）值。
-
-Value function一般有两种。
-
-state-value function：
-
-$$v_{\pi}(s) = E_{\pi} [G_t \mid  S_t = s]$$
-
-action-value function：
-
-$$q_{\pi}(s; a) = E_{\pi} [G_t \mid  S_t = s; A_t = a]$$
-
-后者由于和state、action都有关系，也被称作state-action pair value function。
-
-**Transition model**：环境本身的结构与特性。当在state执行action的时候，系统会进入的下一个state，也包括可能收到的reward。
-
-很显然，以上三者互相关联：
-
-如果能得到一个好的Policy function的话，那算法的目的已经达到了。
-
-如果能得到一个好的Value function的话，那么就可以在这个state下，选取value值高的那个action，自然也是一个较好的策略。
-
-如果能得到一个好的transition model的话，一方面，有可能可以通过这个transition model直接推演出最佳的策略；另一方面，也可以用来指导policy function或者value function的学习过程。
-
-因此，增强学习的方法，大体可以分为三类：
-
-**Value-based RL，值方法。**显式地构造一个model来表示值函数Q，找到最优策略对应的Q函数，自然就找到了最优策略。
-
-**Policy-based RL，策略方法。**显式地构造一个model来表示策略函数，然后去寻找能最大化discounted future reward的策略。
-
-**Model-based RL，基于环境模型的方法。**先得到关于environment transition的model，然后再根据这个model去寻求最佳的策略。
-
-以上三种方法并不是一个严格的划分，很多RL算法同时具有一种以上的特性。
-
-![](/images/article/RL_3.png)
-
-比如，Actor-Critic（演员-评判家）方法：agent既有价值函数、也有策略函数。两者相互结合解决问题。
-
-## 参考
-
-https://mp.weixin.qq.com/s/f6sq8cSaU1cuzt7jhsK8Ig
-
-强化学习（Reinforcement Learning）基础介绍
-
-https://mp.weixin.qq.com/s/TGN6Zhrea2LPxdkspVTlAw
-
-穆黎森：算法工程师入门——增强学习
-
-https://mp.weixin.qq.com/s/laKJ_jfNR5L1uMML9wkS1A
-
-强化学习（Reinforcement Learning）算法基础及分类
-
-https://mp.weixin.qq.com/s/Cvk_cePK9iQd8JIKKDDrmQ
-
-强化学习的核心基础概念及实现
-
-http://mp.weixin.qq.com/s/gHM7qh7UTKzatdg34cgfDQ
-
-强化学习全解
-
-https://mp.weixin.qq.com/s/B6ZpJ0Yw9GBZ9_MyNwjlXQ
-
-构建强化学习系统，你需要先了解这些背景知识
-
-https://zhuanlan.zhihu.com/p/146212198
-
-强化学习经典算法理论
-
-https://mp.weixin.qq.com/s/AKuuIJnESMmck8k210CnWg
-
-易忽略的强化学习知识之基础知识及MDP（上）
-
-https://mp.weixin.qq.com/s/phuCKNj_a4CPq6w51Md-9A
-
-易忽略的强化学习知识之基础知识及MDP（下）
-
-https://mp.weixin.qq.com/s/QHAnpGsr1sSaUgOXTJjVjQ
-
-李飞飞高徒带你一文读懂RL来龙去脉
-
-https://mp.weixin.qq.com/s/iN8q24ka762LqY74zoVFsg
-
-3万字剖析强化学习在电商环境下应用
-
-https://mp.weixin.qq.com/s/qhRxZTq0IdMonAeNj25K1Q
-
-马尔科夫决策过程之Markov Processes
-
-https://mp.weixin.qq.com/s/s-6utyFffAdHOkjadzXYwg
-
-强化学习：Policy-based方法Part1
-
-https://mp.weixin.qq.com/s/wMwqDfIAdDyeeE_ZnBh0zg
-
-强化学习：Policy-based方法Part2
-
-https://zhuanlan.zhihu.com/p/54985200
-
-用有趣的文字，教你强化学习入门知识（上）
-
-https://zhuanlan.zhihu.com/p/55671989
-
-用有趣的文字，教你强化学习入门知识（下）
-
-https://mp.weixin.qq.com/s/zNJ4Au_aVTxeIpn-VHt-tA
-
-强化学习奖励函数设计与设置的几种方法

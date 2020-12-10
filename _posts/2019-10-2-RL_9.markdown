@@ -1,15 +1,107 @@
 ---
 layout: post
-title:  强化学习（九）——博弈论（2）
+title:  强化学习（九）——博弈论
 category: RL 
 ---
 
 * toc
 {:toc}
 
+# Actor-Critic
+
+## Reducing Variance Using Baseline（续）
+
+根据定义，TD误差$$\delta^{\pi_\theta}$$可以根据真实的状态价值函数$$V^{\pi_\theta}(s)$$算出：
+
+$$\delta^{\pi_\theta} = r + \gamma V^{\pi_\theta}(s') - V^{\pi_\theta}(s)$$
+
+因为：
+
+$$\begin{align}
+E_{\pi_\theta}[\delta^{\pi_\theta} | s,a] &= E_{\pi_\theta}[r + \gamma V^{\pi_\theta}(s') | s,a] - V^{\pi_\theta}(s)\\
+&= Q^{\pi_\theta}(s,a) - V^{\pi_\theta}(s) \\
+&= A^{\pi_\theta}(s,a)
+\end{align}$$
+
+可见$$\delta^{\pi_\theta}$$就是$$A^{\pi_\theta}(s,a)$$的一个无偏估计。
+
+因此，我们就可以使用TD误差来计算策略梯度：
+
+$$\nabla_\theta J(\theta)= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a)\delta^{\pi_\theta}]$$
+
+实际运用时，我们使用一个近似的TD误差，即用状态函数的近似函数来代替实际的状态函数：
+
+$$\delta_v = r + \gamma V_v(s') - V_v(s)$$
+
+这也就是说，我们只需要一套参数描述状态价值函数，而不再需要行为价值函数了。
+
+上述方法不仅可用于TD方法，还可用于MC方法等，以下不加讨论的给出如下结论：
+
+$$\begin{align}
+\nabla_\theta J(\theta) &= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a){\color{red}{v_t}}] & \text{REINFORCE}\\
+&= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a){\color{red}{Q_w(s,a)}}] & \text{Q Actor-Critic}\\
+&= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a){\color{red}{A_w(s,a)}}] & \text{Advantage Actor-Critic}\\
+&= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a){\color{red}{\delta}}] & \text{TD Actor-Critic}\\
+&= E_{\pi_\theta}[\nabla_\theta \log \pi_\theta(s,a){\color{red}{\delta e}}] & \text{TD(}\lambda\text{) Actor-Critic}
+\end{align}$$
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/51652845
+
+强化学习这都学不会的话，咳咳，你过来下！
+
+https://mp.weixin.qq.com/s/ce9W3FbLdsqAEyvw6px_RA
+
+Actor Critic——一个融合基于策略梯度和基于值优点的强化学习算法
+
 # 博弈论
 
-## 概述（续）
+博弈论（game theory）是一门单独的学科，和RL并无统属关系。然而由于RL，特别是MARL大量应用到了相关的知识，所以这里也把它写在RL系列里了。
+
+## 历史
+
+博弈论最早可追溯到“齐威王田忌赛马”，但它真正的发展是在20世纪下半叶。
+
+RL的历史相对比较晚，因此从渊源来看，RL=博弈论+控制论+ML。
+
+参考：
+
+https://blog.csdn.net/sobermineded/article/details/79601986
+
+博弈论历史、发展与应用
+
+## 教程
+
+《Game Theory: An Introduction》，Steven Tadelis著。
+
+>Steven Tadelis，经济学家。Harvard博士（1997），UCB教授。
+
+https://mp.weixin.qq.com/s/U_vDI_PJm-buubTwJgV9pw
+
+数学博弈论与应用，431页pdf，Mathematical Game Theory and Applications
+
+https://github.com/cheat-sheets/game-theory-cheat-sheet
+
+一个博弈论方面的Cheat Sheet。
+
+## 概述
+
+要理解博弈论，可以通过博弈论和决策论的区别开始。
+
+**决策论**是研究局中人在给定其他环境参数条件下的最优选择问题。
+
+**博弈论**研究的是当局中人充分考虑到其他局中人对其战略选择的反应后（即局中人都具有同样充分的理性时）进行最优战略的选择。
+
+博弈论的直接目标不是找到一个玩家的最佳策略，而是找到所有玩家的最理性策略组合。我们称最理性策略组合为**均衡（equilibrium）**。
+
+从宏观上可以将博弈论研究的问题分为：**合作博弈**和**非合作博弈**。现代狭义的博弈论一般是指非合作博弈。
+
+非合作博弈根据参与博弈的参与人做决策的先后顺序可以分为：静态博弈和动态博弈。
+
+**静态博弈**：参与人同时做决策，常用标准型（normal form）表述其策略。如两人零和博弈等。
+
+**动态博弈**：参与人有先后顺序做决策，且后者能观察到前者所做的决策，如围棋等。常用扩展型（extensive form）来表述其策略，常用的扩展型表述为博弈树。
 
 非合作博弈根据参与人是否已知对方的信息，可以分为：完美信息博弈和不完美信息博弈。
 
@@ -116,109 +208,3 @@ $$V_i(\pi^*_1,\dots,\pi^*_i,\dots,\pi^*_n)\ge V_i(\pi^*_1,\dots,\pi_i,\dots,\pi^
 ![](/images/img3/Nash.png)
 
 >John Nash，1928～2015，数学家、经济学家。Princeton博士（1950），Princeton教授。主要研究博弈论、微分几何学和偏微分方程。诺贝尔经济学奖获得者（1994）。奥斯卡金像奖电影《美丽心灵》男主角原型。
-
-## 高风险下的纳什均衡
-
-在一些特殊情况下，即使犯错误的可能性很小也可能导致大的灾难（比如核电站，出问题就非常严重），纳什均衡就可能不会产生有说服力的解释。考虑如下博弈：
-
-<table>
-  <tr>
-    <td colspan="2" rowspan="2"></td>
-    <td colspan="2" align="center">乙</td>
-  </tr>
-  <tr>
-    <td>左</td>
-    <td>右</td>
-  </tr>
-  <tr>
-    <td rowspan="2">甲</td>
-    <td>上</td>
-    <td>8,10</td>
-    <td>-1000,9</td>
-  </tr>
-  <tr>
-    <td>下</td>
-    <td>7,6</td>
-    <td>6,5</td>
-  </tr>
-</table>
-
-在这个博弈中，参与人甲会选择“下”，因为如果乙不小心（低概率）犯错误，要避免产生右上的灾难性情况。
-
-这个例子说明，**个体可能不想我们所假设的那样完全理性，在遇到高风险的情况下，人们会考虑风险，从而使得最终结果可能偏离纳什均衡战略。**
-
-## 智猪博弈问题
-
-智猪博弈问题是John Nash于1950年提出的问题。
-
-在一个猪圈里养着一头大猪和一头小猪，在猪圈的一端放有一个猪食槽，在另一端安装有一个按钮，它控制着猪食的供应量。假定：
-
-- 猪按一下按钮，就有8单位猪食进槽，但谁按按钮就会首先付出2单位成本；
-- 若大猪先到食槽，则大猪吃到7单位食物，而小猪仅能吃到1单位食物；
-- 若小猪先到，则大猪和小猪各吃到4单位食物；
-- 若两猪同时到，则大猪吃到5单位，小猪仅吃到3单位。
-
-显然，在这里按按钮有两个成本：
-
-- 直接成本：2单位成本。
-- 间接成本：先按按钮的猪，肯定会最后到达食槽。
-
-因此，这个问题写成策略矩阵，则是：
-
-<table>
-  <tr>
-    <td colspan="2" rowspan="2"></td>
-    <td colspan="2" align="center">小猪</td>
-  </tr>
-  <tr>
-    <td>按</td>
-    <td>等待</td>
-  </tr>
-  <tr>
-    <td rowspan="2">大猪</td>
-    <td>按</td>
-    <td>3,1</td>
-    <td>2,4</td>
-  </tr>
-  <tr>
-    <td>等待</td>
-    <td>7,-1</td>
-    <td>0,0</td>
-  </tr>
-</table>
-
-该博弈不存在占优战略均衡，因为尽管小猪有一个严格占优战略，但大猪并没有占优战略。
-
-为了解决这个问题，Nash提出了重复剔除的占优战略均衡（iterated dominance equilibrium）。
-
-其具体做法如下：
-
-**Step 1**：大猪没有劣战略，策略保持不变。
-
-**Step 2**：小猪有一个劣战略: “按”。
-
-“按”的支付值： 1, -1
-
-“等待”的支付值： 4, 0
-
-**Step 3**：剔除小猪的劣战略“按”。
-
-**Step 4**：剔除之后，大猪有一个劣战略：“等待”。
-
-**Step 5**：剔除大猪的劣战略“等待”，剩下最后一个战略组合：
-
-大猪：“按” + 小猪：“等待”
-
-在小企业经营中，学会如何“搭便车”是一个精明的职业经理人最为基本的素质。在某些时候，如果能够注意等待，让其他大的企业首先开发市场，是一种明智的选择。这时候有所不为才能有所为！
-
-## 最大最小策略
-
-0阶理性共识：每个人都是理性的，但不知道其他人是否是理性的；
-
-1阶理性共识：每个人是理性的，并且知道其他每个人也都是理性的，但并不知道其他人是否知道自己是理性的；
-
-2阶理性共识：每个人是理性的，并且知道其他每个人也都是理性的，并且知道其他人知道自己是理性的，但不知道其他人是否知道自己知道其他人都是理性的。。。。。。。3阶、4阶。。。n阶依次类推。
-
-重复剔除不仅要求每个人是理性的，而且要求每个人知道其他人都是理性的，每个人知道每个人知道每个人是理性的，如此等等，即理性是“共识”。
-
-**优势策略均衡与纳什均衡的概念是建立在博弈者理性行为的基础上的**，任何出现的一点错误将可能使博弈者蒙受巨大的损失，因而可能有player会采取比较保守的策略。

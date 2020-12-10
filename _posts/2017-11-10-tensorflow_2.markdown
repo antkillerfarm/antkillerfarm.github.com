@@ -97,6 +97,10 @@ https://mp.weixin.qq.com/s/BAR-UM3rTveYrKa4kiJvcQ
 
 使用TensorBoard进行超参数优化
 
+https://mp.weixin.qq.com/s/5zfKiP9Fxpl7suqBQILL-g
+
+还在用Tensorboard？机器学习实验管理平台大盘点
+
 ## 模型文件
 
 tensorflow model包含2个文件：

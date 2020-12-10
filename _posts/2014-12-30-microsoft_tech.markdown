@@ -238,3 +238,37 @@ gl-matrix 3.0以后添加了名字空间glMatrix，所以老旧的代码可能�
 ## 其他库
 
 https://deck.gl/
+
+# VAE参考资源+
+
+https://mp.weixin.qq.com/s/GJr-YtV84eV1KbkyVSkcBA
+
+超越BigGAN，DeepMind提出“史上最强非GAN生成器”VQ-VAE-2
+
+https://mp.weixin.qq.com/s/3ZHlWlO0FdnQTnskcrz2IA
+
+生成式模型入门：训练似然模型的技巧
+
+https://mp.weixin.qq.com/s/KtKYk08xEqwA43Phxw2-_w
+
+基于自编码器的通用性文本表征
+
+https://mp.weixin.qq.com/s/hwb3eRWbwa9weCWz1ypOxw
+
+VAE系解纠缠：从VAE到βVAE，再到β-TCVAE
+
+https://mp.weixin.qq.com/s/YZcw5pnHzuACSvEmGZHnEQ
+
+自回归模型:PixelCNN
+
+https://mp.weixin.qq.com/s/yB7tq2vcBpVBnM-j9PgRsw
+
+人脸合成效果媲美StyleGAN，而它是个自编码器
+
+https://mp.weixin.qq.com/s/J59d1K5WX-wnzhws3k60AQ
+
+万字长文带你了解变分自编码器VAEs
+
+https://mp.weixin.qq.com/s/g-OPU4vp66HWcpqjdD2bBg
+
+使用PyTorch从理论到实践理解变分自编码器VAE

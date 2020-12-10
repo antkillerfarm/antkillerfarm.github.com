@@ -9,6 +9,69 @@ category: RL
 
 # Exploration & Exploitation（续）
 
+根据搜索过程中使用的数据结构，可以将搜索分为：
+
+- **依据状态行为空间的探索(State-Action Exploration)**。针对每一个当前的状态，以一定的算法尝试之前该状态下没有尝试过的行为。
+
+- **参数化搜索（Parameter Exploration)**。直接针对策略的函数近似，此时策略用各种形式的参数表达，探索即表现为尝试不同的参数设置。
+
+Parameter Exploration的优点：得到基于某一策略的一段持续性的行为。
+
+缺点：对个体曾经到过的状态空间毫无记忆，也就是个体也许会进入一个之前曾经进入过的状态而并不知道其曾到过该状态，不能利用已经到过这个状态这个信息。
+
+参考：
+
+https://mp.weixin.qq.com/s/FX-1IlIaFDLaQEVFN813jA
+
+探索(Exploration)还是利用(Exploitation)？强化学习如何tradeoff？
+
+## UCB
+
+$$\epsilon$$-greedy和softmax算法的缺陷：
+
+只关心回报是多少，并不关心每个臂被拉下了多少次，这就意味着，这些算法不再会选中初始回报特别低的臂，即使这个臂的回报只测试了一次。
+
+UCB（The Upper Confidence Bound Algorithm）算法将会不仅仅关注于回报，同样会关注每个臂被探索的次数。
+
+为了进一步刻画每个臂被探索的次数和回报之间的关系，UCB引入了**置信区间**的概念：
+
+- 每个item的回报均值都有个置信区间，随着试验次数增加，置信区间会变窄（逐渐确定了到底回报丰厚还是可怜）。
+- 每次选择前，都根据已经试验的结果重新估计每个item的均值及置信区间。
+- 选择置信区间上限最大的那个item。
+
+显然：
+
+- 如果item置信区间很宽（被选次数很少，还不确定），那么它会倾向于被多次选择，这个是算法冒风险的部分；
+- 如果item置信区间很窄（备选次数很多，比较确定其好坏了），那么均值大的倾向于被多次选择，这个是算法保守稳妥的部分；
+
+UCB是一种乐观的算法，选择置信区间上界排序，如果是悲观保守的做法，是选择置信区间下界排序。
+
+置信区间的度量有很多方式，由此产生了很多UCB的变种算法。最常用的UCB1算法，采用了如下度量方式：
+
+$$I_i=\bar{x}_i+\sqrt{2\frac{\log t}{n_i}}$$
+
+其中$$x_i$$是第i个臂的奖励均值，$$n_i$$是臂i当前累积被选择的次数。
+
+UCB还可以应用到MCTS中，这就是UCT（Upper Confidence Bound Apply to Tree）算法了。即UCT=MCTS+UCB。
+
+参考：
+
+https://www.cnblogs.com/Ryan0v0/p/11366578.html
+
+多臂赌博机问题(MAB)的UCB算法介绍
+
+https://blog.csdn.net/yw8355507/article/details/48579635
+
+UCB算法
+
+https://blog.csdn.net/LegenDavid/article/details/71082124
+
+LinUCB算法
+
+https://zhuanlan.zhihu.com/p/32356077
+
+Multi-Armed Bandit: UCB (Upper Bound Confidence)
+
 ## 一些MAB变种
 
 我们前面的讨论默认了环境是不会变化的。而一些MAB问题，这个假设可能不成立，这就好比如果一位玩家发现某个机器的$$p_i$$很高，一直摇之后赌场可能人为降低这台机器吐钱的概率。在这种情况下，MAB问题的环境就是随着时间/玩家的行为会发生变化。
@@ -266,113 +329,3 @@ https://mp.weixin.qq.com/s/CcJrsbYO70GwOcedUXnHdg
 https://mp.weixin.qq.com/s/u44neSzF2Iqyv-i1Fc4lsQ
 
 脱胎换骨的生成模式：强化学习重排
-
-https://mp.weixin.qq.com/s/nk-X88bF6LiAywnqRz3REQ
-
-Youtube推荐RL首弹，基于Top-K的Off-Policy矫正解决推荐中的信息茧房困境
-
-https://mp.weixin.qq.com/s/EPLvdQFiT1MiGgG7u4Qoqg
-
-基于强化学习的无地图机器人导航，Reinforcement Learning Based MRN
-
-https://mp.weixin.qq.com/s/X8STHGKlJYN2Qizz4t8Llg
-
-Accelerating DRL via Human knowledge
-
-https://zhuanlan.zhihu.com/p/145983063
-
-大规模深度强化学习的发展
-
-https://zhuanlan.zhihu.com/p/53326459
-
-深度强化学习中的好奇心
-
-https://zhuanlan.zhihu.com/p/79712897
-
-动态环境下基于DRL的无人车自适应路径规划方法
-
-https://mp.weixin.qq.com/s/LdkPnm8vo8oeYzIC0Imlvw
-
-俞扬：强化学习真实环境不好用？那就模拟器来凑！
-
-https://mp.weixin.qq.com/s/GcjoZfasWNZWlTC_xP1_wg
-
-通用强化学习用算法发现算法：DeepMind 数据驱动“价值函数”自我更新，14款Atari游戏完虐人类！
-
-https://mp.weixin.qq.com/s/IFIXvZ_9oEzHJI34_dFI8g
-
-训练DQN模型，loss出现nan，要怎么解决？
-
-https://mp.weixin.qq.com/s/RE43jNFKbOj0DcLpGnAY7g
-
-Distributional Soft Actor-Critic (DSAC)强化学习算法的设计与验证
-
-https://mp.weixin.qq.com/s/Sxrp3EZ8LCA3d06Zm5meKQ
-
-《深度强化学习中的迁移学习》2020综述论文，22页pdf
-
-https://mp.weixin.qq.com/s/ylavFA_MXLUhIBLCqxAjLQ
-
-阿里强化学习重排实践
-
-# Attention进阶++
-
-https://mp.weixin.qq.com/s/fbAAA7fO2voP_v-NsavQew
-
-深度学习中的注意力机制（三）
-
-https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
-
-阿里北大提出新attention建模框架，一个模型预测多种行为
-
-https://mp.weixin.qq.com/s/Yq3S4WrsQRQC06GvRgGjTQ
-
-打入神经网络思维内部
-
-https://mp.weixin.qq.com/s/MJ1578NdTKbjU-j3Uuo9Ww
-
-基于文档级问答任务的新注意力模型
-
-https://mp.weixin.qq.com/s/_3pA8FZwzegSpyz_cK63BQ
-
-Self-Attention GAN中的self-attention机制
-
-https://mp.weixin.qq.com/s/h7sLwVXb_UI8jvJU-oe3Cg
-
-Google AI提出“透明注意力”机制，实现更深层NMT模型
-
-https://mp.weixin.qq.com/s/1LYz5SH5rVnPPJ0tZvRQAA
-
-从各种注意力机制窥探深度学习在NLP中的神威
-
-https://zhuanlan.zhihu.com/p/33078323
-
-数字串识别：基于位置的硬性注意力机制
-
-https://mp.weixin.qq.com/s/-gAISWjSiG6ccPuOPAEg3A
-
-五张动图，看清神经机器翻译里的Attention！
-
-https://mp.weixin.qq.com/s/aixpv9t1PLPRWUP6PvZ0EQ
-
-用自注意力增强卷积：这是新老两代神经网络的对话
-
-https://mp.weixin.qq.com/s/i3Xd_IB7R0-QPztn-pgpng
-
-遍地开花的Attention，你真的懂吗？
-
-https://mp.weixin.qq.com/s/rrbwItXt-1EaGiqtDEGvog
-
-为节约而生：从标准Attention到稀疏Attention
-
-https://mp.weixin.qq.com/s/MzHmvbwxFCaFjmMkjfjeSg
-
-遍地开花的Attention，你真的懂吗？
-
-https://mp.weixin.qq.com/s/e_LEhLf2Rh-1zkEBmqS4nA
-
-NLP这两年：15个预训练模型对比分析与剖析
-
-https://mp.weixin.qq.com/s/LAInpFPa-3R1rfv6idILnw
-
-注意力机制发展如何了，如何学习它在各类任务中的应用？

@@ -297,36 +297,52 @@ https://www.zhihu.com/question/404217836
 
 如何看待全球超级计算机TOP 500榜单日本登顶，中国跌出前三？近年中国超算发展现状如何？
 
-# VAE参考资源+
+# DRL参考资源++
 
-https://mp.weixin.qq.com/s/GJr-YtV84eV1KbkyVSkcBA
+https://mp.weixin.qq.com/s/nk-X88bF6LiAywnqRz3REQ
 
-超越BigGAN，DeepMind提出“史上最强非GAN生成器”VQ-VAE-2
+Youtube推荐RL首弹，基于Top-K的Off-Policy矫正解决推荐中的信息茧房困境
 
-https://mp.weixin.qq.com/s/3ZHlWlO0FdnQTnskcrz2IA
+https://mp.weixin.qq.com/s/EPLvdQFiT1MiGgG7u4Qoqg
 
-生成式模型入门：训练似然模型的技巧
+基于强化学习的无地图机器人导航，Reinforcement Learning Based MRN
 
-https://mp.weixin.qq.com/s/KtKYk08xEqwA43Phxw2-_w
+https://mp.weixin.qq.com/s/X8STHGKlJYN2Qizz4t8Llg
 
-基于自编码器的通用性文本表征
+Accelerating DRL via Human knowledge
 
-https://mp.weixin.qq.com/s/hwb3eRWbwa9weCWz1ypOxw
+https://zhuanlan.zhihu.com/p/145983063
 
-VAE系解纠缠：从VAE到βVAE，再到β-TCVAE
+大规模深度强化学习的发展
 
-https://mp.weixin.qq.com/s/YZcw5pnHzuACSvEmGZHnEQ
+https://zhuanlan.zhihu.com/p/53326459
 
-自回归模型:PixelCNN
+深度强化学习中的好奇心
 
-https://mp.weixin.qq.com/s/yB7tq2vcBpVBnM-j9PgRsw
+https://zhuanlan.zhihu.com/p/79712897
 
-人脸合成效果媲美StyleGAN，而它是个自编码器
+动态环境下基于DRL的无人车自适应路径规划方法
 
-https://mp.weixin.qq.com/s/J59d1K5WX-wnzhws3k60AQ
+https://mp.weixin.qq.com/s/LdkPnm8vo8oeYzIC0Imlvw
 
-万字长文带你了解变分自编码器VAEs
+俞扬：强化学习真实环境不好用？那就模拟器来凑！
 
-https://mp.weixin.qq.com/s/g-OPU4vp66HWcpqjdD2bBg
+https://mp.weixin.qq.com/s/GcjoZfasWNZWlTC_xP1_wg
 
-使用PyTorch从理论到实践理解变分自编码器VAE
+通用强化学习用算法发现算法：DeepMind 数据驱动“价值函数”自我更新，14款Atari游戏完虐人类！
+
+https://mp.weixin.qq.com/s/IFIXvZ_9oEzHJI34_dFI8g
+
+训练DQN模型，loss出现nan，要怎么解决？
+
+https://mp.weixin.qq.com/s/RE43jNFKbOj0DcLpGnAY7g
+
+Distributional Soft Actor-Critic (DSAC)强化学习算法的设计与验证
+
+https://mp.weixin.qq.com/s/Sxrp3EZ8LCA3d06Zm5meKQ
+
+《深度强化学习中的迁移学习》2020综述论文，22页pdf
+
+https://mp.weixin.qq.com/s/ylavFA_MXLUhIBLCqxAjLQ
+
+阿里强化学习重排实践

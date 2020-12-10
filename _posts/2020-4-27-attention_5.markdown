@@ -29,9 +29,15 @@ category: Attention
 | Q8BERT: Quantized 8Bit BERT |  |  |  |  | Y |  | Y |
 | Q-BERT: Hessian Based Ultra Low Precision Quantization of BERT |  |  |  |  | Y |  | Y |
 
+![](/images/img4/BERT.png)
+
 https://www.zhihu.com/question/347898375
 
 如何看待瘦身成功版BERT——ALBERT？
+
+https://zhuanlan.zhihu.com/p/316865623
+
+2020年9月谷歌研究给出的综述“Efficient Transformers: A Survey”
 
 https://mp.weixin.qq.com/s/a0d0b1jSm5HxHso9Lz8MSQ
 

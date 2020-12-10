@@ -1,11 +1,129 @@
 ---
 layout: post
-title:  强化学习（二）——K-摇臂赌博机, Q-learning, MDP
+title:  强化学习（二）——K-摇臂赌博机, Q-learning
 category: RL 
 ---
 
 * toc
 {:toc}
+
+# 概述（续）
+
+## Policy, Value, Transition Model
+
+增强学习中，比较重要的几个概念：
+
+**Policy**：我们的算法追求的目标，可以看做一个函数，在输入state的时候，能够返回此时应该执行的action或者action的概率分布。
+
+$$\pi(a \mid  s) = P[A_t = a \mid  S_t = s]$$
+
+**Value**：价值函数，表示在输入state，action的时候，能够返回在state下，执行这个action能得到的Discounted future reward的（期望）值。
+
+Value function一般有两种。
+
+state-value function：
+
+$$v_{\pi}(s) = E_{\pi} [G_t \mid  S_t = s]$$
+
+action-value function：
+
+$$q_{\pi}(s; a) = E_{\pi} [G_t \mid  S_t = s; A_t = a]$$
+
+后者由于和state、action都有关系，也被称作state-action pair value function。
+
+**Transition model**：环境本身的结构与特性。当在state执行action的时候，系统会进入的下一个state，也包括可能收到的reward。
+
+很显然，以上三者互相关联：
+
+如果能得到一个好的Policy function的话，那算法的目的已经达到了。
+
+如果能得到一个好的Value function的话，那么就可以在这个state下，选取value值高的那个action，自然也是一个较好的策略。
+
+如果能得到一个好的transition model的话，一方面，有可能可以通过这个transition model直接推演出最佳的策略；另一方面，也可以用来指导policy function或者value function的学习过程。
+
+因此，增强学习的方法，大体可以分为三类：
+
+**Value-based RL，值方法。**显式地构造一个model来表示值函数Q，找到最优策略对应的Q函数，自然就找到了最优策略。
+
+**Policy-based RL，策略方法。**显式地构造一个model来表示策略函数，然后去寻找能最大化discounted future reward的策略。
+
+**Model-based RL，基于环境模型的方法。**先得到关于environment transition的model，然后再根据这个model去寻求最佳的策略。
+
+以上三种方法并不是一个严格的划分，很多RL算法同时具有一种以上的特性。
+
+![](/images/article/RL_3.png)
+
+比如，Actor-Critic（演员-评判家）方法：agent既有价值函数、也有策略函数。两者相互结合解决问题。
+
+## 参考
+
+https://mp.weixin.qq.com/s/f6sq8cSaU1cuzt7jhsK8Ig
+
+强化学习（Reinforcement Learning）基础介绍
+
+https://mp.weixin.qq.com/s/TGN6Zhrea2LPxdkspVTlAw
+
+穆黎森：算法工程师入门——增强学习
+
+https://mp.weixin.qq.com/s/laKJ_jfNR5L1uMML9wkS1A
+
+强化学习（Reinforcement Learning）算法基础及分类
+
+https://mp.weixin.qq.com/s/Cvk_cePK9iQd8JIKKDDrmQ
+
+强化学习的核心基础概念及实现
+
+http://mp.weixin.qq.com/s/gHM7qh7UTKzatdg34cgfDQ
+
+强化学习全解
+
+https://mp.weixin.qq.com/s/B6ZpJ0Yw9GBZ9_MyNwjlXQ
+
+构建强化学习系统，你需要先了解这些背景知识
+
+https://zhuanlan.zhihu.com/p/146212198
+
+强化学习经典算法理论
+
+https://mp.weixin.qq.com/s/AKuuIJnESMmck8k210CnWg
+
+易忽略的强化学习知识之基础知识及MDP（上）
+
+https://mp.weixin.qq.com/s/phuCKNj_a4CPq6w51Md-9A
+
+易忽略的强化学习知识之基础知识及MDP（下）
+
+https://mp.weixin.qq.com/s/QHAnpGsr1sSaUgOXTJjVjQ
+
+李飞飞高徒带你一文读懂RL来龙去脉
+
+https://mp.weixin.qq.com/s/iN8q24ka762LqY74zoVFsg
+
+3万字剖析强化学习在电商环境下应用
+
+https://mp.weixin.qq.com/s/qhRxZTq0IdMonAeNj25K1Q
+
+马尔科夫决策过程之Markov Processes
+
+https://mp.weixin.qq.com/s/s-6utyFffAdHOkjadzXYwg
+
+强化学习：Policy-based方法Part1
+
+https://mp.weixin.qq.com/s/wMwqDfIAdDyeeE_ZnBh0zg
+
+强化学习：Policy-based方法Part2
+
+https://zhuanlan.zhihu.com/p/54985200
+
+用有趣的文字，教你强化学习入门知识（上）
+
+https://zhuanlan.zhihu.com/p/55671989
+
+用有趣的文字，教你强化学习入门知识（下）
+
+https://mp.weixin.qq.com/s/zNJ4Au_aVTxeIpn-VHt-tA
+
+强化学习奖励函数设计与设置的几种方法
 
 # K-摇臂赌博机
 
@@ -148,92 +266,3 @@ Q-Learning算法的**transition rule**为：
 $$Q(s,a)=R(s,a)+\gamma \max(Q(\tilde s,\tilde a))\tag{1}$$
 
 其中，(s,a)表示当前的state和action，$$(\tilde s,\tilde a)$$表示下一个state和action，$$0 \le \gamma < 1$$为学习参数。这个公式也被称作**Bellman equation**。
-
->Richard Ernest Bellman，1920～1984，美国应用数学家、控制论学家、数理生物学家。布鲁克林学院本科+威斯康星大学麦迪逊分校硕士+普林斯顿博士。二战期间曾在Los Alamos研究理论物理，后任职于美国智库RAND Corporation，南加州大学教授。美国艺术科学院院士，美国科学院院士。   
->Bellman–Ford算法的发明人之一。以他命名的奖项有Richard E. Bellman Control Heritage Award和Bellman Prize in Mathematical Biosciences。
-
-在无监督的情况下，agent不断从一个状态转至另一状态进行探索，直到到达目标。我们将agent的每一次探索（从任意初始状态开始，经历若干action，直到到达目标状态的过程）称为一个**episode**。
-
-Q-Learning算法的计算步骤如下：
-
->**Step 1**：给定参数$$\gamma$$和reward矩阵R。   
->**Step 2**：初始化Q=0。   
->**Step 3**：For each episode:
->>3.1 随机选择一个初始状态s。   
->>3.2 若未达到目标状态，则：
->>>(1)在当前s的所有action中，随机选择一个行为a。   
->>>(2)利用a，得到下一个状态$$\tilde s$$。   
->>>(3)利用公式1，计算$$Q(s,a)$$。   
->>>(4)令$$s=\tilde s$$。
-
-由马尔可夫过程的性质（参见[《机器学习（二十六）》](/ml/2017/08/30/Machine_Learning_26.html#Markov)）可知，Q矩阵最终会趋于一个极限，如下所示：
-
-![](/images/article/q_matrix5.gif)
-
-上面的矩阵可用下图表示：
-
-![](/images/article/map5.gif)
-
-显然，沿着Q值最大的边走，就是这个探索问题的最佳答案。（如上图红线所示）即：
-
-$$\pi (s)=\arg \max_a(Q(s,a))$$
-
-参考：
-
-http://blog.csdn.net/itplus/article/details/9361915
-
-一个Q-learning算法的简明教程
-
-http://blog.csdn.net/young_gy/article/details/73485518
-
-强化学习之Q-learning简介
-
-https://mp.weixin.qq.com/s/34E1tEQMZuaxvZA66_HRwA
-
-通过Q-learning深入理解强化学习
-
-https://mp.weixin.qq.com/s/kmk3mKASZPixA8VS9sipcA
-
-走近流行强化学习算法：最优Q-Learning
-
-https://mp.weixin.qq.com/s/o-IzYt62qaUhcTY33E0Ylg
-
-基于强化学习Q-Learning模型构建算法交易策略
-
-https://mp.weixin.qq.com/s/ePssT5BDb9KebCTehn0ugw
-
-5分钟读懂强化学习之Q-learning
-
-https://www.zhihu.com/question/26408259
-
-如何用简单例子讲解Q-learning的具体过程？
-
-# Markov Decision Process
-
-上边Q-Learning的例子中，由于action能够唯一确定状态的变换，因此又被称为**Markov Reward Process**：
-
-$$<\mathcal{S},\mathcal{P},\mathcal{R},\gamma>$$
-
-这个四元组依次代表：states、state transition probability matrix、reward function、discount factor。
-
-实际中，执行特定的动作并不一定能得到特定的状态。
-
-![](/images/article/Markov_Decision_Process.png)
-
-比如上图中，在状态$$S_0$$，执行$$a_0$$，只有0.5的机会，会到达$$S_2$$。这也就是之前提到过的MDP。
-
-标准MDP中的Bellman equation可改为如下形式：
-
-$$v = \mathcal{R} + \gamma \mathcal{P}v$$
-
-其中,$$\mathcal{P},\mathcal{R}$$均为已知。
-
-这里的Bellman equation是线性方程，它的直接解法如下：
-
-$$(I-\gamma \mathcal{P})v = \mathcal{R}$$
-
-$$v = (I-\gamma \mathcal{P})^{-1}\mathcal{R}$$
-
-然而这个方法的复杂度是$$O(n^3)$$（n是状态的个数），这对于大的MDP来说，并不好用。这种情况下，常用的解法有：Dynamic programming（动态规划）、Monte-Carlo evaluation和Temporal-Difference learning。
-
-由于MDP对于RL任务进行了Markov假设，这属于一种建模行为，因此它也被归为一种model-based learning的算法。

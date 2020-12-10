@@ -1,15 +1,92 @@
 ---
 layout: post
-title:  强化学习（七）——策略梯度
+title:  强化学习（七）——价值函数的近似表示, 策略梯度
 category: RL 
 ---
 
 * toc
 {:toc}
 
-# 价值函数的近似表示
+# Model-Free Control（续）
 
-## Incremental Prediction Algorithms（续）
+### Importance Sampling for Off-Policy TD
+
+类似的，TD算法的更新公式为：
+
+$$V(S_t)\leftarrow V(S_t)+\alpha\left(\frac{\pi(A_t\mid S_t)}{\mu(A_t\mid S_t)}(R_{t+1}+\gamma V(S_{t+1}))-V(S_t)\right)$$
+
+应用这种思想最好的方法是基于TD(0)的Q-learning。Q-learning的相关内容参见《强化学习（二）》。
+
+### DP和TD的关系
+
+|  | Full Backup (DP) | Sample Backup (TD) |
+|:--:|:--:|:--:|
+| Bellman Expectation<br/>Equation for $$v_\pi(s)$$ | Iterative Policy Evaluation<br/>$$V(s)\leftarrow E[R+\gamma V(S')\mid s]$$ | TD Learning<br/>$$V(S)\xleftarrow{\alpha} R+\gamma V(S')$$ |
+| Bellman Expectation<br/>Equation for $$q_\pi(s,a)$$ | Q-Policy Iteration<br/>$$Q(s,a)\leftarrow E[R+\gamma Q(S',A')\mid s,a]$$ | Sarsa<br/>$$Q(S,A)\xleftarrow{\alpha} R+\gamma Q(S',A')$$ |
+| Bellman Optimality<br/>Equation for $$q_*(s,a)$$ | Q-Value Iteration<br/>$$Q(s,a)\leftarrow E[R+\gamma \max_{a'\in A}Q(S',a')\mid s]$$ | Q-Learning<br/>$$Q(S,A)\xleftarrow{\alpha} R+\gamma \max_{a'\in A}Q(S',a')$$ |
+
+上表中$$x\xleftarrow{\alpha}y\equiv x\leftarrow x+\alpha(y-x)$$。
+
+<a name="Value"/>
+
+# 价值函数的近似表示（Value Function Approximation）
+
+之前的内容都是讲解一些强化学习的基础理论，这些知识只能解决一些中小规模的问题。很多价值函数需要用一张大表来存储。当获取某一状态或行为的价值的时候，通常需要一个查表操作（Table Lookup），这对于那些状态空间或行为空间很大的问题几乎无法求解。
+
+在实际应用中，对于状态和行为空间都比较大的情况，精确获得各种v(s)和q(s,a)几乎是不可能的。这时候需要找到近似的函数。具体来说，可以使用线性组合、神经网络以及其他方法来近似价值函数：
+
+$$
+\begin{array}\\
+\hat v(s,w)\approx v_\pi(s)\\
+\hat q(s,a,w)\approx q_\pi(s,a)
+\end{array}
+$$
+
+其中w是该近似函数的参数。
+
+## 线性函数
+
+这里仍然从最简单的线性函数说起：
+
+$$\hat v(S,w)=x(S)^Tw=\sum_{j=1}^nx_j(S)w_j$$
+
+目标函数为：
+
+$$J(w)=E_\pi[(v_\pi(S)-x(S)^Tw)^2]$$
+
+更新公式为：
+
+$$\Delta w=\alpha (v_\pi(S)-\hat v(S,w))x(S)$$
+
+上述公式都是基本的ML方法，这里不再赘述。
+
+最简单的一类线性函数，被叫做Table Lookup Features：
+
+$$x^{table}(S)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}$$
+
+则：
+
+$$\hat v(S,w)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}\begin{pmatrix} w_1 \\ \vdots \\ w_n \end{pmatrix}$$
+
+## Incremental Prediction Algorithms
+
+事实上，之前所列的公式都不能直接用于强化学习，因为公式里都有一个实际价值函数$$v_\pi(S)$$，或者是一个具体的数值，而强化学习没有监督数据，因此不能直接使用上述公式。
+
+因此，我们需要找到一个替代$$v_\pi(S)$$的目标函数。
+
+|:--:|:--:|:--:|:--:|
+| MC | $$\Delta w=\alpha ({\color{red}{G_t}}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、无偏采样 | 收敛至一个局部最优解 |
+| TD(0) | $$\Delta w=\alpha ({\color{red}{R_{t+1}+\gamma\hat v(S_{t+1},w)}}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、有偏采样 | 收敛至全局最优解 |
+| TD($$\lambda$$) | $$\Delta w=\alpha ({\color{red}{G_t^\lambda}}-\hat v(S_t,w))\nabla_w \hat v(S_t,w)$$ | 有噪声、有偏采样 |  |
+
+上面公式中，红色的部分就是目标函数。
+
+对于$$\hat q(S,A,w)$$，我们也有类似的结论：
+
+|:--:|:--:|:--:|:--:|
+| MC | $$\Delta w=\alpha ({\color{red}{G_t}}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、无偏采样 | 收敛至一个局部最优解 |
+| TD(0) | $$\Delta w=\alpha ({\color{red}{R_{t+1}+\gamma\hat q(S_{t+1},A_{t+1},w)}}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 | 收敛至全局最优解 |
+| TD($$\lambda$$) | $$\Delta w=\alpha ({\color{red}{q_t^\lambda}}-\hat q(S_t,A_t,w))\nabla_w \hat q(S_t,A_t,w)$$ | 有噪声、有偏采样 |  |
 
 下面给出各种算法的收敛特性。
 
@@ -95,107 +172,3 @@ $$\pi_\theta(s,a)=P[a | s, \theta]$$
 在这种情况下，如果采用**确定性**的策略话，在个体处于无论哪个灰色格子时，都只能选取相同的行为。假设个体现在学到了一个价值函数，在这个价值函数里状态就是基于上述特征的参数化表示，此时当个体处在灰色格子中，如果采取的是greedy执行的方式，价值函数给出的策略要么都是向东，要么都是向西。如果是向西，那么当个体处在左侧灰色格子时，它将一直（greedy）或很长时间（$$\epsilon$$-greedy）徘徊在长廊左侧两个格子之间而无法到达有钱袋子的格子，因而很长时间得不到奖励。
 
 当发生状态重名情况时，随机策略将会优于确定性的策略。之前的理论告诉我们，对于任何MDP总有一个确定性的最优策略。不过那是针对状态可完美观测、或者使用的特征可以完美描述状态的情况下的。当发生状态重名无法区分，或者使用的近似函数无法对状态完美描述时，个体得到的状态信息等效于部分观测的环境信息，这时问题将不具备Markov性。而此时的最优策略，也不再是确定性的。
-
-## 策略目标函数（Policy Objective Functions）
-
-首先，我们看看如何评价一个策略的好坏。
-
-- **Start value**：
-
-$$J_1(\theta)=V^{\pi_\theta}(s_1)=E_{\pi_\theta}[v_1]$$
-
-上式表示在能够产生完整Episode的环境下，从状态$$s_1$$开始，直到结束状态所能获得的累计奖励。在这种情况下，由于整个Episode的状态、路径都是确定的，因此奖励也是确定的。我们需要做的只是最大化start value，以找到最佳路径（也就是最佳策略）。
-
-- **Average Value**：
-
-$$J_{avV}(\theta)=\sum_s d^{\pi_\theta}(s)V^{\pi_\theta}(s)$$
-
-对于连续环境条件，不存在一个开始状态，这个时候可以使用average value。上式中的$$d^{\pi_\theta}(s)$$表示$$\pi_\theta$$对应的MDP过程的Markov chain的稳态分布。
-
-- **Average reward per time-step**：
-
-$$J_{avR}(\theta)=\sum_s d^{\pi_\theta}(s)\sum_a\pi_\theta(s,a)R_{s,a}$$
-
-上式表示每一个time-step在各种情况下所能得到的平均奖励。
-
-当然了，在很多情况下，我们未必可以得到一个真实的奖励值，这时使用相关函数的估计值作为奖励值即可。
-
-## 策略优化（Policy Optimisation）
-
-主要分为两大类：
-
-1.非gradient算法。
-
-- Hill climbing
-- Simplex / amoeba / Nelder Mead
-- Genetic algorithms
-
-2.gradient算法。
-
-- Gradient descent
-- Conjugate gradient
-- Quasi-newton
-
-一般来说，gradient算法的优化效率较高，因此本文只讨论gradient算法。
-
-我们可以仿照ML中的梯度优化算法，定义策略的梯度函数：
-
-$$\Delta\theta=\alpha\nabla_\theta J(\theta)$$
-
-其中，
-
-$$\nabla_\theta J(\theta)=\begin{pmatrix} \frac{\partial J(\theta)}{\partial \theta_1} \\ \vdots \\ \frac{\partial J(\theta)}{\partial \theta_n} \end{pmatrix}$$
-
-然而，梯度函数有的时候并不简单，也许并不可微。这时可以使用有限差分法：
-
-$$\frac{\partial J(\theta)}{\partial \theta_k}\approx \frac{J(\theta + \epsilon u_k)-J(\theta)}{\epsilon}$$
-
-这里的$$u_k$$是第k个元素为1，其余元素为0的单位向量。
-
-有限差分法简单，不要求策略函数可微分，适用于任意策略；但有噪声，且大多数时候不高效。
-
-## Monte-Carlo Policy Gradient
-
-$$\nabla_\theta \pi_\theta(s,a) = \pi_\theta(s,a)\frac{\nabla_\theta \pi_\theta(s,a)}{\pi_\theta(s,a)}=\pi_\theta(s,a) \nabla_\theta \log \pi_\theta(s,a)$$
-
-上式一般被称作Likelihood ratios，这里使用到了一个公式：$$\mathrm{d}\log(y)=\mathrm{d}y/y$$
-
-我们定义Score function为：$$\nabla_\theta \log \pi_\theta(s,a)$$
-
-下面讨论几种常见的策略。
-
-## Softmax Policy
-
-Softmax Policy适用于离散行为空间，它把行为权重看成是多个特征在一定权重下的线性代数和：$$\phi(s,a)^T\theta$$，则采取某一行为的概率为：
-
-$$\pi_\theta(s,a)\propto e^{\phi(s,a)^T\theta}$$
-
-相应的Score function为:
-
-$$\nabla_\theta \log \pi_\theta(s,a)=\phi(s,a)-E_{\pi_\theta}[\phi(s,\cdot)]$$
-
-上式中，等号右边第一部分是采取某行为的Score，第二部分是当前状态的期望分值。
-
-## Gaussian Policy
-
-Gaussian Policy适用于连续行为空间。比如，如果控制机器人行走要调整流经某个电机的电流值，而这个电流值是连续值。
-
-它用一个正态分布表示策略：$$a\sim N(\mu(s), \sigma^2)$$，其中$$\mu(s)=\phi(s)^T\theta$$。
-
-相应的Score function为:
-
-$$\nabla_\theta \log \pi_\theta(s,a)=\frac{(a-\mu(s))\phi(s)}{\sigma^2}$$
-
-下面我们用一个图来演示一下相关步骤。
-
-![](/images/img3/pg.png)
-
-左图的蓝点表示采样X，箭头指示该点的梯度方向，既然是正态分布，这些箭头显然是远离中心的。中图表示，X对应的Score function。我们根据Score function更新参数（沿着绿色箭头方向，或者沿着红色箭头的反方向）。最终得到右图中的新的正态分布。
-
-从贝叶斯学习的角度来看，左图相当于先验分布，而中图相当于后验分布。
-
-参考：
-
-https://karpathy.github.io/2016/05/31/rl/
-
-Deep Reinforcement Learning: Pong from Pixels
