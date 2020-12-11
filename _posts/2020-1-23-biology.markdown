@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 生物（1）
+title: 生物（一）
 category: Nature 
 ---
 

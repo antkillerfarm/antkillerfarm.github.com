@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度加速（六）——模型压缩与加速进阶（1）
+title:  深度加速（六）——硬件加速技巧
 category: DL acceleration 
 ---
 
@@ -195,6 +195,56 @@ BERT蒸馏完全指南
 
 # 硬件加速技巧
 
+多通道卷积操作最终可以转化为矩阵运算，如下图所示：
+
+![](/images/article/conv.png)
+
+这种将卷积运算变为矩阵乘法运算的方法，一般被称为GEMM（General Matrix Matrix multiplication）。因为卷积变为矩阵这一步运算在Caffe中是用im2col函数实现的，因此，也有使用im2col来指代这类方法的。
+
+和GEMM类似的还有GEMV（General Matrix Vector multiplication）。
+
+参见：
+
+http://blog.csdn.net/u014114990/article/details/51125776
+
+多通道(比如RGB三通道)卷积过程
+
+https://www.zhihu.com/question/28385679
+
+在Caffe中如何计算卷积？
+
+https://buptldy.github.io/2016/10/01/2016-10-01-im2col/
+
+Implementing convolution as a matrix multiplication（中文blog）
+
+https://zhuanlan.zhihu.com/p/66958390
+
+通用矩阵乘（GEMM）优化与卷积计算
+
+https://mp.weixin.qq.com/s/Q1Ovl1LrT5Y6amVqlYpdbA
+
+基于GEMM实现的CNN底层算法被改？Google提出全新间接卷积算法
+
+https://jackwish.net/2019/gemm-optimization.html
+
+通用矩阵乘（GEMM）优化算法
+
+https://mp.weixin.qq.com/s/lqVsMDutBwsjiiM_NkGsAg
+
+详解Im2Col+Pack+Sgemm策略更好的优化卷积运算
+
+https://mp.weixin.qq.com/s/EgC2puTsIfEk1uvgWlHXZA
+
+基于how-to-optimize-gemm初探矩阵乘法优化
+
+https://mp.weixin.qq.com/s/w0YCm8TEPxFg0CR6g4A28w
+
+再探矩阵乘法优化
+
+https://mp.weixin.qq.com/s/T9AUFnLjNDUaE9zKmOhbEw
+
+将GEMM的性能提升200倍!AutoKernel算子优化工具正式开源
+
 https://mp.weixin.qq.com/s/moQnarr1U-8v834bNJ10Zw
 
 GPU上的高效softmax近似
@@ -348,63 +398,3 @@ https://mp.weixin.qq.com/s/EW6jvf98ifBucVz74SfSIA
 https://mp.weixin.qq.com/s/3oL0Bso3mwbsfaG8X5-xoA
 
 英特尔提出新型压缩技术DeepThin，适合移动端设备深度神经网络
-
-https://mp.weixin.qq.com/s/Faej1LKqurtwEIreUVJ0cw
-
-普林斯顿新算法自动生成高性能神经网络，同时超高效压缩
-
-https://mp.weixin.qq.com/s/uK-HasmiavM3jv6hNRY11A
-
-深度梯度压缩：降低分布式训练的通信带宽
-
-https://mp.weixin.qq.com/s/_MDbbGzDOGHk5TBgbu_-oA
-
-中大商汤等提出深度网络加速新方法，具有强大兼容能力
-
-https://mp.weixin.qq.com/s/gbOmpP7XO1Hz_ld4iSEsrw
-
-三星提出移动端神经网络模型加速框架DeepRebirth
-
-https://mp.weixin.qq.com/s/rTFLiZ7DCo6vzD5O64UnMQ
-
-阿里提出新神经网络算法，压缩掉最后一个比特
-
-https://mp.weixin.qq.com/s/rzv8VCAxBQi0HsUcnLqqUA
-
-处理移动端传感器时序数据的深度学习框架：DeepSense
-
-https://mp.weixin.qq.com/s/UYk3YQmFW7-44RUojUqfGg
-
-上交大ICCV：精度保证下的新型深度网络压缩框架
-
-https://mp.weixin.qq.com/s/ZuEi32ZBSjruvtyUimBgxQ
-
-揭秘支付宝中的深度学习引擎：xNN
-
-https://mp.weixin.qq.com/s/0KlnQ8UUxpyhBRdeo0EOAA
-
-用于网络压缩的滤波器级别剪枝算法ThiNet
-
-https://mp.weixin.qq.com/s/FvR6loJ8KUxm7qwclestcQ
-
-专门为卷积神经网络设计的训练方法：RePr
-
-https://mp.weixin.qq.com/s/67GSnZnJySFrCESvmwhO9A
-
-论文解读Channel pruning for Accelerating Very Deep Neural Networks
-
-https://mp.weixin.qq.com/s/Lkxc_9sbRY157sMWaD5c7g
-
-视频分割在移动端的算法进展综述
-
-https://mp.weixin.qq.com/s/F0ykoKv027ycinsAZZjbWQ
-
-ThunderNet：国防科大、旷视提出首个在ARM上实时运行的通用目标检测算法
-
-https://mp.weixin.qq.com/s/J3ftOKDPBY5YYD4jkS5-aQ
-
-ThunderNet：Two-stage形式的目标检测也可很快而且精度很高
-
-https://mp.weixin.qq.com/s/ie2O5BPT-QxTRhK3S0Oa0Q
-
-剪枝需有的放矢，快手&罗切斯特大学提出基于能耗建模的模型压缩

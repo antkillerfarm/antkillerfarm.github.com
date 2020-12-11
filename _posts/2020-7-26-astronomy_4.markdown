@@ -175,14 +175,6 @@ https://mp.weixin.qq.com/s/sRVb8qGtbsuqCvHSrlL9mQ
 
 卡住中国脖子的35项技术
 
-https://mp.weixin.qq.com/s/wsGgWzyaslXCQflaP2ccXA
-
-60年前首登珠峰，他是唯一在世亲历者
-
-https://mp.weixin.qq.com/s/zwlOZzdGlqTFGSg3H9zNxQ
-
-珠峰变“绿”，“隐者”现身，这些年的珠峰发生了什么？
-
 https://mp.weixin.qq.com/s/MCAR8M2DoV30-McdsjTxDw
 
 徒步横穿南极大陆第一人

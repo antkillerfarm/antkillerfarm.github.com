@@ -9,6 +9,52 @@ category: Recommender System
 
 # 推荐系统的工程细节
 
+## A/B Testing（续）
+
+https://mp.weixin.qq.com/s/zBUy_k2lyK0mqMMxm01w6w
+
+推荐系统评估
+
+https://mp.weixin.qq.com/s/3Lvuja4fDFSiqwyEgdYxlQ
+
+如何快速上手AB Testing？
+
+https://mp.weixin.qq.com/s/0H2KYI3OQbmqxFQBt6-JEA
+
+如何设计一个A/B test？
+
+https://mp.weixin.qq.com/s/-y16GrLSMafoSF7ZT-KCiQ
+
+A/B测试的设计和执行
+
+https://mp.weixin.qq.com/s/45JEBLXgC6gRjAudL5fMvg
+
+Netflix：使用A/B测试来找到最佳的插图
+
+https://mp.weixin.qq.com/s/v3Fvp6Hed7ZGoE8FGlGMvQ
+
+美团配送A/B评估体系建设与实践
+
+https://mp.weixin.qq.com/s/UBAQC4xB-aPI7B7JUKE95g
+
+携程是如何做AB实验分流的？
+
+https://mp.weixin.qq.com/s/MwXG85RdbNqvwkjauTfk2Q
+
+不只是A/B测试：多臂老虎机赌徒实验
+
+https://mp.weixin.qq.com/s/ayvBYilRX0BFEYkAa2EikQ
+
+A/B测试是好，但不适合创新
+
+https://mp.weixin.qq.com/s/85BBYJRbvpV9CqgYjW9Ayg
+
+推荐系统衡量：ABtest框架
+
+https://zhuanlan.zhihu.com/p/96382982
+
+A/B Test的统计原理和效果解读
+
 ## 参考
 
 https://mp.weixin.qq.com/s/vpANPrl86Ou2fBVHgLXtBQ
@@ -384,59 +430,3 @@ https://www.zhihu.com/question/362190044
 https://zhuanlan.zhihu.com/p/96796043
 
 推荐系统中如何做多目标优化
-
-https://zhuanlan.zhihu.com/p/52876883
-
-深度CTR预估模型中的特征自动组合机制演化简史
-
-https://mp.weixin.qq.com/s/Ni42SEukRBGDUHu_bh3Lig
-
-基于LSTM模型的广告库存预估算法
-
-https://mp.weixin.qq.com/s/FYghBvkye8J7BqPje4JhFw
-
-汽车之家推荐系统排序算法迭代之路
-
-https://mp.weixin.qq.com/s/2whZpeQPXggHRDSEUnQZ-w
-
-加州大学-Liwei Wu博士论文：协同过滤与排序进展，150页pdf
-
-https://mp.weixin.qq.com/s/jIjdYIbdls5lIbF7TVfbdA
-
-阿里又出排序新模型，还被国际顶会认可了
-
-https://mp.weixin.qq.com/s/fUdKIqygxqlkuv0P4wiIRg
-
-智能推荐算法在直播场景中的应用
-
-https://mp.weixin.qq.com/s/HE0ckOe71dROafTZt-2mAA
-
-最新边信息推荐系统综述
-
-https://mp.weixin.qq.com/s/GazjnVwQKItrph7_n7SGTw
-
-飞猪的“猜你喜欢”如何排序？
-
-https://mp.weixin.qq.com/s/x4Q5di8oVAAZBJBTlY8usw
-
-深入理解推荐系统：梳理YouTube推荐算法
-
-https://mp.weixin.qq.com/s/s-BCi-vS6YKCaexlgNCy8g
-
-深入理解推荐系统：推荐系统中的attention机制
-
-https://zhuanlan.zhihu.com/p/128988454
-
-谷歌最新双塔DNN召回模型——应用于YouTube大规模视频推荐场景
-
-https://mp.weixin.qq.com/s/Bpw-q3wISbCAKHsuYQo0QQ
-
-阿里DMR:融合Match中协同过滤思想的深度排序模型
-
-https://mp.weixin.qq.com/s/xTjUPEt1-UMOp2W9a3SONQ
-
-腾讯QQ看点团队：用迁移学习架构解决短视频冷启推荐问题
-
-https://mp.weixin.qq.com/s/hPHETfj3qrZlvcJDFezSkA
-
-TensorFlow Ranking框架在海外推荐业务中的实践与应用

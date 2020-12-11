@@ -244,10 +244,6 @@ https://mp.weixin.qq.com/s/A_Sekyi1kxT1zYcQFBOkDA
 
 Quickprop介绍：一个加速梯度下降的学习方法（由于80/90年代的BP算法收敛缓慢，Scott Fahlman发明了一种名为Quickprop的学习算法。）
 
-## 随机初始化
+https://zhuanlan.zhihu.com/p/25202034
 
-神经网络的参数的**随机初始化**的目的是使对称失效。否则的话，所有对称结点的权重都一致，也就无法区分并学习了。
-
-随机初始化的方法有如下几种：
-
-1.Gaussian。用给定均值和方差的Gaussian分布设定随机值。这也是最常用的方法。
+道理我都懂，但是神经网络反向传播时的梯度到底怎么求？

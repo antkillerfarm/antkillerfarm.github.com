@@ -327,6 +327,10 @@ https://mp.weixin.qq.com/s/j_8_kSQ4BrYR-UzIEIEIbw
 
 美团开源Logan Web：前端日志在Web端的实现
 
+https://mp.weixin.qq.com/s/Cc-8BMoJGacPCeHnMs6Ekw
+
+滴滴开源小桔棱镜：一款专注移动端操作行为的利器
+
 ## A/B Testing
 
 A/B Testing通过分隔A和B两个版本，统计数据，进而看哪个版本的数据效果更好，对产品目标更有帮助。
@@ -350,47 +354,3 @@ Netflix推荐系统模型的快速线上评估方法——Interleaving
 https://mp.weixin.qq.com/s/gEET3mcI4VTLLg5ICQL2xQ
 
 如何通过A/B测试实现用户有效增长？
-
-https://mp.weixin.qq.com/s/zBUy_k2lyK0mqMMxm01w6w
-
-推荐系统评估
-
-https://mp.weixin.qq.com/s/3Lvuja4fDFSiqwyEgdYxlQ
-
-如何快速上手AB Testing？
-
-https://mp.weixin.qq.com/s/0H2KYI3OQbmqxFQBt6-JEA
-
-如何设计一个A/B test？
-
-https://mp.weixin.qq.com/s/-y16GrLSMafoSF7ZT-KCiQ
-
-A/B测试的设计和执行
-
-https://mp.weixin.qq.com/s/45JEBLXgC6gRjAudL5fMvg
-
-Netflix：使用A/B测试来找到最佳的插图
-
-https://mp.weixin.qq.com/s/v3Fvp6Hed7ZGoE8FGlGMvQ
-
-美团配送A/B评估体系建设与实践
-
-https://mp.weixin.qq.com/s/UBAQC4xB-aPI7B7JUKE95g
-
-携程是如何做AB实验分流的？
-
-https://mp.weixin.qq.com/s/MwXG85RdbNqvwkjauTfk2Q
-
-不只是A/B测试：多臂老虎机赌徒实验
-
-https://mp.weixin.qq.com/s/ayvBYilRX0BFEYkAa2EikQ
-
-A/B测试是好，但不适合创新
-
-https://mp.weixin.qq.com/s/85BBYJRbvpV9CqgYjW9Ayg
-
-推荐系统衡量：ABtest框架
-
-https://zhuanlan.zhihu.com/p/96382982
-
-A/B Test的统计原理和效果解读

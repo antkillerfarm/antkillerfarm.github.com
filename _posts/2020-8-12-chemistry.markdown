@@ -171,6 +171,10 @@ https://mp.weixin.qq.com/s/cUuw9CflfLrxXuSmNbra_A
 
 中学的元素周期表还藏着4000多种……（同位素）
 
+https://zhuanlan.zhihu.com/p/23284525
+
+靠谱地，咱聊聊田中耕一
+
 ## 食品工业
 
 

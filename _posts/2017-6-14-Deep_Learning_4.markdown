@@ -73,52 +73,6 @@ $$g(i,j)=\sum_{c,k,l}f(i+k,j+l)h(k,l)$$
 
 3.多通道卷积除了二维空间信息的卷积之外，还包括了**通道间信息**的卷积。这也是CNN中1x1卷积的意义之一。
 
-多通道卷积操作最终可以转化为矩阵运算，如下图所示：
-
-![](/images/article/conv.png)
-
-这种将卷积运算变为矩阵乘法运算的方法，一般被称为GEMM（General Matrix Matrix multiplication）。因为卷积变为矩阵这一步运算在Caffe中是用im2col函数实现的，因此，也有使用im2col来指代这类方法的。
-
-和GEMM类似的还有GEMV（General Matrix Vector multiplication）。
-
-参见：
-
-http://blog.csdn.net/u014114990/article/details/51125776
-
-多通道(比如RGB三通道)卷积过程
-
-https://www.zhihu.com/question/28385679
-
-在Caffe中如何计算卷积？
-
-https://buptldy.github.io/2016/10/01/2016-10-01-im2col/
-
-Implementing convolution as a matrix multiplication（中文blog）
-
-https://zhuanlan.zhihu.com/p/66958390
-
-通用矩阵乘（GEMM）优化与卷积计算
-
-https://mp.weixin.qq.com/s/Q1Ovl1LrT5Y6amVqlYpdbA
-
-基于GEMM实现的CNN底层算法被改？Google提出全新间接卷积算法
-
-https://jackwish.net/2019/gemm-optimization.html
-
-通用矩阵乘（GEMM）优化算法
-
-https://mp.weixin.qq.com/s/lqVsMDutBwsjiiM_NkGsAg
-
-详解Im2Col+Pack+Sgemm策略更好的优化卷积运算
-
-https://mp.weixin.qq.com/s/EgC2puTsIfEk1uvgWlHXZA
-
-基于how-to-optimize-gemm初探矩阵乘法优化
-
-https://mp.weixin.qq.com/s/w0YCm8TEPxFg0CR6g4A28w
-
-再探矩阵乘法优化
-
 ## CNN的反向传播算法
 
 由于卷积和池化两层，不是一般的神经网络结构。因此CNN的反向传播算法实际上也是很有技巧的。

@@ -1,11 +1,71 @@
 ---
 layout: post
-title: 生物（2）
+title: DNA鉴定, 生物（二）
 category: Nature 
 ---
 
 * toc
 {:toc}
+
+# DNA鉴定
+
+老孔家家族史的绝对：
+
+上联：昨降元蒙，今降满清，何足道哉。方明白：善劝进家有余庆。
+
+下联：孔曰成仁，孟曰取义，全都忘了。只记得：识时务者为俊杰。
+
+横批：世修降表
+
+孔家人最恨的一句话是：外孔刘，内孔张。
+
+外孔，是五代残唐时期，孔府有个叫刘末家丁把孔家第四十二代长孙孔光嗣一门全都杀死，夺其家产，取代其位，主孔子祀，俨然以孔子嫡裔自居，暴露后被诛杀，孔末虽诛，他的后人依然存在并仍然姓孔，为了区别这一点，后人便把孔末的后代称为外孔。
+
+内孔，刘末诛杀孔光嗣一门时候号称孔光嗣还有一个九个月的儿子孔仁玉，随母亲住在张家村的外祖母家时，就派人追杀到此，以斩草除根、永绝后患唐明宗长兴元年（公元930年）张氏上书朝廷称孔仁玉的外祖母张姥姥为了保住外孙，就把自己的孙子送出来给追兵杀掉，保住了孔氏血脉，孔仁玉被加封为“文宣公”。其子孙被称为内孔。但之后一直有传闻为孔仁玉当时已被交出，而被册封的其实是张家子孙。
+
+内孔的基因是c3，外孔是q1a1，c3是蒙古基因，q是中东基因。c3只能追溯到元，q只能追溯到唐，但是c3和q1a1都不是汉族传统基因，也就是可能都不是孔子家族。
+
+https://www.zhihu.com/question/312130023
+
+历代“衍圣公”都做过什么坏事？
+
+----
+
+https://mp.weixin.qq.com/s/8QEmodonoo_rc1m85kmMOQ
+
+追溯祖先，寻找罪犯……DNA能告诉我们多少信息？
+
+https://mp.weixin.qq.com/s/W3H4PQVhPWwdb-Doywe5vg
+
+28年前的“南医大”杀人凶手，是如何在三天内被发现的？
+
+https://www.f793.club/blog/liusheng1/
+
+关于Y141213是中山靖王刘胜的探讨
+
+https://mp.weixin.qq.com/s/_eLI8hfKhxbL8Qn9350MZw
+
+从28年悬案告破说起：Y染色体的倔强进化史
+
+https://mp.weixin.qq.com/s/Sb8ryvLbHlan8AB6iAnhpw
+
+盖棺未定论的理查三世（上）
+
+https://mp.weixin.qq.com/s/mTbnWFJkx7xbbVUgM-qt9Q
+
+盖棺未定论的理查三世（下）
+
+https://mp.weixin.qq.com/s/-9nmfhYlPtCs2Fx74Yv6Xw
+
+考古学家：《清平乐》的梁怀吉小哥哥，可能是骨质疏松的…大高个
+
+https://mp.weixin.qq.com/s/DVtPA14nXgZPU-GBOiSdDg
+
+它是国家一级保护动物，在海底默默记录着古代的天气（砗磲）
+
+https://mp.weixin.qq.com/s/RMBG1dnmKD6p1itU1OKXvA
+
+克里彭杀妻案，百年前的一场谋杀
 
 # 生物
 
@@ -256,3 +316,7 @@ https://www.zhihu.com/question/424503238
 https://www.sohu.com/a/233954413_157078
 
 套路多的何止三文鱼 你买的“鳕鱼”也没几条是真的
+
+https://mp.weixin.qq.com/s/Z0-6dIORQYJkfR8sZsi2KA
+
+菊石的时代：满城尽带黄金甲
