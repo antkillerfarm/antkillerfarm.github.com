@@ -250,16 +250,6 @@ ps默认只显示当前用户的进程。这里是全显示的示例。
 
 将文件从gbk编码转为utf-8编码。
 
-`mount -t nfs 192.168.0.1:/tmp /mnt/nfs`
-
-挂载NFS。挂载点（即上例中的/mnt/nfs）必须事先创建。
-
-`mount: /bak: bad option; for several filesystems (e.g. nfs, cifs) you might need a /sbin/mount.<type> helper program`
-
-出现上面的问题，需要：
-
-`sudo apt install nfs-common libnfs-utils`
-
 `pgrep -u hchen`
 
 按照条件搜索进程ID。

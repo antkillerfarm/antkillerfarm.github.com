@@ -232,6 +232,40 @@ https://www.cnblogs.com/schips/p/10141278.html
 
 # Linux参考资源+
 
+## NFS
+
+### 客户端
+
+`mount -t nfs 192.168.0.1:/tmp /mnt/nfs`
+
+挂载NFS。挂载点（即上例中的/mnt/nfs）必须事先创建。
+
+`mount: /bak: bad option; for several filesystems (e.g. nfs, cifs) you might need a /sbin/mount.<type> helper program`
+
+出现上面的问题，需要：
+
+`sudo apt install nfs-common libnfs-utils`
+
+### 服务器端
+
+```bash
+sudo apt install nfs-server
+cd /
+sudo mkdir nfs-server
+sudo chmod 777 nfs-server
+sudo chmod 666 /etc/exports
+echo "/nfs-server *(rw,sync,no_root_squash)">>/etc/exports
+sudo service nfs-server restart
+```
+
+参考：
+
+https://www.cnblogs.com/tu13/p/ubuntu_nfs.html
+
+ubuntu18.04搭建NFS服务器
+
+## 参考
+
 https://mp.weixin.qq.com/s/QB-IHiCIWEu3bALm2Dp46Q
 
 操作系统课程知识结构
@@ -332,54 +366,6 @@ https://mp.weixin.qq.com/s/2QAm6F109LV2koC64xIpqA
 
 简直不要太硬了！一文带你彻底理解文件系统
 
-https://mp.weixin.qq.com/s/0jR4Y3sT8RRW7FYEOmBsXg
-
-一口气搞懂文件系统，就靠这25张图了
-
-https://mp.weixin.qq.com/s/Y_GYtL9m3zmY-5VZMbCfWg
-
-Linux中用户的简介与管理
-
-https://linux.cn/article-8290-1.html
-
-漫画赏析：Linux内核到底长啥样
-
-https://mp.weixin.qq.com/s/IucIsbJPo4eUUopV8xNN9w
-
-图解Linux程序的链接原理
-
-https://mp.weixin.qq.com/s/zBtdhjAOjwcJbGluccwOlA
-
-我和面试官之间关于操作系统的一场对弈！写了很久，希望对你有帮助！
-
-https://mp.weixin.qq.com/s/3Pp7wkDO6Rnxb5aZP0sacw
-
-一文了解操作系统I/O
-
-https://mp.weixin.qq.com/s/xM8uvYbX6VY8MVZrYkvCUg
-
-链接选项rpath的原理和应用
-
-https://juejin.im/post/5e8844996fb9a03c6675b9d6
-
-我们按下电脑开机键的背后发生了什么？
-
-https://mp.weixin.qq.com/s/DCqkgksOHa81EI-I0oaZvg
-
-Linux下9种优秀的代码比对工具推荐
-
-https://zhuanlan.zhihu.com/p/162366167
-
-Linux下C++so热更新
-
-https://mp.weixin.qq.com/s/rH7WqriomFTA55ecacV8Gw
-
-键盘敲入A字母时，操作系统期间发生了什么...
-
-https://mp.weixin.qq.com/s/vDlWCVK8knxPf5HoqmtZyQ
-
-从创建进程到进入main函数，发生了什么？
-
 ----
 
 https://mp.weixin.qq.com/s/WZyuTtEfaTFLnCfvhOrp7g
@@ -413,6 +399,8 @@ https://mp.weixin.qq.com/s/T_z2_gsYfs6A-XjVTVV_uQ
 https://mp.weixin.qq.com/s/h75n7sHnrmoLJ4DVAW5AUQ
 
 说说无锁(Lock-Free)编程那些事（下）
+
+----
 
 https://mp.weixin.qq.com/s/snQ3T86usv4rXz0MMQvFfQ
 

@@ -354,33 +354,3 @@ https://mp.weixin.qq.com/s/07tHvJHJNYmRDw-S0NQDOA
 https://mp.weixin.qq.com/s/At1nXEk7t6z5az9JoZu2pA
 
 关于数据增强在自动驾驶中的探讨
-
-# Linux参考资源+++
-
-https://mp.weixin.qq.com/s/4ZdnacKuqkpWTso6P1Rmjg
-
-如何调试多线程程序
-
-https://mp.weixin.qq.com/s/8DNyicMcycUL3RRAiKAz8g
-
-Linux进程必知必会
-
-https://mp.weixin.qq.com/s/EkScI-WCdjLz1g2ec6nkhQ
-
-理解格式化原理
-
-https://mp.weixin.qq.com/s/Sqpp82FhZEC8HkeVHzk9QA
-
-5万字、97张图总结操作系统核心知识点
-
-https://mp.weixin.qq.com/s/SYlaIkuXBqFrbZ-gDMYqtA
-
-高并发高性能服务器是如何实现的
-
-https://mp.weixin.qq.com/s/73eaj0qvhUFWGbDA4H2MNQ
-
-读取文件时，程序经历了什么？
-
-https://mp.weixin.qq.com/s/Y8YZzkuzVr_ti6skHpd1NA
-
-Linux网络包接收过程的监控与调优
