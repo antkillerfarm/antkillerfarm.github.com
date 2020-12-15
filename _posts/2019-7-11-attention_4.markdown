@@ -342,3 +342,7 @@ https://mp.weixin.qq.com/s/EozsQNQ2YrczRg18hTZBhA
 https://mp.weixin.qq.com/s/VfytCWa-h8CmUZW1RWAdnQ
 
 从XLNet的多流机制看最新预训练模型的研究进展
+
+https://mp.weixin.qq.com/s/LurjTAjq4bVxDxIefSxcwg
+
+XLNET：换一个思路做预训练，效果杠杠滴

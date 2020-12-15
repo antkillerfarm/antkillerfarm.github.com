@@ -264,6 +264,24 @@ https://www.cnblogs.com/tu13/p/ubuntu_nfs.html
 
 ubuntu18.04搭建NFS服务器
 
+# OpenGrok
+
+OpenGrok是一个阅读源码的Web系统。
+
+官网：
+
+http://oracle.github.io/opengrok/
+
+代码：
+
+https://github.com/oracle/opengrok
+
+参考：
+
+http://mazhuang.org/2016/12/14/rtfsc-with-opengrok/
+
+搭建大型源码阅读环境——使用OpenGrok
+
 ## 参考
 
 https://mp.weixin.qq.com/s/QB-IHiCIWEu3bALm2Dp46Q
@@ -353,18 +371,6 @@ http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html
 https://mp.weixin.qq.com/s/zVi45pZka_kPpKIoNXNVBA
 
 当初我要是这么学习“进程和线程”就好了
-
-https://mp.weixin.qq.com/s/I7C7cXFgxO7RO0Wpjjj3xQ
-
-一篇文章带你“重新认识”线程上下文切换怎么玩儿
-
-https://www.cnblogs.com/liqiuhao/p/9450093.html
-
-关于TOCTTOU攻击的简介
-
-https://mp.weixin.qq.com/s/2QAm6F109LV2koC64xIpqA
-
-简直不要太硬了！一文带你彻底理解文件系统
 
 ----
 

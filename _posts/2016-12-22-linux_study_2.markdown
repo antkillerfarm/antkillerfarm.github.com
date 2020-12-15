@@ -328,6 +328,8 @@ DosBox是Linux平台玩DOS老游戏的法宝。
 
 http://www.brendangregg.com/linuxperf.html
 
+![](/images/img4/Linux-storage-stack-diagram_v4.10.png)
+
 参考：
 
 https://mp.weixin.qq.com/s/-iCuxQjSghtDGaPMqaDSgQ
@@ -465,21 +467,3 @@ wget和curl是最常见的下载工具。这里推荐使用axel，该工具支�
 http://os.51cto.com/art/201605/511423.htm
 
 Linux用户宝典：用于下载的十大命令行工具
-
-# OpenGrok
-
-OpenGrok是一个阅读源码的Web系统。
-
-官网：
-
-http://oracle.github.io/opengrok/
-
-代码：
-
-https://github.com/oracle/opengrok
-
-参考：
-
-http://mazhuang.org/2016/12/14/rtfsc-with-opengrok/
-
-搭建大型源码阅读环境——使用OpenGrok

@@ -336,6 +336,10 @@ https://mp.weixin.qq.com/s/tvn2SKXyrZZRGDF6-Myx3A
 
 Vim激荡30年发展史
 
+https://mp.weixin.qq.com/s/c9KAOJ6Z_5zjwI7C3OMq4w
+
+5分钟学会Vim分屏操作方方面面
+
 # IDE
 
 http://pypl.github.io/IDE.html
