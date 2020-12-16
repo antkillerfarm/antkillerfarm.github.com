@@ -67,60 +67,6 @@ http://www.fuzihao.org/blog/2016/02/10/C-%E5%AE%9E%E7%8E%B0%E6%83%B0%E6%80%A7%E6
 
 C++实现惰性求值
 
-# gcc
-
-## gcc和ld的差异
-
-理论上gcc做链接和ld做链接，应该是一样的效果，然而实际情况要复杂一些。有的厂商的工具链会给gcc添加一些环境变量之类的私货，所以两者的行为就变的很有差异了。遇到这种问题，互换是一种好的解决问题的思路。
-
-## 链接顺序
-
-有的链接器对链接顺序有要求，一般按照c代码、自定义库、标准库的顺序来链接，也就是越基础底层的库，越在后面。（这个顺序正好和声明的顺序相反）
-
-`gcc -c ./sparse_matrix.c -o sparse_matrix.o -luserlib -lm`
-
-但是如果有一系列很底层的库，他们太底层了，以至于会出现相互依赖的情况(circular dependence)，那gcc提供了一个option很好的解决了这个情况：
-
-`-Wl,--start-group -lmy_lib -lyour_lib -lhis_lib -Wl,--end-group`
-
-再比如下面的例子：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/linux_so
-
-`gcc -o main_link main_link.c -L. -lhello`
-
-这条命令中的main_link.c如果放到`-lhello`之后就会出问题。也考虑使用`--start-group`和`--end-group`之类的链接选项解决链接顺序问题。
-
-参考：
-
-https://stackoverflow.com/questions/27475977/c-undefined-reference-to-sqrt-even-with-lm
-
-C - undefined reference to “sqrt” even with '-lm'
-
-## -Werror
-
-有的时候会遇到`-Werror=XXXX`这样的编译错误，如果确实不想改代码的话，可以用`-Wno-error=XXXX`或者`-Wno-XXXX`来回避之。
-
-## nm和readelf
-
-这两个命令都可以查看可执行文件的符号表。
-
-示例：
-
-`nm XXX.so`
-
-`readelf -h XXX.so`
-
-这两个命令虽然很早就在gcc工具链中了，但是早期版本只能查看本工具链编译的可执行文件。现在的话，主流的CPU指令集都可以支持了，不必采用`arm-readelf`这样的特殊前缀版本了。
-
-## 切换gcc版本
-
-`sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 40`
-
-`sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 50`
-
-`sudo update-alternatives --config gcc`
-
 # 左值和右值
 
 **左值**是可以放在赋值号左边可以被赋值的值；左值必须要在内存中有实体；
@@ -271,3 +217,69 @@ cout << sp1.use_count() << " " << sp2.use_count() << " "
 ```
 
 sp1,sp2,sp3是相互关联的共享指针，共同控制所指内存的生存期，sp4虽然指向同样的内存，却是与sp1,sp2,sp3独立的，sp4按自己的引用计数来关联内存的释放。
+
+```cpp
+auto p = std::make_unique<XXX>();
+void f(XXX*);
+f(p); // error
+f(p.get()); // OK
+```
+
+虽然，类似`p->YYY()`的用法和普通指针一致，但是作为f函数参数的时候，就不行了。
+
+----
+
+参考：
+
+https://mp.weixin.qq.com/s/32aeGOPaySjTmyKcjFKgYA
+
+窥见C++11智能指针
+
+https://www.cnblogs.com/wangkeqin/p/9351191.html
+
+C++内存管理之shared_ptr
+
+https://blog.csdn.net/River_Lethe/article/details/78734879
+
+shared_ptr的使用和陷阱
+
+# decltype
+
+和auto的用法类似，auto不仅要推导类型，还要定义变量，而decltype则只进行类型推导。
+
+```cpp
+int add(int x,int y){
+    return x+y;
+}
+int main(){
+    double i=0;
+    decltype(i) a; // double
+    decltype(add()) b; //int 注意括号。不带括号就是函数指针了。
+}
+```
+
+参考：
+
+https://www.cnblogs.com/npbool/p/3433360.html
+
+C++11初探：类型推导，auto和decltype
+
+# 类型转换
+
+**static_cast**：基本等同于C语言的强制类型转换，只有很小的差异。
+
+**dynamic_cast**：主要用于类层次间的上行转换和下行转换。
+
+**const_cast**：用于修改类型的const或volatile属性。
+
+**reinterpret_cast**：它可以把一个指针转换成一个整数，也可以把一个整数转换成一个指针。
+
+上面4个算是C++的基本类型变换。除此之外还有一些变种。
+
+- 和shared_ptr配套的类型变换：
+
+**static_pointer_cast**：Static cast of shared_ptr
+
+**dynamic_pointer_cast**：Dynamic cast of shared_ptr
+
+**const_pointer_cast**：Const cast of shared_ptr

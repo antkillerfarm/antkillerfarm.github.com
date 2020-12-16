@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十二）——深度ISP, Spiking Neuron Networks
+title:  深度学习（四十二）——深度ISP, Spiking Neuron Networks, 第四范式
 category: DL 
 ---
 
@@ -299,32 +299,6 @@ https://mp.weixin.qq.com/s/yIMaptbjV71cdC-GauGtDg
 
 先拍照后对焦，浅析基于深度估计的景深编辑与背景虚化
 
-# LSM
-
-liquid state machine (LSM)
-
-http://www.docin.com/p-390935406.html
-
-基于液体状态机的脑运动神经系统的建模研究
-
-# DNC
-
-https://zhuanlan.zhihu.com/p/27773709
-
-浅析至强RNN可微分神经计算机(DNC)
-
-https://zhuanlan.zhihu.com/p/27964341
-
-浅析至强RNN可微分神经计算机(DNC)-2
-
-https://zhuanlan.zhihu.com/p/28209628
-
-DNC-3滚动分类的模式识别
-
-https://zhuanlan.zhihu.com/p/28433712
-
-DNC4广义线性回归
-
 # Spiking Neuron Networks
 
 除了基于BP算法的NN之外，Spiking Neuron Networks也是一大类NN。Spiking NN和人脑结构更相似，功耗也更小，但是相关训练和数据量化的算法尚不成熟，属于潜力股。
@@ -387,32 +361,24 @@ https://blog.csdn.net/u011853479/article/details/61414913
 
 脉冲神经网络的五脏六腑
 
-# 图像超分辨率进阶+
+# 第四范式
 
-https://zhuanlan.zhihu.com/p/67613641
+第一范式，是指以实验为基础的科学研究模式。例如以伽利略为代表的文艺复兴时期的科学发展初级阶段。
 
-基于多级神经纹理迁移的图像超分辨方法(Adobe Research)
+第二范式，即理论研究为基础的科学研究模式。在这个阶段，科学家们会将无法用实验模拟的科学原理用模型简化，去掉一些复杂的因素，只留下关键因素，然后通过演算得到结论。例如，牛顿三大定律和爱因斯坦相对论。
 
-https://mp.weixin.qq.com/s/IStOD22WgZ6EBFCvIHkNSg
+第三范式，即利用电子计算机对科学实验进行模拟仿真的模式。
 
-图像超分辨率网络：RCAN
+第四范式，数据密集型科学发现（Data-Intensive Scientific Discovery）。由James Gray于2007年提出。
 
-https://mp.weixin.qq.com/s/4LIq3kZaXgaoEEyb8TQvwg
+>James Gray，1944～2007，美国数据库专家。UCB博士（1969）。图灵奖得主（1998）。先后供职于IBM、Tandem Computers、DEC、MS等公司。提出了ACID、Two-tier transaction commit semantics、OLAP等概念。2007年独自驾船出海后失踪。
 
-图像超分辨率重建--AI研究
+参考：
 
-https://mp.weixin.qq.com/s/ETGPXVDGRHOq0W-ef_q2_A
+https://mp.weixin.qq.com/s/5U4iH1n3kqUCAodUVKGTNQ
 
-RankSRGAN:排序学习+GAN用于超分辨率
+从经验到理论、从数据到网络——脑科学研究的四次范式转移
 
-https://zhuanlan.zhihu.com/p/140507840
+https://zhuanlan.zhihu.com/p/30608976
 
-图像超分：USRNet
-
-https://mp.weixin.qq.com/s/sju4SYFxzDkJevk3mi68Rw
-
-图像超分辨率网络：EDSR
-
-https://mp.weixin.qq.com/s/uZQK0oQbV7wm0WVz_QxVQg
-
-DRN：用于单图像超分辨率的对偶回归网络
+第四范式：大数据对于科研的意义

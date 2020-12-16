@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  TensorFlow（五）, TVM, LLVM, gcc
+title:  TensorFlow（五）, TVM, LLVM, ANTLR
 category: AI 
 ---
 
@@ -409,24 +409,28 @@ http://www.aosabook.org/en/llvm.html
 
 >顺便提一下，这个网站本身就是个宝库。
 
-## 框架
+# ANTLR
 
-# gcc
+ANTLR—Another Tool for Language Recognition，其前身是PCCTS，它为包括Java，C++，C#,python在内的语言提供了一个通过语法描述来自动构造自定义语言的识别器（recognizer），编译器（parser）和解释器（translator）的框架。
 
-GNU C Compiler在1987年3月22日发布了第一个beta版本，Richard Stallman原本想利用Free University Compiler Kit，但作者Andy Tanenbaum不想免费提供，RMS因此决定GNU的首个项目将是编译器。GCC是基于一个现有的Pastel编译器，使其扩展支持编译C，后用C进行重写。
+官网：
 
-代码：
+http://www.antlr.org/
 
-`git clone git://gcc.gnu.org/git/gcc.git`
+参考：
 
-## 资料
+http://yuzhouwan.com/posts/55501/
 
-http://www.hellogcc.org/
+Antlr
 
-一个有关GCC和GDB的博客。其中的大牛teawater（朱辉）开发了一个Linux动态跟踪器KGTP，他的blog：
+https://www.ibm.com/developerworks/cn/java/j-lo-antlr/index.html
 
-http://teawater.github.io/
+使用Antlr开发领域语言
 
-https://www.cnblogs.com/kuoAT/p/9590606.html
+# MPS
 
-深入分析GCC（王亚刚 著）
+MPS是jetbrains推出的用于构建DSL的工具。
+
+官网：
+
+https://www.jetbrains.com/mps/

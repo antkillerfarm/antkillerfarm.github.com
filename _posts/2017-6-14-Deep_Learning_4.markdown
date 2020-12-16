@@ -211,6 +211,36 @@ https://mp.weixin.qq.com/s/zvPNuP_LT7pWIgoxzfeUWw
 
 综述卷积神经网络：从基础技术到研究前景
 
+# 图像超分辨率进阶+
+
+https://zhuanlan.zhihu.com/p/67613641
+
+基于多级神经纹理迁移的图像超分辨方法(Adobe Research)
+
+https://mp.weixin.qq.com/s/IStOD22WgZ6EBFCvIHkNSg
+
+图像超分辨率网络：RCAN
+
+https://mp.weixin.qq.com/s/4LIq3kZaXgaoEEyb8TQvwg
+
+图像超分辨率重建--AI研究
+
+https://mp.weixin.qq.com/s/ETGPXVDGRHOq0W-ef_q2_A
+
+RankSRGAN:排序学习+GAN用于超分辨率
+
+https://zhuanlan.zhihu.com/p/140507840
+
+图像超分：USRNet
+
+https://mp.weixin.qq.com/s/sju4SYFxzDkJevk3mi68Rw
+
+图像超分辨率网络：EDSR
+
+https://mp.weixin.qq.com/s/uZQK0oQbV7wm0WVz_QxVQg
+
+DRN：用于单图像超分辨率的对偶回归网络
+
 # AutoEncoder
 
 ## Basic AE

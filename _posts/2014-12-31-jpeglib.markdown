@@ -49,6 +49,8 @@ JpegLib库源代码的组成
 
 http://blog.csdn.net/axlrosek/archive/2007/03/29/1545496.aspx
 
+ijg jpeg函数库：文件列表
+
 VC:不同版本的VC、EVC都差不多，参照文献A的步骤修改相关文件，然后新建一个空工程，然后打开JpegLib中的makefile.vc文件,将2）和3）、5）、7）中的文件添加到工程中。将生成文件的类型定为lib就行了。此外，还需要针对调用的情况选择适当的运行时库，否则可能会出LNK2005错误。
 
 ## 3.使用JpegLib库

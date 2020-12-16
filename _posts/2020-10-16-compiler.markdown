@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  编译原理, lex&yacc, ANTLR
+title:  编译原理, lex&yacc, gcc
 category: technology 
 ---
 
@@ -248,122 +248,80 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/mylex
 
 这里使用的是lex/yacc在linux上现代版本——flex/bison。
 
-# ANTLR
+# gcc
 
-ANTLR—Another Tool for Language Recognition，其前身是PCCTS，它为包括Java，C++，C#,python在内的语言提供了一个通过语法描述来自动构造自定义语言的识别器（recognizer），编译器（parser）和解释器（translator）的框架。
+GNU C Compiler在1987年3月22日发布了第一个beta版本，Richard Stallman原本想利用Free University Compiler Kit，但作者Andy Tanenbaum不想免费提供，RMS因此决定GNU的首个项目将是编译器。GCC是基于一个现有的Pastel编译器，使其扩展支持编译C，后用C进行重写。
 
-官网：
+代码：
 
-http://www.antlr.org/
+`git clone git://gcc.gnu.org/git/gcc.git`
+
+## 资料
+
+http://www.hellogcc.org/
+
+一个有关GCC和GDB的博客。其中的大牛teawater（朱辉）开发了一个Linux动态跟踪器KGTP，他的blog：
+
+http://teawater.github.io/
+
+https://www.cnblogs.com/kuoAT/p/9590606.html
+
+深入分析GCC（王亚刚 著）
+
+## gcc和ld的差异
+
+理论上gcc做链接和ld做链接，应该是一样的效果，然而实际情况要复杂一些。有的厂商的工具链会给gcc添加一些环境变量之类的私货，所以两者的行为就变的很有差异了。遇到这种问题，互换是一种好的解决问题的思路。
+
+## 链接顺序
+
+有的链接器对链接顺序有要求，一般按照c代码、自定义库、标准库的顺序来链接，也就是越基础底层的库，越在后面。（这个顺序正好和声明的顺序相反）
+
+`gcc -c ./sparse_matrix.c -o sparse_matrix.o -luserlib -lm`
+
+但是如果有一系列很底层的库，他们太底层了，以至于会出现相互依赖的情况(circular dependence)，那gcc提供了一个option很好的解决了这个情况：
+
+`-Wl,--start-group -lmy_lib -lyour_lib -lhis_lib -Wl,--end-group`
+
+再比如下面的例子：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/linux_so
+
+`gcc -o main_link main_link.c -L. -lhello`
+
+这条命令中的main_link.c如果放到`-lhello`之后就会出问题。也考虑使用`--start-group`和`--end-group`之类的链接选项解决链接顺序问题。
 
 参考：
 
-http://yuzhouwan.com/posts/55501/
+https://stackoverflow.com/questions/27475977/c-undefined-reference-to-sqrt-even-with-lm
 
-Antlr
+C - undefined reference to “sqrt” even with '-lm'
 
-https://www.ibm.com/developerworks/cn/java/j-lo-antlr/index.html
+## -Werror
 
-使用Antlr开发领域语言
+有的时候会遇到`-Werror=XXXX`这样的编译错误，如果确实不想改代码的话，可以用`-Wno-error=XXXX`或者`-Wno-XXXX`来回避之。
 
-# MPS
+## nm和readelf
 
-MPS是jetbrains推出的用于构建DSL的工具。
+这两个命令都可以查看可执行文件的符号表。
 
-官网：
+示例：
 
-https://www.jetbrains.com/mps/
+`nm XXX.so`
 
-# Linux参考资源+++
+`readelf -h XXX.so`
 
-https://mp.weixin.qq.com/s/I7C7cXFgxO7RO0Wpjjj3xQ
+这两个命令虽然很早就在gcc工具链中了，但是早期版本只能查看本工具链编译的可执行文件。现在的话，主流的CPU指令集都可以支持了，不必采用`arm-readelf`这样的特殊前缀版本了。
 
-一篇文章带你“重新认识”线程上下文切换怎么玩儿
+## 切换gcc版本
 
-https://www.cnblogs.com/liqiuhao/p/9450093.html
+`sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 40`
 
-关于TOCTTOU攻击的简介
+`sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 50`
 
-https://mp.weixin.qq.com/s/2QAm6F109LV2koC64xIpqA
+`sudo update-alternatives --config gcc`
 
-简直不要太硬了！一文带你彻底理解文件系统
+## 编译加速
 
-https://mp.weixin.qq.com/s/0jR4Y3sT8RRW7FYEOmBsXg
+https://mp.weixin.qq.com/s/yITNjo_UQi8-OKQNOfGrPw
 
-一口气搞懂文件系统，就靠这25张图了
-
-https://mp.weixin.qq.com/s/Y_GYtL9m3zmY-5VZMbCfWg
-
-Linux中用户的简介与管理
-
-https://linux.cn/article-8290-1.html
-
-漫画赏析：Linux内核到底长啥样
-
-https://mp.weixin.qq.com/s/IucIsbJPo4eUUopV8xNN9w
-
-图解Linux程序的链接原理
-
-https://mp.weixin.qq.com/s/zBtdhjAOjwcJbGluccwOlA
-
-我和面试官之间关于操作系统的一场对弈！写了很久，希望对你有帮助！
-
-https://mp.weixin.qq.com/s/3Pp7wkDO6Rnxb5aZP0sacw
-
-一文了解操作系统I/O
-
-https://mp.weixin.qq.com/s/xM8uvYbX6VY8MVZrYkvCUg
-
-链接选项rpath的原理和应用
-
-https://juejin.im/post/5e8844996fb9a03c6675b9d6
-
-我们按下电脑开机键的背后发生了什么？
-
-https://mp.weixin.qq.com/s/DCqkgksOHa81EI-I0oaZvg
-
-Linux下9种优秀的代码比对工具推荐
-
-https://zhuanlan.zhihu.com/p/162366167
-
-Linux下C++so热更新
-
-https://mp.weixin.qq.com/s/rH7WqriomFTA55ecacV8Gw
-
-键盘敲入A字母时，操作系统期间发生了什么...
-
-https://mp.weixin.qq.com/s/vDlWCVK8knxPf5HoqmtZyQ
-
-从创建进程到进入main函数，发生了什么？
-
-https://mp.weixin.qq.com/s/4ZdnacKuqkpWTso6P1Rmjg
-
-如何调试多线程程序
-
-https://mp.weixin.qq.com/s/8DNyicMcycUL3RRAiKAz8g
-
-Linux进程必知必会
-
-https://mp.weixin.qq.com/s/EkScI-WCdjLz1g2ec6nkhQ
-
-理解格式化原理
-
-https://mp.weixin.qq.com/s/Sqpp82FhZEC8HkeVHzk9QA
-
-5万字、97张图总结操作系统核心知识点
-
-https://mp.weixin.qq.com/s/SYlaIkuXBqFrbZ-gDMYqtA
-
-高并发高性能服务器是如何实现的
-
-https://mp.weixin.qq.com/s/73eaj0qvhUFWGbDA4H2MNQ
-
-读取文件时，程序经历了什么？
-
-https://mp.weixin.qq.com/s/Y8YZzkuzVr_ti6skHpd1NA
-
-Linux网络包接收过程的监控与调优
-
-https://mp.weixin.qq.com/s/ESLO1RH6Q8udwI13Z2Pz_w
-
-详解linux io flush
+C++服务编译耗时优化原理及实践
