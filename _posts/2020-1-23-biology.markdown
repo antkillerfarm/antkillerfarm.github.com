@@ -39,6 +39,16 @@ https://mp.weixin.qq.com/s/f158ZXGB2xmGIlwM9IG6LQ
 
 ----
 
+物种(species)是生物分类学的基本单位。物种是一群可以互相交配并繁衍能育后代的个体，与其他相似群体在生殖上相互隔离，并在自然界占据一定的生态位。
+
+亚种(Subspecies)是次于种的一个分类等级，是国际动物命名法规所承认的最低分类等级。亚种是物种内占据不同地理分布区(或有不同宿主)、生殖隔离不完全，并具有一定形态差异的生物类群。同种生物不同亚种之间可以交配繁殖产生可育后代。
+
+https://view.inews.qq.com/a/20201102A028RQ00
+
+狗与狼其实是同一种动物
+
+----
+
 ![](/images/img3/Ring_species.gif)
 
 所谓的环形种（ring species）：凡是地域相邻的两个群体之间都可以杂交，而不相邻的则不能杂交，而且有一对称为“终点”的不能杂交的这么一系列群体/物种。
@@ -214,31 +224,3 @@ https://mp.weixin.qq.com/s/CxogbCwQ-UP4MpcYEqfZ5g
 疟原虫是一种丢掉了光合作用能力的囊泡虫。其实它体内的叶绿体还在，只不过没有叶绿素了，取而代之的是一种叫做顶质体的结构，在它的生理过程中发挥着重要作用。
 
 >Lynn Margulis，1938～2011，女，美国生物学家。University of Chicago本科（1957）（少年班？）、硕士（1960）+UCB博士（1965）。先后执教于Brandeis University、Boston University和University of Massachusetts Amherst。美国科学院、美国艺术科学院院士。美国国家科学奖获得者（1999）。
-
-内共生起源学说(endosymbiotic theory)由Lynn Margulis于1970年出版的《真核细胞的起源》一书中正式提出。她认为，好氧细菌被变形虫状的原始真核生物吞噬后、经过长期共生能成为线粒体，蓝藻被吞噬后经过共生能变成叶绿体，螺旋体被吞噬后经过共生能变成原始鞭毛。
-
-谁能想到到现在关于藻类的系统分类研究和细胞研究，已经彻底刷新了我们的三观。藻类早已不是当年那个混沌模糊被一股脑儿塞到一起去的类群了。有些藻类变成了绿色陆生植物的亲戚，有些藻类变成了疟原虫的亲戚，有些藻类变成了原来属于真菌的水霉的亲戚。
-
-![](/images/img3/earth_history.jpg)
-
-参考：
-
-https://mp.weixin.qq.com/s/7iyHH6Fe_rIg4DEObfujlQ
-
-海带竟然不算植物！这得从演化开始说
-
-https://www.zhihu.com/question/59213363
-
-什么是藻类的第二次内共生？
-
-https://www.zhihu.com/question/21910606
-
-地球上最初的生命为什么有的进化成了植物有的进化成了动物
-
-https://mp.weixin.qq.com/s/F36OuorBaKMWfZhd_tPXKQ
-
-人真是猴子变的？……那现在的猴子咋没变成人？
-
-https://mp.weixin.qq.com/s/3UngFEQnD6kGB8Y5UB1UBA
-
-生物学中最重要的概念，依旧是个谜（什么是物种?）

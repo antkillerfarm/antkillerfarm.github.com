@@ -354,3 +354,21 @@ https://mp.weixin.qq.com/s/07tHvJHJNYmRDw-S0NQDOA
 https://mp.weixin.qq.com/s/At1nXEk7t6z5az9JoZu2pA
 
 关于数据增强在自动驾驶中的探讨
+
+# 生物+
+
+https://mp.weixin.qq.com/s/ERxHmUzeowA-0VFHxgmiIQ
+
+苍蝇还有不吃粑粑的？嗯，有！还特萌！
+
+https://www.zhihu.com/question/424503238
+
+呼吸道和消化道在咽喉部共用一个通道有什么生理意义？
+
+https://www.sohu.com/a/233954413_157078
+
+套路多的何止三文鱼 你买的“鳕鱼”也没几条是真的
+
+https://mp.weixin.qq.com/s/Z0-6dIORQYJkfR8sZsi2KA
+
+菊石的时代：满城尽带黄金甲

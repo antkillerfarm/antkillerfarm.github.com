@@ -9,7 +9,37 @@ category: Nature
 
 # 生物（续）
 
-Carl Edward Sagan，1934～1996，美国天文学家、天体物理学家、宇宙学家、科幻作家，和非常成功的天文学、天体物理学等自然科学方面的科普作家。行星学会的成立者。
+内共生起源学说(endosymbiotic theory)由Lynn Margulis于1970年出版的《真核细胞的起源》一书中正式提出。她认为，好氧细菌被变形虫状的原始真核生物吞噬后、经过长期共生能成为线粒体，蓝藻被吞噬后经过共生能变成叶绿体，螺旋体被吞噬后经过共生能变成原始鞭毛。
+
+谁能想到到现在关于藻类的系统分类研究和细胞研究，已经彻底刷新了我们的三观。藻类早已不是当年那个混沌模糊被一股脑儿塞到一起去的类群了。有些藻类变成了绿色陆生植物的亲戚，有些藻类变成了疟原虫的亲戚，有些藻类变成了原来属于真菌的水霉的亲戚。
+
+![](/images/img3/earth_history.jpg)
+
+参考：
+
+https://mp.weixin.qq.com/s/7iyHH6Fe_rIg4DEObfujlQ
+
+海带竟然不算植物！这得从演化开始说
+
+https://www.zhihu.com/question/59213363
+
+什么是藻类的第二次内共生？
+
+https://www.zhihu.com/question/21910606
+
+地球上最初的生命为什么有的进化成了植物有的进化成了动物
+
+https://mp.weixin.qq.com/s/F36OuorBaKMWfZhd_tPXKQ
+
+人真是猴子变的？……那现在的猴子咋没变成人？
+
+https://mp.weixin.qq.com/s/3UngFEQnD6kGB8Y5UB1UBA
+
+生物学中最重要的概念，依旧是个谜（什么是物种?）
+
+----
+
+Carl Edward Sagan，1934～1996，美国天文学家、天体物理学家、宇宙学家、科幻作家，和非常成功的天文学、天体物理学等自然科学方面的科普作家。行星学会的创立者。
 
 Sagan是Margulis的第一任老公，虽然不是院士，但却比后者出名多了。他早期对ATP的研究，对Margulis影响很大。
 
@@ -164,58 +194,6 @@ https://mp.weixin.qq.com/s/l5RsUQkPbJBtH-XKvvSD5Q
 https://mp.weixin.qq.com/s/CVbKBN9CqH8kM5oXLzieEw
 
 中生代那么热，大恐龙为啥没把脑子烧坏？
-
-https://mp.weixin.qq.com/s/n0g-boKmCIdnzwaWMPozEw
-
-没有食物链，就真的没有杀害？
-
-https://mp.weixin.qq.com/s/K-8qNqaGlQuxkuLG2xo7ug
-
-没有玻璃塑料的年代，人类幼崽竟然这样吃奶
-
-https://mp.weixin.qq.com/s/HDpPSlqZkLODj-z3_E60-A
-
-人类为什么不能冬眠？
-
-https://mp.weixin.qq.com/s/AYhxGd6iS--bTqg77b-uUQ
-
-同样都是辣，为什么辣椒辣菊花，芥末却能让你呛鼻上头？
-
-https://mp.weixin.qq.com/s/9LYRsYy0t-yAghfuIQ8VSQ
-
-为什么会有蟑螂这种反人类的动物出现?
-
-https://mp.weixin.qq.com/s/F8aiXoLdjgmhky3diZ8iVQ
-
-养娃这么心累的事，最早是谁“发明”的？
-
-https://mp.weixin.qq.com/s/7N9Zf8r4WLBJDH3Y5hdkGw
-
-这个能反复“涅槃”的物种，是何方神仙？（蝾螈）
-
-https://mp.weixin.qq.com/s/m9Fogy9MIXHLJu5WR420aQ
-
-去丹佛捉三角龙！
-
-https://mp.weixin.qq.com/s/Vb0cmvr54NQuFeJ-eC2z6g
-
-这些光鲜亮丽的食物背后，有多少你不知道的历史？
-
-https://mp.weixin.qq.com/s/PuVXRwAyG0wyGVnJq7w7CA
-
-一个又萌又污又有病的脑洞：猫猫是这样穿比基尼的吗？！
-
-https://mp.weixin.qq.com/s/cCfHSfkFVzNcfKmxY8bs8Q
-
-打过这么多次针，你试过给细胞“打针”吗？
-
-https://mp.weixin.qq.com/s/l8LWOFOI_lcUcUvU4Rba_A
-
-为何偏偏是这些植物？好吃还能大战僵尸
-
-https://mp.weixin.qq.com/s/1d5xnc_lDgWJ8D6Nfzz7yg
-
-怎样才能留住阳光？有个“小东西”能把它搞成“液体”
 
 # 医药
 
