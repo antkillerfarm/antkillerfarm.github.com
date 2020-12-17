@@ -338,6 +338,6 @@ https://mp.weixin.qq.com/s/wmzwvnOToqCkKJz5yw-USQ
 
 低调的Linux文件系统家族
 
-https://mp.weixin.qq.com/s/30Zh_8H6QfDgJuG9e9ORSQ
+https://zhuanlan.zhihu.com/p/254882216
 
-使用gdb调试多进程程序
+深入浅出ELF

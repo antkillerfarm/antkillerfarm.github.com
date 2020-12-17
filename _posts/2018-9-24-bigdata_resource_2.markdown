@@ -372,3 +372,11 @@ https://www.sohu.com/a/233954413_157078
 https://mp.weixin.qq.com/s/Z0-6dIORQYJkfR8sZsi2KA
 
 菊石的时代：满城尽带黄金甲
+
+https://mp.weixin.qq.com/s/vstygDSgw3zINxSpPtp-wg
+
+为什么豆科植物能与根瘤菌共生固氮？
+
+https://mp.weixin.qq.com/s/ZnroNQhJqvhNB_J6wXEEHg
+
+深海压力那么大，深海鱼为什么没被压死？

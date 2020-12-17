@@ -69,6 +69,12 @@ IC行业的公司一般分为全流程的（IDM），著名公司如德州仪器
 
 台湾三大科学园区为竹科（新竹科学工业园）、中科（中部科学工业园）、南科（南部科学工业园）。台积电研发主要在竹科、量产在中科及南科。
 
+----
+
+https://xueqiu.com/4081695675/165884010
+
+梁梦松离职的四个点评
+
 ## 3D芯片
 
 随着半导体工艺日益接近物理极限，2D芯片已经不能满足进化的需要，芯片的设计也迈向了立体发展的阶段。目前主流的3D芯片技术包括FinFET（1999）与FD-SOI（2000），他们都是胡正明团队的作品。
@@ -140,6 +146,10 @@ https://mp.weixin.qq.com/s/6Uod0Ngw4wDIISJZVDQ92A
 https://mp.weixin.qq.com/s/jGzdfEJaulPRjt89eLST4Q
 
 8英寸晶圆30年
+
+----
+
+半导体产业发展至今经历了三个阶段，第一代半导体材料以硅为代表；第二代半导体材料砷化镓也已经广泛应用；而以氮化镓和碳化硅、氧化锌、氧化铝、金刚石等宽禁带为代表的第三代半导体材料。
 
 ----
 
@@ -322,31 +332,3 @@ Cache分为硬件Cache和软件Cache两种，这里只讨论前者。后者参�
 必须指出的是，和CPU的速度受限于技术进步不同，RAM的问题主要是性能和价格的折衷。Cache实际上也是一种RAM，最好的L0 Cache和CPU的速度相当，只是价格太高而已。
 
 类似这样的还有PCB的线宽。微米级的线宽技术上完全可行，毕竟芯片都已经是纳米级的线宽了，主要还是价格的问题。
-
-https://mp.weixin.qq.com/s/cSu-P-aDSXH0CYLN2HNrxw
-
-深入理解Cache（上）
-
-https://mp.weixin.qq.com/s/rml_wqePIx8vOk2ZO9_GMA
-
-深入理解Cache（下）
-
-https://mp.weixin.qq.com/s/Lydg1TMlNO_98Z-NF5BIBQ
-
-理解CPU Cache
-
-https://mp.weixin.qq.com/s/8g33nTI_-i9Rzmu-5Up-HA
-
-高性能编程：三级缓存（LLC）访问优化
-
-https://mp.weixin.qq.com/s/QidAD9OuVdEXFqxRMPx5lQ
-
-响应速度不给力？解锁正确缓存姿势
-
-https://mp.weixin.qq.com/s/570O2BloWjy3q0_m_mfiZg
-
-CPU缓存一致性协议
-
-https://mp.weixin.qq.com/s/ziJ8OFiLA1it3sQvycN7Mg
-
-翻越缓存的三座大山

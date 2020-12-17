@@ -11,6 +11,18 @@ category: Deep Object Detection
 
 ## Selective Search（续）
 
+Selective Search的主要思想:
+
+**Step 1**：使用一种过分割手段，将图像分割成小区域 (1k~2k个)。
+
+这里的步骤实际上并不简单，可参考论文：
+
+《Efficient Graph-Based Image Segmentation》
+
+中文版：
+
+http://blog.csdn.net/surgewong/article/details/39008861
+
 **Step 2**：查看现有小区域，按照合并规则合并可能性最高的相邻两个区域。重复直到整张图像合并成一个区域位置。
 
 **Step 3**：输出所有曾经存在过的区域，所谓候选区域。
@@ -90,26 +102,6 @@ https://mp.weixin.qq.com/s/Pd1zA-xZS_xEALfMJ3aHNw
 https://mp.weixin.qq.com/s/SewmtFCVpsthQ4dWUGmEsA
 
 Softer-NMS:CMU&旷视最新论文提出定位更加精确的目标检测算法
-
-https://mp.weixin.qq.com/s/ro0lG3uMUPYNZA9rM3I_YQ
-
-目标检测算法中检测框合并策略技术综述
-
-https://mp.weixin.qq.com/s/GdNcQqDeVQ1vtIJrAIYpWw
-
-目标检测之非极大值抑制(NMS)各种变体
-
-https://zhuanlan.zhihu.com/p/151914931
-
-一文打尽目标检测NMS——精度提升篇
-
-https://zhuanlan.zhihu.com/p/157900024
-
-一文打尽目标检测NMS——效率提升篇
-
-https://zhuanlan.zhihu.com/p/151398233
-
-一文了解目标检测边界框概率分布
 
 ## NMS的快速算法
 

@@ -9,6 +9,14 @@ category: DL acceleration
 
 # 模型压缩与加速进阶
 
+https://mp.weixin.qq.com/s/6wzmyhIvUVeAN4Xjfhb1Yw
+
+论文解读：Channel pruning for Accelerating Very Deep Neural Networks
+
+https://mp.weixin.qq.com/s/-X7NYTzOzljzOaQL7_jOkw
+
+惊呆了！速度高达15000fps的人脸检测算法！
+
 https://mp.weixin.qq.com/s/Faej1LKqurtwEIreUVJ0cw
 
 普林斯顿新算法自动生成高性能神经网络，同时超高效压缩

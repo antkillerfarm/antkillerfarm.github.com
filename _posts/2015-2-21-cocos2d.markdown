@@ -82,7 +82,7 @@ cocos命令有个选项`-m`可以用于选择是Release还是Debug。
 
 硬着头皮，打开CMakeLists.txt。
 
-很快发现了CMAKE_CXX_FLAGS_DEBUG中已经定义了COCOS2D_DEBUG=1。那么问题很显然是CMAKE_CXX_FLAGS_DEBUG没有起作用所致。胡乱修改相关宏的定义之后，发现程序实际上确实用的是CMAKE_CXX_FLAGS。
+很快发现了CMAKE_CXX_FLAGS_DEBUG中已经定义了COCOS2D_DEBUG=1。那么问题很显然是CMAKE_CXX_FLAGS_DEBUG没有起作用所致。胡乱修改相关宏的定义之后，发现程序实际上用的是CMAKE_CXX_FLAGS。
 
 那么问题就转化为CMake是如何选择CMAKE_CXX_FLAGS_DEBUG和CMAKE_CXX_FLAGS的呢？
 

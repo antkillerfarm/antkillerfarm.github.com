@@ -197,6 +197,14 @@ https://www.cnblogs.com/BCOI/p/9072444.html
 
 TREAP
 
+https://blog.csdn.net/simpsonk/article/details/72832959
+
+史上最强图解Treap总结
+
+https://mp.weixin.qq.com/s/SIsNagNKudVUFPKyCaUYCw
+
+Treap——堆和二叉树的完美结合，性价比极值的搜索树
+
 https://blog.csdn.net/yishizuofei/article/details/81660841
 
 多路查找树：2-3树、2-3-4树、B树、B+树、B*树、R树
@@ -236,10 +244,6 @@ https://mp.weixin.qq.com/s/QHounf4el7nmXnpMSJHjvg
 https://blog.csdn.net/changtao381/article/details/8936765
 
 Splay Tree（一种二叉排序树）
-
-https://blog.csdn.net/simpsonk/article/details/72832959
-
-史上最强图解Treap总结
 
 https://mp.weixin.qq.com/s/p4tddWB4kjFufkv3x2SYpw
 

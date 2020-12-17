@@ -214,6 +214,10 @@ https://mp.weixin.qq.com/s/HinllnxgOXQc-NIZ6Qur5A
 
 小小黏菌，大大智慧：预测星系间暗物质网络的黏菌算法
 
+https://mp.weixin.qq.com/s/amhWo269x2utl9xIKukrtw
+
+利用遗传算法优化GANs
+
 # PaddlePaddle
 
 https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q

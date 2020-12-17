@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度加速（五）——知识蒸馏
+title:  深度加速（五）——模型压缩与加速, 知识蒸馏
 category: DL acceleration 
 ---
 
@@ -9,7 +9,61 @@ category: DL acceleration
 
 # 模型压缩与加速
 
-## Network Pruning（续）
+## 课程（续）
+
+https://mp.weixin.qq.com/s/yp5gExPzpDiXaGk9oXEMVA
+
+最新综述：模型压缩与加速
+
+https://mp.weixin.qq.com/s/PraNMo4skR-VjEYIIqt1Cw
+
+深度学习模型压缩与加速综述
+
+https://mp.weixin.qq.com/s/Xqc4UgcfCUWYOeGhjNpidA
+
+CNN模型压缩与加速算法综述
+
+## 复杂度分析
+
+https://zhuanlan.zhihu.com/p/31575074
+
+卷积神经网络的复杂度分析
+
+## Network Pruning
+
+首先是韩松的两篇论文：
+
+《Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding》
+
+《Learning both Weights and Connections for Efficient Neural Networks》
+
+>韩松，清华本科（2012）+Stanford博士（2017）。MIT AP（from 2018）。   
+>个人主页：   
+>https://stanford.edu/~songhan/
+
+韩松也是SqueezeNet的二作。
+
+![](/images/article/nn_compression.png)
+
+韩松论文的中心思想如上图所示。简单来说，就是去掉原有模型的一些不重要的参数、结点和层。
+
+参数的选择，相对比较简单。参数的绝对值越接近零，它对结果的贡献就越小。这一点和稀疏矩阵有些类似。这种方法一般被称为Weight Pruning。
+
+结点和层的选择，相对麻烦一些，需要通过算法得到不重要的层。删除结点一般被称为Filter Pruning，而删除层则相应的被称作Layer Pruning。
+
+比如可以逐个将每一层50%的参数置零，查看模型性能。对性能影响不大的层就是不重要的。
+
+Weight Pruning需要相关硬件支持跳零操作才能真正加速运算，而Filter/Layer Pruning则无需特殊硬件支持。
+
+虽然这些参数、结点和层相对不重要，但是去掉之后，仍然会对准确度有所影响。这时可以对精简之后的模型，用训练样本进行re-train，通过残差对模型进行一定程度的修正，以提高准确度。
+
+![](/images/img4/Pruning.png)
+
+此外还有Stripe-Wise Pruning：
+
+https://mp.weixin.qq.com/s/HohsD57cQtTR5SvuykEDuA
+
+优图NeurIPS 2020论文，刷新滤波器剪枝的SOTA效果
 
 还可以看看图森科技的论文：
 
@@ -224,59 +278,3 @@ https://mp.weixin.qq.com/s/OCG1TiHl2dsuS24uacQ-MA
 这里解释一下，何为soft target？
 
 Hinton给了个例子：比如说在MNIST数据集中，有两个数字“2”，但是写法是不一样的：一个可能写的比较像3（后面多出了一点头），一个写的比较像7（出的头特别的短）。在这样的情况下，grund truth label都是“2”，然而一个学习的很好的大网络会给label“3”和“7”都有一定的概率值。通常叫这种信息为“soft targets”；相对的，gt label是一种“hard targets”因为它是one－hot label。总的来说就是，通过大网络的“soft targets”，能得到更加多的信息来更好的训练小网络。
-
-soft targets的计算方法如下：
-
-$$q_i = \frac{exp(z_i/T)}{\sum_j exp(z_j / T)}$$
-
-上式实际上是Boltzmann distribution的PDF。（参见[《数学狂想曲（五）》](/math/2017/03/02/math_5.html#Boltzmann)）所以T也被称为温度，通常默认1。对于分类任务来说使用$$T=1$$往往会导致不同类的概率差距很大，过度集中于某一个类，而其他类别的信息难以利用，这就是所谓的hard targets。
-
-如果增大T的话，不同类别的差异就变小了，这也就是soft targets。类似于Label smoothing Regularization(LSR)。
-
-如果T接近于0，则最大的值会越近1，其它值会接近0，近似于one-hot编码。
-
-如果T等于无穷，那就是一个均匀分布。
-
-综上，KD的流程就很自然了：
-
-- 先训练一个teacher网络。
-
-- 然后使用这个teacher网络的输出和数据的真实标签去训练student网络。
-
-![](/images/img3/KD_2.png)
-
-![](/images/img3/KD_3.png)
-
-参考：
-
-https://www.zhihu.com/question/50519680
-
-如何理解soft target这一做法？
-
-## KD的进化史
-
-![](/images/img3/KD.jpg)
-
-## Theseus压缩
-
-研究者受到著名哲学思想实验“忒修斯之船”（The Ship of Theseus）启发（如果船上的木头逐渐被替换，直到所有的木头都不是原来的木头，那这艘船还是原来的那艘船吗？），提出了Theseus Compression for BERT(BERT-of-Theseus)，该方法逐步将BERT的原始模块替换成参数更少的替代模块。研究者将原始模型叫做“前辈”（predecessor），将压缩后的模型叫做“接替者“（successor），分别对应KD中的教师和学生。
-
-参考：
-
-https://mp.weixin.qq.com/s/HdG3_CaSdZP3lCp8J_VRQA
-
-只需一个损失函数、一个超参数即可压缩BERT，MSRA提出模型压缩新方法
-
-## 参考
-
-https://github.com/dkozlov/awesome-knowledge-distillation
-
-知识蒸馏从入门到精通
-
-https://zhuanlan.zhihu.com/p/24894102
-
-《Distilling the Knowledge in a Neural Network》阅读笔记
-
-https://luofanghao.github.io/blog/2016/07/20/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%20%E3%80%8ADistilling%20the%20Knowledge%20in%20a%20Neural%20Network%E3%80%8B/
-
-论文笔记《Distilling the Knowledge in a Neural Network》

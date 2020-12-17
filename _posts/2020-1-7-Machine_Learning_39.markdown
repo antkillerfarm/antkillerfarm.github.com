@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十九）——运筹学, 异常检测, 数据清洗, 因果推理, 度量学习
+title:  机器学习（三十九）——运筹学, 异常检测, 因果推理, 度量学习
 category: ML 
 ---
 
@@ -281,23 +281,9 @@ https://mp.weixin.qq.com/s/NDs9xzVih0MHclJv2w1-TA
 
 时序预测竞赛之异常检测算法综述
 
-# 数据清洗
+https://mp.weixin.qq.com/s/LlFQ-73hkgRENQiacwKHEg
 
-https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g
-
-数据挖掘中的数据清洗方法大全
-
-https://mp.weixin.qq.com/s/FHdo2DTapoTryA-hOM-y_w
-
-还在为数据清洗抓狂？这里有一个简单实用的清洗代码集
-
-https://mp.weixin.qq.com/s/r7ngZOM9tO-_OSfvs2aDJw
-
-数据清洗&预处理入门完整指南
-
-https://mp.weixin.qq.com/s/r4ycLnjOl5hSPBMwKpnmsQ
-
-如何打造高质量的NLP数据集
+四类异常检测算法综述：Isolation Forest、LOF、PCA及DAGMM
 
 # 因果推理
 

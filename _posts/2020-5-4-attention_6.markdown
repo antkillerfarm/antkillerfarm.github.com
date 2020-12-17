@@ -9,6 +9,30 @@ category: Attention
 
 # BERT进阶
 
+https://mp.weixin.qq.com/s/6G5Mu7-1omGtQ_9Gt9lUBw
+
+基于预训练自然语言生成的文本摘要方法
+
+https://mp.weixin.qq.com/s/yysnPauB22YgprpOi1ZWSQ
+
+深入理解BERT Transformer，不仅仅是注意力机制
+
+https://mp.weixin.qq.com/s/kFABJJ3fBC48-4DXK8PERQ
+
+10大任务超越BERT，微软提出多任务深度神经网络MT-DNN
+
+https://mp.weixin.qq.com/s/jlGfxkT_o9sgFlUuR_x5Tw
+
+微软开源用于学习通用语言嵌入的MT-DNN模型
+
+https://mp.weixin.qq.com/s/D68YzjYvpc2epGWFBP6rIQ
+
+谷歌实习生新算法提速惊人！BERT训练从三天三夜，缩短到一个小时
+
+https://mp.weixin.qq.com/s/iDGofh_ycWJzfqQriPEXGQ
+
+如何用Python和BERT做中文文本二元分类？
+
 https://zhuanlan.zhihu.com/p/91052495
 
 当BERT遇上知识图谱
@@ -390,45 +414,3 @@ Performer:基于正交随机特征的快速注意力计算
 https://mp.weixin.qq.com/s/eWQLkiJ_XIo7LpTUE9c0qA
 
 Transformer中的相对位置编码
-
-# Attention进阶
-
-https://zhuanlan.zhihu.com/p/40920384
-
-真正的完全图解Seq2Seq Attention模型
-
-https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ
-
-深度学习注意力机制-Attention in Deep learning-附101页PPT
-
-https://mp.weixin.qq.com/s/FlA1YrR0sLQGJoJZnSXpRw
-
-DeepMind：深度学习注意力与记忆机制，附70页ppt
-
-https://mp.weixin.qq.com/s/_mBa-GTdILrvluJtegz8fw
-
-南洋理工大学：注意力神经网络，Attention Neural Networks，78页ppt
-
-https://mp.weixin.qq.com/s/pKxqPB9qIGmE_PslPa6EyA
-
-长文详解Attention的前世今生
-
-https://mp.weixin.qq.com/s/2kFZAmb_WnTNYUXT_jVMqg
-
-Attention注意力机制的前世今生
-
-https://mp.weixin.qq.com/s/eq1iTyKguQm5t6Xoc7KUgw
-
-一文搞懂NLP中的Attention机制
-
-https://zhuanlan.zhihu.com/p/106662375
-
-More About Attention
-
-https://mp.weixin.qq.com/s/MFxQSUMFNRXjdLQwzveO4w
-
-深度学习中的注意力机制
-
-https://mp.weixin.qq.com/s/vkyPwsaxH-SvHqQx09VhVw
-
-深度学习中的注意力机制（二）

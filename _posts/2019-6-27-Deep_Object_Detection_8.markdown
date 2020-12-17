@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（八）——其它目标检测网络, 花式IOU, 3D目标检测, 旋转框检测, 小目标检测
+title:  深度目标检测（八）——其它目标检测网络, 花式IOU, 3D目标检测, 旋转框检测, 小目标检测, 花式NMS
 category: Deep Object Detection 
 ---
 
@@ -235,6 +235,32 @@ https://mp.weixin.qq.com/s/1v84QyvH-k0lzRPOEyaBgw
 
 我们是如何改进YOLOv3进行红外小目标检测的？
 
+# 花式NMS
+
+https://mp.weixin.qq.com/s/ro0lG3uMUPYNZA9rM3I_YQ
+
+目标检测算法中检测框合并策略技术综述
+
+https://mp.weixin.qq.com/s/GdNcQqDeVQ1vtIJrAIYpWw
+
+目标检测之非极大值抑制(NMS)各种变体
+
+https://zhuanlan.zhihu.com/p/151914931
+
+一文打尽目标检测NMS——精度提升篇
+
+https://zhuanlan.zhihu.com/p/157900024
+
+一文打尽目标检测NMS——效率提升篇
+
+https://zhuanlan.zhihu.com/p/151398233
+
+一文了解目标检测边界框概率分布
+
+https://mp.weixin.qq.com/s/OnJQm8xCmxa4szB-lJC9Uw
+
+或许你的NMS该换了，Confluence更准、更稳的目标检测结果
+
 # 目标检测进阶
 
 https://mp.weixin.qq.com/s/1nlOJ7X9ogBHTl1j2adqyg
@@ -376,39 +402,3 @@ https://mp.weixin.qq.com/s/apLEAMshqd3O8nU8Q0Wycg
 https://mp.weixin.qq.com/s/bzgMWR2kzAI9NeXEY92GmA
 
 目标检测任务的优化策略tricks
-
-https://mp.weixin.qq.com/s/0_ap6CsBlz4pvx21c57-ag
-
-旷视研究院提出新型损失函数：改善边界框模糊问题
-
-https://zhuanlan.zhihu.com/p/67714508
-
-“取长补短”的RefineDet物体检测算法
-
-https://mp.weixin.qq.com/s/pB3_ho7JLANKRtQK4gsR5Q
-
-Kaggle实战目标检测奇淫技巧合集
-
-https://mp.weixin.qq.com/s/PpT-NmTVjRi0_SEq0lISXw
-
-旷视科技Oral论文解读：IoU-Net让目标检测用上定位置信度
-
-https://mp.weixin.qq.com/s/OqlZ2TRGbHURYW00440lgQ
-
-微软亚洲研究院与北京大学共同提出用于物体检测的可学习区域特征提取模块
-
-https://www.zhihu.com/question/270143544
-
-目标检测中，不同物体之间的距离非常接近如何解决？
-
-https://mp.weixin.qq.com/s/b4s8Te29DyS71xwQU789pQ
-
-实体零售场景下密集商品的精确探测
-
-https://mp.weixin.qq.com/s/iW-k12CIO0gSx8Y6etTzgA
-
-三分支网络——目前目标检测性能最佳网络框架
-
-https://mp.weixin.qq.com/s/JN1N-IqIL4tAh4rIkZcxpg
-
-Grid R-CNN解读：商汤最新目标检测算法

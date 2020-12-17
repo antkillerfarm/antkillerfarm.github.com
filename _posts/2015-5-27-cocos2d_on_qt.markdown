@@ -261,3 +261,25 @@ https://www.geogebra.org/
 官网：
 
 http://maxima.sourceforge.net/
+
+# OpenCV+
+
+https://mp.weixin.qq.com/s/HmOiQnkaqxcFPOODnOeUkw
+
+使用OpenCV检测坑洼
+
+https://mp.weixin.qq.com/s/BTmozO6Yr-Jsfm4-YXh2Mg
+
+基于OpenCV的图像梯度与边缘检测
+
+https://mp.weixin.qq.com/s/QYnXiAMFC3k_wQIwiaeWQg
+
+三行代码，OpenCV轻松生成19种色彩风格图像
+
+https://mp.weixin.qq.com/s/4LQBY0rMJk0tU8lF3fgHfQ
+
+基于OpenCV的图像阴影去除
+
+https://mp.weixin.qq.com/s/kH6K6L6-BYnYE-g46WhNCg
+
+在OpenCV中使用色彩校正

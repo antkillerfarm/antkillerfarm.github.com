@@ -155,6 +155,14 @@ Windows编程革命简史
 
 # Attention进阶++
 
+https://mp.weixin.qq.com/s/fxEg8UOa3MeJ6qx5SjEHog
+
+NLP领域中各式各样Attention知识系统性的梳理和总结
+
+https://mp.weixin.qq.com/s/_5YaZdYa8bTFiAzHyrMFBg
+
+理解卷积神经网络中的自注意力机制
+
 https://mp.weixin.qq.com/s/fbAAA7fO2voP_v-NsavQew
 
 深度学习中的注意力机制（三）

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CPU(二), 硬盘, 内存, 安全
+title: CPU(二), 硬盘, 内存
 category: resource 
 ---
 
@@ -10,6 +10,34 @@ category: resource
 # CPU
 
 ## Cache（续）
+
+https://mp.weixin.qq.com/s/cSu-P-aDSXH0CYLN2HNrxw
+
+深入理解Cache（上）
+
+https://mp.weixin.qq.com/s/rml_wqePIx8vOk2ZO9_GMA
+
+深入理解Cache（下）
+
+https://mp.weixin.qq.com/s/Lydg1TMlNO_98Z-NF5BIBQ
+
+理解CPU Cache
+
+https://mp.weixin.qq.com/s/8g33nTI_-i9Rzmu-5Up-HA
+
+高性能编程：三级缓存（LLC）访问优化
+
+https://mp.weixin.qq.com/s/QidAD9OuVdEXFqxRMPx5lQ
+
+响应速度不给力？解锁正确缓存姿势
+
+https://mp.weixin.qq.com/s/570O2BloWjy3q0_m_mfiZg
+
+CPU缓存一致性协议
+
+https://mp.weixin.qq.com/s/ziJ8OFiLA1it3sQvycN7Mg
+
+翻越缓存的三座大山
 
 https://zhuanlan.zhihu.com/p/63494668
 
@@ -249,6 +277,18 @@ https://mp.weixin.qq.com/s/rSGRXfN4z3ElP7iQX1umjQ
 
 # 硬盘
 
+早期，磁带和硬盘驱动器的面密度相似。但由于的市场规模和硬盘销售收入的增加，为更大规模的研发工作提供了资金，这使得他们的制造商能够更积极地扩大存储密度。因此，大容量硬盘驱动器的当前面密度约为最新磁带驱动器的100倍。
+
+相比之下，磁带存储设备目前的区域密度远低于超顺磁极限。因此，磁带的摩尔定律可以持续十年或更长时间，而不会遇到基础物理学方面的障碍。
+
+参考：
+
+https://mp.weixin.qq.com/s/Fzu5YmWYxEohDJjmcGGjhQ
+
+为什么说，数据存储的未来属于磁带
+
+----
+
 https://zhuanlan.zhihu.com/p/34858149
 
 128G的固态硬盘为什么有的标120G，有的标100G？固态硬盘容量背后的秘密
@@ -277,17 +317,9 @@ https://mp.weixin.qq.com/s/7athL-OWrFSxMwxqvR73TA
 
 为了让你的硬盘资源能完好地传给曾曾曾孙，科学家想到了这些办法
 
-----
+https://mp.weixin.qq.com/s/ChAfcT5xDgExiEXytTfynw
 
-早期，磁带和硬盘驱动器的面密度相似。但由于的市场规模和硬盘销售收入的增加，为更大规模的研发工作提供了资金，这使得他们的制造商能够更积极地扩大存储密度。因此，大容量硬盘驱动器的当前面密度约为最新磁带驱动器的100倍。
-
-相比之下，磁带存储设备目前的区域密度远低于超顺磁极限。因此，磁带的摩尔定律可以持续十年或更长时间，而不会遇到基础物理学方面的障碍。
-
-参考：
-
-https://mp.weixin.qq.com/s/Fzu5YmWYxEohDJjmcGGjhQ
-
-为什么说，数据存储的未来属于磁带
+关于存储技术的最强入门科普
 
 # 内存
 
@@ -327,78 +359,52 @@ https://mp.weixin.qq.com/s/9skWM6yirEupLj2wdpgqkA
 
 带你深入理解内存对齐最底层原理
 
-# 安全
+# 目标检测进阶++++
 
-## RSA
+https://mp.weixin.qq.com/s/0_ap6CsBlz4pvx21c57-ag
 
-RSA是1977年由Ron Rivest、Adi Shamir和Leonard Adleman一起提出的。
+旷视研究院提出新型损失函数：改善边界框模糊问题
 
-https://mp.weixin.qq.com/s/A7JCTffgFQHljLeQYMNoFg
+https://zhuanlan.zhihu.com/p/67714508
 
-理解RSA算法
+“取长补短”的RefineDet物体检测算法
 
-https://mp.weixin.qq.com/s/9mDvyrQY3o_a6RFlNil0-w
+https://mp.weixin.qq.com/s/pB3_ho7JLANKRtQK4gsR5Q
 
-世界上迄今为止最安全的加密算法（RSA算法）
+Kaggle实战目标检测奇淫技巧合集
 
-https://mp.weixin.qq.com/s/UNjMKLZYYVnTsT5nkeHQcg
+https://mp.weixin.qq.com/s/PpT-NmTVjRi0_SEq0lISXw
 
-什么是RSA算法
+旷视科技Oral论文解读：IoU-Net让目标检测用上定位置信度
 
-## 参考
+https://mp.weixin.qq.com/s/OqlZ2TRGbHURYW00440lgQ
 
-https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
+微软亚洲研究院与北京大学共同提出用于物体检测的可学习区域特征提取模块
 
-前端安全系列之一：如何防止XSS攻击？
+https://www.zhihu.com/question/270143544
 
-http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
+目标检测中，不同物体之间的距离非常接近如何解决？
 
-理解OAuth 2.0
+https://mp.weixin.qq.com/s/b4s8Te29DyS71xwQU789pQ
 
-https://my.oschina.net/u/4231722/blog/3154805
+实体零售场景下密集商品的精确探测
 
-IM的扫码登录功能如何实现？一文搞懂主流的扫码登录技术原理
+https://mp.weixin.qq.com/s/iW-k12CIO0gSx8Y6etTzgA
 
-https://mp.weixin.qq.com/s/QsKceFcxELbUDSbehs8QpQ
+三分支网络——目前目标检测性能最佳网络框架
 
-解读https的正确姿势
+https://mp.weixin.qq.com/s/JN1N-IqIL4tAh4rIkZcxpg
 
-https://www.cnblogs.com/linianhui/category/929878.html
+Grid R-CNN解读：商汤最新目标检测算法
 
-一个认证授权方面的专栏
+https://mp.weixin.qq.com/s/23KvIquNpCJqeOXtBrkfbA
 
-https://mp.weixin.qq.com/s/OLg_wocXJz7VGDabTtxdWQ
+YOLT:大尺寸图像目标检测的解决方案
 
-Web登录很简单？开玩笑！
+https://mp.weixin.qq.com/s/8fxqbSFj9Nkj_iFX8YEjzQ
 
-https://mp.weixin.qq.com/s/agS2-wu6HGO__QfbIt7Esw
+以点代物，同时执行目标检测和跟踪，这个新方法破解目标跟踪难题
 
-数字签名是什么？
+https://mp.weixin.qq.com/s/vQf0TmcM9A56k_FtFvao3g
 
-https://mp.weixin.qq.com/s/YNMw8u7O6u7Bc4-mnrwRXg
-
-老听别人说加密算法，现在给你个机会深入了解下
-
-http://www.xfyun.cn/share/?p=2626
-
-开发者常犯的十大加密错误
-
-https://mp.weixin.qq.com/s/nWoo-Pr50341WJNwtSZq1w
-
-工程师的灵魂拷问：你的密钥安全吗？
-
-https://mp.weixin.qq.com/s/z5zMETSMUGoTiZYMooKZ-g
-
-内核空间镜像攻击揭秘：ARM硬件特性，竟能开启安卓8终端的上帝模式？
-
-https://mp.weixin.qq.com/s/f6SY7Me9Ls3AZNxK0rHz7g
-
-密码加密时的加盐（salt）是什么
-
-https://mp.weixin.qq.com/s/isNd6ByZKdMjFtFL8LOVGA
-
-什么？用5G需要换SIM卡？！
-
-https://mp.weixin.qq.com/s/ChAfcT5xDgExiEXytTfynw
-
-关于存储技术的最强入门科普
+RDSNet：统一目标检测和实例分割的新型网络

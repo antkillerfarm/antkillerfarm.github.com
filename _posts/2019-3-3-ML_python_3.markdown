@@ -221,6 +221,26 @@ https://github.com/lutzroeder/netron
 
 ## 可视化
 
+GCJ-02是由中国国家测绘局（G表示Guojia国家，C表示Cehui测绘，J表示Ju局）制订的地理信息系统的坐标系统。又名“火星坐标系”。
+
+国内出版的各种地图系统（包括电子形式），必须至少采用GCJ-02对地理位置进行首次加密。
+
+CGCS2000坐标系是目前在测绘和地理信息以及工程建设领域主推的坐标系。
+
+粗略转换：GCJ(wgs) ≈ wgs，由此 GCJ(GCJ(wgs)) - GCJ(wgs) ≈ GCJ(wgs) - wgs。因此使用 GCJ(wgs) - (GCJ(GCJ(wgs)) - GCJ(wgs)) 去逼近 wgs。
+
+精确转换：因为GCJ(wgs1) - GCJ(wgs2) ≈ wgs1 - wgs2，所以使用 wgsGuess <- wgsGuess - (GCJ(wgsGuess) - GCJ(wgsReal)) 来迭代逼近。
+
+https://zhuanlan.zhihu.com/p/100993681
+
+利用Python进行地理坐标系统的转换
+
+https://www.zhihu.com/question/29806566
+
+如何看待“地形图非线性保密处理技术”？
+
+----
+
 https://github.com/neozhaoliang/pywonderland/tree/master/
 
 如何用Python画各种著名数学图案
@@ -273,25 +293,13 @@ https://mp.weixin.qq.com/s/2GXOWISj8DOk962p9k0b9w
 
 推荐一个Python手绘图形库
 
-----
+https://mp.weixin.qq.com/s/X-BzS8Uyu0dH_mN1VHixwQ
 
-GCJ-02是由中国国家测绘局（G表示Guojia国家，C表示Cehui测绘，J表示Ju局）制订的地理信息系统的坐标系统。又名“火星坐标系”。
+刷爆全网的动态条形图，原来5行Python代码就能实现！
 
-国内出版的各种地图系统（包括电子形式），必须至少采用GCJ-02对地理位置进行首次加密。
+https://mp.weixin.qq.com/s/SH2bNu6UF7PsKrBeweUH4g
 
-CGCS2000坐标系是目前在测绘和地理信息以及工程建设领域主推的坐标系。
-
-粗略转换：GCJ(wgs) ≈ wgs，由此 GCJ(GCJ(wgs)) - GCJ(wgs) ≈ GCJ(wgs) - wgs。因此使用 GCJ(wgs) - (GCJ(GCJ(wgs)) - GCJ(wgs)) 去逼近 wgs。
-
-精确转换：因为GCJ(wgs1) - GCJ(wgs2) ≈ wgs1 - wgs2，所以使用 wgsGuess <- wgsGuess - (GCJ(wgsGuess) - GCJ(wgsReal)) 来迭代逼近。
-
-https://zhuanlan.zhihu.com/p/100993681
-
-利用Python进行地理坐标系统的转换
-
-https://www.zhihu.com/question/29806566
-
-如何看待“地形图非线性保密处理技术”？
+纯Python绘制满满艺术感的山脊地图
 
 ## 参考
 
@@ -450,11 +458,3 @@ Logistic回归实战篇之预测病马死亡率（二）
 https://mp.weixin.qq.com/s/0i1jKgaRu2pLPAXAvoH6qA
 
 Logistic回归实战篇之预测病马死亡率（三）
-
-https://mp.weixin.qq.com/s/U46HOaBP5ijghpc2myJCvA
-
-机器学习中，使用Scikit-Learn简单处理文本数据？
-
-https://mp.weixin.qq.com/s/HoMr52X9O4fMs2YjtH9oFg
-
-scikit-learn Adaboost类库的实战分析

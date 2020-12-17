@@ -7,7 +7,65 @@ category: DL acceleration
 * toc
 {:toc}
 
-# 知识蒸馏（续）
+# 知识蒸馏
+
+## soft target（续）
+
+soft targets的计算方法如下：
+
+$$q_i = \frac{exp(z_i/T)}{\sum_j exp(z_j / T)}$$
+
+上式实际上是Boltzmann distribution的PDF。（参见[《数学狂想曲（五）》](/math/2017/03/02/math_5.html#Boltzmann)）所以T也被称为温度，通常默认1。对于分类任务来说使用$$T=1$$往往会导致不同类的概率差距很大，过度集中于某一个类，而其他类别的信息难以利用，这就是所谓的hard targets。
+
+如果增大T的话，不同类别的差异就变小了，这也就是soft targets。类似于Label smoothing Regularization(LSR)。
+
+如果T接近于0，则最大的值会越近1，其它值会接近0，近似于one-hot编码。
+
+如果T等于无穷，那就是一个均匀分布。
+
+综上，KD的流程就很自然了：
+
+- 先训练一个teacher网络。
+
+- 然后使用这个teacher网络的输出和数据的真实标签去训练student网络。
+
+![](/images/img3/KD_2.png)
+
+![](/images/img3/KD_3.png)
+
+参考：
+
+https://www.zhihu.com/question/50519680
+
+如何理解soft target这一做法？
+
+## KD的进化史
+
+![](/images/img3/KD.jpg)
+
+## Theseus压缩
+
+研究者受到著名哲学思想实验“忒修斯之船”（The Ship of Theseus）启发（如果船上的木头逐渐被替换，直到所有的木头都不是原来的木头，那这艘船还是原来的那艘船吗？），提出了Theseus Compression for BERT(BERT-of-Theseus)，该方法逐步将BERT的原始模块替换成参数更少的替代模块。研究者将原始模型叫做“前辈”（predecessor），将压缩后的模型叫做“接替者“（successor），分别对应KD中的教师和学生。
+
+参考：
+
+https://mp.weixin.qq.com/s/HdG3_CaSdZP3lCp8J_VRQA
+
+只需一个损失函数、一个超参数即可压缩BERT，MSRA提出模型压缩新方法
+
+## 参考
+
+https://github.com/dkozlov/awesome-knowledge-distillation
+
+知识蒸馏从入门到精通
+
+https://zhuanlan.zhihu.com/p/24894102
+
+《Distilling the Knowledge in a Neural Network》阅读笔记
+
+https://luofanghao.github.io/blog/2016/07/20/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%20%E3%80%8ADistilling%20the%20Knowledge%20in%20a%20Neural%20Network%E3%80%8B/
+
+论文笔记《Distilling the Knowledge in a Neural Network》
 
 http://blog.csdn.net/zhongshaoyy/article/details/53582048
 
@@ -322,79 +380,3 @@ https://mp.weixin.qq.com/s/nEMvoiqImd0RxrskIH7c9A
 https://mp.weixin.qq.com/s/pc8fJx5StxnX9it2AVU5NA
 
 基于手机系统的实时目标检测
-
-https://mp.weixin.qq.com/s/6wzmyhIvUVeAN4Xjfhb1Yw
-
-论文解读：Channel pruning for Accelerating Very Deep Neural Networks
-
-https://mp.weixin.qq.com/s/-X7NYTzOzljzOaQL7_jOkw
-
-惊呆了！速度高达15000fps的人脸检测算法！
-
-https://mp.weixin.qq.com/s/6eyEMW9dVBR5cZrHxn8iqA
-
-腾讯AI Lab详解3大热点：模型压缩、自动机器学习及最优化算法
-
-https://xmfbit.github.io/2018/02/24/paper-ssl-dnn/
-
-论文-Learning Structured Sparsity in Deep Neural Networks
-
-https://mp.weixin.qq.com/s/d6HFVbbHwkxPGdnbyVuMyQ
-
-密歇根州立大学提出NestDNN：动态分配多任务资源的移动端深度学习框架
-
-https://mp.weixin.qq.com/s/lUTusig94Htf7_4Z3X1fTQ
-
-清华&伯克利ICLR论文：重新思考6大剪枝方法
-
-https://mp.weixin.qq.com/s/g3y9mRhkFtzSuSMAornnDQ
-
-韩松博士论文：面向深度学习的高效方法与硬件
-
-https://mp.weixin.qq.com/s/aH1zQ7we8OE59-O9n4IXhw
-
-应对未来物联网大潮：如何在内存有限的情况下部署深度学习？
-
-https://mp.weixin.qq.com/s/IfvXrsUq8-cBDC4_3O5v_w
-
-Facebook新研究优化硬件浮点运算，强化AI模型运行速率
-
-https://mp.weixin.qq.com/s/Jsxiha_BFtWVLvO4HMwJ3Q
-
-工业界第一手实战经验：深度学习高效网络结构设计
-
-https://mp.weixin.qq.com/s/uXbLb5ITHOU0dZRSWNobVg
-
-算力限制场景下的目标检测实战浅谈
-
-https://mp.weixin.qq.com/s/DoeoPGnS88HQmxagKJWLlg
-
-小米开源FALSR算法：快速精确轻量级的超分辨率模型
-
-https://mp.weixin.qq.com/s/wT39oUWfrQK-dg7hGXRynQ
-
-实时单人姿态估计，在自己手机上就能实现
-
-https://mp.weixin.qq.com/s/GJ7JMtWiKBku7dVJWOfLOA
-
-CNN能同时兼顾速度与准确度吗？CMU提出AdaScale
-
-https://mp.weixin.qq.com/s/pmel2k2J159zQi87ib3q8A
-
-如何让CNN高效地在移动端运行
-
-https://mp.weixin.qq.com/s/m-wQRm3VpfQkEOoUAxEdoA
-
-论文解读: Quantized Convolutional Neural Networks for Mobile Devices
-
-https://mp.weixin.qq.com/s/w7O2JxDH2ECqPn50sLfxpg
-
-不用重新训练，直接将现有模型转换为MobileNet
-
-https://mp.weixin.qq.com/s/EW6jvf98ifBucVz74SfSIA
-
-文档扫描：深度神经网络在移动端的实践
-
-https://mp.weixin.qq.com/s/3oL0Bso3mwbsfaG8X5-xoA
-
-英特尔提出新型压缩技术DeepThin，适合移动端设备深度神经网络

@@ -218,6 +218,8 @@ Cat 1大热背后，NB-IoT该何去何从？
 
 ![](/images/img2/edge_computing.png)
 
+![](/images/img4/edge_computing.png)
+
 https://mp.weixin.qq.com/s/i5KkUVaEULrlxeNtU_PDtQ
 
 天津大学最新“边缘计算与深度学习的融合”综述论文

@@ -242,6 +242,10 @@ https://zhuanlan.zhihu.com/p/84774691
 
 bash下可控任务数的并发执行脚本
 
+https://blog.csdn.net/taiyang1987912/article/details/39551385
+
+shell中各种括号的作用`()、(())、[]、[[]]、{}`
+
 # diff&patch
 
 diff/patch这对工具在数学上来说，diff是对2个集合求差，patch是求和。

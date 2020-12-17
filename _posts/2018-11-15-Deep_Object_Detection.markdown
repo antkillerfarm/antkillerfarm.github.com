@@ -308,15 +308,3 @@ RCNN算法分为4个步骤：
 http://blog.csdn.net/surgewong/article/details/39316931
 
 http://blog.csdn.net/charwing/article/details/27180421
-
-Selective Search的主要思想:
-
-**Step 1**：使用一种过分割手段，将图像分割成小区域 (1k~2k个)。
-
-这里的步骤实际上并不简单，可参考论文：
-
-《Efficient Graph-Based Image Segmentation》
-
-中文版：
-
-http://blog.csdn.net/surgewong/article/details/39008861

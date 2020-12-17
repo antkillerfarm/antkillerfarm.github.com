@@ -325,3 +325,13 @@ C - undefined reference to “sqrt” even with '-lm'
 https://mp.weixin.qq.com/s/yITNjo_UQi8-OKQNOfGrPw
 
 C++服务编译耗时优化原理及实践
+
+## 参考
+
+https://mp.weixin.qq.com/s/30Zh_8H6QfDgJuG9e9ORSQ
+
+使用gdb调试多进程程序
+
+https://zhuanlan.zhihu.com/p/254879649
+
+GDB的那些奇淫技巧

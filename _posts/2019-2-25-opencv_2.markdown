@@ -345,22 +345,6 @@ https://zhuanlan.zhihu.com/p/136891320
 
 CardOCR
 
-https://mp.weixin.qq.com/s/HmOiQnkaqxcFPOODnOeUkw
-
-使用OpenCV检测坑洼
-
-https://mp.weixin.qq.com/s/BTmozO6Yr-Jsfm4-YXh2Mg
-
-基于OpenCV的图像梯度与边缘检测
-
-https://mp.weixin.qq.com/s/QYnXiAMFC3k_wQIwiaeWQg
-
-三行代码，OpenCV轻松生成19种色彩风格图像
-
-https://mp.weixin.qq.com/s/4LQBY0rMJk0tU8lF3fgHfQ
-
-基于OpenCV的图像阴影去除
-
 # Dlib
 
 Dlib是一个C++写的机器学习库。

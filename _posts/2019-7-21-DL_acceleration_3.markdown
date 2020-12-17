@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度加速（三）——Winograd（3）, NN Quantization
+title:  深度加速（三）——Winograd（3）, NN Quantization（1）
 category: DL acceleration 
 ---
 
@@ -304,17 +304,3 @@ FP16相对于FP32，通常会有不到1%的精度损失。即使是不re-train�
 UINT量化使用bias将数据搬移到均值为0的区间。
 
 这篇论文的另一个贡献在于：原先的INT8量化是针对已经训练好的模型。而现在还可以在训练的时候就进行量化——前向计算进行量化，而反向的误差修正不做量化。
-
-## bfloat16
-
-bfloat16是Google针对AI领域的特殊情况提出的浮点格式。目前已有Intel的AI processors和Google的TPU，提供对该格式的原生支持。
-
-![](/images/img3/bfloat16.png)
-
-上图比较了bfloat16和IEEE fp32/fp16的差异。可以看出bfloat16有如下特点：
-
-1.bfloat16可以直接截取float32的前16位得到，所以在float32和bfloat16之间进行转换时非常容易。
-
-2.bfloat16的Dynamic Range比float16大，不容易下溢。这点在training阶段更为重要，梯度一般都挺小的，一旦下溢变成0，就传递不了了。
-
-3.bfloat16既可以用于训练又可以用于推断。Amazon也证明Deep Speech模型使用BFloat的训练和推断的效果都足够好。Uint8在大部分情况下不能用于训练，只能用于推断。

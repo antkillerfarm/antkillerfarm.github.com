@@ -9,6 +9,14 @@ category: resource
 
 # AI安全
 
+一台自动化机器意外刺穿了一个9盎司重的驱熊喷雾罐，释放出浓缩的喷雾，致使24名亚马逊员工受伤。
+
+https://mp.weixin.qq.com/s/eR3orsvIDVn7kRSmATTJbg
+
+这个网站收集AI‘翻车’案例，所有‘罪证’都不放过
+
+----
+
 https://mp.weixin.qq.com/s/jBE4gP3O0qVJ50G49Q_xmQ
 
 对抗样本攻防战，清华大学TSAIL团队再获CAAD攻防赛第一
@@ -366,35 +374,3 @@ https://mp.weixin.qq.com/s/kz74yb857gmG1h7MyOWx_Q
 https://mp.weixin.qq.com/s/gJuXl6Oh_N_fJgQ9jT268w
 
 旷视研究院提出密集场景检测新方法：一个候选框，多个预测结果
-
-https://mp.weixin.qq.com/s/23KvIquNpCJqeOXtBrkfbA
-
-YOLT:大尺寸图像目标检测的解决方案
-
-https://mp.weixin.qq.com/s/8fxqbSFj9Nkj_iFX8YEjzQ
-
-以点代物，同时执行目标检测和跟踪，这个新方法破解目标跟踪难题
-
-https://mp.weixin.qq.com/s/vQf0TmcM9A56k_FtFvao3g
-
-RDSNet：统一目标检测和实例分割的新型网络
-
-https://mp.weixin.qq.com/s/iPx5K2cSs5jlCt9d9oKpww
-
-VoVNet：实时目标检测的新backbone网络
-
-https://mp.weixin.qq.com/s/FHHIdoXyaU4skX-zyZFQew
-
-已开源！全新水下目标检测算法SWIPENet+IMA框架
-
-https://mp.weixin.qq.com/s/-x9A1eG5BfGmqV31SdMCMg
-
-目标检测算法之Light-Head R-CNN
-
-https://mp.weixin.qq.com/s/On-pHCdGg3piTQtDV88kQA
-
-特定场景下Yolo改进算法：Poly-Yolo
-
-https://mp.weixin.qq.com/s/HW0SNf-NYjXqJwlungRFpg
-
-综述：目标检测中的多尺度检测方法

@@ -209,6 +209,10 @@ https://zhuanlan.zhihu.com/p/308301901
 
 3W字长文带你轻松入门视觉transformer
 
+https://mp.weixin.qq.com/s/MZo3LFyzXp-qpi5jEOQS5Q
+
+FPT：又是借鉴Transformer，这次多方向融合特征金字塔
+
 # BERT进阶
 
 ## AR vs AE
@@ -334,27 +338,3 @@ https://zhuanlan.zhihu.com/p/58425003
 https://mp.weixin.qq.com/s/SfMIKfF_B4agFCHN_U_mzQ
 
 BAM！利用知识蒸馏和多任务学习构建的通用语言模型
-
-https://mp.weixin.qq.com/s/6G5Mu7-1omGtQ_9Gt9lUBw
-
-基于预训练自然语言生成的文本摘要方法
-
-https://mp.weixin.qq.com/s/yysnPauB22YgprpOi1ZWSQ
-
-深入理解BERT Transformer，不仅仅是注意力机制
-
-https://mp.weixin.qq.com/s/kFABJJ3fBC48-4DXK8PERQ
-
-10大任务超越BERT，微软提出多任务深度神经网络MT-DNN
-
-https://mp.weixin.qq.com/s/jlGfxkT_o9sgFlUuR_x5Tw
-
-微软开源用于学习通用语言嵌入的MT-DNN模型
-
-https://mp.weixin.qq.com/s/D68YzjYvpc2epGWFBP6rIQ
-
-谷歌实习生新算法提速惊人！BERT训练从三天三夜，缩短到一个小时
-
-https://mp.weixin.qq.com/s/iDGofh_ycWJzfqQriPEXGQ
-
-如何用Python和BERT做中文文本二元分类？

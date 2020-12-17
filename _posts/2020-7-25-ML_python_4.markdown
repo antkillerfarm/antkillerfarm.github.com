@@ -9,6 +9,14 @@ category: AI
 
 # Machine Learning之Python篇
 
+https://mp.weixin.qq.com/s/U46HOaBP5ijghpc2myJCvA
+
+机器学习中，使用Scikit-Learn简单处理文本数据？
+
+https://mp.weixin.qq.com/s/HoMr52X9O4fMs2YjtH9oFg
+
+scikit-learn Adaboost类库的实战分析
+
 https://mp.weixin.qq.com/s/61oY3gLEOjQjCJgGkEcABw
 
 支持向量机分类实战

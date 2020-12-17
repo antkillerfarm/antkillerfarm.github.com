@@ -436,19 +436,3 @@ PolarMask：一阶段实例分割新思路
 https://mp.weixin.qq.com/s/t8pVNeW2Y-QQwD8H9Nk83w
 
 定向和密集的目标检测怎么办？动态优化网络来解决
-
-https://zhuanlan.zhihu.com/p/158907507
-
-From VanillaDet to AutoAssign
-
-https://mp.weixin.qq.com/s/GL_q4VLCgbjTZq_zpTLq0w
-
-Label Assign：提升目标检测上限
-
-https://mp.weixin.qq.com/s/EO5h1zW4yrToqwTCnXtz4g
-
-TTFNet: 最大程度提高训练效率的实时目标检测
-
-https://mp.weixin.qq.com/s/6R3myLyAeMMS0lR1GSlvcA
-
-细说物体检测中的Anchors

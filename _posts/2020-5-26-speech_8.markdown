@@ -37,6 +37,10 @@ https://mp.weixin.qq.com/s/Li4GUgFcnotVrswgcX4QFQ
 
 语音识别系列之高阶解码器技术
 
+https://mp.weixin.qq.com/s/UUbYxv2L6A7iTxuFS52VRA
+
+语音识别中的WFST和语言模型
+
 # 声纹识别
 
 声纹识别关心的“**谁在说**”，用于解决**生物身份确认和识别**；而语音识别关心的“**说了什么**”，用于解决**对说话内容的识别**。
@@ -246,3 +250,77 @@ https://zhuanlan.zhihu.com/p/278037596
 https://zhuanlan.zhihu.com/p/278243561
 
 语音转换Voice Conversion ---直接转换技术
+
+# 模型压缩与加速进阶+
+
+https://mp.weixin.qq.com/s/6eyEMW9dVBR5cZrHxn8iqA
+
+腾讯AI Lab详解3大热点：模型压缩、自动机器学习及最优化算法
+
+https://xmfbit.github.io/2018/02/24/paper-ssl-dnn/
+
+论文-Learning Structured Sparsity in Deep Neural Networks
+
+https://mp.weixin.qq.com/s/d6HFVbbHwkxPGdnbyVuMyQ
+
+密歇根州立大学提出NestDNN：动态分配多任务资源的移动端深度学习框架
+
+https://mp.weixin.qq.com/s/lUTusig94Htf7_4Z3X1fTQ
+
+清华&伯克利ICLR论文：重新思考6大剪枝方法
+
+https://mp.weixin.qq.com/s/g3y9mRhkFtzSuSMAornnDQ
+
+韩松博士论文：面向深度学习的高效方法与硬件
+
+https://mp.weixin.qq.com/s/aH1zQ7we8OE59-O9n4IXhw
+
+应对未来物联网大潮：如何在内存有限的情况下部署深度学习？
+
+https://mp.weixin.qq.com/s/IfvXrsUq8-cBDC4_3O5v_w
+
+Facebook新研究优化硬件浮点运算，强化AI模型运行速率
+
+https://mp.weixin.qq.com/s/Jsxiha_BFtWVLvO4HMwJ3Q
+
+工业界第一手实战经验：深度学习高效网络结构设计
+
+https://mp.weixin.qq.com/s/uXbLb5ITHOU0dZRSWNobVg
+
+算力限制场景下的目标检测实战浅谈
+
+https://mp.weixin.qq.com/s/DoeoPGnS88HQmxagKJWLlg
+
+小米开源FALSR算法：快速精确轻量级的超分辨率模型
+
+https://mp.weixin.qq.com/s/wT39oUWfrQK-dg7hGXRynQ
+
+实时单人姿态估计，在自己手机上就能实现
+
+https://mp.weixin.qq.com/s/GJ7JMtWiKBku7dVJWOfLOA
+
+CNN能同时兼顾速度与准确度吗？CMU提出AdaScale
+
+https://mp.weixin.qq.com/s/pmel2k2J159zQi87ib3q8A
+
+如何让CNN高效地在移动端运行
+
+https://mp.weixin.qq.com/s/m-wQRm3VpfQkEOoUAxEdoA
+
+论文解读: Quantized Convolutional Neural Networks for Mobile Devices
+
+https://mp.weixin.qq.com/s/w7O2JxDH2ECqPn50sLfxpg
+
+不用重新训练，直接将现有模型转换为MobileNet
+
+https://mp.weixin.qq.com/s/EW6jvf98ifBucVz74SfSIA
+
+文档扫描：深度神经网络在移动端的实践
+
+https://mp.weixin.qq.com/s/3oL0Bso3mwbsfaG8X5-xoA
+
+英特尔提出新型压缩技术DeepThin，适合移动端设备深度神经网络
+
+https://mp.weixin.qq.com/s/LGCGYSoMpPfojEi2WcmjnQ
+
+TinyML：下一轮人工智能革命

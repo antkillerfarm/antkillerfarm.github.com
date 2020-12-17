@@ -313,6 +313,46 @@ Java的战争(后续)
 
 # Attention进阶+
 
+https://zhuanlan.zhihu.com/p/40920384
+
+真正的完全图解Seq2Seq Attention模型
+
+https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ
+
+深度学习注意力机制-Attention in Deep learning-附101页PPT
+
+https://mp.weixin.qq.com/s/FlA1YrR0sLQGJoJZnSXpRw
+
+DeepMind：深度学习注意力与记忆机制，附70页ppt
+
+https://mp.weixin.qq.com/s/_mBa-GTdILrvluJtegz8fw
+
+南洋理工大学：注意力神经网络，Attention Neural Networks，78页ppt
+
+https://mp.weixin.qq.com/s/pKxqPB9qIGmE_PslPa6EyA
+
+长文详解Attention的前世今生
+
+https://mp.weixin.qq.com/s/2kFZAmb_WnTNYUXT_jVMqg
+
+Attention注意力机制的前世今生
+
+https://mp.weixin.qq.com/s/eq1iTyKguQm5t6Xoc7KUgw
+
+一文搞懂NLP中的Attention机制
+
+https://zhuanlan.zhihu.com/p/106662375
+
+More About Attention
+
+https://mp.weixin.qq.com/s/MFxQSUMFNRXjdLQwzveO4w
+
+深度学习中的注意力机制
+
+https://mp.weixin.qq.com/s/vkyPwsaxH-SvHqQx09VhVw
+
+深度学习中的注意力机制（二）
+
 https://mp.weixin.qq.com/s/Qs6tm50YvzHaJv2rh60WMw
 
 撩一发深度文本分类之RNN via Attention
@@ -356,11 +396,3 @@ BERT、RoBERTa、DistilBERT与XLNet，我们到底该如何选择？
 https://mp.weixin.qq.com/s/GGRORF5EfJ5xzMLwAsJt5w
 
 从词袋到Transfomer，NLP十年突破史
-
-https://mp.weixin.qq.com/s/fxEg8UOa3MeJ6qx5SjEHog
-
-NLP领域中各式各样Attention知识系统性的梳理和总结
-
-https://mp.weixin.qq.com/s/_5YaZdYa8bTFiAzHyrMFBg
-
-理解卷积神经网络中的自注意力机制

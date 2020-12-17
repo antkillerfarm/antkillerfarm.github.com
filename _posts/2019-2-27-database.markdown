@@ -241,21 +241,9 @@ https://zhuanlan.zhihu.com/p/157314533
 
 直接干掉RESTful：GraphQL是真的香！
 
-## LSM (Log Structured Merge)
+https://mp.weixin.qq.com/s/KalliFefy7fxBYd2xQaAqg
 
-十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。其核心思想就是放弃部分读能力，换取写入的最大化能力。
-
-http://www.open-open.com/lib/view/open1424916275249.html
-
-Log Structured Merge Trees(LSM)原理
-
-https://mp.weixin.qq.com/s/CmYg22NObamkNOqGjKg0-w
-
-解读现代存储系统背后的经典算法
-
-https://mp.weixin.qq.com/s/9L_HOCfRwC_QxjzJyVjKXA
-
-字节跳动在RocksDB存储引擎上的改进实践
+GraphQL最佳入门实战
 
 ## 分布式算法
 

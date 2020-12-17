@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十四）——单分类SVM&多分类SVM, Stacking, 花式采样
+title:  机器学习（二十四）——单分类SVM&多分类SVM, Stacking, 花式采样, 数据清洗
 category: ML 
 ---
 
@@ -281,3 +281,21 @@ https://mp.weixin.qq.com/s/d3bpfnx-JGY7whqnHwAmWw
 https://mp.weixin.qq.com/s/OZ-HfxBgFSvqeH8AEjGluQ
 
 采样算法哪家强？一个针对主流采样算法的比较
+
+# 数据清洗
+
+https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g
+
+数据挖掘中的数据清洗方法大全
+
+https://mp.weixin.qq.com/s/FHdo2DTapoTryA-hOM-y_w
+
+还在为数据清洗抓狂？这里有一个简单实用的清洗代码集
+
+https://mp.weixin.qq.com/s/r7ngZOM9tO-_OSfvs2aDJw
+
+数据清洗&预处理入门完整指南
+
+https://mp.weixin.qq.com/s/r4ycLnjOl5hSPBMwKpnmsQ
+
+如何打造高质量的NLP数据集

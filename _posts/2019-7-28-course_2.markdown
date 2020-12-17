@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  名校机器学习相关课程（二）, 5G
+title:  名校机器学习相关课程（二）, 5G, 安全
 category: resource 
 ---
 
@@ -236,6 +236,82 @@ O-RAN是中国移动发起的，中国三大运营商都是成员。
 https://mp.weixin.qq.com/s/F3KRfVyvbtc5x2LZ7wgXuQ
 
 媒体口中的5G和真实的5G区别有多大？
+
+# 安全
+
+## RSA
+
+RSA是1977年由Ron Rivest、Adi Shamir和Leonard Adleman一起提出的。
+
+https://mp.weixin.qq.com/s/A7JCTffgFQHljLeQYMNoFg
+
+理解RSA算法
+
+https://mp.weixin.qq.com/s/9mDvyrQY3o_a6RFlNil0-w
+
+世界上迄今为止最安全的加密算法（RSA算法）
+
+https://mp.weixin.qq.com/s/UNjMKLZYYVnTsT5nkeHQcg
+
+什么是RSA算法
+
+## 参考
+
+https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
+
+前端安全系列之一：如何防止XSS攻击？
+
+http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
+
+理解OAuth 2.0
+
+https://my.oschina.net/u/4231722/blog/3154805
+
+IM的扫码登录功能如何实现？一文搞懂主流的扫码登录技术原理
+
+https://mp.weixin.qq.com/s/QsKceFcxELbUDSbehs8QpQ
+
+解读https的正确姿势
+
+https://www.cnblogs.com/linianhui/category/929878.html
+
+一个认证授权方面的专栏
+
+https://mp.weixin.qq.com/s/OLg_wocXJz7VGDabTtxdWQ
+
+Web登录很简单？开玩笑！
+
+https://mp.weixin.qq.com/s/agS2-wu6HGO__QfbIt7Esw
+
+数字签名是什么？
+
+https://mp.weixin.qq.com/s/YNMw8u7O6u7Bc4-mnrwRXg
+
+老听别人说加密算法，现在给你个机会深入了解下
+
+http://www.xfyun.cn/share/?p=2626
+
+开发者常犯的十大加密错误
+
+https://mp.weixin.qq.com/s/nWoo-Pr50341WJNwtSZq1w
+
+工程师的灵魂拷问：你的密钥安全吗？
+
+https://mp.weixin.qq.com/s/z5zMETSMUGoTiZYMooKZ-g
+
+内核空间镜像攻击揭秘：ARM硬件特性，竟能开启安卓8终端的上帝模式？
+
+https://mp.weixin.qq.com/s/f6SY7Me9Ls3AZNxK0rHz7g
+
+密码加密时的加盐（salt）是什么
+
+https://mp.weixin.qq.com/s/isNd6ByZKdMjFtFL8LOVGA
+
+什么？用5G需要换SIM卡？！
+
+https://zhuanlan.zhihu.com/p/255171562
+
+椭圆曲线加密与NSA后门考古
 
 # Linux参考资源+++
 
