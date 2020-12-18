@@ -175,8 +175,6 @@ https://mp.weixin.qq.com/s/zoMJpYQeAAt6GmjPDx863Q
 
 有理数指数（利用指数乘法特性进行扩展）：$$2^{\frac12}\times 2^{\frac12}=2^{\frac12+\frac12}=2$$，因此$$2^{\frac12}=\sqrt{2}$$
 
-
-
 https://www.zhihu.com/question/434836259
 
 2的π次方是啥东西？
