@@ -298,3 +298,7 @@ DeepMind重磅论文：通过奖励模型，让AI按照人类意图行事
 https://mp.weixin.qq.com/s/TIWnnCmVZnFQNH9Fig5aTw
 
 DeepMind发布新奖励机制：让智能体不再“碰瓷”
+
+https://zhuanlan.zhihu.com/p/337759337
+
+BeBold：一种新的强化学习探索准则

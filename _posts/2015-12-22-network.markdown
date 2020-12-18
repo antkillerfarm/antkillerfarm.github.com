@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  网络杂谈, WebRTC
+title:  网络杂谈, WebRTC, ZeroMQ, ActiveMQ
 category: technology 
 ---
 
@@ -299,6 +299,26 @@ https://mp.weixin.qq.com/s/DhQ0kks7SnyAROYEH_1BQg
 http://blog.shengbin.me/posts/multi-user-video-conference-based-on-webrtc
 
 基于WebRTC的多人视频会议
+
+# ZeroMQ
+
+ZeroMQ是个在Socket之上，而在MQ之下的网络通信库。正如名称所言，它实际上并不是一个完整的MQ，而仅仅只有MQ的一些子功能罢了。
+
+http://zeromq.org
+
+参考：
+
+https://blog.csdn.net/w174504744/article/details/73187697
+
+ZeroMQ
+
+# ActiveMQ
+
+ActiveMQ 是Apache出品，最流行的，能力强劲的开源消息总线。
+
+http://blog.csdn.net/jiuqiyuliang/article/details/46701559
+
+深入浅出JMS(一)--JMS基本概念
 
 # 电子科技史+++
 

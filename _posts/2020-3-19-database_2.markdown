@@ -25,6 +25,14 @@ https://mp.weixin.qq.com/s/9L_HOCfRwC_QxjzJyVjKXA
 
 字节跳动在RocksDB存储引擎上的改进实践
 
+## 数据库变更
+
+数据库变更工具主要有Liquibase和Flyway。
+
+https://mp.weixin.qq.com/s/67KEakYxM2lNm_hB9_W9BQ
+
+老板：把数据库变更，给整利索了
+
 ## 参考
 
 https://mp.weixin.qq.com/s/ActS6PxbtZGqPb0jOn0iFg
@@ -374,23 +382,3 @@ https://mp.weixin.qq.com/s/PPlrrtcdrtKT3afgWOU8Pg
 https://mp.weixin.qq.com/s/k1sK-QQjVqdJnpWNCV0pUA
 
 并发环境下，先操作数据库还是先操作缓存？
-
-# ZeroMQ
-
-ZeroMQ是个在Socket之上，而在MQ之下的网络通信库。正如名称所言，它实际上并不是一个完整的MQ，而仅仅只有MQ的一些子功能罢了。
-
-http://zeromq.org
-
-参考：
-
-https://blog.csdn.net/w174504744/article/details/73187697
-
-ZeroMQ
-
-# ActiveMQ
-
-ActiveMQ 是Apache出品，最流行的，能力强劲的开源消息总线。
-
-http://blog.csdn.net/jiuqiyuliang/article/details/46701559
-
-深入浅出JMS(一)--JMS基本概念

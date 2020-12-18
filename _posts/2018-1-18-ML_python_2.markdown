@@ -75,6 +75,10 @@ https://mp.weixin.qq.com/s/y8d5TzEQeOg78HLWJJzanA
 
 使用Matplotlib可视化数据的5个强大技巧
 
+https://mp.weixin.qq.com/s/Q1_WPem79r9B64n7xfhZ5g
+
+matplotlib字体设置
+
 ## Pandas
 
 Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。
