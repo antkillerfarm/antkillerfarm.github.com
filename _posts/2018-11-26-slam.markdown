@@ -121,10 +121,6 @@ https://zhuanlan.zhihu.com/p/112124572
 
 视觉SLAM简介
 
-https://zhuanlan.zhihu.com/p/112131317
-
-多视角立体视觉简介
-
 http://www.cnblogs.com/gaoxiang12/p/5560360.html
 
 SLAM中的EKF，UKF，PF原理简介

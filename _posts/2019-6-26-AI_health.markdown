@@ -197,6 +197,10 @@ https://mp.weixin.qq.com/s/5MbMdMhMvPLCEu32r5l59Q
 
 MedMNIST：上海交大发布医学影像领域的MNIST
 
+https://mp.weixin.qq.com/s/clPpAveascHt7xwPr83HvA
+
+Pair，医学图像标注神器
+
 # 可视化
 
 ![](/images/img2/data_visual.png)
@@ -366,23 +370,3 @@ https://mp.weixin.qq.com/s/paIumcvQOsACntKM8YwcbA
 https://mp.weixin.qq.com/s/MMzvZA55Xb2sOA7rJiXiEw
 
 那些酷炫的深度学习网络图怎么画出来的？
-
-https://mp.weixin.qq.com/s/CqvranTh9dawJW5DP-oHpw
-
-手把手教你将矩阵画成张量网络图
-
-https://mp.weixin.qq.com/s/SWpgNMDIRfRugWBhMyGrTQ
-
-交互式《几何原本》再现江湖
-
-https://visualgo.net/zh
-
-一个数据结构和算法的可视化网站
-
-https://mp.weixin.qq.com/s/ZuzmCHoo4i8e5TjZUOTPGg
-
-17种经典图表总结，轻松玩转数据可视化！
-
-https://mp.weixin.qq.com/s/zDXEOHnmmFYYDuWU1ORzFQ
-
-Python中的时间序列数据可视化的完整指南

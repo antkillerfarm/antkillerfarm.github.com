@@ -249,6 +249,10 @@ https://mp.weixin.qq.com/s/e80sWpiXykKHnq6RaLGEyQ
 
 GBDT与LR的区别总结
 
+https://www.cnblogs.com/always-fight/p/9400346.html
+
+GBDT用于分类问题
+
 # 关联规则挖掘
 
 ## 基本概念

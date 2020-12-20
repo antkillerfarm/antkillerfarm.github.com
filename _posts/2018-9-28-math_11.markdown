@@ -7,6 +7,22 @@ category: math
 * toc
 {:toc}
 
+# 平稳离散时间随机过程（续）
+
+## 选择ARIMA的阶数
+
+如前所述，ARIMA(p,d,q)除了一些参数之外，还包括p，d，p这三个阶数的超参数。
+
+AIC信息准则即Akaike information criterion，是衡量统计模型拟合优良性(Goodness of fit)的一种标准，由于它为日本统计学家赤池弘次创立和发展的，因此又称赤池信息量准则。AIC方法主要使用了KL散度。
+
+MDL(minimum description length,最小描述长度) 原理是Rissane在研究通用编码时提出的。其基本原理是选择总描述长度最小的模型。
+
+参考：
+
+https://mp.weixin.qq.com/s/66lY17sOO83Q-xhvQi72dw
+
+周期性时间序列的预测
+
 # 功率谱
 
 随机过程（设时间序列为$$u(n)$$）二阶统计：
@@ -242,11 +258,3 @@ $$K_\text{i}$$被称为积分系数。积分环节的意义就相当于你增加
 $$u(t) = K_\text{p} e(t) + K_\text{i} \int_0^t e(\tau) \,d\tau + K_\text{d} \frac{de(t)}{dt}\tag{3}$$
 
 $$K_\text{d}$$被称为微分系数。由于$$c(t)$$的变化不可能事先得知，因此，微分环节只能减小$$c(t)$$的变化所造成的影响，而不能消除。
-
-公式3在Laplace域可写做：
-
-$$L(s) = K_\text{p} + K_\text{i}/s + K_\text{d} s\tag{4}$$
-
-从公式4可以看出，PID controller的数学原理和锁相环（Phase-locked loop）非常类似，它们实际上都是Feedback Control系统。
-
-![](/images/article/PLL.png)

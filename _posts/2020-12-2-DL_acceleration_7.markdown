@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度加速（七）——模型压缩与加速进阶（2）
+title:  深度加速（七）——模型压缩与加速进阶
 category: DL acceleration 
 ---
 

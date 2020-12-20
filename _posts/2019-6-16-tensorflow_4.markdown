@@ -23,23 +23,15 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tenso
 
 第一个例子中，我对CPU的计算能力还没有切肤之痛，但在这里使用CPU差不多要花半个小时时间。。。
 
-## 框架怀古（2017.9）
-
-http://deeplearning.net/
-
-这个网站是Theano的主站，也是我最早接触DL时浏览的网站。其时，我虽然对DL有浓厚的兴趣，但尚未以此作为工作内容。
-
-从该网站提供的招聘信息来看，Caffe、Theano、Torch是当时主流的三大框架库。
-
-岂料时隔一年半载之后，这三大框架都渐趋式微。
-
-Caffe被Caffe 2替代，但使用的广泛度仍超过后者。
-
-Theano被同样基于计算图的TensorFlow淘汰。2017年9月停止更新。
-
-Torch相对变动最小，它被PyTorch替代。这更可以看作是python对于lua的胜利。
-
 # TensorFlow
+
+## TensorSensor
+
+https://mp.weixin.qq.com/s/ZxmoBcWJa7luGOHQ32ru1A
+
+推荐一个快速定位深度学习代码bug的炼丹神器
+
+## 参考
 
 https://mp.weixin.qq.com/s/t1QFIOq-VBNOrSm0zW-PlQ
 
@@ -400,3 +392,15 @@ https://mp.weixin.qq.com/s/ntHkMIef1o2-FF-AJf_bZQ
 https://mp.weixin.qq.com/s/7rTmEBfh613SrNnTQvfSjw
 
 懒人福利：不写代码调优深度模型，谷歌开源的“What-If”了解一下
+
+https://mp.weixin.qq.com/s/eX3LWYiSH-KObH_7F_3QCA
+
+TensorFlow 1.11.0发布，一键多GPU
+
+https://mp.weixin.qq.com/s/316VVXLQfeIsKNk4ld-VRw
+
+TensorFlow语义分割套件开源了ECCV18旷视科技BiSeNet实时分割算法
+
+https://mp.weixin.qq.com/s/XI1J4ardEWKP4UQ4IXZGTQ
+
+TensorFlow Hub,给您带来全新的Web体验

@@ -354,3 +354,7 @@ https://zhuanlan.zhihu.com/p/113701629
 https://mp.weixin.qq.com/s/L8eqDp62rMR6Lyco0uGQUQ
 
 南加州大学等开源元学习研究库learn2learn
+
+https://mp.weixin.qq.com/s/BZEqg8pBJ8mcJZhfVAVn8g
+
+最新《元学习神经架构、初始权值、超参数和算法组件》报告，附视频与PPT

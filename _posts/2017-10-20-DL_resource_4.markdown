@@ -9,32 +9,6 @@ category: resource
 
 # DL参考资源
 
-## 缺陷检测
-
-https://mp.weixin.qq.com/s/Bh4zY2toTTcVdsc4ri56ZQ
-
-复杂场景下的复杂缺陷检测方法--深度学习算法综述
-
-https://mp.weixin.qq.com/s/bbFDJ6PjjDZqdnPLMqBuKA
-
-秒杀DeepLabv3+与UNet的表面缺陷检测网络
-
-https://mp.weixin.qq.com/s/UHjGE5VNoVguYMylT6SLjg
-
-基于特征的图像配准用于缺陷检测
-
-https://mp.weixin.qq.com/s/MjG2YZWe80sN5eqWpQfxOw
-
-基于深度学习的表面缺陷检测方法综述
-
-https://mp.weixin.qq.com/s/15iowD4AocB6Ut_j8kGHeg
-
-一种先分割后分类的两阶段同步端到端缺陷检测方法
-
-https://mp.weixin.qq.com/s/Jb4UgRB1kC6c2_CzSQDKeg
-
-使用计算机视觉的方法在钢铁平面上检测焊接缺陷
-
 ## 参考
 
 https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748834&idx=3&sn=805564d2d9956dff6bb888ccb61e9b7b
@@ -358,3 +332,29 @@ https://zhuanlan.zhihu.com/p/40984645
 http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201703/t20170310_1471429.html
 
 国家统计局：最新县及县以上行政区划代码
+
+# 目标检测进阶++++++
+
+https://mp.weixin.qq.com/s/psXJNlEawZlQ-ZdktDpjOw
+
+目标检测小tricks之样本不均衡处理
+
+https://zhuanlan.zhihu.com/p/54334986
+
+TridentNet：处理目标检测中尺度变化新思路
+
+https://mp.weixin.qq.com/s/eODjZUQQiROID9i4WOeEFQ
+
+三分支网络——目前目标检测性能最佳网络框架
+
+https://zhuanlan.zhihu.com/p/59915784
+
+目标检测中的Consistent Optimization
+
+https://mp.weixin.qq.com/s/ts4WFnuN4cHLfUh8--96Kw
+
+Libra R-CNN：全面平衡的目标检测器
+
+https://mp.weixin.qq.com/s/groq55Cbts272k1mfhJwaQ
+
+超越bounding box的代表性点集：视觉物体表示的新方法

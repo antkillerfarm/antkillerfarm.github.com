@@ -269,6 +269,10 @@ https://mp.weixin.qq.com/s/YSDB6SSrU7xlzZ73PrjIAw
 
 比赛杀器LightGBM常用操作总结！
 
+https://mp.weixin.qq.com/s/_y16bW-afo9gOI5ObMBRYQ
+
+Kaggle神器LightGBM最全解读！
+
 # CatBoost
 
 这是Yandex推出的Boost工具包。

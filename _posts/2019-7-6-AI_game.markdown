@@ -306,3 +306,21 @@ AI芯片技术发展
 https://mp.weixin.qq.com/s/9fBe6MsUOCDhtp4MSfP2jg
 
 AI处理器热潮正在消退
+
+# 人脸检测/识别+++
+
+https://mp.weixin.qq.com/s/bAlaCWg4OEprpoZqQFQg1w
+
+百度提出PyramidBox人脸检测算法
+
+https://mp.weixin.qq.com/s/CYZvFb7kryE-8HV3teGRzA
+
+有效遮挡检测的鲁棒人脸识别
+
+https://mp.weixin.qq.com/s/XTIl505glmfCItuiwuPLwg
+
+人脸聚类——Linkage Based Face Clustering via GCN
+
+https://mp.weixin.qq.com/s/fpnq3rkcmckip30a4SlysQ
+
+三维人脸识别研究进展综述

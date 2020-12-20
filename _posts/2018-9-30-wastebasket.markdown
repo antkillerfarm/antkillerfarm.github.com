@@ -107,10 +107,6 @@ https://zhuanlan.zhihu.com/p/26645548
 
 支付宝集五福活动五福是随机给定的吗?
 
-https://wenku.baidu.com/view/209d2f8183d049649b665894.html
-
-超纯水18.2的意义
-
 https://mp.weixin.qq.com/s/Kake5sQm79L2j_uDqKfznQ
 
 在《我的世界》里从零打造一台计算机有多难？复旦本科生大神花费了一年心血
@@ -185,10 +181,6 @@ https://mp.weixin.qq.com/s/KUr8kkHov0XgolEo0y6z8g
 
 不同颜色的尿液颜，是怎么形成的？
 
-https://mp.weixin.qq.com/s/IcY_RfIpioEBC493bEtUdw
-
-计算机鼻祖的鼻祖-差分机：机械史上的最强大脑，最复杂的巅峰之作
-
 https://mp.weixin.qq.com/s/KJyvT_MsD2DZ6QvwXh32ug
 
 假如把地球46亿年历史压缩到一天
@@ -211,18 +203,6 @@ https://mp.weixin.qq.com/s/ELC60377pzaFwJv7czOneQ
 
 15种偶然制造的东西，居然改变了世界！
 
-https://zhuanlan.zhihu.com/p/71793554
-
-最美的公式：你也能懂的麦克斯韦方程组（积分篇）
-
-https://zhuanlan.zhihu.com/p/78503083
-
-最美的公式：你也能懂的麦克斯韦方程组（微分篇）
-
-https://zhuanlan.zhihu.com/p/81867668
-
-见证奇迹的时刻：如何从麦克斯韦方程组推出电磁波
-
 https://mp.weixin.qq.com/s/aUYieCVLLom7EaWIhfccRQ
 
 院士写了首《化工之歌》，聊聊化工那些事
@@ -238,22 +218,6 @@ https://mp.weixin.qq.com/s/A9M_2DVqmFQaTdSy2yEJ1A
 https://mp.weixin.qq.com/s/K-ukk-HuztMDCyHWLZaXww
 
 谁是这个世界上最“有名”的科学家？——亚历山大·冯·洪堡（Alexander von Humboldt）
-
-https://mp.weixin.qq.com/s?__biz=MjM5MDE3OTk2Ng==&mid=2657461706&idx=1&sn=589d7a4d65f2e2fdd696100e06b1a257
-
-高考成绩接近满分，却被清华北大拒绝，被称“中国最帅科学家”（中国油田分层开采和化学驱油技术的奠基人——王德民）
-
-https://mp.weixin.qq.com/s/0fdnEWpLvPSbweFh0v4x9A
-
-科学家的浪漫，是用激光画一道彩虹（姜黄素）
-
-https://mp.weixin.qq.com/s/TM8Cc3AI7Vo5H6VnOl3gyw
-
-唯一两获诺贝尔化学奖的科学家，自称“只是把实验室搞砸的家伙”（弗雷德里克·桑格）
-
-https://mp.weixin.qq.com/s/wIaMPdYWHzn9vDpiuWZOVg
-
-解读2019诺贝尔化学奖：他们创造了一个可充电的世界
 
 https://mp.weixin.qq.com/s/NE20FomTJCFd_HSfXTHyjg
 
@@ -279,10 +243,6 @@ https://mp.weixin.qq.com/s/BfQ0qUHpAfmB3_mHvyeCDw
 
 不好！为了一点铅，物理学家和考古学家打起来了！（低本底铅）
 
-https://mp.weixin.qq.com/s/irMd_sRRwZhbTuIXo3na6Q
-
-今天，说一下人工钻石（钻石半导体）
-
 https://mp.weixin.qq.com/s/Rd-rOSV14sNYg0ZXsPdzuQ
 
 60年前构想的未来世界，我们已经实现了50%（《小灵通漫游未来》）
@@ -306,10 +266,6 @@ https://mp.weixin.qq.com/s/tU6Incnq63fT61z6y9E-Jg
 http://www.makertime.org/
 
 一个硬核的geek网站
-
-https://mp.weixin.qq.com/s/ynaXjlSkfFAlW5Wpc4ZhGg
-
-牛顿的超级女粉丝：夏特莱侯爵夫人
 
 https://mp.weixin.qq.com/s/kqTyco7fPXKerBV5ocp8fQ
 
@@ -341,7 +297,7 @@ https://www.zhihu.com/answer/303210942
 
 瓦伊昂大坝
 
-----
+# 机械
 
 <video  id="myvideo" width="100%" height="auto" controls="controls" loop="loop">
     你的浏览器不支持HTML5播放此视频
@@ -351,6 +307,20 @@ https://www.zhihu.com/answer/303210942
 https://www.zhihu.com/question/22910286
 
 日本92式重机枪的弹板供弹系统被诟病为一个败笔，为什么不直接在战场上改装成弹链供弹呢？
+
+----
+
+https://mp.weixin.qq.com/s/KuIf0oIkLjMTKp2FgAnpyA
+
+一口气做出12只同款雪糕，强迫症都被食物加工流水线治好了
+
+https://mp.weixin.qq.com/s/-Utzrysum7Io1DVCVExywQ
+
+真的名媛，敢于突破被洗碗支配的恐惧
+
+https://mp.weixin.qq.com/s/IcY_RfIpioEBC493bEtUdw
+
+计算机鼻祖的鼻祖-差分机：机械史上的最强大脑，最复杂的巅峰之作
 
 # 气象
 
@@ -387,3 +357,29 @@ https://mp.weixin.qq.com/s/mzAgmh9JDQYAV2S9uJBfjw
 https://mp.weixin.qq.com/s/5fRHmNqQybS9GvKxpuc2TQ
 
 是不是真的“高处不胜寒”？
+
+# 化学+
+
+https://mp.weixin.qq.com/s/irMd_sRRwZhbTuIXo3na6Q
+
+今天，说一下人工钻石（钻石半导体）
+
+https://mp.weixin.qq.com/s?__biz=MjM5MDE3OTk2Ng==&mid=2657461706&idx=1&sn=589d7a4d65f2e2fdd696100e06b1a257
+
+高考成绩接近满分，却被清华北大拒绝，被称“中国最帅科学家”（中国油田分层开采和化学驱油技术的奠基人——王德民）
+
+https://mp.weixin.qq.com/s/0fdnEWpLvPSbweFh0v4x9A
+
+科学家的浪漫，是用激光画一道彩虹（姜黄素）
+
+https://mp.weixin.qq.com/s/TM8Cc3AI7Vo5H6VnOl3gyw
+
+唯一两获诺贝尔化学奖的科学家，自称“只是把实验室搞砸的家伙”（弗雷德里克·桑格）
+
+https://mp.weixin.qq.com/s/wIaMPdYWHzn9vDpiuWZOVg
+
+解读2019诺贝尔化学奖：他们创造了一个可充电的世界
+
+https://wenku.baidu.com/view/209d2f8183d049649b665894.html
+
+超纯水18.2的意义

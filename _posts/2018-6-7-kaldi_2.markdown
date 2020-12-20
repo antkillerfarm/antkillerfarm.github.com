@@ -252,6 +252,26 @@ https://speechbrain.github.io/
 
 # 可视化+
 
+https://mp.weixin.qq.com/s/CqvranTh9dawJW5DP-oHpw
+
+手把手教你将矩阵画成张量网络图
+
+https://mp.weixin.qq.com/s/SWpgNMDIRfRugWBhMyGrTQ
+
+交互式《几何原本》再现江湖
+
+https://visualgo.net/zh
+
+一个数据结构和算法的可视化网站
+
+https://mp.weixin.qq.com/s/ZuzmCHoo4i8e5TjZUOTPGg
+
+17种经典图表总结，轻松玩转数据可视化！
+
+https://mp.weixin.qq.com/s/zDXEOHnmmFYYDuWU1ORzFQ
+
+Python中的时间序列数据可视化的完整指南
+
 https://mp.weixin.qq.com/s/mGgOhuF5PVWzB5cie_ox0A
 
 Github上10个开源免费的后台控制面板你值得拥有！

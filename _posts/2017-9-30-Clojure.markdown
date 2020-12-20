@@ -412,15 +412,3 @@ https://mp.weixin.qq.com/s/6HKCnN2HDi84bwjElhZBcQ
 https://mp.weixin.qq.com/s/sXv9XIIVDsflXr0FdrGM1A
 
 垃圾回收器是如何演进的？
-
-https://mp.weixin.qq.com/s/0BEqgGEuC5cfqeDWx728Ig
-
-8张图带你理解Java内存区域
-
-https://mp.weixin.qq.com/s/_sLQiyNm92n2LA5YMNTocQ
-
-Java字符串String那些事
-
-https://mp.weixin.qq.com/s/C-hLyeshiENJ_wmUltOpbw
-
-JVM完整深入解析

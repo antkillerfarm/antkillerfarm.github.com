@@ -414,3 +414,7 @@ Performer:基于正交随机特征的快速注意力计算
 https://mp.weixin.qq.com/s/eWQLkiJ_XIo7LpTUE9c0qA
 
 Transformer中的相对位置编码
+
+https://mp.weixin.qq.com/s/V0NAOgluyZN9P8iuhMKRwQ
+
+Transformer为啥在NER上表现不好

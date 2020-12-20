@@ -99,6 +99,10 @@ http://jekyllthemes.org/
 
 jekyll的官方主题站点
 
+https://mp.weixin.qq.com/s/ih0jurQ4OzvLh3lmhGGxTA
+
+Ruby 3编程: 从小白到专家，598页pdf
+
 ## GitHub下载速度慢
 
 219.76.4.4  http://github-cloud.s3.amazonaws.com
@@ -168,6 +172,10 @@ https://mp.weixin.qq.com/s/yoSeUTy13LoKyS1UFKaUbA
 # Markdown
 
 自从我在github建立blog以来，一直都在使用markdown语言。这里仅针对我使用过程中遇到的问题做一个笔记。
+
+https://mp.weixin.qq.com/s/hSbphAIJTjDn_Th7Oab46g
+
+Markdown速查表
 
 ## markdown渲染器
 

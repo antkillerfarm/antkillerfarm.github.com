@@ -1,13 +1,57 @@
 ---
 layout: post
-title:  深度强化学习（八）——AlphaStar, Dota 2, DRL参考资源（1）
+title:  深度强化学习（八）——StarCraft & AI, AlphaStar, Dota 2, DRL参考资源（1）
 category: DRL 
 ---
 
 * toc
 {:toc}
 
-# StarCraft & AI（续）
+# StarCraft & AI
+
+AIIDE（Artificial Intelligence and Interactive Digital Entertainment）
+
+曾经有人设计出一种 “悍马2000（Automation 2000）”的脚本，极限APM达到15000（顶尖职业选手APM大约为200+），实现了一系列诸如“100只狗拆掉20辆坦克”、“机枪兵甩毒爆”、“无双运输机甩牛”等眼花缭乱的壮举。
+
+https://mp.weixin.qq.com/s/zbki0baZw-NjAgZwKcfgFg
+
+《星际争霸》与人工智能
+
+https://mp.weixin.qq.com/s/Jdd7S6JFKRdsVe2w-W01IA
+
+Facebook田渊栋开源游戏平台ELF，简化版《星际争霸》完美测试人工智能
+
+https://mp.weixin.qq.com/s/QD6BdAB332xHoSH3dIfM5Q
+
+学习顶级玩家Replay，人工智能学会了星际争霸的“大局观”
+
+https://mp.weixin.qq.com/s/0Q-Kg6pNVRl3tqv8-wH-bg
+
+Facebook开源史上最大星际争霸AI研究数据集
+
+https://mp.weixin.qq.com/s/KbFvs8EcEfm29zhLCPt0Iw
+
+DeepMind进军星际争霸2，谷歌Facebook打响通用AI战争
+
+https://mp.weixin.qq.com/s/WTRD3wRQ_wSXjjlt7jiwSg
+
+CommandCenter：基于暴雪官方API的星际争霸2 AI Bot
+
+https://mp.weixin.qq.com/s/CQmZcwI4bgrEiWHP0gBLfQ
+
+DeepMind星际争霸2开源机器学习平台入门
+
+https://zhuanlan.zhihu.com/p/28434323
+
+迈向通用人工智能：星际争霸2人工智能研究环境SC2LE完全入门指南
+
+https://zhuanlan.zhihu.com/p/29246185
+
+重现DeepMind星际争霸强化学习算法
+
+https://mp.weixin.qq.com/s/vA9cHv73iHgTy9Q_bk4KCw
+
+DeforGAN：用GAN实现星际争霸开全图外挂！
 
 https://mp.weixin.qq.com/s/x0G-LNCano7qjGdpj-fpCQ
 
@@ -344,71 +388,3 @@ BAIR：基于人类演示&RL的夹爪训练——高效、通用、低成本
 https://mp.weixin.qq.com/s/ADZlLx6gMTFU6IoBCF669g
 
 快1万倍！伯克利提出用深度RL优化SQL查询
-
-https://mp.weixin.qq.com/s/oZDDP59o-1qwfz8prK3nJQ
-
-伯克利最新研究：如何用目标图像进行机器视觉强化学习？
-
-https://mp.weixin.qq.com/s/00zHwpw2xWP2fR9sDHE2Xw
-
-BAIR讲述如何利用深度强化学习控制灵活手
-
-https://mp.weixin.qq.com/s/V7RESEm4xzhW8tXEjKjn1Q
-
-层次强化学习、记忆与预测模型
-
-https://mp.weixin.qq.com/s/aNskPERmekw9yQVb7A3GPQ
-
-Google大脑最新研究成果：使用强化学习实现动态系统的韧性计算
-
-https://mp.weixin.qq.com/s/pJkCOCl6o70le1WsE9p3pg
-
-在全景视频中预测头部运动：一种深度强化学习方法
-
-https://mp.weixin.qq.com/s/fodjmmh_jJMh4hD3m2OrLg
-
-凭借幻想的目标进行视觉强化学习
-
-https://mp.weixin.qq.com/s/6HVSh7_9Akmf6OE8PGNy6Q
-
-怎样让AI完成人类搞不定的任务？OpenAI提出迭代扩增法给AI设目标
-
-https://mp.weixin.qq.com/s/JpZimrHALjuc-H9WF8sPZg
-
-智能体只想看电视？谷歌新型好奇心方法让智能体离开电视继续探索
-
-https://mp.weixin.qq.com/s/dic_ssebe32L30pAUxlP6w
-
-谷歌AI-强化学习中的好奇和拖延
-
-https://mp.weixin.qq.com/s/tieGV_tDWkVVW2YFes4AqA
-
-学习何时做分类决策，深度好奇提出强化学习模型Jumper
-
-https://mp.weixin.qq.com/s/THgo4YzhUN2PUkyI5sSnpw
-
-开源啦：连DeepMind也捉急的游戏，OpenAI给你攻破第一关的高分算法
-
-https://mp.weixin.qq.com/s/loH6M0_U1DVrod0Drkl4eg
-
-深度强化学习教机器人自己穿衣服！
-
-https://mp.weixin.qq.com/s/VqPPQnH22Y-XeojNEZn3YQ
-
-CoRL 2018最佳系统论文：如此鸡贼的机器手，确定不是人在控制？
-
-https://mp.weixin.qq.com/s/eEQhwV1cA4nEgEBcOKDenA
-
-将逆向课程生成用于强化学习：伯克利新研究让智能体掌握全新任务
-
-https://mp.weixin.qq.com/s/cO1VlYGwdRBAbPs7IgvcAA
-
-超越传统强化学习的价值分布方法
-
-https://mp.weixin.qq.com/s/s7c0oleKCmdI2Kh9pDPsXw
-
-强化学习需要批归一化(Batch Norm)吗？
-
-https://mp.weixin.qq.com/s/2nn56lpWe7YYU0CrRYrvbA
-
-强化学习在智能交通灯中的应用

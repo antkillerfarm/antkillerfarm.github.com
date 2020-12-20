@@ -177,6 +177,10 @@ https://mp.weixin.qq.com/s/LreWWlXAQL-dqQBCk93soQ
 
 解读两大精简指令集：RISC-V和MIPS
 
+https://mp.weixin.qq.com/s/JLg6sEwCxTMpo2nyCt50qg
+
+指令集——CPU芯片江湖中的门派标志
+
 https://mp.weixin.qq.com/s/5uie8Ci5dK_wy54Z70Gklg
 
 RISC-V精简到何种程度？能省的都省了！

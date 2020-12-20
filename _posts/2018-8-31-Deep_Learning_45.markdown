@@ -163,22 +163,6 @@ https://mp.weixin.qq.com/s/Kg1HHzXutTCaaxH83rLgiQ
 
 神经网络结构搜索NAS，41页ppt了解最新进展
 
-https://mp.weixin.qq.com/s/MkXBtGq4xt5YOh1-uhMBbg
-
-循环神经网络自动生成程序：谷歌大脑提出“优先级队列训练”
-
-https://mp.weixin.qq.com/s/vctbsYk4LRwrQ7_Hs7fqkg
-
-谷歌大脑发布神经架构搜索新方法：提速1000倍
-
-https://mp.weixin.qq.com/s/9qpZUVoEzWaY8zILc3Pl1A
-
-进化算法+AutoML，谷歌提出新型神经网络架构搜索方法
-
-https://mp.weixin.qq.com/s/HJ5caV1bQi7qVDeNXZ21qg
-
-手把手教你用Cloud AutoML做毒蜘蛛分类器
-
 https://zhuanlan.zhihu.com/p/35050923
 
 跬步至千里：揭秘谷歌AutoML背后的渐进式搜索技术
@@ -190,6 +174,10 @@ https://mp.weixin.qq.com/s/z360mTVRqeDFMBiJ0Q_9SQ
 https://mp.weixin.qq.com/s/2u3_ky2hFe3cldvF74gLDA
 
 机器学习模型的超参数优化
+
+https://mp.weixin.qq.com/s/ODMUcqid2ALPsno0PDuBCQ
+
+详解高效模型设计的自动机器学习流水线
 
 https://mp.weixin.qq.com/s/wGt3Xk_ARqHei-ddU9iXNg
 

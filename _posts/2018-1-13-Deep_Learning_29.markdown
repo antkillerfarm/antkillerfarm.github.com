@@ -261,6 +261,14 @@ https://mp.weixin.qq.com/s/PxNGJ0hcmCo-2zvWD-rfug
 
 GCN作者Thomas Kipf最新Talk：利用图神经网络进行无监督学习
 
+https://mp.weixin.qq.com/s/0lE5n7mp6sc775-f7V2KPw
+
+异质图嵌入综述: 方法、技术、应用和资源
+
+https://mp.weixin.qq.com/s/Ul9BIrJxjlzJwGqRv6E7eg
+
+10分钟了解图嵌入
+
 https://mp.weixin.qq.com/s/t2kjxrcn6O9tbJ-IQELboQ
 
 高君宇：图神经网络在视频分类中的应用
@@ -404,15 +412,3 @@ https://mp.weixin.qq.com/s/diIzbc0tpCW4xhbIQu8mCw
 https://mp.weixin.qq.com/s/chiHw5gKnJyTJTQeF6gViw
 
 在向量空间中启用网络分析和推理，清华大学崔鹏博士最新分享
-
-https://mp.weixin.qq.com/s/kQlxLDHLI6xxFzwJVjFj7w
-
-GraRep: 基于全局结构信息的图结点表示学习
-
-https://mp.weixin.qq.com/s/aGP8pcsCmEdjdCWVjA82Jg
-
-近期必读的5篇CVPR 2019图卷积网络相关论文和代码
-
-https://mp.weixin.qq.com/s/XApSbi-Pg-AeYGkPN3fldg
-
-旷视研究院提出ML-GCN：基于图卷积网络的多标签图像识别模型

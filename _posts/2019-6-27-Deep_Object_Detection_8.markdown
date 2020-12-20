@@ -9,6 +9,54 @@ category: Deep Object Detection
 
 # Anchor-Free（续）
 
+https://zhuanlan.zhihu.com/p/62198865
+
+最新的Anchor-Free目标检测模型FCOS，现已开源！
+
+https://mp.weixin.qq.com/s/N93TrVnUuvAgfcoHXevTHw
+
+FCOS: 最新的one-stage逐像素目标检测算法
+
+https://mp.weixin.qq.com/s/ebTbbo-IeqyzDqSn2bgjsQ
+
+带你捋一捋anchor-free的检测模型：FCOS
+
+https://zhuanlan.zhihu.com/p/156112318
+
+FCOS算法的原理与实现
+
+https://mp.weixin.qq.com/s/Q-DSG-ZAW0z0X6LHDLmFFA
+
+FCOS：全卷积一阶段Anchor Free物体检测器，多种视觉任务的统一框架
+
+https://zhuanlan.zhihu.com/p/66156431
+
+从Densebox到Dubox：更快、性能更优、更易部署的anchor-free目标检测
+
+https://zhuanlan.zhihu.com/p/63273342
+
+聊聊Anchor的"前世今生"（上）
+
+https://zhuanlan.zhihu.com/p/68291859
+
+聊聊Anchor的"前世今生"（下）
+
+https://zhuanlan.zhihu.com/p/62372897
+
+物体检测的轮回：anchor-based与anchor-free
+
+https://mp.weixin.qq.com/s/m_PvEbq2QbTXNmj_gObKmQ
+
+Anchor-free目标检测之ExtremeNet
+
+https://mp.weixin.qq.com/s/LGeNgnXfYaVVAc_37j6-2A
+
+Anchor Free及Transformer时代
+
+https://mp.weixin.qq.com/s/52YBmlHioRkUgetZWHMZOw
+
+Anchor-free目标检测：工业应用更友好的新网络
+
 https://mp.weixin.qq.com/s/nI_3kilFCsDHhtjFhRKytA
 
 RepPoints:替代边界框，基于点集的物体表示新方法
@@ -45,11 +93,15 @@ https://mp.weixin.qq.com/s/7mHhltqDcnYZdHWoRS_EBg
 
 YOLO之外的另一选择，手机端97FPS的Anchor-Free目标检测模型NanoDet现已开源
 
+https://zhuanlan.zhihu.com/p/336016003
+
+OneNet: End-to-End One-Stage Object Detection
+
 # 其它目标检测网络
 
 ## A-Fast-RCNN
 
-A-Fast-RCNN首次将对抗学习引入到了目标检测领域，idea是非常创新的。
+A-Fast-RCNN首次将对抗学习引入到了目标检测领域，idea在当时是非常创新的。
 
 http://blog.csdn.net/jesse_mx/article/details/72955981
 
@@ -205,6 +257,14 @@ https://mp.weixin.qq.com/s/pDjszZk43vuVO6kY3bRczw
 
 ODTK：来自NVIDIA的旋转框物体检测工具箱
 
+https://zhuanlan.zhihu.com/p/337272217
+
+Dynamic Anchor Learning for Object Detection
+
+https://mp.weixin.qq.com/s/Zf6_L9MfKd0AhhgsGSi6EA
+
+旋转目标检测中anchor匹配机制的问题和一些思考
+
 # 小目标检测
 
 https://mp.weixin.qq.com/s/8k0Mhver2mLnKmV8rVqJHQ
@@ -323,18 +383,6 @@ https://mp.weixin.qq.com/s/S6sz5dPgGNcJvrIAZ3ZjGg
 
 基于深度学习的通用物体检测算法对比探索
 
-https://zhuanlan.zhihu.com/p/59915784
-
-目标检测中的Consistent Optimization
-
-https://mp.weixin.qq.com/s/ts4WFnuN4cHLfUh8--96Kw
-
-Libra R-CNN：全面平衡的目标检测器
-
-https://mp.weixin.qq.com/s/groq55Cbts272k1mfhJwaQ
-
-超越bounding box的代表性点集：视觉物体表示的新方法
-
 https://mp.weixin.qq.com/s/BXwL33qOf3f7BtJvHsi23Q
 
 目标检测：Segmentation is All You Need？
@@ -354,51 +402,3 @@ https://mp.weixin.qq.com/s/p9XaI8PSG0o1NWlkmCIn7w
 https://mp.weixin.qq.com/s/reNCLvOyJHkJZimnMpbIig
 
 目标检测算法优化技巧：Bag of Freebies for Training Object Detection
-
-https://mp.weixin.qq.com/s/psXJNlEawZlQ-ZdktDpjOw
-
-目标检测小tricks之样本不均衡处理
-
-https://zhuanlan.zhihu.com/p/54334986
-
-TridentNet：处理目标检测中尺度变化新思路
-
-https://mp.weixin.qq.com/s/eODjZUQQiROID9i4WOeEFQ
-
-三分支网络——目前目标检测性能最佳网络框架
-
-https://mp.weixin.qq.com/s/oF3MAkl1UikRkOhrj3equw
-
-深度学习的目标检测算法是如何解决尺度问题的？
-
-https://mp.weixin.qq.com/s/oxStDMh90jB7_EY4vqja2w
-
-目标检测论文阅读：DetNet
-
-https://zhuanlan.zhihu.com/p/55972055
-
-SimpleDet:一套简单通用的目标检测与物体识别框架
-
-https://zhuanlan.zhihu.com/p/55854246
-
-Guided Anchoring: 物体检测器也能自己学Anchor
-
-https://mp.weixin.qq.com/s/-G47vOGx2iNQCarYRAiNPg
-
-基于区域分解集成的目标检测
-
-https://mp.weixin.qq.com/s/rlmgN0LbUfd2n9MI8OMT2w
-
-性能大幅度提升（速度&遮挡）:基于区域分解&集成的目标检测
-
-https://zhuanlan.zhihu.com/p/59398728
-
-CVPR2019目标检测方法进展综述
-
-https://mp.weixin.qq.com/s/apLEAMshqd3O8nU8Q0Wycg
-
-李祥泰：Context modeling in semantic segmentation
-
-https://mp.weixin.qq.com/s/bzgMWR2kzAI9NeXEY92GmA
-
-目标检测任务的优化策略tricks

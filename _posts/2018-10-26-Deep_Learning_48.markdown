@@ -147,6 +147,52 @@ https://mp.weixin.qq.com/s/GFIxA9kEGNJ9rg96mRw0PQ
 
 自然语言语义代码搜索之路
 
+## ANN
+
+随着DL的发展，出现了很多神经网络架构的聚类算法，这些算法一般统称ANN。
+
+常见的有：
+
+Spotify’s ANNOY
+
+Google’s ScaNN
+
+Facebook’s Faiss
+
+HNSW（Hierarchical Navigable Small World graphs）
+
+https://zhuanlan.zhihu.com/p/78561555
+
+KNN的实现方式有哪些？
+
+https://mp.weixin.qq.com/s/92Dld5zg5vLtpkdnhmSldg
+
+K近邻算法哪家强？KDTree、Annoy、HNSW原理和使用方法介绍
+
+https://mp.weixin.qq.com/s/Gxgm8r5wqZn-oUS13HC5Xg
+
+如何选择最佳的最近邻算法
+
+https://mp.weixin.qq.com/s/Vzj0xxpW-xBceOpiwy0WPw
+
+Facebook工程实践：语义向量召回之ANN检索
+
+https://mp.weixin.qq.com/s/dsxyQLHcOsNIlNAIf8FQfw
+
+Facebook开源相似性搜索类库Faiss，超越已知最快算法8.5倍
+
+https://mp.weixin.qq.com/s/zLBq2VVSAr0AUtozK7qqVA
+
+浅析Faiss在推荐系统中的应用及原理
+
+https://mp.weixin.qq.com/s/l015FcoP-P2z5BmaTNXpvg
+
+使用Sentence Transformers和Faiss构建语义搜索引擎
+
+https://zhuanlan.zhihu.com/p/210736523
+
+使用Faiss进行海量特征的相似度匹配
+
 ## 参考
 
 https://github.com/harpribot/awesome-information-retrieval
@@ -297,80 +343,10 @@ https://mp.weixin.qq.com/s/s8swIdAPw_VeAWnZTL1riA
 
 搜你所想，从Query意图识别到类目识别的演变
 
-https://mp.weixin.qq.com/s/l015FcoP-P2z5BmaTNXpvg
-
-使用Sentence Transformers和Faiss构建语义搜索引擎
-
 https://mp.weixin.qq.com/s/dO3eDlhCSYRh3pjbI_gsQg
 
 深度学习图像检索(CBIR): 十年之大综述
 
-# 人脸检测/识别+
+https://mp.weixin.qq.com/s/q4aPtUYi27h-0sqD4bokQQ
 
-https://mp.weixin.qq.com/s/pmnb_WnncL12T1IZoso5DA
-
-DeepID
-
-https://mp.weixin.qq.com/s/kH3-WUX4rc2SaLJcGzVLcQ
-
-如何检测极小人脸？试试超分辨率
-
-https://github.com/ShiqiYu/libfacedetection
-
-libfacedetection算法开源
-
-https://mp.weixin.qq.com/s/DkvQ86tgU4DarsmY_qTLdg
-
-最快人脸检测遇敌手！ZQCNN vs libfacedetection
-
-https://mp.weixin.qq.com/s/PsToV8Z17tRzXW_AbaMNmg
-
-Blazeface人脸检测器
-
-https://mp.weixin.qq.com/s/5ANMZNaR2ayYMUQEJ6aM3w
-
-人脸识别基于通用表示学习
-
-https://mp.weixin.qq.com/s/jrynQZgoljFi6zdVKWo5nw
-
-在浏览器中实现AR试妆
-
-https://mp.weixin.qq.com/s/lr9OVNiIN0x7k4cmNZoCUw
-
-用于人脸检测的SSH算法
-
-https://mp.weixin.qq.com/s/A5-Z6APwS1iFCUgYxtYNyA
-
-重磅！GroupFace人脸识别，刷新9个数据集SOTA
-
-https://mp.weixin.qq.com/s/-VknGwKKY14cT-lZ7sC43A
-
-人脸识别--基于深度学习以人类为中心的图像理解
-
-https://mp.weixin.qq.com/s/bAlaCWg4OEprpoZqQFQg1w
-
-百度提出PyramidBox人脸检测算法
-
-https://mp.weixin.qq.com/s/CYZvFb7kryE-8HV3teGRzA
-
-有效遮挡检测的鲁棒人脸识别
-
-https://mp.weixin.qq.com/s/XTIl505glmfCItuiwuPLwg
-
-人脸聚类——Linkage Based Face Clustering via GCN
-
-https://mp.weixin.qq.com/s/CR4Nf_RklcXA45mswPv8Zw
-
-腾讯优图开源人脸检测算法DSFD，刷新两项数据集纪录
-
-https://mp.weixin.qq.com/s/B8r2YEd9UbKMTT8Tup2Y_w
-
-腾讯（优图）新技术的人脸检测（DSFD）
-
-https://mp.weixin.qq.com/s/iI-q0s8aSojeDFbasiFVKw
-
-人脸检测器：对DSFD的理解
-
-https://zhuanlan.zhihu.com/p/62954487
-
-旷视研究院新出8000点人脸关键点，堪比电影级表情捕捉
+再谈搜索中的Query扩展技术

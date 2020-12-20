@@ -358,48 +358,24 @@ https://mp.weixin.qq.com/s/NlJ4-b5SjIjPGgvLUuSxFw
 
 孩子，有时候并不是生活欺骗了你，而是你可能还不懂概率统计……
 
-# Loss function详解+
+# Loss function详解++
 
-https://mp.weixin.qq.com/s/CPfhGxig9BMAgimBSOLy3g
+https://mp.weixin.qq.com/s/x0aBo-w669_2FyCGKWJ4iQ
 
-用于图像检索的等距离等分布三元组损失函数
+理解计算机视觉中的损失函数
 
-https://www.zhihu.com/question/375794498
+https://mp.weixin.qq.com/s/UjBCjwNDIxDoAoyQAf8V6A
 
-深度学习的多个loss如何平衡？
+旷视研究院提出Circle Loss，革新深度特征学习范式
 
-https://mp.weixin.qq.com/s/tzY_lG0F9dP5Q-LmwuHLmQ
+https://mp.weixin.qq.com/s/5RpbXzuHp_tR6C_nBdiXGA
 
-常见损失函数和评价指标总结
+Circle Loss：从统一的相似性对的优化角度进行深度特征学习
 
-https://mp.weixin.qq.com/s/lw9frtqocqsS-q2KGfzO1Q
+https://mp.weixin.qq.com/s/LOewKsxtWm7dFJS6ioryuw
 
-深入理解计算机视觉中的损失函数
+Siamese网络，Triplet Loss以及Circle Loss的解释
 
-https://mp.weixin.qq.com/s/_HQ5an_krRCYMVnwEgGJow
+https://zhuanlan.zhihu.com/p/58883095
 
-深度学习的多个loss如何平衡 & 有哪些“魔改”损失函数，曾经拯救了你的深度学习模型？
-
-https://blog.csdn.net/shanglianlm/article/details/85019768
-
-十九种损失函数
-
-https://mp.weixin.qq.com/s/8oKiVRjtPQIH1D2HltsREQ
-
-图像分割损失函数最全面、最详细总结
-
-https://zhuanlan.zhihu.com/p/158853633
-
-一文理解Ranking Loss/Margin Loss/Triplet Loss
-
-https://zhuanlan.zhihu.com/p/235533342
-
-目标检测：Loss整理
-
-https://zhuanlan.zhihu.com/p/191355122
-
-NLP样本不均衡之常用损失函数对比
-
-https://mp.weixin.qq.com/s/KL_D8pWtcXCJHz7dd70jyw
-
-Face Recognition Loss on Mnist with Pytorch
+常见的损失函数(loss function)总结

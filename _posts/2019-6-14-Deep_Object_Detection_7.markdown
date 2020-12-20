@@ -7,6 +7,28 @@ category: Deep Object Detection
 * toc
 {:toc}
 
+# FPN（续）
+
+https://zhuanlan.zhihu.com/p/58603276
+
+FPN-目标检测
+
+https://zhuanlan.zhihu.com/p/70523190
+
+总结-CNN中的目标多尺度处理
+
+https://mp.weixin.qq.com/s/xMQA97k0USl69v1MC86HKA
+
+多尺度特征金字塔结构用于目标检测
+
+https://mp.weixin.qq.com/s/rMR98woa1y_sjSFgG24cGQ
+
+常见特征金字塔网络FPN及变体
+
+https://mp.weixin.qq.com/s/ZqNRxexEFRxVXI7-bGPx0A
+
+Feature Pyramid Network详解特征金字塔网络FPN的来龙去脉
+
 # RetinaNet
 
 RetinaNet也是Tsung-Yi Lin的作品（2017.8）。
@@ -253,6 +275,20 @@ Anchor-Free模型主要是为了解决Two-stage模型运算速度较慢的问题
 
 《DenseBox: Unifying Landmark Localization and Object Detection》
 
+## Sparse R-CNN
+
+https://zhuanlan.zhihu.com/p/310058362
+
+Sparse R-CNN
+
+https://mp.weixin.qq.com/s/wLESASiP3hofrDKH7yk1aA
+
+Sparse R-CNN: 在dense（单阶段），dense2sparse（二阶段）之外的另一种物体检测模式
+
+https://mp.weixin.qq.com/s/LRSY2YsZGB_Vye7EbvhXpA
+
+Sparse R-CNN: 稀疏的目标检测，武装Fast RCNN
+
 ## 参考
 
 https://mp.weixin.qq.com/s/T7DDWvtvCULfjcDmljvx5Q
@@ -278,51 +314,3 @@ Anchor free深度学习的目标检测方法
 https://mp.weixin.qq.com/s/DoN-vha1H-2lHhbFOaVS8w
 
 FoveaBox：目标检测新纪元，无Anchor时代来临！
-
-https://zhuanlan.zhihu.com/p/62198865
-
-最新的Anchor-Free目标检测模型FCOS，现已开源！
-
-https://mp.weixin.qq.com/s/N93TrVnUuvAgfcoHXevTHw
-
-FCOS: 最新的one-stage逐像素目标检测算法
-
-https://mp.weixin.qq.com/s/ebTbbo-IeqyzDqSn2bgjsQ
-
-带你捋一捋anchor-free的检测模型：FCOS
-
-https://zhuanlan.zhihu.com/p/156112318
-
-FCOS算法的原理与实现
-
-https://mp.weixin.qq.com/s/Q-DSG-ZAW0z0X6LHDLmFFA
-
-FCOS：全卷积一阶段Anchor Free物体检测器，多种视觉任务的统一框架
-
-https://zhuanlan.zhihu.com/p/66156431
-
-从Densebox到Dubox：更快、性能更优、更易部署的anchor-free目标检测
-
-https://zhuanlan.zhihu.com/p/63273342
-
-聊聊Anchor的"前世今生"（上）
-
-https://zhuanlan.zhihu.com/p/68291859
-
-聊聊Anchor的"前世今生"（下）
-
-https://zhuanlan.zhihu.com/p/62372897
-
-物体检测的轮回：anchor-based与anchor-free
-
-https://mp.weixin.qq.com/s/m_PvEbq2QbTXNmj_gObKmQ
-
-Anchor-free目标检测之ExtremeNet
-
-https://mp.weixin.qq.com/s/LGeNgnXfYaVVAc_37j6-2A
-
-Anchor Free及Transformer时代
-
-https://mp.weixin.qq.com/s/52YBmlHioRkUgetZWHMZOw
-
-Anchor-free目标检测：工业应用更友好的新网络

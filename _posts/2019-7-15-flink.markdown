@@ -283,6 +283,10 @@ https://mp.weixin.qq.com/s/5UtpFg7Zmm6WY0OOxzeueQ
 
 TensorFlow与Apache Arrow数据集搭配最佳实践
 
+https://mp.weixin.qq.com/s/2LTu4wIFnkfiQE8bgJ5wOg
+
+Apache Arrow：一种适合异构大数据系统的内存列存数据格式标准
+
 # Ceph
 
 Ceph是一种为提高性能、可靠性和可扩展性而设计的统一的、分布式的存储系统。
@@ -371,6 +375,10 @@ https://mp.weixin.qq.com/s/TjFSVf0OkT_4ATk21mxpEQ
 
 Redis的过期删除策略和内存淘汰机制
 
+https://mp.weixin.qq.com/s/Y9SdWSELsgkdV2sO26SBSA
+
+推荐几款Redis可视化工具
+
 ## Pika
 
 Pika是一个可持久化的大容量redis存储服务，兼容string、hash、list、zset、set的绝大部分接口(兼容详情)，解决redis由于存储数据量巨大而导致内存不够用的容量瓶颈。
@@ -378,3 +386,13 @@ Pika是一个可持久化的大容量redis存储服务，兼容string、hash、l
 官网：
 
 https://github.com/Qihoo360/pika/
+
+# Clickhouse
+
+Clickhouse是俄罗斯yandex公司于2016年开源的一个列式数据库管理系统，可提供超越hive sql和spark sql的查询性能的OLAP引擎。
+
+参考：
+
+https://mp.weixin.qq.com/s/5ws-sT-AYswdx3xQuqmPqQ
+
+Clickhouse的实践之路

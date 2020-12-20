@@ -351,3 +351,37 @@ MegEngine是旷视提出的深度学习框架。
 官网:
 
 https://megengine.org.cn/
+
+# Linux参考资源++++
+
+https://mp.weixin.qq.com/s/A8TnhOFLQOhEqphE760yvw
+
+15个相见恨晚的Linux神器，你可能一个都没见过
+
+https://mp.weixin.qq.com/s/ejGjsGA1ijPP--j3BLcEFA
+
+Linux并发与同步
+
+https://mp.weixin.qq.com/s/CAPU8bjJWobQs6JHHMasvQ
+
+Linux服务端最大并发数是多少？
+
+http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html
+
+Systemd入门教程：实战篇
+
+https://mp.weixin.qq.com/s/bPqnaMqhi_4p1mwjmvyoIw
+
+多图详解10大高性能开发核心技术
+
+https://mp.weixin.qq.com/s/wmzwvnOToqCkKJz5yw-USQ
+
+低调的Linux文件系统家族
+
+https://mp.weixin.qq.com/s/ESLO1RH6Q8udwI13Z2Pz_w
+
+详解linux io flush
+
+https://mp.weixin.qq.com/s/LLlzPB2emr9Hqr7gql0B4Q
+
+为什么Linux需要Swapping

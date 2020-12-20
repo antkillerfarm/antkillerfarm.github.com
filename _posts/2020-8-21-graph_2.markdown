@@ -11,6 +11,22 @@ category: graph
 
 ## 社区发现（续）
 
+https://www.cnblogs.com/LittleHann/p/9078909.html
+
+社区发现算法-Fast Unfolding（Louvian）算法初探
+
+http://blog.sina.com.cn/s/blog_617032070100er0r.html
+
+Infomap算法描述
+
+https://mp.weixin.qq.com/s/S0vUBFCfizjVe_L4SIrGqQ
+
+网络新闻真假难辨？机器学习来助你一臂之力
+
+https://mp.weixin.qq.com/s/2aKc4yM0b52X-SViGQycwA
+
+大规模网络的社区检测和排序问题综述
+
 https://mp.weixin.qq.com/s/_HOdAo2ClhJqbUrDvsc-3w
 
 Philip S. Yu 团队最新综述！社区发现的深度学习方法：进展、挑战、机遇

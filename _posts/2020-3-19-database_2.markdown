@@ -75,6 +75,10 @@ https://mp.weixin.qq.com/s/Al0yvkv0FUPjEBtcxS6Fmg
 
 传统数据仓库和云数据仓库的区别
 
+https://mp.weixin.qq.com/s/RfsFcqbtQYqE7_-snBZSTw
+
+京东实时数据仓库开发实践
+
 https://mp.weixin.qq.com/s/GXGSDxukbIAM5W-YSX0pDg
 
 美团点评数据库高可用架构的演进与设想
@@ -349,6 +353,10 @@ https://mp.weixin.qq.com/s/vmKPKn9Y1FPY8MWy2Xcu6A
 
 MySQL的自增ID用完了，怎么办？
 
+https://mp.weixin.qq.com/s/QduIxKOykMmoZp13UGF1XQ
+
+MySQL索引知识点总结
+
 # 数据库参考资源
 
 https://www.cnblogs.com/ahu-lichang/p/10899747.html
@@ -382,3 +390,7 @@ https://mp.weixin.qq.com/s/PPlrrtcdrtKT3afgWOU8Pg
 https://mp.weixin.qq.com/s/k1sK-QQjVqdJnpWNCV0pUA
 
 并发环境下，先操作数据库还是先操作缓存？
+
+https://mp.weixin.qq.com/s/I3ca2HAuSTtUJSZyHNe1vA
+
+数据库读写分离要注意哪些细节

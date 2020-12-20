@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Machine Learning之Python篇（四）, 多维数组的行优先和列优先
+title:  Machine Learning之Python篇（四）
 category: AI 
 ---
 
@@ -8,6 +8,46 @@ category: AI
 {:toc}
 
 # Machine Learning之Python篇
+
+https://mp.weixin.qq.com/s/a7TLJD1-k3AlJ_ENPoJpwA
+
+用Python分析《红楼梦》，后四十回是曹雪芹所写吗？
+
+https://mp.weixin.qq.com/s/MUMQuZLDE5iyogLnIIBaMw
+
+7步让你从零开始掌握Python机器学习！
+
+http://mp.weixin.qq.com/s/5vI1Ii6bd_IzrXKHlvULSQ
+
+是学习Java还是Python？一张图告诉你！
+
+https://mp.weixin.qq.com/s/Ty46-s0kvr2MpbUhQPXJfQ
+
+朴素贝叶斯实战篇之新浪新闻分类
+
+https://mp.weixin.qq.com/s/CMxo4FNxWYyoG-gxAgtzyA
+
+手把手教你安装深度学习操作系统、驱动和各种python库！
+
+https://github.com/leetmaa/KMCLib
+
+KMCLib - a general framework for lattice kinetic Monte Carlo (KMC) simulations
+
+https://mp.weixin.qq.com/s/T7dswxqhie0riPlnjdf9_Q
+
+RNN入门与实践
+
+https://mp.weixin.qq.com/s/ZPCfnj2kLxXLpBNbxs2ggw
+
+Logistic回归实战篇之预测病马死亡率（一）
+
+https://mp.weixin.qq.com/s/XpX9TPgv4a_uKAKiy8W4fg
+
+Logistic回归实战篇之预测病马死亡率（二）
+
+https://mp.weixin.qq.com/s/0i1jKgaRu2pLPAXAvoH6qA
+
+Logistic回归实战篇之预测病马死亡率（三）
 
 https://mp.weixin.qq.com/s/U46HOaBP5ijghpc2myJCvA
 
@@ -317,63 +357,56 @@ https://mp.weixin.qq.com/s/Xksp457JBr2ySrtqgXYMFw
 
 一文学会入门推荐算法库surprise
 
-# 多维数组的行优先和列优先
+# 目标检测进阶+++++
 
-这里以numpy为工具，介绍一下多维数组的行优先和列优先的概念。
+https://blog.csdn.net/u014380165/article/details/80602027
 
-首先我们生成一个3x4的数组：
+Cascade RCNN算法笔记
 
-`arr = np.arange(12).reshape(3,4)`
+https://mp.weixin.qq.com/s/KupXlIt8bHLLGF6qWFH6vQ
 
-它的形状是这样的：
+从Grid R-CNN到Grid R-CNN Plus：基于网格的目标检测演化
 
-![](/images/article/arr_3x4.png)
+https://mp.weixin.qq.com/s/kz74yb857gmG1h7MyOWx_Q
 
-如果我们按照C语言的方式存储它，也就是行优先存储的话，那么在内存中，它的形状是这样的：
+目标检测正负样本区分策略和平衡策略总结(二)
 
-![](/images/article/arr_3x4_C.png)
+https://mp.weixin.qq.com/s/gJuXl6Oh_N_fJgQ9jT268w
 
-这种存储方式又被称作C contiguous array。
+旷视研究院提出密集场景检测新方法：一个候选框，多个预测结果
 
-另一派存储方式，也就是列优先存储，它的代表是Fortran语言。上面的数组在内存中的形状就是这样的了：
+https://mp.weixin.qq.com/s/iPx5K2cSs5jlCt9d9oKpww
 
-![](/images/article/arr_3x4_Fortran.png)
+VoVNet：实时目标检测的新backbone网络
 
-这种存储方式又被称作Fortran contiguous array。
+https://mp.weixin.qq.com/s/FHHIdoXyaU4skX-zyZFQew
 
-上述描述也可用下图表示：
+已开源！全新水下目标检测算法SWIPENet+IMA框架
 
-![](/images/img2/Row_and_column_major_order.png)
+https://mp.weixin.qq.com/s/-x9A1eG5BfGmqV31SdMCMg
 
-numpy对这两种方式都支持，而且还巧妙的利用了两者之间的差异，对运算进行了简化。
+目标检测算法之Light-Head R-CNN
 
-`arr2 = arr.T`
+https://mp.weixin.qq.com/s/On-pHCdGg3piTQtDV88kQA
 
-比如上述转置操作，你以为numpy真的做了转置运算吗？其实不然。
+特定场景下Yolo改进算法：Poly-Yolo
 
-```python
->>>arr.flags.f_contiguous
-False
->>>arr2.flags.f_contiguous
-True
-```
+https://mp.weixin.qq.com/s/HW0SNf-NYjXqJwlungRFpg
 
-看到没，这里仅仅设置了一个标志而已。
+综述：目标检测中的多尺度检测方法
 
-C和Fortran的这种差异，实际上是上世纪60年代，两大IT巨头AT&T和IBM之间战争的结果，并深远的影响了后来的软件。比如在通用计算领域，主要采用C格式，而数值计算领域，则多采用Fortran格式。
+https://zhuanlan.zhihu.com/p/158907507
 
-典型的例子是Matlab。它最早是作为一些Fortran数学库的封装而存在的，因此很自然的采用了Fortran格式。OpenGL、OpenVX之类的接口，实际上也沿袭了这种路径依赖。
+From VanillaDet to AutoAssign
 
-Fortran作为最早的高级语言（1957年），至今仍有很强的生命力，这主要归功于：
+https://mp.weixin.qq.com/s/GL_q4VLCgbjTZq_zpTLq0w
 
-1.对数组、复数等数值计算的原生支持。这些语法糖，对于非程序员的科技人员很友好。
+Label Assign：提升目标检测上限
 
-2.没有指针等复杂特性。这一点既降低了上手的门槛，又对于编译器优化（尤其是现在比较流行的并行计算优化）很有好处。普通科技人员即使没有经过特殊的程序训练，也可以写出非常高效的程序。
+https://mp.weixin.qq.com/s/EO5h1zW4yrToqwTCnXtz4g
 
-对于同样的内存布局，我们只需要颠倒下标就可以进行行/列优先的转换：
+TTFNet: 最大程度提高训练效率的实时目标检测
 
-例如Caffe的默认格式是: NCHW，行优先。
+https://mp.weixin.qq.com/s/6R3myLyAeMMS0lR1GSlvcA
 
-而OpenVX是：WHCN，列优先。
-
-两者在内存中的布局是完全相同的。
+细说物体检测中的Anchors

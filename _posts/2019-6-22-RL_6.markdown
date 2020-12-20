@@ -192,6 +192,10 @@ http://blog.csdn.net/Dark_Scope/article/details/70992266
 
 采样方法
 
+https://mp.weixin.qq.com/s/ZyH_9EBXYaDJxSvVgUaNew
+
+蒙特卡洛积分与重要性采样
+
 ## Off-Policy Learning
 
 ### Importance Sampling for Off-Policy Monte-Carlo

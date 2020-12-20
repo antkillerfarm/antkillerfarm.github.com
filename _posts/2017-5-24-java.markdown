@@ -273,6 +273,10 @@ https://www.cnblogs.com/ytxiao/p/12182679.html
 
 synchronized的CPU原语级别是如何实现的？
 
+https://mp.weixin.qq.com/s/3Pdq2Q2p3P3XI0-n3J7Oig
+
+由浅入深逐步了解Synchronized
+
 https://blog.csdn.net/zqz_zqz/article/details/70233767
 
 java中的锁--偏向锁、轻量级锁、自旋锁、重量级锁
@@ -314,6 +318,10 @@ ForkJoinPool：这个线程池的设计思想与MapReduce极其相似，将一�
 https://blog.csdn.net/z_xindong/article/details/103144219
 
 Java常用六种线程池
+
+https://mp.weixin.qq.com/s/_r1EU66tpHUrOyuGd9yNdA
+
+学会Java中的线程池，这一篇也许就够了！
 
 ## 参考
 
@@ -376,27 +384,3 @@ Java动态调试技术原理及实践
 https://mp.weixin.qq.com/s/23-S5tXTqi2LSe84OoQvvA
 
 跑得好好的Java进程，怎么突然就瘫痪了？
-
-https://mp.weixin.qq.com/s/GaK4iyTNvDsO9nMCXxrWkQ
-
-看完这篇Exception和Error，和面试官扯皮就没问题了
-
-https://mp.weixin.qq.com/s/01fj7l3xsxHVstlkrJ0epw
-
-Java如何实现动态脚本？
-
-https://mp.weixin.qq.com/s/ag5u2EPObx7bZr7hkcrOTg
-
-新一代垃圾回收器ZGC的探索与实践
-
-https://mp.weixin.qq.com/s/Uw7YaphnlMQGGazIBYplgQ
-
-我调研了100来个Java开源博客系统，发现这5个最好用！
-
-https://mp.weixin.qq.com/s/tMUUwT0g3bzxyRgq5GeMWg
-
-从0到1!大话动静态代理
-
-https://mp.weixin.qq.com/s/_r1EU66tpHUrOyuGd9yNdA
-
-学会Java中的线程池，这一篇也许就够了！

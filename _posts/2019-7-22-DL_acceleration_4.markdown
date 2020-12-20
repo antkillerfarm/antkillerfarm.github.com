@@ -321,6 +321,10 @@ https://zhuanlan.zhihu.com/p/223018242
 
 NNIE量化算法及实现
 
+https://zhuanlan.zhihu.com/p/79744430
+
+Tensorflow模型量化(Quantization)原理及其实现方法
+
 # 模型压缩与加速
 
 对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。

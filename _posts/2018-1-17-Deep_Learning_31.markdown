@@ -247,6 +247,10 @@ https://www.cnblogs.com/huangyc/p/10223075.html
 
 一文读懂BERT中的WordPiece
 
+https://mp.weixin.qq.com/s/OGBk_ZptFzbjKdnv2RVZFA
+
+机器如何认识文本？NLP中的Tokenization方法总结
+
 # ESN
 
 Echo State Network
@@ -305,48 +309,8 @@ https://mp.weixin.qq.com/s/RRu3r_dokORhpSq3eyrPDQ
 
 为什么MobileNet及其变体如此之快？
 
-# 目标检测进阶+++
+# 图像变换++
 
-https://mp.weixin.qq.com/s/BsoqlaOlhXc9irSuBc6vGg
+https://mp.weixin.qq.com/s/JO8n_rEz6LxpZu6IS0Fk0Q
 
-在物体检测中搞定小目标
-
-https://zhuanlan.zhihu.com/p/200924181
-
-计算机视觉中低延迟检测的相关理论和应用（上）
-
-https://zhuanlan.zhihu.com/p/212842916
-
-计算机视觉中低延迟检测的相关理论和应用（下）
-
-https://mp.weixin.qq.com/s/Z5zFWr04Z2LBpf-6EXIgRg
-
-OpenImage冠军方案：在物体检测中为分类和回归任务使用各自独立的特征图
-
-https://mp.weixin.qq.com/s/_2DwSY6olj3wKy2xKukEGg
-
-商汤开源Grid R-CNN Plus：相比Grid RCNN，速度更快，精度更高
-
-https://mp.weixin.qq.com/s/baPfFVi7deEsCAFu3ColoQ
-
-CVPR2018目标检测算法总览
-
-https://mp.weixin.qq.com/s/t5p1xGKVnwd7wbiOzucFqQ
-
-基于深度学习的目标检测算法剖析与实现
-
-https://mp.weixin.qq.com/s/-zQZjHVs7bYyGkGuMUf3qg
-
-目标检测领域还有什么可做的？19个方向给你建议
-
-https://mp.weixin.qq.com/s/vAPD7VKQRJ7NCyYL7FIt3A
-
-目标检测中的Label Assignment
-
-https://zhuanlan.zhihu.com/p/310058362
-
-Sparse R-CNN
-
-https://zhuanlan.zhihu.com/p/332281368
-
-丢弃Transformer，FCN也可以实现E2E检测
+AI把爱豆变胖视频火遍B站，我们找到了背后的技术团队:你是怎么把刘亦菲变胖的？

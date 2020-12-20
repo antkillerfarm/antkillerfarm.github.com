@@ -224,3 +224,32 @@ https://mp.weixin.qq.com/s/a3TlUFwSm9aIptfhy6MnGA
 https://mp.weixin.qq.com/s/_DxdlaJahSscXe4O2fw1uA
 
 伊辛模型百年小史：最经典的复杂系统模型，却险些被科学界遗忘
+
+https://zhuanlan.zhihu.com/p/39241895
+
+深度学习与物理，有效场论，重整化群
+
+https://mp.weixin.qq.com/s/7NrB0UtmELXD3UNO3C6jGA
+
+我就不信看完这篇你还搞不懂信息熵
+
+https://mp.weixin.qq.com/s/_s8kxlzcL5Nt2ILUIfAuNQ
+
+不要把所有的鸡蛋放在一个篮子里--谈谈最大熵模型
+
+# 概率分布（2）
+
+上一篇《概率分布（1）》写的意犹未尽，这里继续写。本篇主要关注$$\chi^2$$分布、t分布和F分布，也就是统计学的三大祖师爷各自的看家本领。
+
+## $$\chi^2$$分布
+
+设$$X_1,\dots,X_n$$是来自总体$$N(0,1)$$的样本，则称统计量
+
+$$\chi^2=X_1^2+\dots+X_n^2\tag{1}$$
+
+服从自由度为n的$$\chi^2$$分布（chi-squared distribution），记作$$\chi^2\sim \chi^2(n)$$。其PDF为：
+
+$$f(x;\,n) =
+\begin{cases}
+  \dfrac{x^{(n/2-1)} e^{-x/2}}{2^{n/2} \Gamma\left(\frac n 2 \right)},  & x > 0; \\ 0, & \text{otherwise}.
+\end{cases}$$

@@ -7,29 +7,7 @@ category: math
 * toc
 {:toc}
 
-# 概率分布（2）（续）
-
-KS检验的统计量定义如下：
-
-$$D_n= \sup_x |F_n(x)-F(x)|$$
-
-其中$$\sup$$表示最小上界，
-
-$$F_n(x)={1 \over n}\sum_{i=1}^n I_{[-\infty,x]}(X_i)$$
-
-$$I_{[-\infty,x]}(X_i)=\begin{cases}
-1, & X_i \le x \\
-0, & \text{otherwise} \\
-\end{cases}$$
-
-KS检验更深入的解释，涉及到布朗运动和维纳过程，这里不再赘述。
-
-# 马氏距离
-
-Mahalanobis Distance是印度现代统计学之父Prasanta Chandra Mahalanobis于1936年提出的概念。
-
->注：Prasanta Chandra Mahalanobis，1893~1972，印度统计学家，剑桥大学博士，印度统计研究所创始人。   
->印度的重点研究所一般叫做Institute of National Importance，共92所。Indian Statistical Institute是其中唯一一所和统计相关的研究所。教师255，学生375，这得是多精英的教育啊。其计算机科学专业排名印度第2。
+# 马氏距离（续）
 
 p维空间的两点（两个p维向量x,y）的欧氏距离定义为：
 
@@ -198,3 +176,15 @@ $$f(x)=\sum_{n=0} ^\infty a^n \cos(b^n \pi x)$$
 Weierstrass Function的出现（1872年）说明了所谓的“病态”函数的存在性，改变了当时数学家对连续函数的看法。
 
 Weierstrass Function也被视为第一个分形函数（尽管分形（Fractal）的概念出现的相当晚（1973年），差不多过了整整一个世纪。）：将Weierstrass Function在任一点放大，所得到的局部图都和整体图形相似。因此，无论如何放大，函数图像都不会显得更加光滑，也不存在单调的区间。
+
+参考：
+
+https://wenku.baidu.com/view/21877fea551810a6f524868c.html
+
+一个反例处处连续处处不可导的函数
+
+## 函数连续性和神经网络
+
+理论上说，多层神经网络只要有足够的深度和宽度，就可以任意逼近任意**连续函数**。（严格的说，这里的连续函数必须是Borel可测函数。）
+
+然而从网络训练的角度来说，只有Lipschitz连续的函数才一定会收敛，否则的话，可能会出现梯度爆炸的情况。

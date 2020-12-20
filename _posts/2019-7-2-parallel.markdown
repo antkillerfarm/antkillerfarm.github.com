@@ -380,3 +380,7 @@ https://mp.weixin.qq.com/s/DwjvEn04lGzKU8mDu-5q4g
 https://mp.weixin.qq.com/s/dJa5zOXgJJQOM5uWog3JZA
 
 Local Parallesim：一种新并行训练方法
+
+https://zhuanlan.zhihu.com/p/335116835
+
+推荐系统Serving架构分析

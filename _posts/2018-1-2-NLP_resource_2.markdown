@@ -319,6 +319,10 @@ https://mp.weixin.qq.com/s/rA6oTLlFWmIvGUq_XPLOKQ
 
 利用Lattice LSTM的最优中文命名实体识别方法
 
+https://zhuanlan.zhihu.com/p/142615620
+
+中文NER的正确打开方式: 词汇增强方法总结 (从Lattice LSTM到FLAT)
+
 https://mp.weixin.qq.com/s/Xe-T7EKvGDSR5GOeL4nvKg
 
 从Chatbot到NER
@@ -406,25 +410,3 @@ https://zhuanlan.zhihu.com/p/70618710
 https://mp.weixin.qq.com/s/yJC3NtD13LEVovDYK7-u1A
 
 命名实体识别难在哪？
-
-https://mp.weixin.qq.com/s/DfXTwu2dobjmR1Xd3PG9Zg
-
-美团搜索中NER技术的探索与实践
-
-https://mp.weixin.qq.com/s/O4DNQbEuvFapZmYWa2jRUQ
-
-命名实体识别的深度学习综述
-
-## 文本匹配
-
-https://zhuanlan.zhihu.com/p/111769969
-
-谈谈文本匹配和多轮检索
-
-https://mp.weixin.qq.com/s/5toWf90bJeSMGso6HaNTMQ
-
-腾讯提出用于文本匹配的多信道信息交叉模型，在真实任务中表现优异
-
-https://zhuanlan.zhihu.com/p/111768258
-
-Question Answering论文

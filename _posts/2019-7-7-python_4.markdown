@@ -345,6 +345,10 @@ https://mp.weixin.qq.com/s/bz7rCy0YyF1HrrHrWt9Mpw
 
 聊聊Python操作PDF的几种方法
 
+https://mp.weixin.qq.com/s/jzjumS2oJfFO-4SBa0qooQ
+
+利用Python将PDF文档转为MP3音频
+
 ## word & excel
 
 https://mp.weixin.qq.com/s/lEtE3ejBLzmm9_eo-_8NBg
@@ -382,6 +386,10 @@ Python操作Excel之二
 https://mp.weixin.qq.com/s/m5mrlx3V3bBblqHdBZKa6w
 
 Python操作Word
+
+https://mp.weixin.qq.com/s/KhtVET6AAhYWWefBnvis2Q
+
+Word自动化排版画图
 
 ## python执行shell脚本
 
@@ -466,19 +474,3 @@ https://mp.weixin.qq.com/s/O5okcuVKuf339BZzhmxiew
 https://mp.weixin.qq.com/s/hIMwss4h5k10oLanCYYS1g
 
 49个Python学习资源
-
-https://mp.weixin.qq.com/s/5xs1ivkrUAP_Rr9P-EMc5g
-
-代码优化指南：人生苦短，我用Python。这篇blog主要介绍了如何追踪Python脚本的CPU使用情况。
-
-https://mp.weixin.qq.com/s/HGH2e_0ocHv2VWsjOje9BQ
-
-程序员必知的Python陷阱与缺陷列表
-
-http://blog.csdn.net/linda1000/article/details/8315892
-
-单引号、双引号和三双引号的区别
-
-https://mp.weixin.qq.com/s/czqO4Lo1Jt9zqg2UKNlLYg
-
-手把手教你用Python创建微信聊天机器人

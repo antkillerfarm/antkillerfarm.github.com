@@ -141,14 +141,6 @@ https://mp.weixin.qq.com/s/98X2agJlZcCH6IdZqf9m0A
 
 深度学习在美团配送ETA预估中的探索与实践
 
-https://mp.weixin.qq.com/s/J0j9NwSNhxab6bXqBBzaUw
-
-进击的下一代推荐系统：多目标学习如何让知乎用户互动率提升100%？
-
-https://mp.weixin.qq.com/s/c7BdWUM9BFQZfzWP7C_wfQ
-
-多目标学习在推荐系统中的应用
-
 https://mp.weixin.qq.com/s/BInWMRt-fVcRbY8aCiPnpA
 
 淘宝总知道你要什么？万字讲述智能内容生成实践

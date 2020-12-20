@@ -29,7 +29,7 @@ https://zhuanlan.zhihu.com/p/147691786
 
 https://zhuanlan.zhihu.com/p/313684358
 
-大白话 Generalized Focal Loss V2
+大白话Generalized Focal Loss V2
 
 https://mp.weixin.qq.com/s/zLDUAnxghsBYiUMQQdbBGQ
 
@@ -38,6 +38,10 @@ Generalized Focal Loss：Focal loss魔改以及预测框概率分布
 https://mp.weixin.qq.com/s/is8veFCOPpJDXA2okn7pNA
 
 10分钟理解Focal loss数学原理与Pytorch代码
+
+https://zhuanlan.zhihu.com/p/324613604
+
+用概率分布评估检测框质量的Generalized Focal Loss V2
 
 ## Other Loss
 
@@ -170,22 +174,6 @@ https://mp.weixin.qq.com/s/CbORYhJQn27J0G4G6XpODw
 https://mp.weixin.qq.com/s/Yo68YnMMvy5FXkCjBLCJuw
 
 常见的损失函数
-
-https://mp.weixin.qq.com/s/x0aBo-w669_2FyCGKWJ4iQ
-
-理解计算机视觉中的损失函数
-
-https://mp.weixin.qq.com/s/UjBCjwNDIxDoAoyQAf8V6A
-
-旷视研究院提出Circle Loss，革新深度特征学习范式
-
-https://mp.weixin.qq.com/s/5RpbXzuHp_tR6C_nBdiXGA
-
-Circle Loss：从统一的相似性对的优化角度进行深度特征学习
-
-https://mp.weixin.qq.com/s/LOewKsxtWm7dFJS6ioryuw
-
-Siamese网络，Triplet Loss以及Circle Loss的解释
 
 # 机器学习分类器性能指标
 

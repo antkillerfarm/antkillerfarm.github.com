@@ -11,6 +11,26 @@ category: DL
 
 ## 人脸关键点（续）
 
+https://mp.weixin.qq.com/s/ZrnAqDJCLtMy_qTQ2RZT0A
+
+级联MobileNet-V2实现人脸关键点检测
+
+https://mp.weixin.qq.com/s/ymeJPUPRAGb1FltskqBs-A
+
+人脸关键点检测汇总（上）
+
+https://mp.weixin.qq.com/s/N6y-RDx7VszgCVhSiwP8jA
+
+人脸关键点检测汇总（下）
+
+https://mp.weixin.qq.com/s/D435jGsGPkCH5j-p8Zoksg
+
+遮挡、光照等因素的人脸关键点检测
+
+https://mp.weixin.qq.com/s/BV3xv8mH6K7dV1nik0X5aw
+
+PFLD：简单、快速、超高精度人脸特征点检测算法
+
 https://mp.weixin.qq.com/s/kWRW81aAMl18GIDQWqX1Ow
 
 PFLD：简单高效的实用人脸关键点检测算法
@@ -382,19 +402,3 @@ https://mp.weixin.qq.com/s/z5hRafxepA4Zj5pbbK8HzA
 https://mp.weixin.qq.com/s/Buv6m66kj3RjKq0LjqNAiA
 
 mathAI手写拍照自动能解高数题，还不快试试？
-
-https://mp.weixin.qq.com/s/gKsfsRxsbfXGOsSqeQEDbw
-
-CVPR2019：文本检测算法综述
-
-https://zhuanlan.zhihu.com/p/68058851
-
-自然场景下的文字检测：从多方向迈向任意形状
-
-https://mp.weixin.qq.com/s/jO2xc7Ri6TvrHyXHH0uX4w
-
-金山WPS：基于本地TensorFlow Lite和AI云服务的文档矫正功能
-
-https://mp.weixin.qq.com/s/3t8yzjMXiZwgqBb8izVfFg
-
-场景文字检测模型PixelLink详解与使用

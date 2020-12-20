@@ -173,6 +173,10 @@ https://mp.weixin.qq.com/s/tdF46p_fLpaVjPfK2WtRgw
 
 如何用运筹学帮助特朗普赢得大选?
 
+https://mp.weixin.qq.com/s/typfJcOcRwS20HOwG_zcRg
+
+如何通过抽样分布估计你的模型的不确定性
+
 # 上古软件开发
 
 https://github.com/chrislgarry/Apollo-11
@@ -202,14 +206,6 @@ https://mp.weixin.qq.com/s/t8q-i5k5V44RfbCtSVQonw
 https://mp.weixin.qq.com/s?__biz=MzA4MDExMDEyMw==&mid=2247487079&idx=1&sn=9d29f53cd518b4dcb8ab8c27159dee41
 
 互联网大佬学历背景大调查，不要再相信“学习无用论”
-
-https://mp.weixin.qq.com/s/UGAxJCgOwsBTHnecSouYWQ
-
-图灵奖得主、Unix之父Ken Thompson39年前的密码终于被破解了！
-
-https://mp.weixin.qq.com/s/ktiQhiIcNLJ7UUJvlyWlfg
-
-仅仅只花4天半就解开了史上最难密码，这下整个圈子都炸开了......
 
 https://www.zhihu.com/answer/658973076
 
@@ -283,10 +279,6 @@ https://mp.weixin.qq.com/s/gSW5lxCoo9JkH1JRp6hfzA
 
 30年前未曾发行的任天堂红白机游戏，被这个团队从21张软盘中重新恢复了，还是3D的
 
-https://mp.weixin.qq.com/s/cfBT0wsqzZRwedMO7Qz_vA
-
-“任性”的C语言之父：因拒付论文装订费错失博士学位，论文52年后重见天日（Dennis Ritchie）
-
 https://mp.weixin.qq.com/s/E3_UrGoN1uSmD_4NYG-YWw
 
 来看看比尔盖茨当年写的BASIC解释器源代码吧，你就知道泰勒级数有什么用了
@@ -294,10 +286,6 @@ https://mp.weixin.qq.com/s/E3_UrGoN1uSmD_4NYG-YWw
 https://mp.weixin.qq.com/s/RzrQpJ8M4SoY6YXhUQNWHg
 
 你上世纪写的代码现在还work吗？挑战者：我需要一个读磁带的机器
-
-https://zhuanlan.zhihu.com/p/257089138
-
-C语言发展史的点点滴滴
 
 https://www.zhihu.com/question/420656795
 
@@ -312,6 +300,22 @@ https://mp.weixin.qq.com/s/af_MzLovqnt5JemXBQGdxg
 Java的战争(后续)
 
 # Attention进阶+
+
+https://mp.weixin.qq.com/s/rrbwItXt-1EaGiqtDEGvog
+
+为节约而生：从标准Attention到稀疏Attention
+
+https://mp.weixin.qq.com/s/MzHmvbwxFCaFjmMkjfjeSg
+
+遍地开花的Attention，你真的懂吗？
+
+https://mp.weixin.qq.com/s/e_LEhLf2Rh-1zkEBmqS4nA
+
+NLP这两年：15个预训练模型对比分析与剖析
+
+https://mp.weixin.qq.com/s/LAInpFPa-3R1rfv6idILnw
+
+注意力机制发展如何了，如何学习它在各类任务中的应用？
 
 https://zhuanlan.zhihu.com/p/40920384
 
@@ -396,3 +400,7 @@ BERT、RoBERTa、DistilBERT与XLNet，我们到底该如何选择？
 https://mp.weixin.qq.com/s/GGRORF5EfJ5xzMLwAsJt5w
 
 从词袋到Transfomer，NLP十年突破史
+
+https://zhuanlan.zhihu.com/p/125145283
+
+Rethink深度学习中的Attention机制

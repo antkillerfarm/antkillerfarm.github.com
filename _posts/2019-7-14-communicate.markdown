@@ -35,6 +35,10 @@ https://mp.weixin.qq.com/s/iN8NQd8SuWL4gCWhRbY6tg
 
 图解基于HTTPS的DNS
 
+https://mp.weixin.qq.com/s/Yj5NqRJG48kKX2kNnmj9yw
+
+20张图彻底弄懂HTTPS的原理！
+
 ## TCP
 
 https://mp.weixin.qq.com/s/zU1Mw3yaNmk4D5pP9vxxaw
@@ -63,7 +67,7 @@ https://mp.weixin.qq.com/s/dPgA9HKkkqDo_W7Q1qVCoQ
 
 https://mp.weixin.qq.com/s/bt0vGltG9OAIWMk8iEQzew
 
-15张图， 把TCP/IP讲得一清二楚！
+15张图，把TCP/IP讲得一清二楚！
 
 ## DNS
 

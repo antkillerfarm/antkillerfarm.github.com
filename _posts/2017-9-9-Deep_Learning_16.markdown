@@ -149,6 +149,27 @@ https://mp.weixin.qq.com/s/Pub83W6nMM02lEIrsBe49Q
 
 使用VGG抽取的所谓纹理信息，也可以用于图像增强领域。具体的做法是将纹理信息作为Loss的一部分。（注意不是Loss的全部，否则就只是Style transfer了）。
 
+## 文本风格迁移
+
+不光图像、语音有风格迁移，文本也有。
+
+下面是一个金庸风格的例子
+
+```text
+Input：谢谢
+Output（金庸）：多谢之至
+
+Input：再见
+Output（金庸）：别过!
+
+Input：请问您贵性？
+Output（金庸）：请教阁下尊姓大名?
+```
+
+https://mp.weixin.qq.com/s/7nvqifY_J34mWEUM5IUsLQ
+
+NLP文本风格迁移
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/26746283
@@ -262,19 +283,3 @@ https://mp.weixin.qq.com/s/9AEYcY04lAl3dCRK9LPBeQ
 http://blog.csdn.net/shuzfan/article/details/50358809
 
 人脸检测——CascadeCNN
-
-## MTCNN
-
-论文：
-
-《Joint Face Detection and Alignment using Multi-task Cascaded Convolutional Networks》
-
-![](/images/img2/MTCNN.png)
-
-上面是该方法的流程图，可以看出也是三阶级联，和CascadeCNN很像。
-
-stage1: 在构建图像金字塔的基础上，利用fully convolutional network来进行检测，同时利用boundingbox regression和NMS来进行修正。
-
-stage2: 将通过stage1的所有窗口输入作进一步判断，同时也要做boundingbox regression和NMS。
-
-stage3: 和stage2相似，只不过增加了更强的约束：5个人脸关键点（landmark）。

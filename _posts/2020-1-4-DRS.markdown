@@ -155,6 +155,26 @@ https://mp.weixin.qq.com/s/jQGNWEdxH0meVwk-YDN4gw
 
 手把手带你实现DeepFM
 
+## 多目标学习
+
+多目标学习相比于多模态学习和多任务学习来说，范围要小的多，仅仅只是同时满足推荐系统的若干目标而已。
+
+https://mp.weixin.qq.com/s/J0j9NwSNhxab6bXqBBzaUw
+
+进击的下一代推荐系统：多目标学习如何让知乎用户互动率提升100%？
+
+https://mp.weixin.qq.com/s/c7BdWUM9BFQZfzWP7C_wfQ
+
+多目标学习在推荐系统中的应用
+
+https://mp.weixin.qq.com/s/msUvL7TZKG7ymLFXD-6qgw
+
+京东DMT模型：电商推荐系统多Transformers 进行多目标学习
+
+https://zhuanlan.zhihu.com/p/291406172
+
+多目标学习在推荐系统的应用(MMOE/ESMM/PLE)
+
 ## 参考
 
 https://zhuanlan.zhihu.com/learningdeep
@@ -372,47 +392,3 @@ https://mp.weixin.qq.com/s/FvuWZPNKcnimAGzsfgVdBQ
 https://mp.weixin.qq.com/s/Ya8RZ3TouAapU_xuvMjjMQ
 
 深度协同过滤：用神经网络取代内积建模
-
-https://mp.weixin.qq.com/s/CyelwdWX4yPVp8o79itonQ
-
-阿里提出联合预估算法JUMP：点击率和停留时长预测效果最优
-
-https://mp.weixin.qq.com/s/HS2zcnA1YSRU8-DrodJ6Qw
-
-淘宝用强化学习优化商品搜索后，总收入能提高2%
-
-https://mp.weixin.qq.com/s/8MQ1G-JWGAw5Ev1Ws3V_ig
-
-IJCAI 2018国际广告算法大赛迁移学习夺冠，中国包揽冠亚季军
-
-https://mp.weixin.qq.com/s/QCGemlo8CYIz6imMde_cmg
-
-推荐系统中的机器学习算法与评估实战
-
-https://mp.weixin.qq.com/s/QaMjHRZ5fiN2zBJLIeGrSg
-
-阿里推出DeepInsight平台：可视化理解深度神经网络CTR预估模型
-
-https://mp.weixin.qq.com/s/JEOfAXg4nDepMtzPCgElrg
-
-SIGIR 2018最佳论文：深入分析流行度在推荐系统中的作用
-
-https://mp.weixin.qq.com/s/pA1SSEnwC884LBZGiH3jhg
-
-基于改进注意力循环控制门，品牌个性化排序升级系统来了
-
-https://mp.weixin.qq.com/s/V6tjQzfzsekXuoXhbXbKSQ
-
-一文搞懂阿里Deep Interest Network
-
-https://mp.weixin.qq.com/s/ro3D_d-ZPP0TasqPr4PgPA
-
-推荐系统特征构建新进展：极深因子分解机模型
-
-https://mp.weixin.qq.com/s/MoUd99mCR3Xyu_FnV8jLKA
-
-机器如何“猜你喜欢”？深度学习模型在1688的应用实践
-
-https://mp.weixin.qq.com/s/O_BYzrw5YAbLkfVDqcmwmw
-
-36页最新《深度学习在推荐系统上的应用》综述论文，209篇参考论文

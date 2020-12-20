@@ -410,7 +410,7 @@ https://mp.weixin.qq.com/s/fwa3cbDI0fIjjztA60XuUQ
 
 同步与异步Python有何不同？
 
-https://mp.weixin.qq.com/s/3CePY1ljNBSo9TEtitksrw
+https://mp.weixin.qq.com/s/0tLI_UNhpD-UPa9o206xFA
 
 为什么Python多线程无法利用多核
 

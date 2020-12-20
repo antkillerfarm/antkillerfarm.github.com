@@ -248,90 +248,106 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/mylex
 
 这里使用的是lex/yacc在linux上现代版本——flex/bison。
 
-# gcc
+# 目标检测进阶+++
 
-GNU C Compiler在1987年3月22日发布了第一个beta版本，Richard Stallman原本想利用Free University Compiler Kit，但作者Andy Tanenbaum不想免费提供，RMS因此决定GNU的首个项目将是编译器。GCC是基于一个现有的Pastel编译器，使其扩展支持编译C，后用C进行重写。
+https://mp.weixin.qq.com/s/oF3MAkl1UikRkOhrj3equw
 
-代码：
+深度学习的目标检测算法是如何解决尺度问题的？
 
-`git clone git://gcc.gnu.org/git/gcc.git`
+https://mp.weixin.qq.com/s/oxStDMh90jB7_EY4vqja2w
 
-## 资料
+目标检测论文阅读：DetNet
 
-http://www.hellogcc.org/
+https://zhuanlan.zhihu.com/p/55972055
 
-一个有关GCC和GDB的博客。其中的大牛teawater（朱辉）开发了一个Linux动态跟踪器KGTP，他的blog：
+SimpleDet:一套简单通用的目标检测与物体识别框架
 
-http://teawater.github.io/
+https://zhuanlan.zhihu.com/p/55854246
 
-https://www.cnblogs.com/kuoAT/p/9590606.html
+Guided Anchoring: 物体检测器也能自己学Anchor
 
-深入分析GCC（王亚刚 著）
+https://mp.weixin.qq.com/s/-G47vOGx2iNQCarYRAiNPg
 
-## gcc和ld的差异
+基于区域分解集成的目标检测
 
-理论上gcc做链接和ld做链接，应该是一样的效果，然而实际情况要复杂一些。有的厂商的工具链会给gcc添加一些环境变量之类的私货，所以两者的行为就变的很有差异了。遇到这种问题，互换是一种好的解决问题的思路。
+https://mp.weixin.qq.com/s/rlmgN0LbUfd2n9MI8OMT2w
 
-## 链接顺序
+性能大幅度提升（速度&遮挡）:基于区域分解&集成的目标检测
 
-有的链接器对链接顺序有要求，一般按照c代码、自定义库、标准库的顺序来链接，也就是越基础底层的库，越在后面。（这个顺序正好和声明的顺序相反）
+https://zhuanlan.zhihu.com/p/59398728
 
-`gcc -c ./sparse_matrix.c -o sparse_matrix.o -luserlib -lm`
+CVPR2019目标检测方法进展综述
 
-但是如果有一系列很底层的库，他们太底层了，以至于会出现相互依赖的情况(circular dependence)，那gcc提供了一个option很好的解决了这个情况：
+https://mp.weixin.qq.com/s/apLEAMshqd3O8nU8Q0Wycg
 
-`-Wl,--start-group -lmy_lib -lyour_lib -lhis_lib -Wl,--end-group`
+李祥泰：Context modeling in semantic segmentation
 
-再比如下面的例子：
+https://mp.weixin.qq.com/s/bzgMWR2kzAI9NeXEY92GmA
 
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/linux_so
+目标检测任务的优化策略tricks
 
-`gcc -o main_link main_link.c -L. -lhello`
+https://mp.weixin.qq.com/s/BsoqlaOlhXc9irSuBc6vGg
 
-这条命令中的main_link.c如果放到`-lhello`之后就会出问题。也考虑使用`--start-group`和`--end-group`之类的链接选项解决链接顺序问题。
+在物体检测中搞定小目标
 
-参考：
+https://zhuanlan.zhihu.com/p/200924181
 
-https://stackoverflow.com/questions/27475977/c-undefined-reference-to-sqrt-even-with-lm
+计算机视觉中低延迟检测的相关理论和应用（上）
 
-C - undefined reference to “sqrt” even with '-lm'
+https://zhuanlan.zhihu.com/p/212842916
 
-## -Werror
+计算机视觉中低延迟检测的相关理论和应用（下）
 
-有的时候会遇到`-Werror=XXXX`这样的编译错误，如果确实不想改代码的话，可以用`-Wno-error=XXXX`或者`-Wno-XXXX`来回避之。
+https://mp.weixin.qq.com/s/Z5zFWr04Z2LBpf-6EXIgRg
 
-## nm和readelf
+OpenImage冠军方案：在物体检测中为分类和回归任务使用各自独立的特征图
 
-这两个命令都可以查看可执行文件的符号表。
+https://mp.weixin.qq.com/s/_2DwSY6olj3wKy2xKukEGg
 
-示例：
+商汤开源Grid R-CNN Plus：相比Grid RCNN，速度更快，精度更高
 
-`nm XXX.so`
+https://mp.weixin.qq.com/s/baPfFVi7deEsCAFu3ColoQ
 
-`readelf -h XXX.so`
+CVPR2018目标检测算法总览
 
-这两个命令虽然很早就在gcc工具链中了，但是早期版本只能查看本工具链编译的可执行文件。现在的话，主流的CPU指令集都可以支持了，不必采用`arm-readelf`这样的特殊前缀版本了。
+https://mp.weixin.qq.com/s/t5p1xGKVnwd7wbiOzucFqQ
 
-## 切换gcc版本
+基于深度学习的目标检测算法剖析与实现
 
-`sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 40`
+https://mp.weixin.qq.com/s/-zQZjHVs7bYyGkGuMUf3qg
 
-`sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 50`
+目标检测领域还有什么可做的？19个方向给你建议
 
-`sudo update-alternatives --config gcc`
+https://mp.weixin.qq.com/s/vAPD7VKQRJ7NCyYL7FIt3A
 
-## 编译加速
+目标检测中的Label Assignment
 
-https://mp.weixin.qq.com/s/yITNjo_UQi8-OKQNOfGrPw
+https://zhuanlan.zhihu.com/p/332281368
 
-C++服务编译耗时优化原理及实践
+丢弃Transformer，FCN也可以实现E2E检测
 
-## 参考
+# AI工具++
 
-https://mp.weixin.qq.com/s/30Zh_8H6QfDgJuG9e9ORSQ
+https://mp.weixin.qq.com/s/Zu_IPBQVJtcwNln-xvEZxQ
 
-使用gdb调试多进程程序
+DarkLabel：支持检测、跟踪、ReID数据集的标注软件
 
-https://zhuanlan.zhihu.com/p/254879649
+https://mp.weixin.qq.com/s/5klwQCPtiZOwFJYHDOpWFg
 
-GDB的那些奇淫技巧
+语义分割标注工具Semantic Segmentation Editor快速安装指南
+
+https://mp.weixin.qq.com/s/1EeYmZGoa-xpWmIvUoqCyw
+
+瑞士小哥开源文本英雄Texthero：一行代码完成数据预处理
+
+https://mp.weixin.qq.com/s/p9HpH2e5ShQCFcCxVNvMbg
+
+清华开源迁移学习算法库
+
+https://mp.weixin.qq.com/s/vzUt-5C_dRAChEfQYLp4lA
+
+PyTorch实现，GitHub 4000星：这是微软开源的计算机视觉库
+
+https://mp.weixin.qq.com/s/5VeersQKxcT9AtFXS_CXnA
+
+推荐一款超高速、多特性的高性能序列推理引擎——LightSeq

@@ -171,15 +171,49 @@ https://mp.weixin.qq.com/s/zoMJpYQeAAt6GmjPDx863Q
 
 # 无理数指数
 
-整数指数：$$2^3=2\times 2\times 2$$
+**整数指数**：
 
-有理数指数（利用指数乘法特性进行扩展）：$$2^{\frac12}\times 2^{\frac12}=2^{\frac12+\frac12}=2$$，因此$$2^{\frac12}=\sqrt{2}$$
+$$2^3=2\times 2\times 2$$
+
+**有理数指数**（利用指数乘法特性进行扩展）：
+
+$$2^{\frac12}\times 2^{\frac12}=2^{\frac12+\frac12}=2$$
+
+因此：
+
+$$2^{\frac12}=\sqrt{2}$$
+
+**无理数指数**（利用极限进行扩展）：
+
+$$2^3, 2^{3.1}, 2^{3.14},2^{3.141},2^{3.1415},2^{3.14159},\dots$$
+
+趋向于一个确定的值。
+
+因此：
+
+$$\lim_{n \rightarrow \infty}{2^{\frac{\lfloor10^n\pi\rfloor}{10^n}}}=2^{\pi}$$
 
 https://www.zhihu.com/question/434836259
 
 2的π次方是啥东西？
 
 # 数学杂谈
+
+日心说这个东西，现在的人总觉得古人脑子怎么不开窍，老以自己为中心，而没有想到地球围绕太阳转。
+
+其实日心说，古代就有。之所以不流行，是因为遇到了托勒密这个大牛，这哥们对球面几何和三角函数都研究的很深，发明了最早的三角函数表。
+
+托勒密的著作中不但建立了地心说模型，而且还有数学推导。这也使得他的反对者，长期以来搞不定他。
+
+就是哥白尼，其实也没有能翻案。真正搞定托勒密，要等到开普勒时代了。
+
+参考：
+
+https://mp.weixin.qq.com/s/jIlE6VDlgOgoIpUBiGzF5w
+
+他（Claude Ptolemy）是被埋没了1300年的超级学霸，却凭一己之力，影响世界，改变人类文明！
+
+----
 
 当我在32岁成为哈佛大学终身教授的时候，终于有时间学习如何运算了——是如坐针毡地和一群年龄仅仅是我的一半多点的大学小鬼们一起上课。他们中的一些人还在上我执教的进化生物学。我将自尊搁置一边，来学习微积分。当在追赶中学习时，成绩拿C都费劲。----By Edward Osborne Wilson
 
@@ -206,6 +240,24 @@ https://mp.weixin.qq.com/s/REiUxKrLCRWeRCusVlooYQ
 蝴蝶效应和混沌故事（Edward Norton Lorenz）
 
 ----
+
+![](/images/img4/sheep.png)
+
+山羊吃草问题有两种形式。内部问题是给出吃草面积求绳长，外部问题是给出绳长和篱笆周长求吃草面积（绳长等于篱笆周长）
+
+https://mp.weixin.qq.com/s/OCTifPIZHVjYWjuxyQQWbA
+
+诞生272年后，这个看似简单的数学问题终求得闭式解（山羊问题）
+
+https://mp.weixin.qq.com/s/ydYVWnsEQ5QFLWmiDxeSTg
+
+两圆重叠问题你会求解吗？
+
+----
+
+https://mp.weixin.qq.com/s/yQfBFtWBuP1JB6MJM5DshQ
+
+人类最美的24张数学画
 
 https://www.sohu.com/a/223262966_115479
 
@@ -238,59 +290,3 @@ https://zhuanlan.zhihu.com/p/36230460
 http://www.matrix67.com/blog/archives/4570
 
 再谈Julia集与Mandelbrot集
-
-https://mp.weixin.qq.com/s/6XsH71CKaVikqnL6kVPqtg
-
-各种语言的Mandelbrot set示例代码
-
-https://mp.weixin.qq.com/s/gnPiCmsua0ByO5UwWqxuag
-
-史上最牛逼的文科生：学历史成为物理学家，却获得了数学界的最高荣誉，出了350部书，外号火星人！（Edward Witten）
-
-https://mp.weixin.qq.com/s/5p5ai_HKZMvbQ9Inu6ASbA
-
-史上最硬核老师：17年间，拿着菜刀把400个混混送进了哈佛耶鲁麻省！（Jaime Escalante）
-
-https://mp.weixin.qq.com/s/vLqJIaTXOkz0kYJzKguQaQ
-
-99%的数学家都算不出这道题（亲和数）
-
-https://mp.weixin.qq.com/s/ULzU9gwU-X6oSMM4mv5xhA
-
-两次入狱，数次移民，从罗马尼亚地下党到卡耐基梅隆教授—整数规划奠基者Egon Balas的彪悍人生
-
-https://mp.weixin.qq.com/s/NX0j_CgBqalBMVVdRkG59g
-
-数学界再出变态神人！竟用一个比基尼方程，暴力吊打美国数学家！（沙发问题）
-
-https://mp.weixin.qq.com/s?__biz=MjM5MDE3OTk2Ng==&mid=2657461772&idx=1&sn=fa141219528ace2a22b2f109c71bfa74
-
-麻省理工牛人解说数学体系
-
-https://mp.weixin.qq.com/s/GHIFsFleS7aGMP0ye_SCCQ
-
-我居然从一只猫身上学到了斐波那契数列
-
-https://mp.weixin.qq.com/s/y6H1YV7FUkBlqznoNbTLng
-
-太震撼了！2600年数学文明画在了一张图上
-
-https://mp.weixin.qq.com/s/JZKSzd97Og9YHPaHWNTWKQ
-
-史上最能忽悠的数学家，哲学出身竟引发数学千年危机，最终却惨遭处死（芝诺）
-
-https://mp.weixin.qq.com/s/ZRMmByhNkjcfbaOcwxQ5dg
-
-日本数学界惊现神操作！偷偷研究飞刀方程致使厕所爆炸，连美国总统特朗普都忍不住发文怒怼
-
-https://blog.csdn.net/ChangHengyi/article/details/80577318
-
-一片文章带你理解再生核希尔伯特空间（RKHS）以及各种空间
-
-https://mp.weixin.qq.com/s/AQgFded7GWp1yPE_voT0QQ
-
-看完这45组酷炫数学动图，原来数学这么有意思！
-
-https://mp.weixin.qq.com/s/23zElw2ktT3YbNZ9_r5lgQ
-
-“一个千古绝伦的大智者”莱布尼茨

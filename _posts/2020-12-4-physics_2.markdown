@@ -92,6 +92,18 @@ https://mp.weixin.qq.com/s/ClYZySe6vcgxM4l-F5v3Hg
 | $$\nabla \cdot$$ | divergence operator |
 | $$\nabla \times$$ | curl operator |
 
+https://zhuanlan.zhihu.com/p/71793554
+
+最美的公式：你也能懂的麦克斯韦方程组（积分篇）
+
+https://zhuanlan.zhihu.com/p/78503083
+
+最美的公式：你也能懂的麦克斯韦方程组（微分篇）
+
+https://zhuanlan.zhihu.com/p/81867668
+
+见证奇迹的时刻：如何从麦克斯韦方程组推出电磁波
+
 # Doppler effect
 
 >Christian Johann Doppler，1803～1853，奥地利物理学家，数学家和天文学家。维也纳大学物理学院的第一任院长。
@@ -121,6 +133,10 @@ https://mp.weixin.qq.com/s/j8KvzZ6gvOsW2fVMSwI51Q
 多普勒，石破能惊天的孙大圣？还是凡人唐三藏？
 
 # 物理+
+
+https://mp.weixin.qq.com/s/ZIHZ8W993OoW4X1apOGXjQ
+
+物理学发展史上有哪些重要的时刻？
 
 https://mp.weixin.qq.com/s/lB6dfjS5TAxjMndLCXMWgQ
 
@@ -273,3 +289,31 @@ https://mp.weixin.qq.com/s/FAEx3jar5s_f4fK7O_0sZA
 https://mp.weixin.qq.com/s/JGx9hcxfo0ZL2QyPCRt12w
 
 十大物理学实验
+
+https://mp.weixin.qq.com/s/JuEnx-kQgoSYM6qnteK8zA
+
+你是什么粒子？
+
+https://mp.weixin.qq.com/s/ynaXjlSkfFAlW5Wpc4ZhGg
+
+牛顿的超级女粉丝：夏特莱侯爵夫人
+
+https://mp.weixin.qq.com/s/UanXLOemWh7xU5Peu1_K6A
+
+120年了，它依旧神秘（量子力学）
+
+https://mp.weixin.qq.com/s/VrlMlRYHcJDx5fk-PoELWA
+
+系紧的鞋带为什么会自己松开？
+
+https://mp.weixin.qq.com/s/MhAvoZABHxJz17rxDXnVlw
+
+比起女孩子，他更喜欢爱因斯坦，这个最直男的科学家，把物理和数学搞了CP（Paul Dirac）
+
+https://mp.weixin.qq.com/s/GplYa0n5Rf9aCrDc4OSN-w
+
+诺奖得主小柴昌俊如何成功探测到中微子
+
+https://mp.weixin.qq.com/s/U-iDBqjEaJluKzlSkoXsSQ
+
+史上最低估自己的天才科学家！预言自己的发现无用，没想到影响全世界（Heinrich Rudolf Hertz）

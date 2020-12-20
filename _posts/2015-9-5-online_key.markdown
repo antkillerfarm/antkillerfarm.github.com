@@ -253,6 +253,10 @@ https://mp.weixin.qq.com/s/OMnb6sBkxo1RpmkqcgymIA
 
 一文详解微服务架构
 
+https://mp.weixin.qq.com/s/CPNEQpOGED1EW8ds_A6GVw
+
+图文详解：如何给女朋友解释什么是微服务？
+
 # Jetty
 
 Jetty是一个Java Servlet容器。官网：

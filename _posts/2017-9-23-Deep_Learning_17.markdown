@@ -7,9 +7,23 @@ category: DL
 * toc
 {:toc}
 
-# 人脸检测/识别
+# 人脸检测/识别（续）
 
-## MTCNN（续）
+## MTCNN
+
+论文：
+
+《Joint Face Detection and Alignment using Multi-task Cascaded Convolutional Networks》
+
+![](/images/img2/MTCNN.png)
+
+上面是该方法的流程图，可以看出也是三阶级联，和CascadeCNN很像。
+
+stage1: 在构建图像金字塔的基础上，利用fully convolutional network来进行检测，同时利用boundingbox regression和NMS来进行修正。
+
+stage2: 将通过stage1的所有窗口输入作进一步判断，同时也要做boundingbox regression和NMS。
+
+stage3: 和stage2相似，只不过增加了更强的约束：5个人脸关键点（landmark）。
 
 ![](/images/img3/P-Net.jpg)
 
@@ -338,47 +352,3 @@ TextTopicNet:CMU开源无标注高精度自监督模型
 https://mp.weixin.qq.com/s/343DfjOvkaozuxNK89V3zQ
 
 前景目标检测的无监督学习
-
-https://mp.weixin.qq.com/s/DwY0oGu-G30Szs-ArI5WaQ
-
-程明明：面向弱监督的图像理解
-
-https://mp.weixin.qq.com/s/LFOljv-Hr6JqyI6TQ2X4sw
-
-半监督学习也能自动化？南大和第四范式提出Auto-SSL
-
-https://mp.weixin.qq.com/s/83xAXrc_H_OExW3vii08hA
-
-谷歌提出新方法：基于单目视频的无监督深度学习结构化
-
-https://mp.weixin.qq.com/s/gr0_p4WFToTrDfy47h-p0A
-
-基于自监督学习的视听觉信息同一性判断
-
-https://mp.weixin.qq.com/s/Dqz97_U5pw_4d9KFblJfLg
-
-基于自编码器的表征学习：如何攻克半监督和无监督学习？
-
-https://mp.weixin.qq.com/s/LaIvAuBHYGNMug3NZ1pLhQ
-
-半监督深度学习小结：类协同训练和一致性正则化
-
-https://mp.weixin.qq.com/s/aBDgV7u93MAv2MogZKBmvw
-
-Google提出Grasp2Vec模型：利用自监督方法学习物体表示
-
-https://mp.weixin.qq.com/s/YfDZMEkOnxp0_ei2Oam-YQ
-
-基于弱监督的视频时序动作检测的介绍
-
-https://mp.weixin.qq.com/s/RiL-s50oOI--PZyIOd2E0g
-
-弱监督语义分割最新方法资源列表
-
-https://mp.weixin.qq.com/s/USOWECXk_az4b6eTssfOBw
-
-基于弱监督深度学习的图像分割方法综述
-
-https://mp.weixin.qq.com/s/8oEdQOmSRrkIaTVQdhk2Dw
-
-无监督领域特定单图像去模糊

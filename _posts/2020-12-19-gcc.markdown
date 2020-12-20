@@ -1,0 +1,346 @@
+---
+layout: post
+title:  gcc, LLVM, ANTLR
+category: technology 
+---
+
+* toc
+{:toc}
+
+# gcc
+
+GNU C Compiler在1987年3月22日发布了第一个beta版本，Richard Stallman原本想利用Free University Compiler Kit，但作者Andy Tanenbaum不想免费提供，RMS因此决定GNU的首个项目将是编译器。GCC是基于一个现有的Pastel编译器，使其扩展支持编译C，后用C进行重写。
+
+代码：
+
+`git clone git://gcc.gnu.org/git/gcc.git`
+
+## 资料
+
+http://www.hellogcc.org/
+
+一个有关GCC和GDB的博客。其中的大牛teawater（朱辉）开发了一个Linux动态跟踪器KGTP，他的blog：
+
+http://teawater.github.io/
+
+https://www.cnblogs.com/kuoAT/p/9590606.html
+
+深入分析GCC（王亚刚 著）
+
+## gcc和ld的差异
+
+理论上gcc做链接和ld做链接，应该是一样的效果，然而实际情况要复杂一些。有的厂商的工具链会给gcc添加一些环境变量之类的私货，所以两者的行为就变的很有差异了。遇到这种问题，互换是一种好的解决问题的思路。
+
+## 链接顺序
+
+有的链接器对链接顺序有要求，一般按照c代码、自定义库、标准库的顺序来链接，也就是越基础底层的库，越在后面。（这个顺序正好和声明的顺序相反）
+
+`gcc -c ./sparse_matrix.c -o sparse_matrix.o -luserlib -lm`
+
+但是如果有一系列很底层的库，他们太底层了，以至于会出现相互依赖的情况(circular dependence)，那gcc提供了一个option很好的解决了这个情况：
+
+`-Wl,--start-group -lmy_lib -lyour_lib -lhis_lib -Wl,--end-group`
+
+再比如下面的例子：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/linux_so
+
+`gcc -o main_link main_link.c -L. -lhello`
+
+这条命令中的main_link.c如果放到`-lhello`之后就会出问题。也考虑使用`--start-group`和`--end-group`之类的链接选项解决链接顺序问题。
+
+参考：
+
+https://stackoverflow.com/questions/27475977/c-undefined-reference-to-sqrt-even-with-lm
+
+C - undefined reference to “sqrt” even with '-lm'
+
+## -Werror
+
+有的时候会遇到`-Werror=XXXX`这样的编译错误，如果确实不想改代码的话，可以用`-Wno-error=XXXX`或者`-Wno-XXXX`来回避之。
+
+## nm和readelf
+
+这两个命令都可以查看可执行文件的符号表。
+
+示例：
+
+`nm XXX.so`
+
+`readelf -h XXX.so`
+
+这两个命令虽然很早就在gcc工具链中了，但是早期版本只能查看本工具链编译的可执行文件。现在的话，主流的CPU指令集都可以支持了，不必采用`arm-readelf`这样的特殊前缀版本了。
+
+## 切换gcc版本
+
+`sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 40`
+
+`sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 50`
+
+`sudo update-alternatives --config gcc`
+
+## 编译加速
+
+- 并行编译
+
+`make -j 4`
+
+可用`nproc`命令动态获取编译机的CPU核数。
+
+- 分布式编译
+
+利用Distcc和Dmucs构建大规模、分布式C++编译环境。
+
+- 预编译头文件
+
+PCH（Precompiled Header）
+
+- CCache
+
+CCache（Compiler Cache）是一个编译缓存工具，其原理是将cpp的编译结果保存在文件缓存中，以后编译时若对应文件无变动可直接从缓存中获取编译结果。需要注意的是，Make本身也有一定缓存功能，当目标文件已编译（且依赖无变化）时，若源文件时间戳无变化也不会再次编译；但CCache是按文件内容做的缓存，且同一机器的多个项目可以共享缓存，因此适用面更大。
+
+- Module编译
+
+C++20之前的版本会把每一个cpp当做一个编译单元处理，会存在引入的头文件被多次解析编译的问题。而Module的出现就是解决这一问题。
+
+- 自动依赖分析
+
+Google推出了开源的Include-What-You-Use工具（简称IWYU），使用该工具可以扫描出文件依赖问题，同时该工具还提供脚本解决头文件依赖问题。
+
+https://mp.weixin.qq.com/s/yITNjo_UQi8-OKQNOfGrPw
+
+C++服务编译耗时优化原理及实践
+
+## 参考
+
+https://mp.weixin.qq.com/s/30Zh_8H6QfDgJuG9e9ORSQ
+
+使用gdb调试多进程程序
+
+https://zhuanlan.zhihu.com/p/254879649
+
+GDB的那些奇淫技巧
+
+# LLVM
+
+## 概述
+
+LLVM最初设计时，主要做优化方面的研究，所以当时的全称叫Low Level Virtual Machine。后来因为成为了编译器，官方放弃了这个称呼，但保留了LLVM的简称。
+
+官网：
+
+http://llvm.org/
+
+代码：
+
+https://github.com/llvm/llvm-project
+
+LLVM的主要作者是Chris Lattner。
+
+他的个人主页：
+
+http://nondot.org/sabre/
+
+>Chris Lattner，1978年生，美国人。University of Portland本科（2000）+UIUC博士（2005）。LLVM、Swift、MLIR的作者。先后任职于Apple、Tesla、Google、SiFive。
+
+架构设计：
+
+http://www.aosabook.org/en/llvm.html
+
+>顺便提一下，这个网站本身就是个宝库。
+
+# ANTLR
+
+ANTLR—Another Tool for Language Recognition，其前身是PCCTS，它为包括Java，C++，C#,python在内的语言提供了一个通过语法描述来自动构造自定义语言的识别器（recognizer），编译器（parser）和解释器（translator）的框架。
+
+官网：
+
+http://www.antlr.org/
+
+参考：
+
+http://yuzhouwan.com/posts/55501/
+
+Antlr
+
+https://www.ibm.com/developerworks/cn/java/j-lo-antlr/index.html
+
+使用Antlr开发领域语言
+
+# MPS
+
+MPS是jetbrains推出的用于构建DSL的工具。
+
+官网：
+
+https://www.jetbrains.com/mps/
+
+# DRL参考资源++
+
+https://mp.weixin.qq.com/s/oZDDP59o-1qwfz8prK3nJQ
+
+伯克利最新研究：如何用目标图像进行机器视觉强化学习？
+
+https://mp.weixin.qq.com/s/00zHwpw2xWP2fR9sDHE2Xw
+
+BAIR讲述如何利用深度强化学习控制灵活手
+
+https://mp.weixin.qq.com/s/V7RESEm4xzhW8tXEjKjn1Q
+
+层次强化学习、记忆与预测模型
+
+https://mp.weixin.qq.com/s/aNskPERmekw9yQVb7A3GPQ
+
+Google大脑最新研究成果：使用强化学习实现动态系统的韧性计算
+
+https://mp.weixin.qq.com/s/pJkCOCl6o70le1WsE9p3pg
+
+在全景视频中预测头部运动：一种深度强化学习方法
+
+https://mp.weixin.qq.com/s/fodjmmh_jJMh4hD3m2OrLg
+
+凭借幻想的目标进行视觉强化学习
+
+https://mp.weixin.qq.com/s/6HVSh7_9Akmf6OE8PGNy6Q
+
+怎样让AI完成人类搞不定的任务？OpenAI提出迭代扩增法给AI设目标
+
+https://mp.weixin.qq.com/s/JpZimrHALjuc-H9WF8sPZg
+
+智能体只想看电视？谷歌新型好奇心方法让智能体离开电视继续探索
+
+https://mp.weixin.qq.com/s/dic_ssebe32L30pAUxlP6w
+
+谷歌AI-强化学习中的好奇和拖延
+
+https://mp.weixin.qq.com/s/tieGV_tDWkVVW2YFes4AqA
+
+学习何时做分类决策，深度好奇提出强化学习模型Jumper
+
+https://mp.weixin.qq.com/s/THgo4YzhUN2PUkyI5sSnpw
+
+开源啦：连DeepMind也捉急的游戏，OpenAI给你攻破第一关的高分算法
+
+https://mp.weixin.qq.com/s/loH6M0_U1DVrod0Drkl4eg
+
+深度强化学习教机器人自己穿衣服！
+
+https://mp.weixin.qq.com/s/VqPPQnH22Y-XeojNEZn3YQ
+
+CoRL 2018最佳系统论文：如此鸡贼的机器手，确定不是人在控制？
+
+https://mp.weixin.qq.com/s/eEQhwV1cA4nEgEBcOKDenA
+
+将逆向课程生成用于强化学习：伯克利新研究让智能体掌握全新任务
+
+https://mp.weixin.qq.com/s/cO1VlYGwdRBAbPs7IgvcAA
+
+超越传统强化学习的价值分布方法
+
+https://mp.weixin.qq.com/s/s7c0oleKCmdI2Kh9pDPsXw
+
+强化学习需要批归一化(Batch Norm)吗？
+
+https://mp.weixin.qq.com/s/2nn56lpWe7YYU0CrRYrvbA
+
+强化学习在智能交通灯中的应用
+
+https://mp.weixin.qq.com/s/nk-X88bF6LiAywnqRz3REQ
+
+Youtube推荐RL首弹，基于Top-K的Off-Policy矫正解决推荐中的信息茧房困境
+
+https://mp.weixin.qq.com/s/EPLvdQFiT1MiGgG7u4Qoqg
+
+基于强化学习的无地图机器人导航，Reinforcement Learning Based MRN
+
+https://mp.weixin.qq.com/s/X8STHGKlJYN2Qizz4t8Llg
+
+Accelerating DRL via Human knowledge
+
+https://zhuanlan.zhihu.com/p/145983063
+
+大规模深度强化学习的发展
+
+https://zhuanlan.zhihu.com/p/53326459
+
+深度强化学习中的好奇心
+
+https://zhuanlan.zhihu.com/p/79712897
+
+动态环境下基于DRL的无人车自适应路径规划方法
+
+https://mp.weixin.qq.com/s/LdkPnm8vo8oeYzIC0Imlvw
+
+俞扬：强化学习真实环境不好用？那就模拟器来凑！
+
+https://mp.weixin.qq.com/s/GcjoZfasWNZWlTC_xP1_wg
+
+通用强化学习用算法发现算法：DeepMind 数据驱动“价值函数”自我更新，14款Atari游戏完虐人类！
+
+https://mp.weixin.qq.com/s/IFIXvZ_9oEzHJI34_dFI8g
+
+训练DQN模型，loss出现nan，要怎么解决？
+
+https://mp.weixin.qq.com/s/RE43jNFKbOj0DcLpGnAY7g
+
+Distributional Soft Actor-Critic (DSAC)强化学习算法的设计与验证
+
+https://mp.weixin.qq.com/s/Sxrp3EZ8LCA3d06Zm5meKQ
+
+《深度强化学习中的迁移学习》2020综述论文，22页pdf
+
+https://mp.weixin.qq.com/s/ylavFA_MXLUhIBLCqxAjLQ
+
+阿里强化学习重排实践
+
+https://mp.weixin.qq.com/s/0o-dNtmafC2paA6gqTRkKA
+
+一步步详解用TD3算法通关BipedalWalkerHardcore-v2环境
+
+# Pytorch++
+
+https://mp.weixin.qq.com/s/xe5zmJklT2sqn_zffmyrLg
+
+Sharded:在相同显存的情况下使pytorch模型的参数大小加倍
+
+https://mp.weixin.qq.com/s/maOnO_o5y19X2D-ZnLjsJA
+
+PyTorch中的In-place操作是什么？为什么要避免使用这种操作？
+
+https://zhuanlan.zhihu.com/p/299736532
+
+使用PyTorch 1.6 for Android
+
+# AutoDL++
+
+https://mp.weixin.qq.com/s/1XDknbIapmuQi5eb61Jlaw
+
+遗传算法与网络结构搜索
+
+https://mp.weixin.qq.com/s/1zm2iMXD142Ug0_coVIGMg
+
+Darts: 可微结构搜索
+
+https://zhuanlan.zhihu.com/p/266102401
+
+Auto Seg-Loss: 自动损失函数设计
+
+https://mp.weixin.qq.com/s/y3SIK1sAscrWQuZ3mB9lew
+
+手动搜索超参数的一个简单方法
+
+https://mp.weixin.qq.com/s/ACxAAvvKK-DX5UDMe-RsXg
+
+最新《神经架构搜索NAS》教程，33页pdf
+
+https://mp.weixin.qq.com/s/2hSmI8xo1jUHgWrEu3YBIA
+
+一文读懂目前大热的AutoML与NAS
+
+https://mp.weixin.qq.com/s/1JgHE1juxuYEmKO9SXMssA
+
+NAS+Det
+
+https://mp.weixin.qq.com/s/nG_Mzlevs9ougnyeJyT38A
+
+一文看懂AutoML

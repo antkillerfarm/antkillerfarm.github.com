@@ -321,10 +321,6 @@ https://zhuanlan.zhihu.com/p/42345854
 
 如何基于gluon训练一个强有力的Reid Baseline
 
-https://www.zhihu.com/question/392035070
-
-如何看待亚马逊AI李沐团队大批人员离职?
-
 # Horovod
 
 Horovod是Uber开源的一套分布式深度学习框架。

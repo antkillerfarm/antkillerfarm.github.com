@@ -9,6 +9,22 @@ category: DL
 
 # OCR（续）
 
+https://mp.weixin.qq.com/s/gKsfsRxsbfXGOsSqeQEDbw
+
+CVPR2019：文本检测算法综述
+
+https://zhuanlan.zhihu.com/p/68058851
+
+自然场景下的文字检测：从多方向迈向任意形状
+
+https://mp.weixin.qq.com/s/jO2xc7Ri6TvrHyXHH0uX4w
+
+金山WPS：基于本地TensorFlow Lite和AI云服务的文档矫正功能
+
+https://mp.weixin.qq.com/s/3t8yzjMXiZwgqBb8izVfFg
+
+场景文字检测模型PixelLink详解与使用
+
 https://zhuanlan.zhihu.com/p/68356509
 
 TensorFlow 2.0中文手写字识别（汉字OCR）

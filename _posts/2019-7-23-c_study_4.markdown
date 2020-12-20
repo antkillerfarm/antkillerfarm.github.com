@@ -148,6 +148,14 @@ https://www.cnblogs.com/qyaizs/articles/2039101.html
 
 struct和typedef struct彻底明白了
 
+## cout格式化输出
+
+```c
+cout<<hex<<i<<endl; //输出十六进制数
+cout<<oct<<i<<endl; //输出八进制数
+cout<<dec<<i<<endl; //输出十进制数
+```
+
 ## 小细节
 
 对于std::vector来说，begin()/end()返回iterator，而front()/back()返回的是element。此外，还有cbegin()/cend()返回const iterator。
@@ -347,3 +355,45 @@ https://mp.weixin.qq.com/s/2Lq93xPffOVZB8WvbkhCDg
 https://mp.weixin.qq.com/s/m-dLZGAvY5BdVRfVWSpS2g
 
 C++11的异步操作不只是thread
+
+https://zhuanlan.zhihu.com/p/58976871
+
+编程风格之声明式与命令式的区别
+
+# Java++
+
+https://mp.weixin.qq.com/s/GaK4iyTNvDsO9nMCXxrWkQ
+
+看完这篇Exception和Error，和面试官扯皮就没问题了
+
+https://mp.weixin.qq.com/s/01fj7l3xsxHVstlkrJ0epw
+
+Java如何实现动态脚本？
+
+https://mp.weixin.qq.com/s/ag5u2EPObx7bZr7hkcrOTg
+
+新一代垃圾回收器ZGC的探索与实践
+
+https://mp.weixin.qq.com/s/Uw7YaphnlMQGGazIBYplgQ
+
+我调研了100来个Java开源博客系统，发现这5个最好用！
+
+https://mp.weixin.qq.com/s/tMUUwT0g3bzxyRgq5GeMWg
+
+从0到1!大话动静态代理
+
+https://mp.weixin.qq.com/s/0BEqgGEuC5cfqeDWx728Ig
+
+8张图带你理解Java内存区域
+
+https://mp.weixin.qq.com/s/_sLQiyNm92n2LA5YMNTocQ
+
+Java字符串String那些事
+
+https://mp.weixin.qq.com/s/C-hLyeshiENJ_wmUltOpbw
+
+JVM完整深入解析
+
+https://mp.weixin.qq.com/s/IlatTB-2AxxIph1z1RP9iQ
+
+Java虚拟机垃圾收集机制详解

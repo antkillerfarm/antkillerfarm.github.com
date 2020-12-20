@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Hbase, Docker, Pulsar
+title:  Hbase, Docker
 category: AI 
 ---
 
@@ -374,36 +374,10 @@ https://mp.weixin.qq.com/s/obrnGMWcYfvGyrCSO0PkDQ
 
 Docker基础与实战
 
-# Pulsar
+https://mp.weixin.qq.com/s/J21CLwgF1xLy-6fo1f6Lgw
 
-https://mp.weixin.qq.com/s/O8pj4pChyw8PK-G_4A3DWg
+Kubernetes决定弃用Docker，到底会影响到谁？
 
-发布订阅消息系统Apache Pulsar简介
+https://mp.weixin.qq.com/s/IKgzQwjTW21XUXMbgCmYyA
 
-https://mp.weixin.qq.com/s/ToJJTBWJXlpj3LkDj5YYvw
-
-为什么要选择Apache Pulsar
-
-https://mp.weixin.qq.com/s/B9zo0zThARAi11hRuJ-AqA
-
-开源实时数据处理系统Pulsar：一套搞定Kafka+Flink+DB
-
-https://mp.weixin.qq.com/s/v4A--nGiDTt58pZyIzepeg
-
-比拼Kafka，大数据分析新秀Pulsar到底好在哪
-
-https://mp.weixin.qq.com/s/x4GW5zvjD5Fyc-NrXDqpmA
-
-Kafka不够好，智联招聘基于Pulsar打造企业级事件中心
-
-https://mp.weixin.qq.com/s/sWrUlwEe4CBPQklzFWNE3A
-
-选择Pulsar而不是Kafka的7大理由
-
-https://mp.weixin.qq.com/s/L84Ll2PlJLHhQYo134bcFQ
-
-如何基于Apache Pulsar和Spark进行批流一体的弹性数据处理？
-
-https://mp.weixin.qq.com/s/zqvKzJkP5LtDriuRXojn7Q
-
-我们为什么从Kafka迁移至Pulsar？
+图解Docker架构

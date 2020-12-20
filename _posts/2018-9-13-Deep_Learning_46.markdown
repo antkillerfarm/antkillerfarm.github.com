@@ -249,156 +249,168 @@ https://mp.weixin.qq.com/s/gAidXX4YrezZcSa6Jpl8nQ
 
 万字长文概览深度学习的可解释性研究
 
-# AutoDL+
+# Graph NN+
 
-https://mp.weixin.qq.com/s/smAlLm-JZn_s2utSCVk7ig
+https://mp.weixin.qq.com/s/kQlxLDHLI6xxFzwJVjFj7w
 
-归一化(Normalization)方法如何进行自动学习和配置
+GraRep: 基于全局结构信息的图结点表示学习
 
-https://mp.weixin.qq.com/s/E0ULyXGz3UEcD0cIg-XkNA
+https://mp.weixin.qq.com/s/aGP8pcsCmEdjdCWVjA82Jg
 
-优化方法可以进行自动搜索学习吗？
+近期必读的5篇CVPR 2019图卷积网络相关论文和代码
 
-https://mp.weixin.qq.com/s/439I6hHIfq6KpkLEwAgDrw
+https://mp.weixin.qq.com/s/XApSbi-Pg-AeYGkPN3fldg
 
-MIT韩松团队开发“万金油”母网，嵌套10^19个子网，包下全球所有设备
+旷视研究院提出ML-GCN：基于图卷积网络的多标签图像识别模型
 
-https://mp.weixin.qq.com/s/OL_MuzKqAaDoOU3LF3Xmow
+https://mp.weixin.qq.com/s/rvcj9-6KlBsVmF_CAsip2A
 
-强化学习如何用于自动模型设计(NAS)与优化？
+超越标准GNN！DeepMind、谷歌提出图匹配网络
 
-https://mp.weixin.qq.com/s/Nmkcy2nBczUccwIdMJiH_A
+https://mp.weixin.qq.com/s/UotqgRjCTpjPrsIEWBRPxA
 
-MaskConnect: 探究网络结构搜索中的Module间更好的连接
+基于随机游走的图匹配算法
 
-https://mp.weixin.qq.com/s/of9C3l2cmzAVEt9opIgfKw
+https://mp.weixin.qq.com/s/dDaFhssFEYxS7ElMy4ekJw
 
-损失函数也可以进行自动搜索学习吗？
+基于图嵌入的深度图匹配
 
-https://mp.weixin.qq.com/s/OX0C9h5l6xffcQt6HOe_tQ
+https://mp.weixin.qq.com/s/LZvxvDpxQEtlKuXoxT_gTQ
 
-DetNAS：首个搜索物体检测Backbone的方法
+可变形曲面跟踪，亮风台新出基于图匹配的方法
 
-https://mp.weixin.qq.com/s/c7S_hV_8iRhR4ZoFxQYGYQ
+https://mp.weixin.qq.com/s/7DyPJ9LnqZ9XyAop33SxSw
 
-CVPR 2019神经网络架构搜索进展综述
+ST-GCN动作识别算法详解
 
-https://mp.weixin.qq.com/s/hWRStNp0Gu_ZO7J1Sjr6-w
+https://mp.weixin.qq.com/s/fxVsN2dDmayxJfxBRIXHhQ
 
-视频架构搜索的研究
+解读PingSage：图卷积神经网络在数十亿数据网络级别推荐系统的应用
 
-https://mp.weixin.qq.com/s/ABNPCpgyk_2EeYwnJFFehg
+https://mp.weixin.qq.com/s/49vnVOO0G_JvKrWcsN2_Ww
 
-自动优化架构，这个算法能帮工程师设计神经网络
+关系图注意力网络-Relational Graph Attention Networks
 
-https://mp.weixin.qq.com/s/0kGJfKARKs2TuIQ4YJYbUA
+https://mp.weixin.qq.com/s/zlgnOGhuzIlOha8Y6cwUxA
 
-比手工模型快10~100倍，谷歌揭秘视频NAS三大法宝
+快速了解阿里的M2GRL模型
 
-https://zhuanlan.zhihu.com/p/100570132
+https://mp.weixin.qq.com/s/0Tb5t9K2V-RYb12UKL1cXg
 
-NAS evaluation is frustratingly hard
+GraphSAGE+FM+Transformer强强联手：评微信的GraphTR模型
 
-https://mp.weixin.qq.com/s/QEkOQG2dQrPG-aa8OsVSOg
+https://mp.weixin.qq.com/s/0lNeSjpm4lbu_8mopWJ2oA
 
-NASNet: Google Brain经典作，改造搜索空间，性能全面超越人工网络，继续领跑NAS领域
+图表示学习中的Encoder-Decoder框架
 
-https://mp.weixin.qq.com/s/ClqOWx1RJGzoS0akI2s93w
+https://mp.weixin.qq.com/s/w190-7C4WA_JWw-ID9m8gA
 
-多媒体的AutoML与元学习，清华大学朱文武教授等
+没有完整图时，如何使用图深度学习？你需要了解流形学习2.0版本
 
-https://mp.weixin.qq.com/s/QtYNb1bVnWghNFK6fbynLw
+https://mp.weixin.qq.com/s/O5rDJiuzIUHM1YU6-vBb6Q
 
-激活函数如何进行自动学习和配置
+Pre-training on Graphs
 
-https://mp.weixin.qq.com/s/0fVNW5hekUNCsD6L9KL1iQ
+https://mp.weixin.qq.com/s/ejA2DM1iGH-P4dOlefSOSQ
 
-PNAS：渐进式神经网络搜索，准确率预测，21倍加速
+Graph Neural Networks in Recommender Systems
 
-https://mp.weixin.qq.com/s/Ho6XDRYmOBs9TqLMq7aPAg
+https://mp.weixin.qq.com/s/9ij8rI_MqyxbwVcjlF3HAA
 
-MetaQNN: 与Google同场竞技，MIT经典作，基于Q-Learning的神经网络搜索
+Google PPRGo:两分钟分类千万节点的最快GNN
 
-https://mp.weixin.qq.com/s/5NGCr6oMW2p5u4kF7YMCPw
+https://mp.weixin.qq.com/s/dIem8V4NiOWhKE_ENhAG5Q
 
-NAS太难了，搜索结果堪比随机采样！华为ICLR 2020论文给出6条建议
+缺失数据还原-图神经网络新应用
 
-https://zhuanlan.zhihu.com/p/110527110
+# 人脸检测/识别+
 
-Neural Architecture Search
+https://mp.weixin.qq.com/s/pmnb_WnncL12T1IZoso5DA
 
-https://zhuanlan.zhihu.com/p/111213620
+DeepID
 
-AutoML在计算机视觉领域的能与不能
+https://mp.weixin.qq.com/s/kH3-WUX4rc2SaLJcGzVLcQ
 
-https://mp.weixin.qq.com/s/MIJHiYk-CjYtmW_9zW4hjA
+如何检测极小人脸？试试超分辨率
 
-Hyper-Parameter Optimization，56页pdf
+https://github.com/ShiqiYu/libfacedetection
 
-https://mp.weixin.qq.com/s/y-5Gh0Jy3Fpz8xvw_tOICg
+libfacedetection算法开源
 
-MixPath：基于权重共享的神经网络搜索统一方法
+https://mp.weixin.qq.com/s/DkvQ86tgU4DarsmY_qTLdg
 
-https://mp.weixin.qq.com/s/tYV_ratEA0NxzJukF-RTSA
+最快人脸检测遇敌手！ZQCNN vs libfacedetection
 
-玩转网络结构搜索？你需要更大的搜索空间
+https://mp.weixin.qq.com/s/PsToV8Z17tRzXW_AbaMNmg
 
-https://mp.weixin.qq.com/s/IRDE4RqwXR5W7QFhD_tSPQ
+Blazeface人脸检测器
 
-AutoML在深度学习模型设计和优化中有哪些用处？
+https://mp.weixin.qq.com/s/5ANMZNaR2ayYMUQEJ6aM3w
 
-https://zhuanlan.zhihu.com/p/143730467
+人脸识别基于通用表示学习
 
-One Shot NAS总结
+https://mp.weixin.qq.com/s/jrynQZgoljFi6zdVKWo5nw
 
-https://mp.weixin.qq.com/s/e7Whr2Im5fu8O7zF95Afkw
+在浏览器中实现AR试妆
 
-进化算法如何用于自动模型搜索(NAS)
+https://mp.weixin.qq.com/s/lr9OVNiIN0x7k4cmNZoCUw
 
-https://mp.weixin.qq.com/s/dS3nHGcQ1VoOyVBcRPFtkg
+用于人脸检测的SSH算法
 
-AutoML都有哪些核心技术，如何对其进行长期深入学习
+https://mp.weixin.qq.com/s/A5-Z6APwS1iFCUgYxtYNyA
 
-https://mp.weixin.qq.com/s/A3Bg4-WoEQxFk3G5hCKNPQ
+重磅！GroupFace人脸识别，刷新9个数据集SOTA
 
-连续可微分架构如何用于网络结构搜索
+https://mp.weixin.qq.com/s/-VknGwKKY14cT-lZ7sC43A
 
-https://mp.weixin.qq.com/s/0AE8w_0cZGcMZIwjUTKPrg
+人脸识别--基于深度学习以人类为中心的图像理解
 
-如何学习AutoML在模型优化中的应用，这12篇文章可以作为一个参考
+# Loss function详解+
 
-https://mp.weixin.qq.com/s/LxLTsz7T_lAkqfZ9voSX5Q
+https://mp.weixin.qq.com/s/CPfhGxig9BMAgimBSOLy3g
 
-强化学习网络结构搜索(一)
+用于图像检索的等距离等分布三元组损失函数
 
-https://mp.weixin.qq.com/s/wL0prNVm5bKWOvEg3PE33g
+https://www.zhihu.com/question/375794498
 
-强化学习网络结构搜索(二)
+深度学习的多个loss如何平衡？
 
-https://mp.weixin.qq.com/s/9vGQUqKyf9Ct6im0zv6YiQ
+https://mp.weixin.qq.com/s/tzY_lG0F9dP5Q-LmwuHLmQ
 
-强化学习网络结构搜索(三)
+常见损失函数和评价指标总结
 
-https://mp.weixin.qq.com/s/1XDknbIapmuQi5eb61Jlaw
+https://mp.weixin.qq.com/s/lw9frtqocqsS-q2KGfzO1Q
 
-遗传算法与网络结构搜索
+深入理解计算机视觉中的损失函数
 
-https://mp.weixin.qq.com/s/1zm2iMXD142Ug0_coVIGMg
+https://mp.weixin.qq.com/s/_HQ5an_krRCYMVnwEgGJow
 
-Darts: 可微结构搜索
+深度学习的多个loss如何平衡 & 有哪些“魔改”损失函数，曾经拯救了你的深度学习模型？
 
-https://zhuanlan.zhihu.com/p/266102401
+https://blog.csdn.net/shanglianlm/article/details/85019768
 
-Auto Seg-Loss: 自动损失函数设计
+十九种损失函数
 
-https://mp.weixin.qq.com/s/y3SIK1sAscrWQuZ3mB9lew
+https://mp.weixin.qq.com/s/8oKiVRjtPQIH1D2HltsREQ
 
-手动搜索超参数的一个简单方法
+图像分割损失函数最全面、最详细总结
 
-https://mp.weixin.qq.com/s/ACxAAvvKK-DX5UDMe-RsXg
+https://zhuanlan.zhihu.com/p/158853633
 
-最新《神经架构搜索NAS》教程，33页pdf
+一文理解Ranking Loss/Margin Loss/Triplet Loss
 
-https://mp.weixin.qq.com/s/2hSmI8xo1jUHgWrEu3YBIA
+https://zhuanlan.zhihu.com/p/235533342
 
-一文读懂目前大热的AutoML与NAS
+目标检测：Loss整理
+
+https://zhuanlan.zhihu.com/p/191355122
+
+NLP样本不均衡之常用损失函数对比
+
+https://mp.weixin.qq.com/s/KL_D8pWtcXCJHz7dd70jyw
+
+Face Recognition Loss on Mnist with Pytorch
+
+https://zhuanlan.zhihu.com/p/77686118
+
+机器学习常用损失函数小结

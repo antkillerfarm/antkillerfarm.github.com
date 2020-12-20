@@ -9,7 +9,29 @@ category: resource
 
 # NLP参考资源
 
-## 文本摘要（续）
+## 命名实体识别（续）
+
+https://mp.weixin.qq.com/s/DfXTwu2dobjmR1Xd3PG9Zg
+
+美团搜索中NER技术的探索与实践
+
+https://mp.weixin.qq.com/s/O4DNQbEuvFapZmYWa2jRUQ
+
+命名实体识别的深度学习综述
+
+## 文本匹配
+
+https://zhuanlan.zhihu.com/p/111769969
+
+谈谈文本匹配和多轮检索
+
+https://mp.weixin.qq.com/s/5toWf90bJeSMGso6HaNTMQ
+
+腾讯提出用于文本匹配的多信道信息交叉模型，在真实任务中表现优异
+
+https://zhuanlan.zhihu.com/p/111768258
+
+Question Answering论文
 
 https://mp.weixin.qq.com/s/trDAoPgcsHr0Tz0AT5N3HQ
 
@@ -386,19 +408,3 @@ https://mp.weixin.qq.com/s/MP0Px9ylUT0tpdz_hP5JBw
 https://zhuanlan.zhihu.com/p/32314500
 
 DL实战课程推荐-从0到1构建一个Chatbot系统
-
-https://mp.weixin.qq.com/s/GhJRebSXXq0ZFh3evAqLxw
-
-漫谈神经语言模型之中文输入法
-
-https://mp.weixin.qq.com/s/rF4zKCbj3Jh8dDR1239lpA
-
-基于双语主题模型的跨语言层次分类体系匹配
-
-https://mp.weixin.qq.com/s/vnqpAiiKZjkamSgF2GAZyw
-
-跨语言自然语言处理笔记
-
-https://mp.weixin.qq.com/s/gQ9dV-IPWHTOLbI6u0D67g
-
-可解释推荐系统：身怀绝技，一招击中用户心理

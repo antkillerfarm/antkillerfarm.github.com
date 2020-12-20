@@ -283,3 +283,11 @@ https://mp.weixin.qq.com/s/4LQBY0rMJk0tU8lF3fgHfQ
 https://mp.weixin.qq.com/s/kH6K6L6-BYnYE-g46WhNCg
 
 在OpenCV中使用色彩校正
+
+https://mp.weixin.qq.com/s/K4P8151BuM4DQPSK-KzPFQ
+
+OpenCV图像旋转的原理与技巧
+
+https://mp.weixin.qq.com/s/hGONFisdtwcF5CRSB9IF6g
+
+图像处理基础：颜色空间及其OpenCV实现

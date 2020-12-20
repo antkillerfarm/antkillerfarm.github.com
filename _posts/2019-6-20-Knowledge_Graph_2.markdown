@@ -321,6 +321,14 @@ https://mp.weixin.qq.com/s/iVIoaZxhS1EyC2etRnBf4Q
 
 行业知识图谱构建最新进展
 
+https://mp.weixin.qq.com/s/E76Ekr63HYo8sPxoIQS-CA
+
+当知识图谱遇上个性化搜索
+
+https://mp.weixin.qq.com/s/ixqzYrI-e9HQJ5hsHlWO_A
+
+BERT meet Knowledge Graph：预训练模型与知识图谱相结合的研究进展
+
 # AI工具+
 
 https://mp.weixin.qq.com/s/3eoN0YHI84oomdTZO6TrvQ
@@ -386,27 +394,3 @@ https://mp.weixin.qq.com/s/Z27oInh5rdxnxt1-KFAiRA
 https://mp.weixin.qq.com/s/8mpc7AblZyRw7LCh35vL2g
 
 哈工大讯飞联合实验室发布知识蒸馏工具TextBrewer
-
-https://mp.weixin.qq.com/s/Zu_IPBQVJtcwNln-xvEZxQ
-
-DarkLabel：支持检测、跟踪、ReID数据集的标注软件
-
-https://mp.weixin.qq.com/s/5klwQCPtiZOwFJYHDOpWFg
-
-语义分割标注工具Semantic Segmentation Editor快速安装指南
-
-https://mp.weixin.qq.com/s/1EeYmZGoa-xpWmIvUoqCyw
-
-瑞士小哥开源文本英雄Texthero：一行代码完成数据预处理
-
-https://mp.weixin.qq.com/s/p9HpH2e5ShQCFcCxVNvMbg
-
-清华开源迁移学习算法库
-
-https://mp.weixin.qq.com/s/vzUt-5C_dRAChEfQYLp4lA
-
-PyTorch实现，GitHub 4000星：这是微软开源的计算机视觉库
-
-https://mp.weixin.qq.com/s/5VeersQKxcT9AtFXS_CXnA
-
-推荐一款超高速、多特性的高性能序列推理引擎——LightSeq

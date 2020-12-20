@@ -69,6 +69,18 @@ https://zhuanlan.zhihu.com/p/149266594
 
 尝试过和同学一次性玩了12个小时，但是也就打了几仗，占了数城而已。孔明一直没等到。。。
 
+## 2020.12
+
+岁数大了，除了偶尔玩两把《魔兽3》，基本告别游戏，包括手游了。下面的内容，主要来自于公司的年轻人的讨论。
+
+首先是Nintendo Switch，主要是一些小游戏。大作包括《塞尔达传说》。
+
+还有近来的PC游戏《赛博朋克 2077》，了解了一下游戏的制作公司“波兰蠢驴”。
+
+https://www.zhihu.com/question/62038731
+
+你这么看波兰蠢驴这个公司？
+
 ## Other
 
 https://www.zhihu.com/question/39626359
@@ -206,19 +218,3 @@ https://mp.weixin.qq.com/s/aixpv9t1PLPRWUP6PvZ0EQ
 https://mp.weixin.qq.com/s/i3Xd_IB7R0-QPztn-pgpng
 
 遍地开花的Attention，你真的懂吗？
-
-https://mp.weixin.qq.com/s/rrbwItXt-1EaGiqtDEGvog
-
-为节约而生：从标准Attention到稀疏Attention
-
-https://mp.weixin.qq.com/s/MzHmvbwxFCaFjmMkjfjeSg
-
-遍地开花的Attention，你真的懂吗？
-
-https://mp.weixin.qq.com/s/e_LEhLf2Rh-1zkEBmqS4nA
-
-NLP这两年：15个预训练模型对比分析与剖析
-
-https://mp.weixin.qq.com/s/LAInpFPa-3R1rfv6idILnw
-
-注意力机制发展如何了，如何学习它在各类任务中的应用？

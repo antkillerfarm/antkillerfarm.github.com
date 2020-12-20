@@ -282,6 +282,18 @@ http://mazhuang.org/2016/12/14/rtfsc-with-opengrok/
 
 搭建大型源码阅读环境——使用OpenGrok
 
+## ELF & PE
+
+![](/images/img4/exe.png)
+
+https://zhuanlan.zhihu.com/p/254882216
+
+深入浅出ELF
+
+https://mp.weixin.qq.com/s/vnqANjTMNqdjkHXl203eRg
+
+逆向工程基础：从PE文件到进程地址空间
+
 ## 参考
 
 https://mp.weixin.qq.com/s/QB-IHiCIWEu3bALm2Dp46Q
@@ -307,6 +319,10 @@ Linux写时拷贝技术(copy-on-write)
 https://mp.weixin.qq.com/s/dZNjq05q9jMFYhJrjae_LA
 
 Linux I/O原理和Zero-copy技术全面揭秘
+
+https://mp.weixin.qq.com/s/cudK2dhw4jNr7I34luVKVw
+
+终于有人把零拷贝Zero-Copy讲懂了
 
 https://mp.weixin.qq.com/s/MNzSES3dlMuiwkffLWJGIg
 
@@ -415,15 +431,3 @@ https://mp.weixin.qq.com/s/snQ3T86usv4rXz0MMQvFfQ
 https://www.cnblogs.com/zhouyu629/p/3734494.html
 
 一次心惊肉跳的服务器误删文件的恢复过程
-
-https://mp.weixin.qq.com/s/A8TnhOFLQOhEqphE760yvw
-
-15个相见恨晚的Linux神器，你可能一个都没见过
-
-https://mp.weixin.qq.com/s/ejGjsGA1ijPP--j3BLcEFA
-
-Linux并发与同步
-
-https://mp.weixin.qq.com/s/CAPU8bjJWobQs6JHHMasvQ
-
-Linux服务端最大并发数是多少？

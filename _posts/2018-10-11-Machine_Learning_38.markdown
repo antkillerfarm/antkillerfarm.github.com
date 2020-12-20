@@ -343,6 +343,10 @@ https://mp.weixin.qq.com/s/ZJjQY5g95p_s2Te9Rl2zIA
 
 特征选择介绍及4种基于过滤器的方法来选择相关特征
 
+https://mp.weixin.qq.com/s/q635XCJ3tVfesmTF4yvJ_w
+
+categorical feature编码方法小结
+
 # 时间序列分析
 
 https://www.kaggle.com/thebrownviking20/everything-you-can-do-with-a-time-series/notebook
@@ -352,6 +356,10 @@ https://www.kaggle.com/thebrownviking20/everything-you-can-do-with-a-time-series
 https://mp.weixin.qq.com/s/FRSe1mJTvk9U66ta-r9iCQ
 
 手把手教你用Python玩转时序数据，从采样、预测到聚类
+
+https://mp.weixin.qq.com/s/7Y2we8gLidKMgnZCWnZURg
+
+时间序列预测方法综述
 
 https://mp.weixin.qq.com/s/Q82YzANWDMkKWm5k2XmPkA
 
@@ -388,15 +396,3 @@ https://mp.weixin.qq.com/s/DxRoTGtdrwqcjXL_ot57eg
 https://mp.weixin.qq.com/s/iDUFr11-YX6oa6bLXWK3iQ
 
 时序特征挖掘的奇技淫巧
-
-https://mp.weixin.qq.com/s/S3xjk9QekWoni0eEvBhlLQ
-
-特征工程之处理时间序列数据
-
-https://mp.weixin.qq.com/s/15HXAIhmtYLbG3MjwEKDSQ
-
-从移动平均到指数平滑
-
-https://mp.weixin.qq.com/s/56so2p7a4wIgo38nVSR44A
-
-时间序列分解总结

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  TensorFlow（五）, TVM, LLVM, ANTLR
+title:  TensorFlow（五）, TVM, DL框架怀古
 category: AI 
 ---
 
@@ -8,18 +8,6 @@ category: AI
 {:toc}
 
 # TensorFlow
-
-https://mp.weixin.qq.com/s/eX3LWYiSH-KObH_7F_3QCA
-
-TensorFlow 1.11.0发布，一键多GPU
-
-https://mp.weixin.qq.com/s/316VVXLQfeIsKNk4ld-VRw
-
-TensorFlow语义分割套件开源了ECCV18旷视科技BiSeNet实时分割算法
-
-https://mp.weixin.qq.com/s/XI1J4ardEWKP4UQ4IXZGTQ
-
-TensorFlow Hub,给您带来全新的Web体验
 
 http://www.jianshu.com/p/1da012a83b74
 
@@ -381,56 +369,48 @@ https://mp.weixin.qq.com/s/CMTOW3cYQkkECpPuzZl0nQ
 
 RAMMER如何进一步“压榨”加速器性能
 
-# LLVM
+# DL框架怀古
 
-## 概述
+2017.9
 
-LLVM最初设计时，主要做优化方面的研究，所以当时的全称叫Low Level Virtual Machine。后来因为成为了编译器，官方放弃了这个称呼，但保留了LLVM的简称。
+http://deeplearning.net/
 
-官网：
+这个网站是Theano的主站，也是我最早接触DL时浏览的网站。其时，我虽然对DL有浓厚的兴趣，但尚未以此作为工作内容。
 
-http://llvm.org/
+从该网站提供的招聘信息来看，Caffe、Theano、Torch是当时主流的三大框架库。
 
-代码：
+岂料时隔一年半载之后，这三大框架都渐趋式微。
 
-https://github.com/llvm/llvm-project
+Caffe被Caffe 2替代，但使用的广泛度仍超过后者。
 
-LLVM的主要作者是Chris Lattner。
+Theano被同样基于计算图的TensorFlow淘汰。2017年9月停止更新。
 
-他的个人主页：
+Torch相对变动最小，它被PyTorch替代。这更可以看作是python对于lua的胜利。
 
-http://nondot.org/sabre/
+----
 
->Chris Lattner，1978年生，美国人。University of Portland本科（2000）+UIUC博士（2005）。LLVM、Swift、MLIR的作者。先后任职于Apple、Tesla、Google、SiFive。
+2020.12
 
-架构设计：
+又是三年过去了。
 
-http://www.aosabook.org/en/llvm.html
+生命力超强的Caffe终于过气了，大约从2019年下半年开始，即使是新入行的客户，也没人用它了。但是Caffe 2从来没火过。不知道是Caffe 2不行，让贾扬清去阿里，还是贾扬清去阿里了，导致的Caffe 2被放弃。
 
->顺便提一下，这个网站本身就是个宝库。
+遗弃列表还有CNTK和Chainer。
 
-# ANTLR
+mxnet一直半死不活，虽然李沐并未放弃，但是手下已经有些离开的了。
 
-ANTLR—Another Tool for Language Recognition，其前身是PCCTS，它为包括Java，C++，C#,python在内的语言提供了一个通过语法描述来自动构造自定义语言的识别器（recognizer），编译器（parser）和解释器（translator）的框架。
-
-官网：
-
-http://www.antlr.org/
+倒是国内，一堆原先私有的框架，纷纷开源。比如清华Jittor，旷视MegEngine，华为Mindspore在2020.3扎堆开源。但是根本溅不起丝毫的水花。你不开源，是自己用；你开源了，还是自己用。反正我是没兴趣用。
 
 参考：
 
-http://yuzhouwan.com/posts/55501/
+https://www.zhihu.com/question/392035070
 
-Antlr
+如何看待亚马逊AI李沐团队大批人员离职?
 
-https://www.ibm.com/developerworks/cn/java/j-lo-antlr/index.html
+https://zhuanlan.zhihu.com/p/121834310
 
-使用Antlr开发领域语言
+深度学习框架的灵魂
 
-# MPS
+https://mp.weixin.qq.com/s/DxV7mm7xCXWFy_KTIDh_-Q
 
-MPS是jetbrains推出的用于构建DSL的工具。
-
-官网：
-
-https://www.jetbrains.com/mps/
+深度学习框架简史：TF和PyTorch双头垄断

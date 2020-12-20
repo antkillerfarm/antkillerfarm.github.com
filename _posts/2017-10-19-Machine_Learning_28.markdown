@@ -67,36 +67,6 @@ https://zhuanlan.zhihu.com/p/62450795
 
 kNN的花式用法
 
-## ANN
-
-随着DL的发展，出现了很多神经网络架构的聚类算法，这些算法一般统称ANN。
-
-常见的有：
-
-Spotify’s ANNOY
-
-Google’s ScaNN
-
-Facebook’s Faiss
-
-HNSW（Hierarchical Navigable Small World graphs）
-
-https://zhuanlan.zhihu.com/p/78561555
-
-KNN的实现方式有哪些？
-
-https://mp.weixin.qq.com/s/92Dld5zg5vLtpkdnhmSldg
-
-K近邻算法哪家强？KDTree、Annoy、HNSW原理和使用方法介绍
-
-https://mp.weixin.qq.com/s/Gxgm8r5wqZn-oUS13HC5Xg
-
-如何选择最佳的最近邻算法
-
-https://mp.weixin.qq.com/s/Vzj0xxpW-xBceOpiwy0WPw
-
-Facebook工程实践：语义向量召回之ANN检索
-
 # AutoML
 
 ## 概述

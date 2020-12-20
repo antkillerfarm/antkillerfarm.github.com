@@ -147,6 +147,10 @@ https://zhuanlan.zhihu.com/p/136382095
 
 YOLO系列：YOLOv1,YOLOv2,YOLOv3,YOLOv4,YOLOv5简介
 
+https://mp.weixin.qq.com/s/rzR-rAiJejR8LjDDgiauZA
+
+C++实现yolov5的OpenVINO部署
+
 # One-stage vs. Two-stage
 
 虽然我们在概述一节已经提到了One-stage和Two-stage的概念。但鉴于这个概念的重要性，在介绍完主要的目标检测网络之后，很有必要再次总结一下。
@@ -292,23 +296,3 @@ https://mp.weixin.qq.com/s/mY_QHvKmJ0IH_Rpp2ic1ig
 https://mp.weixin.qq.com/s/TelGG-uVQyxwQjiDGE1pqA
 
 特征金字塔网络FPN
-
-https://zhuanlan.zhihu.com/p/58603276
-
-FPN-目标检测
-
-https://zhuanlan.zhihu.com/p/70523190
-
-总结-CNN中的目标多尺度处理
-
-https://mp.weixin.qq.com/s/xMQA97k0USl69v1MC86HKA
-
-多尺度特征金字塔结构用于目标检测
-
-https://mp.weixin.qq.com/s/rMR98woa1y_sjSFgG24cGQ
-
-常见特征金字塔网络FPN及变体
-
-https://mp.weixin.qq.com/s/ZqNRxexEFRxVXI7-bGPx0A
-
-Feature Pyramid Network详解特征金字塔网络FPN的来龙去脉

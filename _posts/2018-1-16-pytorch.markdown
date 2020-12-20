@@ -425,15 +425,3 @@ Pytorch有什么节省内存（显存）的小技巧？
 https://mp.weixin.qq.com/s/rCocDz2kW2tpkZel5Wh-hw
 
 Pytorch网络结构可视化
-
-https://mp.weixin.qq.com/s/EXuFXbPBIbzTyi0fUjvvPw
-
-两行代码统计模型参数量与FLOPs，这个PyTorch小工具值得一试
-
-https://zhuanlan.zhihu.com/p/73711222
-
-巧用torch.backends.cudnn.benchmark减少训练时间
-
-https://mp.weixin.qq.com/s/HginBrMOfEEWsZKq67u6EA
-
-在Pytorch中构建流数据集

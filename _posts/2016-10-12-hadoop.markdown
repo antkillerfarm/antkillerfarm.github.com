@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Hadoop
+title:  Hadoop, Pulsar
 category: AI 
 ---
 
@@ -224,7 +224,53 @@ https://mp.weixin.qq.com/s/9A0z0S9IthG6j8pZe6gCnw
 
 YARN在字节跳动的优化与实践
 
+# Pulsar
+
+https://mp.weixin.qq.com/s/O8pj4pChyw8PK-G_4A3DWg
+
+发布订阅消息系统Apache Pulsar简介
+
+https://mp.weixin.qq.com/s/ToJJTBWJXlpj3LkDj5YYvw
+
+为什么要选择Apache Pulsar
+
+https://mp.weixin.qq.com/s/B9zo0zThARAi11hRuJ-AqA
+
+开源实时数据处理系统Pulsar：一套搞定Kafka+Flink+DB
+
+https://mp.weixin.qq.com/s/v4A--nGiDTt58pZyIzepeg
+
+比拼Kafka，大数据分析新秀Pulsar到底好在哪
+
+https://mp.weixin.qq.com/s/x4GW5zvjD5Fyc-NrXDqpmA
+
+Kafka不够好，智联招聘基于Pulsar打造企业级事件中心
+
+https://mp.weixin.qq.com/s/sWrUlwEe4CBPQklzFWNE3A
+
+选择Pulsar而不是Kafka的7大理由
+
+https://mp.weixin.qq.com/s/L84Ll2PlJLHhQYo134bcFQ
+
+如何基于Apache Pulsar和Spark进行批流一体的弹性数据处理？
+
+https://mp.weixin.qq.com/s/zqvKzJkP5LtDriuRXojn7Q
+
+我们为什么从Kafka迁移至Pulsar？
+
 # Pytorch+
+
+https://mp.weixin.qq.com/s/EXuFXbPBIbzTyi0fUjvvPw
+
+两行代码统计模型参数量与FLOPs，这个PyTorch小工具值得一试
+
+https://zhuanlan.zhihu.com/p/73711222
+
+巧用torch.backends.cudnn.benchmark减少训练时间
+
+https://mp.weixin.qq.com/s/HginBrMOfEEWsZKq67u6EA
+
+在Pytorch中构建流数据集
 
 https://www.zhihu.com/question/303070254
 

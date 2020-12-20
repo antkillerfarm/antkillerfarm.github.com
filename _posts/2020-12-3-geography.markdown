@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 地理
+title: 地理, 多维数组的行优先和列优先
 category: Nature 
 ---
 
@@ -178,3 +178,64 @@ https://mp.weixin.qq.com/s/ABYf1naUtycBNllvqW5y6Q
 https://mp.weixin.qq.com/s/jHswcZDCjBH6qp46W8Vc4g
 
 漫画：为什么新疆永远不包邮？
+
+# 多维数组的行优先和列优先
+
+这里以numpy为工具，介绍一下多维数组的行优先和列优先的概念。
+
+首先我们生成一个3x4的数组：
+
+`arr = np.arange(12).reshape(3,4)`
+
+它的形状是这样的：
+
+![](/images/article/arr_3x4.png)
+
+如果我们按照C语言的方式存储它，也就是行优先存储的话，那么在内存中，它的形状是这样的：
+
+![](/images/article/arr_3x4_C.png)
+
+这种存储方式又被称作C contiguous array。
+
+另一派存储方式，也就是列优先存储，它的代表是Fortran语言。上面的数组在内存中的形状就是这样的了：
+
+![](/images/article/arr_3x4_Fortran.png)
+
+这种存储方式又被称作Fortran contiguous array。
+
+上述描述也可用下图表示：
+
+![](/images/img2/Row_and_column_major_order.png)
+
+numpy对这两种方式都支持，而且还巧妙的利用了两者之间的差异，对运算进行了简化。
+
+`arr2 = arr.T`
+
+比如上述转置操作，你以为numpy真的做了转置运算吗？其实不然。
+
+```python
+>>>arr.flags.f_contiguous
+False
+>>>arr2.flags.f_contiguous
+True
+```
+
+看到没，这里仅仅设置了一个标志而已。
+
+C和Fortran的这种差异，实际上是上世纪60年代，两大IT巨头AT&T和IBM之间战争的结果，并深远的影响了后来的软件。比如在通用计算领域，主要采用C格式，而数值计算领域，则多采用Fortran格式。
+
+典型的例子是Matlab。它最早是作为一些Fortran数学库的封装而存在的，因此很自然的采用了Fortran格式。OpenGL、OpenVX之类的接口，实际上也沿袭了这种路径依赖。
+
+Fortran作为最早的高级语言（1957年），至今仍有很强的生命力，这主要归功于：
+
+1.对数组、复数等数值计算的原生支持。这些语法糖，对于非程序员的科技人员很友好。
+
+2.没有指针等复杂特性。这一点既降低了上手的门槛，又对于编译器优化（尤其是现在比较流行的并行计算优化）很有好处。普通科技人员即使没有经过特殊的程序训练，也可以写出非常高效的程序。
+
+对于同样的内存布局，我们只需要颠倒下标就可以进行行/列优先的转换：
+
+例如Caffe的默认格式是: NCHW，行优先。
+
+而OpenVX是：WHCN，列优先。
+
+两者在内存中的布局是完全相同的。

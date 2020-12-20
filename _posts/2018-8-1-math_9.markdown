@@ -221,23 +221,3 @@ $$dS = \frac{Q}{T}\tag{14}$$
 http://galileo.phys.virginia.edu/classes/152.mf1i.spring02/CarnotEngine.htm
 
 Heat Engines: the Carnot Cycle
-
-## 统计热力学定义
-
-Entropy的统计热力学定义，相对就比较复杂了。这里仅列出推导的要点，不细讲了。
-
-首先是两个假设：
-
-1.**统计物理量的加和性**。（刘维尔定理）
-
-2.**概率分布的乘积性**。（不相关变量的概率分布公式）
-
-设系统有两部分，其熵为$$S_1,S_2$$，其概率分布为$$\Omega_1,\Omega_2$$，则根据上述假设可得：
-
-$$S=S_1+S_2$$
-
-$$\Omega=\Omega_1\times \Omega_2$$
-
-令$$S=f(\Omega)$$，则：
-
-$$S_1=f(\Omega_1),S_2=f(\Omega_2),S=f(\Omega_1)+f(\Omega_1)=f(\Omega_1\times \Omega_2)$$

@@ -282,6 +282,10 @@ https://mp.weixin.qq.com/s/VxODwO8qA33Cr1n62YXYBQ
 
 fastText：极快的文本分类工具
 
+https://mp.weixin.qq.com/s/TRrL6_nI4GimH_OJ1CswiQ
+
+NLP重铸篇之Fasttext
+
 ## RNNLM
 
 RNNLM是Mikolov早期提出的文本分类的工具。（其实就是他的博士毕业论文）

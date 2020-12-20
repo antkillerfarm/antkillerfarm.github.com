@@ -107,6 +107,18 @@ https://mp.weixin.qq.com/s/UW6k_M8bMEy_C_m5tYALoA
 
 ----
 
+氢化热：在Pt、Pd、Ni等催化剂存在下，烯烃和炔烃与氢进行加成反应，生成相应的烷烃，并放出热量，称为氢化热(heat of hydrogenation)。加氢反应一般是放热反应，如烯烃分子中每个双键的平均氢化热越小则表明它的位能越低、稳定越好。
+
+https://mp.weixin.qq.com/s/RIP9yP4e8ZfPS-12ZAwblw
+
+他在梦里解决了一个让科学家们头秃了几十年的难题，从此和蛇绑在了一起...（Friedrich August Kekulé）
+
+https://zhuanlan.zhihu.com/p/60825026
+
+化学老师在课堂上才不会和你讲这个秘密！
+
+----
+
 https://mp.weixin.qq.com/s/Vam7uTbwPfF8Ht365lGtvA
 
 一般不扯淡--直男口红入门！
@@ -176,7 +188,6 @@ https://zhuanlan.zhihu.com/p/23284525
 靠谱地，咱聊聊田中耕一
 
 ## 食品工业
-
 
 ![](/images/img3/Mulberry_Dyke_Fish_Pond.png)
 

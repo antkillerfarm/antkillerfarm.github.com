@@ -37,6 +37,20 @@ https://www.edg.com/
 
 这是EDG的官网。它是一家专门做C++前端的公司。因此，他们的更新和开源项目gcc/Clang一样勤，也就不足为奇了。事实上它的商业模式就是：如果硬件公司没有实力或财力做编译器，那么就购买我的前端好了。
 
+# 历史
+
+https://mp.weixin.qq.com/s/cfBT0wsqzZRwedMO7Qz_vA
+
+“任性”的C语言之父：因拒付论文装订费错失博士学位，论文52年后重见天日（Dennis Ritchie）
+
+https://zhuanlan.zhihu.com/p/257089138
+
+C语言发展史的点点滴滴
+
+https://mp.weixin.qq.com/s/_HG19EqrEQiiRRx2SxB19g
+
+图灵老友写下1000条指令程序，锤炼70年，化身350万行代码飞向火星(Christopher Strachey)
+
 # 头文件被多个源文件引用
 
 在头文件中定义字符串时，如果该头文件会被多个源文件引用的话，字符串必须被定义为const，否则会有重定义错。当然最好在头文件中只放声明，不要放定义。
@@ -372,14 +386,6 @@ switch (reg) {
 ```
 
 可以用上面的办法，少写一些case语句。
-
-# cout格式化输出
-
-```c
-cout<<hex<<i<<endl; //输出十六进制数
-cout<<oct<<i<<endl; //输出八进制数
-cout<<dec<<i<<endl; //输出十进制数
-```
 
 # uint8_t
 

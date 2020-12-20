@@ -7,7 +7,15 @@ category: DRL
 * toc
 {:toc}
 
-# AlphaGo（续）
+# AlphaGo
+
+### 其他关键点（续）
+
+由于很多人类的棋局都是因为中间偶然的失误导致了全盘覆灭（所谓“一着不慎满盘皆输”），其中的偶然性非常大，局部的优劣往往和棋局的最终结果无关，因此Value Network并没有用人类棋谱来训练。
+
+AlphaGo每更新一个“小版本”后，都要将这个版本和迄今最好的版本对比，如果新的版本胜率超过55%，才会用来取代以前最好的版本。这样做显然是为了防止AlphaGo自我博弈得“走火入魔”，陷入局部最优。
+
+![](/images/img4/AlphaGo.jpg)
 
 ## AlphaGo Zero
 
@@ -298,39 +306,3 @@ https://mp.weixin.qq.com/s/i5OmLu8aNbypiTUmP4teeQ
 https://mp.weixin.qq.com/s/aBrwbB_DOGTen-6XL7LGFQ
 
 邓侃：白话蒙特卡洛树搜索和ResNet
-
-https://mp.weixin.qq.com/s/nbTkr0PImlXUSYl91HD91Q
-
-AlphaGo背后的力量：蒙特卡洛树搜索入门指南
-
-https://mp.weixin.qq.com/s/-tH7DQo1cK9gA0bcpBJSDA
-
-AlphaGo Zero：笔记与伪代码
-
-https://mp.weixin.qq.com/s/CJuVoOf7idUChFIn7dH0Lg
-
-围棋中的数学原理
-
-https://mp.weixin.qq.com/s/d46qNFaftt4wxpV4sZnG-w
-
-一张图看懂AlphaGo Zero
-
-https://zhuanlan.zhihu.com/p/31749249
-
-比AlphaGo Zero更强的AlphaZero问世，8小时解决一切棋类！
-
-https://mp.weixin.qq.com/s/L7bZMkqyncwEt6D5tK1OdQ
-
-AlphaZero炼成最强通用棋类AI，DeepMind强化学习算法8小时完爆人类棋类游戏
-
-https://mp.weixin.qq.com/s/tFdnxqV5a5xZrFtB6E0AiQ
-
-新AlphaZero出世称霸棋界，8小时搞定一切棋类！自对弈通用强化学习无师自通！
-
-https://mp.weixin.qq.com/s/NwuuNIc9kc2qOGQP2pvRnA
-
-AlphaZero原理与启示
-
-https://mp.weixin.qq.com/s/8Zv3ElL2nWK-UDOHNjKb4g
-
-从源码解密AlphGo Zero背后基本原理

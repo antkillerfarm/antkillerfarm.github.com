@@ -9,6 +9,50 @@ category: DL
 
 # 无监督/半监督/自监督深度学习（续）
 
+https://mp.weixin.qq.com/s/DwY0oGu-G30Szs-ArI5WaQ
+
+程明明：面向弱监督的图像理解
+
+https://mp.weixin.qq.com/s/LFOljv-Hr6JqyI6TQ2X4sw
+
+半监督学习也能自动化？南大和第四范式提出Auto-SSL
+
+https://mp.weixin.qq.com/s/83xAXrc_H_OExW3vii08hA
+
+谷歌提出新方法：基于单目视频的无监督深度学习结构化
+
+https://mp.weixin.qq.com/s/gr0_p4WFToTrDfy47h-p0A
+
+基于自监督学习的视听觉信息同一性判断
+
+https://mp.weixin.qq.com/s/Dqz97_U5pw_4d9KFblJfLg
+
+基于自编码器的表征学习：如何攻克半监督和无监督学习？
+
+https://mp.weixin.qq.com/s/LaIvAuBHYGNMug3NZ1pLhQ
+
+半监督深度学习小结：类协同训练和一致性正则化
+
+https://mp.weixin.qq.com/s/aBDgV7u93MAv2MogZKBmvw
+
+Google提出Grasp2Vec模型：利用自监督方法学习物体表示
+
+https://mp.weixin.qq.com/s/YfDZMEkOnxp0_ei2Oam-YQ
+
+基于弱监督的视频时序动作检测的介绍
+
+https://mp.weixin.qq.com/s/RiL-s50oOI--PZyIOd2E0g
+
+弱监督语义分割最新方法资源列表
+
+https://mp.weixin.qq.com/s/USOWECXk_az4b6eTssfOBw
+
+基于弱监督深度学习的图像分割方法综述
+
+https://mp.weixin.qq.com/s/8oEdQOmSRrkIaTVQdhk2Dw
+
+无监督领域特定单图像去模糊
+
 https://mp.weixin.qq.com/s/FpIaa8XoJ9GsHxL-W1Cl5Q
 
 斯坦福AI实验室机器学习编程新范式：弱监督
@@ -211,64 +255,148 @@ https://mp.weixin.qq.com/s/6qqFAQBaOFuXtaeRSmQgsQ
 
 一文梳理2020年大热的对比学习模型
 
-# Graph NN+
+# AutoDL+
 
-https://mp.weixin.qq.com/s/rvcj9-6KlBsVmF_CAsip2A
+https://mp.weixin.qq.com/s/MkXBtGq4xt5YOh1-uhMBbg
 
-超越标准GNN！DeepMind、谷歌提出图匹配网络
+循环神经网络自动生成程序：谷歌大脑提出“优先级队列训练”
 
-https://mp.weixin.qq.com/s/UotqgRjCTpjPrsIEWBRPxA
+https://mp.weixin.qq.com/s/vctbsYk4LRwrQ7_Hs7fqkg
 
-基于随机游走的图匹配算法
+谷歌大脑发布神经架构搜索新方法：提速1000倍
 
-https://mp.weixin.qq.com/s/dDaFhssFEYxS7ElMy4ekJw
+https://mp.weixin.qq.com/s/9qpZUVoEzWaY8zILc3Pl1A
 
-基于图嵌入的深度图匹配
+进化算法+AutoML，谷歌提出新型神经网络架构搜索方法
 
-https://mp.weixin.qq.com/s/LZvxvDpxQEtlKuXoxT_gTQ
+https://mp.weixin.qq.com/s/HJ5caV1bQi7qVDeNXZ21qg
 
-可变形曲面跟踪，亮风台新出基于图匹配的方法
+手把手教你用Cloud AutoML做毒蜘蛛分类器
 
-https://mp.weixin.qq.com/s/7DyPJ9LnqZ9XyAop33SxSw
+https://mp.weixin.qq.com/s/smAlLm-JZn_s2utSCVk7ig
 
-ST-GCN动作识别算法详解
+归一化(Normalization)方法如何进行自动学习和配置
 
-https://mp.weixin.qq.com/s/fxVsN2dDmayxJfxBRIXHhQ
+https://mp.weixin.qq.com/s/E0ULyXGz3UEcD0cIg-XkNA
 
-解读PingSage：图卷积神经网络在数十亿数据网络级别推荐系统的应用
+优化方法可以进行自动搜索学习吗？
 
-https://mp.weixin.qq.com/s/49vnVOO0G_JvKrWcsN2_Ww
+https://mp.weixin.qq.com/s/439I6hHIfq6KpkLEwAgDrw
 
-关系图注意力网络-Relational Graph Attention Networks
+MIT韩松团队开发“万金油”母网，嵌套10^19个子网，包下全球所有设备
 
-https://mp.weixin.qq.com/s/zlgnOGhuzIlOha8Y6cwUxA
+https://mp.weixin.qq.com/s/OL_MuzKqAaDoOU3LF3Xmow
 
-快速了解阿里的M2GRL模型
+强化学习如何用于自动模型设计(NAS)与优化？
 
-https://mp.weixin.qq.com/s/0Tb5t9K2V-RYb12UKL1cXg
+https://mp.weixin.qq.com/s/Nmkcy2nBczUccwIdMJiH_A
 
-GraphSAGE+FM+Transformer强强联手：评微信的GraphTR模型
+MaskConnect: 探究网络结构搜索中的Module间更好的连接
 
-https://mp.weixin.qq.com/s/0lNeSjpm4lbu_8mopWJ2oA
+https://mp.weixin.qq.com/s/of9C3l2cmzAVEt9opIgfKw
 
-图表示学习中的Encoder-Decoder框架
+损失函数也可以进行自动搜索学习吗？
 
-https://mp.weixin.qq.com/s/Ul9BIrJxjlzJwGqRv6E7eg
+https://mp.weixin.qq.com/s/OX0C9h5l6xffcQt6HOe_tQ
 
-10分钟了解图嵌入
+DetNAS：首个搜索物体检测Backbone的方法
 
-https://mp.weixin.qq.com/s/w190-7C4WA_JWw-ID9m8gA
+https://mp.weixin.qq.com/s/c7S_hV_8iRhR4ZoFxQYGYQ
 
-没有完整图时，如何使用图深度学习？你需要了解流形学习2.0版本
+CVPR 2019神经网络架构搜索进展综述
 
-https://mp.weixin.qq.com/s/O5rDJiuzIUHM1YU6-vBb6Q
+https://mp.weixin.qq.com/s/hWRStNp0Gu_ZO7J1Sjr6-w
 
-Pre-training on Graphs
+视频架构搜索的研究
 
-https://mp.weixin.qq.com/s/ejA2DM1iGH-P4dOlefSOSQ
+https://mp.weixin.qq.com/s/ABNPCpgyk_2EeYwnJFFehg
 
-Graph Neural Networks in Recommender Systems
+自动优化架构，这个算法能帮工程师设计神经网络
 
-https://mp.weixin.qq.com/s/9ij8rI_MqyxbwVcjlF3HAA
+https://mp.weixin.qq.com/s/0kGJfKARKs2TuIQ4YJYbUA
 
-Google PPRGo:两分钟分类千万节点的最快GNN
+比手工模型快10~100倍，谷歌揭秘视频NAS三大法宝
+
+https://zhuanlan.zhihu.com/p/100570132
+
+NAS evaluation is frustratingly hard
+
+https://mp.weixin.qq.com/s/QEkOQG2dQrPG-aa8OsVSOg
+
+NASNet: Google Brain经典作，改造搜索空间，性能全面超越人工网络，继续领跑NAS领域
+
+https://mp.weixin.qq.com/s/ClqOWx1RJGzoS0akI2s93w
+
+多媒体的AutoML与元学习，清华大学朱文武教授等
+
+https://mp.weixin.qq.com/s/QtYNb1bVnWghNFK6fbynLw
+
+激活函数如何进行自动学习和配置
+
+https://mp.weixin.qq.com/s/0fVNW5hekUNCsD6L9KL1iQ
+
+PNAS：渐进式神经网络搜索，准确率预测，21倍加速
+
+https://mp.weixin.qq.com/s/Ho6XDRYmOBs9TqLMq7aPAg
+
+MetaQNN: 与Google同场竞技，MIT经典作，基于Q-Learning的神经网络搜索
+
+https://mp.weixin.qq.com/s/5NGCr6oMW2p5u4kF7YMCPw
+
+NAS太难了，搜索结果堪比随机采样！华为ICLR 2020论文给出6条建议
+
+https://zhuanlan.zhihu.com/p/110527110
+
+Neural Architecture Search
+
+https://zhuanlan.zhihu.com/p/111213620
+
+AutoML在计算机视觉领域的能与不能
+
+https://mp.weixin.qq.com/s/MIJHiYk-CjYtmW_9zW4hjA
+
+Hyper-Parameter Optimization，56页pdf
+
+https://mp.weixin.qq.com/s/y-5Gh0Jy3Fpz8xvw_tOICg
+
+MixPath：基于权重共享的神经网络搜索统一方法
+
+https://mp.weixin.qq.com/s/tYV_ratEA0NxzJukF-RTSA
+
+玩转网络结构搜索？你需要更大的搜索空间
+
+https://mp.weixin.qq.com/s/IRDE4RqwXR5W7QFhD_tSPQ
+
+AutoML在深度学习模型设计和优化中有哪些用处？
+
+https://zhuanlan.zhihu.com/p/143730467
+
+One Shot NAS总结
+
+https://mp.weixin.qq.com/s/e7Whr2Im5fu8O7zF95Afkw
+
+进化算法如何用于自动模型搜索(NAS)
+
+https://mp.weixin.qq.com/s/dS3nHGcQ1VoOyVBcRPFtkg
+
+AutoML都有哪些核心技术，如何对其进行长期深入学习
+
+https://mp.weixin.qq.com/s/A3Bg4-WoEQxFk3G5hCKNPQ
+
+连续可微分架构如何用于网络结构搜索
+
+https://mp.weixin.qq.com/s/0AE8w_0cZGcMZIwjUTKPrg
+
+如何学习AutoML在模型优化中的应用，这12篇文章可以作为一个参考
+
+https://mp.weixin.qq.com/s/LxLTsz7T_lAkqfZ9voSX5Q
+
+强化学习网络结构搜索(一)
+
+https://mp.weixin.qq.com/s/wL0prNVm5bKWOvEg3PE33g
+
+强化学习网络结构搜索(二)
+
+https://mp.weixin.qq.com/s/9vGQUqKyf9Ct6im0zv6YiQ
+
+强化学习网络结构搜索(三)

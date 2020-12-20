@@ -384,3 +384,29 @@ https://mp.weixin.qq.com/s/w1u1O7DRh1R0xQNEeLBUBA
 https://zhuanlan.zhihu.com/p/140936496
 
 Facebook、AWS、Google、Microsoft面试小记
+
+## 缺陷检测
+
+https://mp.weixin.qq.com/s/Bh4zY2toTTcVdsc4ri56ZQ
+
+复杂场景下的复杂缺陷检测方法--深度学习算法综述
+
+https://mp.weixin.qq.com/s/bbFDJ6PjjDZqdnPLMqBuKA
+
+秒杀DeepLabv3+与UNet的表面缺陷检测网络
+
+https://mp.weixin.qq.com/s/UHjGE5VNoVguYMylT6SLjg
+
+基于特征的图像配准用于缺陷检测
+
+https://mp.weixin.qq.com/s/MjG2YZWe80sN5eqWpQfxOw
+
+基于深度学习的表面缺陷检测方法综述
+
+https://mp.weixin.qq.com/s/15iowD4AocB6Ut_j8kGHeg
+
+一种先分割后分类的两阶段同步端到端缺陷检测方法
+
+https://mp.weixin.qq.com/s/Jb4UgRB1kC6c2_CzSQDKeg
+
+使用计算机视觉的方法在钢铁平面上检测焊接缺陷

@@ -301,6 +301,10 @@ https://mp.weixin.qq.com/s/_hGIdl9Y7hWuRDeCmZUMmg
 
 微信“看一看”推荐排序技术揭秘
 
+https://mp.weixin.qq.com/s/4Uw_JpGqPLNumvyar0d6Hg
+
+万字长文读懂微信“看一看”内容理解与推荐
+
 https://mp.weixin.qq.com/s/FLwnxDPgcziaIY94qG9jDw
 
 社交推荐系统中的用户交互
@@ -369,6 +373,28 @@ https://mp.weixin.qq.com/s/UyMDskA0eGN-NmiifwQF6Q
 
 美团本地生活场景的短视频分析
 
+# 推荐系统进阶+
+
+https://mp.weixin.qq.com/s/sDG5xm1JZ8rIEaVXeVQ5cA
+
+主流推荐引擎技术及优缺点分析
+
+https://mp.weixin.qq.com/s/rhk5WHRg6HWHmK7KWD-UYw
+
+常见的召回优化方式
+
+https://mp.weixin.qq.com/s/nUQsFBh2Jyf1fqINNlpmqg
+
+推荐系统Bias与Debias 2020最新综述
+
+https://mp.weixin.qq.com/s/XD6qFpt8FdLTy2PcrLiTIA
+
+推荐算法的"五环之歌"
+
+https://mp.weixin.qq.com/s/6Zs0nM2HOZFBFsC0PUy_0A
+
+推荐系统应该如何保障推荐的多样性？
+
 # 深度推荐系统+
 
 https://zhuanlan.zhihu.com/p/100019681
@@ -410,23 +436,3 @@ https://zhuanlan.zhihu.com/p/101298495
 https://zhuanlan.zhihu.com/p/101136699
 
 推荐系统中的深度匹配模型
-
-https://mp.weixin.qq.com/s/POEnU7bNG44Mz9844WuzIw
-
-腾讯视频是如何给你高效精准推送的
-
-https://zhuanlan.zhihu.com/p/99953120
-
-YouTube推荐系统算法梳理
-
-https://mp.weixin.qq.com/s/zeF7C7YrLqOjIWPen04K2Q
-
-搜索模型核心技术公开，淘宝如何做用户建模？
-
-https://www.zhihu.com/question/362190044
-
-推荐系统领域有啥巧妙的idea？
-
-https://zhuanlan.zhihu.com/p/96796043
-
-推荐系统中如何做多目标优化

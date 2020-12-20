@@ -211,6 +211,10 @@ https://zhuanlan.zhihu.com/p/34179420
 
 目标检测入门（二）：模型的评测与训练技巧
 
+https://mp.weixin.qq.com/s/GX_8uI398ghSegw9QLr_ew
+
+Hard Negative Mining/OHEM你真的知道二者的区别吗？
+
 ## FaceNet
 
 论文：
@@ -418,23 +422,3 @@ https://zhuanlan.zhihu.com/p/42968117
 https://mp.weixin.qq.com/s/CvdeV5xgUF0kStJQdRst0w
 
 从传统方法到深度学习，人脸关键点检测方法综述
-
-https://mp.weixin.qq.com/s/ZrnAqDJCLtMy_qTQ2RZT0A
-
-级联MobileNet-V2实现人脸关键点检测
-
-https://mp.weixin.qq.com/s/ymeJPUPRAGb1FltskqBs-A
-
-人脸关键点检测汇总（上）
-
-https://mp.weixin.qq.com/s/N6y-RDx7VszgCVhSiwP8jA
-
-人脸关键点检测汇总（下）
-
-https://mp.weixin.qq.com/s/D435jGsGPkCH5j-p8Zoksg
-
-遮挡、光照等因素的人脸关键点检测
-
-https://mp.weixin.qq.com/s/BV3xv8mH6K7dV1nik0X5aw
-
-PFLD：简单、快速、超高精度人脸特征点检测算法

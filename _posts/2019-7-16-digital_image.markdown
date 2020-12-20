@@ -108,6 +108,18 @@ https://mp.weixin.qq.com/s/jEwrEkAp1-UqSuNAASEwCA
 
 清华创业团队发布3D视觉技术白皮书，万字长文详述ToF
 
+https://zhuanlan.zhihu.com/p/112131317
+
+多视角立体视觉简介
+
+https://zhuanlan.zhihu.com/p/73748124
+
+多视角立体视觉MVS简介
+
+https://mp.weixin.qq.com/s/xEOSica0kYxOgwmGFQKbRA
+
+​多视图立体视觉: CVPR 2019 与 AAAI 2020 上的ACMH、ACMM及ACMP算法介绍
+
 ## 结构光
 
 https://mp.weixin.qq.com/s/o_XsmqLSPhvuC0iiK7xHag
@@ -384,10 +396,6 @@ https://mp.weixin.qq.com/s/7_mDPCEq3S-843PwUQSwXA
 
 车载相机image sensor选型
 
-https://zhuanlan.zhihu.com/p/73748124
-
-多视角立体视觉MVS简介
-
 https://zhuanlan.zhihu.com/p/74085115
 
 深度学习在3-D环境重建中的应用
@@ -419,3 +427,7 @@ https://mp.weixin.qq.com/s/2uNcJxU-USpb-LZkka__eQ
 https://mp.weixin.qq.com/s/DLsmHtUz3gAXMdzNsUTyFA
 
 苹果的DTOF中的SPAD原理和特性
+
+https://mp.weixin.qq.com/s/S8Wda_orUyco43FzV0cEeQ
+
+紫边/紫晕与图像传感器的关系

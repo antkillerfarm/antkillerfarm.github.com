@@ -9,6 +9,50 @@ category: AI
 
 # Machine Learning之Python篇
 
+## PIL（续）
+
+参考：
+
+https://mp.weixin.qq.com/s/lJYzxehwo3K2APB2l_WeTA
+
+用Python做图像处理（1）
+
+https://mp.weixin.qq.com/s/yc_-PyR1qM-3_oKcH9PztQ
+
+Python PIL图像处理开发极简教程
+
+https://mp.weixin.qq.com/s/rQnPh_ny0APpylwoBY1Pkw
+
+Python图像处理，366页pdf，Image Operators Image Processing in Python
+
+## Tangent
+
+Tangent是一个用于自动微分的源到源Python库。
+
+官网：
+
+https://github.com/google/tangent
+
+参考：
+
+https://mp.weixin.qq.com/s/CExdIdtUxZi4c2B39xdYJA
+
+谷歌开源Tangent
+
+## VisPy
+
+VisPy可以算的上是Matplotlib的威力加强版，它添加了对GPU、3D和大数据的支持。
+
+官网：
+
+http://vispy.org/
+
+参考：
+
+https://mp.weixin.qq.com/s/yduK_XKQ-qhiYTNl-YZMFg
+
+利用Python实现卷积神经网络的可视化
+
 ## Seaborn
 
 Seaborn是另一个非常棒的Matplotlib的威力加强版，专注于统计绘图，并可无缝对接Pandas库。
@@ -414,47 +458,3 @@ https://mp.weixin.qq.com/s/UOJsoB_YwBunj0YNShF11w
 https://mp.weixin.qq.com/s/YCNnfR9XAP0i-Qs-DIpOCg
 
 6段Python代码刻画深度学习历史：从最小二乘法到深度神经网络
-
-https://mp.weixin.qq.com/s/a7TLJD1-k3AlJ_ENPoJpwA
-
-用Python分析《红楼梦》，后四十回是曹雪芹所写吗？
-
-https://mp.weixin.qq.com/s/MUMQuZLDE5iyogLnIIBaMw
-
-7步让你从零开始掌握Python机器学习！
-
-http://mp.weixin.qq.com/s/5vI1Ii6bd_IzrXKHlvULSQ
-
-是学习Java还是Python？一张图告诉你！
-
-http://mp.weixin.qq.com/s/Ergq5KKM5vWLWirTf9loEw
-
-7步让你从零开始掌握Python机器学习！
-
-https://mp.weixin.qq.com/s/Ty46-s0kvr2MpbUhQPXJfQ
-
-朴素贝叶斯实战篇之新浪新闻分类
-
-https://mp.weixin.qq.com/s/CMxo4FNxWYyoG-gxAgtzyA
-
-手把手教你安装深度学习操作系统、驱动和各种python库！
-
-https://github.com/leetmaa/KMCLib
-
-KMCLib - a general framework for lattice kinetic Monte Carlo (KMC) simulations
-
-https://mp.weixin.qq.com/s/T7dswxqhie0riPlnjdf9_Q
-
-RNN入门与实践
-
-https://mp.weixin.qq.com/s/ZPCfnj2kLxXLpBNbxs2ggw
-
-Logistic回归实战篇之预测病马死亡率（一）
-
-https://mp.weixin.qq.com/s/XpX9TPgv4a_uKAKiy8W4fg
-
-Logistic回归实战篇之预测病马死亡率（二）
-
-https://mp.weixin.qq.com/s/0i1jKgaRu2pLPAXAvoH6qA
-
-Logistic回归实战篇之预测病马死亡率（三）

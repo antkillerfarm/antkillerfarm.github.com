@@ -253,6 +253,18 @@ https://mp.weixin.qq.com/s/tk5ZNriQremKNzCIl0jJVQ
 
 一文读懂机器学习“数据中毒”
 
+https://mp.weixin.qq.com/s/rhjrR8liq9R0J3AjvjqpNQ
+
+对抗图像和攻击在Keras和TensorFlow上的实现
+
+https://mp.weixin.qq.com/s/OG0oJlzFj4Urlz-_W1cC9g
+
+谷歌、OpenAI等警告：BERT、GPT-3等大型语言模型都有一个重大缺陷（泄露训练数据）
+
+https://mp.weixin.qq.com/s/VXfqI5CJKhWJKi6EK_1Q_A
+
+互联网广告黑产盛行，如何反作弊？
+
 # 目标检测进阶+
 
 https://mp.weixin.qq.com/s/IRD0iIVXyENlUOyfSbmlBA
@@ -358,19 +370,3 @@ https://mp.weixin.qq.com/s/cEg6HmS651riJVAtHdPafg
 https://mp.weixin.qq.com/s/A51X1e9E9T9pPbYdQVQtSg
 
 你是个成熟的C位检测器了，应该可以自动找C位了
-
-https://blog.csdn.net/u014380165/article/details/80602027
-
-Cascade RCNN算法笔记
-
-https://mp.weixin.qq.com/s/KupXlIt8bHLLGF6qWFH6vQ
-
-从Grid R-CNN到Grid R-CNN Plus：基于网格的目标检测演化
-
-https://mp.weixin.qq.com/s/kz74yb857gmG1h7MyOWx_Q
-
-目标检测正负样本区分策略和平衡策略总结(二)
-
-https://mp.weixin.qq.com/s/gJuXl6Oh_N_fJgQ9jT268w
-
-旷视研究院提出密集场景检测新方法：一个候选框，多个预测结果

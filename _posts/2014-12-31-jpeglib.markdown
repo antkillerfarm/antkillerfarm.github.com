@@ -231,45 +231,31 @@ https://mp.weixin.qq.com/s/NB12KQOHjso9wH8Ju1ueSA
 
 ZIP也能边下载边解压？流式解压技术揭秘！
 
-# 目标检测进阶+++++
-
-https://mp.weixin.qq.com/s/iPx5K2cSs5jlCt9d9oKpww
-
-VoVNet：实时目标检测的新backbone网络
-
-https://mp.weixin.qq.com/s/FHHIdoXyaU4skX-zyZFQew
-
-已开源！全新水下目标检测算法SWIPENet+IMA框架
-
-https://mp.weixin.qq.com/s/-x9A1eG5BfGmqV31SdMCMg
-
-目标检测算法之Light-Head R-CNN
-
-https://mp.weixin.qq.com/s/On-pHCdGg3piTQtDV88kQA
-
-特定场景下Yolo改进算法：Poly-Yolo
-
-https://mp.weixin.qq.com/s/HW0SNf-NYjXqJwlungRFpg
-
-综述：目标检测中的多尺度检测方法
-
-https://zhuanlan.zhihu.com/p/158907507
-
-From VanillaDet to AutoAssign
-
-https://mp.weixin.qq.com/s/GL_q4VLCgbjTZq_zpTLq0w
-
-Label Assign：提升目标检测上限
-
-https://mp.weixin.qq.com/s/EO5h1zW4yrToqwTCnXtz4g
-
-TTFNet: 最大程度提高训练效率的实时目标检测
-
-https://mp.weixin.qq.com/s/6R3myLyAeMMS0lR1GSlvcA
-
-细说物体检测中的Anchors
-
 # 数学杂谈++
+
+https://mp.weixin.qq.com/s/6XsH71CKaVikqnL6kVPqtg
+
+各种语言的Mandelbrot set示例代码
+
+https://mp.weixin.qq.com/s/gnPiCmsua0ByO5UwWqxuag
+
+史上最牛逼的文科生：学历史成为物理学家，却获得了数学界的最高荣誉，出了350部书，外号火星人！（Edward Witten）
+
+https://mp.weixin.qq.com/s/5p5ai_HKZMvbQ9Inu6ASbA
+
+史上最硬核老师：17年间，拿着菜刀把400个混混送进了哈佛耶鲁麻省！（Jaime Escalante）
+
+https://mp.weixin.qq.com/s/vLqJIaTXOkz0kYJzKguQaQ
+
+99%的数学家都算不出这道题（亲和数）
+
+https://mp.weixin.qq.com/s/ULzU9gwU-X6oSMM4mv5xhA
+
+两次入狱，数次移民，从罗马尼亚地下党到卡耐基梅隆教授—整数规划奠基者Egon Balas的彪悍人生
+
+https://mp.weixin.qq.com/s/NX0j_CgBqalBMVVdRkG59g
+
+数学界再出变态神人！竟用一个比基尼方程，暴力吊打美国数学家！（沙发问题）
 
 https://mp.weixin.qq.com/s/H1fvyQYRFcOe0pqclD-3yg
 
