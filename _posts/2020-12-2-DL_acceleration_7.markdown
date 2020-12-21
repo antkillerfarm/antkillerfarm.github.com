@@ -329,60 +329,54 @@ https://mp.weixin.qq.com/s/NJzGR-tY_WWeccbdshHckA
 
 基于交错组卷积的高效深度神经网络
 
-# 深度推荐系统++++
+https://mp.weixin.qq.com/s/6eyEMW9dVBR5cZrHxn8iqA
 
-https://zhuanlan.zhihu.com/p/52876883
+腾讯AI Lab详解3大热点：模型压缩、自动机器学习及最优化算法
 
-深度CTR预估模型中的特征自动组合机制演化简史
+https://xmfbit.github.io/2018/02/24/paper-ssl-dnn/
 
-https://mp.weixin.qq.com/s/Ni42SEukRBGDUHu_bh3Lig
+论文-Learning Structured Sparsity in Deep Neural Networks
 
-基于LSTM模型的广告库存预估算法
+https://mp.weixin.qq.com/s/d6HFVbbHwkxPGdnbyVuMyQ
 
-https://mp.weixin.qq.com/s/FYghBvkye8J7BqPje4JhFw
+密歇根州立大学提出NestDNN：动态分配多任务资源的移动端深度学习框架
 
-汽车之家推荐系统排序算法迭代之路
+https://mp.weixin.qq.com/s/lUTusig94Htf7_4Z3X1fTQ
 
-https://mp.weixin.qq.com/s/2whZpeQPXggHRDSEUnQZ-w
+清华&伯克利ICLR论文：重新思考6大剪枝方法
 
-加州大学-Liwei Wu博士论文：协同过滤与排序进展，150页pdf
+https://mp.weixin.qq.com/s/g3y9mRhkFtzSuSMAornnDQ
 
-https://mp.weixin.qq.com/s/jIjdYIbdls5lIbF7TVfbdA
+韩松博士论文：面向深度学习的高效方法与硬件
 
-阿里又出排序新模型，还被国际顶会认可了
+https://mp.weixin.qq.com/s/aH1zQ7we8OE59-O9n4IXhw
 
-https://mp.weixin.qq.com/s/fUdKIqygxqlkuv0P4wiIRg
+应对未来物联网大潮：如何在内存有限的情况下部署深度学习？
 
-智能推荐算法在直播场景中的应用
+https://mp.weixin.qq.com/s/IfvXrsUq8-cBDC4_3O5v_w
 
-https://mp.weixin.qq.com/s/HE0ckOe71dROafTZt-2mAA
+Facebook新研究优化硬件浮点运算，强化AI模型运行速率
 
-最新边信息推荐系统综述
+https://mp.weixin.qq.com/s/Jsxiha_BFtWVLvO4HMwJ3Q
 
-https://mp.weixin.qq.com/s/GazjnVwQKItrph7_n7SGTw
+工业界第一手实战经验：深度学习高效网络结构设计
 
-飞猪的“猜你喜欢”如何排序？
+https://mp.weixin.qq.com/s/uXbLb5ITHOU0dZRSWNobVg
 
-https://mp.weixin.qq.com/s/x4Q5di8oVAAZBJBTlY8usw
+算力限制场景下的目标检测实战浅谈
 
-深入理解推荐系统：梳理YouTube推荐算法
+https://mp.weixin.qq.com/s/DoeoPGnS88HQmxagKJWLlg
 
-https://mp.weixin.qq.com/s/s-BCi-vS6YKCaexlgNCy8g
+小米开源FALSR算法：快速精确轻量级的超分辨率模型
 
-深入理解推荐系统：推荐系统中的attention机制
+https://mp.weixin.qq.com/s/wT39oUWfrQK-dg7hGXRynQ
 
-https://zhuanlan.zhihu.com/p/128988454
+实时单人姿态估计，在自己手机上就能实现
 
-谷歌最新双塔DNN召回模型——应用于YouTube大规模视频推荐场景
+https://mp.weixin.qq.com/s/GJ7JMtWiKBku7dVJWOfLOA
 
-https://mp.weixin.qq.com/s/Bpw-q3wISbCAKHsuYQo0QQ
+CNN能同时兼顾速度与准确度吗？CMU提出AdaScale
 
-阿里DMR:融合Match中协同过滤思想的深度排序模型
+https://mp.weixin.qq.com/s/pmel2k2J159zQi87ib3q8A
 
-https://mp.weixin.qq.com/s/xTjUPEt1-UMOp2W9a3SONQ
-
-腾讯QQ看点团队：用迁移学习架构解决短视频冷启推荐问题
-
-https://mp.weixin.qq.com/s/hPHETfj3qrZlvcJDFezSkA
-
-TensorFlow Ranking框架在海外推荐业务中的实践与应用
+如何让CNN高效地在移动端运行

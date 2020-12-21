@@ -199,7 +199,7 @@ https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
 
 印度失联的月球探测器依然成功了95%？那些年我们一起追过的月球
 
-# 天文杂谈+
+# 天文杂谈
 
 https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
 

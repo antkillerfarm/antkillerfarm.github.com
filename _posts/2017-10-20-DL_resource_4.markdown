@@ -333,19 +333,7 @@ http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201703/t20170310_1471429.html
 
 国家统计局：最新县及县以上行政区划代码
 
-# 目标检测进阶++++++
-
-https://mp.weixin.qq.com/s/psXJNlEawZlQ-ZdktDpjOw
-
-目标检测小tricks之样本不均衡处理
-
-https://zhuanlan.zhihu.com/p/54334986
-
-TridentNet：处理目标检测中尺度变化新思路
-
-https://mp.weixin.qq.com/s/eODjZUQQiROID9i4WOeEFQ
-
-三分支网络——目前目标检测性能最佳网络框架
+# 目标检测进阶+
 
 https://zhuanlan.zhihu.com/p/59915784
 
