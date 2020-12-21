@@ -129,6 +129,10 @@ https://mp.weixin.qq.com/s/zA7ePAwJ-xcmc8y9qNmE6g
 
 一文详解超参数调优方法
 
+https://mp.weixin.qq.com/s/_TSnP5jJsAZ1bW4CbmxdoQ
+
+算法模型自动超参数优化方法
+
 ## 参考
 
 https://mp.weixin.qq.com/s/-0--sZXjMvFKxxo87w4udg

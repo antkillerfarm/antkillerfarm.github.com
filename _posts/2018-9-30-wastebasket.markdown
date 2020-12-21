@@ -358,28 +358,60 @@ https://mp.weixin.qq.com/s/5fRHmNqQybS9GvKxpuc2TQ
 
 是不是真的“高处不胜寒”？
 
-# 化学+
+# 化学++
 
-https://mp.weixin.qq.com/s/irMd_sRRwZhbTuIXo3na6Q
+## 食品工业（续）
 
-今天，说一下人工钻石（钻石半导体）
+https://www.zhihu.com/answer/370657574
 
-https://mp.weixin.qq.com/s?__biz=MjM5MDE3OTk2Ng==&mid=2657461706&idx=1&sn=589d7a4d65f2e2fdd696100e06b1a257
+军事里说的马润指什么？
 
-高考成绩接近满分，却被清华北大拒绝，被称“中国最帅科学家”（中国油田分层开采和化学驱油技术的奠基人——王德民）
+http://bbs.tianya.cn/post-no05-401394-372.shtml
 
-https://mp.weixin.qq.com/s/0fdnEWpLvPSbweFh0v4x9A
+"灵肉"传奇：斯帕姆午餐肉
 
-科学家的浪漫，是用激光画一道彩虹（姜黄素）
+http://war.163.com/15/0108/09/AFE8A8LU00014J0G.html
 
-https://mp.weixin.qq.com/s/TM8Cc3AI7Vo5H6VnOl3gyw
+二战美军面临两大敌人：淋病、午餐肉
 
-唯一两获诺贝尔化学奖的科学家，自称“只是把实验室搞砸的家伙”（弗雷德里克·桑格）
+http://www.sohu.com/a/64190509_139533
 
-https://mp.weixin.qq.com/s/wIaMPdYWHzn9vDpiuWZOVg
+曾经象征食品工业繁荣的罐头，为何已经远离了你的生活
 
-解读2019诺贝尔化学奖：他们创造了一个可充电的世界
+https://mp.weixin.qq.com/s/GHgfNAkV7ttXfasGkM083A
 
-https://wenku.baidu.com/view/209d2f8183d049649b665894.html
+用算法改造过的植物肉，有兴趣试试么？
 
-超纯水18.2的意义
+https://www.zhihu.com/question/21171331
+
+火腿肠里真的有肉吗？
+
+## 化学工业
+
+https://wallstreetcn.com/articles/250536
+
+巴斯夫原本是它小弟，德国化工产业的代名词：揭秘史前化工巨兽 IG 法本
+
+http://blog.sina.com.cn/s/blog_52f526870102w7xo.html
+
+历经百年兴衰 德国化工三巨头为何屹立不倒
+
+http://www.weixinso.com/document/KPyZBb.html
+
+陶氏化学发展史
+
+http://www.pnchina.com/cn/Detail.aspx?id=1361250587
+
+业界经典：陶氏化学Styrofoam之75年
+
+https://new.qq.com/omn/20180819/20180819A011JT.html
+
+起于硝烟的化工帝国：杜邦是怎么与化工行业同呼吸共命运的？
+
+http://www.qdaily.com/articles/18872.html
+
+杜邦要合并了，过去一百年，这家公司的发明都改变了些什么？
+
+https://mp.weixin.qq.com/s/MkVeQ7xYAHV8mA1zmdr0qg
+
+四川五通桥事故频发：“化工围城”之殇

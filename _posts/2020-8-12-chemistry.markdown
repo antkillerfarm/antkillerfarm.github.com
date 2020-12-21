@@ -107,7 +107,29 @@ https://mp.weixin.qq.com/s/UW6k_M8bMEy_C_m5tYALoA
 
 ----
 
-氢化热：在Pt、Pd、Ni等催化剂存在下，烯烃和炔烃与氢进行加成反应，生成相应的烷烃，并放出热量，称为氢化热(heat of hydrogenation)。加氢反应一般是放热反应，如烯烃分子中每个双键的平均氢化热越小则表明它的位能越低、稳定越好。
+赫尔利茨伯爵夫人案件：
+
+这位伯爵家起了一场大火，火后伯爵夫人丢了一枚宝石戒指，而这枚戒指却出现在了伯爵夫人侍从的手里。侍从拒不承认偷窃，声称戒指是自己很早之前得到的，并不是伯爵夫人那一枚。
+
+李比希教授测定了金属的成分，然后说道：“戒指上的白蛇是金属铂，即所谓‘白金’制成的。现在伯爵夫人侍仆的罪行是明显的，因为白金从1819年起，才用于首饰业中，而他却硬说这个戒指从1805年就到了他手中。”
+
+>Justus Freiherr von Liebig，1803~1973，德国化学家。University of Erlangen博士（1823）。University of Giessen教授。有机化学之父，肥料工业之父。
+
+凯库勒这段我最不服气了!碳六氢六，不饱和度四就行了啊，可以是正八面体，二炔烃，二烯+炔，环丙烯基+炔，六元环+双键+三键，两个公用一条边的六元环+两个双键……分分钟随便想几十种。凯君几年憋出来一种，最后还被实践证明是错的（大π键，不是单双键交错），然后还名垂青史...不公平啊！
+
+楼上觉得凯库勒不行的那位同学，看起来想显摆自己的高中化学啊，可惜并不对。苯环的结构不是想不到的问题，而是写出来不符合实验数据。棱晶烷二烯炔哪个能解释苯环反常的氢化热？连余价式结构都打不过，就不要碰瓷凯库勒式了。而且凯当时明确了这六个位置完全等价，你好歹看一眼相关资料，这么写只是当时杂化理论和共振式并不成熟，更没有分子轨道，不好表示而已。有了分子轨道谁管这个叫大π键？
+
+氢化热：在Pt、Pd、Ni等催化剂存在下，烯烃和炔烃与氢进行加成反应，生成相应的烷烃，并放出热量，称为氢化热(heat of hydrogenation)。加氢反应一般是放热反应，如烯烃分子中每个双键的**平均氢化热**越小则表明它的位能越低、稳定越好。
+
+环己烯上一个氢，氢化热119.5。苯上三个氢，氢化热208.16。但是苯的平均氢化热是`208.16/3=69.4`，比环己烯低多了。
+
+>Friedrich August Kekulé，1829～1896，德国化学家。University of Giessen博士（1852）。University of Heidelberg教授。在最初的5个诺贝尔化学奖中，他的学生占了3个：van 't Hoff（1901）、Fischer（1902）、Baeyer（1905）。
+
+>Johann Friedrich Wilhelm Adolf von Baeyer，1835～1917，德国化学家。Berlin University博士（1858），导师Kekulé。（跑到别的学校找导师，不知道这学籍是怎么操作的，或者对官二代来说，是常规操作？）先后执教于University of Strasbourg、University of Munich。在染料和有机化合物等方面有卓越贡献。普鲁士科学院院士。
+
+>Johann Jacob Baeyer，1794～1885。Adolf von Baeyer的父亲。比诺奖儿子更牛的存在。   
+>年轻时从军，官至普鲁士总参谋部陆军中将。他虽然出身行伍，却对科学技术的发展非常感兴趣，但是日常工作很繁忙，没有时间学习。为此他非常苦恼，经常向一位牧师述说自己的心愿。牧师劝他退休后再作学习打算也不迟，只要坚持必能有一技之长。   
+>他牢记牧师之言，50岁时开始学习地质学。周围的人对他冷潮热讽，他全然不顾。76岁时创立柏林地质研究院，成为首任院长。国际大地测量协会（International Association of Geodesy，IAG）的创始人（1862）。
 
 https://mp.weixin.qq.com/s/RIP9yP4e8ZfPS-12ZAwblw
 
@@ -117,75 +139,9 @@ https://zhuanlan.zhihu.com/p/60825026
 
 化学老师在课堂上才不会和你讲这个秘密！
 
-----
+https://www.zhihu.com/question/427846851
 
-https://mp.weixin.qq.com/s/Vam7uTbwPfF8Ht365lGtvA
-
-一般不扯淡--直男口红入门！
-
-https://mp.weixin.qq.com/s/a3z7PKTOqmxlEosi2EgoaA
-
-blue生色，九寨沟不得不说的“蓝”题
-
-https://mp.weixin.qq.com/s/XZyOXfqvq7bJ1_2eUPknAA
-
-千年锈色耐人寻——古代铜锡铅合金锈蚀谜题
-
-https://mp.weixin.qq.com/s/v_6w1XOs5iqnoZ-y04B3XQ
-
-一个只涉及三个电子的化学反应居然这么复杂？
-
-https://mp.weixin.qq.com/s/LUeWIT-gUFZTPs2CFJ3ygQ
-
-卡姆吸毒被抓，北京大学的这项黑科技一直在闷声干大事！
-
-https://mp.weixin.qq.com/s/K2magOnDUmcWPN52QExO6g
-
-Tony老师，我明明染的蓝黑，怎么就绿了？？
-
-https://mp.weixin.qq.com/s/NvF5cEpM3pomDgMNjg2QbQ
-
-你拿得起放不下的甜，都是糖的味道吗？
-
-https://mp.weixin.qq.com/s/ge3FBSKFPvZgpWWbCAvm3A
-
-让许幻山放不下的蓝色烟花，有多难生产？
-
-https://mp.weixin.qq.com/s/u_Xg4naj0UetFs8tROHK8A
-
-从“垃圾元素”到“爱情金属”，它是怎么咸鱼翻身的？（铂）
-
-https://mp.weixin.qq.com/s/ZJWx-7byW9dDrC58Q6f_hw
-
-从冰淇淋到洗衣粉，它们靠“香”行走江湖
-
-https://mp.weixin.qq.com/s/pry9NlLCql74XhdvRADBiQ
-
-它是“地球保护伞”，也可能是危险的隐形反派
-
-https://www.zhihu.com/question/411561262
-
-现代制造的刀放到古代算不算名刀？
-
-https://mp.weixin.qq.com/s/HSpZsD7E3S0TAhk_VwUDUg
-
-诺贝尔化学奖历史上的遗珠之憾
-
-https://mp.weixin.qq.com/s/V0Jh1Qv-RXoSK63Z5C092g
-
-一滴水里最少有几个水分子？5个还是6个？
-
-https://mp.weixin.qq.com/s/tGYqdbrYUkXaIEa_ycAzUQ
-
-幸运的化学，悲催的奠基人（Antoine-Laurent de Lavoisier）
-
-https://mp.weixin.qq.com/s/cUuw9CflfLrxXuSmNbra_A
-
-中学的元素周期表还藏着4000多种……（同位素）
-
-https://zhuanlan.zhihu.com/p/23284525
-
-靠谱地，咱聊聊田中耕一
+苯为什么比环己烯稳定，苯的氢化热不是大于环己烯的氢化热吗？
 
 ## 食品工业
 
@@ -201,66 +157,8 @@ https://mp.weixin.qq.com/s/1jYvcT5-XZuwYxBBRPufjA
 
 ----
 
-https://www.zhihu.com/answer/370657574
-
-军事里说的马润指什么？
-
-http://bbs.tianya.cn/post-no05-401394-372.shtml
-
-"灵肉"传奇：斯帕姆午餐肉
-
-http://war.163.com/15/0108/09/AFE8A8LU00014J0G.html
-
-二战美军面临两大敌人：淋病、午餐肉
-
-http://www.sohu.com/a/64190509_139533
-
-曾经象征食品工业繁荣的罐头，为何已经远离了你的生活
-
-----
-
-https://mp.weixin.qq.com/s/GHgfNAkV7ttXfasGkM083A
-
-用算法改造过的植物肉，有兴趣试试么？
-
-https://www.zhihu.com/question/21171331
-
-火腿肠里真的有肉吗？
-
-----
-
 可口可乐公司30年代就开始在德国大做广告，到1938年，德国的可口可乐销量已经非常可观。同时可口可乐还与纳粹建立了非常紧密的关系，并参与了大量的纳粹政治活动。甚至最后可口可乐在德国还出现了“一个民族，一个帝国，一杯可乐”这样的广告词。
 
 虽然可口可乐知道德国的分公司在干什么，就算39年欧战爆发，为了可口可乐的销量，大量的可乐原料依然被送往德国。到美国对德宣战以后，德国的可口可乐分公司再也无法获得原料，可乐生产陷入停摆状态。
 
 不过还好，德国化学家终于研制出了替代品：乳清+苹果酒生产剩下的苹果纤维，就是芬达。芬达这种替代品一直生产到战争结束，并在战后被可口可乐公司所吸纳。
-
-## 化学工业
-
-https://wallstreetcn.com/articles/250536
-
-巴斯夫原本是它小弟，德国化工产业的代名词：揭秘史前化工巨兽 IG 法本
-
-http://blog.sina.com.cn/s/blog_52f526870102w7xo.html
-
-历经百年兴衰 德国化工三巨头为何屹立不倒
-
-http://www.weixinso.com/document/KPyZBb.html
-
-陶氏化学发展史
-
-http://www.pnchina.com/cn/Detail.aspx?id=1361250587
-
-业界经典：陶氏化学Styrofoam之75年
-
-https://new.qq.com/omn/20180819/20180819A011JT.html
-
-起于硝烟的化工帝国：杜邦是怎么与化工行业同呼吸共命运的？
-
-http://www.qdaily.com/articles/18872.html
-
-杜邦要合并了，过去一百年，这家公司的发明都改变了些什么？
-
-https://mp.weixin.qq.com/s/MkVeQ7xYAHV8mA1zmdr0qg
-
-四川五通桥事故频发：“化工围城”之殇

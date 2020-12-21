@@ -196,6 +196,20 @@ https://zhuanlan.zhihu.com/p/32796998
 
 10分钟搞定ICO
 
+## 实体链
+
+![](/images/img4/block_chain.png)
+
+- 去中心化（不需要统一管理）
+
+- 可追溯性（一人一锁，谁没锁找谁）
+
+- 不可篡改性（这个似乎没办法）
+
+http://tech.ifeng.com/c/82IsX1VJuPq
+
+小区业主自制66把锁门禁系统 网友：区块链技术实体化
+
 ## 矿机江湖
 
 ### 2018.9
@@ -247,31 +261,3 @@ https://mp.weixin.qq.com/s/H860_Es3uO9ozDTnifNvgQ
 https://mp.weixin.qq.com/s/umuSPhwBJSwRWSzqD6hf3g
 
 听过坟头蹦迪，但你听过坟头挖矿吗
-
-# Sikuli
-
-Sikuli是一种新颖的图形脚本语言，或者说是一种另类的自动化测试技术。它采用图像识别的方式进行自动检测。
-
-参考：
-
-https://mp.weixin.qq.com/s/MYA6l9V4BYIZO8Jgtds6GA
-
-图像识别在测试中的应用
-
-http://www.cnblogs.com/fnng/archive/2012/12/15/2819367.html
-
-图形脚本语言sikuli
-
-# Ansible
-
-Ansible is Simple IT Automation——简单的自动化IT工具。这个工具的目标有这么几项：让我们自动化部署APP；自动化管理配置项；自动化的持续交付；自动化的（AWS）云服务管理。简单的说就是：**批量的在远程服务器上执行命令。**
-
-官网：
-
-https://www.ansible.com/
-
-参考：
-
-http://www.ansible.com.cn/
-
-Ansible中文权威指南

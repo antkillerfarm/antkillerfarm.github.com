@@ -397,3 +397,7 @@ JVM完整深入解析
 https://mp.weixin.qq.com/s/IlatTB-2AxxIph1z1RP9iQ
 
 Java虚拟机垃圾收集机制详解
+
+https://mp.weixin.qq.com/s/JNN95s42I-46rIo2Umtd4A
+
+Java日志体系权威总结

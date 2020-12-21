@@ -385,3 +385,11 @@ https://mp.weixin.qq.com/s/ESLO1RH6Q8udwI13Z2Pz_w
 https://mp.weixin.qq.com/s/LLlzPB2emr9Hqr7gql0B4Q
 
 为什么Linux需要Swapping
+
+https://mp.weixin.qq.com/s/fzLcAkYwKhj-9hgoVkTzaw
+
+CPU飙高，系统性能问题如何排查？
+
+https://mp.weixin.qq.com/s/IcEP-JGQbWA7s7yPdIC9vA
+
+80%时间屏蔽了中断，实时性还有救么？

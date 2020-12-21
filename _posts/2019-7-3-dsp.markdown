@@ -269,6 +269,10 @@ https://mp.weixin.qq.com/s/8RyNo1o8nRxEFoUcAF3rNw
 
 信号系统和数字信号处理
 
+https://zhuanlan.zhihu.com/p/228219488
+
+Bode Plots（伯德图）
+
 # AI金融
 
 https://mp.weixin.qq.com/s/1zTLxotph7vWvp8LImR-Gg

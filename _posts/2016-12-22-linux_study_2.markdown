@@ -288,6 +288,12 @@ bash只支持整数四则运算，浮点数和复杂运算就靠`bc`了。
 
 强制密码过期。
 
+`scp -rC ubuser@192.168.32.129:/home/work/xxx.txt .`
+
+`rsync -zvaP ubuser@192.168.32.129::/home/work/xxx.txt .`
+
+这两个命令都可以传输远程机器上的文件，后者会忽略已经有的文件。后者还支持两种协议：SSH和rsync，上例展示的是rsync协议的示例，如果使用SSH的话，把上例中的`::`换成`:`即可。
+
 # GnuGo
 
 GnuGo是一个著名的开源围棋软件，但是它只有文字界面。一般使用Quarry作为它的GUI。

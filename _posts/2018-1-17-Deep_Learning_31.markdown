@@ -314,3 +314,7 @@ https://mp.weixin.qq.com/s/RRu3r_dokORhpSq3eyrPDQ
 https://mp.weixin.qq.com/s/JO8n_rEz6LxpZu6IS0Fk0Q
 
 AI把爱豆变胖视频火遍B站，我们找到了背后的技术团队:你是怎么把刘亦菲变胖的？
+
+https://mp.weixin.qq.com/s/9gR062zrQ7im8HpevhY0sw
+
+这个AI“大师级”简笔画水平，惊艳到了网友：竟然不用GAN

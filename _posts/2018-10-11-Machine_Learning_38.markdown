@@ -347,6 +347,10 @@ https://mp.weixin.qq.com/s/q635XCJ3tVfesmTF4yvJ_w
 
 categorical feature编码方法小结
 
+https://mp.weixin.qq.com/s/vK5HP7e8d7ZXGFxaYN3G4g
+
+我用特征工程+LR超过了xDeepFM
+
 # 时间序列分析
 
 https://www.kaggle.com/thebrownviking20/everything-you-can-do-with-a-time-series/notebook

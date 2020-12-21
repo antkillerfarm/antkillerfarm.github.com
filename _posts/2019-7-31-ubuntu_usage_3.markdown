@@ -316,7 +316,7 @@ https://www.cnblogs.com/biyeymyhjob/archive/2012/07/20/2601655.html
 
 Linux写时拷贝技术(copy-on-write)
 
-https://mp.weixin.qq.com/s/dZNjq05q9jMFYhJrjae_LA
+https://zhuanlan.zhihu.com/p/296207162
 
 Linux I/O原理和Zero-copy技术全面揭秘
 

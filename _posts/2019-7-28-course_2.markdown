@@ -141,6 +141,10 @@ https://mp.weixin.qq.com/s/VW6wcA5uUYTM4vnkteL7ng
 
 决策算法，464页pdf，Algorithms for Decision Making
 
+https://zhuanlan.zhihu.com/p/125128368
+
+自动控制原理
+
 # English
 
 SOTA(state of the art)：目前最高水平
