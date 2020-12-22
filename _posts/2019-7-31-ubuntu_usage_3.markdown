@@ -232,70 +232,6 @@ https://www.cnblogs.com/schips/p/10141278.html
 
 # Linux参考资源+
 
-## NFS
-
-### 客户端
-
-`mount -t nfs 192.168.0.1:/tmp /mnt/nfs`
-
-挂载NFS。挂载点（即上例中的/mnt/nfs）必须事先创建。
-
-`mount: /bak: bad option; for several filesystems (e.g. nfs, cifs) you might need a /sbin/mount.<type> helper program`
-
-出现上面的问题，需要：
-
-`sudo apt install nfs-common libnfs-utils`
-
-### 服务器端
-
-```bash
-sudo apt install nfs-server
-cd /
-sudo mkdir nfs-server
-sudo chmod 777 nfs-server
-sudo chmod 666 /etc/exports
-echo "/nfs-server *(rw,sync,no_root_squash)">>/etc/exports
-sudo service nfs-server restart
-```
-
-参考：
-
-https://www.cnblogs.com/tu13/p/ubuntu_nfs.html
-
-ubuntu18.04搭建NFS服务器
-
-# OpenGrok
-
-OpenGrok是一个阅读源码的Web系统。
-
-官网：
-
-http://oracle.github.io/opengrok/
-
-代码：
-
-https://github.com/oracle/opengrok
-
-参考：
-
-http://mazhuang.org/2016/12/14/rtfsc-with-opengrok/
-
-搭建大型源码阅读环境——使用OpenGrok
-
-## ELF & PE
-
-![](/images/img4/exe.png)
-
-https://zhuanlan.zhihu.com/p/254882216
-
-深入浅出ELF
-
-https://mp.weixin.qq.com/s/vnqANjTMNqdjkHXl203eRg
-
-逆向工程基础：从PE文件到进程地址空间
-
-## 参考
-
 https://mp.weixin.qq.com/s/QB-IHiCIWEu3bALm2Dp46Q
 
 操作系统课程知识结构
@@ -371,22 +307,6 @@ IDT及中断处理的实现
 https://mp.weixin.qq.com/s/pRsXWAv7wgYcN_jlzcA2YA
 
 内存都没了，还能运行程序？
-
-https://mp.weixin.qq.com/s/4tAxQ0auQfv5x7Dh3B-85g
-
-Linux内存管理
-
-https://mp.weixin.qq.com/s/jDPxu6IVo3_VpK5l6_-jdQ
-
-Linux系统内存知识
-
-http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html
-
-进程与线程的一个简单解释
-
-https://mp.weixin.qq.com/s/zVi45pZka_kPpKIoNXNVBA
-
-当初我要是这么学习“进程和线程”就好了
 
 ----
 

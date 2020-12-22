@@ -346,3 +346,37 @@ https://mp.weixin.qq.com/s/qpNbHKZ0V5do77jQlZDBBw
 https://mp.weixin.qq.com/s/mvx_LyGVzn_H3XpwTsuFMA
 
 多目标跟踪：监控领域你必须要了解的算法
+
+# 人脸检测/识别++
+
+https://mp.weixin.qq.com/s/CR4Nf_RklcXA45mswPv8Zw
+
+腾讯优图开源人脸检测算法DSFD，刷新两项数据集纪录
+
+https://mp.weixin.qq.com/s/B8r2YEd9UbKMTT8Tup2Y_w
+
+腾讯（优图）新技术的人脸检测（DSFD）
+
+https://mp.weixin.qq.com/s/iI-q0s8aSojeDFbasiFVKw
+
+人脸检测器：对DSFD的理解
+
+https://zhuanlan.zhihu.com/p/62954487
+
+旷视研究院新出8000点人脸关键点，堪比电影级表情捕捉
+
+https://mp.weixin.qq.com/s/bAlaCWg4OEprpoZqQFQg1w
+
+百度提出PyramidBox人脸检测算法
+
+https://mp.weixin.qq.com/s/CYZvFb7kryE-8HV3teGRzA
+
+有效遮挡检测的鲁棒人脸识别
+
+https://mp.weixin.qq.com/s/XTIl505glmfCItuiwuPLwg
+
+人脸聚类——Linkage Based Face Clustering via GCN
+
+https://mp.weixin.qq.com/s/fpnq3rkcmckip30a4SlysQ
+
+三维人脸识别研究进展综述

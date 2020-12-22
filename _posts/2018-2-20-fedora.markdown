@@ -307,21 +307,3 @@ http://blog.csdn.net/andy205214/article/details/7390287
 MTD(memory technology device):内存技术设备，是linux用于描述ROM，NAND，NOR等内存设备的子系统的抽象。
 
 除了MTD之外，常用的还有SPI Flash方案。
-
-# Linux参考资源++
-
-https://mp.weixin.qq.com/s/iKfWSfzauzNjcAvXPNhq0Q
-
-这些算法都不会还学什么操作系统
-
-https://mp.weixin.qq.com/s/gj6Zw8SvOdSZqRx8KP9wWw
-
-20张图揭开内存管理的迷雾，瞬间豁然开朗
-
-https://mp.weixin.qq.com/s/IQYUNzVgSOFUHB9c1SM0Bw
-
-10张图22段代码，万字长文带你搞懂虚拟内存模型和malloc内部原理
-
-http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html
-
-Systemd入门教程：命令篇

@@ -157,6 +157,10 @@ https://zhuanlan.zhihu.com/p/122663529
 
 从Mirror Descent的视角统一强化学习中的策略优化
 
+https://mp.weixin.qq.com/s/a7KN3IjuMcmHNNqQsPn3VQ
+
+函数近似的策略梯度方法
+
 # Actor-Critic
 
 ## 概述

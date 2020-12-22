@@ -1,0 +1,230 @@
+---
+layout: post
+title:  Docker
+category: technology 
+---
+
+* toc
+{:toc}
+
+# Docker
+
+## 概述
+
+Docker是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的Linux机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。
+
+官网：
+
+https://www.docker.com/
+
+教程：
+
+https://www.runoob.com/docker/docker-tutorial.html
+
+下图显示了Docker和VM之间的差别：
+
+![](/images/article/docker_vs_vm.png)
+
+- 虚拟机携带操作系统，本身很小的应用程序却因为携带了操作系统而变得非常大，很笨重。Docker是不携带操作系统的，所以Docker的应用就非常的轻巧。
+
+- 也因为Docker没有OS，因此Windows的Docker镜像是不能在Linux上跑的。arm的镜像也不能在X86上跑。但是不同的Linux发行版由于内核是兼容的，是可以运行的（除非应用依赖了一些发行版相关的东西）。
+
+在线安装：
+
+`sudo apt install docker docker.io`
+
+离线安装：
+
+https://download.docker.com/linux/static/stable/x86_64/
+
+## VM的分类
+
+![](/images/img4/VM.png)
+
+![](/images/img4/VM.png)
+
+Type I: 直接凌驾于硬件之上，构建出多个隔离的操作系统环境
+
+Type II: 依赖于宿主操作系统，在其上构建出多个隔离的操作系统环境
+
+我们熟知的VMware事实上有两个产品线，一个是**VMware ESXi**，直接安装在裸金属之上，不需要额外的操作系统，属于第一类虚拟化。另一个是我们普通用户更加熟知的**VMware WorkStation**，属于第二类虚拟化。
+
+让虚拟机中包含操作系统在内的程序统一运行在低权限的Ring3状态下，一旦虚拟机中的操作系统进行内存管理、I/O通信、中断等操作时，执行特权指令，从而触发异常，物理机将异常派遣给VMM，由VMM进行对应的模拟执行。
+
+然而，x86架构的CPU指令集中有那么一部分指令，它不是特权指令，Ring3状态下也能够执行，但这些指令对于虚拟机来说却是敏感的，不能让它们直接执行。一旦执行，没法触发异常，VMM也就无法介入。
+
+**VMware**是将原始CPU指令序列翻译成经过处理后的CPU指令序列来执行。这被称作**全虚拟化**。
+
+而**QEMU**则是完全模拟执行整个CPU指令集，更像是“解释执行”。
+
+如果把操作系统中所有执行敏感指令的地方都改掉，改成一个接口调用（HyperCall），接口的提供方VMM实现对应处理，省去了捕获和模拟硬件流程等一大段工作，性能将获得大幅度提升。这就是半虚拟化，这项技术的代表就是**Xen**。
+
+**硬件辅助虚拟化**：Intel的VT系列技术和AMD的AMD-v系列技术。
+
+![](/images/img4/VM_3.png)
+
+VMware是独立的第三方软件，而**KVM**作为一项虚拟化技术已经集成到Linux内核之中。KVM技术常常搭配QEMU一起使用，称为**KVM-QEMU**架构。
+
+不同于虚拟化技术要完整虚拟化一台计算机，**容器技术**更像是操作系统层面的虚拟化，它只需要虚拟出一个操作系统环境。
+
+**LXC**技术就是这种方案的一个典型代表，全称是LinuX Container，通过Linux内核的Cgroups技术和namespace技术的支撑，隔离操作系统文件、网络等资源，在原生操作系统上隔离出一个单独的空间，将应用程序置于其中运行，这个空间的形态上类似于一个容器将应用程序包含在其中，故取名容器技术。
+
+**Docker**在LXC的基础上更进一步，将执行执行环境中的各个组件和依赖打包封装成独立的对象，更便于移植和部署。
+
+**超轻虚拟化**将虚拟化技术的强隔离性和容器技术的轻量性进行融合，提出了一个microVM的概念，底层通过KVM虚拟化技术实现各个microVM的强隔离，而隔离的虚拟机中运行的是一个个精简版的微型操作系统，砍掉了大量无用的功能，专为容器设计的微型OS。
+
+## 使用
+
+1.镜像和容器的关系，类似于类和对象的关系，它们有各自不同的ID。
+
+保存/加载镜像：`docker save/load`
+
+保存/加载容器：`docker export/import`
+
+启动镜像：`docker run`
+
+启动容器：`docker start`
+
+2.
+
+列出镜像：`docker images`
+
+操作镜像：`docker image`
+
+3.容器和宿主机的文件交换
+
+从容器往宿主机copy：
+
+`docker cp 容器id:/path_in_container /path_on_host`
+
+从宿主机往容器copy：
+
+`docker cp /pathonhost 容器id:/pathincontainer`
+
+参考：
+
+https://www.cnblogs.com/dyh004/p/9122639.html
+
+docker容器与宿主交互数据
+
+## 参考
+
+http://blog.csdn.net/colorant/article/details/20608157
+
+快速理解Docker
+
+http://www.cnblogs.com/zhangmingcheng/p/5730070.html
+
+Docker数据管理
+
+https://mp.weixin.qq.com/s/E4wKaIddq8_jRVx9q08qtg
+
+Docker入门
+
+https://mp.weixin.qq.com/s/ioRxU9UEr_OJHR5Z5XJ6Vg
+
+Docker入门看这一篇就够了，万字详解！
+
+https://mp.weixin.qq.com/s/_InMrIw4he83dh4ic5qJkw
+
+什么是Docker？看这一篇干货文章就够了！
+
+https://mp.weixin.qq.com/s/S8OXlhRf90nobJtc3TgIpg
+
+基于docker构建hadoop集群
+
+https://mp.weixin.qq.com/s/VfC41XiVmpdWUy3VXgDLuw
+
+Docker基本概念和安装
+
+https://mp.weixin.qq.com/s/LeaYn-CUeu3wognse1fSzw
+
+理解、使用Docker（上）
+
+https://mp.weixin.qq.com/s/YPLnTF_jh8xahZ-uLffSkw
+
+理解、使用Docker（下）
+
+https://mp.weixin.qq.com/s/0jD_Ek2-AOsefjcdr9-A7g
+
+Docker容器介绍
+
+https://mp.weixin.qq.com/s/KBNFQA_4KG0LLadzRtvPPw
+
+如何用两个小时入门Docker？
+
+https://mp.weixin.qq.com/s/2w_63cwNOZ4pzOmarKIk-w
+
+最全的30+个开源免费的Docker工具
+
+https://mp.weixin.qq.com/s/iRCnShcbcL8cUMe0MT1mZQ
+
+用Docker玩转PHP环境配置
+
+https://mp.weixin.qq.com/s/XgCmAi1sgu1iA4cW-Zjcbw
+
+Docker完全指南
+
+https://mp.weixin.qq.com/s/e51KpBltxRd8Qk-VRj6EhQ
+
+让Docker更强大的9个安全开源工具
+
+https://mp.weixin.qq.com/s/DQESB4tB1G43JJQImKsvqg
+
+docker系列学习（一）：整体认识
+
+https://mp.weixin.qq.com/s/Ex1AOKGlp2ag6CQTc3rSkA
+
+您想要的docker环境来了！
+
+https://mp.weixin.qq.com/s/HFW3oiGIcYJdaKGjIahXjA
+
+不要把大型JAR包放进Docker镜像
+
+https://mp.weixin.qq.com/s/fY0bfMGL3UXT_3j4LZXaHw
+
+推荐5款好用的开源Docker工具
+
+https://zhuanlan.zhihu.com/p/90408275
+
+下一代容器架构已出，Docker何去何处？看看这里的6问6答！！
+
+https://www.zhihu.com/question/27322045
+
+Docker容器里运行的程序是否与操作系统有关？
+
+https://zhuanlan.zhihu.com/p/115845957
+
+两个奇技淫巧，将Docker镜像体积减小99%
+
+https://mp.weixin.qq.com/s/Zmu57U-HlPsyby_qvHSVHQ
+
+VMware/KVM/Docker原来是这么回事儿
+
+https://mp.weixin.qq.com/s/j2c1cV3J4UK20-yb8FLJZg
+
+Docker中级篇
+
+https://mp.weixin.qq.com/s/0jFHlWAeH5avIO2NLpTmGA
+
+Docker底层原理浅析
+
+https://mp.weixin.qq.com/s/dFUcSJRnH4_QhG_Dyt1RkQ
+
+为什么不建议把数据库部署在Docker容器内
+
+https://www.sohu.com/a/424565518_100159565
+
+五款顶级的Docker容器GUI工具
+
+https://mp.weixin.qq.com/s/obrnGMWcYfvGyrCSO0PkDQ
+
+Docker基础与实战
+
+https://mp.weixin.qq.com/s/J21CLwgF1xLy-6fo1f6Lgw
+
+Kubernetes决定弃用Docker，到底会影响到谁？
+
+https://mp.weixin.qq.com/s/IKgzQwjTW21XUXMbgCmYyA
+
+图解Docker架构
