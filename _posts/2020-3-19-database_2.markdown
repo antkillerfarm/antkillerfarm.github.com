@@ -357,6 +357,10 @@ https://mp.weixin.qq.com/s/QduIxKOykMmoZp13UGF1XQ
 
 MySQL索引知识点总结
 
+https://mp.weixin.qq.com/s/E0PIOTflCicyPs5fcv0qAg
+
+Mysql高性能优化规范建议
+
 # 数据库参考资源
 
 https://www.cnblogs.com/ahu-lichang/p/10899747.html
@@ -382,15 +386,3 @@ https://mp.weixin.qq.com/s/oV5F_K2mmE_kK77uEZSjLg
 https://mp.weixin.qq.com/s/ZjnRzI18plggKTv_nPBsEw
 
 字节跳动表格存储中的事务
-
-https://mp.weixin.qq.com/s/PPlrrtcdrtKT3afgWOU8Pg
-
-为什么数据库不应该使用外键
-
-https://mp.weixin.qq.com/s/k1sK-QQjVqdJnpWNCV0pUA
-
-并发环境下，先操作数据库还是先操作缓存？
-
-https://mp.weixin.qq.com/s/I3ca2HAuSTtUJSZyHNe1vA
-
-数据库读写分离要注意哪些细节

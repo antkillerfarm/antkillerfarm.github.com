@@ -283,6 +283,18 @@ https://mp.weixin.qq.com/s/FvQUvyB32XZt0AIS0m6KDw
 
 基于连通图的篇章级事件抽取与相关度计算
 
+https://mp.weixin.qq.com/s/-zDMPfR1wWSV9A7HDzJlZA
+
+事件抽取及推理(上)
+
+https://mp.weixin.qq.com/s/GtO3Zf87BTbBQqHAtgAmlA
+
+事件抽取及推理(下)
+
+https://mp.weixin.qq.com/s/5jjzE3cG5OAXRB9hZ5DFIw
+
+事件抽取综述（上）
+
 https://mp.weixin.qq.com/s/JY6Mu7NMtEnmjEgHCg_eYg
 
 文本信息抽取与结构化
@@ -396,15 +408,3 @@ http://www.jianshu.com/p/ac1840abc63f
 https://mp.weixin.qq.com/s/SVKlD0T8IkpVAKFJu-VQAg
 
 胡一川：深度学习在智能助理中的应用
-
-https://mp.weixin.qq.com/s/Ce3gOZSqkG8wZQ6X1CUE1Q
-
-如何从编码器和解码器两方面改进生成式句子摘要？
-
-https://mp.weixin.qq.com/s/MP0Px9ylUT0tpdz_hP5JBw
-
-在NLP中深度学习模型何时需要树形结构？
-
-https://zhuanlan.zhihu.com/p/32314500
-
-DL实战课程推荐-从0到1构建一个Chatbot系统

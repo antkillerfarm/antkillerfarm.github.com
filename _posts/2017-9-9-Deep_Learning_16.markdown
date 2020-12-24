@@ -248,6 +248,10 @@ https://mp.weixin.qq.com/s/9AEYcY04lAl3dCRK9LPBeQ
 
 人脸风格化核心技术与数据集总结
 
+https://mp.weixin.qq.com/s/ylfeWiOrftCB823_gjQNmA
+
+图像风格迁移也有框架了：使用Python编写，与PyTorch完美兼容，外行也能用
+
 # 人脸检测/识别
 
 ## Cascade CNN

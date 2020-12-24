@@ -319,3 +319,7 @@ Google的声音理解团队发布了由200万个人标记的10秒YouTube视频�
 https://zhuanlan.zhihu.com/p/157842463
 
 深入解读VGGish
+
+https://mp.weixin.qq.com/s/6D3y-cNT_rJUesCbSW0snw
+
+基于VGGish的声音类别分类在语音机器人的应用实践

@@ -9,6 +9,18 @@ category: resource
 
 # NLP参考资源
 
+https://mp.weixin.qq.com/s/Ce3gOZSqkG8wZQ6X1CUE1Q
+
+如何从编码器和解码器两方面改进生成式句子摘要？
+
+https://mp.weixin.qq.com/s/MP0Px9ylUT0tpdz_hP5JBw
+
+在NLP中深度学习模型何时需要树形结构？
+
+https://zhuanlan.zhihu.com/p/32314500
+
+DL实战课程推荐-从0到1构建一个Chatbot系统
+
 https://mp.weixin.qq.com/s/GhJRebSXXq0ZFh3evAqLxw
 
 漫谈神经语言模型之中文输入法
@@ -264,14 +276,6 @@ https://mp.weixin.qq.com/s/2QQ_lWUCExvdiXn2wJJeRQ
 https://mp.weixin.qq.com/s/9GuyWUZ_qCH5Q_rin1yQwg
 
 地理文本处理技术在高德的演进(下)
-
-https://mp.weixin.qq.com/s/-zDMPfR1wWSV9A7HDzJlZA
-
-事件抽取及推理(上)
-
-https://mp.weixin.qq.com/s/GtO3Zf87BTbBQqHAtgAmlA
-
-事件抽取及推理(下)
 
 https://mp.weixin.qq.com/s/tvfCW7Lwkug9ILKpJuMnUA
 

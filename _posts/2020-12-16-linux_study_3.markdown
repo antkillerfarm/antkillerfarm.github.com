@@ -9,7 +9,23 @@ category: linux
 
 # Linux参考资源
 
-# 下载工具
+## tldr
+
+tldr是一个采用示例说明的简化版的man。
+
+官网：
+
+http://tldr.sh/
+
+该项目原生支持node.js，但也提供了其他多种语言的支持。
+
+参考：
+
+https://linuxtoy.org/archives/tldr.html
+
+tldr: 简读Manpage
+
+## 下载工具
 
 wget和curl是最常见的下载工具。这里推荐使用axel，该工具支持多路http下载。
 
@@ -27,9 +43,9 @@ http://os.51cto.com/art/201605/511423.htm
 
 Linux用户宝典：用于下载的十大命令行工具
 
-## NFS
+### NFS
 
-### 客户端
+#### 客户端
 
 `mount -t nfs 192.168.0.1:/tmp /mnt/nfs`
 
@@ -41,7 +57,7 @@ Linux用户宝典：用于下载的十大命令行工具
 
 `sudo apt install nfs-common libnfs-utils`
 
-### 服务器端
+#### 服务器端
 
 ```bash
 sudo apt install nfs-server
@@ -59,7 +75,7 @@ https://www.cnblogs.com/tu13/p/ubuntu_nfs.html
 
 ubuntu18.04搭建NFS服务器
 
-# OpenGrok
+## OpenGrok
 
 OpenGrok是一个阅读源码的Web系统。
 

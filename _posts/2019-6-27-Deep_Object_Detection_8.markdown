@@ -97,6 +97,10 @@ https://zhuanlan.zhihu.com/p/336016003
 
 OneNet: End-to-End One-Stage Object Detection
 
+https://mp.weixin.qq.com/s/0FPpc2PhLPiE9mg6eRh11Q
+
+OneNet：一阶段的端到端物体检测器，无需NMS
+
 # 其它目标检测网络
 
 ## A-Fast-RCNN

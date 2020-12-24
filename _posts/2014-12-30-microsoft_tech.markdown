@@ -241,6 +241,22 @@ https://deck.gl/
 
 # VAE参考资源+
 
+https://zhuanlan.zhihu.com/p/60330303
+
+用于协同过滤的变分自编码器论文引介
+
+https://mp.weixin.qq.com/s/CSx7dnqPjVDAvM6ena-FTw
+
+从俄罗斯方块到星际2，全都用得上：DeepMind无监督分割大法，为游戏而生
+
+https://mp.weixin.qq.com/s/XMLYjw_wN-M8jluczkbcyw
+
+一种考虑缓和KL消失的简单VAE训练方法
+
+https://mp.weixin.qq.com/s/0coPJFrW7anW7QuqjPBt3g
+
+深度生成模型在信号处理领域的应用
+
 https://mp.weixin.qq.com/s/GJr-YtV84eV1KbkyVSkcBA
 
 超越BigGAN，DeepMind提出“史上最强非GAN生成器”VQ-VAE-2
@@ -272,3 +288,7 @@ https://mp.weixin.qq.com/s/J59d1K5WX-wnzhws3k60AQ
 https://mp.weixin.qq.com/s/g-OPU4vp66HWcpqjdD2bBg
 
 使用PyTorch从理论到实践理解变分自编码器VAE
+
+https://mp.weixin.qq.com/s/8zi0JrloxuRdHcRm1dzCEQ
+
+利用VAE和LSTM生成时间序列

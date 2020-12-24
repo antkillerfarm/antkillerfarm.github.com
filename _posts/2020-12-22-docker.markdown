@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Docker
+title:  Docker, Android研究（二）
 category: technology 
 ---
 
@@ -76,6 +76,8 @@ VMware是独立的第三方软件，而**KVM**作为一项虚拟化技术已经�
 ## 使用
 
 1.镜像和容器的关系，类似于类和对象的关系，它们有各自不同的ID。
+
+![](/images/img4/docker_life.jpg)
 
 保存/加载镜像：`docker save/load`
 
@@ -228,3 +230,107 @@ Kubernetes决定弃用Docker，到底会影响到谁？
 https://mp.weixin.qq.com/s/IKgzQwjTW21XUXMbgCmYyA
 
 图解Docker架构
+
+https://cloud.tencent.com/developer/article/1518465
+
+容器生命周期管理
+
+# Android研究
+
+## Flutter
+
+Flutter是Google用以帮助开发者在Ios和Android两个平台开发高质量原生应用的全新移动UI框架。Beta1版本于2018年2月27日在2018世界移动大会上公布。
+
+官网：
+
+https://flutter.dev/
+
+参考：
+
+https://mp.weixin.qq.com/s/pU75twMDry4VUYtTHeV_IQ
+
+一文深入了解Flutter界面开发
+
+https://mp.weixin.qq.com/s/yPvaB7sLuJoGfsjj7x7wcg
+
+深入理解Flutter的编译原理与优化
+
+https://mp.weixin.qq.com/s/SWP7Nu9DEUhvAyvdIG-Ixw
+
+聊一聊Flutter Engine线程管理与Dart Isolate机制
+
+https://mp.weixin.qq.com/s/cJjKZCqc8UuzvEtxK1BJCw
+
+Flutter的原理及美团的实践
+
+https://mp.weixin.qq.com/s/l6xvmnLE6HfRtw6upo6yUA
+
+高效开发与高性能并存的UI框架——携程Flutter实践
+
+https://mp.weixin.qq.com/s/vcbHMtaJEkZhSgiRBST1YA
+
+移动开发这十年
+
+https://mp.weixin.qq.com/s/VlleaiIzsZHZDkDrGgYi1g
+
+如何用Flutter实现混合开发？闲鱼公开源代码实例
+
+https://mp.weixin.qq.com/s/n2avWVS0FAFIEB4w0W0Xsw
+
+学习Dart的10大理由
+
+https://mp.weixin.qq.com/s/CBp1pneBa_t8bkVlh1RGVg
+
+2019年五大跨平台移动应用开发工具
+
+https://mp.weixin.qq.com/s/ygPRdtRMlNW3-nfo0PonAA
+
+揭秘！如何用Flutter设计一个100%准确的埋点框架？
+
+## Litho
+
+Litho是Facebook推出的一套高效构建Android UI的声明式框架，主要目的是提升RecyclerView复杂列表的滑动性能和降低内存占用。
+
+官网：
+
+https://fblitho.com/
+
+参考：
+
+https://mp.weixin.qq.com/s/RS7O7prvkCvKyxkK3YQxtA
+
+Litho的使用及原理剖析
+
+## adb
+
+手机->PC：
+
+`adb pull sdcard/contacts_app.db`
+
+PC->手机：
+
+`adb push aaa/contacts_app.db /sdcard/`
+
+----
+
+https://www.cnblogs.com/caoxinyu/p/10568463.html
+
+Ubuntu adb报错：no permissions (user in plugdev group; are your udev rules wrong?);
+
+## 参考
+
+https://mp.weixin.qq.com/s/twfpUMf9CfXcgwtFFkJ4Ig
+
+Android整体设计及背后意义
+
+https://mp.weixin.qq.com/s/eEuNPtTaPwJ7hSghgeU32g
+
+Android Hook技术防范漫谈
+
+https://mp.weixin.qq.com/s/AQI2S2oK7HFDs9lH-nsx5g
+
+Android性能优化系列：Java内存优化篇
+
+https://www.jianshu.com/p/80013a768a45
+
+Android soong build系统介绍

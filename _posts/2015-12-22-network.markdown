@@ -298,6 +298,10 @@ http://blog.shengbin.me/posts/multi-user-video-conference-based-on-webrtc
 
 基于WebRTC的多人视频会议
 
+https://mp.weixin.qq.com/s/JAzROTYsnF_JqiI5vjVglA
+
+腾讯天籁：音频联合信源信道编码技术白皮书
+
 # ZeroMQ
 
 ZeroMQ是个在Socket之上，而在MQ之下的网络通信库。正如名称所言，它实际上并不是一个完整的MQ，而仅仅只有MQ的一些子功能罢了。

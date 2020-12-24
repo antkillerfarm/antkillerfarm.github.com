@@ -77,6 +77,10 @@ https://mp.weixin.qq.com/s/Uj9AFbyFRO6jIBoC3Gy8nA
 
 小孩都看得懂的主成分分析
 
+https://mp.weixin.qq.com/s/N-JtuayRYRrZ-_P67u7rvA
+
+如何使用PCA去除数据集中的多重共线性
+
 # 独立成分分析
 
 这一节我们将讲述独立成分分析（Independent Components Analysis，ICA）算法。

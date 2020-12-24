@@ -294,6 +294,18 @@ bash只支持整数四则运算，浮点数和复杂运算就靠`bc`了。
 
 这两个命令都可以传输远程机器上的文件，后者会忽略已经有的文件。后者还支持两种协议：SSH和rsync，上例展示的是rsync协议的示例，如果使用SSH的话，把上例中的`::`换成`:`即可。
 
+`cat /etc/group`
+
+查看用户组
+
+`sudo groupadd docker`
+
+添加用户组
+
+`sudo usermod -aG docker $USER`
+
+添加用户
+
 # GnuGo
 
 GnuGo是一个著名的开源围棋软件，但是它只有文字界面。一般使用Quarry作为它的GUI。
@@ -439,19 +451,3 @@ LD_LIBRARY_PATH：动态链接库文件路径
 扫描周围的wifi信号：
 
 `iwlist scanning`
-
-# tldr
-
-tldr是一个采用示例说明的简化版的man。
-
-官网：
-
-http://tldr.sh/
-
-该项目原生支持node.js，但也提供了其他多种语言的支持。
-
-参考：
-
-https://linuxtoy.org/archives/tldr.html
-
-tldr: 简读Manpage

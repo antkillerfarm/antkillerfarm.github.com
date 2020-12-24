@@ -9,6 +9,10 @@ category: Nature
 
 # 病毒（续）
 
+古典猪瘟于1810年最早爆发于美国，是新大陆出现的猪类病毒性疾病。其在1820年代传入欧洲，相继在法国、德国爆发，一路传到了欧亚大陆的东端。虽然此后一百年，人类开发出了针对这种猪瘟的血清，但古典猪瘟仍然没有被完全消灭，至今仍时有患病猪出现。
+
+----
+
 ADE效应（Antibody Dependent Enhancement，抗体依赖增强）：以登革热病毒为例，其流行的病毒株有四种亚型，如果病人曾经感染过某种亚型，在被其他亚型感染时，有高达80倍的可能性会发生更严重的症状。这就是因为ADE：体内已有的非中和性抗体虽然包裹了病毒，却无法将其杀死，反而保护了其免受其他免疫细胞的攻击。
 
 以此类推，倘若这次的疫情，届时会由疫苗成功控制。那么我们这一代接种了新冠疫苗的人，难道会成为下一批某种冠状病毒流行时ADE的受害者？
@@ -224,3 +228,57 @@ https://mp.weixin.qq.com/s/DVtPA14nXgZPU-GBOiSdDg
 https://mp.weixin.qq.com/s/RMBG1dnmKD6p1itU1OKXvA
 
 克里彭杀妻案，百年前的一场谋杀
+
+# 生物
+
+https://mp.weixin.qq.com/s/63fQMaGwhb1wcI6HhS4CIg
+
+他，企图自杀；他，胆小内向；他们在一起会发生什么？（细胞学说）
+
+https://mp.weixin.qq.com/s/wgaiVyMWKNoseFUDSjOmSw
+
+这个夏天，你是合格的“吃瓜群众”吗？
+
+https://mp.weixin.qq.com/s/ytCUQMNrm8ypxeA37kvTxg
+
+“舌尖上”的古生物：玫瑰奇虾
+
+https://www.zhihu.com/question/409522724
+
+哺乳动物体型变大会被重力压垮，那么恐龙为什么没被重力压垮呢？
+
+https://mp.weixin.qq.com/s/A145rTwtV8zaFmJaxsNnsA
+
+答应我，不要疯狂试探毒蘑菇
+
+https://mp.weixin.qq.com/s/60MMZH3fmwnIENG7eJGyng
+
+被误会了三百年的“小蝌蚪”：这才是精子真正的游动方式
+
+https://mp.weixin.qq.com/s/iG0-SGzrG-j93KbMTFr6lQ
+
+上海一小区野生貉泛滥：是什么让胆小的它们攻击人类？
+
+https://mp.weixin.qq.com/s/TtMFysG3YY-7Gwm2GekuzQ
+
+当蚂蚁拥有智慧，人类还是霸主吗？
+
+https://mp.weixin.qq.com/s/a4R4peyc_n6qFOGemEp2vw
+
+叫红豆的有十几种，哪个才是真正的“相思豆”？
+
+https://mp.weixin.qq.com/s/pFY3y-iRgA6tpo5800hv8w
+
+为什么有人要在牛屁股上画画？
+
+https://mp.weixin.qq.com/s/B7q-f4TROf6DxgExQsKW2A
+
+世界上唯一实现100%“一夫一妻”的动物：它们活成了彼此的真·另一半（双身虫）
+
+https://mp.weixin.qq.com/s/jJZdtPKJbaN3l4trg7NYiw
+
+恶魔诞生记（头足类）
+
+https://mp.weixin.qq.com/s/qHt9TcweccDq-usdr1LQYw
+
+会“飞”的蜘蛛，科学家揭示蜘蛛能织个“气球”让自己随风飞向新领地

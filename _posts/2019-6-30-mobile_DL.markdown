@@ -315,6 +315,10 @@ https://mp.weixin.qq.com/s/mr_D_AA0zdux8F_10iRIHg
 
 自动化弹性伸缩如何支持字节跳动百万级核心错峰混部
 
+https://zhuanlan.zhihu.com/p/339008746
+
+Kubernetes入门&进阶实战
+
 # DRL实战
 
 ## FlappyBird

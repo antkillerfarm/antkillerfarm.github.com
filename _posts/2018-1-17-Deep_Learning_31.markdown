@@ -318,3 +318,7 @@ AI把爱豆变胖视频火遍B站，我们找到了背后的技术团队:你是�
 https://mp.weixin.qq.com/s/9gR062zrQ7im8HpevhY0sw
 
 这个AI“大师级”简笔画水平，惊艳到了网友：竟然不用GAN
+
+https://mp.weixin.qq.com/s/yHy9wCCqXCxki_n7guYE_A
+
+AI算法实现武侠小说中的“绝世武功”——动作残影特效！

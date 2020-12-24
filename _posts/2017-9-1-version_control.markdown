@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  版本管理工具的前世今生, Kannel, Win10历险记, 运维工具集, Android研究（二）, 负载均衡
+title:  版本管理工具的前世今生, Kannel, Win10历险记, 运维工具集, 负载均衡
 category: technology 
 ---
 
@@ -169,97 +169,33 @@ https://www.tok9.com/archives/374/
 
 H5ai完整安装及使用教程
 
-# Android研究
+## Sikuli
 
-## Flutter
-
-Flutter是Google用以帮助开发者在Ios和Android两个平台开发高质量原生应用的全新移动UI框架。Beta1版本于2018年2月27日在2018世界移动大会上公布。
-
-官网：
-
-https://flutter.dev/
+Sikuli是一种新颖的图形脚本语言，或者说是一种另类的自动化测试技术。它采用图像识别的方式进行自动检测。
 
 参考：
 
-https://mp.weixin.qq.com/s/pU75twMDry4VUYtTHeV_IQ
+https://mp.weixin.qq.com/s/MYA6l9V4BYIZO8Jgtds6GA
 
-一文深入了解Flutter界面开发
+图像识别在测试中的应用
 
-https://mp.weixin.qq.com/s/yPvaB7sLuJoGfsjj7x7wcg
+http://www.cnblogs.com/fnng/archive/2012/12/15/2819367.html
 
-深入理解Flutter的编译原理与优化
+图形脚本语言sikuli
 
-https://mp.weixin.qq.com/s/SWP7Nu9DEUhvAyvdIG-Ixw
+## Ansible
 
-聊一聊Flutter Engine线程管理与Dart Isolate机制
-
-https://mp.weixin.qq.com/s/cJjKZCqc8UuzvEtxK1BJCw
-
-Flutter的原理及美团的实践
-
-https://mp.weixin.qq.com/s/l6xvmnLE6HfRtw6upo6yUA
-
-高效开发与高性能并存的UI框架——携程Flutter实践
-
-https://mp.weixin.qq.com/s/vcbHMtaJEkZhSgiRBST1YA
-
-移动开发这十年
-
-https://mp.weixin.qq.com/s/VlleaiIzsZHZDkDrGgYi1g
-
-如何用Flutter实现混合开发？闲鱼公开源代码实例
-
-https://mp.weixin.qq.com/s/n2avWVS0FAFIEB4w0W0Xsw
-
-学习Dart的10大理由
-
-https://mp.weixin.qq.com/s/CBp1pneBa_t8bkVlh1RGVg
-
-2019年五大跨平台移动应用开发工具
-
-https://mp.weixin.qq.com/s/ygPRdtRMlNW3-nfo0PonAA
-
-揭秘！如何用Flutter设计一个100%准确的埋点框架？
-
-## Litho
-
-Litho是Facebook推出的一套高效构建Android UI的声明式框架，主要目的是提升RecyclerView复杂列表的滑动性能和降低内存占用。
+Ansible is Simple IT Automation——简单的自动化IT工具。这个工具的目标有这么几项：让我们自动化部署APP；自动化管理配置项；自动化的持续交付；自动化的（AWS）云服务管理。简单的说就是：**批量的在远程服务器上执行命令。**
 
 官网：
 
-https://fblitho.com/
+https://www.ansible.com/
 
 参考：
 
-https://mp.weixin.qq.com/s/RS7O7prvkCvKyxkK3YQxtA
+http://www.ansible.com.cn/
 
-Litho的使用及原理剖析
-
-## adb
-
-手机->PC：
-
-`adb pull sdcard/contacts_app.db`
-
-PC->手机：
-
-`adb push aaa/contacts_app.db /sdcard/`
-
-----
-
-https://www.cnblogs.com/caoxinyu/p/10568463.html
-
-Ubuntu adb报错：no permissions (user in plugdev group; are your udev rules wrong?);
-
-## 参考
-
-https://mp.weixin.qq.com/s/twfpUMf9CfXcgwtFFkJ4Ig
-
-Android整体设计及背后意义
-
-https://mp.weixin.qq.com/s/eEuNPtTaPwJ7hSghgeU32g
-
-Android Hook技术防范漫谈
+Ansible中文权威指南
 
 # 负载均衡
 

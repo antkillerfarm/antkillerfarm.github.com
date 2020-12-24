@@ -243,6 +243,10 @@ https://mp.weixin.qq.com/s/vJInr8MwBKyPIcmdXF3ZVw
 
 AutoFeatureENG
 
+https://mp.weixin.qq.com/s/GXv_zkdmdJDdgWma_r3Hlw
+
+scikit-learn中的自动模型选择和复合特征空间
+
 # 数据不平衡问题
 
 ![](/images/img3/imbalance.png)

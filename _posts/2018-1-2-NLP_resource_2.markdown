@@ -209,6 +209,14 @@ https://mp.weixin.qq.com/s/iYChUH4VQMjkKa697GMIBg
 
 一文搞懂现代情感分析方法
 
+https://mp.weixin.qq.com/s/JZR752tWBPG5-9gwxZ4K0A
+
+情感分析方法入门上
+
+https://mp.weixin.qq.com/s/bAXm6QECWAel0ec6LTpdww
+
+情感分析方法入门下
+
 https://mp.weixin.qq.com/s/MHxxBgfiQt1Fzkpco3Uoig
 
 情感分析中的深度学习

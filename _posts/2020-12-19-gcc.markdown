@@ -175,34 +175,6 @@ MPS是jetbrains推出的用于构建DSL的工具。
 
 https://www.jetbrains.com/mps/
 
-# Sikuli
-
-Sikuli是一种新颖的图形脚本语言，或者说是一种另类的自动化测试技术。它采用图像识别的方式进行自动检测。
-
-参考：
-
-https://mp.weixin.qq.com/s/MYA6l9V4BYIZO8Jgtds6GA
-
-图像识别在测试中的应用
-
-http://www.cnblogs.com/fnng/archive/2012/12/15/2819367.html
-
-图形脚本语言sikuli
-
-# Ansible
-
-Ansible is Simple IT Automation——简单的自动化IT工具。这个工具的目标有这么几项：让我们自动化部署APP；自动化管理配置项；自动化的持续交付；自动化的（AWS）云服务管理。简单的说就是：**批量的在远程服务器上执行命令。**
-
-官网：
-
-https://www.ansible.com/
-
-参考：
-
-http://www.ansible.com.cn/
-
-Ansible中文权威指南
-
 # DRL参考资源++
 
 https://mp.weixin.qq.com/s/oZDDP59o-1qwfz8prK3nJQ
@@ -338,6 +310,10 @@ PyTorch中的In-place操作是什么？为什么要避免使用这种操作？
 https://zhuanlan.zhihu.com/p/299736532
 
 使用PyTorch 1.6 for Android
+
+https://mp.weixin.qq.com/s/1ugk6uI6lfWEEUvtKIfYNA
+
+9个让PyTorch模型训练提速的技巧！
 
 # AutoDL++
 

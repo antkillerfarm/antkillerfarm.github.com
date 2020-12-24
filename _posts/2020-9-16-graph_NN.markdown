@@ -213,6 +213,10 @@ https://mp.weixin.qq.com/s/nMs8G3qWLUDsG6Bzo0o2dg
 
 大规模图训练调优指南
 
+https://mp.weixin.qq.com/s/wbN0WdNxKBCH3cFz4VLtcA
+
+DGL框架实现GCN算法
+
 ## PyTorch Geometric
 
 https://mp.weixin.qq.com/s/5HOA9Pmb3fjsfTVnFMdBIA
