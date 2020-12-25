@@ -55,6 +55,10 @@ https://mp.weixin.qq.com/s/_1Yr_BbFhlNEW7UtYvAaoA
 
 分布式深度学习，93页ppt概述最新DDL技术发展
 
+https://mp.weixin.qq.com/s/jC5v9BKQvlxa2_6cikXV9w
+
+分布式算法与优化，118页pdf
+
 https://zhuanlan.zhihu.com/p/58806183
 
 深度学习的分布和并行处理系统

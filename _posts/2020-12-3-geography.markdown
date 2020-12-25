@@ -179,6 +179,10 @@ https://mp.weixin.qq.com/s/jHswcZDCjBH6qp46W8Vc4g
 
 漫画：为什么新疆永远不包邮？
 
+https://mp.weixin.qq.com/s/MWGedW1qbeqicE0wEqcSQw
+
+5000多万年前，江南曾是一片荒漠
+
 # 多维数组的行优先和列优先
 
 这里以numpy为工具，介绍一下多维数组的行优先和列优先的概念。

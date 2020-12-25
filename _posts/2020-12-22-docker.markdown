@@ -103,6 +103,12 @@ VMware是独立的第三方软件，而**KVM**作为一项虚拟化技术已经�
 
 `docker cp /pathonhost 容器id:/pathincontainer`
 
+4.退出
+
+`exit`：退出后，会stop容器。
+
+Ctrl+p Ctrl+q：退出后，容器仍然运行。
+
 参考：
 
 https://www.cnblogs.com/dyh004/p/9122639.html
