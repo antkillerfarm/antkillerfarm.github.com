@@ -163,6 +163,10 @@ $$f(z_k)=e^{z_k}/(\sum_j e^{z_j})$$
 
 原始的softmax loss非常优雅，简洁，被广泛用于分类问题。它的特点就是优化类间的距离非常棒，但是优化类内距离时比较弱。
 
+信息论视角：Softmax就是最小化在估计分类概率和“真实”分布之间的交叉熵。
+
+概率论解释：最大似然估计（MLE）。
+
 其实，softmax干的根本就不是max干的活，它并不是找出一个向量中的最大值。它反而和向量版的argmax的作用比较像。
 
 $$\mathrm{argmax} ([2,1,0.1])=[1,0,0]$$
@@ -171,11 +175,19 @@ $$\mathrm{softmax} ([2,1,0.1])=[0.7,0.2,0.1]$$
 
 由于softmax不像argmax这样只选择唯一的一个，也就是所谓的one-hot ，因此得了soft的名字。
 
+softmax分类器对于分数是永远不会满意的：正确分类总能得到更高的可能性，错误分类总能得到更低的可能性，损失值总是能够更小。
+
+但SVM只要边界值被满足了就满意了，不会超过限制去细微地操作具体分数。
+
 参考：
 
 https://www.zhihu.com/question/294679135
 
 softmax和cross-entropy是什么关系？
+
+https://mp.weixin.qq.com/s/lEBbuyPJsUx49BzMaSVhHw
+
+Softmax与交叉熵的数学意义
 
 ## logits
 
@@ -278,32 +290,8 @@ https://zhuanlan.zhihu.com/p/295512971
 
 《Deep Relative Distance Learning: Tell the Difference Between Similar Vehicles》
 
-
-
 参考：
 
 https://blog.csdn.net/u010167269/article/details/51783446
 
 论文中文笔记
-
-## Focal Loss
-
-https://zhuanlan.zhihu.com/p/28442066
-
-何恺明团队提出Focal Loss，目标检测精度高达39.1AP，打破现有记录
-
-https://www.zhihu.com/question/63581984
-
-如何评价Kaiming的Focal Loss for Dense Object Detection？
-
-https://mp.weixin.qq.com/s/Uf1lWtxOpKYCDLmCDlnVAQ
-
-把Cross Entropy梯度分布拉‘平’，就能轻松超越Focal Loss
-
-https://mp.weixin.qq.com/s/aKRUJt-_1QSQFcRVtuyJ4w
-
-被忽略的Focal Loss变种
-
-https://zhuanlan.zhihu.com/p/55036597
-
-样本贡献不均：Focal Loss和Gradient Harmonizing Mechanism

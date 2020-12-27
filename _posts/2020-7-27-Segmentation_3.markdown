@@ -215,6 +215,90 @@ RoI Pooling与RoI Align的区别
 
 # 花式U-NET
 
+本节主要摘抄自：
+
+https://zhuanlan.zhihu.com/p/57530767
+
+图像分割的U-Net系列方法
+
+## 3D U-Net
+
+论文：
+
+《3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation》
+
+![](/images/img3/U-Net_3D.png)
+
+这个算是3D领域的base-line了，而且效果还不错。好多新网络还未必比得过它。
+
+## ResUnet
+
+论文：
+
+《Road Extraction by Deep Residual U-Net》
+
+![](/images/img3/ResUnet.png)
+
+## DenseUnet
+
+论文：
+
+《Fully Dense UNet for 2D Sparse Photoacoustic Tomography Artifact Removal》
+
+![](/images/img3/DenseUnet.png)
+
+![](/images/img3/DenseUnet_2.png)
+
+## MultiResUNet
+
+论文：
+
+《MultiResUNet : Rethinking the U-Net Architecture for Multimodal Biomedical Image Segmentation》
+
+ResUnet和DenseUnet基本属于排列组合式的灌水。下面的MultiResUNet还是有些干货的。
+
+![](/images/img3/MultiResUNet.png)
+
+上图是该论文提出的MultiRes block结构。
+
+![](/images/img3/MultiResUNet_2.png)
+
+还有下采样和上采样之间的Res path结构。
+
+![](/images/img3/MultiResUNet_3.png)
+
+这是最终的网络结构图。基本上把concat和add的各种组合都撸了一遍。
+
+## R2U-Net
+
+论文：
+
+《Recurrent Residual Convolutional Neural Network based on U-Net (R2U-Net) for Medical Image Segmentation》
+
+![](/images/img3/R2U-Net.png)
+
+注意，这里的Recurrent Convolutional是Convolutional的一个变种，和RNN没有关系。
+
+## Attention U-Net
+
+论文：
+
+《Attention U-Net: Learning Where to Look for the Pancreas》
+
+![](/images/img3/AttU-Net.png)
+
+Attention也难逃毒手。
+
+## Attention R2U-Net
+
+![](/images/img3/AttR2U-Net.png)
+
+继续组合。不过作者还是有廉耻的，这个没有写论文灌水。
+
+R2U-Net, Attention U-Net, Attention R2U-Net的代码都在这里：
+
+https://github.com/LeeJunHyun/Image_Segmentation
+
 ## U-NET的另类用法
 
 U-NET除了用于语义分割之外，还可用于语音分离——将人声/音乐从原始混合声音数据中分离出来。比如卡拉OK中的常见的原声抑制功能。
@@ -254,81 +338,3 @@ https://github.com/f90/AdversarialAudioSeparation
 3.由于最终结果不再是像素级的分类问题，因此Loss采用了absolute difference。
 
 从上面的论述可以看出，该论文主要是用到了语义分割网络中**输入和输出的尺寸等大**这个特点，算是一种很灵巧的构思了。
-
-这方面的数据集主要有：
-
-***CCMixter：***
-
-https://members.loria.fr/ALiutkus/kam/
-
-这个数据集的每个文件夹下有3个wav文件：
-
-source-01.wav：纯音乐。
-
-source-02.wav：人声。
-
-mix.wav：混合后的声音。
-
-***MUSDB18：***
-
-https://sigsep.github.io/datasets/musdb.html
-
-类似这样用法的还有：
-
-《Learning to See in the Dark》
-
-代码：
-
-https://github.com/cchen156/Learning-to-See-in-the-Dark
-
-![](/images/img2/SID.png)
-
-如上图所示，该文的目标是使用神经网络替换传统的相机ISP过程。由于输入和输出的尺寸等大，照例又到了U-NET出场的时间。
-
-为了实现这一目标，作者收集了一个新的原始图像数据集，在弱光条件下快速曝光。同时，每个微光图像都有相应的长曝光、高质量的参考图像。
-
-SID算是这类问题的里程碑作品，后续还有：
-
-《YOLO in the Dark》
-
-这是将YOLO用于黑暗图像的目标检测的论文。
-
-参考：
-
-https://mp.weixin.qq.com/s/cr0BJLkyN2kW35-w1pebGQ
-
-学习在黑暗中看世界（Learning to See in the Dark）
-
-https://mp.weixin.qq.com/s/iv4ixoXvyPMp60hp2XhK8A
-
-港中文&腾讯优图等提出：暗光下的图像增强
-
-https://mp.weixin.qq.com/s/p2Vr9Y9vl4BlHZB_DIzTbw
-
-基于深度学习的低光照图像增强方法总结（2017-2019）
-
-https://mp.weixin.qq.com/s/E20ucf5bfexKYH4R7zK-WA
-
-最好用的音轨分离软件spleeter
-
-https://mp.weixin.qq.com/s/ONoBoCNFzoPh-rsVuiD6Jg
-
-YOLO in the Dark让黑夜里的目标检测成为可能
-
-## 花式U-Net
-
-本节主要摘抄自：
-
-https://zhuanlan.zhihu.com/p/57530767
-
-图像分割的U-Net系列方法
-
-### 3D U-Net
-
-论文：
-
-《3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation》
-
-![](/images/img3/U-Net_3D.png)
-
-这个算是3D领域的base-line了，而且效果还不错。好多新网络还未必比得过它。

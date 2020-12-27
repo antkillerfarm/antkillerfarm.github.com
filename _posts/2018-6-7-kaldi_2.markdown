@@ -250,60 +250,28 @@ SpeechBrain是一个基于pytorch的语音工具包，目前（2019.9）正在�
 
 https://speechbrain.github.io/
 
-# 可视化+
+# AI工具++
 
-https://mp.weixin.qq.com/s/CqvranTh9dawJW5DP-oHpw
+https://mp.weixin.qq.com/s/Zu_IPBQVJtcwNln-xvEZxQ
 
-手把手教你将矩阵画成张量网络图
+DarkLabel：支持检测、跟踪、ReID数据集的标注软件
 
-https://mp.weixin.qq.com/s/SWpgNMDIRfRugWBhMyGrTQ
+https://mp.weixin.qq.com/s/5klwQCPtiZOwFJYHDOpWFg
 
-交互式《几何原本》再现江湖
+语义分割标注工具Semantic Segmentation Editor快速安装指南
 
-https://visualgo.net/zh
+https://mp.weixin.qq.com/s/1EeYmZGoa-xpWmIvUoqCyw
 
-一个数据结构和算法的可视化网站
+瑞士小哥开源文本英雄Texthero：一行代码完成数据预处理
 
-https://mp.weixin.qq.com/s/ZuzmCHoo4i8e5TjZUOTPGg
+https://mp.weixin.qq.com/s/p9HpH2e5ShQCFcCxVNvMbg
 
-17种经典图表总结，轻松玩转数据可视化！
+清华开源迁移学习算法库
 
-https://mp.weixin.qq.com/s/zDXEOHnmmFYYDuWU1ORzFQ
+https://mp.weixin.qq.com/s/vzUt-5C_dRAChEfQYLp4lA
 
-Python中的时间序列数据可视化的完整指南
+PyTorch实现，GitHub 4000星：这是微软开源的计算机视觉库
 
-https://mp.weixin.qq.com/s/mGgOhuF5PVWzB5cie_ox0A
+https://mp.weixin.qq.com/s/5VeersQKxcT9AtFXS_CXnA
 
-Github上10个开源免费的后台控制面板你值得拥有！
-
-https://mp.weixin.qq.com/s/BpruKFMyL37MDXvzkMxnzQ
-
-技术人最不该忽视可视化数据分析
-
-https://mp.weixin.qq.com/s/mnKLpa_uPzoMrh7E7mtupg
-
-别动不动就画折线图了，教你4种酷炫可视化方法
-
-https://mp.weixin.qq.com/s/jLBI1bEp0wDOqZo9zDsbDw
-
-全面！手把手教你决策树可视化
-
-https://mp.weixin.qq.com/s/2uP5i7eFWgYRA7mt_rR39g
-
-深度学习模型图难画论文难中？这个ML Visual利器帮你快速画出漂亮的模型图
-
-https://mp.weixin.qq.com/s/Y8PW3mKbUKgGPdxerqVNKA
-
-数学表达式一键变图，CMU开发实用工具Penrose，堪称图解界LaTeX
-
-https://mp.weixin.qq.com/s/EPstYM7u3O6mAWf3J5Lmkg
-
-无代码工具的自动化概念概述
-
-https://mp.weixin.qq.com/s/0BBvsqLFP1qRvO3TUaS8Tw
-
-10个流行的可视化面板
-
-https://mp.weixin.qq.com/s/VqHN-cIdNa8l1lKlu4AD4w
-
-24种可视化图表优缺点对比
+推荐一款超高速、多特性的高性能序列推理引擎——LightSeq

@@ -7,9 +7,29 @@ category: ML
 * toc
 {:toc}
 
-# Loss function详解
+# Loss function详解（续）
 
-## Focal Loss（续）
+## Focal Loss
+
+https://zhuanlan.zhihu.com/p/28442066
+
+何恺明团队提出Focal Loss，目标检测精度高达39.1AP，打破现有记录
+
+https://www.zhihu.com/question/63581984
+
+如何评价Kaiming的Focal Loss for Dense Object Detection？
+
+https://mp.weixin.qq.com/s/Uf1lWtxOpKYCDLmCDlnVAQ
+
+把Cross Entropy梯度分布拉‘平’，就能轻松超越Focal Loss
+
+https://mp.weixin.qq.com/s/aKRUJt-_1QSQFcRVtuyJ4w
+
+被忽略的Focal Loss变种
+
+https://zhuanlan.zhihu.com/p/55036597
+
+样本贡献不均：Focal Loss和Gradient Harmonizing Mechanism
 
 https://mp.weixin.qq.com/s/LfCuOEndS4Y5dPqXTsE_hA
 
@@ -130,22 +150,6 @@ https://mp.weixin.qq.com/s/NY1y0N6XedmMEvfsEFcTjQ
 https://mp.weixin.qq.com/s/ixYhM29-famb8lbzNYnHAg
 
 深度学习中常用的损失函数有哪些？
-
-https://zhuanlan.zhihu.com/p/38855840
-
-SphereReID：从人脸到行人，Softmax变种效果显著
-
-https://mp.weixin.qq.com/s/ZoLO6OilivPgle03KdNzCQ
-
-人脸识别中Softmax-based Loss的演化史
-
-https://mp.weixin.qq.com/s/DwtA6GivVCDvL4MXNDBFWg
-
-阿里巴巴提出DR Loss：解决目标检测的样本不平衡问题
-
-https://zhuanlan.zhihu.com/p/145927429
-
-DR Loss
 
 https://mp.weixin.qq.com/s/AmXF0xA_T-ZjjnOt4XRgRw
 

@@ -101,6 +101,10 @@ https://mp.weixin.qq.com/s/0FPpc2PhLPiE9mg6eRh11Q
 
 OneNet：一阶段的端到端物体检测器，无需NMS
 
+https://mp.weixin.qq.com/s/ov4xLhicTqsce0bG2pw95A
+
+anchor-base和anchor-free差异分析
+
 # 其它目标检测网络
 
 ## A-Fast-RCNN
@@ -325,6 +329,10 @@ https://mp.weixin.qq.com/s/OnJQm8xCmxa4szB-lJC9Uw
 
 或许你的NMS该换了，Confluence更准、更稳的目标检测结果
 
+https://mp.weixin.qq.com/s/W6m2eaysYiK6-3Niz4KeOA
+
+Confluence：物体检测中不依赖IoU的NMS替代算法论文解析
+
 # 目标检测进阶
 
 https://mp.weixin.qq.com/s/1nlOJ7X9ogBHTl1j2adqyg
@@ -387,14 +395,6 @@ https://mp.weixin.qq.com/s/S6sz5dPgGNcJvrIAZ3ZjGg
 
 基于深度学习的通用物体检测算法对比探索
 
-https://mp.weixin.qq.com/s/BXwL33qOf3f7BtJvHsi23Q
-
-目标检测：Segmentation is All You Need？
-
-https://mp.weixin.qq.com/s/NWILStthG4klkwrYVcGQSQ
-
-ILC：用于自然场景多目标的计数模型
-
 https://mp.weixin.qq.com/s/9BCf0rCp660a5xQ2JNz3AQ
 
 深入理解one-stage目标检测算法（上篇）
@@ -402,7 +402,3 @@ https://mp.weixin.qq.com/s/9BCf0rCp660a5xQ2JNz3AQ
 https://mp.weixin.qq.com/s/p9XaI8PSG0o1NWlkmCIn7w
 
 深入理解one-stage目标检测算法（下篇）
-
-https://mp.weixin.qq.com/s/reNCLvOyJHkJZimnMpbIig
-
-目标检测算法优化技巧：Bag of Freebies for Training Object Detection

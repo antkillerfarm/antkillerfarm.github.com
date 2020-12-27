@@ -58,6 +58,10 @@ https://mp.weixin.qq.com/s/FV13ma9LxI1gsgi9ovU4Mw
 
 30个实例详解TOP命令
 
+https://www.cnblogs.com/renshengdezheli/p/13427865.html
+
+查询OS、CPU、内存、硬盘信息
+
 ## free
 
 free命令的内容比较概括，主要包含系统内存的整体使用情况，不深入到进程一级。
@@ -85,6 +89,10 @@ https://github.com/aristocratos/bashtop
 简单版：
 
 `lscpu`
+
+极简版：
+
+`nproc`
 
 # 硬盘
 

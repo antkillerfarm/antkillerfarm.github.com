@@ -261,6 +261,10 @@ https://mp.weixin.qq.com/s/xSJRhHbjcgk14Kr_-Ycr5A
 
 输入示例，自动生成代码：TensorFlow官方工具TF-Coder已开源
 
+https://zhuanlan.zhihu.com/p/333791572
+
+Tensorflow模型保存方式大汇总
+
 # TVM
 
 TVM是陈天奇领导的一个DL加速框架项目。它处于DL框架（如tensorflow、pytorch）和硬件后端（如CUDA、OpenCL）之间，兼顾了前者的易用性和后者的执行效率。
@@ -288,6 +292,10 @@ https://zhuanlan.zhihu.com/p/139552817
 https://mp.weixin.qq.com/s/8bXwxYyNjdThlGQQ70cgWQ
 
 TVM：端到端自动深度学习编译器，244页ppt
+
+https://zhuanlan.zhihu.com/p/333706468
+
+TVM学习系列blog
 
 https://zhuanlan.zhihu.com/p/163717035
 
@@ -340,10 +348,6 @@ https://zhuanlan.zhihu.com/p/87664838
 https://zhuanlan.zhihu.com/p/91283238
 
 TVM图编译器Relay简单探究
-
-https://zhuanlan.zhihu.com/p/333706468
-
-TVM学习
 
 # GLOW
 

@@ -259,6 +259,14 @@ Florence Nightingale用数据图表的方式展示了那些可预防疾病（蓝
 
 ----
 
+现代数据可视化鼻祖William Playfair创建了我们现在熟悉的折线图、条形图和饼状图。
+
+https://mp.weixin.qq.com/s/djkeZ2qC9opjIVHVcT0IZw
+
+在数据可视化这一块，我们可能真比不上几百年前的科学家
+
+----
+
 https://www.douban.com/group/topic/176322122/
 
 画图小白想问一句，这种核酸检测人数的贪吃蛇图怎...
@@ -358,15 +366,3 @@ https://mp.weixin.qq.com/s/94IGjVPXZ0FeCILQN33eBQ
 https://mp.weixin.qq.com/s/torRtPSVRnULRTbv4dB1sA
 
 大规模地理数据可视化入门：Deck.gl和H3
-
-https://mp.weixin.qq.com/s/UwPCDA89GH5X-HubeJddnQ
-
-怎么画高大上的神经网络结构？试试这个！
-
-https://mp.weixin.qq.com/s/paIumcvQOsACntKM8YwcbA
-
-12个神经网络结构可视化工具
-
-https://mp.weixin.qq.com/s/MMzvZA55Xb2sOA7rJiXiEw
-
-那些酷炫的深度学习网络图怎么画出来的？

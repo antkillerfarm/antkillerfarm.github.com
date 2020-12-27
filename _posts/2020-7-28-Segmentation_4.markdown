@@ -9,73 +9,67 @@ category: Segmentation
 
 # 花式U-NET
 
-### ResUnet
+## U-NET的另类用法（续）
 
-论文：
+这方面的数据集主要有：
 
-《Road Extraction by Deep Residual U-Net》
+***CCMixter：***
 
-![](/images/img3/ResUnet.png)
+https://members.loria.fr/ALiutkus/kam/
 
-### DenseUnet
+这个数据集的每个文件夹下有3个wav文件：
 
-论文：
+source-01.wav：纯音乐。
 
-《Fully Dense UNet for 2D Sparse Photoacoustic Tomography Artifact Removal》
+source-02.wav：人声。
 
-![](/images/img3/DenseUnet.png)
+mix.wav：混合后的声音。
 
-![](/images/img3/DenseUnet_2.png)
+***MUSDB18：***
 
-### MultiResUNet
+https://sigsep.github.io/datasets/musdb.html
 
-论文：
+类似这样用法的还有：
 
-《MultiResUNet : Rethinking the U-Net Architecture for Multimodal Biomedical Image Segmentation》
+《Learning to See in the Dark》
 
-ResUnet和DenseUnet基本属于排列组合式的灌水。下面的MultiResUNet还是有些干货的。
+代码：
 
-![](/images/img3/MultiResUNet.png)
+https://github.com/cchen156/Learning-to-See-in-the-Dark
 
-上图是该论文提出的MultiRes block结构。
+![](/images/img2/SID.png)
 
-![](/images/img3/MultiResUNet_2.png)
+如上图所示，该文的目标是使用神经网络替换传统的相机ISP过程。由于输入和输出的尺寸等大，照例又到了U-NET出场的时间。
 
-还有下采样和上采样之间的Res path结构。
+为了实现这一目标，作者收集了一个新的原始图像数据集，在弱光条件下快速曝光。同时，每个微光图像都有相应的长曝光、高质量的参考图像。
 
-![](/images/img3/MultiResUNet_3.png)
+SID算是这类问题的里程碑作品，后续还有：
 
-这是最终的网络结构图。基本上把concat和add的各种组合都撸了一遍。
+《YOLO in the Dark》
 
-### R2U-Net
+这是将YOLO用于黑暗图像的目标检测的论文。
 
-论文：
+参考：
 
-《Recurrent Residual Convolutional Neural Network based on U-Net (R2U-Net) for Medical Image Segmentation》
+https://mp.weixin.qq.com/s/cr0BJLkyN2kW35-w1pebGQ
 
-![](/images/img3/R2U-Net.png)
+学习在黑暗中看世界（Learning to See in the Dark）
 
-注意，这里的Recurrent Convolutional是Convolutional的一个变种，和RNN没有关系。
+https://mp.weixin.qq.com/s/iv4ixoXvyPMp60hp2XhK8A
 
-### Attention U-Net
+港中文&腾讯优图等提出：暗光下的图像增强
 
-论文：
+https://mp.weixin.qq.com/s/p2Vr9Y9vl4BlHZB_DIzTbw
 
-《Attention U-Net: Learning Where to Look for the Pancreas》
+基于深度学习的低光照图像增强方法总结（2017-2019）
 
-![](/images/img3/AttU-Net.png)
+https://mp.weixin.qq.com/s/E20ucf5bfexKYH4R7zK-WA
 
-Attention也难逃毒手。
+最好用的音轨分离软件spleeter
 
-### Attention R2U-Net
+https://mp.weixin.qq.com/s/ONoBoCNFzoPh-rsVuiD6Jg
 
-![](/images/img3/AttR2U-Net.png)
-
-继续组合。不过作者还是有廉耻的，这个没有写论文灌水。
-
-R2U-Net, Attention U-Net, Attention R2U-Net的代码都在这里：
-
-https://github.com/LeeJunHyun/Image_Segmentation
+YOLO in the Dark让黑夜里的目标检测成为可能
 
 ## 参考
 
@@ -118,6 +112,10 @@ FCN、Unet、Unet++医学图像分割那点事儿
 https://mp.weixin.qq.com/s/TmR9TiB9cfvYGIhQTlctRQ
 
 医学图像分割：UNet++
+
+https://mp.weixin.qq.com/s/21h62T0Ig5gubVLwyLsdbg
+
+U-Net Family方法汇总
 
 # 语义分割进阶
 

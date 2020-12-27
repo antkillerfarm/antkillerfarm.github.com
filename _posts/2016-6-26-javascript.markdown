@@ -329,6 +329,10 @@ https://mp.weixin.qq.com/s/DUOfYS-0k-F1p1-_YO9udA
 
 前端开发者们值得了解的11项前端技巧
 
+https://mp.weixin.qq.com/s/bgxkqnr-MPwsKDBicJIpgA
+
+如何只使用CSS提升页面渲染速度
+
 # Traffic Demo
 
 2019.9
@@ -362,23 +366,3 @@ https://webassembly.org/
 https://www.ibm.com/developerworks/cn/web/wa-lo-webassembly-status-and-reality/index.html
 
 WebAssembly现状与实战
-
-https://www.jianshu.com/p/bff8aa23fe4d
-
-几张图让你看懂WebAssembly
-
-https://www.zhihu.com/question/31415286
-
-如何评论浏览器最新的WebAssembly字节码技术？
-
-https://mp.weixin.qq.com/s/LRGNOuFwHXALs_lhPyN3Zw
-
-爱奇艺直播WebAssembly优化之路
-
-https://mp.weixin.qq.com/s/I0grz0IfFZo98sfaCNh-Vw
-
-可能是世界上最简单的用Go来写WebAssembly的教程
-
-https://mp.weixin.qq.com/s/yTebereUkcyvwJbLssZjPQ
-
-5分钟看懂WebAssembly

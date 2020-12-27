@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  通信协议, 硬件, 传感器
+title:  通信协议, 传感器
 category: resource 
 ---
 
@@ -38,6 +38,10 @@ https://mp.weixin.qq.com/s/iN8NQd8SuWL4gCWhRbY6tg
 https://mp.weixin.qq.com/s/Yj5NqRJG48kKX2kNnmj9yw
 
 20张图彻底弄懂HTTPS的原理！
+
+https://segmentfault.com/a/1190000023936425
+
+为什么HTTPS是安全的
 
 ## TCP
 
@@ -238,78 +242,6 @@ https://mp.weixin.qq.com/s/uNXxyPZ5IssZfgFFD-m5dQ
 https://mp.weixin.qq.com/s/A4OYoKFVu2nZCyDJcoFrQA
 
 从HTTP到HTTP/3的发展简史
-
-# 硬件
-
-https://mp.weixin.qq.com/s/ZexnsNmqsD2yq-7YNASohw
-
-数模转换器的基本原理及DAC类型简介
-
-https://mp.weixin.qq.com/s/1XmbkoRkXUtmR0pnENhfGA
-
-基于高速DDFS的高精度DAC的设计
-
-https://mp.weixin.qq.com/s/aavlfxII5PW_RrsF6nS99g
-
-模-数转换(A/D)技术
-
-https://mp.weixin.qq.com/s/Coz81Zidz_LaSYkcErJsOQ
-
-NAND Flash与NOR Flash究竟有何不同
-
-http://mp.weixin.qq.com/mp/homepage?__biz=MzUyMTA2OTM1MA==&hid=4&sn=192b1f4e49979e13c7df491725415d06&scene=18
-
-一个OLED方面的公众号
-
-https://mp.weixin.qq.com/s/lBRHV1mnO1JMwlnO_rQjxA
-
-LCD与OLED之争：谁才是真正的赢家？
-
-https://zhuanlan.zhihu.com/p/48343011
-
-芯片中的数学——均衡器EQ和它在高速外部总线中的应用。这个blog主要介绍了眼图的概念。
-
-https://mp.weixin.qq.com/s/oCBSGVtGSwq9c59rcVc2-A
-
-无线接收器的百年创新及架构发展史
-
-https://mp.weixin.qq.com/s/KPmkphlJFv5dScLlhAigEw
-
-新型存储器技术盘点
-
-https://zhuanlan.zhihu.com/p/54517790
-
-内存条应该怎么插？为什么要从远端插起？不遵循为啥还可以work？有啥副作用？
-
-https://mp.weixin.qq.com/s/AJA01Cvm3k2HntUUAg9FPg
-
-关于“陶瓷电容”，你不知道的事
-
-https://mp.weixin.qq.com/s/NKWvIJ7-J_IugnAgUehVIg
-
-博通要卖掉的射频前端，是个怎样的市场？
-
-## USB
-
-https://mp.weixin.qq.com/s/pL_98GmL2qkvt71hw6A-DA
-
-终结混乱，USB族谱终极整理！
-
-https://mp.weixin.qq.com/s/EDv1ArAG5s8al33FoBfmfQ
-
-USB的前世今生
-
-https://zhuanlan.zhihu.com/p/65478149
-
-为什么USB Type C电缆正反插都可以？它是怎么做到的？
-
-https://mp.weixin.qq.com/s/dk_sl3OvPwvnRWPpPJ4D_Q
-
-USB3.1 Type-C高速接口设计指南
-
-https://zhuanlan.zhihu.com/p/153254485
-
-为什么短路的USB设备不会烧掉你的主板？著名的USB Killer又是怎么干掉主板的？
 
 # 传感器
 

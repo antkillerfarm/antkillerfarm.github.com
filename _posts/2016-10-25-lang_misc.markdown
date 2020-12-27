@@ -107,6 +107,26 @@ http://www.15yan.com/story/5Y8BZqIGwjg/
 
 ## WebAssembly（续）
 
+https://www.jianshu.com/p/bff8aa23fe4d
+
+几张图让你看懂WebAssembly
+
+https://www.zhihu.com/question/31415286
+
+如何评论浏览器最新的WebAssembly字节码技术？
+
+https://mp.weixin.qq.com/s/LRGNOuFwHXALs_lhPyN3Zw
+
+爱奇艺直播WebAssembly优化之路
+
+https://mp.weixin.qq.com/s/I0grz0IfFZo98sfaCNh-Vw
+
+可能是世界上最简单的用Go来写WebAssembly的教程
+
+https://mp.weixin.qq.com/s/yTebereUkcyvwJbLssZjPQ
+
+5分钟看懂WebAssembly
+
 https://mp.weixin.qq.com/s/QDjxfoY7gjcCmOeV0kq1pw
 
 web多媒体技术在视频编辑场景的应用
@@ -268,27 +288,3 @@ ES的兼容性概览
 教程：
 
 https://www.runoob.com/w3cnote/es6-tutorial.html
-
-----
-
-从ES7开始，ES标准的制定原则是成文标准要从事实标准中诞生，实现先于标准存在。进入标准草案必须有JavaScript引擎实现的支持（按照流程，起码要2个JavaScript引擎的稳定实现）。发布节奏也改为一年一发。因此，后续标准每版增加的内容非常少。
-
-一般来说，Chrome、Firefox和Node.js是支持的比较及时的JS平台。
-
-----
-
-在ES6之前，JS的面向对象编程通常使用一种叫做“**原型链**”的技术来实现。
-
-参见：
-
-https://www.cnblogs.com/chengzp/p/prototype.html
-
-详谈JavaScript原型链
-
-ES6的新语法，虽然糖了不少，但背后的基础仍然是原型链。
-
-参考：
-
-https://www.cnblogs.com/libin-1/p/7127481.html
-
-彻底搞清楚javascript中的require、import和export

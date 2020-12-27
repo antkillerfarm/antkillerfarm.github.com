@@ -205,6 +205,8 @@ Ubuntu：Ctrl + Shift + I
 
 `terminal.integrated.scrollback`：设置终端保存的最大行数。
 
+`# (.*)\+\+`
+
 ## 插件
 
 filesize：在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间。
@@ -389,26 +391,30 @@ CTest
 
 # Java+
 
-https://mp.weixin.qq.com/s/mdYZhkWkAILQz_JnVA5xvA
+## JVM
 
-深入AQS(AbstractQueuedSynchronizer)
+https://mp.weixin.qq.com/s/C-hLyeshiENJ_wmUltOpbw
 
-https://mp.weixin.qq.com/s/_MVTvyG3gcsJcpidtQEBqg
+JVM完整深入解析
 
-为什么Java中“1000==1000”为false，而”100==100“为true？
+https://mp.weixin.qq.com/s/IlatTB-2AxxIph1z1RP9iQ
 
-https://mp.weixin.qq.com/s/X0foqlams1wMMnRE017XmQ
+Java虚拟机垃圾收集机制详解
 
-JDK 5-15都有哪些经典新特性
+https://mp.weixin.qq.com/s/TBUQrqxMbWIjG65H4tAP1Q
 
-https://mp.weixin.qq.com/s/iklfWLmSD4XMAKmFcffp9g
+十个JVM核心知识点
 
-底层原理：垃圾回收算法是如何设计的？
+## 参考
 
-https://mp.weixin.qq.com/s/6HKCnN2HDi84bwjElhZBcQ
+http://blog.csdn.net/u014717036/article/details/52234679
 
-打工人，从JMM透析volatile与synchronized原理
+Java语言中的协变和逆变
 
-https://mp.weixin.qq.com/s/sXv9XIIVDsflXr0FdrGM1A
+https://mp.weixin.qq.com/s/h3MB8p0sEA7VnrMXFq9NBA
 
-垃圾回收器是如何演进的？
+Java魔法类：Unsafe应用解析
+
+https://mp.weixin.qq.com/s/_hSaI5yMvPTWxvFgl-UItA
+
+Java动态追踪技术探究

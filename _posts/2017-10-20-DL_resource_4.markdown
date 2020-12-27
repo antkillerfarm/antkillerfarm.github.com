@@ -335,6 +335,18 @@ http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201703/t20170310_1471429.html
 
 # 目标检测进阶+
 
+https://mp.weixin.qq.com/s/reNCLvOyJHkJZimnMpbIig
+
+目标检测算法优化技巧：Bag of Freebies for Training Object Detection
+
+https://mp.weixin.qq.com/s/BXwL33qOf3f7BtJvHsi23Q
+
+目标检测：Segmentation is All You Need？
+
+https://mp.weixin.qq.com/s/NWILStthG4klkwrYVcGQSQ
+
+ILC：用于自然场景多目标的计数模型
+
 https://zhuanlan.zhihu.com/p/59915784
 
 目标检测中的Consistent Optimization

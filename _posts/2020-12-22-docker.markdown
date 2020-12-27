@@ -73,6 +73,16 @@ VMware是独立的第三方软件，而**KVM**作为一项虚拟化技术已经�
 
 **超轻虚拟化**将虚拟化技术的强隔离性和容器技术的轻量性进行融合，提出了一个microVM的概念，底层通过KVM虚拟化技术实现各个microVM的强隔离，而隔离的虚拟机中运行的是一个个精简版的微型操作系统，砍掉了大量无用的功能，专为容器设计的微型OS。
 
+参考：
+
+https://mp.weixin.qq.com/s/Zmu57U-HlPsyby_qvHSVHQ
+
+VMware/KVM/Docker原来是这么回事儿
+
+https://mp.weixin.qq.com/s/dTygs-QirMgxIrV7SaqjUg
+
+硬件隔离与软件虚拟化
+
 ## 使用
 
 1.镜像和容器的关系，类似于类和对象的关系，它们有各自不同的ID。
@@ -204,10 +214,6 @@ Docker容器里运行的程序是否与操作系统有关？
 https://zhuanlan.zhihu.com/p/115845957
 
 两个奇技淫巧，将Docker镜像体积减小99%
-
-https://mp.weixin.qq.com/s/Zmu57U-HlPsyby_qvHSVHQ
-
-VMware/KVM/Docker原来是这么回事儿
 
 https://mp.weixin.qq.com/s/j2c1cV3J4UK20-yb8FLJZg
 

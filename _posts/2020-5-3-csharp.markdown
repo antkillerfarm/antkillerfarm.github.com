@@ -329,11 +329,3 @@ https://mp.weixin.qq.com/s/8uxc2t53N_j_mRPYbiG0sA
 https://mp.weixin.qq.com/s/3pGw9QdAZVE3OKZ-zGyb4g
 
 使用Python远程登陆服务器的最佳实践
-
-https://mp.weixin.qq.com/s/Bllw4rSkxd378LLUCh6oJA
-
-Python炫技操作：合并字典的七种方法
-
-https://mp.weixin.qq.com/s/KrdXyYMtyElUGuPH5eNYvg
-
-Python的深浅拷贝讲解

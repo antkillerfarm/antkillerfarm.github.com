@@ -349,6 +349,22 @@ https://mp.weixin.qq.com/s/mvx_LyGVzn_H3XpwTsuFMA
 
 # 人脸检测/识别++
 
+https://zhuanlan.zhihu.com/p/69542283
+
+人脸防伪检测挑战赛-俄初创公司夺冠,中美企业位列二三
+
+https://mp.weixin.qq.com/s/ROJtk8MSTlHJe-42-f1OYw
+
+部分遮挡下的人脸识别技术
+
+https://mp.weixin.qq.com/s/VOclUEBXnAtmAZmZrzQQoA
+
+面向大规模无标注视频的人脸对齐方法
+
+https://zhuanlan.zhihu.com/p/112140909
+
+基于深度学习的人脸识别方法介绍
+
 https://mp.weixin.qq.com/s/CR4Nf_RklcXA45mswPv8Zw
 
 腾讯优图开源人脸检测算法DSFD，刷新两项数据集纪录

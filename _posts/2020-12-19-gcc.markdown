@@ -299,6 +299,18 @@ https://mp.weixin.qq.com/s/0o-dNtmafC2paA6gqTRkKA
 
 # Pytorch++
 
+https://zhuanlan.zhihu.com/p/272767300
+
+Pytorch转ONNX-理论篇
+
+https://zhuanlan.zhihu.com/p/273566106
+
+Pytorch转ONNX-实战篇1（tracing机制）
+
+https://zhuanlan.zhihu.com/p/286298001
+
+Pytorch转ONNX-实战篇2（实战踩坑总结）
+
 https://mp.weixin.qq.com/s/xe5zmJklT2sqn_zffmyrLg
 
 Sharded:在相同显存的情况下使pytorch模型的参数大小加倍

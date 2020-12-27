@@ -193,6 +193,10 @@ https://zhuanlan.zhihu.com/p/210736523
 
 使用Faiss进行海量特征的相似度匹配
 
+https://mp.weixin.qq.com/s/fu5t1e57VsFc12IW1ZcC-g
+
+如果KNN淘汰了，那么取而代之的将是ANN
+
 ## 参考
 
 https://github.com/harpribot/awesome-information-retrieval

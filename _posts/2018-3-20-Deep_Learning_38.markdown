@@ -117,22 +117,6 @@ https://mp.weixin.qq.com/s/L1H7PXwuItuF6Vp2Uyfowg
 
 人脸识别剩下的难题：从遮挡，年龄，姿态，妆造到亲属关系，人脸攻击
 
-https://zhuanlan.zhihu.com/p/69542283
-
-人脸防伪检测挑战赛-俄初创公司夺冠,中美企业位列二三
-
-https://mp.weixin.qq.com/s/ROJtk8MSTlHJe-42-f1OYw
-
-部分遮挡下的人脸识别技术
-
-https://mp.weixin.qq.com/s/VOclUEBXnAtmAZmZrzQQoA
-
-面向大规模无标注视频的人脸对齐方法
-
-https://zhuanlan.zhihu.com/p/112140909
-
-基于深度学习的人脸识别方法介绍
-
 # RNN进阶
 
 ## IndRNN
@@ -365,6 +349,8 @@ https://mp.weixin.qq.com/s/m3sgoG15dtacGt1_Anrq6Q
 
 # 显著性检测
 
+视觉显著性检测(Visual Saliency Detection)指通过智能算法模拟人的视觉特点，提取图像中的显著区域(即人类感兴趣的区域)。
+
 https://blog.csdn.net/dawnlooo
 
 一个显著性检测的专栏
@@ -400,3 +386,7 @@ https://mp.weixin.qq.com/s/ntSH2aS4YHqrLaTAfWFLsQ
 https://mp.weixin.qq.com/s/0T1QhiT_20BrerNcTjKreQ
 
 南开提出边缘引导的显著目标检测算法EGNet，刷新主流数据集所有评价指标
+
+https://mp.weixin.qq.com/s/p4lHnte3FYu6XtD3PnSeKw
+
+光场显著性检测研究综述

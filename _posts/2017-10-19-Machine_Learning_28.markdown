@@ -326,3 +326,13 @@ https://mp.weixin.qq.com/s/fAHlrfchgkQ1Wuc8sfTlZg
 https://zhuanlan.zhihu.com/p/259710601
 
 数据类别不平衡/长尾分布？不妨利用半监督或自监督学习
+
+# Loss function详解+++
+
+https://mp.weixin.qq.com/s/LOewKsxtWm7dFJS6ioryuw
+
+Siamese网络，Triplet Loss以及Circle Loss的解释
+
+https://zhuanlan.zhihu.com/p/58883095
+
+常见的损失函数(loss function)总结

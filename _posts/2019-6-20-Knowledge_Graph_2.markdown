@@ -394,3 +394,7 @@ https://mp.weixin.qq.com/s/Z27oInh5rdxnxt1-KFAiRA
 https://mp.weixin.qq.com/s/8mpc7AblZyRw7LCh35vL2g
 
 哈工大讯飞联合实验室发布知识蒸馏工具TextBrewer
+
+https://mp.weixin.qq.com/s/Jf9CMm3YIINtvT9ivweQMA
+
+知识图谱补全技术

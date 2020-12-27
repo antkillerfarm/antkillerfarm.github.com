@@ -159,6 +159,8 @@ https://www.zhihu.com/question/404380682
 
 ![](/images/img3/top10.png)
 
+![](/images/img4/manufact.jpg)
+
 https://mp.weixin.qq.com/s/sRVb8qGtbsuqCvHSrlL9mQ
 
 卡住中国脖子的35项技术

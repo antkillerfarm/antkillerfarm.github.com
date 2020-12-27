@@ -205,6 +205,10 @@ https://mp.weixin.qq.com/s/Ahwg2PYXzhHik9yP_WoYzQ
 
 图文并茂，HashMap经典详解！
 
+https://mp.weixin.qq.com/s/GoeJt7hiL1QjpD7vIo4vew
+
+遍历HashMap的5种最佳方式
+
 ## Log4j & SLF4J & Logback
 
 Log4j是Apache的一个开源项目，通过使用Log4j，我们可以控制日志信息输送的目的地是控制台、文件、GUI组件，甚至是套接口服务器、NT的事件记录器、UNIX Syslog守护进程等；我们也可以控制每一条日志的输出格式；通过定义每一条日志信息的级别，我们能够更加细致地控制日志的生成过程。
@@ -323,23 +327,11 @@ https://mp.weixin.qq.com/s/_r1EU66tpHUrOyuGd9yNdA
 
 学会Java中的线程池，这一篇也许就够了！
 
-## 参考
+## JVM
 
 https://mp.weixin.qq.com/s/t1Cx1n6irN1RWG8HQyHU2w
 
 从实际案例聊聊Java应用的GC优化
-
-http://blog.csdn.net/u014717036/article/details/52234679
-
-Java语言中的协变和逆变
-
-https://mp.weixin.qq.com/s/h3MB8p0sEA7VnrMXFq9NBA
-
-Java魔法类：Unsafe应用解析
-
-https://mp.weixin.qq.com/s/_hSaI5yMvPTWxvFgl-UItA
-
-Java动态追踪技术探究
 
 https://mp.weixin.qq.com/s/feJKRqYJTVEIxl6jvjevAg
 
@@ -365,14 +357,6 @@ https://mp.weixin.qq.com/s/bF6tHfA4lXApv5x9h97cqA
 
 浅谈JVM内存结构
 
-https://mp.weixin.qq.com/s/h2_eAtoE9IWdi_OERul0Mw
-
-Tencent JDK国产化CPU架构支持分享
-
-https://www.jianshu.com/p/25b328753017
-
-压缩20M文件从30秒到1秒的优化过程
-
 https://mp.weixin.qq.com/s/MxMcpJlqSEZRO0CssQglOg
 
 Android兼容Java 8语法特性的原理分析
@@ -384,3 +368,23 @@ Java动态调试技术原理及实践
 https://mp.weixin.qq.com/s/23-S5tXTqi2LSe84OoQvvA
 
 跑得好好的Java进程，怎么突然就瘫痪了？
+
+https://mp.weixin.qq.com/s/h2_eAtoE9IWdi_OERul0Mw
+
+Tencent JDK国产化CPU架构支持分享
+
+https://mp.weixin.qq.com/s/iklfWLmSD4XMAKmFcffp9g
+
+底层原理：垃圾回收算法是如何设计的？
+
+https://mp.weixin.qq.com/s/sXv9XIIVDsflXr0FdrGM1A
+
+垃圾回收器是如何演进的？
+
+https://mp.weixin.qq.com/s/ag5u2EPObx7bZr7hkcrOTg
+
+新一代垃圾回收器ZGC的探索与实践
+
+https://mp.weixin.qq.com/s/0BEqgGEuC5cfqeDWx728Ig
+
+8张图带你理解Java内存区域
