@@ -322,7 +322,27 @@ https://mp.weixin.qq.com/s/IcY_RfIpioEBC493bEtUdw
 
 计算机鼻祖的鼻祖-差分机：机械史上的最强大脑，最复杂的巅峰之作
 
+https://www.zhihu.com/zvideo/1326523456260132864
+
+3D高清动画展示博福斯40mm高射炮的工作原理
+
+https://www.zhihu.com/zvideo/1313875144842940416
+
+二战苏联的DSHK重机枪，3D动画演示它的工作原理
+
+https://www.zhihu.com/zvideo/1324714363509334016
+
+3D动画演示布朗式轻机枪的工作原理
+
 # 气象
+
+夏至三庚入伏，冬至逢壬数九。
+
+夏至以后的第3个庚日、第4个庚日分别为初伏（头伏）和中伏的开始日期，立秋以后的第一个庚日为末伏的第一天。因为每个庚日之间相隔10天，所以初伏、末伏规定的时间是10天。又因为每年夏至节气后的第3个庚日（初伏）出现的迟早不同，中伏的天数就有长有短，可能是10天，也可能是20天。
+
+冬至后逢第一个壬日开始叫“交九”，意思是寒冷的开始。
+
+----
 
 ![](/images/img3/Hadley_Cell.png)
 
@@ -357,61 +377,3 @@ https://mp.weixin.qq.com/s/mzAgmh9JDQYAV2S9uJBfjw
 https://mp.weixin.qq.com/s/5fRHmNqQybS9GvKxpuc2TQ
 
 是不是真的“高处不胜寒”？
-
-# 化学++
-
-## 食品工业（续）
-
-https://www.zhihu.com/answer/370657574
-
-军事里说的马润指什么？
-
-http://bbs.tianya.cn/post-no05-401394-372.shtml
-
-"灵肉"传奇：斯帕姆午餐肉
-
-http://war.163.com/15/0108/09/AFE8A8LU00014J0G.html
-
-二战美军面临两大敌人：淋病、午餐肉
-
-http://www.sohu.com/a/64190509_139533
-
-曾经象征食品工业繁荣的罐头，为何已经远离了你的生活
-
-https://mp.weixin.qq.com/s/GHgfNAkV7ttXfasGkM083A
-
-用算法改造过的植物肉，有兴趣试试么？
-
-https://www.zhihu.com/question/21171331
-
-火腿肠里真的有肉吗？
-
-## 化学工业
-
-https://wallstreetcn.com/articles/250536
-
-巴斯夫原本是它小弟，德国化工产业的代名词：揭秘史前化工巨兽 IG 法本
-
-http://blog.sina.com.cn/s/blog_52f526870102w7xo.html
-
-历经百年兴衰 德国化工三巨头为何屹立不倒
-
-http://www.weixinso.com/document/KPyZBb.html
-
-陶氏化学发展史
-
-http://www.pnchina.com/cn/Detail.aspx?id=1361250587
-
-业界经典：陶氏化学Styrofoam之75年
-
-https://new.qq.com/omn/20180819/20180819A011JT.html
-
-起于硝烟的化工帝国：杜邦是怎么与化工行业同呼吸共命运的？
-
-http://www.qdaily.com/articles/18872.html
-
-杜邦要合并了，过去一百年，这家公司的发明都改变了些什么？
-
-https://mp.weixin.qq.com/s/MkVeQ7xYAHV8mA1zmdr0qg
-
-四川五通桥事故频发：“化工围城”之殇

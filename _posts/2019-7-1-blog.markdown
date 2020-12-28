@@ -145,192 +145,140 @@ category: my story
 
 2020.4 研究PGM。
 
-# 电子科技史+
+# 数学杂谈+
 
-https://baike.baidu.com/item/Full Mask - MPW/16508899
+https://zhuanlan.zhihu.com/p/78352532
 
-Full Mask和MPW都是集成电路的一种流片（将设计结果交出去进行生产制造）方式。Full Mask是“全掩膜”的意思，即制造流程中的全部掩膜都为某个设计服务；而MPW（Multi Project Wafer），直译为多项目晶圆，即多个项目共享某个晶圆，也即同一次制造流程可以承担多个IC设计的制造任务。
+麻省理工牛人解说数学体系
 
-----
+https://mp.weixin.qq.com/s/GHIFsFleS7aGMP0ye_SCCQ
 
-1938年，楚泽（Konrad Zuse）发明了世界上第一台二进制计算机，称为 Z1（Zuse1）。在此基础上，他陆续制造了 Z2、Z3、Z - 计算机。其中，他在 1941 年制造出的 Z3 计算机是世界上第一台可编程的计算机，这是具有当时世界上最高水平编程语言的计算机。而且，Z3几乎实现了计算机之父冯·诺依曼在1946年所定义的现代计算机所有功能，楚泽也因此被称为现代计算机发明人之一。
+我居然从一只猫身上学到了斐波那契数列
 
-https://mp.weixin.qq.com/s/mcxD1TaD-r9alNydWQQ0Og
+https://mp.weixin.qq.com/s/y6H1YV7FUkBlqznoNbTLng
 
-意外惊喜：现存最古老计算机的操作手册重见天日
+太震撼了！2600年数学文明画在了一张图上
 
-----
+https://mp.weixin.qq.com/s/JZKSzd97Og9YHPaHWNTWKQ
 
-https://mp.weixin.qq.com/s/YdoIVBpn1dFUEzDEF5pYJw
+史上最能忽悠的数学家，哲学出身竟引发数学千年危机，最终却惨遭处死（芝诺）
 
-被迫离开工作近20年的公司，半导体老兵上演逆袭。林孝平，一个小儿麻痹患者。
+https://mp.weixin.qq.com/s/ZRMmByhNkjcfbaOcwxQ5dg
 
-https://mp.weixin.qq.com/s/hIWvLLKWksNlO2eaVKcbAA
+日本数学界惊现神操作！偷偷研究飞刀方程致使厕所爆炸，连美国总统特朗普都忍不住发文怒怼
 
-那个延续摩尔定律的人的传奇人生。Mark Bohr，UIUC硕士（1978），美国工程院院士。
+https://blog.csdn.net/ChangHengyi/article/details/80577318
 
-https://mp.weixin.qq.com/s?__biz=MzI1NTA0MDUyMA==&mid=2456660188&idx=1&sn=b9dafaa60e10130442aac48f165800f7
+一片文章带你理解再生核希尔伯特空间（RKHS）以及各种空间
 
-芯片春秋·ARM传
+https://mp.weixin.qq.com/s/AQgFded7GWp1yPE_voT0QQ
 
-https://mp.weixin.qq.com/s/bggtiz_a-Io8e9UQohxv1A
+看完这45组酷炫数学动图，原来数学这么有意思！
 
-紫光芯片王国是怎样建成的
+https://mp.weixin.qq.com/s/23zElw2ktT3YbNZ9_r5lgQ
 
-https://mp.weixin.qq.com/s/KOjA94ODbWBEOGS-DWCNyw
+“一个千古绝伦的大智者”莱布尼茨
 
-美国本土的晶圆厂大盘点
+https://mp.weixin.qq.com/s/SlbWkTrO3UlWd15jrKYvdg
 
-https://mp.weixin.qq.com/s/zzlJ1VjgR70jZQrBsUBLMA
+史上最强律师，用代数暴力破解军事密码，无情吊打荷兰数学家，被誉为“代数学之父”（弗朗索瓦·韦达）
 
-日本元器件三龙头的成功秘籍
+https://mp.weixin.qq.com/s/_HnWeNxH6p2VAMC8tG2gFg
 
-https://mp.weixin.qq.com/s/p7T-xcyWHDYueEE3V42dfg
+斯坦福再出变态神人！竟用一个数学模型，暴力解开“掰手指”的奥秘！看完我跪了......
 
-德州仪器往事
+https://mp.weixin.qq.com/s/Rw3O5MDbEIfgmWCVgFe95w
 
-https://m.uczzd.cn/webview/news?aid=7934419892823166898
+五次方程的微分方程解法
 
-仅300员工却垄断全球, 7亿一台供不应求, 买一台都成了巨头（Canon Tokki）
+https://mp.weixin.qq.com/s/eYzhlrV822X8mHsOGgv1Qw
 
-https://mp.weixin.qq.com/s/z4Aik3NgB6XE64YCZolM4w
+如何计算一只鸡的表面积？看完中外神人的奇葩解法，我发誓下辈子不做理科生......
 
-仙童兴亡史
+https://mp.weixin.qq.com/s/43XCOdNqeKxMmpfkX3JTGw
 
-https://mp.weixin.qq.com/s/GuO87_b9g6jFAepIWxDw5g
+一个退休程序员，用高中几何方法，让百年数学难题逼近理论极限（万有覆盖问题）
 
-闪存技术的52年发展史
+https://mp.weixin.qq.com/s/a1TEh1c1VZ345rmj8UiPgA
 
-https://mp.weixin.qq.com/s/TlCtyF2HG_5l4STgoMJ05w
+“科比球”背后的数学
 
-日本电子产业大败局
+https://mp.weixin.qq.com/s/6XsH71CKaVikqnL6kVPqtg
 
-https://mp.weixin.qq.com/s/TlhhDjKlLYslif0RtpNotw
+各种语言的Mandelbrot set示例代码
 
-世界三大电子展(CES、MWC、IFA)的前世今生
+https://mp.weixin.qq.com/s/gnPiCmsua0ByO5UwWqxuag
 
-https://zhuanlan.zhihu.com/p/54493905
+史上最牛逼的文科生：学历史成为物理学家，却获得了数学界的最高荣誉，出了350部书，外号火星人！（Edward Witten）
 
-PC和BIOS的故事
+https://mp.weixin.qq.com/s/5p5ai_HKZMvbQ9Inu6ASbA
 
-https://mp.weixin.qq.com/s/iod5Jok3Zfcn4yrGByZQQQ
+史上最硬核老师：17年间，拿着菜刀把400个混混送进了哈佛耶鲁麻省！（Jaime Escalante）
 
-索尼的古董
+https://mp.weixin.qq.com/s/vLqJIaTXOkz0kYJzKguQaQ
 
-https://mp.weixin.qq.com/s/CxTr4MFVoRFxyCn-x_z8dQ
+99%的数学家都算不出这道题（亲和数）
 
-奇梦达的前世今生
+https://mp.weixin.qq.com/s/ULzU9gwU-X6oSMM4mv5xhA
 
-https://mp.weixin.qq.com/s/TZcVR0wW2LM_bCvB0a88pA
+两次入狱，数次移民，从罗马尼亚地下党到卡耐基梅隆教授—整数规划奠基者Egon Balas的彪悍人生
 
-中国芯片完整发展历程
+https://mp.weixin.qq.com/s/NX0j_CgBqalBMVVdRkG59g
 
-https://mp.weixin.qq.com/s?__biz=MzAxOTIxNTg0Mg==&mid=2651001664&idx=1&sn=d7fe10c74feb5eb84c45a0381372c1d3
+数学界再出变态神人！竟用一个比基尼方程，暴力吊打美国数学家！（沙发问题）
 
-国产芯片·大阅兵
+https://mp.weixin.qq.com/s/H1fvyQYRFcOe0pqclD-3yg
 
-https://mp.weixin.qq.com/s/MzQyu5uqqIEYn-DwxNU50Q
+“最大数之父”葛立恒逝世，他是20世纪数学巨匠，也是一个杂技演员
 
-珠海芯片公司江湖
+https://mp.weixin.qq.com/s/rXbP1dvFmwl6QhVCDMr2Bw
 
-https://mp.weixin.qq.com/s/O4hARQmcBDolt3THeoSwkg
+神童、数学家、抑郁症患者，控制论之父诺伯特·维纳的一生
 
-昙花一现的“图文电视”
+https://mp.weixin.qq.com/s/htCZU2de_7CCcL1q4v-NGg
 
-https://mp.weixin.qq.com/s/OTGy5a-hfxxp19TeJWyIyQ
+比肩爱因斯坦的天才：如果再给他一次机会，他可能不会再熬夜了......（麦克斯韦）
 
-爬取6271家死亡公司数据，看十年创业公司消亡史
+https://mp.weixin.qq.com/s/BCszlYgbgvKUSkpJCSRQxg
 
-https://mp.weixin.qq.com/s/HLfCV1EZaj7Bwfex8fajow
+电影院今天复工，应该如何排座位？这是个数学家研究了几百年的问题
 
-Arm传奇
+https://mp.weixin.qq.com/s/R0nuIqlIefkEppr07Y8gnQ
 
-https://mp.weixin.qq.com/s/QZOPuMlmW47EsrvcYgla7Q
+用一中学数学公式，中了14次彩票头奖，多国彩票规则因他改变
 
-Arm服务器芯片编年史
+https://mp.weixin.qq.com/s/FCysnxxWBFiGS027qCxHTw
 
-https://mp.weixin.qq.com/s/EsrXYg3Il8R96MJmqsx6fQ
+世界上最伟大的十大公式
 
-盘点半导体制造业60年最重要的发明
+https://www.zhihu.com/question/20866833
 
-https://mp.weixin.qq.com/s/kns2pGuqU8ifcNz7CpZoEg
+为什么正多面体只有5种？
 
-影响半导体发展进程的六个华人
+https://mp.weixin.qq.com/s/qfbfzToypKTxh7CxJ0ifHw
 
-https://mp.weixin.qq.com/s/aLkbYlLvVWyYdK8iiL45Pw
+正十二面体的一个最基本谜题被破解了
 
-芯片设计的起源（Lynn Conway）
+https://mp.weixin.qq.com/s/uptfQb8ELfpb5P4ySvofpg
 
-https://mp.weixin.qq.com/s/_YTvP1MN0HXzOY0XJ1Ri3Q
+一个被我们“嫌弃”了23年的数学天才，累死才知道他的价值（陆家羲）
 
-1976-2021 45年苹果电脑CPU之变迁
+https://mp.weixin.qq.com/s/wMARrGbRanB2T0NIxISspA
 
-https://mp.weixin.qq.com/s/fUl-YjMlfZs9XXZ1W4DFBQ
+有趣的数学可视化
 
-GPU历史系列（一）：故事从19世纪70年代讲起
+https://mp.weixin.qq.com/s/T6ukSjODiTgC1T4pCZCY9g
 
-https://mp.weixin.qq.com/s/QuvpUYNhmf3htl0ea9TT8Q
+2，29，541，7919，104729……（素数的故事）
 
-GPU历史系列（二）：改变游戏规则的3Dfx Voodoo
+https://mp.weixin.qq.com/s/YD6fnPYkqXwxTISjN99JxQ
 
-https://mp.weixin.qq.com/s/BisVJ3VDxcUpSMyoGmQicw
+美国数学能出很厉害的大神，为什么学的却比我们简单？看了他们的黑历史就明白了……
 
-GPU历史系列（三）：Nvidia一统江湖
+https://mp.weixin.qq.com/s/y9EZdU5hif1WT2t9fpSnFw
 
-https://mp.weixin.qq.com/s/5ahh8EihTefzMmCGSwmwHw
+他是20世纪最伟大的数学家之一，但这个人却并不存在（尼古拉·布尔巴基）
 
-GPU历史系列（四）：通用GPU的来临
+https://mp.weixin.qq.com/s/ff1CPp3VyNvqZUq6aiZYng
 
-https://mp.weixin.qq.com/s/bdfYwgfu8iDo00Qfbp0tsA
-
-Arm芯片三十五年
-
-http://vga.zol.com.cn/341/3419805.html
-
-末日将至 看天堂里我们能用的显卡品牌
-
-https://view.inews.qq.com/a/TEC201904280033680A
-
-手机基带芯片往事：欧洲退出竞争，全球只剩五名玩家
-
-https://mp.weixin.qq.com/s/L6VeZb79-8EU0NywtKd83w
-
-日韩科技战争简史：究竟谁是芯片、半导体、屏幕之王？
-
-https://mp.weixin.qq.com/s/5DA6XFowp0uqdzb52dEGag
-
-台湾处理器拾遗：超级抠门的Centaur造就了威盛x86
-
-https://mp.weixin.qq.com/s/p53CYTdKO-s0Zx-ljeMryA
-
-台湾处理器拾遗（下）：唯偏执狂得以幸存，但却不会带来成功
-
-https://mp.weixin.qq.com/s/KPMhTztucDyGTa4Dl74lUA
-
-谁发明了物联网？
-
-https://mp.weixin.qq.com/s/iMsfYla9UCaU4iYkIgpd9A
-
-从再版游戏机看半导体发展的三十年
-
-https://mp.weixin.qq.com/s/Ud4f5L2tYNbP1oURVBszag
-
-俄罗斯自研Elbrus CPU参数曝光，CEO年近九旬仍未退休
-
->Boris Babayan，1933年生，俄罗斯科学院院士，Intel院士。俄罗斯CPU之父。
-
-https://mp.weixin.qq.com/s/0_8a_kRBntbav4HPSqFLiA
-
-ASML的“三兄弟”往事
-
-https://mp.weixin.qq.com/s/AvDIxGUgrB88HOFaIkqWaw
-
-台积电等三巨头投资ASML的真相
-
-https://mp.weixin.qq.com/s/nQJV-dcNf3YYlC-6Jvv9SQ
-
-从孤芳自赏到流芳百世，充满传奇对后世影响深远的Alpha处理器
-
-https://mp.weixin.qq.com/s/wFw03-uf7qCz7TNkFWqaBw
-
-硬核还原：显微镜手撸晶体管，逆向工程还原经典计算器
+广州人都不敢吃的大鹅！它每一次出现，都会发生大事（黑天鹅事件）

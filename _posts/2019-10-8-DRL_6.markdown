@@ -69,9 +69,13 @@ MuZero是DeepMind 2019年11月的作品。
 
 https://github.com/AppliedDataSciencePartners/DeepReinforcementLearning
 
+2020.12，MuZero登上了Nature，算是炒了回冷饭。。。
+
 ### 基本结构
 
 MuZero在不具备任何底层动态知识的情况下，通过结合基于树的搜索和学得模型，在Atari 2600游戏中达到了SOTA表现，在国际象棋、日本将棋和围棋的精确规划任务中可以匹敌AlphaZero，甚至超过了提前得知规则的围棋版AlphaZero。
+
+![](/images/img4/MuZero.png)
 
 传统方法的局限：
 
@@ -196,6 +200,10 @@ https://mp.weixin.qq.com/s/IcaxjdDLjihCK-nKBlJVWg
 https://mp.weixin.qq.com/s/BWWCqAoSRkNAWXMiTOFhAA
 
 DeepMind推出Agent57，在所有雅达利游戏上超越人类玩家
+
+https://mp.weixin.qq.com/s/CvkIFuLTBDW0L8A9rJL7Ng
+
+新算法MuZero登顶Nature，AI离人类规划又近了一步
 
 ## Leela Zero
 

@@ -321,21 +321,3 @@ ActiveMQ 是Apache出品，最流行的，能力强劲的开源消息总线。
 http://blog.csdn.net/jiuqiyuliang/article/details/46701559
 
 深入浅出JMS(一)--JMS基本概念
-
-# 电子科技史+++
-
-https://mp.weixin.qq.com/s/E9Q1ceL9lZ7CkoDT61ioMg
-
-贝尔实验室的百年沉浮
-
-https://mp.weixin.qq.com/s/ZWn4k8AoT63Lgl77SxzQow
-
-英特尔史上最强的竞争对手，不是AMD！
-
-https://mp.weixin.qq.com/s/TLe6qAAxWJZnKUXo6EGp5g
-
-上海滩无线和芯片30年史
-
-https://mp.weixin.qq.com/s/CWCPmfLrh3FY2VtpmiWJug
-
-揭秘GPS背后的“隐藏人物”！从小乡村到海军基地，这位女程序员把“地球”带进日常（Gladys West）

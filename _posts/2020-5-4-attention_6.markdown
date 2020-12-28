@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（六）——Transformer进阶, Attention进阶
+title:  Attention（六）——Transformer进阶
 category: Attention 
 ---
 

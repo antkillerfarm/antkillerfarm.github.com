@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度强化学习（八）——StarCraft & AI, AlphaStar, Dota 2, DRL参考资源（1）
+title:  深度强化学习（八）——StarCraft & AI, AlphaStar, Dota 2
 category: DRL 
 ---
 
@@ -164,6 +164,10 @@ AlphaStar
 https://zhuanlan.zhihu.com/p/97720096
 
 浅谈AlphaStar
+
+https://mp.weixin.qq.com/s/R4RXxLan7H2sCbBrKqyH6w
+
+基于多智能体强化学习的《星际争霸II》中大师级水平的技术研究
 
 ## 启元世界
 

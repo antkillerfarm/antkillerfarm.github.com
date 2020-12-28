@@ -73,6 +73,8 @@ VMware是独立的第三方软件，而**KVM**作为一项虚拟化技术已经�
 
 **超轻虚拟化**将虚拟化技术的强隔离性和容器技术的轻量性进行融合，提出了一个microVM的概念，底层通过KVM虚拟化技术实现各个microVM的强隔离，而隔离的虚拟机中运行的是一个个精简版的微型操作系统，砍掉了大量无用的功能，专为容器设计的微型OS。
 
+![](/images/img3/bare_metal.png)
+
 参考：
 
 https://mp.weixin.qq.com/s/Zmu57U-HlPsyby_qvHSVHQ
@@ -82,6 +84,10 @@ VMware/KVM/Docker原来是这么回事儿
 https://mp.weixin.qq.com/s/dTygs-QirMgxIrV7SaqjUg
 
 硬件隔离与软件虚拟化
+
+https://mp.weixin.qq.com/s/WZyuTtEfaTFLnCfvhOrp7g
+
+虚拟化原理和分类
 
 ## 使用
 
@@ -246,6 +252,10 @@ https://mp.weixin.qq.com/s/IKgzQwjTW21XUXMbgCmYyA
 https://cloud.tencent.com/developer/article/1518465
 
 容器生命周期管理
+
+https://www.cnblogs.com/clsn/p/8410309.html
+
+Docker容器入门
 
 # Android研究
 

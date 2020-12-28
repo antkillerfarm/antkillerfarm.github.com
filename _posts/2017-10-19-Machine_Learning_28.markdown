@@ -327,7 +327,7 @@ https://zhuanlan.zhihu.com/p/259710601
 
 数据类别不平衡/长尾分布？不妨利用半监督或自监督学习
 
-# Loss function详解+++
+# Loss function详解+
 
 https://mp.weixin.qq.com/s/LOewKsxtWm7dFJS6ioryuw
 

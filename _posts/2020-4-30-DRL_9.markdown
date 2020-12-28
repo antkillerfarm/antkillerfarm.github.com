@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度强化学习（九）——DRL参考资源（2）
+title:  深度强化学习（九）——DRL参考资源（1）
 category: DRL 
 ---
 

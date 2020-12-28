@@ -63,6 +63,10 @@ https://zhuanlan.zhihu.com/p/58806183
 
 深度学习的分布和并行处理系统
 
+https://andrew.gibiansky.com/blog/machine-learning/baidu-allreduce/
+
+Bringing HPC Techniques to Deep Learning
+
 https://zhuanlan.zhihu.com/p/56991108
 
 一文说清楚Tensorflow分布式训练必备知识
@@ -364,27 +368,3 @@ Ring All-reduce: 分布式深度学习的巧妙同步
 https://zhuanlan.zhihu.com/p/28226956
 
 浮点峰值那些事儿
-
-https://zhuanlan.zhihu.com/p/285994980
-
-针对深度学习的GPU共享
-
-https://mp.weixin.qq.com/s/Np4w7RC2JFlB7ZGIduu71w
-
-爱奇艺机器学习平台的建设实践
-
-https://mp.weixin.qq.com/s/9k6PDusoDHjmz58HAZxZcw
-
-GPipe: 小批量流水线带来的大模型训练
-
-https://mp.weixin.qq.com/s/DwjvEn04lGzKU8mDu-5q4g
-
-大幅提升训练性能，字节跳动与清华提出新型分布式DNN训练架构
-
-https://mp.weixin.qq.com/s/dJa5zOXgJJQOM5uWog3JZA
-
-Local Parallesim：一种新并行训练方法
-
-https://zhuanlan.zhihu.com/p/335116835
-
-推荐系统Serving架构分析

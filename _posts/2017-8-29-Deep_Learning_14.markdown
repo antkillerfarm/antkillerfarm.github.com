@@ -117,6 +117,10 @@ http://www.jianshu.com/p/d77b6273b990
 
 论文中文版
 
+https://mp.weixin.qq.com/s/EOuuW5R1_4RU-mabSJeKWQ
+
+Instance Norm梯度公式推导
+
 ## 再看Batch Normalization
 
 ![](/images/img2/BN.jpg)

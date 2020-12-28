@@ -323,72 +323,80 @@ https://mp.weixin.qq.com/s/o129MwpGzx8tzjUCkz1npw
 
 使用CatBoost和NODE建模表格数据对比测试
 
-# Attention进阶+++
+# Loss function详解+
 
-https://zhuanlan.zhihu.com/p/151640509
+https://mp.weixin.qq.com/s/CPfhGxig9BMAgimBSOLy3g
 
-注意力机制在推荐系统中的应用
+用于图像检索的等距离等分布三元组损失函数
 
-https://mp.weixin.qq.com/s/-SU5cNbklI31WLmTawZJIQ
+https://www.zhihu.com/question/375794498
 
-自注意模型学不好？这个方法帮你解决！
+深度学习的多个loss如何平衡？
 
-https://mp.weixin.qq.com/s/K5EbO0djcXHN4K5LQiMh5g
+https://mp.weixin.qq.com/s/tzY_lG0F9dP5Q-LmwuHLmQ
 
-Triplet Attention机制让Channel和Spatial交互更加丰富
+常见损失函数和评价指标总结
 
-https://mp.weixin.qq.com/s/C4f0N_bVWU9YPY34t-HAEA
+https://mp.weixin.qq.com/s/lw9frtqocqsS-q2KGfzO1Q
 
-UNC&Adobe提出模块化注意力模型MAttNet，解决指示表达的理解问题
+深入理解计算机视觉中的损失函数
 
-https://mp.weixin.qq.com/s/V3brXuey7Gear0f_KAdq2A
+https://mp.weixin.qq.com/s/_HQ5an_krRCYMVnwEgGJow
 
-基于注意力机制的交易上下文感知推荐，悉尼科技大学和电子科技大学最新工作
+深度学习的多个loss如何平衡 & 有哪些“魔改”损失函数，曾经拯救了你的深度学习模型？
 
-https://mp.weixin.qq.com/s/2gxp7A38epQWoy7wK8Nl6A
+https://blog.csdn.net/shanglianlm/article/details/85019768
 
-谷歌翻译最新突破，“关注机制”让机器读懂词与词的联系
+十九种损失函数
 
-https://zhuanlan.zhihu.com/p/25928551
+https://mp.weixin.qq.com/s/8oKiVRjtPQIH1D2HltsREQ
 
-用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践
+图像分割损失函数最全面、最详细总结
 
-https://mp.weixin.qq.com/s/l4HN0_VzaiO-DwtNp9cLVA
+https://zhuanlan.zhihu.com/p/158853633
 
-循环注意力区域实现图像多标签分类
+一文理解Ranking Loss/Margin Loss/Triplet Loss
 
-https://mp.weixin.qq.com/s/zhZLK4pgJzQXN49YkYnSjA
+https://zhuanlan.zhihu.com/p/235533342
 
-自适应注意力机制在Image Caption中的应用
+目标检测：Loss整理
 
-https://mp.weixin.qq.com/s/uvr-G5-_lKpyfyn5g7ES0w
+https://zhuanlan.zhihu.com/p/191355122
 
-基于注意力机制，机器之心带你理解与训练神经机器翻译系统
+NLP样本不均衡之常用损失函数对比
 
-https://mp.weixin.qq.com/s/ANpBFnsLXTIiW6WHzGrv2g
+https://mp.weixin.qq.com/s/KL_D8pWtcXCJHz7dd70jyw
 
-自注意力机制学习句子embedding
+Face Recognition Loss on Mnist with Pytorch
 
-https://mp.weixin.qq.com/s/49fQX8yiOIwDyof3PD01rA
+https://zhuanlan.zhihu.com/p/77686118
 
-CMU&谷歌大脑提出新型问答模型QANet：仅使用卷积和自注意力，性能大大优于RNN
+机器学习常用损失函数小结
 
-https://mp.weixin.qq.com/s/c64XucML13OwI26_UE9xDQ
+https://zhuanlan.zhihu.com/p/38855840
 
-滴滴披露语音识别新进展：基于Attention显著提升中文识别率
+SphereReID：从人脸到行人，Softmax变种效果显著
 
-https://mp.weixin.qq.com/s/7OYY3L7gL4wVv_EjoosOHA
+https://mp.weixin.qq.com/s/ZoLO6OilivPgle03KdNzCQ
 
-如何增强Attention Model的推理能力
+人脸识别中Softmax-based Loss的演化史
 
-https://mp.weixin.qq.com/s/9Kt6_DfeYRnhsb10aCSFGw
+https://mp.weixin.qq.com/s/DwtA6GivVCDvL4MXNDBFWg
 
-FAGAN：完全注意力机制（Full Attention）GAN，Self-attention+GAN
+阿里巴巴提出DR Loss：解决目标检测的样本不平衡问题
 
-https://mp.weixin.qq.com/s/lZOIK5BRXZrmL_Z9crl6sA
+https://zhuanlan.zhihu.com/p/145927429
 
-机器翻译新突破！“普适注意力”模型：概念简单参数少，性能大增
+DR Loss
 
-https://mp.weixin.qq.com/s/jRfOzKO6OlQLokIzipbqUQ
+https://mp.weixin.qq.com/s/x0aBo-w669_2FyCGKWJ4iQ
 
-为什么使用自注意力机制？
+理解计算机视觉中的损失函数
+
+https://mp.weixin.qq.com/s/UjBCjwNDIxDoAoyQAf8V6A
+
+旷视研究院提出Circle Loss，革新深度特征学习范式
+
+https://mp.weixin.qq.com/s/5RpbXzuHp_tR6C_nBdiXGA
+
+Circle Loss：从统一的相似性对的优化角度进行深度特征学习

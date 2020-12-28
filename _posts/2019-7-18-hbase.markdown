@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Hbase
+title:  Hbase, 多维数组的行优先和列优先
 category: AI 
 ---
 
@@ -196,116 +196,63 @@ https://mp.weixin.qq.com/s/vyF0VAF8xjEWrBnS1_DtkA
 
 用HBase做高性能键值查询？
 
-# Python++
+# 多维数组的行优先和列优先
 
-https://mp.weixin.qq.com/s/Bllw4rSkxd378LLUCh6oJA
+这里以numpy为工具，介绍一下多维数组的行优先和列优先的概念。
 
-Python炫技操作：合并字典的七种方法
+首先我们生成一个3x4的数组：
 
-https://mp.weixin.qq.com/s/KrdXyYMtyElUGuPH5eNYvg
+`arr = np.arange(12).reshape(3,4)`
 
-Python的深浅拷贝讲解
+它的形状是这样的：
 
-https://mp.weixin.qq.com/s/DMK3gwMKbpsfOrWMxjb5lg
+![](/images/article/arr_3x4.png)
 
-不到20行代码，用Python做一个智能聊天机器人
+如果我们按照C语言的方式存储它，也就是行优先存储的话，那么在内存中，它的形状是这样的：
 
-https://mp.weixin.qq.com/s/wIXCIMzZmh75SV-qJIKbCw
+![](/images/article/arr_3x4_C.png)
 
-Python程序员最常犯的10个错误，你中招了吗？
+这种存储方式又被称作C contiguous array。
 
-https://mp.weixin.qq.com/s/W1j4G_QQqlzDYru231dZFA
+另一派存储方式，也就是列优先存储，它的代表是Fortran语言。上面的数组在内存中的形状就是这样的了：
 
-Python：编写条件分支代码的技巧
+![](/images/article/arr_3x4_Fortran.png)
 
-https://mp.weixin.qq.com/s/ST7TQ5Wkn_owv5bpTiTKVA
+这种存储方式又被称作Fortran contiguous array。
 
-2018年最好用的5个python网站开发框架
+上述描述也可用下图表示：
 
-https://mp.weixin.qq.com/s/dmJI2GlzgUJgYllfVOPt4g
+![](/images/img2/Row_and_column_major_order.png)
 
-两句话轻松掌握Python最难知识点
+numpy对这两种方式都支持，而且还巧妙的利用了两者之间的差异，对运算进行了简化。
 
-https://mp.weixin.qq.com/s/PkzD1ig_D5AIUTkO5zH8pQ
+`arr2 = arr.T`
 
-Python字节码介绍
+比如上述转置操作，你以为numpy真的做了转置运算吗？其实不然。
 
-https://mp.weixin.qq.com/s/_ZvF6jK5Jo4rFGwHvEoAig
+```python
+>>>arr.flags.f_contiguous
+False
+>>>arr2.flags.f_contiguous
+True
+```
 
-一文读懂Python装饰器由来
+看到没，这里仅仅设置了一个标志而已。
 
-https://mp.weixin.qq.com/s/RdnAQPAn9E8qDvtnCEgcKw
+C和Fortran的这种差异，实际上是上世纪60年代，两大IT巨头AT&T和IBM之间战争的结果，并深远的影响了后来的软件。比如在通用计算领域，主要采用C格式，而数值计算领域，则多采用Fortran格式。
 
-Tkinter可视化窗口
+典型的例子是Matlab。它最早是作为一些Fortran数学库的封装而存在的，因此很自然的采用了Fortran格式。OpenGL、OpenVX之类的接口，实际上也沿袭了这种路径依赖。
 
-https://mp.weixin.qq.com/s/-erFsz8NvLZ5mOIXyDosFg
+Fortran作为最早的高级语言（1957年），至今仍有很强的生命力，这主要归功于：
 
-使用PyInstaller将python转成可执行文件exe笔记
+1.对数组、复数等数值计算的原生支持。这些语法糖，对于非程序员的科技人员很友好。
 
-https://mp.weixin.qq.com/s/EZh5PAUgXkIDzGbim6wqLQ
+2.没有指针等复杂特性。这一点既降低了上手的门槛，又对于编译器优化（尤其是现在比较流行的并行计算优化）很有好处。普通科技人员即使没有经过特殊的程序训练，也可以写出非常高效的程序。
 
-用Python带你看白雪飘扬~
+对于同样的内存布局，我们只需要颠倒下标就可以进行行/列优先的转换：
 
-https://mp.weixin.qq.com/s/SUyRNz_M7B6bcdV7-YxlZQ
+例如Caffe的默认格式是: NCHW，行优先。
 
-Python制作一款简易音乐播放器
+而OpenVX是：WHCN，列优先。
 
-https://mp.weixin.qq.com/s/d2_MTvfbOFZmppej5UOwUw
-
-关于使用Python析构函数的正确姿势
-
-https://mp.weixin.qq.com/s/_PtdgGElw0mvr_rRm5xrCg
-
-Python性能优化的20条招数
-
-https://mp.weixin.qq.com/s/0Rpbuo7LCRo1SnbE8NcH4Q
-
-快速学习Python的全套14张思维导图
-
-https://mp.weixin.qq.com/s/Cujl2nxITCuZL7B72uKVrQ
-
-为什么Python这么慢？
-
-https://mp.weixin.qq.com/s/a3YTmQMfpnviHnidXrhYtg
-
-这17个骚操作你都Ok吗
-
-https://zhuanlan.zhihu.com/p/41293278
-
-把python翻译成C++
-
-https://mp.weixin.qq.com/s/XV4LOBM1pO0N8oShZl7MzQ
-
-手把手教你用Python设计一个命令行界面
-
-https://mp.weixin.qq.com/s/b19SLduKoiOIeE5CA3ZOjg
-
-Python标准库之LRU缓存实现学习
-
-https://mp.weixin.qq.com/s/zABXQksUX6le8zWJeWUQXw
-
-Python的`__name__`变量，到底是个什么东西？
-
-https://mp.weixin.qq.com/s/FtlAkInyXgvUxDnSCikTIw
-
-全面深入理解Python面向对象编程
-
-https://blog.csdn.net/lys_828/article/details/106489371
-
-字符串模糊匹配及在实战中的应用（FuzzyWuzzy库）
-
-https://mp.weixin.qq.com/s/Ln5EPqbdNjy3HrVM7Wwe2g
-
-Heartrate：一个牛逼的工具，Python执行实时可视化
-
-https://mp.weixin.qq.com/s/J8IHOdUevyn9YS09D8Ou-g
-
-聊聊Python发送邮件的几种方式
-
-https://mp.weixin.qq.com/s/L0FoYh1npy-3rwRQWcj71g
-
-五大自动化测试的Python框架
-
-https://mp.weixin.qq.com/s/Oq316PWN10FBWzv-X26pAg
-
-高性能Python CPU Memery分析器
+两者在内存中的布局是完全相同的。

@@ -357,33 +357,3 @@ https://mp.weixin.qq.com/s/EICefFM3dfv5A6V9kVqGWw
 https://mp.weixin.qq.com/s/NlJ4-b5SjIjPGgvLUuSxFw
 
 孩子，有时候并不是生活欺骗了你，而是你可能还不懂概率统计……
-
-# Loss function详解++
-
-https://zhuanlan.zhihu.com/p/38855840
-
-SphereReID：从人脸到行人，Softmax变种效果显著
-
-https://mp.weixin.qq.com/s/ZoLO6OilivPgle03KdNzCQ
-
-人脸识别中Softmax-based Loss的演化史
-
-https://mp.weixin.qq.com/s/DwtA6GivVCDvL4MXNDBFWg
-
-阿里巴巴提出DR Loss：解决目标检测的样本不平衡问题
-
-https://zhuanlan.zhihu.com/p/145927429
-
-DR Loss
-
-https://mp.weixin.qq.com/s/x0aBo-w669_2FyCGKWJ4iQ
-
-理解计算机视觉中的损失函数
-
-https://mp.weixin.qq.com/s/UjBCjwNDIxDoAoyQAf8V6A
-
-旷视研究院提出Circle Loss，革新深度特征学习范式
-
-https://mp.weixin.qq.com/s/5RpbXzuHp_tR6C_nBdiXGA
-
-Circle Loss：从统一的相似性对的优化角度进行深度特征学习

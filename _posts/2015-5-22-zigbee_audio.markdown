@@ -265,25 +265,3 @@ https://mp.weixin.qq.com/s/rM3SkUiQIxsGz9MNIg1skQ
 https://zhuanlan.zhihu.com/p/301860804
 
 如何把树莓派400打造成小霸王游戏机，Retropie包含上万经典老游戏
-
-# Python++++
-
-https://mp.weixin.qq.com/s/5xs1ivkrUAP_Rr9P-EMc5g
-
-代码优化指南：人生苦短，我用Python。这篇blog主要介绍了如何追踪Python脚本的CPU使用情况。
-
-https://mp.weixin.qq.com/s/HGH2e_0ocHv2VWsjOje9BQ
-
-程序员必知的Python陷阱与缺陷列表
-
-http://blog.csdn.net/linda1000/article/details/8315892
-
-单引号、双引号和三双引号的区别
-
-https://mp.weixin.qq.com/s/czqO4Lo1Jt9zqg2UKNlLYg
-
-手把手教你用Python创建微信聊天机器人
-
-https://mp.weixin.qq.com/s/nNGTVQDt9TxHeIKOyxh1Jw
-
-WTF Python：盘点鲜为人知的Python特性

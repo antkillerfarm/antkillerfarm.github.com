@@ -443,31 +443,3 @@ PC上搭建Objective-C（以下简称OC）开发环境，主要借助GNUstep开�
 2.设置环境变量。
 
 `GNUSTEP_MAKEFILES=/usr/share/GNUstep/Makefiles`
-
-# Python+++
-
-https://mp.weixin.qq.com/s/weEZEr4g8pI11Gijc-St0Q
-
-DeBug Python代码全靠print函数？换用这个一天2K+Star的工具吧
-
-https://mp.weixin.qq.com/s/wr18ylCJyJOX83BhbvGXng
-
-13个Python开发者必知的Python GUI库
-
-https://mp.weixin.qq.com/s/S_mIspLOrmj8ny0VHP52ZA
-
-Python高级技巧：lazy property
-
-https://mp.weixin.qq.com/s/QWH9qhKzECX-1rqDLfZyhw
-
-如何加速Python代码？
-
-https://mp.weixin.qq.com/s/OT9yRMFsNowXBbwKqmzP-Q
-
-一起来尝试借助哈密顿环自动玩贪吃蛇小游戏呀~
-
-哈密顿图：由指定的起点前往指定的终点，途中经过所有其他节点且只经过一次。
-
-https://segmentfault.com/a/1190000000414339
-
-一行Python代码实现并行

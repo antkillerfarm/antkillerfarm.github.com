@@ -391,6 +391,10 @@ https://mp.weixin.qq.com/s/KhtVET6AAhYWWefBnvis2Q
 
 Word自动化排版画图
 
+https://mp.weixin.qq.com/s/RLJAHQAheqrf8i-c8QtDtw
+
+Jupyter Notebooks嵌入Excel并使用Python替代VBA宏
+
 ## python执行shell脚本
 
 示例：

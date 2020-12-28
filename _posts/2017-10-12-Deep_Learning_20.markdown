@@ -228,3 +228,7 @@ OpenCV实现视频稳流
 https://mp.weixin.qq.com/s/Wn5k0VoscaiIHHC36_Jm2g
 
 视频目标检测大盘点
+
+https://mp.weixin.qq.com/s/1DA5KoqDskD-tk2Co8n0nQ
+
+阿里-优酷视频增强和超分辨率挑战赛冠军方案：VESR-Net
