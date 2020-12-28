@@ -312,3 +312,7 @@ https://mp.weixin.qq.com/s/Qld7bVs9ASJ23vAhE0h7_w
 https://cooltowel.github.io/2018/04/16/%E5%9B%BD%E9%99%85%E5%A4%A9%E7%90%83%E5%8F%82%E8%80%83%E7%B3%BB%E7%BB%9F%E2%80%94%E2%80%94ICRS%20%E7%AE%80%E4%BB%8B/
 
 国际天球参考系统——ICRS简介
+
+https://mp.weixin.qq.com/s/hBAWo8Zsgjm0svYv_UG1jw
+
+一场历经数百万年的瘦身记

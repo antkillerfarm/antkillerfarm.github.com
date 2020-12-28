@@ -9,6 +9,40 @@ category: language
 
 # Python
 
+## PLY
+
+Python Lex-Yacc是一个python版本的lex/yacc实现。
+
+官网：
+
+http://www.dabeaz.com/ply/
+
+参考：
+
+https://blog.csdn.net/feixiaoxing/article/details/79123776
+
+python编程（ply库）
+
+https://blog.csdn.net/chosen0ne/article/details/8077880
+
+Python语法解析器PLY——lex and yacc in Python
+
+## JPype
+
+JPype是一个能够让python代码方便地调用Java代码的工具。官网：
+
+https://sourceforge.net/projects/jpype/
+
+参考：
+
+http://blog.csdn.net/niuyisheng/article/details/9002926
+
+JPype：实现在python中调用JAVA
+
+http://www.cnblogs.com/yu-zhang/p/3817024.html
+
+python调用java程序--jpype
+
 ## SWIG
 
 Simplified Wrapper and Interface Generator可以为C/C++的库生成其他高级脚本语言的Wrapper。
@@ -395,22 +429,6 @@ https://mp.weixin.qq.com/s/RLJAHQAheqrf8i-c8QtDtw
 
 Jupyter Notebooks嵌入Excel并使用Python替代VBA宏
 
-## python执行shell脚本
-
-示例：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/misc/hello_cmd.py
-
-需要注意的是`shell`这个选项是有讲究的。
-
-`shell=True`:
-
-`args = ["ls -al ."]`
-
-`shell=False`:
-
-`args = ["ls","-al","."]`
-
 ## SCons
 
 blade的底层用到了SCons。后者是一个python语言写的构建工具，可用于多种编程语言程序的构建。
@@ -448,33 +466,3 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/scons
 https://www.ibm.com/developerworks/cn/linux/l-cn-scons/
 
 使用SCons轻松建造程序
-
-## 参考
-
-https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA
-
-Python学习思维导图
-
-https://mp.weixin.qq.com/s/_OmRvwFmvuuOpBf7DQG8IA
-
-Python30个编程技巧
-
-https://mp.weixin.qq.com/s/Y3ZV3phzkPGxHIvoT8Ez7Q
-
-53个Python经典面试题详解
-
-https://github.com/leisurelicht/wtfpython-cn
-
-《What the f*ck Python!》中文版
-
-https://mp.weixin.qq.com/s/FbMvWgVf1rYtWH4cwYarIg
-
-140种Python标准库、第三方库和外部工具都有了
-
-https://mp.weixin.qq.com/s/O5okcuVKuf339BZzhmxiew
-
-13个Python GUI库
-
-https://mp.weixin.qq.com/s/hIMwss4h5k10oLanCYYS1g
-
-49个Python学习资源

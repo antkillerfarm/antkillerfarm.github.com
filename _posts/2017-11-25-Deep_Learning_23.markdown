@@ -203,6 +203,10 @@ https://zhuanlan.zhihu.com/p/30893160
 
 CVPR2017 Image Caption有关论文总结
 
+https://mp.weixin.qq.com/s/4IX6vc0Fk9TPofhTI5Gi-Q
+
+从视觉到文本: 图像描述生成的研究进展综述
+
 https://mp.weixin.qq.com/s/3l4mYVSVfjFS_06j3OvX8g
 
 阿里提出新图像描述框架，解决梯度消失难题

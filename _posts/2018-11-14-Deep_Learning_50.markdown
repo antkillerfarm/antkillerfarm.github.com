@@ -307,6 +307,10 @@ https://mp.weixin.qq.com/s/9zaTjwwGPHHzSv1ZmHf8_g
 
 不妨试试MoCo，来替换ImageNet上pretrain模型！
 
+https://mp.weixin.qq.com/s/S5rNebrB8zpILZ1j_d-29Q
+
+深度视觉模型设计，还有哪些新思路？
+
 # AI前沿
 
 人工智能前沿7大热点：
@@ -396,37 +400,3 @@ https://mp.weixin.qq.com/s/QklCVuukfElVDBFNxLXNKQ
 https://zhuanlan.zhihu.com/p/161058660
 
 ⾼维特征的哈希技巧
-
-# 姿态/行为检测进阶+
-
-https://mp.weixin.qq.com/s/-HEYU_El8xysk8atHYx1Mg
-
-基于3D行人姿态和步态预测的神经网络模型
-
-https://zhuanlan.zhihu.com/p/72561165
-
-重新思考人体姿态估计 Rethinking Human Pose Estimation
-
-https://mp.weixin.qq.com/s/8vdTlIe9LV88AVw9kAcVjA
-
-基于空间AdaIN的深度姿态迁移
-
-https://zhuanlan.zhihu.com/p/129279351
-
-X3D Facebook视频理解/行为识别新作
-
-https://zhuanlan.zhihu.com/p/149429010
-
-TAM: 针对动作识别的时序自适应模块
-
-https://mp.weixin.qq.com/s/skCOaKf9kRABTX7hkdjGXA
-
-谷歌极速人脸、手、人体姿态分析Blaze算法家族
-
-https://zhuanlan.zhihu.com/p/69042249
-
-2020 Pose Estimation人体骨骼关键点检测综述笔记
-
-https://zhuanlan.zhihu.com/p/164603050
-
-3D Pose Estimation关键点检测的算法整理（2020）

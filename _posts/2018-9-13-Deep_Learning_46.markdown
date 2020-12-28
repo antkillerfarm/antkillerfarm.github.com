@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十六）——OCR（2）, AI可解释性
+title:  深度学习（四十六）——OCR（2）, AI可解释性, 第四范式
 category: DL 
 ---
 
@@ -248,6 +248,28 @@ https://mp.weixin.qq.com/s/yzCTQvjeyyF2IFORzrTBVg
 https://mp.weixin.qq.com/s/gAidXX4YrezZcSa6Jpl8nQ
 
 万字长文概览深度学习的可解释性研究
+
+# 第四范式
+
+第一范式，是指以实验为基础的科学研究模式。例如以伽利略为代表的文艺复兴时期的科学发展初级阶段。
+
+第二范式，即理论研究为基础的科学研究模式。在这个阶段，科学家们会将无法用实验模拟的科学原理用模型简化，去掉一些复杂的因素，只留下关键因素，然后通过演算得到结论。例如，牛顿三大定律和爱因斯坦相对论。
+
+第三范式，即利用电子计算机对科学实验进行模拟仿真的模式。
+
+第四范式，数据密集型科学发现（Data-Intensive Scientific Discovery）。由James Gray于2007年提出。
+
+>James Gray，1944～2007，美国数据库专家。UCB博士（1969）。图灵奖得主（1998）。先后供职于IBM、Tandem Computers、DEC、MS等公司。提出了ACID、Two-tier transaction commit semantics、OLAP等概念。2007年独自驾船出海后失踪。
+
+参考：
+
+https://mp.weixin.qq.com/s/5U4iH1n3kqUCAodUVKGTNQ
+
+从经验到理论、从数据到网络——脑科学研究的四次范式转移
+
+https://zhuanlan.zhihu.com/p/30608976
+
+第四范式：大数据对于科研的意义
 
 # Graph NN+
 
