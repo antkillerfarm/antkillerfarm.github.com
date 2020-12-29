@@ -11,6 +11,8 @@ category: resource
 
 ## Cache（续）
 
+多核CPU多级缓存的一致性，一般由相关的一致性总线协议保证。这些协议包括：MSI、MESI和MOESI。
+
 https://mp.weixin.qq.com/s/cSu-P-aDSXH0CYLN2HNrxw
 
 深入理解Cache（上）
@@ -50,6 +52,10 @@ https://mp.weixin.qq.com/s/AekR-mv9EOD-4V5SKqI9YQ
 https://mp.weixin.qq.com/s/FY8sEX4acEUpCu_6ntArYw
 
 CPU缓存L1/L2/L3工作原理
+
+https://blog.csdn.net/ZoeyyeoZ/article/details/51804647
+
+MESI&MOESI协议
 
 ## Bélády's Algorithm
 
