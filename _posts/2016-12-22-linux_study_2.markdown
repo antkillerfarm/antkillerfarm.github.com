@@ -80,6 +80,16 @@ bashtop是一个用Bash编写的Linux资源监视器，可以显示处理器、�
 
 https://github.com/aristocratos/bashtop
 
+它还有一个python的版本：
+
+https://github.com/aristocratos/bpytop
+
+参考：
+
+https://mp.weixin.qq.com/s/3fNLa-yO4fUWO3nO9id1iA
+
+这款Python版终端资源监控器，火了！
+
 # 查看CPU核数
 
 复杂版：

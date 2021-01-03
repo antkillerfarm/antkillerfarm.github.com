@@ -227,6 +227,34 @@ https://mp.weixin.qq.com/s/BYbv5CB5_Va4bfFhvr6o1A
 
 # 机器人/无人驾驶参考资源+
 
+https://mp.weixin.qq.com/s/cLhnFCQdftj6Qi5j-PWDzw
+
+控制技术详解——控制理论
+
+https://mp.weixin.qq.com/s/N39CF1M7nV2cwUUMGRnG7g
+
+控制技术详解——基于模型的控制方法
+
+https://mp.weixin.qq.com/s/DrWeZOIhJV1dbpg7Ns6gJQ
+
+控制技术详解——控制器的类型
+
+https://mp.weixin.qq.com/s/Q4me1G9B8uwwRIr6dfETEA
+
+行为轨迹预测技术
+
+https://mp.weixin.qq.com/s/3ApXC3u13_O8s4QCYxldlQ
+
+基于模块化轻量级网络的道路目标检测
+
+https://mp.weixin.qq.com/s/kAP8MMjTjVyeBPcpY5E1FQ
+
+障碍物行为预测技术
+
+https://mp.weixin.qq.com/s/VwLNq84Nmg5--yTHlRdSJA
+
+深度学习在道路封闭挖掘方案的探索与实践
+
 https://mp.weixin.qq.com/s/sxm2cD7DAhJ6eIhUDvYRKA
 
 运动轨迹规划技术

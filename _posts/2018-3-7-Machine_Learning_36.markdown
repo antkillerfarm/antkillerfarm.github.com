@@ -187,6 +187,10 @@ https://mp.weixin.qq.com/s/d6sVDAKnaU97mAeDs_Gedg
 
 从零解读Xgboost(原理+代码)
 
+https://mp.weixin.qq.com/s/YunDfYPLywc0tMJF72YIAQ
+
+数据分析利器：XGBoost算法最佳解析
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。
@@ -322,81 +326,3 @@ https://mp.weixin.qq.com/s/pQ9_0d8sl5Sr5O360Risnw
 https://mp.weixin.qq.com/s/o129MwpGzx8tzjUCkz1npw
 
 使用CatBoost和NODE建模表格数据对比测试
-
-# Loss function详解+
-
-https://mp.weixin.qq.com/s/CPfhGxig9BMAgimBSOLy3g
-
-用于图像检索的等距离等分布三元组损失函数
-
-https://www.zhihu.com/question/375794498
-
-深度学习的多个loss如何平衡？
-
-https://mp.weixin.qq.com/s/tzY_lG0F9dP5Q-LmwuHLmQ
-
-常见损失函数和评价指标总结
-
-https://mp.weixin.qq.com/s/lw9frtqocqsS-q2KGfzO1Q
-
-深入理解计算机视觉中的损失函数
-
-https://mp.weixin.qq.com/s/_HQ5an_krRCYMVnwEgGJow
-
-深度学习的多个loss如何平衡 & 有哪些“魔改”损失函数，曾经拯救了你的深度学习模型？
-
-https://blog.csdn.net/shanglianlm/article/details/85019768
-
-十九种损失函数
-
-https://mp.weixin.qq.com/s/8oKiVRjtPQIH1D2HltsREQ
-
-图像分割损失函数最全面、最详细总结
-
-https://zhuanlan.zhihu.com/p/158853633
-
-一文理解Ranking Loss/Margin Loss/Triplet Loss
-
-https://zhuanlan.zhihu.com/p/235533342
-
-目标检测：Loss整理
-
-https://zhuanlan.zhihu.com/p/191355122
-
-NLP样本不均衡之常用损失函数对比
-
-https://mp.weixin.qq.com/s/KL_D8pWtcXCJHz7dd70jyw
-
-Face Recognition Loss on Mnist with Pytorch
-
-https://zhuanlan.zhihu.com/p/77686118
-
-机器学习常用损失函数小结
-
-https://zhuanlan.zhihu.com/p/38855840
-
-SphereReID：从人脸到行人，Softmax变种效果显著
-
-https://mp.weixin.qq.com/s/ZoLO6OilivPgle03KdNzCQ
-
-人脸识别中Softmax-based Loss的演化史
-
-https://mp.weixin.qq.com/s/DwtA6GivVCDvL4MXNDBFWg
-
-阿里巴巴提出DR Loss：解决目标检测的样本不平衡问题
-
-https://zhuanlan.zhihu.com/p/145927429
-
-DR Loss
-
-https://mp.weixin.qq.com/s/x0aBo-w669_2FyCGKWJ4iQ
-
-理解计算机视觉中的损失函数
-
-https://mp.weixin.qq.com/s/UjBCjwNDIxDoAoyQAf8V6A
-
-旷视研究院提出Circle Loss，革新深度特征学习范式
-
-https://mp.weixin.qq.com/s/5RpbXzuHp_tR6C_nBdiXGA
-
-Circle Loss：从统一的相似性对的优化角度进行深度特征学习

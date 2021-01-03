@@ -213,6 +213,10 @@ https://mp.weixin.qq.com/s/MZo3LFyzXp-qpi5jEOQS5Q
 
 FPT：又是借鉴Transformer，这次多方向融合特征金字塔
 
+https://mp.weixin.qq.com/s/N2PAgp-epq4i9CLll1nzJA
+
+华为联合北大、悉尼大学对Visual Transformer的最新综述
+
 # BERT进阶
 
 ## AR vs AE

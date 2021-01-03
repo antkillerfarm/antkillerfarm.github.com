@@ -175,36 +175,6 @@ MPS是jetbrains推出的用于构建DSL的工具。
 
 https://www.jetbrains.com/mps/
 
-# Pytorch++
-
-https://zhuanlan.zhihu.com/p/272767300
-
-Pytorch转ONNX-理论篇
-
-https://zhuanlan.zhihu.com/p/273566106
-
-Pytorch转ONNX-实战篇1（tracing机制）
-
-https://zhuanlan.zhihu.com/p/286298001
-
-Pytorch转ONNX-实战篇2（实战踩坑总结）
-
-https://mp.weixin.qq.com/s/xe5zmJklT2sqn_zffmyrLg
-
-Sharded:在相同显存的情况下使pytorch模型的参数大小加倍
-
-https://mp.weixin.qq.com/s/maOnO_o5y19X2D-ZnLjsJA
-
-PyTorch中的In-place操作是什么？为什么要避免使用这种操作？
-
-https://zhuanlan.zhihu.com/p/299736532
-
-使用PyTorch 1.6 for Android
-
-https://mp.weixin.qq.com/s/1ugk6uI6lfWEEUvtKIfYNA
-
-9个让PyTorch模型训练提速的技巧！
-
 # AutoDL++
 
 https://mp.weixin.qq.com/s/1XDknbIapmuQi5eb61Jlaw

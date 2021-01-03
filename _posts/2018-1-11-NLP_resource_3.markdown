@@ -11,6 +11,18 @@ category: resource
 
 ## 命名实体识别（续）
 
+https://mp.weixin.qq.com/s/5fl9jmEolYOxMjaMw746OQ
+
+基于深度学习的命名实体识别
+
+https://zhuanlan.zhihu.com/p/70618710
+
+初识NER
+
+https://mp.weixin.qq.com/s/yJC3NtD13LEVovDYK7-u1A
+
+命名实体识别难在哪？
+
 https://mp.weixin.qq.com/s/DfXTwu2dobjmR1Xd3PG9Zg
 
 美团搜索中NER技术的探索与实践
@@ -18,6 +30,10 @@ https://mp.weixin.qq.com/s/DfXTwu2dobjmR1Xd3PG9Zg
 https://mp.weixin.qq.com/s/O4DNQbEuvFapZmYWa2jRUQ
 
 命名实体识别的深度学习综述
+
+https://mp.weixin.qq.com/s/yQWgykaQEnTHOca8MPLSKw
+
+NLP集大成之命名实体识别
 
 ## 文本匹配
 
@@ -295,6 +311,10 @@ https://mp.weixin.qq.com/s/5jjzE3cG5OAXRB9hZ5DFIw
 
 事件抽取综述（上）
 
+https://mp.weixin.qq.com/s/EXS-KXd-UE1Vovvzulqj2g
+
+事件抽取综述（中）
+
 https://mp.weixin.qq.com/s/JY6Mu7NMtEnmjEgHCg_eYg
 
 文本信息抽取与结构化
@@ -392,19 +412,3 @@ https://mp.weixin.qq.com/s/klfTdvfti0xCg2lGitG4hg
 https://mp.weixin.qq.com/s/IvbJ_d7z91BCcRVpJ9_jMA
 
 如何用深度学习做自然语言处理？这里有份最佳实践清单
-
-https://zhuanlan.zhihu.com/p/30533380
-
-Neural Response Generation——关于回复生成工作的一些总结
-
-https://mp.weixin.qq.com/s/HHPp0JJzpY3q0nC-DF3F3g
-
-阿里：语言卷积神经网络应用于图像标题生成的经验学习
-
-http://www.jianshu.com/p/ac1840abc63f
-
-从Quora的187个问题中学习机器学习和NLP
-
-https://mp.weixin.qq.com/s/SVKlD0T8IkpVAKFJu-VQAg
-
-胡一川：深度学习在智能助理中的应用

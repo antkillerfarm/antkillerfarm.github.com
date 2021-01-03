@@ -125,6 +125,10 @@ https://mp.weixin.qq.com/s/tl6D_A-SuUj_W76yu_pvkg
 
 声纹识别助力身份认证
 
+https://mp.weixin.qq.com/s/QuWKW3Hl8kho9RvHcn-uLQ
+
+声纹分割聚类（Speaker Diarization）概要
+
 # 汽车声学
 
 https://zhuanlan.zhihu.com/p/22722073

@@ -408,3 +408,21 @@ https://mp.weixin.qq.com/s/qOnMNbA9C7bcwZ6IvOxyCA
 https://mp.weixin.qq.com/s/oN6n7GXnqASKBbVS54rfGg
 
 陀螺仪工作原理及其厂家
+
+# Pytorch++
+
+https://mp.weixin.qq.com/s/xe5zmJklT2sqn_zffmyrLg
+
+Sharded:在相同显存的情况下使pytorch模型的参数大小加倍
+
+https://mp.weixin.qq.com/s/maOnO_o5y19X2D-ZnLjsJA
+
+PyTorch中的In-place操作是什么？为什么要避免使用这种操作？
+
+https://zhuanlan.zhihu.com/p/299736532
+
+使用PyTorch 1.6 for Android
+
+https://mp.weixin.qq.com/s/1ugk6uI6lfWEEUvtKIfYNA
+
+9个让PyTorch模型训练提速的技巧！

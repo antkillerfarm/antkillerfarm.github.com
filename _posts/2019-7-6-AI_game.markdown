@@ -247,13 +247,17 @@ https://mp.weixin.qq.com/s/2GQacLs1CNNQXKjmJmPiVQ
 
 # AI Chip+
 
-![](/images/img3/Wallace_Tree.png)
+https://zhuanlan.zhihu.com/p/31782874
 
-https://mp.weixin.qq.com/s/_n1FA7H5q4AwXqeBg9tekA
+Graphcore AI芯片：更多分析
 
-硬件实现快速累加
+https://mp.weixin.qq.com/s/O-NDsFs6AOwl43LyevXtzg
 
->Christopher Stewart "Chris" Wallace，1933～2004，澳大利亚计算机科学家和物理学家。University of Sydney博士（1959）。Monash University教授。ACM fellow。在早期计算机的软件/硬件方面皆有重大贡献。
+OpenAI发布“块稀疏”GPU内核：实现文本情感分析与图像生成建模当前最优水平
+
+https://mp.weixin.qq.com/s/Qfbc2iQnXacOqOGIrpRQRw
+
+Tensor Core究竟有多快？全面对比英伟达Tesla V100/P100的RNN加速能力
 
 https://mp.weixin.qq.com/s/XXef4F9HEZizoWRYXwHitw
 
@@ -306,3 +310,19 @@ AI芯片技术发展
 https://mp.weixin.qq.com/s/9fBe6MsUOCDhtp4MSfP2jg
 
 AI处理器热潮正在消退
+
+https://mp.weixin.qq.com/s/JYTqJDlGw6Q2gNLaYIGLcQ
+
+特斯拉芯片究竟怎么样？
+
+https://mp.weixin.qq.com/s/R1_mXxBrQYgIPlUDGz8w6Q
+
+片上多核系统的互联需求
+
+https://mp.weixin.qq.com/s/cA1AXfpV3ZcMNX9k5XKlww
+
+面向深度神经网络的芯片布图规划问题简介
+
+https://zhuanlan.zhihu.com/p/231302709
+
+聊聊GPU峰值计算能力

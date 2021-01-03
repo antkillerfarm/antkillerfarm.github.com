@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十一）——Loss function详解（1）
+title:  机器学习（二十一）——Loss function详解
 category: ML 
 ---
 

@@ -37,6 +37,28 @@ https://mp.weixin.qq.com/s/23QCWf0NOoXlwRGAHfx4oQ
 
 ![](/images/img4/Parallel.png)
 
+## Distributed Data Parallel
+
+https://mp.weixin.qq.com/s/52Wz4pUI8egKugMFuknWKw
+
+Pytorch中的Distributed Data Parallel与混合精度训练（Apex）
+
+https://mp.weixin.qq.com/s/x1Z4jkMvfo4mD-_rKqvjuw
+
+在PyTorch中使用Distributed Data Parallel进行多GPU分布式模型训练
+
+https://zhuanlan.zhihu.com/p/178402798
+
+DDP系列第一篇：入门教程
+
+https://zhuanlan.zhihu.com/p/187610959
+
+DDP系列第二篇：实现原理与源代码解析
+
+https://zhuanlan.zhihu.com/p/250471767
+
+DDP系列第三篇：实战与技巧
+
 ## 参考
 
 https://mp.weixin.qq.com/s/ai_XI8ddP5I2m3ChCqnQsA
@@ -344,27 +366,3 @@ https://mp.weixin.qq.com/s/nTBuYuW7h9wZYuo3w1xGmQ
 https://mp.weixin.qq.com/s/LOTQfD9KKtAq0zz4rObCGA
 
 EB级系统空中换引擎：阿里调度执行框架如何全面升级？（DAG 2.0）
-
-https://mp.weixin.qq.com/s/_85oWK2plv2QOX5Qfg_-ZA
-
-大规模机器学习优化，195页ppt与视频
-
-https://mp.weixin.qq.com/s/soruo90Dbtzi6d1kA63Akg
-
-阿里提出智能算力引擎DCAF，节省20%GPU算力
-
-https://zhuanlan.zhihu.com/p/79030485
-
-AllReduce算法的前世今生
-
-https://mp.weixin.qq.com/s/oDak7peTT5ynNYrH7LSWTg
-
-分布式层次GPU参数服务器架构
-
-https://mp.weixin.qq.com/s/4XMVYXnzpYZ4DrIabuTUig
-
-Ring All-reduce: 分布式深度学习的巧妙同步
-
-https://zhuanlan.zhihu.com/p/28226956
-
-浮点峰值那些事儿

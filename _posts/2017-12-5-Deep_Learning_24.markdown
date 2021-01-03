@@ -347,6 +347,10 @@ https://mp.weixin.qq.com/s/mvx_LyGVzn_H3XpwTsuFMA
 
 多目标跟踪：监控领域你必须要了解的算法
 
+https://mp.weixin.qq.com/s/GQtyVdCBie7jN38bB0SlaA
+
+带你入门多目标跟踪（一）领域概述
+
 # 人脸检测/识别++
 
 https://zhuanlan.zhihu.com/p/69542283

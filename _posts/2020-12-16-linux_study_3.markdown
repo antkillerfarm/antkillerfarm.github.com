@@ -105,6 +105,10 @@ https://mp.weixin.qq.com/s/vnqANjTMNqdjkHXl203eRg
 
 逆向工程基础：从PE文件到进程地址空间
 
+https://mp.weixin.qq.com/s/_RD_jY-gJFxlT9DX2jGDAA
+
+只有170字节，最小的64位Hello World程序这样写成
+
 ## 参考
 
 https://mp.weixin.qq.com/s/n6D5_6K9TrnuXg3h6AiFNA

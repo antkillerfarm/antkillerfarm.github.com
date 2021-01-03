@@ -197,6 +197,18 @@ https://mp.weixin.qq.com/s/fu5t1e57VsFc12IW1ZcC-g
 
 如果KNN淘汰了，那么取而代之的将是ANN
 
+https://mp.weixin.qq.com/s/Cgq5c4UzqfRGprqx2CBYsA
+
+基于Milvus的向量搜索实践（一）
+
+https://mp.weixin.qq.com/s/WP3o4uqWZqqQ4FCla_zB5Q
+
+基于Milvus的向量搜索实践（二）
+
+https://mp.weixin.qq.com/s/JS4Th2lzqJMFqHlRzeE38g
+
+基于Milvus的向量搜索实践（三）
+
 ## 参考
 
 https://github.com/harpribot/awesome-information-retrieval
@@ -354,3 +366,7 @@ https://mp.weixin.qq.com/s/dO3eDlhCSYRh3pjbI_gsQg
 https://mp.weixin.qq.com/s/q4aPtUYi27h-0sqD4bokQQ
 
 再谈搜索中的Query扩展技术
+
+https://mp.weixin.qq.com/s/vwIbM2XNvj-OKCtzqjCVWQ
+
+搜索中涉及的算法问题

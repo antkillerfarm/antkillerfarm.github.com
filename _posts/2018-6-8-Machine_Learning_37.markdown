@@ -61,6 +61,10 @@ https://mp.weixin.qq.com/s/8Ua7wYfRdv0fu8I-M3sdHg
 
 统计学习与序列预测，261页pdf
 
+https://mp.weixin.qq.com/s/J3RdKXZs7Wb976E512TJjw
+
+最新《时序数据分析》书稿，512页pdf
+
 ## 概述
 
 时间序列，就是按时间顺序排列的，随时间变化的数据序列。

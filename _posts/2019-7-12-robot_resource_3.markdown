@@ -71,6 +71,26 @@ https://mp.weixin.qq.com/s/XJVyoQTDljO8F6GVthsxKw
 
 汽车安全气囊结构原理
 
+## Boston Dynamics
+
+Boston Dynamics算是人形机器人的标杆企业了。它采用了液压驱动的路线。
+
+相比于电机驱动，液压驱动功率更大，环境适应性更好，缺点是非线性系统，控制比较复杂。
+
+参考：
+
+https://mp.weixin.qq.com/s/BNanIQKY9SSNpms0qSTOBA
+
+硬核干货！揭秘波士顿动力背后的专利技术
+
+https://www.zhihu.com/question/437149222
+
+波士顿动力12月29日发布了机器人跳舞的视频，在这个领域我们现在差距有多大？
+
+https://www.zhihu.com/question/347701202
+
+波士顿动力旋转跳跃360°视频火了，那么它的背后是通过什么算法实现的呢？
+
 ## 参考
 
 https://www.zhihu.com/question/404870865
@@ -219,6 +239,10 @@ https://mp.weixin.qq.com/s/UAPbNq_KNWCFd7p8U8HnYQ
 
 模型预测控制（MPC)
 
+https://zhuanlan.zhihu.com/p/93828943
+
+仿人双足机器人步态规划——零力矩点（ZMP）
+
 https://mp.weixin.qq.com/s/0EsgWDCFGbjLv8Rn_OBG1g
 
 路径的速度解耦规划需要几步？2个“规划”带你了解轨迹生成
@@ -226,10 +250,6 @@ https://mp.weixin.qq.com/s/0EsgWDCFGbjLv8Rn_OBG1g
 https://mp.weixin.qq.com/s/dQd-2gGyLQURfK4SO9kjPA
 
 智能体张量融合，一种保持空间结构信息的轨迹预测方法
-
-https://mp.weixin.qq.com/s/BNanIQKY9SSNpms0qSTOBA
-
-硬核干货！揭秘波士顿动力背后的专利技术
 
 https://mp.weixin.qq.com/s/GDQSxVxwx7z-YW0QkCeVBQ
 
@@ -382,31 +402,3 @@ https://zhuanlan.zhihu.com/p/76828112
 https://mp.weixin.qq.com/s/8znzrzoBAYGza6uOFfuz5g
 
 一文读懂无人驾驶汽车系统基本框架
-
-https://mp.weixin.qq.com/s/cLhnFCQdftj6Qi5j-PWDzw
-
-控制技术详解——控制理论
-
-https://mp.weixin.qq.com/s/N39CF1M7nV2cwUUMGRnG7g
-
-控制技术详解——基于模型的控制方法
-
-https://mp.weixin.qq.com/s/DrWeZOIhJV1dbpg7Ns6gJQ
-
-控制技术详解——控制器的类型
-
-https://mp.weixin.qq.com/s/Q4me1G9B8uwwRIr6dfETEA
-
-行为轨迹预测技术
-
-https://mp.weixin.qq.com/s/3ApXC3u13_O8s4QCYxldlQ
-
-基于模块化轻量级网络的道路目标检测
-
-https://mp.weixin.qq.com/s/kAP8MMjTjVyeBPcpY5E1FQ
-
-障碍物行为预测技术
-
-https://mp.weixin.qq.com/s/VwLNq84Nmg5--yTHlRdSJA
-
-深度学习在道路封闭挖掘方案的探索与实践

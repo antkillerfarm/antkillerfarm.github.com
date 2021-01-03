@@ -352,3 +352,7 @@ https://mp.weixin.qq.com/s/czqO4Lo1Jt9zqg2UKNlLYg
 https://mp.weixin.qq.com/s/nNGTVQDt9TxHeIKOyxh1Jw
 
 WTF Python：盘点鲜为人知的Python特性
+
+https://mp.weixin.qq.com/s/mANrN9k5Rjf1zQwhHvWUEw
+
+​解密Python中的对象模型

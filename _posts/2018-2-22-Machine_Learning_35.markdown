@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十五）——Probabilistic Robotics, Kalman filters, Adaboost
+title:  机器学习（三十五）——Probabilistic Robotics, Kalman filters
 category: ML 
 ---
 
@@ -265,66 +265,92 @@ https://longaspire.github.io/blog/%E5%8D%A1%E5%B0%94%E6%9B%BC%E6%BB%A4%E6%B3%A2/
 
 卡尔曼滤波器
 
-# Adaboost
+https://zhuanlan.zhihu.com/p/36745755
 
-Adaboost是Yoav Freund和Robert Schapire于1997年提出的算法。两人后来因为该算法被授予Gödel Prize（2003）。
+卡尔曼滤波：从入门到精通
 
->Yoav Freund，UCSC博士，UCSD教授。
+# Loss function详解+
 
->Robert Elias Schapire，MIT博士。先后供职于Princeton University、AT&T Labs和Microsoft Research。
+https://mp.weixin.qq.com/s/CPfhGxig9BMAgimBSOLy3g
 
->Gödel Prize，由欧洲计算机学会（EATCS）与美国计算机学会基础理论专业组织（ACM SIGACT）于1993年共同设立，颁给理论计算机领域最杰出的学术论文。其名称取自Kurt Gödel。
+用于图像检索的等距离等分布三元组损失函数
 
->Kurt Friedrich Gödel，1906～1978，奥地利逻辑学家，数学家，哲学家，后加入美国藉。维也纳大学博士（1930）。在逻辑学方面，他是继Aristotle、Gottlob Frege之后最伟大的逻辑学家。在数学方面，他以哥德尔不完备定理著称，和Bertrand Russell、 David Hilbert、Georg Cantor齐名。
+https://www.zhihu.com/question/375794498
 
-Adaboost既可用于分类问题，也可用于回归问题。这里仅针对二分类问题进行讨论。
+深度学习的多个loss如何平衡？
 
-假设我们有数据集$$\{(x_1, y_1), \ldots, (x_N, y_N)\}$$，其中$$y_i \in \{-1, 1\}$$，还有一系列弱分类器$$\{k_1, \ldots, k_L\}$$。
+https://mp.weixin.qq.com/s/tzY_lG0F9dP5Q-LmwuHLmQ
 
-由于Boost算法是个串行算法，每次迭代就会加入一个弱分类器。这样m-1次迭代之后的分类器如下所示：
+常见损失函数和评价指标总结
 
-$$C_{(m-1)}(x_i) = \alpha_1k_1(x_i) + \cdots + \alpha_{m-1}k_{m-1}(x_i)$$
+https://mp.weixin.qq.com/s/lw9frtqocqsS-q2KGfzO1Q
 
-而m次迭代之后的分类器则为：
+深入理解计算机视觉中的损失函数
 
-$$C_{m}(x_i) = C_{(m-1)}(x_i) + \alpha_m k_m(x_i)$$
+https://mp.weixin.qq.com/s/_HQ5an_krRCYMVnwEgGJow
 
-如何选择新加入的弱分类器$$k_m$$和对应的权重$$\alpha_m$$呢？我们可以定义误差E如下所示：
+深度学习的多个loss如何平衡 & 有哪些“魔改”损失函数，曾经拯救了你的深度学习模型？
 
-$$E = \sum_{i=1}^N e^{-y_i C_m(x_i)}$$
+https://blog.csdn.net/shanglianlm/article/details/85019768
 
-令$$w_i^{(1)} = 1,w_i^{(m)} = e^{-y_i C_{m-1}(x_i)}$$，则：
+十九种损失函数
 
-$$E = \sum_{i=1}^N w_i^{(m)}e^{-y_i\alpha_m k_m(x_i)}$$
+https://mp.weixin.qq.com/s/8oKiVRjtPQIH1D2HltsREQ
 
-因为$$k_m$$分类正确时，$$y_i k_m(x_i) = 1$$，分类错误时，$$y_i k_m(x_i) = -1$$。所以：
+图像分割损失函数最全面、最详细总结
 
-$$E = \sum_{y_i = k_m(x_i)} w_i^{(m)}e^{-\alpha_m} + \sum_{y_i \neq k_m(x_i)} w_i^{(m)}e^{\alpha_m}\\= \sum_{i=1}^N w_i^{(m)}e^{-\alpha_m} + \sum_{y_i \neq k_m(x_i)} w_i^{(m)}(e^{\alpha_m}-e^{-\alpha_m})$$
+https://zhuanlan.zhihu.com/p/158853633
 
-可以看出和$$k_m$$相关的实际上只有上式的右半部分。显然，使得$$\sum_{y_i \neq k_m(x_i)} w_i^{(m)}$$最小的$$k_m$$，也会令E最小，这也就是我们选择加入的$$k_m$$。
+一文理解Ranking Loss/Margin Loss/Triplet Loss
 
-对E求导，得：
+https://zhuanlan.zhihu.com/p/235533342
 
-$$\frac{d E}{d \alpha_m} = \frac{d (\sum_{y_i = k_m(x_i)} w_i^{(m)}e^{-\alpha_m} + \sum_{y_i \neq k_m(x_i)} w_i^{(m)}e^{\alpha_m}) }{d \alpha_m}$$
+目标检测：Loss整理
 
-令导数为0，可得：
+https://zhuanlan.zhihu.com/p/191355122
 
-$$\alpha_m = \frac{1}{2}\ln\left(\frac{\sum_{y_i = k_m(x_i)} w_i^{(m)}}{\sum_{y_i \neq k_m(x_i)} w_i^{(m)}}\right)$$
+NLP样本不均衡之常用损失函数对比
 
-令$$\epsilon_m = \sum_{y_i \neq k_m(x_i)} w_i^{(m)} / \sum_{i=1}^N w_i^{(m)}$$，则：
+https://mp.weixin.qq.com/s/KL_D8pWtcXCJHz7dd70jyw
 
-$$\alpha_m = \frac{1}{2}\ln\left( \frac{1 - \epsilon_m}{\epsilon_m}\right)$$
+Face Recognition Loss on Mnist with Pytorch
 
-参考：
+https://zhuanlan.zhihu.com/p/77686118
 
-https://mp.weixin.qq.com/s/G06VDc6iTwmNGsH4IfSeJQ
+机器学习常用损失函数小结
 
-Adaboost从原理到实现
+https://zhuanlan.zhihu.com/p/38855840
 
-https://mp.weixin.qq.com/s/PZ-1fkNvdJmv_8zLbvoW1g
+SphereReID：从人脸到行人，Softmax变种效果显著
 
-Adaboost算法原理小结
+https://mp.weixin.qq.com/s/ZoLO6OilivPgle03KdNzCQ
 
-https://mp.weixin.qq.com/s/KoOUgwXLOfJfOjWhbFX52Q
+人脸识别中Softmax-based Loss的演化史
 
-如果Boosting你懂，那Adaboost你懂么？
+https://mp.weixin.qq.com/s/DwtA6GivVCDvL4MXNDBFWg
+
+阿里巴巴提出DR Loss：解决目标检测的样本不平衡问题
+
+https://zhuanlan.zhihu.com/p/145927429
+
+DR Loss
+
+https://mp.weixin.qq.com/s/x0aBo-w669_2FyCGKWJ4iQ
+
+理解计算机视觉中的损失函数
+
+https://mp.weixin.qq.com/s/LOewKsxtWm7dFJS6ioryuw
+
+Siamese网络，Triplet Loss以及Circle Loss的解释
+
+https://zhuanlan.zhihu.com/p/58883095
+
+常见的损失函数(loss function)总结
+
+https://mp.weixin.qq.com/s/UjBCjwNDIxDoAoyQAf8V6A
+
+旷视研究院提出Circle Loss，革新深度特征学习范式
+
+https://mp.weixin.qq.com/s/5RpbXzuHp_tR6C_nBdiXGA
+
+Circle Loss：从统一的相似性对的优化角度进行深度特征学习

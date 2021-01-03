@@ -406,15 +406,3 @@ https://mp.weixin.qq.com/s/Yr8CrCtJquKQ38tt2T0VCQ
 https://zhuanlan.zhihu.com/p/135453456
 
 命名实体识别NER论文综述：那些年，我们一起追过的却仍未知道的花名（一）
-
-https://mp.weixin.qq.com/s/5fl9jmEolYOxMjaMw746OQ
-
-基于深度学习的命名实体识别
-
-https://zhuanlan.zhihu.com/p/70618710
-
-初识NER
-
-https://mp.weixin.qq.com/s/yJC3NtD13LEVovDYK7-u1A
-
-命名实体识别难在哪？
