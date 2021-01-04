@@ -281,6 +281,10 @@ https://mp.weixin.qq.com/s/Ns5AUGfDoTeTwnBD-pYdLA
 
 详解强化学习当前进展及未来方向
 
+https://mp.weixin.qq.com/s/VIMX63zBaZ5ji70UmHHajg
+
+强化学习入门知识超全梳理
+
 https://mp.weixin.qq.com/s/oA98YyLqn1B22QZ5b_iDVA
 
 IJCAI 2018：聚焦强化学习的学习效率

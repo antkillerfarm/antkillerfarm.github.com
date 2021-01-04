@@ -373,6 +373,10 @@ https://mp.weixin.qq.com/s/fr-THgOeaTspKsv_hXnU2Q
 
 CogLTX：将BERT应用于长文本
 
+https://www.cnblogs.com/zhouxiaosong/p/11397655.html
+
+使用BERT模型生成token级向量
+
 # Transformer进阶
 
 https://mp.weixin.qq.com/s/-Y7Qy-5aJNJ5bx8QJf3k2w

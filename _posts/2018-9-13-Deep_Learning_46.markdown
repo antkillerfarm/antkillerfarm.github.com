@@ -317,7 +317,7 @@ https://mp.weixin.qq.com/s/zlgnOGhuzIlOha8Y6cwUxA
 
 快速了解阿里的M2GRL模型
 
-https://mp.weixin.qq.com/s/0Tb5t9K2V-RYb12UKL1cXg
+https://zhuanlan.zhihu.com/p/279287735
 
 GraphSAGE+FM+Transformer强强联手：评微信的GraphTR模型
 

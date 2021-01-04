@@ -409,3 +409,7 @@ Java日志体系权威总结
 https://mp.weixin.qq.com/s/8Cpl8PoAP1TI4y_cWYsA5A
 
 排名前16的Java工具类
+
+https://blog.csdn.net/mu_wind/article/details/109516995
+
+Java8 Stream：2万字20个实例，玩转集合的筛选、归约、分组、聚合

@@ -426,3 +426,7 @@ https://zhuanlan.zhihu.com/p/299736532
 https://mp.weixin.qq.com/s/1ugk6uI6lfWEEUvtKIfYNA
 
 9个让PyTorch模型训练提速的技巧！
+
+https://mp.weixin.qq.com/s/kZvdgWqk1KLi790rly3YYQ
+
+Pytorch中的分布式神经网络训练

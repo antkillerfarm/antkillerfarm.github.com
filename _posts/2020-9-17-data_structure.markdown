@@ -412,3 +412,7 @@ https://mp.weixin.qq.com/s/iqCMA7E_vtdymVxxz7bpRA
 https://mp.weixin.qq.com/s/D0gLR6YU3rYTbFqSCwyi9Q
 
 Semi-Supervised GAN
+
+https://mp.weixin.qq.com/s/MY-nx_MDyBJHUidS3Xqs7g
+
+最新《生成式对抗网络GAN进展》综述论文，41页pdf阐述GAN在计算机视觉应用进展

@@ -351,6 +351,10 @@ https://mp.weixin.qq.com/s/GQtyVdCBie7jN38bB0SlaA
 
 带你入门多目标跟踪（一）领域概述
 
+https://mp.weixin.qq.com/s/sk1I37Jwdf7sH5uSgd3juA
+
+带你入门多目标跟踪（二）SORT&DeepSORT
+
 # 人脸检测/识别++
 
 https://zhuanlan.zhihu.com/p/69542283
