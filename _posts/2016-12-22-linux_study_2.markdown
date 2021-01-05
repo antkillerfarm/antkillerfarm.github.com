@@ -240,15 +240,31 @@ Inotify: 高效、实时的Linux文件系统事件监控框架
 
 usr很多人都认为是user缩写，其实不然，这是unix system resource的缩写。
 
-# lsof命令
+# lsof
 
 lsof(list open files)是一个列出当前系统打开文件的工具。在linux环境下，任何事物都以文件的形式存在，通过文件不仅仅可以访问常规数据，还可以访问网络连接和硬件。所以如传输控制协议 (TCP) 和用户数据报协议 (UDP) 套接字等，系统在后台都为该应用程序分配了一个文件描述符，无论这个文件的本质如何，该文件描述符为应用程序与基础操作系统之间的交互提供了通用接口。因为应用程序打开文件的描述符列表提供了大量关于这个应用程序本身的信息，因此通过lsof工具能够查看这个列表对系统监测以及排错将是很有帮助的。
 
-# nc命令
+# nc
 
 NetCat，在网络工具中有“瑞士军刀”美誉。它短小精悍（1.84版本也不过25k，旧版本或缩减版甚至更小）、功能实用，被设计为一个简单、可靠的网络工具，可通过TCP或UDP协议传输读写数据。同时，它还是一个网络应用Debug分析器，因为它可以根据需要创建各种不同类型的网络连接。
 
 http://blog.csdn.net/wang7dao/article/details/7684998
+
+Linux nc命令详解
+
+# bd
+
+bd是cd的升级版，主要处理`cd ../../../`这样的回退情况。
+
+假设当前路径为：`/home/user/project/`，`bd h`可以直接退到`/home`，只要输入路径的首字母就可以了。
+
+安装：
+
+```bash
+sudo apt install bd
+echo 'alias bd=". bd -si"' >> ~/.bashrc
+source ~/.bashrc
+```
 
 # 常用命令示例
 
@@ -433,26 +449,6 @@ tmux的使用方法和个性化配置
 http://chengjin.li/2017/08/09/tmux-using-tutorial/
 
 终端复用工具---tmux的安装及使用
-
-# 环境变量
-
-设置环境变量的方法：
-
-1）临时的：使用export命令声明即可，变量在关闭shell时失效。示例如下：
-
-`export PATH=/home/xyz/bin:$PATH;`
-
-2）永久的：需要修改配置文件，变量永久生效。
-
-在/etc/profile文件中添加变量（对所有用户生效）。修改文件后要想马上生效，还要运行`source /etc/profile`，不然只能在下次重进此用户时生效。
-
-在用户目录下的.bash_profile文件中增加变量（对该用户生效）。同样需要source才能马上生效。
-
-重要的环境变量：
-
-PATH：可执行文件路径。
-
-LD_LIBRARY_PATH：动态链接库文件路径
 
 # 设置网卡eth0的IP地址和子网掩码
 
