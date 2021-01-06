@@ -354,3 +354,7 @@ https://mp.weixin.qq.com/s/UjBCjwNDIxDoAoyQAf8V6A
 https://mp.weixin.qq.com/s/5RpbXzuHp_tR6C_nBdiXGA
 
 Circle Loss：从统一的相似性对的优化角度进行深度特征学习
+
+https://zhuanlan.zhihu.com/p/304462034
+
+根据标签分布来选择损失函数

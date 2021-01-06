@@ -9,10 +9,6 @@ category: Nature
 
 # 病毒（续）
 
-古典猪瘟于1810年最早爆发于美国，是新大陆出现的猪类病毒性疾病。其在1820年代传入欧洲，相继在法国、德国爆发，一路传到了欧亚大陆的东端。虽然此后一百年，人类开发出了针对这种猪瘟的血清，但古典猪瘟仍然没有被完全消灭，至今仍时有患病猪出现。
-
-----
-
 ADE效应（Antibody Dependent Enhancement，抗体依赖增强）：以登革热病毒为例，其流行的病毒株有四种亚型，如果病人曾经感染过某种亚型，在被其他亚型感染时，有高达80倍的可能性会发生更严重的症状。这就是因为ADE：体内已有的非中和性抗体虽然包裹了病毒，却无法将其杀死，反而保护了其免受其他免疫细胞的攻击。
 
 以此类推，倘若这次的疫情，届时会由疫苗成功控制。那么我们这一代接种了新冠疫苗的人，难道会成为下一批某种冠状病毒流行时ADE的受害者？
@@ -64,6 +60,30 @@ https://mp.weixin.qq.com/s/tDHWJfw7zx-Aoh9QfCJLQQ
 https://mp.weixin.qq.com/s/iFxvk45TfFjIWKz1A4DHAA
 
 没得乙肝，我们要感谢一个人（Baruch S. Blumberg）
+
+## mRNA
+
+mRNA示意图：
+
+![](/images/img3/mRNA.png)
+
+![](/images/img4/mRNA.png)
+
+https://mp.weixin.qq.com/s/oTjuAsfvLfEruHA-nY2clA
+
+因新冠而将提前诞生的世界首例mRNA疫苗
+
+https://mp.weixin.qq.com/s/b0Mw8uKLYuXHJ5Bj3t2Dwg
+
+一针重复2万亿段代码，我“逆向工程”了辉瑞疫苗！
+
+----
+
+比起传统的疫苗，mRNA疫苗提出了新的要求：它们必须在低温下储存，以保持基因序列不变。摩德纳开发出的疫苗必须在零下20摄氏度的条件下储存，而辉瑞与德国伙伴BioTech合作开发的疫苗则需要零下70摄氏度的环境。相比之下，以往的大多数疫苗可以在2到8摄氏度之间的环境储存。
+
+https://zhuanlan.zhihu.com/p/321849361
+
+新冠疫苗来了，但它也许将成为“后勤的噩梦”
 
 ## 参考
 

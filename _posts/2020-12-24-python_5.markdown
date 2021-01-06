@@ -25,6 +25,28 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/misc/hel
 
 `args = ["ls","-al","."]`
 
+## Dear PyGui
+
+Dear PyGui是一个轻量级的GUI框架，可以利用GPU进行渲染。
+
+代码：
+
+https://github.com/hoffstadt/DearPyGui
+
+## Typer
+
+一个命令行选项的快速处理的库。
+
+官网：
+
+https://typer.tiangolo.com/
+
+它的设计参考了FastAPI，后者是一个Web版本的API接口库，用于提供restful风格的API。
+
+官网：
+
+https://fastapi.tiangolo.com/
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA

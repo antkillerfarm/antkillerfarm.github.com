@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenGL研究, GUI框架分析, 虚拟机比较, uboot, WireShark
+title:  OpenGL研究, GUI框架分析, uboot
 category: technology 
 ---
 
@@ -105,31 +105,45 @@ GUI框架主要是个实践派的作品，然而也涉及到了少量的设计�
 
 https://martinfowler.com/eaaDev/uiArchs.html
 
+----
+
+MVVM最早由微软提出来，它借鉴了桌面应用程序的MVC思想，在前端页面中，把Model用纯JavaScript对象表示，View负责显示，两者做到了最大限度的分离。
+
+把Model和View关联起来的就是ViewModel。ViewModel负责把Model的数据同步到View显示出来，还负责把View的修改同步回Model。
+
+----
+
 参考：
 
 https://segmentfault.com/a/1190000006016817
 
 GUI应用程序架构的十年变迁:MVC,MVP,MVVM,Unidirectional,Clean
 
-# 虚拟机
+## Immediate Mode GUI
 
-早期如Bochs之类的没用过，现在估计也没什么人用了吧。
+2002年的秋天，在一次分享会上，一位叫CASEY MURATORI的开发者，借用了游戏引擎里常用的"Immediate Mode Rendering"的概念，第一次提出了“Immediate Mode GUI“，传统的GUI则统一称为“Retained Mode GUI“。
 
-现在主要是以下三个选择：
+IMGUI跟RMGUI最大的区别在于，不存储“额外的“，“重复的”状态。比如TextView的Text属性就是一个“额外的”、“重复的”状态。IMGUI不存储Text信息，而是在需要绘制Text的时候，从原始对象中直接获取。这么做的好处是，TextView显示的文本跟原始对象的Text属性永远是一致的。在RMGUI，原始对象的Text变更之后，需要调用TextView::SetText更新TextView的Text属性，否则就产生了不一致。
 
-1.VMware。商业收费软件。有免费版本的VMware Player，但该版本不可创建虚拟机，只可使用别人已经建好的虚拟机。
+缺点：不利于布局/动画/Style配置。造成这些这些问题的原因还因为imgui是没有状态的，通常布局算法都需要两遍遍历所有UI组件（第一遍计算大小第二遍计算布局)，但是imgui只会运行一遍这样就会对布局造成困难。同样实现动画和Style都需要额外的状态维护，需要在imgui上添加额外的状态层才能实现动画/Style。
 
-2.VirtualBox。开源免费软件。
+参考：
 
-3.Qemu。Qemu的易用性不佳，作为使用的话，能不用就不用了。但其不仅开源，而且支持的架构也很多，有的时候往往是唯一之选。作为研究学习来说，这个是首选。
+https://www.zhihu.com/answer/1463984603
 
-这里主要讨论前两者的选择。
+玄铁匠的回答
 
-VMware由于是收费软件之故，因此用户的软件升级是个大问题。（土豪除外，有钱的话，这个就不是事了。）而旧的软件，往往对新的Linux发行版的支持较差。很多情况下，VMware Tool因为这个原因总是无法完美运行。严重影响了软件的易用性。
+https://www.zhihu.com/question/267602287
 
-反之，VirtualBox就没有这些问题。虽然比较同期的VMware来说，VirtualBox的性能略逊。但是一般来说，科技行业里领先半年就已经是巨大的优势了。我相信现在的VirtualBox，无论如何也不会弱于两年前的VMware。
+如何评价imgui？
 
-因此与其守着过时的VMware 8.0，还不如换用VirtualBox，这就是我的选择。
+http://iki.fi/sol/imgui/
+
+Sol on Immediate Mode GUIs (IMGUI)
+
+https://zhuanlan.zhihu.com/p/36588396
+
+关于Korok的GUI系统
 
 # uboot
 
@@ -236,53 +250,3 @@ _type _u_boot_list_2_##_list##_2_##_name __aligned(4)		\
 客户端传输镜像文件时，需要采用二进制模式。命令如下：
 
 `tftp 10.3.9.161 -m binary -c put <file name>`
-
-# WireShark
-
-WireShark是一个网络协议包分析工具，最初名叫Ethereal。它的官网是：
-
-www.wireshark.org
-
-## 在ubuntu上的安装
-
-`sudo apt-get install wireshark`
-
-安装好了之后，还不能立即使用。需要给/usr/bin/dumpcap提升权限，才能使用WireShark的抓包功能。否则会出`no interfaces`的错误。
-
-提升权限的方法有：
-
-1.root方式。
-
-命令行：`sudo wireshark`
-
-桌面图标：`gksudo wireshark`
-
-2.非root方式，这也是官方推荐的方式。
-
-`sudo dpkg-reconfigure wireshark-common`
-
-`sudo usermod -a -G wireshark <your user name>`
-
-`sudo chgrp wireshark /usr/bin/dumpcap`
-
-`sudo chmod 4750 /usr/bin/dumpcap`
-
-`sudo setcap cap_net_raw,cap_net_admin=eip /usr/bin/dumpcap`
-
-最后注销当前用户，重新登陆即可。
-
-## 过滤器规则
-
-WireShark以丰富的过滤器著称，现将我使用到的过滤器规则摘录如下：
-
-`ip.src == 10.3.9.234 || ip.dst == 10.3.9.234`
-
-过滤源地址和目标地址。
-
-`tcp matches Bob`
-
-匹配特定字符串。
-
-`tcp.stream eq id`
-
-将一次TCP交互的包过滤出来，id表示是第几次交互。
