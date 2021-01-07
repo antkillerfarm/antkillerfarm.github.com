@@ -200,15 +200,19 @@ https://blog.csdn.net/ice_beauty1/article/details/82923083
 
 定制bash提示符
 
+## Shebang
+
+Shebang（也称为 Hashbang ）是一个字符序列`#!`，其出现在文本文件的第一行的前两个字符。在文件中存在 Shebang的情况下，类Unix操作系统的程序加载器会分析Shebang后的内容，将这些内容作为解释器指令，并调用该指令，并将载有Shebang的文件路径作为该解释器的参数。
+
+例如：
+
+`#!/bin/bash`
+
 ## 参考
 
 https://github.com/dylanaraps/pure-bash-bible
 
 本项目主要汇总了bash脚本经常会使用到的一些代码片段，并按照字符串、数组、正则表达式、文件处理、变量等常用功能进行分类，并给出了具体的Demo，非常适合初学者以及希望提升工作效率的朋友使用。
-
-https://blog.csdn.net/iot_flower/article/details/69055590
-
-shell脚本第一行：#!/bin/bash的含义
 
 https://mp.weixin.qq.com/s/ZaIX8jv9LMWmrHQb4ew-dQ
 

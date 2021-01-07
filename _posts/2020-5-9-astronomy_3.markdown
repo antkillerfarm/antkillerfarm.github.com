@@ -1,77 +1,11 @@
 ---
 layout: post
-title: 中国航天, 火星探测, 阿波罗50年
+title: 火星探测, 阿波罗50年, 天文杂谈
 category: Nature 
 ---
 
 * toc
 {:toc}
-
-# SpaceX（续）
-
-虽然亚里士多德和托勒密的天文学思想有很多区别，地圆却都是其中的核心事实。他们的思想一直影响着西方的天文学，直到由哥白尼引发并由伽利略、开普勒和牛顿等人推动的天文学革命。但在这场革命中，发生改变的主要是地球在宇宙中的位置，而地球的形状并未引起过争议。
-
-但对中国人来说，了解地球是圆的这个事实却花了很长的一段时间。中国自古以来有“天圆地方”的说法，其中的“地方”既指大地是方形，也指大地是平面。中国古代的宇宙观中有两种观念，分别是浑天说和盖天说。这两种说法的区别在于前者认为天地有相交会处，而后者认为天地是平行的，但是二者均没有地圆的观念。
-
-https://mp.weixin.qq.com/s/0lDJiu1nyS0j1aj7C4tT-g
-
-火箭狂人不幸坠亡，生前坚信“地平说”
-
-----
-
-小布什签署的美国航天发展规划，直接规定了要求NASA退出近地空间，要求他们重新带领美国航天天顶科技。与此同时，美国的商业航天开始全面崛起，后来大名鼎鼎的space-x，bigelow，blue origin大都从此时起步。
-
-奥巴马任期内美国商业航天的崛起就不必说了，经过全面扶植，space-x迅速成长为可以对抗任何一个国家发射市场的公司，在2018年甚至有能力挑战美国之外所有国家的总和。而NASA的焦点则全面转向深空，各种大型空间望远镜、昂贵的火星探测、木星土星探测，都达到人类历史上的巅峰。
-
-----
-
-https://news.qq.com/a/20180927/005739.htm
-
-离职能直接影响中国登月的人才，只配待在国企底层？
-
-据《财经》报道，从融资和估值来看，蓝箭航天、零壹空间、星际荣耀已经成为目前众多民营航天企业的第一梯队，备受市场的关注。除此之外，还包括翎客航天、星途探索、九州云箭、灵动飞天、深蓝航天等。
-
-# 中国航天
-
-![](/images/img4/chang_e.png)
-
-![](/images/img4/chang_e_2.png)
-
-https://www.zhihu.com/question/329267129
-
-中国空间站和国际空间站的区别在哪？
-
-https://www.zhihu.com/question/395220918
-
-为什么中国有四个航天发射场？各有什么优势？
-
-https://mp.weixin.qq.com/s/uVayftwQ-mJU04XGn67QoQ
-
-长征五号复飞成功：史上最重最大，2020月岩采样火星探测都要靠它
-
-https://mp.weixin.qq.com/s/iMr811ClFpmW24khhxkFjg
-
-大神！00后大学生成功发射自制火箭，网友惊了...
-
-https://mp.weixin.qq.com/s/QjB7zDCXC82x5O25InGZtA
-
-嫦娥五号开启我国首次地外天体采样返回之旅
-
-https://mp.weixin.qq.com/s/MZrFA6vWEl_hJnRBCFciLw
-
-中国探月工程“三步走”收官：嫦五配胖五，回家之前挖点土
-
-https://mp.weixin.qq.com/s/dZYtp_olAppIB5Av3CKydw
-
-嫦娥五号完成“钻取”采样及封装，正进行“表取”
-
-https://mp.weixin.qq.com/s/x9GzFnl_y5dei4WFwfxxtA
-
-嫦娥五号采回的“土特产”，可以用来研究些什么？
-
-https://mp.weixin.qq.com/s/RfcxEo4ox86W1u-MoGXFzQ
-
-“嫦娥” 回来了！一文回顾嫦娥五号探月之旅
 
 # 火星探测
 
@@ -201,17 +135,49 @@ https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
 
 # 天文杂谈
 
-https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
+现代农历是民国时期开始用的。自古每当王朝更迭，第一件事就是改历法，一方面体现新朝气象，一方面也因为旧历使用多年，已经有了误差。
 
-生的伟大，死的光荣——致敬卡西尼号土星探测器
+民国成立时也未能免俗，废除了清朝使用的时宪历，1929年推出了紫金历，也就是现代农历。
 
-https://mp.weixin.qq.com/s/sg24WvUClEZnLxhJio0BuQ
+紫金历跟公历不同，置闰规则里有实时观测修正的部分，不是一成不变的。比如说2057年农历九月初一应该是哪天就有争议。因为该日的朔时刚好卡在北京时间零点整附近，用不同的天文算法会导致算出来的日期不一样。
 
-被磨难环绕的“伽利略号”的一生
+https://www.zhihu.com/question/405115980
 
-https://mp.weixin.qq.com/s/ros-kBOIgTgQF2SaGc99qQ
+公历1582年消失了10天，但我国的农历用了这么多年，难道没有误差吗？
 
-哈佛名镜的前世今生
+----
+
+恩克彗星是人们发现的第一颗短周期彗星，至今也还没有找到过周期比它更短的彗星。恩克用6个星期的时间，计算出这颗彗星的轨道，周期为3.3年，并且预言1822年5月24日再回到近日点，果然它准时回来了，成继哈雷彗星之后，第二颗按预言回归的彗星。
+
+>Johann Franz Encke，1791～1865，德国天文学家。University of Göttingen毕业，导师Gauss。1825年担任柏林天文台台长。Leopold Kronecker的导师。他还发现了土星环的Encke Gap。
+
+----
+
+1928年10月25日，一位旅美求学的中国青年在美国叶凯士天文台发现一颗小行星（临时编号为1928 UF），这是第一颗由中国人发现的小行星。这位青年学子感怀祖国，随即将其命名为中华星（1125 China）。
+
+不久，青年回国效力，成为中国现代天文学的拓荒者之一，但却再也没找到这颗小行星的踪迹。直到1957年10月30日，青年在紫金山天文台发现了一颗轨道酷似1125的小行星。
+
+虽后经证实这颗小行星并非1125，但20年后的1977年，当这颗小行星的轨道被精确确定后，国际小行星命名委员会破例将“1125 China”给了这颗新发现的小行星。而原本以为失踪了的1125号小行星，却在1986年被再次观测到，并于1988年被重新命名为中国星（3789 zhongguo）。
+
+>张钰哲，1902～1986，芝加哥大学博士（1929），中国近代天文学的奠基人。中国科学院院士。紫金山天文台台长。1941年9月21日，在战时极端困难的条件下，他组织了中国境内第一次日全食的科学观测，拍摄了中国境内第一张日全食照片和第一部日全食彩色影片。
+
+https://mp.weixin.qq.com/s/0zlHeZsr_gVNoaufr_--Hw
+
+给飞过头顶的星星起个响当当的名字
+
+https://zhuanlan.zhihu.com/p/61467796
+
+抗日时期，中国人完成哪些不可能做到的壮举？
+
+----
+
+1929年，余青松接任天文研究所第二任所长后，秉承高鲁的宏愿，费时五载，于公元1935年，建立紫金山天文台。1938年因抗日战争，他主持该台的内迁工作，并在昆明东郊建成了昆明凤凰山天文台。
+
+https://mp.weixin.qq.com/s/vMe5RmD8uBW3AeGDYwbI5A
+
+紫金山天文台的创立（高鲁、余青松）
+
+----
 
 https://mp.weixin.qq.com/s/aY4gFbK_aKWcgwvr0Rk5gQ
 
@@ -224,6 +190,32 @@ https://www.zhihu.com/question/432120058
 https://zhuanlan.zhihu.com/p/330003494
 
 美国天眼塌了
+
+----
+
+1990年发射的哈勃太空望远镜，由于一片镜片边缘磨薄了2.2mm，相机镜头misallignment, 最终导致发射后拍摄图像模糊。
+
+NASA的科学家开始没有意识到是望远镜的镜头质量问题，还在讨论是不是外太空就是模模糊糊的形态……
+
+后来相机工程师发现了是由于一个镜片零件生产误差造成的问题，花了3年时间在太空修复了这个问题，避免了重新发射，为NASA节省了47亿美元。科学家终于能拍到清晰的太空图像了。
+
+https://mp.weixin.qq.com/s/Wcd_bv_bt-xv42UD40dDww
+
+深度传感进化史
+
+----
+
+https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
+
+生的伟大，死的光荣——致敬卡西尼号土星探测器
+
+https://mp.weixin.qq.com/s/sg24WvUClEZnLxhJio0BuQ
+
+被磨难环绕的“伽利略号”的一生
+
+https://mp.weixin.qq.com/s/ros-kBOIgTgQF2SaGc99qQ
+
+哈佛名镜的前世今生
 
 https://mp.weixin.qq.com/s/DKMs8sZtE_JzWaxr8o-DWA
 
@@ -308,11 +300,3 @@ https://mp.weixin.qq.com/s/yCmwX5srpmhYrbAkFbC-gQ
 https://mp.weixin.qq.com/s/Qld7bVs9ASJ23vAhE0h7_w
 
 日月星辰如何指引着中国人前行？（中国古代天文学）
-
-https://cooltowel.github.io/2018/04/16/%E5%9B%BD%E9%99%85%E5%A4%A9%E7%90%83%E5%8F%82%E8%80%83%E7%B3%BB%E7%BB%9F%E2%80%94%E2%80%94ICRS%20%E7%AE%80%E4%BB%8B/
-
-国际天球参考系统——ICRS简介
-
-https://mp.weixin.qq.com/s/hBAWo8Zsgjm0svYv_UG1jw
-
-一场历经数百万年的瘦身记

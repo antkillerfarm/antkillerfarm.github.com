@@ -280,3 +280,7 @@ TinyML：下一轮人工智能革命
 https://mp.weixin.qq.com/s/B-OJ_oW_uJufqIfIZSA7Ww
 
 专家从7个维度全面评测轻量级网络
+
+https://mp.weixin.qq.com/s/UDUOIIyGJtXHdc3xcyfOIg
+
+万字综述：用于深度神经网络加速的Shift操作
