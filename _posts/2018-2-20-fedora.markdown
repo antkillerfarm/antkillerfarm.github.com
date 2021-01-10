@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Fedora, CentOS, 硬盘安装Linux（UEFI）, Linux镜像文件
+title:  Fedora, CentOS, 硬盘安装Linux（UEFI）
 category: linux 
 ---
 
@@ -250,60 +250,44 @@ https://blog.csdn.net/fouweng/article/details/53435602
 
 DKMS简介
 
-# Linux镜像文件
+## 内核版本回退
 
-## vmlinux
+最近（2021.1）遇到了高版本内核和驱动不匹配的问题，特将历程记录如下：
 
-这是源代码直接生成的镜像文件。以x86平台为例：
+1.现象：Wifi找不到了。
 
-arch\x86\kernel\vmlinux.lds.S--这是链接脚本的源代码，经过C语言的宏预处理之后会生成vmlinux.lds，使用这个脚本，链接即可得到vmlinux，其过程与普通应用程序并无太大区别，也就是个elf文件罢了。
+首先排查设置和Secure Boot，发现没有问题。然后想起来，上次开机更新了系统内核。重启，进入上个版本的内核，一切正常，看来原因的确和内核版本有关。
 
-## image
+2.编译网卡驱动。
 
-vmlinux使用objcopy处理之后，生成的不包含符号表的镜像文件。这是linux默认生成的结果。
+首先去github更新驱动的代码。这里必须感谢驱动原作者的持续维护，修正了一些在新内核中出现的问题。
 
-## zImage
+必须说这次的更新，依赖做的很差，连linux-headers都没有，造成了有些驱动无法更新。。。
 
-zImage = 使用gzip压缩后的image + GZip自解压代码。使用`make zImage`或者`make bzImage`创建。两者的区别是zImage只适用于大小在640KB以内的内核镜像。
+`sudo apt install linux-headers-5.8.0-36-generic`
 
-## uImage
+安装之后，还是网卡不好使。只好暂时工作在旧内核下了。
 
-uImage = uImage header + zImage。使用uboot提供的mkimage工具创建。
-
-以上的这些镜像文件的关系可参见：
-
-http://www.cnblogs.com/armlinux/archive/2011/11/06/2396786.html
-
-http://www.linuxidc.com/Linux/2011-02/32096.htm
-
-## Flash镜像
-
-一般来说，一个完整的linux系统，不仅包括内核，还包括bootloader和若干分区。这些镜像文件散布，不利于批量生产的进行。这时就需要将之打包，并生成一个可直接用于生产烧写的Flash镜像。
-
-可使用mtd-utils库中的ubinize工具生成Flash镜像。
-
-mtd-utils的官网是：
-
-http://www.linux-mtd.infradead.org/
-
-安装方法：
-
-`sudo apt-get install mtd-utils`
-
-mtd-utils还可用于烧写分区。例如如下命令：
-
-`mtd write xyz.uimage linux`
-
-其中`xyz.uimage`是镜像文件名，`linux`是分区名称。
+3.默认启动旧内核
 
 参考：
 
-http://blog.csdn.net/andy205214/article/details/7390287
+https://blog.csdn.net/qq_34292087/article/details/109166266
 
-利用mkfs.ubifs和ubinize两个工具制作UBI镜像
+ubuntu16.04内核版本降低
 
-从代码来查看板子的MTD分区方案，主要是搜索mtd_partition类型的使用定义。比如mini2440板子的分区方案可在mini2440_default_nand_part数组中查到。
+4.安装NVIDIA驱动
 
-MTD(memory technology device):内存技术设备，是linux用于描述ROM，NAND，NOR等内存设备的子系统的抽象。
+旧版本的NVIDIA驱动在更新中，出现了问题。因此需要使用DKMS手动安装之。
 
-除了MTD之外，常用的还有SPI Flash方案。
+dkms的驱动放在`/var/lib/dkms`下，按照`module/version`的方式放置，比如`/var/lib/dkms/nvidia/450.102.04`。
+
+安装：
+
+`sudo dkms install -m nvidia/450.102.04`
+
+安装好之后，可以看到`/var/lib/dkms/nvidia/`下多了一个和内核版本同名的文件夹。这说明不同内核版本的驱动，实际上是可以在DKMS的框架下共存的。
+
+DKMS不仅支持不同内核版本的共存，还支持不同驱动版本的共存。但是这个一般来说是起负作用的，所以还要删掉不用的驱动版本：
+
+`sudo dkms remove nvidia/450.102.04`

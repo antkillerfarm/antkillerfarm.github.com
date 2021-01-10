@@ -201,6 +201,10 @@ https://mp.weixin.qq.com/s/6STRTuKdrM0OP3qrVArfCg
 
 OCR in the Wild：文本检测和识别的SOTA
 
+https://mp.weixin.qq.com/s/TcjaK7dzU44_EA6Hp1oc0g
+
+日漫迷有福了！这个系统可以全自动翻译日漫，再也不用啃生肉了
+
 # AI可解释性
 
 XAI(Explainable Artificial Intelligence)
@@ -340,10 +344,6 @@ Graph Neural Networks in Recommender Systems
 https://mp.weixin.qq.com/s/9ij8rI_MqyxbwVcjlF3HAA
 
 Google PPRGo:两分钟分类千万节点的最快GNN
-
-https://mp.weixin.qq.com/s/dIem8V4NiOWhKE_ENhAG5Q
-
-缺失数据还原-图神经网络新应用
 
 # 人脸检测/识别+
 

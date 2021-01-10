@@ -324,10 +324,6 @@ https://fwupd.org/
 
 Linux Vendor Firmware Service。这个网站提供Linux平台的各种BIOS或者外设的固件更新。
 
-https://mp.weixin.qq.com/s/yHSraIAYsjYWPaGXA3PijA
-
-一张图读懂非公平锁与公平锁
-
 https://mp.weixin.qq.com/s/3a5k3YA6ALri3BrQWQbOpw
 
 浅谈Cgroups

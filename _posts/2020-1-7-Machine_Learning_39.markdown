@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十九）——运筹学, 异常检测, 因果推理, 度量学习
+title:  机器学习（三十九）——运筹学, 异常检测, 因果推理
 category: ML 
 ---
 
@@ -152,6 +152,14 @@ https://mp.weixin.qq.com/s/DbR-Px_-vK-4xOweqsQKxw
 https://mp.weixin.qq.com/s/CYNbgL2UBPub8-ZFFfn2ug
 
 浅谈收益管理与动态定价
+
+----
+
+统计学接受的训练是推断数据之外的内容，而分析学接受的训练是探索数据集的内容。换言之，分析学家对数据中的内容作出结论，而统计学家则对数据中没有的内容作出结论。
+
+https://mp.weixin.qq.com/s/Jr4NlL4dN4hTDf8K4g-N_A
+
+如何识别滥竽充数的“数据骗子”
 
 # 异常检测
 
@@ -314,41 +322,3 @@ R. A. Fisher和J. Neyman的分歧
 https://mp.weixin.qq.com/s/oZTU7TAEf-gYzlSXdt0_BA
 
 因果推断在阿里文娱用户增长中的应用
-
-# 度量学习
-
-度量学习（Metric Learning）是机器学习里面的一个研究方向，主要是用来度量数据间距离。
-
-一般来说，对于可度量的数据，我们可以直接通过欧式距离，cosine等方法来做。但对于更广泛的数据我们就很难这样操作，如测量一个视频和一首音乐的距离。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/80656461
-
-Metric Learning科普文
-
-https://mp.weixin.qq.com/s/mvbyddpgxBFQSxC1zZZmFw
-
-如何通过距离度量学习解决Street-to-Shop问题
-
-https://mp.weixin.qq.com/s/iuOmxW0OAhSA7xSoIIn1dw
-
-鲁继文：面向视觉内容理解的深度度量学习
-
-https://zhuanlan.zhihu.com/p/100553403
-
-Deep Metric Learning及其形式
-
-# 模型驱动 vs 数据驱动
-
-最近阅读了这篇文章，深有感慨：
-
-https://mp.weixin.qq.com/s/N7DE0kvf8THhJQwroHj4vA
-
-成不了AI高手？因为你根本不懂数据！听听这位老教授多年心血练就的最实用统计学
-
->注：吴喜之教授是我国著名的统计学家，退休前在中国人民大学统计学院任统计学教授。吴教授上世纪六十年代就读于北京大学数学力学系，八十年代出国深造，在美国北卡罗来纳大学获得统计学博士学位，是改革开放之后第一批留美并获得统计学博士学位的中国学者。多年来吴教授在国内外数十所高校讲授统计学课程，在国内统计学界享有盛誉。其知名的学生有李舰和刘思喆。
-
->李舰，从2003年开始，一直把R当作随身武器奋战在统计学和数据分析的第一线，是Rweibo、Rwordseg、tmcn等高质量R包的作者，在业界积累了大量的经验，目前供职于Mango Solutions（中国），任数据总监。
-
->刘思喆，2012至2016年就职于京东商城，推荐系统平台部高级经理，主要负责和推荐系统离线、在线相关的用户行为、商品特征的建模，以及数据监控平台。因工作业绩，在《京东技术解密》一书中获“数据达人”称号。

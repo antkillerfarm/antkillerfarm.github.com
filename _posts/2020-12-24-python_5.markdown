@@ -77,6 +77,10 @@ https://mp.weixin.qq.com/s/hIMwss4h5k10oLanCYYS1g
 
 49个Python学习资源
 
+https://mp.weixin.qq.com/s/2tS7g4QxZ0r3wEt2nsSvLg
+
+这个库堪称Python编程的瑞士军刀！（funcy）
+
 https://mp.weixin.qq.com/s/06-iOG5TkRkHb4RZl1bXNQ
 
 史上最全Python迭代器与生成器
@@ -378,3 +382,7 @@ WTF Python：盘点鲜为人知的Python特性
 https://mp.weixin.qq.com/s/mANrN9k5Rjf1zQwhHvWUEw
 
 ​解密Python中的对象模型
+
+https://mp.weixin.qq.com/s/zQldWMBK5LWDFMyLbobK5w
+
+抖音超火的九宫格视频是如何生成的

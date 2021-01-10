@@ -187,6 +187,18 @@ https://mp.weixin.qq.com/s/PXSsMyWeUCOxrzX-5wkp5g
 
 # 语音合成参考资源+
 
+https://mp.weixin.qq.com/s/t1ht3weG63Sj59n-MW-Prw
+
+语音合成论文和英伟达撞车，韩国小哥紧急放出全部草稿代码和样本
+
+https://mp.weixin.qq.com/s/1glxeUx-4DCWRjJQMW7IiQ
+
+语音合成论文与韩国小哥“撞车”后续：英伟达“赶紧”把代码开源了
+
+https://mp.weixin.qq.com/s/c1QSGia52ICTc25i-C91Rg
+
+GAN跨界合成高保真音乐，Jeff Dean听了都陶醉
+
 https://mp.weixin.qq.com/s/f1W7PFLwkoJtVXb_7Rh3sw
 
 极大提升合成速度，百度提出首个全并行语音合成模型ParaNet
@@ -284,3 +296,7 @@ https://mp.weixin.qq.com/s/B-OJ_oW_uJufqIfIZSA7Ww
 https://mp.weixin.qq.com/s/UDUOIIyGJtXHdc3xcyfOIg
 
 万字综述：用于深度神经网络加速的Shift操作
+
+https://zhuanlan.zhihu.com/p/301162618
+
+深度学习模型压缩与加速

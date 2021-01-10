@@ -93,6 +93,10 @@ https://zhuanlan.zhihu.com/p/44497869
 
 知识图谱中的深度学习技术应用概述
 
+https://zhuanlan.zhihu.com/p/339053474
+
+知识图谱综述
+
 https://mp.weixin.qq.com/s/vtj1HgDC2slsOw9DGoURCA
 
 知识图谱实体链接：一份“由浅入深”的综述
@@ -408,23 +412,3 @@ https://mp.weixin.qq.com/s/fuI9U7aZpuk-WX6GQNtOuA
 https://mp.weixin.qq.com/s/lBeV6XWzk5bqNGiIMok-zw
 
 一文揭秘！自底向上构建知识图谱全过程
-
-https://mp.weixin.qq.com/s/uSPkgV-zIBEEJ0Ml-ILXqQ
-
-如何从零开始搭建知识图谱？
-
-https://mp.weixin.qq.com/s/3x__Dl1x1nMgWpp0zz_fPg
-
-如何构建知识体系：知识图谱搭建的第一步
-
-https://mp.weixin.qq.com/s/DALB8eBgVWHhFcZoJFLSpg
-
-基于图的RDF知识图谱数据管理
-
-https://mp.weixin.qq.com/s/An9mGawI8mhtlqyrVxTzYw
-
-SIGIR 2018基于知识图谱的文本信息检索
-
-https://mp.weixin.qq.com/s/3aINjnNwALEqbBAuLi6pEA
-
-应用知识图谱的推荐方法与系统

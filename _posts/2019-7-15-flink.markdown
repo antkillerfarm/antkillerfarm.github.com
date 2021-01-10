@@ -379,6 +379,10 @@ https://mp.weixin.qq.com/s/Y9SdWSELsgkdV2sO26SBSA
 
 推荐几款Redis可视化工具
 
+https://mp.weixin.qq.com/s/IX0dWN24EqH8vAs9ZXnfFg
+
+四个大点，搞懂Redis到底快在哪里？
+
 ## Pika
 
 Pika是一个可持久化的大容量redis存储服务，兼容string、hash、list、zset、set的绝大部分接口(兼容详情)，解决redis由于存储数据量巨大而导致内存不够用的容量瓶颈。

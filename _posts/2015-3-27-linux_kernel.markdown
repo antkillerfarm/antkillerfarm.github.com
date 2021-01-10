@@ -161,10 +161,6 @@ typedef struct {
 
 可以看出，这种实现方式对node在UserData中出现的位置也没有什么额外的要求，有很好的灵活性。
 
-# 同步锁
-
-read-write lock、RCU lock、spin lock
-
 # 内核模块的参数
 
 用户模块可以通过main函数传递命令行参数。而内核模块也有类似的用法：

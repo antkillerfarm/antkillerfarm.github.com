@@ -274,3 +274,7 @@ https://mp.weixin.qq.com/s/TLe6qAAxWJZnKUXo6EGp5g
 https://mp.weixin.qq.com/s/CWCPmfLrh3FY2VtpmiWJug
 
 揭秘GPS背后的“隐藏人物”！从小乡村到海军基地，这位女程序员把“地球”带进日常（Gladys West）
+
+https://mp.weixin.qq.com/s/Jf2xn5E1yvlxlT9lEWT47Q
+
+30张照片回顾乔布斯和比尔盖茨之间“不得不说”的故事

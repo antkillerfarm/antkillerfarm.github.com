@@ -21,6 +21,10 @@ category: Bombs & Satellite
 
 -- by 周恩来
 
+老虎是要吃人的，什么时候吃，决定于它的肠胃，向它让步是不行的。出兵援朝是必要的，打烂了，最多就等于解放战争晚胜利几年就是了。所以迟打不如早打。
+
+-- by 彭德怀
+
 ----
 
 在解放战争时，美国朝野上下对蒋介石的军事能力非常鄙视，认为国民党军就是浪费钱的废物。
@@ -102,16 +106,6 @@ https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-19530912.htm
 https://zhuanlan.zhihu.com/p/79340530
 
 抗美援朝战争爆发后，功德林改造的战犯们有何积极反应？
-
-----
-
-https://www.zhihu.com/answer/745311401
-
-为什么抗美援朝时中国和朝鲜军队装备那么落后却可以打过以美军为首的联合国军？
-
-https://zhuanlan.zhihu.com/p/262573038
-
-最惨烈一战“铁在烧”，为什么中国军队是“轻步兵之王”？
 
 ----
 

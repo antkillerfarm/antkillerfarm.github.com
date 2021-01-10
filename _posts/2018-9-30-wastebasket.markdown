@@ -203,10 +203,6 @@ https://mp.weixin.qq.com/s/ELC60377pzaFwJv7czOneQ
 
 15种偶然制造的东西，居然改变了世界！
 
-https://mp.weixin.qq.com/s/aUYieCVLLom7EaWIhfccRQ
-
-院士写了首《化工之歌》，聊聊化工那些事
-
 https://mp.weixin.qq.com/s/SkQ69SnATYXzlXZ2FEWVsw
 
 为什么金属不能放进微波炉，结果太可怕了......
@@ -222,10 +218,6 @@ https://mp.weixin.qq.com/s/K-ukk-HuztMDCyHWLZaXww
 https://mp.weixin.qq.com/s/NE20FomTJCFd_HSfXTHyjg
 
 年仅21岁，干掉6位诺贝尔奖得主，被誉为科学界最强杀手，却惨被人骂成一个笑话（央视《走近科学》栏目）
-
-https://mp.weixin.qq.com/s/oTltrhF25ClrImp6KUlagw
-
-他俩曾和鸽子较劲，却歪打正着获得诺奖（阿诺·彭齐亚斯（Arno Penzias）和罗伯特·威尔逊（Robert Wilson）——宇宙微波背景）
 
 https://mp.weixin.qq.com/s/CkZhqcGxRoOoaLGvQIVUIQ
 
@@ -246,10 +238,6 @@ https://mp.weixin.qq.com/s/BfQ0qUHpAfmB3_mHvyeCDw
 https://mp.weixin.qq.com/s/Rd-rOSV14sNYg0ZXsPdzuQ
 
 60年前构想的未来世界，我们已经实现了50%（《小灵通漫游未来》）
-
-https://mp.weixin.qq.com/s/epb4AIyg8_OqjAgGEbB9Ag
-
-31年前的北美大停电 背后的神秘力量是谁？（太阳风暴）
 
 https://mp.weixin.qq.com/s/uIYvfBlmzYkXS5hcgsCAKg
 
@@ -307,6 +295,14 @@ https://www.zhihu.com/answer/303210942
 https://www.zhihu.com/question/22910286
 
 日本92式重机枪的弹板供弹系统被诟病为一个败笔，为什么不直接在战场上改装成弹链供弹呢？
+
+----
+
+希兰姆·珀西·马克沁是著名的机枪之父马克沁的儿子。他从小就很喜欢射击。但是当时枪支的噪音非常大。在森林里打猎时，每开一枪都会惊扰周围的猎物；而且还会影响周围的居民。因此，他在1902年时发明了第一代“马克沁消音器”。
+
+https://mp.weixin.qq.com/s/vII5zOWBArxDvsHiyAyYGQ
+
+消音器
 
 ----
 
@@ -377,3 +373,11 @@ https://mp.weixin.qq.com/s/mzAgmh9JDQYAV2S9uJBfjw
 https://mp.weixin.qq.com/s/5fRHmNqQybS9GvKxpuc2TQ
 
 是不是真的“高处不胜寒”？
+
+https://mp.weixin.qq.com/s/Ez_FlfFOwpDKDqvIlJYfSQ
+
+2021首个全国冻哭预警地图出炉！今冬为啥这么冷？
+
+https://mp.weixin.qq.com/s/jQpUfIueOfCZ_Gu09JE94Q
+
+因为太冷，青岛的海面“冒烟了”！

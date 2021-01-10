@@ -353,6 +353,10 @@ https://mp.weixin.qq.com/s/b6XHZq6C0ZWOcDrysjMoog
 
 RALM: 实时Look-alike算法在微信看一看中的应用
 
+https://mp.weixin.qq.com/s/hODoZ4a7rChCkMhgN3mnGA
+
+​Look-alike算法加上RALM模型，让看一看资讯推荐更懂你
+
 https://mp.weixin.qq.com/s/R0RGMTUj5Er07yvYurzFuQ
 
 微信看一看实时Look-alike推荐算法

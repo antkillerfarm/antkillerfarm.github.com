@@ -75,6 +75,8 @@ VMware是独立的第三方软件，而**KVM**作为一项虚拟化技术已经�
 
 ![](/images/img3/bare_metal.png)
 
+除此虚拟PC之外，还有虚拟网卡（如virtio）和虚拟交换机（如ovs）。
+
 参考：
 
 https://mp.weixin.qq.com/s/Zmu57U-HlPsyby_qvHSVHQ
@@ -88,6 +90,10 @@ https://mp.weixin.qq.com/s/dTygs-QirMgxIrV7SaqjUg
 https://mp.weixin.qq.com/s/WZyuTtEfaTFLnCfvhOrp7g
 
 虚拟化原理和分类
+
+https://mp.weixin.qq.com/s/jMC_9tdNuGylDvM_cCqoeA
+
+virtio+ovs转发原理和性能分析
 
 ## 使用
 
@@ -256,6 +262,10 @@ https://cloud.tencent.com/developer/article/1518465
 https://www.cnblogs.com/clsn/p/8410309.html
 
 Docker容器入门
+
+https://mp.weixin.qq.com/s/g9-HDyEcxm3Ez04SsApGgg
+
+Docker镜像优化：从1.16GB到22.4MB
 
 # Android研究
 

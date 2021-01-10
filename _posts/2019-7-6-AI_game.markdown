@@ -326,3 +326,7 @@ https://mp.weixin.qq.com/s/cA1AXfpV3ZcMNX9k5XKlww
 https://zhuanlan.zhihu.com/p/231302709
 
 聊聊GPU峰值计算能力
+
+https://zhuanlan.zhihu.com/p/340775090
+
+从Thinker到Evolver：对可演化AI芯片的探索

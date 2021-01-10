@@ -231,6 +231,12 @@ https://mp.weixin.qq.com/s/NB12KQOHjso9wH8Ju1ueSA
 
 ZIP也能边下载边解压？流式解压技术揭秘！
 
+## 参考
+
+https://mp.weixin.qq.com/s/9kdeSj0RwUvlIi4oBEF_Wg
+
+速度与压缩比如何兼得？压缩算法在构建部署中的优化
+
 # WireShark
 
 WireShark是一个网络协议包分析工具，最初名叫Ethereal。它的官网是：

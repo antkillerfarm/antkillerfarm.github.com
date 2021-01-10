@@ -326,3 +326,7 @@ https://mp.weixin.qq.com/s/fAHlrfchgkQ1Wuc8sfTlZg
 https://zhuanlan.zhihu.com/p/259710601
 
 数据类别不平衡/长尾分布？不妨利用半监督或自监督学习
+
+https://mp.weixin.qq.com/s/4gLlCmmw3GK_Sbt_BXXEKQ
+
+使用遗传交叉算子进行过采样处理数据不平衡

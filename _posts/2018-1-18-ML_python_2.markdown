@@ -105,6 +105,10 @@ http://www.cnblogs.com/chaosimple/p/4153083.html
 
 十分钟搞定pandas
 
+https://mp.weixin.qq.com/s/MFwdjMrPVQESMJjQw__rXw
+
+一张图就能彻底搞定Pandas！
+
 http://pandas.pydata.org/pandas-docs/stable/comparison_with_sql.html
 
 Pandas和SQL的比较

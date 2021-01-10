@@ -173,6 +173,10 @@ https://blog.csdn.net/xiaoxifei/article/details/86506955
 
 关于PatchGAN的理解
 
+https://zhuanlan.zhihu.com/p/56808180
+
+图像翻译三部曲：pix2pix, pix2pixHD, vid2vid
+
 # CycleGAN
 
 Style Transfer的基本内容可参见《深度学习（十五）》。

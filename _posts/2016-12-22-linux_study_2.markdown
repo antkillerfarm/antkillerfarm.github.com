@@ -116,6 +116,12 @@ https://mp.weixin.qq.com/s/3fNLa-yO4fUWO3nO9id1iA
 
 `ncdu`
 
+参考：
+
+https://mp.weixin.qq.com/s/ALyVaHfEfgPsT-N1KCGS3w
+
+你知道du和df的统计结果为什么不一样
+
 ## 查看硬盘分区情况
 
 `sudo fdisk -l`

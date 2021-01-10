@@ -1,17 +1,13 @@
 ---
 layout: post
-title:  深度学习（三十）——Graph NN（2）
+title:  深度学习（三十）——Graph NN
 category: DL 
 ---
 
 * toc
 {:toc}
 
-# Graph NN（续）
-
-https://mp.weixin.qq.com/s/lyy3AhqLDBT88B2LSSIbZQ
-
-图表示解决长文本关系匹配问题：腾讯提出概念交互图算法
+# Graph NN+++
 
 https://mp.weixin.qq.com/s/bvp3NIrrarJc_MesKy1x_A
 

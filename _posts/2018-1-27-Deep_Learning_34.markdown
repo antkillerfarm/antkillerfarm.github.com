@@ -297,6 +297,10 @@ https://mp.weixin.qq.com/s/BwqVwN-9R8ROjgfnTUcMQg
 
 万字长文聊一聊Embedding技术
 
+https://mp.weixin.qq.com/s/iOhCZ__NbhQnjHVj0bSqRw
+
+怎样将Embedding融入传统机器学习框架？
+
 # 深度贝叶斯学习
 
 https://mp.weixin.qq.com/s/4sDNUZiOiS6VH_oRSnW6HQ

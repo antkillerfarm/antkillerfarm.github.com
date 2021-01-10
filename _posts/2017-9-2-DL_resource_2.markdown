@@ -341,6 +341,10 @@ https://mp.weixin.qq.com/s/fTFyH5jaLEWWPka_XP9EaQ
 
 视觉识别新范式：开放世界下的大规模长尾识别
 
+https://mp.weixin.qq.com/s/k4KyBOoxfAdvHQXxz2GSmA
+
+长尾识别中的Tricks汇总
+
 https://mp.weixin.qq.com/s/sOeBUZi5-7fGkqcd1MPmiQ
 
 李飞飞团队新作-有限标签的场景图预测

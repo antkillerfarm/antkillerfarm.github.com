@@ -137,6 +137,8 @@ https://mp.weixin.qq.com/s/cnHQSmM89Sp92gke_F9T2Q
 
 ## Qualcomm
 
+![](/images/img4/Snapdragon_835.png)
+
 SnapDragon = Kryo CPU + Adreno GPU + Hexagon DSP(include Hexagon Tensor Accelerator, HTA & Hexagon Vector eXtensions, HVX)
 
 参考：
@@ -144,6 +146,10 @@ SnapDragon = Kryo CPU + Adreno GPU + Hexagon DSP(include Hexagon Tensor Accelera
 https://zhuanlan.zhihu.com/p/51727365
 
 骁龙855细节曝光：引入张量加速器最亮眼
+
+https://zhuanlan.zhihu.com/p/341328310
+
+聊聊芯片技术趋势
 
 ## Huawei
 

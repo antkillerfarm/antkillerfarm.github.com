@@ -325,6 +325,14 @@ https://mp.weixin.qq.com/s/kEtoG4QVNn248k3Yhulrvw
 
 《语音识别引擎后端架构设计》58同城
 
+https://mp.weixin.qq.com/s/x_l5QliTPv7NyUJ5k4uaMQ
+
+基于Transformer的高效、低延时、流式语音识别模型
+
+https://mp.weixin.qq.com/s/4zm4kO4CU9-0sYKTSYdudw
+
+10小时训练数据打造多语种语音识别新高度
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/jwV4glj8vIUKSelzeRrxSg
@@ -382,15 +390,3 @@ https://zhuanlan.zhihu.com/p/45702794
 https://mp.weixin.qq.com/s/DB2C-a_xEyoczuNSG9Bt7w
 
 基于深度前馈序列记忆网络，如何将语音合成速度提升四倍？
-
-https://mp.weixin.qq.com/s/t1ht3weG63Sj59n-MW-Prw
-
-语音合成论文和英伟达撞车，韩国小哥紧急放出全部草稿代码和样本
-
-https://mp.weixin.qq.com/s/1glxeUx-4DCWRjJQMW7IiQ
-
-语音合成论文与韩国小哥“撞车”后续：英伟达“赶紧”把代码开源了
-
-https://mp.weixin.qq.com/s/c1QSGia52ICTc25i-C91Rg
-
-GAN跨界合成高保真音乐，Jeff Dean听了都陶醉

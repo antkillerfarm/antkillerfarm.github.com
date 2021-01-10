@@ -257,15 +257,39 @@ https://github.com/xingyizhou/ExtremeNet
 
 此外，Focal loss也是Anchor-Free模型的常用手段。
 
+## FCOS
+
+《FCOS: Fully Convolutional One-Stage Object Detection》
+
+https://zhuanlan.zhihu.com/p/62198865
+
+最新的Anchor-Free目标检测模型FCOS，现已开源！
+
+https://mp.weixin.qq.com/s/N93TrVnUuvAgfcoHXevTHw
+
+FCOS: 最新的one-stage逐像素目标检测算法
+
+https://mp.weixin.qq.com/s/ebTbbo-IeqyzDqSn2bgjsQ
+
+带你捋一捋anchor-free的检测模型：FCOS
+
+https://zhuanlan.zhihu.com/p/156112318
+
+FCOS算法的原理与实现
+
+https://mp.weixin.qq.com/s/Q-DSG-ZAW0z0X6LHDLmFFA
+
+FCOS：全卷积一阶段Anchor Free物体检测器，多种视觉任务的统一框架
+
+https://mp.weixin.qq.com/s/5YIBEmDAevosxEs-jRJNVg
+
+anchor-free的回归之作：FCOS
+
 ## 总结
 
 Anchor-Free模型主要是为了解决Two-stage模型运算速度较慢的问题而提出的，因此它们绝大多数都是One-stage模型。从目前的效果来看，某些Anchor-Free模型其精度已经接近Two-stage模型，但运算速度相比YOLOv3等传统One-stage模型，仍有较大差距，尚无太大的实用优势（可以使用，但优势不大）。
 
 其他比较知名的Anchor-Free模型还有：
-
-- FCOS
-
-《FCOS: Fully Convolutional One-Stage Object Detection》
 
 - FSAF
 
@@ -288,29 +312,3 @@ Sparse R-CNN: 在dense（单阶段），dense2sparse（二阶段）之外的另�
 https://mp.weixin.qq.com/s/LRSY2YsZGB_Vye7EbvhXpA
 
 Sparse R-CNN: 稀疏的目标检测，武装Fast RCNN
-
-## 参考
-
-https://mp.weixin.qq.com/s/T7DDWvtvCULfjcDmljvx5Q
-
-Anchor-free的对象检测网络汇总
-
-https://zhuanlan.zhihu.com/p/63024247
-
-锚框：Anchor box综述
-
-https://mp.weixin.qq.com/s/dYV446meJXtCQVFrLzWV8A
-
-目标检测中Anchor的认识及理解
-
-https://mp.weixin.qq.com/s/WAx3Zazx9Pq7Lb3vKa510w
-
-目标检测最新方向：推翻固有设置，不再一成不变Anchor
-
-https://zhuanlan.zhihu.com/p/64563186
-
-Anchor free深度学习的目标检测方法
-
-https://mp.weixin.qq.com/s/DoN-vha1H-2lHhbFOaVS8w
-
-FoveaBox：目标检测新纪元，无Anchor时代来临！

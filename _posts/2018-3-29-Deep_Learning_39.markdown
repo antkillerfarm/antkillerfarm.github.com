@@ -309,6 +309,10 @@ https://zhuanlan.zhihu.com/p/209133135
 
 基于深度学习的视频超分辨率技术：全面调研（2015-2020）
 
+https://mp.weixin.qq.com/s/9YSO1RW8mgyihrZWbEe20w
+
+视频超分辨率研究方法
+
 https://mp.weixin.qq.com/s/XZ-fn_Xd7vVoLiVr6Esb3g
 
 Ranking Attention-适用于视频分割的全新Attention机制
@@ -356,27 +360,3 @@ https://mp.weixin.qq.com/s/5qC70NoTBQ95vjI4cGl66g
 https://mp.weixin.qq.com/s/Wn-5VD2-YWwVUWCMEy-lvw
 
 AI碰撞短视频，从推荐到直播，快手探索了这些ML新思路
-
-https://mp.weixin.qq.com/s/cuejj8atJsbSDae9xnhsxA
-
-锁定视频中的目标：港大提出运动注意力检测方法
-
-https://mp.weixin.qq.com/s/AUfaghIcRwwzgZzhOqHVZg
-
-对标GLUE、ImageNet，谷歌推出视觉任务适应性基准VTAB
-
-https://mp.weixin.qq.com/s/sc3ROchBFK9pAb-FCKNwLg
-
-你说我导！微软玩转标题描述生成视频
-
-https://mp.weixin.qq.com/s/jUPhF6OHtVrmTbg29sQV2Q
-
-谷歌提出TVN视频架构：单CPU处理1s视频仅需37ms、GPU仅需10ms
-
-https://mp.weixin.qq.com/s/wwHUjME5vR1uF3ad_wlMzw
-
-更准确的弱监督视频动作定位，从生成注意力模型出发
-
-https://mp.weixin.qq.com/s/18KzXb4hHrWvt3QK2UUm3w
-
-使用深度学习从视频中估计车辆的速度

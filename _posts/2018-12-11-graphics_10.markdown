@@ -7,9 +7,13 @@ category: graphics
 * toc
 {:toc}
 
-# Harris
+# Harris（续）
 
-## Harris角点的性质（续）
+## Harris角点的性质
+
+**增大$$\alpha$$的值，将减小角点响应值R，降低角点检测的灵性，减少被检测角点的数量；减小$$\alpha$$值，将增大角点响应值R，增加角点检测的灵敏性，增加被检测角点的数量**。
+
+**Harris角点检测算子对亮度和对比度的变化不敏感**。这是因为在进行Harris角点检测时，使用了微分算子对图像进行微分运算，而微分运算对图像密度的拉升或收缩和对亮度的抬高或下降不敏感。换言之，对亮度和对比度的仿射变换并不改变Harris响应的极值点出现的位置。
 
 Harris角点检测算子使用的是角点附近的区域灰度二阶矩矩阵。而二阶矩矩阵可以表示成一个椭圆，椭圆的长短轴正是二阶矩矩阵特征值平方根的倒数。当特征椭圆转动时，特征值并不发生变化，所以判断角点响应值R也不发生变化，由此说明**Harris角点检测算子具有旋转不变性**。
 
@@ -251,13 +255,3 @@ SIFT算法的应用--目标识别之Bag-of-words模型
 https://zhuanlan.zhihu.com/p/25999669
 
 BOW算法，被CNN打爆之前的王者
-
-## SPM
-
-http://blog.csdn.net/chlele0105/article/details/16972695
-
-SPM:Spatial Pyramid Matching for Recognizing Natural Scene Categories空间金字塔匹配
-
-http://blog.csdn.net/jwh_bupt/article/details/9625469
-
-Spatial Pyramid Matching 小结

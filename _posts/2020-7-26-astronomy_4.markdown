@@ -17,6 +17,30 @@ https://mp.weixin.qq.com/s/hBAWo8Zsgjm0svYv_UG1jw
 
 一场历经数百万年的瘦身记
 
+https://mp.weixin.qq.com/s/REzPDwfZbqz-RneOZZmvUQ
+
+青海火球事件——“肇事者”身份调查
+
+https://mp.weixin.qq.com/s/NKzv2VpVDaJ_gSDl_L7FHA
+
+太阳，我们来了！
+
+https://mp.weixin.qq.com/s/lHc8w6wn3Tm6ZD5PPw0TFQ
+
+宇宙7问
+
+https://mp.weixin.qq.com/s/epb4AIyg8_OqjAgGEbB9Ag
+
+31年前的北美大停电 背后的神秘力量是谁？（太阳风暴）
+
+https://mp.weixin.qq.com/s/oTltrhF25ClrImp6KUlagw
+
+他俩曾和鸽子较劲，却歪打正着获得诺奖（阿诺·彭齐亚斯（Arno Penzias）和罗伯特·威尔逊（Robert Wilson）——宇宙微波背景）
+
+https://mp.weixin.qq.com/s/O5L7hvg1WXJpbwKvaY880w
+
+捕手LAMOST与高速星的故事
+
 # 两弹一星
 
 https://view.inews.qq.com/a/20171125A0E3WT00
@@ -184,6 +208,10 @@ https://mp.weixin.qq.com/s/MCAR8M2DoV30-McdsjTxDw
 https://mp.weixin.qq.com/s/3aLHfKF5grL6hunO7r_TAQ
 
 中国第一个发《Nature》的竟然是清朝人！被皇帝夸天下第一，他却觉得羞耻...（徐寿、华蘅芳、徐建寅）
+
+https://mp.weixin.qq.com/s/OO2OPmxjZJTCNiy_S2p-Aw
+
+中国第一个登上Nature的女科学家，居然出生在清朝？只活了29岁（王贞仪）
 
 https://mp.weixin.qq.com/s/Z2xRTxgRRHWWY2VICT4lQg
 

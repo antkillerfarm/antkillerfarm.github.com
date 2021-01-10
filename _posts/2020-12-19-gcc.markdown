@@ -55,6 +55,10 @@ https://stackoverflow.com/questions/27475977/c-undefined-reference-to-sqrt-even-
 
 C - undefined reference to “sqrt” even with '-lm'
 
+https://mp.weixin.qq.com/s/TnqAqpmuXsGFfpcSUqZ9GQ
+
+今日头条优化实践：iOS包大小二进制优化，一行代码减少60MB下载大小
+
 ## -Werror
 
 有的时候会遇到`-Werror=XXXX`这样的编译错误，如果确实不想改代码的话，可以用`-Wno-error=XXXX`或者`-Wno-XXXX`来回避之。
@@ -225,6 +229,14 @@ https://mp.weixin.qq.com/s/1JgHE1juxuYEmKO9SXMssA
 
 NAS+Det
 
+https://mp.weixin.qq.com/s/xnqAPh3hlQq3_QDmk2lOLg
+
+NAS在检测中的应用
+
 https://mp.weixin.qq.com/s/nG_Mzlevs9ougnyeJyT38A
 
 一文看懂AutoML
+
+https://mp.weixin.qq.com/s/qou0uUQVsU306KvB5JMKVg
+
+贝叶斯分析助你成为优秀的调参侠：自动化搜索物理模型的参数空间

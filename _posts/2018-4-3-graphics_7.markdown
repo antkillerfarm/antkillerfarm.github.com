@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  图像处理理论（七）——LBP, Fisherface, Viola-Jones
+title:  图像处理理论（七）——LBP, Fisherface
 category: graphics 
 ---
 
@@ -10,6 +10,22 @@ category: graphics
 # Eigenface
 
 ## 计算Eigenface（续）
+
+**Step 5**：计算的$$AA^T$$特征向量$$u_i$$。然而，$$AA^T$$太大了，我们只能退而求其次计算$$A^TA(M\times M \text{matrix})$$的特征向量$$v_i$$。
+
+那么$$u_i$$和$$v_i$$到底有什么关系呢？我们首先根据特征向量的定义，给出下式：
+
+$$A^TAv_i=\mu_iv_i$$
+
+其中，$$\mu_i$$是$$A^TA$$的特征值。
+
+$$A^TAv_i=\mu_iv_i\Rightarrow AA^TAv_i=\mu_iAv_i\Rightarrow CAv_i=\mu_iAv_i$$
+
+令$$u_i=Av_i$$，则：
+
+$$Cu_i=\mu_iu_i$$
+
+可见$$\mu_i$$同时也是$$AA^T$$的特征值，而对应的特征向量则是$$Av_i$$。
 
 实际上，$$A^TA$$的M个特征值，就是$$AA^T$$的前M大的特征值。
 
@@ -210,23 +226,3 @@ Eigenfaces的主要原理基于PCA，而Fisherface的主要原理基于LDA（参
 http://blog.csdn.net/smartempire/article/details/23377385
 
 Fisherface（LDA）
-
-# Viola-Jones
-
-Viola-Jones方法由Paul Viola和Michael Jones于2001年提出。
-
->Paul Viola，MIT本科（1988）+博士（1995）。先后在微软、Amazon担任研究员。
-
->Michael Jones，MIT博士（1997）。现为Mitsubishi electric research laboratories研究员。
-
-论文：
-
-《Rapid Object Detection using a Boosted Cascade of Simple Features》
-
-《Robust real-time face detection》
-
-《An Extended Set of Haar-like Features for Rapid Object Detection》
-
-《Learning Multi-scale Block Local Binary Patterns for Face Recognition》
-
-《Implementing the Viola-Jones Face Detection Algorithm》

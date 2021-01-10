@@ -9,26 +9,6 @@ category: DL
 
 # 神经元激活函数进阶（续）
 
-## GELU
-
-论文：
-
-《Gaussian Error Linear Units (GELUs)》
-
-参考：
-
-https://mp.weixin.qq.com/s/pA9JW75p9J5e5KHe3ifcBQ
-
-从ReLU到GELU，一文概览神经网络的激活函数
-
-https://mp.weixin.qq.com/s/LEPalstOc15CX6fuqMRJ8Q
-
-超越ReLU却鲜为人知，3年后被挖掘：BERT、GPT-2等都在用的激活函数（GELU）
-
-https://kexue.fm/archives/7309
-
-GELU的两个初等函数近似是怎么来的
-
 ## Swish
 
 Swish是Google大脑团队提出的一个新的激活函数：
@@ -285,40 +265,6 @@ https://mp.weixin.qq.com/s/_CENjzEK1kjsFpvX0H5gpQ
 
 结合堆叠与深度转换的新型神经翻译架构：爱丁堡大学提出BiDeep RNN
 
-# 图像变换+
-
-https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247504381&idx=2&sn=465027cc2a8f75a7f6ddf400830f61e0
-
-这个品质超高的漫画自动上色AI，让你DIY出喜欢的配色
-
-https://mp.weixin.qq.com/s/3Aq1HXpBzgNdcB130tCKbQ
-
-GAN网络图像翻译机：图像复原、模糊变清晰、素描变彩图
-
-https://mp.weixin.qq.com/s/DTVjncaERBmDfOkvXv_3qg
-
-皱眉细节完美复刻，阿尔伯塔大学团队标星1.7K的项目生成超逼真的肖像画
-
-https://mp.weixin.qq.com/s/UpfgxiIaSU4iIjbrkS--zA
-
-颠覆视频压缩的不一定是新压缩算法，而可能是GAN！英伟达新算法最高压缩90%流量
-
-https://mp.weixin.qq.com/s/yn_TQ-Mdcph3M1dfLu-KMw
-
-好好的人，说没就没了：这个视频“橡皮擦”让你瞬间消失，头发丝都不留
-
-https://mp.weixin.qq.com/s/-HKWSLDBwswuDYho29q5Kg
-
-怎样用Python控制图片人物动起来？一文就能Get！
-
-https://mp.weixin.qq.com/s/ECxcgclgHtjerFD4P3lvAA
-
-建造自己的“天空之城”，密歇根大学博士后的这项研究可以虚空造物、偷天换日
-
-https://mp.weixin.qq.com/s/LoQzVvMLoFDQDV_Xrdup5w
-
-升级版APDrawing，人脸照秒变线条肖像画，细节呈现惊人
-
 # CNN进化史
 
 ## 计算机视觉
@@ -338,3 +284,61 @@ https://mp.weixin.qq.com/s/LoQzVvMLoFDQDV_Xrdup5w
 **实例分割**：把图像中的每一个像素分到其所属物体实例。数据集：PASCAL, COCO
 
 **关键点检测**：检测物体上一组预定义关键点的位置，例如人体上或者人脸上的关键点。数据集：COCO
+
+参考：
+
+https://github.com/weiaicunzai/awesome-image-classification
+
+GitHub：图像分类最全资料集锦
+
+https://mp.weixin.qq.com/s/nK__d-PV6DY5mDfA_UgDmQ
+
+全解：目标检测，图像分类、分割、生成……
+
+https://mp.weixin.qq.com/s/Go8AQay7tgykXLRtfHGLmg
+
+改变你对世界看法的五大计算机视觉技术！
+
+https://mp.weixin.qq.com/s/WNkzfvYtEO5zJoe_-yAPow
+
+一文览尽计算机视觉研究方向
+
+https://zhuanlan.zhihu.com/p/55747295
+
+深度学习在计算机视觉领域（包括图像，视频，3-D点云，深度图）的应用一览
+
+## CNN简史
+
+![](/images/article/computer_vision_3.jpg)
+
+![](/images/article/CNN_3.png)
+
+完整版本参见：
+
+https://github.com/Nikasa1889/HistoryObjectRecognition/blob/master/HistoryOfObjectRecognition.pdf
+
+![](/images/img3/CNN.jpg)
+
+参考：
+
+https://mp.weixin.qq.com/s/K68CpueI4e4y7o1uZ28KMQ
+
+从神经科学到计算机视觉：人类与计算机视觉五十年回顾
+
+https://mp.weixin.qq.com/s/FzCrOiFuutqSQSp4VcydoQ
+
+计算机视觉简介：历史、现状和发展趋势
+
+## AlexNet
+
+2012年，ILSVRC比赛冠军的model——Alexnet（以第一作者Alex命名）的结构图如下：
+
+![](/images/article/AlexNet.png)
+
+换个视角：
+
+![](/images/article/AlexNet_2.png)
+
+AlexNet的caffe模板：
+
+https://github.com/BVLC/caffe/blob/master/models/bvlc_alexnet/deploy.prototxt

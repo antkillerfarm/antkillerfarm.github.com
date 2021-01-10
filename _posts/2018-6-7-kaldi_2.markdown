@@ -110,6 +110,10 @@ add-self-loops --self-loop-scale=0.1 \
 
 ## 解码
 
+https://mp.weixin.qq.com/s/2HqAQjLIQBGbuSQ9FYvTJg
+
+Kaldi的解码搜索
+
 # 对齐工具
 
 Montreal-Forced-Aligner：
@@ -249,29 +253,3 @@ SpeechBrain是一个基于pytorch的语音工具包，目前（2019.9）正在�
 官网：
 
 https://speechbrain.github.io/
-
-# AI工具++
-
-https://mp.weixin.qq.com/s/Zu_IPBQVJtcwNln-xvEZxQ
-
-DarkLabel：支持检测、跟踪、ReID数据集的标注软件
-
-https://mp.weixin.qq.com/s/5klwQCPtiZOwFJYHDOpWFg
-
-语义分割标注工具Semantic Segmentation Editor快速安装指南
-
-https://mp.weixin.qq.com/s/1EeYmZGoa-xpWmIvUoqCyw
-
-瑞士小哥开源文本英雄Texthero：一行代码完成数据预处理
-
-https://mp.weixin.qq.com/s/p9HpH2e5ShQCFcCxVNvMbg
-
-清华开源迁移学习算法库
-
-https://mp.weixin.qq.com/s/vzUt-5C_dRAChEfQYLp4lA
-
-PyTorch实现，GitHub 4000星：这是微软开源的计算机视觉库
-
-https://mp.weixin.qq.com/s/5VeersQKxcT9AtFXS_CXnA
-
-推荐一款超高速、多特性的高性能序列推理引擎——LightSeq

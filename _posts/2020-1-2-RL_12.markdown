@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  强化学习（十二）——Exploration & Exploitation
+title:  强化学习（十二）——Integrating Learning and Planning（2）
 category: RL 
 ---
 
@@ -74,6 +74,10 @@ https://zhuanlan.zhihu.com/p/25345778
 https://mp.weixin.qq.com/s/-EPdmepNK9THAwTx_TZypQ
 
 蒙特卡罗树搜索算法初学者指南
+
+https://mp.weixin.qq.com/s/DXS80tY8Eh3g9YmJxuaMLA
+
+蒙特卡洛树搜索在黑盒优化和神经网络结构搜索中的应用
 
 ## Game Tree
 
@@ -198,9 +202,3 @@ https://mp.weixin.qq.com/s/6fd8oxnahJ0EoocRV4q8Bg
 - **朴素探索(Naive Exploration)**: 在贪婪搜索的基础上增加一个$$\epsilon$$以实现朴素探索；
 
 - **乐观初始估计(Optimistic Initialization)**: 优先选择当前被认为是最高价值的行为，除非新信息的获取推翻了该行为具有最高价值这一认知；
-
-- **不确定优先(Optimism in the Face of Uncertainty)**: 优先尝试不确定价值的行为；
-
-- **概率匹配（Probability Matching)**: 根据当前估计的概率分布采样行为；
-
-- **信息状态搜索(Information State Search)**: 将已探索的信息作为状态的一部分联合个体的状态组成新的状态，以新状态为基础进行前向探索。

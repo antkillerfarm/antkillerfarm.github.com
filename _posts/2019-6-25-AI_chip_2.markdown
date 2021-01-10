@@ -143,14 +143,6 @@ https://mp.weixin.qq.com/s/KjQ5BTGd92Y0Mqzk1A5JYg
 
 老兵戴辉讲述海思视频监控芯片从0到1的血泪史！如何一步步成为行业霸主的
 
-## 新进展
-
-![](/images/img4/Snapdragon_835.png)
-
-https://zhuanlan.zhihu.com/p/341328310
-
-聊聊芯片技术趋势
-
 ## 参考
 
 ![](/images/img3/Wallace_Tree.png)

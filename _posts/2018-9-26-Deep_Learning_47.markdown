@@ -364,3 +364,49 @@ https://mp.weixin.qq.com/s/4VE2lZeFf05AyLp_s3nTFQ
 https://mp.weixin.qq.com/s/AI_QC8IgnjMSOAZJNbQjfQ
 
 空间变换网络简单介绍
+
+# 深度信息检索+
+
+https://mp.weixin.qq.com/s/N3JBHlqneG9dI0I26M3wHQ
+
+如何做好大规模视觉搜索？eBay基于实践总结出了7条建议
+
+https://mp.weixin.qq.com/s/8Twe3e3WKCY9pTiNtnW2sg
+
+重磅！谷歌等推出基于机器学习的数据库SageDB
+
+https://mp.weixin.qq.com/s/WpITPvYmixMHa0ha0MgWVA
+
+神马搜索如何提升搜索的时效性？
+
+https://zhuanlan.zhihu.com/p/163358322
+
+learning to match for product search
+
+https://mp.weixin.qq.com/s/_MpfRGYG_pleaEQMpQT5Mg
+
+深度学习在视觉搜索和匹配中的应用
+
+https://mp.weixin.qq.com/s/s8swIdAPw_VeAWnZTL1riA
+
+搜你所想，从Query意图识别到类目识别的演变
+
+https://mp.weixin.qq.com/s/dO3eDlhCSYRh3pjbI_gsQg
+
+深度学习图像检索(CBIR): 十年之大综述
+
+https://mp.weixin.qq.com/s/q4aPtUYi27h-0sqD4bokQQ
+
+再谈搜索中的Query扩展技术
+
+https://mp.weixin.qq.com/s/vwIbM2XNvj-OKCtzqjCVWQ
+
+搜索中涉及的算法问题
+
+https://mp.weixin.qq.com/s/LC4ch4O2eUjgbMLH9zT0pw
+
+如何用深度学习来做检索：度量学习中关于排序损失函数的综述（1）
+
+https://mp.weixin.qq.com/s/TwG6_KJvTGCzDMy6ZD6jsA
+
+如何用深度学习来做检索：度量学习中关于排序损失函数的综述（2）

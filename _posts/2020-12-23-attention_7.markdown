@@ -7,6 +7,30 @@ category: Attention
 * toc
 {:toc}
 
+# Transformer进阶（续）
+
+https://mp.weixin.qq.com/s/OEpLpWzkdfFUQf4cKNuG4w
+
+Performer:基于正交随机特征的快速注意力计算
+
+https://mp.weixin.qq.com/s/eWQLkiJ_XIo7LpTUE9c0qA
+
+Transformer中的相对位置编码
+
+https://mp.weixin.qq.com/s/V0NAOgluyZN9P8iuhMKRwQ
+
+Transformer为啥在NER上表现不好
+
+https://mp.weixin.qq.com/s/ANFSNW1-mcjPqjcroNHeZQ
+
+RealFormer：Real简单，Real有效
+
+https://mp.weixin.qq.com/s/u-Twg6Cj6VfL6m4K0seBlw
+
+谷歌研究院出品：高效Transformer模型最新综述
+
+# Attention进阶
+
 https://mp.weixin.qq.com/s/rrbwItXt-1EaGiqtDEGvog
 
 为节约而生：从标准Attention到稀疏Attention
@@ -63,6 +87,14 @@ https://mp.weixin.qq.com/s/vkyPwsaxH-SvHqQx09VhVw
 
 深度学习中的注意力机制（二）
 
+https://mp.weixin.qq.com/s/fbAAA7fO2voP_v-NsavQew
+
+深度学习中的注意力机制（三）
+
+https://mp.weixin.qq.com/s/CftkSOmAx0UTtCixdxj6_A
+
+深度学习中的注意力机制（完结篇）
+
 https://mp.weixin.qq.com/s/Qs6tm50YvzHaJv2rh60WMw
 
 撩一发深度文本分类之RNN via Attention
@@ -118,10 +150,6 @@ NLP领域中各式各样Attention知识系统性的梳理和总结
 https://mp.weixin.qq.com/s/_5YaZdYa8bTFiAzHyrMFBg
 
 理解卷积神经网络中的自注意力机制
-
-https://mp.weixin.qq.com/s/fbAAA7fO2voP_v-NsavQew
-
-深度学习中的注意力机制（三）
 
 https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
 
@@ -230,3 +258,7 @@ https://mp.weixin.qq.com/s/lZOIK5BRXZrmL_Z9crl6sA
 https://mp.weixin.qq.com/s/jRfOzKO6OlQLokIzipbqUQ
 
 为什么使用自注意力机制？
+
+https://zhuanlan.zhihu.com/p/339123850
+
+关于attention机制的一些细节的思考

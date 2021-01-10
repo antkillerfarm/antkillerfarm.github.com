@@ -358,3 +358,11 @@ Libra R-CNN：全面平衡的目标检测器
 https://mp.weixin.qq.com/s/groq55Cbts272k1mfhJwaQ
 
 超越bounding box的代表性点集：视觉物体表示的新方法
+
+https://mp.weixin.qq.com/s/vy8xlxGY8-m7F5GQetlQeg
+
+SaccadeNet：使用角点特征进行two-stage预测框精调
+
+https://mp.weixin.qq.com/s/N8vjh3HPWOfxo7ZdOr_eOg
+
+PAA论文解读：在物体检测中利用概率分布来将anchor分配为正负样本

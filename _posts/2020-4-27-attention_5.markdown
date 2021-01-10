@@ -217,6 +217,10 @@ https://mp.weixin.qq.com/s/N2PAgp-epq4i9CLll1nzJA
 
 华为联合北大、悉尼大学对Visual Transformer的最新综述
 
+https://mp.weixin.qq.com/s/cLPMJm4u67QDsJg0IkmYFQ
+
+解析Vision Transformer
+
 # BERT进阶
 
 ## AR vs AE

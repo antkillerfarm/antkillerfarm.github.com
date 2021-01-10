@@ -15,6 +15,30 @@ Information Retrieval是用户进行信息查询和获取的主要方式，是�
 
 《MatchZoo: A Toolkit for Deep Text Matching》
 
+## 度量学习
+
+度量学习（Metric Learning）是机器学习里面的一个研究方向，主要是用来度量数据间距离。
+
+一般来说，对于可度量的数据，我们可以直接通过欧式距离，cosine等方法来做。但对于更广泛的数据我们就很难这样操作，如测量一个视频和一首音乐的距离。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/80656461
+
+Metric Learning科普文
+
+https://mp.weixin.qq.com/s/mvbyddpgxBFQSxC1zZZmFw
+
+如何通过距离度量学习解决Street-to-Shop问题
+
+https://mp.weixin.qq.com/s/iuOmxW0OAhSA7xSoIIn1dw
+
+鲁继文：面向视觉内容理解的深度度量学习
+
+https://zhuanlan.zhihu.com/p/100553403
+
+Deep Metric Learning及其形式
+
 ## ARC-I & ARC-II
 
 《Convolutional neural network architectures for matching natural language sentences》
@@ -334,39 +358,3 @@ https://zhuanlan.zhihu.com/p/37020639
 https://mp.weixin.qq.com/s/TdnstQaBcLaXg8BvuR7oYA
 
 基于素描图的细粒度图像检索
-
-https://mp.weixin.qq.com/s/N3JBHlqneG9dI0I26M3wHQ
-
-如何做好大规模视觉搜索？eBay基于实践总结出了7条建议
-
-https://mp.weixin.qq.com/s/8Twe3e3WKCY9pTiNtnW2sg
-
-重磅！谷歌等推出基于机器学习的数据库SageDB
-
-https://mp.weixin.qq.com/s/WpITPvYmixMHa0ha0MgWVA
-
-神马搜索如何提升搜索的时效性？
-
-https://zhuanlan.zhihu.com/p/163358322
-
-learning to match for product search
-
-https://mp.weixin.qq.com/s/_MpfRGYG_pleaEQMpQT5Mg
-
-深度学习在视觉搜索和匹配中的应用
-
-https://mp.weixin.qq.com/s/s8swIdAPw_VeAWnZTL1riA
-
-搜你所想，从Query意图识别到类目识别的演变
-
-https://mp.weixin.qq.com/s/dO3eDlhCSYRh3pjbI_gsQg
-
-深度学习图像检索(CBIR): 十年之大综述
-
-https://mp.weixin.qq.com/s/q4aPtUYi27h-0sqD4bokQQ
-
-再谈搜索中的Query扩展技术
-
-https://mp.weixin.qq.com/s/vwIbM2XNvj-OKCtzqjCVWQ
-
-搜索中涉及的算法问题

@@ -373,27 +373,3 @@ Deep Domain Adaptation论文集(三)：基于深度网络结构差异&几何差�
 https://zhuanlan.zhihu.com/p/57083034
 
 Deep Domain Adaptation论文集(四)：基于生成对抗网络GAN
-
-https://zhuanlan.zhihu.com/p/57656210
-
-Deep Domain Adaptation论文集(五)：基于数据重构的迁移方法
-
-https://zhuanlan.zhihu.com/p/57930557
-
-Deep Domain Adaptation论文集(六)：源域与目标域特征空间不一致的处理方法
-
-https://zhuanlan.zhihu.com/p/58514431
-
-Domain Adaptation：不用深度网络，如何处理源域和目标域异构问题？
-
-https://zhuanlan.zhihu.com/p/272508224
-
-Domain Adaptation基础概念与相关文章解读
-
-https://mp.weixin.qq.com/s/7QrIfNXQgSqYC1SOFUOlgQ
-
-对迁移学习中域适应的理解和3种技术的介绍
-
-https://mp.weixin.qq.com/s/e_ltoKzqBhmicwb7vcFcoQ
-
-迁移学习-该做的和不该做的

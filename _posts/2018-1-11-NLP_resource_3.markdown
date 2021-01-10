@@ -315,6 +315,10 @@ https://mp.weixin.qq.com/s/EXS-KXd-UE1Vovvzulqj2g
 
 事件抽取综述（中）
 
+https://mp.weixin.qq.com/s/X0UbooOJ5B067wilXq4F2A
+
+事件抽取综述（下）
+
 https://mp.weixin.qq.com/s/JY6Mu7NMtEnmjEgHCg_eYg
 
 文本信息抽取与结构化
@@ -330,6 +334,10 @@ NLP中关系抽取的概念，发展及其展望
 https://mp.weixin.qq.com/s/q3QAfxw8k1ZAWl-NZPw5qA
 
 如何使用卷积神经网络进行关系抽取
+
+https://mp.weixin.qq.com/s/azD5OKyTxYVVZM8eho4JXA
+
+关系抽取到底在乎什么？
 
 ## 短文本相似度
 

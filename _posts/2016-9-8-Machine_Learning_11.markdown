@@ -84,6 +84,10 @@ https://mp.weixin.qq.com/s/D2Am1tyCt3DQLvF0ylLJrg
 
 深入浅出聚类算法！如何对王者英雄聚类分析，探索英雄之间的秘密
 
+https://mp.weixin.qq.com/s/PKfsSMMtwks_KqRkpKJbKA
+
+理解高斯混合模型中期望最大化的M-Step
+
 ## 重新审视混合高斯模型
 
 下面给出混合高斯模型各参数的推导过程。

@@ -7,6 +7,18 @@ category: graphics
 * toc
 {:toc}
 
+# 从BOW到SPM（续）
+
+## SPM
+
+http://blog.csdn.net/chlele0105/article/details/16972695
+
+SPM:Spatial Pyramid Matching for Recognizing Natural Scene Categories空间金字塔匹配
+
+http://blog.csdn.net/jwh_bupt/article/details/9625469
+
+Spatial Pyramid Matching 小结
+
 # ILSVRC 2010考古
 
 ILSVRC 2010的冠军是NEC和UIUC的联合队伍。这也是DL于2012年大放光彩之前比较杰出的成果。虽然现在它通常作为反面教材，出现在与DL的对比场景中，然而不可否认的是，它仍然是一个算法的杰作。
@@ -337,6 +349,10 @@ https://zhuanlan.zhihu.com/p/113360369
 
 从现代GPU编程角度看SIMD与SIMT
 
+https://mp.weixin.qq.com/s/UExKPAMbA9EfRW35P3WnFA
+
+RISC-V其实是反潮流，但是……
+
 ## 术语
 
 Shared Virtual Memory，SVM
@@ -396,3 +412,13 @@ CPU强调单core的极致性能，因此广泛使用了如下技术：
 ![](/images/img4/GPU.png)
 
 GPU不追求单core的性能，因此也没有那些复杂的控制逻辑。这样省下来的电路，可以变成更多的ALU。由于数据处理的局部性，通常可以若干ALU共享一套Fetch/Decode和Ctx。
+
+参考：
+
+http://www.cnblogs.com/geniusalex/archive/2008/12/26/1941766.html
+
+CPU GPU设计工作原理
+
+https://mp.weixin.qq.com/s/-Wg1GtVGUxfshJ5d5NDd-Q
+
+聊聊GPU的计算能力上限

@@ -337,6 +337,10 @@ https://mp.weixin.qq.com/s/Srpv04X2vaIr2da4xbEMdg
 
 从对话生成和文本风格转化看文本生成技术
 
+https://mp.weixin.qq.com/s/DeLB7mV9p-MX-c9LI-XwBQ
+
+文本生成魔改方案汇总
+
 https://zhuanlan.zhihu.com/p/47949269
 
 开放域下的对话系统
@@ -392,15 +396,3 @@ https://mp.weixin.qq.com/s/nGb-8M4S1a_4Yz9Lzjvzew
 https://mp.weixin.qq.com/s/Pm3wB4VRuoBR-XLjW_jpfQ
 
 反讽识别综述
-
-https://mp.weixin.qq.com/s/whWaseYWcurOLp-V8gCBvQ
-
-基于不同颗粒度语言联合训练的表示学习
-
-https://mp.weixin.qq.com/s/5F6h2F8L-OdFJxBY2QrWJg
-
-不只有BERT！盘点2018年NLP令人激动的10大想法
-
-https://mp.weixin.qq.com/s/wBsh9dmMPks04X2pDB8Ang
-
-沈向洋等重磅论文：公开微软小冰系统设计，迄今最详细！

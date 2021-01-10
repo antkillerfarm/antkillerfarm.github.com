@@ -7,7 +7,55 @@ category: graphics
 * toc
 {:toc}
 
-# Meanshift（续）
+# Meanshift
+
+## Meanshift聚类（续）
+
+因此，上述Mean Shift向量也可以改写成：
+
+$$M_h\left ( x \right )=\frac{\sum_{i=1}^{n}G\left ( \frac{x_i-x}{h_i} \right )w\left ( x_i \right )\left ( x_i-x \right )}{\sum_{i=1}^{n}G\left ( \frac{x_i-x}{h_i} \right )w\left ( x_i \right )}$$
+
+这里的核函数可以是Uniform核，也可以是Gaussian核。
+
+参考：
+
+https://wenku.baidu.com/view/5862334827d3240c8447ef40.html
+
+meanshift算法简介
+
+http://www.cnblogs.com/liqizhou/archive/2012/05/12/2497220.html
+
+Meanshift，聚类算法
+
+https://wenku.baidu.com/view/0d9eb876a417866fb84a8eb2.html
+
+mean-shift算法概述
+
+http://www.cnblogs.com/cfantaisie/archive/2011/06/10/2077188.html
+
+meanshift聚类
+
+https://blog.csdn.net/google19890102/article/details/51030884
+
+Mean Shift聚类算法
+
+## 反向投影图
+
+在继续介绍Meanshift之前，我们先引入反向投影图的概念。
+
+首先，我们对图像的像素值按照某种特征进行直方图统计，得到一组bin值。
+
+然后，计算位置x上的bin值，并用该bin值替换原来的像素值，就得到了反向投影图。
+
+参考：
+
+https://blog.csdn.net/poiiy333/article/details/9051409
+
+反向投影图
+
+http://www.cnblogs.com/zsb517/archive/2012/06/20/2556508.html
+
+opencv直方图反向投影
 
 ## Meanshift与目标跟踪
 
@@ -202,9 +250,3 @@ $$R=det \boldsymbol{M} - \alpha(trace\boldsymbol{M})^2$$
 $$det\boldsymbol{M} = \lambda_1\lambda_2=AC-B^2$$
 
 $$trace\boldsymbol{M}=\lambda_2+\lambda_2=A+C$$
-
-## Harris角点的性质
-
-**增大$$\alpha$$的值，将减小角点响应值R，降低角点检测的灵性，减少被检测角点的数量；减小$$\alpha$$值，将增大角点响应值R，增加角点检测的灵敏性，增加被检测角点的数量**。
-
-**Harris角点检测算子对亮度和对比度的变化不敏感**。这是因为在进行Harris角点检测时，使用了微分算子对图像进行微分运算，而微分运算对图像密度的拉升或收缩和对亮度的抬高或下降不敏感。换言之，对亮度和对比度的仿射变换并不改变Harris响应的极值点出现的位置。

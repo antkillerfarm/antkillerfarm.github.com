@@ -327,6 +327,10 @@ https://mp.weixin.qq.com/s/NdnE4uiT_b7omDx_uBGAtg
 
 你可以说一下缓存击穿、穿透、雪崩的区别和解决方法吗？
 
+https://mp.weixin.qq.com/s/QgFbw5thvip2txUJZNQqCA
+
+缓存一致性问题怎么解决？
+
 ## 数据管理工具
 
 数据管理工具主要有：Navicat和DataGrip。
@@ -348,3 +352,7 @@ https://mp.weixin.qq.com/s/mYwaGszQGod_o6f3p2QbDw
 https://mp.weixin.qq.com/s/O94Q1Dxe8TnbCMv9d_hlOg
 
 Uber推出数据湖集成神器DBEvents，支持MySQL、Cassandra等
+
+https://mp.weixin.qq.com/s/ufvvGCh7xxu8keQ-j0bjEA
+
+数仓实时化改造：Hudi on Flink在顺丰的实践应用

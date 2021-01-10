@@ -358,3 +358,11 @@ Circle Loss：从统一的相似性对的优化角度进行深度特征学习
 https://zhuanlan.zhihu.com/p/304462034
 
 根据标签分布来选择损失函数
+
+https://mp.weixin.qq.com/s/Ywzbn2_QqYd1W8dv8cxupw
+
+Seesaw Loss：一种面向长尾目标检测的平衡损失函数
+
+https://mp.weixin.qq.com/s/qJIlbLuM7--wj3fDLUecYw
+
+Pytorch中的四种经典Loss源码解析

@@ -343,3 +343,7 @@ https://mp.weixin.qq.com/s/1JJo0FgMVlhIy6R9CxI_sQ
 https://mp.weixin.qq.com/s/qnAXhfGb74ivRwlGcdApOQ
 
 一文详解多智能体强化学习的基础和应用
+
+https://mp.weixin.qq.com/s/4AfoQ6IBJ2rKbmKvYD1Dow
+
+多Agent深度强化学习综述(中文版)，21页pdf

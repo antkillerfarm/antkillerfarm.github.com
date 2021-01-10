@@ -237,14 +237,6 @@ https://mp.weixin.qq.com/s/oSuSaPe2RYdm3NY0VZAiVQ
 
 ----
 
-希兰姆·珀西·马克沁是著名的机枪之父马克沁的儿子。他从小就很喜欢射击。但是当时枪支的噪音非常大。在森林里打猎时，每开一枪都会惊扰周围的猎物；而且还会影响周围的居民。因此，他在1902年时发明了第一代“马克沁消音器”。
-
-https://mp.weixin.qq.com/s/vII5zOWBArxDvsHiyAyYGQ
-
-消音器
-
-----
-
 ![](/images/img3/FCC.png)
 
 越来越大的加速器：

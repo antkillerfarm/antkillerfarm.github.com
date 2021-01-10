@@ -7,49 +7,7 @@ category: DL
 * toc
 {:toc}
 
-# 花式卷积
-
-## 分组卷积（续）
-
-https://mp.weixin.qq.com/s/0MvCnm46pgeMGEw-EdNv_w
-
-CNN模型之ShuffleNet
-
-https://mp.weixin.qq.com/s/tceLrEalafgL8R44DZYP9g
-
-旷视科技提出新型轻量架构ShuffleNet V2：从理论复杂度到实用设计准则
-
-https://mp.weixin.qq.com/s/Yhvuog6NZOlVWEZURyqWxA
-
-ShuffleNetV2：轻量级CNN网络中的桂冠
-
-https://mp.weixin.qq.com/s/zLf0aKeMYwqMwC1TymMxgQ
-
-移动端高效网络，卷积拆分和分组的精髓
-
-https://zhuanlan.zhihu.com/p/86095608
-
-Learnable Group Convolutions:可以学习的分组卷积
-
-https://mp.weixin.qq.com/s/liCS3JoRj1scpc0jXFA4-w
-
-分组卷积最新进展，全自动学习的分组有哪些经典模型？
-
-## Separable convolution
-
-前面介绍的都是正方形的卷积核，实际上长条形的卷积核也是很常用的。比如可分离卷积。
-
-我们知道卷积的计算量和卷积核的面积成正比。对于k x k的卷积核K来说，计算复杂度就是$$O(k^2)$$。
-
-如果我们能找到1 x k的卷积核H和k x 1的卷积核V，且$$K = V * H$$，则称K是可分离的卷积核。
-
-根据卷积运算满足结合律，可得：
-
-$$f * K = f * (V * H) = f * V * H$$
-
-这样就将一个k x k的卷积运算，转换成1 x k + k x 1的卷积运算，从而大大节省了参数和计算量。
-
-显然，不是所有的卷积核都满足可分离条件。但是不要紧，NN有自动学习并逼近函数的能力。经过训练之后：$$K \approx V * H$$
+# 花式卷积（续）
 
 ## 1x1卷积
 
@@ -205,6 +163,10 @@ https://mp.weixin.qq.com/s/w43wfF1dKMu65as6lAlrsg
 
 可变形卷积在视频学习中的应用:如何利用带有稀疏标记数据的视频帧
 
+https://mp.weixin.qq.com/s/PKSrgy7KdtVUv4EXVDyiOw
+
+再思考可变形卷积
+
 ## 3D卷积
 
 3D卷积一般用于视频（2D图像+1D时序）和医学影像（3D立体图像）的分析处理中。
@@ -314,3 +276,29 @@ CNN-反卷积
 http://buptldy.github.io/2016/10/29/2016-10-29-deconv/
 
 Transposed Convolution, Fractionally Strided Convolution or Deconvolution（中文blog）
+
+# 迁移学习+
+
+https://zhuanlan.zhihu.com/p/57656210
+
+Deep Domain Adaptation论文集(五)：基于数据重构的迁移方法
+
+https://zhuanlan.zhihu.com/p/57930557
+
+Deep Domain Adaptation论文集(六)：源域与目标域特征空间不一致的处理方法
+
+https://zhuanlan.zhihu.com/p/58514431
+
+Domain Adaptation：不用深度网络，如何处理源域和目标域异构问题？
+
+https://zhuanlan.zhihu.com/p/272508224
+
+Domain Adaptation基础概念与相关文章解读
+
+https://mp.weixin.qq.com/s/7QrIfNXQgSqYC1SOFUOlgQ
+
+对迁移学习中域适应的理解和3种技术的介绍
+
+https://mp.weixin.qq.com/s/e_ltoKzqBhmicwb7vcFcoQ
+
+迁移学习-该做的和不该做的

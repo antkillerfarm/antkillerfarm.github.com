@@ -97,6 +97,12 @@ zabbix是一个基于WEB界面的提供分布式系统监视以及网络监视�
 
 http://www.zabbix.com/
 
+参考：
+
+https://mp.weixin.qq.com/s/donTVjZFrkUFleswiJr-Bg
+
+监控系统选型解析
+
 ## Cacti
 
 Cacti是一套基于PHP,MySQL,SNMP及RRDTool开发的网络流量监测图形分析工具。

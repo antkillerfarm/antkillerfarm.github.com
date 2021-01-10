@@ -9,65 +9,7 @@ category: DL
 
 # CNN进化史
 
-## 计算机视觉（续）
-
-参考：
-
-https://github.com/weiaicunzai/awesome-image-classification
-
-GitHub：图像分类最全资料集锦
-
-https://mp.weixin.qq.com/s/nK__d-PV6DY5mDfA_UgDmQ
-
-全解：目标检测，图像分类、分割、生成……
-
-https://mp.weixin.qq.com/s/Go8AQay7tgykXLRtfHGLmg
-
-改变你对世界看法的五大计算机视觉技术！
-
-https://mp.weixin.qq.com/s/WNkzfvYtEO5zJoe_-yAPow
-
-一文览尽计算机视觉研究方向
-
-https://zhuanlan.zhihu.com/p/55747295
-
-深度学习在计算机视觉领域（包括图像，视频，3-D点云，深度图）的应用一览
-
-## CNN简史
-
-![](/images/article/computer_vision_3.jpg)
-
-![](/images/article/CNN_3.png)
-
-完整版本参见：
-
-https://github.com/Nikasa1889/HistoryObjectRecognition/blob/master/HistoryOfObjectRecognition.pdf
-
-![](/images/img3/CNN.jpg)
-
-参考：
-
-https://mp.weixin.qq.com/s/K68CpueI4e4y7o1uZ28KMQ
-
-从神经科学到计算机视觉：人类与计算机视觉五十年回顾
-
-https://mp.weixin.qq.com/s/FzCrOiFuutqSQSp4VcydoQ
-
-计算机视觉简介：历史、现状和发展趋势
-
-## AlexNet
-
-2012年，ILSVRC比赛冠军的model——Alexnet（以第一作者Alex命名）的结构图如下：
-
-![](/images/article/AlexNet.png)
-
-换个视角：
-
-![](/images/article/AlexNet_2.png)
-
-AlexNet的caffe模板：
-
-https://github.com/BVLC/caffe/blob/master/models/bvlc_alexnet/deploy.prototxt
+## AlexNet（续）
 
 其中的LRN（Local Response Normalization）层也是当年的遗迹，被后来的实践证明，对于最终效果和运算量没有太大帮助，因此也就慢慢废弃了。
 
@@ -300,3 +242,9 @@ http://blog.csdn.net/whiteinblue/article/details/43312059
 第五步，是计算两张照片得到的Y的相似程度，如果超过特定的阈值，就认定是同一个人。
 
 深度学习的到来对整个流程有一个巨大的冲击。
+
+一开始，研究者用深度学习完成人脸检测、特征点定位、预处理、特征提取和识别等每个独立的步骤。而后首先被砍掉的是预处理，我们发现这个步骤是完全不必要的。理论上来解释，深度学习学出来的底层滤波器本身就可以完成光照的预处理，而且这个预处理是以“识别更准确”为目标进行的，而不是像原来的预处理一样，以“让人看得更清楚”为目标。人的知识和机器的知识其实是有冲突的，人类觉得好的知识不一定对机器识别有利。
+
+而最近的一些工作就是把第二步特征点定位砍掉。因为神经网络也可以进行对齐变换，所以我们的工作通过空间变换（spatial transform），将图片自动按需进行矫正。并且我有一个猜测：传统的刻意把非正面照片转成正面照片的做法，也未必是有利于识别的。因为一个观察结果是，同一个人的两张正面照相似度可能小于一张正面、一张稍微转向的照片的相似度。最终，我们希望进行以识别为目标的对齐（recognition oriented alignment）。
+
+在未来，或许检测和识别也可能合二为一。现在的检测是对一个通用的人脸的检测，未来或许可以实现检测和识别全部端到端完成：只有特定的某个人脸出现，才会触发检测框出现。

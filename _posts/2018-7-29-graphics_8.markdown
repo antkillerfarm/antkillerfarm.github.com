@@ -1,13 +1,31 @@
 ---
 layout: post
-title:  图像处理理论（八）——目标跟踪, Meanshift
+title:  图像处理理论（八）——Viola-Jones, 目标跟踪, Meanshift
 category: graphics 
 ---
 
 * toc
 {:toc}
 
-# Viola-Jones（续）
+# Viola-Jones
+
+Viola-Jones方法由Paul Viola和Michael Jones于2001年提出。
+
+>Paul Viola，MIT本科（1988）+博士（1995）。先后在微软、Amazon担任研究员。
+
+>Michael Jones，MIT博士（1997）。现为Mitsubishi electric research laboratories研究员。
+
+论文：
+
+《Rapid Object Detection using a Boosted Cascade of Simple Features》
+
+《Robust real-time face detection》
+
+《An Extended Set of Haar-like Features for Rapid Object Detection》
+
+《Learning Multi-scale Block Local Binary Patterns for Face Recognition》
+
+《Implementing the Viola-Jones Face Detection Algorithm》
 
 ## 概述
 
@@ -247,49 +265,3 @@ h_1^2 & 0 & \cdots & 0\\
 \vdots  & \vdots  &  & \vdots \\ 
 0 & 0 & \cdots & h_d^2
 \end{pmatrix}_{d\times d}$$
-
-因此，上述Mean Shift向量也可以改写成：
-
-$$M_h\left ( x \right )=\frac{\sum_{i=1}^{n}G\left ( \frac{x_i-x}{h_i} \right )w\left ( x_i \right )\left ( x_i-x \right )}{\sum_{i=1}^{n}G\left ( \frac{x_i-x}{h_i} \right )w\left ( x_i \right )}$$
-
-这里的核函数可以是Uniform核，也可以是Gaussian核。
-
-参考：
-
-https://wenku.baidu.com/view/5862334827d3240c8447ef40.html
-
-meanshift算法简介
-
-http://www.cnblogs.com/liqizhou/archive/2012/05/12/2497220.html
-
-Meanshift，聚类算法
-
-https://wenku.baidu.com/view/0d9eb876a417866fb84a8eb2.html
-
-mean-shift算法概述
-
-http://www.cnblogs.com/cfantaisie/archive/2011/06/10/2077188.html
-
-meanshift聚类
-
-https://blog.csdn.net/google19890102/article/details/51030884
-
-Mean Shift聚类算法
-
-## 反向投影图
-
-在继续介绍Meanshift之前，我们先引入反向投影图的概念。
-
-首先，我们对图像的像素值按照某种特征进行直方图统计，得到一组bin值。
-
-然后，计算位置x上的bin值，并用该bin值替换原来的像素值，就得到了反向投影图。
-
-参考：
-
-https://blog.csdn.net/poiiy333/article/details/9051409
-
-反向投影图
-
-http://www.cnblogs.com/zsb517/archive/2012/06/20/2556508.html
-
-opencv直方图反向投影

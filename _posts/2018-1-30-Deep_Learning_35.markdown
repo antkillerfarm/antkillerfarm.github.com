@@ -49,6 +49,10 @@ https://zhuanlan.zhihu.com/p/112836018
 
 基于深度学习的人体姿态估计介绍
 
+https://zhuanlan.zhihu.com/p/337212192
+
+亚马逊李沐团队提出：行为识别的全面调研（2014-2020）
+
 https://mp.weixin.qq.com/s/6pNZ8Crs4Lel2C0TlFAc4Q
 
 真能“穿墙识人”，MIT人体姿态估计系统创历史最高精度！
@@ -364,19 +368,3 @@ You Only Watch Once：实时人体动作定位网络
 https://mp.weixin.qq.com/s/oPYWwZ6GkaE4L4YMxh7WGA
 
 利用OpenCV和深度学习来实现人类活动识别
-
-https://mp.weixin.qq.com/s/6HsL2B7p-XyvGWAb4SwALA
-
-图灵奖得主Geoffrey Hinton最新研究NASA：一种更好地学习三维模型动作的方法
-
-https://zhuanlan.zhihu.com/p/26460437
-
-Video Analysis相关领域解读之Action Recognition(行为识别)
-
-https://zhuanlan.zhihu.com/p/26603387
-
-Video Analysis 相关领域解读之Temporal Action Detection(时序行为检测)
-
-https://zhuanlan.zhihu.com/p/26730181
-
-Video Analysis 相关领域介绍之Video Captioning(视频to文字描述)

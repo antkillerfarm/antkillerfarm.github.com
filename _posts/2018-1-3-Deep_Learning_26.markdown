@@ -65,6 +65,10 @@ https://mp.weixin.qq.com/s/xKOVabHYCrcadhBmldjYAg
 
 大规模人脸表情识别
 
+https://mp.weixin.qq.com/s/AIg0HvgEIk4Ur35IwxxAWQ
+
+基于图片的人脸表情识别，基本概念和数据集
+
 # OCR
 
 ## 概述

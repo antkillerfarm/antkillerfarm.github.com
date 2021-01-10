@@ -177,6 +177,10 @@ https://www.cnblogs.com/RyanXing/p/10730829.html
 
 Cross-stitch Networks for Multi-task Learning
 
+https://mp.weixin.qq.com/s/T_UsCkj9hnV7tgOTcaf6Wg
+
+Multi-Task多任务学习， 那些你不知道的事
+
 # 人脸检测/识别
 
 ## OHEM

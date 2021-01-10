@@ -161,6 +161,10 @@ https://zhuanlan.zhihu.com/p/36382429
 
 特征点检测：Harris, SIFT, SURF, ORB
 
+https://zhuanlan.zhihu.com/p/261697473
+
+尺度不变特征转换-SIFT
+
 # ISP
 
 ISP(Image Signal Processor)，图像信号处理器，是运用在相机或者具备拍摄功能设备上的一种芯片。在相机成像的整个环节中，它负责接收感光元件（Sensor）的原始信号数据，可以理解为整个相机拍照、录像的第一步处理流程，对图像质量起着非常重要的作用。
@@ -228,11 +232,3 @@ RAW Data的取值范围取决于sensor的处理器位宽。比如12bit的范围�
 比如下图所示的RAW Data，由于取值主要集中于低值区间，因此看起来就是黑乎乎的一片，什么也看不出来。
 
 ![](/images/img2/ISP_1.png)
-
-## Black Level Compensation
-
-为了增加图片的对比度，我们可将该取值范围映射到整个区间。这里一般采用线性变换。
-
-![](/images/img2/ISP_2.png)
-
-这个过程被称为Black Level Compensation。效果如上图所示，我们开始可以看清一些东西了。

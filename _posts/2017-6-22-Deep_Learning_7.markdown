@@ -11,30 +11,6 @@ category: DL
 
 ## 参考（续）
 
-http://blog.csdn.net/shenxiaolu1984/article/details/71508892
-
-RNN的梯度消失/爆炸与正交初始化
-
-https://mp.weixin.qq.com/s/vHQ1WbADHAISXCGxOqnP2A
-
-看大牛如何复盘递归神经网络！
-
-https://mp.weixin.qq.com/s/0V9DeG39is_BxAYX0Yomww
-
-为何循环神经网络在众多机器学习方法中脱颖而出？
-
-https://mp.weixin.qq.com/s/-Am9Z4_SsOc-fZA_54Qg3A
-
-深度理解RNN：时间序列数据的首选神经网络！
-
-https://mp.weixin.qq.com/s/ztIrt4_xIPrmCwS1fCn_dA
-
-“魔性”的循环神经网络
-
-https://mp.weixin.qq.com/s/BqVicouktsZu8xLVR-XnFg
-
-完全图解RNN、RNN变体、Seq2Seq、Attention机制
-
 https://mp.weixin.qq.com/s/gGGXKT2fTn2xPPvo7PE8IA
 
 像训练CNN一样快速训练RNN：全新RNN实现，比优化后的LSTM快10倍
@@ -328,3 +304,23 @@ GLU一般用在NLP领域，它和CNN结合，也就是所谓的GCNN了。
 《Empirical Evaluation of Rectified Activations in Convolution Network》
 
 ![](/images/img3/RRelu.png)
+
+## GELU
+
+论文：
+
+《Gaussian Error Linear Units (GELUs)》
+
+参考：
+
+https://mp.weixin.qq.com/s/pA9JW75p9J5e5KHe3ifcBQ
+
+从ReLU到GELU，一文概览神经网络的激活函数
+
+https://mp.weixin.qq.com/s/LEPalstOc15CX6fuqMRJ8Q
+
+超越ReLU却鲜为人知，3年后被挖掘：BERT、GPT-2等都在用的激活函数（GELU）
+
+https://kexue.fm/archives/7309
+
+GELU的两个初等函数近似是怎么来的

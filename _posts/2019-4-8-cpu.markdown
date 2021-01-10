@@ -25,6 +25,10 @@ category: resource
 
 ![](/images/article/moore.jpg)
 
+![](/images/img4/line_width.png)
+
+从上图可以看出：2008年以前，先进制程有一个明显的爬坡阶段，但是如今更像是百花齐放了。
+
 **Andy gives, Bill takes away.**
 
 ![](/images/img3/IC_process.jpg)
@@ -83,6 +87,8 @@ https://xueqiu.com/4081695675/165884010
 
 ![](/images/img3/NMOS_PMOS.png)
 
+![](/images/img4/FET.png)
+
 参考：
 
 http://www.sohu.com/a/108777952_467791
@@ -138,6 +144,14 @@ https://mp.weixin.qq.com/s/YvzxV5NLz4FkKO71bxpAIA
 https://mp.weixin.qq.com/s/6Uod0Ngw4wDIISJZVDQ92A
 
 光刻缘何成为卡脖子技术？
+
+https://mp.weixin.qq.com/s/6BnrAEMpZxJ3ChBHWQ9mWA
+
+台积电缺电！30台EUV光刻机一天耗电90万度
+
+https://mp.weixin.qq.com/s/AUDDEYETPdJSyIdpMl4hLQ
+
+一文看懂ASML EUV光刻技术
 
 ## 芯片制造
 
@@ -332,7 +346,3 @@ Cache分为硬件Cache和软件Cache两种，这里只讨论前者。后者参�
 ![](/images/img4/Mem_Gap.png)
 
 上图展示了CPU和DRAM之间的速度增长的差异，这个差异通常被称为Memory Gap。1980年代以前的计算机是没有Cache的，但是随着Memory Gap的增大，Cache的级数也不断增多，目前3级片上Cache+1级片外Cache已经是标配了。
-
-必须指出的是，和CPU的速度受限于技术进步不同，RAM的问题主要是性能和价格的折衷。Cache实际上也是一种RAM，最好的L0 Cache和CPU的速度相当，只是价格太高而已。
-
-类似这样的还有PCB的线宽。微米级的线宽技术上完全可行，毕竟芯片都已经是纳米级的线宽了，主要还是价格的问题。

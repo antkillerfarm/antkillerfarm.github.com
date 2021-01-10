@@ -129,7 +129,13 @@ category: my story
 
 ----
 
-2020.5更新
+2018.11
+
+入坑AI已经有2年半了，相关的blog达150+。记得当初进入一个AI相关QQ群的时候，某AI书籍的作者进群推销。她的卖点是阅读过200篇论文，结果被群主鄙视了一番。当时作为萌新，颇有神仙打架的感觉，无从评判孰是孰非。直到如今，自己阅读论文的数量差不多也有200篇，才终于对AI略有心得。
+
+----
+
+2020.5
 
 非常遗憾，ASR方面由于公司另有团队在做，没有跟下去了（2018.10）。
 
@@ -286,3 +292,11 @@ https://mp.weixin.qq.com/s/ff1CPp3VyNvqZUq6aiZYng
 https://mp.weixin.qq.com/s/psrYzcbJqh2jptjXOVHQ7g
 
 千禧年大奖难题之始与未终
+
+https://mp.weixin.qq.com/s/YPBuSxpZ__WK03u7eHVT3g
+
+终年33岁的印度数学天才
+
+https://mp.weixin.qq.com/s/HFWN9BowSNcuFjyLdFNi1w
+
+靠一个逻辑不通的理论圈粉无数，爱因斯坦高调点赞，海森堡却一键举报，霍金静静吃瓜......（拉普拉斯兽和薛定谔的猫）

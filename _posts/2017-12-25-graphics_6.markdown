@@ -9,6 +9,14 @@ category: graphics
 
 # ISP（续）
 
+## Black Level Compensation
+
+为了增加图片的对比度，我们可将该取值范围映射到整个区间。这里一般采用线性变换。
+
+![](/images/img2/ISP_2.png)
+
+这个过程被称为Black Level Compensation。效果如上图所示，我们开始可以看清一些东西了。
+
 ## Green Balance
 
 由于Bayer Array的关系，每个点的光强都只是实际光强的一部分。由于接收的绿光较多，通常以绿光光强为基准，对红蓝光强进行修正。这个过程就是Green Balance。
@@ -298,19 +306,3 @@ $$\Phi_i=\Gamma_i-\Psi$$
 **Step 4**：计算协方差矩阵：
 
 $$C=\frac{1}{M}\sum_{n=1}^M\Phi_n \Phi_n^T=AA^T(N^2\times N^2 \text{matrix})$$
-
-**Step 5**：计算的$$AA^T$$特征向量$$u_i$$。然而，$$AA^T$$太大了，我们只能退而求其次计算$$A^TA(M\times M \text{matrix})$$的特征向量$$v_i$$。
-
-那么$$u_i$$和$$v_i$$到底有什么关系呢？我们首先根据特征向量的定义，给出下式：
-
-$$A^TAv_i=\mu_iv_i$$
-
-其中，$$\mu_i$$是$$A^TA$$的特征值。
-
-$$A^TAv_i=\mu_iv_i\Rightarrow AA^TAv_i=\mu_iAv_i\Rightarrow CAv_i=\mu_iAv_i$$
-
-令$$u_i=Av_i$$，则：
-
-$$Cu_i=\mu_iu_i$$
-
-可见$$\mu_i$$同时也是$$AA^T$$的特征值，而对应的特征向量则是$$Av_i$$。

@@ -193,6 +193,10 @@ FUNIT
 
 # GAN参考资源
 
+https://mp.weixin.qq.com/s/mUOSA387465ws0l9Fp-ebQ
+
+生成对抗网络GAN在各领域应用研究进展(中文版)，37页pdf
+
 https://mp.weixin.qq.com/s/Gjb-PkMqUIIV81Na6Za_BQ
 
 超全的GAN PyTorch+Keras实现集合
@@ -340,19 +344,3 @@ https://zhuanlan.zhihu.com/p/46629127
 https://mp.weixin.qq.com/s/Sp0EYvaq-1u0mtnrrmFNCQ
 
 为什么说GANs是一个绝妙的艺术创作工具？
-
-https://mp.weixin.qq.com/s/uHEAtuY1_KZdUAdDAwFi_A
-
-以为GAN只能“炮制假图”？它还有这7种另类用途
-
-https://mp.weixin.qq.com/s/Yf5quOXmzJAy0GnJnvam5g
-
-台湾学者研发新型二元神经元GAN！有望用于AI作曲
-
-https://mp.weixin.qq.com/s/8aL7COItG7lS4q5-3IZCmQ
-
-定制人脸图像没那么难！使用TL-GAN模型轻松变脸
-
-https://mp.weixin.qq.com/s/9t0GvQW-cmakM0E9dWxBcg
-
-旧照片着色修复神器！自注意力GAN效果惊艳

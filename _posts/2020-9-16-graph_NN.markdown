@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Graph NN（一）——概述, 教程, 工具
+title:  Graph NN（一）——概述, 教程, 工具, GCN
 category: graph 
 ---
 

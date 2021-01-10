@@ -345,6 +345,10 @@ https://mp.weixin.qq.com/s/SH2bNu6UF7PsKrBeweUH4g
 
 纯Python绘制满满艺术感的山脊地图
 
+https://mp.weixin.qq.com/s/DVM_jO-jvWgnF3Nq-kPQpg
+
+Pygal，可导出矢量图的Python可视化利器
+
 ## 参考
 
 https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg

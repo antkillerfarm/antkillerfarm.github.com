@@ -11,6 +11,10 @@ category: resource
 
 ## Cache（续）
 
+必须指出的是，和CPU的速度受限于技术进步不同，RAM的问题主要是性能和价格的折衷。Cache实际上也是一种RAM，最好的L0 Cache和CPU的速度相当，只是价格太高而已。
+
+类似这样的还有PCB的线宽。微米级的线宽技术上完全可行，毕竟芯片都已经是纳米级的线宽了，主要还是价格的问题。
+
 多核CPU多级缓存的一致性，一般由相关的一致性总线协议保证。这些协议包括：MSI、MESI和MOESI。
 
 https://mp.weixin.qq.com/s/cSu-P-aDSXH0CYLN2HNrxw
@@ -56,6 +60,10 @@ CPU缓存L1/L2/L3工作原理
 https://blog.csdn.net/ZoeyyeoZ/article/details/51804647
 
 MESI&MOESI协议
+
+https://mp.weixin.qq.com/s/G4SpTC8DZ-l5kWBRGwSwGQ
+
+Linux内存、Swap、Cache、Buffer详细解析
 
 ## Bélády's Algorithm
 
@@ -187,6 +195,10 @@ https://mp.weixin.qq.com/s/JLg6sEwCxTMpo2nyCt50qg
 
 指令集——CPU芯片江湖中的门派标志
 
+https://mp.weixin.qq.com/s/7gXK6Qv9gLMkYtXw9oz9Sg
+
+一文看懂指令集是什么
+
 https://mp.weixin.qq.com/s/5uie8Ci5dK_wy54Z70Gklg
 
 RISC-V精简到何种程度？能省的都省了！
@@ -272,6 +284,10 @@ https://zhuanlan.zhihu.com/p/114448236
 https://mp.weixin.qq.com/s/OQ3KUAi6HMyOS8k3J_1e6g
 
 关于超长指令集VLIW的一些讨论
+
+https://mp.weixin.qq.com/s/J7RlmvU7JY1J8rV-eqjQ2A
+
+浅谈多核心CPU和SoC芯片及其工作原理
 
 ----
 

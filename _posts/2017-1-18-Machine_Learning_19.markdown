@@ -253,6 +253,10 @@ https://www.cnblogs.com/always-fight/p/9400346.html
 
 GBDT用于分类问题
 
+https://mp.weixin.qq.com/s/mHZBDY_uFfwVBvHgFXQuqw
+
+决策树是如何选择特征和分裂点？
+
 # 关联规则挖掘
 
 ## 基本概念

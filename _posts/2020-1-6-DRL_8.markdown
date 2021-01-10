@@ -243,6 +243,10 @@ https://mp.weixin.qq.com/s/kAuzmc70NYAr9HmyioD5xA
 
 腾讯绝悟AI完全体研究登上国际顶会与顶刊
 
+https://mp.weixin.qq.com/s/8jkJy8ZarvpodmBccAc74A
+
+中国AI足球队勇夺世界冠军，腾讯出品
+
 # DRL参考资源
 
 https://mp.weixin.qq.com/s/ruAAQEjPIDPWPiuPepKU6Q
@@ -353,14 +357,6 @@ https://mp.weixin.qq.com/s/uDFsWebfLmka-zZX3Y_8kg
 
 深度强化学习在面向任务的对话管理中的应用
 
-https://mp.weixin.qq.com/s/FROyReDu7i5amGv-J4cmtg
-
-“世界模型”实现，一步步让机器掌握赛车和躲避火球的技能
-
-https://mp.weixin.qq.com/s/oyxqA_LYtze1f_YDwDZziQ
-
-从零开始自学设计新型药物，UNC提出结构进化强化学习
-
 https://zhuanlan.zhihu.com/p/41467058
 
 Policy Optimization with Demonstrations
@@ -380,10 +376,6 @@ https://zhuanlan.zhihu.com/p/43496459
 https://mp.weixin.qq.com/s/tuEhP3CDZ4PW7S66yP8AbA
 
 如何解决稀疏奖励下的强化学习？
-
-https://mp.weixin.qq.com/s/G99vqIYeWzgQ4kL4p77cKA
-
-用强化学习做神经机器翻译：中山大学&MSRA填补多项空白
 
 https://mp.weixin.qq.com/s/GUyZ0U5_JlXCI-5mO796SA
 

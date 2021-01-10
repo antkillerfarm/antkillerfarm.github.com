@@ -129,6 +129,60 @@ https://mp.weixin.qq.com/s/_RD_jY-gJFxlT9DX2jGDAA
 
 只有170字节，最小的64位Hello World程序这样写成
 
+## 同步锁
+
+read-write lock、RCU lock、spin lock
+
+对于悲观锁，开发者认为数据发送时发生并发冲突的概率很大，所以每次进行读操作前都会上锁。
+
+对于乐观锁，开发者认为数据发送时发生并发冲突的概率不大，所以读操作前不上锁。
+
+到了写操作时才会进行判断，数据在此期间是否被其他线程修改。如果发生修改，那就返回写入失败；如果没有被修改，那就执行修改操作，返回修改成功。
+
+乐观锁一般采用Compare And Swap（CAS）算法进行实现。
+
+比较并交换(compare and swap, CAS)，是原子操作的一种，可用于在多线程编程中实现不被打断的数据交换操作，从而避免多线程同时改写某一数据时由于执行顺序不确定性以及中断的不可预知性产生的数据不一致问题。
+
+https://mp.weixin.qq.com/s/mTOzcdjaak-z6ypL9MR2Lw
+
+小白科普：悲观锁和乐观锁
+
+https://mp.weixin.qq.com/s/t-jZ9GoqW46rU3t9ahHqCQ
+
+mysql悲观锁总结和实践
+
+https://mp.weixin.qq.com/s/6MRi_UEcMybKn4YXi6qWng
+
+操作系统中锁的实现原理
+
+https://mp.weixin.qq.com/s/yHSraIAYsjYWPaGXA3PijA
+
+一张图读懂非公平锁与公平锁
+
+https://mp.weixin.qq.com/s/qnZL4ENAbTvVMVcImVTtYw
+
+深入浅出CAS
+
+https://mp.weixin.qq.com/s/T_z2_gsYfs6A-XjVTVV_uQ
+
+说说无锁(Lock-Free)编程那些事（上）
+
+https://mp.weixin.qq.com/s/h75n7sHnrmoLJ4DVAW5AUQ
+
+说说无锁(Lock-Free)编程那些事（下）
+
+https://blog.csdn.net/zqz_zqz/article/details/70233767
+
+java中的锁--偏向锁、轻量级锁、自旋锁、重量级锁
+
+https://mp.weixin.qq.com/s/muSUJuE1A45UTXpWTeFxOA
+
+24张图带你彻底理解Java中的21种锁
+
+https://mp.weixin.qq.com/s/gbCshU5eEn4Gefduk1zdCQ
+
+浅谈Java并发下的乐观锁
+
 ## 参考
 
 https://mp.weixin.qq.com/s/n6D5_6K9TrnuXg3h6AiFNA
@@ -138,22 +192,6 @@ https://mp.weixin.qq.com/s/n6D5_6K9TrnuXg3h6AiFNA
 ![](/images/img3/Monolithic_vs_Micro.jpg)
 
 ![](/images/img3/UNIX.jpg)
-
-----
-
-https://mp.weixin.qq.com/s/qnZL4ENAbTvVMVcImVTtYw
-
-深入浅出CAS
-
-比较并交换(compare and swap, CAS)，是原子操作的一种，可用于在多线程编程中实现不被打断的数据交换操作，从而避免多线程同时改写某一数据时由于执行顺序不确定性以及中断的不可预知性产生的数据不一致问题。
-
-https://mp.weixin.qq.com/s/T_z2_gsYfs6A-XjVTVV_uQ
-
-说说无锁(Lock-Free)编程那些事（上）
-
-https://mp.weixin.qq.com/s/h75n7sHnrmoLJ4DVAW5AUQ
-
-说说无锁(Lock-Free)编程那些事（下）
 
 ----
 
@@ -360,18 +398,6 @@ Linux的启动流程
 https://mp.weixin.qq.com/s/ZfprFQjVANuCE2N693gZBQ
 
 用户空间和内核空间
-
-https://mp.weixin.qq.com/s/mTOzcdjaak-z6ypL9MR2Lw
-
-小白科普：悲观锁和乐观锁
-
-https://mp.weixin.qq.com/s/t-jZ9GoqW46rU3t9ahHqCQ
-
-mysql悲观锁总结和实践
-
-https://mp.weixin.qq.com/s/6MRi_UEcMybKn4YXi6qWng
-
-操作系统中锁的实现原理
 
 https://mp.weixin.qq.com/s/oKtu3AA9D3y--xMDQ8EARw
 

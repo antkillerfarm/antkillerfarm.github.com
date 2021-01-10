@@ -175,6 +175,10 @@ https://www.cnblogs.com/ahu-lichang/p/6645074.html
 
 MapReduce的原理及执行过程
 
+https://mp.weixin.qq.com/s/WoqBdKyZzO7Y_hp73z58DA
+
+百花齐放的大数据计算平台演进史
+
 ## 控制日志输出等级
 
 有的时候为了防止控制台的日志输出过多，淹没了程序的正常输出，可以采用如下方法：
@@ -331,6 +335,10 @@ https://mp.weixin.qq.com/s/vytVTAgU-6_iRG-drf9eYQ
 https://mp.weixin.qq.com/s/Nyb9qTYn5_XFhQPa8KZojw
 
 最新Apache Spark平台的NLP库,助你轻松搞定自然语言处理任务
+
+https://mp.weixin.qq.com/s/ExbwHCFavFZhmWnWIK6wlQ
+
+深入浅出Spark：存储系统
 
 # Zookeeper
 

@@ -173,6 +173,10 @@ https://mp.weixin.qq.com/s/5J_8hD0DnCaX4ksgsgTjHA
 
 大量的TIME_WAIT状态连接怎么处理？
 
+https://mp.weixin.qq.com/s/urwS1dFAZsBG0Kyl8YgLpQ
+
+GET和POST请求的本质区别是什么
+
 ## URI
 
 URI = Universal Resource Identifier

@@ -9,6 +9,26 @@ category: graph
 
 # 知识图谱参考资源
 
+https://mp.weixin.qq.com/s/uSPkgV-zIBEEJ0Ml-ILXqQ
+
+如何从零开始搭建知识图谱？
+
+https://mp.weixin.qq.com/s/3x__Dl1x1nMgWpp0zz_fPg
+
+如何构建知识体系：知识图谱搭建的第一步
+
+https://mp.weixin.qq.com/s/DALB8eBgVWHhFcZoJFLSpg
+
+基于图的RDF知识图谱数据管理
+
+https://mp.weixin.qq.com/s/An9mGawI8mhtlqyrVxTzYw
+
+SIGIR 2018基于知识图谱的文本信息检索
+
+https://mp.weixin.qq.com/s/3aINjnNwALEqbBAuLi6pEA
+
+应用知识图谱的推荐方法与系统
+
 https://mp.weixin.qq.com/s/RpPEqjRUnBIHpX7_guItoQ
 
 如何构建行业知识图谱
@@ -328,72 +348,6 @@ https://mp.weixin.qq.com/s/E76Ekr63HYo8sPxoIQS-CA
 https://mp.weixin.qq.com/s/ixqzYrI-e9HQJ5hsHlWO_A
 
 BERT meet Knowledge Graph：预训练模型与知识图谱相结合的研究进展
-
-# AI工具+
-
-https://mp.weixin.qq.com/s/3eoN0YHI84oomdTZO6TrvQ
-
-快速搞定机器人开发！Facebook联合CMU开源PyRobot框架
-
-https://mp.weixin.qq.com/s/Uih8JaRCaeD38o9AoovRmA
-
-字节跳动开源高性能分布式训练框架BytePS：兼容TensorFlow、PyTorch等
-
-https://mp.weixin.qq.com/s/o9cYmqwuvlbOuUXSNIuicg
-
-十个最常用深度学习图像/视频数据标注工具
-
-https://mp.weixin.qq.com/s/iKXZmhffiYaFHsIU21zVQA
-
-NeuralNLP-NeuralClassifier：腾讯开源深度学习文本分类工具
-
-https://mp.weixin.qq.com/s/suLJs_GjRsdYA5fwtsje7g
-
-腾讯AI开源框架Angel 3.0重磅发布：超50万行代码，支持3种算法，打造全栈机器学习平台
-
-https://mp.weixin.qq.com/s/adroDI2bm13o6Q40ECc7Zw
-
-MediaPipe: Google Research 开源的跨平台多媒体机器学习模型应用框架
-
-https://mp.weixin.qq.com/s/U2e4H1QjjBqH9YbElFLhxw
-
-Microsoft Icecaps：一个用于会话建模的开源工具包
-
-https://zhuanlan.zhihu.com/p/75584326
-
-combo:“Python机器学习模型合并工具库”简介
-
-https://github.com/arraiyopensource/kornia
-
-可微分的“OpenCV”：这是基于PyTorch的可微计算机视觉库
-
-https://mp.weixin.qq.com/s/5Pm03dLW9vbDukgWi1-Tug
-
-OpenARK：惊艳的增强现实、虚实交互开源库
-
-https://mp.weixin.qq.com/s/h0PwA9vtABWHgxd42yX3Fg
-
-当时尚遇上AI！港中文MMLab开源MMFashion工具箱
-
-https://github.com/Media-Smart/vedaseg
-
-vedaseg:A semantic segmentation toolbox in pytorch
-
-https://mp.weixin.qq.com/s/gGCyMq4PM_Whv-Ssiwt-HA
-
-秒杀Deepfake！微软北大提出AI换脸工具FaceShifter和假脸检测工具Face X-Ray
-
-https://mp.weixin.qq.com/s/2EHv669PUqqgvAGz3XoZ6Q
-
-FaceBook开源PyTorch3D：基于PyTorch的新3D计算机视觉库
-
-https://mp.weixin.qq.com/s/Z27oInh5rdxnxt1-KFAiRA
-
-1GB文本标记只需20秒！抱抱脸团队发布最新NLP工具
-
-https://mp.weixin.qq.com/s/8mpc7AblZyRw7LCh35vL2g
-
-哈工大讯飞联合实验室发布知识蒸馏工具TextBrewer
 
 https://mp.weixin.qq.com/s/Jf9CMm3YIINtvT9ivweQMA
 

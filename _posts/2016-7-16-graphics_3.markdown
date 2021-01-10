@@ -194,6 +194,20 @@ https://zhuanlan.zhihu.com/p/310710051
 
 pytorch实现双边滤波
 
+# 导向滤波
+
+https://blog.csdn.net/weixin_43194305/article/details/88959183
+
+导向滤波(Guided Filter)公式详解
+
+https://zhuanlan.zhihu.com/p/161666126
+
+导向滤波原理（Guided Filter）
+
+https://zhuanlan.zhihu.com/p/279602383
+
+四种图像滤波算法实现及原理解析
+
 # Steerable滤波
 
 高斯滤波是一种各向同性滤波，如果想要对特定方向进行滤波的话，可使用Steerable滤波。

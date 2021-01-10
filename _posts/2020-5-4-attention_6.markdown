@@ -377,6 +377,10 @@ https://www.cnblogs.com/zhouxiaosong/p/11397655.html
 
 使用BERT模型生成token级向量
 
+https://mp.weixin.qq.com/s/JLP4-5IR6HPK4SRQoC9FAQ
+
+BERT预训练实操总结
+
 # Transformer进阶
 
 https://mp.weixin.qq.com/s/-Y7Qy-5aJNJ5bx8QJf3k2w
@@ -410,15 +414,3 @@ Transformer之自适应宽度注意力
 https://mp.weixin.qq.com/s/EuCCeWz_rkktwLuFJ75BXA
 
 Transformer+AutoML: 遗传搜索在序列式任务上的应用
-
-https://mp.weixin.qq.com/s/OEpLpWzkdfFUQf4cKNuG4w
-
-Performer:基于正交随机特征的快速注意力计算
-
-https://mp.weixin.qq.com/s/eWQLkiJ_XIo7LpTUE9c0qA
-
-Transformer中的相对位置编码
-
-https://mp.weixin.qq.com/s/V0NAOgluyZN9P8iuhMKRwQ
-
-Transformer为啥在NER上表现不好

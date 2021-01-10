@@ -291,128 +291,96 @@ https://mp.weixin.qq.com/s/KYq_nEXQ-5WYdYzZvGLGGg
 
 我向面试官讲解了单例模式，他对我竖起了大拇指
 
-# GAN参考资源+
+# AI工具+
 
-https://mp.weixin.qq.com/s/cUFQ6EADa39h2eFoa_Dh0A
+https://mp.weixin.qq.com/s/3eoN0YHI84oomdTZO6TrvQ
 
-最高76%破解成功率！GAN已经能造出“万能指纹”，你的手机还安全吗？
+快速搞定机器人开发！Facebook联合CMU开源PyRobot框架
 
-https://mp.weixin.qq.com/s/_tABIMkWX8L5xQFmvPI7rw
+https://mp.weixin.qq.com/s/Uih8JaRCaeD38o9AoovRmA
 
-有效稳定对抗模型训练过程，伯克利提出变分判别器瓶颈
+字节跳动开源高性能分布式训练框架BytePS：兼容TensorFlow、PyTorch等
 
-https://mp.weixin.qq.com/s/xr9fDv9DFkwi2ImV4RZAHg
+https://mp.weixin.qq.com/s/o9cYmqwuvlbOuUXSNIuicg
 
-换个角度看GAN：另一种损失函数
+十个最常用深度学习图像/视频数据标注工具
 
-https://mp.weixin.qq.com/s/U1rrPfJDLgXHRj__XwrMZw
+https://mp.weixin.qq.com/s/iKXZmhffiYaFHsIU21zVQA
 
-只有条件GAN才能稳定训练？对抗+自监督的无监督方法了解一下
+NeuralNLP-NeuralClassifier：腾讯开源深度学习文本分类工具
 
-https://mp.weixin.qq.com/s/xHKQlFFkBQLBg2GdZuGPSw
+https://mp.weixin.qq.com/s/suLJs_GjRsdYA5fwtsje7g
 
-提升GAN训练的技巧汇总
+腾讯AI开源框架Angel 3.0重磅发布：超50万行代码，支持3种算法，打造全栈机器学习平台
 
-https://mp.weixin.qq.com/s/ctB90bNhaMYvbLE4yketHQ
+https://mp.weixin.qq.com/s/adroDI2bm13o6Q40ECc7Zw
 
-一文读懂对抗机器学习Universal adversarial perturbations
+MediaPipe: Google Research 开源的跨平台多媒体机器学习模型应用框架
 
-https://mp.weixin.qq.com/s/zRNtEKS2dKxyQU4VZm6Mwg
+https://mp.weixin.qq.com/s/U2e4H1QjjBqH9YbElFLhxw
 
-用GANs来自动生成音乐
+Microsoft Icecaps：一个用于会话建模的开源工具包
 
-https://mp.weixin.qq.com/s/zwzl-Tel3Avc4Dm7L5FS5A
+https://zhuanlan.zhihu.com/p/75584326
 
-NLP中的对抗训练+PyTorch实现
+combo:“Python机器学习模型合并工具库”简介
 
-https://mp.weixin.qq.com/s/Ze2BXEexTIpNluRSdfeCsA
+https://github.com/arraiyopensource/kornia
 
-GAN和PS合体会怎样？东京大学图像增强新研究：无需配对图像，增强效果还可解释
+可微分的“OpenCV”：这是基于PyTorch的可微计算机视觉库
 
-https://mp.weixin.qq.com/s/qLhnvLhXHhRoPGtPWYCY0w
+https://mp.weixin.qq.com/s/5Pm03dLW9vbDukgWi1-Tug
 
-ICCV2019最佳论文SinGAN全面解读
+OpenARK：惊艳的增强现实、虚实交互开源库
 
-https://zhuanlan.zhihu.com/p/97138846
+https://mp.weixin.qq.com/s/h0PwA9vtABWHgxd42yX3Fg
 
-《SinGAN:从单个自然图像中学习生成模型》论文笔记
+当时尚遇上AI！港中文MMLab开源MMFashion工具箱
 
-https://mp.weixin.qq.com/s/mXjNtZvUHutBABh-f9qisQ
+https://github.com/Media-Smart/vedaseg
 
-那些底层的图像处理问题中，GAN能有什么作为？
+vedaseg:A semantic segmentation toolbox in pytorch
 
-https://mp.weixin.qq.com/s/zVGDYhBiLCNhKTnkzbMxGA
+https://mp.weixin.qq.com/s/gGCyMq4PM_Whv-Ssiwt-HA
 
-时间序列GAN，Subadditivity of Probability Divergences
+秒杀Deepfake！微软北大提出AI换脸工具FaceShifter和假脸检测工具Face X-Ray
 
-https://mp.weixin.qq.com/s/ssD3NAvGx5Eu4-oWy4KtzA
+https://mp.weixin.qq.com/s/2EHv669PUqqgvAGz3XoZ6Q
 
-如何生动有趣地对GAN进行可视化？
+FaceBook开源PyTorch3D：基于PyTorch的新3D计算机视觉库
 
-https://mp.weixin.qq.com/s/qz4wUpSeF8Nlem8x4CrR-Q
+https://mp.weixin.qq.com/s/Z27oInh5rdxnxt1-KFAiRA
 
-学习一个宫崎骏画风的图像风格转换GAN
+1GB文本标记只需20秒！抱抱脸团队发布最新NLP工具
 
-https://zhuanlan.zhihu.com/p/50790727
+https://mp.weixin.qq.com/s/8mpc7AblZyRw7LCh35vL2g
 
-SeqGAN: Sequence GAN with Policy Gradient
+哈工大讯飞联合实验室发布知识蒸馏工具TextBrewer
 
-https://mp.weixin.qq.com/s/bH5yYbwq6NGQJ84xUDhoxg
+https://mp.weixin.qq.com/s/Zu_IPBQVJtcwNln-xvEZxQ
 
-生成对抗网络在图像翻译上的应用
+DarkLabel：支持检测、跟踪、ReID数据集的标注软件
 
-https://mp.weixin.qq.com/s/3Gsmrl4HbcnXpje0nyAq2w
+https://mp.weixin.qq.com/s/5klwQCPtiZOwFJYHDOpWFg
 
-中国西北大学和北京大学的研究结果是否将终结CAPTCHA验证码时代？
+语义分割标注工具Semantic Segmentation Editor快速安装指南
 
-https://zhuanlan.zhihu.com/p/53260242
+https://mp.weixin.qq.com/s/1EeYmZGoa-xpWmIvUoqCyw
 
-抛开复杂证明，我们从直觉上理解W-GAN为啥这么好训
+瑞士小哥开源文本英雄Texthero：一行代码完成数据预处理
 
-https://mp.weixin.qq.com/s/FJA8Tctq_p4Mj-KgNn_OGg
+https://mp.weixin.qq.com/s/p9HpH2e5ShQCFcCxVNvMbg
 
-为什么让GAN一家独大？Facebook提出非对抗式生成方法GLANN
+清华开源迁移学习算法库
 
-https://mp.weixin.qq.com/s/SGCoCy8wJEhEpLSHrYK3pQ
+https://mp.weixin.qq.com/s/vzUt-5C_dRAChEfQYLp4lA
 
-韩松、朱俊彦等人提出GAN压缩法：算力消耗不到1/9，现已开源
+PyTorch实现，GitHub 4000星：这是微软开源的计算机视觉库
 
-https://mp.weixin.qq.com/s/D-rh9m7G-ERjWEEG6BQJNg
+https://mp.weixin.qq.com/s/5VeersQKxcT9AtFXS_CXnA
 
-每个人都能用英伟达GAN造脸了
+推荐一款超高速、多特性的高性能序列推理引擎——LightSeq
 
-https://mp.weixin.qq.com/s/qRW344wWgS9PJ6UCwknS8g
+https://mp.weixin.qq.com/s/kWJZA0acOPi46c2_Gd9aeA
 
-Local GAN
-
-https://mp.weixin.qq.com/s/-rwzlX-WipaIdV6ESOimxw
-
-GAN加持！英伟达发布“山寨”游戏创造器，已完美复现《吃豆人》
-
-https://mp.weixin.qq.com/s/orm5r4XHyotBCpBKqfZ-ng
-
-GANSynth：使用GAN制作音乐
-
-https://mp.weixin.qq.com/s/4zKgFfyLGAmqgHtf_Wb0nw
-
-使用GAN生成序列数据
-
-https://mp.weixin.qq.com/s/oRCbr0TCzFmTuf5jpWKBaA
-
-GAN版马里奥创作家来了：一个样本即可训练，生成关卡要素丰富
-
-https://mp.weixin.qq.com/s/2NrPolWxV-L-dFUXgGOd9w
-
-在GAN中通过上下文的复制和粘贴，在没有数据集的情况下生成新内容
-
-https://mp.weixin.qq.com/s/iqCMA7E_vtdymVxxz7bpRA
-
-生成对抗网络（GAN）的数学原理全解
-
-https://mp.weixin.qq.com/s/D0gLR6YU3rYTbFqSCwyi9Q
-
-Semi-Supervised GAN
-
-https://mp.weixin.qq.com/s/MY-nx_MDyBJHUidS3Xqs7g
-
-最新《生成式对抗网络GAN进展》综述论文，41页pdf阐述GAN在计算机视觉应用进展
+安利一个开源的好工具Label Studio,闭环数据标注和模型训练

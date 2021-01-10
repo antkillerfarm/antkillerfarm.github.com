@@ -278,6 +278,14 @@ https://mp.weixin.qq.com/s/rjWOkwzX3IE59Kc9P9leAQ
 
 格“物”致知：多模态预训练再次入门
 
+https://mp.weixin.qq.com/s/0CUGispeZS04D6NhGkrucw
+
+多模态深度学习：用深度学习的方式融合各种信息
+
+https://mp.weixin.qq.com/s/Tli19SOum_muBoBaTtXKUQ
+
+多模态中NLP与CV融合的一些方式
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

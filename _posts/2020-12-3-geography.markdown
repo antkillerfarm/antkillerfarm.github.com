@@ -183,7 +183,11 @@ https://mp.weixin.qq.com/s/MWGedW1qbeqicE0wEqcSQw
 
 5000多万年前，江南曾是一片荒漠
 
-# 化学+
+https://mp.weixin.qq.com/s/e-3dMOZopr9GpFhzOl9RKA
+
+一年多几天该多好？曾经，地球上一年有424天！
+
+# 化学++
 
 https://mp.weixin.qq.com/s/Vam7uTbwPfF8Ht365lGtvA
 
@@ -276,3 +280,7 @@ https://mp.weixin.qq.com/s/wIaMPdYWHzn9vDpiuWZOVg
 https://wenku.baidu.com/view/209d2f8183d049649b665894.html
 
 超纯水18.2的意义
+
+https://mp.weixin.qq.com/s/cYa9uQSjtxgtJawhJ8WYcw
+
+古今取暖神器大赏：一场关于温度与风度的奋斗史

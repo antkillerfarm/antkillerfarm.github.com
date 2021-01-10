@@ -367,10 +367,6 @@ http://tieba.baidu.com/p/2155772860
 
 GPU和Shader技术的基础知识
 
-http://www.cnblogs.com/geniusalex/archive/2008/12/26/1941766.html
-
-CPU GPU设计工作原理
-
 http://www.jianshu.com/p/8687a040eb48
 
 GPU处理图像Shader的入门
@@ -385,7 +381,7 @@ CUDA编程入门极简教程
 
 https://mp.weixin.qq.com/s/-zdIWkuRZXhsLJmOZljOBw
 
-CUDA编程精品教材分享《基于GPU-多核-集群等并行化编程》
+《基于GPU-多核-集群等并行化编程》
 
 https://mp.weixin.qq.com/s/bCb5VsH58JII886lpg9lvg
 
@@ -394,7 +390,3 @@ https://mp.weixin.qq.com/s/bCb5VsH58JII886lpg9lvg
 https://mp.weixin.qq.com/s/OYSzol-vufiKPuU9YxtbuA
 
 矩阵相乘在GPU上的终极优化：深度解析Maxas汇编器工作原理
-
-https://mp.weixin.qq.com/s/gfqxytn5SAl5bfCosoMTqQ
-
-基于GPU-多核-集群等并行化编程

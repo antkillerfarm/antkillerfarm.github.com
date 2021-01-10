@@ -211,36 +211,6 @@ https://mp.weixin.qq.com/s/zvPNuP_LT7pWIgoxzfeUWw
 
 综述卷积神经网络：从基础技术到研究前景
 
-# 图像超分辨率进阶+
-
-https://zhuanlan.zhihu.com/p/67613641
-
-基于多级神经纹理迁移的图像超分辨方法(Adobe Research)
-
-https://mp.weixin.qq.com/s/IStOD22WgZ6EBFCvIHkNSg
-
-图像超分辨率网络：RCAN
-
-https://mp.weixin.qq.com/s/4LIq3kZaXgaoEEyb8TQvwg
-
-图像超分辨率重建--AI研究
-
-https://mp.weixin.qq.com/s/ETGPXVDGRHOq0W-ef_q2_A
-
-RankSRGAN:排序学习+GAN用于超分辨率
-
-https://zhuanlan.zhihu.com/p/140507840
-
-图像超分：USRNet
-
-https://mp.weixin.qq.com/s/sju4SYFxzDkJevk3mi68Rw
-
-图像超分辨率网络：EDSR
-
-https://mp.weixin.qq.com/s/uZQK0oQbV7wm0WVz_QxVQg
-
-DRN：用于单图像超分辨率的对偶回归网络
-
 # AutoEncoder
 
 ## Basic AE
@@ -312,3 +282,41 @@ http://sofasofa.io/tutorials/anomaly_detection/
 https://zhuanlan.zhihu.com/p/51053142
 
 基于自编码器的时间序列异常检测算法
+
+## 参考
+
+http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/
+
+Autoencoders
+
+http://blog.csdn.net/changyuanchn/article/details/15681853
+
+深度学习之autoencoder
+
+https://mp.weixin.qq.com/s/cago4myCcLZkv1e43T__3g
+
+深入理解自编码器
+
+http://www.cnblogs.com/neopenx/p/4370350.html
+
+降噪自动编码器（Denoising Autoencoder)
+
+https://mp.weixin.qq.com/s/lODy8ucB3Bw9Y1sy1NxTJg
+
+无监督学习中的两个非概率模型：稀疏编码与自编码器
+
+https://mp.weixin.qq.com/s/QuDa__mi1NX1wOxo5Ki94A
+
+深度学习：自动编码器基础和类型
+
+http://blog.csdn.net/losteng/article/details/51067216
+
+CAE(Convolutional Auto-Encode) 卷积自编码
+
+https://mp.weixin.qq.com/s/q-WExyS-zylMA-L8ojOgRg
+
+简单易懂的自动编码器
+
+https://mp.weixin.qq.com/s/Ci0HPy3ENz1ZooB784aMcA
+
+谷歌大脑Wasserstein自编码器：新一代生成模型算法

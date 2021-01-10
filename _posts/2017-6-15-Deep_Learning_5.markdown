@@ -9,44 +9,6 @@ category: DL
 
 # AutoEncoder（续）
 
-## 参考
-
-http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/
-
-Autoencoders
-
-http://blog.csdn.net/changyuanchn/article/details/15681853
-
-深度学习之autoencoder
-
-https://mp.weixin.qq.com/s/cago4myCcLZkv1e43T__3g
-
-深入理解自编码器
-
-http://www.cnblogs.com/neopenx/p/4370350.html
-
-降噪自动编码器（Denoising Autoencoder)
-
-https://mp.weixin.qq.com/s/lODy8ucB3Bw9Y1sy1NxTJg
-
-无监督学习中的两个非概率模型：稀疏编码与自编码器
-
-https://mp.weixin.qq.com/s/QuDa__mi1NX1wOxo5Ki94A
-
-深度学习：自动编码器基础和类型
-
-http://blog.csdn.net/losteng/article/details/51067216
-
-CAE(Convolutional Auto-Encode) 卷积自编码
-
-https://mp.weixin.qq.com/s/q-WExyS-zylMA-L8ojOgRg
-
-简单易懂的自动编码器
-
-https://mp.weixin.qq.com/s/Ci0HPy3ENz1ZooB784aMcA
-
-谷歌大脑Wasserstein自编码器：新一代生成模型算法
-
 https://mp.weixin.qq.com/s/Pgf6JMokilV9JxYWi7Y20Q
 
 揭秘自编码器，一种捕捉数据最重要特征的神经网络
@@ -169,6 +131,10 @@ https://mp.weixin.qq.com/s/reT4lAjwo4fHV4ctR9zbxQ
 https://mp.weixin.qq.com/s/9YoeoSpeAXo-QryZ9rxfug
 
 一文理解Skip-Gram上下文的预测算法
+
+https://mp.weixin.qq.com/s/IzWq51xrTYdm5KSQBy7idA
+
+Koan:一段来自彭博社的公案
 
 ### Hierarchical Softmax
 
@@ -297,3 +263,15 @@ http://rnnlm.org/
 yandex后来又提出了一个加速版本的RNNLM：
 
 https://github.com/yandex/faster-rnnlm
+
+## Item2Vec
+
+本质上，word2vec模型是在word-context的co-occurrence矩阵基础上建立起来的。因此，任何基于co-occurrence矩阵的算法模型，都可以套用word2vec算法的思路加以改进。
+
+比如，推荐系统领域的协同过滤算法。
+
+协同过滤算法是建立在一个user-item的co-occurrence矩阵的基础上，通过行向量或列向量的相似性进行推荐。如果我们将同一个user购买的item视为一个context，就可以建立一个item-context的矩阵。进一步的，可以在这个矩阵上借鉴CBoW模型或Skip-gram模型计算出item的向量表达，在更高阶上计算item间的相似度。
+
+论文：
+
+《Item2Vec: Neural Item Embedding for Collaborative Filtering》

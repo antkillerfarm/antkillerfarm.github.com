@@ -347,6 +347,10 @@ https://mp.weixin.qq.com/s/m3sgoG15dtacGt1_Anrq6Q
 
 使用NTS理解细粒度图像分类
 
+https://mp.weixin.qq.com/s/6fcqXac7ihAeDuwzl_MxPQ
+
+“神奇的”标签增强技术（Label Enhancement）
+
 # 显著性检测
 
 视觉显著性检测(Visual Saliency Detection)指通过智能算法模拟人的视觉特点，提取图像中的显著区域(即人类感兴趣的区域)。

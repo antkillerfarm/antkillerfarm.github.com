@@ -1,414 +1,362 @@
 ---
 layout: post
-title:  深度学习（二十九）——Graph NN（1）
+title:  深度学习（二十九）——深度时间序列
 category: DL 
 ---
 
 * toc
 {:toc}
 
-# Graph NN
+# 深度时间序列
 
-## GCN（续）
+https://mp.weixin.qq.com/s/cChJO6YrE_XAgeInS7J1Vw
 
-https://www.zhihu.com/question/366088445
+130页序列推荐系统教程重磅发布
 
-请问全连接的图卷积网络(GCN)和self-attention这些机制有什么区别联系吗？
+https://www.intechopen.com/books/time-series-analysis-data-methods-and-applications
 
-https://mp.weixin.qq.com/s/CmVhJMGll5HjO8kxsCinaA
+开源新书《时间序列分析，数据/方法/应用》，6章110页pdf带你了解最新进展
 
-图神经网络GNN,GAT&GCN（一）
+https://mp.weixin.qq.com/s/7c9gfwNjuKD4XyrODnyS5w
 
-https://mp.weixin.qq.com/s/sg9O761F0KHAmCPOfMW_kQ
+时间序列预测：理论与实践，379页ppt阐述大规模时序预测工具与方法
 
-图卷积网络到底怎么做，这是一份极简的Numpy实现
+https://mp.weixin.qq.com/s/seZ78Z6W_65T0GR_Jk7s1A
 
-https://mp.weixin.qq.com/s/ae515_P6zA5SLN5-Edxbig
+神经网络序列数据建模，229页ppt，Modeling Sequential Data with Neural Nets
 
-图卷积网络Graph Convolutional Networks
+https://mp.weixin.qq.com/s/zv264-dqDQYRkYmjX_QZpQ
 
-## GraphSAGE
+郑宇解读地理传感器时间序列预测问题
 
-GraphSAGE取自Graph SAmple and aggreGatE，SAmple指如何对邻居个数进行采样。aggreGatE指拿到邻居的embedding之后如何汇聚这些embedding以更新自己的embedding信息。
+https://mp.weixin.qq.com/s/JwRXBNmXBaQM2GK6BDRqMw
 
-https://mp.weixin.qq.com/s/DNePTCpyjrlZEixw5L7w5A
+Kaggle网站流量预测任务第一名解决方案：从模型到代码详解时序预测
 
-GraphSAGE：我寻思GCN也没我牛逼
+http://mp.weixin.qq.com/s/9fJT0dMLvYQdfMVvSEiG4A
 
-https://mp.weixin.qq.com/s/1DHvLLysMU24dBeLzbSpUA
+深度学习的时间序列模型评价
 
-GraphSAGE
+https://mp.weixin.qq.com/s/1Gdx-U3DRZtSJoFyCLnD0w
 
-https://mp.weixin.qq.com/s/IcLk-fMjKO19BaHbuUCeXg
+深度学习之Sequence Learning
 
-GraphSAGE算法原理，实现和应用
+https://mp.weixin.qq.com/s/SWKWI7BADnX43e-sCBxRPg
 
-https://zhuanlan.zhihu.com/p/142205899
+神经网络在算法交易上的应用系列——简单时序预测
 
-GraphSAGE源码解析
+https://mp.weixin.qq.com/s/Ux7XjLHzlaGFtM1uSMu2gQ
 
-https://mp.weixin.qq.com/s/45PlgqZag8dXqZr4xvj9Hw
+神经网络在算法交易上的应用系列——时序预测+回测
 
-GraphSAGE算法细节详解
+https://mp.weixin.qq.com/s/fUqQo0m7nMLZO85YG-duRw
 
-## GAT
+神经网络在算法交易上的应用系列——多元时间序列
 
-https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw
+https://mp.weixin.qq.com/s/PS1SqSWckuHuyZP6d5ZUFw
 
-Bengio等人提出图注意网络架构GAT，可处理复杂结构图
+“深度学习”信号处理和时序分析的最后选择？
 
-https://zhuanlan.zhihu.com/p/34232818
+https://zhuanlan.zhihu.com/p/54471673
 
-《Graph Attention Networks》阅读笔记
+基于前馈神经网络的时间序列异常检测算法
 
-https://zhuanlan.zhihu.com/p/81350196
+https://mp.weixin.qq.com/s/g9upS70qFOCFBMm-T5nI1A
 
-GAT（图注意力模型）
+利用深度学习最新前沿预测股价走势
 
-https://mp.weixin.qq.com/s/JlUqwie3BtOSIwgSKvRz4w
+https://mp.weixin.qq.com/s/otwmDtiDfVVID65RQgT4Uw
 
-深入探讨图注意力模型：Graph Attention
+教你如何鉴别那些用深度学习预测股价的花哨模型？
 
-https://zhuanlan.zhihu.com/p/132497231
+https://mp.weixin.qq.com/s/xGUcqs3q3yNpVsJ8P7ag_g
 
-深入理解图注意力机制
+以机器学习的视角来看时序点过程的最新进展
 
-https://zhuanlan.zhihu.com/p/57168713
+https://mp.weixin.qq.com/s/F0z5aEaigQLtlLfDoFIJXQ
 
-深入理解图注意力机制
+时间序列预测：理论与实践教程，300多页PPT带你了解领域最新动态
 
-https://mp.weixin.qq.com/s/7LfJ8wDr4K6cVunb8Q_83g
+https://zhuanlan.zhihu.com/p/83130649
 
-图注意力网络（GAT）详解
+深度学习在时间序列分类中的应用
 
-## DeepWalk
+https://mp.weixin.qq.com/s/iPpVT2iY4Ec6oYdsRpPeTQ
 
-https://mp.weixin.qq.com/s/SXnRyUj_mMs8UEtNyP6qNw
+淘宝推荐系统中的深度序列匹配模型SDM
 
-DeepWalk论文解读
+https://zhuanlan.zhihu.com/p/103012005
 
-https://mp.weixin.qq.com/s/h1vDImYTLEheatZnScZwbg
+序列特征的处理方法之一：基于注意力机制方法
 
-使用DeepWalk从图中提取特征
+https://zhuanlan.zhihu.com/p/104216734
 
-https://mp.weixin.qq.com/s/F2jF1vuzK4u8ZPrDK_CyLw
+序列特征的处理方法之二：基于卷积神经网络方法
 
-KDD2018网络表示学习最新教程：DeepWalk作者Perozzi等人带你探索最前沿
+https://mp.weixin.qq.com/s/t-hRxqppW5m6abpvYvZTDg
 
-https://mp.weixin.qq.com/s/QvPB3wNT3IeFuqLB8_nxsw
+序列循环神经网络，141页ppt，Sequences and Recurrent Network
 
-从Word2vec到DeepWalk
+https://mp.weixin.qq.com/s/pfQiTjUhgwBNz76sKpij1Q
 
-https://mp.weixin.qq.com/s/gsxE1V_fNTDjIMhs3ZW72Q
+使用2D卷积技术进行时间序列预测
 
-DeepWalk：图网络与NLP的巧妙融合
+https://mp.weixin.qq.com/s/M-tz_FVRbgOttbojG1Qe_Q
 
-## 参考
+使用GANs生成时间序列数据：DoppelGANger论文详解
 
-https://github.com/thunlp/GNNPapers
+https://mp.weixin.qq.com/s/PT5t3q2_9GF7_Wqa-3AiZg
 
-清华NLP图神经网络GNN论文分门别类，16大应用200+篇论文
+深度学习时序分类，175页pdf
 
-https://github.com/nnzhan/Awesome-Graph-Neural-Networks
+https://mp.weixin.qq.com/s/UjuuspDnm7EoNzfVAeBHJQ
 
-图神经网络论文列表
+《时序分类:深度序列模型》教程，172页ppt
 
-https://github.com/DeepGraphLearning/LiteratureDL4Graph
+## TCN
 
-图深度学习资源汇总
+https://mp.weixin.qq.com/s/hE0elaJcywb084rmWZzTAw
 
-https://github.com/IndexFziQ/GNN4NLP-Papers
+告别RNN，迎来TCN！股市预测任务是时候拥抱新技术了
 
-自然语言领域中图神经网络模型（GNN）应用现状（论文列表）
+https://mp.weixin.qq.com/s/aQxK6JvoEev_jUXHJEGnhg
 
-https://github.com/jdlc105/Must-read-papers-and-continuous-tracking-on-Graph-Neural-Network-GNN-progress
+时间卷积网络TCN：时间序列处理的新模型
 
-Papers on Graph neural network(GNN)
+https://mp.weixin.qq.com/s/mIuAn4G9l3AKFAswpbaQdA
 
-https://github.com/benedekrozemberczki/awesome-graph-classification
+时间卷积网络（TCN）将取代RNN成为NLP预测领域王者
 
-图网络大列表
+https://blog.csdn.net/Kuo_Jun_Lin/article/details/80602776
 
-https://mp.weixin.qq.com/s/SW6V-AxGq1z9Uq7qIJLj5A
+TCN_时间卷积网络_原理与优势
 
-Github上热门图深度学习（GraphDL）源码与工业级框架
+https://mp.weixin.qq.com/s/iLNuBSwWQ13sc4XfNzPuHw
 
-http://www.p-chao.com/2019-01-20/%e5%9b%be%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9cgnn/
+RNN已老，TCN崛起！李飞飞团队提出口语语音识别新方法
 
-图神经网络GNN的简单理解
+https://zhuanlan.zhihu.com/p/188400946
 
-https://mp.weixin.qq.com/s/_TAhfkjj1wsWEZDT8q5K8Q
+时间卷积网络：时间序列的下一场革命？
 
-图表示学习极简教程
+https://mp.weixin.qq.com/s/CGcvWOhNWpboYaaEEtPmQw
 
-https://github.com/icoxfog417/graph-convolution-nlp
+时域卷积网络TCN详解：使用卷积进行序列建模和预测
 
-图卷积神经网络自然语言处理应用代码和教程
+## 时空序列
 
-https://mp.weixin.qq.com/s/VEAnkznZUyZ1RCJulSnwGg
+顾名思义，时空序列问题包含了时间和空间两个方面的因素。
 
-基于图结构网络的表征学习
+https://mp.weixin.qq.com/s/x2Tpd1-prppwjRla-yvTZw
 
-https://mp.weixin.qq.com/s/rxZQrhvRk6Dw3AWpGJS4dg
+什么是时空序列问题？这类问题主要应用了哪些模型？主要应用在哪些领域？
 
-《基于图的句子意思表征》教程, 300多页PPT带你进入这一新兴领域
+https://mp.weixin.qq.com/s/mEt1K5OdJ4IZ7ugxEgWLVQ
 
-https://mp.weixin.qq.com/s/w5ldyp00CqkX8Kp-8Aw0nQ
+Convolutional LSTM Network-paper reading
 
-图深度学习(GraphDL)，下一个人工智能算法热点？一文了解最新GDL相关文章
+https://mp.weixin.qq.com/s/hnzjG09DDtiM4GUVIdxWPA
 
-https://mp.weixin.qq.com/s/Jt6CjMqNFEXWoL5pkLeVyw
+时空序列模型之STGCN
 
-洛桑理工：Graph上的深度学习报告
+https://mp.weixin.qq.com/s/iiJIHVv84namKHtdvHaMBg
 
-https://mp.weixin.qq.com/s/eelcT5x_kWC0dDt0_Ph4qg
+时空序列预测模型之轨迹GRU
 
-清华朱文武组一文综述GraphDL五类模型
+https://mp.weixin.qq.com/s/bE_k9D9RFYXKn7dnTBb7AA
 
-https://mp.weixin.qq.com/s/0rs8Wur7Iv6jSpFz5C-KNg
+时空序列预测模型之CubicLSTM
 
-来自IEEE Fellow的GNN综述
+https://mp.weixin.qq.com/s/XZWReRiIHqykN8yZulBiOg
 
-https://mp.weixin.qq.com/s/cdbHoR_E_mpIdcvmNGWfDA
+混合时空图卷积网络：更精准的时空预测模型
 
-掌握图神经网络GNN基本，看这篇文章就够了
+https://mp.weixin.qq.com/s/olt_i6JxfslFSdbz0Dx4oA
 
-https://www.cnblogs.com/SivilTaram/p/graph_neural_network_1.html
+用于深度时空图建模的Graph WaveNet
 
-从图(Graph)到图卷积(Graph Convolution)：漫谈图神经网络模型 (一)
+https://mp.weixin.qq.com/s/O09aiDmLFhoU9A7OLkUh2Q
 
-https://www.cnblogs.com/SivilTaram/p/graph_neural_network_2.html
+时空图数据挖掘深度学习技术全面综述
 
-从图(Graph)到图卷积(Graph Convolution)：漫谈图神经网络模型 (二)
+https://mp.weixin.qq.com/s/40iqr-Yg4-CGe6QEsLpxhw
 
-https://www.cnblogs.com/SivilTaram/p/graph_neural_network_3.html
+时空序列预测模型之LightNet
 
-从图(Graph)到图卷积(Graph Convolution)：漫谈图神经网络模型 (三)
+https://mp.weixin.qq.com/s/vA8lXb2-m3oXHYT1QUOukA
 
-https://mp.weixin.qq.com/s/Irs_fLrf4oybc3sAfpmEeA
+详解时空序列常用数据集之MovingMnist数据集
 
-图嵌入（Graph embedding）综述
+https://mp.weixin.qq.com/s/ss0Aj1XXn7ZQafhl-XXN6Q
 
-https://mp.weixin.qq.com/s/hyW3b7o4kRZN0oflMLYlTw
+时空序列预测模型之Self-Attention ConvLSTM
 
-图嵌入概述
+https://mp.weixin.qq.com/s/fgJ0xP7lsstGWOThPNCNgg
 
-https://mp.weixin.qq.com/s/4YlDC24vC-H7PHRZhhiZJg
+时空序列预测模型之DGGAN
 
-图节点嵌入(Node Embeddings)概述，9页pdf
+https://mp.weixin.qq.com/s/MNPlpDmUZesLrJcwV2zM6g
 
-https://mp.weixin.qq.com/s/s6E2vV1KrQDI4SeAnkYTKw
+时空序列预测模型之STSGCN
 
-图神经网络将成AI下一拐点！MIT斯坦福一文综述GNN到底有多强
+https://mp.weixin.qq.com/s/4VXXPSo0JoA-ClUV2OsyRQ
 
-https://mp.weixin.qq.com/s/5oOobY_3blbXYYxuuQmShQ
+时空序列预测模型之Graph WaveNet
 
-一文读懂图神经网络
+https://mp.weixin.qq.com/s/0FWHu1Du5bWJVAe308YUuA
 
-https://mp.weixin.qq.com/s/U51C2t92nlE7Tv7oKXgx2A
+序列知识蒸馏进展，44页ppt
 
-一份完全解读：是什么使神经网络变成图神经网络？
+https://mp.weixin.qq.com/s/a5OZeeWlePxs75pcqFBghA
 
-https://mp.weixin.qq.com/s/vK0bzljCNdR1OumUmsi2sA
+使用LSTM深度学习模型进行温度的时间序列单步和多步预测
 
-斯坦福大牛Jure Leskovec：图神经网络研究最新进展
+https://mp.weixin.qq.com/s/AJMi3SoIQ-uQC2HOkuYpdQ
 
-https://mp.weixin.qq.com/s/WMpcamrHjUDnYwqyISdooA
+时空数据挖掘深度学习技术全面综述
 
-斯坦福Jure Leskovec图表示学习：无监督和有监督方法
+https://mp.weixin.qq.com/s/sT0CQEzYgukvENcyxJ8HUw
 
-https://mp.weixin.qq.com/s/8zhO5phIVc2gz70omn9xKA
+使用TensorFlow和深度混合学习进行时间序列预测
 
-Jure Leskovec：图神经网络GNN研究进展：表达性、预训练、OGB，71页ppt
+# 姿态/行为检测进阶+
 
-https://mp.weixin.qq.com/s/lt9lZbulkW0C8A_xi6hodQ
+https://mp.weixin.qq.com/s/6HsL2B7p-XyvGWAb4SwALA
 
-浅析图卷积神经网络
+图灵奖得主Geoffrey Hinton最新研究NASA：一种更好地学习三维模型动作的方法
 
-https://mp.weixin.qq.com/s/aeQyZ8cpz81cK8Dg-84mjA
+https://zhuanlan.zhihu.com/p/26460437
 
-网络表征学习综述
+Video Analysis相关领域解读之Action Recognition(行为识别)
 
-https://mp.weixin.qq.com/s/bsNDI9YxFdaB2Q5aRz9ECw
+https://zhuanlan.zhihu.com/p/26603387
 
-图卷积神经网络的变种与挑战
+Video Analysis相关领域解读之Temporal Action Detection(时序行为检测)
 
-https://mp.weixin.qq.com/s/oKwxWbCkH-xqYSJIBdb92A
+https://zhuanlan.zhihu.com/p/26730181
 
-2018超网络节点表示学习
+Video Analysis相关领域介绍之Video Captioning(视频to文字描述)
 
-https://mp.weixin.qq.com/s/WQlSghxG89JCroNZSmop8w
+https://mp.weixin.qq.com/s/-HEYU_El8xysk8atHYx1Mg
 
-朱军：关于图的表达学习
+基于3D行人姿态和步态预测的神经网络模型
 
-https://mp.weixin.qq.com/s/mTCrTPzyeogwRHfgitfK6Q
+https://zhuanlan.zhihu.com/p/72561165
 
-为什么说图网络是AI的未来？
+重新思考人体姿态估计 Rethinking Human Pose Estimation
 
-https://mp.weixin.qq.com/s/DUv5c6ce-dgLOBAE4ChiQg
+https://mp.weixin.qq.com/s/8vdTlIe9LV88AVw9kAcVjA
 
-图神经网络为何如此强大？看完这份斯坦福31页PPT就懂了！
+基于空间AdaIN的深度姿态迁移
 
-https://mp.weixin.qq.com/s/OV-rXGU8DTNqv3QZcKo00Q
+https://zhuanlan.zhihu.com/p/129279351
 
-Graph Learning
+X3D Facebook视频理解/行为识别新作
 
-https://mp.weixin.qq.com/s/PkUJsnZdihPM7q9BpvO8Ag
+https://zhuanlan.zhihu.com/p/149429010
 
-深度学习中不得不学的Graph Embedding方法
+TAM: 针对动作识别的时序自适应模块
 
-https://mp.weixin.qq.com/s/PxNGJ0hcmCo-2zvWD-rfug
+https://mp.weixin.qq.com/s/skCOaKf9kRABTX7hkdjGXA
 
-GCN作者Thomas Kipf最新Talk：利用图神经网络进行无监督学习
+谷歌极速人脸、手、人体姿态分析Blaze算法家族
 
-https://mp.weixin.qq.com/s/0lE5n7mp6sc775-f7V2KPw
+https://zhuanlan.zhihu.com/p/69042249
 
-异质图嵌入综述: 方法、技术、应用和资源
+2020 Pose Estimation人体骨骼关键点检测综述笔记
 
-https://mp.weixin.qq.com/s/Ul9BIrJxjlzJwGqRv6E7eg
+https://zhuanlan.zhihu.com/p/164603050
 
-10分钟了解图嵌入
+3D Pose Estimation关键点检测的算法整理（2020）
 
-https://mp.weixin.qq.com/s/t2kjxrcn6O9tbJ-IQELboQ
+# 图像超分辨率进阶+
 
-高君宇：图神经网络在视频分类中的应用
+https://zhuanlan.zhihu.com/p/67613641
 
-https://mp.weixin.qq.com/s/SWcJut6QqOvbziirxTd2Kg
+基于多级神经纹理迁移的图像超分辨方法(Adobe Research)
 
-斯坦福教授ICLR演讲：图网络最新进展GraphRNN和GCPN
+https://mp.weixin.qq.com/s/IStOD22WgZ6EBFCvIHkNSg
 
-https://mp.weixin.qq.com/s/Lakq83_ngUJf1ES3N7J9_g
+图像超分辨率网络：RCAN
 
-图卷积在基于骨架的动作识别中的应用
+https://mp.weixin.qq.com/s/4LIq3kZaXgaoEEyb8TQvwg
 
-https://mp.weixin.qq.com/s/5wSgC4pXBfRLoCX-73DLnw
+图像超分辨率重建--AI研究
 
-什么是图卷积网络？行为识别领域新星
+https://mp.weixin.qq.com/s/ETGPXVDGRHOq0W-ef_q2_A
 
-https://mp.weixin.qq.com/s/1-Dmckby2NcXsaoK08zk8w
+RankSRGAN:排序学习+GAN用于超分辨率
 
-视频理解中的图表示学习
+https://zhuanlan.zhihu.com/p/140507840
 
-https://mp.weixin.qq.com/s/sJB4N_ObUqKM8H65yU_1sg
+图像超分：USRNet
 
-Graph基础知识介绍
+https://mp.weixin.qq.com/s/sju4SYFxzDkJevk3mi68Rw
 
-https://mp.weixin.qq.com/s/edrh-HXqW01Yx7c8tQ8UxA
+图像超分辨率网络：EDSR
 
-从数据结构到算法：图网络方法初探
+https://mp.weixin.qq.com/s/uZQK0oQbV7wm0WVz_QxVQg
 
-https://mp.weixin.qq.com/s/JvtrGa0YiUmR6UA5wBQ-pQ
+DRN：用于单图像超分辨率的对偶回归网络
 
-图神经网络GNN最新理论进展和应用探索
+# Calibration
 
-https://mp.weixin.qq.com/s/zQU47tjpTCPiLdEmUmZx3Q
+使用Resnet模型简单的对一些图片任务进行训练，收敛后的模型对测试集的平均置信度高达80%-85%，然而只有将近70%的图片能被正确分对（红色代表分错，绿色代表分对）。这意味着啥？训练好的模型好像有点盲目自信，即出现 overconfidence 现象，或者可以称为模型的准确率和置信度不匹配（miscalibration）。
 
-图卷积神经网络及其应用
+那么有没有办法让模型的softmax输出能真实的反映决策的置信度呢？ 这个问题，就被称为Calibration问题（直译是叫“校准”）。
 
-https://mp.weixin.qq.com/s/8Sz_jo7pokL_nzupEBGGdg
+https://mp.weixin.qq.com/s/KmkyhBijqqhaxDQ8p71BFA
 
-当深度强化学习遇见图神经网络
+Calibration: 一个工业价值极大，学术界却鲜有研究的问题！
 
-https://zhuanlan.zhihu.com/p/28170197
+# 图像变换+
 
-《Gated Graph Sequence Neural Networks》阅读笔记
+https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247504381&idx=2&sn=465027cc2a8f75a7f6ddf400830f61e0
 
-https://blog.csdn.net/yorkhunter/article/details/104056795
+这个品质超高的漫画自动上色AI，让你DIY出喜欢的配色
 
-综述论文“A Comprehensive Survey on Graph Neural Networks”
+https://mp.weixin.qq.com/s/3Aq1HXpBzgNdcB130tCKbQ
 
-https://mp.weixin.qq.com/s/rTnv7XOnIvRDGDdhbuoE9g
+GAN网络图像翻译机：图像复原、模糊变清晰、素描变彩图
 
-深度图相似学习综述
+https://mp.weixin.qq.com/s/DTVjncaERBmDfOkvXv_3qg
 
-https://mp.weixin.qq.com/s/FDWoAXGOlRxOEkvli3gd5Q
+皱眉细节完美复刻，阿尔伯塔大学团队标星1.7K的项目生成超逼真的肖像画
 
-55页图深度学习导论《A Gentle Introduction to Deep Learning for Graphs》
+https://mp.weixin.qq.com/s/UpfgxiIaSU4iIjbrkS--zA
 
-https://mp.weixin.qq.com/s/Pm1HiEQOBnbo_GQ_v6Y_zw
+颠覆视频压缩的不一定是新压缩算法，而可能是GAN！英伟达新算法最高压缩90%流量
 
-腾讯提出自适应图卷积神经网络，接受不同图结构和规模的数据
+https://mp.weixin.qq.com/s/yn_TQ-Mdcph3M1dfLu-KMw
 
-https://zhuanlan.zhihu.com/p/31067515
+好好的人，说没就没了：这个视频“橡皮擦”让你瞬间消失，头发丝都不留
 
-《Semi-Supervised Classification with Graph Convolutional Networks》阅读笔记
+https://mp.weixin.qq.com/s/-HKWSLDBwswuDYho29q5Kg
 
-https://mp.weixin.qq.com/s/6viSk0Ts_7eTfYrWYi_HDQ
+怎样用Python控制图片人物动起来？一文就能Get！
 
-基于图结构的实体和关系联合抽取模型简介
+https://mp.weixin.qq.com/s/ECxcgclgHtjerFD4P3lvAA
 
-https://zhuanlan.zhihu.com/p/36117802
+建造自己的“天空之城”，密歇根大学博士后的这项研究可以虚空造物、偷天换日
 
-《Learn to Represent Programs with Graphs》阅读笔记。这篇论文讲述了DL在程序代码纠错方面的应用。
+https://mp.weixin.qq.com/s/LoQzVvMLoFDQDV_Xrdup5w
 
-https://zhuanlan.zhihu.com/p/37278426
+升级版APDrawing，人脸照秒变线条肖像画，细节呈现惊人
 
-Graph2Seq: Graph to Sequence Learning with Attention-based Neural Networks
+# Graph NN++
 
-https://mp.weixin.qq.com/s/iQYVyo2PHuGbEsYgdIf_oQ
+https://mp.weixin.qq.com/s/lyy3AhqLDBT88B2LSSIbZQ
 
-DeepMind等机构提出“图网络”：面向关系推理
+图表示解决长文本关系匹配问题：腾讯提出概念交互图算法
 
-https://mp.weixin.qq.com/s/TAccHagxXQ82lfE91Y6xWg
+https://mp.weixin.qq.com/s/dIem8V4NiOWhKE_ENhAG5Q
 
-CNN已老，GNN来了：重磅论文讲述深度学习的因果推理
+缺失数据还原-图神经网络新应用
 
-https://mp.weixin.qq.com/s/UONtTJJgDawRPWtatAVKkg
+https://mp.weixin.qq.com/s/mFLuTfACeDNeuDclpqEZpg
 
-如何利用高效的搜索算法来搜索网络的拓扑结构
+用于多关系数据的图神经网络R-GCNs
 
-https://mp.weixin.qq.com/s/SGCtwYWfnxjcpMJeeH1b4w
+https://mp.weixin.qq.com/s/pn8DGb190_9Yd-MuNohgcQ
 
-图神经网络+池化模块，斯坦福等提出层级图表征学习
-
-https://mp.weixin.qq.com/s/DOau_vTbwCauQ8mrHkGu9Q
-
-首个面向Facebook、arXiv网络图类的对抗攻击研究
-
-https://mp.weixin.qq.com/s/_0quf0IRe8mn4dnsBwf6Aw
-
-基于路径的实体图关系抽取模型
-
-https://mp.weixin.qq.com/s/jCgbBldpw4TGHUvN9WkJZg
-
-在对抗中学习网络结构——87页PPT带你学习Graph中的GAN
-
-https://mp.weixin.qq.com/s/xTZbfiLYHB64AJJRcw04qQ
-
-知识图和神经网络：如何有效读取图节点属性
-
-https://mp.weixin.qq.com/s/9fFjVSiMg-LwddXfNJuKuw
-
-DeepMind开源图网络库，一种结合图和神经网络的新方法
-
-https://mp.weixin.qq.com/s/5DmpgPN4t3p3H53Xu7_-3A
-
-北大、微软亚洲研究院：高效的大规模图神经网络计算
-
-https://mp.weixin.qq.com/s/BFJD8i_yg1Y6fxZS5or-rw
-
-Bengio最新论文提出GibbsNet：深度图模型中的迭代性对抗推断
-
-https://mp.weixin.qq.com/s/zg3yW7e4UKIs9-m6WmcbvA
-
-GraphWave：一种全新的无监督网络嵌入方法
-
-https://mp.weixin.qq.com/s/mamet6l_lA7fhoYkysZ7PQ
-
-华为联合LSE提出KONG：有序近邻图的核函数
-
-https://mp.weixin.qq.com/s/OnRB44tliuTFcjlmuRG3Xw
-
-图神经网络“理论在哪里“？
-
-https://mp.weixin.qq.com/s/Uy2ekBiwkI2sIo637b-16g
-
-北大、微软提出NGra：高效大规模图神经网络计算
-
-https://mp.weixin.qq.com/s/diIzbc0tpCW4xhbIQu8mCw
-
-阿里凑单算法首次公开！基于Graph Embedding的打包购商品挖掘系统解析
-
-https://mp.weixin.qq.com/s/chiHw5gKnJyTJTQeF6gViw
-
-在向量空间中启用网络分析和推理，清华大学崔鹏博士最新分享
+《图信号处理》新书，170页pdf阐述从图分析到图神经网络应用

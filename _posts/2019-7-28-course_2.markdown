@@ -145,6 +145,10 @@ https://zhuanlan.zhihu.com/p/125128368
 
 自动控制原理
 
+https://mp.weixin.qq.com/s/GhdVntXzMTLIFGJjpJvDMg
+
+《概率统计及其在计算中的应用》书册，384页pdf
+
 # English
 
 SOTA(state of the art)：目前最高水平
@@ -328,6 +332,14 @@ https://mp.weixin.qq.com/s/LDO0vGjOqm1ZRc1wXgTNNw
 https://mp.weixin.qq.com/s/3RP9m2uI2rA8p0Mw9E8ZQg
 
 每个程序猿都该了解的黑客技术大汇总
+
+https://mp.weixin.qq.com/s/zrLnbYl4awGoo2P9_l7bXQ
+
+中国顶级黑客Top10
+
+https://mp.weixin.qq.com/s/uYJPgFd8kOTvBPa3fgiOzg
+
+什么是堡垒机？为什么需要堡垒机？
 
 # 经济学
 

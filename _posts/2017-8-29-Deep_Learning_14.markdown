@@ -185,6 +185,10 @@ http://mlexplained.com/2018/01/13/weight-normalization-and-layer-normalization-e
 
 Weight Normalization and Layer Normalization Explained
 
+https://zhuanlan.zhihu.com/p/114314389
+
+weight normalization原理和实现
+
 ## Cosine Normalization
 
 Normalization还能怎么做？
