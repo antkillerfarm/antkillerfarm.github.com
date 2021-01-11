@@ -69,6 +69,10 @@ https://mp.weixin.qq.com/s/AIg0HvgEIk4Ur35IwxxAWQ
 
 基于图片的人脸表情识别，基本概念和数据集
 
+https://mp.weixin.qq.com/s/kWoMh-rw3MSwB0KbCa9Axg
+
+如何做好表情识别任务的图片预处理工作
+
 # OCR
 
 ## 概述

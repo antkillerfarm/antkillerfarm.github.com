@@ -167,6 +167,12 @@ UART的硬件形态分为TTL、RS232和RS485等，其中最常用的是RS232，�
 
 分为电平式和边沿式两种。前者如I2C，只允许数据在时钟信号为低电平时改变，后者如SPI，规定数据在时钟信号的边沿有效。
 
+### 参考
+
+https://www.zhihu.com/question/308406342
+
+SPI总线协议如何理解？
+
 ## I2C
 
 ![](/images/article/i2c.png)

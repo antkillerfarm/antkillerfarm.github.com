@@ -247,3 +247,7 @@ Quickprop介绍：一个加速梯度下降的学习方法（由于80/90年代的
 https://zhuanlan.zhihu.com/p/25202034
 
 道理我都懂，但是神经网络反向传播时的梯度到底怎么求？
+
+https://mp.weixin.qq.com/s/Ub3CMQszkx7pGKoPcB0bYA
+
+BP反向传播矩阵推导图示详解​

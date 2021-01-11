@@ -17,9 +17,9 @@ Factorization Machines是Steffen Rendle于2010年提出的算法。
 
 >注：Steffen Rendle，弗赖堡大学博士，现为Google研究员。libFM的作者，被誉为推荐系统的新星。
 
-FM算法实际上是一大类与矩阵分解有关的算法的广义模型。
+FM算法实际上是一大类与矩阵分解有关的算法的广义模型。由于没有DL那么吃算力和数据，非常适合搭建baseline之用。
 
-参考文献1是Rendle本人的论文，其中有章节证明了SVD++、PITF、FPMC等算法，都是FM算法的特例。《机器学习（十四）》中提到的ALS算法，也是FM的特例。
+参考文献1是Rendle本人的论文，其中有章节证明了SVD++、PITF、FPMC等算法，都是FM算法的特例。《机器学习（十六）》中提到的ALS算法，也是FM的特例。
 
 参考文献2是国人写的中文说明，相对浅显一些。
 
@@ -58,6 +58,10 @@ FFM：Field-aware Factorization Machines
 https://mp.weixin.qq.com/s/Fg9GKw-QLlOskEqX7pl1dA
 
 推荐系统之FM算法原理及实现（附代码）
+
+https://mp.weixin.qq.com/s/wo1K4EpguonjUhRW55jQJw
+
+FM: 推荐算法中的瑞士军刀
 
 ## PITF
 

@@ -183,6 +183,10 @@ https://mp.weixin.qq.com/s/dnRtAIi7Ro0KGZVozldEvg
 
 多模态网络表示学习教程Multi-modal Network Representation Learning
 
+https://mp.weixin.qq.com/s/MCH3DdabMohDHzo1FKECUQ
+
+《图表示学习》报告，McGill助理教授Hamilton讲授，79页ppt
+
 ## 综述
 
 《A Comprehensive Survey on Graph Neural Networks》

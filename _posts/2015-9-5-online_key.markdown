@@ -217,6 +217,12 @@ https://jersey.java.net/
 
 https://github.com/feuyeux/jax-rs2-guide-II
 
+参考：
+
+https://mp.weixin.qq.com/s/GLgWqKQfDR_EhdRdadqh_Q
+
+4种主流的API架构风格对比（RPC、SOAP、REST、GraphQL）
+
 # 微服务
 
 ![](/images/img2/FaaS.png)

@@ -283,6 +283,10 @@ https://zhuanlan.zhihu.com/xiahongjin
 
 一个ML+NLP+金融的blog
 
+https://mp.weixin.qq.com/s/fidQpsDbfsFqvhmMvi4YgQ
+
+Python金融大数据分析（Yves Hilpsch 著），566页pdf
+
 https://mp.weixin.qq.com/s?__biz=MzU3ODIwMjA3NQ==&mid=2247483661&idx=1&sn=5efbd5aabd294ce39f1b9ae05f066a28
 
 现金贷、消费金融反欺诈规则设置

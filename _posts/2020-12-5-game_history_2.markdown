@@ -91,6 +91,10 @@ https://zhuanlan.zhihu.com/p/325972017
 
 STEAM上的科研游戏，真是给正常人玩的？
 
+https://mp.weixin.qq.com/s/NFYlupa0piLjcWrRaP-C-Q
+
+中年失业破产后当雇佣兵、倒卖煎饼果子，游戏里的打工人也这么难？
+
 # 入行以来涉及的技术简史（续）
 
 ### 3）QT

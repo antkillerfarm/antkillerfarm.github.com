@@ -366,3 +366,11 @@ https://mp.weixin.qq.com/s/nTBuYuW7h9wZYuo3w1xGmQ
 https://mp.weixin.qq.com/s/LOTQfD9KKtAq0zz4rObCGA
 
 EB级系统空中换引擎：阿里调度执行框架如何全面升级？（DAG 2.0）
+
+https://zhuanlan.zhihu.com/p/276122469
+
+分布式训练常用技术简介
+
+https://zhuanlan.zhihu.com/p/294698838
+
+DLPerf—分布式深度学习最佳入门(踩坑)指南

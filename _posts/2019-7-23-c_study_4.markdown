@@ -417,3 +417,7 @@ Java8 Stream：2万字20个实例，玩转集合的筛选、归约、分组、�
 https://mp.weixin.qq.com/s/oK6A3viNP3XafEvl7rzjKA
 
 如何实现Java类隔离加载？
+
+https://mp.weixin.qq.com/s/_3FVfZQuDftFpOf7cbuKgw
+
+Java泛型 T，E，K，V，?，傻傻分不清？
