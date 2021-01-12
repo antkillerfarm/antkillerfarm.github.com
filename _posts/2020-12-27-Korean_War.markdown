@@ -39,7 +39,7 @@ https://www.daocaorenshuwu.com/book/lishidewendu3/2561482.html
 
 料得年年断肠处，不敢忆，长津湖
 
-https://zhuanlan.zhihu.com/p/217938108
+https://new.qq.com/omn/20200904/20200904A06IUU00.html
 
 美军最强部队陆战1师有多强？志愿军随便哪支部队都能揍它
 
