@@ -168,6 +168,12 @@ generalized autoregressive conditional heteroskedasticity, GARCH
 
 这些问题的常见工具包括HMM、CRF、RNN等，可参见其他相关章节。
 
+参考：
+
+https://mp.weixin.qq.com/s/LAn9h6_WkxlZ_IsrhnzZCw
+
+波动率建模之ARCH模型
+
 ## Prophet
 
 Prophet是FaceBook提出的时间序列算法。同时，也是该算法的工具包的名字。

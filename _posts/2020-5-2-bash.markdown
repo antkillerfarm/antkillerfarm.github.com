@@ -208,6 +208,32 @@ Shebang（也称为 Hashbang ）是一个字符序列`#!`，其出现在文本�
 
 `#!/bin/bash`
 
+## fg & bg
+
+Ctrl+C
+
+终止并退出前台命令的执行，回到SHELL
+
+Ctrl+Z
+
+暂停前台命令的执行，将该进程放入后台，回到SHELL
+
+jobs
+
+查看当前在后台执行的命令，可查看命令进程号码
+
+&
+
+运行命令时，在命令末尾加上&可让命令在后台执行
+
+fg N
+
+将命令进程号码为N的命令进程放到前台执行，同%N
+
+bg N
+
+将命令进程号码为N的命令进程放到后台执行
+
 ## 参考
 
 https://github.com/dylanaraps/pure-bash-bible

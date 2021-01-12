@@ -251,9 +251,17 @@ XLORE是融合中英文维基、法语维基和百度百科，对百科知识进
 
 ## fake news
 
+https://mp.weixin.qq.com/s/9NrJnY1PwHDYIbo-oyN0eQ
+
+万字长文带你解读“虚假新闻检测”最新进展
+
 https://mp.weixin.qq.com/s/Emlzfgoo99T9xAsTKJRQXg
 
 一文看懂虚假新闻检测
+
+https://mp.weixin.qq.com/s/qmQnutBqv-nzP7UgILbCMg
+
+互联网虚假新闻检测挑战赛（冠军）方案分享
 
 https://mp.weixin.qq.com/s/8qFGiMjIHXSwozDmTe7XbA
 

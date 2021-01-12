@@ -73,10 +73,6 @@ https://mp.weixin.qq.com/s/C_dcGAdsWuUjnvhRS5t-Xw
 
 机器学习数学全书，1900页PDF下载
 
-http://web.stanford.edu/class/cs276/
-
-CS 276 / LING 286: Information Retrieval and Web Search
-
 https://nlp.cs.princeton.edu/cos484/
 
 COS 484: Natural Langauge Processing（陈丹琦主讲）

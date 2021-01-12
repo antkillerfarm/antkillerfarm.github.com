@@ -15,6 +15,12 @@ Information Retrieval是用户进行信息查询和获取的主要方式，是�
 
 《MatchZoo: A Toolkit for Deep Text Matching》
 
+## 教程
+
+http://web.stanford.edu/class/cs276/
+
+CS 276 / LING 286: Information Retrieval and Web Search
+
 ## 度量学习
 
 度量学习（Metric Learning）是机器学习里面的一个研究方向，主要是用来度量数据间距离。

@@ -239,10 +239,6 @@ https://mp.weixin.qq.com/s/8J6xar1ppIOXUlcwFtAdWA
 
 合肥高新杯心电人机智能大赛—冠军比赛攻略
 
-https://mp.weixin.qq.com/s/qmQnutBqv-nzP7UgILbCMg
-
-互联网虚假新闻检测挑战赛（冠军）方案分享
-
 https://mp.weixin.qq.com/s/RvwVhXYNA11Jn1fnqe0XPA
 
 多人种人脸识别

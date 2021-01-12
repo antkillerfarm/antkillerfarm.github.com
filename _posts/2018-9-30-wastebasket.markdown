@@ -269,21 +269,11 @@ https://mp.weixin.qq.com/s/w6aY1_RryWnFq8FomPTDhw
 
 ----
 
-双曲拱坝具有极高的厚高比。例如，瓦依昂拱坝，高262m，最大底厚22.1m，厚高比仅0.084。
+寒潮逼出了三种人，羽绒服面包人、皮草贵妇和摇粒绒小绵羊。
 
-副坝：只能挡水，而没有泄洪能力的坝体。
+https://mp.weixin.qq.com/s/YyXpzyvkSvRd4KR8Wlac9g
 
-http://blog.sina.com.cn/s/blog_4b7c1f540100t0rq.html
-
-瓦依昂大坝的悲剧
-
-http://blog.sina.com.cn/s/blog_4b7c1f540100t4sy.html
-
-重力坝战时抗打击能力问答
-
-https://www.zhihu.com/answer/303210942
-
-瓦伊昂大坝
+寒冬腊月，你被摇粒绒征服了吗？
 
 # 机械
 
