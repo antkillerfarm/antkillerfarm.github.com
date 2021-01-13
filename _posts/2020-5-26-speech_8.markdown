@@ -267,6 +267,10 @@ https://zhuanlan.zhihu.com/p/278243561
 
 语音转换Voice Conversion ---直接转换技术
 
+https://mp.weixin.qq.com/s/u2Op6y1vdZKtAlfhAYGLsQ
+
+语音合成方向：歌唱合成（singing voice synthesis)
+
 # 模型压缩与加速进阶+
 
 https://mp.weixin.qq.com/s/m-wQRm3VpfQkEOoUAxEdoA

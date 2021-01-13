@@ -151,6 +151,10 @@ https://mp.weixin.qq.com/s/jlD5p5GXFmrWlxg9xvehxg
 
 元学习—Meta Learning的兴起
 
+https://mp.weixin.qq.com/s/WZtmy_RK4lsWqp9qIMCnUA
+
+Meta Learning 1: 基于度量的方法
+
 https://zhuanlan.zhihu.com/p/133159617
 
 Meta-Learning in Neural Networks: A survey

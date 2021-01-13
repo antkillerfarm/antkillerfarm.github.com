@@ -366,3 +366,7 @@ SaccadeNet：使用角点特征进行two-stage预测框精调
 https://mp.weixin.qq.com/s/N8vjh3HPWOfxo7ZdOr_eOg
 
 PAA论文解读：在物体检测中利用概率分布来将anchor分配为正负样本
+
+https://mp.weixin.qq.com/s/nTzTjUDQc3jTu3AAQ1Hvbg
+
+理解物体检测中的Objectness

@@ -118,6 +118,10 @@ https://www.zhihu.com/question/22365729
 
 什么是一类支持向量机（one class SVM）
 
+https://mp.weixin.qq.com/s/04rKUq2q70iyvgOEWQMs0g
+
+20年单类别(One-Class)分类全面综述论文，从2001到2020
+
 ## 多分类SVM
 
 多分类任务除了使用多分类算法之外，也可以通过对两分类算法的组合来实施多分类。常用的方法有两种：one-against-rest和DAG SVM。

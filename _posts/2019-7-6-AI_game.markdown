@@ -113,10 +113,6 @@ https://mp.weixin.qq.com/s/Wqy-GeXpW8s0j7m5OYpcDA
 
 过去十年，我们用了哪些即时战略游戏训练AI？
 
-https://mp.weixin.qq.com/s/ma2SgFuNYu50oexnfBYYLw
-
-用AI打王者荣耀？认真谈谈强化学习的价值
-
 https://mp.weixin.qq.com/s/28r1deIM2-eDOpX29QWLfw
 
 AI真的会杀人？DeepMind开发了二维网格游戏来做测试
@@ -149,10 +145,6 @@ https://mp.weixin.qq.com/s/sYXVqnk5p8tvl6s0EIkr3w
 
 游戏代理框架，帮助您创建AI来玩任何您拥有的游戏！
 
-https://mp.weixin.qq.com/s/IFGUXI3YXVsjIVuJ717uaw
-
-用人工智能打王者荣耀：匹茨堡大学&腾讯AI Lab为游戏AI引入MCTS方法
-
 https://mp.weixin.qq.com/s/Mp_thK_zTMOX0p5oSZOIQw
 
 一台笔记本打败超算：CMU冷扑大师团队提出全新德扑AI Modicum
@@ -184,10 +176,6 @@ https://mp.weixin.qq.com/s/OdQ_zH9jbZgEqOD3vHtkng
 https://mp.weixin.qq.com/s/BnS5KECLiUNGFd0EtTovTw
 
 南大AI单机训练一天，击败最高难度内置Bot
-
-https://mp.weixin.qq.com/s/Q3WWqEnUaIvnLwoFHY5lfQ
-
-腾讯王者荣耀AI论文首次曝光：五AI王者局开黑与人类战队打成平手
 
 https://mp.weixin.qq.com/s/WabOUqqK6RW8mTNR53esYQ
 
@@ -224,10 +212,6 @@ OpenAI智能体上演捉迷藏攻防大战，自创套路与反套路
 https://mp.weixin.qq.com/s/pejkWw0mqKMAErfj3u_Vpg
 
 我在哥大研究网游开箱氪金建模
-
-https://mp.weixin.qq.com/s/Mdq9fL10Zcjs_z3PeqtN9Q
-
-腾讯AI单挑碾压王者荣耀职业玩家：人类15场只能赢1局，坚持不到8分钟
 
 https://mp.weixin.qq.com/s/94OzNo6HFgzA9lM2hDUjRw
 

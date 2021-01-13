@@ -247,6 +247,30 @@ https://mp.weixin.qq.com/s/8jkJy8ZarvpodmBccAc74A
 
 中国AI足球队勇夺世界冠军，腾讯出品
 
+https://mp.weixin.qq.com/s/ma2SgFuNYu50oexnfBYYLw
+
+用AI打王者荣耀？认真谈谈强化学习的价值
+
+https://mp.weixin.qq.com/s/IFGUXI3YXVsjIVuJ717uaw
+
+用人工智能打王者荣耀：匹茨堡大学&腾讯AI Lab为游戏AI引入MCTS方法
+
+https://mp.weixin.qq.com/s/Q3WWqEnUaIvnLwoFHY5lfQ
+
+腾讯王者荣耀AI论文首次曝光：五AI王者局开黑与人类战队打成平手
+
+https://mp.weixin.qq.com/s/Mdq9fL10Zcjs_z3PeqtN9Q
+
+腾讯AI单挑碾压王者荣耀职业玩家：人类15场只能赢1局，坚持不到8分钟
+
+https://mp.weixin.qq.com/s/_Ze8C8UQV9UZXnSX6qq2GA
+
+强化学习玩王者荣耀
+
+https://mp.weixin.qq.com/s/mj8PG-wRqSbEIR38fongHA
+
+用自己训练的AI玩王者荣耀是什么体验？
+
 # DRL参考资源
 
 https://mp.weixin.qq.com/s/ruAAQEjPIDPWPiuPepKU6Q

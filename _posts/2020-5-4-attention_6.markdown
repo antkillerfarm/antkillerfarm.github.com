@@ -391,6 +391,10 @@ https://mp.weixin.qq.com/s/nSokDcIkOSSrRnhHCuu4Mg
 
 Transformer家族简史（PART I）
 
+https://mp.weixin.qq.com/s/p919Kfv-1GSDM6u6FpnBsA
+
+Transformer家族简史（PART II）
+
 https://mp.weixin.qq.com/s/M0zLw9hA5xzontKB7Zj23Q
 
 Memory Transformer，一种简单明了的Transformer改造方案

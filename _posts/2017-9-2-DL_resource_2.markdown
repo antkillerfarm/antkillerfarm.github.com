@@ -321,6 +321,10 @@ https://mp.weixin.qq.com/s/gsHu7vNs9cm1tH2nz9mmMg
 
 推荐一个不错的边缘检测网络：HED
 
+https://mp.weixin.qq.com/s/gEYzS6iiktUJM_EW4s_CEA
+
+在OpenCV中基于深度学习的边缘检测
+
 https://mp.weixin.qq.com/s/7zFcWAmtpW2S_PVYru_lxg
 
 眼见未必为实--漫谈图像隐写术

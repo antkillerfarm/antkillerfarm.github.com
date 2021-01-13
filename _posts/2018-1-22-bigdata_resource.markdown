@@ -137,6 +137,14 @@ https://mp.weixin.qq.com/s/HJ6uZEYOQFvgR5bZBs5_dA
 
 全球100款大数据工具汇总
 
+https://mp.weixin.qq.com/s/fpQGi5pUmTmH96s8Jcyu3Q
+
+关于大数据的完整讲解
+
+https://mp.weixin.qq.com/s/mGXcD8gRQfyHpmqx46kmPw
+
+什么是流式输出？
+
 https://mp.weixin.qq.com/s/0ek_bGUZ2EbYEX-kq3YByg
 
 大数据：目前99%数据是无用僵尸数据，90%的数据产品是伪需求！

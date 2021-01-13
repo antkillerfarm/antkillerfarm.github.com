@@ -221,6 +221,14 @@ https://mp.weixin.qq.com/s/cLPMJm4u67QDsJg0IkmYFQ
 
 解析Vision Transformer
 
+https://www.zhihu.com/question/437495132
+
+如何看待Transformer在CV上的应用前景，未来有可能替代CNN吗？
+
+https://mp.weixin.qq.com/s/EwzjBAeZQfeBt-EkaeXPAg
+
+搞懂Vision Transformer原理和代码，看这篇技术综述就够了
+
 # BERT进阶
 
 ## AR vs AE
