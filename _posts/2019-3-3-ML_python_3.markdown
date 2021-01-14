@@ -349,6 +349,10 @@ https://mp.weixin.qq.com/s/DVM_jO-jvWgnF3Nq-kPQpg
 
 Pygal，可导出矢量图的Python可视化利器
 
+https://www.zhihu.com/question/33783546
+
+Python如何画出漂亮的地图？
+
 ## 参考
 
 https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg
