@@ -247,7 +247,11 @@ GraphQL最佳入门实战
 
 ## 分布式算法
 
-Paxos、Raft、Gossip、Nuorum NWR、PBFT、Anti-Entropy、POW、ZAB等等
+Paxos、Raft、Gossip、Nuorum NWR、PBFT、Anti-Entropy、POW、ZAB等等。
+
+https://mp.weixin.qq.com/s/KKrxuVCrjlXXWMPTXQ-fvA
+
+分布式之系统底层原理
 
 https://zhuanlan.zhihu.com/p/130974371
 

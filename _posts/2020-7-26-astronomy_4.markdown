@@ -41,6 +41,10 @@ https://mp.weixin.qq.com/s/O5L7hvg1WXJpbwKvaY880w
 
 捕手LAMOST与高速星的故事
 
+https://mp.weixin.qq.com/s/oU6KRPwuj9SJOLEYHNmE9A
+
+巨石来自外星球？是你来自外太空！
+
 # 两弹一星
 
 https://view.inews.qq.com/a/20171125A0E3WT00

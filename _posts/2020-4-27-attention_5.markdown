@@ -111,6 +111,10 @@ https://mp.weixin.qq.com/s/LXp6otaW34r0v8yc4TJNog
 
 LSRA: 轻量级Transformer，注意力长短搭配
 
+https://zhuanlan.zhihu.com/p/343229835
+
+Poor Man's BERT: 更小更快的Transformer模型
+
 # 快速BERT
 
 轻量化BERT是从计算量的角度出发，对于传统BERT的优化。而快速BERT主要着眼于软件工程角度，如何更好的利用各种硬件加速BERT的计算。典型的有NVIDIA的FasterTransformer和腾讯的TurboTransformer。

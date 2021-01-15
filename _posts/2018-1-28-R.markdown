@@ -87,6 +87,10 @@ https://www.datasciencecentral.com/profiles/blogs/600-websites-about-r
 
 600个R资源网站
 
+https://mp.weixin.qq.com/s/u9n1BWazGns661imxBP-dg
+
+使用机器学习R语言，149页pdf，Practical Machine Learning in R
+
 ## 交互环境
 
 R语言有个和python类似的命令行交互环境。

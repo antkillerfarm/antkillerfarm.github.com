@@ -137,6 +137,10 @@ https://mp.weixin.qq.com/s/RkuLhwj_to_B01RJDQsGcA
 
 强烈推荐一款Python可视化神器！
 
+https://mp.weixin.qq.com/s/9mwLGsXQkTaxIohPwgDyKw
+
+使用Plotly创建带有回归趋势线的时间序列可视化图表
+
 ## ImageAI
 
 ImageAI是一个CV方面的库，集成了大量的DL模型，其目标是使用数十行代码完成一个CV任务。

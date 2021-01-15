@@ -394,3 +394,11 @@ https://mp.weixin.qq.com/s/XD6qFpt8FdLTy2PcrLiTIA
 https://mp.weixin.qq.com/s/6Zs0nM2HOZFBFsC0PUy_0A
 
 推荐系统应该如何保障推荐的多样性？
+
+https://mp.weixin.qq.com/s/4EY8E8LqUsfEGqC3xPSqeg
+
+推荐生态中的bias和debias
+
+https://mp.weixin.qq.com/s/9I6efSutqBcKmAlvozD-rQ
+
+一文看懂基于内容的推荐算法

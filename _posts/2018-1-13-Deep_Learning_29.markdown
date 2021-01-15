@@ -269,6 +269,10 @@ https://zhuanlan.zhihu.com/p/164603050
 
 3D Pose Estimation关键点检测的算法整理（2020）
 
+https://mp.weixin.qq.com/s/AW-L_5acaDzGTObUGjTuuw
+
+用AI“驯服”人类幼崽：这个奶爸找到了硬核带娃的乐趣
+
 # 图像超分辨率进阶+
 
 https://zhuanlan.zhihu.com/p/67613641
