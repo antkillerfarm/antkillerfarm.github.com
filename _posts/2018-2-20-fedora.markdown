@@ -291,3 +291,26 @@ dkms的驱动放在`/var/lib/dkms`下，按照`module/version`的方式放置，
 DKMS不仅支持不同内核版本的共存，还支持不同驱动版本的共存。但是这个一般来说是起负作用的，所以还要删掉不用的驱动版本：
 
 `sudo dkms remove nvidia/450.102.04`
+
+## RTL8821CE驱动的最终解决
+
+Linux官方虽然没有集成RTL8821CE驱动，但Ubuntu官方已经有了：
+
+`sudo apt install rtl8821ce-dkms`
+
+从内容来看，还是上面那个github的代码库，所以问题仍然没有解决。
+
+运行`dmesg`，发现：
+
+```bash
+[    5.497800] rtl8821ce: Unknown symbol cfg80211_disconnected (err -2)
+[    5.497828] rtl8821ce: Unknown symbol cfg80211_michael_mic_failure (err -2)
+[    5.497844] rtl8821ce: Unknown symbol cfg80211_ibss_joined (err -2)
+[    5.498001] rtl8821ce: Unknown symbol cfg80211_scan_done (err -2)
+[    5.498024] rtl8821ce: Unknown symbol cfg80211_roamed (err -2)
+[    5.498033] rtl8821ce: Unknown symbol cfg80211_put_bss (err -2)
+[    5.498057] rtl8821ce: Unknown symbol cfg80211_connect_done (err -2)
+[    5.498087] rtl8821ce: Unknown symbol cfg80211_unlink_bss (err -2)
+```
+
+可以看出这里缺少80211的驱动，在官方仓库搜索包含`80211`的文件，发现在`linux-modules-extra-5.8.0-36-generic`中，安装以后，重启，问题解决。
