@@ -342,13 +342,12 @@ https://www.freeplane.org/wiki/index.php/Home
 
 `deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main`
 
-`wget -q -O - https://dl.google.com/linux/linux_signing_key.pub  | sudo apt-key add -`
-
-`sudo apt update`
-
-`sudo apt install google-chrome-stable`
-
-`google-chrome-stable`
+```bash
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub  | sudo apt-key add -
+sudo apt update
+sudo apt install google-chrome-stable
+google-chrome-stable
+```
 
 安装flash：
 

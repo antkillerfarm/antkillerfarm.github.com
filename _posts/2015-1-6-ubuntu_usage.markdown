@@ -49,15 +49,21 @@ https://github.com/mgedmin/indicator-netspeed.git
 
 * launch the indicator:
 
-`sudo make install`
-
-`indicator-netspeed`
+```bash
+sudo make install
+indicator-netspeed
+```
 
 附带的说一下，刚开始的时候，我给这个程序添加了一个桌面快捷方式。但是每次开机还要按一下快捷方式，着实不方便。后来发现在选择“关机”的那个菜单上方还有个叫做“启动应用程序”的东东，之前看名字还以为是Windows下Run的替代品，结果实际上是桌面的开机启动程序。。。
 
 另，修改~/.profile之类的文件是不行的，因为那是在进入桌面之前运行的。由于桌面还没有ready，好多桌面程序都是跑不起来的。
 
 在Ubuntu 14.04中“启动应用程序”找不着了，但是实际的功能实现机制还是没有变——在~/.config/autostart下创建desktop文件。
+
+```bash
+mkdir -p ~/.config/autostart
+cp indicator-netspeed ~/.config/autostart
+```
 
 ## 虚拟机和宿主机的文件共享——FTP方式
 
