@@ -281,6 +281,10 @@ https://mp.weixin.qq.com/s/iESGCZjdvwUzqW7pu0GwrQ
 
 中科视拓开源SeetaFace2人脸识别算法
 
+https://mp.weixin.qq.com/s/xINjY494A8ctwyXtmeRCZg
+
+SeetaFace6Open开源人脸识别引擎库
+
 ## S3FD
 
 https://mp.weixin.qq.com/s/MyA8_yt4YCkFl67AyhpZow

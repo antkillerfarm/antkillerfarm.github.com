@@ -168,6 +168,18 @@ Here Documents
 
 `dirs -v`用于查看栈中元素。
 
+bd是cd的升级版，主要处理`cd ../../../`这样的回退情况。
+
+假设当前路径为：`/home/user/project/`，`bd h`可以直接退到`/home`，只要输入路径的首字母就可以了。
+
+安装：
+
+```bash
+sudo apt install bd
+echo 'alias bd=". bd -si"' >> ~/.bashrc
+source ~/.bashrc
+```
+
 参考：
 
 https://www.jianshu.com/p/53cccae3c443
@@ -275,6 +287,10 @@ bash下可控任务数的并发执行脚本
 https://blog.csdn.net/taiyang1987912/article/details/39551385
 
 shell中各种括号的作用`()、(())、[]、[[]]、{}`
+
+https://mp.weixin.qq.com/s/NNAjrUv5jBN8zxnsxbBmkw
+
+Shell分析服务器日志命令
 
 # diff&patch
 

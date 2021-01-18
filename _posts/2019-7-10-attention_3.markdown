@@ -219,6 +219,10 @@ https://mp.weixin.qq.com/s/N1I4mGKzsHJiAluZL17sDQ
 
 Transformers是一种图神经网络
 
+https://mp.weixin.qq.com/s/mFqkCfzmWi7pxelC1vMJBQ
+
+nlp中的Attention注意力机制+Transformer详解
+
 # 预训练语言模型进化史
 
 ![](/images/img3/Sesame_Street.jpg)

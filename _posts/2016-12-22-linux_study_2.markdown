@@ -258,20 +258,6 @@ http://blog.csdn.net/wang7dao/article/details/7684998
 
 Linux nc命令详解
 
-# bd
-
-bd是cd的升级版，主要处理`cd ../../../`这样的回退情况。
-
-假设当前路径为：`/home/user/project/`，`bd h`可以直接退到`/home`，只要输入路径的首字母就可以了。
-
-安装：
-
-```bash
-sudo apt install bd
-echo 'alias bd=". bd -si"' >> ~/.bashrc
-source ~/.bashrc
-```
-
 # 常用命令示例
 
 `find . -name *.txt`

@@ -115,9 +115,13 @@ https://zhuanlan.zhihu.com/p/343229835
 
 Poor Man's BERT: 更小更快的Transformer模型
 
+https://mp.weixin.qq.com/s/u44jtXwNCzsZcrr9WrytLQ
+
+EdgeBERT：极限压缩，比ALBERT再轻13倍！树莓派上跑BERT的日子要来了？
+
 # 快速BERT
 
-轻量化BERT是从计算量的角度出发，对于传统BERT的优化。而快速BERT主要着眼于软件工程角度，如何更好的利用各种硬件加速BERT的计算。典型的有NVIDIA的FasterTransformer和腾讯的TurboTransformer。
+轻量化BERT是从计算量/时间/空间的角度出发，对于传统BERT的优化。而快速BERT主要着眼于软件工程角度，如何更好的利用各种硬件加速BERT的计算。典型的有NVIDIA的FasterTransformer和腾讯的TurboTransformer。
 
 https://mp.weixin.qq.com/s/1R_plHqxTLE-Fw3TjYnlJQ
 
@@ -338,27 +342,3 @@ BERT源码分析（PART II）
 https://mp.weixin.qq.com/s/DxBC_x5ZWC6SECfnwDGnVg
 
 BERT源码分析（PART III）
-
-https://mp.weixin.qq.com/s/kI_k_plZbRzmdeXxt2_2WA
-
-从Transformer到BERT模型
-
-https://mp.weixin.qq.com/s/Bnk0nIjBdb58WVJEY8MqnA
-
-NLP中各种各样的编码器
-
-https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
-
-预训练BERT，官方代码发布前他们是这样用TensorFlow解决的
-
-https://mp.weixin.qq.com/s/vFdm-UHns7Nhbmdoiu6jWg
-
-谷歌终于开源BERT代码：3亿参数量，机器之心全面解读
-
-https://zhuanlan.zhihu.com/p/58425003
-
-从Word2Vec到Bert，聊聊词向量的前世今生（一）
-
-https://mp.weixin.qq.com/s/SfMIKfF_B4agFCHN_U_mzQ
-
-BAM！利用知识蒸馏和多任务学习构建的通用语言模型

@@ -9,6 +9,30 @@ category: Attention
 
 # Transformer进阶（续）
 
+https://mp.weixin.qq.com/s/M0zLw9hA5xzontKB7Zj23Q
+
+Memory Transformer，一种简单明了的Transformer改造方案
+
+https://mp.weixin.qq.com/s/FJeZ8X9gtyciqCTs9zvlLA
+
+Transformer是CNN是GNN是RNN，Attention is all you need！
+
+https://mp.weixin.qq.com/s/d1qqRw7sWyLdoyfnqMBdJQ
+
+深度自适应Transformer
+
+https://mp.weixin.qq.com/s/UowNtBm_hqnes-Lz3POXGQ
+
+Transformers中的Beam Search高效实现
+
+https://mp.weixin.qq.com/s/KdKbOrjeeo7Db095V7mSFA
+
+Transformer之自适应宽度注意力
+
+https://mp.weixin.qq.com/s/EuCCeWz_rkktwLuFJ75BXA
+
+Transformer+AutoML: 遗传搜索在序列式任务上的应用
+
 https://mp.weixin.qq.com/s/OEpLpWzkdfFUQf4cKNuG4w
 
 Performer:基于正交随机特征的快速注意力计算

@@ -335,6 +335,10 @@ https://mp.weixin.qq.com/s/QgFbw5thvip2txUJZNQqCA
 
 缓存一致性问题怎么解决？
 
+https://mp.weixin.qq.com/s/XOiHlurpwCa-MmQp1yAjSQ
+
+高并发场景下，到底先更新缓存还是先更新数据库？
+
 ## 数据管理工具
 
 数据管理工具主要有：Navicat和DataGrip。

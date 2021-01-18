@@ -9,6 +9,30 @@ category: Attention
 
 # BERT进阶
 
+https://mp.weixin.qq.com/s/kI_k_plZbRzmdeXxt2_2WA
+
+从Transformer到BERT模型
+
+https://mp.weixin.qq.com/s/Bnk0nIjBdb58WVJEY8MqnA
+
+NLP中各种各样的编码器
+
+https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
+
+预训练BERT，官方代码发布前他们是这样用TensorFlow解决的
+
+https://mp.weixin.qq.com/s/vFdm-UHns7Nhbmdoiu6jWg
+
+谷歌终于开源BERT代码：3亿参数量，机器之心全面解读
+
+https://zhuanlan.zhihu.com/p/58425003
+
+从Word2Vec到Bert，聊聊词向量的前世今生（一）
+
+https://mp.weixin.qq.com/s/SfMIKfF_B4agFCHN_U_mzQ
+
+BAM！利用知识蒸馏和多任务学习构建的通用语言模型
+
 https://mp.weixin.qq.com/s/6G5Mu7-1omGtQ_9Gt9lUBw
 
 基于预训练自然语言生成的文本摘要方法
@@ -394,27 +418,3 @@ Transformer家族简史（PART I）
 https://mp.weixin.qq.com/s/p919Kfv-1GSDM6u6FpnBsA
 
 Transformer家族简史（PART II）
-
-https://mp.weixin.qq.com/s/M0zLw9hA5xzontKB7Zj23Q
-
-Memory Transformer，一种简单明了的Transformer改造方案
-
-https://mp.weixin.qq.com/s/FJeZ8X9gtyciqCTs9zvlLA
-
-Transformer是CNN是GNN是RNN，Attention is all you need！
-
-https://mp.weixin.qq.com/s/d1qqRw7sWyLdoyfnqMBdJQ
-
-深度自适应Transformer
-
-https://mp.weixin.qq.com/s/UowNtBm_hqnes-Lz3POXGQ
-
-Transformers中的Beam Search高效实现
-
-https://mp.weixin.qq.com/s/KdKbOrjeeo7Db095V7mSFA
-
-Transformer之自适应宽度注意力
-
-https://mp.weixin.qq.com/s/EuCCeWz_rkktwLuFJ75BXA
-
-Transformer+AutoML: 遗传搜索在序列式任务上的应用

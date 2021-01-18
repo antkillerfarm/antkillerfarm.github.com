@@ -9,6 +9,20 @@ category: Deep Object Detection
 
 # Anchor-Free（续）
 
+## RepPoints
+
+https://mp.weixin.qq.com/s/aWv7_yiX5BFKpL21SRV1MQ
+
+RepPoints：可形变卷积的进阶
+
+https://mp.weixin.qq.com/s/nI_3kilFCsDHhtjFhRKytA
+
+RepPoints:替代边界框，基于点集的物体表示新方法
+
+https://mp.weixin.qq.com/s/VTb6CUOWnPpyU6WnYdYJ-g
+
+RepPoints V2：将角点检测和前景热图引入纯回归目标检测算法
+
 ## 参考
 
 https://mp.weixin.qq.com/s/T7DDWvtvCULfjcDmljvx5Q
@@ -62,14 +76,6 @@ Anchor Free及Transformer时代
 https://mp.weixin.qq.com/s/52YBmlHioRkUgetZWHMZOw
 
 Anchor-free目标检测：工业应用更友好的新网络
-
-https://mp.weixin.qq.com/s/nI_3kilFCsDHhtjFhRKytA
-
-RepPoints:替代边界框，基于点集的物体表示新方法
-
-https://mp.weixin.qq.com/s/VTb6CUOWnPpyU6WnYdYJ-g
-
-RepPoint V2：将角点检测和前景热图引入纯回归目标检测算法
 
 https://zhuanlan.zhihu.com/p/84398108
 

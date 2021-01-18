@@ -361,6 +361,10 @@ https://mp.weixin.qq.com/s/E0PIOTflCicyPs5fcv0qAg
 
 Mysql高性能优化规范建议
 
+https://mp.weixin.qq.com/s/0AlXjjYIQUU9tkw2LNiR_A
+
+MySQL不会丢失数据的秘密，就藏在它的7种日志里
+
 # 数据库参考资源
 
 https://www.cnblogs.com/ahu-lichang/p/10899747.html

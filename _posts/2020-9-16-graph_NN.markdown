@@ -221,6 +221,10 @@ https://mp.weixin.qq.com/s/wbN0WdNxKBCH3cFz4VLtcA
 
 DGL框架实现GCN算法
 
+https://mp.weixin.qq.com/s/TbTXJP6JWfsorGXJJwbymA
+
+DGL框架中的采样模型
+
 ## PyTorch Geometric
 
 https://mp.weixin.qq.com/s/5HOA9Pmb3fjsfTVnFMdBIA

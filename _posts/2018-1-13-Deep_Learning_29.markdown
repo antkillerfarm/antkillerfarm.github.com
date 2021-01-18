@@ -364,3 +364,7 @@ https://mp.weixin.qq.com/s/mFLuTfACeDNeuDclpqEZpg
 https://mp.weixin.qq.com/s/pn8DGb190_9Yd-MuNohgcQ
 
 《图信号处理》新书，170页pdf阐述从图分析到图神经网络应用
+
+https://mp.weixin.qq.com/s/nHn-W6uL_Njtdl5O-4zaCg
+
+当推荐系统遇上图神经网络

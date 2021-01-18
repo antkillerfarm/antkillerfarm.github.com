@@ -161,6 +161,10 @@ https://zhuanlan.zhihu.com/p/36382429
 
 特征点检测：Harris, SIFT, SURF, ORB
 
+https://zhuanlan.zhihu.com/p/128937547
+
+基于图像的三维建模——特征点检测与匹配
+
 https://zhuanlan.zhihu.com/p/261697473
 
 尺度不变特征转换-SIFT
