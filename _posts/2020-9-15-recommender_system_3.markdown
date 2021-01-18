@@ -373,6 +373,10 @@ https://mp.weixin.qq.com/s/UyMDskA0eGN-NmiifwQF6Q
 
 美团本地生活场景的短视频分析
 
+https://mp.weixin.qq.com/s/dr6gxJCDBM1Lk_tAOdi9-Q
+
+推荐系统解构
+
 # 推荐系统进阶+
 
 https://mp.weixin.qq.com/s/sDG5xm1JZ8rIEaVXeVQ5cA

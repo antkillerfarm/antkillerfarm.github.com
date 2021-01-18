@@ -179,6 +179,10 @@ https://mp.weixin.qq.com/s/KGFsMl3X52_T50h7Bhk65w
 
 CNN一定需要池化层吗？
 
+https://zhuanlan.zhihu.com/p/341820742
+
+深度神经网络中的池化方法：全面调研（1989-2020）
+
 # Regularization
 
 DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：

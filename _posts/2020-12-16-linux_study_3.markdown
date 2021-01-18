@@ -438,3 +438,7 @@ MMU那些事儿
 https://mp.weixin.qq.com/s/0OeeYUgBBVVMtxscvzgJHw
 
 i++是线程安全的吗？
+
+https://mp.weixin.qq.com/s/U0qr1oZYXBBmZnC5vsKYLQ
+
+浅谈linux IO

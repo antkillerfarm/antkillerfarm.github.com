@@ -302,3 +302,7 @@ Java的战争(后续)
 https://mp.weixin.qq.com/s/oeusDoCSYiwwX61H_6wQHw
 
 浏览器（内核）发展史
+
+https://www.zhihu.com/question/439434803/answer/1679210108
+
+如何评价大连车务段现在车系统瘫痪，“全力攻关一昼夜”恢复Flash运行?

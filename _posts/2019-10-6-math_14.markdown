@@ -239,6 +239,10 @@ https://zhuanlan.zhihu.com/p/69956002
 
 从傅立叶变换进阶到小波变换（四）
 
+https://zhuanlan.zhihu.com/p/22450818
+
+小波变换
+
 # 张量分析
 
 在同构的意义下，第零阶张量（r = 0）为标量（Scalar），第一阶张量（r = 1）为向量（Vector），第二阶张量（r = 2）则成为矩阵（Matrix）。

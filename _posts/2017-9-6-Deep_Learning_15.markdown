@@ -59,6 +59,10 @@ https://zhuanlan.zhihu.com/p/75539170
 
 神经网络中Normalization的发展历程
 
+https://zhuanlan.zhihu.com/p/340747455
+
+深度学习中眼花缭乱的Normalization学习总结
+
 # fine-tuning
 
 fine-tuning和迁移学习虽然是两个不同的概念。但局限到CNN的训练领域，基本可以将fine-tuning看作是一种迁移学习的方法。

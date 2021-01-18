@@ -233,6 +233,10 @@ https://mp.weixin.qq.com/s/EwzjBAeZQfeBt-EkaeXPAg
 
 搞懂Vision Transformer原理和代码，看这篇技术综述就够了
 
+https://mp.weixin.qq.com/s/FIilwbLzYk4av8w11VgJeQ
+
+计算机视觉中的Transformer
+
 # BERT进阶
 
 ## AR vs AE
