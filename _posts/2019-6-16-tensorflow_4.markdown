@@ -25,6 +25,58 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tenso
 
 # TensorFlow
 
+## Hama
+
+TensorFlow实际上是Google开发的第二代DL框架。在它之前，Google内部还有一个叫做DistBelief的框架。这个框架没有开源，但是有论文发表。因此，就有了一个叫做Apache Hama的项目，作为它的开源实现。
+
+官网：
+
+https://hama.apache.org/
+
+这个项目采用了一种叫做Bulk Synchronous Parallel的并行计算模型。
+
+## 细节
+
+执行`session.run(out)`，会在终端打印out的值，但执行`res = session.run(out)`则不会。
+
+此外，`session.run`可以接受list作为参数。返回值也是一个list，分别对应输入list的每个元素的计算结果。
+
+----
+
+tensorflow的程序中,在main函数下,都是使用tf.app.run()来启动。查看源码可知,该函数是用来处理flag解析，然后执行main函数。
+
+https://blog.csdn.net/lujiandong1/article/details/53262612
+
+tensorflow中的tf.app.run()
+
+----
+
+TF提供了一套专门的IO函数：tf.gfile。主要优点在于：对于写文件来说，open操作直到真的需要写的时候才执行。
+
+----
+
+迁移学习的时候，有的时候需要保持某几层的权值，在后续训练中不被改变。这时，可以在创建Variable时，令trainable=false。
+
+----
+
+sparse_softmax_cross_entropy_with_logits和softmax_cross_entropy_with_logits的区别在于：后者的label是一个one hot的tensor，而前者label直接用对应分类的index表示就行了。
+
+----
+
+CNN中的padding：
+
+"SAME" = with zero padding。
+
+"VALID" = without padding。
+
+----
+
+op的自定义实现可使用`tf.py_func`。
+
+----
+
+tf.dtypes.cast: 类型转换
+
 ## TensorSensor
 
 https://mp.weixin.qq.com/s/ZxmoBcWJa7luGOHQ32ru1A
@@ -348,59 +400,3 @@ https://mp.weixin.qq.com/s/lLaSXG1VF9Rys2GNzFP7pw
 https://mp.weixin.qq.com/s/tVqp1Tht1P-0EQazJizQaA
 
 利用人口普查收入数据集预测收入
-
-https://mp.weixin.qq.com/s/3WleFm9S_wMIPTz_WfjKQw
-
-TensorFlow支持Unicode，中文NLP终于省心了
-
-https://mp.weixin.qq.com/s/jFEOokxfJ1Kw-P3wvw3EAg
-
-带你了解，不规则张量！
-
-https://mp.weixin.qq.com/s/tMtx4PZbpo5IrnhzLz8Lzw
-
-AutoGraph：图的简易控制流程
-
-https://mp.weixin.qq.com/s/zY7rGh-kA-36VEo9DiaKbg
-
-TensorFlow进行简单的图像处理
-
-https://mp.weixin.qq.com/s/DAV3TDI4JYr0sXqTGU6t2A
-
-分布式TensorFlow入坑指南：从实例到代码带你玩转多机器深度学习
-
-https://mp.weixin.qq.com/s/QU5NjksCEswjHnkY7WXWXQ
-
-分布式TensorFlow入门教程
-
-https://mp.weixin.qq.com/s/pBR4wMITrigbSVAvn0d6vQ
-
-利用TensorFlow实现上下文的Chat-bots
-
-https://mp.weixin.qq.com/s/8I5Nvw4t2jT1NR9vIYT5XA
-
-深入理解TensorFlow中的tf.metrics算子
-
-https://mp.weixin.qq.com/s/aMarI-nyIvFqhtpJWQrNhQ
-
-谷歌推强化学习新框架“多巴胺“，基于TensorFlow，已开源
-
-https://mp.weixin.qq.com/s/ntHkMIef1o2-FF-AJf_bZQ
-
-三分钟训练眼球追踪术，AI就知道你在盯着哪个妹子——TensorFlow.js代码
-
-https://mp.weixin.qq.com/s/7rTmEBfh613SrNnTQvfSjw
-
-懒人福利：不写代码调优深度模型，谷歌开源的“What-If”了解一下
-
-https://mp.weixin.qq.com/s/eX3LWYiSH-KObH_7F_3QCA
-
-TensorFlow 1.11.0发布，一键多GPU
-
-https://mp.weixin.qq.com/s/316VVXLQfeIsKNk4ld-VRw
-
-TensorFlow语义分割套件开源了ECCV18旷视科技BiSeNet实时分割算法
-
-https://mp.weixin.qq.com/s/XI1J4ardEWKP4UQ4IXZGTQ
-
-TensorFlow Hub,给您带来全新的Web体验

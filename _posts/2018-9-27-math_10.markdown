@@ -171,7 +171,7 @@ https://mp.weixin.qq.com/s/SUWUAMQjSuB5Gs06SPliTQ
 
 ## Hermite矩阵
 
-复数矩阵通常不能直接转置，而必须进行共轭转置。共轭转置也叫做Hermite转置，用$$A^H$$表示。
+复数矩阵通常不能直接转置，而必须进行共轭转置。共轭转置（Conjugate transpose）也叫做Hermite转置，用$$A^H$$表示。
 
 如果$$A=A^H$$，则A被称为Hermite矩阵。
 

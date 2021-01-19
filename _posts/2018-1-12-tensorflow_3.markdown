@@ -81,9 +81,88 @@ core/kernels/spacetobatch_functor.cc
 
 一般XXX_impl.cc或者XXX_functor.cc才是op实现真正所在的位置。
 
+kernel的注册，一般在：
+
+tensorflow/core/ops
+
 此外，TFlite的实现往往更加简单：
 
 tensorflow/contrib/lite/kernels/internal/reference/reference_ops.h
+
+## op Backprop
+
+### compute_gradients & apply_gradients
+
+由源代码可以知道`optimizer.minimize`实际上包含了两个步骤，即`compute_gradients`和`apply_gradients`，前者用于计算梯度，后者用于使用计算得到的梯度来更新对应的variable。
+
+如果想要部分更新某个Variable的话，可用如下步骤：
+
+1.生成需要更新的元素的mask tensor。1代表要更新，0代表不更新。
+
+2.`compute_gradients`得到grad tensor。
+
+3.`grad = grad * mask`
+
+4.`apply_gradients`。
+
+通常来说，如果一个计算图中没有optimizer，则一般只包含forward运算，而没有backward运算。
+
+### Add
+
+```cpp
+//forward
+REGISTER3(BinaryOp, GPU, "AddV2", functor::add, float, Eigen::half, double);
+tensorflow/core/kernels/cwise_ops_common.h: BinaryOp
+
+//backward
+tensorflow/python/ops/math_grad.py:
+@ops.RegisterGradient("AddV2")
+def _AddGrad(op, grad):
+tensorflow/core/ops/math_grad.cc:
+REGISTER_OP_GRADIENT("AddV2", AddGrad);
+
+//RegisterGradient
+tensorflow/python/framework/ops.py:
+class RegisterGradient(object):
+```
+
+Gradient有两种处理方式：（tensorflow/python/ops/gradients_util.py: _GradientsHelper）
+
+- 有RegisterGradient的op，直接调用注册的函数。
+
+- 没有的，调用SymbolicGradient。
+
+参考：
+
+https://www.zhihu.com/question/56443480
+
+TensorFlow的自动求导具体是在哪部分代码里实现的？
+
+### Conv
+
+```cpp
+tensorflow/cc/gradients/nn_grad.cc:
+REGISTER_GRADIENT_OP("Conv2D", Conv2DGrad);
+
+tensorflow/python/ops/nn_grad.py:
+@ops.RegisterGradient("Conv2DBackpropInput")
+def _Conv2DBackpropInputGrad(op, grad):
+
+@ops.RegisterGradient("Conv2DBackpropFilter")
+def _Conv2DBackpropFilterGrad(op, grad):
+```
+
+Conv2D的Backprop操作可分为两部分：
+
+- Conv2DBackpropInput负责计算上一层的梯度，也就是所谓的in_grad。
+
+- Conv2DBackpropFilter负责计算Kernel的梯度。
+
+```cpp
+tensorflow/core/kernels/conv_grad_input_ops.cc: LaunchConv2DBackpropInputOp
+tensorflow/core/kernels/conv_grad_input_ops.h: LaunchConv2DBackpropInputOpImpl
+tensorflow/core/kernels/conv_grad_filter_ops.cc: LaunchConv2DBackpropFilterOp
+```
 
 ## TensorFlow.js
 
@@ -320,81 +399,3 @@ https://mp.weixin.qq.com/s/ddHKc5AffznRaEY_qhHN_g
 https://mp.weixin.qq.com/s/RcolwQnCqrAsGaKEK0oo_A
 
 TensorFlow 2.0中的tf.keras和Keras有何区别？为什么以后一定要用tf.keras？
-
-## 细节
-
-执行`session.run(out)`，会在终端打印out的值，但执行`res = session.run(out)`则不会。
-
-此外，`session.run`可以接受list作为参数。返回值也是一个list，分别对应输入list的每个元素的计算结果。
-
-----
-
-tensorflow的程序中,在main函数下,都是使用tf.app.run()来启动。查看源码可知,该函数是用来处理flag解析，然后执行main函数。
-
-https://blog.csdn.net/lujiandong1/article/details/53262612
-
-tensorflow中的tf.app.run()
-
-----
-
-TF提供了一套专门的IO函数：tf.gfile。主要优点在于：对于写文件来说，open操作直到真的需要写的时候才执行。
-
-----
-
-迁移学习的时候，有的时候需要保持某几层的权值，在后续训练中不被改变。这时，可以在创建Variable时，令trainable=false。
-
-----
-
-sparse_softmax_cross_entropy_with_logits和softmax_cross_entropy_with_logits的区别在于：后者的label是一个one hot的tensor，而前者label直接用对应分类的index表示就行了。
-
-----
-
-CNN中的padding：
-
-"SAME" = with zero padding。
-
-"VALID" = without padding。
-
-----
-
-op的自定义实现可使用`tf.py_func`。
-
-----
-
-tf.dtypes.cast: 类型转换
-
-----
-
-由源代码可以知道`optimizer.minimize`实际上包含了两个步骤，即`compute_gradients`和`apply_gradients`，前者用于计算梯度，后者用于使用计算得到的梯度来更新对应的variable。
-
-如果想要部分更新某个Variable的话，可用如下步骤：
-
-1.生成需要更新的元素的mask tensor。1代表要更新，0代表不更新。
-
-2.`compute_gradients`得到grad tensor。
-
-3.`grad = grad * mask`
-
-4.`apply_gradients`。
-
-通常来说，如果一个计算图中没有optimizer，则一般只包含forward运算，而没有backward运算。
-
-## blog
-
-http://www.jianshu.com/u/eaec1fc422e9
-
-一个TF的blog
-
-http://blog.csdn.net/u012436149
-
-一个TensorFlow+PyTorch的blog
-
-## Hama
-
-TensorFlow实际上是Google开发的第二代DL框架。在它之前，Google内部还有一个叫做DistBelief的框架。这个框架没有开源，但是有论文发表。因此，就有了一个叫做Apache Hama的项目，作为它的开源实现。
-
-官网：
-
-https://hama.apache.org/
-
-这个项目采用了一种叫做Bulk Synchronous Parallel的并行计算模型。

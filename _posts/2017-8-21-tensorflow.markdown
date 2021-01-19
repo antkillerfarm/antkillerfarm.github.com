@@ -91,6 +91,16 @@ http://www.sohu.com/a/164277987_473283
 
 一名在斯坦福教授TensorFlow教师的“忏悔”：我觉得自己像个骗子
 
+## blog
+
+http://www.jianshu.com/u/eaec1fc422e9
+
+一个TF的blog
+
+http://blog.csdn.net/u012436149
+
+一个TensorFlow+PyTorch的blog
+
 ## 源代码编译
 
 **Step 1**：安装Bazel。

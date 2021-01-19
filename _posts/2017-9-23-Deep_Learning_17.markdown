@@ -73,6 +73,10 @@ DL发展到现在，其基本运算单元早就不止CNN、RNN之类的简单模
 
 《Automatic Differentiation in Machine Learning: a Survey》
 
+## Manual differentiation
+
+手动推出导数是什么样，然后硬编码。这种做法既耗时也容易出错，还没有灵活性。
+
 ## Numerical differentiation
 
 数值微分最大的特点就是很直观，好计算，它直接利用了导数定义：
@@ -166,6 +170,10 @@ https://mp.weixin.qq.com/s/bigKoR3IX_Jvo-re9UjqUA
 https://www.jianshu.com/p/4c2032c685dc
 
 自动求导框架综述
+
+http://txshi-mt.com/2018/10/04/NMT-Tutorial-3b-Autodiff/
+
+自动微分
 
 https://mp.weixin.qq.com/s/WiZ00mkEB7CND3VyIM5Swg
 

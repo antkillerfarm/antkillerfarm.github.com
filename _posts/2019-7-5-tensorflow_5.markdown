@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  TensorFlow（五）, TVM, DL框架怀古
+title:  TensorFlow（五）, TVM
 category: AI 
 ---
 
@@ -8,6 +8,62 @@ category: AI
 {:toc}
 
 # TensorFlow
+
+https://mp.weixin.qq.com/s/3WleFm9S_wMIPTz_WfjKQw
+
+TensorFlow支持Unicode，中文NLP终于省心了
+
+https://mp.weixin.qq.com/s/jFEOokxfJ1Kw-P3wvw3EAg
+
+带你了解，不规则张量！
+
+https://mp.weixin.qq.com/s/tMtx4PZbpo5IrnhzLz8Lzw
+
+AutoGraph：图的简易控制流程
+
+https://mp.weixin.qq.com/s/zY7rGh-kA-36VEo9DiaKbg
+
+TensorFlow进行简单的图像处理
+
+https://mp.weixin.qq.com/s/DAV3TDI4JYr0sXqTGU6t2A
+
+分布式TensorFlow入坑指南：从实例到代码带你玩转多机器深度学习
+
+https://mp.weixin.qq.com/s/QU5NjksCEswjHnkY7WXWXQ
+
+分布式TensorFlow入门教程
+
+https://mp.weixin.qq.com/s/pBR4wMITrigbSVAvn0d6vQ
+
+利用TensorFlow实现上下文的Chat-bots
+
+https://mp.weixin.qq.com/s/8I5Nvw4t2jT1NR9vIYT5XA
+
+深入理解TensorFlow中的tf.metrics算子
+
+https://mp.weixin.qq.com/s/aMarI-nyIvFqhtpJWQrNhQ
+
+谷歌推强化学习新框架“多巴胺“，基于TensorFlow，已开源
+
+https://mp.weixin.qq.com/s/ntHkMIef1o2-FF-AJf_bZQ
+
+三分钟训练眼球追踪术，AI就知道你在盯着哪个妹子——TensorFlow.js代码
+
+https://mp.weixin.qq.com/s/7rTmEBfh613SrNnTQvfSjw
+
+懒人福利：不写代码调优深度模型，谷歌开源的“What-If”了解一下
+
+https://mp.weixin.qq.com/s/eX3LWYiSH-KObH_7F_3QCA
+
+TensorFlow 1.11.0发布，一键多GPU
+
+https://mp.weixin.qq.com/s/316VVXLQfeIsKNk4ld-VRw
+
+TensorFlow语义分割套件开源了ECCV18旷视科技BiSeNet实时分割算法
+
+https://mp.weixin.qq.com/s/XI1J4ardEWKP4UQ4IXZGTQ
+
+TensorFlow Hub,给您带来全新的Web体验
 
 http://www.jianshu.com/p/1da012a83b74
 
@@ -372,49 +428,3 @@ https://github.com/microsoft/nnfusion
 https://mp.weixin.qq.com/s/CMTOW3cYQkkECpPuzZl0nQ
 
 RAMMER如何进一步“压榨”加速器性能
-
-# DL框架怀古
-
-2017.9
-
-http://deeplearning.net/
-
-这个网站是Theano的主站，也是我最早接触DL时浏览的网站。其时，我虽然对DL有浓厚的兴趣，但尚未以此作为工作内容。
-
-从该网站提供的招聘信息来看，Caffe、Theano、Torch是当时主流的三大框架库。
-
-岂料时隔一年半载之后，这三大框架都渐趋式微。
-
-Caffe被Caffe 2替代，但使用的广泛度仍超过后者。
-
-Theano被同样基于计算图的TensorFlow淘汰。2017年9月停止更新。
-
-Torch相对变动最小，它被PyTorch替代。这更可以看作是python对于lua的胜利。
-
-----
-
-2020.12
-
-又是三年过去了。
-
-生命力超强的Caffe终于过气了，大约从2019年下半年开始，即使是新入行的客户，也没人用它了。但是Caffe 2从来没火过。不知道是Caffe 2不行，让贾扬清去阿里，还是贾扬清去阿里了，导致的Caffe 2被放弃。
-
-遗弃列表还有CNTK和Chainer。
-
-mxnet一直半死不活，虽然李沐并未放弃，但是手下已经有些离开的了。
-
-倒是国内，一堆原先私有的框架，纷纷开源。比如清华Jittor，旷视MegEngine，华为Mindspore在2020.3扎堆开源。但是根本溅不起丝毫的水花。你不开源，是自己用；你开源了，还是自己用。反正我是没兴趣用。
-
-参考：
-
-https://www.zhihu.com/question/392035070
-
-如何看待亚马逊AI李沐团队大批人员离职?
-
-https://zhuanlan.zhihu.com/p/121834310
-
-深度学习框架的灵魂
-
-https://mp.weixin.qq.com/s/DxV7mm7xCXWFy_KTIDh_-Q
-
-深度学习框架简史：TF和PyTorch双头垄断
