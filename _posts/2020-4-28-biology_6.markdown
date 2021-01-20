@@ -73,6 +73,44 @@ https://mp.weixin.qq.com/s/HdGe6U1PPYnKEgSM09eJmg
 
 看，是四螺旋
 
+# 数学杂谈++
+
+https://mp.weixin.qq.com/s/yQfBFtWBuP1JB6MJM5DshQ
+
+人类最美的24张数学画
+
+https://www.sohu.com/a/223262966_115479
+
+史上最贱的数学题
+
+https://www.zhihu.com/question/290982731
+
+sin1°是否为超越数？
+
+https://blog.csdn.net/FnqTyr45/article/details/80248927
+
+如何用数学方法估算一个女生前男友的数量？
+
+https://zhuanlan.zhihu.com/p/157126167
+
+群论的创立：两个少年天才的接力
+
+https://mp.weixin.qq.com/s/rZwqxyBmQg07Pq1ihTjNMg
+
+动图解释泰勒级数（一）
+
+https://mp.weixin.qq.com/s/yqAnIjGmXpubgSsGDx6O8w
+
+动图解释泰勒级数（二）
+
+https://zhuanlan.zhihu.com/p/36230460
+
+黑盒函数的探索
+
+http://www.matrix67.com/blog/archives/4570
+
+再谈Julia集与Mandelbrot集
+
 # 新冠肺炎
 
 ## 口罩

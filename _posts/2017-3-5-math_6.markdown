@@ -7,7 +7,48 @@ category: math
 * toc
 {:toc}
 
+# 玻尔兹曼分布（续）
+
+https://mp.weixin.qq.com/s/yUJDMSU1Fmf36vN2Q2y1TA
+
+最大熵模型原理小结
+
+https://mp.weixin.qq.com/s/a3TlUFwSm9aIptfhy6MnGA
+
+机器学习是如何借鉴物理学思想的？从伊辛模型谈起
+
+https://mp.weixin.qq.com/s/_DxdlaJahSscXe4O2fw1uA
+
+伊辛模型百年小史：最经典的复杂系统模型，却险些被科学界遗忘
+
+https://zhuanlan.zhihu.com/p/39241895
+
+深度学习与物理，有效场论，重整化群
+
+https://mp.weixin.qq.com/s/7NrB0UtmELXD3UNO3C6jGA
+
+我就不信看完这篇你还搞不懂信息熵
+
+https://mp.weixin.qq.com/s/_s8kxlzcL5Nt2ILUIfAuNQ
+
+不要把所有的鸡蛋放在一个篮子里--谈谈最大熵模型
+
 # 概率分布（2）
+
+上一篇《概率分布（1）》写的意犹未尽，这里继续写。本篇主要关注$$\chi^2$$分布、t分布和F分布，也就是统计学的三大祖师爷各自的看家本领。
+
+## $$\chi^2$$分布
+
+设$$X_1,\dots,X_n$$是来自总体$$N(0,1)$$的样本，则称统计量
+
+$$\chi^2=X_1^2+\dots+X_n^2\tag{1}$$
+
+服从自由度为n的$$\chi^2$$分布（chi-squared distribution），记作$$\chi^2\sim \chi^2(n)$$。其PDF为：
+
+$$f(x;\,n) =
+\begin{cases}
+  \dfrac{x^{(n/2-1)} e^{-x/2}}{2^{n/2} \Gamma\left(\frac n 2 \right)},  & x > 0; \\ 0, & \text{otherwise}.
+\end{cases}$$
 
 ## t分布
 
@@ -187,31 +228,3 @@ Kolmogorov–Smirnov test用于对样本是否属于某种分布进行假设检�
 >Vladimir Andreevich Steklov，1864～1926，俄国数学家、物理学家。哈尔科夫大学博士，其导师是圣彼得堡学派第二代人物中，仅次于Andrey Markov的Aleksandr Lyapunov。哈尔科夫大学和圣彼得堡大学教授，1919年创建斯塔克罗夫数学研究所。
 
 >斯塔克罗夫数学研究所是一家专职研究没有教学任务和科研任务的研究机构。Grigori Perelman在这里，曾有6年时间没有发表一篇论文。二十世纪俄罗斯绝大多数的数学发现都源自这里。
-
-![](/images/article/KS.png)
-
-上图的红线是某随机变量假设分布的CDF，而蓝线是该随机变量样本的累积分布曲线，即ECDF（Empirical Distribution Function）。
-
-显然若假设正确的话，两条曲线应该是基本重合的。反之，若两条曲线差异较大，则该假设检验不成立。这就是KS检验的基本原理。
-
-KS检验的统计量定义如下：
-
-$$D_n= \sup_x |F_n(x)-F(x)|$$
-
-其中$$\sup$$表示最小上界，
-
-$$F_n(x)={1 \over n}\sum_{i=1}^n I_{[-\infty,x]}(X_i)$$
-
-$$I_{[-\infty,x]}(X_i)=\begin{cases}
-1, & X_i \le x \\
-0, & \text{otherwise} \\
-\end{cases}$$
-
-KS检验更深入的解释，涉及到布朗运动和维纳过程，这里不再赘述。
-
-# 马氏距离
-
-Mahalanobis Distance是印度现代统计学之父Prasanta Chandra Mahalanobis于1936年提出的概念。
-
->注：Prasanta Chandra Mahalanobis，1893~1972，印度统计学家，剑桥大学博士，印度统计研究所创始人。   
->印度的重点研究所一般叫做Institute of National Importance，共92所。Indian Statistical Institute是其中唯一一所和统计相关的研究所。教师255，学生375，这得是多精英的教育啊。其计算机科学专业排名印度第2。

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Caffe
+title:  Caffe, darknet
 category: AI 
 ---
 
@@ -275,6 +275,17 @@ Caffe没有计算图的概念，所有操作都聚焦于NN本身，对于实际�
 
 Caffe的代码有相当一部分是由.proto文件自动生成的，最著名的当属LayerParameter。因此如果在C++代码中找不到相关实现的话，不妨到.proto文件中碰碰运气。
 
+例如Conv的实现在`src/caffe/layers/conv_layer.cpp`中。
+
+## Conv Backprop
+
+```cpp
+src/caffe/layers/conv_layer.cpp: ConvolutionLayer::Backward_cpu
+src/caffe/layers/base_conv_layer.cpp: BaseConvolutionLayer::weight_cpu_gemm
+src/caffe/util/math_functions.cpp: caffe_cpu_gemm
+cblas_sgemm
+```
+
 ## Ristretto Caffe
 
 Ristretto Caffe是一个caffe扩展，支持fp16和int8等特殊格式的数据的转换和运算。
@@ -364,3 +375,20 @@ https://caffe2.ai/
 https://mp.weixin.qq.com/s/YYwmRwq5TN7JPah_arNyaQ
 
 Facebook开源产业级深度学习框架Caffe2
+
+# darknet
+
+darknet代码：
+
+https://github.com/pjreddie/darknet/
+
+有个叫做darkflow的项目，可以用于将darknet模型转换成tensorflow模型：
+
+https://github.com/thtrieu/darkflow
+
+## Conv Backprop
+
+```cpp
+src/convolutional_layer.c: backward_convolutional_layer
+src/gemm.c: gemm
+```

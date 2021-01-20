@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十六）——20世纪10大算法, 自相关&互相关&卷积, 双曲函数和悬链线
+title:  数学狂想曲（十六）——20世纪10大算法, 自相关&互相关&卷积, 马氏距离
 category: math 
 ---
 
@@ -99,6 +99,79 @@ https://mp.weixin.qq.com/s/UrWEZ5fMGxj5Ngbi6Y1nFg
 
 如何通俗易懂地解释卷积？
 
+# 马氏距离
+
+Mahalanobis Distance是印度现代统计学之父Prasanta Chandra Mahalanobis于1936年提出的概念。
+
+>注：Prasanta Chandra Mahalanobis，1893~1972，印度统计学家，剑桥大学博士，印度统计研究所创始人。   
+>印度的重点研究所一般叫做Institute of National Importance，共92所。Indian Statistical Institute是其中唯一一所和统计相关的研究所。教师255，学生375，这得是多精英的教育啊。其计算机科学专业排名印度第2。
+
+p维空间的两点（两个p维向量x,y）的欧氏距离定义为：
+
+$$d_E(x,y)=\sqrt{(x_1-y_1)^2+\dots+(x_p-y_p)^2}=\sqrt{(x-y)^T(x-y)}（公式1）$$
+
+因此，x到原点的距离为：
+
+$$\parallel x\parallel=d_E(x,0)=\sqrt{(x_1)^2+\dots+(x_p)^2}（公式2）$$
+
+也就是：
+
+$$x_1^2+\dots+x_p^2=\parallel x\parallel^2（公式3）$$
+
+这实际上是个正球体的方程，也就是说观测数据x的各个分量对x至中心的欧氏距离贡献是相等的。然而在统计学中我们希望寻求这样一种距离，它的各个分量的作用程度是不同的。差别较大的分量应该接受较小的权重。
+
+于是，公式3可变形为椭球体方程：
+
+$$(\frac{x_1}{s_1})^2+\dots+(\frac{x_p}{s_p})^2=\parallel x\parallel^2（公式4）$$
+
+其中的$$s_i$$表示i分量的权重。
+
+公式4进一步整理，并扩展到两个p维向量x,y，可得马氏距离定义：
+
+$$d_M(x,y)=\sqrt{(\frac{x_1-y_1}{s_1})^2+\dots+(\frac{x_p-y_p}{s_p})^2}=\sqrt{(x-y)^TD^{-1}(x-y)}（公式5）$$
+
+其中，$$D=diag(s_1^2,\dots,s_p^2)$$。
+
+>注意：这里p维向量是正交基，否则的话，D将不是主对角线矩阵，而是一个普通的协方差矩阵。显然如果D为单位矩阵的话，马氏距离就变成了欧氏距离。
+
+马氏距离不受量纲的影响，两点之间的马氏距离与原始数据的测量单位无关。比如体重和身高数据，如果采用欧氏距离，则会由于量纲的不同，而无法比较。
+
+由标准化数据和中心化数据(即原始数据与均值之差）计算出的二点之间的马氏距离相同。马氏距离还可以排除变量之间的相关性的干扰。它的缺点是夸大了变化微小的变量的作用。
+
+马氏距离的特点还包括：
+
+1）马氏距离的计算是建立在总体样本的基础上的，这一点可以从上述协方差矩阵的解释中可以得出，也就是说，如果拿同样的两个样本，放入两个不同的总体中，最后计算得出的两个样本间的马氏距离通常是不相同的，除非这两个总体的协方差矩阵碰巧相同；
+
+2）在计算马氏距离过程中，要求总体样本数大于样本的维数，否则得到的总体样本协方差矩阵逆矩阵不存在，这种情况下，用欧式距离来代替马氏距离，也可以理解为，如果样本数小于样本的维数，这种情况下求其中两个样本的距离，采用欧式距离计算即可。
+
+3）还有一种情况，满足了条件总体样本数大于样本的维数，但是协方差矩阵的逆矩阵仍然不存在，比如A（3，4），B（5，6）；C（7，8），这种情况是因为这三个样本在其所处的二维空间平面内共线。这种情况下，也采用欧式距离计算。
+
+4）在实际应用中“总体样本数大于样本的维数”这个条件是很容易满足的，而所有样本点出现3）中所描述的情况是很少出现的，所以在绝大多数情况下，马氏距离是可以顺利计算的，但是马氏距离的计算是不稳定的，不稳定的来源是协方差矩阵，这也是马氏距离与欧式距离的最大差异之处。
+
+----
+
+Feature scaling，常见的提法有“特征归一化”、“标准化”，是数据预处理中的重要技术。
+
+与距离计算无关的概率模型，不需要feature scaling，比如Naive Bayes；
+
+与距离计算无关的基于树的模型，不需要feature scaling，比如决策树、随机森林等，树中节点的选择只关注当前特征在哪里切分对分类更好，即只在意特征内部的相对大小，而与特征间的相对大小无关。
+
+----
+
+参考：
+
+https://mp.weixin.qq.com/s/xiVmQjJDqY_iOBz_bB_O7g
+
+距离度量，浅谈！
+
+https://mp.weixin.qq.com/s/dpeuDMLIyXyhGYrwaLt-PA
+
+机器学习特性缩放的介绍，什么时候为什么使用
+
+https://mp.weixin.qq.com/s/TF6d9NRz0lDFQeC_K3CVaw
+
+为什么要做特征归一化/标准化？
+
 # Hilbert Transform
 
 $$g(y)=H[f(x)]=\frac{1}{\pi}\int_{-\infty}^{+\infty}\frac{f(x)\mathrm{d}x}{x-y}$$
@@ -118,34 +191,6 @@ Hilbert-Huang Transform（希尔伯特-黄变换）
 https://mp.weixin.qq.com/s/avLWHXj2JkjXOomCipj8kA
 
 使用希尔伯特-黄变换（HHT）进行时间序列分析
-
-# 双曲函数和悬链线
-
-悬链线 (Catenary) 是一种曲线，因其与两端固定的绳子在均匀引力作用下下垂相似而得名。适当选择坐标系后，悬链线的方程是一个双曲余弦函数。
-
-悬链线背后的故事和推导，百度百科已经比较详细了，不再赘述。参见：
-
-http://baike.baidu.com/view/45656.htm
-
-然而对于实际工程中的悬索结构，由于悬索自身的重量较其所提拉的跨度结构要轻得多，在力学简单计算中可以忽略，结构受力模式成为在水平长度范围内的均布荷载。这种荷载模式与拱结构相同，因此可以推导出在该荷载模式下的悬垂线为一抛物线，线型与拱结构相同，但内力为拉力。
-
-在工程中完全按照悬链线进行设计的结构，恐怕只有高压输电线了。由于不承担任何自重以外的附加荷载，输电线的数学曲线会与悬链线完全一致。
-
-双曲函数的性质，参见：
-
-https://zhuanlan.zhihu.com/p/20042215
-
-可能是最好的讲解双曲函数的文章
-
-![](/images/article/trigonometric.jpg)
-
-![](/images/article/hyperbolic.jpg)
-
-参考：
-
-https://mp.weixin.qq.com/s/VOPis0wgmi-U-uM3Vnapbw
-
-这根链子什么来头？
 
 # 拓扑学
 
@@ -199,48 +244,6 @@ https://www.zhihu.com/question/434836259
 
 # 数学杂谈
 
-日心说这个东西，现在的人总觉得古人脑子怎么不开窍，老以自己为中心，而没有想到地球围绕太阳转。
-
-其实日心说，古代就有。之所以不流行，是因为遇到了托勒密这个大牛，这哥们对球面几何和三角函数都研究的很深，发明了最早的三角函数表。
-
-托勒密的著作中不但建立了地心说模型，而且还有数学推导。这也使得他的反对者，长期以来搞不定他。
-
-就是哥白尼，其实也没有能翻案。真正搞定托勒密，要等到开普勒时代了。
-
-参考：
-
-https://mp.weixin.qq.com/s/jIlE6VDlgOgoIpUBiGzF5w
-
-他（Claude Ptolemy）是被埋没了1300年的超级学霸，却凭一己之力，影响世界，改变人类文明！
-
-----
-
-当我在32岁成为哈佛大学终身教授的时候，终于有时间学习如何运算了——是如坐针毡地和一群年龄仅仅是我的一半多点的大学小鬼们一起上课。他们中的一些人还在上我执教的进化生物学。我将自尊搁置一边，来学习微积分。当在追赶中学习时，成绩拿C都费劲。----By Edward Osborne Wilson
-
->Edward Osborne Wilson，1929年生，美国生物学家，以研究蚂蚁著称，被称为生物社会学之父。同时也是一名杰出的科普作家，两获Pulitzer Prize。
-
-----
-
-如果你往高尔顿板里倒入很多小球，一个惊人的规律就出现了：在底部堆积的小球的上边缘总是会形成一个近似钟形的曲线。在最接近中心的插槽中，小球会堆得高高的，插槽中的球数从中间向两侧递减，直至为零。
-
-https://mp.weixin.qq.com/s/BwMAiziWQuyKaru8xB9tHw
-
-一文读懂因果推断的起源
-
-----
-
-当年洛伦茨求解这3个变量的方程组用的是一台Royal McBee LGP-30计算机，放置在MIT第24号楼第五层。这台机器比书桌还大，重约260公斤，可是速度极其缓慢，连今天的笔记本电脑都比它快上一百万倍。
-
-当年，计算机程序是由两位年轻女助手艾伦·费特（Ellen Fetter）和玛格丽特·哈密顿（Margaret Hamilton）负责编写的。她们都是来到洛伦茨实验室工作后才开始学习编写计算机程序。
-
-这位Margaret Hamilton就是后来编写阿波罗登月程序的女主。
-
-https://mp.weixin.qq.com/s/REiUxKrLCRWeRCusVlooYQ
-
-蝴蝶效应和混沌故事（Edward Norton Lorenz）
-
-----
-
 ![](/images/img4/sheep.png)
 
 山羊吃草问题有两种形式。内部问题是给出吃草面积求绳长，外部问题是给出绳长和篱笆周长求吃草面积（绳长等于篱笆周长）
@@ -252,41 +255,3 @@ https://mp.weixin.qq.com/s/OCTifPIZHVjYWjuxyQQWbA
 https://mp.weixin.qq.com/s/ydYVWnsEQ5QFLWmiDxeSTg
 
 两圆重叠问题你会求解吗？
-
-----
-
-https://mp.weixin.qq.com/s/yQfBFtWBuP1JB6MJM5DshQ
-
-人类最美的24张数学画
-
-https://www.sohu.com/a/223262966_115479
-
-史上最贱的数学题
-
-https://www.zhihu.com/question/290982731
-
-sin1°是否为超越数？
-
-https://blog.csdn.net/FnqTyr45/article/details/80248927
-
-如何用数学方法估算一个女生前男友的数量？
-
-https://zhuanlan.zhihu.com/p/157126167
-
-群论的创立：两个少年天才的接力
-
-https://mp.weixin.qq.com/s/rZwqxyBmQg07Pq1ihTjNMg
-
-动图解释泰勒级数（一）
-
-https://mp.weixin.qq.com/s/yqAnIjGmXpubgSsGDx6O8w
-
-动图解释泰勒级数（二）
-
-https://zhuanlan.zhihu.com/p/36230460
-
-黑盒函数的探索
-
-http://www.matrix67.com/blog/archives/4570
-
-再谈Julia集与Mandelbrot集

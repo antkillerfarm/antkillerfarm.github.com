@@ -45,17 +45,9 @@ https://pjreddie.com/darknet/yolo/
 
 pjreddie不仅是个算法达人，也是个造轮子的高手。YOLO的原始代码基于他本人编写的DL框架——darknet。
 
-darknet代码：
-
-https://github.com/pjreddie/darknet/
-
 YOLO的caffe版本有很多（当然都是非官方的），这里推荐：
 
 https://github.com/yeahkun/caffe-yolo
-
-有个叫做darkflow的项目，可以用于将darknet模型转换成tensorflow模型：
-
-https://github.com/thtrieu/darkflow
 
 ## 概述
 

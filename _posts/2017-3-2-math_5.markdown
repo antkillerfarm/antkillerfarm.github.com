@@ -45,6 +45,36 @@ https://mp.weixin.qq.com/s/K_aNhzaxmchynDWTE1QFCQ
 
 给你一些点与线，只用动画就能看懂张量乘法，还能证明迹循环定理
 
+## 张量分析
+
+在同构的意义下，第零阶张量（r = 0）为标量（Scalar），第一阶张量（r = 1）为向量（Vector），第二阶张量（r = 2）则成为矩阵（Matrix）。
+
+《张量分析》，黄克智著。
+
+>注：黄克智，1927年生，固体力学家。江西中正大学本科+清华硕士+莫斯科大学博士（因应召回国，放弃博士学位）。清华大学工程力学系教授、工程力学研究所所长，中国科学院院士。断裂力学领域权威。
+
+参考：
+
+https://www.zhihu.com/question/286175595
+
+tensor contraction是什么?和内积有关系吗？
+
+https://www.cnblogs.com/lywangjapan/p/12233140.html
+
+张量网络学习笔记
+
+https://www.cnblogs.com/lywangjapan/p/12041658.html
+
+张量分解与应用-学习笔记（1）
+
+https://www.cnblogs.com/lywangjapan/p/12068703.html
+
+张量分解与应用-学习笔记（2）
+
+https://www.cnblogs.com/lywangjapan/p/12089285.html
+
+张量分解与应用-学习笔记（3）
+
 <a name="Boltzmann"/>
 
 # 玻尔兹曼分布
@@ -214,44 +244,3 @@ https://mp.weixin.qq.com/s/2_ZkKrwPhaS31JnyYXyfrQ
 http://blog.csdn.net/shijing_0214/article/details/51116046
 
 理解最大熵模型
-
-https://mp.weixin.qq.com/s/yUJDMSU1Fmf36vN2Q2y1TA
-
-最大熵模型原理小结
-
-https://mp.weixin.qq.com/s/a3TlUFwSm9aIptfhy6MnGA
-
-机器学习是如何借鉴物理学思想的？从伊辛模型谈起
-
-https://mp.weixin.qq.com/s/_DxdlaJahSscXe4O2fw1uA
-
-伊辛模型百年小史：最经典的复杂系统模型，却险些被科学界遗忘
-
-https://zhuanlan.zhihu.com/p/39241895
-
-深度学习与物理，有效场论，重整化群
-
-https://mp.weixin.qq.com/s/7NrB0UtmELXD3UNO3C6jGA
-
-我就不信看完这篇你还搞不懂信息熵
-
-https://mp.weixin.qq.com/s/_s8kxlzcL5Nt2ILUIfAuNQ
-
-不要把所有的鸡蛋放在一个篮子里--谈谈最大熵模型
-
-# 概率分布（2）
-
-上一篇《概率分布（1）》写的意犹未尽，这里继续写。本篇主要关注$$\chi^2$$分布、t分布和F分布，也就是统计学的三大祖师爷各自的看家本领。
-
-## $$\chi^2$$分布
-
-设$$X_1,\dots,X_n$$是来自总体$$N(0,1)$$的样本，则称统计量
-
-$$\chi^2=X_1^2+\dots+X_n^2\tag{1}$$
-
-服从自由度为n的$$\chi^2$$分布（chi-squared distribution），记作$$\chi^2\sim \chi^2(n)$$。其PDF为：
-
-$$f(x;\,n) =
-\begin{cases}
-  \dfrac{x^{(n/2-1)} e^{-x/2}}{2^{n/2} \Gamma\left(\frac n 2 \right)},  & x > 0; \\ 0, & \text{otherwise}.
-\end{cases}$$

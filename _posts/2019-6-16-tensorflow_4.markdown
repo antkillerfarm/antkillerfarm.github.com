@@ -25,15 +25,55 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tenso
 
 # TensorFlow
 
-## Hama
+## Tensorflow 2.x
 
-TensorFlow实际上是Google开发的第二代DL框架。在它之前，Google内部还有一个叫做DistBelief的框架。这个框架没有开源，但是有论文发表。因此，就有了一个叫做Apache Hama的项目，作为它的开源实现。
+![](/images/img3/TF.png)
 
-官网：
+![](/images/img3/TF_2.png)
 
-https://hama.apache.org/
+```python
+import tensorflow
+main_version = tensorflow.__version__.split('.')[0]
+if int(main_version) == 2:
+    import tensorflow.compat.v1 as tf
+    tf.compat.v1.disable_v2_behavior()
+    import tensorflow.compat.v1.lite as tflite
+else:
+    import tensorflow as tf
+    import tensorflow.contrib.lite as tflite
+```
 
-这个项目采用了一种叫做Bulk Synchronous Parallel的并行计算模型。
+https://mp.weixin.qq.com/s/BD-nJSZJLjBBq1n7HEHpKw
+
+将您的代码升级至TensorFlow 2.0
+
+https://mp.weixin.qq.com/s/xgsUF97aI1YfGSdh0FJ6Cw
+
+都在关心TensorFlow 2.0，那我手里基于1.x构建的程序怎么办？
+
+https://mp.weixin.qq.com/s/s8hAYadCw9-_BpWSCh38gg
+
+TensorFlow 2.0：数据读取与使用方式
+
+https://mp.weixin.qq.com/s/rVSC1AXj9YECjUrl5PkSGw
+
+详解深度强化学习展现TensorFlow 2.0新特性
+
+https://mp.weixin.qq.com/s/8D8kxFSfruwWhU2jmYL3sg
+
+Google大佬Josh Gordon发布Tensorflow 2.0入门教程
+
+https://cloud.tencent.com/developer/article/1498043
+
+有了TensorFlow2.0，我手里的1.x程序怎么办？
+
+https://mp.weixin.qq.com/s/ddHKc5AffznRaEY_qhHN_g
+
+升级到tensorflow2.0，我整个人都不好了
+
+https://mp.weixin.qq.com/s/RcolwQnCqrAsGaKEK0oo_A
+
+TensorFlow 2.0中的tf.keras和Keras有何区别？为什么以后一定要用tf.keras？
 
 ## 细节
 
@@ -368,35 +408,3 @@ https://mp.weixin.qq.com/s/NMRwXqwr4VFbMUPgI8Uccg
 https://mp.weixin.qq.com/s/UKt1cFLcRYZQTJiZRiajwQ
 
 TensorFlow Servering C/S通信约束
-
-https://mp.weixin.qq.com/s/DpqI4AfjiygCh8dqq_Kgmw
-
-基于TensorFlow Serving的深度学习在线预估
-
-https://mp.weixin.qq.com/s/LRxyvVazRAOR_B0as7ujvg
-
-腾讯互娱基于CPU环境的分布式YOLOv3实现
-
-https://mp.weixin.qq.com/s/XcqVtFBY5rIn0FgPEx0eTg
-
-工业领域中的AI：BHGE通过使用TensorFlow概率编程工具包开发的基于物理的概率深度学习
-
-http://brucedone.com/archives/1005
-
-Tensorflow破解验证码
-
-https://mp.weixin.qq.com/s/CjlEY_m6tp-NJ3B2MiAZRg
-
-基于TensorFlow的深度模型训练GPU显存优化
-
-http://gitbook.cn/books/593d71ba4686067a2200aec6/index.html
-
-用TensorFlow实现智能机器人的原理及如何实现一个对话机器人
-
-https://mp.weixin.qq.com/s/lLaSXG1VF9Rys2GNzFP7pw
-
-轻松使用多种预训练卷积网络抽取图像特征
-
-https://mp.weixin.qq.com/s/tVqp1Tht1P-0EQazJizQaA
-
-利用人口普查收入数据集预测收入

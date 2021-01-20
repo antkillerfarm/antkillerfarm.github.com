@@ -415,6 +415,34 @@ https://mp.weixin.qq.com/s/oN6n7GXnqASKBbVS54rfGg
 
 # Pytorch++
 
+https://mp.weixin.qq.com/s/cKvkvWgVPuq9y1A5q1OPEQ
+
+跟着指南学PyTorch—迁移学习教程
+
+https://mp.weixin.qq.com/s/gJgxh4l0CXTlaJaQ_FS3YQ
+
+PyTorch的数据增强与数据标准化
+
+https://mp.weixin.qq.com/s/Mo7XhRcPkgurmQPJ3Zu1ug
+
+基于PyTorch的计算机视觉框架
+
+https://mp.weixin.qq.com/s/PWABh72t92pUOJufcmzvag
+
+用PyTorch做深度学习实验！Facebook新框架Ax和BoTorch双双开源
+
+https://mp.weixin.qq.com/s/LcwlCai7PMYOBwsLXPS5HA
+
+PyTorch语义分割开源库semseg
+
+https://mp.weixin.qq.com/s/oDYMTb9NWxVsW07FLQKA_Q
+
+万字综述，核心开发者全面解读PyTorch内部机制
+
+https://www.zhihu.com/question/274635237
+
+Pytorch有什么节省内存（显存）的小技巧？
+
 https://mp.weixin.qq.com/s/xe5zmJklT2sqn_zffmyrLg
 
 Sharded:在相同显存的情况下使pytorch模型的参数大小加倍

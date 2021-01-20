@@ -156,13 +156,35 @@ Conv2D的Backprop操作可分为两部分：
 
 - Conv2DBackpropInput负责计算上一层的梯度，也就是所谓的in_grad。
 
-- Conv2DBackpropFilter负责计算Kernel的梯度。
+- Conv2DBackpropFilter负责计算Kernel的梯度。（似乎没有计算bias梯度）
 
 ```cpp
+// BP input
+// tensorflow source code:
 tensorflow/core/kernels/conv_grad_input_ops.cc: LaunchConv2DBackpropInputOp
 tensorflow/core/kernels/conv_grad_input_ops.h: LaunchConv2DBackpropInputOpImpl
+tensorflow/core/kernels/eigen_backward_spatial_convolutions.h: Eigen::SpatialConvolutionBackwardInput
+// eigen source code:
+unsupported/Eigen/CXX11/src/Tensor/TensorBase.h: TensorBase::contract()
+unsupported/Eigen/CXX11/src/Tensor/TensorContraction.h: evalGemmPartial
+unsupported/Eigen/CXX11/src/Tensor/TensorContraction.h: TensorContractionKernel
+Eigen/src/Core/products/GeneralBlockPanelKernel.h: gebp_kernel::operator()
+
+// BP filter
+// tensorflow source code:
 tensorflow/core/kernels/conv_grad_filter_ops.cc: LaunchConv2DBackpropFilterOp
+tensorflow/core/kernels/eigen_backward_spatial_convolutions.h: Eigen::SpatialConvolutionBackwardKernel
+// eigen source code:
+unsupported/Eigen/CXX11/src/Tensor/TensorBase.h: TensorBase::contract()
 ```
+
+以上是CPU计算BP的调用路径，要点如下：
+
+- 无论是计算BP input，还是BP filter，最终都会转换成GEMM运算。
+
+- GEMM运算会调用TensorContractionKernel。
+
+Tensor contraction是一种Tensor运算，参见《数学狂想曲（五）》中的“张量分析”一节。
 
 ## TensorFlow.js
 
@@ -350,52 +372,12 @@ https://mp.weixin.qq.com/s/jdjX0jirTHOUqsGagJmGLQ
 
 谷歌AI开源张量计算库TensorNetwork，计算速度暴涨100倍
 
-## Tensorflow 2.x
+## Hama
 
-![](/images/img3/TF.png)
+TensorFlow实际上是Google开发的第二代DL框架。在它之前，Google内部还有一个叫做DistBelief的框架。这个框架没有开源，但是有论文发表。因此，就有了一个叫做Apache Hama的项目，作为它的开源实现。
 
-![](/images/img3/TF_2.png)
+官网：
 
-```python
-import tensorflow
-main_version = tensorflow.__version__.split('.')[0]
-if int(main_version) == 2:
-    import tensorflow.compat.v1 as tf
-    tf.compat.v1.disable_v2_behavior()
-    import tensorflow.compat.v1.lite as tflite
-else:
-    import tensorflow as tf
-    import tensorflow.contrib.lite as tflite
-```
+https://hama.apache.org/
 
-https://mp.weixin.qq.com/s/BD-nJSZJLjBBq1n7HEHpKw
-
-将您的代码升级至TensorFlow 2.0
-
-https://mp.weixin.qq.com/s/xgsUF97aI1YfGSdh0FJ6Cw
-
-都在关心TensorFlow 2.0，那我手里基于1.x构建的程序怎么办？
-
-https://mp.weixin.qq.com/s/s8hAYadCw9-_BpWSCh38gg
-
-TensorFlow 2.0：数据读取与使用方式
-
-https://mp.weixin.qq.com/s/rVSC1AXj9YECjUrl5PkSGw
-
-详解深度强化学习展现TensorFlow 2.0新特性
-
-https://mp.weixin.qq.com/s/8D8kxFSfruwWhU2jmYL3sg
-
-Google大佬Josh Gordon发布Tensorflow 2.0入门教程
-
-https://cloud.tencent.com/developer/article/1498043
-
-有了TensorFlow2.0，我手里的1.x程序怎么办？
-
-https://mp.weixin.qq.com/s/ddHKc5AffznRaEY_qhHN_g
-
-升级到tensorflow2.0，我整个人都不好了
-
-https://mp.weixin.qq.com/s/RcolwQnCqrAsGaKEK0oo_A
-
-TensorFlow 2.0中的tf.keras和Keras有何区别？为什么以后一定要用tf.keras？
+这个项目采用了一种叫做Bulk Synchronous Parallel的并行计算模型。

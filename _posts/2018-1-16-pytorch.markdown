@@ -118,15 +118,50 @@ https://zhuanlan.zhihu.com/p/81026071
 
 神经网络加速库QNNPACK实现揭秘
 
-## 细节
+## 代码解读
 
-### op的C++实现
+PyTorch的的代码主要由C10、ATen、torch三大部分组成的。其中：
 
-Pytorch目前已经和Caffe2合并，所以相关op的代码在caffe2/operators下。一般XXX_op.h包含了CPU实现，而XXX_op.cu包含GPU实现。
+- C10，来自于Caffe Tensor Library的缩写。这里存放的都是最基础的Tensor库的代码，可以运行在服务端和移动端。PyTorch目前正在将代码从ATen/core目录下迁移到C10中。C10的代码有一些特殊性，体现在这里的代码除了服务端外还要运行在移动端，因此编译后的二进制文件大小也很关键，因此C10目前存放的都是最核心、精简的、基础的Tensor函数和接口。
+
+- ATen，来自于A TENsor library for C++11的缩写；PyTorch的C++ tensor library。ATen部分有大量的代码是来声明和定义Tensor运算相关的逻辑的，除此之外，PyTorch还使用了aten/src/ATen/gen.py来动态生成一些ATen相关的代码。
+
+- Torch，部分代码仍然在使用以前的快要进入历史博物馆的Torch开源项目。
 
 ### CNN format
 
 Pytorch默认支持NCHW格式的数据，这与Caffe相同。
+
+### op
+
+Pytorch目前已经和Caffe2合并，所以相关op的代码在caffe2/operators下。一般XXX_op.h包含了CPU实现，而XXX_op.cu包含GPU实现。
+
+### Conv Backprop
+
+```cpp
+caffe2/operators/conv_op_impl.h: ConvGradientOp::RunOnDeviceWithOrderNCHW
+caffe2/utils/math.h: Gemm
+caffe2/utils/math_cpu.cc: Gemm
+cblas_sgemm
+```
+
+### 参考
+
+https://mp.weixin.qq.com/s/rCocDz2kW2tpkZel5Wh-hw
+
+Pytorch网络结构可视化
+
+https://mp.weixin.qq.com/s/0VNTBY1KrOXBldRoi1Ky5A
+
+Pytorch autograd,backward详解
+
+https://zhuanlan.zhihu.com/p/55966063
+
+PyTorch ATen代码的动态生成
+
+https://zhuanlan.zhihu.com/p/56924766
+
+PyTorch Autograd代码的动态生成
 
 ## tensorboardX
 
@@ -162,9 +197,9 @@ https://blog.csdn.net/xxradon/article/details/86504906
 
 pytorch JIT浅解析
 
-## 
+## TorchServe
 
-TorchServe是由AWS和Facebook合作开发的 PyTorch 模型服务库。
+TorchServe是由AWS和Facebook合作开发的PyTorch模型服务库。
 
 代码：
 
@@ -361,67 +396,3 @@ GAN如此简单的PyTorch实现，一张脸生成72种表情
 https://mp.weixin.qq.com/s/u9GEDCmR-PT0--0Xf4vKDA
 
 Pytorch的tensorboard食谱帮你可视化误差结果
-
-https://mp.weixin.qq.com/s/RBclQdtaA8prvSoUUdhrEQ
-
-机器学习的Pytorch实现资源集合
-
-https://mp.weixin.qq.com/s/zPv-3fMy1rZwAwPqjs7oAA
-
-Pytorch图像分类从模型自定义到测试
-
-https://zhuanlan.zhihu.com/p/46636027
-
-1张图学会PyTorch+TensorFlow+MXNet+TF Eager
-
-https://mp.weixin.qq.com/s/yS9PAw926Y7AsGRW0eHG0Q
-
-基于PyTorch的GAN框架TorchGAN：用架构级API轻松定制GAN项目
-
-https://github.com/CVBox/PyTorchCV
-
-一个基于pytorch的CV框架
-
-https://mp.weixin.qq.com/s/w09hcJof80m2VGwn7SgKmQ
-
-TorchSeg—基于PyTorch的快速模块化语义分割开源库
-
-https://mp.weixin.qq.com/s/TsR-jgO2c2-dbqnk1mEj8w
-
-想读读PyTorch底层代码？这份内核机制简介送给你
-
-https://mp.weixin.qq.com/s/Lzt3LbO6lBbOebNV1d2pLQ
-
-迁移学习不好懂？这里有一个PyTorch项目帮你理解
-
-https://mp.weixin.qq.com/s/cKvkvWgVPuq9y1A5q1OPEQ
-
-跟着指南学PyTorch—迁移学习教程
-
-https://mp.weixin.qq.com/s/gJgxh4l0CXTlaJaQ_FS3YQ
-
-PyTorch的数据增强与数据标准化
-
-https://mp.weixin.qq.com/s/Mo7XhRcPkgurmQPJ3Zu1ug
-
-基于PyTorch的计算机视觉框架
-
-https://mp.weixin.qq.com/s/PWABh72t92pUOJufcmzvag
-
-用PyTorch做深度学习实验！Facebook新框架Ax和BoTorch双双开源
-
-https://mp.weixin.qq.com/s/LcwlCai7PMYOBwsLXPS5HA
-
-PyTorch语义分割开源库semseg
-
-https://mp.weixin.qq.com/s/oDYMTb9NWxVsW07FLQKA_Q
-
-万字综述，核心开发者全面解读PyTorch内部机制
-
-https://www.zhihu.com/question/274635237
-
-Pytorch有什么节省内存（显存）的小技巧？
-
-https://mp.weixin.qq.com/s/rCocDz2kW2tpkZel5Wh-hw
-
-Pytorch网络结构可视化

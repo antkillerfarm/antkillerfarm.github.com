@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  TensorFlow（五）, TVM
+title:  TensorFlow（五）
 category: AI 
 ---
 
@@ -8,6 +8,38 @@ category: AI
 {:toc}
 
 # TensorFlow
+
+https://mp.weixin.qq.com/s/DpqI4AfjiygCh8dqq_Kgmw
+
+基于TensorFlow Serving的深度学习在线预估
+
+https://mp.weixin.qq.com/s/LRxyvVazRAOR_B0as7ujvg
+
+腾讯互娱基于CPU环境的分布式YOLOv3实现
+
+https://mp.weixin.qq.com/s/XcqVtFBY5rIn0FgPEx0eTg
+
+工业领域中的AI：BHGE通过使用TensorFlow概率编程工具包开发的基于物理的概率深度学习
+
+http://brucedone.com/archives/1005
+
+Tensorflow破解验证码
+
+https://mp.weixin.qq.com/s/CjlEY_m6tp-NJ3B2MiAZRg
+
+基于TensorFlow的深度模型训练GPU显存优化
+
+http://gitbook.cn/books/593d71ba4686067a2200aec6/index.html
+
+用TensorFlow实现智能机器人的原理及如何实现一个对话机器人
+
+https://mp.weixin.qq.com/s/lLaSXG1VF9Rys2GNzFP7pw
+
+轻松使用多种预训练卷积网络抽取图像特征
+
+https://mp.weixin.qq.com/s/tVqp1Tht1P-0EQazJizQaA
+
+利用人口普查收入数据集预测收入
 
 https://mp.weixin.qq.com/s/3WleFm9S_wMIPTz_WfjKQw
 
@@ -321,110 +353,36 @@ https://zhuanlan.zhihu.com/p/333791572
 
 Tensorflow模型保存方式大汇总
 
-# TVM
+# Pytorch+++
 
-TVM是陈天奇领导的一个DL加速框架项目。它处于DL框架（如tensorflow、pytorch）和硬件后端（如CUDA、OpenCL）之间，兼顾了前者的易用性和后者的执行效率。
+https://mp.weixin.qq.com/s/RBclQdtaA8prvSoUUdhrEQ
 
-官网：
+机器学习的Pytorch实现资源集合
 
-https://tvm.apache.org/
+https://mp.weixin.qq.com/s/zPv-3fMy1rZwAwPqjs7oAA
 
-代码：
+Pytorch图像分类从模型自定义到测试
 
-https://github.com/apache/incubator-tvm
+https://zhuanlan.zhihu.com/p/46636027
 
-![](/images/img3/tvm_stack.png)
+1张图学会PyTorch+TensorFlow+MXNet+TF Eager
 
-论文：
+https://mp.weixin.qq.com/s/yS9PAw926Y7AsGRW0eHG0Q
 
-《TVM: End-to-End Optimization Stack for Deep Learning》
+基于PyTorch的GAN框架TorchGAN：用架构级API轻松定制GAN项目
 
-参考：
+https://github.com/CVBox/PyTorchCV
 
-https://zhuanlan.zhihu.com/p/139552817
+一个基于pytorch的CV框架
 
-一篇关于深度学习编译器架构的综述论文
+https://mp.weixin.qq.com/s/w09hcJof80m2VGwn7SgKmQ
 
-https://mp.weixin.qq.com/s/8bXwxYyNjdThlGQQ70cgWQ
+TorchSeg—基于PyTorch的快速模块化语义分割开源库
 
-TVM：端到端自动深度学习编译器，244页ppt
+https://mp.weixin.qq.com/s/TsR-jgO2c2-dbqnk1mEj8w
 
-https://zhuanlan.zhihu.com/p/333706468
+想读读PyTorch底层代码？这份内核机制简介送给你
 
-TVM学习系列blog
+https://mp.weixin.qq.com/s/Lzt3LbO6lBbOebNV1d2pLQ
 
-https://zhuanlan.zhihu.com/p/163717035
-
-AI编译优化
-
-https://www.zhihu.com/question/267167829
-
-如何看待Tensor Comprehensions？与TVM有何异同？（这个问题下的答案不多，但基本都是陈天奇、贾扬清之类的大佬）
-
-https://mp.weixin.qq.com/s/irvBbPKENiZX9G_6wh5c-Q
-
-陈天奇等人提出TVM：深度学习自动优化代码生成器
-
-https://mp.weixin.qq.com/s/28n8g_epHsYB0I9GVc_lww
-
-陈天奇团队TVM重磅更新：直接在浏览器使用GPU
-
-https://mp.weixin.qq.com/s/7JGLm-hkCZBNDLA98qvWNA
-
-自动生成硬件优化内核：陈天奇等人发布深度学习编译器TVM
-
-https://mp.weixin.qq.com/s/YVIvdMznb3oatIXqD5a5_A
-
-陈天奇等人提出AutoTVM：让AI来编译优化AI系统底层算子
-
-https://mp.weixin.qq.com/s/HquT_mKm7x_rbDGz4Voqpw
-
-阿里巴巴最新实践：TVM+TensorFlow提高神经机器翻译性能
-
-https://zhuanlan.zhihu.com/p/50529704
-
-手把手带你遨游TVM
-
-https://mp.weixin.qq.com/s/z5rsU_uAAaRxgD9YAxDkZA
-
-陈天奇：深度学习编译技术的现状和未来
-
-https://zhuanlan.zhihu.com/p/75203171
-
-如何利用TVM快速实现超越Numpy(MKL)的GEMM
-
-https://zhuanlan.zhihu.com/p/58918363
-
-TVM: Deep Learning模型的优化编译器
-
-https://zhuanlan.zhihu.com/p/87664838
-
-也谈TVM和深度学习编译器
-
-https://zhuanlan.zhihu.com/p/91283238
-
-TVM图编译器Relay简单探究
-
-# GLOW
-
-代码：
-
-https://github.com/pytorch/glow
-
-参考：
-
-https://zhuanlan.zhihu.com/p/102127047
-
-Glow: Graph Lowering Compiler for Neural Networks
-
-# NNFusion
-
-代码：
-
-https://github.com/microsoft/nnfusion
-
-参考：
-
-https://mp.weixin.qq.com/s/CMTOW3cYQkkECpPuzZl0nQ
-
-RAMMER如何进一步“压榨”加速器性能
+迁移学习不好懂？这里有一个PyTorch项目帮你理解

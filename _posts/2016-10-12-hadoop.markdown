@@ -377,7 +377,3 @@ Tensorboard可视化与Hook机制
 https://mp.weixin.qq.com/s/jnV_4REXOR-ema1kOC95Nw
 
 跨越重重“障碍”，我从PyTorch转换为了TensorFlow Lite
-
-https://mp.weixin.qq.com/s/0VNTBY1KrOXBldRoi1Ky5A
-
-Pytorch autograd,backward详解
