@@ -368,3 +368,7 @@ https://mp.weixin.qq.com/s/pn8DGb190_9Yd-MuNohgcQ
 https://mp.weixin.qq.com/s/nHn-W6uL_Njtdl5O-4zaCg
 
 当推荐系统遇上图神经网络
+
+https://mp.weixin.qq.com/s/q2GiE1_jg-tQM3ZtN9Wmrw
+
+图信息Bottleneck打造图最优表示->避免过拟合，并具备稳健性

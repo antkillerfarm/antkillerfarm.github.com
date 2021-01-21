@@ -9,6 +9,70 @@ category: DL acceleration
 
 # 模型压缩与加速进阶
 
+https://mp.weixin.qq.com/s/QSGgvhkMUj3cXVlQwlzTFQ
+
+深度神经网络加速和压缩新进展年度报告
+
+https://zhuanlan.zhihu.com/p/37074222
+
+CVPR 2018 高效小网络探密（上）
+
+https://zhuanlan.zhihu.com/p/37919669
+
+CVPR 2018 高效小网络探密（下）
+
+https://zhuanlan.zhihu.com/p/38046989
+
+从ISCA论文看AI硬件加速的新技巧
+
+https://mp.weixin.qq.com/s/s6Z8P8bUkyoKU2mW3z-rNQ
+
+轻量级网络/检测/分割综述
+
+https://mp.weixin.qq.com/s/-V6hlZAKp1vuARSibZDBQQ
+
+深度学习高效计算与处理器设计
+
+https://mp.weixin.qq.com/s/ccFccLb2UTyFyMwFPjsDaA
+
+让CNN跑得更快，腾讯优图提出全局和动态过滤器剪枝
+
+https://mp.weixin.qq.com/s/cSYCT1I1asaSCIc5Hgu0Jw
+
+计算成本降低35倍！谷歌发布手机端自动设计神经网络MnasNet
+
+https://zhuanlan.zhihu.com/p/42474017
+
+MnasNet：终端轻量化模型新思路
+
+https://mp.weixin.qq.com/s/p_qdKcQwQ8y_JUw3gQUEnA
+
+谷歌大脑用强化学习为移动设备量身定做最好最快的CNN模型
+
+https://mp.weixin.qq.com/s/OyEIcS5o6kWUu2UzuWZi3g
+
+这么Deep且又轻量的Network，实时目标检测
+
+https://mp.weixin.qq.com/s/8NDOf_8qxMMpcuXIZGJCGg
+
+Google又发大招：高效实时实现视频目标检测
+
+https://mp.weixin.qq.com/s/IxVMMu_7UL5zFsDCcYfzYA
+
+AutoML自动模型压缩再升级，MIT韩松团队利用强化学习全面超越手工调参
+
+https://mp.weixin.qq.com/s/BMsvhXytSy2nWIsGOSOSBQ
+
+自动生成高效DNN，适用于边缘设备的生成合成工具FermiNets
+
+https://mp.weixin.qq.com/s/nEMvoiqImd0RxrskIH7c9A
+
+仅17KB、一万个权重的微型风格迁移网络！
+
+https://mp.weixin.qq.com/s/pc8fJx5StxnX9it2AVU5NA
+
+基于手机系统的实时目标检测
+
 https://mp.weixin.qq.com/s/6wzmyhIvUVeAN4Xjfhb1Yw
 
 论文解读：Channel pruning for Accelerating Very Deep Neural Networks
@@ -328,55 +392,3 @@ https://mp.weixin.qq.com/s/jqRBrs9Y_-3qvemL0RTflA
 https://mp.weixin.qq.com/s/NJzGR-tY_WWeccbdshHckA
 
 基于交错组卷积的高效深度神经网络
-
-https://mp.weixin.qq.com/s/6eyEMW9dVBR5cZrHxn8iqA
-
-腾讯AI Lab详解3大热点：模型压缩、自动机器学习及最优化算法
-
-https://xmfbit.github.io/2018/02/24/paper-ssl-dnn/
-
-论文-Learning Structured Sparsity in Deep Neural Networks
-
-https://mp.weixin.qq.com/s/d6HFVbbHwkxPGdnbyVuMyQ
-
-密歇根州立大学提出NestDNN：动态分配多任务资源的移动端深度学习框架
-
-https://mp.weixin.qq.com/s/lUTusig94Htf7_4Z3X1fTQ
-
-清华&伯克利ICLR论文：重新思考6大剪枝方法
-
-https://mp.weixin.qq.com/s/g3y9mRhkFtzSuSMAornnDQ
-
-韩松博士论文：面向深度学习的高效方法与硬件
-
-https://mp.weixin.qq.com/s/aH1zQ7we8OE59-O9n4IXhw
-
-应对未来物联网大潮：如何在内存有限的情况下部署深度学习？
-
-https://mp.weixin.qq.com/s/IfvXrsUq8-cBDC4_3O5v_w
-
-Facebook新研究优化硬件浮点运算，强化AI模型运行速率
-
-https://mp.weixin.qq.com/s/Jsxiha_BFtWVLvO4HMwJ3Q
-
-工业界第一手实战经验：深度学习高效网络结构设计
-
-https://mp.weixin.qq.com/s/uXbLb5ITHOU0dZRSWNobVg
-
-算力限制场景下的目标检测实战浅谈
-
-https://mp.weixin.qq.com/s/DoeoPGnS88HQmxagKJWLlg
-
-小米开源FALSR算法：快速精确轻量级的超分辨率模型
-
-https://mp.weixin.qq.com/s/wT39oUWfrQK-dg7hGXRynQ
-
-实时单人姿态估计，在自己手机上就能实现
-
-https://mp.weixin.qq.com/s/GJ7JMtWiKBku7dVJWOfLOA
-
-CNN能同时兼顾速度与准确度吗？CMU提出AdaScale
-
-https://mp.weixin.qq.com/s/pmel2k2J159zQi87ib3q8A
-
-如何让CNN高效地在移动端运行

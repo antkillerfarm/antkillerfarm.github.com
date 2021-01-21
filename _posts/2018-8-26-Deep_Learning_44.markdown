@@ -185,14 +185,6 @@ https://mp.weixin.qq.com/s/entoLCunjKY7PYWI8-aAgg
 
 谷歌AI秀神技：大脸畸变一键还原，拍照无需抢C位，实时运行毫无PS痕迹
 
-https://xyang35.github.io/2017/08/20/paper-2/
-
-图像去雾算法专题
-
-https://mp.weixin.qq.com/s/6L328q9nR7XEYeKdFH3xpQ
-
-CVPR 2020 论文大盘点-去雨去雾去模糊篇
-
 https://mp.weixin.qq.com/s/uhbKu69K6N-pxFZCRwAz1g
 
 秒变“女装大佬”！Snapchat推出性别转换滤镜，离线实时渲染

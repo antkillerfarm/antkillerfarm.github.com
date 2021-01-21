@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 电子科技史
+title: 电子科技史, 内存
 category: resource 
 ---
 
@@ -50,6 +50,10 @@ Full Mask和MPW都是集成电路的一种流片（将设计结果交出去进�
 https://mp.weixin.qq.com/s/mcxD1TaD-r9alNydWQQ0Og
 
 意外惊喜：现存最古老计算机的操作手册重见天日
+
+----
+
+![](/images/img3/broadcom.jpg)
 
 ----
 
@@ -278,3 +282,41 @@ https://mp.weixin.qq.com/s/CWCPmfLrh3FY2VtpmiWJug
 https://mp.weixin.qq.com/s/Jf2xn5E1yvlxlT9lEWT47Q
 
 30张照片回顾乔布斯和比尔盖茨之间“不得不说”的故事
+
+# 内存
+
+https://mp.weixin.qq.com/s/HOhBNZfOf5xQIFLYQ5ntCw
+
+内存的故事
+
+https://mp.weixin.qq.com/s/qhR0St3CLWEYqV_kl_oXAw
+
+Rambus之战
+
+https://mp.weixin.qq.com/s/gh9cL0BPzCQ2JFOoXdtqyg
+
+内存的技术发展
+
+https://mp.weixin.qq.com/s/kHPTZlDtjqtr0Vi-5OWycQ
+
+金士顿的传说
+
+https://zhuanlan.zhihu.com/p/57780996
+
+内存延迟：因与果
+
+https://mp.weixin.qq.com/s/XcC18tulYdnwqlusg2QrxA
+
+嵌入式内存STT-MRAM趋势分析
+
+https://zhuanlan.zhihu.com/p/62234511
+
+DDR3 vs DDR4?为什么说内存是个很傻的设备？DDR5在哪里？
+
+https://zhuanlan.zhihu.com/p/40601422
+
+双通道、四通道内存对游戏重要吗？
+
+https://mp.weixin.qq.com/s/9skWM6yirEupLj2wdpgqkA
+
+带你深入理解内存对齐最底层原理

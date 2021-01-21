@@ -7,9 +7,47 @@ category: DL acceleration
 * toc
 {:toc}
 
+# NN Quantization（续）
+
+https://zhuanlan.zhihu.com/p/132561405
+
+模型量化了解一下？
+
+https://mp.weixin.qq.com/s/xnszH9WSKGBwqtHUuYua1g
+
+混合精度训练，提速，减内存
+
+https://mp.weixin.qq.com/s/YImszcJDsvw5ygo2wCj3Hw
+
+模型量化的核心技术点有哪些，如何对其进行长期深入学习
+
+https://mp.weixin.qq.com/s/bK0n9u6DIl4SY7mxS8CVRw
+
+模型量化技术原理及其发展现状和展望
+
+https://zhuanlan.zhihu.com/p/223018242
+
+NNIE量化算法及实现
+
+https://zhuanlan.zhihu.com/p/79744430
+
+Tensorflow模型量化(Quantization)原理及其实现方法
+
 # 模型压缩与加速
 
-## 课程（续）
+对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。
+
+此外，对于一些较大的模型（如VGG），即使机器再给力，单位时间内能处理的图像数量，往往也无法达到实际应用的要求。这点在自动驾驶和视频处理领域显得尤为突出。
+
+## 课程
+
+https://cs217.github.io/
+
+CS 217: Hardware Accelerators for Machine
+
+https://mp.weixin.qq.com/s/RcEPWRxQXv6B4wqLHGyQHg
+
+深度神经网络的高效处理:从算法到硬件架构，140页ppt
 
 https://mp.weixin.qq.com/s/yp5gExPzpDiXaGk9oXEMVA
 
@@ -143,6 +181,10 @@ https://mp.weixin.qq.com/s/WYG0XAhoPTOn_qCilT9yfw
 
 ​一文读懂EfficientDet
 
+https://mp.weixin.qq.com/s/Jklyqt55-8NfKJ5oUXCmHw
+
+EfficientDet框架详解
+
 ## 参考
 
 https://github.com/memoiry/Awesome-model-compression-and-acceleration
@@ -252,37 +294,3 @@ https://mp.weixin.qq.com/s/UmtCq6WzIDQs3IAxhRFgNw
 Hinton举了一个仿生学的例子，就是昆虫在幼生期的时候往往都是一样的，适于它们从环境中摄取能量和营养；然而当它们成长到成熟期，会基于不同的环境或者身份，变成另外一种形态以适应这种环境。
 
 那么对于DNN是不是存在类似的方法？在一开始training的过程中比较庞杂，但是当后来需要拿去deploy的时候，可以转换成一个更小的模型。他把这种方法叫做**Knowledge Distillation(KD)**。
-
-![](/images/img2/Distilling.jpg)
-
-上图是KD的网络结构图。它的主要思想就是通过一个performance非常好的大网络（有可能是ensemble的）来教一个小网络进行学习。这里我们可以把大网络叫为：teacher network，小网络叫为：student network。
-
-teacher network可以被固定（正如在精炼过程中）或联合优化，甚至同时训练多个不同大小的student network。
-
-![](/images/img2/Distilling_2.jpg)
-
-上图是另一篇论文的图：
-
-《Object detection at 200 Frames Per Second》
-
-该论文的中文版：
-
-https://mp.weixin.qq.com/s/OCG1TiHl2dsuS24uacQ-MA
-
-又快又准确，新目标检测器速度可达每秒200帧
-
-## soft target
-
-由于有teacher network的存在，student network的训练也和普通的监督学习有所不同。
-
-论文：
-
-《Articulatory and Spectrum Features Integration using Generalized Distillation Framework》
-
-![](/images/img3/KD.png)
-
-上图是两者的训练过程。
-
-这里解释一下，何为soft target？
-
-Hinton给了个例子：比如说在MNIST数据集中，有两个数字“2”，但是写法是不一样的：一个可能写的比较像3（后面多出了一点头），一个写的比较像7（出的头特别的短）。在这样的情况下，grund truth label都是“2”，然而一个学习的很好的大网络会给label“3”和“7”都有一定的概率值。通常叫这种信息为“soft targets”；相对的，gt label是一种“hard targets”因为它是one－hot label。总的来说就是，通过大网络的“soft targets”，能得到更加多的信息来更好的训练小网络。

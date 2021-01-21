@@ -295,6 +295,10 @@ https://mp.weixin.qq.com/s/vQkb2-5D9T2ejUa2qrPlow
 
 卷积神经网络中的即插即用模块
 
+https://mp.weixin.qq.com/s/glQSmbuvRI6CV8EyfYLezw
+
+盘点11种CNN网络设计中精巧通用的“小”插件
+
 https://mp.weixin.qq.com/s/3-NEbE6aZHR6dgW6GCmldw
 
 在频域中学习的DCTNet

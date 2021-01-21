@@ -377,6 +377,14 @@ https://mp.weixin.qq.com/s/dr6gxJCDBM1Lk_tAOdi9-Q
 
 推荐系统解构
 
+https://zhuanlan.zhihu.com/p/103129589
+
+推荐系统之标签体系
+
+https://mp.weixin.qq.com/s/cBZ_XC1dSdp540-Hr1izuw
+
+爱奇艺效果广告的个性化探索与实践
+
 # 推荐系统进阶+
 
 https://mp.weixin.qq.com/s/sDG5xm1JZ8rIEaVXeVQ5cA

@@ -1,15 +1,33 @@
 ---
 layout: post
-title: CPU(二), 硬盘, 内存
+title: CPU(二), 硬盘
 category: resource 
 ---
 
 * toc
 {:toc}
 
-# CPU
+# CPU（续）
 
-## Cache（续）
+## AVX
+
+MMX直接使用了80bit的FPU寄存器中的64bit，对CPU整个流水线几乎没有影响；SSE的128bit相比80bit增加了48bit宽度还算可以接受。AVX的256bit，整个CPU的数据通道比80bit增加了三倍多，需要消耗三倍的晶体管，功率也增加了三倍。因此在严格限定功耗的场景如笔记本或者服务器中，CPU运行AVX应用时需要降低频率从而降低功耗。
+
+参考：
+
+https://www.zhihu.com/question/406517759
+
+如何看待Linus Torvalds对AVX512的评价？
+
+## Cache
+
+Cache本质上是一块小而快的存储设备和另一块大而慢的存储设备之间的协作关系。
+
+Cache分为硬件Cache和软件Cache两种，这里只讨论前者。后者参见《数据库（一）》。
+
+![](/images/img4/Mem_Gap.png)
+
+上图展示了CPU和DRAM之间的速度增长的差异，这个差异通常被称为Memory Gap。1980年代以前的计算机是没有Cache的，但是随着Memory Gap的增大，Cache的级数也不断增多，目前3级片上Cache+1级片外Cache已经是标配了。
 
 必须指出的是，和CPU的速度受限于技术进步不同，RAM的问题主要是性能和价格的折衷。Cache实际上也是一种RAM，最好的L0 Cache和CPU的速度相当，只是价格太高而已。
 
@@ -347,44 +365,6 @@ https://mp.weixin.qq.com/s/ChAfcT5xDgExiEXytTfynw
 
 关于存储技术的最强入门科普
 
-# 内存
-
-https://mp.weixin.qq.com/s/HOhBNZfOf5xQIFLYQ5ntCw
-
-内存的故事
-
-https://mp.weixin.qq.com/s/qhR0St3CLWEYqV_kl_oXAw
-
-Rambus之战
-
-https://mp.weixin.qq.com/s/gh9cL0BPzCQ2JFOoXdtqyg
-
-内存的技术发展
-
-https://mp.weixin.qq.com/s/kHPTZlDtjqtr0Vi-5OWycQ
-
-金士顿的传说
-
-https://zhuanlan.zhihu.com/p/57780996
-
-内存延迟：因与果
-
-https://mp.weixin.qq.com/s/XcC18tulYdnwqlusg2QrxA
-
-嵌入式内存STT-MRAM趋势分析
-
-https://zhuanlan.zhihu.com/p/62234511
-
-DDR3 vs DDR4?为什么说内存是个很傻的设备？DDR5在哪里？
-
-https://zhuanlan.zhihu.com/p/40601422
-
-双通道、四通道内存对游戏重要吗？
-
-https://mp.weixin.qq.com/s/9skWM6yirEupLj2wdpgqkA
-
-带你深入理解内存对齐最底层原理
-
 # 数据库参考资源+
 
 https://mp.weixin.qq.com/s/PPlrrtcdrtKT3afgWOU8Pg
@@ -398,3 +378,11 @@ https://mp.weixin.qq.com/s/k1sK-QQjVqdJnpWNCV0pUA
 https://mp.weixin.qq.com/s/I3ca2HAuSTtUJSZyHNe1vA
 
 数据库读写分离要注意哪些细节
+
+https://mp.weixin.qq.com/s/oV5F_K2mmE_kK77uEZSjLg
+
+字节跳动分布式表格存储系统的演进
+
+https://mp.weixin.qq.com/s/ZjnRzI18plggKTv_nPBsEw
+
+字节跳动表格存储中的事务

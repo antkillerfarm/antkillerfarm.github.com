@@ -97,10 +97,6 @@ https://zhuanlan.zhihu.com/p/44958351
 
 研习U-Net
 
-https://mp.weixin.qq.com/s/34HxF5qCulGd1zyATH7ZuA
-
-将U-Net用于图像去雾任务，一种具有密集特征融合的多尺度增强去雾网络
-
 https://mp.weixin.qq.com/s/_T-UP5aU88MfkSTUGBa-TQ
 
 使用注意力机制来做医学图像分割的解释和Pytorch实现
@@ -116,6 +112,10 @@ https://mp.weixin.qq.com/s/TmR9TiB9cfvYGIhQTlctRQ
 https://mp.weixin.qq.com/s/21h62T0Ig5gubVLwyLsdbg
 
 U-Net Family方法汇总
+
+https://mp.weixin.qq.com/s/d1mf-8c-mX5hRfH_FLlJIQ
+
+医学图像语义分割最佳方法的全面比较：UNet和UNet++
 
 # 语义分割进阶
 

@@ -9,7 +9,41 @@ category: DL acceleration
 
 # 知识蒸馏
 
-## soft target（续）
+## 基本概念（续）
+
+![](/images/img2/Distilling.jpg)
+
+上图是KD的网络结构图。它的主要思想就是通过一个performance非常好的大网络（有可能是ensemble的）来教一个小网络进行学习。这里我们可以把大网络叫为：teacher network，小网络叫为：student network。
+
+teacher network可以被固定（正如在精炼过程中）或联合优化，甚至同时训练多个不同大小的student network。
+
+![](/images/img2/Distilling_2.jpg)
+
+上图是另一篇论文的图：
+
+《Object detection at 200 Frames Per Second》
+
+该论文的中文版：
+
+https://mp.weixin.qq.com/s/OCG1TiHl2dsuS24uacQ-MA
+
+又快又准确，新目标检测器速度可达每秒200帧
+
+## soft target
+
+由于有teacher network的存在，student network的训练也和普通的监督学习有所不同。
+
+论文：
+
+《Articulatory and Spectrum Features Integration using Generalized Distillation Framework》
+
+![](/images/img3/KD.png)
+
+上图是两者的训练过程。
+
+这里解释一下，何为soft target？
+
+Hinton给了个例子：比如说在MNIST数据集中，有两个数字“2”，但是写法是不一样的：一个可能写的比较像3（后面多出了一点头），一个写的比较像7（出的头特别的短）。在这样的情况下，grund truth label都是“2”，然而一个学习的很好的大网络会给label“3”和“7”都有一定的概率值。通常叫这种信息为“soft targets”；相对的，gt label是一种“hard targets”因为它是one－hot label。总的来说就是，通过大网络的“soft targets”，能得到更加多的信息来更好的训练小网络。
 
 soft targets的计算方法如下：
 
@@ -251,6 +285,10 @@ https://mp.weixin.qq.com/s/rxwHFjl0FEPWEcfMcwXL8w
 
 BERT蒸馏完全指南
 
+https://mp.weixin.qq.com/s/xgCtgEMRZ1VgzRZWjYIjTQ
+
+知乎搜索文本相关性与知识蒸馏
+
 # 硬件加速技巧
 
 多通道卷积操作最终可以转化为矩阵运算，如下图所示：
@@ -316,67 +354,3 @@ https://zhuanlan.zhihu.com/p/138059904
 https://zhuanlan.zhihu.com/p/179945324
 
 一文深入深度学习模型压缩和加速
-
-https://mp.weixin.qq.com/s/QSGgvhkMUj3cXVlQwlzTFQ
-
-深度神经网络加速和压缩新进展年度报告
-
-https://zhuanlan.zhihu.com/p/37074222
-
-CVPR 2018 高效小网络探密（上）
-
-https://zhuanlan.zhihu.com/p/37919669
-
-CVPR 2018 高效小网络探密（下）
-
-https://zhuanlan.zhihu.com/p/38046989
-
-从ISCA论文看AI硬件加速的新技巧
-
-https://mp.weixin.qq.com/s/s6Z8P8bUkyoKU2mW3z-rNQ
-
-轻量级网络/检测/分割综述
-
-https://mp.weixin.qq.com/s/-V6hlZAKp1vuARSibZDBQQ
-
-深度学习高效计算与处理器设计
-
-https://mp.weixin.qq.com/s/ccFccLb2UTyFyMwFPjsDaA
-
-让CNN跑得更快，腾讯优图提出全局和动态过滤器剪枝
-
-https://mp.weixin.qq.com/s/cSYCT1I1asaSCIc5Hgu0Jw
-
-计算成本降低35倍！谷歌发布手机端自动设计神经网络MnasNet
-
-https://zhuanlan.zhihu.com/p/42474017
-
-MnasNet：终端轻量化模型新思路
-
-https://mp.weixin.qq.com/s/p_qdKcQwQ8y_JUw3gQUEnA
-
-谷歌大脑用强化学习为移动设备量身定做最好最快的CNN模型
-
-https://mp.weixin.qq.com/s/OyEIcS5o6kWUu2UzuWZi3g
-
-这么Deep且又轻量的Network，实时目标检测
-
-https://mp.weixin.qq.com/s/8NDOf_8qxMMpcuXIZGJCGg
-
-Google又发大招：高效实时实现视频目标检测
-
-https://mp.weixin.qq.com/s/IxVMMu_7UL5zFsDCcYfzYA
-
-AutoML自动模型压缩再升级，MIT韩松团队利用强化学习全面超越手工调参
-
-https://mp.weixin.qq.com/s/BMsvhXytSy2nWIsGOSOSBQ
-
-自动生成高效DNN，适用于边缘设备的生成合成工具FermiNets
-
-https://mp.weixin.qq.com/s/nEMvoiqImd0RxrskIH7c9A
-
-仅17KB、一万个权重的微型风格迁移网络！
-
-https://mp.weixin.qq.com/s/pc8fJx5StxnX9it2AVU5NA
-
-基于手机系统的实时目标检测

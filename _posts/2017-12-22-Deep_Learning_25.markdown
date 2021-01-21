@@ -359,10 +359,6 @@ https://mp.weixin.qq.com/s/egU6SkpKjCznConQfg_Zmw
 
 人脸妆造迁移核心技术总结
 
-https://mp.weixin.qq.com/s/FSRwIAwTBZUsT1GVPglZkA
-
-深度学习换脸算法都有哪些？
-
 https://mp.weixin.qq.com/s/m1TBxG_1wlfUUeDwP6Aleg
 
 人脸算法新热点，人脸编辑都有哪些方向，如何学习

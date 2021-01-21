@@ -339,6 +339,10 @@ https://mp.weixin.qq.com/s/XOiHlurpwCa-MmQp1yAjSQ
 
 高并发场景下，到底先更新缓存还是先更新数据库？
 
+https://mp.weixin.qq.com/s/o1wbG_9LDDqM2kLNAfHUIg
+
+没人告诉过你更复杂的缓存穿透怎么解决
+
 ## 数据管理工具
 
 数据管理工具主要有：Navicat和DataGrip。
@@ -352,15 +356,3 @@ DataGrip使用入门
 数仓：“结构化”地存数据。典型代表：用Excel记账目。
 
 我们平时写东西的时候不一定都是开excel：写个文档用word，拍个照片存相册里面，这些数据没法像数仓一样“结构化”：如果有个人告诉你说“你把照片都放Excel里面”，你会觉得他疯了，对吧。但是这些东西最好都放一块存起来，别丢了——在家你可能就存硬盘里面，存移动硬盘里面，或者fancy一点，存云盘里面。把数据“放一块”，先不担心怎么把它有条有理做成大Excel表格，这个就是**数据湖**。
-
-https://mp.weixin.qq.com/s/mYwaGszQGod_o6f3p2QbDw
-
-深度对比Delta、Iceberg和Hudi三大开源数据湖方案
-
-https://mp.weixin.qq.com/s/O94Q1Dxe8TnbCMv9d_hlOg
-
-Uber推出数据湖集成神器DBEvents，支持MySQL、Cassandra等
-
-https://mp.weixin.qq.com/s/ufvvGCh7xxu8keQ-j0bjEA
-
-数仓实时化改造：Hudi on Flink在顺丰的实践应用

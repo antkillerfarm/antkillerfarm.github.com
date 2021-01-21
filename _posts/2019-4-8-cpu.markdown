@@ -15,7 +15,7 @@ category: resource
 
 另一方面，如果孤注一掷把所有的资本都用来发展新制程，则风险太大，一旦研发失败公司就完蛋了。
 
-摩尔发现当时市场上成功的半导体厂商的制程进化速度大约是每年半导体芯片上集成的晶体管数量翻倍，于是写了著名的论文告诉大家这个发展速度是成本与风险之间一个良好的折中，半导体业以后发展可以按照这个速度来。
+摩尔发现当时市场上成功的半导体厂商的制程进化速度大约是每年半导体芯片上集成的晶体管数量翻倍，于是写了著名的论文告诉大家这个发展速度是成本与风险之间一个良好的折中，半导体业以后发展可以按照这个速度来。（Moore’s Law）
 
 芯片的成本包括NRE成本（Non-Recurring Engineering，指芯片设计和掩膜制作成本，对于一块芯片而言这些成本是一次性的）和制造成本（即每块芯片制造的成本）。
 
@@ -39,6 +39,8 @@ https://mp.weixin.qq.com/s/TmLSHVkeyqfU-9Jgir0czA
 
 摩尔定律究竟死没死
 
+----
+
 ![](/images/img3/IC_process_3.jpg)
 
 https://www.zhihu.com/question/290382241
@@ -49,19 +51,35 @@ https://www.zhihu.com/question/290382241
 
 ![](/images/img2/Makimoto-Wave.jpg)
 
+Makimoto’s Waves
+
 >Tsugio Makimoto（牧本次生），IEEE Robert N. Noyce Medal（2018）。曾任索尼CTO。半导体工业从NMOS到CMOS演进的先驱。
 
-![](/images/img3/broadcom.jpg)
-
 ----
+
+MOSFET device scaling principles，又称为Dennard缩放比例定律（Dennard scaling, 1974）表明，随着晶体管变得越来越小，它们的功率密度保持不变，因此功率的使用与面积成比例；电压和电流的规模与长度成比例。
+
+Dennard scaling是Moore’s Law的物理基础，而后者仅仅是个行业规律而已。
 
 https://mp.weixin.qq.com/s/7kRePPUk_Xat8-7PsAO5XQ
 
 晶体管逐渐变小，Dennard定律比摩尔定律更值得关注，散热和功耗推动芯片专业化
 
+PPA（Power-Performance-Area）
+
+>Robert H. Dennard，1932年生，Southern Methodist University本科（1954）+硕士（1956）+CMU博士（1958）。IBM研究员，DRAM发明者。美国工程院院士，IEEE Fellow。
+
+https://www.yicai.com/news/100419064.html
+
+科技创新里程碑：IBM科学家Robert H. Dennard与改变世界的芯片
+
 ----
 
-PPA（Power-Performance-Area）
+![](/images/img4/bell_law.png)
+
+Bell's law of computer classes（1972）：计算机每10年产生新一代，其设备或用户数增加10倍。
+
+>C. Gordon Bell，1934年生，MIT本科（1956）+硕士（1957）。DEC公司的技术灵魂人物（1958～1983），DEC创始人Kenneth Olsen的学弟和创业团队成员。
 
 # CPU
 
@@ -326,23 +344,3 @@ AMD YES！背后不为人知的故事
 https://mp.weixin.qq.com/s/EfjhstpXsl6sG9q_-qQjXQ
 
 世界半导体集成电路发展史
-
-## AVX
-
-MMX直接使用了80bit的FPU寄存器中的64bit，对CPU整个流水线几乎没有影响；SSE的128bit相比80bit增加了48bit宽度还算可以接受。AVX的256bit，整个CPU的数据通道比80bit增加了三倍多，需要消耗三倍的晶体管，功率也增加了三倍。因此在严格限定功耗的场景如笔记本或者服务器中，CPU运行AVX应用时需要降低频率从而降低功耗。
-
-参考：
-
-https://www.zhihu.com/question/406517759
-
-如何看待Linus Torvalds对AVX512的评价？
-
-## Cache
-
-Cache本质上是一块小而快的存储设备和另一块大而慢的存储设备之间的协作关系。
-
-Cache分为硬件Cache和软件Cache两种，这里只讨论前者。后者参见《数据库（一）》。
-
-![](/images/img4/Mem_Gap.png)
-
-上图展示了CPU和DRAM之间的速度增长的差异，这个差异通常被称为Memory Gap。1980年代以前的计算机是没有Cache的，但是随着Memory Gap的增大，Cache的级数也不断增多，目前3级片上Cache+1级片外Cache已经是标配了。

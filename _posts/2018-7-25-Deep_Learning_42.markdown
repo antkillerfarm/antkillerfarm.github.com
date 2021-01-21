@@ -223,10 +223,6 @@ https://zhuanlan.zhihu.com/p/39512000
 
 Noise2Noise：图像降噪，无需干净样本
 
-https://mp.weixin.qq.com/s/_tvOQPvybqmvLF19kHcbFg
-
-北大开源ECCV2018深度去雨算法：RESCAN
-
 https://mp.weixin.qq.com/s/Wdxkvlz4nLbJS_gWqHwMjw
 
 无需额外硬件，全卷积网络让机器学习学会夜视能力

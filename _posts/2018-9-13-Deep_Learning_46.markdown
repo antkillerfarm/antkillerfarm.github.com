@@ -65,14 +65,6 @@ https://mp.weixin.qq.com/s/H8ECjqEcIjcm5YNFu6ONdw
 
 开源OCR文本检测器，基于TextBoxes++和RetinaNet
 
-https://mp.weixin.qq.com/s/YoqFYLFSRcCXvbrpCsyImA
-
-基于形状匹配对抗式生成网络的可控艺术字体风格迁移
-
-https://mp.weixin.qq.com/s/I5WfG2aCMakao3IF30rLGg
-
-TET-GAN: 文字效果迁移与文字风格化和去风格化
-
 https://mp.weixin.qq.com/s/CwLN2SRyN7RTEFtNx3u8Pg
 
 基于图卷积网络的视觉富文本数据中文档图像信息抽取

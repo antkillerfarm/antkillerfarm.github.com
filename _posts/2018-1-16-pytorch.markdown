@@ -142,7 +142,10 @@ Pytorch目前已经和Caffe2合并，所以相关op的代码在caffe2/operators�
 caffe2/operators/conv_op_impl.h: ConvGradientOp::RunOnDeviceWithOrderNCHW
 caffe2/utils/math.h: Gemm
 caffe2/utils/math_cpu.cc: Gemm
-cblas_sgemm
+Eigen or cblas_sgemm
+
+// calc the cost of ConvGradient
+caffe2/operators/conv_gradient_op.cc: CostInferenceForConvGradient
 ```
 
 ### 参考

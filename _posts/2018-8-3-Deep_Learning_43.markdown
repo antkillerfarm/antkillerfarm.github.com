@@ -261,6 +261,10 @@ https://mp.weixin.qq.com/s/O1pjer3BQkoLdvIMNUUoXA
 
 图像生成都有哪些核心技术，如何对其进行长期深入学习
 
+https://mp.weixin.qq.com/s/FSRwIAwTBZUsT1GVPglZkA
+
+深度学习换脸算法都有哪些？
+
 ## 艺术字
 
 https://mp.weixin.qq.com/s/-ZudmG9-qEPaWOu--Hd6SQ
@@ -278,6 +282,18 @@ DynTypo: 基于样例的动态文本特效迁移
 https://mp.weixin.qq.com/s/FWBYNBlSwj-adjcgXMk3XA
 
 ShapeMatchingGAN：打造炫酷动态的艺术字
+
+https://mp.weixin.qq.com/s/PVM7wMsT6TpJkQUlt7d2Aw
+
+用风格迁移搞事情！超越艺术字：卷积神经网络打造最美汉字
+
+https://mp.weixin.qq.com/s/YoqFYLFSRcCXvbrpCsyImA
+
+基于形状匹配对抗式生成网络的可控艺术字体风格迁移
+
+https://mp.weixin.qq.com/s/I5WfG2aCMakao3IF30rLGg
+
+TET-GAN: 文字效果迁移与文字风格化和去风格化
 
 ## 图像去噪
 
@@ -309,72 +325,44 @@ https://mp.weixin.qq.com/s/Jk6PlRBYorLI5FSa5xxOkw
 
 首个硬件资源受限下数据不均匀的图像去噪网络：BRDNet，代码已开源
 
-## 参考
+## 去雨去雾
 
-https://mp.weixin.qq.com/s/YbRo7TJ3j4dloSmKX40uAA
+http://coderskychen.cn/2015/12/11/%E6%9A%97%E9%80%9A%E9%81%93%E5%8E%BB%E9%9B%BE%E7%AE%97%E6%B3%95%E7%9A%84C-%E5%AE%9E%E7%8E%B0%E4%B8%8E%E4%BC%98%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89/
 
-Image-to-Image的论文汇总
+暗通道去雾算法的C++实现与优化（一）
 
-https://mp.weixin.qq.com/s/88tBoAVziGEFXIGfvZZp8g
+http://coderskychen.cn/2015/12/11/%E6%9A%97%E9%80%9A%E9%81%93%E5%8E%BB%E9%9B%BE%E7%AE%97%E6%B3%95%E7%9A%84C-%E5%AE%9E%E7%8E%B0%E4%B8%8E%E4%BC%98%E5%8C%96%EF%BC%88%E4%BA%8C%EF%BC%89/
 
-深度学习图像处理项目集锦：生成可爱的动漫头像，骡子变斑马等入选
+暗通道去雾算法的C++实现与优化（二）
 
-https://mp.weixin.qq.com/s/iV-OXiKF1jgAhSmX4QUIXw
+这两篇blog介绍了何恺明的成名之作。
 
-综述：图像风格化算法最全盘点
-
-https://mp.weixin.qq.com/s/eqI5fVuF68RQWb1a5O219w
-
-腾讯研发“一键卸妆” ,让女神秒变路人!
-
-https://mp.weixin.qq.com/s/73mkWlqJsVdu9m1kPDvfbQ
-
-用AI让静图变动图：CVPR热文提出动态纹理合成新方法
-
-https://mp.weixin.qq.com/s/gEFzogsteK_1VeywbQxbgQ
-
-(GAN)延时摄影视频的生成
-
-https://mp.weixin.qq.com/s/97Uj-ATLToy1bNhnSUO8Jw
-
-非监督任意姿势人体图像合成
-
-https://mp.weixin.qq.com/s/cfw8mRsmzE1lU8PRM8UC0w
-
-秒变莫扎特、贝多芬，Facebook提出完美转换音乐风格的神经网络
-
-https://mp.weixin.qq.com/s/TiXILy4l6Q3dxVwapyd9KQ
-
-二维码太丑？用风格迁移生成个性二维码了解一下
-
-https://mp.weixin.qq.com/s/RMz5fwt72j2ufrGpdD6POw
-
-带自注意力机制的生成对抗网络，实现效果怎样？
-
-https://mp.weixin.qq.com/s/PVM7wMsT6TpJkQUlt7d2Aw
-
-用风格迁移搞事情！超越艺术字：卷积神经网络打造最美汉字
-
-https://mp.weixin.qq.com/s/lPzPfjYiAsNvVcVWdL08dA
-
-照片闭眼也无妨，Facebook黑科技完美补全大眼睛
-
-https://mp.weixin.qq.com/s/h-mp7_oO9aZ1yYxiJMLziQ
-
-作画、写诗、弹曲子，AI还能这么玩？
-
-https://mp.weixin.qq.com/s/txJAnu4FOOjmLhbtGTM-BQ
-
-还敢吹“毫无PS痕迹”？小心被Adobe官方AI打脸
+----
 
 https://mp.weixin.qq.com/s/a1Qg1Hl5NMvEJPXhJR-2BA
 
 效果惊艳！北大团队提出Attentive GAN去除图像中雨滴
 
-https://mp.weixin.qq.com/s/iK7XR0tHV_dE0p1grNQIHw
+https://xyang35.github.io/2017/08/20/paper-2/
 
-只需一张照片，运动视频分分钟伪造出来
+图像去雾算法专题
 
-https://mp.weixin.qq.com/s/-j4p7nUF-rCGk6yK0nccvw
+https://mp.weixin.qq.com/s/6L328q9nR7XEYeKdFH3xpQ
 
-机器人也会画漫画
+CVPR 2020 论文大盘点-去雨去雾去模糊篇
+
+https://mp.weixin.qq.com/s/B8LU892NA7Pz7-HjI58LWg
+
+Python还能实现图片去雾？FFA去雾算法、暗通道去雾算法用起来！
+
+https://mp.weixin.qq.com/s/34HxF5qCulGd1zyATH7ZuA
+
+将U-Net用于图像去雾任务，一种具有密集特征融合的多尺度增强去雾网络
+
+https://mp.weixin.qq.com/s/_tvOQPvybqmvLF19kHcbFg
+
+北大开源ECCV2018深度去雨算法：RESCAN
+
+https://mp.weixin.qq.com/s/TKhE0DyBcXdujsPsED9eDA
+
+6ms的EfficientDeRain：颇具启发的简单高效去雨算法

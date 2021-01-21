@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  区块链参考资源, 超算
+title:  区块链参考资源, 超算, Conv计算量分析
 category: resource 
 ---
 
@@ -296,3 +296,91 @@ https://mp.weixin.qq.com/s/gJWTiMCovGMQ8ye_TovdOw
 https://www.zhihu.com/question/404217836
 
 如何看待全球超级计算机TOP 500榜单日本登顶，中国跌出前三？近年中国超算发展现状如何？
+
+# Conv计算量分析
+
+I: Input
+
+O: Output
+
+K: Kernel
+
+c: Channel
+
+h: Height
+
+w: Width
+
+forward:
+
+$$O = I * K$$
+
+filter gradient:
+
+因为Conv是不可交换群，所以：
+
+$$I' \star O = (I' \star I) * K$$
+
+I'是I的逆元。
+
+$$K = I' \star O$$
+
+input gradient:
+
+$$O \bullet K = I * (K \bullet K')$$
+
+$$I = O \bullet K'$$
+
+如果是FC运算的话，则上述所有二元运算符退化为矩阵乘法，I'为转置运算。
+
+## forward
+
+single point:
+
+$$I_c \times K_h \times K_w \times 2$$
+
+point number:
+
+$$O_c \times O_h \times O_w$$
+
+all:
+
+$$(O_c \times O_h \times O_w) \times (I_c \times K_h \times K_w \times 2)$$
+
+## backward
+
+- filter gradient
+
+single point:
+
+$$O_h \times O_w \times 2$$
+
+point number:
+
+$$I_c \times O_c \times K_h \times K_w$$
+
+all:
+
+$$(I_c \times O_c \times K_h \times K_w) \times (O_h \times O_w \times 2)$$
+
+- input gradient
+
+single point:
+
+$$O_h \times O_w \times K_h \times K_w \times 2$$
+
+point number:
+
+$$I_c$$
+
+all:
+
+$$(I_c) \times (O_h \times O_w \times K_h \times K_w \times 2)$$
+
+## 参数对计算量的影响
+
+pad/stride/dilation改变$$O_h,O_w$$。
+
+group改变$$K_o, O_c$$。
+
+multiplier改变$$O_c$$，但不改变$$K_o$$，计算量不变，IO增加N倍。所以将上述公式的$$O_c$$改为$$K_o$$即可满足所有情况。

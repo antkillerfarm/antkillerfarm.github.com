@@ -57,6 +57,10 @@ https://zhuanlan.zhihu.com/p/37706726
 
 VGG论文笔记
 
+https://zhuanlan.zhihu.com/p/344324470
+
+RepVGG：极简架构，SOTA性能，让VGG式模型再次伟大
+
 ## GoogleNet
 
 GoogleNet的进化道路和VGG有所不同。VGG实际上就是“大力出奇迹”的暴力模型，其他地方不足称道。

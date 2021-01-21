@@ -105,7 +105,7 @@ https://mp.weixin.qq.com/s/z4OEPrAAtaNmBQoyvEd7Nw
 
 ![](/images/img3/tf32.png)
 
-这是Nvidia推出的格式，有BF16珠玉在前，这个的设计只能说中规中矩了。
+这是Nvidia推出的格式，相当于把FP32的指数和FP16的底数拼到了一起。有BF16珠玉在前，这个的设计只能说中规中矩了。
 
 优点：底数精度虽然不如Dynamic Range重要，但对于运算结果还是有一定的影响的。这点在CNN中不太显著，但在RNN/Transformer中还是有所体现的。
 
@@ -120,6 +120,42 @@ https://mp.weixin.qq.com/s/cGKtvtZzR--sGL4oNSZfAw
 https://zhuanlan.zhihu.com/p/143499632
 
 NVIDIA A100 GPU中的TF32将AI训练与HPC速度提升20倍
+
+## Posit
+
+![](/images/img4/Posit.png)
+
+上图是Posit格式的示意图，除了符号位、指数和底数之外，它还包括了regime bits。
+
+regime bits不知道怎么翻译，这里不妨意译为**超指数**。它的公式是：
+
+$$useed^k$$
+
+其中，
+
+$$useed=2^{2^{es}}$$
+
+es表示指数位的宽度，这里是3，所以$$useed=2^{2^{3}}=2^8=256$$
+
+k的表示没有采用补码，而是一种特殊的方法：
+
+![](/images/img4/Posit_2.png)
+
+k=从左面开始数0或者1的个数。
+
+需要注意的是，同样总位宽的Posit格式，其每个部分（符号位除外，固定占1位）的宽度是不定的。除了regime bits是必须有的（但宽度不定）之外，指数和底数都是可选项。
+
+Posit的设计思路其实是很自然的：
+
+- 底数增加1位，Dynamic Range增加2倍。
+
+- 指数增加1位，Dynamic Range增加$$2^2$$倍。
+
+- 如果还想增加Dynamic Range，自然就需要引入超指数了。
+
+https://www.sigarch.org/posit-a-potential-replacement-for-ieee-754
+
+Posit: A Potential Replacement for IEEE 754
 
 ## Saturate Quantization
 
@@ -300,43 +336,3 @@ https://mp.weixin.qq.com/s/xIbF3rNv2mC2G4RBDhIvJQ
 https://zhuanlan.zhihu.com/p/128018221
 
 8比特数值也能训练模型？商汤提出训练加速新算法
-
-https://zhuanlan.zhihu.com/p/132561405
-
-模型量化了解一下？
-
-https://mp.weixin.qq.com/s/xnszH9WSKGBwqtHUuYua1g
-
-混合精度训练，提速，减内存
-
-https://mp.weixin.qq.com/s/YImszcJDsvw5ygo2wCj3Hw
-
-模型量化的核心技术点有哪些，如何对其进行长期深入学习
-
-https://mp.weixin.qq.com/s/bK0n9u6DIl4SY7mxS8CVRw
-
-模型量化技术原理及其发展现状和展望
-
-https://zhuanlan.zhihu.com/p/223018242
-
-NNIE量化算法及实现
-
-https://zhuanlan.zhihu.com/p/79744430
-
-Tensorflow模型量化(Quantization)原理及其实现方法
-
-# 模型压缩与加速
-
-对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。
-
-此外，对于一些较大的模型（如VGG），即使机器再给力，单位时间内能处理的图像数量，往往也无法达到实际应用的要求。这点在自动驾驶和视频处理领域显得尤为突出。
-
-## 课程
-
-https://cs217.github.io/
-
-CS 217: Hardware Accelerators for Machine
-
-https://mp.weixin.qq.com/s/RcEPWRxQXv6B4wqLHGyQHg
-
-深度神经网络的高效处理:从算法到硬件架构，140页ppt
