@@ -295,7 +295,15 @@ https://mp.weixin.qq.com/s/xgCtgEMRZ1VgzRZWjYIjTQ
 
 ![](/images/article/conv.png)
 
+![](/images/img4/im2col.jpg)
+
 这种将卷积运算变为矩阵乘法运算的方法，一般被称为GEMM（General Matrix Matrix multiplication）。因为卷积变为矩阵这一步运算在Caffe中是用im2col函数实现的，因此，也有使用im2col来指代这类方法的。
+
+要点L：
+
+- forward的时候，只有input需要im2col。
+
+- backward的时候，先算好input_grad，再col2im将之变换到input的形状即可。
 
 和GEMM类似的还有GEMV（General Matrix Vector multiplication）。
 
@@ -312,6 +320,10 @@ https://www.zhihu.com/question/28385679
 https://buptldy.github.io/2016/10/01/2016-10-01-im2col/
 
 Implementing convolution as a matrix multiplication（中文blog）
+
+https://zhuanlan.zhihu.com/p/63974249
+
+im2col方法实现卷积算法
 
 https://zhuanlan.zhihu.com/p/66958390
 

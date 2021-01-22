@@ -367,15 +367,15 @@ $$(I_c \times O_c \times K_h \times K_w) \times (O_h \times O_w \times 2)$$
 
 single point:
 
-$$O_h \times O_w \times K_h \times K_w \times 2$$
+$$K_h \times K_w \times 2$$
 
 point number:
 
-$$I_c$$
+$$I_c \times O_c \times O_h \times O_w$$
 
 all:
 
-$$(I_c) \times (O_h \times O_w \times K_h \times K_w \times 2)$$
+$$(I_c \times O_c \times O_h \times O_w) \times (K_h \times K_w \times 2)$$
 
 ## 参数对计算量的影响
 

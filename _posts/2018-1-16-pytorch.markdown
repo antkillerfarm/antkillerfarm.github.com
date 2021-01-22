@@ -146,6 +146,8 @@ Eigen or cblas_sgemm
 
 // calc the cost of ConvGradient
 caffe2/operators/conv_gradient_op.cc: CostInferenceForConvGradient
+// cuDNN
+cudnnGetConvolutionBackwardDataAlgorithm_v7
 ```
 
 ### 参考

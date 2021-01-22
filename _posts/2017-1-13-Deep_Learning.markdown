@@ -251,3 +251,7 @@ https://zhuanlan.zhihu.com/p/25202034
 https://mp.weixin.qq.com/s/Ub3CMQszkx7pGKoPcB0bYA
 
 BP反向传播矩阵推导图示详解​
+
+https://tech.zealscott.com/deeplearning/11-785/lecture12/
+
+Back propagation through a CNN
