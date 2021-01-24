@@ -269,6 +269,10 @@ https://zhuanlan.zhihu.com/p/36745755
 
 卡尔曼滤波：从入门到精通
 
+https://zhuanlan.zhihu.com/p/338269917
+
+从全状态观测器到卡尔曼滤波器
+
 # Loss function详解+
 
 https://mp.weixin.qq.com/s/CPfhGxig9BMAgimBSOLy3g
