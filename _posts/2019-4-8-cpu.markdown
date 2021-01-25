@@ -81,6 +81,10 @@ Bell's law of computer classes（1972）：计算机每10年产生新一代，�
 
 >C. Gordon Bell，1934年生，MIT本科（1956）+硕士（1957）。DEC公司的技术灵魂人物（1958～1983），DEC创始人Kenneth Olsen的学弟和创业团队成员。
 
+https://www.zhihu.com/question/20809971
+
+多核之后，CPU的发展方向是什么？
+
 # CPU
 
 ## 行业

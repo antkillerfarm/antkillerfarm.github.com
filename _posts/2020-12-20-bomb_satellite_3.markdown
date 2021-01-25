@@ -110,3 +110,11 @@ https://mp.weixin.qq.com/s/nwVRBs06zAAyyvROClGE2g
 https://mp.weixin.qq.com/s/K39R4LqZ3Cy79__c0MVN6A
 
 丁仲礼怒怼央视女主持
+
+----
+
+江北的津浦铁路（通车于1912年），江南的沪宁铁路（通车于1908年），在此被宽广的长江割开。美国桥梁专家华特尔曾来此勘测，得出的结论是，“水深流急，不宜建桥。”
+
+http://news.cnr.cn/native/gd/20190925/t20190925_524793336.shtml
+
+就是这座大桥，给咱中国人争了气！

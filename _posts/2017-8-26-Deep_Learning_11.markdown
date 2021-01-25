@@ -253,6 +253,10 @@ http://deeplearning.net/software/theano_versions/dev/tutorial/conv_arithmetic.ht
 
 Convolution arithmetic
 
+https://www.jarvis73.com/2019/06/06/Convolution-Guide/
+
+Convolution Arithmetic for Deep Learning
+
 https://mp.weixin.qq.com/s/dR2nhGqpz7OdmxKPYSaaxw
 
 如何理解空洞卷积（dilated convolution）？

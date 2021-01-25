@@ -149,9 +149,9 @@ https://mp.weixin.qq.com/s/fcCS4qDKdGBSKnA_SaYmZA
 
 你不知道的Softmax
 
-https://zhuanlan.zhihu.com/p/79585726
+https://www.cnblogs.com/geekfx/p/14192158.html
 
-浅谈Softmax函数
+关于Softmax回归的反向传播求导数过程
 
 ## Softmax loss
 

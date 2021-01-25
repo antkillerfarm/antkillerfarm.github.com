@@ -249,6 +249,10 @@ https://mp.weixin.qq.com/s/Stk7U44trzqGjnXKsVd_3g
 
 掌握pandas中的时序数据分组运算
 
+https://mp.weixin.qq.com/s/KBTBj5L0GNBOn0_YBYYx0w
+
+pandas数据处理
+
 ## Super Pandas
 
 https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw

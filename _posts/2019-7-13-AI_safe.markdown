@@ -269,6 +269,10 @@ https://mp.weixin.qq.com/s/rAxQhqFLUJn2gNAaFYqyTg
 
 基于一种改进的Wide&Deep文本分类在用户身份识别上的实践
 
+https://mp.weixin.qq.com/s/r609z6-jhyJIk8EwcEWmEg
+
+文本预训练模型在信息安全场景的探索和实践
+
 # 硬件
 
 https://mp.weixin.qq.com/s/ZexnsNmqsD2yq-7YNASohw
