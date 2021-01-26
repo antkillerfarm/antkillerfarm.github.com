@@ -15,6 +15,8 @@ LaTeX是TeX的扩展包，用于书写数学公式。它的官网是：
 
 http://www.latex-project.org/
 
+## MathJax
+
 MathJax是一个JavaScript包，可以将LaTeX书写的数学公式转换成HTML。它的官网是：
 
 https://www.mathjax.org/
@@ -58,6 +60,14 @@ https://github.com/antkillerfarm/antkillerfarm.github.com/blob/master/_layouts/d
 https://chrisyeh96.github.io/2020/03/29/mathjax3.html
 
 Painful Upgrade to MathJax 3
+
+## KaTeX
+
+KaTeX是另一个LaTeX渲染引擎，速度比MathJax快，但是功能有限。
+
+https://katex.org/docs/supported.html
+
+这是KaTeX支持的操作的列表，也是一个很好的LaTeX手册。
 
 ## 示例
 

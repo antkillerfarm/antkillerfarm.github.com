@@ -101,7 +101,7 @@ Softmax的损失函数是cross entropy loss function：
 
 $$\xi(X, Y) = \sum_{i=1}^n \xi(\textbf{t}_i, \textbf{y}_i) = - \sum_{i=1}^n \sum_{i=c}^C t_{ic} \cdot \log(y_{ic})$$
 
-Softmax的反向传播算法：
+Softmax + cross entropy loss function的反向传播算法：
 
 $$\begin{align}
 \dfrac{\partial\xi}{\partial z_i} &= - \sum_{j=1}^C \dfrac{\partial t_j \log(y_j)}{\partial z_i} \\
@@ -115,6 +115,12 @@ $$\begin{align}
 &= y_i - t_i
 \end{align}$$
 
+但是遗憾的是，由于Loss中可能存在正则项，直接用这个的机会并不多。
+
+常用的还是Softmax自己的反向传播算法：
+
+$$\nabla e_{(x)} = \nabla e_{(s)} \begin{pmatrix} -s_{1}s_{1} + s_{1} & -s_{1}s_{2} & \cdots & -s_{1}s_{k} \\ -s_{2}s_{1} & -s_{2}s_{2} + s_{2} & \cdots & -s_{2}s_{k} \\ \vdots & \vdots & \ddots & \vdots \\ -s_{k}s_{1} & -s_{k}s_{2} & \cdots & -s_{k}s_{k} + s_{k} \end{pmatrix}$$
+
 参考：
 
 https://mp.weixin.qq.com/s/2xYgaeLlmmUfxiHCbCa8dQ
@@ -124,6 +130,10 @@ softmax函数计算时候为什么要减去一个最大值？
 http://shuokay.com/2016/07/20/softmax-loss/
 
 Softmax输出及其反向传播推导
+
+https://blog.csdn.net/oBrightLamp/article/details/83959185
+
+softmax函数详解及误差反向传播的梯度求导。这哥们的blog专讲各种op的反向传播。
 
 https://mp.weixin.qq.com/s/HTIgKm8HuZZ_-lIQ3nIFhQ
 
@@ -263,35 +273,3 @@ triplet loss在深度学习中主要应用在什么地方？有什么明显的�
 https://mp.weixin.qq.com/s/XB9VsW3NRwHua6AdRL3n8w
 
 Lossless Triplet Loss:一种高效的Siamese网络损失函数
-
-https://gehaocool.github.io/2018/03/20/Angular-Margin-%E5%9C%A8%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/
-
-Angular Margin在人脸识别中的应用
-
-https://mp.weixin.qq.com/s/SqaR_7gwJpUNPM7g4IHaYw
-
-深度人脸识别中不同损失函数的性能对比
-
-https://zhuanlan.zhihu.com/p/138850070
-
-从Triplet loss看推荐系统中文章Embedding
-
-https://mp.weixin.qq.com/s/tpI5k5sg15WHGv3YoMp-rA
-
-​Triplet-loss原理与应用
-
-https://zhuanlan.zhihu.com/p/295512971
-
-完全解析triplet loss
-
-## Coupled Cluster Loss
-
-论文：
-
-《Deep Relative Distance Learning: Tell the Difference Between Similar Vehicles》
-
-参考：
-
-https://blog.csdn.net/u010167269/article/details/51783446
-
-论文中文笔记

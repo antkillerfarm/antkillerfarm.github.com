@@ -7,7 +7,41 @@ category: ML
 * toc
 {:toc}
 
-# Loss function详解（续）
+# Loss function详解
+
+## Triplet Loss（续）
+
+https://gehaocool.github.io/2018/03/20/Angular-Margin-%E5%9C%A8%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/
+
+Angular Margin在人脸识别中的应用
+
+https://mp.weixin.qq.com/s/SqaR_7gwJpUNPM7g4IHaYw
+
+深度人脸识别中不同损失函数的性能对比
+
+https://zhuanlan.zhihu.com/p/138850070
+
+从Triplet loss看推荐系统中文章Embedding
+
+https://mp.weixin.qq.com/s/tpI5k5sg15WHGv3YoMp-rA
+
+​Triplet-loss原理与应用
+
+https://zhuanlan.zhihu.com/p/295512971
+
+完全解析triplet loss
+
+## Coupled Cluster Loss
+
+论文：
+
+《Deep Relative Distance Learning: Tell the Difference Between Similar Vehicles》
+
+参考：
+
+https://blog.csdn.net/u010167269/article/details/51783446
+
+论文中文笔记
 
 ## Focal Loss
 
@@ -62,48 +96,6 @@ https://mp.weixin.qq.com/s/is8veFCOPpJDXA2okn7pNA
 https://zhuanlan.zhihu.com/p/324613604
 
 用概率分布评估检测框质量的Generalized Focal Loss V2
-
-## Other Loss
-
-https://mp.weixin.qq.com/s/7Jg-YvS3nvcPJ-zYhK96EA
-
-分享神经网络中设计loss function的一些技巧
-
-https://mp.weixin.qq.com/s/cYcztl8N9JF-XXp9xLJIxg
-
-一文道尽softmax loss及其变种
-
-https://mp.weixin.qq.com/s/MTeuRYutMiCmthEAObyAIg
-
-从最优化的角度看待Softmax损失函数
-
-https://zhuanlan.zhihu.com/p/23340343
-
-Center Loss及其在人脸识别中的应用
-
-https://zhuanlan.zhihu.com/p/34404607
-
-人脸识别的LOSS（上）
-
-https://zhuanlan.zhihu.com/p/34436551
-
-人脸识别的LOSS（下）
-
-https://mp.weixin.qq.com/s/kI22wSoyNT3QXXI8pVwbjA
-
-腾讯AI Lab提出新型损失函数LMCL：可显著增强人脸识别模型的判别能力
-
-https://mp.weixin.qq.com/s/8KM7wUg_lnFBd0fIoczTHQ
-
-用收缩损失(Shrinkage Loss)进行深度回归跟踪
-
-https://mp.weixin.qq.com/s/piYyhPbA6kAXuSE5yHfQ1g
-
-人脸识别损失函数综述
-
-https://zhuanlan.zhihu.com/p/60747096
-
-人脸识别损失函数简介与Pytorch实现：ArcFace、SphereFace、CosFace
 
 ## 参考
 

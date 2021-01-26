@@ -393,6 +393,10 @@ Gerrit，一种免费、开放源代码的代码审查软件，它使用Git作�
 
 https://www.gerritcodereview.com/
 
+### GitLab self-managed
+
+GitLab self-managed是GitLab出品的本地Git Server。
+
 ## Git多项目管理
 
 项目越来越大，一些通用的模块我们希望将他抽离出来作为单独的项目，以便其他项目也可以使用，或者使用一些第三方库，可能我们并不想将代码直接拷贝进我们的项目里面，而仅仅只是单纯的引用。
