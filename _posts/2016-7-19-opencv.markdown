@@ -287,6 +287,10 @@ https://mp.weixin.qq.com/s/LAqomHKhyc6nkr6d5OxyHw
 
 生成自定义二维码，5行Python代码就搞定
 
+https://mp.weixin.qq.com/s/nu7eKp8kSRdJ0uEKgxA5pw
+
+基于OpenCV的条形码检测
+
 ## 参考
 
 https://mp.weixin.qq.com/s/R2kGr7NHorfnpHV9OD18Qw

@@ -101,6 +101,10 @@ https://zhuanlan.zhihu.com/p/28445511
 
 浅析深度学习框架设计中的关键技术
 
+https://mp.weixin.qq.com/s/wu32LBwrkkBIANMdknHlCA
+
+C++并行实战，592页pdf，C++ Concurrency in Action
+
 https://www.zhihu.com/question/57799212
 
 ring allreduce和tree allreduce的具体区别是什么？

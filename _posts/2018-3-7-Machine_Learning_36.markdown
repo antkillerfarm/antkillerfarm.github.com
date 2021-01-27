@@ -277,6 +277,10 @@ https://mp.weixin.qq.com/s/_y16bW-afo9gOI5ObMBRYQ
 
 Kaggle神器LightGBM最全解读！
 
+https://mp.weixin.qq.com/s/A3b2L_0-atm5jJslhr50Bg
+
+最新LightGBM进展介绍报告，39页ppt
+
 # CatBoost
 
 这是Yandex推出的Boost工具包。

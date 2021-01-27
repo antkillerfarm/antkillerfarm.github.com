@@ -7,9 +7,39 @@ category: AI
 * toc
 {:toc}
 
-# TensorFlow
+# Eigen
 
-## TensorFlow高层封装（续）
+Eigen是一个线性代数方面的C++模板库。tensorflow和caffe2都使用了这个库。
+
+官网：
+
+http://eigen.tuxfamily.org/
+
+使用Eigen也比较简单，无须link，只要引用相关头文件即可。
+
+参见：
+
+https://zhuanlan.zhihu.com/p/26512099
+
+tensorflow和caffe2
+
+# TensorFlow高层封装
+
+目前对TensorFlow的封装如下所示：
+
+1.TensorFlow-Slim。主要提供了层一级的封装。粒度和OpenVX类似。
+
+2.tf.contrib.learn（之前也被称为skflow）。提供了类似sklearn的接口。
+
+前2个是TensorFlow自带的封装
+
+3.第三个是TFLearn。在tf.contrib.learn上的封装。需单独安装：
+
+`sudo pip install tflearn`
+
+http://tflearn.org/
+
+4.Keras。
 
 5.TensorLayer。这个的封装粒度介于TensorFlow-Slim和TFLearn之间。
 
@@ -31,7 +61,7 @@ http://www.infoq.com/cn/articles/introduction-of-tensorflow-part06
 
 深入浅出TensorFlow（六）TensorFlow高层封装
 
-## Slim
+# Slim
 
 代码：
 
@@ -53,7 +83,7 @@ tf-slim-mnist例子中mnist数据不是原始格式的，而是经过了`dataset
 
 该示例执行时也没有控制台的输出信息，一度让我觉得很不方便。后来才发现，原来可以用TensorBoard查看log文件夹。
 
-## TensorBoard
+# TensorBoard
 
 TensorBoard是一个http服务，用以监控TensorFlow的执行。
 
@@ -101,7 +131,7 @@ https://mp.weixin.qq.com/s/5zfKiP9Fxpl7suqBQILL-g
 
 还在用Tensorboard？机器学习实验管理平台大盘点
 
-## 模型文件
+# 模型文件
 
 tensorflow model包含2个文件：
 
@@ -121,7 +151,7 @@ mymodel.index
 
 tensorflow还有一个叫checkpoint的文件，用来简单保存最近一次的checkpoint记录。
 
-### 保存模型
+## 保存模型
 
 ```python
 w1 = tf.Variable(tf.random_normal(shape=[2]), name='w1')
@@ -132,7 +162,7 @@ sess.run(tf.global_variables_initializer())
 saver.save(sess, 'my_test_model')
 ```
 
-### 加载模型
+## 加载模型
 
 ```python
 new_saver = tf.train.import_meta_graph('my_test_model-1000.meta')
@@ -153,7 +183,7 @@ https://mp.weixin.qq.com/s/3GfxnwzIeeQj1LVSYKnZjQ
 
 如何保存和恢复TensorFlow训练的模型？
 
-## .pb文件
+# .pb文件
 
 TensorFlow常用的模型保存格式还有.pb格式。这种格式下，模型和权重被整合为一个.pb文件，便于模型的发布和部署。相对应的，这种格式对于train就不太友好了。
 
@@ -171,7 +201,7 @@ https://www.jianshu.com/p/c9fd5c01715e
 
 TensorFlow模型保存与恢复
 
-## 模型文件的图操作
+# 模型文件的图操作
 
 基本操作一般基于tf.Graph：
 
@@ -189,7 +219,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tenso
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tensorflow/graph/insert_print_node.py
 
-## TFRecord
+# TFRecord
 
 TFRecord是TensorFlow官方定义的存放样本数据文件。
 
@@ -203,7 +233,7 @@ https://zhuanlan.zhihu.com/p/27481108
 
 TensorFlow直接读取图片和读写TFRecords速度对比
 
-## 多核(multicore)，多线程(multi-thread)
+# 多核(multicore)，多线程(multi-thread)
 
 在Tensorflow程序中，我们会经常看到”with tf.device("/cpu:0"): “ 这个语句。单独使用这个语句，而不做其他限制，实际上默认tensorflow程序占用所有可以使用的内存资源和CPU核。
 
@@ -213,9 +243,9 @@ http://deepnlp.org/blog/tensorflow-parallelism/
 
 Tensorflow并行：多核(multicore)，多线程(multi-thread)
 
-## 控制流
+# 控制流
 
-### tf.cond
+## tf.cond
 
 ```python
 a=tf.constant(2)
@@ -228,7 +258,7 @@ with tf.Session() as session:
     print(result.eval())
 ```
 
-### tf.case
+## tf.case
 
 ```python
 decode_png = lambda :tf.image.decode_png(image_tensor, channels)
@@ -238,7 +268,7 @@ decoder = { tf.equal(image_ext, '.png'):  decode_png,
 image_tensor = tf.case(decoder, default = decode_png, exclusive = True)
 ```
 
-## 内存布局
+# 内存布局
 
 Tensorflow和Caffe的内存布局存在较大差异，这是两者模型转换时，最常遇到的问题。一般认为，Caffe的内存布局对卷积硬件加速更友好一些。
 
@@ -247,7 +277,7 @@ Tensorflow和Caffe的内存布局存在较大差异，这是两者模型转换�
 | Tensor | NHWC | NCHW |
 | Weight | HWIO | OIHW |
 
-## TFLite
+# TFLite
 
 官网：
 
@@ -347,7 +377,7 @@ https://mp.weixin.qq.com/s/6_yZPlKLYiWBRQFk5Y1OKA
 
 TensorFlow Lite微控制器
 
-## Android NN
+# Android NN
 
 TFLite是Google的Tensorflow团队开发的移动DL框架，它可以在任意系统（非android，甚至非linux）上执行。而Android NN则是Google的Android团队针对Android平台开发的DL框架。
 
@@ -368,31 +398,3 @@ Android NN的指南
 https://developer.arm.com/products/software/mali-drivers/android-nnapi
 
 这是ARM对于Android NN的一个实现。
-
-## Broadcast
-
-Broadcast是一种填充元素以使操作数的形状相匹配的操作。例如，对一个[3,2]的张量和一个[3,1]的张量相加在TF中是合法的，TF会使用默认的规则将[3,1]的张量填充为[3,2]的张量，从而使操作能够执行下去。
-
-参考：
-
-https://www.cnblogs.com/yangmang/p/7125458.html
-
-numpy数组广播
-
-https://blog.csdn.net/LoseInVain/article/details/78763303
-
-TensorFlow中的广播Broadcast机制
-
-## TensorFlow Serving
-
-TensorFlow Serving是一个用于机器学习模型serving的高性能开源库。它可以将训练好的机器学习模型部署到线上，使用gRPC作为接口接受外部调用。更加让人眼前一亮的是，它支持模型热更新与自动模型版本管理。
-
-代码：
-
-https://github.com/tensorflow/serving
-
-TensorFlow Serving实际上是TensorFlow Extended (TFX)的一部分：
-
-https://tensorflow.google.cn/tfx
-
-TFX还包括了Data Validation、Transform和Model Analysis等方面的功能。

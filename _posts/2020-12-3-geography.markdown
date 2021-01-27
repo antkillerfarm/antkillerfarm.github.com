@@ -284,3 +284,33 @@ https://wenku.baidu.com/view/209d2f8183d049649b665894.html
 https://mp.weixin.qq.com/s/cYa9uQSjtxgtJawhJ8WYcw
 
 古今取暖神器大赏：一场关于温度与风度的奋斗史
+
+https://mp.weixin.qq.com/s/wRgzQ43fxHkYCl2g5ei3Eg
+
+做环境毒理学挺焦虑的：做不出毒性，愁论文，做出毒性，又替地球担心
+
+# 物理+
+
+https://mp.weixin.qq.com/s/MhAvoZABHxJz17rxDXnVlw
+
+比起女孩子，他更喜欢爱因斯坦，这个最直男的科学家，把物理和数学搞了CP（Paul Dirac）
+
+https://mp.weixin.qq.com/s/GplYa0n5Rf9aCrDc4OSN-w
+
+诺奖得主小柴昌俊如何成功探测到中微子
+
+https://mp.weixin.qq.com/s/U-iDBqjEaJluKzlSkoXsSQ
+
+史上最低估自己的天才科学家！预言自己的发现无用，没想到影响全世界（Heinrich Rudolf Hertz）
+
+https://mp.weixin.qq.com/s/R__7gmP4upYPf1URBzTRug
+
+冬日里的“水货”：挨了冻，内心居然更膨胀了？
+
+https://mp.weixin.qq.com/s/XewqlwfrZ0GzrsloKzszFg
+
+自然界为何处处是六边形？
+
+https://mp.weixin.qq.com/s/R297R23Pun_RRy9LdSezKA
+
+灵魂之问，食物热量单位为什么是卡路里？

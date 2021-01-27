@@ -247,10 +247,6 @@ for i in tqdm(range(9)):
     ...
 ```
 
-效果：
-
-`76%|████████████████████            | 7641/10000 [00:34<00:10, 222.22 it/s]`
-
 其实还有一个更简单的办法：
 
 `print("\r" + "xxx", end="")`：这样的话会先把console里面当前的行清除掉、再输出xxx。
@@ -264,6 +260,10 @@ https://mp.weixin.qq.com/s/1YZ7-i3X8Cb2LYEuWtd1KA
 https://mp.weixin.qq.com/s/OVb4g1KzIsxgMKjJk_hG6A
 
 在Python中妥善使用进度条
+
+https://mp.weixin.qq.com/s/_rCg_uFD07eZw4QLtD-fzA
+
+Python竟然能做这样的进度条
 
 ## Captcha
 

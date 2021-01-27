@@ -149,29 +149,33 @@ https://zhuanlan.zhihu.com/p/96986818
 
 # CMake
 
-1. 添加头文件目录
+添加头文件目录
 
 `include_directories(../../../thirdparty/comm/include)`
 
-2. 添加需要链接的库文件目录
+添加需要链接的库文件目录
 
 `link_directories("/home/server/third/lib")`
 
-3. 查找库所在目录
+查找库所在目录
 
 `find_library(RUNTIME_LIB rt /usr/lib  /usr/local/lib NO_DEFAULT_PATH)`
 
-4. 添加需要链接的库文件路径
+添加需要链接的库文件路径
 
 `link_libraries(“/home/server/third/lib/libcommon.a”)`
 
-5. 设置要链接的库文件的名称
+设置要链接的库文件的名称
 
 `target_link_libraries(myProject libcomm.so)`
 
-6. 为工程生成目标文件
+为工程生成目标文件
 
 `add_executable(demo main.cpp)`
+
+下载文件
+
+`file(DOWNLOAD url file)`
 
 参考：
 

@@ -23,9 +23,35 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tenso
 
 第一个例子中，我对CPU的计算能力还没有切肤之痛，但在这里使用CPU差不多要花半个小时时间。。。
 
-# TensorFlow
+# TensorFlow Federated
 
-## Tensorflow 2.x
+TFF是一个开源框架，用于试验针对分散式数据的机器学习和其他计算。它采用的是一种名为联合学习(FL)的方法，许多参与的客户端能够训练共享的ML模型，同时将数据保存在本地。
+
+这个项目感觉上和Leela Zero有些相似。
+
+从原理上说，TFF主要使用了Federated Machine Learning技术。
+
+参考：
+
+https://mp.weixin.qq.com/s/K2-i3U-BCOctetMkvuvVxg
+
+TensorFlow Federated发布
+
+https://mp.weixin.qq.com/s/6QKyE3jIOwBK_2rcG-Vtiw
+
+联邦机器学习-概念与应用
+
+# Hama
+
+TensorFlow实际上是Google开发的第二代DL框架。在它之前，Google内部还有一个叫做DistBelief的框架。这个框架没有开源，但是有论文发表。因此，就有了一个叫做Apache Hama的项目，作为它的开源实现。
+
+官网：
+
+https://hama.apache.org/
+
+这个项目采用了一种叫做Bulk Synchronous Parallel的并行计算模型。
+
+# Tensorflow 2.x
 
 ![](/images/img3/TF.png)
 
@@ -75,7 +101,7 @@ https://mp.weixin.qq.com/s/RcolwQnCqrAsGaKEK0oo_A
 
 TensorFlow 2.0中的tf.keras和Keras有何区别？为什么以后一定要用tf.keras？
 
-## 细节
+# 细节
 
 执行`session.run(out)`，会在终端打印out的值，但执行`res = session.run(out)`则不会。
 
@@ -117,13 +143,13 @@ op的自定义实现可使用`tf.py_func`。
 
 tf.dtypes.cast: 类型转换
 
-## TensorSensor
+# TensorSensor
 
 https://mp.weixin.qq.com/s/ZxmoBcWJa7luGOHQ32ru1A
 
 推荐一个快速定位深度学习代码bug的炼丹神器
 
-## 参考
+# 参考
 
 https://mp.weixin.qq.com/s/t1QFIOq-VBNOrSm0zW-PlQ
 
@@ -376,35 +402,3 @@ https://mp.weixin.qq.com/s/YdcIDXadEnDsyfc6Iu1gGw
 https://mp.weixin.qq.com/s/Off0pgaRNyik2nvjHaQQkw
 
 在TensorFlow中对比两大生成模型：VAE与GAN
-
-https://mp.weixin.qq.com/s/rMYjsIgFNvv47F4YZjY8SA
-
-如何在K8S上玩转TensorFlow？
-
-https://zhuanlan.zhihu.com/p/30751039
-
-TensorFlow全新的数据读取方式：Dataset API入门教程
-
-https://mp.weixin.qq.com/s/SDVQSn1aVDXk_RPGuVcQgQ
-
-TensorFlow深度自动编码器入门实践
-
-https://mp.weixin.qq.com/s/mZ79KAuSIJLtBEXvKwUi-w
-
-如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
-
-https://mp.weixin.qq.com/s/yi-PNmMNMbwSi56aXo6ZSQ
-
-tensorflow对象检测框架训练VOC数据集常见的两个问题
-
-https://mp.weixin.qq.com/s/bcLCCvWrJLbMxwDl9GutjQ
-
-TensorFlow动态图5行代码实现迁移学习-识别转变风格的MNIST
-
-https://mp.weixin.qq.com/s/NMRwXqwr4VFbMUPgI8Uccg
-
-使用Google Cloud上的tf.Transform对TensorFlow管道模式进行预处理
-
-https://mp.weixin.qq.com/s/UKt1cFLcRYZQTJiZRiajwQ
-
-TensorFlow Servering C/S通信约束

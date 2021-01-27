@@ -7,9 +7,7 @@ category: AI
 * toc
 {:toc}
 
-# TensorFlow
-
-## 概述
+# 概述
 
 TensorFlow是Google主导的开源深度学习库。
 
@@ -67,7 +65,7 @@ TensorFlow技术栈：
 
 ![](/images/article/tensorflow_layer.png)
 
-## CS 20SI
+# CS 20SI
 
 斯坦福最近专门为Tensorflow开设了一门课程：CS 20SI: Tensorflow for Deep Learning Research。
 
@@ -91,7 +89,7 @@ http://www.sohu.com/a/164277987_473283
 
 一名在斯坦福教授TensorFlow教师的“忏悔”：我觉得自己像个骗子
 
-## blog
+# blog
 
 http://www.jianshu.com/u/eaec1fc422e9
 
@@ -101,7 +99,7 @@ http://blog.csdn.net/u012436149
 
 一个TensorFlow+PyTorch的blog
 
-## 源代码编译
+# 源代码编译
 
 **Step 1**：安装Bazel。
 
@@ -233,7 +231,7 @@ https://blog.csdn.net/qq_43202953/article/details/107951031
 
 Ubuntu 20.04安装cuda和cudnn
 
-## 基本概念
+# 基本概念
 
 **Variables**：维持计算图执行过程中的状态信息的变量。一般来说，这就是神经网络的参数。
 
@@ -249,7 +247,7 @@ Placeholders在图的执行过程中，需要由真实的tensor填充之：
 
 这里的batch_xs就是用来填充x的tensor。
 
-## 图计算
+# 图计算
 
 图计算是各个深度学习框架的中心概念，这里单独提出来讨论一下。
 
@@ -313,7 +311,7 @@ http://www.cnblogs.com/lienhua34/p/5998853.html
 
 Tensorflow学习笔记2：About Session, Graph, Operation and Tensor
 
-## Fused Graph
+# Fused Graph
 
 Fused Graph是TensorFlow新推出的概念。这里仍以softmax运算为例，讲一下它的基本思想。
 
@@ -335,6 +333,10 @@ https://developers.googleblog.com/2017/03/xla-tensorflow-compiled.html
 
 XLA - TensorFlow, compiled
 
+# XLA
+
+XLA是TensorFlow计算图的编译器。
+
 https://mp.weixin.qq.com/s/RO3FrPxhK2GEoDCGE9DXrw
 
 利用XLA将GPU性能推向极限
@@ -343,36 +345,6 @@ https://mp.weixin.qq.com/s/MPI9KERDS-Al4DTBDRV04w
 
 TensorFlow XLA工作原理简介
 
-## Eigen
+https://sketch2sky.com/
 
-Eigen是一个线性代数方面的C++模板库。tensorflow和caffe2都使用了这个库。
-
-官网：
-
-http://eigen.tuxfamily.org/
-
-使用Eigen也比较简单，无须link，只要引用相关头文件即可。
-
-参见：
-
-https://zhuanlan.zhihu.com/p/26512099
-
-tensorflow和caffe2
-
-## TensorFlow高层封装
-
-目前对TensorFlow的封装如下所示：
-
-1.TensorFlow-Slim。主要提供了层一级的封装。粒度和OpenVX类似。
-
-2.tf.contrib.learn（之前也被称为skflow）。提供了类似sklearn的接口。
-
-前2个是TensorFlow自带的封装
-
-3.第三个是TFLearn。在tf.contrib.learn上的封装。需单独安装：
-
-`sudo pip install tflearn`
-
-http://tflearn.org/
-
-4.Keras。
+一个XLA方面的blog

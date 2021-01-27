@@ -372,3 +372,7 @@ https://mp.weixin.qq.com/s/nHn-W6uL_Njtdl5O-4zaCg
 https://mp.weixin.qq.com/s/q2GiE1_jg-tQM3ZtN9Wmrw
 
 图信息Bottleneck打造图最优表示->避免过拟合，并具备稳健性
+
+https://mp.weixin.qq.com/s/R24ZdMBLiGVnW_WnphmtFg
+
+TAMU发布《图神经网络可解释》综述论文，14页pdf阐述实例级与模型级解释

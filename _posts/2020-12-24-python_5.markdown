@@ -47,6 +47,20 @@ https://typer.tiangolo.com/
 
 https://fastapi.tiangolo.com/
 
+## Streamlit
+
+https://mp.weixin.qq.com/s/sZvawmQ1KH3b_hozAbeX9w
+
+如何用简单的Python为数据科学家编写Web应用程序？
+
+https://mp.weixin.qq.com/s/gVIVDR1pXdDArrZO56B86w
+
+如何用纯Python写Web应用？
+
+https://mp.weixin.qq.com/s/TV1MJfaOq27y2DVCGMuqhA
+
+用Pandas和Streamlit对时间序列数据集进行可视化过滤
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA
@@ -168,14 +182,6 @@ Python十大装腔语法
 https://mp.weixin.qq.com/s/Oo-U4Bq7g1wmQgXJ7Y-rjw
 
 万字长文详解如何用Python玩转OpenGL
-
-https://mp.weixin.qq.com/s/sZvawmQ1KH3b_hozAbeX9w
-
-如何用简单的Python为数据科学家编写Web应用程序？（StreamLit）
-
-https://mp.weixin.qq.com/s/gVIVDR1pXdDArrZO56B86w
-
-如何用纯Python写Web应用？（StreamLit）
 
 https://mp.weixin.qq.com/s/WqDWksBDBa07s84v6R1tlA
 

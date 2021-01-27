@@ -9,6 +9,38 @@ category: AI
 
 # TensorFlow
 
+https://mp.weixin.qq.com/s/rMYjsIgFNvv47F4YZjY8SA
+
+如何在K8S上玩转TensorFlow？
+
+https://zhuanlan.zhihu.com/p/30751039
+
+TensorFlow全新的数据读取方式：Dataset API入门教程
+
+https://mp.weixin.qq.com/s/SDVQSn1aVDXk_RPGuVcQgQ
+
+TensorFlow深度自动编码器入门实践
+
+https://mp.weixin.qq.com/s/mZ79KAuSIJLtBEXvKwUi-w
+
+如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
+
+https://mp.weixin.qq.com/s/yi-PNmMNMbwSi56aXo6ZSQ
+
+tensorflow对象检测框架训练VOC数据集常见的两个问题
+
+https://mp.weixin.qq.com/s/bcLCCvWrJLbMxwDl9GutjQ
+
+TensorFlow动态图5行代码实现迁移学习-识别转变风格的MNIST
+
+https://mp.weixin.qq.com/s/NMRwXqwr4VFbMUPgI8Uccg
+
+使用Google Cloud上的tf.Transform对TensorFlow管道模式进行预处理
+
+https://mp.weixin.qq.com/s/UKt1cFLcRYZQTJiZRiajwQ
+
+TensorFlow Servering C/S通信约束
+
 https://mp.weixin.qq.com/s/DpqI4AfjiygCh8dqq_Kgmw
 
 基于TensorFlow Serving的深度学习在线预估
@@ -352,37 +384,3 @@ https://mp.weixin.qq.com/s/xSJRhHbjcgk14Kr_-Ycr5A
 https://zhuanlan.zhihu.com/p/333791572
 
 Tensorflow模型保存方式大汇总
-
-# Pytorch+++
-
-https://mp.weixin.qq.com/s/RBclQdtaA8prvSoUUdhrEQ
-
-机器学习的Pytorch实现资源集合
-
-https://mp.weixin.qq.com/s/zPv-3fMy1rZwAwPqjs7oAA
-
-Pytorch图像分类从模型自定义到测试
-
-https://zhuanlan.zhihu.com/p/46636027
-
-1张图学会PyTorch+TensorFlow+MXNet+TF Eager
-
-https://mp.weixin.qq.com/s/yS9PAw926Y7AsGRW0eHG0Q
-
-基于PyTorch的GAN框架TorchGAN：用架构级API轻松定制GAN项目
-
-https://github.com/CVBox/PyTorchCV
-
-一个基于pytorch的CV框架
-
-https://mp.weixin.qq.com/s/w09hcJof80m2VGwn7SgKmQ
-
-TorchSeg—基于PyTorch的快速模块化语义分割开源库
-
-https://mp.weixin.qq.com/s/TsR-jgO2c2-dbqnk1mEj8w
-
-想读读PyTorch底层代码？这份内核机制简介送给你
-
-https://mp.weixin.qq.com/s/Lzt3LbO6lBbOebNV1d2pLQ
-
-迁移学习不好懂？这里有一个PyTorch项目帮你理解

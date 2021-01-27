@@ -73,6 +73,10 @@ https://mp.weixin.qq.com/s/HdGe6U1PPYnKEgSM09eJmg
 
 看，是四螺旋
 
+https://mp.weixin.qq.com/s/vDOKrcaI-Lvb30eXpYFsoQ
+
+细菌+酵母=？
+
 # 数学杂谈++
 
 https://mp.weixin.qq.com/s/yQfBFtWBuP1JB6MJM5DshQ
@@ -110,6 +114,10 @@ https://zhuanlan.zhihu.com/p/36230460
 http://www.matrix67.com/blog/archives/4570
 
 再谈Julia集与Mandelbrot集
+
+https://mp.weixin.qq.com/s/cWwbqOzKCUfhJRwz30u_8Q
+
+物理教授用数学论文摆脱400美元交通罚单，却惨被网友大反转...
 
 # 新冠肺炎
 
@@ -270,3 +278,29 @@ https://mp.weixin.qq.com/s/tLljo8q-1eybDIk7CLQiSA
 https://mp.weixin.qq.com/s/SwYQFBv5lnej0g08bsBF1A
 
 “英伟达呼吸机”开源：计算机架构大师打造，成本暴减98%，黄仁勋点赞
+
+## 瘟疫公司
+
+![](/images/img4/Plague_Inc.jpg)
+
+![](/images/img4/Plague_Inc.png)
+
+https://zhuanlan.zhihu.com/p/103836857
+
+五年前的冠状病毒模组让《瘟疫公司》再度翻红，创作者是预言家？
+
+https://zhuanlan.zhihu.com/p/125727756
+
+《瘟疫公司》做错了吗？最贴近疫情的游戏被下架，被指存在违反国内法律内容
+
+https://zhuanlan.zhihu.com/p/298079109
+
+现在，你可以在《瘟疫公司》里“拯救世界”了
+
+https://zhuanlan.zhihu.com/p/293192687
+
+因为疫情爆火的《瘟疫公司》免费了，还新增了解药模式
+
+https://www.zhihu.com/question/21491731
+
+游戏《瘟疫公司》Plague Inc这款游戏对现实世界有何启示？

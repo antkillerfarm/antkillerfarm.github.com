@@ -7,9 +7,33 @@ category: AI
 * toc
 {:toc}
 
-# TensorFlow
+# Broadcast
 
-## TensorFlow Serving（续）
+Broadcast是一种填充元素以使操作数的形状相匹配的操作。例如，对一个[3,2]的张量和一个[3,1]的张量相加在TF中是合法的，TF会使用默认的规则将[3,1]的张量填充为[3,2]的张量，从而使操作能够执行下去。
+
+参考：
+
+https://www.cnblogs.com/yangmang/p/7125458.html
+
+numpy数组广播
+
+https://blog.csdn.net/LoseInVain/article/details/78763303
+
+TensorFlow中的广播Broadcast机制
+
+# TensorFlow Serving
+
+TensorFlow Serving是一个用于机器学习模型serving的高性能开源库。它可以将训练好的机器学习模型部署到线上，使用gRPC作为接口接受外部调用。更加让人眼前一亮的是，它支持模型热更新与自动模型版本管理。
+
+代码：
+
+https://github.com/tensorflow/serving
+
+TensorFlow Serving实际上是TensorFlow Extended (TFX)的一部分：
+
+https://tensorflow.google.cn/tfx
+
+TFX还包括了Data Validation、Transform和Model Analysis等方面的功能。
 
 参考：
 
@@ -69,7 +93,7 @@ https://mp.weixin.qq.com/s/DkCGusznH8F8p39oRLuNBQ
 
 TensorFlow Serving模型更新毛刺的完全优化实践
 
-## op的C++实现
+# op的C++实现
 
 有的时候为了将Tensorflow的op移植到其他平台，需要找到相应op的cpu实现。比如space_to_batch这个op，它的实现在：
 
@@ -89,9 +113,9 @@ tensorflow/core/ops
 
 tensorflow/contrib/lite/kernels/internal/reference/reference_ops.h
 
-## op Backprop
+# op Backprop
 
-### compute_gradients & apply_gradients
+## compute_gradients & apply_gradients
 
 由源代码可以知道`optimizer.minimize`实际上包含了两个步骤，即`compute_gradients`和`apply_gradients`，前者用于计算梯度，后者用于使用计算得到的梯度来更新对应的variable。
 
@@ -107,7 +131,7 @@ tensorflow/contrib/lite/kernels/internal/reference/reference_ops.h
 
 通常来说，如果一个计算图中没有optimizer，则一般只包含forward运算，而没有backward运算。
 
-### Add
+## Add
 
 ```cpp
 //forward
@@ -138,7 +162,7 @@ https://www.zhihu.com/question/56443480
 
 TensorFlow的自动求导具体是在哪部分代码里实现的？
 
-### Conv
+## Conv
 
 ```cpp
 tensorflow/cc/gradients/nn_grad.cc:
@@ -186,7 +210,7 @@ unsupported/Eigen/CXX11/src/Tensor/TensorBase.h: TensorBase::contract()
 
 Tensor contraction是一种Tensor运算，参见《数学狂想曲（五）》中的“张量分析”一节。
 
-## TensorFlow.js
+# TensorFlow.js
 
 https://mp.weixin.qq.com/s/dqMS4NjmNYs7IFHm8uFM8w
 
@@ -220,7 +244,7 @@ https://mp.weixin.qq.com/s/C7QdVathJ8YTXF-zXPC-Ow
 
 有人分析了7个基于JS语言的DL框架，发现还有很长的路要走
 
-## Eager Execution
+# Eager Execution
 
 TensorFlow的Eager Execution可立即评估操作，无需构建图：操作会返回具体的值，而不是构建以后再运行的计算图。这也就是所谓的动态图计算的概念。
 
@@ -254,7 +278,7 @@ https://mp.weixin.qq.com/s/zz8XCykJ6jxbE5J4YwAkEA
 
 一招教你使用tf.keras和eager execution解决复杂问题
 
-## Estimator
+# Estimator
 
 ![](/images/img2/tensorflow_programming_environment.png)
 
@@ -284,7 +308,7 @@ https://mp.weixin.qq.com/s/zpEVU1E5DfElAnFqHCqHOw
 
 训练效率低？GPU利用率上不去？快来看看别人家的tricks吧～
 
-## tf.data
+# tf.data
 
 tf.data提供了一套构建灵活高效的输入流水线的API。
 
@@ -308,7 +332,7 @@ https://mp.weixin.qq.com/s/1ZlyVDJK6RWZ_1Ox7399IA
 
 用一行tf.data实现数据Shuffle、Batch划分、异步预加载等
 
-## TensorFlow Probability
+# TensorFlow Probability
 
 TensorFlow Probability是一个概率编程工具包。
 
@@ -342,25 +366,7 @@ https://mp.weixin.qq.com/s/2cbd7LBPBRqGt-QO1A7SfQ
 
 在TensorFlow Probability中对结构时间序列建模
 
-## TensorFlow Federated
-
-TFF是一个开源框架，用于试验针对分散式数据的机器学习和其他计算。它采用的是一种名为联合学习(FL)的方法，许多参与的客户端能够训练共享的ML模型，同时将数据保存在本地。
-
-这个项目感觉上和Leela Zero有些相似。
-
-从原理上说，TFF主要使用了Federated Machine Learning技术。
-
-参考：
-
-https://mp.weixin.qq.com/s/K2-i3U-BCOctetMkvuvVxg
-
-TensorFlow Federated发布
-
-https://mp.weixin.qq.com/s/6QKyE3jIOwBK_2rcG-Vtiw
-
-联邦机器学习-概念与应用
-
-## TensorNetwork
+# TensorNetwork
 
 TensorFlow的计算图模型不仅可以用于DL领域，亦可应用于其他科学计算领域。TensorNetwork就是一个基于TensorFlow的张量运算库。现成的矩阵运算库已经很多了，这次升级为张量运算库了。
 
@@ -371,13 +377,3 @@ https://github.com/google/TensorNetwork
 https://mp.weixin.qq.com/s/jdjX0jirTHOUqsGagJmGLQ
 
 谷歌AI开源张量计算库TensorNetwork，计算速度暴涨100倍
-
-## Hama
-
-TensorFlow实际上是Google开发的第二代DL框架。在它之前，Google内部还有一个叫做DistBelief的框架。这个框架没有开源，但是有论文发表。因此，就有了一个叫做Apache Hama的项目，作为它的开源实现。
-
-官网：
-
-https://hama.apache.org/
-
-这个项目采用了一种叫做Bulk Synchronous Parallel的并行计算模型。

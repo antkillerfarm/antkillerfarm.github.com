@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 新冠肺炎（二）——国外疫情, 科研
+title: 新冠肺炎（二）——国外疫情
 category: Nature 
 ---
 
@@ -153,6 +153,22 @@ https://zhuanlan.zhihu.com/p/342314630
 
 ----
 
+1月26日，全球新冠确诊患者突破一亿。
+
+1月24日，全国新冠确诊患者突破十万。
+
+首先控制疫情，那么既不会有超额死亡，也不会有经济下滑。首先保住经济，那么人都死了，经济照样下滑。疫情的控制必须要先于经济，这个问题能达到共识。
+
+https://www.zhihu.com/question/441055229
+
+如何看待1月26日全球新冠确诊患者突破一亿？2021年疫情会结束吗？
+
+https://view.inews.qq.com/a/20210126A0F7AR00
+
+全球新冠确诊超过一亿，一图回顾被疫情带走的世界名人
+
+----
+
 https://mp.weixin.qq.com/s/lv-C9MDiW0SwNszDy54i0g
 
 突发！5名英国人间接感染新冠病毒，不在同一时空也躺枪！
@@ -241,9 +257,17 @@ https://mp.weixin.qq.com/s/X7S6WAJBy2zRkwE1AdHTpQ
 
 再度封城
 
-## 国际援助
+https://www.zhihu.com/question/440392936
 
-### 日本援助中国
+如何看待巴西玛瑙斯的新冠疫情失控，是否宣告群体免疫最终会失败？
+
+https://www.zhihu.com/question/392250734
+
+如何看待巴西的疫情？
+
+# 国际援助
+
+## 日本援助中国
 
 盛唐时，日本遣人来中国学习佛法。长屋（日本的相国）赠送中国大德的上千件袈裟，边缘都绣着一首偈子：
 
@@ -269,7 +293,7 @@ https://mp.weixin.qq.com/s/X7S6WAJBy2zRkwE1AdHTpQ
 
 崎岖路，长情在。
 
-### 中国援助韩国
+## 中国援助韩国
 
 道不远人，人无异国。
 
@@ -277,7 +301,7 @@ https://mp.weixin.qq.com/s/X7S6WAJBy2zRkwE1AdHTpQ
 
 >崔致远，字孤云，号海云，谥号文昌。朝鲜半岛新罗王京人。十二岁时，即唐懿宗咸通九年(公元868年)乘船西渡入唐，留唐十六年。朝鲜汉文学的开山鼻祖。有“东国儒宗”、“东国文学之祖”的称誉。
 
-### 小米援助意大利
+## 小米援助意大利
 
 We are waves of the same sea, leaves of the same tree, flowers of the same garden.
 
@@ -285,7 +309,7 @@ We are waves of the same sea, leaves of the same tree, flowers of the same garde
 
 >Lucius Annaeus Seneca，公元前4年～65年，古罗马政治家、斯多葛派哲学家、悲剧作家、雄辩家。暴君Nero的老师，被逼自杀。
 
-### 马云援助意大利
+## 马云援助意大利
 
 “消失吧，黑夜！黎明时我们将获胜！”
 
