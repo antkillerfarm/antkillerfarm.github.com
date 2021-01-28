@@ -385,3 +385,7 @@ https://mp.weixin.qq.com/s/059DK6v1j5yi9OlqdbI7Cg
 https://mp.weixin.qq.com/s/T6gCc8OBgyV-yeAg_MUzPQ
 
 简单理解Kafka的消息可靠性策略
+
+https://mp.weixin.qq.com/s/DQZh-V0jnlqLNqkyRkoDQQ
+
+使用Kafka，如何成功迁移SQL数据库中超过20亿条记录？

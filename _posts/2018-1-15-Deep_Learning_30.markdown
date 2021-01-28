@@ -269,6 +269,10 @@ https://mp.weixin.qq.com/s/F9zt7eyHxTX7Gp0zpvnfcg
 
 一文直击Graph Embedding图表示学习的原理及应用
 
+https://mp.weixin.qq.com/s/j-vEuwUk1HVzHObeIvuh5A
+
+一文梳理图嵌入 (Graph Embedding)
+
 https://mp.weixin.qq.com/s/qgZwi3ieMqPrg3t5lyjaZw
 
 元图(Meta-Graph)：元学习小样本连接预测

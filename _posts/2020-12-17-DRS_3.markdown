@@ -248,3 +248,11 @@ https://mp.weixin.qq.com/s/MoUd99mCR3Xyu_FnV8jLKA
 https://mp.weixin.qq.com/s/O_BYzrw5YAbLkfVDqcmwmw
 
 36页最新《深度学习在推荐系统上的应用》综述论文，209篇参考论文
+
+https://mp.weixin.qq.com/s/lphTXdbYOyomMU6O0CH2Pw
+
+CTR学习笔记&代码实现1-深度学习的前奏LR->FFM
+
+https://mp.weixin.qq.com/s/V8uBRgabV7iQAJ-I0pDmAg
+
+关于序列推荐的全面调研与总结

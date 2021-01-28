@@ -405,6 +405,10 @@ https://mp.weixin.qq.com/s/JLP4-5IR6HPK4SRQoC9FAQ
 
 BERT预训练实操总结
 
+https://mp.weixin.qq.com/s/FuO8zY3XoIF-s6_8aXAusw
+
+BERT相关模型汇总梳理
+
 # Transformer进阶
 
 https://mp.weixin.qq.com/s/-Y7Qy-5aJNJ5bx8QJf3k2w

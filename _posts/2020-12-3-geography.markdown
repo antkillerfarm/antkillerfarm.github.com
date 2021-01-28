@@ -291,6 +291,34 @@ https://mp.weixin.qq.com/s/wRgzQ43fxHkYCl2g5ei3Eg
 
 # 物理+
 
+https://mp.weixin.qq.com/s/aKqyt60xrPrw-W2u92ApMw
+
+尼古拉·特斯拉，到底有多神？
+
+https://mp.weixin.qq.com/s/FAEx3jar5s_f4fK7O_0sZA
+
+别说理科男不懂撩妹，这个老司机一生只爱两样：物理和18岁的少女（Erwin Schrödinger）
+
+https://mp.weixin.qq.com/s/JGx9hcxfo0ZL2QyPCRt12w
+
+十大物理学实验
+
+https://mp.weixin.qq.com/s/JuEnx-kQgoSYM6qnteK8zA
+
+你是什么粒子？
+
+https://mp.weixin.qq.com/s/ynaXjlSkfFAlW5Wpc4ZhGg
+
+牛顿的超级女粉丝：夏特莱侯爵夫人
+
+https://mp.weixin.qq.com/s/UanXLOemWh7xU5Peu1_K6A
+
+120年了，它依旧神秘（量子力学）
+
+https://mp.weixin.qq.com/s/VrlMlRYHcJDx5fk-PoELWA
+
+系紧的鞋带为什么会自己松开？
+
 https://mp.weixin.qq.com/s/MhAvoZABHxJz17rxDXnVlw
 
 比起女孩子，他更喜欢爱因斯坦，这个最直男的科学家，把物理和数学搞了CP（Paul Dirac）
@@ -314,3 +342,11 @@ https://mp.weixin.qq.com/s/XewqlwfrZ0GzrsloKzszFg
 https://mp.weixin.qq.com/s/R297R23Pun_RRy9LdSezKA
 
 灵魂之问，食物热量单位为什么是卡路里？
+
+https://mp.weixin.qq.com/s/pQIYEvo72vSL7V4rCCsIzg
+
+我们离台风发电还有多远？
+
+https://mp.weixin.qq.com/s/Vrl0HBoVCbnTV9HFI6tjYA
+
+被冷落的“打蛋机”：达里厄风力机的一生

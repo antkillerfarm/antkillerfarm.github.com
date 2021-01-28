@@ -244,25 +244,3 @@ Parameter Server就是处理海量特征计算的一种方法。
 >2017.5，我曾去某电商面试推荐系统职位。言谈之中发现他们对于DL几乎一无所知，当时就觉得有些古怪。直到接触Parameter Server才明白了他们的玩法。。。非常庆幸他们鄙视了我。后来到了2017.12的时候，他们主动找我，想再次面试，被我婉拒。
 
 这类问题的另一个特征是：特征虽多，但单独的一个样本具有的有效特征相对有限，一般不过数百个。使用样本更新参数时，只考虑这几百个特征即可，这也为相关的分布式运算提供了有利条件。
-
-# 时间序列分析+
-
-https://mp.weixin.qq.com/s/S3xjk9QekWoni0eEvBhlLQ
-
-特征工程之处理时间序列数据
-
-https://mp.weixin.qq.com/s/15HXAIhmtYLbG3MjwEKDSQ
-
-从移动平均到指数平滑
-
-https://mp.weixin.qq.com/s/56so2p7a4wIgo38nVSR44A
-
-时间序列分解总结
-
-https://mp.weixin.qq.com/s/eHovfZiheQsv4Mb276su9w
-
-核密度估计和非参数回归
-
-https://mp.weixin.qq.com/s/6TpT1FH87esQWsUig0oS_Q
-
-手把手教你用Python进行时间序列分解和预测

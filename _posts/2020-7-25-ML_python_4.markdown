@@ -356,3 +356,7 @@ https://mp.weixin.qq.com/s/6x5Wmpy4Im0x3Ddua9rvFw
 https://mp.weixin.qq.com/s/Xksp457JBr2ySrtqgXYMFw
 
 一文学会入门推荐算法库surprise
+
+https://mp.weixin.qq.com/s/x9esWTfZOtfedjkrcKM1Qw
+
+利用Python的混合集成机器学习

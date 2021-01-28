@@ -423,6 +423,10 @@ https://mp.weixin.qq.com/s/hjHXWewRYh_6j5cd1J2n_w
 
 Transformer又立功了！又快(420 fps)又好的车道线检测算法
 
+https://zhuanlan.zhihu.com/p/157530787
+
+超快的车道线检测
+
 ## 组合导航
 
 https://mp.weixin.qq.com/s/F8aLNue_qDlMyTAznBLC7g

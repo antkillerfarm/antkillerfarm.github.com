@@ -271,6 +271,14 @@ https://mp.weixin.qq.com/s/GT1WrG2c6OGrXUH8BGWu8g
 
 Weisfeiler-Leman算法
 
+https://mp.weixin.qq.com/s/cDB615hkHBdHqNV06DSWBQ
+
+什么是度，什么是握手定理
+
+https://mp.weixin.qq.com/s/YSvn17Xlm3M7RRRIR4He-A
+
+图神经网络：数学基础篇
+
 # 社交网络
 
 ## 信息传播模型

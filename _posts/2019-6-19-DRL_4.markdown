@@ -215,6 +215,10 @@ https://www.jianshu.com/p/f4d383b0bd4c
 
 TRPO与PPO实现
 
+https://mp.weixin.qq.com/s/09JCUUhsXKhvYGfXT2gDLg
+
+解读TRPO论文，深度强化学习结合传统优化方法
+
 https://bluefisher.github.io/2018/07/03/Proximal-Policy-Optimization-Algorithms/
 
 Proximal Policy Optimization Algorithms

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十八）——Optimizer进阶, 特征工程, 时间序列分析（2）
+title:  机器学习（三十八）——Optimizer进阶, 时间序列分析（2）
 category: ML 
 ---
 
@@ -217,140 +217,6 @@ https://mp.weixin.qq.com/s/xeRBLkJTUs5wx2hZjyYeeQ
 
 那些年“号称”要超越Adam的优化器
 
-# 特征工程
-
-https://mp.weixin.qq.com/s/ibiElLIgrT3wYx3tDYMMTw
-
-理解特征工程
-
-https://mp.weixin.qq.com/s/3Ce8uMf_Kyt-hEZUYfdh3g
-
-特征工程之特征选择
-
-https://mp.weixin.qq.com/s/tOcyfK68jW7Tr-PGCvdXMA
-
-特征工程最后一个要点:特征预处理
-
-https://mp.weixin.qq.com/s/GWMZ1jwbchE8O0r6EduYtQ
-
-一文讲解特征工程！经典外文PPT及中文解析
-
-https://mp.weixin.qq.com/s/c9iHdgtErVd_iitwny7_zw
-
-Kaggle前1%参赛者经验：特征工程为何如此重要？
-
-https://mp.weixin.qq.com/s/xbPJD0uoRB-T1x09AUYdzg
-
-基于Python的自动特征工程——教你如何自动创建机器学习特征
-
-https://mp.weixin.qq.com/s?__biz=MjM5MTQzNzU2NA==&mid=2651664000&idx=1&sn=ae6dda80df6d6278ae33b7bf7fbadcd2
-
-深度特征合成：自动化特征工程的运作机制
-
-https://mp.weixin.qq.com/s/R1MhoCfnd5drvg2CGLVsPw
-
-哪种特征分析法适合你的任务？Ian Goodfellow提出显著性映射的可用性测试
-
-https://mp.weixin.qq.com/s/XSovbUDVTKe59DDaC1Kl8Q
-
-如何进行特征表达，你知道吗？
-
-https://mp.weixin.qq.com/s/vhr5gXoa0S4-QqFcK7uz-w
-
-模型吞噬特征工程
-
-https://mp.weixin.qq.com/s/zgKbG3r_B8d1qQHnrD2NCg
-
-特征工程宝典《Feature Engineering for Machine Learning》翻译及代码实现
-
-https://mp.weixin.qq.com/s/3Clq9ECs6M52Sg-_xMxJGw
-
-最核心的特征工程方法-分箱算法
-
-https://mp.weixin.qq.com/s/ghfh1x_lsEcoA8PFPXE46w
-
-练手扎实基本功必备：非结构文本特征提取方法
-
-https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247515402&idx=1&sn=ee3cd5c64a707246216a532fa3af422b
-
-面向机器学习和数据分析的特征工程
-
-https://mp.weixin.qq.com/s/NKKk8nRd0qn5XhxXgYWknw
-
-手把手带你入门和实践特征工程的万字笔记
-
-https://mp.weixin.qq.com/s/QZeyEN2DDM_etEki7uodMg
-
-一个神奇的特征选择轮子----MLFeatureSelection
-
-https://mp.weixin.qq.com/s/8NI-NayCg_gZmJ6-1FZ_DA
-
-一个Python特征选择工具，助力实现高效机器学习
-
-https://mp.weixin.qq.com/s/LbXHpnC19euqriCtSHeg1Q
-
-UC Berkeley提出特征选择新方法：条件协方差最小化
-
-https://mp.weixin.qq.com/s/V3w5Iu804O6PmnBjmwCbgw
-
-常用文本特征选择
-
-https://mp.weixin.qq.com/s/Rj-ObD-eM5zEfs5fkWamGQ
-
-三大特征选择策略，有效提升你的机器学习水准
-
-https://mp.weixin.qq.com/s/rNipJC5wljzCT6Aq5gvvqw
-
-一款功能强大的特征选择工具（FeatureSelector）
-
-https://mp.weixin.qq.com/s/Bu34hPN0XAj6GmLXuQwVsQ
-
-风控特征—关系网络特征工程入门实践
-
-https://mp.weixin.qq.com/s/thd_dtd4erqSf7p6ZON72w
-
-自动特征工程在推荐系统中的研究
-
-https://zhuanlan.zhihu.com/p/96420594
-
-特征工程架构性好文
-
-https://mp.weixin.qq.com/s/demEVr5ZXKeSLbBIO1XgsQ
-
-AutoFIS: 因数分解模型中用于预测点击率的自动特征交互选择
-
-https://mp.weixin.qq.com/s/Z5cs6X1tFq9uKGfo3aHgmw
-
-简介机器学习中的特征工程
-
-https://mp.weixin.qq.com/s/BNiDjgBpdGQjCY-b96htlQ
-
-机器学习中的特征工程总结
-
-https://mp.weixin.qq.com/s/VBA02WHBJmU77RPLtIzprA
-
-特征工程入门：应该保留和去掉那些特征
-
-https://mp.weixin.qq.com/s/BfZ9BQXtOsEXCkAR3QYHhA
-
-特征工程了解一下
-
-https://mp.weixin.qq.com/s/dPnb7Mho-sQA6euvCdQV7w
-
-类别特征目标编码
-
-https://mp.weixin.qq.com/s/ZJjQY5g95p_s2Te9Rl2zIA
-
-特征选择介绍及4种基于过滤器的方法来选择相关特征
-
-https://mp.weixin.qq.com/s/q635XCJ3tVfesmTF4yvJ_w
-
-categorical feature编码方法小结
-
-https://mp.weixin.qq.com/s/vK5HP7e8d7ZXGFxaYN3G4g
-
-我用特征工程+LR超过了xDeepFM
-
 # 时间序列分析
 
 https://www.kaggle.com/thebrownviking20/everything-you-can-do-with-a-time-series/notebook
@@ -400,3 +266,23 @@ https://mp.weixin.qq.com/s/DxRoTGtdrwqcjXL_ot57eg
 https://mp.weixin.qq.com/s/iDUFr11-YX6oa6bLXWK3iQ
 
 时序特征挖掘的奇技淫巧
+
+https://mp.weixin.qq.com/s/S3xjk9QekWoni0eEvBhlLQ
+
+特征工程之处理时间序列数据
+
+https://mp.weixin.qq.com/s/15HXAIhmtYLbG3MjwEKDSQ
+
+从移动平均到指数平滑
+
+https://mp.weixin.qq.com/s/56so2p7a4wIgo38nVSR44A
+
+时间序列分解总结
+
+https://mp.weixin.qq.com/s/eHovfZiheQsv4Mb276su9w
+
+核密度估计和非参数回归
+
+https://mp.weixin.qq.com/s/6TpT1FH87esQWsUig0oS_Q
+
+手把手教你用Python进行时间序列分解和预测

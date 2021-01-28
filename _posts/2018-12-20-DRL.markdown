@@ -269,6 +269,10 @@ https://mp.weixin.qq.com/s/1oy21VNupI1mZADY9KoyKQ
 
 强化学习中基于模型的方法，279页ppt
 
+https://mp.weixin.qq.com/s/2h_0gZBXMUWS3JG7lrfUNQ
+
+MIT科学家Dimitri P. Bertsekas最新《强化学习与最优控制》2021ASU课程
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

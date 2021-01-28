@@ -175,10 +175,6 @@ https://mp.weixin.qq.com/s/Ld28qHczQ1NfFPGlJQGXKQ
 
 台风最喜欢在我国哪个省市登陆？
 
-https://mp.weixin.qq.com/s/pQIYEvo72vSL7V4rCCsIzg
-
-我们离台风发电还有多远？
-
 # 物理
 
 ![](/images/img3/spectrum.png)
@@ -270,13 +266,3 @@ https://mp.weixin.qq.com/s/DS4XYkaaQBV5NjMRLovO_g
 http://lssf.cas.cn/lssf/kpyd/zsk/kyjd/201006/t20100616_4513340.html
 
 欧洲核子研究中心（CERN）
-
-----
-
-1 mile最终便成了1760 yard或5280 foot，任何人看到这个数字都会觉得莫名其妙，但人们不知道的是，人家一开始就是简单的“一千步”而已。
-
-历史上的华伦海特只是在发明了水银温度计后被英国授予了皇家勋章，并授权英国大规模生产使用基于他的标温原理的温度计而已。然而，华伦海特本人的温标其实是很模糊的，他把“氯化铵冰溶液”的温度定为0，把水的冰点定为32，把人体体温定为96，使三者形成二的简单的倍数关系。
-
-https://mp.weixin.qq.com/s/_8wU83VZzHeVOzcbJnfA2g
-
-关于计量单位的“奇葩说”：你对我们“一无所知”

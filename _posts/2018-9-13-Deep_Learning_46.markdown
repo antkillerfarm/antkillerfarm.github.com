@@ -337,6 +337,10 @@ https://mp.weixin.qq.com/s/9ij8rI_MqyxbwVcjlF3HAA
 
 Google PPRGo:两分钟分类千万节点的最快GNN
 
+https://mp.weixin.qq.com/s/BR2hXAzgs0F_lJ7TVd1DlA
+
+GPR-GNN:自适应通用广义PageRank图神经网络
+
 # 人脸检测/识别+
 
 https://mp.weixin.qq.com/s/pmnb_WnncL12T1IZoso5DA

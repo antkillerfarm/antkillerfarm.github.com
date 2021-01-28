@@ -351,3 +351,7 @@ https://mp.weixin.qq.com/s/TsR-jgO2c2-dbqnk1mEj8w
 https://mp.weixin.qq.com/s/Lzt3LbO6lBbOebNV1d2pLQ
 
 迁移学习不好懂？这里有一个PyTorch项目帮你理解
+
+https://mp.weixin.qq.com/s/7fK6GNyzYTP0fQy7F01fZw
+
+PyTorch深度学习模型训练加速指南2021

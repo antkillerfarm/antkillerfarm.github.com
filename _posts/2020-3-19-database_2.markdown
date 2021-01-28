@@ -367,6 +367,10 @@ https://mp.weixin.qq.com/s/vmKPKn9Y1FPY8MWy2Xcu6A
 
 MySQL的自增ID用完了，怎么办？
 
+https://mp.weixin.qq.com/s/H0FI_Ci0YAQyUfaK3OVDJw
+
+InnoDB自增原理都搞不清楚，还怎么CRUD？
+
 https://mp.weixin.qq.com/s/QduIxKOykMmoZp13UGF1XQ
 
 MySQL索引知识点总结
