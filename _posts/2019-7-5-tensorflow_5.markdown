@@ -9,6 +9,26 @@ category: AI
 
 # TensorFlow
 
+https://mp.weixin.qq.com/s/Sxui9CvdGocIxVG2FM4JtQ
+
+基于tensorflow使用CNN-RNN进行中文文本分类！
+
+https://mp.weixin.qq.com/s/kJxXIN6D5TEEFSFhGJNIyw
+
+开源神经网络图片上色技术解析
+
+https://mp.weixin.qq.com/s/qXMRHxDDRa-_rJZMhXWB4w
+
+详解TensorFlow的新seq2seq模块及其用法
+
+https://mp.weixin.qq.com/s/YdcIDXadEnDsyfc6Iu1gGw
+
+手把手教你用TensorFlow训练模型
+
+https://mp.weixin.qq.com/s/Off0pgaRNyik2nvjHaQQkw
+
+在TensorFlow中对比两大生成模型：VAE与GAN
+
 https://mp.weixin.qq.com/s/rMYjsIgFNvv47F4YZjY8SA
 
 如何在K8S上玩转TensorFlow？

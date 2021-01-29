@@ -7,6 +7,32 @@ category: AI
 * toc
 {:toc}
 
+# XLA
+
+XLA是TensorFlow计算图的编译器。
+
+官网：
+
+https://www.tensorflow.org/xla?hl=zh-cn
+
+参考：
+
+https://mp.weixin.qq.com/s/RO3FrPxhK2GEoDCGE9DXrw
+
+利用XLA将GPU性能推向极限
+
+https://mp.weixin.qq.com/s/MPI9KERDS-Al4DTBDRV04w
+
+TensorFlow XLA工作原理简介
+
+https://sketch2sky.com/
+
+一个XLA方面的blog
+
+https://tensorflow.juejin.im/performance/xla/jit.html
+
+使用即时编译
+
 # Eigen
 
 Eigen是一个线性代数方面的C++模板库。tensorflow和caffe2都使用了这个库。
@@ -377,24 +403,14 @@ https://mp.weixin.qq.com/s/6_yZPlKLYiWBRQFk5Y1OKA
 
 TensorFlow Lite微控制器
 
-# Android NN
+# TensorNetwork
 
-TFLite是Google的Tensorflow团队开发的移动DL框架，它可以在任意系统（非android，甚至非linux）上执行。而Android NN则是Google的Android团队针对Android平台开发的DL框架。
+TensorFlow的计算图模型不仅可以用于DL领域，亦可应用于其他科学计算领域。TensorNetwork就是一个基于TensorFlow的张量运算库。现成的矩阵运算库已经很多了，这次升级为张量运算库了。
 
-团队的不同，决定了这两款产品并非完全兼容。一般来说，TFLite由于紧跟Tensorflow，其对新op的支持要比后者更及时一些。而Android NN由于有Facebook等外部客户的需求推动，在个别情况下，也有相反的情况发生。
-
-Android NN支持的算子的代码在aosp/frameworks/ml/nn/common/operations下。
+https://github.com/google/TensorNetwork
 
 参考：
 
-https://developer.android.google.cn/ndk/reference/group/neural-networks
+https://mp.weixin.qq.com/s/jdjX0jirTHOUqsGagJmGLQ
 
-这是Android NDK中的NN相关的接口文档
-
-https://developer.android.google.cn/ndk/guides/neuralnetworks
-
-Android NN的指南
-
-https://developer.arm.com/products/software/mali-drivers/android-nnapi
-
-这是ARM对于Android NN的一个实现。
+谷歌AI开源张量计算库TensorNetwork，计算速度暴涨100倍

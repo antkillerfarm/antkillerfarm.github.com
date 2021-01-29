@@ -23,6 +23,20 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tenso
 
 第一个例子中，我对CPU的计算能力还没有切肤之痛，但在这里使用CPU差不多要花半个小时时间。。。
 
+# Broadcast
+
+Broadcast是一种填充元素以使操作数的形状相匹配的操作。例如，对一个[3,2]的张量和一个[3,1]的张量相加在TF中是合法的，TF会使用默认的规则将[3,1]的张量填充为[3,2]的张量，从而使操作能够执行下去。
+
+参考：
+
+https://www.cnblogs.com/yangmang/p/7125458.html
+
+numpy数组广播
+
+https://blog.csdn.net/LoseInVain/article/details/78763303
+
+TensorFlow中的广播Broadcast机制
+
 # TensorFlow Federated
 
 TFF是一个开源框架，用于试验针对分散式数据的机器学习和其他计算。它采用的是一种名为联合学习(FL)的方法，许多参与的客户端能够训练共享的ML模型，同时将数据保存在本地。
@@ -382,23 +396,3 @@ tensorflow object detection API使用之GPU训练实现宠物识别
 https://mp.weixin.qq.com/s/knw7yuUxHe-qeCLfj20onw
 
 Bayesian GAN的TensorFlow实现
-
-https://mp.weixin.qq.com/s/Sxui9CvdGocIxVG2FM4JtQ
-
-基于tensorflow使用CNN-RNN进行中文文本分类！
-
-https://mp.weixin.qq.com/s/kJxXIN6D5TEEFSFhGJNIyw
-
-开源神经网络图片上色技术解析
-
-https://mp.weixin.qq.com/s/qXMRHxDDRa-_rJZMhXWB4w
-
-详解TensorFlow的新seq2seq模块及其用法
-
-https://mp.weixin.qq.com/s/YdcIDXadEnDsyfc6Iu1gGw
-
-手把手教你用TensorFlow训练模型
-
-https://mp.weixin.qq.com/s/Off0pgaRNyik2nvjHaQQkw
-
-在TensorFlow中对比两大生成模型：VAE与GAN

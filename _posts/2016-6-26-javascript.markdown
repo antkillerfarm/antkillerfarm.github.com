@@ -19,7 +19,7 @@ http://www.w3school.com.cn
 
 这是一个中文的参考网站。内容包括HTML、CSS、JS等前端技术，以及其他一些后端技术。
 
-http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000
+https://www.liaoxuefeng.com/wiki/1022910821149312
 
 一个中文入门教程。该作者还编写了Python教程。
 

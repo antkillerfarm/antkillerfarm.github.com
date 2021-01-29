@@ -112,6 +112,7 @@ http://blog.csdn.net/u012436149
 # configure的时候要选择一些东西是否支持，这里建议都选N，不然后面会包错，如果支持显卡，就在cuda的时候选择y
 bazel build --config=opt //tensorflow/tools/pip_package:build_pip_package # CPU only
 bazel build --config=opt --config=cuda //tensorflow/tools/pip_package:build_pip_package # GPU
+bazel build --config=opt --copt=-g --strip=never //tensorflow/tools/pip_package:build_pip_package # debug mode + CPU
 bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg #生成wheel文件
 ```
 
@@ -125,9 +126,11 @@ bazel编译相当消耗资源，在配置低的机器上，可通过如下选项
 
 例子：
 
-`bazel build --jobs 2 --local_resources 850,3.0,1.0 --config=opt //tensorflow/tools/pip_package:build_pip_package `
+`bazel build --jobs 2 --verbose_failures --local_resources 850,3.0,1.0 --config=opt //tensorflow/tools/pip_package:build_pip_package`
 
-按照我的实践`--local_resources`其实用处不大，有的C++文件编译需要上GB空间，即使有约束也会突破。而`--jobs`相对好一些，一般按照每个job 1.5GB来估算，就可以保证TensorFlow顺利编译成功。
+按照我的实践`--local_resources`其实用处不大，有的C++文件编译需要上GB空间，即使有约束也会突破。而`--jobs`相对好一些，一般按照每个job 2GB来估算，就可以保证TensorFlow顺利编译成功。
+
+编好之后，可以找到`bazel-bin/tensorflow/python/_pywrap_tensorflow_internal.so`，这个文件在debug模式下，体积竟然高达8GB。。。
 
 **Step 3**：安装TensorFlow。
 
@@ -332,19 +335,3 @@ tensorflow/core/kernels/hexagon
 https://developers.googleblog.com/2017/03/xla-tensorflow-compiled.html
 
 XLA - TensorFlow, compiled
-
-# XLA
-
-XLA是TensorFlow计算图的编译器。
-
-https://mp.weixin.qq.com/s/RO3FrPxhK2GEoDCGE9DXrw
-
-利用XLA将GPU性能推向极限
-
-https://mp.weixin.qq.com/s/MPI9KERDS-Al4DTBDRV04w
-
-TensorFlow XLA工作原理简介
-
-https://sketch2sky.com/
-
-一个XLA方面的blog

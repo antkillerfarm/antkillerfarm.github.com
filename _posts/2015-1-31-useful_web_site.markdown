@@ -48,6 +48,14 @@ https://www.sohu.com/a/299731374_463994
 
 ----
 
+https://cloud.tencent.com/developer/devdocs
+
+腾讯云的开发者手册，包含30+的教程
+
+https://www.runoob.com/
+
+一个偏前端开发的教程网站
+
 http://www.uedtech.com/
 
 UED方面的教程网站。用户体验设计（User Experience Design）。

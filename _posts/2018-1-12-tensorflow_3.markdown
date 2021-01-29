@@ -7,19 +7,27 @@ category: AI
 * toc
 {:toc}
 
-# Broadcast
+# Android NN
 
-Broadcast是一种填充元素以使操作数的形状相匹配的操作。例如，对一个[3,2]的张量和一个[3,1]的张量相加在TF中是合法的，TF会使用默认的规则将[3,1]的张量填充为[3,2]的张量，从而使操作能够执行下去。
+TFLite是Google的Tensorflow团队开发的移动DL框架，它可以在任意系统（非android，甚至非linux）上执行。而Android NN则是Google的Android团队针对Android平台开发的DL框架。
+
+团队的不同，决定了这两款产品并非完全兼容。一般来说，TFLite由于紧跟Tensorflow，其对新op的支持要比后者更及时一些。而Android NN由于有Facebook等外部客户的需求推动，在个别情况下，也有相反的情况发生。
+
+Android NN支持的算子的代码在aosp/frameworks/ml/nn/common/operations下。
 
 参考：
 
-https://www.cnblogs.com/yangmang/p/7125458.html
+https://developer.android.google.cn/ndk/reference/group/neural-networks
 
-numpy数组广播
+这是Android NDK中的NN相关的接口文档
 
-https://blog.csdn.net/LoseInVain/article/details/78763303
+https://developer.android.google.cn/ndk/guides/neuralnetworks
 
-TensorFlow中的广播Broadcast机制
+Android NN的指南
+
+https://developer.arm.com/products/software/mali-drivers/android-nnapi
+
+这是ARM对于Android NN的一个实现。
 
 # TensorFlow Serving
 
@@ -365,15 +373,3 @@ https://mp.weixin.qq.com/s/6l-NS0NbYK44JS0jnRl82w
 https://mp.weixin.qq.com/s/2cbd7LBPBRqGt-QO1A7SfQ
 
 在TensorFlow Probability中对结构时间序列建模
-
-# TensorNetwork
-
-TensorFlow的计算图模型不仅可以用于DL领域，亦可应用于其他科学计算领域。TensorNetwork就是一个基于TensorFlow的张量运算库。现成的矩阵运算库已经很多了，这次升级为张量运算库了。
-
-https://github.com/google/TensorNetwork
-
-参考：
-
-https://mp.weixin.qq.com/s/jdjX0jirTHOUqsGagJmGLQ
-
-谷歌AI开源张量计算库TensorNetwork，计算速度暴涨100倍
