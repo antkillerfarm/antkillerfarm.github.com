@@ -259,6 +259,42 @@ https://mp.weixin.qq.com/s/UNjMKLZYYVnTsT5nkeHQcg
 
 什么是RSA算法
 
+## 统一身份认证
+
+单点登录：（Single Sign On），简称为 SSO，是目前比较流行的企业业务整合的解决方案之一。SSO的定义是在多个应用系统中，用户只需要登录一次就可以访问所有相互信任的应用系统。
+
+单点登录网络生活中随处可见，比如登录了QQ客户端，然后你可以打开腾讯微博，QQ空间，QQ邮箱，校友录等等一系列的应用，这时候我们不需要在一个个再输入用户名和密码了，作为受信任的站点，就可以直接登录了。
+
+X.500是一系列涵盖电子目录服务的计算机网络标准。
+
+X.500系列是由国际电信联盟（ITU-T）的电信标准化部门开发的，于1988年首次获得批准。目录服务的开发是为了支持X.400电子邮件交换和名称查找的要求。
+
+X.500定义的协议包括
+
+DAP（目录访问协议）
+
+DSP（目录系统协议）
+
+DISP（目录信息屏蔽协议）
+
+DOP（目录操作绑定管理协议）
+
+由于这些协议使用OSI网络堆栈，因此开发了DAP的许多替代方案，以允许Internet客户端使用TCP/IP网络堆栈访问X.500目录。DAP的最著名替代方法是LDAP（Light weight Directory Access Protocol）。近年随着企业对LDAP需求的不断增加，绝大多数有认证机制的软件都会首先提供对LDAP的支持。
+
+用户的所有信息都存储在LDAP Server中。终端用户在需要使用公司内部服务的时候，都需要通过LDAP服务器的认证。 
+
+https://www.cnblogs.com/franzlistan/p/12228623.html
+
+统一身份认证
+
+https://www.cnblogs.com/jpfss/p/11021948.html
+
+Linux下LDAP统一认证解决方案
+
+https://zhuanlan.zhihu.com/p/165306642
+
+X.500系列标准列表
+
 ## 参考
 
 https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
