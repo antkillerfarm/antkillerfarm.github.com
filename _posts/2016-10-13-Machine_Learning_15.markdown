@@ -275,6 +275,10 @@ https://mp.weixin.qq.com/s/oZZGBZLRoJVsY7M-CP5MRg
 
 矩阵L2,1/L2,p范数扫盲
 
+https://mp.weixin.qq.com/s/poSfjftItmHERs3MDgvjpw
+
+机器学习防止模型过拟合的方法知识汇总
+
 # Krylov subspace
 
 Krylov subspace是一类针对大矩阵的近似计算的方法，由Aleksey Nikolaevich Krylov于1931年提出。

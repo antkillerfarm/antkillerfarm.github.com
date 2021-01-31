@@ -142,6 +142,14 @@ https://www.douban.com/note/748489872/
 
 ## Other
 
+黑轴、青轴、茶轴、红轴。
+
+https://mp.weixin.qq.com/s/J5wavE5JFjfAuP2O01OFUA
+
+工欲善其事，如何挑选一款趁手的键盘？
+
+----
+
 http://www.alsrobot.cn/
 
 一个国内机器人山寨创客公司——奥松公司。
@@ -331,14 +339,6 @@ https://mp.weixin.qq.com/s/EPWRwOBT8_616R5RWbdaTQ
 https://fwupd.org/
 
 Linux Vendor Firmware Service。这个网站提供Linux平台的各种BIOS或者外设的固件更新。
-
-https://mp.weixin.qq.com/s/3a5k3YA6ALri3BrQWQbOpw
-
-浅谈Cgroups
-
-https://mp.weixin.qq.com/s/8Rr-hxKQyHpT7L-Zx7PkcA
-
-浅谈Cgroups V2
 
 https://mp.weixin.qq.com/s/h4LwSRAsDgRqOq3mLt_SCw
 

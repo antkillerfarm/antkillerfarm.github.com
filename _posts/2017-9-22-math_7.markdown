@@ -201,3 +201,7 @@ Weierstrass Function也被视为第一个分形函数（尽管分形（Fractal�
 https://wenku.baidu.com/view/21877fea551810a6f524868c.html
 
 一个反例处处连续处处不可导的函数
+
+https://mp.weixin.qq.com/s/ZwrWOZOlSibmM2vlfz1g6g
+
+z = z^2 + c

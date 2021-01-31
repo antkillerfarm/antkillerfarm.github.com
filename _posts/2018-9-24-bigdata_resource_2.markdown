@@ -225,6 +225,10 @@ https://mp.weixin.qq.com/s/BYbv5CB5_Va4bfFhvr6o1A
 
 一口气说出“分布式追踪系统”原理！
 
+https://mp.weixin.qq.com/s/nQywI6a2mzbupWAvu1W9_Q
+
+营销自动化系统设计与实现
+
 # 机器人/无人驾驶参考资源+
 
 https://mp.weixin.qq.com/s/cLhnFCQdftj6Qi5j-PWDzw

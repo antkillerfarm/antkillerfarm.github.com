@@ -73,6 +73,10 @@ https://www.zhihu.com/question/50519680
 
 如何理解soft target这一做法？
 
+https://mp.weixin.qq.com/s/XR8OlGv5Ciglq03Ul_jpvQ
+
+谈谈我眼中的Label Smooth
+
 ## KD的进化史
 
 ![](/images/img3/KD.jpg)

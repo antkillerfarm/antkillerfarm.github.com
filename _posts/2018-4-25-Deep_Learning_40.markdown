@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十）——行人重识别, 数据增强
+title:  深度学习（四十）——行人重识别, 图像检索
 category: DL 
 ---
 
@@ -321,92 +321,60 @@ https://mp.weixin.qq.com/s/JZPLz1Xczby86id4Zvy1UQ
 
 CrowdHuman+Double Anchor：强强联合，推动密集行人检测技术落地
 
-# 数据增强
+https://zhuanlan.zhihu.com/p/342249413
 
-https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A
+深度学习行人重识别综述与展望
 
-SamplePairing：针对图像处理领域的高效数据增强方式
+# 图像检索
 
-https://mp.weixin.qq.com/s/cQtXvOjSXFc4YKn7ANBc_w
+## 传统方法
 
-谷歌大脑提出自动数据增强方法AutoAugment：可迁移至不同数据集
+https://mp.weixin.qq.com/s/sM78DCOK3fuG2JrP2QaSZA
 
-https://mp.weixin.qq.com/s/ojFo7-gUh73iK3uImFS2-Q
+SIFT与CNN的碰撞：万字长文回顾图像检索任务十年探索历程（上）
 
-一文道尽主流开源框架中的数据增强
+https://mp.weixin.qq.com/s/yzVMDEpwbXVS0y-CwWSBEA
 
-https://mp.weixin.qq.com/s/xJhWu-1FyhIWbFBC5oHMkw
+SIFT与CNN的碰撞：万字长文回顾图像检索任务十年探索历程（下）
 
-一文道尽深度学习中的数据增强方法（上）
+https://mp.weixin.qq.com/s/Sda94q-40goiZGSYGgm_Yw
 
-https://mp.weixin.qq.com/s/OctAGrcBB0a6TOGWMmVKUw
+基于内容的图像检索技术综述-传统经典方法
 
-深度学习中的数据增强（下）
+https://mp.weixin.qq.com/s/ED-zovVT_vHId4mYXdEo5w
 
-https://mp.weixin.qq.com/s/lMU6_ywQqneyunqEV6uDiA
+高效大规模图像搜索开源实现
 
-如何改善你的训练数据集？
+## DL方法
 
-https://mp.weixin.qq.com/s/ooX9Hj5ejO6po6Ghb4zOug
+https://zhuanlan.zhihu.com/p/36479489
 
-一文解读合成数据在机器学习技术下的表现
+图像检索：因缘际会与前瞻
 
-https://zhuanlan.zhihu.com/p/33485388
+https://mp.weixin.qq.com/s/jv6PvFHsweK_rFOuz-p-mg
 
-mixup与paring samples ，ICLR2018投稿论文的数据增广两种方式
+图像检索从入门到进阶
 
-https://mp.weixin.qq.com/s/_7xFBLPGT0VRTJ22toHJ3g
+https://mp.weixin.qq.com/s/aRndRlVnY5ZRBFnNbVNecg
 
-深度学习中常用的图像数据增强方法
+李飞飞CS231n项目：这两位工程师想用神经网络帮你还原买家秀
 
-https://mp.weixin.qq.com/s/sXV9epWguGbJEZYo4yNp5Q
+https://mp.weixin.qq.com/s/zHSDFR_Nd4LfvIaq9kSrww
 
-如何正确使用样本扩充改进目标检测性能
+BMVC2018图像检索论文—使用区域注意力网络改进R-MAC方法
 
-https://zhuanlan.zhihu.com/p/46833956
+https://mp.weixin.qq.com/s/FJCZvc8pl-CwFhyiCD6E-g
 
-图像数据增强之弹性形变（Elastic Distortions）
+Pinterest视觉搜索工程师孙彦：视觉搜索不是“鸡肋”
 
-https://mp.weixin.qq.com/s/ws1R-VPyJY6J18OttBDYog
+https://mp.weixin.qq.com/s/QgYtfvsLGcfqLA98mp19tg
 
-超少量数据训练神经网络：IEEE论文提出径向变换实现图像增强
+KDD2018阿里巴巴论文揭示自家大规模视觉搜索算法
 
-https://mp.weixin.qq.com/s/g4022Rc1RNvr3IOC_bWuaQ
+https://mp.weixin.qq.com/s/CS4iAMprZizrXhpXDhySzg
 
-深度学习中的数据增强方法都有哪些？
+视频分类/行为识别研究综述，从数据集到方法
 
-https://mp.weixin.qq.com/s/YuFVEhO3wzCN5dIM_YqA7A
+http://yongyuan.name/blog/layer-selection-and-finetune-for-cbir.html
 
-EDA：最简单的自然语言处理数据增广方法
-
-https://mp.weixin.qq.com/s/IeqSfjt4x8HquXBeQN2gdQ
-
-深度学习中的数据增强方法总结
-
-https://zhuanlan.zhihu.com/p/76044027
-
-A survey on Image Data Augmentation数据增强文献综述
-
-https://mp.weixin.qq.com/s/2B0NBY39noikPEO1dB06Sg
-
-CV领域中数据增强相关的论文推荐
-
-https://www.zhihu.com/question/35339639
-
-使用深度学习(CNN)算法进行图像识别工作时，有哪些data augmentation的奇技淫巧？
-
-https://mp.weixin.qq.com/s/YtL7GeIGYm9xtdofnabu1g
-
-如何选择最合适的数据增强操作
-
-https://zhuanlan.zhihu.com/p/43665254
-
-数据增广之详细理解
-
-https://mp.weixin.qq.com/s/g65jpWaf3Oo31zYCyquH1Q
-
-基于深度学习的数据增广技术一览
-
-https://mp.weixin.qq.com/s/r3pGr3FD1dGDzw2zgQdK9g
-
-简易快速数据增强库使用手册
+图像检索：layer选择与fine-tuning性能提升验证

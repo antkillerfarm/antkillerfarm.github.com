@@ -364,3 +364,7 @@ https://mp.weixin.qq.com/s/piYyhPbA6kAXuSE5yHfQ1g
 https://zhuanlan.zhihu.com/p/60747096
 
 人脸识别损失函数简介与Pytorch实现：ArcFace、SphereFace、CosFace
+
+https://mp.weixin.qq.com/s/_cVNNZBBJljdWBPU9d38CA
+
+常见的损失函数超全总结

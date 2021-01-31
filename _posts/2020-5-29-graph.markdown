@@ -279,6 +279,10 @@ https://mp.weixin.qq.com/s/YSvn17Xlm3M7RRRIR4He-A
 
 图神经网络：数学基础篇
 
+https://mp.weixin.qq.com/s/09CyHZqG2D6gKjiBaVwyyg
+
+什么是图距离
+
 # 社交网络
 
 ## 信息传播模型

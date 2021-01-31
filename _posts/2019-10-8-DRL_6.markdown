@@ -205,6 +205,14 @@ https://mp.weixin.qq.com/s/CvkIFuLTBDW0L8A9rJL7Ng
 
 新算法MuZero登顶Nature，AI离人类规划又近了一步
 
+https://mp.weixin.qq.com/s/dTJ7NvVs7qjF2FRoAZ_WlQ
+
+MuZero算法过程详解
+
+https://mp.weixin.qq.com/s/XNt-iyqFeyV2iNx5bxMy0Q
+
+看似平凡的心跳，是一场关乎生死的接力
+
 ## Leela Zero
 
 Leela Zero是比利时人Gian-Carlo Pascutto开源的围棋AI。它的算法与AlphaGo Zero相同。而训练采用GTP协议，集合全球算力，进行分布式训练。

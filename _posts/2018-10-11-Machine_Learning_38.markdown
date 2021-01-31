@@ -286,3 +286,7 @@ https://mp.weixin.qq.com/s/eHovfZiheQsv4Mb276su9w
 https://mp.weixin.qq.com/s/6TpT1FH87esQWsUig0oS_Q
 
 手把手教你用Python进行时间序列分解和预测
+
+https://mp.weixin.qq.com/s/7WuB0uvGSAek9b4TP_0r9g
+
+内置降维、聚类等算法，时间序列数据分析Python库Deeptime

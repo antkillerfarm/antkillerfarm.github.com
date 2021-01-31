@@ -7,6 +7,16 @@ category: linux
 * toc
 {:toc}
 
+# 文件操作
+
+这里列举一些文件操作的命令，不详细讲解，仅供备忘。
+
+mkfifo：创建命名管道。
+
+remove：删除文件（包括命名管道）。
+
+access：可查询文件是否存在及其相关权限。
+
 # 文件锁
 
 Linux系统上的文件锁主要分为协同锁(advisory lock)和强制锁(mandatory lock)。前者是应用层锁，实现方式与信号量相似。后者是内核层锁。
@@ -215,6 +225,14 @@ https://mp.weixin.qq.com/s/DG7RjJ_HXSRb6nAZuoTz3g
 https://www.cnblogs.com/zqb-all/p/10666474.html
 
 Linux实用命令之xdg-open
+
+https://www.cnblogs.com/traditional/p/12580638.html
+
+psutil：获取硬件、网络相关信息，以及管理进程
+
+https://www.cnblogs.com/saneri/p/7528283.html
+
+python模块之psutil详解
 
 # 时间的表示方法
 
@@ -441,19 +459,3 @@ tmux的使用方法和个性化配置
 http://chengjin.li/2017/08/09/tmux-using-tutorial/
 
 终端复用工具---tmux的安装及使用
-
-# 设置网卡eth0的IP地址和子网掩码
-
-`sudo ifconfig eth0 192.168.2.1 netmask 255.255.255.0`
-
-# 无线设置
-
-查看无线网卡状态：
-
-`iwconfig`
-
-`wpa_cli`
-
-扫描周围的wifi信号：
-
-`iwlist scanning`

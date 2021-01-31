@@ -9,7 +9,55 @@ category: AI
 
 # Machine Learning之Python篇
 
-## PIL（续）
+## Autograd
+
+一个基于numpy的自动求导库。它是由Harvard Intelligent Probabilistic Systems Group开发的。
+
+官网：
+
+https://github.com/HIPS/autograd
+
+## Face Recognition
+
+这是一个人脸识别的软件包。
+
+代码：
+
+https://github.com/ageitgey/face_recognition
+
+参考：
+
+https://mp.weixin.qq.com/s/QcMsSsZY7TcNQ3G57p8eyQ
+
+3行Python代码完成人脸识别
+
+## Luminoth
+
+Luminoth是一个开源的计算机视觉工具包，目前支持目标探测和图像分类，但以后会有更多的扩展。该工具包在TensorFlow和Sonnet上用Python搭建而成。
+
+代码：
+
+https://github.com/tryolabs/luminoth
+
+## PIL
+
+PIL：Python Imaging Library，已经是Python平台事实上的图像处理标准库了。
+
+官网：
+
+http://pythonware.com/products/pil/
+
+安装：
+
+`sudo apt install python-imaging`
+
+或
+
+`pip install pillow`
+
+文档：
+
+http://www.effbot.org/imagingbook/pil-index.htm
 
 参考：
 
@@ -426,47 +474,3 @@ Python3实现K-近邻算法
 https://mp.weixin.qq.com/s/bGudwxu8c0LIxv1h64qZtQ
 
 Python3实现决策树算法
-
-https://mp.weixin.qq.com/s?__biz=MzA3MTM3NTA5Ng==&mid=2651056396&idx=1&sn=dabbda2c433e54a2bad506fc13bfd743
-
-《战狼Ⅱ》豆瓣十二万影评浅析
-
-https://mp.weixin.qq.com/s/hNOF6YvDjIuX4u36Wr7LCA
-
-随机森林之美
-
-https://mp.weixin.qq.com/s/AHz81u8SGyi9_k40040QVg
-
-Python机器学习入门到进阶
-
-https://mp.weixin.qq.com/s/hFg1TvNocrMi5CpDtvRLcQ
-
-推荐一个计算“造人”成功与否的贝叶斯模型！
-
-http://www.sohu.com/a/168170785_642762
-
-基于机器学习的Python信用卡欺诈检测
-
-https://mp.weixin.qq.com/s/Xl9ZT7_I8P_ZU4O8j6bS5Q
-
-基于Python的人脸识别：识别准确率高达99.38%！
-
-https://mp.weixin.qq.com/s/tN7KVBA9GqdjpAjW-_WF8Q
-
-Python学习者最易上手的机器学习漫游指南
-
-https://mp.weixin.qq.com/s/MmuxNA8Xm6uRiVNGhDnyFw
-
-Scikit-learn实战之数据预处理
-
-https://mp.weixin.qq.com/s/V1EVdhX6-c1VNGNBgscFeA
-
-用Python统计新浪微博各种表情使用频率
-
-https://mp.weixin.qq.com/s/UOJsoB_YwBunj0YNShF11w
-
-深度学习+OpenCV，Python实现实时视频目标检测
-
-https://mp.weixin.qq.com/s/YCNnfR9XAP0i-Qs-DIpOCg
-
-6段Python代码刻画深度学习历史：从最小二乘法到深度神经网络

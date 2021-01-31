@@ -226,3 +226,7 @@ https://mp.weixin.qq.com/s/DdvXivS7OnAwC59nt5i3bg
 https://mp.weixin.qq.com/s/ktk8eUnu4-TyU3ob2y1fCA
 
 特征交互新路线：阿里Co-action Network论文解读
+
+https://mp.weixin.qq.com/s/FS7WJ1rG8Kt5Xp6H1InCAg
+
+如何融合深度学习特征向量？

@@ -273,36 +273,6 @@ https://mp.weixin.qq.com/s/AW-L_5acaDzGTObUGjTuuw
 
 用AI“驯服”人类幼崽：这个奶爸找到了硬核带娃的乐趣
 
-# 图像超分辨率进阶+
-
-https://zhuanlan.zhihu.com/p/67613641
-
-基于多级神经纹理迁移的图像超分辨方法(Adobe Research)
-
-https://mp.weixin.qq.com/s/IStOD22WgZ6EBFCvIHkNSg
-
-图像超分辨率网络：RCAN
-
-https://mp.weixin.qq.com/s/4LIq3kZaXgaoEEyb8TQvwg
-
-图像超分辨率重建--AI研究
-
-https://mp.weixin.qq.com/s/ETGPXVDGRHOq0W-ef_q2_A
-
-RankSRGAN:排序学习+GAN用于超分辨率
-
-https://zhuanlan.zhihu.com/p/140507840
-
-图像超分：USRNet
-
-https://mp.weixin.qq.com/s/sju4SYFxzDkJevk3mi68Rw
-
-图像超分辨率网络：EDSR
-
-https://mp.weixin.qq.com/s/uZQK0oQbV7wm0WVz_QxVQg
-
-DRN：用于单图像超分辨率的对偶回归网络
-
 # Calibration
 
 使用Resnet模型简单的对一些图片任务进行训练，收敛后的模型对测试集的平均置信度高达80%-85%，然而只有将近70%的图片能被正确分对（红色代表分错，绿色代表分对）。这意味着啥？训练好的模型好像有点盲目自信，即出现 overconfidence 现象，或者可以称为模型的准确率和置信度不匹配（miscalibration）。

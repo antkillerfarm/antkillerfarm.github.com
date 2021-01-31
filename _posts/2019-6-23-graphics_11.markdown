@@ -185,6 +185,10 @@ http://15462.courses.cs.cmu.edu/fall2020/courseinfo
 
 Computer Graphics
 
+https://www.tomlooman.com/stanford-cs193u/
+
+Stanford CS193u: Video Game Development in C++ and Unreal Engine
+
 https://www.zhihu.com/column/graphicon
 
 一个图形学方面的专栏

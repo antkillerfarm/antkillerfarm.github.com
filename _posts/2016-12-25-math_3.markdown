@@ -157,6 +157,10 @@ http://blog.csdn.net/kicilove/article/details/78655856
 
 数据科学家应知必会的6种常见概率分布
 
+https://mp.weixin.qq.com/s/PIKvYvXd9PaVHFi_I0U4cw
+
+一文读懂泊松分布，指数分布和伽马分布
+
 ## 贝塔分布和共轭先验分布
 
 $$f(x;\alpha,\beta)=\frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha,\beta)}$$

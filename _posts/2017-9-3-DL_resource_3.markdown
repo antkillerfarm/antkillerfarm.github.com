@@ -383,6 +383,10 @@ Facebook、AWS、Google、Microsoft面试小记
 
 ## 缺陷检测
 
+https://mp.weixin.qq.com/s/L-blxMT3HW-IJZBLlVakxg
+
+一文梳理缺陷检测方法
+
 https://mp.weixin.qq.com/s/Bh4zY2toTTcVdsc4ri56ZQ
 
 复杂场景下的复杂缺陷检测方法--深度学习算法综述

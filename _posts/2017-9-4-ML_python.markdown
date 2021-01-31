@@ -306,6 +306,10 @@ https://mp.weixin.qq.com/s/udKMuAfMVD4axulCR6Wgvw
 
 这100道练习，带你玩转Numpy
 
+https://mp.weixin.qq.com/s/2_q89PIfw43zivwHmTmY-A
+
+在向量化NumPy数组上进行移动窗口操作
+
 ## SciPy
 
 SciPy提供了一些更高阶的数学运算库，比如：积分、插值、信号处理、傅立叶变换、矩阵特征值、统计计算等。
@@ -447,31 +451,3 @@ https://mp.weixin.qq.com/s/fmoUGFjqlJf46r_iOrg9fA
 https://mp.weixin.qq.com/s/MYqPHzzoWfaV2N7c4ZgfPQ
 
 Python绘图，我只用Matplotlib
-
-https://mp.weixin.qq.com/s/y4W7zK2-nFF-y_hSmB8j2g
-
-超火动态排序图：代码不到40行，手把手教你！
-
-https://zhuanlan.zhihu.com/p/82910169
-
-Matplotlib输出动画实现K-means聚类过程可视化
-
-https://mp.weixin.qq.com/s/6h-1k_D7QIFpknagnA8FZA
-
-Python绘图，我只用Matplotlib
-
-https://mp.weixin.qq.com/s/pBTsByIftGbMMUumSKCvFw
-
-数据分析最有用的Top 50 Matplotlib图(上)
-
-https://zhuanlan.zhihu.com/p/113842270
-
-Matplotlib优雅作图笔记
-
-https://mp.weixin.qq.com/s/s50WdxzmtLEixvBMhEaX7w
-
-完成这50个Matplotlib代码，你也能画出优秀的图表
-
-https://mp.weixin.qq.com/s/VB55yiKJu-0Mw94qiZBmcw
-
-11类Matplotlib图表

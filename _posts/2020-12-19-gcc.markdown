@@ -77,9 +77,9 @@ https://mp.weixin.qq.com/s/TnqAqpmuXsGFfpcSUqZ9GQ
 
 ## 切换gcc版本
 
-`sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 40`
+`sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 40`
 
-`sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 50`
+`sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 50`
 
 `sudo update-alternatives --config gcc`
 

@@ -11,6 +11,34 @@ category: AI
 
 ## Matplotlib（续）
 
+https://mp.weixin.qq.com/s/y4W7zK2-nFF-y_hSmB8j2g
+
+超火动态排序图：代码不到40行，手把手教你！
+
+https://zhuanlan.zhihu.com/p/82910169
+
+Matplotlib输出动画实现K-means聚类过程可视化
+
+https://mp.weixin.qq.com/s/6h-1k_D7QIFpknagnA8FZA
+
+Python绘图，我只用Matplotlib
+
+https://mp.weixin.qq.com/s/pBTsByIftGbMMUumSKCvFw
+
+数据分析最有用的Top 50 Matplotlib图(上)
+
+https://zhuanlan.zhihu.com/p/113842270
+
+Matplotlib优雅作图笔记
+
+https://mp.weixin.qq.com/s/s50WdxzmtLEixvBMhEaX7w
+
+完成这50个Matplotlib代码，你也能画出优秀的图表
+
+https://mp.weixin.qq.com/s/VB55yiKJu-0Mw94qiZBmcw
+
+11类Matplotlib图表
+
 https://mp.weixin.qq.com/s/RctPwneKUIUZCcLr1Ry_8g
 
 数据分析最有用的Top 50 Matplotlib图(下)
@@ -426,53 +454,3 @@ https://mp.weixin.qq.com/s/nlskrbG5x6rG7Mu6qDeRxw
 https://mp.weixin.qq.com/s/nVRFgtYsR72nJrJvy31s5A
 
 Jupyter官方神器：可视化Debug工具!
-
-## Autograd
-
-一个基于numpy的自动求导库。它是由Harvard Intelligent Probabilistic Systems Group开发的。
-
-官网：
-
-https://github.com/HIPS/autograd
-
-## Face Recognition
-
-这是一个人脸识别的软件包。
-
-代码：
-
-https://github.com/ageitgey/face_recognition
-
-参考：
-
-https://mp.weixin.qq.com/s/QcMsSsZY7TcNQ3G57p8eyQ
-
-3行Python代码完成人脸识别
-
-## Luminoth
-
-Luminoth是一个开源的计算机视觉工具包，目前支持目标探测和图像分类，但以后会有更多的扩展。该工具包在TensorFlow和Sonnet上用Python搭建而成。
-
-代码：
-
-https://github.com/tryolabs/luminoth
-
-## PIL
-
-PIL：Python Imaging Library，已经是Python平台事实上的图像处理标准库了。
-
-官网：
-
-http://pythonware.com/products/pil/
-
-安装：
-
-`sudo apt install python-imaging`
-
-或
-
-`pip install pillow`
-
-文档：
-
-http://www.effbot.org/imagingbook/pil-index.htm

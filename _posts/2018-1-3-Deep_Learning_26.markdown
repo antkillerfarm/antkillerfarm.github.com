@@ -45,6 +45,10 @@ https://mp.weixin.qq.com/s/YsuvIB56OxS9IBMQYSUdUg
 
 ## 人脸表情识别
 
+https://mp.weixin.qq.com/s/Pcc2tVfNEY_xPo0aIuDlSA
+
+人脸表情识别不得不读的重要论文推荐（2015-2018篇）
+
 https://mp.weixin.qq.com/s/Z06oUe7oExgkKZ8g2_PnPw
 
 科普人脸表情识别技术
@@ -166,6 +170,16 @@ CRNN是白翔小组的作品。
 代码：
 
 https://github.com/bgshih/crnn
+
+参考：
+
+https://mp.weixin.qq.com/s/UEGvnNwKW315S68ye4QITQ
+
+一文带你搞懂OCR识别算法CRNN：解析+源码
+
+https://mp.weixin.qq.com/s/XFrgmdEz1d9vg6U0hYr7Qw
+
+中英文文字检测与识别项目（CTPN+CRNN+CTC Loss原理讲解）
 
 ## ASTER
 
@@ -386,27 +400,3 @@ EAST场景文字检测模型使用
 https://mp.weixin.qq.com/s/uMzx_U-wx94GRTQtM11d8Q
 
 OCR技术在携程业务中的应用
-
-https://mp.weixin.qq.com/s/-zMVO47AL1iKFmF16KsfOw
-
-文本检测算法PSENet解读与开源实现
-
-https://mp.weixin.qq.com/s/UFfBoxQwsB_GUqTDRv3Asg
-
-免费数学神器！再复杂的公式，只要有照片就能转成LaTeX
-
-https://mp.weixin.qq.com/s/x8iyl4gwz31XOCw3oSHSwg
-
-开源！基于TensorFlow/Keras/PyTorch实现对自然场景的文字检测及端到端的OCR中文文字识别
-
-https://mp.weixin.qq.com/s/eVhId0OqKB-jNCg4j8qaNg
-
-仅用200个样本就能得到当前最佳结果：手写字符识别新模型TextCaps
-
-https://mp.weixin.qq.com/s/z5hRafxepA4Zj5pbbK8HzA
-
-基于模板的文字识别结果结构化处理技术
-
-https://mp.weixin.qq.com/s/Buv6m66kj3RjKq0LjqNAiA
-
-mathAI手写拍照自动能解高数题，还不快试试？

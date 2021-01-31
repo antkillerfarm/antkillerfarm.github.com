@@ -9,6 +9,30 @@ category: DL
 
 # OCR（续）
 
+https://mp.weixin.qq.com/s/-zMVO47AL1iKFmF16KsfOw
+
+文本检测算法PSENet解读与开源实现
+
+https://mp.weixin.qq.com/s/UFfBoxQwsB_GUqTDRv3Asg
+
+免费数学神器！再复杂的公式，只要有照片就能转成LaTeX
+
+https://mp.weixin.qq.com/s/x8iyl4gwz31XOCw3oSHSwg
+
+开源！基于TensorFlow/Keras/PyTorch实现对自然场景的文字检测及端到端的OCR中文文字识别
+
+https://mp.weixin.qq.com/s/eVhId0OqKB-jNCg4j8qaNg
+
+仅用200个样本就能得到当前最佳结果：手写字符识别新模型TextCaps
+
+https://mp.weixin.qq.com/s/z5hRafxepA4Zj5pbbK8HzA
+
+基于模板的文字识别结果结构化处理技术
+
+https://mp.weixin.qq.com/s/Buv6m66kj3RjKq0LjqNAiA
+
+mathAI手写拍照自动能解高数题，还不快试试？
+
 https://mp.weixin.qq.com/s/bmJCLUlOA364AvK90sXE3Q
 
 用于算术习题自动批改的结构文本精确识别方法
@@ -116,10 +140,6 @@ https://mp.weixin.qq.com/s/QR53KZwIpQbCqX4TJAhAlQ
 https://mp.weixin.qq.com/s/dg3ydVozTN1wJB-SnjkPGQ
 
 GNN手绘草图识别新架构：Multi-Graph Transformer网络
-
-https://mp.weixin.qq.com/s/XFrgmdEz1d9vg6U0hYr7Qw
-
-中英文文字检测与识别项目（CTPN+CRNN+CTC Loss原理讲解）
 
 https://mp.weixin.qq.com/s/enVx8sLoxmaSM8NlUL5IMQ
 
@@ -340,45 +360,3 @@ Google PPRGo:两分钟分类千万节点的最快GNN
 https://mp.weixin.qq.com/s/BR2hXAzgs0F_lJ7TVd1DlA
 
 GPR-GNN:自适应通用广义PageRank图神经网络
-
-# 人脸检测/识别+
-
-https://mp.weixin.qq.com/s/pmnb_WnncL12T1IZoso5DA
-
-DeepID
-
-https://mp.weixin.qq.com/s/kH3-WUX4rc2SaLJcGzVLcQ
-
-如何检测极小人脸？试试超分辨率
-
-https://github.com/ShiqiYu/libfacedetection
-
-libfacedetection算法开源
-
-https://mp.weixin.qq.com/s/DkvQ86tgU4DarsmY_qTLdg
-
-最快人脸检测遇敌手！ZQCNN vs libfacedetection
-
-https://mp.weixin.qq.com/s/PsToV8Z17tRzXW_AbaMNmg
-
-Blazeface人脸检测器
-
-https://mp.weixin.qq.com/s/5ANMZNaR2ayYMUQEJ6aM3w
-
-人脸识别基于通用表示学习
-
-https://mp.weixin.qq.com/s/jrynQZgoljFi6zdVKWo5nw
-
-在浏览器中实现AR试妆
-
-https://mp.weixin.qq.com/s/lr9OVNiIN0x7k4cmNZoCUw
-
-用于人脸检测的SSH算法
-
-https://mp.weixin.qq.com/s/A5-Z6APwS1iFCUgYxtYNyA
-
-重磅！GroupFace人脸识别，刷新9个数据集SOTA
-
-https://mp.weixin.qq.com/s/-VknGwKKY14cT-lZ7sC43A
-
-人脸识别--基于深度学习以人类为中心的图像理解

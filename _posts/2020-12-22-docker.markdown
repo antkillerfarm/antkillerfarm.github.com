@@ -95,6 +95,14 @@ https://mp.weixin.qq.com/s/jMC_9tdNuGylDvM_cCqoeA
 
 virtio+ovs转发原理和性能分析
 
+https://mp.weixin.qq.com/s/3a5k3YA6ALri3BrQWQbOpw
+
+浅谈Cgroups
+
+https://mp.weixin.qq.com/s/8Rr-hxKQyHpT7L-Zx7PkcA
+
+浅谈Cgroups V2
+
 ## 使用
 
 1.镜像和容器的关系，类似于类和对象的关系，它们有各自不同的ID。

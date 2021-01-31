@@ -191,6 +191,10 @@ https://mp.weixin.qq.com/s/3OtrmC4htM4m2gUL8LfV3g
 
 不用绿幕也能实时抠图，商汤等提出只需单张图像、单个模型的新方法MODNet
 
+https://zhuanlan.zhihu.com/p/344325422
+
+Image matting——图像抠图入门篇
+
 ## 换脸技术
 
 https://mp.weixin.qq.com/s/X_cBFBc42qUFpuNGBtISRw

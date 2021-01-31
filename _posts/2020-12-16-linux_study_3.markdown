@@ -7,7 +7,21 @@ category: linux
 * toc
 {:toc}
 
-# Linux参考资源
+# 设置网卡eth0的IP地址和子网掩码
+
+`sudo ifconfig eth0 192.168.2.1 netmask 255.255.255.0`
+
+# 无线设置
+
+查看无线网卡状态：
+
+`iwconfig`
+
+`wpa_cli`
+
+扫描周围的wifi信号：
+
+`iwlist scanning`
 
 # 环境变量
 
@@ -29,7 +43,7 @@ PATH：可执行文件路径。
 
 LD_LIBRARY_PATH：动态链接库文件路径
 
-## tldr
+# tldr
 
 tldr是一个采用示例说明的简化版的man。
 
@@ -45,7 +59,7 @@ https://linuxtoy.org/archives/tldr.html
 
 tldr: 简读Manpage
 
-## 下载工具
+# 下载工具
 
 wget和curl是最常见的下载工具。这里推荐使用axel，该工具支持多路http下载。
 
@@ -63,9 +77,9 @@ http://os.51cto.com/art/201605/511423.htm
 
 Linux用户宝典：用于下载的十大命令行工具
 
-### NFS
+# NFS
 
-#### 客户端
+## 客户端
 
 `mount -t nfs 192.168.0.1:/tmp /mnt/nfs`
 
@@ -77,7 +91,7 @@ Linux用户宝典：用于下载的十大命令行工具
 
 `sudo apt install nfs-common libnfs-utils`
 
-#### 服务器端
+## 服务器端
 
 ```bash
 sudo apt install nfs-server
@@ -95,7 +109,7 @@ https://www.cnblogs.com/tu13/p/ubuntu_nfs.html
 
 ubuntu18.04搭建NFS服务器
 
-## OpenGrok
+# OpenGrok
 
 OpenGrok是一个阅读源码的Web系统。
 
@@ -113,7 +127,7 @@ http://mazhuang.org/2016/12/14/rtfsc-with-opengrok/
 
 搭建大型源码阅读环境——使用OpenGrok
 
-## ELF & PE
+# ELF & PE
 
 ![](/images/img4/exe.png)
 
@@ -129,7 +143,7 @@ https://mp.weixin.qq.com/s/_RD_jY-gJFxlT9DX2jGDAA
 
 只有170字节，最小的64位Hello World程序这样写成
 
-## 同步锁
+# 同步锁
 
 read-write lock、RCU lock、spin lock
 
@@ -183,7 +197,7 @@ https://mp.weixin.qq.com/s/gbCshU5eEn4Gefduk1zdCQ
 
 浅谈Java并发下的乐观锁
 
-## 参考
+# Linux参考资源
 
 https://mp.weixin.qq.com/s/n6D5_6K9TrnuXg3h6AiFNA
 
@@ -442,3 +456,7 @@ i++是线程安全的吗？
 https://mp.weixin.qq.com/s/U0qr1oZYXBBmZnC5vsKYLQ
 
 浅谈linux IO
+
+https://mp.weixin.qq.com/s/3kgwoyYI90XHm1QPqFJAiQ
+
+内存分页不就够了？为什么还要分段？

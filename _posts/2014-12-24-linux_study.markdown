@@ -266,6 +266,14 @@ https://mp.weixin.qq.com/s/ElWRnRHgjle8SYhnVQRj2Q
 
 网络IO套路
 
+----
+
+五种IO模型包括：阻塞IO、非阻塞IO、IO多路复用、信号驱动IO、异步IO。
+
+https://mp.weixin.qq.com/s/zIhCDj_0OSOmrevuqxJCBw
+
+一口气说出5种互联网高并发IO模型
+
 # 启动脚本
 
 Linux启动时，运行一个叫做init的程序，然后由它来启动后面的任务，包括多用户环境，网络等。
@@ -327,13 +335,3 @@ MAC地址的某些位有特定的含义，并不能随意设置。仍以47726565
 （11）本地管理的多播MAC
 
 由于针对ADSL路由等这样的网络终端，一般使用的都是统一管理的单播MAC。
-
-# 文件操作
-
-这里列举一些文件操作的命令，不详细讲解，仅供备忘。
-
-mkfifo：创建命名管道。
-
-remove：删除文件（包括命名管道）。
-
-access：可查询文件是否存在及其相关权限。

@@ -361,6 +361,10 @@ https://mp.weixin.qq.com/s/UTtdu1ONK2XnOOaLSk1hfg
 
 从单词嵌入到文档距离 ：WMD一种有效的文档分类方法
 
+https://mp.weixin.qq.com/s/mg5LtMj6hEqwKbJcdjA-eg
+
+竞赛中的文本相似性！
+
 ## 文本摘要
 
 https://mp.weixin.qq.com/s/jk1XgnuydrsTg3HvV0CVvw

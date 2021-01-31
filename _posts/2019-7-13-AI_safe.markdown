@@ -273,6 +273,10 @@ https://mp.weixin.qq.com/s/r609z6-jhyJIk8EwcEWmEg
 
 文本预训练模型在信息安全场景的探索和实践
 
+https://mp.weixin.qq.com/s/sZ7VQz26c5mrWAsnMKx8Hw
+
+图算法在网络黑产挖掘中的思考
+
 # 硬件
 
 https://mp.weixin.qq.com/s/ZexnsNmqsD2yq-7YNASohw

@@ -45,6 +45,14 @@ https://segmentfault.com/a/1190000023936425
 
 ## TCP
 
+所谓粘包就是连续给对端发送两个或者两个以上的数据包，对端在一次收取中可能收到的数据包大于1个，大于1个，可能是几个（包括一个）包加上某个包的部分，或者干脆就是几个完整的包在一起。当然，也可能收到的数据只是一个包的部分，这种情况一般也叫半包。
+
+https://mp.weixin.qq.com/s/sbBhBowAfhnaydErmoTxDg
+
+TCP协议如何解决粘包、半包问题
+
+----
+
 https://mp.weixin.qq.com/s/zU1Mw3yaNmk4D5pP9vxxaw
 
 TCP三次握手和SYN攻击
