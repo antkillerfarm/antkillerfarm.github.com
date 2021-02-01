@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  垃圾筐
+title:  垃圾筐, 真垃圾筐, 机械, 气象
 category: Nature 
 ---
 
@@ -223,45 +223,21 @@ https://mp.weixin.qq.com/s/CkZhqcGxRoOoaLGvQIVUIQ
 
 科学家开发出“反太阳能”装置，黑夜照样能发电！
 
-https://mp.weixin.qq.com/s/hWPX-lR3Eo46ofMNC2_5oQ
-
-有关诺奖的故事：简单的电学实验，造就了一个有趣的研究领域
-
 https://mp.weixin.qq.com/s/iGebSkPLeR9Vc2VmeHALfw
 
 尿尿尿的到处都是？我总结了男生尿尿的最强攻略！
-
-https://mp.weixin.qq.com/s/BfQ0qUHpAfmB3_mHvyeCDw
-
-不好！为了一点铅，物理学家和考古学家打起来了！（低本底铅）
 
 https://mp.weixin.qq.com/s/Rd-rOSV14sNYg0ZXsPdzuQ
 
 60年前构想的未来世界，我们已经实现了50%（《小灵通漫游未来》）
 
-https://mp.weixin.qq.com/s/uIYvfBlmzYkXS5hcgsCAKg
-
-一滴水从高处落下来，会不会砸死人？
-
-https://mp.weixin.qq.com/s/ThQgmii_Zu29thw_XY2W1g
-
-研究反物质：寻找另一个“我”
-
-https://mp.weixin.qq.com/s/tU6Incnq63fT61z6y9E-Jg
-
-一个5000多年的老古董，竟有人把它玩出吉尼斯世界纪录，这波操作我跪服......（陀螺）
-
 http://www.makertime.org/
 
 一个硬核的geek网站
 
-https://mp.weixin.qq.com/s/kqTyco7fPXKerBV5ocp8fQ
+https://www.sohu.com/a/388192289_597695
 
 我们拉的屎都去哪了？？？
-
-https://mp.weixin.qq.com/s/hiXfq_eR3OWbp_xq9hpxHg
-
-神经生物学家贝尔斯：我真的度过了最好的一生
 
 https://mp.weixin.qq.com/s/w6aY1_RryWnFq8FomPTDhw
 
@@ -274,6 +250,40 @@ https://mp.weixin.qq.com/s/w6aY1_RryWnFq8FomPTDhw
 https://mp.weixin.qq.com/s/YyXpzyvkSvRd4KR8Wlac9g
 
 寒冬腊月，你被摇粒绒征服了吗？
+
+# 真垃圾筐
+
+https://zhuanlan.zhihu.com/p/92515874
+
+方舟子: P图技术谁最高？中国院士曹雪涛
+
+https://news.ifeng.com/c/7rjYqMdUTaK
+
+“美国方舟子”、PS杀手，举报南开校长的她究竟何许人也？
+
+https://new.qq.com/omn/20191118/20191118A0LULL00.html
+
+一个科研狗对“南开校长曹院士论文造假事件”的完全剖析
+
+https://zhuanlan.zhihu.com/p/92387410
+
+Elisabeth M Bik质疑曹雪涛论文图片复用等不端行为的更新记录
+
+https://zhuanlan.zhihu.com/p/92940106
+
+“南开大学校长曹雪涛院士涉嫌论文数据造假事件”相关推文收录
+
+----
+
+
+
+https://zhuanlan.zhihu.com/p/347299733
+
+14年前，林国强院士发现自己论文无法复现后，是这样处理的
+
+https://www.zhihu.com/question/441079956
+
+中科院监审局道德委侯兴宇处长发文称“重复实验在生命科学中并不一定可靠”，你认同吗？
 
 # 机械
 

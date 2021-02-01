@@ -396,3 +396,7 @@ https://mp.weixin.qq.com/s/zQldWMBK5LWDFMyLbobK5w
 https://mp.weixin.qq.com/s/muGLG9WJNsZqZmGuN0u5RQ
 
 Python+Dash快速web应用开发——基础概念篇
+
+https://mp.weixin.qq.com/s/rMrY-M60jhdfDnX6LYOlCA
+
+Python+Dash快速web应用开发——页面布局篇

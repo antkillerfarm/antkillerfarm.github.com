@@ -383,6 +383,10 @@ https://mp.weixin.qq.com/s/0AlXjjYIQUU9tkw2LNiR_A
 
 MySQL不会丢失数据的秘密，就藏在它的7种日志里
 
+https://mp.weixin.qq.com/s/b7Qnzh1EIM4wbExwmIkJyA
+
+一个线上SQL死锁异常分析：深入了解事务和锁
+
 # 数据库参考资源
 
 https://www.cnblogs.com/ahu-lichang/p/10899747.html

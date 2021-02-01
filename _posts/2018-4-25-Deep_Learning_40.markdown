@@ -325,6 +325,10 @@ https://zhuanlan.zhihu.com/p/342249413
 
 深度学习行人重识别综述与展望
 
+https://zhuanlan.zhihu.com/p/345252131
+
+FastReID V1.0：Beyond reID
+
 # 图像检索
 
 ## 传统方法

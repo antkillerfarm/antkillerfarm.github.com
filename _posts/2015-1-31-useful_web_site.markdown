@@ -418,6 +418,10 @@ https://mp.weixin.qq.com/s/EWDRd4JDvrVorOgWvJIksQ
 
 还只是39岁！一个天才年轻程序员的陨落
 
+https://mp.weixin.qq.com/s/UWMl0bd7hIgoFUWZRgmajQ
+
+谁在为科学买单？
+
 # 知名AI公司技术主页
 
 http://uber.ai/
