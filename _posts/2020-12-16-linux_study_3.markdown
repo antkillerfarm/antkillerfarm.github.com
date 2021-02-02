@@ -197,6 +197,30 @@ https://mp.weixin.qq.com/s/gbCshU5eEn4Gefduk1zdCQ
 
 浅谈Java并发下的乐观锁
 
+# 动态库版本设置
+
+linux动态库使用soname来设定动态库的版本兼容性。
+
+`g++ -fPIC -shared -Wl,-soname,libbar.so.1 -o libbar.so.1.1.0`
+
+这个命令生成的动态库的名字为`libbar.so.1.1.0`，soname为`libbar.so.1`。
+
+soname的意思是：形如`libbar.so.1.x.y`的动态库，都可以兼容。
+
+`SET_TARGET_PROPERTIES(hello PROPERTIES VERSION 1.2 SOVERSION 1)`
+
+这是cmake中的用法。
+
+参考：
+
+https://www.jianshu.com/p/931a814083ce
+
+Linux动态库soname的使用
+
+https://tldp.org/HOWTO/Program-Library-HOWTO/shared-libraries.html
+
+Shared Libraries
+
 # Linux参考资源
 
 https://mp.weixin.qq.com/s/n6D5_6K9TrnuXg3h6AiFNA
@@ -440,23 +464,3 @@ https://mp.weixin.qq.com/s/pRsXWAv7wgYcN_jlzcA2YA
 https://mp.weixin.qq.com/s/snQ3T86usv4rXz0MMQvFfQ
 
 如何回答性能优化的问题，才能打动阿里面试官？
-
-https://www.cnblogs.com/zhouyu629/p/3734494.html
-
-一次心惊肉跳的服务器误删文件的恢复过程
-
-https://mp.weixin.qq.com/s/5iyWeSeDzuA2cY7YBMhk7w
-
-MMU那些事儿
-
-https://mp.weixin.qq.com/s/0OeeYUgBBVVMtxscvzgJHw
-
-i++是线程安全的吗？
-
-https://mp.weixin.qq.com/s/U0qr1oZYXBBmZnC5vsKYLQ
-
-浅谈linux IO
-
-https://mp.weixin.qq.com/s/3kgwoyYI90XHm1QPqFJAiQ
-
-内存分页不就够了？为什么还要分段？

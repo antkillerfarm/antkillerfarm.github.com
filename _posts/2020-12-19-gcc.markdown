@@ -115,6 +115,12 @@ https://mp.weixin.qq.com/s/yITNjo_UQi8-OKQNOfGrPw
 
 C++服务编译耗时优化原理及实践
 
+## gdb
+
+设置参数：
+
+`set args -l`
+
 ## 参考
 
 https://mp.weixin.qq.com/s/30Zh_8H6QfDgJuG9e9ORSQ

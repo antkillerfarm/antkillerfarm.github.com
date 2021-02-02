@@ -93,13 +93,27 @@ SYCL是Khronos提供的基于OpenCL的C++接口层。
 
 https://www.khronos.org/sycl
 
-## ComputeCpp
+### ComputeCpp
 
 ComputeCpp是Codeplay公司提供的SYCL接口的实现。它除了支持OpenCL之外，还支持CUDA和C++AMP。
 
 官网：
 
 https://www.codeplay.com/products/computesuite/computecpp
+
+### 其他实现
+
+triSYCL：
+
+https://github.com/triSYCL/triSYCL
+
+DPC++：
+
+https://github.com/intel/llvm/tree/sycl
+
+hipSYCL：
+
+https://github.com/illuhad/hipSYCL
 
 ## OpenVG
 
