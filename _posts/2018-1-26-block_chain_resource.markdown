@@ -384,3 +384,41 @@ pad/stride/dilation改变$$O_h,O_w$$。
 group改变$$K_o, O_c$$。
 
 multiplier改变$$O_c$$，但不改变$$K_o$$，计算量不变，IO增加N倍。所以将上述公式的$$O_c$$改为$$K_o$$即可满足所有情况。
+
+# 数据库参考资源+
+
+https://www.cnblogs.com/ahu-lichang/p/10899747.html
+
+数据库三大范式（1NF,2NF,3NF）及ER图
+
+https://mp.weixin.qq.com/s/m_JMXU6iMS4SckzWZYtIUA
+
+腾讯分布式数据库TDSQL金融级能力的架构原理解读
+
+https://mp.weixin.qq.com/s/jdPE9WClBuimIHVxJnwwUw
+
+字节跳动自研强一致在线KV&表格存储实践-上篇
+
+https://mp.weixin.qq.com/s/DvUBnWBqb0XGnicKUb-iqg
+
+字节跳动自研强一致在线KV&表格存储实践-下篇
+
+https://mp.weixin.qq.com/s/PPlrrtcdrtKT3afgWOU8Pg
+
+为什么数据库不应该使用外键
+
+https://mp.weixin.qq.com/s/k1sK-QQjVqdJnpWNCV0pUA
+
+并发环境下，先操作数据库还是先操作缓存？
+
+https://mp.weixin.qq.com/s/I3ca2HAuSTtUJSZyHNe1vA
+
+数据库读写分离要注意哪些细节
+
+https://mp.weixin.qq.com/s/oV5F_K2mmE_kK77uEZSjLg
+
+字节跳动分布式表格存储系统的演进
+
+https://mp.weixin.qq.com/s/ZjnRzI18plggKTv_nPBsEw
+
+字节跳动表格存储中的事务

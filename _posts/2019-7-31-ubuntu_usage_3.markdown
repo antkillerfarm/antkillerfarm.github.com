@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Ubuntu使用技巧（三）, Linux镜像文件
+title:  Ubuntu使用技巧（三）, Linux镜像文件, diff&patch
 category: linux 
 ---
 
@@ -287,6 +287,42 @@ http://blog.csdn.net/andy205214/article/details/7390287
 MTD(memory technology device):内存技术设备，是linux用于描述ROM，NAND，NOR等内存设备的子系统的抽象。
 
 除了MTD之外，常用的还有SPI Flash方案。
+
+# diff&patch
+
+diff/patch这对工具在数学上来说，diff是对2个集合求差，patch是求和。
+
+```bash
+diff -uNr A B > C #生成A和B的diff文件C,-uNr为最常用的选项
+patch A C #给A打上diff文件得到B
+patch -R B C #B还原为A
+```
+
+## 给目录应用patch。
+
+`patch -p1 <1.patch`
+
+这种情况适合1.patch中包含对多个文件的修改时。
+
+## 批量应用patch
+
+有的时候，patch不是一个patch文件，而是一个目录中的若干个patch文件。这时可用如下办法：
+
+`find . -name "*.patch">1.txt`
+
+`sort 1.txt | xargs cat >2.patch`
+
+`patch -p1 <2.patch`
+
+参考：
+
+https://mp.weixin.qq.com/s/VlQnDAD4dGQpmHNil7uPuQ
+
+如何在Linux上使用xargs命令
+
+https://mp.weixin.qq.com/s/HchAIWJmqPNTqEEwb3TbAg
+
+Linux下xargs命令
 
 # Linux参考资源+
 

@@ -137,6 +137,10 @@ https://mp.weixin.qq.com/s/DbR-Px_-vK-4xOweqsQKxw
 
 基于网络单纯形法求解的最小流费用问题
 
+https://mp.weixin.qq.com/s/KkfiDUWHuctfV7w6wvRwcA
+
+如何让8岁表妹了解最经典的运输问题
+
 ----
 
 在1978年，新的廉价航空公司进入市场。这些航空公司以劳动力成本低，操作简单(点对点)，服务简单，规模效应，以及技术变革的优势，能够以远低于全服务航空公司的票价获取利润。

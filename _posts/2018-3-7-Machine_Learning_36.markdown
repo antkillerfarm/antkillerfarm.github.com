@@ -281,6 +281,10 @@ https://mp.weixin.qq.com/s/A3b2L_0-atm5jJslhr50Bg
 
 最新LightGBM进展介绍报告，39页ppt
 
+https://mp.weixin.qq.com/s/M0W6-bLZcsdMsKBUAeKDnw
+
+树模型奠基性论文解读——GBM: Gradient Boosting Machine
+
 # CatBoost
 
 这是Yandex推出的Boost工具包。

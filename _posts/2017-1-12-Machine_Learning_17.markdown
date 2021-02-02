@@ -136,6 +136,10 @@ https://mp.weixin.qq.com/s/z13iXMwJNzHfMCeXxYGRug
 
 一文带你了解协同过滤的前世今生
 
+https://mp.weixin.qq.com/s/ianqpVVsks9NlMGYesWPIQ
+
+从原理到实践，万字长文解析矩阵分解推荐算法
+
 <a name="PCA"/>
 
 # 主成分分析

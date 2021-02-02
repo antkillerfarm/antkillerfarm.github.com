@@ -193,6 +193,10 @@ https://blog.csdn.net/xxradon/article/details/104715524
 
 onnx模型如何增加或者去除里面node，即修改图方法
 
+https://mp.weixin.qq.com/s/H1tDcmrg0vTcSw9PgpgIIQ
+
+ONNX初探
+
 ## NNVM
 
 陈天奇等推出的NNVM也是一个类似的中间表示。官网：

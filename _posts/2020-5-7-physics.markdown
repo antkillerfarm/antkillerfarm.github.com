@@ -21,6 +21,10 @@ https://mp.weixin.qq.com/s/9NnfCJUmbxMXkDxNsNOuyw
 
 敲黑板——物理学家教你们打水漂！！！
 
+https://mp.weixin.qq.com/s/l3dPUj8SxOrnGHBlxxpS5w
+
+嫦娥五号在大气层“打水漂”？你玩的打水漂里到底有什么力学问题？
+
 ----
 
 Karman Vortex Street：在一定条件下的定常来流绕过某些物体时，物体两侧会周期性地脱落出**旋转方向相反**、并排列成有规则的双列线涡。

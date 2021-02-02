@@ -393,6 +393,14 @@ https://mp.weixin.qq.com/s/KTESiQVdgDkRwpHzNb_oww
 
 深入互联网广告中的出价模式（补充篇）
 
+https://mp.weixin.qq.com/s/M_DglkdeBw6Gmj4bO2LjcA
+
+推荐系统产品概述
+
+https://mp.weixin.qq.com/s/7xZDVicjq-8C3qJIZGarmg
+
+推荐系统架构与算法流程详解
+
 # 推荐系统进阶+
 
 https://mp.weixin.qq.com/s/sDG5xm1JZ8rIEaVXeVQ5cA

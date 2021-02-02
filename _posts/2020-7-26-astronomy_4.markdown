@@ -49,6 +49,10 @@ https://mp.weixin.qq.com/s/5JLSuv54Xyt_Fcg_Ps1Rsg
 
 最古老、最遥远、最明亮...
 
+https://mp.weixin.qq.com/s/eO71ulxgc-Fdx8KtMf7CXg
+
+40多年前美国赠送给我国1克月岩样品，背后有怎样的故事？
+
 # 两弹一星
 
 https://view.inews.qq.com/a/20171125A0E3WT00

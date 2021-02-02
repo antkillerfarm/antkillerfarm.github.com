@@ -387,20 +387,6 @@ https://mp.weixin.qq.com/s/b7Qnzh1EIM4wbExwmIkJyA
 
 一个线上SQL死锁异常分析：深入了解事务和锁
 
-# 数据库参考资源
+https://mp.weixin.qq.com/s/58Xm6IrrTClny6DsNAbxrg
 
-https://www.cnblogs.com/ahu-lichang/p/10899747.html
-
-数据库三大范式（1NF,2NF,3NF）及ER图
-
-https://mp.weixin.qq.com/s/m_JMXU6iMS4SckzWZYtIUA
-
-腾讯分布式数据库TDSQL金融级能力的架构原理解读
-
-https://mp.weixin.qq.com/s/jdPE9WClBuimIHVxJnwwUw
-
-字节跳动自研强一致在线KV&表格存储实践-上篇
-
-https://mp.weixin.qq.com/s/DvUBnWBqb0XGnicKUb-iqg
-
-字节跳动自研强一致在线KV&表格存储实践-下篇
+详解一条SQL的执行过程

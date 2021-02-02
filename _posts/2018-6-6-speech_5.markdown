@@ -193,6 +193,12 @@ Mel-frequency Cepstral Coefficients是由Paul Mermelstein提出的一种音频�
 
 1 double-delta energy feature
 
+参考：
+
+https://mp.weixin.qq.com/s/KFBINcap3dIOVPjpBEbj6w
+
+浅谈MFCC/HMM/GMM/EM/LM
+
 ## 计算能量谱
 
 energy的计算比较简单，无论是如上图的时域能量统计，还是在DFT之后进行频域能量统计都是可以的。参见《数学狂想曲（一）》。

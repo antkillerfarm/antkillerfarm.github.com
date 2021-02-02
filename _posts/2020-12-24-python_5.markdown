@@ -400,3 +400,7 @@ Python+Dash快速web应用开发——基础概念篇
 https://mp.weixin.qq.com/s/rMrY-M60jhdfDnX6LYOlCA
 
 Python+Dash快速web应用开发——页面布局篇
+
+https://mp.weixin.qq.com/s/MzORtWN-mSmY9N5Ps5m5Mw
+
+Python+Dash快速web应用开发：回调交互篇（上）
