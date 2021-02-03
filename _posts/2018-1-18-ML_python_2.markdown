@@ -119,6 +119,10 @@ https://mp.weixin.qq.com/s/4YiOErETXRD4kQc7wTX3Bw
 
 用Matplotlib轻松复刻分析图，看看哪个城市买房最自由
 
+https://mp.weixin.qq.com/s/f6oJNAhI43LiP0P_c5_Tjg
+
+25个常用Matplotlib图的Python模板代码
+
 ## Pandas
 
 Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。

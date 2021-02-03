@@ -125,6 +125,12 @@ http://ganglia.sourceforge.net/
 
 ## Jenkins
 
+Continuous Integration（CI）：持续集成
+
+Continuous Delivery（CD）：持续交付
+
+Continuous Deployment（CD）：持续部署
+
 Jenkins是一个开源软件项目，旨在提供一个开放易用的软件平台，使软件的持续集成变成可能。
 
 https://jenkins.io/index.html
@@ -148,6 +154,10 @@ www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html
 https://mp.weixin.qq.com/s/wmpbdj2GMb10xRtjRUpesw
 
 携程旅行App iOS工程编译优化实践
+
+https://mp.weixin.qq.com/s/Tvmcwg8g85pompnyI3rPtg
+
+用GitLab做CI/CD是什么感觉，太强了
 
 ## Walle
 

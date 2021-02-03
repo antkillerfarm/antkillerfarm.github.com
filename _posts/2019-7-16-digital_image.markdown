@@ -120,6 +120,10 @@ https://mp.weixin.qq.com/s/xEOSica0kYxOgwmGFQKbRA
 
 ​多视图立体视觉: CVPR 2019 与 AAAI 2020 上的ACMH、ACMM及ACMP算法介绍
 
+https://mp.weixin.qq.com/s/WEbdO1F_Fz84_-Go7Fgm2Q
+
+计算机视觉中的双目立体视觉和体积度量
+
 ## 结构光
 
 https://mp.weixin.qq.com/s/o_XsmqLSPhvuC0iiK7xHag

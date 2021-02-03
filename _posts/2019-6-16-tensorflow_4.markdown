@@ -305,10 +305,6 @@ https://mp.weixin.qq.com/s/n4nEtyRc5G44kj3zmHpd5g
 
 TensorFlow实战——图像分类神经网络模型
 
-https://mp.weixin.qq.com/s?__biz=MzU1OTMyNDcxMQ==&mid=2247484836&idx=1&sn=0bc47c662ea64aa833df9fb9c4b1d706
-
-TensorFlow模型优化工具包正式推出
-
 https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
 
 简易浣熊识别器是如何实现的
@@ -396,3 +392,15 @@ tensorflow object detection API使用之GPU训练实现宠物识别
 https://mp.weixin.qq.com/s/knw7yuUxHe-qeCLfj20onw
 
 Bayesian GAN的TensorFlow实现
+
+https://mp.weixin.qq.com/s/Sxui9CvdGocIxVG2FM4JtQ
+
+基于tensorflow使用CNN-RNN进行中文文本分类！
+
+https://mp.weixin.qq.com/s/kJxXIN6D5TEEFSFhGJNIyw
+
+开源神经网络图片上色技术解析
+
+https://mp.weixin.qq.com/s/qXMRHxDDRa-_rJZMhXWB4w
+
+详解TensorFlow的新seq2seq模块及其用法

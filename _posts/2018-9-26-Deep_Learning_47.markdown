@@ -269,6 +269,10 @@ https://mp.weixin.qq.com/s/BNYUkocbKzqTjTNbGuNBzg
 
 基于3DMM的三维人脸重建技术总结
 
+https://www.cnblogs.com/wuyida/p/6301262.html
+
+三维重建技术概述
+
 # NetVLAD
 
 NetVLAD算的上是CNN+传统算子的一个范例。

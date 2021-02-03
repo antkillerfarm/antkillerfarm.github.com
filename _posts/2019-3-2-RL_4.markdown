@@ -215,6 +215,10 @@ https://mp.weixin.qq.com/s/yGQSihfBDcXgqBnvvpQDog
 
 蒙特卡罗方法入门
 
+https://mp.weixin.qq.com/s/fAxDlrumUjc_6eqwGtcSxQ
+
+详解蒙特卡洛方法：这些数学你搞懂了吗？
+
 # Temporal-Difference Learning
 
 ## TD

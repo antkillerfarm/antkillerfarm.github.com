@@ -340,6 +340,10 @@ https://mp.weixin.qq.com/s/ExbwHCFavFZhmWnWIK6wlQ
 
 深入浅出Spark：存储系统
 
+https://mp.weixin.qq.com/s/yiqgPqM7nnNlJ1zCp6blTQ
+
+Hive SQL迁移Spark SQL在滴滴的实践
+
 # Zookeeper
 
 http://zookeeper.apache.org/

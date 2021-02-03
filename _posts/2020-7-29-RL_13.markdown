@@ -249,3 +249,7 @@ https://mp.weixin.qq.com/s/tv8Tq9hIsll9_aPGUKI8qQ
 https://zhuanlan.zhihu.com/p/25319023
 
 强化学习（Reinforcement Learning）知识整理
+
+https://mp.weixin.qq.com/s/a3k45oJqzkcy6fpgrf65pA
+
+决策算法，694页pdf阐述不确定性决策算法

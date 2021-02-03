@@ -390,3 +390,7 @@ https://mp.weixin.qq.com/s/b7Qnzh1EIM4wbExwmIkJyA
 https://mp.weixin.qq.com/s/58Xm6IrrTClny6DsNAbxrg
 
 详解一条SQL的执行过程
+
+https://mp.weixin.qq.com/s/Vlsm9rHHaCl02gZmDQfgDA
+
+到底是什么原因才导致 select * 效率低下的

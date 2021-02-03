@@ -405,6 +405,10 @@ https://www.zhihu.com/question/33783546
 
 Python如何画出漂亮的地图？
 
+https://mp.weixin.qq.com/s/F6ePAQCYve4C8O9_0i9G5g
+
+大一新生开源Python脚本可视化工具，火了！
+
 ## 参考
 
 https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg

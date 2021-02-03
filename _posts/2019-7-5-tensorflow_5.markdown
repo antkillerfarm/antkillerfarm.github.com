@@ -9,18 +9,6 @@ category: AI
 
 # TensorFlow
 
-https://mp.weixin.qq.com/s/Sxui9CvdGocIxVG2FM4JtQ
-
-基于tensorflow使用CNN-RNN进行中文文本分类！
-
-https://mp.weixin.qq.com/s/kJxXIN6D5TEEFSFhGJNIyw
-
-开源神经网络图片上色技术解析
-
-https://mp.weixin.qq.com/s/qXMRHxDDRa-_rJZMhXWB4w
-
-详解TensorFlow的新seq2seq模块及其用法
-
 https://mp.weixin.qq.com/s/YdcIDXadEnDsyfc6Iu1gGw
 
 手把手教你用TensorFlow训练模型
@@ -357,10 +345,6 @@ https://mp.weixin.qq.com/s/1mSF2HKa72HgWq_q14HMtQ
 
 TensorFlow调试程序（二）
 
-https://mp.weixin.qq.com/s/L9kYXFXYmKadghAhd-51pA
-
-TensorFlow模型优化工具包—剪枝API
-
 https://mp.weixin.qq.com/s/OGsvcfU1VlhNZYgEGLimsQ
 
 爱奇艺基于TensorFlow Lite的移动端AR解决方案SmileAR
@@ -392,10 +376,6 @@ TensorFlow 2.0迁移学习实践指南
 https://mp.weixin.qq.com/s/Rb0Fh9TZJo-IdEoxlgD4gw
 
 如何让模型在生产环境上推理得更快
-
-https://mp.weixin.qq.com/s/asPSPeBaRF_4eXcRXU-Zfw
-
-TensorFlow模型优化工具包—训练时量化
 
 https://mp.weixin.qq.com/s/xSJRhHbjcgk14Kr_-Ycr5A
 

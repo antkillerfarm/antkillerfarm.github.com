@@ -165,14 +165,6 @@ https://mp.weixin.qq.com/s/_0SN18UFx_GGlHebUaar9A
 
 兵器试验中心数字弹道的传奇。陆载德的故事——从一位左腿残疾的清华学子成长为90年代共和国军队中唯一的独腿将军。
 
-![](/images/img3/DC.gif)
-
-![](/images/img3/BLDC.gif)
-
-https://mp.weixin.qq.com/s/rpiOZWQwj92MiFQPXD-NMQ
-
-何谓BLDC电机？BLDC电机是如何旋转的？
-
 https://mp.weixin.qq.com/s/IQ8YSyp-m2jCIDfLtuh_ew
 
 天上会掉金子吗？会！你现在用的这些就是！
@@ -207,10 +199,6 @@ https://mp.weixin.qq.com/s/SkQ69SnATYXzlXZ2FEWVsw
 
 为什么金属不能放进微波炉，结果太可怕了......
 
-https://mp.weixin.qq.com/s/A9M_2DVqmFQaTdSy2yEJ1A
-
-为什么烤面包会这么香？
-
 https://mp.weixin.qq.com/s/K-ukk-HuztMDCyHWLZaXww
 
 谁是这个世界上最“有名”的科学家？——亚历山大·冯·洪堡（Alexander von Humboldt）
@@ -218,14 +206,6 @@ https://mp.weixin.qq.com/s/K-ukk-HuztMDCyHWLZaXww
 https://mp.weixin.qq.com/s/NE20FomTJCFd_HSfXTHyjg
 
 年仅21岁，干掉6位诺贝尔奖得主，被誉为科学界最强杀手，却惨被人骂成一个笑话（央视《走近科学》栏目）
-
-https://mp.weixin.qq.com/s/CkZhqcGxRoOoaLGvQIVUIQ
-
-科学家开发出“反太阳能”装置，黑夜照样能发电！
-
-https://mp.weixin.qq.com/s/iGebSkPLeR9Vc2VmeHALfw
-
-尿尿尿的到处都是？我总结了男生尿尿的最强攻略！
 
 https://mp.weixin.qq.com/s/Rd-rOSV14sNYg0ZXsPdzuQ
 
@@ -275,7 +255,9 @@ https://zhuanlan.zhihu.com/p/92940106
 
 ----
 
+没过几年，荷兰人惠更斯也发明了自己的气泵，并通过了研究发现了一种“异常悬浮效应”——在气泵中，水竟然可以悬浮起来。
 
+然而，英吉利海峡对面的波义尔和胡克却从来没有重复起来这个实验。1663年，惠更斯被邀请到英国，在他的亲自指导下，胡克和波义尔终于得以重复出这个“异常悬浮效应”。果然，科学法则并没有因为隔了一道英吉利海峡而有所不同。
 
 https://zhuanlan.zhihu.com/p/347299733
 
@@ -303,6 +285,16 @@ https://www.zhihu.com/question/22910286
 https://mp.weixin.qq.com/s/vII5zOWBArxDvsHiyAyYGQ
 
 消音器
+
+----
+
+![](/images/img3/DC.gif)
+
+![](/images/img3/BLDC.gif)
+
+https://mp.weixin.qq.com/s/rpiOZWQwj92MiFQPXD-NMQ
+
+何谓BLDC电机？BLDC电机是如何旋转的？
 
 ----
 
@@ -381,3 +373,7 @@ https://mp.weixin.qq.com/s/Ez_FlfFOwpDKDqvIlJYfSQ
 https://mp.weixin.qq.com/s/jQpUfIueOfCZ_Gu09JE94Q
 
 因为太冷，青岛的海面“冒烟了”！
+
+https://mp.weixin.qq.com/s/pe1IQJfziJvCJ9UGlcnLcw
+
++4°C的世界

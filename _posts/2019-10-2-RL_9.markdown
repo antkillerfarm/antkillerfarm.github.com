@@ -55,6 +55,10 @@ https://mp.weixin.qq.com/s/ce9W3FbLdsqAEyvw6px_RA
 
 Actor Critic——一个融合基于策略梯度和基于值优点的强化学习算法
 
+https://mp.weixin.qq.com/s/BZUlUKkPMAP5r6HFJQq8-A
+
+全面总结(值函数与优势函数)的估计方法
+
 # 博弈论
 
 博弈论（game theory）是一门单独的学科，和RL并无统属关系。然而由于RL，特别是MARL大量应用到了相关的知识，所以这里也把它写在RL系列里了。

@@ -318,6 +318,10 @@ https://mp.weixin.qq.com/s/VqHN-cIdNa8l1lKlu4AD4w
 
 24种可视化图表优缺点对比
 
+https://mp.weixin.qq.com/s/4nIKkAPDrYaTE1sGtbCO9A
+
+不使用直方图的6个原因以及应该使用哪个图替代
+
 # Pytorch+++
 
 https://mp.weixin.qq.com/s/RBclQdtaA8prvSoUUdhrEQ

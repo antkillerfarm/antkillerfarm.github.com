@@ -1,13 +1,47 @@
 ---
 layout: post
-title:  深度加速（七）——模型压缩与加速进阶
+title:  深度加速（七）——模型优化工具, 模型压缩与加速进阶
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
+# 模型优化工具
+
+## Amazon SageMaker Neo
+
+官网：
+
+https://aws.amazon.com/cn/sagemaker/neo/
+
+## 参考
+
+https://mp.weixin.qq.com/s/T9AUFnLjNDUaE9zKmOhbEw
+
+将GEMM的性能提升200倍!AutoKernel算子优化工具正式开源
+
+https://mp.weixin.qq.com/s/L9kYXFXYmKadghAhd-51pA
+
+TensorFlow模型优化工具包—剪枝API
+
+https://mp.weixin.qq.com/s/asPSPeBaRF_4eXcRXU-Zfw
+
+TensorFlow模型优化工具包—训练时量化
+
+https://mp.weixin.qq.com/s/fa5S3o1somvdAAJF1FGqvA
+
+TensorFlow模型优化工具包正式推出
+
 # 模型压缩与加速进阶
+
+https://zhuanlan.zhihu.com/p/138059904
+
+一文看懂深度学习模型压缩和加速
+
+https://zhuanlan.zhihu.com/p/179945324
+
+一文深入深度学习模型压缩和加速
 
 https://mp.weixin.qq.com/s/QSGgvhkMUj3cXVlQwlzTFQ
 
@@ -356,39 +390,3 @@ https://zhuanlan.zhihu.com/p/65348860
 https://zhuanlan.zhihu.com/p/67272163
 
 百度提出关于网络压缩和加速的新剪枝算法
-
-https://mp.weixin.qq.com/s/jHv3Amti1YZq51Df2mNFtg
-
-network sliming:加快模型速度同时不损失精度
-
-https://mp.weixin.qq.com/s/gwXXkWumGWy24oWuZKSyAQ
-
-MIT韩松组推出升级版AutoML方法，一个网络适配所有硬件
-
-https://zhuanlan.zhihu.com/p/76909380
-
-轻量型网络：MoGA简介
-
-https://mp.weixin.qq.com/s/kgl7mz4bK7SywkbViY_qhQ
-
-利用LSTM思想来做CNN剪枝，北大提出Gate Decorator
-
-https://mp.weixin.qq.com/s/3_famaAmkAN-4xVEupSXSA
-
-华为、北大等首创GAN剪枝算法，线上加速3倍以上
-
-https://mp.weixin.qq.com/s/KuZ-mZKt7bTWhzygK1lmSg
-
-加速目标检测
-
-https://zhuanlan.zhihu.com/p/261146248
-
-原生模型上的战斗
-
-https://mp.weixin.qq.com/s/jqRBrs9Y_-3qvemL0RTflA
-
-支付宝如何优化移动端深度学习引擎？
-
-https://mp.weixin.qq.com/s/NJzGR-tY_WWeccbdshHckA
-
-基于交错组卷积的高效深度神经网络

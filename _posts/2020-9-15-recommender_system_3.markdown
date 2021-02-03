@@ -401,6 +401,10 @@ https://mp.weixin.qq.com/s/7xZDVicjq-8C3qJIZGarmg
 
 推荐系统架构与算法流程详解
 
+https://mp.weixin.qq.com/s/DZZ_BCiNw0EZg7V0KvhXVw
+
+知乎搜索排序模型的演进
+
 # 推荐系统进阶+
 
 https://mp.weixin.qq.com/s/sDG5xm1JZ8rIEaVXeVQ5cA

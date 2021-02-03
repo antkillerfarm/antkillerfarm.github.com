@@ -256,3 +256,7 @@ CTR学习笔记&代码实现1-深度学习的前奏LR->FFM
 https://mp.weixin.qq.com/s/V8uBRgabV7iQAJ-I0pDmAg
 
 关于序列推荐的全面调研与总结
+
+https://mp.weixin.qq.com/s/QODGcKDCNR4rDhn-mschgg
+
+从Wide and Deep、DeepFM到DLRM，现代的推荐系统算法研究

@@ -89,6 +89,14 @@ http://www.sohu.com/a/164277987_473283
 
 一名在斯坦福教授TensorFlow教师的“忏悔”：我觉得自己像个骗子
 
+----
+
+Chip Huyen的新课：
+
+https://stanford-cs329s.github.io/
+
+CS 329S: Machine Learning Systems Design
+
 # blog
 
 http://www.jianshu.com/u/eaec1fc422e9

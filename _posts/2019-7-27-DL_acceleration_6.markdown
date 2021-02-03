@@ -293,6 +293,10 @@ https://mp.weixin.qq.com/s/xgCtgEMRZ1VgzRZWjYIjTQ
 
 知乎搜索文本相关性与知识蒸馏
 
+https://mp.weixin.qq.com/s/6K5FvjMIVer-_fXJazU20Q
+
+深度学习中的3个秘密：集成，知识蒸馏和蒸馏
+
 # 硬件加速技巧
 
 多通道卷积操作最终可以转化为矩阵运算，如下图所示：
@@ -353,20 +357,6 @@ https://mp.weixin.qq.com/s/w0YCm8TEPxFg0CR6g4A28w
 
 再探矩阵乘法优化
 
-https://mp.weixin.qq.com/s/T9AUFnLjNDUaE9zKmOhbEw
-
-将GEMM的性能提升200倍!AutoKernel算子优化工具正式开源
-
 https://mp.weixin.qq.com/s/moQnarr1U-8v834bNJ10Zw
 
 GPU上的高效softmax近似
-
-# 模型压缩与加速进阶
-
-https://zhuanlan.zhihu.com/p/138059904
-
-一文看懂深度学习模型压缩和加速
-
-https://zhuanlan.zhihu.com/p/179945324
-
-一文深入深度学习模型压缩和加速

@@ -273,6 +273,42 @@ https://mp.weixin.qq.com/s/u2Op6y1vdZKtAlfhAYGLsQ
 
 # 模型压缩与加速进阶+
 
+https://mp.weixin.qq.com/s/jHv3Amti1YZq51Df2mNFtg
+
+network sliming:加快模型速度同时不损失精度
+
+https://mp.weixin.qq.com/s/gwXXkWumGWy24oWuZKSyAQ
+
+MIT韩松组推出升级版AutoML方法，一个网络适配所有硬件
+
+https://zhuanlan.zhihu.com/p/76909380
+
+轻量型网络：MoGA简介
+
+https://mp.weixin.qq.com/s/kgl7mz4bK7SywkbViY_qhQ
+
+利用LSTM思想来做CNN剪枝，北大提出Gate Decorator
+
+https://mp.weixin.qq.com/s/3_famaAmkAN-4xVEupSXSA
+
+华为、北大等首创GAN剪枝算法，线上加速3倍以上
+
+https://mp.weixin.qq.com/s/KuZ-mZKt7bTWhzygK1lmSg
+
+加速目标检测
+
+https://zhuanlan.zhihu.com/p/261146248
+
+原生模型上的战斗
+
+https://mp.weixin.qq.com/s/jqRBrs9Y_-3qvemL0RTflA
+
+支付宝如何优化移动端深度学习引擎？
+
+https://mp.weixin.qq.com/s/NJzGR-tY_WWeccbdshHckA
+
+基于交错组卷积的高效深度神经网络
+
 https://mp.weixin.qq.com/s/6eyEMW9dVBR5cZrHxn8iqA
 
 腾讯AI Lab详解3大热点：模型压缩、自动机器学习及最优化算法

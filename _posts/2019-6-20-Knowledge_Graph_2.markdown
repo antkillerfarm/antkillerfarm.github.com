@@ -352,3 +352,7 @@ BERT meet Knowledge Graph：预训练模型与知识图谱相结合的研究进�
 https://mp.weixin.qq.com/s/Jf9CMm3YIINtvT9ivweQMA
 
 知识图谱补全技术
+
+https://mp.weixin.qq.com/s/UafpA31khwR9viFJh88czw
+
+当推荐系统遇见知识图谱

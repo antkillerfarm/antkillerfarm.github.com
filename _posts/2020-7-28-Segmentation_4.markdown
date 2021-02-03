@@ -131,6 +131,10 @@ https://mp.weixin.qq.com/s/IO4cUTgcFO9hCMT9hTCXiQ
 
 图像分割2020总结：结构，损失函数，数据集和框架
 
+https://mp.weixin.qq.com/s/YkFEXeVI7XAyvhGcO91m3w
+
+2020年5篇图像分割算法最佳综述
+
 https://blog.csdn.net/yorkhunter/article/details/104057159
 
 arXiv综述论文“Image Segmentation Using Deep Learning: A Survey”
