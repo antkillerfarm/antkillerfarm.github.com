@@ -1,11 +1,25 @@
 ---
 layout: post
-title:  深度学习（一）——前言, MP神经元模型, BP算法
+title:  深度学习（一）——人工智能, 前言, MP神经元模型, BP算法
 category: DL 
 ---
 
 * toc
 {:toc}
+
+# 人工智能
+
+经过长期研究和积累，人工智能形成了三大学派：符号主义、联结主义和行为主义。
+
+**符号主义**认为人类认知和思维的基本单元是符号，人的思维过程就是符号处理。符号主义曾经长期“统治”人工智能领域，在机器定理证明、专家系统等方面取得了不俗的成绩。
+
+**联结主义**认为人的智能是通过大脑的神经元互相联结实现的，不同的神经元对不同的输入模式具有敏感性，神经元之间的联结权重可以通过刺激和反馈进行学习。当前流行的深度学习方法就是在人工神经网络的基础上发展而来的。
+
+**行为主义**认为行为产生智能，智能是对外界复杂环境的适应，而这种适应表现为基于感知信号所采取的行动。家用扫地机器人、波士顿公司的“大狗”都是行为主义学派的代表性成果。
+
+https://mp.weixin.qq.com/s/qaGyZJjNch7OIXIBONJx0Q
+
+人工智能是大杂烩吗？
 
 # 前言
 
@@ -237,21 +251,3 @@ $$\frac{\partial E_k}{\partial w_{hj}}=\frac{\partial E_k}{\partial \hat y_j^k}\
 上图是多层MLP的正反向运算关系图。z表示每层的feature map，w表示weight，g表示gradients。上图上半部分展示了正向运算，而下半部分，左侧展示了gradients的更新，右侧展示了weight的更新。
 
 除了基于梯度下降的BP算法之外，还有基于GA（genetic algorithm）的BP算法，但基本只有学术界还在尝试。
-
-参考：
-
-https://mp.weixin.qq.com/s/A_Sekyi1kxT1zYcQFBOkDA
-
-Quickprop介绍：一个加速梯度下降的学习方法（由于80/90年代的BP算法收敛缓慢，Scott Fahlman发明了一种名为Quickprop的学习算法。）
-
-https://zhuanlan.zhihu.com/p/25202034
-
-道理我都懂，但是神经网络反向传播时的梯度到底怎么求？
-
-https://mp.weixin.qq.com/s/Ub3CMQszkx7pGKoPcB0bYA
-
-BP反向传播矩阵推导图示详解​
-
-https://tech.zealscott.com/deeplearning/11-785/lecture12/
-
-Back propagation through a CNN

@@ -306,3 +306,7 @@ https://mp.weixin.qq.com/s/7QrIfNXQgSqYC1SOFUOlgQ
 https://mp.weixin.qq.com/s/e_ltoKzqBhmicwb7vcFcoQ
 
 迁移学习-该做的和不该做的
+
+https://mp.weixin.qq.com/s/Yzbn8B9DsBErt9VbAQTY3w
+
+深度迁移学习方法的基本思路

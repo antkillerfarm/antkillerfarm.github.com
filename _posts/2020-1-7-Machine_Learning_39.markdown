@@ -297,6 +297,10 @@ https://mp.weixin.qq.com/s/LlFQ-73hkgRENQiacwKHEg
 
 四类异常检测算法综述：Isolation Forest、LOF、PCA及DAGMM
 
+https://mp.weixin.qq.com/s/Jks-eZAinOvvWxKr0S-5Lg
+
+使用计算机视觉来做异常检测
+
 # 因果推理
 
 https://mp.weixin.qq.com/s/doi26r9AVIMbpkZ01wsCZA

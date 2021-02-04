@@ -53,6 +53,10 @@ https://mp.weixin.qq.com/s/dkaW4WNLmfjjbRYR9Za3bQ
 
 DeepMind最新力作：分布式强化学习框架Acme，智能体并行性加强
 
+https://mp.weixin.qq.com/s/LEqm8Ix67Q-tM-ufwK6a6w
+
+强化学习开源模拟环境大盘点
+
 # 概述
 
 ![](/images/img2/RL_intro.png)

@@ -291,3 +291,7 @@ OpenCV图像旋转的原理与技巧
 https://mp.weixin.qq.com/s/hGONFisdtwcF5CRSB9IF6g
 
 图像处理基础：颜色空间及其OpenCV实现
+
+https://mp.weixin.qq.com/s/0Z600IIGscgrREgLUqjLuA
+
+手把手教你用Python做一个图像融合demo

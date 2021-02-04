@@ -9,6 +9,38 @@ category: AI
 
 # TensorFlow
 
+https://mp.weixin.qq.com/s/pIESRzjsmqoO46P4x5Iqhw
+
+Tensorflow卷积神经网络
+
+https://mp.weixin.qq.com/s/Cge_GY19aZ1AcMkhW93C1A
+
+TensorFlow中的那些高级API
+
+https://mp.weixin.qq.com/s/kYOwUWlTP4T0IYKDWDbCsg
+
+tensorflow object detection API训练公开数据集Oxford-IIIT Pets Dataset
+
+https://mp.weixin.qq.com/s/8uDsaZjsiKXGea6M-w-RvA
+
+tensorflow object detection API使用之GPU训练实现宠物识别
+
+https://mp.weixin.qq.com/s/knw7yuUxHe-qeCLfj20onw
+
+Bayesian GAN的TensorFlow实现
+
+https://mp.weixin.qq.com/s/Sxui9CvdGocIxVG2FM4JtQ
+
+基于tensorflow使用CNN-RNN进行中文文本分类！
+
+https://mp.weixin.qq.com/s/kJxXIN6D5TEEFSFhGJNIyw
+
+开源神经网络图片上色技术解析
+
+https://mp.weixin.qq.com/s/qXMRHxDDRa-_rJZMhXWB4w
+
+详解TensorFlow的新seq2seq模块及其用法
+
 https://mp.weixin.qq.com/s/YdcIDXadEnDsyfc6Iu1gGw
 
 手把手教你用TensorFlow训练模型

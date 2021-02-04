@@ -61,6 +61,20 @@ https://mp.weixin.qq.com/s/TV1MJfaOq27y2DVCGMuqhA
 
 用Pandas和Streamlit对时间序列数据集进行可视化过滤
 
+## 调试
+
+https://mp.weixin.qq.com/s/weEZEr4g8pI11Gijc-St0Q
+
+DeBug Python代码全靠print函数？换用这个一天2K+Star的工具吧
+
+https://mp.weixin.qq.com/s/bNW1FbUG5LNUiRmmzirgCg
+
+别再用Print调试Python了！
+
+https://mp.weixin.qq.com/s/WqDWksBDBa07s84v6R1tlA
+
+Python里三个最高逼格的调试神器
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA
@@ -182,10 +196,6 @@ Python十大装腔语法
 https://mp.weixin.qq.com/s/Oo-U4Bq7g1wmQgXJ7Y-rjw
 
 万字长文详解如何用Python玩转OpenGL
-
-https://mp.weixin.qq.com/s/WqDWksBDBa07s84v6R1tlA
-
-Python里三个最高逼格的调试神器
 
 https://mp.weixin.qq.com/s/ctlb3nwCEu3qP__xeTUlQQ
 
@@ -338,10 +348,6 @@ https://mp.weixin.qq.com/s/L0FoYh1npy-3rwRQWcj71g
 https://mp.weixin.qq.com/s/Oq316PWN10FBWzv-X26pAg
 
 高性能Python CPU Memery分析器
-
-https://mp.weixin.qq.com/s/weEZEr4g8pI11Gijc-St0Q
-
-DeBug Python代码全靠print函数？换用这个一天2K+Star的工具吧
 
 https://mp.weixin.qq.com/s/wr18ylCJyJOX83BhbvGXng
 

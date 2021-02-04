@@ -405,6 +405,10 @@ https://mp.weixin.qq.com/s/DZZ_BCiNw0EZg7V0KvhXVw
 
 知乎搜索排序模型的演进
 
+https://mp.weixin.qq.com/s/mFWhv6ykGFc6g40GGuzYOQ
+
+推荐系统中模型训练及使用流程的标准化
+
 # 推荐系统进阶+
 
 https://mp.weixin.qq.com/s/sDG5xm1JZ8rIEaVXeVQ5cA

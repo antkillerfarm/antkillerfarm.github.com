@@ -9,6 +9,26 @@ category: DL
 
 # BP算法
 
+## 链式法则（续）
+
+参考：
+
+https://mp.weixin.qq.com/s/A_Sekyi1kxT1zYcQFBOkDA
+
+Quickprop介绍：一个加速梯度下降的学习方法（由于80/90年代的BP算法收敛缓慢，Scott Fahlman发明了一种名为Quickprop的学习算法。）
+
+https://zhuanlan.zhihu.com/p/25202034
+
+道理我都懂，但是神经网络反向传播时的梯度到底怎么求？
+
+https://mp.weixin.qq.com/s/Ub3CMQszkx7pGKoPcB0bYA
+
+BP反向传播矩阵推导图示详解​
+
+https://tech.zealscott.com/deeplearning/11-785/lecture12/
+
+Back propagation through a CNN
+
 ## 随机初始化
 
 神经网络的参数的**随机初始化**的目的是使对称失效。否则的话，所有对称结点的权重都一致，也就无法区分并学习了。

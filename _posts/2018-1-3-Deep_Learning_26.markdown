@@ -77,6 +77,10 @@ https://mp.weixin.qq.com/s/kWoMh-rw3MSwB0KbCa9Axg
 
 如何做好表情识别任务的图片预处理工作
 
+https://mp.weixin.qq.com/s/HU8_T88KEwFMsrcXHnpfQQ
+
+基于视频的人脸表情识别数据集与基本方法
+
 # OCR
 
 ## 概述

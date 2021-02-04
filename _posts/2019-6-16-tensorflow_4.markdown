@@ -163,6 +163,40 @@ https://mp.weixin.qq.com/s/ZxmoBcWJa7luGOHQ32ru1A
 
 推荐一个快速定位深度学习代码bug的炼丹神器
 
+# vscode断点调试
+
+## 设置python
+
+Setting中搜索`python path`，设置路径类似于：`/anaconda3/envs/mlbook/bin/python`
+
+## gdb调试
+
+Tensorflow App，一般是从python开始的，因此需要掌握python+C的混合调试方法。
+
+在所有模块import之后（否则后面的gdb加载不到相关的符号），添加如下语句：
+
+`input("pid: " + str(os.getpid()) +", press enter after attached")`
+
+启动gdb，使用attach命令，attach到相关的进程。设置断点，然后continue即可。
+
+参考：
+
+https://sketch2sky.com/2019/08/25/tensorflow-debugtrick/
+
+Tensorflow XLA Debug/Profiling Methods
+
+https://www.cnblogs.com/djzny/p/4956752.html
+
+gdb命令中attach使用
+
+## vscode调试
+
+vscode调试同样需要两段式的方法：
+
+https://nadiah.org/2020/03/01/example-debug-mixed-python-c-in-visual-studio-code/
+
+Example debugging mixed Python C++ in VS Code
+
 # 参考
 
 https://mp.weixin.qq.com/s/t1QFIOq-VBNOrSm0zW-PlQ
@@ -372,35 +406,3 @@ https://mp.weixin.qq.com/s/KohwsQQetwjfTj-PXvLjwA
 http://mp.weixin.qq.com/s/ioaS7RQ6bsJs4_X0G4ZHyQ
 
 如何优雅地用TensorFlow预测时间序列：TFTS库详细教程
-
-https://mp.weixin.qq.com/s/pIESRzjsmqoO46P4x5Iqhw
-
-Tensorflow卷积神经网络
-
-https://mp.weixin.qq.com/s/Cge_GY19aZ1AcMkhW93C1A
-
-TensorFlow中的那些高级API
-
-https://mp.weixin.qq.com/s/kYOwUWlTP4T0IYKDWDbCsg
-
-tensorflow object detection API训练公开数据集Oxford-IIIT Pets Dataset
-
-https://mp.weixin.qq.com/s/8uDsaZjsiKXGea6M-w-RvA
-
-tensorflow object detection API使用之GPU训练实现宠物识别
-
-https://mp.weixin.qq.com/s/knw7yuUxHe-qeCLfj20onw
-
-Bayesian GAN的TensorFlow实现
-
-https://mp.weixin.qq.com/s/Sxui9CvdGocIxVG2FM4JtQ
-
-基于tensorflow使用CNN-RNN进行中文文本分类！
-
-https://mp.weixin.qq.com/s/kJxXIN6D5TEEFSFhGJNIyw
-
-开源神经网络图片上色技术解析
-
-https://mp.weixin.qq.com/s/qXMRHxDDRa-_rJZMhXWB4w
-
-详解TensorFlow的新seq2seq模块及其用法

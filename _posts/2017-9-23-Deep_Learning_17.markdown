@@ -219,6 +219,10 @@ https://mp.weixin.qq.com/s/2hu6a0wScJedwk3a5aKbIw
 
 自动微分到底是什么？这里有一份自我简述
 
+https://zhuanlan.zhihu.com/p/347385418
+
+AI框架基础技术之自动求导机制 (Autograd)
+
 # 无监督/半监督/自监督深度学习
 
 自监督学习是一种特殊目的的无监督学习。不同于传统的AutoEncoder等方法，仅仅以重构输入为目的，而是希望通过surrogate task学习到和高层语义信息相关联的特征。
