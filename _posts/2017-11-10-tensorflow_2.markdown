@@ -9,11 +9,19 @@ category: AI
 
 # XLA
 
-XLA是TensorFlow计算图的编译器。
+XLA(Accelerated Linear Algebra)是TensorFlow计算图的编译器。
 
 官网：
 
 https://www.tensorflow.org/xla?hl=zh-cn
+
+基本架构：
+
+https://www.tensorflow.org/xla/architecture
+
+![](/images/img4/XLA.png)
+
+HLO(High Level Optimizer)
 
 参考：
 

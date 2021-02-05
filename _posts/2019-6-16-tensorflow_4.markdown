@@ -169,6 +169,8 @@ https://mp.weixin.qq.com/s/ZxmoBcWJa7luGOHQ32ru1A
 
 Setting中搜索`python path`，设置路径类似于：`/anaconda3/envs/mlbook/bin/python`
 
+打开python文件，在状态栏有python版本的提示，点击该提示，可以切换不同的python版本。
+
 ## gdb调试
 
 Tensorflow App，一般是从python开始的，因此需要掌握python+C的混合调试方法。

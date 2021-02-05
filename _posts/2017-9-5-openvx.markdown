@@ -87,7 +87,7 @@ http://blog.csdn.net/leonwei/article/details/8880012
 
 ## SYCL
 
-SYCL是Khronos提供的基于OpenCL的C++接口层。
+SYCL是Khronos提供的基于OpenCL的C++接口层。近来有向通用HPC发展的趋势，后端已不再限于OpenCL，开始包括OpenMP/CUDA等。
 
 官网：
 
