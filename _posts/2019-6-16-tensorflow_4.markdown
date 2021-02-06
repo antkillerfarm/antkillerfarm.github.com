@@ -199,6 +199,10 @@ https://nadiah.org/2020/03/01/example-debug-mixed-python-c-in-visual-studio-code
 
 Example debugging mixed Python C++ in VS Code
 
+相关配置文件参见：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/vscode/launch.json
+
 # 参考
 
 https://mp.weixin.qq.com/s/t1QFIOq-VBNOrSm0zW-PlQ

@@ -233,6 +233,10 @@ https://zhuanlan.zhihu.com/p/163305630
 
 如何判断点在三角形内部
 
+https://www.zhihu.com/column/c_1165601616035618816
+
+一个图形学方面的专栏
+
 ## 术语
 
 Material Point Method（物质点法）

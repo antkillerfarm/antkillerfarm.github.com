@@ -121,6 +121,28 @@ C++服务编译耗时优化原理及实践
 
 `set args -l`
 
+## 白手起家
+
+- Stage0 部分
+
+Hex0：起点，Binary不超过1KB，用来从带注释的hex dump生成binary。
+
+Hex1、Hex2：Hex0 + 偏移量计算，用来简化后续过程；每一级由上一级实现和编译。
+
+M0：宏汇编器，由Hex2实现和编译。
+
+cc_*：用汇编写的 C 子集编译器（支持 x86、x644、ARMv7 和 v8）；由M0编译。
+
+M2-Planet + mescc-tools：用先前的C子集制作的用于生成Mes的基础工具。
+
+- Mes部分
+
+Mes + MesCC → 一个修改过的 TCC → GCC 4.7 → 现代的 GCC
+
+https://www.zhihu.com/question/441129390
+
+假如有某种力量使得世界上所有编译器都被删除了, 人类是否需要从打孔卡开始写第一个编译器?
+
 ## 参考
 
 https://mp.weixin.qq.com/s/30Zh_8H6QfDgJuG9e9ORSQ
