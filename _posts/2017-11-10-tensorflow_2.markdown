@@ -23,6 +23,35 @@ https://www.tensorflow.org/xla/architecture
 
 HLO(High Level Optimizer)
 
+TF目前（v2.4.1）的默认编译选项中已经包含了XLA，但是默认不会启动。
+
+启动方法：
+
+- 手动启动
+
+设置环境变量：
+
+`TF_XLA_FLAGS="--tf_xla_enable_xla_devices"`
+
+手动指定需要XLA计算的op：
+
+```bash
+with tf.device("/device:XLA_CPU:0"):
+  ...
+```
+
+这种方法的缺点是：代码需要修改，且XLA不支持有些复杂的op。
+
+- 自动启动
+
+`TF_XLA_FLAGS="--tf_xla_auto_jit=2 --tf_xla_cpu_global_jit"`
+
+代码无需修改。
+
+unit test：
+
+tensorflow/compiler/xla/tests
+
 参考：
 
 https://mp.weixin.qq.com/s/RO3FrPxhK2GEoDCGE9DXrw
@@ -378,47 +407,3 @@ Introducing TFLite Parser Python Package
 https://jackwish.net/tflite/
 
 Easily Parse TFLite Models with Python
-
-----
-
-参考：
-
-https://www.jianshu.com/p/fa204a54a956
-
-生成TFLite模型文件
-
-https://mp.weixin.qq.com/s/eSczqqyzh4PZomJL4saxug
-
-出门问问：使用TensorFlow Lite在嵌入式端部署热词检测模型
-
-https://mp.weixin.qq.com/s/U_Pew90j9swIqti3oKEIQg
-
-玩转TensorFlow Lite：有道云笔记实操案例分享
-
-https://mp.weixin.qq.com/s/lNP9WdzSWE4FjB_-Sjc2aA
-
-TensorFlow Lite for Android初探
-
-https://mp.weixin.qq.com/s/IuD1oxeiFBq8kqh_zRLb0Q
-
-一步实现从TF到TF Lite，谷歌提出定制on-device模型框架
-
-https://mp.weixin.qq.com/s/65HiEwCyzeA_d9flPBcpLQ
-
-谷歌正式发布TensorFlowLite，半监督跨平台快速训练ML模型
-
-https://mp.weixin.qq.com/s/6_yZPlKLYiWBRQFk5Y1OKA
-
-TensorFlow Lite微控制器
-
-# TensorNetwork
-
-TensorFlow的计算图模型不仅可以用于DL领域，亦可应用于其他科学计算领域。TensorNetwork就是一个基于TensorFlow的张量运算库。现成的矩阵运算库已经很多了，这次升级为张量运算库了。
-
-https://github.com/google/TensorNetwork
-
-参考：
-
-https://mp.weixin.qq.com/s/jdjX0jirTHOUqsGagJmGLQ
-
-谷歌AI开源张量计算库TensorNetwork，计算速度暴涨100倍

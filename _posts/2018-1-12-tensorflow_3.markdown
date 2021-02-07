@@ -7,6 +7,38 @@ category: AI
 * toc
 {:toc}
 
+# TFLite（续）
+
+## 参考
+
+https://www.jianshu.com/p/fa204a54a956
+
+生成TFLite模型文件
+
+https://mp.weixin.qq.com/s/eSczqqyzh4PZomJL4saxug
+
+出门问问：使用TensorFlow Lite在嵌入式端部署热词检测模型
+
+https://mp.weixin.qq.com/s/U_Pew90j9swIqti3oKEIQg
+
+玩转TensorFlow Lite：有道云笔记实操案例分享
+
+https://mp.weixin.qq.com/s/lNP9WdzSWE4FjB_-Sjc2aA
+
+TensorFlow Lite for Android初探
+
+https://mp.weixin.qq.com/s/IuD1oxeiFBq8kqh_zRLb0Q
+
+一步实现从TF到TF Lite，谷歌提出定制on-device模型框架
+
+https://mp.weixin.qq.com/s/65HiEwCyzeA_d9flPBcpLQ
+
+谷歌正式发布TensorFlowLite，半监督跨平台快速训练ML模型
+
+https://mp.weixin.qq.com/s/6_yZPlKLYiWBRQFk5Y1OKA
+
+TensorFlow Lite微控制器
+
 # Android NN
 
 TFLite是Google的Tensorflow团队开发的移动DL框架，它可以在任意系统（非android，甚至非linux）上执行。而Android NN则是Google的Android团队针对Android平台开发的DL框架。
@@ -339,37 +371,3 @@ https://mp.weixin.qq.com/s/mjUnrPBPBuY6XKXkUymX-w
 https://mp.weixin.qq.com/s/1ZlyVDJK6RWZ_1Ox7399IA
 
 用一行tf.data实现数据Shuffle、Batch划分、异步预加载等
-
-# TensorFlow Probability
-
-TensorFlow Probability是一个概率编程工具包。
-
-官网：
-
-https://tensorflow.google.cn/probability/
-
-参考：
-
-https://mp.weixin.qq.com/s/NPuYanaUnaX4mYbaNbNNSQ
-
-概率编程工具：TensorFlow Probability官方简介
-
-https://mp.weixin.qq.com/s/cV-5W4YWC9f9wsoNX5fIXA
-
-使用TensorFlow Probability对金融模型中的误差进行介绍性分析
-
-https://mp.weixin.qq.com/s/cxC3SarlBBPTwIxQZ4AG_g
-
-快速上手TensorFlow Probability内置概率编程教材
-
-https://mp.weixin.qq.com/s/T0TsS8YwyCbCjt4J-xonOw
-
-使用TensorFlow Probability Layers的变分自编码器
-
-https://mp.weixin.qq.com/s/6l-NS0NbYK44JS0jnRl82w
-
-使用TensorFlow Probability的概率层执行回归
-
-https://mp.weixin.qq.com/s/2cbd7LBPBRqGt-QO1A7SfQ
-
-在TensorFlow Probability中对结构时间序列建模

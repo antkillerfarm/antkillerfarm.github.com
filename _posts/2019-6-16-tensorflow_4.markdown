@@ -163,7 +163,53 @@ https://mp.weixin.qq.com/s/ZxmoBcWJa7luGOHQ32ru1A
 
 推荐一个快速定位深度学习代码bug的炼丹神器
 
-# vscode断点调试
+# TensorNetwork
+
+TensorFlow的计算图模型不仅可以用于DL领域，亦可应用于其他科学计算领域。TensorNetwork就是一个基于TensorFlow的张量运算库。现成的矩阵运算库已经很多了，这次升级为张量运算库了。
+
+https://github.com/google/TensorNetwork
+
+参考：
+
+https://mp.weixin.qq.com/s/jdjX0jirTHOUqsGagJmGLQ
+
+谷歌AI开源张量计算库TensorNetwork，计算速度暴涨100倍
+
+# TensorFlow Probability
+
+TensorFlow Probability是一个概率编程工具包。
+
+官网：
+
+https://tensorflow.google.cn/probability/
+
+参考：
+
+https://mp.weixin.qq.com/s/NPuYanaUnaX4mYbaNbNNSQ
+
+概率编程工具：TensorFlow Probability官方简介
+
+https://mp.weixin.qq.com/s/cV-5W4YWC9f9wsoNX5fIXA
+
+使用TensorFlow Probability对金融模型中的误差进行介绍性分析
+
+https://mp.weixin.qq.com/s/cxC3SarlBBPTwIxQZ4AG_g
+
+快速上手TensorFlow Probability内置概率编程教材
+
+https://mp.weixin.qq.com/s/T0TsS8YwyCbCjt4J-xonOw
+
+使用TensorFlow Probability Layers的变分自编码器
+
+https://mp.weixin.qq.com/s/6l-NS0NbYK44JS0jnRl82w
+
+使用TensorFlow Probability的概率层执行回归
+
+https://mp.weixin.qq.com/s/2cbd7LBPBRqGt-QO1A7SfQ
+
+在TensorFlow Probability中对结构时间序列建模
+
+# Debug/Profiling
 
 ## 设置python
 
@@ -202,6 +248,33 @@ Example debugging mixed Python C++ in VS Code
 相关配置文件参见：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/vscode/launch.json
+
+## profiling
+
+```python
+from tensorflow.profiler.experimental import Profile
+
+with Profile('/logdir_path'):
+    # do sth
+```
+
+参考：
+
+https://zhuanlan.zhihu.com/p/140343833
+
+tensorflow profiling工具简介——tensorflow原生工具
+
+https://www.tensorflow.org/tensorboard/tensorboard_profiling_keras
+
+TensorBoard性能分析:在Keras中对基本训练指标进行性能分析
+
+https://github.com/tensorflow/benchmarks
+
+TensorFlow benchmarks
+
+https://blog.csdn.net/zkbaba/article/details/106178542
+
+TensorFlow性能分析工具—TensorFlow Profiler
 
 # 参考
 
@@ -332,83 +405,3 @@ https://mp.weixin.qq.com/s/n_zU7Rg7v6PwjZWEF88fNA
 https://mp.weixin.qq.com/s/UbBJYOmWtUXPFliRMyzDrg
 
 最新TensorFlow专业深度学习实战书籍和代码《Pro Deep Learning with TensorFlow》
-
-https://mp.weixin.qq.com/s/skl5w2cJaO3mYtr656lb9Q
-
-见人识面，TensorFlow实现人脸性别/年龄识别
-
-https://mp.weixin.qq.com/s/g2xMUmhxUTuQugR2PWUJtw
-
-组成TensorFlow核心的六篇论文
-
-https://mp.weixin.qq.com/s/n4nEtyRc5G44kj3zmHpd5g
-
-TensorFlow实战——图像分类神经网络模型
-
-https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
-
-简易浣熊识别器是如何实现的
-
-http://www.jianshu.com/p/d443aab9bcb1
-
-在TensorFlow上使用LSTM进行情感分析
-
-https://mp.weixin.qq.com/s/gW_KX6eF9XEsSUO1UzJ3WQ
-
-基于LSTM的情感分析
-
-https://mp.weixin.qq.com/s/KZhL477ApHgQfmM2xFrYJw
-
-Tensorlang：基于TensorFlow的可微编程语言
-
-https://mp.weixin.qq.com/s/_9NJ6QLQArUAD1DKb0KRfA
-
-如何使用TensorFlow mobile部署模型到移动设备
-
-https://mp.weixin.qq.com/s/e_TzQxFLAonLMyYAhte6Cg
-
-face-api.js：在浏览器中进行人脸识别的JavaScript接口
-
-https://mp.weixin.qq.com/s/23FoaaA3Z_3kf03BmepFPg
-
-如何将模型部署到安卓移动端，这里有一份简单教程
-
-https://mp.weixin.qq.com/s/MT1YaMm4KBWsIZeHehahgw
-
-TensorFlow重大升级：自动将Python代码转为TF Graph，大幅简化动态图处理！
-
-https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
-
-Docker Compose+GPU+TensorFlow所产生的奇妙火花
-
-https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
-
-TensorFlow中那些鲜为人知却又极其实用的知识
-
-https://mp.weixin.qq.com/s/XHKrkNf2bWLF7r7gzdU24w
-
-Quick, Draw!涂鸦分类递归神经网络
-
-https://mp.weixin.qq.com/s/QQednlKYl6t3aO0xCzgGmA
-
-带你轻松使用TensorFlow创建大型线性模型
-
-https://mp.weixin.qq.com/s/BfwTOtLnwnMsS3-PQQBHSg
-
-使用TensorFlow训练WDL模型性能问题定位与调优
-
-https://mp.weixin.qq.com/s/kw3BYTXdyhnIyVZrnQuPew
-
-基于深度学习和迁移学习的识花实践
-
-https://mp.weixin.qq.com/s/F965Zu_PgA-1ZUGIQ0nIEQ
-
-TensorFlow协同过滤推荐实战
-
-https://mp.weixin.qq.com/s/KohwsQQetwjfTj-PXvLjwA
-
-使用MNIST数据集，在TensorFlow上实现基础LSTM网络
-
-http://mp.weixin.qq.com/s/ioaS7RQ6bsJs4_X0G4ZHyQ
-
-如何优雅地用TensorFlow预测时间序列：TFTS库详细教程

@@ -408,11 +408,3 @@ TensorFlow 2.0迁移学习实践指南
 https://mp.weixin.qq.com/s/Rb0Fh9TZJo-IdEoxlgD4gw
 
 如何让模型在生产环境上推理得更快
-
-https://mp.weixin.qq.com/s/xSJRhHbjcgk14Kr_-Ycr5A
-
-输入示例，自动生成代码：TensorFlow官方工具TF-Coder已开源
-
-https://zhuanlan.zhihu.com/p/333791572
-
-Tensorflow模型保存方式大汇总
