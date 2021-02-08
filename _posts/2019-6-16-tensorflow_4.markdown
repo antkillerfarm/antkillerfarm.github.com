@@ -251,6 +251,8 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/vscode/launch.j
 
 ## profiling
 
+`pip install -U tensorboard-plugin-profile`
+
 ```python
 from tensorflow.profiler.experimental import Profile
 

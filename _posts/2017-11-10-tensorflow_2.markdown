@@ -52,6 +52,8 @@ unit test：
 
 tensorflow/compiler/xla/tests
 
+_XlaCompile & _XlaRun
+
 参考：
 
 https://mp.weixin.qq.com/s/RO3FrPxhK2GEoDCGE9DXrw
