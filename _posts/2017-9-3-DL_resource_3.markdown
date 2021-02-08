@@ -255,6 +255,10 @@ https://mp.weixin.qq.com/s/gY7jrDg8qj8v_nDFOLWHWQ
 
 温度预测挑战赛初赛复盘
 
+https://mp.weixin.qq.com/s/DxoVXIuHsy07HCHlHtQZ5Q
+
+模型debug实战：算法诊断理论的应用
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA

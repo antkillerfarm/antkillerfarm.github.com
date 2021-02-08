@@ -104,6 +104,10 @@ https://mp.weixin.qq.com/s/GBeTausaAIf0W2cD7wt47Q
 
 从基础量子位到当下火热的量子计算机，一文助你入门量子计算
 
+https://mp.weixin.qq.com/s/NRI6HhhpHiRbLy44FMKtCg
+
+敲开图灵之门：CS大四学生长文畅谈量子计算机的“前世、今生、未来”
+
 # 遗传算法 & 进化算法
 
 http://blog.csdn.net/u010945683/article/details/40987331

@@ -375,6 +375,10 @@ https://mp.weixin.qq.com/s/NGpDrYilAeuH6pQji0ujaA
 
 文本摘要简述
 
+https://mp.weixin.qq.com/s/Z5fhodIOWZbt8eZ8BICkyA
+
+自动文本摘要研究综述
+
 https://mp.weixin.qq.com/s/bcpjkuRtErSRfJPsAnAWWQ
 
 用深度学习做文本摘要

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  移动端推理框架, DL Backend, GPU通信技术, Kubernetes, DRL实战
+title:  移动端推理框架, DL Backend, Kubernetes, DRL实战
 category: AI 
 ---
 
@@ -200,52 +200,6 @@ https://github.com/microsoft/onnxruntime
 ### DirectML
 
 基于DirectX 12提出的加速方案。
-
-# GPU通信技术
-
-## RDMA
-
-RDMA网卡（Remote Direct Memory Access，这是一种硬件的网络技术，它使得计算机访问远程的内存时无需远程机器上CPU的干预）已经可以提供50~100Gbps的网络带宽和微秒级的传输延迟。
-
-目前许多以深度学习为目标应用的GPU机群都部署了这样的网络。
-
-参考：
-
-https://mp.weixin.qq.com/s/_xcE8RUs0m4gwk3kxpe9jA
-
-基于HTM/RDMA的可扩展内存事务处理系统
-
-## NVLink
-
-NVLink技术提供比PCIe 3更高的带宽与更多的链路，并可提升多GPU和多GPU/CPU系统配置的可扩展性。
-
-官网：
-
-https://www.nvidia.cn/data-center/nvlink/
-
-![](/images/img3/nvlink.png)
-
-Tesla V100中以NVLink连接的GPU至GPU和GPU至CPU通信。
-
-![](/images/img3/nvlink_2.png)
-
-在DGX-1V服务器中，混合立体网络拓扑使用NVLink连接8个Tesla V100加速器。每个GPU有6条nvlink通道，总带宽高达300GB/s。
-
-从上图可以看到，即使每个GPU拥有6条nvlink通道，仍然无法做到“全连接”（即任意两个GPU之间存在双向通道）。这就引出了下一个更加疯狂的技术：nvswitch。
-
-![](/images/img3/nvswitch.png)
-
-NVSwitch是首款节点交换架构，可支持单个服务器节点中16个全互联的GPU，并可使全部8个GPU对分别以300GB/s的惊人速度进行同时通信。这16个全互联的GPU还可作为单个大型加速器，拥有0.5 TB统一显存空间和2 PetaFLOPS计算性能。
-
-## 参考
-
-https://www.infoq.cn/article/3D4MsRVS8ZOtGCj7*krT
-
-GPU通信技术初探
-
-https://zhuanlan.zhihu.com/p/67785062
-
-不止显卡！这些硬件因素也影响着你的深度学习模型性能
 
 # Kubernetes
 

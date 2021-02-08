@@ -177,6 +177,10 @@ https://blog.csdn.net/ChangHengyi/article/details/80577318
 
 一片文章带你理解再生核希尔伯特空间（RKHS）以及各种空间
 
+https://mp.weixin.qq.com/s/K9_1PE_C45DnMxPc1fK7hw
+
+傅里叶思想漫谈：从希尔伯特空间到不确定性原理
+
 https://mp.weixin.qq.com/s/AQgFded7GWp1yPE_voT0QQ
 
 看完这45组酷炫数学动图，原来数学这么有意思！

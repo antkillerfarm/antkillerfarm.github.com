@@ -223,31 +223,9 @@ https://github.com/google/gemmlowp
 
 《Quantizing deep convolutional networks for efficient inference: A whitepaper》
 
-## 参考
+## 二值神经网络
 
-https://mp.weixin.qq.com/s/M79xGWWtJUB6wBVlHXw8ig
-
-低精度神经网络：从数值计算角度优化模型效率
-
-https://www.chiphell.com/thread-1620755-1-1.html
-
-新Titan X的INT8计算到底是什么鬼
-
-https://mp.weixin.qq.com/s/S9VcoS_59nbZWe_P3ye2Tw
-
-减少模型半数内存用量：百度&英伟达提出混合精度训练法
-
-https://zhuanlan.zhihu.com/p/35700882
-
-CNN量化技术
-
-https://mp.weixin.qq.com/s/9DXMqiPIK5P5wzUMT7_Vfw
-
-基于交替方向法的循环神经网络多比特量化
-
-https://mp.weixin.qq.com/s/PDeChj1hQqUrZiepxXODJg
-
-ICLR oral：清华提出离散化架构WAGE，神经网络训练推理合二为一
+二值神经网络的主要缺点在于，它们无法实现与完全精度的深层网络一样高的精度。但这一直在缓慢地变化，已经有了很多进步。
 
 http://blog.csdn.net/tangwei2014/article/details/55077172
 
@@ -289,17 +267,13 @@ https://mp.weixin.qq.com/s/Xvlxs-Os2meduHrEQFc7vg
 
 第一次胜过MobileNet的二值神经网络，-1与+1的三年艰苦跋涉
 
+https://mp.weixin.qq.com/s/Ak9Yh_MBDR6i7J2rDR99eQ
+
+低成本的二值神经网络介绍以及它能代替全精度网络吗?
+
 https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
 
 异或神经网络
-
-https://mp.weixin.qq.com/s/KgM1k1bziLTCec67hQ8hlQ
-
-超全总结：神经网络加速之量化模型
-
-https://mp.weixin.qq.com/s/7dzQhgblEm-kzRnpddweSw
-
-嵌入式端CNN网络计算的量化-动态定点法（1）
 
 https://mp.weixin.qq.com/s/XzLJzfvpP93cDYplf6-LXA
 
@@ -309,13 +283,47 @@ https://mp.weixin.qq.com/s/wCx7rQFwC2mW45FMR77tGQ
 
 二值网络，围绕STE的那些事儿
 
-https://mp.weixin.qq.com/s/M3NcH30zY5Wlj76BDPQlMA
-
-模型压缩一半，精度几乎无损，TensorFlow推出半精度浮点量化工具包，还有在线Demo
-
 https://mp.weixin.qq.com/s/7L26ghhDqdMU6LRV0iD6vQ
 
 模型量化从1bit到8bit，二值到三值
+
+## 参考
+
+https://mp.weixin.qq.com/s/M79xGWWtJUB6wBVlHXw8ig
+
+低精度神经网络：从数值计算角度优化模型效率
+
+https://www.chiphell.com/thread-1620755-1-1.html
+
+新Titan X的INT8计算到底是什么鬼
+
+https://mp.weixin.qq.com/s/S9VcoS_59nbZWe_P3ye2Tw
+
+减少模型半数内存用量：百度&英伟达提出混合精度训练法
+
+https://zhuanlan.zhihu.com/p/35700882
+
+CNN量化技术
+
+https://mp.weixin.qq.com/s/9DXMqiPIK5P5wzUMT7_Vfw
+
+基于交替方向法的循环神经网络多比特量化
+
+https://mp.weixin.qq.com/s/PDeChj1hQqUrZiepxXODJg
+
+ICLR oral：清华提出离散化架构WAGE，神经网络训练推理合二为一
+
+https://mp.weixin.qq.com/s/KgM1k1bziLTCec67hQ8hlQ
+
+超全总结：神经网络加速之量化模型
+
+https://mp.weixin.qq.com/s/7dzQhgblEm-kzRnpddweSw
+
+嵌入式端CNN网络计算的量化-动态定点法（1）
+
+https://mp.weixin.qq.com/s/M3NcH30zY5Wlj76BDPQlMA
+
+模型压缩一半，精度几乎无损，TensorFlow推出半精度浮点量化工具包，还有在线Demo
 
 https://mp.weixin.qq.com/s/D3ZKidCV7OhAeqWqWg521w
 

@@ -229,6 +229,10 @@ https://mp.weixin.qq.com/s/2GQacLs1CNNQXKjmJmPiVQ
 
 用对线阶段数据分析和预测《英雄联盟》的游戏结果
 
+https://mp.weixin.qq.com/s/DXIGBypPQd1FkZ70aBG_9g
+
+我用Python合成大西瓜！
+
 # AI Chip+
 
 https://zhuanlan.zhihu.com/p/31782874

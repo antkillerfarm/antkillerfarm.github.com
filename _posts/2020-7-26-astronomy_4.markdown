@@ -227,6 +227,10 @@ https://www.zhihu.com/answer/378935681
 
 谁能告诉我一些关于肯尼亚蒙内铁路的故事？
 
+https://mp.weixin.qq.com/s/wcDiuHjtGgWjWdLRtJTpTg
+
+凤毛麟角：中国早期留美的数理同门女双杰（1912-1949年间，有14名中国女性赴英美留学，后来均成为杰出的物理学家，本文主人公王明贞和王承书就是其中的两位。）
+
 # 物理++
 
 https://mp.weixin.qq.com/s/tU6Incnq63fT61z6y9E-Jg

@@ -295,3 +295,7 @@ https://mp.weixin.qq.com/s/hGONFisdtwcF5CRSB9IF6g
 https://mp.weixin.qq.com/s/0Z600IIGscgrREgLUqjLuA
 
 手把手教你用Python做一个图像融合demo
+
+https://mp.weixin.qq.com/s/vo1v5dYGLMqzCSUG9gPvag
+
+使用OpenCV进行图像编辑--绘画和素描

@@ -273,6 +273,8 @@ https://mp.weixin.qq.com/s/aVLBXS-eiWVpvIbeE2JVIw
 
 Apache Arrow设计的目的在于作为一个跨平台的数据层，来加快大数据分析项目的运行速度。
 
+![](/images/img4/Apache_Arrow.png)
+
 参考：
 
 https://www.cnblogs.com/smartloli/p/6367719.html

@@ -384,3 +384,7 @@ https://mp.weixin.qq.com/s/5VeersQKxcT9AtFXS_CXnA
 https://mp.weixin.qq.com/s/kWJZA0acOPi46c2_Gd9aeA
 
 安利一个开源的好工具Label Studio,闭环数据标注和模型训练
+
+https://mp.weixin.qq.com/s/b-w_jUqxGR7hY19auiar-A
+
+FAIR发布自监督训练库VISSL

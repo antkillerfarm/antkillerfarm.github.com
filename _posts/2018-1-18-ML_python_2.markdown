@@ -331,6 +331,14 @@ https://mp.weixin.qq.com/s/oVHxYRMzJtD5t79uJ5jgWw
 
 媲美Pandas？一文入门Python的Datatable操作
 
+## DASK
+
+Dask是一款用于分析计算的灵活并行计算库。
+
+官网：
+
+https://dask.org/
+
 ## mysql
 
 http://www.runoob.com/python/python-mysql.html

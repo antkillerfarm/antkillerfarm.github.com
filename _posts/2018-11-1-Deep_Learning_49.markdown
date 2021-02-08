@@ -171,6 +171,10 @@ https://mp.weixin.qq.com/s/z7t2dSnjZqZ3w6q7PUtTVg
 
 最新《元学习》教程，牛津大学Yee Whye Teh教授，165页ppt
 
+https://mp.weixin.qq.com/s/hMTm38gCccxt-Jnz28Xx1A
+
+元强化学习综述及前沿进展
+
 https://mp.weixin.qq.com/s/KtO3OTZ-bZ6m0ZSI6jTyjw
 
 OpenAI提出Reptile：可扩展的元学习算法

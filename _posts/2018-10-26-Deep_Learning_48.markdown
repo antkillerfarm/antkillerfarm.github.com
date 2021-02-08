@@ -249,6 +249,10 @@ https://mp.weixin.qq.com/s/5ba3EM6e9R-i3UpzUhm49w
 
 神经信息检索导论，微软研究员129页最新书册
 
+https://mp.weixin.qq.com/s/vE1HnYH5UcKWfxiG8_b3Dw
+
+深度图像检索: 2012到2020大综述论文，荷兰莱登大学等学者详述深度学习图像检索进展
+
 https://mp.weixin.qq.com/s/NJf5e25tvT_xKXLD7UY1AQ
 
 MySQL智能调度系统。这篇blog其实和MySQL关系不大，算是DL在负载均衡方面的应用吧。

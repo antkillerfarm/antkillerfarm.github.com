@@ -70,6 +70,14 @@ https://tensorflow.juejin.im/performance/xla/jit.html
 
 使用即时编译
 
+# Grappler
+
+Grappler是TensorFlow运行时中的默认计算图优化系统。
+
+https://www.tensorflow.org/guide/graph_optimization
+
+使用Grappler优化TensorFlow计算图
+
 # Eigen
 
 Eigen是一个线性代数方面的C++模板库。tensorflow和caffe2都使用了这个库。

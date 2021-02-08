@@ -266,6 +266,14 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/other/vncserver
 
 >VideoCore是Broadcom旗下的GPU产品。
 
+## Raspberry Pi Pico
+
+2021.1，树莓派基金会发布了首款微控制器级产品：Raspberry Pi Pico。
+
+https://mp.weixin.qq.com/s/rfOTxVUpqyfqNQQJh_WhNg
+
+树莓派Pico VS Arduino该选哪个？
+
 ## 参考
 
 https://mp.weixin.qq.com/s/YeoBILcLy2LNzDAnxygKAg
@@ -284,18 +292,6 @@ https://mp.weixin.qq.com/s/tW54lcv9aRz9xXC9V-DsWw
 
 Keras+树莓派，130行代码找到圣诞老人
 
-https://mp.weixin.qq.com/s?__biz=MzU1OTMyNDcxMQ==&mid=2247484969&idx=1&sn=29d04fbb56a4464b08407eb87d26325e
-
-基于源代码为Raspberry Pi设备构建TensorFlow
-
 https://mp.weixin.qq.com/s/8zD3GqbQrQnZmuD59OoFuQ
 
 让树莓派记下你的笑颜
-
-https://mp.weixin.qq.com/s/onN61A13xuJzNk9zE0hM-w
-
-你有特斯拉，我有树莓派，纯手工打造车载车牌识别检测系统，家用车秒变智能车
-
-https://mp.weixin.qq.com/s/rqIZSX-zRNQ3uyae3LlnZQ
-
-树莓派也能实时训练agent玩Atari

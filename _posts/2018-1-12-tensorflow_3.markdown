@@ -153,6 +153,8 @@ tensorflow/core/ops
 
 tensorflow/contrib/lite/kernels/internal/reference/reference_ops.h
 
+注册一个tfop分为两部分:Op和OpKernel。其中，Op是tfop的声明部分，类似于函数的声明，主要描述Op静态属性。OpKernel是tfop的实现部分，同样类似于函数的实现，主要描述OpKernel的具体计算逻辑。
+
 # op Backprop
 
 ## compute_gradients & apply_gradients

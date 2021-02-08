@@ -252,6 +252,18 @@ https://mp.weixin.qq.com/s/eXRy9kZqDlph96BdWwWwXQ
 
 # Raspberry Pi+
 
+https://mp.weixin.qq.com/s?__biz=MzU1OTMyNDcxMQ==&mid=2247484969&idx=1&sn=29d04fbb56a4464b08407eb87d26325e
+
+基于源代码为Raspberry Pi设备构建TensorFlow
+
+https://mp.weixin.qq.com/s/onN61A13xuJzNk9zE0hM-w
+
+你有特斯拉，我有树莓派，纯手工打造车载车牌识别检测系统，家用车秒变智能车
+
+https://mp.weixin.qq.com/s/rqIZSX-zRNQ3uyae3LlnZQ
+
+树莓派也能实时训练agent玩Atari
+
 https://mp.weixin.qq.com/s/pPTaxiCOTL_Y89TuKGHQmg
 
 微软放弃的游戏被他们复活了：Windows经典“三维弹球”现实版，CAD建模、Arduino编程、数控机床打造，硬核致敬童年
