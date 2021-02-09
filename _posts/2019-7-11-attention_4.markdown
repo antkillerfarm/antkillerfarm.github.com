@@ -205,6 +205,10 @@ https://mp.weixin.qq.com/s/aPA0PEqVn509u3xbgmhIwQ
 
 一天star量破千，300行代码，特斯拉AI总监Karpathy写了个GPT的Pytorch训练库
 
+https://mp.weixin.qq.com/s/FOCR-9X5LVtjxVMWoAtw4g
+
+GPT的野望
+
 # ERNIE
 
 ERNIE是百度2019年提出的。

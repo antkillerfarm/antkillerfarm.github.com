@@ -418,3 +418,7 @@ https://mp.weixin.qq.com/s/TwG6_KJvTGCzDMy6ZD6jsA
 https://mp.weixin.qq.com/s/hMaZ_6y3b4CRzq2p9eVkVw
 
 使用Python过滤出类似的文本的简单方法
+
+https://mp.weixin.qq.com/s/7F-35VjIp_cmFNEceti1uA
+
+利用孪生网络，Keras，Tensorflow比较图片相似度

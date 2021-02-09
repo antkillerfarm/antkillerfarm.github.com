@@ -135,6 +135,10 @@ https://mp.weixin.qq.com/s/OpBKbF1UHEAuosXjNDKqOA
 
 机器学习距离与相似度计算
 
+https://mp.weixin.qq.com/s/cYfbZtFFd9jvnN4p8T20UQ
+
+9个数据科学中常见距离度量总结以及优缺点概述
+
 ## ALS算法原理
 
 http://www.cnblogs.com/luchen927/archive/2012/02/01/2325360.html

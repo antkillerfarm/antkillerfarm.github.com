@@ -239,6 +239,10 @@ https://mp.weixin.qq.com/s/SmpUPJRK0TMdA0rkb_Q6VQ
 
 什么是集群？什么又是负载均衡？
 
+https://mp.weixin.qq.com/s/sCGI3XPga5gTZF0iskJlMA
+
+全网最详尽的负载均衡原理图解
+
 ## Nginx
 
 https://mp.weixin.qq.com/s/31DGDYpDHcYg-4qM4OczxA
@@ -264,3 +268,7 @@ Nginx，为什么依旧这么“香”？
 https://blog.csdn.net/yujing1314/article/details/107000737
 
 搞懂Nginx一篇文章就够了
+
+https://mp.weixin.qq.com/s/-8Ka8nMYpH7cipzfm36utw
+
+写给小白的Nginx文章

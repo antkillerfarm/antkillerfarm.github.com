@@ -222,6 +222,10 @@ https://mp.weixin.qq.com/s/amhWo269x2utl9xIKukrtw
 
 利用遗传算法优化GANs
 
+https://mp.weixin.qq.com/s/p8KS81X_w9zaUb6iiCMJsQ
+
+进化计算前沿综述：值得算法学习的6个生物进化特征
+
 # PaddlePaddle
 
 https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q

@@ -291,6 +291,10 @@ https://mp.weixin.qq.com/s/nu7eKp8kSRdJ0uEKgxA5pw
 
 基于OpenCV的条形码检测
 
+https://mp.weixin.qq.com/s/pphBiEX099ZkDV0hWwnbhw
+
+微信二维码引擎OpenCV开源！3行代码让你拥有微信扫码能力
+
 ## 参考
 
 https://mp.weixin.qq.com/s/R2kGr7NHorfnpHV9OD18Qw

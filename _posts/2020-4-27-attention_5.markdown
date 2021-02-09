@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（五）——Attention in CV, BERT进阶
+title:  Attention（五）——Attention in CV & RS
 category: Attention 
 ---
 
@@ -127,6 +127,10 @@ https://mp.weixin.qq.com/s/1R_plHqxTLE-Fw3TjYnlJQ
 
 GPU BERT上线性能不合格，看看微信AI的PPoPP论文
 
+https://mp.weixin.qq.com/s/OgTQ3O_6lvOG07U-tjpTDA
+
+如何让Transformer在GPU上跑得更快？快手：需要GPU底层优化
+
 # Linformer
 
 https://mp.weixin.qq.com/s/IOc-gxOa6a415Hf1VBmiQw
@@ -139,7 +143,7 @@ Linformer: 线性复杂度的Attention
 
 Self-Attention 加速方法一览：ISSA、CCNet、CGNL、Linformer
 
-# Attention in CV
+# Attention in CV & RS
 
 https://mp.weixin.qq.com/s/PD2YnFb6yleDEMhz3ahFSQ
 
@@ -241,6 +245,14 @@ https://mp.weixin.qq.com/s/FIilwbLzYk4av8w11VgJeQ
 
 计算机视觉中的Transformer
 
+https://mp.weixin.qq.com/s/2BECepucUdzLYlyU1aM7bA
+
+网络架构设计：CNN based和Transformer based
+
+https://mp.weixin.qq.com/s/k-pe1qTelVmvcwY6hmSi4A
+
+Transformer是巧合还是必然？搜索推荐领域的新潮流
+
 # BERT进阶
 
 ## AR vs AE
@@ -272,6 +284,10 @@ $$p(x)=\prod_{x\in Mask}p(x_t|context)$$
 https://mp.weixin.qq.com/s/n6F6MTjrUCmvEoaLiVZpxA
 
 更深的编码器+更浅的解码器=更快的自回归模型
+
+https://mp.weixin.qq.com/s/pe2E69Gpw0nT9sSHvtBGSg
+
+自回归与非自回归模型不可兼得？预训练模型BANG全都要！
 
 ## UniLM
 
@@ -314,31 +330,3 @@ https://www.zhihu.com/question/298203515
 https://mp.weixin.qq.com/s/Fao3i99kZ1a6aa3UhAYKhA
 
 全面超越人类！Google称霸SQuAD，BERT横扫11大NLP测试
-
-https://mp.weixin.qq.com/s/INDOBcpg5p7vtPBChAIjAA
-
-最强预训练模型BERT的Pytorch实现
-
-https://mp.weixin.qq.com/s/SZMYj4rMneR3OWST007H-Q
-
-解读谷歌最强NLP模型BERT：模型、数据和训练
-
-https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
-
-详细解读谷歌新模型BERT为什么嗨翻AI圈
-
-https://zhuanlan.zhihu.com/p/66053631
-
-BERT
-
-https://mp.weixin.qq.com/s/WEbJnO04DOrsxUbzpgL66g
-
-BERT源码分析（PART I）
-
-https://mp.weixin.qq.com/s/iXjE7KoyvFQ8uekLKRK4jw
-
-BERT源码分析（PART II）
-
-https://mp.weixin.qq.com/s/DxBC_x5ZWC6SECfnwDGnVg
-
-BERT源码分析（PART III）

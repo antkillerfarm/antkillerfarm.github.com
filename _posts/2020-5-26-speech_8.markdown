@@ -392,3 +392,7 @@ https://mp.weixin.qq.com/s/UDUOIIyGJtXHdc3xcyfOIg
 https://zhuanlan.zhihu.com/p/301162618
 
 深度学习模型压缩与加速
+
+https://mp.weixin.qq.com/s/Lv1JuwNohAsIAB1SKT7Lkg
+
+深度卷积网络的剪枝和加速

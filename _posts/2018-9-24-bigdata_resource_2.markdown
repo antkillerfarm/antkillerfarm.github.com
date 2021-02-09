@@ -9,6 +9,30 @@ category: resource
 
 # 大数据平台参考资源
 
+https://mp.weixin.qq.com/s/zDbcV_vJeBOnAYxK0WEJQQ
+
+Web系统大规模并发：电商秒杀与抢购
+
+https://mp.weixin.qq.com/s/QxV4-sa72ALCZdD4QWqLPA
+
+如何让快递更"快"？菜鸟自研定时任务调度引擎首次公开
+
+https://mp.weixin.qq.com/s/MSR18sqUznuiUgUM5YkvZg
+
+携程图片服务架构
+
+https://mp.weixin.qq.com/s/pxNRzWs3sZmbr-K18FvnrA
+
+美团点评智能支付核心交易系统的可用性实践
+
+https://mp.weixin.qq.com/s/UYN4cxH4gT0WsFTrBKRKGA
+
+美团酒旅实时数据规则引擎应用实践
+
+https://mp.weixin.qq.com/s/XE56cWASFcq8r-p1OBvKng
+
+日均5亿字符翻译量，百毫秒内响应，携程机器翻译平台实践
+
 https://mp.weixin.qq.com/s/oYiQEMelkXHbT3ke2BmHOw
 
 如何逐步去构建一个大型网站系统

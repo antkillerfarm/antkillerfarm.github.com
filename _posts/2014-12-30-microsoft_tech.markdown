@@ -238,3 +238,41 @@ gl-matrix 3.0以后添加了名字空间glMatrix，所以老旧的代码可能�
 ## 其他库
 
 https://deck.gl/
+
+# Machine Learning之Python篇+
+
+https://github.com/TheAlgorithms/Python
+
+各种Python算法的新手入门大全
+
+https://mp.weixin.qq.com/s/PtZ3YvFrUgbK5y3pcAeW9A
+
+使用OpenCV和Python实现的机器学习
+
+https://mp.weixin.qq.com/s/iT91pDPP49EuNA0KfY2njg
+
+十大数据科学Python热门库推荐
+
+https://mp.weixin.qq.com/s/e--IeRTRZMqhs_DSJKpgyQ
+
+特征工程之Scikit-learn
+
+https://mp.weixin.qq.com/s/z3N5v4H_W2sxh2XPpFbAcA
+
+除了Python，这些语言写的机器学习项目也很牛
+
+https://mp.weixin.qq.com/s/U2cDVRxZPVsqoL-zHn__CA
+
+Python做机器学习之路
+
+https://mp.weixin.qq.com/s/LgVS5N80UlCeEfrPtyUF4Q
+
+深度学习矩阵运算的概念和代码实现
+
+https://mp.weixin.qq.com/s/0XteuIk71qSpxrZPGVnMbg
+
+Python3实现K-近邻算法
+
+https://mp.weixin.qq.com/s/bGudwxu8c0LIxv1h64qZtQ
+
+Python3实现决策树算法

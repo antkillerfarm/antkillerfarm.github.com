@@ -343,6 +343,10 @@ https://mp.weixin.qq.com/s/o1wbG_9LDDqM2kLNAfHUIg
 
 没人告诉过你更复杂的缓存穿透怎么解决
 
+https://mp.weixin.qq.com/s/0J9X-fFp3y0zaxR78tBfQQ
+
+服务降级该怎么做？
+
 ## 数据管理工具
 
 数据管理工具主要有：Navicat和DataGrip。

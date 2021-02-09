@@ -297,6 +297,16 @@ X.500系列标准列表
 
 ## 参考
 
+硬件/软件工程师Robert Ou最开始在Pwned Passwords上发现“ji32k7au4a83”竟然有141次使用，他觉得这不太正常，因为这个字符串太“偏”了，于是他在社区提问。
+
+随后就有人指出了原因（估计就是使用者），原来“ji32k7au4a83”是汉语注音符号系统中“我的密码”的对应字符串。
+
+https://mp.weixin.qq.com/s/3XyG6KmH0naPsScqFE2vsw
+
+为什么那么多人用 “ji32k7au4a83” 作密码？
+
+----
+
 https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
 
 前端安全系列之一：如何防止XSS攻击？

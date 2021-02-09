@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（六）——Transformer进阶
+title:  Attention（六）——BERT进阶
 category: Attention 
 ---
 
@@ -8,6 +8,34 @@ category: Attention
 {:toc}
 
 # BERT进阶
+
+https://mp.weixin.qq.com/s/INDOBcpg5p7vtPBChAIjAA
+
+最强预训练模型BERT的Pytorch实现
+
+https://mp.weixin.qq.com/s/SZMYj4rMneR3OWST007H-Q
+
+解读谷歌最强NLP模型BERT：模型、数据和训练
+
+https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
+
+详细解读谷歌新模型BERT为什么嗨翻AI圈
+
+https://zhuanlan.zhihu.com/p/66053631
+
+BERT
+
+https://mp.weixin.qq.com/s/WEbJnO04DOrsxUbzpgL66g
+
+BERT源码分析（PART I）
+
+https://mp.weixin.qq.com/s/iXjE7KoyvFQ8uekLKRK4jw
+
+BERT源码分析（PART II）
+
+https://mp.weixin.qq.com/s/DxBC_x5ZWC6SECfnwDGnVg
+
+BERT源码分析（PART III）
 
 https://mp.weixin.qq.com/s/kI_k_plZbRzmdeXxt2_2WA
 
@@ -376,49 +404,3 @@ https://mp.weixin.qq.com/s/BvM5zx-3XrsZj8BQ5WEa4A
 https://mp.weixin.qq.com/s/mFRhp9pJRa9yHwqc98FMbg
 
 BERT在美团搜索核心排序的探索和实践
-
-https://mp.weixin.qq.com/s/MPGF3tkNn3PBA_7S-fo9eg
-
-谷歌新模型突破BERT局限：NLP版“芝麻街”新成员Big Bird长这样
-
-https://zhuanlan.zhihu.com/p/165893466
-
-BERT及其变种
-
-https://mp.weixin.qq.com/s/5HZULHPI3-HJypvAMXEOcQ
-
-MT-BERT在文本检索任务中的实践
-
-https://mp.weixin.qq.com/s/0aZdGzcGW5ZA020rhX0qSQ
-
-BERT4Rec:使用Bert进行序列推荐
-
-https://mp.weixin.qq.com/s/fr-THgOeaTspKsv_hXnU2Q
-
-CogLTX：将BERT应用于长文本
-
-https://www.cnblogs.com/zhouxiaosong/p/11397655.html
-
-使用BERT模型生成token级向量
-
-https://mp.weixin.qq.com/s/JLP4-5IR6HPK4SRQoC9FAQ
-
-BERT预训练实操总结
-
-https://mp.weixin.qq.com/s/FuO8zY3XoIF-s6_8aXAusw
-
-BERT相关模型汇总梳理
-
-# Transformer进阶
-
-https://mp.weixin.qq.com/s/-Y7Qy-5aJNJ5bx8QJf3k2w
-
-Transformer及其变种
-
-https://mp.weixin.qq.com/s/nSokDcIkOSSrRnhHCuu4Mg
-
-Transformer家族简史（PART I）
-
-https://mp.weixin.qq.com/s/p919Kfv-1GSDM6u6FpnBsA
-
-Transformer家族简史（PART II）

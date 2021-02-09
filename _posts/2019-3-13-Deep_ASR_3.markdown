@@ -333,6 +333,10 @@ https://mp.weixin.qq.com/s/4zm4kO4CU9-0sYKTSYdudw
 
 10小时训练数据打造多语种语音识别新高度
 
+https://mp.weixin.qq.com/s/_84nqrEMGC-Q-fPdEiPDgQ
+
+3人半年打造语音识别引擎——58同城语音识别自研之路
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/jwV4glj8vIUKSelzeRrxSg

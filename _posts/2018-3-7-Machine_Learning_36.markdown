@@ -147,6 +147,10 @@ https://mp.weixin.qq.com/s/hYuBHHfAGLO3Y0l5t6y94Q
 
 XGBoost缺失值引发的问题及其深度分析
 
+https://mp.weixin.qq.com/s/Il_S6y4UkN5nim91mwVcVw
+
+缺失值处理
+
 https://mp.weixin.qq.com/s/wgiNutl3FhJSAtfJNd5B5g
 
 Xgboost

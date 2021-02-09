@@ -197,6 +197,10 @@ https://mp.weixin.qq.com/s/gbCshU5eEn4Gefduk1zdCQ
 
 浅谈Java并发下的乐观锁
 
+https://mp.weixin.qq.com/s/czLqzt0cRwPZeQ4WDaKiJQ
+
+无锁队列的实现
+
 # 动态库版本设置
 
 linux动态库使用soname来设定动态库的版本兼容性。

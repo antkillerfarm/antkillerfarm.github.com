@@ -47,6 +47,38 @@ https://mp.weixin.qq.com/s/67KEakYxM2lNm_hB9_W9BQ
 
 老板：把数据库变更，给整利索了
 
+## 时序数据库
+
+https://mp.weixin.qq.com/s/yQSMSLBYg4iauu8yeUfvjw
+
+深度解读！时序数据库HiTSDB：分布式流式聚合引擎
+
+https://mp.weixin.qq.com/s/rZuGW9Fe0TA3dNEY7dh_Jg
+
+TimescaleDB比拼InfluxDB：如何选择合适的时序数据库？
+
+https://mp.weixin.qq.com/s/L_-3H51TpRLBQnqRiLxP4Q
+
+实时数据库：一夜之间，我感受到了时序数据库的威胁
+
+## OpenTSDB
+
+OpenTSDB（Time Series Database）是一个基于HBase的存放时序数据的数据库。
+
+官网：
+
+http://opentsdb.net/
+
+DB这个词很有误导性，其实它并不是一个db，单独一个OpenTSDB无法存储任何数据，它只是一层数据读写的服务，更准确的说它只是建立在Hbase上的一层数据读写的服务。
+
+HBase在使用上的一个难点就是如何根据业务的特点，设计键值和索引。OpenTSDB就是这方面的一个实践。
+
+参考：
+
+https://mp.weixin.qq.com/s/GApmeXGbjRTnhullArlkYg
+
+小米正用时序数据库，解决这个“硬核”问题
+
 ## 参考
 
 https://mp.weixin.qq.com/s/ActS6PxbtZGqPb0jOn0iFg
@@ -109,17 +141,9 @@ https://mp.weixin.qq.com/s/1pXMCcO6NR1SMBzsyES-cw
 
 分布式数据库又支持关系数据模型了？
 
-https://mp.weixin.qq.com/s/yQSMSLBYg4iauu8yeUfvjw
-
-深度解读！时序数据库HiTSDB：分布式流式聚合引擎
-
 https://mp.weixin.qq.com/s/m76PFxbcY6_-XyeU7uu4Jg
 
 数据库的最简单实现
-
-https://mp.weixin.qq.com/s/rZuGW9Fe0TA3dNEY7dh_Jg
-
-TimescaleDB比拼InfluxDB：如何选择合适的时序数据库？
 
 https://mp.weixin.qq.com/s/pZnAcjFlBM2I4Hyctd6MHw
 
@@ -160,6 +184,10 @@ https://www.jianshu.com/p/0355d9e5ba0e
 https://mp.weixin.qq.com/s/QbwTY8Tfkv1uUdsL9vk8iw
 
 一文看懂阿里文娱大数据OLAP选型
+
+https://mp.weixin.qq.com/s/mcyljauYnyydePLPeshjhw
+
+程序员硬核“年终大扫除”，清理了数据库70GB空间
 
 # Mysql
 
@@ -350,47 +378,3 @@ MySQL事务隔离级别和MVCC
 https://mp.weixin.qq.com/s/qHJiTjpvDikFcdl9SRL97Q
 
 深入理解MySQL索引底层原理
-
-https://www.jianshu.com/p/bdc9e57ccf8b
-
-mysql索引篇之覆盖索引、联合索引、索引下推
-
-https://mp.weixin.qq.com/s/PgGDeowQaQ6MlUExZE-TMA
-
-如果是MySQL引起的CPU消耗过大，你会如何优化？
-
-https://mp.weixin.qq.com/s/L3ydmN1TP5YsxJ97WeFXGg
-
-万字总结：学习MySQL优化原理，这一篇就够了！
-
-https://mp.weixin.qq.com/s/vmKPKn9Y1FPY8MWy2Xcu6A
-
-MySQL的自增ID用完了，怎么办？
-
-https://mp.weixin.qq.com/s/H0FI_Ci0YAQyUfaK3OVDJw
-
-InnoDB自增原理都搞不清楚，还怎么CRUD？
-
-https://mp.weixin.qq.com/s/QduIxKOykMmoZp13UGF1XQ
-
-MySQL索引知识点总结
-
-https://mp.weixin.qq.com/s/E0PIOTflCicyPs5fcv0qAg
-
-Mysql高性能优化规范建议
-
-https://mp.weixin.qq.com/s/0AlXjjYIQUU9tkw2LNiR_A
-
-MySQL不会丢失数据的秘密，就藏在它的7种日志里
-
-https://mp.weixin.qq.com/s/b7Qnzh1EIM4wbExwmIkJyA
-
-一个线上SQL死锁异常分析：深入了解事务和锁
-
-https://mp.weixin.qq.com/s/58Xm6IrrTClny6DsNAbxrg
-
-详解一条SQL的执行过程
-
-https://mp.weixin.qq.com/s/Vlsm9rHHaCl02gZmDQfgDA
-
-到底是什么原因才导致 select * 效率低下的

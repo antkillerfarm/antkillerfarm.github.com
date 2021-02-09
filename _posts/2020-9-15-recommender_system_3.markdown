@@ -409,6 +409,10 @@ https://mp.weixin.qq.com/s/mFWhv6ykGFc6g40GGuzYOQ
 
 推荐系统中模型训练及使用流程的标准化
 
+https://mp.weixin.qq.com/s/sWGsWKSoPeAD8eKr6U8Dcg
+
+如何评价一个推荐系统的好坏？
+
 # 推荐系统进阶+
 
 https://mp.weixin.qq.com/s/sDG5xm1JZ8rIEaVXeVQ5cA
@@ -426,27 +430,3 @@ https://mp.weixin.qq.com/s/nUQsFBh2Jyf1fqINNlpmqg
 https://mp.weixin.qq.com/s/XD6qFpt8FdLTy2PcrLiTIA
 
 推荐算法的"五环之歌"
-
-https://mp.weixin.qq.com/s/6Zs0nM2HOZFBFsC0PUy_0A
-
-推荐系统应该如何保障推荐的多样性？
-
-https://mp.weixin.qq.com/s/4EY8E8LqUsfEGqC3xPSqeg
-
-推荐生态中的bias和debias
-
-https://mp.weixin.qq.com/s/9I6efSutqBcKmAlvozD-rQ
-
-一文看懂基于内容的推荐算法
-
-https://mp.weixin.qq.com/s/1Pkz1xj9N5MX4HDQ-mvP_w
-
-不确定度建模（上）- 贝叶斯推断基础
-
-https://mp.weixin.qq.com/s/ynmubPErKVq2h8GEVFlXwQ
-
-不确定度建模（中）-蒙特卡洛采样
-
-https://mp.weixin.qq.com/s/aZ7OHJBkrjqJbr2fl011_Q
-
-不确定度建模（下）-变分推断及应用

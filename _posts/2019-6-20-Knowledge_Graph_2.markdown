@@ -356,3 +356,7 @@ https://mp.weixin.qq.com/s/Jf9CMm3YIINtvT9ivweQMA
 https://mp.weixin.qq.com/s/UafpA31khwR9viFJh88czw
 
 当推荐系统遇见知识图谱
+
+https://mp.weixin.qq.com/s/P1TIOrC8ve-6265dMz1nvQ
+
+当推荐系统遇见知识图谱（二）

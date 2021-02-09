@@ -144,24 +144,6 @@ http://blog.csdn.net/dhtx_wzgl/article/details/49423979
 
 HBase学习之二级索引
 
-## OpenTSDB
-
-OpenTSDB（Time Series Database）是一个基于HBase的存放时序数据的数据库。
-
-官网：
-
-http://opentsdb.net/
-
-DB这个词很有误导性，其实它并不是一个db，单独一个OpenTSDB无法存储任何数据，它只是一层数据读写的服务，更准确的说它只是建立在Hbase上的一层数据读写的服务。
-
-HBase在使用上的一个难点就是如何根据业务的特点，设计键值和索引。OpenTSDB就是这方面的一个实践。
-
-参考：
-
-https://mp.weixin.qq.com/s/GApmeXGbjRTnhullArlkYg
-
-小米正用时序数据库，解决这个“硬核”问题
-
 ## 参考
 
 https://mp.weixin.qq.com/s/ucQgmb1NkdyfAw6wDTyWYg

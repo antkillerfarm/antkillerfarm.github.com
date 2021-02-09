@@ -181,6 +181,10 @@ https://mp.weixin.qq.com/s/T_UsCkj9hnV7tgOTcaf6Wg
 
 Multi-Task多任务学习， 那些你不知道的事
 
+https://mp.weixin.qq.com/s/vFHYk7202bSZ214Za_SOtQ
+
+2021年浅谈多任务学习
+
 # 人脸检测/识别
 
 ## OHEM

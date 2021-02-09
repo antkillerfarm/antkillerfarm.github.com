@@ -424,3 +424,7 @@ GNN中的Graph Pooling
 https://mp.weixin.qq.com/s/5vgN2Z-FVMQ9ofPAy1Vf-g
 
 图表示学习中的Encoder-Decoder框架
+
+https://mp.weixin.qq.com/s/2HwszqbC_I2zdTCiQirxPQ
+
+图注意力网络入门：从数学理论到到NumPy实现

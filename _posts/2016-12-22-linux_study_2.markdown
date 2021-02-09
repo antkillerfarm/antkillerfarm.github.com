@@ -282,6 +282,12 @@ Linux nc命令详解
 
 查找文件夹（包括子文件夹）中所有的txt文件。
 
+https://mp.weixin.qq.com/s/y8LeZ0-9D56TWsD-ivPaHQ
+
+Linux文件搜索神器find实战详解
+
+----
+
 `strings /lib/tls/libc.so.6 | grep GLIBC`
 
 strings能输出文件中的可打印字符串（可指定字符串的最小长度），通常用来查看非文本文件（如二进制可执行文件）中的可读内容。上例可查看glibc支持的版本。

@@ -73,6 +73,10 @@ https://mp.weixin.qq.com/s/foAit8ratliRG6R2KC05Hg
 
 浅谈分布式锁
 
+https://www.cnblogs.com/intsmaze/p/6384105.html
+
+一句话说清分布式锁，进程锁，线程锁
+
 https://mp.weixin.qq.com/s/Ey_ofboH7EvAbPxTNHWC3w
 
 13张图彻底搞懂分布式系统服务注册与发现原理
@@ -416,27 +420,3 @@ https://mp.weixin.qq.com/s/KkrSxVZhOI22JDk4K20cxg
 https://mp.weixin.qq.com/s/-OgxpAz6Zz817N9hfK8njQ
 
 分布式存储中的数据分布策略
-
-https://mp.weixin.qq.com/s/zDbcV_vJeBOnAYxK0WEJQQ
-
-Web系统大规模并发：电商秒杀与抢购
-
-https://mp.weixin.qq.com/s/QxV4-sa72ALCZdD4QWqLPA
-
-如何让快递更"快"？菜鸟自研定时任务调度引擎首次公开
-
-https://mp.weixin.qq.com/s/MSR18sqUznuiUgUM5YkvZg
-
-携程图片服务架构
-
-https://mp.weixin.qq.com/s/pxNRzWs3sZmbr-K18FvnrA
-
-美团点评智能支付核心交易系统的可用性实践
-
-https://mp.weixin.qq.com/s/UYN4cxH4gT0WsFTrBKRKGA
-
-美团酒旅实时数据规则引擎应用实践
-
-https://mp.weixin.qq.com/s/XE56cWASFcq8r-p1OBvKng
-
-日均5亿字符翻译量，百毫秒内响应，携程机器翻译平台实践

@@ -29,6 +29,10 @@ https://zhuanlan.zhihu.com/p/40100223
 
 深度学习与TensorFlow：关于DBN的一些认识
 
+https://mp.weixin.qq.com/s/Qs-rg25B7hACzw6uEqRQbg
+
+深度信念网络研究现状与展望
+
 ## Deep Autoencoder
 
 ![](/images/img2/deep_autoencoder.png)

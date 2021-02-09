@@ -329,6 +329,10 @@ https://mp.weixin.qq.com/s/Jk6PlRBYorLI5FSa5xxOkw
 
 首个硬件资源受限下数据不均匀的图像去噪网络：BRDNet，代码已开源
 
+https://mp.weixin.qq.com/s/j7iMyv_0nRRVuqta1y_GRw
+
+使用深度学习进行图像去噪
+
 ## 去雨去雾
 
 http://coderskychen.cn/2015/12/11/%E6%9A%97%E9%80%9A%E9%81%93%E5%8E%BB%E9%9B%BE%E7%AE%97%E6%B3%95%E7%9A%84C-%E5%AE%9E%E7%8E%B0%E4%B8%8E%E4%BC%98%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89/

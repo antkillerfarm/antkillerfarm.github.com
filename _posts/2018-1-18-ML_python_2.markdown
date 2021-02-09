@@ -119,6 +119,14 @@ https://mp.weixin.qq.com/s/4YiOErETXRD4kQc7wTX3Bw
 
 用Matplotlib轻松复刻分析图，看看哪个城市买房最自由
 
+https://mp.weixin.qq.com/s/C6Vx5wc47aAufVrHVXDGaQ
+
+人人都能看懂的Matplotlib绘图原理
+
+https://mp.weixin.qq.com/s/lUzqR5eEcW7vb3vehuSzWQ
+
+Matplotlib 3D图
+
 ## Pandas
 
 Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。
@@ -436,33 +444,3 @@ https://jupyter.org/
 运行：
 
 `jupyter notebook`
-
-参见：
-
-https://mp.weixin.qq.com/s/UXlPhX3Vb2yqocpUH_3W5w
-
-Jupyter项目的前世今生
-
-https://mp.weixin.qq.com/s/aJRVh7BWOMq4KCoBMtLGGw
-
-快速学习Jupyter Notebook
-
-https://blog.csdn.net/u011493486/article/details/55001477
-
-Jupyter中显示matplotlib的图片
-
-https://www.cnblogs.com/nxld/p/6566380.html
-
-Jupyter Notebook快速入门
-
-https://mp.weixin.qq.com/s/u-e66SgesPjmpKEihHHr8g
-
-Jupyter Notebook超实用的5个插件，值得一试！
-
-https://mp.weixin.qq.com/s/nlskrbG5x6rG7Mu6qDeRxw
-
-青出于蓝而胜于蓝，这是一款脱胎于Jupyter Notebook的新型编程环境
-
-https://mp.weixin.qq.com/s/nVRFgtYsR72nJrJvy31s5A
-
-Jupyter官方神器：可视化Debug工具!

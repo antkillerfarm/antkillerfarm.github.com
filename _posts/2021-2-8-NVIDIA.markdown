@@ -159,6 +159,10 @@ http://blog.csdn.net/xsc_c/article/category/2186063
 
 某人的并行计算专栏
 
+https://mp.weixin.qq.com/s/9D7uda3CV7volenhl-jchg
+
+推荐几个不错的CUDA入门教程
+
 http://tieba.baidu.com/p/2155772860
 
 GPU和Shader技术的基础知识

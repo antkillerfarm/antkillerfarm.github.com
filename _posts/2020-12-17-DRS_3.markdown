@@ -261,6 +261,40 @@ https://mp.weixin.qq.com/s/QODGcKDCNR4rDhn-mschgg
 
 从Wide and Deep、DeepFM到DLRM，现代的推荐系统算法研究
 
+https://mp.weixin.qq.com/s/UKfGDH87WJqY79ujA54nEQ
+
+用统一框架理解向量化召回
+
+# 推荐系统进阶++
+
+https://mp.weixin.qq.com/s/6Zs0nM2HOZFBFsC0PUy_0A
+
+推荐系统应该如何保障推荐的多样性？
+
+https://mp.weixin.qq.com/s/4EY8E8LqUsfEGqC3xPSqeg
+
+推荐生态中的bias和debias
+
+https://mp.weixin.qq.com/s/9I6efSutqBcKmAlvozD-rQ
+
+一文看懂基于内容的推荐算法
+
+https://mp.weixin.qq.com/s/1Pkz1xj9N5MX4HDQ-mvP_w
+
+不确定度建模（上）- 贝叶斯推断基础
+
+https://mp.weixin.qq.com/s/ynmubPErKVq2h8GEVFlXwQ
+
+不确定度建模（中）-蒙特卡洛采样
+
+https://mp.weixin.qq.com/s/aZ7OHJBkrjqJbr2fl011_Q
+
+不确定度建模（下）-变分推断及应用
+
+https://mp.weixin.qq.com/s/r4aHwAB108zev5fhWqB-XQ
+
+转化率预估中的贝叶斯平滑
+
 # 抗美援朝+++
 
 https://www.zhihu.com/answer/745311401

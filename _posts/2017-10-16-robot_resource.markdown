@@ -15,7 +15,7 @@ category: resource
 
 ## 前言
 
-2004年，DARPA举办了第一届 “DARPA”挑战赛（无人车挑战赛）。根本没有一支参赛队伍完成这次比赛任务，这件事对来自斯坦福大学的Sebastian Thrun刺激很大。
+2004年，DARPA举办了第一届“DARPA”挑战赛（无人车挑战赛）。根本没有一支参赛队伍完成这次比赛任务，这件事对来自斯坦福大学的Sebastian Thrun刺激很大。
 
 于是，他在2005年组建了自己的无人车队，并且成为这项挑战赛上的第一支完赛队伍，获得奖金200万美元。这笔奖金虽然巨额，但事实上Sebastian Thrun在这个项目的投入远远大于200万美金。
 
@@ -72,6 +72,18 @@ https://mp.weixin.qq.com/s/7rz8QXPNda4PVs3KcweQMg
 https://mp.weixin.qq.com/s/Okolok3ZLZhgw0TQ_TROKA
 
 一文看尽国内智能驾驶格局：三条技术路线和玩家鏖战2020年
+
+----
+
+![](/images/img4/car.png)
+
+![](/images/img4/car_2.png)
+
+https://mp.weixin.qq.com/s/9huDW1RH1gjJpMkATEguug
+
+汽车芯片分析（应用 · 规模 ·趋势）
+
+----
 
 https://mp.weixin.qq.com/s/Jz-VqWCyNc6nUi-2PuB8rg
 

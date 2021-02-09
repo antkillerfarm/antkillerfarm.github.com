@@ -313,6 +313,10 @@ https://zhuanlan.zhihu.com/p/340568861
 
 预测未来--随机视频生成
 
+https://mp.weixin.qq.com/s/ZIFEom7wpQll_DgE8bUxtA
+
+不同的AI视频推理场景下，如何构建通用高效的抽帧工具？
+
 # 图像变换+++
 
 https://mp.weixin.qq.com/s/YbRo7TJ3j4dloSmKX40uAA

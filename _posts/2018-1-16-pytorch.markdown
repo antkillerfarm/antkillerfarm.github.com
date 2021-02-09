@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/dzDkpUHo4CKqq8i1pyYO2w
 
 60题PyTorch简易入门指南
 
+https://mp.weixin.qq.com/s/7at6y2NcYaxGGN8syxlccA
+
+PyTorch Cookbook
+
 https://mp.weixin.qq.com/s/RKtyNpIxSxFNfOSyHPOiGw
 
 深度学习PyTorch的教程代码

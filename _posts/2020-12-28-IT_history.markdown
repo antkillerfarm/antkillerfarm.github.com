@@ -283,6 +283,10 @@ https://mp.weixin.qq.com/s/Jf2xn5E1yvlxlT9lEWT47Q
 
 30张照片回顾乔布斯和比尔盖茨之间“不得不说”的故事
 
+https://mp.weixin.qq.com/s/pkgC9Ug34O0mBj8s1AIhIQ
+
+动听百年：音乐播放器发展沉浮史
+
 # 内存
 
 https://mp.weixin.qq.com/s/HOhBNZfOf5xQIFLYQ5ntCw

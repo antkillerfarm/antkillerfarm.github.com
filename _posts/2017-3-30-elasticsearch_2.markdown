@@ -366,6 +366,10 @@ https://mp.weixin.qq.com/s/QJOfh5gJReQTimu-mAzexg
 
 以Kafka和RocketMQ为例，漫谈消息队列
 
+https://mp.weixin.qq.com/s/imLTVwgm8MOiY1_5s3rdFQ
+
+RocketMQ如何保证消息的可靠性？
+
 https://mp.weixin.qq.com/s/6aXcum-FAbvcGcOrkSC4vQ
 
 为什么Kafka会成为微服务架构的事实标准？

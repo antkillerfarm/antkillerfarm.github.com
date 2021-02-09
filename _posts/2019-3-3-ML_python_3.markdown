@@ -9,6 +9,38 @@ category: AI
 
 # Machine Learning之Python篇
 
+## Jupyter（续）
+
+参见：
+
+https://mp.weixin.qq.com/s/UXlPhX3Vb2yqocpUH_3W5w
+
+Jupyter项目的前世今生
+
+https://mp.weixin.qq.com/s/aJRVh7BWOMq4KCoBMtLGGw
+
+快速学习Jupyter Notebook
+
+https://blog.csdn.net/u011493486/article/details/55001477
+
+Jupyter中显示matplotlib的图片
+
+https://www.cnblogs.com/nxld/p/6566380.html
+
+Jupyter Notebook快速入门
+
+https://mp.weixin.qq.com/s/u-e66SgesPjmpKEihHHr8g
+
+Jupyter Notebook超实用的5个插件，值得一试！
+
+https://mp.weixin.qq.com/s/nlskrbG5x6rG7Mu6qDeRxw
+
+青出于蓝而胜于蓝，这是一款脱胎于Jupyter Notebook的新型编程环境
+
+https://mp.weixin.qq.com/s/nVRFgtYsR72nJrJvy31s5A
+
+Jupyter官方神器：可视化Debug工具!
+
 ## Autograd
 
 一个基于numpy的自动求导库。它是由Harvard Intelligent Probabilistic Systems Group开发的。
@@ -446,39 +478,3 @@ Python大数据处理，Mastering Large Datasets with Python，311页pdf
 https://mp.weixin.qq.com/s/HKHLiCqEAtoCAqf4CHv86w
 
 python机器学习算法代码实现
-
-https://github.com/TheAlgorithms/Python
-
-各种Python算法的新手入门大全
-
-https://mp.weixin.qq.com/s/PtZ3YvFrUgbK5y3pcAeW9A
-
-使用OpenCV和Python实现的机器学习
-
-https://mp.weixin.qq.com/s/iT91pDPP49EuNA0KfY2njg
-
-十大数据科学Python热门库推荐
-
-https://mp.weixin.qq.com/s/e--IeRTRZMqhs_DSJKpgyQ
-
-特征工程之Scikit-learn
-
-https://mp.weixin.qq.com/s/z3N5v4H_W2sxh2XPpFbAcA
-
-除了Python，这些语言写的机器学习项目也很牛
-
-https://mp.weixin.qq.com/s/U2cDVRxZPVsqoL-zHn__CA
-
-Python做机器学习之路
-
-https://mp.weixin.qq.com/s/LgVS5N80UlCeEfrPtyUF4Q
-
-深度学习矩阵运算的概念和代码实现
-
-https://mp.weixin.qq.com/s/0XteuIk71qSpxrZPGVnMbg
-
-Python3实现K-近邻算法
-
-https://mp.weixin.qq.com/s/bGudwxu8c0LIxv1h64qZtQ
-
-Python3实现决策树算法

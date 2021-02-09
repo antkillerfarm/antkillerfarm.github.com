@@ -252,3 +252,7 @@ https://mp.weixin.qq.com/s/CkZhqcGxRoOoaLGvQIVUIQ
 https://mp.weixin.qq.com/s/iGebSkPLeR9Vc2VmeHALfw
 
 尿尿尿的到处都是？我总结了男生尿尿的最强攻略！
+
+https://mp.weixin.qq.com/s/tTMrr5-urQhZlIBTKSHw8g
+
+物理学家终于破解了不粘锅的粘锅之谜

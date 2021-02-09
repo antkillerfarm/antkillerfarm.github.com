@@ -23,6 +23,10 @@ https://mp.weixin.qq.com/s/dmgfvLUTg14KWqe216kkFg
 
 300页文本知识提取与推断最新教程
 
+https://mp.weixin.qq.com/s/9HWgp1N3sp6Lxahrfo5Q1A
+
+知识图谱与大数据处理，212页pdf
+
 ## 综述
 
 https://github.com/lihanghang/Knowledge-Graph

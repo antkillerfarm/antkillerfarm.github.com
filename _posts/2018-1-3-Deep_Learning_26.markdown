@@ -81,6 +81,10 @@ https://mp.weixin.qq.com/s/HU8_T88KEwFMsrcXHnpfQQ
 
 基于视频的人脸表情识别数据集与基本方法
 
+https://mp.weixin.qq.com/s/i6AS7VzWbaxlImCmjEYvMQ
+
+基于视频的人脸表情识别不得不读的论文
+
 # OCR
 
 ## 概述

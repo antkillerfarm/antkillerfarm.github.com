@@ -297,6 +297,18 @@ https://mp.weixin.qq.com/s/6K5FvjMIVer-_fXJazU20Q
 
 深度学习中的3个秘密：集成，知识蒸馏和蒸馏
 
+https://mp.weixin.qq.com/s/-Rzvx9RMg9uZK5NFDs6cNg
+
+语义分割的结构知识蒸馏
+
+https://zhuanlan.zhihu.com/p/160206075
+
+Knowledge Distillation（知识蒸馏）Review--20篇paper回顾
+
+https://mp.weixin.qq.com/s/E7-MF18Y-UeKx694kGFHzA
+
+深度学习中的知识蒸馏技术（上）
+
 # 硬件加速技巧
 
 多通道卷积操作最终可以转化为矩阵运算，如下图所示：
