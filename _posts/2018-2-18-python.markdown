@@ -191,6 +191,12 @@ setuptools提供的一个工具，可从网络下载安装外部依赖文件。
 
 https://pythonhosted.org/setuptools/easy_install.html
 
+参考：
+
+https://mp.weixin.qq.com/s/w6ln1VCtOye-f21BShCNqg
+
+花了两天，终于把Python的setup.py给整明白了
+
 ## PyGObject
 
 谈起Python调用GTK+的话题，在GTK+ 2的时代可以使用PyGTK库。它的官网是：

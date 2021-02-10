@@ -61,6 +61,12 @@ Groq，“软件定义硬件”概念的背后
 
 Graphcore是一家英国芯片设计企业，成立于2012年。它的产品被称为IPU。
 
+官网：
+
+https://www.graphcore.ai/
+
+
+
 参考：
 
 https://zhuanlan.zhihu.com/p/103963276
