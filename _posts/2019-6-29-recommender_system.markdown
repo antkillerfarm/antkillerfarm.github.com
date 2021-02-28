@@ -165,6 +165,10 @@ https://mp.weixin.qq.com/s/zm1_RC5F7Ie4YLpm09-AFw
 
 浅谈冷启动：从无到有的那种
 
+https://mp.weixin.qq.com/s/xUBK-x4TiTzJaOilWXIbQw
+
+如何解决深度推荐系统中的Embedding冷启动问题？
+
 ## 负采样策略 & 非采样策略
 
 推荐系统中经常用到的数据是隐式反馈数据（Implicit Feedback Data），如浏览历史，点击日志等。这些数据往往只有正反馈而没有负反馈，并且数据是高度稀疏的（相比于用户点击过的产品，没有被点击过的产品的数量非常多）。在推荐系统中使用隐式反馈数据，有两种常见的学习方法：

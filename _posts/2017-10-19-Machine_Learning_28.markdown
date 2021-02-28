@@ -133,6 +133,10 @@ https://mp.weixin.qq.com/s/_TSnP5jJsAZ1bW4CbmxdoQ
 
 算法模型自动超参数优化方法
 
+https://mp.weixin.qq.com/s/ou2OtXLE9-3jpaODHDumzQ
+
+调参到头秃？你需要这份自动超参搜索技术攻略
+
 ## 参考
 
 https://mp.weixin.qq.com/s/-0--sZXjMvFKxxo87w4udg
@@ -255,6 +259,8 @@ scikit-learn中的自动模型选择和复合特征空间
 
 ![](/images/img4/imbalance.jpg)
 
+![](/images/img4/imbalance.png)
+
 https://mp.weixin.qq.com/s/e0jXXCIhbaZz7xaCZl-YmA
 
 如何处理不均衡数据？
@@ -330,3 +336,7 @@ https://zhuanlan.zhihu.com/p/259710601
 https://mp.weixin.qq.com/s/4gLlCmmw3GK_Sbt_BXXEKQ
 
 使用遗传交叉算子进行过采样处理数据不平衡
+
+https://mp.weixin.qq.com/s/gZio0rdg8KmU1rokTOBjqQ
+
+通过随机采样和数据增强来解决数据不平衡的问题

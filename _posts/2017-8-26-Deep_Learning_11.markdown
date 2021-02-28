@@ -9,6 +9,22 @@ category: DL
 
 # 花式卷积（续）
 
+## Separable convolution
+
+前面介绍的都是正方形的卷积核，实际上长条形的卷积核也是很常用的。比如可分离卷积。
+
+我们知道卷积的计算量和卷积核的面积成正比。对于k x k的卷积核K来说，计算复杂度就是$$O(k^2)$$。
+
+如果我们能找到1 x k的卷积核H和k x 1的卷积核V，且$$K = V * H$$，则称K是可分离的卷积核。
+
+根据卷积运算满足结合律，可得：
+
+$$f * K = f * (V * H) = f * V * H$$
+
+这样就将一个k x k的卷积运算，转换成1 x k + k x 1的卷积运算，从而大大节省了参数和计算量。
+
+显然，不是所有的卷积核都满足可分离条件。但是不要紧，NN有自动学习并逼近函数的能力。经过训练之后：$$K \approx V * H$$
+
 ## 1x1卷积
 
 1、升维或降维。
@@ -280,33 +296,3 @@ CNN-反卷积
 http://buptldy.github.io/2016/10/29/2016-10-29-deconv/
 
 Transposed Convolution, Fractionally Strided Convolution or Deconvolution（中文blog）
-
-# 迁移学习+
-
-https://zhuanlan.zhihu.com/p/57656210
-
-Deep Domain Adaptation论文集(五)：基于数据重构的迁移方法
-
-https://zhuanlan.zhihu.com/p/57930557
-
-Deep Domain Adaptation论文集(六)：源域与目标域特征空间不一致的处理方法
-
-https://zhuanlan.zhihu.com/p/58514431
-
-Domain Adaptation：不用深度网络，如何处理源域和目标域异构问题？
-
-https://zhuanlan.zhihu.com/p/272508224
-
-Domain Adaptation基础概念与相关文章解读
-
-https://mp.weixin.qq.com/s/7QrIfNXQgSqYC1SOFUOlgQ
-
-对迁移学习中域适应的理解和3种技术的介绍
-
-https://mp.weixin.qq.com/s/e_ltoKzqBhmicwb7vcFcoQ
-
-迁移学习-该做的和不该做的
-
-https://mp.weixin.qq.com/s/Yzbn8B9DsBErt9VbAQTY3w
-
-深度迁移学习方法的基本思路

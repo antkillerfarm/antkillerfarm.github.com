@@ -383,6 +383,14 @@ https://mp.weixin.qq.com/s/jzjumS2oJfFO-4SBa0qooQ
 
 利用Python将PDF文档转为MP3音频
 
+https://mp.weixin.qq.com/s/FmdbdAWenXWuY9s7ykVORQ
+
+三种方法，Python轻松提取PDF中全部图片
+
+https://mp.weixin.qq.com/s/UVKOU11dfWwP9Uyw9E400Q
+
+如何使用python提取pdf表格及文本，并保存到excel
+
 ## word & excel
 
 https://mp.weixin.qq.com/s/lEtE3ejBLzmm9_eo-_8NBg

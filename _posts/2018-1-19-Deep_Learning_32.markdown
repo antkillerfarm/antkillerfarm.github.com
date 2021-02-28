@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十二）——点云, AutoDL（1）, 图像超分辨率进阶
+title:  深度学习（三十二）——点云, AutoDL（1）
 category: DL 
 ---
 
@@ -139,6 +139,10 @@ https://mp.weixin.qq.com/s/1M22-5ns3Mbd9_VJjTdGBQ
 
 3D物体检测、行为预测和运动检测，一文解析激光雷达中时序融合的研究现状和发展方向
 
+https://mp.weixin.qq.com/s/0OXtzUoNIyZFs-4PV173LQ
+
+Apollo激光雷达感知技术解析
+
 # AutoDL
 
 DL领域目前存在的主要问题之一是：如何设计网络结构和调整超参数。目前的做法，通常依赖于作者的直觉，属于典型的拍脑袋想点子。
@@ -208,6 +212,10 @@ https://mp.weixin.qq.com/s/uF3R3FoERAKvIZLpgWp13A
 
 BTB: 用于开发AutoML自动化机器学习系统的简单、可扩展库
 
+https://mp.weixin.qq.com/s/TPC6ayQqKhlOpB8PrJHhZA
+
+Microsoft NNI入门
+
 ## 书籍
 
 https://mp.weixin.qq.com/s/wTwjbripELzqdCjs64Dzzw
@@ -227,6 +235,10 @@ https://mp.weixin.qq.com/s/Jw2kzCf2uFibhIpREnjO_A
 https://mp.weixin.qq.com/s/RfONzym6-FQgF1J8wru35A
 
 ENAS：首个权值共享的神经网络搜索方法，千倍加速
+
+https://mp.weixin.qq.com/s/WMxPXDabYbDqLwM-9MX4aw
+
+Efficient Neural Architecture Search
 
 ## DARTS
 
@@ -248,134 +260,136 @@ https://mp.weixin.qq.com/s/Ihn-faO0XvfDDqtEwfWDzg
 
 DARTS：基于梯度下降的经典网络搜索方法，开启端到端的网络搜索
 
-# 图像超分辨率进阶
+## 动态神经网络
 
-亚像素尺度上对物体进行计数，是一类和超分辨率很相关的CV任务。
+除了各种网络结构的搜索之外，还有动态神经网络这个流派。动态网络可以根据不同的输入调整其结构或参数，在精度、计算效率和适应性等方面具有显著优势。
 
-https://mp.weixin.qq.com/s/Zp5jlUspiocEZ6CI1cWJZw
+https://mp.weixin.qq.com/s/s225jEDZRBggPuu2lOGnNA
 
-深度学习能看到的比你更多，亚像素物体计数方法介绍
+动态神经网络最新综述论文
 
-----
+## 集成学习
 
-![](/images/img4/SR.jpg)
+神经网络集成学习，也是AutoDL的方法之一。
 
-https://zhuanlan.zhihu.com/p/266472242
+https://mp.weixin.qq.com/s/57Vxc1A5FCVbMdDYShWiDA
 
-一文带你入门超分网络及其渐进式上采样方法
+单网络内部集成：我要打十个！
 
-https://mp.weixin.qq.com/s/xpvGz1HVo9eLNDMv9v7vqg
+# Graph NN+
 
-NTIRE2017夺冠论文：用于单一图像超分辨率的增强型深度残差网络
+https://mp.weixin.qq.com/s/soH6jX7_fjq0iBBH-5bMsA
 
-https://www.zhihu.com/question/25401250
+Node2Vec论文+代码笔记
 
-如何通过多帧影像进行超分辨率重构？
+https://mp.weixin.qq.com/s/VQON_WM_wLjGgbY2_UqzSQ
 
-https://www.zhihu.com/question/38637977
+Node2Vec: 可扩展的网络特征学习
 
-超分辨率重建还有什么可以研究的吗？
+https://mp.weixin.qq.com/s/zxFgW6ofimYQ9wlChTK8cw
 
-https://zhuanlan.zhihu.com/p/25912465
+Recommender System with GNN
 
-胎儿MRI高分辨率重建技术：现状与趋势
+https://mp.weixin.qq.com/s/_vbcLre5HIrOGbAjTzLFjA
 
-https://mp.weixin.qq.com/s/i-im1sy6MNWP1Fmi5oWMZg
+动态网络表征学习在推荐领域的创新与实践
 
-华为推出新型HiSR：移动端的超分辨率算法
+https://mp.weixin.qq.com/s/17ozbpr2IIoq36VpBl3Crw
 
-https://mp.weixin.qq.com/s/h4Xzt-aS1_-5zjTB0ypTLg
+基于知识图谱和图卷积神经网络的应用和开发
 
-普通视频转高清：10个基于深度学习的超分辨率神经网络
+https://mp.weixin.qq.com/s/mbr3u9SiYVPysBT9xuX0vg
 
-https://mp.weixin.qq.com/s/WmqagSGRy98USgnz21W3Pg
+Hyperbolic Graph Convolutional Neural Networks
 
-WDSR
+https://mp.weixin.qq.com/s/nGPUcDHTrG6KwAqDCkfA1w
 
-https://mp.weixin.qq.com/s/oNavFLOPskHNxWIyBbFzHw
+基于超图网络模型的图网络进化算法
 
-WDSR (NTIRE2018 超分辨率冠军)
+https://mp.weixin.qq.com/s/XoVUJln3oyhk2jMOtWwfog
 
-https://mp.weixin.qq.com/s/AxHTaT-G5_Y6Iw_3aIIxCg
+基于图神经网络的协同过滤算法
 
-超分辨率技术如何发展？这6篇ECCV 18论文带你一次尽览
+https://zhuanlan.zhihu.com/p/86216369
 
-https://mp.weixin.qq.com/s/zWoQCKbZNz2td3cZxEsqKQ
+从3/4层拓展到56层，如何训练超级深层的图卷积神经网络
 
-腾讯优图提出SRN-DeblurNet：高效高质量去除复杂图像模糊
+https://mp.weixin.qq.com/s/ceC1_39cmpqYOoHsu-4sCQ
 
-https://mp.weixin.qq.com/s/eJkkbGBYxWlngkT5gjjW7g
+HEC-Montreal唐建博士：图神经网络推理
 
-效果惊人：上古卷轴III等经典游戏也能使用超分辨率GAN重制了
+https://mp.weixin.qq.com/s/aIU8mP5nlnqR4Qt-4RfMgQ
 
-https://mp.weixin.qq.com/s/M8gCrQDtjT1lszsxV2QQKg
+孙付伟：Graph Embedding在知乎的应用实践
 
-FSRNet：端到端深度可训练人脸超分辨网络
+https://zhuanlan.zhihu.com/p/111945052
 
-https://mp.weixin.qq.com/s/fkHfzkHRFpEGc-L4uGlqcg
+TextGCN
 
-从网络设计到实际应用，深度学习图像超分辨率综述
+https://blog.csdn.net/weixin_43269174/article/details/98492487
 
-https://mp.weixin.qq.com/s/C9Ku4MvU2QuZ_GJcs8FelA
+从图嵌入算法到图神经网络
 
-基于深度学习的图像超分辨率最新进展与趋势
+https://mp.weixin.qq.com/s/LxdZ5xRuqQjNbG9FhhD0Aw
 
-https://mp.weixin.qq.com/s/qNHbs2Bd4buVlu0j3Rtj0g
+图神经网络越深，表现就一定越好吗？
 
-Adobe提出新型超分辨率方法：用神经网络迁移参照图像纹理
+https://mp.weixin.qq.com/s/d_gf12bzVySHkXFl5rqVTQ
 
-https://mp.weixin.qq.com/s/N-kAIK_qMowsFqEtWTqt4w
+图神经网络前沿综述：动态图网络
 
-图像超分辨率重建--工程应用
+https://mp.weixin.qq.com/s/ea3sOkabOmaymlkeQJlZ1A
 
-https://mp.weixin.qq.com/s/JaPYUWvh7RBHVUYgKlTeHw
+图算法工程师 面试基础
 
-旷视提出超分辨率新方法Meta-SR：单一模型实现任意缩放因子
+https://mp.weixin.qq.com/s/3xNRyEsw7QPCzvpQU6chDw
 
-https://mp.weixin.qq.com/s/aEu0q04pgXUE1mqAS5kewQ
+图神经网络的重要分支：时间图网络
 
-不用P30 Pro，普通手机也能变身望远镜：陈启峰团队新作，登上CVPR 2019
+https://mp.weixin.qq.com/s/GibBqURtF_Oak8NOKDjEPg
 
-https://mp.weixin.qq.com/s/CXDzPSSyObPHYc40YictKQ
+时序图神经网络
 
-CVPR 2019 神奇的超分辨率算法DPSR：应对图像模糊降质
+https://mp.weixin.qq.com/s/k3HTFY3QLdiY_zj81NePAg
 
-https://mp.weixin.qq.com/s/Rr4AKGjZNyV3PDoRBVH-lw
+腾讯AI Lab联合清华、港中文，万字解读图深度学习历史、最新进展与应用
 
-低清视频也能快速转高清：超分辨率算法TecoGAN
+https://mp.weixin.qq.com/s/TSsKeADBuamrTPrRKUBpBQ
 
-https://mp.weixin.qq.com/s/PIq78vhNQxAKntnZilL4pQ
+Graph Normalization (GN)：为图神经网络学习一个有效的图归一化
 
-分割、检测与定位，高分辨率网络显神威！这会是席卷深度学习的通用结构吗？
+https://mp.weixin.qq.com/s/oBgPS0s_Fe2w4bmT__664A
 
-https://mp.weixin.qq.com/s/G55dxHfMYxWzjz4_8YnUaw
+动态图上的深度学习-动态时间图网络建模技术综述
 
-深度学习超分辨率最新综述：一文道尽技术分类与效果评测
+https://mp.weixin.qq.com/s/N3A8N4DZC-x8YavEXdpfKA
 
-https://zhuanlan.zhihu.com/p/67613641
+使用图进行特征提取：最有用的图特征机器学习模型介绍
 
-基于多级神经纹理迁移的图像超分辨方法(Adobe Research)
+https://mp.weixin.qq.com/s/3XKrFGkhxxXdg-XGNkvXdg
 
-https://mp.weixin.qq.com/s/IStOD22WgZ6EBFCvIHkNSg
+LINE：不得不看的大规模信息网络嵌入
 
-图像超分辨率网络：RCAN
+https://mp.weixin.qq.com/s/BPbUiIl9yU6DJbjKQmrzgw
 
-https://mp.weixin.qq.com/s/4LIq3kZaXgaoEEyb8TQvwg
+结合图的结构信息和节点特征的图对比学习
 
-图像超分辨率重建--AI研究
+https://mp.weixin.qq.com/s/FwIbHiyZa4EcnMunWoAR1Q
 
-https://mp.weixin.qq.com/s/ETGPXVDGRHOq0W-ef_q2_A
+北大发布最新《图神经网络推荐系统》2020综述论文，27页pdf
 
-RankSRGAN:排序学习+GAN用于超分辨率
+https://blog.csdn.net/leviopku/article/details/106949616
 
-https://zhuanlan.zhihu.com/p/140507840
+GNN中的Graph Pooling
 
-图像超分：USRNet
+https://mp.weixin.qq.com/s/5vgN2Z-FVMQ9ofPAy1Vf-g
 
-https://mp.weixin.qq.com/s/sju4SYFxzDkJevk3mi68Rw
+图表示学习中的Encoder-Decoder框架
 
-图像超分辨率网络：EDSR
+https://mp.weixin.qq.com/s/2HwszqbC_I2zdTCiQirxPQ
 
-https://mp.weixin.qq.com/s/uZQK0oQbV7wm0WVz_QxVQg
+图注意力网络入门：从数学理论到到NumPy实现
 
-DRN：用于单图像超分辨率的对偶回归网络
+https://mp.weixin.qq.com/s/oRWMAeKcftmCL1W1SW823g
+
+推荐系统与GNN擦出的火花竟如此绚丽多彩

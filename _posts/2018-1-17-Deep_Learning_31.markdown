@@ -334,3 +334,7 @@ https://mp.weixin.qq.com/s/VaiUuac6VuppjZ2nrshyKA
 https://mp.weixin.qq.com/s/QwvZSnF1cT5pDcp4aUigYA
 
 川普跳“鸡你太美”？这么专业，一定是AI合成的！
+
+https://mp.weixin.qq.com/s/GpF5ethQpGcDPAJlpPNBYQ
+
+不用GAN，照片也能生成简笔画，效果惊艳

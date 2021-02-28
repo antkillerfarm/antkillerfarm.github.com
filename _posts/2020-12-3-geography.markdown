@@ -187,6 +187,26 @@ https://mp.weixin.qq.com/s/e-3dMOZopr9GpFhzOl9RKA
 
 一年多几天该多好？曾经，地球上一年有424天！
 
+https://mp.weixin.qq.com/s/mtoEnRf7kad4JRcZ-qY40A
+
+你的人生写照：桥刚修好，河就逃了
+
+https://mp.weixin.qq.com/s/v79QDol1ulEzllqK3niLnw
+
+这个时代，属于海洋！
+
+https://mp.weixin.qq.com/s/6hJ00no0EScCjYHIIauZ7A
+
+让我们也去看看，青藏高原的雪
+
+https://mp.weixin.qq.com/s/zG3r8KO5KFtSWVlz1ZQo0A
+
+42000年前，地球变成了……（地磁极性倒转）
+
+https://mp.weixin.qq.com/s/V-YrYmDxkxj-yIzd60HjAQ
+
+却忧明月潜生祸，极地甲烷起风波
+
 # 化学++
 
 https://mp.weixin.qq.com/s/Vam7uTbwPfF8Ht365lGtvA
@@ -296,3 +316,7 @@ https://mp.weixin.qq.com/s/A9M_2DVqmFQaTdSy2yEJ1A
 https://mp.weixin.qq.com/s/hTp5-EU_83y_XUk0BmwoZw
 
 shan气还是xian气？神秘元素这样给水合物拍CT...
+
+https://mp.weixin.qq.com/s/WM4_VtZ6k34dz-vAPallGA
+
+神秘的第99号（锿）

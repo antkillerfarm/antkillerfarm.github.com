@@ -111,6 +111,8 @@ https://www.marxists.org/chinese/maozedong/marxist.org-chinese-mao-19530912.htm
 
 新加坡总理李光耀回忆说：在朝鲜战争以前，他在欧洲旅行，人们对华人经常采取蔑视的态度，可是中国出兵朝鲜并获得胜利以后，西欧海关人员一见华人都肃然起敬。
 
+《特赦1959》、《决战之后》、《将军决战岂止在战场》。
+
 https://zhuanlan.zhihu.com/p/79340530
 
 抗美援朝战争爆发后，功德林改造的战犯们有何积极反应？

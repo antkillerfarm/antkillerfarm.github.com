@@ -9,7 +9,51 @@ category: DL
 
 # 词向量
 
-## Item2Vec（续）
+## FastText（续）
+
+https://mp.weixin.qq.com/s/aq_kWkwgwtz5qFo0lNEEqg
+
+Tomas Mikolov论文简评：从Word2Vec到FastText
+
+https://mp.weixin.qq.com/s/v1-mLhmbp5MoRR824tdPDw
+
+玩转词向量：用fastText预训练向量做个智能小程序
+
+https://mp.weixin.qq.com/s/LLrq1F2uEC2xEWZrd9uijA
+
+一行代码自动调参，支持模型压缩指定大小，Facebook升级FastText
+
+https://mp.weixin.qq.com/s/VxODwO8qA33Cr1n62YXYBQ
+
+fastText：极快的文本分类工具
+
+https://mp.weixin.qq.com/s/TRrL6_nI4GimH_OJ1CswiQ
+
+NLP重铸篇之Fasttext
+
+## RNNLM
+
+RNNLM是Mikolov早期提出的文本分类的工具。（其实就是他的博士毕业论文）
+
+官网：
+
+http://rnnlm.org/
+
+yandex后来又提出了一个加速版本的RNNLM：
+
+https://github.com/yandex/faster-rnnlm
+
+## Item2Vec
+
+本质上，word2vec模型是在word-context的co-occurrence矩阵基础上建立起来的。因此，任何基于co-occurrence矩阵的算法模型，都可以套用word2vec算法的思路加以改进。
+
+比如，推荐系统领域的协同过滤算法。
+
+协同过滤算法是建立在一个user-item的co-occurrence矩阵的基础上，通过行向量或列向量的相似性进行推荐。如果我们将同一个user购买的item视为一个context，就可以建立一个item-context的矩阵。进一步的，可以在这个矩阵上借鉴CBoW模型或Skip-gram模型计算出item的向量表达，在更高阶上计算item间的相似度。
+
+论文：
+
+《Item2Vec: Neural Item Embedding for Collaborative Filtering》
 
 在实际的新闻信息流推荐中，Word2Vec的点击效果比ALS要好30%+，主要有两个原因：
 
@@ -236,53 +280,3 @@ y_t &= \sigma_y(W_{y} h_t + b_y)
 \end{align}$$
 
 Elman RNN的记忆来自于隐层单元，而Jordan RNN的记忆来自于输出层单元。
-
-## 参考
-
-http://blog.csdn.net/aws3217150/article/details/50768453
-
-递归神经网络(RNN)简介
-
-http://blog.csdn.net/heyongluoyao8/article/details/48636251
-
-循环神经网络(RNN, Recurrent Neural Networks)介绍
-
-http://mp.weixin.qq.com/s?__biz=MzIzODExMDE5MA==&mid=2694182661&idx=1&sn=ddfb3f301f5021571992824b21ddcafe
-
-循环神经网络
-
-http://www.wildml.com/2015/10/recurrent-neural-networks-tutorial-part-3-backpropagation-through-time-and-vanishing-gradients/
-
-Backpropagation Through Time算法
-
-https://baijia.baidu.com/s?old_id=560025
-
-Tomas Mikolov详解RNN与机器智能的实现
-
-https://sanwen8.cn/p/3f8sRTh.html
-
-为什么RNN需要做正交初始化？
-
-http://blog.csdn.net/shenxiaolu1984/article/details/71508892
-
-RNN的梯度消失/爆炸与正交初始化
-
-https://mp.weixin.qq.com/s/vHQ1WbADHAISXCGxOqnP2A
-
-看大牛如何复盘递归神经网络！
-
-https://mp.weixin.qq.com/s/0V9DeG39is_BxAYX0Yomww
-
-为何循环神经网络在众多机器学习方法中脱颖而出？
-
-https://mp.weixin.qq.com/s/-Am9Z4_SsOc-fZA_54Qg3A
-
-深度理解RNN：时间序列数据的首选神经网络！
-
-https://mp.weixin.qq.com/s/ztIrt4_xIPrmCwS1fCn_dA
-
-“魔性”的循环神经网络
-
-https://mp.weixin.qq.com/s/BqVicouktsZu8xLVR-XnFg
-
-完全图解RNN、RNN变体、Seq2Seq、Attention机制

@@ -317,6 +317,10 @@ https://mp.weixin.qq.com/s/ZIFEom7wpQll_DgE8bUxtA
 
 不同的AI视频推理场景下，如何构建通用高效的抽帧工具？
 
+https://zhuanlan.zhihu.com/p/347705276
+
+MMAction2: 新一代视频理解工具箱
+
 # 图像变换+++
 
 https://mp.weixin.qq.com/s/YbRo7TJ3j4dloSmKX40uAA

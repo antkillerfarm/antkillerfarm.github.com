@@ -1,13 +1,79 @@
 ---
 layout: post
-title:  深度学习（三）——深度学习常用术语解释, Neural Network Zoo, CNN
+title:  深度学习（三）——深度学习常用术语解释, Neural Network Zoo
 category: DL 
 ---
 
 * toc
 {:toc}
 
-# Dropout（续）
+# Dropout
+
+## Dropout训练阶段（续）
+
+除了Dropout之外，还有**DropConnect**。两者原理上类似，后者只隐藏神经元之间的连接。DropConnect也被称作Weight dropout。
+
+总的来说，Dropout类似于机器学习中的L1、L2规则化等增加稀疏性的算法，也类似于随机森林、模拟退火之类的增加随机性的算法。
+
+对drop方法的改进有两种明显的趋势:
+
+随机drop-> 自适应drop
+
+像素级drop -> 区域级drop
+
+参考：
+
+https://zhuanlan.zhihu.com/p/23178423
+
+Dropout解决过拟合问题
+
+https://mp.weixin.qq.com/s/WvPS9LQ6vfD4OkaRbZ0wBw
+
+如何通过方差偏移理解批归一化与Dropout之间的冲突
+
+https://mp.weixin.qq.com/s/yvwAPmclvgtytfhmETM_mg
+
+Hinton提出的经典防过拟合方法Dropout，只是SDR的特例
+
+https://mp.weixin.qq.com/s/QT7X_ubXS13X5E_5KdbNNQ
+
+谷歌大脑提出DropBlock卷积正则化方法，显著改进CNN精度
+
+https://mp.weixin.qq.com/s/0Go146A5dU0-RESQAaAHzQ
+
+Dropout可能要换了，Hinton等研究者提出神似剪枝的Targeted Dropout
+
+https://mp.weixin.qq.com/s/xmNuUPBuNo6E6XvBA8BR4Q
+
+Dropout的前世与今生
+
+https://mp.weixin.qq.com/s/jFz-2Bdn4dbFAza6MXtroA
+
+Dropout的那些事
+
+https://mp.weixin.qq.com/s/XgiWfRcIMiPUSoadMtAbIg
+
+神经网络Dropout层中为什么dropout后还需要进行rescale？
+
+https://mp.weixin.qq.com/s/L7DwT5LpfWoS474MwWOiLA
+
+华为开源自研算法Disout，多项任务表现更佳
+
+https://zhuanlan.zhihu.com/p/146876678
+
+一文看尽12种Dropout及其变体（在DNN、CNN和RNN中的应用）
+
+https://mp.weixin.qq.com/s/dkIHSRY6Edy8kpFHPJVCOQ
+
+DropBlock正则化的介绍
+
+https://mp.weixin.qq.com/s/g1XSxGG_l7MexuokaChlsQ
+
+理解dropout: 组合 or 噪声？
+
+https://mp.weixin.qq.com/s/n5VXSS_t9JPyLE8UNcWlbA
+
+Drop大法
 
 ## Dropout预测阶段
 
@@ -241,47 +307,3 @@ http://www.asimovinstitute.org/neural-network-zoo-prequel-cells-layers/
 https://mp.weixin.qq.com/s/ysnLwvbSD4fcL5LK7wSnyA
 
 MIT高赞深度学习教程：一文看懂CNN、RNN等7种范例
-
-# CNN
-
-## 概述
-
-卷积神经网络（Convolutional Neural Networks，ConvNets或CNNs）属于神经网络的范畴，已经在诸如图像识别和分类的领域证明了其高效的能力。
-
-CNN的开山之作是Yann LeCun的论文：
-
-《Gradient-Based Learning Applied to Document Recognition》
-
->注：科学界的许多重要成果的开山之作，其名称往往和成果的最终名称有一定的差距。比如LeCun的这篇文章的名称中，就没有CNN。类似的还有Vapnik的SVM，最早被称为Support Vector Network。
-
-英文不好的，推荐以下文章：
-
-http://www.hackcv.com/index.php/archives/104/
-
-CNN的直观解释
-
-## 关键点
-
-这里以最经典的LeNet-5为例，提点一下CNN的要点。
-
-![](/images/article/LeNet_5.jpg)
-
-LeNet-5的caffe模板：
-
-https://github.com/BVLC/caffe/blob/master/examples/mnist/lenet.prototxt
-
-## 卷积
-
-在《数学狂想曲（五）》中我们讨论了卷积的数学含义，结合《 图像处理理论（一）》和《 图像处理理论（二）》，不难看出卷积或者模板（算子），在前DL时代，几乎是图像处理算法的基础和灵魂。为了实现各种目的，人们手工定义或发现了一系列算子。
-
-到了DL时代，卷积仍然起着非常重要的作用。但这个时候，不再需要人工指定算子，**算子本身也将由学习获得**。我们需要做的只不过是指定算子的个数而已。
-
-![](/images/img2/ML.jpg)
-
-![](/images/img2/DL.jpg)
-
-上面的两图形象的指出了ML和DL的差别。
-
-![](/images/img3/DL.png)
-
-比如，LeNet-5的C1:6@28*28，其中的6就是算子的个数。显然算子的个数越多，计算越慢。但太少的话，又会导致提取的特征数太少，神经网络学不到东西。

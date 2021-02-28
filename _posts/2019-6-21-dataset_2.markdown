@@ -229,6 +229,10 @@ https://mp.weixin.qq.com/s/yj-8sTl_ZT17IvpqPs89IA
 
 改变多目标跟踪领域！CMU等推出大规模多类别MOT数据集TAO
 
+https://mp.weixin.qq.com/s/2yzD3EYIQpsTjJcwrD1_PA
+
+11个经典遥感数据集
+
 ## 人脸/行为
 
 http://blog.csdn.net/wangkr111/article/details/44514097

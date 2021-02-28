@@ -113,6 +113,10 @@ https://mp.weixin.qq.com/s/A19GrpLGzw98tmz_Ve9eLw
 
 迄今最大质量的恒星级黑洞被发现，考点全在这了
 
+https://mp.weixin.qq.com/s/qhCqP_JjtulUrAdJYhGIUA
+
+十年前我们测量了一个黑洞，现在发现当年“小看”了它
+
 ## 其他
 
 https://mp.weixin.qq.com/s/L1BCaXeNmlZ2s6GjCCap_w

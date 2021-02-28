@@ -149,6 +149,10 @@ https://mp.weixin.qq.com/s/MY-nx_MDyBJHUidS3Xqs7g
 
 最新《生成式对抗网络GAN进展》综述论文，41页pdf阐述GAN在计算机视觉应用进展
 
+https://mp.weixin.qq.com/s/fQiZpUbeYvFnNZYYSE4dMQ
+
+用GANs来做数据增强
+
 # VAE参考资源+
 
 https://zhuanlan.zhihu.com/p/60330303
@@ -237,6 +241,24 @@ https://mp.weixin.qq.com/s/RG5SwHBnPSBxYdbWNQgcTw
 
 99%的反抗-聊聊“占领国会山”与“美国散户造反”
 
+----
+
+1929年10月29日，在这个后来被称作“黑色星期二”的日子里，纽约证券交易所里的人陷入抛售股票的恐慌旋涡中。此后，美国和全球进入了长达10年的经济大萧条时期。
+
+而就在这次崩盘前，美国证券交易委员会第一任主席，同时也是后来美国第35任总统肯尼迪的父亲约瑟夫·肯尼迪发现，就连给他擦鞋的鞋童都在对股票大谈特谈。约瑟夫·肯尼迪觉得这是一种市场过热的信号，回去后立马从股市抽身，卖掉所有股票，从而躲过了上面那场巨大股灾。
+
+----
+
+以香港为界，“南”代表港股，“北”代表A股。
+
+北上资金是指进入A股的香港资本和国际资本。南下资金是指进入港股的中国内地资本。
+
+由于陆港通对内地的个人投资者参与港股通设置了资产限制，所以普通股民对南下资金不怎么关注，对北上资金的动向关注较多。
+
+https://xueqiu.com/8082119199/112705955
+
+南下资金、北上资金，傻傻分不清楚？
+
 ## 参考
 
 https://mp.weixin.qq.com/s/_rO9I2M-504oZdnGQVsRcQ
@@ -320,23 +342,3 @@ https://mp.weixin.qq.com/s/QQednlKYl6t3aO0xCzgGmA
 https://mp.weixin.qq.com/s/BfwTOtLnwnMsS3-PQQBHSg
 
 使用TensorFlow训练WDL模型性能问题定位与调优
-
-https://mp.weixin.qq.com/s/kw3BYTXdyhnIyVZrnQuPew
-
-基于深度学习和迁移学习的识花实践
-
-https://mp.weixin.qq.com/s/F965Zu_PgA-1ZUGIQ0nIEQ
-
-TensorFlow协同过滤推荐实战
-
-https://mp.weixin.qq.com/s/KohwsQQetwjfTj-PXvLjwA
-
-使用MNIST数据集，在TensorFlow上实现基础LSTM网络
-
-https://mp.weixin.qq.com/s/xSJRhHbjcgk14Kr_-Ycr5A
-
-输入示例，自动生成代码：TensorFlow官方工具TF-Coder已开源
-
-https://zhuanlan.zhihu.com/p/333791572
-
-Tensorflow模型保存方式大汇总

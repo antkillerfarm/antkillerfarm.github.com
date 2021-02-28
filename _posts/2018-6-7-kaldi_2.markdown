@@ -299,3 +299,11 @@ https://mp.weixin.qq.com/s/58Xm6IrrTClny6DsNAbxrg
 https://mp.weixin.qq.com/s/Vlsm9rHHaCl02gZmDQfgDA
 
 到底是什么原因才导致 select * 效率低下的
+
+https://www.toutiao.com/i6843323300764975628/
+
+MySQL压力测试工具
+
+https://mp.weixin.qq.com/s/giy44TE0QVHWoQwMg84jNA
+
+MySQL中ORDER BY与LIMIT不要一起用

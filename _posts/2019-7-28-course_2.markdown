@@ -145,6 +145,10 @@ https://mp.weixin.qq.com/s/GhdVntXzMTLIFGJjpJvDMg
 
 《概率统计及其在计算中的应用》书册，384页pdf
 
+https://mp.weixin.qq.com/s/P6BCFLDtzEkPluWIKMD2AA
+
+最新《几何深度学习》教程，100页ppt，Geometric Deep Learning
+
 # English
 
 SOTA(state of the art)：目前最高水平
@@ -258,6 +262,18 @@ https://mp.weixin.qq.com/s/9mDvyrQY3o_a6RFlNil0-w
 https://mp.weixin.qq.com/s/UNjMKLZYYVnTsT5nkeHQcg
 
 什么是RSA算法
+
+## 前向安全
+
+1997年，Anderson提出了前向安全数字签名的概念。前向安全的签名把公钥的生存期划分为很多时段，每个时段的私钥各不相同，在当前时段的签名私钥泄露后不影响在泄露以前时段的私钥与签名的安全。
+
+https://blog.csdn.net/RuoMu/article/details/81483140
+
+前向安全性
+
+https://mp.weixin.qq.com/s/X0yoRdozKKlF1qDUNHyrDw
+
+ECDHE算法
 
 ## 统一身份认证
 
@@ -386,3 +402,11 @@ https://mp.weixin.qq.com/s/uYJPgFd8kOTvBPa3fgiOzg
 https://mp.weixin.qq.com/s/7-GePGOi1R9QFaUUKya3lw
 
 Linux应急响应入门——入侵排查
+
+https://mp.weixin.qq.com/s/1Tsm22nvnrjN-UdojT5mdg
+
+一个小小指针，竟把Linux内核攻陷了！
+
+https://mp.weixin.qq.com/s/c2jxmn7FaQ0ePY_luS2fGQ
+
+实现用户一键登录的方案有哪些？

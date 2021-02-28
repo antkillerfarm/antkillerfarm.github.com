@@ -265,7 +265,31 @@ https://mp.weixin.qq.com/s/UKfGDH87WJqY79ujA54nEQ
 
 用统一框架理解向量化召回
 
-# 推荐系统进阶++
+https://mp.weixin.qq.com/s/ANqpzEgIQONegsnrZAPSug
+
+曾今的CTR竞赛王者NFM
+
+https://mp.weixin.qq.com/s/VhzSzoM4X_Gmq8hoH6JFLw
+
+十大序列化推荐算法梳理
+
+# 推荐系统进阶+
+
+https://mp.weixin.qq.com/s/sDG5xm1JZ8rIEaVXeVQ5cA
+
+主流推荐引擎技术及优缺点分析
+
+https://mp.weixin.qq.com/s/rhk5WHRg6HWHmK7KWD-UYw
+
+常见的召回优化方式
+
+https://mp.weixin.qq.com/s/nUQsFBh2Jyf1fqINNlpmqg
+
+推荐系统Bias与Debias 2020最新综述
+
+https://mp.weixin.qq.com/s/XD6qFpt8FdLTy2PcrLiTIA
+
+推荐算法的"五环之歌"
 
 https://mp.weixin.qq.com/s/6Zs0nM2HOZFBFsC0PUy_0A
 
@@ -295,48 +319,6 @@ https://mp.weixin.qq.com/s/r4aHwAB108zev5fhWqB-XQ
 
 转化率预估中的贝叶斯平滑
 
-# 抗美援朝+++
+https://mp.weixin.qq.com/s/wk_MGF1F7W2YP0VvM_aY3g
 
-https://www.zhihu.com/answer/745311401
-
-为什么抗美援朝时中国和朝鲜军队装备那么落后却可以打过以美军为首的联合国军？
-
-https://zhuanlan.zhihu.com/p/262573038
-
-最惨烈一战“铁在烧”，为什么中国军队是“轻步兵之王”？
-
-https://www.ershicimi.com/p/17c259dbcd4fee70edc8751dfd17fc64
-
-金刚川败于韩军，文登川干翻美军：68军军长低调无名，51岁病逝
-
-https://user.guancha.cn/main/content?id=214847
-
-志愿军只是打败了美国吗？不，他们为中国赢得了未来！
-
-https://www.zhihu.com/question/265555686
-
-为什么美军在全球多个国家有驻军， 似乎只有在日本才有爆出强奸案等恶性新闻?
-
-https://www.sohu.com/a/435953580_605774
-
-抗美援朝时，美国“黑人连”主动向志愿军投降，到底怎么回事？
-
-https://www.zhihu.com/question/278212950
-
-部队里一等功有多难获得，为什么看见的多是二等功？
-
-https://mp.weixin.qq.com/s/QSS7dIe1MeIOBu6tko9maQ
-
-美国人万万没想到，这个不起眼的留学生，将会成为中国雷达之父（毕德显）
-
-https://mp.weixin.qq.com/s/mMO-3Gi6yMsLhMKB3syerg
-
-长津湖战役志愿军表现最差的部队，伤亡高达3591人，歼敌仅82人
-
-https://www.sohu.com/a/258552764_100074407
-
-八一勋章、独立自由勋章、解放勋章等，你了解多少呢？
-
-https://mp.weixin.qq.com/s/shUXBCnlQZ3q8W63ILfGhQ
-
-解放军抢了美军军火库，杀人又放火，吃了大亏的美国人却决定忍了
+向量召回在躺平APP的实践

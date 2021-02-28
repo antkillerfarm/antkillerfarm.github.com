@@ -7,7 +7,49 @@ category: Attention
 * toc
 {:toc}
 
-# BERT进阶
+# BERT进阶（续）
+
+## UniLM
+
+https://mp.weixin.qq.com/s/m_FU4NmjUsvxusRidDb-Xg
+
+UniLM:一种既能阅读又能自动生成的预训练模型
+
+https://mp.weixin.qq.com/s/yyUPqxpfBwUSRbwM6SSAcQ
+
+UniLM论文阅读笔记
+
+https://mp.weixin.qq.com/s/RjeuHXa8O3MzSpTOuOHMkQ
+
+站在BERT肩膀上的NLP新秀们：XLMs、MASS和UNILM
+
+https://mp.weixin.qq.com/s/UEBKSKEkZTbpR49_Rh50Jg
+
+微软统一预训练语言模型UniLM 2.0解读
+
+## Electra
+
+https://mp.weixin.qq.com/s/dFT7KKMH56unkOEA9H4Kuw
+
+吊打BERT Large的小型预训练模型ELECTRA终于开源！真相却让人...
+
+https://mp.weixin.qq.com/s/6i9eQISKsWU0jawKzWg8nQ
+
+超越bert，最新预训练模型ELECTRA论文阅读笔记
+
+https://mp.weixin.qq.com/s/lkB1xn6G2P5Nivj7DcYg5w
+
+Electra: 判别还是生成，这是一个选择
+
+## 参考
+
+https://www.zhihu.com/question/298203515
+
+如何评价BERT模型？
+
+https://mp.weixin.qq.com/s/Fao3i99kZ1a6aa3UhAYKhA
+
+全面超越人类！Google称霸SQuAD，BERT横扫11大NLP测试
 
 https://mp.weixin.qq.com/s/INDOBcpg5p7vtPBChAIjAA
 
@@ -368,39 +410,3 @@ BERT的嵌入层是如何实现的？
 https://mp.weixin.qq.com/s/CdjNQKSNuklVUsXe4InSoA
 
 FastBERT：放飞BERT的推理速度
-
-https://zhuanlan.zhihu.com/p/132361501
-
-BERT是如何分词的
-
-https://mp.weixin.qq.com/s/Tld9V1jdmWs06zNxiJNkZg
-
-BART&MASS自然语言生成任务上的进步
-
-https://mp.weixin.qq.com/s/G995ulqe6Ifxml_AJqapAw
-
-BERT在小米NLP业务中的实战探索
-
-https://www.cnblogs.com/gczr/p/12874409.html
-
-Sentence-BERT: 一种能快速计算句子相似度的孪生网络
-
-https://mp.weixin.qq.com/s/0hUNG6tC-hlfyTJtuzwU5w
-
-NLP中的Mask全解
-
-https://mp.weixin.qq.com/s/cyNcVNImoCOmTrsS0QVq4w
-
-用Siamese和Dual BERT来做多源文本分类
-
-https://mp.weixin.qq.com/s/uv74FKtUNtgjIBQZbsX7Qw
-
-你finetune BERT的姿势可能不对哦？
-
-https://mp.weixin.qq.com/s/BvM5zx-3XrsZj8BQ5WEa4A
-
-一文带你了解MultiBERT
-
-https://mp.weixin.qq.com/s/mFRhp9pJRa9yHwqc98FMbg
-
-BERT在美团搜索核心排序的探索和实践

@@ -115,6 +115,10 @@ https://mp.weixin.qq.com/s/RcolwQnCqrAsGaKEK0oo_A
 
 TensorFlow 2.0中的tf.keras和Keras有何区别？为什么以后一定要用tf.keras？
 
+https://mp.weixin.qq.com/s/BI2BjAJGXzRk4k9d99PgLQ
+
+tensorflow2.4性能调优最佳实践
+
 # 细节
 
 执行`session.run(out)`，会在终端打印out的值，但执行`res = session.run(out)`则不会。

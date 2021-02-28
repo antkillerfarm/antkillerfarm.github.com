@@ -21,6 +21,10 @@ https://github.com/LiuBoyu/blockchain
 
 区块链参考资源
 
+https://mp.weixin.qq.com/s/ebOZi1KtcHSKHLowgC-AOQ
+
+区块链技术原理与应用综述
+
 https://mp.weixin.qq.com/s/UvTc1ftOZq6Q57ksEYgzKA
 
 普通程序员如何快速上手区块链？这个课程的目录很有参考意义。
@@ -266,6 +270,10 @@ https://mp.weixin.qq.com/s/DGx3Y3cu00QN-p-AjkNx7g
 https://mp.weixin.qq.com/s/rlTJVV0PXjII2YJYENlwlw
 
 数字人民币官宣内测，双离线支付 “碰一碰”完成 转账！四个城市抢先试点！
+
+https://mp.weixin.qq.com/s/J6yF8fzvhLK-kJcdFXBxJg
+
+马斯克投15亿，价值47000美元的比特币，其实是一群数学家搞出来的……
 
 # 超算
 

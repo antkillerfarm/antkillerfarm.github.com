@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（四）——ELMo, GPT, ERNIE, XLNet, 轻量化BERT
+title:  Attention（四）——ELMo, GPT, ERNIE, XLNet
 category: Attention 
 ---
 

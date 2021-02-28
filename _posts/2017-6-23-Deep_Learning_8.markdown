@@ -9,6 +9,50 @@ category: DL
 
 # 神经元激活函数进阶（续）
 
+## GLU
+
+Gated Linear Unit是由facebook提出的：
+
+$$(\boldsymbol{W}_1\boldsymbol{x}+\boldsymbol{b}_1)\otimes \sigma(\boldsymbol{W}_2\boldsymbol{x}+\boldsymbol{b}_2)$$
+
+![](/images/img2/GLU.png)
+
+上图右侧是一个Linear Unit，左侧的$$\sigma$$相当于一个Gate，故名。
+
+论文：
+
+《Language Modeling with Gated Convolutional Networks》
+
+GLU一般用在NLP领域，它和CNN结合，也就是所谓的GCNN了。
+
+## RRelu
+
+论文：
+
+《Empirical Evaluation of Rectified Activations in Convolution Network》
+
+![](/images/img3/RRelu.png)
+
+## GELU
+
+论文：
+
+《Gaussian Error Linear Units (GELUs)》
+
+参考：
+
+https://mp.weixin.qq.com/s/pA9JW75p9J5e5KHe3ifcBQ
+
+从ReLU到GELU，一文概览神经网络的激活函数
+
+https://mp.weixin.qq.com/s/LEPalstOc15CX6fuqMRJ8Q
+
+超越ReLU却鲜为人知，3年后被挖掘：BERT、GPT-2等都在用的激活函数（GELU）
+
+https://kexue.fm/archives/7309
+
+GELU的两个初等函数近似是怎么来的
+
 ## Swish
 
 Swish是Google大脑团队提出的一个新的激活函数：
@@ -310,39 +354,3 @@ https://mp.weixin.qq.com/s/WNkzfvYtEO5zJoe_-yAPow
 https://zhuanlan.zhihu.com/p/55747295
 
 深度学习在计算机视觉领域（包括图像，视频，3-D点云，深度图）的应用一览
-
-## CNN简史
-
-![](/images/article/computer_vision_3.jpg)
-
-![](/images/article/CNN_3.png)
-
-完整版本参见：
-
-https://github.com/Nikasa1889/HistoryObjectRecognition/blob/master/HistoryOfObjectRecognition.pdf
-
-![](/images/img3/CNN.jpg)
-
-参考：
-
-https://mp.weixin.qq.com/s/K68CpueI4e4y7o1uZ28KMQ
-
-从神经科学到计算机视觉：人类与计算机视觉五十年回顾
-
-https://mp.weixin.qq.com/s/FzCrOiFuutqSQSp4VcydoQ
-
-计算机视觉简介：历史、现状和发展趋势
-
-## AlexNet
-
-2012年，ILSVRC比赛冠军的model——Alexnet（以第一作者Alex命名）的结构图如下：
-
-![](/images/article/AlexNet.png)
-
-换个视角：
-
-![](/images/article/AlexNet_2.png)
-
-AlexNet的caffe模板：
-
-https://github.com/BVLC/caffe/blob/master/models/bvlc_alexnet/deploy.prototxt

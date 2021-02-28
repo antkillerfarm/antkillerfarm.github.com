@@ -121,6 +121,16 @@ C++服务编译耗时优化原理及实践
 
 `set args -l`
 
+参考：
+
+https://mp.weixin.qq.com/s/30Zh_8H6QfDgJuG9e9ORSQ
+
+使用gdb调试多进程程序
+
+https://zhuanlan.zhihu.com/p/254879649
+
+GDB的那些奇淫技巧
+
 ## 白手起家
 
 - Stage0 部分
@@ -142,16 +152,6 @@ Mes + MesCC → 一个修改过的 TCC → GCC 4.7 → 现代的 GCC
 https://www.zhihu.com/question/441129390
 
 假如有某种力量使得世界上所有编译器都被删除了, 人类是否需要从打孔卡开始写第一个编译器?
-
-## 参考
-
-https://mp.weixin.qq.com/s/30Zh_8H6QfDgJuG9e9ORSQ
-
-使用gdb调试多进程程序
-
-https://zhuanlan.zhihu.com/p/254879649
-
-GDB的那些奇淫技巧
 
 # LLVM
 
@@ -334,45 +334,3 @@ https://github.com/microsoft/nnfusion
 https://mp.weixin.qq.com/s/CMTOW3cYQkkECpPuzZl0nQ
 
 RAMMER如何进一步“压榨”加速器性能
-
-# AutoDL++
-
-https://mp.weixin.qq.com/s/1XDknbIapmuQi5eb61Jlaw
-
-遗传算法与网络结构搜索
-
-https://mp.weixin.qq.com/s/1zm2iMXD142Ug0_coVIGMg
-
-Darts: 可微结构搜索
-
-https://zhuanlan.zhihu.com/p/266102401
-
-Auto Seg-Loss: 自动损失函数设计
-
-https://mp.weixin.qq.com/s/y3SIK1sAscrWQuZ3mB9lew
-
-手动搜索超参数的一个简单方法
-
-https://mp.weixin.qq.com/s/ACxAAvvKK-DX5UDMe-RsXg
-
-最新《神经架构搜索NAS》教程，33页pdf
-
-https://mp.weixin.qq.com/s/2hSmI8xo1jUHgWrEu3YBIA
-
-一文读懂目前大热的AutoML与NAS
-
-https://mp.weixin.qq.com/s/1JgHE1juxuYEmKO9SXMssA
-
-NAS+Det
-
-https://mp.weixin.qq.com/s/xnqAPh3hlQq3_QDmk2lOLg
-
-NAS在检测中的应用
-
-https://mp.weixin.qq.com/s/nG_Mzlevs9ougnyeJyT38A
-
-一文看懂AutoML
-
-https://mp.weixin.qq.com/s/qou0uUQVsU306KvB5JMKVg
-
-贝叶斯分析助你成为优秀的调参侠：自动化搜索物理模型的参数空间

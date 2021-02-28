@@ -373,3 +373,7 @@ Facebook为何放弃ZooKeeper转用自研配置管理系统？
 https://mp.weixin.qq.com/s/DigeE4YxuT55cSeyb1q1tQ
 
 ZooKeeper源码和实践揭秘
+
+https://mp.weixin.qq.com/s/Tb670Jdt4s7CKzGZZQRL_A
+
+用大白话给你解释Zookeeper的选举机制

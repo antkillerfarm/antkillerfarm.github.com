@@ -321,32 +321,32 @@ https://mp.weixin.qq.com/s/LoQzVvMLoFDQDV_Xrdup5w
 
 升级版APDrawing，人脸照秒变线条肖像画，细节呈现惊人
 
-# Graph NN++
+https://mp.weixin.qq.com/s/eXgpL5s8dUvU9i4daqTo-g
 
-https://mp.weixin.qq.com/s/lyy3AhqLDBT88B2LSSIbZQ
+新特效火爆抖音！各路神仙齐唱《蚂蚁呀嘿》，网友：短短几秒需一生来治愈
 
-图表示解决长文本关系匹配问题：腾讯提出概念交互图算法
+# 深度信息检索++
 
-https://mp.weixin.qq.com/s/dIem8V4NiOWhKE_ENhAG5Q
+https://mp.weixin.qq.com/s/hMaZ_6y3b4CRzq2p9eVkVw
 
-缺失数据还原-图神经网络新应用
+使用Python过滤出类似的文本的简单方法
 
-https://mp.weixin.qq.com/s/mFLuTfACeDNeuDclpqEZpg
+https://mp.weixin.qq.com/s/7F-35VjIp_cmFNEceti1uA
 
-用于多关系数据的图神经网络R-GCNs
+利用孪生网络，Keras，Tensorflow比较图片相似度
 
-https://mp.weixin.qq.com/s/pn8DGb190_9Yd-MuNohgcQ
+https://mp.weixin.qq.com/s/MpuUdZi8CWcu0b-ij-bHjA
 
-《图信号处理》新书，170页pdf阐述从图分析到图神经网络应用
+Jeff Dean出品：用机器学习索引替代B-Trees，3倍性能提升，10-100倍空间缩小
 
-https://mp.weixin.qq.com/s/nHn-W6uL_Njtdl5O-4zaCg
+https://mp.weixin.qq.com/s/uztYEW_azetOkOGiZcbCuw
 
-当推荐系统遇上图神经网络
+JeffDean又用深度学习搞事情：这次要颠覆整个计算机系统结构设计。这篇blog介绍了如何用DL方法提高内存访问的命中率。
 
-https://mp.weixin.qq.com/s/q2GiE1_jg-tQM3ZtN9Wmrw
+https://zhuanlan.zhihu.com/p/37020639
 
-图信息Bottleneck打造图最优表示->避免过拟合，并具备稳健性
+读论文系列：CVPR2018 SSAH
 
-https://mp.weixin.qq.com/s/R24ZdMBLiGVnW_WnphmtFg
+https://mp.weixin.qq.com/s/TdnstQaBcLaXg8BvuR7oYA
 
-TAMU发布《图神经网络可解释》综述论文，14页pdf阐述实例级与模型级解释
+基于素描图的细粒度图像检索

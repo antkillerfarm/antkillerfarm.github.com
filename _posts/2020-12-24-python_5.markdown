@@ -33,20 +33,6 @@ Dear PyGui是一个轻量级的GUI框架，可以利用GPU进行渲染。
 
 https://github.com/hoffstadt/DearPyGui
 
-## Typer
-
-一个命令行选项的快速处理的库。
-
-官网：
-
-https://typer.tiangolo.com/
-
-它的设计参考了FastAPI，后者是一个Web版本的API接口库，用于提供restful风格的API。
-
-官网：
-
-https://fastapi.tiangolo.com/
-
 ## Streamlit
 
 https://mp.weixin.qq.com/s/sZvawmQ1KH3b_hozAbeX9w
@@ -61,7 +47,41 @@ https://mp.weixin.qq.com/s/TV1MJfaOq27y2DVCGMuqhA
 
 用Pandas和Streamlit对时间序列数据集进行可视化过滤
 
-## 调试
+## python调试
+
+首先：
+
+`import pdb`
+
+然后在需要断点的地方：
+
+`pdb.set_trace()`
+
+然后直接运行脚本即可，其他命令和gdb十分相似。
+
+pdb和gdb的差异主要在于：
+
+1.pdb需要修改代码，而gdb不需要。
+
+2.可以直接运行脚本进入pdb模式，而gdb需要先进入gdb环境，然后才可以运行程序。显然pdb的灵活性比较高。
+
+参考：
+
+https://blog.jamespan.me/2016/06/09/remote-debug-your-python-code
+
+远程调试你的Python代码
+
+https://www.ibm.com/developerworks/cn/linux/l-cn-pythondebugger/index.html
+
+Python代码调试技巧
+
+https://mp.weixin.qq.com/s/4pxGrn9jgp8So8JsONC-3A
+
+别再用print调试代码了（PySnooper）
+
+https://mp.weixin.qq.com/s/JNGtOtRW3YsLti9gVYzLcg
+
+清华校友打造Python调试神器
 
 https://mp.weixin.qq.com/s/weEZEr4g8pI11Gijc-St0Q
 
@@ -414,3 +434,15 @@ Python+Dash快速web应用开发：回调交互篇（上）
 https://mp.weixin.qq.com/s/_o5upbRqjADpCkZ0q0ZwkA
 
 Python+Dash快速web应用开发：回调交互篇（中）
+
+https://mp.weixin.qq.com/s/81HauaX6fWstbUfgp3pJvw
+
+Python+Dash快速web应用开发：回调交互篇（下）
+
+https://mp.weixin.qq.com/s/RlJ5Y6xJ-8NfDW7oSZlYbw
+
+深入Python解释器源码，我终于搞明白了字符串驻留的原理！
+
+https://mp.weixin.qq.com/s/LeTNcQCT4mYu6HSlGoHbzQ
+
+手机最强Python编程神器，在手机上运行Python不再是梦！

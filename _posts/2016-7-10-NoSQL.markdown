@@ -125,6 +125,10 @@ https://mp.weixin.qq.com/s/M3GtZ-6p7FWgyCKmRO-FyA
 
 你真的懂吗？分布式系统的基本问题：可用性与一致性
 
+https://mp.weixin.qq.com/s/2NVAy8qL_RNjTnh-h0kuFw
+
+谈谈事务的实现原理吧
+
 # Velocity
 
 Velocity是一个基于java的模板引擎（template engine），它允许任何人仅仅简单的使用模板语言（template language）来引用由java代码定义的对象。

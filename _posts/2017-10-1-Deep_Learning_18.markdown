@@ -231,6 +231,10 @@ https://mp.weixin.qq.com/s/r1uXn2jGsHZcZ8Nk7GnGFA
 
 语义表征的无监督对比学习：一个新理论框架
 
+https://zhuanlan.zhihu.com/p/346686467
+
+对比学习（Contrastive Learning）综述
+
 https://mp.weixin.qq.com/s/SOaA9XNnymLgGgJ5JNSdBg
 
 对比学习（Contrastive Learning）相关进展梳理
@@ -254,6 +258,10 @@ https://zhuanlan.zhihu.com/p/321642265
 https://mp.weixin.qq.com/s/6qqFAQBaOFuXtaeRSmQgsQ
 
 一文梳理2020年大热的对比学习模型
+
+https://mp.weixin.qq.com/s/SeAZERYdfqDbtqTLnuWfGg
+
+盘点近期大热对比学习模型：MoCo/SimCLR/BYOL/SimSiam
 
 # AutoDL+
 
@@ -388,15 +396,3 @@ https://mp.weixin.qq.com/s/A3Bg4-WoEQxFk3G5hCKNPQ
 https://mp.weixin.qq.com/s/0AE8w_0cZGcMZIwjUTKPrg
 
 如何学习AutoML在模型优化中的应用，这12篇文章可以作为一个参考
-
-https://mp.weixin.qq.com/s/LxLTsz7T_lAkqfZ9voSX5Q
-
-强化学习网络结构搜索(一)
-
-https://mp.weixin.qq.com/s/wL0prNVm5bKWOvEg3PE33g
-
-强化学习网络结构搜索(二)
-
-https://mp.weixin.qq.com/s/9vGQUqKyf9Ct6im0zv6YiQ
-
-强化学习网络结构搜索(三)

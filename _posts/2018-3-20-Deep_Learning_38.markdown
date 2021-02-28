@@ -394,3 +394,7 @@ https://mp.weixin.qq.com/s/0T1QhiT_20BrerNcTjKreQ
 https://mp.weixin.qq.com/s/p4lHnte3FYu6XtD3PnSeKw
 
 光场显著性检测研究综述
+
+https://mp.weixin.qq.com/s/8QrNvb-1zmrTWo5zThpyvg
+
+U²-Net：使用显著性物体检测来生成真实的铅笔肖像画

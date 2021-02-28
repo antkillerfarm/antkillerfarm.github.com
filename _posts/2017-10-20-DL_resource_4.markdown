@@ -279,10 +279,6 @@ https://mp.weixin.qq.com/s/sRGdNquZyt7VbvuKL5JXYQ
 
 不仅搞定“梯度消失”，还让CNN更具泛化性：港科大开源深度神经网络训练新方法
 
-https://mp.weixin.qq.com/s/P6BCFLDtzEkPluWIKMD2AA
-
-最新《几何深度学习》教程，100页ppt，Geometric Deep Learning
-
 https://mp.weixin.qq.com/s/PGZiJuZ2Dg6Vhkv55vfxKQ
 
 对损失信息进行建模，实现信号处理高保真还原
@@ -290,6 +286,10 @@ https://mp.weixin.qq.com/s/PGZiJuZ2Dg6Vhkv55vfxKQ
 https://mp.weixin.qq.com/s/eeubsLVDCGcSiEC0nJekWA
 
 Adaptive Label Smoothing方法让模型结果更加鲁棒
+
+https://mp.weixin.qq.com/s/0Y3x6b6L3T4kOYNUXOYDIA
+
+噪声样本优秀论文综述（2017-2020）
 
 # 知名数据集+
 
@@ -378,3 +378,11 @@ https://mp.weixin.qq.com/s/Qvjk7mz8d9lxeyIMND1mPA
 https://mp.weixin.qq.com/s/0wJHO_9e4iBMaWu-E20S6A
 
 一文了解目标检测边界框概率分布
+
+https://mp.weixin.qq.com/s/hMhDIV3eCEzmRzuyT3CvUg
+
+训练鲁棒的物体检测器的6大障碍
+
+https://zhuanlan.zhihu.com/p/342011052
+
+目标检测之Neck选择

@@ -127,6 +127,10 @@ https://mp.weixin.qq.com/s/362skBPuwxS-bLcvv14MQg
 
 井字棋、五子棋AlphaGo Zero算法实战
 
+https://mp.weixin.qq.com/s/IaJoaQJw68JXBN93d680PQ
+
+深入浅出解读并思考AlphaGo
+
 # MARL
 
 Multi-agent Reinforcement Learning(MARL)，一般被称为多智能体强化学习。与之相对的则是Single-agent Reinforcement Learning(SARL)。

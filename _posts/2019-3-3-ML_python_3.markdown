@@ -41,6 +41,14 @@ https://mp.weixin.qq.com/s/nVRFgtYsR72nJrJvy31s5A
 
 Jupyter官方神器：可视化Debug工具!
 
+https://mp.weixin.qq.com/s/fkqnnQ3hqakPATRETahLPw
+
+9个jupyter实用技巧
+
+https://mp.weixin.qq.com/s/OHO3ePD3Ih3AtKv3qn2IEw
+
+9个可以提高Jupyter Notebook开发效率的魔术命令
+
 ## Autograd
 
 一个基于numpy的自动求导库。它是由Harvard Intelligent Probabilistic Systems Group开发的。
@@ -166,6 +174,10 @@ https://mp.weixin.qq.com/s/Lrag8Wilf4B6abVG2UcMZw
 https://mp.weixin.qq.com/s/-TwkUUjGdOiik835xNemfg
 
 14个Seaborn数据可视化图
+
+https://mp.weixin.qq.com/s/AWU-ul7TQ6zWgvX8j2Ut1g
+
+这3个Seaborn函数可以搞定90%的可视化任务
 
 ## Bokeh
 
@@ -445,6 +457,10 @@ https://mp.weixin.qq.com/s/Hci6ehO1DdvlLT8Be4U-Lw
 
 12个经典Python数据可视化库
 
+https://mp.weixin.qq.com/s/QalCxZxCQ3jSATsk-7mBIA
+
+如何用PYTHON绘制漂亮的地图？— FOLIUM作图工具介绍
+
 ## 参考
 
 https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg
@@ -466,15 +482,3 @@ https://github.com/FavioVazquez/ds-cheatsheets
 https://mp.weixin.qq.com/s/1--i1OhxRNPvNnmP9bFo3g
 
 全机器学习和Python的27个速查表
-
-https://mp.weixin.qq.com/s/8wI49YBAs7ckkYdc4B_WNQ
-
-14张思维导图读懂Python编程核心知识体系
-
-https://mp.weixin.qq.com/s/BkLEc-XVBvjtmjx_04JX3Q
-
-Python大数据处理，Mastering Large Datasets with Python，311页pdf
-
-https://mp.weixin.qq.com/s/HKHLiCqEAtoCAqf4CHv86w
-
-python机器学习算法代码实现

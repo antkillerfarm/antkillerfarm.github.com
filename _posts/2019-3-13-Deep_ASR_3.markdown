@@ -337,6 +337,18 @@ https://mp.weixin.qq.com/s/_84nqrEMGC-Q-fPdEiPDgQ
 
 3人半年打造语音识别引擎——58同城语音识别自研之路
 
+https://mp.weixin.qq.com/s/8dFWQ-7m0jN5PvVIUeM33w
+
+利用Android手机和YAMNet ML模型进行声音分类（一）
+
+https://mp.weixin.qq.com/s/y7UZooc97gPgonnM3C9qxg
+
+利用Android手机和YAMNet ML模型进行声音分类（二）
+
+https://mp.weixin.qq.com/s/xS0fS8Haxt_DXxlw7VEo4Q
+
+移动端的语音识别分享
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/jwV4glj8vIUKSelzeRrxSg
@@ -374,23 +386,3 @@ https://mp.weixin.qq.com/s/JSnyE2k7jqd5GR1lHA6WUg
 https://mp.weixin.qq.com/s/p_VjFwwDCu1i_ovUljaoVw
 
 阿里巴巴语音交互智能团队：基于线性网络的语音合成说话人自适应
-
-https://mp.weixin.qq.com/s/imotc0RfPsvA9h5-1nouMA
-
-端到端语音合成及其优化实践(上))
-
-https://mp.weixin.qq.com/s/NlOH0wmToJvDudIDC-aM1g
-
-端到端语音合成及其优化实践(下)
-
-https://mp.weixin.qq.com/s/HLe4DUZWWfdorcgYOj9gzw
-
-语音合成领域的首个完全端到端模型，百度提出并行音频波形生成模型ClariNet
-
-https://zhuanlan.zhihu.com/p/45702794
-
-微信是不是可以来一个文字转语音功能了？
-
-https://mp.weixin.qq.com/s/DB2C-a_xEyoczuNSG9Bt7w
-
-基于深度前馈序列记忆网络，如何将语音合成速度提升四倍？

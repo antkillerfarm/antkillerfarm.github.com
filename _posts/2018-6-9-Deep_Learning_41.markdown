@@ -93,9 +93,17 @@ https://mp.weixin.qq.com/s/01WLhFsni1WRTYPgqoV0Ww
 
 深度学习之迁移学习介绍与使用
 
+https://mp.weixin.qq.com/s/ywwlpTNOjXgUOglnn56NIw
+
+深度迁移学习方法的基本思路
+
 https://mp.weixin.qq.com/s/yuuvX85M5HfWDbYZwycL4A
 
 迁移学习全面指南：概念、应用、优势、挑战
+
+https://mp.weixin.qq.com/s/XPAVUD33Z1do2hz2rGrIIQ
+
+各细分学习领域调研(A Survey for Learning Fields)
 
 https://mp.weixin.qq.com/s/7cvErbQRnTAKjTz67dNRDw
 

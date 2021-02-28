@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blog维护日志, 我的AI简史
+title: Blog维护日志, 我的AI简史, 入行以来涉及的技术简史（二）
 category: my story 
 ---
 
@@ -151,164 +151,72 @@ category: my story
 
 2020.4 研究PGM。
 
-# 数学杂谈+
+# 入行以来涉及的技术简史（续）
 
-https://zhuanlan.zhihu.com/p/78352532
+### 3）QT
 
-麻省理工牛人解说数学体系
+同上。
 
-https://mp.weixin.qq.com/s/GHIFsFleS7aGMP0ye_SCCQ
+### 4）.NET
 
-我居然从一只猫身上学到了斐波那契数列
+.NET使用了一套与MFC不同的GUI框架。从接口来看，其实更像是MS的死敌Borland的VCL的那套东西。现在使用这个编写PC工具似乎已经非常普遍了，而且随着应用的广泛，目前自带.NET Framework的PC也越来越多。很多时候，我们只用发布程序就好了。同事W算是这方面的高手，基本上这边的PC工具有八成都是他主导制作的。将公司在这方面的水准提升了一个台阶。
 
-https://mp.weixin.qq.com/s/y6H1YV7FUkBlqznoNbTLng
+### 5）GTK
 
-太震撼了！2600年数学文明画在了一张图上
+这是去年下半年开始自学的GUI框架。主要原因是目前已有部分工作转移到Linux下，总要有个称手的GUI框架才好。其次，目前的工具代码，大多是copy自产品代码的某一部分。产品使用gcc作为编译器，而gcc的语法和VC也不尽相同。产品代码中使用的比较多的局部动态数组，VC到目前仍不支持。
 
-https://mp.weixin.qq.com/s/JZKSzd97Og9YHPaHWNTWKQ
+## 3.移动平台
 
-史上最能忽悠的数学家，哲学出身竟引发数学千年危机，最终却惨遭处死（芝诺）
+工作以来，一直在嵌入式领域打拼，也经历了不少的移动平台，罗列如下：
 
-https://mp.weixin.qq.com/s/ZRMmByhNkjcfbaOcwxQ5dg
+### 1）Wince/Windows Mobile
 
-日本数学界惊现神操作！偷偷研究飞刀方程致使厕所爆炸，连美国总统特朗普都忍不住发文怒怼
+这是接触的第一个移动平台，在学校的时候，我甚至连SD卡都没见过。应该说Windows Mobile是iOs和Android崛起之前，最高端大气的移动平台。由于API与Win32 API高度兼容，上手难度也不高，着实风光了一把。同期的竞争对手Symbian由于对触摸屏的支持不好，加之硬件规格较低，对于导航地图之类的当时的“超级应用”来说，还是有些力不从心的。
 
-https://blog.csdn.net/ChangHengyi/article/details/80577318
+### 2）Nucleares/Brew/MTK/Symbian S60/Symbian UIQ/Moblin
 
-一片文章带你理解再生核希尔伯特空间（RKHS）以及各种空间
+这些平台没有做过大的项目，但是看过其中的应用代码。应该说这些都是iOS和Android出现之前，功能手机和嵌入式设备的主流系统。
 
-https://mp.weixin.qq.com/s/K9_1PE_C45DnMxPc1fK7hw
+### 3）Android
 
-傅里叶思想漫谈：从希尔伯特空间到不确定性原理
+没有在该平台上开发过商业产品。但是作为从其诞生之初就一直在关注的人士。无论对它的应用层，还是对它的中间层和驱动层都有一定的了解。基本上从见到Android的第一眼开始，我就预见到Nokia和黑莓的衰败。即便黑莓在稍后的2009～2010年达到它的顶峰，也不曾让我改变观点。
 
-https://mp.weixin.qq.com/s/AQgFded7GWp1yPE_voT0QQ
+### 4）RTKE
 
-看完这45组酷炫数学动图，原来数学这么有意思！
+这是飞利浦开发的一个实时内核，我在S公司工作期间主要用于手机基带芯片的控制。当时公司投入很大精力，想在一颗处理器上集成基带处理和应用处理的功能，其软件核心是在RTKE的基础上，搭建一个Linux虚拟机以运行Android应用。这个项目的初衷是推出千元以下的手机。但是后来随着硬件性能的提升和价格的下降，千元以下的手机的确是做出来了，但实际上所用的处理器的个数不仅没有减少，反而越来越多。PS:RTKE的用途不仅于此，有同事说他之前在其他公司也用过RTKE，然后细谈才知道飞利浦的剃须刀上用的也是RTKE。
 
-https://mp.weixin.qq.com/s/23zElw2ktT3YbNZ9_r5lgQ
+## 4.其他
 
-“一个千古绝伦的大智者”莱布尼茨
+研究生时代研究过CORBA技术，主要用于通信运营商的网管系统的应用。工作之后，很久都没有听说过这个名词。前段时间，在招聘网上，搜了一下，发现CORBA技术本身并未灭绝，但是用途居然还是局限在网管系统的应用上。而且由于体系的庞大低效，原先使用CORBA构筑的GNOME桌面等PC程序，也将IPC转为更高效（但不通用，也不支持联网）的DBUS技术了。
 
-https://mp.weixin.qq.com/s/SlbWkTrO3UlWd15jrKYvdg
+## 2018.8
 
-史上最强律师，用代数暴力破解军事密码，无情吊打荷兰数学家，被誉为“代数学之父”（弗朗索瓦·韦达）
+https://coolshell.cn/articles/3008.html
 
-https://mp.weixin.qq.com/s/_HnWeNxH6p2VAMC8tG2gFg
+Windows编程革命简史
 
-斯坦福再出变态神人！竟用一个数学模型，暴力解开“掰手指”的奥秘！看完我跪了......
+这篇文章谈到的这些东西，我基本都经历过。ATL算是我曾经花费很长时间去学，但却最终没学会的东西。好在从事后的角度看，这东西也没多少公司用。可能安全领域用的比较多吧，比如网银插件。
 
-https://mp.weixin.qq.com/s/Rw3O5MDbEIfgmWCVgFe95w
+当然，这些年也遇到了一些绕了一圈最终逃不过的技术。比如GPU里面的shader技术，当初做3D GIS用到过，现在做AI计算又遇到了。
 
-五次方程的微分方程解法
+## 2018.9
 
-https://mp.weixin.qq.com/s/eYzhlrV822X8mHsOGgv1Qw
+尽管我从未涉足游戏开发行业，但不可否认的是，游戏开发是我许多年前报考CS专业，并从事相关工作的初心。
 
-如何计算一只鸡的表面积？看完中外神人的奇葩解法，我发誓下辈子不做理科生......
+2015年的时候，由于当时工作比较轻松，自己也进入了技术进步的瓶颈期。于是以玩票心态，操练了一下游戏开发，其实就是cocos2d-x和box2d，还为后者提供了中文手册，并被原作者接受为官方版本。
 
-https://mp.weixin.qq.com/s/43XCOdNqeKxMmpfkX3JTGw
+之后由于兴趣转移，加上自己也意识到错过了入行的最佳时间，遂搁置之。不料，3年之后，cocos2d-x已经败下阵来，江湖的主角换成了Unity和UE。。。
 
-一个退休程序员，用高中几何方法，让百年数学难题逼近理论极限（万有覆盖问题）
+此间，还短暂接触了crossapp——一个在cocos2d-x上改造而成的跨平台UI库。不料，cocos2d-x的作者对这种用法很不赞成：
 
-https://mp.weixin.qq.com/s/a1TEh1c1VZ345rmj8UiPgA
+>因为app开发是：如果没事的话我就不刷新屏幕了。游戏引擎是：尽量每秒60帧刷新速度除非你叫我停下来。换句话说，app是事件驱动刷新的，游戏是自循环驱动刷新的。带来的结果就是耗电量、发热量等完全不同。
 
-“科比球”背后的数学
+## 2019.1
 
-https://mp.weixin.qq.com/s/6XsH71CKaVikqnL6kVPqtg
+我对于大数据平台一直很有兴趣，但由于工作内容更偏向于算法和DL，因此平台类的技术栈都只是略知一二的水平。
 
-各种语言的Mandelbrot set示例代码
+不得不说，平台类的技术栈更新换代十分迅速。2016年，还是Hadoop/Hbase的天下，Spark开始发力，OpenStack则已经走下坡路。到了2018年，主角换成了Docker、Kubernetes、Flink。
 
-https://mp.weixin.qq.com/s/gnPiCmsua0ByO5UwWqxuag
+回顾2年前第一个舆情分析项目，自己对于NLP、DL一无所知，对于ML也只有肤浅的认识。仅仅凭借同事的一句提示——Solr，开始闷头开荒，一路下来竟也让我闯出了一番新天地。
 
-史上最牛逼的文科生：学历史成为物理学家，却获得了数学界的最高荣誉，出了350部书，外号火星人！（Edward Witten）
-
-https://mp.weixin.qq.com/s/5p5ai_HKZMvbQ9Inu6ASbA
-
-史上最硬核老师：17年间，拿着菜刀把400个混混送进了哈佛耶鲁麻省！（Jaime Escalante）
-
-https://mp.weixin.qq.com/s/vLqJIaTXOkz0kYJzKguQaQ
-
-99%的数学家都算不出这道题（亲和数）
-
-https://mp.weixin.qq.com/s/ULzU9gwU-X6oSMM4mv5xhA
-
-两次入狱，数次移民，从罗马尼亚地下党到卡耐基梅隆教授—整数规划奠基者Egon Balas的彪悍人生
-
-https://mp.weixin.qq.com/s/NX0j_CgBqalBMVVdRkG59g
-
-数学界再出变态神人！竟用一个比基尼方程，暴力吊打美国数学家！（沙发问题）
-
-https://mp.weixin.qq.com/s/H1fvyQYRFcOe0pqclD-3yg
-
-“最大数之父”葛立恒逝世，他是20世纪数学巨匠，也是一个杂技演员
-
-https://mp.weixin.qq.com/s/rXbP1dvFmwl6QhVCDMr2Bw
-
-神童、数学家、抑郁症患者，控制论之父诺伯特·维纳的一生
-
-https://mp.weixin.qq.com/s/htCZU2de_7CCcL1q4v-NGg
-
-比肩爱因斯坦的天才：如果再给他一次机会，他可能不会再熬夜了......（麦克斯韦）
-
-https://mp.weixin.qq.com/s/BCszlYgbgvKUSkpJCSRQxg
-
-电影院今天复工，应该如何排座位？这是个数学家研究了几百年的问题
-
-https://mp.weixin.qq.com/s/R0nuIqlIefkEppr07Y8gnQ
-
-用一中学数学公式，中了14次彩票头奖，多国彩票规则因他改变
-
-https://mp.weixin.qq.com/s/FCysnxxWBFiGS027qCxHTw
-
-世界上最伟大的十大公式
-
-https://www.zhihu.com/question/20866833
-
-为什么正多面体只有5种？
-
-https://mp.weixin.qq.com/s/qfbfzToypKTxh7CxJ0ifHw
-
-正十二面体的一个最基本谜题被破解了
-
-https://mp.weixin.qq.com/s/uptfQb8ELfpb5P4ySvofpg
-
-一个被我们“嫌弃”了23年的数学天才，累死才知道他的价值（陆家羲）
-
-https://mp.weixin.qq.com/s/wMARrGbRanB2T0NIxISspA
-
-有趣的数学可视化
-
-https://mp.weixin.qq.com/s/T6ukSjODiTgC1T4pCZCY9g
-
-2，29，541，7919，104729……（素数的故事）
-
-https://mp.weixin.qq.com/s/YD6fnPYkqXwxTISjN99JxQ
-
-美国数学能出很厉害的大神，为什么学的却比我们简单？看了他们的黑历史就明白了……
-
-https://mp.weixin.qq.com/s/y9EZdU5hif1WT2t9fpSnFw
-
-他是20世纪最伟大的数学家之一，但这个人却并不存在（尼古拉·布尔巴基）
-
-https://mp.weixin.qq.com/s/ff1CPp3VyNvqZUq6aiZYng
-
-广州人都不敢吃的大鹅！它每一次出现，都会发生大事（黑天鹅事件）
-
-https://mp.weixin.qq.com/s/psrYzcbJqh2jptjXOVHQ7g
-
-千禧年大奖难题之始与未终
-
-https://mp.weixin.qq.com/s/YPBuSxpZ__WK03u7eHVT3g
-
-终年33岁的印度数学天才
-
-https://mp.weixin.qq.com/s/HFWN9BowSNcuFjyLdFNi1w
-
-靠一个逻辑不通的理论圈粉无数，爱因斯坦高调点赞，海森堡却一键举报，霍金静静吃瓜......（拉普拉斯兽和薛定谔的猫）
-
-https://mp.weixin.qq.com/s/1VpcShNGCCe1mayF-NQ1HQ
-
-大长腿的小姐姐真的很难追吗?
-
-https://mp.weixin.qq.com/s/oS4yRsXDXni4Vb4Oa1cKVg
-
-一律师公开单挑天才数学家，原以为是青铜，没想到竟是王者！（费马vs笛卡尔）
+那个时代的我对于分词用的HMM，也曾顶礼膜拜。如今想来，恍如隔世。

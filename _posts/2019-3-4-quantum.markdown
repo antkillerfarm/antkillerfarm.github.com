@@ -61,6 +61,10 @@ https://mp.weixin.qq.com/s/egmodqeThnw5H7DwKRwQbw
 
 如何运用数学进行高效生产？（模拟退火算法）
 
+https://mp.weixin.qq.com/s/tig9hpBJxvIZeGyWF0i8ug
+
+什么是模拟退火算法？
+
 https://mp.weixin.qq.com/s/86c59-nIsrTNUABx4QYobA
 
 量子机器学习入门科普：解读量子力学和机器学习的共生关系
@@ -117,6 +121,10 @@ http://blog.csdn.net/u010945683/article/details/40987331
 https://mp.weixin.qq.com/s/PqvcYexM8WFD0c2m8jv7Ew
 
 遗传算法介绍
+
+https://mp.weixin.qq.com/s/tOyOtnGHgjsewAsZusfDEA
+
+什么是遗传算法？
 
 https://mp.weixin.qq.com/s/v1tLGUJ4My-tVWziSURHzA
 
@@ -225,6 +233,14 @@ https://mp.weixin.qq.com/s/amhWo269x2utl9xIKukrtw
 https://mp.weixin.qq.com/s/p8KS81X_w9zaUb6iiCMJsQ
 
 进化计算前沿综述：值得算法学习的6个生物进化特征
+
+https://mp.weixin.qq.com/s/Fl6nU3xVK80tmq2uvjKf4A
+
+用N.E.A.T遗传算法玩FlappyBird
+
+https://mp.weixin.qq.com/s/95h7WQHGP-glfyO6-S9S8g
+
+什么是鸟群算法
 
 # PaddlePaddle
 

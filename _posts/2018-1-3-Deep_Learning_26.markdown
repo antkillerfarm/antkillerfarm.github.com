@@ -85,6 +85,10 @@ https://mp.weixin.qq.com/s/i6AS7VzWbaxlImCmjEYvMQ
 
 基于视频的人脸表情识别不得不读的论文
 
+https://mp.weixin.qq.com/s/EuURGTFcLho_ATT4u0ph5w
+
+基于回归模型的人脸表情识别方法
+
 # OCR
 
 ## 概述

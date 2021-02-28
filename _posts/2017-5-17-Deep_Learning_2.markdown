@@ -11,6 +11,20 @@ category: DL
 
 ## 链式法则（续）
 
+值得注意的是残差梯度实际上包括两部分：$$\Delta x$$和$$\Delta w$$。如下图所示：
+
+![](/images/img2/BP.png)
+
+其中，$$\Delta x$$和$$\Delta w$$分别是$$\Delta$$在x和w的偏导数方向上的分量。$$\Delta x$$用于向上层传递梯度，而$$\Delta w$$用于更新权值w。
+
+通常来说，我们只需要更新权值w，但少数情况下，w和x可能都需要更新，这时只要分别计算w和x的偏导，并更新即可。
+
+![](/images/img4/BP.png)
+
+上图是多层MLP的正反向运算关系图。z表示每层的feature map，w表示weight，g表示gradients。上图上半部分展示了正向运算，而下半部分，左侧展示了gradients的更新，右侧展示了weight的更新。
+
+除了基于梯度下降的BP算法之外，还有基于GA（genetic algorithm）的BP算法，但基本只有学术界还在尝试。
+
 参考：
 
 https://mp.weixin.qq.com/s/A_Sekyi1kxT1zYcQFBOkDA
@@ -28,6 +42,10 @@ BP反向传播矩阵推导图示详解​
 https://tech.zealscott.com/deeplearning/11-785/lecture12/
 
 Back propagation through a CNN
+
+https://mp.weixin.qq.com/s/XzyudySeceDueTDM36Q2Wg
+
+学好偏导
 
 ## 随机初始化
 
@@ -251,67 +269,3 @@ Dropout是神经网络中解决过拟合问题的一种常见方法。
 2.因为dropout程序导致两个神经元不一定每次都在一个dropout网络中出现。这会迫使网络去学习更加鲁棒的特征。换句话说，假如我们的神经网络是在做出某种预测，它不应该对一些特定的线索片段太过敏感，即使丢失特定的线索，它也应该可以从众多其它线索中学习一些共同的模式（鲁棒性）。
 
 Dropout还有若干变种，如Annealed dropout（Dropout rate decreases by epochs）、Standout（Each neural has different dropout rate）。
-
-除了Dropout之外，还有**DropConnect**。两者原理上类似，后者只隐藏神经元之间的连接。DropConnect也被称作Weight dropout。
-
-总的来说，Dropout类似于机器学习中的L1、L2规则化等增加稀疏性的算法，也类似于随机森林、模拟退火之类的增加随机性的算法。
-
-对drop方法的改进有两种明显的趋势:
-
-随机drop-> 自适应drop
-
-像素级drop -> 区域级drop
-
-参考：
-
-https://zhuanlan.zhihu.com/p/23178423
-
-Dropout解决过拟合问题
-
-https://mp.weixin.qq.com/s/WvPS9LQ6vfD4OkaRbZ0wBw
-
-如何通过方差偏移理解批归一化与Dropout之间的冲突
-
-https://mp.weixin.qq.com/s/yvwAPmclvgtytfhmETM_mg
-
-Hinton提出的经典防过拟合方法Dropout，只是SDR的特例
-
-https://mp.weixin.qq.com/s/QT7X_ubXS13X5E_5KdbNNQ
-
-谷歌大脑提出DropBlock卷积正则化方法，显著改进CNN精度
-
-https://mp.weixin.qq.com/s/0Go146A5dU0-RESQAaAHzQ
-
-Dropout可能要换了，Hinton等研究者提出神似剪枝的Targeted Dropout
-
-https://mp.weixin.qq.com/s/xmNuUPBuNo6E6XvBA8BR4Q
-
-Dropout的前世与今生
-
-https://mp.weixin.qq.com/s/jFz-2Bdn4dbFAza6MXtroA
-
-Dropout的那些事
-
-https://mp.weixin.qq.com/s/XgiWfRcIMiPUSoadMtAbIg
-
-神经网络Dropout层中为什么dropout后还需要进行rescale？
-
-https://mp.weixin.qq.com/s/L7DwT5LpfWoS474MwWOiLA
-
-华为开源自研算法Disout，多项任务表现更佳
-
-https://zhuanlan.zhihu.com/p/146876678
-
-一文看尽12种Dropout及其变体（在DNN、CNN和RNN中的应用）
-
-https://mp.weixin.qq.com/s/dkIHSRY6Edy8kpFHPJVCOQ
-
-DropBlock正则化的介绍
-
-https://mp.weixin.qq.com/s/g1XSxGG_l7MexuokaChlsQ
-
-理解dropout: 组合 or 噪声？
-
-https://mp.weixin.qq.com/s/n5VXSS_t9JPyLE8UNcWlbA
-
-Drop大法

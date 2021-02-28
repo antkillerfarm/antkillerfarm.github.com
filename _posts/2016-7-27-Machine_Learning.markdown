@@ -53,6 +53,16 @@ https://mp.weixin.qq.com/s/5lpwvBr3oYnu36onF2S5EA
 
 机器学习发展历史回顾
 
+----
+
+![](/images/img4/ML.png)
+
+![](/images/img4/ML_2.png)
+
+https://mp.weixin.qq.com/s/WiAlhSRT-02SryeMM5ecpA
+
+机器学习的通俗讲解
+
 # 线性回归
 
 线性回归属于有监督学习（supervised learning）的其中一种方法。

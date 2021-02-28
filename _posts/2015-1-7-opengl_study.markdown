@@ -125,7 +125,7 @@ GUI应用程序架构的十年变迁:MVC,MVP,MVVM,Unidirectional,Clean
 
 IMGUI跟RMGUI最大的区别在于，不存储“额外的“，“重复的”状态。比如TextView的Text属性就是一个“额外的”、“重复的”状态。IMGUI不存储Text信息，而是在需要绘制Text的时候，从原始对象中直接获取。这么做的好处是，TextView显示的文本跟原始对象的Text属性永远是一致的。在RMGUI，原始对象的Text变更之后，需要调用TextView::SetText更新TextView的Text属性，否则就产生了不一致。
 
-缺点：不利于布局/动画/Style配置。造成这些这些问题的原因还因为imgui是没有状态的，通常布局算法都需要两遍遍历所有UI组件（第一遍计算大小第二遍计算布局)，但是imgui只会运行一遍这样就会对布局造成困难。同样实现动画和Style都需要额外的状态维护，需要在imgui上添加额外的状态层才能实现动画/Style。
+缺点：不利于布局/动画/Style配置。造成这些问题的原因是：因为imgui是没有状态的，通常布局算法都需要两遍遍历所有UI组件（第一遍计算大小第二遍计算布局)，但是imgui只会运行一遍这样就会对布局造成困难。同样实现动画和Style都需要额外的状态维护，需要在imgui上添加额外的状态层才能实现动画/Style。
 
 参考：
 
@@ -144,6 +144,10 @@ Sol on Immediate Mode GUIs (IMGUI)
 https://zhuanlan.zhihu.com/p/36588396
 
 关于Korok的GUI系统
+
+https://blog.codingnow.com/2020/07/game_ui.html
+
+游戏UI模块的选择
 
 # uboot
 

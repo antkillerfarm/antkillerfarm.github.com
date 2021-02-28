@@ -53,6 +53,10 @@ https://mp.weixin.qq.com/s/_GOXBYyyYnridILemNRDqA
 
 ChannelNets: 省力又讨好的channel-wise卷积，在channel维度进行卷积滑动 
 
+https://mp.weixin.qq.com/s/HMLKUL3_3MhWmJ8ub-Yfcg
+
+一文速览Deep Learning中的11种卷积
+
 # 花式池化
 
 池化和卷积一样，都是信号采样的一种方式。

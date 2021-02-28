@@ -241,6 +241,18 @@ https://deck.gl/
 
 # Machine Learning之Python篇+
 
+https://mp.weixin.qq.com/s/6x5Wmpy4Im0x3Ddua9rvFw
+
+用python怎样识别验证码？传统方法，非DL
+
+https://mp.weixin.qq.com/s/Xksp457JBr2ySrtqgXYMFw
+
+一文学会入门推荐算法库surprise
+
+https://mp.weixin.qq.com/s/x9esWTfZOtfedjkrcKM1Qw
+
+利用Python的混合集成机器学习
+
 https://github.com/TheAlgorithms/Python
 
 各种Python算法的新手入门大全

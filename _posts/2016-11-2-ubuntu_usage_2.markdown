@@ -336,6 +336,12 @@ https://www.freeplane.org/wiki/index.php/Home
 
 功能上来说，Freeplane不算太强，但是它原生支持Latex。。。
 
+## Other
+
+https://mp.weixin.qq.com/s/yD12Ih29_9CwwOe4z5BtgQ
+
+被收费绘图工具PUA了怎么办？来看看这个老实工具吧
+
 # Chrome
 
 /etc/apt/sources.list.d/google-chrome.list：

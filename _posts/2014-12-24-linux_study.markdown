@@ -254,6 +254,10 @@ Tornado原理浅析及应用场景探讨
 
 ## 参考
 
+https://mp.weixin.qq.com/s/EDzFOo3gcivOe_RgipkTkQ
+
+​网络IO演变发展过程和模型介绍
+
 https://www.zhihu.com/answer/241673170
 
 怎样理解阻塞非阻塞与同步异步的区别？

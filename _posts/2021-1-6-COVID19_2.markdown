@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 新冠肺炎（二）——国外疫情
+title: 新冠肺炎（二）——国外疫情, 国际援助
 category: Nature 
 ---
 

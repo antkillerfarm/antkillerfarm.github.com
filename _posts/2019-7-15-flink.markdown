@@ -223,6 +223,14 @@ https://mp.weixin.qq.com/s/wBuE76WAY6dgVTQfTBxpRg
 
 Alink：基于Flink的机器学习平台
 
+https://mp.weixin.qq.com/s/nlW0Ds7ZlSZUiOIMNHHxxg
+
+Flink实时数据分析系列1. 有状态流处理简介
+
+https://mp.weixin.qq.com/s/57eqekksna9sV5vIAtzhZA
+
+Flink实时数据分析系列2. 流处理基本概念
+
 # Beam
 
 Apache Beam是一个数据处理的通用引擎，集成了多个处理数据框架（包括Cassandra、Elasticesarch、Hadoop-file-system、Hadoop-hbase、Jdbc、Kafka等）。Beam SDK给上层应用的开发者提供了一个统一的编程接口，开发者不需要了解底层的具体的大数据平台的开发接口是什么，直接通过Beam SDK的接口就可以开发数据处理的加工流程，不管输入是用于批处理的有界数据集，还是流式的无界数据集。
@@ -384,6 +392,18 @@ https://mp.weixin.qq.com/s/Y9SdWSELsgkdV2sO26SBSA
 https://mp.weixin.qq.com/s/IX0dWN24EqH8vAs9ZXnfFg
 
 四个大点，搞懂Redis到底快在哪里？
+
+https://mp.weixin.qq.com/s/MAN-hVvfYZZILJmNs1Q7SQ
+
+Redis内存模型
+
+https://mp.weixin.qq.com/s/aYvzVlJ7ry8XG_B4xuPvzg
+
+如何从0到1构建一个稳定、高性能的Redis集群？
+
+https://mp.weixin.qq.com/s/K3QMN750ZeFDNGopmOz1aw
+
+一文讲透如何排查Redis性能问题
 
 ## Pika
 

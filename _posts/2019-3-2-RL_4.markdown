@@ -219,6 +219,10 @@ https://mp.weixin.qq.com/s/fAxDlrumUjc_6eqwGtcSxQ
 
 详解蒙特卡洛方法：这些数学你搞懂了吗？
 
+https://mp.weixin.qq.com/s/b1k9uDrq5_1-ArWBvphtgA
+
+一个彻底改变世界的思想
+
 # Temporal-Difference Learning
 
 ## TD

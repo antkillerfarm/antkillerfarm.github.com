@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（五）——Attention in CV & RS
+title:  Attention（五）——轻量化BERT, Attention in CV & RS
 category: Attention 
 ---
 
@@ -118,6 +118,14 @@ Poor Man's BERT: 更小更快的Transformer模型
 https://mp.weixin.qq.com/s/u44jtXwNCzsZcrr9WrytLQ
 
 EdgeBERT：极限压缩，比ALBERT再轻13倍！树莓派上跑BERT的日子要来了？
+
+https://mp.weixin.qq.com/s/sNv9UirZJ6xT3zf8XhJaRg
+
+FastFormers：实现Transformers在CPU上223倍的推理加速
+
+https://mp.weixin.qq.com/s/XQSEg2_8_1lFqWdHVG6TVA
+
+Switch Transformer: 高效稀疏的万亿参数Transformer
 
 # 快速BERT
 
@@ -237,9 +245,17 @@ https://www.zhihu.com/question/437495132
 
 如何看待Transformer在CV上的应用前景，未来有可能替代CNN吗？
 
-https://mp.weixin.qq.com/s/EwzjBAeZQfeBt-EkaeXPAg
+https://mp.weixin.qq.com/s/hn4EMcVJuBSjfGxJ_qM3Tw
 
 搞懂Vision Transformer原理和代码，看这篇技术综述就够了
+
+https://mp.weixin.qq.com/s/ozUHHGMqIC0-FRWoNGhVYQ
+
+搞懂Vision Transformer原理和代码，看这篇技术综述就够了（二）
+
+https://mp.weixin.qq.com/s/dysKMpOXAjSRgb5xGDO3FA
+
+搞懂Vision Transformer原理和代码，看这篇技术综述就够了(三)
 
 https://mp.weixin.qq.com/s/FIilwbLzYk4av8w11VgJeQ
 
@@ -252,6 +268,14 @@ https://mp.weixin.qq.com/s/2BECepucUdzLYlyU1aM7bA
 https://mp.weixin.qq.com/s/k-pe1qTelVmvcwY6hmSi4A
 
 Transformer是巧合还是必然？搜索推荐领域的新潮流
+
+https://mp.weixin.qq.com/s/rATLyYBgo2nWY4rKXmgV5w
+
+来自Transformer的降维打击：ReID各项任务全面领先，阿里&浙大提出TransReID
+
+https://mp.weixin.qq.com/s/aWzHpeNS3OUrjrbEvnI87g
+
+用Pytorch轻松实现28个视觉Transformer，开源库timm了解一下
 
 # BERT进阶
 
@@ -288,45 +312,3 @@ https://mp.weixin.qq.com/s/n6F6MTjrUCmvEoaLiVZpxA
 https://mp.weixin.qq.com/s/pe2E69Gpw0nT9sSHvtBGSg
 
 自回归与非自回归模型不可兼得？预训练模型BANG全都要！
-
-## UniLM
-
-https://mp.weixin.qq.com/s/m_FU4NmjUsvxusRidDb-Xg
-
-UniLM:一种既能阅读又能自动生成的预训练模型
-
-https://mp.weixin.qq.com/s/yyUPqxpfBwUSRbwM6SSAcQ
-
-UniLM论文阅读笔记
-
-https://mp.weixin.qq.com/s/RjeuHXa8O3MzSpTOuOHMkQ
-
-站在BERT肩膀上的NLP新秀们：XLMs、MASS和UNILM
-
-https://mp.weixin.qq.com/s/UEBKSKEkZTbpR49_Rh50Jg
-
-微软统一预训练语言模型UniLM 2.0解读
-
-## Electra
-
-https://mp.weixin.qq.com/s/dFT7KKMH56unkOEA9H4Kuw
-
-吊打BERT Large的小型预训练模型ELECTRA终于开源！真相却让人...
-
-https://mp.weixin.qq.com/s/6i9eQISKsWU0jawKzWg8nQ
-
-超越bert，最新预训练模型ELECTRA论文阅读笔记
-
-https://mp.weixin.qq.com/s/lkB1xn6G2P5Nivj7DcYg5w
-
-Electra: 判别还是生成，这是一个选择
-
-## 参考
-
-https://www.zhihu.com/question/298203515
-
-如何评价BERT模型？
-
-https://mp.weixin.qq.com/s/Fao3i99kZ1a6aa3UhAYKhA
-
-全面超越人类！Google称霸SQuAD，BERT横扫11大NLP测试

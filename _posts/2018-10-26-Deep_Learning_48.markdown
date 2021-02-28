@@ -45,6 +45,10 @@ https://zhuanlan.zhihu.com/p/100553403
 
 Deep Metric Learning及其形式
 
+https://mp.weixin.qq.com/s/_1szOUVaTKZBytHPHqCGRA
+
+如何用深度学习来做检索：度量学习中关于排序损失函数的综述
+
 ## ARC-I & ARC-II
 
 《Convolutional neural network architectures for matching natural language sentences》
@@ -199,6 +203,10 @@ https://mp.weixin.qq.com/s/92Dld5zg5vLtpkdnhmSldg
 
 K近邻算法哪家强？KDTree、Annoy、HNSW原理和使用方法介绍
 
+https://mp.weixin.qq.com/s/pStfyM9o8jnBz_mleecrJQ
+
+盘点高效的KNN实现算法
+
 https://mp.weixin.qq.com/s/Gxgm8r5wqZn-oUS13HC5Xg
 
 如何选择最佳的最近邻算法
@@ -305,6 +313,10 @@ https://mp.weixin.qq.com/s/W8YlrSyM7K84-_jwiD6E7g
 
 微信扫一扫识物的技术揭秘：抠图与检索
 
+https://mp.weixin.qq.com/s/ivl_IWXsDon4oXr0oDe1ZA
+
+打造万物识别之利器——微信扫一扫植物识别篇
+
 https://zhuanlan.zhihu.com/p/112719984
 
 全面理解搜索Query：当你在搜索引擎中敲下回车后，发生了什么？
@@ -352,19 +364,3 @@ https://mp.weixin.qq.com/s/fZv9FgbdQ1bWPoNdl9sF1A
 https://mp.weixin.qq.com/s/Vvo3Ti3XiGQz0IwLgATfWQ
 
 电商搜索算法技术的演进
-
-https://mp.weixin.qq.com/s/MpuUdZi8CWcu0b-ij-bHjA
-
-Jeff Dean出品：用机器学习索引替代B-Trees，3倍性能提升，10-100倍空间缩小
-
-https://mp.weixin.qq.com/s/uztYEW_azetOkOGiZcbCuw
-
-JeffDean又用深度学习搞事情：这次要颠覆整个计算机系统结构设计。这篇blog介绍了如何用DL方法提高内存访问的命中率。
-
-https://zhuanlan.zhihu.com/p/37020639
-
-读论文系列：CVPR2018 SSAH
-
-https://mp.weixin.qq.com/s/TdnstQaBcLaXg8BvuR7oYA
-
-基于素描图的细粒度图像检索

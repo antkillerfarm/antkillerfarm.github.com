@@ -9,6 +9,18 @@ category: DRL
 
 # 工具/框架（续）
 
+https://mp.weixin.qq.com/s/BhTX4KQnLxUQLvPUfY3q6Q
+
+物理实验成本为零！南大LAMDA开源虚拟RL训练环境
+
+https://mp.weixin.qq.com/s/MYm17ungMfMhu_7Cm66gqg
+
+Deepmind官方实现的DQN库
+
+https://mp.weixin.qq.com/s/LymwoIpIu9xCBZlNM-_CIw
+
+DeepMind首发并开源Alchemy，一种元强化学习(meta-RL)基准环境
+
 https://mp.weixin.qq.com/s/La43IWrxuDLoppnfRAYtbA
 
 ReinforceJS库（动态展示DP、TD、DQN算法运行过程）

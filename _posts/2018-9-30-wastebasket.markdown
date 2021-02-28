@@ -195,22 +195,6 @@ https://mp.weixin.qq.com/s/ELC60377pzaFwJv7czOneQ
 
 15种偶然制造的东西，居然改变了世界！
 
-https://mp.weixin.qq.com/s/SkQ69SnATYXzlXZ2FEWVsw
-
-为什么金属不能放进微波炉，结果太可怕了......
-
-https://mp.weixin.qq.com/s/K-ukk-HuztMDCyHWLZaXww
-
-谁是这个世界上最“有名”的科学家？——亚历山大·冯·洪堡（Alexander von Humboldt）
-
-https://mp.weixin.qq.com/s/NE20FomTJCFd_HSfXTHyjg
-
-年仅21岁，干掉6位诺贝尔奖得主，被誉为科学界最强杀手，却惨被人骂成一个笑话（央视《走近科学》栏目）
-
-https://mp.weixin.qq.com/s/Rd-rOSV14sNYg0ZXsPdzuQ
-
-60年前构想的未来世界，我们已经实现了50%（《小灵通漫游未来》）
-
 http://www.makertime.org/
 
 一个硬核的geek网站
@@ -322,6 +306,14 @@ https://www.zhihu.com/zvideo/1324714363509334016
 
 3D动画演示布朗式轻机枪的工作原理
 
+https://www.zhihu.com/question/263808184
+
+蜂鸟手枪
+
+https://mp.weixin.qq.com/s/3nQAEdHfI9QF5E6n2Sbcew
+
+俄军士兵为什么要坐在车顶上?—浅谈苏联装甲运兵车和步战的取舍
+
 # 气象
 
 夏至三庚入伏，冬至逢壬数九。
@@ -385,3 +377,7 @@ https://mp.weixin.qq.com/s/1aRFQvQJozBL7Y_fSbB2ug
 https://mp.weixin.qq.com/s/m9tP5wg19BKR9ZWeeNUaSQ
 
 破解一个存在已久的气候之谜（全新世极热事件）
+
+https://mp.weixin.qq.com/s/kfcq_SP1_u6yt_sIJLNSZA
+
+从美国德州超400万人遭遇停电危机，看电力系统背后的业务逻辑

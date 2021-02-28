@@ -35,6 +35,10 @@ https://mp.weixin.qq.com/s/OkjYWxWB0C3qnWTe6vSQVA
 
 ST-NMT：软目标模板助力神经机器翻译
 
+https://mp.weixin.qq.com/s/48Mx3A67FuBO0dqFRhBMbA
+
+字幕组时代落幕，翻译的未来可能是？
+
 ## 文本分类
 
 http://www.jianshu.com/p/0273c377c34e
@@ -198,6 +202,10 @@ https://mp.weixin.qq.com/s/6CzRKpO88BainkJ_XffWmg
 https://mp.weixin.qq.com/s/k7jHxSmdEoG6sO_Z5dO36g
 
 文本分类综述：迈向NLP大师的第一步（下）
+
+https://mp.weixin.qq.com/s/gfDr4CNKapyinWKZtswZxg
+
+一份最新的、全面的NLP文本分类综述
 
 ## 情感分析
 

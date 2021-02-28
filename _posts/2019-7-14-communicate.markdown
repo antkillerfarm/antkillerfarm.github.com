@@ -103,6 +103,76 @@ https://mp.weixin.qq.com/s/1x1tUuPJ0fkiPj0G_uTSmg
 
 美国如果把根域名服务器封了，中国会从网络上消失？
 
+## URI
+
+URI = Universal Resource Identifier
+
+URL = Universal Resource Locator
+
+URN = Universal Resource Name
+
+个人的身份证号就是URN，个人的家庭地址就是URL，URN可以唯一标识一个人，而URL可以告诉邮递员怎么把货送到你手里。
+
+参考：
+
+https://blog.csdn.net/koflance/article/details/79635240
+
+URL和URI的区别
+
+## QUIC
+
+Quic全称quick udp internet connection，“快速UDP互联网连接”，是由google提出的使用udp进行多路并发传输的协议。
+
+Quic相比现在广泛应用的http2+tcp+tls协议有如下优势：
+
+1.减少了TCP三次握手及TLS握手时间。
+
+2.改进的拥塞控制。
+
+3.避免队头阻塞的多路复用。
+
+4.连接迁移。
+
+5.前向冗余纠错。
+
+参考：
+
+https://mp.weixin.qq.com/s/vpz6bp3PT1IDzZervyOfqw
+
+QUIC协议原理分析
+
+https://mp.weixin.qq.com/s/_RAXrlGPeN_3D6dhJFf6Qg
+
+让互联网更快的协议，QUIC在腾讯的实践及性能优化
+
+https://zhuanlan.zhihu.com/p/68012355
+
+HTTP/3竟然基于UDP，HTTP协议这些年都经历了啥？（HTTP/3之前名为HTTP-over-QUIC）
+
+https://mp.weixin.qq.com/s/fy84edOix5tGgcvdFkJi2w
+
+一文读懂HTTP/1 HTTP/2 HTTP/3
+
+https://mp.weixin.qq.com/s/unzge23Aw0jrvBST-iW0Qw
+
+HTTP/3的过去、现在和未来
+
+https://mp.weixin.qq.com/s/MHYMOYHqhrAbQ0xtTkV2ig
+
+HTTP/3原理实战
+
+https://mp.weixin.qq.com/s/DiaruzlgPPKmJCiBg19_og
+
+为什么HTTP3.0使用UDP协议
+
+https://mp.weixin.qq.com/s/uNXxyPZ5IssZfgFFD-m5dQ
+
+什么是HTTP简史
+
+https://mp.weixin.qq.com/s/A4OYoKFVu2nZCyDJcoFrQA
+
+从HTTP到HTTP/3的发展简史
+
 ## 参考
 
 https://www.cnblogs.com/maybe2030/p/4781555.html
@@ -185,75 +255,9 @@ https://mp.weixin.qq.com/s/urwS1dFAZsBG0Kyl8YgLpQ
 
 GET和POST请求的本质区别是什么
 
-## URI
+https://mp.weixin.qq.com/s/u3VSyEtdcIgp8dCbwCaavA
 
-URI = Universal Resource Identifier
-
-URL = Universal Resource Locator
-
-URN = Universal Resource Name
-
-个人的身份证号就是URN，个人的家庭地址就是URL，URN可以唯一标识一个人，而URL可以告诉邮递员怎么把货送到你手里。
-
-参考：
-
-https://blog.csdn.net/koflance/article/details/79635240
-
-URL和URI的区别
-
-## QUIC
-
-Quic全称quick udp internet connection，“快速UDP互联网连接”，是由google提出的使用udp进行多路并发传输的协议。
-
-Quic相比现在广泛应用的http2+tcp+tls协议有如下优势：
-
-1.减少了TCP三次握手及TLS握手时间。
-
-2.改进的拥塞控制。
-
-3.避免队头阻塞的多路复用。
-
-4.连接迁移。
-
-5.前向冗余纠错。
-
-参考：
-
-https://mp.weixin.qq.com/s/vpz6bp3PT1IDzZervyOfqw
-
-QUIC协议原理分析
-
-https://mp.weixin.qq.com/s/_RAXrlGPeN_3D6dhJFf6Qg
-
-让互联网更快的协议，QUIC在腾讯的实践及性能优化
-
-https://zhuanlan.zhihu.com/p/68012355
-
-HTTP/3竟然基于UDP，HTTP协议这些年都经历了啥？（HTTP/3之前名为HTTP-over-QUIC）
-
-https://mp.weixin.qq.com/s/fy84edOix5tGgcvdFkJi2w
-
-一文读懂HTTP/1 HTTP/2 HTTP/3
-
-https://mp.weixin.qq.com/s/unzge23Aw0jrvBST-iW0Qw
-
-HTTP/3的过去、现在和未来
-
-https://mp.weixin.qq.com/s/MHYMOYHqhrAbQ0xtTkV2ig
-
-HTTP/3原理实战
-
-https://mp.weixin.qq.com/s/DiaruzlgPPKmJCiBg19_og
-
-为什么HTTP3.0使用UDP协议
-
-https://mp.weixin.qq.com/s/uNXxyPZ5IssZfgFFD-m5dQ
-
-什么是HTTP简史
-
-https://mp.weixin.qq.com/s/A4OYoKFVu2nZCyDJcoFrQA
-
-从HTTP到HTTP/3的发展简史
+SSH只能用于远程Linux主机？那说明你见识太小了！
 
 # 传感器
 
@@ -420,53 +424,3 @@ https://mp.weixin.qq.com/s/qOnMNbA9C7bcwZ6IvOxyCA
 https://mp.weixin.qq.com/s/oN6n7GXnqASKBbVS54rfGg
 
 陀螺仪工作原理及其厂家
-
-# Pytorch++
-
-https://mp.weixin.qq.com/s/cKvkvWgVPuq9y1A5q1OPEQ
-
-跟着指南学PyTorch—迁移学习教程
-
-https://mp.weixin.qq.com/s/gJgxh4l0CXTlaJaQ_FS3YQ
-
-PyTorch的数据增强与数据标准化
-
-https://mp.weixin.qq.com/s/Mo7XhRcPkgurmQPJ3Zu1ug
-
-基于PyTorch的计算机视觉框架
-
-https://mp.weixin.qq.com/s/PWABh72t92pUOJufcmzvag
-
-用PyTorch做深度学习实验！Facebook新框架Ax和BoTorch双双开源
-
-https://mp.weixin.qq.com/s/LcwlCai7PMYOBwsLXPS5HA
-
-PyTorch语义分割开源库semseg
-
-https://mp.weixin.qq.com/s/oDYMTb9NWxVsW07FLQKA_Q
-
-万字综述，核心开发者全面解读PyTorch内部机制
-
-https://www.zhihu.com/question/274635237
-
-Pytorch有什么节省内存（显存）的小技巧？
-
-https://mp.weixin.qq.com/s/xe5zmJklT2sqn_zffmyrLg
-
-Sharded:在相同显存的情况下使pytorch模型的参数大小加倍
-
-https://mp.weixin.qq.com/s/maOnO_o5y19X2D-ZnLjsJA
-
-PyTorch中的In-place操作是什么？为什么要避免使用这种操作？
-
-https://zhuanlan.zhihu.com/p/299736532
-
-使用PyTorch 1.6 for Android
-
-https://mp.weixin.qq.com/s/1ugk6uI6lfWEEUvtKIfYNA
-
-9个让PyTorch模型训练提速的技巧！
-
-https://mp.weixin.qq.com/s/kZvdgWqk1KLi790rly3YYQ
-
-Pytorch中的分布式神经网络训练

@@ -23,6 +23,8 @@ https://www.tensorflow.org/xla/architecture
 
 HLO(High Level Optimizer)
 
+## 应用层
+
 TF目前（v2.4.1）的默认编译选项中已经包含了XLA，但是默认不会启动。
 
 启动方法：
@@ -52,9 +54,21 @@ unit test：
 
 tensorflow/compiler/xla/tests
 
-_XlaCompile & _XlaRun
+## 底层实现
 
-参考：
+XLA支持两种接入模式：
+
+- JIT。compiler/jit/
+
+- AOT。compiler/aot/
+
+将整个计算图用_XlaCompile & _XlaRun替换。
+
+compiler/tf2xla/ -> compiler/xla/client/ -> compiler/xla/service/
+
+最终的计算由service负责实现。
+
+## 参考
 
 https://mp.weixin.qq.com/s/RO3FrPxhK2GEoDCGE9DXrw
 

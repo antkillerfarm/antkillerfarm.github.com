@@ -165,6 +165,14 @@ https://mp.weixin.qq.com/s/uBOFnLKiVG-rsv5vzbDbtQ
 
 一条sql的执行过程详解
 
+https://cloud.tencent.com/developer/article/1475146
+
+SQL语句中where条件后写上1=1是什么意思
+
+https://cnblogs.com/SimpleWu/p/9929043.html
+
+SQL语句性能优化
+
 ## Apache Kylin
 
 Apache Kylin是一个开源的分布式分析引擎，最初由eBay开发贡献至开源社区。它提供Hadoop之上的SQL查询接口及多维分析（OLAP）能力以支持大规模数据，能够处理TB乃至PB级别的分析任务，能够在亚秒级查询巨大的Hive表，并支持高并发。
@@ -244,6 +252,10 @@ https://zhuanlan.zhihu.com/p/157314533
 https://mp.weixin.qq.com/s/KalliFefy7fxBYd2xQaAqg
 
 GraphQL最佳入门实战
+
+https://mp.weixin.qq.com/s/VxeRwsYw0qL35BlPsDGbtg
+
+5款好用且有代表性的GraphQL工具
 
 ## 分布式算法
 
@@ -347,6 +359,10 @@ https://mp.weixin.qq.com/s/0J9X-fFp3y0zaxR78tBfQQ
 
 服务降级该怎么做？
 
+https://mp.weixin.qq.com/s/_RlOAvjfTINJrhwHUogs7Q
+
+分布式缓存与DB秒级一致设计实践
+
 ## 数据管理工具
 
 数据管理工具主要有：Navicat和DataGrip。
@@ -355,8 +371,6 @@ https://www.cnblogs.com/zuge/p/7397255.html
 
 DataGrip使用入门
 
-## 数据湖
+https://mp.weixin.qq.com/s/9Q18rptRwV4Ccg33dD9BrQ
 
-数仓：“结构化”地存数据。典型代表：用Excel记账目。
-
-我们平时写东西的时候不一定都是开excel：写个文档用word，拍个照片存相册里面，这些数据没法像数仓一样“结构化”：如果有个人告诉你说“你把照片都放Excel里面”，你会觉得他疯了，对吧。但是这些东西最好都放一块存起来，别丢了——在家你可能就存硬盘里面，存移动硬盘里面，或者fancy一点，存云盘里面。把数据“放一块”，先不担心怎么把它有条有理做成大Excel表格，这个就是**数据湖**。
+操作所有的数据库靠它就够了（DBeaver）

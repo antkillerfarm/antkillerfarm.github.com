@@ -214,6 +214,10 @@ https://mp.weixin.qq.com/s/Bw0vD9EEQijjE1gaIAetHw
 
 如何推导高斯过程回归以及深层高斯过程详解
 
+https://mp.weixin.qq.com/s/1HggYumIF2pAomCtA-eu6g
+
+如何知道一个变量的分布是否为高斯分布?
+
 # 热传导推荐算法
 
 https://www.zhihu.com/question/20184666

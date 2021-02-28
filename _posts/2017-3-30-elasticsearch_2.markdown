@@ -370,6 +370,10 @@ https://mp.weixin.qq.com/s/imLTVwgm8MOiY1_5s3rdFQ
 
 RocketMQ如何保证消息的可靠性？
 
+https://mp.weixin.qq.com/s/9ZqEOlD3v--U3BNCPZSUjw
+
+浅谈消息队列及常见的分布式消息队列中间件
+
 https://mp.weixin.qq.com/s/6aXcum-FAbvcGcOrkSC4vQ
 
 为什么Kafka会成为微服务架构的事实标准？
@@ -393,3 +397,7 @@ https://mp.weixin.qq.com/s/T6gCc8OBgyV-yeAg_MUzPQ
 https://mp.weixin.qq.com/s/DQZh-V0jnlqLNqkyRkoDQQ
 
 使用Kafka，如何成功迁移SQL数据库中超过20亿条记录？
+
+https://mp.weixin.qq.com/s/UFfpPnouxXjOFAmZVdSTVg
+
+Kafka核心源码剖析（一）：Producer发送消息流程

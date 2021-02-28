@@ -291,6 +291,10 @@ https://mp.weixin.qq.com/s/NsaMcgufLYO3i6eG1WO_VA
 
 我不是机器人：谷歌最新版验证码系统ReCaptcha破解已开源
 
+https://mp.weixin.qq.com/s/fun7k1fDrB3BYG2DK-Z7wA
+
+如何证明你是“人”还是“机器”？ 揭秘验证码技术
+
 其他类似项目还包括：
 
 | 语言 | 名称 | 网址 |

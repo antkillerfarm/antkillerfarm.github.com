@@ -1,430 +1,312 @@
 ---
 layout: post
-title:  深度学习（三十）——Graph NN
+title:  深度学习（三十）——元学习
 category: DL 
 ---
 
 * toc
 {:toc}
 
-# Graph NN+++
+# 元学习
 
-https://mp.weixin.qq.com/s/bvp3NIrrarJc_MesKy1x_A
+人工智能的历史显示了明确的进展方向：
 
-崔泽宇：套装搭配推荐在图神经网络上的应用
+第一代：**良好的老式人工智能**
 
-https://mp.weixin.qq.com/s/_8K0s9WceJ-xlRViHhz2Zw
+- 手工预测
+- 什么都不学
 
-Google图挖掘团队最新博客《图表示学习中的创新》
+第二代：**浅学习**
 
-https://mp.weixin.qq.com/s/c3SBGlxzJOYhQBrJ2h3j0g
+- 手工功能
+- 学习预测
 
-呼奋宇：深度层次化图卷积神经网络
+第三代：**深度学习**
 
-https://mp.weixin.qq.com/s/sRKW8DLXZXWLUUVTb12F4Q
+- 手工算法（优化器，目标，架构......）
+- 端到端地学习功能和预测
 
-“AI新贵”图神经网络算法及平台在阿里的大规模实践
+第四代：**元学习（Meta-Learning）**
 
-https://mp.weixin.qq.com/s/tAfTmGWqG6IR8SOP0uKW6g
+- 无手工
+- 端到端学习算法和功能以及预测
 
-什么限制了GNN的能力？首篇探究GNN普适性与局限性的论文出炉！
+![](/images/img4/Meta_Learning.png)
 
-https://mp.weixin.qq.com/s/Orv47r4EchVIR7VcleoJ5Q
+## 教程
 
-谷歌图表征学习创新：学习单个节点多个嵌入&自动学习最优超参数
+http://web.stanford.edu/class/cs330/
 
-https://mp.weixin.qq.com/s/ChXCcXOv-OKPzH8dro_DnA
+CS 330: Deep Multi-Task and Meta Learning
 
-图模型的信息融合专题
+http://metalearning.ml
 
-https://zhuanlan.zhihu.com/p/113242299
+这是一个Meta-Learning方面的专题讨论会，有不少好东西。
 
-异质图神经网络学习笔记
+https://mp.weixin.qq.com/s/sQmDZsVGIADwO97yEFATkw
 
-https://mp.weixin.qq.com/s/LrAjuJyzrXWAGvvTLTNd8Q
+ICML2019《元学习》教程与必读论文列表
 
-GNN教程：图神经网络“开山之作”！
+李宏毅的教程中也有一章介绍Meta-Learning。
 
-https://mp.weixin.qq.com/s/C-Pa1jznQntyhocdxS-4Hg
+## 参考
 
-节点嵌入训练加快300倍！解读开源高性能图嵌入系统GraphVite
+https://github.com/gopala-kr/meta-learning
 
-https://mp.weixin.qq.com/s/gE0jGuduKOQYqkTAuhC2Nw
+元学习（meta-learning）相关文献资源大列表
 
-基于空间对齐的图卷积网络
+https://github.com/sudharsan13296/Awesome-Meta-Learning
 
-https://mp.weixin.qq.com/s/xJ05ctlYhyVy__6CaOm4WQ
+元学习相关资源汇总
 
-利用图Transformer实现基于知识图谱的文本生成
+https://github.com/floodsung/Meta-Learning-Papers
 
-https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247515242&idx=2&sn=7497044ec2f80215061fb0de8abb2f72
+另一个元学习相关资源汇总
 
-用于Web级推荐系统的图卷积神经网络
+https://coladrill.github.io/2018/10/24/元学习总览/
 
-https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247515402&idx=2&sn=726b417a71789e65430cbd931c78959e
+元学习总览
 
-基于门控图网络实现图到序列学习
+https://zhuanlan.zhihu.com/p/261170127
 
-https://blog.csdn.net/yyl424525/article/details/100057907
+元学习综述《Meta-Learning in Neural Networks: A Survey》
 
-Cluster-GCN: An Efficient Algorithm for Training Deep and Large Graph Convolutional Networks
+https://mp.weixin.qq.com/s/KKK3VEpwL90g6Aro8qtXxQ
 
-https://mp.weixin.qq.com/s/emPDgw_c68JgbpYnem4JvA
+学习如何学习的算法：简述元学习研究方向现状
 
-一文读懂简化的图卷积网络GCN（SGC）
+https://mp.weixin.qq.com/s/jlD5p5GXFmrWlxg9xvehxg
 
-https://mp.weixin.qq.com/s/LzaP6BWaKXL4O_Jf9QN7Rw
+元学习—Meta Learning的兴起
 
-基于层次化注意力图网络和多视角学习的商品推荐
+https://mp.weixin.qq.com/s/WZtmy_RK4lsWqp9qIMCnUA
 
-https://mp.weixin.qq.com/s/EKb9hN9cFrwNtSWWBpE4dw
+Meta Learning 1: 基于度量的方法
 
-首次基于神经架构搜索自动生成图卷积结构，刷新人体动作识别准确率
+https://mp.weixin.qq.com/s/A4amtD9jPIRus8Ojnhd3PA
 
-https://mp.weixin.qq.com/s/-Fw8HcrQjBoYA4lXk0NZ3Q
+Meta Learning 2: 更多基于度量的方法
 
-图变换网络：Graph Transformer Network
+https://zhuanlan.zhihu.com/p/133159617
 
-https://mp.weixin.qq.com/s/nigeDLq-HrtELfhfWj5qow
+Meta-Learning in Neural Networks: A survey
 
-自注意力图池化
+https://mp.weixin.qq.com/s/qoKQwEvOnP384i5Z-_jO1A
 
-https://mp.weixin.qq.com/s/_uoyv-NAn8GypYXGsLvjhg
+CVPR2019最新元学习教程：基于元学习的计算机视觉应用
 
-Graph U-Nets
+https://zhuanlan.zhihu.com/p/136975128
 
-https://mp.weixin.qq.com/s/YNIwmR8K-H2eKbKoZSZZ-Q
+一文入门元学习（Meta-Learning）
 
-CIKM最佳应用论文：11亿节点的大型图，看闲鱼如何用图卷积过滤垃圾评论
+https://mp.weixin.qq.com/s/z7t2dSnjZqZ3w6q7PUtTVg
 
-https://mp.weixin.qq.com/s/6RSYTlNvw7TyOJsjHf1iYQ
+最新《元学习》教程，牛津大学Yee Whye Teh教授，165页ppt
 
-基于图上下文知识融入的预训练语言模型
+https://mp.weixin.qq.com/s/hMTm38gCccxt-Jnz28Xx1A
 
-https://mp.weixin.qq.com/s/0B1ROCg7SMn0I7-5HVeMIg
+元强化学习综述及前沿进展
 
-用图神经网络改善视频的多标签分类
+https://mp.weixin.qq.com/s/8koAVoPHczRSfiZkU7kiVQ
 
-https://mp.weixin.qq.com/s/M7nzr6n4tZAMR1CXo3Q0OQ
+元学习最新AAAI2021-Tutorial，附视频与240页ppt
 
-基于图神经网络的CTR预测中的特征交互建模
+https://mp.weixin.qq.com/s/KtO3OTZ-bZ6m0ZSI6jTyjw
 
-https://mp.weixin.qq.com/s/ee_Mq2vzJ2z253B7PZZc9w
+OpenAI提出Reptile：可扩展的元学习算法
 
-2019年，异质图神经网络领域有哪些值得读的顶会论文？
+https://mp.weixin.qq.com/s/T4GiL9vW7ALOzWloE_QQBA
 
-https://mp.weixin.qq.com/s/lwqYZurdie3lJ_-X9zgoyQ
+OpenAI开发可拓展元学习算法Reptile，能快速学习
 
-加深图卷积神经网络的可能性探索
+https://mp.weixin.qq.com/s/MWcoGsQJg1GBbSqzyPD9uQ
 
-https://github.com/microsoft/tf-gnn-samples
+基于梯度的元学习算法，可高效适应非平稳环境
 
-微软开源了一个用TF实现的GNN例程库
+https://zhuanlan.zhihu.com/p/35695477
 
-https://mp.weixin.qq.com/s/r4_5GwA8Olqh6M1p_6eYPg
+基于Meta Learning在动态竞争环境中实现策略自适应
 
-图神经网络！2020 AI研究趋势！是什么？有什么用？
+https://mp.weixin.qq.com/s/AhadWUjtgsFmb8uTylTvqg
 
-https://mp.weixin.qq.com/s/LbMblqRWeitShSUsnebDAg
+OpenAI提出新型元学习方法EPG，调整损失函数实现新任务上的快速训练
 
-基于GNN的图表示学习
+https://mp.weixin.qq.com/s/dmRdp2oMn0vGukclJSVZDg
 
-https://mp.weixin.qq.com/s/eg_H0D8m0LdVBJixsc-dNA
+Uber AI论文：利用反向传播训练可塑神经网络，生物启发的元学习范式
 
-张量图卷积网络(TensorGCN)文本分类
+https://mp.weixin.qq.com/s/Cc4EHc6ei-PtZWhewM10xw
 
-https://mp.weixin.qq.com/s/sXCwe8hXWxdNbpl2i7YBtg
+学习如何学习的算法：简述元学习研究方向现状
 
-完全基于注意力机制的图表征学习模型Graph-Bert
+https://mp.weixin.qq.com/s/4f6-gXovdrYk7240TrUwJg
 
-https://mp.weixin.qq.com/s/dXYjUHAXVZINXQkvM_ssZA
+谷歌大脑：基于元学习的无监督学习更新规则
 
-从图网络表示到图神经网络
+https://mp.weixin.qq.com/s/cAbMB-DB9vu2ua8t5J28ww
 
-https://mp.weixin.qq.com/s/DI7C8GKcVsMzAVpGxflUpg
+从零开始，了解元学习
 
-图机器学习，Graph-Powered Machine Learning
+https://mp.weixin.qq.com/s/Q36vpS1HF2IfeCsFLh656A
 
-https://mp.weixin.qq.com/s/1AO7ALoojMK9Qx3yMQcclQ
+基于元强化学习的神经科学新理论
 
-GNN实战：手把手教你使用tf_geometric构建图自编码器GAE
+https://mp.weixin.qq.com/s/XtzvHOk7CdXRBy02kUmgsg
 
-https://mp.weixin.qq.com/s/jPIo4p4QCn1UVZ1CtPjP-A
+近期爆火的Meta Learning，遗传算法与深度学习的火花，再不了解你就out了
 
-GNN如何进行池化以及挑战
+https://mp.weixin.qq.com/s/KvgYyuyICueNQPo_S27fEA
 
-https://mp.weixin.qq.com/s/i_v1GoR-VzVxmy2Wm97t4w
+BAIR展示新型模仿学习，学会像人那样执行任务
 
-中科院自动化所等首次用图卷积网络解决语义分割难题
+https://zhuanlan.zhihu.com/p/41223529
 
-https://mp.weixin.qq.com/s/inBGhCnzr-xZZqtIbrG3bA
+最前沿：Meta RL论文解读
 
-异质图神经网络:模型与应用
+https://zhuanlan.zhihu.com/p/40600485
 
-https://mp.weixin.qq.com/s/WBUYk__k-86vGqOA6N6iCw
+最前沿：Meta Learning前沿进展扫描
 
-图神经网络入门
+https://zhuanlan.zhihu.com/p/28639662
 
-https://mp.weixin.qq.com/s/A-4JZG9tF7fnSuBa4YH3iw
+百家争鸣的Meta Learning/Learning to learn
 
-图神经网络预训练的策略
+https://zhuanlan.zhihu.com/p/45845001
 
-https://mp.weixin.qq.com/s/1Kdrz6i83-hKEaY1O7quZg
+最前沿：用模仿学习来学习增强学习
 
-稀疏数据半监督学习的分解图表示
+https://zhuanlan.zhihu.com/p/46059552
 
-https://mp.weixin.qq.com/s/oc-o6W087jA-npxy89QMFw
+Meta Learning单排小教学
 
-图自编码器的起源和应用
+https://zhuanlan.zhihu.com/p/46131981
 
-https://mp.weixin.qq.com/s/a_svzOS1Z2a98gIzBBk1dw
+最前沿：Meta Learning在少样本文本翻译上的应用
 
-从文本分类来看图卷积神经网络
+https://zhuanlan.zhihu.com/p/46339823
 
-https://mp.weixin.qq.com/s/3FoBdd64CtklQu-3T97SIQ
+谈谈无监督Meta Learning的研究
 
-异构图Transformer
+https://zhuanlan.zhihu.com/p/46340382
 
-https://zhuanlan.zhihu.com/p/86181013
+ICLR19最新论文解读之Meta Domain Adaptation
 
-网络图模型综述
+https://mp.weixin.qq.com/s/RBMGI20AI92ZcWSlYczqAA
 
-https://zhuanlan.zhihu.com/p/114452245
+伯克利、OpenAI等提出基于模型的元策略优化强化学习
 
-图神经网络时代的深度聚类
+https://mp.weixin.qq.com/s/p0dcov84pZqsU7XP30bexQ
 
-https://mp.weixin.qq.com/s/6dIfZXH2EOOgroyRiDxeJA
+Meta-Learning元学习：学会快速学习
 
-深度聚类的可视化解释
+https://mp.weixin.qq.com/s/wl8j7dLu3OxPV7MNaO2-7Q
 
-https://zhuanlan.zhihu.com/p/113762102
+《基于梯度的元学习》199页伯克利博士论文带你回顾元学习最新发展脉络
 
-图卷积网络加速训练方法综述
+https://mp.weixin.qq.com/s/ftiGPBhAx5iqlW_Ltg1yhg
 
-https://mp.weixin.qq.com/s/9-1zJCAogvWMTHnJPQGvmA
+《元监督视觉学习》132页伯克利博士论文带你回顾元监督视觉应用最新发展脉络
 
-图神经网络在医学影像中的应用
+https://mp.weixin.qq.com/s/K7sLM-LMcF6-gQrV1ddrDw
 
-https://mp.weixin.qq.com/s/W7xDBQNlTkSGQ16Lf2C4kQ
+让智能体主动交互，DeepMind提出用元强化学习实现因果推理
 
-图神经网络(GNN)结构化数据分析
+https://mp.weixin.qq.com/s/8sBXlnXiZNsPRwFsgJVRQQ
 
-https://mp.weixin.qq.com/s/nCDn89eMWkom0AfQAWGjsA
+谷歌提出元奖励学习，两大基准测试刷新最优结果
 
-图表示学习Graph Embedding综述
+https://mp.weixin.qq.com/s/x7uk7jBNvnM7Tgk9lFKy3Q
 
-https://zhuanlan.zhihu.com/p/98483266
+元学习(Meta-Learning)综述及五篇顶会论文推荐
 
-Fi-GNN通过图神经网络建模特征交互作用来进行CTR预测
+https://mp.weixin.qq.com/s/GF_NLkSw64_6msmFep81fw
 
-https://mp.weixin.qq.com/s/RKtVkO9lITJ4QSNL3PgUbQ
+Google Brain ICLR Talk：元学习的前沿与挑战
 
-基于GNN，强于GNN：胶囊图神经网络的PyTorch实现
+https://zhuanlan.zhihu.com/p/70782949
 
-https://zhuanlan.zhihu.com/p/114798371
+最前沿：General Meta Learning
 
-“推荐系统”加上“图神经网络”
+https://zhuanlan.zhihu.com/p/72920138
 
-https://mp.weixin.qq.com/s/BXovM5bHshLxdmBg93EQrA
+Meta Learning入门：MAML和Reptile
 
-阿尔伯塔大学博士毕业论文：基于图结构的自然语言处理
+https://mp.weixin.qq.com/s/MsIAkJAcYHWkkMjzd7qXKA
 
-https://zhuanlan.zhihu.com/p/63207928
+元学习与强化学习的概率视角，47页ppt，DeepMind牛津Yee Whye Teh
 
-图卷积网络在VQA问题中的应用
+https://mp.weixin.qq.com/s/IdUhvWJYviKtPs9jCbtybA
 
-https://mp.weixin.qq.com/s/B84aHi6z0z2cGyaUdKqSUw
+元知识图谱推理
 
-从矩阵分解到GNN：社会化推荐的演化
+https://www.zhihu.com/question/291656490
 
-https://mp.weixin.qq.com/s/GHJQ_oLfC7S1JgPwhptfKw
+求问meta-learning和few-shot learning的关系是什么？
 
-异构图Transformer
+https://mp.weixin.qq.com/s/LZbprcnben6vPqsoC1DgDA
 
-https://mp.weixin.qq.com/s/bPDqQE58zmJIsol96bP74g
+DeepMind提出元梯度强化学习算法，显著提高大规模深度强化学习应用的性能
 
-图网络GNN(特别篇)：一文遍览图网络中16种典型的图卷积和9种图池化Graph Pooling
+https://mp.weixin.qq.com/s/AH35EGTH1YDSx4WzUwY15g
 
-https://mp.weixin.qq.com/s/QF9-Pz2X4qToObGWwViFBQ
+三四行代码打造元学习核心，PyTorch元学习库L2L现已开源
 
-EGES：阿里在图嵌入领域中的探索
+https://github.com/tristandeleu/pytorch-meta
 
-https://mp.weixin.qq.com/s/WnF-fqQyr2VNqr75Jzoqsw
+PyTorch上方便好用的元学习工具包
 
-Diff Pool：网络图的层次化表达
+https://mp.weixin.qq.com/s/Fte0SQ7J57AVGyTiIwWKAw
 
-https://mp.weixin.qq.com/s/8kCKqM3yuohc4xOoFd8hGg
+元学习与深度强化学习的机器人应用，84页ppt
 
-Heterogeneous Graph Neural Network
+https://mp.weixin.qq.com/s/xu5ieaPP2de0GML7b-1BsA
 
-https://mp.weixin.qq.com/s/HUjq4TopxWLx3QTh5ZxfIQ
+谈谈元学习的技术实现框架
 
-最新《图卷积神经网络》中文综述论文，26页pdf
+https://mp.weixin.qq.com/s/spRlzjFTh4KeyFfd8pmZgw
 
-https://mp.weixin.qq.com/s/RuCxY92qlhWnbZVYDXY_BQ
+新框架ES-MAML：基于进化策略、简易的元学习方法
 
-Mila唐建博士最新《图表示学习:算法与应用》2020研究进展，附59页ppt
+https://mp.weixin.qq.com/s/uAdFWT5rP40IMsLfFyr7XQ
 
-https://mp.weixin.qq.com/s/F9zt7eyHxTX7Gp0zpvnfcg
+一种深度网络快速适应的模型无关元学习方法(元学习经典论文)
 
-一文直击Graph Embedding图表示学习的原理及应用
+https://mp.weixin.qq.com/s/joUb4cBxzUVyichYfN9l8g
 
-https://mp.weixin.qq.com/s/j-vEuwUk1HVzHObeIvuh5A
+元强化学习迎来一盆冷水：不比元Q学习好多少
 
-一文梳理图嵌入 (Graph Embedding)
+https://mp.weixin.qq.com/s/MPNQPNfFjUqCKUH7OdTDzA
 
-https://mp.weixin.qq.com/s/qgZwi3ieMqPrg3t5lyjaZw
+元迁移学习的小样本学习，Meta-transfer Learning for Few-shot Learning，33页ppt
 
-元图(Meta-Graph)：元学习小样本连接预测
+https://mp.weixin.qq.com/s/eUQQEB_0ts0K9h1mw7GQcA
 
-https://mp.weixin.qq.com/s/4J0wL4vSugmx1Zow8zdT2Q
+元人脸识别，Learning Meta Face Recognition
 
-DGL深度图神经网络实战教程
+https://mp.weixin.qq.com/s/wPKSUpQcB-WrpgsU1Q4iZA
 
-https://mp.weixin.qq.com/s/v9aOoK2sHP0a9hZP0jWW0Q
+使用MAML元学习的少样本图分类
 
-图神经网络的新基准
+https://mp.weixin.qq.com/s/CBAdmV4sItmAjxPIA8Fa2w
 
-https://zhuanlan.zhihu.com/p/133739758
+元学习: 深度阐述元学习的理论模型
 
-全面理解PinSage（工业落地：图神经网络+推荐系统）
+https://zhuanlan.zhihu.com/p/113701629
 
-https://mp.weixin.qq.com/s/VctNZsALrbDQDW3_zhGJsw
+深度阐述元学习的理论模型
 
-在NLP中应用GCN的几种构图方法整理
+https://mp.weixin.qq.com/s/L8eqDp62rMR6Lyco0uGQUQ
 
-https://mp.weixin.qq.com/s/TnS4-seRxAs45A6SDSoACg
+南加州大学等开源元学习研究库learn2learn
 
-图神经网络的预训练策略
+https://mp.weixin.qq.com/s/BZEqg8pBJ8mcJZhfVAVn8g
 
-https://mp.weixin.qq.com/s/Pgz8cnDpX2mgexASnRzfhA
+最新《元学习神经架构、初始权值、超参数和算法组件》报告，附视频与PPT
 
-浅谈图神经网络的局限性
+https://mp.weixin.qq.com/s/dK2qwYcAZ8Gdb7U2tKIcAA
 
-https://mp.weixin.qq.com/s/hQ-Fo_aizkcTxvzW0FSIEw
+达摩院基于元学习的对话系统
 
-VGAE：利用变分自编码器完成图重构
+https://mp.weixin.qq.com/s/46nvCl5o4QYvRemzOrnaoQ
 
-https://zhuanlan.zhihu.com/p/137223381
-
-推荐系统的图方法
-
-https://mp.weixin.qq.com/s/hFtFjR4EIVN_9g93YjtuoQ
-
-GCMC：GNN在推荐系统中的应用
-
-https://mp.weixin.qq.com/s/u8XAbOautjZTA7ZhdSBaDA
-
-经典重温：图表示学习经典算法node2vec
-
-https://mp.weixin.qq.com/s/soH6jX7_fjq0iBBH-5bMsA
-
-Node2Vec论文+代码笔记
-
-https://mp.weixin.qq.com/s/VQON_WM_wLjGgbY2_UqzSQ
-
-Node2Vec: 可扩展的网络特征学习
-
-https://mp.weixin.qq.com/s/zxFgW6ofimYQ9wlChTK8cw
-
-Recommender System with GNN
-
-https://mp.weixin.qq.com/s/_vbcLre5HIrOGbAjTzLFjA
-
-动态网络表征学习在推荐领域的创新与实践
-
-https://mp.weixin.qq.com/s/17ozbpr2IIoq36VpBl3Crw
-
-基于知识图谱和图卷积神经网络的应用和开发
-
-https://mp.weixin.qq.com/s/mbr3u9SiYVPysBT9xuX0vg
-
-Hyperbolic Graph Convolutional Neural Networks
-
-https://mp.weixin.qq.com/s/nGPUcDHTrG6KwAqDCkfA1w
-
-基于超图网络模型的图网络进化算法
-
-https://mp.weixin.qq.com/s/XoVUJln3oyhk2jMOtWwfog
-
-基于图神经网络的协同过滤算法
-
-https://zhuanlan.zhihu.com/p/86216369
-
-从3/4层拓展到56层，如何训练超级深层的图卷积神经网络
-
-https://mp.weixin.qq.com/s/ceC1_39cmpqYOoHsu-4sCQ
-
-HEC-Montreal唐建博士：图神经网络推理
-
-https://mp.weixin.qq.com/s/aIU8mP5nlnqR4Qt-4RfMgQ
-
-孙付伟：Graph Embedding在知乎的应用实践
-
-https://zhuanlan.zhihu.com/p/111945052
-
-TextGCN
-
-https://blog.csdn.net/weixin_43269174/article/details/98492487
-
-从图嵌入算法到图神经网络
-
-https://mp.weixin.qq.com/s/LxdZ5xRuqQjNbG9FhhD0Aw
-
-图神经网络越深，表现就一定越好吗？
-
-https://mp.weixin.qq.com/s/d_gf12bzVySHkXFl5rqVTQ
-
-图神经网络前沿综述：动态图网络
-
-https://mp.weixin.qq.com/s/ea3sOkabOmaymlkeQJlZ1A
-
-图算法工程师 面试基础
-
-https://mp.weixin.qq.com/s/3xNRyEsw7QPCzvpQU6chDw
-
-图神经网络的重要分支：时间图网络
-
-https://mp.weixin.qq.com/s/GibBqURtF_Oak8NOKDjEPg
-
-时序图神经网络
-
-https://mp.weixin.qq.com/s/k3HTFY3QLdiY_zj81NePAg
-
-腾讯AI Lab联合清华、港中文，万字解读图深度学习历史、最新进展与应用
-
-https://mp.weixin.qq.com/s/TSsKeADBuamrTPrRKUBpBQ
-
-Graph Normalization (GN)：为图神经网络学习一个有效的图归一化
-
-https://mp.weixin.qq.com/s/oBgPS0s_Fe2w4bmT__664A
-
-动态图上的深度学习-动态时间图网络建模技术综述
-
-https://mp.weixin.qq.com/s/N3A8N4DZC-x8YavEXdpfKA
-
-使用图进行特征提取：最有用的图特征机器学习模型介绍
-
-https://mp.weixin.qq.com/s/3XKrFGkhxxXdg-XGNkvXdg
-
-LINE：不得不看的大规模信息网络嵌入
-
-https://mp.weixin.qq.com/s/BPbUiIl9yU6DJbjKQmrzgw
-
-结合图的结构信息和节点特征的图对比学习
-
-https://mp.weixin.qq.com/s/FwIbHiyZa4EcnMunWoAR1Q
-
-北大发布最新《图神经网络推荐系统》2020综述论文，27页pdf
-
-https://blog.csdn.net/leviopku/article/details/106949616
-
-GNN中的Graph Pooling
-
-https://mp.weixin.qq.com/s/5vgN2Z-FVMQ9ofPAy1Vf-g
-
-图表示学习中的Encoder-Decoder框架
-
-https://mp.weixin.qq.com/s/2HwszqbC_I2zdTCiQirxPQ
-
-图注意力网络入门：从数学理论到到NumPy实现
+进入Meta Learning的世界(一)

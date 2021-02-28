@@ -78,3 +78,65 @@ MiniGUI惨淡之后，飞漫公司转战移动APP领域，但从网站上的版�
 3.魅族。魅族在Wince时代，曾有一款深度定制的M8，当初曾寄望于成为国产的iPhone。事实上，如果没有Android的话，这个目标差不多就实现了。并不是说达到iPhone的水平，而是说除了iPhone之外，别人都没有我的好。
 
 可惜Android的出现，使得一般的手机厂商也能造出现代的智能手机，于是魅族的这番努力，其实并没有得到多少的回报。总算魅族并不是手机解决方案商，而是制造商，没办法标新立异，却也不至于被别人甩下来。因此，魅族现在的日子，也还说的过去。
+
+# 并行 & 框架+
+
+https://mp.weixin.qq.com/s/_85oWK2plv2QOX5Qfg_-ZA
+
+大规模机器学习优化，195页ppt与视频
+
+https://mp.weixin.qq.com/s/soruo90Dbtzi6d1kA63Akg
+
+阿里提出智能算力引擎DCAF，节省20%GPU算力
+
+https://zhuanlan.zhihu.com/p/79030485
+
+AllReduce算法的前世今生
+
+https://mp.weixin.qq.com/s/oDak7peTT5ynNYrH7LSWTg
+
+分布式层次GPU参数服务器架构
+
+https://mp.weixin.qq.com/s/4XMVYXnzpYZ4DrIabuTUig
+
+Ring All-reduce: 分布式深度学习的巧妙同步
+
+https://zhuanlan.zhihu.com/p/28226956
+
+浮点峰值那些事儿
+
+https://zhuanlan.zhihu.com/p/285994980
+
+针对深度学习的GPU共享
+
+https://mp.weixin.qq.com/s/Np4w7RC2JFlB7ZGIduu71w
+
+爱奇艺机器学习平台的建设实践
+
+https://mp.weixin.qq.com/s/9k6PDusoDHjmz58HAZxZcw
+
+GPipe: 小批量流水线带来的大模型训练
+
+https://mp.weixin.qq.com/s/DwjvEn04lGzKU8mDu-5q4g
+
+大幅提升训练性能，字节跳动与清华提出新型分布式DNN训练架构
+
+https://mp.weixin.qq.com/s/dJa5zOXgJJQOM5uWog3JZA
+
+Local Parallesim：一种新并行训练方法
+
+https://zhuanlan.zhihu.com/p/335116835
+
+推荐系统Serving架构分析
+
+https://mp.weixin.qq.com/s/DdsJ-ZB_cX9UhbQNK6dCag
+
+分布式深度学习训练网络综述
+
+https://mp.weixin.qq.com/s/qpwBGlTtTLEAhYAUpPyXTQ
+
+CMU：分布式机器学习原理与策略 AAAI2021教程，附221页ppt
+
+https://mp.weixin.qq.com/s/nK-9ck5S6noIETOb8b2dJw
+
+vivo AI计算平台弹性分布式训练的探索和实践

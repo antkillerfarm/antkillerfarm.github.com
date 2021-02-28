@@ -39,6 +39,10 @@ https://zhuanlan.zhihu.com/p/262235147
 
 图网络中的社群以及相关社群发现算法
 
+https://mp.weixin.qq.com/s/TLX2bZHhJ7LqI9k1w1JF7w
+
+实现、动态展示多种社区发现算法，这个Python库（communities）助你发现网络图的社区结构
+
 ## Social Listening
 
 企业们通过捕捉网络上与品牌/产品/营销事件相关的关键词，去监测消费者都对品牌/产品/营销事件说了什么的行为，被称作社会化聆听（Social Listening）。

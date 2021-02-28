@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  我的PC Game（二）, 入行以来涉及的技术简史（二）
+title:  我的PC Game（二）
 category: my story 
 ---
 
@@ -8,6 +8,16 @@ category: my story
 {:toc}
 
 # 我的PC Game
+
+## 2017.1
+
+http://mp.weixin.qq.com/s/6DttXqlXVtLYWpRzN4WS9A
+
+哈哈哈哈 我的妈我笑的眼泪都出来了
+
+----
+
+最近的炉石回档事件，对于我却是个利好。由于官方慷慨的补偿加上前期的积蓄，我短期内竟然有了两张橙卡：艾雅*黑掌和凯恩*雪蹄。后者部分原因在于我抽到了第一张重复的橙卡：白眼大侠。
 
 ## 2017.2
 
@@ -43,6 +53,82 @@ CA出了Total War系列的新作《Total War: THREE KINGDOMS》的预告片，�
 
 现在业界似乎流行炒冷饭，诸多RTS游戏都推出了高清重制版，例如星际，魔兽3，帝国2，C&C。
 
+## 2021.2
+
+这个春节，玩了3天的《钢铁雄心3》。
+
+钢3有三个资料片：
+
+- 永远忠诚 Semper Fi
+- 为了祖国 For the Motherland
+- 荣光时刻 Their Finest Hour
+
+我玩的是TFH。应该说这个游戏还是比较硬核的，光把入门教程看完，基本就要1天半左右。
+
+https://tieba.baidu.com/p/1859819580
+
+钢铁雄心3非官方新手教程
+
+作为新手，我选择了1936版的校长，难度选择了最简单。然后一把辛酸血泪史。
+
+- 打不了仗的问题。
+
+降中立度，最有效的办法是触发全面备战协议，效果300天，每天-0.02，共60点。
+
+触发条件：可用IC低于30。简单难度下，校长IC太高，需要用不满降IC。
+
+间谍可以升宣战对象的威胁度，但效果不太快。
+
+本来可以有卢沟桥事变，使校长1937年参战，然而，简单难度下由于我方太强，日本根本不敢宣战。。。
+
+直到我方灭亡晋系，又宣了教员，日方才触发这个事件。所以平津前线留下大量部队，是很有必要的。
+
+- 指挥部/有些师不能打仗的问题
+
+需要有战术宽度不为0的团。比如步兵/坦克。炮兵/装甲车/指挥部都不行。
+
+民兵太弱，其他兵种又造不出来，三步一炮最适合校长。
+
+- 空战用自己的飞机空中截击就好，无需太怕。
+
+- 内战问题。
+
+开战前准备45个师。16个内战，25个抗日，4个守首都/港口（青岛、上海）。这里用预备役即可，开战前补充半个月就能达到正规部队的水平。
+
+由于日本会突然参战，所以国内一个一个打才行。
+
+教员最难，需要16个师，晋系12个师就够了。
+
+桂系最初和晋系差不多，但有胡汉民事件，实力大减。且南宁会暴露在前线，8个师足矣。所以收拾完教员，抗日前线就有33个师了。
+
+广西、云南和领国间的边界，有大堆基建小于2的地区，所以无需防守。
+
+- 抗日陆战。
+
+平津前线日军也就10个师左右，伪满以民兵为主，战斗力更差。
+
+转折点在光复奉天前后，鬼子第二波还会有12个师（登陆8个师+朝鲜4个师）左右。所以南线始终要保持20个师左右，其他地区派少量部队扫荡即可，都是些无聊的追击战而已。
+
+这里我犯了个错，南线只有15个师，且好多部队经过作战，组织度不满，差点被反推。
+
+- 目前已经把鬼子推下海，但海战还没头续。
+
+海战单位建造周期较长，需要提前布局。主要是航母和运输船。
+
+- 利用存档开图。
+
+钢3存档加载的时候，可以换玩家扮演的角色。因此可以作为开图看信息之用。
+
+当前形势，校长>日本，但和苏德差距明显。尤其德国普遍装甲部队，不知道三步一炮扛不扛的住。
+
+----
+
+https://www.zhihu.com/question/321750331
+
+如何评价P社新作《Imperator:Rome》？
+
+![](/images/img4/DLC.jpg)
+
 ## NES
 
 本来NES是不能归类于PC Game的，但毕竟也是本人的童年记忆，就写一下了。
@@ -68,6 +154,12 @@ https://zhuanlan.zhihu.com/p/149266594
 这算是当年的巨型游戏了，由于耗时较长，卡带上甚至准备了纽扣电池。但由于穷，没钱买电池。。。囧
 
 尝试过和同学一次性玩了12个小时，但是也就打了几仗，占了数城而已。孔明一直没等到。。。
+
+----
+
+https://www.zhihu.com/question/26380205
+
+FC游戏《中国象棋》中，困难难度是真的在计算棋谱吗？
 
 ## 2020.12
 
@@ -99,126 +191,120 @@ https://github.com/skywind3000/preserve-cd
 
 绝版游戏保护工程
 
-# 入行以来涉及的技术简史（续）
+# 数学杂谈+
 
-### 3）QT
+https://zhuanlan.zhihu.com/p/78352532
 
-同上。
+麻省理工牛人解说数学体系
 
-### 4）.NET
+https://mp.weixin.qq.com/s/GHIFsFleS7aGMP0ye_SCCQ
 
-.NET使用了一套与MFC不同的GUI框架。从接口来看，其实更像是MS的死敌Borland的VCL的那套东西。现在使用这个编写PC工具似乎已经非常普遍了，而且随着应用的广泛，目前自带.NET Framework的PC也越来越多。很多时候，我们只用发布程序就好了。同事W算是这方面的高手，基本上这边的PC工具有八成都是他主导制作的。将公司在这方面的水准提升了一个台阶。
+我居然从一只猫身上学到了斐波那契数列
 
-### 5）GTK
+https://mp.weixin.qq.com/s/y6H1YV7FUkBlqznoNbTLng
 
-这是去年下半年开始自学的GUI框架。主要原因是目前已有部分工作转移到Linux下，总要有个称手的GUI框架才好。其次，目前的工具代码，大多是copy自产品代码的某一部分。产品使用gcc作为编译器，而gcc的语法和VC也不尽相同。产品代码中使用的比较多的局部动态数组，VC到目前仍不支持。
+太震撼了！2600年数学文明画在了一张图上
 
-## 3.移动平台
+https://mp.weixin.qq.com/s/JZKSzd97Og9YHPaHWNTWKQ
 
-工作以来，一直在嵌入式领域打拼，也经历了不少的移动平台，罗列如下：
+史上最能忽悠的数学家，哲学出身竟引发数学千年危机，最终却惨遭处死（芝诺）
 
-### 1）Wince/Windows Mobile
+https://mp.weixin.qq.com/s/ZRMmByhNkjcfbaOcwxQ5dg
 
-这是接触的第一个移动平台，在学校的时候，我甚至连SD卡都没见过。应该说Windows Mobile是iOs和Android崛起之前，最高端大气的移动平台。由于API与Win32 API高度兼容，上手难度也不高，着实风光了一把。同期的竞争对手Symbian由于对触摸屏的支持不好，加之硬件规格较低，对于导航地图之类的当时的“超级应用”来说，还是有些力不从心的。
+日本数学界惊现神操作！偷偷研究飞刀方程致使厕所爆炸，连美国总统特朗普都忍不住发文怒怼
 
-### 2）Nucleares/Brew/MTK/Symbian S60/Symbian UIQ/Moblin
+https://blog.csdn.net/ChangHengyi/article/details/80577318
 
-这些平台没有做过大的项目，但是看过其中的应用代码。应该说这些都是iOS和Android出现之前，功能手机和嵌入式设备的主流系统。
+一片文章带你理解再生核希尔伯特空间（RKHS）以及各种空间
 
-### 3）Android
+https://mp.weixin.qq.com/s/K9_1PE_C45DnMxPc1fK7hw
 
-没有在该平台上开发过商业产品。但是作为从其诞生之初就一直在关注的人士。无论对它的应用层，还是对它的中间层和驱动层都有一定的了解。基本上从见到Android的第一眼开始，我就预见到Nokia和黑莓的衰败。即便黑莓在稍后的2009～2010年达到它的顶峰，也不曾让我改变观点。
+傅里叶思想漫谈：从希尔伯特空间到不确定性原理
 
-### 4）RTKE
+https://mp.weixin.qq.com/s/AQgFded7GWp1yPE_voT0QQ
 
-这是飞利浦开发的一个实时内核，我在S公司工作期间主要用于手机基带芯片的控制。当时公司投入很大精力，想在一颗处理器上集成基带处理和应用处理的功能，其软件核心是在RTKE的基础上，搭建一个Linux虚拟机以运行Android应用。这个项目的初衷是推出千元以下的手机。但是后来随着硬件性能的提升和价格的下降，千元以下的手机的确是做出来了，但实际上所用的处理器的个数不仅没有减少，反而越来越多。PS:RTKE的用途不仅于此，有同事说他之前在其他公司也用过RTKE，然后细谈才知道飞利浦的剃须刀上用的也是RTKE。
+看完这45组酷炫数学动图，原来数学这么有意思！
 
-## 4.其他
+https://mp.weixin.qq.com/s/23zElw2ktT3YbNZ9_r5lgQ
 
-研究生时代研究过CORBA技术，主要用于通信运营商的网管系统的应用。工作之后，很久都没有听说过这个名词。前段时间，在招聘网上，搜了一下，发现CORBA技术本身并未灭绝，但是用途居然还是局限在网管系统的应用上。而且由于体系的庞大低效，原先使用CORBA构筑的GNOME桌面等PC程序，也将IPC转为更高效（但不通用，也不支持联网）的DBUS技术了。
+“一个千古绝伦的大智者”莱布尼茨
 
-## 2018.8
+https://mp.weixin.qq.com/s/SlbWkTrO3UlWd15jrKYvdg
 
-https://coolshell.cn/articles/3008.html
+史上最强律师，用代数暴力破解军事密码，无情吊打荷兰数学家，被誉为“代数学之父”（弗朗索瓦·韦达）
 
-Windows编程革命简史
+https://mp.weixin.qq.com/s/_HnWeNxH6p2VAMC8tG2gFg
 
-这篇文章谈到的这些东西，我基本都经历过。ATL算是我曾经花费很长时间去学，但却最终没学会的东西。好在从事后的角度看，这东西也没多少公司用。可能安全领域用的比较多吧，比如网银插件。
+斯坦福再出变态神人！竟用一个数学模型，暴力解开“掰手指”的奥秘！看完我跪了......
 
-当然，这些年也遇到了一些绕了一圈最终逃不过的技术。比如GPU里面的shader技术，当初做3D GIS用到过，现在做AI计算又遇到了。
+https://mp.weixin.qq.com/s/Rw3O5MDbEIfgmWCVgFe95w
 
-## 2018.9
+五次方程的微分方程解法
 
-尽管我从未涉足游戏开发行业，但不可否认的是，游戏开发是我许多年前报考CS专业，并从事相关工作的初心。
+https://mp.weixin.qq.com/s/eYzhlrV822X8mHsOGgv1Qw
 
-2015年的时候，由于当时工作比较轻松，自己也进入了技术进步的瓶颈期。于是以玩票心态，操练了一下游戏开发，其实就是cocos2d-x和box2d，还为后者提供了中文手册，并被原作者接受为官方版本。
+如何计算一只鸡的表面积？看完中外神人的奇葩解法，我发誓下辈子不做理科生......
 
-之后由于兴趣转移，加上自己也意识到错过了入行的最佳时间，遂搁置之。不料，3年之后，cocos2d-x已经败下阵来，江湖的主角换成了Unity和UE。。。
+https://mp.weixin.qq.com/s/43XCOdNqeKxMmpfkX3JTGw
 
-此间，还短暂接触了crossapp——一个在cocos2d-x上改造而成的跨平台UI库。不料，cocos2d-x的作者对这种用法很不赞成：
+一个退休程序员，用高中几何方法，让百年数学难题逼近理论极限（万有覆盖问题）
 
->因为app开发是：如果没事的话我就不刷新屏幕了。游戏引擎是：尽量每秒60帧刷新速度除非你叫我停下来。换句话说，app是事件驱动刷新的，游戏是自循环驱动刷新的。带来的结果就是耗电量、发热量等完全不同。
+https://mp.weixin.qq.com/s/a1TEh1c1VZ345rmj8UiPgA
 
-## 2019.1
+“科比球”背后的数学
 
-我对于大数据平台一直很有兴趣，但由于工作内容更偏向于算法和DL，因此平台类的技术栈都只是略知一二的水平。
+https://mp.weixin.qq.com/s/6XsH71CKaVikqnL6kVPqtg
 
-不得不说，平台类的技术栈更新换代十分迅速。2016年，还是Hadoop/Hbase的天下，Spark开始发力，OpenStack则已经走下坡路。到了2018年，主角换成了Docker、Kubernetes、Flink。
+各种语言的Mandelbrot set示例代码
 
-回顾2年前第一个舆情分析项目，自己对于NLP、DL一无所知，对于ML也只有肤浅的认识。仅仅凭借同事的一句提示——Solr，开始闷头开荒，一路下来竟也让我闯出了一番新天地。
+https://mp.weixin.qq.com/s/gnPiCmsua0ByO5UwWqxuag
 
-那个时代的我对于分词用的HMM，也曾顶礼膜拜。如今想来，恍如隔世。
+史上最牛逼的文科生：学历史成为物理学家，却获得了数学界的最高荣誉，出了350部书，外号火星人！（Edward Witten）
 
-# 并行 & 框架+
+https://mp.weixin.qq.com/s/5p5ai_HKZMvbQ9Inu6ASbA
 
-https://mp.weixin.qq.com/s/_85oWK2plv2QOX5Qfg_-ZA
+史上最硬核老师：17年间，拿着菜刀把400个混混送进了哈佛耶鲁麻省！（Jaime Escalante）
 
-大规模机器学习优化，195页ppt与视频
+https://mp.weixin.qq.com/s/vLqJIaTXOkz0kYJzKguQaQ
 
-https://mp.weixin.qq.com/s/soruo90Dbtzi6d1kA63Akg
+99%的数学家都算不出这道题（亲和数）
 
-阿里提出智能算力引擎DCAF，节省20%GPU算力
+https://mp.weixin.qq.com/s/ULzU9gwU-X6oSMM4mv5xhA
 
-https://zhuanlan.zhihu.com/p/79030485
+两次入狱，数次移民，从罗马尼亚地下党到卡耐基梅隆教授—整数规划奠基者Egon Balas的彪悍人生
 
-AllReduce算法的前世今生
+https://mp.weixin.qq.com/s/NX0j_CgBqalBMVVdRkG59g
 
-https://mp.weixin.qq.com/s/oDak7peTT5ynNYrH7LSWTg
+数学界再出变态神人！竟用一个比基尼方程，暴力吊打美国数学家！（沙发问题）
 
-分布式层次GPU参数服务器架构
+https://mp.weixin.qq.com/s/H1fvyQYRFcOe0pqclD-3yg
 
-https://mp.weixin.qq.com/s/4XMVYXnzpYZ4DrIabuTUig
+“最大数之父”葛立恒逝世，他是20世纪数学巨匠，也是一个杂技演员
 
-Ring All-reduce: 分布式深度学习的巧妙同步
+https://mp.weixin.qq.com/s/rXbP1dvFmwl6QhVCDMr2Bw
 
-https://zhuanlan.zhihu.com/p/28226956
+神童、数学家、抑郁症患者，控制论之父诺伯特·维纳的一生
 
-浮点峰值那些事儿
+https://mp.weixin.qq.com/s/htCZU2de_7CCcL1q4v-NGg
 
-https://zhuanlan.zhihu.com/p/285994980
+比肩爱因斯坦的天才：如果再给他一次机会，他可能不会再熬夜了......（麦克斯韦）
 
-针对深度学习的GPU共享
+https://mp.weixin.qq.com/s/BCszlYgbgvKUSkpJCSRQxg
 
-https://mp.weixin.qq.com/s/Np4w7RC2JFlB7ZGIduu71w
+电影院今天复工，应该如何排座位？这是个数学家研究了几百年的问题
 
-爱奇艺机器学习平台的建设实践
+https://mp.weixin.qq.com/s/R0nuIqlIefkEppr07Y8gnQ
 
-https://mp.weixin.qq.com/s/9k6PDusoDHjmz58HAZxZcw
+用一中学数学公式，中了14次彩票头奖，多国彩票规则因他改变
 
-GPipe: 小批量流水线带来的大模型训练
+https://mp.weixin.qq.com/s/FCysnxxWBFiGS027qCxHTw
 
-https://mp.weixin.qq.com/s/DwjvEn04lGzKU8mDu-5q4g
+世界上最伟大的十大公式
 
-大幅提升训练性能，字节跳动与清华提出新型分布式DNN训练架构
+https://www.zhihu.com/question/20866833
 
-https://mp.weixin.qq.com/s/dJa5zOXgJJQOM5uWog3JZA
+为什么正多面体只有5种？
 
-Local Parallesim：一种新并行训练方法
+https://mp.weixin.qq.com/s/qfbfzToypKTxh7CxJ0ifHw
 
-https://zhuanlan.zhihu.com/p/335116835
-
-推荐系统Serving架构分析
-
-https://mp.weixin.qq.com/s/DdsJ-ZB_cX9UhbQNK6dCag
-
-分布式深度学习训练网络综述
+正十二面体的一个最基本谜题被破解了

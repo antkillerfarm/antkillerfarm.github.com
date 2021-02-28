@@ -9,6 +9,60 @@ category: Nature
 
 # 天文杂谈（续）
 
+https://mp.weixin.qq.com/s/5NyYCE1vt99i2O_r-ThAGA
+
+下一次去哪？金星、木卫一，还是海卫一？
+
+https://mp.weixin.qq.com/s/6acgwIaDYC3VjMmdVSYYKQ
+
+未来的望远镜，能带我们看到宇宙大爆炸的边缘吗？（卡塞格林望远镜）
+
+![](/images/img3/eclipse.png)
+
+https://mp.weixin.qq.com/s/UDHAT3vLMS_yo4w0wbcpJQ
+
+十问北斗
+
+https://zhuanlan.zhihu.com/p/29213504
+
+从沙漏和星盘到六分仪和航海钟——恼人的航海定位
+
+https://mp.weixin.qq.com/s/SQPVTNYBU8JIRPYFqsXgtA
+
+神秘力量？上帝使者？彗星的“人设”早就崩塌了
+
+https://mp.weixin.qq.com/s/pAUiirbHyfrEgWUE21x93Q
+
+另一个费曼（Richard Feynman的妹妹Joan Feynman）
+
+https://mp.weixin.qq.com/s/iznVJzjkYA2I5Y-P0NKrdA
+
+美丽天文图片下，有哪些不为人知的“套路”
+
+https://mp.weixin.qq.com/s/hZBYHvYktdJeOrAHTCKTTA
+
+如何肉眼识别夜空中的人造卫星？
+
+https://mp.weixin.qq.com/s/lNh3jxjvRbpZ3zZYSZuOVg
+
+曾为地球“挺身而出”的磁场
+
+https://mp.weixin.qq.com/s/xo9aRt5rAX7bWeK4jwmkXA
+
+月球能承载多少人类生存？
+
+https://mp.weixin.qq.com/s/1L10R2c7wCTYFYcxPKiRtA
+
+彗星怎么拖了个长长的尾巴？
+
+https://mp.weixin.qq.com/s/yCmwX5srpmhYrbAkFbC-gQ
+
+20年，241人，5400000000000米（国际空间站）
+
+https://mp.weixin.qq.com/s/Qld7bVs9ASJ23vAhE0h7_w
+
+日月星辰如何指引着中国人前行？（中国古代天文学）
+
 https://cooltowel.github.io/2018/04/16/%E5%9B%BD%E9%99%85%E5%A4%A9%E7%90%83%E5%8F%82%E8%80%83%E7%B3%BB%E7%BB%9F%E2%80%94%E2%80%94ICRS%20%E7%AE%80%E4%BB%8B/
 
 国际天球参考系统——ICRS简介
@@ -52,6 +106,14 @@ https://mp.weixin.qq.com/s/5JLSuv54Xyt_Fcg_Ps1Rsg
 https://mp.weixin.qq.com/s/eO71ulxgc-Fdx8KtMf7CXg
 
 40多年前美国赠送给我国1克月岩样品，背后有怎样的故事？
+
+https://mp.weixin.qq.com/s/vxTJf4pwpB3a2lqtx4fQ6g
+
+万家灯火，有你守护！我是如何拍到这次陆基中段反导试验靶弹发射的？
+
+https://mp.weixin.qq.com/s/wDhmqd2u56xJb3wcQHTW_g
+
+260年前，一个不同寻常的新年（日月同升，五星联珠）
 
 # 两弹一星
 
@@ -181,78 +243,14 @@ https://www.zhihu.com/question/404380682
 
 ----
 
-![](/images/img3/top10.png)
+国际上维生素C的制造生产长期被瑞士罗氏，日本武田制药和德国巴斯夫化学等外企垄断。加上传统的莱式法(1930年代发明，又称一部发酵法)对原材料要求高，工序复杂，生产成本高昂，国内产量不足，导致当时中国花费了大量外汇在进口维生素C上。
 
-![](/images/img4/manufact.jpg)
+直到80年代，中科院和北京制药厂联合发明了二步发酵法。这种方式不仅对原料和生产工艺要求较低，而且生产效率也大幅提升。国内的几大药厂以新技术大量生产，直接把维生素C拉到了白菜价...
 
-https://mp.weixin.qq.com/s/sRVb8qGtbsuqCvHSrlL9mQ
+----
 
-卡住中国脖子的35项技术
+最初打算建设港珠澳跨海大桥的时候，因为自己没有尖端的技术，所以中国人是想找荷兰人帮忙的。但是，荷兰的公司仗着自己的技术“一家独大”，态度显得十分傲慢。他们直接拒绝了中国工程师提出的技术转让的请求，在多次交涉之后以“勉为其难”的姿态提出愿意提供“技术咨询”，可这笔咨询费居然比一般的技术转让费都要贵：15亿元人民币！
 
-https://mp.weixin.qq.com/s/MCAR8M2DoV30-McdsjTxDw
+在这样百般刁难的情况下，中国的技术人员还是几次三番前去荷兰寻求谈判的机会，但对方都高傲地回绝了：就这个价格，爱买不买！
 
-徒步横穿南极大陆第一人
-
->秦大河，1947年生，地理学家，中国科学院院士，第三世界科学院院士。曾任中国气象局局长、中国科学技术协会副主席等
-
-https://mp.weixin.qq.com/s/3aLHfKF5grL6hunO7r_TAQ
-
-中国第一个发《Nature》的竟然是清朝人！被皇帝夸天下第一，他却觉得羞耻...（徐寿、华蘅芳、徐建寅）
-
-https://mp.weixin.qq.com/s/OO2OPmxjZJTCNiy_S2p-Aw
-
-中国第一个登上Nature的女科学家，居然出生在清朝？只活了29岁（王贞仪）
-
-https://mp.weixin.qq.com/s/Z2xRTxgRRHWWY2VICT4lQg
-
-中国有哪些领跑全球的技术
-
-https://mp.weixin.qq.com/s/NQ4OiPgguAVkRPBn1uEYjg
-
-他奉密令去美国长期潜伏，周总理亲自送行长谈（吴大琨）
-
-https://mp.weixin.qq.com/s/z0FdqtVOmhv1mbVRJ42UFA
-
-“奋斗者”号再探万米深海，制造一个深潜器到底有多难？
-
-https://mp.weixin.qq.com/s/toX25yTvQWnwid26oOXROA
-
-深潜海底10909
-
-https://zhuanlan.zhihu.com/p/19803854
-
-海洋石油981事件始末
-
-https://www.zhihu.com/answer/378935681
-
-谁能告诉我一些关于肯尼亚蒙内铁路的故事？
-
-https://mp.weixin.qq.com/s/wcDiuHjtGgWjWdLRtJTpTg
-
-凤毛麟角：中国早期留美的数理同门女双杰（1912-1949年间，有14名中国女性赴英美留学，后来均成为杰出的物理学家，本文主人公王明贞和王承书就是其中的两位。）
-
-# 物理++
-
-https://mp.weixin.qq.com/s/tU6Incnq63fT61z6y9E-Jg
-
-一个5000多年的老古董，竟有人把它玩出吉尼斯世界纪录，这波操作我跪服......（陀螺）
-
-https://mp.weixin.qq.com/s/BfQ0qUHpAfmB3_mHvyeCDw
-
-不好！为了一点铅，物理学家和考古学家打起来了！（低本底铅）
-
-https://mp.weixin.qq.com/s/hWPX-lR3Eo46ofMNC2_5oQ
-
-有关诺奖的故事：简单的电学实验，造就了一个有趣的研究领域（超导现象）
-
-https://mp.weixin.qq.com/s/CkZhqcGxRoOoaLGvQIVUIQ
-
-科学家开发出“反太阳能”装置，黑夜照样能发电！
-
-https://mp.weixin.qq.com/s/iGebSkPLeR9Vc2VmeHALfw
-
-尿尿尿的到处都是？我总结了男生尿尿的最强攻略！
-
-https://mp.weixin.qq.com/s/tTMrr5-urQhZlIBTKSHw8g
-
-物理学家终于破解了不粘锅的粘锅之谜
+吃了闭门羹的中国工程师带着失望而归，但他们很快就振作了起来，他们凭借着内心的一股倔劲闭门研究，并最终通过一次次的摸爬滚打，实现了技术突破，不但掌握了全球最尖端的技术，还彻底让荷兰的公司退出了市场。

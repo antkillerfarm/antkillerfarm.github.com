@@ -161,6 +161,10 @@ https://mp.weixin.qq.com/s/PIKvYvXd9PaVHFi_I0U4cw
 
 一文读懂泊松分布，指数分布和伽马分布
 
+https://mp.weixin.qq.com/s/BySEOOgPpTispZi_XBER4w
+
+Poisson过程
+
 ## 贝塔分布和共轭先验分布
 
 $$f(x;\alpha,\beta)=\frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha,\beta)}$$
@@ -233,6 +237,10 @@ http://blog.csdn.net/u010945683/article/details/49149815
 https://mp.weixin.qq.com/s/B-yvH8ecirsROfYZ5CcZjg
 
 一文读懂正态分布与贝塔分布
+
+https://mp.weixin.qq.com/s/4uia4ijUUaumc2PNvCEWiw
+
+“共轭分布”是什么？
 
 ## 多项分布和狄利克雷分布
 

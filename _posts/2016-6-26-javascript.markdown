@@ -293,6 +293,16 @@ http://www.alloyteam.com/2016/03/node-embedded-database-nedb/
 
 Node嵌入式数据库——NeDB
 
+# Deno
+
+Deno是node.js之父Ryan Dahl在2017年创立的后者的替代品。
+
+参考：
+
+https://www.ruanyifeng.com/blog/2020/01/deno-intro.html
+
+Deno运行时入门教程：Node.js的替代品
+
 # HTML & CSS
 
 ## name、id、class的区别

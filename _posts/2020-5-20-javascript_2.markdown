@@ -141,6 +141,18 @@ https://zhuanlan.zhihu.com/p/27570643
 
 CSS Animations vs Web Animations API
 
+# JS引擎
+
+目前主要有Chrome使用的V8引擎和Safari使用的JavaScriptCore引擎。
+
+https://www.cnblogs.com/meituantech/p/9528285.html
+
+深入理解JSCore
+
+https://zhuanlan.zhihu.com/p/55479666
+
+JavaScriptCore全面解析
+
 # JS特效资料
 
 https://github.com/wagerfield/flat-surface-shader

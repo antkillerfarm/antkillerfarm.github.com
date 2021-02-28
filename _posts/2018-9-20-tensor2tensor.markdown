@@ -197,6 +197,18 @@ https://mp.weixin.qq.com/s/H1tDcmrg0vTcSw9PgpgIIQ
 
 ONNX初探
 
+https://mp.weixin.qq.com/s/_iNhfZNR5-swXLhHKjYRkQ
+
+ONNX再探
+
+https://zhuanlan.zhihu.com/p/350702340
+
+onnx simplifier和optimizer
+
+https://mp.weixin.qq.com/s/naJwpmXm7Yl3pxEFYiGf-g
+
+深度探索ONNX模型部署
+
 ## NNVM
 
 陈天奇等推出的NNVM也是一个类似的中间表示。官网：

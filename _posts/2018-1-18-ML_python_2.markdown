@@ -293,6 +293,10 @@ https://mp.weixin.qq.com/s/SNZLFdvk_IhtDHl8MTv7aw
 
 这个Pandas函数可以自动爬取Web图表
 
+https://mp.weixin.qq.com/s/zdnRGkrVEf5nvd8L_bML8w
+
+5个例子介绍Pandas的merge并对比SQL中join
+
 ## Super Pandas
 
 https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw

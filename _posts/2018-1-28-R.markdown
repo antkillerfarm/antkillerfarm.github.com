@@ -435,3 +435,7 @@ https://mp.weixin.qq.com/s/SLmyeLOp3h0bkD08WJS_Rg
 https://mp.weixin.qq.com/s/bB7583hMU9DGIc4-PMMQXw
 
 详解线性回归、朴素贝叶斯、随机森林在R和Python中的实现应用！
+
+https://mp.weixin.qq.com/s/Q_chMLju5YEIFncWJ2GFlw
+
+为新手准备的现代化R包开发流程

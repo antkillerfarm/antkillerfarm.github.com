@@ -409,24 +409,18 @@ https://mp.weixin.qq.com/s/mFWhv6ykGFc6g40GGuzYOQ
 
 推荐系统中模型训练及使用流程的标准化
 
-https://mp.weixin.qq.com/s/sWGsWKSoPeAD8eKr6U8Dcg
+https://zhuanlan.zhihu.com/p/139240761
 
 如何评价一个推荐系统的好坏？
 
-# 推荐系统进阶+
+https://mp.weixin.qq.com/s/Lwnl5W2ZS3CjxrA46yMwyw
 
-https://mp.weixin.qq.com/s/sDG5xm1JZ8rIEaVXeVQ5cA
+线上线下效果一致性杂谈
 
-主流推荐引擎技术及优缺点分析
+https://mp.weixin.qq.com/s/iHDGIHHlH2TqNL6iIEGVPg
 
-https://mp.weixin.qq.com/s/rhk5WHRg6HWHmK7KWD-UYw
+流量为王：收益最大化的混排机制
 
-常见的召回优化方式
+https://mp.weixin.qq.com/s/LZlskUK4dmOd5fLTZIATnQ
 
-https://mp.weixin.qq.com/s/nUQsFBh2Jyf1fqINNlpmqg
-
-推荐系统Bias与Debias 2020最新综述
-
-https://mp.weixin.qq.com/s/XD6qFpt8FdLTy2PcrLiTIA
-
-推荐算法的"五环之歌"
+如何提升链路目标一致性？爱奇艺短视频推荐之粗排模型优化历程

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四）——AutoEncoder
+title:  深度学习（四）——CNN, AutoEncoder
 category: DL 
 ---
 
@@ -9,7 +9,47 @@ category: DL
 
 # CNN
 
-## 卷积（续）
+## 概述
+
+卷积神经网络（Convolutional Neural Networks，ConvNets或CNNs）属于神经网络的范畴，已经在诸如图像识别和分类的领域证明了其高效的能力。
+
+CNN的开山之作是Yann LeCun的论文：
+
+《Gradient-Based Learning Applied to Document Recognition》
+
+>注：科学界的许多重要成果的开山之作，其名称往往和成果的最终名称有一定的差距。比如LeCun的这篇文章的名称中，就没有CNN。类似的还有Vapnik的SVM，最早被称为Support Vector Network。
+
+英文不好的，推荐以下文章：
+
+http://www.hackcv.com/index.php/archives/104/
+
+CNN的直观解释
+
+## 关键点
+
+这里以最经典的LeNet-5为例，提点一下CNN的要点。
+
+![](/images/article/LeNet_5.jpg)
+
+LeNet-5的caffe模板：
+
+https://github.com/BVLC/caffe/blob/master/examples/mnist/lenet.prototxt
+
+## 卷积
+
+在《数学狂想曲（五）》中我们讨论了卷积的数学含义，结合《 图像处理理论（一）》和《 图像处理理论（二）》，不难看出卷积或者模板（算子），在前DL时代，几乎是图像处理算法的基础和灵魂。为了实现各种目的，人们手工定义或发现了一系列算子。
+
+到了DL时代，卷积仍然起着非常重要的作用。但这个时候，不再需要人工指定算子，**算子本身也将由学习获得**。我们需要做的只不过是指定算子的个数而已。
+
+![](/images/img2/ML.jpg)
+
+![](/images/img2/DL.jpg)
+
+上面的两图形象的指出了ML和DL的差别。
+
+![](/images/img3/DL.png)
+
+比如，LeNet-5的C1:6@28*28，其中的6就是算子的个数。显然算子的个数越多，计算越慢。但太少的话，又会导致提取的特征数太少，神经网络学不到东西。
 
 需要注意的是，传统的CV算法中，通常只有单一的卷积运算。而CNN中的卷积层，实际上包括了**卷积+激活**两种运算，即：
 
@@ -264,59 +304,3 @@ AE不仅可以单独使用，还可以堆叠式的使用。
 http://ufldl.stanford.edu/wiki/index.php/Stacked_Autoencoders
 
 Stacked Autoencoders
-
-## Deep AE
-
-一层的AE有时可能不能很好的进行数据降维，这个时候就可以使用如下所示的Deep AE：
-
-![](/images/img2/Deep_AE.jpg)
-
-Deep AE可用于异常检测：根据正常数据训练出来的Autoencoder，能够将正常样本重建还原，但是却无法将异于正常分布的数据点较好地还原，导致还原误差较大。
-
-参考：
-
-http://sofasofa.io/tutorials/anomaly_detection/
-
-利用Autoencoder进行无监督异常检测
-
-https://zhuanlan.zhihu.com/p/51053142
-
-基于自编码器的时间序列异常检测算法
-
-## 参考
-
-http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/
-
-Autoencoders
-
-http://blog.csdn.net/changyuanchn/article/details/15681853
-
-深度学习之autoencoder
-
-https://mp.weixin.qq.com/s/cago4myCcLZkv1e43T__3g
-
-深入理解自编码器
-
-http://www.cnblogs.com/neopenx/p/4370350.html
-
-降噪自动编码器（Denoising Autoencoder)
-
-https://mp.weixin.qq.com/s/lODy8ucB3Bw9Y1sy1NxTJg
-
-无监督学习中的两个非概率模型：稀疏编码与自编码器
-
-https://mp.weixin.qq.com/s/QuDa__mi1NX1wOxo5Ki94A
-
-深度学习：自动编码器基础和类型
-
-http://blog.csdn.net/losteng/article/details/51067216
-
-CAE(Convolutional Auto-Encode) 卷积自编码
-
-https://mp.weixin.qq.com/s/q-WExyS-zylMA-L8ojOgRg
-
-简单易懂的自动编码器
-
-https://mp.weixin.qq.com/s/Ci0HPy3ENz1ZooB784aMcA
-
-谷歌大脑Wasserstein自编码器：新一代生成模型算法

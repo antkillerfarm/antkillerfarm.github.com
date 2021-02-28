@@ -7,9 +7,57 @@ category: DL
 * toc
 {:toc}
 
-# RNN
+# RNN（续）
 
-## 参考（续）
+## 参考
+
+http://blog.csdn.net/aws3217150/article/details/50768453
+
+递归神经网络(RNN)简介
+
+http://blog.csdn.net/heyongluoyao8/article/details/48636251
+
+循环神经网络(RNN, Recurrent Neural Networks)介绍
+
+http://mp.weixin.qq.com/s?__biz=MzIzODExMDE5MA==&mid=2694182661&idx=1&sn=ddfb3f301f5021571992824b21ddcafe
+
+循环神经网络
+
+http://www.wildml.com/2015/10/recurrent-neural-networks-tutorial-part-3-backpropagation-through-time-and-vanishing-gradients/
+
+Backpropagation Through Time算法
+
+https://baijia.baidu.com/s?old_id=560025
+
+Tomas Mikolov详解RNN与机器智能的实现
+
+https://sanwen8.cn/p/3f8sRTh.html
+
+为什么RNN需要做正交初始化？
+
+http://blog.csdn.net/shenxiaolu1984/article/details/71508892
+
+RNN的梯度消失/爆炸与正交初始化
+
+https://mp.weixin.qq.com/s/vHQ1WbADHAISXCGxOqnP2A
+
+看大牛如何复盘递归神经网络！
+
+https://mp.weixin.qq.com/s/0V9DeG39is_BxAYX0Yomww
+
+为何循环神经网络在众多机器学习方法中脱颖而出？
+
+https://mp.weixin.qq.com/s/-Am9Z4_SsOc-fZA_54Qg3A
+
+深度理解RNN：时间序列数据的首选神经网络！
+
+https://mp.weixin.qq.com/s/ztIrt4_xIPrmCwS1fCn_dA
+
+“魔性”的循环神经网络
+
+https://mp.weixin.qq.com/s/BqVicouktsZu8xLVR-XnFg
+
+完全图解RNN、RNN变体、Seq2Seq、Attention机制
 
 https://mp.weixin.qq.com/s/gGGXKT2fTn2xPPvo7PE8IA
 
@@ -280,47 +328,3 @@ $$y=\max(W_1x+b_1,W_2x+b_2)=\max(0,Wx+b)$$
 http://blog.csdn.net/hjimce/article/details/50414467
 
 Maxout网络学习
-
-## GLU
-
-Gated Linear Unit是由facebook提出的：
-
-$$(\boldsymbol{W}_1\boldsymbol{x}+\boldsymbol{b}_1)\otimes \sigma(\boldsymbol{W}_2\boldsymbol{x}+\boldsymbol{b}_2)$$
-
-![](/images/img2/GLU.png)
-
-上图右侧是一个Linear Unit，左侧的$$\sigma$$相当于一个Gate，故名。
-
-论文：
-
-《Language Modeling with Gated Convolutional Networks》
-
-GLU一般用在NLP领域，它和CNN结合，也就是所谓的GCNN了。
-
-## RRelu
-
-论文：
-
-《Empirical Evaluation of Rectified Activations in Convolution Network》
-
-![](/images/img3/RRelu.png)
-
-## GELU
-
-论文：
-
-《Gaussian Error Linear Units (GELUs)》
-
-参考：
-
-https://mp.weixin.qq.com/s/pA9JW75p9J5e5KHe3ifcBQ
-
-从ReLU到GELU，一文概览神经网络的激活函数
-
-https://mp.weixin.qq.com/s/LEPalstOc15CX6fuqMRJ8Q
-
-超越ReLU却鲜为人知，3年后被挖掘：BERT、GPT-2等都在用的激活函数（GELU）
-
-https://kexue.fm/archives/7309
-
-GELU的两个初等函数近似是怎么来的

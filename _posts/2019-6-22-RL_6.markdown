@@ -49,6 +49,12 @@ $$<\mathcal{S},\mathcal{A},\mathcal{P},\mathcal{R},\gamma>$$
 
 **简单来说，On-policy Learning训练时，使用当前策略，而Off-policy Learning使用非当前策略。**
 
+参考：
+
+https://zhuanlan.zhihu.com/p/346433931
+
+On-policy与off-policy
+
 ## On-Policy Monte-Carlo Control
 
 Model-Free Control应用MC需要解决两个问题：
@@ -153,6 +159,12 @@ $$P(F^{-1}(a) \le x) = P(a \le F(x)) = H(F(x))$$
 上图是均匀分布到指数分布的采样图，其中y的采样间隔是：
 
 $$F^{-1}_{exp}(a) = -\frac{1}{\lambda}*log(1-a)$$
+
+参考：
+
+https://mp.weixin.qq.com/s/1xGbbY0iJ-oBn3Uw0CwYag
+
+用逆变换采样方法构建随机变量生成器
 
 ### Rejective Sampling
 

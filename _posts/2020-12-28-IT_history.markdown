@@ -41,6 +41,10 @@ HTC为什么衰败？
 
 ----
 
+记得前几年俄罗斯是有一款智能手机为yoga phone，双面屏幕，支持电纸书阅读，但并未流行开来，2019年俄罗斯Yoga Devices公司营运状况不佳，已经宣布破产。
+
+----
+
 Full Mask和MPW都是集成电路的一种流片（将设计结果交出去进行生产制造）方式。Full Mask是“全掩膜”的意思，即制造流程中的全部掩膜都为某个设计服务；而MPW（Multi Project Wafer），直译为多项目晶圆，即多个项目共享某个晶圆，也即同一次制造流程可以承担多个IC设计的制造任务。
 
 ----
@@ -324,3 +328,25 @@ https://zhuanlan.zhihu.com/p/40601422
 https://mp.weixin.qq.com/s/9skWM6yirEupLj2wdpgqkA
 
 带你深入理解内存对齐最底层原理
+
+# TensorFlow++
+
+https://mp.weixin.qq.com/s/kw3BYTXdyhnIyVZrnQuPew
+
+基于深度学习和迁移学习的识花实践
+
+https://mp.weixin.qq.com/s/F965Zu_PgA-1ZUGIQ0nIEQ
+
+TensorFlow协同过滤推荐实战
+
+https://mp.weixin.qq.com/s/KohwsQQetwjfTj-PXvLjwA
+
+使用MNIST数据集，在TensorFlow上实现基础LSTM网络
+
+https://mp.weixin.qq.com/s/xSJRhHbjcgk14Kr_-Ycr5A
+
+输入示例，自动生成代码：TensorFlow官方工具TF-Coder已开源
+
+https://zhuanlan.zhihu.com/p/333791572
+
+Tensorflow模型保存方式大汇总

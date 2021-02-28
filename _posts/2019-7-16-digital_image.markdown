@@ -124,6 +124,10 @@ https://mp.weixin.qq.com/s/WEbdO1F_Fz84_-Go7Fgm2Q
 
 计算机视觉中的双目立体视觉和体积度量
 
+https://mp.weixin.qq.com/s/9RUnWSSlEiwfoBB19faTcg
+
+双目立体视觉I：标定和校正
+
 ## 结构光
 
 https://mp.weixin.qq.com/s/o_XsmqLSPhvuC0iiK7xHag
@@ -193,6 +197,28 @@ https://mp.weixin.qq.com/s/j4jfTKkbdQ9bHD7IZFdkbA
 https://mp.weixin.qq.com/s/QDMMP05hUqj6tqUWyCDiTQ
 
 来聊聊双目视觉的基础知识
+
+## HDR
+
+多媒体软硬件的快速发展使得广播电视和互联网平台上的视频质量变得越来越高。我们最直观的感受是，视频变得更清晰，也更真实了。但与此同时，视频的动态范围（可以简单地理解为对比度）并没有太大提升。这就造成视频画面中的像素很多，但每个像素点质量并不高，不能展现场景丰富的层次和细节。
+
+高动态范围（High Dynamic Range，HDR）这一概念的提出，正是为了从画面动态范围这个维度，进一步提升视频质量。相对地，我们称传统视频为标准动态范围（Standard Dynamic Range，SDR）视频。
+
+https://mp.weixin.qq.com/s/sXC263Lq25tKp2AK2Tsb-A
+
+Omnivision HDR sensor简介
+
+https://mp.weixin.qq.com/s/NuJYejYJ1kKdD2pRo5Wxlw
+
+HDR Imaging(2)--Digital Overlap
+
+https://mp.weixin.qq.com/s/_znyQAPeGt_IiZ8C5Rv6zw
+
+HDR imaging(3)----split/sub pixel技术
+
+https://mp.weixin.qq.com/s/X1GcQywkM-hZUu-1koP_VA
+
+视频增强之“动态范围扩展”HDR技术漫谈
 
 ## 参考
 
@@ -340,18 +366,6 @@ https://mp.weixin.qq.com/s/7fvVmmpPSldwa3TZ3dVb2g
 
 3D LUT--色彩校正的利器
 
-https://mp.weixin.qq.com/s/sXC263Lq25tKp2AK2Tsb-A
-
-Omnivision HDR sensor简介
-
-https://mp.weixin.qq.com/s/NuJYejYJ1kKdD2pRo5Wxlw
-
-HDR Imaging(2)--Digital Overlap
-
-https://mp.weixin.qq.com/s/_znyQAPeGt_IiZ8C5Rv6zw
-
-HDR imaging(3)----split/sub pixel技术
-
 https://mp.weixin.qq.com/s/m_EKOLjWjTyx4RBxsAAAGg
 
 4x4阵列摄/“深感”摄
@@ -399,39 +413,3 @@ https://mp.weixin.qq.com/s/Wd6LD8Rme8XJwtYWU-ALtQ
 https://mp.weixin.qq.com/s/7_mDPCEq3S-843PwUQSwXA
 
 车载相机image sensor选型
-
-https://zhuanlan.zhihu.com/p/74085115
-
-深度学习在3-D环境重建中的应用
-
-https://mp.weixin.qq.com/s/k9gff0Ote_V9qtN7HAruBA
-
-工业相机的sensor
-
-https://mp.weixin.qq.com/s/kvINl4pL4_wD71e33jaUSg
-
-下一代cmos image sensor----有机光导薄膜图像传感器
-
-https://mp.weixin.qq.com/s/byeQKa7d5FSLS7JrBwP_Zw
-
-什么是多光谱/高光谱成像
-
-https://mp.weixin.qq.com/s/nz9NHdyhRqxdhYopFQ_5Ag
-
-红外热成像与快速发热病患检测
-
-https://mp.weixin.qq.com/s/Htn1Il96fus7s8NkD2_98w
-
-Google Pixel4相机解密(1)夜景
-
-https://mp.weixin.qq.com/s/2uNcJxU-USpb-LZkka__eQ
-
-剖析苹果的激光雷达及参数估计
-
-https://mp.weixin.qq.com/s/DLsmHtUz3gAXMdzNsUTyFA
-
-苹果的DTOF中的SPAD原理和特性
-
-https://mp.weixin.qq.com/s/S8Wda_orUyco43FzV0cEeQ
-
-紫边/紫晕与图像传感器的关系

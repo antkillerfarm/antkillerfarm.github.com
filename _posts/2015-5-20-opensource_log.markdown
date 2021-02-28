@@ -111,6 +111,8 @@ Sam Lantinga早年创建了Loki Software，专门将Windows游戏移植到Linux�
 
 # WebKit
 
+![](/images/img4/webkit.png)
+
 WebKit的代码可以从它的官网www.webkit.org下获得。
 
 在以下网页可以获得webkit向各种GUI移植的相关信息。

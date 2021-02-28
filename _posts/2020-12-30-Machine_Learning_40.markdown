@@ -230,3 +230,15 @@ https://mp.weixin.qq.com/s/ktk8eUnu4-TyU3ob2y1fCA
 https://mp.weixin.qq.com/s/FS7WJ1rG8Kt5Xp6H1InCAg
 
 如何融合深度学习特征向量？
+
+https://mp.weixin.qq.com/s/PAPHQ_Dq7ZqWvuSZQzuWag
+
+样本组织篇
+
+https://mp.weixin.qq.com/s/B0-VSkPhkDJkwpllHahJiQ
+
+Null Importances
+
+https://mp.weixin.qq.com/s/OESIXwjM8nFhz4NhNT1BzQ
+
+使用神经网络的自动化特征工程

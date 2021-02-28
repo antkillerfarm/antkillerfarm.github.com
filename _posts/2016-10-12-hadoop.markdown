@@ -242,6 +242,10 @@ https://mp.weixin.qq.com/s/9A0z0S9IthG6j8pZe6gCnw
 
 YARN在字节跳动的优化与实践
 
+https://mp.weixin.qq.com/s/6rtkmwjfI_Cl-hYMrDOOyA
+
+取代HDFS？Ozone在腾讯的最新研究进展
+
 # Pulsar
 
 https://mp.weixin.qq.com/s/O8pj4pChyw8PK-G_4A3DWg

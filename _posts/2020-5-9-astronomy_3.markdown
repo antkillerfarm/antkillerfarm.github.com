@@ -15,6 +15,22 @@ category: Nature
 
 ![](/images/img2/Hohmann.gif)
 
+----
+
+《火星叔叔马丁》、《异星战场之火星公主》。
+
+https://mp.weixin.qq.com/s/oHO6TZuFGeGdDbACdOjS9w
+
+马丁叔叔所在的火星，有公主吗？
+
+----
+
+F´(F Prime)是一个组件驱动的框架，可以快速开发和部署航天飞行及其他嵌入式软件应用程序。而F´也是火星无人机“机智号”所用的飞行软件框架，它刚由毅力号携带到火星。
+
+https://github.com/nasa/fprime
+
+----
+
 https://mp.weixin.qq.com/s/SqL5WlQXQgNNiXHACfeN1A
 
 苏萌解读“天问一号”：中国人为什么要探测火星？
@@ -62,6 +78,34 @@ https://mp.weixin.qq.com/s/rv2ayzNS4OpFHFKyW0Papw
 https://mp.weixin.qq.com/s/rLcrrCQnB9gy6gMbFXTAkg
 
 火星上曾有过河流吗？
+
+https://mp.weixin.qq.com/s/5KR2vlOq5HuFLIJNl3Q3pw
+
+从“中国第一张火星近照”中猜到的：这张照片怎么拍的？
+
+https://mp.weixin.qq.com/s/5YK6qK-aUQ-_RuQVzaSH8w
+
+指南针在火星上能用吗？
+
+https://mp.weixin.qq.com/s/cht7uCrbhAttO1cmXRvcPw
+
+为什么“天问一号”必须进入环绕火星大椭圆轨道？
+
+https://mp.weixin.qq.com/s/LVVCA_WTd5PoAn_wHzlJjw
+
+耗资27亿美元，美国又一辆核动力火星车成功着陆，还带了一架直升机
+
+https://mp.weixin.qq.com/s/eNG-zbHfrji3frbRbQI-Xw
+
+听！火星的声音！又一辆核动力火星车刚刚着陆，寻找远古火星生命
+
+https://mp.weixin.qq.com/s/x9Nps_oGoVQd2PW3H2VdyA
+
+人类刚给火星送去Linux系统，以及一款安卓手机芯片
+
+https://mp.weixin.qq.com/s/0gArlvImgT6V7xEg9SCLTQ
+
+毅力号睁开几双“眼睛”，360度全景展示它的火星新家
 
 # 阿波罗50年
 
@@ -246,57 +290,3 @@ https://mp.weixin.qq.com/s/yD3THPdd1rvx3oqBF1tayQ
 https://mp.weixin.qq.com/s/3dByllGuY9fsvUjoy7fPwg
 
 戴森传奇
-
-https://mp.weixin.qq.com/s/5NyYCE1vt99i2O_r-ThAGA
-
-下一次去哪？金星、木卫一，还是海卫一？
-
-https://mp.weixin.qq.com/s/6acgwIaDYC3VjMmdVSYYKQ
-
-未来的望远镜，能带我们看到宇宙大爆炸的边缘吗？（卡塞格林望远镜）
-
-![](/images/img3/eclipse.png)
-
-https://mp.weixin.qq.com/s/UDHAT3vLMS_yo4w0wbcpJQ
-
-十问北斗
-
-https://zhuanlan.zhihu.com/p/29213504
-
-从沙漏和星盘到六分仪和航海钟——恼人的航海定位
-
-https://mp.weixin.qq.com/s/SQPVTNYBU8JIRPYFqsXgtA
-
-神秘力量？上帝使者？彗星的“人设”早就崩塌了
-
-https://mp.weixin.qq.com/s/pAUiirbHyfrEgWUE21x93Q
-
-另一个费曼（Richard Feynman的妹妹Joan Feynman）
-
-https://mp.weixin.qq.com/s/iznVJzjkYA2I5Y-P0NKrdA
-
-美丽天文图片下，有哪些不为人知的“套路”
-
-https://mp.weixin.qq.com/s/hZBYHvYktdJeOrAHTCKTTA
-
-如何肉眼识别夜空中的人造卫星？
-
-https://mp.weixin.qq.com/s/lNh3jxjvRbpZ3zZYSZuOVg
-
-曾为地球“挺身而出”的磁场
-
-https://mp.weixin.qq.com/s/xo9aRt5rAX7bWeK4jwmkXA
-
-月球能承载多少人类生存？
-
-https://mp.weixin.qq.com/s/1L10R2c7wCTYFYcxPKiRtA
-
-彗星怎么拖了个长长的尾巴？
-
-https://mp.weixin.qq.com/s/yCmwX5srpmhYrbAkFbC-gQ
-
-20年，241人，5400000000000米（国际空间站）
-
-https://mp.weixin.qq.com/s/Qld7bVs9ASJ23vAhE0h7_w
-
-日月星辰如何指引着中国人前行？（中国古代天文学）

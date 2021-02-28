@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  编译原理, lex&yacc, gcc
+title:  编译原理, lex&yacc
 category: technology 
 ---
 
@@ -193,6 +193,10 @@ https://mp.weixin.qq.com/s/7PH8o1tbjLsM4-nOnjbwLw
 
 Java即时编译器原理解析及实践
 
+https://mp.weixin.qq.com/s/s2W_VVlS-UC8PaaVYJlNgw
+
+浅谈编译过程
+
 # lex&yacc
 
 2014.2
@@ -322,6 +326,10 @@ https://mp.weixin.qq.com/s/4nIKkAPDrYaTE1sGtbCO9A
 
 不使用直方图的6个原因以及应该使用哪个图替代
 
+https://mp.weixin.qq.com/s/72wcShrcjuI0ne1zo8jzIQ
+
+这次气死的不只是设计师，一定要给你点颜色瞧瞧
+
 # Pytorch+++
 
 https://mp.weixin.qq.com/s/RBclQdtaA8prvSoUUdhrEQ
@@ -359,3 +367,7 @@ https://mp.weixin.qq.com/s/Lzt3LbO6lBbOebNV1d2pLQ
 https://mp.weixin.qq.com/s/7fK6GNyzYTP0fQy7F01fZw
 
 PyTorch深度学习模型训练加速指南2021
+
+https://mp.weixin.qq.com/s/SReuVBN8WIXFlnwho3wqgQ
+
+最详细的Pytorch底层算子扩展总结

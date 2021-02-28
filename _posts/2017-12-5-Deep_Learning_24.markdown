@@ -43,6 +43,10 @@ https://zhuanlan.zhihu.com/p/96631118
 
 单目标跟踪paper小综述
 
+https://mp.weixin.qq.com/s/Qh_gn5fLJ-HwVsl4WAZzrQ
+
+2020年两篇目标跟踪算法最佳综述
+
 https://zhuanlan.zhihu.com/p/27293523
 
 目标跟踪领域进展报告
@@ -286,6 +290,10 @@ https://mp.weixin.qq.com/s/IlFxY-cXyOg2xmaGdJbOVQ
 https://mp.weixin.qq.com/s/KLTSUqprwfFBVeVIP7HJRw
 
 视频中的多目标跟踪
+
+https://huangpiao.tech/archives/
+
+一个多目标跟踪方面的专栏
 
 https://zhuanlan.zhihu.com/p/55738110
 

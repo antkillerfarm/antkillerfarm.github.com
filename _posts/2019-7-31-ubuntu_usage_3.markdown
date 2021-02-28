@@ -345,3 +345,15 @@ https://mp.weixin.qq.com/s/U0qr1oZYXBBmZnC5vsKYLQ
 https://mp.weixin.qq.com/s/3kgwoyYI90XHm1QPqFJAiQ
 
 内存分页不就够了？为什么还要分段？
+
+https://mp.weixin.qq.com/s/9x1JOl4m_mj0WpsVgHu4rg
+
+Linux文件系统与持久性内存介绍
+
+https://mp.weixin.qq.com/s/RHAoM8zhFvQl9R8V0ePxNQ
+
+看腾讯这道多线程面试题
+
+https://mp.weixin.qq.com/s/QshDG-nbmBcF1OBZbBFwjg
+
+操作系统与存储：解析Linux内核全新异步IO引擎io_uring设计与实现

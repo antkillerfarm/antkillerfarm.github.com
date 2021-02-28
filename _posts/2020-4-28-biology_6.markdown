@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 新冠肺炎（二）
+title: 生物（二）
 category: Nature 
 ---
 
@@ -8,6 +8,74 @@ category: Nature
 {:toc}
 
 # 生物
+
+https://mp.weixin.qq.com/s/63fQMaGwhb1wcI6HhS4CIg
+
+他，企图自杀；他，胆小内向；他们在一起会发生什么？（细胞学说）
+
+https://mp.weixin.qq.com/s/wgaiVyMWKNoseFUDSjOmSw
+
+这个夏天，你是合格的“吃瓜群众”吗？
+
+https://mp.weixin.qq.com/s/ytCUQMNrm8ypxeA37kvTxg
+
+“舌尖上”的古生物：玫瑰奇虾
+
+https://www.zhihu.com/question/409522724
+
+哺乳动物体型变大会被重力压垮，那么恐龙为什么没被重力压垮呢？
+
+https://mp.weixin.qq.com/s/A145rTwtV8zaFmJaxsNnsA
+
+答应我，不要疯狂试探毒蘑菇
+
+https://mp.weixin.qq.com/s/60MMZH3fmwnIENG7eJGyng
+
+被误会了三百年的“小蝌蚪”：这才是精子真正的游动方式
+
+https://mp.weixin.qq.com/s/iG0-SGzrG-j93KbMTFr6lQ
+
+上海一小区野生貉泛滥：是什么让胆小的它们攻击人类？
+
+https://mp.weixin.qq.com/s/TtMFysG3YY-7Gwm2GekuzQ
+
+当蚂蚁拥有智慧，人类还是霸主吗？
+
+https://mp.weixin.qq.com/s/a4R4peyc_n6qFOGemEp2vw
+
+叫红豆的有十几种，哪个才是真正的“相思豆”？
+
+https://mp.weixin.qq.com/s/pFY3y-iRgA6tpo5800hv8w
+
+为什么有人要在牛屁股上画画？
+
+https://mp.weixin.qq.com/s/B7q-f4TROf6DxgExQsKW2A
+
+世界上唯一实现100%“一夫一妻”的动物：它们活成了彼此的真·另一半（双身虫）
+
+https://mp.weixin.qq.com/s/jJZdtPKJbaN3l4trg7NYiw
+
+恶魔诞生记（头足类）
+
+https://mp.weixin.qq.com/s/qHt9TcweccDq-usdr1LQYw
+
+会“飞”的蜘蛛，科学家揭示蜘蛛能织个“气球”让自己随风飞向新领地
+
+https://mp.weixin.qq.com/s/mPVQB9N58wxuOHxT-GWNlg
+
+猛犸象：吃便便，要从娃娃抓起
+
+https://mp.weixin.qq.com/s/eP9_YvmKvZ4OMwPFDpQyvg
+
+恐龙的丁丁长什么样？它们是怎么啪啪啪的？这项研究网友看完直呼涨姿势
+
+https://mp.weixin.qq.com/s/JMcW2C9S7de2VIMz0Nq63g
+
+不怕冷、眼神好、易推倒……驯鹿还有啥不为人知的特点？！
+
+https://mp.weixin.qq.com/s/LAUUrZdXRjtwOvyJZlRxgg
+
+16世纪的沉船，诉说着500年前西非大象的生活
 
 https://mp.weixin.qq.com/s/dzfAZxFyWy_3ullCzgcpJQ
 
@@ -77,234 +145,168 @@ https://mp.weixin.qq.com/s/vDOKrcaI-Lvb30eXpYFsoQ
 
 细菌+酵母=？
 
-# 数学杂谈++
+https://mp.weixin.qq.com/s/NGrDE6ab_RJGCTnfDFp3-g
 
-https://mp.weixin.qq.com/s/yQfBFtWBuP1JB6MJM5DshQ
+Nature：细菌活性物质自组织新路径
 
-人类最美的24张数学画
+https://www.zhihu.com/question/445030637
 
-https://www.sohu.com/a/223262966_115479
+为什么有毒植物分布反而不密集？植物进化出毒素不就可以防止被动物吃了吗，不是应该更有竞争优势吗?
 
-史上最贱的数学题
+https://mp.weixin.qq.com/s/XHSFPnczmqksog3LKRfT2g
 
-https://www.zhihu.com/question/290982731
+长江为什么要禁渔十年？
 
-sin1°是否为超越数？
+https://mp.weixin.qq.com/s/IkP0i4SaoqhhOXHvokOrEQ
 
-https://blog.csdn.net/FnqTyr45/article/details/80248927
+惹什么猫都别惹熊猫！“功夫熊猫”20年对人类拿下4血
 
-如何用数学方法估算一个女生前男友的数量？
+https://mp.weixin.qq.com/s/YTa62f8OyPLAOMkfDDA2Tg
 
-https://zhuanlan.zhihu.com/p/157126167
+38年，4000公里，他带着妻子追“初恋”（黑脉金斑蝶迁徙现象）
 
-群论的创立：两个少年天才的接力
+https://mp.weixin.qq.com/s/6w_VGj3T1ggEY8y8ojBiog
 
-https://mp.weixin.qq.com/s/rZwqxyBmQg07Pq1ihTjNMg
+见龙卸甲：鱿鱼是如何进化成好吃的样子的
 
-动图解释泰勒级数（一）
+https://mp.weixin.qq.com/s/THbYMENUF-pIc_-HrYhwzQ
 
-https://mp.weixin.qq.com/s/yqAnIjGmXpubgSsGDx6O8w
+曾经的它是国家储备粮，如今却被包了汤圆（芝麻）
 
-动图解释泰勒级数（二）
+# 模型压缩与加速进阶+
 
-https://zhuanlan.zhihu.com/p/36230460
+https://mp.weixin.qq.com/s/jHv3Amti1YZq51Df2mNFtg
 
-黑盒函数的探索
+network sliming:加快模型速度同时不损失精度
 
-http://www.matrix67.com/blog/archives/4570
+https://mp.weixin.qq.com/s/gwXXkWumGWy24oWuZKSyAQ
 
-再谈Julia集与Mandelbrot集
+MIT韩松组推出升级版AutoML方法，一个网络适配所有硬件
 
-https://mp.weixin.qq.com/s/cWwbqOzKCUfhJRwz30u_8Q
+https://zhuanlan.zhihu.com/p/76909380
 
-物理教授用数学论文摆脱400美元交通罚单，却惨被网友大反转...
+轻量型网络：MoGA简介
 
-https://mp.weixin.qq.com/s/JtjgHmGt14nme1XvYGmyAg
+https://mp.weixin.qq.com/s/kgl7mz4bK7SywkbViY_qhQ
 
-搞数学勇夺最高荣誉，做基金力扛巴菲特，顶级数学家的恐怖如斯(James Harris Simons)
+利用LSTM思想来做CNN剪枝，北大提出Gate Decorator
 
-# 新冠肺炎
+https://mp.weixin.qq.com/s/3_famaAmkAN-4xVEupSXSA
 
-## 口罩
+华为、北大等首创GAN剪枝算法，线上加速3倍以上
 
-KN95是中国标准，主要用于工业场景，且不要求油性防护，因此只是用氯化钠颗粒物检测，要求规过滤效果大于95%。此外中国还有KP95标准，支持油性防护。其中，“N”表示不耐油（not resistant to oil），“P”表示防油（oil proof）。
+https://mp.weixin.qq.com/s/KuZ-mZKt7bTWhzygK1lmSg
 
-KN95医用标准GB19083，工业标准是GB2626。
+加速目标检测
 
-https://zhuanlan.zhihu.com/p/105650218
+https://zhuanlan.zhihu.com/p/261146248
 
-关于新冠病毒，这应该是最全的口罩科普贴了！
+原生模型上的战斗
 
-----
+https://mp.weixin.qq.com/s/jqRBrs9Y_-3qvemL0RTflA
 
-https://mp.weixin.qq.com/s/IXp36BDIi_cblf1nk-iidw
+支付宝如何优化移动端深度学习引擎？
 
-40万公里的征途，一场消毒除菌产品与病毒的赛跑（立白集团）
+https://mp.weixin.qq.com/s/NJzGR-tY_WWeccbdshHckA
 
-----
+基于交错组卷积的高效深度神经网络
 
-Medtronic成立于1949年，致力于为心血管疾病，神经科，糖尿病，脊椎疾病以及五官科疾病患者提供治疗、诊断及监测方案。1957年，美敦力制造出第一台便携式体外心脏起搏器，随后于1960年制造出第一台可靠的可植入式心脏起搏系统。
+https://mp.weixin.qq.com/s/6eyEMW9dVBR5cZrHxn8iqA
 
-https://mp.weixin.qq.com/s/jlKlNwMp2-2TvyIWHU71LQ
+腾讯AI Lab详解3大热点：模型压缩、自动机器学习及最优化算法
 
-全球呼吸机告急！医疗科技巨头美敦力“开源”设计图和源代码
+https://xmfbit.github.io/2018/02/24/paper-ssl-dnn/
 
-----
+论文-Learning Structured Sparsity in Deep Neural Networks
 
-LVMH集团宣布，旗下Dior、Givenchy和娇兰三个品牌的香水生产线，将用于生产含酒精的消毒洗手液。
+https://mp.weixin.qq.com/s/d6HFVbbHwkxPGdnbyVuMyQ
 
-奢侈品牌Prada将一家在佩鲁贾开设的工厂，改造成了口罩及医疗用品生产工厂，并计划在4月6日前，向意大利托斯卡纳医院运送8万件防护服，及11万只口罩。
+密歇根州立大学提出NestDNN：动态分配多任务资源的移动端深度学习框架
 
-重症监护用肺呼吸机制造商Siare Engineering取消了占其营业额90％的外国订单，转而专为意大利提供机械，该公司产能从每月125台提升到到现在的500台。
+https://mp.weixin.qq.com/s/lUTusig94Htf7_4Z3X1fTQ
 
-----
+清华&伯克利ICLR论文：重新思考6大剪枝方法
 
-不得不感慨，美国的产业空心化已经到了如此严重的地步。如果给GM充足的时间，他们应该也可以搞出BYD这种产品线。但是造价会贵4~5倍，研发投产的周期至少要半年以上。
+https://mp.weixin.qq.com/s/g3y9mRhkFtzSuSMAornnDQ
 
-https://mp.weixin.qq.com/s/tFc15hulgBUE-m338xBhzQ
+韩松博士论文：面向深度学习的高效方法与硬件
 
-突发：CDC终于推荐民众戴口罩，谁又有谁来为3亿人美国人生产口罩？
+https://mp.weixin.qq.com/s/aH1zQ7we8OE59-O9n4IXhw
 
-https://mp.weixin.qq.com/s/9YiERlc3Xyp95eSfakd3wg
+应对未来物联网大潮：如何在内存有限的情况下部署深度学习？
 
-7天建起全球最大口罩生产线，比亚迪与兰博基尼转产猛飙“速度与激情”
+https://mp.weixin.qq.com/s/IfvXrsUq8-cBDC4_3O5v_w
 
-----
+Facebook新研究优化硬件浮点运算，强化AI模型运行速率
 
-人民需要什么，五菱就造什么。
+https://mp.weixin.qq.com/s/Jsxiha_BFtWVLvO4HMwJ3Q
 
-1928年，桂系领袖李宗仁在这里修建了一家柳州机械厂，开始组装飞机，制造步枪、手榴弹；
+工业界第一手实战经验：深度学习高效网络结构设计
 
-1933年，因为广西被封锁，石油匮乏，又造出了时速40公里/小时的木炭车，不烧油，烧炭跑，成为战时大后方的主要运输工具；
+https://mp.weixin.qq.com/s/uXbLb5ITHOU0dZRSWNobVg
 
-https://mp.weixin.qq.com/s/8rP-ZIvqAPlIW_j99jtMvQ
+算力限制场景下的目标检测实战浅谈
 
-五菱的76个小时，改变了中国口罩
+https://mp.weixin.qq.com/s/DoeoPGnS88HQmxagKJWLlg
 
-![](/images/img3/wuling.jpg)
+小米开源FALSR算法：快速精确轻量级的超分辨率模型
 
-6月1日，李克强总理在山东烟台考察时强调，地摊经济、小店经济是就业岗位的重要来源，是人间的烟火，和"高大上"一样，是中国的生机。
+https://mp.weixin.qq.com/s/wT39oUWfrQK-dg7hGXRynQ
 
-https://www.zhihu.com/question/399164650
+实时单人姿态估计，在自己手机上就能实现
 
-怎么看待五菱荣光翼的售货车主打地摊经济？
+https://mp.weixin.qq.com/s/GJ7JMtWiKBku7dVJWOfLOA
 
-https://mp.weixin.qq.com/s/pmW4gEAD533uXojUQ9d1QQ
+CNN能同时兼顾速度与准确度吗？CMU提出AdaScale
 
-聊聊“地摊经济学”
+https://mp.weixin.qq.com/s/pmel2k2J159zQi87ib3q8A
 
-----
+如何让CNN高效地在移动端运行
 
-盛传美国“最先进”的核酸检测，雅培恒温扩增仪，测一次5分钟，但是灵敏度和特异度仍不如PCR法。而且恒温扩增一次只能测一个样品，PCR法一批几十个样品可以一起测。所以恒温扩增只是在特定场景有优势，比如不需要p2+实验室，可以在办公楼里自己测。
+https://mp.weixin.qq.com/s/m-wQRm3VpfQkEOoUAxEdoA
 
-https://www.zhihu.com/question/384168786
+论文解读: Quantized Convolutional Neural Networks for Mobile Devices
 
-美国第六代新冠病毒检测试剂5分钟出结果，准确率95%，还能检测到抗体，是否说明美国科技领域引领世界？
+https://mp.weixin.qq.com/s/w7O2JxDH2ECqPn50sLfxpg
 
-https://www.zhihu.com/question/383152585
+不用重新训练，直接将现有模型转换为MobileNet
 
-如何看待近日美国雅培公司推出的5分钟快速检测的新冠病毒检测盒月产量可达500万份？
+https://mp.weixin.qq.com/s/EW6jvf98ifBucVz74SfSIA
 
-----
+文档扫描：深度神经网络在移动端的实践
 
-3M公司的全称是明尼苏达矿务及制造业公司（Minnesota Mining and Manufacturing Company）。
+https://mp.weixin.qq.com/s/3oL0Bso3mwbsfaG8X5-xoA
 
-https://mp.weixin.qq.com/s/wE69bNC7DicO6kSWhsfq2A
+英特尔提出新型压缩技术DeepThin，适合移动端设备深度神经网络
 
-全球新冠确诊破200万，我们为什么比以往更需要3M？
+https://mp.weixin.qq.com/s/LGCGYSoMpPfojEi2WcmjnQ
 
-https://mp.weixin.qq.com/s/Fkcbb-4LC_NsVJHCM-zRWQ
+TinyML：下一轮人工智能革命
 
-3M：世界上最不务正业公司——不只是口罩，好像哪里都离不开他！芯片制造也需要3M！
+https://mp.weixin.qq.com/s/B-OJ_oW_uJufqIfIZSA7Ww
 
-----
+专家从7个维度全面评测轻量级网络
 
-https://mp.weixin.qq.com/s/IVmgIp-LC6JiqfyCfXBJhg
+https://mp.weixin.qq.com/s/UDUOIIyGJtXHdc3xcyfOIg
 
-口罩惊险史，听说内衣也可以“救急”？
+万字综述：用于深度神经网络加速的Shift操作
 
-https://mp.weixin.qq.com/s/WoQyr__tUBJ6HQrj3lnZuw
+https://zhuanlan.zhihu.com/p/301162618
 
-一图彻底了解怎么戴口罩！国家卫健委图解《不同人群预防新型冠状病毒感染口罩选择与使用技术指引》
+深度学习模型压缩与加速
 
-https://mp.weixin.qq.com/s/lekdAyT0woQGwSO-xDSAMA
+https://mp.weixin.qq.com/s/Lv1JuwNohAsIAB1SKT7Lkg
 
-“疫不容辞” 这些电子厂“转型”口罩厂
+深度卷积网络的剪枝和加速
 
-https://mp.weixin.qq.com/s/iC0p5jFbZfoFAPL82zJAkQ
+https://mp.weixin.qq.com/s/VEnX3YKQ02mRg2qbqMbXcg
 
-中国能生产多少口罩？解析从石油到医用口罩的制造流程
+轻量级网络综述—主干网络篇
 
-https://cj.sina.com.cn/articles/view/1650111241/625ab30901900p4r1
+https://mp.weixin.qq.com/s/s9Bp3s-Ep3QPDpo1mmwgWw
 
-为什么口罩还是不好买？原来……
+模型压缩系列一：模型替换
 
-https://mp.weixin.qq.com/s/2LMnpJtSvO0KEDZ3GBtrog
+https://mp.weixin.qq.com/s/CNaQbeLbN4J3CsUIMaezFw
 
-为什么全国口罩日产量超1亿个，你却连1个都买不到？看完我惊了...
-
-https://mp.weixin.qq.com/s/pSYJizQDQP_T2-krWPGUoA
-
-疫情下的口罩“疯狂制造”：物料飚涨40倍, 3天回本“印钞机”
-
-https://mp.weixin.qq.com/s/AjSjXgrKug6XpfUhmQX0kA
-
-75天疫情产生260000吨医疗垃圾，去哪了？谁赚了？
-
-https://mp.weixin.qq.com/s/i0o9Xb-AViIZ8DGMOtDaig
-
-被英国首相点名后，戴森承诺造15000台呼吸机
-
-https://mp.weixin.qq.com/s/OuyBccDAzMiH6yLc1vtgOQ
-
-一张图告诉你：全球离“口罩自由”还有多远？
-
-https://mp.weixin.qq.com/s/_S-GY-1ZiG2OBGMcg5sXUg
-
-抗疫重器呼吸机原理浅析
-
-https://mp.weixin.qq.com/s/swrxHw76In_Zr_GFm8ieXw
-
-N95之父华裔科学家Peter Tsai教你如何正确戴口罩
-
-https://mp.weixin.qq.com/s/O4RavwRUPbwXq8mDZTaA6w
-
-全球疯抢的呼吸机，其产业链啥样？
-
-https://wxn.qq.com/cmsid/TEC2020041800124100
-
-供应断链卡脖呼吸机：核心零部件靠进口订单排到8月
-
-https://mp.weixin.qq.com/s/tLljo8q-1eybDIk7CLQiSA
-
-滴~37℃（温度计、额温枪、红外线测温仪，它们都是怎么测量体温的呢？）
-
-https://mp.weixin.qq.com/s/SwYQFBv5lnej0g08bsBF1A
-
-“英伟达呼吸机”开源：计算机架构大师打造，成本暴减98%，黄仁勋点赞
-
-## 瘟疫公司
-
-![](/images/img4/Plague_Inc.jpg)
-
-![](/images/img4/Plague_Inc.png)
-
-https://zhuanlan.zhihu.com/p/103836857
-
-五年前的冠状病毒模组让《瘟疫公司》再度翻红，创作者是预言家？
-
-https://zhuanlan.zhihu.com/p/125727756
-
-《瘟疫公司》做错了吗？最贴近疫情的游戏被下架，被指存在违反国内法律内容
-
-https://zhuanlan.zhihu.com/p/298079109
-
-现在，你可以在《瘟疫公司》里“拯救世界”了
-
-https://zhuanlan.zhihu.com/p/293192687
-
-因为疫情爆火的《瘟疫公司》免费了，还新增了解药模式
-
-https://www.zhihu.com/question/21491731
-
-游戏《瘟疫公司》Plague Inc这款游戏对现实世界有何启示？
+模型压缩系列二：模型蒸馏

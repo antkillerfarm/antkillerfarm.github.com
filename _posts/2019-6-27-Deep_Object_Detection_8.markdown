@@ -169,6 +169,10 @@ https://zhuanlan.zhihu.com/p/94799295
 
 IoU、GIoU、DIoU、CIoU损失函数的那点事儿
 
+https://zhuanlan.zhihu.com/p/342991797
+
+从L1 loss到EIoU loss，目标检测边框回归的损失函数一览
+
 # 3D目标检测
 
 https://mp.weixin.qq.com/s/bAV74fxvwI73Qt7qm_jPJA
@@ -234,6 +238,10 @@ MLOD：基于鲁棒特征融合方法的多视点三维目标检测
 https://mp.weixin.qq.com/s/LN2l67jhivb0hyy6JSLMVA
 
 3D目标检测深度学习方法数据预处理综述
+
+https://mp.weixin.qq.com/s/nGMMb6GHp-BajyfRTN-jDw
+
+不用激光雷达，照样又快又准！3D目标检测之SMOKE
 
 # 旋转框检测
 

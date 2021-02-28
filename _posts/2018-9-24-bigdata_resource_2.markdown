@@ -153,6 +153,10 @@ https://mp.weixin.qq.com/s/LXcWMwxgk3SXDI1cI_Kg8w
 
 携程数据库高可用和容灾架构演进
 
+https://mp.weixin.qq.com/s/ty5GltO9M648OXSWgLe_Sg
+
+多中心容灾实践：如何实现真正的异地多活？
+
 https://mp.weixin.qq.com/s/Y4MtwJsbGWx3XqajGV3ZpA
 
 每日生产万亿消息数据入库，腾讯如何突破大数据分析架构瓶颈

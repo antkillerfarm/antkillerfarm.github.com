@@ -177,6 +177,10 @@ https://mp.weixin.qq.com/s/typfJcOcRwS20HOwG_zcRg
 
 如何通过抽样分布估计你的模型的不确定性
 
+https://mp.weixin.qq.com/s/_igLvU_UZmRb2azn7RzJTg
+
+非线性回归中的Levenberg-Marquardt算法理论和代码实现
+
 # 上古软件开发
 
 https://github.com/chrislgarry/Apollo-11
@@ -310,3 +314,49 @@ https://www.zhihu.com/question/439434803/answer/1679210108
 https://mp.weixin.qq.com/s/YOcKv4InA1G7sdERanGZSA
 
 《是男人就下100层》真的有隐藏剧情！
+
+https://mp.weixin.qq.com/s/popvQv-CM7--5ByTMpeaxA
+
+编程语言考古：曾经影响一代人的BASIC，原来还有前身
+
+https://mp.weixin.qq.com/s/K-KIA18cCj6ANM4Sb7fEvw
+
+50年长盛不衰，SQL为什么如此成功？
+
+# 数字成像+
+
+https://mp.weixin.qq.com/s/byeQKa7d5FSLS7JrBwP_Zw
+
+什么是多光谱/高光谱成像
+
+https://mp.weixin.qq.com/s/nz9NHdyhRqxdhYopFQ_5Ag
+
+红外热成像与快速发热病患检测
+
+https://mp.weixin.qq.com/s/Htn1Il96fus7s8NkD2_98w
+
+Google Pixel4相机解密(1)夜景
+
+https://mp.weixin.qq.com/s/2uNcJxU-USpb-LZkka__eQ
+
+剖析苹果的激光雷达及参数估计
+
+https://mp.weixin.qq.com/s/DLsmHtUz3gAXMdzNsUTyFA
+
+苹果的DTOF中的SPAD原理和特性
+
+https://mp.weixin.qq.com/s/S8Wda_orUyco43FzV0cEeQ
+
+紫边/紫晕与图像传感器的关系
+
+https://zhuanlan.zhihu.com/p/74085115
+
+深度学习在3-D环境重建中的应用
+
+https://mp.weixin.qq.com/s/k9gff0Ote_V9qtN7HAruBA
+
+工业相机的sensor
+
+https://mp.weixin.qq.com/s/kvINl4pL4_wD71e33jaUSg
+
+下一代cmos image sensor----有机光导薄膜图像传感器

@@ -398,34 +398,16 @@ http://www.cnblogs.com/ifantastic/p/3768415.html
 
 dir()与`__dict__`，`__slots__`的区别
 
-## python调试
+## Typer
 
-首先：
+一个命令行选项的快速处理的库。
 
-`import pdb`
+官网：
 
-然后在需要断点的地方：
+https://typer.tiangolo.com/
 
-`pdb.set_trace()`
+它的设计参考了FastAPI，后者是一个Web版本的API接口库，用于提供restful风格的API。
 
-然后直接运行脚本即可，其他命令和gdb十分相似。
+官网：
 
-pdb和gdb的差异主要在于：
-
-1.pdb需要修改代码，而gdb不需要。
-
-2.可以直接运行脚本进入pdb模式，而gdb需要先进入gdb环境，然后才可以运行程序。显然pdb的灵活性比较高。
-
-参考：
-
-https://blog.jamespan.me/2016/06/09/remote-debug-your-python-code
-
-远程调试你的Python代码
-
-https://www.ibm.com/developerworks/cn/linux/l-cn-pythondebugger/index.html
-
-Python代码调试技巧
-
-https://mp.weixin.qq.com/s/4pxGrn9jgp8So8JsONC-3A
-
-别再用print调试代码了（PySnooper）
+https://fastapi.tiangolo.com/

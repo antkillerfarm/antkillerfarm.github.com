@@ -141,6 +141,10 @@ https://mp.weixin.qq.com/s/K1fJ1wI9T46i7qW1xjMY_w
 
 比圆周率更神秘的“混沌”常数：4.669201609102...（费根鲍姆常数）
 
+https://mp.weixin.qq.com/s/EUYutt-dZePxkPkRlicfVA
+
+史上最接近上帝的方程！神秘的数字4.669，目前没有人能解开这个谜语...（费根鲍姆常数）
+
 https://mp.weixin.qq.com/s/i076Bk9i0kJOP5kGmneBRw
 
 有趣的海盗问题

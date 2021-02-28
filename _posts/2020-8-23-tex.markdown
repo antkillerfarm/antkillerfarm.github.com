@@ -304,15 +304,19 @@ LaTeX的历史：图灵奖得主1977年开启的计划，引发学术圈重大�
 
 https://mp.weixin.qq.com/s/KMWhz5_EXWoxgmHUek6zBA
 
-不会用latex写公式？看看这个python转latex的库
+不会用latex写公式？看看这个python转latex的库（python2latex）
 
 https://mp.weixin.qq.com/s/LumDQL9VKTHWK3RkOhKFcg
 
-1行代码搞定Latex公式编写，这个4.6M的Python小插件，堪称论文必备神器
+1行代码搞定Latex公式编写，这个4.6M的Python小插件，堪称论文必备神器（handcalcs）
 
 https://zhuanlan.zhihu.com/p/268332132
 
 知乎公式编辑器的高级“玩法”
+
+https://mp.weixin.qq.com/s/E4EECj0QQ90ElfPqOL80eg
+
+Python编辑公式竟可以如此简单（latexify_py）
 
 # 汇编
 

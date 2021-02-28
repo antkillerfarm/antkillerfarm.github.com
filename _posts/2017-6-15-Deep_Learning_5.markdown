@@ -9,6 +9,62 @@ category: DL
 
 # AutoEncoder（续）
 
+## Deep AE
+
+一层的AE有时可能不能很好的进行数据降维，这个时候就可以使用如下所示的Deep AE：
+
+![](/images/img2/Deep_AE.jpg)
+
+Deep AE可用于异常检测：根据正常数据训练出来的Autoencoder，能够将正常样本重建还原，但是却无法将异于正常分布的数据点较好地还原，导致还原误差较大。
+
+参考：
+
+http://sofasofa.io/tutorials/anomaly_detection/
+
+利用Autoencoder进行无监督异常检测
+
+https://zhuanlan.zhihu.com/p/51053142
+
+基于自编码器的时间序列异常检测算法
+
+## 参考
+
+http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/
+
+Autoencoders
+
+http://blog.csdn.net/changyuanchn/article/details/15681853
+
+深度学习之autoencoder
+
+https://mp.weixin.qq.com/s/cago4myCcLZkv1e43T__3g
+
+深入理解自编码器
+
+http://www.cnblogs.com/neopenx/p/4370350.html
+
+降噪自动编码器（Denoising Autoencoder)
+
+https://mp.weixin.qq.com/s/lODy8ucB3Bw9Y1sy1NxTJg
+
+无监督学习中的两个非概率模型：稀疏编码与自编码器
+
+https://mp.weixin.qq.com/s/QuDa__mi1NX1wOxo5Ki94A
+
+深度学习：自动编码器基础和类型
+
+http://blog.csdn.net/losteng/article/details/51067216
+
+CAE(Convolutional Auto-Encode) 卷积自编码
+
+https://mp.weixin.qq.com/s/q-WExyS-zylMA-L8ojOgRg
+
+简单易懂的自动编码器
+
+https://mp.weixin.qq.com/s/Ci0HPy3ENz1ZooB784aMcA
+
+谷歌大脑Wasserstein自编码器：新一代生成模型算法
+
 https://mp.weixin.qq.com/s/Pgf6JMokilV9JxYWi7Y20Q
 
 揭秘自编码器，一种捕捉数据最重要特征的神经网络
@@ -231,47 +287,3 @@ Bag of Tricks for Efficient Text Classification
 https://mp.weixin.qq.com/s/eq1I92rjIAWEpYw-1fEHeQ
 
 从Facebook AI Research开源fastText谈起文本分类：词向量模性、深度表征和全连接
-
-https://mp.weixin.qq.com/s/aq_kWkwgwtz5qFo0lNEEqg
-
-Tomas Mikolov论文简评：从Word2Vec到FastText
-
-https://mp.weixin.qq.com/s/v1-mLhmbp5MoRR824tdPDw
-
-玩转词向量：用fastText预训练向量做个智能小程序
-
-https://mp.weixin.qq.com/s/LLrq1F2uEC2xEWZrd9uijA
-
-一行代码自动调参，支持模型压缩指定大小，Facebook升级FastText
-
-https://mp.weixin.qq.com/s/VxODwO8qA33Cr1n62YXYBQ
-
-fastText：极快的文本分类工具
-
-https://mp.weixin.qq.com/s/TRrL6_nI4GimH_OJ1CswiQ
-
-NLP重铸篇之Fasttext
-
-## RNNLM
-
-RNNLM是Mikolov早期提出的文本分类的工具。（其实就是他的博士毕业论文）
-
-官网：
-
-http://rnnlm.org/
-
-yandex后来又提出了一个加速版本的RNNLM：
-
-https://github.com/yandex/faster-rnnlm
-
-## Item2Vec
-
-本质上，word2vec模型是在word-context的co-occurrence矩阵基础上建立起来的。因此，任何基于co-occurrence矩阵的算法模型，都可以套用word2vec算法的思路加以改进。
-
-比如，推荐系统领域的协同过滤算法。
-
-协同过滤算法是建立在一个user-item的co-occurrence矩阵的基础上，通过行向量或列向量的相似性进行推荐。如果我们将同一个user购买的item视为一个context，就可以建立一个item-context的矩阵。进一步的，可以在这个矩阵上借鉴CBoW模型或Skip-gram模型计算出item的向量表达，在更高阶上计算item间的相似度。
-
-论文：
-
-《Item2Vec: Neural Item Embedding for Collaborative Filtering》

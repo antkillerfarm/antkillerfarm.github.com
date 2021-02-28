@@ -194,6 +194,10 @@ https://mp.weixin.qq.com/s/vzXejSzH9rzvhfYJEYSyrQ
 
 傅立叶变换有什么用
 
+https://www.zhihu.com/question/279808864
+
+为什么傅立叶变换可以把时域信号变为频域信号？
+
 # DFT
 
 FT针对的是连续信号，但数字信号处理只能处理离散数据，于是就有了Discrete-time Fourier transform（DTFT）：
