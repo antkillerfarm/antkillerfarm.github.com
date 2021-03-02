@@ -45,7 +45,9 @@ TFLite是Google的Tensorflow团队开发的移动DL框架，它可以在任意�
 
 团队的不同，决定了这两款产品并非完全兼容。一般来说，TFLite由于紧跟Tensorflow，其对新op的支持要比后者更及时一些。而Android NN由于有Facebook等外部客户的需求推动，在个别情况下，也有相反的情况发生。
 
-Android NN支持的算子的代码在aosp/frameworks/ml/nn/common/operations下。
+Android NN支持的算子的代码在frameworks/ml/nn/common/operations下。
+
+>最新的代码里改到了packages/modules/NeuralNetworks/common/operations下。
 
 参考：
 
