@@ -334,3 +334,35 @@ https://github.com/microsoft/nnfusion
 https://mp.weixin.qq.com/s/CMTOW3cYQkkECpPuzZl0nQ
 
 RAMMER如何进一步“压榨”加速器性能
+
+# Android研究+
+
+## Logcat
+
+官方文档：
+
+https://developer.android.google.cn/studio/command-line/logcat
+
+参考：
+
+https://www.cnblogs.com/JianXu/p/5468839.html
+
+Android logcat命令详解
+
+## 参考
+
+https://mp.weixin.qq.com/s/twfpUMf9CfXcgwtFFkJ4Ig
+
+Android整体设计及背后意义
+
+https://mp.weixin.qq.com/s/eEuNPtTaPwJ7hSghgeU32g
+
+Android Hook技术防范漫谈
+
+https://mp.weixin.qq.com/s/AQI2S2oK7HFDs9lH-nsx5g
+
+Android性能优化系列：Java内存优化篇
+
+https://www.jianshu.com/p/80013a768a45
+
+Android soong build系统介绍

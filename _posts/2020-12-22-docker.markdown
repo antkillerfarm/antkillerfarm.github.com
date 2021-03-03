@@ -367,26 +367,8 @@ Ubuntu adb报错：no permissions (user in plugdev group; are your udev rules wr
 
 ## tombstone
 
-当一个动态库（native 程序）开始执行时，系统会注册一些连接到 debuggerd 的 signal handlers，当系统crash的时候，会保存一个tombstone文件到/data/tombstones目录下。
+当一个动态库（native 程序）开始执行时，系统会注册一些连接到debuggerd的signal handlers，当系统crash的时候，会保存一个tombstone文件到/data/tombstones目录下。
 
 https://www.cnblogs.com/CoderTian/p/5980426.html
 
 Android Tombstone分析
-
-## 参考
-
-https://mp.weixin.qq.com/s/twfpUMf9CfXcgwtFFkJ4Ig
-
-Android整体设计及背后意义
-
-https://mp.weixin.qq.com/s/eEuNPtTaPwJ7hSghgeU32g
-
-Android Hook技术防范漫谈
-
-https://mp.weixin.qq.com/s/AQI2S2oK7HFDs9lH-nsx5g
-
-Android性能优化系列：Java内存优化篇
-
-https://www.jianshu.com/p/80013a768a45
-
-Android soong build系统介绍

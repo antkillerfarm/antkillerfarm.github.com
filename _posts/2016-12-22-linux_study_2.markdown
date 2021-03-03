@@ -126,6 +126,10 @@ https://mp.weixin.qq.com/s/3fNLa-yO4fUWO3nO9id1iA
 
 `ncdu`
 
+`dutree`
+
+https://github.com/nachoparker/dutree
+
 参考：
 
 https://mp.weixin.qq.com/s/ALyVaHfEfgPsT-N1KCGS3w
@@ -285,6 +289,16 @@ Linux nc命令详解
 https://mp.weixin.qq.com/s/y8LeZ0-9D56TWsD-ivPaHQ
 
 Linux文件搜索神器find实战详解
+
+----
+
+`sudo dd if=./865_R11_RC2.sdcard of=/dev/sdb status=progress`
+
+烧写系统到U盘。
+
+https://blog.csdn.net/weixin_30416497/article/details/97144840
+
+linux下使用dd命令写入镜像文件到u盘
 
 ----
 
