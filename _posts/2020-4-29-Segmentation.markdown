@@ -135,6 +135,10 @@ https://mp.weixin.qq.com/s/sQ9XGbt0UslHJ9_FYOpKrw
 
 指哪分哪：交互式分割近期发展
 
+https://zhuanlan.zhihu.com/p/30732385
+
+图像分割 传统方法 整理
+
 # DL进化史
 
 ![](/images/img3/segmentation.png)
