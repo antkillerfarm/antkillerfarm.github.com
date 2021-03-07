@@ -269,6 +269,10 @@ https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
 
 终身机器学习: 一种持续学习的范式
 
+https://mp.weixin.qq.com/s/-44YKSqsG0XtS_65s9xOag
+
+终身机器学习，145页pdf
+
 https://mp.weixin.qq.com/s/SBppyDBWqQUariiHbpaq1w
 
 实时深度学习的推理加速和连续学习

@@ -103,6 +103,10 @@ https://mp.weixin.qq.com/s/vO1lhVQuvIGwJpqg7V2SfA
 
 LTR排序算法LambdaRank原理详解
 
+https://mp.weixin.qq.com/s/AWXD21HU8gFSbX6F5fHmtQ
+
+浅谈Learning to Rank中的RankNet和LambdaRank算法
+
 # 用户画像
 
 https://mp.weixin.qq.com/s/TydTE50NzxMbGAigqv6BCw

@@ -283,6 +283,14 @@ https://mp.weixin.qq.com/s/1EKU6yUXMzhSl9zzgokkIA
 
 VScode数据结构可视化
 
+http://blog.haoji.me/vscode-plugin-overview.html
+
+VSCode插件开发全攻略
+
+http://blog.haoji.me/chrome-plugin-develop.html
+
+Chrome插件(扩展)开发全攻略
+
 # Scintilla
 
 Scintilla是Neil Hodgson出于对Richedit控件的失望，所开发的替代品（1990）。它是Notepad++等编辑器的基础控件。
