@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  我的PC Game（二）
+title:  我的PC Game（二）, 我的AI简史
 category: my story 
 ---
 
@@ -191,6 +191,58 @@ https://github.com/skywind3000/preserve-cd
 
 绝版游戏保护工程
 
+# 我的AI简史
+
+2018.5
+
+上一篇技术简史还是2014.12的事情，时间又过了3年半。除了在智能硬件上捣鼓了一年多以外，这几年就主要是在AI上折腾了。
+
+2016.3的AlphaGo大战李世石事件，虽然新闻效应很大，对我的震撼也很大，但对于我从事AI，实际上并无直接关联。
+
+我的AI之路的开端实际上非常偶然。某天闲逛，无意发现了一个开源app的UI使用了毛玻璃特效。作者特意指出该特效使用了Gauss filter。
+
+接着便搜索到了一个介绍Gauss filter的blog，这是该博主OpenCV系列的其中一篇，于是从此入了CV的坑。这大概是2016年3月底的事情，距离AlphaGo大战李世石不过一周左右。
+
+2016.4，公司开始涉足大数据研发，但暂时和我没有交集。
+
+2016.5，参加某安防展，看到了CV在停车场中，对于车辆跟踪的应用，对CV兴趣更浓。同时得知同事L是此中高手。
+
+2016.7，在OpenCV的官方手册中，发现了ML一词。接着找到了吴恩达早期的ML讲义，从此入坑ML。
+
+2016.8，大数据项目进入开展阶段，我自告奋勇，负责算法的设计。从此成为职业AI人。
+
+2016.10，入坑NLP。
+
+2016.12，入坑DL。但是由于初期ML的基础较差，因此在看完MLP之后，暂时停了一阵子。2017.5以后，全面转入DL。
+
+2017.10，入坑RL。
+
+2018.3，入坑ASR。
+
+----
+
+2018.11
+
+入坑AI已经有2年半了，相关的blog达150+。记得当初进入一个AI相关QQ群的时候，某AI书籍的作者进群推销。她的卖点是阅读过200篇论文，结果被群主鄙视了一番。当时作为萌新，颇有神仙打架的感觉，无从评判孰是孰非。直到如今，自己阅读论文的数量差不多也有200篇，才终于对AI略有心得。
+
+----
+
+2020.5
+
+非常遗憾，ASR方面由于公司另有团队在做，没有跟下去了（2018.10）。
+
+2018.8～10 研究Transformer。
+
+2018.11~2019.3 研究style transfer。
+
+2018.12 研究Wave-U-NET。
+
+2019.3~5 研究GAN。
+
+2019.8~2020.1 研究DRL。
+
+2020.4 研究PGM。
+
 # 数学杂谈+
 
 https://zhuanlan.zhihu.com/p/78352532
@@ -244,67 +296,3 @@ https://mp.weixin.qq.com/s/Rw3O5MDbEIfgmWCVgFe95w
 https://mp.weixin.qq.com/s/eYzhlrV822X8mHsOGgv1Qw
 
 如何计算一只鸡的表面积？看完中外神人的奇葩解法，我发誓下辈子不做理科生......
-
-https://mp.weixin.qq.com/s/43XCOdNqeKxMmpfkX3JTGw
-
-一个退休程序员，用高中几何方法，让百年数学难题逼近理论极限（万有覆盖问题）
-
-https://mp.weixin.qq.com/s/a1TEh1c1VZ345rmj8UiPgA
-
-“科比球”背后的数学
-
-https://mp.weixin.qq.com/s/6XsH71CKaVikqnL6kVPqtg
-
-各种语言的Mandelbrot set示例代码
-
-https://mp.weixin.qq.com/s/gnPiCmsua0ByO5UwWqxuag
-
-史上最牛逼的文科生：学历史成为物理学家，却获得了数学界的最高荣誉，出了350部书，外号火星人！（Edward Witten）
-
-https://mp.weixin.qq.com/s/5p5ai_HKZMvbQ9Inu6ASbA
-
-史上最硬核老师：17年间，拿着菜刀把400个混混送进了哈佛耶鲁麻省！（Jaime Escalante）
-
-https://mp.weixin.qq.com/s/vLqJIaTXOkz0kYJzKguQaQ
-
-99%的数学家都算不出这道题（亲和数）
-
-https://mp.weixin.qq.com/s/ULzU9gwU-X6oSMM4mv5xhA
-
-两次入狱，数次移民，从罗马尼亚地下党到卡耐基梅隆教授—整数规划奠基者Egon Balas的彪悍人生
-
-https://mp.weixin.qq.com/s/NX0j_CgBqalBMVVdRkG59g
-
-数学界再出变态神人！竟用一个比基尼方程，暴力吊打美国数学家！（沙发问题）
-
-https://mp.weixin.qq.com/s/H1fvyQYRFcOe0pqclD-3yg
-
-“最大数之父”葛立恒逝世，他是20世纪数学巨匠，也是一个杂技演员
-
-https://mp.weixin.qq.com/s/rXbP1dvFmwl6QhVCDMr2Bw
-
-神童、数学家、抑郁症患者，控制论之父诺伯特·维纳的一生
-
-https://mp.weixin.qq.com/s/htCZU2de_7CCcL1q4v-NGg
-
-比肩爱因斯坦的天才：如果再给他一次机会，他可能不会再熬夜了......（麦克斯韦）
-
-https://mp.weixin.qq.com/s/BCszlYgbgvKUSkpJCSRQxg
-
-电影院今天复工，应该如何排座位？这是个数学家研究了几百年的问题
-
-https://mp.weixin.qq.com/s/R0nuIqlIefkEppr07Y8gnQ
-
-用一中学数学公式，中了14次彩票头奖，多国彩票规则因他改变
-
-https://mp.weixin.qq.com/s/FCysnxxWBFiGS027qCxHTw
-
-世界上最伟大的十大公式
-
-https://www.zhihu.com/question/20866833
-
-为什么正多面体只有5种？
-
-https://mp.weixin.qq.com/s/qfbfzToypKTxh7CxJ0ifHw
-
-正十二面体的一个最基本谜题被破解了

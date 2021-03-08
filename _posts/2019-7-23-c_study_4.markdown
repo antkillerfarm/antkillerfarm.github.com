@@ -360,6 +360,10 @@ https://zhuanlan.zhihu.com/p/58976871
 
 编程风格之声明式与命令式的区别
 
+https://www.zhihu.com/question/447592340
+
+C语言的源程序是可以直接运行吗？（C语言的解释执行）
+
 # Java++
 
 https://www.jianshu.com/p/25b328753017

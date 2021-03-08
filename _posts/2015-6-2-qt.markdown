@@ -1,17 +1,21 @@
 ---
 layout: post
-title:  Qt, 线程池, WebService, Spring
+title:  Qt, WebService, Spring
 category: technology 
 ---
 
 * toc
 {:toc}
 
-# Qt主循环
+# Qt
+
+## Qt主循环
 
 这篇文章有个大概的比较和说明：
 
 http://blog.chinaunix.net/uid-20754930-id-1877623.html
+
+GUI主循环设计及其在MiniGUI, GTK, QT的实现
 
 以下是我针对Qt5代码（2015.4）的一个研究。
 
@@ -53,7 +57,7 @@ Android平台：
 
 以下和Unix平台相同。
 
-# Qt多线程中connect的使用
+## Qt多线程中connect的使用
 
 近日在研究OpenGL多线程处理时，偶然看到了如下代码：
 
@@ -140,39 +144,15 @@ https://blog.csdn.net/feiyangqingyun/
 
 一个Qt的blog
 
-# 线程池
+## 参考
 
-假设一个服务器完成一项任务所需时间为：T1创建线程时间，T2在线程中执行任务的时间，T3销毁线程时间。如果：T1+T3远大于T2，则可以采用线程池，以提高服务器性能。
+https://mp.weixin.qq.com/s/jNa4JTefasFDWoGJDBL6-Q
 
-一个线程池包括以下四个基本组成部分：
+PyQt编写GUI界面
 
-1.线程池管理器（ThreadPool）：用于创建并管理线程池，包括 创建线程池，销毁线程池，添加新任务；
+https://mp.weixin.qq.com/s/sR1R2DRA2XASx9LJExasfA
 
-2.工作线程（PoolWorker）：线程池中线程，在没有任务时处于等待状态，可以循环的执行任务；
-
-3.任务接口（Task）：每个任务必须实现的接口，以供工作线程调度任务的执行，它主要规定了任务的入口，任务执行完后的收尾工作，任务的执行状态等；
-
-4.任务队列（taskQueue）：用于存放没有处理的任务。提供一种缓冲机制。
-
-在libupnp项目中，提供了一个简易的线程池实现。
-
-参考：
-
-https://mp.weixin.qq.com/s/KigkxkUDYP8r1SEmDUvCCw
-
-从串行线程封闭到对象池、线程池
-
-https://www.jianshu.com/p/a24aa3c63d50
-
-从TCP角度出发，看看连接池的优点
-
-https://mp.weixin.qq.com/s/baYuX8aCwQ9PP6k7TDl2Ww
-
-Java线程池实现原理及其在美团业务中的实践
-
-https://mp.weixin.qq.com/s/8tFPVJfGJ0G8FUu9m5TCug
-
-高并发中的线程与线程池
+15个开源示例手把手带你用PyQt做小型桌面应用
 
 # WebService
 

@@ -35,6 +35,18 @@ https://zhuanlan.zhihu.com/p/41711254
 
 在“禁区”筑路，成昆铁路是人类建筑史上的奇迹
 
+https://zhuanlan.zhihu.com/p/158177666
+
+成昆铁路通车50周年致敬之一
+
+https://zhuanlan.zhihu.com/p/158647597
+
+成昆铁路通车50周年致敬之二
+
+https://zhuanlan.zhihu.com/p/159046760
+
+成昆铁路通车50周年致敬之三
+
 https://www.sohu.com/a/236728788_100143139
 
 这条铁路被称为“20世纪三大奇迹”，修建时外国人嘲笑中国人疯了

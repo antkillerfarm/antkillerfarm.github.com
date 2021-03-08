@@ -209,10 +209,6 @@ https://mp.weixin.qq.com/s/tITsD0XAZq25PSPX2G5k0Q
 
 OpenCV 4.0实现人脸识别
 
-https://mp.weixin.qq.com/s/jNa4JTefasFDWoGJDBL6-Q
-
-PyQt编写GUI界面
-
 https://mp.weixin.qq.com/s/lelQq4y-LIog3kNAS0kBVw
 
 向“假脸”说No：用OpenCV搭建活体检测器

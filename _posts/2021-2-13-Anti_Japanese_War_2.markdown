@@ -244,3 +244,7 @@ https://mp.weixin.qq.com/s/shUXBCnlQZ3q8W63ILfGhQ
 https://zhuanlan.zhihu.com/p/348870987
 
 180师惨败，志司有意撤销其建制，新任师长李钟玄强烈反对
+
+https://mp.weixin.qq.com/s/qx0E4O5PeGGAhtBh6GTYMg
+
+砥平里失利，全军北撤，这支部队却逆向南行，去执行一项特殊任务

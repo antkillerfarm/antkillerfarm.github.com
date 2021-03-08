@@ -318,6 +318,29 @@ https://mp.weixin.qq.com/s/E4EECj0QQ90ElfPqOL80eg
 
 Python编辑公式竟可以如此简单（latexify_py）
 
+# mermaid
+
+和MathJax类似，mermaid也是一个JS渲染引擎，可用于绘制各种图表。
+
+官网：
+
+https://mermaid-js.github.io/mermaid/
+
+参考：
+
+https://www.cnblogs.com/wuyida/p/6301240.html
+
+markdown绘图插件--mermaid简介
+
+示例：
+
+<div class="mermaid">
+      graph TD
+      A[Client] -->|tcp_123| B(Load Balancer)
+      B -->|tcp_456| C[Server1]
+      B -->|tcp_456| D[Server2]
+</div>
+
 # 汇编
 
 https://mp.weixin.qq.com/s/OWGi1htNugOv81ZFPinRGw
@@ -335,89 +358,3 @@ https://mp.weixin.qq.com/s/gr6YKmxbZjwfB4Rft1w55A
 https://mp.weixin.qq.com/s/504MLGjCESZPOvv8AwY6Pw
 
 这篇寄存器讲的有点意思
-
-# boost
-
-## 安装&编译
-
-boost直接安装：
-
-`sudo apt install libboost-all-dev`
-
-编译：
-
-```bash
-./bootstrap.sh
-./b2 install link=static cxxflags=-fPIC --with-test --prefix=</path/to/install>
-```
-
-boost的组件有很多，这里只编译了test组件。
-
->注意：指定生成目录的时候，stage使用stagedir选项，而install使用prefix选项。
-
-## boost::format
-
-```cpp
-cout << boost::format("%1%"
-    "%1t 十进制 = [%2$d]\n"
-    "%1t 格式化的十进制 = [%2$5d]\n"
-    "%1t 格式化十进制，前补'0' = [%2$05d]\n"
-    "%1t 十六进制 = [%2$x]\n"
-    "%1t 八进制 = [%2$o]\n"
-    "%1t 浮点 = [%3$f]\n"
-    "%1t 格式化的浮点 = [%3$3.3f]\n"
-    "%1t 科学计数 = [%3$e]\n"
-    ) % "example :\n" % 15 % 15.01 << endl;
-```
-
-参考：
-
-https://www.cnblogs.com/WuErPIng/archive/2005/04/21/142308.html
-
-浅尝boost之format
-
-## Boost.Parameter
-
-该库可以支持命名参数，然而实现太复杂。期待新标准直接支持。
-
-## Boost.MPL
-
-元编程（Metaprogramming）是指某类计算机程序的编写，这类计算机程序编写或者操纵其他程序（或者自身）作为它们的数据，或者在运行时完成部分本应在编译时完成的工作。很多情况下与手工编写全部代码相比工作效率更高。编写元程序的语言称之为元语言，被操作的语言称之为目标语言。一门语言同时也是自身的元语言的能力称之为反射。
-
-MPL可以看成是STL的编译期版本，或者说元编程版本。它同样也提供了各种容器，只不过容纳的对象不是数据，而是类型。
-
-参考：
-
-www.cppblog.com/jack-wang/archive/2010/10/04/128589.html
-
-模板元编程---用MPL解决实际问题
-
-https://mp.weixin.qq.com/s/5ireHbuWFrVY6T9qnvs3rQ
-
-浅谈C++元编程
-
-## BGL
-
-Boost Graph Library是boost提供的一个和图论相关的工具库，集成了常见的图操作（如BFS和DFS）和图算法（最短路径、拓朴排序）。
-
-官网：
-
-https://www.boost.org/doc/libs/1_73_0/libs/graph/doc/
-
-参考：
-
-https://www.ibm.com/developerworks/cn/aix/library/au-aix-boost-graph/
-
-探索Boost Graph Library
-
-示例：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/cpp/boost/graph/main.cpp
-
-test1：base。
-
-test2：批量添加边+拓扑排序。
-
-test3：顶点改为字符串数据类型，使用BGL API。
-
-test4：顶点改为字符串数据类型，不使用BGL API。

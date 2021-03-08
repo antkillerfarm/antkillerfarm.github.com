@@ -9,52 +9,6 @@ category: Nature
 
 # 两弹一星
 
-在1958年的一次会议上，海军领导找到一位当时已五十多岁的知名科学家，向他提出一个请求：我国的舰艇出港时噪声大，像敲锣打鼓一样，您有什么办法把它降下来？
-
-https://mp.weixin.qq.com/s/om3hpLdyme9PH4nETlHGOQ
-
-1989年，一个87岁的老人被自行车撞倒，惊动了中央最高领导（上海交通大学校长朱物华）
-
-----
-
-英国在朝鲜战场上和中国军队交过手，深知如果解放军此时要进攻香港，按朝鲜战争志愿军展现出来的战斗力，自己是不可能守住香港的。
-
-1954年6月22日，台湾的国民党海军在台湾南部巴士海峡某一地点劫持了苏联货船“图阿普谢”号（Tuapse，也译作陶普斯）。船货人全部被台湾国民党政府吞了，苏联也拿其没办法。这就是对后来影响深远的“图阿普谢”号被劫持事件。
-
-一次，英国护航舰队的4艘驱逐舰护送商船行至长江口，突然遭到国民党海军3艘“太”字号驱逐舰的拦截，英方急忙将附近一艘巡洋舰和一艘护卫舰调来增援。双方在海上僵持了3天之久，“自由世界”的“盟邦”之间差点在“红色中国”的家门口上演一次大规模海战。
-
-1953年10月，波兰油船“普拉卡”被蒋记海盗劫持，波兰人民共和国销往新中国的大批物资被掠不说，连船的名字也被改为“贺兰”号，编入了国民党海军。
-
-1954年5月，波兰人民共和国货轮“哥特瓦尔德”号满载民德制造的自行车驶往中国，国民党海军迅速出动跳帮劫持并押至高雄港。该船被改名为“天竺”号编入国民党海军。
-
-https://mp.weixin.qq.com/s/EhtXWhmde2gudAHH004UuQ
-
-为了阻止解放军收复香港，英国曾决定动用核武器，核弹都部署好了
-
-https://mp.weixin.qq.com/s/BS7-1HCONnAj9ngMYe23aQ
-
-1949年解放军兵临深圳河，为什么不收回香港？
-
-----
-
-2011年，战忽局副局平可夫，在他主编的《汉和防务观察》说，中国虽然有了航母，但是没有拦阻索，飞机照样发挥不了战斗力。
-
-西欧军力最强的法国，也只能从美国进口拦阻索，标价150万美元。
-
-当时只有英国，俄罗斯，美国可以造得出。
-
-但是，就在军方一筹莫展的时候。巨力集团和邢台钢铁锁定军方的这一需求，整合现有技术，仅用4个月就造出了军方满意的拦阻索。
-
-----
-
-野生海带，原产于日本北海道、俄国鄂霍次克海一带的冰冷水域，中国沿海对海带而言太热了。1927年起，日本在中国大连黑石礁（现大连自然博物馆的位置）和烟台进行海带养殖实验，因为中国北部海域水温相对较低，所以取得了一定成果。
-
-抗战胜利后，中共留用了研究海带养殖的日本科学家，并且敏锐的意识到海洋农业对国家战略的重要性。在日本研究成果的基础上，中国科研人员成功突破了海带的自然习性限制，即便是炎热的福建沿海也能养殖海带。通过对以海带为代表的藻类养殖技术攻关，中国在50年代就成为世界主要藻类养殖国家，占当时世界总产量的十分之一还多。
-
-藻类养殖的蓬勃发展，为被西方封锁的新中国提供了碘、琼脂、褐藻胶等关键性工业、医药业原料。而之前的旧中国，连碘酒都无法保证供应，可谓天壤之别。
-
-----
-
 我们的飞机要保卫祖国的领空，买人家的飞机是不行的，中国要自立于世界航空工业之林，必须能够设计自己的飞机、建立独立的航空科研体系。
 
 https://mp.weixin.qq.com/s/wE4_DHPrW3LbvPmB7UIECg
@@ -114,6 +68,32 @@ https://mp.weixin.qq.com/s/29zU7VYU4P2gRR1x_saBeA
 1964年10月16日晚，北京人民大会堂，大型音乐舞蹈史诗《东方红》演出刚刚结束，这项献礼国庆15周年的文艺大工程，从10月2日第一次在人民大会堂演出到16日结束，场面之大，演员之多、气势之宏，轰动了整个北京城。
 
 10月16日晚演出结束，毛泽东、周恩来、刘少奇、朱德等国家领导人走进会场中心，周恩来总理笑容满面走到麦克风前宣布：“主席让我告诉大家一个好消息——今天我国西部爆炸了第一颗原子弹……”会场掀起史无前例的高潮！
+
+----
+
+https://www.zhihu.com/column/c_1301567453751824384
+
+中国工业遗产保护名录（第一批）
+
+https://www.sohu.com/a/308215252_260616
+
+中国工业遗产保护名录（第二批）
+
+https://www.miit.gov.cn/zwgk/zcwj/wjfb/tg/art/2020/art_26f9f30006e449c5a082bbda09dd7952.html
+
+国家工业遗产名单（第一批）（11个）
+
+https://www.miit.gov.cn/zwgk/zcwj/wjfb/tg/art/2020/art_1af4c8c186204aa18ad5ea2db2c084bf.html
+
+国家工业遗产名单（第二批）（42个）
+
+https://www.miit.gov.cn/zwgk/zcwj/wjfb/tg/art/2020/art_f0218af351e44c599f6a56c0e71c2cfb.html
+
+国家工业遗产名单（第三批）（49个）
+
+https://www.miit.gov.cn/jgsj/zfs/wjfb/art/2020/art_3c50a995d39e4382b70666e6416899d8.html
+
+国家工业遗产名单（第四批）（62个）
 
 ----
 
@@ -184,6 +164,70 @@ https://zhuanlan.zhihu.com/p/352959565
 参与加勒万冲突保障，民企员工受到表彰，该公司堪称军工界大疆
 
 # 数学杂谈++
+
+https://mp.weixin.qq.com/s/43XCOdNqeKxMmpfkX3JTGw
+
+一个退休程序员，用高中几何方法，让百年数学难题逼近理论极限（万有覆盖问题）
+
+https://mp.weixin.qq.com/s/a1TEh1c1VZ345rmj8UiPgA
+
+“科比球”背后的数学
+
+https://mp.weixin.qq.com/s/6XsH71CKaVikqnL6kVPqtg
+
+各种语言的Mandelbrot set示例代码
+
+https://mp.weixin.qq.com/s/gnPiCmsua0ByO5UwWqxuag
+
+史上最牛逼的文科生：学历史成为物理学家，却获得了数学界的最高荣誉，出了350部书，外号火星人！（Edward Witten）
+
+https://mp.weixin.qq.com/s/5p5ai_HKZMvbQ9Inu6ASbA
+
+史上最硬核老师：17年间，拿着菜刀把400个混混送进了哈佛耶鲁麻省！（Jaime Escalante）
+
+https://mp.weixin.qq.com/s/vLqJIaTXOkz0kYJzKguQaQ
+
+99%的数学家都算不出这道题（亲和数）
+
+https://mp.weixin.qq.com/s/ULzU9gwU-X6oSMM4mv5xhA
+
+两次入狱，数次移民，从罗马尼亚地下党到卡耐基梅隆教授—整数规划奠基者Egon Balas的彪悍人生
+
+https://mp.weixin.qq.com/s/NX0j_CgBqalBMVVdRkG59g
+
+数学界再出变态神人！竟用一个比基尼方程，暴力吊打美国数学家！（沙发问题）
+
+https://mp.weixin.qq.com/s/H1fvyQYRFcOe0pqclD-3yg
+
+“最大数之父”葛立恒逝世，他是20世纪数学巨匠，也是一个杂技演员
+
+https://mp.weixin.qq.com/s/rXbP1dvFmwl6QhVCDMr2Bw
+
+神童、数学家、抑郁症患者，控制论之父诺伯特·维纳的一生
+
+https://mp.weixin.qq.com/s/htCZU2de_7CCcL1q4v-NGg
+
+比肩爱因斯坦的天才：如果再给他一次机会，他可能不会再熬夜了......（麦克斯韦）
+
+https://mp.weixin.qq.com/s/BCszlYgbgvKUSkpJCSRQxg
+
+电影院今天复工，应该如何排座位？这是个数学家研究了几百年的问题
+
+https://mp.weixin.qq.com/s/R0nuIqlIefkEppr07Y8gnQ
+
+用一中学数学公式，中了14次彩票头奖，多国彩票规则因他改变
+
+https://mp.weixin.qq.com/s/FCysnxxWBFiGS027qCxHTw
+
+世界上最伟大的十大公式
+
+https://www.zhihu.com/question/20866833
+
+为什么正多面体只有5种？
+
+https://mp.weixin.qq.com/s/qfbfzToypKTxh7CxJ0ifHw
+
+正十二面体的一个最基本谜题被破解了
 
 https://mp.weixin.qq.com/s/uptfQb8ELfpb5P4ySvofpg
 
