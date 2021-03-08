@@ -418,3 +418,7 @@ https://mp.weixin.qq.com/s/tMTtjrJLM-YgZy_K6T1deA
 https://mp.weixin.qq.com/s/KdKbRy3fZVy0B5KeQCs6Mw
 
 DCT-Mask用离散余弦变换Mask提升实例分割性能
+
+https://mp.weixin.qq.com/s/Lj0hn0SH1uRqbuO8R9RaGA
+
+用双注意力模块来做语义分割

@@ -237,10 +237,6 @@ https://www.sohu.com/a/258552764_100074407
 
 八一勋章、独立自由勋章、解放勋章等，你了解多少呢？
 
-https://mp.weixin.qq.com/s/shUXBCnlQZ3q8W63ILfGhQ
-
-解放军抢了美军军火库，杀人又放火，吃了大亏的美国人却决定忍了
-
 https://zhuanlan.zhihu.com/p/348870987
 
 180师惨败，志司有意撤销其建制，新任师长李钟玄强烈反对

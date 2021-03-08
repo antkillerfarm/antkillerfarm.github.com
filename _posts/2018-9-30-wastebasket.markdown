@@ -314,6 +314,10 @@ https://mp.weixin.qq.com/s/3nQAEdHfI9QF5E6n2Sbcew
 
 俄军士兵为什么要坐在车顶上?—浅谈苏联装甲运兵车和步战的取舍
 
+https://www.zhihu.com/zvideo/1350151967721754624
+
+吊威亚如何让你飞檐走壁？
+
 # 气象
 
 夏至三庚入伏，冬至逢壬数九。

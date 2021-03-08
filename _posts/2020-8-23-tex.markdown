@@ -318,7 +318,7 @@ https://mp.weixin.qq.com/s/E4EECj0QQ90ElfPqOL80eg
 
 Python编辑公式竟可以如此简单（latexify_py）
 
-# mermaid
+## Mermaid
 
 和MathJax类似，mermaid也是一个JS渲染引擎，可用于绘制各种图表。
 

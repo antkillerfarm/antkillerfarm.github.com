@@ -461,6 +461,10 @@ https://mp.weixin.qq.com/s/QalCxZxCQ3jSATsk-7mBIA
 
 如何用PYTHON绘制漂亮的地图？— FOLIUM作图工具介绍
 
+https://mp.weixin.qq.com/s/nLNHqP66VoTf_SmWkPgBxg
+
+Python Altair让可视化能互动
+
 ## 参考
 
 https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg

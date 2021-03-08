@@ -265,6 +265,10 @@ https://mp.weixin.qq.com/s/gAidXX4YrezZcSa6Jpl8nQ
 
 万字长文概览深度学习的可解释性研究
 
+https://mp.weixin.qq.com/s/OpnDHf5r2j-D962eMurx9w
+
+SHAP值：用博弈论的概念解释一个模型
+
 # 第四范式
 
 第一范式，是指以实验为基础的科学研究模式。例如以伽利略为代表的文艺复兴时期的科学发展初级阶段。

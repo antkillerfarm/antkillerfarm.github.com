@@ -107,6 +107,10 @@ Ruby 3编程: 从小白到专家，598页pdf
 
 219.76.4.4  http://github-cloud.s3.amazonaws.com
 
+https://zhuanlan.zhihu.com/p/314071453
+
+提高国内访问github速度的9种方法！
+
 ## arxiv下载速度慢
 
 http://xxx.itp.ac.cn

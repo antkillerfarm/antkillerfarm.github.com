@@ -235,6 +235,10 @@ https://www.kaggle.com/thebrownviking20/everything-you-can-do-with-a-time-series
 
 时间序列入门教程，从理论到业务实践，Kaggle kernels Master整理分享
 
+https://mp.weixin.qq.com/s/V2cOgbq869TLChe1sWUQqg
+
+开源时间序列数据集整理
+
 https://mp.weixin.qq.com/s/FRSe1mJTvk9U66ta-r9iCQ
 
 手把手教你用Python玩转时序数据，从采样、预测到聚类
