@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Github显示数学公式, 汇编, boost
+title:  Github显示数学公式, 汇编
 category: language 
 ---
 
