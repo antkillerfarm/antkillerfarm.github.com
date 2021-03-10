@@ -231,7 +231,11 @@ https://mp.weixin.qq.com/s/IaYnfEZ2bUXIpQvN3ZqFGA
 
 https://juejin.im/post/5e509b27f265da57455b3f33
 
-面试被问“红黑树”，我一脸懵逼......
+面试被问“红黑树”，我一脸懵逼...
+
+https://www.cnblogs.com/linzworld/p/13720477.html
+
+从根源上探究红黑树的本质
 
 https://blog.csdn.net/wo541075754/article/details/54632929
 

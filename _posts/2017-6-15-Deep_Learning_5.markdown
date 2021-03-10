@@ -118,6 +118,10 @@ https://mp.weixin.qq.com/s/gDqI3ttGiZaeOzm7Gvc9dA
 
 数据处理：离散型变量编码及效果分析
 
+https://mp.weixin.qq.com/s/eRxvx1a03p-1nzatJGYQhQ
+
+为什么独热编码会引起维度诅咒以及避免他的几个办法
+
 ## Word Embedding
 
 针对One-hot Representation的不足，Bengio提出了Distributed Representation，也称为Word Embedding。

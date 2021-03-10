@@ -9,6 +9,24 @@ category: Nature
 
 # 天文杂谈（续）
 
+https://mp.weixin.qq.com/s/tmSL5NIyjBpivtbGpbdKqQ
+
+威廉·赫歇尔：我一个德国音乐家，怎么就跑到英国当了天文学家？
+
+https://mp.weixin.qq.com/s/R2Hco-nE-e0S_gmTSImrAA
+
+它曾“超长待机”俯瞰地球，最终在“回家”路上粉身碎骨
+
+![](/images/img2/FYWX.jpg)
+
+https://mp.weixin.qq.com/s/yD3THPdd1rvx3oqBF1tayQ
+
+那个提出“戴森球”的物理学家去世了（Freeman Dyson）
+
+https://mp.weixin.qq.com/s/3dByllGuY9fsvUjoy7fPwg
+
+戴森传奇
+
 https://mp.weixin.qq.com/s/5NyYCE1vt99i2O_r-ThAGA
 
 下一次去哪？金星、木卫一，还是海卫一？
