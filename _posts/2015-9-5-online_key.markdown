@@ -263,6 +263,10 @@ https://mp.weixin.qq.com/s/CPNEQpOGED1EW8ds_A6GVw
 
 图文详解：如何给女朋友解释什么是微服务？
 
+https://mp.weixin.qq.com/s/JlD3lmnykJyzksEWlxoy_g
+
+怎样安全地关闭老旧的API？
+
 # Jetty
 
 Jetty是一个Java Servlet容器。官网：

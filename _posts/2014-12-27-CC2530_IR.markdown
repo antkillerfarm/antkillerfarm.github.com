@@ -209,6 +209,12 @@ CC2530的空中升级可以使用以下两种方法：
 
 但由于即使最优化的Zstack协议栈也至少有140KB，而CC2530最多只有256KB，因此第2个条件实际上是不可能满足的。
 
+参考：
+
+https://blog.csdn.net/weixin_40137252/article/details/111054011
+
+浅谈汽车软件Boot的五种自刷新方式
+
 # 休眠
 
 http://home.eeworld.com.cn/home.php?mod=space&uid=361439&do=blog&id=118277

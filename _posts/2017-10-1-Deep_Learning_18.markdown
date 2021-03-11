@@ -225,6 +225,10 @@ https://zhuanlan.zhihu.com/p/212873650
 
 Contrastive Self-Supervised Learning
 
+https://mp.weixin.qq.com/s/XwGvH0mTEf-jF5XQKk2lBw
+
+电子科大最新《深度半监督学习》综述论文，24页pdf
+
 # 对比学习
 
 https://mp.weixin.qq.com/s/r1uXn2jGsHZcZ8Nk7GnGFA

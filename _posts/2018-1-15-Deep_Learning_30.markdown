@@ -87,6 +87,10 @@ https://mp.weixin.qq.com/s/A4amtD9jPIRus8Ojnhd3PA
 
 Meta Learning 2: 更多基于度量的方法
 
+https://mp.weixin.qq.com/s/j72Xlh8vUAltvUx0DFGoCA
+
+Meta Learning 3: 少样本文本分类 InductionNet
+
 https://zhuanlan.zhihu.com/p/133159617
 
 Meta-Learning in Neural Networks: A survey

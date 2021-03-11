@@ -207,6 +207,10 @@ https://mp.weixin.qq.com/s/V-YrYmDxkxj-yIzd60HjAQ
 
 却忧明月潜生祸，极地甲烷起风波
 
+https://mp.weixin.qq.com/s/7440G7FTWtap1fXM5lNrag
+
+十九次出海探矿寻宝，我就是在大洋中乘风破浪的姐姐
+
 # 化学++
 
 https://mp.weixin.qq.com/s/Vam7uTbwPfF8Ht365lGtvA
@@ -320,3 +324,11 @@ shan气还是xian气？神秘元素这样给水合物拍CT...
 https://mp.weixin.qq.com/s/WM4_VtZ6k34dz-vAPallGA
 
 神秘的第99号（锿）
+
+https://mp.weixin.qq.com/s/7Lhvj46YuTNGhmJ0lBCy7w
+
+它是世界上最轻的固体！1000℃下不会熔化，上过火星，还能进你家...（气凝胶）
+
+https://mp.weixin.qq.com/s/L-B9KdZTT8iZXN6XcXuFQQ
+
+户外服饰半个世纪以来的面料创新，也是一场人与自然的角力

@@ -271,6 +271,14 @@ https://mp.weixin.qq.com/s/mj8PG-wRqSbEIR38fongHA
 
 用自己训练的AI玩王者荣耀是什么体验？
 
+# 常见问题建模方法
+
+![](/images/img4/DRL.jpg)
+
+https://zhuanlan.zhihu.com/p/356166466
+
+强化学习落地：计算机系统
+
 # DRL参考资源
 
 https://mp.weixin.qq.com/s/ruAAQEjPIDPWPiuPepKU6Q
@@ -380,35 +388,3 @@ https://mp.weixin.qq.com/s/7BsXPQ8wC6_fHulU63ZQiQ
 https://mp.weixin.qq.com/s/uDFsWebfLmka-zZX3Y_8kg
 
 深度强化学习在面向任务的对话管理中的应用
-
-https://zhuanlan.zhihu.com/p/41467058
-
-Policy Optimization with Demonstrations
-
-https://openreview.net/pdf?id=rJzoujRct7
-
-深度学习之斗地主
-
-https://mp.weixin.qq.com/s/qWuoo6cGLWLk4OKlunR-Og
-
-滴滴KDD 2018论文详解：基于强化学习技术的智能派单模型
-
-https://zhuanlan.zhihu.com/p/43496459
-
-解决Sparse Reward RL任务的简单回顾
-
-https://mp.weixin.qq.com/s/tuEhP3CDZ4PW7S66yP8AbA
-
-如何解决稀疏奖励下的强化学习？
-
-https://mp.weixin.qq.com/s/GUyZ0U5_JlXCI-5mO796SA
-
-超越DQN和A3C：深度强化学习领域近期新进展概览
-
-https://zhuanlan.zhihu.com/p/43843955
-
-BAIR：基于人类演示&RL的夹爪训练——高效、通用、低成本
-
-https://mp.weixin.qq.com/s/ADZlLx6gMTFU6IoBCF669g
-
-快1万倍！伯克利提出用深度RL优化SQL查询

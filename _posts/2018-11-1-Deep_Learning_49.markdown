@@ -133,6 +133,10 @@ https://mp.weixin.qq.com/s/qou0uUQVsU306KvB5JMKVg
 
 贝叶斯分析助你成为优秀的调参侠：自动化搜索物理模型的参数空间
 
+https://mp.weixin.qq.com/s/pJ4cSS4qXQaM8ACv_Aq--A
+
+结合Sklearn的网格和随机搜索进行自动超参数调优
+
 # 图像超分辨率进阶
 
 亚像素尺度上对物体进行计数，是一类和超分辨率很相关的CV任务。

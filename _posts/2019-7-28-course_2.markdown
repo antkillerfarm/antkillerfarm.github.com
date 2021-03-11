@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  名校机器学习相关课程（二）, 5G, 安全
+title:  名校机器学习相关课程（二）, 安全
 category: resource 
 ---
 
@@ -203,48 +203,6 @@ POTUS: President of the United States
 
 FLOTUS: First Lady of the United States
 
-# 5G
-
-https://mp.weixin.qq.com/s/oN-drJHFU34XanBzOKzrUQ
-
-有史以来最强的5G入门科普！
-
-https://www.iyiou.com/p/93766.html
-
-5G将是一个彻底的失败通信技术
-
-https://mp.weixin.qq.com/s/yIJT9D1YXa4rhf-RMBVPLw
-
-1G到5G之争：一部30年惊心动魄的移动通信史
-
-https://mp.weixin.qq.com/s/1un50xpUf0JGIG03M93gZQ
-
-解析5G背后的核心技术：波束成形
-
-https://mp.weixin.qq.com/s/uxuWmcplTmS8cJObd8cfVw
-
-第一次有人把5G核心网讲得如此通俗易懂！
-
-https://mp.weixin.qq.com/s/uYnu7v3w0evrJhTBYjbI_g
-
-啥叫5G超级上行？
-
-https://mp.weixin.qq.com/s/5v1uknmAPfqFR_5meie9GQ
-
-5G基站功耗到底有多可怕？网友惊呼：国家电网或是5G最大赢家！
-
-----
-
-O-RAN是中国移动发起的，中国三大运营商都是成员。
-
-诺基亚和爱立信意识到大势不可阻挡，后来也先后加入了O-RAN。双方的博弈在于运营商要求兼容O-RAN，但是在政治影响下大干快上时也许顾不上。
-
-唯一拒绝O-RAN的是华为。三十多年辉煌的版图扩张使自己颠覆自己的决定太难了。
-
-https://mp.weixin.qq.com/s/F3KRfVyvbtc5x2LZ7wgXuQ
-
-媒体口中的5G和真实的5G区别有多大？
-
 # 安全
 
 ## RSA
@@ -410,3 +368,11 @@ https://mp.weixin.qq.com/s/1Tsm22nvnrjN-UdojT5mdg
 https://mp.weixin.qq.com/s/c2jxmn7FaQ0ePY_luS2fGQ
 
 实现用户一键登录的方案有哪些？
+
+https://mp.weixin.qq.com/s/E6eYBob3WzuLFEuGJZSNtQ
+
+怎么知道谁动了我的Linux主机?
+
+https://mp.weixin.qq.com/s/0NvbRK41BT4yinFUuVxa3A
+
+发现一个木马，竟然偷传我珍藏几十G的视频！

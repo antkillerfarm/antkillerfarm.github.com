@@ -301,6 +301,10 @@ https://mp.weixin.qq.com/s/iOhCZ__NbhQnjHVj0bSqRw
 
 怎样将Embedding融入传统机器学习框架？
 
+https://mp.weixin.qq.com/s/k-Bgkh7Ff2g_CIpQfq47AA
+
+自然语言处理中词向量表示算法概述
+
 # 深度贝叶斯学习
 
 https://mp.weixin.qq.com/s/4sDNUZiOiS6VH_oRSnW6HQ

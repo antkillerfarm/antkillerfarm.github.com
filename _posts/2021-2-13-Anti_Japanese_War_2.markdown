@@ -248,3 +248,7 @@ https://zhuanlan.zhihu.com/p/348870987
 https://mp.weixin.qq.com/s/qx0E4O5PeGGAhtBh6GTYMg
 
 砥平里失利，全军北撤，这支部队却逆向南行，去执行一项特殊任务
+
+https://mp.weixin.qq.com/s/NjkvLJFHDurWFWnrJv4r5Q
+
+建国时的飞行员文化那么低，怎么能开飞机？

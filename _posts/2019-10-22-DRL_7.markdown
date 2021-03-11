@@ -351,3 +351,7 @@ https://mp.weixin.qq.com/s/qnAXhfGb74ivRwlGcdApOQ
 https://mp.weixin.qq.com/s/4AfoQ6IBJ2rKbmKvYD1Dow
 
 多Agent深度强化学习综述(中文版)，21页pdf
+
+https://mp.weixin.qq.com/s/KPS6RWtmeawR_vPAY4Bh1A
+
+听说你的多智能体强化学习算法不work？那你用对MAPPO了吗?

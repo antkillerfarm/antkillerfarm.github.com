@@ -173,6 +173,10 @@ https://mp.weixin.qq.com/s/jMLarSpq3Wg0OIrRIW26dA
 
 从Binary到Swish——激活函数深度详解
 
+https://mp.weixin.qq.com/s/IuZsTKGesgTw1ATXx4OBEA
+
+深度学习最常用的10个激活函数
+
 # ResNet
 
 无论采用何种方法，可训练的神经网络的层数都不可能无限深。有的时候，即使没有梯度消失，也存在训练退化（即深层网络的效果还不如浅层网络）的问题。

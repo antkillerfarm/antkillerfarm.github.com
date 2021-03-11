@@ -153,6 +153,10 @@ https://mp.weixin.qq.com/s/fQiZpUbeYvFnNZYYSE4dMQ
 
 用GANs来做数据增强
 
+https://mp.weixin.qq.com/s/KT_YHNLGdOI-mr4EnYgGvw
+
+使用有限的数据来训练GANs
+
 # VAE参考资源+
 
 https://zhuanlan.zhihu.com/p/60330303
@@ -276,6 +280,10 @@ https://mp.weixin.qq.com/s/k9W1UGQ0brdgPtC764Pd8w
 https://mp.weixin.qq.com/s/5-TxzL3dSXNFoPQKKn07uw
 
 为什么可乐十多年了还是三元一瓶？
+
+https://mp.weixin.qq.com/s/Int88nDhtePtr8TgEx-nmw
+
+基金大起大落，“养鸡”怎么赚钱？
 
 # TensorFlow+
 
