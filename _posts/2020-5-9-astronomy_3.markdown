@@ -133,6 +133,10 @@ https://mp.weixin.qq.com/s/jkK0Xf3Hx0vJ0VpkEljMzw
 
 高清火星影像来了，天问一号拍的！
 
+https://mp.weixin.qq.com/s/kfCLMYvvw5NmaOdkN65Yxw
+
+火星的两极也是冰雪世界吗？
+
 # 阿波罗50年
 
 https://mp.weixin.qq.com/s/79e6p2TYpttO-NR1of21jw

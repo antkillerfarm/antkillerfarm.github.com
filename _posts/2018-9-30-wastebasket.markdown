@@ -389,3 +389,7 @@ https://mp.weixin.qq.com/s/m9tP5wg19BKR9ZWeeNUaSQ
 https://mp.weixin.qq.com/s/kfcq_SP1_u6yt_sIJLNSZA
 
 从美国德州超400万人遭遇停电危机，看电力系统背后的业务逻辑
+
+https://mp.weixin.qq.com/s/-ioJvIgny_qRFcrDyHhsBQ
+
+严寒停电，冰川断裂，《后天》里的未来离我们有多远？

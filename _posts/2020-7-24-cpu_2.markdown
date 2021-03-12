@@ -291,14 +291,6 @@ https://mp.weixin.qq.com/s/_NcQ-PxNpEtpYdo450Uukg
 
 半导体材料全球格局
 
-https://mp.weixin.qq.com/s/PzD1lCe5h3VkMrhFb7CfQg
-
-后SoC时代或将迎来Chiplet拐点
-
-https://mp.weixin.qq.com/s/oMA9RSaq0nuSNgKDRwHavQ
-
-Chiplet最强科普
-
 https://zhuanlan.zhihu.com/p/114448236
 
 什么是Win10的“现代待机”？为什么它未来会越来越重要？这篇文章部分解释了我的第一个平板为什么那么耗电。
