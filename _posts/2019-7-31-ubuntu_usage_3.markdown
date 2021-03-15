@@ -230,6 +230,12 @@ https://www.cnblogs.com/schips/p/10141278.html
 
 `sudo apt install ttf-wqy-microhei ttf-wqy-zenhei`
 
+# GnuGo
+
+GnuGo是一个著名的开源围棋软件，但是它只有文字界面。一般使用Quarry作为它的GUI。
+
+`sudo apt-get install quarry`
+
 # Linux镜像文件
 
 ## vmlinux
@@ -325,6 +331,34 @@ https://mp.weixin.qq.com/s/HchAIWJmqPNTqEEwb3TbAg
 Linux下xargs命令
 
 # Linux参考资源+
+
+https://mp.weixin.qq.com/s/oKtu3AA9D3y--xMDQ8EARw
+
+携程一次Dubbo连接超时问题的排查
+
+https://mp.weixin.qq.com/s/4o_cSzWeJdLJMObJBhaZlw
+
+计算机系统中的内存
+
+https://www.jianshu.com/p/fad3339e3448
+
+浅析Linux中的零拷贝技术
+
+https://mp.weixin.qq.com/s/6R8UcLLjm9gdWud-eNHztw
+
+中断及其初始化
+
+https://mp.weixin.qq.com/s/qwouMWc4CFtqG_jra4xbIg
+
+IDT及中断处理的实现
+
+https://mp.weixin.qq.com/s/pRsXWAv7wgYcN_jlzcA2YA
+
+内存都没了，还能运行程序？
+
+https://mp.weixin.qq.com/s/snQ3T86usv4rXz0MMQvFfQ
+
+如何回答性能优化的问题，才能打动阿里面试官？
 
 https://www.cnblogs.com/zhouyu629/p/3734494.html
 

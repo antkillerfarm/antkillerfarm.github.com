@@ -7,6 +7,28 @@ category: linux
 * toc
 {:toc}
 
+# Linux知识图谱
+
+![](/images/article/linux_perf_tools_full.png)
+
+![](/images/img3/linux_kernel_map.png)
+
+原图地址：
+
+http://www.brendangregg.com/linuxperf.html
+
+![](/images/img4/Linux-storage-stack-diagram_v4.10.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/-iCuxQjSghtDGaPMqaDSgQ
+
+Linux思维导图整理
+
+https://mp.weixin.qq.com/s/sLyD6z2xBXRxfBZnImTgtQ
+
+40+张最全Linux/C/C++思维导图，收藏！
+
 # 设置网卡eth0的IP地址和子网掩码
 
 `sudo ifconfig eth0 192.168.2.1 netmask 255.255.255.0`
@@ -440,31 +462,3 @@ Linux的启动流程
 https://mp.weixin.qq.com/s/ZfprFQjVANuCE2N693gZBQ
 
 用户空间和内核空间
-
-https://mp.weixin.qq.com/s/oKtu3AA9D3y--xMDQ8EARw
-
-携程一次Dubbo连接超时问题的排查
-
-https://mp.weixin.qq.com/s/4o_cSzWeJdLJMObJBhaZlw
-
-计算机系统中的内存
-
-https://www.jianshu.com/p/fad3339e3448
-
-浅析Linux中的零拷贝技术
-
-https://mp.weixin.qq.com/s/6R8UcLLjm9gdWud-eNHztw
-
-中断及其初始化
-
-https://mp.weixin.qq.com/s/qwouMWc4CFtqG_jra4xbIg
-
-IDT及中断处理的实现
-
-https://mp.weixin.qq.com/s/pRsXWAv7wgYcN_jlzcA2YA
-
-内存都没了，还能运行程序？
-
-https://mp.weixin.qq.com/s/snQ3T86usv4rXz0MMQvFfQ
-
-如何回答性能优化的问题，才能打动阿里面试官？

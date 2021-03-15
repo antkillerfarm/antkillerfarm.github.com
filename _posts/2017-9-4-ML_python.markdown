@@ -77,6 +77,9 @@ Conda太慢？试试这个加速工具！
 
 Anaconda是一个科学计算方面的python发行版，下面提到的所有工具都可以通过Anaconda一站式安装。
 
+>Python:蟒   
+>Anaconda：森蚺
+
 官网：
 
 https://www.anaconda.com/download/

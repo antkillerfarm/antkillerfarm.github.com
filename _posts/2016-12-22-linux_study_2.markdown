@@ -238,6 +238,10 @@ https://www.cnblogs.com/saneri/p/7528283.html
 
 python模块之psutil详解
 
+https://mp.weixin.qq.com/s/EHAvQKsMqHqXW0dFIpSL0Q
+
+Sysstat：开源免费的Linux系统的监控工具
+
 # 时间的表示方法
 
 一般遵循ISO 8601标准：
@@ -370,12 +374,6 @@ bash只支持整数四则运算，浮点数和复杂运算就靠`bc`了。
 
 添加用户
 
-# GnuGo
-
-GnuGo是一个著名的开源围棋软件，但是它只有文字界面。一般使用Quarry作为它的GUI。
-
-`sudo apt-get install quarry`
-
 # DosBox
 
 DosBox是Linux平台玩DOS老游戏的法宝。
@@ -399,28 +397,6 @@ DosBox是Linux平台玩DOS老游戏的法宝。
 如果需要修改的话，可以使用JOE。
 
 `sudo apt-get install joe`
-
-# Linux知识图谱
-
-![](/images/article/linux_perf_tools_full.png)
-
-![](/images/img3/linux_kernel_map.png)
-
-原图地址：
-
-http://www.brendangregg.com/linuxperf.html
-
-![](/images/img4/Linux-storage-stack-diagram_v4.10.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/-iCuxQjSghtDGaPMqaDSgQ
-
-Linux思维导图整理
-
-https://mp.weixin.qq.com/s/sLyD6z2xBXRxfBZnImTgtQ
-
-40+张最全Linux/C/C++思维导图，收藏！
 
 # minicom
 
