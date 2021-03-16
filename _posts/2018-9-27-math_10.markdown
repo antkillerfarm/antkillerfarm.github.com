@@ -103,6 +103,14 @@ https://mp.weixin.qq.com/s/Gmfu9iLC71XmfQ5qyraIpQ
 
 信息的物理性：从麦克斯韦妖到兰道尔擦除
 
+https://mp.weixin.qq.com/s/vlhgdxjVJaiD6VbX1u3how
+
+新·麦克斯韦妖
+
+https://mp.weixin.qq.com/s/G-PCyPVqoH77-4Gt_BhS8Q
+
+一个经典热力学思想实验的量子版本（吉布斯佯谬）
+
 ## 焓
 
 焓（enthalpy）是一个和熵经常一起出现的概念。由于和信息论关系不大，这里仅作简要通俗的介绍，而非严格定义。

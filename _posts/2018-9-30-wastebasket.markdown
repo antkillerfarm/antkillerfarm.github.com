@@ -322,6 +322,10 @@ https://www.zhihu.com/zvideo/1350151967721754624
 
 吊威亚如何让你飞檐走壁？
 
+https://mp.weixin.qq.com/s/DIEl5q9v8Rq5cgnlr2i7cA
+
+电磁弹射为什么能淘汰蒸汽发射？
+
 # 气象
 
 夏至三庚入伏，冬至逢壬数九。
