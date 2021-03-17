@@ -393,3 +393,7 @@ https://mp.weixin.qq.com/s/2HwszqbC_I2zdTCiQirxPQ
 https://mp.weixin.qq.com/s/oRWMAeKcftmCL1W1SW823g
 
 推荐系统与GNN擦出的火花竟如此绚丽多彩
+
+https://mp.weixin.qq.com/s/9qGrkDFCd1bgeXRAaM8VGQ
+
+动态图表示学习，40页ppt，Dynamic Graph Representation Learning

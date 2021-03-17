@@ -227,6 +227,10 @@ http://www.cnblogs.com/dmzhuo/p/5868346.html
 
 读论文“Network in Network”——ICLR 2014
 
+https://mp.weixin.qq.com/s/H_KY_JbqiZ1q7VLwAf2EDA
+
+致敬Network in Network，华为诺亚提出Transformer-in-Transformer
+
 ### ZF Net
 
 论文：

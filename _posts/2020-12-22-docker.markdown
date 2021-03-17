@@ -123,6 +123,8 @@ https://mp.weixin.qq.com/s/8Rr-hxKQyHpT7L-Zx7PkcA
 
 操作镜像：`docker image`
 
+列出容器：`docker ps`
+
 3.容器和宿主机的文件交换
 
 从容器往宿主机copy：

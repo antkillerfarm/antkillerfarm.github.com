@@ -364,3 +364,7 @@ https://mp.weixin.qq.com/s/fZv9FgbdQ1bWPoNdl9sF1A
 https://mp.weixin.qq.com/s/Vvo3Ti3XiGQz0IwLgATfWQ
 
 电商搜索算法技术的演进
+
+https://mp.weixin.qq.com/s/-UxlJb4GCOTV1uTyZehyZw
+
+ESIM：语义相似度领域小模型的尊严
