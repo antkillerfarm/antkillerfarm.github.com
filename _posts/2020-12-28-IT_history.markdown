@@ -291,6 +291,10 @@ https://mp.weixin.qq.com/s/pkgC9Ug34O0mBj8s1AIhIQ
 
 动听百年：音乐播放器发展沉浮史
 
+https://mp.weixin.qq.com/s/H847J6qOnuXdN697MD6hqA
+
+一台笔记本的25年青春史诗（联想昭阳）
+
 # 内存
 
 https://mp.weixin.qq.com/s/HOhBNZfOf5xQIFLYQ5ntCw
@@ -328,6 +332,10 @@ https://zhuanlan.zhihu.com/p/40601422
 https://mp.weixin.qq.com/s/9skWM6yirEupLj2wdpgqkA
 
 带你深入理解内存对齐最底层原理
+
+https://mp.weixin.qq.com/s/Mb7iSXfrOtettVn-Sz8QUA
+
+主板上这家伙，要当CPU和内存的中间商！
 
 # TensorFlow++
 

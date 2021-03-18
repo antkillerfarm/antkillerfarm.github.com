@@ -219,6 +219,10 @@ https://mp.weixin.qq.com/s/KZcNmoGtuPUjoNzEaBb8UA
 
 AI ISP的黎明
 
+https://mp.weixin.qq.com/s/rxHoE4f5e6Kv2xIqJLIKdA
+
+哪些功能更适合AI
+
 https://mp.weixin.qq.com/s/919VEvennHEG3iXKkMZoQQ
 
 不止是去噪---从去噪看AI ISP的趋势

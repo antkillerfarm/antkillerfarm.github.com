@@ -207,7 +207,11 @@ https://mp.weixin.qq.com/s/xuJxpJ970uoFNva-45y2eA
 
 https://mp.weixin.qq.com/s/KpEJYs6ANLqUbVz1CazF6Q
 
-微信OCR（2）--深度序列学习助力文字识别
+微信OCR(2)——深度序列学习助力文字识别
+
+https://mp.weixin.qq.com/s/6IGXof3KWVnN8z1i2YOqJA
+
+三年磨一剑——微信OCR图片文字提取
 
 https://mp.weixin.qq.com/s/6STRTuKdrM0OP3qrVArfCg
 

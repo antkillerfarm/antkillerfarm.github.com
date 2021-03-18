@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  深度学习（四十七）——三维处理, NetVLAD, Spatial Transformer Networks
+title:  深度学习（四十七）——3D处理, NetVLAD, Spatial Transformer Networks
 category: DL 
 ---
 
 * toc
 {:toc}
 
-# 三维处理
+# 3D处理
 
 https://mp.weixin.qq.com/s/19-ggA8nPEmXgMMivI7lLQ
 
@@ -272,6 +272,10 @@ https://mp.weixin.qq.com/s/BNYUkocbKzqTjTNbGuNBzg
 https://www.cnblogs.com/wuyida/p/6301262.html
 
 三维重建技术概述
+
+https://mp.weixin.qq.com/s/-9e86JF7VyHbqTyn2whOzg
+
+如何入门多视角人脸正面化生成？不得不看的超详细最新综述！
 
 # NetVLAD
 

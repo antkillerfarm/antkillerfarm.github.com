@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Android Studio
+title:  Android Studio, 嵌入式Linux
 category: technology 
 ---
 
@@ -230,30 +230,6 @@ https://android-git.linaro.org/git/
 
 推荐使用中科大的源，作为清华的替代品。
 
-# Linaro
-
-Linaro虽然名义上是一家非营利性质的开放源代码软件工程公司。然而，它所提供的ARM工具链，基本上已经是御用级别的了。
-
-官网：
-
-https://www.linaro.org/
-
-# Yocto
-
-Yocto是一个开源协作项目，它提供了一些模板、工具和方法来支持面向嵌入式产品的自定义Linux系统。
-
-官网：
-
-https://www.yoctoproject.org/
-
-它也提供了一套工具链，依附于旗下的子项目：Poky Linux。似乎NXP用的较多。
-
-参考：
-
-https://www.ibm.com/developerworks/cn/linux/l-yocto-linux/index.html
-
-使用Yocto Project构建自定义嵌入式Linux发行版
-
 # Retrofit
 
 Retrofit是一套RESTful架构的Android(Java)客户端实现，基于注解，提供JSON to POJO(Plain Ordinary Java Object,简单Java对象)，POJO to JSON，网络请求(POST，GET,PUT，DELETE等)封装。
@@ -321,3 +297,41 @@ https://www.html5tricks.com/
 http://uusama.com/643.html
 
 canvas实现水波纹效果
+
+# 嵌入式Linux
+
+## Linaro
+
+Linaro虽然名义上是一家非营利性质的开放源代码软件工程公司。然而，它所提供的ARM工具链，基本上已经是ARM御用级别的了。
+
+官网：
+
+https://www.linaro.org/
+
+## Yocto
+
+Yocto是一个开源协作项目，它提供了一些模板、工具和方法来支持面向嵌入式产品的自定义Linux系统。
+
+官网：
+
+https://www.yoctoproject.org/
+
+它也提供了一套工具链，依附于旗下的子项目：Poky Linux。似乎NXP用的较多。
+
+参考：
+
+https://www.ibm.com/developerworks/cn/linux/l-yocto-linux/index.html
+
+使用Yocto Project构建自定义嵌入式Linux发行版
+
+## 32/64位编译
+
+大致的原则是：
+
+1.使用对应的bit的工具链。
+
+2.链接的库也需要是对应bit的。
+
+32bit float：
+
+`-march=armv7-a -mfloat-abi=hard -mfpu=neon`

@@ -269,6 +269,10 @@ https://mp.weixin.qq.com/s/MjkdwozIXoCJbooQHype7w
 
 视频异常检测：预测未来帧Future Frame Prediction的3个缺陷
 
+https://mp.weixin.qq.com/s/ZVWxpZPCoUvzZH6F0YkjNg
+
+图像视频深度异常检测简明综述论文
+
 https://zhuanlan.zhihu.com/p/114672282
 
 漫谈视频目标跟踪与分割
