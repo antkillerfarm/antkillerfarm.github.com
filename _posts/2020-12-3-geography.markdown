@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 地理
+title: 地理, 气象
 category: Nature 
 ---
 
@@ -215,6 +215,82 @@ https://mp.weixin.qq.com/s/s1hkkdIb1a-g0-GYLli5bA
 
 为什么说竖版世界地图的“中国造”优于“美国造”
 
+# 气象
+
+夏至三庚入伏，冬至逢壬数九。
+
+夏至以后的第3个庚日、第4个庚日分别为初伏（头伏）和中伏的开始日期，立秋以后的第一个庚日为末伏的第一天。因为每个庚日之间相隔10天，所以初伏、末伏规定的时间是10天。又因为每年夏至节气后的第3个庚日（初伏）出现的迟早不同，中伏的天数就有长有短，可能是10天，也可能是20天。
+
+冬至后逢第一个壬日开始叫“交九”，意思是寒冷的开始。
+
+----
+
+![](/images/img3/Hadley_Cell.png)
+
+考虑自转偏向力的Hadley Cells
+
+![](/images/img3/Hadley_Cell.png)
+
+不考虑自转偏向力的Hadley Cells（金星）
+
+https://mp.weixin.qq.com/s/UcchOEf59hku7uclxZFMrA
+
+距离地球630光年的地方，下起了“铁雨”
+
+https://www.seas.harvard.edu/climate/eli/research/equable/hadley.html
+
+Hadley Cells
+
+----
+
+https://mp.weixin.qq.com/s/0ZQvZNHOmiMZ1dr_-VXR6Q
+
+谁奠定了气候变化的基础？（John Tyndall）
+
+https://mp.weixin.qq.com/s/-NAua2Zecz5I43Ner73-ww
+
+PNAS前沿：厄尔尼诺现象大概率将在2020下半年爆发
+
+https://mp.weixin.qq.com/s/mzAgmh9JDQYAV2S9uJBfjw
+
+“圣婴”和“圣女”现象
+
+https://mp.weixin.qq.com/s/5fRHmNqQybS9GvKxpuc2TQ
+
+是不是真的“高处不胜寒”？
+
+https://mp.weixin.qq.com/s/Ez_FlfFOwpDKDqvIlJYfSQ
+
+2021首个全国冻哭预警地图出炉！今冬为啥这么冷？
+
+https://mp.weixin.qq.com/s/jQpUfIueOfCZ_Gu09JE94Q
+
+因为太冷，青岛的海面“冒烟了”！
+
+https://mp.weixin.qq.com/s/pe1IQJfziJvCJ9UGlcnLcw
+
++4°C的世界
+
+https://mp.weixin.qq.com/s/1aRFQvQJozBL7Y_fSbB2ug
+
+今年冬天的最强寒潮，得从它说起（洋流）
+
+https://mp.weixin.qq.com/s/m9tP5wg19BKR9ZWeeNUaSQ
+
+破解一个存在已久的气候之谜（全新世极热事件）
+
+https://mp.weixin.qq.com/s/kfcq_SP1_u6yt_sIJLNSZA
+
+从美国德州超400万人遭遇停电危机，看电力系统背后的业务逻辑
+
+https://mp.weixin.qq.com/s/-ioJvIgny_qRFcrDyHhsBQ
+
+严寒停电，冰川断裂，《后天》里的未来离我们有多远？
+
+https://mp.weixin.qq.com/s/e_cRLKylqG1YuTNJ7aFGvA
+
+北方又有沙尘暴，北方为什么老有沙尘暴？！
+
 # 化学++
 
 https://mp.weixin.qq.com/s/Vam7uTbwPfF8Ht365lGtvA
@@ -288,51 +364,3 @@ https://zhuanlan.zhihu.com/p/23284525
 https://mp.weixin.qq.com/s/irMd_sRRwZhbTuIXo3na6Q
 
 今天，说一下人工钻石（钻石半导体）
-
-https://mp.weixin.qq.com/s?__biz=MjM5MDE3OTk2Ng==&mid=2657461706&idx=1&sn=589d7a4d65f2e2fdd696100e06b1a257
-
-高考成绩接近满分，却被清华北大拒绝，被称“中国最帅科学家”（中国油田分层开采和化学驱油技术的奠基人——王德民）
-
-https://mp.weixin.qq.com/s/0fdnEWpLvPSbweFh0v4x9A
-
-科学家的浪漫，是用激光画一道彩虹（姜黄素）
-
-https://mp.weixin.qq.com/s/TM8Cc3AI7Vo5H6VnOl3gyw
-
-唯一两获诺贝尔化学奖的科学家，自称“只是把实验室搞砸的家伙”（弗雷德里克·桑格）
-
-https://mp.weixin.qq.com/s/wIaMPdYWHzn9vDpiuWZOVg
-
-解读2019诺贝尔化学奖：他们创造了一个可充电的世界
-
-https://wenku.baidu.com/view/209d2f8183d049649b665894.html
-
-超纯水18.2的意义
-
-https://mp.weixin.qq.com/s/cYa9uQSjtxgtJawhJ8WYcw
-
-古今取暖神器大赏：一场关于温度与风度的奋斗史
-
-https://mp.weixin.qq.com/s/wRgzQ43fxHkYCl2g5ei3Eg
-
-做环境毒理学挺焦虑的：做不出毒性，愁论文，做出毒性，又替地球担心
-
-https://mp.weixin.qq.com/s/A9M_2DVqmFQaTdSy2yEJ1A
-
-为什么烤面包会这么香？
-
-https://mp.weixin.qq.com/s/hTp5-EU_83y_XUk0BmwoZw
-
-shan气还是xian气？神秘元素这样给水合物拍CT...
-
-https://mp.weixin.qq.com/s/WM4_VtZ6k34dz-vAPallGA
-
-神秘的第99号（锿）
-
-https://mp.weixin.qq.com/s/7Lhvj46YuTNGhmJ0lBCy7w
-
-它是世界上最轻的固体！1000℃下不会熔化，上过火星，还能进你家...（气凝胶）
-
-https://mp.weixin.qq.com/s/L-B9KdZTT8iZXN6XcXuFQQ
-
-户外服饰半个世纪以来的面料创新，也是一场人与自然的角力

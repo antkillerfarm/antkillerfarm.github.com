@@ -157,6 +157,10 @@ https://mp.weixin.qq.com/s/KT_YHNLGdOI-mr4EnYgGvw
 
 使用有限的数据来训练GANs
 
+https://mp.weixin.qq.com/s/_cKtmNZbqHwZszocPXuy8g
+
+让GAN随音乐律动的Python工具，网友：这是我见过的GAN的最佳用法
+
 # VAE参考资源+
 
 https://zhuanlan.zhihu.com/p/60330303

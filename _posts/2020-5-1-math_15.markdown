@@ -117,6 +117,12 @@ $$(y+5)(y-2)=0$$
 
 因为图像开口向下，所以$$2a=-5$$。
 
+----
+
+https://mp.weixin.qq.com/s/FdHstCxJqQ4wYXSRDyqm5A
+
+不敢相信！这份民国时期大学入学考试试卷，竟让170位院士头疼！
+
 # Gabriel's Horn
 
 Gabriel's Horn，又名托里拆利小号（Torricelli's trumpet），是数学史上非常经典的模型。它最早由Evangelista Torricelli提出，故名。

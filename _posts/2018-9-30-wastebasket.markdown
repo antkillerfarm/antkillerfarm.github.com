@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  垃圾筐, 真垃圾筐, 机械, 气象
+title:  垃圾筐, 真垃圾筐, 机械
 category: Nature 
 ---
 
@@ -241,6 +241,10 @@ https://zhuanlan.zhihu.com/p/92940106
 
 “南开大学校长曹雪涛院士涉嫌论文数据造假事件”相关推文收录
 
+https://mp.weixin.qq.com/s/duqvHrh-iaA381xsnudNAA
+
+天津大学硕士举报其导师学术不端，123页材料称十年造假80篇论文！
+
 ----
 
 没过几年，荷兰人惠更斯也发明了自己的气泵，并通过了研究发现了一种“异常悬浮效应”——在气泵中，水竟然可以悬浮起来。
@@ -325,75 +329,3 @@ https://www.zhihu.com/zvideo/1350151967721754624
 https://mp.weixin.qq.com/s/DIEl5q9v8Rq5cgnlr2i7cA
 
 电磁弹射为什么能淘汰蒸汽发射？
-
-# 气象
-
-夏至三庚入伏，冬至逢壬数九。
-
-夏至以后的第3个庚日、第4个庚日分别为初伏（头伏）和中伏的开始日期，立秋以后的第一个庚日为末伏的第一天。因为每个庚日之间相隔10天，所以初伏、末伏规定的时间是10天。又因为每年夏至节气后的第3个庚日（初伏）出现的迟早不同，中伏的天数就有长有短，可能是10天，也可能是20天。
-
-冬至后逢第一个壬日开始叫“交九”，意思是寒冷的开始。
-
-----
-
-![](/images/img3/Hadley_Cell.png)
-
-考虑自转偏向力的Hadley Cells
-
-![](/images/img3/Hadley_Cell.png)
-
-不考虑自转偏向力的Hadley Cells（金星）
-
-https://mp.weixin.qq.com/s/UcchOEf59hku7uclxZFMrA
-
-距离地球630光年的地方，下起了“铁雨”
-
-https://www.seas.harvard.edu/climate/eli/research/equable/hadley.html
-
-Hadley Cells
-
-----
-
-https://mp.weixin.qq.com/s/0ZQvZNHOmiMZ1dr_-VXR6Q
-
-谁奠定了气候变化的基础？（John Tyndall）
-
-https://mp.weixin.qq.com/s/-NAua2Zecz5I43Ner73-ww
-
-PNAS前沿：厄尔尼诺现象大概率将在2020下半年爆发
-
-https://mp.weixin.qq.com/s/mzAgmh9JDQYAV2S9uJBfjw
-
-“圣婴”和“圣女”现象
-
-https://mp.weixin.qq.com/s/5fRHmNqQybS9GvKxpuc2TQ
-
-是不是真的“高处不胜寒”？
-
-https://mp.weixin.qq.com/s/Ez_FlfFOwpDKDqvIlJYfSQ
-
-2021首个全国冻哭预警地图出炉！今冬为啥这么冷？
-
-https://mp.weixin.qq.com/s/jQpUfIueOfCZ_Gu09JE94Q
-
-因为太冷，青岛的海面“冒烟了”！
-
-https://mp.weixin.qq.com/s/pe1IQJfziJvCJ9UGlcnLcw
-
-+4°C的世界
-
-https://mp.weixin.qq.com/s/1aRFQvQJozBL7Y_fSbB2ug
-
-今年冬天的最强寒潮，得从它说起（洋流）
-
-https://mp.weixin.qq.com/s/m9tP5wg19BKR9ZWeeNUaSQ
-
-破解一个存在已久的气候之谜（全新世极热事件）
-
-https://mp.weixin.qq.com/s/kfcq_SP1_u6yt_sIJLNSZA
-
-从美国德州超400万人遭遇停电危机，看电力系统背后的业务逻辑
-
-https://mp.weixin.qq.com/s/-ioJvIgny_qRFcrDyHhsBQ
-
-严寒停电，冰川断裂，《后天》里的未来离我们有多远？
