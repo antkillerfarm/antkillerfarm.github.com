@@ -349,6 +349,18 @@ https://www.cnblogs.com/JianXu/p/5468839.html
 
 Android logcat命令详解
 
+## 打包
+
+apk包就是android系统的安装包。
+
+aar是android中特有的归档文件，既包含字节码文件也包含android的资源文件等。
+
+jar是java字节码文件（class文件）的归档文件，其不包含android中的资源文件等信息。
+
+https://blog.csdn.net/it_yangkun/article/details/80119182
+
+Android打包APK,AAR,JAR
+
 ## 参考
 
 https://mp.weixin.qq.com/s/twfpUMf9CfXcgwtFFkJ4Ig
