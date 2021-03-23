@@ -87,6 +87,20 @@ https://www.zhihu.com/answer/812481811
 
 ----
 
+JIT编译最大的优势就是可以通过FDO（feedback-directed optimization）或者叫PGO（profile-guided optimization）来做优化，这样可以以少量的初始运行时开销，换取一些本来要通过重量级静态分析才可以得到、或者静态分析根本无法得到的一些运行时信息，然后基于它来做优化就可以事半功倍。
+
+因此，JIT并不一定不如AOT。
+
+https://zhuanlan.zhihu.com/p/19977592
+
+JIT编译，动态编译与自适应动态编译
+
+https://zhuanlan.zhihu.com/p/48236683
+
+使用Profile Guided Optimization提升Application的性能
+
+----
+
 为了在Android中支持新的Java7-8-9的新特性，Google又开发了D8和R8。
 
 https://juejin.im/post/5d70fb2ce51d4557ca7fddaa

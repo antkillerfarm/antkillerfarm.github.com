@@ -135,6 +135,22 @@ https://mp.weixin.qq.com/s/G3NGVV9wSHMMtFtq0MB6SA
 
 快速上手WebAssembly应用开发：Emscripten使用入门
 
+https://zhuanlan.zhihu.com/p/25800318
+
+WebAssembly系列（一）生动形象地介绍WebAssembly
+
+https://zhuanlan.zhihu.com/p/25669120
+
+WebAssembly系列（二）JavaScript Just-in-time (JIT)工作原理
+
+https://zhuanlan.zhihu.com/p/25718411
+
+WebAssembly系列（三）编译器如何生成汇编
+
+https://zhuanlan.zhihu.com/p/25754084
+
+WebAssembly系列（四）WebAssembly工作原理
+
 ----
 
 V8开发者Vyacheslav Egorov和Mozilla Hacks之间的source-map之战了。对于同一份source-map库的JS代码，Vyacheslav所魔改出的纯JS版本，其性能一举反超了Mozilla重写的Rust版。
