@@ -77,6 +77,16 @@ VMware是独立的第三方软件，而**KVM**作为一项虚拟化技术已经�
 
 除此虚拟PC之外，还有虚拟网卡（如virtio）和虚拟交换机（如ovs）。
 
+----
+
+有一对很知名的项目：Blue Pill和Red Pill (后来还有个New Red Pill)，其中蓝色药片着重于使用虚拟化技术对操作系统，安全软件，反外挂，反调试系统进行欺骗，来进行一些底层操作，而红色药片着重于识别当前是否处于被虚拟化的环境中，一些小众的分支还会尝试对虚拟化环境进行攻击，他一般常见于各种反外挂程序中。
+
+https://www.zhihu.com/question/359121561
+
+操作系统能否知道自己处于虚拟机中?
+
+----
+
 参考：
 
 https://mp.weixin.qq.com/s/Zmu57U-HlPsyby_qvHSVHQ
@@ -123,7 +133,7 @@ https://mp.weixin.qq.com/s/8Rr-hxKQyHpT7L-Zx7PkcA
 
 操作镜像：`docker image`
 
-列出容器：`docker ps`
+列出容器：`docker ps -a`
 
 3.容器和宿主机的文件交换
 
@@ -140,6 +150,14 @@ https://mp.weixin.qq.com/s/8Rr-hxKQyHpT7L-Zx7PkcA
 `exit`：退出后，会stop容器。
 
 Ctrl+p Ctrl+q：退出后，容器仍然运行。
+
+5.映射文件夹
+
+`docker run -it -v <host path>:<docker path> <image_name> /bin/bash`
+
+查看映射docker容器的路径：
+
+`docker inspect container_name | grep Mounts -A 20`
 
 参考：
 
@@ -350,27 +368,3 @@ https://fblitho.com/
 https://mp.weixin.qq.com/s/RS7O7prvkCvKyxkK3YQxtA
 
 Litho的使用及原理剖析
-
-## adb
-
-手机->PC：
-
-`adb pull sdcard/contacts_app.db`
-
-PC->手机：
-
-`adb push aaa/contacts_app.db /sdcard/`
-
-----
-
-https://www.cnblogs.com/caoxinyu/p/10568463.html
-
-Ubuntu adb报错：no permissions (user in plugdev group; are your udev rules wrong?);
-
-## tombstone
-
-当一个动态库（native 程序）开始执行时，系统会注册一些连接到debuggerd的signal handlers，当系统crash的时候，会保存一个tombstone文件到/data/tombstones目录下。
-
-https://www.cnblogs.com/CoderTian/p/5980426.html
-
-Android Tombstone分析

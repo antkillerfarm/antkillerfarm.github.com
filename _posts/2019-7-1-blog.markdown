@@ -170,29 +170,3 @@ Windows编程革命简史
 回顾2年前第一个舆情分析项目，自己对于NLP、DL一无所知，对于ML也只有肤浅的认识。仅仅凭借同事的一句提示——Solr，开始闷头开荒，一路下来竟也让我闯出了一番新天地。
 
 那个时代的我对于分词用的HMM，也曾顶礼膜拜。如今想来，恍如隔世。
-
-# 可视化++
-
-https://mp.weixin.qq.com/s/0BBvsqLFP1qRvO3TUaS8Tw
-
-10个流行的可视化面板
-
-https://mp.weixin.qq.com/s/VqHN-cIdNa8l1lKlu4AD4w
-
-24种可视化图表优缺点对比
-
-https://mp.weixin.qq.com/s/4nIKkAPDrYaTE1sGtbCO9A
-
-不使用直方图的6个原因以及应该使用哪个图替代
-
-https://mp.weixin.qq.com/s/72wcShrcjuI0ne1zo8jzIQ
-
-这次气死的不只是设计师，一定要给你点颜色瞧瞧
-
-https://mp.weixin.qq.com/s/58Y-6CUYDVOp8y_jT4BmSw
-
-31个有点意思数据可视化作品
-
-https://mp.weixin.qq.com/s/RGAU6TzlhYTqKAGop_Hd1A
-
-最受欢迎的50个数据可视化图表

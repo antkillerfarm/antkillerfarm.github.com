@@ -286,64 +286,70 @@ https://mp.weixin.qq.com/s/8tFPVJfGJ0G8FUu9m5TCug
 
 高并发中的线程与线程池
 
-# 可视化+
+# Android研究+
 
-https://mp.weixin.qq.com/s/UwPCDA89GH5X-HubeJddnQ
+## adb
 
-怎么画高大上的神经网络结构？试试这个！
+手机->PC：
 
-https://mp.weixin.qq.com/s/paIumcvQOsACntKM8YwcbA
+`adb pull sdcard/contacts_app.db`
 
-12个神经网络结构可视化工具
+PC->手机：
 
-https://mp.weixin.qq.com/s/MMzvZA55Xb2sOA7rJiXiEw
+`adb push aaa/contacts_app.db /sdcard/`
 
-那些酷炫的深度学习网络图怎么画出来的？
+----
 
-https://mp.weixin.qq.com/s/CqvranTh9dawJW5DP-oHpw
+https://www.cnblogs.com/caoxinyu/p/10568463.html
 
-手把手教你将矩阵画成张量网络图
+Ubuntu adb报错：no permissions (user in plugdev group; are your udev rules wrong?);
 
-https://mp.weixin.qq.com/s/SWpgNMDIRfRugWBhMyGrTQ
+## tombstone
 
-交互式《几何原本》再现江湖
+当一个动态库（native 程序）开始执行时，系统会注册一些连接到debuggerd的signal handlers，当系统crash的时候，会保存一个tombstone文件到/data/tombstones目录下。
 
-https://visualgo.net/zh
+https://www.cnblogs.com/CoderTian/p/5980426.html
 
-一个数据结构和算法的可视化网站
+Android Tombstone分析
 
-https://mp.weixin.qq.com/s/ZuzmCHoo4i8e5TjZUOTPGg
+## Logcat
 
-17种经典图表总结，轻松玩转数据可视化！
+官方文档：
 
-https://mp.weixin.qq.com/s/zDXEOHnmmFYYDuWU1ORzFQ
+https://developer.android.google.cn/studio/command-line/logcat
 
-Python中的时间序列数据可视化的完整指南
+参考：
 
-https://mp.weixin.qq.com/s/mGgOhuF5PVWzB5cie_ox0A
+https://www.cnblogs.com/JianXu/p/5468839.html
 
-Github上10个开源免费的后台控制面板你值得拥有！
+Android logcat命令详解
 
-https://mp.weixin.qq.com/s/BpruKFMyL37MDXvzkMxnzQ
+## 打包
 
-技术人最不该忽视可视化数据分析
+apk包就是android系统的安装包。
 
-https://mp.weixin.qq.com/s/mnKLpa_uPzoMrh7E7mtupg
+aar是android中特有的归档文件，既包含字节码文件也包含android的资源文件等。
 
-别动不动就画折线图了，教你4种酷炫可视化方法
+jar是java字节码文件（class文件）的归档文件，其不包含android中的资源文件等信息。
 
-https://mp.weixin.qq.com/s/jLBI1bEp0wDOqZo9zDsbDw
+https://blog.csdn.net/it_yangkun/article/details/80119182
 
-全面！手把手教你决策树可视化
+Android打包APK,AAR,JAR
 
-https://mp.weixin.qq.com/s/2uP5i7eFWgYRA7mt_rR39g
+## 参考
 
-深度学习模型图难画论文难中？这个ML Visual利器帮你快速画出漂亮的模型图
+https://mp.weixin.qq.com/s/twfpUMf9CfXcgwtFFkJ4Ig
 
-https://mp.weixin.qq.com/s/Y8PW3mKbUKgGPdxerqVNKA
+Android整体设计及背后意义
 
-数学表达式一键变图，CMU开发实用工具Penrose，堪称图解界LaTeX
+https://mp.weixin.qq.com/s/eEuNPtTaPwJ7hSghgeU32g
 
-https://mp.weixin.qq.com/s/EPstYM7u3O6mAWf3J5Lmkg
+Android Hook技术防范漫谈
 
-无代码工具的自动化概念概述
+https://mp.weixin.qq.com/s/AQI2S2oK7HFDs9lH-nsx5g
+
+Android性能优化系列：Java内存优化篇
+
+https://www.jianshu.com/p/80013a768a45
+
+Android soong build系统介绍

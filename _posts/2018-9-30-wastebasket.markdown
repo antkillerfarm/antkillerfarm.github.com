@@ -290,6 +290,14 @@ https://mp.weixin.qq.com/s/rpiOZWQwj92MiFQPXD-NMQ
 
 ----
 
+纵帆船、横帆船
+
+https://www.zhihu.com/question/449782036
+
+十八世纪帆船横渡大西洋大约要多久？
+
+----
+
 https://mp.weixin.qq.com/s/KuIf0oIkLjMTKp2FgAnpyA
 
 一口气做出12只同款雪糕，强迫症都被食物加工流水线治好了
