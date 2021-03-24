@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  linux学习心得（二）
+title:  Linux学习心得（二）
 category: linux 
 ---
 

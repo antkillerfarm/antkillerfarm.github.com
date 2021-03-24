@@ -460,3 +460,7 @@ https://mp.weixin.qq.com/s/XTIl505glmfCItuiwuPLwg
 https://mp.weixin.qq.com/s/fpnq3rkcmckip30a4SlysQ
 
 三维人脸识别研究进展综述
+
+https://mp.weixin.qq.com/s/QEUiq5CbASd4eAM6eDPa6A
+
+换脸算法和人脸驱动都有哪些核心技术，如何对其长期深入学习

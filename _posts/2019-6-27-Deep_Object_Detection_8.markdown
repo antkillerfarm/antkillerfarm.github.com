@@ -135,6 +135,14 @@ http://blog.csdn.net/zijin0802034/article/details/53535647
 
 G-CNN: an Iterative Grid Based Object Detector
 
+## D2D
+
+![](/images/img4/D2D.png)
+
+https://mp.weixin.qq.com/s/U15qB2PlQN3qpFBuQiY6RA
+
+Describe-to-Detect(D2D)：一种新的特征检测方法
+
 # 花式IOU
 
 https://zhuanlan.zhihu.com/p/57992040
@@ -410,15 +418,3 @@ https://mp.weixin.qq.com/s/2PLp2xNfhkHB3fPQr5Ts6g
 https://mp.weixin.qq.com/s/Pl8HABuVN27CZv-lvGROTw
 
 基于深度学习的目标检测算法近5年发展历史
-
-https://mp.weixin.qq.com/s/S6sz5dPgGNcJvrIAZ3ZjGg
-
-基于深度学习的通用物体检测算法对比探索
-
-https://mp.weixin.qq.com/s/9BCf0rCp660a5xQ2JNz3AQ
-
-深入理解one-stage目标检测算法（上篇）
-
-https://mp.weixin.qq.com/s/p9XaI8PSG0o1NWlkmCIn7w
-
-深入理解one-stage目标检测算法（下篇）

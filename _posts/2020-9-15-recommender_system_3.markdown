@@ -424,3 +424,7 @@ https://mp.weixin.qq.com/s/iHDGIHHlH2TqNL6iIEGVPg
 https://mp.weixin.qq.com/s/LZlskUK4dmOd5fLTZIATnQ
 
 如何提升链路目标一致性？爱奇艺短视频推荐之粗排模型优化历程
+
+https://mp.weixin.qq.com/s/Jfuc6x-Qt0rya5dbCR2uCA
+
+腾讯音乐：全民K歌推荐系统架构及粗排设计

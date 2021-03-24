@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  linux学习心得（一）
+title:  Linux学习心得（一）
 category: linux 
 ---
 
@@ -114,25 +114,6 @@ uuencode and uudecode：支持二进制文件与Base64之间的转换。
 # start-stop-daemon
 
 该命令用于启动和停止系统守护程序。
-
-# popen
-
-popen()函数通过创建一个管道，调用fork 产生一个子进程，执行一个shell以运行命令来开启一个进程。也就是说这个函数可以执行shell命令，而且还可以用fread或fgets来获取命令执行后的输出结果。
-
-例子如下：
-
-```c
-int8_t strcmd[256];
-memset(strcmd, 0 , sizeof(strcmd));
-sprintf(strcmd, "cat /etc/resolv.conf | awk '{printf $2}'");
-pfile = popen(strcmd, "r");
-if (pfile != NULL){
-	int8_t str[64];
-	bzero(str, sizeof(str));
-	fgets(str, sizeof(str), pfile);
-	pclose(pfile);
-}
-```
 
 # 软件包管理工具
 
@@ -269,6 +250,10 @@ https://mp.weixin.qq.com/s/CZ3qusMpNQwIudX5mcVeJw
 https://mp.weixin.qq.com/s/ElWRnRHgjle8SYhnVQRj2Q
 
 网络IO套路
+
+https://mp.weixin.qq.com/s/1i_TryNe_RlxCb2xWkPCXA
+
+同步阻塞网络IO
 
 ----
 

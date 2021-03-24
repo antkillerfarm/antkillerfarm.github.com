@@ -229,6 +229,10 @@ https://mp.weixin.qq.com/s/XwGvH0mTEf-jF5XQKk2lBw
 
 电子科大最新《深度半监督学习》综述论文，24页pdf
 
+https://zhuanlan.zhihu.com/p/355523266
+
+从SimCLR到BarLow Twins，一文了解自监督学习不断打脸的认知发展史
+
 # 对比学习
 
 https://mp.weixin.qq.com/s/r1uXn2jGsHZcZ8Nk7GnGFA

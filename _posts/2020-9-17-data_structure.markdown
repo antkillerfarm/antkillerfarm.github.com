@@ -197,6 +197,10 @@ https://blog.csdn.net/cywosp/article/details/23397179
 
 五分钟理解一致性哈希算法(consistent hashing)
 
+https://mp.weixin.qq.com/s/jxr2titD0BXBUEmAwkOi7A
+
+一致性哈希
+
 https://www.cnblogs.com/BCOI/p/9072444.html
 
 TREAP
@@ -236,6 +240,10 @@ https://juejin.im/post/5e509b27f265da57455b3f33
 https://www.cnblogs.com/linzworld/p/13720477.html
 
 从根源上探究红黑树的本质
+
+https://mp.weixin.qq.com/s/cESH1pmPiR5mpQC96RCoig
+
+红黑树杀人事件始末
 
 https://blog.csdn.net/wo541075754/article/details/54632929
 
@@ -284,6 +292,34 @@ https://mp.weixin.qq.com/s/KZq5SjPESQnQaNU1Mn5a-A
 最少知识原则（Least Knowledge Principle，LKP）或者迪米特法则（Law of Demeter，LOD）
 
 在架构领域，有两种常见架构方法RUP和TOGAF。
+
+----
+
+IoC（Inversion of control）：控制反转/反转控制。
+
+DI（Dependency Injection）：依赖注入。
+
+AOP（Aspect oriented programming）：面向切面编程
+
+参考：
+
+https://zhuanlan.zhihu.com/p/144241957
+
+面试被问了几百遍的IoC和AOP ，还在傻傻搞不清楚？
+
+https://mp.weixin.qq.com/s/IOV4FLJyxKM1q7Avh2j93g
+
+漫画:AOP面试造火箭事件始末
+
+https://segmentfault.com/a/1190000007469968
+
+彻底征服Spring AOP之理论篇
+
+https://segmentfault.com/a/1190000007469982
+
+彻底征服Spring AOP之实战篇
+
+----
 
 参考：
 

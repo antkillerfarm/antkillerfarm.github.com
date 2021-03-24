@@ -388,3 +388,7 @@ https://mp.weixin.qq.com/s/jRfOzKO6OlQLokIzipbqUQ
 https://zhuanlan.zhihu.com/p/339123850
 
 关于attention机制的一些细节的思考
+
+https://mp.weixin.qq.com/s/n4mzHSweOT-vDWBGs0XFbw
+
+卷积神经网络中的自我注意

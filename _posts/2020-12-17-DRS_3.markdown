@@ -273,6 +273,10 @@ https://mp.weixin.qq.com/s/VhzSzoM4X_Gmq8hoH6JFLw
 
 十大序列化推荐算法梳理
 
+https://mp.weixin.qq.com/s/XTjvH4Qz9bKKnLic0_MyYg
+
+推荐系统之协同过滤的前世今生
+
 # 推荐系统进阶+
 
 https://mp.weixin.qq.com/s/sDG5xm1JZ8rIEaVXeVQ5cA

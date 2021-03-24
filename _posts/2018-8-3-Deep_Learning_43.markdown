@@ -25,6 +25,10 @@ https://mp.weixin.qq.com/s/X96oI-duHwyCFAR79inlig
 
 ## 图像修复
 
+https://mp.weixin.qq.com/s/zSJCjPuo2wu4etjMZzGsBg
+
+图像修复研究进展综述
+
 https://mp.weixin.qq.com/s/33VKfq-jFHfn9GBQzFYq0Q
 
 震撼！英伟达用深度学习做图像修复，毫无ps痕迹

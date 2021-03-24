@@ -253,6 +253,10 @@ https://mp.weixin.qq.com/s/aeO0LYuHHDqz1Inf5ONBgQ
 
 没钱没人没经验，《流浪地球》的拍摄究竟有多艰难？
 
+https://www.zhihu.com/question/313987126
+
+越南网友是如何评价《流浪地球》的？
+
 ## 天文软件
 
 Space Engine是一款免费太空模拟程序，由俄罗斯天文学家和程序员Vladimir Romanyuk开发。有了它，你可以随意穿梭于浩瀚星尘之间，也可以驾驶一艘宇宙飞船，登陆到程序中的任何天体，尽情享受美丽的异星风情与震撼的天文奇观。

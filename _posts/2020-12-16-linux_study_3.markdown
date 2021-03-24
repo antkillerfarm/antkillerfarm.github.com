@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  linux学习心得（三）
+title:  Linux学习心得（三）
 category: linux 
 ---
 
@@ -247,6 +247,25 @@ https://tldp.org/HOWTO/Program-Library-HOWTO/shared-libraries.html
 
 Shared Libraries
 
+# popen
+
+popen()函数通过创建一个管道，调用fork产生一个子进程，执行一个shell以运行命令来开启一个进程。也就是说这个函数可以执行shell命令，而且还可以用fread或fgets来获取命令执行后的输出结果。
+
+例子如下：
+
+```c
+int8_t strcmd[256];
+memset(strcmd, 0 , sizeof(strcmd));
+sprintf(strcmd, "cat /etc/resolv.conf | awk '{printf $2}'");
+pfile = popen(strcmd, "r");
+if (pfile != NULL){
+	int8_t str[64];
+	bzero(str, sizeof(str));
+	fgets(str, sizeof(str), pfile);
+	pclose(pfile);
+}
+```
+
 # Linux参考资源
 
 https://mp.weixin.qq.com/s/n6D5_6K9TrnuXg3h6AiFNA
@@ -434,31 +453,3 @@ https://www.zhihu.com/answer/460715569
 https://mp.weixin.qq.com/s/QsgoONKwI7ds8Hnx2Wer6A
 
 Linux从程序到进程
-
-https://mp.weixin.qq.com/s/tguC-WOleKRWLfTmGdJlQg
-
-Linux文件系统的实现
-
-https://www.cnblogs.com/biyeymyhjob/archive/2012/07/20/2601655.html
-
-Linux写时拷贝技术(copy-on-write)
-
-https://zhuanlan.zhihu.com/p/296207162
-
-Linux I/O原理和Zero-copy技术全面揭秘
-
-https://mp.weixin.qq.com/s/cudK2dhw4jNr7I34luVKVw
-
-终于有人把零拷贝Zero-Copy讲懂了
-
-https://mp.weixin.qq.com/s/MNzSES3dlMuiwkffLWJGIg
-
-文件系统：隐匿在Linux背后的机制
-
-https://mp.weixin.qq.com/s/1JiXL1f3SSjsBojlJSNOpQ
-
-Linux的启动流程
-
-https://mp.weixin.qq.com/s/ZfprFQjVANuCE2N693gZBQ
-
-用户空间和内核空间

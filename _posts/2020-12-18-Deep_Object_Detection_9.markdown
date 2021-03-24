@@ -9,6 +9,18 @@ category: Deep Object Detection
 
 # 目标检测进阶
 
+https://mp.weixin.qq.com/s/S6sz5dPgGNcJvrIAZ3ZjGg
+
+基于深度学习的通用物体检测算法对比探索
+
+https://mp.weixin.qq.com/s/9BCf0rCp660a5xQ2JNz3AQ
+
+深入理解one-stage目标检测算法（上篇）
+
+https://mp.weixin.qq.com/s/p9XaI8PSG0o1NWlkmCIn7w
+
+深入理解one-stage目标检测算法（下篇）
+
 https://mp.weixin.qq.com/s/IRD0iIVXyENlUOyfSbmlBA
 
 目标检测的渐进域自适应
@@ -376,15 +388,3 @@ TTFNet: 最大程度提高训练效率的实时目标检测
 https://mp.weixin.qq.com/s/6R3myLyAeMMS0lR1GSlvcA
 
 细说物体检测中的Anchors
-
-https://mp.weixin.qq.com/s/psXJNlEawZlQ-ZdktDpjOw
-
-目标检测小tricks之样本不均衡处理
-
-https://zhuanlan.zhihu.com/p/54334986
-
-TridentNet：处理目标检测中尺度变化新思路
-
-https://mp.weixin.qq.com/s/eODjZUQQiROID9i4WOeEFQ
-
-三分支网络——目前目标检测性能最佳网络框架

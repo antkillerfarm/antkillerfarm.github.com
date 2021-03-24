@@ -285,6 +285,10 @@ https://mp.weixin.qq.com/s/TTU9LMG8TuB1gzgfCfWjjw
 
 从香农熵到手推KL散度：一文带你纵览机器学习中的信息论
 
+https://mp.weixin.qq.com/s/HZUDg8-39pF4E4wB1ZemOw
+
+小孩都看得懂的基尼不纯度
+
 ## Lorenz curve
 
 既然提到了基尼值，那么就再谈一下Lorenz curve吧。
