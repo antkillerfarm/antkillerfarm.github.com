@@ -51,6 +51,14 @@ F´(F Prime)是一个组件驱动的框架，可以快速开发和部署航天�
 
 https://github.com/nasa/fprime
 
+https://mp.weixin.qq.com/s/8Zepha-05GRiC5bGVp0LkQ
+
+Linux登陆火星，占有率再超Windows，NASA还在GitHub发布源码教程
+
+https://mp.weixin.qq.com/s/x9Nps_oGoVQd2PW3H2VdyA
+
+人类刚给火星送去Linux系统，以及一款安卓手机芯片
+
 ----
 
 https://mp.weixin.qq.com/s/SqL5WlQXQgNNiXHACfeN1A
@@ -120,10 +128,6 @@ https://mp.weixin.qq.com/s/LVVCA_WTd5PoAn_wHzlJjw
 https://mp.weixin.qq.com/s/eNG-zbHfrji3frbRbQI-Xw
 
 听！火星的声音！又一辆核动力火星车刚刚着陆，寻找远古火星生命
-
-https://mp.weixin.qq.com/s/x9Nps_oGoVQd2PW3H2VdyA
-
-人类刚给火星送去Linux系统，以及一款安卓手机芯片
 
 https://mp.weixin.qq.com/s/0gArlvImgT6V7xEg9SCLTQ
 
