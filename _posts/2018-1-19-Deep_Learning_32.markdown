@@ -401,3 +401,7 @@ https://mp.weixin.qq.com/s/9qGrkDFCd1bgeXRAaM8VGQ
 https://mp.weixin.qq.com/s/L4XPz4Moc3mmhR_7kK5OKg
 
 图神经网络知识蒸馏框架
+
+https://mp.weixin.qq.com/s/K3adKwK5jBIYZAFJR_hzGw
+
+图神经网络综述

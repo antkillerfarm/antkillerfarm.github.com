@@ -13,6 +13,10 @@ https://mp.weixin.qq.com/s/zDcbrZeK4tlO0jA3-s_lYg
 
 雷达方面的术语
 
+https://mp.weixin.qq.com/s/5UUEe6IiicuPGYHOgjwdgA
+
+雷达基本原理
+
 https://www.ll.mit.edu/outreach/introduction-radar-systems
 
 MIT：Introduction to Radar Systems

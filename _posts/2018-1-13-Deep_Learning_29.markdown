@@ -219,6 +219,10 @@ https://mp.weixin.qq.com/s/sT0CQEzYgukvENcyxJ8HUw
 
 使用TensorFlow和深度混合学习进行时间序列预测
 
+https://mp.weixin.qq.com/s/BtxSE5D5TMOMZ_yISkH4kg
+
+时间序列预测方法最全总结
+
 # 姿态/行为检测进阶+
 
 https://mp.weixin.qq.com/s/6HsL2B7p-XyvGWAb4SwALA

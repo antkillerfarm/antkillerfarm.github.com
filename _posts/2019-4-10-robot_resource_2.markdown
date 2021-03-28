@@ -407,6 +407,14 @@ https://mp.weixin.qq.com/s/ekN9AvS4V0dcDdBlGCs3Bg
 
 车道线检测：SCNN
 
+https://mp.weixin.qq.com/s/xXdbWpegLdxFMuHldMGKVA
+
+车道线Dark SCNN算法简述及车道线后处理代码细节简述
+
+https://www.cnblogs.com/guoyaohua/p/8940871.html
+
+SCNN车道线检测--(SCNN)Spatial As Deep: Spatial CNN for Traffic Scene Understanding（论文解读）
+
 https://mp.weixin.qq.com/s/pQUKFZRgG1LNPmE6oHY3GA
 
 CurcveLane-NAS：华为&中大提出一种结合NAS的曲线车道检测算法
@@ -448,21 +456,3 @@ https://mp.weixin.qq.com/s/BLEP6nmGSfPY3iMh_N3JKw
 **全自动泊车**为计算平台根据周边环境来确定并执行转向和加减速等全部操作，驾驶员可在车内或车外监控，对应于SAE L2级。
 
 **自主泊车**又称为代客泊车或一键泊车：指驾驶员可以在指定地点处召唤停车位上的车辆，或让当前驾驶的车辆停入指定或随机的停车位。整个过程正常状态下无需人员操作和监管，对应于SAE L3级别。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/56236181
-
-自动/自主泊车技术简介
-
-https://mp.weixin.qq.com/s/GN4u91Dc5uYLP8N8rptczA
-
-全自动泊车辅助F-APA简介
-
-https://mp.weixin.qq.com/s/o74udojH7jGPPoxJSSBdMg
-
-停车不再难，L2到L4的泊车辅助系统技术剖析
-
-https://mp.weixin.qq.com/s/M5VphyTAFXiK2mJhIsvyvA
-
-从自动泊车到自主泊车

@@ -257,6 +257,10 @@ https://mp.weixin.qq.com/s/nQywI6a2mzbupWAvu1W9_Q
 
 营销自动化系统设计与实现
 
+https://mp.weixin.qq.com/s/6j6GFJsytl2e914SVO1UVQ
+
+维护几十种语言和站点，爱奇艺国际站WEB端网页优化实践
+
 # 机器人/无人驾驶参考资源+
 
 https://mp.weixin.qq.com/s/cLhnFCQdftj6Qi5j-PWDzw

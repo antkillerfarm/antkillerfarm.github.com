@@ -127,6 +127,10 @@ https://mp.weixin.qq.com/s/lUzqR5eEcW7vb3vehuSzWQ
 
 Matplotlib 3D图
 
+https://mp.weixin.qq.com/s/OcA0SSWWihdqQerZXH8pdw
+
+使用NumPy和Matplotlib进行数据可视化
+
 ## Pandas
 
 Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。

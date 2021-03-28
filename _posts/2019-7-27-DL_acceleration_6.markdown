@@ -309,6 +309,10 @@ https://mp.weixin.qq.com/s/E7-MF18Y-UeKx694kGFHzA
 
 深度学习中的知识蒸馏技术（上）
 
+https://mp.weixin.qq.com/s/IkKig7I5_97y_siixEj72w
+
+协同训练
+
 # 硬件加速技巧
 
 多通道卷积操作最终可以转化为矩阵运算，如下图所示：
@@ -352,23 +356,3 @@ https://zhuanlan.zhihu.com/p/66958390
 https://mp.weixin.qq.com/s/Q1Ovl1LrT5Y6amVqlYpdbA
 
 基于GEMM实现的CNN底层算法被改？Google提出全新间接卷积算法
-
-https://jackwish.net/2019/gemm-optimization.html
-
-通用矩阵乘（GEMM）优化算法
-
-https://mp.weixin.qq.com/s/lqVsMDutBwsjiiM_NkGsAg
-
-详解Im2Col+Pack+Sgemm策略更好的优化卷积运算
-
-https://mp.weixin.qq.com/s/EgC2puTsIfEk1uvgWlHXZA
-
-基于how-to-optimize-gemm初探矩阵乘法优化
-
-https://mp.weixin.qq.com/s/w0YCm8TEPxFg0CR6g4A28w
-
-再探矩阵乘法优化
-
-https://mp.weixin.qq.com/s/moQnarr1U-8v834bNJ10Zw
-
-GPU上的高效softmax近似

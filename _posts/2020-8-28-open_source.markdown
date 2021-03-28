@@ -140,3 +140,7 @@ CMU：分布式机器学习原理与策略 AAAI2021教程，附221页ppt
 https://mp.weixin.qq.com/s/nK-9ck5S6noIETOb8b2dJw
 
 vivo AI计算平台弹性分布式训练的探索和实践
+
+https://mp.weixin.qq.com/s/EqLCyHn9we2zn-lCnunDNA
+
+WeNet更新：支持多机并行训练

@@ -327,3 +327,7 @@ AUC的缺陷
 https://zhuanlan.zhihu.com/p/33025359
 
 ROC和CMC曲线的理解（FAR, FRR的理解）
+
+https://mp.weixin.qq.com/s/5Kl311pNRSwjo0yDGsrySA
+
+小孩都看得懂的ROC

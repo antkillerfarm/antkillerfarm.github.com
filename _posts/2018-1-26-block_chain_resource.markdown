@@ -25,6 +25,10 @@ https://mp.weixin.qq.com/s/ebOZi1KtcHSKHLowgC-AOQ
 
 区块链技术原理与应用综述
 
+https://mp.weixin.qq.com/s/bMXGo0Kezx1CQwHoqwc9tA
+
+区块链技术前沿报告，32页pdf
+
 https://mp.weixin.qq.com/s/UvTc1ftOZq6Q57ksEYgzKA
 
 普通程序员如何快速上手区块链？这个课程的目录很有参考意义。

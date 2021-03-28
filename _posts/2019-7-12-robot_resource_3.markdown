@@ -9,6 +9,26 @@ category: resource
 
 # 机器人/无人驾驶参考资源
 
+## 泊车（续）
+
+参考：
+
+https://zhuanlan.zhihu.com/p/56236181
+
+自动/自主泊车技术简介
+
+https://mp.weixin.qq.com/s/GN4u91Dc5uYLP8N8rptczA
+
+全自动泊车辅助F-APA简介
+
+https://mp.weixin.qq.com/s/o74udojH7jGPPoxJSSBdMg
+
+停车不再难，L2到L4的泊车辅助系统技术剖析
+
+https://mp.weixin.qq.com/s/M5VphyTAFXiK2mJhIsvyvA
+
+从自动泊车到自主泊车
+
 ## 软件仿真
 
 https://mp.weixin.qq.com/s/yNr4_tEyYg_VBmNjIrjYug
@@ -386,10 +406,6 @@ V2X技术发展历程及应用研究
 https://mp.weixin.qq.com/s/UOfagdeiREP4Acakkvfd7A
 
 自动驾驶四轮独立驱动电动汽车的自适应分层轨迹跟踪控制方法
-
-https://www.cnblogs.com/guoyaohua/p/8940871.html
-
-SCNN车道线检测--(SCNN)Spatial As Deep: Spatial CNN for Traffic Scene Understanding（论文解读）
 
 https://mp.weixin.qq.com/s/NREmqVYXo6hWsIvzcnwIDA
 

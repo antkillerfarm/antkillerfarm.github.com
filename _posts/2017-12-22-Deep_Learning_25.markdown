@@ -37,6 +37,10 @@ https://mp.weixin.qq.com/s/guAgXdhZSbEAkERSB1sLRA
 
 多任务学习-Multitask Learning概述
 
+https://zhuanlan.zhihu.com/p/355147999
+
+《Multitask Learning》-多任务学习发展的关键节点
+
 https://mp.weixin.qq.com/s/A-CVKTz_moaFzTYywSt2gg
 
 张宇 杨强：多任务学习概述

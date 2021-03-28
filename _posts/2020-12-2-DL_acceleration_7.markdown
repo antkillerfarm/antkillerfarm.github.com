@@ -7,6 +7,28 @@ category: DL acceleration
 * toc
 {:toc}
 
+# 硬件加速技巧（续）
+
+https://jackwish.net/2019/gemm-optimization.html
+
+通用矩阵乘（GEMM）优化算法
+
+https://mp.weixin.qq.com/s/lqVsMDutBwsjiiM_NkGsAg
+
+详解Im2Col+Pack+Sgemm策略更好的优化卷积运算
+
+https://mp.weixin.qq.com/s/EgC2puTsIfEk1uvgWlHXZA
+
+基于how-to-optimize-gemm初探矩阵乘法优化
+
+https://mp.weixin.qq.com/s/w0YCm8TEPxFg0CR6g4A28w
+
+再探矩阵乘法优化
+
+https://mp.weixin.qq.com/s/moQnarr1U-8v834bNJ10Zw
+
+GPU上的高效softmax近似
+
 # 模型优化工具
 
 ## Amazon SageMaker Neo
@@ -370,23 +392,3 @@ https://mp.weixin.qq.com/s/qWJarPrjOrwxSX77xQ9rCw
 https://mp.weixin.qq.com/s/4aVY9vUBX_Bxht953r00sA
 
 在Keras中利用TensorNetwork加速神经网络
-
-https://mp.weixin.qq.com/s/5NM9M1oY8bwsEqdBRVYpMg
-
-网络规模更小、速度更快，这是谷歌提出的MorphNet
-
-https://mp.weixin.qq.com/s/SC3ebx-C4N4H8B_R6K09cg
-
-分段的人脸检测在移动端的应用
-
-https://mp.weixin.qq.com/s/_C5AvD3YmRH2dmBjbEZFrQ
-
-神经网络子网络压缩10倍，精确度保持不变
-
-https://zhuanlan.zhihu.com/p/65348860
-
-南邮提出实时语义分割的轻量级网络：LEDNET
-
-https://zhuanlan.zhihu.com/p/67272163
-
-百度提出关于网络压缩和加速的新剪枝算法

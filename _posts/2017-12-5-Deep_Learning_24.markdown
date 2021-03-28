@@ -371,96 +371,60 @@ https://mp.weixin.qq.com/s/kPaPB-2pal--Hlh9F7WxhA
 
 目标跟踪又添重磅开源工具箱，MMTracking来了
 
-# 人脸检测/识别+
+# AutoDL++
 
-https://mp.weixin.qq.com/s/pmnb_WnncL12T1IZoso5DA
+https://mp.weixin.qq.com/s/LxLTsz7T_lAkqfZ9voSX5Q
 
-DeepID
+强化学习网络结构搜索(一)
 
-https://mp.weixin.qq.com/s/kH3-WUX4rc2SaLJcGzVLcQ
+https://mp.weixin.qq.com/s/wL0prNVm5bKWOvEg3PE33g
 
-如何检测极小人脸？试试超分辨率
+强化学习网络结构搜索(二)
 
-https://github.com/ShiqiYu/libfacedetection
+https://mp.weixin.qq.com/s/9vGQUqKyf9Ct6im0zv6YiQ
 
-libfacedetection算法开源
+强化学习网络结构搜索(三)
 
-https://mp.weixin.qq.com/s/DkvQ86tgU4DarsmY_qTLdg
+https://mp.weixin.qq.com/s/1XDknbIapmuQi5eb61Jlaw
 
-最快人脸检测遇敌手！ZQCNN vs libfacedetection
+遗传算法与网络结构搜索
 
-https://mp.weixin.qq.com/s/PsToV8Z17tRzXW_AbaMNmg
+https://mp.weixin.qq.com/s/1zm2iMXD142Ug0_coVIGMg
 
-Blazeface人脸检测器
+Darts: 可微结构搜索
 
-https://mp.weixin.qq.com/s/5ANMZNaR2ayYMUQEJ6aM3w
+https://zhuanlan.zhihu.com/p/266102401
 
-人脸识别基于通用表示学习
+Auto Seg-Loss: 自动损失函数设计
 
-https://mp.weixin.qq.com/s/jrynQZgoljFi6zdVKWo5nw
+https://mp.weixin.qq.com/s/y3SIK1sAscrWQuZ3mB9lew
 
-在浏览器中实现AR试妆
+手动搜索超参数的一个简单方法
 
-https://mp.weixin.qq.com/s/lr9OVNiIN0x7k4cmNZoCUw
+https://mp.weixin.qq.com/s/ACxAAvvKK-DX5UDMe-RsXg
 
-用于人脸检测的SSH算法
+最新《神经架构搜索NAS》教程，33页pdf
 
-https://mp.weixin.qq.com/s/A5-Z6APwS1iFCUgYxtYNyA
+https://mp.weixin.qq.com/s/2hSmI8xo1jUHgWrEu3YBIA
 
-重磅！GroupFace人脸识别，刷新9个数据集SOTA
+一文读懂目前大热的AutoML与NAS
 
-https://mp.weixin.qq.com/s/-VknGwKKY14cT-lZ7sC43A
+https://mp.weixin.qq.com/s/1JgHE1juxuYEmKO9SXMssA
 
-人脸识别--基于深度学习以人类为中心的图像理解
+NAS+Det
 
-https://zhuanlan.zhihu.com/p/69542283
+https://mp.weixin.qq.com/s/xnqAPh3hlQq3_QDmk2lOLg
 
-人脸防伪检测挑战赛-俄初创公司夺冠,中美企业位列二三
+NAS在检测中的应用
 
-https://mp.weixin.qq.com/s/ROJtk8MSTlHJe-42-f1OYw
+https://mp.weixin.qq.com/s/nG_Mzlevs9ougnyeJyT38A
 
-部分遮挡下的人脸识别技术
+一文看懂AutoML
 
-https://mp.weixin.qq.com/s/VOclUEBXnAtmAZmZrzQQoA
+https://mp.weixin.qq.com/s/qou0uUQVsU306KvB5JMKVg
 
-面向大规模无标注视频的人脸对齐方法
+贝叶斯分析助你成为优秀的调参侠：自动化搜索物理模型的参数空间
 
-https://zhuanlan.zhihu.com/p/112140909
+https://mp.weixin.qq.com/s/pJ4cSS4qXQaM8ACv_Aq--A
 
-基于深度学习的人脸识别方法介绍
-
-https://mp.weixin.qq.com/s/CR4Nf_RklcXA45mswPv8Zw
-
-腾讯优图开源人脸检测算法DSFD，刷新两项数据集纪录
-
-https://mp.weixin.qq.com/s/B8r2YEd9UbKMTT8Tup2Y_w
-
-腾讯（优图）新技术的人脸检测（DSFD）
-
-https://mp.weixin.qq.com/s/iI-q0s8aSojeDFbasiFVKw
-
-人脸检测器：对DSFD的理解
-
-https://zhuanlan.zhihu.com/p/62954487
-
-旷视研究院新出8000点人脸关键点，堪比电影级表情捕捉
-
-https://mp.weixin.qq.com/s/bAlaCWg4OEprpoZqQFQg1w
-
-百度提出PyramidBox人脸检测算法
-
-https://mp.weixin.qq.com/s/CYZvFb7kryE-8HV3teGRzA
-
-有效遮挡检测的鲁棒人脸识别
-
-https://mp.weixin.qq.com/s/XTIl505glmfCItuiwuPLwg
-
-人脸聚类——Linkage Based Face Clustering via GCN
-
-https://mp.weixin.qq.com/s/fpnq3rkcmckip30a4SlysQ
-
-三维人脸识别研究进展综述
-
-https://mp.weixin.qq.com/s/QEUiq5CbASd4eAM6eDPa6A
-
-换脸算法和人脸驱动都有哪些核心技术，如何对其长期深入学习
+结合Sklearn的网格和随机搜索进行自动超参数调优

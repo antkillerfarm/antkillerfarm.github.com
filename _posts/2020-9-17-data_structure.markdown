@@ -139,6 +139,28 @@ https://mp.weixin.qq.com/s/aPepcwG_VMioqGQ_Fp3deg
 
 海量数据处理利器之布隆过滤器
 
+## 红黑树
+
+https://mp.weixin.qq.com/s/IaYnfEZ2bUXIpQvN3ZqFGA
+
+图解红黑树
+
+https://juejin.im/post/5e509b27f265da57455b3f33
+
+面试被问“红黑树”，我一脸懵逼...
+
+https://www.cnblogs.com/linzworld/p/13720477.html
+
+从根源上探究红黑树的本质
+
+https://mp.weixin.qq.com/s/cESH1pmPiR5mpQC96RCoig
+
+红黑树杀人事件始末
+
+https://mp.weixin.qq.com/s/f5rppHa9zL0M9IVNtzk7Og
+
+彻底搞懂“红黑树”...
+
 ## 参考
 
 https://mp.weixin.qq.com/s/JiYRhcTv2qgLfVyGzI8uHQ
@@ -229,22 +251,6 @@ https://mp.weixin.qq.com/s/M5syxE9Ln4UDLThPh5iuJg
 
 各种字符串Hash函数比较
 
-https://mp.weixin.qq.com/s/IaYnfEZ2bUXIpQvN3ZqFGA
-
-图解红黑树
-
-https://juejin.im/post/5e509b27f265da57455b3f33
-
-面试被问“红黑树”，我一脸懵逼...
-
-https://www.cnblogs.com/linzworld/p/13720477.html
-
-从根源上探究红黑树的本质
-
-https://mp.weixin.qq.com/s/cESH1pmPiR5mpQC96RCoig
-
-红黑树杀人事件始末
-
 https://blog.csdn.net/wo541075754/article/details/54632929
 
 Merkle Tree（默克尔树）算法解析（Merkle Tree，通常也被称作Hash Tree，顾名思义，就是存储hash值的一棵树。）
@@ -330,101 +336,3 @@ https://mp.weixin.qq.com/s/9gDGQhzRAL3pj35VAinZbQ
 https://mp.weixin.qq.com/s/KYq_nEXQ-5WYdYzZvGLGGg
 
 我向面试官讲解了单例模式，他对我竖起了大拇指
-
-# AI工具+
-
-https://mp.weixin.qq.com/s/3eoN0YHI84oomdTZO6TrvQ
-
-快速搞定机器人开发！Facebook联合CMU开源PyRobot框架
-
-https://mp.weixin.qq.com/s/Uih8JaRCaeD38o9AoovRmA
-
-字节跳动开源高性能分布式训练框架BytePS：兼容TensorFlow、PyTorch等
-
-https://mp.weixin.qq.com/s/o9cYmqwuvlbOuUXSNIuicg
-
-十个最常用深度学习图像/视频数据标注工具
-
-https://mp.weixin.qq.com/s/iKXZmhffiYaFHsIU21zVQA
-
-NeuralNLP-NeuralClassifier：腾讯开源深度学习文本分类工具
-
-https://mp.weixin.qq.com/s/suLJs_GjRsdYA5fwtsje7g
-
-腾讯AI开源框架Angel 3.0重磅发布：超50万行代码，支持3种算法，打造全栈机器学习平台
-
-https://mp.weixin.qq.com/s/adroDI2bm13o6Q40ECc7Zw
-
-MediaPipe: Google Research 开源的跨平台多媒体机器学习模型应用框架
-
-https://mp.weixin.qq.com/s/U2e4H1QjjBqH9YbElFLhxw
-
-Microsoft Icecaps：一个用于会话建模的开源工具包
-
-https://zhuanlan.zhihu.com/p/75584326
-
-combo:“Python机器学习模型合并工具库”简介
-
-https://github.com/arraiyopensource/kornia
-
-可微分的“OpenCV”：这是基于PyTorch的可微计算机视觉库
-
-https://mp.weixin.qq.com/s/5Pm03dLW9vbDukgWi1-Tug
-
-OpenARK：惊艳的增强现实、虚实交互开源库
-
-https://mp.weixin.qq.com/s/h0PwA9vtABWHgxd42yX3Fg
-
-当时尚遇上AI！港中文MMLab开源MMFashion工具箱
-
-https://github.com/Media-Smart/vedaseg
-
-vedaseg:A semantic segmentation toolbox in pytorch
-
-https://mp.weixin.qq.com/s/gGCyMq4PM_Whv-Ssiwt-HA
-
-秒杀Deepfake！微软北大提出AI换脸工具FaceShifter和假脸检测工具Face X-Ray
-
-https://mp.weixin.qq.com/s/2EHv669PUqqgvAGz3XoZ6Q
-
-FaceBook开源PyTorch3D：基于PyTorch的新3D计算机视觉库
-
-https://mp.weixin.qq.com/s/Z27oInh5rdxnxt1-KFAiRA
-
-1GB文本标记只需20秒！抱抱脸团队发布最新NLP工具
-
-https://mp.weixin.qq.com/s/8mpc7AblZyRw7LCh35vL2g
-
-哈工大讯飞联合实验室发布知识蒸馏工具TextBrewer
-
-https://mp.weixin.qq.com/s/Zu_IPBQVJtcwNln-xvEZxQ
-
-DarkLabel：支持检测、跟踪、ReID数据集的标注软件
-
-https://mp.weixin.qq.com/s/5klwQCPtiZOwFJYHDOpWFg
-
-语义分割标注工具Semantic Segmentation Editor快速安装指南
-
-https://mp.weixin.qq.com/s/1EeYmZGoa-xpWmIvUoqCyw
-
-瑞士小哥开源文本英雄Texthero：一行代码完成数据预处理
-
-https://mp.weixin.qq.com/s/p9HpH2e5ShQCFcCxVNvMbg
-
-清华开源迁移学习算法库
-
-https://mp.weixin.qq.com/s/vzUt-5C_dRAChEfQYLp4lA
-
-PyTorch实现，GitHub 4000星：这是微软开源的计算机视觉库
-
-https://mp.weixin.qq.com/s/5VeersQKxcT9AtFXS_CXnA
-
-推荐一款超高速、多特性的高性能序列推理引擎——LightSeq
-
-https://mp.weixin.qq.com/s/kWJZA0acOPi46c2_Gd9aeA
-
-安利一个开源的好工具Label Studio,闭环数据标注和模型训练
-
-https://mp.weixin.qq.com/s/b-w_jUqxGR7hY19auiar-A
-
-FAIR发布自监督训练库VISSL
