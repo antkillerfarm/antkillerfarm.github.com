@@ -258,6 +258,10 @@ https://mp.weixin.qq.com/s/k6llD4Ec9BS-ly04ZtsoJQ
 
 使用GCP开发带有强化学习功能的Roguelike游戏
 
+https://mp.weixin.qq.com/s/ptNDSuMOhbOKwqRrZVzV8Q
+
+不确定性决策与强化学习
+
 # 数学杂谈+++
 
 https://mp.weixin.qq.com/s/ff1CPp3VyNvqZUq6aiZYng

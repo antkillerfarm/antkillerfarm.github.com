@@ -330,3 +330,7 @@ MySQL磁盘清理
 https://mp.weixin.qq.com/s/t0gfW7UHzkKgNrAVyOfK7Q
 
 吊打MySQL，MariaDB到底强在哪？
+
+https://mp.weixin.qq.com/s/-QPabXE2plPB0lok-Ic9jA
+
+MySQL锁系统总结

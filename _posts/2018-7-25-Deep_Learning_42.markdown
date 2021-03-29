@@ -406,3 +406,7 @@ https://mp.weixin.qq.com/s/e_ltoKzqBhmicwb7vcFcoQ
 https://mp.weixin.qq.com/s/Yzbn8B9DsBErt9VbAQTY3w
 
 深度迁移学习方法的基本思路
+
+https://mp.weixin.qq.com/s/CWoKwJ0tyMm10ffgRXLXvg
+
+机器学习模型如何泛化到未知领域？微软亚研「领域泛化 (Domain Generalization)」综述论文概述理论、算法等
