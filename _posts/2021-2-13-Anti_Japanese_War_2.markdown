@@ -195,12 +195,6 @@ https://mil.news.sina.com.cn/history/2020-08-25/doc-iivhuipp0547778.shtml
 
 ----
 
-1952年2月18日，为了搜集更多有利情报，美军决定把被成功“策反”的几十名志愿军俘虏集结成队，分批次投放到朝鲜战场志愿军侧搜集情报。张文荣等5人也穿上志愿军军装，携带手雷、手枪、地图等工具，登上一架“C—46”运输机。飞机上还有11位美军情报人员，行动指挥官是哈里森。到达跳伞地点后，张文荣暗暗将手雷拉环扣在指头上，在跃出机舱的一刹那将手雷丢回机舱深处。
-
-https://www.zhihu.com/answer/1554703721
-
-----
-
 https://www.zhihu.com/answer/745311401
 
 为什么抗美援朝时中国和朝鲜军队装备那么落后却可以打过以美军为首的联合国军？
@@ -252,3 +246,7 @@ https://mp.weixin.qq.com/s/qx0E4O5PeGGAhtBh6GTYMg
 https://mp.weixin.qq.com/s/NjkvLJFHDurWFWnrJv4r5Q
 
 建国时的飞行员文化那么低，怎么能开飞机？
+
+https://mp.weixin.qq.com/s/2BDxUnZOE8E8PjEiOdmFrw
+
+给毛主席敬过鸡尾酒的女英雄，做手术把自己变成了男人（郭俊卿）

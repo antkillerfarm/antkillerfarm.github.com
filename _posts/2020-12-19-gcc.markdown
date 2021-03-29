@@ -311,6 +311,10 @@ https://zhuanlan.zhihu.com/p/91283238
 
 TVM图编译器Relay简单探究
 
+https://mp.weixin.qq.com/s/VE3CySjjS2rTpUDPnKcLTg
+
+陈天奇最新研究：递归模型编译器CORTEX
+
 # GLOW
 
 代码：

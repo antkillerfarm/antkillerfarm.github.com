@@ -47,6 +47,10 @@ https://mp.weixin.qq.com/s/XzyudySeceDueTDM36Q2Wg
 
 学好偏导
 
+https://mp.weixin.qq.com/s/MX8sFKJQZMDMHwkBJ8mCtQ
+
+5种神经网络常见的求导
+
 ## 随机初始化
 
 神经网络的参数的**随机初始化**的目的是使对称失效。否则的话，所有对称结点的权重都一致，也就无法区分并学习了。
