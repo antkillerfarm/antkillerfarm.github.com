@@ -144,3 +144,7 @@ vivo AI计算平台弹性分布式训练的探索和实践
 https://mp.weixin.qq.com/s/EqLCyHn9we2zn-lCnunDNA
 
 WeNet更新：支持多机并行训练
+
+https://mp.weixin.qq.com/s/RMDEvy-3-L-Rag1OrZLYhg
+
+深度学习模型的训练时内存次线性优化

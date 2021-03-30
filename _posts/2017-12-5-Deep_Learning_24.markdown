@@ -373,6 +373,18 @@ https://mp.weixin.qq.com/s/kPaPB-2pal--Hlh9F7WxhA
 
 # AutoDL++
 
+https://mp.weixin.qq.com/s/dS3nHGcQ1VoOyVBcRPFtkg
+
+AutoML都有哪些核心技术，如何对其进行长期深入学习
+
+https://mp.weixin.qq.com/s/A3Bg4-WoEQxFk3G5hCKNPQ
+
+连续可微分架构如何用于网络结构搜索
+
+https://mp.weixin.qq.com/s/0AE8w_0cZGcMZIwjUTKPrg
+
+如何学习AutoML在模型优化中的应用，这12篇文章可以作为一个参考
+
 https://mp.weixin.qq.com/s/LxLTsz7T_lAkqfZ9voSX5Q
 
 强化学习网络结构搜索(一)

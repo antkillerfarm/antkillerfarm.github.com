@@ -424,3 +424,7 @@ https://mp.weixin.qq.com/s/qOnMNbA9C7bcwZ6IvOxyCA
 https://mp.weixin.qq.com/s/oN6n7GXnqASKBbVS54rfGg
 
 陀螺仪工作原理及其厂家
+
+https://mp.weixin.qq.com/s/iMHYjOyF7MiAEqhwLwqRYA
+
+日本的传感器之王（基恩士）

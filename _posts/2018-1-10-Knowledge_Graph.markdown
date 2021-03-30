@@ -53,6 +53,10 @@ https://wenku.baidu.com/view/e69a3619fe00bed5b9f3f90f76c66137ee064f15.html
 
 知识图谱技术综述
 
+https://zhuanlan.zhihu.com/p/354927812
+
+什么是知识图谱
+
 https://wenku.baidu.com/view/b3858227c5da50e2534d7f08.html
 
 知识图谱技术原理介绍
@@ -412,15 +416,3 @@ https://mp.weixin.qq.com/s/MG_SrExDkbd1vVGLex0-RA
 https://mp.weixin.qq.com/s/QO34vyt3uBSKvnYSW0Kumg
 
 如何将知识图谱特征学习应用到推荐系统？
-
-https://mp.weixin.qq.com/s/ePJPoQlOveTrCvCTy8_Xxg
-
-知识图谱的技术与应用
-
-https://mp.weixin.qq.com/s/fuI9U7aZpuk-WX6GQNtOuA
-
-这是一份通俗易懂的知识图谱技术与应用指南
-
-https://mp.weixin.qq.com/s/lBeV6XWzk5bqNGiIMok-zw
-
-一文揭秘！自底向上构建知识图谱全过程

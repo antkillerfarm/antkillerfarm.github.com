@@ -137,6 +137,10 @@ https://mp.weixin.qq.com/s/6syX6eZ3l0qnH47GL8iulg
 
 ASO-S卫星流浪计划：一起揭秘太阳磁场的秘密
 
+https://mp.weixin.qq.com/s/4x9dfPsrUaXlE8_vxri7jg
+
+火箭发射失利后，一封初中生的信冲上热搜！
+
 # 模型压缩与加速进阶+
 
 https://mp.weixin.qq.com/s/5NM9M1oY8bwsEqdBRVYpMg

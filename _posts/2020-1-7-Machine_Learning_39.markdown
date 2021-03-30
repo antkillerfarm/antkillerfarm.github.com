@@ -376,3 +376,7 @@ https://zhuanlan.zhihu.com/p/60747096
 https://mp.weixin.qq.com/s/_cVNNZBBJljdWBPU9d38CA
 
 常见的损失函数超全总结
+
+https://mp.weixin.qq.com/s/P6xLYrNP4pNKtHcxAWAOKg
+
+数据竞赛中的各种loss function

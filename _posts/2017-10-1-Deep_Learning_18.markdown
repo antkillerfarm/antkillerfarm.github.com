@@ -237,7 +237,7 @@ https://zhuanlan.zhihu.com/p/355523266
 
 最简单的self-supervised方法
 
-# 对比学习
+## 对比学习
 
 https://mp.weixin.qq.com/s/r1uXn2jGsHZcZ8Nk7GnGFA
 
@@ -274,6 +274,10 @@ https://mp.weixin.qq.com/s/6qqFAQBaOFuXtaeRSmQgsQ
 https://mp.weixin.qq.com/s/SeAZERYdfqDbtqTLnuWfGg
 
 盘点近期大热对比学习模型：MoCo/SimCLR/BYOL/SimSiam
+
+https://mp.weixin.qq.com/s/jHVg-BMRRVNjAf6ZFEoPxQ
+
+自监督学习的SimCLRv2框架
 
 # AutoDL+
 
@@ -396,15 +400,3 @@ One Shot NAS总结
 https://mp.weixin.qq.com/s/e7Whr2Im5fu8O7zF95Afkw
 
 进化算法如何用于自动模型搜索(NAS)
-
-https://mp.weixin.qq.com/s/dS3nHGcQ1VoOyVBcRPFtkg
-
-AutoML都有哪些核心技术，如何对其进行长期深入学习
-
-https://mp.weixin.qq.com/s/A3Bg4-WoEQxFk3G5hCKNPQ
-
-连续可微分架构如何用于网络结构搜索
-
-https://mp.weixin.qq.com/s/0AE8w_0cZGcMZIwjUTKPrg
-
-如何学习AutoML在模型优化中的应用，这12篇文章可以作为一个参考
