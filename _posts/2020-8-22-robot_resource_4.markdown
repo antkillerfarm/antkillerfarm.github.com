@@ -281,6 +281,10 @@ https://mp.weixin.qq.com/s/FmqMg-j-Mf2nguHbuCyXAA
 
 自动驾驶中的驾驶行为建模和预测方法
 
+https://mp.weixin.qq.com/s/r8t8owBIwR26Ebr8AacJLw
+
+见多了概念车，概念拖拉机你听说过吗？
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。

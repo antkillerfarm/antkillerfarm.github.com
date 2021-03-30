@@ -49,7 +49,11 @@ https://mp.weixin.qq.com/s/8rqgDGejBZd51riVNZZ7tg
 
 使用Python验证常见的50个正则表达式
 
-# Trie树
+https://mp.weixin.qq.com/s/MFvJ8jcQf0pOiu-GRPMlFQ
+
+动手学正则表达式
+
+## Trie树
 
 Trie树也称字典树，因为其效率很高，所以在在字符串查找、前缀匹配等中应用很广泛，其高效率是以空间为代价的。
 
@@ -125,7 +129,7 @@ https://mp.weixin.qq.com/s/gBHmBLGILd6rZ-6cuelw0Q
 
 这可能是你听说过最快的稳定排序算法（Timsort）
 
-# Bloom Filter
+## Bloom Filter
 
 https://blog.csdn.net/zhaodedong/article/details/78186450
 
@@ -161,6 +165,20 @@ https://mp.weixin.qq.com/s/f5rppHa9zL0M9IVNtzk7Og
 
 彻底搞懂“红黑树”...
 
+## Skip List
+
+http://blog.csdn.net/u013709270/article/details/53470428
+
+跳跃表的原理及实现
+
+http://www.cppblog.com/mysileng/archive/2013/04/06/199159.html
+
+Skip List（跳跃表）原理详解与实现
+
+https://mp.weixin.qq.com/s/Zz9xjr36gd-FeUH6p6SKLg
+
+跳表：会跳的链表原来这么diao
+
 ## 参考
 
 https://mp.weixin.qq.com/s/JiYRhcTv2qgLfVyGzI8uHQ
@@ -182,10 +200,6 @@ https://mp.weixin.qq.com/s/yNn57Uw_-itzZXCSEAzrJw
 https://mp.weixin.qq.com/s/msv2NZ0aG96d3xQhX3HhNA
 
 一起搞定面试中的二叉树（二）
-
-http://blog.csdn.net/u013709270/article/details/53470428
-
-跳跃表的原理及实现
 
 https://mp.weixin.qq.com/s/t7Q0slX3q8Qlhg8F8pXrZQ
 
@@ -242,10 +256,6 @@ https://blog.csdn.net/yishizuofei/article/details/81660841
 https://mp.weixin.qq.com/s/D9kdAPws1XXZUyd0IKUzyw
 
 理解B+树
-
-http://www.cppblog.com/mysileng/archive/2013/04/06/199159.html
-
-Skip List（跳跃表）原理详解与实现
 
 https://mp.weixin.qq.com/s/M5syxE9Ln4UDLThPh5iuJg
 

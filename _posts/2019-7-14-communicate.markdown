@@ -259,6 +259,10 @@ https://mp.weixin.qq.com/s/u3VSyEtdcIgp8dCbwCaavA
 
 SSH只能用于远程Linux主机？那说明你见识太小了！
 
+https://mp.weixin.qq.com/s/o9zxzklBOFyNkOPMR4gdnA
+
+想避免重复请求/并发请求？这样处理才足够优雅
+
 # 传感器
 
 这里主要讨论自动驾驶方面的传感器，但也包括了一些非自动驾驶类的传感器知识。

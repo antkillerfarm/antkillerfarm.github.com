@@ -175,6 +175,14 @@ https://mp.weixin.qq.com/s/AUDDEYETPdJSyIdpMl4hLQ
 
 一文看懂ASML EUV光刻技术
 
+https://mp.weixin.qq.com/s/c_cUbBKVYKNgXrbTdvvfpw
+
+中国“芯痛”终极十问：我们能造原子弹，却造不出一枚小芯片？
+
+https://mp.weixin.qq.com/s/vp-CvAvigztYse2_TI9T6Q
+
+中国有没有必要举全国之力，去造一台光刻机？
+
 ## 芯片制造
 
 ![](/images/img4/Wafer_size.png)
@@ -336,19 +344,3 @@ http://m.uczzd.cn/webview/news?aid=15020380163392206798
 https://mp.weixin.qq.com/s/Lnolh9y0rf86wOGa-F1xmw
 
 计算机的诞生史
-
-https://mp.weixin.qq.com/s/f_rk-NPKNzYpbHOr5bgluw
-
-一文了解半导体的过去、现在和未来
-
-https://mp.weixin.qq.com/s/A6tc00Azj9AM-FApt5CkTQ
-
-AMD YES！背后不为人知的故事
-
-https://mp.weixin.qq.com/s/EfjhstpXsl6sG9q_-qQjXQ
-
-世界半导体集成电路发展史
-
-https://mp.weixin.qq.com/s/pSKQ3lRYV13qU_5DaOw2HQ
-
-晶体管发展历程回顾

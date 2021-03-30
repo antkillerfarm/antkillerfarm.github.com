@@ -324,3 +324,41 @@ https://mp.weixin.qq.com/s/ZIFEom7wpQll_DgE8bUxtA
 https://zhuanlan.zhihu.com/p/347705276
 
 MMAction2: 新一代视频理解工具箱
+
+# 迁移学习+
+
+https://zhuanlan.zhihu.com/p/57656210
+
+Deep Domain Adaptation论文集(五)：基于数据重构的迁移方法
+
+https://zhuanlan.zhihu.com/p/57930557
+
+Deep Domain Adaptation论文集(六)：源域与目标域特征空间不一致的处理方法
+
+https://zhuanlan.zhihu.com/p/58514431
+
+Domain Adaptation：不用深度网络，如何处理源域和目标域异构问题？
+
+https://zhuanlan.zhihu.com/p/272508224
+
+Domain Adaptation基础概念与相关文章解读
+
+https://mp.weixin.qq.com/s/7QrIfNXQgSqYC1SOFUOlgQ
+
+对迁移学习中域适应的理解和3种技术的介绍
+
+https://mp.weixin.qq.com/s/e_ltoKzqBhmicwb7vcFcoQ
+
+迁移学习-该做的和不该做的
+
+https://mp.weixin.qq.com/s/Yzbn8B9DsBErt9VbAQTY3w
+
+深度迁移学习方法的基本思路
+
+https://mp.weixin.qq.com/s/CWoKwJ0tyMm10ffgRXLXvg
+
+机器学习模型如何泛化到未知领域？微软亚研“领域泛化 (Domain Generalization)”综述论文概述理论、算法等
+
+https://mp.weixin.qq.com/s/ZuiKVan3EqOQDR1wjH01WA
+
+基于小样本学习的图像分类技术综述

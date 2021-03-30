@@ -326,3 +326,7 @@ https://mp.weixin.qq.com/s/r4aHwAB108zev5fhWqB-XQ
 https://mp.weixin.qq.com/s/wk_MGF1F7W2YP0VvM_aY3g
 
 向量召回在躺平APP的实践
+
+https://mp.weixin.qq.com/s/Aaw7sG1ptnhq7CBUaf3ztw
+
+广告模型初探（二）

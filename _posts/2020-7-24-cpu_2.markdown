@@ -7,7 +7,25 @@ category: resource
 * toc
 {:toc}
 
-# CPU（续）
+# CPU
+
+## 历史（续）
+
+https://mp.weixin.qq.com/s/f_rk-NPKNzYpbHOr5bgluw
+
+一文了解半导体的过去、现在和未来
+
+https://mp.weixin.qq.com/s/A6tc00Azj9AM-FApt5CkTQ
+
+AMD YES！背后不为人知的故事
+
+https://mp.weixin.qq.com/s/EfjhstpXsl6sG9q_-qQjXQ
+
+世界半导体集成电路发展史
+
+https://mp.weixin.qq.com/s/pSKQ3lRYV13qU_5DaOw2HQ
+
+晶体管发展历程回顾
 
 ## AVX
 
