@@ -317,6 +317,10 @@ https://mp.weixin.qq.com/s/ivl_IWXsDon4oXr0oDe1ZA
 
 打造万物识别之利器——微信扫一扫植物识别篇
 
+https://mp.weixin.qq.com/s/Y5-HytenpcMUyh7z3VLOFQ
+
+打造万物识别之利器——微信扫一扫名画识别篇
+
 https://zhuanlan.zhihu.com/p/112719984
 
 全面理解搜索Query：当你在搜索引擎中敲下回车后，发生了什么？

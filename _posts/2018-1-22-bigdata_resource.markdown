@@ -31,6 +31,24 @@ https://people.eecs.berkeley.edu/~alig/cs294-91/
 
 CS294-91 Distributed Computing
 
+## 分布式事务
+
+https://mp.weixin.qq.com/s/yBquVKyKnhpy2yPxY-0eqA
+
+大白话聊聊分布式事务
+
+https://mp.weixin.qq.com/s/2AL3uJ5BG2X3Y2Vxg0XqnQ
+
+如何选择分布式事务解决方案？
+
+https://mp.weixin.qq.com/s/TFGRcHV6EgeLB45OEJPRXw
+
+来了！阿里开源分布式事务解决方案Fescar
+
+https://mp.weixin.qq.com/s/4AYMb_v3GctPddpKUZUUfw
+
+25张图让你彻底掌握分布式事务原理
+
 ## 杂谈
 
 面对大规模数据的计算和存储时，有两种处理思路：
@@ -88,14 +106,6 @@ https://mp.weixin.qq.com/s/2xohw5r4cirbbL933EPK5A
 https://mp.weixin.qq.com/s/ACQVjdpMDrd7wh_pMLWScw
 
 分布式服务框架设计要点（续）
-
-https://mp.weixin.qq.com/s/yBquVKyKnhpy2yPxY-0eqA
-
-大白话聊聊分布式事务
-
-https://mp.weixin.qq.com/s/2AL3uJ5BG2X3Y2Vxg0XqnQ
-
-如何选择分布式事务解决方案？
 
 https://mp.weixin.qq.com/s/910pclefErC4Tx7NujJamg
 

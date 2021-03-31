@@ -200,6 +200,26 @@ https://www.zhihu.com/answer/1742334537
 
 ----
 
+对于高温来说，质量最大的微观粒子以光速运动时即为温度的上限，数值超过$$10^32$$K，称为普朗克温度。
+
+焦耳-汤姆森效应：气体在等焓的环境下膨胀，会使温度上升或下降。另外，存在一个所谓反转温度，当环境温度低于反转温度，通常表现为温度下降，反之温度上升。
+
+气体等焓膨胀时存在两种变化：分子平均距离增加，势能上升令动能下降，使温度下降；分子平均距离增加也会导致单位时间内平均碰撞次数下降，碰撞转化的势能下降，动能上升导致温度上升。
+
+总结起来就是当环境温度低于反转温度时，前者导致的温度下降比较显著，而环境温度高于反转温度时，后者导致的温度上升比较显著。大部分气体的反转温度都高于室温，即膨胀过程温度下降。
+
+但是，氢气和当时还没有被分离出来的氦气都是例外，它们的反转温度要远低于室温，即便制取到了它们在室温下膨胀反而会升温。
+
+![](/images/img4/James_Dewar.jpg)
+
+杜瓦通过氯甲烷-乙烯-氧气-氢气多级串联的方式制得了液氢。
+
+https://zhuanlan.zhihu.com/p/360884198
+
+科学史上最经典的“大力出奇迹”，莫过于用“土法制冷”挑战绝对零度
+
+----
+
 https://mp.weixin.qq.com/s/ZIHZ8W993OoW4X1apOGXjQ
 
 物理学发展史上有哪些重要的时刻？
@@ -247,47 +267,3 @@ https://mp.weixin.qq.com/s/Kfiz22KpxHtkQof3C5g81A
 https://mp.weixin.qq.com/s/b22vJHOrm_mOMa71TidN4w
 
 八大数学预言
-
-https://mp.weixin.qq.com/s/-4yzwG_LS1J_svR1CiOcpQ
-
-一道闪电掉进海里，会电死多少鱼？
-
-https://mp.weixin.qq.com/s/0CHFXs8IAxFIwvy7hOcnnw
-
-不加色素做出彩虹色巧克力，科学家浪漫起来也太硬核了
-
-https://mp.weixin.qq.com/s/GuXzR6Xf46ByomcVLzai3Q
-
-干洗店用的一种东西，居然跟生命起源有关系？
-
-https://mp.weixin.qq.com/s/ZxdeUFnkwfBH18hDrBDVcQ
-
-为什么夏天更容易出轨？
-
-https://mp.weixin.qq.com/s/dIJS9gebnqFh-nnaoosumA
-
-科学家还是灭世者？记那些原子弹背后的人
-
-https://mp.weixin.qq.com/s/iMIkyMxD5vr_iQU8cL7xSg
-
-轻原子核中的宇称不守恒
-
-https://mp.weixin.qq.com/s/cEGUr0kmP9UwlAoxgFuKGQ
-
-想减肥么？要不把体重秤摆在树荫下试试？（光压）
-
-https://mp.weixin.qq.com/s/IG4ViVlLuOwPlUzpliyKjg
-
-谁统一了两种基本力？（Steven Weinberg）
-
-https://mp.weixin.qq.com/s/bg9w0RGjUl0xIAu8Mjl57w
-
-她是奠基“核裂变”理论的物理学家，却拒绝了曼哈顿计划（Lise Meitner）
-
-https://mp.weixin.qq.com/s/2IZCvRo6YlBwsQwfDDMbxw
-
-美国原子弹之父被骂了9年！最后他上台领奖，竟一把推开了总统......（Julius Robert Oppenheimer）
-
-https://mp.weixin.qq.com/s/HT2jrh-ICmkgTBFLEl0Qpw
-
-从无量纲常数，到声速极限
