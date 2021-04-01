@@ -301,6 +301,10 @@ https://mp.weixin.qq.com/s/Jks-eZAinOvvWxKr0S-5Lg
 
 使用计算机视觉来做异常检测
 
+https://zhuanlan.zhihu.com/p/116235115
+
+异常检测Anomaly Detection
+
 # 因果推理
 
 https://mp.weixin.qq.com/s/doi26r9AVIMbpkZ01wsCZA

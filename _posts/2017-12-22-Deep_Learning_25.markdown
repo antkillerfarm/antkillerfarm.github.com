@@ -189,6 +189,10 @@ https://mp.weixin.qq.com/s/vFHYk7202bSZ214Za_SOtQ
 
 2021年浅谈多任务学习
 
+https://mp.weixin.qq.com/s/pvQHUXo83hMfH8kCumXSQA
+
+如何利用多任务学习提升模型性能？
+
 # 人脸检测/识别
 
 ## OHEM

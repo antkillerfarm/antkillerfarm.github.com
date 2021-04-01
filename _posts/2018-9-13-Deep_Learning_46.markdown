@@ -221,6 +221,10 @@ https://mp.weixin.qq.com/s/TcjaK7dzU44_EA6Hp1oc0g
 
 日漫迷有福了！这个系统可以全自动翻译日漫，再也不用啃生肉了
 
+https://mp.weixin.qq.com/s/gd86GgUxsWCKn6NihuHzZw
+
+58安全-证件识别之版面分析实践
+
 # AI可解释性
 
 XAI(Explainable Artificial Intelligence)

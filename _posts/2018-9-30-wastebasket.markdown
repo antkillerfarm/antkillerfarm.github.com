@@ -221,6 +221,14 @@ https://mp.weixin.qq.com/s/YyXpzyvkSvRd4KR8Wlac9g
 
 # 真垃圾筐
 
+科大黄秋原、同济沈海英、交大钱璐璐、复旦李敏、中科大陈璐，由于手段极其高级，所以现在被网友称为“学术圈妲己”。
+
+https://www.zhihu.com/answer/761750649
+
+学术圈五大蛊王吃瓜汇总
+
+----
+
 https://zhuanlan.zhihu.com/p/92515874
 
 方舟子: P图技术谁最高？中国院士曹雪涛

@@ -145,6 +145,10 @@ https://mp.weixin.qq.com/s/vpz6bp3PT1IDzZervyOfqw
 
 QUIC协议原理分析
 
+https://mp.weixin.qq.com/s/Bm_4M-QCcWYRqv1V8a-J-A
+
+QUIC协议原理浅解
+
 https://mp.weixin.qq.com/s/_RAXrlGPeN_3D6dhJFf6Qg
 
 让互联网更快的协议，QUIC在腾讯的实践及性能优化

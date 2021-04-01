@@ -193,11 +193,21 @@ Mel-frequency Cepstral Coefficients是由Paul Mermelstein提出的一种音频�
 
 1 double-delta energy feature
 
+其他的语音特征还有：
+
+- Amplitude Envelope
+- Root-Mean-Square Energy
+- Zero Crossing Rate
+
 参考：
 
 https://mp.weixin.qq.com/s/KFBINcap3dIOVPjpBEbj6w
 
 浅谈MFCC/HMM/GMM/EM/LM
+
+https://mp.weixin.qq.com/s/LI-jGrG19IZH9QY9cjqQ3A
+
+音频时域特征的提取
 
 ## 计算能量谱
 

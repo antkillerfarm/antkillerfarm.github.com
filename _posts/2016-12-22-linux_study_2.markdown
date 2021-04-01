@@ -200,7 +200,7 @@ https://mp.weixin.qq.com/s/Od17bQhpd3FYE2GQd-kvaQ
 
 iOS代码染色原理及技术实践（gcov，gcno，gcda）
 
-# Linux命令参考
+# Linux命令/工具
 
 https://mp.weixin.qq.com/s/7ZVpdQOwNkIjW-16Mp8dcA
 
@@ -241,6 +241,10 @@ python模块之psutil详解
 https://mp.weixin.qq.com/s/EHAvQKsMqHqXW0dFIpSL0Q
 
 Sysstat：开源免费的Linux系统的监控工具
+
+https://mp.weixin.qq.com/s/-m8q2TzlfpvSaPRqGsQPbQ
+
+一个惊人快速的终端录像工具，也能录制VSCode和Chrome窗口（t-rec）
 
 # 时间的表示方法
 
