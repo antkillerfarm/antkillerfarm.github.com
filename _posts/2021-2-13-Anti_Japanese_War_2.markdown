@@ -61,6 +61,18 @@ https://mp.weixin.qq.com/s/rikBKiBRu4gdP2pG590R1Q
 
 ----
 
+日本侵华时有不少鬼子会讲所谓“协和语”的，就是抗战老片里那种“你滴，什么滴干活？“、”这里，八路滴有？”之类的怪话。
+
+----
+
+1945年日本投降后，大批日本官兵放弃遣返回国的机会，转而加入解放军，在中国内战中发挥独特作用。就解放军序列而言，参加第四野战军的日本人最多，主要是四野所在的东北战区当初是日军驻扎最密集的地区。当然也有例外，祖籍日本九州的原日本炮兵军官日向胜就参加了山海关内的解放军，并一路晋升当上团长，他在参加解放军的日本人中绝对是佼佼者。
+
+https://view.news.qq.com/a/20150731/008984.htm
+
+日向胜：参与围歼张灵甫74师的原日本兵
+
+----
+
 https://mp.weixin.qq.com/s/gF3Hv07zzLUQqGQzdYpzQw
 
 丢人丢大了！日本人给中国抗日神剧编了本书，正满世界传播！
@@ -153,6 +165,8 @@ https://view.inews.qq.com/a/20201203A04JCX00
 
 在上甘岭战役中，唐章洪靠着手中的一门82毫米迫击炮歼敌420余人。
 
+余新发使用的并不是步枪，而是一挺美式重机枪。在千佛山阻击战期间，他杀伤了120多名敌人，荣立特等功。
+
 https://www.zhihu.com/question/291778953
 
 世界上都有过哪些厉害的狙击手和他们的故事？
@@ -163,11 +177,15 @@ https://mil.news.sina.com.cn/history/2021-01-04/doc-iiznezxt0466051.shtml
 
 https://xw.qq.com/cmsid/20210211A00C5O00
 
-志愿军最强狙击手，比狙神张桃芳还厉害，被俘美军：我不敢抬头
+志愿军最强狙击手，比狙神张桃芳还厉害，被俘美军：我不敢抬头（邹习祥）
 
 https://mil.news.sina.com.cn/history/2020-12-14/doc-iiznezxs6838219.shtml
 
 黄继光战友唐章洪：“神炮手”是这样炼成的
+
+https://m.sohu.com/a/363061739_120324913
+
+这位志愿军神射手，一场战斗杀伤120多人，荣立特等功（余新发）
 
 ----
 
@@ -196,61 +214,3 @@ https://www.zhdate.com/news_history/78523.html
 https://mil.news.sina.com.cn/history/2020-08-25/doc-iivhuipp0547778.shtml
 
 抗美援朝打3年谈2年？美国是怎样把筹码一个个谈丢的
-
-----
-
-https://www.zhihu.com/answer/745311401
-
-为什么抗美援朝时中国和朝鲜军队装备那么落后却可以打过以美军为首的联合国军？
-
-https://zhuanlan.zhihu.com/p/262573038
-
-最惨烈一战“铁在烧”，为什么中国军队是“轻步兵之王”？
-
-https://www.ershicimi.com/p/17c259dbcd4fee70edc8751dfd17fc64
-
-金刚川败于韩军，文登川干翻美军：68军军长低调无名，51岁病逝
-
-https://user.guancha.cn/main/content?id=214847
-
-志愿军只是打败了美国吗？不，他们为中国赢得了未来！
-
-https://www.zhihu.com/question/265555686
-
-为什么美军在全球多个国家有驻军，似乎只有在日本才有爆出强奸案等恶性新闻?
-
-https://www.sohu.com/a/435953580_605774
-
-抗美援朝时，美国“黑人连”主动向志愿军投降，到底怎么回事？
-
-https://www.zhihu.com/question/278212950
-
-部队里一等功有多难获得，为什么看见的多是二等功？
-
-https://mp.weixin.qq.com/s/QSS7dIe1MeIOBu6tko9maQ
-
-美国人万万没想到，这个不起眼的留学生，将会成为中国雷达之父（毕德显）
-
-https://mp.weixin.qq.com/s/mMO-3Gi6yMsLhMKB3syerg
-
-长津湖战役志愿军表现最差的部队，伤亡高达3591人，歼敌仅82人
-
-https://www.sohu.com/a/258552764_100074407
-
-八一勋章、独立自由勋章、解放勋章等，你了解多少呢？
-
-https://zhuanlan.zhihu.com/p/348870987
-
-180师惨败，志司有意撤销其建制，新任师长李钟玄强烈反对
-
-https://mp.weixin.qq.com/s/qx0E4O5PeGGAhtBh6GTYMg
-
-砥平里失利，全军北撤，这支部队却逆向南行，去执行一项特殊任务
-
-https://mp.weixin.qq.com/s/NjkvLJFHDurWFWnrJv4r5Q
-
-建国时的飞行员文化那么低，怎么能开飞机？
-
-https://mp.weixin.qq.com/s/2BDxUnZOE8E8PjEiOdmFrw
-
-给毛主席敬过鸡尾酒的女英雄，做手术把自己变成了男人（郭俊卿）

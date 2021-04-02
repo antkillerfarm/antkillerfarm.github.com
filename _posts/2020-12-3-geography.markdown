@@ -372,3 +372,7 @@ https://zhuanlan.zhihu.com/p/23284525
 https://mp.weixin.qq.com/s/irMd_sRRwZhbTuIXo3na6Q
 
 今天，说一下人工钻石（钻石半导体）
+
+https://mp.weixin.qq.com/s/9yVgUXorOHB8VGmchgJgGQ
+
+1,000,000,000,000,000,000次雷击！（活性磷）

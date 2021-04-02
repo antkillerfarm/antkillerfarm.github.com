@@ -33,6 +33,10 @@ https://mp.weixin.qq.com/s/QP8q478MWV1ilHxQek4JOA
 
 ----
 
+上世纪60年代，贝尔实验室在研制电话与电脑的交互。由于0-9只有十个数字，按照x乘以x的方式，怎么排列都不完美。3乘3会多一个，3乘4就缺两个。少一个数字肯定不行，所以最后选择了3乘4的排列方式。于是多出来的两个，就变成了*和#。
+
+----
+
 https://www.zhihu.com/answer/683230849
 
 HTC为什么衰败？
@@ -212,12 +216,6 @@ https://mp.weixin.qq.com/s/KPMhTztucDyGTa4Dl74lUA
 https://mp.weixin.qq.com/s/iMsfYla9UCaU4iYkIgpd9A
 
 从再版游戏机看半导体发展的三十年
-
-https://mp.weixin.qq.com/s/Ud4f5L2tYNbP1oURVBszag
-
-俄罗斯自研Elbrus CPU参数曝光，CEO年近九旬仍未退休
-
->Boris Babayan，1933年生，俄罗斯科学院院士，Intel院士。俄罗斯CPU之父。
 
 https://mp.weixin.qq.com/s/0_8a_kRBntbav4HPSqFLiA
 

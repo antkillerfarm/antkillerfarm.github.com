@@ -11,6 +11,15 @@ category: Attention
 
 ## Self Attention（续）
 
+下表展示了Self Attention相对于其他运算的计算量分析：
+
+| Layer Type | Complexity per Layer | Sequential Operations | Maximum Path Length |
+|:--:|:--:|:--:|:--:|
+| Self-Attention | $$O(n^2 \cdot d)$$ | $$O(1)$$ | $$O(1)$$ |
+| Recurrent | $$O(n \cdot d^2)$$ | $$O(n)$$ | $$O(n)$$ |
+| Convolutional | $$O(k \cdot n \cdot d^2)$$ | $$O(1)$$ | $$O(\log_k(n))$$ |
+| Self-Attention (restricted) | $$O(r \cdot n \cdot d)$$ | $$O(1)$$ | $$O(n/r)$$ |
+
 其中，n表示序列长度，d表示词向量的维度，k表示卷积核的大小，r表示restricted self-attention中的neighborhood的数量。
 
 可以看出，在n小于d的情况下，Self Attention是有计算量的优势的。
@@ -73,7 +82,7 @@ https://mp.weixin.qq.com/s/ENpXBYQ4hfdTLSXBIoF00Q
 
 我们之前所描述的传统的Attention Mechanism是Soft Attention。Soft Attention是参数化的（Parameterization），因此可导，可以被嵌入到模型中去，直接训练。梯度可以经过Attention Mechanism模块，反向传播到模型其他部分。
 
-相反，Hard Attention是一个随机的过程。Hard Attention不会选择整个encoder的输出做为其输入，Hard Attention会依概率Si来采样输入端的隐状态一部分来进行计算，而不是整个encoder的隐状态。为了实现梯度的反向传播，需要采用蒙特卡洛采样的方法来估计模块的梯度。
+相反，Hard Attention是一个随机的过程。Hard Attention不会选择整个encoder的输出做为其输入，Hard Attention会依概率$$S_i$$来采样输入端的隐状态一部分来进行计算，而不是整个encoder的隐状态。为了实现梯度的反向传播，需要采用蒙特卡洛采样的方法来估计模块的梯度。
 
 两种Attention Mechanism都有各自的优势，但目前更多的研究和应用还是更倾向于使用Soft Attention，因为其可以直接求导，进行梯度反向传播。
 
@@ -280,17 +289,3 @@ The Illustrated Transformer
 2.encoder可以并行执行，一次性算完。而decoder的输入不仅包含encoder的输出，还包含了decoder上次的输出，因此还是一个循环结构，并不能完全并行。
 
 3.为了解决循环结构的次序问题，论文提出了上图所示的Masked Multi-Head Attention。
-
-## Reformer
-
-https://mp.weixin.qq.com/s/9P-hF9VzDMgoPZ_CGREn8w
-
-Reformer：一个高效的Transformer
-
-https://mp.weixin.qq.com/s/-45YL1mzPmSOESfWlxUclA
-
-图解Reformer：一种高效的Transformer
-
-https://mp.weixin.qq.com/s/wJbbki3S8l10rSpFTWFpgg
-
-对Reformer的深入解读

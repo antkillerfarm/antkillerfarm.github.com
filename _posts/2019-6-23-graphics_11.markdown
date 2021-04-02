@@ -373,6 +373,20 @@ https://mp.weixin.qq.com/s/MCYocOY2pHHqiLhcE4SXyg
 
 为什么苹果M1芯片这么快？
 
+https://zhuanlan.zhihu.com/p/358167791
+
+Vector的前世今生（1）：从辉煌到低谷
+
+https://mp.weixin.qq.com/s/OQ3KUAi6HMyOS8k3J_1e6g
+
+关于超长指令集VLIW的一些讨论
+
+https://mp.weixin.qq.com/s/Ud4f5L2tYNbP1oURVBszag
+
+俄罗斯自研Elbrus CPU参数曝光，CEO年近九旬仍未退休
+
+>Boris Babayan，1933年生，俄罗斯科学院院士，Intel院士。俄罗斯CPU之父。
+
 ## GPU体系结构
 
 ![](/images/img4/SGI.png)

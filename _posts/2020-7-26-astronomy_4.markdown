@@ -137,6 +137,10 @@ https://mp.weixin.qq.com/s/6syX6eZ3l0qnH47GL8iulg
 
 ASO-S卫星流浪计划：一起揭秘太阳磁场的秘密
 
+https://mp.weixin.qq.com/s/KFO1ar8awQ7Xl2Iam2iLEA
+
+如果没有磁场，太阳将变得枯燥无味
+
 https://mp.weixin.qq.com/s/4x9dfPsrUaXlE8_vxri7jg
 
 火箭发射失利后，一封初中生的信冲上热搜！
@@ -302,3 +306,7 @@ https://mp.weixin.qq.com/s/CNaQbeLbN4J3CsUIMaezFw
 https://mp.weixin.qq.com/s/WVwB-ldc8Yoin6I_m6RT5g
 
 CNN轻量化模型及其设计原则综述
+
+https://mp.weixin.qq.com/s/RVsXUnAJ2f0Cby7BPaWifA
+
+人物属性模型移动端实验记录

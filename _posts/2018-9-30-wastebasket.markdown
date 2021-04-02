@@ -288,6 +288,12 @@ https://mp.weixin.qq.com/s/vII5zOWBArxDvsHiyAyYGQ
 
 ----
 
+林肯给人民自由，柯尔特使人人平等。
+
+John Moses Browning，1855～1926，美国轻武器设计家，是现代自动及半自动轻武器发展史上的重要人物。虽然他的作品主要是由FN赫斯塔尔制造的，但需要注意的是尽管后者是比利时公司，但这里的合作却主要是和它的美国分公司进行的。因此，勃朗宁手枪应该算是美国货。
+
+----
+
 ![](/images/img3/DC.gif)
 
 ![](/images/img3/BLDC.gif)

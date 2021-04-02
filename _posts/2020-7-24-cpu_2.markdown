@@ -313,10 +313,6 @@ https://zhuanlan.zhihu.com/p/114448236
 
 什么是Win10的“现代待机”？为什么它未来会越来越重要？这篇文章部分解释了我的第一个平板为什么那么耗电。
 
-https://mp.weixin.qq.com/s/OQ3KUAi6HMyOS8k3J_1e6g
-
-关于超长指令集VLIW的一些讨论
-
 https://mp.weixin.qq.com/s/J7RlmvU7JY1J8rV-eqjQ2A
 
 浅谈多核心CPU和SoC芯片及其工作原理

@@ -9,6 +9,20 @@ category: Attention
 
 # Transformer（续）
 
+## Reformer
+
+https://mp.weixin.qq.com/s/9P-hF9VzDMgoPZ_CGREn8w
+
+Reformer：一个高效的Transformer
+
+https://mp.weixin.qq.com/s/-45YL1mzPmSOESfWlxUclA
+
+图解Reformer：一种高效的Transformer
+
+https://mp.weixin.qq.com/s/wJbbki3S8l10rSpFTWFpgg
+
+对Reformer的深入解读
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/39034683

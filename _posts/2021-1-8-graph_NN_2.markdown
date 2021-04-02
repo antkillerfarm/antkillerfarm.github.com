@@ -119,6 +119,10 @@ https://github.com/DeepGraphLearning/LiteratureDL4Graph
 
 图深度学习资源汇总
 
+https://mp.weixin.qq.com/s/rneBmY81qrN9mID0L3vvvQ
+
+图网络究竟在研究什么？从15篇研究综述看图神经网络GNN的最新研究进展
+
 https://github.com/IndexFziQ/GNN4NLP-Papers
 
 自然语言领域中图神经网络模型（GNN）应用现状（论文列表）

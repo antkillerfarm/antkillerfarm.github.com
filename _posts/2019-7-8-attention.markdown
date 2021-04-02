@@ -23,6 +23,14 @@ category: Attention
 
 ![](/images/img2/Attention.jpg)
 
+上图是添加了Attention机制之后的seq2seq的框架图。
+
+需要注意的是，在通常的使用中，**W的值不仅和位置有关，还和时间有关**。因此，上图中的W的值在Step 1和Step 2中是**不同**的。假设输入语句长度为M，输出语句长度为N，词向量的长度D，则W是一个$$M\times N\times D$$的tensor。
+
+如果不考虑时间问题，那么Attention就退化为普通的FC，这时的W就是一个$$M\times D$$的tensor了。因此，Attention的参数量比普通的FC要大的多。
+
+>这里有一个训练的小技巧。虽然输出语句的长度不能事先得知，但不妨设置一个最大值$$N_{max}$$，这样tensor的尺寸就可以定下来了。然后用mask技术挡住后面的输出词语即可。例如我们训练生成第i个词的权重时，前面的i-1个词的mask为1，而后面的其他词的mask为0。
+
 Attention机制的一个主要优势是它让我们能够解释并可视化整个模型。举个例子，通过对attention权重矩阵a的可视化，我们能够理解模型翻译的过程。
 
 ![](/images/article/attention_2.png)
@@ -178,12 +186,3 @@ $$head_i = Attention(\boldsymbol{Q}\boldsymbol{W}_i^Q,\boldsymbol{K}\boldsymbol{
 而在Google的论文中，大部分的Attention都是Self Attention，即“自注意力”，或者叫内部注意力。
 
 所谓Self Attention，其实就是Attention(X,X,X)，X就是前面说的输入序列。也就是说，在序列内部做Attention，寻找序列内部的联系。
-
-下表展示了Self Attention相对于其他运算的计算量分析：
-
-| Layer Type | Complexity per Layer | Sequential Operations | Maximum Path Length |
-|:--:|:--:|:--:|:--:|
-| Self-Attention | $$O(n^2 \cdot d)$$ | $$O(1)$$ | $$O(1)$$ |
-| Recurrent | $$O(n \cdot d^2)$$ | $$O(n)$$ | $$O(n)$$ |
-| Convolutional | $$O(k \cdot n \cdot d^2)$$ | $$O(1)$$ | $$O(\log_k(n))$$ |
-| Self-Attention (restricted) | $$O(r \cdot n \cdot d)$$ | $$O(1)$$ | $$O(n/r)$$ |
