@@ -257,6 +257,14 @@ https://mp.weixin.qq.com/s/dysKMpOXAjSRgb5xGDO3FA
 
 搞懂Vision Transformer原理和代码，看这篇技术综述就够了(三)
 
+https://mp.weixin.qq.com/s/EXtTUh4_w07Kc7hfBBMBiw
+
+搞懂Vision Transformer原理和代码，看这篇技术综述就够了（四）
+
+https://mp.weixin.qq.com/s/MyRJl_QsO2X1yF4akPGktg
+
+搞懂Vision Transformer原理和代码，看这篇技术综述就够了（五）
+
 https://mp.weixin.qq.com/s/FIilwbLzYk4av8w11VgJeQ
 
 计算机视觉中的Transformer

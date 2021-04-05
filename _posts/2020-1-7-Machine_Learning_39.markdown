@@ -25,6 +25,14 @@ https://mp.weixin.qq.com/s/2qOjE0B6x9xuyoBw94NqQA
 
 线性规划基础
 
+https://mp.weixin.qq.com/s/AHM60k3_Th3HD-VPBaXhuw
+
+线性规划和整数规划的若干建模技巧
+
+https://mp.weixin.qq.com/s/f24aXWrQkMlzABVatjOf5Q
+
+线性规划的历史、模型及案例
+
 https://mp.weixin.qq.com/s/zV6zi79c1Q2dfCaywuK6Pw
 
 内点法六十年再回首
@@ -60,10 +68,6 @@ https://mp.weixin.qq.com/s/sGRNiAl7tvPc1tl0Xk2Idw
 https://mp.weixin.qq.com/s/MuODCRWqolnh62D4t-hRvQ
 
 临(邻)近增量累积梯度法(PIAG)
-
-https://mp.weixin.qq.com/s/AHM60k3_Th3HD-VPBaXhuw
-
-线性规划和整数规划的若干建模技巧
 
 https://mp.weixin.qq.com/s/Pvu7JAHvsGJdL0mJIhVwng
 
@@ -304,6 +308,10 @@ https://mp.weixin.qq.com/s/Jks-eZAinOvvWxKr0S-5Lg
 https://zhuanlan.zhihu.com/p/116235115
 
 异常检测Anomaly Detection
+
+https://mp.weixin.qq.com/s/7Phm5bBJ23h4RPljw_rtog
+
+基于图的异常检测
 
 # 因果推理
 

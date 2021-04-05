@@ -169,6 +169,10 @@ https://mp.weixin.qq.com/s/sKVCFScJq7ql1T6BmTFLow
 
 少标签数据学习，61页ppt，宾夕法尼亚大学
 
+https://mp.weixin.qq.com/s/EPafCEIg7LYqsnwYq3-nvg
+
+从Few-shot Learning再次认识机器学习
+
 # 深度ISP
 
 ## 数据集

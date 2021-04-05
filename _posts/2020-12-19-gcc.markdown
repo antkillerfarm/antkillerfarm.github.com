@@ -315,6 +315,10 @@ https://mp.weixin.qq.com/s/VE3CySjjS2rTpUDPnKcLTg
 
 陈天奇最新研究：递归模型编译器CORTEX
 
+https://mp.weixin.qq.com/s/sZLWjYebbHjCgQ6XAZCiOw
+
+深度学习编译器及TVM介绍
+
 # GLOW
 
 代码：

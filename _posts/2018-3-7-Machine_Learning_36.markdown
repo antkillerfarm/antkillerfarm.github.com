@@ -195,6 +195,10 @@ https://mp.weixin.qq.com/s/YunDfYPLywc0tMJF72YIAQ
 
 数据分析利器：XGBoost算法最佳解析
 
+https://mp.weixin.qq.com/s/QAu0nM72E2gVhbRXmtCMcw
+
+XGBoost和时间序列
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。

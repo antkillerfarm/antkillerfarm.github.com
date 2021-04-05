@@ -105,7 +105,7 @@ https://mp.weixin.qq.com/s/gsxE1V_fNTDjIMhs3ZW72Q
 
 DeepWalk：图网络与NLP的巧妙融合
 
-# 参考
+# Graph NN参考资源
 
 https://github.com/thunlp/GNNPapers
 
@@ -154,6 +154,10 @@ https://github.com/icoxfog417/graph-convolution-nlp
 https://mp.weixin.qq.com/s/VEAnkznZUyZ1RCJulSnwGg
 
 基于图结构网络的表征学习
+
+https://mp.weixin.qq.com/s/5kPaphR26dKR99ySAo3Znw
+
+图神经网络的解释性综述
 
 https://mp.weixin.qq.com/s/rxZQrhvRk6Dw3AWpGJS4dg
 

@@ -246,6 +246,10 @@ https://mp.weixin.qq.com/s/-m8q2TzlfpvSaPRqGsQPbQ
 
 一个惊人快速的终端录像工具，也能录制VSCode和Chrome窗口（t-rec）
 
+https://mp.weixin.qq.com/s/qii7M6hOIBf9kgbmWpc3XQ
+
+Linux交互式图形可视化磁盘使用软件（Filelight）
+
 # 时间的表示方法
 
 一般遵循ISO 8601标准：

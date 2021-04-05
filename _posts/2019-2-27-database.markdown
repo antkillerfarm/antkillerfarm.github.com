@@ -165,6 +165,10 @@ https://mp.weixin.qq.com/s/uBOFnLKiVG-rsv5vzbDbtQ
 
 一条sql的执行过程详解
 
+https://mp.weixin.qq.com/s/J_ng048H4eHBm_4VBjFiWw
+
+详解一条SQL的执行过程
+
 https://cloud.tencent.com/developer/article/1475146
 
 SQL语句中where条件后写上1=1是什么意思
@@ -172,6 +176,10 @@ SQL语句中where条件后写上1=1是什么意思
 https://cnblogs.com/SimpleWu/p/9929043.html
 
 SQL语句性能优化
+
+https://mp.weixin.qq.com/s/UU6_YK_cqoup-bVv8Q_sEw
+
+Insert into select语句引发的生产事故
 
 ## Apache Kylin
 
@@ -315,7 +323,7 @@ https://zhuanlan.zhihu.com/p/273270802
 
 ## Cache
 
-**缓存雪崩**指大量缓存同一时间段集体失效，或者缓存整体不能提供服务，导致大量的请求全部到达数据库 对数据CPU和内存造成巨大压力，严重的会造成数据库宕机。
+**缓存雪崩**指大量缓存同一时间段集体失效，或者缓存整体不能提供服务，导致大量的请求全部到达数据库，对数据CPU和内存造成巨大压力，严重的会造成数据库宕机。也被称为缓存踩踏（Cache Stampede）。
 
 使用随机过期时间。为每一个key都合理的设计一个过期时间，这样可以避免大量的key在同一时刻集体失效。
 
@@ -362,6 +370,10 @@ https://mp.weixin.qq.com/s/0J9X-fFp3y0zaxR78tBfQQ
 https://mp.weixin.qq.com/s/_RlOAvjfTINJrhwHUogs7Q
 
 分布式缓存与DB秒级一致设计实践
+
+https://mp.weixin.qq.com/s/mjySTz73Ltcfsw1e6iY4YA
+
+缓存踩踏：Facebook史上最严重的宕机事件分析
 
 ## 数据管理工具
 

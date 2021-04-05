@@ -277,6 +277,10 @@ https://zhuanlan.zhihu.com/p/163477538
 
 知识蒸馏与推荐系统
 
+https://mp.weixin.qq.com/s/QpOx58M7lUfkONt-3SP8yg
+
+知识蒸馏与推荐系统
+
 https://mp.weixin.qq.com/s/TJVMuaDVZIjwqzuw6gd8uA
 
 无数据知识蒸馏
@@ -308,6 +312,10 @@ Knowledge Distillation（知识蒸馏）Review--20篇paper回顾
 https://mp.weixin.qq.com/s/E7-MF18Y-UeKx694kGFHzA
 
 深度学习中的知识蒸馏技术（上）
+
+https://mp.weixin.qq.com/s/Noac4YLIimr1HM2fln2bjg
+
+深度学习中的知识蒸馏技术（下）
 
 https://mp.weixin.qq.com/s/IkKig7I5_97y_siixEj72w
 

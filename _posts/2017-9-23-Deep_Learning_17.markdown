@@ -345,6 +345,10 @@ https://zhuanlan.zhihu.com/p/30265894
 
 自监督学习近期进展
 
+https://mp.weixin.qq.com/s/qyQjKsgktWv9SihotaQX3w
+
+从顶会看自监督学习最新研究进展
+
 https://mp.weixin.qq.com/s/cTlXMxcpzc7_5NVsTm1jcA
 
 学习一帧，为整段黑白视频上色：谷歌提出自监督视觉追踪模型

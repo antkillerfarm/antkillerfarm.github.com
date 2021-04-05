@@ -355,6 +355,10 @@ https://zhuanlan.zhihu.com/p/22304455
 
 使用Celery
 
+https://mp.weixin.qq.com/s/jdYiqJ98PztD7Ueu_o3Z4Q
+
+任务队列神器：Celery入门到进阶指南
+
 ## Gunicorn
 
 Gunicorn是一个高效的Python WSGI Server，地位相当于Java中的Tomcat。

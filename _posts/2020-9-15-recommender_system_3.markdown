@@ -428,3 +428,15 @@ https://mp.weixin.qq.com/s/LZlskUK4dmOd5fLTZIATnQ
 https://mp.weixin.qq.com/s/Jfuc6x-Qt0rya5dbCR2uCA
 
 腾讯音乐：全民K歌推荐系统架构及粗排设计
+
+https://mp.weixin.qq.com/s/tV3HfWZrrnyJEPV0R0QykA
+
+模型化召回在陌陌社交推荐的应用和探索
+
+https://mp.weixin.qq.com/s/V67YXV69dlmc2ke2WgPewQ
+
+玩儿转oCPC
+
+https://mp.weixin.qq.com/s/ZsekCl1uOqKxUOOk0otk_Q
+
+搜索推荐广告排序之用户行为序列建模

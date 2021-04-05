@@ -53,6 +53,10 @@ https://mp.weixin.qq.com/s/fswZL2qhgErccYB1GuXZ8g
 
 PID微分器与滤波器的爱恨情仇
 
+https://mp.weixin.qq.com/s/vsyEM7z7-tKrXwRPjE5-EA
+
+浅谈PID控制对无人车/船的自动驾驶影响及水信无人船PID调试结果展示
+
 ## 串级PID控制
 
 实际使用中，为了改善PID控制的效果，一般还会用到串级PID控制。

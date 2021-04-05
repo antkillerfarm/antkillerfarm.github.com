@@ -328,6 +328,10 @@ https://mp.weixin.qq.com/s/QZ_AcfzuB7JQEE6cDz5G1A
 
 自回归模型
 
+https://mp.weixin.qq.com/s/fYQwRJGrTlX4_GqMt_CYMQ
+
+时间序列基础教程总结
+
 # 辛普森悖论
 
 ![](/images/img2/Simpson.png)

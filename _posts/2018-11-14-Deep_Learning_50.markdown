@@ -315,6 +315,10 @@ https://mp.weixin.qq.com/s/S5rNebrB8zpILZ1j_d-29Q
 
 深度视觉模型设计，还有哪些新思路？
 
+https://mp.weixin.qq.com/s/Yx0kc_Xy8Hb_2NZGBpkjEg
+
+VoVNet：实时目标检测的新backbone网络
+
 # AI前沿
 
 人工智能前沿7大热点：

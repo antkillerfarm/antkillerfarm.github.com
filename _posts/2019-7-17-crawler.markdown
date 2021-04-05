@@ -23,7 +23,7 @@ http://www.cnblogs.com/codemind/p/smart_spider_parser.html
 
 爬虫数据采集技术趋势－智能化解析
 
-# boilerpipe
+## boilerpipe
 
 各个网站的HTML版面样式多种多样，如何从中提取正文，是一个很有挑战性的课题。
 
@@ -150,6 +150,10 @@ https://mp.weixin.qq.com/s/hvv2esNsyt3xpO9x1NkCTQ
 https://mp.weixin.qq.com/s/sJcgkkL0lY6v7gPv2rW-eA
 
 对比四种爬虫定位元素方法，你更爱哪个？
+
+https://github.com/CriseLYJ/awesome-python-login-model
+
+用Python登录主流网站
 
 # scrapy
 

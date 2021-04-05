@@ -377,3 +377,7 @@ ZooKeeper源码和实践揭秘
 https://mp.weixin.qq.com/s/Tb670Jdt4s7CKzGZZQRL_A
 
 用大白话给你解释Zookeeper的选举机制
+
+https://mp.weixin.qq.com/s/BejPSfvEe98nSch81WKgAg
+
+Zookeeper九个问题

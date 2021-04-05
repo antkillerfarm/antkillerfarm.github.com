@@ -191,6 +191,10 @@ https://github.com/skywind3000/preserve-cd
 
 绝版游戏保护工程
 
+https://www.zhihu.com/zvideo/1358906505719336960
+
+一个War 3秘密的专栏
+
 # 我的AI简史
 
 2018.5

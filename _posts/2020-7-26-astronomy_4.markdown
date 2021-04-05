@@ -145,6 +145,14 @@ https://mp.weixin.qq.com/s/4x9dfPsrUaXlE8_vxri7jg
 
 火箭发射失利后，一封初中生的信冲上热搜！
 
+https://mp.weixin.qq.com/s/oP5prD-KuxI8CNVo16arVQ
+
+1994年，木星曾帮地球抗下了21波灭星级打击（苏梅克-列维九号彗星）
+
+https://mp.weixin.qq.com/s/Sija998_IKP2G0GQEYynCw
+
+知否知否，月球种菜可否？
+
 # 模型压缩与加速进阶+
 
 https://mp.weixin.qq.com/s/5NM9M1oY8bwsEqdBRVYpMg

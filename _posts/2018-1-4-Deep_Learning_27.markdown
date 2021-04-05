@@ -13,6 +13,10 @@ https://mp.weixin.qq.com/s/gKsfsRxsbfXGOsSqeQEDbw
 
 CVPR2019：文本检测算法综述
 
+https://mp.weixin.qq.com/s/H2VjRKMsuL_yrhP_v_LiVQ
+
+自然场景文本检测与识别中的深度学习方法综述
+
 https://zhuanlan.zhihu.com/p/68058851
 
 自然场景下的文字检测：从多方向迈向任意形状

@@ -151,7 +151,11 @@ https://mp.weixin.qq.com/s/MCAR8M2DoV30-McdsjTxDw
 
 https://mp.weixin.qq.com/s/3aLHfKF5grL6hunO7r_TAQ
 
-中国第一个发《Nature》的竟然是清朝人！被皇帝夸天下第一，他却觉得羞耻...（徐寿、华蘅芳、徐建寅）
+中国第一个发《Nature》的竟然是清朝人！被皇帝夸天下第一，他却觉得羞耻。。。（徐寿、华蘅芳、徐建寅）
+
+https://mp.weixin.qq.com/s/J1mAwHQUkuHrmvmyK_w5BQ
+
+中国首台蒸汽机竟由一位清代数学家设计！他与诺贝尔同年出生，为研制火药险些殒命。。。（华蘅芳）
 
 https://mp.weixin.qq.com/s/OO2OPmxjZJTCNiy_S2p-Aw
 

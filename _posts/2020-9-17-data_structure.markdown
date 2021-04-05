@@ -179,6 +179,10 @@ https://mp.weixin.qq.com/s/Zz9xjr36gd-FeUH6p6SKLg
 
 跳表：会跳的链表原来这么diao
 
+https://mp.weixin.qq.com/s/JbhEN5yc_igLQdhUH-ImBQ
+
+高频面试数据结构——跳表
+
 ## 参考
 
 https://mp.weixin.qq.com/s/JiYRhcTv2qgLfVyGzI8uHQ
@@ -346,3 +350,71 @@ https://mp.weixin.qq.com/s/9gDGQhzRAL3pj35VAinZbQ
 https://mp.weixin.qq.com/s/KYq_nEXQ-5WYdYzZvGLGGg
 
 我向面试官讲解了单例模式，他对我竖起了大拇指
+
+# Android研究+
+
+## adb
+
+手机->PC：
+
+`adb pull sdcard/contacts_app.db`
+
+PC->手机：
+
+`adb push aaa/contacts_app.db /sdcard/`
+
+----
+
+https://www.cnblogs.com/caoxinyu/p/10568463.html
+
+Ubuntu adb报错：no permissions (user in plugdev group; are your udev rules wrong?);
+
+## tombstone
+
+当一个动态库（native 程序）开始执行时，系统会注册一些连接到debuggerd的signal handlers，当系统crash的时候，会保存一个tombstone文件到/data/tombstones目录下。
+
+https://www.cnblogs.com/CoderTian/p/5980426.html
+
+Android Tombstone分析
+
+## Logcat
+
+官方文档：
+
+https://developer.android.google.cn/studio/command-line/logcat
+
+参考：
+
+https://www.cnblogs.com/JianXu/p/5468839.html
+
+Android logcat命令详解
+
+## 打包
+
+apk包就是android系统的安装包。
+
+aar是android中特有的归档文件，既包含字节码文件也包含android的资源文件等。
+
+jar是java字节码文件（class文件）的归档文件，其不包含android中的资源文件等信息。
+
+https://blog.csdn.net/it_yangkun/article/details/80119182
+
+Android打包APK,AAR,JAR
+
+## 参考
+
+https://mp.weixin.qq.com/s/twfpUMf9CfXcgwtFFkJ4Ig
+
+Android整体设计及背后意义
+
+https://mp.weixin.qq.com/s/eEuNPtTaPwJ7hSghgeU32g
+
+Android Hook技术防范漫谈
+
+https://mp.weixin.qq.com/s/AQI2S2oK7HFDs9lH-nsx5g
+
+Android性能优化系列：Java内存优化篇
+
+https://www.jianshu.com/p/80013a768a45
+
+Android soong build系统介绍
