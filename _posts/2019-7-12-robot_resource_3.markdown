@@ -169,6 +169,10 @@ https://mp.weixin.qq.com/s/pPPq3b1yj92RaGgIpTAhqQ
 
 一文看透汽车无人驾驶技术、产品和市场
 
+https://zhuanlan.zhihu.com/p/79391139
+
+MIT Cheetah完整开源代码与论文简介
+
 https://rsu.data61.csiro.au/people/jalvarez/research_bbdd.php
 
 这个网站提供了一系列用于汽车自动驾驶的视频标注的工具。
