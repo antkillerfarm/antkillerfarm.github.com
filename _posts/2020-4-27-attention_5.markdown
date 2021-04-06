@@ -127,6 +127,10 @@ https://mp.weixin.qq.com/s/XQSEg2_8_1lFqWdHVG6TVA
 
 Switch Transformer: 高效稀疏的万亿参数Transformer
 
+https://zhuanlan.zhihu.com/p/362525526
+
+深入解读首个万亿级语言模型Switch Transformer
+
 # 快速BERT
 
 轻量化BERT是从计算量/时间/空间的角度出发，对于传统BERT的优化。而快速BERT主要着眼于软件工程角度，如何更好的利用各种硬件加速BERT的计算。典型的有NVIDIA的FasterTransformer和腾讯的TurboTransformer。
