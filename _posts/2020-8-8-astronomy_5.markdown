@@ -139,6 +139,10 @@ https://www.zhihu.com/answer/1761961716
 
 ![](/images/img4/manufact.jpg)
 
+![](/images/img2/BJ_subway.jpg)
+
+![](/images/img4/china-dovak.gif)
+
 https://mp.weixin.qq.com/s/sRVb8qGtbsuqCvHSrlL9mQ
 
 卡住中国脖子的35项技术
