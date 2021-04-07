@@ -181,6 +181,10 @@ https://mp.weixin.qq.com/s/A4OYoKFVu2nZCyDJcoFrQA
 
 从HTTP到HTTP/3的发展简史
 
+https://mp.weixin.qq.com/s/Mwom82Wwzo4pK9uGSNdfSQ
+
+xxxxHub都用上了HTTP/2，它牛逼在哪？
+
 ## 参考
 
 https://www.cnblogs.com/maybe2030/p/4781555.html

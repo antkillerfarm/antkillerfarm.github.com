@@ -273,6 +273,10 @@ https://mp.weixin.qq.com/s/2h_0gZBXMUWS3JG7lrfUNQ
 
 MIT科学家Dimitri P. Bertsekas最新《强化学习与最优控制》2021ASU课程
 
+https://amfarahmand.github.io/IntroRL/
+
+强化学习导论：多伦多大学2021课程
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

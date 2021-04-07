@@ -440,3 +440,7 @@ https://mp.weixin.qq.com/s/qou0uUQVsU306KvB5JMKVg
 https://mp.weixin.qq.com/s/pJ4cSS4qXQaM8ACv_Aq--A
 
 结合Sklearn的网格和随机搜索进行自动超参数调优
+
+https://mp.weixin.qq.com/s/fqNl6WPqIP7TiAmg5emkRw
+
+针对目标检测任务从基础运算符号自动构建损失函数

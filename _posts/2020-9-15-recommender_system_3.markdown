@@ -440,3 +440,7 @@ https://mp.weixin.qq.com/s/V67YXV69dlmc2ke2WgPewQ
 https://mp.weixin.qq.com/s/ZsekCl1uOqKxUOOk0otk_Q
 
 搜索推荐广告排序之用户行为序列建模
+
+https://mp.weixin.qq.com/s/TVCgH_B_d5T0hWuXfgnRQA
+
+阿里粗排技术体系与最新进展

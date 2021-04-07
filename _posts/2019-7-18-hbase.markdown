@@ -334,3 +334,7 @@ https://mp.weixin.qq.com/s/t0gfW7UHzkKgNrAVyOfK7Q
 https://mp.weixin.qq.com/s/-QPabXE2plPB0lok-Ic9jA
 
 MySQL锁系统总结
+
+https://mp.weixin.qq.com/s/sRFmW57KUY3yyyRkyw0L4A
+
+MySQL深入学习总结

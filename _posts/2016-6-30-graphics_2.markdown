@@ -155,6 +155,10 @@ https://mp.weixin.qq.com/s/6PQt-XcxdYJwIItf2RNuBg
 
 图像平滑之均值滤波、方框滤波、高斯滤波及中值滤波
 
+https://mp.weixin.qq.com/s/6-JK8HA40Q0FQNUkB62Fug
+
+一个简单方法识别毛玻璃、高斯模糊
+
 # 二维高斯滤波
 
 由标准二维正态分布的正交性，可知二维高斯滤波实际上可以分解为x、y两个方向上的一维高斯滤波。当然，这时候的kernel的尺寸不再是方形的，而是1*n的长条形。
