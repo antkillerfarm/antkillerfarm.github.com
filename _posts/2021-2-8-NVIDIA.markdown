@@ -191,6 +191,10 @@ https://mp.weixin.qq.com/s/OYSzol-vufiKPuU9YxtbuA
 
 矩阵相乘在GPU上的终极优化：深度解析Maxas汇编器工作原理
 
+https://mp.weixin.qq.com/s/f-1OgzUZix4XHcGd8KRqJQ
+
+PyTorch自定义CUDA算子教程与运行时间分析
+
 # GPU通信技术
 
 ## RDMA

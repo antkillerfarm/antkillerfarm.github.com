@@ -51,7 +51,7 @@ https://blog.csdn.net/wangyaninglm/article/details/87296595
 
 https://mp.weixin.qq.com/s/ji8sEzJXp1UNgBHVOui0ng
 
-谷歌开源手势识别器，手机能用，还有现成的 App，但是被我们玩坏了
+谷歌开源手势识别器，手机能用，还有现成的App，但是被我们玩坏了
 
 # 深度图像压缩
 

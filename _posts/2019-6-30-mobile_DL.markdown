@@ -91,6 +91,10 @@ https://mp.weixin.qq.com/s/EcwmGKpCfVy22BWTB0Ro2g
 
 淘宝开源深度学习推理引擎MNN，移动AI的挑战与应对全面解读
 
+https://mp.weixin.qq.com/s/1ynCqcFJTmxeo8lwKVm-XA
+
+谈谈MNN GPU性能优化策略
+
 # DL Backend
 
 DL Backend是框架和硬件驱动之间的一层软件，用于向上提供AI硬件加速的能力。在AI芯片层出不穷的当下，相应的DL Backend也同样丰富。

@@ -321,6 +321,10 @@ https://mp.weixin.qq.com/s/zNs4NikZ912R3V1ZT2DcTg
 
 黑洞---像极了爱情！
 
+https://mp.weixin.qq.com/s/GLjXHV7aYQ77OoDuZfMXmQ
+
+黑洞偏振照片发布！
+
 ## EHT
 
 ![](/images/img2/Event_horizon_telescope_logo_2019.png)

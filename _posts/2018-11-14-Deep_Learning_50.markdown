@@ -319,6 +319,10 @@ https://mp.weixin.qq.com/s/Yx0kc_Xy8Hb_2NZGBpkjEg
 
 VoVNet：实时目标检测的新backbone网络
 
+https://zhuanlan.zhihu.com/p/358183591
+
+involution：超越convolution和self-attention的神经网络新算子
+
 # AI前沿
 
 人工智能前沿7大热点：

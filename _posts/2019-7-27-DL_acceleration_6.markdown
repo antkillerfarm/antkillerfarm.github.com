@@ -323,6 +323,12 @@ https://mp.weixin.qq.com/s/IkKig7I5_97y_siixEj72w
 
 # 硬件加速技巧
 
+https://mp.weixin.qq.com/s/KPT4P5SQ4E4ofPdjhhjRvA
+
+如何加速深度神经网络计算效率？看NVIDIA-ISSCC2021教程，附93页Slides与视频
+
+----
+
 多通道卷积操作最终可以转化为矩阵运算，如下图所示：
 
 ![](/images/article/conv.png)

@@ -171,6 +171,10 @@ https://mp.weixin.qq.com/s/kqs5Gwr1XgldX-Yz2iJjzw
 
 贝叶斯优化(Bayesian Optimization)
 
+https://mp.weixin.qq.com/s/WPpAqLuisfN3za1LJpG6JQ
+
+一文看懂贝叶斯优化/Bayesian Optimization
+
 # Beam Search
 
 ## 概述
