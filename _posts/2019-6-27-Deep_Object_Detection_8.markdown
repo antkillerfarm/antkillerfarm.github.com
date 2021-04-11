@@ -383,6 +383,10 @@ https://mp.weixin.qq.com/s/0B08Mzn8ngL6GoNilrjsGA
 
 基于深度学习目标检测方法一览
 
+https://zhuanlan.zhihu.com/p/181169225
+
+12篇论文看尽深度学习目标检测史
+
 https://mp.weixin.qq.com/s/5I9uzGCNFD93L1mzakTl0Q
 
 目标检测网络学习总结（RCNN-->YOLO V3）

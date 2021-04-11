@@ -426,3 +426,7 @@ Java魔法类：Unsafe应用解析
 https://mp.weixin.qq.com/s/_hSaI5yMvPTWxvFgl-UItA
 
 Java动态追踪技术探究
+
+https://www.cnblogs.com/paddix/p/5374810.html
+
+Java并发编程：核心理论

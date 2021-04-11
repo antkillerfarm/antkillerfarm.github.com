@@ -252,6 +252,14 @@ OrientDB和ArangoDB起步比较早，最初是一个单机的图数据库，后�
 
 JanusGraph和Dgraph发展的比较晚，从设计之初就考虑了分布式和扩展性，所以对分布式支持的非常好，且都是完全开源免费的。
 
+----
+
+第一类：Neo4j、ArangoDB、Virtuoso、TigerGraph、RedisGraph。此类图数据库只有单机版本开源可用，性能优秀，但不能应对分布式场景中数据的规模增长。
+
+第二类：JanusGraph、HugeGraph。此类图数据库在现有存储系统之上新增了通用的图语义解释层，图语义层提供了图遍历的能力，但是受到存储层或者架构限制，不支持完整的计算下推，多跳遍历的性能较差，很难满足OLTP场景下对低延时的要求。
+
+第三类：DGraph、NebulaGraph。此类图数据库根据图数据的特点对数据存储模型、点边分布、执行引擎进行了全新设计，对图的多跳遍历进行了深度优化。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/YfNlDoGOlHtpG9VFBCZHnQ
@@ -285,3 +293,7 @@ https://mp.weixin.qq.com/s/5nBS0FiOynhGS6mY2dZ1ng
 https://blog.csdn.net/guleileo/article/details/112000725
 
 一文聊“图”，从图数据库到知识图谱
+
+https://mp.weixin.qq.com/s/akfjTkRkPraCAoli-VPC9A
+
+美团图数据库平台建设及业务实践
