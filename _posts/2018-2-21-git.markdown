@@ -328,6 +328,8 @@ git换行符LF与CRLF转换问题
 
 `git config user.email XXX@YYY`
 
+全局配置放在`~/.gitconfig`，单个仓库的配置放在`.git/config`。
+
 ## 下载单个文件夹
 
 使用Git拉去github上的一些开源项目，无比方便，但是有些项目比较庞大，而我们只想拉取其中指定的一部分文件夹或者文件，那就需要我们另外动些手脚了。

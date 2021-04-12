@@ -214,3 +214,11 @@ https://www.zhdate.com/news_history/78523.html
 https://mil.news.sina.com.cn/history/2020-08-25/doc-iivhuipp0547778.shtml
 
 抗美援朝打3年谈2年？美国是怎样把筹码一个个谈丢的
+
+----
+
+王合良背着薛志高，薛志高端着冲锋枪，负责指路，二人一边艰难前行，一边向敌人射击。
+
+https://www.sohu.com/a/338584100_247380
+
+他的眼睛被炸瞎，战友的双腿被炸断，他背起战友，继续战斗

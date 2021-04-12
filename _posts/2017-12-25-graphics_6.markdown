@@ -139,6 +139,14 @@ www.cnetnews.com.cn/2016/0128/3072316.shtml
 
 上面提到的主要是普通相机的ISP，但从目前的趋势来看，由于汽车自动驾驶技术的目标逐渐趋于全自动驾驶，以人的视觉友好性为目的的图像色彩重建变得多余，而以计算机视觉友好性为目的的图像质量需求将会进一步增加。
 
+----
+
+3A技术指的是自动对焦（AF，Auto Focus）、自动曝光（AE，Auto Exposure）及自动白平衡（AWB，Auto White Balance）。
+
+https://www.cnblogs.com/lifan3a/articles/5006772.html
+
+相机的3A技术
+
 ## 参考
 
 http://www.cnblogs.com/agllero/p/4489689.html
