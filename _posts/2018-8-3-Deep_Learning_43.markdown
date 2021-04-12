@@ -97,6 +97,10 @@ https://mp.weixin.qq.com/s/J-u8F_VBGHf767Ppzvz2Xg
 
 图像修复中的一个里程碑：全局和局部一致性的图像补全
 
+https://mp.weixin.qq.com/s/rS9Rv3LMiabjif_ENWbIgg
+
+深度图像修复的一个突破
+
 ## 大谷
 
 大谷1991年生于北京，获得了纽约视觉艺术学院电脑艺术硕士学位，艺术家，音乐家，程序员和独立的游戏设计师。

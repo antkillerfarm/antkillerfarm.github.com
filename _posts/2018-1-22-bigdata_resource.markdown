@@ -123,6 +123,10 @@ http://www.cnblogs.com/rjzheng/p/8994962.html
 
 分布式之消息队列复习精讲
 
+https://mp.weixin.qq.com/s/ggPftQm2ewGOJwlRDQGgDQ
+
+快速实现一个分布式定时器
+
 # 大数据平台参考资源
 
 ![](/images/img3/big_data.png)
