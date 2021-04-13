@@ -325,6 +325,10 @@ https://zhuanlan.zhihu.com/p/347705276
 
 MMAction2: 新一代视频理解工具箱
 
+https://zhuanlan.zhihu.com/p/363872795
+
+无监督/自监督的视觉目标跟踪方法
+
 # 迁移学习+
 
 https://zhuanlan.zhihu.com/p/57656210
