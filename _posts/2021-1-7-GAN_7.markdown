@@ -267,6 +267,16 @@ https://xueqiu.com/8082119199/112705955
 
 南下资金、北上资金，傻傻分不清楚？
 
+----
+
+https://www.zhihu.com/question/389733485
+
+如何评价中国银行推出的“原油宝”产品穿仓，中国银行会要求客户赔偿吗？
+
+https://mp.weixin.qq.com/s/xhor1Qtzzk1VdlM5IqTkHQ
+
+先搞懂期货，才知道中行是咋亏的！
+
 ## 参考
 
 https://mp.weixin.qq.com/s/_rO9I2M-504oZdnGQVsRcQ
@@ -334,23 +344,3 @@ https://mp.weixin.qq.com/s/23FoaaA3Z_3kf03BmepFPg
 https://mp.weixin.qq.com/s/MT1YaMm4KBWsIZeHehahgw
 
 TensorFlow重大升级：自动将Python代码转为TF Graph，大幅简化动态图处理！
-
-https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
-
-Docker Compose+GPU+TensorFlow所产生的奇妙火花
-
-https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
-
-TensorFlow中那些鲜为人知却又极其实用的知识
-
-https://mp.weixin.qq.com/s/XHKrkNf2bWLF7r7gzdU24w
-
-Quick, Draw!涂鸦分类递归神经网络
-
-https://mp.weixin.qq.com/s/QQednlKYl6t3aO0xCzgGmA
-
-带你轻松使用TensorFlow创建大型线性模型
-
-https://mp.weixin.qq.com/s/BfwTOtLnwnMsS3-PQQBHSg
-
-使用TensorFlow训练WDL模型性能问题定位与调优

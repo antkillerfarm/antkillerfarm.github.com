@@ -9,6 +9,18 @@ category: speech
 
 # 语音识别参考资源（续）
 
+https://mp.weixin.qq.com/s/PXYt4FYWlldUmvryh53kVg
+
+滴滴单通道语音分离与目标说话人提取和抑制技术进展
+
+https://mp.weixin.qq.com/s/MXAxL753oEUPSVtL_H34jA
+
+语音识别中Chain Model的原理和实践
+
+https://mp.weixin.qq.com/s/7C7UFfE2dIM8ZtvwW8kbWQ
+
+使用TensorFlow Lite快速构建移动端声音分类应用
+
 https://www.zhihu.com/question/46829056
 
 语音识别领域的最新进展目前是什么样的水准？

@@ -382,3 +382,7 @@ https://mp.weixin.qq.com/s/ZfprFQjVANuCE2N693gZBQ
 https://mp.weixin.qq.com/s/P14VsWwSh9jiF-jBHSXXOw
 
 申请内存时底层发生了什么？
+
+https://mp.weixin.qq.com/s/OJHQZjxa6u8aA6jZyJnNPg
+
+一文浅析内存管理机制

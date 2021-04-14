@@ -337,6 +337,26 @@ https://mp.weixin.qq.com/s/Mb7iSXfrOtettVn-Sz8QUA
 
 # TensorFlow++
 
+https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
+
+Docker Compose+GPU+TensorFlow所产生的奇妙火花
+
+https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
+
+TensorFlow中那些鲜为人知却又极其实用的知识
+
+https://mp.weixin.qq.com/s/XHKrkNf2bWLF7r7gzdU24w
+
+Quick, Draw!涂鸦分类递归神经网络
+
+https://mp.weixin.qq.com/s/QQednlKYl6t3aO0xCzgGmA
+
+带你轻松使用TensorFlow创建大型线性模型
+
+https://mp.weixin.qq.com/s/BfwTOtLnwnMsS3-PQQBHSg
+
+使用TensorFlow训练WDL模型性能问题定位与调优
+
 https://mp.weixin.qq.com/s/kw3BYTXdyhnIyVZrnQuPew
 
 基于深度学习和迁移学习的识花实践

@@ -205,6 +205,10 @@ https://mp.weixin.qq.com/s/Jzu2CLAiDjVFW5qICrE9Hw
 
 基于Tacotron模型的语音合成实践
 
+https://mp.weixin.qq.com/s/1A0oOMa2qKqbDNBCpaoZmA
+
+我和欧阳娜娜一起搞研发
+
 ## Tacotron-2
 
 Tacotron2是Tacotron的升级版，也是DeepMind提出的。
@@ -388,15 +392,3 @@ https://zhuanlan.zhihu.com/p/69637495
 https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=400189223&idx=1&sn=1cb32bee42de626443ebadbf065ec79c
 
 百度贾磊：汉语语音识别技术重大突破：LSTM+CTC详解
-
-https://mp.weixin.qq.com/s/PXYt4FYWlldUmvryh53kVg
-
-滴滴单通道语音分离与目标说话人提取和抑制技术进展
-
-https://mp.weixin.qq.com/s/MXAxL753oEUPSVtL_H34jA
-
-语音识别中Chain Model的原理和实践
-
-https://mp.weixin.qq.com/s/7C7UFfE2dIM8ZtvwW8kbWQ
-
-使用TensorFlow Lite快速构建移动端声音分类应用

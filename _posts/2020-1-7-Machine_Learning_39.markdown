@@ -309,7 +309,7 @@ https://zhuanlan.zhihu.com/p/116235115
 
 异常检测Anomaly Detection
 
-https://mp.weixin.qq.com/s/7Phm5bBJ23h4RPljw_rtog
+https://zhuanlan.zhihu.com/p/359025580
 
 基于图的异常检测
 

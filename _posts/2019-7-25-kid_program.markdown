@@ -214,6 +214,10 @@ https://zhuanlan.zhihu.com/p/349197066
 
 Go与C的桥梁：cgo入门，剖析与实践
 
+https://zhuanlan.zhihu.com/p/364813527
+
+一文教你搞懂Go中栈操作
+
 ## GTK
 
 熟悉我的朋友都知道，新语言的GTK demo是一定要有的。毕竟helloworld太简单了，容易让人产生从三到万的错觉。

@@ -25,6 +25,10 @@ https://mp.weixin.qq.com/s/ae515_P6zA5SLN5-Edxbig
 
 图卷积网络Graph Convolutional Networks
 
+https://mp.weixin.qq.com/s/wFlLBoeUW90RracK11pjtg
+
+2021年，我终于决定入门GCN
+
 # GraphSAGE
 
 GraphSAGE取自Graph SAmple and aggreGatE，SAmple指如何对邻居个数进行采样。aggreGatE指拿到邻居的embedding之后如何汇聚这些embedding以更新自己的embedding信息。
@@ -410,15 +414,3 @@ https://mp.weixin.qq.com/s/mamet6l_lA7fhoYkysZ7PQ
 https://mp.weixin.qq.com/s/OnRB44tliuTFcjlmuRG3Xw
 
 图神经网络“理论在哪里“？
-
-https://mp.weixin.qq.com/s/Uy2ekBiwkI2sIo637b-16g
-
-北大、微软提出NGra：高效大规模图神经网络计算
-
-https://mp.weixin.qq.com/s/diIzbc0tpCW4xhbIQu8mCw
-
-阿里凑单算法首次公开！基于Graph Embedding的打包购商品挖掘系统解析
-
-https://mp.weixin.qq.com/s/chiHw5gKnJyTJTQeF6gViw
-
-在向量空间中启用网络分析和推理，清华大学崔鹏博士最新分享

@@ -213,6 +213,10 @@ https://mp.weixin.qq.com/s/2cbd7LBPBRqGt-QO1A7SfQ
 
 在TensorFlow Probability中对结构时间序列建模
 
+https://mp.weixin.qq.com/s/7CjLP5SYpQ-hoC1jwxT1vQ
+
+TensorFlow Probability中的联合分布变分推断
+
 # Debug/Profiling
 
 ## 设置python

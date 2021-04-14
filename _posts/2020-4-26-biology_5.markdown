@@ -51,24 +51,6 @@ https://mp.weixin.qq.com/s/n0QcYI8hdnEG2LBRgoKDzw
 
 新冠肺炎会随着夏天的到来，自然消失吗？
 
-----
-
-19世纪初，预防天花的牛痘疫苗保质期只有12天。为了将牛痘传到遥远的新大陆，他们决心采用“人链”为疫苗“保鲜”：几个成年人带着一群孩子，毅然离开熟悉的家园远航。他们付出了惊人的努力，也有生命的代价，最终使接种疫苗预防天花的观念广为人知，奠定了人类消灭天花的重要基石。
-
-在越洋的航程开始的时候，他们先用疫苗为两个孩子接种，以确保在其中一个接种失败的情况下，还有另一个作为备份。当牛痘病毒在孩子体内发作，长出脓疱的时候，他们再以孩子身上的牛痘脓物作为疫苗，接种下一组的两个孩子……这个接力方案遵循着严格的时间表，因此，当船抵达新大陆的时候，就一定会有孩子可以成为疫苗的来源。
-
-https://mp.weixin.qq.com/s/NFF7bTvW7wtcyzVtMQOoJg
-
-人类消灭天花，是从19世纪初的一艘西班牙帆船开始的
-
-https://mp.weixin.qq.com/s/OykrRcejQvw49ONj7nEAVA
-
-全世界都对新冠疫苗翘首以盼，你知道疫苗在中国是怎么普及的吗？
-
-https://mp.weixin.qq.com/s/zeT-ksuPmbnMXDZxWKlXwQ
-
-无法保证接种过疫苗？那就再打一遍
-
 ## 肝炎病毒
 
 https://mp.weixin.qq.com/s/Op5LQvLol4q4FVS0vIzw_Q
@@ -86,36 +68,6 @@ https://mp.weixin.qq.com/s/tDHWJfw7zx-Aoh9QfCJLQQ
 https://mp.weixin.qq.com/s/iFxvk45TfFjIWKz1A4DHAA
 
 没得乙肝，我们要感谢一个人（Baruch S. Blumberg）
-
-## mRNA
-
-mRNA示意图：
-
-![](/images/img3/mRNA.png)
-
-![](/images/img4/mRNA.png)
-
-https://mp.weixin.qq.com/s/oTjuAsfvLfEruHA-nY2clA
-
-因新冠而将提前诞生的世界首例mRNA疫苗
-
-https://mp.weixin.qq.com/s/b0Mw8uKLYuXHJ5Bj3t2Dwg
-
-一针重复2万亿段代码，我“逆向工程”了辉瑞疫苗！
-
-----
-
-比起传统的疫苗，mRNA疫苗提出了新的要求：它们必须在低温下储存，以保持基因序列不变。摩德纳开发出的疫苗必须在零下20摄氏度的条件下储存，而辉瑞与德国伙伴BioTech合作开发的疫苗则需要零下70摄氏度的环境。相比之下，以往的大多数疫苗可以在2到8摄氏度之间的环境储存。
-
-https://zhuanlan.zhihu.com/p/321849361
-
-新冠疫苗来了，但它也许将成为“后勤的噩梦”
-
-----
-
-https://mp.weixin.qq.com/s/sx3HukH4CQ54IDGfDrdIig
-
-中年失业、患癌，她用四十年逆袭拯救全人类，还培养了一个奥运冠军
 
 ## 参考
 
@@ -191,10 +143,6 @@ https://mp.weixin.qq.com/s/UVQuph37AE_XVf_FrTiTKw
 
 病毒启示录：野生动物面前，人类没有特权
 
-https://mp.weixin.qq.com/s/vXM_QnRtB1rF0-lhqAWxww
-
-流感疫苗：跑在病毒肆虐之前
-
 https://xueqiu.com/5828850316/134638481
 
 洗浴能传染梅毒吗？来看梅毒的前世今生
@@ -231,6 +179,78 @@ https://mp.weixin.qq.com/s/ehq3LRX5hlCIkz02BYFBzQ
 
 对抗这种“无药可治”的传染病，我们又迈进一步（寨卡）
 
+# 疫苗
+
+19世纪初，预防天花的牛痘疫苗保质期只有12天。为了将牛痘传到遥远的新大陆，他们决心采用“人链”为疫苗“保鲜”：几个成年人带着一群孩子，毅然离开熟悉的家园远航。他们付出了惊人的努力，也有生命的代价，最终使接种疫苗预防天花的观念广为人知，奠定了人类消灭天花的重要基石。
+
+在越洋的航程开始的时候，他们先用疫苗为两个孩子接种，以确保在其中一个接种失败的情况下，还有另一个作为备份。当牛痘病毒在孩子体内发作，长出脓疱的时候，他们再以孩子身上的牛痘脓物作为疫苗，接种下一组的两个孩子……这个接力方案遵循着严格的时间表，因此，当船抵达新大陆的时候，就一定会有孩子可以成为疫苗的来源。
+
+https://mp.weixin.qq.com/s/NFF7bTvW7wtcyzVtMQOoJg
+
+人类消灭天花，是从19世纪初的一艘西班牙帆船开始的
+
+----
+
+当1879年的某一天，巴斯德和其助手休假回到实验室时，却发现拿培养了一个月（远远超过了常规的培养时间）的细菌接种鸡时，鸡不死了——细菌失去了毒性。
+
+神奇的是，如果当已经接种过这种过期培养物的鸡再次接种高毒力的新鲜培养物依旧能够存活，但如果之前没有接种过这种过期培养的细菌的鸡却不能够直接抵抗新鲜培养物的接种，全部死亡了。
+
+当时大家都知道，虽然炭疽可以杀死各种牲畜，但鸡对炭疽却具有抵抗力，据巴斯德推测，这是由于它们相对较高的体温引起的。他推测高温可能会减弱炭疽的致病性，于是通过将培养物在较高的温度下进行培养（42–43°C下保持8天）来制备疫苗。
+
+他在日复一日的实验中发现，狂犬病在猴子中的连续传播会减弱这种生物体的致病性（表现为潜伏期变长）。相反，如果在兔子中的连续传代则会产生毒力更强的狂犬病形式（表现为潜伏期缩短）。
+
+巴斯德想要人在被狗咬伤后再接种疫苗，而不是暴露前，这一观点是极为大胆的。这种疫苗和病毒比谁更快发生作用的方法无疑是突破性的。
+
+https://mp.weixin.qq.com/s/ZDGhKLZHg9NMk1OzJzooEQ
+
+为啥法国如此在意自己研制的新冠疫苗？这得从巴斯德和狂犬病疫苗说起
+
+## mRNA
+
+mRNA示意图：
+
+![](/images/img3/mRNA.png)
+
+![](/images/img4/mRNA.png)
+
+https://mp.weixin.qq.com/s/oTjuAsfvLfEruHA-nY2clA
+
+因新冠而将提前诞生的世界首例mRNA疫苗
+
+https://mp.weixin.qq.com/s/b0Mw8uKLYuXHJ5Bj3t2Dwg
+
+一针重复2万亿段代码，我“逆向工程”了辉瑞疫苗！
+
+----
+
+比起传统的疫苗，mRNA疫苗提出了新的要求：它们必须在低温下储存，以保持基因序列不变。摩德纳开发出的疫苗必须在零下20摄氏度的条件下储存，而辉瑞与德国伙伴BioTech合作开发的疫苗则需要零下70摄氏度的环境。相比之下，以往的大多数疫苗可以在2到8摄氏度之间的环境储存。
+
+https://zhuanlan.zhihu.com/p/321849361
+
+新冠疫苗来了，但它也许将成为“后勤的噩梦”
+
+https://mp.weixin.qq.com/s/sx3HukH4CQ54IDGfDrdIig
+
+中年失业、患癌，她用四十年逆袭拯救全人类，还培养了一个奥运冠军
+
+## 参考
+
+https://mp.weixin.qq.com/s/vXM_QnRtB1rF0-lhqAWxww
+
+流感疫苗：跑在病毒肆虐之前
+
+https://mp.weixin.qq.com/s/OykrRcejQvw49ONj7nEAVA
+
+全世界都对新冠疫苗翘首以盼，你知道疫苗在中国是怎么普及的吗？
+
+https://mp.weixin.qq.com/s/zeT-ksuPmbnMXDZxWKlXwQ
+
+无法保证接种过疫苗？那就再打一遍
+
+https://mp.weixin.qq.com/s/ltMU8pSPKnfVK7FLp7bmBQ
+
+疫苗研发的历史疑云？都是滚石惹的祸！
+
 # DNA鉴定
 
 老孔家家族史的绝对：
@@ -254,53 +274,3 @@ https://mp.weixin.qq.com/s/ehq3LRX5hlCIkz02BYFBzQ
 https://www.zhihu.com/question/312130023
 
 历代“衍圣公”都做过什么坏事？
-
-----
-
-https://mp.weixin.qq.com/s/8QEmodonoo_rc1m85kmMOQ
-
-追溯祖先，寻找罪犯……DNA能告诉我们多少信息？
-
-https://mp.weixin.qq.com/s/W3H4PQVhPWwdb-Doywe5vg
-
-28年前的“南医大”杀人凶手，是如何在三天内被发现的？
-
-https://www.f793.club/blog/liusheng1/
-
-关于Y141213是中山靖王刘胜的探讨
-
-https://mp.weixin.qq.com/s/_eLI8hfKhxbL8Qn9350MZw
-
-从28年悬案告破说起：Y染色体的倔强进化史
-
-https://mp.weixin.qq.com/s/Sb8ryvLbHlan8AB6iAnhpw
-
-盖棺未定论的理查三世（上）
-
-https://mp.weixin.qq.com/s/mTbnWFJkx7xbbVUgM-qt9Q
-
-盖棺未定论的理查三世（下）
-
-https://mp.weixin.qq.com/s/-9nmfhYlPtCs2Fx74Yv6Xw
-
-考古学家：《清平乐》的梁怀吉小哥哥，可能是骨质疏松的…大高个
-
-https://mp.weixin.qq.com/s/DVtPA14nXgZPU-GBOiSdDg
-
-它是国家一级保护动物，在海底默默记录着古代的天气（砗磲）
-
-https://mp.weixin.qq.com/s/RMBG1dnmKD6p1itU1OKXvA
-
-克里彭杀妻案，百年前的一场谋杀
-
-https://mp.weixin.qq.com/s/5RE_ZMZpj_2gOUBkBCR2Tg
-
-跨越百万年的障碍：发现最古老的DNA
-
-https://mp.weixin.qq.com/s/yaBTFcz7sqCanIwKHkOBBA
-
-20年，17座里程碑（基因组学）
-
-https://mp.weixin.qq.com/s/NzaavGjL8kgTD4DgKXYwYA
-
-这7个名字，你知道几个？（基因组学）

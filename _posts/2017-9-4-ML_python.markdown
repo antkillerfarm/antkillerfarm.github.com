@@ -313,6 +313,10 @@ https://mp.weixin.qq.com/s/2_q89PIfw43zivwHmTmY-A
 
 在向量化NumPy数组上进行移动窗口操作
 
+https://mp.weixin.qq.com/s/m-j1_2la-tg38NwNvDDSjw
+
+Numpy中常用的10个矩阵操作示例
+
 ## SciPy
 
 SciPy提供了一些更高阶的数学运算库，比如：积分、插值、信号处理、傅立叶变换、矩阵特征值、统计计算等。

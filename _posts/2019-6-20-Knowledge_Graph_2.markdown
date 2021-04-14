@@ -372,3 +372,17 @@ https://mp.weixin.qq.com/s/UafpA31khwR9viFJh88czw
 https://mp.weixin.qq.com/s/P1TIOrC8ve-6265dMz1nvQ
 
 当推荐系统遇见知识图谱（二）
+
+# Graph NN参考资源+
+
+https://mp.weixin.qq.com/s/Uy2ekBiwkI2sIo637b-16g
+
+北大、微软提出NGra：高效大规模图神经网络计算
+
+https://mp.weixin.qq.com/s/diIzbc0tpCW4xhbIQu8mCw
+
+阿里凑单算法首次公开！基于Graph Embedding的打包购商品挖掘系统解析
+
+https://mp.weixin.qq.com/s/chiHw5gKnJyTJTQeF6gViw
+
+在向量空间中启用网络分析和推理，清华大学崔鹏博士最新分享

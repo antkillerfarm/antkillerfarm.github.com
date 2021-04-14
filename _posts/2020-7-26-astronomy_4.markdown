@@ -153,6 +153,48 @@ https://mp.weixin.qq.com/s/Sija998_IKP2G0GQEYynCw
 
 知否知否，月球种菜可否？
 
+# 数学杂谈++++
+
+https://www.zhihu.com/question/20866833
+
+为什么正多面体只有5种？
+
+https://mp.weixin.qq.com/s/qfbfzToypKTxh7CxJ0ifHw
+
+正十二面体的一个最基本谜题被破解了
+
+https://mp.weixin.qq.com/s/uptfQb8ELfpb5P4ySvofpg
+
+一个被我们“嫌弃”了23年的数学天才，累死才知道他的价值（陆家羲）
+
+https://mp.weixin.qq.com/s/wMARrGbRanB2T0NIxISspA
+
+有趣的数学可视化
+
+https://mp.weixin.qq.com/s/T6ukSjODiTgC1T4pCZCY9g
+
+2，29，541，7919，104729……（素数的故事）
+
+https://mp.weixin.qq.com/s/YD6fnPYkqXwxTISjN99JxQ
+
+美国数学能出很厉害的大神，为什么学的却比我们简单？看了他们的黑历史就明白了……
+
+https://mp.weixin.qq.com/s/y9EZdU5hif1WT2t9fpSnFw
+
+他是20世纪最伟大的数学家之一，但这个人却并不存在（尼古拉·布尔巴基）
+
+https://mp.weixin.qq.com/s/o28ZOnRAleDwUcyH5wcckg
+
+羞怯的数学家黎曼，有着太阳一样辉耀的心
+
+https://mp.weixin.qq.com/s/SgH7JU3uc1fF_GIOzSPz-w
+
+圆周率
+
+https://mp.weixin.qq.com/s/XB3Uov6I3X_WumYEnHfCmg
+
+测一测你的数学冷知识
+
 # 模型压缩与加速进阶+
 
 https://mp.weixin.qq.com/s/5NM9M1oY8bwsEqdBRVYpMg
