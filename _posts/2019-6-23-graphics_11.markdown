@@ -353,6 +353,8 @@ Memory consistency model
 
 Multisample anti-aliasing，MSAA
 
+Amdahl's rule，整个计算系统的性能提升取决于速度最慢的这一部分。
+
 ## 参考
 
 https://blog.csdn.net/do2jiang/article/details/4545889
