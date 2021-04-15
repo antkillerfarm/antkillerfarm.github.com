@@ -266,6 +266,20 @@ if (pfile != NULL){
 }
 ```
 
+# 调整交换文件大小
+
+```bash
+fallocate -l 16G /swapfile
+chmod 600 /swapfile
+ls -lh /swapfile
+mkswap /swapfile
+swapon /swapfile
+swapon --show
+# Add this line to /etc/fstab to mount swap at boot
+/swapfile swap swap defaults 0 0
+swapoff /swapfile
+```
+
 # Linux参考资源
 
 https://mp.weixin.qq.com/s/n6D5_6K9TrnuXg3h6AiFNA
