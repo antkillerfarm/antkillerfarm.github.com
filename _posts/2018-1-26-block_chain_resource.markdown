@@ -434,3 +434,7 @@ https://mp.weixin.qq.com/s/oV5F_K2mmE_kK77uEZSjLg
 https://mp.weixin.qq.com/s/ZjnRzI18plggKTv_nPBsEw
 
 字节跳动表格存储中的事务
+
+https://mp.weixin.qq.com/s/thg9xOKI-GWfADF5tXh29A
+
+面试官：了解数据库连接池吗？

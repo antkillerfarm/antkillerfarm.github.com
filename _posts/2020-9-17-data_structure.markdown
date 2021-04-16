@@ -339,6 +339,10 @@ https://segmentfault.com/a/1190000007469982
 
 彻底征服Spring AOP之实战篇
 
+https://mp.weixin.qq.com/s/5UwgQQHA-D0il0_8fDIW0A
+
+Python面向切面编程AOP和装饰器
+
 ----
 
 参考：

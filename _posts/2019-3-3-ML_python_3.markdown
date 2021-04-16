@@ -113,6 +113,10 @@ https://mp.weixin.qq.com/s/rQnPh_ny0APpylwoBY1Pkw
 
 Python图像处理，366页pdf，Image Operators Image Processing in Python
 
+https://mp.weixin.qq.com/s/haCH8uv3oIv9gl9BZCwwAA
+
+Python处理图像五个有趣场景，很实用！
+
 ## Tangent
 
 Tangent是一个用于自动微分的源到源Python库。

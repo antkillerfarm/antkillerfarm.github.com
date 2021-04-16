@@ -185,6 +185,10 @@ https://mp.weixin.qq.com/s/Mwom82Wwzo4pK9uGSNdfSQ
 
 xxxxHub都用上了HTTP/2，它牛逼在哪？
 
+https://mp.weixin.qq.com/s/E4H3iQRoH0baybSPuGS7Fw
+
+我的HTTP/1.1好慢啊！
+
 ## 参考
 
 https://www.cnblogs.com/maybe2030/p/4781555.html

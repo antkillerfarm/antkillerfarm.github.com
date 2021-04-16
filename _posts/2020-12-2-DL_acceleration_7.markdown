@@ -29,6 +29,10 @@ https://mp.weixin.qq.com/s/moQnarr1U-8v834bNJ10Zw
 
 GPU上的高效softmax近似
 
+https://mp.weixin.qq.com/s/PMOrY5ZElyPGOVxZgXFVzw
+
+如果只能做整数Integer运算还能用BERT吗？
+
 # 模型优化工具
 
 ## Amazon SageMaker Neo

@@ -161,6 +161,10 @@ https://mp.weixin.qq.com/s/_cKtmNZbqHwZszocPXuy8g
 
 让GAN随音乐律动的Python工具，网友：这是我见过的GAN的最佳用法
 
+https://mp.weixin.qq.com/s/skDZcvuek3pAV1U07aORVA
+
+改善图像处理效果的五大生成对抗网络
+
 # VAE参考资源+
 
 https://zhuanlan.zhihu.com/p/60330303

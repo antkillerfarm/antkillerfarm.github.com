@@ -157,6 +157,10 @@ https://mp.weixin.qq.com/s/pmovTV3TIoB6oA60pL_zeg
 
 网易严选画像建设实践
 
+https://mp.weixin.qq.com/s/YJG8PXBgljJvtttXy2cDmA
+
+用户画像初探
+
 # 推荐系统的工程细节
 
 推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。

@@ -196,3 +196,7 @@ PyTorch深度学习模型训练加速指南2021
 https://mp.weixin.qq.com/s/SReuVBN8WIXFlnwho3wqgQ
 
 最详细的Pytorch底层算子扩展总结
+
+https://zhuanlan.zhihu.com/p/360405558
+
+PyTorch分布式训练

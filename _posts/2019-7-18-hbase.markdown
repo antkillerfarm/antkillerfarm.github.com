@@ -338,3 +338,7 @@ MySQL锁系统总结
 https://mp.weixin.qq.com/s/sRFmW57KUY3yyyRkyw0L4A
 
 MySQL深入学习总结
+
+https://mp.weixin.qq.com/s/5brbbLOJrnwZxnF5RpbMqA
+
+MySQL隐式转换的坑，一起来看看究竟！

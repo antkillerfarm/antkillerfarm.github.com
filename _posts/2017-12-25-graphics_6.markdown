@@ -291,6 +291,10 @@ https://mp.weixin.qq.com/s/WV78mvRn-cYm11cL4l2ScA
 
 开源、快速、高精度的椭圆检测—你值得拥有！
 
+https://mp.weixin.qq.com/s/QEX46FBulPeGEwdlp469hg
+
+基于霍夫变换进行线检测
+
 # Eigenface
 
 Eigenface是M. Turk和A. Pentland于1991年提出的人脸识别算法。

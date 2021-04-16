@@ -181,6 +181,16 @@ https://www.zhihu.com/question/26380205
 
 FC游戏《中国象棋》中，困难难度是真的在计算棋谱吗？
 
+## PSP & Switch
+
+PSP大约是2008年左右，周围有同事购买。主要游戏有：《三国无双》、《怪物猎人》等。
+
+Switch大约是2018年左右，周围有同事购买。主要游戏有：《塞尔达传说》等。
+
+https://mp.weixin.qq.com/s/2mueD_TvBIV2fZPF7nVPDA
+
+一个开源的任天堂Switch游戏模拟器，支持1700+款游戏
+
 ## Other
 
 https://www.zhihu.com/question/39626359
@@ -292,19 +302,3 @@ https://mp.weixin.qq.com/s/AQgFded7GWp1yPE_voT0QQ
 https://mp.weixin.qq.com/s/23zElw2ktT3YbNZ9_r5lgQ
 
 “一个千古绝伦的大智者”莱布尼茨
-
-https://mp.weixin.qq.com/s/SlbWkTrO3UlWd15jrKYvdg
-
-史上最强律师，用代数暴力破解军事密码，无情吊打荷兰数学家，被誉为“代数学之父”（弗朗索瓦·韦达）
-
-https://mp.weixin.qq.com/s/_HnWeNxH6p2VAMC8tG2gFg
-
-斯坦福再出变态神人！竟用一个数学模型，暴力解开“掰手指”的奥秘！看完我跪了......
-
-https://mp.weixin.qq.com/s/Rw3O5MDbEIfgmWCVgFe95w
-
-五次方程的微分方程解法
-
-https://mp.weixin.qq.com/s/eYzhlrV822X8mHsOGgv1Qw
-
-如何计算一只鸡的表面积？看完中外神人的奇葩解法，我发誓下辈子不做理科生......

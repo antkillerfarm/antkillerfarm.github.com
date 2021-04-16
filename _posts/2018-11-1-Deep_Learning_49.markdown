@@ -211,6 +211,10 @@ https://mp.weixin.qq.com/s/uZQK0oQbV7wm0WVz_QxVQg
 
 DRN：用于单图像超分辨率的对偶回归网络
 
+https://mp.weixin.qq.com/s/tE_-gUBmt_0h75CnkViUHA
+
+超分辨率技术:Adobe Photoshop与深度神经网络对比
+
 # 人脸检测/识别+
 
 https://mp.weixin.qq.com/s/pmnb_WnncL12T1IZoso5DA

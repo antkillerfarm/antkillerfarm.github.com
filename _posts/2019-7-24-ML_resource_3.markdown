@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ML参考资源（三）, 上古软件开发
+title:  ML参考资源（三）, 上古软件开发, 互联网风云
 category: resource 
 ---
 
@@ -327,9 +327,29 @@ https://mp.weixin.qq.com/s/3ZszI7PupWsuTvy69BwPnw
 
 “C语言之父”40年前搞的操作系统复活！Linux、Windows都借鉴过它（Plan 9）
 
+# 互联网风云
+
+https://mp.weixin.qq.com/s/m72bakeHShkM8yvPubMa8A
+
+狂飙突进的“蛋壳”，一触即溃的“蛋壳”
+
+https://mp.weixin.qq.com/s/LWhuImT3W1Pg-4WA0RMq6g
+
+被长租公寓割韭菜的打工一代
+
+https://mp.weixin.qq.com/s/diYe8bOXfOseXOLKScxdGw
+
+困在蛋壳里的人
+
+----
+
 https://mp.weixin.qq.com/s/fov2fS345enPB_M7kEzFpQ
 
 无代码的时代真的来了吗？
+
+https://view.inews.qq.com/wxn/20210405A068ZS00
+
+穿越废墟：共享单车剧未终
 
 # 数字成像+
 

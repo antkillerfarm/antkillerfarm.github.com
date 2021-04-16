@@ -9,6 +9,30 @@ category: Nature
 
 # 天文杂谈（续）
 
+https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
+
+生的伟大，死的光荣——致敬卡西尼号土星探测器
+
+https://mp.weixin.qq.com/s/sg24WvUClEZnLxhJio0BuQ
+
+被磨难环绕的“伽利略号”的一生
+
+https://mp.weixin.qq.com/s/ros-kBOIgTgQF2SaGc99qQ
+
+哈佛名镜的前世今生
+
+https://mp.weixin.qq.com/s/DKMs8sZtE_JzWaxr8o-DWA
+
+你好，冥王星
+
+https://mp.weixin.qq.com/s/sv6McqKzoqJ3snUeDvFfwg
+
+这地儿跟中国一个时区，你却从来没听说过？这个blog介绍了西澳大学和它的天文学成就。
+
+https://mp.weixin.qq.com/s/EZWl8UwhiAkIXWkWE0abUQ
+
+半个世纪的角逐：二战后的国际脉冲星搜寻竞赛
+
 https://mp.weixin.qq.com/s/tmSL5NIyjBpivtbGpbdKqQ
 
 威廉·赫歇尔：我一个德国音乐家，怎么就跑到英国当了天文学家？
@@ -152,6 +176,10 @@ https://mp.weixin.qq.com/s/oP5prD-KuxI8CNVo16arVQ
 https://mp.weixin.qq.com/s/Sija998_IKP2G0GQEYynCw
 
 知否知否，月球种菜可否？
+
+https://mp.weixin.qq.com/s/rvH-gvgbjLITyP8QOuzgKA
+
+我们在新疆发现了一个建天文台的好地方
 
 # 数学杂谈++++
 
@@ -322,31 +350,3 @@ https://mp.weixin.qq.com/s/DoeoPGnS88HQmxagKJWLlg
 https://mp.weixin.qq.com/s/wT39oUWfrQK-dg7hGXRynQ
 
 实时单人姿态估计，在自己手机上就能实现
-
-https://mp.weixin.qq.com/s/GJ7JMtWiKBku7dVJWOfLOA
-
-CNN能同时兼顾速度与准确度吗？CMU提出AdaScale
-
-https://mp.weixin.qq.com/s/pmel2k2J159zQi87ib3q8A
-
-如何让CNN高效地在移动端运行
-
-https://mp.weixin.qq.com/s/m-wQRm3VpfQkEOoUAxEdoA
-
-论文解读: Quantized Convolutional Neural Networks for Mobile Devices
-
-https://mp.weixin.qq.com/s/w7O2JxDH2ECqPn50sLfxpg
-
-不用重新训练，直接将现有模型转换为MobileNet
-
-https://mp.weixin.qq.com/s/EW6jvf98ifBucVz74SfSIA
-
-文档扫描：深度神经网络在移动端的实践
-
-https://mp.weixin.qq.com/s/3oL0Bso3mwbsfaG8X5-xoA
-
-英特尔提出新型压缩技术DeepThin，适合移动端设备深度神经网络
-
-https://mp.weixin.qq.com/s/LGCGYSoMpPfojEi2WcmjnQ
-
-TinyML：下一轮人工智能革命

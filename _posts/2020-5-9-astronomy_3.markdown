@@ -61,6 +61,18 @@ https://mp.weixin.qq.com/s/x9Nps_oGoVQd2PW3H2VdyA
 
 ----
 
+格鲁什科和萨格尔耶夫认为，苏联应该放弃失败率居高不下的火星探测，不在这一领域与美国人竞争，而专注于十分成功的金星探测计划。他们及其支持者也被戏称为“金星人”。
+
+当然，远非所有人都支持他们的看法。毕竟，相比于浓云密布、灼热的金星而言，火星看起来更有趣，也能取得更多的科研成果。支持火星探测计划的科学家则被称为“火星人”。
+
+“金星人”和“火星人”关于苏联行星探索方向的争论被时人戏称为“行星间的战争”。
+
+https://mp.weixin.qq.com/s/xWBSzEfKAi2pMUldp0zL9w
+
+先发未能制人，苏联探火为何成果寥寥
+
+----
+
 https://mp.weixin.qq.com/s/SqL5WlQXQgNNiXHACfeN1A
 
 苏萌解读“天问一号”：中国人为什么要探测火星？
@@ -280,29 +292,3 @@ NASA的科学家开始没有意识到是望远镜的镜头质量问题，还在�
 https://mp.weixin.qq.com/s/Wcd_bv_bt-xv42UD40dDww
 
 深度传感进化史
-
-----
-
-https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
-
-生的伟大，死的光荣——致敬卡西尼号土星探测器
-
-https://mp.weixin.qq.com/s/sg24WvUClEZnLxhJio0BuQ
-
-被磨难环绕的“伽利略号”的一生
-
-https://mp.weixin.qq.com/s/ros-kBOIgTgQF2SaGc99qQ
-
-哈佛名镜的前世今生
-
-https://mp.weixin.qq.com/s/DKMs8sZtE_JzWaxr8o-DWA
-
-你好，冥王星
-
-https://mp.weixin.qq.com/s/sv6McqKzoqJ3snUeDvFfwg
-
-这地儿跟中国一个时区，你却从来没听说过？这个blog介绍了西澳大学和它的天文学成就。
-
-https://mp.weixin.qq.com/s/EZWl8UwhiAkIXWkWE0abUQ
-
-半个世纪的角逐：二战后的国际脉冲星搜寻竞赛

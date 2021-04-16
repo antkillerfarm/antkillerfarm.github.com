@@ -289,6 +289,14 @@ https://mp.weixin.qq.com/s/aWzHpeNS3OUrjrbEvnI87g
 
 用Pytorch轻松实现28个视觉Transformer，开源库timm了解一下
 
+https://mp.weixin.qq.com/s/t_J0MODtWzfnJse0aNGyWg
+
+Swin Transformer对CNN的降维打击
+
+https://mp.weixin.qq.com/s/J7Fw-T1tYSqi9_vx8VSqYA
+
+TimeSformer：视频理解所需的只是时空注意力吗？
+
 # BERT进阶
 
 ## AR vs AE

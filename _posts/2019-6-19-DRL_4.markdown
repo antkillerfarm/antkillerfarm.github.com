@@ -235,6 +235,10 @@ https://mp.weixin.qq.com/s/3uzx54YtqPeG6EDCVTE0YA
 
 24分钟让AI跑起飞车类游戏（Distributed PPO）
 
+https://mp.weixin.qq.com/s/sbE44zbyRpFyfQKYByBXzA
+
+深度强化学习之：PPO训练红白机1942
+
 # IMPALA
 
 论文：
