@@ -23,6 +23,10 @@ https://github.com/Yochengliu/awesome-point-cloud-analysis
 
 三维点云论文和数据集
 
+https://www.zhihu.com/column/c_1305511326216097792
+
+一个激光雷达点云处理的专栏
+
 https://mp.weixin.qq.com/s/f44TkWXklGONCuXnIuTbXg
 
 无人驾驶汽车系统入门：基于VoxelNet的激光雷达点云车辆检测及ROS实现
@@ -276,7 +280,7 @@ https://mp.weixin.qq.com/s/57Vxc1A5FCVbMdDYShWiDA
 
 单网络内部集成：我要打十个！
 
-# Graph NN+
+# Graph NN参考资源+
 
 https://mp.weixin.qq.com/s/soH6jX7_fjq0iBBH-5bMsA
 

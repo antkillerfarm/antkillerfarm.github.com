@@ -200,3 +200,11 @@ https://mp.weixin.qq.com/s/SReuVBN8WIXFlnwho3wqgQ
 https://zhuanlan.zhihu.com/p/360405558
 
 PyTorch分布式训练
+
+https://mp.weixin.qq.com/s/14_pt0_skKYNw2sAK5Zptw
+
+Pytorch底层算子扩展最详细的总结
+
+https://mp.weixin.qq.com/s/Svh27YIG2jYWqXwhhEuoSw
+
+使用Pytorch和BERT进行多标签文本分类

@@ -9,6 +9,28 @@ category: technology
 
 # 数据库
 
+## Cache（续）
+
+https://mp.weixin.qq.com/s/mjySTz73Ltcfsw1e6iY4YA
+
+缓存踩踏：Facebook史上最严重的宕机事件分析
+
+https://mp.weixin.qq.com/s/sE8xhHUc5qhzeaRga_VFeQ
+
+再也不怕，缓存雪崩、击穿、穿透！
+
+## 数据管理工具
+
+数据管理工具主要有：Navicat和DataGrip。
+
+https://www.cnblogs.com/zuge/p/7397255.html
+
+DataGrip使用入门
+
+https://mp.weixin.qq.com/s/9Q18rptRwV4Ccg33dD9BrQ
+
+操作所有的数据库靠它就够了（DBeaver）
+
 ## 数据湖
 
 数仓：“结构化”地存数据。典型代表：用Excel记账目。
@@ -346,15 +368,3 @@ https://mp.weixin.qq.com/s/9tIy1IqjaB0NdKaO76dgCw
 https://mp.weixin.qq.com/s/ok6VD1b5fhG_mY9O3d_VGA
 
 记住，永远不要在MySQL中使用“utf8”
-
-https://mp.weixin.qq.com/s/duYi1Y5jEWSPQbO3Bgsrrw
-
-SQL Server与MySQL中排序规则与字符集相关知识的一点总结
-
-https://mp.weixin.qq.com/s/N7-8vtVUg3MRY2u_NYpAiA
-
-一份值得收藏的的MySQL规范
-
-https://mp.weixin.qq.com/s/YX1XqKVfPS9DpMi_gTFNiA
-
-1000行MySQL学习笔记

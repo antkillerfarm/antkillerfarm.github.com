@@ -373,7 +373,7 @@ https://mp.weixin.qq.com/s/P1TIOrC8ve-6265dMz1nvQ
 
 当推荐系统遇见知识图谱（二）
 
-# Graph NN参考资源+
+# Graph NN参考资源++
 
 https://mp.weixin.qq.com/s/Uy2ekBiwkI2sIo637b-16g
 
@@ -386,3 +386,7 @@ https://mp.weixin.qq.com/s/diIzbc0tpCW4xhbIQu8mCw
 https://mp.weixin.qq.com/s/chiHw5gKnJyTJTQeF6gViw
 
 在向量空间中启用网络分析和推理，清华大学崔鹏博士最新分享
+
+https://mp.weixin.qq.com/s/cNNj18i_SoPeJSu9lXf9Ng
+
+动态图表示学习，40页ppt，Dynamic Graph Representation Learning

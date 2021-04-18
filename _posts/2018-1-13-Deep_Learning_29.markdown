@@ -358,3 +358,15 @@ https://zhuanlan.zhihu.com/p/37020639
 https://mp.weixin.qq.com/s/TdnstQaBcLaXg8BvuR7oYA
 
 基于素描图的细粒度图像检索
+
+https://mp.weixin.qq.com/s/YrepffjMkxeuFRVMv8MClg
+
+信息检索技术进展: 从词袋到BERT，230页ppt
+
+https://mp.weixin.qq.com/s/vN9X3CRwJuHLJwzvfDg1kA
+
+强化学习如何用于信息检索？请看ECIR2021《基于强化学习的信息检索》教程
+
+https://mp.weixin.qq.com/s/CAzafDevfNs0hHUmquds2Q
+
+如何构建一个好的电商搜索引擎？

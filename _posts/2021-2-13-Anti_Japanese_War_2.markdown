@@ -238,3 +238,7 @@ https://mil.news.sina.com.cn/history/2020-08-25/doc-iivhuipp0547778.shtml
 https://www.sohu.com/a/338584100_247380
 
 他的眼睛被炸瞎，战友的双腿被炸断，他背起战友，继续战斗
+
+https://zhuanlan.zhihu.com/p/274612401
+
+上甘岭的“互补组合”：失明志愿军战士背着断腿战友打完战斗

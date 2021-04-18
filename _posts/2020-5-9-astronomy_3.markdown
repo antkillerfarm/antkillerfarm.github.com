@@ -153,6 +153,10 @@ https://mp.weixin.qq.com/s/kfCLMYvvw5NmaOdkN65Yxw
 
 火星的两极也是冰雪世界吗？
 
+https://mp.weixin.qq.com/s/WGHGXWghWhwcA0tux9bz0g
+
+想去火星旅游，记得看看天气预报
+
 # 阿波罗50年
 
 https://mp.weixin.qq.com/s/79e6p2TYpttO-NR1of21jw
@@ -266,20 +270,6 @@ https://zhuanlan.zhihu.com/p/61467796
 https://mp.weixin.qq.com/s/vMe5RmD8uBW3AeGDYwbI5A
 
 紫金山天文台的创立（高鲁、余青松）
-
-----
-
-https://mp.weixin.qq.com/s/aY4gFbK_aKWcgwvr0Rk5gQ
-
-“波多黎各，波多黎各，世界最大射电望远镜，倒闭了”（Arecibo望远镜）
-
-https://www.zhihu.com/question/432120058
-
-阿雷西博望远镜馈源舱支撑平台塌了，现已决定退役拆除，如何评价它的一生？
-
-https://zhuanlan.zhihu.com/p/330003494
-
-美国天眼塌了
 
 ----
 

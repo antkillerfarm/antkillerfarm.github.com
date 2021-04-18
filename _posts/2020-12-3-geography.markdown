@@ -179,10 +179,6 @@ https://mp.weixin.qq.com/s/ABYf1naUtycBNllvqW5y6Q
 
 荒漠中发现神秘巨型金属，网友开始光速破案
 
-https://mp.weixin.qq.com/s/jHswcZDCjBH6qp46W8Vc4g
-
-漫画：为什么新疆永远不包邮？
-
 https://mp.weixin.qq.com/s/MWGedW1qbeqicE0wEqcSQw
 
 5000多万年前，江南曾是一片荒漠

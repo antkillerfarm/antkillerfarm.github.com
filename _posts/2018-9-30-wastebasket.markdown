@@ -275,6 +275,12 @@ https://www.zhihu.com/question/407163721
 
 如何看待中科院合肥研究院90多名科研人员集体辞职？
 
+----
+
+https://mp.weixin.qq.com/s/1dlOCpoJiCkh55WDAajLuw
+
+内卷、找关系、作弊、丑闻-美国富人的名校之梦
+
 # 机械
 
 <video  id="myvideo" width="100%" height="auto" controls="controls" loop="loop">

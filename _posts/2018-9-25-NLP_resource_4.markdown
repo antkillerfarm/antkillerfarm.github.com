@@ -9,6 +9,14 @@ category: resource
 
 # NLP参考资源
 
+https://mp.weixin.qq.com/s/klfTdvfti0xCg2lGitG4hg
+
+用户表示方法对新浪微博中用户属性分类性能影响的研究
+
+https://mp.weixin.qq.com/s/IvbJ_d7z91BCcRVpJ9_jMA
+
+如何用深度学习做自然语言处理？这里有份最佳实践清单
+
 https://mp.weixin.qq.com/s/xYvYEJA0ssAOZ-NvEXQcZg
 
 阿里小蜜这一年，经历了哪些技术变迁？

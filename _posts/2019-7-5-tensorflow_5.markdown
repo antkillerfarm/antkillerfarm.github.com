@@ -189,6 +189,10 @@ https://mp.weixin.qq.com/s/OVWbxBNc4i0_5jgy06xS1A
 
 基于Tensorflow Estimators的文本分类
 
+https://mp.weixin.qq.com/s/h4Ve_UUajsdlk7PNS6J4QA
+
+TensorFlow Estimator模型从训练到部署
+
 https://mp.weixin.qq.com/s/c_2_9gvOynHaVW6pi4qQjQ
 
 用TensorFlow让机器人唱首歌给你听

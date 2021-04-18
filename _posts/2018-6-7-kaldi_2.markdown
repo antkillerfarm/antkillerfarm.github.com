@@ -256,6 +256,18 @@ https://speechbrain.github.io/
 
 # Mysql+
 
+https://mp.weixin.qq.com/s/duYi1Y5jEWSPQbO3Bgsrrw
+
+SQL Server与MySQL中排序规则与字符集相关知识的一点总结
+
+https://mp.weixin.qq.com/s/N7-8vtVUg3MRY2u_NYpAiA
+
+一份值得收藏的的MySQL规范
+
+https://mp.weixin.qq.com/s/YX1XqKVfPS9DpMi_gTFNiA
+
+1000行MySQL学习笔记
+
 https://www.jianshu.com/p/bdc9e57ccf8b
 
 mysql索引篇之覆盖索引、联合索引、索引下推

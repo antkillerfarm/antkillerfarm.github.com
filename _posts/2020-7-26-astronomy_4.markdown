@@ -9,6 +9,20 @@ category: Nature
 
 # 天文杂谈（续）
 
+https://mp.weixin.qq.com/s/aY4gFbK_aKWcgwvr0Rk5gQ
+
+“波多黎各，波多黎各，世界最大射电望远镜，倒闭了”（Arecibo望远镜）
+
+https://www.zhihu.com/question/432120058
+
+阿雷西博望远镜馈源舱支撑平台塌了，现已决定退役拆除，如何评价它的一生？
+
+https://zhuanlan.zhihu.com/p/330003494
+
+美国天眼塌了
+
+----
+
 https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
 
 生的伟大，死的光荣——致敬卡西尼号土星探测器
@@ -330,23 +344,3 @@ https://mp.weixin.qq.com/s/g3y9mRhkFtzSuSMAornnDQ
 https://mp.weixin.qq.com/s/aH1zQ7we8OE59-O9n4IXhw
 
 应对未来物联网大潮：如何在内存有限的情况下部署深度学习？
-
-https://mp.weixin.qq.com/s/IfvXrsUq8-cBDC4_3O5v_w
-
-Facebook新研究优化硬件浮点运算，强化AI模型运行速率
-
-https://mp.weixin.qq.com/s/Jsxiha_BFtWVLvO4HMwJ3Q
-
-工业界第一手实战经验：深度学习高效网络结构设计
-
-https://mp.weixin.qq.com/s/uXbLb5ITHOU0dZRSWNobVg
-
-算力限制场景下的目标检测实战浅谈
-
-https://mp.weixin.qq.com/s/DoeoPGnS88HQmxagKJWLlg
-
-小米开源FALSR算法：快速精确轻量级的超分辨率模型
-
-https://mp.weixin.qq.com/s/wT39oUWfrQK-dg7hGXRynQ
-
-实时单人姿态估计，在自己手机上就能实现

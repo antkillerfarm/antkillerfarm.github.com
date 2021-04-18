@@ -386,3 +386,7 @@ https://mp.weixin.qq.com/s/P14VsWwSh9jiF-jBHSXXOw
 https://mp.weixin.qq.com/s/OJHQZjxa6u8aA6jZyJnNPg
 
 一文浅析内存管理机制
+
+https://mp.weixin.qq.com/s/lAN0GKjkfkkWCurwRQb6DQ
+
+如何排查句柄泄露问题

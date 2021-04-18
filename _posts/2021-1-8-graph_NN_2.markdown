@@ -53,6 +53,10 @@ https://mp.weixin.qq.com/s/45PlgqZag8dXqZr4xvj9Hw
 
 GraphSAGE算法细节详解
 
+https://mp.weixin.qq.com/s/kRrM0FJuXlBcE52GOLjnsQ
+
+GraphSAGE: 大规模图结构的归纳表示学习
+
 # GAT
 
 https://mp.weixin.qq.com/s/_aydey5ZVwrObmoFXXIYcw

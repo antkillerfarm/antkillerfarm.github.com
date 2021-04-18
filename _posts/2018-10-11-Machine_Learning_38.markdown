@@ -302,3 +302,7 @@ https://mp.weixin.qq.com/s/eHovfZiheQsv4Mb276su9w
 https://mp.weixin.qq.com/s/6TpT1FH87esQWsUig0oS_Q
 
 手把手教你用Python进行时间序列分解和预测
+
+https://mp.weixin.qq.com/s/y6LL52Al3w5ErnpPX0A35Q
+
+开源新书《时间序列分析，数据/方法/应用》，6章110页pdf带你了解最新进展

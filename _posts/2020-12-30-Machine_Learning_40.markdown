@@ -242,3 +242,47 @@ Null Importances
 https://mp.weixin.qq.com/s/OESIXwjM8nFhz4NhNT1BzQ
 
 使用神经网络的自动化特征工程
+
+# 计算机体系结构+
+
+## GPU体系结构
+
+![](/images/img4/SGI.png)
+
+上图是SGI公司1993年的一款显卡的模块图。可以看出，早期的显卡是一个具有固定流水线的专用芯片，只能处理特定任务，没有多少可编程的能力。
+
+![](/images/img4/Tesla.png)
+
+到了2005年左右，这些渲染流水线的功能被统一到一个叫做Shader Processor的可编程单元中。此后，显卡也被称为GPU（Graphics Processing Unit）。
+
+![](/images/img4/Shader.png)
+
+无论是CPU，还是GPU，或者是现在比较火的NPU，一个Processing Unit，一般都是由上图所示的三部分组成：
+
+- Fetch/Decode。数据的输入/输出单元。
+
+- ALU（arithmetic and logic unit）。运算单元。
+
+- Execution Context。寄存器单元。
+
+CPU强调单core的极致性能，因此广泛使用了如下技术：
+
+- Out-of-order control logic
+
+- Fancy branch predictor 
+
+- Memory pre-fetcher
+
+![](/images/img4/GPU.png)
+
+GPU不追求单core的性能，因此也没有那些复杂的控制逻辑。这样省下来的电路，可以变成更多的ALU。由于数据处理的局部性，通常可以若干ALU共享一套Fetch/Decode和Ctx。
+
+参考：
+
+http://www.cnblogs.com/geniusalex/archive/2008/12/26/1941766.html
+
+CPU GPU设计工作原理
+
+https://mp.weixin.qq.com/s/-Wg1GtVGUxfshJ5d5NDd-Q
+
+聊聊GPU的计算能力上限

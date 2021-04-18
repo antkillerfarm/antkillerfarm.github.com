@@ -171,6 +171,10 @@ https://mp.weixin.qq.com/s/iwPI8g2JwabwiCO8kfw8Hw
 
 用开源工具DIY车牌识别系统
 
+https://mp.weixin.qq.com/s/0Lh8821SbDdmM7IZS3IEBg
+
+构建自动车牌识别系统
+
 ## CRNN
 
 CRNN是白翔小组的作品。

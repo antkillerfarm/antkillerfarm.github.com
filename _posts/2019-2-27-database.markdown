@@ -269,6 +269,10 @@ https://mp.weixin.qq.com/s/VxeRwsYw0qL35BlPsDGbtg
 
 5款好用且有代表性的GraphQL工具
 
+https://mp.weixin.qq.com/s/ea6w5srIG0u7vyYEcuxaVQ
+
+GraphQL最突出的架构优势是什么？
+
 ## 分布式算法
 
 Paxos、Raft、Gossip、Nuorum NWR、PBFT、Anti-Entropy、POW、ZAB等等。
@@ -374,19 +378,3 @@ https://mp.weixin.qq.com/s/0J9X-fFp3y0zaxR78tBfQQ
 https://mp.weixin.qq.com/s/_RlOAvjfTINJrhwHUogs7Q
 
 分布式缓存与DB秒级一致设计实践
-
-https://mp.weixin.qq.com/s/mjySTz73Ltcfsw1e6iY4YA
-
-缓存踩踏：Facebook史上最严重的宕机事件分析
-
-## 数据管理工具
-
-数据管理工具主要有：Navicat和DataGrip。
-
-https://www.cnblogs.com/zuge/p/7397255.html
-
-DataGrip使用入门
-
-https://mp.weixin.qq.com/s/9Q18rptRwV4Ccg33dD9BrQ
-
-操作所有的数据库靠它就够了（DBeaver）

@@ -297,6 +297,14 @@ https://mp.weixin.qq.com/s/J7Fw-T1tYSqi9_vx8VSqYA
 
 TimeSformer：视频理解所需的只是时空注意力吗？
 
+https://mp.weixin.qq.com/s/dHWc0MFwuyLMsCoBGN353Q
+
+PVT：可用于密集任务backbone的金字塔视觉transformer
+
+https://mp.weixin.qq.com/s/DKWSeRu_ThMf_vf9j1GCbQ
+
+PoseFormer：首个纯基于Transformer的3D人体姿态估计网络，性能达到SOTA
+
 # BERT进阶
 
 ## AR vs AE
@@ -314,21 +322,3 @@ $$\text{backward:}p(x)=\prod_{t=T}^1p(x_t|x_{>t})$$
 - 缺点：它只能利用单向语义而不能同时利用上下文信息。ELMO通过双向都做AR模型，然后进行拼接，但从结果来看，效果并不是太好。
 
 - 优点：对自然语言生成任务(NLG)友好，天然符合生成式任务的生成过程。这也是为什么GPT能够编故事的原因。
-
-**AE**:Autoencoding Language Modeling，又叫自编码语言。通过上下文信息来预测当前被mask的token，代表有BERT，Word2Vec(CBOW)。
-
-$$p(x)=\prod_{x\in Mask}p(x_t|context)$$
-
-- 缺点：由于训练中采用了MASK标记，导致预训练与微调阶段不一致的问题。此外对于生成式问题，AE模型也显得捉襟见肘，这也是目前BERT为数不多没有实现大的突破的领域。
-
-- 优点：能够很好的编码上下文语义信息，在自然语言理解(NLU)相关的下游任务上表现突出。
-
-参考：
-
-https://mp.weixin.qq.com/s/n6F6MTjrUCmvEoaLiVZpxA
-
-更深的编码器+更浅的解码器=更快的自回归模型
-
-https://mp.weixin.qq.com/s/pe2E69Gpw0nT9sSHvtBGSg
-
-自回归与非自回归模型不可兼得？预训练模型BANG全都要！

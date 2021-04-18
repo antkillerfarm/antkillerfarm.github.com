@@ -432,19 +432,3 @@ https://mp.weixin.qq.com/s/Jfuc6x-Qt0rya5dbCR2uCA
 https://mp.weixin.qq.com/s/tV3HfWZrrnyJEPV0R0QykA
 
 模型化召回在陌陌社交推荐的应用和探索
-
-https://mp.weixin.qq.com/s/V67YXV69dlmc2ke2WgPewQ
-
-玩儿转oCPC
-
-https://mp.weixin.qq.com/s/ZsekCl1uOqKxUOOk0otk_Q
-
-搜索推荐广告排序之用户行为序列建模
-
-https://mp.weixin.qq.com/s/TVCgH_B_d5T0hWuXfgnRQA
-
-阿里粗排技术体系与最新进展
-
-https://mp.weixin.qq.com/s/bzKGvD-nU4l1o-_bucvm0Q
-
-微信看一看如何过滤广告文章？

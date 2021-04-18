@@ -131,6 +131,10 @@ https://mp.weixin.qq.com/s/iJoPJiP3KxDXz6ZOBN4seQ
 
 发现第三种类型的黑洞了？！
 
+https://mp.weixin.qq.com/s/Vw6vuuyIoJJIzn04NzS5AQ
+
+被“天眼”改变的县城中学
+
 # SpaceX
 
 2018.2

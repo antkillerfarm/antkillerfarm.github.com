@@ -165,6 +165,10 @@ https://mp.weixin.qq.com/s/skDZcvuek3pAV1U07aORVA
 
 改善图像处理效果的五大生成对抗网络
 
+https://mp.weixin.qq.com/s/a1f_8wP0bMyNf99ihaCISg
+
+对抗学习如何应用到推荐系统？ECIR2021<对抗学习推荐系统>教程，197页ppt
+
 # VAE参考资源+
 
 https://zhuanlan.zhihu.com/p/60330303
@@ -281,6 +285,24 @@ https://mp.weixin.qq.com/s/xhor1Qtzzk1VdlM5IqTkHQ
 
 先搞懂期货，才知道中行是咋亏的！
 
+----
+
+LTCM的这群数学怪物，他们的胜率不是什么99%，而是100%。怎么打怎么赢，就没输过。
+
+虽然每次出手瞄准的利差都很小，但长期资本公司使用了33倍以上的超高杠杆进行了放大。
+
+但意外出现了。1998年8月，俄罗斯金融危机爆发，这导致俄罗斯的国债价格连续下跌，利率上涨。
+
+LTCM的精英们认为，俄罗斯的国债利率上涨的过高，价格下跌的过多，超过了其应该的水平。于是，LTCM大量买入俄罗斯的国债，卖出美国国债。
+
+这次史无前例的俄罗斯国债大暴跌，导致LTCM穿仓了。
+
+从长期来看，几年后，俄罗斯的国债价格确实也回归了，LTCM精英们的判断并没有错。但他们的杠杆太大了，哪怕一点点亏损，都直接爆仓了。
+
+https://mp.weixin.qq.com/s/onlkrw5D1Z32Br-IlsMhDw
+
+因为杠杆，他一天亏了150亿美元
+
 ## 参考
 
 https://mp.weixin.qq.com/s/_rO9I2M-504oZdnGQVsRcQ
@@ -312,39 +334,3 @@ https://mp.weixin.qq.com/s/skl5w2cJaO3mYtr656lb9Q
 https://mp.weixin.qq.com/s/g2xMUmhxUTuQugR2PWUJtw
 
 组成TensorFlow核心的六篇论文
-
-https://mp.weixin.qq.com/s/n4nEtyRc5G44kj3zmHpd5g
-
-TensorFlow实战——图像分类神经网络模型
-
-https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
-
-简易浣熊识别器是如何实现的
-
-http://www.jianshu.com/p/d443aab9bcb1
-
-在TensorFlow上使用LSTM进行情感分析
-
-https://mp.weixin.qq.com/s/gW_KX6eF9XEsSUO1UzJ3WQ
-
-基于LSTM的情感分析
-
-https://mp.weixin.qq.com/s/KZhL477ApHgQfmM2xFrYJw
-
-Tensorlang：基于TensorFlow的可微编程语言
-
-https://mp.weixin.qq.com/s/_9NJ6QLQArUAD1DKb0KRfA
-
-如何使用TensorFlow mobile部署模型到移动设备
-
-https://mp.weixin.qq.com/s/e_TzQxFLAonLMyYAhte6Cg
-
-face-api.js：在浏览器中进行人脸识别的JavaScript接口
-
-https://mp.weixin.qq.com/s/23FoaaA3Z_3kf03BmepFPg
-
-如何将模型部署到安卓移动端，这里有一份简单教程
-
-https://mp.weixin.qq.com/s/MT1YaMm4KBWsIZeHehahgw
-
-TensorFlow重大升级：自动将Python代码转为TF Graph，大幅简化动态图处理！

@@ -19,6 +19,14 @@ category: technology
 
 以上三本书，被称为编译器领域的圣经。
 
+----
+
+龙书的作者Alfred Vaino Aho和Jeffrey David Ullman获得了2020年图灵奖。
+
+https://mp.weixin.qq.com/s/UGhHM1jCN0S7TX9jwLcMmQ
+
+2020图灵奖重磅出炉！龙书作者、编程语言先驱共获大奖，是他们解放了一代又一代程序员
+
 ## blog
 
 https://zhuanlan.zhihu.com/frozengene

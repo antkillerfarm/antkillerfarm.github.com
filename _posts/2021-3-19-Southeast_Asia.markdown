@@ -136,3 +136,7 @@ https://zhuanlan.zhihu.com/p/37928659
 https://zhuanlan.zhihu.com/p/303875663
 
 从数据看越南制造对中国的威胁有多大？
+
+https://mp.weixin.qq.com/s/NHkTQmJ3Jq1A3pgKI2DCeg
+
+这是9·11事件后，全世界最严重的恐怖袭击（巴厘岛恐怖袭击）

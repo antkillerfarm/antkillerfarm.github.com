@@ -339,6 +339,10 @@ https://mp.weixin.qq.com/s/St6ndWeW9P1vvnhNBF4Nyw
 
 使用神经网络为图像生成标题
 
+https://mp.weixin.qq.com/s/-g5opYPyM488Fit5fP5Y_Q
+
+图像描述生成研究进展
+
 # LSM
 
 liquid state machine (LSM)

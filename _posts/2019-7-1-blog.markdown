@@ -234,7 +234,3 @@ https://mp.weixin.qq.com/s/CNaQbeLbN4J3CsUIMaezFw
 https://mp.weixin.qq.com/s/WVwB-ldc8Yoin6I_m6RT5g
 
 CNN轻量化模型及其设计原则综述
-
-https://mp.weixin.qq.com/s/RVsXUnAJ2f0Cby7BPaWifA
-
-人物属性模型移动端实验记录

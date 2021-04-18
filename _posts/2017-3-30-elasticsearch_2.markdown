@@ -274,6 +274,10 @@ https://mp.weixin.qq.com/s/dFspZaLOOOl8Y28wN_EWfA
 
 还在用ELK？是时候了解一下轻量化日志服务Loki了
 
+https://mp.weixin.qq.com/s/JOS_fxec6YWjfekQzgGiKA
+
+百亿数据，毫秒级返回，如何构建？
+
 # Flume & Kafka
 
 Flume和Kafka都是日志系统。

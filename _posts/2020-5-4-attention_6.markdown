@@ -7,7 +7,27 @@ category: Attention
 * toc
 {:toc}
 
-# BERT进阶（续）
+# BERT进阶
+
+## AR vs AE（续）
+
+**AE**:Autoencoding Language Modeling，又叫自编码语言。通过上下文信息来预测当前被mask的token，代表有BERT，Word2Vec(CBOW)。
+
+$$p(x)=\prod_{x\in Mask}p(x_t|context)$$
+
+- 缺点：由于训练中采用了MASK标记，导致预训练与微调阶段不一致的问题。此外对于生成式问题，AE模型也显得捉襟见肘，这也是目前BERT为数不多没有实现大的突破的领域。
+
+- 优点：能够很好的编码上下文语义信息，在自然语言理解(NLU)相关的下游任务上表现突出。
+
+参考：
+
+https://mp.weixin.qq.com/s/n6F6MTjrUCmvEoaLiVZpxA
+
+更深的编码器+更浅的解码器=更快的自回归模型
+
+https://mp.weixin.qq.com/s/pe2E69Gpw0nT9sSHvtBGSg
+
+自回归与非自回归模型不可兼得？预训练模型BANG全都要！
 
 ## UniLM
 
@@ -386,27 +406,3 @@ https://mp.weixin.qq.com/s/dcp_ANYijRmicMYX7OpJmA
 https://mp.weixin.qq.com/s/DR4SkgOfUT7KYiaXm5NynQ
 
 跨语言版BERT：Facebook提出跨语言预训练模型XLM
-
-https://mp.weixin.qq.com/s/epjjHmlmMFhWtRO_cCUITA
-
-用BERT进行多标签文本分类
-
-https://mp.weixin.qq.com/s/Wk6gvOS_Qnud6ib1esMFXA
-
-加入Transformer-XL，这个PyTorch包能调用各种NLP预训练模型！
-
-https://mp.weixin.qq.com/s/GqqU3Ixht1BzMnQeRYQEqQ
-
-谷歌NLP深度学习模型BERT特征的可解释性表现怎么样？
-
-https://mp.weixin.qq.com/s/2f91Ksj19rk_emoFpEmPfA
-
-从BERT看大规模数据的无监督利用
-
-https://mp.weixin.qq.com/s/hF4EcKqmaTm_gemxX7Kftg
-
-BERT的嵌入层是如何实现的？
-
-https://mp.weixin.qq.com/s/CdjNQKSNuklVUsXe4InSoA
-
-FastBERT：放飞BERT的推理速度

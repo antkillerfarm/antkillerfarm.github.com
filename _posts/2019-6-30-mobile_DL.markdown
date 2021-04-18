@@ -277,6 +277,10 @@ https://zhuanlan.zhihu.com/p/339008746
 
 Kubernetes入门&进阶实战
 
+https://mp.weixin.qq.com/s/LQY4Dw8-OwS52gt2HtBT8w
+
+备份和迁移Kubernetes应用程序利器-velero
+
 # DRL实战
 
 ## FlappyBird

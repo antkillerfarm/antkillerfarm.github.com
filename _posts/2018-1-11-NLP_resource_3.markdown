@@ -419,12 +419,6 @@ https://mp.weixin.qq.com/s/Bmou2Fx8a0-60Aqycrg4ug
 
 基于句子嵌入的无监督文本摘要
 
-## 参考
+https://mp.weixin.qq.com/s/GcLDWcRIowK0EFtR-k2cmA
 
-https://mp.weixin.qq.com/s/klfTdvfti0xCg2lGitG4hg
-
-用户表示方法对新浪微博中用户属性分类性能影响的研究
-
-https://mp.weixin.qq.com/s/IvbJ_d7z91BCcRVpJ9_jMA
-
-如何用深度学习做自然语言处理？这里有份最佳实践清单
+抽取式摘要最新研究进展

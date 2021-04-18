@@ -229,6 +229,10 @@ https://mp.weixin.qq.com/s/TJMPqCokiBD_Hb-EpYtO4g
 
 如果你也想做实时数仓…
 
+https://mp.weixin.qq.com/s/_7Ht_A2coy2NYiXc5xcC2Q
+
+爱奇艺大数据生态的实时化建设
+
 https://mp.weixin.qq.com/s/0YsLo7bB-qcjStfC6q-hLw
 
 字节跳动EB级HDFS实践

@@ -49,6 +49,24 @@ https://mp.weixin.qq.com/s/4AYMb_v3GctPddpKUZUUfw
 
 25张图让你彻底掌握分布式事务原理
 
+## 分布式锁
+
+https://mp.weixin.qq.com/s/UTJL98BhrQ3yLvAQrl1P8A
+
+​我们的系统需要什么样的分布式锁？
+
+https://mp.weixin.qq.com/s/foAit8ratliRG6R2KC05Hg
+
+浅谈分布式锁
+
+https://www.cnblogs.com/intsmaze/p/6384105.html
+
+一句话说清分布式锁，进程锁，线程锁
+
+https://mp.weixin.qq.com/s/RKgWxwHQwJJ-4I4NQFoKTw
+
+分布式锁夺命连环9问
+
 ## 杂谈
 
 面对大规模数据的计算和存储时，有两种处理思路：
@@ -82,18 +100,6 @@ https://mp.weixin.qq.com/s/_7q9K9D1q40eaGkLt9yDhQ
 https://zhuanlan.zhihu.com/p/108636766
 
 从RAID到分布式系统的副本分布
-
-https://mp.weixin.qq.com/s/UTJL98BhrQ3yLvAQrl1P8A
-
-​我们的系统需要什么样的分布式锁？
-
-https://mp.weixin.qq.com/s/foAit8ratliRG6R2KC05Hg
-
-浅谈分布式锁
-
-https://www.cnblogs.com/intsmaze/p/6384105.html
-
-一句话说清分布式锁，进程锁，线程锁
 
 https://mp.weixin.qq.com/s/Ey_ofboH7EvAbPxTNHWC3w
 

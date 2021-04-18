@@ -199,6 +199,10 @@ https://zhuanlan.zhihu.com/p/358778742
 
 详解PyTorch编译并调用自定义CUDA算子的三种方式
 
+https://zhuanlan.zhihu.com/p/360441891
+
+熬了几个通宵，我写了份CUDA新手入门代码
+
 # GPU通信技术
 
 ## RDMA

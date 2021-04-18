@@ -343,6 +343,10 @@ https://mp.weixin.qq.com/s/diYe8bOXfOseXOLKScxdGw
 
 ----
 
+目前，共享充电宝领域几乎被街电、来电、小电和怪兽充电瓜分，形成所谓“三电一兽”的格局。
+
+----
+
 https://mp.weixin.qq.com/s/fov2fS345enPB_M7kEzFpQ
 
 无代码的时代真的来了吗？

@@ -318,3 +318,7 @@ https://zhuanlan.zhihu.com/p/231302709
 https://zhuanlan.zhihu.com/p/340775090
 
 从Thinker到Evolver：对可演化AI芯片的探索
+
+https://mp.weixin.qq.com/s/kuIsyX0QEIeFHn8tvFE8vw
+
+AI训练的最大障碍不是算力，而是“内存墙”

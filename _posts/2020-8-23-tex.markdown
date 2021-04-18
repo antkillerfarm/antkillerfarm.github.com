@@ -424,3 +424,7 @@ https://mp.weixin.qq.com/s/hMhDIV3eCEzmRzuyT3CvUg
 https://zhuanlan.zhihu.com/p/342011052
 
 目标检测之Neck选择
+
+https://mp.weixin.qq.com/s/sJGvvwCkXCJ52MYSsjkwrg
+
+计算机视觉来看看苏伊士运河堵船（船舶检测）
