@@ -212,6 +212,8 @@ http://tech.ifeng.com/c/82IsX1VJuPq
 
 ## 矿机江湖
 
+傻子的共识也是共识。
+
 ### 2018.9
 
 https://mp.weixin.qq.com/s/yyoUoIUBUPV5zkeE88P7Iw
@@ -269,3 +271,7 @@ https://zhuanlan.zhihu.com/p/351521871
 https://zhuanlan.zhihu.com/p/358569252
 
 闷声发大财，没人知道俄罗斯挖出了多少比特币
+
+https://www.zhihu.com/question/454794462
+
+chia(奇亚）最近很火爆，导致大容量硬盘市场缺货，chia的真实收益怎么样？
