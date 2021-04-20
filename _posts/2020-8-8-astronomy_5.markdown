@@ -9,6 +9,22 @@ category: Nature
 
 # 两弹一星
 
+大功率紫外激光需要的晶体，中国领先世界20年左右。去年2月美国宣布突破中国长达15年的封锁制造出了KBBF晶体，该晶体用于光发射电子显微镜、超大功率激光器、同时也是制造光刻机的核心部件，而光刻机则是用来生产CPU芯片的核心设备。
+
+中国封锁该技术的主要原因是其军事用途，大功率晶体是激光定向能武器的核心技术，中国在此领域大幅领先“外国”，功率输出超过“外国”一个数量级以上。因为中国对此类技术的严格封锁，禁止出口，造成国际凝聚态物理研究受到影响，例如：某国外著名实验室求国内一小块晶体而不得，2009年Nature杂志专门撰文谴责了这种不利于人类技术发展的自私行为。
+
+http://m.guancha.cn/Science/2016_02_14_351018.shtml
+
+多年努力 美国打破中国激光晶体封锁 然而中国新一代晶体已经成功
+
+https://mp.weixin.qq.com/s/-6hNbww_Q4i5zk9rwsW1lQ
+
+这个人曾让美国饱尝被禁售的苦头，可惜已离我们而去
+
+著名材料学家、中国科学院院士、第三世界科学院院士、中国科学院理化技术研究所研究员陈创天。
+
+----
+
 我们的飞机要保卫祖国的领空，买人家的飞机是不行的，中国要自立于世界航空工业之林，必须能够设计自己的飞机、建立独立的航空科研体系。
 
 https://mp.weixin.qq.com/s/wE4_DHPrW3LbvPmB7UIECg
@@ -151,80 +167,16 @@ https://mp.weixin.qq.com/s/t9Oolg7uOTG_is7e9e4eWA
 
 ----
 
-![](/images/img3/top10.png)
+原东京工业大学教授森川清在著作中写道，“当时的大庆油田的松基三井的最浅出油层在1357-1382米之间，但当时的日本钻井技术只能打入地下700-800米。
 
-![](/images/img4/manufact.jpg)
+1939 年在辽宁阜新，满洲炭矿株式会社为探测煤矿，曾从煤层下找出石油类的矿物，但因没有什么开采价值而放弃。其实，这里与解放后发现的辽河油田仅一山之隔。
 
-![](/images/img2/BJ_subway.jpg)
+![](/images/img4/WangJinXi.jpg)
 
-![](/images/img4/china-dovak.gif)
+王进喜打出的第二口井地处高压区，打到700多米时突然发生了井喷，强大的高压液柱冲出井口，一场大事故眼看就要发生。要压住井喷，当时唯一的办法是往泥浆中加水泥和黄土，可是，由于没有搅拌机，倒进去的水泥沉在泥浆池底，与泥浆无法融和。就在这时，王进喜扔掉双拐，纵身跳进泥浆池，用身体搅拌泥浆。在他的带动下，工友们也纷纷跳进池中。经过三个多小时，井喷被制服，保住了油井和钻机，王进喜身上却被碱性很大的泥浆烧起了数十个血泡。
 
-https://mp.weixin.qq.com/s/sRVb8qGtbsuqCvHSrlL9mQ
+石油工人一声吼，地球也要抖三抖！人活一口气，拼死干到底，为了把贫油落后‘帽子’摘掉，宁可少活20年，拼命也要拿下大油田。
 
-卡住中国脖子的35项技术
+“三老四严”——对待革命事业要当老实人、说老实话、办老实事，对待工作要有严格的要求、严密的组织、严肃的态度、严明的纪律。
 
-https://mp.weixin.qq.com/s/MCAR8M2DoV30-McdsjTxDw
-
-徒步横穿南极大陆第一人
-
->秦大河，1947年生，地理学家，中国科学院院士，第三世界科学院院士。曾任中国气象局局长、中国科学技术协会副主席等
-
-https://mp.weixin.qq.com/s/3aLHfKF5grL6hunO7r_TAQ
-
-中国第一个发《Nature》的竟然是清朝人！被皇帝夸天下第一，他却觉得羞耻。。。（徐寿、华蘅芳、徐建寅）
-
-https://mp.weixin.qq.com/s/J1mAwHQUkuHrmvmyK_w5BQ
-
-中国首台蒸汽机竟由一位清代数学家设计！他与诺贝尔同年出生，为研制火药险些殒命。。。（华蘅芳）
-
-https://mp.weixin.qq.com/s/OO2OPmxjZJTCNiy_S2p-Aw
-
-中国第一个登上Nature的女科学家，居然出生在清朝？只活了29岁（王贞仪）
-
-https://mp.weixin.qq.com/s/Z2xRTxgRRHWWY2VICT4lQg
-
-中国有哪些领跑全球的技术
-
-https://mp.weixin.qq.com/s/NQ4OiPgguAVkRPBn1uEYjg
-
-他奉密令去美国长期潜伏，周总理亲自送行长谈（吴大琨）
-
-https://mp.weixin.qq.com/s/z0FdqtVOmhv1mbVRJ42UFA
-
-“奋斗者”号再探万米深海，制造一个深潜器到底有多难？
-
-https://mp.weixin.qq.com/s/toX25yTvQWnwid26oOXROA
-
-深潜海底10909
-
-https://zhuanlan.zhihu.com/p/19803854
-
-海洋石油981事件始末
-
-https://www.zhihu.com/answer/378935681
-
-谁能告诉我一些关于肯尼亚蒙内铁路的故事？
-
-https://mp.weixin.qq.com/s/wcDiuHjtGgWjWdLRtJTpTg
-
-凤毛麟角：中国早期留美的数理同门女双杰（1912-1949年间，有14名中国女性赴英美留学，后来均成为杰出的物理学家，本文主人公王明贞和王承书就是其中的两位。）
-
-https://mp.weixin.qq.com/s/IQPiGqqad4YajaCu9bQhJw
-
-美国一再拒绝两个中国人的回国申请，有人道破天机：你们是重大威胁（王承书、张文裕）
-
-https://mp.weixin.qq.com/s/ajfoQAH-WSZ_OYIRK8uGAQ
-
-被遗忘的中国生命科学之父（林可胜）
-
-https://mp.weixin.qq.com/s/Ar-67u7UbPz5z2odN1YeQQ
-
-从被列强剥削，到成为发达国家“粉碎机”：中国付出了多少代价？
-
-https://zhuanlan.zhihu.com/p/352959565
-
-参与加勒万冲突保障，民企员工受到表彰，该公司堪称军工界大疆
-
-https://www.zhihu.com/question/425270883
-
-非五常国家的军事实力究竟有多弱？
+“四个一样”——黑天和白天干工作一个样，坏天气和好天气干工作一个样，领导不在场和领导在场干工作一个样，没有人检查和有人检查干工作一个样。
