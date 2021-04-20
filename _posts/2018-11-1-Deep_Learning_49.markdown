@@ -313,6 +313,10 @@ https://mp.weixin.qq.com/s/ROTKi-Ycm0ypIi0FhCW4Xw
 
 视频人脸识别进展综述
 
+https://mp.weixin.qq.com/s/9d6EhZEdn6XY-wFC22LysQ
+
+最新“深度学习人脸检测”综述论文，17页pdf概述50种人脸检测SOTA方法
+
 # 模型压缩与加速进阶+++
 
 https://mp.weixin.qq.com/s/IfvXrsUq8-cBDC4_3O5v_w

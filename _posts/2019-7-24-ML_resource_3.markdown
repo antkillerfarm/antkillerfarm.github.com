@@ -392,3 +392,7 @@ https://mp.weixin.qq.com/s/k9gff0Ote_V9qtN7HAruBA
 https://mp.weixin.qq.com/s/kvINl4pL4_wD71e33jaUSg
 
 下一代cmos image sensor----有机光导薄膜图像传感器
+
+https://mp.weixin.qq.com/s/024h8tPvCPPUyuT53CCPWQ
+
+液态镜头的发展与应用
