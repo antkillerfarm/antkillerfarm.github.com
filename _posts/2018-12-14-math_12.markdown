@@ -232,3 +232,7 @@ https://ww2.mathworks.cn/help/simulink/slref/simulation-of-a-bouncing-ball.html
 https://blog.csdn.net/handsomeswp/article/details/109535534
 
 Python动画没有秘密
+
+----
+
+Yau Shing-Tung=姚兴腾
