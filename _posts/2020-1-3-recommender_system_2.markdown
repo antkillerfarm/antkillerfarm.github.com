@@ -161,6 +161,10 @@ https://mp.weixin.qq.com/s/YJG8PXBgljJvtttXy2cDmA
 
 用户画像初探
 
+https://mp.weixin.qq.com/s/Nl79i9agMuyJl885ybphVg
+
+用户画像实践篇
+
 # 推荐系统的工程细节
 
 推荐系统不仅是算法，还包括若干工程细节。这些细节虽然不算复杂，够不上算法的层面，然而对产品的成败，却有举足轻重的作用。
@@ -350,27 +354,3 @@ https://mp.weixin.qq.com/s/j_8_kSQ4BrYR-UzIEIEIbw
 https://mp.weixin.qq.com/s/Cc-8BMoJGacPCeHnMs6Ekw
 
 滴滴开源小桔棱镜：一款专注移动端操作行为的利器
-
-## A/B Testing
-
-A/B Testing通过分隔A和B两个版本，统计数据，进而看哪个版本的数据效果更好，对产品目标更有帮助。
-
-https://mp.weixin.qq.com/s/fB3AFUiS4nFmqXpSnOpf4w
-
-如何选择上班路线最省时间？从A/B测试数学原理说起
-
-https://cn.udacity.com/course/ab-testing--ud257
-
-A/B测试
-
-https://exp-platform.com/2017abtestingtutorial/
-
-A/B Testing
-
-https://zhuanlan.zhihu.com/p/68509372
-
-Netflix推荐系统模型的快速线上评估方法——Interleaving
-
-https://mp.weixin.qq.com/s/gEET3mcI4VTLLg5ICQL2xQ
-
-如何通过A/B测试实现用户有效增长？

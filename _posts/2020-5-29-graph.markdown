@@ -197,6 +197,10 @@ https://zhuanlan.zhihu.com/p/85287578
 
 拉普拉斯矩阵与拉普拉斯算子的关系
 
+https://mp.weixin.qq.com/s/87i2u2ZKqSxG_1-dK_Hv1w
+
+理解图的拉普拉斯矩阵
+
 ## 参考
 
 https://mp.weixin.qq.com/s/LqCfwf90bzZKVMLLY5dbXA

@@ -181,6 +181,10 @@ https://mp.weixin.qq.com/s/_igLvU_UZmRb2azn7RzJTg
 
 非线性回归中的Levenberg-Marquardt算法理论和代码实现
 
+https://mp.weixin.qq.com/s/41OmNMK1VFKQRuW6D7kqgA
+
+王茂霖：数据挖掘提分三板斧
+
 # 上古软件开发
 
 https://github.com/chrislgarry/Apollo-11
@@ -396,3 +400,7 @@ https://mp.weixin.qq.com/s/kvINl4pL4_wD71e33jaUSg
 https://mp.weixin.qq.com/s/024h8tPvCPPUyuT53CCPWQ
 
 液态镜头的发展与应用
+
+https://mp.weixin.qq.com/s/0XlH3fFKZBfX3UMq7eTbYw
+
+什么是event camera

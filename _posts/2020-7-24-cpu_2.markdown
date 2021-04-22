@@ -235,6 +235,10 @@ https://mp.weixin.qq.com/s/7gXK6Qv9gLMkYtXw9oz9Sg
 
 一文看懂指令集是什么
 
+https://mp.weixin.qq.com/s/p7FKgx-sFGDJF0y4IGWvyg
+
+CPU指令集架构科普
+
 https://mp.weixin.qq.com/s/5uie8Ci5dK_wy54Z70Gklg
 
 RISC-V精简到何种程度？能省的都省了！

@@ -342,3 +342,7 @@ MySQL深入学习总结
 https://mp.weixin.qq.com/s/5brbbLOJrnwZxnF5RpbMqA
 
 MySQL隐式转换的坑，一起来看看究竟！
+
+https://mp.weixin.qq.com/s/pb3U4oYDSnmx0ZhLnVy58A
+
+MySQL为Null会导致5个问题，个个致命！

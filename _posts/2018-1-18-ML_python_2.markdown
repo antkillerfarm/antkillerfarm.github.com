@@ -301,6 +301,14 @@ https://mp.weixin.qq.com/s/zdnRGkrVEf5nvd8L_bML8w
 
 5个例子介绍Pandas的merge并对比SQL中join
 
+https://mp.weixin.qq.com/s/NSzAdL-v3J8jDbfck2f5lQ
+
+浅谈Python/Pandas中管道的用法
+
+https://mp.weixin.qq.com/s/CJwgM-PZVMrUpco26ygtUA
+
+5分钟掌握Pandas GroupBy
+
 ## Super Pandas
 
 https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw

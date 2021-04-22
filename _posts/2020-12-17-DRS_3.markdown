@@ -341,6 +341,34 @@ https://mp.weixin.qq.com/s/jTQOPobNPr96GTj0BDQiWQ
 
 # 推荐系统的工程细节+
 
+https://mp.weixin.qq.com/s/mFWhv6ykGFc6g40GGuzYOQ
+
+推荐系统中模型训练及使用流程的标准化
+
+https://zhuanlan.zhihu.com/p/139240761
+
+如何评价一个推荐系统的好坏？
+
+https://mp.weixin.qq.com/s/Lwnl5W2ZS3CjxrA46yMwyw
+
+线上线下效果一致性杂谈
+
+https://mp.weixin.qq.com/s/iHDGIHHlH2TqNL6iIEGVPg
+
+流量为王：收益最大化的混排机制
+
+https://mp.weixin.qq.com/s/LZlskUK4dmOd5fLTZIATnQ
+
+如何提升链路目标一致性？爱奇艺短视频推荐之粗排模型优化历程
+
+https://mp.weixin.qq.com/s/Jfuc6x-Qt0rya5dbCR2uCA
+
+腾讯音乐：全民K歌推荐系统架构及粗排设计
+
+https://mp.weixin.qq.com/s/tV3HfWZrrnyJEPV0R0QykA
+
+模型化召回在陌陌社交推荐的应用和探索
+
 https://mp.weixin.qq.com/s/V67YXV69dlmc2ke2WgPewQ
 
 玩儿转oCPC

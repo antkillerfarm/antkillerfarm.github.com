@@ -7,9 +7,31 @@ category: Recommender System
 * toc
 {:toc}
 
-# 推荐系统的工程细节
+# 推荐系统的工程细节（续）
 
-## A/B Testing（续）
+## A/B Testing
+
+A/B Testing通过分隔A和B两个版本，统计数据，进而看哪个版本的数据效果更好，对产品目标更有帮助。
+
+https://mp.weixin.qq.com/s/fB3AFUiS4nFmqXpSnOpf4w
+
+如何选择上班路线最省时间？从A/B测试数学原理说起
+
+https://cn.udacity.com/course/ab-testing--ud257
+
+A/B测试
+
+https://exp-platform.com/2017abtestingtutorial/
+
+A/B Testing
+
+https://zhuanlan.zhihu.com/p/68509372
+
+Netflix推荐系统模型的快速线上评估方法——Interleaving
+
+https://mp.weixin.qq.com/s/gEET3mcI4VTLLg5ICQL2xQ
+
+如何通过A/B测试实现用户有效增长？
 
 https://mp.weixin.qq.com/s/zBUy_k2lyK0mqMMxm01w6w
 
@@ -404,31 +426,3 @@ https://mp.weixin.qq.com/s/7xZDVicjq-8C3qJIZGarmg
 https://mp.weixin.qq.com/s/DZZ_BCiNw0EZg7V0KvhXVw
 
 知乎搜索排序模型的演进
-
-https://mp.weixin.qq.com/s/mFWhv6ykGFc6g40GGuzYOQ
-
-推荐系统中模型训练及使用流程的标准化
-
-https://zhuanlan.zhihu.com/p/139240761
-
-如何评价一个推荐系统的好坏？
-
-https://mp.weixin.qq.com/s/Lwnl5W2ZS3CjxrA46yMwyw
-
-线上线下效果一致性杂谈
-
-https://mp.weixin.qq.com/s/iHDGIHHlH2TqNL6iIEGVPg
-
-流量为王：收益最大化的混排机制
-
-https://mp.weixin.qq.com/s/LZlskUK4dmOd5fLTZIATnQ
-
-如何提升链路目标一致性？爱奇艺短视频推荐之粗排模型优化历程
-
-https://mp.weixin.qq.com/s/Jfuc6x-Qt0rya5dbCR2uCA
-
-腾讯音乐：全民K歌推荐系统架构及粗排设计
-
-https://mp.weixin.qq.com/s/tV3HfWZrrnyJEPV0R0QykA
-
-模型化召回在陌陌社交推荐的应用和探索

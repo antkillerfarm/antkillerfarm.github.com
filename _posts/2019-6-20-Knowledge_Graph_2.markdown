@@ -390,3 +390,7 @@ https://mp.weixin.qq.com/s/chiHw5gKnJyTJTQeF6gViw
 https://mp.weixin.qq.com/s/cNNj18i_SoPeJSu9lXf9Ng
 
 动态图表示学习，40页ppt，Dynamic Graph Representation Learning
+
+https://mp.weixin.qq.com/s/sdiu64GVPkhTjQ5sAIv94A
+
+图卷积神经网络理论基础：从傅里叶变换到图卷积

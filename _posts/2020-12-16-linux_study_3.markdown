@@ -223,6 +223,10 @@ https://mp.weixin.qq.com/s/czLqzt0cRwPZeQ4WDaKiJQ
 
 无锁队列的实现
 
+https://mp.weixin.qq.com/s/rpufplXGYFo3P3mdIyY6vA
+
+24张图带你彻底理解Java中的21种锁
+
 # 动态库版本设置
 
 linux动态库使用soname来设定动态库的版本兼容性。

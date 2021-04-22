@@ -293,6 +293,10 @@ https://mp.weixin.qq.com/s/H847J6qOnuXdN697MD6hqA
 
 一台笔记本的25年青春史诗（联想昭阳）
 
+https://mp.weixin.qq.com/s/scAAyxzOMqWwRl9ts4J4Ow
+
+20多年了，为什么国产CPU还是不行？
+
 # 内存
 
 https://mp.weixin.qq.com/s/HOhBNZfOf5xQIFLYQ5ntCw

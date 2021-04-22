@@ -33,6 +33,10 @@ https://mp.weixin.qq.com/s/PMOrY5ZElyPGOVxZgXFVzw
 
 如果只能做整数Integer运算还能用BERT吗？
 
+https://mp.weixin.qq.com/s/Fes8FHngKnL8jklB7DhNCQ
+
+图计算加速架构综述
+
 # 模型优化工具
 
 ## Amazon SageMaker Neo

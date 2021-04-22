@@ -143,6 +143,22 @@ https://mp.weixin.qq.com/s/NHkTQmJ3Jq1A3pgKI2DCeg
 
 # 数学杂谈+++++
 
+https://mp.weixin.qq.com/s/ULzU9gwU-X6oSMM4mv5xhA
+
+两次入狱，数次移民，从罗马尼亚地下党到卡耐基梅隆教授—整数规划奠基者Egon Balas的彪悍人生
+
+https://mp.weixin.qq.com/s/NX0j_CgBqalBMVVdRkG59g
+
+数学界再出变态神人！竟用一个比基尼方程，暴力吊打美国数学家！（沙发问题）
+
+https://mp.weixin.qq.com/s/H1fvyQYRFcOe0pqclD-3yg
+
+“最大数之父”葛立恒逝世，他是20世纪数学巨匠，也是一个杂技演员
+
+https://mp.weixin.qq.com/s/rXbP1dvFmwl6QhVCDMr2Bw
+
+神童、数学家、抑郁症患者，控制论之父诺伯特·维纳的一生
+
 https://mp.weixin.qq.com/s/htCZU2de_7CCcL1q4v-NGg
 
 比肩爱因斯坦的天才：如果再给他一次机会，他可能不会再熬夜了......（麦克斯韦）

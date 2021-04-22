@@ -305,6 +305,10 @@ https://mp.weixin.qq.com/s/DKWSeRu_ThMf_vf9j1GCbQ
 
 PoseFormer：首个纯基于Transformer的3D人体姿态估计网络，性能达到SOTA
 
+https://mp.weixin.qq.com/s/O-xcsIHufrPQKPQGNcKjkg
+
+视觉子领域中的Transformer
+
 # BERT进阶
 
 ## AR vs AE

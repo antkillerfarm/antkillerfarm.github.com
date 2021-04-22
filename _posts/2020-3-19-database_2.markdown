@@ -151,6 +151,10 @@ https://mp.weixin.qq.com/s/RfsFcqbtQYqE7_-snBZSTw
 
 京东实时数据仓库开发实践
 
+https://mp.weixin.qq.com/s/3XyRDgoOLBzUx0f6qYW7IQ
+
+数据仓库分层存储技术揭秘
+
 https://mp.weixin.qq.com/s/GXGSDxukbIAM5W-YSX0pDg
 
 美团点评数据库高可用架构的演进与设想

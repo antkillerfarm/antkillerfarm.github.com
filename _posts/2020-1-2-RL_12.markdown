@@ -55,6 +55,10 @@ MCTS的优点：
 
 参考：
 
+https://mp.weixin.qq.com/s/VARZ7TM0-VnWInZ4bXr9QQ
+
+DeepMind教程：蒙特卡罗树搜索，60页ppt
+
 https://mp.weixin.qq.com/s/4qeHfU9GS4aDWOHsu4Dw2g
 
 记忆增强蒙特卡洛树搜索细节解读

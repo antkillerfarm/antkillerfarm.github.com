@@ -85,6 +85,10 @@ https://mp.weixin.qq.com/s/bt0vGltG9OAIWMk8iEQzew
 
 15张图，把TCP/IP讲得一清二楚！
 
+https://mp.weixin.qq.com/s/q6WWwNoXMDA3UI8XacYsBQ
+
+TCP：一个悲伤的故事
+
 ## DNS
 
 https://mp.weixin.qq.com/s/DDk5YZv9Q7CaqdiKvQxZGQ
