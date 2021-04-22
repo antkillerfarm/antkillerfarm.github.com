@@ -105,6 +105,10 @@ https://zhuanlan.zhihu.com/p/29222384
 
 sc2-101: 第一个rule-base的星际二agent
 
+https://mp.weixin.qq.com/s/pggQL5uLasJ7icnlrMs9OQ
+
+自动化所开源星际争霸2基准AI
+
 # AlphaStar
 
 AlphaStar是DeepMind在解决了围棋问题之后，在RTS游戏领域的尝试。

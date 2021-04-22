@@ -278,6 +278,10 @@ https://mp.weixin.qq.com/s/JOS_fxec6YWjfekQzgGiKA
 
 百亿数据，毫秒级返回，如何构建？
 
+https://mp.weixin.qq.com/s/UFUItQlYsQrpvkHth1ujFw
+
+1W字 40图 硬核ES实战
+
 # Flume & Kafka
 
 Flume和Kafka都是日志系统。
@@ -405,3 +409,7 @@ https://mp.weixin.qq.com/s/DQZh-V0jnlqLNqkyRkoDQQ
 https://mp.weixin.qq.com/s/UFfpPnouxXjOFAmZVdSTVg
 
 Kafka核心源码剖析（一）：Producer发送消息流程
+
+https://mp.weixin.qq.com/s/exOs0zrZ2x8Mxi6aB1x-QQ
+
+流数据并行处理性能比较：Kafka vs Pulsar vs Pravega

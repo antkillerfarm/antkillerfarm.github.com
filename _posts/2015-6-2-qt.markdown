@@ -366,3 +366,7 @@ https://mp.weixin.qq.com/s/23FoaaA3Z_3kf03BmepFPg
 https://mp.weixin.qq.com/s/MT1YaMm4KBWsIZeHehahgw
 
 TensorFlow重大升级：自动将Python代码转为TF Graph，大幅简化动态图处理！
+
+https://mp.weixin.qq.com/s/06UKxX1xEZEDkxAzXjBItQ
+
+将显存一次性全部吃掉——TF的BFCAllocator

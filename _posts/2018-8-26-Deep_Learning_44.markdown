@@ -9,6 +9,28 @@ category: DL
 
 # 图像变换
 
+## 去雨去雾（续）
+
+https://mp.weixin.qq.com/s/6L328q9nR7XEYeKdFH3xpQ
+
+CVPR 2020 论文大盘点-去雨去雾去模糊篇
+
+https://mp.weixin.qq.com/s/B8LU892NA7Pz7-HjI58LWg
+
+Python还能实现图片去雾？FFA去雾算法、暗通道去雾算法用起来！
+
+https://mp.weixin.qq.com/s/34HxF5qCulGd1zyATH7ZuA
+
+将U-Net用于图像去雾任务，一种具有密集特征融合的多尺度增强去雾网络
+
+https://mp.weixin.qq.com/s/_tvOQPvybqmvLF19kHcbFg
+
+北大开源ECCV2018深度去雨算法：RESCAN
+
+https://mp.weixin.qq.com/s/TKhE0DyBcXdujsPsED9eDA
+
+6ms的EfficientDeRain：颇具启发的简单高效去雨算法
+
 ## 图像匹配
 
 https://mp.weixin.qq.com/s/y0SAI0f3w42z-nnoorFoEQ
@@ -344,19 +366,3 @@ https://mp.weixin.qq.com/s/8hs3xbKPaCz5Xs_Nkj4ZKA
 https://mp.weixin.qq.com/s/uU1-DwHnU4pPMLtQZNQyVQ
 
 北大图灵班本科生带来动画CG福音，“最懂骨骼的卷积网络”，无需配对样本实现动作迁移
-
-https://mp.weixin.qq.com/s/klr3jBmiutu2GzH32QcTMA
-
-抖音漫画效果解密
-
-https://mp.weixin.qq.com/s/21yLEWTcRLHNXOuZ3mApRA
-
-一秒拥有自己的卡通头像！
-
-https://mp.weixin.qq.com/s/sMUyTZd_yME70_nWicqP7g
-
-两图生万物！这个超强图像转换神器，小样本一秒猫狗合体变新物种
-
-https://mp.weixin.qq.com/s/yk7fIYFp1fEPn3deZXsE-g
-
-傻瓜式无限P图，MIT朱俊彦团队“重写”深度生成模型

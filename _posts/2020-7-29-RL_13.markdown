@@ -31,6 +31,10 @@ https://mp.weixin.qq.com/s/FX-1IlIaFDLaQEVFN813jA
 
 探索(Exploration)还是利用(Exploitation)？强化学习如何tradeoff？
 
+https://mp.weixin.qq.com/s/o46wf1dqOqTxfsStA0HcCA
+
+强化学习中的探索与利用，Matteo Pirotta讲解，137页ppt
+
 ## UCB
 
 $$\epsilon$$-greedy和softmax算法的缺陷：

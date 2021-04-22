@@ -286,3 +286,7 @@ CPU GPU设计工作原理
 https://mp.weixin.qq.com/s/-Wg1GtVGUxfshJ5d5NDd-Q
 
 聊聊GPU的计算能力上限
+
+https://mp.weixin.qq.com/s/zdr7BfJxVepQL1TCDXQoJA
+
+一文带你了解GPU的前生今世

@@ -185,6 +185,8 @@ Template('The market cap of Alibaba is $Mcap mio $curr.')
 
 `f'The market cap of Alibaba is {Mcap} mio {curr}.'`
 
+f-string是python3.6引入的特性。
+
 python的字符串还有其他玩法：
 
 打印45个`=`: `print('=' * 45)`
@@ -200,6 +202,10 @@ python的字符串还有其他玩法：
 https://mp.weixin.qq.com/s/jTiZOazn66nK6CU1SAtpTw
 
 格式化String
+
+https://mp.weixin.qq.com/s/YkV7jdSEkTCSXuotENY3Mg
+
+99%的Python用户都不知道的f-string隐秘技巧
 
 ## 特殊语法：filter、map、reduce、lambda
 

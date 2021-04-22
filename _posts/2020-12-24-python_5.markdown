@@ -81,7 +81,7 @@ https://mp.weixin.qq.com/s/4pxGrn9jgp8So8JsONC-3A
 
 https://mp.weixin.qq.com/s/JNGtOtRW3YsLti9gVYzLcg
 
-清华校友打造Python调试神器
+清华校友打造Python调试神器（Cyberbrain）
 
 https://mp.weixin.qq.com/s/weEZEr4g8pI11Gijc-St0Q
 
@@ -89,11 +89,15 @@ DeBug Python代码全靠print函数？换用这个一天2K+Star的工具吧
 
 https://mp.weixin.qq.com/s/bNW1FbUG5LNUiRmmzirgCg
 
-别再用Print调试Python了！
+别再用Print调试Python了！（Icecream）
 
 https://mp.weixin.qq.com/s/WqDWksBDBa07s84v6R1tlA
 
 Python里三个最高逼格的调试神器
+
+https://mp.weixin.qq.com/s/dlMqyVy92S_dFaBAuV1RhA
+
+Python和C/C++拓展程序的性能优化
 
 ## 参考
 

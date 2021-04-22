@@ -101,6 +101,10 @@ https://mp.weixin.qq.com/s/rS9Rv3LMiabjif_ENWbIgg
 
 深度图像修复的一个突破
 
+https://mp.weixin.qq.com/s/LFdvu0RaqqoOQW1YxjxSDA
+
+图像修复必读的10篇论文
+
 ## 大谷
 
 大谷1991年生于北京，获得了纽约视觉艺术学院电脑艺术硕士学位，艺术家，音乐家，程序员和独立的游戏设计师。
@@ -370,23 +374,3 @@ https://mp.weixin.qq.com/s/a1Qg1Hl5NMvEJPXhJR-2BA
 https://xyang35.github.io/2017/08/20/paper-2/
 
 图像去雾算法专题
-
-https://mp.weixin.qq.com/s/6L328q9nR7XEYeKdFH3xpQ
-
-CVPR 2020 论文大盘点-去雨去雾去模糊篇
-
-https://mp.weixin.qq.com/s/B8LU892NA7Pz7-HjI58LWg
-
-Python还能实现图片去雾？FFA去雾算法、暗通道去雾算法用起来！
-
-https://mp.weixin.qq.com/s/34HxF5qCulGd1zyATH7ZuA
-
-将U-Net用于图像去雾任务，一种具有密集特征融合的多尺度增强去雾网络
-
-https://mp.weixin.qq.com/s/_tvOQPvybqmvLF19kHcbFg
-
-北大开源ECCV2018深度去雨算法：RESCAN
-
-https://mp.weixin.qq.com/s/TKhE0DyBcXdujsPsED9eDA
-
-6ms的EfficientDeRain：颇具启发的简单高效去雨算法

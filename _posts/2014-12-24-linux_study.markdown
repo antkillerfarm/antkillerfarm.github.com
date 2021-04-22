@@ -237,6 +237,10 @@ https://mp.weixin.qq.com/s/dUo-a01uSssWkSc9wQpt2A
 
 深入揭秘epoll是如何实现IO多路复用的
 
+https://mp.weixin.qq.com/s/k3qALmbjxxAPPg6v1-RDOA
+
+Linux的epoll使用LT+非阻塞IO和ET+非阻塞IO有效率上的区别吗？
+
 ## 参考
 
 https://mp.weixin.qq.com/s/EDzFOo3gcivOe_RgipkTkQ

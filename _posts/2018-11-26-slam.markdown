@@ -161,6 +161,10 @@ https://mp.weixin.qq.com/s/mjhPt2fnFSYlr8q-C_i-0g
 
 SLAM：视觉里程计
 
+https://blog.csdn.net/Cai_deLong/article/details/108465850
+
+SLAM快速入门
+
 https://zhuanlan.zhihu.com/p/170735395
 
 推荐一些视觉SLAM的深度学习方法（上）

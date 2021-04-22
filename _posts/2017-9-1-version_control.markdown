@@ -272,3 +272,7 @@ https://blog.csdn.net/yujing1314/article/details/107000737
 https://mp.weixin.qq.com/s/-8Ka8nMYpH7cipzfm36utw
 
 写给小白的Nginx文章
+
+https://mp.weixin.qq.com/s/gd59U50tlJPa4B4avXRG1Q
+
+Nginx架构浅析

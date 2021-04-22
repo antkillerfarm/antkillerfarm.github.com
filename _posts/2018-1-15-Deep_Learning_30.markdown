@@ -339,6 +339,22 @@ https://zhuanlan.zhihu.com/p/362330594
 
 # 图像变换+++
 
+https://mp.weixin.qq.com/s/klr3jBmiutu2GzH32QcTMA
+
+抖音漫画效果解密
+
+https://mp.weixin.qq.com/s/21yLEWTcRLHNXOuZ3mApRA
+
+一秒拥有自己的卡通头像！
+
+https://mp.weixin.qq.com/s/sMUyTZd_yME70_nWicqP7g
+
+两图生万物！这个超强图像转换神器，小样本一秒猫狗合体变新物种
+
+https://mp.weixin.qq.com/s/yk7fIYFp1fEPn3deZXsE-g
+
+傻瓜式无限P图，MIT朱俊彦团队“重写”深度生成模型
+
 https://mp.weixin.qq.com/s/YbRo7TJ3j4dloSmKX40uAA
 
 Image-to-Image的论文汇总

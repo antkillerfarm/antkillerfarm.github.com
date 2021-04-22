@@ -77,6 +77,10 @@ https://zhuanlan.zhihu.com/p/96382982
 
 A/B Test的统计原理和效果解读
 
+https://mp.weixin.qq.com/s/na6hS-Mm8g-5Y4jgdqx-Eg
+
+流量为王：ABTest流量分层分桶机制
+
 ## 参考
 
 https://mp.weixin.qq.com/s/vpANPrl86Ou2fBVHgLXtBQ

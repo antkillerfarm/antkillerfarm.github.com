@@ -361,6 +361,10 @@ https://mp.weixin.qq.com/s/xS0fS8Haxt_DXxlw7VEo4Q
 
 移动端的语音识别分享
 
+https://mp.weixin.qq.com/s/wRAc0Vzrdxqr-dqXqqYapw
+
+中文文本纠错算法--错别字纠正的二三事
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/jwV4glj8vIUKSelzeRrxSg

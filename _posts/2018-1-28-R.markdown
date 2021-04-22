@@ -439,3 +439,7 @@ https://mp.weixin.qq.com/s/bB7583hMU9DGIc4-PMMQXw
 https://mp.weixin.qq.com/s/Q_chMLju5YEIFncWJ2GFlw
 
 为新手准备的现代化R包开发流程
+
+https://mp.weixin.qq.com/s/VyuEC1M_6Wsl1KUvzVUyGA
+
+同一个项目中让R和Python无缝工作的五种方法

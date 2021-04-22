@@ -332,6 +332,10 @@ Linux下xargs命令
 
 # Linux参考资源+
 
+https://mp.weixin.qq.com/s/-U7L8aXoaPXSwZshSpjQ2g
+
+进程间通信
+
 https://mp.weixin.qq.com/s/oKtu3AA9D3y--xMDQ8EARw
 
 携程一次Dubbo连接超时问题的排查
