@@ -270,76 +270,40 @@ https://mp.weixin.qq.com/s/GYfePNhiTGqHUmTFE5hIPw
 
 开局一头狼六只羊，这个狼吃羊的AI火了！傻狼拒绝内卷：抓羊可太累了，我只想自杀...
 
-# 数学杂谈+++
+# TensorFlow+
 
-https://mp.weixin.qq.com/s/ff1CPp3VyNvqZUq6aiZYng
+https://mp.weixin.qq.com/s/F965Zu_PgA-1ZUGIQ0nIEQ
 
-广州人都不敢吃的大鹅！它每一次出现，都会发生大事（黑天鹅事件）
+TensorFlow协同过滤推荐实战
 
-https://mp.weixin.qq.com/s/psrYzcbJqh2jptjXOVHQ7g
+https://mp.weixin.qq.com/s/KohwsQQetwjfTj-PXvLjwA
 
-千禧年大奖难题之始与未终
+使用MNIST数据集，在TensorFlow上实现基础LSTM网络
 
-https://mp.weixin.qq.com/s/YPBuSxpZ__WK03u7eHVT3g
+https://mp.weixin.qq.com/s/xSJRhHbjcgk14Kr_-Ycr5A
 
-终年33岁的印度数学天才
+输入示例，自动生成代码：TensorFlow官方工具TF-Coder已开源
 
-https://mp.weixin.qq.com/s/HFWN9BowSNcuFjyLdFNi1w
+https://zhuanlan.zhihu.com/p/333791572
 
-靠一个逻辑不通的理论圈粉无数，爱因斯坦高调点赞，海森堡却一键举报，霍金静静吃瓜......（拉普拉斯兽和薛定谔的猫）
+Tensorflow模型保存方式大汇总
 
-https://mp.weixin.qq.com/s/1VpcShNGCCe1mayF-NQ1HQ
+https://mp.weixin.qq.com/s/skl5w2cJaO3mYtr656lb9Q
 
-大长腿的小姐姐真的很难追吗?
+见人识面，TensorFlow实现人脸性别/年龄识别
 
-https://mp.weixin.qq.com/s/oS4yRsXDXni4Vb4Oa1cKVg
+https://mp.weixin.qq.com/s/g2xMUmhxUTuQugR2PWUJtw
 
-一律师公开单挑天才数学家，原以为是青铜，没想到竟是王者！（费马vs笛卡尔）
+组成TensorFlow核心的六篇论文
 
-https://mp.weixin.qq.com/s/yQfBFtWBuP1JB6MJM5DshQ
+https://mp.weixin.qq.com/s/23FoaaA3Z_3kf03BmepFPg
 
-人类最美的24张数学画
+如何将模型部署到安卓移动端，这里有一份简单教程
 
-https://www.sohu.com/a/223262966_115479
+https://mp.weixin.qq.com/s/MT1YaMm4KBWsIZeHehahgw
 
-史上最贱的数学题
+TensorFlow重大升级：自动将Python代码转为TF Graph，大幅简化动态图处理！
 
-https://www.zhihu.com/question/290982731
+https://mp.weixin.qq.com/s/06UKxX1xEZEDkxAzXjBItQ
 
-sin1°是否为超越数？
-
-https://blog.csdn.net/FnqTyr45/article/details/80248927
-
-如何用数学方法估算一个女生前男友的数量？
-
-https://zhuanlan.zhihu.com/p/157126167
-
-群论的创立：两个少年天才的接力
-
-https://mp.weixin.qq.com/s/rZwqxyBmQg07Pq1ihTjNMg
-
-动图解释泰勒级数（一）
-
-https://mp.weixin.qq.com/s/yqAnIjGmXpubgSsGDx6O8w
-
-动图解释泰勒级数（二）
-
-https://zhuanlan.zhihu.com/p/36230460
-
-黑盒函数的探索
-
-http://www.matrix67.com/blog/archives/4570
-
-再谈Julia集与Mandelbrot集
-
-https://mp.weixin.qq.com/s/cWwbqOzKCUfhJRwz30u_8Q
-
-物理教授用数学论文摆脱400美元交通罚单，却惨被网友大反转...
-
-https://mp.weixin.qq.com/s/JtjgHmGt14nme1XvYGmyAg
-
-搞数学勇夺最高荣誉，做基金力扛巴菲特，顶级数学家的恐怖如斯(James Harris Simons)
-
-https://mp.weixin.qq.com/s/maScgd-8vo9ZR26DsKf6UQ
-
-纸张捏成纸球后，球的大小和纸的大小有何关系？
+将显存一次性全部吃掉——TF的BFCAllocator

@@ -215,6 +215,22 @@ https://mp.weixin.qq.com/s/s1hkkdIb1a-g0-GYLli5bA
 
 为什么说竖版世界地图的“中国造”优于“美国造”
 
+https://mp.weixin.qq.com/s/IQ8YSyp-m2jCIDfLtuh_ew
+
+天上会掉金子吗？会！你现在用的这些就是！
+
+https://mp.weixin.qq.com/s/KJyvT_MsD2DZ6QvwXh32ug
+
+假如把地球46亿年历史压缩到一天
+
+https://mp.weixin.qq.com/s/mc9aH5hDgRFS2h2blPhb8w
+
+21张绘画完美演绎地球演化新说！
+
+https://mp.weixin.qq.com/s/PcAATiyQrfKKLIlEymSsog
+
+河流为什么是弯曲的？
+
 # 气象
 
 夏至三庚入伏，冬至逢壬数九。
@@ -295,80 +311,6 @@ https://mp.weixin.qq.com/s/tAxXBXvnel_Cw6rzSPLI0w
 
 搞黄了朋友圈的沙尘暴是个啥？
 
-# 化学++
+https://mp.weixin.qq.com/s/g3_njGlo3dC696wo0wplVQ
 
-https://mp.weixin.qq.com/s/Vam7uTbwPfF8Ht365lGtvA
-
-一般不扯淡--直男口红入门！
-
-https://mp.weixin.qq.com/s/a3z7PKTOqmxlEosi2EgoaA
-
-blue生色，九寨沟不得不说的“蓝”题
-
-https://mp.weixin.qq.com/s/XZyOXfqvq7bJ1_2eUPknAA
-
-千年锈色耐人寻——古代铜锡铅合金锈蚀谜题
-
-https://mp.weixin.qq.com/s/v_6w1XOs5iqnoZ-y04B3XQ
-
-一个只涉及三个电子的化学反应居然这么复杂？
-
-https://mp.weixin.qq.com/s/LUeWIT-gUFZTPs2CFJ3ygQ
-
-卡姆吸毒被抓，北京大学的这项黑科技一直在闷声干大事！
-
-https://mp.weixin.qq.com/s/K2magOnDUmcWPN52QExO6g
-
-Tony老师，我明明染的蓝黑，怎么就绿了？？
-
-https://mp.weixin.qq.com/s/NvF5cEpM3pomDgMNjg2QbQ
-
-你拿得起放不下的甜，都是糖的味道吗？
-
-https://mp.weixin.qq.com/s/ge3FBSKFPvZgpWWbCAvm3A
-
-让许幻山放不下的蓝色烟花，有多难生产？
-
-https://mp.weixin.qq.com/s/u_Xg4naj0UetFs8tROHK8A
-
-从“垃圾元素”到“爱情金属”，它是怎么咸鱼翻身的？（铂）
-
-https://mp.weixin.qq.com/s/ZJWx-7byW9dDrC58Q6f_hw
-
-从冰淇淋到洗衣粉，它们靠“香”行走江湖
-
-https://mp.weixin.qq.com/s/pry9NlLCql74XhdvRADBiQ
-
-它是“地球保护伞”，也可能是危险的隐形反派
-
-https://www.zhihu.com/question/411561262
-
-现代制造的刀放到古代算不算名刀？
-
-https://mp.weixin.qq.com/s/HSpZsD7E3S0TAhk_VwUDUg
-
-诺贝尔化学奖历史上的遗珠之憾
-
-https://mp.weixin.qq.com/s/V0Jh1Qv-RXoSK63Z5C092g
-
-一滴水里最少有几个水分子？5个还是6个？
-
-https://mp.weixin.qq.com/s/tGYqdbrYUkXaIEa_ycAzUQ
-
-幸运的化学，悲催的奠基人（Antoine-Laurent de Lavoisier）
-
-https://mp.weixin.qq.com/s/cUuw9CflfLrxXuSmNbra_A
-
-中学的元素周期表还藏着4000多种……（同位素）
-
-https://zhuanlan.zhihu.com/p/23284525
-
-靠谱地，咱聊聊田中耕一
-
-https://mp.weixin.qq.com/s/irMd_sRRwZhbTuIXo3na6Q
-
-今天，说一下人工钻石（钻石半导体）
-
-https://mp.weixin.qq.com/s/9yVgUXorOHB8VGmchgJgGQ
-
-1,000,000,000,000,000,000次雷击！（活性磷）
+臭氧空洞再度加剧，是谁在偷偷破坏臭氧层？

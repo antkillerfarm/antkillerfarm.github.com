@@ -9,24 +9,6 @@ category: Nature
 
 # 垃圾筐
 
-Introspective Neural Networks
-
-http://www.cnblogs.com/cyjb/p/UnionFindSets.html
-
-并查集（Union-find Sets）
-
-高斯背景
-
-laurent series
-
-Base32/Base36/Base64/Base85
-
-方差分析(Analysis of Variance，简称ANOVA)
-
-Partial Least Squares Discriminant Analysis
-
-Wavenumber
-
 http://blog.codinglabs.org/articles/algorithms-for-cardinality-estimation-part-i.html
 
 解读Cardinality Estimation算法
@@ -39,25 +21,9 @@ http://blog.csdn.net/luo123n/article/details/48574123
 
 PMI（Pointwise Mutual Information）
 
-https://mp.weixin.qq.com/s/7usiElPtYAt1DCBIv5BZ2Q
-
-多项式插值算法与回归算法
-
-https://mp.weixin.qq.com/s/0o6fjKlUJVHZ6Vb65bFjGg
-
-俄罗斯方块可以永无止境地玩下去吗？
-
-https://mp.weixin.qq.com/s/CC77DL5RKhr5SekDyfqm3Q
-
-为什么我一唱歌，就有人说我的音乐是数学老师教的？
-
 https://mp.weixin.qq.com/s/uRdMOX63mefH71sM-PBNnA
 
 立交桥布局中的迷人曲线
-
-https://mp.weixin.qq.com/s/PcAATiyQrfKKLIlEymSsog
-
-河流为什么是弯曲的？
 
 https://mp.weixin.qq.com/s/E_EzwLr4JOzR1pk3MOeU_w
 
@@ -67,55 +33,21 @@ http://www.cnblogs.com/zeze/p/6999651.html
 
 粗糙集（Rough Set Approach）
 
-https://mp.weixin.qq.com/s/mc9aH5hDgRFS2h2blPhb8w
-
-21张绘画完美演绎地球演化新说！
-
 https://mp.weixin.qq.com/s/tIau6pRZU0r4Aasofca5yQ
 
 50张动图带你走进神奇的物理化学生物世界，超震撼！
-
-https://mp.weixin.qq.com/s/np9OuEMQNtKMC7P1KPzTmg
-
-通往物理学世界的地图
-
-https://mp.weixin.qq.com/s/3svGvbk0-ek5tQCWJ9ii4A
-
-读懂相对论：从弯曲空间的几何开始
 
 https://mp.weixin.qq.com/s/COIYp4Ao9fBPnaUZvhCxkg
 
 表情包的画质是如何越传越差甚至还变绿的？
 
-https://mp.weixin.qq.com/s/oEhG7AaY_TAljvhhK5YfNA
-
-拉东变换与医学CT技术
-
-https://mp.weixin.qq.com/s/9ZmyidQ888PiT7jbr7Zusg
-
-物理学家辞掉NASA工作玩折纸，竟被请回实验室“折卫星”（折纸几何学）
-
 https://mp.weixin.qq.com/s/Y1bskBi8GUi1MW1VMM2-vw
 
 没有照相机之前，画家是怎么修出漂亮的图的？
 
-https://zhuanlan.zhihu.com/p/54898983
-
-一道弹性碰撞的物理题，结果为什么会出现$$\pi$$？
-
-https://zhuanlan.zhihu.com/p/26645548
-
-支付宝集五福活动五福是随机给定的吗?
-
 https://mp.weixin.qq.com/s/Kake5sQm79L2j_uDqKfznQ
 
 在《我的世界》里从零打造一台计算机有多难？复旦本科生大神花费了一年心血
-
-![](/images/img3/PAL-NTSC-SECAM.png)
-
-https://zhuanlan.zhihu.com/p/66319869
-
-29.97Hz这种奇葩帧率是怎么来的？
 
 https://mp.weixin.qq.com/s/mKyT376nbKNyxouuPYpSBA
 
@@ -125,61 +57,9 @@ https://mp.weixin.qq.com/s/7cziogvznmYWax1LKfnPjQ
 
 史上最硬核高中数学题，题目居然不过4行？
 
-https://mp.weixin.qq.com/s/g3_njGlo3dC696wo0wplVQ
-
-臭氧空洞再度加剧，是谁在偷偷破坏臭氧层？
-
-https://zhuanlan.zhihu.com/p/51330777
-
-宇称不守恒到底说了啥？杨振宁和李政道的发现究竟有多大意义？
-
-https://zhuanlan.zhihu.com/p/55922673
-
-杨-米尔斯理论说了啥？为什么说这是杨振宁超越他诺奖的贡献？
-
-https://mp.weixin.qq.com/s/pE2hXaq-T20LXbvuXdTFJQ
-
-用火烧子弹，结果会怎样？可能又要颠覆你的认知了！
-
-https://mp.weixin.qq.com/s/k3v_5vXWfyBag5mmjD78Xw
-
-拓扑物理浅析
-
-https://mp.weixin.qq.com/s/ChZ-cNTSb7Pm_ka9gunm9A
-
-73岁硬核老爷爷，用物理自证车祸无责，葛军：看来又有新题材了
-
 https://mp.weixin.qq.com/s/oybz1DsC8lO5fmgA-3gEfQ
 
 指纹识别不灵敏怎么办？
-
-https://mp.weixin.qq.com/s/DrMK8XuJckmb-zujR540Sw
-
-40个金属之最，搞了一辈子机械知道不会超过10个。。。
-
-https://mp.weixin.qq.com/s/oCoyEh1VhUmqZnf9okgYnA
-
-科普：十大物理学中最牛逼的思想实验!
-
-https://mp.weixin.qq.com/s/_0SN18UFx_GGlHebUaar9A
-
-兵器试验中心数字弹道的传奇。陆载德的故事——从一位左腿残疾的清华学子成长为90年代共和国军队中唯一的独腿将军。
-
-https://mp.weixin.qq.com/s/IQ8YSyp-m2jCIDfLtuh_ew
-
-天上会掉金子吗？会！你现在用的这些就是！
-
-https://mp.weixin.qq.com/s/KUr8kkHov0XgolEo0y6z8g
-
-不同颜色的尿液颜，是怎么形成的？
-
-https://mp.weixin.qq.com/s/KJyvT_MsD2DZ6QvwXh32ug
-
-假如把地球46亿年历史压缩到一天
-
-https://mp.weixin.qq.com/s/XDBvVjIRfjtDrTN4zd92yg
-
-高铁辐射致癌，为什么会有这种令人喷饭的言论出现？
 
 ![](/images/img3/Universe.jpg)
 
@@ -187,11 +67,7 @@ https://mp.weixin.qq.com/s/XDBvVjIRfjtDrTN4zd92yg
 
 http://www.cpepweb.org/main_universe/universe-poster.html
 
-https://zhuanlan.zhihu.com/p/72636777
-
-粒子物理入门notes
-
-https://mp.weixin.qq.com/s/ELC60377pzaFwJv7czOneQ
+https://new.qq.com/omn/20191029/20191029A0OCRI00.html
 
 15种偶然制造的东西，居然改变了世界！
 
@@ -281,6 +157,14 @@ https://mp.weixin.qq.com/s/1dlOCpoJiCkh55WDAajLuw
 
 内卷、找关系、作弊、丑闻-美国富人的名校之梦
 
+https://mp.weixin.qq.com/s/eI-u_RsabtuyRajDYnnZDg
+
+殷极物理竞赛作弊事件
+
+https://www.aiweinews.com/archives/27796.html
+
+知乎：清华学霸情侣马艺妮宋思睿约北大妹子3P被拒挂朋友圈
+
 # 机械
 
 <video  id="myvideo" width="100%" height="auto" controls="controls" loop="loop">
@@ -326,6 +210,40 @@ https://www.zhihu.com/question/449782036
 
 ----
 
+Zeppelin公司的Hindenburg飞艇是世界上最大的飞行器。它于1937年5月6日在新泽西州曼彻斯特镇莱克湖海军航空总站上空尝试降落时烧毁。然而令人吃惊的是，九十七名乘客和乘务人员中只有三十六人死亡。
+
+----
+
+电磁轨道炮的作战效费比很高。美军目前单门火炮采购成本从80万美元到上百万美元不等，而电磁轨道炮的造价仅2.5万美元，弹丸的单价则低于1美元，且电磁发射的能量转换效率高，发射能量都用于有效载荷，从而大幅提升了作战总效费比。
+
+https://mp.weixin.qq.com/s/YrZdL94-l2HBrntLmJQSLA
+
+电磁轨道炮距离实战还有多远
+
+----
+
+马克沁机枪刚被发明出来的时候，适逢李鸿章访问欧洲。李鸿章看到了马克沁机枪的演示，在半分钟内一口气打出了300发子弹。李鸿章惊讶不已，感叹道：“太快了，太快了。”当他知道机枪打出了这么多子弹后，又感叹：“太贵了，太贵了”。
+
+----
+
+尽管如此，GPA两栖吉普车还是参加了一些盟军重大军事行动，如1943年9月9日的西西里登陆作战。但是美军还是无法容忍它的诸多问题：首先，西欧水系的堤岸大多为人工构筑，非常陡峭，即便是GPA这样4×4车辆要克服这样的障碍也是力不从心；其次，GPA干舷太低，只适宜在内河水系中使用，不适合在海上使用。正因如此，美军后来将许多GPA都被作为租借法案的“馈赠”转送给苏联。1942-1943年，总计有大约3500辆GPA被提供给苏联红军。
+
+有趣的是，GPA却是“墙内开花墙外香”——苏联红军认为该车的江河泅渡能力非常出色，这其中的主要原因是使用环境的不同，苏德战场不存在海上使用问题，而那里的内河河岸一般都是自然平缓的，刚好可以让GPA大显身手。在东线战场上，苏联红军经常要穿越许多河流湖泊，夺取河岸的桥头堡，GPA当然成了他们理想的泅渡工具，这帮助东线的GPA赢得了不错的声誉。GPA给苏联人留下了深刻的印象。
+
+----
+
+提高步枪有效射程的关键发明：定装子弹、无烟火药、尖形弹头。定装子弹解决了气密性问题，提高了火药燃气能量的利用率；无烟火药能够提供大大高于黑火药的推进力，提高了弹头初速；尖形弹头重量较轻因此初速更高、空气阻力较小因此射程更远。
+
+https://www.zhihu.com/question/22606876
+
+为何直到二战末才意识到步枪威力过剩？
+
+----
+
+喀秋莎火箭炮：斯大林的管风琴
+
+----
+
 https://mp.weixin.qq.com/s/KuIf0oIkLjMTKp2FgAnpyA
 
 一口气做出12只同款雪糕，强迫症都被食物加工流水线治好了
@@ -365,3 +283,15 @@ https://www.zhihu.com/zvideo/1350151967721754624
 https://mp.weixin.qq.com/s/DIEl5q9v8Rq5cgnlr2i7cA
 
 电磁弹射为什么能淘汰蒸汽发射？
+
+https://zhuanlan.zhihu.com/p/29344047
+
+缩小版坦克 中国山猫全地形车
+
+https://zhuanlan.zhihu.com/p/141028517
+
+石与火的较量-火炮时代的要塞工程学
+
+https://blog.csdn.net/ufv59to8/article/details/104421787
+
+用火烧子弹，结果会怎样？可能又要颠覆你的认知了！

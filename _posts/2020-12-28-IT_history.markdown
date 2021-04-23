@@ -65,6 +65,14 @@ https://mp.weixin.qq.com/s/mcxD1TaD-r9alNydWQQ0Og
 
 ----
 
+![](/images/img3/PAL-NTSC-SECAM.png)
+
+https://zhuanlan.zhihu.com/p/66319869
+
+29.97Hz这种奇葩帧率是怎么来的？
+
+----
+
 https://mp.weixin.qq.com/s/YdoIVBpn1dFUEzDEF5pYJw
 
 被迫离开工作近20年的公司，半导体老兵上演逆袭。林孝平，一个小儿麻痹患者。
@@ -364,19 +372,3 @@ https://mp.weixin.qq.com/s/BfwTOtLnwnMsS3-PQQBHSg
 https://mp.weixin.qq.com/s/kw3BYTXdyhnIyVZrnQuPew
 
 基于深度学习和迁移学习的识花实践
-
-https://mp.weixin.qq.com/s/F965Zu_PgA-1ZUGIQ0nIEQ
-
-TensorFlow协同过滤推荐实战
-
-https://mp.weixin.qq.com/s/KohwsQQetwjfTj-PXvLjwA
-
-使用MNIST数据集，在TensorFlow上实现基础LSTM网络
-
-https://mp.weixin.qq.com/s/xSJRhHbjcgk14Kr_-Ycr5A
-
-输入示例，自动生成代码：TensorFlow官方工具TF-Coder已开源
-
-https://zhuanlan.zhihu.com/p/333791572
-
-Tensorflow模型保存方式大汇总

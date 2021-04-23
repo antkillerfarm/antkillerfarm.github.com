@@ -358,15 +358,3 @@ https://mp.weixin.qq.com/s/_9NJ6QLQArUAD1DKb0KRfA
 https://mp.weixin.qq.com/s/e_TzQxFLAonLMyYAhte6Cg
 
 face-api.js：在浏览器中进行人脸识别的JavaScript接口
-
-https://mp.weixin.qq.com/s/23FoaaA3Z_3kf03BmepFPg
-
-如何将模型部署到安卓移动端，这里有一份简单教程
-
-https://mp.weixin.qq.com/s/MT1YaMm4KBWsIZeHehahgw
-
-TensorFlow重大升级：自动将Python代码转为TF Graph，大幅简化动态图处理！
-
-https://mp.weixin.qq.com/s/06UKxX1xEZEDkxAzXjBItQ
-
-将显存一次性全部吃掉——TF的BFCAllocator

@@ -75,6 +75,24 @@ https://mp.weixin.qq.com/s/6dZcZYQOjghsVvJPnDgYtw
 
 ----
 
+基于政治敏感性，他们会放弃法律、政治等学科的选择；碍于面子，他们又不会去选择诸如数学、物理这些晦涩艰深的学科。
+
+在古代日本被称为“本草学”的生物学，是一门具有悠久历史的学科，这种“高雅”的爱好，花钱不多花精力有限，但回报丰厚，而且成果很容易让公众明白，算是性价比很高了。
+
+https://mp.weixin.qq.com/s/x7keu6RZOUrQnlY-H8S4Gw
+
+为啥日本皇室盛产“生物迷”？
+
+----
+
+与必然变成一只青蛙的蝌蚪不同，随着幼态美西螈的长大，它会面临螈生的十字路口：如果它一直生活在水里，那么它一生的形态就会定格在幼态，以幼态的形态繁育后代；如果它的生活环境偏向于干燥的陆地，那么美西螈就可能就会经历像蝌蚪变青蛙一样的变态过程，从六只小辫子的“胖头鱼”变成适宜于陆地生活的“四脚蛇”。
+
+https://mp.weixin.qq.com/s/AuqmjuyxNQtvIwmA-H50cg
+
+墨西哥美西螈变态或不变态的一生
+
+----
+
 https://zhuanlan.zhihu.com/p/43472599
 
 为什么现在的动物不如恐龙那样巨大？
@@ -338,29 +356,3 @@ https://mp.weixin.qq.com/s/DPFNbFOu4hyu3dpLQ_Rv6g
 https://mp.weixin.qq.com/s/Ax51Lfn2QmB8Et8FU1KiNg
 
 餐桌上唯唯诺诺，在野外重拳出击（小龙虾）
-
-# 数学杂谈++
-
-https://mp.weixin.qq.com/s/43XCOdNqeKxMmpfkX3JTGw
-
-一个退休程序员，用高中几何方法，让百年数学难题逼近理论极限（万有覆盖问题）
-
-https://mp.weixin.qq.com/s/a1TEh1c1VZ345rmj8UiPgA
-
-“科比球”背后的数学
-
-https://mp.weixin.qq.com/s/6XsH71CKaVikqnL6kVPqtg
-
-各种语言的Mandelbrot set示例代码
-
-https://mp.weixin.qq.com/s/gnPiCmsua0ByO5UwWqxuag
-
-史上最牛逼的文科生：学历史成为物理学家，却获得了数学界的最高荣誉，出了350部书，外号火星人！（Edward Witten）
-
-https://mp.weixin.qq.com/s/5p5ai_HKZMvbQ9Inu6ASbA
-
-史上最硬核老师：17年间，拿着菜刀把400个混混送进了哈佛耶鲁麻省！（Jaime Escalante）
-
-https://mp.weixin.qq.com/s/vLqJIaTXOkz0kYJzKguQaQ
-
-99%的数学家都算不出这道题（亲和数）
