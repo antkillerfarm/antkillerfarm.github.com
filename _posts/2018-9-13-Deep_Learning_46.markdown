@@ -9,6 +9,18 @@ category: DL
 
 # OCR（续）
 
+https://mp.weixin.qq.com/s/_znXs8pkfgmWsb26HIfhLQ
+
+复杂环境文字识别技术研究及应用进展
+
+https://mp.weixin.qq.com/s/JA6ey6N3Zho92L6jh_bRkg
+
+EAST场景文字检测模型使用
+
+https://mp.weixin.qq.com/s/uMzx_U-wx94GRTQtM11d8Q
+
+OCR技术在携程业务中的应用
+
 https://mp.weixin.qq.com/s/-zMVO47AL1iKFmF16KsfOw
 
 文本检测算法PSENet解读与开源实现
@@ -225,6 +237,10 @@ https://mp.weixin.qq.com/s/gd86GgUxsWCKn6NihuHzZw
 
 58安全-证件识别之版面分析实践
 
+https://mp.weixin.qq.com/s/749JZKSrQnlvrcbbS23Njw
+
+MMOCR：OpenMMLab全流程的文字检测识别理解工具箱
+
 # AI可解释性
 
 XAI(Explainable Artificial Intelligence)
@@ -302,3 +318,29 @@ https://mp.weixin.qq.com/s/5U4iH1n3kqUCAodUVKGTNQ
 https://zhuanlan.zhihu.com/p/30608976
 
 第四范式：大数据对于科研的意义
+
+# 多任务学习+
+
+https://blog.csdn.net/CoderPai/article/details/80087188
+
+利用TensorFlow一步一步构建一个多任务学习模型
+
+https://mp.weixin.qq.com/s/mm9bXXTEzd8DwyYlMgGMZg
+
+NLP多任务学习：一种层次增长的神经网络结构
+
+https://mp.weixin.qq.com/s/fcFb6WkJVP8TYpoxkQgiWQ
+
+CMU提出“十字绣网络”，自动决定多任务学习的最佳共享层
+
+https://mp.weixin.qq.com/s/i7WAFjQHK1NGVACR8x3v0A
+
+自然语言十项全能：转化为问答的多任务学习
+
+https://zhuanlan.zhihu.com/p/362330594
+
+深度学习多目标优化的多个loss应该如何权衡
+
+https://mp.weixin.qq.com/s/ZyokVuCLHNbt7aXWzoJTFA
+
+多任务学习在推荐系统和自然语言处理领域的总结

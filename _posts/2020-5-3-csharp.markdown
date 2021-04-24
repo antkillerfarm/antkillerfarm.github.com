@@ -273,3 +273,17 @@ test2：批量添加边+拓扑排序。
 test3：顶点改为字符串数据类型，使用BGL API。
 
 test4：顶点改为字符串数据类型，不使用BGL API。
+
+# python+
+
+https://mp.weixin.qq.com/s/LeTNcQCT4mYu6HSlGoHbzQ
+
+手机最强Python编程神器，在手机上运行Python不再是梦！
+
+https://mp.weixin.qq.com/s/RP2j-PQMsAIXOK5u4zt3ZA
+
+Python加速运行技巧
+
+https://mp.weixin.qq.com/s/7sQ6p0IDWvttbvv_c71Etg
+
+Python单元测试详解

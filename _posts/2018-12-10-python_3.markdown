@@ -265,6 +265,10 @@ https://mp.weixin.qq.com/s/_rCg_uFD07eZw4QLtD-fzA
 
 Python竟然能做这样的进度条
 
+https://mp.weixin.qq.com/s/nGOCderiyOXsHkMZwIgpoA
+
+酷炫的Python进度条开源库：alive-progress
+
 ## Captcha
 
 Captcha是一个Python验证码库，能够生成音频和图片验证码。

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ML参考资源（三）, 上古软件开发, 互联网风云
+title:  ML参考资源（三）, 上古软件开发
 category: resource 
 ---
 
@@ -331,80 +331,6 @@ https://mp.weixin.qq.com/s/3ZszI7PupWsuTvy69BwPnw
 
 “C语言之父”40年前搞的操作系统复活！Linux、Windows都借鉴过它（Plan 9）
 
-# 互联网风云
+https://mp.weixin.qq.com/s/ywTkMMP6ysBfByIXW3_xeQ
 
-https://mp.weixin.qq.com/s/m72bakeHShkM8yvPubMa8A
-
-狂飙突进的“蛋壳”，一触即溃的“蛋壳”
-
-https://mp.weixin.qq.com/s/LWhuImT3W1Pg-4WA0RMq6g
-
-被长租公寓割韭菜的打工一代
-
-https://mp.weixin.qq.com/s/diYe8bOXfOseXOLKScxdGw
-
-困在蛋壳里的人
-
-----
-
-目前，共享充电宝领域几乎被街电、来电、小电和怪兽充电瓜分，形成所谓“三电一兽”的格局。
-
-----
-
-https://mp.weixin.qq.com/s/fov2fS345enPB_M7kEzFpQ
-
-无代码的时代真的来了吗？
-
-https://view.inews.qq.com/wxn/20210405A068ZS00
-
-穿越废墟：共享单车剧未终
-
-https://mp.weixin.qq.com/s/hE17qDqaDjb8HVIyFNN6cw
-
-P2P平台清零，你损失的钱要回来了吗？
-
-# 数字成像+
-
-https://mp.weixin.qq.com/s/byeQKa7d5FSLS7JrBwP_Zw
-
-什么是多光谱/高光谱成像
-
-https://mp.weixin.qq.com/s/nz9NHdyhRqxdhYopFQ_5Ag
-
-红外热成像与快速发热病患检测
-
-https://mp.weixin.qq.com/s/Htn1Il96fus7s8NkD2_98w
-
-Google Pixel4相机解密(1)夜景
-
-https://mp.weixin.qq.com/s/2uNcJxU-USpb-LZkka__eQ
-
-剖析苹果的激光雷达及参数估计
-
-https://mp.weixin.qq.com/s/DLsmHtUz3gAXMdzNsUTyFA
-
-苹果的DTOF中的SPAD原理和特性
-
-https://mp.weixin.qq.com/s/S8Wda_orUyco43FzV0cEeQ
-
-紫边/紫晕与图像传感器的关系
-
-https://zhuanlan.zhihu.com/p/74085115
-
-深度学习在3-D环境重建中的应用
-
-https://mp.weixin.qq.com/s/k9gff0Ote_V9qtN7HAruBA
-
-工业相机的sensor
-
-https://mp.weixin.qq.com/s/kvINl4pL4_wD71e33jaUSg
-
-下一代cmos image sensor----有机光导薄膜图像传感器
-
-https://mp.weixin.qq.com/s/024h8tPvCPPUyuT53CCPWQ
-
-液态镜头的发展与应用
-
-https://mp.weixin.qq.com/s/0XlH3fFKZBfX3UMq7eTbYw
-
-什么是event camera
+全世界下载量超100亿，curl怎样成为影响世界的开源项目？

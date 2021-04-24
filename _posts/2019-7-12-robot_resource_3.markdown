@@ -347,6 +347,10 @@ https://mp.weixin.qq.com/s/ao5hC_3A7fn8_L_PFw399A
 
 轨迹规划技术分享
 
+https://mp.weixin.qq.com/s/mPiAPT5hBlhR5gINIEMnkw
+
+轨迹规划——算法综述
+
 https://mp.weixin.qq.com/s/pEA7mN7AhxrDqLb3ku1CxQ
 
 ADAS以及自动驾驶车辆运动特性
@@ -410,15 +414,3 @@ V2X技术发展历程及应用研究
 https://mp.weixin.qq.com/s/UOfagdeiREP4Acakkvfd7A
 
 自动驾驶四轮独立驱动电动汽车的自适应分层轨迹跟踪控制方法
-
-https://mp.weixin.qq.com/s/NREmqVYXo6hWsIvzcnwIDA
-
-开源AI画出超准街道地图，全球适用，刷新DeepGlobe最好成绩
-
-https://zhuanlan.zhihu.com/p/76828112
-
-通路规划的行为树（自动驾驶）
-
-https://mp.weixin.qq.com/s/8znzrzoBAYGza6uOFfuz5g
-
-一文读懂无人驾驶汽车系统基本框架

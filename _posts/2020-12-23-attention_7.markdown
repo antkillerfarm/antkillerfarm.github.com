@@ -117,6 +117,10 @@ https://mp.weixin.qq.com/s/oD_Vibp4Ygraix23K_oV2Q
 
 BERT在58搜索的实践
 
+https://mp.weixin.qq.com/s/bqvEeCyX8pqhJQfCUvUkEw
+
+图解BERT：通俗的解释BERT是如何工作的
+
 # Transformer进阶
 
 https://mp.weixin.qq.com/s/-Y7Qy-5aJNJ5bx8QJf3k2w

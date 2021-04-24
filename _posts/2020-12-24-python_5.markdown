@@ -454,11 +454,3 @@ Python+Dash快速web应用开发：回调交互篇（下）
 https://mp.weixin.qq.com/s/RlJ5Y6xJ-8NfDW7oSZlYbw
 
 深入Python解释器源码，我终于搞明白了字符串驻留的原理！
-
-https://mp.weixin.qq.com/s/LeTNcQCT4mYu6HSlGoHbzQ
-
-手机最强Python编程神器，在手机上运行Python不再是梦！
-
-https://mp.weixin.qq.com/s/RP2j-PQMsAIXOK5u4zt3ZA
-
-Python加速运行技巧

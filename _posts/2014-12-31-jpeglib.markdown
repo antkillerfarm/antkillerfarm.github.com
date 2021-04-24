@@ -336,3 +336,7 @@ https://mp.weixin.qq.com/s/1ugk6uI6lfWEEUvtKIfYNA
 https://mp.weixin.qq.com/s/kZvdgWqk1KLi790rly3YYQ
 
 Pytorch中的分布式神经网络训练
+
+https://mp.weixin.qq.com/s/biHcUt55-9RfqYJ_Dg_7Tg
+
+TorchMetrics：PyTorch的指标度量库

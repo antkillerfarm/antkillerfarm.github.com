@@ -315,28 +315,6 @@ https://mp.weixin.qq.com/s/46nvCl5o4QYvRemzOrnaoQ
 
 进入Meta Learning的世界(一)
 
-# 多任务学习+
-
-https://blog.csdn.net/CoderPai/article/details/80087188
-
-利用TensorFlow一步一步构建一个多任务学习模型
-
-https://mp.weixin.qq.com/s/mm9bXXTEzd8DwyYlMgGMZg
-
-NLP多任务学习：一种层次增长的神经网络结构
-
-https://mp.weixin.qq.com/s/fcFb6WkJVP8TYpoxkQgiWQ
-
-CMU提出“十字绣网络”，自动决定多任务学习的最佳共享层
-
-https://mp.weixin.qq.com/s/i7WAFjQHK1NGVACR8x3v0A
-
-自然语言十项全能：转化为问答的多任务学习
-
-https://zhuanlan.zhihu.com/p/362330594
-
-深度学习多目标优化的多个loss应该如何权衡
-
 # 图像变换+++
 
 https://mp.weixin.qq.com/s/klr3jBmiutu2GzH32QcTMA

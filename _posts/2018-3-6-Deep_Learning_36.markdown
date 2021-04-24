@@ -329,6 +329,10 @@ https://zhuanlan.zhihu.com/p/363872795
 
 无监督/自监督的视觉目标跟踪方法
 
+https://mp.weixin.qq.com/s/IuhOLVRgqnoOuxZ2boUGuw
+
+管中窥“视频”，“理解”一斑——视频理解概览
+
 # 迁移学习+
 
 https://zhuanlan.zhihu.com/p/57656210

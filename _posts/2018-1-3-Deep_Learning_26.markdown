@@ -175,6 +175,10 @@ https://mp.weixin.qq.com/s/0Lh8821SbDdmM7IZS3IEBg
 
 构建自动车牌识别系统
 
+https://mp.weixin.qq.com/s/plUxIatkBHd2jjnsMy2nmw
+
+基于OpenCV的车牌识别
+
 ## CRNN
 
 CRNN是白翔小组的作品。
@@ -404,15 +408,3 @@ MORAN文本识别算法开源，刷新多个OCR数据集state-of-the-art
 https://mp.weixin.qq.com/s/cLB2CPjLVJAuDVVmHRKHEA
 
 弯曲文字检测之SPCNet
-
-https://mp.weixin.qq.com/s/_znXs8pkfgmWsb26HIfhLQ
-
-复杂环境文字识别技术研究及应用进展
-
-https://mp.weixin.qq.com/s/JA6ey6N3Zho92L6jh_bRkg
-
-EAST场景文字检测模型使用
-
-https://mp.weixin.qq.com/s/uMzx_U-wx94GRTQtM11d8Q
-
-OCR技术在携程业务中的应用

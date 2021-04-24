@@ -198,3 +198,7 @@ https://mp.weixin.qq.com/s/9yVgUXorOHB8VGmchgJgGQ
 https://zhuanlan.zhihu.com/p/67180750
 
 40个金属之最，搞了一辈子机械知道不会超过10个。。。
+
+https://mp.weixin.qq.com/s/5Ua1tXJ0Eytdh6gzVxXpeg
+
+上万只海螺才提取出一克，价比黄金的染料是什么颜色？

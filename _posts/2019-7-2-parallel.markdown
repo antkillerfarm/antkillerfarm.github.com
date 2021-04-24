@@ -371,6 +371,10 @@ https://zhuanlan.zhihu.com/p/276122469
 
 分布式训练常用技术简介
 
+https://mp.weixin.qq.com/s/uQzwqcGwC9ZveuW64Lzkmg
+
+分布式训练怎么还减速了呢？
+
 https://zhuanlan.zhihu.com/p/294698838
 
 DLPerf—分布式深度学习最佳入门(踩坑)指南

@@ -119,6 +119,10 @@ https://www.zhihu.com/question/425874775
 
 人类300多万年的历史上，为何地球很少受到陨石大规模冲击？
 
+https://mp.weixin.qq.com/s/nXbjy6v0sgfG42DrRCohcA
+
+刚路过太阳，下面是地球人对我的探索回顾
+
 ## 天体物理
 
 https://www.zhihu.com/question/40030083
@@ -328,6 +332,10 @@ https://mp.weixin.qq.com/s/zNs4NikZ912R3V1ZT2DcTg
 https://mp.weixin.qq.com/s/GLjXHV7aYQ77OoDuZfMXmQ
 
 黑洞偏振照片发布！
+
+https://mp.weixin.qq.com/s/3KqyXlt69-wkkacQpkZ6uw
+
+又有新消息！人类获取了M87黑洞的“指纹”
 
 ## EHT
 
