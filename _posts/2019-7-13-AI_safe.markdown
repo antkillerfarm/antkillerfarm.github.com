@@ -394,11 +394,3 @@ https://mp.weixin.qq.com/s/lAN0GKjkfkkWCurwRQb6DQ
 https://mp.weixin.qq.com/s/9UmzFxRdE4FFdrqEeBZtOQ
 
 如何实现一个定时器？
-
-https://mp.weixin.qq.com/s/v9XlJjIQkuVpSudhQIS70A
-
-神秘！申请内存时底层发生了什么？
-
-https://mp.weixin.qq.com/s/V-XT6QuDG522P0bP2e3ULg
-
-咋办，死锁了

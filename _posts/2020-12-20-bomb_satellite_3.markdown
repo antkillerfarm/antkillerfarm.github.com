@@ -113,6 +113,10 @@ https://mp.weixin.qq.com/s/K39R4LqZ3Cy79__c0MVN6A
 
 丁仲礼怒怼央视女主持
 
+https://mp.weixin.qq.com/s/QKEv8a3DBuaJDiQJoq38jA
+
+印度环保公主横空出世，我坚决支持
+
 ----
 
 我诚恳地告诉他，核动力潜艇技术复杂，价格昂贵，你们搞不了，苏维埃国家的海军拥有这种战略武器，同样可以保卫你们的国土。

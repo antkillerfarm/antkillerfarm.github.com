@@ -269,6 +269,10 @@ https://mp.weixin.qq.com/s/K9Oyn0cbwqVCh1j3N5bd_w
 
 I/O与Netty原理精讲
 
+https://mp.weixin.qq.com/s/w4RmWCZkyNlhjRH1oDN6AQ
+
+45张图深度解析Netty架构与原理
+
 ## synchronized
 
 https://blog.csdn.net/javazejian/article/details/72828483

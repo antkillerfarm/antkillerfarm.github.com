@@ -49,6 +49,10 @@ https://mp.weixin.qq.com/s/4AYMb_v3GctPddpKUZUUfw
 
 25张图让你彻底掌握分布式事务原理
 
+https://mp.weixin.qq.com/s/ZrMUgjApwgsCNOzmpFBl3g
+
+什么是分布式事务？
+
 ## 分布式锁
 
 https://mp.weixin.qq.com/s/UTJL98BhrQ3yLvAQrl1P8A
@@ -353,6 +357,10 @@ https://mp.weixin.qq.com/s/Ju4d71VrL0omGkV3s3U_1Q
 
 聊聊MyBatis缓存机制
 
+https://juejin.cn/post/6844904003394863118
+
+如何设计一个本地缓存
+
 https://mp.weixin.qq.com/s/rVfoSk3HCEEHvdlKz7A2xA
 
 一家创业公司的5年架构变迁史
@@ -424,19 +432,3 @@ DataMan：美团旅行数据质量监管平台实践
 https://mp.weixin.qq.com/s/iCJ9IeAPnaqatEWzgXONfg
 
 每天数百亿用户行为数据，美团点评怎么实现秒级转化分析？
-
-https://mp.weixin.qq.com/s/AJt-Ky1o7OIh7n2KMShS-w
-
-手把手教你从0到1写一个简单的缓存框架
-
-https://mp.weixin.qq.com/s/de3YqaSFaxUyiBMEW7fsKg
-
-并发服务器（一）：简介
-
-https://mp.weixin.qq.com/s/KkrSxVZhOI22JDk4K20cxg
-
-并发服务器（二）：线程
-
-https://mp.weixin.qq.com/s/-OgxpAz6Zz817N9hfK8njQ
-
-分布式存储中的数据分布策略

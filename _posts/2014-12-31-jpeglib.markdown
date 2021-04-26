@@ -340,3 +340,7 @@ Pytorch中的分布式神经网络训练
 https://mp.weixin.qq.com/s/biHcUt55-9RfqYJ_Dg_7Tg
 
 TorchMetrics：PyTorch的指标度量库
+
+https://zhuanlan.zhihu.com/p/363319763
+
+PyTorch vs LibTorch：网络推理速度谁更快？

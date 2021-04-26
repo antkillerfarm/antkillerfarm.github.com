@@ -183,6 +183,10 @@ https://mp.weixin.qq.com/s/DWaKFhK-dv43ap99fRnpAw
 
 概率回归的视觉追踪
 
+https://mp.weixin.qq.com/s/kPaPB-2pal--Hlh9F7WxhA
+
+目标跟踪又添重磅开源工具箱，MMTracking来了
+
 ## FlowNet
 
 论文：
@@ -367,9 +371,9 @@ https://mp.weixin.qq.com/s/oseEmzgb8iCoOf9lTbAssg
 
 带你入门多目标跟踪（三）匈牙利算法&KM算法
 
-https://mp.weixin.qq.com/s/kPaPB-2pal--Hlh9F7WxhA
+https://mp.weixin.qq.com/s/Z-_iZl_CTixqK0vl0_CHfQ
 
-目标跟踪又添重磅开源工具箱，MMTracking来了
+基于深度学习的视觉多目标跟踪算法综述
 
 # AutoDL++
 

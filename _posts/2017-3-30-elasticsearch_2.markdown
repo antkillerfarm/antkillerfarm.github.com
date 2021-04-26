@@ -405,11 +405,3 @@ https://mp.weixin.qq.com/s/T6gCc8OBgyV-yeAg_MUzPQ
 https://mp.weixin.qq.com/s/DQZh-V0jnlqLNqkyRkoDQQ
 
 使用Kafka，如何成功迁移SQL数据库中超过20亿条记录？
-
-https://mp.weixin.qq.com/s/UFfpPnouxXjOFAmZVdSTVg
-
-Kafka核心源码剖析（一）：Producer发送消息流程
-
-https://mp.weixin.qq.com/s/exOs0zrZ2x8Mxi6aB1x-QQ
-
-流数据并行处理性能比较：Kafka vs Pulsar vs Pravega

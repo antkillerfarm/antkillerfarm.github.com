@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 新冠肺炎（三）——口罩, 瘟疫公司, 科研
+title: 新冠肺炎（三）——口罩, 科研
 category: Nature 
 ---
 
@@ -74,6 +74,22 @@ https://www.zhihu.com/question/399164650
 https://mp.weixin.qq.com/s/pmW4gEAD533uXojUQ9d1QQ
 
 聊聊“地摊经济学”
+
+----
+
+武钢集团气体有限公司是武汉最大的医用氧生产企业。疫情期间，该公司调整生产工况，24小时开足马力不停工，每天可生产约200立方米液态医用氧，制备能力充足。同时，配备2个1000立方米医用氧液态储罐，储存充裕。制氧能力可达需求量的3倍！
+
+http://www.sasac.gov.cn/n4470048/n13461446/n15440338/n15440361/n15440386/n15440419/c15527342/content.html
+
+中国宝武集团宝钢股份武汉钢铁有限公司气体公司：力排万难 为疫情防控工作贡献钢铁硬核力量！
+
+----
+
+中国船舶集团旗下八院鹏力集团仅用11天就完成N95口罩机、平面口罩机和压条机样机研制，仅15天就实现了量产设备的连续供货。
+
+燕山石化疫情期间紧急部署的4条熔喷布生产线累计生产熔喷布超1300吨，供应口罩生产厂家160余家，可助力增产普通医用平面口罩13亿只；应用自主研发的氢调法新技术生产熔喷专用料超1.26万吨。
+
+从原料到口罩成品，有四个环节：一是聚丙烯原料，二是熔喷布专用料，三是熔喷布，四是口罩生产。这相当于从“麦子”到“面粉”再到“面皮”，最后生产“花卷”。种了50年“麦子”的燕山石化，为了国家和人民的需要，决定打通产业链，自己“磨面粉”“擀面皮”“蒸花卷”。
 
 ----
 
@@ -164,32 +180,6 @@ https://mp.weixin.qq.com/s/tLljo8q-1eybDIk7CLQiSA
 https://mp.weixin.qq.com/s/SwYQFBv5lnej0g08bsBF1A
 
 “英伟达呼吸机”开源：计算机架构大师打造，成本暴减98%，黄仁勋点赞
-
-# 瘟疫公司
-
-![](/images/img4/Plague_Inc.jpg)
-
-![](/images/img4/Plague_Inc.png)
-
-https://zhuanlan.zhihu.com/p/103836857
-
-五年前的冠状病毒模组让《瘟疫公司》再度翻红，创作者是预言家？
-
-https://zhuanlan.zhihu.com/p/125727756
-
-《瘟疫公司》做错了吗？最贴近疫情的游戏被下架，被指存在违反国内法律内容
-
-https://zhuanlan.zhihu.com/p/298079109
-
-现在，你可以在《瘟疫公司》里“拯救世界”了
-
-https://zhuanlan.zhihu.com/p/293192687
-
-因为疫情爆火的《瘟疫公司》免费了，还新增了解药模式
-
-https://www.zhihu.com/question/21491731
-
-游戏《瘟疫公司》Plague Inc这款游戏对现实世界有何启示？
 
 # 科研
 
@@ -282,31 +272,3 @@ https://mp.weixin.qq.com/s/NI2OtzUsRXUMoqfI11YV_A
 https://zhuanlan.zhihu.com/p/77352210
 
 “非典”真的是吃野味吃出来的吗？
-
-https://mp.weixin.qq.com/s/4pmzP2s9YZPR0yAX0XrjsQ
-
-流感病毒在衣服袖子和电梯按钮上能活多久？
-
-https://mp.weixin.qq.com/s/OaWBlQVr3DZ6HOMQFs9J3Q
-
-新型冠状病毒是这样被发现的……他们惊呼“这跟鼠疫一个级别！”
-
-https://view.inews.qq.com/a/20200130A08EVN00
-
-控制新发传染病，是以科研为主，还是以人民健康为主？公卫专家评武汉疫情
-
-https://mp.weixin.qq.com/s/xcnKpCnWqwgNKMpDBQkuHA
-
-新冠病毒引起的嗅觉和味觉失灵是怎么回事？
-
-https://mp.weixin.qq.com/s/ZPrpnvNK43Y-_iObBu2c5Q
-
-新冠病毒或将长期存在，我们该如何应对？
-
-https://mp.weixin.qq.com/s/krRGv6N20YALpG-STMbIzg
-
-以色列新冠疫苗真实世界数据，有什么用？
-
-https://mp.weixin.qq.com/s/AnN_NJR3T8yOtiMN9qWd7A
-
-石正丽：新冠病毒的祖先在哪？

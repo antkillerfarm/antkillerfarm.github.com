@@ -179,6 +179,10 @@ read-write lock、RCU lock、spin lock
 
 比较并交换(compare and swap, CAS)，是原子操作的一种，可用于在多线程编程中实现不被打断的数据交换操作，从而避免多线程同时改写某一数据时由于执行顺序不确定性以及中断的不可预知性产生的数据不一致问题。
 
+RCU（Read-Copy Update）机制读取数据的时候不对链表进行耗时的加锁操作。这样在同一时间可以有多个线程同时读取该链表，并且允许一个线程对链表进行修改（修改的时候，需要加锁）。
+
+RCU适用于需要频繁的读取数据，而相应修改数据并不多的情景，例如在文件系统中，经常需要查找定位目录，而对目录的修改相对来说并不多，这就是RCU发挥作用的最佳场景。
+
 https://mp.weixin.qq.com/s/mTOzcdjaak-z6ypL9MR2Lw
 
 小白科普：悲观锁和乐观锁
@@ -226,6 +230,14 @@ https://mp.weixin.qq.com/s/czLqzt0cRwPZeQ4WDaKiJQ
 https://mp.weixin.qq.com/s/rpufplXGYFo3P3mdIyY6vA
 
 24张图带你彻底理解Java中的21种锁
+
+https://www.cnblogs.com/linhaostudy/p/8463529.html
+
+Linux RCU机制详解
+
+https://zhuanlan.zhihu.com/p/67520807
+
+Linux内核中的RCU
 
 # 动态库版本设置
 
@@ -285,6 +297,12 @@ swapoff /swapfile
 ```
 
 # Linux参考资源
+
+https://www.kernel.org/doc/html/latest/
+
+Linux官方文档
+
+----
 
 https://mp.weixin.qq.com/s/n6D5_6K9TrnuXg3h6AiFNA
 
@@ -435,39 +453,3 @@ https://mp.weixin.qq.com/s/LLlzPB2emr9Hqr7gql0B4Q
 https://mp.weixin.qq.com/s/fzLcAkYwKhj-9hgoVkTzaw
 
 CPU飙高，系统性能问题如何排查？
-
-https://mp.weixin.qq.com/s/IcEP-JGQbWA7s7yPdIC9vA
-
-80%时间屏蔽了中断，实时性还有救么？
-
-https://mp.weixin.qq.com/s/iKfWSfzauzNjcAvXPNhq0Q
-
-这些算法都不会还学什么操作系统
-
-https://mp.weixin.qq.com/s/gj6Zw8SvOdSZqRx8KP9wWw
-
-20张图揭开内存管理的迷雾，瞬间豁然开朗
-
-https://mp.weixin.qq.com/s/IQYUNzVgSOFUHB9c1SM0Bw
-
-10张图22段代码，万字长文带你搞懂虚拟内存模型和malloc内部原理
-
-http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html
-
-Systemd入门教程：命令篇
-
-https://mp.weixin.qq.com/s/xOqXM5kFi0CzilDg0EXFKg
-
-Linux内核源码规范解析
-
-https://mp.weixin.qq.com/s/QB-IHiCIWEu3bALm2Dp46Q
-
-操作系统课程知识结构
-
-https://www.zhihu.com/answer/460715569
-
-生产力应用大汇总
-
-https://mp.weixin.qq.com/s/QsgoONKwI7ds8Hnx2Wer6A
-
-Linux从程序到进程

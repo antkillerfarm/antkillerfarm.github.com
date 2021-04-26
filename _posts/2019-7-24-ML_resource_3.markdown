@@ -334,3 +334,7 @@ https://mp.weixin.qq.com/s/3ZszI7PupWsuTvy69BwPnw
 https://mp.weixin.qq.com/s/ywTkMMP6ysBfByIXW3_xeQ
 
 全世界下载量超100亿，curl怎样成为影响世界的开源项目？
+
+https://mp.weixin.qq.com/s/lqGCGj1EuwRvg6S9Dt3yEg
+
+PDF之父、Adobe联合创始人离世，乔布斯收购未果给了他第一桶金

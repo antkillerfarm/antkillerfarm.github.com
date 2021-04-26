@@ -276,6 +276,10 @@ https://mp.weixin.qq.com/s/JR-GIXwHF45OysoE0qvwzw
 
 时间序列异常检测机制的研究
 
+https://mp.weixin.qq.com/s/MYwvuD85PPs3PJA5tMxvgw
+
+6种时序异常检测思路总结！
+
 https://mp.weixin.qq.com/s/2hpQ_7Ih58d1RKYb1oW_Sg
 
 时间序列简介（一）

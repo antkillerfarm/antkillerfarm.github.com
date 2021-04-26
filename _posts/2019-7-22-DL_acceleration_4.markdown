@@ -297,6 +297,10 @@ https://www.chiphell.com/thread-1620755-1-1.html
 
 新Titan X的INT8计算到底是什么鬼
 
+https://mp.weixin.qq.com/s/5LhLbzyWTlP2R_zGAIKuiA
+
+INT8量化训练
+
 https://mp.weixin.qq.com/s/S9VcoS_59nbZWe_P3ye2Tw
 
 减少模型半数内存用量：百度&英伟达提出混合精度训练法

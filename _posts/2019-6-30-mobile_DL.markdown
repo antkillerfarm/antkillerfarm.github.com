@@ -383,60 +383,20 @@ https://mp.weixin.qq.com/s/atQHJ5U2pJpSG6PguN7J4Q
 
 如何保持运动小车上的旗杆屹立不倒？TensorFlow利用A3C算法训练智能体玩CartPole游戏
 
-# 物理++
+# Flume & Kafka+
 
-https://mp.weixin.qq.com/s/t4xwQUoQ8FAWetvft7RnqQ
+https://mp.weixin.qq.com/s/UFfpPnouxXjOFAmZVdSTVg
 
-首次在室温条件下，制造出自然界中最坚硬的物质（蓝丝黛尔石）
+Kafka核心源码剖析（一）：Producer发送消息流程
 
-https://mp.weixin.qq.com/s/lykIPcbYDOVOy6W-Rd7e2g
+https://mp.weixin.qq.com/s/exOs0zrZ2x8Mxi6aB1x-QQ
 
-拥有惊人弹跳力的马里奥，究竟是不是人类？
+流数据并行处理性能比较：Kafka vs Pulsar vs Pravega
 
-https://mp.weixin.qq.com/s/PYRDVMgL1eFHuwlCBsuGng
+https://mp.weixin.qq.com/s/ijek6Tdb6H3hqY2CEC917Q
 
-3W字光谱分析方法综述
+从面试角度来看一看Kafka
 
-https://mp.weixin.qq.com/s/tU6Incnq63fT61z6y9E-Jg
+https://mp.weixin.qq.com/s/zmDTaW8c65BWZ-mhsED1jw
 
-一个5000多年的老古董，竟有人把它玩出吉尼斯世界纪录，这波操作我跪服......（陀螺）
-
-https://mp.weixin.qq.com/s/BfQ0qUHpAfmB3_mHvyeCDw
-
-不好！为了一点铅，物理学家和考古学家打起来了！（低本底铅）
-
-https://mp.weixin.qq.com/s/hWPX-lR3Eo46ofMNC2_5oQ
-
-有关诺奖的故事：简单的电学实验，造就了一个有趣的研究领域（超导现象）
-
-https://mp.weixin.qq.com/s/CkZhqcGxRoOoaLGvQIVUIQ
-
-科学家开发出“反太阳能”装置，黑夜照样能发电！
-
-https://mp.weixin.qq.com/s/iGebSkPLeR9Vc2VmeHALfw
-
-尿尿尿的到处都是？我总结了男生尿尿的最强攻略！
-
-https://mp.weixin.qq.com/s/tTMrr5-urQhZlIBTKSHw8g
-
-物理学家终于破解了不粘锅的粘锅之谜
-
-https://mp.weixin.qq.com/s/FabMpGipsWnURnlx824WKA
-
-全世界70亿人同时起跳，地球会天崩地裂？
-
-https://mp.weixin.qq.com/s/qQAwISuQnrNZkhcr2NVHWQ
-
-光的本质
-
-https://mp.weixin.qq.com/s/sVun44eLMKBFINnVVpNM1g
-
-看见光的15种方式
-
-https://mp.weixin.qq.com/s/hdKHsNagXaUGJU24GOvHMg
-
-宇宙中的光
-
-https://mp.weixin.qq.com/s/CguKKKmK6Dx_KhslTanwZg
-
-十大物理学预测
+从演进式角度看消息队列

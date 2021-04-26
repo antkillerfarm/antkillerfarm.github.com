@@ -157,6 +157,10 @@ https://mp.weixin.qq.com/s/WGHGXWghWhwcA0tux9bz0g
 
 想去火星旅游，记得看看天气预报
 
+https://mp.weixin.qq.com/s/xqBhOAMIs8dONwhgIHZOgQ
+
+火星探测成功率不足50%，人类何时能圆梦？
+
 # 阿波罗50年
 
 https://mp.weixin.qq.com/s/79e6p2TYpttO-NR1of21jw

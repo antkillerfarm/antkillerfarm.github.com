@@ -9,6 +9,22 @@ category: resource
 
 # 大数据平台参考资源
 
+https://mp.weixin.qq.com/s/AJt-Ky1o7OIh7n2KMShS-w
+
+手把手教你从0到1写一个简单的缓存框架
+
+https://mp.weixin.qq.com/s/de3YqaSFaxUyiBMEW7fsKg
+
+并发服务器（一）：简介
+
+https://mp.weixin.qq.com/s/KkrSxVZhOI22JDk4K20cxg
+
+并发服务器（二）：线程
+
+https://mp.weixin.qq.com/s/-OgxpAz6Zz817N9hfK8njQ
+
+分布式存储中的数据分布策略
+
 https://mp.weixin.qq.com/s/zDbcV_vJeBOnAYxK0WEJQQ
 
 Web系统大规模并发：电商秒杀与抢购
@@ -406,19 +422,3 @@ https://mp.weixin.qq.com/s/6OkLjK1bMbw6a3bvYn_DCQ
 https://zhuanlan.zhihu.com/p/57029694
 
 自动驾驶中单目摄像头检测输出3-D边界框的方法一览
-
-https://mp.weixin.qq.com/s/bgP_xMfi3hXayscf9D5JIg
-
-谷歌提出Sim2Real：让机器人像人类一样观察世界
-
-https://mp.weixin.qq.com/s/YArTnhPVvPQru5P_eU8muA
-
-一文解析激光雷达中时序融合的研究现状和发展方向
-
-https://mp.weixin.qq.com/s/07tHvJHJNYmRDw-S0NQDOA
-
-自动驾驶毫米波雷达物体检测技术
-
-https://mp.weixin.qq.com/s/At1nXEk7t6z5az9JoZu2pA
-
-关于数据增强在自动驾驶中的探讨

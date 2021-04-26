@@ -297,6 +297,22 @@ https://mp.weixin.qq.com/s/r8t8owBIwR26Ebr8AacJLw
 
 见多了概念车，概念拖拉机你听说过吗？
 
+https://mp.weixin.qq.com/s/bgP_xMfi3hXayscf9D5JIg
+
+谷歌提出Sim2Real：让机器人像人类一样观察世界
+
+https://mp.weixin.qq.com/s/YArTnhPVvPQru5P_eU8muA
+
+一文解析激光雷达中时序融合的研究现状和发展方向
+
+https://mp.weixin.qq.com/s/07tHvJHJNYmRDw-S0NQDOA
+
+自动驾驶毫米波雷达物体检测技术
+
+https://mp.weixin.qq.com/s/At1nXEk7t6z5az9JoZu2pA
+
+关于数据增强在自动驾驶中的探讨
+
 # Apollo
 
 Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。

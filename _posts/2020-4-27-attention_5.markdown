@@ -309,6 +309,10 @@ https://mp.weixin.qq.com/s/O-xcsIHufrPQKPQGNcKjkg
 
 视觉子领域中的Transformer
 
+https://mp.weixin.qq.com/s/IeQdvz8DrNAULy2k7oFgWw
+
+Transformers在计算机视觉概述
+
 # BERT进阶
 
 ## AR vs AE
