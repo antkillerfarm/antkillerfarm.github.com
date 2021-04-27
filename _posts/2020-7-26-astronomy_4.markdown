@@ -9,6 +9,18 @@ category: Nature
 
 # 天文杂谈（续）
 
+1990年发射的哈勃太空望远镜，由于一片镜片边缘磨薄了2.2mm，相机镜头misallignment, 最终导致发射后拍摄图像模糊。
+
+NASA的科学家开始没有意识到是望远镜的镜头质量问题，还在讨论是不是外太空就是模模糊糊的形态……
+
+后来相机工程师发现了是由于一个镜片零件生产误差造成的问题，花了3年时间在太空修复了这个问题，避免了重新发射，为NASA节省了47亿美元。科学家终于能拍到清晰的太空图像了。
+
+https://mp.weixin.qq.com/s/Wcd_bv_bt-xv42UD40dDww
+
+深度传感进化史
+
+----
+
 https://mp.weixin.qq.com/s/aY4gFbK_aKWcgwvr0Rk5gQ
 
 “波多黎各，波多黎各，世界最大射电望远镜，倒闭了”（Arecibo望远镜）
@@ -198,6 +210,10 @@ https://mp.weixin.qq.com/s/rvH-gvgbjLITyP8QOuzgKA
 https://mp.weixin.qq.com/s/iSE8FaL9WhJNWgizBVZXXA
 
 这项实验，或可解开超高能宇宙线起源的“世纪之谜”
+
+https://mp.weixin.qq.com/s/Pnn0J2gxOR1y9xpn2WtpZg
+
+宇宙膨胀，我们会跟着一起膨胀吗？
 
 # 模型压缩与加速进阶+
 

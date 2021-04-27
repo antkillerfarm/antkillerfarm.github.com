@@ -372,3 +372,7 @@ https://mp.weixin.qq.com/s/BfwTOtLnwnMsS3-PQQBHSg
 https://mp.weixin.qq.com/s/kw3BYTXdyhnIyVZrnQuPew
 
 基于深度学习和迁移学习的识花实践
+
+https://mp.weixin.qq.com/s/KVHeDOjFRTpRaXosFeHqHg
+
+实例介绍TensorFlow的输入流水线

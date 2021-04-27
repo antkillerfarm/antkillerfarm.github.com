@@ -39,6 +39,10 @@ https://zhuanlan.zhihu.com/p/82116922
 
 一文读懂“Parameter Server”的分布式机器学习训练原理
 
+https://mp.weixin.qq.com/s/5Ae1NyLM-jZnO6TCOPMYkQ
+
+PS Worker分布式性能优化
+
 # 时间序列分析
 
 ## 书籍和教程

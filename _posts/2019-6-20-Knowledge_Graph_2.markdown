@@ -394,3 +394,7 @@ https://mp.weixin.qq.com/s/cNNj18i_SoPeJSu9lXf9Ng
 https://mp.weixin.qq.com/s/sdiu64GVPkhTjQ5sAIv94A
 
 图卷积神经网络理论基础：从傅里叶变换到图卷积
+
+https://mp.weixin.qq.com/s/jvMyNgxaJj3HAIMDK_jKUQ
+
+图挖掘与多关系学习：工具与应用，亚马逊与CMU-WWW2021教程，附161页ppt

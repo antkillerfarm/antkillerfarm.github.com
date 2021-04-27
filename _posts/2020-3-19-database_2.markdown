@@ -19,6 +19,10 @@ https://mp.weixin.qq.com/s/sE8xhHUc5qhzeaRga_VFeQ
 
 再也不怕，缓存雪崩、击穿、穿透！
 
+https://mp.weixin.qq.com/s/Ii0b6ORmsxjmXsVRnhG5eA
+
+如何解决缓存系统的数据不一致问题
+
 ## 数据管理工具
 
 数据管理工具主要有：Navicat和DataGrip。

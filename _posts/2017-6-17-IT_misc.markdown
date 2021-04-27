@@ -204,3 +204,7 @@ PyTorch分布式训练
 https://mp.weixin.qq.com/s/14_pt0_skKYNw2sAK5Zptw
 
 Pytorch底层算子扩展最详细的总结
+
+https://mp.weixin.qq.com/s/qhQIF3ReGz67AUgoki2sAg
+
+13个你一定要知道的PyTorch特性

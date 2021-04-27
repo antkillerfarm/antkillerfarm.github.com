@@ -292,6 +292,14 @@ usr很多人都认为是user缩写，其实不然，这是unix system resource�
 
 lsof(list open files)是一个列出当前系统打开文件的工具。在linux环境下，任何事物都以文件的形式存在，通过文件不仅仅可以访问常规数据，还可以访问网络连接和硬件。所以如传输控制协议 (TCP) 和用户数据报协议 (UDP) 套接字等，系统在后台都为该应用程序分配了一个文件描述符，无论这个文件的本质如何，该文件描述符为应用程序与基础操作系统之间的交互提供了通用接口。因为应用程序打开文件的描述符列表提供了大量关于这个应用程序本身的信息，因此通过lsof工具能够查看这个列表对系统监测以及排错将是很有帮助的。
 
+`lsof xxx.txt`
+
+查看使用`xxx.txt`的进程。
+
+`lsof | grep TCP`
+
+列出打开的文件。
+
 # nc
 
 NetCat，在网络工具中有“瑞士军刀”美誉。它短小精悍（1.84版本也不过25k，旧版本或缩减版甚至更小）、功能实用，被设计为一个简单、可靠的网络工具，可通过TCP或UDP协议传输读写数据。同时，它还是一个网络应用Debug分析器，因为它可以根据需要创建各种不同类型的网络连接。
@@ -354,10 +362,6 @@ bash只支持整数四则运算，浮点数和复杂运算就靠`bc`了。
 
 查询一个可执行文件所使用的动态链接库。
 
-`lsof | grep TCP`
-
-列出打开的文件。
-
 `sudo adduser tt`
 
 创建新用户、用户的主目录以及密码。
@@ -414,60 +418,44 @@ DosBox是Linux平台玩DOS老游戏的法宝。
 
 `sudo apt-get install joe`
 
-# minicom
+# Linux知识图谱
 
-1.查看串口设备
+![](/images/article/linux_perf_tools_full.png)
 
-`ls -l /dev`
+![](/images/img3/linux_kernel_map.png)
 
-2.连接串口设备
+原图地址：
 
-`minicom -D /dev/ttyS0`
+http://www.brendangregg.com/linuxperf.html
 
-3.菜单
-
-Ctrl+A Z
-
-4.退出
-
-Ctrl+A X
-
-# MobaXterm
-
-MobaXterm是一个远程终端登录软件。
-
-http://mobaxterm.mobatek.net/
-
-# tmux
-
-你是不是经常需要SSH或者telent远程登录到Linux服务器？你是不是经常为一些长时间运行的任务而头疼，比如系统备份、ftp传输等等。
-
-通常情况下我们都是为每一个这样的任务开一个远程终端窗口，因为他们执行的时间太长了。必须等待它执行完毕，在此期间可不能关掉窗口或者断开连接，否则这个任务就会被杀掉，一切半途而废了。
-
-这个问题的解决办法是安装一个会话管理工具。原先主要使用screen：
-
-https://www.gnu.org/software/screen/
-
-这是一个有30年历史（1987年）的软件。
-
-现在的话，一般推荐使用tmux：
-
-https://github.com/tmux/tmux/
-
-安装：
-
-`sudo apt install tmux`
+![](/images/img4/Linux-storage-stack-diagram_v4.10.png)
 
 参考：
 
-https://linuxtoy.org/archives/from-screen-to-tmux.html
+https://mp.weixin.qq.com/s/-iCuxQjSghtDGaPMqaDSgQ
 
-从screen切换到tmux
+Linux思维导图整理
 
-http://mingxinglai.com/cn/2012/09/tmux/
+https://mp.weixin.qq.com/s/sLyD6z2xBXRxfBZnImTgtQ
 
-tmux的使用方法和个性化配置
+40+张最全Linux/C/C++思维导图，收藏！
 
-http://chengjin.li/2017/08/09/tmux-using-tutorial/
+# 环境变量
 
-终端复用工具---tmux的安装及使用
+设置环境变量的方法：
+
+1）临时的：使用export命令声明即可，变量在关闭shell时失效。示例如下：
+
+`export PATH=/home/xyz/bin:$PATH;`
+
+2）永久的：需要修改配置文件，变量永久生效。
+
+在/etc/profile文件中添加变量（对所有用户生效）。修改文件后要想马上生效，还要运行`source /etc/profile`，不然只能在下次重进此用户时生效。
+
+在用户目录下的.bash_profile文件中增加变量（对该用户生效）。同样需要source才能马上生效。
+
+重要的环境变量：
+
+PATH：可执行文件路径。
+
+LD_LIBRARY_PATH：动态链接库文件路径

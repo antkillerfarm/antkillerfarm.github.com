@@ -161,6 +161,14 @@ https://mp.weixin.qq.com/s/xqBhOAMIs8dONwhgIHZOgQ
 
 火星探测成功率不足50%，人类何时能圆梦？
 
+https://mp.weixin.qq.com/s/25BnV608F7DhIdRWGURBvQ
+
+机智号火星首飞成功！30秒惊险悬停，创造“莱特星球时刻”
+
+https://mp.weixin.qq.com/s/uZofW1nPuu5MNhe9i-CRhA
+
+火星有了第一个机场！人类首架火星无人机试飞成功，场地命名“莱特兄弟机场”
+
 # 阿波罗50年
 
 https://mp.weixin.qq.com/s/79e6p2TYpttO-NR1of21jw
@@ -274,15 +282,3 @@ https://zhuanlan.zhihu.com/p/61467796
 https://mp.weixin.qq.com/s/vMe5RmD8uBW3AeGDYwbI5A
 
 紫金山天文台的创立（高鲁、余青松）
-
-----
-
-1990年发射的哈勃太空望远镜，由于一片镜片边缘磨薄了2.2mm，相机镜头misallignment, 最终导致发射后拍摄图像模糊。
-
-NASA的科学家开始没有意识到是望远镜的镜头质量问题，还在讨论是不是外太空就是模模糊糊的形态……
-
-后来相机工程师发现了是由于一个镜片零件生产误差造成的问题，花了3年时间在太空修复了这个问题，避免了重新发射，为NASA节省了47亿美元。科学家终于能拍到清晰的太空图像了。
-
-https://mp.weixin.qq.com/s/Wcd_bv_bt-xv42UD40dDww
-
-深度传感进化史

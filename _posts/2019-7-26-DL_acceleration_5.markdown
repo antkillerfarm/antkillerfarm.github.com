@@ -173,6 +173,16 @@ https://mp.weixin.qq.com/s/wOaCjSifZqkndaGbst1-aw
 
 ## EfficientNet
 
+**反思**：为什么有些模型FLOPs很低，以EfficientNet为代表，其推理速度却很慢。
+
+https://zhuanlan.zhihu.com/p/122943688
+
+FLOPs与模型推理速度
+
+----
+
+参考：
+
 https://mp.weixin.qq.com/s/on1YdDexq5ICZL70mvikyw
 
 谷歌大脑提出EfficientNet平衡模型扩展三个维度，取得精度-效率的最大化！

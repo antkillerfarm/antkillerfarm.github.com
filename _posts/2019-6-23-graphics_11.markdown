@@ -81,6 +81,10 @@ https://zhuanlan.zhihu.com/p/41874735
 
 龙生龙，凤生凤，SLIC生超像素
 
+https://mp.weixin.qq.com/s/nPbIkKbOdR6tk_4jfXicuw
+
+1/20参数，运算速度提升四倍：北大、字节跳动等利用增量学习提出超像素分割模型LNSNet
+
 # Lanczos kernel
 
 >Cornelius (Cornel) Lanczos，1893～1974，匈牙利数学家和物理学家。曾当过爱因斯坦的助手。
@@ -240,6 +244,10 @@ https://zhuanlan.zhihu.com/p/163305630
 https://www.zhihu.com/column/c_1165601616035618816
 
 一个图形学方面的专栏
+
+https://mp.weixin.qq.com/s/MhGrLydVsbvkhZ5U820zTQ
+
+哈佛小哥这个github仓库从零开始教你计算机图形学
 
 ## 术语
 

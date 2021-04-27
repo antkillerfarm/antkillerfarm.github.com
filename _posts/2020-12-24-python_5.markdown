@@ -99,6 +99,16 @@ https://mp.weixin.qq.com/s/dlMqyVy92S_dFaBAuV1RhA
 
 Python和C/C++拓展程序的性能优化
 
+## 音乐
+
+https://web.mit.edu/music21/
+
+music21官网
+
+https://mp.weixin.qq.com/s/ONZD5RGI18rLTYhzIQQbVA
+
+用R包gm生成音乐
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA
@@ -446,11 +456,3 @@ Python+Dash快速web应用开发：回调交互篇（上）
 https://mp.weixin.qq.com/s/_o5upbRqjADpCkZ0q0ZwkA
 
 Python+Dash快速web应用开发：回调交互篇（中）
-
-https://mp.weixin.qq.com/s/81HauaX6fWstbUfgp3pJvw
-
-Python+Dash快速web应用开发：回调交互篇（下）
-
-https://mp.weixin.qq.com/s/RlJ5Y6xJ-8NfDW7oSZlYbw
-
-深入Python解释器源码，我终于搞明白了字符串驻留的原理！

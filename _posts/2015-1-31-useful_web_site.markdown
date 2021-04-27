@@ -288,10 +288,6 @@ https://mp.weixin.qq.com/s/wKpNJY6PD0ArxnKtl71xwQ
 
 程序员实用的工具网站整理
 
-https://mp.weixin.qq.com/s/9YXsJo_u2zVNqvABoGqfqg
-
-五种IO模型分析
-
 https://mp.weixin.qq.com/s/OJJLY5DiCa0e3UVjPtLXmw
 
 PPT中帅气的文字云，该怎么用？
@@ -389,6 +385,18 @@ https://mp.weixin.qq.com/s/LqkR4fhdxdMVGUn21mb76Q
 如果把中国历史浓缩成一天，会是什么样子？
 
 ## 科研人生
+
+送东阳马生序
+
+https://mp.weixin.qq.com/s/QMUWtI9jICOkLMlz2E1sUg
+
+看哭了！中科院黄国平博士论文火了
+
+https://mp.weixin.qq.com/s/hr4bPG01dXuyPhUn3tRHKA
+
+寒门博士与千万外卖小哥，谁更代表年轻人现状？
+
+----
 
 https://mp.weixin.qq.com/s/6gX1UFSykuzw358ARUzifw
 

@@ -275,6 +275,10 @@ https://mp.weixin.qq.com/s/zIhCDj_0OSOmrevuqxJCBw
 
 一口气说出5种互联网高并发IO模型
 
+https://mp.weixin.qq.com/s/9YXsJo_u2zVNqvABoGqfqg
+
+五种IO模型分析
+
 # 启动脚本
 
 Linux启动时，运行一个叫做init的程序，然后由它来启动后面的任务，包括多用户环境，网络等。
