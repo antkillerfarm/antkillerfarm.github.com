@@ -307,14 +307,6 @@ https://mp.weixin.qq.com/s/a7GEOdPRWYCBh6XQslxX8w
 
 CNN骨干网络新选择HS-ResNet
 
-https://mp.weixin.qq.com/s/9zaTjwwGPHHzSv1ZmHf8_g
-
-不妨试试MoCo，来替换ImageNet上pretrain模型！
-
-https://mp.weixin.qq.com/s/GC6PGlweneYtYo7_SUr0Zw
-
-MoCo V3：我并不是你想的那样！
-
 https://mp.weixin.qq.com/s/S5rNebrB8zpILZ1j_d-29Q
 
 深度视觉模型设计，还有哪些新思路？

@@ -9,6 +9,16 @@ category: Nature
 
 # 黑洞成像（续）
 
+## EHT
+
+![](/images/img2/Event_horizon_telescope_logo_2019.png)
+
+如它的logo所示，Event Horizon Telescope是一个多地联合的天文观测组织。和它类似的组织还有（The Global mm-VLBI Array, GMVA）。两个阵营的差别在于GMVA观测波长为3毫米，而EHT在1.3毫米。
+
+![](/images/img2/The_Event_Horizon_Telescope_and_Global_mm-VLBI_Array_on_the_Earth.jpg)
+
+EHT（蓝绿线）与GMVA（黄线）之望远镜阵列分布。其中ALMA和IRAM同时属于两个阵营。
+
 ## ALMA
 
 Atacama Large Millimeter/submillimeter Array是EHT计划的主力天文台。由欧洲南方天文台(European Southern Observatory, ESO)和美国国家射电天文台（National Radio Astronomy Observatory, NRAO）共同负责。
@@ -282,19 +292,3 @@ https://mp.weixin.qq.com/s/sPTRKfuhEc0xx7GacomxkA
 https://www.zhihu.com/question/329267129
 
 中国空间站和国际空间站的区别在哪？
-
-https://www.zhihu.com/question/395220918
-
-为什么中国有四个航天发射场？各有什么优势？
-
-https://mp.weixin.qq.com/s/uVayftwQ-mJU04XGn67QoQ
-
-长征五号复飞成功：史上最重最大，2020月岩采样火星探测都要靠它
-
-https://mp.weixin.qq.com/s/iMr811ClFpmW24khhxkFjg
-
-大神！00后大学生成功发射自制火箭，网友惊了...
-
-https://mp.weixin.qq.com/s/QjB7zDCXC82x5O25InGZtA
-
-嫦娥五号开启我国首次地外天体采样返回之旅

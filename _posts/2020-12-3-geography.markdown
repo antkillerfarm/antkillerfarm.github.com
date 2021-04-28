@@ -319,6 +319,14 @@ https://mp.weixin.qq.com/s/g3_njGlo3dC696wo0wplVQ
 
 臭氧空洞再度加剧，是谁在偷偷破坏臭氧层？
 
+https://mp.weixin.qq.com/s/n67jhRbOimVXqN3YKhDzuQ
+
+假如地球南北翻转会怎么样？
+
+https://mp.weixin.qq.com/s/Mdxrwy4NMW0A9sq7FJSU3w
+
+南北也曾是北南
+
 # 物理++
 
 https://mp.weixin.qq.com/s/Y6zjFQBche_tyOWF9VMtmg

@@ -279,6 +279,20 @@ https://mp.weixin.qq.com/s/sH-G4g0EyQLu2l91Xvdefw
 
 Neighbor2Neighbor：无需干净图像的自监督图像降噪
 
+## MoCo
+
+https://mp.weixin.qq.com/s/9zaTjwwGPHHzSv1ZmHf8_g
+
+不妨试试MoCo，来替换ImageNet上pretrain模型！
+
+https://mp.weixin.qq.com/s/GC6PGlweneYtYo7_SUr0Zw
+
+MoCo V3：我并不是你想的那样！
+
+https://mp.weixin.qq.com/s/sAYh3l2eab2r2KpbdxN30A
+
+MoCo三部曲
+
 # AutoDL+
 
 https://mp.weixin.qq.com/s/MkXBtGq4xt5YOh1-uhMBbg

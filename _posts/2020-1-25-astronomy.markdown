@@ -217,6 +217,14 @@ https://mp.weixin.qq.com/s/JINYS8oBpfocQawnUyqcyg
 
 看，宇宙线在银河系内留下的串串足迹
 
+https://mp.weixin.qq.com/s/iSE8FaL9WhJNWgizBVZXXA
+
+这项实验，或可解开超高能宇宙线起源的“世纪之谜”
+
+https://mp.weixin.qq.com/s/Pnn0J2gxOR1y9xpn2WtpZg
+
+宇宙膨胀，我们会跟着一起膨胀吗？
+
 ## 流浪地球
 
 https://mp.weixin.qq.com/s/O8tAEBMmZ29N1fr7BGW_UQ
@@ -336,13 +344,3 @@ https://mp.weixin.qq.com/s/GLjXHV7aYQ77OoDuZfMXmQ
 https://mp.weixin.qq.com/s/3KqyXlt69-wkkacQpkZ6uw
 
 又有新消息！人类获取了M87黑洞的“指纹”
-
-## EHT
-
-![](/images/img2/Event_horizon_telescope_logo_2019.png)
-
-如它的logo所示，Event Horizon Telescope是一个多地联合的天文观测组织。和它类似的组织还有（The Global mm-VLBI Array, GMVA）。两个阵营的差别在于GMVA观测波长为3毫米，而EHT在1.3毫米。
-
-![](/images/img2/The_Event_Horizon_Telescope_and_Global_mm-VLBI_Array_on_the_Earth.jpg)
-
-EHT（蓝绿线）与GMVA（黄线）之望远镜阵列分布。其中ALMA和IRAM同时属于两个阵营。

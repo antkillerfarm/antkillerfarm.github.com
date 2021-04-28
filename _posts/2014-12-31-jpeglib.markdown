@@ -241,7 +241,7 @@ https://mp.weixin.qq.com/s/9kdeSj0RwUvlIi4oBEF_Wg
 
 WireShark是一个网络协议包分析工具，最初名叫Ethereal。它的官网是：
 
-www.wireshark.org
+https://www.wireshark.org/
 
 ## 在ubuntu上的安装
 
@@ -286,6 +286,12 @@ WireShark以丰富的过滤器著称，现将我使用到的过滤器规则摘�
 `tcp.stream eq id`
 
 将一次TCP交互的包过滤出来，id表示是第几次交互。
+
+## 参考
+
+https://mp.weixin.qq.com/s/y89cPgaIBWeudJnsFRR-Ow
+
+我用“大白鲨”让你看见TCP
 
 # Pytorch++
 

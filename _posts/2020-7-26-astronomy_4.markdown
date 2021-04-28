@@ -9,6 +9,14 @@ category: Nature
 
 # 天文杂谈（续）
 
+1929年，余青松接任天文研究所第二任所长后，秉承高鲁的宏愿，费时五载，于公元1935年，建立紫金山天文台。1938年因抗日战争，他主持该台的内迁工作，并在昆明东郊建成了昆明凤凰山天文台。
+
+https://mp.weixin.qq.com/s/vMe5RmD8uBW3AeGDYwbI5A
+
+紫金山天文台的创立（高鲁、余青松）
+
+----
+
 1990年发射的哈勃太空望远镜，由于一片镜片边缘磨薄了2.2mm，相机镜头misallignment, 最终导致发射后拍摄图像模糊。
 
 NASA的科学家开始没有意识到是望远镜的镜头质量问题，还在讨论是不是外太空就是模模糊糊的形态……
@@ -206,14 +214,6 @@ https://mp.weixin.qq.com/s/Sija998_IKP2G0GQEYynCw
 https://mp.weixin.qq.com/s/rvH-gvgbjLITyP8QOuzgKA
 
 我们在新疆发现了一个建天文台的好地方
-
-https://mp.weixin.qq.com/s/iSE8FaL9WhJNWgizBVZXXA
-
-这项实验，或可解开超高能宇宙线起源的“世纪之谜”
-
-https://mp.weixin.qq.com/s/Pnn0J2gxOR1y9xpn2WtpZg
-
-宇宙膨胀，我们会跟着一起膨胀吗？
 
 # 模型压缩与加速进阶+
 
