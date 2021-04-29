@@ -185,6 +185,10 @@ https://mp.weixin.qq.com/s/uZofW1nPuu5MNhe9i-CRhA
 
 火星有了第一个机场！人类首架火星无人机试飞成功，场地命名“莱特兄弟机场”
 
+https://mp.weixin.qq.com/s/2nJP3oxgb_AK1P09MCWkTQ
+
+移居火星前，人类需要关注哪些健康风险？
+
 # 阿波罗50年
 
 https://mp.weixin.qq.com/s/79e6p2TYpttO-NR1of21jw
