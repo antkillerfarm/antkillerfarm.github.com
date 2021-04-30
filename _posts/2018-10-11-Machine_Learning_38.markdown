@@ -306,3 +306,7 @@ https://mp.weixin.qq.com/s/6TpT1FH87esQWsUig0oS_Q
 https://mp.weixin.qq.com/s/y6LL52Al3w5ErnpPX0A35Q
 
 开源新书《时间序列分析，数据/方法/应用》，6章110页pdf带你了解最新进展
+
+https://mp.weixin.qq.com/s/S3o4T8-CXVnS1laXE_g70w
+
+Python中的时间序列分解
