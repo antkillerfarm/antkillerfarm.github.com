@@ -429,3 +429,7 @@ Java泛型T，E，K，V，?，傻傻分不清？
 https://mp.weixin.qq.com/s/wij1mbRGzgahaCW7Vu5rgQ
 
 Java反射到底慢在哪？
+
+https://mp.weixin.qq.com/s/DiphH8bvR8TtLyQmnTkpuw
+
+几种Java常用序列化框架的选型与对比

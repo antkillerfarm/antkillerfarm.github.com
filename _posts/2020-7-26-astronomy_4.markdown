@@ -27,6 +27,22 @@ https://mp.weixin.qq.com/s/Wcd_bv_bt-xv42UD40dDww
 
 深度传感进化史
 
+https://mp.weixin.qq.com/s/8vRFfFLdLWSPpTzHjUKegQ
+
+哈勃太空望远镜30岁生日快乐！我们看到的宇宙因你而不同
+
+https://www.zhihu.com/question/452589619
+
+中国空间站工程巡天望远镜和哈勃相比有什么优势和劣势？
+
+https://www.zhihu.com/question/363427886
+
+很多人说哈勃望远镜是锁眼卫星的民用版，那么锁眼调转过去观测宇宙能够达到哈勃的效果吗？
+
+https://zhuanlan.zhihu.com/p/36125534
+
+哈勃28周岁，但大家知道锁眼么？
+
 ----
 
 https://mp.weixin.qq.com/s/aY4gFbK_aKWcgwvr0Rk5gQ

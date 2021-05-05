@@ -293,6 +293,10 @@ https://mp.weixin.qq.com/s/t_J0MODtWzfnJse0aNGyWg
 
 Swin Transformer对CNN的降维打击
 
+https://mp.weixin.qq.com/s/8x1pgRLWaMkFSjT7zjhTgQ
+
+图解swin transformer
+
 https://mp.weixin.qq.com/s/J7Fw-T1tYSqi9_vx8VSqYA
 
 TimeSformer：视频理解所需的只是时空注意力吗？

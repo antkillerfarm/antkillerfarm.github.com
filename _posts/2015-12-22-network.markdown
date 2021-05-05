@@ -205,6 +205,8 @@ Network Time Protocol，是用来让计算机之间实现时间同步的协议�
 
 http://www.pool.ntp.org/en/
 
+`ntpdate cn.pool.ntp.org`
+
 NTP的Client有很多，这里使用ntpclient软件。它的官网：
 
 http://doolittle.icarus.com/ntpclient/

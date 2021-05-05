@@ -49,10 +49,6 @@ https://www.zhihu.com/question/457042825
 
 中国首个空间站天和核心舱4月29日发射成功，对中国航天有哪些重要意义？
 
-https://www.zhihu.com/question/452589619
-
-中国空间站工程巡天望远镜和哈勃相比有什么优势和劣势？
-
 # 火星探测
 
 在太空动力学，霍曼转移轨道（或译为郝曼转移轨道，Hohmann transfer orbit）是一种变换太空船轨道的方法，途中只需两次引擎推进，相对地节省燃料。此种轨道操纵名称来自Walter Hohmann，他于1925年出版了相关著作。
@@ -244,10 +240,6 @@ https://mp.weixin.qq.com/s/-KHsG9lZknY952U_LTV7qg
 https://mp.weixin.qq.com/s/EPMdW1qxQVl0MVUSjhWxyQ
 
 NASA传奇数学家去世，她曾笔算了登月轨道
-
-https://mp.weixin.qq.com/s/8vRFfFLdLWSPpTzHjUKegQ
-
-哈勃太空望远镜30岁生日快乐！我们看到的宇宙因你而不同
 
 由于飞行前的制造和测试错误，氧气罐中的电线暴露了出来。在那个致命的夜晚，氧气罐中暴露的电线产生的火花引发了火灾，引爆了氧气罐，将服务舱外的隔热层炸飞。。。
 

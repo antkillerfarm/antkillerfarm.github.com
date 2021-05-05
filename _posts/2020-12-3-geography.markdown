@@ -327,6 +327,10 @@ https://mp.weixin.qq.com/s/Mdxrwy4NMW0A9sq7FJSU3w
 
 南北也曾是北南
 
+https://mp.weixin.qq.com/s/KR50fOET-9i7yFM6pY18_w
+
+假如有一天，地球上发生了这件事……
+
 # 物理++
 
 https://mp.weixin.qq.com/s/Y6zjFQBche_tyOWF9VMtmg
@@ -364,3 +368,7 @@ https://mp.weixin.qq.com/s/KsGGMCKsQlHYxXONOTthGQ
 https://mp.weixin.qq.com/s/fbJQs87R9c8_j_B5-zTsVg
 
 古代没有冰箱，夏天冰块是怎么来的？
+
+https://mp.weixin.qq.com/s/Xky_uit9pSsU7pX6DaapsQ
+
+美国蜂蜜中发现放射性核物质！核弹试验影响延续至今

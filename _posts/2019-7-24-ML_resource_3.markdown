@@ -338,3 +338,7 @@ https://mp.weixin.qq.com/s/ywTkMMP6ysBfByIXW3_xeQ
 https://mp.weixin.qq.com/s/lqGCGj1EuwRvg6S9Dt3yEg
 
 PDF之父、Adobe联合创始人离世，乔布斯收购未果给了他第一桶金
+
+https://mp.weixin.qq.com/s/x-N7n7RkrvcCXT4C7UxPSQ
+
+Linux之父：财务自由以后，我失眠了！

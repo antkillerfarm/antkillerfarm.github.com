@@ -259,6 +259,10 @@ https://zhuanlan.zhihu.com/p/33477002
 
 读写yaml文件
 
+https://mp.weixin.qq.com/s/AWMNPnec2hQVyAQBONuBRQ
+
+一个yml文件居然能玩出这么多花样！
+
 ## Protocol Buffers
 
 Protocol Buffers是Google公司开发的一种数据描述语言。它的官网为：
