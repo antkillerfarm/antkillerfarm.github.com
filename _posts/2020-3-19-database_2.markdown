@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数据库（二）, Mysql
+title:  数据库（二）
 category: technology 
 ---
 
@@ -10,6 +10,26 @@ category: technology
 # 数据库
 
 ## Cache（续）
+
+https://mp.weixin.qq.com/s/QgFbw5thvip2txUJZNQqCA
+
+缓存一致性问题怎么解决？
+
+https://mp.weixin.qq.com/s/XOiHlurpwCa-MmQp1yAjSQ
+
+高并发场景下，到底先更新缓存还是先更新数据库？
+
+https://mp.weixin.qq.com/s/o1wbG_9LDDqM2kLNAfHUIg
+
+没人告诉过你更复杂的缓存穿透怎么解决
+
+https://mp.weixin.qq.com/s/0J9X-fFp3y0zaxR78tBfQQ
+
+服务降级该怎么做？
+
+https://mp.weixin.qq.com/s/_RlOAvjfTINJrhwHUogs7Q
+
+分布式缓存与DB秒级一致设计实践
 
 https://mp.weixin.qq.com/s/mjySTz73Ltcfsw1e6iY4YA
 
@@ -352,27 +372,3 @@ inner join(等值连接)只返回两个表中联结字段相等的行。
 http://www.cnblogs.com/pcjim/articles/799302.html
 
 sql之left join、right join、inner join的区别
-
-## 查询语句的执行顺序
-
-![](/images/img3/sql.png)
-
-https://mp.weixin.qq.com/s/CMcgybfgya7ftTUeUFigKg
-
-SQL查询语句总是先执行SELECT？你们都错了
-
-## MyISAM & Innodb
-
-Mysql底层数据引擎以插件形式设计，最常见的是Innodb引擎和Myisam引擎，用户可以根据个人需求选择不同的引擎作为Mysql数据表的底层引擎。
-
-MyISAM虽然数据查找性能极佳，但是不支持事务处理。Innodb 最大的特色就是支持了ACID兼容的事务功能，而且他支持行级锁。
-
-## 参考
-
-https://mp.weixin.qq.com/s/9tIy1IqjaB0NdKaO76dgCw
-
-47张图带你MySQL进阶！！！
-
-https://mp.weixin.qq.com/s/ok6VD1b5fhG_mY9O3d_VGA
-
-记住，永远不要在MySQL中使用“utf8”

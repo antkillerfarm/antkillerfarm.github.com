@@ -23,6 +23,8 @@ https://view.inews.qq.com/a/20171125A0E3WT00
 
 三十五年，楚伐随。随曰：“我无罪。”楚曰：“我蛮夷也。”
 
+原子弹的最大威力是在发射架上。而不是飞出去之后。毛泽东是一个极难对付的人物,恐吓、威胁他没有用。--by Dwight David Eisenhower
+
 ----
 
 ![](/images/img3/C919.jpg)

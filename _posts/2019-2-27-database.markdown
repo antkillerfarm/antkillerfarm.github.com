@@ -189,6 +189,10 @@ https://mp.weixin.qq.com/s/VJT4CVor8vE6pl5lzRHsLg
 
 SQL窗口函数是什么？
 
+https://juejin.cn/post/6844903998974099470
+
+8种经常被忽视的SQL错误用法，你有没有踩过坑？
+
 ## Apache Kylin
 
 Apache Kylin是一个开源的分布式分析引擎，最初由eBay开发贡献至开源社区。它提供Hadoop之上的SQL查询接口及多维分析（OLAP）能力以支持大规模数据，能够处理TB乃至PB级别的分析任务，能够在亚秒级查询巨大的Hive表，并支持高并发。
@@ -362,23 +366,3 @@ https://mp.weixin.qq.com/s/cUBSOGFfkWNu91r9agXszQ
 https://mp.weixin.qq.com/s/NdnE4uiT_b7omDx_uBGAtg
 
 你可以说一下缓存击穿、穿透、雪崩的区别和解决方法吗？
-
-https://mp.weixin.qq.com/s/QgFbw5thvip2txUJZNQqCA
-
-缓存一致性问题怎么解决？
-
-https://mp.weixin.qq.com/s/XOiHlurpwCa-MmQp1yAjSQ
-
-高并发场景下，到底先更新缓存还是先更新数据库？
-
-https://mp.weixin.qq.com/s/o1wbG_9LDDqM2kLNAfHUIg
-
-没人告诉过你更复杂的缓存穿透怎么解决
-
-https://mp.weixin.qq.com/s/0J9X-fFp3y0zaxR78tBfQQ
-
-服务降级该怎么做？
-
-https://mp.weixin.qq.com/s/_RlOAvjfTINJrhwHUogs7Q
-
-分布式缓存与DB秒级一致设计实践

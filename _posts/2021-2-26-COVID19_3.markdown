@@ -203,7 +203,7 @@ https://mp.weixin.qq.com/s/7YscNLoSsuYhf3XQ5qz36w
 
 ![](/images/img3/covid_2.jpg)
 
-大概在年初，新冠发生过一次重要的变异，就是D614G，在最早武汉上传的病毒序列中，这个位置的氨基酸是编码天冬氨酸(Asparagine,缩写为D)，也就是D614，而后来该位置发生了变异，氨基酸变成了甘氨酸（Glycine，缩写为G）。而变异后的结果就是这个突变株获得了更大的生存优势，更容易感染。
+大概在年初，新冠发生过一次重要的变异，就是D614G，在最早武汉上传的病毒序列中，这个位置的氨基酸编码是天冬氨酸(Asparagine,缩写为D)，也就是D614，而后来该位置发生了变异，氨基酸变成了甘氨酸（Glycine，缩写为G）。而变异后的结果就是这个突变株获得了更大的生存优势，更容易感染。
 
 ![](/images/img4/COVID19.png)
 
@@ -238,6 +238,10 @@ https://www.zhihu.com/question/442576779
 https://www.sohu.com/a/463192238_162758
 
 专家释疑：印度变异新冠病毒为何让人口鼻流血？
+
+https://mp.weixin.qq.com/s/QCANG1e86-JSsnKbyMXYRw
+
+“反季节爆发”才是印度当前疫情最可怕的特点
 
 ----
 

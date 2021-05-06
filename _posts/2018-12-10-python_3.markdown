@@ -461,3 +461,7 @@ glob的历史可以追溯到早期的UNIX系统。用它可以查找符合特定
 https://blog.csdn.net/csapr1987/article/details/7469769
 
 python glob模块
+
+https://mp.weixin.qq.com/s/suUXM4Tdj6ekKQWC0g04Yg
+
+glob-被忽略的python超强文件批量处理模块

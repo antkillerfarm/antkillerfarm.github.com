@@ -251,6 +251,10 @@ https://zhuanlan.zhihu.com/p/139552817
 
 一篇关于深度学习编译器架构的综述论文
 
+https://www.zhihu.com/question/396105855
+
+针对神经网络的编译器和传统编译器的区别和联系是什么？
+
 https://mp.weixin.qq.com/s/8bXwxYyNjdThlGQQ70cgWQ
 
 TVM：端到端自动深度学习编译器，244页ppt

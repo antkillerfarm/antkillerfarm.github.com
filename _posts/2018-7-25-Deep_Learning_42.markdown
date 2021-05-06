@@ -311,6 +311,10 @@ https://mp.weixin.qq.com/s/yIMaptbjV71cdC-GauGtDg
 
 先拍照后对焦，浅析基于深度估计的景深编辑与背景虚化
 
+https://mp.weixin.qq.com/s/RA8rYI5z_18ybKQaVYWOxw
+
+浅析多重曝光与自动图像融合技术
+
 # Spiking Neural Network
 
 除了基于BP算法的NN之外，Spiking Neural Network也是一大类NN。Spiking NN和人脑结构更相似，功耗也更小，但是相关训练和数据量化的算法尚不成熟，属于潜力股。

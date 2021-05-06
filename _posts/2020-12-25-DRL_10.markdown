@@ -303,6 +303,10 @@ https://mp.weixin.qq.com/s/IQYUNzVgSOFUHB9c1SM0Bw
 
 10张图22段代码，万字长文带你搞懂虚拟内存模型和malloc内部原理
 
+https://zhuanlan.zhihu.com/p/370092684
+
+虚拟内存精粹
+
 http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html
 
 Systemd入门教程：命令篇
