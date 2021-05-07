@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 天文杂谈（2）
+title: 天文杂谈（二）
 category: Nature 
 ---
 

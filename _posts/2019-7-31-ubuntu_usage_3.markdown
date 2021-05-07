@@ -148,6 +148,30 @@ http://distrowatch.com/
 
 2.桌面随意贴。典型的有Indicator Stickynotes和Knotes。后者有内容检索的功能，而前者没有。
 
+# 电子书
+
+电子书的格式很多，除了TXT/PDF/WORD这样的大路货之外，我接触的比较多的主要是CHM和PDG。前者主要在Windows上用，而后者主要是破解版看论文。当然这都是十几年前的事情了（2005年左右）。
+
+最近，下载小说，发现有EPUB格式比较流行。本来以为是类似PDG这样的专有格式，后来转念一想，这类下载站本来就是盗版生意，哪有版权保护的说法。然后才发现EPUB大约是现在最流行的电子书通用格式了。
+
+其他相对主流的电子书还有：亚马逊Kandle专用的AZW3和MOBI等。
+
+电子书阅读制作首推Calibre：
+
+`sudo apt-get install calibre`
+
+Calibre支持的格式：
+
+Input Formats: AZW, AZW3, AZW4, CBZ, CBR, CB7, CBC, CHM, DJVU, DOCX, EPUB, FB2, FBZ, HTML, HTMLZ, LIT, LRF, MOBI, ODT, PDF, PRC, PDB, PML, RB, RTF, SNB, TCR, TXT, TXTZ
+
+Output Formats: AZW3, EPUB, DOCX, FB2, HTMLZ, OEB, LIT, LRF, MOBI, PDB, PMLZ, RB, PDF, RTF, SNB, TCR, TXT, TXTZ, ZIP
+
+参考：
+
+https://zhuanlan.zhihu.com/p/53298578
+
+7个最佳Linux电子书阅读器
+
 # tftp
 
 tftp可提供不复杂、开销不大的文件传输服务。可以理解为是简化版的FTP。
@@ -329,65 +353,3 @@ https://mp.weixin.qq.com/s/VlQnDAD4dGQpmHNil7uPuQ
 https://mp.weixin.qq.com/s/HchAIWJmqPNTqEEwb3TbAg
 
 Linux下xargs命令
-
-# Linux参考资源+
-
-https://mp.weixin.qq.com/s/-U7L8aXoaPXSwZshSpjQ2g
-
-进程间通信
-
-https://mp.weixin.qq.com/s/oKtu3AA9D3y--xMDQ8EARw
-
-携程一次Dubbo连接超时问题的排查
-
-https://mp.weixin.qq.com/s/4o_cSzWeJdLJMObJBhaZlw
-
-计算机系统中的内存
-
-https://www.jianshu.com/p/fad3339e3448
-
-浅析Linux中的零拷贝技术
-
-https://mp.weixin.qq.com/s/Q9BOA88Q6OBaDch1AiS9QA
-
-原来8张图，就可以搞懂零拷贝了
-
-https://mp.weixin.qq.com/s/6R8UcLLjm9gdWud-eNHztw
-
-中断及其初始化
-
-https://mp.weixin.qq.com/s/qwouMWc4CFtqG_jra4xbIg
-
-IDT及中断处理的实现
-
-https://mp.weixin.qq.com/s/pRsXWAv7wgYcN_jlzcA2YA
-
-内存都没了，还能运行程序？
-
-https://mp.weixin.qq.com/s/snQ3T86usv4rXz0MMQvFfQ
-
-如何回答性能优化的问题，才能打动阿里面试官？
-
-https://www.cnblogs.com/zhouyu629/p/3734494.html
-
-一次心惊肉跳的服务器误删文件的恢复过程
-
-https://mp.weixin.qq.com/s/5iyWeSeDzuA2cY7YBMhk7w
-
-MMU那些事儿
-
-https://mp.weixin.qq.com/s/0OeeYUgBBVVMtxscvzgJHw
-
-i++是线程安全的吗？
-
-https://mp.weixin.qq.com/s/U0qr1oZYXBBmZnC5vsKYLQ
-
-浅谈linux IO
-
-https://mp.weixin.qq.com/s/3kgwoyYI90XHm1QPqFJAiQ
-
-内存分页不就够了？为什么还要分段？
-
-https://mp.weixin.qq.com/s/9x1JOl4m_mj0WpsVgHu4rg
-
-Linux文件系统与持久性内存介绍

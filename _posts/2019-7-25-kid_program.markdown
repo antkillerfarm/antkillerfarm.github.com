@@ -133,6 +133,8 @@ https://www.runoob.com/go/go-tutorial.html
 
 `go run xxx.go`
 
+第一次运行的时候，由于大量库需要编译，耗时会比较长。
+
 - Web 框架：Gin、Beego、Echo等。
 - 微服务框架：go-kit、go-micro等。
 - 数据库连接库：go-sql-driver/mysql、go-redis/redis、mongo-go-driver、go-elasticsearch，以及gorm、xorm等。
@@ -234,11 +236,27 @@ https://github.com/mattn/go-gtk
 
 需要注意的是，第一个项目由于没有使用GObject Introspection，所以只支持了主要功能。项目作者也介绍说，当初发起项目的时候，并不知道GObject Introspection这样的神器，也许以后的某个时间会迁移过去。至于GTK2就不用说了，GI是只有GTK3才有的福利。
 
+安装：
+
+`go get github.com/gotk3/gotk3/gtk`
+
 参考：
 
 https://www.jianshu.com/p/be197980d4bb
 
 2019，Go GUI项目爆发的一年？
+
+## Fyne
+
+官网：
+
+https://fyne.io/
+
+参考：
+
+https://www.jianshu.com/p/08411943a74d
+
+Fyne折腾手记：开发一个简易桌面应用
 
 # Julia
 

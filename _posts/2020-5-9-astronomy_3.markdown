@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 火星探测, 阿波罗50年, 天文杂谈（1）
+title: 火星探测, 阿波罗50年, 天文杂谈（一）
 category: Nature 
 ---
 

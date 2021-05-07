@@ -349,7 +349,7 @@ https://zhuanlan.zhihu.com/p/153254485
 
 为什么短路的USB设备不会烧掉你的主板？著名的USB Killer又是怎么干掉主板的？
 
-# Linux参考资源++
+# Linux参考资源+
 
 https://mp.weixin.qq.com/s/tguC-WOleKRWLfTmGdJlQg
 

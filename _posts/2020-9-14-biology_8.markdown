@@ -1,57 +1,11 @@
 ---
 layout: post
-title: 仿生学
+title: 仿生学, 医学
 category: Nature 
 ---
 
 * toc
 {:toc}
-
-# 新冠疫苗+
-
-https://mp.weixin.qq.com/s/_XODQnloTRlmlCDWez5_zg
-
-全球首支获批新冠疫苗竟然临床试验都没做完！战斗民族太疯狂，Nature和Science齐质疑
-
-https://mp.weixin.qq.com/s/FoBmj4jCAaqfclS3F8WraQ
-
-全球群体免疫，需要多少新冠疫苗？
-
-https://mp.weixin.qq.com/s/7_L7pvZ2KyQxKRteWKq4QQ
-
-聊聊中美两国的新冠疫苗-安全性和有效性
-
-https://www.zhihu.com/question/441919684
-
-在英国试验有效率达到89%的Novavax新冠疫苗，与其他公司的疫苗相比有何不同？
-
-https://mp.weixin.qq.com/s/8QPLyP9EhX8QuX6ErN5Yhw
-
-疫苗科普
-
-https://mp.weixin.qq.com/s/sKwYTW-HZzGY-Qs9_s_5nw
-
-快如闪电！新冠疫苗的研发速度是如何实现的？
-
-https://mp.weixin.qq.com/s/COjWJWU5d8hQ4afFN5mZ3g
-
-一亿剂疫苗打出去了，何时能见效？
-
-https://mp.weixin.qq.com/s/U1eteX7FwhyW-4qhVX4_bQ
-
-多国暂停牛津新冠疫苗接种，接下来呢？
-
-https://mp.weixin.qq.com/s/5E9h6snRo_2OuPJqInYvjw
-
-阿斯利康疫苗接种后出现脑血栓，意味着什么？
-
-https://mp.weixin.qq.com/s/qzUObhyykBn88EgV0PK9Dg
-
-姗姗来迟，科兴新冠疫苗究竟怎么样？
-
-https://mp.weixin.qq.com/s/YEt7XH9mNPmx3QURebbBmg
-
-什么是最好的新冠疫苗？
 
 # 仿生学
 
@@ -70,3 +24,75 @@ Nature：硬！这只“压不死”的虫子，为未来航空航天材料设�
 https://mp.weixin.qq.com/s/ZXPjCat67D5tI4T9hEubjA
 
 蚂蚁屁股涂胶水，开着飞机吹泡泡？为了给花传粉，科学家能有多拼
+
+# 医学
+
+1981年，于维汉提出了“营养生物地球化学病因说”。 他指出，克山病的发病与单一膳食条件有关，是一种与营养因子相关的地方性心肌病，最可能的原因是硒元素的缺乏。
+
+>于维汉，1922～2010，地方病学专家。国立满洲医学院（1945）。哈尔滨医科大学校长。中国工程院院士。
+
+https://www.zhihu.com/answer/1609136055
+
+克山病
+
+----
+
+https://mp.weixin.qq.com/s/MFn9dOXeo8v5yeQSRogOEg
+
+那些年，医生离不开尿罐子
+
+https://mp.weixin.qq.com/s/H9xRY-sXmVewmmZEWTlmOQ
+
+水银、放血、泻药与死在产床的妇人
+
+https://mp.weixin.qq.com/s/KmObf7ArgsT1DTgFL9z3Bg
+
+人类牙痛史：铁钳、烙肉、活体取牙，你pick哪个？
+
+https://mp.weixin.qq.com/s/iHKolMWYNZV44erruhQw7A
+
+为了减肥和健康，我们该学原始人吃饭？
+
+https://mp.weixin.qq.com/s/gLr9dzRpLyXc1FZEv6ps2g
+
+西安2岁的孩子莫名其妙得病！纯天然的东西竟然有毒，无知才是最可怕的！（布鲁氏菌）
+
+https://mp.weixin.qq.com/s/PDtSULdevH9jV3aT7QlpZA
+
+移植外科医生最快乐的时刻
+
+https://mp.weixin.qq.com/s/eB9RXXS6CLcbLBgN-90eIw
+
+这个舒适的向上弧度，可能藏有隐患
+
+https://mp.weixin.qq.com/s/nWod26bT905Au41X0EWGUA
+
+受伤的时候疼就算了，为什么伤好了还会留下疤？？
+
+https://mp.weixin.qq.com/s/7eJNT239iH2skaLJ9_xwjQ
+
+从灌肠到打针，注射器是如何发明进化的？
+
+https://mp.weixin.qq.com/s/yNHIzMvXpAva0WWaAVgXog
+
+改变外科手术的野蛮，每个能无痛做手术的人都要感谢他（Horace Wells）
+
+https://view.inews.qq.com/a/20201112A03FH000
+
+总统遇刺与医学进步
+
+https://mp.weixin.qq.com/s/8lOC3Q8sJLkd5I6IyhmiTg
+
+陈志潜：从协和博士到中国和世界公共卫生先驱
+
+https://mp.weixin.qq.com/s/UEAgJ2rTJ99H1pFVXwGzTQ
+
+破解百年癌症之谜
+
+https://mp.weixin.qq.com/s/KUr8kkHov0XgolEo0y6z8g
+
+不同颜色的尿液颜，是怎么形成的？
+
+https://mp.weixin.qq.com/s/WbcHHU_z0hneSUjoF4MCrw
+
+发明古龙香水最早是为了抗击疫情

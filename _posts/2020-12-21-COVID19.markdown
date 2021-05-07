@@ -1,11 +1,17 @@
 ---
 layout: post
 title: 新冠肺炎（一）——历史, SARS, 国内疫情
-category: Nature 
+category: COVID19 
 ---
 
 * toc
 {:toc}
+
+# 序
+
+2021.5
+
+新冠肺炎自2019年12月爆发以来，疫情持续已一年半左右，尚未有终结的迹象。足迹遍布各大洲，即使南极和珠峰也未能幸免。特设专栏以记之。
 
 # 历史
 
@@ -72,6 +78,10 @@ pandemics：世界性流行病
 epidemics：流行病
 
 quarantine源自拉丁语里的“四十”。由来是当年威尼斯人在瘟疫的时候，让外来船只停40天再下船的操作。
+
+----
+
+西班牙大流感的由来并不是因为此流感从西班牙爆发；从战场回家的士兵带来的病毒导致当时西班牙有约8百万人感染了此病，甚至连西班牙国王也感染了此病，而西班牙十分诚实的爆出本国爆发了流感，所以被称为西班牙型流行性感冒。后来在西班牙则称此为法国型流行性感冒。可见美国人和欧洲人栽赃诬陷他国是有优良传统的。
 
 ----
 
@@ -256,27 +266,3 @@ https://mp.weixin.qq.com/s/_muvgfM74FKXLRNWL-LJEw
 https://mp.weixin.qq.com/s/3NgA56CYBhKvaJnJVsoAzg
 
 “主任，你穿纸尿裤是什么感觉？”
-
-https://mp.weixin.qq.com/s/ASAm6HeeZ7h-uqouyiPe1A
-
-改变新冠诊断标准的女医生张笑春：疫情结束了，我的家散了
-
-https://mp.weixin.qq.com/s/qDkcDsQrkrUbZQw5hJ9YEA
-
-仔细看过后封存，让这段全民痛楚恰当地结束
-
-https://mp.weixin.qq.com/s/ZlAmfXgGSDkyp2NHIX0IsQ
-
-接到雷神山医院ICU的任务时，这个“光杆司令”急得跳脚
-
-https://mp.weixin.qq.com/s/lijXAdj-VkxNaNkDRb_SdA
-
-一年前的今天：武汉张继先医生看到第一例新冠病人
-
-https://mp.weixin.qq.com/s/ctLkWWvIVU-kivl-c8Klpg
-
-黑龙江疫情：年关将至，防疫面临“大考”？
-
-https://mp.weixin.qq.com/s/uvpW_BLSJ8DijHbhXSFPTQ
-
-听完我汇报“新冠患者治疗要花多少钱”，总书记说，没事儿，我们掏得起

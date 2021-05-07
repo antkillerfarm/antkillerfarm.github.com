@@ -9,6 +9,20 @@ category: Nature
 
 # 医药（续）
 
+屠呦呦一开始提取青蒿素时用的是水煮加热的方法，但是失败了。后来发现医书中说的是绞汁直接服用，而不是中药常用的煎煮后服用。于是想到是不是因为加热会破坏青蒿素，所以才尝试有机溶剂萃取。
+
+常山碱甲的效力与奎宁相当，常山碱乙为奎宁的89-122倍，常山碱丙为奎宁的98-152倍，常山总碱约为奎宁的26倍。
+
+为什么最后选的是青蒿？
+
+很简单，常山有催吐作用，哪怕是不经过胃肠吸收也是有这个副作用。
+
+1638年，西班牙王国秘鲁总督钦康的夫人在利马患上疟疾，总督的医生胡安·德·维格听说过印第安人用产自安第斯山北部的金鸡纳树的树皮治疗发热，建议试一下，总督马上派人到800公里外的罗克莎把金鸡纳树的树皮取回来，维格将之研磨成粉末，加在葡萄酒中，让总督夫人服下，总督夫人的疟疾居然奇迹般地消失了。直到几十年后，疟疾才被确立为独立疾病，而诊断依据竟是金鸡纳树皮治疗是否有效。
+
+耶稣会将之制成粉在欧洲出售，获利极其丰厚，这种药被称为“耶稣会粉”。
+
+在药物史上，奎宁和阿斯匹林是植物药的代表，于是一些因为挺中医而哈全球草医者将奎宁列为美洲医学起码是印加医学的伟大发明，标志美洲传统医学也很辉煌。但是这些人没有想到一个问题，**美洲原来根本就没有疟疾，印第安人怎么可能用一种草药去治一个不存在的病？**
+
 http://world.people.com.cn/n/2015/1207/c1002-27898111.html
 
 屠呦呦瑞典演讲：青蒿素是中医药给世界的一份礼物
@@ -128,78 +142,6 @@ https://mp.weixin.qq.com/s/nhlogVR8l1Pf0i3OeXk3dw
 https://mp.weixin.qq.com/s/nxRvwLoIzpdGIZBN61iFAA
 
 只为一个人的药：罕见病“孤儿药”价值何在？
-
-# 医学
-
-1981年，于维汉提出了“营养生物地球化学病因说”。 他指出，克山病的发病与单一膳食条件有关，是一种与营养因子相关的地方性心肌病，最可能的原因是硒元素的缺乏。
-
->于维汉，1922～2010，地方病学专家。国立满洲医学院（1945）。哈尔滨医科大学校长。中国工程院院士。
-
-https://www.zhihu.com/answer/1609136055
-
-克山病
-
-----
-
-https://mp.weixin.qq.com/s/MFn9dOXeo8v5yeQSRogOEg
-
-那些年，医生离不开尿罐子
-
-https://mp.weixin.qq.com/s/H9xRY-sXmVewmmZEWTlmOQ
-
-水银、放血、泻药与死在产床的妇人
-
-https://mp.weixin.qq.com/s/KmObf7ArgsT1DTgFL9z3Bg
-
-人类牙痛史：铁钳、烙肉、活体取牙，你pick哪个？
-
-https://mp.weixin.qq.com/s/iHKolMWYNZV44erruhQw7A
-
-为了减肥和健康，我们该学原始人吃饭？
-
-https://mp.weixin.qq.com/s/gLr9dzRpLyXc1FZEv6ps2g
-
-西安2岁的孩子莫名其妙得病！纯天然的东西竟然有毒，无知才是最可怕的！（布鲁氏菌）
-
-https://mp.weixin.qq.com/s/PDtSULdevH9jV3aT7QlpZA
-
-移植外科医生最快乐的时刻
-
-https://mp.weixin.qq.com/s/eB9RXXS6CLcbLBgN-90eIw
-
-这个舒适的向上弧度，可能藏有隐患
-
-https://mp.weixin.qq.com/s/nWod26bT905Au41X0EWGUA
-
-受伤的时候疼就算了，为什么伤好了还会留下疤？？
-
-https://mp.weixin.qq.com/s/7eJNT239iH2skaLJ9_xwjQ
-
-从灌肠到打针，注射器是如何发明进化的？
-
-https://mp.weixin.qq.com/s/yNHIzMvXpAva0WWaAVgXog
-
-改变外科手术的野蛮，每个能无痛做手术的人都要感谢他（Horace Wells）
-
-https://view.inews.qq.com/a/20201112A03FH000
-
-总统遇刺与医学进步
-
-https://mp.weixin.qq.com/s/8lOC3Q8sJLkd5I6IyhmiTg
-
-陈志潜：从协和博士到中国和世界公共卫生先驱
-
-https://mp.weixin.qq.com/s/UEAgJ2rTJ99H1pFVXwGzTQ
-
-破解百年癌症之谜
-
-https://mp.weixin.qq.com/s/KUr8kkHov0XgolEo0y6z8g
-
-不同颜色的尿液颜，是怎么形成的？
-
-https://mp.weixin.qq.com/s/WbcHHU_z0hneSUjoF4MCrw
-
-发明古龙香水最早是为了抗击疫情
 
 # 生命起源
 

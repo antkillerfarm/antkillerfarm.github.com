@@ -1,0 +1,82 @@
+---
+layout: post
+title: 新冠肺炎（五）——疫情建模, 新冠疫苗
+category: COVID19 
+---
+
+* toc
+{:toc}
+
+# 疫情建模（续）
+
+https://mp.weixin.qq.com/s/0k1o-m8F5aWUWA4Nj8WnIQ
+
+我国疫情预测模型遭权威期刊退回！钟南山等人用LSTM力证“早发现早隔离”重要性
+
+https://mp.weixin.qq.com/s/EGJ1Upes2Ka-t9Rw2DdSZw
+
+27岁华裔小伙一战成名！搞出美国新冠最准预测模型，一人干翻专业机构，彭博：Superstar
+
+# 新冠疫苗
+
+塔斯基吉梅毒实验
+
+从上世纪30年代到70年代，美国公共卫生局以提供免费医疗为诱饵，诱骗阿拉巴马州600名黑人佃农加入一项 “医学研究”，其中大部分是梅毒患者。研究的真实目的是观察梅毒在未接受治疗的情况下如何发展，但受试者对此毫不知情。研究人员甚至不对患者透露他们患的病其实是梅毒，以免他们寻求治疗。
+
+患者被告知自己患有某种血液疾病。研究人员用欺骗性手段让患者误以为自己在接受“治疗”。后来部分患者参加征兵体检时被查出患有梅毒，这些研究人员竟然阻止他们获得治疗。
+
+这些黑人农民一直被跟踪观察了40年。直到1972年公共卫生局内部研究人员将此事曝光，“研究”才被终止。
+
+https://mp.weixin.qq.com/s/XnvN9ocdFCKED_xthmXfOg
+
+欧美新冠疫苗三巨头，如果在一起吃饭会吐哪些“苦水”
+
+https://mp.weixin.qq.com/s/Wj5ZnInURZ_Quh6FmqsxBw
+
+美国政府亲自道歉！为了这个实验，他们让数百人感染梅毒
+
+----
+
+https://mp.weixin.qq.com/s/_XODQnloTRlmlCDWez5_zg
+
+全球首支获批新冠疫苗竟然临床试验都没做完！战斗民族太疯狂，Nature和Science齐质疑
+
+https://mp.weixin.qq.com/s/FoBmj4jCAaqfclS3F8WraQ
+
+全球群体免疫，需要多少新冠疫苗？
+
+https://mp.weixin.qq.com/s/7_L7pvZ2KyQxKRteWKq4QQ
+
+聊聊中美两国的新冠疫苗-安全性和有效性
+
+https://www.zhihu.com/question/441919684
+
+在英国试验有效率达到89%的Novavax新冠疫苗，与其他公司的疫苗相比有何不同？
+
+https://mp.weixin.qq.com/s/8QPLyP9EhX8QuX6ErN5Yhw
+
+疫苗科普
+
+https://mp.weixin.qq.com/s/sKwYTW-HZzGY-Qs9_s_5nw
+
+快如闪电！新冠疫苗的研发速度是如何实现的？
+
+https://mp.weixin.qq.com/s/COjWJWU5d8hQ4afFN5mZ3g
+
+一亿剂疫苗打出去了，何时能见效？
+
+https://mp.weixin.qq.com/s/U1eteX7FwhyW-4qhVX4_bQ
+
+多国暂停牛津新冠疫苗接种，接下来呢？
+
+https://mp.weixin.qq.com/s/5E9h6snRo_2OuPJqInYvjw
+
+阿斯利康疫苗接种后出现脑血栓，意味着什么？
+
+https://mp.weixin.qq.com/s/qzUObhyykBn88EgV0PK9Dg
+
+姗姗来迟，科兴新冠疫苗究竟怎么样？
+
+https://mp.weixin.qq.com/s/YEt7XH9mNPmx3QURebbBmg
+
+什么是最好的新冠疫苗？
