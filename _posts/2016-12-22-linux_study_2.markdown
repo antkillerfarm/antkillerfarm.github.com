@@ -256,7 +256,7 @@ Linux网络分析必备技能：tcpdump实战详解
 
 https://mp.weixin.qq.com/s/DPK00_AkQVMMLf_lByCimQ
 
-Linux 网络流量监控利器iftop中文入门指南
+Linux网络流量监控利器iftop中文入门指南
 
 # 时间的表示方法
 

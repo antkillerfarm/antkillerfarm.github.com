@@ -9,7 +9,7 @@ category: my story
 
 # Blog维护日志
 
-2021.5.7 添加COVID19分类。
+2021.5.7 添加COVID19和CV分类。
 
 2021.4.26 文章数达到450篇。
 

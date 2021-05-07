@@ -329,6 +329,14 @@ https://mp.weixin.qq.com/s/qMT46hjOQeXsjVpZPqLRVA
 
 一文读懂Python装饰器
 
+https://mp.weixin.qq.com/s/_ZvF6jK5Jo4rFGwHvEoAig
+
+一文读懂Python装饰器由来
+
+https://mp.weixin.qq.com/s/Wsk6H3Z6HwGPKTRNYc2cLw
+
+一个已经存在10年，却被严重低估的库（decorator）
+
 ## 闭包
 
 在一些语言中，在函数中可以（嵌套）定义另一个函数时，如果内部的函数引用了外部的函数的变量，则可能产生闭包。闭包可以用来在一个函数与一组“私有”变量之间创建关联关系。在给定函数被多次调用的过程中，这些私有变量能够保持其持久性。
@@ -407,15 +415,3 @@ Python的进阶：copy()与deepcopy()区别
 https://mp.weixin.qq.com/s/bgk375-KxF-is5dIgV_p4g
 
 5张图彻底理解Python中的浅拷贝与深拷贝
-
-## six
-
-six是一个专门用来兼容Python 2和Python 3的库。它解决了诸如urllib的部分方法不兼容，str和bytes类型不兼容等“知名”问题。2x3=6？这难道就是得名的原因？
-
-代码：
-
-https://bitbucket.org/gutworth/six
-
-文档：
-
-https://bitbucket.org/gutworth/six

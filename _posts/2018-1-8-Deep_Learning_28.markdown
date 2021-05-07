@@ -290,6 +290,10 @@ https://mp.weixin.qq.com/s/Tli19SOum_muBoBaTtXKUQ
 
 多模态中NLP与CV融合的一些方式
 
+https://mp.weixin.qq.com/s/ondgiFryYqB6-sf-v4pLXQ
+
+多模态预训练模型简述
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

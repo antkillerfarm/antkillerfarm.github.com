@@ -312,33 +312,3 @@ https://mp.weixin.qq.com/s/T6S1_cFXPEuhRAkJo2m8Ig
 https://mp.weixin.qq.com/s/RRu3r_dokORhpSq3eyrPDQ
 
 为什么MobileNet及其变体如此之快？
-
-# 图像变换++
-
-https://mp.weixin.qq.com/s/JO8n_rEz6LxpZu6IS0Fk0Q
-
-AI把爱豆变胖视频火遍B站，我们找到了背后的技术团队:你是怎么把刘亦菲变胖的？
-
-https://mp.weixin.qq.com/s/9gR062zrQ7im8HpevhY0sw
-
-这个AI“大师级”简笔画水平，惊艳到了网友：竟然不用GAN
-
-https://mp.weixin.qq.com/s/yHy9wCCqXCxki_n7guYE_A
-
-AI算法实现武侠小说中的“绝世武功”——动作残影特效！
-
-https://mp.weixin.qq.com/s/7RqD-rM-UIG-x-YSYzYdxg
-
-Chimera Painter：使用GAN构建大量风格奇幻的卡牌游戏图像
-
-https://mp.weixin.qq.com/s/VaiUuac6VuppjZ2nrshyKA
-
-不满《曼达洛人》用特效给69岁天行者“减龄”，网友用DeepFake重制结局：强过官方
-
-https://mp.weixin.qq.com/s/QwvZSnF1cT5pDcp4aUigYA
-
-川普跳“鸡你太美”？这么专业，一定是AI合成的！
-
-https://mp.weixin.qq.com/s/GpF5ethQpGcDPAJlpPNBYQ
-
-不用GAN，照片也能生成简笔画，效果惊艳

@@ -295,45 +295,27 @@ https://mp.weixin.qq.com/s/KmkyhBijqqhaxDQ8p71BFA
 
 Calibration: 一个工业价值极大，学术界却鲜有研究的问题！
 
-# 图像变换+
-
-https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247504381&idx=2&sn=465027cc2a8f75a7f6ddf400830f61e0
-
-这个品质超高的漫画自动上色AI，让你DIY出喜欢的配色
-
-https://mp.weixin.qq.com/s/3Aq1HXpBzgNdcB130tCKbQ
-
-GAN网络图像翻译机：图像复原、模糊变清晰、素描变彩图
-
-https://mp.weixin.qq.com/s/DTVjncaERBmDfOkvXv_3qg
-
-皱眉细节完美复刻，阿尔伯塔大学团队标星1.7K的项目生成超逼真的肖像画
-
-https://mp.weixin.qq.com/s/UpfgxiIaSU4iIjbrkS--zA
-
-颠覆视频压缩的不一定是新压缩算法，而可能是GAN！英伟达新算法最高压缩90%流量
-
-https://mp.weixin.qq.com/s/yn_TQ-Mdcph3M1dfLu-KMw
-
-好好的人，说没就没了：这个视频“橡皮擦”让你瞬间消失，头发丝都不留
-
-https://mp.weixin.qq.com/s/-HKWSLDBwswuDYho29q5Kg
-
-怎样用Python控制图片人物动起来？一文就能Get！
-
-https://mp.weixin.qq.com/s/ECxcgclgHtjerFD4P3lvAA
-
-建造自己的“天空之城”，密歇根大学博士后的这项研究可以虚空造物、偷天换日
-
-https://mp.weixin.qq.com/s/LoQzVvMLoFDQDV_Xrdup5w
-
-升级版APDrawing，人脸照秒变线条肖像画，细节呈现惊人
-
-https://mp.weixin.qq.com/s/eXgpL5s8dUvU9i4daqTo-g
-
-新特效火爆抖音！各路神仙齐唱《蚂蚁呀嘿》，网友：短短几秒需一生来治愈
-
 # 深度信息检索++
+
+https://mp.weixin.qq.com/s/wni3F9lKuO4OT32BVe0QDQ
+
+谷歌发大招：搜索全面AI化，不用关键词就能轻松“撩书”
+
+https://mp.weixin.qq.com/s/TrWwp-DBTrKqIT_Pfy_o5w
+
+阿里妈妈首次公开新一代智能广告检索模型，重新定义传统搜索框架
+
+https://mp.weixin.qq.com/s/fZv9FgbdQ1bWPoNdl9sF1A
+
+“宝石迷阵”与信息检索
+
+https://mp.weixin.qq.com/s/Vvo3Ti3XiGQz0IwLgATfWQ
+
+电商搜索算法技术的演进
+
+https://mp.weixin.qq.com/s/-UxlJb4GCOTV1uTyZehyZw
+
+ESIM：语义相似度领域小模型的尊严
 
 https://mp.weixin.qq.com/s/hMaZ_6y3b4CRzq2p9eVkVw
 

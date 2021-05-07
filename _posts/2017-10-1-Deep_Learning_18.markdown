@@ -279,6 +279,10 @@ https://mp.weixin.qq.com/s/sH-G4g0EyQLu2l91Xvdefw
 
 Neighbor2Neighbor：无需干净图像的自监督图像降噪
 
+https://mp.weixin.qq.com/s/xYlCAUIue_z14Or4oyaCCg
+
+对比学习研究进展精要
+
 ## MoCo
 
 https://mp.weixin.qq.com/s/9zaTjwwGPHHzSv1ZmHf8_g
@@ -394,23 +398,3 @@ AutoML在计算机视觉领域的能与不能
 https://mp.weixin.qq.com/s/MIJHiYk-CjYtmW_9zW4hjA
 
 Hyper-Parameter Optimization，56页pdf
-
-https://mp.weixin.qq.com/s/y-5Gh0Jy3Fpz8xvw_tOICg
-
-MixPath：基于权重共享的神经网络搜索统一方法
-
-https://mp.weixin.qq.com/s/tYV_ratEA0NxzJukF-RTSA
-
-玩转网络结构搜索？你需要更大的搜索空间
-
-https://mp.weixin.qq.com/s/IRDE4RqwXR5W7QFhD_tSPQ
-
-AutoML在深度学习模型设计和优化中有哪些用处？
-
-https://zhuanlan.zhihu.com/p/143730467
-
-One Shot NAS总结
-
-https://mp.weixin.qq.com/s/e7Whr2Im5fu8O7zF95Afkw
-
-进化算法如何用于自动模型搜索(NAS)

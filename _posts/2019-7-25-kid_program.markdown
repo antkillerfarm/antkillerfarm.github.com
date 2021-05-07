@@ -252,6 +252,8 @@ https://www.jianshu.com/p/be197980d4bb
 
 https://fyne.io/
 
+`go get fyne.io/fyne/v2`
+
 参考：
 
 https://www.jianshu.com/p/08411943a74d

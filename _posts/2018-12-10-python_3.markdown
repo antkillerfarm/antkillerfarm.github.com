@@ -9,6 +9,18 @@ category: language
 
 # Python
 
+## six
+
+six是一个专门用来兼容Python 2和Python 3的库。它解决了诸如urllib的部分方法不兼容，str和bytes类型不兼容等“知名”问题。2x3=6？这难道就是得名的原因？
+
+代码：
+
+https://bitbucket.org/gutworth/six
+
+文档：
+
+https://bitbucket.org/gutworth/six
+
 ## Python 2 to Python 3
 
 https://www.linuxzen.com/qian-yi-dao-python-3.html
@@ -437,31 +449,3 @@ https://mp.weixin.qq.com/s/nHIQ5uwxZM-9DbSu_jL6DQ
 https://mp.weixin.qq.com/s/0MMUTp_-JF97inzeJd4j1g
 
 详解如何用Multiprocessing进行并行计算
-
-## mypy
-
-mypy是一个针对python语言的静态类型检查工具。
-
-官网：
-
-http://www.mypy-lang.org/
-
-参考：
-
-https://mp.weixin.qq.com/s/dBK8x_WajI2A3L5v6OQEgA
-
-四年完成400万行Python代码检查，甚至顺手写了个编译器
-
-## glob
-
-glob的历史可以追溯到早期的UNIX系统。用它可以查找符合特定规则的文件路径名。
-
-参考：
-
-https://blog.csdn.net/csapr1987/article/details/7469769
-
-python glob模块
-
-https://mp.weixin.qq.com/s/suUXM4Tdj6ekKQWC0g04Yg
-
-glob-被忽略的python超强文件批量处理模块

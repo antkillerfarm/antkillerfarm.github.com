@@ -33,6 +33,12 @@ Dear PyGui是一个轻量级的GUI框架，可以利用GPU进行渲染。
 
 https://github.com/hoffstadt/DearPyGui
 
+参考：
+
+https://mp.weixin.qq.com/s/t1DT7jyKj1moU1qnrn5GiQ
+
+好看又好用的GUI，你需要这七个Python必备库
+
 ## Streamlit
 
 https://mp.weixin.qq.com/s/sZvawmQ1KH3b_hozAbeX9w
@@ -99,15 +105,43 @@ https://mp.weixin.qq.com/s/dlMqyVy92S_dFaBAuV1RhA
 
 Python和C/C++拓展程序的性能优化
 
-## 音乐
+## SCons
 
-https://web.mit.edu/music21/
+blade的底层用到了SCons。后者是一个python语言写的构建工具，可用于多种编程语言程序的构建。
 
-music21官网
+官网：
 
-https://mp.weixin.qq.com/s/ONZD5RGI18rLTYhzIQQbVA
+http://www.scons.org/
 
-用R包gm生成音乐
+安装：
+
+`sudo apt install scons`
+
+和make类似，可以用如下方式并行编译：
+
+`scons -j 4`
+
+使用示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/scons
+
+项目的工程文件为SConstruct。
+
+从个人角度，我认为一个好的构建工具需要具备以下特点：
+
+- 常见任务书写简单。换句话说就是预先内置好了大量规则。make在这一点上做的不太好，手工任务太多，以致出现了Autotools和CMake这样的辅助工具。
+
+- 特殊任务扩展简单。make系列工具的DSL都不是完备的语言，这一点是比不了python的。
+
+因此，我是比较看好SCons的。
+
+上述特点在Java的构建工具上也得到了体现，ANT书写麻烦，所以被Maven取代，而Maven扩展不便，又被Gradle挑战。
+
+参考：
+
+https://www.ibm.com/developerworks/cn/linux/l-cn-scons/
+
+使用SCons轻松建造程序
 
 ## 参考
 
@@ -311,10 +345,6 @@ https://mp.weixin.qq.com/s/PkzD1ig_D5AIUTkO5zH8pQ
 
 Python字节码介绍
 
-https://mp.weixin.qq.com/s/_ZvF6jK5Jo4rFGwHvEoAig
-
-一文读懂Python装饰器由来
-
 https://mp.weixin.qq.com/s/RdnAQPAn9E8qDvtnCEgcKw
 
 Tkinter可视化窗口
@@ -420,39 +450,3 @@ https://mp.weixin.qq.com/s/5xs1ivkrUAP_Rr9P-EMc5g
 https://mp.weixin.qq.com/s/HGH2e_0ocHv2VWsjOje9BQ
 
 程序员必知的Python陷阱与缺陷列表
-
-http://blog.csdn.net/linda1000/article/details/8315892
-
-单引号、双引号和三双引号的区别
-
-https://mp.weixin.qq.com/s/czqO4Lo1Jt9zqg2UKNlLYg
-
-手把手教你用Python创建微信聊天机器人
-
-https://mp.weixin.qq.com/s/nNGTVQDt9TxHeIKOyxh1Jw
-
-WTF Python：盘点鲜为人知的Python特性
-
-https://mp.weixin.qq.com/s/mANrN9k5Rjf1zQwhHvWUEw
-
-​解密Python中的对象模型
-
-https://mp.weixin.qq.com/s/zQldWMBK5LWDFMyLbobK5w
-
-抖音超火的九宫格视频是如何生成的
-
-https://mp.weixin.qq.com/s/muGLG9WJNsZqZmGuN0u5RQ
-
-Python+Dash快速web应用开发——基础概念篇
-
-https://mp.weixin.qq.com/s/rMrY-M60jhdfDnX6LYOlCA
-
-Python+Dash快速web应用开发——页面布局篇
-
-https://mp.weixin.qq.com/s/MzORtWN-mSmY9N5Ps5m5Mw
-
-Python+Dash快速web应用开发：回调交互篇（上）
-
-https://mp.weixin.qq.com/s/_o5upbRqjADpCkZ0q0ZwkA
-
-Python+Dash快速web应用开发：回调交互篇（中）

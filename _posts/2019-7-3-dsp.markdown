@@ -277,6 +277,10 @@ https://zhuanlan.zhihu.com/p/228219488
 
 Bode Plots（伯德图）
 
+https://mp.weixin.qq.com/s/VlVRZlaO_JHhAjv_CkO78g
+
+离散时间信号和系统
+
 # AI金融
 
 https://mp.weixin.qq.com/s/1zTLxotph7vWvp8LImR-Gg

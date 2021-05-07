@@ -330,6 +330,10 @@ https://zhuanlan.zhihu.com/p/76638962
 
 Pytorch分布式训练
 
+https://zhuanlan.zhihu.com/p/360405558
+
+PyTorch分布式训练
+
 https://mp.weixin.qq.com/s/0aSBHvscloEnPMRLyNjQsg
 
 PyTorch分布式训练简明教程

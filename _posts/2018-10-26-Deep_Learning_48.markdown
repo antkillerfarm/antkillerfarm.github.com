@@ -325,6 +325,10 @@ https://mp.weixin.qq.com/s/Y5-HytenpcMUyh7z3VLOFQ
 
 打造万物识别之利器——微信扫一扫名画识别篇
 
+https://mp.weixin.qq.com/s/Oi_bRbp-z56EsWOfoTIDnQ
+
+打造万物识别之利器——微信扫一扫地标识别篇
+
 https://zhuanlan.zhihu.com/p/112719984
 
 全面理解搜索Query：当你在搜索引擎中敲下回车后，发生了什么？
@@ -356,23 +360,3 @@ https://mp.weixin.qq.com/s/1jgdI-Pt0PtN3oAs0Wh4XA
 https://mp.weixin.qq.com/s/9Fcj5lO-JPfFVnRSSM_56w
 
 深度学习在美团搜索广告排序的应用实践
-
-https://mp.weixin.qq.com/s/wni3F9lKuO4OT32BVe0QDQ
-
-谷歌发大招：搜索全面AI化，不用关键词就能轻松“撩书”
-
-https://mp.weixin.qq.com/s/TrWwp-DBTrKqIT_Pfy_o5w
-
-阿里妈妈首次公开新一代智能广告检索模型，重新定义传统搜索框架
-
-https://mp.weixin.qq.com/s/fZv9FgbdQ1bWPoNdl9sF1A
-
-“宝石迷阵”与信息检索
-
-https://mp.weixin.qq.com/s/Vvo3Ti3XiGQz0IwLgATfWQ
-
-电商搜索算法技术的演进
-
-https://mp.weixin.qq.com/s/-UxlJb4GCOTV1uTyZehyZw
-
-ESIM：语义相似度领域小模型的尊严

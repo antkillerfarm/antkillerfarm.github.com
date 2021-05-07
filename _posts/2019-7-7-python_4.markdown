@@ -9,6 +9,34 @@ category: language
 
 # Python
 
+## mypy
+
+mypy是一个针对python语言的静态类型检查工具。
+
+官网：
+
+http://www.mypy-lang.org/
+
+参考：
+
+https://mp.weixin.qq.com/s/dBK8x_WajI2A3L5v6OQEgA
+
+四年完成400万行Python代码检查，甚至顺手写了个编译器
+
+## glob
+
+glob的历史可以追溯到早期的UNIX系统。用它可以查找符合特定规则的文件路径名。
+
+参考：
+
+https://blog.csdn.net/csapr1987/article/details/7469769
+
+python glob模块
+
+https://mp.weixin.qq.com/s/suUXM4Tdj6ekKQWC0g04Yg
+
+glob-被忽略的python超强文件批量处理模块
+
 ## PLY
 
 Python Lex-Yacc是一个python版本的lex/yacc实现。
@@ -437,40 +465,12 @@ https://mp.weixin.qq.com/s/RLJAHQAheqrf8i-c8QtDtw
 
 Jupyter Notebooks嵌入Excel并使用Python替代VBA宏
 
-## SCons
+## 音乐
 
-blade的底层用到了SCons。后者是一个python语言写的构建工具，可用于多种编程语言程序的构建。
+https://web.mit.edu/music21/
 
-官网：
+music21官网
 
-http://www.scons.org/
+https://mp.weixin.qq.com/s/ONZD5RGI18rLTYhzIQQbVA
 
-安装：
-
-`sudo apt install scons`
-
-和make类似，可以用如下方式并行编译：
-
-`scons -j 4`
-
-使用示例：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/scons
-
-项目的工程文件为SConstruct。
-
-从个人角度，我认为一个好的构建工具需要具备以下特点：
-
-- 常见任务书写简单。换句话说就是预先内置好了大量规则。make在这一点上做的不太好，手工任务太多，以致出现了Autotools和CMake这样的辅助工具。
-
-- 特殊任务扩展简单。make系列工具的DSL都不是完备的语言，这一点是比不了python的。
-
-因此，我是比较看好SCons的。
-
-上述特点在Java的构建工具上也得到了体现，ANT书写麻烦，所以被Maven取代，而Maven扩展不便，又被Gradle挑战。
-
-参考：
-
-https://www.ibm.com/developerworks/cn/linux/l-cn-scons/
-
-使用SCons轻松建造程序
+用R包gm生成音乐

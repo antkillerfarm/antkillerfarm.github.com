@@ -9,52 +9,6 @@ category: DL
 
 # 图像变换
 
-## 去雨去雾（续）
-
-https://mp.weixin.qq.com/s/6L328q9nR7XEYeKdFH3xpQ
-
-CVPR 2020 论文大盘点-去雨去雾去模糊篇
-
-https://mp.weixin.qq.com/s/B8LU892NA7Pz7-HjI58LWg
-
-Python还能实现图片去雾？FFA去雾算法、暗通道去雾算法用起来！
-
-https://mp.weixin.qq.com/s/34HxF5qCulGd1zyATH7ZuA
-
-将U-Net用于图像去雾任务，一种具有密集特征融合的多尺度增强去雾网络
-
-https://mp.weixin.qq.com/s/_tvOQPvybqmvLF19kHcbFg
-
-北大开源ECCV2018深度去雨算法：RESCAN
-
-https://mp.weixin.qq.com/s/TKhE0DyBcXdujsPsED9eDA
-
-6ms的EfficientDeRain：颇具启发的简单高效去雨算法
-
-## 图像匹配
-
-https://mp.weixin.qq.com/s/y0SAI0f3w42z-nnoorFoEQ
-
-共享空间学习共有特征的异源图像匹配
-
-https://mp.weixin.qq.com/s/eY8h41X5d4Cw0eUoPsQEEA
-
-基于深度学习的图像匹配技术一览
-
-## 参考
-
-https://mp.weixin.qq.com/s/djkjAfUO_DefTP2drzY_iQ
-
-在《绝地求生》中玩《堡垒之夜》！深度学习帮你转换画风
-
-https://mp.weixin.qq.com/s/moDVf7h8Q2S1SL0IuxXQtQ
-
-算法音乐往事：二次元女神“初音未来”诞生记
-
-https://mp.weixin.qq.com/s/4UH-XWyIxYHq_ErRfkzzsQ
-
-与神经网络相比，你对P图一无所知
-
 https://mp.weixin.qq.com/s/FTfpjo-qT_PK4cbR5j0ulw
 
 AI当“暖男”：给裸照自动穿上比基尼

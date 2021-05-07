@@ -310,3 +310,7 @@ https://mp.weixin.qq.com/s/y6LL52Al3w5ErnpPX0A35Q
 https://mp.weixin.qq.com/s/S3o4T8-CXVnS1laXE_g70w
 
 Python中的时间序列分解
+
+https://mp.weixin.qq.com/s/XImzWu0ZBe8Cgquc167iLA
+
+用于时间序列数据的泊松回归模型

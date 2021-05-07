@@ -276,6 +276,34 @@ test4：顶点改为字符串数据类型，不使用BGL API。
 
 # python+
 
+https://mp.weixin.qq.com/s/nNGTVQDt9TxHeIKOyxh1Jw
+
+WTF Python：盘点鲜为人知的Python特性
+
+https://mp.weixin.qq.com/s/mANrN9k5Rjf1zQwhHvWUEw
+
+​解密Python中的对象模型
+
+https://mp.weixin.qq.com/s/zQldWMBK5LWDFMyLbobK5w
+
+抖音超火的九宫格视频是如何生成的
+
+https://mp.weixin.qq.com/s/muGLG9WJNsZqZmGuN0u5RQ
+
+Python+Dash快速web应用开发——基础概念篇
+
+https://mp.weixin.qq.com/s/rMrY-M60jhdfDnX6LYOlCA
+
+Python+Dash快速web应用开发——页面布局篇
+
+https://mp.weixin.qq.com/s/MzORtWN-mSmY9N5Ps5m5Mw
+
+Python+Dash快速web应用开发：回调交互篇（上）
+
+https://mp.weixin.qq.com/s/_o5upbRqjADpCkZ0q0ZwkA
+
+Python+Dash快速web应用开发：回调交互篇（中）
+
 https://mp.weixin.qq.com/s/81HauaX6fWstbUfgp3pJvw
 
 Python+Dash快速web应用开发：回调交互篇（下）
@@ -295,7 +323,3 @@ Python加速运行技巧
 https://mp.weixin.qq.com/s/7sQ6p0IDWvttbvv_c71Etg
 
 Python单元测试详解
-
-https://mp.weixin.qq.com/s/nT4GLtDtJ1MUg8TBHBDf_A
-
-足不出户也能放风筝？OpenGL一招搞定！

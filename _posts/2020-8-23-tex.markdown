@@ -359,72 +359,16 @@ https://mp.weixin.qq.com/s/504MLGjCESZPOvv8AwY6Pw
 
 这篇寄存器讲的有点意思
 
-# 目标检测进阶+
+# python++
 
-https://mp.weixin.qq.com/s/psXJNlEawZlQ-ZdktDpjOw
+http://blog.csdn.net/linda1000/article/details/8315892
 
-目标检测小tricks之样本不均衡处理
+单引号、双引号和三双引号的区别
 
-https://zhuanlan.zhihu.com/p/54334986
+https://mp.weixin.qq.com/s/czqO4Lo1Jt9zqg2UKNlLYg
 
-TridentNet：处理目标检测中尺度变化新思路
+手把手教你用Python创建微信聊天机器人
 
-https://mp.weixin.qq.com/s/eODjZUQQiROID9i4WOeEFQ
+https://mp.weixin.qq.com/s/nT4GLtDtJ1MUg8TBHBDf_A
 
-三分支网络——目前目标检测性能最佳网络框架
-
-https://mp.weixin.qq.com/s/reNCLvOyJHkJZimnMpbIig
-
-目标检测算法优化技巧：Bag of Freebies for Training Object Detection
-
-https://mp.weixin.qq.com/s/BXwL33qOf3f7BtJvHsi23Q
-
-目标检测：Segmentation is All You Need？
-
-https://mp.weixin.qq.com/s/NWILStthG4klkwrYVcGQSQ
-
-ILC：用于自然场景多目标的计数模型
-
-https://zhuanlan.zhihu.com/p/59915784
-
-目标检测中的Consistent Optimization
-
-https://mp.weixin.qq.com/s/ts4WFnuN4cHLfUh8--96Kw
-
-Libra R-CNN：全面平衡的目标检测器
-
-https://mp.weixin.qq.com/s/groq55Cbts272k1mfhJwaQ
-
-超越bounding box的代表性点集：视觉物体表示的新方法
-
-https://mp.weixin.qq.com/s/vy8xlxGY8-m7F5GQetlQeg
-
-SaccadeNet：使用角点特征进行two-stage预测框精调
-
-https://mp.weixin.qq.com/s/N8vjh3HPWOfxo7ZdOr_eOg
-
-PAA论文解读：在物体检测中利用概率分布来将anchor分配为正负样本
-
-https://mp.weixin.qq.com/s/nTzTjUDQc3jTu3AAQ1Hvbg
-
-理解物体检测中的Objectness
-
-https://mp.weixin.qq.com/s/Qvjk7mz8d9lxeyIMND1mPA
-
-目标检测Anchor是什么？怎么科学设置？人人都能彻底搞懂的Anchor深度解析
-
-https://mp.weixin.qq.com/s/0wJHO_9e4iBMaWu-E20S6A
-
-一文了解目标检测边界框概率分布
-
-https://mp.weixin.qq.com/s/hMhDIV3eCEzmRzuyT3CvUg
-
-训练鲁棒的物体检测器的6大障碍
-
-https://zhuanlan.zhihu.com/p/342011052
-
-目标检测之Neck选择
-
-https://mp.weixin.qq.com/s/sJGvvwCkXCJ52MYSsjkwrg
-
-计算机视觉来看看苏伊士运河堵船（船舶检测）
+足不出户也能放风筝？OpenGL一招搞定！
