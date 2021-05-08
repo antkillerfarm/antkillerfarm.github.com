@@ -27,6 +27,10 @@ https://zhuanlan.zhihu.com/p/51053142
 
 基于自编码器的时间序列异常检测算法
 
+https://mp.weixin.qq.com/s/Jqsm_JxI28SVXFt3Xuw8ew
+
+使用自编码器进行图像去噪
+
 ## 参考
 
 http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/

@@ -7,6 +7,48 @@ category: Attention
 * toc
 {:toc}
 
+# XLNet（续）
+
+https://mp.weixin.qq.com/s/t8XDCPOYna8mZ1Iqk_g7Zw
+
+最新语言表示方法XLNet
+
+https://zhuanlan.zhihu.com/p/70257427
+
+XLNet:运行机制及和Bert的异同比较
+
+https://mp.weixin.qq.com/s/SAiIIa9_-16dqRMKASsuhw
+
+追溯XLNet的前世今生：从Transformer到XLNet
+
+https://mp.weixin.qq.com/s/qzAN6VlKcfqmpX9kQCJ7Gg
+
+XLnet：GPT和BERT的合体，博采众长，所以更强
+
+https://zhuanlan.zhihu.com/p/80216580
+
+XLnet：集合了GPT和BERT的预训练模型
+
+https://mp.weixin.qq.com/s/7ZTDJmsOxOwJ7fYUxK6eTw
+
+XLNet详解
+
+https://zhuanlan.zhihu.com/p/107350079
+
+什么是XLNet，它为什么比BERT效果好？
+
+https://mp.weixin.qq.com/s/EozsQNQ2YrczRg18hTZBhA
+
+什么是XLNet中的双流自注意力
+
+https://mp.weixin.qq.com/s/VfytCWa-h8CmUZW1RWAdnQ
+
+从XLNet的多流机制看最新预训练模型的研究进展
+
+https://mp.weixin.qq.com/s/LurjTAjq4bVxDxIefSxcwg
+
+XLNET：换一个思路做预训练，效果杠杠滴
+
 # 轻量化BERT
 
 | Paper | Prune | Factor | Distill | W. Sharing | Quant. | Pre-train | Downstream |
@@ -316,21 +358,3 @@ https://mp.weixin.qq.com/s/O-xcsIHufrPQKPQGNcKjkg
 https://mp.weixin.qq.com/s/IeQdvz8DrNAULy2k7oFgWw
 
 Transformers在计算机视觉概述
-
-# BERT进阶
-
-## AR vs AE
-
-自回归模型，是统计上一种处理时间序列的方法，用同一变数例如x的之前各期，亦即$$x_1$$至$$x_{t-1}$$来预测本期$$x_t$$的表现，并假设它们为一线性关系。因为这是从回归分析中的线性回归发展而来，只是不用x预测y，而是用x预测x自己，所以叫做自回归。
-
-----
-
-**AR**: Autoregressive Lanuage Modeling，又叫自回归语言模型。它指的是，依据前面(或后面)出现的tokens来预测当前时刻的token，代表模型有ELMO、GTP等。
-
-$$\text{forward:}p(x)=\prod_{t=1}^Tp(x_t|x_{<t})$$
-
-$$\text{backward:}p(x)=\prod_{t=T}^1p(x_t|x_{>t})$$
-
-- 缺点：它只能利用单向语义而不能同时利用上下文信息。ELMO通过双向都做AR模型，然后进行拼接，但从结果来看，效果并不是太好。
-
-- 优点：对自然语言生成任务(NLG)友好，天然符合生成式任务的生成过程。这也是为什么GPT能够编故事的原因。

@@ -187,6 +187,10 @@ https://mp.weixin.qq.com/s/MCH3DdabMohDHzo1FKECUQ
 
 《图表示学习》报告，McGill助理教授Hamilton讲授，79页ppt
 
+https://mp.weixin.qq.com/s/qKT6X9n7aowbylkKhhUtsA
+
+《几何深度学习》新书发布，帝国理工/DeepMind等图ML大牛共同撰写，160页pdf
+
 ## 综述
 
 《A Comprehensive Survey on Graph Neural Networks》
@@ -388,35 +392,3 @@ https://zhuanlan.zhihu.com/p/78466344
 https://mp.weixin.qq.com/s/QONDTuzv_jIbVwSXxHMyIw
 
 一文读懂图卷积GCN
-
-https://mp.weixin.qq.com/s/MBRTs2pIVypQxrcMOY4Lcg
-
-图卷积网络（GCN）入门详解
-
-https://mp.weixin.qq.com/s/phiRXPGfVHaxCN1aLZTzlw
-
-图神经网络三剑客：GCN、GAT与GraphSAGE
-
-https://mp.weixin.qq.com/s/TepgHukJ-Gx63pTjMH9R2g
-
-2020年，我终于决定入门GCN
-
-https://mp.weixin.qq.com/s/-ukPx32Vjkdz2_udBb55EA
-
-解读三种经典GCN中的Parameter Sharing
-
-https://mp.weixin.qq.com/s/RP6_H8ZHwJIlUt9YrsxvCA
-
-图卷积神经网络蒸馏知识，Distillating Knowledge from GCN
-
-https://mp.weixin.qq.com/s/GnjSuQ_BihO5bP5xO2xHJg
-
-万字长文带你入门GCN
-
-https://mp.weixin.qq.com/s/2PY1baildUoZaetYlsukIQ
-
-图卷积网络(GCN)的谱分析
-
-https://zhuanlan.zhihu.com/p/139359188
-
-关于GCN，我有三种写法

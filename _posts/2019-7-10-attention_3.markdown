@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（三）——预训练语言模型进化史, BERT
+title:  Attention（三）——预训练语言模型进化史
 category: Attention 
 ---
 
@@ -8,6 +8,24 @@ category: Attention
 {:toc}
 
 # Transformer（续）
+
+Transformer的讲解首推：
+
+http://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/
+
+Visualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)
+
+http://jalammar.github.io/illustrated-transformer/
+
+The Illustrated Transformer
+
+这里仅对要点做一个总结：
+
+1.Transformer是一个标准的Seq2seq结构，有encoder和decoder两部分。
+
+2.encoder可以并行执行，一次性算完。而decoder的输入不仅包含encoder的输出，还包含了decoder上次的输出，因此还是一个循环结构，并不能完全并行。
+
+3.为了解决循环结构的次序问题，论文提出了上图所示的Masked Multi-Head Attention。
 
 ## Reformer
 
@@ -363,47 +381,3 @@ https://mp.weixin.qq.com/s/sMocYFvESXoBGtX_NWmQkQ
 https://mp.weixin.qq.com/s/uOGNoePkwfeixTtI4q4t8Q
 
 MT-DNN(KD) : 预训练、多任务、知识蒸馏的结合
-
-https://mp.weixin.qq.com/s/-fQ9VlaOjssDufcZuCe91w
-
-结合HuggingFace代码浅析Transformer
-
-https://mp.weixin.qq.com/s/MXZ3ygSqwyXqOH1PrWEGqg
-
-Transformer-XL超长上下文注意力模型
-
-https://mp.weixin.qq.com/s/6XX2tkp2dbIEKqumnIQWbg
-
-跨语种语言模型
-
-https://mp.weixin.qq.com/s/U1O3j4FBRdiwlRjjlzbWJQ
-
-XLNet：公平一战！多项任务效果超越BERT
-
-https://mp.weixin.qq.com/s/f6RwSHz3Nc68oipHdYDVTw
-
-RoBERTa: 捍卫BERT的尊严
-
-https://mp.weixin.qq.com/s/fneyUitoQL6ZqX3xU9WpDg
-
-跨模态语言模型
-
-https://mp.weixin.qq.com/s/vgEKI9HjWDpkeSZQT2d8Qg
-
-ENRIE(Tsinghua)：知识图谱与BERT相结合，为语言模型赋能助力
-
-https://mp.weixin.qq.com/s/hLt2SnVovrLeNpuMUH1OSg
-
-预训练模型的技术演进：乘风破浪的PTM
-
-# BERT
-
-## 概述
-
-论文：
-
-《BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding》
-
-代码：
-
-https://github.com/google-research/bert

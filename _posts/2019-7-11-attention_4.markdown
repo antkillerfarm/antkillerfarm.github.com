@@ -1,15 +1,59 @@
 ---
 layout: post
-title:  Attention（四）——ELMo, GPT, ERNIE, XLNet
+title:  Attention（四）——BERT, ELMo, GPT, ERNIE, XLNet
 category: Attention 
 ---
 
 * toc
 {:toc}
 
+# 预训练语言模型进化史
+
+## 预训练语言模型的前世今生（续）
+
+https://mp.weixin.qq.com/s/-fQ9VlaOjssDufcZuCe91w
+
+结合HuggingFace代码浅析Transformer
+
+https://mp.weixin.qq.com/s/MXZ3ygSqwyXqOH1PrWEGqg
+
+Transformer-XL超长上下文注意力模型
+
+https://mp.weixin.qq.com/s/6XX2tkp2dbIEKqumnIQWbg
+
+跨语种语言模型
+
+https://mp.weixin.qq.com/s/U1O3j4FBRdiwlRjjlzbWJQ
+
+XLNet：公平一战！多项任务效果超越BERT
+
+https://mp.weixin.qq.com/s/f6RwSHz3Nc68oipHdYDVTw
+
+RoBERTa: 捍卫BERT的尊严
+
+https://mp.weixin.qq.com/s/fneyUitoQL6ZqX3xU9WpDg
+
+跨模态语言模型
+
+https://mp.weixin.qq.com/s/vgEKI9HjWDpkeSZQT2d8Qg
+
+ENRIE(Tsinghua)：知识图谱与BERT相结合，为语言模型赋能助力
+
+https://mp.weixin.qq.com/s/hLt2SnVovrLeNpuMUH1OSg
+
+预训练模型的技术演进：乘风破浪的PTM
+
 # BERT
 
-## 概述（续）
+## 概述
+
+论文：
+
+《BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding》
+
+代码：
+
+https://github.com/google-research/bert
 
 BERT算的上是Google暴力美学的新作了（2018.10）。如果用家用显卡GTX 1080Ti的话，大概需要几个月的训练时间。幸好Google已经提供了预训练的模型：
 
@@ -310,43 +354,3 @@ https://mp.weixin.qq.com/s/itNtDuQS4KF_sLnfiwdyNg
 https://mp.weixin.qq.com/s/2zuR0x-Cb1NTeRHYeTjrHQ
 
 一文详解Google最新NLP模型XLNet
-
-https://mp.weixin.qq.com/s/t8XDCPOYna8mZ1Iqk_g7Zw
-
-最新语言表示方法XLNet
-
-https://zhuanlan.zhihu.com/p/70257427
-
-XLNet:运行机制及和Bert的异同比较
-
-https://mp.weixin.qq.com/s/SAiIIa9_-16dqRMKASsuhw
-
-追溯XLNet的前世今生：从Transformer到XLNet
-
-https://mp.weixin.qq.com/s/qzAN6VlKcfqmpX9kQCJ7Gg
-
-XLnet：GPT和BERT的合体，博采众长，所以更强
-
-https://zhuanlan.zhihu.com/p/80216580
-
-XLnet：集合了GPT和BERT的预训练模型
-
-https://mp.weixin.qq.com/s/7ZTDJmsOxOwJ7fYUxK6eTw
-
-XLNet详解
-
-https://zhuanlan.zhihu.com/p/107350079
-
-什么是XLNet，它为什么比BERT效果好？
-
-https://mp.weixin.qq.com/s/EozsQNQ2YrczRg18hTZBhA
-
-什么是XLNet中的双流自注意力
-
-https://mp.weixin.qq.com/s/VfytCWa-h8CmUZW1RWAdnQ
-
-从XLNet的多流机制看最新预训练模型的研究进展
-
-https://mp.weixin.qq.com/s/LurjTAjq4bVxDxIefSxcwg
-
-XLNET：换一个思路做预训练，效果杠杠滴

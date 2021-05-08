@@ -243,6 +243,10 @@ https://mp.weixin.qq.com/s/OESIXwjM8nFhz4NhNT1BzQ
 
 使用神经网络的自动化特征工程
 
+https://mp.weixin.qq.com/s/SARm2GlHZHYKAFFRr9buXw
+
+Kaggle所有图像特征汇总
+
 # 计算机体系结构+
 
 ## GPU体系结构

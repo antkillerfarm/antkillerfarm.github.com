@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SpaceX, 中国航天
+title: 黑洞成像, SpaceX
 category: Nature 
 ---
 
@@ -282,13 +282,3 @@ https://news.qq.com/a/20180927/005739.htm
 https://mp.weixin.qq.com/s/sPTRKfuhEc0xx7GacomxkA
 
 霍尔效应推进器
-
-# 中国航天
-
-![](/images/img4/chang_e.png)
-
-![](/images/img4/chang_e_2.png)
-
-https://www.zhihu.com/question/329267129
-
-中国空间站和国际空间站的区别在哪？

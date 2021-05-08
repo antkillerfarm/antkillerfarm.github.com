@@ -7,9 +7,15 @@ category: Attention
 * toc
 {:toc}
 
-# 花式Attention
+# 花式Attention（续）
 
-## Self Attention（续）
+## Self Attention
+
+到目前为止，对Attention层的描述都是一般化的，我们可以落实一些应用。比如，如果做阅读理解的话，Q可以是篇章的词向量序列，取K=V为问题的词向量序列，那么输出就是所谓的Aligned Question Embedding。
+
+而在Google的论文中，大部分的Attention都是Self Attention，即“自注意力”，或者叫内部注意力。
+
+所谓Self Attention，其实就是Attention(X,X,X)，X就是前面说的输入序列。也就是说，在序列内部做Attention，寻找序列内部的联系。
 
 下表展示了Self Attention相对于其他运算的计算量分析：
 
@@ -271,21 +277,3 @@ https://github.com/Kyubyong/transformer
 上图中的Feed Forward的公式为：
 
 $$FFN(x) = \max(0,xW_1 + b_1)W_2 + b_2$$
-
-Transformer的讲解首推：
-
-http://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/
-
-Visualizing A Neural Machine Translation Model (Mechanics of Seq2seq Models With Attention)
-
-http://jalammar.github.io/illustrated-transformer/
-
-The Illustrated Transformer
-
-这里仅对要点做一个总结：
-
-1.Transformer是一个标准的Seq2seq结构，有encoder和decoder两部分。
-
-2.encoder可以并行执行，一次性算完。而decoder的输入不仅包含encoder的输出，还包含了decoder上次的输出，因此还是一个循环结构，并不能完全并行。
-
-3.为了解决循环结构的次序问题，论文提出了上图所示的Masked Multi-Head Attention。

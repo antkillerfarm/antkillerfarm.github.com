@@ -9,7 +9,21 @@ category: Attention
 
 # BERT进阶
 
-## AR vs AE（续）
+## AR vs AE
+
+自回归模型，是统计上一种处理时间序列的方法，用同一变数例如x的之前各期，亦即$$x_1$$至$$x_{t-1}$$来预测本期$$x_t$$的表现，并假设它们为一线性关系。因为这是从回归分析中的线性回归发展而来，只是不用x预测y，而是用x预测x自己，所以叫做自回归。
+
+----
+
+**AR**: Autoregressive Lanuage Modeling，又叫自回归语言模型。它指的是，依据前面(或后面)出现的tokens来预测当前时刻的token，代表模型有ELMO、GTP等。
+
+$$\text{forward:}p(x)=\prod_{t=1}^Tp(x_t|x_{<t})$$
+
+$$\text{backward:}p(x)=\prod_{t=T}^1p(x_t|x_{>t})$$
+
+- 缺点：它只能利用单向语义而不能同时利用上下文信息。ELMO通过双向都做AR模型，然后进行拼接，但从结果来看，效果并不是太好。
+
+- 优点：对自然语言生成任务(NLG)友好，天然符合生成式任务的生成过程。这也是为什么GPT能够编故事的原因。
 
 **AE**:Autoencoding Language Modeling，又叫自编码语言。通过上下文信息来预测当前被mask的token，代表有BERT，Word2Vec(CBOW)。
 
@@ -366,43 +380,3 @@ https://zhuanlan.zhihu.com/p/49271699
 https://mp.weixin.qq.com/s/k_33UK1RkMyHn6TSudU6Kg
 
 详解谷歌最强NLP模型BERT
-
-https://mp.weixin.qq.com/s/d2MZQbamdo0EC_MVtf-HZA
-
-BERT详解：开创性自然语言处理框架的全面指南
-
-https://mp.weixin.qq.com/s/pD4it8vQ-aE474uSMQG0YQ
-
-两行代码玩转Google BERT句向量词向量
-
-https://mp.weixin.qq.com/s/osmUZxAAX3x-oTHYJbzemA
-
-谷歌BERT模型fine-tune终极实践教程
-
-https://mp.weixin.qq.com/s/XmeDjHSFI0UsQmKeOgwnyA
-
-小数据福音！BERT在极小数据下带来显著提升的开源实现
-
-https://mp.weixin.qq.com/s/HXYDO5PM8UIoXgEPGe8p-w
-
-图解当前最强语言模型BERT：NLP是如何攻克迁移学习的？
-
-https://mp.weixin.qq.com/s/zz3j9HEuzw5e92MQXxSQsA
-
-遗珠之作？谷歌Quoc Le这篇NLP预训练模型论文值得一看
-
-https://mp.weixin.qq.com/s/IN4YfoZnlBozwEFdhSvLZg
-
-用可视化解构BERT，我们从上亿参数中提取出了6种直观模式
-
-https://mp.weixin.qq.com/s/nIT3GIU0dUIYyGChxsiOWw
-
-Google BERT应用之《红楼梦》对话人物提取
-
-https://mp.weixin.qq.com/s/dcp_ANYijRmicMYX7OpJmA
-
-如何用最强模型BERT做NLP迁移学习？
-
-https://mp.weixin.qq.com/s/DR4SkgOfUT7KYiaXm5NynQ
-
-跨语言版BERT：Facebook提出跨语言预训练模型XLM

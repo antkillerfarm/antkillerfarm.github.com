@@ -314,3 +314,53 @@ https://mp.weixin.qq.com/s/dK2qwYcAZ8Gdb7U2tKIcAA
 https://mp.weixin.qq.com/s/46nvCl5o4QYvRemzOrnaoQ
 
 进入Meta Learning的世界(一)
+
+# AutoDL+++
+
+https://mp.weixin.qq.com/s/y-5Gh0Jy3Fpz8xvw_tOICg
+
+MixPath：基于权重共享的神经网络搜索统一方法
+
+https://mp.weixin.qq.com/s/tYV_ratEA0NxzJukF-RTSA
+
+玩转网络结构搜索？你需要更大的搜索空间
+
+https://mp.weixin.qq.com/s/IRDE4RqwXR5W7QFhD_tSPQ
+
+AutoML在深度学习模型设计和优化中有哪些用处？
+
+https://zhuanlan.zhihu.com/p/143730467
+
+One Shot NAS总结
+
+https://mp.weixin.qq.com/s/e7Whr2Im5fu8O7zF95Afkw
+
+进化算法如何用于自动模型搜索(NAS)
+
+https://mp.weixin.qq.com/s/QtYNb1bVnWghNFK6fbynLw
+
+激活函数如何进行自动学习和配置
+
+https://mp.weixin.qq.com/s/0fVNW5hekUNCsD6L9KL1iQ
+
+PNAS：渐进式神经网络搜索，准确率预测，21倍加速
+
+https://mp.weixin.qq.com/s/Ho6XDRYmOBs9TqLMq7aPAg
+
+MetaQNN: 与Google同场竞技，MIT经典作，基于Q-Learning的神经网络搜索
+
+https://mp.weixin.qq.com/s/5NGCr6oMW2p5u4kF7YMCPw
+
+NAS太难了，搜索结果堪比随机采样！华为ICLR 2020论文给出6条建议
+
+https://zhuanlan.zhihu.com/p/110527110
+
+Neural Architecture Search
+
+https://zhuanlan.zhihu.com/p/111213620
+
+AutoML在计算机视觉领域的能与不能
+
+https://mp.weixin.qq.com/s/MIJHiYk-CjYtmW_9zW4hjA
+
+Hyper-Parameter Optimization，56页pdf

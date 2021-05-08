@@ -401,15 +401,3 @@ https://mp.weixin.qq.com/s/oRWMAeKcftmCL1W1SW823g
 https://mp.weixin.qq.com/s/9qGrkDFCd1bgeXRAaM8VGQ
 
 动态图表示学习，40页ppt，Dynamic Graph Representation Learning
-
-https://mp.weixin.qq.com/s/L4XPz4Moc3mmhR_7kK5OKg
-
-图神经网络知识蒸馏框架
-
-https://mp.weixin.qq.com/s/K3adKwK5jBIYZAFJR_hzGw
-
-图神经网络综述
-
-https://mp.weixin.qq.com/s/tWR81J3t-lt3pzcOcterFQ
-
-GNN中的16种图卷积和9种图池化

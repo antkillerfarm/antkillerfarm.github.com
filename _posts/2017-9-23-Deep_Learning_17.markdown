@@ -165,6 +165,18 @@ https://zhuanlan.zhihu.com/p/102207302
 
 tensorflow计算图与自动求导——tf.GradientTape
 
+## 其他
+
+Jacobian-vector product function,JVP
+
+vector-Jacobian product function,VJP
+
+Hessian Vector Product,HVP
+
+https://blog.csdn.net/apache/article/details/113925886
+
+Pytorch,Tensorflow Autograd/AutoDiff nutshells: Jacobian,Gradient,Hessian,JVP,VJP,etc
+
 ## 参考
 
 https://mp.weixin.qq.com/s/7Z2tDhSle-9MOslYEUpq6g
@@ -348,31 +360,3 @@ Yan Lecun自监督学习：机器能像人一样学习吗？ 110页PPT
 https://mp.weixin.qq.com/s/W4zwKqkVQN4v-IKzGrkudg
 
 通过传递不变性实现自监督视觉表征学习
-
-https://zhuanlan.zhihu.com/p/30265894
-
-自监督学习近期进展
-
-https://mp.weixin.qq.com/s/qyQjKsgktWv9SihotaQX3w
-
-从顶会看自监督学习最新研究进展
-
-https://mp.weixin.qq.com/s/cTlXMxcpzc7_5NVsTm1jcA
-
-学习一帧，为整段黑白视频上色：谷歌提出自监督视觉追踪模型
-
-https://mp.weixin.qq.com/s/Amr34SdrPZho1GQpFS7WBA
-
-见微知著：语义分割中的弱监督学习
-
-https://mp.weixin.qq.com/s/zOWA1oKbopZJuYIAYYlKTA
-
-港中文-商汤联合论文：自监督语义分割的混合与匹配调节
-
-https://mp.weixin.qq.com/s/5xlSoC5sgzsAwMYMSFCjnw
-
-TextTopicNet:CMU开源无标注高精度自监督模型
-
-https://mp.weixin.qq.com/s/343DfjOvkaozuxNK89V3zQ
-
-前景目标检测的无监督学习

@@ -9,6 +9,38 @@ category: graph
 
 # GCN（续）
 
+https://mp.weixin.qq.com/s/MBRTs2pIVypQxrcMOY4Lcg
+
+图卷积网络（GCN）入门详解
+
+https://mp.weixin.qq.com/s/phiRXPGfVHaxCN1aLZTzlw
+
+图神经网络三剑客：GCN、GAT与GraphSAGE
+
+https://mp.weixin.qq.com/s/TepgHukJ-Gx63pTjMH9R2g
+
+2020年，我终于决定入门GCN
+
+https://mp.weixin.qq.com/s/-ukPx32Vjkdz2_udBb55EA
+
+解读三种经典GCN中的Parameter Sharing
+
+https://mp.weixin.qq.com/s/RP6_H8ZHwJIlUt9YrsxvCA
+
+图卷积神经网络蒸馏知识，Distillating Knowledge from GCN
+
+https://mp.weixin.qq.com/s/GnjSuQ_BihO5bP5xO2xHJg
+
+万字长文带你入门GCN
+
+https://mp.weixin.qq.com/s/2PY1baildUoZaetYlsukIQ
+
+图卷积网络(GCN)的谱分析
+
+https://zhuanlan.zhihu.com/p/139359188
+
+关于GCN，我有三种写法
+
 https://www.zhihu.com/question/366088445
 
 请问全连接的图卷积网络(GCN)和self-attention这些机制有什么区别联系吗？
@@ -382,39 +414,3 @@ https://mp.weixin.qq.com/s/SGCtwYWfnxjcpMJeeH1b4w
 https://mp.weixin.qq.com/s/DOau_vTbwCauQ8mrHkGu9Q
 
 首个面向Facebook、arXiv网络图类的对抗攻击研究
-
-https://mp.weixin.qq.com/s/_0quf0IRe8mn4dnsBwf6Aw
-
-基于路径的实体图关系抽取模型
-
-https://mp.weixin.qq.com/s/jCgbBldpw4TGHUvN9WkJZg
-
-在对抗中学习网络结构——87页PPT带你学习Graph中的GAN
-
-https://mp.weixin.qq.com/s/xTZbfiLYHB64AJJRcw04qQ
-
-知识图和神经网络：如何有效读取图节点属性
-
-https://mp.weixin.qq.com/s/9fFjVSiMg-LwddXfNJuKuw
-
-DeepMind开源图网络库，一种结合图和神经网络的新方法
-
-https://mp.weixin.qq.com/s/5DmpgPN4t3p3H53Xu7_-3A
-
-北大、微软亚洲研究院：高效的大规模图神经网络计算
-
-https://mp.weixin.qq.com/s/BFJD8i_yg1Y6fxZS5or-rw
-
-Bengio最新论文提出GibbsNet：深度图模型中的迭代性对抗推断
-
-https://mp.weixin.qq.com/s/zg3yW7e4UKIs9-m6WmcbvA
-
-GraphWave：一种全新的无监督网络嵌入方法
-
-https://mp.weixin.qq.com/s/mamet6l_lA7fhoYkysZ7PQ
-
-华为联合LSE提出KONG：有序近邻图的核函数
-
-https://mp.weixin.qq.com/s/OnRB44tliuTFcjlmuRG3Xw
-
-图神经网络“理论在哪里“？

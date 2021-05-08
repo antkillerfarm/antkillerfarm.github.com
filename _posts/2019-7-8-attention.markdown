@@ -25,7 +25,7 @@ category: Attention
 
 上图是添加了Attention机制之后的seq2seq的框架图。
 
-需要注意的是，在通常的使用中，**W的值不仅和位置有关，还和时间有关**。因此，上图中的W的值在Step 1和Step 2中是**不同**的。假设输入语句长度为M，输出语句长度为N，词向量的长度D，则W是一个$$M\times N\times D$$的tensor。
+需要注意的是，在通常的使用中，**W的值不仅和位置有关，还和时间有关**。因此，上图中的W的值在Step 1和Step 2中是**不同**的。（上上图中，$$a_{t,2}$$的t也表明了这一点。）假设输入语句长度为M，输出语句长度为N，词向量的长度D，则W是一个$$M\times N\times D$$的tensor。
 
 如果不考虑时间问题，那么Attention就退化为普通的FC，这时的W就是一个$$M\times D$$的tensor了。因此，Attention的参数量比普通的FC要大的多。
 
@@ -178,11 +178,3 @@ https://mp.weixin.qq.com/s/I4FaPxj-8i3YHjaMoAniPQ
 $$head_i = Attention(\boldsymbol{Q}\boldsymbol{W}_i^Q,\boldsymbol{K}\boldsymbol{W}_i^K,\boldsymbol{V}\boldsymbol{W}_i^V)$$
 
 所谓“多头”（Multi-Head），就是指多做几次同样的事情（参数不共享），然后把结果拼接。
-
-## Self Attention
-
-到目前为止，对Attention层的描述都是一般化的，我们可以落实一些应用。比如，如果做阅读理解的话，Q可以是篇章的词向量序列，取K=V为问题的词向量序列，那么输出就是所谓的Aligned Question Embedding。
-
-而在Google的论文中，大部分的Attention都是Self Attention，即“自注意力”，或者叫内部注意力。
-
-所谓Self Attention，其实就是Attention(X,X,X)，X就是前面说的输入序列。也就是说，在序列内部做Attention，寻找序列内部的联系。

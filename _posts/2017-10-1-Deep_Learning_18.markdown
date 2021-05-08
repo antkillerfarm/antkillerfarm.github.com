@@ -9,6 +9,34 @@ category: DL
 
 # 无监督/半监督/自监督深度学习（续）
 
+https://zhuanlan.zhihu.com/p/30265894
+
+自监督学习近期进展
+
+https://mp.weixin.qq.com/s/qyQjKsgktWv9SihotaQX3w
+
+从顶会看自监督学习最新研究进展
+
+https://mp.weixin.qq.com/s/cTlXMxcpzc7_5NVsTm1jcA
+
+学习一帧，为整段黑白视频上色：谷歌提出自监督视觉追踪模型
+
+https://mp.weixin.qq.com/s/Amr34SdrPZho1GQpFS7WBA
+
+见微知著：语义分割中的弱监督学习
+
+https://mp.weixin.qq.com/s/zOWA1oKbopZJuYIAYYlKTA
+
+港中文-商汤联合论文：自监督语义分割的混合与匹配调节
+
+https://mp.weixin.qq.com/s/5xlSoC5sgzsAwMYMSFCjnw
+
+TextTopicNet:CMU开源无标注高精度自监督模型
+
+https://mp.weixin.qq.com/s/343DfjOvkaozuxNK89V3zQ
+
+前景目标检测的无监督学习
+
 https://mp.weixin.qq.com/s/DwY0oGu-G30Szs-ArI5WaQ
 
 程明明：面向弱监督的图像理解
@@ -370,31 +398,3 @@ NASNet: Google Brain经典作，改造搜索空间，性能全面超越人工网
 https://mp.weixin.qq.com/s/ClqOWx1RJGzoS0akI2s93w
 
 多媒体的AutoML与元学习，清华大学朱文武教授等
-
-https://mp.weixin.qq.com/s/QtYNb1bVnWghNFK6fbynLw
-
-激活函数如何进行自动学习和配置
-
-https://mp.weixin.qq.com/s/0fVNW5hekUNCsD6L9KL1iQ
-
-PNAS：渐进式神经网络搜索，准确率预测，21倍加速
-
-https://mp.weixin.qq.com/s/Ho6XDRYmOBs9TqLMq7aPAg
-
-MetaQNN: 与Google同场竞技，MIT经典作，基于Q-Learning的神经网络搜索
-
-https://mp.weixin.qq.com/s/5NGCr6oMW2p5u4kF7YMCPw
-
-NAS太难了，搜索结果堪比随机采样！华为ICLR 2020论文给出6条建议
-
-https://zhuanlan.zhihu.com/p/110527110
-
-Neural Architecture Search
-
-https://zhuanlan.zhihu.com/p/111213620
-
-AutoML在计算机视觉领域的能与不能
-
-https://mp.weixin.qq.com/s/MIJHiYk-CjYtmW_9zW4hjA
-
-Hyper-Parameter Optimization，56页pdf

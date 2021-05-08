@@ -296,3 +296,7 @@ https://zhuanlan.zhihu.com/p/342011052
 https://mp.weixin.qq.com/s/sJGvvwCkXCJ52MYSsjkwrg
 
 计算机视觉来看看苏伊士运河堵船（船舶检测）
+
+https://mp.weixin.qq.com/s/UHrYk7_oM0_WBy-FCQXM0g
+
+一文梳理水下目标检测方法

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 流浪地球, 黑洞成像
+title: 流浪地球
 category: Nature 
 ---
 

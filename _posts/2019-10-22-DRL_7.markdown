@@ -131,6 +131,10 @@ https://mp.weixin.qq.com/s/IaJoaQJw68JXBN93d680PQ
 
 深入浅出解读并思考AlphaGo
 
+https://mp.weixin.qq.com/s/foiyPVtLH5KVe_ST5rn-EQ
+
+深度学习与围棋：为围棋数据设计神经网络
+
 # MARL
 
 Multi-agent Reinforcement Learning(MARL)，一般被称为多智能体强化学习。与之相对的则是Single-agent Reinforcement Learning(SARL)。
