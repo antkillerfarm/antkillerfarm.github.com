@@ -247,6 +247,10 @@ https://mp.weixin.qq.com/s/SARm2GlHZHYKAFFRr9buXw
 
 Kaggle所有图像特征汇总
 
+https://mp.weixin.qq.com/s/YFx8E3piOLmdEfpjecRqxw
+
+特征工程方法总结
+
 # 计算机体系结构+
 
 ## GPU体系结构

@@ -9,6 +9,30 @@ category: DRL
 
 # DRL参考资源
 
+https://mp.weixin.qq.com/s/e6QOz-MQSn7n53EPtpw64w
+
+DeepMind强化学习综述：她可以很快，但快从慢中来
+
+https://zhuanlan.zhihu.com/p/72642285
+
+基于模型的强化学习论文合集
+
+https://zhuanlan.zhihu.com/p/77976582
+
+强化学习并行训练论文合集
+
+https://mp.weixin.qq.com/s/sHP03DAeZvdBxwVPuSNRPg
+
+如何丝滑地入门神经网络？写个AI赛车游戏，只训练4代就能安全驾驶
+
+https://mp.weixin.qq.com/s/1SZKhG1ZbD1pl-3YQD_umg
+
+6行代码搞定基本的RL算法，速度围观Reddit高赞帖
+
+https://mp.weixin.qq.com/s/6n5HawyR4AgH8Dq0gJMw2g
+
+强化学习的基本概念与代码实现
+
 https://mp.weixin.qq.com/s/S2eGPTON3XmfN830m4vaaA
 
 腾讯AI Lab：可自适应于不同环境和任务的强化学习方法
@@ -340,35 +364,3 @@ https://mp.weixin.qq.com/s/w4m4fG-a30AgulNPhBVC5w
 https://mp.weixin.qq.com/s/oyWyb58l4ztqIEyrk0g01A
 
 强化学习在美团“猜你喜欢”的实践
-
-https://zhuanlan.zhihu.com/p/48186354
-
-robot浅谈
-
-https://mp.weixin.qq.com/s/f-rmdWq3kJUJGhuPwU8JtQ
-
-深度策略梯度算法是真正的策略梯度算法吗？
-
-https://zhuanlan.zhihu.com/p/51202503
-
-强化学习在视觉上的应用（RL for computer Vision）
-
-https://mp.weixin.qq.com/s/Dq4HsRg05bVMjvrsrxfOOQ
-
-从这篇YouTube论文，剖析强化学习在工业级场景推荐系统中的应用
-
-https://mp.weixin.qq.com/s/cyaQt-SO7sgG49kuUyPJbQ
-
-旷视开源的深度强化学习绘画智能体论文解读
-
-https://mp.weixin.qq.com/s/curzH8WrFyl5WWT4lDfpwQ
-
-Chrome暗藏的恐龙跳一跳，已经被AI轻松掌握了
-
-https://www.cnblogs.com/massquantity/p/13842139.html
-
-Flink+强化学习搭建实时推荐系统
-
-https://mp.weixin.qq.com/s/zfVrmErz3ZaGz7Ha7qGoIw
-
-要提升微信看一看推荐混排的长期收益？试试深度强化学习

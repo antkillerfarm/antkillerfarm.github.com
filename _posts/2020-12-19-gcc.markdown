@@ -327,6 +327,10 @@ https://zhuanlan.zhihu.com/p/360385060
 
 TVM中的scheduler
 
+https://mp.weixin.qq.com/s/Kt4xDLo-NRui8Whl0DqcSA
+
+Data Flow和Control Flow
+
 # GLOW
 
 代码：

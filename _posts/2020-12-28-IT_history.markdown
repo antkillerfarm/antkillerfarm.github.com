@@ -305,6 +305,14 @@ https://mp.weixin.qq.com/s/scAAyxzOMqWwRl9ts4J4Ow
 
 20多年了，为什么国产CPU还是不行？
 
+https://mp.weixin.qq.com/s/1rQHCS511Kyd62-beT5fXQ
+
+第一个打电话的中国人，究竟是谁？
+
+https://mp.weixin.qq.com/s/3zd8VsZ3vNTqK72NWJNhLg
+
+风雨三十六年，中兴通讯的命运与沉浮
+
 # 内存
 
 https://mp.weixin.qq.com/s/HOhBNZfOf5xQIFLYQ5ntCw
@@ -360,19 +368,3 @@ TensorFlow中那些鲜为人知却又极其实用的知识
 https://mp.weixin.qq.com/s/XHKrkNf2bWLF7r7gzdU24w
 
 Quick, Draw!涂鸦分类递归神经网络
-
-https://mp.weixin.qq.com/s/QQednlKYl6t3aO0xCzgGmA
-
-带你轻松使用TensorFlow创建大型线性模型
-
-https://mp.weixin.qq.com/s/BfwTOtLnwnMsS3-PQQBHSg
-
-使用TensorFlow训练WDL模型性能问题定位与调优
-
-https://mp.weixin.qq.com/s/kw3BYTXdyhnIyVZrnQuPew
-
-基于深度学习和迁移学习的识花实践
-
-https://mp.weixin.qq.com/s/KVHeDOjFRTpRaXosFeHqHg
-
-实例介绍TensorFlow的输入流水线

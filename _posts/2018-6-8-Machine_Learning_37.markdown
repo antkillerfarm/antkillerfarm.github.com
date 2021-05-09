@@ -282,7 +282,7 @@ https://mp.weixin.qq.com/s/JR-GIXwHF45OysoE0qvwzw
 
 https://mp.weixin.qq.com/s/MYwvuD85PPs3PJA5tMxvgw
 
-6种时序异常检测思路总结！
+6种时序异常检测思路总结！（tsod）
 
 https://mp.weixin.qq.com/s/2hpQ_7Ih58d1RKYb1oW_Sg
 

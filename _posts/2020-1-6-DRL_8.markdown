@@ -7,6 +7,56 @@ category: DRL
 * toc
 {:toc}
 
+# MARL（续）
+
+https://mp.weixin.qq.com/s/e4hriDvTRLkg-mIifVWayw
+
+如何解决深度学习中的多体问题
+
+https://zhuanlan.zhihu.com/p/61060358
+
+Paper survey: Multi-Agent Reinforcement Learning
+
+https://zhang-yi-chi.github.io/2019/08/15/cooperative-multi-agent-rl/
+
+Cooperative Multi-Agent Reinforcement Learning
+
+https://mp.weixin.qq.com/s/pLN-FHNSDYPcKmJCa4vOYA
+
+机器人在线“偷懒”怎么办？阿里研究出了这两套算法
+
+https://mp.weixin.qq.com/s/dkJr29LqO2PdSR6ds7X2qg
+
+协作多智能体强化学习中的回报函数设计
+
+https://mp.weixin.qq.com/s/m18xiMRryXl_BoCxKVUbTA
+
+多Agent强化学习综述
+
+https://mp.weixin.qq.com/s/R12bVEDWpHydNair-P5TzA
+
+多智能体深度强化学习中的Q值路径分解
+
+https://mp.weixin.qq.com/s/1JJo0FgMVlhIy6R9CxI_sQ
+
+多智能体强化学习算法理论研究
+
+https://mp.weixin.qq.com/s/qnAXhfGb74ivRwlGcdApOQ
+
+一文详解多智能体强化学习的基础和应用
+
+https://mp.weixin.qq.com/s/4AfoQ6IBJ2rKbmKvYD1Dow
+
+多Agent深度强化学习综述(中文版)，21页pdf
+
+https://mp.weixin.qq.com/s/KPS6RWtmeawR_vPAY4Bh1A
+
+听说你的多智能体强化学习算法不work？那你用对MAPPO了吗?
+
+https://mp.weixin.qq.com/s/qof0GWI3Jfsy3Tpc41wa4A
+
+通过奖励随机化发现多智能体游戏中多样性策略行为，清华、UC伯克利等研究者提出全新算法RPG
+
 # StarCraft & AI
 
 AIIDE（Artificial Intelligence and Interactive Digital Entertainment）
@@ -340,55 +390,3 @@ https://mp.weixin.qq.com/s/xlnwB9e1ks-4M4djnyIAyQ
 https://mp.weixin.qq.com/s/VYIyWRykREjOyLu4YDhLeA
 
 61篇NIPS2019深度强化学习论文及部分解读
-
-https://mp.weixin.qq.com/s/e6QOz-MQSn7n53EPtpw64w
-
-DeepMind强化学习综述：她可以很快，但快从慢中来
-
-https://zhuanlan.zhihu.com/p/72642285
-
-基于模型的强化学习论文合集
-
-https://zhuanlan.zhihu.com/p/77976582
-
-强化学习并行训练论文合集
-
-https://mp.weixin.qq.com/s/sHP03DAeZvdBxwVPuSNRPg
-
-如何丝滑地入门神经网络？写个AI赛车游戏，只训练4代就能安全驾驶
-
-https://mp.weixin.qq.com/s/1SZKhG1ZbD1pl-3YQD_umg
-
-6行代码搞定基本的RL算法，速度围观Reddit高赞帖
-
-https://mp.weixin.qq.com/s/6n5HawyR4AgH8Dq0gJMw2g
-
-强化学习的基本概念与代码实现
-
-https://mp.weixin.qq.com/s/RLEuaiRdq6AbTSUcYQ5O3A
-
-深度强化学习在NLP怎么用？看清华黄民烈老师这一份120页《自然语言处理和搜索中的深度强化学习应用》讲义
-
-https://zhuanlan.zhihu.com/p/29019246
-
-基于策略的增强学习
-
-https://mp.weixin.qq.com/s/OY56lJ_NFf5vVAgKfKyx2A
-
-利用强化学习自动搜索最优化方法
-
-https://mp.weixin.qq.com/s/nYOOwVoijl1p4V0A7yaI3w
-
-机遇与挑战：用强化学习自动搜索优化算法
-
-http://mp.weixin.qq.com/s/TBVVdX3erOpXNjXmhLmxOw
-
-学“深度强化学习”，看懂DeepMind这篇文章就够了!
-
-https://mp.weixin.qq.com/s/7BsXPQ8wC6_fHulU63ZQiQ
-
-当强化学习遇见泛函分析
-
-https://mp.weixin.qq.com/s/uDFsWebfLmka-zZX3Y_8kg
-
-深度强化学习在面向任务的对话管理中的应用

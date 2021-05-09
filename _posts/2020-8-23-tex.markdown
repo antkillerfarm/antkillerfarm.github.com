@@ -372,3 +372,7 @@ https://mp.weixin.qq.com/s/czqO4Lo1Jt9zqg2UKNlLYg
 https://mp.weixin.qq.com/s/nT4GLtDtJ1MUg8TBHBDf_A
 
 足不出户也能放风筝？OpenGL一招搞定！
+
+https://mp.weixin.qq.com/s/7KdH2Zx3ugK6DXn5SYewAw
+
+盘点Python加密解密模块hashlib的7种加密算法

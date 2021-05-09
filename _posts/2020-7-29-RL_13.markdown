@@ -307,3 +307,19 @@ TensorFlow重大升级：自动将Python代码转为TF Graph，大幅简化动�
 https://mp.weixin.qq.com/s/06UKxX1xEZEDkxAzXjBItQ
 
 将显存一次性全部吃掉——TF的BFCAllocator
+
+https://mp.weixin.qq.com/s/QQednlKYl6t3aO0xCzgGmA
+
+带你轻松使用TensorFlow创建大型线性模型
+
+https://mp.weixin.qq.com/s/BfwTOtLnwnMsS3-PQQBHSg
+
+使用TensorFlow训练WDL模型性能问题定位与调优
+
+https://mp.weixin.qq.com/s/kw3BYTXdyhnIyVZrnQuPew
+
+基于深度学习和迁移学习的识花实践
+
+https://mp.weixin.qq.com/s/KVHeDOjFRTpRaXosFeHqHg
+
+实例介绍TensorFlow的输入流水线

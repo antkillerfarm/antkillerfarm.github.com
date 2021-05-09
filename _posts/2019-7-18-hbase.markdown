@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Hbase, 多维数组的行优先和列优先, DL框架怀古
+title:  Hbase, 多维数组的行优先和列优先, DL框架怀古, Zookeeper
 category: AI 
 ---
 
@@ -293,24 +293,44 @@ https://mp.weixin.qq.com/s/gWdeevVYctxjDDw9SOWe_Q
 
 PyTorch深度学习技术生态
 
-# Linux参考资源+++
+# Zookeeper
 
-https://mp.weixin.qq.com/s/5iyWeSeDzuA2cY7YBMhk7w
+http://zookeeper.apache.org/
 
-MMU那些事儿
+`bin/zkServer.sh status`
 
-https://mp.weixin.qq.com/s/0OeeYUgBBVVMtxscvzgJHw
+http://www.cnblogs.com/lpshou/archive/2013/06/14/3136904.html
 
-i++是线程安全的吗？
+zookeeper原理
 
-https://mp.weixin.qq.com/s/U0qr1oZYXBBmZnC5vsKYLQ
+https://mp.weixin.qq.com/s/WPyJC4nyLQGWk-OQylUHHw
 
-浅谈linux IO
+Zookeeper简单介绍
 
-https://mp.weixin.qq.com/s/3kgwoyYI90XHm1QPqFJAiQ
+http://www.ibm.com/developerworks/cn/opensource/os-cn-zookeeper/index.html
 
-内存分页不就够了？为什么还要分段？
+分布式服务框架Zookeeper--管理分布式环境中的数据
 
-https://mp.weixin.qq.com/s/9x1JOl4m_mj0WpsVgHu4rg
+https://mp.weixin.qq.com/s/uMj3JEhgyYw4CaIhP1-GTQ
 
-Linux文件系统与持久性内存介绍
+阿里巴巴为什么不用ZooKeeper做服务发现？
+
+https://mp.weixin.qq.com/s/KFzJAxL_xvrrjhubd7zH-Q
+
+Facebook为何放弃ZooKeeper转用自研配置管理系统？
+
+https://mp.weixin.qq.com/s/DigeE4YxuT55cSeyb1q1tQ
+
+ZooKeeper源码和实践揭秘
+
+https://mp.weixin.qq.com/s/Tb670Jdt4s7CKzGZZQRL_A
+
+用大白话给你解释Zookeeper的选举机制
+
+https://mp.weixin.qq.com/s/BejPSfvEe98nSch81WKgAg
+
+Zookeeper九个问题
+
+https://mp.weixin.qq.com/s/03A4LnDqNhNgQ5bSRIgR_Q
+
+一举拿下高可用与分布式协调系统设计

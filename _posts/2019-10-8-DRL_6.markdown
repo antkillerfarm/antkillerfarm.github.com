@@ -261,6 +261,16 @@ https://mp.weixin.qq.com/s/tJDmxsuS1QigYS75ZIdzRA
 
 微信团队开源围棋AI技术PhoenixGo，复现AlphaGo Zero论文
 
+## KataGo
+
+KataGo是2019年以后发起的一个新项目，主要解决了Leela Zero和ELF OpenGo耗费算力过多的问题。它不仅训练更快，推理也有极大改进，即使家用显卡PC也可在合理的时间算出结果。支持更多的规则（如日本规则），改善了AlphaGo胜势下缓手的缺陷。
+
+目前，KataGo的棋力已经超越了Leela Zero和ELF OpenGo。
+
+官网：
+
+https://katagotraining.org/
+
 ## 参考
 
 https://blog.csdn.net/amds123/article/details/70666594
@@ -286,39 +296,3 @@ DeepMind新一代围棋程序AlphaGo Zero再次登上Nature
 https://www.zhihu.com/question/66861459
 
 如何评价DeepMind发表在Nature上的AlphaGo Zero？
-
-https://deepmind.com/blog/alphago-zero-learning-scratch/
-
-AlphaGo Zero官方声明
-
-https://zhuanlan.zhihu.com/mathNote
-
-某牛的专栏，主要讲自制AlphaGo
-
-http://xtf615.com/2018/02/10/AlphaGo/
-
-Alpha Go论文解析
-
-http://xtf615.com/2018/02/12/AlphaGo-Zero/
-
-AlphaGo Zero论文解析
-
-http://xtf615.com/2018/02/24/AlphaZeroDesign/
-
-AlphaZero问题研究和算法设计与实现
-
-https://mp.weixin.qq.com/s/DC9QqHdWT0xFnowEBuJDbw
-
-自动化所解读“深度强化学习”：从AlphaGo到AlphaGoZero
-
-https://mp.weixin.qq.com/s/uZtaxRwROCqYmL2k6Muxaw
-
-从阿尔法狗元(AlphaGo Zero)的诞生看终极算法的可能性
-
-https://mp.weixin.qq.com/s/i5OmLu8aNbypiTUmP4teeQ
-
-刘遥行：深入浅出看懂AlphaGo Zero
-
-https://mp.weixin.qq.com/s/aBrwbB_DOGTen-6XL7LGFQ
-
-邓侃：白话蒙特卡洛树搜索和ResNet

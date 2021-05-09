@@ -331,6 +331,10 @@ https://mp.weixin.qq.com/s/1v84QyvH-k0lzRPOEyaBgw
 
 我们是如何改进YOLOv3进行红外小目标检测的？
 
+https://mp.weixin.qq.com/s/5TRm1vYx8dYVQHU7FdHdJg
+
+在目标检测中如何解决小目标的问题？
+
 # 花式NMS
 
 https://mp.weixin.qq.com/s/ro0lG3uMUPYNZA9rM3I_YQ

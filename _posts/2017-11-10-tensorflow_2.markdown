@@ -218,6 +218,10 @@ https://mp.weixin.qq.com/s/5zfKiP9Fxpl7suqBQILL-g
 
 还在用Tensorboard？机器学习实验管理平台大盘点
 
+https://mp.weixin.qq.com/s/8scMr0jcW87y6k_wFgOBEg
+
+使用Tensorboard投影进行高维向量的可视化
+
 # 模型文件
 
 tensorflow model包含2个文件：

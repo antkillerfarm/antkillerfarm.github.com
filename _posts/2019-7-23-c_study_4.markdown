@@ -433,3 +433,11 @@ Java反射到底慢在哪？
 https://mp.weixin.qq.com/s/DiphH8bvR8TtLyQmnTkpuw
 
 几种Java常用序列化框架的选型与对比
+
+https://mp.weixin.qq.com/s/oyxO-x0t5bVHB7TNVYxxNQ
+
+35个Java代码优化魔鬼细节
+
+https://mp.weixin.qq.com/s/ZSUMCKZVEvJUx7JRaBTVIQ
+
+一款Java开源的即时通讯IM聊天系统

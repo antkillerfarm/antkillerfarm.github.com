@@ -73,6 +73,10 @@ https://mp.weixin.qq.com/s/WYL43CEhVmsvjZDY7afMrA
 
 孪生网络：使用双头神经网络进行元学习
 
+https://mp.weixin.qq.com/s/bgZbIi4BvAFmVoAakciYGQ
+
+如何训练孪生神经网络
+
 # SENet
 
 无论是在Inception、DenseNet或者ShuffleNet里面，我们对所有通道产生的特征都是不分权重直接结合的，那为什么要认为所有通道的特征对模型的作用就是相等的呢？这是一个好问题，于是，ImageNet2017冠军SEnet就出来了。
