@@ -473,6 +473,10 @@ https://mp.weixin.qq.com/s/nLNHqP66VoTf_SmWkPgBxg
 
 Python Altair让可视化能互动
 
+https://mp.weixin.qq.com/s/wpxDGHBkeQW8orYRiyzDwQ
+
+这个Python库助力pandas智能可视化分析（LUX）
+
 ## 参考
 
 https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg
