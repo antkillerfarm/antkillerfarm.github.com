@@ -370,6 +370,10 @@ https://mp.weixin.qq.com/s/xM8uvYbX6VY8MVZrYkvCUg
 
 链接选项rpath的原理和应用
 
+https://www.cnblogs.com/Malphite/p/10405465.html
+
+Makefile中的-rpath/-rpath-link
+
 https://juejin.im/post/5e8844996fb9a03c6675b9d6
 
 我们按下电脑开机键的背后发生了什么？
