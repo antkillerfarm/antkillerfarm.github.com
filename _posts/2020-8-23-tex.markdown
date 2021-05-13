@@ -359,20 +359,40 @@ https://mp.weixin.qq.com/s/504MLGjCESZPOvv8AwY6Pw
 
 这篇寄存器讲的有点意思
 
-# python++
+# Java+++
 
-http://blog.csdn.net/linda1000/article/details/8315892
+https://mp.weixin.qq.com/s/JNN95s42I-46rIo2Umtd4A
 
-单引号、双引号和三双引号的区别
+Java日志体系权威总结
 
-https://mp.weixin.qq.com/s/czqO4Lo1Jt9zqg2UKNlLYg
+https://mp.weixin.qq.com/s/8Cpl8PoAP1TI4y_cWYsA5A
 
-手把手教你用Python创建微信聊天机器人
+排名前16的Java工具类
 
-https://mp.weixin.qq.com/s/nT4GLtDtJ1MUg8TBHBDf_A
+https://blog.csdn.net/mu_wind/article/details/109516995
 
-足不出户也能放风筝？OpenGL一招搞定！
+Java8 Stream：2万字20个实例，玩转集合的筛选、归约、分组、聚合
 
-https://mp.weixin.qq.com/s/7KdH2Zx3ugK6DXn5SYewAw
+https://mp.weixin.qq.com/s/oK6A3viNP3XafEvl7rzjKA
 
-盘点Python加密解密模块hashlib的7种加密算法
+如何实现Java类隔离加载？
+
+https://mp.weixin.qq.com/s/_3FVfZQuDftFpOf7cbuKgw
+
+Java泛型T，E，K，V，?，傻傻分不清？
+
+https://mp.weixin.qq.com/s/wij1mbRGzgahaCW7Vu5rgQ
+
+Java反射到底慢在哪？
+
+https://mp.weixin.qq.com/s/DiphH8bvR8TtLyQmnTkpuw
+
+几种Java常用序列化框架的选型与对比
+
+https://mp.weixin.qq.com/s/oyxO-x0t5bVHB7TNVYxxNQ
+
+35个Java代码优化魔鬼细节
+
+https://mp.weixin.qq.com/s/ZSUMCKZVEvJUx7JRaBTVIQ
+
+一款Java开源的即时通讯IM聊天系统

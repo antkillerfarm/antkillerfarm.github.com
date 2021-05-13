@@ -240,6 +240,22 @@ ss << a;
 ss >> res;
 ```
 
+----
+
+```cpp
+#define DispatchOnTensorType(tensor_type, function, ...)          \
+  switch (tensor_type->AsPrimitiveDataType()->GetDataType()) {    \
+    case ONNX_NAMESPACE::TensorProto_DataType_FLOAT:              \
+      function<float>(__VA_ARGS__);                               \
+      break;                                                      \
+    case ONNX_NAMESPACE::TensorProto_DataType_BOOL:               \
+      function<bool>(__VA_ARGS__);                                \
+      break;                                                      \
+    case ONNX_NAMESPACE::TensorProto_DataType_DOUBLE:             \
+      function<double>(__VA_ARGS__);                              \
+      break;                                                      \
+```
+
 ## POD
 
 POD，全称plain old data，plain代表它是一个普通类型，old代表它可以与c兼容，可以使用比如memcpy()这类c中最原始函数进行操作。
@@ -405,39 +421,3 @@ https://mp.weixin.qq.com/s/tMUUwT0g3bzxyRgq5GeMWg
 https://mp.weixin.qq.com/s/_sLQiyNm92n2LA5YMNTocQ
 
 Java字符串String那些事
-
-https://mp.weixin.qq.com/s/JNN95s42I-46rIo2Umtd4A
-
-Java日志体系权威总结
-
-https://mp.weixin.qq.com/s/8Cpl8PoAP1TI4y_cWYsA5A
-
-排名前16的Java工具类
-
-https://blog.csdn.net/mu_wind/article/details/109516995
-
-Java8 Stream：2万字20个实例，玩转集合的筛选、归约、分组、聚合
-
-https://mp.weixin.qq.com/s/oK6A3viNP3XafEvl7rzjKA
-
-如何实现Java类隔离加载？
-
-https://mp.weixin.qq.com/s/_3FVfZQuDftFpOf7cbuKgw
-
-Java泛型T，E，K，V，?，傻傻分不清？
-
-https://mp.weixin.qq.com/s/wij1mbRGzgahaCW7Vu5rgQ
-
-Java反射到底慢在哪？
-
-https://mp.weixin.qq.com/s/DiphH8bvR8TtLyQmnTkpuw
-
-几种Java常用序列化框架的选型与对比
-
-https://mp.weixin.qq.com/s/oyxO-x0t5bVHB7TNVYxxNQ
-
-35个Java代码优化魔鬼细节
-
-https://mp.weixin.qq.com/s/ZSUMCKZVEvJUx7JRaBTVIQ
-
-一款Java开源的即时通讯IM聊天系统
