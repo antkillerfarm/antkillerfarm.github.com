@@ -288,3 +288,21 @@ https://mp.weixin.qq.com/s/HUknNfaxNULc4Yvf5ajRBA
 https://mp.weixin.qq.com/s/4YXoSrYueQFWOC8sZH8LvQ
 
 跨平台Web Canvas渲染引擎架构的设计与思考
+
+# python++
+
+http://blog.csdn.net/linda1000/article/details/8315892
+
+单引号、双引号和三双引号的区别
+
+https://mp.weixin.qq.com/s/czqO4Lo1Jt9zqg2UKNlLYg
+
+手把手教你用Python创建微信聊天机器人
+
+https://mp.weixin.qq.com/s/nT4GLtDtJ1MUg8TBHBDf_A
+
+足不出户也能放风筝？OpenGL一招搞定！
+
+https://mp.weixin.qq.com/s/7KdH2Zx3ugK6DXn5SYewAw
+
+盘点Python加密解密模块hashlib的7种加密算法

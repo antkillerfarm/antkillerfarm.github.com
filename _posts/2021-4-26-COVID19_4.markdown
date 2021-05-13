@@ -9,6 +9,28 @@ category: COVID19
 
 # 科研（续）
 
+![](/images/img4/COVID19.png)
+
+https://www.zhihu.com/question/26658191
+
+南方汉族中Y染色体的相同率较高，线粒体DNA的相同率很低，是否说明北方汉族对南方男性进行过灭族屠杀？
+
+https://mp.weixin.qq.com/s/TE7sPT-8sAyzsV7vPWYmtA
+
+南非新冠病毒变体快速传播，哪些值得注意？
+
+https://view.inews.qq.com/wxn/20210105A037TJ00
+
+30多个国家和地区发现变异毒株，疫苗效果会受影响吗？
+
+https://www.zhihu.com/question/435655677
+
+新冠病毒在英国变异后传播力高出70%，这该怎么防范？变种病毒会导致更高死亡率吗？
+
+https://mp.weixin.qq.com/s/C8FF1OevQbsAtGFKJgN1jA
+
+令英国“大惊失色”的新冠病毒变异，是怎么回事？
+
 https://mp.weixin.qq.com/s/JUTXnFZ1z9lCw93EljKcIA
 
 俄罗斯女子体内的新冠病毒出现了18种变异？
@@ -312,27 +334,3 @@ https://mp.weixin.qq.com/s/tBoM9o3pK89bprK8npHLWA
 https://mp.weixin.qq.com/s/bVNkCHl7BPU_eEcAWksmww
 
 关于武汉新型冠状病毒肺炎的传播预测模型
-
-https://mp.weixin.qq.com/s/Lg1tJmO7aN9XNpZ6bs0cJA
-
-程序员硬核劝告：现在还不是出门的时候
-
-https://mp.weixin.qq.com/s/sv07R8HQXX2U0QOi5_dOwg
-
-河南1105例新冠肺炎数据告诉我们什么？
-
-https://mp.weixin.qq.com/s/qRzkS2itp-eloaBlA-VSGA
-
-基于排队论模型浅析各地医护人员驰援武汉的重要意义
-
-https://mp.weixin.qq.com/s/Rs2cTVPIa02NIkApvr076w
-
-全球COVID-19研究数据集正式开放，内含近3万篇论文和所需AI研究工具！
-
-https://mp.weixin.qq.com/s/ueuvLFxQAGNzBLHHyaBYMA
-
-如果新冠病毒是在亚美尼亚爆发会发生什么？程序员用Python进行模拟
-
-https://mp.weixin.qq.com/s/LGNGFf-LBMz3qyUFPr_BHA
-
-新冠疫情下，如何降低复工的职场感染风险？
