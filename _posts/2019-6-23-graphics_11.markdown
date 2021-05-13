@@ -391,6 +391,10 @@ https://zhuanlan.zhihu.com/p/358167791
 
 Vector的前世今生（1）：从辉煌到低谷
 
+https://zhuanlan.zhihu.com/p/368640768
+
+Vector的前世今生（2）：ARM SVE简述
+
 https://mp.weixin.qq.com/s/OQ3KUAi6HMyOS8k3J_1e6g
 
 关于超长指令集VLIW的一些讨论
