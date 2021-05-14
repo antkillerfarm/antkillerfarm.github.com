@@ -311,6 +311,18 @@ https://mp.weixin.qq.com/s/xYlCAUIue_z14Or4oyaCCg
 
 对比学习研究进展精要
 
+https://mp.weixin.qq.com/s/VlSoMmAGDblQ2UYhLD96gA
+
+什么是contrastive learning？
+
+https://mp.weixin.qq.com/s/qnG0YLf0yjs4aT9URRMDyw
+
+有监督对比学习的一个简单的例子
+
+https://mp.weixin.qq.com/s/h8loG3enT5U-5F2a2UflJg
+
+对比学习小综述
+
 ## MoCo
 
 https://mp.weixin.qq.com/s/9zaTjwwGPHHzSv1ZmHf8_g

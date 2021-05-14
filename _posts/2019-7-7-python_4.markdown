@@ -172,34 +172,6 @@ https://mp.weixin.qq.com/s/hJGaREpBP0j7rqCXSZQMvA
 
 把Python自动翻译成C++
 
-## Sphinx
-
-Sphinx可用于为python库生成doc。目前绝大多数python库的帮助文档都是用Sphinx生成的。
-
-官网：
-
-http://www.sphinx-doc.org/en/master/
-
-代码：
-
-https://github.com/sphinx-doc/sphinx
-
-Sphinx是如下网站的默认解决方案：
-
-https://readthedocs.org/
-
-Read the Docs网站包含了大量python库的帮助文档，还为另外一些库提供了Hosting服务，即便后者有独立的域名。
-
-参考：
-
-https://blog.csdn.net/preyta/article/details/73647937
-
-使用Sphinx为你的python模块自动生成文档
-
-https://www.ibm.com/developerworks/cn/opensource/os-sphinx-documentation/
-
-使用sphinx制作简洁而又美观的文档
-
 ## python调用GTK函数的一般规则
 
 众所周知，GTK库是用C语言编写的，其相关的文档提供的也是C函数的接口，python接口的文档相对较少，获得也不太容易。因此有必要掌握一下这方面基本的命名规则。（这里只讲方法，对深层次的调用原理不做探究。）
@@ -474,3 +446,47 @@ music21官网
 https://mp.weixin.qq.com/s/ONZD5RGI18rLTYhzIQQbVA
 
 用R包gm生成音乐
+
+## python执行shell脚本
+
+示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/misc/hello_cmd.py
+
+需要注意的是`shell`这个选项是有讲究的。
+
+`shell=True`:
+
+`args = ["ls -al ."]`
+
+`shell=False`:
+
+`args = ["ls","-al","."]`
+
+## Dear PyGui
+
+Dear PyGui是一个轻量级的GUI框架，可以利用GPU进行渲染。
+
+代码：
+
+https://github.com/hoffstadt/DearPyGui
+
+参考：
+
+https://mp.weixin.qq.com/s/t1DT7jyKj1moU1qnrn5GiQ
+
+好看又好用的GUI，你需要这七个Python必备库
+
+## Streamlit
+
+https://mp.weixin.qq.com/s/sZvawmQ1KH3b_hozAbeX9w
+
+如何用简单的Python为数据科学家编写Web应用程序？
+
+https://mp.weixin.qq.com/s/gVIVDR1pXdDArrZO56B86w
+
+如何用纯Python写Web应用？
+
+https://mp.weixin.qq.com/s/TV1MJfaOq27y2DVCGMuqhA
+
+用Pandas和Streamlit对时间序列数据集进行可视化过滤

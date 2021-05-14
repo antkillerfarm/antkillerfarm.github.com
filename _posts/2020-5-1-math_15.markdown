@@ -290,6 +290,14 @@ https://zhuanlan.zhihu.com/p/87438999
 
 李群和李代数（四）：姿态估计小结
 
+https://mp.weixin.qq.com/s/xGVvlVg6MxI5YjEF1giyWA
+
+机器人状态估计中的简明李群理论(一)
+
+https://mp.weixin.qq.com/s/7WebKui-so9YloZgovNsAg
+
+机器人状态估计中的简明李群理论(二)
+
 ## Sophus
 
 Sophus是一个C++写的Lie Groups的库。显然，它得名自Marius Sophus Lie。

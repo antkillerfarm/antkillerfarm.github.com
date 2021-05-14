@@ -1,11 +1,112 @@
 ---
 layout: post
-title:  区块链参考资源, 超算, Conv计算量分析
+title:  矿机江湖, 区块链参考资源
 category: resource 
 ---
 
 * toc
 {:toc}
+
+# 矿机江湖
+
+傻子的共识也是共识。
+
+### 2018.9
+
+https://mp.weixin.qq.com/s/yyoUoIUBUPV5zkeE88P7Iw
+
+矿机芯片：转型背后的江湖纷争与隐忧
+
+这篇文章把中国矿机界的几个主角的恩恩怨怨基本都讲了一遍，不错的江湖文章。
+
+只是比特币这东西价格起起落落，2018年第一季度，比特大陆豪赚20亿美元，利润甚至超过了近年风头甚高的NVIDIA，岂料第二季度，形势急转直下，坊间甚至有比特大陆亏损6、7亿美元的传闻。
+
+至于比特大陆的AI芯片，似乎对标的是NVIDIA的云服务领域。不是我小看比特大陆，AI芯片这东西光有钱，没有时间积累，是做不好的。
+
+### 2018.11
+
+http://finance.sina.com.cn/blockchain/roll/2018-11-16/doc-ihnvukff8764739.shtml
+
+算力之战：告诉你吴忌寒是怎么赢的 CSW是怎么输的
+
+### 2019.1
+
+http://tech.sina.com.cn/i/2018-10-10/doc-ihkvrhpt4844011.shtml
+
+矿机围城里的比特大陆：研发持续落后 公司四面楚歌
+
+詹克团、吴忌寒、杨作兴
+
+### 2019.11
+
+http://finance.ifeng.com/c/7rSObfR7d0p
+
+币圈风云：比特大陆詹克团被踢下台 战争或许才刚刚开始
+
+https://mp.weixin.qq.com/s/RgH3std9f5f6sMq8fHSGjQ
+
+36岁北航校友打造中国自主AI芯片第一股！挖矿起家，6年IPO，市值百亿（嘉楠创始人及CEO张楠赓）
+
+https://mp.weixin.qq.com/s/dFI5e4f2J7R7BHZrjtiWZg
+
+涉嫌职务侵占十万元！前比特大陆矿机芯片设计总监，神马矿机创始人杨作兴被捕
+
+### 参考
+
+短短几个月的时间，狗币的价格上涨了一百倍，屎币的价格上涨了28万倍，创造了2021年的财富神话。
+
+狗币和屎币，被币圈的人合称“狗屎双雄”。
+
+狗币，中文全称叫狗狗币，英文名叫DOGE。
+
+为了讽刺比特币，马库斯故意把狗狗币的总数设置为1200亿枚，而且每年必定增发50亿枚，数量永远膨胀，年年超发。
+
+SHIB，柴犬币，绰号狗狗币杀手，诞生的唯一目的就是为了搞死狗狗币。SHIB的发行量被定为了令所有人类都目瞪口呆的1000万亿枚。
+
+为了致敬自己的偶像V神，SHIB在发行之初，就把500万亿屎币直接发到了V神的数字地址上。至于V神是出售，还是销毁，那要看V神自己的选择。
+
+V神作为以太坊的创始人，币圈里神一样的人物，没想到如今屎币却成为了他最大的数字资产，价格远超他持有的以太币。
+
+中国也曾经兴起过一段虚拟货币热潮，也曾经诞生过不少这样的搞笑币。比如说AV币，女优币，嫩模币，韭菜币，马勒戈币。
+
+https://mp.weixin.qq.com/s/LzBsdLEaIHyfw6OyMHMyuw
+
+狗币涨112倍，屎币涨28万倍，这世界真魔幻
+
+----
+
+https://mp.weixin.qq.com/s/H860_Es3uO9ozDTnifNvgQ
+
+比特大陆前总监揭秘：一款古老又简单的电路，让S9成为了一代机皇
+
+https://mp.weixin.qq.com/s/umuSPhwBJSwRWSzqD6hf3g
+
+听过坟头蹦迪，但你听过坟头挖矿吗
+
+https://zhuanlan.zhihu.com/p/351521871
+
+骗局揭秘：你的矿机真的在挖矿吗？
+
+https://zhuanlan.zhihu.com/p/358569252
+
+闷声发大财，没人知道俄罗斯挖出了多少比特币
+
+https://www.zhihu.com/question/454794462
+
+chia(奇亚）最近很火爆，导致大容量硬盘市场缺货，chia的真实收益怎么样？
+
+https://mb.yidianzixun.com/article/0KTeDrnq
+
+正副校长迷上炒币在教室“挖矿” 挖崩全校网络
+
+https://mp.weixin.qq.com/s/FtgskvIWrkw2DwhoI24WEg
+
+走路就能赚钱，趣步的鬼话你也信
+
+https://mp.weixin.qq.com/s/kc0M19VFjfz8Ji1461V8nw
+
+狗狗币大火：一枚“山寨币”为啥被追着买？
+
 
 # 区块链参考资源
 
@@ -278,163 +379,3 @@ https://mp.weixin.qq.com/s/rlTJVV0PXjII2YJYENlwlw
 https://mp.weixin.qq.com/s/J6yF8fzvhLK-kJcdFXBxJg
 
 马斯克投15亿，价值47000美元的比特币，其实是一群数学家搞出来的……
-
-# 超算
-
-![](/images/img3/power.aug.gif)
-
-![](/images/img3/Supercomputers-history.png)
-
-Top 500超算之间的差距竟有3个数量级，从榜首到落榜差不多要10年时间。OS从2015年开始全都是Linux了。Windows在超算领域从来没有风光过，之前没钱，自然斗不过UNIX，后来又被Linux打趴下了。
-
-Sunway TaihuLight和Sierra的算力相当，但core的数量竟是后者的6.7倍，功耗是后者的2.06倍。差距明显啊！
-
-https://www.top500.org/
-
-超算排名网站
-
-https://zhuanlan.zhihu.com/p/33956771
-
-超算排名之中的地区和架构之争
-
-----
-
-![](/images/img3/SC.png)
-
-https://mp.weixin.qq.com/s/gJWTiMCovGMQ8ye_TovdOw
-
-富士通的这颗芯片凭啥让日本走向了世界之巅？
-
-https://www.zhihu.com/question/404217836
-
-如何看待全球超级计算机TOP 500榜单日本登顶，中国跌出前三？近年中国超算发展现状如何？
-
-# Conv计算量分析
-
-I: Input
-
-O: Output
-
-K: Kernel
-
-c: Channel
-
-h: Height
-
-w: Width
-
-forward:
-
-$$O = I * K$$
-
-filter gradient:
-
-因为Conv是不可交换群，所以：
-
-$$I' \star O = (I' \star I) * K$$
-
-I'是I的逆元。
-
-$$K = I' \star O$$
-
-input gradient:
-
-$$O \bullet K = I * (K \bullet K')$$
-
-$$I = O \bullet K'$$
-
-如果是FC运算的话，则上述所有二元运算符退化为矩阵乘法，I'为转置运算。
-
-## forward
-
-single point:
-
-$$I_c \times K_h \times K_w \times 2$$
-
-point number:
-
-$$O_c \times O_h \times O_w$$
-
-all:
-
-$$(O_c \times O_h \times O_w) \times (I_c \times K_h \times K_w \times 2)$$
-
-## backward
-
-- filter gradient
-
-single point:
-
-$$O_h \times O_w \times 2$$
-
-point number:
-
-$$I_c \times O_c \times K_h \times K_w$$
-
-all:
-
-$$(I_c \times O_c \times K_h \times K_w) \times (O_h \times O_w \times 2)$$
-
-- input gradient
-
-single point:
-
-$$K_h \times K_w \times 2$$
-
-point number:
-
-$$I_c \times O_c \times O_h \times O_w$$
-
-all:
-
-$$(I_c \times O_c \times O_h \times O_w) \times (K_h \times K_w \times 2)$$
-
-## 参数对计算量的影响
-
-pad/stride/dilation改变$$O_h,O_w$$。
-
-group改变$$K_o, O_c$$。
-
-multiplier改变$$O_c$$，但不改变$$K_o$$，计算量不变，IO增加N倍。所以将上述公式的$$O_c$$改为$$K_o$$即可满足所有情况。
-
-# 数据库参考资源+
-
-https://www.cnblogs.com/ahu-lichang/p/10899747.html
-
-数据库三大范式（1NF,2NF,3NF）及ER图
-
-https://mp.weixin.qq.com/s/m_JMXU6iMS4SckzWZYtIUA
-
-腾讯分布式数据库TDSQL金融级能力的架构原理解读
-
-https://mp.weixin.qq.com/s/jdPE9WClBuimIHVxJnwwUw
-
-字节跳动自研强一致在线KV&表格存储实践-上篇
-
-https://mp.weixin.qq.com/s/DvUBnWBqb0XGnicKUb-iqg
-
-字节跳动自研强一致在线KV&表格存储实践-下篇
-
-https://mp.weixin.qq.com/s/PPlrrtcdrtKT3afgWOU8Pg
-
-为什么数据库不应该使用外键
-
-https://mp.weixin.qq.com/s/k1sK-QQjVqdJnpWNCV0pUA
-
-并发环境下，先操作数据库还是先操作缓存？
-
-https://mp.weixin.qq.com/s/I3ca2HAuSTtUJSZyHNe1vA
-
-数据库读写分离要注意哪些细节
-
-https://mp.weixin.qq.com/s/oV5F_K2mmE_kK77uEZSjLg
-
-字节跳动分布式表格存储系统的演进
-
-https://mp.weixin.qq.com/s/ZjnRzI18plggKTv_nPBsEw
-
-字节跳动表格存储中的事务
-
-https://mp.weixin.qq.com/s/thg9xOKI-GWfADF5tXh29A
-
-面试官：了解数据库连接池吗？

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Mysql, Dubbo
+title:  Mysql, Dubbo, Spring
 category: technology 
 ---
 
@@ -149,6 +149,52 @@ https://mp.weixin.qq.com/s/pb3U4oYDSnmx0ZhLnVy58A
 
 MySQL为Null会导致5个问题，个个致命！
 
+https://mp.weixin.qq.com/s/WD804KImL5jCvq-EJUdmSw
+
+100道MySQL数据库经典面试题解析
+
+# 数据库参考资源
+
+https://www.cnblogs.com/ahu-lichang/p/10899747.html
+
+数据库三大范式（1NF,2NF,3NF）及ER图
+
+https://mp.weixin.qq.com/s/m_JMXU6iMS4SckzWZYtIUA
+
+腾讯分布式数据库TDSQL金融级能力的架构原理解读
+
+https://mp.weixin.qq.com/s/jdPE9WClBuimIHVxJnwwUw
+
+字节跳动自研强一致在线KV&表格存储实践-上篇
+
+https://mp.weixin.qq.com/s/DvUBnWBqb0XGnicKUb-iqg
+
+字节跳动自研强一致在线KV&表格存储实践-下篇
+
+https://mp.weixin.qq.com/s/PPlrrtcdrtKT3afgWOU8Pg
+
+为什么数据库不应该使用外键
+
+https://mp.weixin.qq.com/s/k1sK-QQjVqdJnpWNCV0pUA
+
+并发环境下，先操作数据库还是先操作缓存？
+
+https://mp.weixin.qq.com/s/I3ca2HAuSTtUJSZyHNe1vA
+
+数据库读写分离要注意哪些细节
+
+https://mp.weixin.qq.com/s/oV5F_K2mmE_kK77uEZSjLg
+
+字节跳动分布式表格存储系统的演进
+
+https://mp.weixin.qq.com/s/ZjnRzI18plggKTv_nPBsEw
+
+字节跳动表格存储中的事务
+
+https://mp.weixin.qq.com/s/thg9xOKI-GWfADF5tXh29A
+
+面试官：了解数据库连接池吗？
+
 # Dubbo
 
 Dubbo是一个分布式服务框架，致力于提供高性能和透明化的RPC远程服务调用方案，是阿里巴巴SOA服务化治理方案的核心框架，每天为2,000+个服务提供3,000,000,000+次访问量支持，并被广泛应用于阿里巴巴集团的各成员站点。
@@ -180,6 +226,56 @@ https://mp.weixin.qq.com/s/ZW4tO01gC65kZgOUappL9Q
 https://blog.csdn.net/m0_38110132/article/details/81481454
 
 直观讲解--RPC调用和HTTP调用的区别
+
+# Spring
+
+Spring是一个Java Web应用框架。官网：
+
+http://spring.io/
+
+## Ubuntu安装Eclipse、Spring
+
+1.安装Eclipse
+
+`sudo apt-get install eclipse`
+
+2.安装Spring
+
+`sudo apt-get install libspring-web-portlet-java`
+
+注意：ubuntu软件仓库中还有一个叫做spring的游戏引擎，不要弄错了。
+
+http://www.mkyong.com/spring/quick-start-maven-spring-example/
+
+Maven+Spring hello world example
+
+http://wiki.jikexueyuan.com/project/spring/
+
+Spring 教程
+
+## Restful
+
+http://spring.io/guides/gs/rest-service/
+
+## Spring Boot
+
+https://www.tianmaying.com/tutorial/deploy-spring-boot-application
+
+部署Spring Boot应用
+
+http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+
+Spring Boot默认的配置文件
+
+https://mp.weixin.qq.com/s/7I5OfGnGtXk2u9PtGLObCA
+
+七个开源的Spring Boot前后端分离项目
+
+## WebService
+
+https://spring.io/guides/gs/producing-web-service/
+
+http://localhost:9999/ws/countries.wsdl
 
 # Linux参考资源++
 
@@ -302,3 +398,33 @@ https://mp.weixin.qq.com/s/3kgwoyYI90XHm1QPqFJAiQ
 https://mp.weixin.qq.com/s/9x1JOl4m_mj0WpsVgHu4rg
 
 Linux文件系统与持久性内存介绍
+
+# TensorFlow+++
+
+https://mp.weixin.qq.com/s/n4nEtyRc5G44kj3zmHpd5g
+
+TensorFlow实战——图像分类神经网络模型
+
+https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
+
+简易浣熊识别器是如何实现的
+
+http://www.jianshu.com/p/d443aab9bcb1
+
+在TensorFlow上使用LSTM进行情感分析
+
+https://mp.weixin.qq.com/s/gW_KX6eF9XEsSUO1UzJ3WQ
+
+基于LSTM的情感分析
+
+https://mp.weixin.qq.com/s/KZhL477ApHgQfmM2xFrYJw
+
+Tensorlang：基于TensorFlow的可微编程语言
+
+https://mp.weixin.qq.com/s/_9NJ6QLQArUAD1DKb0KRfA
+
+如何使用TensorFlow mobile部署模型到移动设备
+
+https://mp.weixin.qq.com/s/e_TzQxFLAonLMyYAhte6Cg
+
+face-api.js：在浏览器中进行人脸识别的JavaScript接口

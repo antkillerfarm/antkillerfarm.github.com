@@ -107,6 +107,10 @@ Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被
 
 >László Bélády，1928年生，匈牙利计算机科学家。Technical University of Budapest本硕。IBM研究员。
 
+LFU: least frequently used
+
+LRU: least recently used
+
 https://mp.weixin.qq.com/s/AdmEd1FHxpZUwSGYy3qggg
 
 利用cpu缓存实现高性能程序

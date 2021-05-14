@@ -103,7 +103,7 @@ https://github.com/ellson/graphviz/
 
 安装方法：
 
-`sudo apt-get install graphviz graphviz-dev`
+`sudo apt install graphviz libgraphviz-dev`
 
 其中，后者是graphviz的开发工具包，便于其他软件集成graphviz的相关功能。
 

@@ -9,50 +9,6 @@ category: language
 
 # Python
 
-## python执行shell脚本
-
-示例：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/misc/hello_cmd.py
-
-需要注意的是`shell`这个选项是有讲究的。
-
-`shell=True`:
-
-`args = ["ls -al ."]`
-
-`shell=False`:
-
-`args = ["ls","-al","."]`
-
-## Dear PyGui
-
-Dear PyGui是一个轻量级的GUI框架，可以利用GPU进行渲染。
-
-代码：
-
-https://github.com/hoffstadt/DearPyGui
-
-参考：
-
-https://mp.weixin.qq.com/s/t1DT7jyKj1moU1qnrn5GiQ
-
-好看又好用的GUI，你需要这七个Python必备库
-
-## Streamlit
-
-https://mp.weixin.qq.com/s/sZvawmQ1KH3b_hozAbeX9w
-
-如何用简单的Python为数据科学家编写Web应用程序？
-
-https://mp.weixin.qq.com/s/gVIVDR1pXdDArrZO56B86w
-
-如何用纯Python写Web应用？
-
-https://mp.weixin.qq.com/s/TV1MJfaOq27y2DVCGMuqhA
-
-用Pandas和Streamlit对时间序列数据集进行可视化过滤
-
 ## python调试
 
 首先：
@@ -105,6 +61,10 @@ https://mp.weixin.qq.com/s/dlMqyVy92S_dFaBAuV1RhA
 
 Python和C/C++拓展程序的性能优化
 
+https://mp.weixin.qq.com/s/Q5P037abid03H4-ypWa7qg
+
+用了三年的pdb，没想到还能这么调试
+
 ## SCons
 
 blade的底层用到了SCons。后者是一个python语言写的构建工具，可用于多种编程语言程序的构建。
@@ -120,6 +80,10 @@ http://www.scons.org/
 和make类似，可以用如下方式并行编译：
 
 `scons -j 4`
+
+clean:
+
+`scons -c`
 
 使用示例：
 
@@ -450,3 +414,19 @@ https://mp.weixin.qq.com/s/5xs1ivkrUAP_Rr9P-EMc5g
 https://mp.weixin.qq.com/s/HGH2e_0ocHv2VWsjOje9BQ
 
 程序员必知的Python陷阱与缺陷列表
+
+http://blog.csdn.net/linda1000/article/details/8315892
+
+单引号、双引号和三双引号的区别
+
+https://mp.weixin.qq.com/s/czqO4Lo1Jt9zqg2UKNlLYg
+
+手把手教你用Python创建微信聊天机器人
+
+https://mp.weixin.qq.com/s/nT4GLtDtJ1MUg8TBHBDf_A
+
+足不出户也能放风筝？OpenGL一招搞定！
+
+https://mp.weixin.qq.com/s/7KdH2Zx3ugK6DXn5SYewAw
+
+盘点Python加密解密模块hashlib的7种加密算法

@@ -241,6 +241,14 @@ https://mp.weixin.qq.com/s/rvH-gvgbjLITyP8QOuzgKA
 
 我们在新疆发现了一个建天文台的好地方
 
+https://mp.weixin.qq.com/s/03FiFl8hK8Ilbe0Amh278A
+
+发射至今44年，已飞出日球顶层的旅行者1号仍在回传数据！是如何实现的？
+
+https://mp.weixin.qq.com/s/BsAbS1QadPcBDqHYr7eiQA
+
+你绝对没见过的4种天气
+
 # 模型压缩与加速进阶+
 
 https://mp.weixin.qq.com/s/5NM9M1oY8bwsEqdBRVYpMg

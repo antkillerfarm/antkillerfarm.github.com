@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数据结构 & 普通CS算法, 设计模式
+title:  数据结构 & 普通CS算法, 设计模式, 超算
 category: resource 
 ---
 
@@ -142,6 +142,10 @@ Bloom Filter的数学背景
 https://mp.weixin.qq.com/s/aPepcwG_VMioqGQ_Fp3deg
 
 海量数据处理利器之布隆过滤器
+
+https://zhuanlan.zhihu.com/p/371219898
+
+布隆过滤器、LRU Cache
 
 ## 红黑树
 
@@ -354,6 +358,36 @@ https://mp.weixin.qq.com/s/9gDGQhzRAL3pj35VAinZbQ
 https://mp.weixin.qq.com/s/KYq_nEXQ-5WYdYzZvGLGGg
 
 我向面试官讲解了单例模式，他对我竖起了大拇指
+
+# 超算
+
+![](/images/img3/power.aug.gif)
+
+![](/images/img3/Supercomputers-history.png)
+
+Top 500超算之间的差距竟有3个数量级，从榜首到落榜差不多要10年时间。OS从2015年开始全都是Linux了。Windows在超算领域从来没有风光过，之前没钱，自然斗不过UNIX，后来又被Linux打趴下了。
+
+Sunway TaihuLight和Sierra的算力相当，但core的数量竟是后者的6.7倍，功耗是后者的2.06倍。差距明显啊！
+
+https://www.top500.org/
+
+超算排名网站
+
+https://zhuanlan.zhihu.com/p/33956771
+
+超算排名之中的地区和架构之争
+
+----
+
+![](/images/img3/SC.png)
+
+https://mp.weixin.qq.com/s/gJWTiMCovGMQ8ye_TovdOw
+
+富士通的这颗芯片凭啥让日本走向了世界之巅？
+
+https://www.zhihu.com/question/404217836
+
+如何看待全球超级计算机TOP 500榜单日本登顶，中国跌出前三？近年中国超算发展现状如何？
 
 # Android研究+
 

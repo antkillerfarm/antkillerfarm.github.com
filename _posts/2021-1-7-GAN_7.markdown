@@ -173,6 +173,10 @@ https://mp.weixin.qq.com/s/n8c2-NPtVe-k2L6qvEHsUA
 
 改善图像处理效果的五大生成对抗网络
 
+https://mp.weixin.qq.com/s/imOFQL01RaXUuZwew1izzg
+
+基于GAN来做低光照图像增强，EnlightenGAN论文解读
+
 # VAE参考资源+
 
 https://zhuanlan.zhihu.com/p/60330303

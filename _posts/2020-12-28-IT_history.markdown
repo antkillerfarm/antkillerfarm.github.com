@@ -313,6 +313,10 @@ https://mp.weixin.qq.com/s/3zd8VsZ3vNTqK72NWJNhLg
 
 风雨三十六年，中兴通讯的命运与沉浮
 
+https://mp.weixin.qq.com/s/8Xb7WGqivdma6x7dP2c70w
+
+英特尔与AMD的x86服务器战争编年史
+
 # 内存
 
 https://mp.weixin.qq.com/s/HOhBNZfOf5xQIFLYQ5ntCw

@@ -263,6 +263,10 @@ https://mp.weixin.qq.com/s/NmS1dbeIsQomsWYI8-OyZg
 
 阿波罗13号“伟大失败”50周年，NASA发布纪录片追忆奥德赛号逃生往事
 
+https://mp.weixin.qq.com/s/1Jm00gCel41frG43oT9yyA
+
+他是探月英雄，但没登上过月球（Michael Collins）
+
 ----
 
 ![](/images/img3/india_moon.jpg)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Qt, WebService, Spring
+title:  Qt, WebService, Doxygen, Sphinx
 category: technology 
 ---
 
@@ -279,82 +279,82 @@ https://my.oschina.net/fuckmylife0/blog/325432
 
 jaxws-demo-client就是具体的客户端实现了，可以看出相比于上一步的桩代码，这里的代码文件，数量上要少得多。
 
-# Spring
+# Doxygen
 
-Spring是一个Java Web应用框架。官网：
+代码：
 
-http://spring.io/
+https://github.com/doxygen/doxygen
 
-## Ubuntu安装Eclipse、Spring
+文档：
 
-1.安装Eclipse
+http://cs.swan.ac.uk/~csoliver/ok-sat-library/internet_html/doc/doc/Doxygen/1.7.6.1/html/
 
-`sudo apt-get install eclipse`
+安装：
 
-2.安装Spring
+`sudo apt install doxygen-gui`
 
-`sudo apt-get install libspring-web-portlet-java`
+命令行工具可以通过`doxygen`命令运行，而图形界面可以通过`doxywizard`命令运行。
 
-注意：ubuntu软件仓库中还有一个叫做spring的游戏引擎，不要弄错了。
+参考：
 
-http://www.mkyong.com/spring/quick-start-maven-spring-example/
+https://www.jianshu.com/p/bf5afbbe183b
 
-Maven+Spring hello world example
+Doxygen文档生成工具教程
 
-http://wiki.jikexueyuan.com/project/spring/
+https://zhuanlan.zhihu.com/p/100223113
 
-Spring 教程
+Doxygen快速入门
 
-## Restful
+https://ahnniu.github.io/2014/10/15/doxygen/
 
-http://spring.io/guides/gs/rest-service/
+自定义Doxygen生成小而美的文档
 
-## Spring Boot
+# Sphinx
 
-https://www.tianmaying.com/tutorial/deploy-spring-boot-application
+Sphinx可用于为python库生成doc。目前绝大多数python库的帮助文档都是用Sphinx生成的。
 
-部署Spring Boot应用
+官网：
 
-http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+http://www.sphinx-doc.org/en/master/
 
-Spring Boot默认的配置文件
+代码：
 
-https://mp.weixin.qq.com/s/7I5OfGnGtXk2u9PtGLObCA
+https://github.com/sphinx-doc/sphinx
 
-七个开源的Spring Boot前后端分离项目
+Sphinx是如下网站的默认解决方案：
 
-## WebService
+https://readthedocs.org/
 
-https://spring.io/guides/gs/producing-web-service/
+Read the Docs网站包含了大量python库的帮助文档，还为另外一些库提供了Hosting服务，即便后者有独立的域名。
 
-http://localhost:9999/ws/countries.wsdl
+参考：
 
-# TensorFlow+++
+https://blog.csdn.net/preyta/article/details/73647937
 
-https://mp.weixin.qq.com/s/n4nEtyRc5G44kj3zmHpd5g
+使用Sphinx为你的python模块自动生成文档
 
-TensorFlow实战——图像分类神经网络模型
+https://www.ibm.com/developerworks/cn/opensource/os-sphinx-documentation/
 
-https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
+使用sphinx制作简洁而又美观的文档
 
-简易浣熊识别器是如何实现的
+## for C++
 
-http://www.jianshu.com/p/d443aab9bcb1
+https://exhale.readthedocs.io/en/latest/
 
-在TensorFlow上使用LSTM进行情感分析
+参考：
 
-https://mp.weixin.qq.com/s/gW_KX6eF9XEsSUO1UzJ3WQ
+https://www.bilibili.com/read/cv3247399/
 
-基于LSTM的情感分析
+如何使用Sphinx生成C++文档
 
-https://mp.weixin.qq.com/s/KZhL477ApHgQfmM2xFrYJw
+https://zhuanlan.zhihu.com/p/83487114
 
-Tensorlang：基于TensorFlow的可微编程语言
+apiDoc-超简单的文档生成器
 
-https://mp.weixin.qq.com/s/_9NJ6QLQArUAD1DKb0KRfA
+https://apidocjs.com/
 
-如何使用TensorFlow mobile部署模型到移动设备
+APIDOC
 
-https://mp.weixin.qq.com/s/e_TzQxFLAonLMyYAhte6Cg
+https://github.com/rigwild/apidoc-markdown
 
-face-api.js：在浏览器中进行人脸识别的JavaScript接口
+https://github.com/apidoc/apidoc
