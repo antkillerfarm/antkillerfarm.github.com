@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Cocos2d-x v3在Qt 5上的移植, Matlab
+title:  Cocos2d-x v3在Qt 5上的移植, 代码文档生成工具
 category: technology 
 ---
 
@@ -198,108 +198,118 @@ https://github.com/ascetic85/quick-cocos2d-x-20130509
 
 这个代码有些老，是基于cocos2d-x v2的，但是基本的思路是一样的。
 
-# Matlab
+# 代码文档生成工具
 
-![](/images/img4/Matlab.jpg)
+## Doxygen
 
-在MATLAB软件诞生之前，大约1965年，计算机只能生成和输出二维图像，对于L-型膜结构(L-Shaped Membrane)只能生成下图左侧的二维平面效果。直到1990年，MATLAB 3.5发布，3.5版本利用了隐藏线算法(Hidden Line Algorithm)，可以实现黑白网格的三维立体图像的生成。1993年，MATLAB 4进一步实现了彩色化。1995年，MATLAB 4.2利用了网格光滑化算法(Crude Shaping Algorithm)将L型网格进一步光滑处理。1995年，MATLAB 5实现了生成完全光滑和打光效果。
+代码：
 
-而Mathworks公司也将他们引以为傲的进步作为了MATLAB软件的图标！这个图标反映的正是Mathworks技术的不断迭代升级。
+https://github.com/doxygen/doxygen
 
-至于为啥是L-Shaped Membrane而不是其他呢？因为这是Mathworks创始人之一Moler的博士课题
+文档：
 
-https://www.zhihu.com/answer/1294927798
-
-如果中国重新开发像MATLAB、solidworks这样的软件大概需要多久？
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/30905298
-
-XML和MATLAB交互的基本操作
-
-https://mp.weixin.qq.com/s/QkICCbTp53lWOyeZx63-sw
-
-后MATLAB时代的七种开源替代，一种堪称完美！
-
-https://mp.weixin.qq.com/s/vV8kFF7e1uxjMR48_uRcSw
-
-MATLAB动画没有密秘
-
-## GNU Octave
-
-GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。
-
-官网：
-
-https://gnu.org/software/octave/
-
-安装方法:
-
-`sudo apt-get install octave`
-
-## spyder
-
-spyder是一个Python的IDE，提供了和Matlab类似的数据可视化界面。
+http://cs.swan.ac.uk/~csoliver/ok-sat-library/internet_html/doc/doc/Doxygen/1.7.6.1/html/
 
 安装：
 
-`sudo apt install spyder`
+`sudo apt install doxygen-gui`
 
-## GeoGebra
+命令行工具可以通过`doxygen`命令运行，而图形界面可以通过`doxywizard`命令运行。
 
-GeoGebra是一个结合“几何”、“代数”与“微积分”的动态数学软件，由佛罗里达州亚特兰大学的数学教授Markus Hohenwarter所设计。
+参考：
+
+https://www.jianshu.com/p/bf5afbbe183b
+
+Doxygen文档生成工具教程
+
+https://zhuanlan.zhihu.com/p/100223113
+
+Doxygen快速入门
+
+https://ahnniu.github.io/2014/10/15/doxygen/
+
+自定义Doxygen生成小而美的文档
+
+## Sphinx
+
+Sphinx可用于为python库生成doc。目前绝大多数python库的帮助文档都是用Sphinx生成的。
 
 官网：
 
-https://www.geogebra.org/
+http://www.sphinx-doc.org/en/master/
 
-## Maxima
+代码：
 
-微积分的数值解很多软件都能计算，但解析解就不行了。Maxima就是这样一款Computer Algebra System的软件。
+https://github.com/sphinx-doc/sphinx
 
-官网：
+Sphinx是如下网站的默认解决方案：
 
-http://maxima.sourceforge.net/
+https://readthedocs.org/
 
-# OpenCV+
+Read the Docs网站包含了大量python库的帮助文档，还为另外一些库提供了Hosting服务，即便后者有独立的域名。
 
-https://mp.weixin.qq.com/s/HmOiQnkaqxcFPOODnOeUkw
+参考：
 
-使用OpenCV检测坑洼
+https://blog.csdn.net/preyta/article/details/73647937
 
-https://mp.weixin.qq.com/s/BTmozO6Yr-Jsfm4-YXh2Mg
+使用Sphinx为你的python模块自动生成文档
 
-基于OpenCV的图像梯度与边缘检测
+https://www.ibm.com/developerworks/cn/opensource/os-sphinx-documentation/
 
-https://mp.weixin.qq.com/s/QYnXiAMFC3k_wQIwiaeWQg
+使用sphinx制作简洁而又美观的文档
 
-三行代码，OpenCV轻松生成19种色彩风格图像
+## for C++
 
-https://mp.weixin.qq.com/s/4LQBY0rMJk0tU8lF3fgHfQ
+https://exhale.readthedocs.io/en/latest/
 
-基于OpenCV的图像阴影去除
+参考：
 
-https://mp.weixin.qq.com/s/kH6K6L6-BYnYE-g46WhNCg
+https://www.bilibili.com/read/cv3247399/
 
-在OpenCV中使用色彩校正
+如何使用Sphinx生成C++文档
 
-https://mp.weixin.qq.com/s/K4P8151BuM4DQPSK-KzPFQ
+## apiDoc
 
-OpenCV图像旋转的原理与技巧
+`sudo npm install apidoc apidoc-markdown -g`
 
-https://mp.weixin.qq.com/s/hGONFisdtwcF5CRSB9IF6g
+apidoc.json：
 
-图像处理基础：颜色空间及其OpenCV实现
+```json
+{
+  "name": "apidoc-demo",
+  "description": "You write something here to describe your project",
+  "title": "The title of this doc"
+}
+```
 
-https://mp.weixin.qq.com/s/0Z600IIGscgrREgLUqjLuA
+apidoc demo:
 
-手把手教你用Python做一个图像融合demo
+```cpp
+/**
+ * @api {get} /user/:id Request User information
+ * @apiName GetUser
+ * @apiGroup User
+ *
+ * @apiParam {Number} id Users unique ID.
+ *
+ * @apiSuccess {String} firstname Firstname of the User.
+ * @apiSuccess {String} lastname  Lastname of the User.
+ */
+```
 
-https://mp.weixin.qq.com/s/vo1v5dYGLMqzCSUG9gPvag
+```bash
+apidoc -i src/ -o docs/
+apidoc-markdown -p ./docs/ -o doc.md
+```
 
-使用OpenCV进行图像编辑--绘画和素描
+https://zhuanlan.zhihu.com/p/83487114
 
-https://mp.weixin.qq.com/s/EkxXV7Bizf4JxG15SQb79w
+apiDoc-超简单的文档生成器
 
-修改OpenCV一行代码，提升14%图像匹配效果（BEBLID(Boosted Efficient Binary Local Image Descriptor)是一个2020年才开发出来的算子）
+https://apidocjs.com/
+
+APIDOC
+
+https://github.com/rigwild/apidoc-markdown
+
+https://github.com/apidoc/apidoc

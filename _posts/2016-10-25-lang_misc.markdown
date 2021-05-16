@@ -105,7 +105,19 @@ http://www.15yan.com/story/5Y8BZqIGwjg/
 
 # Javascript
 
-## WebAssembly（续）
+# WebAssembly
+
+WebAssembly，简称Wasm，是一种能在浏览器上执行的二进制虚拟机字节码。
+
+官网：
+
+https://webassembly.org/
+
+参考：
+
+https://www.ibm.com/developerworks/cn/web/wa-lo-webassembly-status-and-reality/index.html
+
+WebAssembly现状与实战
 
 https://www.jianshu.com/p/bff8aa23fe4d
 
@@ -288,19 +300,3 @@ ES4 Abandoned
 ES5 2009
 
 ES6 2015
-
-可以看出ES3是第一个普及版，没有谁不支持。ES4由于和ES3差异过大，而被废弃，从未发布。ES5是第二个普及版，现在（2020.8）即使再考虑兼容性，也就到ES5为止了。
-
-ES6在2018年以后基本普及，新项目如无特殊需要，至少应支持ES6。
-
-ES6加入了若干面向对象开发的特性，使得可以用来编写复杂的大型应用程序。
-
-环境：
-
-https://www.caniuse.com/#search=es6
-
-ES的兼容性概览
-
-教程：
-
-https://www.runoob.com/w3cnote/es6-tutorial.html

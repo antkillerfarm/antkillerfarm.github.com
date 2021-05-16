@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java
+title:  Java（一）
 category: language 
 ---
 

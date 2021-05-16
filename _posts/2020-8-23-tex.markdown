@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Github显示数学公式, 汇编
+title:  Github显示数学公式, 汇编, Matlab
 category: language 
 ---
 
@@ -363,44 +363,66 @@ https://mp.weixin.qq.com/s/504MLGjCESZPOvv8AwY6Pw
 
 这篇寄存器讲的有点意思
 
-# Java+++
+# Matlab
 
-https://mp.weixin.qq.com/s/JNN95s42I-46rIo2Umtd4A
+![](/images/img4/Matlab.jpg)
 
-Java日志体系权威总结
+在MATLAB软件诞生之前，大约1965年，计算机只能生成和输出二维图像，对于L-型膜结构(L-Shaped Membrane)只能生成下图左侧的二维平面效果。直到1990年，MATLAB 3.5发布，3.5版本利用了隐藏线算法(Hidden Line Algorithm)，可以实现黑白网格的三维立体图像的生成。1993年，MATLAB 4进一步实现了彩色化。1995年，MATLAB 4.2利用了网格光滑化算法(Crude Shaping Algorithm)将L型网格进一步光滑处理。1995年，MATLAB 5实现了生成完全光滑和打光效果。
 
-https://mp.weixin.qq.com/s/8Cpl8PoAP1TI4y_cWYsA5A
+而Mathworks公司也将他们引以为傲的进步作为了MATLAB软件的图标！这个图标反映的正是Mathworks技术的不断迭代升级。
 
-排名前16的Java工具类
+至于为啥是L-Shaped Membrane而不是其他呢？因为这是Mathworks创始人之一Moler的博士课题
 
-https://blog.csdn.net/mu_wind/article/details/109516995
+https://www.zhihu.com/answer/1294927798
 
-Java8 Stream：2万字20个实例，玩转集合的筛选、归约、分组、聚合
+如果中国重新开发像MATLAB、solidworks这样的软件大概需要多久？
 
-https://mp.weixin.qq.com/s/oK6A3viNP3XafEvl7rzjKA
+## 参考
 
-如何实现Java类隔离加载？
+https://zhuanlan.zhihu.com/p/30905298
 
-https://mp.weixin.qq.com/s/_3FVfZQuDftFpOf7cbuKgw
+XML和MATLAB交互的基本操作
 
-Java泛型T，E，K，V，?，傻傻分不清？
+https://mp.weixin.qq.com/s/QkICCbTp53lWOyeZx63-sw
 
-https://mp.weixin.qq.com/s/wij1mbRGzgahaCW7Vu5rgQ
+后MATLAB时代的七种开源替代，一种堪称完美！
 
-Java反射到底慢在哪？
+https://mp.weixin.qq.com/s/vV8kFF7e1uxjMR48_uRcSw
 
-https://mp.weixin.qq.com/s/DiphH8bvR8TtLyQmnTkpuw
+MATLAB动画没有密秘
 
-几种Java常用序列化框架的选型与对比
+## GNU Octave
 
-https://mp.weixin.qq.com/s/oyxO-x0t5bVHB7TNVYxxNQ
+GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。
 
-35个Java代码优化魔鬼细节
+官网：
 
-https://mp.weixin.qq.com/s/ZSUMCKZVEvJUx7JRaBTVIQ
+https://gnu.org/software/octave/
 
-一款Java开源的即时通讯IM聊天系统
+安装方法:
 
-https://mp.weixin.qq.com/s/zbakWF2UeTbrnfzmh-E7rg
+`sudo apt-get install octave`
 
-一个ThreadLocal和面试官大战30个回合
+## spyder
+
+spyder是一个Python的IDE，提供了和Matlab类似的数据可视化界面。
+
+安装：
+
+`sudo apt install spyder`
+
+## GeoGebra
+
+GeoGebra是一个结合“几何”、“代数”与“微积分”的动态数学软件，由佛罗里达州亚特兰大学的数学教授Markus Hohenwarter所设计。
+
+官网：
+
+https://www.geogebra.org/
+
+## Maxima
+
+微积分的数值解很多软件都能计算，但解析解就不行了。Maxima就是这样一款Computer Algebra System的软件。
+
+官网：
+
+http://maxima.sourceforge.net/

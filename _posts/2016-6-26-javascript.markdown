@@ -193,6 +193,14 @@ https://www.jianshu.com/p/f05eabdf3ab6
 
 使用yarn包管理工具
 
+## nvm
+
+node的版本升级很快，即使ubuntu 20.04自带的也远远不够新。为了维持多版本共存，可以使用nvm。
+
+官网：
+
+https://github.com/nvm-sh/nvm
+
 ## NW.js
 
 NW.js，也就是之前的node-webkit，是一个基于node.js的客户端开发SDK。其官网为：
@@ -362,17 +370,3 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/java/trafic
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/traffic
 
 众所周知，js是单线程的，所以这个版本也是单线程的，逻辑稍微复杂了一些。
-
-# WebAssembly
-
-WebAssembly，简称Wasm，是一种能在浏览器上执行的二进制虚拟机字节码。
-
-官网：
-
-https://webassembly.org/
-
-参考：
-
-https://www.ibm.com/developerworks/cn/web/wa-lo-webassembly-status-and-reality/index.html
-
-WebAssembly现状与实战

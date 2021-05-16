@@ -227,6 +227,10 @@ https://mp.weixin.qq.com/s/CHca0V7LR4NhomtLIPhc4w
 
 如何用Markdown做幻灯？
 
+https://zhuanlan.zhihu.com/p/372729473
+
+Slidev：一个用Markdown写slides的神器
+
 # Google Code
 
 2013.12

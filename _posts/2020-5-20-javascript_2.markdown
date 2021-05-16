@@ -9,6 +9,22 @@ category: language
 
 # ES6（续）
 
+可以看出ES3是第一个普及版，没有谁不支持。ES4由于和ES3差异过大，而被废弃，从未发布。ES5是第二个普及版，现在（2020.8）即使再考虑兼容性，也就到ES5为止了。
+
+ES6在2018年以后基本普及，新项目如无特殊需要，至少应支持ES6。
+
+ES6加入了若干面向对象开发的特性，使得可以用来编写复杂的大型应用程序。
+
+环境：
+
+https://www.caniuse.com/#search=es6
+
+ES的兼容性概览
+
+教程：
+
+https://www.runoob.com/w3cnote/es6-tutorial.html
+
 从ES7开始，ES标准的制定原则是成文标准要从事实标准中诞生，实现先于标准存在。进入标准草案必须有JavaScript引擎实现的支持（按照流程，起码要2个JavaScript引擎的稳定实现）。发布节奏也改为一年一发。因此，后续标准每版增加的内容非常少。
 
 一般来说，Chrome、Firefox和Node.js是支持的比较及时的JS平台。

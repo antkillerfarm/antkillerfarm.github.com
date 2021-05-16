@@ -396,37 +396,3 @@ CTest是CMake集成的一个测试工具。
 https://www.cnblogs.com/457220157-FTD/p/4139149.html
 
 CTest
-
-# Java+
-
-## JVM
-
-https://mp.weixin.qq.com/s/C-hLyeshiENJ_wmUltOpbw
-
-JVM完整深入解析
-
-https://mp.weixin.qq.com/s/IlatTB-2AxxIph1z1RP9iQ
-
-Java虚拟机垃圾收集机制详解
-
-https://mp.weixin.qq.com/s/TBUQrqxMbWIjG65H4tAP1Q
-
-十个JVM核心知识点
-
-## 参考
-
-http://blog.csdn.net/u014717036/article/details/52234679
-
-Java语言中的协变和逆变
-
-https://mp.weixin.qq.com/s/h3MB8p0sEA7VnrMXFq9NBA
-
-Java魔法类：Unsafe应用解析
-
-https://mp.weixin.qq.com/s/_hSaI5yMvPTWxvFgl-UItA
-
-Java动态追踪技术探究
-
-https://www.cnblogs.com/paddix/p/5374810.html
-
-Java并发编程：核心理论
