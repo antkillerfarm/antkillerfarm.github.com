@@ -11,6 +11,10 @@ category: DL
 
 ## 总结（续）
 
+深度学习的到来对整个流程有一个巨大的冲击。
+
+一开始，研究者用深度学习完成人脸检测、特征点定位、预处理、特征提取和识别等每个独立的步骤。而后首先被砍掉的是预处理，我们发现这个步骤是完全不必要的。理论上来解释，深度学习学出来的底层滤波器本身就可以完成光照的预处理，而且这个预处理是以“识别更准确”为目标进行的，而不是像原来的预处理一样，以“让人看得更清楚”为目标。人的知识和机器的知识其实是有冲突的，人类觉得好的知识不一定对机器识别有利。
+
 而最近的一些工作就是把第二步特征点定位砍掉。因为神经网络也可以进行对齐变换，所以我们的工作通过空间变换（spatial transform），将图片自动按需进行矫正。并且我有一个猜测：传统的刻意把非正面照片转成正面照片的做法，也未必是有利于识别的。因为一个观察结果是，同一个人的两张正面照相似度可能小于一张正面、一张稍微转向的照片的相似度。最终，我们希望进行以识别为目标的对齐（recognition oriented alignment）。
 
 在未来，或许检测和识别也可能合二为一。现在的检测是对一个通用的人脸的检测，未来或许可以实现检测和识别全部端到端完成：只有特定的某个人脸出现，才会触发检测框出现。
@@ -258,27 +262,3 @@ A Tutorial on Filter Groups (Grouped Convolution)
 https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
 
 旷视科技提出新型卷积网络ShuffleNet，专为移动端设计
-
-https://mp.weixin.qq.com/s/0MvCnm46pgeMGEw-EdNv_w
-
-CNN模型之ShuffleNet
-
-https://mp.weixin.qq.com/s/tceLrEalafgL8R44DZYP9g
-
-旷视科技提出新型轻量架构ShuffleNet V2：从理论复杂度到实用设计准则
-
-https://mp.weixin.qq.com/s/Yhvuog6NZOlVWEZURyqWxA
-
-ShuffleNetV2：轻量级CNN网络中的桂冠
-
-https://mp.weixin.qq.com/s/zLf0aKeMYwqMwC1TymMxgQ
-
-移动端高效网络，卷积拆分和分组的精髓
-
-https://zhuanlan.zhihu.com/p/86095608
-
-Learnable Group Convolutions:可以学习的分组卷积
-
-https://mp.weixin.qq.com/s/liCS3JoRj1scpc0jXFA4-w
-
-分组卷积最新进展，全自动学习的分组有哪些经典模型？

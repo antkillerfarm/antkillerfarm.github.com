@@ -7,6 +7,76 @@ category: DL
 * toc
 {:toc}
 
+# 花式卷积（续）
+
+https://mp.weixin.qq.com/s/CLFbhWMcat4rN8YS_7q25g
+
+这12张图生动的告诉你，深度学习中的卷积网络是怎么一回事？
+
+https://mp.weixin.qq.com/s/kJEeKzC9pC375EjIJpTuzg
+
+一文全解深度学习中的卷积
+
+http://cs.nyu.edu/~fergus/drafts/utexas2.pdf
+
+Deconvolutional Networks
+
+https://zhuanlan.zhihu.com/p/22245268
+
+CNN-反卷积
+
+http://buptldy.github.io/2016/10/29/2016-10-29-deconv/
+
+Transposed Convolution, Fractionally Strided Convolution or Deconvolution（中文blog）
+
+https://mp.weixin.qq.com/s/ybI8kJPRn7sH-hJbc5uqnw
+
+CMU研究者探索新卷积方法：在实验中可媲美基准CNN
+
+https://zhuanlan.zhihu.com/p/46633171
+
+深度卷积神经网络中的降采样
+
+https://mp.weixin.qq.com/s/1gBC-bp4Q4dPr0XMYPStXA
+
+万字长文带你看尽深度学习中的各种卷积网络
+
+https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
+
+微软亚洲研究院：逐层集中Attention的卷积模型
+
+http://blog.csdn.net/shuzfan/article/details/77964370
+
+不规则卷积神经网络
+
+https://mp.weixin.qq.com/s/rXr_XBc2Psh3NSA0pj4ptQ
+
+常建龙：深度卷积网络中的卷积算子研究进展
+
+https://mp.weixin.qq.com/s/i8vOeAVEYX-hRAvPSe6DEA
+
+一文看尽神经网络中不同种类的卷积层
+
+https://mp.weixin.qq.com/s/hZc8MgHoE010hnzLU-trIA
+
+高性能涨点的动态卷积DyNet与CondConv、DynamicConv有什么区别联系？
+
+https://www.yuque.com/yahei/hey-yahei/condconv
+
+CondConv：按需定制的卷积权重
+
+https://mp.weixin.qq.com/s/eRZ3jNuceMYKE3lEj-g1aw
+
+动态卷积：自适应调整卷积参数，显著提升模型表达能力
+
+https://mp.weixin.qq.com/s/_GOXBYyyYnridILemNRDqA
+
+ChannelNets: 省力又讨好的channel-wise卷积，在channel维度进行卷积滑动 
+
+https://mp.weixin.qq.com/s/HMLKUL3_3MhWmJ8ub-Yfcg
+
+一文速览Deep Learning中的11种卷积
+
 # Siamese network
 
 Siamese和Chinese有点像。Siam是古时候泰国的称呼，中文译作暹罗。Siamese也就是“暹罗”人或“泰国”人。Siamese在英语中是“孪生”、“连体”的意思，这是为什么呢？
@@ -260,75 +330,3 @@ ICCV2017 PoseTrack challenge优异方法：基于检测和跟踪的视频中人�
 https://mp.weixin.qq.com/s/mGcKpu3BXlAGO-t2FUCxAg
 
 基于深度模型的人脸对齐和姿态标准化
-
-https://mp.weixin.qq.com/s/gwRD3SzTof349V8W0_lRfg
-
-实时评估世界杯球员的正确姿势：FAIR开源DensePose
-
-https://zhuanlan.zhihu.com/p/39219404
-
-Dense Pose
-
-https://blog.csdn.net/sinat_26917383/article/details/79704097
-
-关键点定位：四款人体姿势关键点估计论文笔记
-
-https://mp.weixin.qq.com/s/-A87-z5inWBsF1-5UYagTA
-
-Facebook实时人体姿态估计：Dense Pose及其应用展望
-
-## Hourglass networks
-
-Hourglass networks是University of Michigan的Alejandro Newell的作品。（2016年3月）
-
-论文：
-
-《Stacked hourglass networks for human pose estimation》
-
-![](/images/img3/Hourglass_Networks.png)
-
-上图是Stacked Hourglass networks的网络结构图，其中的每个沙漏形状的结构，都是一个hourglass module，其结构如下图所示：
-
-![](/images/img3/Hourglass_Networks_2.png)
-
-hourglass module基本可以看作是把concat换成add之后的U-NET，或者也可以看作是resnet版的U-NET。上图中一个module包含了4次add，因此也被叫做4阶hourglass module。
-
-参考：
-
-https://blog.csdn.net/shenxiaolu1984/article/details/51428392
-
-Stacked Hourglass算法详解
-
-https://mp.weixin.qq.com/s/nfPBRBLG1ThsY3DvONHYrA
-
-CenterNet骨干网络之hourglass
-
-https://mp.weixin.qq.com/s/lzxd9J97nkOBLXgEcbdoKA
-
-使用Hourglass网络来理解人体姿态
-
-## 评价度量
-
-Object Keypoint Similarity(OKS)：
-
-$$\mathbf{OKS} = \frac{\sum_i exp(-\frac{d_i^2}{2s^2k_i^2}) \delta (v_i >0)}{\sum_i \delta (v_i >0)}$$
-
-其中，$$d_i$$是检测的关键点与groundtruth关键点之间的欧氏距离；$$v_i$$是groundtruth关键点的可见性标志；s是目标的尺度；$$k_i$$是控制衰减(falloff)的per-keypoint常数。
-
-## 步态识别
-
-https://mp.weixin.qq.com/s/g6032xTGEtvbsfwXboMJ4A
-
-大阪大学副校长Yasushi Yagi：步态分析
-
-http://mp.weixin.qq.com/s/Y-PvMz_Vz8nBGRZo9dwUCA
-
-中科院步态识别技术：不看脸50米内在人群中认出你！
-
-https://mp.weixin.qq.com/s/3Pe5wJ0VomzwKMF84OqcMg
-
-步态识别的深度学习综述
-
-https://mp.weixin.qq.com/s/afX8Y84nTS20q4Y36uOWqQ
-
-复旦提出GaitSet算法，步态识别的重大突破！

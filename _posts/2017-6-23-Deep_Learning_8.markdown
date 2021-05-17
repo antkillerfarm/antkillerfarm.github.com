@@ -101,6 +101,8 @@ x, & -1\le x \le 1 \\
 
 ![](/images/article/hard_tanh.png)
 
+hard tanh也叫做Relu1。
+
 ### hard sigmoid
 
 $$\text{HardSigmoid}(x)=\begin{cases}
@@ -114,6 +116,36 @@ $$\text{HardSigmoid}(x)=\begin{cases}
 ### soft sign
 
 $$\text{softsign}(x)=\frac{x}{1+\mid x\mid }$$
+
+### Hardswish
+
+$$Hardswish(x) = x\frac{RELU6(x+3)}{6} = 
+\left\{
+\begin{aligned}
+&0, & \text{if } x \leq -3 \\
+&x, & \text{if } x \geq 3 \\
+&\frac{x(x+3)}{6}, & \text{otherwise}
+\end{aligned}
+\right.
+$$
+
+### Mish
+
+$$Mish(x)=x\tanh (\ln(1+e^x))$$
+
+参考：
+
+https://mp.weixin.qq.com/s/i8aShQvJhSgP7KY5Qgm36A
+
+ReLU的继任者Mish：一个新的state of the art的激活函数
+
+https://mp.weixin.qq.com/s/a_roXfjNX2szJMUrww0Fmg
+
+YOLOv4中的Mish激活函数
+
+### soft relu
+
+$$soft_relu(x) = \ln(1 + \exp(\max(\min(x, threshold), -threshold)))$$
 
 ## 参考
 
@@ -156,10 +188,6 @@ https://www.cnblogs.com/makefile/p/activation-function.html
 https://mp.weixin.qq.com/s/YVi9ke3VSidBvzfLPjMkZg
 
 激活函数-从人工设计到自动搜索
-
-https://mp.weixin.qq.com/s/i8aShQvJhSgP7KY5Qgm36A
-
-ReLU的继任者Mish：一个新的state of the art的激活函数
 
 https://mp.weixin.qq.com/s/XttlCNKGvGZrD7OQZOQGnw
 
@@ -336,25 +364,3 @@ https://mp.weixin.qq.com/s/_CENjzEK1kjsFpvX0H5gpQ
 **实例分割**：把图像中的每一个像素分到其所属物体实例。数据集：PASCAL, COCO
 
 **关键点检测**：检测物体上一组预定义关键点的位置，例如人体上或者人脸上的关键点。数据集：COCO
-
-参考：
-
-https://github.com/weiaicunzai/awesome-image-classification
-
-GitHub：图像分类最全资料集锦
-
-https://mp.weixin.qq.com/s/nK__d-PV6DY5mDfA_UgDmQ
-
-全解：目标检测，图像分类、分割、生成……
-
-https://mp.weixin.qq.com/s/Go8AQay7tgykXLRtfHGLmg
-
-改变你对世界看法的五大计算机视觉技术！
-
-https://mp.weixin.qq.com/s/WNkzfvYtEO5zJoe_-yAPow
-
-一文览尽计算机视觉研究方向
-
-https://zhuanlan.zhihu.com/p/55747295
-
-深度学习在计算机视觉领域（包括图像，视频，3-D点云，深度图）的应用一览

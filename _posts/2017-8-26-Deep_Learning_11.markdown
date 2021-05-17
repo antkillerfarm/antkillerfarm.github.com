@@ -7,7 +7,33 @@ category: DL
 * toc
 {:toc}
 
-# 花式卷积（续）
+# 花式卷积
+
+## 分组卷积（续）
+
+https://mp.weixin.qq.com/s/0MvCnm46pgeMGEw-EdNv_w
+
+CNN模型之ShuffleNet
+
+https://mp.weixin.qq.com/s/tceLrEalafgL8R44DZYP9g
+
+旷视科技提出新型轻量架构ShuffleNet V2：从理论复杂度到实用设计准则
+
+https://mp.weixin.qq.com/s/Yhvuog6NZOlVWEZURyqWxA
+
+ShuffleNetV2：轻量级CNN网络中的桂冠
+
+https://mp.weixin.qq.com/s/zLf0aKeMYwqMwC1TymMxgQ
+
+移动端高效网络，卷积拆分和分组的精髓
+
+https://zhuanlan.zhihu.com/p/86095608
+
+Learnable Group Convolutions:可以学习的分组卷积
+
+https://mp.weixin.qq.com/s/liCS3JoRj1scpc0jXFA4-w
+
+分组卷积最新进展，全自动学习的分组有哪些经典模型？
 
 ## Separable convolution
 
@@ -276,23 +302,3 @@ Convolution Arithmetic for Deep Learning
 https://mp.weixin.qq.com/s/dR2nhGqpz7OdmxKPYSaaxw
 
 如何理解空洞卷积（dilated convolution）？
-
-https://mp.weixin.qq.com/s/CLFbhWMcat4rN8YS_7q25g
-
-这12张图生动的告诉你，深度学习中的卷积网络是怎么一回事？
-
-https://mp.weixin.qq.com/s/kJEeKzC9pC375EjIJpTuzg
-
-一文全解深度学习中的卷积
-
-http://cs.nyu.edu/~fergus/drafts/utexas2.pdf
-
-Deconvolutional Networks
-
-https://zhuanlan.zhihu.com/p/22245268
-
-CNN-反卷积
-
-http://buptldy.github.io/2016/10/29/2016-10-29-deconv/
-
-Transposed Convolution, Fractionally Strided Convolution or Deconvolution（中文blog）

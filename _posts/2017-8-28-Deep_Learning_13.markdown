@@ -7,55 +7,81 @@ category: DL
 * toc
 {:toc}
 
-# 花式卷积（续）
+# 姿态/行为检测
 
-https://mp.weixin.qq.com/s/ybI8kJPRn7sH-hJbc5uqnw
+## DensePose（续）
 
-CMU研究者探索新卷积方法：在实验中可媲美基准CNN
+https://mp.weixin.qq.com/s/gwRD3SzTof349V8W0_lRfg
 
-https://zhuanlan.zhihu.com/p/46633171
+实时评估世界杯球员的正确姿势：FAIR开源DensePose
 
-深度卷积神经网络中的降采样
+https://zhuanlan.zhihu.com/p/39219404
 
-https://mp.weixin.qq.com/s/1gBC-bp4Q4dPr0XMYPStXA
+Dense Pose
 
-万字长文带你看尽深度学习中的各种卷积网络
+https://blog.csdn.net/sinat_26917383/article/details/79704097
 
-https://mp.weixin.qq.com/s/qReN6z8s45870HSMCMNatw
+关键点定位：四款人体姿势关键点估计论文笔记
 
-微软亚洲研究院：逐层集中Attention的卷积模型
+https://mp.weixin.qq.com/s/-A87-z5inWBsF1-5UYagTA
 
-http://blog.csdn.net/shuzfan/article/details/77964370
+Facebook实时人体姿态估计：Dense Pose及其应用展望
 
-不规则卷积神经网络
+## Hourglass networks
 
-https://mp.weixin.qq.com/s/rXr_XBc2Psh3NSA0pj4ptQ
+Hourglass networks是University of Michigan的Alejandro Newell的作品。（2016年3月）
 
-常建龙：深度卷积网络中的卷积算子研究进展
+论文：
 
-https://mp.weixin.qq.com/s/i8vOeAVEYX-hRAvPSe6DEA
+《Stacked hourglass networks for human pose estimation》
 
-一文看尽神经网络中不同种类的卷积层
+![](/images/img3/Hourglass_Networks.png)
 
-https://mp.weixin.qq.com/s/hZc8MgHoE010hnzLU-trIA
+上图是Stacked Hourglass networks的网络结构图，其中的每个沙漏形状的结构，都是一个hourglass module，其结构如下图所示：
 
-高性能涨点的动态卷积DyNet与CondConv、DynamicConv有什么区别联系？
+![](/images/img3/Hourglass_Networks_2.png)
 
-https://www.yuque.com/yahei/hey-yahei/condconv
+hourglass module基本可以看作是把concat换成add之后的U-NET，或者也可以看作是resnet版的U-NET。上图中一个module包含了4次add，因此也被叫做4阶hourglass module。
 
-CondConv：按需定制的卷积权重
+参考：
 
-https://mp.weixin.qq.com/s/eRZ3jNuceMYKE3lEj-g1aw
+https://blog.csdn.net/shenxiaolu1984/article/details/51428392
 
-动态卷积：自适应调整卷积参数，显著提升模型表达能力
+Stacked Hourglass算法详解
 
-https://mp.weixin.qq.com/s/_GOXBYyyYnridILemNRDqA
+https://mp.weixin.qq.com/s/nfPBRBLG1ThsY3DvONHYrA
 
-ChannelNets: 省力又讨好的channel-wise卷积，在channel维度进行卷积滑动 
+CenterNet骨干网络之hourglass
 
-https://mp.weixin.qq.com/s/HMLKUL3_3MhWmJ8ub-Yfcg
+https://mp.weixin.qq.com/s/lzxd9J97nkOBLXgEcbdoKA
 
-一文速览Deep Learning中的11种卷积
+使用Hourglass网络来理解人体姿态
+
+## 评价度量
+
+Object Keypoint Similarity(OKS)：
+
+$$\mathbf{OKS} = \frac{\sum_i exp(-\frac{d_i^2}{2s^2k_i^2}) \delta (v_i >0)}{\sum_i \delta (v_i >0)}$$
+
+其中，$$d_i$$是检测的关键点与groundtruth关键点之间的欧氏距离；$$v_i$$是groundtruth关键点的可见性标志；s是目标的尺度；$$k_i$$是控制衰减(falloff)的per-keypoint常数。
+
+## 步态识别
+
+https://mp.weixin.qq.com/s/g6032xTGEtvbsfwXboMJ4A
+
+大阪大学副校长Yasushi Yagi：步态分析
+
+http://mp.weixin.qq.com/s/Y-PvMz_Vz8nBGRZo9dwUCA
+
+中科院步态识别技术：不看脸50米内在人群中认出你！
+
+https://mp.weixin.qq.com/s/3Pe5wJ0VomzwKMF84OqcMg
+
+步态识别的深度学习综述
+
+https://mp.weixin.qq.com/s/afX8Y84nTS20q4Y36uOWqQ
+
+复旦提出GaitSet算法，步态识别的重大突破！
 
 # 花式池化
 
@@ -318,37 +344,3 @@ seq2seq最新变体，稀疏序列模型
 https://mp.weixin.qq.com/s/_1lr612F3x8ld9gvXj9L2A
 
 推断速度达seq2seq模型的100倍，谷歌开源文本生成新方法LaserTagger
-
-# 行人重识别+
-
-https://mp.weixin.qq.com/s/Vi_1Sg8OKG-EG4aC4QTCWA
-
-半监督学习的新助力：无监督数据扩增法
-
-https://mp.weixin.qq.com/s/omUtD3GFOpP1dvfWZgLDww
-
-计算机视觉模型效果不佳，你可能是被相机的Exif信息坑了
-
-https://mp.weixin.qq.com/s/pV7C2sSJwP3rBO6OYeF-nw
-
-基于马尔可夫链的数据增强
-
-https://mp.weixin.qq.com/s/6yfHwsk-fTEtQhrciMEBug
-
-重识别（re-ID）特征适合直接用于跟踪（tracking）问题么？
-
-https://mp.weixin.qq.com/s/Q34wjziJBBOrb1VPhQJK8g
-
-行人重识别简介
-
-https://mp.weixin.qq.com/s/OALGxuvUdQMbsK1k4g2V7Q
-
-遮挡也能识别？地平线提出用时序信息提升行人检测准确度
-
-https://mp.weixin.qq.com/s/2v-Y_-_si6_dxq3cICy-lg
-
-疫情蔓延让这项CV技术突然火了，盘点开源代码
-
-https://mp.weixin.qq.com/s/Z6l9R5uzWsAn_DTgTsGstg
-
-京东发布FastReID：目前最强悍的目标重识别开源库！
