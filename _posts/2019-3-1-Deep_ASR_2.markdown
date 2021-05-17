@@ -35,6 +35,10 @@ https://blog.csdn.net/luodongri/article/details/77005948
 
 白话CTC(connectionist temporal classification)算法讲解
 
+https://zhuanlan.zhihu.com/p/339612348
+
+CTC总结
+
 ## Warp-CTC
 
 Warp-CTC是一个可以应用在CPU和GPU上的高效并行的CTC代码库，由百度硅谷实验室开发。
