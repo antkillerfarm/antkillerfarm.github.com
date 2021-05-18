@@ -123,6 +123,10 @@ https://zhuanlan.zhihu.com/p/288322305
 
 Graph neural network综述:从deepwalk到GraphSAGE，GCN，GAT
 
+https://mp.weixin.qq.com/s/wa_UH16wYvffLW-He2JlYg
+
+一文带你梳理GCN, GraphSAGE, GAT, GAE, Pooling, DiffPool
+
 # DeepWalk
 
 https://mp.weixin.qq.com/s/SXnRyUj_mMs8UEtNyP6qNw

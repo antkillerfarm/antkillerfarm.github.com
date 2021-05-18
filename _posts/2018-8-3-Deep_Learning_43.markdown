@@ -253,6 +253,10 @@ https://mp.weixin.qq.com/s/OnRB44tliuTFcjlmuRG3Xw
 
 图神经网络“理论在哪里“？
 
+https://mp.weixin.qq.com/s/FpBawuJrD54Hk1_GMO4tSg
+
+21年最新最全Graph Learning算法
+
 # Conv计算量分析
 
 I: Input
