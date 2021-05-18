@@ -279,6 +279,10 @@ https://mp.weixin.qq.com/s/qbPAQeJr7OWOwysa4_iDIw
 
 基于深度学习的低光照图像增强方法总结（2017-2019）
 
+https://zhuanlan.zhihu.com/p/82352961
+
+基于深度学习的图像增强综述
+
 https://zhuanlan.zhihu.com/p/56263560
 
 单目视觉深度估计测距的前生今世
