@@ -45,6 +45,14 @@ https://zhuanlan.zhihu.com/c_1250484713606819840
 
 AST：abstract syntax tree
 
+FFI：Foreign Function Interface
+
+ABI：Application Binary Interface
+
+API：Application Programming Interface
+
+比如，在内核中 int register_netdevice(struct net_device *dev) 这个内核函数原型基本上是不会变的，所以保持这个API稳定是很简单的，但它的ABI就未必了，就算是这个函数定义本身没变，即API没变，而struct net_device的定义变了，里面多了或者少了某一个字段，它的ABI就变了，你之前编译好的二进制模块就很可能会出错了，必须重新编译才行。
+
 ## Pass
 
 ![](/images/img3/single_pass.jpg)

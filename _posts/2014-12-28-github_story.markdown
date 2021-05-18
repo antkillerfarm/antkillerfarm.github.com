@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GitHub, Google Code, and other, BBR
+title:  GitHub, Google Code, and other
 category: technology 
 ---
 
@@ -223,6 +223,10 @@ https://mp.weixin.qq.com/s/0Bd1bxoWx6MnGccnHc15ZA
 
 ## 参考
 
+vscode有个叫做`Markdown PDF`的插件，可以将markdown转化为PDF。
+
+----
+
 https://mp.weixin.qq.com/s/CHca0V7LR4NhomtLIPhc4w
 
 如何用Markdown做幻灯？
@@ -268,49 +272,3 @@ Slidev：一个用Markdown写slides的神器
 而现在的话，你可以有别的选择，比如ifttt.com。ifttt是If this then that的缩写。国内的山寨版本有“如果云”。这些网站允许你自己创建一定的规则，来完成一定的动作。具体到当前的目标，就是创建以下规则：一旦rss的内容有更新，就立即将新内容以电子邮件的方式发送到我的邮箱里。
 
 剩下的问题就简单了，找一个好用的邮箱。使用邮箱的手机客户端，将邮件下载到手机上，这样每天的早报就有了:)
-
-# BBR
-
-**B**ottleneck **B**andwidth and **R**ound-trip propagation time是Google于2016年10月提出的TCP拥塞控制算法，其相关代码目前已经加入Linux内核中。
-
-经典的拥塞控制算法设计于1980年代，当时将丢包作为拥塞的信号，这是符合当时落后的实际情况的。
-
-但是网络丢包存在两种情况：第一为拥塞丢包，第二为错误丢包。因此丢包通常并不等同于拥塞。
-
-随着带宽的增加，第一类丢包已经大为减少。目前广域网普遍属于高带宽，高延迟的情况。这种情况术语叫做**长肥管道**（**long-fat pipe**，即延迟高、带宽大的链路）。
-
-BBR就是针对长肥管道而设计的新式算法。
-
-参考：
-
-http://netdevconf.org/1.2/slides/oct5/04_Making_Linux_TCP_Fast_netdev_1.2_final.pdf
-
-Making Linux TCP Fast
-
-https://www.zhihu.com/question/53559433
-
-Linux Kernel 4.9 中的BBR算法与之前的TCP拥塞控制相比有什么优势？
-
-https://zhuanlan.zhihu.com/p/144273871
-
-TCP拥塞控制详解
-
-http://blog.csdn.net/dog250/article/details/52895080
-
-Google's BBR拥塞控制算法模型解析
-
-https://zhuanlan.zhihu.com/p/24431669
-
-BBR是个什么鬼？-1 带宽与RTT探测
-
-https://zhuanlan.zhihu.com/p/26321951
-
-BBR是个什么鬼？-2 外皮后的真相
-
-https://mp.weixin.qq.com/s/NWNMfykpJQ-LD9oV1X6zTw
-
-基于bbr拥塞控制的云盘提速实践
-
-https://mp.weixin.qq.com/s/P3zAW3lxj8aowXtxXCOwqA
-
-Google BBR拥塞控制算法背后的数学解释

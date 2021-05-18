@@ -323,6 +323,10 @@ https://mp.weixin.qq.com/s/h8loG3enT5U-5F2a2UflJg
 
 对比学习小综述
 
+https://mp.weixin.qq.com/s/v5p9QA3vDl-WTF3-7shp4g
+
+对比学习简述
+
 ## MoCo
 
 https://mp.weixin.qq.com/s/9zaTjwwGPHHzSv1ZmHf8_g
