@@ -317,6 +317,10 @@ https://mp.weixin.qq.com/s/8Xb7WGqivdma6x7dP2c70w
 
 英特尔与AMD的x86服务器战争编年史
 
+https://zhuanlan.zhihu.com/p/59014246
+
+用大数据带你了解电影行业百年发展历程
+
 # 内存
 
 https://mp.weixin.qq.com/s/HOhBNZfOf5xQIFLYQ5ntCw

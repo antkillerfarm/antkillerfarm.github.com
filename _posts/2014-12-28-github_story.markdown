@@ -221,6 +221,26 @@ https://mp.weixin.qq.com/s/0Bd1bxoWx6MnGccnHc15ZA
 
 利用GitHub从零开始搭建一个自己的专属博客
 
+## TOC
+
+vscode有个叫做`Markdown TOC`的插件，可以生成TOC。
+
+编程实现的话，有两个库可以使用：
+
+- python-markdown
+
+官网：
+
+https://python-markdown.github.io
+
+但是这个库的输出是HTML，显得过于繁琐。
+
+- markdown-toclify
+
+https://github.com/rasbt/markdown-toclify
+
+这也是github官方使用的方法。
+
 ## 参考
 
 vscode有个叫做`Markdown PDF`的插件，可以将markdown转化为PDF。
