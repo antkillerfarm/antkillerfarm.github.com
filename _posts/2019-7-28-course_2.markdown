@@ -149,6 +149,10 @@ https://mp.weixin.qq.com/s/P6BCFLDtzEkPluWIKMD2AA
 
 最新《几何深度学习》教程，100页ppt，Geometric Deep Learning
 
+https://fullstackdeeplearning.com/spring2021/
+
+Full Stack Deep Learning
+
 # English
 
 SOTA(state of the art)：目前最高水平

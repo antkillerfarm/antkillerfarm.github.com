@@ -323,3 +323,7 @@ Python加速运行技巧
 https://mp.weixin.qq.com/s/7sQ6p0IDWvttbvv_c71Etg
 
 Python单元测试详解
+
+https://mp.weixin.qq.com/s/TMcj-X5SmOqOgh6Ljkb3sw
+
+模型热更新小记

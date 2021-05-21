@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 中国航天, 火星探测, 阿波罗50年, 天文杂谈（一）
+title: 中国航天, 火星探测, 阿波罗50年
 category: Nature 
 ---
 
@@ -225,6 +225,34 @@ https://mp.weixin.qq.com/s/hSY4rBhCkJDoLlo8Nzmm9Q
 
 天问一号成功着陆！
 
+https://mp.weixin.qq.com/s/mpeHNXktuH9aMxz1Eu6gCw
+
+生活不只眼前的“北上广”，还有诗和火星
+
+https://mp.weixin.qq.com/s/uvSeg8KnPTj_4au_B3WXBw
+
+一文拆解中国火星车着陆全程
+
+https://mp.weixin.qq.com/s/_s7XcEz6Ft6eGXxZOUeSVg
+
+火星上存在真菌吗？
+
+https://mp.weixin.qq.com/s/nPL84Xydqdm4UGYK6AeCvA
+
+“祝融号”登陆火星：人类为何非要去那里？
+
+https://mp.weixin.qq.com/s/5Hg1nSRPSrm0-ZBphX2ToA
+
+明明地球资源无限，中国天问一号为什么要登陆火星
+
+https://mp.weixin.qq.com/s/jtPCA4sgLSY07Cqh7K_aIg
+
+国家航天局发布天问一号着陆过程 两器分离和落火影像
+
+https://mp.weixin.qq.com/s/9b618Vc_Y5EgkCYFmfUYFA
+
+这几天，祝融号到底在忙啥呢？
+
 # 阿波罗50年
 
 https://mp.weixin.qq.com/s/79e6p2TYpttO-NR1of21jw
@@ -296,18 +324,6 @@ https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
 印度失联的月球探测器依然成功了95%？那些年我们一起追过的月球
 
 # 天文杂谈
-
-现代农历是民国时期开始用的。自古每当王朝更迭，第一件事就是改历法，一方面体现新朝气象，一方面也因为旧历使用多年，已经有了误差。
-
-民国成立时也未能免俗，废除了清朝使用的时宪历，1929年推出了紫金历，也就是现代农历。
-
-紫金历跟公历不同，置闰规则里有实时观测修正的部分，不是一成不变的。比如说2057年农历九月初一应该是哪天就有争议。因为该日的朔时刚好卡在北京时间零点整附近，用不同的天文算法会导致算出来的日期不一样。
-
-https://www.zhihu.com/question/405115980
-
-公历1582年消失了10天，但我国的农历用了这么多年，难道没有误差吗？
-
-----
 
 恩克彗星是人们发现的第一颗短周期彗星，至今也还没有找到过周期比它更短的彗星。恩克用6个星期的时间，计算出这颗彗星的轨道，周期为3.3年，并且预言1822年5月24日再回到近日点，果然它准时回来了，成继哈雷彗星之后，第二颗按预言回归的彗星。
 

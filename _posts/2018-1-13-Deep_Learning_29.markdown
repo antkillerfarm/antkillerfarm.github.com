@@ -227,6 +227,18 @@ https://mp.weixin.qq.com/s/GeePyUCpc7w1PP7WywAW4A
 
 时空数据分析综述论文，44页pdf
 
+https://mp.weixin.qq.com/s/J2beHewMZpx6WZ0d4JIzGQ
+
+如何利用Transformer建立时间序列预测模型
+
+https://mp.weixin.qq.com/s/abXc9zU5VpKeQkIvEM5Jww
+
+时间卷积神经网络
+
+https://mp.weixin.qq.com/s/0QjRqFaU0DmcIemTws-xtw
+
+时间序列数据的缺失填补方法总结
+
 # 姿态/行为检测进阶+
 
 https://mp.weixin.qq.com/s/6HsL2B7p-XyvGWAb4SwALA

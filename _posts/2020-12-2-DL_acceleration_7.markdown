@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度加速（七）——模型优化工具, 模型压缩与加速进阶
+title:  深度加速（七）——模型优化工具, 模型压缩与加速进阶（1）
 category: DL acceleration 
 ---
 

@@ -257,6 +257,10 @@ https://mp.weixin.qq.com/s/FpBawuJrD54Hk1_GMO4tSg
 
 21年最新最全Graph Learning算法
 
+https://mp.weixin.qq.com/s/dZ1SUUNeZIZwH6uEcdlsDQ
+
+图神经网络从入门到入门
+
 # Conv计算量分析
 
 I: Input

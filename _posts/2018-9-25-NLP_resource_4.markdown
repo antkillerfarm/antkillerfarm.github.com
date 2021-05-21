@@ -9,6 +9,26 @@ category: resource
 
 # NLP参考资源
 
+## KBQA/DBQA
+
+知识库问答（knowledge base question answering, KB-QA）即给定自然语言问题，通过对问题进行语义理解和解析，进而利用知识库进行查询、推理得出答案。
+
+DBQA是基于文档的问答。换言之，KBQA利用的是结构化的知识，而DBQA所利用的是非结构化的文本。
+
+https://mp.weixin.qq.com/s/GSHk-otPeyGZN5xRNehAyw
+
+KBQA从入门到放弃—入门篇
+
+https://mp.weixin.qq.com/s/-Zz5Cv4QJaRHdBFrGyBuLg
+
+KBQA从入门到放弃-Part 2
+
+https://mp.weixin.qq.com/s/NDsQzT4nktbw1fHLLFUhEQ
+
+KBQA: 基于开放域知识库上的QA系统
+
+## 参考
+
 https://mp.weixin.qq.com/s/klfTdvfti0xCg2lGitG4hg
 
 用户表示方法对新浪微博中用户属性分类性能影响的研究
@@ -24,6 +44,10 @@ https://mp.weixin.qq.com/s/xYvYEJA0ssAOZ-NvEXQcZg
 https://mp.weixin.qq.com/s/rzglhAUJVNsnbyptORH5lg
 
 对话系统原理和实践
+
+https://mp.weixin.qq.com/s/rXIAR37wn2tGMpR8xPdxqw
+
+南洋理工75页最新“深度学习对话系统”大综述论文，最全面概述深度学习对话技术进展
 
 https://mp.weixin.qq.com/s/C0hjVv2YOQw__tvSs8zn1A
 
@@ -372,35 +396,3 @@ https://zhuanlan.zhihu.com/p/50349824
 https://mp.weixin.qq.com/s/rLFm2J6Bao6H5Qj9Fw0wUg
 
 百度陈翔：基于机器学习的搜索语义理解技术！
-
-https://mp.weixin.qq.com/s/BWg77FZ2IugBhO_HWHpfHw
-
-深度学习在自然语言处理中的应用综述
-
-http://mp.weixin.qq.com/s/fn9WKu0_aH2-lx6VvxC_RA
-
-生成式关键短语识别
-
-https://mp.weixin.qq.com/s/Naj1u0LZwvQhOe6Iay0nFA
-
-常识用于回答生成式多跳问题
-
-https://mp.weixin.qq.com/s/fkBkSakTtuGPhi3mK563mg
-
-结合贪心搜索和蒙特卡洛随机游走的面向DBpedia的实体链接方法
-
-https://mp.weixin.qq.com/s/UZbt1E6QntwtWWvJfTL3eQ
-
-车万翔：任务型对话系统研究进展
-
-https://mp.weixin.qq.com/s/cFKZxtlAAABWn8CgXJz4kA
-
-多内容实体和关系联合抽取的对抗训练
-
-https://mp.weixin.qq.com/s/nGb-8M4S1a_4Yz9Lzjvzew
-
-基于Universal Schema与Memory Network的知识+文本问答
-
-https://mp.weixin.qq.com/s/Pm3wB4VRuoBR-XLjW_jpfQ
-
-反讽识别综述

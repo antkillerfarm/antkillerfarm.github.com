@@ -17,6 +17,14 @@ https://mp.weixin.qq.com/s/CMcgybfgya7ftTUeUFigKg
 
 SQL查询语句总是先执行SELECT？你们都错了
 
+----
+
+当Explain与SQL语句一起使用时，MySQL会显示来自优化器关于SQL执行的信息。也就是说，MySQL解释了它将如何处理该语句，包括如何连接表以及什么顺序连接表等。
+
+https://mp.weixin.qq.com/s/xf4VRBFLhhIAGGZPhbRetQ
+
+不会看Explain执行计划，简历敢写SQL优化？
+
 ## MyISAM & Innodb
 
 Mysql底层数据引擎以插件形式设计，最常见的是Innodb引擎和Myisam引擎，用户可以根据个人需求选择不同的引擎作为Mysql数据表的底层引擎。

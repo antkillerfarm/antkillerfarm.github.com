@@ -300,11 +300,3 @@ JavaScript与ES的25个重要知识点
 https://mp.weixin.qq.com/s/HUknNfaxNULc4Yvf5ajRBA
 
 五分钟了解互联网Web技术发展史
-
-https://mp.weixin.qq.com/s/4YXoSrYueQFWOC8sZH8LvQ
-
-跨平台Web Canvas渲染引擎架构的设计与思考
-
-https://zhuanlan.zhihu.com/p/373271928
-
-浏览器性能优化实战

@@ -279,6 +279,10 @@ https://mp.weixin.qq.com/s/poSfjftItmHERs3MDgvjpw
 
 机器学习防止模型过拟合的方法知识汇总
 
+https://mp.weixin.qq.com/s/YPtGqUXnRQ2qswpBLsbM7g
+
+Lasso和Ridge回归中的超参数调整技巧
+
 # Krylov subspace
 
 Krylov subspace是一类针对大矩阵的近似计算的方法，由Aleksey Nikolaevich Krylov于1931年提出。

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  版本管理工具的前世今生, Kannel, Win10历险记, 运维工具集, 负载均衡
+title:  版本管理工具的前世今生, Kannel, Win10历险记, 运维工具集
 category: technology 
 ---
 
@@ -217,70 +217,6 @@ http://www.ansible.com.cn/
 
 Ansible中文权威指南
 
-# 负载均衡
+https://mp.weixin.qq.com/s/ojpAOOnK5fEW12gG1zocBA
 
-正向代理，“它代理的是客户端，代客户端发出请求”。
-
-反向代理，“它代理的是服务端，代服务端接收请求”。
-
-http://blog.csdn.net/gzh0222/article/details/8540604
-
-lvs、haproxy、nginx负载均衡的比较分析
-
-https://mp.weixin.qq.com/s/SO1ZLSPaRkk8WwUl9u-JPA
-
-仅需这一篇，吃透“负载均衡”妥妥的
-
-https://mp.weixin.qq.com/s/3KZ99d94yqRDxEByn7nGWg
-
-QPS比Nginx提升60%，阿里Tengine负载均衡算法揭秘
-
-https://mp.weixin.qq.com/s/XsyXkaOIJ3m8sdCt8Pl5Ig
-
-计算密集型服务的负载均衡策略
-
-https://mp.weixin.qq.com/s/SmpUPJRK0TMdA0rkb_Q6VQ
-
-什么是集群？什么又是负载均衡？
-
-https://mp.weixin.qq.com/s/sCGI3XPga5gTZF0iskJlMA
-
-全网最详尽的负载均衡原理图解
-
-## Nginx
-
-https://mp.weixin.qq.com/s/31DGDYpDHcYg-4qM4OczxA
-
-深入浅出Nginx
-
-https://mp.weixin.qq.com/s/h9sXZc4Y62f4KOSVXAB1Pg
-
-Nginx基本功能极速入门
-
-https://www.cnblogs.com/wcwnina/p/8728391.html
-
-Nginx相关介绍
-
-https://mp.weixin.qq.com/s/aCAuJQEB2pmL92OTEb_4Xg
-
-Nginx为什么这么快？
-
-https://mp.weixin.qq.com/s/3GSuB1tLe-G5hZPUiAXuVA
-
-Nginx，为什么依旧这么“香”？
-
-https://blog.csdn.net/yujing1314/article/details/107000737
-
-搞懂Nginx一篇文章就够了
-
-https://mp.weixin.qq.com/s/-8Ka8nMYpH7cipzfm36utw
-
-写给小白的Nginx文章
-
-https://mp.weixin.qq.com/s/gd59U50tlJPa4B4avXRG1Q
-
-Nginx架构浅析
-
-https://mp.weixin.qq.com/s/eUindWNZiCv_tSLQeYfmLg
-
-Nginx常用配置清单
+干货：一文详解Ansible的自动化运维

@@ -9,6 +9,38 @@ category: resource
 
 # NLP参考资源
 
+https://mp.weixin.qq.com/s/BWg77FZ2IugBhO_HWHpfHw
+
+深度学习在自然语言处理中的应用综述
+
+http://mp.weixin.qq.com/s/fn9WKu0_aH2-lx6VvxC_RA
+
+生成式关键短语识别
+
+https://mp.weixin.qq.com/s/Naj1u0LZwvQhOe6Iay0nFA
+
+常识用于回答生成式多跳问题
+
+https://mp.weixin.qq.com/s/fkBkSakTtuGPhi3mK563mg
+
+结合贪心搜索和蒙特卡洛随机游走的面向DBpedia的实体链接方法
+
+https://mp.weixin.qq.com/s/UZbt1E6QntwtWWvJfTL3eQ
+
+车万翔：任务型对话系统研究进展
+
+https://mp.weixin.qq.com/s/cFKZxtlAAABWn8CgXJz4kA
+
+多内容实体和关系联合抽取的对抗训练
+
+https://mp.weixin.qq.com/s/nGb-8M4S1a_4Yz9Lzjvzew
+
+基于Universal Schema与Memory Network的知识+文本问答
+
+https://mp.weixin.qq.com/s/Pm3wB4VRuoBR-XLjW_jpfQ
+
+反讽识别综述
+
 https://mp.weixin.qq.com/s/whWaseYWcurOLp-V8gCBvQ
 
 基于不同颗粒度语言联合训练的表示学习
@@ -88,10 +120,6 @@ https://mp.weixin.qq.com/s/zfgx2iViwFm-tzBGvgHVuw
 http://www.csdn.net/article/2015-02-05/2823865
 
 让机器搞懂100万种隐含语义，腾讯Peacock大规模主题模型首次全揭秘
-
-https://mp.weixin.qq.com/s/NDsQzT4nktbw1fHLLFUhEQ
-
-KBQA: 基于开放域知识库上的QA系统
 
 http://www.jianshu.com/p/efe92bdb435d
 

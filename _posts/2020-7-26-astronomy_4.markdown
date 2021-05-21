@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 天文杂谈（二）
+title: 天文杂谈（一）
 category: Nature 
 ---
 
@@ -8,6 +8,18 @@ category: Nature
 {:toc}
 
 # 天文杂谈（续）
+
+现代农历是民国时期开始用的。自古每当王朝更迭，第一件事就是改历法，一方面体现新朝气象，一方面也因为旧历使用多年，已经有了误差。
+
+民国成立时也未能免俗，废除了清朝使用的时宪历，1929年推出了紫金历，也就是现代农历。
+
+紫金历跟公历不同，置闰规则里有实时观测修正的部分，不是一成不变的。比如说2057年农历九月初一应该是哪天就有争议。因为该日的朔时刚好卡在北京时间零点整附近，用不同的天文算法会导致算出来的日期不一样。
+
+https://www.zhihu.com/question/405115980
+
+公历1582年消失了10天，但我国的农历用了这么多年，难道没有误差吗？
+
+----
 
 1928年10月25日，一位旅美求学的中国青年在美国叶凯士天文台发现一颗小行星（临时编号为1928 UF），这是第一颗由中国人发现的小行星。这位青年学子感怀祖国，随即将其命名为中华星（1125 China）。
 
@@ -252,85 +264,3 @@ https://mp.weixin.qq.com/s/BsAbS1QadPcBDqHYr7eiQA
 https://mp.weixin.qq.com/s/nrjY7LOY_XuytJ2xXk3K1Q
 
 来自星际空间的持续信号
-
-# 模型压缩与加速进阶+
-
-https://mp.weixin.qq.com/s/5NM9M1oY8bwsEqdBRVYpMg
-
-网络规模更小、速度更快，这是谷歌提出的MorphNet
-
-https://mp.weixin.qq.com/s/SC3ebx-C4N4H8B_R6K09cg
-
-分段的人脸检测在移动端的应用
-
-https://mp.weixin.qq.com/s/_C5AvD3YmRH2dmBjbEZFrQ
-
-神经网络子网络压缩10倍，精确度保持不变
-
-https://zhuanlan.zhihu.com/p/65348860
-
-南邮提出实时语义分割的轻量级网络：LEDNET
-
-https://zhuanlan.zhihu.com/p/67272163
-
-百度提出关于网络压缩和加速的新剪枝算法
-
-https://mp.weixin.qq.com/s/jHv3Amti1YZq51Df2mNFtg
-
-network sliming:加快模型速度同时不损失精度
-
-https://mp.weixin.qq.com/s/gwXXkWumGWy24oWuZKSyAQ
-
-MIT韩松组推出升级版AutoML方法，一个网络适配所有硬件
-
-https://zhuanlan.zhihu.com/p/76909380
-
-轻量型网络：MoGA简介
-
-https://mp.weixin.qq.com/s/kgl7mz4bK7SywkbViY_qhQ
-
-利用LSTM思想来做CNN剪枝，北大提出Gate Decorator
-
-https://mp.weixin.qq.com/s/3_famaAmkAN-4xVEupSXSA
-
-华为、北大等首创GAN剪枝算法，线上加速3倍以上
-
-https://mp.weixin.qq.com/s/KuZ-mZKt7bTWhzygK1lmSg
-
-加速目标检测
-
-https://zhuanlan.zhihu.com/p/261146248
-
-原生模型上的战斗
-
-https://mp.weixin.qq.com/s/jqRBrs9Y_-3qvemL0RTflA
-
-支付宝如何优化移动端深度学习引擎？
-
-https://mp.weixin.qq.com/s/NJzGR-tY_WWeccbdshHckA
-
-基于交错组卷积的高效深度神经网络
-
-https://mp.weixin.qq.com/s/6eyEMW9dVBR5cZrHxn8iqA
-
-腾讯AI Lab详解3大热点：模型压缩、自动机器学习及最优化算法
-
-https://xmfbit.github.io/2018/02/24/paper-ssl-dnn/
-
-论文-Learning Structured Sparsity in Deep Neural Networks
-
-https://mp.weixin.qq.com/s/d6HFVbbHwkxPGdnbyVuMyQ
-
-密歇根州立大学提出NestDNN：动态分配多任务资源的移动端深度学习框架
-
-https://mp.weixin.qq.com/s/lUTusig94Htf7_4Z3X1fTQ
-
-清华&伯克利ICLR论文：重新思考6大剪枝方法
-
-https://mp.weixin.qq.com/s/g3y9mRhkFtzSuSMAornnDQ
-
-韩松博士论文：面向深度学习的高效方法与硬件
-
-https://mp.weixin.qq.com/s/aH1zQ7we8OE59-O9n4IXhw
-
-应对未来物联网大潮：如何在内存有限的情况下部署深度学习？

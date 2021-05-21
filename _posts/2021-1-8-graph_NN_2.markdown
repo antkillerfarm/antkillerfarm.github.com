@@ -61,6 +61,10 @@ https://mp.weixin.qq.com/s/wFlLBoeUW90RracK11pjtg
 
 2021年，我终于决定入门GCN
 
+https://mp.weixin.qq.com/s/AZg9cTr4XXiaLznQG_ru5A
+
+我又一次迷失在了GCN的傅立叶变换里...
+
 # GraphSAGE
 
 GraphSAGE取自Graph SAmple and aggreGatE，SAmple指如何对邻居个数进行采样。aggreGatE指拿到邻居的embedding之后如何汇聚这些embedding以更新自己的embedding信息。

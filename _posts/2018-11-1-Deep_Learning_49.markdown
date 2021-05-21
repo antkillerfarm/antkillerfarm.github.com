@@ -316,33 +316,3 @@ https://mp.weixin.qq.com/s/ROTKi-Ycm0ypIi0FhCW4Xw
 https://mp.weixin.qq.com/s/9d6EhZEdn6XY-wFC22LysQ
 
 最新“深度学习人脸检测”综述论文，17页pdf概述50种人脸检测SOTA方法
-
-# 模型压缩与加速进阶+++
-
-https://mp.weixin.qq.com/s/IfvXrsUq8-cBDC4_3O5v_w
-
-Facebook新研究优化硬件浮点运算，强化AI模型运行速率
-
-https://mp.weixin.qq.com/s/Jsxiha_BFtWVLvO4HMwJ3Q
-
-工业界第一手实战经验：深度学习高效网络结构设计
-
-https://mp.weixin.qq.com/s/uXbLb5ITHOU0dZRSWNobVg
-
-算力限制场景下的目标检测实战浅谈
-
-https://mp.weixin.qq.com/s/DoeoPGnS88HQmxagKJWLlg
-
-小米开源FALSR算法：快速精确轻量级的超分辨率模型
-
-https://mp.weixin.qq.com/s/wT39oUWfrQK-dg7hGXRynQ
-
-实时单人姿态估计，在自己手机上就能实现
-
-https://mp.weixin.qq.com/s/RVsXUnAJ2f0Cby7BPaWifA
-
-人物属性模型移动端实验记录
-
-https://mp.weixin.qq.com/s/yCcK6UJqm850HON7xU3R6g
-
-模型压缩重要方向-动态模型，如何对其长期深入
