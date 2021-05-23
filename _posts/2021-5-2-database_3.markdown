@@ -411,7 +411,19 @@ https://mp.weixin.qq.com/s/VSbzTh3xEbVdB4IgGJzQ3A
 
 25张图，一万字，拆解Linux网络包发送过程
 
-# TensorFlow+++
+# TensorFlow++
+
+https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
+
+Docker Compose+GPU+TensorFlow所产生的奇妙火花
+
+https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
+
+TensorFlow中那些鲜为人知却又极其实用的知识
+
+https://mp.weixin.qq.com/s/XHKrkNf2bWLF7r7gzdU24w
+
+Quick, Draw!涂鸦分类递归神经网络
 
 https://mp.weixin.qq.com/s/n4nEtyRc5G44kj3zmHpd5g
 

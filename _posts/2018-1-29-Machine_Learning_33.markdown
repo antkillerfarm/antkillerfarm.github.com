@@ -111,40 +111,6 @@ https://mp.weixin.qq.com/s/AtImcIBaRIJVXpOP2hruBQ
 
 Google发布机器学习术语表 (包括简体中文)
 
-# ACBM算法
-
-ACBM算法是在AC（Aho-Corasick）自动机（UNIX上的fgrep命令使用的就是AC算法）的基础之上，引入了BM（Boyer-Moore）算法的多模扩展，实现的高效的多模匹配。和AC自动机不同的是，ACBM算法不需要扫描目标文本串中的每一个字符，可以利用本次匹配不成功的信息，跳过尽可能多的字符，实现高效匹配。
-
->注： Alfred Vaino Aho，1941年生，加拿大计算机科学家。普林斯顿大学博士，长期供职于贝尔实验室，后为哥伦比亚大学教授。egrep和fgrep的发明人，AWK语言的联合发明人。2003年获IEEE John von Neumann Medal。
-
->Margaret John Corasick，贝尔实验室研究员。
-
->Robert Stephen Boyer，德克萨斯大学教授。
-
->J Strother Moore，德克萨斯大学教授。Boyer的好朋友，两人的绝大多数成就都是合作完成的。
-
-参见：
-
-http://blog.csdn.net/sealyao/article/details/6817944
-
-ACBM算法
-
-https://mp.weixin.qq.com/s/yVOgAuD9hEYAMdLyvae2VA
-
-最长公共子序列与最长公共子串
-
-https://mp.weixin.qq.com/s/8rP3fF9iVnplhkFmxuj6fw
-
-一文读懂KMP算法
-
-https://mp.weixin.qq.com/s/if7P0yq59DbBEjW15vfaQA
-
-推荐一个高效算法wumanber：每秒680万匹配！
-
-https://mp.weixin.qq.com/s/4m1O5ZHsZTRc-JuBF97_3w
-
-字符串匹配的Boyer-Moore算法
-
 # 高斯过程回归
 
 从大的分类来说，机器学习的算法可分为两类：

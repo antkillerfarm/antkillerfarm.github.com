@@ -221,6 +221,14 @@ http://war.163.com/15/0108/09/AFE8A8LU00014J0G.html
 
 二战美军面临两大敌人：淋病、午餐肉
 
+https://zhuanlan.zhihu.com/p/24366992
+
+与生活息息相关:细数那些被二战"捧红"的民用产品!
+
+https://zhuanlan.zhihu.com/p/24326554
+
+吃货慎入!看看二战时期美军野战口粮
+
 http://www.sohu.com/a/64190509_139533
 
 曾经象征食品工业繁荣的罐头，为何已经远离了你的生活
@@ -232,6 +240,10 @@ https://mp.weixin.qq.com/s/GHgfNAkV7ttXfasGkM083A
 https://www.zhihu.com/question/21171331
 
 火腿肠里真的有肉吗？
+
+https://mp.weixin.qq.com/s/pwWRC0ewE4GOxFAQ35pnZw
+
+掺假食品的泛滥
 
 ## 化学工业
 

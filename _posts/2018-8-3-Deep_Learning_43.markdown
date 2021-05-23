@@ -203,6 +203,10 @@ https://mp.weixin.qq.com/s/Qx8V1FFRkVbERBdvP1isqw
 
 只要你一句话，马斯克就得留扫把头，项目已开源
 
+https://mp.weixin.qq.com/s/vKzsLLOT7dQNBQzxDTGw0g
+
+新垣结衣夫妇的孩子长啥样，用BabyGAN预测试试
+
 # Graph NN参考资源+++
 
 https://mp.weixin.qq.com/s/L4XPz4Moc3mmhR_7kK5OKg

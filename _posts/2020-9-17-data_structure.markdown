@@ -187,6 +187,44 @@ https://mp.weixin.qq.com/s/JbhEN5yc_igLQdhUH-ImBQ
 
 高频面试数据结构——跳表
 
+# ACBM算法
+
+ACBM算法是在AC（Aho-Corasick）自动机（UNIX上的fgrep命令使用的就是AC算法）的基础之上，引入了BM（Boyer-Moore）算法的多模扩展，实现的高效的多模匹配。和AC自动机不同的是，ACBM算法不需要扫描目标文本串中的每一个字符，可以利用本次匹配不成功的信息，跳过尽可能多的字符，实现高效匹配。
+
+>注： Alfred Vaino Aho，1941年生，加拿大计算机科学家。普林斯顿大学博士，长期供职于贝尔实验室，后为哥伦比亚大学教授。egrep和fgrep的发明人，AWK语言的联合发明人。2003年获IEEE John von Neumann Medal。
+
+>Margaret John Corasick，贝尔实验室研究员。
+
+>Robert Stephen Boyer，德克萨斯大学教授。
+
+>J Strother Moore，德克萨斯大学教授。Boyer的好朋友，两人的绝大多数成就都是合作完成的。
+
+参见：
+
+http://blog.csdn.net/sealyao/article/details/6817944
+
+ACBM算法
+
+https://mp.weixin.qq.com/s/yVOgAuD9hEYAMdLyvae2VA
+
+最长公共子序列与最长公共子串
+
+https://mp.weixin.qq.com/s/8rP3fF9iVnplhkFmxuj6fw
+
+一文读懂KMP算法
+
+https://mp.weixin.qq.com/s/-M8o1dTbYcnIe2ZkqWxkcg
+
+一看就懂的字符串匹配算法KMP、BM、Sunday
+
+https://mp.weixin.qq.com/s/if7P0yq59DbBEjW15vfaQA
+
+推荐一个高效算法wumanber：每秒680万匹配！
+
+https://mp.weixin.qq.com/s/4m1O5ZHsZTRc-JuBF97_3w
+
+字符串匹配的Boyer-Moore算法
+
 ## 参考
 
 https://mp.weixin.qq.com/s/JiYRhcTv2qgLfVyGzI8uHQ
@@ -388,71 +426,3 @@ https://mp.weixin.qq.com/s/gJWTiMCovGMQ8ye_TovdOw
 https://www.zhihu.com/question/404217836
 
 如何看待全球超级计算机TOP 500榜单日本登顶，中国跌出前三？近年中国超算发展现状如何？
-
-# Android研究+
-
-## adb
-
-手机->PC：
-
-`adb pull sdcard/contacts_app.db`
-
-PC->手机：
-
-`adb push aaa/contacts_app.db /sdcard/`
-
-----
-
-https://www.cnblogs.com/caoxinyu/p/10568463.html
-
-Ubuntu adb报错：no permissions (user in plugdev group; are your udev rules wrong?);
-
-## tombstone
-
-当一个动态库（native 程序）开始执行时，系统会注册一些连接到debuggerd的signal handlers，当系统crash的时候，会保存一个tombstone文件到/data/tombstones目录下。
-
-https://www.cnblogs.com/CoderTian/p/5980426.html
-
-Android Tombstone分析
-
-## Logcat
-
-官方文档：
-
-https://developer.android.google.cn/studio/command-line/logcat
-
-参考：
-
-https://www.cnblogs.com/JianXu/p/5468839.html
-
-Android logcat命令详解
-
-## 打包
-
-apk包就是android系统的安装包。
-
-aar是android中特有的归档文件，既包含字节码文件也包含android的资源文件等。
-
-jar是java字节码文件（class文件）的归档文件，其不包含android中的资源文件等信息。
-
-https://blog.csdn.net/it_yangkun/article/details/80119182
-
-Android打包APK,AAR,JAR
-
-## 参考
-
-https://mp.weixin.qq.com/s/twfpUMf9CfXcgwtFFkJ4Ig
-
-Android整体设计及背后意义
-
-https://mp.weixin.qq.com/s/eEuNPtTaPwJ7hSghgeU32g
-
-Android Hook技术防范漫谈
-
-https://mp.weixin.qq.com/s/AQI2S2oK7HFDs9lH-nsx5g
-
-Android性能优化系列：Java内存优化篇
-
-https://www.jianshu.com/p/80013a768a45
-
-Android soong build系统介绍

@@ -73,6 +73,12 @@ https://zhuanlan.zhihu.com/p/66319869
 
 ----
 
+当年，福特公司请人检修电机，斯泰因梅茨在电机外壳画了一条线，让工作人员在此处打开电机迅速排除了故障。结账时，斯坦门茨要1万美元，还开了个清单：画一条线，1美元；知道在哪儿画线，9999美元。
+
+Charles Proteus Steinmetz，1865~1923，德国数学家和电气工程师，后移民美国。一生有200+项专利，在交流电领域有重大贡献。因祖父和父亲遗传，他是先天性驼背。IEEE Charles Proteus Steinmetz Award就是以他名字命名的。
+
+----
+
 https://mp.weixin.qq.com/s/YdoIVBpn1dFUEzDEF5pYJw
 
 被迫离开工作近20年的公司，半导体老兵上演逆袭。林孝平，一个小儿麻痹患者。
@@ -362,17 +368,3 @@ https://mp.weixin.qq.com/s/9skWM6yirEupLj2wdpgqkA
 https://mp.weixin.qq.com/s/Mb7iSXfrOtettVn-Sz8QUA
 
 主板上这家伙，要当CPU和内存的中间商！
-
-# TensorFlow++
-
-https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
-
-Docker Compose+GPU+TensorFlow所产生的奇妙火花
-
-https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
-
-TensorFlow中那些鲜为人知却又极其实用的知识
-
-https://mp.weixin.qq.com/s/XHKrkNf2bWLF7r7gzdU24w
-
-Quick, Draw!涂鸦分类递归神经网络
