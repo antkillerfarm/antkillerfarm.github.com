@@ -7,6 +7,26 @@ category: linux
 * toc
 {:toc}
 
+# 环境变量
+
+设置环境变量的方法：
+
+1）临时的：使用export命令声明即可，变量在关闭shell时失效。示例如下：
+
+`export PATH=/home/xyz/bin:$PATH;`
+
+2）永久的：需要修改配置文件，变量永久生效。
+
+在/etc/profile文件中添加变量（对所有用户生效）。修改文件后要想马上生效，还要运行`source /etc/profile`，不然只能在下次重进此用户时生效。
+
+在用户目录下的.bash_profile文件中增加变量（对该用户生效）。同样需要source才能马上生效。
+
+重要的环境变量：
+
+PATH：可执行文件路径。
+
+LD_LIBRARY_PATH：动态链接库文件路径
+
 # minicom
 
 1.查看串口设备
@@ -437,43 +457,3 @@ Linux系统内存知识
 http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html
 
 进程与线程的一个简单解释
-
-https://mp.weixin.qq.com/s/zVi45pZka_kPpKIoNXNVBA
-
-当初我要是这么学习“进程和线程”就好了
-
-https://mp.weixin.qq.com/s/A8TnhOFLQOhEqphE760yvw
-
-15个相见恨晚的Linux神器，你可能一个都没见过
-
-https://mp.weixin.qq.com/s/ejGjsGA1ijPP--j3BLcEFA
-
-Linux并发与同步
-
-https://mp.weixin.qq.com/s/CAPU8bjJWobQs6JHHMasvQ
-
-Linux服务端最大并发数是多少？
-
-http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html
-
-Systemd入门教程：实战篇
-
-https://mp.weixin.qq.com/s/bPqnaMqhi_4p1mwjmvyoIw
-
-多图详解10大高性能开发核心技术
-
-https://mp.weixin.qq.com/s/wmzwvnOToqCkKJz5yw-USQ
-
-低调的Linux文件系统家族
-
-https://mp.weixin.qq.com/s/ESLO1RH6Q8udwI13Z2Pz_w
-
-详解linux io flush
-
-https://mp.weixin.qq.com/s/LLlzPB2emr9Hqr7gql0B4Q
-
-为什么Linux需要Swapping
-
-https://mp.weixin.qq.com/s/fzLcAkYwKhj-9hgoVkTzaw
-
-CPU飙高，系统性能问题如何排查？

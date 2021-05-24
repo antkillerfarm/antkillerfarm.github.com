@@ -180,7 +180,7 @@ https://mp.weixin.qq.com/s/vyF0VAF8xjEWrBnS1_DtkA
 
 # 多维数组的行优先和列优先
 
-这里以numpy为工具，介绍一下多维数组的行优先和列优先的概念。
+这里以numpy为工具，介绍一下多维数组的行优先（Row-Major）和列优先（Column-Major）的概念。
 
 首先我们生成一个3x4的数组：
 

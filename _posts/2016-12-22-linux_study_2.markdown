@@ -166,6 +166,18 @@ dstat是后起之秀，号称可以替代vmstat、iostat、ifstat。
 
 # 性能分析
 
+linux常用的调试工具：
+
+vmstat、iostat、mpstat、netstat、sar、top：查看系统、程序信息等
+
+gprof、perf、perf top：定位到具体函数、调用等
+
+strace、ltrace：系统调用、函数调用、库函数调用等
+
+pstack、ptree、pmap：堆栈信息
+
+dmesg：系统log信息
+
 ## 黑盒测试
 
 Linux上主要有perf、gprof和valgrind三个性能分析工具。
@@ -443,23 +455,3 @@ Linux思维导图整理
 https://mp.weixin.qq.com/s/sLyD6z2xBXRxfBZnImTgtQ
 
 40+张最全Linux/C/C++思维导图，收藏！
-
-# 环境变量
-
-设置环境变量的方法：
-
-1）临时的：使用export命令声明即可，变量在关闭shell时失效。示例如下：
-
-`export PATH=/home/xyz/bin:$PATH;`
-
-2）永久的：需要修改配置文件，变量永久生效。
-
-在/etc/profile文件中添加变量（对所有用户生效）。修改文件后要想马上生效，还要运行`source /etc/profile`，不然只能在下次重进此用户时生效。
-
-在用户目录下的.bash_profile文件中增加变量（对该用户生效）。同样需要source才能马上生效。
-
-重要的环境变量：
-
-PATH：可执行文件路径。
-
-LD_LIBRARY_PATH：动态链接库文件路径

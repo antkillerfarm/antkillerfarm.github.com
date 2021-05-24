@@ -277,6 +277,10 @@ https://amfarahmand.github.io/IntroRL/
 
 强化学习导论：多伦多大学2021课程
 
+https://datawhalechina.github.io/easy-rl/
+
+Easy-RL
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

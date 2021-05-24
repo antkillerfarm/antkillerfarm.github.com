@@ -253,6 +253,10 @@ https://mp.weixin.qq.com/s/9b618Vc_Y5EgkCYFmfUYFA
 
 这几天，祝融号到底在忙啥呢？
 
+https://mp.weixin.qq.com/s/w0EyZwI7lF3ztNXFx5MtTQ
+
+听说火星上风很大，那祝融号可以用风力发电吗？
+
 # 阿波罗50年
 
 https://mp.weixin.qq.com/s/79e6p2TYpttO-NR1of21jw

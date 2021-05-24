@@ -285,6 +285,18 @@ CPU强调单core的极致性能，因此广泛使用了如下技术：
 
 GPU不追求单core的性能，因此也没有那些复杂的控制逻辑。这样省下来的电路，可以变成更多的ALU。由于数据处理的局部性，通常可以若干ALU共享一套Fetch/Decode和Ctx。
 
+当然，如果ALU非常多的话，就不能都共享一套了，这时可以采用下图所示的分组共享。
+
+![](/images/img4/GPU_2.png)
+
+有利就有弊，下面看看GPU是如何执行条件语句的。
+
+![](/images/img4/GPU_3.png)
+
+上图展示了8个ALU并行执行条件语句的过程：
+
+
+
 参考：
 
 http://www.cnblogs.com/geniusalex/archive/2008/12/26/1941766.html

@@ -220,6 +220,10 @@ https://zhuanlan.zhihu.com/p/364813527
 
 一文教你搞懂Go中栈操作
 
+https://zhuanlan.zhihu.com/p/374825312
+
+go pprof实战
+
 ## GTK
 
 熟悉我的朋友都知道，新语言的GTK demo是一定要有的。毕竟helloworld太简单了，容易让人产生从三到万的错觉。
