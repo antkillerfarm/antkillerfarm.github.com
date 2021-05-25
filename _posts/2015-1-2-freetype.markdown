@@ -103,6 +103,12 @@ http://dranger.com/ffmpeg/
 
 `ffmpeg -f alsa -ac 2 -i pulse -f x11grab -r 30 -s 1024x768 -i :0.0 -acodec pcm_s16le -vcodec libx264 -preset ultrafast -crf 0 -threads 0 output.mkv`
 
+4.多张图片生成视频
+
+`ffmpeg -r 30 -i out_%4d_xx.png out.mp4`
+
+这里的序号最好写成0000这样的形式，ffmpeg在这里的处理并不鲁棒。
+
 参考：
 
 http://www.cnblogs.com/dwdxdy/p/3240167.html

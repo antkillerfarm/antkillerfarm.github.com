@@ -259,15 +259,17 @@ Taichi是胡渊鸣开发的一套计算机图形库。它拥有一套特有的DS
 
 官网：
 
-http://taichi.graphics/
+https://taichi.graphics/
 
 代码：
 
-https://github.com/yuanming-hu/taichi
+https://github.com/taichi-dev/taichi
 
 胡渊鸣还开发了一个物理模拟方面的自动微分器——DiffTaichi：
 
 https://github.com/yuanming-hu/difftaichi
+
+
 
 参考：
 
