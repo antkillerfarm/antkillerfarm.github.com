@@ -275,10 +275,6 @@ https://mp.weixin.qq.com/s/urwS1dFAZsBG0Kyl8YgLpQ
 
 GET和POST请求的本质区别是什么
 
-https://mp.weixin.qq.com/s/u3VSyEtdcIgp8dCbwCaavA
-
-SSH只能用于远程Linux主机？那说明你见识太小了！
-
 https://mp.weixin.qq.com/s/o9zxzklBOFyNkOPMR4gdnA
 
 想避免重复请求/并发请求？这样处理才足够优雅

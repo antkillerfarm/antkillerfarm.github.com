@@ -237,7 +237,7 @@ https://tvm.apache.org/
 
 代码：
 
-https://github.com/apache/incubator-tvm
+https://github.com/apache/tvm
 
 ![](/images/img3/tvm_stack.png)
 
@@ -245,7 +245,23 @@ https://github.com/apache/incubator-tvm
 
 《TVM: End-to-End Optimization Stack for Deep Learning》
 
+## TVM Runtime
+
+![](/images/img4/tvm_rpc.png)
+
+TVM采用C/S模式进行部署，其中在target机器上的部分，被称为TVM Runtime。
+
+官方文档：
+
+http://tvm.apache.org/docs/dev/runtime.html
+
 参考：
+
+https://zhuanlan.zhihu.com/p/369981405
+
+部署TVM Runtime
+
+## 参考
 
 https://zhuanlan.zhihu.com/p/139552817
 

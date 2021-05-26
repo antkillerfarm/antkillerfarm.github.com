@@ -370,3 +370,13 @@ https://mp.weixin.qq.com/s/qOjGrR59Mf0Mzgh4bpDhrA
 https://mp.weixin.qq.com/s/yNxjJHpGns6utpBpI-0XDA
 
 分布式训练框架Horovod初步学习
+
+# DMLC
+
+Distributed (Deep) Machine Learning Community是陈天奇发起的一个社区。
+
+它的核心库，被称为dmlc-core。目前已被TVM、MXNet等项目所采用。
+
+代码：
+
+https://github.com/dmlc/dmlc-core

@@ -269,7 +269,9 @@ https://github.com/taichi-dev/taichi
 
 https://github.com/yuanming-hu/difftaichi
 
+一个卡门涡街的demo：
 
+https://github.com/hietwll/LBM_Taichi
 
 参考：
 

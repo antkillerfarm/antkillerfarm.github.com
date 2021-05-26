@@ -19,7 +19,7 @@ https://learngitbranching.js.org
 
 ![](/images/img3/git.png)
 
-0.GUI工具
+### GUI工具
 
 - gitk：主要用于展示分支树。
 
@@ -49,11 +49,11 @@ https://learngitbranching.js.org
 
 - tig：一个字符式的图形界面工具。
 
-1.创建版本库
+### 创建版本库
 
 `git init`
 
-2.Git常用的撤销操作
+### Git常用的撤销操作
 
 基本状态标识
 
@@ -79,7 +79,7 @@ https://learngitbranching.js.org
 - 只修改内容，不改msg: `git commit --amend --no-edit`
 - 修改最后一次提交的author: `git commit --amend --reset-author` 这里直接用当前author信息替换之，所以需要在修改前，设置好author信息
 
-3.暂存本地修改及恢复
+### 暂存本地修改及恢复
 
 如果`git pull`的时候，本地有修改，就需要暂存，并在`git pull`之后，恢复之。
 
@@ -87,7 +87,7 @@ https://learngitbranching.js.org
 
 `git stash pop`
 
-4.回退和前进
+### 回退和前进
 
 回退历史版本：
 
@@ -95,7 +95,7 @@ https://learngitbranching.js.org
 
 回退之后，如果不满意，就需要前进操作，以恢复后续的更新。然而这个时候有个麻烦的地方，在`git log`中已经找不到后续的更新记录，也就查不到commit id。这时可以用`git reflog`查看git操作记录，以获得想要的commit id，并checkout之。
 
-5.远程操作
+### 远程操作
 
 查看远程仓库的地址：
 
@@ -109,17 +109,17 @@ checkout远程分支：
 
 `git checkout -b dev origin/dev`
 
-6.check out有submodule的版本库
+### check out有submodule的版本库
 
 `git clone --recursive URL`
 
-7.checkout和reset的区别
+### checkout和reset的区别
 
 https://segmentfault.com/a/1190000006185954
 
 git的reset和checkout的区别
 
-8.制作和应用patch
+### 制作和应用patch
 
 制作patch主要有两种方式：`git diff`和`git format-patch`。前者生成通用patch，而后者生成git专用patch。使用示例：
 
@@ -133,7 +133,7 @@ git的reset和checkout的区别
 
 `git apply`并不会将commit message等打上去，打完patch后需要重新`git add`和`git commit`，而`git am`会直接将patch的所有信息打上去。
 
-9.使用tag
+### 使用tag
 
 打标签：
 
@@ -147,13 +147,13 @@ git的reset和checkout的区别
 
 `git checkout v0.1.2`
 
-10.强制更新
+### 强制更新
 
 当发生冲突，需要放弃修改，强制更新的时候，可以：
 
 `git reset --hard origin/master`
 
-11.保存密码
+### 保存密码
 
 编辑仓库目录中本地的”.git/config”文件，增加如下属性：
 
@@ -162,43 +162,23 @@ git的reset和checkout的区别
     helper = store
 ```
 
-12.SSH
+### cherry-pick
 
-```bash
-cd ~/.ssh
-ssh-keygen
-cat ~/.ssh/id_rsa.pub
-```
-
->`ssh-keygen`命令会生成两个文件id_rsa和id_rsa.pub，前者是私钥，后者是公钥，不要弄错了。
-
-使用SSH有的时候会update失败。
-
-解决办法：
-
-修改~/.ssh/config，添加:
-
-`User XXX`
-
-参考：
-
-https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key
-
-Generating Your SSH Public Key
-
-13.`git blame`查看一行代码是谁改的。
-
-14.`HEAD`表示当前版本，`HEAD^^`表示当前版本之前的两个版本，如果回溯的版本较多也可以写作`HEAD~100`。
-
-15.cherry-pick用于将分支A上的修改C，移植到分支B上。
+用于将分支A上的修改C，移植到分支B上。
 
 `git cherry-pick <commit id>`
 
-16.撤销已经push的内容
+### 撤销已经push的内容
 
 `git reset --soft <SHA>`
 
 `git push origin master --force`
+
+### Other
+
+`git blame`查看一行代码是谁改的。
+
+`HEAD`表示当前版本，`HEAD^^`表示当前版本之前的两个版本，如果回溯的版本较多也可以写作`HEAD~100`。
 
 ## 如何git超大版本库
 

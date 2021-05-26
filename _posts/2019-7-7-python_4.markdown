@@ -83,6 +83,8 @@ PLY和SWIG的作者都是David Beazley。
 
 >David M. Beazley，犹他大学博士。IEEE Gordon Bell Prize(1993,1998)。先后在Los Alamos和University of Chicago工作执教。超算领域专家。python语言核心开发者。
 
+Foreign Function Interface(FFI)
+
 ## SLY
 
 Sly Lex Yacc是David Beazley的新作，号称新一代的PLY。

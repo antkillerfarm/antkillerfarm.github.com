@@ -336,6 +336,62 @@ swapon --show
 swapoff /swapfile
 ```
 
+# SSH
+
+## keygen
+
+```bash
+cd ~/.ssh
+ssh-keygen
+cat ~/.ssh/id_rsa.pub
+```
+
+>`ssh-keygen`命令会生成两个文件id_rsa和id_rsa.pub，前者是私钥，后者是公钥，不要弄错了。
+
+使用SSH有的时候会update失败。
+
+解决办法：
+
+修改~/.ssh/config，添加:
+
+`User XXX`
+
+参考：
+
+https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key
+
+Generating Your SSH Public Key
+
+## X Server
+
+假设客户端的ip是1.1.1.1，而ssh服务器的ip是2.2.2.2。
+
+Client:
+
+```bash
+xhost +2.2.2.2
+ssh -X root@2.2.2.2
+```
+
+Server:
+
+```bash
+export DISPLAY=1.1.1.1:0.0
+xclock
+```
+
+参考：
+
+https://www.cnblogs.com/-9-8/p/5365105.html
+
+ssh & display
+
+## 参考
+
+https://mp.weixin.qq.com/s/u3VSyEtdcIgp8dCbwCaavA
+
+SSH只能用于远程Linux主机？那说明你见识太小了！
+
 # Linux参考资源
 
 https://www.kernel.org/doc/html/latest/
@@ -417,43 +473,3 @@ https://mp.weixin.qq.com/s/rH7WqriomFTA55ecacV8Gw
 https://mp.weixin.qq.com/s/vDlWCVK8knxPf5HoqmtZyQ
 
 从创建进程到进入main函数，发生了什么？
-
-https://mp.weixin.qq.com/s/4ZdnacKuqkpWTso6P1Rmjg
-
-如何调试多线程程序
-
-https://mp.weixin.qq.com/s/8DNyicMcycUL3RRAiKAz8g
-
-Linux进程必知必会
-
-https://mp.weixin.qq.com/s/EkScI-WCdjLz1g2ec6nkhQ
-
-理解格式化原理
-
-https://mp.weixin.qq.com/s/Sqpp82FhZEC8HkeVHzk9QA
-
-5万字、97张图总结操作系统核心知识点
-
-https://mp.weixin.qq.com/s/SYlaIkuXBqFrbZ-gDMYqtA
-
-高并发高性能服务器是如何实现的
-
-https://mp.weixin.qq.com/s/73eaj0qvhUFWGbDA4H2MNQ
-
-读取文件时，程序经历了什么？
-
-https://mp.weixin.qq.com/s/Y8YZzkuzVr_ti6skHpd1NA
-
-Linux网络包接收过程的监控与调优
-
-https://mp.weixin.qq.com/s/4tAxQ0auQfv5x7Dh3B-85g
-
-Linux内存管理
-
-https://mp.weixin.qq.com/s/jDPxu6IVo3_VpK5l6_-jdQ
-
-Linux系统内存知识
-
-http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html
-
-进程与线程的一个简单解释
