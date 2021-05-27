@@ -316,6 +316,15 @@ https://www.jianshu.com/p/b2ec40c1c7c1
 
 C++17：std::any, std::variant 和 std::optional
 
+## std::transform
+
+```cpp
+std::string s("Hello");
+std::transform(s.begin(), s.end(), s.begin(),
+    [](unsigned char c) { return std::toupper(c); });
+std::cout << s << std::endl; // HELLO
+```
+
 # C/C++参考资源
 
 https://zhuanlan.zhihu.com/p/23016264

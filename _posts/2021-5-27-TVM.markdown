@@ -1,0 +1,201 @@
+---
+layout: post
+title:  TVM
+category: AI 
+---
+
+* toc
+{:toc}
+
+# TVM
+
+TVM是陈天奇领导的一个DL加速框架项目。它处于DL框架（如tensorflow、pytorch）和硬件后端（如CUDA、OpenCL）之间，兼顾了前者的易用性和后者的执行效率。
+
+官网：
+
+https://tvm.apache.org/
+
+代码：
+
+https://github.com/apache/tvm
+
+![](/images/img3/tvm_stack.png)
+
+论文：
+
+《TVM: End-to-End Optimization Stack for Deep Learning》
+
+## TVM Runtime
+
+![](/images/img4/tvm_rpc.png)
+
+TVM采用C/S模式进行部署，其中在target机器上的部分，被称为TVM Runtime。
+
+官方文档：
+
+http://tvm.apache.org/docs/dev/runtime.html
+
+参考：
+
+https://zhuanlan.zhihu.com/p/369981405
+
+部署TVM Runtime
+
+## NNVM
+
+NNVM是一个类似于ONNX、NNEF的中间表示。
+
+官网：
+
+https://github.com/dmlc/nnvm
+
+参考：
+
+https://mp.weixin.qq.com/s/qkvX0rmEe0yQ-BhCmWAXSQ
+
+李沐：AWS开源端到端AI框架编译器NNVM
+
+## Relay
+
+Relay是TVM中用来替代NNVM的模块，其本身被认为是NNVM第二代。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/91283238
+
+TVM图编译器Relay简单探究
+
+## backend
+
+python层面：
+
+python/tvm/relay/op/contrib/ethosn.py
+
+```python
+@register_pattern_table("ethos-n")
+def pattern_table():
+@tvm.ir.register_op_attr("nn.max_pool2d", "target.ethos-n")
+def max_pool2d(attrs, args):
+```
+
+relay层面：
+
+src/relay/backend/contrib/ethosn
+
+```cpp
+TVM_REGISTER_GLOBAL("relay.ext.ethos-n").set_body_typed(CompileEthosn);
+```
+
+runtime层面：
+
+src/runtime/contrib/ethosn
+
+test：
+
+tests/python/contrib/test_ethosn
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/139552817
+
+一篇关于深度学习编译器架构的综述论文
+
+https://www.zhihu.com/question/396105855
+
+针对神经网络的编译器和传统编译器的区别和联系是什么？
+
+https://mp.weixin.qq.com/s/8bXwxYyNjdThlGQQ70cgWQ
+
+TVM：端到端自动深度学习编译器，244页ppt
+
+https://zhuanlan.zhihu.com/p/333706468
+
+TVM学习系列blog
+
+https://zhuanlan.zhihu.com/p/163717035
+
+AI编译优化
+
+https://www.zhihu.com/question/267167829
+
+如何看待Tensor Comprehensions？与TVM有何异同？（这个问题下的答案不多，但基本都是陈天奇、贾扬清之类的大佬）
+
+https://mp.weixin.qq.com/s/irvBbPKENiZX9G_6wh5c-Q
+
+陈天奇等人提出TVM：深度学习自动优化代码生成器
+
+https://mp.weixin.qq.com/s/28n8g_epHsYB0I9GVc_lww
+
+陈天奇团队TVM重磅更新：直接在浏览器使用GPU
+
+https://mp.weixin.qq.com/s/7JGLm-hkCZBNDLA98qvWNA
+
+自动生成硬件优化内核：陈天奇等人发布深度学习编译器TVM
+
+https://mp.weixin.qq.com/s/YVIvdMznb3oatIXqD5a5_A
+
+陈天奇等人提出AutoTVM：让AI来编译优化AI系统底层算子
+
+https://mp.weixin.qq.com/s/HquT_mKm7x_rbDGz4Voqpw
+
+阿里巴巴最新实践：TVM+TensorFlow提高神经机器翻译性能
+
+https://zhuanlan.zhihu.com/p/50529704
+
+手把手带你遨游TVM
+
+https://mp.weixin.qq.com/s/z5rsU_uAAaRxgD9YAxDkZA
+
+陈天奇：深度学习编译技术的现状和未来
+
+https://zhuanlan.zhihu.com/p/75203171
+
+如何利用TVM快速实现超越Numpy(MKL)的GEMM
+
+https://zhuanlan.zhihu.com/p/58918363
+
+TVM: Deep Learning模型的优化编译器
+
+https://zhuanlan.zhihu.com/p/87664838
+
+也谈TVM和深度学习编译器
+
+https://mp.weixin.qq.com/s/VE3CySjjS2rTpUDPnKcLTg
+
+陈天奇最新研究：递归模型编译器CORTEX
+
+https://zhuanlan.zhihu.com/p/358585143
+
+深度学习编译器及TVM介绍
+
+https://zhuanlan.zhihu.com/p/360385060
+
+TVM中的scheduler
+
+https://mp.weixin.qq.com/s/Kt4xDLo-NRui8Whl0DqcSA
+
+Data Flow和Control Flow
+
+# GLOW
+
+代码：
+
+https://github.com/pytorch/glow
+
+参考：
+
+https://zhuanlan.zhihu.com/p/102127047
+
+Glow: Graph Lowering Compiler for Neural Networks
+
+# NNFusion
+
+代码：
+
+https://github.com/microsoft/nnfusion
+
+参考：
+
+https://mp.weixin.qq.com/s/CMTOW3cYQkkECpPuzZl0nQ
+
+RAMMER如何进一步“压榨”加速器性能

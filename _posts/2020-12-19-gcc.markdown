@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  gcc, LLVM, ANTLR, 虚拟机比较, TVM
+title:  gcc, LLVM, ANTLR, 虚拟机比较
 category: technology 
 ---
 
@@ -227,146 +227,100 @@ VMware由于是收费软件之故，因此用户的软件升级是个大问题�
 
 因此与其守着过时的VMware 8.0，还不如换用VirtualBox，这就是我的选择。
 
-# TVM
+# AI工具+
 
-TVM是陈天奇领导的一个DL加速框架项目。它处于DL框架（如tensorflow、pytorch）和硬件后端（如CUDA、OpenCL）之间，兼顾了前者的易用性和后者的执行效率。
+https://mp.weixin.qq.com/s/3eoN0YHI84oomdTZO6TrvQ
 
-官网：
+快速搞定机器人开发！Facebook联合CMU开源PyRobot框架
 
-https://tvm.apache.org/
+https://mp.weixin.qq.com/s/Uih8JaRCaeD38o9AoovRmA
 
-代码：
+字节跳动开源高性能分布式训练框架BytePS：兼容TensorFlow、PyTorch等
 
-https://github.com/apache/tvm
+https://mp.weixin.qq.com/s/o9cYmqwuvlbOuUXSNIuicg
 
-![](/images/img3/tvm_stack.png)
+十个最常用深度学习图像/视频数据标注工具
 
-论文：
+https://mp.weixin.qq.com/s/iKXZmhffiYaFHsIU21zVQA
 
-《TVM: End-to-End Optimization Stack for Deep Learning》
+NeuralNLP-NeuralClassifier：腾讯开源深度学习文本分类工具
 
-## TVM Runtime
+https://mp.weixin.qq.com/s/suLJs_GjRsdYA5fwtsje7g
 
-![](/images/img4/tvm_rpc.png)
+腾讯AI开源框架Angel 3.0重磅发布：超50万行代码，支持3种算法，打造全栈机器学习平台
 
-TVM采用C/S模式进行部署，其中在target机器上的部分，被称为TVM Runtime。
+https://mp.weixin.qq.com/s/adroDI2bm13o6Q40ECc7Zw
 
-官方文档：
+MediaPipe: Google Research 开源的跨平台多媒体机器学习模型应用框架
 
-http://tvm.apache.org/docs/dev/runtime.html
+https://mp.weixin.qq.com/s/U2e4H1QjjBqH9YbElFLhxw
 
-参考：
+Microsoft Icecaps：一个用于会话建模的开源工具包
 
-https://zhuanlan.zhihu.com/p/369981405
+https://zhuanlan.zhihu.com/p/75584326
 
-部署TVM Runtime
+combo:“Python机器学习模型合并工具库”简介
 
-## 参考
+https://github.com/arraiyopensource/kornia
 
-https://zhuanlan.zhihu.com/p/139552817
+可微分的“OpenCV”：这是基于PyTorch的可微计算机视觉库
 
-一篇关于深度学习编译器架构的综述论文
+https://mp.weixin.qq.com/s/5Pm03dLW9vbDukgWi1-Tug
 
-https://www.zhihu.com/question/396105855
+OpenARK：惊艳的增强现实、虚实交互开源库
 
-针对神经网络的编译器和传统编译器的区别和联系是什么？
+https://mp.weixin.qq.com/s/h0PwA9vtABWHgxd42yX3Fg
 
-https://mp.weixin.qq.com/s/8bXwxYyNjdThlGQQ70cgWQ
+当时尚遇上AI！港中文MMLab开源MMFashion工具箱
 
-TVM：端到端自动深度学习编译器，244页ppt
+https://github.com/Media-Smart/vedaseg
 
-https://zhuanlan.zhihu.com/p/333706468
+vedaseg:A semantic segmentation toolbox in pytorch
 
-TVM学习系列blog
+https://mp.weixin.qq.com/s/gGCyMq4PM_Whv-Ssiwt-HA
 
-https://zhuanlan.zhihu.com/p/163717035
+秒杀Deepfake！微软北大提出AI换脸工具FaceShifter和假脸检测工具Face X-Ray
 
-AI编译优化
+https://mp.weixin.qq.com/s/2EHv669PUqqgvAGz3XoZ6Q
 
-https://www.zhihu.com/question/267167829
+FaceBook开源PyTorch3D：基于PyTorch的新3D计算机视觉库
 
-如何看待Tensor Comprehensions？与TVM有何异同？（这个问题下的答案不多，但基本都是陈天奇、贾扬清之类的大佬）
+https://mp.weixin.qq.com/s/Z27oInh5rdxnxt1-KFAiRA
 
-https://mp.weixin.qq.com/s/irvBbPKENiZX9G_6wh5c-Q
+1GB文本标记只需20秒！抱抱脸团队发布最新NLP工具
 
-陈天奇等人提出TVM：深度学习自动优化代码生成器
+https://mp.weixin.qq.com/s/8mpc7AblZyRw7LCh35vL2g
 
-https://mp.weixin.qq.com/s/28n8g_epHsYB0I9GVc_lww
+哈工大讯飞联合实验室发布知识蒸馏工具TextBrewer
 
-陈天奇团队TVM重磅更新：直接在浏览器使用GPU
+https://mp.weixin.qq.com/s/Zu_IPBQVJtcwNln-xvEZxQ
 
-https://mp.weixin.qq.com/s/7JGLm-hkCZBNDLA98qvWNA
+DarkLabel：支持检测、跟踪、ReID数据集的标注软件
 
-自动生成硬件优化内核：陈天奇等人发布深度学习编译器TVM
+https://mp.weixin.qq.com/s/5klwQCPtiZOwFJYHDOpWFg
 
-https://mp.weixin.qq.com/s/YVIvdMznb3oatIXqD5a5_A
+语义分割标注工具Semantic Segmentation Editor快速安装指南
 
-陈天奇等人提出AutoTVM：让AI来编译优化AI系统底层算子
+https://mp.weixin.qq.com/s/1EeYmZGoa-xpWmIvUoqCyw
 
-https://mp.weixin.qq.com/s/HquT_mKm7x_rbDGz4Voqpw
+瑞士小哥开源文本英雄Texthero：一行代码完成数据预处理
 
-阿里巴巴最新实践：TVM+TensorFlow提高神经机器翻译性能
+https://mp.weixin.qq.com/s/p9HpH2e5ShQCFcCxVNvMbg
 
-https://zhuanlan.zhihu.com/p/50529704
+清华开源迁移学习算法库
 
-手把手带你遨游TVM
+https://mp.weixin.qq.com/s/vzUt-5C_dRAChEfQYLp4lA
 
-https://mp.weixin.qq.com/s/z5rsU_uAAaRxgD9YAxDkZA
+PyTorch实现，GitHub 4000星：这是微软开源的计算机视觉库
 
-陈天奇：深度学习编译技术的现状和未来
+https://mp.weixin.qq.com/s/5VeersQKxcT9AtFXS_CXnA
 
-https://zhuanlan.zhihu.com/p/75203171
+推荐一款超高速、多特性的高性能序列推理引擎——LightSeq
 
-如何利用TVM快速实现超越Numpy(MKL)的GEMM
+https://mp.weixin.qq.com/s/kWJZA0acOPi46c2_Gd9aeA
 
-https://zhuanlan.zhihu.com/p/58918363
+安利一个开源的好工具Label Studio,闭环数据标注和模型训练
 
-TVM: Deep Learning模型的优化编译器
+https://mp.weixin.qq.com/s/b-w_jUqxGR7hY19auiar-A
 
-https://zhuanlan.zhihu.com/p/87664838
-
-也谈TVM和深度学习编译器
-
-https://zhuanlan.zhihu.com/p/91283238
-
-TVM图编译器Relay简单探究
-
-https://mp.weixin.qq.com/s/VE3CySjjS2rTpUDPnKcLTg
-
-陈天奇最新研究：递归模型编译器CORTEX
-
-https://zhuanlan.zhihu.com/p/358585143
-
-深度学习编译器及TVM介绍
-
-https://zhuanlan.zhihu.com/p/360385060
-
-TVM中的scheduler
-
-https://mp.weixin.qq.com/s/Kt4xDLo-NRui8Whl0DqcSA
-
-Data Flow和Control Flow
-
-# GLOW
-
-代码：
-
-https://github.com/pytorch/glow
-
-参考：
-
-https://zhuanlan.zhihu.com/p/102127047
-
-Glow: Graph Lowering Compiler for Neural Networks
-
-# NNFusion
-
-代码：
-
-https://github.com/microsoft/nnfusion
-
-参考：
-
-https://mp.weixin.qq.com/s/CMTOW3cYQkkECpPuzZl0nQ
-
-RAMMER如何进一步“压榨”加速器性能
+FAIR发布自监督训练库VISSL

@@ -209,18 +209,6 @@ https://mp.weixin.qq.com/s/naJwpmXm7Yl3pxEFYiGf-g
 
 深度探索ONNX模型部署
 
-## NNVM
-
-陈天奇等推出的NNVM也是一个类似的中间表示。官网：
-
-https://github.com/dmlc/nnvm
-
-参考：
-
-https://mp.weixin.qq.com/s/qkvX0rmEe0yQ-BhCmWAXSQ
-
-李沐：AWS开源端到端AI框架编译器NNVM
-
 ## MMdnn
 
 MMdnn是微软推出的工具集，也是目前功能最强的工具集。

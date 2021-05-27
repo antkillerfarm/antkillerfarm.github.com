@@ -330,9 +330,9 @@ z是关键字参数，它有默认值，可以不传。
 
 ```python
 def prints(*arg):
-    print arg;
+    print arg
 prints (1,2,3,4,5,6,7)
-#result: (1,2,3,4,5,6,7) 
+#result: (1,2,3,4,5,6,7)
 ```
 
 **两个星号**：收集关键字参数，并将其放到一个字典中。例子：
@@ -376,6 +376,12 @@ add(**kkwd)
 http://blog.csdn.net/yzj99848873/article/details/48025593
 
 Python星号（ * ）操作符的用法
+
+## 类型建议符
+
+`def twoSum(num1: int, num2: int=100) -> int:`
+
+值得注意的是，类型建议符并非强制规定和检查，也就是说即使传入的实际参数与建议参数不符，也不会报错。
 
 ## pass语句
 

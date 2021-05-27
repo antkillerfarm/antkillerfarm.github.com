@@ -261,100 +261,90 @@ https://zhuanlan.zhihu.com/p/67785062
 
 不止显卡！这些硬件因素也影响着你的深度学习模型性能
 
-# AI工具+
+# 计算机体系结构+
 
-https://mp.weixin.qq.com/s/3eoN0YHI84oomdTZO6TrvQ
+## GPU体系结构
 
-快速搞定机器人开发！Facebook联合CMU开源PyRobot框架
+![](/images/img4/SGI.png)
 
-https://mp.weixin.qq.com/s/Uih8JaRCaeD38o9AoovRmA
+上图是SGI公司1993年的一款显卡的模块图。可以看出，早期的显卡是一个具有固定流水线的专用芯片，只能处理特定任务，没有多少可编程的能力。
 
-字节跳动开源高性能分布式训练框架BytePS：兼容TensorFlow、PyTorch等
+![](/images/img4/Tesla.png)
 
-https://mp.weixin.qq.com/s/o9cYmqwuvlbOuUXSNIuicg
+到了2005年左右，这些渲染流水线的功能被统一到一个叫做Shader Processor的可编程单元中。此后，显卡也被称为GPU（Graphics Processing Unit）。
 
-十个最常用深度学习图像/视频数据标注工具
+![](/images/img4/Shader.png)
 
-https://mp.weixin.qq.com/s/iKXZmhffiYaFHsIU21zVQA
+无论是CPU，还是GPU，或者是现在比较火的NPU，一个Processing Unit，一般都是由上图所示的三部分组成：
 
-NeuralNLP-NeuralClassifier：腾讯开源深度学习文本分类工具
+- Fetch/Decode。数据的输入/输出单元。
 
-https://mp.weixin.qq.com/s/suLJs_GjRsdYA5fwtsje7g
+- ALU（arithmetic and logic unit）。运算单元。
 
-腾讯AI开源框架Angel 3.0重磅发布：超50万行代码，支持3种算法，打造全栈机器学习平台
+- Execution Context。寄存器单元。
 
-https://mp.weixin.qq.com/s/adroDI2bm13o6Q40ECc7Zw
+CPU强调单core的极致性能，因此广泛使用了如下技术：
 
-MediaPipe: Google Research 开源的跨平台多媒体机器学习模型应用框架
+- Out-of-order control logic
 
-https://mp.weixin.qq.com/s/U2e4H1QjjBqH9YbElFLhxw
+- Fancy branch predictor 
 
-Microsoft Icecaps：一个用于会话建模的开源工具包
+- Memory pre-fetcher
 
-https://zhuanlan.zhihu.com/p/75584326
+![](/images/img4/GPU.png)
 
-combo:“Python机器学习模型合并工具库”简介
+GPU不追求单core的性能，因此也没有那些复杂的控制逻辑。这样省下来的电路，可以变成更多的ALU。由于数据处理的局部性，通常可以若干ALU共享一套Fetch/Decode和Ctx。
 
-https://github.com/arraiyopensource/kornia
+当然，如果ALU非常多的话，就不能都共享一套了，这时可以采用下图所示的分组共享。
 
-可微分的“OpenCV”：这是基于PyTorch的可微计算机视觉库
+![](/images/img4/GPU_2.png)
 
-https://mp.weixin.qq.com/s/5Pm03dLW9vbDukgWi1-Tug
+其中的每个组，被称为一个**core**。
 
-OpenARK：惊艳的增强现实、虚实交互开源库
+有利就有弊，下面看看GPU是如何执行条件语句的。
 
-https://mp.weixin.qq.com/s/h0PwA9vtABWHgxd42yX3Fg
+![](/images/img4/GPU_3.png)
 
-当时尚遇上AI！港中文MMLab开源MMFashion工具箱
+上图展示了8个ALU并行执行条件语句的过程：
 
-https://github.com/Media-Smart/vedaseg
+- 计算每个数据的条件，生成对应的标志。
 
-vedaseg:A semantic segmentation toolbox in pytorch
+- 执行True分支。
 
-https://mp.weixin.qq.com/s/gGCyMq4PM_Whv-Ssiwt-HA
+- 执行False分支。
 
-秒杀Deepfake！微软北大提出AI换脸工具FaceShifter和假脸检测工具Face X-Ray
+可以看出，GPU对于条件语句的执行时间=True分支执行时间+False分支执行时间。而CPU只需要根据条件，执行一个分支就可以了。显然，GPU对于程序的控制能力，相对CPU简直弱爆了。GPU并不擅长做这些东西。
 
-https://mp.weixin.qq.com/s/2EHv669PUqqgvAGz3XoZ6Q
+>CPU的SSE、AVX之类的指令集，也借鉴了GPU的设计思想，但是CPU的core数，相对于GPU而言，差了10～1000倍。
 
-FaceBook开源PyTorch3D：基于PyTorch的新3D计算机视觉库
+参考：
 
-https://mp.weixin.qq.com/s/Z27oInh5rdxnxt1-KFAiRA
+http://www.cnblogs.com/geniusalex/archive/2008/12/26/1941766.html
 
-1GB文本标记只需20秒！抱抱脸团队发布最新NLP工具
+CPU GPU设计工作原理
 
-https://mp.weixin.qq.com/s/8mpc7AblZyRw7LCh35vL2g
+https://mp.weixin.qq.com/s/-Wg1GtVGUxfshJ5d5NDd-Q
 
-哈工大讯飞联合实验室发布知识蒸馏工具TextBrewer
+聊聊GPU的计算能力上限
 
-https://mp.weixin.qq.com/s/Zu_IPBQVJtcwNln-xvEZxQ
+https://mp.weixin.qq.com/s/zdr7BfJxVepQL1TCDXQoJA
 
-DarkLabel：支持检测、跟踪、ReID数据集的标注软件
+一文带你了解GPU的前生今世
 
-https://mp.weixin.qq.com/s/5klwQCPtiZOwFJYHDOpWFg
+## Programming Model vs Hardware Execution Model
 
-语义分割标注工具Semantic Segmentation Editor快速安装指南
+- **Programming Model**: how the programmer expresses the code.
 
-https://mp.weixin.qq.com/s/1EeYmZGoa-xpWmIvUoqCyw
+Sequential (von Neumann), Data Parallel (SIMD), Dataflow, Multi-threaded (MIMD, SPMD), …
 
-瑞士小哥开源文本英雄Texthero：一行代码完成数据预处理
+- **Execution Model**: how the hardware executes the code underneath.
 
-https://mp.weixin.qq.com/s/p9HpH2e5ShQCFcCxVNvMbg
+Out-of-order execution, Vector processor, Array processor, Dataflow processor, Multiprocessor, Multithreaded processor, …
 
-清华开源迁移学习算法库
+- Execution Model can be very different from the Programming Model.
 
-https://mp.weixin.qq.com/s/vzUt-5C_dRAChEfQYLp4lA
+von Neumann model implemented by an OoO processor
 
-PyTorch实现，GitHub 4000星：这是微软开源的计算机视觉库
+SPMD model implemented by a SIMD processor (a GPU)
 
-https://mp.weixin.qq.com/s/5VeersQKxcT9AtFXS_CXnA
-
-推荐一款超高速、多特性的高性能序列推理引擎——LightSeq
-
-https://mp.weixin.qq.com/s/kWJZA0acOPi46c2_Gd9aeA
-
-安利一个开源的好工具Label Studio,闭环数据标注和模型训练
-
-https://mp.weixin.qq.com/s/b-w_jUqxGR7hY19auiar-A
-
-FAIR发布自监督训练库VISSL
+GPU虽然是一个SIMD机器，但是并没有采用SSE、AVX之类的SIMD编程模型，而是SPMD模型。
