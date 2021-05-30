@@ -231,6 +231,10 @@ https://mp.weixin.qq.com/s/IWUxVzpdGIX1Oxn4KxjhHA
 
 一个Transformer，很强；两个，更强？（TransGAN）
 
+https://mp.weixin.qq.com/s/IWUxVzpdGIX1Oxn4KxjhHA
+
+TransGAN：两个Transformer可以构造一个强大的GAN
+
 # Attention进阶
 
 https://mp.weixin.qq.com/s/wrmjMLPuvpLIcF5VQBqZxg
