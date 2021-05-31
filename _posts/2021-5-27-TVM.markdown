@@ -25,11 +25,21 @@ https://github.com/apache/tvm
 
 《TVM: End-to-End Optimization Stack for Deep Learning》
 
+和同类项目的差异：
+
+- TFLite和ONNXRuntime只能接收特定格式的模型。而TVM这些都能接收。
+
+- NCNN、MACE之类的项目，一般只考虑了ARM CPU的优化，对于异构计算做的比较少。
+
+- TVM强化了图优化的部分，使之更类似于编译器的架构。
+
 ## TVM Runtime
 
 ![](/images/img4/tvm_rpc.png)
 
 TVM采用C/S模式进行部署，其中在target机器上的部分，被称为TVM Runtime。
+
+TVM Runtime的代码通常比较薄，只需要把host发过来的优化结果执行即可。
 
 官方文档：
 
