@@ -330,3 +330,17 @@ https://mp.weixin.qq.com/s/Mdxrwy4NMW0A9sq7FJSU3w
 https://mp.weixin.qq.com/s/KR50fOET-9i7yFM6pY18_w
 
 假如有一天，地球上发生了这件事……
+
+# 数学杂谈+
+
+https://mp.weixin.qq.com/s/QWlgwBhEoa-apvbnIToX9Q
+
+史上最牛逼的文科生：学历史成为物理学家，却获得了数学界的最高荣誉，出了350部书，外号火星人！（Edward Witten）
+
+https://mp.weixin.qq.com/s/CiAI2ZkM47-G3kiPrNOZtQ
+
+九大女数学家
+
+https://mp.weixin.qq.com/s/Ku42zXI_prpxujhDpuDK_g
+
+深痛哀悼数学家王元院士

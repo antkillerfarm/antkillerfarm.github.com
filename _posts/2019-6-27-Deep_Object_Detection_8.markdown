@@ -23,6 +23,10 @@ https://mp.weixin.qq.com/s/VTb6CUOWnPpyU6WnYdYJ-g
 
 RepPoints V2：将角点检测和前景热图引入纯回归目标检测算法
 
+https://mp.weixin.qq.com/s/gnTZ-q2-lm8QPH6JEPylnw
+
+RepPointv2：使用点集合表示来做目标检测
+
 ## 参考
 
 https://mp.weixin.qq.com/s/T7DDWvtvCULfjcDmljvx5Q
@@ -406,23 +410,3 @@ https://mp.weixin.qq.com/s/zeruKQOye_QNWgluVIN0BA
 https://mp.weixin.qq.com/s/sCGNUI-mUSYxD69uBDQNoQ
 
 基于深度学习的目标检测算法综述：算法改进
-
-https://mp.weixin.qq.com/s/yswy7VwEapQJ9M5n_Uo93w
-
-目标检测最新进展总结与展望
-
-https://mp.weixin.qq.com/s/s1qmCA8djEEanwCxeLSV2Q
-
-63页《深度CNN-目标检测》综述
-
-https://mp.weixin.qq.com/s/j-arl6qiD6mei4crfQPrgw
-
-《深度学习显著目标检测综述》
-
-https://mp.weixin.qq.com/s/2PLp2xNfhkHB3fPQr5Ts6g
-
-密歇根大学40页《20年目标检测综述》最新论文，带你全面了解目标检测方法
-
-https://mp.weixin.qq.com/s/Pl8HABuVN27CZv-lvGROTw
-
-基于深度学习的目标检测算法近5年发展历史

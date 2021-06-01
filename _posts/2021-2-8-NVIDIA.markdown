@@ -203,6 +203,10 @@ https://zhuanlan.zhihu.com/p/360441891
 
 熬了几个通宵，我写了份CUDA新手入门代码
 
+https://mp.weixin.qq.com/s/EZxO8IIBDJ4c7eQhUffc2w
+
+怎样节省2/3的GPU？爱奇艺vGPU的探索与实践
+
 # GPU通信技术
 
 ## RDMA

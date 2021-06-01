@@ -193,6 +193,10 @@ https://mp.weixin.qq.com/s/ZbTQ3fSt4TDGwYILurjC5g
 
 json for modern c++的使用
 
+https://mp.weixin.qq.com/s/c3B0HtrHWEM5AoTydQAOTw
+
+Python处理JSON数据
+
 ## Jackson
 
 Jackson是常用的Java语言的JSON库。

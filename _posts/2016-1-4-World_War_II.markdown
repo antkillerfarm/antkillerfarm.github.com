@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  二战漫谈（一）
-category: essay 
+category: WW2 
 ---
 
 * toc

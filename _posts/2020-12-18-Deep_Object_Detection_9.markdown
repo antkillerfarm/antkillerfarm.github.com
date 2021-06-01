@@ -9,6 +9,26 @@ category: Deep Object Detection
 
 # 目标检测进阶
 
+https://mp.weixin.qq.com/s/yswy7VwEapQJ9M5n_Uo93w
+
+目标检测最新进展总结与展望
+
+https://mp.weixin.qq.com/s/s1qmCA8djEEanwCxeLSV2Q
+
+63页《深度CNN-目标检测》综述
+
+https://mp.weixin.qq.com/s/j-arl6qiD6mei4crfQPrgw
+
+《深度学习显著目标检测综述》
+
+https://mp.weixin.qq.com/s/2PLp2xNfhkHB3fPQr5Ts6g
+
+密歇根大学40页《20年目标检测综述》最新论文，带你全面了解目标检测方法
+
+https://mp.weixin.qq.com/s/Pl8HABuVN27CZv-lvGROTw
+
+基于深度学习的目标检测算法近5年发展历史
+
 https://mp.weixin.qq.com/s/S6sz5dPgGNcJvrIAZ3ZjGg
 
 基于深度学习的通用物体检测算法对比探索
@@ -364,27 +384,3 @@ https://mp.weixin.qq.com/s/FHHIdoXyaU4skX-zyZFQew
 https://mp.weixin.qq.com/s/-x9A1eG5BfGmqV31SdMCMg
 
 目标检测算法之Light-Head R-CNN
-
-https://mp.weixin.qq.com/s/On-pHCdGg3piTQtDV88kQA
-
-特定场景下Yolo改进算法：Poly-Yolo
-
-https://mp.weixin.qq.com/s/HW0SNf-NYjXqJwlungRFpg
-
-综述：目标检测中的多尺度检测方法
-
-https://zhuanlan.zhihu.com/p/158907507
-
-From VanillaDet to AutoAssign
-
-https://mp.weixin.qq.com/s/GL_q4VLCgbjTZq_zpTLq0w
-
-Label Assign：提升目标检测上限
-
-https://mp.weixin.qq.com/s/EO5h1zW4yrToqwTCnXtz4g
-
-TTFNet: 最大程度提高训练效率的实时目标检测
-
-https://mp.weixin.qq.com/s/6R3myLyAeMMS0lR1GSlvcA
-
-细说物体检测中的Anchors

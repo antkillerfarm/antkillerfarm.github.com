@@ -73,6 +73,12 @@ $$f(2)=f_1(2)+f_2(1)$$
 
 其中，$$f_i(t)$$中，i表示第i次击打，t表示击打发生之后经过的时间。可以看出i和t的顺序正好是相反的，这也就是Convolution这个名词的本意。这里假设g为常数。
 
+正式定义：
+
+$$[f \ast g] (t)\equiv \int_ {-\infty}^ {\infty} f (\tau) g (t-\tau) d \tau$$
+
+注意：这里实际上有一个$$\tau+t-\tau=t$$约束。
+
 4.这三个操作在离散域最终都可以变为求和操作，也就是向量内积运算。我们一般使用$$a\cdot b$$或者$$\langle a,b\rangle$$表示向量的内积运算。即：
 
 $$\langle a,b\rangle=a_0b_0+a_1b_1+\dots+a_nb_n$$
@@ -98,6 +104,10 @@ https://mp.weixin.qq.com/s/R0LTEEYY1jCbSS-f6KlIzw
 https://mp.weixin.qq.com/s/UrWEZ5fMGxj5Ngbi6Y1nFg
 
 如何通俗易懂地解释卷积？
+
+https://mp.weixin.qq.com/s/gZ-LIBMUcqmSz0D1jPyPlA
+
+很详细的讲解什么以及为什么是卷积（Convolution）
 
 # 马氏距离
 
@@ -241,17 +251,3 @@ $$\lim_{n \rightarrow \infty}{2^{\frac{\lfloor10^n\pi\rfloor}{10^n}}}=2^{\pi}$$
 https://www.zhihu.com/question/434836259
 
 2的π次方是啥东西？
-
-# 数学杂谈
-
-![](/images/img4/sheep.png)
-
-山羊吃草问题有两种形式。内部问题是给出吃草面积求绳长，外部问题是给出绳长和篱笆周长求吃草面积（绳长等于篱笆周长）
-
-https://mp.weixin.qq.com/s/OCTifPIZHVjYWjuxyQQWbA
-
-诞生272年后，这个看似简单的数学问题终求得闭式解（山羊问题）
-
-https://mp.weixin.qq.com/s/ydYVWnsEQ5QFLWmiDxeSTg
-
-两圆重叠问题你会求解吗？

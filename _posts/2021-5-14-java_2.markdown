@@ -23,6 +23,10 @@ https://mp.weixin.qq.com/s/TBUQrqxMbWIjG65H4tAP1Q
 
 十个JVM核心知识点
 
+https://mp.weixin.qq.com/s/tHDB4tKmaY9vglmoRL9-tg
+
+5款强大的JVM性能调优监控工具
+
 ## 参考
 
 http://blog.csdn.net/u014717036/article/details/52234679
@@ -140,6 +144,16 @@ https://mp.weixin.qq.com/s/sqW3HlCTV5Yivwi_B1Rzww
 这个文件下载问题难住了我至少三位同事
 
 # 两弹一星+
+
+左宗棠、沈葆桢建船政，到1874年“船政成功”为止，8年时间总的投入是500多万两银子，不到600万两。这500多万两银子的回报是6艘军舰，但有一个船厂，更关键的是他学到了技术，学校培养了许多人才，这种影响的持续性是不断延伸的。
+
+李鸿章办北洋的方式，后来称之为“买办一派”。李鸿章的理由是，同样一种等级的军舰，国产的造价会高于欧洲好几倍，前期需投入大量建设成本，资金难以支撑。
+
+https://mp.weixin.qq.com/s/_Dw49AaQAnYPTXFt8pFytw
+
+晚清洋务运动，如何影响近代中国？
+
+----
 
 ![](/images/img3/top10.png)
 
@@ -266,3 +280,7 @@ https://mp.weixin.qq.com/s/ro1xdxRqfQo0S7qxMyHZSg
 http://news.sina.com.cn/o/2018-06-25/doc-iheirxyf5801793.shtml
 
 儿子智力残疾、妻女精神分裂…77岁核弹老人魏世杰的故事，让无数观众为之动容
+
+https://mp.weixin.qq.com/s/vuNGjU3lPvw_k0-96v3Q6g
+
+和袁隆平是同学！这位91岁院士把一切献给“吃瓜群众”...（吴明珠）

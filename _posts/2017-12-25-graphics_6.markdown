@@ -295,6 +295,10 @@ https://mp.weixin.qq.com/s/QEX46FBulPeGEwdlp469hg
 
 基于霍夫变换进行线检测
 
+https://mp.weixin.qq.com/s/pG-7p74-VGT9JpN-cS3i_Q
+
+南开大学提出深度霍夫变换：语义线检测新方法
+
 # Eigenface
 
 Eigenface是M. Turk和A. Pentland于1991年提出的人脸识别算法。
