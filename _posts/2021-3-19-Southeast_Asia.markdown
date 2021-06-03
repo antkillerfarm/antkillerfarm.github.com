@@ -141,6 +141,10 @@ https://mp.weixin.qq.com/s/NHkTQmJ3Jq1A3pgKI2DCeg
 
 这是9·11事件后，全世界最严重的恐怖袭击（巴厘岛恐怖袭击）
 
+https://zhuanlan.zhihu.com/p/377325999
+
+改名泰国，激怒中国
+
 # 印度+
 
 https://mp.weixin.qq.com/s/P-iBxEOhDQfoGdMh9jbAFQ
