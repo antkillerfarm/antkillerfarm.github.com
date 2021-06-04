@@ -109,6 +109,10 @@ checkout远程分支：
 
 `git checkout -b dev origin/dev`
 
+push远程分支：
+
+`git push <远程主机名> <本地分支名>:<远程分支名>`
+
 ### check out有submodule的版本库
 
 `git clone --recursive URL`
