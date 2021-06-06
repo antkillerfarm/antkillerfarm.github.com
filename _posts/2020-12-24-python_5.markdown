@@ -107,6 +107,22 @@ https://www.ibm.com/developerworks/cn/linux/l-cn-scons/
 
 使用SCons轻松建造程序
 
+## Tkinter
+
+Tkinter简明教程
+
+2014年度辛星Tkinter教程第二版
+
+Python GUI Programming Cookbook
+
+https://mp.weixin.qq.com/s/RdnAQPAn9E8qDvtnCEgcKw
+
+Tkinter可视化窗口
+
+https://www.zhihu.com/question/32703639
+
+为什么很多Python开发者写GUI不用Tkinter，而要选择PyQt和wxPython或其他？
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA
@@ -308,10 +324,6 @@ https://mp.weixin.qq.com/s/dmJI2GlzgUJgYllfVOPt4g
 https://mp.weixin.qq.com/s/PkzD1ig_D5AIUTkO5zH8pQ
 
 Python字节码介绍
-
-https://mp.weixin.qq.com/s/RdnAQPAn9E8qDvtnCEgcKw
-
-Tkinter可视化窗口
 
 https://mp.weixin.qq.com/s/-erFsz8NvLZ5mOIXyDosFg
 
