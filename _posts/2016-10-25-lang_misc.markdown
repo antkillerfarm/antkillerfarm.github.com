@@ -261,6 +261,18 @@ https://mp.weixin.qq.com/s/RC3eVNfYeVx4mQT3WQHMcw
 
 6个常用的React组件库
 
+https://zhuanlan.zhihu.com/p/28305975
+
+Vue.js&jQuery比较
+
+https://zhuanlan.zhihu.com/p/20197803
+
+VUE（现代库） VS jquery（传统库）
+
+https://zhuanlan.zhihu.com/p/359540593
+
+2021年Angular vs. React vs. Vue前端框架对比
+
 ## 多线程编程
 
 Javascript原则上是单线程的，阻塞和其他异步的需求是通过循环来解决的。当线程需要处理大规模的计算的时候，需要使用Web Worker进行多线程操作。

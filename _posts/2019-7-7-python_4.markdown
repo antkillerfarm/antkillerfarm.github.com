@@ -295,6 +295,12 @@ http://www.liujiangblog.com/course/django/
 
 Django教程
 
+## SimpleHTTPServer
+
+Django比较重量级了，如果只是想发布静态网页的话，可以用：
+
+`python -m SimpleHTTPServer 7800`
+
 ## pygame
 
 pygame是一个python的游戏引擎。
