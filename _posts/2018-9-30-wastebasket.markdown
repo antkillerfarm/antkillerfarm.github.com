@@ -179,6 +179,16 @@ https://blog.csdn.net/Gou_Hailong/article/details/105761432
 
 ----
 
+https://www.zhihu.com/question/463739570
+
+上海杨浦区邯郸路某大学教师持刀伤人，被害人已死亡，有哪些信息值得关注？
+
+https://mp.weixin.qq.com/s/AdK0Y6CeBSyofoFHXUyaVg
+
+非升即走：中国特色tenure-track 
+
+----
+
 https://mp.weixin.qq.com/s/1dlOCpoJiCkh55WDAajLuw
 
 内卷、找关系、作弊、丑闻-美国富人的名校之梦
