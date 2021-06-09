@@ -104,6 +104,19 @@ test：
 
 tests/python/contrib/test_ethosn
 
+## 代码分析
+
+TVM建立了一套类型系统：
+
+```cpp
+class BaseExprNode : public Object;
+class BaseExpr : public ObjectRef;
+```
+
+根据基类，查看实际类型：
+
+`XX->checked_type()`
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/139552817
