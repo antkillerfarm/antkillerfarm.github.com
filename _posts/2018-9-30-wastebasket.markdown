@@ -97,6 +97,16 @@ https://mp.weixin.qq.com/s/YyXpzyvkSvRd4KR8Wlac9g
 
 # 真垃圾筐
 
+主流发达国家教职体系，PI（Principal Investigator）制：助理教授（Assistant Professor，AP）->副教授（Associate Professor）->教授（Full Professor->讲席教授（Chair Professor）
+
+----
+
+https://mp.weixin.qq.com/s/cAgXbOUrBff78ahicxSwGQ
+
+俩博士相亲，第一反应是查对方发多少SCI，学傻了是一种怎样的体验？
+
+----
+
 科大黄秋原、同济沈海英、交大钱璐璐、复旦李敏、中科大陈璐，由于手段极其高级，所以现在被网友称为“学术圈妲己”。
 
 https://www.zhihu.com/answer/761750649
@@ -258,3 +268,17 @@ https://zhuanlan.zhihu.com/p/164472757
 https://mp.weixin.qq.com/s/SdoU07Tbqhs8_MinmkicNg
 
 中统头子徐恩曾：和戴笠斗了一辈子，结果戴笠摔死，他却得了善终
+
+----
+
+蒋要求程潜退选，把选票让给孙科。
+
+程潜憋了一肚子邪火，24日当晚宣布：本人已受命放弃竞选副总统。
+
+李宗仁得到消息后，连夜召集竞选团队开会，决定以退为进，也在25日晨宣布退选。
+
+这样，候选人仅剩孙科一人，孙科自觉无趣，也只得在25日中午宣布退选。
+
+https://mp.weixin.qq.com/s/-6x0jV3JJnVsY23jtgrtwg
+
+1948年民国副总统选举记

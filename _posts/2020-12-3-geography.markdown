@@ -103,6 +103,14 @@ http://blog.sina.com.cn/s/blog_5122b1940102xf7x.html
 
 ----
 
+![](/images/img4/wilson.jpg)
+
+![](/images/img4/continental-rifting.jpg)
+
+所谓三岔裂谷，是在地幔柱的作用下，地壳发育的三只夹角近120度的裂谷。根据威尔逊旋回，这种裂谷进一步将发育为新生洋壳。然而，能够继续扩张的只是其中两只，还有一只会停止发育，即为坳拉槽。这个不绝对，印度洋中存在的洋脊三联点。
+
+----
+
 https://zhuanlan.zhihu.com/p/53237519
 
 一文读懂印尼海啸的真正原因（喀拉喀托之子）
@@ -334,6 +342,10 @@ https://mp.weixin.qq.com/s/Mdxrwy4NMW0A9sq7FJSU3w
 https://mp.weixin.qq.com/s/KR50fOET-9i7yFM6pY18_w
 
 假如有一天，地球上发生了这件事……
+
+https://www.zhihu.com/question/25543335
+
+世界上有哪些著名的飞地？
 
 # 数学杂谈+
 

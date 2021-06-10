@@ -178,3 +178,21 @@ https://www.zhihu.com/answer/1757322949
 https://mp.weixin.qq.com/s/LLpmzwARxG3p3442plRxaQ
 
 百年前，湖北燃起了星星之火
+
+----
+
+https://mp.weixin.qq.com/s/QQzmeI9FOBKVHseIDgBF4A
+
+林彪已经不会打仗了？
+
+https://mp.weixin.qq.com/s/miyWhcnoMQFl7NdP-RbOKg
+
+林彪手把手教你打仗：指挥员该怎么打胜仗？
+
+https://mp.weixin.qq.com/s/xnzsxUVdl0WjPPEpyfw2bw
+
+林彪手把手教你打仗：打胜仗与硬拼仗
+
+http://www.sohu.com/a/237822981_100109480
+
+黄平：中共党史上不该遗忘的人
