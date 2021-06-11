@@ -105,6 +105,10 @@ https://mp.weixin.qq.com/s/YEt7XH9mNPmx3QURebbBmg
 
 什么是最好的新冠疫苗？
 
+https://mp.weixin.qq.com/s/pkgbDDBv-OPGHyeEBVDXQQ
+
+国产疫苗，对新冠病毒突变株效果如何？
+
 # Pytorch+
 
 https://zhuanlan.zhihu.com/p/272767300
@@ -150,18 +154,6 @@ https://zhuanlan.zhihu.com/p/87572724
 https://www.zhihu.com/question/274635237
 
 Pytorch有什么节省内存（显存）的小技巧？
-
-https://zhuanlan.zhihu.com/p/76638962
-
-Pytorch分布式训练
-
-https://zhuanlan.zhihu.com/p/360405558
-
-PyTorch分布式训练
-
-https://mp.weixin.qq.com/s/0aSBHvscloEnPMRLyNjQsg
-
-PyTorch分布式训练简明教程
 
 https://mp.weixin.qq.com/s/S1dRfmqpiLzR3tnsocmfvw
 

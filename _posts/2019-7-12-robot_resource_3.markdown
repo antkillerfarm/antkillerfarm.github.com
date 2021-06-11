@@ -283,10 +283,6 @@ https://mp.weixin.qq.com/s/7mu-n13H2YxbCFrVJ0fD1A
 
 如何基于深度神经网络设计一个端到端的自动驾驶模型？如何设计一个基于增强学习的自动驾驶决策系统？
 
-https://mp.weixin.qq.com/s/ShLqAgB8VJJQjCS9iako6Q
-
-一文了解超级电容器
-
 https://mp.weixin.qq.com/s/b4cnjOByE2j0gIljF7IXCw
 
 F-APA车位搜索及障碍物识别控制原理

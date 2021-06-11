@@ -344,3 +344,7 @@ https://mp.weixin.qq.com/s/HBqX6pz4EzO70YpmQ8xtRw
 https://mp.weixin.qq.com/s/teBlXXw4JQ8k3olCDOKXyw
 
 量化金融自动交易的深度强化学习库。哥大开源“FinRL”
+
+https://mp.weixin.qq.com/s/8UX65PGZkRokguLTnoGVFA
+
+强化学习组合优化综述论文

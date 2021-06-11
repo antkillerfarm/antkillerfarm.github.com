@@ -7,6 +7,29 @@ category: Attention
 * toc
 {:toc}
 
+
+# Attention in CV & RS
+
+https://mp.weixin.qq.com/s/J7Fw-T1tYSqi9_vx8VSqYA
+
+TimeSformer：视频理解所需的只是时空注意力吗？
+
+https://mp.weixin.qq.com/s/dHWc0MFwuyLMsCoBGN353Q
+
+PVT：可用于密集任务backbone的金字塔视觉transformer
+
+https://mp.weixin.qq.com/s/DKWSeRu_ThMf_vf9j1GCbQ
+
+PoseFormer：首个纯基于Transformer的3D人体姿态估计网络，性能达到SOTA
+
+https://mp.weixin.qq.com/s/O-xcsIHufrPQKPQGNcKjkg
+
+视觉子领域中的Transformer
+
+https://mp.weixin.qq.com/s/IeQdvz8DrNAULy2k7oFgWw
+
+Transformers在计算机视觉概述
+
 # BERT进阶
 
 ## AR vs AE
@@ -356,27 +379,3 @@ NLP这两年：15个预训练模型对比分析与剖析
 https://mp.weixin.qq.com/s/SPfa17p3QetZXCC01DwmQA
 
 解密BERT
-
-https://zhuanlan.zhihu.com/p/72805778
-
-BERT的演进和应用
-
-https://mp.weixin.qq.com/s/9YuBY0wLLVQ8ZrT9fiNICA
-
-语音版BERT？滴滴提出无监督预训练模型，中文识别性能提升10%以上
-
-https://mp.weixin.qq.com/s/OXkXjPHhaMXsKw2YevV6sw
-
-邱锡鹏：从Transformer到BERT--自然语言处理中的表示学习进展
-
-https://mp.weixin.qq.com/s/dV4RkxZOC9o2BxNi0GljKQ
-
-谷歌最强NLP模型BERT官方中文版来了！多语言模型支持100种语言
-
-https://zhuanlan.zhihu.com/p/49271699
-
-从Word Embedding到Bert模型—自然语言处理中的预训练技术发展史
-
-https://mp.weixin.qq.com/s/k_33UK1RkMyHn6TSudU6Kg
-
-详解谷歌最强NLP模型BERT

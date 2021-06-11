@@ -76,19 +76,23 @@ https://mp.weixin.qq.com/s/VOPis0wgmi-U-uM3Vnapbw
 
 ![](/images/img3/ellipse.gif)
 
+我们从斜面的上方和下方分别塞进一个球，它们与圆柱、截面均相切，然后，两个球与截面相切的点就是椭圆的两个焦点。
+
+![](/images/img4/ball.gif)
+
+![](/images/img4/man.gif)
+
+![](/images/img4/rect.gif)
+
 https://mp.weixin.qq.com/s/BmSdlLTZ8PxD_b27TzFWlw
 
 如何让8岁表妹了解数学到底是什么
 
+https://mp.weixin.qq.com/s/p-EVuaPfLusq01Jw8KcQdQ
+
+六一礼物：这些有趣的动图送给孩子们！了解数学能做什么？电路如何工作？
+
 # 数学杂谈
-
-如果你往高尔顿板里倒入很多小球，一个惊人的规律就出现了：在底部堆积的小球的上边缘总是会形成一个近似钟形的曲线。在最接近中心的插槽中，小球会堆得高高的，插槽中的球数从中间向两侧递减，直至为零。
-
-https://mp.weixin.qq.com/s/BwMAiziWQuyKaru8xB9tHw
-
-一文读懂因果推断的起源
-
-----
 
 当年洛伦茨求解这3个变量的方程组用的是一台Royal McBee LGP-30计算机，放置在MIT第24号楼第五层。这台机器比书桌还大，重约260公斤，可是速度极其缓慢，连今天的笔记本电脑都比它快上一百万倍。
 

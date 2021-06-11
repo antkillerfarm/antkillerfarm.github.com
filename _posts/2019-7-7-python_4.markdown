@@ -445,6 +445,10 @@ https://mp.weixin.qq.com/s/RLJAHQAheqrf8i-c8QtDtw
 
 Jupyter Notebooks嵌入Excel并使用Python替代VBA宏
 
+https://mp.weixin.qq.com/s/ymPHlri3qMmTlvlWiBqsxg
+
+用Python+Excel制作天气预报表
+
 ## 音乐
 
 https://web.mit.edu/music21/

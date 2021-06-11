@@ -109,6 +109,12 @@ https://mp.weixin.qq.com/s/xWBSzEfKAi2pMUldp0zL9w
 
 ----
 
+![](/images/img4/walle.jpg)
+
+![](/images/img4/walle_2.jpg)
+
+----
+
 https://mp.weixin.qq.com/s/SqL5WlQXQgNNiXHACfeN1A
 
 苏萌解读“天问一号”：中国人为什么要探测火星？
@@ -256,6 +262,10 @@ https://mp.weixin.qq.com/s/9b618Vc_Y5EgkCYFmfUYFA
 https://mp.weixin.qq.com/s/w0EyZwI7lF3ztNXFx5MtTQ
 
 听说火星上风很大，那祝融号可以用风力发电吗？
+
+https://www.zhihu.com/question/464412564
+
+国家航天局发布火星探测任务首批科学影像图，照片中有哪些信息可以关注？
 
 # 阿波罗50年
 

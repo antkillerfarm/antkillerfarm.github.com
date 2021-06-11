@@ -301,6 +301,10 @@ https://mp.weixin.qq.com/s/OXE7prU9cMuZG8kFydPm9A
 
 Paxos和Raft的前世今生
 
+https://mp.weixin.qq.com/s/ZE3sXRWoZYgbSIPTYIHWoA
+
+浅谈分布式一致性：Raft与SOFAJRaft
+
 https://mp.weixin.qq.com/s/Fj4zERz9PEuNumd_SI0bEA
 
 浅谈CAP和Paxos共识算法

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（四）——BERT, ELMo, GPT, ERNIE, XLNet
+title:  Attention（四）——BERT, ELMo, GPT, ERNIE
 category: Attention 
 ---
 
@@ -10,6 +10,26 @@ category: Attention
 # 预训练语言模型进化史
 
 ## 预训练语言模型的前世今生（续）
+
+https://mp.weixin.qq.com/s/uAJ_05g0Zo33mgygTnow1Q
+
+银色独角兽GPT家族
+
+https://mp.weixin.qq.com/s/2_MXIEk5-JP5KwsV6al9XQ
+
+BERT，开启NLP新时代的王者
+
+https://mp.weixin.qq.com/s/yRn1AELGK3jgfOaaxIo67Q
+
+Huggingface简介及BERT代码浅析
+
+https://mp.weixin.qq.com/s/sMocYFvESXoBGtX_NWmQkQ
+
+百度出品ERNIE合集，问国产预训练语言模型哪家强
+
+https://mp.weixin.qq.com/s/uOGNoePkwfeixTtI4q4t8Q
+
+MT-DNN(KD) : 预训练、多任务、知识蒸馏的结合
 
 https://mp.weixin.qq.com/s/-fQ9VlaOjssDufcZuCe91w
 
@@ -336,21 +356,3 @@ https://mp.weixin.qq.com/s/mPPnPwAvPzvJtv0B8jjDbw
 https://mp.weixin.qq.com/s/r5Vk_hc5-jsZ69y0dfqIfg
 
 登顶GLUE的百度ERNIE再突破：语言生成预训练模型ERNIE-GEN刷新SOTA
-
-# XLNet
-
-https://mp.weixin.qq.com/s/29y2bg4KE-HNwsimD3aauw
-
-20项任务全面碾压BERT，CMU全新XLNet预训练模型屠榜
-
-https://mp.weixin.qq.com/s/wlV8UbOUYSmc-AdaGfQQMQ
-
-XLNet详解
-
-https://mp.weixin.qq.com/s/itNtDuQS4KF_sLnfiwdyNg
-
-拆解XLNet模型设计，回顾语言表征学习的思想演进
-
-https://mp.weixin.qq.com/s/2zuR0x-Cb1NTeRHYeTjrHQ
-
-一文详解Google最新NLP模型XLNet

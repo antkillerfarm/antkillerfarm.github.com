@@ -41,6 +41,14 @@ https://mp.weixin.qq.com/s/wJbbki3S8l10rSpFTWFpgg
 
 对Reformer的深入解读
 
+https://mp.weixin.qq.com/s/xBkK77lxKotfyfyXY_DK-g
+
+Transformer家族系列（一）：Reformer论文解读
+
+https://mp.weixin.qq.com/s/szqvMyGoNgz0OFx3nzeV9g
+
+Transformer家族系列（二）：CNN在Transformer中的应用
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/39034683
@@ -361,23 +369,3 @@ https://mp.weixin.qq.com/s/g4jEVU3BkRem-DYXCn5eFQ
 https://mp.weixin.qq.com/s/U8f0cXoPrN32PM3944Oqkg
 
 十分钟了解文本分类通用训练技巧
-
-https://mp.weixin.qq.com/s/uAJ_05g0Zo33mgygTnow1Q
-
-银色独角兽GPT家族
-
-https://mp.weixin.qq.com/s/2_MXIEk5-JP5KwsV6al9XQ
-
-BERT，开启NLP新时代的王者
-
-https://mp.weixin.qq.com/s/yRn1AELGK3jgfOaaxIo67Q
-
-Huggingface简介及BERT代码浅析
-
-https://mp.weixin.qq.com/s/sMocYFvESXoBGtX_NWmQkQ
-
-百度出品ERNIE合集，问国产预训练语言模型哪家强
-
-https://mp.weixin.qq.com/s/uOGNoePkwfeixTtI4q4t8Q
-
-MT-DNN(KD) : 预训练、多任务、知识蒸馏的结合

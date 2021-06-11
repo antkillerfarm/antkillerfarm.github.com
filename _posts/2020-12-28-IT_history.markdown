@@ -327,6 +327,14 @@ https://zhuanlan.zhihu.com/p/59014246
 
 用大数据带你了解电影行业百年发展历程
 
+https://mp.weixin.qq.com/s/K51S-SDT44fvmwlJ_wlTFA
+
+为什么是50欧？
+
+https://mp.weixin.qq.com/s/NPsmZhAFKU6Ek34ekY92kA
+
+斯坦福历史学家撰文：70多年前，这位精通IBM中文打字机的神秘女子是谁？
+
 # 内存
 
 https://mp.weixin.qq.com/s/HOhBNZfOf5xQIFLYQ5ntCw

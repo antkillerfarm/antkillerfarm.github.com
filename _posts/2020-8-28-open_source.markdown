@@ -81,6 +81,22 @@ MiniGUI惨淡之后，飞漫公司转战移动APP领域，但从网站上的版�
 
 # 并行 & 框架+
 
+https://zhuanlan.zhihu.com/p/76638962
+
+Pytorch分布式训练
+
+https://zhuanlan.zhihu.com/p/360405558
+
+PyTorch分布式训练
+
+https://mp.weixin.qq.com/s/0aSBHvscloEnPMRLyNjQsg
+
+PyTorch分布式训练简明教程
+
+https://mp.weixin.qq.com/s/r7kt1k7D1wurWs_uxdLCtg
+
+PyTorch源码解读之分布式训练
+
 https://mp.weixin.qq.com/s/_85oWK2plv2QOX5Qfg_-ZA
 
 大规模机器学习优化，195页ppt与视频

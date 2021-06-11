@@ -1,13 +1,29 @@
 ---
 layout: post
-title:  Attention（五）——轻量化BERT, Attention in CV & RS
+title:  Attention（五）——XLNet, 轻量化BERT, Attention in CV & RS
 category: Attention 
 ---
 
 * toc
 {:toc}
 
-# XLNet（续）
+# XLNet
+
+https://mp.weixin.qq.com/s/29y2bg4KE-HNwsimD3aauw
+
+20项任务全面碾压BERT，CMU全新XLNet预训练模型屠榜
+
+https://mp.weixin.qq.com/s/wlV8UbOUYSmc-AdaGfQQMQ
+
+XLNet详解
+
+https://mp.weixin.qq.com/s/itNtDuQS4KF_sLnfiwdyNg
+
+拆解XLNet模型设计，回顾语言表征学习的思想演进
+
+https://mp.weixin.qq.com/s/2zuR0x-Cb1NTeRHYeTjrHQ
+
+一文详解Google最新NLP模型XLNet
 
 https://mp.weixin.qq.com/s/t8XDCPOYna8mZ1Iqk_g7Zw
 
@@ -342,23 +358,3 @@ https://mp.weixin.qq.com/s/8x1pgRLWaMkFSjT7zjhTgQ
 https://zhuanlan.zhihu.com/p/361366090
 
 CV+Transformer之Swin Transformer
-
-https://mp.weixin.qq.com/s/J7Fw-T1tYSqi9_vx8VSqYA
-
-TimeSformer：视频理解所需的只是时空注意力吗？
-
-https://mp.weixin.qq.com/s/dHWc0MFwuyLMsCoBGN353Q
-
-PVT：可用于密集任务backbone的金字塔视觉transformer
-
-https://mp.weixin.qq.com/s/DKWSeRu_ThMf_vf9j1GCbQ
-
-PoseFormer：首个纯基于Transformer的3D人体姿态估计网络，性能达到SOTA
-
-https://mp.weixin.qq.com/s/O-xcsIHufrPQKPQGNcKjkg
-
-视觉子领域中的Transformer
-
-https://mp.weixin.qq.com/s/IeQdvz8DrNAULy2k7oFgWw
-
-Transformers在计算机视觉概述

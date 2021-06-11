@@ -9,6 +9,14 @@ category: Nature
 
 # 物理
 
+人们发现电子具有自旋角动量和自旋磁矩，而乌伦贝克和古兹密特提出假设用电子在自转来解释。只是在他们发出论文后，他们心里也含糊，所以去找洛伦兹求证，洛伦兹用轨道磁矩的方式（电流×线圈面积），代入电子经典半径（根据电势能的一个假设模型），计算得到，电子表面的线速度必然是光速的100多倍，这和相对论严重冲突。这也就意味着电子的自旋并不等于自转。
+
+https://mp.weixin.qq.com/s/fwOSSiYLhtAbidFzLfZ3yQ
+
+原本需要15万年才能解决的问题，有了它只需1秒
+
+----
+
 https://mp.weixin.qq.com/s/ZIHZ8W993OoW4X1apOGXjQ
 
 物理学发展史上有哪些重要的时刻？
@@ -364,31 +372,3 @@ https://mp.weixin.qq.com/s/foZaIzpyxiRf9_9O7f6EaQ
 https://mp.weixin.qq.com/s/hnDjc8H9US4vZM4PZADZYg
 
 如何修建岩浆护城河
-
-https://mp.weixin.qq.com/s/KsGGMCKsQlHYxXONOTthGQ
-
-当你按下“除湿”键时，空调内究竟发生了什么？
-
-https://mp.weixin.qq.com/s/fbJQs87R9c8_j_B5-zTsVg
-
-古代没有冰箱，夏天冰块是怎么来的？
-
-https://mp.weixin.qq.com/s/Xky_uit9pSsU7pX6DaapsQ
-
-美国蜂蜜中发现放射性核物质！核弹试验影响延续至今
-
-https://mp.weixin.qq.com/s/il50NMq54xH54h8Lg1K30g
-
-物理学，如何让我们更健康？
-
-https://mp.weixin.qq.com/s/PVCa9iX3FSN-rTjOf_QGAQ
-
-风力发电机上有避雷针？！谁能告诉我它藏哪了
-
-https://mp.weixin.qq.com/s/prz4Dw9YzEcUDJ2CIHTnLw
-
-爱因斯坦，玻尔，薛定谔……都出现在了钞票上
-
-https://mp.weixin.qq.com/s/tPX9GMw4hWYmeD9Qblydwg
-
-胡清扬，高压下的魔法师

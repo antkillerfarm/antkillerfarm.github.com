@@ -207,6 +207,10 @@ https://mp.weixin.qq.com/s/EZxO8IIBDJ4c7eQhUffc2w
 
 怎样节省2/3的GPU？爱奇艺vGPU的探索与实践
 
+https://mp.weixin.qq.com/s/3VjGpyXZSkJhy6sFPUsZzw
+
+GPU虚拟化，算力隔离，和qGPU
+
 # GPU通信技术
 
 ## RDMA

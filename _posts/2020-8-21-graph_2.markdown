@@ -29,7 +29,11 @@ https://mp.weixin.qq.com/s/2aKc4yM0b52X-SViGQycwA
 
 https://mp.weixin.qq.com/s/_HOdAo2ClhJqbUrDvsc-3w
 
-Philip S. Yu 团队最新综述！社区发现的深度学习方法：进展、挑战、机遇
+Philip S. Yu团队最新综述！社区发现的深度学习方法：进展、挑战、机遇
+
+https://mp.weixin.qq.com/s/uA8z5id8_py3GC_IxcceKA
+
+Philip S. Yu等最新“深度学习社区检测”大综述论文，28页pdf174篇文献概述六大类深度社区检测方法
 
 https://mp.weixin.qq.com/s/HGpay4KZwtz7t5QBIeE8Rg
 

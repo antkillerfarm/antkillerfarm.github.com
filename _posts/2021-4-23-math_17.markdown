@@ -49,6 +49,14 @@ PS：1.《几何原本》不代表欧几里得的最高水平，那是欧几里�
 
 ----
 
+如果你往高尔顿板里倒入很多小球，一个惊人的规律就出现了：在底部堆积的小球的上边缘总是会形成一个近似钟形的曲线。在最接近中心的插槽中，小球会堆得高高的，插槽中的球数从中间向两侧递减，直至为零。
+
+https://mp.weixin.qq.com/s/BwMAiziWQuyKaru8xB9tHw
+
+一文读懂因果推断的起源
+
+----
+
 Introspective Neural Networks
 
 http://www.cnblogs.com/cyjb/p/UnionFindSets.html
@@ -312,15 +320,3 @@ https://mp.weixin.qq.com/s/CC77DL5RKhr5SekDyfqm3Q
 https://mp.weixin.qq.com/s/oEhG7AaY_TAljvhhK5YfNA
 
 拉东变换与医学CT技术
-
-https://mp.weixin.qq.com/s/9ZmyidQ888PiT7jbr7Zusg
-
-物理学家辞掉NASA工作玩折纸，竟被请回实验室“折卫星”（折纸几何学）
-
-https://zhuanlan.zhihu.com/p/54898983
-
-一道弹性碰撞的物理题，结果为什么会出现$$\pi$$？
-
-https://zhuanlan.zhihu.com/p/26645548
-
-支付宝集五福活动五福是随机给定的吗?
