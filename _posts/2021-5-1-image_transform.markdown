@@ -105,6 +105,10 @@ https://mp.weixin.qq.com/s/LFdvu0RaqqoOQW1YxjxSDA
 
 图像修复必读的10篇论文
 
+https://mp.weixin.qq.com/s/gzwXr8PpJ6g9CJYRnNlg2A
+
+浅析图像修复背后的核心技术
+
 ## 大谷
 
 大谷1991年生于北京，获得了纽约视觉艺术学院电脑艺术硕士学位，艺术家，音乐家，程序员和独立的游戏设计师。

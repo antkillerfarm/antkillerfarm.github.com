@@ -273,6 +273,8 @@ self.player.seek(1.0, Gst.Format.TIME, Gst.SeekFlags.FLUSH, Gst.SeekType.SET,\
 
 ## Django
 
+Django是一个Web框架。
+
 官网：
 
 https://www.djangoproject.com/
@@ -301,6 +303,14 @@ Django比较重量级了，如果只是想发布静态网页的话，可以用�
 
 `python -m SimpleHTTPServer 7800`
 
+除此之外，Flask、tornado也是较常用的Web框架。
+
+基于python新增的async/await语法的异步Web框架，是最近的新流派，代表有：Sanic
+
+https://juejin.cn/post/6944598601674784775
+
+异步Web框架Sanic凭什么比Django Flask强？
+
 ## pygame
 
 pygame是一个python的游戏引擎。
@@ -308,6 +318,16 @@ pygame是一个python的游戏引擎。
 官网：
 
 https://www.pygame.org/
+
+类似的引擎还有：
+
+https://kaboomjs.com/
+
+kaboom.js（一个JS写的引擎）
+
+https://solar2d.com/
+
+Solar2D（一个Lus写的引擎）
 
 参考：
 
@@ -474,31 +494,3 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/misc/hel
 `shell=False`:
 
 `args = ["ls","-al","."]`
-
-## Dear PyGui
-
-Dear PyGui是一个轻量级的GUI框架，可以利用GPU进行渲染。
-
-代码：
-
-https://github.com/hoffstadt/DearPyGui
-
-参考：
-
-https://mp.weixin.qq.com/s/t1DT7jyKj1moU1qnrn5GiQ
-
-好看又好用的GUI，你需要这七个Python必备库
-
-## Streamlit
-
-https://mp.weixin.qq.com/s/sZvawmQ1KH3b_hozAbeX9w
-
-如何用简单的Python为数据科学家编写Web应用程序？
-
-https://mp.weixin.qq.com/s/gVIVDR1pXdDArrZO56B86w
-
-如何用纯Python写Web应用？
-
-https://mp.weixin.qq.com/s/TV1MJfaOq27y2DVCGMuqhA
-
-用Pandas和Streamlit对时间序列数据集进行可视化过滤

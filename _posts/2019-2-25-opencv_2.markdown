@@ -442,3 +442,7 @@ https://mp.weixin.qq.com/s/2FfSGcsRjESwUA3OunHsfQ
 https://mp.weixin.qq.com/s/R3sSM3tel7VMRxeZ_tzxug
 
 OpenVINO场景文字检测与识别
+
+https://mp.weixin.qq.com/s/x_sUVg-6euWfQO9aZwzMkw
+
+树莓派4B搭建OpenVINO环境

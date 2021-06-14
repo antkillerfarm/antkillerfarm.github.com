@@ -9,6 +9,24 @@ category: resource
 
 # DL参考资源
 
+## 光神经网络
+
+https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ
+
+3D打印的深度神经网络，光速执行AI运算
+
+https://mp.weixin.qq.com/s/5zt8UIpNBcgNZpwHHJj68Q
+
+光学CNN层替换传统CNN层，超省电
+
+https://mp.weixin.qq.com/s/IheyYAC1yIigYOW-gtc5Eg
+
+Science重磅！用光速实现深度学习，跟GPU说再见
+
+https://mp.weixin.qq.com/s/ENYX87SMlgv30x08iYFQIw
+
+几乎零能耗零延迟！UCLA科学家发明光衍射神经网络，登上Science
+
 ## 参考
 
 https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748834&idx=3&sn=805564d2d9956dff6bb888ccb61e9b7b
@@ -286,6 +304,10 @@ Adaptive Label Smoothing方法让模型结果更加鲁棒
 https://mp.weixin.qq.com/s/0Y3x6b6L3T4kOYNUXOYDIA
 
 噪声样本优秀论文综述（2017-2020）
+
+https://mp.weixin.qq.com/s/04oEiolE0Qnm7l7H0r8lzw
+
+深度学习模型如何处理大小可变的输入
 
 # 知名数据集+
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 电子科技史, 内存
+title: 电子科技史
 category: resource 
 ---
 
@@ -335,44 +335,6 @@ https://mp.weixin.qq.com/s/NPsmZhAFKU6Ek34ekY92kA
 
 斯坦福历史学家撰文：70多年前，这位精通IBM中文打字机的神秘女子是谁？
 
-# 内存
+https://mp.weixin.qq.com/s/Dvn-41JpqKhSUKQC3Mg76A
 
-https://mp.weixin.qq.com/s/HOhBNZfOf5xQIFLYQ5ntCw
-
-内存的故事
-
-https://mp.weixin.qq.com/s/qhR0St3CLWEYqV_kl_oXAw
-
-Rambus之战
-
-https://mp.weixin.qq.com/s/gh9cL0BPzCQ2JFOoXdtqyg
-
-内存的技术发展
-
-https://mp.weixin.qq.com/s/kHPTZlDtjqtr0Vi-5OWycQ
-
-金士顿的传说
-
-https://zhuanlan.zhihu.com/p/57780996
-
-内存延迟：因与果
-
-https://mp.weixin.qq.com/s/XcC18tulYdnwqlusg2QrxA
-
-嵌入式内存STT-MRAM趋势分析
-
-https://zhuanlan.zhihu.com/p/62234511
-
-DDR3 vs DDR4?为什么说内存是个很傻的设备？DDR5在哪里？
-
-https://zhuanlan.zhihu.com/p/40601422
-
-双通道、四通道内存对游戏重要吗？
-
-https://mp.weixin.qq.com/s/9skWM6yirEupLj2wdpgqkA
-
-带你深入理解内存对齐最底层原理
-
-https://mp.weixin.qq.com/s/Mb7iSXfrOtettVn-Sz8QUA
-
-主板上这家伙，要当CPU和内存的中间商！
+拆解1968年的美国军用电脑，真的怀疑是“穿越”啊！

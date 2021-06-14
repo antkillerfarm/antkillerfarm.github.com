@@ -9,6 +9,22 @@ category: Recommender System
 
 # 深度推荐系统
 
+https://zhuanlan.zhihu.com/p/36564514
+
+基于深度学习的评论文本表示论文引介
+
+https://mp.weixin.qq.com/s/a-lDJuwFYVNupeNhxyXDkA
+
+跨域社交推荐：如何透过用户社交信息“猜你喜欢”？
+
+https://mp.weixin.qq.com/s/FvuWZPNKcnimAGzsfgVdBQ
+
+阿里妈妈公开全新CVR预估模型
+
+https://mp.weixin.qq.com/s/Ya8RZ3TouAapU_xuvMjjMQ
+
+深度协同过滤：用神经网络取代内积建模
+
 https://zhuanlan.zhihu.com/p/100019681
 
 推荐系统技术演进趋势：从召回到排序再到重排
@@ -73,10 +89,6 @@ https://zhuanlan.zhihu.com/p/162980539
 
 2018年kdd阿里召回系统tdm读后感
 
-https://mp.weixin.qq.com/s/VOZh79VSCXzZlEuDuDdjKQ
-
-CTR神经网络特征交叉汇总
-
 https://mp.weixin.qq.com/s/ioDkJHKZ4t1gvrMVl7kplg
 
 DMR：阿里深度召回排序模型
@@ -84,10 +96,6 @@ DMR：阿里深度召回排序模型
 https://mp.weixin.qq.com/s/F5HVrgE5tURTNdVRHADRPw
 
 充分利用显式&隐式反馈的深度网络
-
-https://mp.weixin.qq.com/s/PkoREw_nF-QLHdn7GLDfjw
-
-深入理解推荐系统：特征交叉组合模型演化简史
 
 https://mp.weixin.qq.com/s/OiN608x2cMF4SCpLEzTkWw
 
@@ -116,10 +124,6 @@ https://mp.weixin.qq.com/s/VHRV1Z6F8-3o6b-3v-5_BA
 https://mp.weixin.qq.com/s/j34nJGomvR23ZJiqIFMoAQ
 
 推荐系统中稀疏特征Embedding的优化表示方法
-
-https://mp.weixin.qq.com/s/0qidwbxyfTkODTw2DIiRWw
-
-DCN-M：Google提出改进版DCN，用于大规模排序系统的特征交叉学习
 
 https://zhuanlan.zhihu.com/p/267263561
 
@@ -342,6 +346,10 @@ https://mp.weixin.qq.com/s/5eIxApPG_dNNXssJHMKzeA
 https://mp.weixin.qq.com/s/jTQOPobNPr96GTj0BDQiWQ
 
 广告模型初探（三）
+
+https://mp.weixin.qq.com/s/h6iBeTS992CDRixg2pFl6Q
+
+ItemCF的演进：狭义 VS 广义
 
 # 推荐系统的工程细节+
 

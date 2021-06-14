@@ -215,6 +215,10 @@ https://mp.weixin.qq.com/s/RkUDFJtlSAa2AI65UA33qw
 
 视频目标跟踪从0到1，概念与方法
 
+https://mp.weixin.qq.com/s/bk1-N1RjeKb_1A29n8o15Q
+
+目标跟踪入门篇-相关滤波
+
 # Meanshift
 
 ## Meanshift聚类

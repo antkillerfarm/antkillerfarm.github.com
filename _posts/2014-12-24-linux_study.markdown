@@ -241,6 +241,10 @@ https://mp.weixin.qq.com/s/k3qALmbjxxAPPg6v1-RDOA
 
 Linux的epoll使用LT+非阻塞IO和ET+非阻塞IO有效率上的区别吗？
 
+https://mp.weixin.qq.com/s/h3CBZt2KEA-ScXFSKHaRBg
+
+十个问题理解Linux epoll工作原理
+
 ## 参考
 
 https://mp.weixin.qq.com/s/EDzFOo3gcivOe_RgipkTkQ
@@ -313,30 +317,18 @@ Linux启动时，运行一个叫做init的程序，然后由它来启动后面�
 6 - 重新启动（千万不要把initdefault设置为6）
 ```
 
-# 设置随机的MAC地址
+# tldr
 
-1.设置MAC地址
+tldr是一个采用示例说明的简化版的man。
 
-`ifconfig eth0 hw ether 477265656e00`
+官网：
 
-其中eth0是网口的名称，477265656e00是要设置的MAC地址（十六进制）。
+http://tldr.sh/
 
-2.生成随机数
+该项目原生支持node.js，但也提供了其他多种语言的支持。
 
-随机数的生成在Linux中有多种方法，这里使用openssl。因为它和MAC都属于网络编程的范畴，同时使用的概率较大。
+参考：
 
-`openssl rand -hex 6`
+https://linuxtoy.org/archives/tldr.html
 
-3.SIOCSIFHWADDR: Cannot assign requested address错误
-
-MAC地址的某些位有特定的含义，并不能随意设置。仍以477265656e00为例，第一个字节0x47的最后两位含义如下：
-
-（00）统一管理的单播MAC
-
-（01）统一管理的多播MAC
-
-（10）本地管理的单播MAC
-
-（11）本地管理的多播MAC
-
-由于针对ADSL路由等这样的网络终端，一般使用的都是统一管理的单播MAC。
+tldr: 简读Manpage

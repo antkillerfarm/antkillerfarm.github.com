@@ -333,6 +333,10 @@ https://mp.weixin.qq.com/s/IuhOLVRgqnoOuxZ2boUGuw
 
 管中窥“视频”，“理解”一斑——视频理解概览
 
+https://mp.weixin.qq.com/s/4fL-6VSpBFgicJ2MAY7twA
+
+视频异常行为检测算法MPN，在多个数据库上达到SOTA
+
 # 迁移学习+
 
 https://zhuanlan.zhihu.com/p/57656210

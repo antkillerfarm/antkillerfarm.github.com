@@ -377,6 +377,22 @@ https://mp.weixin.qq.com/s/Z-_iZl_CTixqK0vl0_CHfQ
 
 # AutoDL++
 
+https://mp.weixin.qq.com/s/0kGJfKARKs2TuIQ4YJYbUA
+
+比手工模型快10~100倍，谷歌揭秘视频NAS三大法宝
+
+https://zhuanlan.zhihu.com/p/100570132
+
+NAS evaluation is frustratingly hard
+
+https://mp.weixin.qq.com/s/QEkOQG2dQrPG-aa8OsVSOg
+
+NASNet: Google Brain经典作，改造搜索空间，性能全面超越人工网络，继续领跑NAS领域
+
+https://mp.weixin.qq.com/s/ClqOWx1RJGzoS0akI2s93w
+
+多媒体的AutoML与元学习，清华大学朱文武教授等
+
 https://mp.weixin.qq.com/s/dS3nHGcQ1VoOyVBcRPFtkg
 
 AutoML都有哪些核心技术，如何对其进行长期深入学习
@@ -436,19 +452,3 @@ NAS在检测中的应用
 https://mp.weixin.qq.com/s/nG_Mzlevs9ougnyeJyT38A
 
 一文看懂AutoML
-
-https://mp.weixin.qq.com/s/qou0uUQVsU306KvB5JMKVg
-
-贝叶斯分析助你成为优秀的调参侠：自动化搜索物理模型的参数空间
-
-https://mp.weixin.qq.com/s/pJ4cSS4qXQaM8ACv_Aq--A
-
-结合Sklearn的网格和随机搜索进行自动超参数调优
-
-https://mp.weixin.qq.com/s/fqNl6WPqIP7TiAmg5emkRw
-
-针对目标检测任务从基础运算符号自动构建损失函数
-
-https://mp.weixin.qq.com/s/pDvl1LEV5ujJbOfU-PDuiA   
-
-走马观花AutoML

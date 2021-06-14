@@ -317,6 +317,22 @@ https://mp.weixin.qq.com/s/46nvCl5o4QYvRemzOrnaoQ
 
 # AutoDL+++
 
+https://mp.weixin.qq.com/s/qou0uUQVsU306KvB5JMKVg
+
+贝叶斯分析助你成为优秀的调参侠：自动化搜索物理模型的参数空间
+
+https://mp.weixin.qq.com/s/pJ4cSS4qXQaM8ACv_Aq--A
+
+结合Sklearn的网格和随机搜索进行自动超参数调优
+
+https://mp.weixin.qq.com/s/fqNl6WPqIP7TiAmg5emkRw
+
+针对目标检测任务从基础运算符号自动构建损失函数
+
+https://mp.weixin.qq.com/s/pDvl1LEV5ujJbOfU-PDuiA   
+
+走马观花AutoML
+
 https://mp.weixin.qq.com/s/y-5Gh0Jy3Fpz8xvw_tOICg
 
 MixPath：基于权重共享的神经网络搜索统一方法

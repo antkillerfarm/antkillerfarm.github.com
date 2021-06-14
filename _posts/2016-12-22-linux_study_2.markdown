@@ -72,6 +72,10 @@ https://www.cnblogs.com/renshengdezheli/p/13427865.html
 
 查询OS、CPU、内存、硬盘信息
 
+https://mp.weixin.qq.com/s/bMWjhWQHTNOStxB4MDDruw
+
+40个Linux资源查看命令
+
 ## free
 
 free命令的内容比较概括，主要包含系统内存的整体使用情况，不深入到进程一级。

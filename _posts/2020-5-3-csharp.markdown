@@ -315,15 +315,3 @@ https://mp.weixin.qq.com/s/RlJ5Y6xJ-8NfDW7oSZlYbw
 https://mp.weixin.qq.com/s/LeTNcQCT4mYu6HSlGoHbzQ
 
 手机最强Python编程神器，在手机上运行Python不再是梦！
-
-https://mp.weixin.qq.com/s/RP2j-PQMsAIXOK5u4zt3ZA
-
-Python加速运行技巧
-
-https://mp.weixin.qq.com/s/7sQ6p0IDWvttbvv_c71Etg
-
-Python单元测试详解
-
-https://mp.weixin.qq.com/s/TMcj-X5SmOqOgh6Ljkb3sw
-
-模型热更新小记

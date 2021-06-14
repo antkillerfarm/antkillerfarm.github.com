@@ -307,7 +307,7 @@ http://tensorinfinity.com/paper_119.html
 
 图像内容鉴黄算法综述
 
-# AI-1000问
+## AI-1000问
 
 这个是“有三AI”微信公众号下的栏目，特辑录如下。
 

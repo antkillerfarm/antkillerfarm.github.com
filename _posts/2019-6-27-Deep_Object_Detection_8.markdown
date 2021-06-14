@@ -339,6 +339,10 @@ https://mp.weixin.qq.com/s/5TRm1vYx8dYVQHU7FdHdJg
 
 在目标检测中如何解决小目标的问题？
 
+https://mp.weixin.qq.com/s/V9CJVaRYlS5Snyveblb3uw
+
+小目标检测的一些问题，思路和方案
+
 # 花式NMS
 
 https://mp.weixin.qq.com/s/ro0lG3uMUPYNZA9rM3I_YQ

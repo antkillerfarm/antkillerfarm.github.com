@@ -143,6 +143,44 @@ https://mp.weixin.qq.com/s/sqW3HlCTV5Yivwi_B1Rzww
 
 这个文件下载问题难住了我至少三位同事
 
+# python++
+
+https://mp.weixin.qq.com/s/5xs1ivkrUAP_Rr9P-EMc5g
+
+代码优化指南：人生苦短，我用Python。这篇blog主要介绍了如何追踪Python脚本的CPU使用情况。
+
+https://mp.weixin.qq.com/s/HGH2e_0ocHv2VWsjOje9BQ
+
+程序员必知的Python陷阱与缺陷列表
+
+http://blog.csdn.net/linda1000/article/details/8315892
+
+单引号、双引号和三双引号的区别
+
+https://mp.weixin.qq.com/s/RP2j-PQMsAIXOK5u4zt3ZA
+
+Python加速运行技巧
+
+https://mp.weixin.qq.com/s/7sQ6p0IDWvttbvv_c71Etg
+
+Python单元测试详解
+
+https://mp.weixin.qq.com/s/TMcj-X5SmOqOgh6Ljkb3sw
+
+模型热更新小记
+
+https://mp.weixin.qq.com/s/czqO4Lo1Jt9zqg2UKNlLYg
+
+手把手教你用Python创建微信聊天机器人
+
+https://mp.weixin.qq.com/s/nT4GLtDtJ1MUg8TBHBDf_A
+
+足不出户也能放风筝？OpenGL一招搞定！
+
+https://mp.weixin.qq.com/s/7KdH2Zx3ugK6DXn5SYewAw
+
+盘点Python加密解密模块hashlib的7种加密算法
+
 # 两弹一星+
 
 左宗棠、沈葆桢建船政，到1874年“船政成功”为止，8年时间总的投入是500多万两银子，不到600万两。这500多万两银子的回报是6艘军舰，但有一个船厂，更关键的是他学到了技术，学校培养了许多人才，这种影响的持续性是不断延伸的。

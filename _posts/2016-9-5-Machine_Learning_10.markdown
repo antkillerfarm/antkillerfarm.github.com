@@ -184,6 +184,10 @@ https://zhuanlan.zhihu.com/p/85338773
 
 高斯混合模型（GMM）推导及实现
 
+https://mp.weixin.qq.com/s/Uayd-KiXeoL5vBUyC1-oDQ
+
+小孩都看得懂的GMM
+
 # EM算法
 
 本节将进一步讨论EM算法的性质，并将之应用到使用latent random variables的一大类估计问题中。

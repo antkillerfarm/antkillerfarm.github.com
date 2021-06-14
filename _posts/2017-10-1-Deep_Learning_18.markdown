@@ -327,6 +327,14 @@ https://mp.weixin.qq.com/s/v5p9QA3vDl-WTF3-7shp4g
 
 对比学习简述
 
+https://mp.weixin.qq.com/s/CeqoXqHjfa6UTWa8mmo_Ww
+
+Paper和陈丹琦撞车是一种怎样的体验（ConSERT vs. SimCSE）
+
+https://mp.weixin.qq.com/s/C4KaIXO9Lp8tlqhS3b0VCw
+
+美团提出基于对比学习的文本表示模型（ConSERT）
+
 ## MoCo
 
 https://mp.weixin.qq.com/s/9zaTjwwGPHHzSv1ZmHf8_g
@@ -398,19 +406,3 @@ https://mp.weixin.qq.com/s/hWRStNp0Gu_ZO7J1Sjr6-w
 https://mp.weixin.qq.com/s/ABNPCpgyk_2EeYwnJFFehg
 
 自动优化架构，这个算法能帮工程师设计神经网络
-
-https://mp.weixin.qq.com/s/0kGJfKARKs2TuIQ4YJYbUA
-
-比手工模型快10~100倍，谷歌揭秘视频NAS三大法宝
-
-https://zhuanlan.zhihu.com/p/100570132
-
-NAS evaluation is frustratingly hard
-
-https://mp.weixin.qq.com/s/QEkOQG2dQrPG-aa8OsVSOg
-
-NASNet: Google Brain经典作，改造搜索空间，性能全面超越人工网络，继续领跑NAS领域
-
-https://mp.weixin.qq.com/s/ClqOWx1RJGzoS0akI2s93w
-
-多媒体的AutoML与元学习，清华大学朱文武教授等

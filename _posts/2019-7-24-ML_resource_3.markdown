@@ -185,6 +185,10 @@ https://mp.weixin.qq.com/s/41OmNMK1VFKQRuW6D7kqgA
 
 王茂霖：数据挖掘提分三板斧
 
+https://mp.weixin.qq.com/s/v7m0I9o6QV6qKSQqnsMoRw
+
+共享两轮车供需算法浅谈
+
 # 上古软件开发
 
 https://github.com/chrislgarry/Apollo-11

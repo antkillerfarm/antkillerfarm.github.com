@@ -175,6 +175,24 @@ https://zhuanlan.zhihu.com/p/291406172
 
 多目标学习在推荐系统的应用(MMOE/ESMM/PLE)
 
+## 特征交叉
+
+https://mp.weixin.qq.com/s/VOZh79VSCXzZlEuDuDdjKQ
+
+CTR神经网络特征交叉汇总
+
+https://mp.weixin.qq.com/s/bbkM69DuUqYWCbi8_jnQ_g
+
+这篇文章送给想要学习特征交叉的朋友
+
+https://mp.weixin.qq.com/s/PkoREw_nF-QLHdn7GLDfjw
+
+深入理解推荐系统：特征交叉组合模型演化简史
+
+https://mp.weixin.qq.com/s/0qidwbxyfTkODTw2DIiRWw
+
+DCN-M：Google提出改进版DCN，用于大规模排序系统的特征交叉学习
+
 ## 参考
 
 https://zhuanlan.zhihu.com/learningdeep
@@ -309,6 +327,10 @@ http://www.cnblogs.com/qcloud1001/p/7483362.html
 
 深度学习在CTR中应用
 
+https://mp.weixin.qq.com/s/saGxgND8ZV3Q3pxRh3n3FA
+
+DeepCTR综述: 深度学习用于点击率预估
+
 http://www.cnblogs.com/qcloud1001/p/7513982.html
 
 常见计算广告点击率预估算法总结
@@ -376,19 +398,3 @@ https://mp.weixin.qq.com/s/5A0mnFIMGX1GViD65vURcg
 https://mp.weixin.qq.com/s/nboZ6p_l30L__FJNyz6Ohw
 
 深度学习如何应用在广告、推荐及搜索业务？
-
-https://zhuanlan.zhihu.com/p/36564514
-
-基于深度学习的评论文本表示论文引介
-
-https://mp.weixin.qq.com/s/a-lDJuwFYVNupeNhxyXDkA
-
-跨域社交推荐：如何透过用户社交信息“猜你喜欢”？
-
-https://mp.weixin.qq.com/s/FvuWZPNKcnimAGzsfgVdBQ
-
-阿里妈妈公开全新CVR预估模型
-
-https://mp.weixin.qq.com/s/Ya8RZ3TouAapU_xuvMjjMQ
-
-深度协同过滤：用神经网络取代内积建模

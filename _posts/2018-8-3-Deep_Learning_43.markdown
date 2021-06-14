@@ -209,6 +209,26 @@ https://mp.weixin.qq.com/s/vKzsLLOT7dQNBQzxDTGw0g
 
 # Graph NN参考资源+++
 
+https://mp.weixin.qq.com/s/iQYVyo2PHuGbEsYgdIf_oQ
+
+DeepMind等机构提出“图网络”：面向关系推理
+
+https://mp.weixin.qq.com/s/TAccHagxXQ82lfE91Y6xWg
+
+CNN已老，GNN来了：重磅论文讲述深度学习的因果推理
+
+https://mp.weixin.qq.com/s/UONtTJJgDawRPWtatAVKkg
+
+如何利用高效的搜索算法来搜索网络的拓扑结构
+
+https://mp.weixin.qq.com/s/SGCtwYWfnxjcpMJeeH1b4w
+
+图神经网络+池化模块，斯坦福等提出层级图表征学习
+
+https://mp.weixin.qq.com/s/DOau_vTbwCauQ8mrHkGu9Q
+
+首个面向Facebook、arXiv网络图类的对抗攻击研究
+
 https://mp.weixin.qq.com/s/L4XPz4Moc3mmhR_7kK5OKg
 
 图神经网络知识蒸馏框架
@@ -264,6 +284,10 @@ https://mp.weixin.qq.com/s/FpBawuJrD54Hk1_GMO4tSg
 https://mp.weixin.qq.com/s/dZ1SUUNeZIZwH6uEcdlsDQ
 
 图神经网络从入门到入门
+
+https://mp.weixin.qq.com/s/k3bHwxH_pgMat9pQkHzrww
+
+大规模图算法在京东广告的实践
 
 # Conv计算量分析
 

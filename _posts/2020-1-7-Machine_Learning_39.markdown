@@ -396,3 +396,7 @@ https://mp.weixin.qq.com/s/_cVNNZBBJljdWBPU9d38CA
 https://mp.weixin.qq.com/s/P6xLYrNP4pNKtHcxAWAOKg
 
 数据竞赛中的各种loss function
+
+https://mp.weixin.qq.com/s/Q4ryiTOSJQaJ2e5clmXjtg
+
+一文看尽深度学习中的15种损失函数

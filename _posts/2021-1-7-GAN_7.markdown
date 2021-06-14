@@ -328,3 +328,7 @@ https://mp.weixin.qq.com/s/sJGvvwCkXCJ52MYSsjkwrg
 https://mp.weixin.qq.com/s/UHrYk7_oM0_WBy-FCQXM0g
 
 一文梳理水下目标检测方法
+
+https://mp.weixin.qq.com/s/PJYJ_Q7eTQFk46tladYFIQ
+
+使用合成数据集来做目标检测

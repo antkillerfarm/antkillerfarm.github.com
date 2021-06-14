@@ -85,6 +85,34 @@ http://chengjin.li/2017/08/09/tmux-using-tutorial/
 
 终端复用工具---tmux的安装及使用
 
+# 设置随机的MAC地址
+
+1.设置MAC地址
+
+`ifconfig eth0 hw ether 477265656e00`
+
+其中eth0是网口的名称，477265656e00是要设置的MAC地址（十六进制）。
+
+2.生成随机数
+
+随机数的生成在Linux中有多种方法，这里使用openssl。因为它和MAC都属于网络编程的范畴，同时使用的概率较大。
+
+`openssl rand -hex 6`
+
+3.SIOCSIFHWADDR: Cannot assign requested address错误
+
+MAC地址的某些位有特定的含义，并不能随意设置。仍以477265656e00为例，第一个字节0x47的最后两位含义如下：
+
+（00）统一管理的单播MAC
+
+（01）统一管理的多播MAC
+
+（10）本地管理的单播MAC
+
+（11）本地管理的多播MAC
+
+由于针对ADSL路由等这样的网络终端，一般使用的都是统一管理的单播MAC。
+
 # 设置网卡eth0的IP地址和子网掩码
 
 `sudo ifconfig eth0 192.168.2.1 netmask 255.255.255.0`
@@ -100,22 +128,6 @@ http://chengjin.li/2017/08/09/tmux-using-tutorial/
 扫描周围的wifi信号：
 
 `iwlist scanning`
-
-# tldr
-
-tldr是一个采用示例说明的简化版的man。
-
-官网：
-
-http://tldr.sh/
-
-该项目原生支持node.js，但也提供了其他多种语言的支持。
-
-参考：
-
-https://linuxtoy.org/archives/tldr.html
-
-tldr: 简读Manpage
 
 # 下载工具
 
@@ -449,27 +461,3 @@ https://mp.weixin.qq.com/s/3Pp7wkDO6Rnxb5aZP0sacw
 https://mp.weixin.qq.com/s/xM8uvYbX6VY8MVZrYkvCUg
 
 链接选项rpath的原理和应用
-
-https://www.cnblogs.com/Malphite/p/10405465.html
-
-Makefile中的-rpath/-rpath-link
-
-https://juejin.im/post/5e8844996fb9a03c6675b9d6
-
-我们按下电脑开机键的背后发生了什么？
-
-https://mp.weixin.qq.com/s/DCqkgksOHa81EI-I0oaZvg
-
-Linux下9种优秀的代码比对工具推荐
-
-https://zhuanlan.zhihu.com/p/162366167
-
-Linux下C++so热更新
-
-https://mp.weixin.qq.com/s/rH7WqriomFTA55ecacV8Gw
-
-键盘敲入A字母时，操作系统期间发生了什么...
-
-https://mp.weixin.qq.com/s/vDlWCVK8knxPf5HoqmtZyQ
-
-从创建进程到进入main函数，发生了什么？

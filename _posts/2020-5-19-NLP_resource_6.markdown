@@ -408,3 +408,7 @@ http://www.jianshu.com/p/ac1840abc63f
 https://mp.weixin.qq.com/s/SVKlD0T8IkpVAKFJu-VQAg
 
 胡一川：深度学习在智能助理中的应用
+
+https://mp.weixin.qq.com/s/JxGQmsTlXtnJxGIrafZwSA
+
+长序列自然语言处理, 250页ppt

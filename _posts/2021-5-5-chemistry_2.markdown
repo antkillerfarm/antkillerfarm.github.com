@@ -45,6 +45,10 @@ https://mp.weixin.qq.com/s/DPSwZA4na4reN1d_AMmYpA
 
 使用磷酸铁锂，蔚来是进步还是倒退？
 
+https://mp.weixin.qq.com/s/GU3MJrL30g_1Oma5OJtELw
+
+想开充电5分钟跑1000公里的电动车，首先你得有脸盆粗的电缆
+
 ----
 
 超级电容器充放电速度快，可以在大电流下，数十秒或者数分钟内快速完成充电。温度使用范围宽。在几秒钟的高速深度充放电循环50万次至100万次后，特性变化很小，容量和内阻仅降低10%～20%。
@@ -185,6 +189,10 @@ https://zhuanlan.zhihu.com/p/23284525
 
 靠谱地，咱聊聊田中耕一
 
+https://mp.weixin.qq.com/s/BXew6QoQgHAxOnCKpPp64Q
+
+获得诺贝尔奖的底层小职员
+
 https://mp.weixin.qq.com/s/irMd_sRRwZhbTuIXo3na6Q
 
 今天，说一下人工钻石（钻石半导体）
@@ -204,6 +212,10 @@ https://mp.weixin.qq.com/s/5Ua1tXJ0Eytdh6gzVxXpeg
 https://mp.weixin.qq.com/s/uLt6v5s964BV6OJidBHMRA
 
 周立波吸冰毒被实锤，史上最滑稽的自杀式验毒
+
+https://mp.weixin.qq.com/s/ySR1dyDqMJ90VcrxFDjPgw
+
+不用洗的衣服来了！但这面料干净吗？
 
 ## 食品工业
 

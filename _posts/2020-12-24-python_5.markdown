@@ -123,6 +123,34 @@ https://www.zhihu.com/question/32703639
 
 为什么很多Python开发者写GUI不用Tkinter，而要选择PyQt和wxPython或其他？
 
+## Dear PyGui
+
+Dear PyGui是一个轻量级的GUI框架，可以利用GPU进行渲染。
+
+代码：
+
+https://github.com/hoffstadt/DearPyGui
+
+参考：
+
+https://mp.weixin.qq.com/s/t1DT7jyKj1moU1qnrn5GiQ
+
+好看又好用的GUI，你需要这七个Python必备库
+
+## Streamlit
+
+https://mp.weixin.qq.com/s/sZvawmQ1KH3b_hozAbeX9w
+
+如何用简单的Python为数据科学家编写Web应用程序？
+
+https://mp.weixin.qq.com/s/gVIVDR1pXdDArrZO56B86w
+
+如何用纯Python写Web应用？
+
+https://mp.weixin.qq.com/s/TV1MJfaOq27y2DVCGMuqhA
+
+用Pandas和Streamlit对时间序列数据集进行可视化过滤
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA
@@ -418,27 +446,3 @@ https://mp.weixin.qq.com/s/OT9yRMFsNowXBbwKqmzP-Q
 https://segmentfault.com/a/1190000000414339
 
 一行Python代码实现并行
-
-https://mp.weixin.qq.com/s/5xs1ivkrUAP_Rr9P-EMc5g
-
-代码优化指南：人生苦短，我用Python。这篇blog主要介绍了如何追踪Python脚本的CPU使用情况。
-
-https://mp.weixin.qq.com/s/HGH2e_0ocHv2VWsjOje9BQ
-
-程序员必知的Python陷阱与缺陷列表
-
-http://blog.csdn.net/linda1000/article/details/8315892
-
-单引号、双引号和三双引号的区别
-
-https://mp.weixin.qq.com/s/czqO4Lo1Jt9zqg2UKNlLYg
-
-手把手教你用Python创建微信聊天机器人
-
-https://mp.weixin.qq.com/s/nT4GLtDtJ1MUg8TBHBDf_A
-
-足不出户也能放风筝？OpenGL一招搞定！
-
-https://mp.weixin.qq.com/s/7KdH2Zx3ugK6DXn5SYewAw
-
-盘点Python加密解密模块hashlib的7种加密算法
