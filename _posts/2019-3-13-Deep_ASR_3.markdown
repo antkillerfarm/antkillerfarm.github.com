@@ -365,6 +365,10 @@ https://mp.weixin.qq.com/s/wRAc0Vzrdxqr-dqXqqYapw
 
 中文文本纠错算法--错别字纠正的二三事
 
+https://zhuanlan.zhihu.com/p/377983386
+
+流式语音识别原理和实现思路
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/jwV4glj8vIUKSelzeRrxSg
@@ -386,19 +390,3 @@ https://mp.weixin.qq.com/s/CVBSvQwnDqT-IVCZV7idog
 https://mp.weixin.qq.com/s/zWmJ3uXnFtXaI2BotoadHA
 
 从技术到产品，苹果Siri深度学习语音合成技术揭秘
-
-https://mp.weixin.qq.com/s/6xxXOx59lDZx0kUPb_ftBA
-
-漫谈语音合成之Char2Wav模型
-
-https://mp.weixin.qq.com/s/8e4bkyTJIxHZ1y95GshA0Q
-
-开源的语音合成系统WORLD介绍以及使用方法
-
-https://mp.weixin.qq.com/s/JSnyE2k7jqd5GR1lHA6WUg
-
-阿里巴巴Oral论文：用于语音合成的深度前馈序列记忆网络
-
-https://mp.weixin.qq.com/s/p_VjFwwDCu1i_ovUljaoVw
-
-阿里巴巴语音交互智能团队：基于线性网络的语音合成说话人自适应

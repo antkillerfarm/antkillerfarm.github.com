@@ -197,6 +197,10 @@ https://mp.weixin.qq.com/s/2da5ZgxPC1Z5VGb766FNCA
 
 程序员必须清楚的10个高级SQL概念！
 
+https://mp.weixin.qq.com/s/q86lPDWMM4NeIkQ4ilMwGg
+
+比开源快30倍的自研SQL Parser设计与实践
+
 ## Apache Kylin
 
 Apache Kylin是一个开源的分布式分析引擎，最初由eBay开发贡献至开源社区。它提供Hadoop之上的SQL查询接口及多维分析（OLAP）能力以支持大规模数据，能够处理TB乃至PB级别的分析任务，能够在亚秒级查询巨大的Hive表，并支持高并发。

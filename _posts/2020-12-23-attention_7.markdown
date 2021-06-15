@@ -187,6 +187,10 @@ https://mp.weixin.qq.com/s/bqvEeCyX8pqhJQfCUvUkEw
 
 # Transformer进阶
 
+https://mp.weixin.qq.com/s/MjCIAlDWyHPLj_sGSPc4rg
+
+复旦邱锡鹏组最新综述：A Survey of Transformers
+
 https://mp.weixin.qq.com/s/-Y7Qy-5aJNJ5bx8QJf3k2w
 
 Transformer及其变种
