@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十七）——问答系统, 李飞飞, RBM & DBN & Deep Autoencoder
+title:  深度学习（二十七）——问答系统, 李飞飞, RBM & DBM & DBN & Deep Autoencoder
 category: DL 
 ---
 
@@ -281,7 +281,7 @@ http://vision.stanford.edu/lijiali/
 
 http://zacklipton.com/
 
-# RBM & DBN & Deep Autoencoder
+# RBM & DBM & DBN & Deep Autoencoder
 
 ## RBM
 

@@ -9,7 +9,21 @@ category: AI
 
 # Machine Learning之Python篇
 
-## Jupyter（续）
+## Jupyter
+
+Jupyter是iPython的后继项目，它不仅支持python语言，还支持其他50多种交互式语言。成为目前最流行的交互式shell和数据文本交换格式。
+
+官网：
+
+https://jupyter.org/
+
+安装：
+
+`pip install jupyter`
+
+运行：
+
+`jupyter notebook`
 
 参见：
 
@@ -464,37 +478,3 @@ https://mp.weixin.qq.com/s/F6ePAQCYve4C8O9_0i9G5g
 https://mp.weixin.qq.com/s/Hci6ehO1DdvlLT8Be4U-Lw
 
 12个经典Python数据可视化库
-
-https://mp.weixin.qq.com/s/QalCxZxCQ3jSATsk-7mBIA
-
-如何用PYTHON绘制漂亮的地图？— FOLIUM作图工具介绍
-
-https://mp.weixin.qq.com/s/nLNHqP66VoTf_SmWkPgBxg
-
-Python Altair让可视化能互动
-
-https://mp.weixin.qq.com/s/wpxDGHBkeQW8orYRiyzDwQ
-
-这个Python库助力pandas智能可视化分析（LUX）
-
-## 参考
-
-https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg
-
-GitHub最著名的20个Python机器学习项目，值得收藏！
-
-http://old.sebug.net/paper/books/scipydoc/index.html
-
-用Python做科学计算
-
-https://pan.baidu.com/s/1qYPUHNQ
-
-小抄合集
-
-https://github.com/FavioVazquez/ds-cheatsheets
-
-更大的小抄合集
-
-https://mp.weixin.qq.com/s/1--i1OhxRNPvNnmP9bFo3g
-
-全机器学习和Python的27个速查表

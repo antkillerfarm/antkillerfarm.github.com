@@ -145,6 +145,18 @@ https://mp.weixin.qq.com/s/Vw6vuuyIoJJIzn04NzS5AQ
 
 被“天眼”改变的县城中学
 
+https://mp.weixin.qq.com/s/GLjXHV7aYQ77OoDuZfMXmQ
+
+黑洞偏振照片发布！
+
+https://mp.weixin.qq.com/s/3KqyXlt69-wkkacQpkZ6uw
+
+又有新消息！人类获取了M87黑洞的“指纹”
+
+https://mp.weixin.qq.com/s/qUCfrmnXBmm5LfdeU3GgxA
+
+时隔两载"黑洞"翻新：人类首次获得黑洞边缘的高清照片
+
 # SpaceX
 
 2018.2
@@ -280,14 +292,6 @@ https://mp.weixin.qq.com/s/0lDJiu1nyS0j1aj7C4tT-g
 小布什签署的美国航天发展规划，直接规定了要求NASA退出近地空间，要求他们重新带领美国航天天顶科技。与此同时，美国的商业航天开始全面崛起，后来大名鼎鼎的space-x，bigelow，blue origin大都从此时起步。
 
 奥巴马任期内美国商业航天的崛起就不必说了，经过全面扶植，space-x迅速成长为可以对抗任何一个国家发射市场的公司，在2018年甚至有能力挑战美国之外所有国家的总和。而NASA的焦点则全面转向深空，各种大型空间望远镜、昂贵的火星探测、木星土星探测，都达到人类历史上的巅峰。
-
-----
-
-https://news.qq.com/a/20180927/005739.htm
-
-离职能直接影响中国登月的人才，只配待在国企底层？
-
-据《财经》报道，从融资和估值来看，蓝箭航天、零壹空间、星际荣耀已经成为目前众多民营航天企业的第一梯队，备受市场的关注。除此之外，还包括翎客航天、星途探索、九州云箭、灵动飞天、深蓝航天等。
 
 ----
 

@@ -348,11 +348,3 @@ https://mp.weixin.qq.com/s/GTHiZZ0ox8GsYKseYfDiRw
 https://mp.weixin.qq.com/s/zNs4NikZ912R3V1ZT2DcTg
 
 黑洞---像极了爱情！
-
-https://mp.weixin.qq.com/s/GLjXHV7aYQ77OoDuZfMXmQ
-
-黑洞偏振照片发布！
-
-https://mp.weixin.qq.com/s/3KqyXlt69-wkkacQpkZ6uw
-
-又有新消息！人类获取了M87黑洞的“指纹”

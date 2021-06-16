@@ -261,6 +261,10 @@ https://zhuanlan.zhihu.com/p/355523266
 
 从SimCLR到BarLow Twins，一文了解自监督学习不断打脸的认知发展史
 
+https://mp.weixin.qq.com/s/WqUb9MY_3hVPRdxSl9BE1Q
+
+S4L: 半监督+自监督学习
+
 ## 对比学习
 
 https://mp.weixin.qq.com/s/r1uXn2jGsHZcZ8Nk7GnGFA

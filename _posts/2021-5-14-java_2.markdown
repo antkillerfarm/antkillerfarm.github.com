@@ -85,10 +85,6 @@ https://mp.weixin.qq.com/s/_sLQiyNm92n2LA5YMNTocQ
 
 Java字符串String那些事
 
-https://mp.weixin.qq.com/s/JNN95s42I-46rIo2Umtd4A
-
-Java日志体系权威总结
-
 https://mp.weixin.qq.com/s/8Cpl8PoAP1TI4y_cWYsA5A
 
 排名前16的Java工具类

@@ -225,6 +225,10 @@ http://logback.qos.ch
 
 上面三者可以组合使用（slf4j+log4j和slf4j+logback），它们的配置文件主要是logback.xml和log4j.properties。
 
+https://mp.weixin.qq.com/s/JNN95s42I-46rIo2Umtd4A
+
+Java日志体系权威总结
+
 ## Save/Load序列化对象
 
 代码：

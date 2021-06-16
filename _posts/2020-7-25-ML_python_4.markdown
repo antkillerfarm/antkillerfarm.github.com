@@ -9,6 +9,42 @@ category: AI
 
 # Machine Learning之Python篇
 
+## 可视化（续）
+
+https://mp.weixin.qq.com/s/QalCxZxCQ3jSATsk-7mBIA
+
+如何用PYTHON绘制漂亮的地图？— FOLIUM作图工具介绍
+
+https://mp.weixin.qq.com/s/nLNHqP66VoTf_SmWkPgBxg
+
+Python Altair让可视化能互动
+
+https://mp.weixin.qq.com/s/wpxDGHBkeQW8orYRiyzDwQ
+
+这个Python库助力pandas智能可视化分析（LUX）
+
+## 参考
+
+https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg
+
+GitHub最著名的20个Python机器学习项目，值得收藏！
+
+http://old.sebug.net/paper/books/scipydoc/index.html
+
+用Python做科学计算
+
+https://pan.baidu.com/s/1qYPUHNQ
+
+小抄合集
+
+https://github.com/FavioVazquez/ds-cheatsheets
+
+更大的小抄合集
+
+https://mp.weixin.qq.com/s/1--i1OhxRNPvNnmP9bFo3g
+
+全机器学习和Python的27个速查表
+
 https://mp.weixin.qq.com/s/8wI49YBAs7ckkYdc4B_WNQ
 
 14张思维导图读懂Python编程核心知识体系
@@ -372,35 +408,3 @@ https://mp.weixin.qq.com/s/goxciguoxcamTo2WyUd1Lg
 https://mp.weixin.qq.com/s/dQ75O2h1orGzKcaCSDWshQ
 
 自然语言处理是如何工作的？一步步教你构建NLP流水线
-
-https://mp.weixin.qq.com/s/dwxTla5iiYKvELrpbWf1yQ
-
-8个Python高效数据分析的技巧
-
-https://mp.weixin.qq.com/s/TYiqZvY25qxHcmEXRpqO5Q
-
-如何用Python做自动化特征工程
-
-https://mp.weixin.qq.com/s/lfkTryraR22INdPzR0sidg
-
-基于协同过滤的推荐系统实战
-
-https://mp.weixin.qq.com/s/n3gaWuJCt945ycmliJatpA
-
-python语音识别指南终极版
-
-https://mp.weixin.qq.com/s/pDTbiS8xFH0llUBaN1Mb_Q
-
-如何用Python写一个贪吃蛇AI
-
-https://mp.weixin.qq.com/s/WdYa7Q-yA-s_EO59YkYbqw
-
-7个基本机器学习算法Python实现
-
-https://mp.weixin.qq.com/s/EqLzNzzMcwq5SEyBoTsuug
-
-11种NLP文本预处理Python代码，简洁实用
-
-https://mp.weixin.qq.com/s/mCUdK4i6XGEyaWNCIWA-wQ
-
-集五福，我用Python

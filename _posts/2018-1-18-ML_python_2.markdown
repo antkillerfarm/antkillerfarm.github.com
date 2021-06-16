@@ -309,6 +309,10 @@ https://mp.weixin.qq.com/s/CJwgM-PZVMrUpco26ygtUA
 
 5分钟掌握Pandas GroupBy
 
+https://mp.weixin.qq.com/s/bCDXpr5yW5WFWyJSrOZpTw
+
+五种Pandas图表美化样式汇总
+
 ## Super Pandas
 
 https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw
@@ -444,19 +448,3 @@ ipython是一个python的交互式 shell，比默认的python shell 好用得多
 https://mp.weixin.qq.com/s/e7WBxoL_00EWi5G8Mz1L-w
 
 50个关于IPython的使用技巧，get起来！
-
-## Jupyter
-
-Jupyter是iPython的后继项目，它不仅支持python语言，还支持其他50多种交互式语言。成为目前最流行的交互式shell和数据文本交换格式。
-
-官网：
-
-https://jupyter.org/
-
-安装：
-
-`pip install jupyter`
-
-运行：
-
-`jupyter notebook`
