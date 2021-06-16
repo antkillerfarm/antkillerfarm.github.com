@@ -253,7 +253,7 @@ or
 
 使用：
 
-Press F1 and run the Remote-SSH: Open SSH Host... command.
+Press F1 and run the `Remote-SSH: Open SSH Host...` command.
 
 参考：
 
@@ -264,6 +264,10 @@ Remote-ssh服务器端vscode-server安装失败
 https://mp.weixin.qq.com/s/n7zyDFOeHd9K5oSKz7Zg9Q
 
 vsCode离线安装remote-ssh插件搭建远程开发环境
+
+## C/C++ IntelliSense失效
+
+检查`C_Cpp.IntelliSenseEngine`是否打开。
 
 ## 参考
 

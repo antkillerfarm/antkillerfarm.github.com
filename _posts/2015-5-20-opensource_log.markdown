@@ -89,6 +89,20 @@ svn的开端实际上和git是有区别的。这个项目从2000.3.1开始。但
 
 这个项目最初使用CVS管理代码，2009.8.12开始该用fossil管理代码。顺便提一句fossil使用sqlite作为对象存储的工具。
 
+Richard Hipp的其他作品还包括：
+
+Fossil：一个版本控制系统。
+
+https://fossil-scm.org/
+
+Lemon：一个语法解析器。
+
+https://www.sqlite.org/lemon.html
+
+Althttpd：一个webserver。
+
+https://sqlite.org/althttpd
+
 # 从git log看emacs的发展史
 
 很遗憾，早期的历史在log中，已经残缺不全了，

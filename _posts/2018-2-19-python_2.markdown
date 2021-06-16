@@ -170,7 +170,9 @@ New Style还可以这样玩：
 
 `'{name} {name} {age}'.format(name='John', age='two')`
 
-`print("{:.2f}".format(3.1415926));`
+`print("{:.2f}".format(3.1415926))`
+
+`print("{0: >50}".format(3.1415926))`
 
 有了上述的placeholder之后，参数也未必再需要按出现的顺序给了。相同的placeholder设置一次就行了。
 

@@ -189,6 +189,10 @@ https://mp.weixin.qq.com/s/v7m0I9o6QV6qKSQqnsMoRw
 
 共享两轮车供需算法浅谈
 
+https://mp.weixin.qq.com/s/Mc9vHkt--u3jyh5VZmA56Q
+
+如何消除多重共线性
+
 # 上古软件开发
 
 https://github.com/chrislgarry/Apollo-11
