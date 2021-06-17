@@ -9,6 +9,24 @@ category: technology
 
 # Mysql（续）
 
+## 模糊查询
+
+http://www.cnblogs.com/GT_Andy/archive/2009/12/25/1921914.html
+
+SQL模糊查询
+
+## 三种Join的区别
+
+left join(左联接)返回包括左表中的所有记录和右表中联结字段相等的记录。
+
+right join(右联接)返回包括右表中的所有记录和左表中联结字段相等的记录。
+
+inner join(等值连接)只返回两个表中联结字段相等的行。
+
+http://www.cnblogs.com/pcjim/articles/799302.html
+
+sql之left join、right join、inner join的区别
+
 ## 查询语句的执行顺序
 
 ![](/images/img3/sql.png)

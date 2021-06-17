@@ -65,6 +65,10 @@ https://mp.weixin.qq.com/s/WozN8-FdASaku0UKT9EQ3A
 
 机器学习实用指南
 
+https://mp.weixin.qq.com/s/Y8l6v7xI6rRkoQutgX6Jug
+
+机器学习面试必备CheatSheet
+
 https://mp.weixin.qq.com/s/tDn9_4-EFolRth87O-E4NA
 
 机器学习模型训练全流程！
@@ -432,3 +436,7 @@ https://mp.weixin.qq.com/s/7N6eDoEV8oEwUpP-zK1RpQ
 https://www.zhihu.com/question/28810567
 
 ELM算法相关
+
+https://mp.weixin.qq.com/s/uNUQl9fkL2CFyqDPMjcrdg
+
+提高回归模型精度的技巧总结

@@ -199,6 +199,10 @@ https://mp.weixin.qq.com/s/q86lPDWMM4NeIkQ4ilMwGg
 
 比开源快30倍的自研SQL Parser设计与实践
 
+https://mp.weixin.qq.com/s/1lBGVj2i5fwo9fMj6wJ47A
+
+如何科学破解慢SQL?
+
 ## Apache Kylin
 
 Apache Kylin是一个开源的分布式分析引擎，最初由eBay开发贡献至开源社区。它提供Hadoop之上的SQL查询接口及多维分析（OLAP）能力以支持大规模数据，能够处理TB乃至PB级别的分析任务，能够在亚秒级查询巨大的Hive表，并支持高并发。
@@ -364,15 +368,3 @@ https://mp.weixin.qq.com/s/gQAA2-YuvTHrL2IP8Bco6w
 https://mp.weixin.qq.com/s/Gm7S0a5VN9L57wlry4-t6w
 
 缓存关注点——先写DB还是“缓存”？
-
-https://mp.weixin.qq.com/s/q-R7kv4696LooHy3Hn-H1A
-
-分布式系统关注点——缓存背后的“毁灭种子”
-
-https://mp.weixin.qq.com/s/cUBSOGFfkWNu91r9agXszQ
-
-高并发系统三大利器之缓存
-
-https://mp.weixin.qq.com/s/NdnE4uiT_b7omDx_uBGAtg
-
-你可以说一下缓存击穿、穿透、雪崩的区别和解决方法吗？

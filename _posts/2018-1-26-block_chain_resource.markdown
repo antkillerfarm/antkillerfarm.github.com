@@ -137,6 +137,10 @@ https://mp.weixin.qq.com/s/NF1tQaOTFklGM5U9kQ7yKA
 
 终于把区块链的技术与应用讲清楚了
 
+https://mp.weixin.qq.com/s/Q3OkAAV_j3fThbBPiSM-cg
+
+弄明白HASH，你就弄明白区块链的一大半
+
 http://www.chinacloud.cn/show.aspx?id=24053&cid=22
 
 区块链与大数据究竟有着怎样的关系？
@@ -362,19 +366,3 @@ https://mp.weixin.qq.com/s/4lccUIoXrfWn_Za8xJXH-w
 https://mp.weixin.qq.com/s/TaHiX6uZiGt-K4Na1r7kcA
 
 社科院商法研究室赵磊：证券交易信用机制，从CSD到DLT
-
-https://mp.weixin.qq.com/s/V4PUZF7JkV9N_EkSCtql2w
-
-Facebook发币，AI大牛签署白皮书，Keras之父评价：没用
-
-https://mp.weixin.qq.com/s/DGx3Y3cu00QN-p-AjkNx7g
-
-深入剖析实现比特币减半的十五行代码
-
-https://mp.weixin.qq.com/s/rlTJVV0PXjII2YJYENlwlw
-
-数字人民币官宣内测，双离线支付 “碰一碰”完成 转账！四个城市抢先试点！
-
-https://mp.weixin.qq.com/s/J6yF8fzvhLK-kJcdFXBxJg
-
-马斯克投15亿，价值47000美元的比特币，其实是一群数学家搞出来的……

@@ -165,6 +165,10 @@ https://mp.weixin.qq.com/s/_OmRvwFmvuuOpBf7DQG8IA
 
 Python30个编程技巧
 
+https://mp.weixin.qq.com/s/jG9RYSn5Gia7E9GyYx1IqQ
+
+30段极简Python代码
+
 https://mp.weixin.qq.com/s/Y3ZV3phzkPGxHIvoT8Ez7Q
 
 53个Python经典面试题详解
