@@ -217,6 +217,10 @@ https://zhuanlan.zhihu.com/p/161540817
 
 RoI Pooling与RoI Align的区别
 
+https://mp.weixin.qq.com/s/SsKCrKiZU8d9L8CNQ6RUeQ
+
+从R-CNN到Mask R-CNN的思维跃迁
+
 # 花式U-NET
 
 本节主要摘抄自：
