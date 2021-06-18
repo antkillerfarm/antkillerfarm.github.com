@@ -356,6 +356,10 @@ https://mp.weixin.qq.com/s/3fmZs1sFNW4IGmtql4KsVQ
 
 邱锡鹏：自然语言处理中的预训练模型，90页ppt
 
+https://mp.weixin.qq.com/s/irb_-T1T9sthW888hP6L4w
+
+清华、复旦、人大联合推出43页预训练模型综述
+
 ## 预训练语言模型的前世今生
 
 https://mp.weixin.qq.com/s/1ixYjJN-bJPGrr7v-4d7Rw

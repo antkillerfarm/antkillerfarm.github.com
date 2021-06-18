@@ -67,6 +67,10 @@ https://mp.weixin.qq.com/s/9Q18rptRwV4Ccg33dD9BrQ
 
 操作所有的数据库靠它就够了（DBeaver）
 
+https://mp.weixin.qq.com/s/x2Rdw2iLuNzs4tN7rwfWvA
+
+这个工具牛逼了！将任何SQL数据库转换为智能电子表格（NocoDB）
+
 ## 数据湖
 
 数仓：“结构化”地存数据。典型代表：用Excel记账目。

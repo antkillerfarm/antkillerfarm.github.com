@@ -109,6 +109,10 @@ https://mp.weixin.qq.com/s/gzwXr8PpJ6g9CJYRnNlg2A
 
 浅析图像修复背后的核心技术
 
+https://mp.weixin.qq.com/s/oJ83gc75crZu_9yuF7TJLg
+
+基于微软开源深度学习算法，用Python实现图像和视频修复
+
 ## 大谷
 
 大谷1991年生于北京，获得了纽约视觉艺术学院电脑艺术硕士学位，艺术家，音乐家，程序员和独立的游戏设计师。

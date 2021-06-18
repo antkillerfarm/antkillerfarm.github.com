@@ -221,6 +221,10 @@ https://mp.weixin.qq.com/s/5gUm_xNkHGxpnUSgZaLmJw
 
 关于大数据，你应该知道的75个专业术语
 
+https://mp.weixin.qq.com/s/yX0hgIOLuaKsAcrWfOfcUQ
+
+一文带你理解云原生
+
 https://mp.weixin.qq.com/s/z3N5v4H_W2sxh2XPpFbAcA
 
 云端的SRE发展与实践

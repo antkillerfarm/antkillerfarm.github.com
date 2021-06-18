@@ -265,6 +265,10 @@ https://mp.weixin.qq.com/s/WqUb9MY_3hVPRdxSl9BE1Q
 
 S4L: 半监督+自监督学习
 
+https://mp.weixin.qq.com/s/1f1Ma2ZQVTuPo38_uCE0fQ
+
+大规模推荐系统的自监督学习
+
 ## 对比学习
 
 https://mp.weixin.qq.com/s/r1uXn2jGsHZcZ8Nk7GnGFA
