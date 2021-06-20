@@ -153,6 +153,10 @@ https://www.zhihu.com/answer/239825144
 
 ----
 
+抗联从此过，子孙不断头！
+
+----
+
 https://mp.weixin.qq.com/s/gF3Hv07zzLUQqGQzdYpzQw
 
 丢人丢大了！日本人给中国抗日神剧编了本书，正满世界传播！
