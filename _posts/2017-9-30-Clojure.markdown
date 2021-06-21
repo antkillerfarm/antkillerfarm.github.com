@@ -255,6 +255,21 @@ or
 
 Press F1 and run the `Remote-SSH: Open SSH Host...` command.
 
+----
+
+问题：
+
+```bash
+==== AUTHENTICATING FOR org.freedesktop.policykit.exec ===
+Authentication is needed to run '/home/danny/dev/tools/gdb' as the super user
+```
+
+解决：
+
+`sudo sysctl -w kernel.yama.ptrace_scope=0`
+
+----
+
 参考：
 
 https://blog.csdn.net/wyg1997/article/details/101460961

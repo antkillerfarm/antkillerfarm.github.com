@@ -339,6 +339,20 @@ https://www.cnblogs.com/cthon/p/9181979.html
 
 c++再探string之eager-copy、COW和SSO方案
 
+# sanitizers
+
+sanitizers是Google推出的调试工具。已集成到各主流编译器之中，无需安装。
+
+代码：
+
+https://github.com/google/sanitizers
+
+参考：
+
+https://zhuanlan.zhihu.com/p/257939964
+
+编译器自带的调试神器sanitizers
+
 # C/C++参考资源
 
 https://zhuanlan.zhihu.com/p/23016264

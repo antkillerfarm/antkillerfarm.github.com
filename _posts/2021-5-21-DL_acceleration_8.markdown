@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度加速（八）——模型压缩与加速进阶（2）
+title:  深度加速（八）——模型压缩与加速进阶（2）, 硬盘
 category: DL acceleration 
 ---
 
@@ -176,3 +176,75 @@ https://mp.weixin.qq.com/s/RVsXUnAJ2f0Cby7BPaWifA
 https://mp.weixin.qq.com/s/yCcK6UJqm850HON7xU3R6g
 
 模型压缩重要方向-动态模型，如何对其长期深入
+
+# 硬盘
+
+早期，磁带和硬盘驱动器的面密度相似。但由于的市场规模和硬盘销售收入的增加，为更大规模的研发工作提供了资金，这使得他们的制造商能够更积极地扩大存储密度。因此，大容量硬盘驱动器的当前面密度约为最新磁带驱动器的100倍。
+
+相比之下，磁带存储设备目前的区域密度远低于超顺磁极限。因此，磁带的摩尔定律可以持续十年或更长时间，而不会遇到基础物理学方面的障碍。
+
+参考：
+
+https://mp.weixin.qq.com/s/Fzu5YmWYxEohDJjmcGGjhQ
+
+为什么说，数据存储的未来属于磁带
+
+----
+
+https://zhuanlan.zhihu.com/p/34858149
+
+128G的固态硬盘为什么有的标120G，有的标100G？固态硬盘容量背后的秘密
+
+https://zhuanlan.zhihu.com/p/38847308
+
+为什么硬盘转速是5400或者7200这么奇怪的数字？7200转的硬盘一定比5400快吗？
+
+https://www.zhihu.com/answer/470917953
+
+Windows等操作系统是如何做到复制几G文件不出错的？
+
+https://zhuanlan.zhihu.com/p/53547723
+
+一篇文章告诉你SLC、MLC、TLC和QLC究竟有啥区别?
+
+https://zhuanlan.zhihu.com/p/92712620
+
+SLC、MLC、TLC、QLC究竟有什么不同
+
+https://zhuanlan.zhihu.com/p/71267390
+
+固态硬盘和u盘的区别
+
+https://mp.weixin.qq.com/s/7athL-OWrFSxMwxqvR73TA
+
+为了让你的硬盘资源能完好地传给曾曾曾孙，科学家想到了这些办法
+
+https://mp.weixin.qq.com/s/ChAfcT5xDgExiEXytTfynw
+
+关于存储技术的最强入门科普
+
+# CPU+
+
+https://mp.weixin.qq.com/s/_NcQ-PxNpEtpYdo450Uukg
+
+半导体材料全球格局
+
+https://zhuanlan.zhihu.com/p/114448236
+
+什么是Win10的“现代待机”？为什么它未来会越来越重要？这篇文章部分解释了我的第一个平板为什么那么耗电。
+
+https://mp.weixin.qq.com/s/J7RlmvU7JY1J8rV-eqjQ2A
+
+浅谈多核心CPU和SoC芯片及其工作原理
+
+----
+
+![](/images/img3/Memristor.png)
+
+https://mp.weixin.qq.com/s/k0u7pVzf7tjVF4UjZ3ai7A
+
+忆阻器的前世今生
+
+https://mp.weixin.qq.com/s/rSGRXfN4z3ElP7iQX1umjQ
+
+基于新型忆阻器的存内计算原理、研究和挑战

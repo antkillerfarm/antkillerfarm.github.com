@@ -65,6 +65,10 @@ https://mp.weixin.qq.com/s/MNRHzK0sz65U_QGGMYNe-A
 
 甚至经常把B.1.429叫做Califonia variant，经常把B.1.526叫做New York variant。
 
+https://www.who.int/en/activities/tracking-SARS-CoV-2-variants/
+
+Tracking SARS-CoV-2 variants
+
 ----
 
 https://mp.weixin.qq.com/s/hG0AO43AicEN1o4GGg463w
@@ -324,19 +328,3 @@ https://mp.weixin.qq.com/s/-C03P-I4w91kLSGsuhxAKQ
 https://mp.weixin.qq.com/s/gZCD8ATxGrpHSZLKpcHfiA
 
 基于元胞自动机模拟新型肺炎病毒的传播和预防
-
-https://mp.weixin.qq.com/s/ZOPncvPpFyLIwH_XChAdbg
-
-基于微分方程和元胞自动机模拟新型肺炎病毒的传播
-
-https://mp.weixin.qq.com/s/4w6CTGaKKEH9APVNH9Ue8w
-
-扩散信息、交通管制、自我隔离，哪个更能遏制病毒传播？
-
-https://mp.weixin.qq.com/s/tBoM9o3pK89bprK8npHLWA
-
-可能会说谎的地图！全国疫情地理格局的重新审视
-
-https://mp.weixin.qq.com/s/bVNkCHl7BPU_eEcAWksmww
-
-关于武汉新型冠状病毒肺炎的传播预测模型

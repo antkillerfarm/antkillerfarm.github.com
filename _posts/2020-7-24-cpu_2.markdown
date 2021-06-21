@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CPU(二), 硬盘
+title: CPU(二)
 category: resource 
 ---
 
@@ -114,6 +114,98 @@ LRU: least recently used
 https://mp.weixin.qq.com/s/AdmEd1FHxpZUwSGYy3qggg
 
 利用cpu缓存实现高性能程序
+
+## Jim Keller
+
+<table style="text-align:center" width="85%">
+  <tbody>
+    <tr>
+      <td colspan="5">Jim Keller: Work Experience</td>
+    </tr>
+    <tr>
+      <td colspan="2" rowspan="1"></td>
+      <td>Company</td>
+      <td>Title</td>
+      <td>Important<br />
+      Product</td>
+    </tr>
+    <tr>
+      <td><strong>1980s</strong></td>
+      <td><strong>1998</strong></td>
+      <td>DEC</td>
+      <td>Architect</td>
+      <td>Alpha</td>
+    </tr>
+    <tr>
+      <td><strong>1998</strong></td>
+      <td><strong>1999</strong></td>
+      <td>AMD</td>
+      <td>Lead Architect</td>
+      <td>K7, K8v1<br />
+      HyperTransport</td>
+    </tr>
+    <tr>
+      <td><strong>1999</strong></td>
+      <td><strong>2000</strong></td>
+      <td>SiByte</td>
+      <td>Chief Architect</td>
+      <td>MIPS Networking</td>
+    </tr>
+    <tr>
+      <td><strong>2000</strong></td>
+      <td><strong>2004</strong></td>
+      <td>Broadcom</td>
+      <td>Chief Architect</td>
+      <td>MIPS Networking</td>
+    </tr>
+    <tr>
+      <td><strong>2004</strong></td>
+      <td><strong>2008</strong></td>
+      <td>P.A. Semi</td>
+      <td>VP Engineering</td>
+      <td>Low Power Mobile</td>
+    </tr>
+    <tr>
+      <td><strong>2008</strong></td>
+      <td><strong>2012</strong></td>
+      <td>Apple</td>
+      <td>VP Engineering</td>
+      <td>A4 / A5 Mobile</td>
+    </tr>
+    <tr>
+      <td><strong>8/2012</strong></td>
+      <td><strong>9/2015</strong></td>
+      <td>AMD</td>
+      <td>Corp VP and<br />
+      Chief Cores Architect</td>
+      <td>Skybridge / K12<br />
+      (+ Zen)</td>
+    </tr>
+    <tr>
+      <td><strong>1/2016</strong></td>
+      <td><strong>4/2018</strong></td>
+      <td>Tesla</td>
+      <td>VP Autopilot<br />
+      Hardware Engineering</td>
+      <td>Fully Self-Driving<br />
+      (FSD) Chip</td>
+    </tr>
+    <tr>
+      <td><strong>4/2018</strong></td>
+      <td><strong>6/2020</strong></td>
+      <td>Intel</td>
+      <td>Senior VP<br />
+      Silicon Engineering</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td colspan="2" rowspan="1"><strong>2021</strong></td>
+      <td>Tenstorrent</td>
+      <td>President and CTO</td>
+      <td>TBD</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Other
 
@@ -312,73 +404,3 @@ https://mp.weixin.qq.com/s/O-2ecxYVOgEfRuwEoS7gRA
 Fab的那些事儿
 
 >Fab的全称叫Fabrication，也就是集成电路制造的工厂、车间。
-
-https://mp.weixin.qq.com/s/_NcQ-PxNpEtpYdo450Uukg
-
-半导体材料全球格局
-
-https://zhuanlan.zhihu.com/p/114448236
-
-什么是Win10的“现代待机”？为什么它未来会越来越重要？这篇文章部分解释了我的第一个平板为什么那么耗电。
-
-https://mp.weixin.qq.com/s/J7RlmvU7JY1J8rV-eqjQ2A
-
-浅谈多核心CPU和SoC芯片及其工作原理
-
-----
-
-![](/images/img3/Memristor.png)
-
-https://mp.weixin.qq.com/s/k0u7pVzf7tjVF4UjZ3ai7A
-
-忆阻器的前世今生
-
-https://mp.weixin.qq.com/s/rSGRXfN4z3ElP7iQX1umjQ
-
-基于新型忆阻器的存内计算原理、研究和挑战
-
-# 硬盘
-
-早期，磁带和硬盘驱动器的面密度相似。但由于的市场规模和硬盘销售收入的增加，为更大规模的研发工作提供了资金，这使得他们的制造商能够更积极地扩大存储密度。因此，大容量硬盘驱动器的当前面密度约为最新磁带驱动器的100倍。
-
-相比之下，磁带存储设备目前的区域密度远低于超顺磁极限。因此，磁带的摩尔定律可以持续十年或更长时间，而不会遇到基础物理学方面的障碍。
-
-参考：
-
-https://mp.weixin.qq.com/s/Fzu5YmWYxEohDJjmcGGjhQ
-
-为什么说，数据存储的未来属于磁带
-
-----
-
-https://zhuanlan.zhihu.com/p/34858149
-
-128G的固态硬盘为什么有的标120G，有的标100G？固态硬盘容量背后的秘密
-
-https://zhuanlan.zhihu.com/p/38847308
-
-为什么硬盘转速是5400或者7200这么奇怪的数字？7200转的硬盘一定比5400快吗？
-
-https://www.zhihu.com/answer/470917953
-
-Windows等操作系统是如何做到复制几G文件不出错的？
-
-https://zhuanlan.zhihu.com/p/53547723
-
-一篇文章告诉你SLC、MLC、TLC和QLC究竟有啥区别?
-
-https://zhuanlan.zhihu.com/p/92712620
-
-SLC、MLC、TLC、QLC究竟有什么不同
-
-https://zhuanlan.zhihu.com/p/71267390
-
-固态硬盘和u盘的区别
-
-https://mp.weixin.qq.com/s/7athL-OWrFSxMwxqvR73TA
-
-为了让你的硬盘资源能完好地传给曾曾曾孙，科学家想到了这些办法
-
-https://mp.weixin.qq.com/s/ChAfcT5xDgExiEXytTfynw
-
-关于存储技术的最强入门科普

@@ -9,6 +9,22 @@ category: COVID19
 
 # 疫情建模（续）
 
+https://mp.weixin.qq.com/s/ZOPncvPpFyLIwH_XChAdbg
+
+基于微分方程和元胞自动机模拟新型肺炎病毒的传播
+
+https://mp.weixin.qq.com/s/4w6CTGaKKEH9APVNH9Ue8w
+
+扩散信息、交通管制、自我隔离，哪个更能遏制病毒传播？
+
+https://mp.weixin.qq.com/s/tBoM9o3pK89bprK8npHLWA
+
+可能会说谎的地图！全国疫情地理格局的重新审视
+
+https://mp.weixin.qq.com/s/bVNkCHl7BPU_eEcAWksmww
+
+关于武汉新型冠状病毒肺炎的传播预测模型
+
 https://mp.weixin.qq.com/s/Lg1tJmO7aN9XNpZ6bs0cJA
 
 程序员硬核劝告：现在还不是出门的时候
