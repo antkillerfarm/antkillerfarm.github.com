@@ -338,3 +338,7 @@ https://mp.weixin.qq.com/s/NPsmZhAFKU6Ek34ekY92kA
 https://mp.weixin.qq.com/s/Dvn-41JpqKhSUKQC3Mg76A
 
 拆解1968年的美国军用电脑，真的怀疑是“穿越”啊！
+
+https://zhuanlan.zhihu.com/p/33914783
+
+法兰西科技史，超越时代的大工程、点歪的科技树

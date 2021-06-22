@@ -53,7 +53,7 @@ Euclidean division的定义扩展之后，则有Bézout's identity。
 
 $$m_0 = 3 , M_0 = 20 , ( − 1 ) 20 + 7 ( 3 ) = 1$$
 
->Étienne Bézout，1730~1783，法国数学家。法国科学院院士。
+>Étienne Bézout，1730~1783，法国数学家。法国科学院院士。拿破仑本人就使用过1781年Bézout版的炮兵数学教材。
 
 至于如何求解x,y，这就要用到**Extended Euclidean algorithm**了。
 
