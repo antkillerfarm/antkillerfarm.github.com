@@ -151,6 +151,10 @@ https://mp.weixin.qq.com/s/TV1MJfaOq27y2DVCGMuqhA
 
 用Pandas和Streamlit对时间序列数据集进行可视化过滤
 
+## 细节
+
+python有个叫做`attr`的包，还有一个叫做`attrs`的包，然而`import attr`实际上用的是`attrs`。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA

@@ -284,3 +284,11 @@ https://mp.weixin.qq.com/s/VSbzTh3xEbVdB4IgGJzQ3A
 https://mp.weixin.qq.com/s/2dbr4-dxRCJ_SLCQnrt8ag
 
 Linux内核调度器源码分析
+
+https://zhuanlan.zhihu.com/p/61407714
+
+Linux文件系统的未来btrfs
+
+https://linux.cn/article-7083-1.html
+
+如何选择文件系统：EXT4、Btrfs和XFS
