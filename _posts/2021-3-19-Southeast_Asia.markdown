@@ -174,21 +174,3 @@ https://mp.weixin.qq.com/s/ey3uNb3SAUR70A86-E1klg
 https://mp.weixin.qq.com/s/QSS7dIe1MeIOBu6tko9maQ
 
 美国人万万没想到，这个不起眼的留学生，将会成为中国雷达之父（毕德显）
-
-# 印度+
-
-https://mp.weixin.qq.com/s/P-iBxEOhDQfoGdMh9jbAFQ
-
-印度不仅士兵冻成冰雕，高原还用上了冰冻“水晶机枪”？
-
-https://mp.weixin.qq.com/s/513ErE8AUiB56KyhYJgo1w
-
-最疯狂的恐怖袭击，恐怖分子在全城乱窜，见人就杀，如同人间炼狱（印度孟买恐怖袭击）
-
-https://zhuanlan.zhihu.com/p/370607296
-
-莫迪，输了？
-
-https://zhuanlan.zhihu.com/p/376479497
-
-什么是孟加拉国？

@@ -292,3 +292,7 @@ Linux文件系统的未来btrfs
 https://linux.cn/article-7083-1.html
 
 如何选择文件系统：EXT4、Btrfs和XFS
+
+https://yanqiyu.info/2021/06/21/huawei-v-qwr/
+
+某不知名网友怒斥华为，究竟发生了什么
