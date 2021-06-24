@@ -178,7 +178,7 @@ gcc还可以用`__attribute__((packed))`
 #define st(x)      do { x } while (__LINE__ == -1)
 ```
 
-# C++ 11/14/17的新特性
+# C++ 11/14/17/20的新特性
 
 我是在2003年左右学习C++的，后来直到2009年以前，C++都是我的主要工作语言。但由于本人先学的C语言，所以编程的思想一直是函数式的。完成一项任务，无论用C、C++、Java、C#，还是Matlab、Python，风格都是差不多的。这也是后来我对GTK情有独钟的一个重要的原因。
 
@@ -244,7 +244,42 @@ C#
 
 `Func<int, int, int> towParams = (x, y) => x * y`
 
+```cpp
+// before 
+int8_t (*CreateLonglink)(const std::string& name, const std::string& host,
+ const std::vector<uint16_t> ports, const std::string& debugip)
+ = +[](const std::string& name,
+                         const std::string& host,
+                         const std::vector<uint16_t> ports,
+                         const std::string& debugip)->int8_t{
+   
+    ...
+    return 0;
+};
+// after
+auto CreateLonglink= +[](const std::string& name,
+                         const std::string& host,
+                         const std::vector<uint16_t> ports,
+                         const std::string& debugip)->int8_t{
+   
+    ...
+    return 0;
+};
+```
+
 5.using，extern
+
+```cpp
+//before
+struct Derive : public Base{
+    Derive(int a,char b,double c, std::string d,float f):Base(a,b,c,d,f){}
+};
+
+//after
+struct Derive : public Base{
+    using Base::Base;
+};
+```
 
 http://blog.csdn.net/cnsword/article/details/8034947
 
@@ -337,41 +372,6 @@ http://www.etalabs.net/compare_libcs.html
 当然这个表并不完整，其他的libc可以参见:
 
 https://en.wikipedia.org/wiki/C_standard_library
-
-# 数组定义时的赋值方法
-
-```c
-struct mtd_partition {
-	const char *name;		/* identifier string */
-	uint64_t size;			/* partition size */
-	uint64_t offset;		/* offset within the master MTD space */
-};
-
-static struct mtd_partition parts[] = {
-      {name: "boot", offset: 0,           size:0x500000,},
-      {name: "setting", offset: 0x500000, size:0x300000,},
-      {name: "linux", offset: 0x800000,   size:0x500000,}, 
-      {name: "config", offset: 0xd00000,   size:0x100000,},	
-      {name: "rootfs", offset: 0xe00000,  size:0x3200000,},
-      {name: "app", offset: 0x4e00000, size:0x800000,},
-
-};
-
-static struct resource pxa27x_resource_ohci[] = {
-	[0] = {
-		.start  = 0x4C000000,
-		.end    = 0x4C00ff6f,
-		.flags  = IORESOURCE_MEM,
-	},
-	[1] = {
-		.start  = IRQ_USBH1,
-		.end    = IRQ_USBH1,
-		.flags  = IORESOURCE_IRQ,
-	},
-};
-```
-
-这些方法虽然不知道是C的哪个标准引入的，但是见到有代码这样用。
 
 # switch...case
 

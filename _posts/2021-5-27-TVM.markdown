@@ -117,6 +117,10 @@ class BaseExpr : public ObjectRef;
 
 `XX->checked_type()`
 
+## Quantize
+
+![](/images/img4/TVM_QNN.png)
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/139552817

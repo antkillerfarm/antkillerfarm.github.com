@@ -394,6 +394,10 @@ tflite模型中间结果的导出，不是太方便，原因是相关内存被�
 
 https://stackoverflow.com/questions/57139676/savedmodel-tflite-signaturedef-tensorinfo-get-intermediate-layer-outputs
 
+https://blog.csdn.net/abc20002929/article/details/112529203
+
+tflite模型调试-中间层output输出
+
 这里还有一个非常Hack的方法，但是已经过时了：
 
 https://github.com/raymond-li/tflite_tensor_outputter/blob/master/tflite_tensor_outputter.py

@@ -339,6 +339,41 @@ https://www.cnblogs.com/cthon/p/9181979.html
 
 c++再探string之eager-copy、COW和SSO方案
 
+## 数组定义时的赋值方法
+
+```c
+struct mtd_partition {
+	const char *name;		/* identifier string */
+	uint64_t size;			/* partition size */
+	uint64_t offset;		/* offset within the master MTD space */
+};
+
+static struct mtd_partition parts[] = {
+      {name: "boot", offset: 0,           size:0x500000,},
+      {name: "setting", offset: 0x500000, size:0x300000,},
+      {name: "linux", offset: 0x800000,   size:0x500000,}, 
+      {name: "config", offset: 0xd00000,   size:0x100000,},	
+      {name: "rootfs", offset: 0xe00000,  size:0x3200000,},
+      {name: "app", offset: 0x4e00000, size:0x800000,},
+
+};
+
+static struct resource pxa27x_resource_ohci[] = {
+	[0] = {
+		.start  = 0x4C000000,
+		.end    = 0x4C00ff6f,
+		.flags  = IORESOURCE_MEM,
+	},
+	[1] = {
+		.start  = IRQ_USBH1,
+		.end    = IRQ_USBH1,
+		.flags  = IORESOURCE_IRQ,
+	},
+};
+```
+
+这些方法虽然不知道是C的哪个标准引入的，但是见到有代码这样用。
+
 # sanitizers
 
 sanitizers是Google推出的调试工具。已集成到各主流编译器之中，无需安装。
@@ -374,51 +409,3 @@ https://zhuanlan.zhihu.com/p/82895086
 https://mp.weixin.qq.com/s/pxyTlQn4wx-N_MaWZc0oAQ
 
 漫谈C++的各种检查
-
-https://mp.weixin.qq.com/s/LchYGGcSbIMVGxO0Uea0RA
-
-深入C++回调
-
-https://blog.csdn.net/hahahacff/article/details/39504699
-
-Java中创建对象的时候代码执行顺序(这个问题C++应该也存在)
-
-https://blog.csdn.net/msq19895070/article/details/7910969
-
-嵌入式程序员应知道的几个基本问题
-
-http://dev.yesky.com/393/3007393.shtml
-
-深入理解C++中的mutable关键字
-
-http://blog.csdn.net/apunix/archive/2008/01/14/2043945.aspx
-
-UNREFERENCED_PARAMETER的作用
-
-https://mp.weixin.qq.com/s/1ELGzBkIdO1xa6LZV80raQ
-
-C++中Future和Promise的一种简单实现
-
-https://www.zhihu.com/question/24301047
-
-如何理解C++11的六种memory order？
-
-https://mp.weixin.qq.com/s/en9T7WfQDvFan9tu1q8oRA
-
-c++11与内存模型
-
-https://mp.weixin.qq.com/s/2Lq93xPffOVZB8WvbkhCDg
-
-函数调用的三种约定，你都清楚吗
-
-https://mp.weixin.qq.com/s/m-dLZGAvY5BdVRfVWSpS2g
-
-C++11的异步操作不只是thread
-
-https://zhuanlan.zhihu.com/p/58976871
-
-编程风格之声明式与命令式的区别
-
-https://www.zhihu.com/question/447592340
-
-C语言的源程序是可以直接运行吗？（C语言的解释执行）
