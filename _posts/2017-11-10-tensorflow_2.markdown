@@ -398,9 +398,11 @@ https://blog.csdn.net/abc20002929/article/details/112529203
 
 tflite模型调试-中间层output输出
 
-这里还有一个非常Hack的方法，但是已经过时了：
+这里还有一个非常Hack的方法：
 
 https://github.com/raymond-li/tflite_tensor_outputter/blob/master/tflite_tensor_outputter.py
+
+这个脚本总体上过时了，跑起来有些问题。但是关键函数`buffer_change_output_tensor_to`仍然有效。
 
 ----
 
