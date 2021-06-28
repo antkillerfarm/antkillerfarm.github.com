@@ -149,6 +149,16 @@ https://www.zhihu.com/question/453969562
 
 如何评价4月11号《帝国时代4》前瞻发布会？
 
+----
+
+问题就出在了《暗黑破坏神2》，虽然看不懂英文，靠着乱点界面，还是摸索出了开始游戏的方法。玩到第二章以后就无论如何也打不过去了，准确的说是找不到最终BOSS。关注这个话题的人应该知道，第二章最后一个任务，需要合成一个法杖，通过这个法杖击毁一道墙以后，才能找到最终BOSS。但是，当年谁知道呢？满屏幕都是英文。
+
+当年，整个镇大概有十几号人都在玩这个游戏，不停的摸索，不停的试错，所有人都卡这里不动了，前后一共卡了将近一个月。
+
+https://www.zhihu.com/answer/1937966942
+
+《暗黑破坏神2》不抄作业能通关吗？
+
 ## NES
 
 本来NES是不能归类于PC Game的，但毕竟也是本人的童年记忆，就写一下了。
@@ -211,7 +221,7 @@ https://github.com/skywind3000/preserve-cd
 
 https://www.zhihu.com/zvideo/1358906505719336960
 
-一个War 3秘密的专栏
+一个讲述War 3秘密的专栏
 
 # 我的AI简史
 
@@ -264,49 +274,3 @@ https://www.zhihu.com/zvideo/1358906505719336960
 2019.8~2020.1 研究DRL。
 
 2020.4 研究PGM。
-
-# 数字成像+
-
-https://mp.weixin.qq.com/s/byeQKa7d5FSLS7JrBwP_Zw
-
-什么是多光谱/高光谱成像
-
-https://mp.weixin.qq.com/s/nz9NHdyhRqxdhYopFQ_5Ag
-
-红外热成像与快速发热病患检测
-
-https://mp.weixin.qq.com/s/Htn1Il96fus7s8NkD2_98w
-
-Google Pixel4相机解密(1)夜景
-
-https://mp.weixin.qq.com/s/2uNcJxU-USpb-LZkka__eQ
-
-剖析苹果的激光雷达及参数估计
-
-https://mp.weixin.qq.com/s/DLsmHtUz3gAXMdzNsUTyFA
-
-苹果的DTOF中的SPAD原理和特性
-
-https://mp.weixin.qq.com/s/S8Wda_orUyco43FzV0cEeQ
-
-紫边/紫晕与图像传感器的关系
-
-https://zhuanlan.zhihu.com/p/74085115
-
-深度学习在3-D环境重建中的应用
-
-https://mp.weixin.qq.com/s/k9gff0Ote_V9qtN7HAruBA
-
-工业相机的sensor
-
-https://mp.weixin.qq.com/s/kvINl4pL4_wD71e33jaUSg
-
-下一代cmos image sensor----有机光导薄膜图像传感器
-
-https://mp.weixin.qq.com/s/024h8tPvCPPUyuT53CCPWQ
-
-液态镜头的发展与应用
-
-https://mp.weixin.qq.com/s/0XlH3fFKZBfX3UMq7eTbYw
-
-什么是event camera

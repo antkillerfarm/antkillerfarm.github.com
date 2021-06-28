@@ -382,30 +382,6 @@ https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/lite/toc
 
 ----
 
-tflite模型中间结果的导出，不是太方便，原因是相关内存被复用。
-
-解决办法有两个：
-
-- 把想要dump的tensor设置为网络的output，然后转成tflite。
-
-- 修改tflite.invoke的代码，以导出中间结果。
-
-参考：
-
-https://stackoverflow.com/questions/57139676/savedmodel-tflite-signaturedef-tensorinfo-get-intermediate-layer-outputs
-
-https://blog.csdn.net/abc20002929/article/details/112529203
-
-tflite模型调试-中间层output输出
-
-这里还有一个非常Hack的方法：
-
-https://github.com/raymond-li/tflite_tensor_outputter/blob/master/tflite_tensor_outputter.py
-
-这个脚本总体上过时了，跑起来有些问题。但是关键函数`buffer_change_output_tensor_to`仍然有效。
-
-----
-
 tflite模型使用flatbuffers进行序列化，因此也可以使用flatbuffers解析相关模型。
 
 需要注意的是flatbuffers生成的代码，有两种版本：
@@ -419,6 +395,32 @@ tflite模型使用flatbuffers进行序列化，因此也可以使用flatbuffers�
 `bazel build //tensorflow/lite/tools:visualize`
 
 这个命令会生成一个schema_py_generated.py文件，也就是所谓的专业版本了。
+
+----
+
+tflite模型中间结果的导出，不是太方便，原因是相关内存被复用。
+
+解决办法有两个：
+
+- 把想要dump的tensor设置为网络的output，然后转成tflite。
+
+- 修改tflite.invoke的代码，以导出中间结果。
+
+参考：
+
+https://stackoverflow.com/questions/57139676/savedmodel-tflite-signaturedef-tensorinfo-get-intermediate-layer-outputs
+
+这里还有一个非常Hack的方法：
+
+https://github.com/raymond-li/tflite_tensor_outputter/blob/master/tflite_tensor_outputter.py
+
+这个脚本跑起来有些问题，需要配合专业版的schema_py_generated.py才能使用。
+
+https://blog.csdn.net/abc20002929/article/details/112529203
+
+tflite模型调试-中间层output输出
+
+----
 
 参考：
 
