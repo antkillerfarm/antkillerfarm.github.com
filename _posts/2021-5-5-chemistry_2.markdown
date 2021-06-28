@@ -275,6 +275,10 @@ https://mp.weixin.qq.com/s/pwWRC0ewE4GOxFAQ35pnZw
 
 掺假食品的泛滥
 
+https://www.zhihu.com/answer/925610213
+
+用铁做军粮罐头在战争期间是不是一种浪费？
+
 ## 化学工业
 
 https://wallstreetcn.com/articles/250536
@@ -296,19 +300,3 @@ http://www.pnchina.com/cn/Detail.aspx?id=1361250587
 https://new.qq.com/omn/20180819/20180819A011JT.html
 
 起于硝烟的化工帝国：杜邦是怎么与化工行业同呼吸共命运的？
-
-http://www.qdaily.com/articles/18872.html
-
-杜邦要合并了，过去一百年，这家公司的发明都改变了些什么？
-
-https://mp.weixin.qq.com/s/MkVeQ7xYAHV8mA1zmdr0qg
-
-四川五通桥事故频发：“化工围城”之殇
-
-https://mp.weixin.qq.com/s/jX9AMoQDTMZ8s2m_RFg0Pg
-
-这家马桶刷公司，生产了最早的现代人造圣诞树
-
-https://mp.weixin.qq.com/s/aUYieCVLLom7EaWIhfccRQ
-
-院士写了首《化工之歌》，聊聊化工那些事
