@@ -302,3 +302,27 @@ https://mp.weixin.qq.com/s/7I5OfGnGtXk2u9PtGLObCA
 https://spring.io/guides/gs/producing-web-service/
 
 http://localhost:9999/ws/countries.wsdl
+
+# WSL
+
+Cygwin：提供了兼容POSIX接口的应用层接口，性能不佳。
+
+MinGW：直接接Win32 API，只移植了GNU工具链，功能不全。
+
+MSYS2：MinGW+Cygwin部分工具包+pacman。
+
+WSL（Windows Subsystem for Linux），刚出来的时候叫“Bash on Ubuntu on Windows”：POSIX接口直接接到NT内核，性能超过Cygwin。
+
+WSL2：虚拟机，有独立的Linux内核。和VirtualBox之类类似。
+
+https://www.zhihu.com/question/50144689
+
+win10 linux子系统和cygwin有什么不同？
+
+https://mp.weixin.qq.com/s/ZCkboBBFYFm57pLEGftpCw
+
+双系统的日子结束了：Windows和Linux将合二为一
+
+https://zhuanlan.zhihu.com/p/57774611
+
+盘点与Cygwin相似和相反的项目

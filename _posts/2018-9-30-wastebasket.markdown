@@ -308,3 +308,7 @@ https://mp.weixin.qq.com/s/ey3uNb3SAUR70A86-E1klg
 https://mp.weixin.qq.com/s/QSS7dIe1MeIOBu6tko9maQ
 
 美国人万万没想到，这个不起眼的留学生，将会成为中国雷达之父（毕德显）
+
+https://zhuanlan.zhihu.com/p/109751703
+
+为了研究，他骨折14处（吴天一）

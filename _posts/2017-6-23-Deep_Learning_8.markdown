@@ -39,6 +39,10 @@ GLU一般用在NLP领域，它和CNN结合，也就是所谓的GCNN了。
 
 《Gaussian Error Linear Units (GELUs)》
 
+$$\text{GELU}\left(x\right) = x{P}\left(X\leq{x}\right) = x\Phi\left(x\right) = x \cdot \frac{1}{2}\left[1 + \text{erf}(x/\sqrt{2})\right]$$
+
+
+
 参考：
 
 https://mp.weixin.qq.com/s/pA9JW75p9J5e5KHe3ifcBQ
@@ -52,6 +56,14 @@ https://mp.weixin.qq.com/s/LEPalstOc15CX6fuqMRJ8Q
 https://kexue.fm/archives/7309
 
 GELU的两个初等函数近似是怎么来的
+
+https://zhuanlan.zhihu.com/p/349492378
+
+BERT中的激活函数GELU：高斯误差线性单元
+
+https://www.cnblogs.com/htj10/p/8621771.html
+
+正态分布（高斯分布）、Q函数、误差函数、互补误差函数
 
 ## Swish
 

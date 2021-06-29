@@ -7,13 +7,15 @@ category: technology
 * toc
 {:toc}
 
-# 前言
+# 从版本库看开源项目的发展史
+
+## 前言
 
 自从发现git和github之后，由于git方便的查看版本历史的功能，使我能够对一些著名开源项目的发展史有一定的了解。并以此为契机，一定程度的揭开开源项目的运作之谜。
 
 PS：不要提svn的版本历史，那个在局域网里查看还算方便，对于互联网的查看来说，即使只看最近1000条，也要耗费非常非常多的时间，而且还是每次查看都是这样费劲。
 
-# 从git log看linux的发展史
+## 从git log看linux的发展史
 
 linux稳定版本的git地址:
 
@@ -41,7 +43,7 @@ git://git.kernel.org/pub/scm/linux/kernel/git/tglx/history.git
 
 提交数量至662282。
 
-# 从git log看git的发展史
+## 从git log看git的发展史
 
 Linux源代码由于历史久远，最初的版本历史已不可考证，至少无法从git log考证。但git本身的历史，则是一笔笔的都记录在git log中。
 
@@ -67,7 +69,7 @@ https://mp.weixin.qq.com/s/hW4uTFF-TzBOAzfoupXINg
 
 源码解析：Git的第一个提交是什么样的？
 
-# 从git log看svn的发展史
+## 从git log看svn的发展史
 
 这个标题并没有错。众所周知的，svn查看修改历史是需要远程登录服务器的。而这对于一些历史悠久的版本库来说，简直是是个灾难。因此这里的log实际上是从Apache官方的git服务器上git下来的。
 
@@ -81,7 +83,7 @@ svn的开端实际上和git是有区别的。这个项目从2000.3.1开始。但
 
 顺便说一句，Mercurial只比git晚了10天诞生。可见那时候开源社区对于分布式版本控制系统的需求之迫切了。
 
-# 从git log看sqlite的发展史
+## 从git log看sqlite的发展史
 
 第一版发布于2000.5.29，已经有相当多的代码。
 
@@ -103,7 +105,7 @@ Althttpd：一个webserver。
 
 https://sqlite.org/althttpd
 
-# 从git log看emacs的发展史
+## 从git log看emacs的发展史
 
 很遗憾，早期的历史在log中，已经残缺不全了，
 
@@ -115,13 +117,21 @@ https://sqlite.org/althttpd
 
 当时这个项目使用RCS管理代码，这也是发展至今的诸多开源软件中很少见的一例。因为同时期大部分的软件，都已经成为了历史。而像emacs这样，至今仍然相当活跃的项目实在是凤毛麟角。
 
-# 从git log看SDL的发展史
+## 从git log看SDL的发展史
 
 SDL尽管使用广泛，但从代码来看基本上是Sam Lantinga的个人作品。
 
 Sam Lantinga早年创建了Loki Software，专门将Windows游戏移植到Linux平台上，SDL正是这个时期的产物。著名的《英雄无敌3》Linux版就是Loki Software制作的。
 
 后来他先后供职于Blizzard Entertainment和Valve Software，是暴雪的主力程序员之一。
+
+## Other
+
+Merico Build是一个代码分析工具，不但能统计开发者的相关信息，还能对开发者提交内容的质量打分。
+
+代码：
+
+https://github.com/merico-dev/build
 
 # WebKit
 
@@ -248,27 +258,3 @@ MSYS2提供了两套API：mingw32和mingw64。可用以下方法（以gcc为例�
 https://www.zhihu.com/question/22137175
 
 Cygwin和MinGW的区别与联系是怎样的？
-
-# WSL
-
-Cygwin：提供了兼容POSIX接口的应用层接口，性能不佳。
-
-MinGW：直接接Win32 API，只移植了GNU工具链，功能不全。
-
-MSYS2：MinGW+Cygwin部分工具包+pacman。
-
-WSL（Windows Subsystem for Linux），刚出来的时候叫“Bash on Ubuntu on Windows”：POSIX接口直接接到NT内核，性能超过Cygwin。
-
-WSL2：虚拟机，有独立的Linux内核。和VirtualBox之类类似。
-
-https://www.zhihu.com/question/50144689
-
-win10 linux子系统和cygwin有什么不同？
-
-https://mp.weixin.qq.com/s/ZCkboBBFYFm57pLEGftpCw
-
-双系统的日子结束了：Windows和Linux将合二为一
-
-https://zhuanlan.zhihu.com/p/57774611
-
-盘点与Cygwin相似和相反的项目
