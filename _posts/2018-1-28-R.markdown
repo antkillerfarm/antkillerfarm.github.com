@@ -25,7 +25,7 @@ https://r-forge.r-project.org/
 
 安装方法:
 
-`sudo apt-get install r-base r-base-dev`
+`sudo apt install r-base r-base-dev`
 
 书籍：
 
@@ -236,7 +236,7 @@ strDates <- as.character(dates)
 
 `install.packages`可以自动处理R依赖，然而它不能处理非R依赖。
 
-`sudo apt-get install libmysqlclient-dev`
+`sudo apt install libmysqlclient-dev`
 
 2.安装RMySQL包。
 

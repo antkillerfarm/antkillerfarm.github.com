@@ -119,7 +119,7 @@ uuencode and uudecode：支持二进制文件与Base64之间的转换。
 
 各大linux发行版都有自己的软件包管理工具。例如：
 
-| Debian/Ubuntu | apt-get |
+| Debian/Ubuntu | apt |
 | Red Hat/Fedora | yum/dnf |
 | SUSE/openSUSE | zypper |
 | Gentoo | emerge |

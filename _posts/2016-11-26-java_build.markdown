@@ -270,9 +270,9 @@ https://zeroc.com/downloads/ice
 wget https://zeroc.com/download/GPG-KEY-zeroc-release
 sudo apt-key add GPG-KEY-zeroc-release
 sudo apt-add-repository "deb http://zeroc.com/download/apt/ubuntu16.04 stable main"
-sudo apt-get update
-sudo apt-get install zeroc-ice-all-runtime zeroc-ice-all-dev
-sudo apt-get install libssl-dev
+sudo apt update
+sudo apt install zeroc-ice-all-runtime zeroc-ice-all-dev
+sudo apt install libssl-dev
 pip install zeroc-ice
 ```
 

@@ -151,15 +151,15 @@ onPause
 
 Froyo出来有一阵子了，一时兴起，从官网上git了代码，打算编译。不料根据出错信息得知，Froyo及其以后的版本需要64-bit的OS才能编译。所以只好重新安装64-bit的Ubuntu。
 
-按照官网上的步骤一步一步的做，然后卡在apt-get install sun-java5-jdk上了。出错信息告诉我，找不到这个包。Google了一下，找到以下解决方法：
+按照官网上的步骤一步一步的做，然后卡在`sudo apt install sun-java5-jdk`上了。出错信息告诉我，找不到这个包。Google了一下，找到以下解决方法：
 
 9.10/10.04 add ubuntu 9.04 line to you /etc/apt/sources.list
 
 ```bash
 deb http://us.archive.ubuntu.com/ubuntu/ jaunty multiverse
 deb http://us.archive.ubuntu.com/ubuntu/ jaunty-updates multiverse
-sudo apt-get update
-sudo apt-get install sun-java5-jdk
+sudo apt update
+sudo apt install sun-java5-jdk
 ```
 
 （注意安装会一直停留在阅读sun的同意书上，使劲按确定都没反应的（确定是文本不是按钮），后来按键盘Tab解决。）

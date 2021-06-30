@@ -263,11 +263,11 @@ http://spring.io/
 
 1.安装Eclipse
 
-`sudo apt-get install eclipse`
+`sudo apt install eclipse`
 
 2.安装Spring
 
-`sudo apt-get install libspring-web-portlet-java`
+`sudo apt install libspring-web-portlet-java`
 
 注意：ubuntu软件仓库中还有一个叫做spring的游戏引擎，不要弄错了。
 

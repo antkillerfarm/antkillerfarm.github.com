@@ -263,7 +263,7 @@ https://mp.weixin.qq.com/s/mcyljauYnyydePLPeshjhw
 
 ## 安装
 
-`sudo apt-get install mysql-server mysql-client mysql-workbench`
+`sudo apt install mysql-server mysql-client mysql-workbench`
 
 其中，mysql-workbench是一个查看mysql的GUI工具。
 

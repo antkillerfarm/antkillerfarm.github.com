@@ -441,7 +441,7 @@ ipython是一个python的交互式 shell，比默认的python shell 好用得多
 
 在较新的ipython版本中，添加了ipython notebook的功能，弥补了ipython shell下代码不易保存等缺点，并且在使用--pylab inline选项后，可以在代码执行后立即显示运行结果（包括图片，数据表格等），因此在数据分析中运用十分广泛。
 
-`sudo apt-get install ipython ipython-notebook`
+`sudo apt install ipython ipython-notebook`
 
 参考：
 

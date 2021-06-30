@@ -17,7 +17,7 @@ http://opencv.org/
 
 Ubuntu安装方法：
 
-`sudo apt-get install libopencv-dev python-opencv`
+`sudo apt install libopencv-dev python-opencv`
 
 >注意：这种方法安装的版本有些老，目前还是2.x。（2016.4）
 

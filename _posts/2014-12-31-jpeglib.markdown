@@ -93,11 +93,11 @@ https://www.jianshu.com/p/5e4b99586282
 
 安装 7zip：
 
-`sudo apt-get install p7zip`
+`sudo apt install p7zip`
 
 安装 rar:
 
-`sudo apt-get install rar unrar`
+`sudo apt install rar unrar`
 
 rar比较奇怪，压缩和解压是使用不同的包，这点和7zip是不一样的。
 
@@ -245,7 +245,7 @@ https://www.wireshark.org/
 
 ## 在ubuntu上的安装
 
-`sudo apt-get install wireshark`
+`sudo apt install wireshark`
 
 安装好了之后，还不能立即使用。需要给/usr/bin/dumpcap提升权限，才能使用WireShark的抓包功能。否则会出`no interfaces`的错误。
 

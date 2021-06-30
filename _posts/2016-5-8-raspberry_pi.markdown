@@ -172,7 +172,7 @@ Raspberry Pi默认支持SSH登录。这里我使用putty作为SSH客户端。
 
 VNC或者MS远程桌面都能登录Pi，这里使用VNC协议。
 
-Raspbian和Ubuntu一样，使用apt-get来安装软件包。但它默认使用的是国外的软件源，因此速度很慢。
+Raspbian和Ubuntu一样，使用apt来安装软件包。但它默认使用的是国外的软件源，因此速度很慢。
 
 我们首先在下面的网页中，查找适合的镜像软件源：
 
@@ -190,7 +190,7 @@ http://mirrors.ustc.edu.cn/raspbian/raspbian/
 
 安装TightVncServer：
 
-`sudo apt-get install tightvncserver`
+`sudo apt install tightvncserver`
 
 首次运行tightvncserver，会让你设置远程访问的密码。
 

@@ -401,7 +401,7 @@ https://gnu.org/software/octave/
 
 安装方法:
 
-`sudo apt-get install octave`
+`sudo apt install octave`
 
 ## spyder
 

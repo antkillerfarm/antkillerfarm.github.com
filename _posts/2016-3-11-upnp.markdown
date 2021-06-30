@@ -31,7 +31,7 @@ http://pupnp.sourceforge.net/
 
 安装方法：
 
-`sudo apt-get install libupnp-dev`
+`sudo apt install libupnp-dev`
 
 ![](/images/article/libupnp.png)
 

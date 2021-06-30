@@ -221,7 +221,7 @@ https://sourceforge.net/projects/math-atlas/
 
 安装：
 
-`sudo apt-get install libatlas-base-dev`
+`sudo apt install libatlas-base-dev`
 
 ## OpenBLAS
 

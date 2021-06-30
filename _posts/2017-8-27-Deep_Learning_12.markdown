@@ -9,6 +9,14 @@ category: DL
 
 # 花式卷积（续）
 
+https://www.jarvis73.com/2019/06/06/Convolution-Guide/
+
+Convolution Arithmetic for Deep Learning
+
+https://mp.weixin.qq.com/s/dR2nhGqpz7OdmxKPYSaaxw
+
+如何理解空洞卷积（dilated convolution）？
+
 https://mp.weixin.qq.com/s/CLFbhWMcat4rN8YS_7q25g
 
 这12张图生动的告诉你，深度学习中的卷积网络是怎么一回事？

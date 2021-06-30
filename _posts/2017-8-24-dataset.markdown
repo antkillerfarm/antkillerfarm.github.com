@@ -79,6 +79,12 @@ ImageNet的标签包含在图片的文件名中，具体的对应关系参见ima
 
 `space_shuttle`：该类别的真实名称。
 
+参考：
+
+https://blog.csdn.net/weixin_41770169/article/details/80482942
+
+ImageNet图像库1000个类别名称
+
 ## PASCAL VOC
 
 PASCAL VOC是一个标有物体类别和位置的图片库。

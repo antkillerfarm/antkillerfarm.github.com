@@ -96,14 +96,14 @@ VNC server on Ubuntu 18.04 Bionic Beaver Linux
 
 1.安装主题修改工具
 
-`sudo apt-get install unity-tweak-tool`
+`sudo apt install unity-tweak-tool`
 
 2.安装Mac OS X主题
 
 ```bash
 sudo add-apt-repository ppa:noobslab/themes
-sudo apt-get update
-sudo apt-get install mac-ithemes-v3 mac-icons-v3
+sudo apt update
+sudo apt install mac-ithemes-v3 mac-icons-v3
 ```
 
 3.Cairo Dock
@@ -112,7 +112,7 @@ sudo apt-get install mac-ithemes-v3 mac-icons-v3
 
 安装方法：
 
-`sudo apt-get install cairo-dock`
+`sudo apt install cairo-dock`
 
 Cairo Dock不仅具有类似Mac OS X的风格，还有其他的风格可供选择下载。比如我使用的是Chrome风格。
 
@@ -158,7 +158,7 @@ http://distrowatch.com/
 
 电子书阅读制作首推Calibre：
 
-`sudo apt-get install calibre`
+`sudo apt install calibre`
 
 Calibre支持的格式：
 
@@ -188,7 +188,7 @@ Ubuntu下面关于TFTP的程序，有三套：
 
 安装命令：
 
-`sudo apt-get install tftp-hpa tftpd-hpa`
+`sudo apt install tftp-hpa tftpd-hpa`
 
 # ASCII表情
 
@@ -258,7 +258,7 @@ https://www.cnblogs.com/schips/p/10141278.html
 
 GnuGo是一个著名的开源围棋软件，但是它只有文字界面。一般使用Quarry作为它的GUI。
 
-`sudo apt-get install quarry`
+`sudo apt install quarry`
 
 # Linux镜像文件
 
@@ -298,7 +298,7 @@ http://www.linux-mtd.infradead.org/
 
 安装方法：
 
-`sudo apt-get install mtd-utils`
+`sudo apt install mtd-utils`
 
 mtd-utils还可用于烧写分区。例如如下命令：
 

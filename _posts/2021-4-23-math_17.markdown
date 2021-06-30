@@ -7,6 +7,38 @@ category: math
 * toc
 {:toc}
 
+# 自适应滤波器
+
+《自适应滤波器原理（Adaptive Filter Theory）》，Simon Haykin著。
+
+## 基本估计
+
+三种基本的信息处理运算：
+
+**滤波（Filter）**：利用$$[0,t]$$的数据，来估计t时刻信息的运算过程。
+
+**平滑（Smoothing）**：利用$$[0,t]$$的数据，来估计$$t'(t'<t)$$时刻信息的运算过程。
+
+**预测（Prediction）**：利用$$[0,t]$$的数据，来估计$$t+\tau(\tau>0)$$时刻信息的运算过程。
+
+可见，滤波和预测是实时运算，而平滑是非实时运算。
+
+## Optimal Wiener Filters
+
+>Norbert Wiener，1894～1964，美国数学家，控制论之父。18岁获得Harvard博士。MIT教授。
+
+Wiener Filter主要用于**平稳状态下的线性滤波**。该滤波器在均方误差意义上是最优的。误差信号均方值相对于线性滤波器可调参数的曲线，称为**误差性能曲面**。该曲面的极小点即为Wiener solutions。
+
+根据滤波器的记忆能力，可将线性滤波器分为Finite Impulse Response和Infinite Impulse Response，分别代表有限记忆和无限长但衰减的记忆。
+
+在非平稳环境下，误差性能曲面随时间变化而变化，但只要输入数据的变化与算法学习率相比是慢的，则滤波器就能跟踪住。
+
+参考：
+
+https://blog.csdn.net/bluecol/article/details/46242355
+
+图像去模糊（维纳滤波）
+
 # 数学杂谈
 
 ![](/images/img4/sheep.png)
@@ -276,51 +308,3 @@ https://mp.weixin.qq.com/s/BCszlYgbgvKUSkpJCSRQxg
 https://mp.weixin.qq.com/s/R0nuIqlIefkEppr07Y8gnQ
 
 用一中学数学公式，中了14次彩票头奖，多国彩票规则因他改变
-
-https://mp.weixin.qq.com/s/FCysnxxWBFiGS027qCxHTw
-
-世界上最伟大的十大公式
-
-https://mp.weixin.qq.com/s/SlbWkTrO3UlWd15jrKYvdg
-
-史上最强律师，用代数暴力破解军事密码，无情吊打荷兰数学家，被誉为“代数学之父”（弗朗索瓦·韦达）
-
-https://mp.weixin.qq.com/s/_HnWeNxH6p2VAMC8tG2gFg
-
-斯坦福再出变态神人！竟用一个数学模型，暴力解开“掰手指”的奥秘！看完我跪了......
-
-https://mp.weixin.qq.com/s/Rw3O5MDbEIfgmWCVgFe95w
-
-五次方程的微分方程解法
-
-https://mp.weixin.qq.com/s/eYzhlrV822X8mHsOGgv1Qw
-
-如何计算一只鸡的表面积？看完中外神人的奇葩解法，我发誓下辈子不做理科生......
-
-https://mp.weixin.qq.com/s/bjmLnuS-L7-XFW0qt6npTg
-
-真实的虚数
-
-https://mp.weixin.qq.com/s/h4zko0P0IbKqBba60lomng
-
-小米价值200万新logo背后的数学
-
-https://mp.weixin.qq.com/s/7usiElPtYAt1DCBIv5BZ2Q
-
-多项式插值算法与回归算法
-
-https://mp.weixin.qq.com/s/0o6fjKlUJVHZ6Vb65bFjGg
-
-俄罗斯方块可以永无止境地玩下去吗？
-
-https://mp.weixin.qq.com/s/s58zFVWTp-Mo1pyfoUKo6Q
-
-“恶意版”俄罗斯方块游戏火了，永远给你不想要的方块，世界纪录才消掉31行
-
-https://mp.weixin.qq.com/s/CC77DL5RKhr5SekDyfqm3Q
-
-为什么我一唱歌，就有人说我的音乐是数学老师教的？
-
-https://mp.weixin.qq.com/s/oEhG7AaY_TAljvhhK5YfNA
-
-拉东变换与医学CT技术

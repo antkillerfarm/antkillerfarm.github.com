@@ -233,7 +233,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/upnp
 
 upnp-inspector是一个局域网内的UPNP协议的嗅探分析器。可充当DMC，推送多媒体数据到相关DLNA设备。安装方法如下：
 
-`sudo apt-get install upnp-inspector`
+`sudo apt install upnp-inspector`
 
 upnp-inspector的功能包括：
 

@@ -172,7 +172,7 @@ dill是pickle的威力加强版。
 
 Ubuntu下的安装方法是：
 
-`sudo apt-get install sqlite`
+`sudo apt install sqlite`
 
 Python自带了pysqlite包，用于调用sqlite。
 

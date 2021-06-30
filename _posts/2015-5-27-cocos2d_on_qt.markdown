@@ -313,29 +313,3 @@ APIDOC
 https://github.com/rigwild/apidoc-markdown
 
 https://github.com/apidoc/apidoc
-
-# 数学杂谈+
-
-https://mp.weixin.qq.com/s/9ZmyidQ888PiT7jbr7Zusg
-
-物理学家辞掉NASA工作玩折纸，竟被请回实验室“折卫星”（折纸几何学）
-
-https://zhuanlan.zhihu.com/p/54898983
-
-一道弹性碰撞的物理题，结果为什么会出现$$\pi$$？
-
-https://zhuanlan.zhihu.com/p/26645548
-
-支付宝集五福活动五福是随机给定的吗?
-
-https://mp.weixin.qq.com/s/QWlgwBhEoa-apvbnIToX9Q
-
-史上最牛逼的文科生：学历史成为物理学家，却获得了数学界的最高荣誉，出了350部书，外号火星人！（Edward Witten）
-
-https://mp.weixin.qq.com/s/CiAI2ZkM47-G3kiPrNOZtQ
-
-九大女数学家
-
-https://mp.weixin.qq.com/s/Ku42zXI_prpxujhDpuDK_g
-
-深痛哀悼数学家王元院士

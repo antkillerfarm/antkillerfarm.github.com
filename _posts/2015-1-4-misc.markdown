@@ -151,8 +151,8 @@ grub-install --root-directory=/mnt /dev/sda
 
 ```bash
 sudo add-apt-repository ppa:yannubuntu/boot-repair
-sudo apt-get update
-sudo apt-get install -y boot-repair
+sudo apt update
+sudo apt install -y boot-repair
 sudo boot-repair
 ```
 

@@ -115,7 +115,7 @@ C代码相关的内容：
 
 1）除了安装cscope还需要安装cscope-el，不然找不到xcscope.el
 
-`sudo apt-get install cscope-el cscope`
+`sudo apt install cscope-el cscope`
 
 2）xcscope.el的默认路径：/usr/share/emacs/site-lisp。安装好之后，还需要在配置文件~/.emacs（如果当前没有这个配置文件的话，直接创建一个即可）里面加上`(require 'xcscope)`。或者，如果希望在打开c或者c++文件的时候才加载xcsope，可以这样写：
 
@@ -201,7 +201,7 @@ http://ctags.sourceforge.net/
 
 1.安装GNU GLOBAL。
 
-`sudo apt-get install global`
+`sudo apt install global`
 
 GLOBAL中虽然有gtags.el，然而并不好用。这一点官网上也认为debian的包太老了。
 

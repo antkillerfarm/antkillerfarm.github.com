@@ -57,7 +57,7 @@ http://www.cs.berkeley.edu/~bh/logo.html
 
 2）按照源代码包里面readme的提示，编译之。提示缺少libbsd和libtermcap。
 
-3）`sudo apt-get install libbsd-dev libncurses5-dev`
+3）`sudo apt install libbsd-dev libncurses5-dev`
 
 重新编译即可。
 
@@ -474,7 +474,7 @@ PC上搭建Objective-C（以下简称OC）开发环境，主要借助GNUstep开�
 
 1.安装软件包。
 
-`sudo apt-get install gnustep-devel libjpeg-dev libtiff5-dev gobjc-4.9`
+`sudo apt install gnustep-devel libjpeg-dev libtiff5-dev gobjc-4.9`
 
 2.设置环境变量。
 

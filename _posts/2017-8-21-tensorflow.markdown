@@ -152,7 +152,7 @@ bazel编译相当消耗资源，在配置低的机器上，可通过如下选项
 
 GPU编译基本和CPU编译差不多，唯一需要注意的是：Ubuntu 16.04的gcc编译器是5.4.0，然而CUDA 8.0不支持5.0以上的编译器，因此需要降级，把编译器版本降到4.9。命令如下：
 
-`sudo apt-get install g++-4.9`
+`sudo apt install g++-4.9`
 
 configure脚本会询问使用什么版本的gcc，填`/usr/bin/gcc-4.9`即可。
 

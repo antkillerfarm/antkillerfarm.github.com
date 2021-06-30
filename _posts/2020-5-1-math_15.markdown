@@ -119,6 +119,28 @@ $$(y+5)(y-2)=0$$
 
 ----
 
+最近，黄冈再次因数学题而火爆网络。
+
+以下是2020黄冈中考数学第16题：
+
+![](/images/img4/huanggang.gif)
+
+求上图扇形一边的中点P，在扇形滚动一周的过程中，所经历的路径的长度。
+
+显然，第1，3，4段都是圆弧，难就难在第2段（绿色）了。这条曲线可不是那么好求的，普通的高数搞不定它。必须出动椭圆积分才行。
+
+https://www.zhihu.com/question/408523403
+
+如何解答2020黄冈中考数学第16题？
+
+>小学能接受1/3这种无限循环小数，初中能接受根号，高中能接受ln(2)，那大学的精确解为什么不能接受椭圆函数。
+
+https://mathworld.wolfram.com/EllipticIntegraloftheSecondKind.html
+
+Elliptic Integral of the Second Kind
+
+----
+
 https://mp.weixin.qq.com/s/FdHstCxJqQ4wYXSRDyqm5A
 
 不敢相信！这份民国时期大学入学考试试卷，竟让170位院士头疼！
@@ -305,35 +327,3 @@ Sophus是一个C++写的Lie Groups的库。显然，它得名自Marius Sophus Li
 代码：
 
 https://github.com/strasdat/Sophus
-
-# 自适应滤波器
-
-《自适应滤波器原理（Adaptive Filter Theory）》，Simon Haykin著。
-
-## 基本估计
-
-三种基本的信息处理运算：
-
-**滤波（Filter）**：利用$$[0,t]$$的数据，来估计t时刻信息的运算过程。
-
-**平滑（Smoothing）**：利用$$[0,t]$$的数据，来估计$$t'(t'<t)$$时刻信息的运算过程。
-
-**预测（Prediction）**：利用$$[0,t]$$的数据，来估计$$t+\tau(\tau>0)$$时刻信息的运算过程。
-
-可见，滤波和预测是实时运算，而平滑是非实时运算。
-
-## Optimal Wiener Filters
-
->Norbert Wiener，1894～1964，美国数学家，控制论之父。18岁获得Harvard博士。MIT教授。
-
-Wiener Filter主要用于**平稳状态下的线性滤波**。该滤波器在均方误差意义上是最优的。误差信号均方值相对于线性滤波器可调参数的曲线，称为**误差性能曲面**。该曲面的极小点即为Wiener solutions。
-
-根据滤波器的记忆能力，可将线性滤波器分为Finite Impulse Response和Infinite Impulse Response，分别代表有限记忆和无限长但衰减的记忆。
-
-在非平稳环境下，误差性能曲面随时间变化而变化，但只要输入数据的变化与算法学习率相比是慢的，则滤波器就能跟踪住。
-
-参考：
-
-https://blog.csdn.net/bluecol/article/details/46242355
-
-图像去模糊（维纳滤波）

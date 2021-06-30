@@ -15,7 +15,7 @@ category: linux
 
 2.安装必要的包
 
-`sudo apt-get install libtool autoconf automake gcc-multilib bison screen gcc g++ binutils patch bzip2 flex make gettext unzip libc6 git-core git build-essential libncurses5-dev zlib1g-dev gawk quilt asciidoc libz-dev zlib-bin lib32z1-dev`
+`sudo apt install libtool autoconf automake gcc-multilib bison screen gcc g++ binutils patch bzip2 flex make gettext unzip libc6 git-core git build-essential libncurses5-dev zlib1g-dev gawk quilt asciidoc libz-dev zlib-bin lib32z1-dev`
 
 包的内容根据OpenWRT和Ubuntu的版本的不同，而略有差异。比如最新的版本可能还需要libssl-dev包。不过这个比较简单，看出错信息就知道还需要什么包了。
 

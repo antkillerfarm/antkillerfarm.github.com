@@ -157,7 +157,7 @@ premake的缺点在于，它基本上是个人作品，全职开发人员太少�
 ```bash
 echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
 curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
-sudo apt-get update && sudo apt-get install bazel
+sudo apt update && sudo apt install bazel
 ```
 
 官网：

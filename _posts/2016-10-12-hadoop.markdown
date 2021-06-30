@@ -78,11 +78,11 @@ Hadoop之HDFS架构演进之路
 
 ## 编译
 
-Hadoop目前不在Ubuntu的官方软件仓库中，无法使用apt-get安装。使用源代码编译Hadoop的相关步骤，可在源码包的BUILDING.txt中找到。这里仅作为补遗之用。总的来说，如无必要还是直接下载bin包比较好，编译还是很麻烦的。
+Hadoop目前不在Ubuntu的官方软件仓库中，无法使用apt安装。使用源代码编译Hadoop的相关步骤，可在源码包的BUILDING.txt中找到。这里仅作为补遗之用。总的来说，如无必要还是直接下载bin包比较好，编译还是很麻烦的。
 
 ### 安装FindBugs
 
-Hadoop的大部分软件依赖，都可以使用apt-get安装。BUILDING.txt里已经写的很详细了。
+Hadoop的大部分软件依赖，都可以使用apt安装。BUILDING.txt里已经写的很详细了。
 
 FindBugs是一个Java代码的静态分析检查工具。它的官网：
 
@@ -92,7 +92,7 @@ http://findbugs.sourceforge.net/index.html
 
 1.源代码安装。下载源代码之后，运行`ant build`，然后设定相关路径，以供Hadoop使用。
 
-2.apt-get安装。FindBugs目前不在Ubuntu 14.04的软件仓库中，而在Ubuntu 15.10的软件仓库中，需要设置源方可安装。这种方法也需要设定相关路径，以供Hadoop使用。
+2.apt安装。FindBugs目前不在Ubuntu 14.04的软件仓库中，而在Ubuntu 15.10的软件仓库中，需要设置源方可安装。这种方法也需要设定相关路径，以供Hadoop使用。
 
 2.maven安装。
 

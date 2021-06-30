@@ -440,11 +440,11 @@ DosBox是Linux平台玩DOS老游戏的法宝。
 
 如果你只需要查看一个文本文件，并不对它做编辑，可以考虑下glogg。
 
-`sudo apt-get install glogg`
+`sudo apt install glogg`
 
 如果需要修改的话，可以使用JOE。
 
-`sudo apt-get install joe`
+`sudo apt install joe`
 
 # Linux知识图谱
 

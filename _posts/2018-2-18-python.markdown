@@ -33,7 +33,7 @@ https://pypi.python.org/pypi
 
 Ubuntu下的安装方法是：
 
-`sudo apt-get install python-pip`
+`sudo apt install python-pip`
 
 使用方法是：
 
@@ -173,7 +173,7 @@ distutils-extra在distutils的基础上做了扩展，提供诸如i18n之类的�
 
 安装方法:
 
-`sudo apt-get install python-distutils-extra`
+`sudo apt install python-distutils-extra`
 
 ### setuptools
 
@@ -185,7 +185,7 @@ https://pythonhosted.org/setuptools/setuptools.html
 
 安装方法:
 
-`sudo apt-get install python-setuptools`
+`sudo apt install python-setuptools`
 
 ### Easy Install
 
@@ -239,7 +239,7 @@ http://python-gtk-3-tutorial.readthedocs.org/en/latest/
 
 Ubuntu下，可以执行：
 
-`sudo apt-get install python-gi python3-gi`
+`sudo apt install python-gi python3-gi`
 
 Windows下，有个PyGObject for Windows项目，该项目的官网是：
 

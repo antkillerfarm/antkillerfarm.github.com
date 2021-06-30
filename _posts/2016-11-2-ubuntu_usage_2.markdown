@@ -33,7 +33,7 @@ Ubuntu 16.04正式发布（2016.4.21）之后，我第一时间下载了下来�
 
 这是一个ISP DNS导致的问题。其中一个解决方法：
 
-`sudo apt-get remove gvfs-backends`
+`sudo apt remove gvfs-backends`
 
 # Battle of Wesnoth
 
@@ -53,7 +53,7 @@ https://github.com/tualatrix/ubuntu-tweak
 
 安装依赖：
 
-`sudo apt-get install python-pip python-aptdaemon.gtk3widgets python-gi python-lxml libwebkitgtk-3.0-dev libgconf2-dev python-compizconfig libdbus-glib-1-dev python-dbus python-xdg python-cairo`
+`sudo apt install python-pip python-aptdaemon.gtk3widgets python-gi python-lxml libwebkitgtk-3.0-dev libgconf2-dev python-compizconfig libdbus-glib-1-dev python-dbus python-xdg python-cairo`
 
 2.BleachBit
 
@@ -63,7 +63,7 @@ https://github.com/tualatrix/ubuntu-tweak
 
 ## 清理安装包
 
-`sudo apt-get clean`
+`sudo apt clean`
 
 ## 清理旧内核
 
@@ -73,7 +73,7 @@ https://github.com/tualatrix/ubuntu-tweak
 
 2.删除旧内核
 
-`sudo apt-get purge linux-image-4.4.0-21-generic linux-headers-4.4.0-21`
+`sudo apt purge linux-image-4.4.0-21-generic linux-headers-4.4.0-21`
 
 智能版：
 
@@ -121,13 +121,13 @@ graphviz包括了以下工具：
 
 1.xdot
 
-`sudo apt-get install xdot`
+`sudo apt install xdot`
 
 这个工具功能简单，只能按照dot布局方式查看文件。
 
 2.kgraphviewer
 
-`sudo apt-get install kgraphviewer-dev`
+`sudo apt install kgraphviewer-dev`
 
 这个工具可以选择查看的布局方式。
 
@@ -141,9 +141,9 @@ graphviz包括了以下工具：
 
 `sudo add-apt-repository ppa:webupd8team/unstable`
 
-`sudo apt-get update`
+`sudo apt update`
 
-`sudo apt-get install go-mtpfs`
+`sudo apt install go-mtpfs`
 
 `sudo chown <user name> /media/mtp`
 
@@ -204,7 +204,7 @@ Linux下的远程桌面软件主要有RealVNC和rdesktop。前者支持VNC协议
 
 安装方法：
 
-`sudo apt-get install rdesktop`
+`sudo apt install rdesktop`
 
 使用方法：
 

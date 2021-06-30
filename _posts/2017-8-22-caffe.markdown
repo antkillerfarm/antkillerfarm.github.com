@@ -37,9 +37,9 @@ Ubuntu 17.04以后：
 
 不过由于DL进展比较快，自定义Layer的需求也是相当广泛，因此有必要掌握源代码编译的方法。
 
-`sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler`
+`sudo apt install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler`
 
-`sudo apt-get install --no-install-recommends libboost-all-dev`
+`sudo apt install --no-install-recommends libboost-all-dev`
 
 虽然Caffe支持CMake Build，但是定制化没有Make Build方便，所以我选择后者。
 

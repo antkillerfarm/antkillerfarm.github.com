@@ -35,7 +35,7 @@ http://gstreamer.freedesktop.org/documentation/plugins.html
 
 插件安装方法，以gst-plugins-base为例。
 
-`sudo apt-get install gstreamer1.0-plugins-base`
+`sudo apt install gstreamer1.0-plugins-base`
 
 除了上面列出的插件之外，目前的做法，更倾向于使用ffmpeg作为后端编解码库，尤其是编解码更复杂的视频文件。因此在0.10.x时代，提供了gstreamer0.10-ffmpeg插件，而1.x时代，则有gstreamer1.0-libav提供对avcodec、avformat等ffmpeg库的支持。
 
@@ -71,7 +71,7 @@ autovideosink：视频播放插件
 
 GStreamer提供了一个工具软件集——gstreamer-tools。其安装方法如下：
 
-`sudo apt-get install gstreamer-tools gstreamer1.0-tools`
+`sudo apt install gstreamer-tools gstreamer1.0-tools`
 
 它包括以下工具：
 
@@ -155,7 +155,7 @@ https://en.wikipedia.org/wiki/Playlist
 
 这里推荐EasyTag，但它只支持生成.m3u文件。它的安装方法：
 
-`sudo apt-get install easytag`
+`sudo apt install easytag`
 
 GStreamer本身不能处理播放列表文件。官方的插件库中也没有处理播放列表文件的插件。
 
@@ -177,7 +177,7 @@ https://developer.gnome.org/totem-pl-parser
 
 安装方法：
 
-`sudo apt-get install libtotem-plparser-dev`
+`sudo apt install libtotem-plparser-dev`
 
 代码示例参见：
 

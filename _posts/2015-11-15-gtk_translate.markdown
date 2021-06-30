@@ -73,7 +73,7 @@ https://github.com/antkillerfarm/gtk-doc-cn
 
 以Ubuntu为例，可用以下命令安装依赖软件包：
 
-`sudo apt-get install python python-pip fam gtk-doc-tools gnome-doc-utils`
+`sudo apt install python python-pip fam gtk-doc-tools gnome-doc-utils`
 
 框架需要初始化：
 

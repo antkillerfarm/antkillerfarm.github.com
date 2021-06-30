@@ -137,7 +137,7 @@ https://wiki.gnome.org/Projects/Rygel
 
 该项目用vala语言编写。Ubuntu中，可用以下命令安装环境：
 
-`sudo apt-get install valac`
+`sudo apt install valac`
 
 # DLNA环境搭建
 
@@ -177,7 +177,7 @@ DMS：ReadyMedia
 
 1.安装
 
-`sudo apt-get install minidlna`
+`sudo apt install minidlna`
 
 2.修改minidlna配置
 
@@ -191,7 +191,7 @@ DMR：gmediarender
 
 1.安装
 
-`sudo apt-get install gmediarender`
+`sudo apt install gmediarender`
 
 这里需要注意的是，gmediarender是在Ubuntu 14.10中添加到源里的，不过该软件包在Ubuntu 14.04下亦可正常运行。因此，安装的时候只要修改软件源的配置即可。
 

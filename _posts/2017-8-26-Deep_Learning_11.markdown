@@ -11,6 +11,20 @@ category: DL
 
 ## 分组卷积（续）
 
+![](/images/img2/ShuffleNet_2.png)
+
+上图是ShuffleNet的Unit结构图，DWConv表示depthwise convolution，GConv表示pointwise group convolution。a是普通的Deep Residual Unit，b的进化用以提高精度，c的进一步进化用以减少计算量。
+
+参考：
+
+https://blog.yani.io/filter-group-tutorial/
+
+A Tutorial on Filter Groups (Grouped Convolution)
+
+https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
+
+旷视科技提出新型卷积网络ShuffleNet，专为移动端设计
+
 https://mp.weixin.qq.com/s/0MvCnm46pgeMGEw-EdNv_w
 
 CNN模型之ShuffleNet
@@ -294,11 +308,3 @@ Convolution arithmetic
 http://deeplearning.net/software/theano_versions/dev/tutorial/conv_arithmetic.html
 
 Convolution arithmetic
-
-https://www.jarvis73.com/2019/06/06/Convolution-Guide/
-
-Convolution Arithmetic for Deep Learning
-
-https://mp.weixin.qq.com/s/dR2nhGqpz7OdmxKPYSaaxw
-
-如何理解空洞卷积（dilated convolution）？

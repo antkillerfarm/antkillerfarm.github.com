@@ -11,15 +11,15 @@ category: linux
 
 VMWare自带的VMWare tools在新版的Ubuntu上总是安装不上，其实解决方法也很简单。
 
-`sudo apt-get install linux-headers-virtual open-vm-dkms open-vm-tools（图形界面）`
+`sudo apt install linux-headers-virtual open-vm-dkms open-vm-tools（图形界面）`
 
 或
 
-`sudo apt-get install --no-install-recommends linux-headers-virtual open-vm-dkms open-vm-tools（命令行）`
+`sudo apt install --no-install-recommends linux-headers-virtual open-vm-dkms open-vm-tools（命令行）`
 
 # 如何以管理员身份操作Gnome的资源管理器--nautilus
 
-`apt-get install nautilus-gksu`
+`apt install nautilus-gksu`
 
 # 没有声音
 
@@ -33,7 +33,7 @@ VMWare自带的VMWare tools在新版的Ubuntu上总是安装不上，其实解�
 
 * install the dependencies:
 
-`sudo apt-get install build-essential libgtop2-dev libgtk-3-dev libappindicator3-dev git-core`
+`sudo apt install build-essential libgtop2-dev libgtk-3-dev libappindicator3-dev git-core`
 
 * create a folder for git_project and download the code.
 
@@ -109,19 +109,19 @@ Monkey's Audio，是一种常见的无损音频压缩编码格式，扩展名为
 
 2）Update the package index:
 
-`sudo apt-get update`
+`sudo apt update`
 
 3)Install GPG key of the repository:
 
-`sudo apt-get install deb-multimedia-keyring`
+`sudo apt install deb-multimedia-keyring`
 
 4)Install monkeys-audio deb package:
 
-`sudo apt-get install monkeys-audio`
+`sudo apt install monkeys-audio`
 
 5)安装shntool和flac包
 
-`sudo apt-get install shntool flac`
+`sudo apt install shntool flac`
 
 6)执行以下命令将ape切割成flac文件
 
@@ -137,7 +137,7 @@ Monkey's Audio，是一种常见的无损音频压缩编码格式，扩展名为
 
 devhelp每个版本放书的目录都不尽相同，一般如果安装了gtk的话，可以找找gtk-doc文件夹的位置，然后把书放到gtk-doc下。
 
-`sudo apt-get install libgtk-3-doc`
+`sudo apt install libgtk-3-doc`
 
 # Unity侧边栏快速启动的研究
 
@@ -225,13 +225,17 @@ apt是一套完整的软件包管理方案。除了最常用apt-get之外，还�
 
 添加新的软件源。
 
+有的源需要添加GPG Key：
+
+`wget -qO - http://deb.opera.com/archive.key | sudo apt-key add -`
+
 ## apt vs. apt-get
 
 在ubuntu14.04以后，apt逐渐取代apt-get，称为默认的软件升级工具。基本可以认为apt=apt-get+apt-cache。
 
 ## 软件包的网上查询
 
-使用apt-get获取软件虽然方便，但是从ubuntu的源获得的软件包和直接使用源码编译安装的包相比，包中的各个文件被分散在好多个文件夹中，查找起来很不方便。
+使用apt获取软件虽然方便，但是从ubuntu的源获得的软件包和直接使用源码编译安装的包相比，包中的各个文件被分散在好多个文件夹中，查找起来很不方便。
 
 这时可以到这个网址：
 
@@ -259,7 +263,7 @@ libupnp_1.6.19+git20160116-1.debian.tar.xz
 
 下载软件deb+未安装的依赖：
 
-`sudo apt-get --print-uris --yes -d --reinstall install <package name> | grep "http://" |  awk '{print$1}' | xargs -I'{}' echo {} | tee files.list`
+`sudo apt --print-uris --yes -d --reinstall install <package name> | grep "http://" |  awk '{print$1}' | xargs -I'{}' echo {} | tee files.list`
 
 `wget --input-file files.list`
 
@@ -267,7 +271,7 @@ libupnp_1.6.19+git20160116-1.debian.tar.xz
 
 `PACKAGES="<package name>"`
 
-`apt-get download ${PACKAGES} && apt-cache depends -i ${PACKAGES} | awk '/Depends:/ {print $2}' | xargs  apt-get download`
+`apt download ${PACKAGES} && apt-cache depends -i ${PACKAGES} | awk '/Depends:/ {print $2}' | xargs  apt download`
 
 2.安装deb包。
 
@@ -283,13 +287,13 @@ apt的cache路径为：/var/cache/apt/archives/
 
 参考：
 
-Ubuntu使用apt-get安装本地deb包
+Ubuntu使用apt安装本地deb包
 
 ## apt降级（downgrade）安装
 
 有的时候新的版本不好使的情况下，也可采用如下方式降级：
 
-`sudo apt-get install <pkg_name>=<version>`
+`sudo apt install <pkg_name>=<version>`
 
 ## dpkg
 

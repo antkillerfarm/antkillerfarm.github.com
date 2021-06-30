@@ -11,6 +11,18 @@ category: DL
 
 ## 总结（续）
 
+前深度学习时代的人脸识别的标准流程：
+
+第一步是人脸检测，其结果就是在图片中的脸部区域打一个矩形框。
+
+第二步是寻找眼睛、鼻子、嘴等特征点，目的是把脸对齐，也就是把眼鼻嘴放在近乎相同的位置，好像所有的脸都能“串成一串”一样，且只保留脸的中心区域，甚至连头发不要。
+
+第三步是光照的预处理，通过高斯平滑、直方图均衡化等来进行亮度调节、偏光纠正等。
+
+第四步是做Y=f(X)的变换。
+
+第五步，是计算两张照片得到的Y的相似程度，如果超过特定的阈值，就认定是同一个人。
+
 深度学习的到来对整个流程有一个巨大的冲击。
 
 一开始，研究者用深度学习完成人脸检测、特征点定位、预处理、特征提取和识别等每个独立的步骤。而后首先被砍掉的是预处理，我们发现这个步骤是完全不必要的。理论上来解释，深度学习学出来的底层滤波器本身就可以完成光照的预处理，而且这个预处理是以“识别更准确”为目标进行的，而不是像原来的预处理一样，以“让人看得更清楚”为目标。人的知识和机器的知识其实是有冲突的，人类觉得好的知识不一定对机器识别有利。
@@ -248,17 +260,3 @@ Grouped Convolution最早在AlexNet中出现，由于当时的硬件资源有限
 代码：
 
 https://github.com/megvii-model/ShuffleNet-Series
-
-![](/images/img2/ShuffleNet_2.png)
-
-上图是ShuffleNet的Unit结构图，DWConv表示depthwise convolution，GConv表示pointwise group convolution。a是普通的Deep Residual Unit，b的进化用以提高精度，c的进一步进化用以减少计算量。
-
-参考：
-
-https://blog.yani.io/filter-group-tutorial/
-
-A Tutorial on Filter Groups (Grouped Convolution)
-
-https://mp.weixin.qq.com/s/b0dRvkMKSkq6ZPm3liiXxg
-
-旷视科技提出新型卷积网络ShuffleNet，专为移动端设计

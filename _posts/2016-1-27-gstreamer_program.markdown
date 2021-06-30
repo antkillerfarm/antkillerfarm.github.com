@@ -237,9 +237,9 @@ Receiver:
 
 ## 开发环境搭建
 
-`sudo apt-get install libgstreamer1.0-dev`(1.x系列)
+`sudo apt install libgstreamer1.0-dev`(1.x系列)
 
-`sudo apt-get install libgstreamer0.10-dev`(0.10.x系列)
+`sudo apt install libgstreamer0.10-dev`(0.10.x系列)
 
 helloworld程序在
 

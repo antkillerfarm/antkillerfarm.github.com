@@ -168,7 +168,7 @@ https://github.com/aubio/aubio
 
 安装：
 
-`sudo apt-get install python3-aubio python-aubio aubio-tools libaubio-dev`
+`sudo apt install python3-aubio python-aubio aubio-tools libaubio-dev`
 
 aubio的fft结果是以极坐标的格式保存的，而LibROSA则是以平面坐标的格式保存的。
 

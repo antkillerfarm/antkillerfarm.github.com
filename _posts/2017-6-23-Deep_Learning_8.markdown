@@ -39,9 +39,21 @@ GLU一般用在NLP领域，它和CNN结合，也就是所谓的GCNN了。
 
 《Gaussian Error Linear Units (GELUs)》
 
-$$\text{GELU}\left(x\right) = x{P}\left(X\leq{x}\right) = x\Phi\left(x\right) = x \cdot \frac{1}{2}\left[1 + \text{erf}(x/\sqrt{2})\right]$$
+$$\text{GELU}(x)=x \Phi(x)$$
 
+其中$$\Phi(x)$$是标准正态分布的累积概率函数，即：
 
+$$\Phi(x)=\int_{-\infty}^x \frac{e^{-t^2/2}}{\sqrt{2\pi}}dt=\frac{1}{2}\left[1 + \text{erf}\left(\frac{x}{\sqrt{2}}\right)\right]$$
+
+上式中$$\text{erf}$$函数，也称为正态分布的误差函数。
+
+$$erf(x)=\frac{2}{\sqrt{ \pi}}\int_0^{x}e^{-t^2}dt$$
+
+这个积分无法用初等函数表示，所以通常使用以下的近似泰勒展开式：
+
+$$x\Phi(x)\approx x\sigma(1.702 x)$$
+
+$$x\Phi(x)\approx \frac{1}{2} x \left[1 + \tanh\left(\sqrt{\frac{2}{\pi}}\left(x + 0.044715 x^3\right)\right)\right]$$
 
 参考：
 
@@ -356,23 +368,3 @@ https://mp.weixin.qq.com/s/W4IqXMRZJbQ-7fGEF43-sA
 https://mp.weixin.qq.com/s/_CENjzEK1kjsFpvX0H5gpQ
 
 结合堆叠与深度转换的新型神经翻译架构：爱丁堡大学提出BiDeep RNN
-
-# CNN进化史
-
-## 计算机视觉
-
-6大关键技术：
-
-![](/images/article/computer_vision_2.jpg)
-
-**图像分类**：根据图像的主要内容进行分类。数据集：MNIST, CIFAR, ImageNet
-
-**物体定位**：预测包含主要物体的图像区域，以便识别区域中的物体。数据集：ImageNet
-
-**物体识别**：定位并分类图像中出现的所有物体。这一过程通常包括：划出区域然后对其中的物体进行分类。数据集：PASCAL, COCO
-
-**语义分割**：把图像中的每一个像素分到其所属物体类别，在样例中如人类、绵羊和草地。数据集：PASCAL, COCO
-
-**实例分割**：把图像中的每一个像素分到其所属物体实例。数据集：PASCAL, COCO
-
-**关键点检测**：检测物体上一组预定义关键点的位置，例如人体上或者人脸上的关键点。数据集：COCO
