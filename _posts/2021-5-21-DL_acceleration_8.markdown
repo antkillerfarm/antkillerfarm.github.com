@@ -222,29 +222,3 @@ https://mp.weixin.qq.com/s/7athL-OWrFSxMwxqvR73TA
 https://mp.weixin.qq.com/s/ChAfcT5xDgExiEXytTfynw
 
 关于存储技术的最强入门科普
-
-# CPU+
-
-https://mp.weixin.qq.com/s/_NcQ-PxNpEtpYdo450Uukg
-
-半导体材料全球格局
-
-https://zhuanlan.zhihu.com/p/114448236
-
-什么是Win10的“现代待机”？为什么它未来会越来越重要？这篇文章部分解释了我的第一个平板为什么那么耗电。
-
-https://mp.weixin.qq.com/s/J7RlmvU7JY1J8rV-eqjQ2A
-
-浅谈多核心CPU和SoC芯片及其工作原理
-
-----
-
-![](/images/img3/Memristor.png)
-
-https://mp.weixin.qq.com/s/k0u7pVzf7tjVF4UjZ3ai7A
-
-忆阻器的前世今生
-
-https://mp.weixin.qq.com/s/rSGRXfN4z3ElP7iQX1umjQ
-
-基于新型忆阻器的存内计算原理、研究和挑战

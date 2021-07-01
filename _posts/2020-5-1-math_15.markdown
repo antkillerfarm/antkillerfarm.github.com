@@ -139,6 +139,10 @@ https://mathworld.wolfram.com/EllipticIntegraloftheSecondKind.html
 
 Elliptic Integral of the Second Kind
 
+这里有个上面动图的GeoGebra版本：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/geogebra/huanggang.ggb
+
 ----
 
 https://mp.weixin.qq.com/s/FdHstCxJqQ4wYXSRDyqm5A

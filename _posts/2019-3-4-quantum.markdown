@@ -9,9 +9,15 @@ category: resource
 
 # 量子计算
 
+![](/images/img4/Quantum.png)
+
 https://www.zhihu.com/people/xuan-xing-29/posts
 
 某量子通信牛人的blog
+
+https://www.zhihu.com/column/p/378409297
+
+地表最强量子计算机汇总
 
 https://www.zhihu.com/question/28171555
 

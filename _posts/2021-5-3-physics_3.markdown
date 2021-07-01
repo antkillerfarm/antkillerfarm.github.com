@@ -39,6 +39,16 @@ https://mp.weixin.qq.com/s/Od7qigLUmYoW4Fgp_z9pVw
 
 ----
 
+可以直接拼起来。但是有前提，表面不能有异质成分隔离，特别是气体。暴露在空气中的断口，迅速就会吸附一层气体分子，是否氧化且不论。断口在极高真空环境中，加热使得气体脱附，断口就能粘连上，这个过程称为‘冷焊’。如果断面吻合好，可以联接很可靠。如果吻合不好，可以充分加压，保持，去应力。在外太空环境，冷焊很容易发生，有时候反而是个需要特别避免的问题。
+
+但是，当伽利略号顺利升空入轨之后，地面控制人员却发现这个天线没办法完全张开，它的18根伞肋骨中有3根被粘住了。分析的结论是这个由钼丝编织的天线表面镀了一层黄金，而黄金在火箭升空的过程中发生了冷焊，伞肋粘在一起再也没办法分开。
+
+https://www.zhihu.com/question/34674308
+
+金属断裂后为什么不能直接拼起来？
+
+----
+
 https://mp.weixin.qq.com/s/ZIHZ8W993OoW4X1apOGXjQ
 
 物理学发展史上有哪些重要的时刻？
@@ -334,43 +344,3 @@ https://mp.weixin.qq.com/s/FAG0mFIimWQ875oeshpAOA
 https://mp.weixin.qq.com/s/sVyC5sBUEJLfAzetL0Fl-Q
 
 什么是非平衡态热力学
-
-https://mp.weixin.qq.com/s/j_CzThfOnswvnXzwHSPGXw
-
-晶体管发明人曾在实验室受排挤，但没人能阻止他两获诺奖（John Bardeen）
-
-https://mp.weixin.qq.com/s/NFJK5OXANOhAuX-P9pWubA
-
-他16岁靠关系进入大学，32岁闻名全国，还被人写进教科书......（James Prescott Joule）
-
-https://mp.weixin.qq.com/s/pKS9laEkZkjruHclBAgoAw
-
-如何用乐高搭建一个宇宙？
-
-https://mp.weixin.qq.com/s/u9ofMRsjgKg_mQwQcDd6jg
-
-水下的声波：我坦白，我是弯的
-
-https://www.zhihu.com/question/447442889
-
-氧气比氮气重，在大气中为什么不会分层？
-
-https://mp.weixin.qq.com/s/8Zg-nXwMLDEQXe5gcEeq5Q
-
-质子内，有玄机
-
-https://mp.weixin.qq.com/s/9bJ0IxveIZlB0ROpGh4Q1Q
-
-论文如何能不水？先看看300多年前的论文长什么样
-
-https://mp.weixin.qq.com/s/f56K_wNUnMnncD23nVyiWQ
-
-这个理论是科学史上的奇迹（粒子物理学标准模型）
-
-https://mp.weixin.qq.com/s/Y6zjFQBche_tyOWF9VMtmg
-
-没有空调的夏天，古人到底要怎么熬呀！
-
-https://mp.weixin.qq.com/s/Snly1pFl6p4AuApc6lwsnA
-
-物理学家：只要做到这一点，科幻中的曲速引擎就能实现

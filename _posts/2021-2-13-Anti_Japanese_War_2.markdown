@@ -163,6 +163,10 @@ https://www.zhihu.com/answer/239825144
 
 ----
 
+吉星文指挥第29军219团在卢沟桥抗击日军二十余日。1958年8月23日，于金门炮战中被解放军炮火击中阵亡。
+
+----
+
 https://mp.weixin.qq.com/s/gF3Hv07zzLUQqGQzdYpzQw
 
 丢人丢大了！日本人给中国抗日神剧编了本书，正满世界传播！
