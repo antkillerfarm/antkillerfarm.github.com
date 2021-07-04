@@ -245,6 +245,10 @@ https://mp.weixin.qq.com/s/h3CBZt2KEA-ScXFSKHaRBg
 
 十个问题理解Linux epoll工作原理
 
+https://zhuanlan.zhihu.com/p/384098769
+
+从内核看epoll的实现（基于5.9.9）
+
 ## 参考
 
 https://mp.weixin.qq.com/s/EDzFOo3gcivOe_RgipkTkQ
