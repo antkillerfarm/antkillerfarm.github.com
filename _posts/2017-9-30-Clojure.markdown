@@ -197,6 +197,8 @@ Ubuntu：Ctrl + Shift + I
 
 列选择：Shift + Alt + 鼠标左键拖动
 
+注释代码：Ctrl + /
+
 搜索框中可以用上下按键翻搜索历史。
 
 查看数组内容：
