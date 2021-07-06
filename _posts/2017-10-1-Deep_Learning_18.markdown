@@ -311,6 +311,10 @@ https://mp.weixin.qq.com/s/jHVg-BMRRVNjAf6ZFEoPxQ
 
 自监督学习的SimCLRv2框架
 
+https://mp.weixin.qq.com/s/7iBC_n6EARW3V8bNuKUqQA
+
+Hinton团队力作：SimCLR系列
+
 https://mp.weixin.qq.com/s/sH-G4g0EyQLu2l91Xvdefw
 
 Neighbor2Neighbor：无需干净图像的自监督图像降噪

@@ -340,6 +340,10 @@ https://mp.weixin.qq.com/s/fYQwRJGrTlX4_GqMt_CYMQ
 
 时间序列基础教程总结
 
+https://mp.weixin.qq.com/s/f0BwjlsEBlFVDxNlZqgf-g
+
+Python时间序列分析：一项基于案例的全面指南
+
 # 辛普森悖论
 
 ![](/images/img2/Simpson.png)

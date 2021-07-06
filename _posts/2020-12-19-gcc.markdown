@@ -147,7 +147,7 @@ M2-Planet + mescc-tools：用先前的C子集制作的用于生成Mes的基础�
 
 - Mes部分
 
-Mes + MesCC → 一个修改过的TCC → GCC 4.7 → 现代的GCC
+Mes + MesCC -> 一个修改过的TCC -> GCC 4.7 -> 现代的GCC
 
 https://www.zhihu.com/question/441129390
 

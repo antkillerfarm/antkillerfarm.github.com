@@ -237,6 +237,10 @@ https://mp.weixin.qq.com/s/0wirImIdqgAFMIqrptNKwQ
 
 一个尚未解开的宇宙谜团（GZK极限）
 
+https://mp.weixin.qq.com/s/n5rYB_hiren0cxA_OymWtg
+
+“大变暗”谜题揭晓！
+
 ## 流浪地球
 
 https://mp.weixin.qq.com/s/O8tAEBMmZ29N1fr7BGW_UQ

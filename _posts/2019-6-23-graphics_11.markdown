@@ -412,3 +412,11 @@ https://mp.weixin.qq.com/s/Ud4f5L2tYNbP1oURVBszag
 https://mp.weixin.qq.com/s/iBgTyDiNNTUuuCgWJCyKig
 
 深度报告：GPU产业纵深及国产化替代
+
+## DPU
+
+如同GPU是针对图像显示领域的加速，DPU（Data Processing Unit）则是对于数据传输方面的加速。
+
+https://zhuanlan.zhihu.com/p/145142691
+
+什么是DPU？
