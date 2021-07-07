@@ -183,6 +183,26 @@ https://zhuanlan.zhihu.com/p/300861555
 
 随机图模型
 
+## 谱聚类
+
+谱聚类是从图论中演化出来的算法，后来在聚类中得到了广泛的应用。它的主要思想是把所有的数据看做空间中的点，这些点之间可以用边连接起来。距离较远的两个点之间的边权重值较低，而距离较近的两个点之间的边权重值较高，通过对所有数据点组成的图进行切图，让切图后不同的子图间边权重和尽可能的低，而子图内的边权重和尽可能的高，从而达到聚类的目的。
+
+http://www.cnblogs.com/pinard/p/6221564.html
+
+谱聚类（spectral clustering）原理总结
+
+https://mp.weixin.qq.com/s/DrD7aONVfN3Ibx4x6z-e3Q
+
+理解谱聚类
+
+https://zhuanlan.zhihu.com/p/266604288
+
+图中的谱聚类详解
+
+https://mp.weixin.qq.com/s/-knVcuS-GdbtyK63snrWog
+
+到底什么是谱聚类算法？
+
 ## Laplacian matrix
 
 https://mp.weixin.qq.com/s/iZLwlmBuXWrbpzvkm8nOrw
@@ -263,10 +283,6 @@ https://mp.weixin.qq.com/s/0Iih4TBYUIPY5R4LfWxUNQ
 
 10种常用的图算法直观可视化解释
 
-https://zhuanlan.zhihu.com/p/266604288
-
-图中的谱聚类详解
-
 https://mp.weixin.qq.com/s/0nC9Sc1xi9VBjyJSGtUfHA
 
 2020图核方法最新进展与未来挑战，151页pdf
@@ -318,39 +334,3 @@ https://blog.csdn.net/asialee_bird/article/details/79673418
 http://cjc.ict.ac.cn/online/onlinepaper/wzj-201672182158.pdf
 
 基于社交内容的潜在影响力传播模型
-
-## 链接预测
-
-Link Prediction是指如何通过已知的网络节点以及网络结构等信息预测网络中尚未产生连边的两个节点之间产生链接的可能性。这种预测既包含了对未知链接（exist yet unknown links）的预测也包含了对未来链接（future links）的预测。该问题的研究在理论和应用两个方面都具有重要的意义和价值。
-
-http://www.docin.com/p-810499317.html
-
-社交网络中的链接预测研究
-
-## 社区发现
-
-社区发现（Community Detection）算法用来发现网络中的社区结构，也可以视为一种广义的聚类算法。
-
-https://blog.csdn.net/itplus/article/details/9286905
-
-Community Detection算法
-
-https://www.zhihu.com/question/29042018
-
-社区发现(Community detection)的经典方法有哪些？该领域最新的研究进展如何？
-
-http://www.mapequation.org/index.html
-
-这是一个复杂网络方面的网站，提供了很多算法的代码。例如infomap
-
-https://www.cnblogs.com/nolonely/p/6262508.html
-
-社区发现算法总结（一）
-
-https://www.cnblogs.com/nolonely/p/6268150.html
-
-社区发现算法总结（二）
-
-https://sikasjc.github.io/2017/12/20/GN/
-
-GN算法--复杂网络中社区发现与Python实现

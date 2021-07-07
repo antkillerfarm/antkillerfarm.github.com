@@ -376,29 +376,3 @@ https://mp.weixin.qq.com/s/P1TIOrC8ve-6265dMz1nvQ
 https://mp.weixin.qq.com/s/GMr6SlkYUY5dydECpbjqXw
 
 常识性概念图谱建设以及在美团场景中的应用
-
-# Graph NN参考资源++
-
-https://mp.weixin.qq.com/s/Uy2ekBiwkI2sIo637b-16g
-
-北大、微软提出NGra：高效大规模图神经网络计算
-
-https://mp.weixin.qq.com/s/diIzbc0tpCW4xhbIQu8mCw
-
-阿里凑单算法首次公开！基于Graph Embedding的打包购商品挖掘系统解析
-
-https://mp.weixin.qq.com/s/chiHw5gKnJyTJTQeF6gViw
-
-在向量空间中启用网络分析和推理，清华大学崔鹏博士最新分享
-
-https://mp.weixin.qq.com/s/cNNj18i_SoPeJSu9lXf9Ng
-
-动态图表示学习，40页ppt，Dynamic Graph Representation Learning
-
-https://mp.weixin.qq.com/s/sdiu64GVPkhTjQ5sAIv94A
-
-图卷积神经网络理论基础：从傅里叶变换到图卷积
-
-https://mp.weixin.qq.com/s/jvMyNgxaJj3HAIMDK_jKUQ
-
-图挖掘与多关系学习：工具与应用，亚马逊与CMU-WWW2021教程，附161页ppt

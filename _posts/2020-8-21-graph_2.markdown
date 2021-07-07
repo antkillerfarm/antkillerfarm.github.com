@@ -1,15 +1,49 @@
 ---
 layout: post
-title:  Graph ML（二）——PageRank算法, 强连通分量算法
+title:  Graph ML（二）——PageRank算法
 category: graph 
 ---
 
 * toc
 {:toc}
 
-# 社交网络
+# 社交网络（续）
 
-## 社区发现（续）
+## 链接预测
+
+Link Prediction是指如何通过已知的网络节点以及网络结构等信息预测网络中尚未产生连边的两个节点之间产生链接的可能性。这种预测既包含了对未知链接（exist yet unknown links）的预测也包含了对未来链接（future links）的预测。该问题的研究在理论和应用两个方面都具有重要的意义和价值。
+
+http://www.docin.com/p-810499317.html
+
+社交网络中的链接预测研究
+
+## 社区发现
+
+社区发现（Community Detection）算法用来发现网络中的社区结构，也可以视为一种广义的聚类算法。
+
+https://blog.csdn.net/itplus/article/details/9286905
+
+Community Detection算法
+
+https://www.zhihu.com/question/29042018
+
+社区发现(Community detection)的经典方法有哪些？该领域最新的研究进展如何？
+
+http://www.mapequation.org/index.html
+
+这是一个复杂网络方面的网站，提供了很多算法的代码。例如infomap
+
+https://www.cnblogs.com/nolonely/p/6262508.html
+
+社区发现算法总结（一）
+
+https://www.cnblogs.com/nolonely/p/6268150.html
+
+社区发现算法总结（二）
+
+https://sikasjc.github.io/2017/12/20/GN/
+
+GN算法--复杂网络中社区发现与Python实现
 
 https://www.cnblogs.com/LittleHann/p/9078909.html
 
@@ -228,49 +262,3 @@ PageRank算法
 http://www.docin.com/p-1231683333.html
 
 有限不可约马尔可夫链的非周期状态
-
-http://www.docin.com/p-630952720.html
-
-马尔科夫链
-
-https://mp.weixin.qq.com/s/J9OmqFzQK-GS95FjgAJkTw
-
-浅析PageRank算法
-
-https://mp.weixin.qq.com/s/fGaEYvo3WYKdzA3r8l6O3g
-
-基于TextRank算法的文本摘要
-
-https://mp.weixin.qq.com/s/0ZNsP7sEfagZhjyaLZohSQ
-
-程序员拒绝单曲循环：曲子只有5分钟，也得不重样播放450多天
-
-https://mp.weixin.qq.com/s/TyOYhId90N0Cm7nw98nXMg
-
-PageRank、最小生成树：ML开发者应该了解的五种图算法
-
-https://mp.weixin.qq.com/s/4N14KhSjNt3_TvVzu4IrgQ
-
-抽取式摘要：TextRank和BertSum
-
-https://mp.weixin.qq.com/s/Q64r99Fxtut9_9hW9smL7g
-
-从PageRank到反欺诈与TextRank
-
-# 强连通分量算法
-
-http://ishare.iask.sina.com.cn/f/34626295.html
-
-矩阵不可约的充要条件
-
-http://www.cnblogs.com/saltless/archive/2010/11/08/1871430.html
-
-求强连通分量的Tarjan算法
-
-http://blog.csdn.net/dm_vincent/article/details/8554244
-
-求解强连通分量算法之---Kosaraju算法
-
-http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
-
-强连通分支算法--Kosaraju算法、Tarjan算法和Gabow算法

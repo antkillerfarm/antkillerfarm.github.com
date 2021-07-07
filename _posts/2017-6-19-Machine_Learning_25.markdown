@@ -101,18 +101,6 @@ http://lamda.nju.edu.cn/huangsj/dm11/files/gaoy.pdf
 
 # 聚类算法
 
-## 谱聚类
-
-http://www.cnblogs.com/pinard/p/6221564.html
-
-谱聚类（spectral clustering）原理总结
-
-https://mp.weixin.qq.com/s/DrD7aONVfN3Ibx4x6z-e3Q
-
-理解谱聚类
-
-## 参考
-
 https://mp.weixin.qq.com/s/xGPiaXTnQad3RcMwIELP4w
 
 流式聚类算法
