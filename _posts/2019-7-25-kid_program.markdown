@@ -228,6 +228,10 @@ https://mp.weixin.qq.com/s/N5wby-aWWEPc7mHN_lN3lQ
 
 手把手教你如何进行Golang单元测试
 
+https://mp.weixin.qq.com/s/SxaNLfGwM4dyzvBUvLAHvA
+
+写给想去字节写Go的你
+
 ## GTK
 
 熟悉我的朋友都知道，新语言的GTK demo是一定要有的。毕竟helloworld太简单了，容易让人产生从三到万的错觉。

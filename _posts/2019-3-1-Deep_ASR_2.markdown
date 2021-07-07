@@ -359,16 +359,6 @@ http://slides.com/smerity/reading-group-efficient-neural-audio-synthesis#/
 
 Efficient Neural Audio Synthesis
 
-# Attention Based
-
-https://mp.weixin.qq.com/s/4xUIF0tqKCnTMyfkVX1JJw
-
-​使用transformer模型进行流式自动语音识别
-
-https://mp.weixin.qq.com/s/TTPpOOxSLbCgOmAsI9TLiw
-
-百度发布Deep Voice 3：全卷积注意力机制TTS系统
-
 # 语音分离
 
 https://mp.weixin.qq.com/s/T96S0b7Lp9YWR4cRcMQr6A
@@ -387,12 +377,24 @@ https://mp.weixin.qq.com/s/-ULMtt2GsrUk8B-kC6AnXw
 
 入门语音分离，从鸡尾酒问题开始！
 
-# 语音识别参考资源
+# WeNet
 
-https://zhuanlan.zhihu.com/p/69637495
+WeNet是出门问问联合西北工业大学音频语音与语言处理研究组推出面向产品和工业界的端到端语音识别开源工具。
 
-语音转写技术入门
+代码：
 
-https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=400189223&idx=1&sn=1cb32bee42de626443ebadbf065ec79c
+https://github.com/wenet-e2e/wenet
 
-百度贾磊：汉语语音识别技术重大突破：LSTM+CTC详解
+参考：
+
+https://mp.weixin.qq.com/s/oR6AKKxsZ2WA9-D8e9rCWA
+
+WeNet 1.0正式发布: 更快更高更强更有生产力
+
+https://mp.weixin.qq.com/s/EqLCyHn9we2zn-lCnunDNA
+
+WeNet更新：支持多机并行训练
+
+https://mp.weixin.qq.com/s/QpTZSW2TZ1clEBt4iwoe4Q
+
+WeNet更新：支持语言模型

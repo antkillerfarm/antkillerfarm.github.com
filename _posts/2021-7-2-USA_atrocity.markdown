@@ -134,3 +134,7 @@ https://mp.weixin.qq.com/s/0v5V9BtRBzGslpbEsqaQfw
 https://zhuanlan.zhihu.com/p/146006523
 
 从1921塔尔萨大屠杀看文明的冲突
+
+https://mp.weixin.qq.com/s/58nFythOXkPIN6i0rUOHNg
+
+“冤枉！我没有通共！”读美国前助理国务卿福特的万言自白书

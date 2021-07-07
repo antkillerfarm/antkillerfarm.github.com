@@ -89,6 +89,10 @@ https://mp.weixin.qq.com/s/q6WWwNoXMDA3UI8XacYsBQ
 
 TCP：一个悲伤的故事
 
+https://mp.weixin.qq.com/s/dRojnN6BqCiTVG5edUvtMg
+
+面试官：换人！他连TCP这几个参数都不懂
+
 ## DNS
 
 https://mp.weixin.qq.com/s/DDk5YZv9Q7CaqdiKvQxZGQ
@@ -192,6 +196,10 @@ xxxxHub都用上了HTTP/2，它牛逼在哪？
 https://mp.weixin.qq.com/s/E4H3iQRoH0baybSPuGS7Fw
 
 我的HTTP/1.1好慢啊！
+
+https://mp.weixin.qq.com/s/gx5UCRcxG00YZq2Go_xsxQ
+
+HTTP请求之合并与拆分技术详解
 
 ## 参考
 

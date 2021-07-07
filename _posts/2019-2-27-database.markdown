@@ -351,6 +351,10 @@ https://zhuanlan.zhihu.com/p/273270802
 
 包教包会的用一张白纸推导出RAFT算法
 
+https://zhuanlan.zhihu.com/p/25664121
+
+比较raft ，basic paxos以及multi-paxos
+
 ## Cache
 
 **缓存雪崩**指大量缓存同一时间段集体失效，或者缓存整体不能提供服务，导致大量的请求全部到达数据库，对数据CPU和内存造成巨大压力，严重的会造成数据库宕机。也被称为缓存踩踏（Cache Stampede）。

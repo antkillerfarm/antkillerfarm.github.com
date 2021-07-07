@@ -182,7 +182,7 @@ gcc还可以用`__attribute__((packed))`
 
 我是在2003年左右学习C++的，后来直到2009年以前，C++都是我的主要工作语言。但由于本人先学的C语言，所以编程的思想一直是函数式的。完成一项任务，无论用C、C++、Java、C#，还是Matlab、Python，风格都是差不多的。这也是后来我对GTK情有独钟的一个重要的原因。
 
-总的来说，我对C++用的多，但理解的却不深。只对单继承、成员函数的封装、访问之类的概念有一定的认识和使用。多重继承、模板会看不会写。更不必提C++ 03和C++ 11的新特性了。最近因为研究Cocos2d-x，而接触到这些新特性，颇有些感觉到自己已经是老古董了.
+总的来说，我对C++用的多，但理解的却不深。只对单继承、成员函数的封装、访问之类的概念有一定的认识和使用。多重继承、模板会看不会写。更不必提C++ 03和C++ 11的新特性了。最近因为研究Cocos2d-x，而接触到这些新特性，颇有些感觉到自己已经是老古董了。
 
 不过好在Java语言用的还可以，大部分的C++新特性，学起来倒也难不倒我。
 
@@ -196,17 +196,35 @@ gcc还可以用`__attribute__((packed))`
 
 ----
 
-C++ 98标准到C++ 11标准之间长达13年的间隙，给了其他语言赶超并诟病C++的机会。一些厂商为了解决C++的问题，也加了不少私货，从而导致了版本兼容性的分裂。
+C++ 03标准到C++ 11标准之间长达8年的间隙，给了其他语言赶超并诟病C++的机会。一些厂商为了解决C++的问题，也加了不少私货，从而导致了版本兼容性的分裂。
 
 为了解决这个问题，C++标准委员会提出了新的版本发布策略：不再等待某项重要特性的成熟，再集体打包发布。而是成熟一项，发布一项。
 
 所以，可以预见的是，即使没有什么重要新特性，也一定会有C++ 20标准。
 
+当然了，从另一个角度来说，C++ 11有改天换地之效，而之后的升级则有些无足轻重了。
+
 ----
 
 https://mp.weixin.qq.com/s/lTu8OCecwe9iHIn82bWQaA
 
-现代C++教程：高速上手 C++11/14/17/20，82页pdf
+现代C++教程：高速上手C++11/14/17/20，82页pdf
+
+https://zhuanlan.zhihu.com/p/139515439
+
+c++11新特性，所有知识点都在这了！
+
+https://zhuanlan.zhihu.com/p/165389083
+
+C++14新特性的所有知识点全在这儿啦！
+
+https://zhuanlan.zhihu.com/p/165640868
+
+C++17新特性
+
+https://www.zhihu.com/answer/1813428455
+
+C++20有哪些值得注意的新特性？
 
 ----
 
@@ -360,18 +378,6 @@ abc.cpp:6:7: note: no known conversion for argument 1 from ‘Base’ to ‘Base
 可以参看下文：
 
 http://stackoverflow.com/questions/20247525/about-c-conversion-no-known-conversion-for-argument-1-from-some-class-to
-
-# 常用libc实现
-
-libc是C语言标准库的简称，它有多种实现。除了最常用的gcc自带的glibc之外，还有musl、uClibc、dietlibc等。
-
-http://www.etalabs.net/compare_libcs.html
-
-这个网址是以上4种libc实现的比较结果。从结果来看，musl比较有投资价值。实际上，最近（2015.5）的OpenWrt项目就已经将libc由uClibc改为musl。我也是因为这个原因，才知道musl的。
-
-当然这个表并不完整，其他的libc可以参见:
-
-https://en.wikipedia.org/wiki/C_standard_library
 
 # switch...case
 

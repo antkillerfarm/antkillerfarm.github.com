@@ -400,3 +400,11 @@ https://mp.weixin.qq.com/s/bzKGvD-nU4l1o-_bucvm0Q
 https://mp.weixin.qq.com/s/IQOp0Q8OLD9b6O28TgKodQ
 
 多目标排序在快手短视频推荐中的实践
+
+https://mp.weixin.qq.com/s/JOQdyQDCFStWXdxTckUa5Q
+
+一矢多穿：多目标排序在爱奇艺短视频推荐中的应用
+
+https://mp.weixin.qq.com/s/yctS5TWRCqc_h1Os4u-RBQ
+
+拼接召回在飞猪交通域的实践

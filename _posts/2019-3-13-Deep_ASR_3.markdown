@@ -7,7 +7,25 @@ category: speech
 * toc
 {:toc}
 
-# 语音识别参考资源（续）
+# Attention Based
+
+https://mp.weixin.qq.com/s/4xUIF0tqKCnTMyfkVX1JJw
+
+​使用transformer模型进行流式自动语音识别
+
+https://mp.weixin.qq.com/s/TTPpOOxSLbCgOmAsI9TLiw
+
+百度发布Deep Voice 3：全卷积注意力机制TTS系统
+
+# 语音识别参考资源
+
+https://zhuanlan.zhihu.com/p/69637495
+
+语音转写技术入门
+
+https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=400189223&idx=1&sn=1cb32bee42de626443ebadbf065ec79c
+
+百度贾磊：汉语语音识别技术重大突破：LSTM+CTC详解
 
 https://mp.weixin.qq.com/s/PXYt4FYWlldUmvryh53kVg
 
@@ -368,25 +386,3 @@ https://mp.weixin.qq.com/s/wRAc0Vzrdxqr-dqXqqYapw
 https://zhuanlan.zhihu.com/p/377983386
 
 流式语音识别原理和实现思路
-
-# 语音合成参考资源
-
-https://mp.weixin.qq.com/s/jwV4glj8vIUKSelzeRrxSg
-
-语音合成
-
-https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw
-
-SampleRNN语音合成模型
-
-https://mp.weixin.qq.com/s/xAO7mX64miTXE8E2vZ5q_w
-
-Facebook开源TTS神经网络VoiceLoop：基于室外声音的语音合成
-
-https://mp.weixin.qq.com/s/CVBSvQwnDqT-IVCZV7idog
-
-极限元语音算法专家刘斌：基于深度学习的语音生成问题
-
-https://mp.weixin.qq.com/s/zWmJ3uXnFtXaI2BotoadHA
-
-从技术到产品，苹果Siri深度学习语音合成技术揭秘

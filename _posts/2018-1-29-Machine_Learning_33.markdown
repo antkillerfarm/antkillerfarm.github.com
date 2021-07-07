@@ -288,3 +288,7 @@ https://mp.weixin.qq.com/s/CiAI2ZkM47-G3kiPrNOZtQ
 https://mp.weixin.qq.com/s/Ku42zXI_prpxujhDpuDK_g
 
 深痛哀悼数学家王元院士
+
+https://mp.weixin.qq.com/s/KTcrFSk0PEpnRrHzH_qlYw
+
+3800多条数学公式，都是他在梦里发现的？（Srinivasa Ramanujan）

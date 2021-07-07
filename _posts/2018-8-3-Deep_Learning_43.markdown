@@ -207,6 +207,10 @@ https://mp.weixin.qq.com/s/vKzsLLOT7dQNBQzxDTGw0g
 
 新垣结衣夫妇的孩子长啥样，用BabyGAN预测试试
 
+https://mp.weixin.qq.com/s/Wv1pCENMq9tUgef_RlQF9A
+
+想Get热搜同款？GitHub开源神器让父亲重返18岁！
+
 # Graph NN参考资源+++
 
 https://mp.weixin.qq.com/s/iQYVyo2PHuGbEsYgdIf_oQ
@@ -288,6 +292,10 @@ https://mp.weixin.qq.com/s/dZ1SUUNeZIZwH6uEcdlsDQ
 https://mp.weixin.qq.com/s/k3bHwxH_pgMat9pQkHzrww
 
 大规模图算法在京东广告的实践
+
+https://mp.weixin.qq.com/s/Aefh4A33ZhZf-pyHS3JAlg
+
+首篇NLP图神经网络综述！127页文档让你全面了解这个领域
 
 # Conv计算量分析
 

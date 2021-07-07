@@ -263,6 +263,10 @@ https://mp.weixin.qq.com/s/6Rr6640cZtSsNhErr4ezXQ
 
 从0梳理1场CV大赛（Top 3%）
 
+https://mp.weixin.qq.com/s/sFFJDGQY8kgDU-lXdngzeA
+
+算法模型调优指南
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA

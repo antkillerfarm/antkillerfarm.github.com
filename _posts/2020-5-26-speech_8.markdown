@@ -191,6 +191,26 @@ https://mp.weixin.qq.com/s/PXSsMyWeUCOxrzX-5wkp5g
 
 # 语音合成参考资源+
 
+https://mp.weixin.qq.com/s/jwV4glj8vIUKSelzeRrxSg
+
+语音合成
+
+https://mp.weixin.qq.com/s/bFjXDQlxRbt1ia-DSfYazw
+
+SampleRNN语音合成模型
+
+https://mp.weixin.qq.com/s/xAO7mX64miTXE8E2vZ5q_w
+
+Facebook开源TTS神经网络VoiceLoop：基于室外声音的语音合成
+
+https://mp.weixin.qq.com/s/CVBSvQwnDqT-IVCZV7idog
+
+极限元语音算法专家刘斌：基于深度学习的语音生成问题
+
+https://mp.weixin.qq.com/s/zWmJ3uXnFtXaI2BotoadHA
+
+从技术到产品，苹果Siri深度学习语音合成技术揭秘
+
 https://mp.weixin.qq.com/s/6xxXOx59lDZx0kUPb_ftBA
 
 漫谈语音合成之Char2Wav模型
@@ -376,23 +396,3 @@ https://mp.weixin.qq.com/s/EPstYM7u3O6mAWf3J5Lmkg
 https://mp.weixin.qq.com/s/0BBvsqLFP1qRvO3TUaS8Tw
 
 10个流行的可视化面板
-
-https://mp.weixin.qq.com/s/VqHN-cIdNa8l1lKlu4AD4w
-
-24种可视化图表优缺点对比
-
-https://mp.weixin.qq.com/s/4nIKkAPDrYaTE1sGtbCO9A
-
-不使用直方图的6个原因以及应该使用哪个图替代
-
-https://mp.weixin.qq.com/s/72wcShrcjuI0ne1zo8jzIQ
-
-这次气死的不只是设计师，一定要给你点颜色瞧瞧
-
-https://mp.weixin.qq.com/s/58Y-6CUYDVOp8y_jT4BmSw
-
-31个有点意思数据可视化作品
-
-https://mp.weixin.qq.com/s/RGAU6TzlhYTqKAGop_Hd1A
-
-最受欢迎的50个数据可视化图表

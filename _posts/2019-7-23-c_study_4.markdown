@@ -388,24 +388,14 @@ https://zhuanlan.zhihu.com/p/257939964
 
 编译器自带的调试神器sanitizers
 
-# C/C++参考资源
+# 常用libc实现
 
-https://zhuanlan.zhihu.com/p/23016264
+libc是C语言标准库的简称，它有多种实现。除了最常用的gcc自带的glibc之外，还有musl、uClibc、dietlibc等。
 
-这么多款STL，总有一款适合你
+http://www.etalabs.net/compare_libcs.html
 
-https://mp.weixin.qq.com/s/Hpn7KqYlBKz0JdryiozqyQ
+这个网址是以上4种libc实现的比较结果。从结果来看，musl比较有投资价值。实际上，最近（2015.5）的OpenWrt项目就已经将libc由uClibc改为musl。我也是因为这个原因，才知道musl的。
 
-每个开发者都应该了解的一些C++特性
+当然这个表并不完整，其他的libc可以参见:
 
-https://www.cnblogs.com/wuchanming/p/3913492.html
-
-emplace_back与push_back的区别
-
-https://zhuanlan.zhihu.com/p/82895086
-
-当我们谈论C++时，我们在谈论什么？
-
-https://mp.weixin.qq.com/s/pxyTlQn4wx-N_MaWZc0oAQ
-
-漫谈C++的各种检查
+https://en.wikipedia.org/wiki/C_standard_library

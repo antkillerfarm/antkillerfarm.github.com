@@ -227,6 +227,14 @@ https://zhuanlan.zhihu.com/p/386332176
 
 # 两弹一星++
 
+https://mp.weixin.qq.com/s/wcDiuHjtGgWjWdLRtJTpTg
+
+凤毛麟角：中国早期留美的数理同门女双杰（1912-1949年间，有14名中国女性赴英美留学，后来均成为杰出的物理学家，本文主人公王明贞和王承书就是其中的两位。）
+
+https://mp.weixin.qq.com/s/IQPiGqqad4YajaCu9bQhJw
+
+美国一再拒绝两个中国人的回国申请，有人道破天机：你们是重大威胁（王承书、张文裕）
+
 https://mp.weixin.qq.com/s/Ar-67u7UbPz5z2odN1YeQQ
 
 从被列强剥削，到成为发达国家“粉碎机”：中国付出了多少代价？

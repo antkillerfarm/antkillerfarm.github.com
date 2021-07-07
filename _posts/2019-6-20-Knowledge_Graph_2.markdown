@@ -373,6 +373,10 @@ https://mp.weixin.qq.com/s/P1TIOrC8ve-6265dMz1nvQ
 
 当推荐系统遇见知识图谱（二）
 
+https://mp.weixin.qq.com/s/GMr6SlkYUY5dydECpbjqXw
+
+常识性概念图谱建设以及在美团场景中的应用
+
 # Graph NN参考资源++
 
 https://mp.weixin.qq.com/s/Uy2ekBiwkI2sIo637b-16g
