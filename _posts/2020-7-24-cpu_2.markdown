@@ -9,7 +9,23 @@ category: resource
 
 # CPU
 
-## 历史（续）
+## 历史
+
+https://mp.weixin.qq.com/s/-2kGkJzjay2WJzIpMs2Adw
+
+IEEE盘点27款震撼世界的芯片
+
+https://mp.weixin.qq.com/s/KhY-PPdvZ26Uy8xEgi70DA
+
+纪念晶体管诞生71周年——改变世界30款芯片大阅兵！
+
+http://m.uczzd.cn/webview/news?aid=15020380163392206798
+
+你所不知道的经典科技发展史: 以前CPU是如何设计出来的
+
+https://mp.weixin.qq.com/s/Lnolh9y0rf86wOGa-F1xmw
+
+计算机的诞生史
 
 https://mp.weixin.qq.com/s/f_rk-NPKNzYpbHOr5bgluw
 
@@ -378,29 +394,3 @@ AMD Zen 2处理器架构为何要如此设计？
 https://mp.weixin.qq.com/s/dRv4xWV8laCYBaZ0DwOC3A
 
 如何从零开始设计一颗芯片？
-
-https://mp.weixin.qq.com/s/eAzdtKvfw7EVz5Ax3nXeZg
-
-自己动手设计专用处理器
-
-https://mp.weixin.qq.com/s/NfNJVoAC5aW1sgToAmYsGw
-
-3nm芯片终结者
-
-https://mp.weixin.qq.com/s/o8C6n-ZRw3vFS8E-hikXJQ
-
-移动的王者：深入分析ARM最强处理器Cortex A77
-
-https://www.cnblogs.com/f-ck-need-u/p/11141636.html
-
-关于CPU的一些基本知识总结
-
-https://mp.weixin.qq.com/s/vTOGmcahRxQBH8RgkTJ2GA
-
-中文系同学都能听懂的集成电路设计流程
-
-https://mp.weixin.qq.com/s/O-2ecxYVOgEfRuwEoS7gRA
-
-Fab的那些事儿
-
->Fab的全称叫Fabrication，也就是集成电路制造的工厂、车间。

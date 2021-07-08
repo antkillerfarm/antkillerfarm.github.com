@@ -275,6 +275,12 @@ https://mp.weixin.qq.com/s/FVcmCvimpoGCtCtm4RDtUg
 
 上图是NUMA（Non-Uniform Memory Access）的结构图。可以看到CPU和一部分内存直接相连，而和其他内存通过总线相连。如果我们把局部数据放到直连内存上，CPU显然就能够更快速的访问数据。
 
+与NUMA相关的还有一个著名的BUG：
+
+https://zhuanlan.zhihu.com/p/387117470
+
+十年后数据库还是不敢拥抱NUMA？
+
 参考：
 
 https://software.intel.com/en-us/articles/optimizing-applications-for-numa
@@ -330,21 +336,3 @@ https://mp.weixin.qq.com/s/AW08yhPzBZqfys8CbOjrYg
 北桥芯片则是整个主板的数据交换中枢，整合有内存控制器以及AGP/PCI-E控制器等重要的控制功能，CPU、GPU与内存之间的数据交换都要通过北桥芯片进行；
 
 南桥芯片则用于扩展外围I/O接口，例如SATA和USB接口等。
-
-## 历史
-
-https://mp.weixin.qq.com/s/-2kGkJzjay2WJzIpMs2Adw
-
-IEEE盘点27款震撼世界的芯片
-
-https://mp.weixin.qq.com/s/KhY-PPdvZ26Uy8xEgi70DA
-
-纪念晶体管诞生71周年——改变世界30款芯片大阅兵！
-
-http://m.uczzd.cn/webview/news?aid=15020380163392206798
-
-你所不知道的经典科技发展史: 以前CPU是如何设计出来的
-
-https://mp.weixin.qq.com/s/Lnolh9y0rf86wOGa-F1xmw
-
-计算机的诞生史
