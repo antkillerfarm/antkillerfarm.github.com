@@ -41,7 +41,7 @@ https://www.zhihu.com/question/267166775
 
 真空中有两个位置固定的引力源(恒星)，一个质量较小的小球(行星)有哪些典型的稳定绕转方式?
 
-----
+---
 
 https://www.zhihu.com/answer/564059120
 
@@ -87,7 +87,7 @@ https://www.zhihu.com/question/425376324
 
 根据牛顿万有引力定律可知，太阳对月球的引力大于地球对月球的引力，为什么月球仍然绕地球运动？（希尔球）
 
-----
+---
 
 ![](/images/img3/Chicxulub-Crater-Yucatan.jpg)
 
@@ -143,7 +143,7 @@ https://www.atnf.csiro.au/outreach/education/senior/astrophysics/stellarevolutio
 
 The Hertzsprung-Russell Diagram
 
-----
+---
 
 ![](/images/img3/B2FH.jpg)
 
@@ -151,7 +151,7 @@ https://mp.weixin.qq.com/s/ZIHqRmKHLUXm_cj-U7HYFw
 
 出格者弗雷德·霍伊尔
 
-----
+---
 
 https://mp.weixin.qq.com/s/tqUNYZk8I1Yf-u3DEIxNxA
 
@@ -259,7 +259,7 @@ https://mp.weixin.qq.com/s/kt2uw6GGn1HJoJ9q2XWlLQ
 
 氧气太少、爆炸不给力，吴京白死了（及《流浪地球》其他20多处硬伤）
 
-----
+---
 
 ![](/images/img2/Solar.gif)
 
@@ -269,7 +269,7 @@ https://mp.weixin.qq.com/s/kt2uw6GGn1HJoJ9q2XWlLQ
 
 >本轮-均轮的概念是由阿波罗尼奥斯提出的。
 
-----
+---
 
 ![](/images/img2/The_Wandering_Earth.jpg)
 
@@ -297,7 +297,7 @@ Space Engine是一款免费太空模拟程序，由俄罗斯天文学家和程�
 
 http://spaceengine.org/
 
-----
+---
 
 Stellarium是一款免费开源的软件，它使用OpenGL图形接口对星空进行实时渲染。软件可以真实地表现通过肉眼、双筒望远镜和小型天文望远镜所看到的天空。
 
@@ -305,7 +305,7 @@ Stellarium是一款免费开源的软件，它使用OpenGL图形接口对星空�
 
 http://stellarium.org/
 
-----
+---
 
 Universe Sandbox是一款模拟天体运行的天文模拟软件，类似物理沙盘游戏，玩家可以自行创造天体系统，通过软件计算模拟天体运行，演化等。它是一款收费软件。
 
@@ -313,7 +313,7 @@ Universe Sandbox是一款模拟天体运行的天文模拟软件，类似物理�
 
 http://universesandbox.com/
 
-----
+---
 
 ![](/images/img3/Earth's_Location_in_the_Universe.jpg)
 

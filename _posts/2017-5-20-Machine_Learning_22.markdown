@@ -228,7 +228,7 @@ Average Precision(AP)
 
 Mean Average Precision(MAP)
 
-----
+---
 
 Accuracy和Precision是一对容易混淆的概念。其一般定义如下图所示：
 
@@ -246,7 +246,7 @@ Accuracy和Precision是一对容易混淆的概念。其一般定义如下图所
 
 比如在DL领域的硬件优化中，通常使用标准算法生成Golden结果，然后用优化之后的运算结果与之比对，以验证优化的正确性。
 
-----
+---
 
 上述内容中，预测结果和标签之间只有真和假两种关系，因此又被称为**二元相关性**问题。
 
@@ -262,13 +262,13 @@ Discounted Cumulative Gain
 
 Normalized Discounted Cumulative Gain
 
-----
+---
 
 ![](/images/img4/AUC.jpg)
 
 如图，modelA和modelB的ROC曲线下面积AUC是相等的，但是两个模型在不同区域的预测能力是不相同的，所以我们不能单纯根据AUC的大小来判断模型的好坏。
 
-----
+---
 
 参考：
 

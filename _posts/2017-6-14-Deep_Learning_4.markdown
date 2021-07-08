@@ -209,7 +209,7 @@ https://mp.weixin.qq.com/s/Do6erhin3W4dK_-RTAyD6A
 
 http://www.qingruanit.net/blog/23930/note5837.html
 
-卷积神经网络（CNN）学习算法之----基于LeNet网络的中文验证码识别
+卷积神经网络（CNN）学习算法之---基于LeNet网络的中文验证码识别
 
 https://mp.weixin.qq.com/s/XiaAPd20YxbM0wDiSTAYMg
 

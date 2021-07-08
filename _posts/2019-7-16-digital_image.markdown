@@ -49,7 +49,7 @@ http://science.china.com.cn/2016-09/26/content_9058067.htm
 
 睹物思人--索尼历史档案馆的另类发现
 
-----
+---
 
 >笔者曾经问过Sony图像传感器部门的大佬，CCD的画质更好，到底是什么因素导致相机市场最终倒向cmos image sensor，是因为对高像素的需求？低功耗的需求？容易集成后处理电路？还是因为cmos sensor成本低？   
 >大佬给出了一个出乎我预料的答案：最主要是‘产能’。手机相机的迅速普及，图像传感器的需求暴增，当时采用CCD工艺的工厂数远远少于cmos工艺的工厂数，cmos工艺的工厂迅速转过去生产图像传感器满足了市场需求，同时cmos image sensor的设计者逐渐改进cmos sensor设计，融合CCD和Cmos的设计方法，逐渐提高了cmos image sensor的图像质量。
@@ -214,7 +214,7 @@ HDR Imaging(2)--Digital Overlap
 
 https://mp.weixin.qq.com/s/_znyQAPeGt_IiZ8C5Rv6zw
 
-HDR imaging(3)----split/sub pixel技术
+HDR imaging(3)---split/sub pixel技术
 
 https://mp.weixin.qq.com/s/X1GcQywkM-hZUu-1koP_VA
 
@@ -340,7 +340,7 @@ https://mp.weixin.qq.com/s/DH3mZgh4YbnceaFGs03kOQ
 
 https://mp.weixin.qq.com/s/f2BIrZ8if7_rX__J9hMHog
 
-广色域----iphone X/8 camera的色彩进化
+广色域---iphone X/8 camera的色彩进化
 
 https://mp.weixin.qq.com/s/VjzXYgkzAGloczaaPXni2A
 

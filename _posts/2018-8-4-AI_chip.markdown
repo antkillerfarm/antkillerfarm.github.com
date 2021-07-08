@@ -45,7 +45,7 @@ http://www.deephi.com/
 
 http://www.deephi.com/zh-cn/dnndk.html
 
-----
+---
 
 如果说2017年以前的AI Chip领域，主要解决的是芯片有无的问题的话，那么2018年的重点就聚焦在如何更好的使用上了。
 

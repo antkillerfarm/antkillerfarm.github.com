@@ -13,7 +13,7 @@ category: Nature
 
 >Johann Franz Encke，1791～1865，德国天文学家。University of Göttingen毕业，导师Gauss。1825年担任柏林天文台台长。Leopold Kronecker的导师。他还发现了土星环的Encke Gap。
 
-----
+---
 
 1929年，余青松接任天文研究所第二任所长后，秉承高鲁的宏愿，费时五载，于公元1935年，建立紫金山天文台。1938年因抗日战争，他主持该台的内迁工作，并在昆明东郊建成了昆明凤凰山天文台。
 
@@ -21,7 +21,7 @@ https://mp.weixin.qq.com/s/vMe5RmD8uBW3AeGDYwbI5A
 
 紫金山天文台的创立（高鲁、余青松）
 
-----
+---
 
 现代农历是民国时期开始用的。自古每当王朝更迭，第一件事就是改历法，一方面体现新朝气象，一方面也因为旧历使用多年，已经有了误差。
 
@@ -33,7 +33,7 @@ https://www.zhihu.com/question/405115980
 
 公历1582年消失了10天，但我国的农历用了这么多年，难道没有误差吗？
 
-----
+---
 
 1928年10月25日，一位旅美求学的中国青年在美国叶凯士天文台发现一颗小行星（临时编号为1928 UF），这是第一颗由中国人发现的小行星。这位青年学子感怀祖国，随即将其命名为中华星（1125 China）。
 
@@ -51,7 +51,7 @@ https://zhuanlan.zhihu.com/p/61467796
 
 抗日时期，中国人完成哪些不可能做到的壮举？
 
-----
+---
 
 1990年发射的哈勃太空望远镜，由于一片镜片边缘磨薄了2.2mm，相机镜头misallignment, 最终导致发射后拍摄图像模糊。
 
@@ -79,7 +79,7 @@ https://zhuanlan.zhihu.com/p/36125534
 
 哈勃28周岁，但大家知道锁眼么？
 
-----
+---
 
 https://mp.weixin.qq.com/s/aY4gFbK_aKWcgwvr0Rk5gQ
 
@@ -93,7 +93,7 @@ https://zhuanlan.zhihu.com/p/330003494
 
 美国天眼塌了
 
-----
+---
 
 https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
 

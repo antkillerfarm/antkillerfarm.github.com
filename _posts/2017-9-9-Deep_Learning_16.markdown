@@ -119,7 +119,7 @@ https://github.com/lengstrom/fast-style-transfer/
 
 https://blog.csdn.net/Hungryof/article/details/61195783
 
-超越fast style transfer----任意风格图和内容图0.1秒出结果
+超越fast style transfer---任意风格图和内容图0.1秒出结果
 
 https://zhuanlan.zhihu.com/p/35798776
 

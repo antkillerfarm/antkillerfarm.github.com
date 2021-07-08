@@ -15,7 +15,7 @@ https://mp.weixin.qq.com/s/-TZH-zVnHcoffyUzhEzwaA
 
 中国为什么地震频发？
 
-----
+---
 
 2017.8.8
 
@@ -25,13 +25,13 @@ https://mp.weixin.qq.com/s/-TZH-zVnHcoffyUzhEzwaA
 
 芦山地震，我在广州出差，无感。
 
-----
+---
 
 https://mp.weixin.qq.com/s/SukZFrroUmldi25Vfvp2gA
 
 拿下杜克全奖的学霸男神, 却选择了在汶川地震中失去双腿和女儿的她....
 
-----
+---
 
 ![](/images/img2/salt_sea.jpg)
 
@@ -39,7 +39,7 @@ https://www.zhihu.com/answer/303210942
 
 咸海覆灭
 
-----
+---
 
 汉初以前，今嘉陵江上游诸水本是古汉水的上游，由于河道壅塞，在今陕西略阳以上形成河道型的山间湖泊“天池大泽”。公元前186年的武都道大地震，震中约在今陕西略阳、宁强一带，造成今陕西宁强汉王山一带山体发生巨大滑坡。
 
@@ -55,7 +55,7 @@ https://www.zhihu.com/question/366835590
 
 如果把诸葛亮替换成韩信，蜀汉能统一中国吗？
 
-----
+---
 
 Mercator projection：由荷兰地图学家墨卡托(G.Mercator)于1569年创立。如果循着墨卡托投影图上两点间的直线航行，可以方向不变一直到达目的地。
 
@@ -67,7 +67,7 @@ https://mp.weixin.qq.com/s/V8o6lNajB6v8u80VvaO1kw
 
 如何给地球拍一张“素颜照”？
 
-----
+---
 
 1956年，加州理工学院的地球化学家Clair C. Patterson利用同位素法测定出地球有着46亿年的历史。
 
@@ -75,7 +75,7 @@ https://mp.weixin.qq.com/s/czp-2aW8WGeuZqamJrkoAw
 
 46亿岁的地球，有一颗年轻的“心”
 
-----
+---
 
 https://mp.weixin.qq.com/s/QAHuICzvUNsFdNtR9S_kqQ
 
@@ -85,7 +85,7 @@ https://mp.weixin.qq.com/s/cpL-Ns9azpirzHBWQBSZTw
 
 在地球之外看地球，17张绝美空间站照片带给你“人眼难以承受”的美丽
 
-----
+---
 
 2011年1月后，著名的奥里诺科(Orinoco)石油带被探明和确认，奥里诺科石油带让委瑞内拉探明可采储量的从1000亿桶攀升到近3000亿桶，取代沙特阿拉伯成为可采储量最大的国家。
 
@@ -93,15 +93,15 @@ http://blog.sina.com.cn/s/blog_5122b1940102xf7x.html
 
 此油田探明储量是全中国的10倍，它才是名副其实的世界最大油田
 
-----
+---
 
 太行八陉：军都陉、蒲阴陉、飞狐陉、井陉、滏口陉、白陉、太行陉、轵关陉。
 
-----
+---
 
 ![](/images/img4/shipment.jpg)
 
-----
+---
 
 ![](/images/img4/wilson.jpg)
 
@@ -117,7 +117,7 @@ https://www.zhihu.com/question/38144007
 
 东非大裂谷是正在形成的板块边界吗？
 
-----
+---
 
 在距今725万-533万年的墨西拿期（Messinian）中后阶段由于非洲板块与欧亚板块的逐渐合拢，今日的直布罗陀地区从多岛残余海抬升成为一个狭长地峡，阻断了大西洋与地中海的海水交流，地中海从一个局限海彻底转变为一个咸水湖。在北纬40度附近的副热带高压和西风带交替控制下，湖水蒸发的速率远远大于周围河流补给淡水的速率，并最终导致地中海大多数地区干涸，在海底留下厚厚的石膏、石盐等蒸发岩。
 
@@ -135,7 +135,7 @@ https://www.zhihu.com/answer/269694639
 
 传说中的全球史前大洪水真的存在过吗？
 
-----
+---
 
 https://zhuanlan.zhihu.com/p/53237519
 
@@ -281,7 +281,7 @@ https://www.zhihu.com/question/464055142
 
 冬至后逢第一个壬日开始叫“交九”，意思是寒冷的开始。
 
-----
+---
 
 ![](/images/img3/Hadley_Cell.png)
 
@@ -299,7 +299,7 @@ https://www.seas.harvard.edu/climate/eli/research/equable/hadley.html
 
 Hadley Cells
 
-----
+---
 
 https://mp.weixin.qq.com/s/0ZQvZNHOmiMZ1dr_-VXR6Q
 

@@ -39,6 +39,10 @@ https://mp.weixin.qq.com/s/tFzbJdW-L342tMNXDiacCg
 
 AutoML研究综述：让AI学习设计AI
 
+https://mp.weixin.qq.com/s/k27p9X58tvwptp7ZIBt6TQ
+
+用AI构建AI-AutoML综述
+
 https://mp.weixin.qq.com/s/62cqtwslax_cvA57252zYA
 
 IBM自动机器学习网络架构搜索最新综述
@@ -145,7 +149,7 @@ https://mp.weixin.qq.com/s/W9bdVJI6Jesm9-wE5pQ-mw
 
 https://zhuanlan.zhihu.com/p/44576620
 
-让算法解放算法工程师----NAS综述
+让算法解放算法工程师---NAS综述
 
 https://mp.weixin.qq.com/s/3njCAKQsQ8UhL3gqDDHZGQ
 
@@ -374,15 +378,3 @@ https://mp.weixin.qq.com/s/nN7tgkvvkv8B8N-z4yAgcQ
 https://mp.weixin.qq.com/s/rgUTcuH2mfIFBDoOfd26Cw
 
 NASNet：神经架构搜索网络在图像分类中的表现
-
-https://mp.weixin.qq.com/s/VdjHp5Tb1fSyV3CQblPQmw
-
-利用NAS寻找最佳GAN：AutoGAN架构搜索方案专为GAN打造
-
-https://mp.weixin.qq.com/s/d60EKUJjYfYfcfhMnaCpPA
-
-基于强化学习的自动搜索
-
-https://mp.weixin.qq.com/s/JC1MlSfR2INd5RqSFolV5A
-
-NAS的挑战和解决方案-一份全面的综述

@@ -257,7 +257,7 @@ or
 
 Press F1 and run the `Remote-SSH: Open SSH Host...` command.
 
-----
+---
 
 问题：
 
@@ -270,7 +270,7 @@ Authentication is needed to run '/home/danny/dev/tools/gdb' as the super user
 
 `sudo sysctl -w kernel.yama.ptrace_scope=0`
 
-----
+---
 
 参考：
 

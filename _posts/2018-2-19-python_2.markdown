@@ -297,7 +297,7 @@ http://www.cnblogs.com/herbert/p/3468294.html
 
 再谈collections模块defaultdict()和namedtuple()
 
-----
+---
 
 collections模块还有其他一些功能。例如：
 

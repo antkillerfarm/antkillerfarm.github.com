@@ -125,7 +125,7 @@ tensorflow2.4性能调优最佳实践
 
 此外，`session.run`可以接受list作为参数。返回值也是一个list，分别对应输入list的每个元素的计算结果。
 
-----
+---
 
 tensorflow的程序中,在main函数下,都是使用tf.app.run()来启动。查看源码可知,该函数是用来处理flag解析，然后执行main函数。
 
@@ -133,19 +133,19 @@ https://blog.csdn.net/lujiandong1/article/details/53262612
 
 tensorflow中的tf.app.run()
 
-----
+---
 
 TF提供了一套专门的IO函数：tf.gfile。主要优点在于：对于写文件来说，open操作直到真的需要写的时候才执行。
 
-----
+---
 
 迁移学习的时候，有的时候需要保持某几层的权值，在后续训练中不被改变。这时，可以在创建Variable时，令trainable=false。
 
-----
+---
 
 sparse_softmax_cross_entropy_with_logits和softmax_cross_entropy_with_logits的区别在于：后者的label是一个one hot的tensor，而前者label直接用对应分类的index表示就行了。
 
-----
+---
 
 CNN中的padding：
 
@@ -153,11 +153,11 @@ CNN中的padding：
 
 "VALID" = without padding。
 
-----
+---
 
 op的自定义实现可使用`tf.py_func`。
 
-----
+---
 
 tf.dtypes.cast: 类型转换
 

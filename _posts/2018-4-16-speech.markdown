@@ -296,7 +296,7 @@ http://www.speech.cs.cmu.edu/databases/an4/
 
 The CMU Audio Databases。这个数据集非常老了（1991年），只有64M。
 
-----
+---
 
 http://download.tensorflow.org/data/speech_commands_v0.01.tar.gz
 
@@ -312,7 +312,7 @@ https://www.kaggle.com/davids1992/speech-representation-and-data-exploration/not
 
 包含对Speech Commands Datasets的数据处理过程的blog
 
-----
+---
 
 Google的声音理解团队发布了由200万个人标记的10秒YouTube视频音轨组成的数据集，标签来自600多个音频事件类，数据集命名为Audioset。
 

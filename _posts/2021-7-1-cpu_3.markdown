@@ -47,7 +47,7 @@ https://mp.weixin.qq.com/s/J7RlmvU7JY1J8rV-eqjQ2A
 
 浅谈多核心CPU和SoC芯片及其工作原理
 
-----
+---
 
 ![](/images/img3/Memristor.png)
 
@@ -77,7 +77,7 @@ https://zhuanlan.zhihu.com/p/33956771
 
 超算排名之中的地区和架构之争
 
-----
+---
 
 ![](/images/img3/SC.png)
 

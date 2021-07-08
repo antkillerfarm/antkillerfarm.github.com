@@ -193,7 +193,7 @@ cycle参数的初衷是为了防止训练后期LR十分小，导致结果一直�
 
 常用的算法有BGFS和L-BFGS。
 
-----
+---
 
 第一个拟牛顿法是由Bill Davidon、Roger Fletcher和Michael James David Powell于1959年提出的DFP算法。
 
@@ -209,7 +209,7 @@ https://mp.weixin.qq.com/s/dZ7TlqbgsK3RU8prJ3o-oA
 
 宝藏数学家的优化人生（M.J.D. Powell）
 
-----
+---
 
 参考：
 

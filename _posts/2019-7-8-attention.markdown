@@ -61,7 +61,7 @@ Attention and Augmented Recurrent Neural Networks
 
 该文主要讲述了Attention在RNN领域的应用。
 
-----
+---
 
 NTM是一种使用Neural Network为基础来实现传统图灵机的理论计算模型。利用该模型，可以通过训练的方式让系统“学会”具有时序关联的任务流。
 

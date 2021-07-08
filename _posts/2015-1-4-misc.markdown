@@ -196,7 +196,7 @@ sudo grub-install /dev/sda
 
 10）initrd和vmlinuz。initrd包括image-initrd和cpio-initrd。zImage和bzImage的区别和作用。
 
-----
+---
 
 既然有安装，当然也有卸载教程了。
 

@@ -67,7 +67,7 @@ Inception来源于Google的Inception Net，因为计算这个score需要用到In
 
 生成的图片不够清晰，显然说明生成模型表现欠佳；生成的图片够清晰了，我们还要看是不是能生成足够多样的图片，有些生成模型只能生成有限的几种清晰图片，陷入了所谓mode collapse，也不是好的模型。
 
-----
+---
 
 **mode collapse(模式坍塌)**，即生成高度相似的样本。
 
@@ -85,7 +85,7 @@ https://mp.weixin.qq.com/s/QFCJ7BxNvfj2L9Wlr6aq9A
 
 解决模式崩溃的两条思路：改进优化和网络架构
 
-----
+---
 
 针对这两方面，IS的思路如下：
 

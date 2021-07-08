@@ -40,7 +40,7 @@ category: Attention
 
 - self-attention借鉴CNN中multi-kernel的思想，进一步进化成为Multi-Head attention。每一个不同的head使用不同的线性变换，学习不同的relationship。
 
-----
+---
 
 ![](/images/img2/self_attention.jpg)
 

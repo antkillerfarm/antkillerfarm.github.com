@@ -410,7 +410,7 @@ https://www.kernel.org/doc/html/latest/
 
 Linux官方文档
 
-----
+---
 
 https://mp.weixin.qq.com/s/n6D5_6K9TrnuXg3h6AiFNA
 
@@ -420,7 +420,7 @@ https://mp.weixin.qq.com/s/n6D5_6K9TrnuXg3h6AiFNA
 
 ![](/images/img3/UNIX.jpg)
 
-----
+---
 
 https://mp.weixin.qq.com/s/I7C7cXFgxO7RO0Wpjjj3xQ
 

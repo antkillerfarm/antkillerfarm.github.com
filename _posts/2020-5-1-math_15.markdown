@@ -75,7 +75,7 @@ https://mp.weixin.qq.com/s/dR7fg6PTCVAnezlW6gTY2w
 
 新冠病毒最“强”管控，《黄冈密卷》数学题到底有多难
 
-----
+---
 
 1.设$$\sqrt{3+\sqrt{2}+\sqrt{3}+\sqrt{6}}=\sqrt{x}+\sqrt{y}+\sqrt{z}$$，且x、y、z为有理数，则$$xyz$$=?
 
@@ -97,7 +97,7 @@ $$(xyz)^2 = 9/16$$
 
 $$xyz = 3/4$$
 
-----
+---
 
 2.设二次函数$$f(x)=ax^2+ax+1$$的图像开口向下，且满足$$f(f(1))=f(3)$$，则$$2a=?$$
 
@@ -117,7 +117,7 @@ $$(y+5)(y-2)=0$$
 
 因为图像开口向下，所以$$2a=-5$$。
 
-----
+---
 
 最近，黄冈再次因数学题而火爆网络。
 
@@ -143,7 +143,7 @@ Elliptic Integral of the Second Kind
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/geogebra/huanggang.ggb
 
-----
+---
 
 https://mp.weixin.qq.com/s/FdHstCxJqQ4wYXSRDyqm5A
 

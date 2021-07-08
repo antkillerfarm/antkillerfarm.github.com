@@ -114,6 +114,10 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/Qt/MyOpenGL
 
 `make VERBOSE=1`
 
+`cmake --debug-output`
+
+`cmake --trace`
+
 ## 例子四
 
 这是一个在上例基础上添加OpenGL Shader实现的例子：

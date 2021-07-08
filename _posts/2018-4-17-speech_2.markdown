@@ -23,7 +23,7 @@ http://blog.csdn.net/sut_wj/article/details/70662181
 
 THCHS-30：一个免费的中文语料库
 
-----
+---
 
 http://cn-mirror.openslr.org/33/
 
@@ -35,7 +35,7 @@ http://www.aishelltech.com/aishell_2
 
 AISHELL-2的数据规模达到1000小时和更优秀的系统级recipe。数据目前以硬盘和网盘形式免费开放给高校科研教育机构。商用似乎还是要钱的。
 
-----
+---
 
 https://keithito.com/LJ-Speech-Dataset/
 
@@ -49,7 +49,7 @@ LibriVox项目是一个公益性质的有声电子书项目。
 
 https://librivox.org/
 
-----
+---
 
 https://mp.weixin.qq.com/s/f_oFRDuSAuqwbOAby07a5Q
 

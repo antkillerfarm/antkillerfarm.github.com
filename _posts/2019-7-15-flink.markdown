@@ -355,7 +355,7 @@ https://mp.weixin.qq.com/s/5v1uknmAPfqFR_5meie9GQ
 
 5G基站功耗到底有多可怕？网友惊呼：国家电网或是5G最大赢家！
 
-----
+---
 
 O-RAN是中国移动发起的，中国三大运营商都是成员。
 

@@ -163,7 +163,7 @@ https://zhuanlan.zhihu.com/p/25754084
 
 WebAssembly系列（四）WebAssembly工作原理
 
-----
+---
 
 V8开发者Vyacheslav Egorov和Mozilla Hacks之间的source-map之战了。对于同一份source-map库的JS代码，Vyacheslav所魔改出的纯JS版本，其性能一举反超了Mozilla重写的Rust版。
 

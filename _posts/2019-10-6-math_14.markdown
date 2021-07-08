@@ -113,7 +113,7 @@ $$b_0*X(n)+b_1*X(n-1)+b_2*X(n-2)+...+b_k*X(n-k)$$
 
 ![](/images/img3/math_24.jpg)
 
-----
+---
 
 其他深渊：
 
@@ -179,7 +179,7 @@ https://zhuanlan.zhihu.com/p/36390998
 
 Möbius inversion and Dirichlet convolution
 
-----
+---
 
 Mobius Band可能是Mobius更著名的发现。
 
@@ -315,8 +315,8 @@ https://mp.weixin.qq.com/s/jIlE6VDlgOgoIpUBiGzF5w
 
 他（Claude Ptolemy）是被埋没了1300年的超级学霸，却凭一己之力，影响世界，改变人类文明！
 
-----
+---
 
-当我在32岁成为哈佛大学终身教授的时候，终于有时间学习如何运算了——是如坐针毡地和一群年龄仅仅是我的一半多点的大学小鬼们一起上课。他们中的一些人还在上我执教的进化生物学。我将自尊搁置一边，来学习微积分。当在追赶中学习时，成绩拿C都费劲。----By Edward Osborne Wilson
+当我在32岁成为哈佛大学终身教授的时候，终于有时间学习如何运算了——是如坐针毡地和一群年龄仅仅是我的一半多点的大学小鬼们一起上课。他们中的一些人还在上我执教的进化生物学。我将自尊搁置一边，来学习微积分。当在追赶中学习时，成绩拿C都费劲。---By Edward Osborne Wilson
 
 >Edward Osborne Wilson，1929年生，美国生物学家，以研究蚂蚁著称，被称为生物社会学之父。同时也是一名杰出的科普作家，两获Pulitzer Prize。

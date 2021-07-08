@@ -275,7 +275,7 @@ https://mp.weixin.qq.com/s/oNkbQsNgwUrd4nuvQlbJkw
 
 I/O多路复用
 
-----
+---
 
 五种IO模型包括：阻塞IO、非阻塞IO、IO多路复用、信号驱动IO、异步IO。
 

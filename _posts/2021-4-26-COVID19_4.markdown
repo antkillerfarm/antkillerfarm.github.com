@@ -61,7 +61,7 @@ https://www.zhihu.com/question/466493389
 
 尼泊尔发现新冠变种毒株Delta的新突变，传播速度或更快，将对全球疫情进展带来哪些影响？
 
-----
+---
 
 事实上，美国人嘴从来都不把门的。
 
@@ -85,7 +85,7 @@ https://www.zhihu.com/question/464038841
 
 为什么美国疫情最严重，但却鲜有变异病毒的报道？
 
-----
+---
 
 变异毒株的信息可搜寻以下网站：
 
@@ -101,7 +101,7 @@ https://outbreak.info/
 
 这是来自Scripps Research的几位科学家创办的COVID-19专题站。Scripps Research是美国最大的私立非营利性的生物医学研究机构，成立于1924年。
 
-----
+---
 
 其实吧，19个变异点位真没啥稀奇的……
 
@@ -127,7 +127,7 @@ https://www.zhihu.com/answer/1893818645
 
 如何看待中非传出的新冠病毒？
 
-----
+---
 
 当初英国人拿赛默飞的PCR试剂盒测B.1.1.7，这货可以识别B.1.1.7的S基因69-70缺失突变特征（S:DEL69-70），因此省去了又贵又慢又娇气的全基因组测序步骤；
 
@@ -137,7 +137,7 @@ https://www.zhihu.com/answer/1893818645
 
 所以可以合理推测，但凡拿耶鲁这个PCR测出来的P.1流行率，都有水分，里面混了不知道多少C.37（以及其他毒株）。
 
-----
+---
 
 https://mp.weixin.qq.com/s/hG0AO43AicEN1o4GGg463w
 
@@ -241,7 +241,7 @@ https://mp.weixin.qq.com/s/e3MaPaBZrxwqWtykB9f_JQ
 
 86岁院士因感染冠状病毒去世，华中科技大学已痛失4位知名学者
 
-----
+---
 
 根据伊朗宪法，总统可以在无需议会批准的情况下任命副总统，人数可达十多位，每位副总统一般负责一个与总统事务有关的组织机构。除第一副总统外，副总统的重要性无法与负责具体行政事务的内阁部长相比。
 
@@ -249,7 +249,7 @@ http://news.ifeng.com/c/7uRKv3JARr9
 
 伊朗女副总统感染新冠病毒，40年前她在美国家喻户晓
 
-----
+---
 
 https://mp.weixin.qq.com/s/srkQ4in3bLP6exZIZawzuw
 
@@ -283,7 +283,7 @@ https://xueqiu.com/1913820214/140236918
 
 吉利德发家史：5次豪赌，从小药厂到世界巨头的30年蜕变！
 
-----
+---
 
 Rem 人民 de 的 sivir 希望
 
@@ -291,7 +291,7 @@ https://mp.weixin.qq.com/s/aZLWs6VT-zfEMaBt_cRfzg
 
 “人民的希望”跌落神坛，竟因中国的临床试验？
 
-----
+---
 
 瑞德西韦（Remdesivir）、法匹拉韦（Favipiravir）、巴洛沙韦（Baloxavir）、洛匹那韦（lopinavir）、利托那韦（ritonavir）
 

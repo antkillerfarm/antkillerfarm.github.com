@@ -141,7 +141,7 @@ Tensorflow Model / ONNX / Caffe Model / ... ---> DL IR (nGraph IR / *.IR) ---> L
 
 如果把前面的Model看成一种语言或者DSL，就是DSL ---> DL IR ---> LLVM IR ---> Target，然后你就在中间层疯狂的做优化，编译器优化开发也是这样做的。
 
-在LLVM IR出现以前，很多编译器都有几层的IR表示，比如 C++ ----> 1st IR ----> OPT ----> 2nd IR ----> .... -> Target，只是LLVM出来以后，LLVM IR做了统一，编译器变为了 C++ ----> LLVM IR ---> OPT ----> LLVM IR ----> Target
+在LLVM IR出现以前，很多编译器都有几层的IR表示，比如 C++ ---> 1st IR ---> OPT ---> 2nd IR ---> .... -> Target，只是LLVM出来以后，LLVM IR做了统一，编译器变为了 C++ ---> LLVM IR ---> OPT ---> LLVM IR ---> Target
 
 ![](/images/img3/IR.jpg)
 

@@ -343,3 +343,7 @@ https://mp.weixin.qq.com/s/ExbwHCFavFZhmWnWIK6wlQ
 https://mp.weixin.qq.com/s/yiqgPqM7nnNlJ1zCp6blTQ
 
 Hive SQL迁移Spark SQL在滴滴的实践
+
+https://mp.weixin.qq.com/s/r-EcujFHXpZwy83o7l3YlA
+
+如何从Pandas迁移到Spark？

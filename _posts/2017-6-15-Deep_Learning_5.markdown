@@ -214,6 +214,12 @@ Hierarchical Softmax一般基于Huffman编码构建。在本例中，我们首�
 
 由Huffman编码的特性可知，Hierarchical Softmax的计算量要小于一般的Softmax。
 
+参考：
+
+https://mp.weixin.qq.com/s/N1Yt_GK57-FXU-brfu6o8A
+
+GPU上的高效softmax近似
+
 ### Negative Sampling
 
 在CBOW模型中，已知w的上下文Context(w)需要预测w，则w就是正样本，而其他词是负样本。

@@ -29,7 +29,7 @@ https://www.runoob.com/w3cnote/es6-tutorial.html
 
 一般来说，Chrome、Firefox和Node.js是支持的比较及时的JS平台。
 
-----
+---
 
 在ES6之前，JS的面向对象编程通常使用一种叫做“**原型链**”的技术来实现。
 

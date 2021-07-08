@@ -380,7 +380,7 @@ Tensorflow源代码中自带的toco（Tensorflow Optimizing COnverter）工具�
 
 https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/lite/toco
 
-----
+---
 
 tflite模型使用flatbuffers进行序列化，因此也可以使用flatbuffers解析相关模型。
 
@@ -396,7 +396,7 @@ tflite模型使用flatbuffers进行序列化，因此也可以使用flatbuffers�
 
 这个命令会生成一个schema_py_generated.py文件，也就是所谓的专业版本了。
 
-----
+---
 
 tflite模型中间结果的导出，不是太方便，原因是相关内存被复用。
 
@@ -420,7 +420,7 @@ https://blog.csdn.net/abc20002929/article/details/112529203
 
 tflite模型调试-中间层output输出
 
-----
+---
 
 参考：
 

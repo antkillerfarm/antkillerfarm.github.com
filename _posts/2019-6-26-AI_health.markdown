@@ -215,7 +215,7 @@ https://mp.weixin.qq.com/s/QUoW4eD93_DPQ7kP_6jaZg
 
 >3D图形虽然“炫目”和“性感”，却没有传达任何额外的信息，迫使读者“处理冗余和无关的线索”。
 
-----
+---
 
 https://mp.weixin.qq.com/s/yF1XJ-_YteoZbVbdIvlbmg
 
@@ -223,7 +223,7 @@ https://mp.weixin.qq.com/s/yF1XJ-_YteoZbVbdIvlbmg
 
 >Henry Charles Beck，1902～1974，英国制图师。其1931年绘制的伦敦地铁图成为了现代地铁图的设计范例。
 
-----
+---
 
 最早的Sankey diagram是Charles Minard绘制的1812年拿破仑俄国战役地图（1869年）。这张战役地图将一张桑基图叠加到一张地图上，是一张流程图与地图结合的图表。
 
@@ -243,7 +243,7 @@ https://mp.weixin.qq.com/s/ItbTw9RQ2lR0WfmVLLkEzQ
 
 一张图看懂世界石油分布？用Python轻松搞定！
 
-----
+---
 
 伟大的Florence Nightingale不仅是一位护士，还是一位统计学家。
 
@@ -257,7 +257,7 @@ Florence Nightingale用数据图表的方式展示了那些可预防疾病（蓝
 
 >Florence Nightingale，1820～1910，英国人，女。护理事业创始人和现代护理教育奠基人。她虽然和当时大多数女性一样，没有接受学校教育，但却接受了良好的家庭教育。
 
-----
+---
 
 现代数据可视化鼻祖William Playfair创建了我们现在熟悉的折线图、条形图和饼状图。
 
@@ -265,7 +265,7 @@ https://mp.weixin.qq.com/s/djkeZ2qC9opjIVHVcT0IZw
 
 在数据可视化这一块，我们可能真比不上几百年前的科学家
 
-----
+---
 
 https://www.douban.com/group/topic/176322122/
 
@@ -303,7 +303,7 @@ https://hiplot.com.cn/
 
 一个可视化在线编辑网站。包含200+的图表种类。
 
-----
+---
 
 https://mp.weixin.qq.com/s/QL9R-bAerxnWIUgJhMz1Rw
 

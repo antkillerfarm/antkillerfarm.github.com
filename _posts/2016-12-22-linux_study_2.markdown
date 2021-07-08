@@ -338,7 +338,7 @@ https://mp.weixin.qq.com/s/y8LeZ0-9D56TWsD-ivPaHQ
 
 Linux文件搜索神器find实战详解
 
-----
+---
 
 `sudo dd if=./865_R11_RC2.sdcard of=/dev/sdb status=progress`
 
@@ -348,7 +348,7 @@ https://blog.csdn.net/weixin_30416497/article/details/97144840
 
 linux下使用dd命令写入镜像文件到u盘
 
-----
+---
 
 `strings /lib/tls/libc.so.6 | grep GLIBC`
 

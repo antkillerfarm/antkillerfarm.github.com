@@ -25,7 +25,7 @@ https://mp.weixin.qq.com/s/l3dPUj8SxOrnGHBlxxpS5w
 
 嫦娥五号在大气层“打水漂”？你玩的打水漂里到底有什么力学问题？
 
-----
+---
 
 Karman Vortex Street：在一定条件下的定常来流绕过某些物体时，物体两侧会周期性地脱落出**旋转方向相反**、并排列成有规则的双列线涡。
 
@@ -41,7 +41,7 @@ https://mp.weixin.qq.com/s/_14_Q59yV0PhrScN7Xp2QQ
 
 虎门大桥异常抖动的原因找到了，竟然真是被风吹起来的？
 
-----
+---
 
 https://mp.weixin.qq.com/s/ei84HDZIkXQr2k0ghlN_Mw
 
@@ -177,7 +177,7 @@ https://www.jianshu.com/p/cc612800607e
 
 ![](/images/img2/Florence_2018_track.png)
 
-----
+---
 
 https://mp.weixin.qq.com/s/Ld28qHczQ1NfFPGlJQGXKQ
 
@@ -187,7 +187,7 @@ https://mp.weixin.qq.com/s/Ld28qHczQ1NfFPGlJQGXKQ
 
 ![](/images/img3/spectrum.png)
 
-----
+---
 
 $$\pi$$的平方与重力加速度g在数值上极其接近。
 
@@ -203,7 +203,7 @@ $$T=2\pi\sqrt{\frac{L}{g}}$$
 
 令T=2,L=1即得。
 
-----
+---
 
 之前我一直有个疑问，从能量守恒的角度来说，电网负荷过大的话，发电机肯定带不起。那么反过来，如果负荷一下子消失，发电机会怎么样呢？
 
@@ -213,7 +213,7 @@ https://www.zhihu.com/question/29028681
 
 失去负荷后如果电厂的汽轮机不紧急停机直接的后果是飞车。飞车将导致发电机和汽轮机报废。
 
-----
+---
 
 第一热电效应（Seebeck effect）：如果两种导体或者半导体组成一个回路，两端接触点的温度不同（比如把两个端头分别放在冷水和热水中），就会产生电流，也会有相应的电压。
 
@@ -229,13 +229,13 @@ https://mp.weixin.qq.com/s/cBjB_lhnpbkwjnoDw2QvOQ
 
 原来，自动搅拌杯的原理比想象中的还要简单！（热电效应）
 
-----
+---
 
 https://mp.weixin.qq.com/s/UDjHYZCpZjSDCDmBDI8y8Q
 
 一粒爆米花的传奇
 
-----
+---
 
 因为原子仅吸收特定波长的光，所以科学家会确保将激光波长调整为刚好大于静止时原子的吸收波长。这样，根据多普勒效应，当原子向光子移动时，光的波长会被压缩，当光的波长被压缩到恰好等于该原子的吸收波长时，原子就会吸收光子，原子就会从基态跃迁到激发态，原子的运动速度减慢，动能减小；而当原子停止或沿着光子同向运动时，原子就不会吸收光子了。
 
@@ -243,7 +243,7 @@ https://mp.weixin.qq.com/s/oSuSaPe2RYdm3NY0VZAiVQ
 
 激光一定是火热的吗？人家制冷时超cool
 
-----
+---
 
 ![](/images/img3/FCC.png)
 

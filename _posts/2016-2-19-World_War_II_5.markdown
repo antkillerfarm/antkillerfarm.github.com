@@ -119,7 +119,7 @@ Erich Hartmann，1922～1993。
 
 Hans-Joachim Marseille，1919～1942。
 
-----
+---
 
 https://www.zhihu.com/answer/799863112
 

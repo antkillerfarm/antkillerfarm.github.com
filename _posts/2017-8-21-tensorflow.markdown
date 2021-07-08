@@ -89,7 +89,7 @@ http://www.sohu.com/a/164277987_473283
 
 一名在斯坦福教授TensorFlow教师的“忏悔”：我觉得自己像个骗子
 
-----
+---
 
 Chip Huyen的新课：
 
@@ -162,13 +162,13 @@ configure脚本会询问使用什么版本的gcc，填`/usr/bin/gcc-4.9`即可�
 
 https://www.tensorflow.org/install/source
 
-----
+---
 
 2018.11
 
 GPU编译已经没有太大意义了，只需`pip install tensorflow-gpu`即可。但需要注意的是，TF版本需要匹配对应的CUDA版本，否则安装过程不会有错误，但是运行时就会出问题。
 
-----
+---
 
 2020.11
 
@@ -210,7 +210,7 @@ cuDNN这个没办法，只有硬装。
 
 这个是正常的，NUMA是多机多卡才有的东西。
 
-----
+---
 
 参考：
 

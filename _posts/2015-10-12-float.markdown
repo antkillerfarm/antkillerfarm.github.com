@@ -252,7 +252,7 @@ OrientDB和ArangoDB起步比较早，最初是一个单机的图数据库，后�
 
 JanusGraph和Dgraph发展的比较晚，从设计之初就考虑了分布式和扩展性，所以对分布式支持的非常好，且都是完全开源免费的。
 
-----
+---
 
 第一类：Neo4j、ArangoDB、Virtuoso、TigerGraph、RedisGraph。此类图数据库只有单机版本开源可用，性能优秀，但不能应对分布式场景中数据的规模增长。
 

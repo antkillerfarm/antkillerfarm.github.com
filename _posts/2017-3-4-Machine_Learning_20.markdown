@@ -59,7 +59,7 @@ Apriori算法的思路如下：
 
 http://zhan.renren.com/dmeryuyang?gid=3602888498023976650
 
-小白学数据分析----->关联分析学习算法篇Apriori
+小白学数据分析---->关联分析学习算法篇Apriori
 
 http://blog.csdn.net/lizhengnanhua/article/details/9061755
 

@@ -341,7 +341,7 @@ involution：超越convolution和self-attention的神经网络新算子
 
 工业界 = proven idea in practice
 
-----
+---
 
 从简单的样本到困难的样本，以一种有意义的顺序，使用课程学习可以提供比基于随机数据变换的标准训练方法更好的性能，而不需要额外的计算成本。
 
@@ -349,7 +349,7 @@ https://mp.weixin.qq.com/s/sG9qvElHchydNs1Wt6FJwg
 
 课程学习（Curriculum Learning)2021综述论文
 
-----
+---
 
 参考：
 

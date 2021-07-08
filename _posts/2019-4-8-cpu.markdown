@@ -39,7 +39,7 @@ https://mp.weixin.qq.com/s/TmLSHVkeyqfU-9Jgir0czA
 
 摩尔定律究竟死没死
 
-----
+---
 
 ![](/images/img3/IC_process_3.jpg)
 
@@ -47,7 +47,7 @@ https://www.zhihu.com/question/290382241
 
 为什么memory制程比CPU的制程低？
 
-----
+---
 
 ![](/images/img2/Makimoto-Wave.jpg)
 
@@ -55,7 +55,7 @@ Makimoto’s Waves
 
 >Tsugio Makimoto（牧本次生），IEEE Robert N. Noyce Medal（2018）。曾任索尼CTO。半导体工业从NMOS到CMOS演进的先驱。
 
-----
+---
 
 MOSFET device scaling principles，又称为Dennard缩放比例定律（Dennard scaling, 1974）表明，随着晶体管变得越来越小，它们的功率密度保持不变，因此功率的使用与面积成比例；电压和电流的规模与长度成比例。
 
@@ -73,7 +73,7 @@ https://www.yicai.com/news/100419064.html
 
 科技创新里程碑：IBM科学家Robert H. Dennard与改变世界的芯片
 
-----
+---
 
 ![](/images/img4/bell_law.png)
 
@@ -91,11 +91,11 @@ https://www.zhihu.com/question/20809971
 
 IC行业的公司一般分为全流程的（IDM），著名公司如德州仪器，英特尔，三星，意法半导体，只做设计自己没有晶圆厂的（Fabless），比如英伟达，AMD，只负责制造的（Foundry），比如台积电。
 
-----
+---
 
 台湾三大科学园区为竹科（新竹科学工业园）、中科（中部科学工业园）、南科（南部科学工业园）。台积电研发主要在竹科、量产在中科及南科。
 
-----
+---
 
 https://xueqiu.com/4081695675/165884010
 
@@ -195,11 +195,11 @@ https://mp.weixin.qq.com/s/jGzdfEJaulPRjt89eLST4Q
 
 8英寸晶圆30年
 
-----
+---
 
 半导体产业发展至今经历了三个阶段，第一代半导体材料以硅为代表；第二代半导体材料砷化镓也已经广泛应用；而以氮化镓和碳化硅、氧化锌、氧化铝、金刚石等宽禁带为代表的第三代半导体材料。
 
-----
+---
 
 https://mp.weixin.qq.com/s/QF9Nsh_YyX9LZQ_D-4hP-A
 

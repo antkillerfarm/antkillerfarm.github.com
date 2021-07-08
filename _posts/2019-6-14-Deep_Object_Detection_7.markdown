@@ -65,7 +65,7 @@ https://zhuanlan.zhihu.com/p/68786098
 
 >CornerNet并非第一个提出Anchor-Free思想的模型，但却是第一个精度和性能达到与anchor base方法同等水平的Anchor-Free模型。
 
-----
+---
 
 CornerNet是Princeton University的Hei Law的作品。（2018.8）
 
@@ -191,7 +191,7 @@ https://zhuanlan.zhihu.com/p/62789701
 
 https://mp.weixin.qq.com/s/CEcN5Aljvs7AyOLPRFjUaw
 
-真Anchor Free目标检测----CenterNet详解
+真Anchor Free目标检测---CenterNet详解
 
 https://mp.weixin.qq.com/s/7lwEn49G-3RDnBKBv5c7Ag
 

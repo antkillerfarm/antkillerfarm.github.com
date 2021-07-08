@@ -235,7 +235,7 @@ https://mp.weixin.qq.com/s/AZjEct_8xpMMqhmbUL1FXw
 
 https://mp.weixin.qq.com/s/li6l-efZ80Y72bpgzxtFzA
 
-数学教你不犯错----2017年照片大数据分析
+数学教你不犯错---2017年照片大数据分析
 
 https://mp.weixin.qq.com/s/2FenpCl5PpRnMSk_ZILIew
 

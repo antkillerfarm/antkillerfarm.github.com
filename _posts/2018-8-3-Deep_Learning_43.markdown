@@ -211,6 +211,36 @@ https://mp.weixin.qq.com/s/Wv1pCENMq9tUgef_RlQF9A
 
 想Get热搜同款？GitHub开源神器让父亲重返18岁！
 
+https://mp.weixin.qq.com/s/7Ig0D2sxm6rf8vpUPkprAw
+
+华人打造二次元老婆生成器！尔康容嬷嬷成萌妹，图像视频都能变
+
+# AutoDL++++
+
+https://mp.weixin.qq.com/s/VdjHp5Tb1fSyV3CQblPQmw
+
+利用NAS寻找最佳GAN：AutoGAN架构搜索方案专为GAN打造
+
+https://mp.weixin.qq.com/s/d60EKUJjYfYfcfhMnaCpPA
+
+基于强化学习的自动搜索
+
+https://mp.weixin.qq.com/s/JC1MlSfR2INd5RqSFolV5A
+
+NAS的挑战和解决方案-一份全面的综述
+
+https://mp.weixin.qq.com/s/Nmkcy2nBczUccwIdMJiH_A
+
+MaskConnect: 探究网络结构搜索中的Module间更好的连接
+
+https://mp.weixin.qq.com/s/of9C3l2cmzAVEt9opIgfKw
+
+损失函数也可以进行自动搜索学习吗？
+
+https://mp.weixin.qq.com/s/OX0C9h5l6xffcQt6HOe_tQ
+
+DetNAS：首个搜索物体检测Backbone的方法
+
 # Conv计算量分析
 
 I: Input

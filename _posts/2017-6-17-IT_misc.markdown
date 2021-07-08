@@ -27,7 +27,7 @@ category: resource
 
 归根到底，西雅图电脑公司只是个硬件公司，它并不重视软件的价值。所以虽然它的软件技术比MS这样的软件公司还强，但是却不懂得如何利用软件。因此没有把握好时代的脉搏，让MS占了便宜，也就不足为奇了。
 
-----
+---
 
 2019.7
 
@@ -37,7 +37,7 @@ https://github.com/microsoft/MS-DOS
 
 从代码来看，确实也就是几个星期的工作量
 
-----
+---
 
 https://mp.weixin.qq.com/s/ncdgNEXnUrQimOzoZzVrjA
 
@@ -191,7 +191,7 @@ https://mp.weixin.qq.com/s/k9gff0Ote_V9qtN7HAruBA
 
 https://mp.weixin.qq.com/s/kvINl4pL4_wD71e33jaUSg
 
-下一代cmos image sensor----有机光导薄膜图像传感器
+下一代cmos image sensor---有机光导薄膜图像传感器
 
 https://mp.weixin.qq.com/s/024h8tPvCPPUyuT53CCPWQ
 

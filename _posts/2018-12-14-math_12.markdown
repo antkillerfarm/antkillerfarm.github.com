@@ -109,7 +109,7 @@ https://mathworld.wolfram.com/
 
 一个数学宝库
 
-----
+---
 
 有一次正在做穿过欧洲的旅行，他与一个陌生人聊天，他很谦虚的自我介绍：“我是Daniel Bernoullis。”
 
@@ -117,17 +117,17 @@ https://mathworld.wolfram.com/
 
 Daniel从此之后在很多的场合深情的回忆起这一次经历把他当作他曾经听过的最衷心的赞扬。
 
-----
+---
 
 Klein和Poincare都在研究自守函数什么的，对于2维的情况，Poincare把自己的结果用Fuchs的名字来命名，因为这个人的东西他曾经看过，并且有很大的影响，Klein感到特别的不爽，他也得到了这样的结果。然而，Fuchs本人对此却一无所知，如此冠名，他自然觉得很不妥。
 
 后来，他和Poincare分别做3维的情况，无奈自己不是Poincare那样的天才，用功过度，体力不支，身体都垮了，从此结束了自己创造性的数学生涯。Poincare自己也不在乎这个东西，于是把3维自己得到的群命名为Klein群。
 
-----
+---
 
 高斯给出了正十七边形可以尺规作图的理论可能性，然而他并不会做。第一个真正的正十七边形尺规作图法直到1825年才由约翰尼斯·厄钦格（Johannes Erchinger）给出。现在比较通行的做法是1893年Herbert William Richmond给出的。距离高斯给出证明（1801年），差不多过了100年。
 
-----
+---
 
 https://mp.weixin.qq.com/s/zozViMoimcL6nJvyBnTQtQ
 
@@ -135,7 +135,7 @@ https://mp.weixin.qq.com/s/zozViMoimcL6nJvyBnTQtQ
 
 这里讲的是拓扑学中的欧拉公式：V−E+R=2，然而成年人的世界里没有Easy这个词，V−E+R会不会等于其他数呢？于是就有了Euler characteristic。
 
-----
+---
 
 《素数之恋》这本书不错，黎曼猜想的最佳科普读本。
 
@@ -145,7 +145,7 @@ Atiyah的高中在埃及读的（1941～1945），当时欧洲很多人为了躲
 
 >2019.1.11 Atiyah去世。
 
-----
+---
 
 有种素数叫做“工业级素数（Industrial-grade primes）”，定义是没有经过严格数学证明、但是通过了“可能素数判定法”（比如米勒-拉宾判定法）的整数。用这种方法判定大整数是否是素数不是完全准确，但速度非常快，而且不会漏掉任何素数。RSA加密法所需的大素数生成方式就很明显了：随机生成大整数，如果判断这个数可能是素数，再用精确但速度慢的素数判定法来判断这个数是否真的是素数。
 
@@ -153,13 +153,13 @@ https://www.zhihu.com/question/54779059
 
 RSA生成公私钥时质数是怎么选的？
 
-----
+---
 
 https://mp.weixin.qq.com/s/6hs0pqHqqg46wWL0rlgKJQ
 
 数学家轶闻录
 
-----
+---
 
 https://mp.weixin.qq.com/s/QSG9UEQu7hxwbqI_FgWhqA
 
@@ -169,35 +169,35 @@ https://mp.weixin.qq.com/s/zO9Za2tF7bYM0al9tIbdww
 
 费马最终定理
 
-----
+---
 
 https://mp.weixin.qq.com/s/rwKi8bKeGKiJg5WcZwRhlA
 
 听说这家粉笔厂倒闭，世界顶级数学家们开始疯狂囤货
 
-----
+---
 
 一小学数学老师布置作业，让学生抛硬币200次，记录它们的正反面，第二天以书面的形式交给老师检查，很多同学偷懒故意制造“随机性”，但是老师看一眼就知道哪个同学是认真记录，哪个是自己胡乱编的。
 
 因为随机丢200次硬币，连续出现6次连续为相同一面的概率，可通过计算得到高达99.8%，抛200次硬币出现6次连续为相同一面的事件极大可能发生。
 
-----
+---
 
 当初举办数学家大会前一年，陈省身希望国家领导能接见下当时在南开的几位国际数学家。报告打上去，中央办公厅的回复说领导那段时间有很多重要会议参加，没空接见。陈等人不死心，拖关系传信儿，领导知道后立刻同意亲自接见，并答应出席国际数学家大会。
 
-----
+---
 
 Boris Pavlovich Demidovich，1906～1971，苏联数学家。Moscow State University教授。代表作品：《Problems in Mathematical Analysis》。
 
 Vladimir A. Zorich，1936年生，苏联数学家。Moscow State University教授。代表作品：《Mathematical analysis》。
 
-----
+---
 
 http://www.matrix67.com/
 
 一个数学blog
 
-----
+---
 
 卡尔.皮尔逊在皇家科学院宣读过的获奖文章，由于数学过多，被生物学家们认为不适合在生物杂志发表。于是，1901年，由高尔顿成立的生物统计信托基金慷慨资助，高尔顿、威尔登以及皮尔逊三人共同担任编委，统计学界最具有影响力的杂志之一——《生物统计》（Biometrika）就此诞生了。
 
@@ -227,7 +227,7 @@ https://mp.weixin.qq.com/s/tmkqSxkk4mGjkJIKwtov7g
 
 内曼（Jerzy Neyman）
 
-----
+---
 
 弹球是展示Zeno现象的最简单模型之一。一般来说，Zeno行为的特征可非正式地表示为某些混合动力系统（Hybrid System）在有限时间间隔内发生无限数量的事件。在弹球模型中，球在失去能量的同时，将以越来越小的时间间隔与地面发生多次碰撞。因此，模型会经历Zeno行为。
 
@@ -237,6 +237,6 @@ https://blog.csdn.net/handsomeswp/article/details/109535534
 
 Python动画没有秘密
 
-----
+---
 
 Yau Shing-Tung=姚兴腾

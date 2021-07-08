@@ -79,7 +79,7 @@ https://mp.weixin.qq.com/s/RKgWxwHQwJJ-4I4NQFoKTw
 
 **水平扩展（scale out）**：通过添加更多的机器到分布式系统中，提高整个系统的处理能力。
 
-----
+---
 
 https://mp.weixin.qq.com/s/12s9JUxVDqAnLAeqc_de8w
 

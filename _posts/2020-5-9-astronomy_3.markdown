@@ -15,7 +15,7 @@ https://news.qq.com/a/20180927/005739.htm
 
 据《财经》报道，从融资和估值来看，蓝箭航天、零壹空间、星际荣耀已经成为目前众多民营航天企业的第一梯队，备受市场的关注。除此之外，还包括翎客航天、星途探索、九州云箭、灵动飞天、深蓝航天等。
 
-----
+---
 
 ![](/images/img4/chang_e.png)
 
@@ -97,7 +97,7 @@ https://www.zhihu.com/question/465899092
 
 ![](/images/img2/Hohmann.gif)
 
-----
+---
 
 《火星叔叔马丁》、《异星战场之火星公主》。
 
@@ -105,7 +105,7 @@ https://mp.weixin.qq.com/s/oHO6TZuFGeGdDbACdOjS9w
 
 马丁叔叔所在的火星，有公主吗？
 
-----
+---
 
 F´(F Prime)是一个组件驱动的框架，可以快速开发和部署航天飞行及其他嵌入式软件应用程序。而F´也是火星无人机“机智号”所用的飞行软件框架，它刚由毅力号携带到火星。
 
@@ -119,7 +119,7 @@ https://mp.weixin.qq.com/s/x9Nps_oGoVQd2PW3H2VdyA
 
 人类刚给火星送去Linux系统，以及一款安卓手机芯片
 
-----
+---
 
 格鲁什科和萨格尔耶夫认为，苏联应该放弃失败率居高不下的火星探测，不在这一领域与美国人竞争，而专注于十分成功的金星探测计划。他们及其支持者也被戏称为“金星人”。
 
@@ -131,13 +131,13 @@ https://mp.weixin.qq.com/s/xWBSzEfKAi2pMUldp0zL9w
 
 先发未能制人，苏联探火为何成果寥寥
 
-----
+---
 
 ![](/images/img4/walle.jpg)
 
 ![](/images/img4/walle_2.jpg)
 
-----
+---
 
 https://mp.weixin.qq.com/s/SqL5WlQXQgNNiXHACfeN1A
 
@@ -349,7 +349,7 @@ https://mp.weixin.qq.com/s/1Jm00gCel41frG43oT9yyA
 
 他是探月英雄，但没登上过月球（Michael Collins）
 
-----
+---
 
 ![](/images/img3/india_moon.jpg)
 

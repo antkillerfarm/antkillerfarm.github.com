@@ -33,7 +33,7 @@ https://github.com/trending/python?since=monthly
 
 这个可以看到python的月度趋势，便于分析技术热点。其他语言可以此类推。
 
-----
+---
 
 `svn checkout https://github.com/rain1024/slp2-pdf/trunk/complete-book-pdf`
 
@@ -41,11 +41,11 @@ https://github.com/trending/python?since=monthly
 
 要点：将`tree/master`换成`trunk`。
 
-----
+---
 
 在搜索栏输入`stars:>10000`可以查看star最多的项目。
 
-----
+---
 
 在浏览器中输入：
 
@@ -245,7 +245,7 @@ https://github.com/rasbt/markdown-toclify
 
 vscode有个叫做`Markdown PDF`的插件，可以将markdown转化为PDF。
 
-----
+---
 
 https://mp.weixin.qq.com/s/CHca0V7LR4NhomtLIPhc4w
 

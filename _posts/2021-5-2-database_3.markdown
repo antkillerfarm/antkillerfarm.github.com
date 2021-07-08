@@ -35,7 +35,7 @@ https://mp.weixin.qq.com/s/CMcgybfgya7ftTUeUFigKg
 
 SQL查询语句总是先执行SELECT？你们都错了
 
-----
+---
 
 当Explain与SQL语句一起使用时，MySQL会显示来自优化器关于SQL执行的信息。也就是说，MySQL解释了它将如何处理该语句，包括如何连接表以及什么顺序连接表等。
 

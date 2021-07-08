@@ -104,7 +104,7 @@ MT算法的实现也很多了，参见原作者的官网：
 
 http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html
 
-----
+---
 
 除了MT算法之外，Philox算法也是比较常用的，且后者更适合并行，速度也更快。
 
@@ -122,7 +122,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/Tool/Gcc/random
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/Tool/Gcc/random/philox_1.c
 
-----
+---
 
 https://bashtage.github.io/randomgen/index.html
 

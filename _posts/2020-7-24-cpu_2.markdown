@@ -231,7 +231,7 @@ https://zhuanlan.zhihu.com/p/34003929
 
 >Visual Studio有个有趣的特性是debug编译后，会把0xcc（INT 3）填入代码的空隙，这样一旦程序越界就会被VS捕捉而容易发现错误。而0xCCCC在中国的GBK编码是“烫”。有中国程序员翻看内存到代码段会发现很多"烫烫烫"，不明所以，以为发生了什么神奇的事情。
 
-----
+---
 
 https://mp.weixin.qq.com/s/Cij_95iLbAm0AEtrSb72_A
 

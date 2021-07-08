@@ -95,7 +95,7 @@ Python还能实现哪些AI游戏？
 
 ![](/images/img3/DRL.png)
 
-----
+---
 
 在Nature DQN出来之后，肯定很多人在思考如何改进它。那么DQN有什么问题呢？
 

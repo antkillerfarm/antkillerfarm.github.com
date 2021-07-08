@@ -107,7 +107,7 @@ Gabor滤波器
 
 基于OpenCV的Gabor变换及特征提取
 
-----
+---
 
 https://mp.weixin.qq.com/s/RS0Zw6iLFQBUlpOdkuoFbg
 

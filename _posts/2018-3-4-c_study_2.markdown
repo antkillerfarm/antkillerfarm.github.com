@@ -17,7 +17,7 @@ category: language
 
 只好拿华丽的分隔符来表示引用的内容。
 
-----
+---
 
 误区一:gcc只能编译c代码,g++只能编译c++代码
 
@@ -35,7 +35,7 @@ category: language
 
 原因基本同第一条。此外，g++基本等同gcc -lstdc++。
 
-----
+---
 
 因此，某些时候编不过去，可以试试换换cc的值。
 
@@ -201,7 +201,7 @@ std::unique_ptr<std::FILE, decltype(&close_file)> fp(std::fopen("demo.txt", "r")
 
 一般来说，`make_XXX`在标准库中，通常都带有new对象和相关控制结构的操作，除了上述的`make_unique`之外，类似的还有`make_pair`等。
 
-----
+---
 
 `shared_ptr`既然号称共享，那自然有一定的共享规则在：
 
@@ -227,7 +227,7 @@ f(p.get()); // OK
 
 虽然，类似`p->YYY()`的用法和普通指针一致，但是作为f函数参数的时候，就不行了。
 
-----
+---
 
 参考：
 
