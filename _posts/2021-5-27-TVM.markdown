@@ -440,3 +440,7 @@ https://mp.weixin.qq.com/s/Mj7xI5rFTxKaXswYi9_mRQ
 https://mp.weixin.qq.com/s/TjCUCbXL3oSgJNYoEltgrg
 
 7个提升PyTorch性能的技巧
+
+https://zhuanlan.zhihu.com/p/275755543
+
+一款全平台轻量级pytorch推理框架Msnhnet
