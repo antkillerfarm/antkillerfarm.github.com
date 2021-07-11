@@ -243,6 +243,16 @@ https://mp.weixin.qq.com/s/1jYvcT5-XZuwYxBBRPufjA
 
 ---
 
+大陆谷物（Continental）、库克工业（Cook industries）、阿彻丹尼尔斯米德兰（ADM）、邦吉（Bunge）、嘉吉（Cargill）和路易达孚（Louis Dreyfus）。
+
+半个世纪后，大陆谷物、库克工业已不复存在，六大粮商变四大粮商，也就是ABCD，在美国政府的扶植下，经过几轮大规模的整合，最终统治了全球七成以上的粮食贸易。
+
+https://user.guancha.cn/main/content?id=510957
+
+美国如何联手四大粮商，接管了全世界的饭碗
+
+---
+
 https://www.zhihu.com/answer/370657574
 
 军事里说的马润指什么？
@@ -282,25 +292,3 @@ https://mp.weixin.qq.com/s/pwWRC0ewE4GOxFAQ35pnZw
 https://www.zhihu.com/answer/925610213
 
 用铁做军粮罐头在战争期间是不是一种浪费？
-
-## 化学工业
-
-https://wallstreetcn.com/articles/250536
-
-巴斯夫原本是它小弟，德国化工产业的代名词：揭秘史前化工巨兽 IG 法本
-
-http://blog.sina.com.cn/s/blog_52f526870102w7xo.html
-
-历经百年兴衰 德国化工三巨头为何屹立不倒
-
-http://www.weixinso.com/document/KPyZBb.html
-
-陶氏化学发展史
-
-http://www.pnchina.com/cn/Detail.aspx?id=1361250587
-
-业界经典：陶氏化学Styrofoam之75年
-
-https://new.qq.com/omn/20180819/20180819A011JT.html
-
-起于硝烟的化工帝国：杜邦是怎么与化工行业同呼吸共命运的？
