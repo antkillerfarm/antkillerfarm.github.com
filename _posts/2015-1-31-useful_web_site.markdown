@@ -390,6 +390,8 @@ http://sports.sina.com.cn/z/CFFixtures/
 
 ## 科研人生
 
+![](/images/img4/dunning-kruger-effect-curve.png)
+
 送东阳马生序
 
 https://mp.weixin.qq.com/s/QMUWtI9jICOkLMlz2E1sUg

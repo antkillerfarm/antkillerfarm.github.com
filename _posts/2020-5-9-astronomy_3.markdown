@@ -7,6 +7,28 @@ category: Nature
 * toc
 {:toc}
 
+# SpaceX（续）
+
+目前最出风头的三家私人航天公司，按技术水平来比较，大致是这样的：
+
+维珍：本科在读。
+
+蓝色起源：名校博士，目前在某知名教授手下做博士后，未来很有可能拿诺贝尔奖。
+
+SPACEX：靠博士论文拿了一个诺贝尔奖，刚当教授又拿了一个诺贝尔奖，公然宣称本学科内除了自己外，都是傻B，在学界名声很坏。
+
+https://www.zhihu.com/question/469479395
+
+如何评价维珍银河创始人布兰森成功完成首次亚轨道旅行，全程失重4分钟，最高点海拔86千米？
+
+---
+
+超声速燃烧冲压式发动机，它简称超燃冲压发动机，可以在攀升过程中从大气里获取氧气。放弃携带氧化剂，从飞行中获取氧气，节省重量，就意味着在消耗相同质量推进剂的条件下，超燃冲压发动机能够产生4倍于火箭的推力。
+
+https://www.zhihu.com/question/268278478
+
+腾云工程的空天飞机和美国退役的航天飞机有区别么？
+
 # 中国航天
 
 https://news.qq.com/a/20180927/005739.htm
@@ -320,43 +342,3 @@ https://mp.weixin.qq.com/s/v3HNhV08vWYPGdeXAZ47ag
 https://view.inews.qq.com/a/TEC2019072100124408
 
 一文俯瞰从阿波罗1号到17号全舰队
-
-![](/images/img3/Apollo11_AnnotatedHero.jpg)
-
-https://mp.weixin.qq.com/s/Y1hQJHFB5InSZNB2T2KfVw
-
-10万镜子反射月光，组成3.6平方公里巨幅头像，谷歌花式纪念登月50年
-
-https://mp.weixin.qq.com/s/d6nmsH10qchY1pP8CibiBA
-
-跌跌撞撞的美国
-
-https://mp.weixin.qq.com/s/-KHsG9lZknY952U_LTV7qg
-
-天气太热了，我们去太阳系度假吧
-
-https://mp.weixin.qq.com/s/EPMdW1qxQVl0MVUSjhWxyQ
-
-NASA传奇数学家去世，她曾笔算了登月轨道
-
-由于飞行前的制造和测试错误，氧气罐中的电线暴露了出来。在那个致命的夜晚，氧气罐中暴露的电线产生的火花引发了火灾，引爆了氧气罐，将服务舱外的隔热层炸飞。。。
-
-https://mp.weixin.qq.com/s/NmS1dbeIsQomsWYI8-OyZg
-
-阿波罗13号“伟大失败”50周年，NASA发布纪录片追忆奥德赛号逃生往事
-
-https://mp.weixin.qq.com/s/1Jm00gCel41frG43oT9yyA
-
-他是探月英雄，但没登上过月球（Michael Collins）
-
----
-
-![](/images/img3/india_moon.jpg)
-
-https://www.zhihu.com/question/344795065/
-
-印度“月船2号”登陆月球失败，失败原因可能是什么？有什么影响和教训？
-
-https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
-
-印度失联的月球探测器依然成功了95%？那些年我们一起追过的月球

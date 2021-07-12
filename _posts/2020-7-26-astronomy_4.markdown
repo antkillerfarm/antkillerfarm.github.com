@@ -7,6 +7,48 @@ category: Nature
 * toc
 {:toc}
 
+# 阿波罗50年（续）
+
+![](/images/img3/Apollo11_AnnotatedHero.jpg)
+
+https://mp.weixin.qq.com/s/Y1hQJHFB5InSZNB2T2KfVw
+
+10万镜子反射月光，组成3.6平方公里巨幅头像，谷歌花式纪念登月50年
+
+https://mp.weixin.qq.com/s/d6nmsH10qchY1pP8CibiBA
+
+跌跌撞撞的美国
+
+https://mp.weixin.qq.com/s/-KHsG9lZknY952U_LTV7qg
+
+天气太热了，我们去太阳系度假吧
+
+https://mp.weixin.qq.com/s/EPMdW1qxQVl0MVUSjhWxyQ
+
+NASA传奇数学家去世，她曾笔算了登月轨道
+
+由于飞行前的制造和测试错误，氧气罐中的电线暴露了出来。在那个致命的夜晚，氧气罐中暴露的电线产生的火花引发了火灾，引爆了氧气罐，将服务舱外的隔热层炸飞。。。
+
+https://mp.weixin.qq.com/s/NmS1dbeIsQomsWYI8-OyZg
+
+阿波罗13号“伟大失败”50周年，NASA发布纪录片追忆奥德赛号逃生往事
+
+https://mp.weixin.qq.com/s/1Jm00gCel41frG43oT9yyA
+
+他是探月英雄，但没登上过月球（Michael Collins）
+
+---
+
+![](/images/img3/india_moon.jpg)
+
+https://www.zhihu.com/question/344795065/
+
+印度“月船2号”登陆月球失败，失败原因可能是什么？有什么影响和教训？
+
+https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
+
+印度失联的月球探测器依然成功了95%？那些年我们一起追过的月球
+
 # 天文杂谈
 
 恩克彗星是人们发现的第一颗短周期彗星，至今也还没有找到过周期比它更短的彗星。恩克用6个星期的时间，计算出这颗彗星的轨道，周期为3.3年，并且预言1822年5月24日再回到近日点，果然它准时回来了，成继哈雷彗星之后，第二颗按预言回归的彗星。
@@ -262,39 +304,3 @@ https://mp.weixin.qq.com/s/oP5prD-KuxI8CNVo16arVQ
 https://mp.weixin.qq.com/s/Sija998_IKP2G0GQEYynCw
 
 知否知否，月球种菜可否？
-
-https://mp.weixin.qq.com/s/rvH-gvgbjLITyP8QOuzgKA
-
-我们在新疆发现了一个建天文台的好地方
-
-https://mp.weixin.qq.com/s/03FiFl8hK8Ilbe0Amh278A
-
-发射至今44年，已飞出日球顶层的旅行者1号仍在回传数据！是如何实现的？
-
-https://mp.weixin.qq.com/s/BsAbS1QadPcBDqHYr7eiQA
-
-你绝对没见过的4种天气
-
-https://mp.weixin.qq.com/s/nrjY7LOY_XuytJ2xXk3K1Q
-
-来自星际空间的持续信号
-
-https://zhuanlan.zhihu.com/p/375675282
-
-美国超级工程，核弹炸月球
-
-https://mp.weixin.qq.com/s/I7iLRXWAttIomGp-ra61AA
-
-日冕观测进化史：日食太少，我们就造一个出来
-
-https://mp.weixin.qq.com/s/rBFmWjHDOcdUz3uKQ3HqMA
-
-宇宙的数字
-
-https://mp.weixin.qq.com/s/nCSgobpyy4-U9z1ycMXg0g
-
-在美丽的稻城，我们建了一个漂亮的“天阵”，它的名字叫拉索
-
-https://mp.weixin.qq.com/s/xfJ_EiAoW0i_k_zUWHoQTQ
-
-先磕为敬！你们两颗星星为什么这么浪漫这么甜？（冥王星和卡戎）Charon是冥王的船夫，负责将逝者摆渡过冥河。

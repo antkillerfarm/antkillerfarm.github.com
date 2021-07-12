@@ -404,6 +404,28 @@ https://mp.weixin.qq.com/s/u3VSyEtdcIgp8dCbwCaavA
 
 SSH只能用于远程Linux主机？那说明你见识太小了！
 
+# Linux知识图谱
+
+![](/images/article/linux_perf_tools_full.png)
+
+![](/images/img3/linux_kernel_map.png)
+
+原图地址：
+
+http://www.brendangregg.com/linuxperf.html
+
+![](/images/img4/Linux-storage-stack-diagram_v4.10.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/-iCuxQjSghtDGaPMqaDSgQ
+
+Linux思维导图整理
+
+https://mp.weixin.qq.com/s/sLyD6z2xBXRxfBZnImTgtQ
+
+40+张最全Linux/C/C++思维导图，收藏！
+
 # Linux参考资源
 
 https://www.kernel.org/doc/html/latest/
@@ -437,27 +459,3 @@ https://mp.weixin.qq.com/s/2QAm6F109LV2koC64xIpqA
 https://mp.weixin.qq.com/s/0jR4Y3sT8RRW7FYEOmBsXg
 
 一口气搞懂文件系统，就靠这25张图了
-
-https://mp.weixin.qq.com/s/Y_GYtL9m3zmY-5VZMbCfWg
-
-Linux中用户的简介与管理
-
-https://linux.cn/article-8290-1.html
-
-漫画赏析：Linux内核到底长啥样
-
-https://mp.weixin.qq.com/s/IucIsbJPo4eUUopV8xNN9w
-
-图解Linux程序的链接原理
-
-https://mp.weixin.qq.com/s/zBtdhjAOjwcJbGluccwOlA
-
-我和面试官之间关于操作系统的一场对弈！写了很久，希望对你有帮助！
-
-https://mp.weixin.qq.com/s/3Pp7wkDO6Rnxb5aZP0sacw
-
-一文了解操作系统I/O
-
-https://mp.weixin.qq.com/s/xM8uvYbX6VY8MVZrYkvCUg
-
-链接选项rpath的原理和应用

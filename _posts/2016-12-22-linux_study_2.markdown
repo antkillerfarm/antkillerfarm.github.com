@@ -42,7 +42,7 @@ sigwait(&sigs_to_catch, &sig);
 
 这种方法显然比`while (1);`这样的忙等待，有效率的多。
 
-# 查看内存使用情况
+# 查看内存 & CPU
 
 ## top
 
@@ -112,7 +112,7 @@ https://mp.weixin.qq.com/s/3fNLa-yO4fUWO3nO9id1iA
 
 这款Python版终端资源监控器，火了！
 
-# 查看CPU核数
+## 查看CPU核数
 
 复杂版：
 
@@ -224,15 +224,13 @@ https://mp.weixin.qq.com/s/Od17bQhpd3FYE2GQd-kvaQ
 
 iOS代码染色原理及技术实践（gcov，gcno，gcda）
 
-# Linux命令/工具
+# 查看网络
 
-https://mp.weixin.qq.com/s/7ZVpdQOwNkIjW-16Mp8dcA
+查看网络主要使用`ss`和`netstat`命令。
 
-Linux企业运维人员最常用150个命令汇总
+`nethogs`：按进程查看网速。
 
-https://mp.weixin.qq.com/s/qspyBQ7MKWBvIQjt0vcBGw
-
-Linux运维必备的40个命令总结
+参考：
 
 https://mp.weixin.qq.com/s/LwWhHvc2Zdvv2OYBG6kCyw
 
@@ -245,6 +243,24 @@ https://mp.weixin.qq.com/s/yByM4-526GwIVdJC1ZoE-A
 https://mp.weixin.qq.com/s/-Plk7ZrqZFnf4hfP5FcvPQ
 
 Linux网络状态工具ss命令使用详解
+
+https://mp.weixin.qq.com/s/Xn6VTXBCP1t-lVnHmroEGQ
+
+Linux网络分析必备技能：tcpdump实战详解
+
+https://mp.weixin.qq.com/s/DPK00_AkQVMMLf_lByCimQ
+
+Linux网络流量监控利器iftop中文入门指南
+
+# Linux命令/工具
+
+https://mp.weixin.qq.com/s/7ZVpdQOwNkIjW-16Mp8dcA
+
+Linux企业运维人员最常用150个命令汇总
+
+https://mp.weixin.qq.com/s/qspyBQ7MKWBvIQjt0vcBGw
+
+Linux运维必备的40个命令总结
 
 https://mp.weixin.qq.com/s/DG7RjJ_HXSRb6nAZuoTz3g
 
@@ -273,14 +289,6 @@ https://mp.weixin.qq.com/s/-m8q2TzlfpvSaPRqGsQPbQ
 https://mp.weixin.qq.com/s/qii7M6hOIBf9kgbmWpc3XQ
 
 Linux交互式图形可视化磁盘使用软件（Filelight）
-
-https://mp.weixin.qq.com/s/Xn6VTXBCP1t-lVnHmroEGQ
-
-Linux网络分析必备技能：tcpdump实战详解
-
-https://mp.weixin.qq.com/s/DPK00_AkQVMMLf_lByCimQ
-
-Linux网络流量监控利器iftop中文入门指南
 
 # 时间的表示方法
 
@@ -449,25 +457,3 @@ DosBox是Linux平台玩DOS老游戏的法宝。
 如果需要修改的话，可以使用JOE。
 
 `sudo apt install joe`
-
-# Linux知识图谱
-
-![](/images/article/linux_perf_tools_full.png)
-
-![](/images/img3/linux_kernel_map.png)
-
-原图地址：
-
-http://www.brendangregg.com/linuxperf.html
-
-![](/images/img4/Linux-storage-stack-diagram_v4.10.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/-iCuxQjSghtDGaPMqaDSgQ
-
-Linux思维导图整理
-
-https://mp.weixin.qq.com/s/sLyD6z2xBXRxfBZnImTgtQ
-
-40+张最全Linux/C/C++思维导图，收藏！

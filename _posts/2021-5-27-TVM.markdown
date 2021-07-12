@@ -203,6 +203,10 @@ https://mp.weixin.qq.com/s/Kt4xDLo-NRui8Whl0DqcSA
 
 Data Flow和Control Flow
 
+https://zhuanlan.zhihu.com/p/388452164
+
+tvm or mlir？
+
 # GLOW
 
 代码：

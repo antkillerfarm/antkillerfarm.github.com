@@ -9,6 +9,30 @@ category: linux
 
 # Linux参考资源
 
+https://mp.weixin.qq.com/s/Y_GYtL9m3zmY-5VZMbCfWg
+
+Linux中用户的简介与管理
+
+https://linux.cn/article-8290-1.html
+
+漫画赏析：Linux内核到底长啥样
+
+https://mp.weixin.qq.com/s/IucIsbJPo4eUUopV8xNN9w
+
+图解Linux程序的链接原理
+
+https://mp.weixin.qq.com/s/zBtdhjAOjwcJbGluccwOlA
+
+我和面试官之间关于操作系统的一场对弈！写了很久，希望对你有帮助！
+
+https://mp.weixin.qq.com/s/3Pp7wkDO6Rnxb5aZP0sacw
+
+一文了解操作系统I/O
+
+https://mp.weixin.qq.com/s/xM8uvYbX6VY8MVZrYkvCUg
+
+链接选项rpath的原理和应用
+
 https://www.cnblogs.com/Malphite/p/10405465.html
 
 Makefile中的-rpath/-rpath-link
