@@ -165,6 +165,10 @@ VAE是直接计算生成图片和原始图片的均方误差而不是像GAN那�
 
 ![](/images/img3/VAE_GAN.jpg)
 
+![](/images/img4/VAE.jpg)
+
+![](/images/img4/GAN.jpg)
+
 上图给出了VAE和GAN的联系和区别。
 
 无论是VAE还是GAN，我们在接触一个新模型的时候都需要注意以下几点：
