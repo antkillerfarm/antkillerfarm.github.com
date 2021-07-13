@@ -213,6 +213,14 @@ https://mp.weixin.qq.com/s/_RD_jY-gJFxlT9DX2jGDAA
 
 只有170字节，最小的64位Hello World程序这样写成
 
+---
+
+elf格式除了代码和数据外还有很多有用的信息，可以被标准boot loader识别，你如果不想自己花费10+天去自己实现stage1和stage2的bootloader的话，elf文件可以帮你省很多时间，因为grub可以直接加载，qemu也可以直接运行。
+
+https://www.zhihu.com/question/49580321
+
+C如何编译出一个不需要操作系统的程序？
+
 # 同步锁
 
 read-write lock、RCU lock、spin lock

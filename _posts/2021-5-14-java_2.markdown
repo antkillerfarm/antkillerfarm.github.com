@@ -147,6 +147,10 @@ https://mp.weixin.qq.com/s/7CD_F0hEZtYRK0fvBWb_gQ
 
 从0到1实现浏览器端沙盒运行环境
 
+https://hllvm-group.iteye.com/group/topic/37596
+
+各JavaScript引擎的简介，及相关资料/博客收集帖
+
 # python++
 
 https://mp.weixin.qq.com/s/5xs1ivkrUAP_Rr9P-EMc5g
