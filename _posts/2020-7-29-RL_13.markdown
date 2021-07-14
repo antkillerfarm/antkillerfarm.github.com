@@ -174,6 +174,10 @@ https://mp.weixin.qq.com/s/b1hXMbDKP_QZcBlmY7VtKQ
 
 最新《Imitation Learning》教程，63页ppt，微软Kamil Ciosek
 
+https://mp.weixin.qq.com/s/5_UGxPYRXuuWkwchEUSc9w
+
+最新“模仿学习Imitation Learning”综述论文，21页概述进展与分类
+
 # RL与神经科学
 
 Pavlov Model（1901）

@@ -360,3 +360,7 @@ Android性能优化系列：Java内存优化篇
 https://www.jianshu.com/p/80013a768a45
 
 Android soong build系统介绍
+
+https://mp.weixin.qq.com/s/xQ6w1qlMjgxlP8QpF34GVA
+
+不吹不擂，一文揭秘鸿蒙操作系统

@@ -275,6 +275,14 @@ https://mp.weixin.qq.com/s/ed93ZOHB62XKIREnOwIJIQ
 
 ---
 
+![](/images/img4/cost.jpg)
+
+https://www.zhihu.com/question/471620540
+
+马斯克称猎鹰9号回收和翻新过程仅占成本的10%，参考维护成本高昂的航天飞机，此话可信度如何？
+
+---
+
 卡门线（Kármán line）是一条位于海拔100 km（330,000英尺）处，被大部分认可为外太空与地球大气层的界线的分界线。
 
 ---

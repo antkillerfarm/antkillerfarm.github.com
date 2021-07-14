@@ -71,6 +71,10 @@ https://mp.weixin.qq.com/s/RKgWxwHQwJJ-4I4NQFoKTw
 
 分布式锁夺命连环9问
 
+https://mp.weixin.qq.com/s/imM3_MIp6CS_8DVL8bGr_Q
+
+隔壁的老哥又让我用分布式锁
+
 ## 杂谈
 
 面对大规模数据的计算和存储时，有两种处理思路：
