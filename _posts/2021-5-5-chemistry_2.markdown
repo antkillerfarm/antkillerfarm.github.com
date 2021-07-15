@@ -69,6 +69,14 @@ https://mp.weixin.qq.com/s/At7zUHDamjq0l6-VAdqX1w
 
 ---
 
+黄铁矿主要由“不值钱”的二硫化亚铁（FeS2）组成。从外表上看，黄铁矿也泛着淡黄色的金光，由于这种迷惑性，它也常常被称为“愚人金”。
+
+https://mp.weixin.qq.com/s/dnSkSIf3pqroSZWgTi0MiA
+
+那里头，又发现金！
+
+---
+
 https://mp.weixin.qq.com/s?__biz=MjM5MDE3OTk2Ng==&mid=2657461706&idx=1&sn=589d7a4d65f2e2fdd696100e06b1a257
 
 高考成绩接近满分，却被清华北大拒绝，被称“中国最帅科学家”（中国油田分层开采和化学驱油技术的奠基人——王德民）
@@ -272,27 +280,3 @@ http://war.163.com/15/0108/09/AFE8A8LU00014J0G.html
 https://zhuanlan.zhihu.com/p/24366992
 
 与生活息息相关:细数那些被二战"捧红"的民用产品!
-
-https://zhuanlan.zhihu.com/p/24326554
-
-吃货慎入!看看二战时期美军野战口粮
-
-http://www.sohu.com/a/64190509_139533
-
-曾经象征食品工业繁荣的罐头，为何已经远离了你的生活
-
-https://mp.weixin.qq.com/s/GHgfNAkV7ttXfasGkM083A
-
-用算法改造过的植物肉，有兴趣试试么？
-
-https://www.zhihu.com/question/21171331
-
-火腿肠里真的有肉吗？
-
-https://mp.weixin.qq.com/s/pwWRC0ewE4GOxFAQ35pnZw
-
-掺假食品的泛滥
-
-https://www.zhihu.com/answer/925610213
-
-用铁做军粮罐头在战争期间是不是一种浪费？

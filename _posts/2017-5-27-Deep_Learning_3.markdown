@@ -226,6 +226,10 @@ https://www.jianshu.com/p/95a8f035c86c
 
 归一化（Normalization）、标准化（Standardization）和中心化/零均值化（Zero-centered）
 
+https://mp.weixin.qq.com/s/gWcejm_CMGPKes6tUhbQ5A
+
+BatchNorm的避坑指南
+
 ## 鞍点
 
 在微分方程中，沿着某一方向是稳定的，而另一方向是不稳定的奇点，叫做鞍点（Saddle point）。在泛函中，既不是极大值点也不是极小值点的临界点，叫做鞍点。在矩阵中，一个数在所在行中是最大值，而在所在列中是最小值，则被称为鞍点。在物理上要广泛一些，指在一个方向是极大值，另一个方向是极小值的点。

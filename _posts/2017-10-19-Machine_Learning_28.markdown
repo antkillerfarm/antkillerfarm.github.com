@@ -137,6 +137,22 @@ https://mp.weixin.qq.com/s/ou2OtXLE9-3jpaODHDumzQ
 
 调参到头秃？你需要这份自动超参搜索技术攻略
 
+## FEDOT
+
+FEDOT是一个AutoML框架。
+
+![](/images/img4/FEDOT.png)
+
+代码：
+
+https://github.com/nccr-itmo/FEDOT
+
+参考：
+
+https://zhuanlan.zhihu.com/p/386221257
+
+通过FEDOT将AutoML用于时间序列数据
+
 ## 参考
 
 https://mp.weixin.qq.com/s/-0--sZXjMvFKxxo87w4udg

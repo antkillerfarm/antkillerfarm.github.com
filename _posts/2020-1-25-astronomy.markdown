@@ -241,6 +241,10 @@ https://mp.weixin.qq.com/s/n5rYB_hiren0cxA_OymWtg
 
 “大变暗”谜题揭晓！
 
+https://mp.weixin.qq.com/s/UvzS2Hsza-ZJocVwgKYOmQ
+
+新型超新星确认！
+
 ## 流浪地球
 
 https://mp.weixin.qq.com/s/O8tAEBMmZ29N1fr7BGW_UQ

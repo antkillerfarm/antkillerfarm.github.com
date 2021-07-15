@@ -381,6 +381,10 @@ https://mp.weixin.qq.com/s/0NvbRK41BT4yinFUuVxa3A
 
 发现一个木马，竟然偷传我珍藏几十G的视频！
 
+https://j00ru.vexillium.org/syscalls/nt/64/
+
+Windows X86-64 System Call Table
+
 # Autoware
 
 Autoware是另一个开源的无人驾驶平台。不像Apollo，没有百度这样的强势公司的介入，社区氛围更浓一些，相对的，功能也要弱一些。

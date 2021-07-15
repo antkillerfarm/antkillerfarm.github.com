@@ -240,3 +240,7 @@ https://mp.weixin.qq.com/s/g65jpWaf3Oo31zYCyquH1Q
 https://mp.weixin.qq.com/s/r3pGr3FD1dGDzw2zgQdK9g
 
 简易快速数据增强库使用手册
+
+https://mp.weixin.qq.com/s/pny699UC-YzBIzxWRvPasw
+
+全方位支持图文和音视频、100+增强功能，Facebook开源数据增强库AugLy
