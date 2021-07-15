@@ -111,6 +111,10 @@ https://www.zhihu.com/question/465899092
 
 如何看待中国空间站操作界面都是中文？
 
+https://mp.weixin.qq.com/s/klSndj6LPENaW53OPq15Yg
+
+中国在太空用上了机械臂，却被美国人质疑会去抓他们的卫星？
+
 # 火星探测
 
 在太空动力学，霍曼转移轨道（或译为郝曼转移轨道，Hohmann transfer orbit）是一种变换太空船轨道的方法，途中只需两次引擎推进，相对地节省燃料。此种轨道操纵名称来自Walter Hohmann，他于1925年出版了相关著作。

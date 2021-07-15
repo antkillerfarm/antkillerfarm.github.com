@@ -225,6 +225,10 @@ https://mp.weixin.qq.com/s/mtoEnRf7kad4JRcZ-qY40A
 
 你的人生写照：桥刚修好，河就逃了
 
+https://mp.weixin.qq.com/s/nMhE_397rZX-_7bq0Roq4Q
+
+世界上最没用的桥！他们刚在河上修好一座桥，台风就来了，结果河流被吹到了桥的外面......
+
 https://mp.weixin.qq.com/s/v79QDol1ulEzllqK3niLnw
 
 这个时代，属于海洋！

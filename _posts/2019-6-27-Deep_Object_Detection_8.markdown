@@ -383,6 +383,10 @@ https://mp.weixin.qq.com/s/HmUhlw90b2aTsoEwBdYbdQ
 
 目标检测二十年技术综述
 
+https://mp.weixin.qq.com/s/cWCwcTA01oBy0BM3qRHb4Q
+
+综述：目标检测二十年（2001-2021）
+
 https://mp.weixin.qq.com/s/S1IrgEqS1Q4xqGl5adNrlg
 
 目标检测近年综述

@@ -277,6 +277,14 @@ https://mp.weixin.qq.com/s/w4RmWCZkyNlhjRH1oDN6AQ
 
 45张图深度解析Netty架构与原理
 
+https://zhuanlan.zhihu.com/p/23488863
+
+Java NIO浅析
+
+https://mp.weixin.qq.com/s/mcI6QUW0naOmL3PMiKzLdw
+
+如何用Netty写一个高性能的分布式服务框架？
+
 ## synchronized
 
 https://blog.csdn.net/javazejian/article/details/72828483

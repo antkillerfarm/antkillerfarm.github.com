@@ -39,6 +39,10 @@ https://zhuanlan.zhihu.com/p/41287237
 
 点云感知CVPR 2018论文总结
 
+https://zhuanlan.zhihu.com/p/103640399
+
+Deep Learning for 3D Point Clouds: A Survey论文阅读
+
 https://mp.weixin.qq.com/s/fPj4wMtiFX55c_UjNsQnBg
 
 PointCNN全面刷新测试记录：山东大学提出通用点云卷积框架

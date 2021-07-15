@@ -47,7 +47,7 @@ a = Add(b,c);
 
 1.使用nm命令查看libgcc.a中的符号表，可以查到__adddf3在_addsub_df.o中。
 
-2.使用ar命令的d选项从libgcc.a中去掉_addsub_df.o。
+2.使用`ar -d`从libgcc.a中去掉_addsub_df.o。
 
 3.在链接时使用FPU函数库
 
@@ -57,7 +57,7 @@ a = Add(b,c);
 
 ```c
 float64 a, b,c;
-a = 2*PI * (b - c) / 365.25;
+a = 2 * PI * (b - c) / 365.25;
 ```
 
 机器执行这段代码会进行几次运算呢？
@@ -94,7 +94,7 @@ a = 2*PI * (b - c) / 365.25;
 void main()
 {
   float64 a, b,c;
-  a = 2*PI * (b - c) / 365.25;
+  a = 2 * PI * (b - c) / 365.25;
 }
 ```
 

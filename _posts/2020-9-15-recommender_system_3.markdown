@@ -85,6 +85,10 @@ https://mp.weixin.qq.com/s/ePKNE9r0khaLmM_zKgQh1g
 
 没有最好，只有A/B测试！
 
+https://mp.weixin.qq.com/s/68sMYxXu9toLAprG8S0Mmw
+
+如何构建A/B测试系统，其核心功能有哪些？
+
 ## 参考
 
 https://mp.weixin.qq.com/s/vpANPrl86Ou2fBVHgLXtBQ

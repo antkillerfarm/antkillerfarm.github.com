@@ -23,6 +23,10 @@ https://zhuanlan.zhihu.com/p/69637495
 
 语音转写技术入门
 
+https://mp.weixin.qq.com/s/rAfNNS6Y4vLAmnNhtfAbwA
+
+微软亚研《神经语音合成》综述论文
+
 https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=400189223&idx=1&sn=1cb32bee42de626443ebadbf065ec79c
 
 百度贾磊：汉语语音识别技术重大突破：LSTM+CTC详解

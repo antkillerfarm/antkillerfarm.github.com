@@ -141,6 +141,10 @@ Advanced Methods for Neural End-to-End Speech Processing
 
 语音合成（Speech synthesis），有时也叫做text-to-speech (TTS)。
 
+早在12世纪，人们就尝试建造机器来合成人类语言。在18世纪下半叶，匈牙利科学家Wolfgang von Kempelen用一系列的风箱、弹簧、风笛和共振箱制造出一些简单的单词和句子，制造出了一个会说话的机器。
+
+![](/images/img4/TTS.png)
+
 ## 开源项目
 
 ### Festival

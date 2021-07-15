@@ -299,6 +299,10 @@ https://zhuanlan.zhihu.com/p/67520807
 
 Linux内核中的RCU
 
+https://mp.weixin.qq.com/s/azy-lYHTtqdq2OrGwkfsmQ
+
+图解多线程+1的最快操作
+
 # 动态库版本设置
 
 linux动态库使用soname来设定动态库的版本兼容性。

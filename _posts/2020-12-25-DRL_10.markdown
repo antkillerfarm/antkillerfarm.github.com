@@ -17,6 +17,10 @@ https://mp.weixin.qq.com/s/f-rmdWq3kJUJGhuPwU8JtQ
 
 深度策略梯度算法是真正的策略梯度算法吗？
 
+https://mp.weixin.qq.com/s/SiVUmjHyw8ztiaSWNSZ-qA
+
+多任务深度强化学习综述
+
 https://zhuanlan.zhihu.com/p/51202503
 
 强化学习在视觉上的应用（RL for computer Vision）

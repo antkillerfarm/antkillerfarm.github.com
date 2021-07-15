@@ -211,6 +211,10 @@ https://mp.weixin.qq.com/s/3VjGpyXZSkJhy6sFPUsZzw
 
 GPU虚拟化，算力隔离，和qGPU
 
+https://zhuanlan.zhihu.com/p/383115932
+
+大佬是怎么优雅实现矩阵乘法的？
+
 # GPU通信技术
 
 ## RDMA

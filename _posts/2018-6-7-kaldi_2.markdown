@@ -309,3 +309,7 @@ https://mp.weixin.qq.com/s/58Y-6CUYDVOp8y_jT4BmSw
 https://mp.weixin.qq.com/s/RGAU6TzlhYTqKAGop_Hd1A
 
 最受欢迎的50个数据可视化图表
+
+https://blog.csdn.net/zhangdaiscott/article/details/109057686
+
+推荐四款可视化工具，解决99%的可视化大屏需求

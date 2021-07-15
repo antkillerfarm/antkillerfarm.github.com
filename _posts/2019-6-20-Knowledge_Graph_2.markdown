@@ -376,3 +376,7 @@ https://mp.weixin.qq.com/s/P1TIOrC8ve-6265dMz1nvQ
 https://mp.weixin.qq.com/s/GMr6SlkYUY5dydECpbjqXw
 
 常识性概念图谱建设以及在美团场景中的应用
+
+https://mp.weixin.qq.com/s/LgxxIEMaiaMtc0GIDXGG9g
+
+美团外卖美食知识图谱的迭代及应用

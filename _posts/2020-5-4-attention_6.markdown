@@ -8,7 +8,7 @@ category: Attention
 {:toc}
 
 
-# Attention in CV & RS
+# Attention in CV & RS（续）
 
 https://mp.weixin.qq.com/s/J7Fw-T1tYSqi9_vx8VSqYA
 
@@ -29,6 +29,10 @@ https://mp.weixin.qq.com/s/O-xcsIHufrPQKPQGNcKjkg
 https://mp.weixin.qq.com/s/IeQdvz8DrNAULy2k7oFgWw
 
 Transformers在计算机视觉概述
+
+https://mp.weixin.qq.com/s/H2GZgnR8jN5ztUACiowpZQ
+
+Vision Transformer新秀：VOLO
 
 # BERT进阶
 

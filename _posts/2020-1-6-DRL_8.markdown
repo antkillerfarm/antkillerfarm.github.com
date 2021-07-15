@@ -13,6 +13,10 @@ https://mp.weixin.qq.com/s/e4hriDvTRLkg-mIifVWayw
 
 如何解决深度学习中的多体问题
 
+https://mp.weixin.qq.com/s/Js8lvoqtl7vcwdw3i7UOHg
+
+多智能体(MARL)强化学习与博弈论
+
 https://zhuanlan.zhihu.com/p/61060358
 
 Paper survey: Multi-Agent Reinforcement Learning

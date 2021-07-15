@@ -366,3 +366,7 @@ PDF之父、Adobe联合创始人离世，乔布斯收购未果给了他第一桶
 https://mp.weixin.qq.com/s/x-N7n7RkrvcCXT4C7UxPSQ
 
 Linux之父：财务自由以后，我失眠了！
+
+https://mp.weixin.qq.com/s/wIIQQibtFR3cecOpmNenvQ
+
+YouTube博主实测病毒之王“熊猫烧香”，当年是它太强还是杀毒软件太弱？
