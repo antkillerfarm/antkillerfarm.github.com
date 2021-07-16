@@ -195,6 +195,28 @@ https://mp.weixin.qq.com/s/EWnXlinxEJgzdRGJH4bFTQ
 
 # C/C++参考资源+
 
+# spaceship operator
+
+spaceship operator: `<=>`
+
+C++20引入了spaceship operator：
+
+- 如果`a<b`，返回std::strong_ordering::less。
+- 如果`a>b`，返回std::strong_ordering::greater。
+- 如果a与b全等/相等，返回std::strong_ordering::equal。
+
+这和`strcmp`的设计理念类似。
+
+此外，还有关系运算符的重载推导，定义了`<=>`之后，其他诸如`==`、`!=`、`<`、`<=`、`>`、`>=`的关系运算自动成立，无需再写相应的重载函数了。同理，如果定义了`==`，那么`!=`就自动成立了。
+
+参考：
+
+https://cloud.tencent.com/developer/article/1352324
+
+C++20草案中的宇宙飞船运算符(<=>,spaceship operator)
+
+## 参考
+
 https://zhuanlan.zhihu.com/p/23016264
 
 这么多款STL，总有一款适合你

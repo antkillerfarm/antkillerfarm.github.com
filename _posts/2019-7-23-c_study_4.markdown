@@ -7,9 +7,7 @@ category: language
 * toc
 {:toc}
 
-# C/C++编程心得
-
-## 虚函数
+# 虚函数
 
 ```cpp
 class Shape {
@@ -106,7 +104,7 @@ https://www.cnblogs.com/xinxue/p/5471708.html
 
 C++11之override
 
-## typedef struct
+# typedef struct
 
 在C中：
 
@@ -148,7 +146,7 @@ https://www.cnblogs.com/qyaizs/articles/2039101.html
 
 struct和typedef struct彻底明白了
 
-## cout格式化输出
+# cout格式化输出
 
 ```c
 cout<<hex<<i<<endl; //输出十六进制数
@@ -156,7 +154,7 @@ cout<<oct<<i<<endl; //输出八进制数
 cout<<dec<<i<<endl; //输出十进制数
 ```
 
-## 小细节
+# 小细节
 
 对于std::vector来说，begin()/end()返回iterator，而front()/back()返回的是element。此外，还有cbegin()/cend()返回const iterator。
 
@@ -256,7 +254,7 @@ ss >> res;
       break;                                                      \
 ```
 
-## POD
+# POD
 
 POD，全称plain old data，plain代表它是一个普通类型，old代表它可以与c兼容，可以使用比如memcpy()这类c中最原始函数进行操作。
 
@@ -272,7 +270,7 @@ https://www.cnblogs.com/DswCnblog/p/6371071.html
 
 C++11 POD类型
 
-## 命令行解析
+# 命令行解析
 
 https://github.com/jarro2783/cxxopts
 
@@ -290,7 +288,7 @@ https://github.com/agauniyal/rang
 
 这个项目可以设置终端输出的颜色等效果。
 
-## inl文件
+# inl文件
 
 inl文件是内联函数的源文件。内联函数通常在C++头文件中实现，但是当C++头文件中内联函数过多的情况下，我们想使头文件看起来简洁点，能不能像普通函数那样将内联函数声明和函数定义放在头文件和实现文件中呢？
 
@@ -302,7 +300,7 @@ https://www.cnblogs.com/findumars/p/4340936.html
 
 C++中的INL
 
-## std::any & std::variant & std::optional
+# std::any & std::variant & std::optional
 
 std::any：一个类型安全的容器，可以放置各种类型的数据。类似于`void*`。
 
@@ -316,7 +314,7 @@ https://www.jianshu.com/p/b2ec40c1c7c1
 
 C++17：std::any, std::variant 和 std::optional
 
-## std::transform
+# std::transform
 
 ```cpp
 std::string s("Hello");
@@ -325,7 +323,7 @@ std::transform(s.begin(), s.end(), s.begin(),
 std::cout << s << std::endl; // HELLO
 ```
 
-## std::string
+# std::string
 
 std::string有很多实现方式，归纳起来有三类，而每类又有多种变化。
 
@@ -339,7 +337,7 @@ https://www.cnblogs.com/cthon/p/9181979.html
 
 c++再探string之eager-copy、COW和SSO方案
 
-## 数组定义时的赋值方法
+# 数组定义时的赋值方法
 
 ```c
 struct mtd_partition {
