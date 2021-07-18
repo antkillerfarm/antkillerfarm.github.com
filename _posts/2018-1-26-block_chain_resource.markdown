@@ -11,7 +11,7 @@ category: resource
 
 傻子的共识也是共识。
 
-### 2018.9
+## 2018.9
 
 https://mp.weixin.qq.com/s/yyoUoIUBUPV5zkeE88P7Iw
 
@@ -23,13 +23,13 @@ https://mp.weixin.qq.com/s/yyoUoIUBUPV5zkeE88P7Iw
 
 至于比特大陆的AI芯片，似乎对标的是NVIDIA的云服务领域。不是我小看比特大陆，AI芯片这东西光有钱，没有时间积累，是做不好的。
 
-### 2018.11
+## 2018.11
 
 http://finance.sina.com.cn/blockchain/roll/2018-11-16/doc-ihnvukff8764739.shtml
 
 算力之战：告诉你吴忌寒是怎么赢的 CSW是怎么输的
 
-### 2019.1
+## 2019.1
 
 http://tech.sina.com.cn/i/2018-10-10/doc-ihkvrhpt4844011.shtml
 
@@ -37,7 +37,7 @@ http://tech.sina.com.cn/i/2018-10-10/doc-ihkvrhpt4844011.shtml
 
 詹克团、吴忌寒、杨作兴
 
-### 2019.11
+## 2019.11
 
 http://finance.ifeng.com/c/7rSObfR7d0p
 
@@ -51,7 +51,7 @@ https://mp.weixin.qq.com/s/dFI5e4f2J7R7BHZrjtiWZg
 
 涉嫌职务侵占十万元！前比特大陆矿机芯片设计总监，神马矿机创始人杨作兴被捕
 
-### 参考
+## 2021.4
 
 短短几个月的时间，狗币的价格上涨了一百倍，屎币的价格上涨了28万倍，创造了2021年的财富神话。
 
@@ -73,7 +73,17 @@ https://mp.weixin.qq.com/s/LzBsdLEaIHyfw6OyMHMyuw
 
 狗币涨112倍，屎币涨28万倍，这世界真魔幻
 
----
+## 2021.6
+
+https://view.inews.qq.com/wxn/20210705A0353200
+
+在闲鱼上叫卖小水电站，他们遭遇了什么？
+
+https://view.inews.qq.com/wxn/20210705A0736X00
+
+比特币矿场大逃亡：我把结婚买房的钱全投到矿场，不到一年亏光
+
+## 参考
 
 https://mp.weixin.qq.com/s/H860_Es3uO9ozDTnifNvgQ
 

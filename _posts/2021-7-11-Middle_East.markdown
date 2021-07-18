@@ -63,6 +63,12 @@ https://www.zhihu.com/question/455674435
 
 ---
 
+https://mp.weixin.qq.com/s/KVrpsqQxjZVGJ6WBcOQUAw
+
+美军逃离阿富汗，抛弃了7万汗奸
+
+---
+
 伊朗：绿色革命、鸡蛋革命、石油革命。
 
 ---

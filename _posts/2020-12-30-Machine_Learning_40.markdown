@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（四十）——Adaboost, 特征工程
+title:  机器学习（四十）——Adaboost, 特征工程, 维度灾难
 category: ML 
 ---
 
@@ -250,3 +250,23 @@ Kaggle所有图像特征汇总
 https://mp.weixin.qq.com/s/YFx8E3piOLmdEfpjecRqxw
 
 特征工程方法总结
+
+# 维度灾难
+
+低维空间中习以为常的事情，可能在高维空间中被颠覆。
+
+![](/images/img4/HD.png)
+
+当维度升高时，内接球的体积占比越来越小。
+
+![](/images/img4/HD_2.png)
+
+当维度升高时，绝大部分体积集中在球壳上。
+
+https://mp.weixin.qq.com/s/c8P9KmkQTqNcazcjU9qQFw
+
+机器学习中的维度灾难
+
+https://mp.weixin.qq.com/s/iWIjwThUiVc1ifvf5-cf7w
+
+什么是维度灾难？

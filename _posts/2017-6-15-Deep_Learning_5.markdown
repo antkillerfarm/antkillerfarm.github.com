@@ -158,6 +158,16 @@ Tomas Mikolov于2013年对Bengio方案进行了简化改进，提出了目前最
 
 http://blog.csdn.net/itplus/article/details/37969519
 
+这里有一个图解版本：
+
+https://jalammar.github.io/illustrated-word2vec/
+
+以及它的中文译本：
+
+https://mp.weixin.qq.com/s/cpzBBntlFw6BDNUs6emCWw
+
+详细图解Word2vec
+
 老惯例这里只对最重要的内容进行摘要。
 
 ### CBOW & Skip-gram

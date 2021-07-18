@@ -364,3 +364,7 @@ Android soong build系统介绍
 https://mp.weixin.qq.com/s/xQ6w1qlMjgxlP8QpF34GVA
 
 不吹不擂，一文揭秘鸿蒙操作系统
+
+https://mp.weixin.qq.com/s/QC0QDPwBU5OLjtZNqDzSrg
+
+鸿蒙之迷思

@@ -323,6 +323,10 @@ https://mp.weixin.qq.com/s/RA8rYI5z_18ybKQaVYWOxw
 
 浅析多重曝光与自动图像融合技术
 
+https://mp.weixin.qq.com/s/ry7DFwnhttXghEndfeZ-VA
+
+提高照片清晰度的黑魔法竟然是..
+
 # Spiking Neural Network
 
 除了基于BP算法的NN之外，Spiking Neural Network也是一大类NN。Spiking NN和人脑结构更相似，功耗也更小，但是相关训练和数据量化的算法尚不成熟，属于潜力股。

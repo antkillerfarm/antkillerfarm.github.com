@@ -253,6 +253,10 @@ https://blog.csdn.net/m0_38110132/article/details/81481454
 
 直观讲解--RPC调用和HTTP调用的区别
 
+https://juejin.cn/post/6963642641506369566
+
+为什么说Dubbo不适合传输文件？
+
 # Spring
 
 Spring是一个Java Web应用框架。官网：

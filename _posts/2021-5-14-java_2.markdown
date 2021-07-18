@@ -288,3 +288,7 @@ C语言的源程序是可以直接运行吗？（C语言的解释执行）
 https://zhuanlan.zhihu.com/p/346465585
 
 极大提高你开发效率的C++ tricks
+
+https://www.zhihu.com/question/280665935
+
+为什么C/C++要分为头文件和源文件？
