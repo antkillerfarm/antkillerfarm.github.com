@@ -137,6 +137,18 @@ https://www.zhihu.com/answer/269694639
 
 ---
 
+克罗地亚气象学及地震学家安德里亚 莫霍洛维奇，在克罗地亚国内建了些地震台，想观测一些地震事件。1909年8月8日，克罗地亚国内发生了地震。他拿到地震数据之后尝试着用地震波的走时来计算地下岩石的地震波传播速度，他也是（据我所知）第一个做这样的计算的人。他的计算结果表明，地下54公里处左右，岩石的纵波和横波速度有一个明显的、突然的增高。这就是人类第一次发现地壳和地幔的边界。为了纪念他的发现，我们称这个地壳地幔边界为莫霍洛维奇不连续界面，简称莫霍面。
+
+![](/images/img4/waves.jpg)
+
+宾诺 古登堡发现了纵波和横波的阴影带。他认为这是因为有液态地核的存在。纵波是被低速度的液态地核折射出的阴影带，横波就是被直接挡住了，因为横波在液体内无法传播。地幔和外核的边界，后来也被命名为古登堡不连续界面。
+
+https://www.zhihu.com/question/23535955
+
+人类是如何知道地幔、地核的组成的？
+
+---
+
 https://zhuanlan.zhihu.com/p/53237519
 
 一文读懂印尼海啸的真正原因（喀拉喀托之子）
@@ -280,55 +292,3 @@ https://www.zhihu.com/question/464055142
 https://www.zhihu.com/question/22586409
 
 鄱阳湖还有救吗？
-
-# 气象
-
-夏至三庚入伏，冬至逢壬数九。
-
-夏至以后的第3个庚日、第4个庚日分别为初伏（头伏）和中伏的开始日期，立秋以后的第一个庚日为末伏的第一天。因为每个庚日之间相隔10天，所以初伏、末伏规定的时间是10天。又因为每年夏至节气后的第3个庚日（初伏）出现的迟早不同，中伏的天数就有长有短，可能是10天，也可能是20天。
-
-冬至后逢第一个壬日开始叫“交九”，意思是寒冷的开始。
-
----
-
-![](/images/img3/Hadley_Cell.png)
-
-考虑自转偏向力的Hadley Cells
-
-![](/images/img3/Hadley_Cell.png)
-
-不考虑自转偏向力的Hadley Cells（金星）
-
-https://mp.weixin.qq.com/s/UcchOEf59hku7uclxZFMrA
-
-距离地球630光年的地方，下起了“铁雨”
-
-https://www.seas.harvard.edu/climate/eli/research/equable/hadley.html
-
-Hadley Cells
-
----
-
-https://mp.weixin.qq.com/s/0ZQvZNHOmiMZ1dr_-VXR6Q
-
-谁奠定了气候变化的基础？（John Tyndall）
-
-https://mp.weixin.qq.com/s/-NAua2Zecz5I43Ner73-ww
-
-PNAS前沿：厄尔尼诺现象大概率将在2020下半年爆发
-
-https://mp.weixin.qq.com/s/mzAgmh9JDQYAV2S9uJBfjw
-
-“圣婴”和“圣女”现象
-
-https://mp.weixin.qq.com/s/5fRHmNqQybS9GvKxpuc2TQ
-
-是不是真的“高处不胜寒”？
-
-https://mp.weixin.qq.com/s/Ez_FlfFOwpDKDqvIlJYfSQ
-
-2021首个全国冻哭预警地图出炉！今冬为啥这么冷？
-
-https://mp.weixin.qq.com/s/jQpUfIueOfCZ_Gu09JE94Q
-
-因为太冷，青岛的海面“冒烟了”！

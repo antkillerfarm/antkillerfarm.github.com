@@ -81,148 +81,66 @@ https://mp.weixin.qq.com/s/9Hkh3bwBLioNUtkCx-WoIw
 
 ---
 
-![](/images/img3/top10.png)
+大功率紫外激光需要的晶体，中国领先世界20年左右。去年2月美国宣布突破中国长达15年的封锁制造出了KBBF晶体，该晶体用于光发射电子显微镜、超大功率激光器、同时也是制造光刻机的核心部件，而光刻机则是用来生产CPU芯片的核心设备。
 
-![](/images/img4/manufact.jpg)
+中国封锁该技术的主要原因是其军事用途，大功率晶体是激光定向能武器的核心技术，中国在此领域大幅领先“外国”，功率输出超过“外国”一个数量级以上。因为中国对此类技术的严格封锁，禁止出口，造成国际凝聚态物理研究受到影响，例如：某国外著名实验室求国内一小块晶体而不得，2009年Nature杂志专门撰文谴责了这种不利于人类技术发展的自私行为。
 
-![](/images/img2/BJ_subway.jpg)
+http://m.guancha.cn/Science/2016_02_14_351018.shtml
 
-![](/images/img4/china-dovak.gif)
+多年努力 美国打破中国激光晶体封锁 然而中国新一代晶体已经成功
 
-https://mp.weixin.qq.com/s/sRVb8qGtbsuqCvHSrlL9mQ
+https://mp.weixin.qq.com/s/-6hNbww_Q4i5zk9rwsW1lQ
 
-卡住中国脖子的35项技术
+这个人曾让美国饱尝被禁售的苦头，可惜已离我们而去
 
-https://mp.weixin.qq.com/s/MCAR8M2DoV30-McdsjTxDw
+著名材料学家、中国科学院院士、第三世界科学院院士、中国科学院理化技术研究所研究员陈创天。
 
-徒步横穿南极大陆第一人
+---
 
->秦大河，1947年生，地理学家，中国科学院院士，第三世界科学院院士。曾任中国气象局局长、中国科学技术协会副主席等
+我们的飞机要保卫祖国的领空，买人家的飞机是不行的，中国要自立于世界航空工业之林，必须能够设计自己的飞机、建立独立的航空科研体系。
 
-https://mp.weixin.qq.com/s/3aLHfKF5grL6hunO7r_TAQ
+https://mp.weixin.qq.com/s/wE4_DHPrW3LbvPmB7UIECg
 
-中国第一个发《Nature》的竟然是清朝人！被皇帝夸天下第一，他却觉得羞耻。。。（徐寿、华蘅芳、徐建寅）
+隐秘而伟大：真正的军事强国靠的是什么？
 
-https://mp.weixin.qq.com/s/J1mAwHQUkuHrmvmyK_w5BQ
+---
 
-中国首台蒸汽机竟由一位清代数学家设计！他与诺贝尔同年出生，为研制火药险些殒命。。。（华蘅芳）
+1950年2月6日，上海遭受了国民党飞机最猛烈的袭击，史称“二·六大轰炸”。
 
-https://mp.weixin.qq.com/s/OO2OPmxjZJTCNiy_S2p-Aw
+防空委员会从上海交通大学借来21人帮助工作。这些学生来自电机系，虽然学过无线电理论，但都没接触过雷达。开始工作并不顺利，国民党飞机来袭击，地面观察哨用眼睛都看到了，但雷达仍未发现。
 
-中国第一个登上Nature的女科学家，居然出生在清朝？只活了29岁（王贞仪）
+大家都很着急，把上海市无线电技术水平最高的国际电台总工程师钱尚平先生请来帮助调试，他准确判断出了问题。经过调试，雷达在3月20日第一次发现了飞机。华东局、上海市委与交大联系，动员这批学生参军，他们后来成为解放军防空部队雷达技术的骨干。
 
-https://mp.weixin.qq.com/s/CTpwRV9BJ6JW2BOtVC7uMg
+>钱尚平，1906～1977，浙江宁波人。上海交通大学毕业（1929）。上海邮电学校副校长、上海电信研究所（后改为邮电部第一研究所）副所长。
 
-她是清华第一位女教授，被称为中国的“居里夫人”，却在62岁高龄被打入大牢...（王明贞）
+杨树浦电厂，旧称江边电站，旧址位于上海市杨浦区，创建于1911年，曾经为远东第一大发电厂，有“中国电力工业摇篮”的美誉，其高达105米的烟囱曾一度是中国最高的建筑物。
 
-https://mp.weixin.qq.com/s/ajfoQAH-WSZ_OYIRK8uGAQ
+工部局（The Municipal Council），即市政委员会，是清末列强在中国设置于租界的行政管理机构。因与中国之“工部”类似而名为“工部局”。
 
-被遗忘的中国生命科学之父（林可胜）
+http://news.sohu.com/20090608/n264405215.shtml
 
-https://mp.weixin.qq.com/s/wcDiuHjtGgWjWdLRtJTpTg
+上海二六大轰炸
 
-凤毛麟角：中国早期留美的数理同门女双杰（1912-1949年间，有14名中国女性赴英美留学，后来均成为杰出的物理学家，本文主人公王明贞和王承书就是其中的两位。）
+http://www.archives.sh.cn/shjy/scbq/201403/t20140310_40396.html
 
-https://mp.weixin.qq.com/s/IQPiGqqad4YajaCu9bQhJw
+“不夜城”光与电的百年传奇
 
-美国一再拒绝两个中国人的回国申请，有人道破天机：你们是重大威胁（王承书、张文裕）
+---
 
-https://mp.weixin.qq.com/s/Ar-67u7UbPz5z2odN1YeQQ
+我国早期的核潜艇噪音水平非常糟糕，曾被赤裸裸地嘲讽为“海底拖拉机”，“只要一下海，远在万里之外的英国都能听到。”
 
-从被列强剥削，到成为发达国家“粉碎机”：中国付出了多少代价？
+美国目前的核潜艇是中压交流系统，依然需要变速箱和主轴带动螺旋，这样的话噪音还是会有一部分通过主轴传到水中。
 
-https://mp.weixin.qq.com/s/IQPiGqqad4YajaCu9bQhJw
+2001年，马伟明研制出世界上首台交直流双绕组发电机系统，彻底摒弃了传统机械推进轴，将噪音降低10%以上，完成了一次“潜艇静音”的创举。而在这基础上，2010年，他研发出“中压直流输电网”，中国也因此成为了世界上第一个在舰船上实现中压直流综合电力系统的国家。这一技术水平，反超领先国外十年左右！
 
-美国一再拒绝两个中国人的回国申请，有人道破天机：你们是重大威胁（王承书、张文裕）
+---
 
-https://mp.weixin.qq.com/s/CTpwRV9BJ6JW2BOtVC7uMg
+1943年的春节之前，陕西的农民李有源走过一个山梁，抬头看时，头顶是红彤彤的大太阳，那温暖的光芒无私地照耀在大地的每一个角落，到处都是金灿灿的一片。
 
-她是清华第一位女教授，被称为中国的“居里夫人”，却在62岁高龄被打入大牢...（王明贞）
+李有源是一名能编善唱的民歌歌手，壮丽的自然景观激发了他的灵感，他放下了扛着的农具，放开歌喉，唱出了一首山歌：
 
-https://mp.weixin.qq.com/s/ajfoQAH-WSZ_OYIRK8uGAQ
+东方红，太阳升，中国出了个毛泽东。他为中国谋幸福，他是人民大救星！
 
-被遗忘的中国生命科学之父（林可胜）
+1964年10月16日晚，北京人民大会堂，大型音乐舞蹈史诗《东方红》演出刚刚结束，这项献礼国庆15周年的文艺大工程，从10月2日第一次在人民大会堂演出到16日结束，场面之大，演员之多、气势之宏，轰动了整个北京城。
 
-https://mp.weixin.qq.com/s/Z2xRTxgRRHWWY2VICT4lQg
-
-中国有哪些领跑全球的技术
-
-https://mp.weixin.qq.com/s/NQ4OiPgguAVkRPBn1uEYjg
-
-他奉密令去美国长期潜伏，周总理亲自送行长谈（吴大琨）
-
-https://mp.weixin.qq.com/s/z0FdqtVOmhv1mbVRJ42UFA
-
-“奋斗者”号再探万米深海，制造一个深潜器到底有多难？
-
-https://mp.weixin.qq.com/s/toX25yTvQWnwid26oOXROA
-
-深潜海底10909
-
-https://www.zhihu.com/answer/378935681
-
-谁能告诉我一些关于肯尼亚蒙内铁路的故事？
-
-https://mp.weixin.qq.com/s/Ar-67u7UbPz5z2odN1YeQQ
-
-从被列强剥削，到成为发达国家“粉碎机”：中国付出了多少代价？
-
-https://zhuanlan.zhihu.com/p/352959565
-
-参与加勒万冲突保障，民企员工受到表彰，该公司堪称军工界大疆
-
-https://www.zhihu.com/question/425270883
-
-非五常国家的军事实力究竟有多弱？
-
-https://mp.weixin.qq.com/s/-iv72YL5jm5OyHPuNzEzmg
-
-破晓时分，加州教授团访华记
-
-https://mp.weixin.qq.com/s/_0SN18UFx_GGlHebUaar9A
-
-兵器试验中心数字弹道的传奇。陆载德的故事——从一位左腿残疾的清华学子成长为90年代共和国军队中唯一的独腿将军。
-
-https://mp.weixin.qq.com/s/tg5ovnXBV0aqM51DGj-mUQ
-
-中国计算数学和最优化事业的创始人之一、原南京大学教授何旭初
-
-https://mp.weixin.qq.com/s/EWU26Xp8Xx4rQDiLnNPLQw
-
-中国人是什么时候知道计算机的?
-
-https://mp.weixin.qq.com/s/gJ315Byg0EtZVldxFp-q3A
-
-“最牛上下铺”！他们竟是舍友（歼-20总设计师杨伟、运-20总设计师唐长红）
-
-https://mp.weixin.qq.com/s/aX0aqG6h_0V0jMnQvJxfLQ
-
-袁隆平逝世：播下改变中国的种子
-
-https://mp.weixin.qq.com/s/ro1xdxRqfQo0S7qxMyHZSg
-
-这一次，外媒集体为袁隆平刷屏
-
-http://news.sina.com.cn/o/2018-06-25/doc-iheirxyf5801793.shtml
-
-儿子智力残疾、妻女精神分裂…77岁核弹老人魏世杰的故事，让无数观众为之动容
-
-https://mp.weixin.qq.com/s/vuNGjU3lPvw_k0-96v3Q6g
-
-和袁隆平是同学！这位91岁院士把一切献给“吃瓜群众”...（吴明珠）
-
-https://mp.weixin.qq.com/s/ey3uNb3SAUR70A86-E1klg
-
-中国制造高精度机床的困难在哪里？
-
-https://mp.weixin.qq.com/s/QSS7dIe1MeIOBu6tko9maQ
-
-美国人万万没想到，这个不起眼的留学生，将会成为中国雷达之父（毕德显）
-
-https://zhuanlan.zhihu.com/p/109751703
-
-为了研究，他骨折14处（吴天一）
-
-https://mp.weixin.qq.com/s/_FKBOk6IrxTixo2YrowLQw
-
-这块来自月球的小石头，撞出了他的“月球梦”（欧阳自远）
+10月16日晚演出结束，毛泽东、周恩来、刘少奇、朱德等国家领导人走进会场中心，周恩来总理笑容满面走到麦克风前宣布：“主席让我告诉大家一个好消息——今天我国西部爆炸了第一颗原子弹……”会场掀起史无前例的高潮！
