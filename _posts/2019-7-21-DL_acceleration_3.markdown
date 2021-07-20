@@ -304,3 +304,7 @@ FP16相对于FP32，通常会有不到1%的精度损失。即使是不re-train�
 UINT量化使用bias将数据搬移到均值为0的区间。
 
 这篇论文的另一个贡献在于：原先的INT8量化是针对已经训练好的模型。而现在还可以在训练的时候就进行量化——前向计算进行量化，而反向的误差修正不做量化。
+
+`tf.quantization.fake_quant_XXXX`系列API可用于前向计算时的量化。
+
+Fake quant之所以叫伪量化，是因为虽然可量化weights/activations，但不是真正意义上的量化，即变量类型还是floating point，而不是integer。
