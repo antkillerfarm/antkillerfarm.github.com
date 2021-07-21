@@ -286,6 +286,31 @@ https://blog.csdn.net/zkbaba/article/details/106178542
 
 TensorFlow性能分析工具—TensorFlow Profiler
 
+# 控制流
+
+## tf.cond
+
+```python
+a=tf.constant(2)
+b=tf.constant(3)
+x=tf.constant(4)
+y=tf.constant(5)
+z = tf.multiply(a, b)
+result = tf.cond(x < y, lambda: tf.add(x, z), lambda: tf.square(y))
+with tf.Session() as session:
+    print(result.eval())
+```
+
+## tf.case
+
+```python
+decode_png = lambda :tf.image.decode_png(image_tensor, channels)
+decode_jpg = lambda :tf.image.decode_jpeg(image_tensor, channels)
+decoder = { tf.equal(image_ext, '.png'):  decode_png,
+            tf.equal(image_ext, '.jpg'):  decode_jpg}
+image_tensor = tf.case(decoder, default = decode_png, exclusive = True)
+```
+
 # 参考
 
 https://mp.weixin.qq.com/s/t1QFIOq-VBNOrSm0zW-PlQ
@@ -383,35 +408,3 @@ https://mp.weixin.qq.com/s/5QYlh6gV9IqdQfraK4DC8w
 https://mp.weixin.qq.com/s/W1KP213Ngj-BNEyx-_nVyw
 
 利用TensorFlow实现卷积自编码器
-
-https://mp.weixin.qq.com/s/2COA8aRQBpxaihKnlLkXZQ
-
-快速上手图像识别：用TensorFlow API实现图像分类实例
-
-https://mp.weixin.qq.com/s/TZMOO_LFCxk297lKNQfvGQ
-
-TensorFlow从基础到实战：一步步教你创建交通标志分类神经网络
-
-https://mp.weixin.qq.com/s/HUUwtyjRllg-5olqYHK4XA
-
-基于TensorFlow的开源项目FaceRank
-
-https://mp.weixin.qq.com/s/N2OP1uX7JjfIJQ_B4NHKpw
-
-横向对比三大分布式机器学习平台：Spark、PMLS、TensorFlow
-
-https://mp.weixin.qq.com/s/bJigyEv6iNDp799KlHsclg
-
-TensorFlow 不仅用于机器学习，还能模拟偏微分方程（水滴特效）
-
-https://mp.weixin.qq.com/s/dmNEzrWNX3YWmocjpORpig
-
-谷歌开源TF-Ranking可扩展库，支持多种排序学习
-
-https://mp.weixin.qq.com/s/n_zU7Rg7v6PwjZWEF88fNA
-
-如何使用TensorFlow实现音频分类任务
-
-https://mp.weixin.qq.com/s/UbBJYOmWtUXPFliRMyzDrg
-
-最新TensorFlow专业深度学习实战书籍和代码《Pro Deep Learning with TensorFlow》

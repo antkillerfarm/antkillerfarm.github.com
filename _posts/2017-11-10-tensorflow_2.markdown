@@ -334,31 +334,6 @@ http://deepnlp.org/blog/tensorflow-parallelism/
 
 Tensorflow并行：多核(multicore)，多线程(multi-thread)
 
-# 控制流
-
-## tf.cond
-
-```python
-a=tf.constant(2)
-b=tf.constant(3)
-x=tf.constant(4)
-y=tf.constant(5)
-z = tf.multiply(a, b)
-result = tf.cond(x < y, lambda: tf.add(x, z), lambda: tf.square(y))
-with tf.Session() as session:
-    print(result.eval())
-```
-
-## tf.case
-
-```python
-decode_png = lambda :tf.image.decode_png(image_tensor, channels)
-decode_jpg = lambda :tf.image.decode_jpeg(image_tensor, channels)
-decoder = { tf.equal(image_ext, '.png'):  decode_png,
-            tf.equal(image_ext, '.jpg'):  decode_jpg}
-image_tensor = tf.case(decoder, default = decode_png, exclusive = True)
-```
-
 # 内存布局
 
 Tensorflow和Caffe的内存布局存在较大差异，这是两者模型转换时，最常遇到的问题。一般认为，Caffe的内存布局对卷积硬件加速更友好一些。
@@ -419,6 +394,16 @@ https://github.com/raymond-li/tflite_tensor_outputter/blob/master/tflite_tensor_
 https://blog.csdn.net/abc20002929/article/details/112529203
 
 tflite模型调试-中间层output输出
+
+---
+
+https://gitee.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tensorflow/tflite/tflite_multi_output_quant.py
+
+这个例子包含了以下内容：
+
+- 如何直接用tf算子搭建网络，并导出为tflite文件。注意`@tf.function`的用法。
+- 如何搭建多输出的网络。
+- 如何生成量化模型。注意`representative_dataset_gen`，它展示了如何用fake data替换真实数据。
 
 ---
 

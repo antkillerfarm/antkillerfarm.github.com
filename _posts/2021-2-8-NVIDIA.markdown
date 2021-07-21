@@ -273,90 +273,28 @@ https://zhuanlan.zhihu.com/p/67785062
 
 不止显卡！这些硬件因素也影响着你的深度学习模型性能
 
-# 计算机体系结构+
+# TensorFlow++
 
-## GPU体系结构
+https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
 
-![](/images/img4/SGI.png)
+简易浣熊识别器是如何实现的
 
-上图是SGI公司1993年的一款显卡的模块图。可以看出，早期的显卡是一个具有固定流水线的专用芯片，只能处理特定任务，没有多少可编程的能力。
+http://www.jianshu.com/p/d443aab9bcb1
 
-![](/images/img4/Tesla.png)
+在TensorFlow上使用LSTM进行情感分析
 
-到了2005年左右，这些渲染流水线的功能被统一到一个叫做Shader Processor的可编程单元中。此后，显卡也被称为GPU（Graphics Processing Unit）。
+https://mp.weixin.qq.com/s/gW_KX6eF9XEsSUO1UzJ3WQ
 
-![](/images/img4/Shader.png)
+基于LSTM的情感分析
 
-无论是CPU，还是GPU，或者是现在比较火的NPU，一个Processing Unit，一般都是由上图所示的三部分组成：
+https://mp.weixin.qq.com/s/KZhL477ApHgQfmM2xFrYJw
 
-- Fetch/Decode。数据的输入/输出单元。
+Tensorlang：基于TensorFlow的可微编程语言
 
-- ALU（arithmetic and logic unit）。运算单元。
+https://mp.weixin.qq.com/s/_9NJ6QLQArUAD1DKb0KRfA
 
-- Execution Context。寄存器单元。
+如何使用TensorFlow mobile部署模型到移动设备
 
-CPU强调单core的极致性能，因此广泛使用了如下技术：
+https://mp.weixin.qq.com/s/e_TzQxFLAonLMyYAhte6Cg
 
-- Out-of-order control logic
-
-- Fancy branch predictor 
-
-- Memory pre-fetcher
-
-![](/images/img4/GPU.png)
-
-GPU不追求单core的性能，因此也没有那些复杂的控制逻辑。这样省下来的电路，可以变成更多的ALU。由于数据处理的局部性，通常可以若干ALU共享一套Fetch/Decode和Ctx。
-
-当然，如果ALU非常多的话，就不能都共享一套了，这时可以采用下图所示的分组共享。
-
-![](/images/img4/GPU_2.png)
-
-其中的每个组，被称为一个**core**。
-
-有利就有弊，下面看看GPU是如何执行条件语句的。
-
-![](/images/img4/GPU_3.png)
-
-上图展示了8个ALU并行执行条件语句的过程：
-
-- 计算每个数据的条件，生成对应的标志。
-
-- 执行True分支。
-
-- 执行False分支。
-
-可以看出，GPU对于条件语句的执行时间=True分支执行时间+False分支执行时间。而CPU只需要根据条件，执行一个分支就可以了。显然，GPU对于程序的控制能力，相对CPU简直弱爆了。GPU并不擅长做这些东西。
-
->CPU的SSE、AVX之类的指令集，也借鉴了GPU的设计思想，但是CPU的core数，相对于GPU而言，差了10～1000倍。
-
-参考：
-
-http://www.cnblogs.com/geniusalex/archive/2008/12/26/1941766.html
-
-CPU GPU设计工作原理
-
-https://mp.weixin.qq.com/s/-Wg1GtVGUxfshJ5d5NDd-Q
-
-聊聊GPU的计算能力上限
-
-https://mp.weixin.qq.com/s/zdr7BfJxVepQL1TCDXQoJA
-
-一文带你了解GPU的前生今世
-
-## Programming Model vs Hardware Execution Model
-
-- **Programming Model**: how the programmer expresses the code.
-
-Sequential (von Neumann), Data Parallel (SIMD), Dataflow, Multi-threaded (MIMD, SPMD), …
-
-- **Execution Model**: how the hardware executes the code underneath.
-
-Out-of-order execution, Vector processor, Array processor, Dataflow processor, Multiprocessor, Multithreaded processor, …
-
-- Execution Model can be very different from the Programming Model.
-
-von Neumann model implemented by an OoO processor
-
-SPMD model implemented by a SIMD processor (a GPU)
-
-GPU虽然是一个SIMD机器，但是并没有采用SSE、AVX之类的SIMD编程模型，而是SPMD模型。
+face-api.js：在浏览器中进行人脸识别的JavaScript接口

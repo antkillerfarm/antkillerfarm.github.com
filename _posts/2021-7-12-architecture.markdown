@@ -115,6 +115,10 @@ https://www.zhihu.com/answer/87080757
 
 如何在古代打造一个“永不陷落”的城堡？
 
+https://www.zhihu.com/question/464603561
+
+中国古代有哪些可以比肩君士坦丁堡的易守难攻的坚城？
+
 ---
 
 https://zhuanlan.zhihu.com/p/343944664
