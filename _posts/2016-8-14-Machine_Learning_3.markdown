@@ -7,7 +7,7 @@ category: ML
 * toc
 {:toc}
 
-## 广义线性模型（续）
+# 广义线性模型（续）
 
 定义$$k-1$$维空间上的向量$$T(y)$$：
 
@@ -219,7 +219,7 @@ $$\begin{align}p(y=1\mid x)&=\frac{p(x\mid y=1)p(y=1)}{p(x\mid y=1)p(y=1)+p(x\mi
 
 可见，这三者是完全不同的数学概念，不要搞混了。
 
-## 朴素贝叶斯方法
+# 朴素贝叶斯方法
 
 这里以文本分析（Text Classification）为例，讲解一下朴素贝叶斯（Naive Bayes）方法。
 

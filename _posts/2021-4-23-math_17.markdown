@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十七）——数学杂谈（3）
+title:  数学狂想曲（十七）——自适应滤波器, 抛物线, 数学杂谈（3）
 category: math 
 ---
 
@@ -38,6 +38,32 @@ Wiener Filter主要用于**平稳状态下的线性滤波**。该滤波器在均
 https://blog.csdn.net/bluecol/article/details/46242355
 
 图像去模糊（维纳滤波）
+
+# 抛物线
+
+![](/images/img2/conic_section.jpg)
+
+我们都知道抛物线只有一个焦点，而椭圆、双曲线有两个焦点，但是对于真正天体的运行来说，其实只有一个焦点是有意义的，就是中心恒星的位置；另一个焦点没有实在的意义。这两个焦点中任取一个就可以构成这条圆锥曲线，而取哪一个作为恒星位置都是一样的。因为对于椭圆、双曲线来说，这两个焦点是对称的。
+
+那么抛物线呢？实际上抛物线是椭圆和双曲线的临界状态，它的另一个焦点在无穷远的地方。对于绕恒星的抛物线轨道来说，取的是那个通常说的焦点位置作为恒星位置；对于地面上的斜抛运动来说，取的是无穷远处的那个焦点位置作为恒星位置。
+
+![](/images/img3/ellipse.gif)
+
+我们从斜面的上方和下方分别塞进一个球，它们与圆柱、截面均相切，然后，两个球与截面相切的点就是椭圆的两个焦点。
+
+![](/images/img4/ball.gif)
+
+![](/images/img4/man.gif)
+
+![](/images/img4/rect.gif)
+
+https://mp.weixin.qq.com/s/BmSdlLTZ8PxD_b27TzFWlw
+
+如何让8岁表妹了解数学到底是什么
+
+https://mp.weixin.qq.com/s/p-EVuaPfLusq01Jw8KcQdQ
+
+六一礼物：这些有趣的动图送给孩子们！了解数学能做什么？电路如何工作？
 
 # 数学杂谈
 
@@ -264,47 +290,3 @@ https://mp.weixin.qq.com/s/yqAnIjGmXpubgSsGDx6O8w
 https://zhuanlan.zhihu.com/p/36230460
 
 黑盒函数的探索
-
-http://www.matrix67.com/blog/archives/4570
-
-再谈Julia集与Mandelbrot集
-
-https://mp.weixin.qq.com/s/cWwbqOzKCUfhJRwz30u_8Q
-
-物理教授用数学论文摆脱400美元交通罚单，却惨被网友大反转...
-
-https://mp.weixin.qq.com/s/JtjgHmGt14nme1XvYGmyAg
-
-搞数学勇夺最高荣誉，做基金力扛巴菲特，顶级数学家的恐怖如斯(James Harris Simons)
-
-https://mp.weixin.qq.com/s/maScgd-8vo9ZR26DsKf6UQ
-
-纸张捏成纸球后，球的大小和纸的大小有何关系？
-
-https://mp.weixin.qq.com/s/ULzU9gwU-X6oSMM4mv5xhA
-
-两次入狱，数次移民，从罗马尼亚地下党到卡耐基梅隆教授—整数规划奠基者Egon Balas的彪悍人生
-
-https://mp.weixin.qq.com/s/NX0j_CgBqalBMVVdRkG59g
-
-数学界再出变态神人！竟用一个比基尼方程，暴力吊打美国数学家！（沙发问题）
-
-https://mp.weixin.qq.com/s/H1fvyQYRFcOe0pqclD-3yg
-
-“最大数之父”葛立恒逝世，他是20世纪数学巨匠，也是一个杂技演员
-
-https://mp.weixin.qq.com/s/rXbP1dvFmwl6QhVCDMr2Bw
-
-神童、数学家、抑郁症患者，控制论之父诺伯特·维纳的一生
-
-https://mp.weixin.qq.com/s/htCZU2de_7CCcL1q4v-NGg
-
-比肩爱因斯坦的天才：如果再给他一次机会，他可能不会再熬夜了......（麦克斯韦）
-
-https://mp.weixin.qq.com/s/BCszlYgbgvKUSkpJCSRQxg
-
-电影院今天复工，应该如何排座位？这是个数学家研究了几百年的问题
-
-https://mp.weixin.qq.com/s/R0nuIqlIefkEppr07Y8gnQ
-
-用一中学数学公式，中了14次彩票头奖，多国彩票规则因他改变

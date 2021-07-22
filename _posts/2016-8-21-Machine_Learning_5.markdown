@@ -7,6 +7,8 @@ category: ML
 * toc
 {:toc}
 
+# SVM
+
 ## KKT条件
 
 拉格朗日对偶公式中使$$p^*=d^*$$成立的条件，被称为KKT条件（Karush-Kuhn-Tucker conditions）：

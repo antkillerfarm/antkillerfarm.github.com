@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（七）——双曲函数和悬链线, 抛物线, 函数连续性
+title:  数学狂想曲（七）——双曲函数和悬链线, 函数连续性
 category: math 
 ---
 
@@ -38,6 +38,28 @@ https://mp.weixin.qq.com/s/YMKHw3qgWvhEz4f8nPw7Cg
 
 5种数据同分布的检测方法
 
+## Pearson distributions
+
+Pearson distributions是1895年左右由英国统计学家卡尔·皮尔逊提出的一组频率分布。它打破了“正态分布是全能的”传统观念，在数理统计发展史上是一个重大突破。
+
+**偏态分布**：“正态分布”相对，分布曲线左右不对称的数据次数分布，是连续随机变量概率分布的一种。可以通过峰度和偏度的计算，衡量偏态的程度。可分为正偏态和负偏态，前者曲线右侧偏长，左侧偏短；后者曲线左侧偏长，右侧偏短。
+
+概率密度$$f(x)$$决定于微分方程：
+
+$$\frac{\mathrm{d}f(x)}{\mathrm{d}x}=\frac{(a_0+a_1x)f(x)}{b_0+b_1x+b_2x^2}$$
+
+https://variation.com/wp-content/distribution_analyzer_help/hs130.htm
+
+Pearson Family of Distributions
+
+## 百年一遇
+
+Gumbel distribution是一种根据频率曲线来计算“多年一遇”海洋水文气象要素的常用方法。Gumbel分布以Emil Julius Gumbel（1891-1966）命名。
+
+https://www.zhihu.com/question/21315165
+
+为什么所谓五十年一遇、百年一遇的自然灾害几乎年年发生？
+
 # 双曲函数和悬链线
 
 悬链线 (Catenary) 是一种曲线，因其与两端固定的绳子在均匀引力作用下下垂相似而得名。适当选择坐标系后，悬链线的方程是一个双曲余弦函数。
@@ -65,32 +87,6 @@ https://zhuanlan.zhihu.com/p/20042215
 https://mp.weixin.qq.com/s/VOPis0wgmi-U-uM3Vnapbw
 
 这根链子什么来头？
-
-# 抛物线
-
-![](/images/img2/conic_section.jpg)
-
-我们都知道抛物线只有一个焦点，而椭圆、双曲线有两个焦点，但是对于真正天体的运行来说，其实只有一个焦点是有意义的，就是中心恒星的位置；另一个焦点没有实在的意义。这两个焦点中任取一个就可以构成这条圆锥曲线，而取哪一个作为恒星位置都是一样的。因为对于椭圆、双曲线来说，这两个焦点是对称的。
-
-那么抛物线呢？实际上抛物线是椭圆和双曲线的临界状态，它的另一个焦点在无穷远的地方。对于绕恒星的抛物线轨道来说，取的是那个通常说的焦点位置作为恒星位置；对于地面上的斜抛运动来说，取的是无穷远处的那个焦点位置作为恒星位置。
-
-![](/images/img3/ellipse.gif)
-
-我们从斜面的上方和下方分别塞进一个球，它们与圆柱、截面均相切，然后，两个球与截面相切的点就是椭圆的两个焦点。
-
-![](/images/img4/ball.gif)
-
-![](/images/img4/man.gif)
-
-![](/images/img4/rect.gif)
-
-https://mp.weixin.qq.com/s/BmSdlLTZ8PxD_b27TzFWlw
-
-如何让8岁表妹了解数学到底是什么
-
-https://mp.weixin.qq.com/s/p-EVuaPfLusq01Jw8KcQdQ
-
-六一礼物：这些有趣的动图送给孩子们！了解数学能做什么？电路如何工作？
 
 # 数学杂谈
 

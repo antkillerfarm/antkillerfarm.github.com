@@ -7,7 +7,7 @@ category: ML
 * toc
 {:toc}
 
-## 朴素贝叶斯方法（续）
+# 朴素贝叶斯方法（续）
 
 $$\begin{align}p(x_1,\dots,x_{50000}\mid y)&=p(x_1\mid y)p(x_2\mid y,x_1)p(x_3\mid y,x_1,x_2)\cdots p(x_{50000}\mid y,x_1,\dots,x_{49999})(条件概率的乘法公式)
 \\&=p(x_1\mid y)p(x_2\mid y)p(x_3\mid y)\cdots p(x_{50000}\mid y)(NB假设)=\prod_{i=1}^np(x_i\mid y)
@@ -83,7 +83,7 @@ https://mp.weixin.qq.com/s/_wuE3-7nWyz7VDWdDPJSeQ
 
 需要注意的是，上面两个事件模型的概率公式虽然一致，但含义却有很大差异，不要弄混了。
 
-# 支持向量机
+# SVM
 
 支持向量机（SVM，Support Vector Machines）是目前最好的监督学习算法。它由Vladimir Naumovich Vapnik与Alexey Ya. Chervonenkis于1963年提出。
 

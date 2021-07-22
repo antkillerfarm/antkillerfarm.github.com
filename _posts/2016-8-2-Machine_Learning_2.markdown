@@ -169,6 +169,28 @@ https://mp.weixin.qq.com/s/vqYX1jpNsdw6F88a-CtZyw
 
 什么是最大似然估计、最大后验估计以及贝叶斯参数估计
 
+## 线性模型 vs. Logistic模型
+
+线性回归模型的成立需满足以下几条假设：
+
+$$Y_i=\beta_0+\beta_1X_i+\epsilon_i$$
+
+$$E(\epsilon_i)=0$$
+
+$$Var(\epsilon_i)=\sigma^2$$
+
+$$Cov(\epsilon_i, \epsilon_j)=0$$
+
+$$\epsilon_i \sim Normal$$
+
+二分类问题不满足第3条和第5条，但是有概率和为1的约束。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/27149706
+
+线性模型 vs. Logistic模型
+
 ## 指数类分布
 
 线性回归和对数回归的迭代公式相同不是偶然的，它们都是指数类分布的特例。
@@ -208,7 +230,7 @@ $$\begin{align}& \eta=\mu \\& T(y)=y \\& a(\eta)=\frac{\mu^2}{2} \\& b(y)=\frac{
 
 除此之外，Dirichlet分布、Poisson分布、多项分布、$$\beta$$分布、$$\gamma$$分布都是指数类分布。
 
-## 广义线性模型
+# 广义线性模型
 
 广义线性模型（Generalized Linear Model，GLM）是解决指数类分布的回归问题的通用模型。
 
