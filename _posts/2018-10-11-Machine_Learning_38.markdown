@@ -229,6 +229,10 @@ https://mp.weixin.qq.com/s/7WuB0uvGSAek9b4TP_0r9g
 
 内置降维、聚类等算法，时间序列数据分析Python库Deeptime
 
+https://zhuanlan.zhihu.com/p/391897734
+
+FaceBook开源全网第一个时序王器Kats
+
 ## 参考
 
 https://www.kaggle.com/thebrownviking20/everything-you-can-do-with-a-time-series/notebook
