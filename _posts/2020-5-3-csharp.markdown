@@ -276,11 +276,19 @@ test4：顶点改为字符串数据类型，不使用BGL API。
 
 ## folly
 
-folly是另一个知名的标准库扩展。
+folly是facebook出品的另一个知名的标准库扩展。
 
 代码：
 
 https://github.com/facebook/folly
+
+## abseil
+
+造轮子的事情，Google也有份。
+
+代码：
+
+https://github.com/abseil/abseil-cpp
 
 # python+
 

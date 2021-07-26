@@ -21,7 +21,7 @@ https://www.tensorflow.org/xla/architecture
 
 ![](/images/img4/XLA.png)
 
-HLO(High Level Optimizer)
+XLA用HLO(High Level Optimizer)这种中间表示形式，表示正在被优化的计算图。
 
 ## 应用层
 
@@ -53,6 +53,10 @@ with tf.device("/device:XLA_CPU:0"):
 unit test：
 
 tensorflow/compiler/xla/tests
+
+第三方的XLA backend接入：
+
+tensorflow/compiler/plugin
 
 ## 底层实现
 

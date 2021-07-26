@@ -285,6 +285,12 @@ https://mp.weixin.qq.com/s/3XyG6KmH0naPsScqFE2vsw
 
 ---
 
+2021.7
+
+最近，公司被LockBit病毒入侵，损失惨重。幸好我用的是ubuntu，毫发无伤。
+
+---
+
 https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
 
 前端安全系列之一：如何防止XSS攻击？
