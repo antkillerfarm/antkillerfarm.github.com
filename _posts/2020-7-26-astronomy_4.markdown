@@ -1,13 +1,71 @@
 ---
 layout: post
-title: 天文杂谈（一）
+title: 阿波罗50年, 天文杂谈（一）
 category: Nature 
 ---
 
 * toc
 {:toc}
 
-# 阿波罗50年（续）
+# 火星探测（续）
+
+https://mp.weixin.qq.com/s/nPL84Xydqdm4UGYK6AeCvA
+
+“祝融号”登陆火星：人类为何非要去那里？
+
+https://mp.weixin.qq.com/s/5Hg1nSRPSrm0-ZBphX2ToA
+
+明明地球资源无限，中国天问一号为什么要登陆火星
+
+https://mp.weixin.qq.com/s/jtPCA4sgLSY07Cqh7K_aIg
+
+国家航天局发布天问一号着陆过程 两器分离和落火影像
+
+https://mp.weixin.qq.com/s/9b618Vc_Y5EgkCYFmfUYFA
+
+这几天，祝融号到底在忙啥呢？
+
+https://mp.weixin.qq.com/s/w0EyZwI7lF3ztNXFx5MtTQ
+
+听说火星上风很大，那祝融号可以用风力发电吗？
+
+https://www.zhihu.com/question/464412564
+
+国家航天局发布火星探测任务首批科学影像图，照片中有哪些信息可以关注？
+
+https://mp.weixin.qq.com/s/B5h5yZ9unpIAD8dR3KG1yw
+
+来自火星的声音！天问一号系列实拍影像发布
+
+# 阿波罗50年
+
+https://mp.weixin.qq.com/s/79e6p2TYpttO-NR1of21jw
+
+月之梦的起源
+
+https://mp.weixin.qq.com/s/QtvKdwbuzUJICjdKbcPIlg
+
+登月究竟是真是假？
+
+https://view.inews.qq.com/a/TEC201907170006770C
+
+别误会，那个经典的月球脚印不是阿姆斯特朗的（巴兹·奥尔德林）
+
+https://mp.weixin.qq.com/s/OdMaaP_gE1rR_rd14LfA9w
+
+战争与登月的渊源
+
+https://mp.weixin.qq.com/s/YRJpHvlEulfBFm8HpBYBZQ
+
+苏联开启的登月序曲
+
+https://mp.weixin.qq.com/s/v3HNhV08vWYPGdeXAZ47ag
+
+月球来到你身边
+
+https://view.inews.qq.com/a/TEC2019072100124408
+
+一文俯瞰从阿波罗1号到17号全舰队
 
 ![](/images/img3/Apollo11_AnnotatedHero.jpg)
 
@@ -252,55 +310,3 @@ https://mp.weixin.qq.com/s/NKzv2VpVDaJ_gSDl_L7FHA
 https://mp.weixin.qq.com/s/lHc8w6wn3Tm6ZD5PPw0TFQ
 
 宇宙7问
-
-https://mp.weixin.qq.com/s/epb4AIyg8_OqjAgGEbB9Ag
-
-31年前的北美大停电 背后的神秘力量是谁？（太阳风暴）
-
-https://mp.weixin.qq.com/s/oTltrhF25ClrImp6KUlagw
-
-他俩曾和鸽子较劲，却歪打正着获得诺奖（阿诺·彭齐亚斯（Arno Penzias）和罗伯特·威尔逊（Robert Wilson）——宇宙微波背景）
-
-https://mp.weixin.qq.com/s/O5L7hvg1WXJpbwKvaY880w
-
-捕手LAMOST与高速星的故事
-
-https://mp.weixin.qq.com/s/oU6KRPwuj9SJOLEYHNmE9A
-
-巨石来自外星球？是你来自外太空！
-
-https://mp.weixin.qq.com/s/5JLSuv54Xyt_Fcg_Ps1Rsg
-
-最古老、最遥远、最明亮...
-
-https://mp.weixin.qq.com/s/eO71ulxgc-Fdx8KtMf7CXg
-
-40多年前美国赠送给我国1克月岩样品，背后有怎样的故事？
-
-https://mp.weixin.qq.com/s/vxTJf4pwpB3a2lqtx4fQ6g
-
-万家灯火，有你守护！我是如何拍到这次陆基中段反导试验靶弹发射的？
-
-https://mp.weixin.qq.com/s/wDhmqd2u56xJb3wcQHTW_g
-
-260年前，一个不同寻常的新年（日月同升，五星联珠）
-
-https://mp.weixin.qq.com/s/6syX6eZ3l0qnH47GL8iulg
-
-ASO-S卫星流浪计划：一起揭秘太阳磁场的秘密
-
-https://mp.weixin.qq.com/s/KFO1ar8awQ7Xl2Iam2iLEA
-
-如果没有磁场，太阳将变得枯燥无味
-
-https://mp.weixin.qq.com/s/4x9dfPsrUaXlE8_vxri7jg
-
-火箭发射失利后，一封初中生的信冲上热搜！
-
-https://mp.weixin.qq.com/s/oP5prD-KuxI8CNVo16arVQ
-
-1994年，木星曾帮地球抗下了21波灭星级打击（苏梅克-列维九号彗星）
-
-https://mp.weixin.qq.com/s/Sija998_IKP2G0GQEYynCw
-
-知否知否，月球种菜可否？

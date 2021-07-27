@@ -144,3 +144,7 @@ https://mp.weixin.qq.com/s/NHkTQmJ3Jq1A3pgKI2DCeg
 https://zhuanlan.zhihu.com/p/377325999
 
 改名泰国，激怒中国
+
+https://mp.weixin.qq.com/s/61qqxaLhfcLSzbBi_x1XWw
+
+亚洲第二富国菲律宾，如今却靠出口女佣赚钱

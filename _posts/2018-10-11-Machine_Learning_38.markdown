@@ -233,6 +233,10 @@ https://zhuanlan.zhihu.com/p/391897734
 
 FaceBook开源全网第一个时序王器Kats
 
+https://mp.weixin.qq.com/s/XCHSulXn1hzgLqLJjXkSGg
+
+TODS：从时间序列数据中检测不同类型的异常值
+
 ## 参考
 
 https://www.kaggle.com/thebrownviking20/everything-you-can-do-with-a-time-series/notebook

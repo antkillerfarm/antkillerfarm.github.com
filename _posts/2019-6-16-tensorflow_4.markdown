@@ -310,6 +310,15 @@ decoder = { tf.equal(image_ext, '.png'):  decode_png,
             tf.equal(image_ext, '.jpg'):  decode_jpg}
 image_tensor = tf.case(decoder, default = decode_png, exclusive = True)
 ```
+# 多核(multicore)，多线程(multi-thread)
+
+在Tensorflow程序中，我们会经常看到”with tf.device("/cpu:0"): “ 这个语句。单独使用这个语句，而不做其他限制，实际上默认tensorflow程序占用所有可以使用的内存资源和CPU核。
+
+参考：
+
+http://deepnlp.org/blog/tensorflow-parallelism/
+
+Tensorflow并行：多核(multicore)，多线程(multi-thread)
 
 # 参考
 
@@ -396,15 +405,3 @@ https://mp.weixin.qq.com/s/sbJdU7qMMyrSRuybTh7bKg
 https://mp.weixin.qq.com/s/5wy6yqaW_9pMBhgw8qDdOQ
 
 基于TensorFlow打造强化学习API
-
-https://mp.weixin.qq.com/s/MYBTWL3X_OhLZL6C4rISzw
-
-TensorFlow训练线性回归
-
-https://mp.weixin.qq.com/s/5QYlh6gV9IqdQfraK4DC8w
-
-10种深度学习算法的TensorFlow实现
-
-https://mp.weixin.qq.com/s/W1KP213Ngj-BNEyx-_nVyw
-
-利用TensorFlow实现卷积自编码器

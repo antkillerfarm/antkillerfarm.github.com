@@ -9,6 +9,58 @@ category: Nature
 
 # 天文杂谈
 
+https://mp.weixin.qq.com/s/epb4AIyg8_OqjAgGEbB9Ag
+
+31年前的北美大停电 背后的神秘力量是谁？（太阳风暴）
+
+https://mp.weixin.qq.com/s/oTltrhF25ClrImp6KUlagw
+
+他俩曾和鸽子较劲，却歪打正着获得诺奖（阿诺·彭齐亚斯（Arno Penzias）和罗伯特·威尔逊（Robert Wilson）——宇宙微波背景）
+
+https://mp.weixin.qq.com/s/O5L7hvg1WXJpbwKvaY880w
+
+捕手LAMOST与高速星的故事
+
+https://mp.weixin.qq.com/s/oU6KRPwuj9SJOLEYHNmE9A
+
+巨石来自外星球？是你来自外太空！
+
+https://mp.weixin.qq.com/s/5JLSuv54Xyt_Fcg_Ps1Rsg
+
+最古老、最遥远、最明亮...
+
+https://mp.weixin.qq.com/s/eO71ulxgc-Fdx8KtMf7CXg
+
+40多年前美国赠送给我国1克月岩样品，背后有怎样的故事？
+
+https://mp.weixin.qq.com/s/vxTJf4pwpB3a2lqtx4fQ6g
+
+万家灯火，有你守护！我是如何拍到这次陆基中段反导试验靶弹发射的？
+
+https://mp.weixin.qq.com/s/wDhmqd2u56xJb3wcQHTW_g
+
+260年前，一个不同寻常的新年（日月同升，五星联珠）
+
+https://mp.weixin.qq.com/s/6syX6eZ3l0qnH47GL8iulg
+
+ASO-S卫星流浪计划：一起揭秘太阳磁场的秘密
+
+https://mp.weixin.qq.com/s/KFO1ar8awQ7Xl2Iam2iLEA
+
+如果没有磁场，太阳将变得枯燥无味
+
+https://mp.weixin.qq.com/s/4x9dfPsrUaXlE8_vxri7jg
+
+火箭发射失利后，一封初中生的信冲上热搜！
+
+https://mp.weixin.qq.com/s/oP5prD-KuxI8CNVo16arVQ
+
+1994年，木星曾帮地球抗下了21波灭星级打击（苏梅克-列维九号彗星）
+
+https://mp.weixin.qq.com/s/Sija998_IKP2G0GQEYynCw
+
+知否知否，月球种菜可否？
+
 https://mp.weixin.qq.com/s/rvH-gvgbjLITyP8QOuzgKA
 
 我们在新疆发现了一个建天文台的好地方
@@ -44,6 +96,10 @@ https://mp.weixin.qq.com/s/nCSgobpyy4-U9z1ycMXg0g
 https://mp.weixin.qq.com/s/xfJ_EiAoW0i_k_zUWHoQTQ
 
 先磕为敬！你们两颗星星为什么这么浪漫这么甜？（冥王星和卡戎）Charon是冥王的船夫，负责将逝者摆渡过冥河。
+
+https://mp.weixin.qq.com/s/nzoE3EYOhwfg-D7Uz5PyxQ
+
+太阳观测的新窗口
 
 # 化学+
 

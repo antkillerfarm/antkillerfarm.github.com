@@ -9,6 +9,18 @@ category: AI
 
 # TensorFlow
 
+https://mp.weixin.qq.com/s/MYBTWL3X_OhLZL6C4rISzw
+
+TensorFlow训练线性回归
+
+https://mp.weixin.qq.com/s/5QYlh6gV9IqdQfraK4DC8w
+
+10种深度学习算法的TensorFlow实现
+
+https://mp.weixin.qq.com/s/W1KP213Ngj-BNEyx-_nVyw
+
+利用TensorFlow实现卷积自编码器
+
 https://mp.weixin.qq.com/s/pIESRzjsmqoO46P4x5Iqhw
 
 Tensorflow卷积神经网络
@@ -400,15 +412,3 @@ https://zhuanlan.zhihu.com/p/27087310
 https://mp.weixin.qq.com/s/6y7AEGz2cs4QUP0Cikhnmw
 
 272页PPT讲述Tensorflow2.0在图形学方面的应用
-
-https://mp.weixin.qq.com/s/VN2O6faf4spdD3qaqf3aiw
-
-使用AMD显卡加速TensorFlow
-
-https://mp.weixin.qq.com/s/LvN6LkUwyVElWVRrAT9NJA
-
-TensorFlow 2.0迁移学习实践指南
-
-https://mp.weixin.qq.com/s/Rb0Fh9TZJo-IdEoxlgD4gw
-
-如何让模型在生产环境上推理得更快

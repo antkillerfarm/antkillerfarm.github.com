@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 中国航天, 火星探测, 阿波罗50年
+title: 中国航天, 火星探测
 category: Nature 
 ---
 
@@ -306,57 +306,3 @@ https://mp.weixin.qq.com/s/uvSeg8KnPTj_4au_B3WXBw
 https://mp.weixin.qq.com/s/_s7XcEz6Ft6eGXxZOUeSVg
 
 火星上存在真菌吗？
-
-https://mp.weixin.qq.com/s/nPL84Xydqdm4UGYK6AeCvA
-
-“祝融号”登陆火星：人类为何非要去那里？
-
-https://mp.weixin.qq.com/s/5Hg1nSRPSrm0-ZBphX2ToA
-
-明明地球资源无限，中国天问一号为什么要登陆火星
-
-https://mp.weixin.qq.com/s/jtPCA4sgLSY07Cqh7K_aIg
-
-国家航天局发布天问一号着陆过程 两器分离和落火影像
-
-https://mp.weixin.qq.com/s/9b618Vc_Y5EgkCYFmfUYFA
-
-这几天，祝融号到底在忙啥呢？
-
-https://mp.weixin.qq.com/s/w0EyZwI7lF3ztNXFx5MtTQ
-
-听说火星上风很大，那祝融号可以用风力发电吗？
-
-https://www.zhihu.com/question/464412564
-
-国家航天局发布火星探测任务首批科学影像图，照片中有哪些信息可以关注？
-
-# 阿波罗50年
-
-https://mp.weixin.qq.com/s/79e6p2TYpttO-NR1of21jw
-
-月之梦的起源
-
-https://mp.weixin.qq.com/s/QtvKdwbuzUJICjdKbcPIlg
-
-登月究竟是真是假？
-
-https://view.inews.qq.com/a/TEC201907170006770C
-
-别误会，那个经典的月球脚印不是阿姆斯特朗的（巴兹·奥尔德林）
-
-https://mp.weixin.qq.com/s/OdMaaP_gE1rR_rd14LfA9w
-
-战争与登月的渊源
-
-https://mp.weixin.qq.com/s/YRJpHvlEulfBFm8HpBYBZQ
-
-苏联开启的登月序曲
-
-https://mp.weixin.qq.com/s/v3HNhV08vWYPGdeXAZ47ag
-
-月球来到你身边
-
-https://view.inews.qq.com/a/TEC2019072100124408
-
-一文俯瞰从阿波罗1号到17号全舰队

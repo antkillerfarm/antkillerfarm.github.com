@@ -25,17 +25,9 @@ https://mp.weixin.qq.com/s/CGF-6P4RDtzQnc2XClu5zw
 
 3D计算机视觉简介
 
-https://zhuanlan.zhihu.com/p/79628068
-
-基于深度学习的视觉三维重建研究总结
-
 https://mp.weixin.qq.com/s/tTdKqRZqBFxFFiZaDD9AJw
 
 三维深度学习中的目标分类与语义分割
-
-https://mp.weixin.qq.com/s/ihrExTygb-Pnnh4o4tAYnQ
-
-基于单目视觉的三维重建算法综述
 
 https://mp.weixin.qq.com/s/SBWGvu84oPKZkY5d8gz-oQ
 
@@ -56,10 +48,6 @@ PRNet：人脸3D重建与密集对齐
 https://mp.weixin.qq.com/s/rxP9PlTJJdw5VmGbwRPMog
 
 解决3D重建难题，伯克利大学根据单张平面彩图重建高精度3D结构
-
-https://mp.weixin.qq.com/s/Uj2gYOS2TZGVSCka57M0zA
-
-MVSNet: 非结构化多视点三维重建网络
 
 https://mp.weixin.qq.com/s/RwofVKhBFqo3dYJzy9mlJw
 
@@ -157,10 +145,6 @@ https://mp.weixin.qq.com/s/pK8zt6UFXtSIS9GAQNgICw
 
 超越像素平面：聚焦3D深度学习的现在和未来
 
-https://mp.weixin.qq.com/s/gRFq44pnhRScO9p3M15Gfw
-
-基于三维重建的全新相机姿态估计方法
-
 https://mp.weixin.qq.com/s/7P6iMcZUNNVAefrUz-dAsQ
 
 MIT谷歌伯克利三强联手，AI创造超现实主义3D运动雕塑
@@ -188,10 +172,6 @@ https://mp.weixin.qq.com/s/adSbAAV7POblqE_jaOGZhg
 https://mp.weixin.qq.com/s/l7RNfRB-KvxRHRKNYx1oeQ
 
 云从3D人体重建登顶三项榜单，一张照片就能生成3D形象
-
-https://mp.weixin.qq.com/s/GyE86DG7VqW0n4p0IP-lmQ
-
-R-MVSNet:一个高精度高效率的三维重建网络
 
 https://mp.weixin.qq.com/s/SnvXvijf5gBMNsnVW1-KMA
 
@@ -269,15 +249,47 @@ https://mp.weixin.qq.com/s/BNYUkocbKzqTjTNbGuNBzg
 
 基于3DMM的三维人脸重建技术总结
 
-https://www.cnblogs.com/wuyida/p/6301262.html
-
-三维重建技术概述
-
 https://mp.weixin.qq.com/s/-9e86JF7VyHbqTyn2whOzg
 
 如何入门多视角人脸正面化生成？不得不看的超详细最新综述！
 
-# NetVLAD
+## 三维重建
+
+三维重建是计算机视觉和深度学习的重要任务。目前三维重建按照其表达方式主要分为两大类：一类是显式表达，以点云为代表（也有生成网格和体素），由神经网络直接回归生成三维空间中的几何元素；另一类是隐式表达（如NeRF），神经网络只是建模三维物体的空间占用，需要后续的渲染或表面提取获得显式三维形状。
+
+https://www.cnblogs.com/wuyida/p/6301262.html
+
+三维重建技术概述
+
+https://blog.csdn.net/wishchin/article/category/5723249
+
+一个三维重建/SLAM的blog
+
+https://zhuanlan.zhihu.com/p/79628068
+
+基于深度学习的视觉三维重建研究总结
+
+https://mp.weixin.qq.com/s/C2h0xvcHCrnEYcDgHse5xA
+
+从NeRF -> GRAF -> GIRAFFE，2021 CVPR Best Paper诞生记
+
+https://mp.weixin.qq.com/s/ihrExTygb-Pnnh4o4tAYnQ
+
+基于单目视觉的三维重建算法综述
+
+https://mp.weixin.qq.com/s/Uj2gYOS2TZGVSCka57M0zA
+
+MVSNet: 非结构化多视点三维重建网络
+
+https://mp.weixin.qq.com/s/gRFq44pnhRScO9p3M15Gfw
+
+基于三维重建的全新相机姿态估计方法
+
+https://mp.weixin.qq.com/s/GyE86DG7VqW0n4p0IP-lmQ
+
+R-MVSNet:一个高精度高效率的三维重建网络
+
+## NetVLAD
 
 NetVLAD算的上是CNN+传统算子的一个范例。
 
@@ -372,49 +384,3 @@ https://mp.weixin.qq.com/s/4VE2lZeFf05AyLp_s3nTFQ
 https://mp.weixin.qq.com/s/AI_QC8IgnjMSOAZJNbQjfQ
 
 空间变换网络简单介绍
-
-# 深度信息检索+
-
-https://mp.weixin.qq.com/s/N3JBHlqneG9dI0I26M3wHQ
-
-如何做好大规模视觉搜索？eBay基于实践总结出了7条建议
-
-https://mp.weixin.qq.com/s/8Twe3e3WKCY9pTiNtnW2sg
-
-重磅！谷歌等推出基于机器学习的数据库SageDB
-
-https://mp.weixin.qq.com/s/WpITPvYmixMHa0ha0MgWVA
-
-神马搜索如何提升搜索的时效性？
-
-https://zhuanlan.zhihu.com/p/163358322
-
-learning to match for product search
-
-https://mp.weixin.qq.com/s/_MpfRGYG_pleaEQMpQT5Mg
-
-深度学习在视觉搜索和匹配中的应用
-
-https://mp.weixin.qq.com/s/s8swIdAPw_VeAWnZTL1riA
-
-搜你所想，从Query意图识别到类目识别的演变
-
-https://mp.weixin.qq.com/s/dO3eDlhCSYRh3pjbI_gsQg
-
-深度学习图像检索(CBIR): 十年之大综述
-
-https://mp.weixin.qq.com/s/q4aPtUYi27h-0sqD4bokQQ
-
-再谈搜索中的Query扩展技术
-
-https://mp.weixin.qq.com/s/vwIbM2XNvj-OKCtzqjCVWQ
-
-搜索中涉及的算法问题
-
-https://mp.weixin.qq.com/s/LC4ch4O2eUjgbMLH9zT0pw
-
-如何用深度学习来做检索：度量学习中关于排序损失函数的综述（1）
-
-https://mp.weixin.qq.com/s/TwG6_KJvTGCzDMy6ZD6jsA
-
-如何用深度学习来做检索：度量学习中关于排序损失函数的综述（2）

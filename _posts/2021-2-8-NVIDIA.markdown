@@ -283,6 +283,18 @@ https://zhuanlan.zhihu.com/p/67785062
 
 # TensorFlow++
 
+https://mp.weixin.qq.com/s/VN2O6faf4spdD3qaqf3aiw
+
+使用AMD显卡加速TensorFlow
+
+https://mp.weixin.qq.com/s/LvN6LkUwyVElWVRrAT9NJA
+
+TensorFlow 2.0迁移学习实践指南
+
+https://mp.weixin.qq.com/s/Rb0Fh9TZJo-IdEoxlgD4gw
+
+如何让模型在生产环境上推理得更快
+
 https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
 
 简易浣熊识别器是如何实现的

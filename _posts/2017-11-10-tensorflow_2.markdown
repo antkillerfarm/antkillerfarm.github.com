@@ -54,6 +54,12 @@ unit test：
 
 tensorflow/compiler/xla/tests
 
+`bazel build //tensorflow/compiler/xla/tests:convolution_test_cpu`
+
+官方backend：
+
+tensorflow/compiler/xla/service
+
 第三方的XLA backend接入：
 
 tensorflow/compiler/plugin
@@ -71,6 +77,12 @@ XLA支持两种接入模式：
 compiler/tf2xla/ -> compiler/xla/client/ -> compiler/xla/service/
 
 最终的计算由service负责实现。
+
+## backward
+
+`CanonicalizeBackwardFilterConvolution`
+
+
 
 ## 参考
 
@@ -328,16 +340,6 @@ https://zhuanlan.zhihu.com/p/27481108
 
 TensorFlow直接读取图片和读写TFRecords速度对比
 
-# 多核(multicore)，多线程(multi-thread)
-
-在Tensorflow程序中，我们会经常看到”with tf.device("/cpu:0"): “ 这个语句。单独使用这个语句，而不做其他限制，实际上默认tensorflow程序占用所有可以使用的内存资源和CPU核。
-
-参考：
-
-http://deepnlp.org/blog/tensorflow-parallelism/
-
-Tensorflow并行：多核(multicore)，多线程(multi-thread)
-
 # 内存布局
 
 Tensorflow和Caffe的内存布局存在较大差异，这是两者模型转换时，最常遇到的问题。一般认为，Caffe的内存布局对卷积硬件加速更友好一些。
@@ -359,7 +361,7 @@ Tensorflow源代码中自带的toco（Tensorflow Optimizing COnverter）工具�
 
 https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/lite/toco
 
----
+## 模型文件解析
 
 tflite模型使用flatbuffers进行序列化，因此也可以使用flatbuffers解析相关模型。
 

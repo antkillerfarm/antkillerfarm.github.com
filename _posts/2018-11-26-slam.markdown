@@ -49,10 +49,6 @@ https://ewenwan.github.io/archive/
 
 一个DL+SLAM方面的blog
 
-https://blog.csdn.net/wishchin/article/category/5723249
-
-一个三维重建/SLAM的blog
-
 https://zhuanlan.zhihu.com/c_202014804
 
 一个SLAM方面的专栏
