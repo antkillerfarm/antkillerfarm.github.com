@@ -68,22 +68,6 @@ https://mp.weixin.qq.com/s/FV13ma9LxI1gsgi9ovU4Mw
 
 30个实例详解TOP命令
 
-https://www.cnblogs.com/renshengdezheli/p/13427865.html
-
-查询OS、CPU、内存、硬盘信息
-
-https://mp.weixin.qq.com/s/bMWjhWQHTNOStxB4MDDruw
-
-40个Linux资源查看命令
-
-https://mp.weixin.qq.com/s/SQMRdaYChXo4bxEyTJZ6wA
-
-CPU实用监控工具盘点
-
-https://www.zhihu.com/question/452895041
-
-Linux大神都是怎么记住这么多命令的？
-
 ## free
 
 free命令的内容比较概括，主要包含系统内存的整体使用情况，不深入到进程一级。
@@ -289,6 +273,26 @@ https://mp.weixin.qq.com/s/-m8q2TzlfpvSaPRqGsQPbQ
 https://mp.weixin.qq.com/s/qii7M6hOIBf9kgbmWpc3XQ
 
 Linux交互式图形可视化磁盘使用软件（Filelight）
+
+https://www.cnblogs.com/renshengdezheli/p/13427865.html
+
+查询OS、CPU、内存、硬盘信息
+
+https://mp.weixin.qq.com/s/bMWjhWQHTNOStxB4MDDruw
+
+40个Linux资源查看命令
+
+https://mp.weixin.qq.com/s/SQMRdaYChXo4bxEyTJZ6wA
+
+CPU实用监控工具盘点
+
+https://www.zhihu.com/question/452895041
+
+Linux大神都是怎么记住这么多命令的？
+
+http://github.com/ibraheemdev/modern-unix
+
+这里收集了几个非常好用的工具
 
 # 时间的表示方法
 

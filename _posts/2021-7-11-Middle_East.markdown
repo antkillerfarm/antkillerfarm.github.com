@@ -154,3 +154,33 @@ https://www.zhihu.com/question/303195046
 https://www.zhihu.com/answer/790409921
 
 阿富汗历史
+
+# 欧洲+
+
+https://www.fmprc.gov.cn/ce/cepl/chn/hwly/t754262.htm
+
+伟大的国王卡齐米日三世
+
+https://www.zhihu.com/question/321165966
+
+如何看待演员泽连斯基2019年乌克兰大选高票当选乌克兰总统？
+
+https://www.zhihu.com/question/343334470
+
+为什么要辱法，法国做了什么荒诞的事？
+
+https://www.zhihu.com/answer/1318998332
+
+二战后德国失去东普鲁士相当于中国失去哪里？
+
+https://mp.weixin.qq.com/s/RsDeC81TVkIz_fqqwdXUJw
+
+出产泰坦尼克号的北爱尔兰，还有哪些可能性？
+
+https://mp.weixin.qq.com/s/TwKilqJiWo6UvQhg2dkCig
+
+菲利普亲王病逝：以蒙巴顿和温莎之名
+
+https://mp.weixin.qq.com/s/y7oUufw8eXu6Ey4EaATE-g
+
+去埃及打仗，拿破仑为什么要带这么多科学家？
