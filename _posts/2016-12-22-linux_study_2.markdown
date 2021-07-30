@@ -106,6 +106,8 @@ https://mp.weixin.qq.com/s/3fNLa-yO4fUWO3nO9id1iA
 
 `lscpu`
 
+>类似的还有：`lsusb`
+
 极简版：
 
 `nproc`

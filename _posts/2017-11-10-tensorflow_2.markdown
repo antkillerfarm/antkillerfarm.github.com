@@ -80,9 +80,27 @@ compiler/tf2xla/ -> compiler/xla/client/ -> compiler/xla/service/
 
 ## backward
 
+tensorflow/compiler/tf2xla/g3doc/gpu_supported_ops.md
+
 `CanonicalizeBackwardFilterConvolution`
 
+`Conv2DBackpropFilter`
 
+`GetKnownXLAWhitelistOp`
+
+`XlaOpRegistry::GetAllRegisteredOps`
+
+`REGISTER_XLA_OP`
+
+`HloInstruction::Visit`
+
+`class ConvBackpropFilterOp : public XlaOpKernel`
+
+`MakeXlaBackpropFilterConvOp`
+
+`ConvGeneralDilated`
+
+https://discuss.tvm.apache.org/t/rfc-mlir-frontend/6473
 
 ## 参考
 
