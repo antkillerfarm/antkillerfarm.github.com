@@ -189,6 +189,10 @@ https://mp.weixin.qq.com/s/JbhEN5yc_igLQdhUH-ImBQ
 
 高频面试数据结构——跳表
 
+https://mp.weixin.qq.com/s/WlHl9xMJ-CZg5REFWSo0YA
+
+深入理解跳表及其在Redis中的应用
+
 # ACBM算法
 
 ACBM算法是在AC（Aho-Corasick）自动机（UNIX上的fgrep命令使用的就是AC算法）的基础之上，引入了BM（Boyer-Moore）算法的多模扩展，实现的高效的多模匹配。和AC自动机不同的是，ACBM算法不需要扫描目标文本串中的每一个字符，可以利用本次匹配不成功的信息，跳过尽可能多的字符，实现高效匹配。

@@ -63,6 +63,10 @@ http://www.cnblogs.com/wentingtu/archive/2012/03/13/2393993.html
 
 Learning to Rank入门小结
 
+https://blog.csdn.net/anshuai_aw1/article/details/86018105
+
+排序学习（Learning to rank）综述
+
 https://mp.weixin.qq.com/s/dRaiYPIdh_oJcQD-UxAlkA
 
 优秀的排序算法如何成就了伟大的机器学习技术

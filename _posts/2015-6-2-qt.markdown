@@ -346,3 +346,7 @@ Nginx架构浅析
 https://mp.weixin.qq.com/s/eUindWNZiCv_tSLQeYfmLg
 
 Nginx常用配置清单
+
+https://mp.weixin.qq.com/s/LmtHTOVOvdcnMBuxv7a9_A
+
+Nginx最全操作总结

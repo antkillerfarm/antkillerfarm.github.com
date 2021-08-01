@@ -27,6 +27,10 @@ https://mp.weixin.qq.com/s/tHDB4tKmaY9vglmoRL9-tg
 
 5款强大的JVM性能调优监控工具
 
+https://mp.weixin.qq.com/s/2yxexZUr5MWdMZ02GCSwdA
+
+谈谈JVM内部锁升级过程
+
 ## 参考
 
 http://blog.csdn.net/u014717036/article/details/52234679

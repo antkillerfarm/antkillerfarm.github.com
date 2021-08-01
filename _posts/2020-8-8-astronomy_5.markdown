@@ -101,6 +101,10 @@ https://mp.weixin.qq.com/s/nzoE3EYOhwfg-D7Uz5PyxQ
 
 太阳观测的新窗口
 
+https://mp.weixin.qq.com/s/PrsKjWC9YC2mRE1pI1dFCg
+
+杨利伟被文盲编辑坑了？《地月同辉》考
+
 # 化学+
 
 ## 食品工业（续）

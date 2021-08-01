@@ -287,29 +287,3 @@ https://mp.weixin.qq.com/s/EqLzNzzMcwq5SEyBoTsuug
 https://mp.weixin.qq.com/s/mCUdK4i6XGEyaWNCIWA-wQ
 
 集五福，我用Python
-
-# 可视化++
-
-https://mp.weixin.qq.com/s/VqHN-cIdNa8l1lKlu4AD4w
-
-24种可视化图表优缺点对比
-
-https://mp.weixin.qq.com/s/4nIKkAPDrYaTE1sGtbCO9A
-
-不使用直方图的6个原因以及应该使用哪个图替代
-
-https://mp.weixin.qq.com/s/72wcShrcjuI0ne1zo8jzIQ
-
-这次气死的不只是设计师，一定要给你点颜色瞧瞧
-
-https://mp.weixin.qq.com/s/58Y-6CUYDVOp8y_jT4BmSw
-
-31个有点意思数据可视化作品
-
-https://mp.weixin.qq.com/s/RGAU6TzlhYTqKAGop_Hd1A
-
-最受欢迎的50个数据可视化图表
-
-https://blog.csdn.net/zhangdaiscott/article/details/109057686
-
-推荐四款可视化工具，解决99%的可视化大屏需求

@@ -39,6 +39,10 @@ https://mp.weixin.qq.com/s/23QCWf0NOoXlwRGAHfx4oQ
 
 还在疑惑并发和并行？
 
+https://mp.weixin.qq.com/s/-kizIk3ZXqu7UNqAb3QlQw
+
+C++并发编程（C++11到C++17）
+
 ## 概述
 
 ![](/images/img4/Parallel.png)

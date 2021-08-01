@@ -355,6 +355,10 @@ https://zhuanlan.zhihu.com/p/25664121
 
 比较raft ，basic paxos以及multi-paxos
 
+https://mp.weixin.qq.com/s/JVreQzE8B6nAgPmDHM5aXQ
+
+从Paxos到Multi-Paxos
+
 ## Cache
 
 **缓存雪崩**指大量缓存同一时间段集体失效，或者缓存整体不能提供服务，导致大量的请求全部到达数据库，对数据CPU和内存造成巨大压力，严重的会造成数据库宕机。也被称为缓存踩踏（Cache Stampede）。

@@ -1,11 +1,81 @@
 ---
 layout: post
-title:  深度语音识别（三）——语音识别/语音合成参考资源
+title:  深度语音识别（三）——语音识别参考资源
 category: speech 
 ---
 
 * toc
 {:toc}
+
+# 语音合成
+
+## WaveRNN（续）
+
+3.我们可以将B组数据看作B个赛道。第1行首先发车（生成数据），当第1行生成了F个数据之后，第2行开始发车。依此类推。显然，只要赛道足够长，则在大多数时间中，都是B个赛车同时再跑。这样就达到了并行运算的效果。如上图中的三个白色方格就是同时生成的。
+
+4.数据生成好之后，再重新组合回去，得到最终的结果序列。
+
+WaveRNN还有一个trick：
+
+- 生成语音的时候，并不是直接采用最大可能的音素，而是使用采样的方法，根据各个音素的概率，随机选择可能的音素。
+
+参考：
+
+https://mp.weixin.qq.com/s/H77iom38lTR0KzeFXrdWew
+
+DeepMind与谷歌大脑联手推出WaveRNN，移动端合成高保真音频媲美WaveNet
+
+https://www.monthly-hack.com/entry/2018/02/26/211248
+
+这是个日文blog，有两张图不错。
+
+https://www.jianshu.com/p/b3019f2773ed
+
+语音合成text-to-speech WaveRNN
+
+http://slides.com/smerity/reading-group-efficient-neural-audio-synthesis#/
+
+Efficient Neural Audio Synthesis
+
+# 语音分离
+
+https://mp.weixin.qq.com/s/T96S0b7Lp9YWR4cRcMQr6A
+
+一文概览基于深度学习的监督语音分离
+
+https://mp.weixin.qq.com/s/XP4NVYMmKj9RLsgonP3ooQ
+
+无需进行滤波后处理，利用循环推断算法实现歌唱语音分离
+
+https://mp.weixin.qq.com/s/9QrahPP1gDM3eMNgx91spA
+
+深度学习也能实现“鸡尾酒会效应”：谷歌提出新型音频-视觉语音分离模型
+
+https://mp.weixin.qq.com/s/-ULMtt2GsrUk8B-kC6AnXw
+
+入门语音分离，从鸡尾酒问题开始！
+
+# WeNet
+
+WeNet是出门问问联合西北工业大学音频语音与语言处理研究组推出面向产品和工业界的端到端语音识别开源工具。
+
+代码：
+
+https://github.com/wenet-e2e/wenet
+
+参考：
+
+https://mp.weixin.qq.com/s/oR6AKKxsZ2WA9-D8e9rCWA
+
+WeNet 1.0正式发布: 更快更高更强更有生产力
+
+https://mp.weixin.qq.com/s/EqLCyHn9we2zn-lCnunDNA
+
+WeNet更新：支持多机并行训练
+
+https://mp.weixin.qq.com/s/QpTZSW2TZ1clEBt4iwoe4Q
+
+WeNet更新：支持语言模型
 
 # Attention Based
 
@@ -306,87 +376,3 @@ https://mp.weixin.qq.com/s/wjVDgwHpLYM3vZWL5AJvDg
 https://mp.weixin.qq.com/s/bJ4xdXcHPI8VQcXAvE8i1w
 
 可控时延语音识别文本后处理技术
-
-https://mp.weixin.qq.com/s/I_WiSkA4Cu7N_FmoEJTADg
-
-一次对语音技术的彻底批判
-
-https://mp.weixin.qq.com/s/CXIO05_09vwWFJwfDyZQUA
-
-迈向语音识别领域的ImageNet时刻
-
-https://mp.weixin.qq.com/s/Izn6LPCRKNxkTHmkqbAzeg
-
-从算法到应用：滴滴端到端语音AI技术实践
-
-https://mp.weixin.qq.com/s/YTQOgGvFfBdasV18PmboGQ
-
-深度学习在单声道录音中的说话人角色识别优化实践
-
-https://mp.weixin.qq.com/s/PAHwyoxNbi8HDMGh2JtJPQ
-
-58同城语音识别技术的探索和实践
-
-https://mp.weixin.qq.com/s/A9bSp3H3UzAEgL4N7o1KpQ
-
-使用tensorflow进行音乐类型的分类
-
-https://mp.weixin.qq.com/s/j9Kis3AsyYjo3EYOJ6XzBA
-
-端到端声源分离研究：现状、进展和未来
-
-https://mp.weixin.qq.com/s/RC2Yj0cCXBBJaPpflBLB-w
-
-语种识别
-
-https://mp.weixin.qq.com/s/w6Uxr8oB_PHvIHf9ksTVsw
-
-LRSpeech：极低资源下的语音合成与识别
-
-https://mp.weixin.qq.com/s/TdGq07BZ9JcYeKo6Y8gtdA
-
-音频预训练模型
-
-https://mp.weixin.qq.com/s/ybanqEzEDtwTJ-y6piBv8Q
-
-黑白键上的字节跳动：全球最大钢琴MIDI数据集背后的故事
-
-https://mp.weixin.qq.com/s/wZfBg175ylxZj-k4Xzggqw
-
-端到端语音识别模型
-
-https://mp.weixin.qq.com/s/kEtoG4QVNn248k3Yhulrvw
-
-《语音识别引擎后端架构设计》58同城
-
-https://mp.weixin.qq.com/s/x_l5QliTPv7NyUJ5k4uaMQ
-
-基于Transformer的高效、低延时、流式语音识别模型
-
-https://mp.weixin.qq.com/s/4zm4kO4CU9-0sYKTSYdudw
-
-10小时训练数据打造多语种语音识别新高度
-
-https://mp.weixin.qq.com/s/_84nqrEMGC-Q-fPdEiPDgQ
-
-3人半年打造语音识别引擎——58同城语音识别自研之路
-
-https://mp.weixin.qq.com/s/8dFWQ-7m0jN5PvVIUeM33w
-
-利用Android手机和YAMNet ML模型进行声音分类（一）
-
-https://mp.weixin.qq.com/s/y7UZooc97gPgonnM3C9qxg
-
-利用Android手机和YAMNet ML模型进行声音分类（二）
-
-https://mp.weixin.qq.com/s/xS0fS8Haxt_DXxlw7VEo4Q
-
-移动端的语音识别分享
-
-https://mp.weixin.qq.com/s/wRAc0Vzrdxqr-dqXqqYapw
-
-中文文本纠错算法--错别字纠正的二三事
-
-https://zhuanlan.zhihu.com/p/377983386
-
-流式语音识别原理和实现思路

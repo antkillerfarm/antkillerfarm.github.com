@@ -143,6 +143,16 @@ Advanced Methods for Neural End-to-End Speech Processing
 
 早在12世纪，人们就尝试建造机器来合成人类语言。在18世纪下半叶，匈牙利科学家Wolfgang von Kempelen用一系列的风箱、弹簧、风笛和共振箱制造出一些简单的单词和句子，制造出了一个会说话的机器。
 
+1930年，Bell实验室发明了声码器（Vocoder），将人的声音分解成声带振动和口唇调制两部分，改变口唇部分的调制函数后，就可以合成出不同的声音。这种合成方式物理学基础明确，系统简单，在80年代很受欢迎。著名物理学家霍金的轮椅就是采用这种方式发声的。这种合成方式的缺点在于发音的机器味道很浓，流畅度也不够。
+
+90年代，人们采用更粗暴的方式来合成声音。研究者让播音员录制一个大规模声音库，然后从声音库中选出声音片段来，拼接成所要的句子。比如要合成“我想回家”，就在声音库里找到“我”、“想”、“回”、“家”这四个字对应的发音，再把他们拼成一句话。
+
+这种拼接法里最重要的事是选择合适的发音片段，因为同一个音节在不同环境下的真正发音是不太一样的，要选出最合适的发音片段并不容易。同时，为了拼出的声音更自然，质量更高，声音库自然是越大越好，因此需要大量录制工作。
+
+研究者提出统计模型方法来解决这个问题。和拼接法不同，统计模型方法对每个发音构造一个统计模型，这样只要调整模型参数就可以得到新的发音，而这种参数调整只需要很少的数据。
+
+近年来，深度学习方法成为主流。和统计模型方法相比，深度神经网络对发音过程有更精细的刻画，因此可以合成非常自然逼真的声音。
+
 ![](/images/img4/TTS.png)
 
 ## 开源项目
@@ -336,69 +346,3 @@ WaveRNN没有沿用Dilated Convolution，而是采用了另外一种方式加速
 1.将原始序列重组为B组（B表示Batch Size，这里为8）。上图中的序号表示在原始序列中的序号。因此上图的含义显然就是：每隔8个样本进行一次采样，采样所得编为一组。总共有8个这样的组。
 
 2.作者发现直接分组并行生成，虽然简单，但效果不好。其原因在于只用到了过去的序列数据，而缺少对整个序列信息的把握。但直接采用全局信息，又不是RNN的做法。为此论文提出了提前量的概念，即上图中的F。
-
-3.我们可以将B组数据看作B个赛道。第1行首先发车（生成数据），当第1行生成了F个数据之后，第2行开始发车。依此类推。显然，只要赛道足够长，则在大多数时间中，都是B个赛车同时再跑。这样就达到了并行运算的效果。如上图中的三个白色方格就是同时生成的。
-
-4.数据生成好之后，再重新组合回去，得到最终的结果序列。
-
-WaveRNN还有一个trick：
-
-- 生成语音的时候，并不是直接采用最大可能的音素，而是使用采样的方法，根据各个音素的概率，随机选择可能的音素。
-
-参考：
-
-https://mp.weixin.qq.com/s/H77iom38lTR0KzeFXrdWew
-
-DeepMind与谷歌大脑联手推出WaveRNN，移动端合成高保真音频媲美WaveNet
-
-https://www.monthly-hack.com/entry/2018/02/26/211248
-
-这是个日文blog，有两张图不错。
-
-https://www.jianshu.com/p/b3019f2773ed
-
-语音合成text-to-speech WaveRNN
-
-http://slides.com/smerity/reading-group-efficient-neural-audio-synthesis#/
-
-Efficient Neural Audio Synthesis
-
-# 语音分离
-
-https://mp.weixin.qq.com/s/T96S0b7Lp9YWR4cRcMQr6A
-
-一文概览基于深度学习的监督语音分离
-
-https://mp.weixin.qq.com/s/XP4NVYMmKj9RLsgonP3ooQ
-
-无需进行滤波后处理，利用循环推断算法实现歌唱语音分离
-
-https://mp.weixin.qq.com/s/9QrahPP1gDM3eMNgx91spA
-
-深度学习也能实现“鸡尾酒会效应”：谷歌提出新型音频-视觉语音分离模型
-
-https://mp.weixin.qq.com/s/-ULMtt2GsrUk8B-kC6AnXw
-
-入门语音分离，从鸡尾酒问题开始！
-
-# WeNet
-
-WeNet是出门问问联合西北工业大学音频语音与语言处理研究组推出面向产品和工业界的端到端语音识别开源工具。
-
-代码：
-
-https://github.com/wenet-e2e/wenet
-
-参考：
-
-https://mp.weixin.qq.com/s/oR6AKKxsZ2WA9-D8e9rCWA
-
-WeNet 1.0正式发布: 更快更高更强更有生产力
-
-https://mp.weixin.qq.com/s/EqLCyHn9we2zn-lCnunDNA
-
-WeNet更新：支持多机并行训练
-
-https://mp.weixin.qq.com/s/QpTZSW2TZ1clEBt4iwoe4Q
-
-WeNet更新：支持语言模型

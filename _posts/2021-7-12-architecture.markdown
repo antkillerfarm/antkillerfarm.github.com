@@ -67,6 +67,10 @@ https://mp.weixin.qq.com/s/KSWDjPN7eB5t9NgX4ysNJg
 
 华强北最“稳”赛格大厦，为何摇晃？
 
+https://mp.weixin.qq.com/s/79nCMaagVLc0sKWAhWcG9g
+
+摩天大楼如何靠一颗铁球防风抗震?
+
 ---
 
 2006年4月13日，美国从911废墟中又发现了近300具遇难者遗体。
