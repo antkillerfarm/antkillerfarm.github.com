@@ -53,6 +53,10 @@ $$\begin{align}
 
 $$S=25\sqrt{7} + 50\arcsin(\frac{\sqrt{\frac{7}{2}}}{2}) - 200\arcsin(\frac{\sqrt{\frac{7}{2}}}{4})\approx 29.27625$$
 
+本答案使用Tikz绘图，相关文件地址：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/helloworld/tikz/gnuplot/p1.tex
+
 参考：
 
 https://www.zhihu.com/question/60697114
