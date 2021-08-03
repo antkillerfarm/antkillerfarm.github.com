@@ -283,6 +283,62 @@ https://zhuanlan.zhihu.com/p/67785062
 
 # TensorFlow++
 
+http://www.holmesconan.me/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2018/04/03/cifar10-vgg.html
+
+CIFAR-10 Estimator之Vgg模型
+
+https://mp.weixin.qq.com/s/5_oCSK6MtsK_4xNU6T76UA
+
+计算机图形学遇上深度学习，针对3D图像的TensorFlow Graphics面世
+
+https://mp.weixin.qq.com/s/ndnbTCr51k_FSDRCLi0UOg
+
+添加新操作
+
+https://mp.weixin.qq.com/s/G3fbhTsHA22b02_B5WCPcg
+
+TensorFlow调试程序（一）
+
+https://mp.weixin.qq.com/s/1mSF2HKa72HgWq_q14HMtQ
+
+TensorFlow调试程序（二）
+
+https://mp.weixin.qq.com/s/OGsvcfU1VlhNZYgEGLimsQ
+
+爱奇艺基于TensorFlow Lite的移动端AR解决方案SmileAR
+
+https://mp.weixin.qq.com/s/sm4D9TBSllAONgeOxOiWkA
+
+TF.Text来啦！
+
+https://mp.weixin.qq.com/s/9etR8QEk4UXtoLqkJFQIHA
+
+深入理解TensorFlow中的tf.metrics算子
+
+https://zhuanlan.zhihu.com/p/27087310
+
+《安娜卡列尼娜》文本生成——利用TensorFlow构建LSTM模型
+
+https://mp.weixin.qq.com/s/6y7AEGz2cs4QUP0Cikhnmw
+
+272页PPT讲述Tensorflow2.0在图形学方面的应用
+
+https://mp.weixin.qq.com/s/w4uo9Uodmud4FhqxRNanUw
+
+TensorFlow指南：GPU的使用
+
+https://mp.weixin.qq.com/s/gnDTOLWuPZiCVzspTk_zCQ
+
+TensorFlow轻度入门
+
+https://mp.weixin.qq.com/s/sbJdU7qMMyrSRuybTh7bKg
+
+开源中文书《TensorFlow内核剖析》，335页pdf
+
+https://mp.weixin.qq.com/s/5wy6yqaW_9pMBhgw8qDdOQ
+
+基于TensorFlow打造强化学习API
+
 https://mp.weixin.qq.com/s/VN2O6faf4spdD3qaqf3aiw
 
 使用AMD显卡加速TensorFlow

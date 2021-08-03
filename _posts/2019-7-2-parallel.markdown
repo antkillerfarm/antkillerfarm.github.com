@@ -364,27 +364,3 @@ https://mp.weixin.qq.com/s/Vb3AkoWHQY7WWBMZaVnf4g
 https://mp.weixin.qq.com/s/3uu50NWFJqA_MTb8wSxIKA
 
 如何优雅地训练大型模型？
-
-https://mp.weixin.qq.com/s/-CTVyKWtdTK0RIfzzPVyNQ
-
-分布式与高效深度学习，140页ppt详述深度学习压缩与联邦学习训练技术进展
-
-https://mp.weixin.qq.com/s/nTBuYuW7h9wZYuo3w1xGmQ
-
-分布式训练的方案和效率对比
-
-https://mp.weixin.qq.com/s/LOTQfD9KKtAq0zz4rObCGA
-
-EB级系统空中换引擎：阿里调度执行框架如何全面升级？（DAG 2.0）
-
-https://zhuanlan.zhihu.com/p/276122469
-
-分布式训练常用技术简介
-
-https://mp.weixin.qq.com/s/uQzwqcGwC9ZveuW64Lzkmg
-
-分布式训练怎么还减速了呢？
-
-https://zhuanlan.zhihu.com/p/294698838
-
-DLPerf—分布式深度学习最佳入门(踩坑)指南

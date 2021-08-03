@@ -11,6 +11,34 @@ category: AI
 
 ## 可视化（续）
 
+https://mp.weixin.qq.com/s/2GXOWISj8DOk962p9k0b9w
+
+推荐一个Python手绘图形库
+
+https://mp.weixin.qq.com/s/X-BzS8Uyu0dH_mN1VHixwQ
+
+刷爆全网的动态条形图，原来5行Python代码就能实现！
+
+https://mp.weixin.qq.com/s/SH2bNu6UF7PsKrBeweUH4g
+
+纯Python绘制满满艺术感的山脊地图
+
+https://mp.weixin.qq.com/s/DVM_jO-jvWgnF3Nq-kPQpg
+
+Pygal，可导出矢量图的Python可视化利器
+
+https://www.zhihu.com/question/33783546
+
+Python如何画出漂亮的地图？
+
+https://mp.weixin.qq.com/s/F6ePAQCYve4C8O9_0i9G5g
+
+大一新生开源Python脚本可视化工具，火了！
+
+https://mp.weixin.qq.com/s/Hci6ehO1DdvlLT8Be4U-Lw
+
+12个经典Python数据可视化库
+
 https://mp.weixin.qq.com/s/QalCxZxCQ3jSATsk-7mBIA
 
 如何用PYTHON绘制漂亮的地图？— FOLIUM作图工具介绍
@@ -384,27 +412,3 @@ https://mp.weixin.qq.com/s/440osIoULBRDOHq7Bk8awA
 https://mp.weixin.qq.com/s/tJwgNXKVwoJby-WkeMeBqQ
 
 40行Python代码实现“旅行者困境“演化过程
-
-https://mp.weixin.qq.com/s/-s5K8gl4Xdjh_1xgTn9PZg
-
-维基百科中的数据科学：手把手教你用Python读懂全球最大百科全书
-
-https://mp.weixin.qq.com/s/LiilfmvA5YUaY3QUQD6odA
-
-如何用Python将数据预处理速度提升2至6倍？
-
-https://mp.weixin.qq.com/s/4s7lDKlQjV1mUoVv558Y7Q
-
-面向云数据库，超低延迟文件系统PolarFS诞生了
-
-https://mp.weixin.qq.com/s/VfmudolvWzQN4ghgnI2rZA
-
-机器学习中Python库的3个简单实践——你的图片将由你来创造
-
-https://mp.weixin.qq.com/s/goxciguoxcamTo2WyUd1Lg
-
-大吉大利，今晚如何用Python解锁“吃鸡”的正确姿势
-
-https://mp.weixin.qq.com/s/dQ75O2h1orGzKcaCSDWshQ
-
-自然语言处理是如何工作的？一步步教你构建NLP流水线

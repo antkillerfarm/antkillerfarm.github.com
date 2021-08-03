@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  名校机器学习相关课程（二）, 安全, Autoware
+title:  名校机器学习相关课程（二）, 安全
 category: resource 
 ---
 
@@ -273,7 +273,7 @@ https://zhuanlan.zhihu.com/p/165306642
 
 X.500系列标准列表
 
-## 参考
+## 杂谈
 
 硬件/软件工程师Robert Ou最开始在Pwned Passwords上发现“ji32k7au4a83”竟然有141次使用，他觉得这不太正常，因为这个字符串太“偏”了，于是他在社区提问。
 
@@ -290,6 +290,14 @@ https://mp.weixin.qq.com/s/3XyG6KmH0naPsScqFE2vsw
 最近，公司被LockBit病毒入侵，损失惨重。幸好我用的是ubuntu，毫发无伤。
 
 ---
+
+姚期智在1982年提出的百万富翁问题应该是开创了安全多方计算的先河，后面涌现了茫茫多的协议算法，比较常见的是利用同态加密来实现。
+
+https://www.zhihu.com/question/66376147
+
+两富人比谁钱多。如何能实现互相保密但可以比出谁钱多？（）
+
+## 参考
 
 https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
 
@@ -390,35 +398,3 @@ https://mp.weixin.qq.com/s/0NvbRK41BT4yinFUuVxa3A
 https://j00ru.vexillium.org/syscalls/nt/64/
 
 Windows X86-64 System Call Table
-
-# Autoware
-
-Autoware是另一个开源的无人驾驶平台。不像Apollo，没有百度这样的强势公司的介入，社区氛围更浓一些，相对的，功能也要弱一些。
-
-官网：
-
-https://www.autoware.org/
-
-主要由一下组件构成：
-
-- autoware.ai
-
-https://www.autoware.ai/
-
-这个组件基于ROS 1.0，是目前的方案。
-
-- autoware.auto
-
-https://www.autoware.auto/
-
-这个组件基于ROS 2.0，是面向未来的方案。
-
-- autoware.io
-
-https://www.autoware.io/
-
-autoware提供的模拟器。
-
-代码仓库：
-
-https://gitlab.com/autowarefoundation/autoware.ai

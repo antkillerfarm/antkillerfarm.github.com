@@ -56,14 +56,6 @@ tensorflow/compiler/xla/tests
 
 `bazel build //tensorflow/compiler/xla/tests:convolution_test_cpu`
 
-官方backend：
-
-tensorflow/compiler/xla/service
-
-第三方的XLA backend接入：
-
-tensorflow/compiler/plugin
-
 ## 底层实现
 
 XLA支持两种接入模式：
@@ -82,25 +74,43 @@ compiler/tf2xla/ -> compiler/xla/client/ -> compiler/xla/service/
 
 tensorflow/compiler/tf2xla/g3doc/gpu_supported_ops.md
 
-`CanonicalizeBackwardFilterConvolution`
-
-`Conv2DBackpropFilter`
-
-`GetKnownXLAWhitelistOp`
-
-`XlaOpRegistry::GetAllRegisteredOps`
-
-`REGISTER_XLA_OP`
-
-`HloInstruction::Visit`
-
-`class ConvBackpropFilterOp : public XlaOpKernel`
-
-`MakeXlaBackpropFilterConvOp`
-
-`ConvGeneralDilated`
+```cpp
+CanonicalizeBackwardFilterConvolution
+Conv2DBackpropFilter
+GetKnownXLAWhitelistOp
+XlaOpRegistry::GetAllRegisteredOps
+REGISTER_XLA_OP
+HloInstruction::Visit
+class ConvBackpropFilterOp : public XlaOpKernel
+MakeXlaBackpropFilterConvOp
+ConvGeneralDilated
+```
 
 https://discuss.tvm.apache.org/t/rfc-mlir-frontend/6473
+
+## backend
+
+官方backend：
+
+tensorflow/compiler/xla/service
+
+第三方的XLA backend接入：
+
+tensorflow/compiler/plugin
+
+第三方的XLA backend中，比较出名的是graphcore。
+
+它的TF实现：
+
+https://github.com/graphcore/tensorflow/tensorflow/compiler/plugin/poplar
+
+```cpp
+MaxPool2DGradOp
+REGISTER_XLA_OP(Name("MaxPoolGrad").Device(DEVICE_IPU_XLA_JIT),
+                MaxPool2DGradOp);
+xla::CustomCall(&b, PoplarOp_Name(PoplarOp::MaxPoolGrad), args,
+                          input_shape, attribute_map_.Serialise());
+```
 
 ## 参考
 
@@ -120,29 +130,9 @@ https://tensorflow.juejin.im/performance/xla/jit.html
 
 使用即时编译
 
-# Grappler
+# TensorFlow Addons
 
-Grappler是TensorFlow运行时中的默认计算图优化系统。
-
-https://www.tensorflow.org/guide/graph_optimization
-
-使用Grappler优化TensorFlow计算图
-
-# Eigen
-
-Eigen是一个线性代数方面的C++模板库。tensorflow和caffe2都使用了这个库。
-
-官网：
-
-http://eigen.tuxfamily.org/
-
-使用Eigen也比较简单，无须link，只要引用相关头文件即可。
-
-参见：
-
-https://zhuanlan.zhihu.com/p/26512099
-
-tensorflow和caffe2
+TensorFlow SIG Addons是包含社区贡献的代码库，也就是1.x时代的contrib文件夹内的内容。一般用`tfa`作为包前缀。
 
 # TensorFlow高层封装
 
@@ -343,29 +333,6 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tenso
 除了运算类op之外，TF还有辅助类的op，例如tf.shape和tf.Print。下面的示例展示了如何在Graph中插入tf.shape和tf.Print结点，从而导出中间的计算结果：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tensorflow/graph/insert_print_node.py
-
-# TFRecord
-
-TFRecord是TensorFlow官方定义的存放样本数据文件。
-
-参考：
-
-http://www.cnblogs.com/antflow/p/7299029.html
-
-TFRecord的使用
-
-https://zhuanlan.zhihu.com/p/27481108
-
-TensorFlow直接读取图片和读写TFRecords速度对比
-
-# 内存布局
-
-Tensorflow和Caffe的内存布局存在较大差异，这是两者模型转换时，最常遇到的问题。一般认为，Caffe的内存布局对卷积硬件加速更友好一些。
-
-|  | Tensorflow | Caffe |
-|:--:|:--:|:--:|
-| Tensor | NHWC | NCHW |
-| Weight | HWIO | OIHW |
 
 # TFLite
 

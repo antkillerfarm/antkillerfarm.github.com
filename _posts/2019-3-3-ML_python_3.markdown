@@ -9,6 +9,20 @@ category: AI
 
 # Machine Learning之Python篇
 
+## iPython
+
+ipython是一个python的交互式 shell，比默认的python shell 好用得多，支持变量自动补全，自动缩进，支持 bash shell 命令，内置了许多很有用的功能和函数。
+
+在较新的ipython版本中，添加了ipython notebook的功能，弥补了ipython shell下代码不易保存等缺点，并且在使用--pylab inline选项后，可以在代码执行后立即显示运行结果（包括图片，数据表格等），因此在数据分析中运用十分广泛。
+
+`sudo apt install ipython ipython-notebook`
+
+参考：
+
+https://mp.weixin.qq.com/s/e7WBxoL_00EWi5G8Mz1L-w
+
+50个关于IPython的使用技巧，get起来！
+
 ## Jupyter
 
 Jupyter是iPython的后继项目，它不仅支持python语言，还支持其他50多种交互式语言。成为目前最流行的交互式shell和数据文本交换格式。
@@ -450,31 +464,3 @@ Python+Kepler.gl轻松制作酷炫路径动画
 https://mp.weixin.qq.com/s/CztcMqrFh_f01N88ybsQUg
 
 B站爆红的数学视频，竟是用这个神器做的！（manim）
-
-https://mp.weixin.qq.com/s/2GXOWISj8DOk962p9k0b9w
-
-推荐一个Python手绘图形库
-
-https://mp.weixin.qq.com/s/X-BzS8Uyu0dH_mN1VHixwQ
-
-刷爆全网的动态条形图，原来5行Python代码就能实现！
-
-https://mp.weixin.qq.com/s/SH2bNu6UF7PsKrBeweUH4g
-
-纯Python绘制满满艺术感的山脊地图
-
-https://mp.weixin.qq.com/s/DVM_jO-jvWgnF3Nq-kPQpg
-
-Pygal，可导出矢量图的Python可视化利器
-
-https://www.zhihu.com/question/33783546
-
-Python如何画出漂亮的地图？
-
-https://mp.weixin.qq.com/s/F6ePAQCYve4C8O9_0i9G5g
-
-大一新生开源Python脚本可视化工具，火了！
-
-https://mp.weixin.qq.com/s/Hci6ehO1DdvlLT8Be4U-Lw
-
-12个经典Python数据可视化库

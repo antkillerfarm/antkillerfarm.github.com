@@ -161,6 +161,29 @@ op的自定义实现可使用`tf.py_func`。
 
 tf.dtypes.cast: 类型转换
 
+# TFRecord
+
+TFRecord是TensorFlow官方定义的存放样本数据文件。
+
+参考：
+
+http://www.cnblogs.com/antflow/p/7299029.html
+
+TFRecord的使用
+
+https://zhuanlan.zhihu.com/p/27481108
+
+TensorFlow直接读取图片和读写TFRecords速度对比
+
+# 内存布局
+
+Tensorflow和Caffe的内存布局存在较大差异，这是两者模型转换时，最常遇到的问题。一般认为，Caffe的内存布局对卷积硬件加速更友好一些。
+
+|  | Tensorflow | Caffe |
+|:--:|:--:|:--:|
+| Tensor | NHWC | NCHW |
+| Weight | HWIO | OIHW |
+
 # TensorSensor
 
 https://mp.weixin.qq.com/s/ZxmoBcWJa7luGOHQ32ru1A
@@ -320,6 +343,30 @@ http://deepnlp.org/blog/tensorflow-parallelism/
 
 Tensorflow并行：多核(multicore)，多线程(multi-thread)
 
+# Grappler
+
+Grappler是TensorFlow运行时中的默认计算图优化系统。
+
+https://www.tensorflow.org/guide/graph_optimization
+
+使用Grappler优化TensorFlow计算图
+
+# Eigen
+
+Eigen是一个线性代数方面的C++模板库。tensorflow和caffe2都使用了这个库。
+
+官网：
+
+http://eigen.tuxfamily.org/
+
+使用Eigen也比较简单，无须link，只要引用相关头文件即可。
+
+参见：
+
+https://zhuanlan.zhihu.com/p/26512099
+
+tensorflow和caffe2
+
 # 参考
 
 https://mp.weixin.qq.com/s/t1QFIOq-VBNOrSm0zW-PlQ
@@ -353,55 +400,3 @@ TensorFlow初学者必须了解的55个经典案例
 http://mp.weixin.qq.com/s/JZ1ceGQDmQUaNW5wl6biLA
 
 TensorFlow实现流行机器学习算法教程汇集
-
-https://github.com/taki0112/Tensorflow-Cookbook
-
-1500+星标，简单易用TensorFlow代码集
-
-https://mp.weixin.qq.com/s/bjxJyOitynRtCoW0FX1gXw
-
-一文带你入门Tensorflow
-
-https://mp.weixin.qq.com/s/zmTqWNXlYcDyZb_dmEo_5Q
-
-TensorFlow/PyTorch/Sklearn实现的五十种机器学习模型
-
-https://mp.weixin.qq.com/s/O5vvGKHWkJQWzeiL7A_S_g
-
-TensorFlow简单介绍
-
-https://mp.weixin.qq.com/s/JSZwQkyxSSwfBWKJ578j3A
-
-TensorFlow最好的入门文章
-
-https://mp.weixin.qq.com/s/68vaQRqUo8u09iheKzFVEw
-
-玩转TensorFlow深度学习
-
-https://mp.weixin.qq.com/s/Es_5KUnkDzMwf_8WD8aW3g
-
-GitHub万星：适用于初学者的TensorFlow代码资源集
-
-https://mp.weixin.qq.com/s/GaK_iSTBl7B4LTdaOtiR_Q
-
-香港科技大学TensorFlow课件分享
-
-https://mp.weixin.qq.com/s/RR3EEI8vm05EZSd7dGU__A
-
-史上最全的Tensorflow学习资源汇总，速藏！
-
-https://mp.weixin.qq.com/s/w4uo9Uodmud4FhqxRNanUw
-
-TensorFlow指南：GPU的使用
-
-https://mp.weixin.qq.com/s/gnDTOLWuPZiCVzspTk_zCQ
-
-TensorFlow轻度入门
-
-https://mp.weixin.qq.com/s/sbJdU7qMMyrSRuybTh7bKg
-
-开源中文书《TensorFlow内核剖析》，335页pdf
-
-https://mp.weixin.qq.com/s/5wy6yqaW_9pMBhgw8qDdOQ
-
-基于TensorFlow打造强化学习API

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  通信协议
+title:  通信协议, Autoware
 category: resource 
 ---
 
@@ -290,3 +290,35 @@ https://mp.weixin.qq.com/s/o9zxzklBOFyNkOPMR4gdnA
 https://mp.weixin.qq.com/s/_wUoGwcSlJeaMH0JSjNbeA
 
 直接用IP访问知乎，我发现了一个秘密···
+
+# Autoware
+
+Autoware是另一个开源的无人驾驶平台。不像Apollo，没有百度这样的强势公司的介入，社区氛围更浓一些，相对的，功能也要弱一些。
+
+官网：
+
+https://www.autoware.org/
+
+主要由一下组件构成：
+
+- autoware.ai
+
+https://www.autoware.ai/
+
+这个组件基于ROS 1.0，是目前的方案。
+
+- autoware.auto
+
+https://www.autoware.auto/
+
+这个组件基于ROS 2.0，是面向未来的方案。
+
+- autoware.io
+
+https://www.autoware.io/
+
+autoware提供的模拟器。
+
+代码仓库：
+
+https://gitlab.com/autowarefoundation/autoware.ai

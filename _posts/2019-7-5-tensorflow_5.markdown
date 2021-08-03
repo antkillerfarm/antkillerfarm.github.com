@@ -9,6 +9,42 @@ category: AI
 
 # TensorFlow
 
+https://github.com/taki0112/Tensorflow-Cookbook
+
+1500+星标，简单易用TensorFlow代码集
+
+https://mp.weixin.qq.com/s/bjxJyOitynRtCoW0FX1gXw
+
+一文带你入门Tensorflow
+
+https://mp.weixin.qq.com/s/zmTqWNXlYcDyZb_dmEo_5Q
+
+TensorFlow/PyTorch/Sklearn实现的五十种机器学习模型
+
+https://mp.weixin.qq.com/s/O5vvGKHWkJQWzeiL7A_S_g
+
+TensorFlow简单介绍
+
+https://mp.weixin.qq.com/s/JSZwQkyxSSwfBWKJ578j3A
+
+TensorFlow最好的入门文章
+
+https://mp.weixin.qq.com/s/68vaQRqUo8u09iheKzFVEw
+
+玩转TensorFlow深度学习
+
+https://mp.weixin.qq.com/s/Es_5KUnkDzMwf_8WD8aW3g
+
+GitHub万星：适用于初学者的TensorFlow代码资源集
+
+https://mp.weixin.qq.com/s/GaK_iSTBl7B4LTdaOtiR_Q
+
+香港科技大学TensorFlow课件分享
+
+https://mp.weixin.qq.com/s/RR3EEI8vm05EZSd7dGU__A
+
+史上最全的Tensorflow学习资源汇总，速藏！
+
 https://mp.weixin.qq.com/s/MYBTWL3X_OhLZL6C4rISzw
 
 TensorFlow训练线性回归
@@ -372,43 +408,3 @@ https://mp.weixin.qq.com/s/ffW21oBKTDOc4sB8POhcnw
 https://mp.weixin.qq.com/s/nwymOr03cqm0ifpoBjL9Eg
 
 TensorFlow变量保存和恢复
-
-http://www.holmesconan.me/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2018/04/03/cifar10-vgg.html
-
-CIFAR-10 Estimator之Vgg模型
-
-https://mp.weixin.qq.com/s/5_oCSK6MtsK_4xNU6T76UA
-
-计算机图形学遇上深度学习，针对3D图像的TensorFlow Graphics面世
-
-https://mp.weixin.qq.com/s/ndnbTCr51k_FSDRCLi0UOg
-
-添加新操作
-
-https://mp.weixin.qq.com/s/G3fbhTsHA22b02_B5WCPcg
-
-TensorFlow调试程序（一）
-
-https://mp.weixin.qq.com/s/1mSF2HKa72HgWq_q14HMtQ
-
-TensorFlow调试程序（二）
-
-https://mp.weixin.qq.com/s/OGsvcfU1VlhNZYgEGLimsQ
-
-爱奇艺基于TensorFlow Lite的移动端AR解决方案SmileAR
-
-https://mp.weixin.qq.com/s/sm4D9TBSllAONgeOxOiWkA
-
-TF.Text来啦！
-
-https://mp.weixin.qq.com/s/9etR8QEk4UXtoLqkJFQIHA
-
-深入理解TensorFlow中的tf.metrics算子
-
-https://zhuanlan.zhihu.com/p/27087310
-
-《安娜卡列尼娜》文本生成——利用TensorFlow构建LSTM模型
-
-https://mp.weixin.qq.com/s/6y7AEGz2cs4QUP0Cikhnmw
-
-272页PPT讲述Tensorflow2.0在图形学方面的应用

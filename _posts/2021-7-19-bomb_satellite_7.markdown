@@ -119,6 +119,16 @@ https://mp.weixin.qq.com/s/t9Oolg7uOTG_is7e9e4eWA
 
 ---
 
+其实，早在上世纪70年代末，中科院理化所冉启泽团队就开发出了湿式稀释制冷机，实现了34mK的极低温，甚至还将设备出口到美国，但当时为了创汇，卖到美国的稀释制冷机极为廉价，仅约5000美金。
+
+随着那一批研究团队成员的退休与离世，稀释制冷机的技术也逐渐“失传”。
+
+https://mp.weixin.qq.com/s/WQWJMaTFUrggWRWuOoM8bw
+
+零下273.14度稳定运行！中科院自主研发稀释制冷机
+
+---
+
 ![](/images/img3/top10.png)
 
 ![](/images/img4/manufact.jpg)
@@ -236,35 +246,3 @@ https://mp.weixin.qq.com/s/gJ315Byg0EtZVldxFp-q3A
 https://mp.weixin.qq.com/s/aX0aqG6h_0V0jMnQvJxfLQ
 
 袁隆平逝世：播下改变中国的种子
-
-https://mp.weixin.qq.com/s/ro1xdxRqfQo0S7qxMyHZSg
-
-这一次，外媒集体为袁隆平刷屏
-
-http://news.sina.com.cn/o/2018-06-25/doc-iheirxyf5801793.shtml
-
-儿子智力残疾、妻女精神分裂…77岁核弹老人魏世杰的故事，让无数观众为之动容
-
-https://mp.weixin.qq.com/s/vuNGjU3lPvw_k0-96v3Q6g
-
-和袁隆平是同学！这位91岁院士把一切献给“吃瓜群众”...（吴明珠）
-
-https://mp.weixin.qq.com/s/ey3uNb3SAUR70A86-E1klg
-
-中国制造高精度机床的困难在哪里？
-
-https://mp.weixin.qq.com/s/QSS7dIe1MeIOBu6tko9maQ
-
-美国人万万没想到，这个不起眼的留学生，将会成为中国雷达之父（毕德显）
-
-https://zhuanlan.zhihu.com/p/109751703
-
-为了研究，他骨折14处（吴天一）
-
-https://mp.weixin.qq.com/s/_FKBOk6IrxTixo2YrowLQw
-
-这块来自月球的小石头，撞出了他的“月球梦”（欧阳自远）
-
-https://www.zhihu.com/answer/1950534833
-
-民国工业成就

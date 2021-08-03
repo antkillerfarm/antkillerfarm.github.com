@@ -235,9 +235,25 @@ https://mp.weixin.qq.com/s/DXIGBypPQd1FkZ70aBG_9g
 
 # AI Chip+
 
-https://zhuanlan.zhihu.com/p/31782874
+https://mp.weixin.qq.com/s/s-fYxv4z5kkJUFueU2IR7w
 
-Graphcore AI芯片：更多分析
+BP表达式与硬件架构：相似性构建更高效的计算单元
+
+https://mp.weixin.qq.com/s/1r7G84les7FihqPbSiS0Ng
+
+华为首款手机端AI芯片麒麟970
+
+https://mp.weixin.qq.com/s/y9dVg9YtfWxu6NcW-fxi6Q
+
+内存带宽与计算能力，谁才是决定深度学习执行性能的关键？
+
+https://mp.weixin.qq.com/s/K_dohaZbCISZlxe1Utu50w
+
+如何用FPGA加速卷积神经网络(CNN)？
+
+https://mp.weixin.qq.com/s/z68hk1yqg60QCjgTyzgG2w
+
+GPU深度学习的“加速神器”
 
 https://mp.weixin.qq.com/s/O-NDsFs6AOwl43LyevXtzg
 
@@ -286,10 +302,6 @@ AI芯片体系架构和软件专题报告会2020论文下载
 https://mp.weixin.qq.com/s/cBVio3W64np8fXwUQs2wIw
 
 机器学习如何用于芯片系统设计？Jeff Dean推荐Google最新《机器学习系统芯片设计》70页ppt为你讲解
-
-https://mp.weixin.qq.com/s/WZQDmyjGgkGMpLjVP5jKlw
-
-Graphcore
 
 https://zhuanlan.zhihu.com/p/150656419
 

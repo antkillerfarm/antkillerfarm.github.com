@@ -11,6 +11,26 @@ category: AI
 
 ## Matplotlib（续）
 
+https://mp.weixin.qq.com/s/LuXyUBkaJUfg4WteFxStrg
+
+Matplotlib可视化最有价值的50个图表
+
+https://mp.weixin.qq.com/s/hlJFoh0jfduPswr7WrDikQ
+
+当年为什么不好好学“数据可视化”！
+
+https://mp.weixin.qq.com/s/Oh2ma7UjQhklE6YBo0EQBA
+
+快速入门Matplotlib教程
+
+https://mp.weixin.qq.com/s/fmoUGFjqlJf46r_iOrg9fA
+
+高效使用Python可视化工具Matplotlib
+
+https://mp.weixin.qq.com/s/MYqPHzzoWfaV2N7c4ZgfPQ
+
+Python绘图，我只用Matplotlib
+
 https://mp.weixin.qq.com/s/y4W7zK2-nFF-y_hSmB8j2g
 
 超火动态排序图：代码不到40行，手把手教你！
@@ -434,17 +454,3 @@ https://zhuanlan.zhihu.com/p/96738286
 https://mp.weixin.qq.com/s/pexY5bG0NhQL2uOJF4UHPQ
 
 符号运算他做得比Matlab更漂亮
-
-## iPython
-
-ipython是一个python的交互式 shell，比默认的python shell 好用得多，支持变量自动补全，自动缩进，支持 bash shell 命令，内置了许多很有用的功能和函数。
-
-在较新的ipython版本中，添加了ipython notebook的功能，弥补了ipython shell下代码不易保存等缺点，并且在使用--pylab inline选项后，可以在代码执行后立即显示运行结果（包括图片，数据表格等），因此在数据分析中运用十分广泛。
-
-`sudo apt install ipython ipython-notebook`
-
-参考：
-
-https://mp.weixin.qq.com/s/e7WBxoL_00EWi5G8Mz1L-w
-
-50个关于IPython的使用技巧，get起来！

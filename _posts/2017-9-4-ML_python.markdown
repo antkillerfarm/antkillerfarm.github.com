@@ -128,6 +128,10 @@ http://www.jianshu.com/p/d2e15200ee9b
 
 Anaconda多环境多版本python配置指导
 
+https://mp.weixin.qq.com/s/i4oUKZXAUMLGaRpJVmT1ZQ
+
+一行命令装下所有“炼丹”工具及依赖项，就靠这个免费软件源了
+
 ## virtualenv
 
 安装：
@@ -438,23 +442,3 @@ https://mp.weixin.qq.com/s/aBi1PTEumRs0frUpb_uYrA
 https://mp.weixin.qq.com/s/3VgFKiUOFvtWmqg1BO9xGw
 
 matplotlib--python的数据可视化
-
-https://mp.weixin.qq.com/s/LuXyUBkaJUfg4WteFxStrg
-
-Matplotlib可视化最有价值的50个图表
-
-https://mp.weixin.qq.com/s/hlJFoh0jfduPswr7WrDikQ
-
-当年为什么不好好学“数据可视化”！
-
-https://mp.weixin.qq.com/s/Oh2ma7UjQhklE6YBo0EQBA
-
-快速入门Matplotlib教程
-
-https://mp.weixin.qq.com/s/fmoUGFjqlJf46r_iOrg9fA
-
-高效使用Python可视化工具Matplotlib
-
-https://mp.weixin.qq.com/s/MYqPHzzoWfaV2N7c4ZgfPQ
-
-Python绘图，我只用Matplotlib
