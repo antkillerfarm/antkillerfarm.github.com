@@ -190,12 +190,6 @@ Ubuntu下面关于TFTP的程序，有三套：
 
 `sudo apt install tftp-hpa tftpd-hpa`
 
-# ASCII表情
-
-╮(╯_╰)╭
-
-(^ω^)
-
 # Ubuntu 20.04使用手记
 
 Ubuntu 20.04是2020.4.24发布的。我第一时间上手体验了一番。
@@ -259,6 +253,12 @@ https://www.cnblogs.com/schips/p/10141278.html
 GnuGo是一个著名的开源围棋软件，但是它只有文字界面。一般使用Quarry作为它的GUI。
 
 `sudo apt install quarry`
+
+# 手机上网
+
+最近公司网络有问题，只好使用手机连接互联网，也就是所谓WLAN热点。
+
+除了Wifi之外，现在的手机还有USB网络共享的功能，该功能基于RNDIS（Remote NDIS）技术，实际上就是TCP/IP over USB，就是在USB设备上跑TCP/IP，让USB设备看上去像一块网卡。
 
 # Linux镜像文件
 

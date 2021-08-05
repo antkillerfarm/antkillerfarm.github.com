@@ -1,64 +1,65 @@
 ---
 layout: post
-title: 新冠肺炎（三）——国际援助, 口罩, 科研
+title: 新冠肺炎（三）——口罩, 科研
 category: COVID19 
 ---
 
 * toc
 {:toc}
 
-# 国际援助
+# 国外疫情（续）
 
-## 日本援助中国
+https://mp.weixin.qq.com/s/X_HxCB97Jsp7drbVoOME1A
 
-盛唐时，日本遣人来中国学习佛法。长屋（日本的相国）赠送中国大德的上千件袈裟，边缘都绣着一首偈子：
+为什么新冠死亡率看似在下降？
 
-山川异域，风月同天。寄诸佛子，共结来缘。
+https://m.sohu.com/a/398536169_292568
 
-这也是鉴真法师决心东渡日本传戒的缘由之一。
+“美国李兰娟”大火，这位战斗女神用丝巾“抵抗”疫情（黛博纳·伯克斯）
 
----
+https://mp.weixin.qq.com/s/X7S6WAJBy2zRkwE1AdHTpQ
 
-岂曰无衣？与子同袍。王于兴师，修我戈矛。与子同仇。
+再度封城
 
-岂曰无衣？与子同泽。王于兴师，修我矛戟。与子偕作。
+https://www.zhihu.com/question/440392936
 
-岂曰无衣？与子同裳。王于兴师，修我甲兵。与子偕行。
+如何看待巴西玛瑙斯的新冠疫情失控，是否宣告群体免疫最终会失败？
 
-——《诗经·秦风·无衣》
+https://www.zhihu.com/question/392250734
 
----
+如何看待巴西的疫情？
 
-相知无远近，万里尚为邻。
+https://mp.weixin.qq.com/s/9IX-1C1_-yrtUGmZde8drw
 
-四海皆兄弟，谁为行路人。
+全球疫情已触顶？或许尚未可知
 
-崎岖路，长情在。
+https://mp.weixin.qq.com/s/DuU6KJ8s3Cnfqs8nXFIZEw
 
-## 中国援助韩国
+猛男露香肩打疫苗，为了号召民众各国领导人真的拼了
 
-道不远人，人无异国。
+https://mp.weixin.qq.com/s/wS6ZDo13UiSpHKc2yxGChw
 
-——新罗 崔致远
+疫苗有时，归期无期——印度疫苗接种记
 
->崔致远，字孤云，号海云，谥号文昌。朝鲜半岛新罗王京人。十二岁时，即唐懿宗咸通九年(公元868年)乘船西渡入唐，留唐十六年。朝鲜汉文学的开山鼻祖。有“东国儒宗”、“东国文学之祖”的称誉。
+https://mp.weixin.qq.com/s/mT_DqZbO8MsHrVwD4RCOwg
 
-## 小米援助意大利
+印度疫情是怎么会一步步走到失控的？
 
-We are waves of the same sea, leaves of the same tree, flowers of the same garden.
+https://mp.weixin.qq.com/s/xqtYcPWPHtyO3d5ghBTQ4A
 
-——Lucius Annaeus Seneca
+你妈妈没氧气瓶就要死，这和我们警察有什么关系
 
->Lucius Annaeus Seneca，公元前4年～65年，古罗马政治家、斯多葛派哲学家、悲剧作家、雄辩家。暴君Nero的老师，被逼自杀。
+https://www.163.com/dy/article/G9QPULT4051480KF.html
 
-## 马云援助意大利
+仅18天！印度一所大学34名教授死于新冠，怀疑特殊的变异病毒在校内传播
 
-“消失吧，黑夜！黎明时我们将获胜！”
+https://mp.weixin.qq.com/s/MpBc3ZiFvOH2SgwMQzQ_fg
 
-——《Turandot》， Giacomo Puccini
+恐怖疾病袭击印度，人活着的时候大脑发霉（毛霉菌病）
 
->Giacomo Puccini，1858～1924，意大利歌剧作曲家，代表作有《波希米亚人》、《托斯卡》与《蝴蝶夫人》等。   
->《Turandot（图兰朵）》是Puccini最后的作品，在他去世时仍未完成。后来，Franco Alfano根据普契尼的草稿将全剧完成。《今夜无人入睡》（Nessun Dorma）是其中最著名的一段咏叹调。
+https://mp.weixin.qq.com/s/a5n_Byw1AooN2lJ-oEC12A
+
+印度新冠疫情之下，这个帮凶让现状雪上加霜
 
 # 口罩
 

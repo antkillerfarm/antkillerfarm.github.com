@@ -112,6 +112,10 @@ xla::CustomCall(&b, PoplarOp_Name(PoplarOp::MaxPoolGrad), args,
                           input_shape, attribute_map_.Serialise());
 ```
 
+model test:
+
+tensorflow/compiler/plugin/poplar/docs/example_tf2_model_fit.py
+
 ## 参考
 
 https://mp.weixin.qq.com/s/RO3FrPxhK2GEoDCGE9DXrw

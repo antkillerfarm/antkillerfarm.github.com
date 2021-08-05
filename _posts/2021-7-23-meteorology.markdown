@@ -186,6 +186,26 @@ https://mp.weixin.qq.com/s/g3_njGlo3dC696wo0wplVQ
 
 # 地理+
 
+https://mp.weixin.qq.com/s/mc9aH5hDgRFS2h2blPhb8w
+
+21张绘画完美演绎地球演化新说！
+
+https://mp.weixin.qq.com/s/PcAATiyQrfKKLIlEymSsog
+
+河流为什么是弯曲的？
+
+https://mp.weixin.qq.com/s/w0CA3uqZj9llyCxhOU-xgw
+
+地球上十座最危险的毒物废城
+
+https://www.zhihu.com/question/464055142
+
+美国国家地理正式承认南大洋为地球第五大洋，为什么此前不承认？南大洋有哪些特殊的地方？
+
+https://www.zhihu.com/question/22586409
+
+鄱阳湖还有救吗？
+
 https://mp.weixin.qq.com/s/n67jhRbOimVXqN3YKhDzuQ
 
 假如地球南北翻转会怎么样？

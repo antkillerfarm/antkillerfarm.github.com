@@ -408,3 +408,7 @@ https://mp.weixin.qq.com/s/JOQdyQDCFStWXdxTckUa5Q
 https://mp.weixin.qq.com/s/yctS5TWRCqc_h1Os4u-RBQ
 
 拼接召回在飞猪交通域的实践
+
+https://mp.weixin.qq.com/s/h1V-TyJWbXq-8gSvAnkneQ
+
+多业务建模在美团搜索排序中的实践

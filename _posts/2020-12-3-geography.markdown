@@ -157,6 +157,10 @@ https://www.sohu.com/a/307458694_100251802
 
 ---
 
+世界上最大的含水层是美国的奥加拉拉含水层(Ogallala Aquifer)，其面积为日本国土的1.2倍。但是，目前全世界的含水层正在不断枯竭。含水层中的水又称为化石水，是上千年来逐渐聚集而成的。一旦枯竭则无法再生。
+
+---
+
 https://zhuanlan.zhihu.com/p/53237519
 
 一文读懂印尼海啸的真正原因（喀拉喀托之子）
@@ -280,23 +284,3 @@ https://mp.weixin.qq.com/s/IQ8YSyp-m2jCIDfLtuh_ew
 https://mp.weixin.qq.com/s/KJyvT_MsD2DZ6QvwXh32ug
 
 假如把地球46亿年历史压缩到一天
-
-https://mp.weixin.qq.com/s/mc9aH5hDgRFS2h2blPhb8w
-
-21张绘画完美演绎地球演化新说！
-
-https://mp.weixin.qq.com/s/PcAATiyQrfKKLIlEymSsog
-
-河流为什么是弯曲的？
-
-https://mp.weixin.qq.com/s/w0CA3uqZj9llyCxhOU-xgw
-
-地球上十座最危险的毒物废城
-
-https://www.zhihu.com/question/464055142
-
-美国国家地理正式承认南大洋为地球第五大洋，为什么此前不承认？南大洋有哪些特殊的地方？
-
-https://www.zhihu.com/question/22586409
-
-鄱阳湖还有救吗？
