@@ -235,6 +235,12 @@ Google（2020.9）又推出了IREE项目，定位和TVM类似。
 
 https://google.github.io/iree/
 
+参考：
+
+https://zhuanlan.zhihu.com/p/361448250
+
+MLIR Toy Tutorials
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/32711259

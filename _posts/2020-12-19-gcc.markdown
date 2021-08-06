@@ -193,6 +193,10 @@ https://mp.weixin.qq.com/s/FSlJKnC0y51nsLDp1B3tXg
 
 Swift编译器Crash—Segmentation fault解决方案
 
+https://zhuanlan.zhihu.com/p/392381317
+
+LLVM IR的第一个 Pass：上手官方文档 Hello Pass
+
 # ANTLR
 
 ANTLR—Another Tool for Language Recognition，其前身是PCCTS，它为包括Java，C++，C#,python在内的语言提供了一个通过语法描述来自动构造自定义语言的识别器（recognizer），编译器（parser）和解释器（translator）的框架。

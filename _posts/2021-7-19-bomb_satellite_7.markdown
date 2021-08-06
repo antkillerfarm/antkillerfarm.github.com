@@ -129,6 +129,16 @@ https://mp.weixin.qq.com/s/WQWJMaTFUrggWRWuOoM8bw
 
 ---
 
+1956年，第一辆国产解放卡车下线。
+
+1958年，中国第一辆轿车东风问世。东风寓意东风压倒西风，填补了中国轿车工业的空白。
+
+同年8月，中国第一辆高级轿车红旗问世。
+
+1983年，中国第一台合资汽车桑塔纳。
+
+---
+
 ![](/images/img3/top10.png)
 
 ![](/images/img4/manufact.jpg)

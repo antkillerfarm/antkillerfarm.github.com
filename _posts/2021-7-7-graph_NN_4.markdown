@@ -237,6 +237,10 @@ https://mp.weixin.qq.com/s/Aefh4A33ZhZf-pyHS3JAlg
 
 首篇NLP图神经网络综述！127页文档让你全面了解这个领域
 
+https://mp.weixin.qq.com/s/brIIukHx06daYw-M3nN8PQ
+
+自然语言处理中图神经网络从入门到精通
+
 # PageRank算法+
 
 http://www.docin.com/p-630952720.html

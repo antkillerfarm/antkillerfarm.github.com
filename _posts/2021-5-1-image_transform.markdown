@@ -137,6 +137,10 @@ https://mp.weixin.qq.com/s/XWMjLPIJEF_C61JJK7IBkg
 
 火爆全网的《李焕英》通过AI还原“复活”了
 
+https://mp.weixin.qq.com/s/p9L1_A9yosqQ0kcPpOm9YQ
+
+B站up主用AI让李大钊陈延年等露出了笑容，人民日报：如今的中国，已如你们所愿！
+
 ---
 
 最左边的那位是北洋政府第一任总理唐绍仪之第八女名甘唐宝玫（1902-1941）（后离婚再嫁改姓岑）～中国历史上的首个大型时装show的组织者。

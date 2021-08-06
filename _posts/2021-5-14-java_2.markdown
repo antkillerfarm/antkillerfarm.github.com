@@ -203,7 +203,7 @@ https://mp.weixin.qq.com/s/EWnXlinxEJgzdRGJH4bFTQ
 
 # C/C++参考资源+
 
-# spaceship operator
+## spaceship operator
 
 spaceship operator: `<=>`
 
@@ -222,6 +222,14 @@ C++20引入了spaceship operator：
 https://cloud.tencent.com/developer/article/1352324
 
 C++20草案中的宇宙飞船运算符(<=>,spaceship operator)
+
+## 线程安全注解
+
+线程安全注解是现代C++开发的机制，可以在代码编译阶段检查锁的使用情况，从而发现线程同步的相关问题。该功能目前只有clang编译器支持。
+
+https://blog.csdn.net/qq_32648921/article/details/109114887
+
+线程安全注解
 
 ## 参考
 

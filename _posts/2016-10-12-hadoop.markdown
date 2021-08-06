@@ -246,6 +246,10 @@ https://mp.weixin.qq.com/s/6rtkmwjfI_Cl-hYMrDOOyA
 
 取代HDFS？Ozone在腾讯的最新研究进展
 
+https://mp.weixin.qq.com/s/_AumiAx9wbpOZCGMdf0Arw
+
+字节跳动10万节点HDFS集群多机房架构演进之路
+
 # Pulsar
 
 https://mp.weixin.qq.com/s/O8pj4pChyw8PK-G_4A3DWg

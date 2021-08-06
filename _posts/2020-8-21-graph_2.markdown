@@ -21,9 +21,15 @@ http://www.docin.com/p-810499317.html
 
 社区发现（Community Detection）算法用来发现网络中的社区结构，也可以视为一种广义的聚类算法。
 
+![](/images/img4/community_detection.png)
+
 https://blog.csdn.net/itplus/article/details/9286905
 
 Community Detection算法
+
+https://mp.weixin.qq.com/s/wR5FQKRjYwt29Qis9wnNrw
+
+基于深度学习的社区发现最新综述
 
 https://www.zhihu.com/question/29042018
 

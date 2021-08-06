@@ -215,6 +215,10 @@ https://mp.weixin.qq.com/s/7Ig0D2sxm6rf8vpUPkprAw
 
 华人打造二次元老婆生成器！尔康容嬷嬷成萌妹，图像视频都能变
 
+https://mp.weixin.qq.com/s/EBpGN4ApGkXe0QWIS4-d8w
+
+AI算法给手画线稿自动上色指南来了
+
 # AutoDL++++
 
 https://mp.weixin.qq.com/s/VdjHp5Tb1fSyV3CQblPQmw
