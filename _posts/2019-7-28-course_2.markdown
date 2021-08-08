@@ -398,3 +398,7 @@ https://mp.weixin.qq.com/s/0NvbRK41BT4yinFUuVxa3A
 https://j00ru.vexillium.org/syscalls/nt/64/
 
 Windows X86-64 System Call Table
+
+https://www.zhihu.com/question/356008082
+
+电脑软件（例如 Adobe、Autodesk）为什么那么容易被破解？
