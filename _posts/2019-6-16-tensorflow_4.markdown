@@ -367,36 +367,36 @@ https://zhuanlan.zhihu.com/p/26512099
 
 tensorflow和caffe2
 
-# 参考
+# TensorFlow.js
 
-https://mp.weixin.qq.com/s/t1QFIOq-VBNOrSm0zW-PlQ
+https://mp.weixin.qq.com/s/dqMS4NjmNYs7IFHm8uFM8w
 
-深度学习TensorFlow实现集合
+TensorFlow发布面向JavaScript开发者的机器学习框架TensorFlow.js
 
-https://mp.weixin.qq.com/s/IzijD8Sh3G2WsCz7aaxyhg
+https://zhuanlan.zhihu.com/p/35181413
 
-TensorFlow深度学习概述
+TensorFlow.js人脸识别—玩转吃豆豆小游戏
 
-https://silencezjl.coding.me/2017/05/01/%E5%81%B7%E4%B8%80%E6%B3%A2%E8%B5%84%E6%BA%90/
+https://mp.weixin.qq.com/s/ebLHZAG8H78TsZUKSzAtIw
 
-各种TensorFlow资源
+TF官方博客：基于TensorFlow.js框架的浏览器实时姿态估计
 
-https://mp.weixin.qq.com/s/haj9lS59yWtk-C75EtGIcw
+https://mp.weixin.qq.com/s/z6p4A4DfCuK8IBGVGwrtLQ
 
-深度学习工程模板：简化加载数据、构建网络、训练模型和预测样本的流程
+如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
 
-https://github.com/zsdev2015/machine_learning
+https://mp.weixin.qq.com/s/NO_XY-JmTpIkoC-fpkZ-qg
 
-某国内小牛写的中文入门demo，注释非常详细
+在浏览器上也能训练神经网络？TensorFlow.js带你玩游戏~
 
-https://morvanzhou.github.io/tutorials/
+https://mp.weixin.qq.com/s/vjpMr3TsF3Lui8Q0IstQxw
 
-一个以python语言教学的ML、DL教程，比较通俗易懂。
+浏览器上跑：TensorFlow发布实时人物分割模型，秒速25帧，24个部位
 
-https://mp.weixin.qq.com/s/gJBDXf_5ViPR9dNm3eH2Hg
+https://mp.weixin.qq.com/s/-BblgnvPLuqpYM8PZ7PQCQ
 
-TensorFlow初学者必须了解的55个经典案例
+三行代码实时追踪你的手，只要有浏览器就够了
 
-http://mp.weixin.qq.com/s/JZ1ceGQDmQUaNW5wl6biLA
+https://mp.weixin.qq.com/s/C7QdVathJ8YTXF-zXPC-Ow
 
-TensorFlow实现流行机器学习算法教程汇集
+有人分析了7个基于JS语言的DL框架，发现还有很长的路要走

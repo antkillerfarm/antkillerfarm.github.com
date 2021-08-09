@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Hbase, 多维数组的行优先和列优先, DL框架怀古, Zookeeper
+title:  Hbase, 多维数组的行优先和列优先, DL框架怀古
 category: AI 
 ---
 
@@ -241,6 +241,21 @@ Fortran作为最早的高级语言（1957年），至今仍有很强的生命力
 
 两者在内存中的布局是完全相同的。
 
+到了TensorFlow，内存布局问题有了更进一步的抽象。TF将内存布局称为physical dimension，而将数组下标称为logical dimensions。
+
+定义如下术语：
+
+- the most minor physical dimension (fastest varyingindex)
+- the last the most major (slowest varying index)
+
+使用minor_to_major的方式表示logical dimensions。
+
+例如：
+
+`f32[8,100,100,4]{3,0,2,1}`，其中`[8,100,100,4]`表示logical dimensions，`{3,0,2,1}`表示minor_to_major。
+
+则the most minor physical dimension为4。
+
 # DL框架怀古
 
 2017.9
@@ -294,45 +309,3 @@ https://mp.weixin.qq.com/s/_-z2d1GE_3FElzAwPyJZ8A
 https://mp.weixin.qq.com/s/gWdeevVYctxjDDw9SOWe_Q
 
 PyTorch深度学习技术生态
-
-# Zookeeper
-
-http://zookeeper.apache.org/
-
-`bin/zkServer.sh status`
-
-http://www.cnblogs.com/lpshou/archive/2013/06/14/3136904.html
-
-zookeeper原理
-
-https://mp.weixin.qq.com/s/WPyJC4nyLQGWk-OQylUHHw
-
-Zookeeper简单介绍
-
-http://www.ibm.com/developerworks/cn/opensource/os-cn-zookeeper/index.html
-
-分布式服务框架Zookeeper--管理分布式环境中的数据
-
-https://mp.weixin.qq.com/s/uMj3JEhgyYw4CaIhP1-GTQ
-
-阿里巴巴为什么不用ZooKeeper做服务发现？
-
-https://mp.weixin.qq.com/s/KFzJAxL_xvrrjhubd7zH-Q
-
-Facebook为何放弃ZooKeeper转用自研配置管理系统？
-
-https://mp.weixin.qq.com/s/DigeE4YxuT55cSeyb1q1tQ
-
-ZooKeeper源码和实践揭秘
-
-https://mp.weixin.qq.com/s/Tb670Jdt4s7CKzGZZQRL_A
-
-用大白话给你解释Zookeeper的选举机制
-
-https://mp.weixin.qq.com/s/BejPSfvEe98nSch81WKgAg
-
-Zookeeper九个问题
-
-https://mp.weixin.qq.com/s/03A4LnDqNhNgQ5bSRIgR_Q
-
-一举拿下高可用与分布式协调系统设计

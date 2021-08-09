@@ -7,7 +7,65 @@ category: AI
 * toc
 {:toc}
 
-# TFLite（续）
+# TFLite
+
+## 模型文件解析（续）
+
+tflite模型中间结果的导出，不是太方便，原因是相关内存被复用。
+
+解决办法有两个：
+
+- 把想要dump的tensor设置为网络的output，然后转成tflite。
+
+- 修改tflite.invoke的代码，以导出中间结果。
+
+参考：
+
+https://stackoverflow.com/questions/57139676/savedmodel-tflite-signaturedef-tensorinfo-get-intermediate-layer-outputs
+
+这里还有一个非常Hack的方法：
+
+https://github.com/raymond-li/tflite_tensor_outputter/blob/master/tflite_tensor_outputter.py
+
+这个脚本跑起来有些问题，需要配合专业版的schema_py_generated.py才能使用。
+
+https://blog.csdn.net/abc20002929/article/details/112529203
+
+tflite模型调试-中间层output输出
+
+---
+
+https://gitee.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tensorflow/tflite/tflite_multi_output_quant.py
+
+这个例子包含了以下内容：
+
+- 如何直接用tf算子搭建网络，并导出为tflite文件。注意`@tf.function`的用法。
+- 如何搭建多输出的网络。
+- 如何生成量化模型。注意`representative_dataset_gen`，它展示了如何用fake data替换真实数据。
+
+---
+
+参考：
+
+https://www.cnblogs.com/zhouyang209117/p/8087258.html
+
+使用flatbuffers
+
+http://harmonyhu.com/2019/02/03/flatbuffers-reflection/
+
+FlatBuffers反射
+
+https://blog.csdn.net/u011279649/article/details/83186550
+
+TFLite:模型文件的结构和解析器
+
+https://jackwish.net/2020/introducing-tflite-parser-package.html
+
+Introducing TFLite Parser Python Package
+
+https://jackwish.net/tflite/
+
+Easily Parse TFLite Models with Python
 
 ## 参考
 
@@ -254,40 +312,6 @@ unsupported/Eigen/CXX11/src/Tensor/TensorBase.h: TensorBase::contract()
 
 Tensor contraction是一种Tensor运算，参见《数学狂想曲（五）》中的“张量分析”一节。
 
-# TensorFlow.js
-
-https://mp.weixin.qq.com/s/dqMS4NjmNYs7IFHm8uFM8w
-
-TensorFlow发布面向JavaScript开发者的机器学习框架TensorFlow.js
-
-https://zhuanlan.zhihu.com/p/35181413
-
-TensorFlow.js人脸识别—玩转吃豆豆小游戏
-
-https://mp.weixin.qq.com/s/ebLHZAG8H78TsZUKSzAtIw
-
-TF官方博客：基于TensorFlow.js框架的浏览器实时姿态估计
-
-https://mp.weixin.qq.com/s/z6p4A4DfCuK8IBGVGwrtLQ
-
-如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
-
-https://mp.weixin.qq.com/s/NO_XY-JmTpIkoC-fpkZ-qg
-
-在浏览器上也能训练神经网络？TensorFlow.js带你玩游戏~
-
-https://mp.weixin.qq.com/s/vjpMr3TsF3Lui8Q0IstQxw
-
-浏览器上跑：TensorFlow发布实时人物分割模型，秒速25帧，24个部位
-
-https://mp.weixin.qq.com/s/-BblgnvPLuqpYM8PZ7PQCQ
-
-三行代码实时追踪你的手，只要有浏览器就够了
-
-https://mp.weixin.qq.com/s/C7QdVathJ8YTXF-zXPC-Ow
-
-有人分析了7个基于JS语言的DL框架，发现还有很长的路要走
-
 # Eager Execution
 
 TensorFlow的Eager Execution可立即评估操作，无需构建图：操作会返回具体的值，而不是构建以后再运行的计算图。这也就是所谓的动态图计算的概念。
@@ -321,36 +345,6 @@ https://github.com/snowkylin/tensorflow-handbook
 https://mp.weixin.qq.com/s/zz8XCykJ6jxbE5J4YwAkEA
 
 一招教你使用tf.keras和eager execution解决复杂问题
-
-# Estimator
-
-![](/images/img2/tensorflow_programming_environment.png)
-
-Estimator是一个非常高级的API，其抽象等级甚至在Keras之上。
-
-Estimator主要包括以下部分：
-
-1.初始化。定义网络结构。
-
-2.train。
-
-3.evaluate。
-
-4.predict。
-
-TensorFlow已经包含了一些预置的Estimator。例如：BoostedTreesClassifier、DNNClassifier、LinearClassifier等。具体可参见：
-
-https://tensorflow.google.cn/api_docs/python/tf/estimator
-
-参考：
-
-https://mp.weixin.qq.com/s/a68brFJthczgwiFoUBh30A
-
-TensorFlow数据集和估算器介绍
-
-https://mp.weixin.qq.com/s/zpEVU1E5DfElAnFqHCqHOw
-
-训练效率低？GPU利用率上不去？快来看看别人家的tricks吧～
 
 # tf.data
 

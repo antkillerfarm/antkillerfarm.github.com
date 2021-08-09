@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  浮点运算和代码优化, 并行计算, 稀疏矩阵的存储, Optimizer软件
+title:  浮点运算和代码优化, 并行计算, 稀疏矩阵的存储, Optimizer软件, Zookeeper
 category: AI 
 ---
 
@@ -171,6 +171,16 @@ GeForce产品专为互动游戏与消费类应用而设计。
 
 https://github.com/lapesd/libgomp
 
+## MPI
+
+集群可以很好解决单节点计算力不足的问题，但在集群中大规模的数据交换是很耗费时间的，因此需要一种在多节点的情况下能快速进行数据交流的标准，这就是Message passing interface(MPI)。
+
+MPI的主流实现主要是：mpich和openmpi。
+
+https://zhuanlan.zhihu.com/p/69497154
+
+高性能计算--mpi
+
 ## 教程
 
 http://blog.csdn.net/augusdi/article/details/12833235
@@ -240,60 +250,44 @@ https://mp.weixin.qq.com/s/wJAt-RqmsoyECLGgdlH6RA
 
 基于数据的分布式鲁棒优化算法及其应用
 
-# 图数据库+
+# Zookeeper
 
-## 其他图数据库
+http://zookeeper.apache.org/
 
-开源的、流行的图数据库主要有以下几种：Neo4j、OrientDB、ArangoDB、JanusGraph、Dgraph。
+`bin/zkServer.sh status`
 
-Neo4j历史悠久，且长期处于图数据库领域的龙头地位，但它开源的社区版本只支持单机，不支持分布式。
+http://www.cnblogs.com/lpshou/archive/2013/06/14/3136904.html
 
-OrientDB和ArangoDB起步比较早，最初是一个单机的图数据库，后来随着用户数据量的不断增加，增加了分布式模式，但支持的不是很好。
+zookeeper原理
 
-JanusGraph和Dgraph发展的比较晚，从设计之初就考虑了分布式和扩展性，所以对分布式支持的非常好，且都是完全开源免费的。
+https://mp.weixin.qq.com/s/WPyJC4nyLQGWk-OQylUHHw
 
----
+Zookeeper简单介绍
 
-第一类：Neo4j、ArangoDB、Virtuoso、TigerGraph、RedisGraph。此类图数据库只有单机版本开源可用，性能优秀，但不能应对分布式场景中数据的规模增长。
+http://www.ibm.com/developerworks/cn/opensource/os-cn-zookeeper/index.html
 
-第二类：JanusGraph、HugeGraph。此类图数据库在现有存储系统之上新增了通用的图语义解释层，图语义层提供了图遍历的能力，但是受到存储层或者架构限制，不支持完整的计算下推，多跳遍历的性能较差，很难满足OLTP场景下对低延时的要求。
+分布式服务框架Zookeeper--管理分布式环境中的数据
 
-第三类：DGraph、NebulaGraph。此类图数据库根据图数据的特点对数据存储模型、点边分布、执行引擎进行了全新设计，对图的多跳遍历进行了深度优化。
+https://mp.weixin.qq.com/s/uMj3JEhgyYw4CaIhP1-GTQ
 
-## 参考
+阿里巴巴为什么不用ZooKeeper做服务发现？
 
-https://mp.weixin.qq.com/s/YfNlDoGOlHtpG9VFBCZHnQ
+https://mp.weixin.qq.com/s/KFzJAxL_xvrrjhubd7zH-Q
 
-VLDB2019特邀报告《图处理》综述进展，滑铁卢大学数据库大牛M. Tamer Özsu教授，170页ppt
+Facebook为何放弃ZooKeeper转用自研配置管理系统？
 
-https://mp.weixin.qq.com/s/PkFscGq8tjzc3HQiF-SSsA
+https://mp.weixin.qq.com/s/DigeE4YxuT55cSeyb1q1tQ
 
-在图数据上做机器学习，应该从哪个点切入？
+ZooKeeper源码和实践揭秘
 
-https://mp.weixin.qq.com/s/uYP8Eyz36JyTWska0hvtuA
+https://mp.weixin.qq.com/s/Tb670Jdt4s7CKzGZZQRL_A
 
-字节跳动自研万亿级图数据库&图计算实践
+用大白话给你解释Zookeeper的选举机制
 
-https://mp.weixin.qq.com/s/uZStvVZp3UHLY3BppgaRLg
+https://mp.weixin.qq.com/s/BejPSfvEe98nSch81WKgAg
 
-JanusGraph VS Dgraph：贝壳分布式图数据库技术选型之路
+Zookeeper九个问题
 
-https://mp.weixin.qq.com/s/3rLTRtSWbf31aNRDs4rmoQ
+https://mp.weixin.qq.com/s/03A4LnDqNhNgQ5bSRIgR_Q
 
-Dgraph简介篇
-
-https://mp.weixin.qq.com/s/rhtaVTON761wxGDqT9EIoQ
-
-Dgraph原理篇
-
-https://mp.weixin.qq.com/s/5nBS0FiOynhGS6mY2dZ1ng
-
-分布式图数据库在贝壳的应用实践
-
-https://blog.csdn.net/guleileo/article/details/112000725
-
-一文聊“图”，从图数据库到知识图谱
-
-https://mp.weixin.qq.com/s/akfjTkRkPraCAoli-VPC9A
-
-美团图数据库平台建设及业务实践
+一举拿下高可用与分布式协调系统设计
