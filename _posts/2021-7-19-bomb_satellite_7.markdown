@@ -139,6 +139,14 @@ https://mp.weixin.qq.com/s/WQWJMaTFUrggWRWuOoM8bw
 
 ---
 
+一位老人与大山斗了一辈子，历时36年，他带领村民在绝壁上开出一条“生命渠”。
+
+https://view.inews.qq.com/a/20210720A05NHV00
+
+“当代愚公”在悬崖上开了一条“生命渠”
+
+---
+
 ![](/images/img3/top10.png)
 
 ![](/images/img4/manufact.jpg)
