@@ -195,6 +195,10 @@ https://zhuanlan.zhihu.com/p/330003494
 
 ---
 
+在目前的理论下，低于5倍地球质量的行星通常会是岩石行星，超过10倍地球质量的行星则会成为类海王星或气体行星。
+
+---
+
 https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
 
 生的伟大，死的光荣——致敬卡西尼号土星探测器
