@@ -231,6 +231,18 @@ https://blog.csdn.net/qq_32648921/article/details/109114887
 
 线程安全注解
 
+## Implementation-defined、Unspecified、Undefined
+
+Implementation-defined：C标准没有明确规定，但是要求编译器必须对此做出明确规定，并写在编译器的文档中。
+
+Unspecified：C标准没有明确规定，编译器可以自己决定，不必写在编译器的文档中。
+
+Undefined：C标准没规定怎么处理，编译器很可能也没规定。
+
+https://www.cnblogs.com/MagicLetters/archive/2011/08/03/2126471.html
+
+C语言中关于Implementation-defined、Unspecified和Undefined
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/23016264

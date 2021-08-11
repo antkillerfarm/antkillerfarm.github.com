@@ -105,6 +105,10 @@ https://outbreak.info/
 
 这是来自Scripps Research的几位科学家创办的COVID-19专题站。Scripps Research是美国最大的私立非营利性的生物医学研究机构，成立于1924年。
 
+https://cov-lineages.org/lineage_list.html
+
+变种列表
+
 ---
 
 其实吧，19个变异点位真没啥稀奇的……
