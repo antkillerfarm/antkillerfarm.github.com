@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 欧洲
+title: 中东
 category: World 
 ---
 
@@ -127,6 +127,14 @@ https://www.zhihu.com/question/answer/1998230324
 
 ---
 
+1841年11月,被称为“阿富汗之星”的Akbar Khan领导喀布尔起义,英国侵略军陷于绝境,不得不答应撤离阿富汗。1842年1月，英军16500人开始撤退（喀布尔大撤退），沿途不断遭到截击，几乎全军覆没，仅数人生还。
+
+1878年11月，英军入侵阿富汗，阿富汗人民英勇抗敌,给英国侵略者以沉重打击。只是由于统治者投降妥协，才使英国得以利用条约控制阿富汗的对外关系。
+
+1919年，阿曼努拉汗继任阿富汗国王。他即位时发表公告,宣布阿富汗在对内对外方面完全独立,并写信给英国印度总督,要求英国承认阿富汗的独立,遭到无理拒绝。同年5月,战争爆发,阿富汗军民在大部分战线上取得胜利。英国正式承认阿富汗独立。
+
+---
+
 https://mp.weixin.qq.com/s/3Frx_ZmmmEC_aj4tLUPleg
 
 ​苏莱曼尼被斩首后，这篇文章把两伊根本问题说清楚了
@@ -155,32 +163,6 @@ https://www.zhihu.com/answer/790409921
 
 阿富汗历史
 
-# 欧洲+
+https://zhuanlan.zhihu.com/p/370329132
 
-https://www.fmprc.gov.cn/ce/cepl/chn/hwly/t754262.htm
-
-伟大的国王卡齐米日三世
-
-https://www.zhihu.com/question/321165966
-
-如何看待演员泽连斯基2019年乌克兰大选高票当选乌克兰总统？
-
-https://www.zhihu.com/question/343334470
-
-为什么要辱法，法国做了什么荒诞的事？
-
-https://www.zhihu.com/answer/1318998332
-
-二战后德国失去东普鲁士相当于中国失去哪里？
-
-https://mp.weixin.qq.com/s/RsDeC81TVkIz_fqqwdXUJw
-
-出产泰坦尼克号的北爱尔兰，还有哪些可能性？
-
-https://mp.weixin.qq.com/s/TwKilqJiWo6UvQhg2dkCig
-
-菲利普亲王病逝：以蒙巴顿和温莎之名
-
-https://mp.weixin.qq.com/s/y7oUufw8eXu6Ey4EaATE-g
-
-去埃及打仗，拿破仑为什么要带这么多科学家？
+神经病气质的塔利班为何能统一阿富汗？它又是如何极速滑落的？
