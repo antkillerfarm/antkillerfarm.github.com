@@ -320,3 +320,7 @@ https://linux.cn/article-7083-1.html
 https://yanqiyu.info/2021/06/21/huawei-v-qwr/
 
 某不知名网友怒斥华为，究竟发生了什么
+
+https://mp.weixin.qq.com/s/-8L5MFZrgmyatGgYaR1AEA
+
+波兰极客用一张软盘运行Linux系统，用的还是最新内核！

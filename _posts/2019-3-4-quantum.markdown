@@ -248,6 +248,10 @@ https://mp.weixin.qq.com/s/95h7WQHGP-glfyO6-S9S8g
 
 什么是鸟群算法
 
+https://mp.weixin.qq.com/s/j9BGw_oCg7eyzg4w4j681w
+
+生物老师：数学老师，你走开，这道题我来解（遗传算法）
+
 # PaddlePaddle
 
 https://mp.weixin.qq.com/s/BRMTR688FcQyUxR8rxwH2Q

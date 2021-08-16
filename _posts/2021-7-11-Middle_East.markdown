@@ -135,6 +135,26 @@ https://www.zhihu.com/question/answer/1998230324
 
 ---
 
+来自兴都库什的怪物毁灭了巴米扬大佛；
+
+原教旨主义魔王向瓦罕走廊逼近；
+
+卑鄙无耻的强盗罪犯进入昆都士；
+
+阿富汗塔利班武装力量占领坎大哈；
+
+塔利班领袖阿洪扎达将军接近贾拉拉巴德；
+
+伊斯兰的最高维护者于今日抵达自己忠实的喀布尔。
+
+西贡铁拳，还是喀布尔子弹？媒体称美军在喀布尔机场阿富汗平民开火，已致数人死亡
+
+https://www.longwarjournal.org/mapping-taliban-control-in-afghanistan
+
+这个网站提供了塔利班的战场推进情况
+
+---
+
 https://mp.weixin.qq.com/s/3Frx_ZmmmEC_aj4tLUPleg
 
 ​苏莱曼尼被斩首后，这篇文章把两伊根本问题说清楚了
@@ -166,3 +186,7 @@ https://www.zhihu.com/answer/790409921
 https://zhuanlan.zhihu.com/p/370329132
 
 神经病气质的塔利班为何能统一阿富汗？它又是如何极速滑落的？
+
+https://view.inews.qq.com/wxn/20210725A084BY00
+
+“两个塔利班”的前世与今生（巴基斯坦塔利班和阿富汗塔利班）

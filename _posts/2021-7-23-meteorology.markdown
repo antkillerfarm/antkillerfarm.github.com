@@ -67,6 +67,10 @@ https://www.zhihu.com/question/31820631
 
 影响中国的台风最北到过哪里？最深入内陆到过哪里？
 
+https://mp.weixin.qq.com/s/JgT3j7M3vyBT5qCDug6AKw
+
+要预判台风的威力，得给它量量“三围”
+
 # 气象
 
 夏至三庚入伏，冬至逢壬数九。

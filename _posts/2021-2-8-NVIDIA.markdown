@@ -121,7 +121,7 @@ PTX (Parallel Thread Execution) 是NVIDIA GPU的伪指令集，之所以加个�
 
 gcc和llvm都有特定的pass可以生成PTX代码。
 
-真正的指令集，被称作SASS。
+NVIDIA GPU真正的指令集，被称作SASS。
 
 https://zhuanlan.zhihu.com/p/161624982
 
