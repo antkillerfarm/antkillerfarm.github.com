@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 生命起源
+title: 医药（二）
 category: Nature 
 ---
 

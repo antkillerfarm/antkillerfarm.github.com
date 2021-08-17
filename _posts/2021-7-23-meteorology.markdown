@@ -130,6 +130,18 @@ https://www.163.com/dy/article/GFK1JJ6S0552DNJF.html
 
 K559次列车回撤途中再次被困：从郑州到新乡，50多个小时的煎熬“就像蒸房一样”
 
+https://mp.weixin.qq.com/s/ZqqxgzKeBAm0HUlKXCOxBw
+
+八个半小时紧急转移：郑州心血管病医院里的生命接力
+
+https://view.inews.qq.com/wxn/20210730A09LW900
+
+暴雨过后，散落在郑州1010平方公里上的城市细节
+
+https://mp.weixin.qq.com/s/xlPLIb3du7XOBeD7rp2inA
+
+河南特大暴雨亲历者：我是研究气候的，都没有想到……
+
 ---
 
 1915年，圣地亚哥政府曾与查尔斯-哈特菲尔德（编者注：当时圣地亚哥小有名气的“造雨者”）签订合同，让其增加降水以补充水库蓄水。查尔斯在水库旁建塔，并释放了23种化学物质的混合剂。几天后，雨倒是来了，但却不走了，持续降水引发洪涝，摧毁桥梁，阻断火车，切断电话线缆，最后大坝决堤，致20多人死亡。
@@ -233,3 +245,7 @@ https://mp.weixin.qq.com/s/KR50fOET-9i7yFM6pY18_w
 https://www.zhihu.com/question/25543335
 
 世界上有哪些著名的飞地？
+
+https://mp.weixin.qq.com/s/QOw3ZZ-Ql2ob8IMt97U-cA
+
+明朝用“束水攻沙”对付黄河，这科学吗？

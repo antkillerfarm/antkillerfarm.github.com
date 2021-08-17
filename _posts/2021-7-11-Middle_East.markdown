@@ -190,3 +190,7 @@ https://zhuanlan.zhihu.com/p/370329132
 https://view.inews.qq.com/wxn/20210725A084BY00
 
 “两个塔利班”的前世与今生（巴基斯坦塔利班和阿富汗塔利班）
+
+https://zhuanlan.zhihu.com/p/395139812
+
+什么是“杀死印度人山脉”？（Hindu kush）
