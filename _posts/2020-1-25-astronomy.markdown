@@ -245,6 +245,10 @@ https://mp.weixin.qq.com/s/UvzS2Hsza-ZJocVwgKYOmQ
 
 新型超新星确认！
 
+https://mp.weixin.qq.com/s/SataTBoQq11lAdiBR6x4Dw
+
+当太阳死亡时，生命也将终结
+
 ## 流浪地球
 
 https://mp.weixin.qq.com/s/O8tAEBMmZ29N1fr7BGW_UQ

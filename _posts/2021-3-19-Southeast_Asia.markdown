@@ -125,6 +125,12 @@ http://m.afwing.vip/weapon/the-emergence-of-smart-bombs.html
 
 ---
 
+亚洲四小龙：韩国、中国台湾地区、中国香港地区和新加坡。
+
+亚洲四小虎：印度尼西亚、泰国、马来西亚和菲律宾。
+
+---
+
 https://zhuanlan.zhihu.com/p/242294917
 
 泰国，大战缅甸三百年！

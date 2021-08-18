@@ -21,6 +21,10 @@ https://www.tensorflow.org/xla/architecture
 
 ![](/images/img4/XLA.png)
 
+CSE(Common subexpression elimination)
+
+DCE(Dead code elimination)
+
 ## HLO
 
 XLA用HLO(High Level Optimizer)这种中间表示形式，表示正在被优化的计算图。
@@ -163,6 +167,10 @@ https://sketch2sky.com/
 https://tensorflow.juejin.im/performance/xla/jit.html
 
 使用即时编译
+
+https://blog.slinuxer.com/2019/06/tensorflow-xla
+
+TensorFlow XLA初步接触
 
 # TensorFlow Addons
 
