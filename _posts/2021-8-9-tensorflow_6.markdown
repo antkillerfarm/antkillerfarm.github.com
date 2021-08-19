@@ -9,6 +9,22 @@ category: AI
 
 # TensorFlow
 
+https://mp.weixin.qq.com/s/CqOo7Fu6t5-yJiYhzo03oQ
+
+利用TensorFlow和神经网络来处理文本分类问题
+
+https://mp.weixin.qq.com/s/VlvQmrS7Qi2qq6fTBXKTYw
+
+从零开始用TensorFlow搭建卷积神经网络
+
+https://mp.weixin.qq.com/s/hETnA81WlkMG3rftAHg9bw
+
+PyTorch和TensorFlow哪家强：九项对比读懂各自长项短板
+
+https://mp.weixin.qq.com/s/7R-Gvegnta9XBwIaSPBL_Q
+
+基于Tensorflow的验证码识别
+
 https://mp.weixin.qq.com/s/3QgtemxxsQmuNQVEdpiMwA
 
 如何做准确率达98%的交通标志识别系统？

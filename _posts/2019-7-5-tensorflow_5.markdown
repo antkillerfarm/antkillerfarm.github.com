@@ -37,6 +37,14 @@ https://mp.weixin.qq.com/s/zpEVU1E5DfElAnFqHCqHOw
 
 训练效率低？GPU利用率上不去？快来看看别人家的tricks吧～
 
+# Log
+
+TF里有两套Log系统：`LOG`和`VLOG`。
+
+`LOG`由`TF_CPP_MIN_LOG_LEVEL`控制，值越小，信息越多。
+
+`VLOG`都是INFO级别的Log，因此，`TF_CPP_MIN_LOG_LEVEL`必须为0。此外，`VLOG`本身亦有不同等级，可使用`TF_CPP_MIN_VLOG_LEVEL`控制，值越大，信息越多。
+
 # 参考
 
 https://mp.weixin.qq.com/s/t1QFIOq-VBNOrSm0zW-PlQ
@@ -402,19 +410,3 @@ https://zhuanlan.zhihu.com/p/28475975
 https://mp.weixin.qq.com/s/zZCEOdNQsPovn_i-C57Z9g
 
 如何使用最流行框架Tensorflow进行时间序列分析？
-
-https://mp.weixin.qq.com/s/CqOo7Fu6t5-yJiYhzo03oQ
-
-利用TensorFlow和神经网络来处理文本分类问题
-
-https://mp.weixin.qq.com/s/VlvQmrS7Qi2qq6fTBXKTYw
-
-从零开始用TensorFlow搭建卷积神经网络
-
-https://mp.weixin.qq.com/s/hETnA81WlkMG3rftAHg9bw
-
-PyTorch和TensorFlow哪家强：九项对比读懂各自长项短板
-
-https://mp.weixin.qq.com/s/7R-Gvegnta9XBwIaSPBL_Q
-
-基于Tensorflow的验证码识别

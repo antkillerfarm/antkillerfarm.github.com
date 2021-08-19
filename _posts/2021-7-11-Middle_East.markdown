@@ -169,6 +169,16 @@ https://www.longwarjournal.org/mapping-taliban-control-in-afghanistan
 
 ---
 
+问：有哪些国家或国际组织认定塔利班（阿富汗）是恐怖组织？
+
+答：塔吉克斯坦、吉尔吉斯斯坦、哈萨克斯坦、俄罗斯、阿联酋、加拿大。
+
+---
+
+前几天乌克兰还在大肆宣传用飞机帮欧美盟国在阿富汗运走了不少人，结果自己的12个兵还被扔在那里连撤退通知都没接到。。。
+
+---
+
 https://mp.weixin.qq.com/s/3Frx_ZmmmEC_aj4tLUPleg
 
 ​苏莱曼尼被斩首后，这篇文章把两伊根本问题说清楚了
