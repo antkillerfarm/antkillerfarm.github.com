@@ -336,7 +336,13 @@ https://www.cnblogs.com/wuyida/p/6301240.html
 
 markdown绘图插件--mermaid简介
 
+https://zhuanlan.zhihu.com/p/355997933
+
+Mermaid从入门到入土——Markdown进阶语法
+
 示例：
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 
 <div class="mermaid">
       graph TD
