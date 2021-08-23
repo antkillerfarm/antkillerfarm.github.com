@@ -99,6 +99,10 @@ https://mp.weixin.qq.com/s/rtTUT9TlAEaVci12KvsznA
 
 美国CDC、JHU在用的疫情数据库，来自这个武汉姑娘的华人团队
 
+https://newsnodes.com
+
+另一个全球实时统计网站
+
 https://mp.weixin.qq.com/s/GS4OsIvePo3O-6ltD1b9Qg
 
 用shiny和echarts4r制作一个COVID-19的dashboard
@@ -252,6 +256,12 @@ F0是确诊，F1是密切接触者，在此案例中是F0的合租室友，妹�
 https://zhuanlan.zhihu.com/p/385287524
 
 戳穿越南防疫的神话--F2的视角
+
+---
+
+坏消息：停尸房满了。
+
+好消息：这次提前申请了冷冻车！
 
 ---
 

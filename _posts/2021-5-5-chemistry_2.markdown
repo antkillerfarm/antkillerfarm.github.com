@@ -77,6 +77,14 @@ https://mp.weixin.qq.com/s/dnSkSIf3pqroSZWgTi0MiA
 
 ---
 
+撑杆跳高的纪录是随着撑杆材料的演变而不断提升的。撑杆材料发展大致经历了木质杆、竹质杆、金属杆和复合材料杆（包括玻璃纤维GFRP，碳纤维CFRP，Kevlar纤维KFRP等）4个阶段。世界纪录也从实心木杆的3.3米，提升到空心竹竿的4.77米，空心金属撑杆的4.8米，玻璃纤维及碳纤维撑杆的6.18米。
+
+https://mp.weixin.qq.com/s/dm2V9oIP-SflRwGvMmQuLg
+
+弹弹弹，弹上领奖台！
+
+---
+
 https://mp.weixin.qq.com/s?__biz=MjM5MDE3OTk2Ng==&mid=2657461706&idx=1&sn=589d7a4d65f2e2fdd696100e06b1a257
 
 高考成绩接近满分，却被清华北大拒绝，被称“中国最帅科学家”（中国油田分层开采和化学驱油技术的奠基人——王德民）
@@ -266,21 +274,3 @@ https://mp.weixin.qq.com/s/1jYvcT5-XZuwYxBBRPufjA
 https://user.guancha.cn/main/content?id=510957
 
 美国如何联手四大粮商，接管了全世界的饭碗
-
----
-
-https://www.zhihu.com/answer/370657574
-
-军事里说的马润指什么？
-
-http://bbs.tianya.cn/post-no05-401394-372.shtml
-
-"灵肉"传奇：斯帕姆午餐肉
-
-http://war.163.com/15/0108/09/AFE8A8LU00014J0G.html
-
-二战美军面临两大敌人：淋病、午餐肉
-
-https://zhuanlan.zhihu.com/p/24366992
-
-与生活息息相关:细数那些被二战"捧红"的民用产品!

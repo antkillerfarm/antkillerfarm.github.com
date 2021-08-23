@@ -75,6 +75,10 @@ https://mp.weixin.qq.com/s/opP5-gPGAKJT16nXaoOAWg
 
 Google发布的语音分离数据集与深度学习模型
 
+https://mp.weixin.qq.com/s/eogV9SPfXGgLOJYnsVFzsQ
+
+世界最大的多语言语音数据集现已开源（VoxPopuli）
+
 # 基本框架
 
 语音识别系统主要有四部分组成：信号处理和特征提取、声学模型、语言模型（Language Model, LM）和解码器(Decoder)。

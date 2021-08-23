@@ -324,3 +324,7 @@ https://yanqiyu.info/2021/06/21/huawei-v-qwr/
 https://mp.weixin.qq.com/s/-8L5MFZrgmyatGgYaR1AEA
 
 波兰极客用一张软盘运行Linux系统，用的还是最新内核！
+
+https://mp.weixin.qq.com/s/-hfI4GLkChRJQDqcLcvbGg
+
+嵌入式C编程实现上下文的快速切换（cpost）

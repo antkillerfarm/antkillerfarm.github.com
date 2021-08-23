@@ -173,48 +173,14 @@ https://www.longwarjournal.org/mapping-taliban-control-in-afghanistan
 
 答：塔吉克斯坦、吉尔吉斯斯坦、哈萨克斯坦、俄罗斯、阿联酋、加拿大。
 
----
-
 前几天乌克兰还在大肆宣传用飞机帮欧美盟国在阿富汗运走了不少人，结果自己的12个兵还被扔在那里连撤退通知都没接到。。。
 
----
+美军在时，塔利班实际上是可以搜刮美军的。当然不是到美军基地直接拿，是去和美军合作的阿富汗本土供应商那收保护费。
 
-https://mp.weixin.qq.com/s/3Frx_ZmmmEC_aj4tLUPleg
+09年驻阿美军给阿富汗一家本土运输公司开了21亿美刀的订单，最后发现3.6亿进了塔利班口袋。公司也很无奈：我不给钱，你的货我没法运。
 
-​苏莱曼尼被斩首后，这篇文章把两伊根本问题说清楚了
+![](/images/img4/Taliban.jpg)
 
-https://mp.weixin.qq.com/s/Wt56L0Tdj8H1s4zVh43cMw
+https://www.163.com/dy/article/GI1A7KV405504DOH.html
 
-决战亮马桥！美国、伊朗驻华大使馆于微博隔空斗法
-
-https://zhuanlan.zhihu.com/p/373781337
-
-巴勒斯坦，其实已经内部分裂了
-
-https://www.zhihu.com/question/24082621
-
-当年沙特为什么愿意花35亿美元买东风3？
-
-https://mp.weixin.qq.com/s/cHPdmOJvvQde6DGlWBcHvw
-
-伊拉克化学博士身陷IS占领区，导师为督促其完成论文，派雇佣兵将其救出
-
-https://www.zhihu.com/question/303195046
-
-如何评价阿夫沙尔王朝开创者，猛男纳迪尔沙？
-
-https://www.zhihu.com/answer/790409921
-
-阿富汗历史
-
-https://zhuanlan.zhihu.com/p/370329132
-
-神经病气质的塔利班为何能统一阿富汗？它又是如何极速滑落的？
-
-https://view.inews.qq.com/wxn/20210725A084BY00
-
-“两个塔利班”的前世与今生（巴基斯坦塔利班和阿富汗塔利班）
-
-https://zhuanlan.zhihu.com/p/395139812
-
-什么是“杀死印度人山脉”？（Hindu kush）
+伤害不大，羞辱极强！塔利班这一做法把美国人气炸

@@ -139,6 +139,10 @@ https://mp.weixin.qq.com/s/duqvHrh-iaA381xsnudNAA
 
 天津大学硕士举报其导师学术不端，123页材料称十年造假80篇论文！
 
+https://www.zhihu.com/question/479884738
+
+如何看待张文宏博士学位论文被举报？
+
 ---
 
 没过几年，荷兰人惠更斯也发明了自己的气泵，并通过了研究发现了一种“异常悬浮效应”——在气泵中，水竟然可以悬浮起来。
@@ -179,7 +183,7 @@ Fano resonance
 
 Rabi flopping
 
-https://www.zhihu.com/question/458152727
+https://www.zhihu.com/answer/1875410335
 
 如何看待顶尖材料学家崔屹团队Nature Catalysis文章撤稿，因原始数据丢失，噪声无法重复？
 

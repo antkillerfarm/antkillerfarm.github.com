@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Java（二）
+title:  Java（二）, 汇编
 category: language 
 ---
 
@@ -320,3 +320,21 @@ https://zhuanlan.zhihu.com/p/346465585
 https://www.zhihu.com/question/280665935
 
 为什么C/C++要分为头文件和源文件？
+
+# 汇编
+
+https://mp.weixin.qq.com/s/OWGi1htNugOv81ZFPinRGw
+
+汇编实现的memcpy和memset
+
+https://mp.weixin.qq.com/s/6RoQAPsenD7Pu9enTqGeoQ
+
+移动端arm cpu优化学习笔记之内联汇编入门
+
+https://mp.weixin.qq.com/s/gr6YKmxbZjwfB4Rft1w55A
+
+一口气看完45个寄存器，CPU核心技术大揭秘
+
+https://mp.weixin.qq.com/s/504MLGjCESZPOvv8AwY6Pw
+
+这篇寄存器讲的有点意思

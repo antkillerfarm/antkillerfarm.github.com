@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Github显示数学公式, 汇编, Matlab
+title:  Github显示数学公式, Matlab
 category: language 
 ---
 
@@ -188,6 +188,10 @@ http://www.texample.net/tikz/examples/
 
 各种tikz示例的网站
 
+https://github.com/xiaohanyu/awesome-tikz
+
+一个Tikz资源集合贴
+
 https://en.wikibooks.org/wiki/LaTeX/PGF/TikZ
 
 TikZ入门教程
@@ -342,35 +346,15 @@ Mermaid从入门到入土——Markdown进阶语法
 
 示例：
 
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>
-      mermaid.initialize({ startOnLoad: true });
-</script>
-
 <div class="mermaid">
       graph TD
-      A[Client] -->|tcp_123| B(Load Balancer)
-      B -->|tcp_456| C[Server1]
-      B -->|tcp_456| D[Server2]
+      A([Graph Construction]) --> B([Graph Verification])
+      B --> C([Graph Execution])
+      C --> |reference changes| B
+      C --> D([Graph Deconstruction])
+      E[[Input Data]] -.-> C
+      C -.-> F[[Output Data]]
 </div>
-
-# 汇编
-
-https://mp.weixin.qq.com/s/OWGi1htNugOv81ZFPinRGw
-
-汇编实现的memcpy和memset
-
-https://mp.weixin.qq.com/s/6RoQAPsenD7Pu9enTqGeoQ
-
-移动端arm cpu优化学习笔记之内联汇编入门
-
-https://mp.weixin.qq.com/s/gr6YKmxbZjwfB4Rft1w55A
-
-一口气看完45个寄存器，CPU核心技术大揭秘
-
-https://mp.weixin.qq.com/s/504MLGjCESZPOvv8AwY6Pw
-
-这篇寄存器讲的有点意思
 
 # Matlab
 
