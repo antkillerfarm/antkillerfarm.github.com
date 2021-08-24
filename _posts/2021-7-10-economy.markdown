@@ -137,6 +137,38 @@ https://zhuanlan.zhihu.com/p/44093969
 
 这个小小岛国为何能成为印度洋“央行”？
 
+---
+
+EXW：EX works
+
+FCA：Free Carrier
+
+FAS：Free Alongside Ship
+
+FOB：Free on Board
+
+CFR：Cost and Freight
+
+CIF：Cost Insurance and Freight
+
+CPT：carriage paid to
+
+CIP：carriage and insurance paid to
+
+DAF：Delivered At Frontier
+
+DES：Delivered ex ship
+
+DEQ：Delivered EX Quay
+
+DDU：delivered duty unpaid
+
+DDP：Delivered duty paid
+
+https://www.weibo.com/ttarticle/p/show?id=2309404623762896322891
+
+终于有人把FOB/CIF/DDP等13种贸易术语讲清楚了
+
 ## 参考
 
 https://mp.weixin.qq.com/s/_rO9I2M-504oZdnGQVsRcQ

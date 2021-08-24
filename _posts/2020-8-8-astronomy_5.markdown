@@ -105,6 +105,18 @@ https://mp.weixin.qq.com/s/PrsKjWC9YC2mRE1pI1dFCg
 
 杨利伟被文盲编辑坑了？《地月同辉》考
 
+https://mp.weixin.qq.com/s/MWNhWTTef4L7RGz-340kuQ
+
+人工智能，如何“拯救”不堪重负的天文学家？
+
+https://mp.weixin.qq.com/s/rF42Dmj3_PcGsOj17am7VA
+
+我们的坐标，已经被2000多颗星星熟知
+
+https://mp.weixin.qq.com/s/LnNRNKqecwJyUtrKS1HfkQ
+
+脉冲星研究
+
 # 化学+
 
 ## 食品工业（续）
@@ -152,6 +164,10 @@ https://mp.weixin.qq.com/s/pwWRC0ewE4GOxFAQ35pnZw
 https://www.zhihu.com/answer/925610213
 
 用铁做军粮罐头在战争期间是不是一种浪费？
+
+https://mp.weixin.qq.com/s/Lz8QRs7HkZbWFxLqf4h6OA
+
+塑料瓶、玻璃瓶、纸包装，什么饮料用什么包装有啥秘密吗？
 
 ## 化学工业
 

@@ -406,19 +406,3 @@ https://mp.weixin.qq.com/s/1sbL2vmugiIlSn_ehIOuig
 https://mp.weixin.qq.com/s/5kJfhp3vi9uuSFaeONKfrA
 
 打破传统方法，MIT新芯片帮自动驾驶汽车穿越浓雾
-
-https://zhuanlan.zhihu.com/p/57781001
-
-自动驾驶系统的硬件平台讨论
-
-https://mp.weixin.qq.com/s/ZUxkZXLC0tPkzptFKtudhw
-
-让机器人也能“问路”的视觉语言导航新方法
-
-https://mp.weixin.qq.com/s/6OkLjK1bMbw6a3bvYn_DCQ
-
-深度学习在自动驾驶感知领域的应用
-
-https://zhuanlan.zhihu.com/p/57029694
-
-自动驾驶中单目摄像头检测输出3-D边界框的方法一览

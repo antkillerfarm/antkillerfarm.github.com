@@ -29,6 +29,10 @@ https://zhuanlan.zhihu.com/p/82872145
 
 语音识别技术简史
 
+https://mp.weixin.qq.com/s/0yZ_8uGDXyxZKAEEdmkebA
+
+完整声学极简史
+
 ## 相关任务
 
 语音相关的任务主要有：

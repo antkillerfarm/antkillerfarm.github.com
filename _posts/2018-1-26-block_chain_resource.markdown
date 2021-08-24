@@ -83,6 +83,10 @@ https://view.inews.qq.com/wxn/20210705A0736X00
 
 比特币矿场大逃亡：我把结婚买房的钱全投到矿场，不到一年亏光
 
+https://mp.weixin.qq.com/s/SZJxVFa3PcDRWdbt3etqaQ
+
+比特币“矿难”：当草根的财富梦碎
+
 ## 参考
 
 https://mp.weixin.qq.com/s/H860_Es3uO9ozDTnifNvgQ

@@ -230,3 +230,25 @@ von Neumann model implemented by an OoO processor
 SPMD model implemented by a SIMD processor (a GPU)
 
 GPU虽然是一个SIMD机器，但是并没有采用SSE、AVX之类的SIMD编程模型，而是SPMD模型。
+
+# 机器人/无人驾驶参考资源++
+
+https://zhuanlan.zhihu.com/p/57781001
+
+自动驾驶系统的硬件平台讨论
+
+https://mp.weixin.qq.com/s/ZUxkZXLC0tPkzptFKtudhw
+
+让机器人也能“问路”的视觉语言导航新方法
+
+https://mp.weixin.qq.com/s/6OkLjK1bMbw6a3bvYn_DCQ
+
+深度学习在自动驾驶感知领域的应用
+
+https://zhuanlan.zhihu.com/p/57029694
+
+自动驾驶中单目摄像头检测输出3-D边界框的方法一览
+
+https://mp.weixin.qq.com/s/SZlwjnZrxCyaqRBg_sjQaA
+
+浅谈自动驾驶中的行为风险识别（一）
