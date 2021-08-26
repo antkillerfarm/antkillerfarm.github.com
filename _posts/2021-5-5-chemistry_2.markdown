@@ -268,13 +268,3 @@ https://mp.weixin.qq.com/s/1jYvcT5-XZuwYxBBRPufjA
 ---
 
 美国有800多家肉类加工厂，但通过历年来对食品生产链的各个环节的整合，只有四家公司主宰着整个行业，它们是美国最大的四家肉类加工厂，即JBS、史密斯菲尔德、泰森和桑德森饲养场公司。
-
----
-
-大陆谷物（Continental）、库克工业（Cook industries）、阿彻丹尼尔斯米德兰（ADM）、邦吉（Bunge）、嘉吉（Cargill）和路易达孚（Louis Dreyfus）。
-
-半个世纪后，大陆谷物、库克工业已不复存在，六大粮商变四大粮商，也就是ABCD，在美国政府的扶植下，经过几轮大规模的整合，最终统治了全球七成以上的粮食贸易。
-
-https://user.guancha.cn/main/content?id=510957
-
-美国如何联手四大粮商，接管了全世界的饭碗
