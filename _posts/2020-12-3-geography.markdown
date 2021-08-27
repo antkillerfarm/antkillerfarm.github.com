@@ -149,6 +149,8 @@ https://www.zhihu.com/question/23535955
 
 ---
 
+![](/images/article/yellow_river.jpg)
+
 到了东汉，由于黄河的河道不断下切，导致黄河水位也随之不断降低，原来紧贴着原体的河道就会裸露出来，形成河滩。而这个河滩就让函谷关的天险不复存在。
 
 https://www.sohu.com/a/307458694_100251802
