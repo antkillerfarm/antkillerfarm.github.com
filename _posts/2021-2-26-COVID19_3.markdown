@@ -9,6 +9,18 @@ category: COVID19
 
 # 国外疫情（续）
 
+https://view.inews.qq.com/a/20200715A0A6EY00
+
+握着一手“防疫烂牌”的非洲 凭什么逆风翻盘？
+
+https://mp.weixin.qq.com/s/qfKe0KHk7WwWgJedn1wSsg
+
+美国总统特朗普感染，暴露了多少白宫防疫策略的漏洞？
+
+https://view.inews.qq.com/a/20201111A02SW400
+
+一位中国医疗记者在美国9个月，见证了从14例到1000万的大瘟疫
+
 https://mp.weixin.qq.com/s/X_HxCB97Jsp7drbVoOME1A
 
 为什么新冠死亡率看似在下降？
@@ -258,11 +270,3 @@ https://mp.weixin.qq.com/s/GAAeUD5ZDROltfxcoSFaeA
 https://mp.weixin.qq.com/s/7YscNLoSsuYhf3XQ5qz36w
 
 双黄连热销背后，那些你不知道的事
-
----
-
-![](/images/img3/covid.jpg)
-
-![](/images/img3/covid_2.jpg)
-
-大概在年初，新冠发生过一次重要的变异，就是D614G，在最早武汉上传的病毒序列中，这个位置的氨基酸编码是天冬氨酸(Asparagine,缩写为D)，也就是D614，而后来该位置发生了变异，氨基酸变成了甘氨酸（Glycine，缩写为G）。而变异后的结果就是这个突变株获得了更大的生存优势，更容易感染。

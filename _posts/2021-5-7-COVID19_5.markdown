@@ -1,64 +1,81 @@
 ---
 layout: post
-title: 新冠肺炎（五）——国际援助, 钟南山, 武汉病毒所, 蝙蝠, 疫情建模, 新冠疫苗
+title: 新冠肺炎（五）——知名患者, Gilead Sciences, 钟南山, 武汉病毒所, 蝙蝠, 疫情建模, 新冠疫苗
 category: COVID19 
 ---
 
 * toc
 {:toc}
 
-# 国际援助
+# 知名患者
 
-## 日本援助中国
+一个健康的社会不应该只有一个声音--By 李文亮
 
-盛唐时，日本遣人来中国学习佛法。长屋（日本的相国）赠送中国大德的上千件袈裟，边缘都绣着一首偈子：
+https://mp.weixin.qq.com/s/e3MaPaBZrxwqWtykB9f_JQ
 
-山川异域，风月同天。寄诸佛子，共结来缘。
-
-这也是鉴真法师决心东渡日本传戒的缘由之一。
+86岁院士因感染冠状病毒去世，华中科技大学已痛失4位知名学者
 
 ---
 
-岂曰无衣？与子同袍。王于兴师，修我戈矛。与子同仇。
+根据伊朗宪法，总统可以在无需议会批准的情况下任命副总统，人数可达十多位，每位副总统一般负责一个与总统事务有关的组织机构。除第一副总统外，副总统的重要性无法与负责具体行政事务的内阁部长相比。
 
-岂曰无衣？与子同泽。王于兴师，修我矛戟。与子偕作。
+http://news.ifeng.com/c/7uRKv3JARr9
 
-岂曰无衣？与子同裳。王于兴师，修我甲兵。与子偕行。
-
-——《诗经·秦风·无衣》
+伊朗女副总统感染新冠病毒，40年前她在美国家喻户晓
 
 ---
 
-相知无远近，万里尚为邻。
+https://mp.weixin.qq.com/s/srkQ4in3bLP6exZIZawzuw
 
-四海皆兄弟，谁为行路人。
+英国全能数学家John Conway因新冠去世，他是数学疯子，也是游戏疯子：没有谁比我更爱玩游戏了！
 
-崎岖路，长情在。
+https://mp.weixin.qq.com/s/Ipky8I11O6AlaT2ACRqVaQ
 
-## 中国援助韩国
+陶哲轩发文缅怀John Conway：他是所有数学家构成的凸包中的一个极值点
 
-道不远人，人无异国。
+https://mp.weixin.qq.com/s/jZIUKeSiw9ULSa3eI3gibQ
 
-——新罗 崔致远
+美国传奇主持人拉里·金的非凡一生
 
->崔致远，字孤云，号海云，谥号文昌。朝鲜半岛新罗王京人。十二岁时，即唐懿宗咸通九年(公元868年)乘船西渡入唐，留唐十六年。朝鲜汉文学的开山鼻祖。有“东国儒宗”、“东国文学之祖”的称誉。
+https://zhuanlan.zhihu.com/p/349037091
 
-## 小米援助意大利
+英国百岁老兵感染新冠去世，曾为NHS筹款3000万英镑，被女王授勋
 
-We are waves of the same sea, leaves of the same tree, flowers of the same garden.
+https://mp.weixin.qq.com/s/z37FQ9SWDm9wMg9lJAPqeA
 
-——Lucius Annaeus Seneca
+印度前总理儿子因新冠去世！82岁杰出计算机科学家，曾在美工作15年
 
->Lucius Annaeus Seneca，公元前4年～65年，古罗马政治家、斯多葛派哲学家、悲剧作家、雄辩家。暴君Nero的老师，被逼自杀。
+# Gilead Sciences
 
-## 马云援助意大利
+Gilead Sciences，1987年6月22日注册成立，是一家以研究为基础，从事药品的开发和销售的生物制药公司。主要重点领域包括人类免疫缺陷病毒（HIV）/艾滋病，肝脏疾病，如乙型肝炎和丙型肝炎和心血管/代谢和呼吸条件。
 
-“消失吧，黑夜！黎明时我们将获胜！”
+https://www.huxiu.com/article/338515.html
 
-——《Turandot》， Giacomo Puccini
+研发瑞德西韦的医药公司吉利德，真是抗毒传奇？
 
->Giacomo Puccini，1858～1924，意大利歌剧作曲家，代表作有《波希米亚人》、《托斯卡》与《蝴蝶夫人》等。   
->《Turandot（图兰朵）》是Puccini最后的作品，在他去世时仍未完成。后来，Franco Alfano根据普契尼的草稿将全剧完成。《今夜无人入睡》（Nessun Dorma）是其中最著名的一段咏叹调。
+https://xueqiu.com/1913820214/140236918
+
+吉利德发家史：5次豪赌，从小药厂到世界巨头的30年蜕变！
+
+---
+
+Rem 人民 de 的 sivir 希望
+
+https://mp.weixin.qq.com/s/aZLWs6VT-zfEMaBt_cRfzg
+
+“人民的希望”跌落神坛，竟因中国的临床试验？
+
+---
+
+瑞德西韦（Remdesivir）、法匹拉韦（Favipiravir）、巴洛沙韦（Baloxavir）、洛匹那韦（lopinavir）、利托那韦（ritonavir）
+
+盘尼西林、阿莫西林、配尼西林、替卡西林、羧苄西林、匹美西林
+
+青霉素、庆大霉素、万古霉素
+
+https://mp.weixin.qq.com/s/8XlUuq6HoppIJbeR58LrnA
+
+想成为一个合格的药？选择姓什么很重要
 
 # 钟南山
 
@@ -277,19 +294,3 @@ https://mp.weixin.qq.com/s/YEt7XH9mNPmx3QURebbBmg
 https://mp.weixin.qq.com/s/pkgbDDBv-OPGHyeEBVDXQQ
 
 国产疫苗，对新冠病毒突变株效果如何？
-
-https://mp.weixin.qq.com/s/8L3euDhDzu9NUb15sUCpcw
-
-疫苗接种6个月的真实世界数据
-
-https://view.inews.qq.com/wxn/20210105A037TJ00
-
-30多个国家和地区发现变异毒株，疫苗效果会受影响吗？
-
-https://mp.weixin.qq.com/s/ZXWV8joWMNCbOfH04_TbXA
-
-美国CDC的“Delta末日文档”：感染人数激增，接种疫苗仍传播病毒？
-
-https://mp.weixin.qq.com/s/krRGv6N20YALpG-STMbIzg
-
-以色列新冠疫苗真实世界数据，有什么用？
