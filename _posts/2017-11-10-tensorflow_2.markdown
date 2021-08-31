@@ -25,6 +25,8 @@ CSE(Common subexpression elimination)
 
 DCE(Dead code elimination)
 
+TFE(Tensorflow Eager)
+
 ## HLO
 
 XLA用HLO(High Level Optimizer)这种中间表示形式，表示正在被优化的计算图。

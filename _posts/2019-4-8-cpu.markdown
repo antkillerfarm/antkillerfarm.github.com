@@ -85,6 +85,10 @@ https://www.zhihu.com/question/20809971
 
 多核之后，CPU的发展方向是什么？
 
+---
+
+摩尔定律的黄金时代，靠着工艺进步，软件工程师可以近乎无感地快速享受到硬件性能的红利。随着单核性能提升放缓，软件工程师需要关注更多多核的编程细节，来释放硬件的性能红利。随着单芯片能放的核数也日趋瓶颈，DSA架构、封装技术的演化、甚至System-on-Wafer的技术都涌现出来，期望能够进一步压榨晶体管的性能，也相应地对软件栈提出了更高的要求。
+
 # CPU
 
 ## 行业
@@ -104,6 +108,10 @@ https://xueqiu.com/4081695675/165884010
 https://mp.weixin.qq.com/s/p2f59OngEOKFuELHEIl-hw
 
 科普：芯片行业所说的IP是个什么东西？
+
+---
+
+![](/images/img4/xeon-scalable-processor-numbers.png)
 
 ## 3D芯片
 
@@ -322,21 +330,3 @@ https://zhuanlan.zhihu.com/p/68393867
 https://zhuanlan.zhihu.com/p/69012724
 
 详说片上网络之四：片上网络研究的难与易
-
-https://zhuanlan.zhihu.com/p/71775965
-
-详说片上网络之五：网络分层模型在片上网络上的实现（上）
-
-https://zhuanlan.zhihu.com/p/78672250
-
-详说片上网络之六：网络分层模型在片上网络上的实现（下）
-
-https://mp.weixin.qq.com/s/AW08yhPzBZqfys8CbOjrYg
-
-详说片上网路（NoC）技术
-
-## 南北桥
-
-北桥芯片则是整个主板的数据交换中枢，整合有内存控制器以及AGP/PCI-E控制器等重要的控制功能，CPU、GPU与内存之间的数据交换都要通过北桥芯片进行；
-
-南桥芯片则用于扩展外围I/O接口，例如SATA和USB接口等。

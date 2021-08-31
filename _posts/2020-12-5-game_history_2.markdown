@@ -9,6 +9,16 @@ category: my story
 
 # 我的PC Game
 
+# 2016.1（续）
+
+Paradox的策略是用不同的系列来吸引不同的玩家。比如钢铁雄心系列偏重军事，于是经济和外交的规则就比较简单，而维多利亚系列正好相反。
+
+P社游戏以硬核的战时时局图和写实的战争指挥场面为人熟知，玩家调侃其为大型**地图填色**益智游戏。
+
+https://www.zhihu.com/question/318115811
+
+什么是P社游戏？
+
 ## 2017.1
 
 http://mp.weixin.qq.com/s/6DttXqlXVtLYWpRzN4WS9A
@@ -158,6 +168,12 @@ https://www.zhihu.com/question/453969562
 https://www.zhihu.com/answer/1937966942
 
 《暗黑破坏神2》不抄作业能通关吗？
+
+---
+
+https://www.zhihu.com/question/61896458
+
+如何评价游戏《终极将军：内战》?
 
 ## NES
 

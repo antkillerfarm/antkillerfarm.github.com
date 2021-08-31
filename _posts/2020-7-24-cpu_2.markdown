@@ -9,6 +9,26 @@ category: resource
 
 # CPU
 
+## 片上网络（续）
+
+https://zhuanlan.zhihu.com/p/71775965
+
+详说片上网络之五：网络分层模型在片上网络上的实现（上）
+
+https://zhuanlan.zhihu.com/p/78672250
+
+详说片上网络之六：网络分层模型在片上网络上的实现（下）
+
+https://mp.weixin.qq.com/s/AW08yhPzBZqfys8CbOjrYg
+
+详说片上网路（NoC）技术
+
+## 南北桥
+
+北桥芯片则是整个主板的数据交换中枢，整合有内存控制器以及AGP/PCI-E控制器等重要的控制功能，CPU、GPU与内存之间的数据交换都要通过北桥芯片进行；
+
+南桥芯片则用于扩展外围I/O接口，例如SATA和USB接口等。
+
 ## 历史
 
 https://mp.weixin.qq.com/s/-2kGkJzjay2WJzIpMs2Adw
@@ -233,6 +253,10 @@ https://zhuanlan.zhihu.com/p/34003929
 
 ---
 
+超线程其实就是两个线程共享一个计算单元和内存控制单元，但有自身独立的一些硬件，目的是两个都不是全负荷工作的线程可以轮流使用计算单元来实现比较好的throughput。但只要有一个很忙，那就可能饿死另一个。
+
+---
+
 https://mp.weixin.qq.com/s/Cij_95iLbAm0AEtrSb72_A
 
 关于CPU科普，这篇说得最详细
@@ -366,31 +390,3 @@ https://mp.weixin.qq.com/s/26se041cc9aBRw16kvPPjA
 https://mp.weixin.qq.com/s/QwE_VTEUS9kGDDrHlzPYmg
 
 硅片为什么不是方的？
-
-https://zhuanlan.zhihu.com/p/32378843
-
-ARM攒机指南-汽车篇
-
-https://mp.weixin.qq.com/s/Hq9hzkyfGcCQa_FfzSDoRg
-
-5nm工艺节点以后，半导体器件的发展方向
-
-https://zhuanlan.zhihu.com/p/66263349
-
-为什么内存和闪存制程比CPU低？它们现在都在什么节点？
-
-https://mp.weixin.qq.com/s/lz6EoLiLtPtWFMG1FJCuQw
-
-化合物半导体的机遇
-
-https://mp.weixin.qq.com/s/tTtySk3u6m2BGUkDto5Ojw
-
-可重构芯片的方法学原理
-
-https://mp.weixin.qq.com/s/RkRZX_scr__Q_mLPhaaWAA
-
-AMD Zen 2处理器架构为何要如此设计？
-
-https://mp.weixin.qq.com/s/dRv4xWV8laCYBaZ0DwOC3A
-
-如何从零开始设计一颗芯片？

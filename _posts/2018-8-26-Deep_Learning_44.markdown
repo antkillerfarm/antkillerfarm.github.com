@@ -320,3 +320,7 @@ https://mp.weixin.qq.com/s/8hs3xbKPaCz5Xs_Nkj4ZKA
 https://mp.weixin.qq.com/s/uU1-DwHnU4pPMLtQZNQyVQ
 
 北大图灵班本科生带来动画CG福音，“最懂骨骼的卷积网络”，无需配对样本实现动作迁移
+
+https://mp.weixin.qq.com/s/gJIhYujUNummrmJN98THFQ
+
+于正AI换脸火上热搜，差点骗了全网！古风民族风也能任意切换
