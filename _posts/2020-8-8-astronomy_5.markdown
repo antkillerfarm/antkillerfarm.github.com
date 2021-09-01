@@ -9,6 +9,38 @@ category: Nature
 
 # 天文杂谈
 
+https://mp.weixin.qq.com/s/1L10R2c7wCTYFYcxPKiRtA
+
+彗星怎么拖了个长长的尾巴？
+
+https://mp.weixin.qq.com/s/yCmwX5srpmhYrbAkFbC-gQ
+
+20年，241人，5400000000000米（国际空间站）
+
+https://mp.weixin.qq.com/s/Qld7bVs9ASJ23vAhE0h7_w
+
+日月星辰如何指引着中国人前行？（中国古代天文学）
+
+https://cooltowel.github.io/2018/04/16/%E5%9B%BD%E9%99%85%E5%A4%A9%E7%90%83%E5%8F%82%E8%80%83%E7%B3%BB%E7%BB%9F%E2%80%94%E2%80%94ICRS%20%E7%AE%80%E4%BB%8B/
+
+国际天球参考系统——ICRS简介
+
+https://mp.weixin.qq.com/s/hBAWo8Zsgjm0svYv_UG1jw
+
+一场历经数百万年的瘦身记
+
+https://mp.weixin.qq.com/s/REzPDwfZbqz-RneOZZmvUQ
+
+青海火球事件——“肇事者”身份调查
+
+https://mp.weixin.qq.com/s/NKzv2VpVDaJ_gSDl_L7FHA
+
+太阳，我们来了！
+
+https://mp.weixin.qq.com/s/lHc8w6wn3Tm6ZD5PPw0TFQ
+
+宇宙7问
+
 https://mp.weixin.qq.com/s/epb4AIyg8_OqjAgGEbB9Ag
 
 31年前的北美大停电 背后的神秘力量是谁？（太阳风暴）

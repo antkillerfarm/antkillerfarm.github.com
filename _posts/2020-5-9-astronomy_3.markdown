@@ -57,6 +57,22 @@ https://news.qq.com/a/20180927/005739.htm
 
 ---
 
+1960年2月19日，南汇老港的一片滩涂上，响起了中国航天迈向太空的第一声轰鸣，第一枚液体探空火箭“T-7M”腾空而起，飞上了八千米高空。
+
+美国在2011年正式签订了《沃尔夫条款》，以法令的形式直接禁止了中美两国间的任何航空技术合作。
+
+NASA在2012年更是出台了指引，进一步指出，法令不仅适用于这些企业的一级机构，也包括其旗下的附属公司。
+
+https://www.zhihu.com/answer/136456079
+
+美国拟出台沃尔夫条款永久禁止中国进入国际空间站
+
+https://zhuanlan.zhihu.com/p/385461869
+
+这一次，中国人，笑了
+
+---
+
 ![](/images/img4/chang_e.png)
 
 ![](/images/img4/chang_e_2.png)
@@ -282,31 +298,3 @@ https://mp.weixin.qq.com/s/uZofW1nPuu5MNhe9i-CRhA
 https://mp.weixin.qq.com/s/2nJP3oxgb_AK1P09MCWkTQ
 
 移居火星前，人类需要关注哪些健康风险？
-
-https://mp.weixin.qq.com/s/LNq09_wUKF6dfMrrcSgV-Q
-
-中国火星车即将着陆火星乌托邦平原！
-
-https://mp.weixin.qq.com/s/1W4JcHcO9ZuJnolv05Crvg
-
-中国火神踏上火星！祝融号火星车着陆火星十大问题详解
-
-https://mp.weixin.qq.com/s/DdQoBUgl6kdtrM70FgVGrw
-
-天问一号成功着陆！它是如何到达火星的?
-
-https://mp.weixin.qq.com/s/hSY4rBhCkJDoLlo8Nzmm9Q
-
-天问一号成功着陆！
-
-https://mp.weixin.qq.com/s/mpeHNXktuH9aMxz1Eu6gCw
-
-生活不只眼前的“北上广”，还有诗和火星
-
-https://mp.weixin.qq.com/s/uvSeg8KnPTj_4au_B3WXBw
-
-一文拆解中国火星车着陆全程
-
-https://mp.weixin.qq.com/s/_s7XcEz6Ft6eGXxZOUeSVg
-
-火星上存在真菌吗？
