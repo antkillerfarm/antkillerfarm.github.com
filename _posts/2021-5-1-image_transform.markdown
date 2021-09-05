@@ -141,6 +141,10 @@ https://mp.weixin.qq.com/s/p9L1_A9yosqQ0kcPpOm9YQ
 
 B站up主用AI让李大钊陈延年等露出了笑容，人民日报：如今的中国，已如你们所愿！
 
+https://mp.weixin.qq.com/s/nL1monnsOPvYQAhJ874jhg
+
+AI修复抗美援朝影像：彩色高清还原志愿军71年前跨过鸭绿江
+
 ---
 
 最左边的那位是北洋政府第一任总理唐绍仪之第八女名甘唐宝玫（1902-1941）（后离婚再嫁改姓岑）～中国历史上的首个大型时装show的组织者。
@@ -370,19 +374,3 @@ https://mp.weixin.qq.com/s/j7iMyv_0nRRVuqta1y_GRw
 http://coderskychen.cn/2015/12/11/%E6%9A%97%E9%80%9A%E9%81%93%E5%8E%BB%E9%9B%BE%E7%AE%97%E6%B3%95%E7%9A%84C-%E5%AE%9E%E7%8E%B0%E4%B8%8E%E4%BC%98%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89/
 
 暗通道去雾算法的C++实现与优化（一）
-
-http://coderskychen.cn/2015/12/11/%E6%9A%97%E9%80%9A%E9%81%93%E5%8E%BB%E9%9B%BE%E7%AE%97%E6%B3%95%E7%9A%84C-%E5%AE%9E%E7%8E%B0%E4%B8%8E%E4%BC%98%E5%8C%96%EF%BC%88%E4%BA%8C%EF%BC%89/
-
-暗通道去雾算法的C++实现与优化（二）
-
-这两篇blog介绍了何恺明的成名之作。
-
----
-
-https://mp.weixin.qq.com/s/a1Qg1Hl5NMvEJPXhJR-2BA
-
-效果惊艳！北大团队提出Attentive GAN去除图像中雨滴
-
-https://xyang35.github.io/2017/08/20/paper-2/
-
-图像去雾算法专题
