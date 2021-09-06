@@ -325,6 +325,10 @@ https://mp.weixin.qq.com/s/8uxeOqcUvnZcKHv7qXwWJQ
 
 如何在视频里任意抠图？阿里工程师做到了！
 
+https://mp.weixin.qq.com/s/HHS888HA0slvjkkkI8HU8w
+
+字节实习生开发的AI，实现4K60帧视频实时抠图
+
 https://zhuanlan.zhihu.com/p/83604007
 
 Deep Burst Denoising/RFCN

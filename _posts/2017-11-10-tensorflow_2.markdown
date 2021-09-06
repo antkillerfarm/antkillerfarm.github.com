@@ -152,6 +152,10 @@ model test:
 
 tensorflow/compiler/plugin/poplar/docs/example_tf2_model_fit.py
 
+## 混合backend
+
+XLA支持混合多backend的运行，可用`tf.debugging.set_log_device_placement(True)`查看相关的设备指派信息。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/RO3FrPxhK2GEoDCGE9DXrw
