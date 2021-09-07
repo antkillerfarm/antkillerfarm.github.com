@@ -129,6 +129,10 @@ https://mp.weixin.qq.com/s/KgJFyEmZApF7l5UUJeWf8Q
 
 从操作系统层面分析Java IO演进之路
 
+https://mp.weixin.qq.com/s/aEkJ1HkhfzIhGv0EwFoy1A
+
+浅谈RSocket与响应式编程
+
 # Javascript参考资源+
 
 https://mp.weixin.qq.com/s/4YXoSrYueQFWOC8sZH8LvQ
@@ -158,6 +162,10 @@ https://mp.weixin.qq.com/s/7CD_F0hEZtYRK0fvBWb_gQ
 https://hllvm-group.iteye.com/group/topic/37596
 
 各JavaScript引擎的简介，及相关资料/博客收集帖
+
+https://mp.weixin.qq.com/s/rDAAfeQmUhxaHkrt_zVCCg
+
+如何避免JS内存泄漏？
 
 # python++
 

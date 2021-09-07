@@ -220,6 +220,10 @@ https://mp.weixin.qq.com/s/xHTwl4cruR_AmpbW1p6rWg
 
 东京奥运遭遇高温，热浪频发带给人类的影响有多大？
 
+https://mp.weixin.qq.com/s/L22Y2sZdEh07At-CWGYZeA
+
+象群北迁，降雨线北移，大陆国家的盛世来了
+
 # 地理+
 
 https://mp.weixin.qq.com/s/mc9aH5hDgRFS2h2blPhb8w
@@ -262,6 +266,6 @@ https://mp.weixin.qq.com/s/QOw3ZZ-Ql2ob8IMt97U-cA
 
 明朝用“束水攻沙”对付黄河，这科学吗？
 
-https://mp.weixin.qq.com/s/L22Y2sZdEh07At-CWGYZeA
+https://mp.weixin.qq.com/s/DVNH663X4yUDWu5m9Uy37w
 
-象群北迁，降雨线北移，大陆国家的盛世来了
+为了“碳中和”，青藏高原上的石头也在努力
