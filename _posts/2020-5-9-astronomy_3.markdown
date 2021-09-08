@@ -9,6 +9,18 @@ category: Nature
 
 # SpaceX（续）
 
+小布什签署的美国航天发展规划，直接规定了要求NASA退出近地空间，要求他们重新带领美国航天天顶科技。与此同时，美国的商业航天开始全面崛起，后来大名鼎鼎的space-x，bigelow，blue origin大都从此时起步。
+
+奥巴马任期内美国商业航天的崛起就不必说了，经过全面扶植，space-x迅速成长为可以对抗任何一个国家发射市场的公司，在2018年甚至有能力挑战美国之外所有国家的总和。而NASA的焦点则全面转向深空，各种大型空间望远镜、昂贵的火星探测、木星土星探测，都达到人类历史上的巅峰。
+
+---
+
+https://mp.weixin.qq.com/s/sPTRKfuhEc0xx7GacomxkA
+
+霍尔效应推进器
+
+---
+
 目前最出风头的三家私人航天公司，按技术水平来比较，大致是这样的：
 
 维珍：本科在读。
@@ -270,31 +282,3 @@ https://mp.weixin.qq.com/s/eNG-zbHfrji3frbRbQI-Xw
 https://mp.weixin.qq.com/s/0gArlvImgT6V7xEg9SCLTQ
 
 毅力号睁开几双“眼睛”，360度全景展示它的火星新家
-
-https://mp.weixin.qq.com/s/jkK0Xf3Hx0vJ0VpkEljMzw
-
-高清火星影像来了，天问一号拍的！
-
-https://mp.weixin.qq.com/s/kfCLMYvvw5NmaOdkN65Yxw
-
-火星的两极也是冰雪世界吗？
-
-https://mp.weixin.qq.com/s/WGHGXWghWhwcA0tux9bz0g
-
-想去火星旅游，记得看看天气预报
-
-https://mp.weixin.qq.com/s/xqBhOAMIs8dONwhgIHZOgQ
-
-火星探测成功率不足50%，人类何时能圆梦？
-
-https://mp.weixin.qq.com/s/25BnV608F7DhIdRWGURBvQ
-
-机智号火星首飞成功！30秒惊险悬停，创造“莱特星球时刻”
-
-https://mp.weixin.qq.com/s/uZofW1nPuu5MNhe9i-CRhA
-
-火星有了第一个机场！人类首架火星无人机试飞成功，场地命名“莱特兄弟机场”
-
-https://mp.weixin.qq.com/s/2nJP3oxgb_AK1P09MCWkTQ
-
-移居火星前，人类需要关注哪些健康风险？

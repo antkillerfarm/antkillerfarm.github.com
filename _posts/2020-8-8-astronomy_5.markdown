@@ -9,6 +9,44 @@ category: Nature
 
 # 天文杂谈
 
+https://mp.weixin.qq.com/s/6acgwIaDYC3VjMmdVSYYKQ
+
+未来的望远镜，能带我们看到宇宙大爆炸的边缘吗？（卡塞格林望远镜）
+
+![](/images/img3/eclipse.png)
+
+https://mp.weixin.qq.com/s/UDHAT3vLMS_yo4w0wbcpJQ
+
+十问北斗
+
+https://zhuanlan.zhihu.com/p/29213504
+
+从沙漏和星盘到六分仪和航海钟——恼人的航海定位
+
+https://mp.weixin.qq.com/s/SQPVTNYBU8JIRPYFqsXgtA
+
+神秘力量？上帝使者？彗星的“人设”早就崩塌了
+
+https://mp.weixin.qq.com/s/pAUiirbHyfrEgWUE21x93Q
+
+另一个费曼（Richard Feynman的妹妹Joan Feynman）
+
+https://mp.weixin.qq.com/s/iznVJzjkYA2I5Y-P0NKrdA
+
+美丽天文图片下，有哪些不为人知的“套路”
+
+https://mp.weixin.qq.com/s/hZBYHvYktdJeOrAHTCKTTA
+
+如何肉眼识别夜空中的人造卫星？
+
+https://mp.weixin.qq.com/s/lNh3jxjvRbpZ3zZYSZuOVg
+
+曾为地球“挺身而出”的磁场
+
+https://mp.weixin.qq.com/s/xo9aRt5rAX7bWeK4jwmkXA
+
+月球能承载多少人类生存？
+
 https://mp.weixin.qq.com/s/1L10R2c7wCTYFYcxPKiRtA
 
 彗星怎么拖了个长长的尾巴？

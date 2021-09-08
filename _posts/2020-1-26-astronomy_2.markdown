@@ -275,6 +275,26 @@ https://mp.weixin.qq.com/s/ed93ZOHB62XKIREnOwIJIQ
 
 ---
 
+液氢液氧
+
+液氧煤油
+
+四氧化二氮+偏二甲肼（传说中的毒发）
+
+https://www.zhihu.com/question/315485320
+
+目前常见的“火箭燃料”有哪几种，各类燃料的优劣有哪些？
+
+---
+
+齐奥尔科夫斯基火箭方程：
+
+$$\Delta V=v_e\ln \frac{m_0}{m_1}$$
+
+其中，$$\Delta V$$是速度增量，$$v_e$$是喷气速度，$$m_0,m_1$$分别是初始质量和终末质量。
+
+---
+
 ![](/images/img4/cost.jpg)
 
 https://www.zhihu.com/question/471620540
@@ -294,15 +314,3 @@ https://www.zhihu.com/question/471620540
 https://mp.weixin.qq.com/s/0lDJiu1nyS0j1aj7C4tT-g
 
 火箭狂人不幸坠亡，生前坚信“地平说”
-
----
-
-小布什签署的美国航天发展规划，直接规定了要求NASA退出近地空间，要求他们重新带领美国航天天顶科技。与此同时，美国的商业航天开始全面崛起，后来大名鼎鼎的space-x，bigelow，blue origin大都从此时起步。
-
-奥巴马任期内美国商业航天的崛起就不必说了，经过全面扶植，space-x迅速成长为可以对抗任何一个国家发射市场的公司，在2018年甚至有能力挑战美国之外所有国家的总和。而NASA的焦点则全面转向深空，各种大型空间望远镜、昂贵的火星探测、木星土星探测，都达到人类历史上的巅峰。
-
----
-
-https://mp.weixin.qq.com/s/sPTRKfuhEc0xx7GacomxkA
-
-霍尔效应推进器
