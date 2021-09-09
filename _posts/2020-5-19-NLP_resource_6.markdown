@@ -412,3 +412,7 @@ https://mp.weixin.qq.com/s/SVKlD0T8IkpVAKFJu-VQAg
 https://mp.weixin.qq.com/s/JxGQmsTlXtnJxGIrafZwSA
 
 长序列自然语言处理, 250页ppt
+
+https://mp.weixin.qq.com/s/WOncOLFZtgdqWW131kYIsQ
+
+爱奇艺多语言台词机器翻译技术实践

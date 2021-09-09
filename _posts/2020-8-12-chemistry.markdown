@@ -111,6 +111,10 @@ https://mp.weixin.qq.com/s/UW6k_M8bMEy_C_m5tYALoA
 
 北大教授细说贝鲁特大爆炸 “元凶”：100年了，人类仍未吸取教训
 
+https://mp.weixin.qq.com/s/ZfRpG4ZsAk11yoxuVIIzSw
+
+弗里茨·哈伯：养活了二十亿人的“化学战之父”
+
 ---
 
 赫尔利茨伯爵夫人案件：

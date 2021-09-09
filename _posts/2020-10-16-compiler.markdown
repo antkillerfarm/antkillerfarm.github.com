@@ -107,6 +107,8 @@ JIT编译最大的优势就是可以通过FDO（feedback-directed optimization�
 
 因此，JIT并不一定不如AOT。
 
+AOT主要为了性能，大多数脚本都是动态类型，即使加了AOT，由于没编译期针对类型的优化，性能也比不上带静态类型的语言的AOT。这种场景提升性能最好的办法还是JIT。
+
 https://zhuanlan.zhihu.com/p/19977592
 
 JIT编译，动态编译与自适应动态编译
@@ -114,6 +116,10 @@ JIT编译，动态编译与自适应动态编译
 https://zhuanlan.zhihu.com/p/48236683
 
 使用Profile Guided Optimization提升Application的性能
+
+https://www.zhihu.com/question/484961291
+
+怎么看现在java等语言纷纷编译成机器码（aot）的趋势？脚本为什么没有出现该趋势？
 
 ---
 

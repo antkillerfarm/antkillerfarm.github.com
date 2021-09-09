@@ -116,6 +116,22 @@ https://www.zhihu.com/question/53423578
 
 ---
 
+这小说开创了一个叫土木朋克的流派。
+
+https://www.zhihu.com/question/478170187
+
+用极端落后技术（至少落后两代）造先进武器会造出什么奇葩来？
+
+https://www.zhihu.com/question/476039941
+
+用先进技术制造老式武器会是什么效果？
+
+https://www.zhihu.com/answer/973062176
+
+如果19世纪初人类就得知原子弹的原理，并知道一定是可以制造出来的，那最早什么时候可以造出来？
+
+---
+
 https://mp.weixin.qq.com/s/KuIf0oIkLjMTKp2FgAnpyA
 
 一口气做出12只同款雪糕，强迫症都被食物加工流水线治好了

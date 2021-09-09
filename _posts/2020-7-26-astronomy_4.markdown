@@ -239,6 +239,10 @@ https://zhuanlan.zhihu.com/p/36125534
 
 哈勃28周岁，但大家知道锁眼么？
 
+https://mp.weixin.qq.com/s/DFUMQ08Efr5iJJJlRthsOA
+
+这将是中国有史以来最昂贵、也最先进的望远镜（巡天空间望远镜）
+
 ---
 
 https://mp.weixin.qq.com/s/aY4gFbK_aKWcgwvr0Rk5gQ

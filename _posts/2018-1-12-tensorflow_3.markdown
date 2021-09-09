@@ -193,6 +193,10 @@ https://mp.weixin.qq.com/s/DkCGusznH8F8p39oRLuNBQ
 
 TensorFlow Serving模型更新毛刺的完全优化实践
 
+https://mp.weixin.qq.com/s/GoaePWnq3OtU4hNatbIJ5A
+
+丰富TF Serving生态，爱奇艺开源灵活高性能的推理系统XGBoost Serving
+
 # op的C++实现
 
 有的时候为了将Tensorflow的op移植到其他平台，需要找到相应op的cpu实现。比如space_to_batch这个op，它的实现在：

@@ -55,6 +55,10 @@ https://mp.weixin.qq.com/s/Ii0b6ORmsxjmXsVRnhG5eA
 
 如何解决缓存系统的数据不一致问题
 
+https://mp.weixin.qq.com/s/rxvNSZtRyA7f27TKKL3J_g
+
+爱奇艺本地实时Cache方案
+
 ## 数据管理工具
 
 数据管理工具主要有：Navicat和DataGrip。

@@ -380,3 +380,7 @@ https://mp.weixin.qq.com/s/GMr6SlkYUY5dydECpbjqXw
 https://mp.weixin.qq.com/s/LgxxIEMaiaMtc0GIDXGG9g
 
 美团外卖美食知识图谱的迭代及应用
+
+https://mp.weixin.qq.com/s/d3VzMGjMnW4M8Zrd2DP7-Q
+
+完备的娱乐行业知识图谱库如何建成？爱奇艺知识图谱落地实践
