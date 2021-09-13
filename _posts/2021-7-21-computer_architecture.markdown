@@ -145,6 +145,14 @@ https://zhuanlan.zhihu.com/p/145142691
 
 什么是DPU？
 
+https://mp.weixin.qq.com/s/bL1PoUjZ_sH2VKcBxI6N5A
+
+Wave公司发布数据流处理架构DPU
+
+https://zhuanlan.zhihu.com/p/409507738
+
+写一下DPU
+
 ## GPU体系结构
 
 ![](/images/img4/SGI.png)

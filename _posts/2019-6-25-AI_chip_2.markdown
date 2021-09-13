@@ -79,6 +79,10 @@ https://zhuanlan.zhihu.com/p/31782874
 
 Graphcore AI芯片：更多分析
 
+https://mp.weixin.qq.com/s/7vxJTh4IHeqUsc7IsLFLSA
+
+解密哈萨比斯投资的IPU，他们要分英伟达一杯羹
+
 ## HBM
 
 HBM==High Bandwidth Memory是一款新型的CPU/GPU内存芯片（即 “RAM”），其实就是将很多个DDR芯片堆叠在一起后和GPU封装在一起，实现大容量，高位宽的DDR组合阵列。
@@ -235,10 +239,6 @@ https://mp.weixin.qq.com/s/zTO4UZ3zDLZL0GOjv0YqrQ
 
 GPU加速深度学习
 
-https://mp.weixin.qq.com/s/7vxJTh4IHeqUsc7IsLFLSA
-
-解密哈萨比斯投资的IPU，他们要分英伟达一杯羹
-
 https://zhuanlan.zhihu.com/p/26594188
 
 浅析Yann LeCun提到的两款Dataflow Chip
@@ -266,10 +266,6 @@ https://mp.weixin.qq.com/s/Cy_vb0PpcvGTDmlMt1VkSw
 https://mp.weixin.qq.com/s/RKRDBiBzG5u2P2eaqNAFbg
 
 机器学习的处理器列表
-
-https://mp.weixin.qq.com/s/bL1PoUjZ_sH2VKcBxI6N5A
-
-Wave公司发布数据流处理架构DPU
 
 https://mp.weixin.qq.com/s/uzeeZiaAFdA0C_zAcX756w
 
