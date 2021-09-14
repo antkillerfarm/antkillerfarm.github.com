@@ -199,3 +199,7 @@ https://zhuanlan.zhihu.com/p/20794653
 https://chejiahao.autohome.com.cn/info/2037081/
 
 战火中的军车——战功赫赫的十轮大卡吉姆西CCKW352/353
+
+https://www.sohu.com/a/154888004_670548
+
+苏联的疯狂：装5门305巨炮的“战列驱逐舰”
