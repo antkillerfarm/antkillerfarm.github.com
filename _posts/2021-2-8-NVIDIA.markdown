@@ -227,6 +227,10 @@ https://zhuanlan.zhihu.com/p/383115932
 
 大佬是怎么优雅实现矩阵乘法的？
 
+https://zhuanlan.zhihu.com/p/410278370
+
+CUDA矩阵乘法终极优化指南
+
 # GPU通信技术
 
 ## RDMA

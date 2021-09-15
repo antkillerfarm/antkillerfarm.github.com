@@ -193,60 +193,100 @@ https://mp.weixin.qq.com/s/Mc9vHkt--u3jyh5VZmA56Q
 
 如何消除多重共线性
 
-# 抗日战争+
+# AI工具+
 
-日军战报一直有个奇怪现象：
+https://mp.weixin.qq.com/s/3eoN0YHI84oomdTZO6TrvQ
 
-平型关死伤几十人，一个中队长战死，一个失踪。
+快速搞定机器人开发！Facebook联合CMU开源PyRobot框架
 
-黄土岭阵亡三个还是几个，阿部中将赫然在列。
+https://mp.weixin.qq.com/s/Uih8JaRCaeD38o9AoovRmA
 
-关家垴据说也不到百人，大队长不幸殉国。。。
+字节跳动开源高性能分布式训练框架BytePS：兼容TensorFlow、PyTorch等
 
-大概和日式RPG里差不多，越牛逼的boss体型越大，所以比较招子弹吧。。。
+https://mp.weixin.qq.com/s/o9cYmqwuvlbOuUXSNIuicg
 
----
+十个最常用深度学习图像/视频数据标注工具
 
-《有一类战犯叫参谋》里曾说过一件事，身为联队长(团长)的东条英机，在部下来借钱的时候，只好让太太去当衣服来为部下救急，而这在国军是几乎不可想象的。作者说国军打不过日军的原因之一，就是日军的高级军官没有国军高级军官有钱。
+https://mp.weixin.qq.com/s/iKXZmhffiYaFHsIU21zVQA
 
----
+NeuralNLP-NeuralClassifier：腾讯开源深度学习文本分类工具
 
-山东根据地附近有个鬼子据点。那里的鬼子每年都有出来征粮的任务。到了44年底，任务又下来了。但是这时候鬼子已经被打得不敢出门了，吃饭都要靠向八路卖弹药来换了。怎么敢出去征粮？然后鬼子灵机一动，就用机枪扺押，从八路那里借粮食。反正他们只管征，不管送。他们把送粮队的消息都卖给八路。等押送粮食的鬼子来了，把字一签，然后送粮的鬼子就在回去的路上被八路抢了——不过这不关据点的事，反正他们的任务完成了。
+https://mp.weixin.qq.com/s/suLJs_GjRsdYA5fwtsje7g
 
----
+腾讯AI开源框架Angel 3.0重磅发布：超50万行代码，支持3种算法，打造全栈机器学习平台
 
-https://mp.weixin.qq.com/s/gF3Hv07zzLUQqGQzdYpzQw
+https://mp.weixin.qq.com/s/adroDI2bm13o6Q40ECc7Zw
 
-丢人丢大了！日本人给中国抗日神剧编了本书，正满世界传播！
+MediaPipe: Google Research 开源的跨平台多媒体机器学习模型应用框架
 
-https://zhuanlan.zhihu.com/p/350333113
+https://mp.weixin.qq.com/s/U2e4H1QjjBqH9YbElFLhxw
 
-五一大扫荡后的冀中，区小队、县大队等都是怎样的武装
+Microsoft Icecaps：一个用于会话建模的开源工具包
 
-https://www.sohu.com/a/58658944_180393
+https://zhuanlan.zhihu.com/p/75584326
 
-《亮剑》中消灭日本军官观战团章节的历史原貌
+combo:“Python机器学习模型合并工具库”简介
 
-https://zhuanlan.zhihu.com/p/277437564
+https://github.com/arraiyopensource/kornia
 
-日本是如何给东北人洗脑的？
+可微分的“OpenCV”：这是基于PyTorch的可微计算机视觉库
 
-https://www.zhihu.com/answer/1678871797
+https://mp.weixin.qq.com/s/5Pm03dLW9vbDukgWi1-Tug
 
-林迈可的故事
+OpenARK：惊艳的增强现实、虚实交互开源库
 
-https://www.zhihu.com/answer/133590732
+https://mp.weixin.qq.com/s/h0PwA9vtABWHgxd42yX3Fg
 
-日本对台湾的殖民统治给台湾造成了什么样的影响？
+当时尚遇上AI！港中文MMLab开源MMFashion工具箱
 
-http://www.360doc.com/content/18/1220/07/17283749_803043906.shtml
+https://github.com/Media-Smart/vedaseg
 
-华北平原的“皇军”哗变——馆陶事件始末
+vedaseg:A semantic segmentation toolbox in pytorch
 
-http://ah.ifeng.com/news/wangluo/detail_2015_08/06/4200178_0.shtml
+https://mp.weixin.qq.com/s/gGCyMq4PM_Whv-Ssiwt-HA
 
-通州事件：一支“伪军”对日本人的“杀戮”
+秒杀Deepfake！微软北大提出AI换脸工具FaceShifter和假脸检测工具Face X-Ray
 
-https://zhuanlan.zhihu.com/p/397085288
+https://mp.weixin.qq.com/s/2EHv669PUqqgvAGz3XoZ6Q
 
-1983年，山东一农民给领导斟茶时暴露身份，才知：他是16期黄埔生（王延周）
+FaceBook开源PyTorch3D：基于PyTorch的新3D计算机视觉库
+
+https://mp.weixin.qq.com/s/Z27oInh5rdxnxt1-KFAiRA
+
+1GB文本标记只需20秒！抱抱脸团队发布最新NLP工具
+
+https://mp.weixin.qq.com/s/8mpc7AblZyRw7LCh35vL2g
+
+哈工大讯飞联合实验室发布知识蒸馏工具TextBrewer
+
+https://mp.weixin.qq.com/s/Zu_IPBQVJtcwNln-xvEZxQ
+
+DarkLabel：支持检测、跟踪、ReID数据集的标注软件
+
+https://mp.weixin.qq.com/s/5klwQCPtiZOwFJYHDOpWFg
+
+语义分割标注工具Semantic Segmentation Editor快速安装指南
+
+https://mp.weixin.qq.com/s/1EeYmZGoa-xpWmIvUoqCyw
+
+瑞士小哥开源文本英雄Texthero：一行代码完成数据预处理
+
+https://mp.weixin.qq.com/s/p9HpH2e5ShQCFcCxVNvMbg
+
+清华开源迁移学习算法库
+
+https://mp.weixin.qq.com/s/vzUt-5C_dRAChEfQYLp4lA
+
+PyTorch实现，GitHub 4000星：这是微软开源的计算机视觉库
+
+https://mp.weixin.qq.com/s/5VeersQKxcT9AtFXS_CXnA
+
+推荐一款超高速、多特性的高性能序列推理引擎——LightSeq
+
+https://mp.weixin.qq.com/s/kWJZA0acOPi46c2_Gd9aeA
+
+安利一个开源的好工具Label Studio,闭环数据标注和模型训练
+
+https://mp.weixin.qq.com/s/b-w_jUqxGR7hY19auiar-A
+
+FAIR发布自监督训练库VISSL
