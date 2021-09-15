@@ -85,6 +85,20 @@ http://chengjin.li/2017/08/09/tmux-using-tutorial/
 
 终端复用工具---tmux的安装及使用
 
+# 设置终端颜色
+
+`printf "\033[1;42mH\033[4;32;49me\033[5ml\033[7ml\033[0;32mo\033[0m\n"`
+
+参考：
+
+https://zhuanlan.zhihu.com/p/81954911
+
+如何改变你的终端颜色
+
+http://easyos.net/articles/bsd/freebsd/output_control_in_freebsd_console
+
+https://en-m.jinzhao.wiki/wiki/ANSI_escape_code
+
 # 设置随机的MAC地址
 
 1.设置MAC地址
@@ -437,37 +451,3 @@ Linux思维导图整理
 https://mp.weixin.qq.com/s/sLyD6z2xBXRxfBZnImTgtQ
 
 40+张最全Linux/C/C++思维导图，收藏！
-
-# Linux参考资源
-
-https://www.kernel.org/doc/html/latest/
-
-Linux官方文档
-
----
-
-https://mp.weixin.qq.com/s/n6D5_6K9TrnuXg3h6AiFNA
-
-华为“鸿蒙”所涉及的微内核到底是什么？一文带你认识微内核
-
-![](/images/img3/Monolithic_vs_Micro.jpg)
-
-![](/images/img3/UNIX.jpg)
-
----
-
-https://mp.weixin.qq.com/s/I7C7cXFgxO7RO0Wpjjj3xQ
-
-一篇文章带你“重新认识”线程上下文切换怎么玩儿
-
-https://www.cnblogs.com/liqiuhao/p/9450093.html
-
-关于TOCTTOU攻击的简介
-
-https://mp.weixin.qq.com/s/2QAm6F109LV2koC64xIpqA
-
-简直不要太硬了！一文带你彻底理解文件系统
-
-https://mp.weixin.qq.com/s/0jR4Y3sT8RRW7FYEOmBsXg
-
-一口气搞懂文件系统，就靠这25张图了

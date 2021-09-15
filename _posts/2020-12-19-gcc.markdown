@@ -131,6 +131,10 @@ https://zhuanlan.zhihu.com/p/254879649
 
 GDB的那些奇淫技巧
 
+https://mp.weixin.qq.com/s/y3c07Hk7g3P-rd0oDzszlA
+
+GDB底层实现原理
+
 ## 白手起家
 
 - Stage0 部分
