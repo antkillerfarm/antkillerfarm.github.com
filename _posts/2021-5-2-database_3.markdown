@@ -9,32 +9,42 @@ category: technology
 
 # Mysql（续）
 
-## 中间数据的存储
+## 常用操作
 
-有的时候，SQL中间处理的结果需要存储起来，以备后用。这时有两种办法：
+登录方法：
 
-1.创建View。
+`mysql -h 192.168.4.251 -u root -p`
 
-```sql
-CREATE VIEW view_name AS
-SELECT column_name(s)
-FROM table_name
-WHERE condition;
-```
+语句以“;”结尾。
 
-View并不在数据库中存储数据，而是在查询时，执行其中的select语句（每次查询，都会执行），生成中间结果。因此，View从原理来说，更像是一种语法糖，而非存储机制。
+| 名称 | 操作 |
+|:--|:--|
+| 添加用户 | insert into mysql.user(Host,User,Password) <br/>values("localhost","test",password("1234")); |
+| 列出所有数据库 | show database; |
+| 切换数据库 | use 数据库名; |
+| 列出所有表 | show tables; |
+| 显示数据表结构 | describe 表名; |
+| 创建自增ID | create table github(id int auto_increment primary key not null,name varchar(256)); |
+| 查询头N条记录 | select * from shop_info limit N; |
+| 检索记录行 6-15 | select * from table limit 5,10; |
+| 删除记录 | delete from shop_info where shop_id="1"; |
+| 排序+别名+分组+count | select city_name,count(*) as city_count from shop_info group by city_name <br/>order by city_count desc limit 5; |
+| 两列排序+两列相乘 | select shop_id,count(*)*per_pay from shop_info order by per_pay desc,shop_id desc; |
+| 每日统计 | select count(shop_id),date(time_stamp) as dates from user_pay <br/>where shop_id='1234' group by dates order by dates asc; |
+| 年月日 | select year(ordertime),month(ordertime),day(ordertime) from book; |
+| 周数+星期几 | select week(ordertime),weekday(ordertime) from book; |
+| 统计表中的记录条数 | select count(*) from user_pay; |
+| 统计某一列中不同值的个数 | select count(distinct user_id) from user_pay; |
 
-2.使用select语句创建table。
+参考：
 
-`Create table new_table_name (Select * from old_table_name);`
+http://www.cnblogs.com/wuhou/archive/2008/09/28/1301071.html
 
-这种方法会将中间结果存储到数据库中，下次使用的时候，就无需重新生成了。但缺点是原table中的更新不会体现到新table中，只适合处理历史数据。
+Ubuntu安装配置Mysql
 
-## 模糊查询
+http://www.cnblogs.com/wanghetao/p/3806888.html
 
-http://www.cnblogs.com/GT_Andy/archive/2009/12/25/1921914.html
-
-SQL模糊查询
+MySQL添加用户、删除用户与授权
 
 ## 三种Join的区别
 
@@ -63,12 +73,6 @@ SQL查询语句总是先执行SELECT？你们都错了
 https://mp.weixin.qq.com/s/xf4VRBFLhhIAGGZPhbRetQ
 
 不会看Explain执行计划，简历敢写SQL优化？
-
-## MyISAM & Innodb
-
-Mysql底层数据引擎以插件形式设计，最常见的是Innodb引擎和Myisam引擎，用户可以根据个人需求选择不同的引擎作为Mysql数据表的底层引擎。
-
-MyISAM虽然数据查找性能极佳，但是不支持事务处理。Innodb 最大的特色就是支持了ACID兼容的事务功能，而且他支持行级锁。
 
 ## 参考
 
