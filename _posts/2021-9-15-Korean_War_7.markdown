@@ -127,6 +127,14 @@ https://zhuanlan.zhihu.com/p/274612401
 
 ---
 
+中国红色政权之所以能够在内战后调动一切资源，只有一个简单而明确的目标，那就是在饱受大英帝国和日本等西方超级强国数百年屈辱的痛苦之后，为了确保国家安全，击退美国人，建立安全区，保护新生的国家。
+
+https://mp.weixin.qq.com/s/mTonY3poWM4FqZYLfdArsg
+
+美国网民讨论：朝鲜战争中，为何美国军队干不过中国军队？
+
+---
+
 https://mp.weixin.qq.com/s/byJrok7yFbjcA-ba9yX0zQ
 
 解放军有多少部队参加了抗美援朝战争？数量超过你的想象

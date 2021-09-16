@@ -9,6 +9,27 @@ category: technology
 
 # Mysql（续）
 
+## 中间数据的存储
+
+有的时候，SQL中间处理的结果需要存储起来，以备后用。这时有两种办法：
+
+1.创建View。
+
+```sql
+CREATE VIEW view_name AS
+SELECT column_name(s)
+FROM table_name
+WHERE condition;
+```
+
+View并不在数据库中存储数据，而是在查询时，执行其中的select语句（每次查询，都会执行），生成中间结果。因此，View从原理来说，更像是一种语法糖，而非存储机制。
+
+2.使用select语句创建table。
+
+`Create table new_table_name (Select * from old_table_name);`
+
+这种方法会将中间结果存储到数据库中，下次使用的时候，就无需重新生成了。但缺点是原table中的更新不会体现到新table中，只适合处理历史数据。
+
 ## 模糊查询
 
 http://www.cnblogs.com/GT_Andy/archive/2009/12/25/1921914.html

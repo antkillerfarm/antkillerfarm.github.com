@@ -207,6 +207,10 @@ POTUS: President of the United States
 
 FLOTUS: First Lady of the United States
 
+---
+
+lifetime achievement：终身成就奖
+
 # 安全
 
 ## RSA

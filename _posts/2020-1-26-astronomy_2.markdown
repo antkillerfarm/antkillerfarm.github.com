@@ -273,6 +273,10 @@ https://mp.weixin.qq.com/s/ed93ZOHB62XKIREnOwIJIQ
 
 马斯克的火箭，这次没！爆！炸！
 
+https://www.zhihu.com/question/487093505
+
+SpaceX执行首次全平民任务，送4名普通人进太空旅行3天，有哪些亮点和里程碑意义？
+
 ---
 
 液氢液氧

@@ -47,6 +47,16 @@ https://mp.weixin.qq.com/s/qWX17XcLQFRnip3JOkpRFg
 
 ---
 
+作为一款早期计算机，IBM 705的编程是通过打孔卡输入machine instruction完成的。通过autocoder(作用相当于现在的assembler，不过部分用电路实现)，705可以把自定义的虛拟instruction转成实际对应的一系列machine instruction。这样做其中一个好处就是可以減小程序体积，用更少的punch card，写起来更快，输入进计算机时也更快。
+
+因为是相对于定义在machine instruction下一层的micro instruction(现在叫microcode多些，没错这也是IBM搞出来的)的概念，所以取名macro instruction。
+
+https://www.zhihu.com/question/482003599
+
+在计算机编程领域里，宏(macro)是哪里来的？为什么要叫这个名字呢？
+
+---
+
 https://github.com/chrislgarry/Apollo-11
 
 Apollo 11登月代码成Github热度第一

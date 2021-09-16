@@ -263,6 +263,16 @@ https://zhuanlan.zhihu.com/p/330003494
 
 ---
 
+![](/images/img4/Van_Allen_radiation_belts.jpg)
+
+范·艾伦辐射带（Van Allen radiation belts）是地球磁场捕获的太阳宇宙射线和部分银河宇宙射线中的高能带电粒子组成。一般来说，内辐射带里高能质子多，外辐射带里高能电子多。
+
+1958年1月31日，美国第一颗人造卫星探险者一号升空，当升至800千米高空时，星上所载盖革计数器读数突然下降至0。到1958年3月26日探险者三号升空时，又发生了同样的情况。James Van Allen认为，这是因为存在极大量的辐射导致计数器达到饱和而失灵造成的。因此，同年7月26日发射探险者四号时，他在计数器前端加入一小片薄铅以阻挡部分辐射。果然，新的卫星证实了他的猜测。
+
+>James Van Allen，1914～2006，University of Iowa博士（1939）+教授。美国科学院院士。
+
+---
+
 https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
 
 生的伟大，死的光荣——致敬卡西尼号土星探测器
@@ -278,34 +288,3 @@ https://mp.weixin.qq.com/s/ros-kBOIgTgQF2SaGc99qQ
 https://mp.weixin.qq.com/s/DKMs8sZtE_JzWaxr8o-DWA
 
 你好，冥王星
-
-https://mp.weixin.qq.com/s/sv6McqKzoqJ3snUeDvFfwg
-
-这地儿跟中国一个时区，你却从来没听说过？这个blog介绍了西澳大学和它的天文学成就。
-
-https://mp.weixin.qq.com/s/EZWl8UwhiAkIXWkWE0abUQ
-
-半个世纪的角逐：二战后的国际脉冲星搜寻竞赛
-
-https://mp.weixin.qq.com/s/tmSL5NIyjBpivtbGpbdKqQ
-
-威廉·赫歇尔：我一个德国音乐家，怎么就跑到英国当了天文学家？
-
-https://mp.weixin.qq.com/s/R2Hco-nE-e0S_gmTSImrAA
-
-它曾“超长待机”俯瞰地球，最终在“回家”路上粉身碎骨
-
-![](/images/img2/FYWX.jpg)
-
-https://mp.weixin.qq.com/s/yD3THPdd1rvx3oqBF1tayQ
-
-那个提出“戴森球”的物理学家去世了（Freeman Dyson）
-
-https://mp.weixin.qq.com/s/3dByllGuY9fsvUjoy7fPwg
-
-戴森传奇
-
-https://mp.weixin.qq.com/s/5NyYCE1vt99i2O_r-ThAGA
-
-下一次去哪？金星、木卫一，还是海卫一？
-
