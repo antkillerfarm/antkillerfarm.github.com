@@ -148,7 +148,7 @@ ASB：Advanced System Bus
 
 APB：Advanced Peripheral Bus
 
-# 并行 & 框架+
+# 并行 & 框架 & 优化+
 
 https://mp.weixin.qq.com/s/-CTVyKWtdTK0RIfzzPVyNQ
 
@@ -253,3 +253,7 @@ vivo AI计算平台弹性分布式训练的探索和实践
 https://mp.weixin.qq.com/s/RMDEvy-3-L-Rag1OrZLYhg
 
 深度学习模型的训练时内存次线性优化
+
+https://mp.weixin.qq.com/s/8PUIJykzoNe-fYht5ozrcQ
+
+新一代CTR预测服务的GPU优化实践

@@ -9,6 +9,12 @@ category: technology
 
 # Mysql（续）
 
+## MyISAM & Innodb
+
+Mysql底层数据引擎以插件形式设计，最常见的是Innodb引擎和Myisam引擎，用户可以根据个人需求选择不同的引擎作为Mysql数据表的底层引擎。
+
+MyISAM虽然数据查找性能极佳，但是不支持事务处理。Innodb最大的特色就是支持了ACID兼容的事务功能，而且他支持行级锁。
+
 ## 常用操作
 
 登录方法：

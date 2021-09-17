@@ -149,6 +149,12 @@ FinFET的继任者：详解GAA晶体管
 
 ![](/images/img4/photoengraving.png)
 
+Rayleigh criterion：
+
+$$CD = K_1 \frac{\lambda}{NA}$$
+
+$$K_1$$是一个常数，取决于与芯片制造工艺有关的许多因素。按照ASML的说法，其物理极限值是0.25。$$\lambda$$则代表光刻机使用光源的波长；NA则是光学器件的数值孔径，描述了它们能够收集光的角度范围；CD代表线宽，即可实现的最小特征尺寸。
+
 参考：
 
 https://mp.weixin.qq.com/s/NZGNrO_LxNc6qrIdofOIfQ
@@ -198,6 +204,10 @@ https://mp.weixin.qq.com/s/c_cUbBKVYKNgXrbTdvvfpw
 https://mp.weixin.qq.com/s/vp-CvAvigztYse2_TI9T6Q
 
 中国有没有必要举全国之力，去造一台光刻机？
+
+https://mp.weixin.qq.com/s/DFU4zoteqehOJkBpVVhXyA
+
+EUV光刻机里的低调王者
 
 ## 芯片制造
 
@@ -312,21 +322,3 @@ https://zhuanlan.zhihu.com/p/53596593
 https://en.wikipedia.org/wiki/ARM_big.LITTLE
 
 ARM的big.LITTLE架构
-
-## 片上网络
-
-https://zhuanlan.zhihu.com/p/63683111
-
-详说片上网络之一：片上多核系统与片上网络的发展
-
-https://zhuanlan.zhihu.com/p/65501500
-
-详说片上网络之二：片上多核系统的互联需求
-
-https://zhuanlan.zhihu.com/p/68393867
-
-详说片上网络之三：片上互联的需求与片上网络的研究意义
-
-https://zhuanlan.zhihu.com/p/69012724
-
-详说片上网络之四：片上网络研究的难与易

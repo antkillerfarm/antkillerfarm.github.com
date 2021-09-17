@@ -9,6 +9,34 @@ category: resource
 
 # CPU
 
+https://mp.weixin.qq.com/s/JLg6sEwCxTMpo2nyCt50qg
+
+指令集——CPU芯片江湖中的门派标志
+
+https://mp.weixin.qq.com/s/7gXK6Qv9gLMkYtXw9oz9Sg
+
+一文看懂指令集是什么
+
+https://mp.weixin.qq.com/s/p7FKgx-sFGDJF0y4IGWvyg
+
+CPU指令集架构科普
+
+https://mp.weixin.qq.com/s/5uie8Ci5dK_wy54Z70Gklg
+
+RISC-V精简到何种程度？能省的都省了！
+
+https://mp.weixin.qq.com/s/JNCC3C3Sq0Hzk_5VBcivng
+
+RISC-V有何特别之处？
+
+https://mp.weixin.qq.com/s/26se041cc9aBRw16kvPPjA
+
+芯片制造新模式--像搭积木一样造芯片
+
+https://mp.weixin.qq.com/s/QwE_VTEUS9kGDDrHlzPYmg
+
+硅片为什么不是方的？
+
 https://zhuanlan.zhihu.com/p/32378843
 
 ARM攒机指南-汽车篇

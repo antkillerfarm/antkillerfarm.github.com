@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  并行 & 框架
+title:  并行 & 框架 & 优化
 category: resource 
 ---
 
 * toc
 {:toc}
 
-# 并行 & 框架
+# 并行 & 框架 & 优化
 
 ## 论文
 
