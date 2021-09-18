@@ -317,7 +317,9 @@ https://mp.weixin.qq.com/s/azy-lYHTtqdq2OrGwkfsmQ
 
 图解多线程+1的最快操作
 
-# 动态库版本设置
+# 动态库
+
+## 版本设置
 
 linux动态库使用soname来设定动态库的版本兼容性。
 
@@ -327,9 +329,9 @@ linux动态库使用soname来设定动态库的版本兼容性。
 
 soname的意思是：形如`libbar.so.1.x.y`的动态库，都可以兼容。
 
-`SET_TARGET_PROPERTIES(hello PROPERTIES VERSION 1.2 SOVERSION 1)`
+cmake写法：
 
-这是cmake中的用法。
+`SET_TARGET_PROPERTIES(hello PROPERTIES VERSION 1.2 SOVERSION 1)`
 
 参考：
 
@@ -340,6 +342,18 @@ Linux动态库soname的使用
 https://tldp.org/HOWTO/Program-Library-HOWTO/shared-libraries.html
 
 Shared Libraries
+
+## PIC
+
+position-independent code
+
+不加`-fPIC`编译的`.so`必须要在加载到用户程序的地址空间时重定向所有表目，所以在它里面不能引用其它地方的代码。
+
+而多个进程引用同一个PIC动态库时，可以共用内存。这个库在不同进程中的虚拟地址不同，操作系统会把它们映射到同一块物理内存上。
+
+cmake写法：
+
+`set(CMAKE_POSITION_INDEPENDENT_CODE ON)`
 
 # popen
 
@@ -429,25 +443,3 @@ ssh & display
 https://mp.weixin.qq.com/s/u3VSyEtdcIgp8dCbwCaavA
 
 SSH只能用于远程Linux主机？那说明你见识太小了！
-
-# Linux知识图谱
-
-![](/images/article/linux_perf_tools_full.png)
-
-![](/images/img3/linux_kernel_map.png)
-
-原图地址：
-
-http://www.brendangregg.com/linuxperf.html
-
-![](/images/img4/Linux-storage-stack-diagram_v4.10.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/-iCuxQjSghtDGaPMqaDSgQ
-
-Linux思维导图整理
-
-https://mp.weixin.qq.com/s/sLyD6z2xBXRxfBZnImTgtQ
-
-40+张最全Linux/C/C++思维导图，收藏！
