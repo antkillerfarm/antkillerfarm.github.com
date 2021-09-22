@@ -149,7 +149,7 @@ FinFET的继任者：详解GAA晶体管
 
 ![](/images/img4/photoengraving.png)
 
-Rayleigh criterion：
+Rayleigh criterion（瑞利判据）：
 
 $$CD = K_1 \frac{\lambda}{NA}$$
 

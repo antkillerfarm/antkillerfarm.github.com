@@ -99,6 +99,10 @@ http://easyos.net/articles/bsd/freebsd/output_control_in_freebsd_console
 
 https://en-m.jinzhao.wiki/wiki/ANSI_escape_code
 
+https://mp.weixin.qq.com/s/Q8RkA4cjko-sD5jn7NGzGw
+
+一行命令堆出你的新垣结衣，不爆肝也能创作ASCII Art
+
 # 设置随机的MAC地址
 
 1.设置MAC地址
