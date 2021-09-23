@@ -45,6 +45,34 @@ TF里有两套Log系统：`LOG`和`VLOG`。
 
 `VLOG`都是INFO级别的Log，因此，`TF_CPP_MIN_LOG_LEVEL`必须为0。此外，`VLOG`本身亦有不同等级，可使用`TF_CPP_MIN_VLOG_LEVEL`控制，值越大，信息越多。
 
+# loss & accuracy
+
+loss：训练集损失值
+
+accuracy:训练集准确率
+
+val_loss:测试集损失值
+
+val_accruacy:测试集准确率
+
+以下5种情况可供参考：
+
+train loss 不断下降，test loss不断下降，说明网络仍在学习;（最好的）
+
+train loss 不断下降，test loss趋于不变，说明网络过拟合;（max pool或者正则化）
+
+train loss 趋于不变，test loss不断下降，说明数据集100%有问题;（检查dataset）
+
+train loss 趋于不变，test loss趋于不变，说明学习遇到瓶颈，需要减小学习率或批量数目;（减少学习率）
+
+train loss 不断上升，test loss不断上升，说明网络结构设计不当，训练超参数设置不当，数据集经过清洗等问题。（最不好的情况）
+
+参考：
+
+https://www.cnblogs.com/Timeouting-Study/p/12591448.html
+
+TensorFlow中loss与val_loss、accuracy和val_accuracy分别是什么含义
+
 # 参考
 
 https://mp.weixin.qq.com/s/t1QFIOq-VBNOrSm0zW-PlQ
@@ -378,35 +406,3 @@ https://mp.weixin.qq.com/s/nnjyR4XGVZQ1zXCIPzTNlg
 https://mp.weixin.qq.com/s/iMgesGmdb7Jq4muCxb-nFA
 
 Tensorflow实战：Discuz验证码识别
-
-https://mp.weixin.qq.com/s/4aJUGBpPG_6Oc5EqOmM0Iw
-
-作为TensorFlow的底层语言，你会用C++构建深度神经网络吗？
-
-https://github.com/yahoo/TensorFlowOnSpark
-
-TensorFlow On Spark
-
-https://mp.weixin.qq.com/s/7er3wNV_IhxhFDOIwNMpww
-
-深度强化学习入门：用TensorFlow构建你的第一个游戏AI
-
-https://mp.weixin.qq.com/s/jMPVl3CWvL7MSzq5F12YxQ
-
-维度、广播操作与可视化：如何高效使用TensorFlow
-
-https://mp.weixin.qq.com/s/OmVAnkHV2aI4D4pMKyVjCQ
-
-基于TensorFlow理解三大降维技术：PCA、t-SNE和自编码器
-
-https://mp.weixin.qq.com/s/YOyOR8fdaEKcydAywcc-HA
-
-如何使用TensorFlow API构建视频物体识别系统
-
-https://zhuanlan.zhihu.com/p/28475975
-
-如何优雅地用TensorFlow预测时间序列：TFTS库详细教程
-
-https://mp.weixin.qq.com/s/zZCEOdNQsPovn_i-C57Z9g
-
-如何使用最流行框架Tensorflow进行时间序列分析？

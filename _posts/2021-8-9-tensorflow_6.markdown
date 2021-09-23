@@ -9,6 +9,38 @@ category: AI
 
 # TensorFlow
 
+https://mp.weixin.qq.com/s/4aJUGBpPG_6Oc5EqOmM0Iw
+
+作为TensorFlow的底层语言，你会用C++构建深度神经网络吗？
+
+https://github.com/yahoo/TensorFlowOnSpark
+
+TensorFlow On Spark
+
+https://mp.weixin.qq.com/s/7er3wNV_IhxhFDOIwNMpww
+
+深度强化学习入门：用TensorFlow构建你的第一个游戏AI
+
+https://mp.weixin.qq.com/s/jMPVl3CWvL7MSzq5F12YxQ
+
+维度、广播操作与可视化：如何高效使用TensorFlow
+
+https://mp.weixin.qq.com/s/OmVAnkHV2aI4D4pMKyVjCQ
+
+基于TensorFlow理解三大降维技术：PCA、t-SNE和自编码器
+
+https://mp.weixin.qq.com/s/YOyOR8fdaEKcydAywcc-HA
+
+如何使用TensorFlow API构建视频物体识别系统
+
+https://zhuanlan.zhihu.com/p/28475975
+
+如何优雅地用TensorFlow预测时间序列：TFTS库详细教程
+
+https://mp.weixin.qq.com/s/zZCEOdNQsPovn_i-C57Z9g
+
+如何使用最流行框架Tensorflow进行时间序列分析？
+
 https://mp.weixin.qq.com/s/CqOo7Fu6t5-yJiYhzo03oQ
 
 利用TensorFlow和神经网络来处理文本分类问题
