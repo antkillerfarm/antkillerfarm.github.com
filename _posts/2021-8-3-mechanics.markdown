@@ -140,6 +140,14 @@ https://www.zhihu.com/answer/973062176
 
 ---
 
+德国电视二台（ZDF）推出了一部历史剧《克虏伯：一个德意志家族》，以写实的手法讲述克虏伯家族的百年沉浮，克虏伯家族的兴衰荣辱也是德意志战车的历史缩影。
+
+https://www.zhihu.com/question/29994832
+
+克虏伯是一家怎样的公司？
+
+---
+
 https://mp.weixin.qq.com/s/KuIf0oIkLjMTKp2FgAnpyA
 
 一口气做出12只同款雪糕，强迫症都被食物加工流水线治好了
