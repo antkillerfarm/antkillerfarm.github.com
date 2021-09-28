@@ -11,6 +11,38 @@ category: language
 
 ## JVM（续）
 
+https://mp.weixin.qq.com/s/MxMcpJlqSEZRO0CssQglOg
+
+Android兼容Java 8语法特性的原理分析
+
+https://mp.weixin.qq.com/s/ZlNcvwJ_swspifWTLHA92Q
+
+Java动态调试技术原理及实践
+
+https://mp.weixin.qq.com/s/23-S5tXTqi2LSe84OoQvvA
+
+跑得好好的Java进程，怎么突然就瘫痪了？
+
+https://mp.weixin.qq.com/s/h2_eAtoE9IWdi_OERul0Mw
+
+Tencent JDK国产化CPU架构支持分享
+
+https://mp.weixin.qq.com/s/iklfWLmSD4XMAKmFcffp9g
+
+底层原理：垃圾回收算法是如何设计的？
+
+https://mp.weixin.qq.com/s/sXv9XIIVDsflXr0FdrGM1A
+
+垃圾回收器是如何演进的？
+
+https://mp.weixin.qq.com/s/ag5u2EPObx7bZr7hkcrOTg
+
+新一代垃圾回收器ZGC的探索与实践
+
+https://mp.weixin.qq.com/s/0BEqgGEuC5cfqeDWx728Ig
+
+8张图带你理解Java内存区域
+
 https://mp.weixin.qq.com/s/C-hLyeshiENJ_wmUltOpbw
 
 JVM完整深入解析

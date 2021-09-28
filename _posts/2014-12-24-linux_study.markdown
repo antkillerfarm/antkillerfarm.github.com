@@ -249,6 +249,18 @@ https://zhuanlan.zhihu.com/p/384098769
 
 从内核看epoll的实现（基于5.9.9）
 
+## 惊群
+
+"惊群"简单地来讲，就是多个进程(线程)阻塞睡眠在某个系统调用上，在等待某个fd(socket)的事件的到来。当这个fd(socket)的事件发生的时候，这些睡眠的进程(线程)就会被同时唤醒，多个进程(线程)从阻塞的系统调用上返回，这就是"惊群"现象。
+
+"惊群"被人诟病的是效率低下，大量的CPU时间浪费在被唤醒发现无事可做，然后又继续睡眠的反复切换上。
+
+参考：
+
+https://mp.weixin.qq.com/s/dQWKBujtPcazzw7zacP1lg
+
+深入浅出Linux惊群：现象、原因和解决方案
+
 ## 参考
 
 https://mp.weixin.qq.com/s/EDzFOo3gcivOe_RgipkTkQ
@@ -320,19 +332,3 @@ Linux启动时，运行一个叫做init的程序，然后由它来启动后面�
 5 - X11
 6 - 重新启动（千万不要把initdefault设置为6）
 ```
-
-# tldr
-
-tldr是一个采用示例说明的简化版的man。
-
-官网：
-
-http://tldr.sh/
-
-该项目原生支持node.js，但也提供了其他多种语言的支持。
-
-参考：
-
-https://linuxtoy.org/archives/tldr.html
-
-tldr: 简读Manpage

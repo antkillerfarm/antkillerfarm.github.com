@@ -7,6 +7,22 @@ category: linux
 * toc
 {:toc}
 
+# tldr
+
+tldr是一个采用示例说明的简化版的man。
+
+官网：
+
+http://tldr.sh/
+
+该项目原生支持node.js，但也提供了其他多种语言的支持。
+
+参考：
+
+https://linuxtoy.org/archives/tldr.html
+
+tldr: 简读Manpage
+
 # Linux知识图谱
 
 ![](/images/article/linux_perf_tools_full.png)

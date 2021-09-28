@@ -342,3 +342,7 @@ https://mp.weixin.qq.com/s/Dvn-41JpqKhSUKQC3Mg76A
 https://zhuanlan.zhihu.com/p/33914783
 
 法兰西科技史，超越时代的大工程、点歪的科技树
+
+https://mp.weixin.qq.com/s/bEg8Zy9EHlx8Jbs_-gFcmQ
+
+家用计算机先驱逝世：Linux之父曾受他启发，马斯克悼念（Clive Sinclair）
