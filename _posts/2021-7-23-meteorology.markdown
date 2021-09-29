@@ -232,6 +232,10 @@ https://mp.weixin.qq.com/s/L22Y2sZdEh07At-CWGYZeA
 
 象群北迁，降雨线北移，大陆国家的盛世来了
 
+https://mp.weixin.qq.com/s/vSLGvcII2z8DBKBrV6JLOA
+
+为什么市场上大西北的水果越来越多
+
 # 地理+
 
 https://mp.weixin.qq.com/s/mc9aH5hDgRFS2h2blPhb8w
@@ -277,3 +281,7 @@ https://mp.weixin.qq.com/s/QOw3ZZ-Ql2ob8IMt97U-cA
 https://mp.weixin.qq.com/s/DVNH663X4yUDWu5m9Uy37w
 
 为了“碳中和”，青藏高原上的石头也在努力
+
+https://mp.weixin.qq.com/s/TiZkQ2SBU4aVofXwd4yEug
+
+这个陌生又熟悉的光点

@@ -364,6 +364,10 @@ https://mp.weixin.qq.com/s/ksCWLX_cb9wkgAN35hjL3g
 
 使用Keras Tuner调节超参数
 
+https://www.pyimagesearch.com/2018/06/04/keras-multiple-outputs-and-multiple-losses/
+
+一个多输出+多Loss的示例
+
 # 网络架构
 
 ## LVS

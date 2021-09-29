@@ -247,6 +247,14 @@ https://user.guancha.cn/main/content?id=510957
 
 ---
 
+可可脂可能有多达6种不同的晶型，而其中只有V型具备最佳的熔点、色泽和口感。
+
+https://mp.weixin.qq.com/s/p5tSSJSfyrynqg3yjQr7Mw
+
+巧克力生产居然还不是全自动的？加入这两种成分就有希望了
+
+---
+
 https://www.zhihu.com/answer/370657574
 
 军事里说的马润指什么？

@@ -157,6 +157,10 @@ https://zhuanlan.zhihu.com/p/30628048
 
 远程通信协议：从CORBA到gRPC
 
+https://mp.weixin.qq.com/s/I2QHEBO26nGqhGwIw281Pg
+
+gRPC基础概念详解
+
 https://mp.weixin.qq.com/s/b569est_LpcxsoTNWXcfog
 
 TensorFlow Extended帮你快速落地项目

@@ -208,3 +208,11 @@ https://mp.weixin.qq.com/s/gJIhYujUNummrmJN98THFQ
 https://mp.weixin.qq.com/s/1yTLck34mdoE2xh4dSaUmQ
 
 AI把《灌篮高手》角色真人化，最帅的居然不是流川枫？
+
+https://mp.weixin.qq.com/s/lNrUPLjnaAXq-HhJqakU8g
+
+被吴某凡坑杀的3亿大制作，AI换脸能否拯救《青簪行》？
+
+https://mp.weixin.qq.com/s/RhIcwL8dc7VmA00e5LZ-NQ
+
+奥巴马完变白种人？师承汤晓鸥教授，GFP-GAN达到盲人脸修复新里程碑！

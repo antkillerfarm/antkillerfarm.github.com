@@ -289,6 +289,10 @@ https://mp.weixin.qq.com/s/mcI6QUW0naOmL3PMiKzLdw
 
 如何用Netty写一个高性能的分布式服务框架？
 
+https://mp.weixin.qq.com/s/JdbPf_H4pn5PnPH2LIKQlw
+
+携程高性能全异步网关实践
+
 ## synchronized
 
 https://blog.csdn.net/javazejian/article/details/72828483

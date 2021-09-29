@@ -362,6 +362,10 @@ https://mp.weixin.qq.com/s/dYV_O2WiiGeDHMbejt8vqg
 
 高德地图数据序列化的探索与实践
 
+https://mp.weixin.qq.com/s/enDUynhZ1Pnzg_4xEjR21A
+
+浅谈Protobuf编码
+
 ### proto3
 
 Protocol Buffers本身也有若干版本，且互不兼容。目前用的比较多的是proto2和proto3。

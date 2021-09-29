@@ -93,6 +93,10 @@ https://mp.weixin.qq.com/s/dRojnN6BqCiTVG5edUvtMg
 
 面试官：换人！他连TCP这几个参数都不懂
 
+https://mp.weixin.qq.com/s/GmaZMPPUh20PEuV2n2mdPA
+
+我们说TCP是流式协议究竟意味着什么？
+
 ## DNS
 
 https://mp.weixin.qq.com/s/DDk5YZv9Q7CaqdiKvQxZGQ

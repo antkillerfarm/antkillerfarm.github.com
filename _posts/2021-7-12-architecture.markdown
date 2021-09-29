@@ -153,6 +153,14 @@ https://mp.weixin.qq.com/s/aMiIg0V2avxxRSkds_WDCg
 
 石家庄市区里那些比较“老”的建筑
 
+https://mp.weixin.qq.com/s/G0G7ZosZfzREsvixNUE3cw
+
+今天开始，他把凯旋门包了起来
+
+https://mp.weixin.qq.com/s/I2jBgNgHBNKH7DLci4pVTA
+
+古建筑入门：如何判断一座建筑的年代？
+
 # 物理+
 
 https://www.zhihu.com/answer/644341453
@@ -247,6 +255,6 @@ https://mp.weixin.qq.com/s/tcs4U84iFmmOxf8W3i6ctQ
 
 想堆超级沙堡？请收下这份终极攻略
 
-https://mp.weixin.qq.com/s/G0G7ZosZfzREsvixNUE3cw
+https://mp.weixin.qq.com/s/gbUr8-WMookDi6ARtr8fRg
 
-今天开始，他把凯旋门包了起来
+如何从物理学角度解释“耀眼的光芒”
