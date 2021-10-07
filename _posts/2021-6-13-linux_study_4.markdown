@@ -398,3 +398,7 @@ https://mp.weixin.qq.com/s/-8L5MFZrgmyatGgYaR1AEA
 https://mp.weixin.qq.com/s/-hfI4GLkChRJQDqcLcvbGg
 
 嵌入式C编程实现上下文的快速切换（cpost）
+
+https://zhuanlan.zhihu.com/p/400200921
+
+x86 Linux下实现10us误差的高精度延时

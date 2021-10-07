@@ -121,6 +121,10 @@ https://mp.weixin.qq.com/s/xi_iIr6NdC3QOpjypx3pGg
 
 AlphaGo之后，DeepMind重磅推出AlphaFold：基因序列预测蛋白质结构
 
+https://zhuanlan.zhihu.com/p/415200429
+
+解读AlphaFold优点和不足
+
 https://mp.weixin.qq.com/s/ggZZpBPap398yQ1asHD7aQ
 
 深度重建：基于深度学习的图像重建

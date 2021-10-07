@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  FreeType, FFmpeg, SDL, 图像处理软件
+title:  FreeType, FFmpeg, 图像处理软件
 category: technology 
 ---
 
@@ -109,6 +109,18 @@ http://dranger.com/ffmpeg/
 
 这里的序号最好写成0000这样的形式，ffmpeg在这里的处理并不鲁棒。
 
+5.合并视频文件
+
+filelist.txt：
+
+```text
+file 'input1.mkv'
+file 'input2.mkv'
+file 'input3.mkv'
+```
+
+`ffmpeg -f concat -i filelist.txt -c copy output.mkv`
+
 参考：
 
 http://www.cnblogs.com/dwdxdy/p/3240167.html
@@ -119,15 +131,9 @@ https://mp.weixin.qq.com/s/5S_NgjxoswrGcrQzBOyoYQ
 
 视频数据处理方法！关于开源软件FFmpeg视频抽帧的学习
 
-# SDL
+https://blog.csdn.net/u012587637/article/details/51670975
 
-目前网上查到的中文教程，多是针对SDL v1.2的。至于SDL v2.0的例子，Github上已经有不少了，可惜多是英文，查找起来还是不太方便。因此这里我也提供一个自己写的SDL v2.0的Hello World代码。
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/HelloSDL
-
-可以用这个代码确认SDL v2.0的环境搭建是否正确。
-
-`sudo apt install libsdl2-dev`
+使用ffmpeg合并视频文件的三种方法
 
 # 图像处理软件
 

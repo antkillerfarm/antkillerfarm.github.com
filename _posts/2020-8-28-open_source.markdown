@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  开源社区分裂史, MiniGUI
+title:  开源社区分裂史, MiniGUI, SDL
 category: technology 
 ---
 
@@ -86,3 +86,13 @@ MiniGUI惨淡之后，飞漫公司转战移动APP领域，但从网站上的版�
 ---
 
 在本文写作的2015年，魅族尚算是第二梯队里的佼佼者，后面还有一堆第三梯队垫底。可现在（2021.9），第三梯队全军覆没，第二梯队也已经溃不成军。。。
+
+# SDL
+
+目前网上查到的中文教程，多是针对SDL v1.2的。至于SDL v2.0的例子，Github上已经有不少了，可惜多是英文，查找起来还是不太方便。因此这里我也提供一个自己写的SDL v2.0的Hello World代码。
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/HelloSDL
+
+可以用这个代码确认SDL v2.0的环境搭建是否正确。
+
+`sudo apt install libsdl2-dev`

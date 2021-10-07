@@ -115,6 +115,20 @@ https://mp.weixin.qq.com/s/BwMAiziWQuyKaru8xB9tHw
 
 ---
 
+普渡大学的莫宗坚，祸害了张益唐，又坑了施皖雄。
+
+去美国前，张益唐本想师从丘成桐，结果却因为学术圈恩怨的问题，阴差阳错的来到普渡大学跟着莫宗坚。莫先推荐张益唐研究雅克比猜想。虽然第一年张益唐就完成了大部分猜想证明工作，只剩个引理需要论证，莫导却告诉他，这个引理应该没问题，先放一放，去搞另一个项目吧。
+
+结果课题就一直拖着，直到1992年，博士已经读了七年的张益唐才勉强混到Phd毕业。因为那个引理一直没能得到证明，张益唐七年一篇论文都没有发表，毕业论文只能算作一篇conditional proof。
+
+更可气的是，莫宗坚不给张益唐写推荐信，间接导致了张益唐找不到教职工作，博士毕业即失业，今后的七年张益唐只能在饭店打工为生。
+
+而施皖雄博士毕业后，多个名校抛出橄榄枝，加州大学圣地牙哥分校甚至直接聘他做助理教授（直到今天，该校数学系的助理教授都能升等为长聘教授）。结果“不知道莫宗坚用什么甜言蜜语，说服了施放弃了圣地牙哥而选择普渡"。
+
+坑人的是，普渡大学在考虑施皖雄的终身教职的时候，“游说施皖雄应聘的莫宗坚没有说出一句挽救的话”，再次导致一位优秀的华人数学家离开学术圈，真是毁人不倦啊。据张益唐在一次访谈中说，莫宗坚对待大陆学生的态度比较轻蔑，甚至说过“大陆学生没有一个能行的”。
+
+---
+
 Introspective Neural Networks
 
 http://www.cnblogs.com/cyjb/p/UnionFindSets.html
@@ -230,63 +244,3 @@ https://mp.weixin.qq.com/s/gnPiCmsua0ByO5UwWqxuag
 https://mp.weixin.qq.com/s/5p5ai_HKZMvbQ9Inu6ASbA
 
 史上最硬核老师：17年间，拿着菜刀把400个混混送进了哈佛耶鲁麻省！（Jaime Escalante）
-
-https://mp.weixin.qq.com/s/vLqJIaTXOkz0kYJzKguQaQ
-
-99%的数学家都算不出这道题（亲和数）
-
-https://mp.weixin.qq.com/s/ff1CPp3VyNvqZUq6aiZYng
-
-广州人都不敢吃的大鹅！它每一次出现，都会发生大事（黑天鹅事件）
-
-https://mp.weixin.qq.com/s/psrYzcbJqh2jptjXOVHQ7g
-
-千禧年大奖难题之始与未终
-
-https://mp.weixin.qq.com/s/YPBuSxpZ__WK03u7eHVT3g
-
-终年33岁的印度数学天才
-
-https://mp.weixin.qq.com/s/HFWN9BowSNcuFjyLdFNi1w
-
-靠一个逻辑不通的理论圈粉无数，爱因斯坦高调点赞，海森堡却一键举报，霍金静静吃瓜......（拉普拉斯兽和薛定谔的猫）
-
-https://mp.weixin.qq.com/s/1VpcShNGCCe1mayF-NQ1HQ
-
-大长腿的小姐姐真的很难追吗?
-
-https://mp.weixin.qq.com/s/oS4yRsXDXni4Vb4Oa1cKVg
-
-一律师公开单挑天才数学家，原以为是青铜，没想到竟是王者！（费马vs笛卡尔）
-
-https://mp.weixin.qq.com/s/yQfBFtWBuP1JB6MJM5DshQ
-
-人类最美的24张数学画
-
-https://www.sohu.com/a/223262966_115479
-
-史上最贱的数学题
-
-https://www.zhihu.com/question/290982731
-
-sin1°是否为超越数？
-
-https://blog.csdn.net/FnqTyr45/article/details/80248927
-
-如何用数学方法估算一个女生前男友的数量？
-
-https://zhuanlan.zhihu.com/p/157126167
-
-群论的创立：两个少年天才的接力
-
-https://mp.weixin.qq.com/s/rZwqxyBmQg07Pq1ihTjNMg
-
-动图解释泰勒级数（一）
-
-https://mp.weixin.qq.com/s/yqAnIjGmXpubgSsGDx6O8w
-
-动图解释泰勒级数（二）
-
-https://zhuanlan.zhihu.com/p/36230460
-
-黑盒函数的探索

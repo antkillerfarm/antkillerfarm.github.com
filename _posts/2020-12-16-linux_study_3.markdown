@@ -159,6 +159,10 @@ wget和curl是最常见的下载工具。这里推荐使用axel，该工具支�
 
 `axel <URL>`
 
+`wget -b -i XX.txt`
+
+`-b`：后台，`-i`：批量。
+
 参考：
 
 http://os.51cto.com/art/201605/511423.htm
