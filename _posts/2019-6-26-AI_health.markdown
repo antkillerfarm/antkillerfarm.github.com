@@ -271,6 +271,12 @@ https://mp.weixin.qq.com/s/djkeZ2qC9opjIVHVcT0IZw
 
 ---
 
+热门题材的可视化鬼才：
+
+![](/images/img4/Covid_Japan.gif)
+
+---
+
 https://www.douban.com/group/topic/176322122/
 
 画图小白想问一句，这种核酸检测人数的贪吃蛇图怎...
