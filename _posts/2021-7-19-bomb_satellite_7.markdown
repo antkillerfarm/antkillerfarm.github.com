@@ -224,3 +224,7 @@ https://news.swjtu.edu.cn/shownews-20578.shtml
 https://zhuanlan.zhihu.com/p/265111944
 
 志愿军这次奇袭为啥成经典？美国说了一句话，让韩国人蒙羞70年（奇袭武陵桥）
+
+https://new.qq.com/omn/20210108/20210108A0GKUI00.html
+
+志愿军88师师长和124师政委因贻误战机被撤职，后来结局如何
