@@ -202,10 +202,6 @@ https://www.zhihu.com/question/278212950
 
 部队里一等功有多难获得，为什么看见的多是二等功？
 
-https://mp.weixin.qq.com/s/mMO-3Gi6yMsLhMKB3syerg
-
-长津湖战役志愿军表现最差的部队，伤亡高达3591人，歼敌仅82人
-
 https://www.sohu.com/a/258552764_100074407
 
 八一勋章、独立自由勋章、解放勋章等，你了解多少呢？

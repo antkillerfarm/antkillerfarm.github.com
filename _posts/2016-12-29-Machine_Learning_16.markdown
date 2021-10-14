@@ -27,6 +27,10 @@ $$d(x,y)=\sqrt{\sum(x_i-y_i)^2},sim(x,y)=\frac{1}{1+d(x,y)}$$
 
 $$\cos(x,y)=\frac{\langle x,y\rangle}{\mid x\mid \mid y\mid }=\frac{\sum x_iy_i}{\sqrt{\sum x_i^2}~\sqrt{\sum y_i^2}}$$
 
+这里有一个实现上需要注意的地方：
+
+$$x^2$$不可以用`pow(x,2)`实现，因为这里的x有可能是负数。而负数的pow运算，计算机是不支持的。
+
 ### 皮尔逊相关系数（Pearson product-moment correlation coefficient，PPMCC or PCC）：
 
 $$\begin{align}
