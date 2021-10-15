@@ -39,13 +39,15 @@ https://learngitbranching.js.org
 
 安装：
 
-`sudo apt install gitk`
+`sudo apt install git-gui`
 
 运行：
 
 `git gui`
 
-以上两个工具用tk/tcl编写，都是全平台支持的。
+以上两个工具采用tk/tcl编写，都是全平台支持的。
+
+>这两个工具的作者虽然不同，但是都在自己软件中，留下了打开对方软件的快捷方式，可谓狼狈为奸？
 
 - tig：一个字符式的图形界面工具。
 
