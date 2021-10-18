@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 教员语录（五）
-category: Bombs & Satellite 
+category: Red star 
 ---
 
 * toc

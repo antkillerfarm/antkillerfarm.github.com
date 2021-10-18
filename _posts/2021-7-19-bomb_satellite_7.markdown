@@ -179,59 +179,21 @@ https://mp.weixin.qq.com/s/mkUxG7UMTPyeXnFzPFhNRw
 
 追怀郑哲敏：一生波折，留些话给后人
 
-# 抗美援朝+
-
-https://mp.weixin.qq.com/s/2BDxUnZOE8E8PjEiOdmFrw
-
-给毛主席敬过鸡尾酒的女英雄，做手术把自己变成了男人（郭俊卿）
-
-https://mp.weixin.qq.com/s/g0KmpRcMv6Mu8nFO96I7Dw
-
-朝鲜战争最变态的杀人狂（金钟元）
-
-https://mp.weixin.qq.com/s/9Fv724DR-QJ11KepyuyoLg
-
-志愿军战俘营两起严重斗殴事件，美军两连败，被揍得鼻青眼肿
-
-https://mp.weixin.qq.com/s/JeQR0dgbNHB3y2oahExnsA
-
-志愿军白刃战输给了澳军，可是，再也没有敌军愿意和我们拼刺刀了
-
-https://mp.weixin.qq.com/s/wyrr3t1_kR__OPANi-9XLw
-
-美军上将：和中国人打阵地战，这是美国最愚蠢的战略错误
-
-https://www.zhihu.com/answer/1720964158
-
-汉江南岸三勇士
-
-https://www.zhihu.com/answer/1560323622
-
-世界上出现过哪些有意思的兵种？（铁道兵）
-
-https://mp.weixin.qq.com/s/rMdQ8uNPO40lC5TMIP7Hyw
-
-埃塞俄比亚人宣称自己打败了志愿军，看完他们的记载，却让人深思
-
-https://www.zhihu.com/people/lu-xian-sheng-79-81/posts
-
-一个朝鲜战争的专栏
-
-https://news.swjtu.edu.cn/shownews-20578.shtml
-
-一支特殊的抗美援朝战斗队伍（北方交通大学唐山工学院抗美援朝工程队）
-
-https://zhuanlan.zhihu.com/p/265111944
-
-志愿军这次奇袭为啥成经典？美国说了一句话，让韩国人蒙羞70年（奇袭武陵桥）
-
-https://new.qq.com/omn/20210108/20210108A0GKUI00.html
-
-志愿军88师师长和124师政委因贻误战机被撤职，后来结局如何
-
 # 教员语录+
 
 1945年时毛泽东曾回忆：“我们开始的时候，也是很小的小组。这次大会（指1945年的七大）发给我一张表，其中一项要填何人介绍入党。我说，我没有介绍人，我们那时候（1920年）就是自己搞的。”
+
+---
+
+我小声问:“主席，您母亲也信佛吗？”
+
+“我也喜欢母亲。她也信佛，心地善良。小时候我还跟她一起去庙里烧过香呢。后来我不信了。你磕多少头，中国也强不起来，人民还是受苦。”
+
+主席顿一顿，“磕头不如造反！”
+
+https://mp.weixin.qq.com/s/WISqKAFpZ4TpDTBWvPhRTQ
+
+说一说那个不被人理解的毛泽东
 
 ---
 
@@ -306,3 +268,7 @@ https://mp.weixin.qq.com/s/06X0md5jJNaNqyYduzJWsg
 https://mp.weixin.qq.com/s/8P-CbfHoVSZj3pVSeXDq2Q
 
 井冈山迎来毛泽东和朱德后，为什么没有变成梁山泊、瓦岗寨？
+
+https://mp.weixin.qq.com/s/lrv48Ahjwcv-zalQXkjYSA
+
+在蒙受冤屈的八年中，毛泽东遭受了三次打击

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 美帝暴行录
-category: Bombs & Satellite 
+category: Red star 
 ---
 
 * toc

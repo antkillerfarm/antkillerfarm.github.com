@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 抗日战争（二）
-category: Bombs & Satellite 
+category: Red star 
 ---
 
 * toc

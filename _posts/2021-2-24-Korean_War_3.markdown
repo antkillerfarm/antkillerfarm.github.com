@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 抗美援朝（三）
-category: Bombs & Satellite 
+category: Red star 
 ---
 
 * toc

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 常凯申（一）
-category: Bombs & Satellite 
+category: Red star 
 ---
 
 * toc
