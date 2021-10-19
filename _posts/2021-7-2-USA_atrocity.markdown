@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 美帝暴行录
+title: 美帝暴行录（一）
 category: Red star 
 ---
 
