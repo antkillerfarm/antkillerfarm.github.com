@@ -219,3 +219,7 @@ https://chejiahao.autohome.com.cn/info/2037081/
 https://www.sohu.com/a/154888004_670548
 
 苏联的疯狂：装5门305巨炮的“战列驱逐舰”
+
+https://mp.weixin.qq.com/s/g-IUqpMbyM8csAwh7-VoEQ
+
+背上十斤半，就把排长干：汤姆森冲锋枪在中国
