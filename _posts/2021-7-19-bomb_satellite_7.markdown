@@ -302,3 +302,7 @@ https://mp.weixin.qq.com/s/8P-CbfHoVSZj3pVSeXDq2Q
 https://mp.weixin.qq.com/s/lrv48Ahjwcv-zalQXkjYSA
 
 在蒙受冤屈的八年中，毛泽东遭受了三次打击
+
+http://www.cwzg.cn/history/201510/25147.html
+
+江宇：一场失败的实验--安徽1962年包产到户的前因后果
