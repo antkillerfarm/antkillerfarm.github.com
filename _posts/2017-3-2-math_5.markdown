@@ -45,6 +45,10 @@ https://mp.weixin.qq.com/s/K_aNhzaxmchynDWTE1QFCQ
 
 给你一些点与线，只用动画就能看懂张量乘法，还能证明迹循环定理
 
+https://mp.weixin.qq.com/s/Mup0XmbGhunlkYl6Y95kiQ
+
+丁玖：阿达马的数学、讨论班及中国情
+
 ## 张量分析
 
 在同构的意义下，第零阶张量（r = 0）为标量（Scalar），第一阶张量（r = 1）为向量（Vector），第二阶张量（r = 2）则成为矩阵（Matrix）。

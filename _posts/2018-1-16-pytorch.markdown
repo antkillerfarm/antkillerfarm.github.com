@@ -118,6 +118,14 @@ https://zhuanlan.zhihu.com/p/81026071
 
 神经网络加速库QNNPACK实现揭秘
 
+## 模型保存
+
+经常会看到后缀名为`.pt`,`.pth`,`.pkl`的pytorch模型文件，其实它们并不是在格式上有区别，只是后缀不同而已（仅此而已）。`.pkl`文件是python里面保存文件的一种二进制格式，用pickle库去加载pkl文件或pth文件，效果都是一样的。
+
+https://www.jianshu.com/p/e37e4e49dbc1
+
+pytorch模型保存方式(.pt, .pth, .pkl)
+
 ## 代码解读
 
 PyTorch的的代码主要由C10、ATen、torch三大部分组成的。其中：
@@ -262,10 +270,6 @@ https://mp.weixin.qq.com/s/FGL1vYaXvv-NCcq0vithZw
 
 深度学习框架：PyTorch入门与实践
 
-https://mp.weixin.qq.com/s/pDo2bSctEiTEyjRUgOAC8w
-
-PyTorch常用代码段整理合集
-
 https://github.com/jinfagang/pytorch_name_net
 
 PyTorch人工智能自动取名
@@ -389,19 +393,3 @@ https://mp.weixin.qq.com/s/tD4Inrr0l1oBnLhUD81FCA
 https://mp.weixin.qq.com/s/HQJxbnIHXF-GFLIoNTOxGg
 
 手把手教你用torchtext处理文本数据
-
-https://mp.weixin.qq.com/s/KNaFelqk9UO6JYjbPTQohA
-
-显存不足？PyTorch显存使用分析与优化
-
-https://mp.weixin.qq.com/s/7p26q8Mu3IlK39DG7u41ZA
-
-PyTorch之迁移学习实战
-
-https://mp.weixin.qq.com/s/yGtDUbvO2APT88MwcSh8IA
-
-GAN如此简单的PyTorch实现，一张脸生成72种表情
-
-https://mp.weixin.qq.com/s/u9GEDCmR-PT0--0Xf4vKDA
-
-Pytorch的tensorboard食谱帮你可视化误差结果

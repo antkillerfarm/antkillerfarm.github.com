@@ -118,3 +118,7 @@ https://mp.weixin.qq.com/s/u8j0hgwUOhCW73bfO7ZD7g
 https://mp.weixin.qq.com/s/ec0h7TMhsbeE2q6TvtUYiQ
 
 22年前是谁下令轰炸了中国大使馆
+
+https://mp.weixin.qq.com/s/OJ2OyC3VvFUZN6Gqne7m5Q
+
+帝国主义的耻辱，抢殖民地都能亏钱（意大利）

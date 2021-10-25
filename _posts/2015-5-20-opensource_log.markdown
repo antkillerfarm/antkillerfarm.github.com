@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  从版本库看开源项目的发展史, WebKit, CMake, MSYS2
+title:  从版本库看开源项目的发展史, WebKit, MSYS2
 category: technology 
 ---
 
@@ -172,52 +172,6 @@ https://www.zhihu.com/answer/1200063036
 https://zhuanlan.zhihu.com/p/96986818
 
 万字详文：深入理解浏览器原理
-
-# CMake
-
-添加头文件目录
-
-`include_directories(../../../thirdparty/comm/include)`
-
-添加需要链接的库文件目录
-
-`link_directories("/home/server/third/lib")`
-
-查找库所在目录
-
-`find_library(RUNTIME_LIB rt /usr/lib  /usr/local/lib NO_DEFAULT_PATH)`
-
-添加需要链接的库文件路径
-
-`link_libraries(“/home/server/third/lib/libcommon.a”)`
-
-设置要链接的库文件的名称
-
-`target_link_libraries(myProject libcomm.so)`
-
-为工程生成目标文件
-
-`add_executable(demo main.cpp)`
-
-下载文件
-
-`file(DOWNLOAD url file)`
-
-参考：
-
-https://www.cnblogs.com/binbinjx/p/5626916.html
-
-cmake添加头文件目录，链接动态、静态库
-
-https://mp.weixin.qq.com/s/67lPVyWUXG0SPJm4AOHmBA
-
-一份CMAKE中文实战教程
-
-## cross compile
-
-需要用`-DCMAKE_TOOLCHAIN_FILE=XXXX`来指定toolchain file。后者的示例如下：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/other/toolchain-arm-imx8qm.cmake
 
 # MSYS2
 

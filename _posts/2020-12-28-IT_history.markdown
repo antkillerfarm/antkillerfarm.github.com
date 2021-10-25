@@ -346,3 +346,7 @@ https://zhuanlan.zhihu.com/p/33914783
 https://mp.weixin.qq.com/s/bEg8Zy9EHlx8Jbs_-gFcmQ
 
 家用计算机先驱逝世：Linux之父曾受他启发，马斯克悼念（Clive Sinclair）
+
+https://mp.weixin.qq.com/s/FQ3sxZl8twkGmnJPf1V6ag
+
+服务器芯片三十年战事

@@ -33,6 +33,12 @@ https://github.com/apache/tvm
 
 - TVM强化了图优化的部分，使之更类似于编译器的架构。
 
+## 安装
+
+TVM暂时**不支持**pip安装，`pip install tvm`安装的是另一个同名软件。。。
+
+
+
 ## TVM Runtime
 
 ![](/images/img4/tvm_rpc.png)
@@ -232,6 +238,22 @@ https://mp.weixin.qq.com/s/CMTOW3cYQkkECpPuzZl0nQ
 RAMMER如何进一步“压榨”加速器性能
 
 # Pytorch+
+
+https://mp.weixin.qq.com/s/KNaFelqk9UO6JYjbPTQohA
+
+显存不足？PyTorch显存使用分析与优化
+
+https://mp.weixin.qq.com/s/7p26q8Mu3IlK39DG7u41ZA
+
+PyTorch之迁移学习实战
+
+https://mp.weixin.qq.com/s/yGtDUbvO2APT88MwcSh8IA
+
+GAN如此简单的PyTorch实现，一张脸生成72种表情
+
+https://mp.weixin.qq.com/s/u9GEDCmR-PT0--0Xf4vKDA
+
+Pytorch的tensorboard食谱帮你可视化误差结果
 
 https://zhuanlan.zhihu.com/p/272767300
 
