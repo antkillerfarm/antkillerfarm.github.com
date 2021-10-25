@@ -161,6 +161,10 @@ https://mp.weixin.qq.com/s/I2jBgNgHBNKH7DLci4pVTA
 
 古建筑入门：如何判断一座建筑的年代？
 
+https://mp.weixin.qq.com/s/hh7IJVfNifiMt7KBo0-HBw
+
+暴雨后，谁来为破损的山西古建“撑伞”？
+
 # 物理+
 
 https://www.zhihu.com/answer/644341453

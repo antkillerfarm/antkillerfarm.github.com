@@ -416,3 +416,7 @@ https://mp.weixin.qq.com/s/JxGQmsTlXtnJxGIrafZwSA
 https://mp.weixin.qq.com/s/WOncOLFZtgdqWW131kYIsQ
 
 爱奇艺多语言台词机器翻译技术实践
+
+https://mp.weixin.qq.com/s/s5OciBvaQeYm0Lf-LOupzg
+
+预训练如何用于机器翻译？字节跳动ACL2021这份190页ppt教程

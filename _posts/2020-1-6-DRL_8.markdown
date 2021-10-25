@@ -61,6 +61,10 @@ https://mp.weixin.qq.com/s/qof0GWI3Jfsy3Tpc41wa4A
 
 通过奖励随机化发现多智能体游戏中多样性策略行为，清华、UC伯克利等研究者提出全新算法RPG
 
+https://mp.weixin.qq.com/s/aVDcwkcDkbU23MN4Wcf0mg
+
+多智能体深度强化学习：综述
+
 # StarCraft & AI
 
 AIIDE（Artificial Intelligence and Interactive Digital Entertainment）
@@ -337,6 +341,42 @@ https://zhuanlan.zhihu.com/p/356166466
 
 强化学习落地：计算机系统
 
+# DRL和Robotics
+
+虽然，DRL似乎生来就是为了Robotics，然而现实中的无人系统，目前基本还是使用传统的控制方法。
+
+例如：
+
+https://www.zhihu.com/question/50050401
+
+如何看待百度无人车， 三千多个场景，一万多个if？
+
+不止国内，就连业界标杆Boston Dynamics也是这样：
+
+https://www.zhihu.com/question/29871410
+
+波士顿动力Boston Dynamics的大狗Big Dog用的了哪些控制、估计等算法？
+
+直到最近才终于有了改观：
+
+https://mp.weixin.qq.com/s/xSODAGf3QcJ3A9oq6xP11A
+
+真的超越了波士顿动力！深度强化学习打造的ANYmal登上Science子刊
+
+此外，还有一些论文：
+
+《Learning to Drive in a Day》
+
+参考：
+
+https://zhuanlan.zhihu.com/p/59197798
+
+那些个端到端的自动驾驶研发系统
+
+https://mp.weixin.qq.com/s/yU-6r-7l50y5msw8gUWnUQ
+
+美团技术部解析：无人车端到端驾驶模型概述
+
 # DRL参考资源
 
 https://mp.weixin.qq.com/s/ruAAQEjPIDPWPiuPepKU6Q
@@ -362,35 +402,3 @@ https://mp.weixin.qq.com/s/I8IwPCY6-zocJKFXMr6rUg
 https://mp.weixin.qq.com/s/_lmz0l1vP_CQ6p6DdFnHWA
 
 谷歌大脑工程师的深度强化学习劝退文
-
-https://zhuanlan.zhihu.com/p/39999667
-
-强化学习路在何方？
-
-https://zhuanlan.zhihu.com/p/25239682
-
-深度强化学习（Deep Reinforcement Learning）入门
-
-https://mp.weixin.qq.com/s/Ns5AUGfDoTeTwnBD-pYdLA
-
-详解强化学习当前进展及未来方向
-
-https://mp.weixin.qq.com/s/VIMX63zBaZ5ji70UmHHajg
-
-强化学习入门知识超全梳理
-
-https://mp.weixin.qq.com/s/oA98YyLqn1B22QZ5b_iDVA
-
-IJCAI 2018：聚焦强化学习的学习效率
-
-https://mp.weixin.qq.com/s/FtHJCXniVne2TGKfgCeS9w
-
-Pieter Abbeel：深度强化学习加速方法
-
-https://mp.weixin.qq.com/s/xlnwB9e1ks-4M4djnyIAyQ
-
-解读72篇DeepMind深度强化学习论文
-
-https://mp.weixin.qq.com/s/VYIyWRykREjOyLu4YDhLeA
-
-61篇NIPS2019深度强化学习论文及部分解读

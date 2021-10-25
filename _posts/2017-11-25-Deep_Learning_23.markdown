@@ -343,6 +343,10 @@ https://mp.weixin.qq.com/s/-g5opYPyM488Fit5fP5Y_Q
 
 图像描述生成研究进展
 
+https://mp.weixin.qq.com/s/7mr6nGaADsc450Q0iHauxw
+
+最新《图像描述Image Captioning》综述论文，22页pdf
+
 # LSM
 
 liquid state machine (LSM)

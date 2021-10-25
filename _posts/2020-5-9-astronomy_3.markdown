@@ -105,6 +105,10 @@ https://mp.weixin.qq.com/s/iMr811ClFpmW24khhxkFjg
 
 大神！00后大学生成功发射自制火箭，网友惊了...
 
+https://mp.weixin.qq.com/s/CI5V2LirWMuTUn9riaJPSA
+
+南航大二学生两年手搓火箭成功发射
+
 https://mp.weixin.qq.com/s/QjB7zDCXC82x5O25InGZtA
 
 嫦娥五号开启我国首次地外天体采样返回之旅

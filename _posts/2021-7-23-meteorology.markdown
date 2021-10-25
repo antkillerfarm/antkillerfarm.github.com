@@ -236,6 +236,10 @@ https://mp.weixin.qq.com/s/vSLGvcII2z8DBKBrV6JLOA
 
 为什么市场上大西北的水果越来越多
 
+https://mp.weixin.qq.com/s/VIMKnqcoNw4VGigZJiDoYg
+
+泾渭分明：中国北方的气候变迁史
+
 # 地理+
 
 https://mp.weixin.qq.com/s/mc9aH5hDgRFS2h2blPhb8w
@@ -289,3 +293,7 @@ https://mp.weixin.qq.com/s/TiZkQ2SBU4aVofXwd4yEug
 https://mp.weixin.qq.com/s/WJMtsDoSj98FZdHlfj0zuQ
 
 现时与清代省会以上城池图鉴
+
+https://mp.weixin.qq.com/s/OAJ6KOWqX1Y-AyYdSTPk2Q
+
+喜马拉雅山曾高达12000米，你相信吗？

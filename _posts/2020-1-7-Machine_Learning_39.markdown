@@ -317,6 +317,10 @@ https://zhuanlan.zhihu.com/p/359025580
 
 基于图的异常检测
 
+https://mp.weixin.qq.com/s/ddE7QchOzaz7Cq1NR3nr9Q
+
+异常检测如何可解释？看这份KDD2021《可解释深度异常检测》教程
+
 # 因果推理
 
 https://mp.weixin.qq.com/s/doi26r9AVIMbpkZ01wsCZA

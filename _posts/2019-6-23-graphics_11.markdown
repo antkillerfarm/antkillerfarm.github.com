@@ -249,6 +249,10 @@ https://mp.weixin.qq.com/s/MhGrLydVsbvkhZ5U820zTQ
 
 哈佛小哥这个github仓库从零开始教你计算机图形学
 
+https://mp.weixin.qq.com/s/7SurDN5gvLCEDbxe2gR58w
+
+面向工程师的图像处理，438页pdf
+
 ## 术语
 
 Material Point Method（物质点法）

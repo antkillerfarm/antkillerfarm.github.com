@@ -9,6 +9,22 @@ category: DRL
 
 # DRL参考资源
 
+https://mp.weixin.qq.com/s/oA98YyLqn1B22QZ5b_iDVA
+
+IJCAI 2018：聚焦强化学习的学习效率
+
+https://mp.weixin.qq.com/s/FtHJCXniVne2TGKfgCeS9w
+
+Pieter Abbeel：深度强化学习加速方法
+
+https://mp.weixin.qq.com/s/xlnwB9e1ks-4M4djnyIAyQ
+
+解读72篇DeepMind深度强化学习论文
+
+https://mp.weixin.qq.com/s/VYIyWRykREjOyLu4YDhLeA
+
+61篇NIPS2019深度强化学习论文及部分解读
+
 https://zhuanlan.zhihu.com/p/48186354
 
 robot浅谈
@@ -356,3 +372,7 @@ https://mp.weixin.qq.com/s/8UX65PGZkRokguLTnoGVFA
 https://mp.weixin.qq.com/s/Cfim24MSmClvo2HjW7thTw
 
 最强原创综述！当强化学习邂逅组合优化
+
+https://mp.weixin.qq.com/s/G2sFkuvSeYmhkFjjPRGI-Q
+
+强化学习如何用于推荐？新南威尔士首篇《深度强化学习推荐系统》综述论文

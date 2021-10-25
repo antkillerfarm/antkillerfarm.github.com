@@ -215,6 +215,10 @@ https://mp.weixin.qq.com/s/OHSqHNo7vjLGaTKyzjZjyg
 
 基于智能客服的用户日志研究
 
+https://mp.weixin.qq.com/s/Dp4rlR3Znwv_2gbYCJu8cg
+
+美团智能客服技术实践
+
 # 李飞飞
 
 ## AI大佬

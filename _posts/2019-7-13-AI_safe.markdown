@@ -277,6 +277,14 @@ https://mp.weixin.qq.com/s/sZ7VQz26c5mrWAsnMKx8Hw
 
 图算法在网络黑产挖掘中的思考
 
+https://mp.weixin.qq.com/s/h0Hdf7ehFrp_-0-Auk8NFg
+
+人工智能模型水印研究综述
+
+https://mp.weixin.qq.com/s/LZdSQAOOiQtzRo-pSw61SA
+
+《计算机视觉对抗攻击与防御》最新综述论文
+
 # 硬件
 
 https://mp.weixin.qq.com/s/ZexnsNmqsD2yq-7YNASohw

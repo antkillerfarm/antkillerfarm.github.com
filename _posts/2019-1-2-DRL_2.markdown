@@ -9,6 +9,22 @@ category: DRL
 
 # 工具/框架（续）
 
+https://mp.weixin.qq.com/s/ApP0zNuG5OP_-HzJC1v95Q
+
+谷歌发布开源Dopamine 2.0，让强化学习变得更灵活
+
+https://mp.weixin.qq.com/s/Hod37LQ-eEe0EVtLfyXLGQ
+
+DeepMind重磅开源强化学习框架！覆盖28款游戏，24多个算法(OpenSpiel)
+
+https://mp.weixin.qq.com/s/OIxgL4tLXNnapwHk4lDU4g
+
+DeepMind悄咪咪开源三大新框架，深度强化学习落地希望再现（OpenSpiel、SpriteWorld、bsuite）
+
+https://zhuanlan.zhihu.com/p/68462431
+
+谷歌开源RL足球环境
+
 https://mp.weixin.qq.com/s/BhTX4KQnLxUQLvPUfY3q6Q
 
 物理实验成本为零！南大LAMDA开源虚拟RL训练环境
@@ -171,42 +187,6 @@ https://www.zhihu.com/question/49230922
 https://zhuanlan.zhihu.com/p/75913329
 
 深度强化学习简介
-
-# DRL和Robotics
-
-虽然，DRL似乎生来就是为了Robotics，然而现实中的无人系统，目前基本还是使用传统的控制方法。
-
-例如：
-
-https://www.zhihu.com/question/50050401
-
-如何看待百度无人车， 三千多个场景，一万多个if？
-
-不止国内，就连业界标杆Boston Dynamics也是这样：
-
-https://www.zhihu.com/question/29871410
-
-波士顿动力Boston Dynamics的大狗Big Dog用的了哪些控制、估计等算法？
-
-直到最近才终于有了改观：
-
-https://mp.weixin.qq.com/s/xSODAGf3QcJ3A9oq6xP11A
-
-真的超越了波士顿动力！深度强化学习打造的ANYmal登上Science子刊
-
-此外，还有一些论文：
-
-《Learning to Drive in a Day》
-
-参考：
-
-https://zhuanlan.zhihu.com/p/59197798
-
-那些个端到端的自动驾驶研发系统
-
-https://mp.weixin.qq.com/s/yU-6r-7l50y5msw8gUWnUQ
-
-美团技术部解析：无人车端到端驾驶模型概述
 
 # Deep Q-learning Network
 

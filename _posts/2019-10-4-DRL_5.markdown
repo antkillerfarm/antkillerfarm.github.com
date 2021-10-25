@@ -123,7 +123,7 @@ pip install -e . # minimal install
 pip install -e .[all] # all install
 ```
 
-这里选择minimal install就可以了，all install需要安装MuJoCo，而后者是收费软件。
+这里选择minimal install就可以了，all install需要安装MuJoCo，而后者是收费软件。（2021.10被DeepMind收购并免费。）
 
 和Gym配套的还有一个算法库：
 

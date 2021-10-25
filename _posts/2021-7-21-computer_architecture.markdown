@@ -157,6 +157,10 @@ https://www.zhihu.com/question/471238373
 
 dpu芯片发展前景如何？
 
+https://mp.weixin.qq.com/s/xRvXCpHpDnMqSNjJyIf3XQ
+
+大话DPU
+
 ## GPU体系结构
 
 ![](/images/img4/SGI.png)

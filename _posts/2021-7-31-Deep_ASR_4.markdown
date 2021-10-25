@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度语音识别（四）——语音合成参考资源
+title:  深度语音识别（四）——语音合成参考资源, Metaverse
 category: speech 
 ---
 
@@ -238,3 +238,11 @@ https://mp.weixin.qq.com/s/u2Op6y1vdZKtAlfhAYGLsQ
 https://mp.weixin.qq.com/s/FYjXOl7dk3uQriGBuny8DA
 
 志玲姐姐的导航声音是如何产生的？？
+
+# Metaverse
+
+“元宇宙”这一概念源于美国作家 Neal Stephenson 在1992年出版的科幻小说《雪崩》（Snow Crash）。“ meta ” 意为“超越”“元”，与“ Universe ”（宇宙）相结合，即“元宇宙”。简单来说，元宇宙是一个可以映射现实世界、又独立于现实世界的虚拟空间。然而，关于元宇宙的最令人兴奋的不只是技术层面上的构建，更是改变彼此现有社交方式的巨大潜力。
+
+https://mp.weixin.qq.com/s/KmODAixbwztg7A_jiNrm9g
+
+《元宇宙Metaverse》报告，53页ppt

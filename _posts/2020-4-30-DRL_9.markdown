@@ -9,6 +9,22 @@ category: DRL
 
 # DRL参考资源
 
+https://zhuanlan.zhihu.com/p/39999667
+
+强化学习路在何方？
+
+https://zhuanlan.zhihu.com/p/25239682
+
+深度强化学习（Deep Reinforcement Learning）入门
+
+https://mp.weixin.qq.com/s/Ns5AUGfDoTeTwnBD-pYdLA
+
+详解强化学习当前进展及未来方向
+
+https://mp.weixin.qq.com/s/VIMX63zBaZ5ji70UmHHajg
+
+强化学习入门知识超全梳理
+
 https://mp.weixin.qq.com/s/e6QOz-MQSn7n53EPtpw64w
 
 DeepMind强化学习综述：她可以很快，但快从慢中来

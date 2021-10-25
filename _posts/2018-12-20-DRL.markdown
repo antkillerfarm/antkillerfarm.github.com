@@ -281,6 +281,10 @@ https://datawhalechina.github.io/easy-rl/
 
 Easy-RL
 
+https://mp.weixin.qq.com/s/I2lnd1x3iYoFYgxTJn7bYQ
+
+清华大学李升波老师《强化学习与控制》，附课件
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》
@@ -358,19 +362,3 @@ https://mp.weixin.qq.com/s/ew7vmvskp_q4aM7cJM-CXg
 https://github.com/danaugrs/huskarl
 
 基于TF2.0的深度强化学习平台：Huskarl
-
-https://mp.weixin.qq.com/s/ApP0zNuG5OP_-HzJC1v95Q
-
-谷歌发布开源Dopamine 2.0，让强化学习变得更灵活
-
-https://mp.weixin.qq.com/s/Hod37LQ-eEe0EVtLfyXLGQ
-
-DeepMind重磅开源强化学习框架！覆盖28款游戏，24多个算法(OpenSpiel)
-
-https://mp.weixin.qq.com/s/OIxgL4tLXNnapwHk4lDU4g
-
-DeepMind悄咪咪开源三大新框架，深度强化学习落地希望再现（OpenSpiel、SpriteWorld、bsuite）
-
-https://zhuanlan.zhihu.com/p/68462431
-
-谷歌开源RL足球环境

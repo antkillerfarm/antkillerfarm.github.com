@@ -343,6 +343,10 @@ https://mp.weixin.qq.com/s/V9CJVaRYlS5Snyveblb3uw
 
 小目标检测的一些问题，思路和方案
 
+https://mp.weixin.qq.com/s/zvKxi0b-D0fXzx928Wp51A
+
+小目标检测研究进展
+
 # 花式NMS
 
 https://mp.weixin.qq.com/s/ro0lG3uMUPYNZA9rM3I_YQ
