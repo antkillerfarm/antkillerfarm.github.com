@@ -34,6 +34,10 @@ https://mp.weixin.qq.com/s/H2GZgnR8jN5ztUACiowpZQ
 
 Vision Transformer新秀：VOLO
 
+https://mp.weixin.qq.com/s/_ETbYLu6qklaxJ2dv-xeSA
+
+计算机视觉中的Transformer，98页ppt
+
 # BERT进阶
 
 ## AR vs AE

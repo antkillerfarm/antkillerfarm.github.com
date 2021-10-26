@@ -43,6 +43,18 @@ https://mp.weixin.qq.com/s/_14_Q59yV0PhrScN7Xp2QQ
 
 ---
 
+Navier–Stokes equations：
+
+$$\frac {\mathrm {D} \mathbf {u} }{\mathrm {D} t}={\frac {1}{\rho }}\nabla \cdot {\boldsymbol {\sigma }}+\mathbf {g}$$
+
+Taylor–Green vortex
+
+https://mp.weixin.qq.com/s/9EPoDiNGERtfUhauXXRlJw
+
+流体力学与物理导引神经网络
+
+---
+
 https://mp.weixin.qq.com/s/ei84HDZIkXQr2k0ghlN_Mw
 
 C罗踢球时在想什么？这是一篇空气动力学的blog
@@ -248,13 +260,3 @@ https://mp.weixin.qq.com/s/PMHtrd1tNa-hLZJulEcvZw
 https://mp.weixin.qq.com/s/Od7qigLUmYoW4Fgp_z9pVw
 
 一个从金子变成木头的过程
-
----
-
-可以直接拼起来。但是有前提，表面不能有异质成分隔离，特别是气体。暴露在空气中的断口，迅速就会吸附一层气体分子，是否氧化且不论。断口在极高真空环境中，加热使得气体脱附，断口就能粘连上，这个过程称为‘冷焊’。如果断面吻合好，可以联接很可靠。如果吻合不好，可以充分加压，保持，去应力。在外太空环境，冷焊很容易发生，有时候反而是个需要特别避免的问题。
-
-但是，当伽利略号顺利升空入轨之后，地面控制人员却发现这个天线没办法完全张开，它的18根伞肋骨中有3根被粘住了。分析的结论是这个由钼丝编织的天线表面镀了一层黄金，而黄金在火箭升空的过程中发生了冷焊，伞肋粘在一起再也没办法分开。
-
-https://www.zhihu.com/question/34674308
-
-金属断裂后为什么不能直接拼起来？

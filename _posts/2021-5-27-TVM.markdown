@@ -53,13 +53,17 @@ http://tvm.apache.org/docs/dev/runtime.html
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tvm/pytorch2tvm.py
 
-这里同时有local和remote两种模式的代码。
+这是一个pytorch模型转TVM的示例，同时包含了local和remote两种模式的代码。
 
 参考：
 
 https://zhuanlan.zhihu.com/p/369981405
 
 部署TVM Runtime
+
+https://zhuanlan.zhihu.com/p/352988283
+
+TVM学习记录——pytorch
 
 ## NNVM
 

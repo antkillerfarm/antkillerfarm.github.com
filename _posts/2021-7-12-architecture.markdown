@@ -167,6 +167,38 @@ https://mp.weixin.qq.com/s/hh7IJVfNifiMt7KBo0-HBw
 
 # 物理+
 
+https://mp.weixin.qq.com/s/il50NMq54xH54h8Lg1K30g
+
+物理学，如何让我们更健康？
+
+https://mp.weixin.qq.com/s/PVCa9iX3FSN-rTjOf_QGAQ
+
+风力发电机上有避雷针？！谁能告诉我它藏哪了
+
+https://mp.weixin.qq.com/s/prz4Dw9YzEcUDJ2CIHTnLw
+
+爱因斯坦，玻尔，薛定谔……都出现在了钞票上
+
+https://mp.weixin.qq.com/s/tPX9GMw4hWYmeD9Qblydwg
+
+胡清扬，高压下的魔法师
+
+https://mp.weixin.qq.com/s/E_mxl3rMQnxrGcecwUlxcA
+
+比原子钟更精确的是？
+
+https://www.zhihu.com/question/21676820/answer/311648950
+
+激光制冷的原理是什么？
+
+https://mp.weixin.qq.com/s/3O8HRkF7gLPRYTwbbwzlPw
+
+得了诺奖的彩色照相术失传100多年，现在终于被找回来了
+
+https://mp.weixin.qq.com/s/JFTHvSemWzI30G3BOEMrjg
+
+检验霍金的面积定理
+
 https://www.zhihu.com/answer/644341453
 
 为什么泼在地上的水很快就干了，而洗完的衣服却不容易晾干？
