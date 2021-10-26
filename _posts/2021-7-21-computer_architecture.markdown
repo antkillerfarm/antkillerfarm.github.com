@@ -141,6 +141,10 @@ https://mp.weixin.qq.com/s/iBgTyDiNNTUuuCgWJCyKig
 
 如同GPU是针对图像显示领域的加速，DPU（Data Processing Unit）则是对于数据传输方面的加速。
 
+![](/images/img4/DPU.png)
+
+![](/images/img4/DPU_2.png)
+
 https://zhuanlan.zhihu.com/p/145142691
 
 什么是DPU？
@@ -160,6 +164,10 @@ dpu芯片发展前景如何？
 https://mp.weixin.qq.com/s/xRvXCpHpDnMqSNjJyIf3XQ
 
 大话DPU
+
+https://mp.weixin.qq.com/s/hN8tZ7xCRttIc-3pXdqElQ
+
+中科院计算所牵头发布《专⽤数据处理器DPU技术白皮书》，94页pdf
 
 ## GPU体系结构
 

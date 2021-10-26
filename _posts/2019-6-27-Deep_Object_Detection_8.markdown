@@ -121,6 +121,10 @@ https://mp.weixin.qq.com/s/ov4xLhicTqsce0bG2pw95A
 
 anchor-base和anchor-free差异分析
 
+https://mp.weixin.qq.com/s/yft97xTTX0FUXpyHtI_XMQ
+
+anchor-free存在什么缺点？
+
 # 其它目标检测网络
 
 ## A-Fast-RCNN

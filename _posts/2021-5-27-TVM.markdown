@@ -37,8 +37,6 @@ https://github.com/apache/tvm
 
 TVM暂时**不支持**pip安装，`pip install tvm`安装的是另一个同名软件。。。
 
-
-
 ## TVM Runtime
 
 ![](/images/img4/tvm_rpc.png)
@@ -50,6 +48,12 @@ TVM Runtime的代码通常比较薄，只需要把host发过来的优化结果�
 官方文档：
 
 http://tvm.apache.org/docs/dev/runtime.html
+
+示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tvm/pytorch2tvm.py
+
+这里同时有local和remote两种模式的代码。
 
 参考：
 

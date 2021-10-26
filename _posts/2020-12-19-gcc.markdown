@@ -313,6 +313,10 @@ Ninja是Make的替代品，它和后者的区别在于：
 
 https://ninja-build.org/
 
+安装：
+
+`sudo apt install ninja-build`
+
 Cmake生成Ninja脚本：
 
 `cmake .. -G Ninja`

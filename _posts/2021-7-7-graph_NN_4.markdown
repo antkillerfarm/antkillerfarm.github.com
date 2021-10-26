@@ -245,6 +245,10 @@ https://mp.weixin.qq.com/s/qVWrdKD37qtnB_flPEbSdg
 
 图深度学习如何用于自然语言处理？SIGIR2021这份230页ppt教程带你全面了解DL4NLP
 
+https://mp.weixin.qq.com/s/BPuRRgcRQTo2jSYY-y2c8w
+
+清华最新《图神经网络推荐系统》综述论文
+
 # PageRank算法+
 
 http://www.docin.com/p-630952720.html

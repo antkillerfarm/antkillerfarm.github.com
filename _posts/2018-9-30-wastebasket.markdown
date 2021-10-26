@@ -259,6 +259,22 @@ https://mp.weixin.qq.com/s/COjWJWU5d8hQ4afFN5mZ3g
 
 一亿剂疫苗打出去了，何时能见效？
 
+https://mp.weixin.qq.com/s/8L3euDhDzu9NUb15sUCpcw
+
+疫苗接种6个月的真实世界数据
+
+https://view.inews.qq.com/wxn/20210105A037TJ00
+
+30多个国家和地区发现变异毒株，疫苗效果会受影响吗？
+
+https://mp.weixin.qq.com/s/ZXWV8joWMNCbOfH04_TbXA
+
+美国CDC的“Delta末日文档”：感染人数激增，接种疫苗仍传播病毒？
+
+https://mp.weixin.qq.com/s/krRGv6N20YALpG-STMbIzg
+
+以色列新冠疫苗真实世界数据，有什么用？
+
 https://mp.weixin.qq.com/s/U1eteX7FwhyW-4qhVX4_bQ
 
 多国暂停牛津新冠疫苗接种，接下来呢？

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（五十）——深度推理, CNN进阶, AI前沿, 深度哈希
+title:  深度学习（五十）——深度推理, CNN进阶, AI前沿
 category: DL 
 ---
 
@@ -351,6 +351,14 @@ https://mp.weixin.qq.com/s/sG9qvElHchydNs1Wt6FJwg
 
 ---
 
+在传统的数学优化中，以目标和约束作为输入来生成最优决策。在逆优化中，决策是作为输入给出的，目标和/或约束是输出。具体地说，逆优化的目标是确定优化模型的参数，即“正演”模型，使一组决策相对于正演模型近似或确切地最优。
+
+https://mp.weixin.qq.com/s/CTQEX4uyyrqVrHeCaC2SYg
+
+反向优化？多伦多大学首篇《逆优化: 理论与应用》综述论文
+
+---
+
 参考：
 
 https://mp.weixin.qq.com/s/QtO-4ARpAQf0kXfALqMKSQ
@@ -368,53 +376,3 @@ https://mp.weixin.qq.com/s/AQrgvjFPXUpqfqQQgOFN9A
 https://mp.weixin.qq.com/s/cGKsZYxrVP7hVnv7Jli9Zg
 
 MIT课程全面解读2019深度学习最前沿
-
-# 深度哈希
-
-https://mp.weixin.qq.com/s/7HALWPQN4PD8JMdeu7zCig
-
-深度哈希方法综述
-
-https://mp.weixin.qq.com/s/EsGCPljYNysFkyMHp1IeUQ
-
-深度哈希图像检索综述论文，14页pdf
-
-https://mp.weixin.qq.com/s/iVKnLyNJGVRsR5fWc92Rwg
-
-深度离散哈希算法，可用于图像检索！
-
-https://mp.weixin.qq.com/s/XUYJub0559wwQ9H1wA_SAg
-
-机器学习时代的哈希算法，将如何更高效地索引数据
-
-https://mp.weixin.qq.com/s/vFBlFAQLvDZP7IvwKoaPhA
-
-无问西东，只问哈希
-
-https://mp.weixin.qq.com/s/XAxuLg2i3q5_uKDo1wU_rA
-
-从哈希到卷积神经网络：高精度&低功耗
-
-https://mp.weixin.qq.com/s/i8iQtCC7ahXLY1a1wOacsA
-
-Science：最新发现哈希可能是大脑的通用计算原理
-
-https://mp.weixin.qq.com/s/ZOVWXNym5yHoo-MmpxXo0A
-
-自监督对抗哈希SSAH：当前最佳的跨模态检索框架
-
-https://mp.weixin.qq.com/s/VldzlYg5AfDRho8bsROL_g
-
-HashGAN:基于注意力机制的深度对抗哈希模型提升跨模态检索效果
-
-https://mp.weixin.qq.com/s/3Z2Zc8zTq2uiPyw7ZuuZfw
-
-解密美图大规模多媒体数据检索技术DeepHash
-
-https://mp.weixin.qq.com/s/QklCVuukfElVDBFNxLXNKQ
-
-哈希革新Transformer：这篇ICLR高分论文让一块GPU处理64K长度序列
-
-https://zhuanlan.zhihu.com/p/161058660
-
-⾼维特征的哈希技巧

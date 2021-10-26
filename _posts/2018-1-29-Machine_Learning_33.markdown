@@ -214,3 +214,57 @@ Parameter Server就是处理海量特征计算的一种方法。
 >2017.5，我曾去某电商面试推荐系统职位。言谈之中发现他们对于DL几乎一无所知，当时就觉得有些古怪。直到接触Parameter Server才明白了他们的玩法。。。非常庆幸他们鄙视了我。后来到了2017.12的时候，他们主动找我，想再次面试，被我婉拒。
 
 这类问题的另一个特征是：特征虽多，但单独的一个样本具有的有效特征相对有限，一般不过数百个。使用样本更新参数时，只考虑这几百个特征即可，这也为相关的分布式运算提供了有利条件。
+
+# Loss function详解++
+
+https://mp.weixin.qq.com/s/7Jg-YvS3nvcPJ-zYhK96EA
+
+分享神经网络中设计loss function的一些技巧
+
+https://mp.weixin.qq.com/s/cYcztl8N9JF-XXp9xLJIxg
+
+一文道尽softmax loss及其变种
+
+https://mp.weixin.qq.com/s/MTeuRYutMiCmthEAObyAIg
+
+从最优化的角度看待Softmax损失函数
+
+https://zhuanlan.zhihu.com/p/23340343
+
+Center Loss及其在人脸识别中的应用
+
+https://zhuanlan.zhihu.com/p/34404607
+
+人脸识别的LOSS（上）
+
+https://zhuanlan.zhihu.com/p/34436551
+
+人脸识别的LOSS（下）
+
+https://mp.weixin.qq.com/s/kI22wSoyNT3QXXI8pVwbjA
+
+腾讯AI Lab提出新型损失函数LMCL：可显著增强人脸识别模型的判别能力
+
+https://mp.weixin.qq.com/s/8KM7wUg_lnFBd0fIoczTHQ
+
+用收缩损失(Shrinkage Loss)进行深度回归跟踪
+
+https://mp.weixin.qq.com/s/piYyhPbA6kAXuSE5yHfQ1g
+
+人脸识别损失函数综述
+
+https://zhuanlan.zhihu.com/p/60747096
+
+人脸识别损失函数简介与Pytorch实现：ArcFace、SphereFace、CosFace
+
+https://mp.weixin.qq.com/s/_cVNNZBBJljdWBPU9d38CA
+
+常见的损失函数超全总结
+
+https://mp.weixin.qq.com/s/P6xLYrNP4pNKtHcxAWAOKg
+
+数据竞赛中的各种loss function
+
+https://mp.weixin.qq.com/s/Q4ryiTOSJQaJ2e5clmXjtg
+
+一文看尽深度学习中的15种损失函数

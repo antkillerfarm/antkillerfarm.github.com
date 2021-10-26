@@ -321,6 +321,14 @@ https://mp.weixin.qq.com/s/ddE7QchOzaz7Cq1NR3nr9Q
 
 异常检测如何可解释？看这份KDD2021《可解释深度异常检测》教程
 
+https://mp.weixin.qq.com/s/yOoDkTyZMmaFygt5MiGWtw
+
+GAN如何异常检测？最新《生成式对抗网络异常检测》综述论文
+
+https://mp.weixin.qq.com/s/qXIfqwP-ar77QhnooJRYqA
+
+基于图的异常检测，94页ppt
+
 # 因果推理
 
 https://mp.weixin.qq.com/s/doi26r9AVIMbpkZ01wsCZA
@@ -350,57 +358,3 @@ R. A. Fisher和J. Neyman的分歧
 https://mp.weixin.qq.com/s/oZTU7TAEf-gYzlSXdt0_BA
 
 因果推断在阿里文娱用户增长中的应用
-
-# Loss function详解++
-
-https://mp.weixin.qq.com/s/7Jg-YvS3nvcPJ-zYhK96EA
-
-分享神经网络中设计loss function的一些技巧
-
-https://mp.weixin.qq.com/s/cYcztl8N9JF-XXp9xLJIxg
-
-一文道尽softmax loss及其变种
-
-https://mp.weixin.qq.com/s/MTeuRYutMiCmthEAObyAIg
-
-从最优化的角度看待Softmax损失函数
-
-https://zhuanlan.zhihu.com/p/23340343
-
-Center Loss及其在人脸识别中的应用
-
-https://zhuanlan.zhihu.com/p/34404607
-
-人脸识别的LOSS（上）
-
-https://zhuanlan.zhihu.com/p/34436551
-
-人脸识别的LOSS（下）
-
-https://mp.weixin.qq.com/s/kI22wSoyNT3QXXI8pVwbjA
-
-腾讯AI Lab提出新型损失函数LMCL：可显著增强人脸识别模型的判别能力
-
-https://mp.weixin.qq.com/s/8KM7wUg_lnFBd0fIoczTHQ
-
-用收缩损失(Shrinkage Loss)进行深度回归跟踪
-
-https://mp.weixin.qq.com/s/piYyhPbA6kAXuSE5yHfQ1g
-
-人脸识别损失函数综述
-
-https://zhuanlan.zhihu.com/p/60747096
-
-人脸识别损失函数简介与Pytorch实现：ArcFace、SphereFace、CosFace
-
-https://mp.weixin.qq.com/s/_cVNNZBBJljdWBPU9d38CA
-
-常见的损失函数超全总结
-
-https://mp.weixin.qq.com/s/P6xLYrNP4pNKtHcxAWAOKg
-
-数据竞赛中的各种loss function
-
-https://mp.weixin.qq.com/s/Q4ryiTOSJQaJ2e5clmXjtg
-
-一文看尽深度学习中的15种损失函数

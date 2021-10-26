@@ -99,6 +99,10 @@ https://zhuanlan.zhihu.com/p/324613604
 
 ## 参考
 
+https://mp.weixin.qq.com/s/SsHF3Zpqv61G68nim8ocnQ
+
+深度学习激活函数全面综述论文
+
 https://mp.weixin.qq.com/s/gw3hoDSaojVQUiD6YsMabA
 
 理解神经网络中的目标函数

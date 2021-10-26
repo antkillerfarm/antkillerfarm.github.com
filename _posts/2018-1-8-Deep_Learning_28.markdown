@@ -298,6 +298,10 @@ https://mp.weixin.qq.com/s/ondgiFryYqB6-sf-v4pLXQ
 
 多模态预训练模型简述
 
+https://mp.weixin.qq.com/s/TFHS5lZYFwcjP_SC1dAckA
+
+多模态信息如何嵌入推荐系统？RecSys2021《多模态推荐系统》教程
+
 # Recursive NN
 
 http://blog.csdn.net/qq_26609915/article/details/52119512

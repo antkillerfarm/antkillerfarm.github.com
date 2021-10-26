@@ -111,6 +111,12 @@ https://zhuanlan.zhihu.com/p/314071453
 
 提高国内访问github速度的9种方法！
 
+`https://raw.githubusercontent.com/`
+
+替换为：
+
+`https://raw.fastgit.org/`
+
 ## arxiv下载速度慢
 
 http://xxx.itp.ac.cn
