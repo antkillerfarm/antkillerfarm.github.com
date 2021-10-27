@@ -294,3 +294,29 @@ https://mp.weixin.qq.com/s/YEt7XH9mNPmx3QURebbBmg
 https://mp.weixin.qq.com/s/pkgbDDBv-OPGHyeEBVDXQQ
 
 国产疫苗，对新冠病毒突变株效果如何？
+
+# 生物+
+
+https://mp.weixin.qq.com/s/bvBo78DFR28HZlxKCjKa2Q
+
+一场改变命运的转移（粉虱）
+
+https://mp.weixin.qq.com/s/M6Mfv1hmmMEIfn1XhXDiCw
+
+小虫窃取植物基因，获得抗毒超能力
+
+https://mp.weixin.qq.com/s/DPFNbFOu4hyu3dpLQ_Rv6g
+
+用毒蛇的毒毒毒蛇，毒蛇会不会被毒毒死？
+
+https://mp.weixin.qq.com/s/1YfsFe462NU9JwCkeCl34w
+
+五颜六色的猕猴桃? 还有麻辣味的那种
+
+https://mp.weixin.qq.com/s/B7MUEXmPttlpvUz0JBfwkQ
+
+“ICU菇”：蘑界常见杀手，天生的策略家
+
+https://mp.weixin.qq.com/s/DDFdKzNedeZdz6YU46vhUw
+
+如何绘制一张海洋生物“山海经”？
