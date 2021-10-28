@@ -366,3 +366,7 @@ MQTT协议之连接
 https://mp.weixin.qq.com/s/1sq630gHR_z1NeSRILMMpw
 
 MQTT协议之发布订阅
+
+https://www.zhihu.com/question/21816631
+
+MQTT和Websocket的区别是什么？

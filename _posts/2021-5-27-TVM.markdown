@@ -53,7 +53,13 @@ http://tvm.apache.org/docs/dev/runtime.html
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tvm/pytorch2tvm.py
 
-这是一个pytorch模型转TVM的示例，同时包含了local和remote两种模式的代码。
+该示例包含以下内容：
+
+1.如何导入pytorch和tflite的模型。
+
+2.local执行和remote执行。
+
+3.使用`print(mod.astext(show_meta_data=False))`可以打印相关IR的内容。meta data有的时候包含了权重，打印出来意义不大，反而导致其他部分没法看了。
 
 参考：
 
@@ -458,23 +464,3 @@ PyTorch深度学习模型训练加速指南2021
 https://mp.weixin.qq.com/s/SReuVBN8WIXFlnwho3wqgQ
 
 最详细的Pytorch底层算子扩展总结
-
-https://mp.weixin.qq.com/s/14_pt0_skKYNw2sAK5Zptw
-
-Pytorch底层算子扩展最详细的总结
-
-https://zhuanlan.zhihu.com/p/363317178
-
-模型转换：由Pytorch到TFlite
-
-https://mp.weixin.qq.com/s/Mj7xI5rFTxKaXswYi9_mRQ
-
-我的PyTorch模型比内存还大，怎么训练呀？
-
-https://mp.weixin.qq.com/s/TjCUCbXL3oSgJNYoEltgrg
-
-7个提升PyTorch性能的技巧
-
-https://zhuanlan.zhihu.com/p/275755543
-
-一款全平台轻量级pytorch推理框架Msnhnet
