@@ -242,6 +242,50 @@ https://mp.weixin.qq.com/s/VIMKnqcoNw4VGigZJiDoYg
 
 # 地理+
 
+https://mp.weixin.qq.com/s/e-3dMOZopr9GpFhzOl9RKA
+
+一年多几天该多好？曾经，地球上一年有424天！
+
+https://mp.weixin.qq.com/s/mtoEnRf7kad4JRcZ-qY40A
+
+你的人生写照：桥刚修好，河就逃了
+
+https://mp.weixin.qq.com/s/nMhE_397rZX-_7bq0Roq4Q
+
+世界上最没用的桥！他们刚在河上修好一座桥，台风就来了，结果河流被吹到了桥的外面......
+
+https://mp.weixin.qq.com/s/v79QDol1ulEzllqK3niLnw
+
+这个时代，属于海洋！
+
+https://mp.weixin.qq.com/s/6hJ00no0EScCjYHIIauZ7A
+
+让我们也去看看，青藏高原的雪
+
+https://mp.weixin.qq.com/s/zG3r8KO5KFtSWVlz1ZQo0A
+
+42000年前，地球变成了……（地磁极性倒转）
+
+https://mp.weixin.qq.com/s/V-YrYmDxkxj-yIzd60HjAQ
+
+却忧明月潜生祸，极地甲烷起风波
+
+https://mp.weixin.qq.com/s/7440G7FTWtap1fXM5lNrag
+
+十九次出海探矿寻宝，我就是在大洋中乘风破浪的姐姐
+
+https://mp.weixin.qq.com/s/s1hkkdIb1a-g0-GYLli5bA
+
+为什么说竖版世界地图的“中国造”优于“美国造”
+
+https://mp.weixin.qq.com/s/IQ8YSyp-m2jCIDfLtuh_ew
+
+天上会掉金子吗？会！你现在用的这些就是！
+
+https://mp.weixin.qq.com/s/KJyvT_MsD2DZ6QvwXh32ug
+
+假如把地球46亿年历史压缩到一天
+
 https://mp.weixin.qq.com/s/mc9aH5hDgRFS2h2blPhb8w
 
 21张绘画完美演绎地球演化新说！
@@ -297,3 +341,7 @@ https://mp.weixin.qq.com/s/WJMtsDoSj98FZdHlfj0zuQ
 https://mp.weixin.qq.com/s/OAJ6KOWqX1Y-AyYdSTPk2Q
 
 喜马拉雅山曾高达12000米，你相信吗？
+
+https://www.zhihu.com/question/32141371
+
+美国黄石国家公园地下的超级火山的前世今生是怎样的？

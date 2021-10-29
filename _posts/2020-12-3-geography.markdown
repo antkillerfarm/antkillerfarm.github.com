@@ -163,6 +163,12 @@ https://www.sohu.com/a/307458694_100251802
 
 ---
 
+流言：这个故事要从1972年法国从非洲加蓬奥克洛（Oklo）地区进口的一批铀矿说起。自然界中，铀同位素含量的比例应该是一致的，铀238为99.27％，铀235为0.72％，其余为铀234，其中只有铀235作为核燃料。可这批铀矿的铀235，仅有0.717%，这似乎只能指向一个可能——这批铀矿已经被人使用过。果然，研究人员在加蓬发现了共16处史前核反应堆，它们从17亿年前（另有说法称是20亿年）开始运行，断断续续持续了几十万年。当时的地球还是细菌和蓝藻的舞台，会是谁构建了这么精巧的核反应堆？不少人不由自主地联想到天外来客或者远古文明。
+
+真相：对于人工核反应堆，铀235的浓度必须提炼到3%；其次要有水的存在，一方面作为中子慢化剂，使中子速度降低，提高其同铀核反应的概率，另一方面作为冷却剂，及时带走热量，避免爆炸。而在奥克洛这个看似寻常的小镇，一系列巧合的自然条件，使得天然核反应堆正好得以发生。首先，随着20亿年前地球大气中氧气浓度的增加，铀能够以氧化物的形式溶解于水中，从而富集到一处；其次，17亿年前铀235的含量约为3.1%，满足反应的临界值；再者，这里的铀矿被多孔渗水的砂岩包围。地下水渗入铀矿中，作为中子减速剂。当反应释放热量过多，水会蒸发，使反应减速或停止，直到水重新冷却，再开始反应。最后，这里的矿脉中也没有大量的硼、锂或其他“毒素”。这些元素会吸收中子，可以令核裂变反应停止
+
+---
+
 https://zhuanlan.zhihu.com/p/53237519
 
 一文读懂印尼海啸的真正原因（喀拉喀托之子）
@@ -242,47 +248,3 @@ https://mp.weixin.qq.com/s/ABYf1naUtycBNllvqW5y6Q
 https://mp.weixin.qq.com/s/MWGedW1qbeqicE0wEqcSQw
 
 5000多万年前，江南曾是一片荒漠
-
-https://mp.weixin.qq.com/s/e-3dMOZopr9GpFhzOl9RKA
-
-一年多几天该多好？曾经，地球上一年有424天！
-
-https://mp.weixin.qq.com/s/mtoEnRf7kad4JRcZ-qY40A
-
-你的人生写照：桥刚修好，河就逃了
-
-https://mp.weixin.qq.com/s/nMhE_397rZX-_7bq0Roq4Q
-
-世界上最没用的桥！他们刚在河上修好一座桥，台风就来了，结果河流被吹到了桥的外面......
-
-https://mp.weixin.qq.com/s/v79QDol1ulEzllqK3niLnw
-
-这个时代，属于海洋！
-
-https://mp.weixin.qq.com/s/6hJ00no0EScCjYHIIauZ7A
-
-让我们也去看看，青藏高原的雪
-
-https://mp.weixin.qq.com/s/zG3r8KO5KFtSWVlz1ZQo0A
-
-42000年前，地球变成了……（地磁极性倒转）
-
-https://mp.weixin.qq.com/s/V-YrYmDxkxj-yIzd60HjAQ
-
-却忧明月潜生祸，极地甲烷起风波
-
-https://mp.weixin.qq.com/s/7440G7FTWtap1fXM5lNrag
-
-十九次出海探矿寻宝，我就是在大洋中乘风破浪的姐姐
-
-https://mp.weixin.qq.com/s/s1hkkdIb1a-g0-GYLli5bA
-
-为什么说竖版世界地图的“中国造”优于“美国造”
-
-https://mp.weixin.qq.com/s/IQ8YSyp-m2jCIDfLtuh_ew
-
-天上会掉金子吗？会！你现在用的这些就是！
-
-https://mp.weixin.qq.com/s/KJyvT_MsD2DZ6QvwXh32ug
-
-假如把地球46亿年历史压缩到一天
