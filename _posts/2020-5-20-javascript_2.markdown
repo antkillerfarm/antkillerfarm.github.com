@@ -7,7 +7,59 @@ category: language
 * toc
 {:toc}
 
-# ES6（续）
+# Monaco Editor
+
+Monaco Editor是MS开源的一个在线代码编辑工具，可提供类似VS code的功能。
+
+官网：
+
+https://microsoft.github.io/monaco-editor/
+
+参考：
+
+https://www.cnblogs.com/isaboy/p/monaco-editor.html
+
+微软开源代码编辑器monaco-editor
+
+# 多线程编程
+
+Javascript原则上是单线程的，阻塞和其他异步的需求是通过循环来解决的。当线程需要处理大规模的计算的时候，需要使用Web Worker进行多线程操作。
+
+参考：
+
+https://mp.weixin.qq.com/s/87C9GAFb0Y_i5iPbIL5Hzg
+
+Javascript多线程编程​的前世今生
+
+# Flex
+
+http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
+
+Flex布局教程：语法篇
+
+http://www.ruanyifeng.com/blog/2015/07/flex-examples.html
+
+Flex布局教程：实例篇
+
+https://mp.weixin.qq.com/s/9f4UaZWzYSJB_ZdwhS3A3A
+
+40个CSS布局技巧
+
+# ES6
+
+JS的语言规范被称为ECMAScript标准。在ES6之前，各版本的历史如下：
+
+ES1 1997
+
+ES2 1998
+
+ES3 1999
+
+ES4 Abandoned
+
+ES5 2009
+
+ES6 2015
 
 可以看出ES3是第一个普及版，没有谁不支持。ES4由于和ES3差异过大，而被废弃，从未发布。ES5是第二个普及版，现在（2020.8）即使再考虑兼容性，也就到ES5为止了。
 
@@ -268,35 +320,3 @@ https://mp.weixin.qq.com/s/fEAfuVzfOwKjnTB-mdS5UA
 https://mp.weixin.qq.com/s/D-XvKCSUCzMGcEz_xWTwqg
 
 现代CSS进化史
-
-https://mp.weixin.qq.com/s/IIWgNvqp0jxcD-J_CikV8w
-
-代码变油画，精细到毛发，这个前端小姐姐只用HTML+CSS，让美术设计也惊叹
-
-https://www.cnblogs.com/zzd0916/p/11977995.html
-
-浏览器工作原理与实践
-
-https://mp.weixin.qq.com/s/MwWC0doO_sp_eRkInbE0hw
-
-今天网站都变成灰色了，这其中是怎么实现的？
-
-https://mp.weixin.qq.com/s/VTULhAjEUNfAph-xkkUTsg
-
-手写一个解析器
-
-https://mp.weixin.qq.com/s/3sYrI9kxgAYLiNT-xavRLw
-
-“秒开”浏览器实现起来有多难？
-
-https://mp.weixin.qq.com/s/LciDtj6YmPI7WxcCQM-lIA
-
-前端性能分析工具利器
-
-https://mp.weixin.qq.com/s/c4saBdDZDehokU5gJ-9fPw
-
-JavaScript与ES的25个重要知识点
-
-https://mp.weixin.qq.com/s/HUknNfaxNULc4Yvf5ajRBA
-
-五分钟了解互联网Web技术发展史

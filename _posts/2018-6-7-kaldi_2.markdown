@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Kaldi（二）
+title:  Kaldi（二）, 线程池
 category: AI 
 ---
 
@@ -253,3 +253,41 @@ SpeechBrain是一个基于pytorch的语音工具包，目前（2019.9）正在�
 官网：
 
 https://speechbrain.github.io/
+
+# 线程池
+
+假设一个服务器完成一项任务所需时间为：T1创建线程时间，T2在线程中执行任务的时间，T3销毁线程时间。如果：T1+T3远大于T2，则可以采用线程池，以提高服务器性能。
+
+一个线程池包括以下四个基本组成部分：
+
+1.线程池管理器（ThreadPool）：用于创建并管理线程池，包括 创建线程池，销毁线程池，添加新任务；
+
+2.工作线程（PoolWorker）：线程池中线程，在没有任务时处于等待状态，可以循环的执行任务；
+
+3.任务接口（Task）：每个任务必须实现的接口，以供工作线程调度任务的执行，它主要规定了任务的入口，任务执行完后的收尾工作，任务的执行状态等；
+
+4.任务队列（taskQueue）：用于存放没有处理的任务。提供一种缓冲机制。
+
+在libupnp项目中，提供了一个简易的线程池实现。
+
+参考：
+
+https://mp.weixin.qq.com/s/KigkxkUDYP8r1SEmDUvCCw
+
+从串行线程封闭到对象池、线程池
+
+https://www.jianshu.com/p/a24aa3c63d50
+
+从TCP角度出发，看看连接池的优点
+
+https://mp.weixin.qq.com/s/baYuX8aCwQ9PP6k7TDl2Ww
+
+Java线程池实现原理及其在美团业务中的实践
+
+https://mp.weixin.qq.com/s/8tFPVJfGJ0G8FUu9m5TCug
+
+高并发中的线程与线程池
+
+https://mp.weixin.qq.com/s/QbBr7ZQhD8DwzSzf4RRvgQ
+
+聊一聊携程的Apollo

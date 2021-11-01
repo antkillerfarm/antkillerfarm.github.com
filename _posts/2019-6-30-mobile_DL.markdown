@@ -201,6 +201,30 @@ https://microsoft.github.io/onnxruntime/
 
 https://github.com/microsoft/onnxruntime
 
+build + run test:
+
+`./build.sh --config RelWithDebInfo --build_shared_lib --parallel --cmake_path /home/ubuser/my/setup/cmake-3.16.4-Linux-x86_64/bin/cmake`
+
+build only:
+
+`./build.sh --config RelWithDebInfo --build_shared_lib --parallel --cmake_path /home/ubuser/my/setup/cmake-3.16.4-Linux-x86_64/bin/cmake --skip_tests`
+
+test:
+
+```bash
+cd onnxruntime/build/Linux/RelWithDebInfo
+
+/home/ubuser/my/opensource/onnxruntime/build/Linux/RelWithDebInfo/onnxruntime_test_all --gtest_output=xml:/home/ubuser/my/opensource/onnxruntime/build/Linux/RelWithDebInfo/onnxruntime_test_all.RelWithDebInfo.results.xml --gtest_filter=ActivationOpTest.Relu
+```
+
+log:
+
+`LOGS_DEFAULT(WARNING) << "Hello!";`
+
+performance test:
+
+`onnxruntime_perf_test -m times -r 3 -e cpu model.onnx ./result.txt`
+
 ### DirectML
 
 基于DirectX 12提出的加速方案。

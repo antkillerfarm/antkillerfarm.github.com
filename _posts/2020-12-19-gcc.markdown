@@ -195,6 +195,10 @@ http://www.aosabook.org/en/llvm.html
 
 >顺便提一下，这个网站本身就是个宝库。
 
+官方教程：
+
+https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/index.html
+
 ## 参考
 
 https://mp.weixin.qq.com/s/FSlJKnC0y51nsLDp1B3tXg

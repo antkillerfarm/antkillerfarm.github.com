@@ -9,6 +9,62 @@ category: DL acceleration
 
 # 模型压缩与加速进阶
 
+https://mp.weixin.qq.com/s/H6OTkpdIgSdugDrEMBLybw
+
+超越MobileNetV3的轻量级网络（GhostNet）
+
+https://mp.weixin.qq.com/s/Vh5Y9Ru_hbN0CzM7_xGg6A
+
+超越GhostNet！吊打MobileNetV3！MicroNet通过极低FLOPs实现图像识别
+
+https://mp.weixin.qq.com/s/DLNyb-GtzmSYuXcn6VQz4Q
+
+高效轻量级深度模型的研究和实践
+
+https://mp.weixin.qq.com/s/3SWtxtV9b0dFpvqfTNlqIg
+
+Slimmable Neural Networks
+
+https://mp.weixin.qq.com/s/lc7IoOV6S2Uz5xi7cPQUqg
+
+基于元学习和AutoML的模型压缩新方法
+
+https://zhuanlan.zhihu.com/p/64400678
+
+轻量卷积神经网络的设计
+
+https://mp.weixin.qq.com/s/pJk84bNzRn7LZZfQfSjs5A
+
+VarGFaceNet：地平线提出轻量级、有效可变组卷积的人脸识别网络
+
+https://mp.weixin.qq.com/s/cYimAphdyFO_XqKfT2Hbeg
+
+如何使用强化学习进行模型剪枝
+
+https://mp.weixin.qq.com/s/SgELZgoHzIvbg2-jzJw6Tw
+
+港科大、清华与旷视提出基于元学习的自动化神经网络通道剪枝网络
+
+https://mp.weixin.qq.com/s/q5-91AAKwBiYzTMmqadEcg
+
+RefineDetLite：腾讯提出轻量级高精度目标检测网络
+
+https://mp.weixin.qq.com/s/Vh5Y9Ru_hbN0CzM7_xGg6A
+
+MicroNet通过极低FLOPs实现图像识别
+
+https://mp.weixin.qq.com/s/Ck_GDv1Xo-YMZcu-00gTOA
+
+中星微夺冠国际人工智能算法竞赛，目标检测一步法精度速度双赢
+
+https://mp.weixin.qq.com/s/qWJarPrjOrwxSX77xQ9rCw
+
+面向卷积神经网络的卷积核冗余消除策略
+
+https://mp.weixin.qq.com/s/4aVY9vUBX_Bxht953r00sA
+
+在Keras中利用TensorNetwork加速神经网络
+
 https://mp.weixin.qq.com/s/5NM9M1oY8bwsEqdBRVYpMg
 
 网络规模更小、速度更快，这是谷歌提出的MorphNet

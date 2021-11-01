@@ -157,6 +157,12 @@ https://www.sigarch.org/posit-a-potential-replacement-for-ieee-754
 
 Posit: A Potential Replacement for IEEE 754
 
+常见的软件实现：
+
+https://github.com/cjdelisle/libposit
+
+https://github.com/stillwater-sc/universal
+
 ## Saturate Quantization
 
 上述各种量化方法都是在保证数值表示范围的情况下，尽可能提高fl或者scale。这种方法也叫做Non-saturation Quantization。
@@ -328,23 +334,3 @@ https://mp.weixin.qq.com/s/7dzQhgblEm-kzRnpddweSw
 https://mp.weixin.qq.com/s/M3NcH30zY5Wlj76BDPQlMA
 
 模型压缩一半，精度几乎无损，TensorFlow推出半精度浮点量化工具包，还有在线Demo
-
-https://mp.weixin.qq.com/s/D3ZKidCV7OhAeqWqWg521w
-
-如何训练和部署FP16/Int8等低精度机器学习模型?
-
-https://jackwish.net/neural-network-quantization-introduction-chn.html
-
-神经网络量化简介
-
-https://mp.weixin.qq.com/s/70GuFnJGhtIZEA-PECHjaA
-
-混合精度对模型训练和推理的影响
-
-https://mp.weixin.qq.com/s/xIbF3rNv2mC2G4RBDhIvJQ
-
-哈佛大学在读博士：模型量化——更小更快更强
-
-https://zhuanlan.zhihu.com/p/128018221
-
-8比特数值也能训练模型？商汤提出训练加速新算法

@@ -9,6 +9,48 @@ category: DL acceleration
 
 # 硬件加速技巧（续）
 
+多通道卷积操作最终可以转化为矩阵运算，如下图所示：
+
+![](/images/article/conv.png)
+
+![](/images/img4/im2col.jpg)
+
+这种将卷积运算变为矩阵乘法运算的方法，一般被称为GEMM（General Matrix Matrix multiplication）。因为卷积变为矩阵这一步运算在Caffe中是用im2col函数实现的，因此，也有使用im2col来指代这类方法的。
+
+要点：
+
+- forward的时候，只有input需要im2col。
+
+- backward的时候，先算好input_grad，再col2im将之变换到input的形状即可。
+
+和GEMM类似的还有GEMV（General Matrix Vector multiplication）。
+
+参见：
+
+http://blog.csdn.net/u014114990/article/details/51125776
+
+多通道(比如RGB三通道)卷积过程
+
+https://www.zhihu.com/question/28385679
+
+在Caffe中如何计算卷积？
+
+https://buptldy.github.io/2016/10/01/2016-10-01-im2col/
+
+Implementing convolution as a matrix multiplication（中文blog）
+
+https://zhuanlan.zhihu.com/p/63974249
+
+im2col方法实现卷积算法
+
+https://zhuanlan.zhihu.com/p/66958390
+
+通用矩阵乘（GEMM）优化与卷积计算
+
+https://mp.weixin.qq.com/s/Q1Ovl1LrT5Y6amVqlYpdbA
+
+基于GEMM实现的CNN底层算法被改？Google提出全新间接卷积算法
+
 https://jackwish.net/2019/gemm-optimization.html
 
 通用矩阵乘（GEMM）优化算法
@@ -344,59 +386,3 @@ Slimmable Networks
 https://mp.weixin.qq.com/s/EBCcBWob_iFa51-gOVPYQA
 
 揭秘微信“扫一扫”识物为什么这么快？
-
-https://mp.weixin.qq.com/s/H6OTkpdIgSdugDrEMBLybw
-
-超越MobileNetV3的轻量级网络（GhostNet）
-
-https://mp.weixin.qq.com/s/Vh5Y9Ru_hbN0CzM7_xGg6A
-
-超越GhostNet！吊打MobileNetV3！MicroNet通过极低FLOPs实现图像识别
-
-https://mp.weixin.qq.com/s/DLNyb-GtzmSYuXcn6VQz4Q
-
-高效轻量级深度模型的研究和实践
-
-https://mp.weixin.qq.com/s/3SWtxtV9b0dFpvqfTNlqIg
-
-Slimmable Neural Networks
-
-https://mp.weixin.qq.com/s/lc7IoOV6S2Uz5xi7cPQUqg
-
-基于元学习和AutoML的模型压缩新方法
-
-https://zhuanlan.zhihu.com/p/64400678
-
-轻量卷积神经网络的设计
-
-https://mp.weixin.qq.com/s/pJk84bNzRn7LZZfQfSjs5A
-
-VarGFaceNet：地平线提出轻量级、有效可变组卷积的人脸识别网络
-
-https://mp.weixin.qq.com/s/cYimAphdyFO_XqKfT2Hbeg
-
-如何使用强化学习进行模型剪枝
-
-https://mp.weixin.qq.com/s/SgELZgoHzIvbg2-jzJw6Tw
-
-港科大、清华与旷视提出基于元学习的自动化神经网络通道剪枝网络
-
-https://mp.weixin.qq.com/s/q5-91AAKwBiYzTMmqadEcg
-
-RefineDetLite：腾讯提出轻量级高精度目标检测网络
-
-https://mp.weixin.qq.com/s/Vh5Y9Ru_hbN0CzM7_xGg6A
-
-MicroNet通过极低FLOPs实现图像识别
-
-https://mp.weixin.qq.com/s/Ck_GDv1Xo-YMZcu-00gTOA
-
-中星微夺冠国际人工智能算法竞赛，目标检测一步法精度速度双赢
-
-https://mp.weixin.qq.com/s/qWJarPrjOrwxSX77xQ9rCw
-
-面向卷积神经网络的卷积核冗余消除策略
-
-https://mp.weixin.qq.com/s/4aVY9vUBX_Bxht953r00sA
-
-在Keras中利用TensorNetwork加速神经网络

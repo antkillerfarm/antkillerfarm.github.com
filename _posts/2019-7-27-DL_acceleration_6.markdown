@@ -11,6 +11,12 @@ category: DL acceleration
 
 ## 基本概念（续）
 
+一个很大的DNN往往训练出来的效果会比较好，并且多个DNN一起ensemble的话效果会更好。但是实际应用中，过于庞大的DNN ensemble会增大计算量，从而影响应用。于是一个问题就被提出了：有没有一个方法，能使降低网络的规模，但是保持（一定程度上的）精确度呢？
+
+Hinton举了一个仿生学的例子，就是昆虫在幼生期的时候往往都是一样的，适于它们从环境中摄取能量和营养；然而当它们成长到成熟期，会基于不同的环境或者身份，变成另外一种形态以适应这种环境。
+
+那么对于DNN是不是存在类似的方法？在一开始training的过程中比较庞杂，但是当后来需要拿去deploy的时候，可以转换成一个更小的模型。他把这种方法叫做**Knowledge Distillation(KD)**。
+
 ![](/images/img2/Distilling.jpg)
 
 上图是KD的网络结构图。它的主要思想就是通过一个performance非常好的大网络（有可能是ensemble的）来教一个小网络进行学习。这里我们可以把大网络叫为：teacher network，小网络叫为：student network。
@@ -326,47 +332,3 @@ https://mp.weixin.qq.com/s/IkKig7I5_97y_siixEj72w
 https://mp.weixin.qq.com/s/KPT4P5SQ4E4ofPdjhhjRvA
 
 如何加速深度神经网络计算效率？看NVIDIA-ISSCC2021教程，附93页Slides与视频
-
----
-
-多通道卷积操作最终可以转化为矩阵运算，如下图所示：
-
-![](/images/article/conv.png)
-
-![](/images/img4/im2col.jpg)
-
-这种将卷积运算变为矩阵乘法运算的方法，一般被称为GEMM（General Matrix Matrix multiplication）。因为卷积变为矩阵这一步运算在Caffe中是用im2col函数实现的，因此，也有使用im2col来指代这类方法的。
-
-要点L：
-
-- forward的时候，只有input需要im2col。
-
-- backward的时候，先算好input_grad，再col2im将之变换到input的形状即可。
-
-和GEMM类似的还有GEMV（General Matrix Vector multiplication）。
-
-参见：
-
-http://blog.csdn.net/u014114990/article/details/51125776
-
-多通道(比如RGB三通道)卷积过程
-
-https://www.zhihu.com/question/28385679
-
-在Caffe中如何计算卷积？
-
-https://buptldy.github.io/2016/10/01/2016-10-01-im2col/
-
-Implementing convolution as a matrix multiplication（中文blog）
-
-https://zhuanlan.zhihu.com/p/63974249
-
-im2col方法实现卷积算法
-
-https://zhuanlan.zhihu.com/p/66958390
-
-通用矩阵乘（GEMM）优化与卷积计算
-
-https://mp.weixin.qq.com/s/Q1Ovl1LrT5Y6amVqlYpdbA
-
-基于GEMM实现的CNN底层算法被改？Google提出全新间接卷积算法

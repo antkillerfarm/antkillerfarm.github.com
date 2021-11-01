@@ -167,6 +167,38 @@ https://mp.weixin.qq.com/s/aEkJ1HkhfzIhGv0EwFoy1A
 
 # Javascript参考资源+
 
+https://mp.weixin.qq.com/s/IIWgNvqp0jxcD-J_CikV8w
+
+代码变油画，精细到毛发，这个前端小姐姐只用HTML+CSS，让美术设计也惊叹
+
+https://www.cnblogs.com/zzd0916/p/11977995.html
+
+浏览器工作原理与实践
+
+https://mp.weixin.qq.com/s/MwWC0doO_sp_eRkInbE0hw
+
+今天网站都变成灰色了，这其中是怎么实现的？
+
+https://mp.weixin.qq.com/s/VTULhAjEUNfAph-xkkUTsg
+
+手写一个解析器
+
+https://mp.weixin.qq.com/s/3sYrI9kxgAYLiNT-xavRLw
+
+“秒开”浏览器实现起来有多难？
+
+https://mp.weixin.qq.com/s/LciDtj6YmPI7WxcCQM-lIA
+
+前端性能分析工具利器
+
+https://mp.weixin.qq.com/s/c4saBdDZDehokU5gJ-9fPw
+
+JavaScript与ES的25个重要知识点
+
+https://mp.weixin.qq.com/s/HUknNfaxNULc4Yvf5ajRBA
+
+五分钟了解互联网Web技术发展史
+
 https://mp.weixin.qq.com/s/4YXoSrYueQFWOC8sZH8LvQ
 
 跨平台Web Canvas渲染引擎架构的设计与思考

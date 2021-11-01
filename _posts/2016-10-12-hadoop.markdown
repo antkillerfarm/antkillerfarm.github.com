@@ -325,25 +325,3 @@ https://mp.weixin.qq.com/s/vo1v5dYGLMqzCSUG9gPvag
 https://mp.weixin.qq.com/s/EkxXV7Bizf4JxG15SQb79w
 
 修改OpenCV一行代码，提升14%图像匹配效果（BEBLID(Boosted Efficient Binary Local Image Descriptor)是一个2020年才开发出来的算子）
-
-# Pytorch++
-
-https://mp.weixin.qq.com/s/14_pt0_skKYNw2sAK5Zptw
-
-Pytorch底层算子扩展最详细的总结
-
-https://zhuanlan.zhihu.com/p/363317178
-
-模型转换：由Pytorch到TFlite
-
-https://mp.weixin.qq.com/s/Mj7xI5rFTxKaXswYi9_mRQ
-
-我的PyTorch模型比内存还大，怎么训练呀？
-
-https://mp.weixin.qq.com/s/TjCUCbXL3oSgJNYoEltgrg
-
-7个提升PyTorch性能的技巧
-
-https://zhuanlan.zhihu.com/p/275755543
-
-一款全平台轻量级pytorch推理框架Msnhnet

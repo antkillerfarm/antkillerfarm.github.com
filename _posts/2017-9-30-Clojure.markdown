@@ -340,6 +340,10 @@ language server protocol是一种跨编辑器的语言支持实现规范。它�
 
 https://microsoft.github.io/language-server-protocol/
 
+这里有一个社区维护的LSP Server列表：
+
+https://langserver.org/
+
 # C++ Test framework
 
 ## boost.test

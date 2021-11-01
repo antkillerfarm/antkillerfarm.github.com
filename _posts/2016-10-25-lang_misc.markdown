@@ -103,9 +103,33 @@ http://www.15yan.com/story/5Y8BZqIGwjg/
 
 那些奇奇怪怪的编程语言
 
+## 类型系统（type system）
+
+https://zhuanlan.zhihu.com/p/34679052
+
+一个讲述编程语言类型系统的专栏
+
+## Lambda Calculus
+
+Lambda calculus我们一般称为λ演算，最早是由邱奇（Alonzo Church，图灵的博导）在20世纪30年代引入，当时的背景是解决函数可计算的本质性问题，初期λ演算成功的解决了在可计算理论中的判定性问题，后来根据Church–Turing thesis，证明了λ演算与图灵机是等价的。
+
+参考：
+
+https://liujiacai.net/blog/2014/10/12/lambda-calculus-introduction/
+
+编程语言的基石——Lambda calculus
+
+https://zhuanlan.zhihu.com/p/34679052
+
+Lambda calculus
+
+https://blog.csdn.net/universsky2015/article/details/100933589
+
+函数式编程的基石——Lambda Calculus（Functional Programming）
+
 # Javascript
 
-# WebAssembly
+## WebAssembly
 
 WebAssembly，简称Wasm，是一种能在浏览器上执行的二进制虚拟机字节码。
 
@@ -227,20 +251,6 @@ https://www.cnblogs.com/fastmover/p/7779660.html
 
 D3.js从入门到“放弃”指南
 
-## Monaco Editor
-
-Monaco Editor是MS开源的一个在线代码编辑工具，可提供类似VS code的功能。
-
-官网：
-
-https://microsoft.github.io/monaco-editor/
-
-参考：
-
-https://www.cnblogs.com/isaboy/p/monaco-editor.html
-
-微软开源代码编辑器monaco-editor
-
 ## 框架
 
 React、Angular、Vue.js似乎是目前最流行的三个框架了。
@@ -272,43 +282,3 @@ VUE（现代库） VS jquery（传统库）
 https://zhuanlan.zhihu.com/p/359540593
 
 2021年Angular vs. React vs. Vue前端框架对比
-
-## 多线程编程
-
-Javascript原则上是单线程的，阻塞和其他异步的需求是通过循环来解决的。当线程需要处理大规模的计算的时候，需要使用Web Worker进行多线程操作。
-
-参考：
-
-https://mp.weixin.qq.com/s/87C9GAFb0Y_i5iPbIL5Hzg
-
-Javascript多线程编程​的前世今生
-
-## Flex
-
-http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
-
-Flex布局教程：语法篇
-
-http://www.ruanyifeng.com/blog/2015/07/flex-examples.html
-
-Flex布局教程：实例篇
-
-https://mp.weixin.qq.com/s/9f4UaZWzYSJB_ZdwhS3A3A
-
-40个CSS布局技巧
-
-## ES6
-
-JS的语言规范被称为ECMAScript标准。在ES6之前，各版本的历史如下：
-
-ES1 1997
-
-ES2 1998
-
-ES3 1999
-
-ES4 Abandoned
-
-ES5 2009
-
-ES6 2015

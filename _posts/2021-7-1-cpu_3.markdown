@@ -127,6 +127,10 @@ https://mp.weixin.qq.com/s/Lnrlv7JcrOSwbnDweYf1Yg
 
 片上系统设计案例分析-Xbox主机
 
+https://zhuanlan.zhihu.com/p/86432216
+
+Microcode是什么？它为什么能修正CPU硬件错误？
+
 # 超算
 
 ![](/images/img3/power.aug.gif)

@@ -9,6 +9,26 @@ category: DL acceleration
 
 # NN Quantization（续）
 
+https://mp.weixin.qq.com/s/D3ZKidCV7OhAeqWqWg521w
+
+如何训练和部署FP16/Int8等低精度机器学习模型?
+
+https://jackwish.net/neural-network-quantization-introduction-chn.html
+
+神经网络量化简介
+
+https://mp.weixin.qq.com/s/70GuFnJGhtIZEA-PECHjaA
+
+混合精度对模型训练和推理的影响
+
+https://mp.weixin.qq.com/s/xIbF3rNv2mC2G4RBDhIvJQ
+
+哈佛大学在读博士：模型量化——更小更快更强
+
+https://zhuanlan.zhihu.com/p/128018221
+
+8比特数值也能训练模型？商汤提出训练加速新算法
+
 https://zhuanlan.zhihu.com/p/132561405
 
 模型量化了解一下？
@@ -310,9 +330,3 @@ https://mp.weixin.qq.com/s/UmtCq6WzIDQs3IAxhRFgNw
 这类方法的开山之作，当属Geoffrey Hinton和Jeff Dean的论文：
 
 《Distilling the Knowledge in a Neural Network》
-
-一个很大的DNN往往训练出来的效果会比较好，并且多个DNN一起ensemble的话效果会更好。但是实际应用中，过于庞大的DNN ensemble会增大计算量，从而影响应用。于是一个问题就被提出了：有没有一个方法，能使降低网络的规模，但是保持（一定程度上的）精确度呢？
-
-Hinton举了一个仿生学的例子，就是昆虫在幼生期的时候往往都是一样的，适于它们从环境中摄取能量和营养；然而当它们成长到成熟期，会基于不同的环境或者身份，变成另外一种形态以适应这种环境。
-
-那么对于DNN是不是存在类似的方法？在一开始training的过程中比较庞杂，但是当后来需要拿去deploy的时候，可以转换成一个更小的模型。他把这种方法叫做**Knowledge Distillation(KD)**。
