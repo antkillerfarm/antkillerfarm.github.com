@@ -199,6 +199,10 @@ https://mp.weixin.qq.com/s/QAu0nM72E2gVhbRXmtCMcw
 
 XGBoost和时间序列
 
+https://www.zhihu.com/question/359567100
+
+XGBoost为什么若模型决策树的叶子节点值越大，越容易过拟合呢？
+
 # LightGBM
 
 LightGBM是微软推出的boosting框架。
