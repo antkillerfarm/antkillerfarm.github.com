@@ -195,6 +195,20 @@ https://mp.weixin.qq.com/s/nAaKnI1ADKfeQ8UA_VP0Fw
 
 FUNIT
 
+# GauGAN
+
+https://mp.weixin.qq.com/s/sTLDG0rmFZv20G5veNYS9g
+
+英伟达再出黑魔法GauGAN：凭借几根线条，草图秒变风景照
+
+https://mp.weixin.qq.com/s/nKME65tCeNOlY4SiPv-fWA
+
+逼真照片随手画，马良神笔已上线--点击收获这份英伟达GauGAN开源代码
+
+https://mp.weixin.qq.com/s/0gEmZRocv_49ngVvaa4LNg
+
+装逼一步到位！GauGAN代码解读来了
+
 # GAN参考资源
 
 https://mp.weixin.qq.com/s/mUOSA387465ws0l9Fp-ebQ
@@ -332,19 +346,3 @@ https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247491630&idx=1&sn=394ffe
 https://mp.weixin.qq.com/s/BEuA5icaQwRJGsJJLnAFVg
 
 用机器学习生成图片：GAN的局限性以及如何GAN的更爽
-
-https://zhuanlan.zhihu.com/p/41114883
-
-手机照片脑补成超大画幅，这个GAN想象力惊人
-
-https://mp.weixin.qq.com/s/bKve_tZi9usz4oX0T3S15A
-
-悉尼大学陶大程：遗传对抗生成网络有效解决GAN两大痛点
-
-https://zhuanlan.zhihu.com/p/46629127
-
-生成对抗网络-GAN---一个好老师的重要性
-
-https://mp.weixin.qq.com/s/Sp0EYvaq-1u0mtnrrmFNCQ
-
-为什么说GANs是一个绝妙的艺术创作工具？

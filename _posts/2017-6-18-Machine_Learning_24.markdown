@@ -216,6 +216,10 @@ https://mp.weixin.qq.com/s/lYj-GVNSDp26czRXbf0iNw
 
 如果你会模型融合！那么，我要和你做朋友！！
 
+https://mp.weixin.qq.com/s/-MbiSkgkF11gt5t9W0ExTw
+
+模型融合方法最全总结
+
 ## GBDT+LR
 
 论文：
