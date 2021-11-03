@@ -166,15 +166,17 @@ dstat是后起之秀，号称可以替代vmstat、iostat、ifstat。
 
 linux常用的调试工具：
 
-vmstat、iostat、mpstat、netstat、sar、top：查看系统、程序信息等
+vmstat、iostat、mpstat、netstat、sar、top：查看系统、程序信息等。
 
-gprof、perf、perf top：定位到具体函数、调用等
+gprof、perf、perf top：定位到具体函数、调用等。
 
-strace、ltrace：系统调用、函数调用、库函数调用等
+strace、ltrace：系统调用、函数调用、库函数调用等。
 
-pstack、ptree、pmap：堆栈信息
+pstack、ptree、pmap：堆栈信息。
 
-dmesg：系统log信息
+dmesg：系统log信息。
+
+mallinfo：获得内存分配信息。
 
 ## 黑盒测试
 
@@ -189,6 +191,10 @@ Linux性能分析工具与图形化方法
 https://mp.weixin.qq.com/s/HvADkICPYflS2VTuSB16rg
 
 Linux入门必看：如何60秒内分析Linux性能
+
+https://zhuanlan.zhihu.com/p/111556601
+
+valgrind排查内存泄露
 
 ## 白盒测试
 

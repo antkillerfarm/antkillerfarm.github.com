@@ -293,6 +293,10 @@ https://mp.weixin.qq.com/s/EWnXlinxEJgzdRGJH4bFTQ
 
 只需一行代码，就能导入所有的Python库？
 
+https://mp.weixin.qq.com/s/egThaVvcgV_-opocwxWOVA
+
+让Python代码简洁的实用技巧
+
 # C/C++参考资源+
 
 ## spaceship operator

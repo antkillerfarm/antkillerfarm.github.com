@@ -9,6 +9,22 @@ category: GAN & VAE
 
 # GAN参考资源
 
+https://zhuanlan.zhihu.com/p/41114883
+
+手机照片脑补成超大画幅，这个GAN想象力惊人
+
+https://mp.weixin.qq.com/s/bKve_tZi9usz4oX0T3S15A
+
+悉尼大学陶大程：遗传对抗生成网络有效解决GAN两大痛点
+
+https://zhuanlan.zhihu.com/p/46629127
+
+生成对抗网络-GAN---一个好老师的重要性
+
+https://mp.weixin.qq.com/s/Sp0EYvaq-1u0mtnrrmFNCQ
+
+为什么说GANs是一个绝妙的艺术创作工具？
+
 https://mp.weixin.qq.com/s/uHEAtuY1_KZdUAdDAwFi_A
 
 以为GAN只能“炮制假图”？它还有这7种另类用途

@@ -61,6 +61,10 @@ https://mp.weixin.qq.com/s/oPK9eNgIPMP6ICwBB-4kQA
 
 Facebook推基于NetHack的深度强化学习利器，超轻量级架构性价比远超GPT-2和BERT
 
+https://mp.weixin.qq.com/s/WS1YusQzcOhW-RkHDZFMzA
+
+强化学习从未如此方便！Facebook发布沙盒MiniHack，内置史上最难游戏
+
 https://mp.weixin.qq.com/s/PfyGOK2Ov6Qi-L5aqMfNjg
 
 DeepMind发布强化学习库RLax

@@ -219,6 +219,10 @@ https://mp.weixin.qq.com/s/mkUxG7UMTPyeXnFzPFhNRw
 
 追怀郑哲敏：一生波折，留些话给后人
 
+https://mp.weixin.qq.com/s/-9Q5U50IwtEiv6MX5Z7NuA
+
+一张老照片：九十年前的中国女留学生
+
 # 三线建设
 
 https://sichuan.scol.com.cn/dwzw/202006/57818375.html

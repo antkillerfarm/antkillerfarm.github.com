@@ -241,6 +241,10 @@ https://mp.weixin.qq.com/s/749JZKSrQnlvrcbbS23Njw
 
 MMOCR：OpenMMLab全流程的文字检测识别理解工具箱
 
+https://mp.weixin.qq.com/s/HvOn8SZ2uPjekkDd4VB-9A
+
+一行代码从PDF提取Excel文件
+
 # AI可解释性
 
 XAI(Explainable Artificial Intelligence)

@@ -346,11 +346,3 @@ https://mp.weixin.qq.com/s/4hKIh77UfsuJCSKwtvpq3Q
 https://mp.weixin.qq.com/s/zvEIUJpgrjSM9-TLSzr3sQ
 
 为什么说GAN很快就要替代现有摄影技术了？
-
-https://mp.weixin.qq.com/s/sTLDG0rmFZv20G5veNYS9g
-
-英伟达再出黑魔法GauGAN：凭借几根线条，草图秒变风景照
-
-https://mp.weixin.qq.com/s/nKME65tCeNOlY4SiPv-fWA
-
-逼真照片随手画，马良神笔已上线--点击收获这份英伟达GauGAN开源代码

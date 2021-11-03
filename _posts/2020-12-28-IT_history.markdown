@@ -350,3 +350,11 @@ https://mp.weixin.qq.com/s/bEg8Zy9EHlx8Jbs_-gFcmQ
 https://mp.weixin.qq.com/s/FQ3sxZl8twkGmnJPf1V6ag
 
 服务器芯片三十年战事
+
+https://mp.weixin.qq.com/s/-h9YE3tlvDlUD6TjT8cjEg
+
+KLA-芯片制程控制之王
+
+https://mp.weixin.qq.com/s/oB5uOfnSyJZ9UlNt1zreUg
+
+CAD四大山头的由来

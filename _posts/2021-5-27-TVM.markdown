@@ -131,6 +131,16 @@ FunctionPass：以单个函数为作用域的pass, 每个函数间是相互独�
 
 FunctionPass包括了Relay层的`tvm.relay.transform.FunctionPass`和TIR层的`tvm.tir.transform.PrimFuncPass`。
 
+部分pass：
+
+- FoldConstant: src/relay/transforms/fold_constant.cc
+
+- AlterOpLayout: src/relay/transforms/alter_op_layout.cc
+
+- Legalize: src/relay/transforms/legalize.cc
+
+- MergeComposite: src/relay/transforms/merge_composite.cc
+
 参考：
 
 https://zhuanlan.zhihu.com/p/378739411
@@ -144,6 +154,14 @@ TVM Pass IR如何使用
 https://zhuanlan.zhihu.com/p/112813859
 
 Relay Pass in TVM
+
+https://zhuanlan.zhihu.com/p/358437531
+
+pass总结
+
+## Schedule Primitives
+
+https://tvm.apache.org/docs/how_to/work_with_schedules/schedule_primitives.html
 
 ## backend
 
