@@ -219,6 +219,32 @@ https://mp.weixin.qq.com/s/mkUxG7UMTPyeXnFzPFhNRw
 
 追怀郑哲敏：一生波折，留些话给后人
 
+# 三线建设
+
+https://sichuan.scol.com.cn/dwzw/202006/57818375.html
+
+绝密 破解攀枝花钒钛磁铁矿冶炼难题的幕后英雄首次亮相
+
+https://www.sohu.com/a/407049368_307310
+
+不负国家使命！攀钢用50年成就“全球唯一”
+
+https://zhuanlan.zhihu.com/p/307526876
+
+82年了，中国人即将打通这条血泪之路！（滇缅铁路）
+
+https://zhuanlan.zhihu.com/p/272562189
+
+耗时8年才修通，这条536公里的公路为何这样难修？（刚果（布）一号公路）
+
+https://zhuanlan.zhihu.com/p/77853212
+
+火车通过仅需7分钟的大柱山隧道，为什么修通它却要用13年？
+
+https://www.zhihu.com/answer/586923242
+
+中国为抵抗可能的苏联入侵修建的人工山
+
 # 常凯申++
 
 https://mp.weixin.qq.com/s/E77i0I6pPNfWbPo-r61QZA
@@ -256,3 +282,7 @@ https://mp.weixin.qq.com/s/QFweJ_WY6huZvlVfXzqkhQ
 https://mp.weixin.qq.com/s/vtibWmNys12EVlTRroAxQQ
 
 蒋介石“国军”战斗力低下成因之：技不如人
+
+https://www.zhihu.com/question/317442450
+
+对于“抗战期间八路军基层士兵伙食比国军好”这一事实你怎么看?

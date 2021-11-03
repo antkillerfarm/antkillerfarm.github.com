@@ -91,6 +91,8 @@ https://mp.weixin.qq.com/s/pSKQ3lRYV13qU_5DaOw2HQ
 
 MMX直接使用了80bit的FPU寄存器中的64bit，对CPU整个流水线几乎没有影响；SSE的128bit相比80bit增加了48bit宽度还算可以接受。AVX的256bit，整个CPU的数据通道比80bit增加了三倍多，需要消耗三倍的晶体管，功率也增加了三倍。因此在严格限定功耗的场景如笔记本或者服务器中，CPU运行AVX应用时需要降低频率从而降低功耗。
 
+为了适应DL领域的应用，AVX还添加了一个VNNI的扩展指令集（Vector Neural Network Instructions）。
+
 参考：
 
 https://www.zhihu.com/question/406517759

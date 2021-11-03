@@ -259,16 +259,6 @@ CATIA是法国达索公司的产品开发旗舰解决方案。作为PLM协同解
 
 https://www.3ds.com/products-services/catia/
 
-# MLPerf
-
-MLPerf是谷歌、百度、斯坦福等联手打造的基准测量工具，用于测量机器学习软件与硬件的执行速度。
-
-它的到来代表着原本市场规模较为有限的AI性能比较方案正式踏上发展正轨。简而言之就是：以后各大公司发布的AI性能对比不能再王婆卖瓜自卖自夸了。
-
-官网：
-
-https://mlperf.org/
-
 # MXNet
 
 https://mp.weixin.qq.com/s/50uGupiwU2UVuVeMm_bTag
@@ -374,3 +364,21 @@ Distributed (Deep) Machine Learning Community是陈天奇发起的一个社区�
 代码：
 
 https://github.com/dmlc/dmlc-core
+
+# Flume & Kafka+
+
+https://mp.weixin.qq.com/s/UFfpPnouxXjOFAmZVdSTVg
+
+Kafka核心源码剖析（一）：Producer发送消息流程
+
+https://mp.weixin.qq.com/s/exOs0zrZ2x8Mxi6aB1x-QQ
+
+流数据并行处理性能比较：Kafka vs Pulsar vs Pravega
+
+https://mp.weixin.qq.com/s/ijek6Tdb6H3hqY2CEC917Q
+
+从面试角度来看一看Kafka
+
+https://mp.weixin.qq.com/s/zmDTaW8c65BWZ-mhsED1jw
+
+从演进式角度看消息队列
