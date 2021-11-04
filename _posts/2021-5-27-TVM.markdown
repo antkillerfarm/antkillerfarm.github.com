@@ -59,6 +59,24 @@ TVM Runtime的代码通常比较薄，只需要把host发过来的优化结果�
 
 http://tvm.apache.org/docs/dev/runtime.html
 
+TVM Runtime也是BYOC的重要组成部分。
+
+BYOC：Bring Your Own Codegen
+
+https://tvm.apache.org/2020/07/15/how-to-bring-your-own-codegen-to-tvm
+
+How to Bring Your Own Codegen to TVM
+
+这是中文翻译版：
+
+https://zhuanlan.zhihu.com/p/337033822
+
+如何在TVM上集成Codegen（上）
+
+https://zhuanlan.zhihu.com/p/337037547
+
+如何在TVM上集成Codegen（下）
+
 示例：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tvm/pytorch2tvm.py
@@ -103,7 +121,7 @@ Relay是TVM中用来替代NNVM的模块，其本身被认为是NNVM第二代。
 
 https://tvm.apache.org/docs/arch/relay_intro.html
 
-NNVM本质上只能描述传统的计算图，这属于Data Flow的范畴。但是现在的DL框架越来越灵活，不仅能对数据进行计算，还能对数据进行一定的控制处理，也就是所谓的Control Flow（if-else/ADT matching /递归调用）。
+NNVM本质上只能描述传统的计算图，这属于Data Flow的范畴。但是现在的DL框架越来越灵活，不仅能对数据进行计算，还能对数据进行一定的控制处理，也就是所谓的Control Flow（if-else/ADT matching/递归调用）。
 
 参考：
 
@@ -163,7 +181,11 @@ pass总结
 
 https://tvm.apache.org/docs/how_to/work_with_schedules/schedule_primitives.html
 
-## backend
+## Layout
+
+TVM默认的input layout: NCHW，kernel layout: OIHW。
+
+## Backend
 
 python层面：
 
@@ -208,6 +230,34 @@ class BaseExpr : public ObjectRef;
 ## Quantize
 
 ![](/images/img4/TVM_QNN.png)
+
+## microTVM
+
+microTVM可用于那些没有OS的单片机。
+
+官网：
+
+https://tvm.apache.org/docs/arch/microtvm_design.html
+
+![](/images/img4/microtvm_workflow.svg)
+
+![](/images/img4/microtvm_host_driven.svg)
+
+![](/images/img4/microtvm_standalone.svg)
+
+从上面的图来看，microTVM只要在单片机的main函数中启动即可，同时参数也可以放到FLASH上。
+
+PS：这种能直接寻址的FLASH，多半是NOR FLASH。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/337085225
+
+TinyML-TVM是如何驯服Tiny的（上）
+
+https://zhuanlan.zhihu.com/p/337087273
+
+TinyML-TVM是如何驯服Tiny的（下）
 
 ## 参考
 
@@ -291,6 +341,38 @@ https://zhuanlan.zhihu.com/p/388452164
 
 tvm or mlir？
 
+# TVM实战
+
+## 问题的由来
+
+最近客户反馈我们的backend导入Pytorch模型会出错，而TFLite模型是OK的。
+
+打印模型的IR后，我们发现：
+
+这是Pytorch模型的IR片段：
+
+```text
+  %0 = qnn.quantize(%input, 0.0186579f, 114, out_dtype="uint8", axis=1);
+  %1 = nn.pad(%0, 114f, pad_width=[[0, 0], [0, 0], [1, 1], [1, 1]]);
+  %2 = qnn.quantize(%features.0.0_weight, 0.00288958f, 0, out_dtype="int8", axis=0);
+  %3 = qnn.conv2d(%1, %2, 114, 0, 0.0186579f, 0.00288958f, strides=[2, 2], padding=[0, 0, 0, 0], channels=32, kernel_size=[3, 3], out_dtype="int32");
+  %4 = qnn.quantize(%features.0.0_bias, 5.39136e-05f, 0, out_dtype="int32", axis=0);
+  %5 = nn.bias_add(%3, %4);
+  %6 = qnn.requantize(%5, 5.39136e-05f, 0, 0.0150183f, 0, axis=1, out_dtype="int32");
+  %7 = clip(%6, a_min=0f, a_max=255f);
+  %8 = cast(%7, dtype="uint8");
+```
+
+这是TFLite模型的IR片段：
+
+```text
+  %0 = qnn.quantize(%input, 0.0186579f /* ty=float32 */, 114 /* ty=int32 */, out_dtype="uint8", axis=1) /* ty=Tensor[(1, 3, 224, 224), uint8] */;
+  %1 = nn.pad(%0, 114f /* ty=float32 */, pad_width=[[0, 0], [0, 0], [1, 1], [1, 1]]) /* ty=Tensor[(1, 3, 226, 226), uint8] */;
+  %2 = qnn.conv2d(%1, meta[relay.Constant][0] /* ty=Tensor[(32, 3, 3, 3), int8] */, 114 /* ty=int32 */, 0 /* ty=int32 */, 0.0186579f /* ty=float32 */, 0.00288958f /* ty=float32 */, strides=[2, 2], padding=[0, 0, 0, 0], channels=32, kernel_size=[3, 3], out_dtype="int32") /* ty=Tensor[(1, 32, 112, 112), int32] */;
+  %3 = nn.bias_add(%2, meta[relay.Constant][1] /* ty=Tensor[(32), int32] */) /* ty=Tensor[(1, 32, 112, 112), int32] */;
+  %4 = qnn.requantize(%3, 5.39136e-05f /* ty=float32 */, 0 /* ty=int32 */, 0.0150183f /* ty=float32 */, 0 /* ty=int32 */, axis=1, out_dtype="uint8") /* ty=Tensor[(1, 32, 112, 112), uint8] */;
+```
+
 # GLOW
 
 代码：
@@ -314,153 +396,3 @@ https://github.com/microsoft/nnfusion
 https://mp.weixin.qq.com/s/CMTOW3cYQkkECpPuzZl0nQ
 
 RAMMER如何进一步“压榨”加速器性能
-
-# Pytorch+
-
-https://mp.weixin.qq.com/s/KNaFelqk9UO6JYjbPTQohA
-
-显存不足？PyTorch显存使用分析与优化
-
-https://mp.weixin.qq.com/s/7p26q8Mu3IlK39DG7u41ZA
-
-PyTorch之迁移学习实战
-
-https://mp.weixin.qq.com/s/yGtDUbvO2APT88MwcSh8IA
-
-GAN如此简单的PyTorch实现，一张脸生成72种表情
-
-https://mp.weixin.qq.com/s/u9GEDCmR-PT0--0Xf4vKDA
-
-Pytorch的tensorboard食谱帮你可视化误差结果
-
-https://zhuanlan.zhihu.com/p/272767300
-
-Pytorch转ONNX-理论篇
-
-https://zhuanlan.zhihu.com/p/273566106
-
-Pytorch转ONNX-实战篇1（tracing机制）
-
-https://zhuanlan.zhihu.com/p/286298001
-
-Pytorch转ONNX-实战篇2（实战踩坑总结）
-
-https://mp.weixin.qq.com/s/EXuFXbPBIbzTyi0fUjvvPw
-
-两行代码统计模型参数量与FLOPs，这个PyTorch小工具值得一试
-
-https://zhuanlan.zhihu.com/p/73711222
-
-巧用torch.backends.cudnn.benchmark减少训练时间
-
-https://mp.weixin.qq.com/s/HginBrMOfEEWsZKq67u6EA
-
-在Pytorch中构建流数据集
-
-https://www.zhihu.com/question/303070254
-
-PyTorch中在反向传播前为什么要手动将梯度清零？
-
-https://mp.weixin.qq.com/s/HQnI8rzPvZN6Q_5c8d1nVQ
-
-唯快不破：基于Apex的混合精度加速
-
-https://mp.weixin.qq.com/s/NupSd4e01cvQ3CRnjy1npw
-
-超原版速度110倍，针对PyTorch的CPU到GPU张量迁移工具开源
-
-https://zhuanlan.zhihu.com/p/87572724
-
-一文看懂align_corners
-
-https://www.zhihu.com/question/274635237
-
-Pytorch有什么节省内存（显存）的小技巧？
-
-https://mp.weixin.qq.com/s/S1dRfmqpiLzR3tnsocmfvw
-
-Pytorch中的数据增强方式最全解释
-
-https://mp.weixin.qq.com/s/BTFMvV2ppmRBXYg95YlK4w
-
-PyTorch实现L2和L1正则化的方法
-
-https://zhuanlan.zhihu.com/p/98535650
-
-研究生应当掌握的并行训练方法（单机多卡）
-
-https://zhuanlan.zhihu.com/p/86441879
-
-pytorch多gpu并行训练
-
-https://mp.weixin.qq.com/s/KP4etDrGlJmRAMQmR1mTJA
-
-基于C++的PyTorch模型部署
-
-https://mp.weixin.qq.com/s/uUxwMFGF9nJiraVQsIqu2Q
-
-PyTorch重大更新：将支持自动混合精度训练！
-
-https://zhuanlan.zhihu.com/p/145427849
-
-PyTorch Parallel Training（单机多卡并行、混合精度、同步BN训练指南文档）
-
-https://mp.weixin.qq.com/s/Y6sJhnmjRwN2uopHgr7nFA
-
-让PyTorch更轻便，这款深度学习框架你值得拥有！
-
-https://mp.weixin.qq.com/s/_3iJCO4gQz7mWcW7G8kimQ
-
-Pytorch实现卷积神经网络训练量化（QAT）
-
-https://zhuanlan.zhihu.com/p/104019160
-
-PyTorch常用代码段
-
-https://mp.weixin.qq.com/s/MJgQqwWa4wyNgtKZaX_ADQ
-
-Tensorboard可视化与Hook机制
-
-https://mp.weixin.qq.com/s/jnV_4REXOR-ema1kOC95Nw
-
-跨越重重“障碍”，我从PyTorch转换为了TensorFlow Lite
-
-https://mp.weixin.qq.com/s/Svh27YIG2jYWqXwhhEuoSw
-
-使用Pytorch和BERT进行多标签文本分类
-
-https://mp.weixin.qq.com/s/5Nq3y8hwhQG1UV9lHuBQvA
-
-13个你一定要知道的PyTorch特性
-
-https://mp.weixin.qq.com/s/cKvkvWgVPuq9y1A5q1OPEQ
-
-跟着指南学PyTorch—迁移学习教程
-
-https://mp.weixin.qq.com/s/gJgxh4l0CXTlaJaQ_FS3YQ
-
-PyTorch的数据增强与数据标准化
-
-https://mp.weixin.qq.com/s/Mo7XhRcPkgurmQPJ3Zu1ug
-
-基于PyTorch的计算机视觉框架
-
-https://mp.weixin.qq.com/s/PWABh72t92pUOJufcmzvag
-
-用PyTorch做深度学习实验！Facebook新框架Ax和BoTorch双双开源
-
-https://mp.weixin.qq.com/s/LcwlCai7PMYOBwsLXPS5HA
-
-PyTorch语义分割开源库semseg
-
-https://mp.weixin.qq.com/s/oDYMTb9NWxVsW07FLQKA_Q
-
-万字综述，核心开发者全面解读PyTorch内部机制
-
-https://www.zhihu.com/question/274635237
-
-Pytorch有什么节省内存（显存）的小技巧？
-
-https://mp.weixin.qq.com/s/xe5zmJklT2sqn_zffmyrLg
-
-Sharded:在相同显存的情况下使pytorch模型的参数大小加倍

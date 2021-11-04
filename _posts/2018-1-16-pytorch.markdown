@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Pytorch
+title:  Pytorch（一）
 category: AI 
 ---
 

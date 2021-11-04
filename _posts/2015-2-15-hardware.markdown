@@ -148,112 +148,52 @@ ASB：Advanced System Bus
 
 APB：Advanced Peripheral Bus
 
-# 并行 & 框架 & 优化+
+# 硬件调试器
 
-https://mp.weixin.qq.com/s/-CTVyKWtdTK0RIfzzPVyNQ
+## Lauterbach TRACE32
 
-分布式与高效深度学习，140页ppt详述深度学习压缩与联邦学习训练技术进展
+TRACE32是我见过的功能最强的硬件调试器，没有之一。
 
-https://mp.weixin.qq.com/s/nTBuYuW7h9wZYuo3w1xGmQ
+它有两个系列：
 
-分布式训练的方案和效率对比
+PowerDebug：这个是简装版。功能大致和J-LINK差不多，但售价上千，差不多得是后者的十倍了。
 
-https://mp.weixin.qq.com/s/LOTQfD9KKtAq0zz4rObCGA
+PowerTrace：这个豪华版本，不但能调试，还能够记录运行期间执行的所有指令。这对于一些内存越界问题尤其好使，因为内存内容被改写，并不会导致程序立即崩溃。只有该内存再次被使用的时候，才会有异常发生，但这往往已经离破坏现场很远了。
 
-EB级系统空中换引擎：阿里调度执行框架如何全面升级？（DAG 2.0）
+PowerTrace唯一的缺点就是太贵了，得上万元。
 
-https://zhuanlan.zhihu.com/p/276122469
+## SEGGER
 
-分布式训练常用技术简介
+SEGGER的硬件调试器也分了两个系列：
 
-https://mp.weixin.qq.com/s/uQzwqcGwC9ZveuW64Lzkmg
+J-Link：简装版，只能用于调试。价格在百元左右，已经成为事实上的王者。破解降价什么的江湖传闻，看看就好，硬件想加密，办法多的是。这完全是SEGGER的市场策略吧了。
 
-分布式训练怎么还减速了呢？
+J-Trace：没用过，看说明应该和PowerTrace差不多。
 
-https://zhuanlan.zhihu.com/p/294698838
+https://www.cnblogs.com/neverguveip/p/9457261.html
 
-DLPerf—分布式深度学习最佳入门(踩坑)指南
+浅论各种调试接口（SWD、JTAG、Jlink、Ulink、STlink）的区别
 
-https://zhuanlan.zhihu.com/p/76638962
+https://blog.csdn.net/sunheshan/article/details/24535735
 
-Pytorch分布式训练
+J-Link、J-Trace、Open JTAG区别
 
-https://zhuanlan.zhihu.com/p/360405558
+## Open JTAG
 
-PyTorch分布式训练
+开源的硬件调试器，但是由于需要自己找厂子做，所以价格上不可能比J-Link这种规模产品低，所以始终不温不火。
 
-https://mp.weixin.qq.com/s/0aSBHvscloEnPMRLyNjQsg
+官网：
 
-PyTorch分布式训练简明教程
+https://sourceforge.net/projects/openjtag/
 
-https://mp.weixin.qq.com/s/r7kt1k7D1wurWs_uxdLCtg
+## ST-Link
 
-PyTorch源码解读之分布式训练
+ST-Link专门针对ST芯片而设计，包括ARM core以及非ARM core。
 
-https://mp.weixin.qq.com/s/_85oWK2plv2QOX5Qfg_-ZA
+## OpenOCD
 
-大规模机器学习优化，195页ppt与视频
+OpenOCD（Open On-Chip Debugger）是一款开源软件，最初是Dominic Rath在大学期间发起的（2005年）项目。
 
-https://mp.weixin.qq.com/s/soruo90Dbtzi6d1kA63Akg
+https://zhuanlan.zhihu.com/p/41517198
 
-阿里提出智能算力引擎DCAF，节省20%GPU算力
-
-https://zhuanlan.zhihu.com/p/79030485
-
-AllReduce算法的前世今生
-
-https://mp.weixin.qq.com/s/oDak7peTT5ynNYrH7LSWTg
-
-分布式层次GPU参数服务器架构
-
-https://mp.weixin.qq.com/s/4XMVYXnzpYZ4DrIabuTUig
-
-Ring All-reduce: 分布式深度学习的巧妙同步
-
-https://zhuanlan.zhihu.com/p/28226956
-
-浮点峰值那些事儿
-
-https://zhuanlan.zhihu.com/p/285994980
-
-针对深度学习的GPU共享
-
-https://mp.weixin.qq.com/s/Np4w7RC2JFlB7ZGIduu71w
-
-爱奇艺机器学习平台的建设实践
-
-https://mp.weixin.qq.com/s/9k6PDusoDHjmz58HAZxZcw
-
-GPipe: 小批量流水线带来的大模型训练
-
-https://mp.weixin.qq.com/s/DwjvEn04lGzKU8mDu-5q4g
-
-大幅提升训练性能，字节跳动与清华提出新型分布式DNN训练架构
-
-https://mp.weixin.qq.com/s/dJa5zOXgJJQOM5uWog3JZA
-
-Local Parallesim：一种新并行训练方法
-
-https://zhuanlan.zhihu.com/p/335116835
-
-推荐系统Serving架构分析
-
-https://mp.weixin.qq.com/s/DdsJ-ZB_cX9UhbQNK6dCag
-
-分布式深度学习训练网络综述
-
-https://mp.weixin.qq.com/s/qpwBGlTtTLEAhYAUpPyXTQ
-
-CMU：分布式机器学习原理与策略 AAAI2021教程，附221页ppt
-
-https://mp.weixin.qq.com/s/nK-9ck5S6noIETOb8b2dJw
-
-vivo AI计算平台弹性分布式训练的探索和实践
-
-https://mp.weixin.qq.com/s/RMDEvy-3-L-Rag1OrZLYhg
-
-深度学习模型的训练时内存次线性优化
-
-https://mp.weixin.qq.com/s/8PUIJykzoNe-fYht5ozrcQ
-
-新一代CTR预测服务的GPU优化实践
+跟我一起学OpenOCD
