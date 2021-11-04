@@ -373,6 +373,14 @@ tvm or mlir？
   %4 = qnn.requantize(%3, 5.39136e-05f /* ty=float32 */, 0 /* ty=int32 */, 0.0150183f /* ty=float32 */, 0 /* ty=int32 */, axis=1, out_dtype="uint8") /* ty=Tensor[(1, 32, 112, 112), uint8] */;
 ```
 
+可以看出同一个QnnConv2D两者的展开形式存在一定的差异，但是语义上却基本是一致的。
+
+## 模型导入
+
+在继续主题之前，我们首先来看看这个展开形式的差异是如何造成的。
+
+
+
 # GLOW
 
 代码：
