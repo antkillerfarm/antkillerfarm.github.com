@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十三）——花式池化, Regularization, seq2seq
+title:  深度学习（十三）——花式池化, seq2seq
 category: DL 
 ---
 
@@ -129,6 +129,30 @@ Stochastic-pooling则介于两者之间，通过对像素点按照数值大小�
 
 比如，AlphaGo采用CNN识别棋局，但对棋局来说，下采样显然是没有什么物理意义的，因此，**AlphaGo的CNN是没有Pooling的**。
 
+## Adaptive pool
+
+在实际的项目当中，我们往往预先只知道的是输入数据和输出数据的大小，而不知道核与步长的大小。
+
+Adaptive pool只要我们给定输入数据和输出数据的大小，自适应算法就能够自动帮助我们计算核的大小和每次移动的步长。
+
+标准的Max/AvgPooling是通过kernel_size，stride与padding来计算output_size： 
+
+output_size = ceil ( (input_size+2∗padding−kernel_size)/stride）+1
+
+反过来的话，就有如下公式：
+
+stride = floor ( (input_size / (output_size) )
+
+kernel_size = input_size − (output_size−1) * stride
+
+padding = 0
+
+参考：
+
+https://blog.csdn.net/xiaosongshine/article/details/89453037
+
+AdaptivePooling与Max/AvgPooling相互转换
+
 ## 全局平均池化
 
 Global Average Pool是另一类池化操作，一般用于替换FullConnection层。
@@ -220,16 +244,6 @@ SoftPool：基于Softmax加权的池化操作
 https://mp.weixin.qq.com/s/86cOSCLWJZBs4vLHGxrjGQ
 
 我看尽了池化
-
-# Regularization
-
-DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：
-
-$$loss(W;x;y) = loss_D(W;x;y) + \lambda_R R(W) + \lambda_g \sum_{l=1}^{L} R_g(W_l^{(G)})$$
-
-$$R_g(w^{(g)}) = \sum_{g=1}^{G} \lVert w^{(g)} \rVert_g = \sum_{g=1}^{G} \sum_{i=1}^{|w^{(g)}|} {(w_i^{(g)})}^2$$
-
-Group Regularization也叫做Block Regularization或Structured Regularization。
 
 # seq2seq
 

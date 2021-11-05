@@ -111,6 +111,12 @@ https://mp.weixin.qq.com/s/W7GNhEq-em18V0YjCZ7MBw
 
 被苹果抛弃的芯片供应商，现状如何？
 
+## 寒武纪
+
+https://www.zhihu.com/question/41469046
+
+寒武纪神经网络处理器效能如何？
+
 ## Habana
 
 Habana Labs是一家位于以色列特拉维夫和加州圣何塞的无晶圆厂半导体公司，创立于2016年。

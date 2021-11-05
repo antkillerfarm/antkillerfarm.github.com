@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  MLPerf, 移动端推理框架, DL Backend, Kubernetes, DRL实战
+title:  MLPerf, 移动端推理框架, DL Backend, DRL实战
 category: AI 
 ---
 
@@ -241,85 +241,43 @@ performance test:
 
 `onnxruntime_perf_test -m times -r 3 -e cpu model.onnx ./result.txt`
 
+backend的代码在onnxruntime/core/providers下。
+
+其中，openvino的fused graph代理是写的比较好的。关键函数有：
+
+GetUnsupportedNodeIndices：上报op是否支持。
+
+GetPartitionedClusters：根据支持列表分割计算图
+
+AppendClusterToSubGraph：将切割好的图打包发给backend。
+
 ### DirectML
 
 基于DirectX 12提出的加速方案。
 
-# Kubernetes
+# GLOW
 
-Kubernetes是Google开源的容器集群管理系统，基于Docker构建一个容器的调度服务，提供资源调度、均衡容灾、服务注册、动态扩缩容等功能套件。因为Kubernetes中K和s之间有8个字母，因此又简称为K8s。类似的还有 internationalization被称为i18n。
+代码：
 
-![](/images/img3/Kubernetes.png)
-
-官网：
-
-https://kubernetes.io/
-
-Kubernetes还有个ML的工具集叫KubeFlow。
-
-https://github.com/kubeflow/kubeflow
+https://github.com/pytorch/glow
 
 参考：
 
-https://mp.weixin.qq.com/s/HEUIWK4skqMge8oziQg6Nw
+https://zhuanlan.zhihu.com/p/102127047
 
-kubernetes简介和实战
+Glow: Graph Lowering Compiler for Neural Networks
 
-http://violetgo.com/blogs/2015/10/14/k8s.html
+# NNFusion
 
-docker学习笔记(k8s)
+代码：
 
-https://mp.weixin.qq.com/s/wwwB8OHQmbwqmKKE8Lyv-w
+https://github.com/microsoft/nnfusion
 
-容器技术演化史
+参考：
 
-https://mp.weixin.qq.com/s/LpNlUlXpt2poRKXEvuIDjw
+https://mp.weixin.qq.com/s/CMTOW3cYQkkECpPuzZl0nQ
 
-Kubernetes NetworkPolicy工作原理浅析
-
-https://mp.weixin.qq.com/s/s5eDSQF6mFt2F9_nVtYemQ
-
-PaaS将吞噬云计算？Kubernetes的市场冲击波
-
-https://mp.weixin.qq.com/s/19xreKtNlllfFx43eUGhuQ
-
-如何使用Kubernetes轻松部署深度学习模型
-
-https://mp.weixin.qq.com/s/4e9l-GP22T-myP54hJJjPA
-
-Kubernetes如何打赢容器之战？ 
-
-https://mp.weixin.qq.com/s/iTfHv8EFx4O4G1sNxsuMkg
-
-再见，Yarn！滴滴机器学习平台架构演进
-
-https://mp.weixin.qq.com/s/CmHok-9gKVrHfiXpYUQ4nw
-
-浅析Kubernetes资源管理
-
-https://mp.weixin.qq.com/s/zzn61ADe2RA7K0L4-EMAOA
-
-你真的需要Kubernetes吗？
-
-https://mp.weixin.qq.com/s/2TRVWe01jHUtOioW31ukeg
-
-如何轻松学习Kubernetes？
-
-https://developer.aliyun.com/article/754267
-
-31篇技术文章，带你从零入门K8s
-
-https://mp.weixin.qq.com/s/mr_D_AA0zdux8F_10iRIHg
-
-自动化弹性伸缩如何支持字节跳动百万级核心错峰混部
-
-https://zhuanlan.zhihu.com/p/339008746
-
-Kubernetes入门&进阶实战
-
-https://mp.weixin.qq.com/s/LQY4Dw8-OwS52gt2HtBT8w
-
-备份和迁移Kubernetes应用程序利器-velero
+RAMMER如何进一步“压榨”加速器性能
 
 # DRL实战
 

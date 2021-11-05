@@ -239,11 +239,11 @@ microTVM可用于那些没有OS的单片机。
 
 https://tvm.apache.org/docs/arch/microtvm_design.html
 
-![](/images/img4/microtvm_workflow.svg)
+![](/images/img4/microtvm_workflow.png)
 
-![](/images/img4/microtvm_host_driven.svg)
+![](/images/img4/microtvm_host_driven.png)
 
-![](/images/img4/microtvm_standalone.svg)
+![](/images/img4/microtvm_standalone.png)
 
 从上面的图来看，microTVM只要在单片机的main函数中启动即可，同时参数也可以放到FLASH上。
 
@@ -375,32 +375,51 @@ tvm or mlir？
 
 可以看出同一个QnnConv2D两者的展开形式存在一定的差异，但是语义上却基本是一致的。
 
-## 模型导入
+## Relay IR
 
 在继续主题之前，我们首先来看看这个展开形式的差异是如何造成的。
 
+TFLite/Pytorch模型导入之后，有一个转换成Relay IR的过程，也就是所谓的frontend。
 
+相关代码在：
 
-# GLOW
+TFLite: python/tvm/relay/frontend/tflite.py
 
-代码：
+Pytorch: python/tvm/relay/frontend/pytorch.py和python/tvm/relay/frontend/qnn_torch.py
 
-https://github.com/pytorch/glow
+可以看出Pytorch的量化模型的weight是浮点数，而TFLite的量化模型的weight是整数。
 
-参考：
+有frontend自然就有backend：
 
-https://zhuanlan.zhihu.com/p/102127047
+python/tvm/relay/op/contrib/ethosn.py
 
-Glow: Graph Lowering Compiler for Neural Networks
+和切割计算图有关的代码主要是：
 
-# NNFusion
+```python
+seq = tvm.transform.Sequential(
+    [
+        ......
+        transform.MergeComposite(pattern_table()),
+        transform.AnnotateTarget("ethos-n"),
+        transform.MergeCompilerRegions(),
+        transform.PartitionGraph(),
+    ]
+)
+```
 
-代码：
+这里的Pass基本看名字就知道功能了，唯一需要关注的是MergeComposite。
 
-https://github.com/microsoft/nnfusion
+这是pattern_table的其中一个表项：
 
-参考：
-
-https://mp.weixin.qq.com/s/CMTOW3cYQkkECpPuzZl0nQ
-
-RAMMER如何进一步“压榨”加速器性能
+```python
+def qnn_conv_pattern():
+    pattern = is_op("nn.pad")(wildcard(), wildcard()) | wildcard()
+    pattern = is_op("qnn.conv2d")(
+        pattern, is_constant(), is_constant(), is_constant(), is_constant(), is_constant()
+    )
+    pattern = is_op("nn.bias_add")(pattern, is_constant())
+    pattern = is_op("qnn.requantize")(
+        pattern, is_constant(), is_constant(), is_constant(), is_constant()
+    )
+    return pattern
+```

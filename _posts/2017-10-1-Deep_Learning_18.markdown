@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十八）——无监督/半监督/自监督深度学习（2）
+title:  深度学习（十八）——无监督/半监督/自监督深度学习（2）, Regularization
 category: DL 
 ---
 
@@ -360,3 +360,13 @@ MoCo V3：我并不是你想的那样！
 https://mp.weixin.qq.com/s/sAYh3l2eab2r2KpbdxN30A
 
 MoCo三部曲
+
+# Regularization
+
+DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：
+
+$$loss(W;x;y) = loss_D(W;x;y) + \lambda_R R(W) + \lambda_g \sum_{l=1}^{L} R_g(W_l^{(G)})$$
+
+$$R_g(w^{(g)}) = \sum_{g=1}^{G} \lVert w^{(g)} \rVert_g = \sum_{g=1}^{G} \sum_{i=1}^{|w^{(g)}|} {(w_i^{(g)})}^2$$
+
+Group Regularization也叫做Block Regularization或Structured Regularization。
