@@ -99,6 +99,24 @@ http://blog.sina.com.cn/s/blog_5122b1940102xf7x.html
 
 ---
 
+蜀八道：
+
+北部（关中-汉中）从东到西五条蜀道分别是：子午道、傥骆道、褒斜道、陈仓道、祁山道。此外，还有一条连通了陈仓道和褒斜道的短程栈道，名叫连云道。
+
+南部（汉中-川渝）从东到西三条蜀道分别是：荔枝道、米仓道、金牛道。此外，在四川到甘肃方向还有条阴平道，曹魏灭蜀就是走的这条路线。
+
+https://www.sohu.com/a/372819755_99908975
+
+千年蜀道话秦岭，八条古道通川陕
+
+---
+
+八水绕长安：
+
+长安八水指的是渭、泾、沣、涝、潏、滈、浐、灞八条河流。
+
+---
+
 ![](/images/img4/shipment.jpg)
 
 ---
@@ -216,35 +234,3 @@ https://www.zhihu.com/answer/513535282
 https://mp.weixin.qq.com/s/xvJqlHz__N43Z8SYH6pB8Q
 
 打赢抗洪战争，究竟有多难？
-
-https://mp.weixin.qq.com/s/Hz3kFgqmAG-SVxiel8Fj7w
-
-她绘制的地图，革新了我们对海底的认知（Marie Tharp）
-
-https://mp.weixin.qq.com/s/5qYXmOvQigvcDDeGQGmkSQ
-
-河水能把地壳冲掉吗？
-
-https://mp.weixin.qq.com/s/ynyU5YUSHSu839N1pljBHQ
-
-张掖绝美“彩虹山”，为何常常被误解成丹霞地貌？
-
-https://mp.weixin.qq.com/s/YY7JfNxDzcNuku73HYxE8A
-
-有一种地震，对生活是有益的？
-
-https://mp.weixin.qq.com/s/5jH_PH5SfsmR_i-SWCavJA
-
-这只猫居然2000多岁了，古代的猫奴这么疯狂的吗？居然用它做那种事……（纳斯卡地画）
-
-https://mp.weixin.qq.com/s/28lFYHm_dd9jQdO-MwbmWw
-
-超前的思想，迟到的荣誉（Alfred Lothar Wegener）
-
-https://mp.weixin.qq.com/s/ABYf1naUtycBNllvqW5y6Q
-
-荒漠中发现神秘巨型金属，网友开始光速破案
-
-https://mp.weixin.qq.com/s/MWGedW1qbeqicE0wEqcSQw
-
-5000多万年前，江南曾是一片荒漠

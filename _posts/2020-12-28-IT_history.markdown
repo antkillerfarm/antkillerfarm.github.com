@@ -358,3 +358,7 @@ KLA-芯片制程控制之王
 https://mp.weixin.qq.com/s/oB5uOfnSyJZ9UlNt1zreUg
 
 CAD四大山头的由来
+
+https://www.zhihu.com/question/310630283
+
+为什么德国和苏联在电子方面一直不如英美？

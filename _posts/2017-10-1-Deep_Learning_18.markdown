@@ -269,6 +269,10 @@ https://mp.weixin.qq.com/s/1f1Ma2ZQVTuPo38_uCE0fQ
 
 大规模推荐系统的自监督学习
 
+https://mp.weixin.qq.com/s/qgP39JKD3fbVNK8e4Hw4PQ
+
+重邮高新波等最新《少样本目标检测算法》综述论文
+
 ## 对比学习
 
 https://mp.weixin.qq.com/s/r1uXn2jGsHZcZ8Nk7GnGFA

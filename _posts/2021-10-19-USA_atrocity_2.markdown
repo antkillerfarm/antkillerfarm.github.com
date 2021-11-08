@@ -149,6 +149,14 @@ https://mp.weixin.qq.com/s/XNAs8ImhTIGosn7naOhvBQ
 
 ---
 
+让军队参与电影拍摄是普遍存在的，因为电影被认为是最有效的宣传手段。在美国，军队和好莱坞心甘情愿地相互合作，节省彼此军事广告的预算和电影制作费用。
+
+https://mp.weixin.qq.com/s/O0zghfSj5kmgFx0_DILTaQ
+
+苏联军队如何参与到电影的拍摄之中
+
+---
+
 https://mp.weixin.qq.com/s/kCLZyjoDoNK-py06hvmujA
 
 特供商店在苏联的兴衰（上）
@@ -176,3 +184,7 @@ https://mp.weixin.qq.com/s/M3ZselQLqCdLY53dpqILLA
 https://mp.weixin.qq.com/s/2TAWe4frnI6RTpe4ui0mAg
 
 穿越回苏联：火红岁月的情与色（下）
+
+https://mp.weixin.qq.com/s/YPgFtLkpl9BGNZPo_IEcrg
+
+《功勋》孙家栋单元的中苏军服细节看不清？来看特写和解析
