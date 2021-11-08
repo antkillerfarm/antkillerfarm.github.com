@@ -1,0 +1,136 @@
+---
+layout: post
+title:  C/C++编程心得（五）
+category: language 
+---
+
+* toc
+{:toc}
+
+# C/C++参考资源
+
+## spaceship operator
+
+spaceship operator: `<=>`
+
+C++20引入了spaceship operator：
+
+- 如果`a<b`，返回std::strong_ordering::less。
+- 如果`a>b`，返回std::strong_ordering::greater。
+- 如果a与b全等/相等，返回std::strong_ordering::equal。
+
+这和`strcmp`的设计理念类似。
+
+此外，还有关系运算符的重载推导，定义了`<=>`之后，其他诸如`==`、`!=`、`<`、`<=`、`>`、`>=`的关系运算自动成立，无需再写相应的重载函数了。同理，如果定义了`==`，那么`!=`就自动成立了。
+
+参考：
+
+https://cloud.tencent.com/developer/article/1352324
+
+C++20草案中的宇宙飞船运算符(<=>,spaceship operator)
+
+## 线程安全注解
+
+线程安全注解是现代C++开发的机制，可以在代码编译阶段检查锁的使用情况，从而发现线程同步的相关问题。该功能目前只有clang编译器支持。
+
+https://blog.csdn.net/qq_32648921/article/details/109114887
+
+线程安全注解
+
+## Implementation-defined、Unspecified、Undefined
+
+Implementation-defined：C标准没有明确规定，但是要求编译器必须对此做出明确规定，并写在编译器的文档中。
+
+Unspecified：C标准没有明确规定，编译器可以自己决定，不必写在编译器的文档中。
+
+Undefined：C标准没规定怎么处理，编译器很可能也没规定。
+
+https://www.cnblogs.com/MagicLetters/archive/2011/08/03/2126471.html
+
+C语言中关于Implementation-defined、Unspecified和Undefined
+
+## 在构造函数内部调用构造函数
+
+
+
+https://www.cnblogs.com/stemon/p/4834043.html
+
+在构造函数内部调用构造函数
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/23016264
+
+这么多款STL，总有一款适合你
+
+https://mp.weixin.qq.com/s/Hpn7KqYlBKz0JdryiozqyQ
+
+每个开发者都应该了解的一些C++特性
+
+https://www.cnblogs.com/wuchanming/p/3913492.html
+
+emplace_back与push_back的区别
+
+https://zhuanlan.zhihu.com/p/82895086
+
+当我们谈论C++时，我们在谈论什么？
+
+https://mp.weixin.qq.com/s/pxyTlQn4wx-N_MaWZc0oAQ
+
+漫谈C++的各种检查
+
+https://mp.weixin.qq.com/s/LchYGGcSbIMVGxO0Uea0RA
+
+深入C++回调
+
+https://blog.csdn.net/hahahacff/article/details/39504699
+
+Java中创建对象的时候代码执行顺序(这个问题C++应该也存在)
+
+https://blog.csdn.net/msq19895070/article/details/7910969
+
+嵌入式程序员应知道的几个基本问题
+
+http://dev.yesky.com/393/3007393.shtml
+
+深入理解C++中的mutable关键字
+
+http://blog.csdn.net/apunix/archive/2008/01/14/2043945.aspx
+
+UNREFERENCED_PARAMETER的作用
+
+https://mp.weixin.qq.com/s/1ELGzBkIdO1xa6LZV80raQ
+
+C++中Future和Promise的一种简单实现
+
+https://www.zhihu.com/question/24301047
+
+如何理解C++11的六种memory order？
+
+https://mp.weixin.qq.com/s/en9T7WfQDvFan9tu1q8oRA
+
+c++11与内存模型
+
+https://mp.weixin.qq.com/s/2Lq93xPffOVZB8WvbkhCDg
+
+函数调用的三种约定，你都清楚吗
+
+https://mp.weixin.qq.com/s/m-dLZGAvY5BdVRfVWSpS2g
+
+C++11的异步操作不只是thread
+
+https://zhuanlan.zhihu.com/p/58976871
+
+编程风格之声明式与命令式的区别
+
+https://www.zhihu.com/question/447592340
+
+C语言的源程序是可以直接运行吗？（C语言的解释执行）
+
+https://zhuanlan.zhihu.com/p/346465585
+
+极大提高你开发效率的C++ tricks
+
+https://www.zhihu.com/question/280665935
+
+为什么C/C++要分为头文件和源文件？
