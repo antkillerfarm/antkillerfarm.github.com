@@ -361,3 +361,19 @@ class QnnQuantizeConstFold : public DFPatternRewrite {
 `Callback`的参数中，`pre`表示原始`Expr`，`post`表示替换后的`Expr`，返回值也是替换后的`Expr`。（方便使用链式调用？）
 
 如果Pass什么都不做的话，直接返回`pre`或者`post`就可以了。
+
+## Python版的Pass
+
+Pass不仅能用C++写，也可用python写。
+
+```python
+
+```
+
+可以看出，写法也是大同小异，只是更便于集成，也不用写FFI接口了。
+
+参考：
+
+https://tvm.apache.org/docs/reference/langref/relay_pattern.html
+
+Pattern Matching in Relay

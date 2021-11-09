@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  版本管理工具的前世今生, Kannel, Win10历险记, 运维工具集, OA办公软件
+title:  版本管理工具的前世今生, Kannel, Win10/11历险记, 运维工具集, OA办公软件
 category: technology 
 ---
 
@@ -63,7 +63,7 @@ http://www.kannel.org/
 
 过了一年，闲暇无聊之际，旧事重提，于是发现了Kannel，并做了一个demo。可惜公司时局变化，这一切都变得无足轻重了。
 
-# Win10历险记
+# Win10/11历险记
 
 2015.8
 
@@ -88,6 +88,10 @@ https://docs.microsoft.com/zh-cn/windows-server/storage/disk-management/change-a
 这样一来，光盘确实是没啥用了，即使我的第一台PC的光驱，实际使用也不过数十次，更多的主要是用于重装系统，如今连这也用不着了。
 
 最后，吐槽一下系统的体积，Win10启动需要8G以上的U盘，DVD看来也不够用了。
+
+2021.11
+
+最近电脑更新了Win11，升级顺利，暂时无感。
 
 # 运维工具集
 

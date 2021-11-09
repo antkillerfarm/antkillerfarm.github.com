@@ -51,7 +51,21 @@ C语言中关于Implementation-defined、Unspecified和Undefined
 
 ## 在构造函数内部调用构造函数
 
+```cpp
+struct CLS 
+{ 
+    int m_i; 
+    CLS( int i ) : m_i(i){} 
+    CLS() 
+    { 
+        CLS(0); 
+    } 
+}; 
+```
 
+如上，在`CLS()`调用`CLS(0);`会创建一个新的临时对象，达不到重载的目的。
+
+应该怎么做呢？`new (this)CLS(0);`
 
 https://www.cnblogs.com/stemon/p/4834043.html
 
