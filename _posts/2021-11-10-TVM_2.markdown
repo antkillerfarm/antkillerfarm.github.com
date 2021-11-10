@@ -1,0 +1,96 @@
+---
+layout: post
+title:  TVM实战（二）
+category: AI 
+---
+
+* toc
+{:toc}
+
+# TVM实战
+
+## Relay IR（续）
+
+一般来说IR会定的比较细粒度，而AI硬件更喜欢粗粒度的op。所以往往若干个IR op组合起来，才能得到一个AI硬件op。这时就需要进行模板匹配。
+
+一般来说，数据可以分为变量和常量（`is_constant()`），如果既可能是变量，也可能是常量的话，就用`wildcard()`匹配。
+
+MergeComposite会将这个模板打包成一个函数，变量会写为函数的参数，而常量放到全局的meta data里。
+
+## 添加Pass
+
+下面我们来看看如何添加Pass进行这样的转换。
+
+```cpp
+class QnnQuantizeConstFold : public DFPatternRewrite {
+ public:
+  QnnQuantizeConstFold() {
+    data_pat_ = IsConstant();
+    pattern_ = IsOp("qnn.quantize")({data_pat_, IsConstant(), IsConstant()});
+  }
+
+  Expr Callback(const Expr& pre, const Expr& post,
+                const Map<DFPattern, Array<Expr>>& node_map) const override {
+    ......
+
+    if (output->dtype == DataType::Int(8)) {
+      return QuantizeData<int8_t>(......);
+    } else if (output->dtype == DataType::Int(32)) {
+      return QuantizeData<int32_t>(......);
+    }
+    return post;
+  }
+
+ protected:
+  DFPattern data_pat_;
+};
+```
+
+`Rewrite_`是Pass最重要的函数。其中最简单的当属`DFPatternRewrite`。
+
+`Callback`的参数中，`pre`表示原始`Expr`，`post`表示替换后的`Expr`，返回值也是替换后的`Expr`。（方便使用链式调用？）
+
+如果Pass什么都不做的话，直接返回`post`就可以了。
+
+PS：虽然`pre`和`post`在运行之初是相同的，但是一旦替换开始，两者就有差异了，所以如果是写入的内容，一定要引用`post`里的那份。
+
+## Python版的Pass
+
+Pass不仅能用C++写，也可用python写。
+
+```python
+class QnnQuantizeConstFold(tvm.relay.dataflow_pattern.DFPatternCallback):
+    def __init__(self, require_type=False):
+        super().__init__(require_type)
+        self.pattern = is_op("qnn.quantize")(
+            is_constant(), is_constant(), is_constant()
+        )
+
+    def callback(self, pre, post, node_map):
+        ......
+        if (dtype == "int8"):
+             return tvm.relay.Constant(tvm.nd.array(data.astype(np.int8)))
+        if (dtype == "int32"):
+            return tvm.relay.Constant(tvm.nd.array(data.astype(np.int32)))
+        return post
+```
+
+可以看出，写法也是大同小异，只是更便于集成，也不用写FFI接口了。
+
+使用方法：
+
+```python
+func = mod["main"]
+func = tvm.relay.Function(func.params, func.body, None, func.type_params, func.attrs)
+func = tvm.relay.dataflow_pattern.rewrite(RemoveClipAfterRequantize(), func)
+func = tvm.relay.dataflow_pattern.rewrite(QnnQuantizeConstFold(), func)
+mod = tvm.IRModule.from_expr(func)
+```
+
+这里展示了`DFPatternCallback`的使用方法，还有`IRModule`和`Expr`的相互转换方法。
+
+参考：
+
+https://tvm.apache.org/docs/reference/langref/relay_pattern.html
+
+Pattern Matching in Relay

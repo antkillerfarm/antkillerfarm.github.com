@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  TVM
+title:  TVM,TVM实战（一）
 category: AI 
 ---
 
@@ -405,6 +405,7 @@ seq = tvm.transform.Sequential(
         transform.PartitionGraph(),
     ]
 )
+seq(mod)
 ```
 
 这里的Pass基本看名字就知道功能了，唯一需要关注的是MergeComposite。
