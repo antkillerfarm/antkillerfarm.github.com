@@ -96,3 +96,11 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/HelloSDL
 可以用这个代码确认SDL v2.0的环境搭建是否正确。
 
 `sudo apt install libsdl2-dev`
+
+## SFML
+
+这几年出了一个替代品——SFML，是用C++写的。
+
+官网：
+
+https://www.sfml-dev.org/

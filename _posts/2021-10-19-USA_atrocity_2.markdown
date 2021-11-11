@@ -159,52 +159,6 @@ https://mp.weixin.qq.com/s/OJ2OyC3VvFUZN6Gqne7m5Q
 
 帝国主义的耻辱，抢殖民地都能亏钱（意大利）
 
-# 俄罗斯+
+https://mp.weixin.qq.com/s/GakM5MRhZbCZOz1VJC7HHQ
 
-胜利旗帜是俄罗斯的国家象征之一，是苏联人民及其武装部队在1941-1945年伟大卫国战争中战胜纳粹德国的正式标志。这面旗帜在苏联国旗的基础上书写了攻占柏林国会大厦的苏军部队番号：白俄罗斯第1方面军-突击第3集团军-第79步兵军-荣膺库图佐夫二级勋章的伊德里茨第150步兵师。
-
-https://mp.weixin.qq.com/s/XNAs8ImhTIGosn7naOhvBQ
-
-欧洲反法西斯战争胜利日与胜利红旗的故事
-
----
-
-让军队参与电影拍摄是普遍存在的，因为电影被认为是最有效的宣传手段。在美国，军队和好莱坞心甘情愿地相互合作，节省彼此军事广告的预算和电影制作费用。
-
-https://mp.weixin.qq.com/s/O0zghfSj5kmgFx0_DILTaQ
-
-苏联军队如何参与到电影的拍摄之中
-
----
-
-https://mp.weixin.qq.com/s/kCLZyjoDoNK-py06hvmujA
-
-特供商店在苏联的兴衰（上）
-
-https://mp.weixin.qq.com/s/C2DIOcL9pE-FWspAt8Ut_Q
-
-特供商店在苏联的兴衰（下）
-
-https://www.zhihu.com/question/21817255
-
-俄罗斯（苏联）作为一个工业大国，为什么没有世界性的汽车品牌？
-
-https://zhuanlan.zhihu.com/p/331709823
-
-苏联人给他发的奖章，比给勃列日涅夫还多
-
-https://zhuanlan.zhihu.com/p/390097908
-
-乌兹别克棉花案：苏联解体的潘多拉魔盒之钥
-
-https://mp.weixin.qq.com/s/M3ZselQLqCdLY53dpqILLA
-
-穿越回苏联：火红岁月的情与色（上）
-
-https://mp.weixin.qq.com/s/2TAWe4frnI6RTpe4ui0mAg
-
-穿越回苏联：火红岁月的情与色（下）
-
-https://mp.weixin.qq.com/s/YPgFtLkpl9BGNZPo_IEcrg
-
-《功勋》孙家栋单元的中苏军服细节看不清？来看特写和解析
+福报来了，美国14岁童工被政客允许工作至深夜11点

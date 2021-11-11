@@ -27,6 +27,14 @@ http://user.xmission.com/~nate/opengl.html
 
 教程中示例程序的操作非常简单，基本没什么好说的。唯一需要注意的是，点击鼠标右键会弹出菜单。而且右边屏幕的菜单不可点击，否则程序会退出，但可以用菜单上标注的键盘快捷键选中。这些都是看源代码之后，才发现的。
 
+## Tool Kit
+
+![](/images/img4/opengl.png)
+
+GLAD：Multi-Language GL/GLES/EGL/GLX/WGL Loader-Generator
+
+简单说glad是glew的升级版。
+
 ## 环境准备
 
 ### Ubuntu

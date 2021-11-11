@@ -107,6 +107,10 @@ https://www.ibm.com/developerworks/cn/linux/l-cn-scons/
 
 使用SCons轻松建造程序
 
+https://mp.weixin.qq.com/s/3QS_9U_X2bELwLzzVfaBOQ
+
+SCons-Python给C++做的烤饼，香！
+
 ## Tkinter
 
 Tkinter简明教程

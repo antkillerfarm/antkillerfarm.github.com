@@ -251,14 +251,6 @@ https://mp.weixin.qq.com/s/jjT0x99ht8xtfWmzL-0R1A
 
 深度学习的IR“之争”
 
-# CATIA
-
-CATIA是法国达索公司的产品开发旗舰解决方案。作为PLM协同解决方案的一个重要组成部分，它可以通过建模帮助制造厂商设计他们未来的产品，并支持从项目前阶段、具体的设计、分析、模拟、组装到维护在内的全部工业设计流程。CATIA是GPU在工业上的一个重要的应用案例。
-
-官网：
-
-https://www.3ds.com/products-services/catia/
-
 # MXNet
 
 https://mp.weixin.qq.com/s/50uGupiwU2UVuVeMm_bTag
