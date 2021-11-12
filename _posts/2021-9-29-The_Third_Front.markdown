@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 三线建设
+title: 三线建设（一）
 category: Bombs & Satellite 
 ---
 
@@ -117,6 +117,16 @@ https://zhuanlan.zhihu.com/p/347911461
 
 ---
 
+苏联电影《巾帼英雄》以苏联第一个女拖拉机手安格琳娜为原型，里面的女主人公在和平时期开着拖拉机种田，战争时期驾驶坦克与德国法西斯战斗。
+
+据统计，黑龙江垦区共接收了14万复转官兵、5万大中专院校毕业生、20万内地支边青年和54万城市知识青年。
+
+https://view.inews.qq.com/wxn/20210623A071V800
+
+新中国第一代女拖拉机手：在北大荒耕起了草原万里
+
+---
+
 https://www.zhihu.com/column/c_1301567453751824384
 
 中国工业遗产保护名录（第一批）
@@ -166,19 +176,3 @@ https://zhuanlan.zhihu.com/p/158647597
 https://zhuanlan.zhihu.com/p/159046760
 
 成昆铁路通车50周年致敬之三
-
-https://www.sohu.com/a/236728788_100143139
-
-这条铁路被称为“20世纪三大奇迹”，修建时外国人嘲笑中国人疯了
-
-https://www.zhihu.com/answer/88285807
-
-上世纪五六十年代进行的三线建设指的是什么, 有什么长远影响？
-
-http://news.jstv.com/a/20161028/1477642949557.shtml
-
-一座城的保密往事——记三线建设时期的攀枝花
-
-https://zhuanlan.zhihu.com/p/27611921
-
-攀枝花，一个胜天半子的城市
