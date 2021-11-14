@@ -29,7 +29,7 @@ ld：链接器
 
 as86、ld86：8086汇编编译器和链接器
 
-linux文件分割用split,合并用cat。最近下了一本采用split分割的书，但是我没有Linux环境，于是在windows的命令行下用type、>、>>合并了文件。
+linux文件分割用split,合并用cat。最近下了一本采用split分割的书，但是我没有Linux环境，于是在windows的命令行下用`type *.txt >>f:\1.txt`合并了文件。
 
 ## printf和wprintf混用的问题
 
