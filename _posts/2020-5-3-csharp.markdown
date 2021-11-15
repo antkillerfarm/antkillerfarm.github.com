@@ -94,6 +94,16 @@ NuGet是C#项目的包管理工具，作用类似maven、pip。
 
 https://www.nuget.org/
 
+## 参考
+
+https://www.zhihu.com/question/20451584
+
+Java和C#最大的不同是什么？
+
+https://blog.csdn.net/dodream/article/details/4719578
+
+CLR、CLI、CTS、CLS的关系
+
 # Lisp & GUI
 
 客观的说，目前开源领域并没有很好用的和Lisp配套的GUI工具集，几个开源实现要么完工度不高，要么过于古老，好几个的样式都是90年代中期的风格。

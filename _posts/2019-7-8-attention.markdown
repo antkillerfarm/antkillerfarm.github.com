@@ -169,6 +169,10 @@ https://mp.weixin.qq.com/s/I4FaPxj-8i3YHjaMoAniPQ
 
 为什么有些深度学习网络要加入Product层？
 
+https://www.zhihu.com/question/325839123
+
+深度学习attention机制中的Q,K,V分别是从哪来的？
+
 ## Multi-Head Attention
 
 ![](/images/img2/Attention_6.png)

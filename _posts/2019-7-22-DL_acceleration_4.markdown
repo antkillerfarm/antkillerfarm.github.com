@@ -187,6 +187,12 @@ https://blog.csdn.net/u013010889/article/details/90295078
 
 int8量化和tvm实现
 
+## Block-wise Quantization
+
+经过观察，在正态分布下，绝对值很大的参数的比例会很少，所以一起归一会使得大多数参数变得很小，从而使得量化过程中的一些数字范围对应的int8没有被充分利用，导致更多的信息丢失。
+
+把参数划分为了小Block，在进行量化的时候，按照block内绝对值最大的数对这个block进行归一化，使得所有参数都落在 [-1, 1] 这个范围，这就是Block-wise Quantization。
+
 ## Trainning Quantization
 
 除了上面这些无条件Quantization之外，训练中的Quantization也是一大类算法。
@@ -334,3 +340,7 @@ https://mp.weixin.qq.com/s/7dzQhgblEm-kzRnpddweSw
 https://mp.weixin.qq.com/s/M3NcH30zY5Wlj76BDPQlMA
 
 模型压缩一半，精度几乎无损，TensorFlow推出半精度浮点量化工具包，还有在线Demo
+
+https://www.zhihu.com/question/498135156
+
+如何看待FAIR提出的8-bit optimizer：效果和32-bit optimizer相当？

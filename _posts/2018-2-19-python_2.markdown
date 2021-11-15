@@ -185,9 +185,9 @@ Template('The market cap of Alibaba is $Mcap mio $curr.')
         .substitute(info)
 ```
 
-`f'The market cap of Alibaba is {Mcap} mio {curr}.'`
+python3.6引入了f-string：
 
-f-string是python3.6引入的特性。
+`f'The market cap of Alibaba is {Mcap} mio {curr}.'`
 
 python的字符串还有其他玩法：
 
