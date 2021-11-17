@@ -269,6 +269,30 @@ https://mp.weixin.qq.com/s/AdmEd1FHxpZUwSGYy3qggg
   </tbody>
 </table>
 
+## 国产CPU
+
+当年引进“以赛亚”内核的时候，兆芯的性能是优于龙芯的，然而，经过这些年的发展，龙芯通过不断迭代内核大幅提升的CPU性能，CPU性能已经超越兆芯。要知道，当时，兆芯承接核高基01专项，而且还有上海市地方海量资金扶持，而龙芯获得的经费和补贴相对于兆芯少的可怜。龙芯用实践证明了自主研发更具发展后劲，自主研发具有更高的效费比，可以花小钱办大事。
+
+2013年前后，兆芯向威盛支付了一大笔钱购买技术。2020年10月，兆芯又向威盛支付了一大笔钱。这种“买了又买”的事实很容易让人产生疑惑，兆芯到底能不能不再向威盛买技术？能不能真正独立自主发展？
+
+https://mp.weixin.qq.com/s/HDTNCrKYJ7daZieg4rb4VA
+
+英特尔收购威盛X86业务 兆芯何去何从
+
+---
+
+多年前，ARM Cortex A57大致与X86阵营吊车尾的VIA nano性能相当，短短数年间，ARM公版架构就接近到X86主流水平。而同期飞腾的Arm CPU的CPU核则进步缓慢，从2014年至2021年，其CPU IPC仅提升了20%左右，即便是以牙膏厂闻名遐迩的英特尔也只能自叹不如。
+
+倚天710证明了ARM芯片从设计到制造的全球产业链在流程上已经非常成熟，证明了在全球分工的情况下，只要有钱就能设计出高性能ARM CPU。
+
+龙芯首席科学家胡伟武在公开讲座上就表示：“你给我一笔钱，叫我做一个芯片，我可以不用一个技术人员，只要行政助理，然后购买arm imagination的ip，委托第三方设计，然后给代工厂生产做出来......但你要我做一个A76级别的IP，（从零开始迭代演进）我可能要10年才能做出来”。
+
+国内这些ARM CPU如果不能实现自产自销，就只能宣传自主可控，卯足了劲往党政国企采购冲，一旦失去地方政府的支持，就只能关门倒闭，比如华芯通。
+
+https://mp.weixin.qq.com/s/KdJ0b-E0ckK6WMG5HDcEUw
+
+互联网巨头基于全球产业链打造ARM CPU
+
 ## Other
 
 https://zhuanlan.zhihu.com/p/34003929
@@ -280,103 +304,3 @@ https://zhuanlan.zhihu.com/p/34003929
 ---
 
 超线程其实就是两个线程共享一个计算单元和内存控制单元，但有自身独立的一些硬件，目的是两个都不是全负荷工作的线程可以轮流使用计算单元来实现比较好的throughput。但只要有一个很忙，那就可能饿死另一个。
-
----
-
-![](/images/img3/Memristor.png)
-
-https://mp.weixin.qq.com/s/k0u7pVzf7tjVF4UjZ3ai7A
-
-忆阻器的前世今生
-
-https://mp.weixin.qq.com/s/rSGRXfN4z3ElP7iQX1umjQ
-
-基于新型忆阻器的存内计算原理、研究和挑战
-
----
-
-https://mp.weixin.qq.com/s/Cij_95iLbAm0AEtrSb72_A
-
-关于CPU科普，这篇说得最详细
-
-https://zhuanlan.zhihu.com/p/29743431
-
-CPU制造的那些事之一：i7和i5其实是孪生兄弟！？
-
-https://zhuanlan.zhihu.com/p/29767262
-
-CPU制造的那些事之二：Die的大小和良品率
-
-https://zhuanlan.zhihu.com/p/31848803
-
-为什么CPU越来越多地采用硅脂而不是焊锡散热？
-
-https://zhuanlan.zhihu.com/p/27624654
-
-CPU风扇停转后会发生什么？CPU凭什么烧不坏
-
-https://zhuanlan.zhihu.com/p/30409360
-
-为什么CPU的频率止步于4G?我们触到频率天花板了吗？
-
-https://zhuanlan.zhihu.com/p/33145828
-
-什么是Speculative Execution？为什么要有它？
-
-http://mp.weixin.qq.com/s/sshhUppVPP6qM7LH1V3nSQ
-
-四位计算机的原理及其实现
-
-https://zhuanlan.zhihu.com/p/33579054
-
-Reset重启后发生了什么？它和关机后再开机有什么区别？
-
-https://zhuanlan.zhihu.com/p/34091597
-
-ARM攒机指南-网络篇
-
-https://zhuanlan.zhihu.com/p/34223088
-
-如何进入BIOS？
-
-https://zhuanlan.zhihu.com/p/30565679
-
-人工智能技术热潮中，是否存在破解苹果A11处理器的可能？
-
-https://mp.weixin.qq.com/s/UWpp2r0_yDxNyJk-cldVyA
-
-处理器高危漏洞无人幸免？树莓派：我们不受影响
-
->最近的Meltdown和Spectre漏洞被炒的沸沸扬扬，然而能用python语言讲述复杂的CPU计算原理，这是该文的一大创见。
-
-https://mp.weixin.qq.com/s/v_BsfSFp-LwiCOFKaMIS_g
-
-后摩尔时代，如何给你的CPU减负？
-
-https://mp.weixin.qq.com/s/gpfMOW7gzVa2HhYOlDy2nQ
-
-从Intel和ARM争霸战，看看做芯片有多难
-
-https://zhuanlan.zhihu.com/p/43626576
-
-关于芯片，这篇说得最详细！
-
-https://zhuanlan.zhihu.com/p/43768401
-
-如何像搭积木一样构建CPU？Intel和AMD都是怎么做的？
-
-https://zhuanlan.zhihu.com/p/48593932
-
-CPU底部的小块是干什么用的？为什么CPU这么多电源引脚？
-
-https://zhuanlan.zhihu.com/p/51145563
-
-TDP是CPU的功耗吗？TDP是固定不变的吗？
-
-https://mp.weixin.qq.com/s/gzE46SzANLaYaXdLVEBRaA
-
-专家揭秘“低功耗芯片设计”真相
-
-https://mp.weixin.qq.com/s/pFBhnjtXi8uNMGjYFeSfow
-
-芯片行业都难在哪儿？这篇说得最详细！

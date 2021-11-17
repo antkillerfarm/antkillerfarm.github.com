@@ -152,3 +152,7 @@ https://mp.weixin.qq.com/s/2TAWe4frnI6RTpe4ui0mAg
 https://mp.weixin.qq.com/s/YPgFtLkpl9BGNZPo_IEcrg
 
 《功勋》孙家栋单元的中苏军服细节看不清？来看特写和解析
+
+https://www.zhihu.com/question/498827834
+
+苏联拖拉机为什么没有解决农业问题？
