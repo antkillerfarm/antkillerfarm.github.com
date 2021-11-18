@@ -109,6 +109,10 @@ https://mp.weixin.qq.com/s/ZlfxZMWz5lSVLxkAf9isJQ
 
 斯坦福李纪为博士毕业论文：让机器像人一样交流
 
+https://github.com/dimil6666/shannon.ai-breaking-news/
+
+李纪为博士的人品看来不咋样啊，这里有一个声讨合集。。。江湖名言：做人别太ljw
+
 https://mp.weixin.qq.com/s/bNB7EFj1QgSNb9as1YfgJw
 
 Reddit热门话题：你是否也对NLP的现状感到失望？

@@ -9,6 +9,38 @@ category: ML
 
 # Optimizer进阶
 
+https://mp.weixin.qq.com/s/T4f4W0V6YNBbjWqWBF19mA
+
+目标函数的经典优化算法介绍
+
+https://mp.weixin.qq.com/s/R_0_E5Ieaj9KiWgg1prxeg
+
+为什么梯度的方向与等高线切线方向垂直？
+
+https://mp.weixin.qq.com/s/0gdGNv98DytB8KxwVu_M0A
+
+通俗易懂讲解Deep Learning最优化方法之AdaGrad
+
+https://mp.weixin.qq.com/s/VVHe2msyeUTGiC7f_f0FFA
+
+一文概览深度学习中的五大正则化方法和七大优化策略
+
+https://mp.weixin.qq.com/s/qp5tJynA2uZIgv-IzJ_lrA
+
+从基础知识到实际应用，一文了解“机器学习非凸优化技术”
+
+https://mp.weixin.qq.com/s/zFGQzC_uQdAwlr9BzA-CYg
+
+深度学习需要了解的四种神经网络优化算法
+
+https://mp.weixin.qq.com/s/rUqIfKWmEBVjajlAn2HXfg
+
+理解深度学习中的学习率及多种选择策略
+
+https://mp.weixin.qq.com/s/UfplwSgyWnLNiCdIrconhA
+
+SGD的那些变种，真的比SGD强吗
+
 https://mp.weixin.qq.com/s/GS3TvS9nZw-CSJds-Aw_ug
 
 UIUC孙若愚：60页论文综述深度学习优化
@@ -101,10 +133,6 @@ https://mp.weixin.qq.com/s/i-fE4aISTJ0584aIHJ8R0Q
 
 二阶优化！训练ImageNet仅需35个Epoch
 
-https://mp.weixin.qq.com/s/LY1-F5hEyM40DrvobYRexA
-
-腾讯AI Lab&北大提出基于随机路径积分的差分估计子非凸优化方法
-
 https://mp.weixin.qq.com/s/5KyODpSjkdYJ9q-itQDsAA
 
 自Adam出现以来，深度学习优化器发生了什么变化？
@@ -152,10 +180,6 @@ https://mp.weixin.qq.com/s/9laU3EW0B64rwVb7so1BEA
 https://mp.weixin.qq.com/s/mylRodVvvzI3e0-9-fEzTw
 
 深度研究自然梯度优化，从入门到放弃
-
-https://mp.weixin.qq.com/s/P0qzzyVQke_c-RUF0Faitw
-
-怎么判断一个优化问题是凸优化还是非凸优化？
 
 https://mp.weixin.qq.com/s/scGkuMJ4lZULhmK69vWYpA
 
@@ -322,77 +346,3 @@ Python中的时间序列分解
 https://mp.weixin.qq.com/s/XImzWu0ZBe8Cgquc167iLA
 
 用于时间序列数据的泊松回归模型
-
-# Attention进阶+
-
-https://mp.weixin.qq.com/s/-SU5cNbklI31WLmTawZJIQ
-
-自注意模型学不好？这个方法帮你解决！
-
-https://mp.weixin.qq.com/s/K5EbO0djcXHN4K5LQiMh5g
-
-Triplet Attention机制让Channel和Spatial交互更加丰富
-
-https://mp.weixin.qq.com/s/C4f0N_bVWU9YPY34t-HAEA
-
-UNC&Adobe提出模块化注意力模型MAttNet，解决指示表达的理解问题
-
-https://mp.weixin.qq.com/s/V3brXuey7Gear0f_KAdq2A
-
-基于注意力机制的交易上下文感知推荐，悉尼科技大学和电子科技大学最新工作
-
-https://mp.weixin.qq.com/s/2gxp7A38epQWoy7wK8Nl6A
-
-谷歌翻译最新突破，“关注机制”让机器读懂词与词的联系
-
-https://zhuanlan.zhihu.com/p/25928551
-
-用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践
-
-https://mp.weixin.qq.com/s/l4HN0_VzaiO-DwtNp9cLVA
-
-循环注意力区域实现图像多标签分类
-
-https://mp.weixin.qq.com/s/zhZLK4pgJzQXN49YkYnSjA
-
-自适应注意力机制在Image Caption中的应用
-
-https://mp.weixin.qq.com/s/uvr-G5-_lKpyfyn5g7ES0w
-
-基于注意力机制，机器之心带你理解与训练神经机器翻译系统
-
-https://mp.weixin.qq.com/s/ANpBFnsLXTIiW6WHzGrv2g
-
-自注意力机制学习句子embedding
-
-https://mp.weixin.qq.com/s/49fQX8yiOIwDyof3PD01rA
-
-CMU&谷歌大脑提出新型问答模型QANet：仅使用卷积和自注意力，性能大大优于RNN
-
-https://mp.weixin.qq.com/s/c64XucML13OwI26_UE9xDQ
-
-滴滴披露语音识别新进展：基于Attention显著提升中文识别率
-
-https://mp.weixin.qq.com/s/7OYY3L7gL4wVv_EjoosOHA
-
-如何增强Attention Model的推理能力
-
-https://mp.weixin.qq.com/s/9Kt6_DfeYRnhsb10aCSFGw
-
-FAGAN：完全注意力机制（Full Attention）GAN，Self-attention+GAN
-
-https://mp.weixin.qq.com/s/lZOIK5BRXZrmL_Z9crl6sA
-
-机器翻译新突破！“普适注意力”模型：概念简单参数少，性能大增
-
-https://mp.weixin.qq.com/s/jRfOzKO6OlQLokIzipbqUQ
-
-为什么使用自注意力机制？
-
-https://zhuanlan.zhihu.com/p/339123850
-
-关于attention机制的一些细节的思考
-
-https://mp.weixin.qq.com/s/n4mzHSweOT-vDWBGs0XFbw
-
-卷积神经网络中的自我注意

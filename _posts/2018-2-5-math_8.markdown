@@ -30,10 +30,6 @@ https://www.zhihu.com/question/32201415
 
 函数连续和一致连续有什么区别？开区间上的连续函数不一定是一致连续的，为什么？
 
-https://zhuanlan.zhihu.com/p/27554191
-
-非凸优化基石：Lipschitz Condition
-
 http://www.cnblogs.com/flywithyou/p/4135562.html
 
 Lipschitz连续

@@ -95,6 +95,14 @@ https://www.zhihu.com/question/20809971
 
 系统中对某一部件采用更快执行方式所能获得的系统性能改进程度，取决于这种执行方式被使用的频率，或所占总执行时间的比例。
 
+---
+
+![](/images/img4/value.jpg)
+
+产业价值链最底层的生产制造领域，即微笑曲线的中间。很多学理工科的人都有这个幻觉，觉得自己做技术做的价值曲线最左端的研发，有着光明的前途。但实际上99%的（对口就业）理工科学生最后都去了生产制造。对于新加坡的芯片行业，其实真正的研发是0，技术全部都是依靠欧美转移。
+
+什么算真正最左侧的研发。还是以芯片光刻胶为例，国外光刻胶阻抗可以做到10^15，国内只能做到10^10，阻抗越高纯度越高，这中间是十万倍的差距。
+
 # CPU
 
 ## 行业
@@ -296,35 +304,3 @@ https://mp.weixin.qq.com/s/S-YGgvE6ey2t9_YmVmKOFg
 https://mp.weixin.qq.com/s/FVcmCvimpoGCtCtm4RDtUg
 
 浅谈先进封装技术
-
-## NUMA
-
-![](/images/img2/NUMA.jpg)
-
-上图是NUMA（Non-Uniform Memory Access）的结构图。可以看到CPU和一部分内存直接相连，而和其他内存通过总线相连。如果我们把局部数据放到直连内存上，CPU显然就能够更快速的访问数据。
-
-与NUMA相关的还有一个著名的BUG：
-
-https://zhuanlan.zhihu.com/p/387117470
-
-十年后数据库还是不敢拥抱NUMA？
-
-参考：
-
-https://software.intel.com/en-us/articles/optimizing-applications-for-numa
-
-Optimizing Applications for NUMA
-
-https://mp.weixin.qq.com/s/uH0XRjDNfVQe5r1aes0zDw
-
-性能之殇：从冯·诺依曼瓶颈谈起
-
-## 多核
-
-https://zhuanlan.zhihu.com/p/53596593
-
-所有CPU内核一定生来平等吗？Intel非对称异构多处理器：Lakefield
-
-https://en.wikipedia.org/wiki/ARM_big.LITTLE
-
-ARM的big.LITTLE架构

@@ -105,10 +105,6 @@ https://mp.weixin.qq.com/s/cd08Lk4LcxV-qAVLq7-Kjg
 
 整数规划经典方法--割平面法（Cutting Plane Method）
 
-https://mp.weixin.qq.com/s/NlxZQv8Z-AzIlz6mG8cCxQ
-
-离散/整数/组合/非凸优化概述及其在AI的应用
-
 https://mp.weixin.qq.com/s/xhfRPedQ6pLQYrVsK2rgLA
 
 浅谈排队论

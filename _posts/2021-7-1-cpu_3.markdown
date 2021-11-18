@@ -9,6 +9,20 @@ category: resource
 
 # CPU
 
+## Other
+
+https://zhuanlan.zhihu.com/p/34003929
+
+调试程序时，设置断点的原理是什么？
+
+>Visual Studio有个有趣的特性是debug编译后，会把0xcc（INT 3）填入代码的空隙，这样一旦程序越界就会被VS捕捉而容易发现错误。而0xCCCC在中国的GBK编码是“烫”。有中国程序员翻看内存到代码段会发现很多"烫烫烫"，不明所以，以为发生了什么神奇的事情。
+
+---
+
+超线程其实就是两个线程共享一个计算单元和内存控制单元，但有自身独立的一些硬件，目的是两个都不是全负荷工作的线程可以轮流使用计算单元来实现比较好的throughput。但只要有一个很忙，那就可能饿死另一个。
+
+---
+
 ![](/images/img3/Memristor.png)
 
 https://mp.weixin.qq.com/s/k0u7pVzf7tjVF4UjZ3ai7A
@@ -18,6 +32,20 @@ https://mp.weixin.qq.com/s/k0u7pVzf7tjVF4UjZ3ai7A
 https://mp.weixin.qq.com/s/rSGRXfN4z3ElP7iQX1umjQ
 
 基于新型忆阻器的存内计算原理、研究和挑战
+
+---
+
+是因为AMD做不出（或者说基于成本不愿意做）单个N核心（N>8）的Die，单个Die是由两个CCX组成的Zeppelin模块，12nm制程单个Die面积213mm^2，为了堆核心只能用胶水把4个Die封装在一起。Intel是一个Die就28核心，14nm制程的CSL(Cascade Lake)架构单个Die面积就694mm^2，Xeon 9282的胶水双核已经够大了。
+
+https://www.zhihu.com/question/322451170
+
+为什么amd能胶水做到8die，intel最多胶水2die?
+
+---
+
+https://zhuanlan.zhihu.com/p/32216294
+
+破茧化蝶，从Ring Bus到Mesh网络，CPU片内总线的进化之路
 
 ---
 

@@ -9,6 +9,10 @@ category: ML
 
 # Optimizer（续）
 
+https://mp.weixin.qq.com/s/o10Fp2VCwoLqgzirbGL9LQ
+
+如何估算深度神经网络的最优学习率
+
 https://zhuanlan.zhihu.com/p/73441350
 
 从物理角度理解加速梯度下降

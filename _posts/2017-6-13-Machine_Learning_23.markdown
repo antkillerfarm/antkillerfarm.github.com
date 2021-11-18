@@ -233,15 +233,43 @@ https://mp.weixin.qq.com/s/JOyHFbtO7v0DgCKVNmhyYQ
 
 拟牛顿法：BFGS，DFP，DM条件
 
-## 非梯度优化
+## 非梯度优化/非凸优化
 
-对于深度学习模型的优化问题来说，随机梯度下降（SGD）是一种被广为使用方法。然而，实际上 SGD 并非我们唯一的选择。当我们使用一个“黑盒算法”时，即使不知道目标函数 f(x):Rn→R 的精确解析形式（因此不能计算梯度或 Hessian 矩阵）你也可以对 f(x) 进行评估。经典的黑盒优化方法包括“模拟退火算法”、“爬山法”以及“单纯形法”。演化策略（ES）是一类诞生于演化算法（EA）黑盒优化算法。
+对于深度学习模型的优化问题来说，随机梯度下降（SGD）是一种被广为使用方法。然而，实际上SGD并非我们唯一的选择。当我们使用一个“黑盒算法”时，即使不知道目标函数f(x):Rn→R的精确解析形式（因此不能计算梯度或Hessian矩阵）你也可以对f(x)进行评估。经典的黑盒优化方法包括“模拟退火算法”、“爬山法”以及“单纯形法”。演化策略（ES）是一类诞生于演化算法（EA）黑盒优化算法。
 
 参考：
 
 https://mp.weixin.qq.com/s/USHad8UvhsqWTI4MJmif5g
 
 在深度学习模型的优化上，梯度下降并非唯一的选择
+
+https://mp.weixin.qq.com/s/9G_7Ax9cPcQcYVqEfc-pyw
+
+从基础知识到实际应用，一文了解“机器学习非凸优化技术”
+
+https://zhuanlan.zhihu.com/p/27554191
+
+非凸优化基石：Lipschitz Condition
+
+https://mp.weixin.qq.com/s/LY1-F5hEyM40DrvobYRexA
+
+腾讯AI Lab&北大提出基于随机路径积分的差分估计子非凸优化方法
+
+https://mp.weixin.qq.com/s/P0qzzyVQke_c-RUF0Faitw
+
+怎么判断一个优化问题是凸优化还是非凸优化？
+
+https://mp.weixin.qq.com/s/NlxZQv8Z-AzIlz6mG8cCxQ
+
+离散/整数/组合/非凸优化概述及其在AI的应用
+
+https://www.zhihu.com/question/38677354
+
+梯度下降法是万能的模型训练算法吗？
+
+https://github.com/eyounx/ZOOpt
+
+一个非梯度优化的工具
 
 ## 参考
 
@@ -288,39 +316,3 @@ https://mp.weixin.qq.com/s/vt7BEHbwJrAzlL2Pc-6QFg
 https://mp.weixin.qq.com/s/6NBLLLa-S625iaehR8zDfQ
 
 掌握机器学习数学基础之优化（下）
-
-https://mp.weixin.qq.com/s/o10Fp2VCwoLqgzirbGL9LQ
-
-如何估算深度神经网络的最优学习率
-
-https://mp.weixin.qq.com/s/T4f4W0V6YNBbjWqWBF19mA
-
-目标函数的经典优化算法介绍
-
-https://mp.weixin.qq.com/s/R_0_E5Ieaj9KiWgg1prxeg
-
-为什么梯度的方向与等高线切线方向垂直？
-
-https://mp.weixin.qq.com/s/0gdGNv98DytB8KxwVu_M0A
-
-通俗易懂讲解Deep Learning最优化方法之AdaGrad
-
-https://mp.weixin.qq.com/s/VVHe2msyeUTGiC7f_f0FFA
-
-一文概览深度学习中的五大正则化方法和七大优化策略
-
-https://mp.weixin.qq.com/s/qp5tJynA2uZIgv-IzJ_lrA
-
-从基础知识到实际应用，一文了解“机器学习非凸优化技术”
-
-https://mp.weixin.qq.com/s/zFGQzC_uQdAwlr9BzA-CYg
-
-深度学习需要了解的四种神经网络优化算法
-
-https://mp.weixin.qq.com/s/rUqIfKWmEBVjajlAn2HXfg
-
-理解深度学习中的学习率及多种选择策略
-
-https://mp.weixin.qq.com/s/UfplwSgyWnLNiCdIrconhA
-
-SGD的那些变种，真的比SGD强吗
