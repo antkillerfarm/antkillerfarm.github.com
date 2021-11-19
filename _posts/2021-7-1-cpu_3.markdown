@@ -43,6 +43,8 @@ https://www.zhihu.com/question/322451170
 
 ---
 
+![](/images/img4/In_Chip_Bus.jpg)
+
 https://zhuanlan.zhihu.com/p/32216294
 
 破茧化蝶，从Ring Bus到Mesh网络，CPU片内总线的进化之路
