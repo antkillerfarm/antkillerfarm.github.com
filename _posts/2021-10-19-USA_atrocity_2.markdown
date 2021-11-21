@@ -77,6 +77,10 @@ https://mp.weixin.qq.com/s/pf-SgVBeOG1e5ZJjF-hvmw
 
 厉害了，美国开设国营毒品注射中心
 
+https://mp.weixin.qq.com/s/3NTKpE5LTpWAoP-7tpoZMA
+
+最危险大学！每天都有大新闻，7年性侵案翻12倍…
+
 ---
 
 万县惨案的远因是英商太古洋行（Swire Group，就是卖方糖、国泰航空大股东的那个香港太古）下属太古轮船公司（The China Navigation Co.）的蒸汽商船在川江中航行时，自恃船大马力强，多次不顾“急流处慢行”的川江航行规则，高速行驶，以激起江浪、看中国舢板被浪掀翻为乐。仅1926年6月到8月间，英船就先后浪翻4条中国木船，溺死40余人。

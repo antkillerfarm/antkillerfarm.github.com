@@ -302,3 +302,7 @@ https://mp.weixin.qq.com/s/tcs4U84iFmmOxf8W3i6ctQ
 https://mp.weixin.qq.com/s/gbUr8-WMookDi6ARtr8fRg
 
 如何从物理学角度解释“耀眼的光芒”
+
+https://mp.weixin.qq.com/s/_CiJPegImWm8G3Fr67QeRw
+
+剑桥大学惊现神级艺术生，高中辍学自学物理，竟发现爱因斯坦2个错误，推翻相对论...（约翰·莫法特）

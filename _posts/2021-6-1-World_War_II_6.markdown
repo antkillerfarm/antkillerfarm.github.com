@@ -33,6 +33,16 @@ Hans-Joachim Marseille，1919～1942。
 
 ---
 
+WSS第一梯队的就是1、2、3、5这4个老牌精锐，第二梯队9、10、11、12，其他的6、8表现还行，4前期日常拉胯，后期勉强凑合，7一直扫游击队，后来对付苏军也没什么亮点，番号1-12的至少都能看，12之后除了少数几个（比如17、22、23、27、28、32）还凑合之外其他大把的破铜烂铁，比如13、14这种跟国防军垫底水平差不多的货色。
+
+![](/images/img2/blitzkrieg_vs_deep_battle.png)
+
+---
+
+https://uboat.net/boats/finder.php
+
+一个关于德国U型潜艇的网站。
+
 https://mp.weixin.qq.com/s/0Lyk7Y31ViFOmfCXHaBdBQ
 
 二战南斯拉夫波黑游击队早期领导人姆拉登医学博士
@@ -44,6 +54,10 @@ https://mp.weixin.qq.com/s/mD74va6Oy99eePxvGJKmaw
 https://mp.weixin.qq.com/s/Ey3siLU4Ti9qy_yKptsLJw
 
 史上最牛火山喷发：团灭美军轰炸机大队，把88架飞机烧成渣渣
+
+https://www.zhihu.com/question/368905319
+
+为什么二战美军钢盔上都有网？
 
 # 俄罗斯+
 
@@ -60,6 +74,10 @@ https://mp.weixin.qq.com/s/XNAs8ImhTIGosn7naOhvBQ
 https://mp.weixin.qq.com/s/O0zghfSj5kmgFx0_DILTaQ
 
 苏联军队如何参与到电影的拍摄之中
+
+https://mp.weixin.qq.com/s/895h8CI-WVmmHQrKani0dQ
+
+苏联军队如何参与到电影的拍摄之中（2）
 
 ---
 

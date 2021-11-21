@@ -117,6 +117,10 @@ https://zhuanlan.zhihu.com/p/314071453
 
 `https://raw.fastgit.org/`
 
+https://zhuanlan.zhihu.com/p/248356236
+
+让你访问github提速到2MB每秒
+
 ## arxiv下载速度慢
 
 http://xxx.itp.ac.cn

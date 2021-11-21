@@ -99,11 +99,35 @@ https://mp.weixin.qq.com/s/YyXpzyvkSvRd4KR8Wlac9g
 
 主流发达国家教职体系，PI（Principal Investigator）制：助理教授（Assistant Professor，AP）->副教授（Associate Professor）->教授（Full Professor->讲席教授（Chair Professor）
 
+![](/images/img2/tenure.jpg)
+
+从称呼上来看，正式的院士是Member, 有投票权。外籍院士的英文原文是Foreign Associate, 没有投票权。中文都翻译成“院士”，宣传的时候也从来不提区别，有吃豆腐的嫌疑，明明是两个不一样的词。
+
 ---
+
+青千：指中组部千人计划中的青年千人计划；
+
+青拔：指中组部万人计划中的青年拔尖人才；
+
+青长：指教育部长江学者奖励计划中的青年长江学者；
+
+优青：指国家自然科学基金委设立的优秀青年科学基金项目。
+
+---
+
+https://mp.weixin.qq.com/s/iCbxGPZNOO-o0GT23BHeAw
+
+博士后x求职记
 
 https://mp.weixin.qq.com/s/cAgXbOUrBff78ahicxSwGQ
 
 俩博士相亲，第一反应是查对方发多少SCI，学傻了是一种怎样的体验？
+
+![](/images/img2/bio_PhD.jpg)
+
+https://zhuanlan.zhihu.com/p/56874296
+
+我的劝退之总结篇
 
 ---
 
@@ -294,29 +318,3 @@ https://mp.weixin.qq.com/s/YEt7XH9mNPmx3QURebbBmg
 https://mp.weixin.qq.com/s/pkgbDDBv-OPGHyeEBVDXQQ
 
 国产疫苗，对新冠病毒突变株效果如何？
-
-# 生物+
-
-https://mp.weixin.qq.com/s/bvBo78DFR28HZlxKCjKa2Q
-
-一场改变命运的转移（粉虱）
-
-https://mp.weixin.qq.com/s/M6Mfv1hmmMEIfn1XhXDiCw
-
-小虫窃取植物基因，获得抗毒超能力
-
-https://mp.weixin.qq.com/s/DPFNbFOu4hyu3dpLQ_Rv6g
-
-用毒蛇的毒毒毒蛇，毒蛇会不会被毒毒死？
-
-https://mp.weixin.qq.com/s/1YfsFe462NU9JwCkeCl34w
-
-五颜六色的猕猴桃? 还有麻辣味的那种
-
-https://mp.weixin.qq.com/s/B7MUEXmPttlpvUz0JBfwkQ
-
-“ICU菇”：蘑界常见杀手，天生的策略家
-
-https://mp.weixin.qq.com/s/DDFdKzNedeZdz6YU46vhUw
-
-如何绘制一张海洋生物“山海经”？

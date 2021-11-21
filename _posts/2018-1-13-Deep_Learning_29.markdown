@@ -301,6 +301,10 @@ https://mp.weixin.qq.com/s/P4FxL2jAXaJYZ0ZTY8xtzg
 
 深度学习人体姿态估计：2014-2020全面调研
 
+https://zhuanlan.zhihu.com/p/414173365
+
+记一次坎坷的算法需求实现：轻量级人体姿态估计模型的修炼之路（附MoveNet复现经验）
+
 # Calibration
 
 使用Resnet模型简单的对一些图片任务进行训练，收敛后的模型对测试集的平均置信度高达80%-85%，然而只有将近70%的图片能被正确分对（红色代表分错，绿色代表分对）。这意味着啥？训练好的模型好像有点盲目自信，即出现 overconfidence 现象，或者可以称为模型的准确率和置信度不匹配（miscalibration）。

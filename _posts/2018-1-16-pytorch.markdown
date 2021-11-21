@@ -224,6 +224,24 @@ https://mp.weixin.qq.com/s/AtuSS5paEZ_0RvpyLEJk2g
 
 Facebook联合AWS推出PyTorch模型服务框架：可让模型快速投入生产
 
+## Hook
+
+https://zhuanlan.zhihu.com/p/362985275
+
+Pytorch获取中间层输出的几种方法
+
+https://zhuanlan.zhihu.com/p/267800207
+
+PyTorch中Hook的简单使用
+
+https://zhuanlan.zhihu.com/p/87853615
+
+pytorch的hook机制之register_forward_hook
+
+https://zhuanlan.zhihu.com/p/152314451
+
+hook技术
+
 ## 参考
 
 https://mp.weixin.qq.com/s/zhkaenFdnB5KgaEYb-XDEQ
@@ -385,11 +403,3 @@ https://mp.weixin.qq.com/s/1_fm6F1c_ldQNyb042NQRg
 https://mp.weixin.qq.com/s/mThkHpcq1ThnfONiSKmOKA
 
 如何捕获一只彩色卓别林？黑白照片AI上色教程很友好
-
-https://mp.weixin.qq.com/s/tD4Inrr0l1oBnLhUD81FCA
-
-用PyTorch进行RNN语言建模 - Packed Batching和Tied Weight
-
-https://mp.weixin.qq.com/s/HQJxbnIHXF-GFLIoNTOxGg
-
-手把手教你用torchtext处理文本数据

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 抗美援朝（五）
-category: Red star 
+category: Korean War 
 ---
 
 * toc

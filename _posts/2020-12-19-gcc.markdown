@@ -301,6 +301,10 @@ https://mp.weixin.qq.com/s/67lPVyWUXG0SPJm4AOHmBA
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/other/toolchain-arm-imx8qm.cmake
 
+官方文档：
+
+https://cmake.org/cmake/help/latest/manual/cmake-toolchains.7.html
+
 # Ninja
 
 Ninja是Make的替代品，它和后者的区别在于：

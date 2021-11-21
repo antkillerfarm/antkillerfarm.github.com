@@ -217,6 +217,10 @@ https://mp.weixin.qq.com/s/wIIQQibtFR3cecOpmNenvQ
 
 YouTube博主实测病毒之王“熊猫烧香”，当年是它太强还是杀毒软件太弱？
 
+https://zhuanlan.zhihu.com/p/38973085
+
+史上最烂的开发项目长啥样：苦撑12年，600多万行代码...
+
 # 并行 & 框架 & 优化+
 
 https://mp.weixin.qq.com/s/-CTVyKWtdTK0RIfzzPVyNQ
@@ -326,3 +330,7 @@ https://mp.weixin.qq.com/s/RMDEvy-3-L-Rag1OrZLYhg
 https://mp.weixin.qq.com/s/8PUIJykzoNe-fYht5ozrcQ
 
 新一代CTR预测服务的GPU优化实践
+
+https://mp.weixin.qq.com/s/YusIuUtvTwoskNRV_OV7iw
+
+100万帧数据仅1秒！AI大牛颜水成团队强化学习新作，代码已开源

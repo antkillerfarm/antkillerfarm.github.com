@@ -372,3 +372,7 @@ KLA-芯片制程控制之王
 https://www.zhihu.com/question/310630283
 
 为什么德国和苏联在电子方面一直不如英美？
+
+https://mp.weixin.qq.com/s/K-Y19ajISRSDgSaWw5dPJw
+
+不敢想象！20年前网络上竟发生过这样的大事！8万黑客竟向同一网站发起攻击...

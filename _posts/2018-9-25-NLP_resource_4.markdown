@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  NLP参考资源（四）
-category: resource 
+category: DL & NLP resource 
 ---
 
 * toc
