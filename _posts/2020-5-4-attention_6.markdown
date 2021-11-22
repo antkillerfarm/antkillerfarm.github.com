@@ -10,6 +10,22 @@ category: Attention
 
 # Attention in CV & RS（续）
 
+https://mp.weixin.qq.com/s/2BECepucUdzLYlyU1aM7bA
+
+网络架构设计：CNN based和Transformer based
+
+https://mp.weixin.qq.com/s/k-pe1qTelVmvcwY6hmSi4A
+
+Transformer是巧合还是必然？搜索推荐领域的新潮流
+
+https://mp.weixin.qq.com/s/rATLyYBgo2nWY4rKXmgV5w
+
+来自Transformer的降维打击：ReID各项任务全面领先，阿里&浙大提出TransReID
+
+https://mp.weixin.qq.com/s/aWzHpeNS3OUrjrbEvnI87g
+
+用Pytorch轻松实现28个视觉Transformer，开源库timm了解一下
+
 https://mp.weixin.qq.com/s/J7Fw-T1tYSqi9_vx8VSqYA
 
 TimeSformer：视频理解所需的只是时空注意力吗？
@@ -359,31 +375,3 @@ https://mp.weixin.qq.com/s/zXXtbuSvyMOkgrWJwB83kg
 https://mp.weixin.qq.com/s/WzGa5XVi2Op4Lz-1uQXfxQ
 
 SpanBERT：提出基于分词的预训练模型，多项任务性能超越现有模型！
-
-https://zhuanlan.zhihu.com/p/76912493
-
-nlp中的预训练语言模型总结(单向模型、BERT系列模型、XLNet)
-
-https://mp.weixin.qq.com/s/pYSs6NhIAB6DuwNnKZhkZQ
-
-Bert改进：如何融入知识
-
-https://mp.weixin.qq.com/s/in5SDWlQg8ts4E8DTmHxMQ
-
-BERT在推荐系统领域可能会有什么作为？
-
-https://mp.weixin.qq.com/s/kJhOrz0VaYc-k-6XJS02ag
-
-8篇论文梳理BERT相关模型进展与反思
-
-https://mp.weixin.qq.com/s/hI9XAiqKaHLq-Z9JkaWA_A
-
-解决自然语言歧义问题，斯坦福教授、IJCAI卓越研究奖得主提出SenseBERT模型
-
-https://mp.weixin.qq.com/s/55B0ToIKDusiPI5farR19w
-
-NLP这两年：15个预训练模型对比分析与剖析
-
-https://mp.weixin.qq.com/s/SPfa17p3QetZXCC01DwmQA
-
-解密BERT

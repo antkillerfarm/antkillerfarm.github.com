@@ -148,6 +148,10 @@ https://www.zhihu.com/question/29994832
 
 ---
 
+在20世纪最初30年里，臭名昭著的芝加哥黑手党猖獗肆虐。世界驰名的冲锋枪“汤姆逊”，便是因为被芝加哥黑帮普遍用于团伙械斗，得到“芝加哥打字机”“芝加哥小提琴”的诨名，并被美国军队青睐。
+
+---
+
 https://mp.weixin.qq.com/s/KuIf0oIkLjMTKp2FgAnpyA
 
 一口气做出12只同款雪糕，强迫症都被食物加工流水线治好了
@@ -231,3 +235,7 @@ https://mp.weixin.qq.com/s/mCczfjhbGj6u177fxQH6Yg
 https://mp.weixin.qq.com/s/yLfcBRWodQTjk1AvHuZONw
 
 外形妖孽的MTs-3运动手枪，因为性能太好被国际射联禁用
+
+https://mp.weixin.qq.com/s/mOdJm812AbRDA0M-8odW3w
+
+跑步机原型竟然是十九世纪的刑具！来扒一扒跑步机的黑历史…

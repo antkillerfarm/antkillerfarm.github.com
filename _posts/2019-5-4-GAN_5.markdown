@@ -127,6 +127,10 @@ https://mp.weixin.qq.com/s/P1cfC7smeTSBy_6LYn_HOA
 
 看GAN如何一步步控制图像生成风格？详解StyleGAN进化过程
 
+https://mp.weixin.qq.com/s/2G9JAWmXig0o8WR1J7dfkg
+
+终于有人把各路StyleGAN做了个大汇总
+
 # BigGAN
 
 论文：

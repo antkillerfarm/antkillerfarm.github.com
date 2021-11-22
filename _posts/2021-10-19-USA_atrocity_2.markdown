@@ -166,3 +166,11 @@ https://mp.weixin.qq.com/s/OJ2OyC3VvFUZN6Gqne7m5Q
 https://mp.weixin.qq.com/s/GakM5MRhZbCZOz1VJC7HHQ
 
 福报来了，美国14岁童工被政客允许工作至深夜11点
+
+https://mp.weixin.qq.com/s/KzW_4l-Ywr4hNHRbcWxPkg
+
+人被当做动物展览，人性之恶的底线在哪里？
+
+https://mp.weixin.qq.com/s/pkY6JIb3S0Vxvhq6wKch9w
+
+美国中情局是如何在非洲进行颠覆行动的？

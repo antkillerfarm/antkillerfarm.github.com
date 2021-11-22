@@ -7,7 +7,59 @@ category: DRL
 * toc
 {:toc}
 
+# DRL和Robotics（续）
+
+不止国内，就连业界标杆Boston Dynamics也是这样：
+
+https://www.zhihu.com/question/29871410
+
+波士顿动力Boston Dynamics的大狗Big Dog用的了哪些控制、估计等算法？
+
+直到最近才终于有了改观：
+
+https://mp.weixin.qq.com/s/xSODAGf3QcJ3A9oq6xP11A
+
+真的超越了波士顿动力！深度强化学习打造的ANYmal登上Science子刊
+
+此外，还有一些论文：
+
+《Learning to Drive in a Day》
+
+参考：
+
+https://zhuanlan.zhihu.com/p/59197798
+
+那些个端到端的自动驾驶研发系统
+
+https://mp.weixin.qq.com/s/yU-6r-7l50y5msw8gUWnUQ
+
+美团技术部解析：无人车端到端驾驶模型概述
+
 # DRL参考资源
+
+https://mp.weixin.qq.com/s/ruAAQEjPIDPWPiuPepKU6Q
+
+Deep Reinforcement Learning: An Overview
+
+https://mp.weixin.qq.com/s/FjmlXqlpaRVLdAbjqspOJA
+
+这是一份你必须学习的强化学习算法清单
+
+https://mp.weixin.qq.com/s/GISY-FvV1Vml3CNLInjgYg
+
+Tensorflow2.0实现29种深度强化学习算法大汇总
+
+https://mp.weixin.qq.com/s/lfXQqllfFPtuNIrQZiD-NQ
+
+深度强化学习十大原则
+
+https://mp.weixin.qq.com/s/I8IwPCY6-zocJKFXMr6rUg
+
+深度强化学习的18个关键问题
+
+https://mp.weixin.qq.com/s/_lmz0l1vP_CQ6p6DdFnHWA
+
+谷歌大脑工程师的深度强化学习劝退文
 
 https://zhuanlan.zhihu.com/p/39999667
 
@@ -277,30 +329,6 @@ https://mp.weixin.qq.com/s/AI3i3ZLZ-fynavbeNAMKgA
 
 强化学习应用介绍，41页报告带你快速了解RL的最新应用价值
 
-https://mp.weixin.qq.com/s/JtUuFdTK4Q5YwnVj3BFU2w
-
-全参数化分布，提升强化学习中的收益分布拟合能力
-
-https://mp.weixin.qq.com/s/amXiNKJPEkAnu2m5NAERVw
-
-Top-K Oﬀ-Policy Correction
-
-https://mp.weixin.qq.com/s/kNtzy9-6GbsRhlL-mxksew
-
-基于强化学习的人机对话
-
-https://mp.weixin.qq.com/s/w3SsadgKaL8-tlzYLvMm-A
-
-讲真？一天就学会了自动驾驶——强化学习在自动驾驶的应用
-
-https://mp.weixin.qq.com/s/nnWuIPk_6mI9IAKIUbx6KQ
-
-深度强化学习解决交通控制问题
-
-https://mp.weixin.qq.com/s/RNJonPJL9JY5OH2-1sZMQw
-
-中山大学HCP实验室：基于树状结构策略的渐进强化学习
-
 https://mp.weixin.qq.com/s/-Cd7rQY3c3CINjtB99UZWw
 
 自动驾驶领域中的强化学习，附18页论文下载
@@ -328,34 +356,6 @@ https://mp.weixin.qq.com/s/PpBMu-5ozc9UOBbFhjsf3A
 https://mp.weixin.qq.com/s/TUk1PWT9CfPGEW77UKxpjw
 
 三招武林绝学带你玩转“强化学习”
-
-https://mp.weixin.qq.com/s/W9yhj7_frLYWJocoBR1TMQ
-
-避免AI错把黑人识别为大猩猩：伯克利大学提出协同反向强化学习
-
-https://mp.weixin.qq.com/s/p2hlc2PsLgrvxOF8wBZANg
-
-李飞飞高徒范麟熙解析强化学习在游戏和现实中的应用
-
-http://mp.weixin.qq.com/s/EPbKE-TAnAPugJDhXHEyNA
-
-DeepMind开源Psychlab平台——搭建AI和认知心理学的桥梁
-
-https://mp.weixin.qq.com/s/xJ_g3BvbM-WaIyLthHdhEw
-
-DeepMind发布通用强化学习新范式，自主机器人可学会任何任务
-
-https://mp.weixin.qq.com/s/U0K79ELLj4wsOR4sd5G4Vw
-
-Vicarious详解新型图式网络：赋予强化学习泛化能力
-
-https://mp.weixin.qq.com/s/C8hsGkHGtoaS9Vzm6Ub4tw
-
-Berkeley提出“随机搜索”训练线性策略，提高RL的性能
-
-https://mp.weixin.qq.com/s/uppNSwxNrw4_8NGBQv85xw
-
-今日头条首次改进DQN网络，解决推荐中的在线广告投放问题
 
 https://mp.weixin.qq.com/s/Uin1gOmJEa6cvkiFJm6cHw
 

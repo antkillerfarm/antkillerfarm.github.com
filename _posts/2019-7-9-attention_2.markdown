@@ -42,7 +42,7 @@ category: Attention
 
 ---
 
-![](/images/img2/self_attention.jpg)
+![](/images/img3/self_attention.jpg)
 
 - 一维卷积的感受野是有限的，注意力机制的感受野是无限的（全局的）。
 
@@ -105,6 +105,8 @@ https://mp.weixin.qq.com/s/ENpXBYQ4hfdTLSXBIoF00Q
 >Christopher Manning，澳大利亚人，Stanford博士（1994），现为Stanford教授。从事NLP近三十年，率先将统计方法引入NLP。
 
 ![](/images/img2/Global_attention.png)
+
+上图中蓝色表示输入的词向量，红色表示输出的词向量。
 
 传统的Attention model中，所有的hidden state都被用于计算Context vector的权重，因此也叫做Global Attention。
 

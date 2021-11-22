@@ -123,6 +123,14 @@ https://finance.sina.com.cn/jjxw/2021-11-11/doc-iktzqtyu6768909.shtml
 
 ---
 
+“京东方”的前身是北京电子管工厂也就是国营774厂，1956年建成，总投资达到了1.0282亿元，要知道在“一五”期间，全国电子工业投资总额为5.5亿元，这个厂差不多占了当时电子工业总投资的五分之一，是由苏联援建的的156个重点项目之一，属于军委总参通信兵部电信工业局，是名副其实的军工厂。
+
+https://www.zhihu.com/question/407143888
+
+京东方是华为扶持起来的吗？
+
+---
+
 ![](/images/img3/top10.png)
 
 ![](/images/img4/manufact.jpg)
@@ -220,15 +228,3 @@ https://zhuanlan.zhihu.com/p/352959565
 https://www.zhihu.com/question/425270883
 
 非五常国家的军事实力究竟有多弱？
-
-https://mp.weixin.qq.com/s/-iv72YL5jm5OyHPuNzEzmg
-
-破晓时分，加州教授团访华记
-
-https://mp.weixin.qq.com/s/_0SN18UFx_GGlHebUaar9A
-
-兵器试验中心数字弹道的传奇。陆载德的故事——从一位左腿残疾的清华学子成长为90年代共和国军队中唯一的独腿将军。
-
-https://mp.weixin.qq.com/s/tg5ovnXBV0aqM51DGj-mUQ
-
-中国计算数学和最优化事业的创始人之一、原南京大学教授何旭初

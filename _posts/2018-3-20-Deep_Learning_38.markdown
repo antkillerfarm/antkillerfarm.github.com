@@ -355,6 +355,10 @@ https://mp.weixin.qq.com/s/uLyllVhO-U5RrT4Q5XpiLA
 
 细粒度多标签分类
 
+https://mp.weixin.qq.com/s/IhPavQZmXIxxUzNSnnFCKg
+
+南理工最新“深度学习细粒度图像分析”综述论文，带你全面了解细粒度图像识别与检索方法
+
 # 显著性检测
 
 视觉显著性检测(Visual Saliency Detection)指通过智能算法模拟人的视觉特点，提取图像中的显著区域(即人类感兴趣的区域)。

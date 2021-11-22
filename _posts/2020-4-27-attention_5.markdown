@@ -219,6 +219,34 @@ Self-Attention 加速方法一览：ISSA、CCNet、CGNL、Linformer
 
 # Attention in CV & RS
 
+《Attention Mechanisms in Computer Vision: A Survey》
+
+https://github.com/MenghaoGuo/Awesome-Vision-Attentions
+
+![](/images/img4/Attention.png)
+
+
+
+## Swin Transformer
+
+https://mp.weixin.qq.com/s/t_J0MODtWzfnJse0aNGyWg
+
+Swin Transformer对CNN的降维打击
+
+https://mp.weixin.qq.com/s/8x1pgRLWaMkFSjT7zjhTgQ
+
+图解swin transformer
+
+https://zhuanlan.zhihu.com/p/361366090
+
+CV+Transformer之Swin Transformer
+
+https://mp.weixin.qq.com/s/z_ILLmNx3cbJI1B-M028vQ
+
+Swin Transformer重磅升级！Swin V2：向更大容量、更高分辨率的更大模型迈进
+
+## 参考
+
 https://mp.weixin.qq.com/s/PD2YnFb6yleDEMhz3ahFSQ
 
 计算机视觉"新"范式: Transformer
@@ -230,6 +258,10 @@ https://mp.weixin.qq.com/s/wAy3VsOIHxR948eOuXghmA
 https://zhuanlan.zhihu.com/p/288758894
 
 CV注意力机制论文阅读笔记
+
+https://mp.weixin.qq.com/s/bMOLo9FXpPsOrD9j4CNHYg
+
+清华&南开最新“视觉注意力机制Attention”综述论文，带你全面了解六大类注意力机制方法
 
 https://mp.weixin.qq.com/s/M3VRlz8-McbTbp9VcctU0w
 
@@ -334,31 +366,3 @@ https://mp.weixin.qq.com/s/MyRJl_QsO2X1yF4akPGktg
 https://mp.weixin.qq.com/s/FIilwbLzYk4av8w11VgJeQ
 
 计算机视觉中的Transformer
-
-https://mp.weixin.qq.com/s/2BECepucUdzLYlyU1aM7bA
-
-网络架构设计：CNN based和Transformer based
-
-https://mp.weixin.qq.com/s/k-pe1qTelVmvcwY6hmSi4A
-
-Transformer是巧合还是必然？搜索推荐领域的新潮流
-
-https://mp.weixin.qq.com/s/rATLyYBgo2nWY4rKXmgV5w
-
-来自Transformer的降维打击：ReID各项任务全面领先，阿里&浙大提出TransReID
-
-https://mp.weixin.qq.com/s/aWzHpeNS3OUrjrbEvnI87g
-
-用Pytorch轻松实现28个视觉Transformer，开源库timm了解一下
-
-https://mp.weixin.qq.com/s/t_J0MODtWzfnJse0aNGyWg
-
-Swin Transformer对CNN的降维打击
-
-https://mp.weixin.qq.com/s/8x1pgRLWaMkFSjT7zjhTgQ
-
-图解swin transformer
-
-https://zhuanlan.zhihu.com/p/361366090
-
-CV+Transformer之Swin Transformer

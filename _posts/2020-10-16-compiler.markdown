@@ -145,6 +145,16 @@ Android CPU, Compilers, D8 & R8
 
 基于多面体模型的编译优化技术代表了程序自动并行化领域众多方向最先进的水平,成为国际上多个编译研发团队的研究热点。
 
+![](/images/img4/Polyhedral.png)
+
+多面体模型(Polyhedral)主要关注的是程序设计中的循环优化，两层循环的循环变量的取值范围可以构成一个平面，三层循环的循环变量可以组成一个长方体，如上图所示，因此得名多面体模型。
+
+![](/images/img4/Polyhedral_2.png)
+
+多面体编译优化关注的是在确保程序执行正确的前提下重组循环的结构，实现性能最佳。上图左边表示的原始的二维迭代空间，蓝色箭头表示数据（黑点）之间存在依赖关系，对角线的绿色表示数据没有依赖关系，经过变基操作之后变为右图的表达式及迭代空间，从形状看像是把多面体进行了变形，形象地体现出多面体优化的过程。
+
+---
+
 https://www.cs.colostate.edu/~pouchet/
 
 888.11-Polyhedral Compilation Foundations
@@ -180,6 +190,10 @@ Polyhedral Model—AI芯片软硬件优化利器（二）
 https://mp.weixin.qq.com/s/bLBIrJb82IsnyoXSEr2xtw
 
 Polyhedral Model—AI芯片软硬件优化利器（三）
+
+https://mp.weixin.qq.com/s/wjk2Mxhd2NDpH72l3rdqgQ
+
+多面体编译技术在软硬协同设计中的应用
 
 ## PPCG
 

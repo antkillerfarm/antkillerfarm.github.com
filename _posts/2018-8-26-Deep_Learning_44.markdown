@@ -219,6 +219,50 @@ https://mp.weixin.qq.com/s/RhIcwL8dc7VmA00e5LZ-NQ
 
 # Attention进阶+
 
+https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
+
+阿里北大提出新attention建模框架，一个模型预测多种行为
+
+https://mp.weixin.qq.com/s/Yq3S4WrsQRQC06GvRgGjTQ
+
+打入神经网络思维内部
+
+https://mp.weixin.qq.com/s/MJ1578NdTKbjU-j3Uuo9Ww
+
+基于文档级问答任务的新注意力模型
+
+https://mp.weixin.qq.com/s/_3pA8FZwzegSpyz_cK63BQ
+
+Self-Attention GAN中的self-attention机制
+
+https://mp.weixin.qq.com/s/h7sLwVXb_UI8jvJU-oe3Cg
+
+Google AI提出“透明注意力”机制，实现更深层NMT模型
+
+https://mp.weixin.qq.com/s/1LYz5SH5rVnPPJ0tZvRQAA
+
+从各种注意力机制窥探深度学习在NLP中的神威
+
+https://zhuanlan.zhihu.com/p/33078323
+
+数字串识别：基于位置的硬性注意力机制
+
+https://mp.weixin.qq.com/s/-gAISWjSiG6ccPuOPAEg3A
+
+五张动图，看清神经机器翻译里的Attention！
+
+https://mp.weixin.qq.com/s/aixpv9t1PLPRWUP6PvZ0EQ
+
+用自注意力增强卷积：这是新老两代神经网络的对话
+
+https://mp.weixin.qq.com/s/i3Xd_IB7R0-QPztn-pgpng
+
+遍地开花的Attention，你真的懂吗？
+
+https://zhuanlan.zhihu.com/p/151640509
+
+注意力机制在推荐系统中的应用
+
 https://mp.weixin.qq.com/s/-SU5cNbklI31WLmTawZJIQ
 
 自注意模型学不好？这个方法帮你解决！

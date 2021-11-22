@@ -55,6 +55,18 @@ https://www.zhihu.com/answer/586923242
 
 # 两弹一星+
 
+https://mp.weixin.qq.com/s/-iv72YL5jm5OyHPuNzEzmg
+
+破晓时分，加州教授团访华记
+
+https://mp.weixin.qq.com/s/_0SN18UFx_GGlHebUaar9A
+
+兵器试验中心数字弹道的传奇。陆载德的故事——从一位左腿残疾的清华学子成长为90年代共和国军队中唯一的独腿将军。
+
+https://mp.weixin.qq.com/s/tg5ovnXBV0aqM51DGj-mUQ
+
+中国计算数学和最优化事业的创始人之一、原南京大学教授何旭初
+
 https://mp.weixin.qq.com/s/EWU26Xp8Xx4rQDiLnNPLQw
 
 中国人是什么时候知道计算机的?

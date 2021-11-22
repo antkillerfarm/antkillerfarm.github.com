@@ -363,6 +363,10 @@ https://mp.weixin.qq.com/s/m1TBxG_1wlfUUeDwP6Aleg
 
 人脸算法新热点，人脸编辑都有哪些方向，如何学习
 
+https://mp.weixin.qq.com/s/7qfZuoqG3qrTo4R4gQSg2w
+
+人脸合成技术综述
+
 ## 活体检测
 
 https://mp.weixin.qq.com/s/zOnmKSnQctnyx7pKXX-tpQ

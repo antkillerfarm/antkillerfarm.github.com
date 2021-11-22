@@ -372,11 +372,3 @@ https://mp.weixin.qq.com/s/8UX65PGZkRokguLTnoGVFA
 https://mp.weixin.qq.com/s/Cfim24MSmClvo2HjW7thTw
 
 最强原创综述！当强化学习邂逅组合优化
-
-https://mp.weixin.qq.com/s/G2sFkuvSeYmhkFjjPRGI-Q
-
-强化学习如何用于推荐？新南威尔士首篇《深度强化学习推荐系统》综述论文
-
-https://mp.weixin.qq.com/s/fMjjGCzef-3SVIOlUf2EFA
-
-强化学习如何用于推荐？厦大最新《强化学习推荐系统》综述论文

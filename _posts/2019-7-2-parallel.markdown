@@ -115,6 +115,10 @@ https://mp.weixin.qq.com/s/wu32LBwrkkBIANMdknHlCA
 
 C++并行实战，592页pdf，C++ Concurrency in Action
 
+https://mp.weixin.qq.com/s/heVQ9AIZKxTiCNiAtYKaag
+
+新加坡国立大学最新“大规模深度学习优化”综述论文，带你全面了解最新深度学习准确率和效率的优化方法
+
 https://www.zhihu.com/question/57799212
 
 ring allreduce和tree allreduce的具体区别是什么？
