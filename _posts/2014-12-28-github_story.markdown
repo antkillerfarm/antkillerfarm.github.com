@@ -125,6 +125,10 @@ https://zhuanlan.zhihu.com/p/248356236
 
 http://xxx.itp.ac.cn
 
+http://cn.arxiv.org/
+
+最著名的论文网站arxiv.org的中国镜像网站。arxiv.org中的论文都有编号。比如1608.06993v4，1608表示这是2016年8月的文章，v4表示这是第4版。
+
 ## Git LFS
 
 Git LFS（Large File Storage）是Github开发的一个Git的扩展，用于实现Git对大文件的支持。

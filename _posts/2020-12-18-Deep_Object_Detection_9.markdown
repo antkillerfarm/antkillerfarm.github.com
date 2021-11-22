@@ -9,6 +9,22 @@ category: Deep Object Detection
 
 # 目标检测进阶
 
+https://mp.weixin.qq.com/s/5I9uzGCNFD93L1mzakTl0Q
+
+目标检测网络学习总结（RCNN-->YOLO V3）
+
+https://mp.weixin.qq.com/s/8Vac8MRpmviVDKRrAeFR0A
+
+后R-CNN时代，Faster R-CNN、SSD、YOLO各类变体统治下的目标检测综述：Faster R-CNN系列胜了吗？
+
+https://mp.weixin.qq.com/s/zeruKQOye_QNWgluVIN0BA
+
+从R-CNN到RFBNet，目标检测架构5年演进全盘点
+
+https://mp.weixin.qq.com/s/sCGNUI-mUSYxD69uBDQNoQ
+
+基于深度学习的目标检测算法综述：算法改进
+
 https://mp.weixin.qq.com/s/yswy7VwEapQJ9M5n_Uo93w
 
 目标检测最新进展总结与展望
@@ -364,23 +380,3 @@ Cascade RCNN算法笔记
 https://mp.weixin.qq.com/s/KupXlIt8bHLLGF6qWFH6vQ
 
 从Grid R-CNN到Grid R-CNN Plus：基于网格的目标检测演化
-
-https://mp.weixin.qq.com/s/kz74yb857gmG1h7MyOWx_Q
-
-目标检测正负样本区分策略和平衡策略总结(二)
-
-https://mp.weixin.qq.com/s/gJuXl6Oh_N_fJgQ9jT268w
-
-旷视研究院提出密集场景检测新方法：一个候选框，多个预测结果
-
-https://mp.weixin.qq.com/s/iPx5K2cSs5jlCt9d9oKpww
-
-VoVNet：实时目标检测的新backbone网络
-
-https://mp.weixin.qq.com/s/FHHIdoXyaU4skX-zyZFQew
-
-已开源！全新水下目标检测算法SWIPENet+IMA框架
-
-https://mp.weixin.qq.com/s/-x9A1eG5BfGmqV31SdMCMg
-
-目标检测算法之Light-Head R-CNN

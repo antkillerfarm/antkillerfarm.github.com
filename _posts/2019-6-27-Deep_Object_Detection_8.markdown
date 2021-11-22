@@ -271,6 +271,10 @@ https://mp.weixin.qq.com/s/nGMMb6GHp-BajyfRTN-jDw
 
 2、水平检测框相互之间的IoU值较高，在NMS过程中很容易被抑制掉。
 
+![](/images/img4/AlphaRotate.png)
+
+《AlphaRotate: A Rotation Detection Benchmark using TensorFlow》
+
 参考：
 
 https://zhuanlan.zhihu.com/p/105841613
@@ -410,19 +414,3 @@ https://mp.weixin.qq.com/s/0B08Mzn8ngL6GoNilrjsGA
 https://zhuanlan.zhihu.com/p/181169225
 
 12篇论文看尽深度学习目标检测史
-
-https://mp.weixin.qq.com/s/5I9uzGCNFD93L1mzakTl0Q
-
-目标检测网络学习总结（RCNN-->YOLO V3）
-
-https://mp.weixin.qq.com/s/8Vac8MRpmviVDKRrAeFR0A
-
-后R-CNN时代，Faster R-CNN、SSD、YOLO各类变体统治下的目标检测综述：Faster R-CNN系列胜了吗？
-
-https://mp.weixin.qq.com/s/zeruKQOye_QNWgluVIN0BA
-
-从R-CNN到RFBNet，目标检测架构5年演进全盘点
-
-https://mp.weixin.qq.com/s/sCGNUI-mUSYxD69uBDQNoQ
-
-基于深度学习的目标检测算法综述：算法改进

@@ -68,10 +68,6 @@ http://academic.research.microsoft.com/
 
 微软学术搜索，查论文的好帮手。
 
-http://cn.arxiv.org/
-
-最著名的论文网站arxiv.org的中国镜像网站。arxiv.org中的论文都有编号。比如1608.06993v4，1608表示这是2016年8月的文章，v4表示这是第4版。
-
 ![](/images/img3/Xiv.png)
 
 https://github.com/CyC2018/CS-Notes
