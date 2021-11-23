@@ -346,3 +346,7 @@ https://mp.weixin.qq.com/s/4hKIh77UfsuJCSKwtvpq3Q
 https://mp.weixin.qq.com/s/zvEIUJpgrjSM9-TLSzr3sQ
 
 为什么说GAN很快就要替代现有摄影技术了？
+
+https://mp.weixin.qq.com/s/C2ymfvnOohDutdY4-4aDkQ
+
+用GAN也可以P图，效果还不输PS

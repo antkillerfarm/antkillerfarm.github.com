@@ -225,7 +225,7 @@ https://github.com/MenghaoGuo/Awesome-Vision-Attentions
 
 ![](/images/img4/Attention.png)
 
-
+和Normalization一样，Attention应用于CV领域也有不同的花式。
 
 ## Swin Transformer
 

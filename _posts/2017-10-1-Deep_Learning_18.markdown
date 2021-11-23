@@ -351,6 +351,18 @@ https://mp.weixin.qq.com/s/C4KaIXO9Lp8tlqhS3b0VCw
 
 美团提出基于对比学习的文本表示模型（ConSERT）
 
+# Regularization
+
+DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：
+
+$$loss(W;x;y) = loss_D(W;x;y) + \lambda_R R(W) + \lambda_g \sum_{l=1}^{L} R_g(W_l^{(G)})$$
+
+$$R_g(w^{(g)}) = \sum_{g=1}^{G} \lVert w^{(g)} \rVert_g = \sum_{g=1}^{G} \sum_{i=1}^{|w^{(g)}|} {(w_i^{(g)})}^2$$
+
+Group Regularization也叫做Block Regularization或Structured Regularization。
+
+# 何恺明
+
 ## MoCo
 
 https://mp.weixin.qq.com/s/9zaTjwwGPHHzSv1ZmHf8_g
@@ -365,12 +377,8 @@ https://mp.weixin.qq.com/s/sAYh3l2eab2r2KpbdxN30A
 
 MoCo三部曲
 
-# Regularization
+## MAE
 
-DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：
+https://mp.weixin.qq.com/s/x-ruExbM9T8EIv2gZW0Nnw
 
-$$loss(W;x;y) = loss_D(W;x;y) + \lambda_R R(W) + \lambda_g \sum_{l=1}^{L} R_g(W_l^{(G)})$$
-
-$$R_g(w^{(g)}) = \sum_{g=1}^{G} \lVert w^{(g)} \rVert_g = \sum_{g=1}^{G} \sum_{i=1}^{|w^{(g)}|} {(w_i^{(g)})}^2$$
-
-Group Regularization也叫做Block Regularization或Structured Regularization。
+视觉预训练新范式MAE
