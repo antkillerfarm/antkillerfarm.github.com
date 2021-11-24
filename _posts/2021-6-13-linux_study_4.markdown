@@ -7,44 +7,6 @@ category: linux
 * toc
 {:toc}
 
-# tldr
-
-tldr是一个采用示例说明的简化版的man。
-
-官网：
-
-http://tldr.sh/
-
-该项目原生支持node.js，但也提供了其他多种语言的支持。
-
-参考：
-
-https://linuxtoy.org/archives/tldr.html
-
-tldr: 简读Manpage
-
-# Linux知识图谱
-
-![](/images/article/linux_perf_tools_full.png)
-
-![](/images/img3/linux_kernel_map.png)
-
-原图地址：
-
-http://www.brendangregg.com/linuxperf.html
-
-![](/images/img4/Linux-storage-stack-diagram_v4.10.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/-iCuxQjSghtDGaPMqaDSgQ
-
-Linux思维导图整理
-
-https://mp.weixin.qq.com/s/sLyD6z2xBXRxfBZnImTgtQ
-
-40+张最全Linux/C/C++思维导图，收藏！
-
 # Linux参考资源
 
 https://www.kernel.org/doc/html/latest/

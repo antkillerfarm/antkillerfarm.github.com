@@ -219,30 +219,6 @@ http://mazhuang.org/2016/12/14/rtfsc-with-opengrok/
 
 搭建大型源码阅读环境——使用OpenGrok
 
-# ELF & PE
-
-![](/images/img4/exe.png)
-
-https://zhuanlan.zhihu.com/p/254882216
-
-深入浅出ELF
-
-https://mp.weixin.qq.com/s/vnqANjTMNqdjkHXl203eRg
-
-逆向工程基础：从PE文件到进程地址空间
-
-https://mp.weixin.qq.com/s/_RD_jY-gJFxlT9DX2jGDAA
-
-只有170字节，最小的64位Hello World程序这样写成
-
----
-
-elf格式除了代码和数据外还有很多有用的信息，可以被标准boot loader识别，你如果不想自己花费10+天去自己实现stage1和stage2的bootloader的话，elf文件可以帮你省很多时间，因为grub可以直接加载，qemu也可以直接运行。
-
-https://www.zhihu.com/question/49580321
-
-C如何编译出一个不需要操作系统的程序？
-
 # 同步锁
 
 read-write lock、RCU lock、spin lock
@@ -451,3 +427,41 @@ ssh & display
 https://mp.weixin.qq.com/s/u3VSyEtdcIgp8dCbwCaavA
 
 SSH只能用于远程Linux主机？那说明你见识太小了！
+
+# tldr
+
+tldr是一个采用示例说明的简化版的man。
+
+官网：
+
+http://tldr.sh/
+
+该项目原生支持node.js，但也提供了其他多种语言的支持。
+
+参考：
+
+https://linuxtoy.org/archives/tldr.html
+
+tldr: 简读Manpage
+
+# Linux知识图谱
+
+![](/images/article/linux_perf_tools_full.png)
+
+![](/images/img3/linux_kernel_map.png)
+
+原图地址：
+
+http://www.brendangregg.com/linuxperf.html
+
+![](/images/img4/Linux-storage-stack-diagram_v4.10.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/-iCuxQjSghtDGaPMqaDSgQ
+
+Linux思维导图整理
+
+https://mp.weixin.qq.com/s/sLyD6z2xBXRxfBZnImTgtQ
+
+40+张最全Linux/C/C++思维导图，收藏！
