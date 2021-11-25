@@ -133,6 +133,26 @@ https://www.zhihu.com/question/464603561
 
 ---
 
+斯大林提出“民族主义的风格，社会主义的内容”。听起来根正苗红正能量对不对？但其实斯大林在这里玩了个春秋笔法，他本人的审美，其实是欧洲古典式的，他并不喜欢那些光秃秃，奇奇怪怪的包豪斯，现代主义，国际主义，先锋派建筑。斥之为“敌对资本主义艺术的激进的现代艺术运动”，并对其进行了整肃。
+
+从1948年起，莫斯科开始怀上了这七胞胎……
+
+一、莫斯科大学The Moscow State University1949-1953
+
+二、列宁格勒饭店The Leningradskaya Hotel1949-1953
+
+三、劳动模范公寓Kotelnicheskaya Embankment Apartments1948-1952
+
+四、重工业部大楼The Red Gates Administrative Building1949-1953
+
+五、乌克兰饭店The Hotel Ukraina1950-1956
+
+六、文化人公寓The Kudrinskaya Square Building 1950-1954
+
+七、外交部大楼The Ministry of Foreign Affairs1948-1953
+
+---
+
 https://zhuanlan.zhihu.com/p/343944664
 
 人防工程
@@ -278,31 +298,3 @@ https://mp.weixin.qq.com/s/xla7ngb5JNiFpcAYqEScfQ
 https://mp.weixin.qq.com/s/mK12uMxECUo-ldFOApzNxw
 
 为了研究睡眠，这些科学家不要命了......
-
-https://mp.weixin.qq.com/s/LKg1frUABbR7MwVlPt3wTw
-
-毕达哥拉斯在铁匠铺称锤子？看似“科学”的故事哪里错了
-
-https://mp.weixin.qq.com/s/tsxE3cbVvpYcgvwInnb0Tg
-
-三分钟学会（废）弧圈球！乒乓球运动员人均力学高手？
-
-https://mp.weixin.qq.com/s/16cyvFIWkZKKEJc3iSpY3w
-
-世界上最大的电池，是用水做的（抽水蓄能电站）
-
-https://mp.weixin.qq.com/s/VVUWuhxdmG6MYdnDckufUQ
-
-五分钟带你看完百年物理史上的伟大统一
-
-https://mp.weixin.qq.com/s/tcs4U84iFmmOxf8W3i6ctQ
-
-想堆超级沙堡？请收下这份终极攻略
-
-https://mp.weixin.qq.com/s/gbUr8-WMookDi6ARtr8fRg
-
-如何从物理学角度解释“耀眼的光芒”
-
-https://mp.weixin.qq.com/s/_CiJPegImWm8G3Fr67QeRw
-
-剑桥大学惊现神级艺术生，高中辍学自学物理，竟发现爱因斯坦2个错误，推翻相对论...（约翰·莫法特）
