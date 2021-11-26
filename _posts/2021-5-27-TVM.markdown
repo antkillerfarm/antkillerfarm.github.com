@@ -87,7 +87,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tvm/p
 
 2.local执行和remote执行。
 
-3.使用`print(mod.astext(show_meta_data=False))`可以打印相关IR的内容。meta data有的时候包含了权重，打印出来意义不大，反而导致其他部分没法看了。
+3.使用`print(mod.astext(show_meta_data=False))`可以打印相关IR的内容。meta data有的时候包含了权重，打印出来意义不大，反而导致其他有意义的部分，淹没在大量的log中，没法看了。
 
 参考：
 

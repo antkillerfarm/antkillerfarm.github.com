@@ -9,6 +9,28 @@ category: COVID19
 
 # 国外疫情（续）
 
+https://www.zhihu.com/question/374859112
+
+如何看待北海道知事铃木直道要求道内中小学停课，并表示“所有结果，都将由我知事本人负责。”?
+
+https://zhuanlan.zhihu.com/p/109585819
+
+他是日本政坛最靓的仔！（铃木直道）
+
+https://mp.weixin.qq.com/s/kYouLzPyVNx0ZrqUQhSaWA
+
+我们究竟离pandemic还有多远？
+
+https://mp.weixin.qq.com/s/wDkqwwEfpy2-As-DEdlwug
+
+新加坡"佛系防疫"，为什么能控住疫情？
+
+https://mp.weixin.qq.com/s/7MmspadwBVdnKKaQ6mssig
+
+新冠在日本：行走在暴发的边缘
+
+---
+
 https://mp.weixin.qq.com/s/aki6c574T6CxkBnhpI3eDg
 
 Fauci采访
@@ -266,19 +288,3 @@ https://mp.weixin.qq.com/s/O4RavwRUPbwXq8mDZTaA6w
 https://wxn.qq.com/cmsid/TEC2020041800124100
 
 供应断链卡脖呼吸机：核心零部件靠进口订单排到8月
-
-https://mp.weixin.qq.com/s/tLljo8q-1eybDIk7CLQiSA
-
-滴~37℃（温度计、额温枪、红外线测温仪，它们都是怎么测量体温的呢？）
-
-https://mp.weixin.qq.com/s/SwYQFBv5lnej0g08bsBF1A
-
-“英伟达呼吸机”开源：计算机架构大师打造，成本暴减98%，黄仁勋点赞
-
-# 科研
-
-抗病毒药一般以vir结尾，例如Remdesivir。所以药品的中文名一般就是XXX韦。
-
-https://mp.weixin.qq.com/s/GAAeUD5ZDROltfxcoSFaeA
-
-期待救急，你了解“老药新用”吗？

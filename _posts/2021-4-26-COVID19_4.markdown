@@ -7,7 +7,25 @@ category: COVID19
 * toc
 {:toc}
 
-# 科研（续）
+# 口罩（续）
+
+https://mp.weixin.qq.com/s/tLljo8q-1eybDIk7CLQiSA
+
+滴~37℃（温度计、额温枪、红外线测温仪，它们都是怎么测量体温的呢？）
+
+https://mp.weixin.qq.com/s/SwYQFBv5lnej0g08bsBF1A
+
+“英伟达呼吸机”开源：计算机架构大师打造，成本暴减98%，黄仁勋点赞
+
+# 科研
+
+抗病毒药一般以vir结尾，例如Remdesivir。所以药品的中文名一般就是XXX韦。
+
+https://mp.weixin.qq.com/s/GAAeUD5ZDROltfxcoSFaeA
+
+期待救急，你了解“老药新用”吗？
+
+---
 
 双黄连由金银花（双花）、黄芩和连翘三味中药配伍而成。它的历史并不算悠久，但在现有的网络信息中，也无法准确地指出究竟是何人、何时开发出这个如今家喻户晓的方子。有文献可考的历史表明，双黄连方剂产生于文革期间的东北地区——再准确一点，黑龙江哈尔滨，并且与现在的哈药集团有着千丝万缕的联系。
 
@@ -78,6 +96,10 @@ https://mp.weixin.qq.com/s/g9gPLEN6R02F49eRGGSuAA
 https://mp.weixin.qq.com/s/o7Eq7xoxqM_fOlS9HiZ_OA
 
 新冠大流行，哪些关键突变株值得关注？
+
+https://www.zhihu.com/question/501576771
+
+新冠B.1.1.529毒株被指“可能比德尔塔还可怕”，是真的吗？有多大危害？
 
 ---
 
@@ -255,10 +277,6 @@ https://mp.weixin.qq.com/s/EiUuZj00ml9aSP5HmhYiew
 
 疫情暴发前，新冠病毒到底身处何处？
 
-https://mp.weixin.qq.com/s/vZxEJjJGYjFhsxQfGJZoug
-
-关于辉瑞神药PAXLOVID的更多八卦
-
 # 瘟疫公司
 
 ![](/images/img4/Plague_Inc.jpg)
@@ -312,19 +330,3 @@ https://www.zhihu.com/question/21491731
 四海皆兄弟，谁为行路人。
 
 崎岖路，长情在。
-
-## 中国援助韩国
-
-道不远人，人无异国。
-
-——新罗 崔致远
-
->崔致远，字孤云，号海云，谥号文昌。朝鲜半岛新罗王京人。十二岁时，即唐懿宗咸通九年(公元868年)乘船西渡入唐，留唐十六年。朝鲜汉文学的开山鼻祖。有“东国儒宗”、“东国文学之祖”的称誉。
-
-## 小米援助意大利
-
-We are waves of the same sea, leaves of the same tree, flowers of the same garden.
-
-——Lucius Annaeus Seneca
-
->Lucius Annaeus Seneca，公元前4年～65年，古罗马政治家、斯多葛派哲学家、悲剧作家、雄辩家。暴君Nero的老师，被逼自杀。

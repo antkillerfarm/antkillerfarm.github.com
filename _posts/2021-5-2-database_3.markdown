@@ -361,3 +361,25 @@ https://mp.weixin.qq.com/s/ZCkboBBFYFm57pLEGftpCw
 https://zhuanlan.zhihu.com/p/57774611
 
 盘点与Cygwin相似和相反的项目
+
+# git+
+
+https://mp.weixin.qq.com/s/PUUL913fig6cFfqy4OKcGA
+
+工作流一目了然，看小姐姐用动图展示10大Git命令
+
+https://blog.csdn.net/mocoe/article/details/84344411
+
+修改git commit的author信息
+
+https://mp.weixin.qq.com/s/9Ey04P5Xv4W95N2FEioZ1g
+
+如何选择Git分支模式？
+
+https://mp.weixin.qq.com/s/GZkGfwrfMTzrMfki8LKbIw
+
+腾讯广告3000+万行大代码库主干开发实战
+
+https://mp.weixin.qq.com/s/KEu6qCl-En6HiKGo2pgEQg
+
+TensorBay：一款易用的像Git一样数据版本管理工具！

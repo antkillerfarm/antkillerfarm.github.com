@@ -9,6 +9,14 @@ category: World
 
 # 东南亚
 
+![](/images/img4/southeast_Asia.jpg)
+
+![](/images/img4/southeast_Asia_2.jpg)
+
+![](/images/img4/southeast_Asia_3.jpg)
+
+---
+
 二战后的走私和投机活动，是东南亚很多大亨第一桶金的来源。
 
 走私业务的兴旺发达，来自于经济效率的低下。这种低下要么因为贸易禁运，要么因为关税。香港和新加坡在那个时代成为走私的中心，在今天这个时代成为区域的资本运作和金融中心，从本质上，其实并没有改变。都是利用自由城市经济体与周边腹地（对香港是中国，对新加坡是东南亚特别是印尼）经济运行模式之间的差别获益。
@@ -180,3 +188,7 @@ https://www.zhihu.com/question/456075868
 https://mp.weixin.qq.com/s/E-xJ1IGxklGpICFsrZla9Q
 
 西贡铁拳在西贡？南越总崩溃时的照片何止这张被误解
+
+https://www.zhihu.com/question/27700838
+
+越南的军事实力有能力统一中南半岛吗？
