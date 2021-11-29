@@ -9,6 +9,30 @@ category: AI
 
 # TensorFlow
 
+https://mp.weixin.qq.com/s/WqE-FRl-Thys7tHUvFNlWQ
+
+盯住梅西：TensorFlow目标检测实战
+
+https://mp.weixin.qq.com/s/WfzlHtz0FFJMsPFwPoMqJg
+
+如何利用VGG-16等模型在CPU上测评各深度学习框架
+
+http://www.jianshu.com/p/4e16ae0aad25
+
+利用TensorFlow入门Word2Vec
+
+https://mp.weixin.qq.com/s/YJmMfBhQ3cLNUp_HHsXhGA
+
+手把手教你使用TensorFlow生成对抗样本
+
+https://mp.weixin.qq.com/s/nnjyR4XGVZQ1zXCIPzTNlg
+
+基于TensorFlow的变分自编码器实现
+
+https://mp.weixin.qq.com/s/iMgesGmdb7Jq4muCxb-nFA
+
+Tensorflow实战：Discuz验证码识别
+
 https://mp.weixin.qq.com/s/4aJUGBpPG_6Oc5EqOmM0Iw
 
 作为TensorFlow的底层语言，你会用C++构建深度神经网络吗？

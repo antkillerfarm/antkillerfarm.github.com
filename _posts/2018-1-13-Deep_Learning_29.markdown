@@ -37,6 +37,10 @@ http://mp.weixin.qq.com/s/9fJT0dMLvYQdfMVvSEiG4A
 
 深度学习的时间序列模型评价
 
+https://www.zhihu.com/people/zhang-ke-xin-16-57/posts
+
+一个时间序列方面的专栏
+
 https://mp.weixin.qq.com/s/1Gdx-U3DRZtSJoFyCLnD0w
 
 深度学习之Sequence Learning

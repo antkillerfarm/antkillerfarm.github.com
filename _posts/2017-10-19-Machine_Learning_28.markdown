@@ -99,6 +99,28 @@ https://mp.weixin.qq.com/s/QIR_l8OqvCQzXXXVY2WA1w
 
 ![](/images/img2/AutoNLP.png)
 
+---
+
+调参工具:
+
+- Skopt
+- Hyperopt
+- Simple(x)
+- Ray.tune
+- Chocolate
+- GpFlowOpt
+- FAR-HO
+- Xcessiv
+- HORD
+- ENAS
+- NNI
+- optuna
+- hypergbm
+
+https://zhuanlan.zhihu.com/p/93109455
+
+关于AutoML，你想知道的都在这里！
+
 ## 超参数
 
 所谓hyper-parameters，就是机器学习模型里面的框架参数，比如聚类方法里面类的个数，或者话题模型里面话题的个数等等，都称为超参数。它们跟训练过程中学习的参数（权重）是不一样的，通常是手工设定，不断试错调整，或者对一系列穷举出来的参数组合一通枚举（叫做网格搜索）。

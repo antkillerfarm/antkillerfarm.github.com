@@ -161,6 +161,14 @@ op的自定义实现可使用`tf.py_func`。
 
 tf.dtypes.cast: 类型转换
 
+---
+
+Keras对大部分权重矩阵都采用了标准的Glorot uniform初始化，对GRU的recurrent weight采用了正交初始化，对所有偏置都采用了零初始化；而PyTorch对所有参数都一律采用了uniform初始化，但范围与Glorot不同。
+
+https://www.zhihu.com/question/268494717
+
+同一个模型用theano，tf，pytorch实现，performance可能差距较大吗？
+
 # TFRecord
 
 TFRecord是TensorFlow官方定义的存放样本数据文件。
@@ -384,19 +392,3 @@ TF官方博客：基于TensorFlow.js框架的浏览器实时姿态估计
 https://mp.weixin.qq.com/s/z6p4A4DfCuK8IBGVGwrtLQ
 
 如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
-
-https://mp.weixin.qq.com/s/NO_XY-JmTpIkoC-fpkZ-qg
-
-在浏览器上也能训练神经网络？TensorFlow.js带你玩游戏~
-
-https://mp.weixin.qq.com/s/vjpMr3TsF3Lui8Q0IstQxw
-
-浏览器上跑：TensorFlow发布实时人物分割模型，秒速25帧，24个部位
-
-https://mp.weixin.qq.com/s/-BblgnvPLuqpYM8PZ7PQCQ
-
-三行代码实时追踪你的手，只要有浏览器就够了
-
-https://mp.weixin.qq.com/s/C7QdVathJ8YTXF-zXPC-Ow
-
-有人分析了7个基于JS语言的DL框架，发现还有很长的路要走

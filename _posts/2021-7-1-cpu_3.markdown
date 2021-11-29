@@ -259,6 +259,10 @@ https://zhuanlan.zhihu.com/p/86432216
 
 Microcode是什么？它为什么能修正CPU硬件错误？
 
+https://zhuanlan.zhihu.com/p/152167194
+
+两大FPGA公司的“AI技术路线”
+
 # 超算
 
 ![](/images/img3/power.aug.gif)

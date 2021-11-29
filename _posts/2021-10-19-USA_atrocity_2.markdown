@@ -174,3 +174,7 @@ https://mp.weixin.qq.com/s/KzW_4l-Ywr4hNHRbcWxPkg
 https://mp.weixin.qq.com/s/pkY6JIb3S0Vxvhq6wKch9w
 
 美国中情局是如何在非洲进行颠覆行动的？
+
+https://finance.sina.com.cn/jjxw/2021-11-27/doc-ikyakumx0623932.shtml
+
+“毒小麦”送叙利亚，美国实名制“投毒”！

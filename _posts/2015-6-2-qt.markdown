@@ -309,6 +309,10 @@ https://mp.weixin.qq.com/s/sCGI3XPga5gTZF0iskJlMA
 
 全网最详尽的负载均衡原理图解
 
+https://mp.weixin.qq.com/s/o5lTN4IpHmZqLUKoJsSyKw
+
+爱奇艺TFServing负载均衡问题研究及改进实践
+
 ## Nginx
 
 https://mp.weixin.qq.com/s/31DGDYpDHcYg-4qM4OczxA

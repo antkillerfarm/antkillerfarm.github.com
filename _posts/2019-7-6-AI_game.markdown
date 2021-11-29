@@ -315,10 +315,6 @@ https://mp.weixin.qq.com/s/JYTqJDlGw6Q2gNLaYIGLcQ
 
 特斯拉芯片究竟怎么样？
 
-https://mp.weixin.qq.com/s/R1_mXxBrQYgIPlUDGz8w6Q
-
-片上多核系统的互联需求
-
 https://mp.weixin.qq.com/s/cA1AXfpV3ZcMNX9k5XKlww
 
 面向深度神经网络的芯片布图规划问题简介

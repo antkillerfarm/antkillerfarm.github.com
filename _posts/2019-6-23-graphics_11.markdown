@@ -115,6 +115,20 @@ https://mp.weixin.qq.com/s/-CF69Soq9Bdw-Wsffyv9Hw
 
 ---
 
+https://www.zhihu.com/question/362979183
+
+是否有好的传统的医学图像增强方法?
+
+https://blog.csdn.net/carson2005/article/details/9502053
+
+Retinex算法详解
+
+https://www.cnblogs.com/Imageshop/archive/2013/05/19/3086388.html
+
+Unsharp Mask(USM)锐化算法的的原理及其实现
+
+---
+
 https://github.com/gzr2017/ImageProcessing100Wen
 
 图像处理入门100题

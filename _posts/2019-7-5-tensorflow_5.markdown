@@ -7,6 +7,24 @@ category: AI
 * toc
 {:toc}
 
+# TensorFlow.js（续）
+
+https://mp.weixin.qq.com/s/NO_XY-JmTpIkoC-fpkZ-qg
+
+在浏览器上也能训练神经网络？TensorFlow.js带你玩游戏~
+
+https://mp.weixin.qq.com/s/vjpMr3TsF3Lui8Q0IstQxw
+
+浏览器上跑：TensorFlow发布实时人物分割模型，秒速25帧，24个部位
+
+https://mp.weixin.qq.com/s/-BblgnvPLuqpYM8PZ7PQCQ
+
+三行代码实时追踪你的手，只要有浏览器就够了
+
+https://mp.weixin.qq.com/s/C7QdVathJ8YTXF-zXPC-Ow
+
+有人分析了7个基于JS语言的DL框架，发现还有很长的路要走
+
 # Estimator
 
 ![](/images/img2/tensorflow_programming_environment.png)
@@ -382,27 +400,3 @@ TensorFlow sucks，有人吐槽TensorFlow晦涩难用
 https://mp.weixin.qq.com/s/_kr28kN0_1QFP8BR_wGo5w
 
 TensorFlow RNN入门
-
-https://mp.weixin.qq.com/s/WqE-FRl-Thys7tHUvFNlWQ
-
-盯住梅西：TensorFlow目标检测实战
-
-https://mp.weixin.qq.com/s/WfzlHtz0FFJMsPFwPoMqJg
-
-如何利用VGG-16等模型在CPU上测评各深度学习框架
-
-http://www.jianshu.com/p/4e16ae0aad25
-
-利用TensorFlow入门Word2Vec
-
-https://mp.weixin.qq.com/s/YJmMfBhQ3cLNUp_HHsXhGA
-
-手把手教你使用TensorFlow生成对抗样本
-
-https://mp.weixin.qq.com/s/nnjyR4XGVZQ1zXCIPzTNlg
-
-基于TensorFlow的变分自编码器实现
-
-https://mp.weixin.qq.com/s/iMgesGmdb7Jq4muCxb-nFA
-
-Tensorflow实战：Discuz验证码识别
