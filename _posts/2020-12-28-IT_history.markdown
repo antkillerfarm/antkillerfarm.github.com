@@ -205,22 +205,6 @@ https://mp.weixin.qq.com/s/_YTvP1MN0HXzOY0XJ1Ri3Q
 
 1976-2021 45年苹果电脑CPU之变迁
 
-https://mp.weixin.qq.com/s/fUl-YjMlfZs9XXZ1W4DFBQ
-
-GPU历史系列（一）：故事从19世纪70年代讲起
-
-https://mp.weixin.qq.com/s/QuvpUYNhmf3htl0ea9TT8Q
-
-GPU历史系列（二）：改变游戏规则的3Dfx Voodoo
-
-https://mp.weixin.qq.com/s/BisVJ3VDxcUpSMyoGmQicw
-
-GPU历史系列（三）：Nvidia一统江湖
-
-https://mp.weixin.qq.com/s/5ahh8EihTefzMmCGSwmwHw
-
-GPU历史系列（四）：通用GPU的来临
-
 https://mp.weixin.qq.com/s/bdfYwgfu8iDo00Qfbp0tsA
 
 Arm芯片三十五年

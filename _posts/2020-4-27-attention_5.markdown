@@ -227,6 +227,12 @@ https://github.com/MenghaoGuo/Awesome-Vision-Attentions
 
 和Normalization一样，Attention应用于CV领域也有不同的花式。
 
+![](/images/img4/Attention_2.png)
+
+![](/images/img4/Attention_3.png)
+
+![](/images/img4/Attention_4.png)
+
 ## Swin Transformer
 
 https://mp.weixin.qq.com/s/t_J0MODtWzfnJse0aNGyWg
@@ -262,6 +268,10 @@ CV注意力机制论文阅读笔记
 https://mp.weixin.qq.com/s/bMOLo9FXpPsOrD9j4CNHYg
 
 清华&南开最新“视觉注意力机制Attention”综述论文，带你全面了解六大类注意力机制方法
+
+https://mp.weixin.qq.com/s/VBWak2bREDHidZe1EExKLA
+
+中科院计算所最新“视觉Transformer”综述论文，带你全面了解最新CV分类、检测/分割方法
 
 https://mp.weixin.qq.com/s/M3VRlz8-McbTbp9VcctU0w
 
@@ -354,15 +364,3 @@ https://mp.weixin.qq.com/s/ozUHHGMqIC0-FRWoNGhVYQ
 https://mp.weixin.qq.com/s/dysKMpOXAjSRgb5xGDO3FA
 
 搞懂Vision Transformer原理和代码，看这篇技术综述就够了(三)
-
-https://mp.weixin.qq.com/s/EXtTUh4_w07Kc7hfBBMBiw
-
-搞懂Vision Transformer原理和代码，看这篇技术综述就够了（四）
-
-https://mp.weixin.qq.com/s/MyRJl_QsO2X1yF4akPGktg
-
-搞懂Vision Transformer原理和代码，看这篇技术综述就够了（五）
-
-https://mp.weixin.qq.com/s/FIilwbLzYk4av8w11VgJeQ
-
-计算机视觉中的Transformer

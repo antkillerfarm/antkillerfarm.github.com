@@ -323,6 +323,10 @@ https://mp.weixin.qq.com/s/F4h30cyQnjvJfjbtLfa83A
 
 图神经网络模型集合GraphGallery，TensorFLow&PyTorch一并实现
 
+https://mp.weixin.qq.com/s/vK9LA0-p31rah83AU7YgvA
+
+DeepMind加持的GNN框架正式开源！TensorFlow进入图神经网络时代
+
 # GCN
 
 https://mp.weixin.qq.com/s/bMpugd2Lp35VPr8fQAPzsg

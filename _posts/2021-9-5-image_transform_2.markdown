@@ -350,3 +350,7 @@ https://mp.weixin.qq.com/s/zvEIUJpgrjSM9-TLSzr3sQ
 https://mp.weixin.qq.com/s/C2ymfvnOohDutdY4-4aDkQ
 
 用GAN也可以P图，效果还不输PS
+
+https://mp.weixin.qq.com/s/19UeRktAjf2HBIiuzrQ9cA
+
+一键cosplay各路动漫人物！快手的这个BlendGAN火了

@@ -377,7 +377,9 @@ https://mp.weixin.qq.com/s/sAYh3l2eab2r2KpbdxN30A
 
 MoCo三部曲
 
-## MAE
+## Masked Autoencoders
+
+![](/images/img4/MAE.png)
 
 https://mp.weixin.qq.com/s/x-ruExbM9T8EIv2gZW0Nnw
 

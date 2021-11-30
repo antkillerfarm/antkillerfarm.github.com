@@ -67,6 +67,20 @@ http://www.deephi.com/zh-cn/dnndk.html
 
 目前的AI Chip战争，入局的玩家基本都解决了芯片有无的问题。体系结构的红利也吃的差不多了，在未来几年不大可能再保持目前的算力增速。因此，未来争夺的焦点将转向软件方面。实际上，今年以来，已经有客户拿友商产品性能来压我们。然而也就是压一下而已，让他弃用他肯定不干。原因无他，我司80%的功能都已经自动化，没人会和好用过不去。
 
+---
+
+2021.11
+
+最近国内比较火的AI芯片初创公司已经换成了：
+
+- 壁仞科技
+- 摩尔线程
+- 沐曦集成
+- 燧原科技
+- 瀚博半导体
+- 登临科技
+- 天数智芯
+
 ## Imagination
 
 Imagination Technologies公司前身是一家名为Video Logic的公司，VideoLogic成立于1985年，主营业务是图形与音频加速等方面。后来选择了与ARM的类似盈利模式——授权IP核，并在1999年更名为Imagination Technologies。
@@ -110,6 +124,16 @@ https://www.imgtec.com/vision-ai/
 https://mp.weixin.qq.com/s/W7GNhEq-em18V0YjCZ7MBw
 
 被苹果抛弃的芯片供应商，现状如何？
+
+---
+
+2020.1
+
+苹果自己研发受阻，重新延续imagination授权。
+
+https://zhuanlan.zhihu.com/p/103597189
+
+挣扎两年苹果重新向Imagination低头：自研GPU究竟难在何处？
 
 ## 寒武纪
 
@@ -241,29 +265,3 @@ Systolic array是孔祥重和他的博士生Charles Leiserson于1978年发明的
 http://web.cecs.pdx.edu/~mperkows/temp/May22/0020.Matrix-multiplication-systolic.pdf
 
 矩阵乘法器原理
-
-http://www.eecs.harvard.edu/~htk/publication/1980-introduction-to-vlsi-systems-kung-leiserson.pdf
-
-Algorithms for VLSI Processor Arrays
-
-https://zhuanlan.zhihu.com/p/26522315
-
-脉动阵列-因Google TPU获得新生
-
-http://www.sohu.com/a/142237570_505803
-
-我们应该拥抱“脉动阵列”吗？
-
-https://zhuanlan.zhihu.com/p/26882794
-
-Google深度揭秘TPU
-
-### 参考
-
-https://mp.weixin.qq.com/s/1X9xiZkmVPI-j-aipr-ocg
-
-AlphaGo Master最新架构和算法，谷歌云与TPU拆解
-
-https://mp.weixin.qq.com/s/Yo0uKd1Mzy4mmS4r0mxfVw
-
-有图有真相：深度拆解谷歌TPU3.0，新一代AI协同处理器

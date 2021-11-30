@@ -219,6 +219,18 @@ https://mp.weixin.qq.com/s/RhIcwL8dc7VmA00e5LZ-NQ
 
 # Attention进阶+
 
+https://zhuanlan.zhihu.com/p/125145283
+
+Rethink深度学习中的Attention机制
+
+https://mp.weixin.qq.com/s/fxEg8UOa3MeJ6qx5SjEHog
+
+NLP领域中各式各样Attention知识系统性的梳理和总结
+
+https://mp.weixin.qq.com/s/_5YaZdYa8bTFiAzHyrMFBg
+
+理解卷积神经网络中的自注意力机制
+
 https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
 
 阿里北大提出新attention建模框架，一个模型预测多种行为

@@ -247,6 +247,10 @@ https://mp.weixin.qq.com/s/v3gHIAWyRDnLOGN1G6jw6Q
 
 如何预测序列？看这份IJCAI2021亚马逊《大时间序列预测》教程
 
+https://mp.weixin.qq.com/s/t2UFI_MYINgeBtRyW_VWQA
+
+微观特征混合进行宏观时间序列预测
+
 # 姿态/行为检测进阶+
 
 https://mp.weixin.qq.com/s/6HsL2B7p-XyvGWAb4SwALA
