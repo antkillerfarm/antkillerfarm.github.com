@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  摩尔定律的瓶颈, CPU(一)
-category: resource 
+category: Chip 
 ---
 
 * toc
@@ -155,9 +155,9 @@ https://zhuanlan.zhihu.com/p/260425739
 
 FinFET的继任者：详解GAA晶体管
 
-## 浸润式微影
+## 光刻
 
-缩短波长的方法除了增加频率之外，其实还有更换介质。
+缩短波长的方法除了增加频率之外，其实还有更换介质（比如水），这就是浸润式微影。不同工作波长，液体也不同。需要考虑液体的吸收作用。
 
 ![](/images/img2/ASML.jpg)
 
@@ -168,6 +168,8 @@ Rayleigh criterion（瑞利判据）：
 $$CD = K_1 \frac{\lambda}{NA}$$
 
 $$K_1$$是一个常数，取决于与芯片制造工艺有关的许多因素。按照ASML的说法，其物理极限值是0.25。$$\lambda$$则代表光刻机使用光源的波长；NA则是光学器件的数值孔径，描述了它们能够收集光的角度范围；CD代表线宽，即可实现的最小特征尺寸。
+
+DUV是深紫外线（Deep Ultraviolet Lithography），EUV是极深紫外线（Extreme Ultraviolet Lithography）。
 
 参考：
 
@@ -222,6 +224,10 @@ https://mp.weixin.qq.com/s/vp-CvAvigztYse2_TI9T6Q
 https://mp.weixin.qq.com/s/DFU4zoteqehOJkBpVVhXyA
 
 EUV光刻机里的低调王者
+
+https://zhuanlan.zhihu.com/p/435563360
+
+28nm光刻机卡住“02专项”
 
 ## 芯片制造
 

@@ -9,6 +9,8 @@ category: my story
 
 # Blog维护日志
 
+2021.12.1 添加Ancient China和Chip分类。
+
 2021.11.20 添加Korean War和DL & NLP resource分类。分类数达到30。
 
 2021.10.25 文章数达到500篇。

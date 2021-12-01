@@ -242,6 +242,34 @@ https://mp.weixin.qq.com/s/VIMKnqcoNw4VGigZJiDoYg
 
 # 物理++
 
+https://mp.weixin.qq.com/s/XDBvVjIRfjtDrTN4zd92yg
+
+高铁辐射致癌，为什么会有这种令人喷饭的言论出现？
+
+https://mp.weixin.qq.com/s/2n-60v-ocfszU9xhbG4Ofg
+
+达·芬奇和宋代画家告诉你，除了诗和远方，世上还有散射现象（瑞利散射、米氏散射）
+
+https://mp.weixin.qq.com/s/foZaIzpyxiRf9_9O7f6EaQ
+
+985大学首次登上Nature封面（超疏水材料）
+
+https://mp.weixin.qq.com/s/hnDjc8H9US4vZM4PZADZYg
+
+如何修建岩浆护城河
+
+https://mp.weixin.qq.com/s/KsGGMCKsQlHYxXONOTthGQ
+
+当你按下“除湿”键时，空调内究竟发生了什么？
+
+https://mp.weixin.qq.com/s/fbJQs87R9c8_j_B5-zTsVg
+
+古代没有冰箱，夏天冰块是怎么来的？
+
+https://mp.weixin.qq.com/s/Xky_uit9pSsU7pX6DaapsQ
+
+美国蜂蜜中发现放射性核物质！核弹试验影响延续至今
+
 https://mp.weixin.qq.com/s/LKg1frUABbR7MwVlPt3wTw
 
 毕达哥拉斯在铁匠铺称锤子？看似“科学”的故事哪里错了

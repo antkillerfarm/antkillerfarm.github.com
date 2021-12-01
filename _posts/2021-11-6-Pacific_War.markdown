@@ -1,11 +1,107 @@
 ---
 layout: post
-title:  太平洋战争
+title:  饺子级航母, 太平洋战争
 category: WW2 
 ---
 
 * toc
 {:toc}
+
+# 饺子级航母
+
+米畜教你下饺子的正确姿势：
+
+1.Essex 31 December 1942
+
+2.Independence 14 January 1943
+
+3.Lexington 17 February 1943
+
+4.Princeton 25 February 1943
+
+5.Belleau Wood 31 March 1943
+
+6.Yorktown 15 April 1943
+
+7.Bunker Hill 25 May 1943
+
+8.Cowpens 28 May 1943
+
+9.Monterey 17 June 1943
+
+10.Cabot 24 July 1943
+
+11.Intrepid 16 August 1943
+
+12.Langley 31 August 1943
+
+13.Bataan 17 November 1943
+
+14.Hornet 20 November 1943
+
+15.Wasp 24 November 1943
+
+16.San Jacinto 15 December 1943
+
+17.Franklin 31 January 1944
+
+18.Hancock 15 April 1944
+
+19.Ticonderoga 8 May 1944
+
+20.Bennington 6 August 1944
+
+21.Shangri-la 15 September 1944
+
+22.Randolph 9 October 1944
+
+23.Bon Homme Richard 26 November 1944
+
+24.Antietam 28 January 1945
+
+25.Boxer 16 April 1945
+
+26.Lake Champlain 3 July 1945
+
+17艘CV+9艘CVL
+
+![](/images/img3/Shipyard.jpg)
+
+蹩脚的厨师：
+
+1.にぎつ丸 January 1942
+
+2.龍鳳 November 1942
+
+3.大鳳 March 1943
+
+4.千代田 December 1943
+
+5.千歳 January 1944
+
+6.天城 August 1944
+
+7.雲龍 August 1944
+
+8.葛城 October 1944
+
+9.信濃 November 1944
+
+10.山汐丸 January 1945
+
+11.しまね丸 February 1945
+
+12.熊野丸 March 1945
+
+---
+
+https://zhuanlan.zhihu.com/p/28221950
+
+埃塞克斯级---饺子级的前世今生(上)
+
+https://zhuanlan.zhihu.com/p/29837980
+
+埃塞克斯级————饺子级的前世今生(下)
 
 # 太平洋战争
 

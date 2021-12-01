@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  AI Chip（一）
-category: AI 
+category: Chip 
 ---
 
 * toc

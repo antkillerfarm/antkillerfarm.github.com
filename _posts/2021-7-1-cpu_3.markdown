@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CPU(三), 超算
-category: resource 
+category: Chip 
 ---
 
 * toc

@@ -232,3 +232,7 @@ https://mp.weixin.qq.com/s/bwfRBCiLJqNZBxrZDpjcEQ
 https://www.zhihu.com/question/25663240
 
 为何说银河系的中央是巨大的黑洞？
+
+https://www.zhihu.com/question/28099598
+
+怎样测量天体的质量?
