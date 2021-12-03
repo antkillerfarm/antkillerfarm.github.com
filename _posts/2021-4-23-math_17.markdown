@@ -65,6 +65,28 @@ https://mp.weixin.qq.com/s/p-EVuaPfLusq01Jw8KcQdQ
 
 六一礼物：这些有趣的动图送给孩子们！了解数学能做什么？电路如何工作？
 
+# Harmonic Number
+
+调和级数：
+
+$$H_n=\sum_{k=1}^n \frac{1}{k}$$
+
+这是一个增长极其缓慢（前一万亿项相加约为28），但却最终发散的级数。
+
+欧拉给出了近似计算公式：
+
+$$H_n \approx ln(n) + \gamma + \frac{1}{2n}$$
+
+这里的$$\gamma$$被称为Euler-Mascheroni Constant。
+
+https://mathworld.wolfram.com/HarmonicNumber.html
+
+Harmonic Number
+
+https://baike.baidu.com/item/调和级数
+
+调和级数
+
 # 数学杂谈
 
 ![](/images/img4/sheep.png)
@@ -232,23 +254,3 @@ https://blog.csdn.net/ChangHengyi/article/details/80577318
 https://mp.weixin.qq.com/s/K9_1PE_C45DnMxPc1fK7hw
 
 傅里叶思想漫谈：从希尔伯特空间到不确定性原理
-
-https://mp.weixin.qq.com/s/AQgFded7GWp1yPE_voT0QQ
-
-看完这45组酷炫数学动图，原来数学这么有意思！
-
-https://mp.weixin.qq.com/s/23zElw2ktT3YbNZ9_r5lgQ
-
-“一个千古绝伦的大智者”莱布尼茨
-
-https://mp.weixin.qq.com/s/43XCOdNqeKxMmpfkX3JTGw
-
-一个退休程序员，用高中几何方法，让百年数学难题逼近理论极限（万有覆盖问题）
-
-https://mp.weixin.qq.com/s/a1TEh1c1VZ345rmj8UiPgA
-
-“科比球”背后的数学
-
-https://mp.weixin.qq.com/s/6XsH71CKaVikqnL6kVPqtg
-
-各种语言的Mandelbrot set示例代码

@@ -3,10 +3,17 @@ layout: default
 title: Antkillerfarm Hacking
 ---
 
+<h2>{{site.categories.size}} categories of this blog </h2>
+<ul class="posts">
 {% for category in site.categories %}
 {% capture cat %}{{ category | first }}{% endcapture %}
+    <li>&raquo; <a href="#{{cat}}">{{cat}}</a> <span>{{site.categories[cat].size}} posts</span></li>
+{% endfor %}
+</ul>
 
-<h2>{{site.categories[cat].size}} posts of {{cat | capitalize }} </h2>
+{% for category in site.categories %}
+{% capture cat %}{{ category | first }}{% endcapture %}
+<h2>{{site.categories[cat].size}} posts of {{cat | capitalize }} <a name="{{cat}}"/></h2>
     <ul class="posts">
     {% for post in site.categories[cat] %}
         <li>

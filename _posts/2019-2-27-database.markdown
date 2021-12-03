@@ -143,10 +143,6 @@ https://blog.csdn.net/horses/article/details/104553075
 
 SQL编程思想：一切皆关系
 
-https://mp.weixin.qq.com/s/CvXKbp5Id6_lOWNs6ntWiA
-
-SQL最大竞争对手（QUEL）的简史
-
 https://mp.weixin.qq.com/s/NgHyZVcb8zoN8tETwCWEmw
 
 为什么阿里巴巴禁止使用存储过程？

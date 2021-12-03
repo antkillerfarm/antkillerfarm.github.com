@@ -212,6 +212,22 @@ https://mp.weixin.qq.com/s/WD804KImL5jCvq-EJUdmSw
 
 # 数据库参考资源
 
+![](/images/img4/database.svg)
+
+![](/images/img4/database.jpg)
+
+https://hpi.de/naumann/projects/rdbms-genealogy.html
+
+https://zhuanlan.zhihu.com/p/439807305
+
+为什么说PostgreSQL前途无量？
+
+https://mp.weixin.qq.com/s/CvXKbp5Id6_lOWNs6ntWiA
+
+SQL最大竞争对手（QUEL）的简史
+
+---
+
 https://www.cnblogs.com/ahu-lichang/p/10899747.html
 
 数据库三大范式（1NF,2NF,3NF）及ER图

@@ -270,33 +270,17 @@ https://mp.weixin.qq.com/s/xHm4AjopGKSUE0-uAk5IHg
 
 用概率论告诉你：直觉到底有多不靠谱。包括了三门问题和本福特定律。
 
-# Harmonic Number
-
-调和级数：
-
-$$H_n=\sum_{k=1}^n \frac{1}{k}$$
-
-这是一个增长极其缓慢（前一万亿项相加约为28），但却最终发散的级数。
-
-欧拉给出了近似计算公式：
-
-$$H_n \approx ln(n) + \gamma + \frac{1}{2n}$$
-
-这里的$$\gamma$$被称为Euler-Mascheroni Constant。
-
-https://mathworld.wolfram.com/HarmonicNumber.html
-
-Harmonic Number
-
-https://baike.baidu.com/item/调和级数
-
-调和级数
-
 # Lie Groups
 
 《State estimation for Robotics: A Matrix Lie Group Approach》
 
 >Marius Sophus Lie，1842～1899，挪威数学家。University of Christiania博士（1871），University of Leipzig教授。当时德国的大学，一个系只有一个教授，所以这里的教授相当于现在的系主任或者院长。Lie接的是Felix Klein的班，后者跑到University of Göttingen当教授去了。
+
+Galois建立群论后，一元n次方程的求解解决了，人们希望能继续前进，能够用群论求解牛顿的微分方程。
+
+李发现，连续群是一个空间，每一个元素都可以用矩阵表示，由于连续，所以矩阵相当一个函数。正如一个抽象曲线（曲面）上的一个点，每个点的导数都具有特别的性质。
+
+进一步，李发现矩阵（函数）的导数等于系数乘以它本身，这个系数具有特殊的性质，李将之命名为李代数。李群的问题便转为李代数的问题，因为一个元素的导数等于一个李代数乘以元素本身。
 
 参考：
 

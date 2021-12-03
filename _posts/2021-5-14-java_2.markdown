@@ -231,6 +231,10 @@ https://mp.weixin.qq.com/s/rDAAfeQmUhxaHkrt_zVCCg
 
 如何避免JS内存泄漏？
 
+https://zhuanlan.zhihu.com/p/438734215
+
+揭秘Chromium渲染引擎（一）：RenderingNG
+
 # python++
 
 https://mp.weixin.qq.com/s/MzORtWN-mSmY9N5Ps5m5Mw
