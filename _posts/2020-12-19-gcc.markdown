@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  gcc, LLVM, ANTLR, 虚拟机比较, CMake, Ninja
+title:  gcc, LLVM, ANTLR, CMake, Ninja
 category: technology 
 ---
 
@@ -235,26 +235,6 @@ MPS是jetbrains推出的用于构建DSL的工具。
 
 https://www.jetbrains.com/mps/
 
-# 虚拟机比较
-
-早期如Bochs之类的没用过，现在估计也没什么人用了吧。
-
-现在主要是以下三个选择：
-
-1.VMware。商业收费软件。有免费版本的VMware Player，但该版本不可创建虚拟机，只可使用别人已经建好的虚拟机。
-
-2.VirtualBox。开源免费软件。
-
-3.Qemu。Qemu的易用性不佳，作为使用的话，能不用就不用了。但其不仅开源，而且支持的架构也很多，有的时候往往是唯一之选。作为研究学习来说，这个是首选。
-
-这里主要讨论前两者的选择。
-
-VMware由于是收费软件之故，因此用户的软件升级是个大问题。（土豪除外，有钱的话，这个就不是事了。）而旧的软件，往往对新的Linux发行版的支持较差。很多情况下，VMware Tool因为这个原因总是无法完美运行。严重影响了软件的易用性。
-
-反之，VirtualBox就没有这些问题。虽然比较同期的VMware来说，VirtualBox的性能略逊。但是一般来说，科技行业里领先半年就已经是巨大的优势了。我相信现在的VirtualBox，无论如何也不会弱于两年前的VMware。
-
-因此与其守着过时的VMware 8.0，还不如换用VirtualBox，这就是我的选择。
-
 # CMake
 
 添加头文件目录
@@ -344,3 +324,25 @@ xmake：一个Lua编写的构建工具。
 https://blog.codingnow.com/2021/05/make_to_ninja.html
 
 构建工具从Make到Ninja
+
+# git+
+
+https://mp.weixin.qq.com/s/PUUL913fig6cFfqy4OKcGA
+
+工作流一目了然，看小姐姐用动图展示10大Git命令
+
+https://blog.csdn.net/mocoe/article/details/84344411
+
+修改git commit的author信息
+
+https://mp.weixin.qq.com/s/9Ey04P5Xv4W95N2FEioZ1g
+
+如何选择Git分支模式？
+
+https://mp.weixin.qq.com/s/GZkGfwrfMTzrMfki8LKbIw
+
+腾讯广告3000+万行大代码库主干开发实战
+
+https://mp.weixin.qq.com/s/KEu6qCl-En6HiKGo2pgEQg
+
+TensorBay：一款易用的像Git一样数据版本管理工具！

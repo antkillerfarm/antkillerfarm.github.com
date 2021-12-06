@@ -293,78 +293,42 @@ https://mp.weixin.qq.com/s/y89cPgaIBWeudJnsFRR-Ow
 
 我用“大白鲨”让你看见TCP
 
-# Android研究+
+## Fiddler
 
-## adb
+Fiddler是另一个常用的抓包工具。
 
-手机->PC：
+fiddler相当于一个中间商，当浏览器发送请求，会先经过fiddler，然后在转给服务器；当服务器有返回数据给浏览器显示时，也会先经过fiddler，然后再把数据返沪给客户端，在这样一个过程，fiddler就可以截取请求和响应。
 
-`adb pull sdcard/contacts_app.db`
+Wireshark跟fiddler的主要区别就是，Wireshark主要用来帮助用户对网络行为有一个了解，而不能对网络内容做更改或是提示，也就是说只能查看不能修改或转发。
 
-PC->手机：
+官网：
 
-`adb push aaa/contacts_app.db /sdcard/`
-
----
-
-https://www.cnblogs.com/caoxinyu/p/10568463.html
-
-Ubuntu adb报错：no permissions (user in plugdev group; are your udev rules wrong?);
-
-## tombstone
-
-当一个动态库（native 程序）开始执行时，系统会注册一些连接到debuggerd的signal handlers，当系统crash的时候，会保存一个tombstone文件到/data/tombstones目录下。
-
-https://www.cnblogs.com/CoderTian/p/5980426.html
-
-Android Tombstone分析
-
-## Logcat
-
-官方文档：
-
-https://developer.android.google.cn/studio/command-line/logcat
+https://www.telerik.com/fiddler
 
 参考：
 
-https://www.cnblogs.com/JianXu/p/5468839.html
+https://www.cnblogs.com/Adam-Ye/p/15265899.html
 
-Android logcat命令详解
+抓包：Fiddler和Wireshark的简单使用
 
-## 打包
+## Whistle
 
-apk包就是android系统的安装包。
+Whistle是腾讯推出的Fiddler替代品。
 
-aar是android中特有的归档文件，既包含字节码文件也包含android的资源文件等。
+官网：
 
-jar是java字节码文件（class文件）的归档文件，其不包含android中的资源文件等信息。
+https://wproxy.org/whistle/
 
-https://blog.csdn.net/it_yangkun/article/details/80119182
+代码：
 
-Android打包APK,AAR,JAR
+https://github.com/avwo/whistle
 
-## 参考
+参考：
 
-https://mp.weixin.qq.com/s/twfpUMf9CfXcgwtFFkJ4Ig
+https://www.cnblogs.com/zhihuilai/p/9992533.html
 
-Android整体设计及背后意义
+Whistle，web抓包与debug利器
 
-https://mp.weixin.qq.com/s/eEuNPtTaPwJ7hSghgeU32g
+https://zhuanlan.zhihu.com/p/441818328
 
-Android Hook技术防范漫谈
-
-https://mp.weixin.qq.com/s/AQI2S2oK7HFDs9lH-nsx5g
-
-Android性能优化系列：Java内存优化篇
-
-https://www.jianshu.com/p/80013a768a45
-
-Android soong build系统介绍
-
-https://mp.weixin.qq.com/s/xQ6w1qlMjgxlP8QpF34GVA
-
-不吹不擂，一文揭秘鸿蒙操作系统
-
-https://mp.weixin.qq.com/s/QC0QDPwBU5OLjtZNqDzSrg
-
-鸿蒙之迷思
+Whistle实现原理——从0开始实现一个抓包工具
