@@ -27,6 +27,12 @@ https://mp.weixin.qq.com/s/UGhHM1jCN0S7TX9jwLcMmQ
 
 2020图灵奖重磅出炉！龙书作者、编程语言先驱共获大奖，是他们解放了一代又一代程序员
 
+---
+
+https://www.zhihu.com/question/315313590
+
+学习编译原理有什么好的书籍?
+
 ## blog
 
 https://zhuanlan.zhihu.com/frozengene

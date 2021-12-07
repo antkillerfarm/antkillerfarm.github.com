@@ -316,25 +316,3 @@ https://mp.weixin.qq.com/s/ROTKi-Ycm0ypIi0FhCW4Xw
 https://mp.weixin.qq.com/s/9d6EhZEdn6XY-wFC22LysQ
 
 最新“深度学习人脸检测”综述论文，17页pdf概述50种人脸检测SOTA方法
-
-# DRL参考资源++
-
-https://mp.weixin.qq.com/s/nnWuIPk_6mI9IAKIUbx6KQ
-
-深度强化学习解决交通控制问题
-
-https://mp.weixin.qq.com/s/RNJonPJL9JY5OH2-1sZMQw
-
-中山大学HCP实验室：基于树状结构策略的渐进强化学习
-
-https://mp.weixin.qq.com/s/G2sFkuvSeYmhkFjjPRGI-Q
-
-强化学习如何用于推荐？新南威尔士首篇《深度强化学习推荐系统》综述论文
-
-https://mp.weixin.qq.com/s/fMjjGCzef-3SVIOlUf2EFA
-
-强化学习如何用于推荐？厦大最新《强化学习推荐系统》综述论文
-
-https://mp.weixin.qq.com/s/8cV3Z_vkC0_cyfO2nVKoSw
-
-华人博士用强化学习回收了SpaceX火箭

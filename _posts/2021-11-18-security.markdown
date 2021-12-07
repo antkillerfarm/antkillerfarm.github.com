@@ -216,3 +216,7 @@ https://www.zhihu.com/question/356008082
 https://mp.weixin.qq.com/s/yCB2R8QPWNp2lJrQD4l_hw
 
 聊聊移动端安全加固
+
+https://zhuanlan.zhihu.com/p/28528257
+
+美国人写了一个只靠U盘传播的病毒，毁了伊朗的核计划

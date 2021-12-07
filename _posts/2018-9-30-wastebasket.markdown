@@ -129,6 +129,10 @@ https://zhuanlan.zhihu.com/p/56874296
 
 我的劝退之总结篇
 
+https://mp.weixin.qq.com/s/_gq1nxHJGzCZtmjHBNjM1w
+
+笑死我了，土木行业真是惨
+
 ---
 
 科大黄秋原、同济沈海英、交大钱璐璐、复旦李敏、中科大陈璐，由于手段极其高级，所以现在被网友称为“学术圈妲己”。
@@ -258,6 +262,10 @@ https://mp.weixin.qq.com/s/qQIUj87iMUn7RsPKABignA
 https://www.zhihu.com/answer/692061772
 
 学术圈修仙记
+
+https://www.zhihu.com/question/503354095
+
+如何看待复旦大学毕业生最后一科考试被举报作弊，取消学位证、毕业证以及研究生资格，后起诉母校？
 
 ---
 

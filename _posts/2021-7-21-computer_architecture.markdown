@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 计算机体系结构, GPU通信技术
+title: 计算机体系结构
 category: Chip 
 ---
 
@@ -255,60 +255,14 @@ SPMD model implemented by a SIMD processor (a GPU)
 
 GPU虽然是一个SIMD机器，但是并没有采用SSE、AVX之类的SIMD编程模型，而是SPMD模型。
 
-# GPU通信技术
+## 移动GPU
 
-## RDMA
+移动GPU和桌面GPU最核心的差别在于渲染流程不同。目前主流的移动GPU，无论ARM、高通还是Imagination，其GPU都是TBR（Tile Based Rendering）。而桌面GPU，无论NVIDIA、AMD还是Intel，都是Immediate Rendering。
 
-RDMA网卡（Remote Direct Memory Access，这是一种硬件的网络技术，它使得计算机访问远程的内存时无需远程机器上CPU的干预）已经可以提供50~100Gbps的网络带宽和微秒级的传输延迟。
+所谓的Immediate Rendering，就是将一个图元（最常见的是三角形），从头到尾走完整个Pipeline，中间没有停止。这种结构，控制简单，容易实现。问题是在做blending的时候需要从存储单元中不断读回之前render的结果，因此在绘制一个大的场景时这个带宽消耗是比较大的。而桌面GPU都是有自身显存的，它不需要通过系统总线从系统的DDR memory中读回数据。所以开销比较小，这是完全可以接受的。
 
-目前许多以深度学习为目标应用的GPU机群都部署了这样的网络。
+TBR的精髓就是一个Tile一个Tile的渲染。这样只需要给GPU配上一块很小的片上cache（足够装下一两个Tile的内容就行），就能实现高效的blending。移动GPU中有Tiler模块，将整个场景的图元信息（最主要的是位置）都保存下来，并且能在做光栅化时快速的检索出属于这个Tile的图元。
 
-UCX是一个建立在RDMA等技术之上的用于数据处理和高性能计算的通信框架，RDMA是其底层核心之一。
+https://www.zhihu.com/question/20720436
 
-OpenUCX是UCX的一个开源实现。
-
-官网：
-
-https://www.openucx.org/
-
-参考：
-
-https://mp.weixin.qq.com/s/_xcE8RUs0m4gwk3kxpe9jA
-
-基于HTM/RDMA的可扩展内存事务处理系统
-
-https://www.zhihu.com/column/c_1231181516811390976
-
-一个RDMA方面的专栏
-
-## NVLink
-
-NVLink技术提供比PCIe 3更高的带宽与更多的链路，并可提升多GPU和多GPU/CPU系统配置的可扩展性。
-
-官网：
-
-https://www.nvidia.cn/data-center/nvlink/
-
-![](/images/img3/nvlink.png)
-
-Tesla V100中以NVLink连接的GPU至GPU和GPU至CPU通信。
-
-![](/images/img3/nvlink_2.png)
-
-在DGX-1V服务器中，混合立体网络拓扑使用NVLink连接8个Tesla V100加速器。每个GPU有6条nvlink通道，总带宽高达300GB/s。
-
-从上图可以看到，即使每个GPU拥有6条nvlink通道，仍然无法做到“全连接”（即任意两个GPU之间存在双向通道）。这就引出了下一个更加疯狂的技术：nvswitch。
-
-![](/images/img3/nvswitch.png)
-
-NVSwitch是首款节点交换架构，可支持单个服务器节点中16个全互联的GPU，并可使全部8个GPU对分别以300GB/s的惊人速度进行同时通信。这16个全互联的GPU还可作为单个大型加速器，拥有0.5 TB统一显存空间和2 PetaFLOPS计算性能。
-
-## 参考
-
-https://www.infoq.cn/article/3D4MsRVS8ZOtGCj7*krT
-
-GPU通信技术初探
-
-https://zhuanlan.zhihu.com/p/67785062
-
-不止显卡！这些硬件因素也影响着你的深度学习模型性能
+移动GPU和桌面GPU的差距有哪些？

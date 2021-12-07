@@ -299,6 +299,10 @@ https://mp.weixin.qq.com/s/MfDQXTSoe0GnaEFfyLJQ1w
 
 点云处理不得劲？球卷积了解一下
 
+https://paddlepedia.readthedocs.io/en/latest/tutorials/CNN/convolution_operator/3D_Convolution.html
+
+3D卷积
+
 ## 参考
 
 https://github.com/vdumoulin/conv_arithmetic

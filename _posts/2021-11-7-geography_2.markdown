@@ -145,6 +145,10 @@ https://www.zhihu.com/question/32141371
 
 美国黄石国家公园地下的超级火山的前世今生是怎样的？
 
+https://www.zhihu.com/question/375319488
+
+为什么史前会下几百万年的大雨?（卡尼期洪积事件）
+
 # 化学+
 
 https://mp.weixin.qq.com/s/ySR1dyDqMJ90VcrxFDjPgw

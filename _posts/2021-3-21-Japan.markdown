@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 日本
+title: 日本（一）
 category: World 
 ---
 

@@ -7,7 +7,27 @@ category: RL
 * toc
 {:toc}
 
-# Exploration & Exploitation（续）
+# Integrating Learning and Planning（续）
+
+### Model-Based RL
+
+优点：
+
+- 比较强的泛化能力。因为当训练完成后，智能体便学到了一个比较好的描述系统的模型，当外界环境变化后，很多时候系统自身的模型是不变的，这样智能体其实是学到了一些通用的东西（即系统本身的模型），当泛化到新的环境时，智能体可以依靠学到的模型去做推理。
+
+- 数据的利用效率高。
+
+缺点：
+
+- 不具有通用性。不同系统的Model是不一样的。
+
+# Exploration & Exploitation
+
+几个基本的探索方法：
+
+- **朴素探索(Naive Exploration)**: 在贪婪搜索的基础上增加一个$$\epsilon$$以实现朴素探索；
+
+- **乐观初始估计(Optimistic Initialization)**: 优先选择当前被认为是最高价值的行为，除非新信息的获取推翻了该行为具有最高价值这一认知；
 
 - **不确定优先(Optimism in the Face of Uncertainty)**: 优先尝试不确定价值的行为；
 
@@ -291,31 +311,3 @@ DeepMind开源Psychlab平台——搭建AI和认知心理学的桥梁
 https://mp.weixin.qq.com/s/xJ_g3BvbM-WaIyLthHdhEw
 
 DeepMind发布通用强化学习新范式，自主机器人可学会任何任务
-
-https://mp.weixin.qq.com/s/U0K79ELLj4wsOR4sd5G4Vw
-
-Vicarious详解新型图式网络：赋予强化学习泛化能力
-
-https://mp.weixin.qq.com/s/C8hsGkHGtoaS9Vzm6Ub4tw
-
-Berkeley提出“随机搜索”训练线性策略，提高RL的性能
-
-https://mp.weixin.qq.com/s/uppNSwxNrw4_8NGBQv85xw
-
-今日头条首次改进DQN网络，解决推荐中的在线广告投放问题
-
-https://mp.weixin.qq.com/s/JtUuFdTK4Q5YwnVj3BFU2w
-
-全参数化分布，提升强化学习中的收益分布拟合能力
-
-https://mp.weixin.qq.com/s/amXiNKJPEkAnu2m5NAERVw
-
-Top-K Oﬀ-Policy Correction
-
-https://mp.weixin.qq.com/s/kNtzy9-6GbsRhlL-mxksew
-
-基于强化学习的人机对话
-
-https://mp.weixin.qq.com/s/w3SsadgKaL8-tlzYLvMm-A
-
-讲真？一天就学会了自动驾驶——强化学习在自动驾驶的应用

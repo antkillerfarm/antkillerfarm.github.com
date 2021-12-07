@@ -9,15 +9,27 @@ category: Chip
 
 # CPU
 
-## 多核
+## 封装（续）
 
-https://zhuanlan.zhihu.com/p/53596593
+https://zhuanlan.zhihu.com/p/54685671
 
-所有CPU内核一定生来平等吗？Intel非对称异构多处理器：Lakefield
+PCB板上的黑色的物体是什么？
 
-https://en.wikipedia.org/wiki/ARM_big.LITTLE
+https://mp.weixin.qq.com/s/MQHZ-yLhZRIfOL9kN4XFKw
 
-ARM的big.LITTLE架构
+一文看懂3D封装技术及发展趋势
+
+https://mp.weixin.qq.com/s/WBab6k4mIkZNzpvbgSbpVQ
+
+一文看懂SiP封装技术
+
+https://mp.weixin.qq.com/s/S-YGgvE6ey2t9_YmVmKOFg
+
+一份难得的MOS管封装分析报告
+
+https://mp.weixin.qq.com/s/FVcmCvimpoGCtCtm4RDtUg
+
+浅谈先进封装技术
 
 ## 片上网络
 

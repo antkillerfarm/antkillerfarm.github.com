@@ -229,6 +229,10 @@ https://zhuanlan.zhihu.com/p/435563360
 
 28nm光刻机卡住“02专项”
 
+https://zhuanlan.zhihu.com/p/434563254
+
+国产“28nm光刻机”又跳票？到底卡在了哪里？
+
 ## 芯片制造
 
 ![](/images/img4/Wafer_size.png)
@@ -290,23 +294,3 @@ https://mp.weixin.qq.com/s/vGONCRzvFGVo6giUFq0uag
 https://mp.weixin.qq.com/s/RtSmbwguM7dbsXkWqAPuCQ
 
 英特尔3D封装技术深度解读
-
-https://zhuanlan.zhihu.com/p/54685671
-
-PCB板上的黑色的物体是什么？
-
-https://mp.weixin.qq.com/s/MQHZ-yLhZRIfOL9kN4XFKw
-
-一文看懂3D封装技术及发展趋势
-
-https://mp.weixin.qq.com/s/WBab6k4mIkZNzpvbgSbpVQ
-
-一文看懂SiP封装技术
-
-https://mp.weixin.qq.com/s/S-YGgvE6ey2t9_YmVmKOFg
-
-一份难得的MOS管封装分析报告
-
-https://mp.weixin.qq.com/s/FVcmCvimpoGCtCtm4RDtUg
-
-浅谈先进封装技术
