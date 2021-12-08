@@ -220,3 +220,7 @@ https://mp.weixin.qq.com/s/yCB2R8QPWNp2lJrQD4l_hw
 https://zhuanlan.zhihu.com/p/28528257
 
 美国人写了一个只靠U盘传播的病毒，毁了伊朗的核计划
+
+https://www.sohu.com/a/250882983_355019
+
+一个42KB的文件，解压完其实是个4.5PB的“炸弹”

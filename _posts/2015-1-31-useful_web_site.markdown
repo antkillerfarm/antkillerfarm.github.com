@@ -136,6 +136,12 @@ https://en-m.jinzhao.wiki/wiki/Main_Page
 
 https://www.douban.com/note/748489872/
 
+---
+
+伪基百科（英语：Uncyclopedia），是一个以戏仿维基百科为目的而讽刺、恶搞、幽默、搞笑与娱乐的网络百科全书。
+
+类似的还有萌娘百科、恶俗维基。
+
 ## Other
 
 黑轴、青轴、茶轴、红轴。
@@ -300,10 +306,6 @@ https://mp.weixin.qq.com/s/sYm-5jo-batq1fwv_tCmQw
 
 微信小程序30分钟从陌生到熟悉（下）
 
-https://mp.weixin.qq.com/s/VgJSMN0mkfEerhWpWpEFbg
-
-一个42KB的文件，解压完其实是个4.5PB的“炸弹”
-
 https://mp.weixin.qq.com/s/6AfmiLRSUP819J43EwJBqA
 
 ORACLE ERP的前世今生
@@ -316,13 +318,9 @@ https://mp.weixin.qq.com/s/0QnH0F8JZQBsECoJeGqpsg
 
 虚拟现实与增强现实的前沿技术PPT
 
-https://mp.weixin.qq.com/s?__biz=MzIyNzUwMjM2MA==&mid=2247485942&idx=1&sn=1597233c1527cac63a2c734ec0b14f02
+https://mp.weixin.qq.com/s/qD2Fb9QMdtOcvHtcVa9pOA
 
 编程基础知识
-
-https://mp.weixin.qq.com/s?__biz=MzIyNzUwMjM2MA==&mid=2247486006&idx=1&sn=d4978396fa18e5dfce69a51ac7748898
-
-网络编程基础知识
 
 https://mp.weixin.qq.com/s/EPWRwOBT8_616R5RWbdaTQ
 
@@ -331,14 +329,6 @@ https://mp.weixin.qq.com/s/EPWRwOBT8_616R5RWbdaTQ
 https://fwupd.org/
 
 Linux Vendor Firmware Service。这个网站提供Linux平台的各种BIOS或者外设的固件更新。
-
-https://mp.weixin.qq.com/s/h4LwSRAsDgRqOq3mLt_SCw
-
-浅谈mmap
-
-https://mp.weixin.qq.com/s/djEPqxZSfMp13Uf_h6TSiA
-
-认真分析mmap：是什么 为什么 怎么用
 
 https://mp.weixin.qq.com/s/pSUXoLrwQeaxsI2LI-13EA
 
@@ -356,21 +346,9 @@ https://mp.weixin.qq.com/s/BJwohmG_BEJ7dXbcPTgaCQ
 
 风口上的RPA：是AI落地缓冲剂，还是创投圈的一场炒作？
 
-https://mp.weixin.qq.com/s/geT7x5RG4xhD-Ro1eZvrdg
-
-深入浅出Serverless：优势、意义与应用
-
-https://mp.weixin.qq.com/s/6Rl1uvIeysG844W2TtGocg
-
-一文看懂当红Serverless
-
 https://mp.weixin.qq.com/s/esunl-zyplt-V70PgPDWqA
 
 我收集了12款自动生成器，无聊人士自娱自乐专用
-
-https://mp.weixin.qq.com/s/FMYimnxcAya6bhvdGD5LUw
-
-惊魂48小时，阿里工程师如何紧急定位线上内存泄露？
 
 https://mp.weixin.qq.com/s/s5BI2r0KxGVXZC4LsOAwpw
 

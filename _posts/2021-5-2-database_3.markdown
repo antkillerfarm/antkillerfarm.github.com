@@ -353,3 +353,13 @@ https://mp.weixin.qq.com/s/7I5OfGnGtXk2u9PtGLObCA
 https://spring.io/guides/gs/producing-web-service/
 
 http://localhost:9999/ws/countries.wsdl
+
+# Serverless
+
+https://mp.weixin.qq.com/s/geT7x5RG4xhD-Ro1eZvrdg
+
+深入浅出Serverless：优势、意义与应用
+
+https://mp.weixin.qq.com/s/6Rl1uvIeysG844W2TtGocg
+
+一文看懂当红Serverless
