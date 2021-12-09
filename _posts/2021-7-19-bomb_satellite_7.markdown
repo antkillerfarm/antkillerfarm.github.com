@@ -140,3 +140,17 @@ https://www.zhihu.com/question/407143888
 https://www.zhihu.com/question/24362158
 
 为什么很多领域的产品都有人要求国产化？
+
+---
+
+ISO：国际标准化组织。（International Standard Organization）
+
+DIN：德国标准化学会。（Deutsches Institut für Normung）
+
+ANSI：美国国家标准学会。（American National Standards Institute）
+
+EN标准是欧盟的标准，欧洲的国家内通用；
+
+由于欧洲每个国家国情，法律法规情况不同，除了使用通用的，一般还会按照自己国家的特点再设置对应的标准的。DIN EN 就是德国的标准，BS EN就是英国标准。
+
+国内做工业的人都知道国际通行的两大工业标准，DIN和ANSI，我们在很多第三世界做项目的时候，都是用这两套标准，几乎没人说什么日本标准，当然也很少用到中国GB，不过一带一路开始用了，我们做的冶金EPC项目也逐渐开始用了，因为机电一体化设备都是国内成套，他不用行吗。

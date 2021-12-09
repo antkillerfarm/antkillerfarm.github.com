@@ -334,3 +334,15 @@ https://mp.weixin.qq.com/s/8PUIJykzoNe-fYht5ozrcQ
 https://mp.weixin.qq.com/s/YusIuUtvTwoskNRV_OV7iw
 
 100万帧数据仅1秒！AI大牛颜水成团队强化学习新作，代码已开源
+
+https://www.zhihu.com/answer/2259890109
+
+资源受限的人工智能
+
+https://zhuanlan.zhihu.com/p/432289008
+
+从分布式训练到大模型训练
+
+https://zhuanlan.zhihu.com/p/371499074
+
+OneFlow——让每一位算法工程师都有能力训练GPT
