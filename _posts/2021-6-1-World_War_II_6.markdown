@@ -196,3 +196,7 @@ https://mp.weixin.qq.com/s/YPgFtLkpl9BGNZPo_IEcrg
 https://www.zhihu.com/question/498827834
 
 苏联拖拉机为什么没有解决农业问题？
+
+https://www.zhihu.com/question/22972794
+
+没有出海口的黑海舰队对俄罗斯的意义是什么？

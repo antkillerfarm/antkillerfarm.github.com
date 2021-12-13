@@ -157,38 +157,28 @@ http://m.afwing.vip/weapon/the-emergence-of-smart-bombs.html
 
 ---
 
-https://zhuanlan.zhihu.com/p/242294917
+答北人问安南风俗 胡季犛
 
-泰国，大战缅甸三百年！
+欲问安南事，安南风俗淳。衣冠唐制度，礼乐汉君臣。
 
-https://zhuanlan.zhihu.com/p/37928659
+玉瓮开新酒，金刀斫细鳞。年年二三月，桃李一般春。
 
-越南帝国扩张
+这个诗有四版，内容大同小异。
 
-https://zhuanlan.zhihu.com/p/303875663
+第一版是宋真宗时的日本使者，藤木吉写的：
 
-从数据看越南制造对中国的威胁有多大？
+君问吾风俗，吾风俗最纯。衣冠唐制度，礼乐汉君臣。银瓮篘新酒，金刀鲙锦鳞。年年二三月，桃李一般春。
 
-https://mp.weixin.qq.com/s/NHkTQmJ3Jq1A3pgKI2DCeg
+然后还有说是洪武十年，吴伯宗使安南，回来写的：
 
-这是9·11事件后，全世界最严重的恐怖袭击（巴厘岛恐怖袭击）
+上问安南事，安南风俗纯。衣冠唐制度，礼乐汉君臣。银瓮篘新酒，金刀鲙锦鳞。年年二三月，桃李一般春。
 
-https://zhuanlan.zhihu.com/p/377325999
+然后就是越南胡朝国王那个版本。
 
-改名泰国，激怒中国
+最后是答大明高皇帝问日本风俗（洪武十二年）：
 
-https://mp.weixin.qq.com/s/61qqxaLhfcLSzbBi_x1XWw
+国比中原国，人同上古人。衣冠唐制度，礼乐汉君臣。银瓮篘新酒，金刀鲙锦鳞。年年二三月，桃李一般春。
 
-亚洲第二富国菲律宾，如今却靠出口女佣赚钱
+https://www.zhihu.com/question/46780291
 
-https://www.zhihu.com/question/456075868
-
-南越F4到底是什么来头？
-
-https://mp.weixin.qq.com/s/E-xJ1IGxklGpICFsrZla9Q
-
-西贡铁拳在西贡？南越总崩溃时的照片何止这张被误解
-
-https://www.zhihu.com/question/27700838
-
-越南的军事实力有能力统一中南半岛吗？
+越南汉诗有哪些优秀作品？
