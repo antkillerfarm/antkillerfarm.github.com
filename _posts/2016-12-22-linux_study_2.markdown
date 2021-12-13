@@ -446,6 +446,8 @@ bash只支持整数四则运算，浮点数和复杂运算就靠`bc`了。
 
 删除`0-9`开头的文件。
 
+linux文件分割用split,合并用cat。最近下了一本采用split分割的书，但是我没有Linux环境，于是在windows的命令行下用`type *.txt >>f:\1.txt`合并了文件。
+
 # DosBox
 
 DosBox是Linux平台玩DOS老游戏的法宝。
@@ -457,15 +459,3 @@ DosBox是Linux平台玩DOS老游戏的法宝。
 启动DosBox之后，需要使用如下命令加载本地文件夹：
 
 `mount c ~/dosprom`
-
-# 大文件处理
-
-在“大数据”时代，我们会经常遇到有大文本文件（上 GB 或更大）的情况。传统的文本编辑软件对处理这样的大文件不太有效，当我们试图打开一个大文件时会经常由于内存不足而郁闷的不行。
-
-如果你只需要查看一个文本文件，并不对它做编辑，可以考虑下glogg。
-
-`sudo apt install glogg`
-
-如果需要修改的话，可以使用JOE。
-
-`sudo apt install joe`

@@ -273,6 +273,10 @@ https://zhuanlan.zhihu.com/p/152167194
 
 两大FPGA公司的“AI技术路线”
 
+https://www.zhihu.com/question/503287789
+
+当两个CPU核心要求读写同一内存地址时，其后果是未定义行为吗？
+
 # GPU通信技术
 
 ## RDMA

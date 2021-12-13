@@ -315,6 +315,12 @@ https://mp.weixin.qq.com/s/KdJ0b-E0ckK6WMG5HDcEUw
 
 互联网巨头基于全球产业链打造ARM CPU
 
+---
+
+海光买了AMD zen-（浮点单元阉割一半）的IP，但是买不到zen2和之后的新核心，因为AMD不卖。
+
+飞腾找台湾世芯代理设计，但因飞腾参与超算建设上了美国黑名单，台湾世芯宁可承受损失也不再继续提供设计服务。
+
 ## NUMA
 
 ![](/images/img2/NUMA.jpg)

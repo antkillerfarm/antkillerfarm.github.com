@@ -13,6 +13,8 @@ category: resource
 
 《Demystifying Parallel and Distributed Deep Learning: An In-Depth Concurrency Analysis》
 
+《A Survey of Large-Scale Deep Learning Serving System Optimization: Challenges and Opportunities》
+
 ## blog
 
 https://zhuanlan.zhihu.com/c_1174996853811335168
@@ -46,6 +48,8 @@ C++并发编程（C++11到C++17）
 ## 概述
 
 ![](/images/img4/Parallel.png)
+
+![](/images/img4/Deep_Learning_System.png)
 
 ## Distributed Data Parallel
 

@@ -239,6 +239,46 @@ https://mp.weixin.qq.com/s/0dJeYLuXkmJpqvuNHx7L8A
 
 爆红Github！20多个练手前端小型项目的集合，随你造！
 
+# 小程序
+
+BOM（Browser Object Model）是指浏览器对象模型，它使JavaScript有能力与浏览器进行“对话”。例如查询浏览器的名称和浏览历史等。
+
+DOM（Document Object Model）是指文档对象模型，通过它，可以访问HTML文档的所有元素。
+
+最初微信WebView逐渐成为移动web重要入口，微信发布了一整套网页开发工具包，称之为JS-SDK，给所有的Web开发者打开了一扇全新的窗户，让所有开发者都可以使用到微信的原生能力，去完成一些之前做不到或者难以做到的事情。这就是后来的微信小程序。
+
+![](/images/img4/light_app.jpg)
+
+在小程序中，视图层通常与逻辑层分离。也就是所谓的双线程模型。
+
+它不需要安装，并支持热更新，兼有Web和原生平台的功能，因此受到了一些超级应用程序的欢迎。目前比较流行的小程序平台，除了微信之外，还有支付宝、百度、头条、京东等。
+
+各家的小程序虽然原理大同小异，但是写法有所不同，因此就产生了小程序的跨平台需求。
+
+主流的跨平台小程序框架有：Taro和uni-app。
+
+参考：
+
+https://www.cnblogs.com/liwenzhou/p/8011504.html
+
+前端基础之BOM和DOM
+
+https://zhuanlan.zhihu.com/p/114683001
+
+小程序原理及模拟
+
+https://zhuanlan.zhihu.com/p/142381013
+
+小程序原理科普
+
+https://zhuanlan.zhihu.com/p/66113575
+
+浅谈小程序运行机制
+
+https://zhuanlan.zhihu.com/p/55903320
+
+Taro vs uni-app选型对比
+
 # Javascript参考资源
 
 https://zhuanlan.zhihu.com/p/22989691
@@ -248,75 +288,3 @@ JavaScript世界万物诞生记
 https://mp.weixin.qq.com/s/F5jCHDzgj1YSJBGrEi-RfA
 
 JavaScript性能优化的小知识总结
-
-https://mp.weixin.qq.com/s/WS1hQN5SmK5uavT_0fbrkg
-
-一文说透为什么JavaScript最牛逼
-
-https://mp.weixin.qq.com/s/OwJ2gBWvmj8rJ_vW5nzaPA
-
-10个免费好用功能强大的网页动画效果库
-
-https://mp.weixin.qq.com/s/pYtKpfL68lEy9bus9HHAMQ
-
-Javascript将HTML页面生成PDF并下载
-
-https://mp.weixin.qq.com/s/Sjg6jgl1D6IkYgsuQSgFHg
-
-十个最流行的前端CSS库
-
-https://mp.weixin.qq.com/s/DHxEqsTMOyc7pHfmJrfNEg
-
-一篇文章理解JS继承
-
-https://mp.weixin.qq.com/s/tNi5LJmotuXSoHbZhNgPcw
-
-GitHub已完全弃用jQuery，问题是为什么？
-
-https://mp.weixin.qq.com/s/WHh9v3icCc90PwiLyv0Hng
-
-为什么Facebook的API以一个循环作为开头？
-
-https://mp.weixin.qq.com/s/GQ2azFxcmXrY78rTAdxuVA
-
-JS/CSS体积减少了67%，我们是如何做到的？
-
-https://mp.weixin.qq.com/s/c1bMljAx1QWz9QQJX7sHmg
-
-大部分教程不会告诉你的12个JS技巧
-
-https://mp.weixin.qq.com/s/pdOVONHbjfIJPW45nEw1fg
-
-前端本地文件操作与上传
-
-http://chrome.360.cn/test/html5/index.html
-
-一个用于检测浏览器对html 5支持情况的网页
-
-https://www.zhihu.com/question/59578433
-
-为什么现在又流行服务端渲染html？
-
-https://mp.weixin.qq.com/s/aNPAfJIHL14NFtLfRvxUpQ
-
-10万人的大场馆如何“画座位”？
-
-https://www.jianshu.com/p/c8b86b09daf0
-
-函数防抖和节流
-
-https://mp.weixin.qq.com/s/vEbTP1SDP3GW20XAP825jw
-
-一种字体，变成千姿百态艺术字，可尖可圆可开花，隔壁设计师馋哭了
-
-https://mp.weixin.qq.com/s/0pI0F6c-BSLiGdLetQ5qNQ
-
-彻底弄懂浏览器缓存策略
-
-https://mp.weixin.qq.com/s/fEAfuVzfOwKjnTB-mdS5UA
-
-用JS写一个同Excel表现的智能填充算法
-
-https://mp.weixin.qq.com/s/D-XvKCSUCzMGcEz_xWTwqg
-
-现代CSS进化史

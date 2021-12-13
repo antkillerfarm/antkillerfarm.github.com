@@ -166,3 +166,81 @@ https://mp.weixin.qq.com/s/ZCkboBBFYFm57pLEGftpCw
 https://zhuanlan.zhihu.com/p/57774611
 
 盘点与Cygwin相似和相反的项目
+
+# git+
+
+## 参考
+
+https://mp.weixin.qq.com/s/z_zFveiiLu9vLvWuBcsaIg
+
+Git从入门到进阶
+
+https://mp.weixin.qq.com/s/0Cv968LpSSYKJpAbW1MlMA
+
+手把手教你git全操作
+
+https://mp.weixin.qq.com/s/DbvRbaH7BJKeTCT4LVXUoA
+
+Git的4个阶段的撤销更改
+
+https://mp.weixin.qq.com/s/nUqvSnnPjYqk2O8u0tQEtQ
+
+Git内部原理揭秘
+
+https://mp.weixin.qq.com/s/nmi1HYkKD8QX0phbvOko2Q
+
+Git居然还有这么高级用法，你一定需要
+
+https://mp.weixin.qq.com/s/PUUL913fig6cFfqy4OKcGA
+
+工作流一目了然，看小姐姐用动图展示10大Git命令
+
+https://blog.csdn.net/mocoe/article/details/84344411
+
+修改git commit的author信息
+
+https://mp.weixin.qq.com/s/9Ey04P5Xv4W95N2FEioZ1g
+
+如何选择Git分支模式？
+
+https://mp.weixin.qq.com/s/GZkGfwrfMTzrMfki8LKbIw
+
+腾讯广告3000+万行大代码库主干开发实战
+
+https://mp.weixin.qq.com/s/KEu6qCl-En6HiKGo2pgEQg
+
+TensorBay：一款易用的像Git一样数据版本管理工具！
+
+# 编译原理+
+
+https://mp.weixin.qq.com/s/7wmBsJgPnOtPXcYaoQd1qA
+
+基于LLVM的源码级依赖分析方案的设计与实现
+
+https://mp.weixin.qq.com/s/vOJPxzH_1SUyXzNeE85zHQ
+
+编译器入门：没有siri的那些年，我们如何实现人机对话？
+
+https://zhuanlan.zhihu.com/p/66793637
+
+A Tour to LLVM IR（上）
+
+https://zhuanlan.zhihu.com/p/66909226
+
+A Tour to LLVM IR（下）
+
+https://mp.weixin.qq.com/s/4FJzxPyCmakjIU-9xlQmJQ
+
+阁下可知文言编程之精妙？CMU本科生开源文言文编程语言，数天2K星
+
+https://mp.weixin.qq.com/s/7PH8o1tbjLsM4-nOnjbwLw
+
+Java即时编译器原理解析及实践
+
+https://mp.weixin.qq.com/s/s2W_VVlS-UC8PaaVYJlNgw
+
+浅谈编译过程
+
+https://mp.weixin.qq.com/s/j8_8QwFnyOr66m9aekor1g
+
+用JS解释JS！详解AST及其应用

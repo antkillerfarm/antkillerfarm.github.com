@@ -127,6 +127,10 @@ https://mp.weixin.qq.com/s/7EMDH-vuNCOHWmbpyWA3ow
 
 基于深度学习的语义分割综述
 
+https://zhuanlan.zhihu.com/p/412675982
+
+实例分割综述总结综合整理版
+
 https://mp.weixin.qq.com/s/IO4cUTgcFO9hCMT9hTCXiQ
 
 图像分割2020总结：结构，损失函数，数据集和框架

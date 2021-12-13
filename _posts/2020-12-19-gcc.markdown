@@ -27,6 +27,31 @@ https://www.cnblogs.com/kuoAT/p/9590606.html
 
 深入分析GCC（王亚刚 著）
 
+## GNU Binutils
+
+GNU Binutils是一系列二进制工具的集合。
+
+- ld：GNU链接器
+- as：GNU汇编器
+- addr2line：从目标文件的虚拟地址获取文件的行号或符号。
+- ar：可以对静态库做创建、修改和提取的操作。
+- c++filt：反编译（反混淆，demangle）C++符号的工具。
+- dlltool：创建创建Windows动态库。
+- gold：另一种新的、更快的仅支持ELF的链接器。
+- gprof：性能分析（profiling）工具程序。
+- nlmconv：可以转换成NetWare Loadable Module(NLM)目标文件格式。
+- nm：显示目标文件内的符号信息。
+- objcopy：复制和转译目标文件。
+- objdump：显示目标文件的相关信息，亦可反汇编。
+- ranlib：产生静态库的索引。（和nm -s功能类似）
+- readelf： 显示ELF文件的内容。
+- size：列出目标文件或库文件的section大小。
+- strings：列出文件中可打印的字符串。
+
+https://www.zhihu.com/answer/2258430030
+
+GNU Binutils工具集介绍
+
 ## gcc和ld的差异
 
 理论上gcc做链接和ld做链接，应该是一样的效果，然而实际情况要复杂一些。有的厂商的工具链会给gcc添加一些环境变量之类的私货，所以两者的行为就变的很有差异了。遇到这种问题，互换是一种好的解决问题的思路。
@@ -328,25 +353,3 @@ xmake：一个Lua编写的构建工具。
 https://blog.codingnow.com/2021/05/make_to_ninja.html
 
 构建工具从Make到Ninja
-
-# git+
-
-https://mp.weixin.qq.com/s/PUUL913fig6cFfqy4OKcGA
-
-工作流一目了然，看小姐姐用动图展示10大Git命令
-
-https://blog.csdn.net/mocoe/article/details/84344411
-
-修改git commit的author信息
-
-https://mp.weixin.qq.com/s/9Ey04P5Xv4W95N2FEioZ1g
-
-如何选择Git分支模式？
-
-https://mp.weixin.qq.com/s/GZkGfwrfMTzrMfki8LKbIw
-
-腾讯广告3000+万行大代码库主干开发实战
-
-https://mp.weixin.qq.com/s/KEu6qCl-En6HiKGo2pgEQg
-
-TensorBay：一款易用的像Git一样数据版本管理工具！

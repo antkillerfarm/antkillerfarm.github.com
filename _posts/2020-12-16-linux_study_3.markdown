@@ -7,6 +7,18 @@ category: linux
 * toc
 {:toc}
 
+# 大文件处理
+
+在“大数据”时代，我们会经常遇到有大文本文件（上 GB 或更大）的情况。传统的文本编辑软件对处理这样的大文件不太有效，当我们试图打开一个大文件时会经常由于内存不足而郁闷的不行。
+
+如果你只需要查看一个文本文件，并不对它做编辑，可以考虑下glogg。
+
+`sudo apt install glogg`
+
+如果需要修改的话，可以使用JOE。
+
+`sudo apt install joe`
+
 # 环境变量
 
 设置环境变量的方法：
@@ -443,25 +455,3 @@ http://tldr.sh/
 https://linuxtoy.org/archives/tldr.html
 
 tldr: 简读Manpage
-
-# Linux知识图谱
-
-![](/images/article/linux_perf_tools_full.png)
-
-![](/images/img3/linux_kernel_map.png)
-
-原图地址：
-
-http://www.brendangregg.com/linuxperf.html
-
-![](/images/img4/Linux-storage-stack-diagram_v4.10.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/-iCuxQjSghtDGaPMqaDSgQ
-
-Linux思维导图整理
-
-https://mp.weixin.qq.com/s/sLyD6z2xBXRxfBZnImTgtQ
-
-40+张最全Linux/C/C++思维导图，收藏！

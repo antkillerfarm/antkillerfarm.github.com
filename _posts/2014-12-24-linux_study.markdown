@@ -19,19 +19,7 @@ QT的稍微麻烦一些。
 
 上面写的两个都是官方的设计器，而WxWidgets没有官方的设计器，但有很多第三方的设计器，我使用的是免费且开源的wxFormBuilder。用它可生成XRC文件，而WxWidgets中有使用XRC文件的接口。
 
-# 编程所用命令简介
-
-cc：C/C++编译器
-
-as：GNU汇编编译器
-
-ld：链接器
-
-as86、ld86：8086汇编编译器和链接器
-
-linux文件分割用split,合并用cat。最近下了一本采用split分割的书，但是我没有Linux环境，于是在windows的命令行下用`type *.txt >>f:\1.txt`合并了文件。
-
-## printf和wprintf混用的问题
+# printf和wprintf混用的问题
 
 在linux中不可混用printf和wprintf，如果混用的话，则**后使用**的函数没有输出。
 

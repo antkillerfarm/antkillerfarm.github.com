@@ -155,14 +155,6 @@ http://graphics.stanford.edu/projects/brookgpu/
 
 其他的并行计算框架还有：OpenACC、AMD stream、PGI。
 
-NVIDIA相关产品线：
-
-Tesla产品专为数据中心与工作站计算应用而设计。
-
-Quadro产品专为专业图形与工程应用而设计。
-
-GeForce产品专为互动游戏与消费类应用而设计。
-
 ## OpenCL vs CUDA
 
 ![](/images/article/opencl_cuda.jpg)

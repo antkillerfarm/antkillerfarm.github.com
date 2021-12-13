@@ -223,6 +223,14 @@ GPU不追求单core的性能，因此也没有那些复杂的控制逻辑。这�
 
 >CPU的SSE、AVX之类的指令集，也借鉴了GPU的设计思想，但是CPU的core数，相对于GPU而言，差了10～1000倍。
 
+---
+
+VGPR：Vector general purpose register
+
+SGPR：Scalar general purpose register
+
+---
+
 参考：
 
 http://www.cnblogs.com/geniusalex/archive/2008/12/26/1941766.html

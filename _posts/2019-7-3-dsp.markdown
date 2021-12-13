@@ -443,6 +443,10 @@ https://mp.weixin.qq.com/s/Sjs-iKtDy5IZfKknQ7Clwg
 
 随机过程、布朗噪声与股票价格模型
 
+https://www.zhihu.com/question/263851691
+
+如何评价quantOS开源量化平台？
+
 ## 金融模型
 
 ![](/images/img3/Quant.jpg)

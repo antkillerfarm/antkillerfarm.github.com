@@ -194,7 +194,7 @@ git的reset和checkout的区别
 
 `HEAD`表示当前版本，`HEAD^^`表示当前版本之前的两个版本，如果回溯的版本较多也可以写作`HEAD~100`。
 
-## 如何git超大版本库
+## 如何git下载超大版本库
 
 自从两次git完整的linux kernel，都因为网络问题，而中途失败之后，不甘心的我，继续在网上寻找答案。
 
@@ -399,7 +399,7 @@ GitLab self-managed是GitLab出品的本地Git Server。
 
 基于Git有多种方式来解决这个问题：
 
-- Git Submodul。
+- Git Submodule。
 
 - Git Subtree。这两个已经集成到git中。
 
@@ -415,24 +415,18 @@ https://www.jianshu.com/p/284ded3d191b
 
 Git多项目管理
 
-## 参考
+## Monorepo
 
-https://mp.weixin.qq.com/s/z_zFveiiLu9vLvWuBcsaIg
+上面提到的多项目管理，一般称为MultiRepo，即每个项目对应一个单独的仓库。与之相对的则是Monorepo，即把多个项目放在一个仓库里面。
 
-Git从入门到进阶
+![](/images/img4/Monorepo.png)
 
-https://mp.weixin.qq.com/s/0Cv968LpSSYKJpAbW1MlMA
+参考：
 
-手把手教你git全操作
+https://juejin.cn/post/6944877410827370504
 
-https://mp.weixin.qq.com/s/DbvRbaH7BJKeTCT4LVXUoA
+现代前端工程为什么越来越离不开Monorepo?
 
-Git的4个阶段的撤销更改
+https://zhuanlan.zhihu.com/p/77577415
 
-https://mp.weixin.qq.com/s/nUqvSnnPjYqk2O8u0tQEtQ
-
-Git内部原理揭秘
-
-https://mp.weixin.qq.com/s/nmi1HYkKD8QX0phbvOko2Q
-
-Git居然还有这么高级用法，你一定需要
+Monorepo是什么，为什么大家都在用？
