@@ -291,6 +291,38 @@ https://mp.weixin.qq.com/s/AdmEd1FHxpZUwSGYy3qggg
   </tbody>
 </table>
 
+## NUMA
+
+![](/images/img2/NUMA.jpg)
+
+上图是NUMA（Non-Uniform Memory Access）的结构图。可以看到CPU和一部分内存直接相连，而和其他内存通过总线相连。如果我们把局部数据放到直连内存上，CPU显然就能够更快速的访问数据。
+
+与NUMA相关的还有一个著名的BUG：
+
+https://zhuanlan.zhihu.com/p/387117470
+
+十年后数据库还是不敢拥抱NUMA？
+
+参考：
+
+https://software.intel.com/en-us/articles/optimizing-applications-for-numa
+
+Optimizing Applications for NUMA
+
+https://mp.weixin.qq.com/s/uH0XRjDNfVQe5r1aes0zDw
+
+性能之殇：从冯·诺依曼瓶颈谈起
+
+## 多核
+
+https://zhuanlan.zhihu.com/p/53596593
+
+所有CPU内核一定生来平等吗？Intel非对称异构多处理器：Lakefield
+
+https://en.wikipedia.org/wiki/ARM_big.LITTLE
+
+ARM的big.LITTLE架构
+
 ## 国产CPU
 
 当年引进“以赛亚”内核的时候，兆芯的性能是优于龙芯的，然而，经过这些年的发展，龙芯通过不断迭代内核大幅提升的CPU性能，CPU性能已经超越兆芯。要知道，当时，兆芯承接核高基01专项，而且还有上海市地方海量资金扶持，而龙芯获得的经费和补贴相对于兆芯少的可怜。龙芯用实践证明了自主研发更具发展后劲，自主研发具有更高的效费比，可以花小钱办大事。
@@ -314,31 +346,3 @@ https://mp.weixin.qq.com/s/HDTNCrKYJ7daZieg4rb4VA
 https://mp.weixin.qq.com/s/KdJ0b-E0ckK6WMG5HDcEUw
 
 互联网巨头基于全球产业链打造ARM CPU
-
----
-
-海光买了AMD zen-（浮点单元阉割一半）的IP，但是买不到zen2和之后的新核心，因为AMD不卖。
-
-飞腾找台湾世芯代理设计，但因飞腾参与超算建设上了美国黑名单，台湾世芯宁可承受损失也不再继续提供设计服务。
-
-## NUMA
-
-![](/images/img2/NUMA.jpg)
-
-上图是NUMA（Non-Uniform Memory Access）的结构图。可以看到CPU和一部分内存直接相连，而和其他内存通过总线相连。如果我们把局部数据放到直连内存上，CPU显然就能够更快速的访问数据。
-
-与NUMA相关的还有一个著名的BUG：
-
-https://zhuanlan.zhihu.com/p/387117470
-
-十年后数据库还是不敢拥抱NUMA？
-
-参考：
-
-https://software.intel.com/en-us/articles/optimizing-applications-for-numa
-
-Optimizing Applications for NUMA
-
-https://mp.weixin.qq.com/s/uH0XRjDNfVQe5r1aes0zDw
-
-性能之殇：从冯·诺依曼瓶颈谈起

@@ -48,6 +48,16 @@ https://www.sohu.com/a/299731374_463994
 
 ---
 
+https://blog.csdn.net/poem_qianmo
+
+毛星云，网络ID“浅墨”，2016年硕士毕业于南京航空航天大学航天学院。2021.12.11跳楼自杀。
+
+https://www.zhihu.com/question/506002000
+
+腾讯确认游戏开发大神毛星云意外身故，如何评价他在游戏开发圈的影响力？
+
+---
+
 https://cloud.tencent.com/developer/devdocs
 
 腾讯云的开发者手册，包含30+的教程

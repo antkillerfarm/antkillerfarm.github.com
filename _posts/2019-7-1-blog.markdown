@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blog维护日志
+title: Blog维护日志, 超算
 category: my story 
 ---
 
@@ -118,3 +118,51 @@ category: my story
 2015.1.7 blog搬家基本完成。
 
 2014.12.23 围观大徐的blog有感，特在github上安家落户，废弃了原来的搜狐blog。
+
+# 超算
+
+![](/images/img3/power.aug.gif)
+
+![](/images/img3/Supercomputers-history.png)
+
+Top 500超算之间的差距竟有3个数量级，从榜首到落榜差不多要10年时间。OS从2015年开始全都是Linux了。Windows在超算领域从来没有风光过，之前没钱，自然斗不过UNIX，后来又被Linux打趴下了。
+
+Sunway TaihuLight和Sierra的算力相当，但core的数量竟是后者的6.7倍，功耗是后者的2.06倍。差距明显啊！
+
+https://www.top500.org/
+
+超算排名网站
+
+https://zhuanlan.zhihu.com/p/33956771
+
+超算排名之中的地区和架构之争
+
+---
+
+![](/images/img3/SC.png)
+
+https://mp.weixin.qq.com/s/gJWTiMCovGMQ8ye_TovdOw
+
+富士通的这颗芯片凭啥让日本走向了世界之巅？
+
+https://www.zhihu.com/question/404217836
+
+如何看待全球超级计算机TOP 500榜单日本登顶，中国跌出前三？近年中国超算发展现状如何？
+
+# 数值计算
+
+两个数值趋近于无穷小且相近的数字相除的结果应该大约为1，但却因为分母接近为0而变成无穷。这时可以直接取对数执行运算，其结果在数值上会较为稳定。
+
+---
+
+https://blog.csdn.net/HiWangWenBing/article/details/119772047
+
+数学建模、科学计算、数值计算的关系
+
+https://blog.csdn.net/HiWangWenBing/article/details/119790035
+
+误差的种类、误差传播、误差分析
+
+https://www.zhihu.com/question/444819295
+
+控制周期越短，控制效果是否越好？
