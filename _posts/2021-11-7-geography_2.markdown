@@ -9,6 +9,54 @@ category: Nature
 
 # 地理
 
+https://zhuanlan.zhihu.com/p/53237519
+
+一文读懂印尼海啸的真正原因（喀拉喀托之子）
+
+https://mp.weixin.qq.com/s/FeSKZqe394-8xT4i-BOEog
+
+掉入地下一万米
+
+https://www.zhihu.com/question/285058234
+
+永暑岛怎么会发现淡水资源？（淡水透镜体效应）
+
+https://mp.weixin.qq.com/s/T2ms6xXd14O3CrQb7X1ZOw
+
+人类用了2000年就为画张地图
+
+https://mp.weixin.qq.com/s/WRd_kx-HeSSgDtPTdgk09A
+
+山上“飞”来只火凤凰，这里的居民却要杀掉它？
+
+https://mp.weixin.qq.com/s/lu4wQOIzVtsFvwhO1c2d0A
+
+一大坨泥巴在移动，没人能够阻止它（圣安德列斯断层）
+
+https://mp.weixin.qq.com/s/R5EonufyiXy8bzD2fddnEg
+
+不喷岩浆喷泥浆，这些火山是要闹哪样？
+
+https://mp.weixin.qq.com/s/_DlXbYZ6JmqarUf6egD2fw
+
+暴雨后不见彩虹，却引来一场持续四个月的火山喷发？（基拉韦厄火山）
+
+https://mp.weixin.qq.com/s/GDV1Wp8Ij9VpyDFXmkwN5A
+
+一场大规模的火山爆发，终结了罗马共和国？（公元前43年发生在阿拉斯加的奧克莫克火山爆发）
+
+https://mp.weixin.qq.com/s/63d-A5knRit6T13cgGtJrg
+
+带来毁灭，又给予重生。火山如何记录完整地球故事？
+
+https://www.zhihu.com/answer/513535282
+
+皮内尔湖灾难（Lake Peigneur Disaster）
+
+https://mp.weixin.qq.com/s/xvJqlHz__N43Z8SYH6pB8Q
+
+打赢抗洪战争，究竟有多难？
+
 https://mp.weixin.qq.com/s/Hz3kFgqmAG-SVxiel8Fj7w
 
 她绘制的地图，革新了我们对海底的认知（Marie Tharp）

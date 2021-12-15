@@ -157,14 +157,6 @@ https://mp.weixin.qq.com/s/_DryX1xebOVzw8-lZ0P8LA
 
 真·名媛！AI复原百年前“上海时装秀”
 
-## 古罗马皇帝
-
-![](/images/img3/Roman_Emperors.jpg)
-
-https://mp.weixin.qq.com/s/vuIfa9r-X5eeDf-TOag4pw
-
-从雕像到肖像画，这位设计师用GAN和PS复原了他眼中的古罗马皇帝“群像”
-
 ## 抠图
 
 https://mp.weixin.qq.com/s/dRa1mss4dve487FhS4KjTg
