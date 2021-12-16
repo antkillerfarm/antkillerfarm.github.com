@@ -183,6 +183,10 @@ https://zhuanlan.zhihu.com/p/409195354
 
 塔利班秒变人民公仆？市长亲自扫大街，银行行长端着冲锋枪去上班
 
+https://zhuanlan.zhihu.com/p/438002125
+
+全球唯一器官交易合法国家：穷人拿命换钱，富人花钱续命（伊朗器官交易合法化）
+
 # 非洲+
 
 https://zhuanlan.zhihu.com/p/311321195

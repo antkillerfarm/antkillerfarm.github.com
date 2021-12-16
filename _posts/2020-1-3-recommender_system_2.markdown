@@ -329,6 +329,8 @@ IP高于独立访客：一个用户，上网的时候频繁掉线，拔号10次�
 
 Page View, 即页面浏览量或点击量，用户每次刷新即被计算一次。
 
+ARPPU：Average Revenue per Paying User
+
 https://mp.weixin.qq.com/s/cg2zMqX4x16H8E_qP8bs2w
 
 DAU是啥，数据指标是啥？必知必会的数据分析常识
@@ -350,19 +352,3 @@ https://zhuanlan.zhihu.com/p/53522063
 https://mp.weixin.qq.com/s/IvGkPnYdifuAzrUV3MTyhA
 
 数据埋点太难！知乎的做法有何可借鉴之处？
-
-https://mp.weixin.qq.com/s/j_8_kSQ4BrYR-UzIEIEIbw
-
-美团开源Logan Web：前端日志在Web端的实现
-
-https://mp.weixin.qq.com/s/Cc-8BMoJGacPCeHnMs6Ekw
-
-滴滴开源小桔棱镜：一款专注移动端操作行为的利器
-
-https://mp.weixin.qq.com/s/8nq6q1p5-RJPiDTEJquyNQ
-
-无埋点核心技术：iOS Hook在字节的实践经验
-
-https://mp.weixin.qq.com/s/C2OSscx8JzTBhyzxCqesCQ
-
-网易云音乐宋志毅：数据凌乱，埋点差，难以归因？数据治理有妙招！
