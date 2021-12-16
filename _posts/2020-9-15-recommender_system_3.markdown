@@ -7,7 +7,25 @@ category: Recommender System
 * toc
 {:toc}
 
-# 推荐系统的工程细节（续）
+# 推荐系统的工程细节
+
+## 数据埋点（续）
+
+https://mp.weixin.qq.com/s/j_8_kSQ4BrYR-UzIEIEIbw
+
+美团开源Logan Web：前端日志在Web端的实现
+
+https://mp.weixin.qq.com/s/Cc-8BMoJGacPCeHnMs6Ekw
+
+滴滴开源小桔棱镜：一款专注移动端操作行为的利器
+
+https://mp.weixin.qq.com/s/8nq6q1p5-RJPiDTEJquyNQ
+
+无埋点核心技术：iOS Hook在字节的实践经验
+
+https://mp.weixin.qq.com/s/C2OSscx8JzTBhyzxCqesCQ
+
+网易云音乐宋志毅：数据凌乱，埋点差，难以归因？数据治理有妙招！
 
 ## A/B Testing
 
@@ -402,39 +420,3 @@ https://mp.weixin.qq.com/s/j6FWqkdbOdQk-qAmYNmJqQ
 https://mp.weixin.qq.com/s/WfpSSQNLxua53o_AWsq4Gg
 
 如何设计秒杀场景
-
-https://mp.weixin.qq.com/s/UyMDskA0eGN-NmiifwQF6Q
-
-美团本地生活场景的短视频分析
-
-https://mp.weixin.qq.com/s/dr6gxJCDBM1Lk_tAOdi9-Q
-
-推荐系统解构
-
-https://zhuanlan.zhihu.com/p/103129589
-
-推荐系统之标签体系
-
-https://mp.weixin.qq.com/s/cBZ_XC1dSdp540-Hr1izuw
-
-爱奇艺效果广告的个性化探索与实践
-
-https://mp.weixin.qq.com/s/5QENu3LAhwjEQ7cp6y68gg
-
-深入互联网广告中的出价模式
-
-https://mp.weixin.qq.com/s/KTESiQVdgDkRwpHzNb_oww
-
-深入互联网广告中的出价模式（补充篇）
-
-https://mp.weixin.qq.com/s/M_DglkdeBw6Gmj4bO2LjcA
-
-推荐系统产品概述
-
-https://mp.weixin.qq.com/s/7xZDVicjq-8C3qJIZGarmg
-
-推荐系统架构与算法流程详解
-
-https://mp.weixin.qq.com/s/DZZ_BCiNw0EZg7V0KvhXVw
-
-知乎搜索排序模型的演进
