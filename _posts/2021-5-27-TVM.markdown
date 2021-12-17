@@ -123,6 +123,10 @@ https://tvm.apache.org/docs/arch/relay_intro.html
 
 NNVM本质上只能描述传统的计算图，这属于Data Flow的范畴。但是现在的DL框架越来越灵活，不仅能对数据进行计算，还能对数据进行一定的控制处理，也就是所谓的Control Flow（if-else/ADT matching/递归调用）。
 
+论文：
+
+《The Deep Learning Compiler: A Comprehensive Survey》
+
 参考：
 
 https://zhuanlan.zhihu.com/p/91283238
