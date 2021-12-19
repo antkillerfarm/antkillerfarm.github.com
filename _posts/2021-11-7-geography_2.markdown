@@ -219,6 +219,10 @@ https://www.zhihu.com/question/37709367
 
 谁能从结构上解释一下铁、钴、镍为什么可以被磁化，别的金属不可以？
 
+https://mp.weixin.qq.com/s/0JKE9eJJryRr_DZS8_bUxw
+
+纪念化学家理查德·勒纳：进化力量的驾驭者
+
 ## 食品工业
 
 ![](/images/img3/Mulberry_Dyke_Fish_Pond.png)

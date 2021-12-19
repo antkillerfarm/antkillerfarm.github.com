@@ -193,6 +193,14 @@ https://www.zhihu.com/question/23746900
 
 为何对巴西利亚城市规划会出现两种极端的评价？
 
+https://mp.weixin.qq.com/s/jD5O3EuK4QRpTmHC7ZBmIQ
+
+140年后，圣家族大教堂竣工终于指日可待？
+
+https://mp.weixin.qq.com/s/7pdQ8UMNwAw-YZb90sR-ng
+
+“132万红砖房”改造风波后，房子总要归于生活
+
 # 物理+
 
 https://mp.weixin.qq.com/s/il50NMq54xH54h8Lg1K30g

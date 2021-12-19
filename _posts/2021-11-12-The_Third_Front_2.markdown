@@ -59,6 +59,14 @@ https://mp.weixin.qq.com/s/qgp97solB7pZauOnlH62wg
 
 # 两弹一星+
 
+顾方舟，我国著名医学科学家、病毒学专家，中国医学科学院原院长，北京协和医学院原校长，北京协和医学院一级教授。**“糖丸”之父。**
+
+https://www.thepaper.cn/newsDetail_forward_2811224
+
+病毒学家顾方舟：一生只为一件事
+
+---
+
 ![](/images/img3/top10.png)
 
 ![](/images/img4/manufact.jpg)

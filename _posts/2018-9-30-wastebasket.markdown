@@ -141,6 +141,10 @@ https://mp.weixin.qq.com/s/_gq1nxHJGzCZtmjHBNjM1w
 
 笑死我了，土木行业真是惨
 
+https://mp.weixin.qq.com/s/eoqrkj6fnCWUiKQpCyDJbw
+
+人人都想成为何同学，但人人都活成了大猛子
+
 ---
 
 科大黄秋原、同济沈海英、交大钱璐璐、复旦李敏、中科大陈璐，由于手段极其高级，所以现在被网友称为“学术圈妲己”。
@@ -306,3 +310,7 @@ https://zhuanlan.zhihu.com/p/386332176
 https://www.zhihu.com/question/504946760
 
 如何看待华中科技大学90后博导胡玥，5年来发表SCI论文60余篇？
+
+https://zhuanlan.zhihu.com/p/33340734
+
+四川的刘姓果然都不是等闲之辈，又出了个刘明侦博士！

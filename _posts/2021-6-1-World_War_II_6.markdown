@@ -161,6 +161,22 @@ https://www.zhihu.com/question/276919093
 
 ---
 
+其实在美国的拉姆之前，悍匪们抢银行无非就两种办法，枪或者炸药，粗暴地跟把大象关进冰箱一样。
+
+在拉姆之后，现代意义上的抢劫才出现。就是电影里那种，事先踩好点，行动的时候分工明确，劫人质的看人质，开门的开门，装钱的装钱，然后一到时间马上出门上车，车手直接踩油门跑路。
+
+结合东欧喜欢用炸药的传统，我估计斯大林当年就是用炸药直接轰掉银行外墙，然后进去装钱，再跑路。
+
+---
+
+1932～1941苏联国防及航空化学建设促进会设立“伏罗希洛夫射手”奖章及荣誉称号，授予射击达到一定标准的射手（一级、二级伏罗希洛夫射手，一级的射击技术比班排“神射手”的水平还高，和专业狙击手比起来无非是潜伏和伪装能力的差距）。
+
+https://zhuanlan.zhihu.com/p/133821672
+
+《伏罗希洛夫射手》
+
+---
+
 https://mp.weixin.qq.com/s/kCLZyjoDoNK-py06hvmujA
 
 特供商店在苏联的兴衰（上）
@@ -184,19 +200,3 @@ https://zhuanlan.zhihu.com/p/390097908
 https://mp.weixin.qq.com/s/M3ZselQLqCdLY53dpqILLA
 
 穿越回苏联：火红岁月的情与色（上）
-
-https://mp.weixin.qq.com/s/2TAWe4frnI6RTpe4ui0mAg
-
-穿越回苏联：火红岁月的情与色（下）
-
-https://mp.weixin.qq.com/s/YPgFtLkpl9BGNZPo_IEcrg
-
-《功勋》孙家栋单元的中苏军服细节看不清？来看特写和解析
-
-https://www.zhihu.com/question/498827834
-
-苏联拖拉机为什么没有解决农业问题？
-
-https://www.zhihu.com/question/22972794
-
-没有出海口的黑海舰队对俄罗斯的意义是什么？

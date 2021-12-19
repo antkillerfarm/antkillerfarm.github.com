@@ -363,3 +363,7 @@ https://mp.weixin.qq.com/s/geT7x5RG4xhD-Ro1eZvrdg
 https://mp.weixin.qq.com/s/6Rl1uvIeysG844W2TtGocg
 
 一文看懂当红Serverless
+
+https://www.zhihu.com/question/506704568
+
+如何评价无服务器计算（serverless）的未来前景？你认为serverless有未来吗？

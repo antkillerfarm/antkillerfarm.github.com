@@ -304,6 +304,10 @@ https://mp.weixin.qq.com/s/67lPVyWUXG0SPJm4AOHmBA
 
 一份CMAKE中文实战教程
 
+https://blog.csdn.net/lianshaohua/article/details/107904367
+
+CMakeLists多目录通用模板
+
 ## cross compile
 
 需要用`-DCMAKE_TOOLCHAIN_FILE=XXXX`来指定toolchain file。后者的示例如下：
