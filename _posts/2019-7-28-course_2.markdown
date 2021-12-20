@@ -129,10 +129,6 @@ https://www.mit.edu/~amidi/teaching/data-science-tools/
 
 Data science tools
 
-https://cs330.stanford.edu/
-
-CS 330: Deep Multi-Task and Meta Learning
-
 https://mp.weixin.qq.com/s/VW6wcA5uUYTM4vnkteL7ng
 
 决策算法，464页pdf，Algorithms for Decision Making

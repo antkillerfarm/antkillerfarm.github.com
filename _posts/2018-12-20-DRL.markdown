@@ -331,6 +331,10 @@ https://github.com/Skylark0924/Reinforcement-Learning-in-Robotics
 
 一个机器人RL的专栏
 
+https://www.zhihu.com/column/c_1264765462367621120
+
+一个RL的专栏
+
 # 比赛
 
 https://github.com/seungjaeryanlee/awesome-rl-competitions
