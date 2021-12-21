@@ -47,6 +47,12 @@ CA出了Total War系列的新作《Total War: THREE KINGDOMS》的预告片，�
 
 最近推出的《太吾绘卷》似乎不错，可惜没有时间玩。
 
+https://www.zhihu.com/question/294824127
+
+如何评价国产游戏《太吾绘卷》？
+
+---
+
 手游方面入坑《王国纪元》。
 
 2019.2 《王国纪元》城堡升到25级。
@@ -248,3 +254,7 @@ https://github.com/skywind3000/preserve-cd
 https://www.zhihu.com/zvideo/1358906505719336960
 
 一个讲述War 3秘密的专栏
+
+http://news.17173.com/content/11112021/094129154.shtml
+
+腾讯、网易搞不定的国产3A，被一个中专生捣鼓出来了，仅售19元？（飞燕群岛）

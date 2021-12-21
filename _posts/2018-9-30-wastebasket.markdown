@@ -37,17 +37,9 @@ https://mp.weixin.qq.com/s/tIau6pRZU0r4Aasofca5yQ
 
 50张动图带你走进神奇的物理化学生物世界，超震撼！
 
-https://mp.weixin.qq.com/s/COIYp4Ao9fBPnaUZvhCxkg
-
-表情包的画质是如何越传越差甚至还变绿的？
-
-https://mp.weixin.qq.com/s/Y1bskBi8GUi1MW1VMM2-vw
+https://www.163.com/dy/article/FOOMUMHN0516DKF5.html
 
 没有照相机之前，画家是怎么修出漂亮的图的？
-
-https://mp.weixin.qq.com/s/Kake5sQm79L2j_uDqKfznQ
-
-在《我的世界》里从零打造一台计算机有多难？复旦本科生大神花费了一年心血
 
 https://mp.weixin.qq.com/s/mKyT376nbKNyxouuPYpSBA
 
@@ -305,7 +297,9 @@ https://zhuanlan.zhihu.com/p/386332176
 
 刘明侦的爷爷刘盛纲院士，电子科技大学前校长。
 
-胡玥的院士外公
+胡玥的院士外公。
+
+刘梦夏父亲天津大学材料学院副院长刘家臣，母亲分析中心研究员杜海燕。
 
 https://www.zhihu.com/question/504946760
 
@@ -314,3 +308,7 @@ https://www.zhihu.com/question/504946760
 https://zhuanlan.zhihu.com/p/33340734
 
 四川的刘姓果然都不是等闲之辈，又出了个刘明侦博士！
+
+https://zhuanlan.zhihu.com/p/439342425
+
+她，天大校花，博士发Nature，30岁不到当耶鲁教授！

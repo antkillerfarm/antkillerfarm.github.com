@@ -242,6 +242,14 @@ https://mp.weixin.qq.com/s/VIMKnqcoNw4VGigZJiDoYg
 
 # 物理++
 
+https://mp.weixin.qq.com/s/xla7ngb5JNiFpcAYqEScfQ
+
+这种球像“章鱼”，速度最快减速也最快
+
+https://mp.weixin.qq.com/s/mK12uMxECUo-ldFOApzNxw
+
+为了研究睡眠，这些科学家不要命了......
+
 https://mp.weixin.qq.com/s/XDBvVjIRfjtDrTN4zd92yg
 
 高铁辐射致癌，为什么会有这种令人喷饭的言论出现？

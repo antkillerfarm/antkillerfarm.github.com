@@ -9,6 +9,10 @@ category: Nature
 
 # 建筑
 
+![](/images/img4/brick.jpg)
+
+---
+
 双曲拱坝具有极高的厚高比。例如，瓦依昂拱坝，高262m，最大底厚22.1m，厚高比仅0.084。
 
 副坝：只能挡水，而没有泄洪能力的坝体。
@@ -298,11 +302,3 @@ https://mp.weixin.qq.com/s/ghzQMlmV8GXDr8UWtvsoiw
 https://mp.weixin.qq.com/s/Bunn5aOD5IGH3DLAPgbpxA
 
 科学的守护者：斯蒂文·温伯格
-
-https://mp.weixin.qq.com/s/xla7ngb5JNiFpcAYqEScfQ
-
-这种球像“章鱼”，速度最快减速也最快
-
-https://mp.weixin.qq.com/s/mK12uMxECUo-ldFOApzNxw
-
-为了研究睡眠，这些科学家不要命了......

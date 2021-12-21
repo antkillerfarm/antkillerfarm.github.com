@@ -129,6 +129,10 @@ Unsharp Mask(USM)锐化算法的的原理及其实现
 
 ---
 
+https://mp.weixin.qq.com/s/COIYp4Ao9fBPnaUZvhCxkg
+
+表情包的画质是如何越传越差甚至还变绿的？
+
 https://github.com/gzr2017/ImageProcessing100Wen
 
 图像处理入门100题
