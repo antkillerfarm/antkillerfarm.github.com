@@ -69,6 +69,10 @@ https://mp.weixin.qq.com/s/K4EIQyLSPvR3VTZp3dG4_g
 
 长安之后，繁华之地：伊斯法罕，世界的一半
 
+https://www.thepaper.cn/newsDetail_forward_9345458
+
+开启一段尘封的阿拉伯科学发展史
+
 ## 文艺复兴
 
 中世纪欧洲人的数学知识极为贫乏，很多学生连《几何原本》的第5个命题都看不懂。因为这个命题的主题图案是个等腰三角形，因此，又被称为“驴桥问题”（Asses' Bridge），意即过不了桥的，都是蠢驴。╮(╯_╰)╭
@@ -228,15 +232,3 @@ https://mp.weixin.qq.com/s/SV3A5tFtZyWgTVXW-1s74w
 https://mp.weixin.qq.com/s/xVzLUDmDlnzyGtbReoHDuQ
 
 曾被无视多年，却成就19世纪最伟大的一场革命，影响了整个世界！（非欧几何）
-
-https://mp.weixin.qq.com/s/LOI2HeWgmjlAqnwHS0vh9Q
-
-最强科研寺庙！北大、清华博士为什么跑到这？北大神童：出国不如出家！
-
-https://mp.weixin.qq.com/s/0NKhNt6nFDZCcjHE_njnpw
-
-图G上的随机游走：如何用数学方法估算一个女生前男友的数量？
-
-https://mp.weixin.qq.com/s/NMIyXOZkAqbt-YTz94TMug
-
-超励志！美国囚犯发现数论新规律，堪比大数学家！带着其他囚犯学数学

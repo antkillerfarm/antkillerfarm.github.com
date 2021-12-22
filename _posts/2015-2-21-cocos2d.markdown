@@ -288,6 +288,12 @@ https://game-icons.net/
 
 cocos2d-x的编译步骤变化不大，只是好多第三方库已经prebuilt好了，用起来更方便了。然而，由于官方对ubuntu的支持才到14.04，因此有些prebuilt库实际上是用不了的，需要用新版本ubuntu软件仓库中的同名文件替换之。
 
+# Unreal Engine
+
+代码下载指南：
+
+https://github.com/EpicGames/Signup
+
 # OpenWrt配置篇（续）
 
 ## 扩展包
