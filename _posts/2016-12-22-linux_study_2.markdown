@@ -112,6 +112,20 @@ https://mp.weixin.qq.com/s/3fNLa-yO4fUWO3nO9id1iA
 
 `nproc`
 
+## 查看CPU温度
+
+`sudo apt install psensor`
+
+代码：
+
+https://github.com/chinf/psensor
+
+参考：
+
+https://www.cnblogs.com/Black-Hawk/articles/14750866.html
+
+如何在linux/unix系统中获取CPU温度
+
 # 硬盘
 
 ## 查看磁盘空间大小
