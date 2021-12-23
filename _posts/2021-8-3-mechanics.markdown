@@ -245,3 +245,7 @@ https://mp.weixin.qq.com/s/yLfcBRWodQTjk1AvHuZONw
 https://mp.weixin.qq.com/s/mOdJm812AbRDA0M-8odW3w
 
 跑步机原型竟然是十九世纪的刑具！来扒一扒跑步机的黑历史…
+
+https://www.zhihu.com/question/56689494
+
+如何正确评价美军二战时的谢尔曼坦克？

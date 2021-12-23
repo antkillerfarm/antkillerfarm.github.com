@@ -277,6 +277,14 @@ https://mp.weixin.qq.com/s/djkeZ2qC9opjIVHVcT0IZw
 
 ---
 
+爆炸图（Exploded Views）也称立体装配图。
+
+https://www.zhihu.com/question/278958074
+
+如何绘制工业产品的爆炸图？
+
+---
+
 https://www.douban.com/group/topic/176322122/
 
 画图小白想问一句，这种核酸检测人数的贪吃蛇图怎...
