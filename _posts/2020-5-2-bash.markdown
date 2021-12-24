@@ -246,6 +246,28 @@ bg N
 
 将命令进程号码为N的命令进程放到后台执行
 
+## bash并行
+
+```bash
+for i in {1..255}
+do
+{
+  ...
+} & ##后台并行执行
+done
+wait ##等待上面的后台进程执行完成
+```
+
+参考：
+
+https://blog.csdn.net/zhaoyq008/article/details/103480909
+
+bash并行
+
+https://www.cnblogs.com/xuxm2007/p/5820633.html
+
+Bash脚本实现批量作业并行化
+
 ## 参考
 
 https://github.com/dylanaraps/pure-bash-bible

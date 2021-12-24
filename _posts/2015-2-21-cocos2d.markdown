@@ -294,6 +294,21 @@ cocos2d-x的编译步骤变化不大，只是好多第三方库已经prebuilt好
 
 https://github.com/EpicGames/Signup
 
+UE的代码仓库是个私有库，需要注册Epic账号并与github账号关联才能下载。目前仓库大小为13GB左右（2021.12）。
+
+安装：
+
+```bash
+./Setup.sh
+./GenerateProjectFiles.sh
+make
+
+```
+
+这里需要下载一个12GB左右的Mono包。脚本已经设置好并行编译，所以不需要`make -j4`。
+
+
+
 # OpenWrt配置篇（续）
 
 ## 扩展包

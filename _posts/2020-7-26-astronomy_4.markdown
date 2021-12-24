@@ -219,6 +219,8 @@ NASA的科学家开始没有意识到是望远镜的镜头质量问题，还在�
 
 后来相机工程师发现了是由于一个镜片零件生产误差造成的问题，花了3年时间在太空修复了这个问题，避免了重新发射，为NASA节省了47亿美元。科学家终于能拍到清晰的太空图像了。
 
+20年代三大空间巡天望远镜——载人空间站工程巡天空间望远镜（Chinese Survey Space Telescope, 简称CSST，亦被称为Chinese Space Station Telescope）、欧洲航天局的欧几里得（Euclid）和美国航天局的罗曼太空望远镜（Roman Space Telescope）。
+
 https://mp.weixin.qq.com/s/Wcd_bv_bt-xv42UD40dDww
 
 深度传感进化史
@@ -242,6 +244,10 @@ https://zhuanlan.zhihu.com/p/36125534
 https://mp.weixin.qq.com/s/DFUMQ08Efr5iJJJlRthsOA
 
 这将是中国有史以来最昂贵、也最先进的望远镜（巡天空间望远镜）
+
+https://mp.weixin.qq.com/s/k1v-sDi0x1pRDZsHcDRTpA
+
+雄心勃勃，中国建造首个大型太空光学望远镜
 
 ---
 
@@ -270,21 +276,3 @@ https://zhuanlan.zhihu.com/p/330003494
 1958年1月31日，美国第一颗人造卫星探险者一号升空，当升至800千米高空时，星上所载盖革计数器读数突然下降至0。到1958年3月26日探险者三号升空时，又发生了同样的情况。James Van Allen认为，这是因为存在极大量的辐射导致计数器达到饱和而失灵造成的。因此，同年7月26日发射探险者四号时，他在计数器前端加入一小片薄铅以阻挡部分辐射。果然，新的卫星证实了他的猜测。
 
 >James Van Allen，1914～2006，University of Iowa博士（1939）+教授。美国科学院院士。
-
----
-
-https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
-
-生的伟大，死的光荣——致敬卡西尼号土星探测器
-
-https://mp.weixin.qq.com/s/sg24WvUClEZnLxhJio0BuQ
-
-被磨难环绕的“伽利略号”的一生
-
-https://mp.weixin.qq.com/s/ros-kBOIgTgQF2SaGc99qQ
-
-哈佛名镜的前世今生
-
-https://mp.weixin.qq.com/s/DKMs8sZtE_JzWaxr8o-DWA
-
-你好，冥王星
