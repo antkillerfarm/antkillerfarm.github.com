@@ -67,6 +67,36 @@ https://www.thepaper.cn/newsDetail_forward_2811224
 
 ---
 
+一机部：民用机械。
+
+二机部：原子能、核武器（九院为核武器研究院）。
+
+三机部：航空（+第六研究院）。
+
+四机部：电子（+第十研究院）。
+
+五机部：常规武器。
+
+六机部：船舶舰艇（+第七研究院）。
+
+七机部：航天，火箭、卫星、导弹（第五研究院）。
+
+八机部：农业机械。
+
+https://zhuanlan.zhihu.com/p/445362549
+
+中国部委变迁之一：八机并存
+
+---
+
+五机部——兵器工业部，政企分离，家底分成两家集团。
+
+中国兵器工业集团，即北方集团，英文：China north industries group co。简称norinco group，即中国北方工业集团有限公司。
+
+中国兵器装备集团，即南方集团，英文：China south industries group co。缩写CSGC，即中国南方工业集团有限公司。
+
+---
+
 ![](/images/img3/top10.png)
 
 ![](/images/img4/manufact.jpg)

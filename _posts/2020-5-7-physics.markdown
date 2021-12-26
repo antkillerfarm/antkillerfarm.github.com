@@ -141,7 +141,13 @@ https://mp.weixin.qq.com/s/o78XzwFUdfhiZEI6siJdjA
 
 # 物理
 
+I don't need a girl friend, physics fucks me everyday.
+
+---
+
 ![](/images/img3/spectrum.png)
+
+![](/images/img4/wave.png)
 
 ---
 

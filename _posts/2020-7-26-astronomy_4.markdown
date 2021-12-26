@@ -251,21 +251,17 @@ https://mp.weixin.qq.com/s/k1v-sDi0x1pRDZsHcDRTpA
 
 ---
 
-https://mp.weixin.qq.com/s/aY4gFbK_aKWcgwvr0Rk5gQ
+https://view.inews.qq.com/wxn/20211224A03SC600
 
-“波多黎各，波多黎各，世界最大射电望远镜，倒闭了”（Arecibo望远镜）
+韦伯望远镜即将发射！梭哈百亿美元上天，是为了看啥？
 
-https://www.zhihu.com/question/432120058
+https://view.inews.qq.com/wxn/20211225A0A9SJ00
 
-阿雷西博望远镜馈源舱支撑平台塌了，现已决定退役拆除，如何评价它的一生？
+韦伯望远镜成功背后：成本约110亿美元，共推迟发射18次
 
-https://zhuanlan.zhihu.com/p/330003494
+https://view.inews.qq.com/wxn/20211225A08N9G00
 
-美国天眼塌了
-
----
-
-在目前的理论下，低于5倍地球质量的行星通常会是岩石行星，超过10倍地球质量的行星则会成为类海王星或气体行星。
+“鸽王之王”韦伯终于上天！比哈勃看得更远，烧钱更多
 
 ---
 
