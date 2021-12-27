@@ -25,6 +25,16 @@ https://mp.weixin.qq.com/s/xSODAGf3QcJ3A9oq6xP11A
 
 《Learning to Drive in a Day》
 
+---
+
+强化学习和模仿学习，本质都是在任务层面的（Task-level Control），而传统的机器人控制都是在动作级（Action-level）和伺服级（Servo-level）。
+
+https://www.zhihu.com/question/504142198
+
+现有的控制器已经能完成对于机械臂的控制了，将深度强化学习应用到机械臂的控制上还有什么实际意义吗？
+
+---
+
 参考：
 
 https://zhuanlan.zhihu.com/p/59197798

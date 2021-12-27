@@ -281,6 +281,10 @@ https://mp.weixin.qq.com/s/vChWpG_2m53n8Bz-yfCohg
 
 实操教程：用一维卡尔曼滤波器来估计运动物体的位置和速度
 
+https://zhuanlan.zhihu.com/p/408783183
+
+卡尔曼滤波的基本原理（也许是我写过最详细的推导）
+
 # Loss function详解+
 
 https://mp.weixin.qq.com/s/CPfhGxig9BMAgimBSOLy3g

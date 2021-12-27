@@ -375,6 +375,10 @@ https://zhuanlan.zhihu.com/p/26512099
 
 tensorflow和caffe2
 
+https://www.zhihu.com/question/28571059
+
+Eigen的速度为什么这么快？
+
 # TensorFlow.js
 
 https://mp.weixin.qq.com/s/dqMS4NjmNYs7IFHm8uFM8w

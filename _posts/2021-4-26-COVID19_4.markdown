@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 新冠肺炎（四）——瘟疫公司, 国际援助
+title: 新冠肺炎（四）——科研, 瘟疫公司
 category: COVID19 
 ---
 
@@ -8,6 +8,30 @@ category: COVID19
 {:toc}
 
 # 口罩（续）
+
+https://mp.weixin.qq.com/s/i0o9Xb-AViIZ8DGMOtDaig
+
+被英国首相点名后，戴森承诺造15000台呼吸机
+
+https://mp.weixin.qq.com/s/OuyBccDAzMiH6yLc1vtgOQ
+
+一张图告诉你：全球离“口罩自由”还有多远？
+
+https://mp.weixin.qq.com/s/_S-GY-1ZiG2OBGMcg5sXUg
+
+抗疫重器呼吸机原理浅析
+
+https://mp.weixin.qq.com/s/swrxHw76In_Zr_GFm8ieXw
+
+N95之父华裔科学家Peter Tsai教你如何正确戴口罩
+
+https://mp.weixin.qq.com/s/O4RavwRUPbwXq8mDZTaA6w
+
+全球疯抢的呼吸机，其产业链啥样？
+
+https://wxn.qq.com/cmsid/TEC2020041800124100
+
+供应断链卡脖呼吸机：核心零部件靠进口订单排到8月
 
 https://mp.weixin.qq.com/s/tLljo8q-1eybDIk7CLQiSA
 
@@ -294,43 +318,3 @@ https://zhuanlan.zhihu.com/p/103836857
 https://zhuanlan.zhihu.com/p/125727756
 
 《瘟疫公司》做错了吗？最贴近疫情的游戏被下架，被指存在违反国内法律内容
-
-https://zhuanlan.zhihu.com/p/298079109
-
-现在，你可以在《瘟疫公司》里“拯救世界”了
-
-https://zhuanlan.zhihu.com/p/293192687
-
-因为疫情爆火的《瘟疫公司》免费了，还新增了解药模式
-
-https://www.zhihu.com/question/21491731
-
-游戏《瘟疫公司》Plague Inc这款游戏对现实世界有何启示？
-
-# 国际援助
-
-## 日本援助中国
-
-盛唐时，日本遣人来中国学习佛法。长屋（日本的相国）赠送中国大德的上千件袈裟，边缘都绣着一首偈子：
-
-山川异域，风月同天。寄诸佛子，共结来缘。
-
-这也是鉴真法师决心东渡日本传戒的缘由之一。
-
----
-
-岂曰无衣？与子同袍。王于兴师，修我戈矛。与子同仇。
-
-岂曰无衣？与子同泽。王于兴师，修我矛戟。与子偕作。
-
-岂曰无衣？与子同裳。王于兴师，修我甲兵。与子偕行。
-
-——《诗经·秦风·无衣》
-
----
-
-相知无远近，万里尚为邻。
-
-四海皆兄弟，谁为行路人。
-
-崎岖路，长情在。

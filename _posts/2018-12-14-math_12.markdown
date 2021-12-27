@@ -103,6 +103,10 @@ https://blog.csdn.net/nemol1990/article/details/45131603
 
 四轴PID讲解
 
+https://www.zhihu.com/question/293450508
+
+飞控算法中双环串级PID如何理解?
+
 # 数学杂谈
 
 https://mathworld.wolfram.com/

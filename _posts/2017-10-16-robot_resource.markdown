@@ -101,16 +101,6 @@ https://mp.weixin.qq.com/s/4PPiwJJWPi4qn5mBwX6wDw
 
 ADAS处理器、芯片主流企业及相应技术梳理
 
-https://mp.weixin.qq.com/s/y0HnpWRUBLyEyqzWfOhkCw
-
-博世集团百年启示录
-
-Never forget your humanity, and respect human dignity in your dealings with others.---Robert Bosch
-
-https://mp.weixin.qq.com/s/GtAZa5veVKFpQdJgdlMDBg
-
-你不一定知道的博世！
-
 https://mp.weixin.qq.com/s/xgxsmcMAqstzmhTJZFZIyw
 
 特斯拉重磅深度：T E S L A，T-S.E.X.Y

@@ -438,3 +438,7 @@ https://mp.weixin.qq.com/s/djEPqxZSfMp13Uf_h6TSiA
 https://mp.weixin.qq.com/s/FMYimnxcAya6bhvdGD5LUw
 
 惊魂48小时，阿里工程师如何紧急定位线上内存泄露？
+
+https://zhuanlan.zhihu.com/p/424240082
+
+编译一个属于自己的最小Linux系统
