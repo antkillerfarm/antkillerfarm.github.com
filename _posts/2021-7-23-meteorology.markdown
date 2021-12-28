@@ -242,6 +242,18 @@ https://mp.weixin.qq.com/s/VIMKnqcoNw4VGigZJiDoYg
 
 # 物理++
 
+https://mp.weixin.qq.com/s/FAG0mFIimWQ875oeshpAOA
+
+极短时间测量
+
+https://mp.weixin.qq.com/s/sVyC5sBUEJLfAzetL0Fl-Q
+
+什么是非平衡态热力学
+
+https://mp.weixin.qq.com/s/ZMdaKIVAnkBDiR666kqkiQ
+
+博士生DIY超级显微镜，直接看到原子！网友：太极客了，一下省出几十万元
+
 https://mp.weixin.qq.com/s/xla7ngb5JNiFpcAYqEScfQ
 
 这种球像“章鱼”，速度最快减速也最快

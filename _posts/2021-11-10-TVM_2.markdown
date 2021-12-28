@@ -11,6 +11,21 @@ category: AI
 
 ## Relay IR（续）
 
+这是pattern_table的其中一个表项：
+
+```python
+def qnn_conv_pattern():
+    pattern = is_op("nn.pad")(wildcard(), wildcard()) | wildcard()
+    pattern = is_op("qnn.conv2d")(
+        pattern, is_constant(), is_constant(), is_constant(), is_constant(), is_constant()
+    )
+    pattern = is_op("nn.bias_add")(pattern, is_constant())
+    pattern = is_op("qnn.requantize")(
+        pattern, is_constant(), is_constant(), is_constant(), is_constant()
+    )
+    return pattern
+```
+
 一般来说IR会定的比较细粒度，而AI硬件更喜欢粗粒度的op。所以往往若干个IR op组合起来，才能得到一个AI硬件op。这时就需要进行模板匹配。
 
 一般来说，数据可以分为变量和常量（`is_constant()`），如果既可能是变量，也可能是常量的话，就用`wildcard()`匹配。
@@ -113,6 +128,14 @@ python3 -m tvm.driver.tvmc compile ./mobilenet_v1_0.25_224_quant.tflite --target
 相关代码在：
 
 python/tvm/driver/tvmc/composite_target.py
+
+# SPIR-V
+
+SPIR-V是一种用于GPU通用计算和图形学的中间语言。
+
+https://blog.csdn.net/qwertyu1234/article/details/50163847
+
+SPIR-V研究：编译器基本原理
 
 # AI Chip+
 

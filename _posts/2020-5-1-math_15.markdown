@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十五）——阴影面积, 肺炎版《黄冈密卷》, Gabriel's Horn, 勾股定理, 三门问题
+title:  数学狂想曲（十五）——阴影面积, 肺炎版《黄冈密卷》, Gabriel's Horn, 勾股定理
 category: math 
 ---
 
@@ -147,6 +147,8 @@ Elliptic Integral of the Second Kind
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/geogebra/huanggang.ggb
 
+《椭圆函数及其应用》 高本庆 著
+
 ---
 
 https://mp.weixin.qq.com/s/FdHstCxJqQ4wYXSRDyqm5A
@@ -251,24 +253,6 @@ $$BD\cdot CE\cdot AF=AE\cdot BF\cdot CD$$
 AB和BC是圆的两条弦（即ABC是圆的一条折弦），BC>AB，M是弧ABC的中点，则从M向BC所作垂线之垂足D是折弦ABC的中点，即CD=AB+BD。
 
 定义：从圆周上任一点出发的两条弦，所组成的折线，我们称之为该图的一条**折弦**。
-
-# 三门问题
-
-https://www.zhihu.com/question/26709273/
-
-蒙提霍尔问题（又称三门问题、山羊汽车问题）的正解是什么？
-
-https://zhuanlan.zhihu.com/p/21461266
-
-数学杂谈——“三门问题”：Monty Hall Problem
-
-https://zhuanlan.zhihu.com/p/23338174
-
-蒙提霍尔问题/三门问题（Monty Hall problem）
-
-https://mp.weixin.qq.com/s/xHm4AjopGKSUE0-uAk5IHg
-
-用概率论告诉你：直觉到底有多不靠谱。包括了三门问题和本福特定律。
 
 # Lie Groups
 

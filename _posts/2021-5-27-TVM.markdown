@@ -285,6 +285,10 @@ https://zhuanlan.zhihu.com/p/163717035
 
 AI编译优化
 
+https://zhuanlan.zhihu.com/p/446935289
+
+新一代深度学习编译技术变革和展望
+
 https://www.zhihu.com/question/267167829
 
 如何看待Tensor Comprehensions？与TVM有何异同？（这个问题下的答案不多，但基本都是陈天奇、贾扬清之类的大佬）
@@ -413,18 +417,3 @@ seq(mod)
 ```
 
 这里的Pass基本看名字就知道功能了，唯一需要关注的是MergeComposite。
-
-这是pattern_table的其中一个表项：
-
-```python
-def qnn_conv_pattern():
-    pattern = is_op("nn.pad")(wildcard(), wildcard()) | wildcard()
-    pattern = is_op("qnn.conv2d")(
-        pattern, is_constant(), is_constant(), is_constant(), is_constant(), is_constant()
-    )
-    pattern = is_op("nn.bias_add")(pattern, is_constant())
-    pattern = is_op("qnn.requantize")(
-        pattern, is_constant(), is_constant(), is_constant(), is_constant()
-    )
-    return pattern
-```

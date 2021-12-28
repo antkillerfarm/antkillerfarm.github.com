@@ -190,14 +190,6 @@ https://mp.weixin.qq.com/s/9D7uda3CV7volenhl-jchg
 
 推荐几个不错的CUDA入门教程
 
-http://tieba.baidu.com/p/2155772860
-
-GPU和Shader技术的基础知识
-
-http://www.jianshu.com/p/8687a040eb48
-
-GPU处理图像Shader的入门
-
 https://mp.weixin.qq.com/s/bvNnzkOzGYYYewc3G9DOIw
 
 GPU是如何优化运行机器学习算法的？
@@ -245,6 +237,30 @@ https://zhuanlan.zhihu.com/p/383115932
 https://zhuanlan.zhihu.com/p/410278370
 
 CUDA矩阵乘法终极优化指南
+
+# Shader
+
+基于OpenGL的OpenGL Shading Language，简称GLSL;
+
+基于DirectX的High Level Shading Language，简称HLSL;
+
+NVIDIA公司的C for Graphic，简称Cg。
+
+https://zhuanlan.zhihu.com/p/47433678
+
+三大Shader编程语言（CG/HLSL/GLSL）
+
+https://zhuanlan.zhihu.com/p/25024372
+
+跨平台shader编译的过去、现在和未来
+
+http://tieba.baidu.com/p/2155772860
+
+GPU和Shader技术的基础知识
+
+http://www.jianshu.com/p/8687a040eb48
+
+GPU处理图像Shader的入门
 
 # GPU通信技术
 

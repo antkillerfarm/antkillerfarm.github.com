@@ -378,15 +378,3 @@ https://mp.weixin.qq.com/s/ndzLKJC2Tvg2gKrr6jUNTw
 http://echarts.baidu.com/echarts2/doc/example.html
 
 各种大数据展示用的图表
-
-https://mp.weixin.qq.com/s/8J-uDw0qwDbj21UkQch2KA
-
-跨平台Canvas绘图引擎背后的黑科技
-
-https://mp.weixin.qq.com/s/94IGjVPXZ0FeCILQN33eBQ
-
-遇见大数据可视化：不要错过这么漂亮的数据可视化案例！
-
-https://mp.weixin.qq.com/s/torRtPSVRnULRTbv4dB1sA
-
-大规模地理数据可视化入门：Deck.gl和H3
