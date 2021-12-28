@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  TVM,TVM实战（一）
+title:  TVM
 category: AI 
 ---
 
@@ -263,6 +263,38 @@ https://zhuanlan.zhihu.com/p/337087273
 
 TinyML-TVM是如何驯服Tiny的（下）
 
+## 技术变革和展望
+
+![](/images/img4/TVM.jpg)
+
+深度学习编译生态围绕着四类抽象展开:
+
+计算图表示(computational graph)：计算图可以把深度学习程序表示成DAG，然后进行类似于算子融合，改写，并行等高级优化。Relay, XLA, Torch-MLIR，ONXX 等基本都在这一级别。
+
+张量程序表示(tensor program): 在这个级别我们需要对子图进行循环优化，对于DSA支持还要包含张量化和内存搬移的优化。
+
+算子库和运行环境(library and runtime): 算子库本身依然是我们快速引入专家输入优化性能的方式。同时运行环境快速支持数据结构运行库。
+
+硬件专用指令 (hardware primitive) ：专用硬件和可编程深度学习加速器也引入了我们专用硬件张量指令的需求。
+
+---
+
+目前的整个生态，包括深度学习框架，编译框架(包括基于MLIR，ONNX或者是TVM的解决方案）。大家都遵循一种叫做多层渐进优化(Multi-stage lowering)的方式。这种构建方式的大致思路是我们在每一层抽象中采用一个（有时多个）中间表示。我们会在每一个层级(dialect, abstraction）做一些内部优化，然后把问题丢给下一个层级继续进行优化。
+
+---
+
+深度学习运行框架和编译框架的两种流派：
+
+一类是以手工算子优化为主的算子库驱动方案。这一类方案一般可以比较容易地让更多的优化专家加入，但是本身也会带来比较多的工程开销。
+
+另一类方案是以自动优化为主的编译方案。编译核心方案往往可以带来更多的自动的效果，但是有时候也比较难以引入领域知识。
+
+---
+
+https://zhuanlan.zhihu.com/p/446935289
+
+新一代深度学习编译技术变革和展望
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/139552817
@@ -284,10 +316,6 @@ TVM学习系列blog
 https://zhuanlan.zhihu.com/p/163717035
 
 AI编译优化
-
-https://zhuanlan.zhihu.com/p/446935289
-
-新一代深度学习编译技术变革和展望
 
 https://www.zhihu.com/question/267167829
 
@@ -370,50 +398,3 @@ tvm or mlir？
   %7 = clip(%6, a_min=0f, a_max=255f);
   %8 = cast(%7, dtype="uint8");
 ```
-
-这是TFLite模型的IR片段：
-
-```text
-  %0 = qnn.quantize(%input, 0.0186579f /* ty=float32 */, 114 /* ty=int32 */, out_dtype="uint8", axis=1) /* ty=Tensor[(1, 3, 224, 224), uint8] */;
-  %1 = nn.pad(%0, 114f /* ty=float32 */, pad_width=[[0, 0], [0, 0], [1, 1], [1, 1]]) /* ty=Tensor[(1, 3, 226, 226), uint8] */;
-  %2 = qnn.conv2d(%1, meta[relay.Constant][0] /* ty=Tensor[(32, 3, 3, 3), int8] */, 114 /* ty=int32 */, 0 /* ty=int32 */, 0.0186579f /* ty=float32 */, 0.00288958f /* ty=float32 */, strides=[2, 2], padding=[0, 0, 0, 0], channels=32, kernel_size=[3, 3], out_dtype="int32") /* ty=Tensor[(1, 32, 112, 112), int32] */;
-  %3 = nn.bias_add(%2, meta[relay.Constant][1] /* ty=Tensor[(32), int32] */) /* ty=Tensor[(1, 32, 112, 112), int32] */;
-  %4 = qnn.requantize(%3, 5.39136e-05f /* ty=float32 */, 0 /* ty=int32 */, 0.0150183f /* ty=float32 */, 0 /* ty=int32 */, axis=1, out_dtype="uint8") /* ty=Tensor[(1, 32, 112, 112), uint8] */;
-```
-
-可以看出同一个QnnConv2D两者的展开形式存在一定的差异，但是语义上却基本是一致的。
-
-## Relay IR
-
-在继续主题之前，我们首先来看看这个展开形式的差异是如何造成的。
-
-TFLite/Pytorch模型导入之后，有一个转换成Relay IR的过程，也就是所谓的frontend。
-
-相关代码在：
-
-TFLite: python/tvm/relay/frontend/tflite.py
-
-Pytorch: python/tvm/relay/frontend/pytorch.py和python/tvm/relay/frontend/qnn_torch.py
-
-可以看出Pytorch的量化模型的weight是浮点数，而TFLite的量化模型的weight是整数。
-
-有frontend自然就有backend：
-
-python/tvm/relay/op/contrib/ethosn.py
-
-和切割计算图有关的代码主要是：
-
-```python
-seq = tvm.transform.Sequential(
-    [
-        ......
-        transform.MergeComposite(pattern_table()),
-        transform.AnnotateTarget("ethos-n"),
-        transform.MergeCompilerRegions(),
-        transform.PartitionGraph(),
-    ]
-)
-seq(mod)
-```
-
-这里的Pass基本看名字就知道功能了，唯一需要关注的是MergeComposite。

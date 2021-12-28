@@ -199,6 +199,30 @@ https://www.zhihu.com/question/375319488
 
 # 化学+
 
+https://mp.weixin.qq.com/s/BXew6QoQgHAxOnCKpPp64Q
+
+获得诺贝尔奖的底层小职员
+
+https://mp.weixin.qq.com/s/irMd_sRRwZhbTuIXo3na6Q
+
+今天，说一下人工钻石（钻石半导体）
+
+https://mp.weixin.qq.com/s/9yVgUXorOHB8VGmchgJgGQ
+
+1,000,000,000,000,000,000次雷击！（活性磷）
+
+https://zhuanlan.zhihu.com/p/67180750
+
+40个金属之最，搞了一辈子机械知道不会超过10个。。。
+
+https://mp.weixin.qq.com/s/5Ua1tXJ0Eytdh6gzVxXpeg
+
+上万只海螺才提取出一克，价比黄金的染料是什么颜色？
+
+https://mp.weixin.qq.com/s/uLt6v5s964BV6OJidBHMRA
+
+周立波吸冰毒被实锤，史上最滑稽的自杀式验毒
+
 https://mp.weixin.qq.com/s/ySR1dyDqMJ90VcrxFDjPgw
 
 不用洗的衣服来了！但这面料干净吗？
@@ -306,41 +330,3 @@ https://www.zhihu.com/answer/925610213
 https://mp.weixin.qq.com/s/Lz8QRs7HkZbWFxLqf4h6OA
 
 塑料瓶、玻璃瓶、纸包装，什么饮料用什么包装有啥秘密吗？
-
-## 化学工业
-
-https://wallstreetcn.com/articles/250536
-
-巴斯夫原本是它小弟，德国化工产业的代名词：揭秘史前化工巨兽 IG 法本
-
-http://blog.sina.com.cn/s/blog_52f526870102w7xo.html
-
-历经百年兴衰 德国化工三巨头为何屹立不倒
-
-http://www.weixinso.com/document/KPyZBb.html
-
-陶氏化学发展史
-
-http://www.pnchina.com/cn/Detail.aspx?id=1361250587
-
-业界经典：陶氏化学Styrofoam之75年
-
-https://new.qq.com/omn/20180819/20180819A011JT.html
-
-起于硝烟的化工帝国：杜邦是怎么与化工行业同呼吸共命运的？
-
-http://www.qdaily.com/articles/18872.html
-
-杜邦要合并了，过去一百年，这家公司的发明都改变了些什么？
-
-https://mp.weixin.qq.com/s/MkVeQ7xYAHV8mA1zmdr0qg
-
-四川五通桥事故频发：“化工围城”之殇
-
-https://mp.weixin.qq.com/s/jX9AMoQDTMZ8s2m_RFg0Pg
-
-这家马桶刷公司，生产了最早的现代人造圣诞树
-
-https://mp.weixin.qq.com/s/aUYieCVLLom7EaWIhfccRQ
-
-院士写了首《化工之歌》，聊聊化工那些事

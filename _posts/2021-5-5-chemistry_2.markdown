@@ -111,6 +111,10 @@ https://mp.weixin.qq.com/s/dm2V9oIP-SflRwGvMmQuLg
 
 ---
 
+“洗洞”，就是一座废弃金矿用水和化学物质再“洗”一遍，能再淘出不少的金砂、金石，让这座金矿的价值直接翻个倍，然而被“洗”过的矿洞，却会变成夺命的“大口”。因为洗洞要使用高毒物质氰化钠，氰化钠遇水会释放出更毒的氢氰酸气体。所以洗洞者都要戴着防毒面具、背着氧气瓶进去“淘金”，一旦面具破损，他们就会马上死于矿坑。
+
+---
+
 https://mp.weixin.qq.com/s/0fdnEWpLvPSbweFh0v4x9A
 
 科学家的浪漫，是用激光画一道彩虹（姜黄素）
@@ -226,27 +230,3 @@ https://mp.weixin.qq.com/s/cUuw9CflfLrxXuSmNbra_A
 https://zhuanlan.zhihu.com/p/23284525
 
 靠谱地，咱聊聊田中耕一
-
-https://mp.weixin.qq.com/s/BXew6QoQgHAxOnCKpPp64Q
-
-获得诺贝尔奖的底层小职员
-
-https://mp.weixin.qq.com/s/irMd_sRRwZhbTuIXo3na6Q
-
-今天，说一下人工钻石（钻石半导体）
-
-https://mp.weixin.qq.com/s/9yVgUXorOHB8VGmchgJgGQ
-
-1,000,000,000,000,000,000次雷击！（活性磷）
-
-https://zhuanlan.zhihu.com/p/67180750
-
-40个金属之最，搞了一辈子机械知道不会超过10个。。。
-
-https://mp.weixin.qq.com/s/5Ua1tXJ0Eytdh6gzVxXpeg
-
-上万只海螺才提取出一克，价比黄金的染料是什么颜色？
-
-https://mp.weixin.qq.com/s/uLt6v5s964BV6OJidBHMRA
-
-周立波吸冰毒被实锤，史上最滑稽的自杀式验毒
