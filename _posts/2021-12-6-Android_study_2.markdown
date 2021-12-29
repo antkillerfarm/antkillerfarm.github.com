@@ -183,6 +183,10 @@ https://zhuanlan.zhihu.com/p/57774611
 
 在libupnp项目中，提供了一个简易的线程池实现。
 
+其他的线程池实现还有：
+
+https://github.com/vit-vit/ctpl
+
 参考：
 
 https://mp.weixin.qq.com/s/KigkxkUDYP8r1SEmDUvCCw
