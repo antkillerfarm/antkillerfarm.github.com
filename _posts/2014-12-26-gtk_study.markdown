@@ -175,6 +175,12 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gtkglx
 
 用户需要根据自己的实际情况，修改Makifile.w32中的相关路径，把GTK和MINGW的路径设置好。
 
+---
+
+GTK 3.16+的示例如下：
+
+https://github.com/ebassi/glarea-example
+
 # GTK与系统图标
 
 在GTK 2.x时代，用户可以通过一系列的stock API来调用GTK自带的图标，比如gtk_tool_button_new_from_stock函数。

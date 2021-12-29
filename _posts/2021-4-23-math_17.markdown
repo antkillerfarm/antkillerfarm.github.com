@@ -211,6 +211,20 @@ f(x)=exp(exp(iπ/4)*x)
 
 ---
 
+弹球是展示Zeno现象的最简单模型之一。一般来说，Zeno行为的特征可非正式地表示为某些混合动力系统（Hybrid System）在有限时间间隔内发生无限数量的事件。在弹球模型中，球在失去能量的同时，将以越来越小的时间间隔与地面发生多次碰撞。因此，模型会经历Zeno行为。
+
+https://ww2.mathworks.cn/help/simulink/slref/simulation-of-a-bouncing-ball.html
+
+https://blog.csdn.net/handsomeswp/article/details/109535534
+
+Python动画没有秘密
+
+---
+
+Yau Shing-Tung=姚兴腾
+
+---
+
 https://www.zhihu.com/question/20866833
 
 为什么正多面体只有5种？
@@ -222,19 +236,3 @@ https://mp.weixin.qq.com/s/qfbfzToypKTxh7CxJ0ifHw
 https://mp.weixin.qq.com/s/uptfQb8ELfpb5P4ySvofpg
 
 一个被我们“嫌弃”了23年的数学天才，累死才知道他的价值（陆家羲）
-
-https://mp.weixin.qq.com/s/wMARrGbRanB2T0NIxISspA
-
-有趣的数学可视化
-
-https://mp.weixin.qq.com/s/T6ukSjODiTgC1T4pCZCY9g
-
-2，29，541，7919，104729……（素数的故事）
-
-https://mp.weixin.qq.com/s/YD6fnPYkqXwxTISjN99JxQ
-
-美国数学能出很厉害的大神，为什么学的却比我们简单？看了他们的黑历史就明白了……
-
-https://mp.weixin.qq.com/s/y9EZdU5hif1WT2t9fpSnFw
-
-他是20世纪最伟大的数学家之一，但这个人却并不存在（尼古拉·布尔巴基）

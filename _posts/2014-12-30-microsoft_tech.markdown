@@ -207,6 +207,8 @@ wxPython：Python首选的GUI库
 
 WebGL可以看作是JavaScript+OpenGL ES，它为Web开发者使用显卡创建3D应用提供了方案。
 
+类似的还有WebGPU = JS + Vulkan。
+
 ## 教程
 
 https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Tutorial

@@ -159,6 +159,11 @@ https://habana.ai
 
 >2019.12 Habana被Intel收购。稍后，就传出Intel解散Nervana团队的事情。后者是2016年被Intel收购的一家AI芯片公司。
 
+国外类似的企业还有：
+
+- HAILO
+- blaize
+
 参考：
 
 https://mp.weixin.qq.com/s/cnHQSmM89Sp92gke_F9T2Q
