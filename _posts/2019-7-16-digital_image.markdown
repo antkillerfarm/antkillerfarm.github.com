@@ -220,6 +220,10 @@ https://mp.weixin.qq.com/s/X1GcQywkM-hZUu-1koP_VA
 
 视频增强之“动态范围扩展”HDR技术漫谈
 
+https://mp.weixin.qq.com/s/zPHNtK4wUQnVLkIXcjqd_A
+
+韩国科技院Lin Wang最新TPAMI《深度学习HDR成像》综述论文阐述深度学习高动态范围成像方法
+
 ## 参考
 
 https://mp.weixin.qq.com/s/od9uDZdRU4QaBKPHb0tLag

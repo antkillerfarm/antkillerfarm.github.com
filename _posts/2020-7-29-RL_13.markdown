@@ -311,3 +311,7 @@ DeepMind开源Psychlab平台——搭建AI和认知心理学的桥梁
 https://mp.weixin.qq.com/s/xJ_g3BvbM-WaIyLthHdhEw
 
 DeepMind发布通用强化学习新范式，自主机器人可学会任何任务
+
+https://mp.weixin.qq.com/s/nNTag_D_qN7WcE7DEMJFaA
+
+横扫6个SOTA，吊打强化学习！谷歌最强行为克隆算法登CoRL顶会，机器人干活10倍速

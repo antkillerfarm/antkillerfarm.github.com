@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度加速（六）——硬件加速技巧
+title:  深度加速（六）——知识蒸馏
 category: DL acceleration 
 ---
 
@@ -327,8 +327,6 @@ https://mp.weixin.qq.com/s/IkKig7I5_97y_siixEj72w
 
 协同训练
 
-# 硬件加速技巧
+https://mp.weixin.qq.com/s/SUcz-Ba37CzUoAG52zW7YA
 
-https://mp.weixin.qq.com/s/KPT4P5SQ4E4ofPdjhhjRvA
-
-如何加速深度神经网络计算效率？看NVIDIA-ISSCC2021教程，附93页Slides与视频
+强化学习推荐模型的知识蒸馏探索之路

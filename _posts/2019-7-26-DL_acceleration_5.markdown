@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度加速（五）——模型压缩与加速, 知识蒸馏
+title:  深度加速（五）——模型压缩与加速
 category: DL acceleration 
 ---
 

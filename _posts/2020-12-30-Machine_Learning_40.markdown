@@ -87,6 +87,14 @@ https://mp.weixin.qq.com/s/N7DE0kvf8THhJQwroHj4vA
 
 # 特征工程
 
+目前的大多数机器学习任务，通常假设训练数据与测试数据共享一个特征空间。然而在实际场景中，训练好的模型通常需要与一个开放环境进行交互，测试集中就会出现新的特征。例如推荐系统中利用用户的年龄、职业等特征训练好了一个推荐模型，后来公司新发布了某个应用，收集到了新的用户数据，这就需要用新的用户特征进行决策。这就是所谓的**特征外推**。
+
+https://mp.weixin.qq.com/s/3c_IYocu3mEIALgYlV6vtw
+
+神经网络如何特征外推？上海交大NeurIPS21—面向开放环境特征外推的图学习解决方案
+
+---
+
 https://mp.weixin.qq.com/s/ibiElLIgrT3wYx3tDYMMTw
 
 理解特征工程
