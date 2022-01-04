@@ -165,6 +165,10 @@ https://mp.weixin.qq.com/s/aEkJ1HkhfzIhGv0EwFoy1A
 
 浅谈RSocket与响应式编程
 
+https://www.zhihu.com/question/466696410/answer/2219153613
+
+Tomcat为什么要JAVA破坏双亲委派机制？
+
 # Javascript参考资源+
 
 https://mp.weixin.qq.com/s/WS1hQN5SmK5uavT_0fbrkg

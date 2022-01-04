@@ -121,6 +121,10 @@ https://www.zhihu.com/question/406517759
 
 如何看待Linus Torvalds对AVX512的评价？
 
+https://zhuanlan.zhihu.com/p/449878214
+
+向量化引擎初探（一）
+
 ## Cache
 
 Cache本质上是一块小而快的存储设备和另一块大而慢的存储设备之间的协作关系。
