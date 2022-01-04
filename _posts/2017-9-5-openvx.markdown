@@ -147,6 +147,8 @@ https://github.com/KhronosGroup/Vulkan-Samples
 
 https://vulkan-tutorial.com/
 
+RHI：Render Hardware Interface
+
 参考：
 
 https://zhuanlan.zhihu.com/p/20712354

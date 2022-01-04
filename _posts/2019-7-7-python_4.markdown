@@ -311,6 +311,10 @@ https://juejin.cn/post/6944598601674784775
 
 ## pygame
 
+![](/images/img4/game.jpg)
+
+---
+
 pygame是一个python的游戏引擎。
 
 官网：

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenGL研究, GUI框架分析, uboot
+title:  OpenGL研究, GUI框架分析
 category: technology 
 ---
 
@@ -68,6 +68,20 @@ GLAD：Multi-Language GL/GLES/EGL/GLX/WGL Loader-Generator
 不过坦率的说，我对Direct X的了解，仅限于DirectDraw和DirectSound，基本上只够开发一些2D应用。
 
 去年底由于想实现一些特殊的Android特效，才接触到OpenGL。按照我的估计，今后随着移动应用越来越重要，OpenGL的应用前景要好于Direct X。而且这个要不了多久，估计也就是这两年的事情。特此备忘。
+
+## 概述
+
+![](/images/img4/RenderingPipeline.png)
+
+MVP：Model View project matrices
+
+VBO即vertex buffer object，顶点缓存对象负责实际数据的存储；而VAO即 vertex array object，记录数据的存储和如何使用的细节信息。
+
+## 参考
+
+https://blog.csdn.net/wangdingqiaoit/article/details/51318793
+
+OpenGL学习脚印: 绘制一个三角形
 
 # GUI框架分析
 
@@ -168,109 +182,3 @@ https://zhuanlan.zhihu.com/p/36588396
 https://blog.codingnow.com/2020/07/game_ui.html
 
 游戏UI模块的选择
-
-# uboot
-
-## 从uboot到Linux
-
-这里以uboot 2014年11月的主线代码为例分析从uboot到linux的全过程。之所以写这篇文章，是由于网上的资料多数都很陈旧，诸如start_armboot之类的函数在新的代码里根本找不到了。由于uboot支持的CPU以及Board非常的多，所以本文仅以Samsung exynos为例来介绍这个过程。
-
-从上电到uboot启动:
-
-1./arch/arm/cpu/armv7/start.S: reset——uboot的汇编入口
-
-2./arch/arm/lib/crt0.S: _main
-
-3./arch/arm/lib/board.c: board_init_f——初始化第一阶段
-
-4./arch/arm/lib/board.c: board_init_r——初始化第二阶段
-
-5./common/main.c: main_loop——uboot主循环
-
-uboot启动Linux
-
-1.uboot中有个bootd的命令选项,执行该命令会进入/common/cmd_bootm.c: do_bootd
-
-2.common/cli.c: run_command，传入bootcmd命令作为参数。
-
-3.common/cmd_bootm.c: do_bootm
-
-4.arch/arm/lib/bootm.c: do_bootm_linux
-
-5.arch/arm/lib/bootm.c: do_jump_linux——跳转到Linux内核的入口地址
-
-uImage格式是专为uboot开发的格式，主要解决了uboot和linux在嵌入式设备的存储上共存的问题。
-
-## uboot命令处理流程
-
-从main_loop到命令处理：
-
-1./common/main.c: main_loop
-
-2./common/cli.c: cli_loop
-
-3./common/cli_simple.c: cli_simple_loop
-
-4./common/cli.c: run_command_repeatable
-
-5./common/cli_simple.c: cli_simple_run_command
-
-6./common/cli_simple.c: cmd_process
-
-7./common/command.c: cmd_call
-
-上面的流程仅是主循环如何调用命令回调函数的过程。下面介绍一下命令是如何声明、存储和查询的。
-
-首先查看链接脚本，uboot使用的链接脚本文件名为u-boot.lds。根据cpu和board的不同，u-boot.lds也有所差异。例如Samsung exynos所用的u-boot.lds在arch\arm\cpu下。
-
-其中有个`.u_boot_list`段就是用来存储命令数据的。它的表述如下所示：
-
-```bash
-.u_boot_list : {
-		KEEP(*(SORT(.u_boot_list*)));
-	}
-```
-
-命令的声明，通常使用U_BOOT_CMD宏。这个宏最终展开为：
-
-```bash
-_type _u_boot_list_2_##_list##_2_##_name __aligned(4)		\
-		__attribute__((unused,				\
-		section(".u_boot_list_2_"#_list"_2_"#_name)))
-```
-
-这也就是`.u_boot_list*`的来历了。
-
-可以使用/common/command.c: find_cmd函数在命令列表中，根据名称查找命令数据。
-
-## 环境变量
-
-/common/cmd_nvedit.c: setenv--这个函数用于设置环境变量的值。它的原理是：
-
-1.首先在环境变量数组default_environment中，更改相应内容的值。
-
-2.然后调用saveenv，保存default_environment的值，到具体的硬件中。例如NAND设备的代码在/common/env_nand.c中。
-
-在linux内核层面也可以修改uboot的环境变量。通常的做法步骤如下：
-
-1.uboot代码中有个tools/env文件夹。编译改代码可以得到fw_printenv文件。编译的命令是：
-
-`make env`
-
-2.将fw_printenv放到linux系统的/usr/sbin路径下，并创建符号链接fw_setenv。此处的符号链接并不是可有可无的，这里有个编程小技巧：如何用同一个可执行文件执行不同的功能呢？
-
-除了最常用的使用参数区分的方法之外，还可以采用如下方法：
-
-`int main(int argc, char *argv[])`
-
-这是main函数的声明，其中argv是参数数组，而argv[0]是输入的命令本身，因此可以使用这个作为判断依据，来区分不同的用途。这时候符号链接也就派上用场了。
-
-## tftpsrv
-
-有些uboot提供了tftpsrv的功能，用于从网口传输文件（主要是烧写用的镜像文件）。
-
-该tftpsrv默认监听的ip地址保存在uboot的ip环境变量中。如果需要的话，可进行必要的修改并重启。
-
-客户端传输镜像文件时，需要采用二进制模式。命令如下：
-
-`tftp 10.3.9.161 -m binary -c put <file name>`

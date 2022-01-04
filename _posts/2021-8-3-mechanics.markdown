@@ -261,3 +261,7 @@ https://mp.weixin.qq.com/s/mOdJm812AbRDA0M-8odW3w
 https://www.zhihu.com/question/56689494
 
 如何正确评价美军二战时的谢尔曼坦克？
+
+https://zhuanlan.zhihu.com/p/451794381
+
+二战中敌我双方都给予很高评价的追猎者坦克歼击车

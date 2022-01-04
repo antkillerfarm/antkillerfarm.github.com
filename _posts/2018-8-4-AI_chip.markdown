@@ -170,6 +170,10 @@ https://mp.weixin.qq.com/s/cnHQSmM89Sp92gke_F9T2Q
 
 一窥Habana的推理和训练神经处理器
 
+https://zhuanlan.zhihu.com/p/84562992
+
+Goya from Habana Labs芯片与软件栈分析
+
 ## Qualcomm
 
 ![](/images/img4/Snapdragon_835.png)

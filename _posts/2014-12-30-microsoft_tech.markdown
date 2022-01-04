@@ -205,7 +205,7 @@ wxPython：Python首选的GUI库
 
 # WebGL
 
-WebGL可以看作是JavaScript+OpenGL ES，它为Web开发者使用显卡创建3D应用提供了方案。
+WebGL可以看作是JavaScript + OpenGL ES，它为Web开发者使用显卡创建3D应用提供了方案。
 
 类似的还有WebGPU = JS + Vulkan。
 
@@ -240,6 +240,12 @@ gl-matrix 3.0以后添加了名字空间glMatrix，所以老旧的代码可能�
 ## 其他库
 
 https://deck.gl/
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/68507311
+
+WebGL进阶——走进图形噪声
 
 # Machine Learning之Python篇+
 

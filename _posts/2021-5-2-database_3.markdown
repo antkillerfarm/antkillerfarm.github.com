@@ -268,6 +268,26 @@ https://mp.weixin.qq.com/s/thg9xOKI-GWfADF5tXh29A
 
 面试官：了解数据库连接池吗？
 
+# LevelDB
+
+LevelDB是一个持久化的key/value存储。作者是大名鼎鼎的Sanjay Ghemawat和Jeff Dean。
+
+代码：
+
+https://github.com/google/leveldb
+
+和它类似的还有LMDB。
+
+官网：
+
+https://www.openldap.org/
+
+参考：
+
+https://zhuanlan.zhihu.com/p/53299778
+
+既生Redis何生LevelDB？
+
 # Dubbo
 
 Dubbo是一个分布式服务框架，致力于提供高性能和透明化的RPC远程服务调用方案，是阿里巴巴SOA服务化治理方案的核心框架，每天为2,000+个服务提供3,000,000,000+次访问量支持，并被广泛应用于阿里巴巴集团的各成员站点。

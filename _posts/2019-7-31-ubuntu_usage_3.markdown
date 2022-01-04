@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Ubuntu使用技巧（三）, Linux镜像文件, diff&patch
+title:  Ubuntu使用技巧（三）, diff&patch
 category: linux 
 ---
 
@@ -259,64 +259,6 @@ GnuGo是一个著名的开源围棋软件，但是它只有文字界面。一般
 最近公司网络有问题，只好使用手机连接互联网，也就是所谓WLAN热点。
 
 除了Wifi之外，现在的手机还有USB网络共享的功能，该功能基于RNDIS（Remote NDIS）技术，实际上就是TCP/IP over USB，就是在USB设备上跑TCP/IP，让USB设备看上去像一块网卡。
-
-# Linux镜像文件
-
-## vmlinux
-
-这是源代码直接生成的镜像文件。以x86平台为例：
-
-arch\x86\kernel\vmlinux.lds.S--这是链接脚本的源代码，经过C语言的宏预处理之后会生成vmlinux.lds，使用这个脚本，链接即可得到vmlinux，其过程与普通应用程序并无太大区别，也就是个elf文件罢了。
-
-## image
-
-vmlinux使用objcopy处理之后，生成的不包含符号表的镜像文件。这是linux默认生成的结果。
-
-## zImage
-
-zImage = 使用gzip压缩后的image + GZip自解压代码。使用`make zImage`或者`make bzImage`创建。两者的区别是zImage只适用于大小在640KB以内的内核镜像。
-
-## uImage
-
-uImage = uImage header + zImage。使用uboot提供的mkimage工具创建。
-
-以上的这些镜像文件的关系可参见：
-
-http://www.cnblogs.com/armlinux/archive/2011/11/06/2396786.html
-
-http://www.linuxidc.com/Linux/2011-02/32096.htm
-
-## Flash镜像
-
-一般来说，一个完整的linux系统，不仅包括内核，还包括bootloader和若干分区。这些镜像文件散布，不利于批量生产的进行。这时就需要将之打包，并生成一个可直接用于生产烧写的Flash镜像。
-
-可使用mtd-utils库中的ubinize工具生成Flash镜像。
-
-mtd-utils的官网是：
-
-http://www.linux-mtd.infradead.org/
-
-安装方法：
-
-`sudo apt install mtd-utils`
-
-mtd-utils还可用于烧写分区。例如如下命令：
-
-`mtd write xyz.uimage linux`
-
-其中`xyz.uimage`是镜像文件名，`linux`是分区名称。
-
-参考：
-
-http://blog.csdn.net/andy205214/article/details/7390287
-
-利用mkfs.ubifs和ubinize两个工具制作UBI镜像
-
-从代码来查看板子的MTD分区方案，主要是搜索mtd_partition类型的使用定义。比如mini2440板子的分区方案可在mini2440_default_nand_part数组中查到。
-
-MTD(memory technology device):内存技术设备，是linux用于描述ROM，NAND，NOR等内存设备的子系统的抽象。
-
-除了MTD之外，常用的还有SPI Flash方案。
 
 # diff&patch
 

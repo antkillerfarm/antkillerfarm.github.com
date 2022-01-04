@@ -190,6 +190,12 @@ https://www.zhihu.com/question/441129390
 
 假如有某种力量使得世界上所有编译器都被删除了, 人类是否需要从打孔卡开始写第一个编译器?
 
+## Linker
+
+常见的Linker主要有：GNU的Gold、LLVM的LLD，以及最新的Mold。
+
+mold（A Modern Linker）大大改进了相关算法的并行性，因此性能要比前两者快得多。
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/372526494

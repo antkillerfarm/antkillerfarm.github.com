@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 计算机体系结构
+title: 计算机体系结构, GPU体系结构
 category: Chip 
 ---
 
@@ -169,7 +169,7 @@ https://mp.weixin.qq.com/s/hN8tZ7xCRttIc-3pXdqElQ
 
 中科院计算所牵头发布《专⽤数据处理器DPU技术白皮书》，94页pdf
 
-## GPU体系结构
+# GPU体系结构
 
 ![](/images/img4/SGI.png)
 
