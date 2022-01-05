@@ -245,6 +245,10 @@ https://mp.weixin.qq.com/s/HvOn8SZ2uPjekkDd4VB-9A
 
 一行代码从PDF提取Excel文件
 
+https://zhuanlan.zhihu.com/p/453513716
+
+大白话Benchmarking Chinese Text Recognition
+
 # AI可解释性
 
 XAI(Explainable Artificial Intelligence)

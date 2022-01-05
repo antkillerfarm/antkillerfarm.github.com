@@ -317,3 +317,11 @@ AI训练的最大障碍不是算力，而是“内存墙”
 https://mp.weixin.qq.com/s/MwZ9j1MIwRBrJK4iWKzRqQ
 
 芯故事：和AMD有渊源的那些AI创业公司
+
+https://zhuanlan.zhihu.com/p/446830540
+
+GPU架构（上）—AI芯片设计入门
+
+https://zhuanlan.zhihu.com/p/446837354
+
+GPU架构（下）—AI芯片设计入门

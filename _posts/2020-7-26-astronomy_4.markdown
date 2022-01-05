@@ -219,6 +219,8 @@ NASA的科学家开始没有意识到是望远镜的镜头质量问题，还在�
 
 后来相机工程师发现了是由于一个镜片零件生产误差造成的问题，花了3年时间在太空修复了这个问题，避免了重新发射，为NASA节省了47亿美元。科学家终于能拍到清晰的太空图像了。
 
+另一个已于2020年退役的太空红外望远镜斯皮策空间望远镜（Spitzer Space Telescope）覆盖波长为3-180微米，但其镜面直径仅为0.85米，观测能力有限。
+
 20年代三大空间巡天望远镜——载人空间站工程巡天空间望远镜（Chinese Survey Space Telescope, 简称CSST，亦被称为Chinese Space Station Telescope）、欧洲航天局的欧几里得（Euclid）和美国航天局的罗曼太空望远镜（Roman Space Telescope）。
 
 https://mp.weixin.qq.com/s/Wcd_bv_bt-xv42UD40dDww
@@ -262,6 +264,10 @@ https://view.inews.qq.com/wxn/20211225A0A9SJ00
 https://view.inews.qq.com/wxn/20211225A08N9G00
 
 “鸽王之王”韦伯终于上天！比哈勃看得更远，烧钱更多
+
+https://mp.weixin.qq.com/s/AIMccIbtB6W5nwu-6yRuJw
+
+“鸽王” 韦伯上天之前，你需要知道这些
 
 ---
 

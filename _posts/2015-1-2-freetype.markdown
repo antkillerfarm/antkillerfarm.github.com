@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  FreeType, FFmpeg, 图像处理软件
+title:  FreeType, 图像处理软件
 category: technology 
 ---
 
@@ -46,94 +46,6 @@ pitch指字模一行所占的字节数，在ft_render_mode_normal模式（即256
 ## 4.小尺寸字体
 
 并不是所有的矢量字库都包含小字体的，例如微软的宋体就不支持小于20*20的字模，所以，使用小尺寸字体时，必须仔细选择字库。
-
-# FFmpeg
-
-## 官网 & 安装
-
-http://www.ffmpeg.org/
-
-这是FFmpeg的官网。
-
-值得注意的是，在官网的下载页面默认下载的是源代码。对于不需要源代码的使用者来说，需要在左下角的“Get the Package”处，根据所用平台选择合适的安装包。
-
-安装包分为三类：
-
-1.Static。只有一个可以自解压的exe文件。
-
-2.Shared。相当于要用解压工具来解压的压缩文件。
-
-3.Dev。相关链接库的的头文件和链接文件。
-
-一般没有二次开发需要的话，下载Shared包是最佳的选择。
-
-## 工具的使用
-
-Fabrice Bellard是我崇拜的一位高人。他除了发明ffmpeg之外，还是Qemu和TinyCC的作者和圆周率计算记录的获得者（2009）。
-
-之前的想法，ffmpeg主要是一套编解码框架，其本身的功能有限，需要进行二次开发方可使用。没想到其实它自带的程序，功能已经相当强大了。
-
-安装包中包含三个命令行程序：
-
-1.ffmpeg。编解码工具。功能十分强大，使用它可以很轻松的改变视频文件格式或者压缩视频文件。不过也因为视频格式及编辑选项实在太多，以至于想给ffmpeg做一个好用且功能齐全的GUI外壳都不是件容易的事情。
-
-2.ffplay。播放工具。
-
-3.ffprobe。多媒体流分析工具。
-
-## 教程
-
-官方教程《FFmpeg Basics》，在CSDN可以下载到。但该书偏重于如何使用ffmpeg的命令行工具以及编解码的基本流程。对于ffmpeg源代码，以及如何使用ffmpeg做二次开发讲的很少。
-
-http://dranger.com/ffmpeg/
-
-这篇文章是使用ffmpeg做二次开发的入门手册，写的不错。
-
-## ffmpeg常见用法
-
-1.转换视频格式
-
-`ffmpeg -i src.avi des.mp4`
-
-2.转换视频的尺寸
-
-`ffmpeg -i src.mp4 -s 540x960 -acodec copy des.mp4`
-
-3.屏幕录像
-
-`ffmpeg -f alsa -ac 2 -i pulse -f x11grab -r 30 -s 1024x768 -i :0.0 -acodec pcm_s16le -vcodec libx264 -preset ultrafast -crf 0 -threads 0 output.mkv`
-
-4.多张图片生成视频
-
-`ffmpeg -r 30 -i out_%4d_xx.png out.mp4`
-
-这里的序号最好写成0000这样的形式，ffmpeg在这里的处理并不鲁棒。
-
-5.合并视频文件
-
-filelist.txt：
-
-```text
-file 'input1.mkv'
-file 'input2.mkv'
-file 'input3.mkv'
-```
-
-`ffmpeg -f concat -i filelist.txt -c copy output.mkv`
-
-参考：
-
-http://www.cnblogs.com/dwdxdy/p/3240167.html
-
-FFmpeg常用基本命令
-
-https://mp.weixin.qq.com/s/5S_NgjxoswrGcrQzBOyoYQ
-
-视频数据处理方法！关于开源软件FFmpeg视频抽帧的学习
-
-https://blog.csdn.net/u012587637/article/details/51670975
-
-使用ffmpeg合并视频文件的三种方法
 
 # 图像处理软件
 
