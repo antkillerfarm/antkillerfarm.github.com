@@ -161,6 +161,16 @@ Word转PDF：
 
 ## Others
 
+Adobe无疑是图像处理的王者，所以它家的产品线也有标杆价值，一般用“XX替代品”作为关键字搜索，就能得到你想要的东西。所以这里也列一下Adobe的产品。
+
+PS：全名Photoshop，大方向在平面设计、电商美工、摄影摄像等，大部分二维处理。
+
+PR：全名Premiere，主攻是视频、音频剪辑上，可进行一些基础动画、特效制作。
+
+AE：全名After Effects，方向于PR相似，但AE在特效制作上，效果更加强大。
+
+---
+
 Linux平台的绘图软件还有KolourPaint、mtPaint、MyPaint。
 
 ## Webp

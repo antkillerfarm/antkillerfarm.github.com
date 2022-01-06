@@ -127,6 +127,10 @@ https://mp.weixin.qq.com/s/OQ3KUAi6HMyOS8k3J_1e6g
 
 关于超长指令集VLIW的一些讨论
 
+https://www.zhihu.com/question/430177243
+
+CPU长指令(VLIW)失败的主要原因是什么，VLIW真的无药可救吗？
+
 https://mp.weixin.qq.com/s/Ud4f5L2tYNbP1oURVBszag
 
 俄罗斯自研Elbrus CPU参数曝光，CEO年近九旬仍未退休

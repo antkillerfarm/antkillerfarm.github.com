@@ -9,6 +9,38 @@ category: COVID19
 
 # 国外疫情（续）
 
+不丹将边境线全部划成了缓冲区，缓冲区里面又有两个口岸城市划成了高危区，无关居民全部回撤。
+
+高危区长期连续封城，足不出户的那种（8月31号刚刚解封）。
+
+入境隔离21+14（8月31号减为14+14），高危区到其他缓冲区再次隔离7天，缓冲区到内陆区又隔离7天。
+
+跨区流动需要提前申请，专车转运。
+
+---
+
+现在新冠有三种趋势，流动性（开放程度）带来的波峰波谷，免疫回退带来的波峰波谷（疫苗，自然免疫），变种带来的波峰波谷。这三种带来的趋势得分别看待，如果三种波峰波谷叠加就很可怕了。
+
+更可怕的是这几种趋势还TM是相辅相成的。流动性可以打穿疫苗防护，流动性可以催生变异，疫苗可以提供变异选择压，变异株出来之后又可以反过来增强流动和打穿疫苗防护……
+
+1918流感美国肯定不止死几十万，特朗普他爷爷就是那年没得，估计也是统计口径。
+
+---
+
+洛杉矶官方公布的检测量和阳性率，其实就是玩数据而已~
+
+因为现在的规矩是，看球赛/看表演/开趴梯全部需要提前做检测……
+
+而各位知道，病号是不会去看球赛/看表演/开趴梯的，
+
+所以这部分检测需求既推高了检测量，又摊低了阳性率。
+
+简直双赢，赢两次~
+
+这是在直接操纵先验概率，是站在贝叶斯大神的肩膀上玩弄咱们这些凡人。
+
+---
+
 https://mp.weixin.qq.com/s/lv-C9MDiW0SwNszDy54i0g
 
 突发！5名英国人间接感染新冠病毒，不在同一时空也躺枪！
@@ -246,49 +278,3 @@ https://www.zhihu.com/question/384168786
 https://www.zhihu.com/question/383152585
 
 如何看待近日美国雅培公司推出的5分钟快速检测的新冠病毒检测盒月产量可达500万份？
-
----
-
-3M公司的全称是明尼苏达矿务及制造业公司（Minnesota Mining and Manufacturing Company）。
-
-https://mp.weixin.qq.com/s/wE69bNC7DicO6kSWhsfq2A
-
-全球新冠确诊破200万，我们为什么比以往更需要3M？
-
-https://mp.weixin.qq.com/s/Fkcbb-4LC_NsVJHCM-zRWQ
-
-3M：世界上最不务正业公司——不只是口罩，好像哪里都离不开他！芯片制造也需要3M！
-
----
-
-https://mp.weixin.qq.com/s/IVmgIp-LC6JiqfyCfXBJhg
-
-口罩惊险史，听说内衣也可以“救急”？
-
-https://mp.weixin.qq.com/s/WoQyr__tUBJ6HQrj3lnZuw
-
-一图彻底了解怎么戴口罩！国家卫健委图解《不同人群预防新型冠状病毒感染口罩选择与使用技术指引》
-
-https://mp.weixin.qq.com/s/lekdAyT0woQGwSO-xDSAMA
-
-“疫不容辞” 这些电子厂“转型”口罩厂
-
-https://mp.weixin.qq.com/s/iC0p5jFbZfoFAPL82zJAkQ
-
-中国能生产多少口罩？解析从石油到医用口罩的制造流程
-
-https://cj.sina.com.cn/articles/view/1650111241/625ab30901900p4r1
-
-为什么口罩还是不好买？原来……
-
-https://mp.weixin.qq.com/s/2LMnpJtSvO0KEDZ3GBtrog
-
-为什么全国口罩日产量超1亿个，你却连1个都买不到？看完我惊了...
-
-https://mp.weixin.qq.com/s/pSYJizQDQP_T2-krWPGUoA
-
-疫情下的口罩“疯狂制造”：物料飚涨40倍, 3天回本“印钞机”
-
-https://mp.weixin.qq.com/s/AjSjXgrKug6XpfUhmQX0kA
-
-75天疫情产生260000吨医疗垃圾，去哪了？谁赚了？

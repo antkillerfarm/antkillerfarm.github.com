@@ -1,25 +1,45 @@
 ---
 layout: post
-title: 新冠肺炎（五）——国际援助, 知名患者, Gilead Sciences, 钟南山, 武汉病毒所, 疫情建模
+title: 新冠肺炎（五）——国际援助, 知名患者, 瘟疫公司, 钟南山, 武汉病毒所, 疫情建模
 category: COVID19 
 ---
 
 * toc
 {:toc}
 
-# 瘟疫公司（续）
+# 科研（续）
 
-https://zhuanlan.zhihu.com/p/298079109
+https://view.inews.qq.com/a/20200130A08EVN00
 
-现在，你可以在《瘟疫公司》里“拯救世界”了
+控制新发传染病，是以科研为主，还是以人民健康为主？公卫专家评武汉疫情
 
-https://zhuanlan.zhihu.com/p/293192687
+https://mp.weixin.qq.com/s/xcnKpCnWqwgNKMpDBQkuHA
 
-因为疫情爆火的《瘟疫公司》免费了，还新增了解药模式
+新冠病毒引起的嗅觉和味觉失灵是怎么回事？
 
-https://www.zhihu.com/question/21491731
+https://mp.weixin.qq.com/s/ZPrpnvNK43Y-_iObBu2c5Q
 
-游戏《瘟疫公司》Plague Inc这款游戏对现实世界有何启示？
+新冠病毒或将长期存在，我们该如何应对？
+
+https://mp.weixin.qq.com/s/AnN_NJR3T8yOtiMN9qWd7A
+
+石正丽：新冠病毒的祖先在哪？
+
+https://mp.weixin.qq.com/s/wO-mEfWMKJc1QucsI1i7VQ
+
+新冠病毒是怎么一步步摧毁人体的？最全后遗症曝光
+
+https://www.zhihu.com/question/475115456
+
+如何从免疫学角度解释疫苗不防感染但防重症的原理？
+
+https://www.zhihu.com/answer/2101865516
+
+新型冠状病毒肺炎可以自愈吗？
+
+https://mp.weixin.qq.com/s/EiUuZj00ml9aSP5HmhYiew
+
+疫情暴发前，新冠病毒到底身处何处？
 
 # 国际援助
 
@@ -124,45 +144,31 @@ https://view.inews.qq.com/a/20210831A0D9RP00
 
 日本女星绫濑遥感染新冠入院：曾三次阴性，一度白肺呼吸困难
 
-# Gilead Sciences
+# 瘟疫公司
 
-Gilead Sciences，1987年6月22日注册成立，是一家以研究为基础，从事药品的开发和销售的生物制药公司。主要重点领域包括人类免疫缺陷病毒（HIV）/艾滋病，肝脏疾病，如乙型肝炎和丙型肝炎和心血管/代谢和呼吸条件。
+![](/images/img4/Plague_Inc.jpg)
 
-https://www.huxiu.com/article/338515.html
+![](/images/img4/Plague_Inc.png)
 
-研发瑞德西韦的医药公司吉利德，真是抗毒传奇？
+https://zhuanlan.zhihu.com/p/103836857
 
-https://xueqiu.com/1913820214/140236918
+五年前的冠状病毒模组让《瘟疫公司》再度翻红，创作者是预言家？
 
-吉利德发家史：5次豪赌，从小药厂到世界巨头的30年蜕变！
+https://zhuanlan.zhihu.com/p/125727756
 
----
+《瘟疫公司》做错了吗？最贴近疫情的游戏被下架，被指存在违反国内法律内容
 
-Rem 人民 de 的 sivir 希望
+https://zhuanlan.zhihu.com/p/298079109
 
-https://mp.weixin.qq.com/s/aZLWs6VT-zfEMaBt_cRfzg
+现在，你可以在《瘟疫公司》里“拯救世界”了
 
-“人民的希望”跌落神坛，竟因中国的临床试验？
+https://zhuanlan.zhihu.com/p/293192687
 
----
+因为疫情爆火的《瘟疫公司》免费了，还新增了解药模式
 
-瑞德西韦（Remdesivir）、法匹拉韦（Favipiravir）、巴洛沙韦（Baloxavir）、洛匹那韦（lopinavir）、利托那韦（ritonavir）
+https://www.zhihu.com/question/21491731
 
-盘尼西林、阿莫西林、配尼西林、替卡西林、羧苄西林、匹美西林
-
-青霉素、庆大霉素、万古霉素
-
-https://mp.weixin.qq.com/s/8XlUuq6HoppIJbeR58LrnA
-
-想成为一个合格的药？选择姓什么很重要
-
-https://mp.weixin.qq.com/s/MzGbanGQA7fcgUWXeyD5jQ
-
-深入解读：抗击变异的新冠病毒，有哪些药可用？
-
-https://mp.weixin.qq.com/s/vZxEJjJGYjFhsxQfGJZoug
-
-关于辉瑞神药PAXLOVID的更多八卦
+游戏《瘟疫公司》Plague Inc这款游戏对现实世界有何启示？
 
 # 钟南山
 
