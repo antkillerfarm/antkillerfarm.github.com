@@ -73,11 +73,11 @@ def qnn_conv_pattern():
     return pattern
 ```
 
-一般来说IR会定的比较细粒度，而AI硬件更喜欢粗粒度的op。所以往往若干个IR op组合起来，才能得到一个AI硬件op。这时就需要进行模板匹配。
+通常IR会定的比较细粒度，而AI硬件更喜欢粗粒度的op。所以往往若干个IR op组合起来，才能得到一个AI硬件op。这时就需要进行模板匹配。
 
 一般来说，数据可以分为变量和常量（`is_constant()`），如果既可能是变量，也可能是常量的话，就用`wildcard()`匹配。
 
-MergeComposite会将这个模板打包成一个函数，变量会写为函数的参数，而常量放到全局的meta data里。
+MergeComposite会将这个模板打包成一个函数，其中的变量会写为该函数的参数，而其中的常量则被放到全局的meta data里。
 
 ## 添加Pass
 
@@ -170,7 +170,7 @@ python3 -m tvm.driver.tvmc compile ./mobilenet_v1_0.25_224_quant.tflite --target
 
 1. 注意`TARGET`的写法，这展示了如何将一个包含空格的字符串作为一个bash变量传递给命令行参数的做法。定义变量时的双引号和使用时的双引号都是必不可少的。
 
-2. 有些backend需要partation，将能执行的op分配到该设备上，因此`TARGET`也包含了两部分（用逗号分隔），其中第一部分用于partation。
+2. 有些backend需要partation，用来将可执行的op分配到该设备上，因此该`TARGET`包含了两部分（用逗号分隔），其中第一部分用于partation。
 
 相关代码在：
 
