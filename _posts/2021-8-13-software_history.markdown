@@ -350,3 +350,7 @@ https://zhuanlan.zhihu.com/p/432289008
 https://zhuanlan.zhihu.com/p/371499074
 
 OneFlow——让每一位算法工程师都有能力训练GPT
+
+https://www.zhihu.com/question/498271491
+
+为什么说大模型训练很难？

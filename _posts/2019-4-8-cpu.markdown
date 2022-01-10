@@ -35,6 +35,8 @@ category: Chip
 
 ![](/images/img3/IC_process_2.jpg)
 
+![](/images/img4/CPU.jpg)
+
 https://mp.weixin.qq.com/s/TmLSHVkeyqfU-9Jgir0czA
 
 摩尔定律究竟死没死

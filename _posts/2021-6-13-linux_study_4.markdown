@@ -442,3 +442,7 @@ https://mp.weixin.qq.com/s/FMYimnxcAya6bhvdGD5LUw
 https://zhuanlan.zhihu.com/p/424240082
 
 编译一个属于自己的最小Linux系统
+
+https://www.zhihu.com/question/66902460
+
+为什么Linux下要把创建进程分为fork()和exec()(一系列函数)两个函数来处理?

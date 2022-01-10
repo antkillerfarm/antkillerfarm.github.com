@@ -89,6 +89,12 @@ https://mp.weixin.qq.com/s/xWiRzBmK1JiGldMiq3BkTg
 
 伯克利一份简明《机器学习数学基础》丝滑入门手册，47页pdf
 
+---
+
+
+
+《Matrix Decomposition and Applications》
+
 ## 三角矩阵的求逆问题
 
 $$\begin{bmatrix}
