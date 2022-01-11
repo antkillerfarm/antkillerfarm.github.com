@@ -1,13 +1,93 @@
 ---
 layout: post
-title:  机器学习（十三）——机器学习中的矩阵方法（1）LU分解, QR分解
+title:  机器学习（十三）——协同过滤的ALS算法（1）
 category: ML 
 ---
 
 * toc
 {:toc}
 
-## 因子分析的EM估计（续）
+## 因子分析模型（续）
+
+把这些结果合在一起，可得：
+
+$$\begin{bmatrix} z \\ x \end{bmatrix}\sim N\left(\begin{bmatrix} \vec{0} \\ \mu \end{bmatrix},\begin{bmatrix} I & \Lambda^T \\ \Lambda & \Lambda \Lambda^T+\Psi \end{bmatrix}\right)\tag{1}$$
+
+从这个结论可以看出：$$x\sim N(\mu,\Lambda \Lambda^T+\Psi)$$
+
+因此它的对数似然函数为：
+
+$$\ell(\mu,\Lambda,\Psi)=\log\prod_{i=1}^m\frac{1}{(2\pi)^{n/2}\lvert\Lambda \Lambda^T+\Psi\rvert^{1/2}}\exp\left(-\frac{1}{2}(x^{(i)}-\mu)^T(\Lambda \Lambda^T+\Psi)^{-1}(x^{(i)}-\mu)\right)$$
+
+但这个函数是很难最大化的，需要使用EM算法解决之。
+
+## 因子分析的EM估计
+
+E-step比较简单。由《机器学习（十）》公式1、2和公式1，可得：
+
+$$\mu_{z^{(i)}\mid x^{(i)}}=\Lambda^T(\Lambda \Lambda^T+\Psi)^{-1}(x^{(i)}-\mu)$$
+
+$$\Sigma_{z^{(i)}\mid x^{(i)}}=I-\Lambda^T(\Lambda \Lambda^T+\Psi)^{-1}\Lambda$$
+
+因此：
+
+$$Q_i(z^{(i)})=\frac{1}{(2\pi)^{n/2}\lvert\Sigma_{z^{(i)}\mid x^{(i)}}\rvert^{1/2}}\exp\left(-\frac{1}{2}(x^{(i)}-\mu_{z^{(i)}\mid x^{(i)}})^T\Sigma_{z^{(i)}\mid x^{(i)}}^{-1}(x^{(i)}-\mu_{z^{(i)}\mid x^{(i)}})\right)$$
+
+M-step的最大化的目标是：
+
+$$\sum_{i=1}^m\int_{z^{(i)}}Q_i(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\mu,\Lambda,\Psi)}{Q_i(z^{(i)})}\mathrm{d}z^{(i)}$$
+
+下面我们重点求$$\Lambda$$的估计公式。
+
+首先将上式简化为:
+
+$$\begin{align}
+&\sum_{i=1}^m\int_{z^{(i)}}Q_i(z^{(i)})\log\frac{p(x^{(i)}\mid z^{(i)};\mu,\Lambda,\Psi)p(z^{(i)})}{Q_i(z^{(i)})}\mathrm{d}z^{(i)}
+\\&=\sum_{i=1}^m\int_{z^{(i)}}Q_i(z^{(i)})\left[\log p(x^{(i)}\mid z^{(i)};\mu,\Lambda,\Psi)+\log p(z^{(i)})-\log Q_i(z^{(i)})\right]\mathrm{d}z^{(i)}
+\\&=\sum_{i=1}^m E_{z^{(i)}\sim Q_i}\left[\log p(x^{(i)}\mid z^{(i)};\mu,\Lambda,\Psi)+\log p(z^{(i)})-\log Q_i(z^{(i)})\right]
+\end{align}$$
+
+去掉和各参数无关的部分后，可得：
+
+$$\begin{align}
+&\sum_{i=1}^mE\left[\log p(x^{(i)}\mid z^{(i)};\mu,\Lambda,\Psi)\right]
+\\&=\sum_{i=1}^mE\left[\frac{1}{(2\pi)^{n/2}\lvert\Psi\rvert^{1/2}}\exp\left(-\frac{1}{2}(x^{(i)}-\mu-\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu-\Lambda z^{(i)})\right)\right]
+\\&=\sum_{i=1}^mE\left[-\frac{1}{2}\log\lvert\Psi\rvert-\frac{n}{2}\log(2\pi)-\frac{1}{2}(x^{(i)}-\mu-\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu-\Lambda z^{(i)})\right]
+\end{align}$$
+
+去掉和$$\Lambda$$无关的部分，并求导可得：
+
+$$\nabla_\Lambda\sum_{i=1}^m-E\left[\frac{1}{2}(x^{(i)}-\mu-\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu-\Lambda z^{(i)})\right]\tag{2}$$
+
+因为公式2中$$E[\cdot]$$部分的结果实际上是个实数，因此该公式可变形为：
+
+$$\nabla_\Lambda\sum_{i=1}^m-E\left[\operatorname{tr}\left(\frac{1}{2}(x^{(i)}-\mu-\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu-\Lambda z^{(i)})\right)\right]$$
+
+而：
+
+$$\begin{align}
+&\frac{1}{2}(x^{(i)}-\mu-\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu-\Lambda z^{(i)})
+\\&=\frac{1}{2}\left[((x^{(i)}-\mu)^T-(\Lambda z^{(i)})^T)\Psi^{-1}((x^{(i)}-\mu)-\Lambda z^{(i)})\right]
+\\&=\frac{1}{2}\left[(x^{(i)}-\mu)^T\Psi^{-1}(x^{(i)}-\mu)-(x^{(i)}-\mu)^T\Psi^{-1}\Lambda z^{(i)}
+\\-(\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu)+(\Lambda z^{(i)})^T\Psi^{-1}\Lambda z^{(i)}\right]
+\end{align}$$
+
+去掉和$$\Lambda$$无关的部分，可得：
+
+$$\frac{1}{2}\left[(\Lambda z^{(i)})^T\Psi^{-1}\Lambda z^{(i)}-(x^{(i)}-\mu)^T\Psi^{-1}\Lambda z^{(i)}-(\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu)\right]$$
+
+所以：
+
+$$\begin{align}
+&\nabla_\Lambda\sum_{i=1}^m-E\left[\operatorname{tr}\left(\frac{1}{2}\left[(\Lambda z^{(i)})^T\Psi^{-1}\Lambda z^{(i)}-(x^{(i)}-\mu)^T\Psi^{-1}\Lambda z^{(i)}-(\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu)\right]\right)\right]
+\\&\begin{split}=\nabla_\Lambda\sum_{i=1}^m-E\left[\frac{1}{2}\operatorname{tr}\left((\Lambda z^{(i)})^T\Psi^{-1}\Lambda z^{(i)}\right)-\frac{1}{2}\operatorname{tr}\left((x^{(i)}-\mu)^T\Psi^{-1}\Lambda z^{(i)}\right)
+\\-\frac{1}{2}\operatorname{tr}\left((\Lambda z^{(i)})^T\Psi^{-1}(x^{(i)}-\mu)\right)\right]\end{split}
+\\&=\sum_{i=1}^m\nabla_\Lambda E\left[-\frac{1}{2}\operatorname{tr}\left(\Lambda^T \Psi^{-1}\Lambda z^{(i)}(z^{(i)})^T\right)+\operatorname{tr}\left(\Lambda^T \Psi^{-1}(x^{(i)}-\mu)(z^{(i)})^T\right)\right]\tag{3}
+\end{align}$$
+
+因为：
+
+$$\nabla_A\operatorname{tr}ABA^TC=CAB+C^TAB^T$$
 
 所以：
 
@@ -55,238 +135,86 @@ $$\mu=\frac{1}{m}\sum_{i=1}^mx^{(i)}$$
 $$\begin{split}\Phi=\frac{1}{m}\sum_{i=1}^m\left(x^{(i)}(x^{(i)})^T-x^{(i)}\mu_{z^{(i)}\mid x^{(i)}}^T\Lambda^T-\Lambda\mu_{z^{(i)}\mid x^{(i)}}(x^{(i)})^T
 \\+\Lambda\left(\mu_{z^{(i)}\mid x^{(i)}}\mu_{z^{(i)}\mid x^{(i)}}^T+\Sigma_{z^{(i)}\mid x^{(i)}}\right)\Lambda^T\right)\end{split}$$
 
-# 机器学习中的矩阵方法
+# 协同过滤的ALS算法
 
-在继续Andrew Ng的讲义之前，我们需要加强一些矩阵的相关知识。虽然Andrew Ng的讲义中已经包含了一个线性代数方面的简介文章，然而真的就只是简介而已，好多内容都没有。
+## 协同过滤概述
 
-这里推荐一本书《Matrix Methods in Data Mining and Pattern Recognition》。
+>注：最近研究商品推荐系统的算法，因此，Andrew Ng讲义的内容，后续再写。
 
->作者：Lars Eld´en，执教于Linköping University数学系。
+协同过滤是目前很多电商、社交网站的用户推荐系统的算法基础，也是目前工业界应用最广泛的机器学习领域。
 
-http://www.cnblogs.com/daniel-D/p/3204508.html
+协同过滤是利用集体智慧的一个典型方法。要理解什么是协同过滤 (Collaborative Filtering,简称CF)，首先想一个简单的问题，如果你现在想看个电影，但你不知道具体看哪部，你会怎么做？大部分的人会问问周围的朋友，看看最近有什么好看的电影推荐，而我们一般更倾向于从口味比较类似的朋友那里得到推荐。这就是协同过滤的核心思想。
 
-这是daniel-D写的中文笔记。
+如何找到相似的用户和物品呢？其实就是计算用户间以及物品间的相似度。以下是几种计算相似度的方法：
 
-这一部分的内容属于数值计算领域，涉及的概念虽然不复杂，但提出一个高效算法，仍然不是件容易的事情。
+### 欧氏距离
 
-还有另外一本书《Liner Algebra Done Right》，也值得推荐。这本书从定义矩阵算子，而不是通过行列式，来解释各种线性代数原理，提供了一种独特的视角。因为算子是有明确的几何或物理意义的，而行列式则不然。
+$$d(x,y)=\sqrt{\sum(x_i-y_i)^2},sim(x,y)=\frac{1}{1+d(x,y)}$$
 
->作者：Sheldon Jay Axler，1949年生，美国数学家。普林斯顿大学本科，UCB博士，MIT博士后，San Francisco State University教授。美国的数学系基本就是本科和博士，很少有硕士。因为数学，尤其是理论数学，需要高度的抽象思维能力，半调子的硕士，既不好找工作，也不好搞科研。
+### Cosine相似度
 
-《Linear Algebra Done Wrong》，这是布朗大学的Sergei Treil教授的著作，不知道书名是否有恶搞前书的意味...
+$$\cos(x,y)=\frac{\langle x,y\rangle}{\mid x\mid \mid y\mid }=\frac{\sum x_iy_i}{\sqrt{\sum x_i^2}~\sqrt{\sum y_i^2}}$$
 
-该书电子版：
+这里有一个实现上需要注意的地方：
 
-https://www.math.brown.edu/~treil/papers/LADW/LADW.html
+$$x^2$$不可以用`pow(x,2)`实现，因为这里的x有可能是负数。而负数的pow运算，计算机是不支持的。
 
----
+### 皮尔逊相关系数（Pearson product-moment correlation coefficient，PPMCC or PCC）：
 
-https://mp.weixin.qq.com/s/4NRkrkV_M2b_IpnpCTn05w
+$$\begin{align}
+p(x,y)&=\frac{cov(X,Y)}{\sigma_X\sigma_Y}=\frac{\operatorname{E}[XY]-\operatorname{E}[X]\operatorname{E}[Y]}{\sqrt{\operatorname{E}[X^2]-\operatorname{E}[X]^2}~\sqrt{\operatorname{E}[Y^2]- \operatorname{E}[Y]^2}}
+\\&=\frac{n\sum x_iy_i-\sum x_i\sum y_i}{\sqrt{n\sum x_i^2-(\sum x_i)^2}~\sqrt{n\sum y_i^2-(\sum y_i)^2}}
+\end{align}$$
 
-一图胜千言，这本交互式线代教科书让你分分钟理解复杂概念，佐治亚理工出品
+该系数由Karl Pearson发明。参见[《机器学习（二）》](/ml/2016/08/02/Machine_Learning_2.html#Pearson)中对Karl Pearson的简介。Fisher对该系数也有研究和贡献。
 
-https://mp.weixin.qq.com/s/xWiRzBmK1JiGldMiq3BkTg
+![](/images/article/pearson.png)
 
-伯克利一份简明《机器学习数学基础》丝滑入门手册，47页pdf
+如上图所示，Cosine相似度计算的是两个样本点和坐标原点之间的直线的夹角，而PCC计算的是两个样本点和数学期望点之间的直线的夹角。
 
----
-
-
-
-《Matrix Decomposition and Applications》
-
-## 三角矩阵的求逆问题
-
-$$\begin{bmatrix}
-l_{11} & 0 & 0 \\
-l_{21} & l_{22} & 0 \\
-l_{31} & l_{32} & l_{33} \\  
-\end{bmatrix}
-\begin{bmatrix}
-u_{11} & u_{12} & u_{13} \\
-0 & u_{22} & u_{23} \\
-0 & 0 & u_{33} \\  
-\end{bmatrix}
-$$
-
-以3阶方阵为例，上面左边的矩阵被称为下三角矩阵（lower triangular matrix），而右边的矩阵被称为上三角矩阵（upper triangular matrix）。
-
-对于矩阵求逆问题来说，下三角矩阵是一类比较简单的矩阵，求逆难度仅高于对角阵。
-
-下三角矩阵的逆矩阵也是下三角矩阵，因此：
-
-$$AA^{-1}=\begin{bmatrix}
-a_{11} & 0 & \dots & 0 \\
-a_{21} & a_{22} & \dots & 0 \\
-\dots & \dots & \dots & \dots \\
-a_{n1} & a_{n2} & \dots & a_{nn} \\  
-\end{bmatrix}
-\begin{bmatrix}
-b_{11} & 0 & \dots & 0 \\
-b_{21} & b_{22} & \dots & 0 \\
-\dots & \dots & \dots & \dots \\
-b_{n1} & b_{n2} & \dots & b_{nn} \\  
-\end{bmatrix}
-=\begin{bmatrix}
-1 & 0 & \dots & 0 \\
-0 & 1 & \dots & 0 \\
-\dots & \dots & \dots & \dots \\
-0 & 0 & \dots & 1 \\  
-\end{bmatrix}
-$$
-
-由矩阵乘法定义，可得：
-
-$$c_{ij}=\sum_{k=j}^ia_{ik}b_{kj}$$
-
-由$$c_{ij}=1,i=j$$，可得：$$b_{ii}=\frac{1}{a_{ii}}$$
-
-由$$c_{ij}=0,i\neq j$$，可得：
-
-$$c_{ij}=\sum_{k=j}^{i-1}a_{ik}b_{kj}+a_{ii}b_{ij}=0$$
-
-因此：
-
-$$b_{ij}=-\frac{1}{a_{ii}}\sum_{k=j}^{i-1}a_{ik}b_{kj}=-b_{ii}\sum_{k=j}^{i-1}a_{ik}b_{kj}$$
-
-上三角矩阵求逆，可通过转置转换成下三角矩阵求逆。这里会用到以下性质:
-
-$$(A^T)^{-1}=(A^{-1})^T$$
-
-## LU分解
-
-LU分解可将矩阵A分解为$$A=LU$$，其中L是下三角矩阵，U是上三角矩阵。
-
-LU分解的用途很多，其中之一是求逆：
-
-$$A^{-1}=(LU)^{-1}=U^{-1}L^{-1}$$
-
-LU分解有若干种算法，常见的包括Doolittle、Cholesky、Crout算法。
-
->注：Myrick Hascall Doolittlee，1830~1913。
-
->Andr´e-Louis Cholesky，1875~1918，法国数学家、工程师、军官。死于一战战场。Cholesky分解法又称平方根法，是当A为实对称正定矩阵时，LU三角分解法的变形。
-
->Prescott Durand Crout，1907~1984，美国数学家，22岁获MIT博士。
-
-这里只介绍一下Doolittle算法。
-
-$$A=\begin{bmatrix}
-a_{11} & a_{12} & \dots & a_{1n} \\
-a_{21} & a_{22} & \dots & a_{2n} \\
-\dots & \dots & \dots & \dots \\
-a_{n1} & a_{n2} & \dots & a_{nn} \\  
-\end{bmatrix}=LU=
-\begin{bmatrix}
-1 & 0 & \dots & 0 \\
-l_{21} & 1 & \dots & 0 \\
-\dots & \dots & \dots & \dots \\
-l_{n1} & l_{n2} & \dots & 1 \\  
-\end{bmatrix}
-\begin{bmatrix}
-u_{11} & u_{12} & \dots & u_{1n} \\
-0 & u_{22} & \dots & u_{2n} \\
-\dots & \dots & \dots & \dots \\
-0 & 0 & \dots & u_{nn} \\  
-\end{bmatrix}
-$$
-
-由矩阵乘法定义，可知：
-
-$$a_{1j}=u_{1j},j=1,2,\dots,n$$
-
-$$a_{ij}=\begin{cases}
-\sum_{t=1}^jl_{it}u_{tj}, & j<i \\
-\sum_{t=1}^{i-1}l_{it}u_{tj}+u_{ij}, & j\ge i \\
-\end{cases}$$
-
-因此：
-
->$$u_{1j}=a_{1j},j=1,2,\dots,n$$（U的第1行）   
->$$l_{j1}=a_{j1}/u_{11},j=1,2,\dots,n$$（L的第1列）   
->For $$i=2,3,\dots,n$$ do   
->>$$u_{ii}=a_{ii}-\sum_{t=1}^{i-1}l_{it}u_{tj}$$   
->>$$u_{ij}=a_{ij}-\sum_{t=1}^{i-1}l_{it}u_{tj}$$,for $$j=i+1,\dots,n$$（U的第i行）   
->>$$l_{ji}=\frac{a_{ji}-\sum_{t=1}^{i-1}l_{jt}u_{ti}}{u_{ii}}$$,for $$j=i+1,\dots,n$$（L的第i列）   
->
->End   
->$$u_{nn}=a_{nn}-\sum_{t=1}^{n-1}l_{nt}u_{tn}$$
+PCC能够有效解决，在协同过滤数据集中，不同用户评分尺度不一的问题。
 
 参见：
 
-http://www3.nd.edu/~zxu2/acms40390F11/Alg-LU-Crout.pdf
+https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient
 
-## QR分解
+https://mp.weixin.qq.com/s/RjpH7XD5SCMkrSdcmG394g
 
-任意实数方阵A，都能被分解为$$A=QR$$。这里的Q为正交单位阵，即$$Q^TQ=I$$。R是一个上三角矩阵。这种分解被称为QR分解。
+从PCC到MIC，一文教你如何计算变量之间的相关性
 
-QR分解也有若干种算法，常见的包括Gram–Schmidt、Householder和Givens算法。
+### Spearman秩相关系数（Spearman's rank correlation coefficient）
 
->注：Jørgen Pedersen Gram，1850～1916，丹麦数学家，在矩阵、数论、泛函等领域皆有贡献。他居然是被自行车撞死的...
+对秩变量（ranked variables）套用PCC公式，即可得Spearman秩相关系数。
 
->Erhard Schmidt，1876～1959，德国数学家，哥廷根大学博士，柏林大学教授。David Hilbert的学生。20世纪数学界的几位超级大神之一。1933年前的哥廷根大学数学系，秒杀其他所有学校。所谓“一流的学生去哥廷根，智商欠费才去藤校”。
+秩变量是一类不在乎值的具体大小，而只关心值的大小关系的统计量。
 
->Alston Scott Householder，1904～1993，美国数学家，芝加哥大学博士，田纳西大学教授。ACM主席。
+| $$X_i$$ | $$Y_i$$ | $$x_i$$ | $$y_i$$ | $$d_i$$ | $$d_i^2$$ |
+|:--:|:--:|:--:|
+| 86 | 0 | 1 | 1 | 0 | 0 |
+| 97 | 20 | 2 | 6 | -4 | 16 |
+| 99 | 28 | 3 | 8 | -5 | 25 |
+| 100 | 27 | 4 | 7 | -3 | 9 |
+| 101 | 50 | 5 | 10 | -5 | 25 |
+| 103 | 29 | 6 | 9 | -3 | 9 |
+| 106 | 7 | 7 | 3 | 4 | 16 |
+| 110 | 17 | 8 | 5 | 3 | 9 |
+| 112 | 6 | 9 | 2 | 7 | 49 |
+| 113 | 12 | 10 | 4 | 6 | 36 |
 
->James Wallace Givens, Jr.，1910～1993，美国数学家，普林斯顿大学博士，西北大学教授。参与UNIVAC I机器项目（1951年），这是最早的商用计算机。
+如上表所示，$$X_i$$和$$Y_i$$是原始的变量值，$$x_i$$和$$y_i$$是rank之后的值，$$d_i=x_i-y_i$$。
 
-这里只介绍Gram–Schmidt算法，这个算法虽然名为Gram–Schmidt，然而拉普拉斯和柯西早就已经用过了。
+当$$X_i$$和$$Y_i$$没有重复值的时候，也可用如下公式计算相关系数：
 
-首先介绍一下向量的投影运算的符号表示。
+$$r_s = {1- \frac {6 \sum d_i^2}{n(n^2 - 1)}}$$
 
-![](/images/article/Projection_and_rejection.png)
+>注：Charles Spearman，1863～1945，英国心理学家。这个人的经历比较独特，20岁从军，15年之后退役。然后，进入德国莱比锡大学读博，中间又被军队征召，参加了第二次布尔战争，因此，直到1906年才拿到博士学位。伦敦大学学院心理学教授。   
+>尽管他的学历和教职，都是心理学方面的。但他最大的贡献，却是在统计学领域。他也是因为在统计学方面的成就，得以当选皇家学会会员。   
+>话说那个时代的统计学大牛，除了Fisher之外，基本都是副业比主业强。只有Fisher，主业方面也是那么牛逼，不服不行啊。
 
-如上图所示，根据余弦定理和向量点乘的定义可得：
+![](/images/article/spearman.png)
 
-$$a\cdot b=\mid a\mid \mid b\mid \cos \theta$$
+由上图可见，Pearson系数关注的是两个变量之间的线性相关度，而Spearman系数可以应用到非线性或者难以量化的领域。
 
-因此，向量a在向量b上的投影向量$$a_1$$，可表示为：
+参见：
 
-$$a_1=\mid a\mid \cos \theta\hat b=\mid a\mid \frac{a\cdot b}{\mid a\mid \mid b\mid }\frac{b}{\mid b\mid }=\frac{a\cdot b}{\mid b\mid ^2}b=\frac{a\cdot b}{b\cdot b}b=\frac{\langle a,b\rangle}{\langle b,b\rangle}b$$
-
-特别的，当b为单位向量时：
-
-$$a_1=\langle a,b\rangle\tag{1}$$
-
-我们定义投影符号如下：
-
-$$\mathrm{proj}_{\mathbf{e}}\mathbf{a}
-= \frac{\left\langle\mathbf{e},\mathbf{a}\right\rangle}{\left\langle\mathbf{e},\mathbf{e}\right\rangle}\mathbf{e}$$
-
-令$$A=[\mathbf{a}_1, \cdots, \mathbf{a}_n]$$，其中$$a_i$$为列向量。则：
-
-$$\begin{align}
- \mathbf{u}_1 &= \mathbf{a}_1,
-  & \mathbf{e}_1 &= {\mathbf{u}_1 \over \|\mathbf{u}_1\|} \\
- \mathbf{u}_2 &= \mathbf{a}_2-\mathrm{proj}_{\mathbf{u}_1}\,\mathbf{a}_2,
-  & \mathbf{e}_2 &= {\mathbf{u}_2 \over \|\mathbf{u}_2\|} \\
- \mathbf{u}_3 &= \mathbf{a}_3-\mathrm{proj}_{\mathbf{u}_1}\,\mathbf{a}_3-\mathrm{proj}_{\mathbf{u}_2}\,\mathbf{a}_3,
-  & \mathbf{e}_3 &= {\mathbf{u}_3 \over \|\mathbf{u}_3\|} \\
- & \vdots &&\vdots \\
- \mathbf{u}_k &= \mathbf{a}_k-\sum_{j=1}^{k-1}\mathrm{proj}_{\mathbf{u}_j}\,\mathbf{a}_k,
-  &\mathbf{e}_k &= {\mathbf{u}_k\over\|\mathbf{u}_k\|}
-\end{align}$$
-
-即：
-
-$$\begin{align}
- \mathbf{a}_1 &= \langle\mathbf{e}_1,\mathbf{a}_1 \rangle \mathbf{e}_1  \\
- \mathbf{a}_2 &= \langle\mathbf{e}_1,\mathbf{a}_2 \rangle \mathbf{e}_1
-  + \langle\mathbf{e}_2,\mathbf{a}_2 \rangle \mathbf{e}_2 \\
- \mathbf{a}_3 &= \langle\mathbf{e}_1,\mathbf{a}_3 \rangle \mathbf{e}_1
-  + \langle\mathbf{e}_2,\mathbf{a}_3 \rangle \mathbf{e}_2
-  + \langle\mathbf{e}_3,\mathbf{a}_3 \rangle \mathbf{e}_3 \\
- &\vdots \\
- \mathbf{a}_k &= \sum_{j=1}^{k} \langle \mathbf{e}_j, \mathbf{a}_k \rangle \mathbf{e}_j
-\end{align}$$
-
-这个过程又被称为Gram–Schmidt正交化过程。
-
-因此：
-
-$$Q = \left[ \mathbf{e}_1, \cdots, \mathbf{e}_n\right] \qquad \text{and} \qquad
-R = \begin{bmatrix}
-\langle\mathbf{e}_1,\mathbf{a}_1\rangle & \langle\mathbf{e}_1,\mathbf{a}_2\rangle &  \langle\mathbf{e}_1,\mathbf{a}_3\rangle  & \ldots \\
-0 & \langle\mathbf{e}_2,\mathbf{a}_2\rangle &  \langle\mathbf{e}_2,\mathbf{a}_3\rangle  & \ldots \\
-0 & 0 & \langle\mathbf{e}_3,\mathbf{a}_3\rangle & \ldots \\
-\vdots & \vdots & \vdots & \ddots \end{bmatrix}$$
+https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient

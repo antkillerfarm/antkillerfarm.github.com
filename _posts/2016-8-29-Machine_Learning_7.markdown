@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（七）——学习理论
+title:  机器学习（七）——SVM（3）
 category: ML 
 ---
 
@@ -10,6 +10,67 @@ category: ML
 # SVM
 
 ## 序列最小优化方法（续）
+
+根据公式4可得：
+
+$$\alpha_1=\frac{(\zeta-\alpha_2y^{(2)})}{y^{(1)}}$$
+
+因为$$y^{(1)}$$的取值要么是1，要么是-1，即$$(y^{(1)})^2=1$$，同理，$$s^2=1$$。因此上式又可改写为：
+
+$$\begin{align}
+\alpha_1&=\frac{(\zeta-\alpha_2y^{(2)})}{y^{(1)}}=\frac{(\zeta-\alpha_2y^{(2)})(y^{(1)})^2}{y^{(1)}}=(\zeta-\alpha_2y^{(2)})y^{(1)}
+\\&=y^{(1)}\zeta-y^{(1)}y^{(2)}\alpha_2=\omega-s\alpha_2
+\end{align}$$
+
+其中$$\omega=y^{(1)}\zeta$$。
+
+将上式代入公式5可得：
+
+$$\begin{align}
+W(\alpha)&=\alpha_1+\alpha_2-\frac{1}{2}\alpha_1^2K_{11}-\frac{1}{2}\alpha_2^2K_{22}-s\alpha_1\alpha_2K_{12}-y^{(1)}\alpha_1v_1-y^{(2)}\alpha_2v_2+\psi_3
+\\&=(\omega-s\alpha_2)+\alpha_2-\frac{1}{2}(\omega-s\alpha_2)^2K_{11}-\frac{1}{2}\alpha_2^2K_{22}-s(\omega-s\alpha_2)\alpha_2K_{12}
+\\&\qquad-y^{(1)}(\omega-s\alpha_2)v_1-y^{(2)}\alpha_2v_2+\psi_3
+\\&=(\omega-s\alpha_2)+\alpha_2-\frac{1}{2}(\omega-s\alpha_2)^2K_{11}-\frac{1}{2}\alpha_2^2K_{22}-s\omega\alpha_2K_{12}+s^2\alpha_2^2K_{12}
+\\&\qquad-y^{(1)}(\omega-s\alpha_2)v_1-y^{(2)}\alpha_2v_2+\psi_3
+\\&=(\omega-s\alpha_2)+\alpha_2-\frac{1}{2}(\omega-s\alpha_2)^2K_{11}-\frac{1}{2}\alpha_2^2K_{22}-s\omega\alpha_2K_{12}+\alpha_2^2K_{12}
+\\&\qquad-y^{(1)}(\omega-s\alpha_2)v_1-y^{(2)}\alpha_2v_2+\psi_3
+\end{align}$$
+
+对上式求导可得：
+
+$$\begin{align}
+\frac{\mathrm{d}W(\alpha)}{\mathrm{d}\alpha_2}&=-s+1+s(\omega-s\alpha_2)K_{11}-\alpha_2K_{22}-s\omega K_{12}+2\alpha_2K_{12}+y^{(1)}sv_1-y^{(2)}v_2
+\\&=-s+1+s\omega K_{11}-\alpha_2K_{11}-\alpha_2K_{22}-s\omega K_{12}+2\alpha_2K_{12}+y^{(2)}v_1-y^{(2)}v_2=0
+\end{align}$$
+
+所以：
+
+$$\alpha_2(K_{11}+K_{22}-2K_{12})=s\omega(K_{11}-K_{12})+y^{(2)}(v_1-v_2)+1-s \tag{6}$$
+
+定义$$u=w^Tx+b$$，则根据《机器学习（四）》中的公式6，可得$$u_i=\sum_{j=1}^m\alpha_jy^{(j)}K(x^{(i)},x^{(j)})+b$$
+
+因为迭代前后约束条件3不变，所以：
+
+$$\alpha_1y^{(1)}+\alpha_2y^{(2)}=-\sum_{i=3}^m\alpha_iy^{(i)}=\alpha_1^*y^{(1)}+\alpha_2^*y^{(2)}$$
+
+$$\alpha_1+s\alpha_2=\omega=\alpha_1^*+s\alpha_2^* \tag{7}$$
+
+$$v_i=\sum_{j=3}^my^{(j)}\alpha_j^*K_{ij}=u_i-b^*-y^{(1)}\alpha_1^*K_{1i}-y^{(2)}\alpha_2^*K_{2i} \tag{8}$$
+
+$$\begin{align}
+v_1-v_2&=(u_1-b^*-y^{(1)}\alpha_1^*K_{11}-y^{(2)}\alpha_2^*K_{21})-(u_2-b^*-y^{(1)}\alpha_1^*K_{12}-y^{(2)}\alpha_2^*K_{22})
+\\&=u_1-u_2-y^{(1)}\alpha_1^*K_{11}-y^{(2)}\alpha_2^*K_{21}+y^{(1)}\alpha_1^*K_{12}+y^{(2)}\alpha_2^*K_{22}
+\end{align}$$
+
+$$\begin{align}
+y^{(2)}(v_1-v_2)+1-s&=y^{(2)}(u_1-u_2)-y^{(2)}y^{(1)}\alpha_1^*K_{11}-(y^{(2)})^2\alpha_2^*K_{21}+y^{(2)}y^{(1)}\alpha_1^*K_{12}
+\\&\qquad+(y^{(2)})^2\alpha_2^*K_{22}+(y^{(2)})^2-y^{(2)}y^{(1)}
+\\&=y^{(2)}(u_1-u_2)-s\alpha_1^*K_{11}-\alpha_2^*K_{21}+s\alpha_1^*K_{12}
+\\&\qquad+\alpha_2^*K_{22}+(y^{(2)})^2-y^{(2)}y^{(1)}
+\\&=y^{(2)}(u_1-u_2+y^{(2)}-y^{(1)})-s\alpha_1^*K_{11}-\alpha_2^*K_{21}+s\alpha_1^*K_{12}+\alpha_2^*K_{22}
+\end{align}$$
+
+这里的$$\alpha^*$$代表旧的迭代值，虽然它的含义和之前讨论KKT条件时的$$\alpha^*$$有所不同，但内涵是一致的——迭代值的极限是最优值，且迭代过程满足约束条件。其他变量也是类似的。
 
 将$$\omega$$、v代入公式6可得：
 
@@ -200,70 +261,3 @@ https://www.zhihu.com/question/31211585
 https://zhuanlan.zhihu.com/p/80714877
 
 SVM和LR区别和联系？
-
-# 学习理论
-
-## 偏差和方差
-
-![](/images/article/interpolation.png)
-
-回到之前的欠拟合与过拟合的例子。我们把预测值和实际值之间的误差称为泛化误差。注意：泛化误差不是拟合模型和训练样本值之间的差，后者通常被称作模型误差。
-
-偏差（bias）和方差（variance）都是泛化误差（generalization error）的组成部分。但遗憾的是，这两个名词至今也没有公认的严格定义，这里只做定性的描述，即：欠拟合的误差主要是偏差，而过拟合的误差主要是方差。
-
-![](/images/img3/Bias_Variance.png)
-
-## 学习理论的预备知识
-
-学习理论（learning theory）主要解决三大问题：
-
-1.偏差和方差的权衡。这实际上是模型选择的问题。如何才能自动确定模型的阶数呢？
-
-2.如何关联模型误差和泛化误差？
-
-3.如何确定我们的学习算法是有效的？
-
-首先介绍两个定理：
-
-**The union bound定理**：
-
-如果$$A_1,\dots,A_k$$是k个不同的事件，则：
-
-$$P(A_1\cup \dots\cup A_k)\le P(A_1)+\dots+P(A_k)$$
-
-**Hoeffding不等式**：
-
-$$Z_1,\dots,Z_m$$是m个独立且具有相同分布的随机变量（independent and identically distributed，IID）。如果它们满足Bernoulli($$\phi$$)分布，即$$P(Z_i=1)=\phi,P(Z_i=0)=1-\phi$$，则：
-
-$$P(\lvert\phi-\hat\phi\rvert>\gamma)\le 2\exp(-2\gamma^2m)$$
-
-其中，$$\hat\phi=(1/m)\sum_{i=1}^mZ_i$$，$$\gamma$$是大于0的任意常数。
-
-这个不等式是Wassily Hoeffding于1963年证明的。它表明样本数量越大，则随机变量的平均值越接近其数学期望值。
-
->注：Wassily Hoeffding，1914~1991，芬兰统计学家，柏林大学博士，无偏统计学（U-statistics）创始人。
-
-这个不等式在统计学领域也叫做Chernoff bound，但实际上是Herman Chernoff的朋友Herman Rubin发现的。他们的关系有点像苹果公司的那两个Steve，都是统计学领域的巨擘。
-
->注：Herman Chernoff，1923年生，美国数学家、物理学家，布朗大学博士，先后执教于MIT和哈佛。
-
->Herman Rubin，1926年生，美国数学家，21岁获得芝加哥大学的博士学位。现为普渡大学教授。   
->Herman Chernoff写过一篇文章回忆他和Herman Rubin的友谊，其中提到后者IQ 180，比他牛多了。其实，Herman Chernoff 24岁获得博士学位，也是妥妥的学霸级人物。
-
-以下假定y的取值为0或1，则：
-
-$$\hat\varepsilon(h)=\frac{1}{m}\sum_{i=1}^m1\{h(x^{(i)})\neq y^{(i)}\}$$
-
-$$\hat\varepsilon(h)$$被称作训练误差（training error），也叫做经验风险（empirical risk）或经验误差（empirical error），它表征的是在训练样本集上，预测函数误分类的比率。
-
-$$\varepsilon(h)=P^{(x,y)~\mathcal{D}}(h(x)\neq y)$$
-
-$$\varepsilon(h)$$表示泛化误差，$$(x,y)$$表示被预测的样本，$$\mathcal{D}$$表示样本所遵循的概率分布。
-
->注意：$$\hat\varepsilon(h)$$和$$\varepsilon(h)$$针对的样本集是不同的，后面定义的变量h和$$\hat h$$也遵循相同的约定。
-
-这里我们假设：训练数据和预测数据都具有相同的概率分布$$\mathcal{D}$$。这个假设是PAC理论的假设之一。
-
-PAC（Probably approximately correct）理论是Leslie Valiant于1984年提出的。这里的大部分讨论都和PAC有关。
-
->注：Leslie Valiant，1949年生，英国计算机科学家，华威大学博士。哈佛大学教授，英国皇家学会会员，图灵奖获得者（2010）。

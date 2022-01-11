@@ -263,32 +263,3 @@ $$\theta_j:=\theta_j+\alpha(y^{(i)}-h_{\theta}(x^{(i)}))x^{(i)}_j \tag{4}$$
 3.Mini-batch Gradient Descent，这种方法的行为和效果介于前两者之间。
 
 ![](/images/img4/SGD.png)
-
-一些研究认为大Batch训练有可能无法达到最小值。
-
-参考：
-
-https://mp.weixin.qq.com/s/7sS-r6jIF4GAhZicBfFGDA
-
-通过代码原理教你搞懂SGD随机梯度下降、BGD、MBGD
-
-https://www.graphcore.ai/posts/revisiting-small-batch-training-for-deep-neural-networks
-
-Revisiting Small Batch Training for Deep Neural Networks
-
-## 正规方程组算法
-
-正规方程组（Normal Equations）算法，是传统的以解方程的方式求最小值的方法。
-
-如果，令
-
-$$X=\begin{bmatrix}
-     (x^{(1)})^T \\ (x^{(2)})^T \\ \vdots \\ (x^{(m)})^T
-\end{bmatrix},
-\vec{y}=\begin{bmatrix}
-     (y^{(1)}) \\ (y^{(2)}) \\ \vdots \\ (y^{(m)})
-\end{bmatrix}$$
-
-则：
-
-$$\theta=(X^TX)^{-1}X^T\vec{y}$$

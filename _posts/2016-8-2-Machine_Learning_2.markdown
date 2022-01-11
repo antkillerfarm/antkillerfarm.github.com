@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二）——分类与逻辑回归, 广义线性模型
+title:  机器学习（二）——分类与逻辑回归
 category: ML 
 ---
 
@@ -9,7 +9,36 @@ category: ML
 
 # 线性回归
 
-## 正规方程组算法（续）
+## LMS算法（续）
+
+一些研究认为大Batch训练有可能无法达到最小值。
+
+参考：
+
+https://mp.weixin.qq.com/s/7sS-r6jIF4GAhZicBfFGDA
+
+通过代码原理教你搞懂SGD随机梯度下降、BGD、MBGD
+
+https://www.graphcore.ai/posts/revisiting-small-batch-training-for-deep-neural-networks
+
+Revisiting Small Batch Training for Deep Neural Networks
+
+## 正规方程组算法
+
+正规方程组（Normal Equations）算法，是传统的以解方程的方式求最小值的方法。
+
+如果，令
+
+$$X=\begin{bmatrix}
+     (x^{(1)})^T \\ (x^{(2)})^T \\ \vdots \\ (x^{(m)})^T
+\end{bmatrix},
+\vec{y}=\begin{bmatrix}
+     (y^{(1)}) \\ (y^{(2)}) \\ \vdots \\ (y^{(m)})
+\end{bmatrix}$$
+
+则：
+
+$$\theta=(X^TX)^{-1}X^T\vec{y}$$
 
 这种解方程的算法，实际上就是通常所说的最小二乘法（Least squares）。
 
@@ -230,34 +259,3 @@ $$\begin{align}& \eta=\mu \\& T(y)=y \\& a(\eta)=\frac{\mu^2}{2} \\& b(y)=\frac{
 
 除此之外，Dirichlet分布、Poisson分布、多项分布、$$\beta$$分布、$$\gamma$$分布都是指数类分布。
 
-# 广义线性模型
-
-广义线性模型（Generalized Linear Model，GLM）是解决指数类分布的回归问题的通用模型。
-
-它的建模过程如下：
-
-1.首先弄清楚y服从什么分布：
-
-$$y\mid x;\theta \sim ExponentialFamily(\eta) \tag{1}$$
-
-2.为参数$$\eta$$设置linear predictor：
-
-$$\eta=\theta^Tx \tag{2}$$
-
-公式2实际上就是通常意义上的线性模型，即simple linear model。
-
-3.寻找一个合适的link function，将Y的均值映射到linear predictor上，使得：
-
-$$g(h(x))=\eta \tag{3}$$
-
-其中，$$h(x)=E[T(y)\mid x]$$
-
-可见，上一节中的$$\eta$$实际上就是link function。
-
-从上一节的推导还可看出，simple linear model对应的是高斯分布，而其他分布则需要link function进行扩展，这也是广义线性模型得名的由来。
-
-下面以多项分布为例展示一下GLM的处理方法。
-
-$$y$$的取值为$$k$$个离散值的分布，被称为$$k$$项分布。显然$$k=2$$时，就是二项分布了。
-
-这里将$$k$$个离散值出现的概率记作$$\phi_1,\dots,\phi_k$$。由于$$\sum_{i=1}^k=1$$，因此，$$k$$项分布的自由度为$$k-1$$。

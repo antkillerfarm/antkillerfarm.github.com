@@ -1,13 +1,35 @@
 ---
 layout: post
-title:  机器学习（四）——SVM（1）
+title:  机器学习（四）——朴素贝叶斯方法
 category: ML 
 ---
 
 * toc
 {:toc}
 
-# 朴素贝叶斯方法（续）
+## 互不相容事件、独立事件与条件独立事件
+
+如果$$P(AB)=0$$，则事件A、B为互不相容事件。
+
+如果$$P(AB)=P(A)P(B)或P(A)=P(A\mid B)$$，则事件A、B为独立事件。
+
+如果$$P(AB\mid R)=P(A\mid R)P(B\mid R)$$，则事件A、B为条件R下的独立事件。
+
+可见，这三者是完全不同的数学概念，不要搞混了。
+
+# 朴素贝叶斯方法
+
+这里以文本分析（Text Classification）为例，讲解一下朴素贝叶斯（Naive Bayes）方法。
+
+文本分析的一个常用方法是根据词典建立特征向量x。x中的每个元素代表词典里的一个单词，如果该单词在文本中出现，则对应的元素值为1,否则为0。
+
+这里假设我们的目标是通过文本分析，判别一个email是否是垃圾邮件。$$y=1$$表示是垃圾邮件，$$y=0$$表示不是垃圾邮件。显然，在这里一封邮件就是一个样本集。
+
+相比之前的应用领域，文本分析的特殊之处在于词典中的单词数量十分庞大，从而导致x的维数巨大（比如50000个单词，就是50000维），以至于之前的方法，根本无法计算。
+
+为了简化问题，我们假设$$p(x_i\mid y)$$是条件独立的。这个假设被称为朴素贝叶斯假设（Naive Bayes (NB) assumption）。使用这个假设的算法被称为朴素贝叶斯分类器（Naive Bayes classifier）。
+
+从数学角度，NB假设是个很严格的条件，但是实际使用中，即使样本集不满足NB假设，使用NB方法的效果一般还是不错的。
 
 $$\begin{align}p(x_1,\dots,x_{50000}\mid y)&=p(x_1\mid y)p(x_2\mid y,x_1)p(x_3\mid y,x_1,x_2)\cdots p(x_{50000}\mid y,x_1,\dots,x_{49999})(条件概率的乘法公式)
 \\&=p(x_1\mid y)p(x_2\mid y)p(x_3\mid y)\cdots p(x_{50000}\mid y)(NB假设)=\prod_{i=1}^np(x_i\mid y)
@@ -183,52 +205,3 @@ $$\begin{align}
 1.$$h_i(w)=0$$代表的是约束条件为等式的情况。
 
 2.$$g_i(w)\le 0$$代表的是约束条件为不等式的情况。
-
-上述约束优化问题也被称为原始优化问题（primal optimization problem）。为了求解这个问题，我们定义广义拉格朗日（generalized Lagrangian）函数：
-
-$$\mathcal{L}(w,\alpha,\beta)=f(w)+\sum_{i=1}^k\alpha_ig_i(w)+\sum_{i=1}^l\beta_ih_i(w)$$
-
-利用这个函数可以将约束优化问题转化为无约束优化问题。其中的$$\alpha_i$$、$$\beta_i$$也被称作拉格朗日乘子（Lagrange multiplier）。
-
-$$\theta_\mathcal{P}(w)=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\mathcal{L}(w,\alpha,\beta)=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}f(w)+\sum_{i=1}^k\alpha_ig_i(w)+\sum_{i=1}^l\beta_ih_i(w)$$
-
-其中，$$\mathcal{P}$$代表原始优化问题，$$\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}$$表示在$$\alpha,\beta$$变化，而其他变量不变的情况下，求最大值。
-
-如果w不满足约束，也就是$$g_i(w)>0$$或$$h_i(w)\ne 0$$。这时由于$$\mathcal{L}$$函数是无约束函数，$$\alpha_i$$、$$\beta_i$$可以任意取值，因此$$\sum_{i=1}^k\alpha_ig_i(w)$$或$$\sum_{i=1}^l\beta_ih_i(w)$$并没有极值，也就是说$$\theta_\mathcal{P}(w)=\infty$$。
-
-反之,如果w满足约束，则$$\sum_{i=1}^k\alpha_ig_i(w)$$和$$\sum_{i=1}^l\beta_ih_i(w)$$都为0，因此$$\theta_\mathcal{P}(w)=f(w)$$。
-
-综上：
-
-$$\theta_\mathcal{P}(w)=\begin{cases}
-f(w), & w满足约束 \\
-\infty, & w不满足约束 \\
-\end{cases}$$
-
-我们定义：
-
-$$p^*=\underset{w}{\operatorname{min}}\theta_\mathcal{P}(w)=\underset{w}{\operatorname{min}}\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\mathcal{L}(w,\alpha,\beta)$$
-
-下面我们定义对偶函数：
-
-$$\theta_\mathcal{D}(w)=\underset{w}{\operatorname{min}}\mathcal{L}(w,\alpha,\beta)$$
-
-这里的$$\mathcal{D}$$代表原始优化问题的对偶优化问题。仿照原始优化问题定义如下：
-
-$$d^*=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\theta_\mathcal{D}(w)=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\underset{w}{\operatorname{min}}\mathcal{L}(w,\alpha,\beta)$$
-
-这里我们不加证明的给出如下公式：
-
-$$d^*=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\underset{w}{\operatorname{min}}\mathcal{L}(w,\alpha,\beta)\le\underset{w}{\operatorname{min}}\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\mathcal{L}(w,\alpha,\beta)=p^*$$
-
-这样的对偶问题被称作拉格朗日对偶（Lagrange duality）。
-
-参考：
-
-https://mp.weixin.qq.com/s/IhvdhEnyRI2DRns9EkCy5Q
-
-拉格朗日对偶理论
-
-https://www.zhihu.com/question/58584814
-
-如何通俗地讲解对偶问题？尤其是拉格朗日对偶lagrangian duality？

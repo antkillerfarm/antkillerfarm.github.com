@@ -1,13 +1,80 @@
 ---
 layout: post
-title:  机器学习（十）——高斯混合模型和EM算法
+title:  机器学习（十）——K-Means算法
 category: ML 
 ---
 
 * toc
 {:toc}
 
-# K-Means算法（续）
+## 贝叶斯统计和规则化ML（续）
+
+因为预测样本集和训练样本集的分布是独立的，因此上式又可写为：
+
+$$p(y\mid x,S)=\int_\theta p(y\mid x,\theta)p(\theta\mid S)\mathrm{d}\theta$$
+
+这个公式又被称作后验预测分布（Posterior predictive distribution）。
+
+$$p(\theta\mid S)$$可由前面的公式得到。
+
+假若我们要求期望值的话，那么套用求期望的公式即可：
+
+$$E[y\mid x,S]=\int_y yp(y\mid x,S)\mathrm{d}y$$
+
+由上可见，贝叶斯估计将$$\theta$$视为随机变量，$$\theta$$的值满足一定的分布，不是固定值，我们无法通过计算获得其值，只能在预测时计算积分。
+
+上述贝叶斯估计方法，虽然公式合理优美，但后验概率$$p(\theta\mid S)$$通常是很难计算的，因为它是$$\theta$$上的高维积分函数。
+
+观察$$p(\theta\mid S)$$的公式，在分母$$P(S)$$一定的情况下，分子越大则值越大，也就是$$p(\theta\mid S)$$的概率越大。
+
+因此，可得如下算法：
+
+$$\theta_{MAP}=\arg\max_\theta\left(\prod_{i=1}^mp(y^{(i)}\mid x^{(i)},\theta)\right)p(\theta)$$
+
+这个算法叫做最大后验概率估计（maximum a posteriori）。
+
+和ML相比，MAP算法只是在最后多了一项$$p(\theta)$$。通常使用中，我们认为$$p(\theta)$$符合$$\theta\sim N(0,\tau^2I)$$。
+
+由于$$p(\theta)$$实际上就是先验分布，它会对最后结果进行一定的修正。因此，实际上最大后验概率估计相对于最大似然估计来说，较容易克服过度拟合的问题。
+
+![](/images/article/MAP.png)
+
+参见：
+
+http://www.cs.cornell.edu/courses/cs5540/2010sp/lectures/Lec9.Estimation-continued.pdf
+
+Statistical Estimation: Least Squares, Maximum Likelihood and Maximum A Posteriori Estimators
+
+https://mp.weixin.qq.com/s/XnsbCb7H9jHmJ4dV9p2Oug
+
+频率学派还是贝叶斯学派？聊一聊机器学习中的MLE和MAP
+
+https://mp.weixin.qq.com/s/dQxN46wEbFrpvV369uOHdA
+
+详解最大后验概率估计（MAP）的理解
+
+# K-Means算法
+
+聚类算法属于无监督学习算法的一种。它的训练样本中只有$$x^{(i)}$$，而没有$$y^{(i)}$$。聚类的目的是找到每个样本x潜在的类别y，并将同类别y的样本x放在一起，形成一个聚类（clusters）。样本$$x^{(i)}$$所属的聚类用$$c^{(i)}$$表示。
+
+K-Means算法的步骤如下:
+
+>1.随机选取k个聚类质心点（cluster centroids）$$\mu_1,\dots,\mu_k$$   
+>2.重复下面过程直到收敛 {   
+>>对于每一个样例i，计算其应该属于的聚类：$$c^{(i)}:=\arg\min_j\|x^{(i)}-\mu_j\|^2$$   
+>>对于每一个聚类j，重新计算该聚类的质心：$$\mu_j:=\frac{\sum_{i=1}^m1\{c^{(i)}=j\}x^{(i)}}{\sum_{i=1}^m1\{c^{(i)}=j\}}$$。   
+>
+>}
+
+其中，k是我们事先定义的聚类个数。下图展示了对n个样本点进行K-means聚类的效果，这里k取2。
+
+![](/images/article/k-means.png)
+
+K-means算法面对的第一个问题是如何保证收敛。前面的算法中强调结束条件就是收敛，可以证明的是K-means完全可以保证收敛性。下面我们定性的描述一下收敛性，我们定义畸变函数（distortion function）如下：
+
+$$J(c,\mu)=\sum_{i=1}^m\|x^{(i)}-\mu_{c^{(i)}}\|^2$$
+
+J函数表示每个样本点到其质心的距离平方和。K-means算法的目的是要将J调整到最小。假设当前J没有达到最小值，那么首先可以固定每个类的质心$$\mu_j$$，调整每个样例的所属的类别$$c^{(i)}$$来让J函数减小，同样，固定$$c^{(i)}$$，调整每个类的质心$$\mu_j$$，也可以使J减小。 这两个过程就是内循环中使J单调递减的过程。当J递减到最小时，$$\mu$$和c也同时收敛。（在理论上，可以有多组不同的$$\mu$$和c值，能够使得J取得最小值，但这种现象实际上很少见。）
 
 由于畸变函数J是非凸函数，意味着我们不能保证算法取得的最小值是全局最小值，也就是说k-means对质心初始位置的选取比较敏感。但一般情况下k-means达到的局部最优已经满足需求。但如果你怕陷入局部最优，那么可以选取不同的初始值跑多遍k-means，然后取其中最小的J对应的$$\mu$$和c输出。
 
@@ -149,119 +216,3 @@ GMM算法结果也是局部最优解。对其他参数取不同的初始值进�
 ![](/images/img2/Clustering.jpg)
 
 ![](/images/img2/Clustering_2.jpg)
-
-## GMM与概率分布
-
-Andrew讲义在介绍GMM的时候，由于要和K-means做对比，因此主要介绍了GMM在聚类中的应用，但GMM的应用并不仅于此。
-
-我们知道函数有泰勒级数和傅立叶级数等展开方式，同样的**任意随机变量的概率分布，也可以展开为若干高斯分布的和**：
-
-$$p(x)=\sum_{m=1}^M c_m \mathcal{N}(x;\mu_m,\sigma_m^2)$$
-
-不难看出上式和上节的公式5是等价的。
-
-GMM的这种用法在语音识别领域用的较多，是GMM-HMM算法的核心思想之一。
-
-## 参考
-
-http://cseweb.ucsd.edu/~atsmith/project1_253.pdf
-
-Clustering With EM and K-Means
-
-https://mp.weixin.qq.com/s/wk3_wG1xSuMX1HjJeEgErQ
-
-kmeans聚类理论篇K的选择（轮廓系数）
-
-https://mp.weixin.qq.com/s/tLcF7_jjl3_FmjM7L1kcfw
-
-一文详解高斯混合模型原理
-
-https://mp.weixin.qq.com/s/RpEgTMRUM4GWhIdIPvkGTg
-
-优于VAE，为万能近似器高斯混合模型加入Wasserstein距离
-
-https://zhuanlan.zhihu.com/p/85338773
-
-高斯混合模型（GMM）推导及实现
-
-https://mp.weixin.qq.com/s/Uayd-KiXeoL5vBUyC1-oDQ
-
-小孩都看得懂的GMM
-
-# EM算法
-
-本节将进一步讨论EM算法的性质，并将之应用到使用latent random variables的一大类估计问题中。
-
-<a name="Jensen"/>
-
-## Jensen不等式
-
-首先我们给出凸函数的定义：
-
-设f是定义域为实数的函数，如果对于所有的实数x，$$f''(x)\ge 0$$，那么f是凸函数。当x是向量时，如果其Hessian矩阵H是半正定的（$$H\ge 0$$），那么f是凸函数。如果$$f''(x)>0$$或$$H>0$$，那么称f是严格凸函数。
-
-Jensen不等式表述如下:
-
-如果f是凸函数，X是随机变量，那么$$E[f(X)]\ge f(EX)$$。
-
-特别地，如果f是严格凸函数，那么$$E[f(X)]=f(EX)$$，当且仅当$$p(X=EX)=1$$。也就是说X是常量。
-
-在不引起误会的情况下，$$E[X]$$简写做$$EX$$。
-
-这个不等式的含义如下图所示：
-
-![](/images/article/Jensen.png)
-
-Jensen不等式应用于凹函数时，不等号方向反向，也就是$$E[f(X)]\le f(EX)$$
-
->注：Johan Ludwig William Valdemar Jensen，1859～1925，丹麦人。主业工程师，副业数学家。
-
-## EM算法的一般形式
-
-EM算法一般形式的似然函数为：
-
-$$\ell(\theta)=\sum_{i=1}^m\log p(x^{(i)};\theta)=\sum_{i=1}^m\log \sum_zp(x^{(i)},z^{(i)};\theta)\tag{1}$$
-
-根据这个公式直接求$$\theta$$一般比较困难，但是如果确定了z之后，求解就容易了。
-
-EM算法是一种解决存在隐含变量优化问题的有效方法。既然不能直接最大化$$\ell(\theta)$$，我们可以不断地建立$$\ell(\theta)$$的下界(E-Step),然后优化下界(M-Step)。
-
-这里首先假设$$z^{(i)}$$的分布为$$Q_i$$。显然：
-
-$$\sum_zQ_i(z)=1,Q_i(z)\ge 0$$
-
-$$\begin{align}
-\ell(\theta)&=\sum_{i=1}^m\log \sum_{z^{(i)}}p(x^{(i)},z^{(i)};\theta)
-\\&=\sum_{i=1}^m\log \sum_{z^{(i)}}Q_i(z^{(i)})\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}
-\\&\ge\sum_{i=1}^m\sum_{z^{(i)}}Q_i(z^{(i)})\log\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}\tag{2}
-\end{align}$$
-
-这里解释一下最后一步的不等式变换。
-
-首先，根据数学期望的定义公式：
-
-$$E[X]=\sum_{i=1}^nx_ip_i$$
-
-可知：
-
-$$\sum_{z^{(i)}}Q_i(z^{(i)})\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}=E\left[\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}\right]$$
-
-又因为$$f(x)=\log x$$是凹函数，根据Jensen不等式可得：
-
-$$f\left(E_{z^{(i)}\sim Q_i}\left[\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}\right]\right)\ge E_{z^{(i)}\sim Q_i}\left[f\left(\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}\right)\right]$$
-
-综上，公式2给出了$$\ell(\theta)$$的下界。对于$$Q_i$$的选择，有多种可能，那种更好的？
-
-假设$$\theta$$已经给定，那么$$\ell(\theta)$$的值就取决于$$Q_i(z^{(i)})$$和$$p(x^{(i)},z^{(i)})$$了。我们可以通过调整这两个概率，使下界不断上升，以逼近$$\ell(\theta)$$的真实值。当不等式变成等式时，下界达到最大值。
-
-由Jensen不等式相等的条件可知，$$\ell(\theta)$$的下界达到最大值的条件为：
-
-$$\frac{p(x^{(i)},z^{(i)};\theta)}{Q_i(z^{(i)})}=c$$
-
-其中c为常数。
-
-这实际上表明：
-
-$$Q_i(z^{(i)})\propto p(x^{(i)},z^{(i)};\theta)$$
-
-其中的$$\propto$$符号是两者成正比例的意思。

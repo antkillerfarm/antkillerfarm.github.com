@@ -1,13 +1,78 @@
 ---
 layout: post
-title:  机器学习（八）——规则化和模型选择
+title:  机器学习（八）——学习理论
 category: ML 
 ---
 
 * toc
 {:toc}
 
-## 学习理论的预备知识（续）
+# 学习理论
+
+## 偏差和方差
+
+![](/images/article/interpolation.png)
+
+回到之前的欠拟合与过拟合的例子。我们把预测值和实际值之间的误差称为泛化误差。注意：泛化误差不是拟合模型和训练样本值之间的差，后者通常被称作模型误差。
+
+偏差（bias）和方差（variance）都是泛化误差（generalization error）的组成部分。但遗憾的是，这两个名词至今也没有公认的严格定义，这里只做定性的描述，即：欠拟合的误差主要是偏差，而过拟合的误差主要是方差。
+
+![](/images/img3/Bias_Variance.png)
+
+## 学习理论的预备知识
+
+学习理论（learning theory）主要解决三大问题：
+
+1.偏差和方差的权衡。这实际上是模型选择的问题。如何才能自动确定模型的阶数呢？
+
+2.如何关联模型误差和泛化误差？
+
+3.如何确定我们的学习算法是有效的？
+
+首先介绍两个定理：
+
+**The union bound定理**：
+
+如果$$A_1,\dots,A_k$$是k个不同的事件，则：
+
+$$P(A_1\cup \dots\cup A_k)\le P(A_1)+\dots+P(A_k)$$
+
+**Hoeffding不等式**：
+
+$$Z_1,\dots,Z_m$$是m个独立且具有相同分布的随机变量（independent and identically distributed，IID）。如果它们满足Bernoulli($$\phi$$)分布，即$$P(Z_i=1)=\phi,P(Z_i=0)=1-\phi$$，则：
+
+$$P(\lvert\phi-\hat\phi\rvert>\gamma)\le 2\exp(-2\gamma^2m)$$
+
+其中，$$\hat\phi=(1/m)\sum_{i=1}^mZ_i$$，$$\gamma$$是大于0的任意常数。
+
+这个不等式是Wassily Hoeffding于1963年证明的。它表明样本数量越大，则随机变量的平均值越接近其数学期望值。
+
+>注：Wassily Hoeffding，1914~1991，芬兰统计学家，柏林大学博士，无偏统计学（U-statistics）创始人。
+
+这个不等式在统计学领域也叫做Chernoff bound，但实际上是Herman Chernoff的朋友Herman Rubin发现的。他们的关系有点像苹果公司的那两个Steve，都是统计学领域的巨擘。
+
+>注：Herman Chernoff，1923年生，美国数学家、物理学家，布朗大学博士，先后执教于MIT和哈佛。
+
+>Herman Rubin，1926年生，美国数学家，21岁获得芝加哥大学的博士学位。现为普渡大学教授。   
+>Herman Chernoff写过一篇文章回忆他和Herman Rubin的友谊，其中提到后者IQ 180，比他牛多了。其实，Herman Chernoff 24岁获得博士学位，也是妥妥的学霸级人物。
+
+以下假定y的取值为0或1，则：
+
+$$\hat\varepsilon(h)=\frac{1}{m}\sum_{i=1}^m1\{h(x^{(i)})\neq y^{(i)}\}$$
+
+$$\hat\varepsilon(h)$$被称作训练误差（training error），也叫做经验风险（empirical risk）或经验误差（empirical error），它表征的是在训练样本集上，预测函数误分类的比率。
+
+$$\varepsilon(h)=P^{(x,y)~\mathcal{D}}(h(x)\neq y)$$
+
+$$\varepsilon(h)$$表示泛化误差，$$(x,y)$$表示被预测的样本，$$\mathcal{D}$$表示样本所遵循的概率分布。
+
+>注意：$$\hat\varepsilon(h)$$和$$\varepsilon(h)$$针对的样本集是不同的，后面定义的变量h和$$\hat h$$也遵循相同的约定。
+
+这里我们假设：训练数据和预测数据都具有相同的概率分布$$\mathcal{D}$$。这个假设是PAC理论的假设之一。
+
+PAC（Probably approximately correct）理论是Leslie Valiant于1984年提出的。这里的大部分讨论都和PAC有关。
+
+>注：Leslie Valiant，1949年生，英国计算机科学家，华威大学博士。哈佛大学教授，英国皇家学会会员，图灵奖获得者（2010）。
 
 对于线性分类$$h_\theta(x)=1\{\theta^Tx\ge 0\}$$来说，寻找合适的参数$$\theta$$，还有另一种方法，即最小化训练误差，并令：
 
@@ -155,61 +220,3 @@ $$\varepsilon(\hat h)\le \varepsilon(h^*)+O\left(\sqrt{\frac{d}{m}\log\frac{m}{d
 $$m=O_{\gamma,\delta}(d)$$
 
 以上公式的其他条件，与$$\mathcal{H}$$为有限集时相同，这里不再赘述。
-
-# 规则化和模型选择
-
-对于多项回归模型$$h_\theta(x)=g(\theta_0+\theta_1x_1+\dots+\theta_kx_k)$$来说，如何选择合适的k值呢？
-
-或者，我们是选择局部权重回归（locally weighted regression），还是SVM呢？
-
-我们定义算法模型的集合为$$\mathcal{M}=\{M_1,\dots,M_d\}$$。其中的$$M_i$$为不同的算法模型，比如SVM、神经网络等等。
-
-## 交叉验证
-
-回想之前讨论的过拟合和ERM算法，如果我们针对多项回归模型使用ERM算法，几乎必然会选择高方差的高维多项回归模型，因为它的训练误差最小。但这显然不是个好选择。
-
-因此，我们改进算法如下：
-
->1.从全部的训练数据S中随机选择70%的样例作为训练集$$S_{train}$$，剩余的30%作为测试集$$S_{CV}$$。   
->2.在$$S_{train}$$上训练每一个$$M_i$$，得到预测函数$$h_i$$。   
->3.在$$S_{CV}$$上测试每一个$$h_i$$，得到相应的经验误差$$\hat\varepsilon_{S_{CV}}(h_i)$$。   
->4.选择具有最小$$\hat\varepsilon_{S_{CV}}(h_i)$$的$$h_i$$，作为最佳模型。
-
-这种方法被称为hold-out交叉验证（cross validation），或者称为简单（simple）交叉验证。
-
-由于$$S_{train}$$和$$S_{CV}$$是随机选取的，因此我们可以认为这里的经验误差$$\hat\varepsilon_{S_{CV}}(h_i)$$是$$h_i$$的泛化误差的一个很好的估计值。测试集一般占所有样本数的1/4~1/3，这里的30%是一个典型值。
-
-还可以对模型作改进，当选出最佳的模型$$M_i$$后，再在全部数据S上做一次训练，显然训练数据越多，模型参数越准确。
-
-简单交叉验证方法的缺点在于得到的最佳模型是在70%的训练数据上选出来的，不代表在全部训练数据上是最佳的。还有当训练数据本来就很少时，再分出测试集后，训练数据就太少了。
-
-我们对简单交叉验证方法再做一次改进，如下：
-
->1.将全部训练集S分成k个不相交的子集，假设S中的训练样例个数为m，那么每一个子集有m/k个训练样例，相应的子集称作$$\{S_1,\dots,S_k\}$$。   
->2.每次从模型集合$$\mathcal{M}$$中拿出来一个$$M_i$$，然后在S中选择出k-1个子集$$S_1\cup\dots\cup S_{j-1}\cup S_{j+1}\cup\dots\cup S_k$$，在这个集合上训练$$M_i$$得到预测函数$$h_{ij}$$。在$$S_j$$上测试$$h_{ij}$$，得到相应的经验误差$$\hat\varepsilon_{S_j}(h_{ij})$$。   
->3.使用$$\frac{1}{k}\sum_{j=1}^k\hat\varepsilon_{S_j}(h_{ij})$$作为$$M_i$$泛化误差的估计值。   
->4.选出泛化误差估计值最小的$$M_i$$，在S上重新训练，得到最终的预测函数$$h_i$$。
-
-这个方法被称为k-折叠（k-fold）交叉验证。一般来说k取值为10，这样训练数据稀疏时，基本上也能进行训练，缺点是训练和测试次数过多。
-
-![](/images/img3/k-fold.png)
-
-更极端的，如果$$k=m$$，则该方法又被称为leave-one-out交叉验证。
-
-参考：
-
-https://mp.weixin.qq.com/s/OmSxnVL6pYYzB9_jDV4Lqg
-
-模型评估方法基础总结
-
-https://mp.weixin.qq.com/s/lrNvC8EWcq6cT16FU8nUbQ
-
-5种常用的交叉验证技术，保证评估模型的稳定性
-
-https://mp.weixin.qq.com/s/B7jIE8W3jHT_YS4psLJZCw
-
-交叉验证和超参数调整:如何优化你的机器学习模型
-
-https://mp.weixin.qq.com/s/PQKVSUnNa1SUwWIxo38_lw
-
-8种交叉验证类型的深入解释和可视化介绍

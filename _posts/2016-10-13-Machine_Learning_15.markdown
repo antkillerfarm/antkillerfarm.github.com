@@ -1,300 +1,326 @@
 ---
 layout: post
-title:  机器学习（十五）——机器学习中的矩阵方法（3）病态矩阵
+title:  机器学习（十五）——决策树
 category: ML 
 ---
 
 * toc
 {:toc}
 
-## 正定矩阵
+# 协同过滤的ALS算法（续）
 
-positive definite matrix的定义：
+https://zhuanlan.zhihu.com/p/130314852
 
-一个n阶的实对称矩阵M是正定的的条件是当且仅当对于所有的非零实系数向量z，都有$$z^TMz>0$$。
+一文读懂协同推荐算法原理（上）
 
-正定矩阵A的性质：
+https://zhuanlan.zhihu.com/p/132396111
 
-1.正定矩阵的任一主子矩阵也是正定矩阵。
+一文读懂协同推荐算法原理（下）
 
-2.A的特征值和各阶顺序主子式全为正。
+https://mp.weixin.qq.com/s/z13iXMwJNzHfMCeXxYGRug
 
-3.若A为n阶正定矩阵，则A为n阶可逆矩阵。
+一文带你了解协同过滤的前世今生
 
-类似的还可以定义负定矩阵、半正定矩阵（非负定矩阵）。
+https://mp.weixin.qq.com/s/ianqpVVsks9NlMGYesWPIQ
+
+从原理到实践，万字长文解析矩阵分解推荐算法
+
+# 决策树
+
+Decision Tree讲的最好的，首推周志华的《机器学习》。这里只对要点进行备忘。
+
+当前样本集合D中，第k类样本所占的比例为$$p_k(k=1,2,\dots,\mid y\mid)$$，则D的信息熵（information entropy）定义为：
+
+$$Ent(D)=-\sum_{k=1}^{\mid y\mid }p_k\log_2p_k$$
+
+假定离散属性a有V个可能的取值，若使用a对D进行划分，则第v个分支结点包含了D中所有在a上取值$$a^v$$的样本，记为$$D^v$$。则信息增益（information gain）为：
+
+$$Gain(D,a)=Ent(D)-\sum_{v=1}^V\frac{\mid D^v\mid }{\mid D\mid }Ent(D^v)$$
+
+增益率（gain ratio）：
+
+$$Gain\_ratio(D,a)=\frac{Gain(D,a)}{IV(a)}$$
+
+其中
+
+$$IV(a)=-\sum_{v=1}^V\frac{\mid D^v\mid }{\mid D\mid }\log_2 \frac{\mid D^v\mid }{\mid D\mid }$$
+
+基尼值：
+
+$$Gini(D)=1-\sum_{k=1}^{\mid y\mid }p_k^2$$
+
+基尼指数：
+
+$$Gini\_index(D,a)=\sum_{v=1}^V\frac{\mid D^v\mid }{\mid D\mid }Gini(D^v)$$
+
+各种决策树和它的划分依据如下表所示：
+
+| 名称 | 划分依据 |
+|:--:|:--:|
+| ID3 | Gain |
+| C4.5 | Gain_ratio |
+| CART | Gini_index |
+
+决策树是一种可以将训练误差变为0的算法，只要每个样本对应一个叶子结点即可，然而这样做会导致过拟合。为了限制树的生长，我们可以加入阈值，当增益大于阈值时才让节点分裂。
 
 参考：
 
-https://zhuanlan.zhihu.com/p/44860862
+https://mp.weixin.qq.com/s/TTU9LMG8TuB1gzgfCfWjjw
 
-浅谈“正定矩阵”和“半正定矩阵”
+从香农熵到手推KL散度：一文带你纵览机器学习中的信息论
 
-## 向量的范数
+https://mp.weixin.qq.com/s/HZUDg8-39pF4E4wB1ZemOw
 
-范数（norm，也叫模）的定义比较抽象，这里我们使用闵可夫斯基距离，进行一个示意性的介绍。
+小孩都看得懂的基尼不纯度
 
-Minkowski distance的定义：
+## Lorenz curve
 
-$$d(x,y)=\sqrt[\lambda]{\sum_{i=1}^{n}\mid x_i-y_i\mid^{\lambda}}$$
+既然提到了基尼值，那么就再谈一下Lorenz curve吧。
 
->Hermann Minkowski（1864-1909），德国数学家，哥廷根大学数学教授，爱因斯坦的老师。
+>Max Otto Lorenz，1876～1959，美国经济学家。University of Wisconsin–Madison博士（1906）。美国统计学会会员。
 
-这里的$$\lambda$$就是范数。
+![](/images/img3/Lorenz_curve.png)
 
-范数可用符号$$\|x\|_\lambda$$表示。常用的有：
+上图就是Lorenz curve。它的横轴是人数（按照财富值从低到高排列），纵轴是财富数量。显然，从坐标原点到正方形相应另一个顶点的对角线为均等线，即收入分配绝对平等线，这一般是不存在的。实际收入分配曲线，即洛伦兹曲线都在均等线的右下方。
 
-$$\|x\|_1=\mid x_1\mid +\dots+\mid x_n\mid $$
+>Corrado Gini，1884～1965，意大利统计学家。意大利统计学会主席。政治方面支持法西斯统治，但反对排犹。
 
-$$\|x\|_2=\sqrt{x_1^2+\dots+x_n^2}$$
+Lorenz curve将右下方分为了A和B两部分，Gini据此提出了Gini coefficient：$$G=A/(A+B）$$。
 
-$$\|x\|_\infty=max(\mid x_1\mid ,\dots,\mid x_n\mid )$$
+显然，如果采用等（横轴）间距采样的话，Gini coefficient就等于上节提到的Gini(D)了。
 
-显然，当$$\lambda=2$$时，该距离为Euclid Distance。
+## GBDT
 
-![](/images/img2/Euclid.png)
+GBDT这个算法有很多名字，但都是同一个算法：
 
-当$$\lambda=1$$时，也被称为CityBlock Distance或Manhattan Distance（曼哈顿距离，以纽约曼哈顿地区的街道形状得名）。
+GBRT(Gradient Boost Regression Tree)渐进梯度回归树
 
-![](/images/img2/Manhattan.png)
+GBDT(Gradient Boost Decision Tree)渐进梯度决策树
 
-当$$\lambda=\infty$$时，叫做Chebyshev distance。
+MART(Multiple Additive Regression Tree)多决策回归树
 
-![](/images/img2/Chebyshev.png)
+Tree Net决策树网络
 
->Pafnuty Lvovich Chebyshev，1821～1894，俄罗斯数学家，莫斯科大学博士，圣彼得堡大学教授。俄罗斯数学的奠基人，他创建的圣彼得堡学派，是20世纪俄罗斯最主要的数学流派。
+GBDT属于集成学习（Ensemble Learning）的范畴。集成学习的思路是在对新的实例进行分类的时候，把若干个单个分类器集成起来，通过对多个分类器的分类结果进行某种组合来决定最终的分类，以取得比单个分类器更好的性能。
 
-这里不做解释的给出如下示意图：
+集成学习的算法主要分为两大类：
 
-![](/images/article/lp_ball.png)
+**并行算法**：若干个不同的分类器同时分类，选择票数多的分类结果。这类算法包括bagging和随机森林等。
 
-其中，L0范数表示向量中非0元素的个数。上图中的图形被称为$$l_p$$ ball。表征在同一范数条件下，具有相同距离的点的集合。
+**串行算法**：使用同种或不同的分类器，不断迭代。每次迭代的目标是缩小残差或者提高预测错误项的权重。这类算法包括Adaboost和GBDT等各种Boosting算法。
 
-范数满足如下不等式：
+这些Boosting算法的差异在于：
 
-$$\|A+B\|\le \|A\|+\|B\|(三角不等式)$$
+1）如何计算学习误差率e?
 
-向量范数推广可得到矩阵范数。某些矩阵范数满足如下公式：
+2) 如何得到弱学习器权重系数$$\alpha$$?
 
-$$\|A\cdot B\|\le \|A\|\cdot\|B\|$$
+3）如何更新样本权重D?
 
-这种范数被称为相容范数。
+4) 使用何种结合策略？
 
->注：矩阵范数要比向量范数复杂的多，还包含一些不可以由向量范数来诱导的范数，如Frobenius范数。而且只有极少数矩阵范数，可由简单表达式来表达。这里篇幅有限，不再赘述。
+只要是Boosting家族的算法，都要解决这4个问题。
 
->Ferdinand Georg Frobenius，1849～1917，德国数学家，哥廷根大学博士（1870）,University of Berlin和ETH Zurich教授。他在椭圆函数、微分方程、数论和群论等领域有杰出贡献。矩阵的秩就是他提出来的。
+GBDT写的比较好的，有以下blog：
 
-## 病态矩阵
+http://blog.csdn.net/w28971023/article/details/8240756
 
-现在有线性系统$$Ax = b$$：
+GBDT（MART）迭代决策树入门教程
 
-$$\begin{bmatrix} 400 & -201 \\-800 & 401 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}=\begin{bmatrix} 200 \\ -200 \end{bmatrix}$$
+摘录要点如下：
 
-很容易得到解为：$$x_1=-100,x_2=-200$$。如果在样本采集时存在一个微小的误差，比如，将 A矩阵的系数400改变成401：
+决策树分为两大类：
 
-$$\begin{bmatrix} 401 & -201 \\-800 & 401 \end{bmatrix}\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}=\begin{bmatrix} 200 \\ -200 \end{bmatrix}$$
+**回归树**：用于预测实数值，如明天的温度、用户的年龄、网页的相关程度。其结果加减是有意义的，如10岁+5岁-3岁=12岁。
 
-则得到一个截然不同的解：$$x_1=40000,x_2=79800$$。
+**分类树**：用于分类标签值，如晴天/阴天/雾/雨、用户性别、网页是否是垃圾页面。其结果加减无意义，如男+男+女=到底是男是女？
 
-当解集x对A和b的系数高度敏感，那么这样的方程组就是病态的 (ill-conditioned/ill-posed)。
+GBDT的核心在于**累加所有树的结果作为最终结果**。例如根到某叶子结点的路径上的决策值为10岁、5岁、-3岁，则该叶子的最终结果为10岁+5岁-3岁=12岁。
 
-从上例的情况来看，矩阵的行向量$$\begin{bmatrix} 400 & -201\end{bmatrix}$$和$$\begin{bmatrix} -800 & 401\end{bmatrix}$$实际上是过于线性相关了，从而导致矩阵已经接近奇异矩阵（near singular matrix）。
+所以**GBDT中的树都是回归树，不是分类树**。
 
-病态矩阵实际上就是奇异矩阵和近奇异矩阵的另一个说法。
+上面举的例子中，越靠近叶子，其决策值的绝对值越小。这不是偶然的。决策树的基本思路就是“分而治之”，自然越靠近根结点，其划分的粒度越粗。每划分一次，预测误差（即残差r）就小一点。
 
-参见：
+![](/images/img3/Boost.png)
 
-http://www.cnblogs.com/daniel-D/p/3219802.html
+我们将$$\{x^{(i)},r^{(i)}\}$$组成训练集，交给下一步的弱分类器，这样也就变相提高了下一步划分中预测错误项的权重。由于这个过程，在原理上和梯度下降类似，这也就是算法名称中Gradient的由来，尽管实际上我们并不需要求导计算Gradient。
 
-病态矩阵与条件数
-
-## 矩阵的条件数
-
-我们首先假设向量b受到扰动，导致解集x产生偏差，即：
-
-$$A(x+\Delta x)=b+\Delta b$$
-
-也就是：
-
-$$A\Delta x=\Delta b$$
-
-因此，由矩阵相容性可得：
-
-$$\|\Delta x\|\le \|A^{-1}\|\cdot\|\Delta b\|$$
-
-同时，由于：
-
-$$\|A\|\cdot\|x\|\ge\|b\|$$
-
-所以：
-
-$$\frac{\|\Delta x\|}{\|A\|\cdot\|x\|}\le \frac{\|A^{-1}\|\cdot\|\Delta b\|}{\|b\|}$$
-
-即：
-
-$$\frac{\|\Delta x\|}{\|x\|}\le \frac{\|A\|\cdot\|A^{-1}\|\cdot\|\Delta b\|}{\|b\|}$$
-
-我们定义矩阵的条件数$$K(A)=\|A\|\cdot\|A^{-1}\|$$，则上式可写为：
-
-$$\frac{\|\Delta x\|}{\|x\|}\le K(A)\frac{\|\Delta b\|}{\|b\|}$$
-
-同样的，我们针对A的扰动，所导致的x的偏差，也可得到类似的结论：
-
-$$\frac{\|\Delta x\|}{\|x+\Delta x\|}\le K(A)\frac{\|\Delta A\|}{\|A\|}$$
-
-可见，矩阵的条件数是描述输入扰动对输出结果影响的量度。显然，条件数越大，矩阵越病态。
-
-然而这个定义，在病态矩阵的条件下，并不能直接用于数值计算。因为浮点数所引入的微小的量化误差，也会导致求逆结果的很大误差。所以通常情况下，一般使用矩阵的特征值或奇异值来计算条件数。
-
-假设A是2阶方阵，它有两个单位特征向量$$x_1,x_2$$和相应的特征值$$\lambda_1,\lambda_2$$。
-
-由之前的讨论可知，$$x_1,x_2$$是相互正交的。因此，向量b能够被$$x_1,x_2$$的线性组合所表示，即：
-
-$$b=mx_1+nx_2=\frac{m}{\lambda_1}\lambda_1x_1+\frac{n}{\lambda_2}\lambda_2x_2=A(\frac{m}{\lambda_1}x_1+\frac{n}{\lambda_2}x_2)$$
-
-从这里可以看出，b在$$x_1,x_2$$上的扰动，所带来的影响，和特征值$$\lambda_1,\lambda_2$$有很密切的关系。奇异值实际上也有类似的特点。
-
-因此，一般情况下，条件数也可以由最大奇异值与最小奇异值之间的比值，或者最大特征值和最小特征值之间的比值来表示。这里的最大和最小，都是针对绝对值而言的。
-
-参见：
-
-https://en.wikipedia.org/wiki/Condition_number
-
-## 矩阵规则化
-
-病态矩阵处理方法有很多，这里只介绍矩阵规则化（regularization）方法。
-
-机器学习领域，经常用到各种损失函数（loss function）。这里我们用：
-
-$$\min_f \sum_{i=1}^nV(f(\hat x_i),\hat y_i)$$
-
-表示损失函数。
-
-当样本数远小于特征向量维数时，损失函数所表示的矩阵是一个稀疏矩阵，而且往往还是一个病态矩阵。这时，就需要引入规则化因子用以改善损失函数的稳定性：
-
-$$\min_f \sum_{i=1}^nV(f(\hat x_i),\hat y_i)+\lambda R(f)$$
-
-其中的$$\lambda$$表示规则化因子的权重。
-
->注：稀疏矩阵并不一定是病态矩阵，比如单位阵就不是病态的。但是从系统论的角度，高维空间中样本量的稀疏，的确会带来很大的不确定性。可类比下围棋，棋子过于稀疏的地方，只能称作势力范围，而不能称作实地。
-
-函数V（又叫做Fit measure）和R（又叫做Entropy measure），在不同的算法中，有不同的取值。
-
-比如，在Ridge regression问题中：
-
-$$\text{Fit measure}:\|Y-X\beta\|_2,\text{Entropy measure}:\|\beta\|_2$$
-
-Ridge regression问题中规则化方法，又被称为$$L_2$$ regularization，或Tikhonov regularization。
-
->注：Andrey Nikolayevich Tikhonov，1906~1993，苏联数学家和地球物理学家。大地电磁学的发明人之一。苏联科学院院士。著有《Solutions of Ill-posed problems》一书。
-
-更多的V和R取值参见：
-
-https://en.wikipedia.org/wiki/Regularization_(mathematics)
-
-从形式上来看，对比之前提到的拉格朗日函数，我们可以发现规则化因子，实际上就是给损失函数增加了一个约束条件。它的好处是增加了解向量的稳定度，缺点是增加了数值解和真实解之间的误差。
-
-为了更便于理解规则化，这里以二维向量空间为例，给出了规则化因子对损失函数的约束效应。
-
-![](/images/article/L1_vs_L2.png)
-
-上图中的圆圈是损失函数的等高线，坐标原点是规则化因子的约束中心，左图的方形和右图的圆形是$$l_p$$ ball。图中的黑点是等高线和$$l_p$$ ball的交点，实际上也就是这个带约束的优化问题的解。
-
-可以看出$$L_1$$ regularization的解一般出现在坐标轴上，因而其他坐标上的值就是0，因此，$$L_1$$ regularization会导致矩阵的稀疏。
-
-$$L_1$$ regularization又被称为Lasso（least absolute shrinkage and selection operator） regression。
-
-从贝叶斯统计的角度来看，规则化相当于增加了一个先验分布，比如$$L_2$$ regularization对应的贝叶斯先验分布是Gaussian distribution，而$$L_1$$ regularization对应的贝叶斯先验分布是Laplace distribution。
-
-除此之外，还有混合使用规则化的情况，比如：
-
-$$\min_f \sum_{i=1}^nV(f(\hat x_i),\hat y_i)+\lambda \|\beta\|_1 + \eta  \|\beta\|_2$$
-
-这种方法也被称为弹性网络回归（ElasticNet Regression）。
-
-规则化同时也提供了一种衡量特征重要度的方法：**loss函数的值，如果显著小于规则项，则说明该特征不太重要。**
+为了防止过拟合，GBDT还采用了Shrinkage（缩减）的思想，每次只走一小步来逐渐逼近结果，这样各个树的残差就是渐变的，而不是陡变的。
 
 参考：
 
-https://en.wikipedia.org/wiki/Tikhonov_regularization
+http://blog.csdn.net/u010691898/article/details/38292937
 
-http://www.mit.edu/~cuongng/Site/Publication_files/Tikhonov06.pdf
+阿里大数据比赛总结
 
-http://blog.csdn.net/zouxy09/article/details/24971995
+## Bagging和随机森林
 
-机器学习中的范数规则化之（一）L0、L1与L2范数
+Bagging主要是通过随机选择样本集，来改变各并行计算决策树的结果，从而达到并行计算的效果。这相当于通过加入样本的扰动，来提供泛化能力。
 
-https://mp.weixin.qq.com/s/pZko9gM5sbFhMl8P8TCFww
+随机森林除了样本扰动之外，还通过随机选择属性集，并从中选择一个最优属性划分的方式，进一步提升了模型的泛化能力。
 
-机器学习损失函数、L1-L2正则化的前世今生
+## 参考
 
-https://mp.weixin.qq.com/s/pNG8u8V7zp6fLFF9TomEug
+https://mp.weixin.qq.com/s/XnMXXFEBPXnEUk3jdMMoXA
 
-史上最全面的正则化技术总结与分析
+从决策树到随机森林：树型算法的原理与实现
 
-https://mp.weixin.qq.com/s/PMisvVy4EwEF-5xEY5LrwA
+https://mp.weixin.qq.com/s/NcBGYtgiWa0uY48wnFOoVg
 
-从损失函数的角度详解常见机器学习算法
+机器学习之决策树算法
 
-https://mp.weixin.qq.com/s/MRabAUZrfgD2t2GhnLI43Q
+https://mp.weixin.qq.com/s/DTDH2m21Gz1UQ2tW64kPZg
 
-开发者必读：计算机科学中的线性代数
+如何解读决策树和随机森林的内部工作机制？
 
-https://mp.weixin.qq.com/s/ctLe1UbvWqBJ8jh-ppU3rA
+https://mp.weixin.qq.com/s/LC41Mk7Sjm30qr1KXsZd8Q
 
-机器学习中的五种回归模型及其优缺点
+机器学习利器——决策树和随机森林！
 
-https://mp.weixin.qq.com/s/zzCRiSSyfTAFYSGMnr8zfg
+https://mp.weixin.qq.com/s/3yVosp2Kgp8cUyYWw_ULvw
 
-机器学习中L1和L2正则化的直观解释
+如何解读决策树和随机森林的内部工作机制？
 
-https://mp.weixin.qq.com/s/xwYldlEjJ9Co9uo8o0mlKQ
+https://mp.weixin.qq.com/s/hY5cEug3xEpkkPE1X0Ykvg
 
-深度学习之DNN的多种正则化方式
+GBDT详解
 
-https://mp.weixin.qq.com/s/-axtm6ZBm8yYneiA3mvQrw
+https://mp.weixin.qq.com/s/JU0H1cYIyWLgOkdBgra-eA
 
-SIGIR 2018大会最佳短论文：利用对抗学习的跨域正则化
+GBDT！深入浅出详解梯度提升决策树
 
-https://mp.weixin.qq.com/s/FtWA1rff13e7_FM0lJKCVg
+https://mp.weixin.qq.com/s/0CSAh9LtYj1wwCipCMGo9g
 
-Petuum提出新型正则化方法：非重叠促进型变量选择
+深入理解GBDT回归算法
 
-https://zhuanlan.zhihu.com/p/50142573
+https://mp.weixin.qq.com/s/KyvjI_2CLss_fzVFxPrE7A
 
-L1正则化引起稀疏解的多种解释
+Facebook经典模型LR+GBDT理论与实践
 
-https://blog.csdn.net/daunxx/article/details/51596877
+https://mp.weixin.qq.com/s/-AwJvJ_YQ7p_yo5TNHTOfw
 
-Lasso Regression
+决策树的python实现
 
-https://mp.weixin.qq.com/s/kFEwvgBC4-Y05vL3lmRbXQ
+https://mp.weixin.qq.com/s/PkUPGnsfCjiGPJpOmjACkA
 
-正则的一些intuition，一分钟发明新正则
+Bagging与随机森林
 
-https://mp.weixin.qq.com/s/oZZGBZLRoJVsY7M-CP5MRg
+https://mp.weixin.qq.com/s/XbrnhlxUbmK0JzQ4I_X2wQ
 
-矩阵L2,1/L2,p范数扫盲
+决策树之随机森林
 
-https://mp.weixin.qq.com/s/poSfjftItmHERs3MDgvjpw
+https://mp.weixin.qq.com/s/NY2E2c808WSacyj68TFInw
 
-机器学习防止模型过拟合的方法知识汇总
+决策树模型组合理解
 
-https://mp.weixin.qq.com/s/YPtGqUXnRQ2qswpBLsbM7g
+https://mp.weixin.qq.com/s/K2uh0J-BLj-eSriI1_mEjA
 
-Lasso和Ridge回归中的超参数调整技巧
+决策树分类和预测算法原理
 
-# Krylov subspace
+https://mp.weixin.qq.com/s/I5AXiHrN02zpyhF85Ze-jg
 
-Krylov subspace是一类针对大矩阵的近似计算的方法，由Aleksey Nikolaevich Krylov于1931年提出。
+从零开始学习Gradient Boosting算法
 
->Aleksey Nikolaevich Krylov，1863～1945，俄罗斯海军工程师、数学家、作家。
+https://mp.weixin.qq.com/s/6X27b97X_7OOOSijqAau9g
 
-参考：
+随机森林（Random Forest）
 
-https://blog.csdn.net/lizhengjiang/article/details/18794275
+https://zhuanlan.zhihu.com/p/179286622
 
-krylov子空间迭代法
+Random Forest可以用来做聚类吗？
 
-https://www.zhihu.com/question/23309010
+https://mp.weixin.qq.com/s/2EtQTsumOcHmYFjxOlPApQ
 
-如何使用Krylov方法求解矩阵的运算尤其是逆？
+决策树算法及实现
+
+https://mp.weixin.qq.com/s/epHGb0dq9mX6O4PGw3x8aA
+
+机器学习基础算法之随机森林
+
+https://mp.weixin.qq.com/s/EXOqekYaKpGHGSFOH_gxfA
+
+“神经网络”能否代替“决策树算法”？
+
+https://mp.weixin.qq.com/s/NoeGzkZJVbbYG-mP_HZ4qQ
+
+一文详解决策树算法模型
+
+https://mp.weixin.qq.com/s/NTgzCXvbdXDR4N5J5z9Xpw
+
+通俗解释随机森林算法
+
+https://mp.weixin.qq.com/s/F9jzF50910ZGupSZNNnHtQ
+
+机器学习实战之决策树
+
+https://mp.weixin.qq.com/s/rV4R-y2VYE8RJlClvQV5zQ
+
+决策树的理论与实践
+
+https://mp.weixin.qq.com/s/mhD1U_iJm7NNXCTRLLifkw
+
+Bagging与随机森林算法原理小结
+
+https://mp.weixin.qq.com/s/gKQw8saCgSW6JkyocHvKqg
+
+关于决策树的那些事
+
+https://mp.weixin.qq.com/s/nwd4zXy6hTjt6Hx9e7QMFg
+
+常用的模型集成方法介绍：bagging、boosting、stacking
+
+https://mp.weixin.qq.com/s/f8kVIBlqZxS_U8FdMTRGVw
+
+决策树算法原理（上）
+
+https://mp.weixin.qq.com/s/ku942npFMgXxOrm0Xam-Cg
+
+决策树算法原理（下）
+
+https://blog.csdn.net/CoderPai/article/details/90900707
+
+bagging方法
+
+https://blog.csdn.net/CoderPai/article/details/92018343
+
+随机森林的实现与解释
+
+https://mp.weixin.qq.com/s/jj3BtmnWRAwCS56ZU3ZXZA
+
+最常见核心的决策树算法—ID3、C4.5、CART
+
+https://mp.weixin.qq.com/s/vkbZweJ5oRo4IPt-3kg64g
+
+决策树算法十问及经典面试问题
+
+https://mp.weixin.qq.com/s/t2B5dg8uELNqSJcENHiwNA
+
+深入理解GBDT多分类算法
+
+https://mp.weixin.qq.com/s/Cdi0CcWDLgS6Kk7Kx71Vaw
+
+深入理解提升树（Boosting Tree）算法
+
+https://mp.weixin.qq.com/s/fsT6rzpL5cuzh2usNjzzbA
+
+一文学习模型融合！从加权融合到stacking, boosting
+
+https://mp.weixin.qq.com/s/lTAekav7kgcbF47Yk-LL-g
+
+最全！两万字带你完整掌握八大决策树！
+
+https://mp.weixin.qq.com/s/pJe3-XiMwaIQmSzwSgTqhA
+
+硬核拆解GBDT，带你入门机器学习
+
+https://mp.weixin.qq.com/s/e80sWpiXykKHnq6RaLGEyQ
+
+GBDT与LR的区别总结
+
+https://www.cnblogs.com/always-fight/p/9400346.html
+
+GBDT用于分类问题
+
+https://mp.weixin.qq.com/s/mHZBDY_uFfwVBvHgFXQuqw
+
+决策树是如何选择特征和分裂点？

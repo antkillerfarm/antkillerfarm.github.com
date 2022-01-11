@@ -7,24 +7,6 @@ category: ML
 * toc
 {:toc}
 
-# Adaboost（续）
-
-https://mp.weixin.qq.com/s/Joz2FpGgBY0tC8lpoFz8Mw
-
-AdaBoost元算法如何提高分类性能——机器学习实战
-
-https://mp.weixin.qq.com/s/MLEVUKse5usmKIWJF-yfOQ
-
-通俗易懂讲解自适应提升算法AdaBoost
-
-https://mp.weixin.qq.com/s/VuDAdeVsoZsTokh3n_wWFw
-
-一文详解机器学习中最好用的提升方法：Boosting与AdaBoost
-
-https://mp.weixin.qq.com/s/Jnh7yIOmzbTvWk77zh2-lA
-
-周志华：Boosting学习理论的探索——一个跨越30年的故事
-
 # XGBoost
 
 XGBoost是陈天奇于2014年提出的一套并行boost算法的工具库。

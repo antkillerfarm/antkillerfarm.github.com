@@ -1,257 +1,183 @@
 ---
 layout: post
-title:  机器学习（十六）——协同过滤的ALS算法
+title:  机器学习（十六）——Adaboost, EMD
 category: ML 
 ---
 
 * toc
 {:toc}
 
-# 协同过滤的ALS算法
+# Adaboost
 
-## 协同过滤概述
+Adaboost是Yoav Freund和Robert Schapire于1997年提出的算法。两人后来因为该算法被授予Gödel Prize（2003）。
 
->注：最近研究商品推荐系统的算法，因此，Andrew Ng讲义的内容，后续再写。
+>Yoav Freund，UCSC博士，UCSD教授。
 
-协同过滤是目前很多电商、社交网站的用户推荐系统的算法基础，也是目前工业界应用最广泛的机器学习领域。
+>Robert Elias Schapire，MIT博士。先后供职于Princeton University、AT&T Labs和Microsoft Research。
 
-协同过滤是利用集体智慧的一个典型方法。要理解什么是协同过滤 (Collaborative Filtering,简称CF)，首先想一个简单的问题，如果你现在想看个电影，但你不知道具体看哪部，你会怎么做？大部分的人会问问周围的朋友，看看最近有什么好看的电影推荐，而我们一般更倾向于从口味比较类似的朋友那里得到推荐。这就是协同过滤的核心思想。
+>Gödel Prize，由欧洲计算机学会（EATCS）与美国计算机学会基础理论专业组织（ACM SIGACT）于1993年共同设立，颁给理论计算机领域最杰出的学术论文。其名称取自Kurt Gödel。
 
-如何找到相似的用户和物品呢？其实就是计算用户间以及物品间的相似度。以下是几种计算相似度的方法：
+>Kurt Friedrich Gödel，1906～1978，奥地利逻辑学家，数学家，哲学家，后加入美国藉。维也纳大学博士（1930）。在逻辑学方面，他是继Aristotle、Gottlob Frege之后最伟大的逻辑学家。在数学方面，他以哥德尔不完备定理著称，和Bertrand Russell、 David Hilbert、Georg Cantor齐名。
 
-### 欧氏距离
+Adaboost既可用于分类问题，也可用于回归问题。这里仅针对二分类问题进行讨论。
 
-$$d(x,y)=\sqrt{\sum(x_i-y_i)^2},sim(x,y)=\frac{1}{1+d(x,y)}$$
+假设我们有数据集$$\{(x_1, y_1), \ldots, (x_N, y_N)\}$$，其中$$y_i \in \{-1, 1\}$$，还有一系列弱分类器$$\{k_1, \ldots, k_L\}$$。
 
-### Cosine相似度
+由于Boost算法是个串行算法，每次迭代就会加入一个弱分类器。这样m-1次迭代之后的分类器如下所示：
 
-$$\cos(x,y)=\frac{\langle x,y\rangle}{\mid x\mid \mid y\mid }=\frac{\sum x_iy_i}{\sqrt{\sum x_i^2}~\sqrt{\sum y_i^2}}$$
+$$C_{(m-1)}(x_i) = \alpha_1k_1(x_i) + \cdots + \alpha_{m-1}k_{m-1}(x_i)$$
 
-这里有一个实现上需要注意的地方：
+而m次迭代之后的分类器则为：
 
-$$x^2$$不可以用`pow(x,2)`实现，因为这里的x有可能是负数。而负数的pow运算，计算机是不支持的。
+$$C_{m}(x_i) = C_{(m-1)}(x_i) + \alpha_m k_m(x_i)$$
 
-### 皮尔逊相关系数（Pearson product-moment correlation coefficient，PPMCC or PCC）：
+如何选择新加入的弱分类器$$k_m$$和对应的权重$$\alpha_m$$呢？我们可以定义误差E如下所示：
 
-$$\begin{align}
-p(x,y)&=\frac{cov(X,Y)}{\sigma_X\sigma_Y}=\frac{\operatorname{E}[XY]-\operatorname{E}[X]\operatorname{E}[Y]}{\sqrt{\operatorname{E}[X^2]-\operatorname{E}[X]^2}~\sqrt{\operatorname{E}[Y^2]- \operatorname{E}[Y]^2}}
-\\&=\frac{n\sum x_iy_i-\sum x_i\sum y_i}{\sqrt{n\sum x_i^2-(\sum x_i)^2}~\sqrt{n\sum y_i^2-(\sum y_i)^2}}
-\end{align}$$
+$$E = \sum_{i=1}^N e^{-y_i C_m(x_i)}$$
 
-该系数由Karl Pearson发明。参见[《机器学习（二）》](/ml/2016/08/02/Machine_Learning_2.html#Pearson)中对Karl Pearson的简介。Fisher对该系数也有研究和贡献。
+令$$w_i^{(1)} = 1,w_i^{(m)} = e^{-y_i C_{m-1}(x_i)}$$，则：
 
-![](/images/article/pearson.png)
+$$E = \sum_{i=1}^N w_i^{(m)}e^{-y_i\alpha_m k_m(x_i)}$$
 
-如上图所示，Cosine相似度计算的是两个样本点和坐标原点之间的直线的夹角，而PCC计算的是两个样本点和数学期望点之间的直线的夹角。
+因为$$k_m$$分类正确时，$$y_i k_m(x_i) = 1$$，分类错误时，$$y_i k_m(x_i) = -1$$。所以：
 
-PCC能够有效解决，在协同过滤数据集中，不同用户评分尺度不一的问题。
+$$E = \sum_{y_i = k_m(x_i)} w_i^{(m)}e^{-\alpha_m} + \sum_{y_i \neq k_m(x_i)} w_i^{(m)}e^{\alpha_m}\\= \sum_{i=1}^N w_i^{(m)}e^{-\alpha_m} + \sum_{y_i \neq k_m(x_i)} w_i^{(m)}(e^{\alpha_m}-e^{-\alpha_m})$$
 
-参见：
+可以看出和$$k_m$$相关的实际上只有上式的右半部分。显然，使得$$\sum_{y_i \neq k_m(x_i)} w_i^{(m)}$$最小的$$k_m$$，也会令E最小，这也就是我们选择加入的$$k_m$$。
 
-https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient
+对E求导，得：
 
-https://mp.weixin.qq.com/s/RjpH7XD5SCMkrSdcmG394g
-
-从PCC到MIC，一文教你如何计算变量之间的相关性
-
-### Spearman秩相关系数（Spearman's rank correlation coefficient）
-
-对秩变量（ranked variables）套用PCC公式，即可得Spearman秩相关系数。
-
-秩变量是一类不在乎值的具体大小，而只关心值的大小关系的统计量。
-
-| $$X_i$$ | $$Y_i$$ | $$x_i$$ | $$y_i$$ | $$d_i$$ | $$d_i^2$$ |
-|:--:|:--:|:--:|
-| 86 | 0 | 1 | 1 | 0 | 0 |
-| 97 | 20 | 2 | 6 | -4 | 16 |
-| 99 | 28 | 3 | 8 | -5 | 25 |
-| 100 | 27 | 4 | 7 | -3 | 9 |
-| 101 | 50 | 5 | 10 | -5 | 25 |
-| 103 | 29 | 6 | 9 | -3 | 9 |
-| 106 | 7 | 7 | 3 | 4 | 16 |
-| 110 | 17 | 8 | 5 | 3 | 9 |
-| 112 | 6 | 9 | 2 | 7 | 49 |
-| 113 | 12 | 10 | 4 | 6 | 36 |
-
-如上表所示，$$X_i$$和$$Y_i$$是原始的变量值，$$x_i$$和$$y_i$$是rank之后的值，$$d_i=x_i-y_i$$。
-
-当$$X_i$$和$$Y_i$$没有重复值的时候，也可用如下公式计算相关系数：
-
-$$r_s = {1- \frac {6 \sum d_i^2}{n(n^2 - 1)}}$$
-
->注：Charles Spearman，1863～1945，英国心理学家。这个人的经历比较独特，20岁从军，15年之后退役。然后，进入德国莱比锡大学读博，中间又被军队征召，参加了第二次布尔战争，因此，直到1906年才拿到博士学位。伦敦大学学院心理学教授。   
->尽管他的学历和教职，都是心理学方面的。但他最大的贡献，却是在统计学领域。他也是因为在统计学方面的成就，得以当选皇家学会会员。   
->话说那个时代的统计学大牛，除了Fisher之外，基本都是副业比主业强。只有Fisher，主业方面也是那么牛逼，不服不行啊。
-
-![](/images/article/spearman.png)
-
-由上图可见，Pearson系数关注的是两个变量之间的线性相关度，而Spearman系数可以应用到非线性或者难以量化的领域。
-
-参见：
-
-https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient
-
-### Kendall秩相关系数（Kendall rank correlation coefficient）
-
-对于秩变量对$$(x_i,y_i),(x_j,y_j)$$：
-
-$$(x_i-x_j)(y_i-y_j)\begin{cases}
->0, & \text{concordant} \\
-=0, & \text{neither concordant nor discordant} \\
-<0, & \text{discordant} \\
-\end{cases}$$
-
-$$\tau = \frac{(\text{number of concordant pairs}) - (\text{number of discordant pairs})}{n (n-1) /2}$$
-
->注：Sir Maurice George Kendall，1907~1983，英国统计学家。这个人职业生涯的大部分时间都是一个公务员，二战期间出任英国船运协会副总经理。1949年以后担任伦敦大学教授。
-
-参见：
-
-https://en.wikipedia.org/wiki/Kendall_rank_correlation_coefficient
-
-### Tanimoto系数
-
-$$T(x,y)=\frac{\mid X\cap Y\mid }{\mid X\cup Y\mid }=\frac{\mid X\cap Y\mid }{\mid X\mid +\mid Y\mid -\mid X\cap Y\mid }=\frac{\sum x_iy_i}{\sqrt{\sum x_i^2}+\sqrt{\sum y_i^2}-\sum x_iy_i}$$
-
-该系数由Taffee T. Tanimoto于1960年提出。Tanimoto生平不详，从名字来看，应该是个日本人。在其他领域，它还有另一个名字Jaccard similarity coefficient。（两者的系数公式一致，但距离公式略有差异。）
-
-如果向量的每个维度取值是二值（0或1），那么Tanimoto系数就等同Jaccard距离。
-
->注：Paul Jaccard，1868～1944，苏黎世联邦理工学院（ETH Zurich）博士，苏黎世联邦理工学院植物学教授。ETH Zurich可是出了24个诺贝尔奖得主的。
-
-参见：
-
-https://en.wikipedia.org/wiki/Jaccard_index
-
-https://www.cnblogs.com/daniel-D/p/3244718.html
-
-漫谈：机器学习中距离和相似性度量方法
-
-https://mp.weixin.qq.com/s/rrIdxEEwFJMWbvbhn_DYDw
-
-协同过滤算法分布式实现
-
-https://zhuanlan.zhihu.com/p/138107999
-
-常见的距离算法和相似度计算方法
-
-https://mp.weixin.qq.com/s/OpBKbF1UHEAuosXjNDKqOA
-
-机器学习距离与相似度计算
-
-https://mp.weixin.qq.com/s/cYfbZtFFd9jvnN4p8T20UQ
-
-9个数据科学中常见距离度量总结以及优缺点概述
-
-## ALS算法原理
-
-http://www.cnblogs.com/luchen927/archive/2012/02/01/2325360.html
-
-机器学习相关——协同过滤
-
-https://mp.weixin.qq.com/s/Xgg61ICqkUo9ovdEV7G8Cw
-
-推荐算法综述
-
-https://mp.weixin.qq.com/s/lBj0Z9vY9FcEFQnk0VrdOw
-
-协同过滤推荐算法
-
-上面的网页概括了ALS算法出现之前的协同过滤算法的概况。
-
-ALS算法是2008年以来，用的比较多的协同过滤算法。它已经集成到Spark的Mllib库中，使用起来比较方便。
-
-从协同过滤的分类来说，ALS算法属于User-Item CF，也叫做混合CF。它同时考虑了User和Item两个方面。
-
-用户和商品的关系，可以抽象为如下的三元组：<User,Item,Rating>。其中，Rating是用户对商品的评分，表征用户对该商品的喜好程度。
-
-假设我们有一批用户数据，其中包含m个User和n个Item，则我们定义Rating矩阵$$R_{m\times n}$$，其中的元素$$r_{ui}$$表示第u个User对第i个Item的评分。
-
-在实际使用中，由于n和m的数量都十分巨大，因此R矩阵的规模很容易就会突破1亿项。这时候，传统的矩阵分解方法对于这么大的数据量已经是很难处理了。
-
-另一方面，一个用户也不可能给所有商品评分，因此，R矩阵注定是个稀疏矩阵。矩阵中所缺失的评分，又叫做missing item。
-
-![](/images/article/ALS.png)
-
-针对这样的特点，我们可以假设用户和商品之间存在若干关联维度（比如用户年龄、性别、受教育程度和商品的外观、价格等），我们只需要将R矩阵投射到这些维度上即可。这个投射的数学表示是：
-
-$$R_{m\times n}\approx X_{m\times k}Y_{n\times k}^T\tag{1}$$
-
-这里的$$\approx$$表明这个投射只是一个近似的空间变换。
-
-不懂这个空间变换的同学，可参见[《机器学习（十四）》](/ml/2016/09/28/Machine_Learning_14.html)中的“奇异值分解”的内容，或是[《机器学习（十七）》](/ml/2017/01/12/Machine_Learning_17.html#PCA)中的“主成分分析”的内容。
-
-一般情况下，k的值远小于n和m的值，从而达到了数据降维的目的。
-
-![](/images/article/ALS_2.png)
-
-幸运的是，我们并不需要显式的定义这些关联维度，而只需要假定它们存在即可，因此这里的关联维度又被称为Latent factor。k的典型取值一般是20～200。
-
-这种方法被称为概率矩阵分解算法(probabilistic matrix factorization，PMF)。ALS算法是PMF在数值计算方面的应用。
-
-为了使低秩矩阵X和Y尽可能地逼近R，需要最小化下面的平方误差损失函数：
-
-$$\min_{x_*,y_*}\sum_{u,i\text{ is known}}(r_{ui}-x_u^Ty_i)^2$$
-
-考虑到矩阵的稳定性问题，使用Tikhonov regularization，则上式变为：
-
-$$\min_{x_*,y_*}L(X,Y)=\min_{x_*,y_*}\sum_{u,i\text{ is known}}(r_{ui}-x_u^Ty_i)^2+\lambda(\mid x_u\mid ^2+\mid y_i\mid ^2)\tag{2}$$
-
-优化上式，得到训练结果矩阵$$X_{m\times k},Y_{n\times k}$$。预测时，将User和Item代入$$r_{ui}=x_u^Ty_i$$，即可得到相应的评分预测值。
-
-![](/images/article/ALS_3.png)
-
-同时，矩阵X和Y，还可以用于比较不同的User（或Item）之间的相似度，如下图所示：
-
-![](/images/article/ALS_4.png)
-
-ALS算法的缺点在于：
-
-1.它是一个离线算法。
-
-2.无法准确评估新加入的用户或商品。这个问题也被称为Cold Start问题。
-
-## ALS算法优化过程的推导
-
-公式2的直接优化是很困难的，因为X和Y的二元导数并不容易计算，这时可以使用类似坐标下降法的算法，固定其他维度，而只优化其中一个维度。
-
-对$$x_u$$求导，可得：
-
-$$\begin{align}
-\frac{\partial L}{\partial x_u}&=-2\sum_i(r_{ui}-x_u^Ty_i)y_i+2\lambda x_u
-\\&=-2\sum_i(r_{ui}-y_i^Tx_u)y_i+2\lambda x_u
-\\&=-2Y^Tr_u+2Y^TYx_u+2\lambda x_u
-\end{align}$$
+$$\frac{d E}{d \alpha_m} = \frac{d (\sum_{y_i = k_m(x_i)} w_i^{(m)}e^{-\alpha_m} + \sum_{y_i \neq k_m(x_i)} w_i^{(m)}e^{\alpha_m}) }{d \alpha_m}$$
 
 令导数为0，可得：
 
-$$Y^TYx_u+\lambda Ix_u=Y^Tr_u\Rightarrow x_u=(Y^TY+\lambda I)^{-1}Y^Tr_u\tag{3}$$
+$$\alpha_m = \frac{1}{2}\ln\left(\frac{\sum_{y_i = k_m(x_i)} w_i^{(m)}}{\sum_{y_i \neq k_m(x_i)} w_i^{(m)}}\right)$$
 
-同理，对$$y_i$$求导，由于X和Y是对称的，因此可得类似的结论：
+令$$\epsilon_m = \sum_{y_i \neq k_m(x_i)} w_i^{(m)} / \sum_{i=1}^N w_i^{(m)}$$，则：
 
-$$y_i=(X^TX+\lambda I)^{-1}X^Tr_i\tag{4}$$
+$$\alpha_m = \frac{1}{2}\ln\left( \frac{1 - \epsilon_m}{\epsilon_m}\right)$$
 
-因此整个优化迭代的过程为：
+参考：
 
->1.随机生成X、Y。（相当于对迭代算法给出一个初始解。）   
->Repeat until convergence {   
->>2.固定Y，使用公式3更新$$x_u$$。    
->>3.固定X，使用公式4更新$$y_i$$。    
->
->}
+https://mp.weixin.qq.com/s/G06VDc6iTwmNGsH4IfSeJQ
 
-一般使用RMSE（root-mean-square error）评估误差是否收敛，具体到这里就是：
+Adaboost从原理到实现
 
-$$RMSE=\sqrt{\frac{\sum(R-XY^T)^2}{N}}$$
+https://mp.weixin.qq.com/s/PZ-1fkNvdJmv_8zLbvoW1g
 
-其中，N为三元组<User,Item,Rating>的个数。当RMSE值变化很小时，就可以认为结果已经收敛。
+Adaboost算法原理小结
 
-算法复杂度：
+https://mp.weixin.qq.com/s/KoOUgwXLOfJfOjWhbFX52Q
 
-1.求$$x_u$$：$$O(k^2N+k^3m)$$
+如果Boosting你懂，那Adaboost你懂么？
 
-2.求$$y_i$$：$$O(k^2N+k^3n)$$
+https://mp.weixin.qq.com/s/Joz2FpGgBY0tC8lpoFz8Mw
 
-可以看出当k一定的时候，这个算法的复杂度是**线性**的。
+AdaBoost元算法如何提高分类性能——机器学习实战
 
-因为这个迭代过程，交替优化X和Y，因此又被称作交替最小二乘算法（Alternating Least Squares，ALS）。
+https://mp.weixin.qq.com/s/MLEVUKse5usmKIWJF-yfOQ
+
+通俗易懂讲解自适应提升算法AdaBoost
+
+https://mp.weixin.qq.com/s/VuDAdeVsoZsTokh3n_wWFw
+
+一文详解机器学习中最好用的提升方法：Boosting与AdaBoost
+
+https://mp.weixin.qq.com/s/Jnh7yIOmzbTvWk77zh2-lA
+
+周志华：Boosting学习理论的探索——一个跨越30年的故事
+
+# EMD
+
+推土机距离（Earth mover's distance）是两个概率分布之间的距离度量的一种方式。如果将区间D的概率分布比作沙堆P，那么$$P_r$$和$$P_\theta$$之间的EMD距离，就是推土机将$$P_r$$改造为$$P_\theta$$所需要的工作量。
+
+![](/images/article/earth_move.png)
+
+EMD的计算公式为：
+
+$$EMD(P_r,P_\theta) = \frac{\sum_{i=1}^m \sum_{j=1}^n f_{i,j}d_{i,j}}{\sum_{i=1}^m \sum_{j=1}^n f_{i,j}}$$
+
+其中，f表示土方量，d表示运输距离。
+
+然而，搬运土方的方案并不唯一，有的聪明，有的愚笨。因此，两个分布的EMD距离，通常指的是，所有方案的EMD距离的最小值。
+
+![](/images/img3/EMD.png)
+
+一般来说，可用上面这样的矩阵来可视化并计算EMD距离。
+
+这个问题实际是线性规划中的运输问题，可以用匈牙利算法迭代求解。最终求得的最小值就是EMD。
+
+最优方案也被称为“最优传输”，相关的研究被称作“最优传输理论”。法国数学家蒙日最早研究过该类问题。
+
+>Gaspard Monge, Comte de Péluse，1746～1818，法国数学家。微分几何之父，巴黎综合理工大学（École Polytechnique）创始人、校长。海军部长。   
+>革命形势在1794年已经开始恶化，蒙日的好友、化学家拉瓦锡就是在那时被声称“革命不需要科学”的群众，送上了断头台。
+两年后的现在，50岁的蒙日又被革命群众认定为“不够激进”。他不得不从巴黎逃离，路途中还担心自己的安危——狂热的革命群众随时可能把他抓回去，并送上断头台。   
+>一封意外的来信打消了蒙日的恐惧。写信人是法兰西共和国意大利方面军总司令拿破仑，27岁的总司令在信中表示，除了乐意向蒙日“伸出感激和友谊之手”，还想向他致谢。原来在4年前，他们见过面。当时蒙日担任法国海军部长，拿破仑尚是“不得宠的年轻炮兵军官”。在部长那里，拿破仑受到了“热诚的欢迎”。尽管蒙日根本记不起这件事，拿破仑则依旧“珍藏着这段记忆”。
+
+EMD可以是多维分布之间的距离。一维的EMD也被称为Match distance。
+
+EMD有时也称作Wasserstein距离。
+
+>Leonid Vaseršteĭn，俄罗斯数学家，Moscow State University硕博，现居美国，Penn State University教授。Wasserstein是他名字的德文拼法，并为英文文献所沿用。他在去美国之前，曾在德国住过一段时间。
+
+由于最优传输问题的计算比较复杂，因此在DL时代，我们通常使用神经网络来计算EMD距离，例如WGAN。
+
+在文本处理中，有一个和EMD类似的编辑距离（Edit distance），也叫做Levenshtein distance。它是指两个字串之间，由一个转成另一个所需的最少编辑操作次数。许可的编辑操作包括将一个字符替换成另一个字符，插入一个字符，删除一个字符。一般来说，编辑距离越小，两个串的相似度越大。
+
+>注：严格来说，Edit distance是一系列字符串相似距离的统称。除了Levenshtein distance之外，还包括Hamming distance等。
+
+>Vladimir Levenshtein，1935年生，俄罗斯数学家，毕业于莫斯科州立大学。2006年获得IEEE Richard W. Hamming Medal。
+
+参考：
+
+https://vincentherrmann.github.io/blog/wasserstein/
+
+Wasserstein GAN and the Kantorovich-Rubinstein Duality
+
+http://chaofan.io/archives/earth-movers-distance-%e6%8e%a8%e5%9c%9f%e6%9c%ba%e8%b7%9d%e7%a6%bb
+
+Earth Mover's Distance——推土机距离
+
+https://mp.weixin.qq.com/s/rvPLYa1NFg_LRvb8Y8-aCQ
+
+Wasserstein距离在生成模型中的应用
+
+https://mp.weixin.qq.com/s/2xOrSyyWSbp8rBVbFoNrxQ
+
+Wasserstein is all you need：构建无监督表示的统一框架
+
+https://mp.weixin.qq.com/s/g4F50zLNs_aC1WUuCMNdXg
+
+一文详解Wasserstein距离
+
+https://mp.weixin.qq.com/s/NXDJ4uCpdX-YcWiKAsjJLQ
+
+传说中的推土机距离基础，最优传输理论了解一下
+
+https://mp.weixin.qq.com/s/5sNXmQbINIWMGjX5TYAPYw
+
+最优传输理论你理解了，传说中的推土机距离重新了解一下
+
+https://mp.weixin.qq.com/s/iwZrWYbppwStJlXESUufZQ
+
+想要算一算Wasserstein距离？这里有一份PyTorch实战
+
+https://mp.weixin.qq.com/s/itQNrNsdjAgPl5R48V-HtQ
+
+计算最优传输（Computational Optimal Transport）
+
+https://zhuanlan.zhihu.com/p/72803739
+
+Word Mover's Distance-文档距离优化方案
+
+https://mp.weixin.qq.com/s/Zi9v_sbxPkHWUWwNhMMMAg
+
+编辑距离
+
+https://zhuanlan.zhihu.com/p/270675634
+
+点云距离度量：完全解析EMD距离(Earth Mover's Distance)
+
+https://zhuanlan.zhihu.com/p/358895758
+
+统计距离（STATISTICAL DISTANCE）

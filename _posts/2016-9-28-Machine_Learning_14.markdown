@@ -1,256 +1,290 @@
 ---
 layout: post
-title:  机器学习（十四）——机器学习中的矩阵方法（2）特征值和奇异值
+title:  机器学习（十四）——协同过滤的ALS算法（2）
 category: ML 
 ---
 
 * toc
 {:toc}
 
-## 矩阵的特征值和特征向量
+# 协同过滤的ALS算法（续）
 
-设A是一个n阶方阵，$$\lambda$$是一个数，如果方程$$Ax=\lambda x$$存在非零解向量，则称$$\lambda$$为A的一个特征值（Eigenvalue），相应的非零解向量x称为属于特征值$$\lambda$$的特征向量（eigenvector）。
+### Kendall秩相关系数（Kendall rank correlation coefficient）
 
-上面这个描述也可以记作：
+对于秩变量对$$(x_i,y_i),(x_j,y_j)$$：
 
-$$(A-\lambda I)x=0\tag{2}$$
+$$(x_i-x_j)(y_i-y_j)\begin{cases}
+>0, & \text{concordant} \\
+=0, & \text{neither concordant nor discordant} \\
+<0, & \text{discordant} \\
+\end{cases}$$
 
-这个公式本身通常用于：已知特征值，求解对应的特征向量。
+$$\tau = \frac{(\text{number of concordant pairs}) - (\text{number of discordant pairs})}{n (n-1) /2}$$
 
-其中，$$A-\lambda I$$被称为特征矩阵，而$$\lvert A-\lambda I \rvert=0$$被称为特征方程。求解特征方程可得到特征值。
+>注：Sir Maurice George Kendall，1907~1983，英国统计学家。这个人职业生涯的大部分时间都是一个公务员，二战期间出任英国船运协会副总经理。1949年以后担任伦敦大学教授。
 
-特征值和特征向量在有的书上也被称为本征值和本征向量。
+参见：
 
-特征值和特征向量的特性包括：
+https://en.wikipedia.org/wiki/Kendall_rank_correlation_coefficient
 
-1.特征向量属于特定的特征值，离开特征值讨论特征向量是没有意义的。不同特征值对应的特征向量不会相等，但特征向量不能由特征值唯一确定。
+### Tanimoto系数
 
-2.在复数范围内，n阶矩阵A有n个特征值。在这些特征值中，模最大的那个特征值即主特征值（对于实数阵即绝对值最大的特征值），主特征值对应的特征向量称为主特征向量。
+$$T(x,y)=\frac{\mid X\cap Y\mid }{\mid X\cup Y\mid }=\frac{\mid X\cap Y\mid }{\mid X\mid +\mid Y\mid -\mid X\cap Y\mid }=\frac{\sum x_iy_i}{\sqrt{\sum x_i^2}+\sqrt{\sum y_i^2}-\sum x_iy_i}$$
 
-更多内容参见：
+该系数由Taffee T. Tanimoto于1960年提出。Tanimoto生平不详，从名字来看，应该是个日本人。在其他领域，它还有另一个名字Jaccard similarity coefficient。（两者的系数公式一致，但距离公式略有差异。）
 
-http://course.tjau.edu.cn/xianxingdaishu/jiao/5.htm
+如果向量的每个维度取值是二值（0或1），那么Tanimoto系数就等同Jaccard距离。
 
-矩阵的特征值和特征向量
+>注：Paul Jaccard，1868～1944，苏黎世联邦理工学院（ETH Zurich）博士，苏黎世联邦理工学院植物学教授。ETH Zurich可是出了24个诺贝尔奖得主的。
 
-https://mp.weixin.qq.com/s/mZ4AeCcoU0LhWRWfa9_kvw
+参见：
 
-花了10分钟，终于弄懂了特征值和特征向量到底有什么意义
+https://en.wikipedia.org/wiki/Jaccard_index
 
-https://mp.weixin.qq.com/s/uL5fCNTegK9ST2LOO13-4g
+https://www.cnblogs.com/daniel-D/p/3244718.html
 
-图说幂法求特征值和特征向量
+漫谈：机器学习中距离和相似性度量方法
 
-## QR算法
+https://mp.weixin.qq.com/s/rrIdxEEwFJMWbvbhn_DYDw
 
-对矩阵A进行QR分解可得：$$A=QR$$
+协同过滤算法分布式实现
 
-因为Q是正交阵（$$Q^T=Q^{-1}$$），所以正交相似变换$$Q^TAQ$$和A有相同的特征值。
+https://zhuanlan.zhihu.com/p/138107999
 
-证明：
+常见的距离算法和相似度计算方法
 
-$$
-\begin{array}\\
-\mid Q^TAQ-\lambda I\mid =\mid Q^TAQ-Q^T(\lambda I)Q\mid =\mid Q^T(A-\lambda I)Q\mid \\
-=\mid Q^T\mid \cdot\mid A-\lambda I\mid \cdot\mid Q\mid =\mid Q^TQ\mid \cdot\mid A-\lambda I\mid =\mid I\mid \cdot\mid A-\lambda I\mid =\mid A-\lambda I\mid
-\end{array}$$
+https://mp.weixin.qq.com/s/OpBKbF1UHEAuosXjNDKqOA
 
-这里的证明，用到了行列式的如下性质：
+机器学习距离与相似度计算
 
-$$\mid I\mid =1$$
+https://mp.weixin.qq.com/s/cYfbZtFFd9jvnN4p8T20UQ
 
-$$\mid AB\mid =\mid A\mid \cdot\mid B\mid $$
+9个数据科学中常见距离度量总结以及优缺点概述
 
-因为$$Q^TAQ$$和A的特征方程相同，所以它们的特征值也相同。证毕。
+## ALS算法原理
 
-由此产生如下迭代算法：
+http://www.cnblogs.com/luchen927/archive/2012/02/01/2325360.html
 
+机器学习相关——协同过滤
+
+https://mp.weixin.qq.com/s/Xgg61ICqkUo9ovdEV7G8Cw
+
+推荐算法综述
+
+https://mp.weixin.qq.com/s/lBj0Z9vY9FcEFQnk0VrdOw
+
+协同过滤推荐算法
+
+上面的网页概括了ALS算法出现之前的协同过滤算法的概况。
+
+ALS算法是2008年以来，用的比较多的协同过滤算法。它已经集成到Spark的Mllib库中，使用起来比较方便。
+
+从协同过滤的分类来说，ALS算法属于User-Item CF，也叫做混合CF。它同时考虑了User和Item两个方面。
+
+用户和商品的关系，可以抽象为如下的三元组：<User,Item,Rating>。其中，Rating是用户对商品的评分，表征用户对该商品的喜好程度。
+
+假设我们有一批用户数据，其中包含m个User和n个Item，则我们定义Rating矩阵$$R_{m\times n}$$，其中的元素$$r_{ui}$$表示第u个User对第i个Item的评分。
+
+在实际使用中，由于n和m的数量都十分巨大，因此R矩阵的规模很容易就会突破1亿项。这时候，传统的矩阵分解方法对于这么大的数据量已经是很难处理了。
+
+另一方面，一个用户也不可能给所有商品评分，因此，R矩阵注定是个稀疏矩阵。矩阵中所缺失的评分，又叫做missing item。
+
+![](/images/article/ALS.png)
+
+针对这样的特点，我们可以假设用户和商品之间存在若干关联维度（比如用户年龄、性别、受教育程度和商品的外观、价格等），我们只需要将R矩阵投射到这些维度上即可。这个投射的数学表示是：
+
+$$R_{m\times n}\approx X_{m\times k}Y_{n\times k}^T\tag{1}$$
+
+这里的$$\approx$$表明这个投射只是一个近似的空间变换。
+
+不懂这个空间变换的同学，可参见[《线性代数（二）》](/math/2022/01/08/linear_algebra_2.html)中的“奇异值分解”的内容，或是[《机器学习（十七）》](/ml/2017/01/12/Machine_Learning_17.html#PCA)中的“主成分分析”的内容。
+
+一般情况下，k的值远小于n和m的值，从而达到了数据降维的目的。
+
+![](/images/article/ALS_2.png)
+
+幸运的是，我们并不需要显式的定义这些关联维度，而只需要假定它们存在即可，因此这里的关联维度又被称为Latent factor。k的典型取值一般是20～200。
+
+这种方法被称为概率矩阵分解算法(probabilistic matrix factorization，PMF)。ALS算法是PMF在数值计算方面的应用。
+
+为了使低秩矩阵X和Y尽可能地逼近R，需要最小化下面的平方误差损失函数：
+
+$$\min_{x_*,y_*}\sum_{u,i\text{ is known}}(r_{ui}-x_u^Ty_i)^2$$
+
+考虑到矩阵的稳定性问题，使用Tikhonov regularization，则上式变为：
+
+$$\min_{x_*,y_*}L(X,Y)=\min_{x_*,y_*}\sum_{u,i\text{ is known}}(r_{ui}-x_u^Ty_i)^2+\lambda(\mid x_u\mid ^2+\mid y_i\mid ^2)\tag{2}$$
+
+优化上式，得到训练结果矩阵$$X_{m\times k},Y_{n\times k}$$。预测时，将User和Item代入$$r_{ui}=x_u^Ty_i$$，即可得到相应的评分预测值。
+
+![](/images/article/ALS_3.png)
+
+同时，矩阵X和Y，还可以用于比较不同的User（或Item）之间的相似度，如下图所示：
+
+![](/images/article/ALS_4.png)
+
+ALS算法的缺点在于：
+
+1.它是一个离线算法。
+
+2.无法准确评估新加入的用户或商品。这个问题也被称为Cold Start问题。
+
+## ALS算法优化过程的推导
+
+公式2的直接优化是很困难的，因为X和Y的二元导数并不容易计算，这时可以使用类似坐标下降法的算法，固定其他维度，而只优化其中一个维度。
+
+对$$x_u$$求导，可得：
+
+$$\begin{align}
+\frac{\partial L}{\partial x_u}&=-2\sum_i(r_{ui}-x_u^Ty_i)y_i+2\lambda x_u
+\\&=-2\sum_i(r_{ui}-y_i^Tx_u)y_i+2\lambda x_u
+\\&=-2Y^Tr_u+2Y^TYx_u+2\lambda x_u
+\end{align}$$
+
+令导数为0，可得：
+
+$$Y^TYx_u+\lambda Ix_u=Y^Tr_u\Rightarrow x_u=(Y^TY+\lambda I)^{-1}Y^Tr_u\tag{3}$$
+
+同理，对$$y_i$$求导，由于X和Y是对称的，因此可得类似的结论：
+
+$$y_i=(X^TX+\lambda I)^{-1}X^Tr_i\tag{4}$$
+
+因此整个优化迭代的过程为：
+
+>1.随机生成X、Y。（相当于对迭代算法给出一个初始解。）   
 >Repeat until convergence {   
->>1.$$A_k=Q_kR_k$$（QR分解）   
->>2.$$A_{k+1}=Q_k^TA_kQ_k=Q_k^{-1}Q_kR_kQ_k=R_kQ_k$$   
+>>2.固定Y，使用公式3更新$$x_u$$。    
+>>3.固定X，使用公式4更新$$y_i$$。    
 >
 >}
 
-这个算法的收敛性证明比较复杂，这里只给出结论：
+一般使用RMSE（root-mean-square error）评估误差是否收敛，具体到这里就是：
 
-$$\lim_{k\to\infty}A_k=\begin{bmatrix}
-\lambda_1 & u_{12} &  \dots  & u_{1n} \\
-0 & \lambda_2 &  \dots  & u_{2n} \\
-\dots & \dots & \ddots & \dots \\
-0 & 0 & \dots & \lambda_n 
-\end{bmatrix}$$
+$$RMSE=\sqrt{\frac{\sum(R-XY^T)^2}{N}}$$
 
-其中，$$\lambda_i$$为矩阵的特征值。$$u_{ij}$$表示任意值，它们的极限可能并不存在。
+其中，N为三元组<User,Item,Rating>的个数。当RMSE值变化很小时，就可以认为结果已经收敛。
 
-QR算法于1961年，由John G.F. Francis和Vera Nikolaevna Kublanovskaya发现。
+算法复杂度：
 
->注：John G.F. Francis，1934年生，英国计算机科学家，剑桥大学肄业生。   
->2000年，QR算法被IEEE计算机学会评为20世纪的top 10算法之一。然而直到那时，计算机界的数学家们竟然都没有见过Francis本尊，连这位大神是活着还是死了都不知道，仿佛他在发表完这篇惊世之作后就消失了一般。   
->2007年，学界的两位大牛：Gene Howard Golub（SVD算法发明人之一，后文会提到。）和Frank Detlev Uhlig（1972年获加州理工学院博士，Auburn University数学系教授），经过不懈努力和人肉搜索终于联系上了他。   
->他一点都不知道自己N年前的研究被引用膜拜了无数次，得知自己的QR算法是二十世纪最NB的十大算法还有点小吃惊。这位神秘大牛竟然连TeX和Matlab都不知道。现在这位大牛73岁了，活到老学到老，还在远程教育大学Open University里补修当年没有修到的学位。   
->2015年，University of Sussex授予他荣誉博士学位。   
->相关内容参见：   
->http://www.netlib.org/na-digest-html/07/v07n34.html
+1.求$$x_u$$：$$O(k^2N+k^3m)$$
 
->Vera Nikolaevna Kublanovskaya，1920~2012，苏联数学家，女。终身供职于苏联科学院列宁格勒斯塔克罗夫数学研究所。52岁获得博士学位。
+2.求$$y_i$$：$$O(k^2N+k^3n)$$
 
->Steklov的故事，参见[《数学狂想曲（六）》](/math/2017/03/05/math_6.html#Steklov)。这里顺便说一下，苏联的博士学位问题。苏联有个“副博士”的学位，这是一名学生通过学历教育所能获得的最高学位。苏联的博士学位无法通过教育获得，而只能根据成果评定，因此难度大大超过欧美的博士，一般只有教授级人物才能获得。   
->简单来说就是：   
->苏联副博士=欧美博士   
->苏联博士=欧美教授   
->所以，Kublanovskaya实际上还是很牛的人物。
+可以看出当k一定的时候，这个算法的复杂度是**线性**的。
 
-需要指出的是，QR算法可求出矩阵的所有特征值，如果只求某一个特征值的话，还有其他一些更快的算法。详见：
+因为这个迭代过程，交替优化X和Y，因此又被称作交替最小二乘算法（Alternating Least Squares，ALS）。
 
-https://en.wikipedia.org/wiki/Eigenvalue_algorithm
+## 隐式反馈
 
-## 矩阵的奇异值
+用户给商品评分是个非常简单粗暴的用户行为。在实际的电商网站中，还有大量的用户行为，同样能够间接反映用户的喜好，比如用户的购买记录、搜索关键字，甚至是鼠标的移动。我们将这些间接用户行为称之为隐式反馈（implicit feedback），以区别于评分这样的显式反馈（explicit feedback）。
 
-在进一步讨论之前，我们首先介绍一下矩阵特征值的几何意义。
+隐式反馈有以下几个特点：
 
-首先，矩阵是对线性变换的表示，确定了定义域空间V与目标空间W的两组基，就可以很自然地得到该线性变换的矩阵表示。
+1.没有负面反馈（negative feedback）。用户一般会直接忽略不喜欢的商品，而不是给予负面评价。
 
-线性空间变换的几何含义如下图所示：
+2.隐式反馈包含大量噪声。比如，电视机在某一时间播放某一节目，然而用户已经睡着了，或者忘了换台。
 
-![](/images/article/svd_2.png)
+3.显式反馈表现的是用户的**喜好（preference）**，而隐式反馈表现的是用户的**信任（confidence）**。比如用户最喜欢的一般是电影，但观看时间最长的却是连续剧。大米购买的比较频繁，量也大，但未必是用户最想吃的食物。
 
-图中的坐标轴，就是线性空间的**基**。
+4.隐式反馈非常难以量化。
 
-线性变换主要有三种几何效果：**旋转、缩放、投影**。
+## ALS-WR
 
-其中，旋转和缩放不改变向量的维数。矩阵特征值运算，实际上就是将向量V旋转缩放到一个正交基W上。因为V和W等维，所以要求矩阵必须是方阵。
+针对隐式反馈，有ALS-WR算法（ALS with Weighted-$$\lambda$$-Regularization）。
 
-正交化过程，代表旋转变换，又被称为**等距同构**。（旋转变换，可以理解为向量的正向旋转，也可以理解为坐标轴的反向旋转，这里理解为后者，会容易一些。）**特征值代表缩放变换的缩放因子。**
+首先将用户反馈分类：
 
-而对于一般矩阵而言，我们还需要进行投影变换，将n维向量V映射为m维向量W。那么投影变换选择什么矩阵呢？
+$$p_{ui}=\begin{cases}
+1, & \text{preference} \\
+0, & \text{no preference} \\
+\end{cases}$$
 
-我们知道，对于复数z，可写成：
+但是喜好是有程度差异的，因此需要定义程度系数：
 
-$$z=\left(\frac{z}{\mid z\mid }\right)\mid z\mid =\left(\frac{z}{\mid z\mid }\right)\sqrt{\overline z z}$$
+$$c_{ui}=1+\alpha r_{ui}$$
 
-其中$$\overline z$$是z的共轭复数。也就是说，一个复数可以表示为一个单位向量乘以一个模。
+这里的$$r_{ui}$$表示原始量化值，比如观看电影的时间；
 
-类似的，我们定义共轭矩阵$$M^*_{ij}=\overline{M_{ji}}$$，这实际上就是矩阵M转置之后，再将每个元素值设为它的共轭复数。因此：
+这个公式里的1表示最低信任度，$$\alpha$$表示根据用户行为所增加的信任度。
 
-$$M^*=(\overline M)^T=\overline{M^T}$$
+最终，损失函数变为：
 
-仿照着复数的写法，矩阵M可以表示为：$$M=S\sqrt{M^*M}$$
+$$\min_{x_*,y_*}L(X,Y)=\min_{x_*,y_*}\sum_{u,i}c_{ui}(p_{ui}-x_u^Ty_i)^2+\lambda(\sum_u\mid x_u\mid ^2+\sum_i\mid y_i\mid ^2)$$
 
-这里的S表示等距同构。（单位向量相当于给模一个旋转变换，也就是等距同构。）由于$$\sqrt{M^*M}$$是正定对称方阵，因此它实际上也是能够被正交化的。所以对于一般矩阵来说，我们总能够找到两个正交基，并在这两个基之间进行投影变换。
+除此之外，我们还可以使用指数函数来定义$$c_{ui}$$：
 
->注意：我们刚才是用与复数类比的方式，得到投影变换矩阵$$\sqrt{M^*M}$$。但是类比不能代替严格的数学证明。幸运的是，上述结论已经被严格证明了。
+$$c_{ui}=1+\alpha \log(1+r_{ui}/\epsilon)$$
 
-我们将矩阵$$\sqrt{M^*M}$$的特征值，称作奇异值（Singular value）。可以看出，如果M是对称方阵的话，则M的奇异值等于M的特征值的绝对值。
+ALS-WR没有考虑到时序行为的影响，时序行为相关的内容，可参见：
 
-参见：
+http://www.jos.org.cn/1000-9825/4478.htm
 
-https://www.zhihu.com/answer/53804902
+基于时序行为的协同过滤推荐算法
 
-奇异值的物理意义是什么？
+## 参考
 
-http://www.ams.org/samplings/feature-column/fcarc-svd
+参考论文：
 
-We Recommend a Singular Value Decomposition
+《Large-scale Parallel Collaborative Filtering forthe Netflix Prize》
 
-## 奇异值分解
+《Collaborative Filtering for Implicit Feedback Datasets》
 
-奇异值分解（Singular value decomposition，SVD）定理：
+《Matrix Factorization Techniques for Recommender Systems》
 
-设$$M\in R^{m\times n}$$，则必存在正交矩阵$$U=[u_1,\dots,u_m]\in R^{m\times m}$$和$$V=[v_1,\dots,v_n]\in R^{n\times n}$$使得：
+其他参考：
 
-$$U^TMV=\begin{bmatrix}
-\Sigma_r & 0 \\
-0 & 0 
-\end{bmatrix}$$
+http://www.jos.org.cn/html/2014/9/4648.htm
 
-其中，$$\Sigma_r=diag(\sigma_1,\dots,\sigma_r),\sigma_1\ge \dots\ge \sigma_r>0$$。
+基于大规模隐式反馈的个性化推荐
 
-当M为复矩阵时，将U、V改为酉矩阵（unitary matrix）即可。（吐槽一下，酉矩阵这个翻译真的好烂，和天干地支半毛钱关系都没有。）
+http://www.fuqingchuan.com/2015/03/812.html
 
-奇异值分解也可写为另一种形式：
+协同过滤之ALS-WR算法
 
-$$M=U\Sigma V^*$$
+http://www.docin.com/p-714582034.html
 
-其几何意义如下图所示：
+基于矩阵分解的协同过滤算法
 
-![](/images/article/Singular-Value-Decomposition.png)
+http://www.tuicool.com/articles/fANvieZ
 
-虽然，我们可以通过计算矩阵$$\sqrt{M^*M}$$的特征值的方法，计算奇异值，然而这个方法的计算量十分巨大。1965年，Gene Howard Golub和William Morton Kahan发明了目前较为通用的算法。但该方法比较复杂，这里不作介绍。
+Spark MLlib中的协同过滤
 
->Gene Howard Golub，1932～2007，美国数学家，斯坦福大学教授。
+http://www.68idc.cn/help/buildlang/ask/20150727462819.html
 
->William Morton Kahan，1933年生，加拿大数学家，多伦多大学博士，UCB教授。图灵奖获得者（1989）。IEEE-754标准（即浮点数标准）的主要制订者，被称为“浮点数之父”。ACM院士。
+Alternating Least Squares(ASL)的数学推导
 
-参见：
+https://mp.weixin.qq.com/s/bRhIm8Xvlb51zE2HpDO5Og
 
-http://www.doc88.com/p-089411326888.html
+一文读懂推荐系统知识体系
 
-SVD(奇异值分解)算法及其评估
+http://mp.weixin.qq.com/s/QhP3wRGbrO7sYSDNm8z0gQ
 
-https://mp.weixin.qq.com/s/46oOYoL486WZ4oPwgLrrrQ
+常用推荐算法（50页干货）
 
-奇异值分解SVD原理与应用详解
+https://zhuanlan.zhihu.com/p/23036112
 
-https://mp.weixin.qq.com/s/1pg8jY1R-8kJKu1L_RPLkg
+推荐系统常用的推荐算法
 
-奇异值分解(SVD)原理
+https://mp.weixin.qq.com/s/6x8cK_SDW67At3IUZ15ijQ
 
-https://mp.weixin.qq.com/s/tZqkbJ18ANCcA7ndWmJEGw
+协同过滤典型算法概述
 
-奇异值分解简介：从原理到基础机器学习应用
+https://mp.weixin.qq.com/s/wtvwWZhqCRjJgdCpa7qdJw
 
-https://mp.weixin.qq.com/s/Z0ZkQlZDKUSJEWVq7Vi6Cg
+矩阵分解在协同过滤推荐中的应用
 
-奇异值分解(SVD)原理与在降维中的应用
+https://mp.weixin.qq.com/s/sUQPaiYAfRpCFryrHMqPoA
 
-https://mp.weixin.qq.com/s/bYTS9UXH7ecwrq6_WIangw
+想写出人见人爱的推荐系统，先了解经典矩阵分解技术
 
-如何让奇异值分解(SVD)变得不“奇异”？
+https://mp.weixin.qq.com/s/7C_XRgPFh41r05SZdA2NfA
 
-https://mp.weixin.qq.com/s/54_qLczv8ooqoQQioIeUww
+推荐系统之矩阵分解模型：科普篇
 
-通俗易懂的讲解奇异值分解(SVD)和主成分分析(PCA)
+https://mp.weixin.qq.com/s/Fy2ZyxYvRj3C8BqOp6IGPQ
 
-https://mp.weixin.qq.com/s/R54brOW-TBD3UGJUwE2QOg
+推荐系统之矩阵分解模型：原理篇
 
-SVD加速：rSVD
+https://mp.weixin.qq.com/s/NnykbxFA6xnTUbLzX8GVIg
 
-## 矩阵的秩
-
-一个矩阵A的列（行）秩是A的线性独立的列（行）的极大数。
-
-下面不加证明的给出矩阵的秩的性质：
-
-1.矩阵的行秩等于列秩，因此可统称为矩阵的秩。
-
-2.秩是n的$$m\times n$$矩阵为列满秩阵；秩是n的$$n\times p$$矩阵为行满秩阵。
-
-3.设$$A\in M_{m\times n}(F)$$，若A是行满秩阵，则$$m\le n$$；若A是列满秩阵 ，则$$n\le m$$。
-
-4.设A为$$m\times n$$列满秩阵，则n元齐次线性方程组$$AX=0$$只有零解。
-
-5.线性方程组$$AX=B$$对任一m维列向量B都有解$$\Leftrightarrow$$系数矩阵A为行满秩阵。
-
-参见：
-
-http://wenku.baidu.com/view/9ce143eb81c758f5f61f6730.html
-
-行(列)满秩阵的几点性质
-
-https://mp.weixin.qq.com/s/N16K511-crzj6h-R1L10rQ
-
-如何通过心形线快速认识秩的几何意义？
-
-## 奇异矩阵
-
-对应的行列式等于0的方阵，被称为奇异矩阵（singular matrix）。
-
-奇异矩阵和线性相关、秩等概念密切相关。
-
-下面不加证明的给出奇异矩阵的性质：
-
-1.如果A为非奇异矩阵$$\Leftrightarrow$$A满秩。
-
-2.如果A为奇异矩阵，则AX=0有无穷解，AX=b有无穷解或者无解。如果A为非奇异矩阵，则AX=0有且只有唯一零解，AX=b有唯一解。
-
-对于A不是方阵的情况，一般使用$$A^TA$$来评估矩阵是否是奇异矩阵。
+推荐系统之矩阵分解模型：实践篇

@@ -1,11 +1,69 @@
 ---
 layout: post
-title:  机器学习（九）——K-Means算法
+title:  机器学习（九）——规则化和模型选择
 category: ML 
 ---
 
 * toc
 {:toc}
+
+# 规则化和模型选择
+
+对于多项回归模型$$h_\theta(x)=g(\theta_0+\theta_1x_1+\dots+\theta_kx_k)$$来说，如何选择合适的k值呢？
+
+或者，我们是选择局部权重回归（locally weighted regression），还是SVM呢？
+
+我们定义算法模型的集合为$$\mathcal{M}=\{M_1,\dots,M_d\}$$。其中的$$M_i$$为不同的算法模型，比如SVM、神经网络等等。
+
+## 交叉验证
+
+回想之前讨论的过拟合和ERM算法，如果我们针对多项回归模型使用ERM算法，几乎必然会选择高方差的高维多项回归模型，因为它的训练误差最小。但这显然不是个好选择。
+
+因此，我们改进算法如下：
+
+>1.从全部的训练数据S中随机选择70%的样例作为训练集$$S_{train}$$，剩余的30%作为测试集$$S_{CV}$$。   
+>2.在$$S_{train}$$上训练每一个$$M_i$$，得到预测函数$$h_i$$。   
+>3.在$$S_{CV}$$上测试每一个$$h_i$$，得到相应的经验误差$$\hat\varepsilon_{S_{CV}}(h_i)$$。   
+>4.选择具有最小$$\hat\varepsilon_{S_{CV}}(h_i)$$的$$h_i$$，作为最佳模型。
+
+这种方法被称为hold-out交叉验证（cross validation），或者称为简单（simple）交叉验证。
+
+由于$$S_{train}$$和$$S_{CV}$$是随机选取的，因此我们可以认为这里的经验误差$$\hat\varepsilon_{S_{CV}}(h_i)$$是$$h_i$$的泛化误差的一个很好的估计值。测试集一般占所有样本数的1/4~1/3，这里的30%是一个典型值。
+
+还可以对模型作改进，当选出最佳的模型$$M_i$$后，再在全部数据S上做一次训练，显然训练数据越多，模型参数越准确。
+
+简单交叉验证方法的缺点在于得到的最佳模型是在70%的训练数据上选出来的，不代表在全部训练数据上是最佳的。还有当训练数据本来就很少时，再分出测试集后，训练数据就太少了。
+
+我们对简单交叉验证方法再做一次改进，如下：
+
+>1.将全部训练集S分成k个不相交的子集，假设S中的训练样例个数为m，那么每一个子集有m/k个训练样例，相应的子集称作$$\{S_1,\dots,S_k\}$$。   
+>2.每次从模型集合$$\mathcal{M}$$中拿出来一个$$M_i$$，然后在S中选择出k-1个子集$$S_1\cup\dots\cup S_{j-1}\cup S_{j+1}\cup\dots\cup S_k$$，在这个集合上训练$$M_i$$得到预测函数$$h_{ij}$$。在$$S_j$$上测试$$h_{ij}$$，得到相应的经验误差$$\hat\varepsilon_{S_j}(h_{ij})$$。   
+>3.使用$$\frac{1}{k}\sum_{j=1}^k\hat\varepsilon_{S_j}(h_{ij})$$作为$$M_i$$泛化误差的估计值。   
+>4.选出泛化误差估计值最小的$$M_i$$，在S上重新训练，得到最终的预测函数$$h_i$$。
+
+这个方法被称为k-折叠（k-fold）交叉验证。一般来说k取值为10，这样训练数据稀疏时，基本上也能进行训练，缺点是训练和测试次数过多。
+
+![](/images/img3/k-fold.png)
+
+更极端的，如果$$k=m$$，则该方法又被称为leave-one-out交叉验证。
+
+参考：
+
+https://mp.weixin.qq.com/s/OmSxnVL6pYYzB9_jDV4Lqg
+
+模型评估方法基础总结
+
+https://mp.weixin.qq.com/s/lrNvC8EWcq6cT16FU8nUbQ
+
+5种常用的交叉验证技术，保证评估模型的稳定性
+
+https://mp.weixin.qq.com/s/B7jIE8W3jHT_YS4psLJZCw
+
+交叉验证和超参数调整:如何优化你的机器学习模型
+
+https://mp.weixin.qq.com/s/PQKVSUnNa1SUwWIxo38_lw
+
+8种交叉验证类型的深入解释和可视化介绍
 
 ## 特征选择
 
@@ -170,70 +228,3 @@ $$p(\theta\mid S)=\frac{p(S\mid\theta)p(\theta)}{\int_\theta p(S\mid\theta)p(\th
 当我们针对新的样本x进行预测时，和上面的推导类似，可得：
 
 $$p(y\mid x,S)=\int_\theta p(y\mid x,\theta,S)p(\theta\mid S)\mathrm{d}\theta$$
-
-因为预测样本集和训练样本集的分布是独立的，因此上式又可写为：
-
-$$p(y\mid x,S)=\int_\theta p(y\mid x,\theta)p(\theta\mid S)\mathrm{d}\theta$$
-
-这个公式又被称作后验预测分布（Posterior predictive distribution）。
-
-$$p(\theta\mid S)$$可由前面的公式得到。
-
-假若我们要求期望值的话，那么套用求期望的公式即可：
-
-$$E[y\mid x,S]=\int_y yp(y\mid x,S)\mathrm{d}y$$
-
-由上可见，贝叶斯估计将$$\theta$$视为随机变量，$$\theta$$的值满足一定的分布，不是固定值，我们无法通过计算获得其值，只能在预测时计算积分。
-
-上述贝叶斯估计方法，虽然公式合理优美，但后验概率$$p(\theta\mid S)$$通常是很难计算的，因为它是$$\theta$$上的高维积分函数。
-
-观察$$p(\theta\mid S)$$的公式，在分母$$P(S)$$一定的情况下，分子越大则值越大，也就是$$p(\theta\mid S)$$的概率越大。
-
-因此，可得如下算法：
-
-$$\theta_{MAP}=\arg\max_\theta\left(\prod_{i=1}^mp(y^{(i)}\mid x^{(i)},\theta)\right)p(\theta)$$
-
-这个算法叫做最大后验概率估计（maximum a posteriori）。
-
-和ML相比，MAP算法只是在最后多了一项$$p(\theta)$$。通常使用中，我们认为$$p(\theta)$$符合$$\theta\sim N(0,\tau^2I)$$。
-
-由于$$p(\theta)$$实际上就是先验分布，它会对最后结果进行一定的修正。因此，实际上最大后验概率估计相对于最大似然估计来说，较容易克服过度拟合的问题。
-
-![](/images/article/MAP.png)
-
-参见：
-
-http://www.cs.cornell.edu/courses/cs5540/2010sp/lectures/Lec9.Estimation-continued.pdf
-
-Statistical Estimation: Least Squares, Maximum Likelihood and Maximum A Posteriori Estimators
-
-https://mp.weixin.qq.com/s/XnsbCb7H9jHmJ4dV9p2Oug
-
-频率学派还是贝叶斯学派？聊一聊机器学习中的MLE和MAP
-
-https://mp.weixin.qq.com/s/dQxN46wEbFrpvV369uOHdA
-
-详解最大后验概率估计（MAP）的理解
-
-# K-Means算法
-
-聚类算法属于无监督学习算法的一种。它的训练样本中只有$$x^{(i)}$$，而没有$$y^{(i)}$$。聚类的目的是找到每个样本x潜在的类别y，并将同类别y的样本x放在一起，形成一个聚类（clusters）。样本$$x^{(i)}$$所属的聚类用$$c^{(i)}$$表示。
-
-K-Means算法的步骤如下:
-
->1.随机选取k个聚类质心点（cluster centroids）$$\mu_1,\dots,\mu_k$$   
->2.重复下面过程直到收敛 {   
->>对于每一个样例i，计算其应该属于的聚类：$$c^{(i)}:=\arg\min_j\|x^{(i)}-\mu_j\|^2$$   
->>对于每一个聚类j，重新计算该聚类的质心：$$\mu_j:=\frac{\sum_{i=1}^m1\{c^{(i)}=j\}x^{(i)}}{\sum_{i=1}^m1\{c^{(i)}=j\}}$$。   
->
->}
-
-其中，k是我们事先定义的聚类个数。下图展示了对n个样本点进行K-means聚类的效果，这里k取2。
-
-![](/images/article/k-means.png)
-
-K-means算法面对的第一个问题是如何保证收敛。前面的算法中强调结束条件就是收敛，可以证明的是K-means完全可以保证收敛性。下面我们定性的描述一下收敛性，我们定义畸变函数（distortion function）如下：
-
-$$J(c,\mu)=\sum_{i=1}^m\|x^{(i)}-\mu_{c^{(i)}}\|^2$$
-
-J函数表示每个样本点到其质心的距离平方和。K-means算法的目的是要将J调整到最小。假设当前J没有达到最小值，那么首先可以固定每个类的质心$$\mu_j$$，调整每个样例的所属的类别$$c^{(i)}$$来让J函数减小，同样，固定$$c^{(i)}$$，调整每个类的质心$$\mu_j$$，也可以使J减小。 这两个过程就是内循环中使J单调递减的过程。当J递减到最小时，$$\mu$$和c也同时收敛。（在理论上，可以有多组不同的$$\mu$$和c值，能够使得J取得最小值，但这种现象实际上很少见。）

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（五）——SVM（2）
+title:  机器学习（五）——SVM（1）
 category: ML 
 ---
 
@@ -8,6 +8,57 @@ category: ML
 {:toc}
 
 # SVM
+
+## 拉格朗日对偶（续）
+
+上述约束优化问题也被称为原始优化问题（primal optimization problem）。为了求解这个问题，我们定义广义拉格朗日（generalized Lagrangian）函数：
+
+$$\mathcal{L}(w,\alpha,\beta)=f(w)+\sum_{i=1}^k\alpha_ig_i(w)+\sum_{i=1}^l\beta_ih_i(w)$$
+
+利用这个函数可以将约束优化问题转化为无约束优化问题。其中的$$\alpha_i$$、$$\beta_i$$也被称作拉格朗日乘子（Lagrange multiplier）。
+
+$$\theta_\mathcal{P}(w)=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\mathcal{L}(w,\alpha,\beta)=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}f(w)+\sum_{i=1}^k\alpha_ig_i(w)+\sum_{i=1}^l\beta_ih_i(w)$$
+
+其中，$$\mathcal{P}$$代表原始优化问题，$$\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}$$表示在$$\alpha,\beta$$变化，而其他变量不变的情况下，求最大值。
+
+如果w不满足约束，也就是$$g_i(w)>0$$或$$h_i(w)\ne 0$$。这时由于$$\mathcal{L}$$函数是无约束函数，$$\alpha_i$$、$$\beta_i$$可以任意取值，因此$$\sum_{i=1}^k\alpha_ig_i(w)$$或$$\sum_{i=1}^l\beta_ih_i(w)$$并没有极值，也就是说$$\theta_\mathcal{P}(w)=\infty$$。
+
+反之,如果w满足约束，则$$\sum_{i=1}^k\alpha_ig_i(w)$$和$$\sum_{i=1}^l\beta_ih_i(w)$$都为0，因此$$\theta_\mathcal{P}(w)=f(w)$$。
+
+综上：
+
+$$\theta_\mathcal{P}(w)=\begin{cases}
+f(w), & w满足约束 \\
+\infty, & w不满足约束 \\
+\end{cases}$$
+
+我们定义：
+
+$$p^*=\underset{w}{\operatorname{min}}\theta_\mathcal{P}(w)=\underset{w}{\operatorname{min}}\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\mathcal{L}(w,\alpha,\beta)$$
+
+下面我们定义对偶函数：
+
+$$\theta_\mathcal{D}(w)=\underset{w}{\operatorname{min}}\mathcal{L}(w,\alpha,\beta)$$
+
+这里的$$\mathcal{D}$$代表原始优化问题的对偶优化问题。仿照原始优化问题定义如下：
+
+$$d^*=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\theta_\mathcal{D}(w)=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\underset{w}{\operatorname{min}}\mathcal{L}(w,\alpha,\beta)$$
+
+这里我们不加证明的给出如下公式：
+
+$$d^*=\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\underset{w}{\operatorname{min}}\mathcal{L}(w,\alpha,\beta)\le\underset{w}{\operatorname{min}}\underset{\alpha,\beta:\alpha_i\ge 0}{\operatorname{max}}\mathcal{L}(w,\alpha,\beta)=p^*$$
+
+这样的对偶问题被称作拉格朗日对偶（Lagrange duality）。
+
+参考：
+
+https://mp.weixin.qq.com/s/IhvdhEnyRI2DRns9EkCy5Q
+
+拉格朗日对偶理论
+
+https://www.zhihu.com/question/58584814
+
+如何通俗地讲解对偶问题？尤其是拉格朗日对偶lagrangian duality？
 
 ## KKT条件
 
@@ -181,67 +232,3 @@ x_3x_1 \\ x_3x_2 \\ x_3x_3 \\
 更一般的，对于$$K(x,z)=(x^Tz+c)^d$$，其对应的$$\phi(x)$$是$$\begin{pmatrix} n+d \\ d \\ \end{pmatrix}$$维向量。
 
 我们也可以从另外的角度观察$$K(x,z)=\phi(x)^T\phi(z)$$。从内积的几何意义来看，如果$$\phi(x)$$和$$\phi(z)$$夹角越小，则$$K(x,z)$$的值越大；反之，如果$$\phi(x)$$和$$\phi(z)$$的夹角越接近正交，则$$K(x,z)$$的值越小。因此，$$K(x,z)$$也叫做$$\phi(x)$$和$$\phi(z)$$的余弦相似度。
-
-讨论另一个核函数：
-
-$$K(x,z)=\exp\left(-\frac{\|x-z\|^2}{2\sigma^2}\right)$$
-
-这个核函数被称为高斯核函数（Gaussian kernel），对应的$$\phi(x)$$是个无限维的向量。
-
->注：$$(a+b)^n$$是个p为0.5的二项分布，由棣莫佛-拉普拉斯定理（de Moivre–Laplace theorem）可知，当$$n\to\infty$$时，它的极限是正态分布。
-
-![](/images/article/SVM_5.png)
-
-Gaussian kernel也叫做Radial Basis Function(RBF) kernel，即径向基函数。
-
-参考：
-
-https://mp.weixin.qq.com/s/e-dGnE4Egepmp1OOaOJoNQ
-
-例子通俗解释机器学习中核函数的定义和作用
-
-https://mp.weixin.qq.com/s/VF7yWMYyPGbLmVMmV_G-bQ
-
-通俗易懂讲解RBF网络
-
-## 核函数的有效性
-
-如果对于给定的核函数K，存在一个特征映射$$\phi$$，使得$$K(x,z)=\phi(x)^T\phi(z)$$，则称K为有效核函数。
-
-我们首先假设K为有效核函数，来看看它有什么性质。假设有m个样本$$\{x^{(1)},\dots,x^{(m)}\}$$，我们定义$$m\times m$$维的矩阵k：$$K_{ij}=K(x_i,x_j)$$。这个矩阵被称为核矩阵（Kernel matrix）。
-
-$$K_{ij}=K(x_i,x_j)=\phi(x^{(i)})^T\phi(x^{(j)})=\phi(x^{(j)})^T\phi(x^{(i)})=K(x_j,x_i)=K_{ji}$$
-
-如果我们用$$\phi_k(x)$$表示$$\phi(x)$$第k个元素的话，则对于任意向量z：
-
-$$\begin{align}z^TKz&=\sum_i\sum_jz_iK_{ij}z_j=\sum_i\sum_jz_i\phi(x^{(i)})^T\phi(x^{(j)})z_j
-\\&=\sum_i\sum_jz_i\sum_k\phi_k(x^{(i)})\phi_k(x^{(j)})z_j=\sum_k\sum_i\sum_jz_i\phi_k(x^{(i)})\phi_k(x^{(j)})z_j
-\\&=\sum_k\left(\sum_iz_i\phi_k(x^{(i)})\right)^2\ge 0
-\end{align}$$
-
-即K矩阵是半正定矩阵。事实上，K矩阵是对称半正定矩阵，不仅是K函数有效的必要条件，也是它的充分条件。相关的证明是由James Mercer给出的，被称为Mercer定理（Mercer Theorem）。
-
->注：James Mercer，1883-1932，英国数学家，英国皇家学会会员，毕业于剑桥大学。曾服役于英国皇家海军，参加了日德兰海战。
-
-Mercer定理给出了不用找到$$\phi(x)$$，而判定$$K(x,z)$$是否有效的方法。因此寻找$$\phi(x)$$的步骤就可以跳过了，直接使用$$K(x,z)$$替换上面公式中的$$\langle x,z\rangle$$即可。例如：
-
-$$w^Tx+b=\sum_{i\in SV}\alpha_iy^{(i)}\langle x^{(i)},x\rangle+b=\sum_{i\in SV}\alpha_iy^{(i)}K(x^{(i)},x)+b \tag{6}$$
-
-核函数不仅仅用在SVM上，但凡在一个算法中出现了$$\langle x,z\rangle$$，我们都可以使用$$K(x,z)$$去替换，这可以很好地改善我们算法的效率。因此，核函数更多的被看作是一种技巧而非理论（kernel trick）。
-
-## 构造新核的技术
-
-给定有效的核$$k_1(x,x')$$和$$k_2(x, x')$$，下面的新核也是有效的：
-
-$$\begin{eqnarray}
-k(x,x') &=& k_1(x,x')
-\\ k(x,x') &=& f(x)k_1(x,x')f(x')
-\\ k(x,x') &=& q(k_1(x,x'))
-\\ k(x,x') &=& \exp(k_1(x,x'))
-\\ k(x,x') &=& k_1(x,x') + k_2(x,x')
-\\ k(x,x') &=& k_1(x,x')k_2(x,x')
-\\ k(x,x') &=& k_3(\phi{x},\phi{x'})
-\\ k(x,x') &=& x^TAx'
-\\ k(x,x') &=& k_a(x_a,x_a') + k_b(x_b,x_b')
-\\ k(x,x') &=& k_a(x_a,x_a')k_b(x_b,x_b')
-\end{eqnarray}$$
