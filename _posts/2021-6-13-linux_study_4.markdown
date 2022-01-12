@@ -65,6 +65,24 @@ https://mp.weixin.qq.com/s/sLyD6z2xBXRxfBZnImTgtQ
 
 40+张最全Linux/C/C++思维导图，收藏！
 
+# 协程
+
+https://www.zhihu.com/question/23955356
+
+协程和纤程的区别？
+
+https://mp.weixin.qq.com/s/mqpsOqc58D9StjlRoBIQug
+
+爱奇艺网络协程编写高并发应用实践
+
+https://mp.weixin.qq.com/s/T5s1IdBgc6yvfqNz5GpbWg
+
+一文讲透 “进程、线程、协程”
+
+https://zhuanlan.zhihu.com/p/94018082
+
+从头到尾理解有栈协程实现原理
+
 # Linux参考资源
 
 https://www.kernel.org/doc/html/latest/

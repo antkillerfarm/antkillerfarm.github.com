@@ -57,6 +57,20 @@ https://www.zhihu.com/question/482003599
 
 ---
 
+1999年年底，在全世界程序员在为千年虫问题焦虑的的时候，日本程序员却灵机一动：如果继续沿用昭和（1926年开始）年号的话，千年虫会足足延后到2025年。
+
+25年的时间总该可以解决这次的问题了。当然，如果真的打算解决的话……
+
+然而日本在2019年改元为令和时，不但要更改年号，而且昭和时代年号计算的“新千年虫”（昭和100年）马上就要来临。
+
+而且不幸的是，不少系统的源代码经过30至40年都已经丢失了。
+
+更加不巧的是，据说在日本IT界还有一个叫“2007年问题”的问题。
+
+也就是说，当年建立电脑系统的工程师，大部分都会集中在2007年退休。到现在，已经基本上没有多少人知道如何维护旧的系统了。
+
+---
+
 https://github.com/chrislgarry/Apollo-11
 
 Apollo 11登月代码成Github热度第一
@@ -326,31 +340,3 @@ CMU：分布式机器学习原理与策略 AAAI2021教程，附221页ppt
 https://mp.weixin.qq.com/s/nK-9ck5S6noIETOb8b2dJw
 
 vivo AI计算平台弹性分布式训练的探索和实践
-
-https://mp.weixin.qq.com/s/RMDEvy-3-L-Rag1OrZLYhg
-
-深度学习模型的训练时内存次线性优化
-
-https://mp.weixin.qq.com/s/8PUIJykzoNe-fYht5ozrcQ
-
-新一代CTR预测服务的GPU优化实践
-
-https://mp.weixin.qq.com/s/YusIuUtvTwoskNRV_OV7iw
-
-100万帧数据仅1秒！AI大牛颜水成团队强化学习新作，代码已开源
-
-https://www.zhihu.com/answer/2259890109
-
-资源受限的人工智能
-
-https://zhuanlan.zhihu.com/p/432289008
-
-从分布式训练到大模型训练
-
-https://zhuanlan.zhihu.com/p/371499074
-
-OneFlow——让每一位算法工程师都有能力训练GPT
-
-https://www.zhihu.com/question/498271491
-
-为什么说大模型训练很难？
