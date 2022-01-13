@@ -9,7 +9,31 @@ category: AI
 
 # TFLite
 
-## 模型文件解析（续）
+官网：
+
+https://tensorflow.google.cn/lite/
+
+Tensorflow源代码中自带的toco（Tensorflow Optimizing COnverter）工具，可用于生成一个可供TensorFlow Lite框架使用的tflite文件。
+
+代码：
+
+https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/lite/toco
+
+## 模型文件解析
+
+tflite模型使用flatbuffers进行序列化，因此也可以使用flatbuffers解析相关模型。
+
+需要注意的是flatbuffers生成的代码，有两种版本：
+
+- 精简版。默认设置。网上的解析代码用的都是这个版本。缺点：无法修改相应的模型。
+
+- 专业版。`--gen-object-api`。新增`UnPack/UnpackTo/Pack`方法，进行对象结构体与table结构体间的转换。
+
+专业版不是所有语言都有，至少ubuntu自带的flatc就没有提供对python的专业版支持。但是tensorflow自带的flatc是可以的。
+
+`bazel build //tensorflow/lite/tools:visualize`
+
+这个命令会生成一个schema_py_generated.py文件，也就是所谓的专业版本了。
 
 tflite模型中间结果的导出，不是太方便，原因是相关内存被复用。
 
@@ -319,61 +343,3 @@ unsupported/Eigen/CXX11/src/Tensor/TensorBase.h: TensorBase::contract()
 - GEMM运算会调用TensorContractionKernel。
 
 Tensor contraction是一种Tensor运算，参见《数学狂想曲（五）》中的“张量分析”一节。
-
-# Eager Execution
-
-TensorFlow的Eager Execution可立即评估操作，无需构建图：操作会返回具体的值，而不是构建以后再运行的计算图。这也就是所谓的动态图计算的概念。
-
-参考：
-
-https://mp.weixin.qq.com/s/Yp2zE85VCx8q67YXvuw5qw
-
-TensorFlow引入了动态图机制Eager Execution
-
-https://github.com/ZhuanZhiCode/TensorFlow-Eager-Execution-Examples
-
-Eager Execution的代码示例
-
-https://github.com/madalinabuzau/tensorflow-eager-tutorials
-
-TensorFlow的动态图工具Eager怎么用？这是一篇极简教程
-
-https://mp.weixin.qq.com/s/Lvd4NfLg0Lzivb4BingV7w
-
-Tensorflow Eager Execution入门指南
-
-https://github.com/snowkylin/TensorFlow-cn
-
-简单粗暴TensorFlow Eager教程
-
-https://github.com/snowkylin/tensorflow-handbook
-
-简单粗暴TensorFlow 2.0
-
-https://mp.weixin.qq.com/s/zz8XCykJ6jxbE5J4YwAkEA
-
-一招教你使用tf.keras和eager execution解决复杂问题
-
-# tf.data
-
-tf.data提供了一套构建灵活高效的输入流水线的API。
-
-![](/images/img2/datasets_without_pipelining.png)
-
-![](/images/img2/datasets_with_pipelining.png)
-
-上面两幅图中，第一幅图是没有使用流水线的情况，而第二幅图则是使用流水线的情况。
-
-参考：
-
-https://mp.weixin.qq.com/s/dfXTV4PFgC1Wbti42Zf4wQ
-
-tf.data API，让你轻松处理数据
-
-https://mp.weixin.qq.com/s/mjUnrPBPBuY6XKXkUymX-w
-
-实例介绍TensorFlow的输入流水线
-
-https://mp.weixin.qq.com/s/1ZlyVDJK6RWZ_1Ox7399IA
-
-用一行tf.data实现数据Shuffle、Batch划分、异步预加载等

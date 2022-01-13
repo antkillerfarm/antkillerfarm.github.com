@@ -9,6 +9,66 @@ category: AI
 
 # TensorFlow
 
+https://mp.weixin.qq.com/s/-5RCRl9ztQ2dQmX00QvfvQ
+
+在Python和TensorFlow上构建Word2Vec词嵌入模型
+
+https://mp.weixin.qq.com/s/Nyjp0mZxcn04vLKjJXLSaw
+
+如何用TensorFlow在安卓设备上实现深度学习推断
+
+https://mp.weixin.qq.com/s/OVWbxBNc4i0_5jgy06xS1A
+
+基于Tensorflow Estimators的文本分类
+
+https://mp.weixin.qq.com/s/h4Ve_UUajsdlk7PNS6J4QA
+
+TensorFlow Estimator模型从训练到部署
+
+https://mp.weixin.qq.com/s/c_2_9gvOynHaVW6pi4qQjQ
+
+用TensorFlow让机器人唱首歌给你听
+
+https://mp.weixin.qq.com/s/hn-LqyREkusxP2TOWfTJ6g
+
+使用TensorFlow官方Java API调用TensorFlow模型
+
+https://mp.weixin.qq.com/s/kS92vYyeHLc38RGc_4CZbg
+
+如何应用TFGAN快速实践生成对抗网络？
+
+https://mp.weixin.qq.com/s/hquOoKeeHQXqWcHM6Bkvbw
+
+如何训练一个简单的音频识别网络
+
+https://mp.weixin.qq.com/s/aWez5FYXXnRnDbb0zcXFXQ
+
+如何在TensorFlow中训练提升树模型
+
+https://mp.weixin.qq.com/s/kEowgNPVS1nAGBPbzkatlQ
+
+如何构建高可读性和高可重用的TensorFlow模型
+
+https://mp.weixin.qq.com/s/O_IN39FBVPeD5fRYBsPuZQ
+
+用TensorFlow开发问答系统
+
+https://mp.weixin.qq.com/s/8Hrq_z8s_5ms6Q_6OOaU-g
+
+如何使用TensorFlow和自编码器模型生成手写数字
+
+https://mp.weixin.qq.com/s/rQ9eZosHOoDOXg9tAg4t6A
+
+tensorflow Object Detection API使用预训练模型mask r-cnn实现对象检测
+
+https://mp.weixin.qq.com/s/cPWXAI2TBv3_ssnWDFoQ4w
+
+TensorFlow sucks，有人吐槽TensorFlow晦涩难用
+
+https://mp.weixin.qq.com/s/_kr28kN0_1QFP8BR_wGo5w
+
+TensorFlow RNN入门
+
 https://mp.weixin.qq.com/s/WqE-FRl-Thys7tHUvFNlWQ
 
 盯住梅西：TensorFlow目标检测实战

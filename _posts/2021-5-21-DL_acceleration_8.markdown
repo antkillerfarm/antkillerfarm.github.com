@@ -255,6 +255,16 @@ https://mp.weixin.qq.com/s/Fzu5YmWYxEohDJjmcGGjhQ
 
 ---
 
+随着硬件设备存储介质的改变和性能不断的提升，存储设备处理IO的能力越来越快，传统的旋转设备HDD单个IO需要几毫秒到十几毫秒不等，而如今的高性能的NVMe SSD已经降低到了微秒级别。
+
+因此也有了一些专门针对SSD硬盘的存储软件框架。
+
+https://mp.weixin.qq.com/s/d8aoAFi_lpFoZZCZsPij_g
+
+SPDK概览
+
+---
+
 https://zhuanlan.zhihu.com/p/34858149
 
 128G的固态硬盘为什么有的标120G，有的标100G？固态硬盘容量背后的秘密

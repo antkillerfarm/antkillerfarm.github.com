@@ -162,6 +162,12 @@ https://www.cnblogs.com/deep-learning-stacks/p/9823486.html
 
 TensorFlow中的Placement启发式算法模块——Placer
 
+## backend优先级
+
+`REGISTER_LOCAL_DEVICE_FACTORY(DEVICE_XLA_XXX_NPU, XlaXXXNpuDeviceFactory, 500);`
+
+CPU的优先级是50，添加的backend的优先级只要大于50，就可以得到调度权。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/RO3FrPxhK2GEoDCGE9DXrw
@@ -387,31 +393,3 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tenso
 除了运算类op之外，TF还有辅助类的op，例如tf.shape和tf.Print。下面的示例展示了如何在Graph中插入tf.shape和tf.Print结点，从而导出中间的计算结果：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tensorflow/graph/insert_print_node.py
-
-# TFLite
-
-官网：
-
-https://tensorflow.google.cn/lite/
-
-Tensorflow源代码中自带的toco（Tensorflow Optimizing COnverter）工具，可用于生成一个可供TensorFlow Lite框架使用的tflite文件。
-
-代码：
-
-https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/lite/toco
-
-## 模型文件解析
-
-tflite模型使用flatbuffers进行序列化，因此也可以使用flatbuffers解析相关模型。
-
-需要注意的是flatbuffers生成的代码，有两种版本：
-
-- 精简版。默认设置。网上的解析代码用的都是这个版本。缺点：无法修改相应的模型。
-
-- 专业版。`--gen-object-api`。新增`UnPack/UnpackTo/Pack`方法，进行对象结构体与table结构体间的转换。
-
-专业版不是所有语言都有，至少ubuntu自带的flatc就没有提供对python的专业版支持。但是tensorflow自带的flatc是可以的。
-
-`bazel build //tensorflow/lite/tools:visualize`
-
-这个命令会生成一个schema_py_generated.py文件，也就是所谓的专业版本了。

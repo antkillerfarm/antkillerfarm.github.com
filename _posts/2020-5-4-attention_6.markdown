@@ -66,6 +66,14 @@ https://mp.weixin.qq.com/s/_ETbYLu6qklaxJ2dv-xeSA
 
 计算机视觉中的Transformer，98页ppt
 
+https://mp.weixin.qq.com/s/XHnt5MRa52IeJKK6nfDb8Q
+
+Vision Transformer学习笔记1
+
+https://mp.weixin.qq.com/s/RhBK0szHORt7XHyoMEVnSA
+
+Vision Transformer学习笔记2: Swin Transformer
+
 # BERT进阶
 
 ## AR vs AE

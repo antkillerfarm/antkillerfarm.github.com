@@ -67,6 +67,16 @@ https://mp.weixin.qq.com/s/sLyD6z2xBXRxfBZnImTgtQ
 
 # 协程
 
+stack-twine：在古老的，DOS如日中天的时代，没有啥线程概念，更没有多个栈的能力。这个时代协程，是通过在栈里规划出一片额外的空间来执行协程。保证压栈退栈不破坏这片栈空间就行。多个协程就会规划出多个空间，然后在这些栈空间里跳转来跳转去的执行代码，就像相互缠绕着一样。
+
+stackfull：栈缠绕毕竟太过于原始粗暴，限制很多，而且危险。所以，在有了多线程能力后，分配一个独立的栈来运行协程再好不过了。除了空间需求增大外，相对于stack-twine几乎没有任何害处。
+
+stackcopy：stackfull被滥用后，或者说被用滥后，其额外空间的消耗就不是一个可以忽视的因素的。动辄上万甚至十万个协程，这内存开销是非常非常大的。在一些时间开销不是那么紧要地方，可以通过把当前栈内容拷贝出去的方式来实现协程切换。因为这种场合下，大部分协程使用的栈空间并不大，故可以显著的节省内存开销。但是呢，在有指针的语言里，这种行为很不安全。限制颇多，故没有流行开来。
+
+stackless：这是一个新兴的实现方案。本质上其实就是一个状态机。但通常由语言提供语法，编译器去实现状态机。拥有内存开销小，切换快的几乎所有优点，是一个“现代”语言都想拥有的功能。目前最成熟的实现是C#的await/async。C++/Java/Rust等语言也在谋划加入（或者已经成功加入）。
+
+参考：
+
 https://www.zhihu.com/question/23955356
 
 协程和纤程的区别？
@@ -82,6 +92,26 @@ https://mp.weixin.qq.com/s/T5s1IdBgc6yvfqNz5GpbWg
 https://zhuanlan.zhihu.com/p/94018082
 
 从头到尾理解有栈协程实现原理
+
+https://mp.weixin.qq.com/s/YU6snc2hbK2KvmoMI3nlug
+
+Linux中的各种栈：进程栈 线程栈 内核栈 中断栈
+
+https://zhuanlan.zhihu.com/p/330606651
+
+有栈协程与无栈协程
+
+https://www.zhihu.com/answer/2270734690
+
+为什么觉得协程是趋势？
+
+https://www.zhihu.com/question/52193579
+
+腾讯开源的libco号称千万级协程支持，那个共享栈模式原理是什么?
+
+https://zhuanlan.zhihu.com/p/347445164
+
+浅谈有栈协程与无栈协程
 
 # Linux参考资源
 
@@ -376,91 +406,3 @@ https://mp.weixin.qq.com/s/v9XlJjIQkuVpSudhQIS70A
 https://mp.weixin.qq.com/s/V-XT6QuDG522P0bP2e3ULg
 
 咋办，死锁了
-
-https://mp.weixin.qq.com/s/RHAoM8zhFvQl9R8V0ePxNQ
-
-看腾讯这道多线程面试题
-
-https://mp.weixin.qq.com/s/QshDG-nbmBcF1OBZbBFwjg
-
-操作系统与存储：解析Linux内核全新异步IO引擎io_uring设计与实现
-
-https://mp.weixin.qq.com/s/qWXcL90ZAkc7rrhsbuB_Bw
-
-只有170字节，最小的64位Hello World程序这样写成
-
-https://mp.weixin.qq.com/s/5iyWeSeDzuA2cY7YBMhk7w
-
-MMU那些事儿
-
-https://mp.weixin.qq.com/s/0OeeYUgBBVVMtxscvzgJHw
-
-i++是线程安全的吗？
-
-https://mp.weixin.qq.com/s/U0qr1oZYXBBmZnC5vsKYLQ
-
-浅谈linux IO
-
-https://mp.weixin.qq.com/s/3kgwoyYI90XHm1QPqFJAiQ
-
-内存分页不就够了？为什么还要分段？
-
-https://mp.weixin.qq.com/s/9x1JOl4m_mj0WpsVgHu4rg
-
-Linux文件系统与持久性内存介绍
-
-https://mp.weixin.qq.com/s/VSbzTh3xEbVdB4IgGJzQ3A
-
-25张图，一万字，拆解Linux网络包发送过程
-
-https://mp.weixin.qq.com/s/2dbr4-dxRCJ_SLCQnrt8ag
-
-Linux内核调度器源码分析
-
-https://zhuanlan.zhihu.com/p/61407714
-
-Linux文件系统的未来btrfs
-
-https://linux.cn/article-7083-1.html
-
-如何选择文件系统：EXT4、Btrfs和XFS
-
-https://yanqiyu.info/2021/06/21/huawei-v-qwr/
-
-某不知名网友怒斥华为，究竟发生了什么
-
-https://mp.weixin.qq.com/s/-8L5MFZrgmyatGgYaR1AEA
-
-波兰极客用一张软盘运行Linux系统，用的还是最新内核！
-
-https://mp.weixin.qq.com/s/-hfI4GLkChRJQDqcLcvbGg
-
-嵌入式C编程实现上下文的快速切换（cpost）
-
-https://zhuanlan.zhihu.com/p/400200921
-
-x86 Linux下实现10us误差的高精度延时
-
-https://www.zhihu.com/question/496656138
-
-为什么Windows文件设计成占用无法删除？
-
-https://mp.weixin.qq.com/s/h4LwSRAsDgRqOq3mLt_SCw
-
-浅谈mmap
-
-https://mp.weixin.qq.com/s/djEPqxZSfMp13Uf_h6TSiA
-
-认真分析mmap：是什么 为什么 怎么用
-
-https://mp.weixin.qq.com/s/FMYimnxcAya6bhvdGD5LUw
-
-惊魂48小时，阿里工程师如何紧急定位线上内存泄露？
-
-https://zhuanlan.zhihu.com/p/424240082
-
-编译一个属于自己的最小Linux系统
-
-https://www.zhihu.com/question/66902460
-
-为什么Linux下要把创建进程分为fork()和exec()(一系列函数)两个函数来处理?

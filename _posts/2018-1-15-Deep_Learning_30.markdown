@@ -91,6 +91,10 @@ https://mp.weixin.qq.com/s/j72Xlh8vUAltvUx0DFGoCA
 
 Meta Learning 3: 少样本文本分类 InductionNet
 
+https://mp.weixin.qq.com/s/bAyZZEuFEmlaFn4zTZL3Tw
+
+Meta Learning 4: 基于优化的方法
+
 https://zhuanlan.zhihu.com/p/133159617
 
 Meta-Learning in Neural Networks: A survey
