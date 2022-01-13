@@ -9,7 +9,17 @@ category: Chip
 
 # CPU
 
-## 国产CPU（续）
+## 国产CPU
+
+当年引进“以赛亚”内核的时候，兆芯的性能是优于龙芯的，然而，经过这些年的发展，龙芯通过不断迭代内核大幅提升的CPU性能，CPU性能已经超越兆芯。要知道，当时，兆芯承接核高基01专项，而且还有上海市地方海量资金扶持，而龙芯获得的经费和补贴相对于兆芯少的可怜。龙芯用实践证明了自主研发更具发展后劲，自主研发具有更高的效费比，可以花小钱办大事。
+
+2013年前后，兆芯向威盛支付了一大笔钱购买技术。2020年10月，兆芯又向威盛支付了一大笔钱。这种“买了又买”的事实很容易让人产生疑惑，兆芯到底能不能不再向威盛买技术？能不能真正独立自主发展？
+
+https://mp.weixin.qq.com/s/HDTNCrKYJ7daZieg4rb4VA
+
+英特尔收购威盛X86业务 兆芯何去何从
+
+---
 
 多年前，ARM Cortex A57大致与X86阵营吊车尾的VIA nano性能相当，短短数年间，ARM公版架构就接近到X86主流水平。而同期飞腾的Arm CPU的CPU核则进步缓慢，从2014年至2021年，其CPU IPC仅提升了20%左右，即便是以牙膏厂闻名遐迩的英特尔也只能自叹不如。
 
@@ -278,53 +288,3 @@ https://mp.weixin.qq.com/s/eAzdtKvfw7EVz5Ax3nXeZg
 https://mp.weixin.qq.com/s/NfNJVoAC5aW1sgToAmYsGw
 
 3nm芯片终结者
-
-https://mp.weixin.qq.com/s/o8C6n-ZRw3vFS8E-hikXJQ
-
-移动的王者：深入分析ARM最强处理器Cortex A77
-
-https://www.cnblogs.com/f-ck-need-u/p/11141636.html
-
-关于CPU的一些基本知识总结
-
-https://mp.weixin.qq.com/s/vTOGmcahRxQBH8RgkTJ2GA
-
-中文系同学都能听懂的集成电路设计流程
-
-https://mp.weixin.qq.com/s/O-2ecxYVOgEfRuwEoS7gRA
-
-Fab的那些事儿
-
->Fab的全称叫Fabrication，也就是集成电路制造的工厂、车间。
-
-https://mp.weixin.qq.com/s/_NcQ-PxNpEtpYdo450Uukg
-
-半导体材料全球格局
-
-https://zhuanlan.zhihu.com/p/114448236
-
-什么是Win10的“现代待机”？为什么它未来会越来越重要？这篇文章部分解释了我的第一个平板为什么那么耗电。
-
-https://mp.weixin.qq.com/s/J7RlmvU7JY1J8rV-eqjQ2A
-
-浅谈多核心CPU和SoC芯片及其工作原理
-
-https://mp.weixin.qq.com/s/Lnrlv7JcrOSwbnDweYf1Yg
-
-片上系统设计案例分析-Xbox主机
-
-https://zhuanlan.zhihu.com/p/86432216
-
-Microcode是什么？它为什么能修正CPU硬件错误？
-
-https://zhuanlan.zhihu.com/p/152167194
-
-两大FPGA公司的“AI技术路线”
-
-https://www.zhihu.com/question/503287789
-
-当两个CPU核心要求读写同一内存地址时，其后果是未定义行为吗？
-
-https://mp.weixin.qq.com/s/Kake5sQm79L2j_uDqKfznQ
-
-在《我的世界》里从零打造一台计算机有多难？复旦本科生大神花费了一年心血
