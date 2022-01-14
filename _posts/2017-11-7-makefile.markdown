@@ -204,6 +204,10 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/bazel
 
 bazel还可以从网上下载依赖文件：`http_archive`
 
+清理：
+
+`bazel clean --expunge`
+
 参考：
 
 http://www.cnblogs.com/Jack47/p/bazel-faq.html

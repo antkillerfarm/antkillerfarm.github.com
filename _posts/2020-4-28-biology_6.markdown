@@ -1,107 +1,11 @@
 ---
 layout: post
-title: 疫苗, DNA
+title: DNA
 category: Nature 
 ---
 
 * toc
 {:toc}
-
-# 疫苗
-
-19世纪初，预防天花的牛痘疫苗保质期只有12天。为了将牛痘传到遥远的新大陆，他们决心采用“人链”为疫苗“保鲜”：几个成年人带着一群孩子，毅然离开熟悉的家园远航。他们付出了惊人的努力，也有生命的代价，最终使接种疫苗预防天花的观念广为人知，奠定了人类消灭天花的重要基石。
-
-在越洋的航程开始的时候，他们先用疫苗为两个孩子接种，以确保在其中一个接种失败的情况下，还有另一个作为备份。当牛痘病毒在孩子体内发作，长出脓疱的时候，他们再以孩子身上的牛痘脓物作为疫苗，接种下一组的两个孩子……这个接力方案遵循着严格的时间表，因此，当船抵达新大陆的时候，就一定会有孩子可以成为疫苗的来源。
-
-https://mp.weixin.qq.com/s/NFF7bTvW7wtcyzVtMQOoJg
-
-人类消灭天花，是从19世纪初的一艘西班牙帆船开始的
-
-https://mp.weixin.qq.com/s/aWgQxZA95z9gWoogM_XK0Q
-
-从人痘到牛痘：疫苗发明的几个关键节点
-
----
-
-当1879年的某一天，巴斯德和其助手休假回到实验室时，却发现拿培养了一个月（远远超过了常规的培养时间）的细菌接种鸡时，鸡不死了——细菌失去了毒性。
-
-神奇的是，如果当已经接种过这种过期培养物的鸡再次接种高毒力的新鲜培养物依旧能够存活，但如果之前没有接种过这种过期培养的细菌的鸡却不能够直接抵抗新鲜培养物的接种，全部死亡了。
-
-当时大家都知道，虽然炭疽可以杀死各种牲畜，但鸡对炭疽却具有抵抗力，据巴斯德推测，这是由于它们相对较高的体温引起的。他推测高温可能会减弱炭疽的致病性，于是通过将培养物在较高的温度下进行培养（42–43°C下保持8天）来制备疫苗。
-
-他在日复一日的实验中发现，狂犬病在猴子中的连续传播会减弱这种生物体的致病性（表现为潜伏期变长）。相反，如果在兔子中的连续传代则会产生毒力更强的狂犬病形式（表现为潜伏期缩短）。
-
-巴斯德想要人在被狗咬伤后再接种疫苗，而不是暴露前，这一观点是极为大胆的。这种疫苗和病毒比谁更快发生作用的方法无疑是突破性的。
-
-https://mp.weixin.qq.com/s/ZDGhKLZHg9NMk1OzJzooEQ
-
-为啥法国如此在意自己研制的新冠疫苗？这得从巴斯德和狂犬病疫苗说起
-
-## mRNA
-
-mRNA示意图：
-
-![](/images/img3/mRNA.png)
-
-![](/images/img4/mRNA.png)
-
-https://mp.weixin.qq.com/s/oTjuAsfvLfEruHA-nY2clA
-
-因新冠而将提前诞生的世界首例mRNA疫苗
-
-https://mp.weixin.qq.com/s/b0Mw8uKLYuXHJ5Bj3t2Dwg
-
-一针重复2万亿段代码，我“逆向工程”了辉瑞疫苗！
-
----
-
-比起传统的疫苗，mRNA疫苗提出了新的要求：它们必须在低温下储存，以保持基因序列不变。摩德纳开发出的疫苗必须在零下20摄氏度的条件下储存，而辉瑞与德国伙伴BioTech合作开发的疫苗则需要零下70摄氏度的环境。相比之下，以往的大多数疫苗可以在2到8摄氏度之间的环境储存。
-
-比卡里科出名更早的是她的女儿祖萨娜·弗朗西亚（Zsuzsanna Francia）。也许是继承了母亲坚忍不拔的精神，祖萨娜在2008年北京奥运会和2012年伦敦奥运会上连续夺得了划船比赛冠军。
-
-https://zhuanlan.zhihu.com/p/321849361
-
-新冠疫苗来了，但它也许将成为“后勤的噩梦”
-
-https://mp.weixin.qq.com/s/sx3HukH4CQ54IDGfDrdIig
-
-中年失业、患癌，她用四十年逆袭拯救全人类，还培养了一个奥运冠军（Katalin Karikó）
-
-https://mp.weixin.qq.com/s/i-3OgItqwXBlf60XBoJ07Q
-
-mRNA技术获拉斯克临床医学研究奖
-
-## DNA
-
-DNA疫苗是把病原体蛋白的基因直接整合到dna载体上，将dna疫苗导入到人体细胞里，通过dna基因转换为mrna，mrna翻译生产成病原体蛋白质进而激发免疫反应，相当于将人体作为一个抗原生产工厂。 
-
-DNA疫苗需要特殊的注射针，就是由很多微细的针组成阵列，这样才能发射携带质粒的金属微粒进入细胞核，整个注射针列看起来似乎没有针一样。
-
-DNA疫苗由于直接进入细胞核，故相当于一次真实感染，能获得非特异性免疫，这是它巨大的优点！但是外源基因整合进细胞核，鬼知道会有什么长期后果！
-
-DNA疫苗已经在动物中使用，很成功，效果堪比减毒疫苗，问题是人工饲养动物基本不过生日啊。
-
-## 参考
-
-https://mp.weixin.qq.com/s/vXM_QnRtB1rF0-lhqAWxww
-
-流感疫苗：跑在病毒肆虐之前
-
-https://mp.weixin.qq.com/s/OykrRcejQvw49ONj7nEAVA
-
-全世界都对新冠疫苗翘首以盼，你知道疫苗在中国是怎么普及的吗？
-
-https://mp.weixin.qq.com/s/zeT-ksuPmbnMXDZxWKlXwQ
-
-无法保证接种过疫苗？那就再打一遍
-
-https://mp.weixin.qq.com/s/ltMU8pSPKnfVK7FLp7bmBQ
-
-疫苗研发的历史疑云？都是滚石惹的祸！
-
-https://mp.weixin.qq.com/s/QYJ83t5DL3xqTh12964nFw
-
-疫苗大师竞争：帮了人民亿万，不容对手一人（脊髓灰质炎疫苗）
 
 # DNA
 
@@ -165,62 +69,252 @@ https://www.f793.club/blog/liusheng1/
 
 关于Y141213是中山靖王刘胜的探讨
 
-https://mp.weixin.qq.com/s/_eLI8hfKhxbL8Qn9350MZw
+# 生物+
 
-从28年悬案告破说起：Y染色体的倔强进化史
+https://mp.weixin.qq.com/s/a4R4peyc_n6qFOGemEp2vw
 
-https://mp.weixin.qq.com/s/Sb8ryvLbHlan8AB6iAnhpw
+叫红豆的有十几种，哪个才是真正的“相思豆”？
 
-盖棺未定论的理查三世（上）
+https://mp.weixin.qq.com/s/pFY3y-iRgA6tpo5800hv8w
 
-https://mp.weixin.qq.com/s/mTbnWFJkx7xbbVUgM-qt9Q
+为什么有人要在牛屁股上画画？
 
-盖棺未定论的理查三世（下）
+https://mp.weixin.qq.com/s/B7q-f4TROf6DxgExQsKW2A
 
-https://mp.weixin.qq.com/s/-9nmfhYlPtCs2Fx74Yv6Xw
+世界上唯一实现100%“一夫一妻”的动物：它们活成了彼此的真·另一半（双身虫）
 
-考古学家：《清平乐》的梁怀吉小哥哥，可能是骨质疏松的…大高个
+https://mp.weixin.qq.com/s/LAUUrZdXRjtwOvyJZlRxgg
 
-https://mp.weixin.qq.com/s/DVtPA14nXgZPU-GBOiSdDg
+16世纪的沉船，诉说着500年前西非大象的生活
 
-它是国家一级保护动物，在海底默默记录着古代的天气（砗磲）
+https://mp.weixin.qq.com/s/dzfAZxFyWy_3ullCzgcpJQ
 
-https://mp.weixin.qq.com/s/RMBG1dnmKD6p1itU1OKXvA
+同样是遭遇核辐射，为什么植物不会死于癌症？
 
-克里彭杀妻案，百年前的一场谋杀
+https://mp.weixin.qq.com/s/zz92naARYTqLoKKEr08R9w
 
-https://mp.weixin.qq.com/s/5RE_ZMZpj_2gOUBkBCR2Tg
+为什么会有蚊子这么烦人的生物存在？
 
-跨越百万年的障碍：发现最古老的DNA
+https://mp.weixin.qq.com/s/-NzHFNhGUwUCQZQxpgt4zQ
 
-https://mp.weixin.qq.com/s/yaBTFcz7sqCanIwKHkOBBA
+一种神奇的细菌，解救科研民工于水深火热（聚合酶链式反应）
 
-20年，17座里程碑（基因组学）
+https://mp.weixin.qq.com/s/mHi_f2bfG-l7mE_RvZvmoQ
 
-https://mp.weixin.qq.com/s/NzaavGjL8kgTD4DgKXYwYA
+5.5亿年前小虫写下“遗书”，揭开寒武纪前生物神秘面纱
 
-这7个名字，你知道几个？（基因组学）
+https://mp.weixin.qq.com/s/SOlcOOH6_EbIApGC5o8eAw
 
-https://mp.weixin.qq.com/s/KntGFIUKXoDtKKXPdqNtFQ
+如何快速“发家致富”？基因组用了这种高招
 
-150年的解密之旅
+https://mp.weixin.qq.com/s/-FaWGExKgKiWPdQq3R27iw
 
-https://mp.weixin.qq.com/s/34xph2EFT5yJUCO4hyq-7w
+我们每天吃的米饭，最早是从哪里来的？
 
-A→Z：奇怪的DNA
+https://mp.weixin.qq.com/s/l5RsUQkPbJBtH-XKvvSD5Q
 
-https://mp.weixin.qq.com/s/W-AXA7svXvW4S9VRmwBn4Q
+灭绝动物生前最后影像曝光
 
-首次测量染色体的质量
+https://mp.weixin.qq.com/s/CVbKBN9CqH8kM5oXLzieEw
 
-https://mp.weixin.qq.com/s/Ka4k-FXaNY87qOjEmI18bg
+中生代那么热，大恐龙为啥没把脑子烧坏？
 
-从“母亲”那遗传来的抗压能力，算不算外挂？
+https://mp.weixin.qq.com/s/n0g-boKmCIdnzwaWMPozEw
 
-# 生物
+没有食物链，就真的没有杀害？
 
-造纸术在9世纪末传入埃及，埃及本地拥有丰富的亚麻破布之类造纸原料，纸张相当廉价，阿拉伯旅行者记叙埃及鱼贩子都用纸包鱼，纸莎草纸失去了竞争力不再生产，也就不需要种植纸莎草这种原材料了，农民纷纷排干水塘沼泽种植其他作物。
+https://mp.weixin.qq.com/s/K-8qNqaGlQuxkuLG2xo7ug
 
-https://www.zhihu.com/question/406134192
+没有玻璃塑料的年代，人类幼崽竟然这样吃奶
 
-为什么纸莎草曾经在埃及灭绝了？
+https://mp.weixin.qq.com/s/HDpPSlqZkLODj-z3_E60-A
+
+人类为什么不能冬眠？
+
+https://mp.weixin.qq.com/s/AYhxGd6iS--bTqg77b-uUQ
+
+同样都是辣，为什么辣椒辣菊花，芥末却能让你呛鼻上头？
+
+https://mp.weixin.qq.com/s/9LYRsYy0t-yAghfuIQ8VSQ
+
+为什么会有蟑螂这种反人类的动物出现?
+
+https://mp.weixin.qq.com/s/F8aiXoLdjgmhky3diZ8iVQ
+
+养娃这么心累的事，最早是谁“发明”的？
+
+https://mp.weixin.qq.com/s/7N9Zf8r4WLBJDH3Y5hdkGw
+
+这个能反复“涅槃”的物种，是何方神仙？（蝾螈）
+
+https://mp.weixin.qq.com/s/HdGe6U1PPYnKEgSM09eJmg
+
+看，是四螺旋
+
+https://mp.weixin.qq.com/s/vDOKrcaI-Lvb30eXpYFsoQ
+
+细菌+酵母=？
+
+https://mp.weixin.qq.com/s/TQX84Npy_6jRbzH82cZ9Bw
+
+首次发现具有三种性别的藻类
+
+https://mp.weixin.qq.com/s/9dXgBf4kd-rBIPxFObXTCw
+
+3.1亿年前的脑
+
+https://mp.weixin.qq.com/s/3xGQ9Io3C_xfOd7ZFXINZA
+
+这些神话有点科学（地质神话学（Geomythology））
+
+https://mp.weixin.qq.com/s/jfXx6J3eKLoDFIPYwWLofw
+
+蜂鸟为何女扮男装？
+
+https://mp.weixin.qq.com/s/du67N6Er2Kr0eawHwbuTog
+
+恐怖杀手？人间美味？非洲大蜗牛真假大揭秘
+
+https://mp.weixin.qq.com/s/NGrDE6ab_RJGCTnfDFp3-g
+
+Nature：细菌活性物质自组织新路径
+
+https://www.zhihu.com/question/445030637
+
+为什么有毒植物分布反而不密集？植物进化出毒素不就可以防止被动物吃了吗，不是应该更有竞争优势吗?
+
+https://mp.weixin.qq.com/s/XHSFPnczmqksog3LKRfT2g
+
+长江为什么要禁渔十年？
+
+https://mp.weixin.qq.com/s/IkP0i4SaoqhhOXHvokOrEQ
+
+惹什么猫都别惹熊猫！“功夫熊猫”20年对人类拿下4血
+
+https://mp.weixin.qq.com/s/YTa62f8OyPLAOMkfDDA2Tg
+
+38年，4000公里，他带着妻子追“初恋”（黑脉金斑蝶迁徙现象）
+
+https://mp.weixin.qq.com/s/6w_VGj3T1ggEY8y8ojBiog
+
+见龙卸甲：鱿鱼是如何进化成好吃的样子的
+
+https://mp.weixin.qq.com/s/THbYMENUF-pIc_-HrYhwzQ
+
+曾经的它是国家储备粮，如今却被包了汤圆（芝麻）
+
+https://mp.weixin.qq.com/s/mHgyI94VjBW81YaRMcz5MQ
+
+陆生蟹类们奇奇怪怪的带娃方式
+
+https://www.zhihu.com/answer/1770473264
+
+为什么人类没有发展出攻击性的器官？（肘击）
+
+https://mp.weixin.qq.com/s/nugPN8pPWq5dw4W4QTHljA
+
+中国每3个菠萝，就有1个来自这片“菠萝的海”（徐闻）
+
+https://mp.weixin.qq.com/s/G_5OxVyWXO671DWGTbtc-Q
+
+真菌王国里的蛇、僵尸和马拉松运动员
+
+https://mp.weixin.qq.com/s/7XkahmBf0RqEDzIzvLiR0g
+
+在“植物庞贝城”的发现，揭开了古植物学的一大谜团
+
+https://www.zhihu.com/question/450637881
+
+90后女博士给新物种命名“派大星”，这是一种怎样的生物？物种命名一般有什么讲究？
+
+https://mp.weixin.qq.com/s/HMd8OHw7x9_RWY3gN120SA
+
+这里是蚂蚁农场，我种田的地方！
+
+https://mp.weixin.qq.com/s/KuQlVs7UBQVOvqk-FUycDg
+
+真的假的？
+
+https://mp.weixin.qq.com/s/0BhKyUEjAC9IMDc2pg8kwA
+
+看到电影《美人鱼》末尾主角游来游去，我想，这不是水蛛的水泡嘛
+
+https://mp.weixin.qq.com/s/Rxinin1xmZCEgKDiFzuESw
+
+有些小可怜啊，还没准备好就被爹娘赶出了家
+
+https://mp.weixin.qq.com/s/iz0KD_CQE6dPexjktpgPng
+
+我很高，可是我很......（长颈鹿）
+
+https://mp.weixin.qq.com/s/76umxXX-YXyIPJH5n_Z-cQ
+
+科学家上！保护我方新疆棉花！
+
+https://mp.weixin.qq.com/s/VCV9VzwmvAiVrptl8XqSag
+
+鸟类去哪儿：中国学者揭秘游隼迁徙路线
+
+https://mp.weixin.qq.com/s/PuSOuUY8RwRcELhfD40X3w
+
+一次超级大旱，改写了亚洲先民的交往史
+
+https://mp.weixin.qq.com/s/cVUdn76q5bgQrOl-FQutIQ
+
+恐龙挖掘技术哪家强？
+
+https://mp.weixin.qq.com/s/b-JiU_a4J3givgRYJy49yA
+
+4.8亿年前，它们改变了世界？
+
+https://mp.weixin.qq.com/s/Dg-Sp4oDGHv7TOrkSXxAJQ
+
+濒危程度降级之后，为什么还要保护大熊猫？
+
+https://mp.weixin.qq.com/s/wXGQwH9MBAiY8IZ-meeFUg
+
+用最短的腿走出最拽的步伐（水熊虫）
+
+https://mp.weixin.qq.com/s/WZIQ-12ZEYpcXZd4c6HcOA
+
+人工智能，锁定一亿年前那只装成叶子的小虫
+
+https://mp.weixin.qq.com/s/bvBo78DFR28HZlxKCjKa2Q
+
+一场改变命运的转移（粉虱）
+
+https://mp.weixin.qq.com/s/M6Mfv1hmmMEIfn1XhXDiCw
+
+小虫窃取植物基因，获得抗毒超能力
+
+https://mp.weixin.qq.com/s/DPFNbFOu4hyu3dpLQ_Rv6g
+
+用毒蛇的毒毒毒蛇，毒蛇会不会被毒毒死？
+
+https://mp.weixin.qq.com/s/1YfsFe462NU9JwCkeCl34w
+
+五颜六色的猕猴桃? 还有麻辣味的那种
+
+https://mp.weixin.qq.com/s/B7MUEXmPttlpvUz0JBfwkQ
+
+“ICU菇”：蘑界常见杀手，天生的策略家
+
+https://mp.weixin.qq.com/s/DDFdKzNedeZdz6YU46vhUw
+
+如何绘制一张海洋生物“山海经”？
+
+https://mp.weixin.qq.com/s/fIASH1e7ajdAxsIeENuVyQ
+
+为了不被强上，这种动物竟然进化出了这种器官结构！
+
+https://mp.weixin.qq.com/s/m1FpZMzKqCxjyqXz2LXrew
+
+世界最大杀人蟹！长达4米，60人因此丧命，还敢吃下鲨鱼...
+
+https://view.inews.qq.com/wxn/20211126A057HI00
+
+加拿大鹅处罚决定书，简直是羽绒服购买指南
+
+https://www.zhihu.com/question/502944559
+
+昆虫为什么要进化出蛹这种不利于生存的形态？
