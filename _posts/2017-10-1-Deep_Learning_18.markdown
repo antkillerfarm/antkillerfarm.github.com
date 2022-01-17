@@ -275,6 +275,8 @@ https://mp.weixin.qq.com/s/qgP39JKD3fbVNK8e4Hw4PQ
 
 ## 对比学习
 
+![](/images/img4/SimCLR.jpg)
+
 https://mp.weixin.qq.com/s/r1uXn2jGsHZcZ8Nk7GnGFA
 
 语义表征的无监督对比学习：一个新理论框架

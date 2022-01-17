@@ -1,0 +1,94 @@
+---
+layout: post
+title:  Win10/11历险记, Kannel, ZeroC ICE
+category: technology 
+---
+
+* toc
+{:toc}
+
+# Win10/11历险记
+
+2015.8
+
+我大概在4、5月间，听说了Win10免费升级的消息。于是一直很期待7月29日的到来。果然到了29日当天下午的时候，公司电脑就收到了升级的通知。然而由于网速不给力，当天并未对公司电脑进行升级。倒是晚上在家里的电脑上，虽然耗时2小时，但却一路顺利的升级成功。
+
+Win10给人的第一感觉，其实和Win8差不多，只不过加了个更像Win7的开始菜单而已。不过既来之则安之，一段时间用下来，总算还是要比Win7强不少的。
+
+又过了几天，公司的电脑也升级成功。正得意间，忽然发现VirtualBox在Win10下工作不正常。查了VirtualBox官网方知，其目前尚不支持Win10 Host。于是不得不重新降级到Win7。看来尝鲜也是有得有失的。对于工作用的电脑，有的时候够用就好，没必要什么都求新的。
+
+2020.11
+
+由于硬盘出了些故障，原来在备份分区准备着的Ghost镜像，恢复系统失败，不得不使用U盘启动并重装系统。
+
+除非是从Win7升级，否则Win10强制要求硬盘是UEFI启动的。修改硬盘分区格式的方法如下：
+
+https://docs.microsoft.com/zh-cn/windows-server/storage/disk-management/change-an-mbr-disk-into-a-gpt-disk
+
+将MBR磁盘转换为GPT磁盘
+
+应该说这次U盘安装Win10的体验还是不错的。MS官方提供了相关工具（Windows PE），一切都是傻瓜操作。不像早期的光盘安装，还要注意启动盘和数据盘的差异。当然U盘其实也存在这两者的差异问题，不过工具已经帮你处理好了。
+
+这样一来，光盘确实是没啥用了，即使我的第一台PC的光驱，实际使用也不过数十次，更多的主要是用于重装系统，如今连这也用不着了。
+
+最后，吐槽一下系统的体积，Win10启动需要8G以上的U盘，DVD看来也不够用了。
+
+2021.11
+
+最近电脑更新了Win11，升级顺利，暂时无感。
+
+# Kannel
+
+Kannel是一个开源的WAP&SMS网关项目。
+
+官网：
+
+http://www.kannel.org/
+
+这里提到这个项目，并非它有多么重要——实际上它从2010年之后就几乎没有更新了，最新的版本定格在2014年。它所代表的WAP已经无人问津，至于SMS吧，似乎又用不到这么复杂的框架。
+
+但我之所以要提它，主要在于情怀。2007年底的时候，公司给我安排了一个在App中集成彩信发送功能的任务。当时由于能力尚浅，虽然努力了一个月，最终却没有实际成果，很是让领导质疑了一阵，幸好接手的哥们同样做不出来，而我的下一个任务——使用jpeglib，获得了成功，才算将事情平息下来。
+
+过了一年，闲暇无聊之际，旧事重提，于是发现了Kannel，并做了一个demo。可惜公司时局变化，这一切都变得无足轻重了。
+
+# ZeroC ICE
+
+我在研究生时代，研究过CORBA、EJB、COM这样的中间件技术。然而工作以后，再没有机会使用。平时偶尔关注，也只是晓得CORBA从来没有流行过，EJB在Struts、Hibernate、Spring等框架的围攻下，用者寥寥。直到最近，因为项目需要接触到ZeroC的ICE框架。
+
+ICE框架的官网地址：
+
+https://zeroc.com/downloads/ice
+
+安装：
+
+```bash
+wget https://zeroc.com/download/GPG-KEY-zeroc-release
+sudo apt-key add GPG-KEY-zeroc-release
+sudo apt-add-repository "deb http://zeroc.com/download/apt/ubuntu16.04 stable main"
+sudo apt update
+sudo apt install zeroc-ice-all-runtime zeroc-ice-all-dev
+sudo apt install libssl-dev
+pip install zeroc-ice
+```
+
+多语言demo：
+
+https://github.com/zeroc-ice/ice-demos
+
+注意demo的master分支是开发分支，好多代码都是有问题的，请切换到正在使用版本的分支，例如：
+
+`git checkout 3.6`
+
+# Hprose
+
+Hprose是ZeroC ICE的一个竞争者，由国内某高手打造，支持的语言超过20种，堪称最全。不过貌似没什么大公司用啊。。。
+
+其标榜的无需生成桩代码的优点，相比ZeroC ICE的老版本来说，的确是个进步。但目前的ZeroC ICE 3.6版本，也同样提供了类似的功能。这或者也是Hprose一直火不起来的原因。
+
+官网：
+
+http://hprose.com/
+
+Github：
+
+https://github.com/hprose

@@ -85,6 +85,18 @@ No instruction set computing：上面提到指令需要分解成微指令才能�
 
 One-instruction set computer：使用Bit-manipulating之类的技术，可以用1条指令搭建一个图灵完备的机器。
 
+## 定律
+
+Amdahl's rule（阿姆达尔定律）：整个计算系统的性能提升取决于速度最慢的这一部分。
+
+Gustafson's law（古斯塔夫森定律）：问题规模足够大（必须串行执行的时间相对小）时，增加核心数目是好的。
+
+两个定律，一个悲观，一个乐观，但是并不矛盾。
+
+https://www.jianshu.com/p/2a756f9c379f
+
+阿姆达尔定律和古斯塔夫森定律
+
 ## 术语
 
 Shared Virtual Memory，SVM
@@ -92,8 +104,6 @@ Shared Virtual Memory，SVM
 Memory consistency model
 
 Multisample anti-aliasing，MSAA
-
-Amdahl's rule，整个计算系统的性能提升取决于速度最慢的这一部分。
 
 ## 参考
 

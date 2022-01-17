@@ -9,6 +9,22 @@ category: Nature
 
 # 火星探测（续）
 
+https://mp.weixin.qq.com/s/cht7uCrbhAttO1cmXRvcPw
+
+为什么“天问一号”必须进入环绕火星大椭圆轨道？
+
+https://mp.weixin.qq.com/s/LVVCA_WTd5PoAn_wHzlJjw
+
+耗资27亿美元，美国又一辆核动力火星车成功着陆，还带了一架直升机
+
+https://mp.weixin.qq.com/s/eNG-zbHfrji3frbRbQI-Xw
+
+听！火星的声音！又一辆核动力火星车刚刚着陆，寻找远古火星生命
+
+https://mp.weixin.qq.com/s/0gArlvImgT6V7xEg9SCLTQ
+
+毅力号睁开几双“眼睛”，360度全景展示它的火星新家
+
 https://mp.weixin.qq.com/s/jkK0Xf3Hx0vJ0VpkEljMzw
 
 高清火星影像来了，天问一号拍的！
@@ -268,13 +284,3 @@ https://view.inews.qq.com/wxn/20211225A08N9G00
 https://mp.weixin.qq.com/s/AIMccIbtB6W5nwu-6yRuJw
 
 “鸽王” 韦伯上天之前，你需要知道这些
-
----
-
-![](/images/img4/Van_Allen_radiation_belts.jpg)
-
-范·艾伦辐射带（Van Allen radiation belts）是地球磁场捕获的太阳宇宙射线和部分银河宇宙射线中的高能带电粒子组成。一般来说，内辐射带里高能质子多，外辐射带里高能电子多。
-
-1958年1月31日，美国第一颗人造卫星探险者一号升空，当升至800千米高空时，星上所载盖革计数器读数突然下降至0。到1958年3月26日探险者三号升空时，又发生了同样的情况。James Van Allen认为，这是因为存在极大量的辐射导致计数器达到饱和而失灵造成的。因此，同年7月26日发射探险者四号时，他在计数器前端加入一小片薄铅以阻挡部分辐射。果然，新的卫星证实了他的猜测。
-
->James Van Allen，1914～2006，University of Iowa博士（1939）+教授。美国科学院院士。

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  数据库（二）
-category: technology 
+category: database 
 ---
 
 * toc

@@ -9,6 +9,16 @@ category: Nature
 
 # 天文杂谈
 
+![](/images/img4/Van_Allen_radiation_belts.jpg)
+
+范·艾伦辐射带（Van Allen radiation belts）是地球磁场捕获的太阳宇宙射线和部分银河宇宙射线中的高能带电粒子组成。一般来说，内辐射带里高能质子多，外辐射带里高能电子多。
+
+1958年1月31日，美国第一颗人造卫星探险者一号升空，当升至800千米高空时，星上所载盖革计数器读数突然下降至0。到1958年3月26日探险者三号升空时，又发生了同样的情况。James Van Allen认为，这是因为存在极大量的辐射导致计数器达到饱和而失灵造成的。因此，同年7月26日发射探险者四号时，他在计数器前端加入一小片薄铅以阻挡部分辐射。果然，新的卫星证实了他的猜测。
+
+>James Van Allen，1914～2006，University of Iowa博士（1939）+教授。美国科学院院士。
+
+---
+
 https://mp.weixin.qq.com/s/aY4gFbK_aKWcgwvr0Rk5gQ
 
 “波多黎各，波多黎各，世界最大射电望远镜，倒闭了”（Arecibo望远镜）
@@ -270,133 +280,3 @@ https://www.zhihu.com/question/25663240
 https://www.zhihu.com/question/28099598
 
 怎样测量天体的质量?
-
-# 物理+++
-
-https://mp.weixin.qq.com/s/tTMrr5-urQhZlIBTKSHw8g
-
-物理学家终于破解了不粘锅的粘锅之谜
-
-https://mp.weixin.qq.com/s/FabMpGipsWnURnlx824WKA
-
-全世界70亿人同时起跳，地球会天崩地裂？
-
-https://mp.weixin.qq.com/s/qQAwISuQnrNZkhcr2NVHWQ
-
-光的本质
-
-https://mp.weixin.qq.com/s/sVun44eLMKBFINnVVpNM1g
-
-看见光的15种方式
-
-https://mp.weixin.qq.com/s/hdKHsNagXaUGJU24GOvHMg
-
-宇宙中的光
-
-https://mp.weixin.qq.com/s/CguKKKmK6Dx_KhslTanwZg
-
-十大物理学预测
-
-https://zhuanlan.zhihu.com/p/72636777
-
-粒子物理入门notes
-
-https://mp.weixin.qq.com/s/np9OuEMQNtKMC7P1KPzTmg
-
-通往物理学世界的地图
-
-https://mp.weixin.qq.com/s/3svGvbk0-ek5tQCWJ9ii4A
-
-读懂相对论：从弯曲空间的几何开始
-
-https://mp.weixin.qq.com/s/oCoyEh1VhUmqZnf9okgYnA
-
-科普：十大物理学中最牛逼的思想实验!
-
-https://mp.weixin.qq.com/s/k3v_5vXWfyBag5mmjD78Xw
-
-拓扑物理浅析
-
-https://mp.weixin.qq.com/s/ChZ-cNTSb7Pm_ka9gunm9A
-
-73岁硬核老爷爷，用物理自证车祸无责，葛军：看来又有新题材了
-
-https://zhuanlan.zhihu.com/p/51330777
-
-宇称不守恒到底说了啥？杨振宁和李政道的发现究竟有多大意义？
-
-https://zhuanlan.zhihu.com/p/55922673
-
-杨-米尔斯理论说了啥？为什么说这是杨振宁超越他诺奖的贡献？
-
-https://mp.weixin.qq.com/s/oweK30KIVInGK6wcFSRrTQ
-
-三伏天，我在伊朗的风塔里惬意乘凉
-
-https://mp.weixin.qq.com/s/Kfiz22KpxHtkQof3C5g81A
-
-卡路里的身世变迁
-
-https://mp.weixin.qq.com/s/b22vJHOrm_mOMa71TidN4w
-
-八大数学预言
-
-https://mp.weixin.qq.com/s/-4yzwG_LS1J_svR1CiOcpQ
-
-一道闪电掉进海里，会电死多少鱼？
-
-https://mp.weixin.qq.com/s/0CHFXs8IAxFIwvy7hOcnnw
-
-不加色素做出彩虹色巧克力，科学家浪漫起来也太硬核了
-
-https://mp.weixin.qq.com/s/GuXzR6Xf46ByomcVLzai3Q
-
-干洗店用的一种东西，居然跟生命起源有关系？
-
-https://mp.weixin.qq.com/s/9ym_nblmAzSiiEeIFJ346g
-
-活了九十年十个月零两天的业余科学家，最伟大的显微镜制造者（Antonie Van Leeuwenhoek）
-
-https://www.zhihu.com/question/48411767
-
-节能灯和荧光灯到底有什么区别？
-
-# 化学++
-
-## 化学工业
-
-https://wallstreetcn.com/articles/250536
-
-巴斯夫原本是它小弟，德国化工产业的代名词：揭秘史前化工巨兽 IG 法本
-
-http://blog.sina.com.cn/s/blog_52f526870102w7xo.html
-
-历经百年兴衰 德国化工三巨头为何屹立不倒
-
-http://www.weixinso.com/document/KPyZBb.html
-
-陶氏化学发展史
-
-http://www.pnchina.com/cn/Detail.aspx?id=1361250587
-
-业界经典：陶氏化学Styrofoam之75年
-
-https://new.qq.com/omn/20180819/20180819A011JT.html
-
-起于硝烟的化工帝国：杜邦是怎么与化工行业同呼吸共命运的？
-
-http://www.qdaily.com/articles/18872.html
-
-杜邦要合并了，过去一百年，这家公司的发明都改变了些什么？
-
-https://mp.weixin.qq.com/s/MkVeQ7xYAHV8mA1zmdr0qg
-
-四川五通桥事故频发：“化工围城”之殇
-
-https://mp.weixin.qq.com/s/jX9AMoQDTMZ8s2m_RFg0Pg
-
-这家马桶刷公司，生产了最早的现代人造圣诞树
-
-https://mp.weixin.qq.com/s/aUYieCVLLom7EaWIhfccRQ
-
-院士写了首《化工之歌》，聊聊化工那些事

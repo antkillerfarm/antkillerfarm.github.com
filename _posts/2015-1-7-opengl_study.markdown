@@ -47,6 +47,14 @@ GLAD：Multi-Language GL/GLES/EGL/GLX/WGL Loader-Generator
 
 简单说glad是glew的升级版。
 
+---
+
+OpenTK提供了OpenGL, OpenGL ES, OpenAL, OpenCL等库的C#语言的绑定。
+
+官网：
+
+https://opentk.net/
+
 ## 环境准备
 
 ### Ubuntu

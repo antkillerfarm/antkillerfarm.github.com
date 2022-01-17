@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Git
-category: technology 
+category: toolchain 
 ---
 
 * toc

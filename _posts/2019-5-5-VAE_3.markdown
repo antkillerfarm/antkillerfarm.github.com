@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  VAE（三）——VAE vs GAN, Normalizing Flow, VAE参考资源
+title:  VAE（三）——VAE vs GAN, Normalizing Flow, Diffusion Model, VAE参考资源
 category: GAN & VAE 
 ---
 
@@ -285,6 +285,44 @@ https://mp.weixin.qq.com/s/KrvW16GAxSGAPOCYYKbGUg
 
 生成模型：标准化流（Normalized Flow）
 
+# Diffusion Model
+
+Diffusion Model也是一类生成模型方法。
+
+![](/images/img4/FLOW.png)
+
+Diffusion Model主要通过采样的方法，不断逼近模型的数据分布，从而生成数据。基本原理和VAE一样仍然是Markov Chain Monte Carlo。
+
+Diffusion Model由于天生就是渐变的迭代过程，因此在流程的可控性上很有优势。当时间宽裕时可以通过高轮次的迭代获得高质量的合成样本，同时较低轮次的快速合成也可以得到没有明显瑕疵的合成样本。而高低轮次迭代之间完全不需要重新训练模型，只用手动调整一些轮次相关的参数。
+
+因此，很自然的又有了Cascaded Diffusion Models。
+
+论文：
+
+《Cascaded Diffusion Models for High Fidelity Image Generation》
+
+参考：
+
+https://lilianweng.github.io/lil-log/2021/07/11/diffusion-models.html
+
+What are Diffusion Models?
+
+https://zhuanlan.zhihu.com/p/366004028
+
+另辟蹊径—Denoising Diffusion Probabilistic一种从噪音中剥离出图像/音频的模型
+
+https://zhuanlan.zhihu.com/p/384144179
+
+Denoising Diffusion Probabilistic Model(DDPM)
+
+https://zhuanlan.zhihu.com/p/377603135
+
+Diffusion Probabilistic Model
+
+https://yang-song.github.io/blog/2021/score/
+
+Generative Modeling by Estimating Gradients of the Data Distribution
+
 # VAE参考资源
 
 https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw
@@ -298,51 +336,3 @@ https://zhuanlan.zhihu.com/p/88750084
 https://mp.weixin.qq.com/s/ZlLuhu08m_RnD-h86df8sA
 
 清华大学提出SA-VAE框架，通过单样本/少样本学习生成任意风格的汉字
-
-https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
-
-面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
-
-https://mp.weixin.qq.com/s/51Xu7osdVa-fCV-IZbHdCA
-
-Wasserstein自编码器
-
-https://mp.weixin.qq.com/s/0HK026K6jru10VscvT2rOQ
-
-哈佛大学提出变分注意力：用VAE重建注意力机制
-
-https://mp.weixin.qq.com/s/790wbFnxkNbNRampiV-0MQ
-
-谷歌大脑提出对抗正则化方法，显著改善自编码器的泛化和表征学习能力
-
-https://mp.weixin.qq.com/s/iOdh1iIP0GIYe4gRDE0z-g
-
-漫谈概率PCA和变分自编码器
-
-https://mp.weixin.qq.com/s/pBnKNRc56HhBWvrYaZjGdw
-
-稳定、表征丰富的球面变分自编码器
-
-https://mp.weixin.qq.com/s/QOdQKdLolR-YTihzaA81yw
-
-黄怀波 ：自省变分自编码器理论及其在图像生成上的应用
-
-https://mp.weixin.qq.com/s/FqY9I02blg3S8_K50B7czQ
-
-UC伯克利提出小批量MH测试：令MCMC方法在自编码器中更强劲
-
-https://zhuanlan.zhihu.com/p/48985202
-
-谈谈变分自编码器背后的数学知识
-
-https://mp.weixin.qq.com/s/fYR2dS3wCMMVk3s9O4nqUw
-
-自编码表示学习 25页最新进展综述，90篇参考文献
-
-https://zhuanlan.zhihu.com/p/52974147
-
-VAE的细节：$$p(x \mid z)$$的噪音，与$$p(z \mid x)$$的编码坍塌
-
-https://mp.weixin.qq.com/s/uNjF6NxVRs_gAKAmxRpThQ
-
-华为美研所提出自动编码变换网络AET：用无监督逼近全监督效果

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenVX, 运算加速库, Redis
+title:  OpenVX, 运算加速库, 线性代数库
 category: AI 
 ---
 
@@ -221,7 +221,7 @@ http://www.netlib.org/blas/index.html
 
 LAPACK和BLAS的历史非常悠久，是用Fortran语言编写的。
 
-# 常用线性代数库
+# 线性代数库
 
 ## ATLAS（Automatically Tuned Linear Algebra Soft）
 
@@ -269,138 +269,12 @@ ensmallen是一个基于Armadillo的数学优化方面的C++库。
 
 https://ensmallen.org/
 
-# Redis
+# 大整数计算
 
-REmote DIctionary Server(Redis) 是一个由Salvatore Sanfilippo写的key-value存储系统。
+## GMP
 
-http://www.runoob.com/redis/redis-tutorial.html
-
-Redis教程
-
-http://www.yiibai.com/redis/
-
-另一个Redis教程
-
----
-
-redis提供两种方式进行持久化，一种是RDB持久化（原理是将Redis在内存中的数据库记录定时dump到磁盘上的RDB持久化），另外一种是AOF持久化（原理是将Redis的操作日志以追加的方式写入文件）。
-
-https://www.cnblogs.com/zxs117/p/11242026.html
-
-RDB和AOF的区别
-
----
-
-参考：
-
-https://mp.weixin.qq.com/s/3WmGpZkEuSz-ox_2CPCsqg
-
-伯克利推出世界最快的KVS数据库Anna：秒杀Redis和Cassandra
-
-https://mp.weixin.qq.com/s/320HQlFOXdzbBh2ofrpANA
-
-Redis高负载下的中断优化
-
-https://mp.weixin.qq.com/s/3ISOT_9HTFrnxpJdnHTnsg
-
-redis哈希表的rehash分析
-
-https://www.jianshu.com/p/dbc62ed27f03
-
-玩转Redis集群
-
-https://mp.weixin.qq.com/s/My6gZIVBVEjjDoQ5IpPKCw
-
-Redis查漏补缺：最易错过的技术要点大扫盲
-
-https://mp.weixin.qq.com/s/T2AmwNTYwTPlB0WbCsy-3g
-
-Redis单线程架构
-
-https://mp.weixin.qq.com/s/XZYxHEUx0AJozQ2oM5fTrw
-
-秒杀Redis的KVS上云了！伯克利重磅开源Anna 1.0
-
-https://mp.weixin.qq.com/s/FyYhLS3X7LDe0PLxooz_cQ
-
-Redis的n种妙用，不仅仅是缓存
-
-https://mp.weixin.qq.com/s/X1gh_mtXvc9KnI2jK-cTyw
-
-如果面试官问你：Redis内存满了怎么办？
-
-https://mp.weixin.qq.com/s/ZsmcJc9L-EI2msRiga9-VA
-
-redis持久化
-
-https://mp.weixin.qq.com/s/uTzPJJmL6OY4bxarJ_x95g
-
-Redis你掌握多少了，来个查漏补缺？
-
-https://mp.weixin.qq.com/s/1woExb3V_PjnrhHYH5Jksg
-
-美团万亿级KV存储架构与实践
-
-https://mp.weixin.qq.com/s/7l_o1iJtxiRnzFauaPjq4w
-
-这可能是你见过最好的Redis主从复制原理
-
-https://mp.weixin.qq.com/s/RJ1sSyGkkD1SCEGsD320Dw
-
-和你们聊聊Redis概念、集群和应用场景！
-
-https://mp.weixin.qq.com/s/4_ZHq3Xm9zVvqeEe5_B7SA
-
-和杠精聊Redis多线程
-
-https://mp.weixin.qq.com/s/TjFSVf0OkT_4ATk21mxpEQ
-
-Redis的过期删除策略和内存淘汰机制
-
-https://mp.weixin.qq.com/s/Y9SdWSELsgkdV2sO26SBSA
-
-推荐几款Redis可视化工具
-
-https://mp.weixin.qq.com/s/IX0dWN24EqH8vAs9ZXnfFg
-
-四个大点，搞懂Redis到底快在哪里？
-
-https://mp.weixin.qq.com/s/MAN-hVvfYZZILJmNs1Q7SQ
-
-Redis内存模型
-
-https://mp.weixin.qq.com/s/aYvzVlJ7ry8XG_B4xuPvzg
-
-如何从0到1构建一个稳定、高性能的Redis集群？
-
-https://mp.weixin.qq.com/s/K3QMN750ZeFDNGopmOz1aw
-
-一文讲透如何排查Redis性能问题
-
-https://mp.weixin.qq.com/s/-op5WR1wSkgAuP7JYZWP8g
-
-Redis多线程网络模型全面揭秘
-
-https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU3NDkwMjAyOQ==&action=getalbum&album_id=1708320618028318723
-
-一个Redis的专栏
-
-https://mp.weixin.qq.com/s/lSSVmK_j74PQ1l-SFuKxFw
-
-你管这破玩意叫哨兵？
-
-https://mp.weixin.qq.com/s/k8agEub4qmhm3kX_TpETrA
-
-这篇Redis文章，图灵看了都说好
-
-https://mp.weixin.qq.com/s/24sQPnZX9FnpxK7mcJtvHw
-
-携程持久化KV存储实践
-
-## Pika
-
-Pika是一个可持久化的大容量redis存储服务，兼容string、hash、list、zset、set的绝大部分接口(兼容详情)，解决redis由于存储数据量巨大而导致内存不够用的容量瓶颈。
+GMP是一个C/C++的大整数计算库。
 
 官网：
 
-https://github.com/Qihoo360/pika/
+https://gmplib.org/

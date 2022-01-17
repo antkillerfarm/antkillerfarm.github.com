@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Java构建工具, ZeroC ICE, Jam
-category: technology 
+title:  Java构建工具, Jam
+category: toolchain 
 ---
 
 * toc
@@ -255,48 +255,6 @@ Gradle Wrapper能够让你的工程在没有安装Gradle的机器上编译。
 2.`./gradlew run`
 
 类似的，maven也有一个Wrapper，有些工程里的mvnw或mvnw.cmd，就是这个Wrapper的文件。
-
-# ZeroC ICE
-
-我在研究生时代，研究过CORBA、EJB、COM这样的中间件技术。然而工作以后，再没有机会使用。平时偶尔关注，也只是晓得CORBA从来没有流行过，EJB在Struts、Hibernate、Spring等框架的围攻下，用者寥寥。直到最近，因为项目需要接触到ZeroC的ICE框架。
-
-ICE框架的官网地址：
-
-https://zeroc.com/downloads/ice
-
-安装：
-
-```bash
-wget https://zeroc.com/download/GPG-KEY-zeroc-release
-sudo apt-key add GPG-KEY-zeroc-release
-sudo apt-add-repository "deb http://zeroc.com/download/apt/ubuntu16.04 stable main"
-sudo apt update
-sudo apt install zeroc-ice-all-runtime zeroc-ice-all-dev
-sudo apt install libssl-dev
-pip install zeroc-ice
-```
-
-多语言demo：
-
-https://github.com/zeroc-ice/ice-demos
-
-注意demo的master分支是开发分支，好多代码都是有问题的，请切换到正在使用版本的分支，例如：
-
-`git checkout 3.6`
-
-# Hprose
-
-Hprose是ZeroC ICE的一个竞争者，由国内某高手打造，支持的语言超过20种，堪称最全。不过貌似没什么大公司用啊。。。
-
-其标榜的无需生成桩代码的优点，相比ZeroC ICE的老版本来说，的确是个进步。但目前的ZeroC ICE 3.6版本，也同样提供了类似的功能。这或者也是Hprose一直火不起来的原因。
-
-官网：
-
-http://hprose.com/
-
-Github：
-
-https://github.com/hprose
 
 # Jam
 

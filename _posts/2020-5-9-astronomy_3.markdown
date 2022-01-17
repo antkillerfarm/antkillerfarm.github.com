@@ -15,12 +15,6 @@ category: Nature
 
 ---
 
-https://mp.weixin.qq.com/s/sPTRKfuhEc0xx7GacomxkA
-
-霍尔效应推进器
-
----
-
 目前最出风头的三家私人航天公司，按技术水平来比较，大致是这样的：
 
 维珍：本科在读。
@@ -68,6 +62,16 @@ https://zhuanlan.zhihu.com/p/272628707
 https://www.zhihu.com/question/508552825
 
 如何看待美SpaceX星链卫星两次接近中国空间站，我方为确保在轨航天员安全实施紧急避碰？
+
+---
+
+https://mp.weixin.qq.com/s/sPTRKfuhEc0xx7GacomxkA
+
+霍尔效应推进器
+
+https://www.zhihu.com/question/425823778
+
+重力多大的星球无法发射化学火箭？
 
 # 中国航天
 
@@ -280,19 +284,3 @@ https://mp.weixin.qq.com/s/5KR2vlOq5HuFLIJNl3Q3pw
 https://mp.weixin.qq.com/s/5YK6qK-aUQ-_RuQVzaSH8w
 
 指南针在火星上能用吗？
-
-https://mp.weixin.qq.com/s/cht7uCrbhAttO1cmXRvcPw
-
-为什么“天问一号”必须进入环绕火星大椭圆轨道？
-
-https://mp.weixin.qq.com/s/LVVCA_WTd5PoAn_wHzlJjw
-
-耗资27亿美元，美国又一辆核动力火星车成功着陆，还带了一架直升机
-
-https://mp.weixin.qq.com/s/eNG-zbHfrji3frbRbQI-Xw
-
-听！火星的声音！又一辆核动力火星车刚刚着陆，寻找远古火星生命
-
-https://mp.weixin.qq.com/s/0gArlvImgT6V7xEg9SCLTQ
-
-毅力号睁开几双“眼睛”，360度全景展示它的火星新家

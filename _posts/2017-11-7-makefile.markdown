@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  makefile, Autotools, premake, Bazel
-category: technology 
+category: toolchain 
 ---
 
 * toc

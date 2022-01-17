@@ -113,6 +113,26 @@ https://zhuanlan.zhihu.com/p/347445164
 
 浅谈有栈协程与无栈协程
 
+# DPDK
+
+传统的数据包捕获瓶颈往往在于Linux Kernel，数据流需要经过Linux Kernel，就会带来Kernel Spcae和User Space数据拷贝的消耗；系统调用的消耗；中断处理的消耗等。
+
+DPDK(Data Plane Development Kit)由Intel开发，针对Linux Kernel传统的数据包捕获模式的问题，进行了一定程度的优化。
+
+官网：
+
+https://www.dpdk.org/
+
+参考：
+
+https://zhuanlan.zhihu.com/p/363622877
+
+DPDK解析
+
+https://zhuanlan.zhihu.com/p/347693559
+
+DPDK的基本原理、学习路线总结
+
 # Linux参考资源
 
 https://www.kernel.org/doc/html/latest/
@@ -378,31 +398,3 @@ https://mp.weixin.qq.com/s/IQYUNzVgSOFUHB9c1SM0Bw
 https://zhuanlan.zhihu.com/p/370092684
 
 虚拟内存精粹
-
-http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html
-
-Systemd入门教程：命令篇
-
-https://mp.weixin.qq.com/s/xOqXM5kFi0CzilDg0EXFKg
-
-Linux内核源码规范解析
-
-https://mp.weixin.qq.com/s/QB-IHiCIWEu3bALm2Dp46Q
-
-操作系统课程知识结构
-
-https://www.zhihu.com/answer/460715569
-
-生产力应用大汇总
-
-https://mp.weixin.qq.com/s/QsgoONKwI7ds8Hnx2Wer6A
-
-Linux从程序到进程
-
-https://mp.weixin.qq.com/s/v9XlJjIQkuVpSudhQIS70A
-
-神秘！申请内存时底层发生了什么？
-
-https://mp.weixin.qq.com/s/V-XT6QuDG522P0bP2e3ULg
-
-咋办，死锁了

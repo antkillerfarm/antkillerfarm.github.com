@@ -195,6 +195,54 @@ https://mp.weixin.qq.com/s/imOFQL01RaXUuZwew1izzg
 
 # VAE参考资源+
 
+https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
+
+面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
+
+https://mp.weixin.qq.com/s/51Xu7osdVa-fCV-IZbHdCA
+
+Wasserstein自编码器
+
+https://mp.weixin.qq.com/s/0HK026K6jru10VscvT2rOQ
+
+哈佛大学提出变分注意力：用VAE重建注意力机制
+
+https://mp.weixin.qq.com/s/790wbFnxkNbNRampiV-0MQ
+
+谷歌大脑提出对抗正则化方法，显著改善自编码器的泛化和表征学习能力
+
+https://mp.weixin.qq.com/s/iOdh1iIP0GIYe4gRDE0z-g
+
+漫谈概率PCA和变分自编码器
+
+https://mp.weixin.qq.com/s/pBnKNRc56HhBWvrYaZjGdw
+
+稳定、表征丰富的球面变分自编码器
+
+https://mp.weixin.qq.com/s/QOdQKdLolR-YTihzaA81yw
+
+黄怀波 ：自省变分自编码器理论及其在图像生成上的应用
+
+https://mp.weixin.qq.com/s/FqY9I02blg3S8_K50B7czQ
+
+UC伯克利提出小批量MH测试：令MCMC方法在自编码器中更强劲
+
+https://zhuanlan.zhihu.com/p/48985202
+
+谈谈变分自编码器背后的数学知识
+
+https://mp.weixin.qq.com/s/fYR2dS3wCMMVk3s9O4nqUw
+
+自编码表示学习 25页最新进展综述，90篇参考文献
+
+https://zhuanlan.zhihu.com/p/52974147
+
+VAE的细节：$$p(x \mid z)$$的噪音，与$$p(z \mid x)$$的编码坍塌
+
+https://mp.weixin.qq.com/s/uNjF6NxVRs_gAKAmxRpThQ
+
+华为美研所提出自动编码变换网络AET：用无监督逼近全监督效果
+
 https://zhuanlan.zhihu.com/p/60330303
 
 用于协同过滤的变分自编码器论文引介
@@ -340,31 +388,3 @@ PAA论文解读：在物体检测中利用概率分布来将anchor分配为正�
 https://mp.weixin.qq.com/s/nTzTjUDQc3jTu3AAQ1Hvbg
 
 理解物体检测中的Objectness
-
-https://mp.weixin.qq.com/s/Qvjk7mz8d9lxeyIMND1mPA
-
-目标检测Anchor是什么？怎么科学设置？人人都能彻底搞懂的Anchor深度解析
-
-https://mp.weixin.qq.com/s/0wJHO_9e4iBMaWu-E20S6A
-
-一文了解目标检测边界框概率分布
-
-https://mp.weixin.qq.com/s/hMhDIV3eCEzmRzuyT3CvUg
-
-训练鲁棒的物体检测器的6大障碍
-
-https://zhuanlan.zhihu.com/p/342011052
-
-目标检测之Neck选择
-
-https://mp.weixin.qq.com/s/sJGvvwCkXCJ52MYSsjkwrg
-
-计算机视觉来看看苏伊士运河堵船（船舶检测）
-
-https://mp.weixin.qq.com/s/UHrYk7_oM0_WBy-FCQXM0g
-
-一文梳理水下目标检测方法
-
-https://mp.weixin.qq.com/s/PJYJ_Q7eTQFk46tladYFIQ
-
-使用合成数据集来做目标检测
