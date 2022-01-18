@@ -133,6 +133,54 @@ https://zhuanlan.zhihu.com/p/347693559
 
 DPDK的基本原理、学习路线总结
 
+# 文件系统
+
+https://mp.weixin.qq.com/s/2QAm6F109LV2koC64xIpqA
+
+简直不要太硬了！一文带你彻底理解文件系统
+
+https://mp.weixin.qq.com/s/0jR4Y3sT8RRW7FYEOmBsXg
+
+一口气搞懂文件系统，就靠这25张图了
+
+https://mp.weixin.qq.com/s/tguC-WOleKRWLfTmGdJlQg
+
+Linux文件系统的实现
+
+https://mp.weixin.qq.com/s/MNzSES3dlMuiwkffLWJGIg
+
+文件系统：隐匿在Linux背后的机制
+
+https://mp.weixin.qq.com/s/wmzwvnOToqCkKJz5yw-USQ
+
+低调的Linux文件系统家族
+
+https://mp.weixin.qq.com/s/9x1JOl4m_mj0WpsVgHu4rg
+
+Linux文件系统与持久性内存介绍
+
+https://zhuanlan.zhihu.com/p/61407714
+
+Linux文件系统的未来btrfs
+
+https://linux.cn/article-7083-1.html
+
+如何选择文件系统：EXT4、Btrfs和XFS
+
+## debuger
+
+Ext系列可以使用`debugfs`命令。
+
+XFS可以使用`xfs_db`命令。
+
+## Inotify
+
+一种高效、实时的Linux文件系统事件监控框架。参考文档：
+
+http://www.infoq.com/cn/articles/inotify-linux-file-system-event-monitoring
+
+Inotify: 高效、实时的Linux文件系统事件监控框架
+
 # Linux参考资源
 
 https://www.kernel.org/doc/html/latest/
@@ -158,14 +206,6 @@ https://mp.weixin.qq.com/s/I7C7cXFgxO7RO0Wpjjj3xQ
 https://www.cnblogs.com/liqiuhao/p/9450093.html
 
 关于TOCTTOU攻击的简介
-
-https://mp.weixin.qq.com/s/2QAm6F109LV2koC64xIpqA
-
-简直不要太硬了！一文带你彻底理解文件系统
-
-https://mp.weixin.qq.com/s/0jR4Y3sT8RRW7FYEOmBsXg
-
-一口气搞懂文件系统，就靠这25张图了
 
 https://mp.weixin.qq.com/s/Y_GYtL9m3zmY-5VZMbCfWg
 
@@ -255,10 +295,6 @@ http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html
 
 进程与线程的一个简单解释
 
-https://mp.weixin.qq.com/s/tguC-WOleKRWLfTmGdJlQg
-
-Linux文件系统的实现
-
 https://www.cnblogs.com/biyeymyhjob/archive/2012/07/20/2601655.html
 
 Linux写时拷贝技术(copy-on-write)
@@ -270,10 +306,6 @@ Linux I/O原理和Zero-copy技术全面揭秘
 https://mp.weixin.qq.com/s/cudK2dhw4jNr7I34luVKVw
 
 终于有人把零拷贝Zero-Copy讲懂了
-
-https://mp.weixin.qq.com/s/MNzSES3dlMuiwkffLWJGIg
-
-文件系统：隐匿在Linux背后的机制
 
 https://mp.weixin.qq.com/s/1JiXL1f3SSjsBojlJSNOpQ
 
@@ -323,10 +355,6 @@ https://mp.weixin.qq.com/s/bPqnaMqhi_4p1mwjmvyoIw
 
 多图详解10大高性能开发核心技术
 
-https://mp.weixin.qq.com/s/wmzwvnOToqCkKJz5yw-USQ
-
-低调的Linux文件系统家族
-
 https://mp.weixin.qq.com/s/ESLO1RH6Q8udwI13Z2Pz_w
 
 详解linux io flush
@@ -370,31 +398,3 @@ IDT及中断处理的实现
 https://mp.weixin.qq.com/s/pRsXWAv7wgYcN_jlzcA2YA
 
 内存都没了，还能运行程序？
-
-https://mp.weixin.qq.com/s/snQ3T86usv4rXz0MMQvFfQ
-
-如何回答性能优化的问题，才能打动阿里面试官？
-
-https://www.cnblogs.com/zhouyu629/p/3734494.html
-
-一次心惊肉跳的服务器误删文件的恢复过程
-
-https://mp.weixin.qq.com/s/IcEP-JGQbWA7s7yPdIC9vA
-
-80%时间屏蔽了中断，实时性还有救么？
-
-https://mp.weixin.qq.com/s/iKfWSfzauzNjcAvXPNhq0Q
-
-这些算法都不会还学什么操作系统
-
-https://mp.weixin.qq.com/s/gj6Zw8SvOdSZqRx8KP9wWw
-
-20张图揭开内存管理的迷雾，瞬间豁然开朗
-
-https://mp.weixin.qq.com/s/IQYUNzVgSOFUHB9c1SM0Bw
-
-10张图22段代码，万字长文带你搞懂虚拟内存模型和malloc内部原理
-
-https://zhuanlan.zhihu.com/p/370092684
-
-虚拟内存精粹

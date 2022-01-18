@@ -289,17 +289,9 @@ https://mp.weixin.qq.com/s/soruo90Dbtzi6d1kA63Akg
 
 阿里提出智能算力引擎DCAF，节省20%GPU算力
 
-https://zhuanlan.zhihu.com/p/79030485
-
-AllReduce算法的前世今生
-
 https://mp.weixin.qq.com/s/oDak7peTT5ynNYrH7LSWTg
 
 分布式层次GPU参数服务器架构
-
-https://mp.weixin.qq.com/s/4XMVYXnzpYZ4DrIabuTUig
-
-Ring All-reduce: 分布式深度学习的巧妙同步
 
 https://zhuanlan.zhihu.com/p/28226956
 

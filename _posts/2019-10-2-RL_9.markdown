@@ -212,3 +212,9 @@ $$V_i(\pi^*_1,\dots,\pi^*_i,\dots,\pi^*_n)\ge V_i(\pi^*_1,\dots,\pi_i,\dots,\pi^
 ![](/images/img3/Nash.png)
 
 >John Nash，1928～2015，数学家、经济学家。Princeton博士（1950），Princeton教授。主要研究博弈论、微分几何学和偏微分方程。诺贝尔经济学奖获得者（1994）。奥斯卡金像奖电影《美丽心灵》男主角原型。
+
+参考：
+
+https://mp.weixin.qq.com/s/pTGPIm8msErFCZEUz2n2Gw
+
+鞍点问题及纳什均衡问题的新研究成果

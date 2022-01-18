@@ -73,6 +73,24 @@ https://zhuanlan.zhihu.com/p/250471767
 
 DDP系列第三篇：实战与技巧
 
+## AllReduce
+
+https://www.zhihu.com/question/57799212
+
+ring allreduce和tree allreduce的具体区别是什么？
+
+https://andrew.gibiansky.com/blog/machine-learning/baidu-allreduce/
+
+Bringing HPC Techniques to Deep Learning
+
+https://zhuanlan.zhihu.com/p/79030485
+
+AllReduce算法的前世今生
+
+https://mp.weixin.qq.com/s/4XMVYXnzpYZ4DrIabuTUig
+
+Ring All-reduce: 分布式深度学习的巧妙同步
+
 ## 参考
 
 https://mp.weixin.qq.com/s/ai_XI8ddP5I2m3ChCqnQsA
@@ -99,10 +117,6 @@ https://zhuanlan.zhihu.com/p/58806183
 
 深度学习的分布和并行处理系统
 
-https://andrew.gibiansky.com/blog/machine-learning/baidu-allreduce/
-
-Bringing HPC Techniques to Deep Learning
-
 https://zhuanlan.zhihu.com/p/56991108
 
 一文说清楚Tensorflow分布式训练必备知识
@@ -122,10 +136,6 @@ C++并行实战，592页pdf，C++ Concurrency in Action
 https://mp.weixin.qq.com/s/heVQ9AIZKxTiCNiAtYKaag
 
 新加坡国立大学最新“大规模深度学习优化”综述论文，带你全面了解最新深度学习准确率和效率的优化方法
-
-https://www.zhihu.com/question/57799212
-
-ring allreduce和tree allreduce的具体区别是什么？
 
 https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
 
@@ -356,19 +366,3 @@ https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771181&idx=1&sn=30b2a5
 https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771231&idx=2&sn=6907d6d7a98eab353a076ed48352aadc
 
 15分钟完成Kinetics视频识别训练，除了超级计算机你还需要TSM
-
-https://mp.weixin.qq.com/s/IzLtn1SR-aFuxXM3GNZbFw
-
-蘑菇街自研服务框架如何提升在线推理效率？
-
-https://mp.weixin.qq.com/s/GheEA0Ag0vbhZeyzqpTl0A
-
-分布式优化：在大数据时代应运而生
-
-https://mp.weixin.qq.com/s/Vb3AkoWHQY7WWBMZaVnf4g
-
-微软发布DeepSpeed开源库，支持1000亿个参数模型的训练
-
-https://mp.weixin.qq.com/s/3uu50NWFJqA_MTb8wSxIKA
-
-如何优雅地训练大型模型？

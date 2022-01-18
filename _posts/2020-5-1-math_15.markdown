@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十五）——阴影面积, 肺炎版《黄冈密卷》, Gabriel's Horn, 勾股定理
+title:  数学狂想曲（十五）——阴影面积, 肺炎版《黄冈密卷》, Gabriel's Horn, 勾股定理, 平面几何, 抛物线
 category: math 
 ---
 
@@ -228,13 +228,36 @@ $$\overrightarrow{AD}=\frac{\overline{DC}}{\overline{BC}}\cdot\overrightarrow{AB
 $$AD\cdot BE\cdot CF=BD\cdot CE\cdot AF$$
 
 >Menelaus of Alexandria，公元70～140年，古希腊数学家、天文学家。青年时期求学于Alexandria，后定居于Rome。他第一个认识到曲面上的测地线（geodesics）可以类比于平面上的直线。   
->Menelaus' theorem现存最早的记录是Menelaus的著作《Spherics》。书中将平面版本的Menelaus' theorem作为引理引入，并将之推广到球面三角形。按照当时的写作习惯，引理一般记述的是前人的成果，因此Menelaus' theorem的发现者应该另有其人。
+
+上图是这个定理的平面几何版本，相关的证明过程，网上已经很多了，这里不再赘述。
+
+让我感兴趣的实际上是以下版本：
+
+![](/images/img4/MenelausTheorem.png)
+
+$$\frac{Crd \; arc \; 2BZ}{Crd \; arc \; 2AB} = \frac{Crd \; arc 2HZ}{Crd \; arc 2H \Theta} \cdot \frac{Crd \; arc \; 2E \Theta}{Crd \; arc \; 2AE}$$
+
+最早的三角术没有使用$$\sin$$之类的现代符号和现代定义，而是用两倍的弧长来定义正弦。
+
+Menelaus' theorem现存最早的记录是Menelaus的著作《Spherics》。书中将平面版本的Menelaus' theorem作为引理引入，并将之推广到球面三角形。按照当时的写作习惯，引理一般记述的是前人的成果，因此Menelaus' theorem的发现者应该另有其人。
+
+Menelaus的贡献不止于此。还有下图：
+
+![](/images/img4/Menelaus.png)
+
+$$\frac{\sin AD}{\sin DC} \cdot \frac{\sin BC}{\sin AB} = \frac{\sin A'D'}{\sin D'C'} \cdot \frac{\sin B'C'}{\sin A'B'}$$
+
+当然这个也是作为引理引入的，多半也是前人的发现。
 
 参考：
 
 https://zhuanlan.zhihu.com/p/27355643
 
 三角术
+
+http://jonvoisey.net/blog/2018/05/almagest-index/
+
+Almagest(天文学大成, Ptolemy著)
 
 ## Ceva's Theorem
 
@@ -254,52 +277,28 @@ AB和BC是圆的两条弦（即ABC是圆的一条折弦），BC>AB，M是弧ABC�
 
 定义：从圆周上任一点出发的两条弦，所组成的折线，我们称之为该图的一条**折弦**。
 
-# Lie Groups
+# 抛物线
 
-《State estimation for Robotics: A Matrix Lie Group Approach》
+![](/images/img2/conic_section.jpg)
 
->Marius Sophus Lie，1842～1899，挪威数学家。University of Christiania博士（1871），University of Leipzig教授。当时德国的大学，一个系只有一个教授，所以这里的教授相当于现在的系主任或者院长。Lie接的是Felix Klein的班，后者跑到University of Göttingen当教授去了。
+我们都知道抛物线只有一个焦点，而椭圆、双曲线有两个焦点，但是对于真正天体的运行来说，其实只有一个焦点是有意义的，就是中心恒星的位置；另一个焦点没有实在的意义。这两个焦点中任取一个就可以构成这条圆锥曲线，而取哪一个作为恒星位置都是一样的。因为对于椭圆、双曲线来说，这两个焦点是对称的。
 
-Galois建立群论后，一元n次方程的求解解决了，人们希望能继续前进，能够用群论求解牛顿的微分方程。
+那么抛物线呢？实际上抛物线是椭圆和双曲线的临界状态，它的另一个焦点在无穷远的地方。对于绕恒星的抛物线轨道来说，取的是那个通常说的焦点位置作为恒星位置；对于地面上的斜抛运动来说，取的是无穷远处的那个焦点位置作为恒星位置。
 
-李发现，连续群是一个空间，每一个元素都可以用矩阵表示，由于连续，所以矩阵相当一个函数。正如一个抽象曲线（曲面）上的一个点，每个点的导数都具有特别的性质。
+![](/images/img3/ellipse.gif)
 
-进一步，李发现矩阵（函数）的导数等于系数乘以它本身，这个系数具有特殊的性质，李将之命名为李代数。李群的问题便转为李代数的问题，因为一个元素的导数等于一个李代数乘以元素本身。
+我们从斜面的上方和下方分别塞进一个球，它们与圆柱、截面均相切，然后，两个球与截面相切的点就是椭圆的两个焦点。
 
-参考：
+![](/images/img4/ball.gif)
 
-https://zhuanlan.zhihu.com/p/33156814
+![](/images/img4/man.gif)
 
-李群和李代数
+![](/images/img4/rect.gif)
 
-https://zhuanlan.zhihu.com/p/76959511
+https://mp.weixin.qq.com/s/BmSdlLTZ8PxD_b27TzFWlw
 
-李群和李代数（一）：刚体的三维运动
+如何让8岁表妹了解数学到底是什么
 
-https://zhuanlan.zhihu.com/p/77576417
+https://mp.weixin.qq.com/s/p-EVuaPfLusq01Jw8KcQdQ
 
-李群和李代数（二）：矩阵李群基础
-
-https://zhuanlan.zhihu.com/p/80663767
-
-李群和李代数（三）：优化基础
-
-https://zhuanlan.zhihu.com/p/87438999
-
-李群和李代数（四）：姿态估计小结
-
-https://mp.weixin.qq.com/s/xGVvlVg6MxI5YjEF1giyWA
-
-机器人状态估计中的简明李群理论(一)
-
-https://mp.weixin.qq.com/s/7WebKui-so9YloZgovNsAg
-
-机器人状态估计中的简明李群理论(二)
-
-## Sophus
-
-Sophus是一个C++写的Lie Groups的库。显然，它得名自Marius Sophus Lie。
-
-代码：
-
-https://github.com/strasdat/Sophus
+六一礼物：这些有趣的动图送给孩子们！了解数学能做什么？电路如何工作？

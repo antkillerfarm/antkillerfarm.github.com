@@ -334,14 +334,6 @@ http://blog.csdn.net/liangyamin/article/details/7209761
 
 Linux下的iwpriv（iwlist、iwconfig）的简单应用
 
-# Inotify
-
-一种高效、实时的Linux文件系统事件监控框架。参考文档：
-
-http://www.infoq.com/cn/articles/inotify-linux-file-system-event-monitoring
-
-Inotify: 高效、实时的Linux文件系统事件监控框架
-
 # /usr
 
 usr很多人都认为是user缩写，其实不然，这是unix system resource的缩写。

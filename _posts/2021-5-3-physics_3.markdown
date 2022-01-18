@@ -9,6 +9,14 @@ category: Nature
 
 # 物理
 
+我记得我的朋友约翰·冯·诺依曼（John von Neumann）曾经说过，用四个参数我可以拟合出一头大象，而用五个参数我可以让它的鼻子摆动。--- By Enrico Fermi
+
+http://blog.sciencenet.cn/blog-3779-803730.html
+
+费米与大象
+
+---
+
 双重彩虹是光线在水滴中发生了两次反射，同理，三重彩虹是光线在水滴中反射了三次，四重就是四次。但由于多次反射，多重彩虹的强度逐渐递减，而且根据光学的几何传播原理，高阶彩虹的成像点不在太阳对立面，反而靠近太阳，因而极为罕见。
 
 https://mp.weixin.qq.com/s/5Qo-tTUIbxW8J-vOJD7gkw
@@ -256,11 +264,3 @@ https://mp.weixin.qq.com/s/BfQ0qUHpAfmB3_mHvyeCDw
 https://mp.weixin.qq.com/s/hWPX-lR3Eo46ofMNC2_5oQ
 
 有关诺奖的故事：简单的电学实验，造就了一个有趣的研究领域（超导现象）
-
-https://mp.weixin.qq.com/s/CkZhqcGxRoOoaLGvQIVUIQ
-
-科学家开发出“反太阳能”装置，黑夜照样能发电！
-
-https://mp.weixin.qq.com/s/iGebSkPLeR9Vc2VmeHALfw
-
-尿尿尿的到处都是？我总结了男生尿尿的最强攻略！

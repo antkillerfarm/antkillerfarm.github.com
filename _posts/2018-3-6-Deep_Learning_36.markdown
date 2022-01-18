@@ -131,6 +131,14 @@ https://mp.weixin.qq.com/s/jFT6jULJXypFryLB5VEjpw
 
 基于深度学习的图像与视频压缩
 
+https://mp.weixin.qq.com/s/sBdAj6tS_FJQ-uxqrMRuOQ
+
+大话实时视频编码中的人工智能（上）
+
+https://mp.weixin.qq.com/s/9_ZHrgWwGwX0pyafgCvCsg
+
+大话实时视频编码中的人工智能（下）
+
 # 深度树学习
 
 决策树是传统ML领域的王者，对于如何将之深度化，一般有两个方向：

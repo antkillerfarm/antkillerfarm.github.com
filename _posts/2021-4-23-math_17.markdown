@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十七）——自适应滤波器, 抛物线, 三门问题, 数学杂谈（3）
+title:  数学狂想曲（十七）——自适应滤波器, 三门问题, 数学杂谈（3）
 category: math 
 ---
 
@@ -38,32 +38,6 @@ Wiener Filter主要用于**平稳状态下的线性滤波**。该滤波器在均
 https://blog.csdn.net/bluecol/article/details/46242355
 
 图像去模糊（维纳滤波）
-
-# 抛物线
-
-![](/images/img2/conic_section.jpg)
-
-我们都知道抛物线只有一个焦点，而椭圆、双曲线有两个焦点，但是对于真正天体的运行来说，其实只有一个焦点是有意义的，就是中心恒星的位置；另一个焦点没有实在的意义。这两个焦点中任取一个就可以构成这条圆锥曲线，而取哪一个作为恒星位置都是一样的。因为对于椭圆、双曲线来说，这两个焦点是对称的。
-
-那么抛物线呢？实际上抛物线是椭圆和双曲线的临界状态，它的另一个焦点在无穷远的地方。对于绕恒星的抛物线轨道来说，取的是那个通常说的焦点位置作为恒星位置；对于地面上的斜抛运动来说，取的是无穷远处的那个焦点位置作为恒星位置。
-
-![](/images/img3/ellipse.gif)
-
-我们从斜面的上方和下方分别塞进一个球，它们与圆柱、截面均相切，然后，两个球与截面相切的点就是椭圆的两个焦点。
-
-![](/images/img4/ball.gif)
-
-![](/images/img4/man.gif)
-
-![](/images/img4/rect.gif)
-
-https://mp.weixin.qq.com/s/BmSdlLTZ8PxD_b27TzFWlw
-
-如何让8岁表妹了解数学到底是什么
-
-https://mp.weixin.qq.com/s/p-EVuaPfLusq01Jw8KcQdQ
-
-六一礼物：这些有趣的动图送给孩子们！了解数学能做什么？电路如何工作？
 
 # 三门问题
 
@@ -104,6 +78,56 @@ Harmonic Number
 https://baike.baidu.com/item/调和级数
 
 调和级数
+
+# Lie Groups
+
+《State estimation for Robotics: A Matrix Lie Group Approach》
+
+>Marius Sophus Lie，1842～1899，挪威数学家。University of Christiania博士（1871），University of Leipzig教授。当时德国的大学，一个系只有一个教授，所以这里的教授相当于现在的系主任或者院长。Lie接的是Felix Klein的班，后者跑到University of Göttingen当教授去了。
+
+Galois建立群论后，一元n次方程的求解解决了，人们希望能继续前进，能够用群论求解牛顿的微分方程。
+
+李发现，连续群是一个空间，每一个元素都可以用矩阵表示，由于连续，所以矩阵相当一个函数。正如一个抽象曲线（曲面）上的一个点，每个点的导数都具有特别的性质。
+
+进一步，李发现矩阵（函数）的导数等于系数乘以它本身，这个系数具有特殊的性质，李将之命名为李代数。李群的问题便转为李代数的问题，因为一个元素的导数等于一个李代数乘以元素本身。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/33156814
+
+李群和李代数
+
+https://zhuanlan.zhihu.com/p/76959511
+
+李群和李代数（一）：刚体的三维运动
+
+https://zhuanlan.zhihu.com/p/77576417
+
+李群和李代数（二）：矩阵李群基础
+
+https://zhuanlan.zhihu.com/p/80663767
+
+李群和李代数（三）：优化基础
+
+https://zhuanlan.zhihu.com/p/87438999
+
+李群和李代数（四）：姿态估计小结
+
+https://mp.weixin.qq.com/s/xGVvlVg6MxI5YjEF1giyWA
+
+机器人状态估计中的简明李群理论(一)
+
+https://mp.weixin.qq.com/s/7WebKui-so9YloZgovNsAg
+
+机器人状态估计中的简明李群理论(二)
+
+## Sophus
+
+Sophus是一个C++写的Lie Groups的库。显然，它得名自Marius Sophus Lie。
+
+代码：
+
+https://github.com/strasdat/Sophus
 
 # 数学杂谈
 
@@ -214,11 +238,3 @@ Python动画没有秘密
 ---
 
 Yau Shing-Tung=姚兴腾
-
----
-
-加拿大英属哥伦比亚省存在着过分多的零售商彩票中奖现象，并且他们的彩票系统存在“零售商试图欺骗顾客的行为”；新斯科舍省的大西洋彩票公司零售店主在2001-2006年期间赢得了448个重大（25,000美元以上）彩票奖项中的22个。而在全凭运气的情况下，计算得出他们预计赢得的奖项的数量应该仅比1个略多一点。而且，22次中奖中有18次是由独立经营的彩票零售店店主所为，这再次表明大部分彩票欺诈行为发生在这一类人群中。
-
-https://mp.weixin.qq.com/s/yim7DxwM_oj8RRNS7UT9Mg
-
-“小概率”引发的加拿大彩票历史上的“大事件”

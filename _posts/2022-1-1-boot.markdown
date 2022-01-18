@@ -211,6 +211,34 @@ https://www.ibm.com/developerworks/cn/linux/l-yocto-linux/index.html
 
 # Linux参考资源+
 
+https://mp.weixin.qq.com/s/snQ3T86usv4rXz0MMQvFfQ
+
+如何回答性能优化的问题，才能打动阿里面试官？
+
+https://www.cnblogs.com/zhouyu629/p/3734494.html
+
+一次心惊肉跳的服务器误删文件的恢复过程
+
+https://mp.weixin.qq.com/s/IcEP-JGQbWA7s7yPdIC9vA
+
+80%时间屏蔽了中断，实时性还有救么？
+
+https://mp.weixin.qq.com/s/iKfWSfzauzNjcAvXPNhq0Q
+
+这些算法都不会还学什么操作系统
+
+https://mp.weixin.qq.com/s/gj6Zw8SvOdSZqRx8KP9wWw
+
+20张图揭开内存管理的迷雾，瞬间豁然开朗
+
+https://mp.weixin.qq.com/s/IQYUNzVgSOFUHB9c1SM0Bw
+
+10张图22段代码，万字长文带你搞懂虚拟内存模型和malloc内部原理
+
+https://zhuanlan.zhihu.com/p/370092684
+
+虚拟内存精粹
+
 http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html
 
 Systemd入门教程：命令篇
@@ -267,10 +295,6 @@ https://mp.weixin.qq.com/s/3kgwoyYI90XHm1QPqFJAiQ
 
 内存分页不就够了？为什么还要分段？
 
-https://mp.weixin.qq.com/s/9x1JOl4m_mj0WpsVgHu4rg
-
-Linux文件系统与持久性内存介绍
-
 https://mp.weixin.qq.com/s/VSbzTh3xEbVdB4IgGJzQ3A
 
 25张图，一万字，拆解Linux网络包发送过程
@@ -278,14 +302,6 @@ https://mp.weixin.qq.com/s/VSbzTh3xEbVdB4IgGJzQ3A
 https://mp.weixin.qq.com/s/2dbr4-dxRCJ_SLCQnrt8ag
 
 Linux内核调度器源码分析
-
-https://zhuanlan.zhihu.com/p/61407714
-
-Linux文件系统的未来btrfs
-
-https://linux.cn/article-7083-1.html
-
-如何选择文件系统：EXT4、Btrfs和XFS
 
 https://yanqiyu.info/2021/06/21/huawei-v-qwr/
 

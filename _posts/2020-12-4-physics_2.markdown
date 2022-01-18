@@ -40,6 +40,10 @@ https://zhuanlan.zhihu.com/p/81867668
 
 见证奇迹的时刻：如何从麦克斯韦方程组推出电磁波
 
+https://www.zhihu.com/question/511590823
+
+如何评价王中林院士拓展麦克斯韦方程组？对物理学理论有多大价值？
+
 # Doppler effect
 
 >Christian Johann Doppler，1803～1853，奥地利物理学家，数学家和天文学家。维也纳大学物理学院的第一任院长。
@@ -225,14 +229,6 @@ https://www.zhihu.com/answer/1742334537
 https://zhuanlan.zhihu.com/p/360884198
 
 科学史上最经典的“大力出奇迹”，莫过于用“土法制冷”挑战绝对零度
-
----
-
-我记得我的朋友约翰·冯·诺依曼（John von Neumann）曾经说过，用四个参数我可以拟合出一头大象，而用五个参数我可以让它的鼻子摆动。--- By Enrico Fermi
-
-http://blog.sciencenet.cn/blog-3779-803730.html
-
-费米与大象
 
 ---
 
