@@ -337,6 +337,26 @@ https://gitlab.com/autowarefoundation/autoware.ai
 
 # 电子科技史+
 
+https://mp.weixin.qq.com/s/Jf2xn5E1yvlxlT9lEWT47Q
+
+30张照片回顾乔布斯和比尔盖茨之间“不得不说”的故事
+
+https://mp.weixin.qq.com/s/pkgC9Ug34O0mBj8s1AIhIQ
+
+动听百年：音乐播放器发展沉浮史
+
+https://mp.weixin.qq.com/s/H847J6qOnuXdN697MD6hqA
+
+一台笔记本的25年青春史诗（联想昭阳）
+
+https://mp.weixin.qq.com/s/scAAyxzOMqWwRl9ts4J4Ow
+
+20多年了，为什么国产CPU还是不行？
+
+https://mp.weixin.qq.com/s/1rQHCS511Kyd62-beT5fXQ
+
+第一个打电话的中国人，究竟是谁？
+
 https://mp.weixin.qq.com/s/3zd8VsZ3vNTqK72NWJNhLg
 
 风雨三十六年，中兴通讯的命运与沉浮

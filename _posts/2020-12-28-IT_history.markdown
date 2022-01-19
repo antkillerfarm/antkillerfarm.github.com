@@ -101,6 +101,18 @@ https://mp.weixin.qq.com/s/YcOU1fA6SXdBGK87jRqt7w
 
 ---
 
+自从最近我买了一部新的Pontiac后，在我去买冰淇淋的这段路程问题就发生了。你知道吗？每当我买的冰淇淋是香草口味时，我从店里出来车子就发不动。但如果我买的是其他的口味，车子发动就顺得很。
+
+香草冰激凌是所有冰激凌口味中最畅销的口味，店家为了让顾客每次都能很快的拿取，将香草口味特别分开陈列在单独的冰柜，并将冰柜放置在店的前端；至于其他口味则放置在距离收银台较远的后端。
+
+当这位仁兄买其他口味时，由于时间较久，引擎有足够的时间散热，重新发动时就没有太大的问题。但是买香草口味时，由于花的时间较短，引擎太热以至于还无法让“蒸气琐”有足够的散热时间。
+
+https://www.sohu.com/a/44874266_114834
+
+秀逗！汽车居然对香草冰淇淋过敏？每次买它都熄火 
+
+---
+
 https://mp.weixin.qq.com/s/YdoIVBpn1dFUEzDEF5pYJw
 
 被迫离开工作近20年的公司，半导体老兵上演逆袭。林孝平，一个小儿麻痹患者。
@@ -131,7 +143,7 @@ https://mp.weixin.qq.com/s/p7T-xcyWHDYueEE3V42dfg
 
 https://m.uczzd.cn/webview/news?aid=7934419892823166898
 
-仅300员工却垄断全球, 7亿一台供不应求, 买一台都成了巨头（Canon Tokki）
+仅300员工却垄断全球，7亿一台供不应求，买一台都成了巨头（Canon Tokki）
 
 https://mp.weixin.qq.com/s/z4Aik3NgB6XE64YCZolM4w
 
@@ -300,23 +312,3 @@ https://mp.weixin.qq.com/s/TLe6qAAxWJZnKUXo6EGp5g
 https://mp.weixin.qq.com/s/CWCPmfLrh3FY2VtpmiWJug
 
 揭秘GPS背后的“隐藏人物”！从小乡村到海军基地，这位女程序员把“地球”带进日常（Gladys West）
-
-https://mp.weixin.qq.com/s/Jf2xn5E1yvlxlT9lEWT47Q
-
-30张照片回顾乔布斯和比尔盖茨之间“不得不说”的故事
-
-https://mp.weixin.qq.com/s/pkgC9Ug34O0mBj8s1AIhIQ
-
-动听百年：音乐播放器发展沉浮史
-
-https://mp.weixin.qq.com/s/H847J6qOnuXdN697MD6hqA
-
-一台笔记本的25年青春史诗（联想昭阳）
-
-https://mp.weixin.qq.com/s/scAAyxzOMqWwRl9ts4J4Ow
-
-20多年了，为什么国产CPU还是不行？
-
-https://mp.weixin.qq.com/s/1rQHCS511Kyd62-beT5fXQ
-
-第一个打电话的中国人，究竟是谁？

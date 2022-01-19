@@ -71,6 +71,12 @@ https://www.zhihu.com/question/482003599
 
 ---
 
+在PC开始出现的初期，IBM的Lotus 1-2-3是PC的杀手应用，它被认为是PC所以成功的因素之一。Lotus 1-2-3纪元（epoch）从1900年开始，所以第一天是1900年1月1日，其后所有的日期都是在它上面加一个Delta差值，这也是为什么我们上面1900年2月28是的年份表示是00的原因。Lotus从诞生起就有个bug，它认为1900年是闰年！
+
+微软因为Lotus的大卖而自己研发的表格系统Multiplan，它和它的继任者Excel为了能够与Lotus兼容，不但要做到外观十分相似，而且为了能够读取Lotus的文件而故意引入了一样的bug。
+
+---
+
 https://github.com/chrislgarry/Apollo-11
 
 Apollo 11登月代码成Github热度第一

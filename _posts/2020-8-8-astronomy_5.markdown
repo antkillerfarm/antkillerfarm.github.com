@@ -37,6 +37,10 @@ https://zhuanlan.zhihu.com/p/330003494
 
 ---
 
+第四宇宙速度（fourth cosmic velocity），是指在地球上发射的物体摆脱银河系引力束缚，飞出银河系所需的最小初始速度。但由于人们尚未知道银河系的准确大小与质量，因此只能粗略估算，其数值在525公里/秒以上。
+
+---
+
 https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
 
 生的伟大，死的光荣——致敬卡西尼号土星探测器

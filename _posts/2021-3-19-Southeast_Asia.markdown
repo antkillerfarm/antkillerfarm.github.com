@@ -182,3 +182,7 @@ http://m.afwing.vip/weapon/the-emergence-of-smart-bombs.html
 https://www.zhihu.com/question/46780291
 
 越南汉诗有哪些优秀作品？
+
+---
+
+卫生纸不是越南厕所的必需品，像许多东南亚国家一样，越南人习惯用水做清洁，在厕所装有喷头。

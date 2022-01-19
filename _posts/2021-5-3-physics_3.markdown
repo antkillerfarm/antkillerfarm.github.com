@@ -9,6 +9,26 @@ category: Nature
 
 # 物理
 
+对于高温来说，质量最大的微观粒子以光速运动时即为温度的上限，数值超过$$10^32$$K，称为普朗克温度。
+
+焦耳-汤姆森效应：气体在等焓的环境下膨胀，会使温度上升或下降。另外，存在一个所谓反转温度，当环境温度低于反转温度，通常表现为温度下降，反之温度上升。
+
+气体等焓膨胀时存在两种变化：分子平均距离增加，势能上升令动能下降，使温度下降；分子平均距离增加也会导致单位时间内平均碰撞次数下降，碰撞转化的势能下降，动能上升导致温度上升。
+
+总结起来就是当环境温度低于反转温度时，前者导致的温度下降比较显著，而环境温度高于反转温度时，后者导致的温度上升比较显著。大部分气体的反转温度都高于室温，即膨胀过程温度下降。
+
+但是，氢气和当时还没有被分离出来的氦气都是例外，它们的反转温度要远低于室温，即便制取到了它们在室温下膨胀反而会升温。
+
+![](/images/img4/James_Dewar.jpg)
+
+杜瓦通过氯甲烷-乙烯-氧气-氢气多级串联的方式制得了液氢。
+
+https://zhuanlan.zhihu.com/p/360884198
+
+科学史上最经典的“大力出奇迹”，莫过于用“土法制冷”挑战绝对零度
+
+---
+
 我记得我的朋友约翰·冯·诺依曼（John von Neumann）曾经说过，用四个参数我可以拟合出一头大象，而用五个参数我可以让它的鼻子摆动。--- By Enrico Fermi
 
 http://blog.sciencenet.cn/blog-3779-803730.html
@@ -224,43 +244,3 @@ https://mp.weixin.qq.com/s/wkc7TRfyEzm2dyT0ZzAydw
 https://mp.weixin.qq.com/s/pojV1RaxPJFLi3K9dbFerA
 
 爱因斯坦大量私照曝光：吐舌头、跷二郎腿，不梳头，真是越看越亲切...
-
-https://mp.weixin.qq.com/s/FN_J18S7wwm-2bJnjG5umA
-
-在地球上建造“太阳”，我们需要更好的材料（核聚变）
-
-https://mp.weixin.qq.com/s/DyZbm_thoVZOwt-enssJyA
-
-出圈的相对论，你真的能理解吗？
-
-https://mp.weixin.qq.com/s/CM97zGUG1aUNCoQYTFWk3w
-
-秒
-
-https://mp.weixin.qq.com/s/RmY_k1MZQM6mCdIwjpInjA
-
-有了7种答案，仍然解释不了这个最基本的问题（粒子是什么？）
-
-https://mp.weixin.qq.com/s/t4xwQUoQ8FAWetvft7RnqQ
-
-首次在室温条件下，制造出自然界中最坚硬的物质（蓝丝黛尔石）
-
-https://mp.weixin.qq.com/s/lykIPcbYDOVOy6W-Rd7e2g
-
-拥有惊人弹跳力的马里奥，究竟是不是人类？
-
-https://mp.weixin.qq.com/s/PYRDVMgL1eFHuwlCBsuGng
-
-3W字光谱分析方法综述
-
-https://mp.weixin.qq.com/s/tU6Incnq63fT61z6y9E-Jg
-
-一个5000多年的老古董，竟有人把它玩出吉尼斯世界纪录，这波操作我跪服......（陀螺）
-
-https://mp.weixin.qq.com/s/BfQ0qUHpAfmB3_mHvyeCDw
-
-不好！为了一点铅，物理学家和考古学家打起来了！（低本底铅）
-
-https://mp.weixin.qq.com/s/hWPX-lR3Eo46ofMNC2_5oQ
-
-有关诺奖的故事：简单的电学实验，造就了一个有趣的研究领域（超导现象）
