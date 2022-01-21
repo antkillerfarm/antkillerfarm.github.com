@@ -77,6 +77,16 @@ https://www.zhihu.com/question/482003599
 
 ---
 
+1991年，鲍比·柯提科和一群投资人收购了经营不善的Mediagenic，这间公司成为了动视的前身。为了帮助公司摆脱债务，柯提科对公司进行了重组，改名为动视（Activision），并将总部迁至加州。1997年，当公司终于重回盈利之后，动视走上了收购之路，在之后的十年里收购了约25个独立游戏工作室，以拓宽公司的产品矩阵。《托尼·霍克的滑板》、《使命召唤》和《吉他英雄》等知名游戏系列均在这一时期形成。
+
+1991年，麦可·莫怀米、艾伦·阿德汗和弗兰克·皮尔斯这三名加州大学洛杉矶分校的毕业生为了自己的游戏理想，创办了一家名叫硅与神经键的公司，公司于1994年改名为暴雪娱乐。
+
+https://view.inews.qq.com/wxn/20220119A03BL400
+
+687亿美元！微软买下80后、90后的青春
+
+---
+
 https://github.com/chrislgarry/Apollo-11
 
 Apollo 11登月代码成Github热度第一
@@ -244,97 +254,3 @@ YouTube博主实测病毒之王“熊猫烧香”，当年是它太强还是杀�
 https://zhuanlan.zhihu.com/p/38973085
 
 史上最烂的开发项目长啥样：苦撑12年，600多万行代码...
-
-# 并行 & 框架 & 优化+
-
-https://mp.weixin.qq.com/s/-CTVyKWtdTK0RIfzzPVyNQ
-
-分布式与高效深度学习，140页ppt详述深度学习压缩与联邦学习训练技术进展
-
-https://mp.weixin.qq.com/s/nTBuYuW7h9wZYuo3w1xGmQ
-
-分布式训练的方案和效率对比
-
-https://mp.weixin.qq.com/s/LOTQfD9KKtAq0zz4rObCGA
-
-EB级系统空中换引擎：阿里调度执行框架如何全面升级？（DAG 2.0）
-
-https://zhuanlan.zhihu.com/p/276122469
-
-分布式训练常用技术简介
-
-https://mp.weixin.qq.com/s/uQzwqcGwC9ZveuW64Lzkmg
-
-分布式训练怎么还减速了呢？
-
-https://zhuanlan.zhihu.com/p/294698838
-
-DLPerf—分布式深度学习最佳入门(踩坑)指南
-
-https://zhuanlan.zhihu.com/p/76638962
-
-Pytorch分布式训练
-
-https://zhuanlan.zhihu.com/p/360405558
-
-PyTorch分布式训练
-
-https://mp.weixin.qq.com/s/0aSBHvscloEnPMRLyNjQsg
-
-PyTorch分布式训练简明教程
-
-https://mp.weixin.qq.com/s/r7kt1k7D1wurWs_uxdLCtg
-
-PyTorch源码解读之分布式训练
-
-https://mp.weixin.qq.com/s/_85oWK2plv2QOX5Qfg_-ZA
-
-大规模机器学习优化，195页ppt与视频
-
-https://mp.weixin.qq.com/s/soruo90Dbtzi6d1kA63Akg
-
-阿里提出智能算力引擎DCAF，节省20%GPU算力
-
-https://mp.weixin.qq.com/s/oDak7peTT5ynNYrH7LSWTg
-
-分布式层次GPU参数服务器架构
-
-https://zhuanlan.zhihu.com/p/28226956
-
-浮点峰值那些事儿
-
-https://zhuanlan.zhihu.com/p/285994980
-
-针对深度学习的GPU共享
-
-https://mp.weixin.qq.com/s/Np4w7RC2JFlB7ZGIduu71w
-
-爱奇艺机器学习平台的建设实践
-
-https://mp.weixin.qq.com/s/9k6PDusoDHjmz58HAZxZcw
-
-GPipe: 小批量流水线带来的大模型训练
-
-https://mp.weixin.qq.com/s/DwjvEn04lGzKU8mDu-5q4g
-
-大幅提升训练性能，字节跳动与清华提出新型分布式DNN训练架构
-
-https://mp.weixin.qq.com/s/dJa5zOXgJJQOM5uWog3JZA
-
-Local Parallesim：一种新并行训练方法
-
-https://zhuanlan.zhihu.com/p/335116835
-
-推荐系统Serving架构分析
-
-https://mp.weixin.qq.com/s/DdsJ-ZB_cX9UhbQNK6dCag
-
-分布式深度学习训练网络综述
-
-https://mp.weixin.qq.com/s/qpwBGlTtTLEAhYAUpPyXTQ
-
-CMU：分布式机器学习原理与策略 AAAI2021教程，附221页ppt
-
-https://mp.weixin.qq.com/s/nK-9ck5S6noIETOb8b2dJw
-
-vivo AI计算平台弹性分布式训练的探索和实践

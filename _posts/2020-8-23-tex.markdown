@@ -134,6 +134,20 @@ tlmgr是texlive提供的包管理器。
 
 `tlmgr install <package>`
 
+## arara
+
+arara是一个tex方面的自动化工具。
+
+传统的latex，流水线比较长。一般有`.tex`->`.dvi`->`.pdf`的过程。pdflatex虽然将这几步统一了，但是如果要输出`.gif`或者`.svg`的话，仍然需要添加后续步骤。
+
+使用arara就可以一步到位了。
+
+>使用arara之前需要安装JRE。
+
+官网：
+
+https://islandoftex.gitlab.io/arara/
+
 ## TikZ
 
 TikZ是PGF（portable graphics format）提供的用户层API，主要用于绘图。TikZ ist kein Zeichenprogram(TikZ is not a drawing program)。
@@ -216,6 +230,18 @@ https://mp.weixin.qq.com/s/cetQ_Ddzc9Tov3x_w-Z72g
 
 快速入门使用tikz绘制深度学习网络图
 
+https://www.cnblogs.com/qizhou/p/13040159.html
+
+TIKZ——LaTeX基本绘图
+
+https://blog.csdn.net/qq_41437512/article/details/109189067
+
+TikZ绘图实例——LSTM元胞结构图
+
+https://www.cnblogs.com/ourweiguan/p/9953460.html
+
+LaTeX：图形的填充（生成阴影图形）
+
 ## Tikz+Gnuplot
 
 `sudo apt install gnuplot`
@@ -223,6 +249,32 @@ https://mp.weixin.qq.com/s/cetQ_Ddzc9Tov3x_w-Z72g
 示例：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/tikz/gnuplot
+
+## animation
+
+目前的动画主要有`.gif`和`.svg`两种格式。
+
+gif:
+
+`convert -density 300 -delay 24 -loop 0 -alpha remove multipage.pdf animated.gif`
+
+示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/tikz/animations/tikz_gif.tex
+
+svg:
+
+`pdflatex -output-format=dvi tikz-animation`
+
+`dvisvgm --zoom=-1 --exact --font-format=woff tikz-animation.dvi`
+
+示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/tikz/animations/tikz-animation.tex
+
+此外，还有工具dvipng：
+
+https://www.tug.org/texinfohtml/dvipng.html
 
 ## 中文支持
 

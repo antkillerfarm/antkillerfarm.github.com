@@ -125,6 +125,10 @@ https://zhuanlan.zhihu.com/p/415200429
 
 解读AlphaFold优点和不足
 
+https://www.zhihu.com/question/433443455
+
+alphafold2的结果对于毕生研究蛋白质折叠问题的David Baker大牛是否是一个打击？
+
 https://mp.weixin.qq.com/s/ggZZpBPap398yQ1asHD7aQ
 
 深度重建：基于深度学习的图像重建

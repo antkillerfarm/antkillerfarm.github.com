@@ -144,7 +144,11 @@ https://blog.csdn.net/feiyangqingyun/
 
 一个Qt的blog
 
-## 参考
+## PyQt
+
+PyQt是一个python语言的Qt封装。除此之外，还有一个叫PySide的库也是干这个的。
+
+它们的区别在于：PyQt是Riverbank Computing开发的，历史早，功能强。PySide是Qt官方提供的，然而很久以来都比不过前者。。。
 
 https://mp.weixin.qq.com/s/jNa4JTefasFDWoGJDBL6-Q
 

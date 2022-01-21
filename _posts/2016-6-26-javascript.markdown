@@ -237,7 +237,7 @@ nw打包是指将nw脚本打包成可执行文件的过程。打包的目的如�
 
 Electron是另一套node.js的客户端开发SDK。其官网为：
 
-http://electron.atom.io/
+https://www.electronjs.org/
 
 教程：
 
