@@ -256,6 +256,8 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/tikz
 
 gif:
 
+首先使用tikz生成所有的静态帧，然后用`convert`将之整合到一个gif文件中。arara中的`animate`规则采用了该方式。
+
 `convert -density 300 -delay 24 -loop 0 -alpha remove multipage.pdf animated.gif`
 
 示例：
@@ -263,6 +265,10 @@ gif:
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/tikz/animations/tikz_gif.tex
 
 svg:
+
+首先生成dvi文件，然后使用`dvisvgm`将dvi文件变为svg文件。arara提供有`dvisvgm`规则。这个方案使用tikz的animations库。
+
+svg文件的动态效果只有在浏览器中才可观看。
 
 `pdflatex -output-format=dvi tikz-animation`
 
@@ -297,6 +303,12 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/helloworld/tikz
 ```tex
 \documentclass[convert=pdf2svg, multi=false]{standalone}
 ```
+
+## 使用细节
+
+tikz包含一个叫做tikzmath的库，可以定义变量，用于后续使用。
+
+latex有一个ifthen的库，可以执行分支语句。
 
 ## gridslides
 
