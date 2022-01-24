@@ -129,6 +129,14 @@ $$\frac{\partial Loss}{\partial x} = \frac{\partial y^T}{\partial x}\cdot \frac{
 
 反向：$$\Delta X = \Delta Y * rot_{180}(K)$$
 
+ConvBackpropInput：
+
+![](/images/img4/conv_BI.png)
+
+ConvBackpropFilter：
+
+![](/images/img4/conv_BF.png)
+
 卷积的反向传播，有时也被称为反卷积（Deconvolution）。
 
 ![](/images/article/dcign.png)

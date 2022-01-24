@@ -198,3 +198,37 @@ http://blog.sina.com.cn/s/blog_672807b40102xh4m.html
 https://mb.yidianzixun.com/article/0JpuhkXG
 
 零式战斗机最逆天战绩，造成损失远远超过珍珠港
+
+# USA+
+
+https://mp.weixin.qq.com/s/v0W9LFtCAnPinMkOp47Dww
+
+魔幻的美国开国往事
+
+https://mp.weixin.qq.com/s/7ptQQaWxxgN5x73bXZTKHw
+
+林肯解放黑奴，美国内战最大的谎言
+
+https://mp.weixin.qq.com/s/z1mIj6qBtNZ8g792dmUQ0w
+
+希拉里曾点名的美国退役将军团：“昭和将校226”距离美国还远吗？
+
+https://mp.weixin.qq.com/s/VykNE-vG0kw86dHbA2JFBg
+
+得州断电致百万居民受困，谁的锅？
+
+https://mp.weixin.qq.com/s/02qz9qKHnyxPRdzLAz7nyw
+
+围剿特朗普，打压奥巴马，这对首富兄弟，才是美国政坛真正的主人（Koch）
+
+https://mp.weixin.qq.com/s/aTjbRbY4zD5wu-QsEZJZ-w
+
+接近40%的美国凶杀案，永远无法侦破，每年6000人死了白死
+
+https://mp.weixin.qq.com/s/lbWGeYgJqGTasY9sxeH9xA
+
+钢铁侠原型（霍华德·休斯）
+
+https://club.kdnet.net/dispbbs.asp?id=12205557
+
+威斯康辛森林狩猎人类事件

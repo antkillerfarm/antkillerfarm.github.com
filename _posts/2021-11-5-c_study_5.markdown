@@ -306,3 +306,11 @@ https://www.geogebra.org/
 官网：
 
 http://maxima.sourceforge.net/
+
+# Lazarus
+
+Lazarus为开放的IDE，且在Linux下表现良好，目前被中国计算机学会指定为NOI系列竞赛的Pascal语言推荐IDE。
+
+官网：
+
+https://www.lazarus-ide.org/
