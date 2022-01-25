@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  爬虫, scrapy, UPNP（二）, 分布式ID生成器, IEEE 802
+title:  爬虫, scrapy, UPNP（二）, IEEE 802
 category: technology 
 ---
 
@@ -8,6 +8,12 @@ category: technology
 {:toc}
 
 # 爬虫
+
+## 下载流媒体视频
+
+浏览器：开发工具->Network
+
+这里会展示所有从网络下载的数据包，至于视频当然是找数据最大的那几个包了。
 
 ## 自动解析网页的结构化数据
 
@@ -263,42 +269,6 @@ https://sourceforge.net/projects/libmcupnp/
 
 https://wiki.gnome.org/Projects/GUPnP
 
-# 分布式ID生成器
-
-![](/images/img3/Snow.png)
-
-这种结构是雪花算法提出者Twitter的分法。百度的UidGenerator、美团的Leaf等，都是基于雪花算法做一些适合自身业务的变化。
-
-参考：
-
-http://mp.weixin.qq.com/s/Bk5k6vRG4Rq4iCtmtYDEGQ
-
-Leaf——美团点评分布式ID生成系统
-
-https://mp.weixin.qq.com/s/6J7n3udEyQvUHRHwvALNYw
-
-Leaf：美团分布式ID生成服务开源
-
-https://mp.weixin.qq.com/s/_z0-90xbsCd4Pdi6UlEvnA
-
-分布式ID生成器
-
-https://mp.weixin.qq.com/s/Yk2ZlGCEINGrsTfHI6zpsw
-
-分布式id生成器
-
-https://mp.weixin.qq.com/s/E3PGP6FDBFUcghYfpe6vsg
-
-唯一ID生成算法剖析
-
-https://mp.weixin.qq.com/s/ZbZRMFjbl5oG8yncv8hCtQ
-
-认识“雪花ID”：如何在分布式环境中大规模生成唯一ID？
-
-https://mp.weixin.qq.com/s/F7WTNeC3OUr76sZARtqRjw
-
-分布式架构系统生成全局唯一序列号的一个思路
-
 # IEEE 802
 
 IEEE 802是一系列关于局域网和城域网的标准。
@@ -403,7 +373,7 @@ https://mp.weixin.qq.com/s/5MjByZWThzQ4MSWRoIS1HQ
 
 https://mp.weixin.qq.com/s/ZHgG3NJ3oMxmz8M6VDImXg
 
-​什么是WiFi 6E？它与WiFi 6有何不同？
+什么是WiFi 6E？它与WiFi 6有何不同？
 
 https://mp.weixin.qq.com/s/2Jo1dGu7_Lu3yC5Xwe-IMg
 
