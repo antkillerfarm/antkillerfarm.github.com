@@ -74,6 +74,10 @@ https://mp.weixin.qq.com/s/RhBK0szHORt7XHyoMEVnSA
 
 Vision Transformer学习笔记2: Swin Transformer
 
+https://mp.weixin.qq.com/s/faYB3JCoUfTw_zSVxrKJzA
+
+最新“视频Transformer”2022综述
+
 # BERT进阶
 
 ## AR vs AE

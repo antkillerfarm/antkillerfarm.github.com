@@ -178,3 +178,25 @@ https://mp.weixin.qq.com/s/jX9AMoQDTMZ8s2m_RFg0Pg
 https://mp.weixin.qq.com/s/aUYieCVLLom7EaWIhfccRQ
 
 院士写了首《化工之歌》，聊聊化工那些事
+
+# 机械+
+
+https://mp.weixin.qq.com/s/yLfcBRWodQTjk1AvHuZONw
+
+外形妖孽的MTs-3运动手枪，因为性能太好被国际射联禁用
+
+https://mp.weixin.qq.com/s/mOdJm812AbRDA0M-8odW3w
+
+跑步机原型竟然是十九世纪的刑具！来扒一扒跑步机的黑历史…
+
+https://www.zhihu.com/question/56689494
+
+如何正确评价美军二战时的谢尔曼坦克？
+
+https://zhuanlan.zhihu.com/p/451794381
+
+二战中敌我双方都给予很高评价的追猎者坦克歼击车
+
+https://mp.weixin.qq.com/s/QjuQgjChunKm8O8N86GZGQ
+
+让机器帮人砌堵墙怎么那么难？这是人类的百年奋斗史

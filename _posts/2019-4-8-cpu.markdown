@@ -75,6 +75,14 @@ https://www.yicai.com/news/100419064.html
 
 科技创新里程碑：IBM科学家Robert H. Dennard与改变世界的芯片
 
+![](/images/img4/Chip.jpg)
+
+最后两行就说的是固定功耗能达到的最大速度，和固定速度需要的功耗；面积的比较是在上面，不同macro微缩的比例是不一致的。
+
+https://www.zhihu.com/question/512906953
+
+22nm芯片能做到7nm一样的性能吗？
+
 ---
 
 ![](/images/img4/bell_law.png)
@@ -280,19 +288,3 @@ https://mp.weixin.qq.com/s/v3wauOfWw6TLlxTH4QKR6w
 https://mp.weixin.qq.com/s/kzQ-WqozBX-T8ZyS58MPnw
 
 一张图了解芯片到底是如何设计的
-
-## 封装
-
-### BGA & QFP
-
-BGA封装，就是那种引脚都在芯片背面的封装。QFP封装，即四侧引脚扁平封装。同样面积情况下，显然占据一个面的引脚数，要超过仅占据四个边的引脚数。
-
-### 参考
-
-https://mp.weixin.qq.com/s/vGONCRzvFGVo6giUFq0uag
-
-芯片封装类型总结
-
-https://mp.weixin.qq.com/s/RtSmbwguM7dbsXkWqAPuCQ
-
-英特尔3D封装技术深度解读

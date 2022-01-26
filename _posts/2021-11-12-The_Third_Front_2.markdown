@@ -102,3 +102,7 @@ https://mp.weixin.qq.com/s/wEqbmkJuIGjqmshE96woAQ
 https://mp.weixin.qq.com/s/TQPcOAXvjo3MXFeWN4OvhA
 
 治学报国：民国时期的统计留学生
+
+https://mp.weixin.qq.com/s/fJeYJt42nQcnugqEHUGrTw
+
+捐出200万元的中国工程院院士！一生都在做“吃螃蟹的人”……（徐寿波）

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Redis
+title:  Redis, 图数据库
 category: database 
 ---
 
@@ -142,3 +142,167 @@ Pika是一个可持久化的大容量redis存储服务，兼容string、hash、l
 官网：
 
 https://github.com/Qihoo360/pika/
+
+# 图数据库
+
+## Neo4j
+
+Neo4j大概算是最著名的图数据库了，它具有成熟和健壮的数据库的所有特性。相对于关系数据库来说，图数据库（Graph Database）善于处理大量复杂、互连接、低结构化的数据，这些数据变化迅速，需要频繁的查询——在关系数据库中，这些查询会导致大量的表连接，因此会产生性能上的问题。
+
+官网：
+
+https://neo4j.com/
+
+参考：
+
+http://blog.csdn.net/xingxiupaioxue/article/details/71747284
+
+如何将大规模数据导入Neo4j
+
+https://mp.weixin.qq.com/s/_Zm88TyBcXAZ4LeQOuJCHA
+
+管理neo4j的用户
+
+https://mp.weixin.qq.com/s/dzPZTqUhWKIiKj2o7OkMbA
+
+Neo4j的python操作库Neo4j-Driver
+
+https://mp.weixin.qq.com/s/mupuyM7m_41eOzQc7LGRRw
+
+Neo4j的python操作库Neomodel
+
+https://mp.weixin.qq.com/s/YVo6KduIvckYKH53fjDogw
+
+neo4j扩展包APOC的图算法
+
+https://zhuanlan.zhihu.com/p/61096301
+
+一文教你用Neo4j快速构建明星关系图谱
+
+https://mp.weixin.qq.com/s/dnqbsBXHodJB0ZRUrcukCw
+
+使用Docker安装Neo4j
+
+https://mp.weixin.qq.com/s/UlgRDOm93QbjWA4q_kky9g
+
+获取到知识后，如何进行存储和便捷的检索？
+
+## neo4j-graph-algorithms
+
+Neo4j Graph Algorithms扩展包，是一个关于图算法的jar包，集成了一些常见的图算法，比如社区发现，路径扩展，中心点计算，PageRank等。
+
+代码：
+
+https://github.com/neo4j-contrib/neo4j-graph-algorithms
+
+## InteractiveGraph
+
+InteractiveGraph是一个图结构的可视化库。
+
+代码：
+
+https://github.com/grapheco/InteractiveGraph
+
+参考：
+
+https://zhuanlan.zhihu.com/p/63221921
+
+InteractiveGraph实现酷炫关系图谱之前瞻
+
+## openCypher
+
+openCypher是基于Neo4j的查询语言Cypher开发的，Cypher用于在图数据库中存储和检索数据。在图数据库领域，目前还没有像关系数据库中访问数据的SQL这样的通用查询语言标准。
+
+openCypher的目标是通过简化存储、分析，以及用于访问图数据模型的工具平台，促进图处理和分析的使用。技术厂商可以在他们的工具和平台内实现Cypher。
+
+官网：
+
+http://www.opencypher.org/
+
+参考：
+
+https://mp.weixin.qq.com/s/k4OzrgeoIICO25mCbgRKxw
+
+Cypher必知必会速查表
+
+https://mp.weixin.qq.com/s/kCAGYOzeWsPzBfR1WZA9ew
+
+Cypher必知必会速查表二
+
+https://mp.weixin.qq.com/s/CS_A4207NxYczhjrJbF9IQ
+
+Cypher必知必会速查表三
+
+https://mp.weixin.qq.com/s/vEnjavJ2tObKjUDuFyuRbg
+
+Cypher必知必会速查表四
+
+## RedisGraph
+
+RedisGraph是Redis推出的基于Redis的图数据库。
+
+官网：
+
+http://redisgraph.io/
+
+参考：
+
+https://mp.weixin.qq.com/s/BzQBy6AoMXXpjsdGyXh1zA
+
+揭秘RedisGraph: Redis内嵌高性能内存图数据库
+
+## 其他图数据库
+
+开源的、流行的图数据库主要有以下几种：Neo4j、OrientDB、ArangoDB、JanusGraph、Dgraph。
+
+Neo4j历史悠久，且长期处于图数据库领域的龙头地位，但它开源的社区版本只支持单机，不支持分布式。
+
+OrientDB和ArangoDB起步比较早，最初是一个单机的图数据库，后来随着用户数据量的不断增加，增加了分布式模式，但支持的不是很好。
+
+JanusGraph和Dgraph发展的比较晚，从设计之初就考虑了分布式和扩展性，所以对分布式支持的非常好，且都是完全开源免费的。
+
+---
+
+第一类：Neo4j、ArangoDB、Virtuoso、TigerGraph、RedisGraph。此类图数据库只有单机版本开源可用，性能优秀，但不能应对分布式场景中数据的规模增长。
+
+第二类：JanusGraph、HugeGraph。此类图数据库在现有存储系统之上新增了通用的图语义解释层，图语义层提供了图遍历的能力，但是受到存储层或者架构限制，不支持完整的计算下推，多跳遍历的性能较差，很难满足OLTP场景下对低延时的要求。
+
+第三类：DGraph、NebulaGraph。此类图数据库根据图数据的特点对数据存储模型、点边分布、执行引擎进行了全新设计，对图的多跳遍历进行了深度优化。
+
+## 参考
+
+https://mp.weixin.qq.com/s/YfNlDoGOlHtpG9VFBCZHnQ
+
+VLDB2019特邀报告《图处理》综述进展，滑铁卢大学数据库大牛M. Tamer Özsu教授，170页ppt
+
+https://mp.weixin.qq.com/s/PkFscGq8tjzc3HQiF-SSsA
+
+在图数据上做机器学习，应该从哪个点切入？
+
+https://mp.weixin.qq.com/s/uYP8Eyz36JyTWska0hvtuA
+
+字节跳动自研万亿级图数据库&图计算实践
+
+https://mp.weixin.qq.com/s/uZStvVZp3UHLY3BppgaRLg
+
+JanusGraph VS Dgraph：贝壳分布式图数据库技术选型之路
+
+https://mp.weixin.qq.com/s/3rLTRtSWbf31aNRDs4rmoQ
+
+Dgraph简介篇
+
+https://mp.weixin.qq.com/s/rhtaVTON761wxGDqT9EIoQ
+
+Dgraph原理篇
+
+https://mp.weixin.qq.com/s/5nBS0FiOynhGS6mY2dZ1ng
+
+分布式图数据库在贝壳的应用实践
+
+https://blog.csdn.net/guleileo/article/details/112000725
+
+一文聊“图”，从图数据库到知识图谱
+
+https://mp.weixin.qq.com/s/akfjTkRkPraCAoli-VPC9A
+
+美团图数据库平台建设及业务实践

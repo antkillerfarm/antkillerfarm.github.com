@@ -249,19 +249,3 @@ https://mp.weixin.qq.com/s/g-IUqpMbyM8csAwh7-VoEQ
 https://mp.weixin.qq.com/s/mCczfjhbGj6u177fxQH6Yg
 
 他设计了苏联最有名的运动手枪，却从未亲眼见过，因为他是盲人
-
-https://mp.weixin.qq.com/s/yLfcBRWodQTjk1AvHuZONw
-
-外形妖孽的MTs-3运动手枪，因为性能太好被国际射联禁用
-
-https://mp.weixin.qq.com/s/mOdJm812AbRDA0M-8odW3w
-
-跑步机原型竟然是十九世纪的刑具！来扒一扒跑步机的黑历史…
-
-https://www.zhihu.com/question/56689494
-
-如何正确评价美军二战时的谢尔曼坦克？
-
-https://zhuanlan.zhihu.com/p/451794381
-
-二战中敌我双方都给予很高评价的追猎者坦克歼击车

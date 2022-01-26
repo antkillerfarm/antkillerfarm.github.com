@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Github显示数学公式
+title:  Github显示数学公式, Latex
 category: language 
 ---
 
@@ -117,6 +117,38 @@ $$\mathop{\arg\min}_{\theta,\theta_\Delta}$$
 $${\arg\min}_{\theta,\theta_\Delta}$$
 
 $$\arg\min_{\theta,\theta_\Delta}$$
+
+## Mermaid
+
+和MathJax类似，mermaid也是一个JS渲染引擎，可用于绘制各种图表。
+
+官网：
+
+https://mermaid-js.github.io/mermaid/
+
+参考：
+
+https://www.cnblogs.com/wuyida/p/6301240.html
+
+markdown绘图插件--mermaid简介
+
+https://zhuanlan.zhihu.com/p/355997933
+
+Mermaid从入门到入土——Markdown进阶语法
+
+示例：
+
+<div class="mermaid">
+      graph TD
+      A([Graph Construction]) --> B([Graph Verification])
+      B --> C([Graph Execution])
+      C --> |reference changes| B
+      C --> D([Graph Deconstruction])
+      E[[Input Data]] -.-> C
+      C -.-> F[[Output Data]]
+</div>
+
+# Latex
 
 ## CTAN
 
@@ -372,6 +404,10 @@ https://github.com/guillaumegenthial/im2latex
 
 另一个TF实现
 
+https://github.com/kingyiusuen/image-to-latex
+
+还是一个开源替代品
+
 ## Beamer
 
 示例：
@@ -429,33 +465,3 @@ Python编辑公式竟可以如此简单（latexify_py）
 https://zhuanlan.zhihu.com/p/38178015
 
 使用VSCode编写LaTeX
-
-## Mermaid
-
-和MathJax类似，mermaid也是一个JS渲染引擎，可用于绘制各种图表。
-
-官网：
-
-https://mermaid-js.github.io/mermaid/
-
-参考：
-
-https://www.cnblogs.com/wuyida/p/6301240.html
-
-markdown绘图插件--mermaid简介
-
-https://zhuanlan.zhihu.com/p/355997933
-
-Mermaid从入门到入土——Markdown进阶语法
-
-示例：
-
-<div class="mermaid">
-      graph TD
-      A([Graph Construction]) --> B([Graph Verification])
-      B --> C([Graph Execution])
-      C --> |reference changes| B
-      C --> D([Graph Deconstruction])
-      E[[Input Data]] -.-> C
-      C -.-> F[[Output Data]]
-</div>

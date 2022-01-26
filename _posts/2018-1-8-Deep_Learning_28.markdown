@@ -246,6 +246,10 @@ https://mp.weixin.qq.com/s/BczgUuh2FIvP5MG9xh87wQ
 
 多模态多任务学习新论文
 
+https://zhuanlan.zhihu.com/p/427323610
+
+多模态中预训练的演变史
+
 https://mp.weixin.qq.com/s/ipj8qpYRiYbIeXn2PZb1SQ
 
 5G时代下多模态理解做不到位注定要掉队

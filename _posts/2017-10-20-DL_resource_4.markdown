@@ -9,6 +9,20 @@ category: DL & NLP resource
 
 # DL参考资源
 
+## 缺陷检测（续）
+
+https://mp.weixin.qq.com/s/MjG2YZWe80sN5eqWpQfxOw
+
+基于深度学习的表面缺陷检测方法综述
+
+https://mp.weixin.qq.com/s/15iowD4AocB6Ut_j8kGHeg
+
+一种先分割后分类的两阶段同步端到端缺陷检测方法
+
+https://mp.weixin.qq.com/s/Jb4UgRB1kC6c2_CzSQDKeg
+
+使用计算机视觉的方法在钢铁平面上检测焊接缺陷
+
 ## 光神经网络
 
 https://mp.weixin.qq.com/s/EdDMj-fH2jXA222qyWvcuQ

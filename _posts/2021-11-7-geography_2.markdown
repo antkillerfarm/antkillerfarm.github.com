@@ -43,6 +43,10 @@ https://www.sohu.com/a/168371769_113213
 
 火山喷喷喷
 
+https://mp.weixin.qq.com/s/bblYyKCOvwW-pit5kmqmxg
+
+地球史上的超级火山爆发
+
 ---
 
 https://zhuanlan.zhihu.com/p/53237519

@@ -267,6 +267,10 @@ https://mp.weixin.qq.com/s/sFFJDGQY8kgDU-lXdngzeA
 
 算法模型调优指南
 
+https://mp.weixin.qq.com/s/mzyelweVYX2S1icHIiuWFg
+
+Pawpularity比赛总结
+
 ## 连续学习
 
 https://mp.weixin.qq.com/s/v_Tr_aM2Q1AJ1XbCYCxhgA
@@ -414,15 +418,3 @@ https://mp.weixin.qq.com/s/bbFDJ6PjjDZqdnPLMqBuKA
 https://mp.weixin.qq.com/s/UHjGE5VNoVguYMylT6SLjg
 
 基于特征的图像配准用于缺陷检测
-
-https://mp.weixin.qq.com/s/MjG2YZWe80sN5eqWpQfxOw
-
-基于深度学习的表面缺陷检测方法综述
-
-https://mp.weixin.qq.com/s/15iowD4AocB6Ut_j8kGHeg
-
-一种先分割后分类的两阶段同步端到端缺陷检测方法
-
-https://mp.weixin.qq.com/s/Jb4UgRB1kC6c2_CzSQDKeg
-
-使用计算机视觉的方法在钢铁平面上检测焊接缺陷

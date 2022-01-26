@@ -309,6 +309,10 @@ https://mp.weixin.qq.com/s/D9kdAPws1XXZUyd0IKUzyw
 
 理解B+树
 
+https://mp.weixin.qq.com/s/l08OYNlTxDKGEQnULjPV6g
+
+你管这破玩意叫B+树?
+
 https://mp.weixin.qq.com/s/8gDVqlywLBl-MZa6XrtXug
 
 为什么磁盘存储引擎用b+树来作为索引结构？
