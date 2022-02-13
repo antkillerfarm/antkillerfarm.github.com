@@ -95,6 +95,14 @@ https://www.zhihu.com/question/442860858
 
 ---
 
+植物油的提取方法分为压榨法与浸出法。浸出法成本低，易推广，是常用的炼油技术，但是这种发源于德国的工业技术在西方国家对我们的封锁中迟迟得不到不到突破，1957年才出现第一座大型浸出油试验厂——蛟河植物油厂，浸出油技术后来被我国列入了六五期间全国40项重大科技成果推广项目计划。
+
+https://www.zhihu.com/question/497597805
+
+老辈人天天吃的猪油，但现在我们炒菜为何很少用了？
+
+---
+
 ![](/images/img3/top10.png)
 
 ![](/images/img4/manufact.jpg)
@@ -212,19 +220,3 @@ https://mp.weixin.qq.com/s/EWU26Xp8Xx4rQDiLnNPLQw
 https://mp.weixin.qq.com/s/gJ315Byg0EtZVldxFp-q3A
 
 “最牛上下铺”！他们竟是舍友（歼-20总设计师杨伟、运-20总设计师唐长红）
-
-https://mp.weixin.qq.com/s/aX0aqG6h_0V0jMnQvJxfLQ
-
-袁隆平逝世：播下改变中国的种子
-
-https://mp.weixin.qq.com/s/ro1xdxRqfQo0S7qxMyHZSg
-
-这一次，外媒集体为袁隆平刷屏
-
-http://news.sina.com.cn/o/2018-06-25/doc-iheirxyf5801793.shtml
-
-儿子智力残疾、妻女精神分裂…77岁核弹老人魏世杰的故事，让无数观众为之动容
-
-https://mp.weixin.qq.com/s/vuNGjU3lPvw_k0-96v3Q6g
-
-和袁隆平是同学！这位91岁院士把一切献给“吃瓜群众”...（吴明珠）

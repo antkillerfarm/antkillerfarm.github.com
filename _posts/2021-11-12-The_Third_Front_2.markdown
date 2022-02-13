@@ -59,6 +59,22 @@ https://mp.weixin.qq.com/s/qgp97solB7pZauOnlH62wg
 
 # 两弹一星+
 
+https://mp.weixin.qq.com/s/aX0aqG6h_0V0jMnQvJxfLQ
+
+袁隆平逝世：播下改变中国的种子
+
+https://mp.weixin.qq.com/s/ro1xdxRqfQo0S7qxMyHZSg
+
+这一次，外媒集体为袁隆平刷屏
+
+http://news.sina.com.cn/o/2018-06-25/doc-iheirxyf5801793.shtml
+
+儿子智力残疾、妻女精神分裂…77岁核弹老人魏世杰的故事，让无数观众为之动容
+
+https://mp.weixin.qq.com/s/vuNGjU3lPvw_k0-96v3Q6g
+
+和袁隆平是同学！这位91岁院士把一切献给“吃瓜群众”...（吴明珠）
+
 https://mp.weixin.qq.com/s/ey3uNb3SAUR70A86-E1klg
 
 中国制造高精度机床的困难在哪里？
