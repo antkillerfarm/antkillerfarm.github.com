@@ -35,6 +35,12 @@ MCMC方法是利用马尔科夫链取样来近似后验概率，变分法是利�
 
 另一方面，后验概率的分布形式也影响着我们的选择。比如对于有多个峰值的混合模型，MCMC可能只注重其中的一个峰而不能很好的描述其他峰值，而变分法对于此类问题即使样本量较小也可能优于MCMC方法。
 
+---
+
+https://www.zhihu.com/question/45196331
+
+贝叶斯推断中为什么不能直接从posterior sampling而是要采用MCMC方法?
+
 ## 贝叶斯统计
 
 贝叶斯统计模型一般包括三类变量：观测变量(observed variables, data)（记作X），未知参数（parameters）和潜变量（latent variables）。在贝叶斯推断中，参数和潜变量统称为不可观测变量(unobserved variables)（记作Z）。

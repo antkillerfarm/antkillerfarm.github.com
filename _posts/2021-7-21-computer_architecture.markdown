@@ -147,10 +147,6 @@ https://mp.weixin.qq.com/s/Ud4f5L2tYNbP1oURVBszag
 
 >Boris Babayan，1933年生，俄罗斯科学院院士，Intel院士。俄罗斯CPU之父。
 
-https://mp.weixin.qq.com/s/iBgTyDiNNTUuuCgWJCyKig
-
-深度报告：GPU产业纵深及国产化替代
-
 ## DPU
 
 如同GPU是针对图像显示领域的加速，DPU（Data Processing Unit）则是对于数据传输方面的加速。

@@ -49,6 +49,10 @@ https://blog.csdn.net/wangyaninglm/article/details/87296595
 
 指纹的对比分析系统概述
 
+https://mp.weixin.qq.com/s/oybz1DsC8lO5fmgA-3gEfQ
+
+指纹识别不灵敏怎么办？
+
 https://mp.weixin.qq.com/s/ji8sEzJXp1UNgBHVOui0ng
 
 谷歌开源手势识别器，手机能用，还有现成的App，但是被我们玩坏了

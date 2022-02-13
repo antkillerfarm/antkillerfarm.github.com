@@ -21,10 +21,6 @@ http://blog.csdn.net/luo123n/article/details/48574123
 
 PMI（Pointwise Mutual Information）
 
-https://mp.weixin.qq.com/s/uRdMOX63mefH71sM-PBNnA
-
-立交桥布局中的迷人曲线
-
 https://mp.weixin.qq.com/s/E_EzwLr4JOzR1pk3MOeU_w
 
 复动力系统简介
@@ -36,22 +32,6 @@ http://www.cnblogs.com/zeze/p/6999651.html
 https://mp.weixin.qq.com/s/tIau6pRZU0r4Aasofca5yQ
 
 50张动图带你走进神奇的物理化学生物世界，超震撼！
-
-https://www.163.com/dy/article/FOOMUMHN0516DKF5.html
-
-没有照相机之前，画家是怎么修出漂亮的图的？
-
-https://mp.weixin.qq.com/s/mKyT376nbKNyxouuPYpSBA
-
-“千万豪车”掘进地下城，“基建狂魔”如何打造“钢铁穿山甲”？
-
-https://mp.weixin.qq.com/s/7cziogvznmYWax1LKfnPjQ
-
-史上最硬核高中数学题，题目居然不过4行？
-
-https://mp.weixin.qq.com/s/oybz1DsC8lO5fmgA-3gEfQ
-
-指纹识别不灵敏怎么办？
 
 ![](/images/img3/Universe.jpg)
 
@@ -300,23 +280,3 @@ https://mp.weixin.qq.com/s/jGqmp-_QfdyoO1fDKd6_Fg
 https://zhuanlan.zhihu.com/p/386332176
 
 航天书记张陶评院士不成，电梯殴打86岁老院士致重伤
-
----
-
-刘明侦的爷爷刘盛纲院士，电子科技大学前校长。
-
-胡玥的外公章思规，华中工学院（华中科技大学前身）汉口分院副院长。
-
-刘梦夏父亲天津大学材料学院副院长刘家臣，母亲分析中心研究员杜海燕。
-
-https://www.zhihu.com/question/504946760
-
-如何看待华中科技大学90后博导胡玥，5年来发表SCI论文60余篇？
-
-https://zhuanlan.zhihu.com/p/33340734
-
-四川的刘姓果然都不是等闲之辈，又出了个刘明侦博士！
-
-https://zhuanlan.zhihu.com/p/439342425
-
-她，天大校花，博士发Nature，30岁不到当耶鲁教授！

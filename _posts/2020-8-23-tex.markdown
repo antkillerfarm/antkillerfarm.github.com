@@ -465,3 +465,7 @@ Python编辑公式竟可以如此简单（latexify_py）
 https://zhuanlan.zhihu.com/p/38178015
 
 使用VSCode编写LaTeX
+
+https://zhuanlan.zhihu.com/p/194831235
+
+Knuth-Plass换行算法

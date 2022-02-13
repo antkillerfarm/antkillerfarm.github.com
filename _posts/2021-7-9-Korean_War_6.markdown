@@ -117,6 +117,8 @@ Churchills 丘吉尔
 
 前方捷报传回指挥部，彭德怀司令听闻先是不敢相信，然后又对身边的参谋人员说：“你要告诉50军，谎报军情可是要杀头的。”
 
+十八勇士夜袭水原城
+
 https://mp.weixin.qq.com/s/bbM_PV4nyMGnG_7OM8f9Vg
 
 50军大战英军阿尔斯特营
@@ -128,6 +130,10 @@ https://mp.weixin.qq.com/s/oVbsn4qhhz8u5aW-OUWbqQ
 https://new.qq.com/omn/20210114/20210114A05VDC00.html
 
 皇家重坦克营子虚乌有？50军虚报战绩？争论皆源自一篇不实报道
+
+https://www.lhh1.com/files/article/html/0/32/index.html
+
+壮怀激烈50军
 
 ---
 

@@ -170,6 +170,14 @@ https://www.zhihu.com/answer/973062176
 
 ---
 
+SB2C地狱俯冲者：Son of the Bitch 2nd Class
+
+https://www.zhihu.com/question/359814148
+
+二战时，三大类舰载机能否合并？
+
+---
+
 https://mp.weixin.qq.com/s/KuIf0oIkLjMTKp2FgAnpyA
 
 一口气做出12只同款雪糕，强迫症都被食物加工流水线治好了
