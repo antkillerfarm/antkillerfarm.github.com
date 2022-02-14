@@ -342,3 +342,7 @@ https://zhuanlan.zhihu.com/p/424240082
 https://www.zhihu.com/question/66902460
 
 为什么Linux下要把创建进程分为fork()和exec()(一系列函数)两个函数来处理?
+
+https://zhuanlan.zhihu.com/p/464204319
+
+Linux网络子系统中DMA机制的实现

@@ -420,6 +420,10 @@ https://mp.weixin.qq.com/s/UWMl0bd7hIgoFUWZRgmajQ
 
 谁在为科学买单？
 
+https://mp.weixin.qq.com/s/GhpPiv8CeYEOgHwsCSnBQA
+
+为什么现在很多人想读博了？
+
 # 知名AI公司技术主页
 
 http://uber.ai/

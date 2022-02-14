@@ -7,9 +7,40 @@ category: DL
 * toc
 {:toc}
 
-# Normalization进阶
+# Normalization进阶（续）
 
-## Local Response Normalization（续）
+## L2 Normalization
+
+L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：
+
+$$
+\begin{array}\\
+x=[x_1,x_2,\dots,x_d]\\
+y=[y_1,y_2,\dots,y_d]\\
+y=\frac{x}{\sqrt{\sum_{i=1}^dx_i^2}}=\frac{x}{\sqrt{x^Tx}}
+\end{array}
+$$
+
+对于多维L2 Normalization几乎未曾提及，这里以3维tensor：A[width, height, channel]为例介绍一下多维L2 Normalization的计算方法。
+
+多维L2 Normalization有一个叫axis(有时也叫dim)的参数，如果axis=0的话，实际上就是将整个tensor flatten之后，再L2 Normalization。这个是比较简单的。
+
+这里说说axis=3的情况。axis=3意味着对channel进行Normalization，也就是：
+
+$$B_{xy}=\sum_{z=0}^Z \sqrt{A_{xyz}^2}\\
+C_{xyz}=\frac{A_{xyz}}{B_{xy}}\\
+D_{xyz}=C_{xyz} \cdot S_{z}
+$$
+
+一般来说，求出C的运算被称作L2 Normalization，而求出D的运算被称作L2 Scale Normalization，S被称为Scale。
+
+## Local Response Normalization
+
+![](/images/img3/LRN.png)
+
+LRN最早出自Alexnet，虽然后来由于效果不佳，已经很少使用了，但它的思路还是可以借鉴的。
+
+LRN分为Inter-Channel LRN和Intra-Channel LRN两种，如果不加说明的话，一般是指前者。
 
 Inter-Channel LRN：
 
@@ -252,33 +283,3 @@ torch版本
 https://github.com/anishathalye/neural-style
 
 tensorflow版本
-
-在第一篇论文中，Gatys使用Gramian matrix从各层CNN中提取纹理信息，于是就有了一个不用手工建模就能生成纹理的方法。
-
-Gramian matrix（由Jørgen Pedersen Gram提出）中的元素定义如下：
-
-$$G_{ij}=\langle v_i, v_j \rangle$$
-
-这里的$$v_i$$表示向量，$$G_{ij}$$是向量的内积。可以看出Gramian matrix是一个半正定的对称矩阵。
-
-在第二篇论文中，Gatys更进一步指出：**纹理能够描述一个图像的风格。**
-
-既然第一篇论文解决了从图片B中提取纹理的任务，那么还有一个关键点就是：**如何只提取图片内容而不包括图片风格?**
-
-## Cost Function
-
-神经风格迁移生成图片G的cost function由两部分组成：C与G的相似程度和S与G的相似程度。
-
-$$J(G)=\alpha \cdot J_{content}(C,G)+\beta \cdot J_{style}(S,G)$$
-
-其中，$$\alpha, \beta$$是超参数，用来调整$$J_{content}(C,G)$$与$$J_{style}(S,G)$$的相对比重。
-
-神经风格迁移的基本算法流程是：首先令G为随机像素点，然后使用梯度下降算法，不断修正G的所有像素点，使得J(G)不断减小，从而使G逐渐有C的内容和S的风格，如下图所示：
-
-![](/images/img2/style_transfer_3.png)
-
-换句话来说就是：**每次迭代只更新图片G，而不更新网络的参数。**
-
-我们先来看J(G)的第一部分$$J_{content}(C,G)$$，它表示内容图片C与生成图片G之间的相似度。
-
-使用的CNN网络是之前预训练好的模型，例如Alex-Net。**C，S，G共用相同模型和参数。**

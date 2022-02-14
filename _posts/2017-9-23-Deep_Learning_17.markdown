@@ -1,13 +1,57 @@
 ---
 layout: post
-title:  深度学习（十七）——自动求导, 无监督/半监督/自监督深度学习（1）
+title:  深度学习（十七）——人脸检测/识别（1）, 自动求导, 无监督/半监督/自监督深度学习（1）
 category: DL 
 ---
 
 * toc
 {:toc}
 
-# 人脸检测/识别（续）
+# Style Transfer（续）
+
+https://mp.weixin.qq.com/s/9AEYcY04lAl3dCRK9LPBeQ
+
+人脸风格化核心技术与数据集总结
+
+https://mp.weixin.qq.com/s/ylfeWiOrftCB823_gjQNmA
+
+图像风格迁移也有框架了：使用Python编写，与PyTorch完美兼容，外行也能用
+
+# 人脸检测/识别
+
+## Cascade CNN
+
+论文：
+
+《A Convolutional Neural Network Cascade for Face Detection》
+
+![](/images/img2/CascadeCNN.jpg)
+
+这篇可以说是对经典的Viola-Jones方法的深度卷积网络实现，可以明显看出是3阶级联（12-net、24-net、48-net）。
+
+前2阶的网络都非常简单，只有第3阶才比较复杂。这不是重点，重点是我们要从上图中学习多尺度特征组合。
+
+以第2阶段的24-net为例，首先把上一阶段剩下的窗口resize为24*24大小，然后送入网络，得到全连接层的特征。同时，将之前12-net的全连接层特征取出与之拼接在一起。最后对组合后的特征进行softmax分类。
+
+除了分类网络之外，Cascade CNN还包含了3个修正bounding box的CNN网络，分别叫做12-calibration-net，24-calibration-net和48-calibration-net。他们的结构与12-net等类似。
+
+网络结构方面也就这样了，该论文最牛之处在于给出了这类级联网络的训练方法。
+
+![](/images/img2/CascadeCNN_2.jpg)
+
+1.按照一般的方法组织正负样本训练第一阶段的12-net和12-calibration-net网络；
+
+2.利用上述的1层网络在AFLW数据集上作人脸检测，在保证99%的召回率的基础上确定判别阈值T1。
+
+3.将在AFLW上判为人脸的非人脸窗口作为负样本，将所有真实人脸作为正样本，训练第二阶段的24-net和24-calibration-net网络；
+
+4.重复2和3，完成最后阶段的训练。
+
+参考：
+
+http://blog.csdn.net/shuzfan/article/details/50358809
+
+人脸检测——CascadeCNN
 
 ## MTCNN
 
@@ -247,116 +291,58 @@ AI框架基础技术之自动求导机制 (Autograd)
 
 自监督学习是一种特殊目的的无监督学习。不同于传统的AutoEncoder等方法，仅仅以重构输入为目的，而是希望通过surrogate task学习到和高层语义信息相关联的特征。
 
-## 参考
+## 对比学习
 
-https://mp.weixin.qq.com/s/sDkGAhnFC027XjpUImeatw
+![](/images/img4/SimCLR.jpg)
 
-自监督、半监督、无监督学习，傻傻分不清楚？最新综述来帮你！
+https://mp.weixin.qq.com/s/r1uXn2jGsHZcZ8Nk7GnGFA
 
-https://mp.weixin.qq.com/s/L4GQF0eE7MjLPrb8UygCww
+语义表征的无监督对比学习：一个新理论框架
 
-无监督深度学习全景教程（193页PDF）
+https://zhuanlan.zhihu.com/p/346686467
 
-https://mp.weixin.qq.com/s/kbqTHIOzAj1aERl4tm-kVA
+对比学习（Contrastive Learning）综述
 
-2017上半年无监督特征学习研究成果汇总
+https://mp.weixin.qq.com/s/SOaA9XNnymLgGgJ5JNSdBg
 
-https://mp.weixin.qq.com/s/J50L6hESBROfT8IIAnofQQ
+对比学习（Contrastive Learning）相关进展梳理
 
-Yan LeCun109页最新报告：图嵌入, 内容理解，自监督学习
+https://mp.weixin.qq.com/s/U0pTQkW55evm94iQORwGeA
 
-https://mp.weixin.qq.com/s/s440gdbUhLP41rLPjfgsmQ
+图解SimCLR框架，用对比学习得到一个好的视觉预训练模型
 
-Yann Lecun自监督学习指南（附114页Slides全文下载）
+https://mp.weixin.qq.com/s/1RJ4bbfDC5LiN2PNIxdzew
 
-https://mp.weixin.qq.com/s/foP1xSa5G8oNtAv_pI6AqQ
+SimCLR框架的理解和代码实现以及代码讲解
 
-深度神经网络自监督视觉特征学习综述
+https://mp.weixin.qq.com/s/-Vtl_8nND7WCPLdL5bNlMw
 
-https://mp.weixin.qq.com/s/sEHA6fb0XIXQWsmJGf3fTA
+探索孪生神经网络：请停止你的梯度传递
 
-DeepMind发布自监督学习最新教程，附122页全文资料下载
+https://zhuanlan.zhihu.com/p/321642265
 
-https://mp.weixin.qq.com/s/-JoB1MJ0ZpkYLlToS7-AOA
+《探索简单孪生网络表示学习》阅读笔记
 
-牛津大学&DeepMind：自监督学习教程，141页ppt
+https://mp.weixin.qq.com/s/6qqFAQBaOFuXtaeRSmQgsQ
 
-https://mp.weixin.qq.com/s/HfqH-b8x8SsE6zb8pcF3Og
+一文梳理2020年大热的对比学习模型
 
-自监督学习（Self-Supervised Learning） 2018-2020年发展综述
+https://mp.weixin.qq.com/s/SeAZERYdfqDbtqTLnuWfGg
 
-https://mp.weixin.qq.com/s/2Wm6eQodwlc5XkjGKqhwCg
+盘点近期大热对比学习模型：MoCo/SimCLR/BYOL/SimSiam
 
-南京大学周志华教授综述论文：弱监督学习
+https://mp.weixin.qq.com/s/jHVg-BMRRVNjAf6ZFEoPxQ
 
-https://mp.weixin.qq.com/s/_3DqXBpZhstVv6BkBR4oag
+自监督学习的SimCLRv2框架
 
-自监督学习综述
+https://mp.weixin.qq.com/s/7iBC_n6EARW3V8bNuKUqQA
 
-https://mp.weixin.qq.com/s/aCWAU2RXk9fTzfFqOyjqUw
+Hinton团队力作：SimCLR系列
 
-能自主学习的人工突触，为无监督学习开辟新的路径
+https://mp.weixin.qq.com/s/sH-G4g0EyQLu2l91Xvdefw
 
-https://mp.weixin.qq.com/s/9kMz-eNRwC51Fi0-7BfKzA
+Neighbor2Neighbor：无需干净图像的自监督图像降噪
 
-Active Learning: 一个降低深度学习时间，空间，经济成本的解决方案
+https://mp.weixin.qq.com/s/xYlCAUIue_z14Or4oyaCCg
 
-https://mp.weixin.qq.com/s/ZvTm9omnIRqPXcLFbZtoeg
-
-深度学习的关键：无监督深度学习简介
-
-https://mp.weixin.qq.com/s/GHjmiB6F2W3Zo8gVllTyyQ
-
-重现“世界模型”实验，无监督方式快速训练
-
-https://mp.weixin.qq.com/s/3_VtdZNKBwNtMEMf2xc7qw
-
-CVPR智慧城市挑战赛：无监督交通异常检测，冠军团队技术分享
-
-https://mp.weixin.qq.com/s/3aAaM1DWsnCWEEbP7dOZEg
-
-伯克利等提出无监督特征学习新方法，代码已开源
-
-https://mp.weixin.qq.com/s/kNTRpDbKQIalzJi_rx0noQ
-
-无标签表示学习，222页ppt，DeepMind
-
-https://mp.weixin.qq.com/s/ZDPPWH570Vc6e1irwP1b1Q
-
-精细识别现实世界图像：李飞飞团队提出半监督适应性模型
-
-https://mp.weixin.qq.com/s/X1Alcl7rVfTtZGZ40iXjXw
-
-Spotlight 论文：非参数化方法实现的极端无监督特征学习
-
-https://mp.weixin.qq.com/s/kxEfoSjCF8n2jxlDfMaNDA
-
-半监督学习在图像分类上的基本工作方式
-
-https://mp.weixin.qq.com/s/uUMPUdG2TI10W5RumPaXkA
-
-DeepMind无监督表示学习重大突破：语音、图像、文本、强化学习全能冠军！
-
-https://mp.weixin.qq.com/s/_VC6PGdCjlhcsndpunIteg
-
-何恺明等人提出新型半监督实例分割方法：学习分割Every Thing
-
-https://mp.weixin.qq.com/s/qaxzSSDuuscwL5tt0QCQ0Q
-
-破解人类识别文字之谜：对图像中的字母进行无监督学习
-
-https://mp.weixin.qq.com/s/IsLlzDWnUXe8LVp4Y1Jb_A
-
-35亿张图像！Facebook基于弱监督学习刷新ImageNet基准测试记录
-
-https://mp.weixin.qq.com/s/TEk_i4kEjUqmAqF8LgTVjg
-
-FAIR提出用聚类方法结合卷积网络，实现无监督端到端图像分类
-
-https://mp.weixin.qq.com/s/dSncg1pDHpIFOT4mXrFntA
-
-Yan Lecun自监督学习：机器能像人一样学习吗？ 110页PPT
-
-https://mp.weixin.qq.com/s/W4zwKqkVQN4v-IKzGrkudg
-
-通过传递不变性实现自监督视觉表征学习
+对比学习研究进展精要

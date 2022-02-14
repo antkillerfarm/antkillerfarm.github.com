@@ -251,6 +251,10 @@ https://mp.weixin.qq.com/s/jjT0x99ht8xtfWmzL-0R1A
 
 深度学习的IR“之争”
 
+https://mp.weixin.qq.com/s/G36IllLOTXXbc4LagbNH9Q
+
+编译器与IR的思考: LLVM IR，SPIR-V到MLIR
+
 # MXNet
 
 https://mp.weixin.qq.com/s/50uGupiwU2UVuVeMm_bTag

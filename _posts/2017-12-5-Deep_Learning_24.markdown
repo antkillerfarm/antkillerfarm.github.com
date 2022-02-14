@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十四）——深度目标跟踪, L2 Normalization
+title:  深度学习（二十四）——深度目标跟踪, L2 Normalization, Regularization
 category: DL 
 ---
 
@@ -374,3 +374,45 @@ https://mp.weixin.qq.com/s/oseEmzgb8iCoOf9lTbAssg
 https://mp.weixin.qq.com/s/Z-_iZl_CTixqK0vl0_CHfQ
 
 基于深度学习的视觉多目标跟踪算法综述
+
+# Regularization
+
+DL中的Regularization除了常见的$$l_1$$-norm、$$l_2$$-norm和squared $$l_2$$-norm之外，还有Group Regularization。它的定义如下：
+
+$$loss(W;x;y) = loss_D(W;x;y) + \lambda_R R(W) + \lambda_g \sum_{l=1}^{L} R_g(W_l^{(G)})$$
+
+$$R_g(w^{(g)}) = \sum_{g=1}^{G} \lVert w^{(g)} \rVert_g = \sum_{g=1}^{G} \sum_{i=1}^{|w^{(g)}|} {(w_i^{(g)})}^2$$
+
+Group Regularization也叫做Block Regularization或Structured Regularization。
+
+# 何恺明
+
+## MoCo
+
+https://mp.weixin.qq.com/s/9zaTjwwGPHHzSv1ZmHf8_g
+
+不妨试试MoCo，来替换ImageNet上pretrain模型！
+
+https://mp.weixin.qq.com/s/GC6PGlweneYtYo7_SUr0Zw
+
+MoCo V3：我并不是你想的那样！
+
+https://mp.weixin.qq.com/s/sAYh3l2eab2r2KpbdxN30A
+
+MoCo三部曲
+
+## Masked Autoencoders
+
+![](/images/img4/MAE.png)
+
+https://mp.weixin.qq.com/s/x-ruExbM9T8EIv2gZW0Nnw
+
+视觉预训练新范式MAE
+
+https://www.zhihu.com/question/498364155
+
+如何看待何恺明最新一作论文Masked Autoencoders？
+
+https://mp.weixin.qq.com/s/CxEvEZ9AiEfB1TFFjev0aA
+
+NLP和CV的双子星，注入Mask的预训练模型BERT和MAE

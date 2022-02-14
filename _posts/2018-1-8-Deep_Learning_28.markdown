@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十八）——SOM, 多模态学习, Recursive NN
+title:  深度学习（二十八）——SOM, Recursive NN
 category: DL 
 ---
 
@@ -203,108 +203,6 @@ http://blog.csdn.net/Loyal2M/article/details/11225987
 http://www.ai-junkie.com/ann/som/som1.html
 
 Kohonen's Self Organizing Feature Maps
-
-# 多模态学习
-
-https://github.com/HuaizhengZhang/Awsome-Deep-Learning-for-Video-Analysis
-
-深度学习视频分析/多模态学习资源大列表
-
-https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw
-
-多模态学习研究进展综述
-
-https://mp.weixin.qq.com/s/g3rwPsusYi7gQopOHvdNrA
-
-多模态学习调研
-
-https://mp.weixin.qq.com/s/xzeNAuuDt_VLHDgvIkc-Mg
-
-多模态情感分析简述
-
-https://mp.weixin.qq.com/s/vpBPkjuCebSWh5qPLYHCkw
-
-上海交大提出多模态框架“EmotionMeter”，更精准地识别人类情绪
-
-https://mp.weixin.qq.com/s/BBg04rDtiqU-XrWortufNA
-
-康奈尔&英伟达提出多模态无监督图像转换新方法
-
-http://mp.weixin.qq.com/s/khOINUyrNV3TFfgNRheH0A
-
-卷积神经网络压缩、多模态的语义分析研究
-
-https://mp.weixin.qq.com/s/ywU4L659iRcmIgmV6RtbXA
-
-DeepMind新研究连接听与看，实现“听声辨位”的多模态学习
-
-https://mp.weixin.qq.com/s/1qhcyTXttgKWlw-Oy556Tw
-
-TPAMI2019最新《多模态机器学习综述》
-
-https://mp.weixin.qq.com/s/BczgUuh2FIvP5MG9xh87wQ
-
-多模态多任务学习新论文
-
-https://zhuanlan.zhihu.com/p/427323610
-
-多模态中预训练的演变史
-
-https://mp.weixin.qq.com/s/ipj8qpYRiYbIeXn2PZb1SQ
-
-5G时代下多模态理解做不到位注定要掉队
-
-https://mp.weixin.qq.com/s/UghgWBN7mE8oJdMUvjAjcQ
-
-何晖光：多模态情绪识别及跨被试迁移学习
-
-https://mp.weixin.qq.com/s/EMWpBP5iB1Qrleo3XNjbuQ
-
-IEEE Fellow何晓东&邓力：多模态智能论文综述：表示学习，信息融合与应用
-
-https://mp.weixin.qq.com/s/Yus55s1utTrjuzsrebJu_w
-
-让机器读懂视频：亿级淘宝视频背后的多模态AI算法揭秘
-
-https://mp.weixin.qq.com/s/4AzF6utrQhhEweRIM6zV3A
-
-文本+视觉，跨模态预训练新进展
-
-https://mp.weixin.qq.com/s/dG7Lr5fdmqJQaYOWgkk8iw
-
-如何构建多模态BERT?这份UNC76页《LXMERT: 从Transformer学习跨模态编码表示》PPT告诉您
-
-https://mp.weixin.qq.com/s/QIJ2c4L7KfjVEhIyKayJ-Q
-
-阿里文娱多模态视频分类算法中的特征改进
-
-https://mp.weixin.qq.com/s/THxlQX2MPXua0_N0Ug0EWA
-
-BERT在多模态领域中的应用
-
-https://mp.weixin.qq.com/s/GxQ27vY5naaAXtp_ZTV0ZA
-
-通用的图像-文本语言表征学习：多模态预训练模型 UNITER
-
-https://mp.weixin.qq.com/s/rjWOkwzX3IE59Kc9P9leAQ
-
-格“物”致知：多模态预训练再次入门
-
-https://mp.weixin.qq.com/s/0CUGispeZS04D6NhGkrucw
-
-多模态深度学习：用深度学习的方式融合各种信息
-
-https://mp.weixin.qq.com/s/Tli19SOum_muBoBaTtXKUQ
-
-多模态中NLP与CV融合的一些方式
-
-https://mp.weixin.qq.com/s/ondgiFryYqB6-sf-v4pLXQ
-
-多模态预训练模型简述
-
-https://mp.weixin.qq.com/s/TFHS5lZYFwcjP_SC1dAckA
-
-多模态信息如何嵌入推荐系统？RecSys2021《多模态推荐系统》教程
 
 # Recursive NN
 

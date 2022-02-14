@@ -235,7 +235,21 @@ https://mp.weixin.qq.com/s/PKSrgy7KdtVUv4EXVDyiOw
 
 它和多通道卷积的区别在于：
 
-多通道卷积不同的通道上的卷积核的参数是不同的，而3D卷积则由于卷积核本身是3D的，所以这个由于“深度”造成的看似不同通道上用的就是同一个卷积
+多通道卷积不同的通道上的卷积核的参数是不同的，而3D卷积则由于卷积核本身是3D的，所以这个由于“深度”造成的看似不同通道上用的就是同一个卷积。
+
+3D卷积可以转化为2D卷积，方法如下图：
+
+Prepare Input：
+
+![](/images/img4/conv3d.png)
+
+Prepare Kernel：
+
+![](/images/img4/conv3d_2.png)
+
+Compute Output：
+
+![](/images/img4/conv3d_3.png)
 
 论文：
 
@@ -286,29 +300,3 @@ SCNN-用于时序动作定位的多阶段3D卷积网络
 https://www.jiqizhixin.com/articles/2016-08-03
 
 FusionNet融合三个卷积网络：识别对象从二维升级到三维
-
-http://blog.csdn.net/zouxy09/article/details/9002508
-
-基于3D卷积神经网络的人体行为理解
-
-https://mp.weixin.qq.com/s/YdON6Yzddq2f_QGbQsOY8w
-
-深度三维残差神经网络：视频理解新突破
-
-https://mp.weixin.qq.com/s/MfDQXTSoe0GnaEFfyLJQ1w
-
-点云处理不得劲？球卷积了解一下
-
-https://paddlepedia.readthedocs.io/en/latest/tutorials/CNN/convolution_operator/3D_Convolution.html
-
-3D卷积
-
-## 参考
-
-https://github.com/vdumoulin/conv_arithmetic
-
-Convolution arithmetic
-
-http://deeplearning.net/software/theano_versions/dev/tutorial/conv_arithmetic.html
-
-Convolution arithmetic

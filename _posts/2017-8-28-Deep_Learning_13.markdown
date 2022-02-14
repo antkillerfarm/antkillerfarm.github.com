@@ -7,9 +7,35 @@ category: DL
 * toc
 {:toc}
 
-# 姿态/行为检测
+# 姿态/行为检测（续）
 
-## DensePose（续）
+## DensePose
+
+与OpenPose类似的还有Facebook提出的DensePose。
+
+论文：
+
+《DensePose: Dense Human Pose Estimation In The Wild》
+
+数据集：
+
+http://densepose.org/
+
+这里包含了一个名为DensePose-COCO的姿态数据集。
+
+参考：
+
+https://mp.weixin.qq.com/s/sFd9hrMrKDl5UJwlY6N7mw
+
+Facebook提出DensePose数据集和网络架构：可实现实时的人体姿态估计
+
+https://mp.weixin.qq.com/s/t29ITfRPD3yCmRD5wJyq7g
+
+ICCV2017 PoseTrack challenge优异方法：基于检测和跟踪的视频中人体姿态估计
+
+https://mp.weixin.qq.com/s/mGcKpu3BXlAGO-t2FUCxAg
+
+基于深度模型的人脸对齐和姿态标准化
 
 https://mp.weixin.qq.com/s/gwRD3SzTof349V8W0_lRfg
 
@@ -322,43 +348,3 @@ https://mp.weixin.qq.com/s/cGXANj7BB2ktTdPAL4ZEWA
 https://mp.weixin.qq.com/s/jYUAKyTpm69J6Q34A06E-w
 
 百度提出冷聚变方法：使用语言模型训练Seq2Seq模型
-
-https://mp.weixin.qq.com/s/Fp6G1aI_utDd_kTbdHvEVQ
-
-完全基于卷积神经网络的seq2seq
-
-http://localhost:4500/theory/2017/06/21/Deep_Learning_6.html
-
-从2017年顶会论文看Attention Model
-
-https://mp.weixin.qq.com/s/Op_oYiNvaTXvsvAnl8Heew
-
-基于Self-attention的文本向量表示方法，悉尼科技大学和华盛顿大学最新工作
-
-https://mp.weixin.qq.com/s/fBrt4g_Kjmt1tGVZw5KgrQ
-
-从LSTM到Seq2Seq
-
-https://mp.weixin.qq.com/s/riIC6ybvqAJx9mzb-AQIOw
-
-Facebook AI发布新版本FairSeq序列到序列(Seq2Seq)学习工具，可生成故事与快速推断
-
-https://mp.weixin.qq.com/s/DIqjVxF_kACkivzez4_Hog
-
-编码器-解码器网络：神经翻译模型详解
-
-https://mp.weixin.qq.com/s/Alg4rOXNvb4GA8N4Joy-Jg
-
-Seq2seq强化，Pointer Network简介
-
-https://mp.weixin.qq.com/s/kdmmgVdWxz2nJPmjcprvqg
-
-机器学习中的编码器-解码器结构哲学
-
-https://mp.weixin.qq.com/s/OcrT2-sAWJg-ILdHwi4t5Q
-
-seq2seq最新变体，稀疏序列模型
-
-https://mp.weixin.qq.com/s/_1lr612F3x8ld9gvXj9L2A
-
-推断速度达seq2seq模型的100倍，谷歌开源文本生成新方法LaserTagger

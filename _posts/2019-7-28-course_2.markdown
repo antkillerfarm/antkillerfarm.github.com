@@ -149,6 +149,10 @@ https://fullstackdeeplearning.com/spring2021/
 
 Full Stack Deep Learning
 
+https://github.com/michiganrobotics/rob501
+
+Robotics 501: Mathematics for Robotics
+
 # English
 
 SOTA(state of the art)：目前最高水平

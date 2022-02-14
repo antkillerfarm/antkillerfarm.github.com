@@ -7,6 +7,48 @@ category: DL
 * toc
 {:toc}
 
+# seq2seq（续）
+
+https://mp.weixin.qq.com/s/Fp6G1aI_utDd_kTbdHvEVQ
+
+完全基于卷积神经网络的seq2seq
+
+http://localhost:4500/theory/2017/06/21/Deep_Learning_6.html
+
+从2017年顶会论文看Attention Model
+
+https://mp.weixin.qq.com/s/Op_oYiNvaTXvsvAnl8Heew
+
+基于Self-attention的文本向量表示方法，悉尼科技大学和华盛顿大学最新工作
+
+https://mp.weixin.qq.com/s/fBrt4g_Kjmt1tGVZw5KgrQ
+
+从LSTM到Seq2Seq
+
+https://mp.weixin.qq.com/s/riIC6ybvqAJx9mzb-AQIOw
+
+Facebook AI发布新版本FairSeq序列到序列(Seq2Seq)学习工具，可生成故事与快速推断
+
+https://mp.weixin.qq.com/s/DIqjVxF_kACkivzez4_Hog
+
+编码器-解码器网络：神经翻译模型详解
+
+https://mp.weixin.qq.com/s/Alg4rOXNvb4GA8N4Joy-Jg
+
+Seq2seq强化，Pointer Network简介
+
+https://mp.weixin.qq.com/s/kdmmgVdWxz2nJPmjcprvqg
+
+机器学习中的编码器-解码器结构哲学
+
+https://mp.weixin.qq.com/s/OcrT2-sAWJg-ILdHwi4t5Q
+
+seq2seq最新变体，稀疏序列模型
+
+https://mp.weixin.qq.com/s/_1lr612F3x8ld9gvXj9L2A
+
+推断速度达seq2seq模型的100倍，谷歌开源文本生成新方法LaserTagger
+
 # Normalization进阶
 
 ## Batch Normalization
@@ -282,36 +324,3 @@ https://mp.weixin.qq.com/s/44RvXEYYc5lebsHs_ooswg
 https://mp.weixin.qq.com/s/J8i0Qsl0q9sYS2iAc-M44w
 
 BN，LN，IN，GN都是什么？不同归一化方法的比较
-
-## L2 Normalization
-
-L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：
-
-$$
-\begin{array}\\
-x=[x_1,x_2,\dots,x_d]\\
-y=[y_1,y_2,\dots,y_d]\\
-y=\frac{x}{\sqrt{\sum_{i=1}^dx_i^2}}=\frac{x}{\sqrt{x^Tx}}
-\end{array}
-$$
-
-对于多维L2 Normalization几乎未曾提及，这里以3维tensor：A[width, height, channel]为例介绍一下多维L2 Normalization的计算方法。
-
-多维L2 Normalization有一个叫axis(有时也叫dim)的参数，如果axis=0的话，实际上就是将整个tensor flatten之后，再L2 Normalization。这个是比较简单的。
-
-这里说说axis=3的情况。axis=3意味着对channel进行Normalization，也就是：
-
-$$B_{xy}=\sum_{z=0}^Z \sqrt{A_{xyz}^2}\\
-C_{xyz}=\frac{A_{xyz}}{B_{xy}}\\
-D_{xyz}=C_{xyz} \cdot S_{z}
-$$
-
-一般来说，求出C的运算被称作L2 Normalization，而求出D的运算被称作L2 Scale Normalization，S被称为Scale。
-
-## Local Response Normalization
-
-![](/images/img3/LRN.png)
-
-LRN最早出自Alexnet，虽然后来由于效果不佳，已经很少使用了，但它的思路还是可以借鉴的。
-
-LRN分为Inter-Channel LRN和Intra-Channel LRN两种，如果不加说明的话，一般是指前者。

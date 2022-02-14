@@ -7,7 +7,35 @@ category: DL
 * toc
 {:toc}
 
-# 花式卷积（续）
+# 花式卷积
+
+## 3D卷积（续）
+
+http://blog.csdn.net/zouxy09/article/details/9002508
+
+基于3D卷积神经网络的人体行为理解
+
+https://mp.weixin.qq.com/s/YdON6Yzddq2f_QGbQsOY8w
+
+深度三维残差神经网络：视频理解新突破
+
+https://mp.weixin.qq.com/s/MfDQXTSoe0GnaEFfyLJQ1w
+
+点云处理不得劲？球卷积了解一下
+
+https://paddlepedia.readthedocs.io/en/latest/tutorials/CNN/convolution_operator/3D_Convolution.html
+
+3D卷积
+
+## 参考
+
+https://github.com/vdumoulin/conv_arithmetic
+
+Convolution arithmetic
+
+http://deeplearning.net/software/theano_versions/dev/tutorial/conv_arithmetic.html
+
+Convolution arithmetic
 
 https://www.jarvis73.com/2019/06/06/Convolution-Guide/
 
@@ -310,31 +338,3 @@ OpenPose升级，CMU提出首个单网络全人体姿态估计网络，速度大
 https://mp.weixin.qq.com/s/jAmUscrMZ8EmG3th-3Yx3w
 
 实战：基于OpenPose的卡通人物可视化
-
-## DensePose
-
-与OpenPose类似的还有Facebook提出的DensePose。
-
-论文：
-
-《DensePose: Dense Human Pose Estimation In The Wild》
-
-数据集：
-
-http://densepose.org/
-
-这里包含了一个名为DensePose-COCO的姿态数据集。
-
-参考：
-
-https://mp.weixin.qq.com/s/sFd9hrMrKDl5UJwlY6N7mw
-
-Facebook提出DensePose数据集和网络架构：可实现实时的人体姿态估计
-
-https://mp.weixin.qq.com/s/t29ITfRPD3yCmRD5wJyq7g
-
-ICCV2017 PoseTrack challenge优异方法：基于检测和跟踪的视频中人体姿态估计
-
-https://mp.weixin.qq.com/s/mGcKpu3BXlAGO-t2FUCxAg
-
-基于深度模型的人脸对齐和姿态标准化

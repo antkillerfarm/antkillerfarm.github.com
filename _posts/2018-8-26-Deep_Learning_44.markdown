@@ -1,348 +1,224 @@
 ---
 layout: post
-title:  深度学习（四十四）——图像变换
+title:  深度学习（四十四）——多标签学习, 多模态学习
 category: DL 
 ---
 
 * toc
 {:toc}
 
-# 图像变换
+# 多标签学习
 
-https://mp.weixin.qq.com/s/Qwe4LXnB5BitvRGm46dU2w
+多标签分类问题（也称细粒度分类），通常有两种解决方案，即转换为多个单标签分类问题，或者直接联合研究。前者，可以训练多个分类器，来判断该维度属性的是否，损失函数常使用softmax loss。后者，则直接训练一个多标签的分类器，所使用的标签为0,1,0,0…这样的向量，使用hanmming距离等作为优化目标。
 
-人工智能是摄影的未来还是摄影技术的末日？
+参考：
 
-https://mp.weixin.qq.com/s/LlTuzLT9L4FHetV4EbBHEw
+https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw
 
-渐进式图像重构网络：像画画一样重构图像
+分段映射：帮助利用少量样本习得新类别细粒度分类器
 
-https://mp.weixin.qq.com/s/eLHhmPMNSe1QxDKv6Lk9yw
+https://mp.weixin.qq.com/s/zeN7rjmAnvh_7BbTmScrZw
 
-原来，阿里工程师才是隐藏的“修图高手”！
+细粒度分类你懂吗？——fine-gained image classification
 
-https://mp.weixin.qq.com/s/1QQ2_vkQ_vLvuxvR-fboQg
+https://mp.weixin.qq.com/s/SCsdWLrBDAKzc9NLAK1jxQ
 
-大三少年造出AI写意画家，像人类一样挥笔作画
+最新综述：多标签学习的新趋势
 
-https://zhuanlan.zhihu.com/p/67692429
+https://mp.weixin.qq.com/s/LtWMGRBk2sbPDjeC9PmJ7g
 
-GAN网络利用单张照片构成动图
+弱监督学习下的商品识别：CVPR 2018细粒度识别挑战赛获胜方案简介
 
-https://mp.weixin.qq.com/s/zgMPW6yioGJEhusj031r5A
+https://mp.weixin.qq.com/s/hcoAL1AHm_HtderWU8fSBw
 
-如何利用深度学习技术处理图像水印？
+大连理工大学在CVPR18大规模精细粒度物种识别竞赛中获得冠军
 
-https://mp.weixin.qq.com/s/Y__qQCkkUlDGAl8dF_tsPg
+https://mp.weixin.qq.com/s/31r9FjuJn9yxrZMnfozkMQ
 
-女神背心变内衣，只需草图画几笔
+全卷积注意网络的细粒度识别
 
-https://mp.weixin.qq.com/s/mWIJt6niM3cw_Zy_RHRCZw
+https://zhuanlan.zhihu.com/p/24738319
 
-人脸照片秒变艺术肖像画：清华大学提出APDrawingGAN
+“见微知著”——细粒度图像分析进展综述
 
-https://mp.weixin.qq.com/s/xPkB6nexTo1FpcJnn_okhA
+https://zhuanlan.zhihu.com/p/42067661
 
-你的涂鸦活了，CMU中国本科生让画成真
+CVPR Look Closer to See Better
 
-https://mp.weixin.qq.com/s/LkRgaSWBkE8dJl69IQroIg
+https://mp.weixin.qq.com/s/52hm3Cq3TFRnTMfDppivSQ
 
-造假AI又进化！只要一张照片，说话唱歌视频自动生成，降维打击Deepfakes
+中山大学等提出HSE：基于层次语义嵌入模型的精细化物体分类
 
-https://mp.weixin.qq.com/s/entoLCunjKY7PYWI8-aAgg
+https://zhuanlan.zhihu.com/p/48192930
 
-谷歌AI秀神技：大脸畸变一键还原，拍照无需抢C位，实时运行毫无PS痕迹
+Object-Part Attention Model for FGVC
 
-https://mp.weixin.qq.com/s/uhbKu69K6N-pxFZCRwAz1g
+https://mp.weixin.qq.com/s/slmod5rW4qRhxGnbNN2J8g
 
-秒变“女装大佬”！Snapchat推出性别转换滤镜，离线实时渲染
+双线性汇合(bilinear pooling)在细粒度图像分析及其他领域的进展综述
 
-https://mp.weixin.qq.com/s/H2nqQi2EVQ_EyeDNCRD3Cg
+https://mp.weixin.qq.com/s/JGQdHS_yqkOMrN_Z3jEb7A
 
-一文回顾AI绘画的成长之路：从简笔画到真实人脸生成
+基于深度学习的细粒度图像分类综述
 
-https://mp.weixin.qq.com/s/ttdr14ryy6C-Fcm06kC7pQ
+https://mp.weixin.qq.com/s/L-1gkElxsMtT369fgJl86Q
 
-CVPR 2019 Oral 亮风台提出端到端投影光学补偿算法
+旷视南京研究院魏秀参：细粒度图像分析综述
 
-https://zhuanlan.zhihu.com/p/61761901
+https://zhuanlan.zhihu.com/p/57086099
 
-LearningToPaint：一个绘画AI
+细粒度识别之Local Attention Network
 
-https://mp.weixin.qq.com/s/JJ2V9coeDI7WvWyDZNlVqA
+https://mp.weixin.qq.com/s/6K4tXPlYLaXhexh6gElP5Q
 
-你的老婆你做主：画风自定义，内容自定义，南加大AI助你走上人生巅峰
+多标签图像分类综述
 
-https://mp.weixin.qq.com/s/f-ITHpPB0F-CmFT1k5WfQA
+https://mp.weixin.qq.com/s/bb3ZsXtiRmPvzQ-lfSXrZQ
 
-INIT：针对实例级的图像翻译
+基于Pascal VOC2012增强数据的多标签图像分类实战
 
-https://mp.weixin.qq.com/s/x4Jelv7qAJpehfn-5A-azA
+https://mp.weixin.qq.com/s/2pJt9hlUFhR6mo1ughKkiA
 
-进阶版神笔：只需一句话、一个故事，即可生成画面
+超全深度学习细粒度图像分析：项目、综述、教程一网打尽
 
-https://mp.weixin.qq.com/s/0AqEALPYRSqco8ZGkP9_eQ
+https://mp.weixin.qq.com/s/jyIrREnJQv4mW-H9ghO7_A
 
-暴力解剖GAN！MIT、港中文团队GANpaint，一笔成画不是梦
+细粒度图像分类是什么，有什么方法，发展的怎么样
 
-https://mp.weixin.qq.com/s/K_2lGGlLKHIIm4iSg0xCUw
+https://mp.weixin.qq.com/s/5Y4sQlt6DvgkAYtncByjzw
 
-铅笔素描画自动生成
+基于Pytorch的细粒度图像分类实战
 
-https://mp.weixin.qq.com/s/t2bO5A9XCKzXBP5tcS3P-A
+https://mp.weixin.qq.com/s/232DjhM5sqWqPTv7PCaORA
 
-智能图像视频编辑，北大教程，400多页PPT
+ElementAI提出超复杂多尺度细粒度图像分类Attention模型
 
-https://mp.weixin.qq.com/s/5covdsSaNBIAqORbtfHa4w
+https://mp.weixin.qq.com/s/G-4w5jMuN-_zVARPeb0cqA
 
-效果超赞服务器挤爆！用GAN生成人像油画火了，带你一秒回到文艺复兴
+细粒度实体分类论文综述
 
-https://mp.weixin.qq.com/s/2ygq9D9x1ae_rMcu6eZb-w
+https://mp.weixin.qq.com/s/FcSzjphpsWCB-nrtbjs4gg
 
-基于空间自适应归一化的图像语义合成
+如何掌握好图像分类算法？
 
-https://mp.weixin.qq.com/s/6bI8tvRbzopGGBwayB1XBA
+https://mp.weixin.qq.com/s/IeLYy0Pp3HC_UujA0KYn1Q
 
-三十六亿的《哪吒》历时五年，动画创作难如何解决？
+多标签长尾识别前沿进展
 
-https://mp.weixin.qq.com/s/v5Sy-fxW-hm8u6XiyuRXlA
+https://mp.weixin.qq.com/s/m3sgoG15dtacGt1_Anrq6Q
 
-Anime4K：目前最热的开源实时动漫放大算法
+使用NTS理解细粒度图像分类
 
-https://mp.weixin.qq.com/s/rdN8-h33Hyulx4Cq3Anr4g
+https://mp.weixin.qq.com/s/6fcqXac7ihAeDuwzl_MxPQ
 
-程序员完美复现了谷歌DeepMind图像生成神器（DRAW）
+“神奇的”标签增强技术（Label Enhancement）
 
-https://mp.weixin.qq.com/s/bH0K_sxvF2oQwewYhMk20A
+https://mp.weixin.qq.com/s/uLyllVhO-U5RrT4Q5XpiLA
 
-只需一张自拍，网易伏羲用这种方法直接生成“个人专属”游戏角色
+细粒度多标签分类
 
-https://mp.weixin.qq.com/s/11ZurpNFygoeOJKvx_JuIg
+https://mp.weixin.qq.com/s/IhPavQZmXIxxUzNSnnFCKg
 
-深度学习之换掉人物的裤子
+南理工最新“深度学习细粒度图像分析”综述论文，带你全面了解细粒度图像识别与检索方法
 
-https://mp.weixin.qq.com/s/-HBMKBQKXzRugKn5OLgiPg
+# 多模态学习
 
-10秒搞定建筑日夜景转换，还自带中秋月光
+https://github.com/HuaizhengZhang/Awsome-Deep-Learning-for-Video-Analysis
 
-https://mp.weixin.qq.com/s/YRYtja5BhFeAfbUJtAEVnQ
+深度学习视频分析/多模态学习资源大列表
 
-将普通图片转换为梵高大作
+https://mp.weixin.qq.com/s/ruRkqBEdyj2Dx0WTO5Jhcw
 
-https://mp.weixin.qq.com/s/354IU6NeCf24x0xmvsNWMw
+多模态学习研究进展综述
 
-2D图片3秒变立体，变换视角流畅自然：Adobe实习生的智能景深算法，登上顶级期刊
+https://mp.weixin.qq.com/s/g3rwPsusYi7gQopOHvdNrA
 
-https://mp.weixin.qq.com/s/FkKHLCWcHZfdD9htYnlKCA
+多模态学习调研
 
-从无到有！自动化所提出海量虚拟数据生成新方法
+https://mp.weixin.qq.com/s/xzeNAuuDt_VLHDgvIkc-Mg
 
-https://mp.weixin.qq.com/s/sbRf8cmSwFsfLRHBaZyW2w
+多模态情感分析简述
 
-一键上妆的BeautyGAN
+https://mp.weixin.qq.com/s/vpBPkjuCebSWh5qPLYHCkw
 
-https://mp.weixin.qq.com/s/iUk1M7RNFSzx1YUP6r8TfA
+上海交大提出多模态框架“EmotionMeter”，更精准地识别人类情绪
 
-在Keras上实现GAN：构建消除图片模糊的应用
+https://mp.weixin.qq.com/s/BBg04rDtiqU-XrWortufNA
 
-https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247515390&idx=1&sn=8ecc511d4538fd297a2ba98829613c11
+康奈尔&英伟达提出多模态无监督图像转换新方法
 
-图像到图像转换，附7份PPT下载
+http://mp.weixin.qq.com/s/khOINUyrNV3TFfgNRheH0A
 
-https://mp.weixin.qq.com/s/5snO8CYpc01CCky9WT6SrQ
+卷积神经网络压缩、多模态的语义分析研究
 
-用AI实现动画角色的姿势迁移，Adobe等提出新型“木偶动画”
+https://mp.weixin.qq.com/s/ywU4L659iRcmIgmV6RtbXA
 
-https://mp.weixin.qq.com/s/TnJKlOLjZWTI4rLocYXTZg
+DeepMind新研究连接听与看，实现“听声辨位”的多模态学习
 
-简单几笔素描就能“复原”真实人脸，这是沈向洋高徒出品的CSAGAN
+https://mp.weixin.qq.com/s/1qhcyTXttgKWlw-Oy556Tw
 
-https://mp.weixin.qq.com/s/utX_iY7rRHkPV6IGfirlqw
+TPAMI2019最新《多模态机器学习综述》
 
-武汉大学提出ARGAN：注意力循环生成对抗模型用于检测、去除图像阴影
+https://mp.weixin.qq.com/s/BczgUuh2FIvP5MG9xh87wQ
 
-https://mp.weixin.qq.com/s/T-2qNlUFciC77uOJG31utQ
+多模态多任务学习新论文
 
-图像分区域合成，这个新方法实现了人脸的“精准整容”
+https://zhuanlan.zhihu.com/p/427323610
 
-https://mp.weixin.qq.com/s/UmQ1ZxLHizW47f2-W58-Lw
+多模态中预训练的演变史
 
-姿势服装随心换
+https://mp.weixin.qq.com/s/ipj8qpYRiYbIeXn2PZb1SQ
 
-https://mp.weixin.qq.com/s/kgQBQz2u8aMzZaHFhWF_VQ
+5G时代下多模态理解做不到位注定要掉队
 
-拍照总被路人甲抢镜？那就用这个项目消Ta
+https://mp.weixin.qq.com/s/UghgWBN7mE8oJdMUvjAjcQ
 
-https://mp.weixin.qq.com/s/nlqaKavnU-jEjj1lasq96Q
+何晖光：多模态情绪识别及跨被试迁移学习
 
-宫崎骏动画里的新垣结衣见过没？这个开源动漫生成器让你的照片秒变手绘日漫
+https://mp.weixin.qq.com/s/EMWpBP5iB1Qrleo3XNjbuQ
 
-https://mp.weixin.qq.com/s/dpVAaLfk-lTNufUXgGagYg
+IEEE Fellow何晓东&邓力：多模态智能论文综述：表示学习，信息融合与应用
 
-照片秒变卡通风，小视科技AI团队开源人脸卡通化算法模型
+https://mp.weixin.qq.com/s/Yus55s1utTrjuzsrebJu_w
 
-https://mp.weixin.qq.com/s/b8MjrsSt4gNaNMsyHVqe1Q
+让机器读懂视频：亿级淘宝视频背后的多模态AI算法揭秘
 
-DeepFake新高度：一阶运动模型让“万物皆可动”
+https://mp.weixin.qq.com/s/4AzF6utrQhhEweRIM6zV3A
 
-https://mp.weixin.qq.com/s/J9DIDMHc6uHPQ8snadRcPA
+文本+视觉，跨模态预训练新进展
 
-中国女博士的“水淹食堂”大法：单目视频完美重建3D场景，画面毫无违和感
+https://mp.weixin.qq.com/s/dG7Lr5fdmqJQaYOWgkk8iw
 
-https://mp.weixin.qq.com/s/CpK0b5buUvG_HqF3mGzUyg
+如何构建多模态BERT?这份UNC76页《LXMERT: 从Transformer学习跨模态编码表示》PPT告诉您
 
-用深度学习实现2D到3D的转换
+https://mp.weixin.qq.com/s/QIJ2c4L7KfjVEhIyKayJ-Q
 
-https://mp.weixin.qq.com/s/8hs3xbKPaCz5Xs_Nkj4ZKA
+阿里文娱多模态视频分类算法中的特征改进
 
-1.9K star量，解救无聊网友，小姐姐的“动画师”项目可一键生成个人角色
+https://mp.weixin.qq.com/s/THxlQX2MPXua0_N0Ug0EWA
 
-https://mp.weixin.qq.com/s/uU1-DwHnU4pPMLtQZNQyVQ
+BERT在多模态领域中的应用
 
-北大图灵班本科生带来动画CG福音，“最懂骨骼的卷积网络”，无需配对样本实现动作迁移
+https://mp.weixin.qq.com/s/GxQ27vY5naaAXtp_ZTV0ZA
 
-https://mp.weixin.qq.com/s/gJIhYujUNummrmJN98THFQ
+通用的图像-文本语言表征学习：多模态预训练模型 UNITER
 
-于正AI换脸火上热搜，差点骗了全网！古风民族风也能任意切换
+https://mp.weixin.qq.com/s/rjWOkwzX3IE59Kc9P9leAQ
 
-https://mp.weixin.qq.com/s/1yTLck34mdoE2xh4dSaUmQ
+格“物”致知：多模态预训练再次入门
 
-AI把《灌篮高手》角色真人化，最帅的居然不是流川枫？
+https://mp.weixin.qq.com/s/0CUGispeZS04D6NhGkrucw
 
-https://mp.weixin.qq.com/s/lNrUPLjnaAXq-HhJqakU8g
+多模态深度学习：用深度学习的方式融合各种信息
 
-被吴某凡坑杀的3亿大制作，AI换脸能否拯救《青簪行》？
+https://mp.weixin.qq.com/s/Tli19SOum_muBoBaTtXKUQ
 
-https://mp.weixin.qq.com/s/RhIcwL8dc7VmA00e5LZ-NQ
+多模态中NLP与CV融合的一些方式
 
-奥巴马完变白种人？师承汤晓鸥教授，GFP-GAN达到盲人脸修复新里程碑！
+https://mp.weixin.qq.com/s/ondgiFryYqB6-sf-v4pLXQ
 
-# Attention进阶+
+多模态预训练模型简述
 
-https://zhuanlan.zhihu.com/p/125145283
+https://mp.weixin.qq.com/s/TFHS5lZYFwcjP_SC1dAckA
 
-Rethink深度学习中的Attention机制
-
-https://mp.weixin.qq.com/s/fxEg8UOa3MeJ6qx5SjEHog
-
-NLP领域中各式各样Attention知识系统性的梳理和总结
-
-https://mp.weixin.qq.com/s/_5YaZdYa8bTFiAzHyrMFBg
-
-理解卷积神经网络中的自注意力机制
-
-https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
-
-阿里北大提出新attention建模框架，一个模型预测多种行为
-
-https://mp.weixin.qq.com/s/Yq3S4WrsQRQC06GvRgGjTQ
-
-打入神经网络思维内部
-
-https://mp.weixin.qq.com/s/MJ1578NdTKbjU-j3Uuo9Ww
-
-基于文档级问答任务的新注意力模型
-
-https://mp.weixin.qq.com/s/_3pA8FZwzegSpyz_cK63BQ
-
-Self-Attention GAN中的self-attention机制
-
-https://mp.weixin.qq.com/s/h7sLwVXb_UI8jvJU-oe3Cg
-
-Google AI提出“透明注意力”机制，实现更深层NMT模型
-
-https://mp.weixin.qq.com/s/1LYz5SH5rVnPPJ0tZvRQAA
-
-从各种注意力机制窥探深度学习在NLP中的神威
-
-https://zhuanlan.zhihu.com/p/33078323
-
-数字串识别：基于位置的硬性注意力机制
-
-https://mp.weixin.qq.com/s/-gAISWjSiG6ccPuOPAEg3A
-
-五张动图，看清神经机器翻译里的Attention！
-
-https://mp.weixin.qq.com/s/aixpv9t1PLPRWUP6PvZ0EQ
-
-用自注意力增强卷积：这是新老两代神经网络的对话
-
-https://mp.weixin.qq.com/s/i3Xd_IB7R0-QPztn-pgpng
-
-遍地开花的Attention，你真的懂吗？
-
-https://zhuanlan.zhihu.com/p/151640509
-
-注意力机制在推荐系统中的应用
-
-https://mp.weixin.qq.com/s/-SU5cNbklI31WLmTawZJIQ
-
-自注意模型学不好？这个方法帮你解决！
-
-https://mp.weixin.qq.com/s/K5EbO0djcXHN4K5LQiMh5g
-
-Triplet Attention机制让Channel和Spatial交互更加丰富
-
-https://mp.weixin.qq.com/s/C4f0N_bVWU9YPY34t-HAEA
-
-UNC&Adobe提出模块化注意力模型MAttNet，解决指示表达的理解问题
-
-https://mp.weixin.qq.com/s/V3brXuey7Gear0f_KAdq2A
-
-基于注意力机制的交易上下文感知推荐，悉尼科技大学和电子科技大学最新工作
-
-https://mp.weixin.qq.com/s/2gxp7A38epQWoy7wK8Nl6A
-
-谷歌翻译最新突破，“关注机制”让机器读懂词与词的联系
-
-https://zhuanlan.zhihu.com/p/25928551
-
-用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践
-
-https://mp.weixin.qq.com/s/l4HN0_VzaiO-DwtNp9cLVA
-
-循环注意力区域实现图像多标签分类
-
-https://mp.weixin.qq.com/s/zhZLK4pgJzQXN49YkYnSjA
-
-自适应注意力机制在Image Caption中的应用
-
-https://mp.weixin.qq.com/s/uvr-G5-_lKpyfyn5g7ES0w
-
-基于注意力机制，机器之心带你理解与训练神经机器翻译系统
-
-https://mp.weixin.qq.com/s/ANpBFnsLXTIiW6WHzGrv2g
-
-自注意力机制学习句子embedding
-
-https://mp.weixin.qq.com/s/49fQX8yiOIwDyof3PD01rA
-
-CMU&谷歌大脑提出新型问答模型QANet：仅使用卷积和自注意力，性能大大优于RNN
-
-https://mp.weixin.qq.com/s/c64XucML13OwI26_UE9xDQ
-
-滴滴披露语音识别新进展：基于Attention显著提升中文识别率
-
-https://mp.weixin.qq.com/s/7OYY3L7gL4wVv_EjoosOHA
-
-如何增强Attention Model的推理能力
-
-https://mp.weixin.qq.com/s/9Kt6_DfeYRnhsb10aCSFGw
-
-FAGAN：完全注意力机制（Full Attention）GAN，Self-attention+GAN
-
-https://mp.weixin.qq.com/s/lZOIK5BRXZrmL_Z9crl6sA
-
-机器翻译新突破！“普适注意力”模型：概念简单参数少，性能大增
-
-https://mp.weixin.qq.com/s/jRfOzKO6OlQLokIzipbqUQ
-
-为什么使用自注意力机制？
-
-https://zhuanlan.zhihu.com/p/339123850
-
-关于attention机制的一些细节的思考
-
-https://mp.weixin.qq.com/s/n4mzHSweOT-vDWBGs0XFbw
-
-卷积神经网络中的自我注意
+多模态信息如何嵌入推荐系统？RecSys2021《多模态推荐系统》教程

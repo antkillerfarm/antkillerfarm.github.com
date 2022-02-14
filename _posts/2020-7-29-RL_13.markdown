@@ -315,3 +315,7 @@ DeepMind发布通用强化学习新范式，自主机器人可学会任何任务
 https://mp.weixin.qq.com/s/nNTag_D_qN7WcE7DEMJFaA
 
 横扫6个SOTA，吊打强化学习！谷歌最强行为克隆算法登CoRL顶会，机器人干活10倍速
+
+https://mp.weixin.qq.com/s/zRXs3BCEqXUruw746rZusw
+
+牛津大学联合7家单位发布AutoRL综述，还在手动调参吗？你已经落后了

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十八）——RNN进阶, 多标签学习, 显著性检测
+title:  深度学习（三十八）——RNN进阶, 显著性检测
 category: DL 
 ---
 
@@ -245,120 +245,6 @@ https://mp.weixin.qq.com/s/bts9mdIrGIjO8UCUxSV-xg
 
 Transformer的潜在竞争对手QRNN论文解读，训练更快的RNN
 
-# 多标签学习
-
-多标签分类问题（也称细粒度分类），通常有两种解决方案，即转换为多个单标签分类问题，或者直接联合研究。前者，可以训练多个分类器，来判断该维度属性的是否，损失函数常使用softmax loss。后者，则直接训练一个多标签的分类器，所使用的标签为0,1,0,0…这样的向量，使用hanmming距离等作为优化目标。
-
-参考：
-
-https://mp.weixin.qq.com/s/sdQ0rWbDDMN_P0B_RiYZmw
-
-分段映射：帮助利用少量样本习得新类别细粒度分类器
-
-https://mp.weixin.qq.com/s/zeN7rjmAnvh_7BbTmScrZw
-
-细粒度分类你懂吗？——fine-gained image classification
-
-https://mp.weixin.qq.com/s/SCsdWLrBDAKzc9NLAK1jxQ
-
-最新综述：多标签学习的新趋势
-
-https://mp.weixin.qq.com/s/LtWMGRBk2sbPDjeC9PmJ7g
-
-弱监督学习下的商品识别：CVPR 2018细粒度识别挑战赛获胜方案简介
-
-https://mp.weixin.qq.com/s/hcoAL1AHm_HtderWU8fSBw
-
-大连理工大学在CVPR18大规模精细粒度物种识别竞赛中获得冠军
-
-https://mp.weixin.qq.com/s/31r9FjuJn9yxrZMnfozkMQ
-
-全卷积注意网络的细粒度识别
-
-https://zhuanlan.zhihu.com/p/24738319
-
-“见微知著”——细粒度图像分析进展综述
-
-https://zhuanlan.zhihu.com/p/42067661
-
-CVPR Look Closer to See Better
-
-https://mp.weixin.qq.com/s/52hm3Cq3TFRnTMfDppivSQ
-
-中山大学等提出HSE：基于层次语义嵌入模型的精细化物体分类
-
-https://zhuanlan.zhihu.com/p/48192930
-
-Object-Part Attention Model for FGVC
-
-https://mp.weixin.qq.com/s/slmod5rW4qRhxGnbNN2J8g
-
-双线性汇合(bilinear pooling)在细粒度图像分析及其他领域的进展综述
-
-https://mp.weixin.qq.com/s/JGQdHS_yqkOMrN_Z3jEb7A
-
-基于深度学习的细粒度图像分类综述
-
-https://mp.weixin.qq.com/s/L-1gkElxsMtT369fgJl86Q
-
-旷视南京研究院魏秀参：细粒度图像分析综述
-
-https://zhuanlan.zhihu.com/p/57086099
-
-细粒度识别之Local Attention Network
-
-https://mp.weixin.qq.com/s/6K4tXPlYLaXhexh6gElP5Q
-
-多标签图像分类综述
-
-https://mp.weixin.qq.com/s/bb3ZsXtiRmPvzQ-lfSXrZQ
-
-基于Pascal VOC2012增强数据的多标签图像分类实战
-
-https://mp.weixin.qq.com/s/2pJt9hlUFhR6mo1ughKkiA
-
-超全深度学习细粒度图像分析：项目、综述、教程一网打尽
-
-https://mp.weixin.qq.com/s/jyIrREnJQv4mW-H9ghO7_A
-
-细粒度图像分类是什么，有什么方法，发展的怎么样
-
-https://mp.weixin.qq.com/s/5Y4sQlt6DvgkAYtncByjzw
-
-基于Pytorch的细粒度图像分类实战
-
-https://mp.weixin.qq.com/s/232DjhM5sqWqPTv7PCaORA
-
-ElementAI提出超复杂多尺度细粒度图像分类Attention模型
-
-https://mp.weixin.qq.com/s/G-4w5jMuN-_zVARPeb0cqA
-
-细粒度实体分类论文综述
-
-https://mp.weixin.qq.com/s/FcSzjphpsWCB-nrtbjs4gg
-
-如何掌握好图像分类算法？
-
-https://mp.weixin.qq.com/s/IeLYy0Pp3HC_UujA0KYn1Q
-
-多标签长尾识别前沿进展
-
-https://mp.weixin.qq.com/s/m3sgoG15dtacGt1_Anrq6Q
-
-使用NTS理解细粒度图像分类
-
-https://mp.weixin.qq.com/s/6fcqXac7ihAeDuwzl_MxPQ
-
-“神奇的”标签增强技术（Label Enhancement）
-
-https://mp.weixin.qq.com/s/uLyllVhO-U5RrT4Q5XpiLA
-
-细粒度多标签分类
-
-https://mp.weixin.qq.com/s/IhPavQZmXIxxUzNSnnFCKg
-
-南理工最新“深度学习细粒度图像分析”综述论文，带你全面了解细粒度图像识别与检索方法
-
 # 显著性检测
 
 视觉显著性检测(Visual Saliency Detection)指通过智能算法模拟人的视觉特点，提取图像中的显著区域(即人类感兴趣的区域)。
@@ -406,3 +292,85 @@ https://mp.weixin.qq.com/s/p4lHnte3FYu6XtD3PnSeKw
 https://mp.weixin.qq.com/s/8QrNvb-1zmrTWo5zThpyvg
 
 U²-Net：使用显著性物体检测来生成真实的铅笔肖像画
+
+# 无监督/半监督/自监督深度学习+
+
+https://mp.weixin.qq.com/s/gXqB7JJyIEJa74McbYcrzg
+
+只有正样本和无标记数据的半监督学习（PU Learning）
+
+https://mp.weixin.qq.com/s/kGProJmrf43-2O48PMPM5g
+
+正样本和无标签学习（PU Learning）：使用机器学习恢复数据的标签
+
+https://mp.weixin.qq.com/s/vm1p3YceIC0nd191xsktfg
+
+自监督学习的视觉语言建模，115页ppt讲述多模态预训练进展
+
+https://mp.weixin.qq.com/s/PCXcvzwv8DF693_KzXK5bg
+
+计算机视觉研究新方向：自监督表示学习总结
+
+https://mp.weixin.qq.com/s/TOwOa3noN_UYrd5g0Nrrrg
+
+半监督学习技术在金融文本分类上的实践
+
+https://mp.weixin.qq.com/s/uh25WRHVsFpoKwFyTSZtIw
+
+计算机视觉中的半监督学习
+
+https://mp.weixin.qq.com/s/lweM2STVbldYEGwPcK1YEg
+
+图像自标记的可视化指南
+
+https://mp.weixin.qq.com/s/hLFPWiHmDIzeUlQjInbgGw
+
+ActBERT: 自监督多模态视频文字学习
+
+https://mp.weixin.qq.com/s/1hK3k6Mf3uTEXrqMFr1evA
+
+Kaggle知识点：伪标签Pseudo Label
+
+https://zhuanlan.zhihu.com/p/157325083
+
+伪标签（Pseudo-Labelling）——锋利的匕首
+
+https://mp.weixin.qq.com/s/qVGveKfCfNKqJoqwMbUVKg
+
+长文总结半监督学习
+
+https://mp.weixin.qq.com/s/LAnP5OMuJFDhsfJWRoVMFw
+
+无监督领域迁移及文本表示学习的相关进展
+
+https://mp.weixin.qq.com/s/Tau5jzNbBd0NketdgytvAg
+
+计算机视觉中的自监督表示学习近期进展
+
+https://mp.weixin.qq.com/s/uYmHxScroi4jB2okmqwHcA
+
+半监督学习入门基础（一）
+
+https://zhuanlan.zhihu.com/p/212873650
+
+Contrastive Self-Supervised Learning
+
+https://mp.weixin.qq.com/s/XwGvH0mTEf-jF5XQKk2lBw
+
+电子科大最新《深度半监督学习》综述论文，24页pdf
+
+https://zhuanlan.zhihu.com/p/355523266
+
+从SimCLR到BarLow Twins，一文了解自监督学习不断打脸的认知发展史
+
+https://mp.weixin.qq.com/s/WqUb9MY_3hVPRdxSl9BE1Q
+
+S4L: 半监督+自监督学习
+
+https://mp.weixin.qq.com/s/1f1Ma2ZQVTuPo38_uCE0fQ
+
+大规模推荐系统的自监督学习
+
+https://mp.weixin.qq.com/s/qgP39JKD3fbVNK8e4Hw4PQ
+
+重邮高新波等最新《少样本目标检测算法》综述论文

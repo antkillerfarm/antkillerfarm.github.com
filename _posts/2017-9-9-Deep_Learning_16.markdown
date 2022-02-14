@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十六）——Style Transfer（2）, 人脸检测/识别（1）
+title:  深度学习（十六）——Style Transfer（2）
 category: DL 
 ---
 
@@ -9,7 +9,37 @@ category: DL
 
 # Style Transfer
 
-## Cost Function（续）
+## DL方法（续）
+
+在第一篇论文中，Gatys使用Gramian matrix从各层CNN中提取纹理信息，于是就有了一个不用手工建模就能生成纹理的方法。
+
+Gramian matrix（由Jørgen Pedersen Gram提出）中的元素定义如下：
+
+$$G_{ij}=\langle v_i, v_j \rangle$$
+
+这里的$$v_i$$表示向量，$$G_{ij}$$是向量的内积。可以看出Gramian matrix是一个半正定的对称矩阵。
+
+在第二篇论文中，Gatys更进一步指出：**纹理能够描述一个图像的风格。**
+
+既然第一篇论文解决了从图片B中提取纹理的任务，那么还有一个关键点就是：**如何只提取图片内容而不包括图片风格?**
+
+## Cost Function
+
+神经风格迁移生成图片G的cost function由两部分组成：C与G的相似程度和S与G的相似程度。
+
+$$J(G)=\alpha \cdot J_{content}(C,G)+\beta \cdot J_{style}(S,G)$$
+
+其中，$$\alpha, \beta$$是超参数，用来调整$$J_{content}(C,G)$$与$$J_{style}(S,G)$$的相对比重。
+
+神经风格迁移的基本算法流程是：首先令G为随机像素点，然后使用梯度下降算法，不断修正G的所有像素点，使得J(G)不断减小，从而使G逐渐有C的内容和S的风格，如下图所示：
+
+![](/images/img2/style_transfer_3.png)
+
+换句话来说就是：**每次迭代只更新图片G，而不更新网络的参数。**
+
+我们先来看J(G)的第一部分$$J_{content}(C,G)$$，它表示内容图片C与生成图片G之间的相似度。
+
+使用的CNN网络是之前预训练好的模型，例如Alex-Net。**C，S，G共用相同模型和参数。**
 
 首先，需要选择合适的层数l来计算$$J_{content}(C,G)$$。
 
@@ -243,47 +273,3 @@ https://mp.weixin.qq.com/s/OzancX-44Si13ZtZiONnpQ
 https://mp.weixin.qq.com/s/yr9fNyzpOBt7dLsnh2T2xg
 
 使用TFLite在移动设备上优化与部署风格转化模型
-
-https://mp.weixin.qq.com/s/9AEYcY04lAl3dCRK9LPBeQ
-
-人脸风格化核心技术与数据集总结
-
-https://mp.weixin.qq.com/s/ylfeWiOrftCB823_gjQNmA
-
-图像风格迁移也有框架了：使用Python编写，与PyTorch完美兼容，外行也能用
-
-# 人脸检测/识别
-
-## Cascade CNN
-
-论文：
-
-《A Convolutional Neural Network Cascade for Face Detection》
-
-![](/images/img2/CascadeCNN.jpg)
-
-这篇可以说是对经典的Viola-Jones方法的深度卷积网络实现，可以明显看出是3阶级联（12-net、24-net、48-net）。
-
-前2阶的网络都非常简单，只有第3阶才比较复杂。这不是重点，重点是我们要从上图中学习多尺度特征组合。
-
-以第2阶段的24-net为例，首先把上一阶段剩下的窗口resize为24*24大小，然后送入网络，得到全连接层的特征。同时，将之前12-net的全连接层特征取出与之拼接在一起。最后对组合后的特征进行softmax分类。
-
-除了分类网络之外，Cascade CNN还包含了3个修正bounding box的CNN网络，分别叫做12-calibration-net，24-calibration-net和48-calibration-net。他们的结构与12-net等类似。
-
-网络结构方面也就这样了，该论文最牛之处在于给出了这类级联网络的训练方法。
-
-![](/images/img2/CascadeCNN_2.jpg)
-
-1.按照一般的方法组织正负样本训练第一阶段的12-net和12-calibration-net网络；
-
-2.利用上述的1层网络在AFLW数据集上作人脸检测，在保证99%的召回率的基础上确定判别阈值T1。
-
-3.将在AFLW上判为人脸的非人脸窗口作为负样本，将所有真实人脸作为正样本，训练第二阶段的24-net和24-calibration-net网络；
-
-4.重复2和3，完成最后阶段的训练。
-
-参考：
-
-http://blog.csdn.net/shuzfan/article/details/50358809
-
-人脸检测——CascadeCNN

@@ -258,6 +258,10 @@ https://zhuanlan.zhihu.com/p/71639781
 
 一个函数打天下，einsum
 
+https://mp.weixin.qq.com/s/QxowSMirwnsUjIA-MFCj7g
+
+特斯拉AI高管都推荐的张量工具（Einops）
+
 ### pad
 
 `arr1D = np.array([1, 1, 2, 2, 3, 4])`
