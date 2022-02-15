@@ -103,6 +103,16 @@ https://www.zhihu.com/question/497597805
 
 ---
 
+朱家仁，湖南汉寿县人，从小在苏州长大。1920年赴美国留学，主攻航空技术。1926年从麻省理工学院航空工程专业毕业。
+
+这个直升机，它叫“直升机”，长得像“直升机”。只有一个小小缺点：不能飞。朱家仁不是没有做过试飞试验，48年做过，飞机刚离开地面就倾覆。
+
+http://www.sheqi.gov.cn/xzwz/ldz/xxgk8/content_77503
+
+朱家仁：第一个造直升机的中国人
+
+---
+
 ![](/images/img3/top10.png)
 
 ![](/images/img4/manufact.jpg)
@@ -204,19 +214,3 @@ https://www.zhihu.com/question/425270883
 https://mp.weixin.qq.com/s/-iv72YL5jm5OyHPuNzEzmg
 
 破晓时分，加州教授团访华记
-
-https://mp.weixin.qq.com/s/_0SN18UFx_GGlHebUaar9A
-
-兵器试验中心数字弹道的传奇。陆载德的故事——从一位左腿残疾的清华学子成长为90年代共和国军队中唯一的独腿将军。
-
-https://mp.weixin.qq.com/s/tg5ovnXBV0aqM51DGj-mUQ
-
-中国计算数学和最优化事业的创始人之一、原南京大学教授何旭初
-
-https://mp.weixin.qq.com/s/EWU26Xp8Xx4rQDiLnNPLQw
-
-中国人是什么时候知道计算机的?
-
-https://mp.weixin.qq.com/s/gJ315Byg0EtZVldxFp-q3A
-
-“最牛上下铺”！他们竟是舍友（歼-20总设计师杨伟、运-20总设计师唐长红）
