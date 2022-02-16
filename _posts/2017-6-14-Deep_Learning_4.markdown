@@ -25,6 +25,10 @@ http://www.hackcv.com/index.php/archives/104/
 
 CNN的直观解释
 
+https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/
+
+上面文章的英文版本
+
 ## 关键点
 
 这里以最经典的LeNet-5为例，提点一下CNN的要点。
@@ -37,7 +41,13 @@ https://github.com/BVLC/caffe/blob/master/examples/mnist/lenet.prototxt
 
 ## 卷积
 
-在《数学狂想曲（五）》中我们讨论了卷积的数学含义，结合《 图像处理理论（一）》和《 图像处理理论（二）》，不难看出卷积或者模板（算子），在前DL时代，几乎是图像处理算法的基础和灵魂。为了实现各种目的，人们手工定义或发现了一系列算子。
+在《数学狂想曲（十六）》中我们讨论了卷积的数学含义，结合《 图像处理理论（一）》和《 图像处理理论（二）》，不难看出卷积或者模板（算子, kernel, filter），在前DL时代，几乎是图像处理算法的基础和灵魂。
+
+![](/images/img4/convolution.webp)
+
+为了实现各种目的，人们手工定义或发现了一系列算子：
+
+![](/images/img4/filter.png)
 
 到了DL时代，卷积仍然起着非常重要的作用。但这个时候，不再需要人工指定算子，**算子本身也将由学习获得**。我们需要做的只不过是指定算子的个数而已。
 
@@ -162,10 +172,6 @@ https://www.jianshu.com/p/f0674e48894c
 Tensorflow反卷积（DeConv）实现原理
 
 ## 参考
-
-http://lib.csdn.net/article/deeplearning/58185
-
-BP神经网络与卷积神经网络
 
 http://blog.csdn.net/Fate_fjh/article/details/52882134
 

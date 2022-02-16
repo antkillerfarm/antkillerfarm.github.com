@@ -59,6 +59,22 @@ https://mp.weixin.qq.com/s/qgp97solB7pZauOnlH62wg
 
 # 两弹一星+
 
+https://mp.weixin.qq.com/s/Ar-67u7UbPz5z2odN1YeQQ
+
+从被列强剥削，到成为发达国家“粉碎机”：中国付出了多少代价？
+
+https://zhuanlan.zhihu.com/p/352959565
+
+参与加勒万冲突保障，民企员工受到表彰，该公司堪称军工界大疆
+
+https://www.zhihu.com/question/425270883
+
+非五常国家的军事实力究竟有多弱？
+
+https://mp.weixin.qq.com/s/-iv72YL5jm5OyHPuNzEzmg
+
+破晓时分，加州教授团访华记
+
 https://mp.weixin.qq.com/s/_0SN18UFx_GGlHebUaar9A
 
 兵器试验中心数字弹道的传奇。陆载德的故事——从一位左腿残疾的清华学子成长为90年代共和国军队中唯一的独腿将军。

@@ -113,6 +113,16 @@ http://www.sheqi.gov.cn/xzwz/ldz/xxgk8/content_77503
 
 ---
 
+上世纪五十年代中国科学院吴仲华教授的三元流动理论对喷气式发动机的等熵切面计算法，奠基了今天的航空发动机产业。--by 任正非
+
+https://zhuanlan.zhihu.com/p/228398336
+
+他秘密逃离美国，指天为誓：中国的飞机一定会装上最先进的发动机
+
+>吴仲华，1917~1992，中国工程热物理学家。西南联大本科（1940）+MIT博士（1947）。中国科学院院士。创建了中国科学院工程热物理研究所。
+
+---
+
 ![](/images/img3/top10.png)
 
 ![](/images/img4/manufact.jpg)
@@ -198,19 +208,3 @@ https://mp.weixin.qq.com/s/toX25yTvQWnwid26oOXROA
 https://www.zhihu.com/answer/378935681
 
 谁能告诉我一些关于肯尼亚蒙内铁路的故事？
-
-https://mp.weixin.qq.com/s/Ar-67u7UbPz5z2odN1YeQQ
-
-从被列强剥削，到成为发达国家“粉碎机”：中国付出了多少代价？
-
-https://zhuanlan.zhihu.com/p/352959565
-
-参与加勒万冲突保障，民企员工受到表彰，该公司堪称军工界大疆
-
-https://www.zhihu.com/question/425270883
-
-非五常国家的军事实力究竟有多弱？
-
-https://mp.weixin.qq.com/s/-iv72YL5jm5OyHPuNzEzmg
-
-破晓时分，加州教授团访华记
