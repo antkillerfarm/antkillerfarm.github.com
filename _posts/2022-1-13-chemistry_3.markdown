@@ -200,3 +200,11 @@ https://zhuanlan.zhihu.com/p/451794381
 https://mp.weixin.qq.com/s/QjuQgjChunKm8O8N86GZGQ
 
 让机器帮人砌堵墙怎么那么难？这是人类的百年奋斗史
+
+https://mp.weixin.qq.com/s/010SPkEVV4e7f5MIoiL6xA
+
+《狙击手》预告不相信重机枪能打狙击？中国人要自信！
+
+https://www.zhihu.com/zvideo/1449458713610919936
+
+坦克的工作原理是这样的

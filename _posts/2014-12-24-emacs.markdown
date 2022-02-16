@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Emacs, Vi, IDE
+title:  Emacs, Vim
 category: language 
 ---
 
@@ -282,7 +282,7 @@ https://github.com/myuhe/ess-R-data-view.el
 
 2.搜索中文时，不要用引号括起来，否则什么都找不到。
 
-# Vi
+# Vim
 
 ## 常用操作
 
@@ -339,6 +339,14 @@ Vim激荡30年发展史
 https://mp.weixin.qq.com/s/c9KAOJ6Z_5zjwI7C3OMq4w
 
 5分钟学会Vim分屏操作方方面面
+
+https://www.runoob.com/linux/linux-vim.html
+
+Linux vi/vim
+
+https://zhuanlan.zhihu.com/p/37352209
+
+VimScript五分钟入门
 
 # IDE
 

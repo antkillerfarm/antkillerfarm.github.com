@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Clojure, Groovy, Scala, VS Code
+title:  Clojure, Groovy, Scala, VS Code, IDE
 category: language 
 ---
 
@@ -361,3 +361,41 @@ https://microsoft.github.io/language-server-protocol/
 这里有一个社区维护的LSP Server列表：
 
 https://langserver.org/
+
+# IDE
+
+http://pypl.github.io/IDE.html
+
+这个网站提供了常用IDE的流行排名
+
+## Source Insight
+
+Shift+F8：高亮选中的字
+
+http://www.cnblogs.com/bluestorm/archive/2012/10/28/2743792.html
+
+Source Insight常用设置和快捷键大全
+
+## Eclipse
+
+### 分栏显示
+
+1.拖住一个文件不放，直到鼠标图案发生改变。
+
+2.如果需要左右显示两个文件，向左右移动鼠标，如果需要上下显示两个文件，上下移动。这里的移动需要移出编辑窗口范围。
+
+## Other
+
+http://dcloud.io/index.html
+
+HBuilder，一个html编辑的IDE。
+
+# 十六进制编辑器
+
+https://mp.weixin.qq.com/s/Bq6p3DUePBAUlw1kek86QA
+
+开源十六进制编辑器登顶GitHub热榜
+
+https://zhuanlan.zhihu.com/p/59119723
+
+Linux上最好的十六进制编辑器
