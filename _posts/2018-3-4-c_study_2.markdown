@@ -110,6 +110,13 @@ std::forward：有条件的转为右值引用。
 
 std::remove_reference：将`T&`或`T&&`变成`T`。
 
+如果要强制对象只能move，不能复制的话，可以这样做：
+
+```cpp
+A& operator=(const A& other) = delete;
+A& operator=(A&& other);
+```
+
 参考：
 
 https://www.cnblogs.com/ldlchina/p/6608154.html
