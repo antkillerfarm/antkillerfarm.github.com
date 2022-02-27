@@ -9,6 +9,22 @@ category: Nature
 
 # 化学
 
+https://mp.weixin.qq.com/s/V0Jh1Qv-RXoSK63Z5C092g
+
+一滴水里最少有几个水分子？5个还是6个？
+
+https://mp.weixin.qq.com/s/tGYqdbrYUkXaIEa_ycAzUQ
+
+幸运的化学，悲催的奠基人（Antoine-Laurent de Lavoisier）
+
+https://mp.weixin.qq.com/s/cUuw9CflfLrxXuSmNbra_A
+
+中学的元素周期表还藏着4000多种……（同位素）
+
+https://zhuanlan.zhihu.com/p/23284525
+
+靠谱地，咱聊聊田中耕一
+
 https://mp.weixin.qq.com/s/BXew6QoQgHAxOnCKpPp64Q
 
 获得诺贝尔奖的底层小职员
@@ -208,3 +224,11 @@ https://mp.weixin.qq.com/s/010SPkEVV4e7f5MIoiL6xA
 https://www.zhihu.com/zvideo/1449458713610919936
 
 坦克的工作原理是这样的
+
+https://mp.weixin.qq.com/s/NBXndV2DnGFoRZUyMDWw3Q
+
+从61式到10式：日本战后坦克发展(上)
+
+https://mp.weixin.qq.com/s/a6cJvb45Cx5YPXI3FFBJJA
+
+从61式到10式：日本战后坦克发展(下)

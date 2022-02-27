@@ -353,6 +353,18 @@ DetNAS：首个搜索物体检测Backbone的方法
 
 # DRL参考资源++
 
+https://mp.weixin.qq.com/s/nNTag_D_qN7WcE7DEMJFaA
+
+横扫6个SOTA，吊打强化学习！谷歌最强行为克隆算法登CoRL顶会，机器人干活10倍速
+
+https://mp.weixin.qq.com/s/zRXs3BCEqXUruw746rZusw
+
+牛津大学联合7家单位发布AutoRL综述，还在手动调参吗？你已经落后了
+
+https://mp.weixin.qq.com/s/wPWV6kxkRlYb9dMf6ADWkQ
+
+史上首次，强化学习算法控制核聚变登上Nature：DeepMind让人造太阳向前一大步
+
 https://mp.weixin.qq.com/s/U0K79ELLj4wsOR4sd5G4Vw
 
 Vicarious详解新型图式网络：赋予强化学习泛化能力
@@ -400,3 +412,7 @@ https://mp.weixin.qq.com/s/fMjjGCzef-3SVIOlUf2EFA
 https://mp.weixin.qq.com/s/8cV3Z_vkC0_cyfO2nVKoSw
 
 华人博士用强化学习回收了SpaceX火箭
+
+https://mp.weixin.qq.com/s/_-WSoeOqXMhR7S0PtyYixQ
+
+深度强化学习探索算法最新综述，近200篇文献揭示挑战和未来方向

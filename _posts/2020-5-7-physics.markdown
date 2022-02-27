@@ -189,22 +189,6 @@ https://www.zhihu.com/question/29028681
 
 ---
 
-第一热电效应（Seebeck effect）：如果两种导体或者半导体组成一个回路，两端接触点的温度不同（比如把两个端头分别放在冷水和热水中），就会产生电流，也会有相应的电压。
-
-第二热电效应（Peltire effect）：把两种不同的导电材料串联在一起，通电之后，两个接头分别出现吸热和放热的现象。
-
-第三热电效应（Thomson effect）：一个导体或半导体，如果两端有温差并且有电流通过的话，就会吸热或者放热（除了电阻产热以外）。
-
-https://mp.weixin.qq.com/s/_eFtWkHfsdsw9O28-I_NPQ
-
-半导体是个好东西，不仅能做芯片，还能用来做“炒酸奶”
-
-https://mp.weixin.qq.com/s/cBjB_lhnpbkwjnoDw2QvOQ
-
-原来，自动搅拌杯的原理比想象中的还要简单！（热电效应）
-
----
-
 https://mp.weixin.qq.com/s/UDjHYZCpZjSDCDmBDI8y8Q
 
 一粒爆米花的传奇

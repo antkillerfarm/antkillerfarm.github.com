@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 新冠肺炎（五）——国际援助, 知名患者, 瘟疫公司, 钟南山
+title: 新冠肺炎（五）——国际援助, 知名患者, 钟南山
 category: COVID19 
 ---
 
@@ -24,6 +24,34 @@ delta进入阿根廷，delta欲哭无泪……
 delta进入埃及，delta（可能）还是被挤没了……
 
 delta进入博茨瓦纳，流行率死活没法过半（然而隔壁南非和纳米比亚早已陷落）
+
+---
+
+“抗原原罪”（original antigenic sin，OAS）可以粗略地理解为“免疫印记”（immunological imprinting）,在1960年的时候，由密歇根大学的Thomas Francis率先提出。
+
+Francis在20世纪40-50年代的研究表明，人们通常会对他们出生之后最初感染流感病毒株系产生更强的免疫应答。
+
+![](/images/img4/OAS.png)
+
+![](/images/img4/OAS_2.png)
+
+以上是西班牙流感大流行期间的分年龄段超额死亡比例：
+
+25-34年龄组直接死麻了……
+
+H5N1和H7N9这两种禽流感病毒，似乎倾向于感染不同年龄段的宿主：
+
+H5N1主要针对年轻人，而H7N9则主要霍霍老年人。
+
+以上两种倾向性的年龄分界线正好是——1968年。
+
+1968年，正好发生了香港流感（株系为H3N2）大流行。
+
+在1968年之前，市面上的主流毒株是H1N1，这货跟禽流感H5N1的抗原距离较为接近，于是1968年以前出身的人群，由于H1N1的免疫印记（或者说抗原原罪），变得对H7N9更为易感。。。
+
+https://mp.weixin.qq.com/s/uZxx3o9MTtjrTFV-Fl8S8g
+
+原罪
 
 ---
 
@@ -215,32 +243,6 @@ https://mp.weixin.qq.com/s/z37FQ9SWDm9wMg9lJAPqeA
 https://view.inews.qq.com/a/20210831A0D9RP00
 
 日本女星绫濑遥感染新冠入院：曾三次阴性，一度白肺呼吸困难
-
-# 瘟疫公司
-
-![](/images/img4/Plague_Inc.jpg)
-
-![](/images/img4/Plague_Inc.png)
-
-https://zhuanlan.zhihu.com/p/103836857
-
-五年前的冠状病毒模组让《瘟疫公司》再度翻红，创作者是预言家？
-
-https://zhuanlan.zhihu.com/p/125727756
-
-《瘟疫公司》做错了吗？最贴近疫情的游戏被下架，被指存在违反国内法律内容
-
-https://zhuanlan.zhihu.com/p/298079109
-
-现在，你可以在《瘟疫公司》里“拯救世界”了
-
-https://zhuanlan.zhihu.com/p/293192687
-
-因为疫情爆火的《瘟疫公司》免费了，还新增了解药模式
-
-https://www.zhihu.com/question/21491731
-
-游戏《瘟疫公司》Plague Inc这款游戏对现实世界有何启示？
 
 # 钟南山
 

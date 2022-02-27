@@ -149,6 +149,58 @@ https://mp.weixin.qq.com/s/1ZlyVDJK6RWZ_1Ox7399IA
 
 用一行tf.data实现数据Shuffle、Batch划分、异步预加载等
 
+# TensorBoard
+
+TensorBoard是一个http服务，用以监控TensorFlow的执行。
+
+`writer = tf.summary.FileWriter("logs/", sess.graph)`
+
+然后
+
+`tensorboard --logdir='logs/'`
+
+启动之后，用浏览器打开`http://localhost:6006`即可。
+
+TensorBoard会将同类结点Group，但Group之后，有时反而不易观察具体的结构。这个时候最好Ungroup一下。
+
+参考：
+
+http://blog.csdn.net/u013082989/article/details/53510625
+
+TensorFlow学习_01_安装_基本操作_可视化结构、过程_Mnist
+
+https://blog.csdn.net/sinat_33761963/article/details/62433234
+
+Tensorflow的可视化工具Tensorboard的初步使用
+
+https://mp.weixin.qq.com/s/Zaz9hmTuUbd-hCx-zHhBgg
+
+TensorBoard：可视化学习
+
+https://mp.weixin.qq.com/s/Kc-DqiuG2kn0NlVxkcNa4w
+
+TensorBoard直方图信息中心
+
+https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247515390&idx=2&sn=ebf548bac3c7db9b0174265666c67d0c
+
+tensorboard学习笔记
+
+https://mp.weixin.qq.com/s/JRa0tgXtGdzaj0UnYcmZ3Q
+
+tensorboard指南
+
+https://mp.weixin.qq.com/s/BAR-UM3rTveYrKa4kiJvcQ
+
+使用TensorBoard进行超参数优化
+
+https://mp.weixin.qq.com/s/5zfKiP9Fxpl7suqBQILL-g
+
+还在用Tensorboard？机器学习实验管理平台大盘点
+
+https://mp.weixin.qq.com/s/8scMr0jcW87y6k_wFgOBEg
+
+使用Tensorboard投影进行高维向量的可视化
+
 # 参考
 
 https://mp.weixin.qq.com/s/t1QFIOq-VBNOrSm0zW-PlQ

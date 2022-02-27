@@ -408,3 +408,7 @@ https://mp.weixin.qq.com/s/K-Y19ajISRSDgSaWw5dPJw
 https://mp.weixin.qq.com/s/ZHIpG4TN-wyHtcD67s7Y8A
 
 毛遂自荐贴
+
+https://zhuanlan.zhihu.com/p/103141172
+
+苏联曾差点搞出超级互联网，竟然有...（苏联大数据之父格卢什科夫）

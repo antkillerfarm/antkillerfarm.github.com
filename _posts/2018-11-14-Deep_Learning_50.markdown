@@ -376,3 +376,7 @@ https://mp.weixin.qq.com/s/AQrgvjFPXUpqfqQQgOFN9A
 https://mp.weixin.qq.com/s/cGKsZYxrVP7hVnv7Jli9Zg
 
 MIT课程全面解读2019深度学习最前沿
+
+https://mp.weixin.qq.com/s/ugdF-Q-d8ngKTrHF2vPA3A
+
+DeepMind科学家总结2021年的15个高能研究

@@ -169,6 +169,10 @@ https://www.zhihu.com/question/268494717
 
 同一个模型用theano，tf，pytorch实现，performance可能差距较大吗？
 
+---
+
+`CUDA_VISIBLE_DEVICES`用于指定使用的显卡，因此`CUDA_VISIBLE_DEVICES=0`表示使用0号显卡。如果打算使用CPU的话，需要`CUDA_VISIBLE_DEVICES=`。
+
 # TFRecord
 
 TFRecord是TensorFlow官方定义的存放样本数据文件。

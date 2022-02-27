@@ -7,6 +7,48 @@ category: AI
 * toc
 {:toc}
 
+# 图计算（续）
+
+下面的动图形象的展示了计算图的前向和后向运算的过程：
+
+![](/images/article/tensorflow.gif)
+
+参考：
+
+http://www.algorithmdog.com/dynamic-tensorflow
+
+动态图计算：Tensorflow第一次清晰地在设计理念上领先
+
+https://zhuanlan.zhihu.com/p/23932714
+
+YJango的TensorFlow整体把握
+
+http://www.cnblogs.com/lienhua34/p/5998853.html
+
+Tensorflow学习笔记2：About Session, Graph, Operation and Tensor
+
+# Fused Graph
+
+Fused Graph是TensorFlow新推出的概念。这里仍以softmax运算为例，讲一下它的基本思想。
+
+上面的softmax运算计算图中，总共有4个operation。Fused Graph则将这4个op整合为1个op，发给运算单元。
+
+这样不同的硬件厂商就可以自行对这个整合的op进行解释。功能强的硬件，可能直接就支持softmax运算。功能弱的硬件也不怕，反正总归可以将softmax分解为基本运算的。
+
+Qualcomm Hexagon平台的Fused Graph实现可参见：
+
+tensorflow/core/kernels/hexagon
+
+![](/images/article/fused_graph_2.png)
+
+上图是另一个计算图优化的例子。
+
+参考：
+
+https://developers.googleblog.com/2017/03/xla-tensorflow-compiled.html
+
+XLA - TensorFlow, compiled
+
 # XLA
 
 XLA(Accelerated Linear Algebra)是TensorFlow计算图的编译器。
@@ -253,58 +295,6 @@ http://geek.csdn.net/news/detail/126133
 tf-slim-mnist例子中mnist数据不是原始格式的，而是经过了`datasets/download_and_convert_mnist.py`的转换。
 
 该示例执行时也没有控制台的输出信息，一度让我觉得很不方便。后来才发现，原来可以用TensorBoard查看log文件夹。
-
-# TensorBoard
-
-TensorBoard是一个http服务，用以监控TensorFlow的执行。
-
-`writer = tf.summary.FileWriter("logs/", sess.graph)`
-
-然后
-
-`tensorboard --logdir='logs/'`
-
-启动之后，用浏览器打开`http://localhost:6006`即可。
-
-TensorBoard会将同类结点Group，但Group之后，有时反而不易观察具体的结构。这个时候最好Ungroup一下。
-
-参考：
-
-http://blog.csdn.net/u013082989/article/details/53510625
-
-TensorFlow学习_01_安装_基本操作_可视化结构、过程_Mnist
-
-https://blog.csdn.net/sinat_33761963/article/details/62433234
-
-Tensorflow的可视化工具Tensorboard的初步使用
-
-https://mp.weixin.qq.com/s/Zaz9hmTuUbd-hCx-zHhBgg
-
-TensorBoard：可视化学习
-
-https://mp.weixin.qq.com/s/Kc-DqiuG2kn0NlVxkcNa4w
-
-TensorBoard直方图信息中心
-
-https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247515390&idx=2&sn=ebf548bac3c7db9b0174265666c67d0c
-
-tensorboard学习笔记
-
-https://mp.weixin.qq.com/s/JRa0tgXtGdzaj0UnYcmZ3Q
-
-tensorboard指南
-
-https://mp.weixin.qq.com/s/BAR-UM3rTveYrKa4kiJvcQ
-
-使用TensorBoard进行超参数优化
-
-https://mp.weixin.qq.com/s/5zfKiP9Fxpl7suqBQILL-g
-
-还在用Tensorboard？机器学习实验管理平台大盘点
-
-https://mp.weixin.qq.com/s/8scMr0jcW87y6k_wFgOBEg
-
-使用Tensorboard投影进行高维向量的可视化
 
 # 模型文件
 

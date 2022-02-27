@@ -297,6 +297,10 @@ https://mp.weixin.qq.com/s/JdbPf_H4pn5PnPH2LIKQlw
 
 携程高性能全异步网关实践
 
+https://mp.weixin.qq.com/s/TDXYFbHgbC6WzP10DBC2jw
+
+聊聊Netty那些事儿之从内核角度看IO模型
+
 ## synchronized
 
 https://blog.csdn.net/javazejian/article/details/72828483

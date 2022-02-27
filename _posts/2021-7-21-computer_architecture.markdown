@@ -71,6 +71,16 @@ RISC-V其实是反潮流，但是……
 
 总之，每个时代限制系统速度的瓶颈不同，因而完全有可能昨天的结论和今天的结论完全相反。
 
+---
+
+英特尔并不是首个将x86前端解码器与所谓的RISC风格后端结合起来的x86 CPU制造商，被AMD收购的NexGen同样如此。NexGen 5×86 CPU于1994年3月首次亮相，而奔腾Pro直到1995年11月才推出。
+
+https://mp.weixin.qq.com/s/HlOqQUCPljvnxNxqathWcA
+
+都2021年了，还把x86和ARM归为CISC和RISC？
+
+---
+
 ![](/images/img3/ISA.png)
 
 ![](/images/img3/ISA_2.png)

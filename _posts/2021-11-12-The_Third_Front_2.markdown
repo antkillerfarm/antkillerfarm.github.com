@@ -59,6 +59,92 @@ https://mp.weixin.qq.com/s/qgp97solB7pZauOnlH62wg
 
 # 两弹一星+
 
+![](/images/img3/top10.png)
+
+![](/images/img4/manufact.jpg)
+
+![](/images/img2/BJ_subway.jpg)
+
+![](/images/img4/china-dovak.gif)
+
+https://mp.weixin.qq.com/s/sRVb8qGtbsuqCvHSrlL9mQ
+
+卡住中国脖子的35项技术
+
+https://mp.weixin.qq.com/s/MCAR8M2DoV30-McdsjTxDw
+
+徒步横穿南极大陆第一人
+
+>秦大河，1947年生，地理学家，中国科学院院士，第三世界科学院院士。曾任中国气象局局长、中国科学技术协会副主席等
+
+https://mp.weixin.qq.com/s/3aLHfKF5grL6hunO7r_TAQ
+
+中国第一个发《Nature》的竟然是清朝人！被皇帝夸天下第一，他却觉得羞耻。。。（徐寿、华蘅芳、徐建寅）
+
+https://mp.weixin.qq.com/s/J1mAwHQUkuHrmvmyK_w5BQ
+
+中国首台蒸汽机竟由一位清代数学家设计！他与诺贝尔同年出生，为研制火药险些殒命。。。（华蘅芳）
+
+https://mp.weixin.qq.com/s/OO2OPmxjZJTCNiy_S2p-Aw
+
+中国第一个登上Nature的女科学家，居然出生在清朝？只活了29岁（王贞仪）
+
+https://mp.weixin.qq.com/s/CTpwRV9BJ6JW2BOtVC7uMg
+
+她是清华第一位女教授，被称为中国的“居里夫人”，却在62岁高龄被打入大牢...（王明贞）
+
+https://mp.weixin.qq.com/s/ajfoQAH-WSZ_OYIRK8uGAQ
+
+被遗忘的中国生命科学之父（林可胜）
+
+https://mp.weixin.qq.com/s/E8F4E-9LXJezfMY7hB-vWg
+
+高考成绩接近满分，却被清华北大拒绝，被称“中国最帅科学家”（中国油田分层开采和化学驱油技术的奠基人——王德民）
+
+https://mp.weixin.qq.com/s/wcDiuHjtGgWjWdLRtJTpTg
+
+凤毛麟角：中国早期留美的数理同门女双杰（1912-1949年间，有14名中国女性赴英美留学，后来均成为杰出的物理学家，本文主人公王明贞和王承书就是其中的两位。）
+
+https://mp.weixin.qq.com/s/IQPiGqqad4YajaCu9bQhJw
+
+美国一再拒绝两个中国人的回国申请，有人道破天机：你们是重大威胁（王承书、张文裕）
+
+https://mp.weixin.qq.com/s/Ar-67u7UbPz5z2odN1YeQQ
+
+从被列强剥削，到成为发达国家“粉碎机”：中国付出了多少代价？
+
+https://mp.weixin.qq.com/s/IQPiGqqad4YajaCu9bQhJw
+
+美国一再拒绝两个中国人的回国申请，有人道破天机：你们是重大威胁（王承书、张文裕）
+
+https://mp.weixin.qq.com/s/CTpwRV9BJ6JW2BOtVC7uMg
+
+她是清华第一位女教授，被称为中国的“居里夫人”，却在62岁高龄被打入大牢...（王明贞）
+
+https://mp.weixin.qq.com/s/ajfoQAH-WSZ_OYIRK8uGAQ
+
+被遗忘的中国生命科学之父（林可胜）
+
+https://mp.weixin.qq.com/s/Z2xRTxgRRHWWY2VICT4lQg
+
+中国有哪些领跑全球的技术
+
+https://mp.weixin.qq.com/s/NQ4OiPgguAVkRPBn1uEYjg
+
+他奉密令去美国长期潜伏，周总理亲自送行长谈（吴大琨）
+
+https://mp.weixin.qq.com/s/z0FdqtVOmhv1mbVRJ42UFA
+
+“奋斗者”号再探万米深海，制造一个深潜器到底有多难？
+
+https://mp.weixin.qq.com/s/toX25yTvQWnwid26oOXROA
+
+深潜海底10909
+
+https://www.zhihu.com/answer/378935681
+
+谁能告诉我一些关于肯尼亚蒙内铁路的故事？
+
 https://mp.weixin.qq.com/s/Ar-67u7UbPz5z2odN1YeQQ
 
 从被列强剥削，到成为发达国家“粉碎机”：中国付出了多少代价？
@@ -187,17 +273,15 @@ https://www.zhihu.com/question/51700891
 
 如何评价“前三十年的工业化是一堆破铜烂铁＂？
 
-# 苏俄+++
+# 苏俄+
 
-2000年，奥克萨娜开始接触到了女性权力思想。2008年，奥克萨娜和两个小姐妹一起创立了极端极端女性权力组织“费曼”。后来奥克萨娜披露，她们每个月接受美国基金会的赞助。费曼在乌克兰各地组织女性权力活动，形式激进，受到广泛关注。特别是他们举办游行反对亚努科维奇政府“不够民主”，把亚努科维奇弄得焦头烂额。
+1988年，苏联解体前夕，乌克兰的人均GDP是1449美元，那一年，中国的人均GDP是283美元。
 
-但是2014年原乌克兰政府被推翻后，美国基金会终止了对奥克萨娜等人的赞助，借口是“她太激进了”。同年，奥克萨娜被小姐妹排挤出“费曼”组织。失去收入来源的奥克萨娜四处漂泊。一开始她被一个毒枭包养，但不久后毒枭丢下奥克萨那跑路。之后奥科萨娜又在美国被捕，理由是非法卖淫。那之后，日渐贫穷的乌克兰逐渐成为欧洲最大的娼妓输出国。心灰意冷的奥克萨那不再从事女权运动，试图重新作为一名画家活下去。但她始终无法摆脱贫困，也无法摆脱过去对她的影响。又经历了一系列极度不愉快的事件后，2018年7月，奥科萨娜在懊悔自责和绝望中自杀。年仅31岁。
+2018年，乌克兰的人均GDP是3095美元，而中国的人均GDP是9770美元，中国的人均GDP反超乌克兰3倍。
 
-乌克兰给我们演了一出“公知治国—>公知误国—>公知卖国—>公知倒贴卖国”的好戏！
+https://mp.weixin.qq.com/s/Ml95p6xPAIf3WYrKW6rgAg
 
-https://www.zhihu.com/answer/1862530815
-
-当初乌克兰、阿拉伯之春那些颜色革命的街头参与者现在看到自己的祖国变成这样会后悔吗?
+欧洲子宫和香港女孩
 
 ---
 
@@ -215,50 +299,12 @@ https://www.zhihu.com/answer/1862530815
 
 ---
 
-https://mp.weixin.qq.com/s/kCLZyjoDoNK-py06hvmujA
+让军队参与电影拍摄是普遍存在的，因为电影被认为是最有效的宣传手段。在美国，军队和好莱坞心甘情愿地相互合作，节省彼此军事广告的预算和电影制作费用。
 
-特供商店在苏联的兴衰（上）
+https://mp.weixin.qq.com/s/O0zghfSj5kmgFx0_DILTaQ
 
-https://mp.weixin.qq.com/s/C2DIOcL9pE-FWspAt8Ut_Q
+苏联军队如何参与到电影的拍摄之中
 
-特供商店在苏联的兴衰（下）
+https://mp.weixin.qq.com/s/895h8CI-WVmmHQrKani0dQ
 
-https://www.zhihu.com/question/21817255
-
-俄罗斯（苏联）作为一个工业大国，为什么没有世界性的汽车品牌？
-
-https://zhuanlan.zhihu.com/p/331709823
-
-苏联人给他发的奖章，比给勃列日涅夫还多
-
-https://zhuanlan.zhihu.com/p/390097908
-
-乌兹别克棉花案：苏联解体的潘多拉魔盒之钥
-
-https://mp.weixin.qq.com/s/M3ZselQLqCdLY53dpqILLA
-
-穿越回苏联：火红岁月的情与色（上）
-
-https://mp.weixin.qq.com/s/2TAWe4frnI6RTpe4ui0mAg
-
-穿越回苏联：火红岁月的情与色（下）
-
-https://mp.weixin.qq.com/s/YPgFtLkpl9BGNZPo_IEcrg
-
-《功勋》孙家栋单元的中苏军服细节看不清？来看特写和解析
-
-https://www.zhihu.com/question/498827834
-
-苏联拖拉机为什么没有解决农业问题？
-
-https://www.zhihu.com/question/22972794
-
-没有出海口的黑海舰队对俄罗斯的意义是什么？
-
-http://www.mofcom.gov.cn/article/i/jyjl/e/201909/20190902900697.shtml
-
-毕马威：哈萨克斯坦一半财富集中在162人之手
-
-https://www.zhihu.com/question/321165966
-
-如何看待演员泽连斯基2019年乌克兰大选高票当选乌克兰总统？
+苏联军队如何参与到电影的拍摄之中（2）

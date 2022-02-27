@@ -160,7 +160,7 @@ configure脚本会询问使用什么版本的gcc，填`/usr/bin/gcc-4.9`即可�
 
 具体的要求参见：
 
-https://www.tensorflow.org/install/source
+https://tensorflow.google.cn/install/source
 
 ---
 
@@ -191,6 +191,8 @@ CUDA自带了特定版本的Driver，但是和driver版本并无对应关系，�
 https://developer.nvidia.com/rdp/cudnn-archive
 
 这个需要注册Nvidia账号才能下载。。。囧
+
+下载解压之后，将cuda/include/cudnn.h文件复制到/usr/local/cuda/include文件夹，将cuda/lib64/下所有文件复制到/usr/local/cuda/lib64文件夹中，并添加读取权限。
 
 Ubuntu 20.04已经自带了相应的driver和CUDA：
 
@@ -241,6 +243,24 @@ https://zhuanlan.zhihu.com/p/81724891
 https://blog.csdn.net/qq_43202953/article/details/107951031
 
 Ubuntu 20.04安装cuda和cudnn
+
+# 快速更新
+
+对于要对tensorflow的C++部分进行调试的人来说，每次都重装pip包，显然是一件很麻烦的事情。这时可以考虑使用符号链接来省去打包和解包的时间。
+
+```bash
+# create soft link(do it only in the first time.)
+cd <python lib path>/tensorflow/python
+ln -s <tf path>/bazel-bin/tensorflow/python/_pywrap_tensorflow_internal.so _pywrap_tensorflow_internal.so
+
+cd <python lib path>/tensorflow
+ln -s <tf path>/bazel-bin/tensorflow/libtensorflow_framework.so.2.3.1 libtensorflow_framework.so.2
+
+# <python lib path> usually like this: /usr/lib/python3.8/site-packages
+
+# update
+bazel build --config=opt --copt=-g --strip=never //tensorflow/python:pywrap_tensorflow
+```
 
 # 基本概念
 
@@ -303,43 +323,3 @@ Tensorflow对计算图的简化，不仅在于使用默认的Graph。还在于�
 反过来，如果只想执行ReLU和softmax的话，则可以`sess.run(softmax, feed_dict={add: add_tensor})`。也就是把Sub Graph的output作为`sess.run`的参数，而把input作为feed_dict的参数。
 
 虽然图计算是Tensorflow的主要使用方式，然而一般性的tensor计算（即非图计算），也是完全可行的。Tensorflow没有提供相关的API，直接使用numpy就可以了。
-
-下面的动图形象的展示了计算图的前向和后向运算的过程：
-
-![](/images/article/tensorflow.gif)
-
-参考：
-
-http://www.algorithmdog.com/dynamic-tensorflow
-
-动态图计算：Tensorflow第一次清晰地在设计理念上领先
-
-https://zhuanlan.zhihu.com/p/23932714
-
-YJango的TensorFlow整体把握
-
-http://www.cnblogs.com/lienhua34/p/5998853.html
-
-Tensorflow学习笔记2：About Session, Graph, Operation and Tensor
-
-# Fused Graph
-
-Fused Graph是TensorFlow新推出的概念。这里仍以softmax运算为例，讲一下它的基本思想。
-
-上面的softmax运算计算图中，总共有4个operation。Fused Graph则将这4个op整合为1个op，发给运算单元。
-
-这样不同的硬件厂商就可以自行对这个整合的op进行解释。功能强的硬件，可能直接就支持softmax运算。功能弱的硬件也不怕，反正总归可以将softmax分解为基本运算的。
-
-Qualcomm Hexagon平台的Fused Graph实现可参见：
-
-tensorflow/core/kernels/hexagon
-
-![](/images/article/fused_graph_2.png)
-
-上图是另一个计算图优化的例子。
-
-参考：
-
-https://developers.googleblog.com/2017/03/xla-tensorflow-compiled.html
-
-XLA - TensorFlow, compiled

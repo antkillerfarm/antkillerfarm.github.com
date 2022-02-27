@@ -31,6 +31,10 @@ https://mp.weixin.qq.com/s/wR5FQKRjYwt29Qis9wnNrw
 
 基于深度学习的社区发现最新综述
 
+https://mp.weixin.qq.com/s/wYA_6PPqrV24FE2KMU_l5g
+
+网络社团发现新综述：从统计建模到深度学习
+
 https://www.zhihu.com/question/29042018
 
 社区发现(Community detection)的经典方法有哪些？该领域最新的研究进展如何？

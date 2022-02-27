@@ -225,6 +225,12 @@ StackEdit是一个在线的markdown编辑工具，被CSDN等网站所使用。
 
 https://stackedit.io/
 
+## Markdown编辑器
+
+https://github.com/marktext/marktext
+
+MarkText
+
 ## Hexo
 
 Hexo也是一个常见的blog框架，确实默认主题比jekyll的好。然而，它必须本地编译，然后上传github，而不能如jekyll那样，由github自动编译。所以，我还是观望一下吧。

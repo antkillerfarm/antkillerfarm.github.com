@@ -222,6 +222,23 @@ https://www.cnblogs.com/puyangsky/p/7596282.html
 
 bazel的使用
 
+## 引用第三方库
+
+```text
+git_repository(
+    name = "XXX",
+    remote = "https://github.com/XXX/XXX.git",
+    tag = "v1.1",
+    patches = ["xxx.patch"],
+    patch_args = ["-p1"],
+    verbose = True,
+)
+```
+
+https://brentley.dev/patching-bazel-external-dependencies/
+
+Patching Bazel external dependencies
+
 # Bazelisk
 
 这是基于Go语言编写的Bazel启动器，它会为你的工作区下载最适合的Bazel，并且透明的将命令转发给该Bazel。

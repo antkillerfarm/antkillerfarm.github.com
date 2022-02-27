@@ -9,6 +9,14 @@ category: Nature
 
 # 化学
 
+在野蛮生长阶段，科学家们也发明了多种有成瘾性的精神、麻醉类药物。与后世禁毒成为主流趋势后，毒品生产流通被黑帮控制不同，当时人们对毒品危害认识不足，生产者也多为大公司，很多毒品如吗啡、海洛因还可以在药房中低价买到。
+
+https://zhuanlan.zhihu.com/p/162848644
+
+德军，沉迷吸毒不能自拔
+
+---
+
 勒夏特列原理（Le Chatelier's principle），又名化学平衡移动原理，由法国化学家勒夏特列于1888年发现。是一个定性预测化学平衡点的原理，其具体内容为：如果改变可逆反应的条件（如浓度、压强、温度等），化学平衡就被破坏，并向减弱这种改变的方向移动。
 
 https://www.zhihu.com/question/438493901
@@ -214,19 +222,3 @@ https://www.zhihu.com/question/411561262
 https://mp.weixin.qq.com/s/HSpZsD7E3S0TAhk_VwUDUg
 
 诺贝尔化学奖历史上的遗珠之憾
-
-https://mp.weixin.qq.com/s/V0Jh1Qv-RXoSK63Z5C092g
-
-一滴水里最少有几个水分子？5个还是6个？
-
-https://mp.weixin.qq.com/s/tGYqdbrYUkXaIEa_ycAzUQ
-
-幸运的化学，悲催的奠基人（Antoine-Laurent de Lavoisier）
-
-https://mp.weixin.qq.com/s/cUuw9CflfLrxXuSmNbra_A
-
-中学的元素周期表还藏着4000多种……（同位素）
-
-https://zhuanlan.zhihu.com/p/23284525
-
-靠谱地，咱聊聊田中耕一

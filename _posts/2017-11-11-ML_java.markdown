@@ -307,7 +307,7 @@ JSON采用的是，不同的语言提供不同的库来解析的方式。
 
 而Protocol Buffers使用同一个格式文件，为不同语言生成相应的代码。这和CORBA的做法很类似。
 
-与Protocol Buffers类似的方案，还有Facebook提出的Thrift、ZeroC提出的Slice和Hadoop Avro。
+与Protocol Buffers类似的方案，还有Facebook提出的Thrift、ZeroC提出的Slice和Hadoop Avro。Protocol Buffers只提供了序列化和反序列化技术，而后面这几个方案还包含了完整的客户端/服务端堆栈，可快速实现RPC。
 
 ### 简易示例
 
@@ -365,6 +365,10 @@ https://mp.weixin.qq.com/s/dYV_O2WiiGeDHMbejt8vqg
 https://mp.weixin.qq.com/s/enDUynhZ1Pnzg_4xEjR21A
 
 浅谈Protobuf编码
+
+https://zhuanlan.zhihu.com/p/149889589
+
+Avro，Protocol Buffer和Thrift中的模式演化
 
 ### proto3
 

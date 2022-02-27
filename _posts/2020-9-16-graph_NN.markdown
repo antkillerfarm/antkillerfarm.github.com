@@ -243,6 +243,10 @@ https://mp.weixin.qq.com/s/E8m0bAHxcwHRJQlc3nJhlg
 
 Github火爆图神经网络框架pytorch_geometric原理解析—基于边的高效GNN实现
 
+https://mp.weixin.qq.com/s/DFLbmVB2I824jXrSk8VhzQ
+
+支持异构图、集成GraphGym，超好用的图神经网络库PyG更新2.0版本
+
 ## PyTorch-BigGraph
 
 https://mp.weixin.qq.com/s/Ux3_baKdA_Fee-jmcs4Myg

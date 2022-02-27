@@ -289,6 +289,10 @@ https://mp.weixin.qq.com/s/QuA52cfwvrkHtiuR6JieWg
 
 一张照片攻破人脸识别系统：能点头摇头张嘴，网友：太可怕！
 
+https://mp.weixin.qq.com/s/QZWBPgpro9RAsczOh-qQnQ
+
+清华OpenAttack文本对抗工具包重大更新：支持中文、多进程、兼容HuggingFace
+
 # 硬件
 
 https://mp.weixin.qq.com/s/ZexnsNmqsD2yq-7YNASohw

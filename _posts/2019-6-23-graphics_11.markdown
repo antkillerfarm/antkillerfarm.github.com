@@ -271,6 +271,10 @@ https://mp.weixin.qq.com/s/7SurDN5gvLCEDbxe2gR58w
 
 面向工程师的图像处理，438页pdf
 
+https://www.zhihu.com/question/49812837
+
+256字节3D程序是如何实现3D引擎的呢？
+
 ## 术语
 
 Material Point Method（物质点法）
@@ -296,6 +300,10 @@ https://github.com/yuanming-hu/difftaichi
 https://github.com/hietwll/LBM_Taichi
 
 参考：
+
+https://www.bilibili.com/video/BV1aL4y1a7pv
+
+B站的太极图形课
 
 https://zhuanlan.zhihu.com/p/97700605
 

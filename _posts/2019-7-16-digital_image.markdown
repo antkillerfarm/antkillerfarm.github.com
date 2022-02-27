@@ -9,6 +9,8 @@ category: resource
 
 # 数字成像
 
+计算摄影学（Computational Photography）是计算机图形学，计算机视觉，光学和传感器等领域的交叉学科。
+
 ## 教程
 
 http://graphics.cs.cmu.edu/courses/15-463/

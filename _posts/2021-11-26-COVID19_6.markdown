@@ -1,11 +1,37 @@
 ---
 layout: post
-title: 新冠肺炎（六）——武汉病毒所, 疫情建模, 蝙蝠, Gilead Sciences, 新冠疫苗
+title: 新冠肺炎（六）——瘟疫公司, 武汉病毒所, 疫情建模, 蝙蝠, Gilead Sciences, 新冠疫苗
 category: COVID19 
 ---
 
 * toc
 {:toc}
+
+# 瘟疫公司
+
+![](/images/img4/Plague_Inc.jpg)
+
+![](/images/img4/Plague_Inc.png)
+
+https://zhuanlan.zhihu.com/p/103836857
+
+五年前的冠状病毒模组让《瘟疫公司》再度翻红，创作者是预言家？
+
+https://zhuanlan.zhihu.com/p/125727756
+
+《瘟疫公司》做错了吗？最贴近疫情的游戏被下架，被指存在违反国内法律内容
+
+https://zhuanlan.zhihu.com/p/298079109
+
+现在，你可以在《瘟疫公司》里“拯救世界”了
+
+https://zhuanlan.zhihu.com/p/293192687
+
+因为疫情爆火的《瘟疫公司》免费了，还新增了解药模式
+
+https://www.zhihu.com/question/21491731
+
+游戏《瘟疫公司》Plague Inc这款游戏对现实世界有何启示？
 
 # 武汉病毒所
 

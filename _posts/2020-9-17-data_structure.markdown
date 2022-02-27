@@ -9,6 +9,10 @@ category: resource
 
 # 数据结构 & 普通CS算法
 
+https://github.com/TheAlgorithms
+
+搜索算法，一触即达：GitHub上有个规模最大的开源算法库
+
 ## TopK
 
 https://zhuanlan.zhihu.com/p/76734219

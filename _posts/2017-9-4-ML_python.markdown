@@ -112,7 +112,7 @@ Anaconda同时也支持多个Python版本的并存和切换。它的底层用到
 
 `conda activate python2`
 
-最新的Anaconda提供了`conda init`命令用于将环境添加到shell中。如果不想要的话，可以到`～/.bashrc`删除之。
+最新的Anaconda提供了`conda init`命令用于将环境添加到shell中。如果不想要的话，可以到`~/.bashrc`删除之。
 
 参考：
 
