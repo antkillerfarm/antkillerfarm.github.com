@@ -210,6 +210,15 @@ TensorFlow中的Placement启发式算法模块——Placer
 
 CPU的优先级是50，添加的backend的优先级只要大于50，就可以得到调度权。
 
+## unit test
+
+写好的backend需要测试，同时Unit Test也是编写一个backend的入门级入口。
+
+```bash
+bazel build -c dbg tensorflow/compiler/xla/tests:convolution_variants_test
+./bazel-bin/tensorflow/compiler/xla/tests/convolution_variants_test_cpu --gtest_filter=*BackwardInputLowPaddingLessThanHighPadding*
+```
+
 ## 参考
 
 https://mp.weixin.qq.com/s/RO3FrPxhK2GEoDCGE9DXrw

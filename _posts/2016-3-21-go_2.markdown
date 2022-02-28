@@ -135,3 +135,87 @@ https://zhuanlan.zhihu.com/p/44093969
 https://new.qq.com/omn/20210427/20210427A0CD8R00.html
 
 太平洋西部一小岛，竟将石头作为通用货币，而婚嫁彩礼也是石头
+
+---
+
+商家印刷面值500元的蟹券，以400元价格卖给营销人员，营销人员以500元价格对外出售，但以250元的价格往回收，再以300元的价格卖给蟹券商家。一只螃蟹没有，一张蟹券，蟹券商家稳赚100元，营销人员也能赚50元。
+
+https://finance.sina.com.cn/tech/2021-09-22/doc-iktzqtyt7335408.shtml
+
+一只螃蟹也没卖，每张蟹券净赚100元，“螃蟹券”背后有哪些套路
+
+https://zhuanlan.zhihu.com/p/260365163
+
+大闸蟹的水有多深？一只蟹都没养，拿几张纸就能骗钱
+
+---
+
+![](/images/img4/trap.jpg)
+
+2020年世界上人口超过2000万的国家中人均GNP的分布情况。
+
+人均GNP在1.25-3万美元的区域，就是所谓的“沙漠地带”——中等收入陷阱。
+
+如果你以为，这就是2020年所特有的现象，那就又错了：
+
+1980年，4000-1万美元是沙漠地带；
+
+1990年，8000-1.6万美元是沙漠地带；
+
+2000年，8000-2万美元是沙漠地带；
+
+2010年，1.5万-3万美元是沙漠地带。
+
+---
+
+以香港为界，“南”代表港股，“北”代表A股。
+
+北上资金是指进入A股的香港资本和国际资本。南下资金是指进入港股的中国内地资本。
+
+由于陆港通对内地的个人投资者参与港股通设置了资产限制，所以普通股民对南下资金不怎么关注，对北上资金的动向关注较多。
+
+https://xueqiu.com/8082119199/112705955
+
+南下资金、北上资金，傻傻分不清楚？
+
+---
+
+EXW：EX works
+
+FCA：Free Carrier
+
+FAS：Free Alongside Ship
+
+FOB：Free on Board
+
+CFR：Cost and Freight
+
+CIF：Cost Insurance and Freight
+
+CPT：carriage paid to
+
+CIP：carriage and insurance paid to
+
+DAF：Delivered At Frontier
+
+DES：Delivered ex ship
+
+DEQ：Delivered EX Quay
+
+DDU：delivered duty unpaid
+
+DDP：Delivered duty paid
+
+https://www.weibo.com/ttarticle/p/show?id=2309404623762896322891
+
+终于有人把FOB/CIF/DDP等13种贸易术语讲清楚了
+
+---
+
+https://www.zhihu.com/question/389733485
+
+如何评价中国银行推出的“原油宝”产品穿仓，中国银行会要求客户赔偿吗？
+
+https://mp.weixin.qq.com/s/xhor1Qtzzk1VdlM5IqTkHQ
+
+先搞懂期货，才知道中行是咋亏的！

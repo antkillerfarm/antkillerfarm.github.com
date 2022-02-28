@@ -157,6 +157,10 @@ https://mp.weixin.qq.com/s/Lz8QRs7HkZbWFxLqf4h6OA
 
 塑料瓶、玻璃瓶、纸包装，什么饮料用什么包装有啥秘密吗？
 
+https://www.zhihu.com/question/510151356
+
+皮蛋制作过程中用到氢氧化钠，通过渗入蛋壳气孔与其中蛋白质反应凝固，那么可以用其他碱性物替代吗？
+
 ## 化学工业
 
 https://wallstreetcn.com/articles/250536
