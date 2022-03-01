@@ -106,3 +106,29 @@ https://zhuanlan.zhihu.com/p/463166139
 https://www.zhihu.com/question/518954400
 
 为什么俄罗斯原先的发源地基辅会分给乌克兰？
+
+---
+
+毛子的发家史：
+
+![](/images/img4/Russian.jpg)
+
+![](/images/img4/Russian_2.jpg)
+
+![](/images/img4/Russian_3.jpg)
+
+![](/images/img4/Russian_4.jpg)
+
+---
+
+![](/images/img4/Gas.jpg)
+
+---
+
+![](/images/img4/Ukraine_2.jpg)
+
+---
+
+2022年2月22日 普京签署承认“顿涅茨克共和国”和“卢甘斯克共和国”的命令。
+
+2月24日 普京宣布在顿巴斯地区展开军事行动。
