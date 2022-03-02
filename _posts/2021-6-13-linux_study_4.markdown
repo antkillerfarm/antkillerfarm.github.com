@@ -181,6 +181,43 @@ http://www.infoq.com/cn/articles/inotify-linux-file-system-event-monitoring
 
 Inotify: 高效、实时的Linux文件系统事件监控框架
 
+# betty
+
+betty是Jeff Pickhardt开发的人工智能助手，可以将英文转换成Linux命令。
+
+安装方法如下：
+
+```bash
+sudo apt install git curl ruby
+cd ~
+git clone https://github.com/pickhardt/betty
+sudo nano ~/.bashrc
+```
+
+在.bashrc末尾添加以下内容：
+
+`alias betty="/home/sk/betty/main.rb"`
+
+重启终端即可。
+
+使用方法：
+
+`betty compress test/ test.tar.gz`
+
+# Hubot
+
+Hubot是个和betty类似的开源聊天机器人，可以用来做一些自动化任务，如部署网站，翻译语言等等。
+
+官网：
+
+https://hubot.github.com/
+
+参考：
+
+https://segmentfault.com/a/1190000004855149
+
+Hubot的简单用法
+
 # Linux参考资源
 
 https://www.kernel.org/doc/html/latest/
@@ -374,27 +411,3 @@ https://mp.weixin.qq.com/s/-U7L8aXoaPXSwZshSpjQ2g
 https://mp.weixin.qq.com/s/oKtu3AA9D3y--xMDQ8EARw
 
 携程一次Dubbo连接超时问题的排查
-
-https://mp.weixin.qq.com/s/4o_cSzWeJdLJMObJBhaZlw
-
-计算机系统中的内存
-
-https://www.jianshu.com/p/fad3339e3448
-
-浅析Linux中的零拷贝技术
-
-https://mp.weixin.qq.com/s/Q9BOA88Q6OBaDch1AiS9QA
-
-原来8张图，就可以搞懂零拷贝了
-
-https://mp.weixin.qq.com/s/6R8UcLLjm9gdWud-eNHztw
-
-中断及其初始化
-
-https://mp.weixin.qq.com/s/qwouMWc4CFtqG_jra4xbIg
-
-IDT及中断处理的实现
-
-https://mp.weixin.qq.com/s/pRsXWAv7wgYcN_jlzcA2YA
-
-内存都没了，还能运行程序？

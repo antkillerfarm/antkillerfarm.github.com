@@ -264,6 +264,14 @@ http://www.jianshu.com/p/8687a040eb48
 
 GPU处理图像Shader的入门
 
+https://zhuanlan.zhihu.com/p/25595069
+
+卡通渲染（上）：致从没看懂过着色器代码的你
+
+https://zhuanlan.zhihu.com/p/25939794
+
+卡通渲染（下）
+
 # GPU通信技术
 
 ## RDMA

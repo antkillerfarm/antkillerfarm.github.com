@@ -211,6 +211,30 @@ https://www.ibm.com/developerworks/cn/linux/l-yocto-linux/index.html
 
 # Linux参考资源+
 
+https://mp.weixin.qq.com/s/4o_cSzWeJdLJMObJBhaZlw
+
+计算机系统中的内存
+
+https://www.jianshu.com/p/fad3339e3448
+
+浅析Linux中的零拷贝技术
+
+https://mp.weixin.qq.com/s/Q9BOA88Q6OBaDch1AiS9QA
+
+原来8张图，就可以搞懂零拷贝了
+
+https://mp.weixin.qq.com/s/6R8UcLLjm9gdWud-eNHztw
+
+中断及其初始化
+
+https://mp.weixin.qq.com/s/qwouMWc4CFtqG_jra4xbIg
+
+IDT及中断处理的实现
+
+https://mp.weixin.qq.com/s/pRsXWAv7wgYcN_jlzcA2YA
+
+内存都没了，还能运行程序？
+
 https://mp.weixin.qq.com/s/snQ3T86usv4rXz0MMQvFfQ
 
 如何回答性能优化的问题，才能打动阿里面试官？

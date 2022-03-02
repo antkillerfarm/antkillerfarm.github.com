@@ -9,6 +9,34 @@ category: Nature
 
 # 化学
 
+https://mp.weixin.qq.com/s/NvF5cEpM3pomDgMNjg2QbQ
+
+你拿得起放不下的甜，都是糖的味道吗？
+
+https://mp.weixin.qq.com/s/ge3FBSKFPvZgpWWbCAvm3A
+
+让许幻山放不下的蓝色烟花，有多难生产？
+
+https://mp.weixin.qq.com/s/u_Xg4naj0UetFs8tROHK8A
+
+从“垃圾元素”到“爱情金属”，它是怎么咸鱼翻身的？（铂）
+
+https://mp.weixin.qq.com/s/ZJWx-7byW9dDrC58Q6f_hw
+
+从冰淇淋到洗衣粉，它们靠“香”行走江湖
+
+https://mp.weixin.qq.com/s/pry9NlLCql74XhdvRADBiQ
+
+它是“地球保护伞”，也可能是危险的隐形反派
+
+https://www.zhihu.com/question/411561262
+
+现代制造的刀放到古代算不算名刀？
+
+https://mp.weixin.qq.com/s/HSpZsD7E3S0TAhk_VwUDUg
+
+诺贝尔化学奖历史上的遗珠之憾
+
 https://mp.weixin.qq.com/s/V0Jh1Qv-RXoSK63Z5C092g
 
 一滴水里最少有几个水分子？5个还是6个？

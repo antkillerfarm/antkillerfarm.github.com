@@ -157,22 +157,16 @@ https://www.zhihu.com/question/464774686
 
 https://mp.weixin.qq.com/s/YB1KV137LQR983QLMJUcFw
 
-2滴液体滴在她的手套上，仅15秒后就宣告死亡......
+2滴液体滴在她的手套上，仅15秒后就宣告死亡...
 
 ---
 
-https://mp.weixin.qq.com/s/3Frx_ZmmmEC_aj4tLUPleg
+在当时基本不存在版权法的土耳其，本土电影制作人开始疯狂翻拍欧洲、美国和印度的热门电影（毕竟经过了市场验证，票房有保证），但大多都不是重新制作，而是直接使用原片中的配乐和特效场景。
 
-苏莱曼尼被斩首后，这篇文章把两伊根本问题说清楚了
+所以你能轻易找到《超人》、《佐罗》、《泰山》、《007》、《E.T》、《兰博》等经典作品的土耳其版本。
 
-https://mp.weixin.qq.com/s/Wt56L0Tdj8H1s4zVh43cMw
+优良的艺术家抄袭, 伟大的艺术家偷窃。--by 毕加索
 
-决战亮马桥！美国、伊朗驻华大使馆于微博隔空斗法
+https://www.zhihu.com/answer/2368182293
 
-https://mp.weixin.qq.com/s/sCiWfFweGzgjPTVGhl3hfw
-
-美国向伊朗的求和，是以斗争求和平的伟大实践！
-
-https://zhuanlan.zhihu.com/p/373781337
-
-巴勒斯坦，其实已经内部分裂了
+你们见过的最无耻的抄袭有哪些？

@@ -123,6 +123,20 @@ https://mp.weixin.qq.com/s/dm2V9oIP-SflRwGvMmQuLg
 
 ---
 
+如果是1953年以前，任何用途都只能用天然钻石。此后，合成钻石粉实现了工业上规模化的生产，但是尚不能低成本地合成大颗粒金刚石。
+
+如果是1986年以前，任何需要0.2克拉以上钻石单晶的用途，都只能用天然钻石。此阶段，合成0.5克拉以上的金刚石单晶虽然可行，但是因为使用铁镍触媒（催化剂），产品可以用磁铁吸引。且0.5克拉以上裸钻成本，高于等分级的天然钻石。
+
+如果是2004年以前，任何需要1克拉以上钻石单晶的首饰，都只能用天然钻石。此阶段，合成1克拉以上的宝石级钻石虽然可行，但是成本高于等分级的天然钻石。
+
+2012年以后，合成钻石技术趋于成熟，合成钻石大于1ct的单晶体主要以HPHT或CVD法生产。
+
+https://www.zhihu.com/question/45550515
+
+人工合成钻石的技术已经相当成熟了，为什么钻石价格仍如此昂贵？
+
+---
+
 https://mp.weixin.qq.com/s/0fdnEWpLvPSbweFh0v4x9A
 
 科学家的浪漫，是用激光画一道彩虹（姜黄素）
@@ -194,31 +208,3 @@ https://mp.weixin.qq.com/s/LUeWIT-gUFZTPs2CFJ3ygQ
 https://mp.weixin.qq.com/s/K2magOnDUmcWPN52QExO6g
 
 Tony老师，我明明染的蓝黑，怎么就绿了？？
-
-https://mp.weixin.qq.com/s/NvF5cEpM3pomDgMNjg2QbQ
-
-你拿得起放不下的甜，都是糖的味道吗？
-
-https://mp.weixin.qq.com/s/ge3FBSKFPvZgpWWbCAvm3A
-
-让许幻山放不下的蓝色烟花，有多难生产？
-
-https://mp.weixin.qq.com/s/u_Xg4naj0UetFs8tROHK8A
-
-从“垃圾元素”到“爱情金属”，它是怎么咸鱼翻身的？（铂）
-
-https://mp.weixin.qq.com/s/ZJWx-7byW9dDrC58Q6f_hw
-
-从冰淇淋到洗衣粉，它们靠“香”行走江湖
-
-https://mp.weixin.qq.com/s/pry9NlLCql74XhdvRADBiQ
-
-它是“地球保护伞”，也可能是危险的隐形反派
-
-https://www.zhihu.com/question/411561262
-
-现代制造的刀放到古代算不算名刀？
-
-https://mp.weixin.qq.com/s/HSpZsD7E3S0TAhk_VwUDUg
-
-诺贝尔化学奖历史上的遗珠之憾

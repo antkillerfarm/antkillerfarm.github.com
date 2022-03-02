@@ -201,6 +201,24 @@ https://mp.weixin.qq.com/s/8scMr0jcW87y6k_wFgOBEg
 
 使用Tensorboard投影进行高维向量的可视化
 
+# cross-compile
+
+https://www.morethantechnical.com/2018/03/08/cross-compile-latest-tensorflow-1-5-for-the-nvidia-jetson-tk1/
+
+Cross-compile latest Tensorflow (1.5+) for the Nvidia Jetson TK1
+
+https://docs.bazel.build/versions/main/tutorial/cc-toolchain-config.html
+
+Bazel Tutorial: Configure C++ Toolchains
+
+https://github.com/bazelbuild/bazel/issues/1353
+
+Using bazel to cross-compile tensorflow for other targets.
+
+https://www.cnblogs.com/jojodru/p/7744630.html
+
+在Ubuntu 16.04上使用bazel交叉编译tensorflow
+
 # 参考
 
 https://mp.weixin.qq.com/s/t1QFIOq-VBNOrSm0zW-PlQ
@@ -382,71 +400,3 @@ http://gitbook.cn/books/593d71ba4686067a2200aec6/index.html
 https://mp.weixin.qq.com/s/lLaSXG1VF9Rys2GNzFP7pw
 
 轻松使用多种预训练卷积网络抽取图像特征
-
-https://mp.weixin.qq.com/s/tVqp1Tht1P-0EQazJizQaA
-
-利用人口普查收入数据集预测收入
-
-https://mp.weixin.qq.com/s/3WleFm9S_wMIPTz_WfjKQw
-
-TensorFlow支持Unicode，中文NLP终于省心了
-
-https://mp.weixin.qq.com/s/jFEOokxfJ1Kw-P3wvw3EAg
-
-带你了解，不规则张量！
-
-https://mp.weixin.qq.com/s/tMtx4PZbpo5IrnhzLz8Lzw
-
-AutoGraph：图的简易控制流程
-
-https://mp.weixin.qq.com/s/zY7rGh-kA-36VEo9DiaKbg
-
-TensorFlow进行简单的图像处理
-
-https://mp.weixin.qq.com/s/DAV3TDI4JYr0sXqTGU6t2A
-
-分布式TensorFlow入坑指南：从实例到代码带你玩转多机器深度学习
-
-https://mp.weixin.qq.com/s/QU5NjksCEswjHnkY7WXWXQ
-
-分布式TensorFlow入门教程
-
-https://mp.weixin.qq.com/s/pBR4wMITrigbSVAvn0d6vQ
-
-利用TensorFlow实现上下文的Chat-bots
-
-https://mp.weixin.qq.com/s/8I5Nvw4t2jT1NR9vIYT5XA
-
-深入理解TensorFlow中的tf.metrics算子
-
-https://mp.weixin.qq.com/s/aMarI-nyIvFqhtpJWQrNhQ
-
-谷歌推强化学习新框架“多巴胺“，基于TensorFlow，已开源
-
-https://mp.weixin.qq.com/s/ntHkMIef1o2-FF-AJf_bZQ
-
-三分钟训练眼球追踪术，AI就知道你在盯着哪个妹子——TensorFlow.js代码
-
-https://mp.weixin.qq.com/s/7rTmEBfh613SrNnTQvfSjw
-
-懒人福利：不写代码调优深度模型，谷歌开源的“What-If”了解一下
-
-https://mp.weixin.qq.com/s/eX3LWYiSH-KObH_7F_3QCA
-
-TensorFlow 1.11.0发布，一键多GPU
-
-https://mp.weixin.qq.com/s/316VVXLQfeIsKNk4ld-VRw
-
-TensorFlow语义分割套件开源了ECCV18旷视科技BiSeNet实时分割算法
-
-https://mp.weixin.qq.com/s/XI1J4ardEWKP4UQ4IXZGTQ
-
-TensorFlow Hub,给您带来全新的Web体验
-
-http://www.jianshu.com/p/1da012a83b74
-
-利用TensorFlow实现排序和搜索算法
-
-https://mp.weixin.qq.com/s/oEqMjOTj8xpd3sg60ZUhqA
-
-TensorFlow的c++实践及各种坑

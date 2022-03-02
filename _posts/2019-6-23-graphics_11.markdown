@@ -275,6 +275,10 @@ https://www.zhihu.com/question/49812837
 
 256字节3D程序是如何实现3D引擎的呢？
 
+https://zhuanlan.zhihu.com/p/22337544
+
+不只是噪音（Perlin噪音）
+
 ## 术语
 
 Material Point Method（物质点法）
