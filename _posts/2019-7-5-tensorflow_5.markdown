@@ -203,11 +203,19 @@ https://mp.weixin.qq.com/s/8scMr0jcW87y6k_wFgOBEg
 
 # cross-compile
 
+`./tensorflow/tools/ci_build/pi/build_raspberry_pi.sh AARCH64`
+
+https://github.com/tensorflow/toolchains.git
+
+cxx_builtin_include_directories
+
+`__float128`
+
 https://www.morethantechnical.com/2018/03/08/cross-compile-latest-tensorflow-1-5-for-the-nvidia-jetson-tk1/
 
 Cross-compile latest Tensorflow (1.5+) for the Nvidia Jetson TK1
 
-https://docs.bazel.build/versions/main/tutorial/cc-toolchain-config.html
+https://bazel.build/tutorials/cc-toolchain-config
 
 Bazel Tutorial: Configure C++ Toolchains
 

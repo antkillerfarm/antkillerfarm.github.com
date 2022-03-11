@@ -71,6 +71,10 @@ https://mp.weixin.qq.com/s/ONoBoCNFzoPh-rsVuiD6Jg
 
 YOLO in the Dark让黑夜里的目标检测成为可能
 
+https://mp.weixin.qq.com/s/6qyl0m0HHCqGkdHzacLkfA
+
+字节跳动这项研究火了：基于残差UNet架构，一键分离伴奏和人声
+
 ## 参考
 
 https://www.zhihu.com/question/269914775

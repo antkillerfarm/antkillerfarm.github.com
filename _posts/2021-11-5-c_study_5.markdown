@@ -52,15 +52,15 @@ C语言中关于Implementation-defined、Unspecified和Undefined
 ## 在构造函数内部调用构造函数
 
 ```cpp
-struct CLS 
-{ 
-    int m_i; 
-    CLS( int i ) : m_i(i){} 
-    CLS() 
-    { 
-        CLS(0); 
-    } 
-}; 
+struct CLS
+{
+    int m_i;
+    CLS( int i ) : m_i(i){}
+    CLS()
+    {
+        CLS(0);
+    }
+};
 ```
 
 如上，在`CLS()`调用`CLS(0);`会创建一个新的临时对象，达不到重载的目的。
@@ -70,6 +70,29 @@ struct CLS
 https://www.cnblogs.com/stemon/p/4834043.html
 
 在构造函数内部调用构造函数
+
+## 临时对象的生命周期
+
+```cpp
+string test()
+{
+    return "abc";
+}
+
+int main()
+{
+    const char *p = test().c_str();
+    cout << p << endl;
+
+    return 0;
+}
+```
+
+`string("abc")`是一个临时对象，在执行完`const char *p = string("abc").c_str();`这个语句后，临时对象就析构了，而不会等到块结束。
+
+https://blog.csdn.net/stpeace/article/details/46461167
+
+聊聊C++临时对象的析构时间点
 
 ## 参考
 

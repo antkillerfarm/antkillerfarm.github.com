@@ -316,3 +316,7 @@ https://mp.weixin.qq.com/s/ROTKi-Ycm0ypIi0FhCW4Xw
 https://mp.weixin.qq.com/s/9d6EhZEdn6XY-wFC22LysQ
 
 最新“深度学习人脸检测”综述论文，17页pdf概述50种人脸检测SOTA方法
+
+https://mp.weixin.qq.com/s/kEZYpPnqJiiLxqH-CIK-Zw
+
+一文读懂3D人脸识别十年发展及未来趋势

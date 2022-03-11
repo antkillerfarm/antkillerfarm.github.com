@@ -305,10 +305,6 @@ https://mp.weixin.qq.com/s/ZWn4k8AoT63Lgl77SxzQow
 
 英特尔史上最强的竞争对手，不是AMD！
 
-https://mp.weixin.qq.com/s/TLe6qAAxWJZnKUXo6EGp5g
-
-上海滩无线和芯片30年史
-
 https://mp.weixin.qq.com/s/CWCPmfLrh3FY2VtpmiWJug
 
 揭秘GPS背后的“隐藏人物”！从小乡村到海军基地，这位女程序员把“地球”带进日常（Gladys West）

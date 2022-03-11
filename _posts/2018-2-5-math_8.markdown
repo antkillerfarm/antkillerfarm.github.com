@@ -58,6 +58,10 @@ https://mp.weixin.qq.com/s/jrNIhSlTiXsO2sGWmzcFfg
 
 Michael I. Jordan最新清华授课笔记！
 
+https://mp.weixin.qq.com/s/hDRLyOFpLUSW6ZDamwPiAg
+
+相较神经网络，大名鼎鼎的傅里叶变换，为何没有一统函数逼近器？
+
 # 莱洛三角形
 
 定宽曲线（Curve of constant width），或称恒宽曲线，定义：平面上一凸形封闭曲线，不论如何转动，其宽度永远不变，则称之定宽曲线或恒宽曲线。这里所称的“宽度”是指平行线“夹住”某封闭曲线时，平行线间的距离，所谓"夹住"是指每个平行线与凸形封闭曲线相交至少一点且与凸形封闭曲线围起来的内部区域（interior）不相交。

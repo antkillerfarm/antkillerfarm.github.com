@@ -175,6 +175,14 @@ https://www.zhihu.com/question/51700891
 
 如何评价“前三十年的工业化是一堆破铜烂铁＂？
 
+https://mp.weixin.qq.com/s/TLe6qAAxWJZnKUXo6EGp5g
+
+上海滩无线和芯片30年史
+
+https://mp.weixin.qq.com/s/Sq53aEbG3bIBML9qSwPzoA
+
+从奴隶到将军：工控“小华为”的三场战事（汇川技术）
+
 # 红军+++
 
 https://new.qq.com/omn/20210615/20210615A03NAR00.html

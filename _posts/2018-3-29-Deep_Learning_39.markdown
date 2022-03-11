@@ -27,6 +27,14 @@ category: DL
 
 半监督：在输入中（只）给出视频第一帧的正确分割掩膜，然后在之后的每一连续帧中分割标注的目标。
 
+## 视频理解
+
+视频理解中的三大基础领域:动作识别(Action Recognition)、时序动作定位(Temporal Action Localization)和视频 Embedding。
+
+https://mp.weixin.qq.com/s/ATKmdw50V50_gczEVfIZSw
+
+视频理解综述：动作识别、时序动作定位、视频Embedding
+
 ## 参考
 
 http://mp.weixin.qq.com/s/pGrzmq5aGoLb2uiJRYAXVw

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  版本管理工具的前世今生, 运维工具集, OA办公软件
+title:  版本管理工具的前世今生, 运维工具集, OA办公软件, CMake, Ninja
 category: toolchain 
 ---
 
@@ -200,3 +200,101 @@ https://mp.weixin.qq.com/s/ojpAOOnK5fEW12gG1zocBA
 1.yammer是OA 2.0的鼻祖。
 
 2.国内的同类产品还有：明道，纷享，伙伴，企明岛，tita，UU社区，云之家等。
+
+# CMake
+
+添加头文件目录
+
+`include_directories(../../../thirdparty/comm/include)`
+
+添加需要链接的库文件目录
+
+`link_directories("/home/server/third/lib")`
+
+查找库所在目录
+
+`find_library(RUNTIME_LIB rt /usr/lib  /usr/local/lib NO_DEFAULT_PATH)`
+
+添加需要链接的库文件路径
+
+`link_libraries(“/home/server/third/lib/libcommon.a”)`
+
+设置要链接的库文件的名称
+
+`target_link_libraries(myProject libcomm.so)`
+
+为工程生成目标文件
+
+`add_executable(demo main.cpp)`
+
+下载文件
+
+`file(DOWNLOAD url file)`
+
+参考：
+
+https://www.cnblogs.com/binbinjx/p/5626916.html
+
+cmake添加头文件目录，链接动态、静态库
+
+https://mp.weixin.qq.com/s/67lPVyWUXG0SPJm4AOHmBA
+
+一份CMAKE中文实战教程
+
+https://blog.csdn.net/lianshaohua/article/details/107904367
+
+CMakeLists多目录通用模板
+
+https://mp.weixin.qq.com/s/4iUTsx_rSjRI93b71YOyLg
+
+万字长文带你从C++案例一步一步实操cmake
+
+## cross compile
+
+需要用`-DCMAKE_TOOLCHAIN_FILE=XXXX`来指定toolchain file。后者的示例如下：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/other/toolchain-arm-imx8qm.cmake
+
+官方文档：
+
+https://cmake.org/cmake/help/latest/manual/cmake-toolchains.7.html
+
+# Ninja
+
+Ninja是Make的替代品，它和后者的区别在于：
+
+1.Ninja只实现了Make的常用功能，能力上没有后者强。
+
+2.Ninja脚本易于人阅读（方便调试），但不易于人直接书写（方便机器解析）。需要借助CMake之类的高级构建系统生成Ninja脚本。
+
+3.Make中有些功能虽然能实现，但需要复杂脚本，执行也很慢。Ninja将这些功能直接集成进程序，无需写脚本。
+
+正因为这些设计上的不同，Ninja的执行速度远超Make。
+
+官网：
+
+https://ninja-build.org/
+
+安装：
+
+`sudo apt install ninja-build`
+
+Cmake生成Ninja脚本：
+
+`cmake .. -G Ninja`
+
+Cmake这样的高级构建系统，也被称为meta-build software。
+
+https://github.com/ninja-build/ninja/wiki/List-of-generators-producing-ninja-build-files
+
+上面的网页列出了能生成Ninja脚本的构建系统，比较值得关注的有：
+
+GN：Chromium项目的构建工具。
+
+xmake：一个Lua编写的构建工具。
+
+参考：
+
+https://blog.codingnow.com/2021/05/make_to_ninja.html
+
+构建工具从Make到Ninja

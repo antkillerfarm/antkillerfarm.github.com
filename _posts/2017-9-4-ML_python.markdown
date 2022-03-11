@@ -152,6 +152,8 @@ https://mp.weixin.qq.com/s/i4oUKZXAUMLGaRpJVmT1ZQ
 
 `deactivate`
 
+Conda可以创建当前系统中没有的python版本的env，但是virtualenv则不行。
+
 ## NumPy
 
 NumPy是python语言所有数学计算库的基础。它主要提供了矩阵运算的功能。

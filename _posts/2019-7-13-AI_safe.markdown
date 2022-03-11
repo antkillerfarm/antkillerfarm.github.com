@@ -295,6 +295,8 @@ https://mp.weixin.qq.com/s/QZWBPgpro9RAsczOh-qQnQ
 
 # 硬件
 
+SERDES是英文SERializer(串行器)/DESerializer(解串器)的简称。
+
 https://mp.weixin.qq.com/s/ZexnsNmqsD2yq-7YNASohw
 
 数模转换器的基本原理及DAC类型简介

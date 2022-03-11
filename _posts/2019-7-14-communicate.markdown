@@ -205,6 +205,16 @@ https://mp.weixin.qq.com/s/gx5UCRcxG00YZq2Go_xsxQ
 
 HTTP请求之合并与拆分技术详解
 
+## UDP
+
+UDP实现的可靠协议，基本都会对TCP的某一部分进行加强，另外一部分进行削弱。因为：
+
+“实时性+可靠性+公平性”三者不能同时保证，因此可以牺牲TCP的局部公平性来换取更好的实时性，或者更浪费点带宽，来实现更低的延迟。
+
+https://github.com/skywind3000/kcp
+
+这是某牛实现的快速可靠协议，使用比tcp多浪费15%的带宽的代价，换取了平均延迟降低30%-40%，最大延迟降低两倍的传输效果。
+
 ## 参考
 
 https://www.cnblogs.com/maybe2030/p/4781555.html
