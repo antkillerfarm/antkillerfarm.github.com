@@ -117,20 +117,6 @@ https://www.zhihu.com/question/518954400
 
 ---
 
-俄罗斯T-72和T-80坦克由纸板鸡蛋托制成的防护装置就让人由衷赞叹。
-
-我们还要特别感谢贵方为俄军官兵提供了早在2015年就已过期的军粮包。由于缺乏口粮，俄罗斯占领军士兵丢下军车，向乌克兰村庄居民投降以果腹。
-
-https://mp.weixin.qq.com/s/LxCvZKcvDfDpgEikF7qXCg
-
-乌克兰国家预防腐败局致绍伊古的感谢信
-
-https://zhuanlan.zhihu.com/p/43207891
-
-腐败之根是向上长的
-
----
-
 毛子的发家史：
 
 ![](/images/img4/Russian.jpg)
