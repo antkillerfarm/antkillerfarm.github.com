@@ -1,13 +1,23 @@
 ---
 layout: post
-title:  数学狂想曲（三）——概率分布（1）
+title:  数学狂想曲（三）——随机变量的特征函数, 概率分布（1）
 category: math 
 ---
 
 * toc
 {:toc}
 
-# 随机变量的特征函数（续）
+# 随机变量的特征函数
+
+特征函数（Characteristic function）是描述随机变量概率分布的重要工具，其定义如下。
+
+设随机变量X的CDF为$$F_X(x)$$，则其特征函数定义为：
+
+$$\varphi_X(t)=E(e^{itX})=\int_{-\infty}^{+\infty}e^{itx}\mathrm{d}F_X(x)$$
+
+其中，$$i=\sqrt{-1}$$，并且
+
+$$e^{itx}=\cos(tx)+i\sin(tx)$$
 
 根据上述定义，$$\varphi_X(t)$$是$$F_X(x)$$的傅立叶变换。因此$$\varphi_X(t)$$和$$F_X(x)$$包含相同的信息，且是一一对应的。特别的，若X的PDF $$f_X(x)$$存在，则可通过傅立叶逆变换得到：
 
@@ -261,23 +271,3 @@ $$\mathrm{B}(\boldsymbol\alpha) = \frac{\prod_{i=1}^K \Gamma(\alpha_i)}{\Gamma\l
 ![](/images/article/dirichlet-distribution.png)
 
 上面的图，实际上是个4维图，只不过用一个平面上的三角形代表实验结果的3维而已。这也是一种高维数据可视化的方法。
-
-和多项分布类似的还有Categorical Distribution：
-
-- 将一个小球放入k个桶，记变量X为k个桶内的小球个数，所以是一个向量，并且是One-hot的形式，因为这个小球只能在一个桶里面，所以是服从Categorical分布；
-
-- 将n个小球放入k个桶，记变量X为k个桶内的小球个数，是一个向量，并且向量元素的和为n，所以是服从多项分布。
-
-参考：
-
-http://cos.name/2013/01/lda-math-beta-dirichlet/
-
-LDA-math-认识Beta/Dirichlet分布
-
-http://www.cs.cmu.edu/~epxing/Class/10701-08s/recitation/dirichlet.pdf
-
-Dirichlet Distribution, Dirichlet Process and Dirichlet Process Mixture
-
-https://zhuanlan.zhihu.com/p/59550457
-
-Categorical Distribution

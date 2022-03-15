@@ -203,17 +203,55 @@ https://mp.weixin.qq.com/s/8scMr0jcW87y6k_wFgOBEg
 
 # cross-compile
 
-`./tensorflow/tools/ci_build/pi/build_raspberry_pi.sh AARCH64`
+TF的交叉编译不是不好用，而是非常不好用。。。这一点其实Google内部也心知肚明。但凡能不用bazel的地方，其实Google也不想用，比如TF Lite就提供了CMake的编译选项。
 
-https://github.com/tensorflow/toolchains.git
+但TF由于是个跨语言的项目（至少包含了Python和C++），所以Bazel还是有一定的优势的。
 
-cxx_builtin_include_directories
-
-`__float128`
+网上关于TF交叉编译的文章不多，写的比较好的主要有：
 
 https://www.morethantechnical.com/2018/03/08/cross-compile-latest-tensorflow-1-5-for-the-nvidia-jetson-tk1/
 
 Cross-compile latest Tensorflow (1.5+) for the Nvidia Jetson TK1
+
+然而这个已经有点年头了，并不适合新版本的bazel。
+
+其实目前官方代码库中，已经有一些交叉编译的例子了。比如raspberry pi的：
+
+`./tensorflow/tools/ci_build/pi/build_raspberry_pi.sh AARCH64`
+
+TF也有一个repo用于放置工具链相关的内容：
+
+https://github.com/tensorflow/toolchains.git
+
+我这里是参考`toolchains/cpus/arm/cc_config.bzl.tpl`来编写适合自己的脚本。
+
+目前可行的编译选项如下：
+
+```bash
+bazel build --crosstool_top=//cross_compiler:toolchain --cpu=aarch64 --host_crosstool_top=@bazel_tools//tools/cpp:toolchain --distinct_host_configuration=true --config=opt //tensorflow/tools/pip_package:build_pip_package
+```
+
+相关选项的含义如下：
+
+`--crosstool_top`：指定交叉编译的工具链。
+
+`--host_crosstool_top`：有些项目实际上需要编译Host版本，比如flatbuffers。这些项目的bazel文件中，往往能找到类似`cfg = "host"`的选项。因此，这里还需要指定Host的工具链。当然Host的工具链一般都是系统自带的，也许并不需要特殊指定，这时可以使用`@bazel_tools//tools/cpp:toolchain`这样的默认设置。
+
+`--distinct_host_configuration=true`：即使配置好Host的工具链，也不代表项目会被按照Host编译。这时就需要打开这个开关了。
+
+---
+
+以下是一些趟坑的细节：
+
+一般来说，标准库的头文件是不需要加入项目的依赖的，如果bazel报这方面的问题，设置一下`cxx_builtin_include_directories`即可。
+
+`__float128`只存在于X86体系下。如果报错，多半是工具链没有设置到`aarch64`的头文件路径下。
+
+编译python包的话，还需要相应平台提供python-dev的环境，不然这些也要自己搞定。
+
+---
+
+参考：
 
 https://bazel.build/tutorials/cc-toolchain-config
 
@@ -336,75 +374,3 @@ https://mp.weixin.qq.com/s/Sxui9CvdGocIxVG2FM4JtQ
 https://mp.weixin.qq.com/s/kJxXIN6D5TEEFSFhGJNIyw
 
 开源神经网络图片上色技术解析
-
-https://mp.weixin.qq.com/s/qXMRHxDDRa-_rJZMhXWB4w
-
-详解TensorFlow的新seq2seq模块及其用法
-
-https://mp.weixin.qq.com/s/YdcIDXadEnDsyfc6Iu1gGw
-
-手把手教你用TensorFlow训练模型
-
-https://mp.weixin.qq.com/s/Off0pgaRNyik2nvjHaQQkw
-
-在TensorFlow中对比两大生成模型：VAE与GAN
-
-https://mp.weixin.qq.com/s/rMYjsIgFNvv47F4YZjY8SA
-
-如何在K8S上玩转TensorFlow？
-
-https://zhuanlan.zhihu.com/p/30751039
-
-TensorFlow全新的数据读取方式：Dataset API入门教程
-
-https://mp.weixin.qq.com/s/SDVQSn1aVDXk_RPGuVcQgQ
-
-TensorFlow深度自动编码器入门实践
-
-https://mp.weixin.qq.com/s/mZ79KAuSIJLtBEXvKwUi-w
-
-如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
-
-https://mp.weixin.qq.com/s/yi-PNmMNMbwSi56aXo6ZSQ
-
-tensorflow对象检测框架训练VOC数据集常见的两个问题
-
-https://mp.weixin.qq.com/s/bcLCCvWrJLbMxwDl9GutjQ
-
-TensorFlow动态图5行代码实现迁移学习-识别转变风格的MNIST
-
-https://mp.weixin.qq.com/s/NMRwXqwr4VFbMUPgI8Uccg
-
-使用Google Cloud上的tf.Transform对TensorFlow管道模式进行预处理
-
-https://mp.weixin.qq.com/s/UKt1cFLcRYZQTJiZRiajwQ
-
-TensorFlow Servering C/S通信约束
-
-https://mp.weixin.qq.com/s/DpqI4AfjiygCh8dqq_Kgmw
-
-基于TensorFlow Serving的深度学习在线预估
-
-https://mp.weixin.qq.com/s/LRxyvVazRAOR_B0as7ujvg
-
-腾讯互娱基于CPU环境的分布式YOLOv3实现
-
-https://mp.weixin.qq.com/s/XcqVtFBY5rIn0FgPEx0eTg
-
-工业领域中的AI：BHGE通过使用TensorFlow概率编程工具包开发的基于物理的概率深度学习
-
-http://brucedone.com/archives/1005
-
-Tensorflow破解验证码
-
-https://mp.weixin.qq.com/s/CjlEY_m6tp-NJ3B2MiAZRg
-
-基于TensorFlow的深度模型训练GPU显存优化
-
-http://gitbook.cn/books/593d71ba4686067a2200aec6/index.html
-
-用TensorFlow实现智能机器人的原理及如何实现一个对话机器人
-
-https://mp.weixin.qq.com/s/lLaSXG1VF9Rys2GNzFP7pw
-
-轻松使用多种预训练卷积网络抽取图像特征

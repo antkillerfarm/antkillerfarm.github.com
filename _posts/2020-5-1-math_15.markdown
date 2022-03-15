@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十五）——阴影面积, 肺炎版《黄冈密卷》, Gabriel's Horn, 勾股定理, 平面几何, 抛物线
+title:  数学狂想曲（十五）——阴影面积, 肺炎版《黄冈密卷》, 勾股定理, 平面几何, 抛物线
 category: math 
 ---
 
@@ -155,28 +155,6 @@ https://mp.weixin.qq.com/s/FdHstCxJqQ4wYXSRDyqm5A
 
 不敢相信！这份民国时期大学入学考试试卷，竟让170位院士头疼！
 
-# Gabriel's Horn
-
-Gabriel's Horn，又名托里拆利小号（Torricelli's trumpet），是数学史上非常经典的模型。它最早由Evangelista Torricelli提出，故名。
-
->注：Evangelista Torricelli，1608~1647，意大利物理学家和数学家。主要研究气压、水压，提出了托里拆利原理，并发明了气压计。
-
-![](/images/article/GabrielHorn.png)
-
-上图是Gabriel's Horn的图像，它由$$y=\frac{1}{x}(x>1)$$绕x轴旋转得到。Torricelli发现Gabriel's Horn是个**体积有限，而表面积无限**的形状。
-
-$$V=\pi\int\limits_1^a\left(\frac{1}{x}\right)^2\mathrm{d}x=\pi\left(1-\frac{1}{a}\right)$$
-
-$$\lim_{a\to\infty}V=\lim_{a\to\infty}\pi\left(1-\frac{1}{a}\right)=\pi\cdot\lim_{a\to\infty}\left(1-\frac{1}{a}\right)=\pi$$
-
-$$A=2\pi\int\limits_1^a {\frac{1}{x}}\sqrt{1+\left(-\frac{1}{x^2}\right)^2}\mathrm{d}x > 2\pi\int\limits_1^a \frac{\mathrm{d}x}{x}=2\pi\ln(a)$$
-
-$$\lim_{a\to\infty}A\ge\lim_{a\to\infty}2\pi\ln(a)=\infty$$
-
-但是反过来的情况，即表面积有限，而体积无限的情况，也就是所谓的Gabriel's horn逆现象，是不存在的。——实际上，众所周知的是表面积一定的形状中，球形体积最大。
-
-Gabriel's horn现象不仅存在于表面积/体积中，也存在于长度/面积中，即所谓的无限长海岸线问题。对此的进一步研究，开拓了数学中的分形几何领域。
-
 # 勾股定理
 
 勾股定理在西方被称为Pythagorean theorem。它的命题本身并不复杂，也就是初中几何的内容，但是内涵非常丰富。即使大学数学也未必能穷尽其中的奥妙。这里仅罗列一二。
@@ -231,7 +209,7 @@ $$AD\cdot BE\cdot CF=BD\cdot CE\cdot AF$$
 
 上图是这个定理的平面几何版本，相关的证明过程，网上已经很多了，这里不再赘述。
 
-让我感兴趣的实际上是以下版本：
+让我感兴趣的实际上是以下球面几何版本：
 
 ![](/images/img4/MenelausTheorem.png)
 
@@ -239,7 +217,23 @@ $$\frac{Crd \; arc \; 2BZ}{Crd \; arc \; 2AB} = \frac{Crd \; arc 2HZ}{Crd \; arc
 
 最早的三角术没有使用$$\sin$$之类的现代符号和现代定义，而是用两倍的弧长来定义正弦。
 
-Menelaus' theorem现存最早的记录是Menelaus的著作《Spherics》。书中将平面版本的Menelaus' theorem作为引理引入，并将之推广到球面三角形。按照当时的写作习惯，引理一般记述的是前人的成果，因此Menelaus' theorem的发现者应该另有其人。
+证明过程：
+
+![](/images/img4/Menelaus_2.png)
+
+添加辅助线：
+
+![](/images/img4/Menelaus_3.png)
+
+去掉无关的线之后，得到一个平面版本：
+
+![](/images/img4/Menelaus_4.png)
+
+弦的比例关系确定了，对应圆弧的比例也就定了：
+
+![](/images/img4/Menelaus_5.png)
+
+Menelaus' theorem现存最早的记录是Menelaus的著作《Spherics》。书中将平面版本的Menelaus' theorem作为引理引入，并将之推广到球面三角形。按照当时的写作习惯，引理一般记述的是前人的成果，因此Menelaus' theorem的平面三角版本的发现者应该另有其人。只有球面三角版本才是他的原创。
 
 Menelaus的贡献不止于此。还有下图：
 
@@ -248,6 +242,14 @@ Menelaus的贡献不止于此。还有下图：
 $$\frac{\sin AD}{\sin DC} \cdot \frac{\sin BC}{\sin AB} = \frac{\sin A'D'}{\sin D'C'} \cdot \frac{\sin B'C'}{\sin A'B'}$$
 
 当然这个也是作为引理引入的，多半也是前人的发现。
+
+此外还有球面三角形全等的AAA条件。这也是唯一的一个三角形全等条件中，球面三角形和平面三角形不同的地方。
+
+当然了，考虑到这个条件和欧式几何平行公理的密切联系，那么这个结论可能仍然还是前人的发现，而发现者极大可能就是Euclid本人。
+
+和人们通常的想法不同，**三角术从一开始就是球面三角学**，因为它的几个最初的奠基人都是天文学家。。。平面三角学反而是很后来的事情了。。。大地测量对于Ptolemy这样的神兽来说，显然太low了。。。
+
+类似的，Euclid的真正本事，其实并不在《几何原本》中，而是在稍后时代相关数学家的记述中。一般认为**《几何原本》只是Euclid给自己弟子编写的入门书籍**，完全显不出Euclid的真正水平。
 
 参考：
 

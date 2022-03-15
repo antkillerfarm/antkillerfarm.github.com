@@ -359,50 +359,66 @@ https://mp.weixin.qq.com/s/LQY4Dw8-OwS52gt2HtBT8w
 
 # TensorFlow+
 
-https://mp.weixin.qq.com/s/sbJdU7qMMyrSRuybTh7bKg
+https://mp.weixin.qq.com/s/qXMRHxDDRa-_rJZMhXWB4w
 
-开源中文书《TensorFlow内核剖析》，335页pdf
+详解TensorFlow的新seq2seq模块及其用法
 
-https://mp.weixin.qq.com/s/5wy6yqaW_9pMBhgw8qDdOQ
+https://mp.weixin.qq.com/s/YdcIDXadEnDsyfc6Iu1gGw
 
-基于TensorFlow打造强化学习API
+手把手教你用TensorFlow训练模型
 
-https://mp.weixin.qq.com/s/VN2O6faf4spdD3qaqf3aiw
+https://mp.weixin.qq.com/s/Off0pgaRNyik2nvjHaQQkw
 
-使用AMD显卡加速TensorFlow
+在TensorFlow中对比两大生成模型：VAE与GAN
 
-https://mp.weixin.qq.com/s/LvN6LkUwyVElWVRrAT9NJA
+https://mp.weixin.qq.com/s/rMYjsIgFNvv47F4YZjY8SA
 
-TensorFlow 2.0迁移学习实践指南
+如何在K8S上玩转TensorFlow？
 
-https://mp.weixin.qq.com/s/Rb0Fh9TZJo-IdEoxlgD4gw
+https://zhuanlan.zhihu.com/p/30751039
 
-如何让模型在生产环境上推理得更快
+TensorFlow全新的数据读取方式：Dataset API入门教程
 
-https://mp.weixin.qq.com/s/EytvywrsgydXAJQhuUqKvg
+https://mp.weixin.qq.com/s/SDVQSn1aVDXk_RPGuVcQgQ
 
-简易浣熊识别器是如何实现的
+TensorFlow深度自动编码器入门实践
 
-http://www.jianshu.com/p/d443aab9bcb1
+https://mp.weixin.qq.com/s/mZ79KAuSIJLtBEXvKwUi-w
 
-在TensorFlow上使用LSTM进行情感分析
+如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
 
-https://mp.weixin.qq.com/s/gW_KX6eF9XEsSUO1UzJ3WQ
+https://mp.weixin.qq.com/s/yi-PNmMNMbwSi56aXo6ZSQ
 
-基于LSTM的情感分析
+tensorflow对象检测框架训练VOC数据集常见的两个问题
 
-https://mp.weixin.qq.com/s/KZhL477ApHgQfmM2xFrYJw
+https://mp.weixin.qq.com/s/bcLCCvWrJLbMxwDl9GutjQ
 
-Tensorlang：基于TensorFlow的可微编程语言
+TensorFlow动态图5行代码实现迁移学习-识别转变风格的MNIST
 
-https://mp.weixin.qq.com/s/_9NJ6QLQArUAD1DKb0KRfA
+https://mp.weixin.qq.com/s/NMRwXqwr4VFbMUPgI8Uccg
 
-如何使用TensorFlow mobile部署模型到移动设备
+使用Google Cloud上的tf.Transform对TensorFlow管道模式进行预处理
 
-https://mp.weixin.qq.com/s/e_TzQxFLAonLMyYAhte6Cg
+https://mp.weixin.qq.com/s/UKt1cFLcRYZQTJiZRiajwQ
 
-face-api.js：在浏览器中进行人脸识别的JavaScript接口
+TensorFlow Servering C/S通信约束
 
-https://mp.weixin.qq.com/s/LjdHBEyQhJq3ptMj8XVT-w
+https://mp.weixin.qq.com/s/DpqI4AfjiygCh8dqq_Kgmw
 
-TensorFlow在推荐系统中的分布式训练优化实践
+基于TensorFlow Serving的深度学习在线预估
+
+https://mp.weixin.qq.com/s/LRxyvVazRAOR_B0as7ujvg
+
+腾讯互娱基于CPU环境的分布式YOLOv3实现
+
+https://mp.weixin.qq.com/s/XcqVtFBY5rIn0FgPEx0eTg
+
+工业领域中的AI：BHGE通过使用TensorFlow概率编程工具包开发的基于物理的概率深度学习
+
+http://brucedone.com/archives/1005
+
+Tensorflow破解验证码
+
+https://mp.weixin.qq.com/s/CjlEY_m6tp-NJ3B2MiAZRg
+
+基于TensorFlow的深度模型训练GPU显存优化

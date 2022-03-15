@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（二）——傅立叶变换, DFT, 拉普拉斯变换, 随机变量的特征函数
+title:  数学狂想曲（二）——傅立叶变换, DFT, 拉普拉斯变换
 category: math 
 ---
 
@@ -318,15 +318,3 @@ https://mp.weixin.qq.com/s/cR3k5-looApwD01ZzgixSw
 https://zhuanlan.zhihu.com/p/311886981
 
 微分方程VS机器学习，实例讲解二者异同
-
-# 随机变量的特征函数
-
-特征函数（Characteristic function）是描述随机变量概率分布的重要工具，其定义如下。
-
-设随机变量X的CDF为$$F_X(x)$$，则其特征函数定义为：
-
-$$\varphi_X(t)=E(e^{itX})=\int_{-\infty}^{+\infty}e^{itx}\mathrm{d}F_X(x)$$
-
-其中，$$i=\sqrt{-1}$$，并且
-
-$$e^{itx}=\cos(tx)+i\sin(tx)$$

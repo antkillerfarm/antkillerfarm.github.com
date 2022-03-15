@@ -1,13 +1,35 @@
 ---
 layout: post
-title:  数学狂想曲（四）——统计杂谈
+title:  数学狂想曲（四）——统计杂谈, Gabriel's Horn
 category: math 
 ---
 
 * toc
 {:toc}
 
-# 概率分布（1）（续）
+# 概率分布（1）
+
+## 多项分布和狄利克雷分布（续）
+
+和多项分布类似的还有Categorical Distribution：
+
+- 将一个小球放入k个桶，记变量X为k个桶内的小球个数，所以是一个向量，并且是One-hot的形式，因为这个小球只能在一个桶里面，所以是服从Categorical分布；
+
+- 将n个小球放入k个桶，记变量X为k个桶内的小球个数，是一个向量，并且向量元素的和为n，所以是服从多项分布。
+
+参考：
+
+http://cos.name/2013/01/lda-math-beta-dirichlet/
+
+LDA-math-认识Beta/Dirichlet分布
+
+http://www.cs.cmu.edu/~epxing/Class/10701-08s/recitation/dirichlet.pdf
+
+Dirichlet Distribution, Dirichlet Process and Dirichlet Process Mixture
+
+https://zhuanlan.zhihu.com/p/59550457
+
+Categorical Distribution
 
 ## 各种概率分布的关系
 
@@ -218,3 +240,25 @@ https://mp.weixin.qq.com/s/vuFBY99-TDdyQELcUdXjTQ
 https://mp.weixin.qq.com/s/eIiFLW5pShrCnK5mZalLSw
 
 贝叶斯统计数据如何说服我去健身房
+
+# Gabriel's Horn
+
+Gabriel's Horn，又名托里拆利小号（Torricelli's trumpet），是数学史上非常经典的模型。它最早由Evangelista Torricelli提出，故名。
+
+>注：Evangelista Torricelli，1608~1647，意大利物理学家和数学家。主要研究气压、水压，提出了托里拆利原理，并发明了气压计。
+
+![](/images/article/GabrielHorn.png)
+
+上图是Gabriel's Horn的图像，它由$$y=\frac{1}{x}(x>1)$$绕x轴旋转得到。Torricelli发现Gabriel's Horn是个**体积有限，而表面积无限**的形状。
+
+$$V=\pi\int\limits_1^a\left(\frac{1}{x}\right)^2\mathrm{d}x=\pi\left(1-\frac{1}{a}\right)$$
+
+$$\lim_{a\to\infty}V=\lim_{a\to\infty}\pi\left(1-\frac{1}{a}\right)=\pi\cdot\lim_{a\to\infty}\left(1-\frac{1}{a}\right)=\pi$$
+
+$$A=2\pi\int\limits_1^a {\frac{1}{x}}\sqrt{1+\left(-\frac{1}{x^2}\right)^2}\mathrm{d}x > 2\pi\int\limits_1^a \frac{\mathrm{d}x}{x}=2\pi\ln(a)$$
+
+$$\lim_{a\to\infty}A\ge\lim_{a\to\infty}2\pi\ln(a)=\infty$$
+
+但是反过来的情况，即表面积有限，而体积无限的情况，也就是所谓的Gabriel's horn逆现象，是不存在的。——实际上，众所周知的是表面积一定的形状中，球形体积最大。
+
+Gabriel's horn现象不仅存在于表面积/体积中，也存在于长度/面积中，即所谓的无限长海岸线问题。对此的进一步研究，开拓了数学中的分形几何领域。
