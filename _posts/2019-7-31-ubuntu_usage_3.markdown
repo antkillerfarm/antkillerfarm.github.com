@@ -295,3 +295,17 @@ https://mp.weixin.qq.com/s/VlQnDAD4dGQpmHNil7uPuQ
 https://mp.weixin.qq.com/s/HchAIWJmqPNTqEEwb3TbAg
 
 Linux下xargs命令
+
+# Linux参考资源++
+
+https://mp.weixin.qq.com/s/ESLO1RH6Q8udwI13Z2Pz_w
+
+详解linux io flush
+
+https://mp.weixin.qq.com/s/LLlzPB2emr9Hqr7gql0B4Q
+
+为什么Linux需要Swapping
+
+https://mp.weixin.qq.com/s/fzLcAkYwKhj-9hgoVkTzaw
+
+CPU飙高，系统性能问题如何排查？

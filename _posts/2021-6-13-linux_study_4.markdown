@@ -218,6 +218,28 @@ https://segmentfault.com/a/1190000004855149
 
 Hubot的简单用法
 
+# 格式化硬盘
+
+查看块设备：`lsblk`
+
+分区：`sudo fdisk /dev/sda`
+
+`g create a new empty GPT partition table`
+
+`n add a new partition`
+
+格式化文件系统：`sudo mkfs.ext4 /dev/sda1`
+
+开机自动挂载，修改`/etc/fstab`：
+
+`/dev/sda1 /home/pi/data ext4 defaults 0 1`
+
+参考：
+
+https://blog.csdn.net/weixin_38472804/article/details/109361682
+
+linux系统格式化硬盘
+
 # Linux参考资源
 
 https://www.kernel.org/doc/html/latest/
@@ -391,23 +413,3 @@ Systemd入门教程：实战篇
 https://mp.weixin.qq.com/s/bPqnaMqhi_4p1mwjmvyoIw
 
 多图详解10大高性能开发核心技术
-
-https://mp.weixin.qq.com/s/ESLO1RH6Q8udwI13Z2Pz_w
-
-详解linux io flush
-
-https://mp.weixin.qq.com/s/LLlzPB2emr9Hqr7gql0B4Q
-
-为什么Linux需要Swapping
-
-https://mp.weixin.qq.com/s/fzLcAkYwKhj-9hgoVkTzaw
-
-CPU飙高，系统性能问题如何排查？
-
-https://mp.weixin.qq.com/s/-U7L8aXoaPXSwZshSpjQ2g
-
-进程间通信
-
-https://mp.weixin.qq.com/s/oKtu3AA9D3y--xMDQ8EARw
-
-携程一次Dubbo连接超时问题的排查

@@ -9,6 +9,38 @@ category: graph
 
 # Graph NN参考资源
 
+https://zhuanlan.zhihu.com/p/137223381
+
+推荐系统的图方法
+
+https://mp.weixin.qq.com/s/hFtFjR4EIVN_9g93YjtuoQ
+
+GCMC：GNN在推荐系统中的应用
+
+https://mp.weixin.qq.com/s/u8XAbOautjZTA7ZhdSBaDA
+
+经典重温：图表示学习经典算法node2vec
+
+https://mp.weixin.qq.com/s/Pm1HiEQOBnbo_GQ_v6Y_zw
+
+腾讯提出自适应图卷积神经网络，接受不同图结构和规模的数据
+
+https://zhuanlan.zhihu.com/p/31067515
+
+《Semi-Supervised Classification with Graph Convolutional Networks》阅读笔记
+
+https://mp.weixin.qq.com/s/6viSk0Ts_7eTfYrWYi_HDQ
+
+基于图结构的实体和关系联合抽取模型简介
+
+https://zhuanlan.zhihu.com/p/36117802
+
+《Learn to Represent Programs with Graphs》阅读笔记。这篇论文讲述了DL在程序代码纠错方面的应用。
+
+https://zhuanlan.zhihu.com/p/37278426
+
+Graph2Seq: Graph to Sequence Learning with Attention-based Neural Networks
+
 https://mp.weixin.qq.com/s/soH6jX7_fjq0iBBH-5bMsA
 
 Node2Vec论文+代码笔记

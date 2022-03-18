@@ -9,6 +9,26 @@ category: graph
 
 # GCN（续）
 
+https://mp.weixin.qq.com/s/c6ZhSk4r3pvnjHsvpwkkSw
+
+用图卷积网络(GCN)来做语义角色标注
+
+https://mp.weixin.qq.com/s/6vhFfSh2mveBiZXB1oZb1Q
+
+图分类：结合胶囊网络Capsule和图卷积GCN
+
+https://mp.weixin.qq.com/s/9MWoCmtKPPVs3Rmko-7adQ
+
+10亿节点异构网络中，GCN如何应用？
+
+https://zhuanlan.zhihu.com/p/78466344
+
+从源头探讨GCN的行文思路
+
+https://mp.weixin.qq.com/s/QONDTuzv_jIbVwSXxHMyIw
+
+一文读懂图卷积GCN
+
 https://mp.weixin.qq.com/s/MBRTs2pIVypQxrcMOY4Lcg
 
 图卷积网络（GCN）入门详解
@@ -410,27 +430,3 @@ https://blog.csdn.net/yorkhunter/article/details/104056795
 https://mp.weixin.qq.com/s/rTnv7XOnIvRDGDdhbuoE9g
 
 深度图相似学习综述
-
-https://mp.weixin.qq.com/s/FDWoAXGOlRxOEkvli3gd5Q
-
-55页图深度学习导论《A Gentle Introduction to Deep Learning for Graphs》
-
-https://mp.weixin.qq.com/s/Pm1HiEQOBnbo_GQ_v6Y_zw
-
-腾讯提出自适应图卷积神经网络，接受不同图结构和规模的数据
-
-https://zhuanlan.zhihu.com/p/31067515
-
-《Semi-Supervised Classification with Graph Convolutional Networks》阅读笔记
-
-https://mp.weixin.qq.com/s/6viSk0Ts_7eTfYrWYi_HDQ
-
-基于图结构的实体和关系联合抽取模型简介
-
-https://zhuanlan.zhihu.com/p/36117802
-
-《Learn to Represent Programs with Graphs》阅读笔记。这篇论文讲述了DL在程序代码纠错方面的应用。
-
-https://zhuanlan.zhihu.com/p/37278426
-
-Graph2Seq: Graph to Sequence Learning with Attention-based Neural Networks

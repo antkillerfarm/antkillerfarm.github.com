@@ -67,6 +67,16 @@ https://mp.weixin.qq.com/s/9EPoDiNGERtfUhauXXRlJw
 
 ---
 
+CFD，Computational Fluid Dynamics。
+
+相关软件主要有：OpenFOAM、Ansys Fluent。
+
+https://www.zhihu.com/question/271725681
+
+有哪些计算流体力学（CFD）大牛的故事？
+
+---
+
 https://mp.weixin.qq.com/s/ei84HDZIkXQr2k0ghlN_Mw
 
 C罗踢球时在想什么？这是一篇空气动力学的blog
@@ -142,10 +152,6 @@ https://mp.weixin.qq.com/s/0KdQbbFEOOdtERyZYTrqNg
 https://mp.weixin.qq.com/s/LxuodPGudKQTzAF9_WzCxg
 
 不同寻常的蓝色旋涡
-
-https://www.zhihu.com/question/271725681
-
-有哪些计算流体力学（CFD）大牛的故事？
 
 https://mp.weixin.qq.com/s/o78XzwFUdfhiZEI6siJdjA
 

@@ -297,6 +297,14 @@ SNAP（Stanford Network Analysis Platform）是一个复杂网络分析的库。
 
 http://snap.stanford.edu/
 
+## Spektral
+
+Spektral是一个基于Keras和TF的GNN库。
+
+官网：
+
+https://graphneural.network/
+
 ## Other Tools
 
 https://mp.weixin.qq.com/s/POMluy69sphGZ_AlDnJ0og
@@ -380,23 +388,3 @@ Graph Neural Network：GCN算法原理，实现和应用
 https://zhuanlan.zhihu.com/p/48834333
 
 GCN in 2018：2018年顶会论文中的图卷积神经网络的理论与应用
-
-https://mp.weixin.qq.com/s/c6ZhSk4r3pvnjHsvpwkkSw
-
-用图卷积网络(GCN)来做语义角色标注
-
-https://mp.weixin.qq.com/s/6vhFfSh2mveBiZXB1oZb1Q
-
-图分类：结合胶囊网络Capsule和图卷积GCN
-
-https://mp.weixin.qq.com/s/9MWoCmtKPPVs3Rmko-7adQ
-
-10亿节点异构网络中，GCN如何应用？
-
-https://zhuanlan.zhihu.com/p/78466344
-
-从源头探讨GCN的行文思路
-
-https://mp.weixin.qq.com/s/QONDTuzv_jIbVwSXxHMyIw
-
-一文读懂图卷积GCN

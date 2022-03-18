@@ -9,6 +9,10 @@ category: graph
 
 # Graph NN参考资源
 
+https://mp.weixin.qq.com/s/FDWoAXGOlRxOEkvli3gd5Q
+
+55页图深度学习导论《A Gentle Introduction to Deep Learning for Graphs》
+
 https://mp.weixin.qq.com/s/kQlxLDHLI6xxFzwJVjFj7w
 
 GraRep: 基于全局结构信息的图结点表示学习
@@ -404,15 +408,3 @@ https://mp.weixin.qq.com/s/Pgz8cnDpX2mgexASnRzfhA
 https://mp.weixin.qq.com/s/hQ-Fo_aizkcTxvzW0FSIEw
 
 VGAE：利用变分自编码器完成图重构
-
-https://zhuanlan.zhihu.com/p/137223381
-
-推荐系统的图方法
-
-https://mp.weixin.qq.com/s/hFtFjR4EIVN_9g93YjtuoQ
-
-GCMC：GNN在推荐系统中的应用
-
-https://mp.weixin.qq.com/s/u8XAbOautjZTA7ZhdSBaDA
-
-经典重温：图表示学习经典算法node2vec

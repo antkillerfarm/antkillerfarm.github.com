@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十五）——阴影面积, 肺炎版《黄冈密卷》, 勾股定理, 平面几何, 抛物线
+title:  数学狂想曲（十五）——阴影面积, 勾股定理, 几何, 抛物线
 category: math 
 ---
 
@@ -71,90 +71,6 @@ http://wuli.wiki//online/
 
 小时物理百科
 
-# 肺炎版《黄冈密卷》
-
-问题由来：
-
-https://mp.weixin.qq.com/s/dR7fg6PTCVAnezlW6gTY2w
-
-新冠病毒最“强”管控，《黄冈密卷》数学题到底有多难
-
----
-
-1.设$$\sqrt{3+\sqrt{2}+\sqrt{3}+\sqrt{6}}=\sqrt{x}+\sqrt{y}+\sqrt{z}$$，且x、y、z为有理数，则$$xyz$$=?
-
-解：
-
-$$3+\sqrt{2}+\sqrt{3}+\sqrt{6} = x+y+z+2\sqrt{xy}+2\sqrt{xz}+2\sqrt{yz}$$
-
-由x、y、z为有理数可得：
-
-$$4xy=2, 4xz=3, 4yz=6$$
-
-由于x、y、z在原式中是对称的，所以上式中选择哪个等于2、3、6，都是无所谓的。
-
-三式相乘可得：
-
-$$4^3 \cdot (xyz)^2 = 36$$
-
-$$(xyz)^2 = 9/16$$
-
-$$xyz = 3/4$$
-
----
-
-2.设二次函数$$f(x)=ax^2+ax+1$$的图像开口向下，且满足$$f(f(1))=f(3)$$，则$$2a=?$$
-
-解：
-
-令$$y=2a$$，则$$f(1)=2a+1=y+1$$
-
-$$f(f(1))=f(y+1)=f(3)$$
-
-$$a(y+1)^2+a(y+1)+1=9a+3a+1$$
-
-$$(y+1)^2+(y+1)=12$$
-
-$$y^2+3y-10=0$$
-
-$$(y+5)(y-2)=0$$
-
-因为图像开口向下，所以$$2a=-5$$。
-
----
-
-最近，黄冈再次因数学题而火爆网络。
-
-以下是2020黄冈中考数学第16题：
-
-![](/images/img4/huanggang.gif)
-
-求上图扇形一边的中点P，在扇形滚动一周的过程中，所经历的路径的长度。
-
-显然，第1，3，4段都是圆弧，难就难在第2段（绿色）了。这条曲线可不是那么好求的，普通的本科高数都搞不定它。必须出动椭圆积分才行。
-
-https://www.zhihu.com/question/408523403
-
-如何解答2020黄冈中考数学第16题？
-
->小学能接受1/3这种无限循环小数，初中能接受根号，高中能接受ln(2)，那大学的精确解为什么不能接受椭圆函数。
-
-https://mathworld.wolfram.com/EllipticIntegraloftheSecondKind.html
-
-Elliptic Integral of the Second Kind
-
-这里有个上面动图的GeoGebra版本：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/geogebra/huanggang.ggb
-
-《椭圆函数及其应用》 高本庆 著
-
----
-
-https://mp.weixin.qq.com/s/FdHstCxJqQ4wYXSRDyqm5A
-
-不敢相信！这份民国时期大学入学考试试卷，竟让170位院士头疼！
-
 # 勾股定理
 
 勾股定理在西方被称为Pythagorean theorem。它的命题本身并不复杂，也就是初中几何的内容，但是内涵非常丰富。即使大学数学也未必能穷尽其中的奥妙。这里仅罗列一二。
@@ -187,7 +103,7 @@ https://mp.weixin.qq.com/s/h_BjRGiNFV0V511RUumR0w
 
 L1, L2 范数以及高斯，拉普拉斯分布
 
-# 平面几何
+# 几何
 
 ## 共线向量定理
 
@@ -215,7 +131,7 @@ $$AD\cdot BE\cdot CF=BD\cdot CE\cdot AF$$
 
 $$\frac{Crd \; arc \; 2BZ}{Crd \; arc \; 2AB} = \frac{Crd \; arc 2HZ}{Crd \; arc 2H \Theta} \cdot \frac{Crd \; arc \; 2E \Theta}{Crd \; arc \; 2AE}$$
 
-最早的三角术没有使用$$\sin$$之类的现代符号和现代定义，而是用两倍的弧长来定义正弦。
+最早的三角术没有使用$$\sin$$之类的现代符号和现代定义，而是用两倍的弧长对应的弦长来定义正弦。
 
 证明过程：
 
@@ -252,6 +168,32 @@ $$\frac{\sin AD}{\sin DC} \cdot \frac{\sin BC}{\sin AB} = \frac{\sin A'D'}{\sin 
 和人们通常的想法不同，**三角术从一开始就是球面三角学**，因为它的几个最初的奠基人（Hipparchus、Menelaus、Ptolemy）都是天文学家。。。平面三角学反而是很后来的事情了。。。大地测量对于Ptolemy这样的神兽来说，显然太low了。。。
 
 类似的，Euclid的真正本事，其实并不在《几何原本》中，而是在稍后时代相关数学家的记述中。一般认为**《几何原本》只是Euclid给自己弟子编写的入门书籍**，完全显不出Euclid的真正水平。
+
+最后，再稍微从现代的角度解释一下，**为什么弦的比例关系确定了，对应圆弧的比例也就定了。以及这个比例为什么是正弦。**
+
+![](/images/img4/Chord.png)
+
+假设上图是个单位圆，那么从弧度制的角度来看，$$arc AB$$实际上就等价于$$\angle{ADB}$$。
+
+所以：
+
+$$AZ = \sin (\angle{ADB}) = \sin (arc AB)$$
+
+但是从正弦定义的角度出发，要求AZ垂直于BD，这在实际的应用中是非常不方便的。好在根据相似三角形的性质，我们有以下推论：
+
+$$\frac{AZ}{GH} = \frac{AE}{GE}$$
+
+所以：
+
+$$\frac{AE}{GE} = \frac{\sin (arc AB)}{\sin (arc GB)}$$
+
+从上图不难看出，Menelaus' Theorem的平面版本的证明或者不需要三角术，但球面版本是一定要三角术的。
+
+这也可以从另一个角度解释平面三角学为何出现的晚。大地测量界并非没有高手，比如有小Archimedes之称的Heron，其咖位尚在Ptolemy之上。然而平面几何的那些问题，对于Heron来说过于简单，不值得发明新的工具。而普通的大地测量员，显然又没有能力发明三角术这样的工具。
+
+Heron算的上是上古神兽中的异类了。他是那个时代少有的代数和几何都很溜，证明题和数值计算全精通，同时还点了物理、机械方面的技能树的全能骑士。可惜的是，在他之前已经有了全能骑士Archimedes，而且Archimedes在各方面的贡献都比他略胜半筹。所以Heron也就只能被称为小Archimedes了。
+
+如果给上古神兽排个名的话，Archimedes肯定在前三名，Heron在5～10名中找个位置也不难，Ptolemy虽然顶着天文学之父的名头，但无奈高手太多，能不能进前10，就见仁见智了。
 
 参考：
 
