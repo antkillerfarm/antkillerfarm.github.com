@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十七）——自适应滤波器, 三门问题, 数学杂谈（3）
+title:  数学狂想曲（十七）——自适应滤波器, 三门问题, 平面几何
 category: math 
 ---
 
@@ -129,21 +129,38 @@ Sophus是一个C++写的Lie Groups的库。显然，它得名自Marius Sophus Li
 
 https://github.com/strasdat/Sophus
 
+
+# 平面几何
+
+## 共线向量定理
+
+![](/images/img3/geo.jpg)
+
+$$\triangle ABC$$中，点D在直线BC上的充要条件是:
+
+$$\overrightarrow{AD}=\frac{\overline{DC}}{\overline{BC}}\cdot\overrightarrow{AB}+\frac{\overline{BD}}{\overline{BC}}\cdot\overrightarrow{AC}$$
+
+其中，$$\overrightarrow{AD}$$表示向量，$$\overline{DC}$$表示向量的数量。
+
+## Ceva's Theorem
+
+![](/images/img3/CevasTheorem.gif)
+
+$$BD\cdot CE\cdot AF=AE\cdot BF\cdot CD$$
+
+>Giovanni Ceva，1647～1734，意大利数学家。Ceva's Theorem是Ceva于1678年提出的。
+
+## Archimedes' Theorem of the Broken Chord
+
+阿基米德中点定理/阿基米德折弦定理：
+
+![](/images/img3/TBC.png)
+
+AB和BC是圆的两条弦（即ABC是圆的一条折弦），BC>AB，M是弧ABC的中点，则从M向BC所作垂线之垂足D是折弦ABC的中点，即CD=AB+BD。
+
+定义：从圆周上任一点出发的两条弦，所组成的折线，我们称之为该图的一条**折弦**。
+
 # 数学杂谈
-
-![](/images/img4/sheep.png)
-
-山羊吃草问题有两种形式。内部问题是给出吃草面积求绳长，外部问题是给出绳长和篱笆周长求吃草面积（绳长等于篱笆周长）
-
-https://mp.weixin.qq.com/s/OCTifPIZHVjYWjuxyQQWbA
-
-诞生272年后，这个看似简单的数学问题终求得闭式解（山羊问题）
-
-https://mp.weixin.qq.com/s/ydYVWnsEQ5QFLWmiDxeSTg
-
-两圆重叠问题你会求解吗？
-
----
 
 从研究数学和物理的角度，牛顿的《自然哲学的数学原理》其实并不适合今天的读者阅读。
 
@@ -168,14 +185,6 @@ PS：1.《几何原本》不代表欧几里得的最高水平，那是欧几里�
 2.解析几何中的坐标轴是阿波罗尼奥斯的发明，只是当时代数不发达，不然解析几何的发明者轮不到笛卡尔。阿波罗尼奥斯的天分之高，比笛卡尔强多了。
 
 3.莱布尼茨说过，读过阿基米德和阿波罗尼奥斯的书之后，就知道世上并没有什么更天才的人物了。
-
----
-
-如果你往高尔顿板里倒入很多小球，一个惊人的规律就出现了：在底部堆积的小球的上边缘总是会形成一个近似钟形的曲线。在最接近中心的插槽中，小球会堆得高高的，插槽中的球数从中间向两侧递减，直至为零。
-
-https://mp.weixin.qq.com/s/BwMAiziWQuyKaru8xB9tHw
-
-一文读懂因果推断的起源
 
 ---
 

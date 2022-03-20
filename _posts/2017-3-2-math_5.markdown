@@ -7,6 +7,22 @@ category: math
 * toc
 {:toc}
 
+# 抛物线（续）
+
+![](/images/img4/ball.gif)
+
+![](/images/img4/man.gif)
+
+![](/images/img4/rect.gif)
+
+https://mp.weixin.qq.com/s/BmSdlLTZ8PxD_b27TzFWlw
+
+如何让8岁表妹了解数学到底是什么
+
+https://mp.weixin.qq.com/s/p-EVuaPfLusq01Jw8KcQdQ
+
+六一礼物：这些有趣的动图送给孩子们！了解数学能做什么？电路如何工作？
+
 # 肺炎版《黄冈密卷》
 
 问题由来：
@@ -90,6 +106,16 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/geogebra/huangg
 https://mp.weixin.qq.com/s/FdHstCxJqQ4wYXSRDyqm5A
 
 不敢相信！这份民国时期大学入学考试试卷，竟让170位院士头疼！
+
+# 数学杂谈+
+
+https://mp.weixin.qq.com/s/7cziogvznmYWax1LKfnPjQ
+
+史上最硬核高中数学题，题目居然不过4行？
+
+https://new.qq.com/omn/20210109/20210109A02KGT00.html
+
+立交桥布局中的迷人曲线
 
 <a name="Boltzmann"/>
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十五）——阴影面积, 勾股定理, 几何, 抛物线
+title:  数学狂想曲（十五）——阴影面积, 勾股定理, Menelaus' Theorem
 category: math 
 ---
 
@@ -103,19 +103,7 @@ https://mp.weixin.qq.com/s/h_BjRGiNFV0V511RUumR0w
 
 L1, L2 范数以及高斯，拉普拉斯分布
 
-# 几何
-
-## 共线向量定理
-
-![](/images/img3/geo.jpg)
-
-$$\triangle ABC$$中，点D在直线BC上的充要条件是:
-
-$$\overrightarrow{AD}=\frac{\overline{DC}}{\overline{BC}}\cdot\overrightarrow{AB}+\frac{\overline{BD}}{\overline{BC}}\cdot\overrightarrow{AC}$$
-
-其中，$$\overrightarrow{AD}$$表示向量，$$\overline{DC}$$表示向量的数量。
-
-## Menelaus' Theorem
+# Menelaus' Theorem
 
 ![](/images/img3/MenelausTheorem.gif)
 
@@ -157,7 +145,7 @@ Menelaus的贡献不止于此。还有下图：
 
 $$\frac{\sin AD}{\sin DC} \cdot \frac{\sin BC}{\sin AB} = \frac{\sin A'D'}{\sin D'C'} \cdot \frac{\sin B'C'}{\sin A'B'}$$
 
-当然这个也是作为引理引入的，多半也是前人的发现。
+当然这个也是作为引理引入的，多半也是前人的发现。这实际上就是后世的射影几何学中的cross ratio。
 
 从这里还可以得到一个学习曲面几何的小技巧或者说是直觉：圆弧=平面版本+正弦，双曲弧=平面版本+双曲正切。
 
@@ -195,6 +183,44 @@ Heron算的上是上古神兽中的异类了。他是那个时代少有的代数
 
 如果给上古神兽排个名的话，Archimedes肯定在前三名，Heron在5～10名中找个位置也不难，Ptolemy虽然顶着天文学之父的名头，但无奈高手太多，能不能进前10，就见仁见智了。
 
+这里索性给一下我自己的上古神兽排名。
+
+第一档：Euclid、Archimedes。
+
+第二档：
+
+Pythagoras，勾股定理。Pythagoras学派是古希腊最有数学传统的学派。
+
+Apollonius，古希腊几何最高成就者，《圆锥曲线论》将圆锥曲线的性质网罗殆尽，几乎使后人没有插足的余地。
+
+第三档：
+
+Thales，古希腊七贤之一。三角形全等和相似三角形。贡献了《几何原本》差不多一卷的内容。
+
+Eudoxus。这个名字虽然现在不太出名，但在当时是公认的天下第一大数学家，Euclid也没有他的名气大。直到妖孽一般的Archimedes横空出世，才把天下第一的名头抢下来。《几何原本》有差不多五卷的内容都是他的成果。从某种意义上来说，他才是《几何原本》的真作者。
+
+Heron。
+
+第四档：
+
+Eratosthenes，地理学之父，亚历山大里亚图书馆馆长。
+
+Hipparchus、Ptolemy，这两人都有天文学之父的称号。前者有开创之功，后者是前者的学生，号称天文学的集大成者。
+
+Diophantus，代数之父。
+
+第五档：
+
+Pappus，这个人本身的水平一般。但是他的书里收录了很多前人的成果。正是通过他，我们才知道之前的那些上古神兽有多么厉害。他也是古希腊最后一个知名的数学家了。
+
+番外篇：
+
+Plato，虽然他的学院立了个“不懂几何者，不得入内!”的牌子，但是他本人在数学上真的只是个菜鸡。
+
+Aristotle，比他的老师Plato略强一些，贡献了逻辑推理，以及著名的反证法，此外还有几个小的数学命题。但在数学上，还达不到神兽的级别。
+
+尽管有这些缺点，但必须承认的是，这两人是当时科学界的中心。他们的老师、同学、朋友、同事、学生中，一大把的数学家。。。
+
 参考：
 
 https://zhuanlan.zhihu.com/p/27355643
@@ -205,46 +231,16 @@ http://jonvoisey.net/blog/2018/05/almagest-index/
 
 Almagest(天文学大成, Ptolemy著)
 
-## Ceva's Theorem
+# 数学杂谈
 
-![](/images/img3/CevasTheorem.gif)
+![](/images/img4/sheep.png)
 
-$$BD\cdot CE\cdot AF=AE\cdot BF\cdot CD$$
+山羊吃草问题有两种形式。内部问题是给出吃草面积求绳长，外部问题是给出绳长和篱笆周长求吃草面积（绳长等于篱笆周长）
 
->Giovanni Ceva，1647～1734，意大利数学家。Ceva's Theorem是Ceva于1678年提出的。
+https://mp.weixin.qq.com/s/OCTifPIZHVjYWjuxyQQWbA
 
-## Archimedes' Theorem of the Broken Chord
+诞生272年后，这个看似简单的数学问题终求得闭式解（山羊问题）
 
-阿基米德中点定理/阿基米德折弦定理：
+https://mp.weixin.qq.com/s/ydYVWnsEQ5QFLWmiDxeSTg
 
-![](/images/img3/TBC.png)
-
-AB和BC是圆的两条弦（即ABC是圆的一条折弦），BC>AB，M是弧ABC的中点，则从M向BC所作垂线之垂足D是折弦ABC的中点，即CD=AB+BD。
-
-定义：从圆周上任一点出发的两条弦，所组成的折线，我们称之为该图的一条**折弦**。
-
-# 抛物线
-
-![](/images/img2/conic_section.jpg)
-
-我们都知道抛物线只有一个焦点，而椭圆、双曲线有两个焦点，但是对于真正天体的运行来说，其实只有一个焦点是有意义的，就是中心恒星的位置；另一个焦点没有实在的意义。这两个焦点中任取一个就可以构成这条圆锥曲线，而取哪一个作为恒星位置都是一样的。因为对于椭圆、双曲线来说，这两个焦点是对称的。
-
-那么抛物线呢？实际上抛物线是椭圆和双曲线的临界状态，它的另一个焦点在无穷远的地方。对于绕恒星的抛物线轨道来说，取的是那个通常说的焦点位置作为恒星位置；对于地面上的斜抛运动来说，取的是无穷远处的那个焦点位置作为恒星位置。
-
-![](/images/img3/ellipse.gif)
-
-我们从斜面的上方和下方分别塞进一个球，它们与圆柱、截面均相切，然后，两个球与截面相切的点就是椭圆的两个焦点。
-
-![](/images/img4/ball.gif)
-
-![](/images/img4/man.gif)
-
-![](/images/img4/rect.gif)
-
-https://mp.weixin.qq.com/s/BmSdlLTZ8PxD_b27TzFWlw
-
-如何让8岁表妹了解数学到底是什么
-
-https://mp.weixin.qq.com/s/p-EVuaPfLusq01Jw8KcQdQ
-
-六一礼物：这些有趣的动图送给孩子们！了解数学能做什么？电路如何工作？
+两圆重叠问题你会求解吗？
