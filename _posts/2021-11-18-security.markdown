@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 安全
+title:  安全
 category: resource 
 ---
 

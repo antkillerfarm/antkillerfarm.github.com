@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 俄乌战争
+title:  俄乌战争
 category: World 
 ---
 
@@ -61,6 +61,10 @@ https://www.zhihu.com/question/518037791
 
 俄罗斯则因为太穷，目前的一线作战单位，是集团军之下，直接就是所谓“营级战斗群”，名义上是一个旅，人数与战斗力，其实只相当于我军或美军的一个营。
 
+https://mp.weixin.qq.com/s/e8Pl5nai0nv8ANxFadh_bw
+
+从参战俄军番号看俄军军改：编制与西方军队对比如何？
+
 ---
 
 乌克兰国防事务和国家安全委员会主席阿列克谢•丹尼洛夫的年迈母亲，住在被乌克兰政府封锁的卢甘斯克，靠俄罗斯发放的养老金生活。
@@ -79,6 +83,10 @@ https://mp.weixin.qq.com/s/wp8CBSc2cBJBddSws2ktzw
 
 ---
 
+https://new.qq.com/omn/20220224/20220224A06G0T00.html
+
+基辅攻陷：普京闪电战，一个半小时打趴乌克兰；绍伊古一战封神，比肩战神朱可夫
+
 https://mp.weixin.qq.com/s/zPO-ScWfgn3_GMsqE3A-4w
 
 俄乌冲突：为什么没看到钢铁洪流和百万大军
@@ -86,6 +94,14 @@ https://mp.weixin.qq.com/s/zPO-ScWfgn3_GMsqE3A-4w
 https://mp.weixin.qq.com/s/PUqFEBUN6OaGZjB-ojrMRg
 
 一个乌克兰女性的伤痛与纪念
+
+https://mp.weixin.qq.com/s/u8rbgwjt-WOsHaFSj-JeMw
+
+从2014到2022：俄乌之间，发生了什么？
+
+https://mp.weixin.qq.com/s/u7C1THhjnWLRLR4z7casbQ
+
+在乌克兰，日常生活与国家的分裂
 
 # 苏俄+
 
@@ -160,3 +176,81 @@ https://www.zhihu.com/question/321165966
 https://zhuanlan.zhihu.com/p/352232012
 
 他，就是那个在厦门肉食公司门口抱摔春丽的大肌霸
+
+# 中东+
+
+在当时基本不存在版权法的土耳其，本土电影制作人开始疯狂翻拍欧洲、美国和印度的热门电影（毕竟经过了市场验证，票房有保证），但大多都不是重新制作，而是直接使用原片中的配乐和特效场景。
+
+所以你能轻易找到《超人》、《佐罗》、《泰山》、《007》、《E.T》、《兰博》等经典作品的土耳其版本。
+
+优良的艺术家抄袭, 伟大的艺术家偷窃。--by 毕加索
+
+https://www.zhihu.com/answer/2368182293
+
+你们见过的最无耻的抄袭有哪些？
+
+---
+
+https://mp.weixin.qq.com/s/3Frx_ZmmmEC_aj4tLUPleg
+
+苏莱曼尼被斩首后，这篇文章把两伊根本问题说清楚了
+
+https://mp.weixin.qq.com/s/Wt56L0Tdj8H1s4zVh43cMw
+
+决战亮马桥！美国、伊朗驻华大使馆于微博隔空斗法
+
+https://mp.weixin.qq.com/s/sCiWfFweGzgjPTVGhl3hfw
+
+美国向伊朗的求和，是以斗争求和平的伟大实践！
+
+https://zhuanlan.zhihu.com/p/373781337
+
+巴勒斯坦，其实已经内部分裂了
+
+https://mp.weixin.qq.com/s/cHPdmOJvvQde6DGlWBcHvw
+
+伊拉克化学博士身陷IS占领区，导师为督促其完成论文，派雇佣兵将其救出
+
+https://www.zhihu.com/question/303195046
+
+如何评价阿夫沙尔王朝开创者，猛男纳迪尔沙？
+
+https://www.zhihu.com/answer/790409921
+
+阿富汗历史
+
+https://zhuanlan.zhihu.com/p/370329132
+
+神经病气质的塔利班为何能统一阿富汗？它又是如何极速滑落的？
+
+https://view.inews.qq.com/wxn/20210725A084BY00
+
+“两个塔利班”的前世与今生（巴基斯坦塔利班和阿富汗塔利班）
+
+https://zhuanlan.zhihu.com/p/395139812
+
+什么是“杀死印度人山脉”？（Hindu kush）
+
+https://mp.weixin.qq.com/s/dw8GRXm9U_YEaiWWQlVO5A
+
+阿富汗之变：被抛弃和被遗忘的命运
+
+https://mp.weixin.qq.com/s/fNGUgM7mM9elHZ4mQqAuhQ
+
+同样是打美国，为啥塔利班能卷土重来，萨达姆政权却被彻底消灭？
+
+https://mp.weixin.qq.com/s/3y7c2c6a2CsilQIDpcpTmA
+
+阿富汗战事以总统跑路告终：美军20年来兵力与军费如何？
+
+https://mp.weixin.qq.com/s/i95tMMhW_VoGtmD_RPehlg
+
+趣谈美国在阿富汗的天价军费：最高峰时超过当时中国全部军费
+
+https://zhuanlan.zhihu.com/p/409195354
+
+塔利班秒变人民公仆？市长亲自扫大街，银行行长端着冲锋枪去上班
+
+https://zhuanlan.zhihu.com/p/438002125
+
+全球唯一器官交易合法国家：穷人拿命换钱，富人花钱续命（伊朗器官交易合法化）

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 化学（三）
+title:  化学（三）
 category: Nature 
 ---
 

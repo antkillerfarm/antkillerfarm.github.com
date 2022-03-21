@@ -172,6 +172,14 @@ https://mp.weixin.qq.com/s/hJGaREpBP0j7rqCXSZQMvA
 
 把Python自动翻译成C++
 
+## pybind11
+
+pybind11可以在C++11和Python之间建立互操作的关系，而且还是个header-only的方案。
+
+官网：
+
+https://pybind11.readthedocs.io/en/stable/
+
 ## python调用GTK函数的一般规则
 
 众所周知，GTK库是用C语言编写的，其相关的文档提供的也是C函数的接口，python接口的文档相对较少，获得也不太容易。因此有必要掌握一下这方面基本的命名规则。（这里只讲方法，对深层次的调用原理不做探究。）

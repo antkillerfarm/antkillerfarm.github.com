@@ -161,12 +161,12 @@ https://mp.weixin.qq.com/s/YB1KV137LQR983QLMJUcFw
 
 ---
 
-在当时基本不存在版权法的土耳其，本土电影制作人开始疯狂翻拍欧洲、美国和印度的热门电影（毕竟经过了市场验证，票房有保证），但大多都不是重新制作，而是直接使用原片中的配乐和特效场景。
+![](/images/img4/Syrian.png)
 
-所以你能轻易找到《超人》、《佐罗》、《泰山》、《007》、《E.T》、《兰博》等经典作品的土耳其版本。
+https://www.zhihu.com/question/38640706
 
-优良的艺术家抄袭, 伟大的艺术家偷窃。--by 毕加索
+叙利亚内战极其复杂，谁能解析其派系关系及历史渊源？
 
-https://www.zhihu.com/answer/2368182293
+https://mp.weixin.qq.com/s/fIwhOdHyO3mqEOTK_bu7_Q
 
-你们见过的最无耻的抄袭有哪些？
+叙利亚，现实版的旧中国

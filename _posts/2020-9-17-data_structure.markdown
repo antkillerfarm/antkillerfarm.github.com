@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数据结构 & 普通CS算法, 设计模式
+title:  数据结构 & 普通CS算法
 category: resource 
 ---
 
@@ -356,65 +356,3 @@ https://mp.weixin.qq.com/s/KZq5SjPESQnQaNU1Mn5a-A
 https://www.zhihu.com/question/20298134
 
 即时战略游戏中实用的寻路算法都有哪些，比较如何？
-
-# 设计模式
-
-面向对象的设计模式有七大基本原则：
-
-开闭原则（Open Closed Principle，OCP）
-
-单一职责原则（Single Responsibility Principle，SRP）
-
-里氏代换原则（Liskov Substitution Principle，LSP）
-
-依赖倒转原则（Dependency Inversion Principle，DIP）
-
-接口隔离原则（Interface Segregation Principle，ISP）
-
-合成/聚合复用原则（Composite/Aggregate Reuse Principle，CARP）
-
-最少知识原则（Least Knowledge Principle，LKP）或者迪米特法则（Law of Demeter，LOD）
-
-在架构领域，有两种常见架构方法RUP和TOGAF。
-
----
-
-IoC（Inversion of control）：控制反转/反转控制。
-
-DI（Dependency Injection）：依赖注入。
-
-AOP（Aspect oriented programming）：面向切面编程
-
-参考：
-
-https://zhuanlan.zhihu.com/p/144241957
-
-面试被问了几百遍的IoC和AOP ，还在傻傻搞不清楚？
-
-https://mp.weixin.qq.com/s/IOV4FLJyxKM1q7Avh2j93g
-
-漫画:AOP面试造火箭事件始末
-
-https://segmentfault.com/a/1190000007469968
-
-彻底征服Spring AOP之理论篇
-
-https://segmentfault.com/a/1190000007469982
-
-彻底征服Spring AOP之实战篇
-
-https://mp.weixin.qq.com/s/5UwgQQHA-D0il0_8fDIW0A
-
-Python面向切面编程AOP和装饰器
-
----
-
-参考：
-
-https://mp.weixin.qq.com/s/9gDGQhzRAL3pj35VAinZbQ
-
-设计模式在外卖营销业务中的实践
-
-https://mp.weixin.qq.com/s/KYq_nEXQ-5WYdYzZvGLGGg
-
-我向面试官讲解了单例模式，他对我竖起了大拇指

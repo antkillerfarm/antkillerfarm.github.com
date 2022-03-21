@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 经济学（二）
+title:  经济学（二）
 category: resource 
 ---
 

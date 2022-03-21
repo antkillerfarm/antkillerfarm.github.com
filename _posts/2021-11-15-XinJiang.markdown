@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 新疆
+title:  新疆
 category: Red star 
 ---
 

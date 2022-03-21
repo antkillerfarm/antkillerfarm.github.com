@@ -289,6 +289,10 @@ https://mp.weixin.qq.com/s/I2lnd1x3iYoFYgxTJn7bYQ
 
 清华大学李升波老师《强化学习与控制》，附课件
 
+https://deepreinforcementlearningbook.org/
+
+《深度强化学习：基础、研究与应用（Deep Reinforcement Learning: Foundamentals, Research and Applications）》北京大学董豪博士等著。
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

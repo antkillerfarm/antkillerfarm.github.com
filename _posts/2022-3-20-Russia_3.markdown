@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 苏俄（三）
+title:  苏俄（三）
 category: World 
 ---
 

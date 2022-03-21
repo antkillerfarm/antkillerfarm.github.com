@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 传感器, AI金融
+title:  传感器, AI金融
 category: resource 
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 两弹一星（八）
+title:  两弹一星（八）
 category: Bombs & Satellite 
 ---
 

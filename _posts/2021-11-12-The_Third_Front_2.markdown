@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 三线建设（二）
+title:  三线建设（二）
 category: Bombs & Satellite 
 ---
 

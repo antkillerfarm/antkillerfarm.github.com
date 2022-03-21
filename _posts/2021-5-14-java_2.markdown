@@ -395,6 +395,10 @@ https://mp.weixin.qq.com/s/504MLGjCESZPOvv8AwY6Pw
 
 这篇寄存器讲的有点意思
 
+https://github.com/zyantific/zydis
+
+一个x86/x86-64反汇编的的库。
+
 ## ELF & PE
 
 ![](/images/img4/exe.png)

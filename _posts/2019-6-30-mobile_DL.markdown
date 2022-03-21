@@ -197,11 +197,17 @@ Intel Math Kernel Library是一套经过高度优化和广泛线程化的数学�
 
 https://software.intel.com/zh-cn/mkl
 
-针对DNN加速，Intel推出了MKL-DNN库，后改名DNNL。
+针对DNN加速，Intel推出了MKL-DNN库，后改名DNNL，又改名oneDNN。
 
 官网：
 
 https://github.com/intel/mkl-dnn
+
+参考：
+
+https://zhuanlan.zhihu.com/p/483936837
+
+深入了解英特尔深度学习编译器-GraphCompiler
 
 ## MS
 

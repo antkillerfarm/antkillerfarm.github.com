@@ -49,6 +49,10 @@ https://mp.weixin.qq.com/s/rxP9PlTJJdw5VmGbwRPMog
 
 解决3D重建难题，伯克利大学根据单张平面彩图重建高精度3D结构
 
+https://mp.weixin.qq.com/s/xIx3TJGoXsjPPDQVQMBdqA
+
+悉尼大学发布首篇《基于图像的自动驾驶三维目标检测》研究进展，阐述3D检测数据、方法与挑战
+
 https://mp.weixin.qq.com/s/RwofVKhBFqo3dYJzy9mlJw
 
 国科大本科生连续在CVPR，AAAI发文，系统提出三维模型库变形分析方法

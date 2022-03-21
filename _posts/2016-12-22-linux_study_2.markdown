@@ -72,6 +72,8 @@ https://mp.weixin.qq.com/s/FV13ma9LxI1gsgi9ovU4Mw
 
 free命令的内容比较概括，主要包含系统内存的整体使用情况，不深入到进程一级。
 
+`free -m -s 5`：每5秒输出一次内存使用情况。
+
 ## glances
 
 glances算是top的威力加强版了。
@@ -191,6 +193,10 @@ pstack、ptree、pmap：堆栈信息。
 dmesg：系统log信息。
 
 mallinfo：获得内存分配信息。
+
+---
+
+打印文件/proc/{pid}/maps查看内存地址和文件的映射关系，可以得到函数在哪个文件里。
 
 ## 黑盒测试
 
