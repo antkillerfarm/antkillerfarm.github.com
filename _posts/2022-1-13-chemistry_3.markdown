@@ -227,6 +227,10 @@ https://mp.weixin.qq.com/s/aUYieCVLLom7EaWIhfccRQ
 
 院士写了首《化工之歌》，聊聊化工那些事
 
+https://zhuanlan.zhihu.com/p/372974514
+
+为什么不趁油价下跌大量购入原油并注入油田，以备不时之需？
+
 # 机械+
 
 https://mp.weixin.qq.com/s/yLfcBRWodQTjk1AvHuZONw

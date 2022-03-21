@@ -366,3 +366,21 @@ O-RAN是中国移动发起的，中国三大运营商都是成员。
 https://mp.weixin.qq.com/s/F3KRfVyvbtc5x2LZ7wgXuQ
 
 媒体口中的5G和真实的5G区别有多大？
+
+# TensorFlow++
+
+https://mp.weixin.qq.com/s/8uDsaZjsiKXGea6M-w-RvA
+
+tensorflow object detection API使用之GPU训练实现宠物识别
+
+https://mp.weixin.qq.com/s/knw7yuUxHe-qeCLfj20onw
+
+Bayesian GAN的TensorFlow实现
+
+https://mp.weixin.qq.com/s/Sxui9CvdGocIxVG2FM4JtQ
+
+基于tensorflow使用CNN-RNN进行中文文本分类！
+
+https://mp.weixin.qq.com/s/kJxXIN6D5TEEFSFhGJNIyw
+
+开源神经网络图片上色技术解析

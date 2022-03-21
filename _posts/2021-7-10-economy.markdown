@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 蒙代尔不可能三角, 经济学
+title: 蒙代尔不可能三角, 经济学（一）
 category: resource 
 ---
 

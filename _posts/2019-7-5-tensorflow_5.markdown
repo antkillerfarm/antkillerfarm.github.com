@@ -239,6 +239,10 @@ bazel build --crosstool_top=//cross_compiler:toolchain --cpu=aarch64 --host_cros
 
 `--distinct_host_configuration=true`：即使配置好Host的工具链，也不代表项目会被按照Host编译。这时就需要打开这个开关了。
 
+最后是打包wheel的环节：
+
+虽然打包出来的wheel文件名字叫做`tensorflow-1.3.0-cp39-cp39-linux_x86_64.whl`，但是不要紧，相关的cross-compile的内容已经在里面了，只需要将之改名字为`tensorflow-2.7.0-cp39-none-linux_aarch64.whl`即可。
+
 ---
 
 以下是一些趟坑的细节：
@@ -358,19 +362,3 @@ TensorFlow中的那些高级API
 https://mp.weixin.qq.com/s/kYOwUWlTP4T0IYKDWDbCsg
 
 tensorflow object detection API训练公开数据集Oxford-IIIT Pets Dataset
-
-https://mp.weixin.qq.com/s/8uDsaZjsiKXGea6M-w-RvA
-
-tensorflow object detection API使用之GPU训练实现宠物识别
-
-https://mp.weixin.qq.com/s/knw7yuUxHe-qeCLfj20onw
-
-Bayesian GAN的TensorFlow实现
-
-https://mp.weixin.qq.com/s/Sxui9CvdGocIxVG2FM4JtQ
-
-基于tensorflow使用CNN-RNN进行中文文本分类！
-
-https://mp.weixin.qq.com/s/kJxXIN6D5TEEFSFhGJNIyw
-
-开源神经网络图片上色技术解析
