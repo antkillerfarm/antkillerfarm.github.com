@@ -142,9 +142,10 @@ bazel编译相当消耗资源，在配置低的机器上，可通过如下选项
 
 **Step 3**：安装TensorFlow。
 
-`sudo pip uninstall tensorflow`
-
-`sudo pip install /tmp/tensorflow_pkg/tensorflow-1.3.0-cp27-cp27mu-linux_x86_64.whl`
+```bash
+sudo pip uninstall tensorflow
+sudo pip install /tmp/tensorflow_pkg/tensorflow-1.3.0-cp27-cp27mu-linux_x86_64.whl
+```
 
 >安装之后，不要在tensorflow源代码文件夹下运行python，会报cannot import name 'build_info'的错误。
 

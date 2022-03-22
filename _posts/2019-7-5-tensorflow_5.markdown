@@ -241,7 +241,7 @@ bazel build --crosstool_top=//cross_compiler:toolchain --cpu=aarch64 --host_cros
 
 最后是打包wheel的环节：
 
-虽然打包出来的wheel文件名字叫做`tensorflow-1.3.0-cp39-cp39-linux_x86_64.whl`，但是不要紧，相关的cross-compile的内容已经在里面了，只需要将之改名字为`tensorflow-2.7.0-cp39-none-linux_aarch64.whl`即可。
+虽然打包出来的wheel文件名字叫做`tensorflow-2.7.0-cp39-cp39-linux_x86_64.whl`，但是不要紧，相关的cross-compile的内容已经在里面了，只需要将之改名字为`tensorflow-2.7.0-cp39-none-linux_aarch64.whl`即可。
 
 ---
 

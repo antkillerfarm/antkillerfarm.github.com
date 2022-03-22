@@ -83,6 +83,13 @@ op的官方定义：
 
 https://tensorflow.google.cn/xla/operation_semantics
 
+HLO也可以有pass：`HloModulePass`
+
+```cpp
+HloPassPipeline pipeline("pass");
+pipeline.AddPass<XXXPass>();
+```
+
 参考：
 
 https://zhuanlan.zhihu.com/p/71980945
