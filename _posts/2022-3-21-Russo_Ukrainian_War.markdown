@@ -91,8 +91,6 @@ https://www.zhihu.com/question/462049875
 
 https://m.weibo.cn/5939109236/4750298579470231
 
-
-
 ---
 
 乌克兰国防事务和国家安全委员会主席阿列克谢•丹尼洛夫的年迈母亲，住在被乌克兰政府封锁的卢甘斯克，靠俄罗斯发放的养老金生活。
@@ -186,3 +184,7 @@ https://mp.weixin.qq.com/s/u8rbgwjt-WOsHaFSj-JeMw
 https://mp.weixin.qq.com/s/u7C1THhjnWLRLR4z7casbQ
 
 在乌克兰，日常生活与国家的分裂
+
+https://www.zhihu.com/question/523693204
+
+普京表示向欧洲国家供应天然气将用卢布进行结算，将产生哪些影响？
