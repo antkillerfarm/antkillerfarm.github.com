@@ -33,6 +33,8 @@ https://www.understandingwar.org/
 
 ![](/images/img4/Cossack.png)
 
+![](/images/img4/Cossack.jpg)
+
 https://mp.weixin.qq.com/s/LxCvZKcvDfDpgEikF7qXCg
 
 乌克兰国家预防腐败局致绍伊古的感谢信
@@ -162,6 +164,10 @@ Yulia Zdanovska
 ---
 
 1968年多瑙河行动授元帅的，叶廖缅科，卢甘斯克人；莫斯卡连科，顿涅斯克人；巴季茨基，哈尔科夫人；科舍沃伊，基洛夫格勒人。
+
+---
+
+Орден Мужества(Order of Courage)和Медаль «За отвагу»(Medal "For Courage")，虽然两者都可能会被机翻为勇气勋章，但是给受伤士兵的是后者，前者多半出现在讣告中。
 
 ---
 
