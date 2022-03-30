@@ -71,6 +71,10 @@ https://mp.weixin.qq.com/s/XXO4hkjJkcZ5sTVVKWghEw
 
 TPU的起源，Jeff Dean综述后摩尔定律时代的ML硬件与算法
 
+https://mp.weixin.qq.com/s/e8zOrmiIidy8IoV1yMfdKg
+
+谷歌长文总结四代TPU打造经验：里程碑式的TPUv4是怎样炼成的？
+
 ## Groq 
 
 Groq是Google TPU团队的部分成员创立的AI芯片公司。
@@ -426,19 +430,3 @@ FPGA：AI ASIC的必经之路？
 https://mp.weixin.qq.com/s/5MyuZf_TBm2NV47CRAz5Dw
 
 2017图灵奖得主：通用芯片每年仅提升3%，神经专用架构才是未来
-
-https://mp.weixin.qq.com/s/S1fVrSfAM_UJh06Q43s8vA
-
-网络芯片架构的新改变
-
-https://zhuanlan.zhihu.com/p/47904879
-
-AI芯片在5G中的机会
-
-https://mp.weixin.qq.com/s/Z_QVN7OCLqeyMrwK3Sc7qA
-
-AI芯片和传统芯片的区别
-
-https://mp.weixin.qq.com/s/mMiAGH2Yz42xes7jicyygA
-
-“超级芯片”或在十年内诞生，摩尔定律再续一命！（自旋电子逻辑器件“MESO器件”）

@@ -240,3 +240,21 @@ https://mp.weixin.qq.com/s/2GQacLs1CNNQXKjmJmPiVQ
 https://mp.weixin.qq.com/s/DXIGBypPQd1FkZ70aBG_9g
 
 我用Python合成大西瓜！
+
+# AI Chip+
+
+https://mp.weixin.qq.com/s/S1fVrSfAM_UJh06Q43s8vA
+
+网络芯片架构的新改变
+
+https://zhuanlan.zhihu.com/p/47904879
+
+AI芯片在5G中的机会
+
+https://mp.weixin.qq.com/s/Z_QVN7OCLqeyMrwK3Sc7qA
+
+AI芯片和传统芯片的区别
+
+https://mp.weixin.qq.com/s/mMiAGH2Yz42xes7jicyygA
+
+“超级芯片”或在十年内诞生，摩尔定律再续一命！（自旋电子逻辑器件“MESO器件”）

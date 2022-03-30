@@ -178,6 +178,34 @@ https://www.zhihu.com/question/359814148
 
 ---
 
+737机型大致可分为四代，
+
+1967第一代-100，-200:
+
+1984第二代Classic，-300，-400，-500:
+
+1993第三代NG（next generation），-600，-700，-800，-900
+
+2017第四代MAX，7，8，9，10
+
+https://www.zhihu.com/question/286414244
+
+后置发动机的客机为什么现在很少了？
+
+https://www.zhihu.com/question/34470723
+
+公务机超音速有什么难度?
+
+https://www.zhihu.com/question/358262424
+
+波音7*7系列客机是怎么发展的？是按数字顺序发布的吗？
+
+https://www.zhihu.com/question/51633265
+
+一直搞不懂，中国为什么还在使用轰6这种几十年前设计的亚音速轰炸机机型？
+
+---
+
 https://mp.weixin.qq.com/s/KuIf0oIkLjMTKp2FgAnpyA
 
 一口气做出12只同款雪糕，强迫症都被食物加工流水线治好了
@@ -237,23 +265,3 @@ https://mp.weixin.qq.com/s/9TLch3E9Kiv2ImzcV9atgA
 https://zhuanlan.zhihu.com/p/36664340
 
 19世纪美国枪械简史
-
-https://zhuanlan.zhihu.com/p/20794653
-
-历史上第一篇关于JEEP的长篇报道都说了什么——非军迷退下
-
-https://chejiahao.autohome.com.cn/info/2037081/
-
-战火中的军车——战功赫赫的十轮大卡吉姆西CCKW352/353
-
-https://www.sohu.com/a/154888004_670548
-
-苏联的疯狂：装5门305巨炮的“战列驱逐舰”
-
-https://mp.weixin.qq.com/s/g-IUqpMbyM8csAwh7-VoEQ
-
-背上十斤半，就把排长干：汤姆森冲锋枪在中国
-
-https://mp.weixin.qq.com/s/mCczfjhbGj6u177fxQH6Yg
-
-他设计了苏联最有名的运动手枪，却从未亲眼见过，因为他是盲人

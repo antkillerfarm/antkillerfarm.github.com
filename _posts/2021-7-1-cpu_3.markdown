@@ -61,6 +61,12 @@ https://mp.weixin.qq.com/s/NPMCtGGM5iN9ZCznnt-OIw
 
 胡伟武：我国手机CPU的自给率是0%
 
+---
+
+https://mp.weixin.qq.com/s/SaUr2Mp4W5xmlyTcePrzlQ
+
+目前最全国产芯片公司一览
+
 ## C Model
 
 在芯片的架构设计阶段需要对芯片进行建模（modeling），建模的主要目的是在大规模投入人力之前先用低成本的计算机软件实现目标芯片的主要功能，评估芯片的工作效果，验证设计思想，并作为后续开发活动的标准和依据。由于这里的软件开发一般使用C语言，所以也叫做C Model。

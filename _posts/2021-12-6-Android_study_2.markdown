@@ -290,3 +290,7 @@ https://mp.weixin.qq.com/s/j8_8QwFnyOr66m9aekor1g
 https://zhuanlan.zhihu.com/p/471250907
 
 从零开始，写个编译器！
+
+https://www.zhihu.com/question/34619258
+
+现代c++编译器对临时对象做了怎样的优化？

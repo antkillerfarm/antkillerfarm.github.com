@@ -142,3 +142,7 @@ https://mp.weixin.qq.com/s/d_Ua9kAvvz-W2YHjRCa_0w
 https://mp.weixin.qq.com/s/kNFx85eGgYC81nz3ElN21Q
 
 俾斯麦家族与二战：铁血宰相后人的沉浮
+
+https://mp.weixin.qq.com/s/WbMHXf1EhUIV7kZSJki-_g
+
+为什么希特勒冒着两线作战的危险，也要坚持1941年入侵苏联？

@@ -233,6 +233,26 @@ https://zhuanlan.zhihu.com/p/372974514
 
 # 机械+
 
+https://zhuanlan.zhihu.com/p/20794653
+
+历史上第一篇关于JEEP的长篇报道都说了什么——非军迷退下
+
+https://chejiahao.autohome.com.cn/info/2037081/
+
+战火中的军车——战功赫赫的十轮大卡吉姆西CCKW352/353
+
+https://www.sohu.com/a/154888004_670548
+
+苏联的疯狂：装5门305巨炮的“战列驱逐舰”
+
+https://mp.weixin.qq.com/s/g-IUqpMbyM8csAwh7-VoEQ
+
+背上十斤半，就把排长干：汤姆森冲锋枪在中国
+
+https://mp.weixin.qq.com/s/mCczfjhbGj6u177fxQH6Yg
+
+他设计了苏联最有名的运动手枪，却从未亲眼见过，因为他是盲人
+
 https://mp.weixin.qq.com/s/yLfcBRWodQTjk1AvHuZONw
 
 外形妖孽的MTs-3运动手枪，因为性能太好被国际射联禁用
