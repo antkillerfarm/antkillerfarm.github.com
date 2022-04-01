@@ -9,6 +9,30 @@ category: COVID19
 
 # 口罩（续）
 
+人民需要什么，五菱就造什么。
+
+1928年，桂系领袖李宗仁在这里修建了一家柳州机械厂，开始组装飞机，制造步枪、手榴弹；
+
+1933年，因为广西被封锁，石油匮乏，又造出了时速40公里/小时的木炭车，不烧油，烧炭跑，成为战时大后方的主要运输工具；
+
+https://mp.weixin.qq.com/s/8rP-ZIvqAPlIW_j99jtMvQ
+
+五菱的76个小时，改变了中国口罩
+
+![](/images/img3/wuling.jpg)
+
+6月1日，李克强总理在山东烟台考察时强调，地摊经济、小店经济是就业岗位的重要来源，是人间的烟火，和"高大上"一样，是中国的生机。
+
+https://www.zhihu.com/question/399164650
+
+怎么看待五菱荣光翼的售货车主打地摊经济？
+
+https://mp.weixin.qq.com/s/pmW4gEAD533uXojUQ9d1QQ
+
+聊聊“地摊经济学”
+
+---
+
 不得不感慨，美国的产业空心化已经到了如此严重的地步。如果给GM充足的时间，他们应该也可以搞出BYD这种产品线。但是造价会贵4~5倍，研发投产的周期至少要半年以上。
 
 https://mp.weixin.qq.com/s/tFc15hulgBUE-m338xBhzQ
@@ -244,49 +268,3 @@ https://www.zhihu.com/question/502139594
 https://www.zhihu.com/question/464038841
 
 为什么美国疫情最严重，但却鲜有变异病毒的报道？
-
----
-
-变异毒株的信息可搜寻以下网站：
-
-https://www.who.int/en/activities/tracking-SARS-CoV-2-variants/
-
-Tracking SARS-CoV-2 variants。这是WHO的官方网站
-
-https://nextstrain.org/
-
-该站跟踪各种病原的演进
-
-https://outbreak.info/
-
-这是来自Scripps Research的几位科学家创办的COVID-19专题站。Scripps Research是美国最大的私立非营利性的生物医学研究机构，成立于1924年。
-
-https://cov-lineages.org/lineage_list.html
-
-变种列表
-
----
-
-其实吧，19个变异点位真没啥稀奇的……
-
-比如说啊，快要销声匿迹的B.1.616，它有29个变异位点。
-
-英国发现的某个连名字都没资格拥有的variant，有28个变异位点。
-
-意大利那不勒斯某个同样无名无姓的variant有25个变异位点；
-
-美国纽约已经灭绝快一个月的B.1.604有24个变异位点。
-
-都混得挺惨……
-
-而且，就算S基因上有多重“危险”变异位点，也不一定就能变身毒王了……
-
-最典型的例子是菲律宾的P.3，第一眼印象让人直呼好家伙，这尼玛是人间凶器集合。但现在回头一看，似乎也不是太能打的样子…
-
-还有英国的AV.1，卖相也很恐怖，实际就是一匹废柴。
-
-反之，S基因变异位点不起眼的家伙里面，却不乏牛鼻的。比如印度的B.1.618。
-
-https://www.zhihu.com/answer/1893818645
-
-如何看待中非传出的新冠病毒？
