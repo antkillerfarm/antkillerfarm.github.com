@@ -81,6 +81,48 @@ https://mp.weixin.qq.com/s/H2toewJKEwq1mXme_iMWkA
 
 # 新冠疫苗+
 
+在美国，日增20万，也能准确命中那大约一半没打疫苗的人。充分体现了欧美产品宣传的高精度。
+
+在以色列，仅有四成人没打疫苗的情况下，疫苗的防感染有效率先从90+降到64再降到39直至现在近乎无统计学差别。八月以来，以色列新增的400多例重症患者有240多例打完两针疫苗，这意味着：或许防重症可能也没有统计差别了。充分体现了欧美产品到了中东就准头全无，胡乱杀伤的传统。
+
+---
+
+https://mp.weixin.qq.com/s/_XODQnloTRlmlCDWez5_zg
+
+全球首支获批新冠疫苗竟然临床试验都没做完！战斗民族太疯狂，Nature和Science齐质疑
+
+https://mp.weixin.qq.com/s/FoBmj4jCAaqfclS3F8WraQ
+
+全球群体免疫，需要多少新冠疫苗？
+
+https://mp.weixin.qq.com/s/7_L7pvZ2KyQxKRteWKq4QQ
+
+聊聊中美两国的新冠疫苗-安全性和有效性
+
+https://www.zhihu.com/question/441919684
+
+在英国试验有效率达到89%的Novavax新冠疫苗，与其他公司的疫苗相比有何不同？
+
+https://mp.weixin.qq.com/s/8QPLyP9EhX8QuX6ErN5Yhw
+
+疫苗科普
+
+https://mp.weixin.qq.com/s/sKwYTW-HZzGY-Qs9_s_5nw
+
+快如闪电！新冠疫苗的研发速度是如何实现的？
+
+https://mp.weixin.qq.com/s/COjWJWU5d8hQ4afFN5mZ3g
+
+一亿剂疫苗打出去了，何时能见效？
+
+https://mp.weixin.qq.com/s/8L3euDhDzu9NUb15sUCpcw
+
+疫苗接种6个月的真实世界数据
+
+https://view.inews.qq.com/wxn/20210105A037TJ00
+
+30多个国家和地区发现变异毒株，疫苗效果会受影响吗？
+
 https://mp.weixin.qq.com/s/ZXWV8joWMNCbOfH04_TbXA
 
 美国CDC的“Delta末日文档”：感染人数激增，接种疫苗仍传播病毒？

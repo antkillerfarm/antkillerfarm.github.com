@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 新冠肺炎（五）——国际援助, 知名患者, 钟南山
+title: 新冠肺炎（五）——国际援助, 知名患者
 category: COVID19 
 ---
 
@@ -8,6 +8,48 @@ category: COVID19
 {:toc}
 
 # 科研（续）
+
+https://mp.weixin.qq.com/s/g9gPLEN6R02F49eRGGSuAA
+
+来势汹汹：新冠Delta突变株是什么，我们该如何应对？
+
+https://mp.weixin.qq.com/s/o7Eq7xoxqM_fOlS9HiZ_OA
+
+新冠大流行，哪些关键突变株值得关注？
+
+https://www.zhihu.com/question/501576771
+
+新冠B.1.1.529毒株被指“可能比德尔塔还可怕”，是真的吗？有多大危害？
+
+https://www.zhihu.com/question/502139594
+
+以色列禁止所有外国人入境，以防“奥密克戎“变异毒株传播，“奥密克戎”是如何传播的？传播速度有多快？
+
+---
+
+事实上，美国人嘴从来都不把门的。
+
+他们经常把B.1.1.7叫做British variant或者Kent variant；
+
+经常把P.1叫做Brazilian variant；
+
+经常把B.1.1.138叫做Nigerian variant；
+
+甚至经常把B.1.429叫做Califonia variant，经常把B.1.526叫做New York variant。
+
+新的变异毒株叫做AY.1。最早是在尼泊尔珠峰大本营紧急下撤的感染者身上发现的。
+
+所以英国佬给它取了个文艺范儿的外号，叫做“登山家变异株”（mountaineers variant）。
+
+体会一下美国队的板凳深度：
+
+![](/images/img4/USA_COVID.jpg)
+
+https://www.zhihu.com/question/464038841
+
+为什么美国疫情最严重，但却鲜有变异病毒的报道？
+
+---
 
 变异毒株的信息可搜寻以下网站：
 
@@ -263,39 +305,3 @@ http://news.ifeng.com/c/7uRKv3JARr9
 https://www.sohu.com/a/495825123_123753
 
 美国前国务卿科林·鲍威尔去世 曾参与发动伊拉克战争
-
----
-
-《尚气》的男主演刘思慕，其祖父母均在2021年因为新冠去世。
-
-星战经典角色Darth Vader扮演者David Prowse 2020年因新冠去世。
-
-《唐顿庄园》，很多剧中你喜欢的角色的发型与妆容都出自著名造型师Marc Pilcher之手，他在获得2021年艾美奖仅三周之后，死于新冠。
-
-英媒：白金汉宫称，英国女王新冠病毒检测呈阳性。
-
----
-
-https://mp.weixin.qq.com/s/srkQ4in3bLP6exZIZawzuw
-
-英国全能数学家John Conway因新冠去世，他是数学疯子，也是游戏疯子：没有谁比我更爱玩游戏了！
-
-https://mp.weixin.qq.com/s/Ipky8I11O6AlaT2ACRqVaQ
-
-陶哲轩发文缅怀John Conway：他是所有数学家构成的凸包中的一个极值点
-
-https://mp.weixin.qq.com/s/jZIUKeSiw9ULSa3eI3gibQ
-
-美国传奇主持人拉里·金的非凡一生
-
-https://zhuanlan.zhihu.com/p/349037091
-
-英国百岁老兵感染新冠去世，曾为NHS筹款3000万英镑，被女王授勋
-
-https://mp.weixin.qq.com/s/z37FQ9SWDm9wMg9lJAPqeA
-
-印度前总理儿子因新冠去世！82岁杰出计算机科学家，曾在美工作15年
-
-https://view.inews.qq.com/a/20210831A0D9RP00
-
-日本女星绫濑遥感染新冠入院：曾三次阴性，一度白肺呼吸困难

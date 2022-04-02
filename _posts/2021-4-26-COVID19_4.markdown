@@ -1,13 +1,45 @@
 ---
 layout: post
-title: 新冠肺炎（四）——科研
+title: 新冠肺炎（四）——口罩, 科研
 category: COVID19 
 ---
 
 * toc
 {:toc}
 
-# 口罩（续）
+# 口罩
+
+KN95是中国标准，主要用于工业场景，且不要求油性防护，因此只是用氯化钠颗粒物检测，要求规过滤效果大于95%。此外中国还有KP95标准，支持油性防护。其中，“N”表示不耐油（not resistant to oil），“P”表示防油（oil proof）。
+
+KN95医用标准GB19083，工业标准是GB2626。
+
+https://zhuanlan.zhihu.com/p/105650218
+
+关于新冠病毒，这应该是最全的口罩科普贴了！
+
+---
+
+https://mp.weixin.qq.com/s/IXp36BDIi_cblf1nk-iidw
+
+40万公里的征途，一场消毒除菌产品与病毒的赛跑（立白集团）
+
+---
+
+Medtronic成立于1949年，致力于为心血管疾病，神经科，糖尿病，脊椎疾病以及五官科疾病患者提供治疗、诊断及监测方案。1957年，美敦力制造出第一台便携式体外心脏起搏器，随后于1960年制造出第一台可靠的可植入式心脏起搏系统。
+
+https://mp.weixin.qq.com/s/jlKlNwMp2-2TvyIWHU71LQ
+
+全球呼吸机告急！医疗科技巨头美敦力“开源”设计图和源代码
+
+---
+
+LVMH集团宣布，旗下Dior、Givenchy和娇兰三个品牌的香水生产线，将用于生产含酒精的消毒洗手液。
+
+奢侈品牌Prada将一家在佩鲁贾开设的工厂，改造成了口罩及医疗用品生产工厂，并计划在4月6日前，向意大利托斯卡纳医院运送8万件防护服，及11万只口罩。
+
+重症监护用肺呼吸机制造商Siare Engineering取消了占其营业额90％的外国订单，转而专为意大利提供机械，该公司产能从每月125台提升到到现在的500台。
+
+---
 
 人民需要什么，五菱就造什么。
 
@@ -228,43 +260,3 @@ https://zhuanlan.zhihu.com/p/383389024
 https://www.zhihu.com/question/466493389
 
 尼泊尔发现新冠变种毒株Delta的新突变，传播速度或更快，将对全球疫情进展带来哪些影响？
-
-https://mp.weixin.qq.com/s/g9gPLEN6R02F49eRGGSuAA
-
-来势汹汹：新冠Delta突变株是什么，我们该如何应对？
-
-https://mp.weixin.qq.com/s/o7Eq7xoxqM_fOlS9HiZ_OA
-
-新冠大流行，哪些关键突变株值得关注？
-
-https://www.zhihu.com/question/501576771
-
-新冠B.1.1.529毒株被指“可能比德尔塔还可怕”，是真的吗？有多大危害？
-
-https://www.zhihu.com/question/502139594
-
-以色列禁止所有外国人入境，以防“奥密克戎“变异毒株传播，“奥密克戎”是如何传播的？传播速度有多快？
-
----
-
-事实上，美国人嘴从来都不把门的。
-
-他们经常把B.1.1.7叫做British variant或者Kent variant；
-
-经常把P.1叫做Brazilian variant；
-
-经常把B.1.1.138叫做Nigerian variant；
-
-甚至经常把B.1.429叫做Califonia variant，经常把B.1.526叫做New York variant。
-
-新的变异毒株叫做AY.1。最早是在尼泊尔珠峰大本营紧急下撤的感染者身上发现的。
-
-所以英国佬给它取了个文艺范儿的外号，叫做“登山家变异株”（mountaineers variant）。
-
-体会一下美国队的板凳深度：
-
-![](/images/img4/USA_COVID.jpg)
-
-https://www.zhihu.com/question/464038841
-
-为什么美国疫情最严重，但却鲜有变异病毒的报道？

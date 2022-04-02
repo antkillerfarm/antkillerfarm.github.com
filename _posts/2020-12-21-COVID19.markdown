@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 新冠肺炎（一）——历史, SARS, 国内疫情
+title: 新冠肺炎（一）——历史, SARS
 category: COVID19 
 ---
 
