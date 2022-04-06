@@ -377,6 +377,10 @@ https://mp.weixin.qq.com/s/egThaVvcgV_-opocwxWOVA
 
 让Python代码简洁的实用技巧
 
+https://mp.weixin.qq.com/s/xamO4TZS90FtZMcn398stQ
+
+推荐3个Python文本终端GUI框架
+
 # 汇编
 
 https://mp.weixin.qq.com/s/OWGi1htNugOv81ZFPinRGw

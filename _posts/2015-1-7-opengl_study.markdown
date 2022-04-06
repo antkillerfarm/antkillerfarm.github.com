@@ -91,6 +91,10 @@ https://blog.csdn.net/wangdingqiaoit/article/details/51318793
 
 OpenGL学习脚印: 绘制一个三角形
 
+https://zhuanlan.zhihu.com/p/97457249
+
+OpenGL + Qt: 三角形绘制
+
 # GUI框架分析
 
 ## 综合型GUI框架
