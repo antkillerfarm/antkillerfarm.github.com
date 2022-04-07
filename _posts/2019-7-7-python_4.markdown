@@ -309,6 +309,10 @@ Django比较重量级了，如果只是想发布静态网页的话，可以用�
 
 `python -m SimpleHTTPServer 7800`
 
+或者
+
+`python3 -m http.server 7800`
+
 除此之外，Flask、tornado也是较常用的Web框架。
 
 基于python新增的async/await语法的异步Web框架，是最近的新流派，代表有：Sanic

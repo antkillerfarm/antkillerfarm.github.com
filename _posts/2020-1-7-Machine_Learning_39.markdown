@@ -165,6 +165,30 @@ https://mp.weixin.qq.com/s/Jr4NlL4dN4hTDf8K4g-N_A
 
 如何识别滥竽充数的“数据骗子”
 
+---
+
+发掘了一个宝藏：
+
+https://github.com/Valdecy/pyMultiobjective
+
+Multiobjective Objectives Optimization（多目标优化）算法库
+
+https://github.com/Valdecy/pyDecision
+
+Multi Criteria Decision Analysis（多准则决策分析）算法库
+
+https://github.com/Valdecy/pyMetaheuristic
+
+Metaheuristics（元启发）算法库
+
+https://github.com/Valdecy/pyRecommenderSystem
+
+Recommender System算法库
+
+https://github.com/Valdecy/pyCombinatorial
+
+旅行商问题（TSP）算法库
+
 # 异常检测
 
 Anomaly Detection
