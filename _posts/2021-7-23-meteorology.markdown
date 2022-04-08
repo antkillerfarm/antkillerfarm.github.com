@@ -232,6 +232,10 @@ https://mp.weixin.qq.com/s/L22Y2sZdEh07At-CWGYZeA
 
 象群北迁，降雨线北移，大陆国家的盛世来了
 
+https://mp.weixin.qq.com/s/JU8TdMg95T-DFxZh09AWBA
+
+美国厉害了，开始骂欧洲人吃肉破坏自然环境
+
 https://mp.weixin.qq.com/s/vSLGvcII2z8DBKBrV6JLOA
 
 为什么市场上大西北的水果越来越多

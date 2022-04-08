@@ -1,0 +1,313 @@
+---
+layout: post
+title:  数据描述语言
+category: technology 
+---
+
+* toc
+{:toc}
+
+# 数据描述语言
+
+DDL（Data Description Language）早年间基本就是XML的同义词。20年前上大学的时候，甚至还学过一门XML相关的选修课程。不过这些都是老古董了，从2010年以来，JSON基本取代了XML的地位。
+
+## JSON
+
+JSON(JavaScript Object Notation)是一种轻量级的数据交换格式。易于人阅读和编写。同时也易于机器解析和生成。它基于JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999的一个子集。
+
+其官网为：
+
+http://json.org/
+
+官网上列出了各种语言的JSON解析库。其中C语言的解析库中以json-c最为流行，其官网为：
+
+https://github.com/json-c/json-c
+
+和XML Path类似，JSON也定义了自己的JSON Path。参见：
+
+http://goessner.net/articles/JsonPath/
+
+参考：
+
+https://addons.mozilla.org/zh-CN/firefox/addon/jsonview/
+
+jsonview是一个用于检验JSON格式是否合法的Firefox插件。
+
+http://www.bejson.com/
+
+一个在线验证JSON语法的库。
+
+https://docs.python.org/2/library/json.html
+
+python自带的json包的文档
+
+https://mp.weixin.qq.com/s/qk8hlcE3oxa-4a-G4sxGVg
+
+为什么说JSON不适合做配置语言？
+
+https://mp.weixin.qq.com/s/qjDj02UuJ8KB4bklZG3odA
+
+9款你不能错过的JSON工具
+
+https://mp.weixin.qq.com/s/ZbTQ3fSt4TDGwYILurjC5g
+
+json for modern c++的使用
+
+https://mp.weixin.qq.com/s/c3B0HtrHWEM5AoTydQAOTw
+
+Python处理JSON数据
+
+## nlohmann json
+
+nlohmann/json是一个用于解析json的开源c++库。
+
+代码：
+
+https://github.com/nlohmann/json
+
+参考：
+
+https://www.cnblogs.com/maizhongfei/p/14164895.html
+
+nlohmann/json的主要用法
+
+## Jackson
+
+Jackson是常用的Java语言的JSON库。
+
+Maven安装：
+
+```text
+<dependency>
+	<groupId>com.fasterxml.jackson.core</groupId>
+	<artifactId>jackson-databind</artifactId>
+	<version>2.6.4</version>
+</dependency>
+```
+
+Jackson提供了三种处理方法：
+
+**流式API**：（也称为"增量分析/生成"）读取和写入 JSON 内容作为离散事件。类似于XML SAX。
+
+com.fasterxml.jackson.JsonParser读，com.fasterxml.jackson.JsonGenerator写。
+
+**树模型**：提供一个JSON文档可变内存树的表示形式。类似于XML DOM。
+
+com.fasterxml.jackson.databind.ObjectMapper生成树；树组成JsonNode节点集。
+
+**数据绑定**：JSON和POJO相互转换，基于属性访问器规约或注解。
+
+Jackson不支持JSON Path，可以使用以下项目：
+
+https://github.com/jayway/JsonPath
+
+这个项目的后端可以选择Jackson或Gson。
+
+## BSON
+
+Binary JSON是在JSON的基础上，添加了索引及数据类型的一种二进制格式。相比JSON，它牺牲了可阅读性，得到了可遍历性和高效性。
+
+BSON最早由MongoDB项目提出并使用，它的官网为：
+
+http://bsonspec.org/
+
+从中可以看出大多数语言的BSON解析库，都是MongoDB项目提供的。
+
+## YAML
+
+YAML(Yet Another Markup Language)是JSON的超集。它没有JSON那么流行，主要被用于科学计算领域，比如OpenCV项目。它的官网为：
+
+http://yaml.org/
+
+这个网站很有特色，它本身就是一个YAML文件。
+
+YAML的python语言解析库主要有PyYAML和ruamel.yaml。前者貌似已经不再维护，所以目前主要使用后者。
+
+ruamel.yaml官网：
+
+https://yaml.readthedocs.io/en/latest/
+
+这里谈一下我司在这方面的实践。我司有个项目最初脱胎于Caffe，因此，配置文件沿用了Protocol Buffers格式。然而PB格式在发布时，还需要相应的proto文件配套，才能解析。此外，PB文件是二进制，不便修改。因此，我们很快就改用json了。
+
+用了两年之后，发现json对于客户的修改，还是不够友好。因此又换用了YAML。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/33477002
+
+读写yaml文件
+
+https://mp.weixin.qq.com/s/AWMNPnec2hQVyAQBONuBRQ
+
+一个yml文件居然能玩出这么多花样！
+
+## Protocol Buffers
+
+Protocol Buffers是Google公司开发的一种数据描述语言。它的官网为：
+
+https://github.com/google/protobuf
+
+文档：
+
+https://developers.google.com/protocol-buffers/
+
+Tutorials：
+
+https://developers.google.com/protocol-buffers/docs/tutorials
+
+安装：
+
+`sudo apt install protobuf-compiler python-protobuf`
+
+这是一种注重效率，而可阅读性几乎为零的二进制格式。其效率超过BSON，但除非有相关格式文件，否则完全无法阅读。而BSON作为JSON的扩展，只有扩展的那部分不可读，其余部分仍保留JSON的可读性。
+
+格式文件是Protocol Buffers中的重要概念，也是和JSON等格式在使用思路上最大的区别。
+
+JSON采用的是，不同的语言提供不同的库来解析的方式。
+
+而Protocol Buffers使用同一个格式文件，为不同语言生成相应的代码。这和CORBA的做法很类似。
+
+与Protocol Buffers类似的方案，还有Facebook提出的Thrift、ZeroC提出的Slice和Hadoop Avro。Protocol Buffers只提供了序列化和反序列化技术，而后面这几个方案还包含了完整的客户端/服务端堆栈，可快速实现RPC。
+
+### 简易示例
+
+test.proto:
+
+```text
+message TestMsg
+{
+    required int32 id=1;
+    required int32 time=2;
+    optional string note=3;
+}
+```
+
+`protoc --python_out=./python/ test.proto`
+
+test.py:
+
+```python
+import google.protobuf
+from test_pb2 import TestMsg
+import time
+
+test = TestMsg()
+test.id=1
+test.time=int(time.time())
+test.string="asdftest"
+print test
+test_str = test.SerializeToString()
+print test_str
+
+test1 = TestMsg()
+test1.ParseFromString(test_str)
+print test1
+```
+
+示例代码下载：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/protobuf
+
+参考：
+
+http://www.cnblogs.com/o87481299/p/4199892.html
+
+python google protobuf使用
+
+https://mp.weixin.qq.com/s/D1bjGRCFH6Ag9_xIfQ34SA
+
+Google Protocol Buffers浅析
+
+https://mp.weixin.qq.com/s/dYV_O2WiiGeDHMbejt8vqg
+
+高德地图数据序列化的探索与实践
+
+https://mp.weixin.qq.com/s/enDUynhZ1Pnzg_4xEjR21A
+
+浅谈Protobuf编码
+
+https://zhuanlan.zhihu.com/p/149889589
+
+Avro，Protocol Buffer和Thrift中的模式演化
+
+### proto3
+
+Protocol Buffers本身也有若干版本，且互不兼容。目前用的比较多的是proto2和proto3。
+
+值得注意的是，proto3生成的python文件，仍然叫xxxx_pb2.py。
+
+proto3最大的改进在于支持如下形式的proto文件的嵌套：
+
+`import "tensorflow/core/framework/node_def.proto";`
+
+参考：
+
+http://www.cnblogs.com/ghj1976/p/4565846.html
+
+proto3笔记
+
+https://blog.csdn.net/menghaocheng/article/details/80176763
+
+Python3-如何使用protobuf 3
+
+## HDF5
+
+HDF是用于存储和分发科学数据的一种自我描述、多对象文件格式。HDF是由美国国家超级计算应用中心（NCSA）创建的，以满足不同群体的科学家在不同工程项目领域之需要。
+
+官网：
+
+https://support.hdfgroup.org/HDF5/
+
+它的python接口：
+
+http://www.h5py.org/
+
+HDF5 for Python
+
+参考：
+
+https://www.phodal.com/blog/try-hdf5-in-mac-os-with-shell/
+
+HDF5小试——高大上的多对象文件格式
+
+https://mp.weixin.qq.com/s/dkPR4lEziyqwE_QsFht2Mw
+
+大数据存储技巧
+
+## PMML
+
+PMML(Predictive Model Markup Language) 是一个开放的工业标准，它以XML为载体将上述数据挖掘任务标准化，可以把某一产品所创建的数据挖掘方案应用于任何其它遵从PMML标准的产品或平台中，而不需考虑分析和预测过程中的具体实现细节。使得模型的部署摆脱了模型开发和产品整合的束缚，为商业智能产品、数据仓库和云计算中的数据挖掘模型的应用环境开拓了新的篇章。
+
+官网：
+
+http://dmg.org/
+
+参考：
+
+https://www.ibm.com/developerworks/cn/xml/x-1107xuj/
+
+PMML标准介绍及其在数据挖掘任务中的应用
+
+## FlatBuffers
+
+FlatBuffers是Google为嵌入式平台打造的二进制格式，执行效率优于Protocol Buffers。但它的出名，却是由于Facebook最早在其Android App上使用。因此，有的文章也将之称为是Facebook发明的，但其实这是不正确的。
+
+官网：
+
+https://google.github.io/flatbuffers/
+
+参考：
+
+http://www.cnblogs.com/wingyip/p/5185593.html
+
+FlatBuffers初探
+
+## Thrift
+
+官网：
+
+https://thrift.apache.org/
+
+安装：
+
+`sudo apt install libthrift-dev`
