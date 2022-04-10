@@ -23,6 +23,10 @@ https://www.zhihu.com/answer/799863112
 
 二战东部阵线变化动态演示
 
+https://www.zhihu.com/zvideo/1495387706494119936
+
+二战前线军队数量变化图
+
 https://baike.baidu.com/item/翠堤春晓/19780363
 
 翠堤春晓（1944年德军战俘游街示众行动）

@@ -310,4 +310,4 @@ https://thrift.apache.org/
 
 安装：
 
-`sudo apt install libthrift-dev`
+`sudo apt install libthrift-dev thrift-compiler`
