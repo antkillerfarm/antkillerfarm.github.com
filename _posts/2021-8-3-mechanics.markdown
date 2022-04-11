@@ -204,6 +204,10 @@ https://www.zhihu.com/question/51633265
 
 一直搞不懂，中国为什么还在使用轰6这种几十年前设计的亚音速轰炸机机型？
 
+https://www.zhihu.com/question/271957617
+
+搭乘三叉戟（Trident）客机是怎样一番体验？
+
 ---
 
 https://mp.weixin.qq.com/s/KuIf0oIkLjMTKp2FgAnpyA

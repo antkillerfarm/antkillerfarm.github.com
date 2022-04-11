@@ -249,6 +249,8 @@ RCU（Read-Copy Update）机制读取数据的时候不对链表进行耗时的�
 
 RCU适用于需要频繁的读取数据，而相应修改数据并不多的情景，例如在文件系统中，经常需要查找定位目录，而对目录的修改相对来说并不多，这就是RCU发挥作用的最佳场景。
 
+ABA问题是指在CAS操作时，其他线程将变量值A改为了B，但是又被改回了A，等到本线程使用期望值A与当前变量进行比较时，发现变量A没有变，于是CAS就将A值进行了交换操作，但是实际上该值已经被其他线程改变过。
+
 https://mp.weixin.qq.com/s/mTOzcdjaak-z6ypL9MR2Lw
 
 小白科普：悲观锁和乐观锁
@@ -312,6 +314,10 @@ Linux内核中的RCU
 https://mp.weixin.qq.com/s/azy-lYHTtqdq2OrGwkfsmQ
 
 图解多线程+1的最快操作
+
+https://blog.csdn.net/qq_47768542/article/details/109117044
+
+CAS原理分析及ABA问题详解
 
 # 动态库
 

@@ -45,6 +45,10 @@ https://mp.weixin.qq.com/s/FVcmCvimpoGCtCtm4RDtUg
 
 浅谈先进封装技术
 
+https://mp.weixin.qq.com/s/MXuN1ccza508TMkcYVadvA
+
+芯片封装简史
+
 ## 片上网络
 
 片上网络network-on-chip（NoC）是片上系统 system-on-chip（SoC）的一种新的通信方法。它是多核技术的主要组成部分。NoC方法带来了一种全新的片上通信方法，显著优于传统总线式系统（bus）的性能。

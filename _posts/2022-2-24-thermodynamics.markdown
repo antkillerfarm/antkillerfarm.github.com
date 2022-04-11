@@ -91,6 +91,14 @@ https://www.zhihu.com/question/28876576
 
 ---
 
+![](/images/img4/ice_box.jpg)
+
+https://zhuanlan.zhihu.com/p/384223882
+
+直冷冰箱VS风冷冰箱的区别
+
+---
+
 https://mp.weixin.qq.com/s/R__7gmP4upYPf1URBzTRug
 
 冬日里的“水货”：挨了冻，内心居然更膨胀了？

@@ -113,6 +113,14 @@ https://www.sohu.com/a/44874266_114834
 
 ---
 
+莫尔斯早期的艺术生涯非常顺利，先后受托为前总统约翰·亚当斯和詹姆斯·门罗创作肖像画。他的作品还被悬挂在国会大厅，供众人参观。
+
+https://mp.weixin.qq.com/s/QcNm1x-RxagvgkXIXzhJMw
+
+萨缪尔·莫尔斯：电报之父的传奇人生
+
+---
+
 https://mp.weixin.qq.com/s/YdoIVBpn1dFUEzDEF5pYJw
 
 被迫离开工作近20年的公司，半导体老兵上演逆袭。林孝平，一个小儿麻痹患者。
