@@ -63,6 +63,42 @@ https://mp.weixin.qq.com/s/2yxexZUr5MWdMZ02GCSwdA
 
 谈谈JVM内部锁升级过程
 
+## 动态代理
+
+动态代理可以动态的创建代理类并处理对”实际对象”的调用。
+
+面向对象的编程之中，想要约定Proxy和RealSubject实现相同的功能（函数方法）有两种方式：
+
+a、定义一个功能接口，Proxy 和RealSubject都实现这个接口。
+
+b、通过继承，Proxy继承自RealSubject，这样Proxy则拥有了RealSubject的功能，
+
+JDK中提供的创建动态代理的机制采用a思路；而cglib采用b思路（spring两者都使用了）。 
+
+https://www.cnblogs.com/secbro/p/12537367.html
+
+Java代理模式及动态代理详解
+
+https://www.cnblogs.com/whirly/p/10154887.html
+
+Java动态代理详解
+
+https://cloud.tencent.com/developer/article/1525580
+
+彻底搞懂Java动态代理
+
+https://mp.weixin.qq.com/s/58CkiW1ZjqiwLWctJbBVFg
+
+深入浅出动态代理
+
+https://zhuanlan.zhihu.com/p/87393183
+
+Java常见几种动态代理的对比
+
+https://www.runoob.com/w3cnote/cglibcode-generation-library-intro.html
+
+CGLIB(Code Generation Library) 介绍与原理
+
 ## 参考
 
 http://blog.csdn.net/u014717036/article/details/52234679
@@ -311,76 +347,6 @@ https://zhuanlan.zhihu.com/p/438734215
 
 揭秘Chromium渲染引擎（一）：RenderingNG
 
-# python++
-
-https://mp.weixin.qq.com/s/MzORtWN-mSmY9N5Ps5m5Mw
-
-Python+Dash快速web应用开发：回调交互篇（上）
-
-https://mp.weixin.qq.com/s/_o5upbRqjADpCkZ0q0ZwkA
-
-Python+Dash快速web应用开发：回调交互篇（中）
-
-https://mp.weixin.qq.com/s/81HauaX6fWstbUfgp3pJvw
-
-Python+Dash快速web应用开发：回调交互篇（下）
-
-https://mp.weixin.qq.com/s/RlJ5Y6xJ-8NfDW7oSZlYbw
-
-深入Python解释器源码，我终于搞明白了字符串驻留的原理！
-
-https://mp.weixin.qq.com/s/LeTNcQCT4mYu6HSlGoHbzQ
-
-手机最强Python编程神器，在手机上运行Python不再是梦！
-
-https://mp.weixin.qq.com/s/5xs1ivkrUAP_Rr9P-EMc5g
-
-代码优化指南：人生苦短，我用Python。这篇blog主要介绍了如何追踪Python脚本的CPU使用情况。
-
-https://mp.weixin.qq.com/s/HGH2e_0ocHv2VWsjOje9BQ
-
-程序员必知的Python陷阱与缺陷列表
-
-http://blog.csdn.net/linda1000/article/details/8315892
-
-单引号、双引号和三双引号的区别
-
-https://mp.weixin.qq.com/s/RP2j-PQMsAIXOK5u4zt3ZA
-
-Python加速运行技巧
-
-https://mp.weixin.qq.com/s/7sQ6p0IDWvttbvv_c71Etg
-
-Python单元测试详解
-
-https://mp.weixin.qq.com/s/TMcj-X5SmOqOgh6Ljkb3sw
-
-模型热更新小记
-
-https://mp.weixin.qq.com/s/czqO4Lo1Jt9zqg2UKNlLYg
-
-手把手教你用Python创建微信聊天机器人
-
-https://mp.weixin.qq.com/s/nT4GLtDtJ1MUg8TBHBDf_A
-
-足不出户也能放风筝？OpenGL一招搞定！
-
-https://mp.weixin.qq.com/s/7KdH2Zx3ugK6DXn5SYewAw
-
-盘点Python加密解密模块hashlib的7种加密算法
-
-https://mp.weixin.qq.com/s/EWnXlinxEJgzdRGJH4bFTQ
-
-只需一行代码，就能导入所有的Python库？
-
-https://mp.weixin.qq.com/s/egThaVvcgV_-opocwxWOVA
-
-让Python代码简洁的实用技巧
-
-https://mp.weixin.qq.com/s/xamO4TZS90FtZMcn398stQ
-
-推荐3个Python文本终端GUI框架
-
 # 汇编
 
 https://mp.weixin.qq.com/s/OWGi1htNugOv81ZFPinRGw
@@ -434,3 +400,29 @@ elf格式除了代码和数据外还有很多有用的信息，可以被标准bo
 https://www.zhihu.com/question/49580321
 
 C如何编译出一个不需要操作系统的程序？
+
+# Latex+
+
+https://mp.weixin.qq.com/s/LumDQL9VKTHWK3RkOhKFcg
+
+1行代码搞定Latex公式编写，这个4.6M的Python小插件，堪称论文必备神器（handcalcs）
+
+https://zhuanlan.zhihu.com/p/268332132
+
+知乎公式编辑器的高级“玩法”
+
+https://mp.weixin.qq.com/s/E4EECj0QQ90ElfPqOL80eg
+
+Python编辑公式竟可以如此简单（latexify_py）
+
+https://zhuanlan.zhihu.com/p/38178015
+
+使用VSCode编写LaTeX
+
+https://zhuanlan.zhihu.com/p/194831235
+
+Knuth-Plass换行算法
+
+https://mp.weixin.qq.com/s/kGVLsqstajyrZ_cfkFegrA
+
+Latex数学排版简洁指南

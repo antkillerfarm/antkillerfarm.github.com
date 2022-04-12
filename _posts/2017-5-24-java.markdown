@@ -11,13 +11,19 @@ category: language
 
 ## Java反射机制
 
-Java反射机制容许程序在运行时加载、探知、使用编译期间完全未知的classes。参见：
+Java反射机制容许程序在运行时加载、探知、使用编译期间完全未知的classes。换言之，Java可以加载一个运行时才得知名称的class，获得其完整结构。
+
+参见：
 
 http://blog.csdn.net/yongjian1092/article/details/7364451
+
+Java反射机制详解
 
 反射机制的一个副产品是可以访问私有变量和私有方法。（笔试题的常客）
 
 http://blog.csdn.net/nisaijie/article/details/5692901
+
+java反射访问私有变量和私有方法
 
 ## JavaFX
 

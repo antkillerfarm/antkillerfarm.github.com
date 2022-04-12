@@ -113,6 +113,16 @@ https://mp.weixin.qq.com/s/IM57guTCRvx7Pz5wDDgOTA
 
 ## SQL
 
+1970: NoSQL = We have no SQL
+
+1980: NoSQL = Know SQL
+
+2000: NoSQL = No SQL!
+
+2005: NoSQL = Not only SQL
+
+2013: NoSQL = No, SQL!
+
 ![](/images/img3/sql_join.png)
 
 https://www.cnblogs.com/liuqifeng/p/9148831.html
