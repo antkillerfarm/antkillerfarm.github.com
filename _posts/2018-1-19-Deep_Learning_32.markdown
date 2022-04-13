@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十二）——点云, AutoDL（1）
+title:  深度学习（三十二）——点云, AutoDL（1）, PDE
 category: DL 
 ---
 
@@ -287,3 +287,27 @@ https://mp.weixin.qq.com/s/s225jEDZRBggPuu2lOGnNA
 https://mp.weixin.qq.com/s/57Vxc1A5FCVbMdDYShWiDA
 
 单网络内部集成：我要打十个！
+
+# PDE
+
+偏微分方程（Partial differential equation）的求解一直是数学和物理的热点问题。
+
+在前DL时代，主要有以下方法：
+
+有限差分方法（FDM)是计算机数值模拟最早采用的方法，至今仍被广泛运用。该方法将求解域划分为差分网格，用有限个网格节点代替连续的求解域。
+
+有限元方法(FEA)的基础是变分原理和加权余量法，其基本求解思想是把计算域划分为有限个互不重叠的单元，在每个单元内，选择一些合适的节点作为求解函数的插值点，将微分方程中的变量改写成由各变量或其导数的节点值与所选用的插值函数组成的线性表达式，借助于变分原理或加权余量法，将微分方程离散求解。
+
+Physics-informed neural networks：
+
+![](/images/img4/PDE.png)
+
+PINNs的Python库DeepXDE：
+
+https://deepxde.readthedocs.io
+
+参考：
+
+https://blog.csdn.net/qq_38517015/article/details/101468893
+
+《DeepXDE:a deep learning library for solving differential equations》梳理

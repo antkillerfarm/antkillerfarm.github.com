@@ -161,6 +161,10 @@ https://news.ifeng.com/c/8Emu7czkfWy
 
 俄罗斯宣布从基辅方向撤军，要停战了？
 
+https://news.ifeng.com/c/8ErWfeGuVev
+
+将军阵亡率15%？俄军在乌克兰遭遇了什么
+
 https://www.zhihu.com/answer/2387251266
 
 如何评价俄罗斯国防部长绍伊古？

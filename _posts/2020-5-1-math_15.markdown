@@ -231,6 +231,18 @@ http://jonvoisey.net/blog/2018/05/almagest-index/
 
 Almagest(天文学大成, Ptolemy著)
 
+https://www.math.csi.cuny.edu/~ikofman/Polking/The%20Geometry%20of%20the%20Sphere.html
+
+The Geometry of the Sphere
+
+https://mathstat.slu.edu/escher/index.php/Spherical_Geometry
+
+Spherical Geometry
+
+https://zhuanlan.zhihu.com/p/97346034
+
+球面三角学基础
+
 # 数学杂谈
 
 ![](/images/img4/sheep.png)
