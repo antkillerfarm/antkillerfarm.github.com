@@ -17,10 +17,6 @@ category: World
 
 2月24日 普京宣布在顿巴斯地区展开军事行动。
 
-https://zhuanlan.zhihu.com/p/474995443
-
-俄乌战报3.2
-
 ISW（The Institute for the Study of War）的官网：
 
 https://www.understandingwar.org/
@@ -185,6 +181,8 @@ Yulia Zdanovska
 
 在苏梅方向，俄军打了几天，还奇怪怎么乌军总能提前开火。后来才发现，乌军就在城市交通中控指挥大厅看着监控屏幕在指挥战斗。
 
+南线俄军在己方地面部队已经攻占的别尔江斯克大搞两栖登陆。。。
+
 ---
 
 2014年克里米亚、顿巴斯俄罗斯局势翻盘的总“操盘手”、前线指挥官，后任俄罗斯对外情报局副局长，被中国的俄罗斯研究者称为“俄罗斯岳飞”的斯特列科夫。
@@ -192,3 +190,7 @@ Yulia Zdanovska
 https://zhuanlan.zhihu.com/p/479754619
 
 俄罗斯当代军神斯特列科夫
+
+---
+
+俄军：T-90M、T-90A、T-80UE算“高档货”，T-90（基础型）、T-80U、T-80BVM、T-72B3/B3M算“中高档”，T-72BA/BV算“中档货”，T-72A是“低档货”。

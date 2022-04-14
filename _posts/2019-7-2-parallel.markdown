@@ -97,6 +97,10 @@ https://mp.weixin.qq.com/s/ai_XI8ddP5I2m3ChCqnQsA
 
 高效大规模机器学习训练，198页PDF带你概览领域前沿进展
 
+https://openmlsys.github.io
+
+机器学习系统：设计和实现
+
 https://mp.weixin.qq.com/s/RAjusu-Jyqb8K19N8KZ_3w
 
 一份552页《大规模数据系统：Large-scale Data Systems》硬核课程PPT
