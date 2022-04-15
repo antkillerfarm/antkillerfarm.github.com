@@ -135,6 +135,10 @@ https://www.lhh1.com/files/article/html/0/32/index.html
 
 壮怀激烈50军
 
+https://mp.weixin.qq.com/s/EUwe5XrN2Uf21wjPnG3oqQ
+
+英军准将扬言和中国人决一死战，三天后，他不仅逃了，还抛弃部队
+
 ---
 
 师长对580团的要求是阻击敌人一天。现在，可以说已经完成任务了，但上级为什么不下撤离的命令呢？
