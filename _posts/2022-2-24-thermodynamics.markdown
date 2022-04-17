@@ -123,3 +123,6 @@ https://mp.weixin.qq.com/s/Kfiz22KpxHtkQof3C5g81A
 
 卡路里的身世变迁
 
+https://zhuanlan.zhihu.com/p/24900853
+
+蒸汽机的进化（上）：从Savery到Newcomen

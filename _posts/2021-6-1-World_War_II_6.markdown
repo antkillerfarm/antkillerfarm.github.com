@@ -19,6 +19,8 @@ category: WW2
 
 # 二战轶事
 
+![](/images/img4/WW2.gif)
+
 https://www.zhihu.com/answer/799863112
 
 二战东部阵线变化动态演示
