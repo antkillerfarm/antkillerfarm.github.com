@@ -1,13 +1,133 @@
 ---
 layout: post
-title: 阿波罗50年, 天文杂谈（一）
+title: 火星探测, 阿波罗50年, 天文杂谈
 category: Nature 
 ---
 
 * toc
 {:toc}
 
-# 火星探测（续）
+# 中国航天（续）
+
+有哪些航空航天上的事实，没有一定航空航天知识的人不会相信？
+
+https://www.zhihu.com/question/31377936
+
+中国现有的技术能够实现载人登月吗？
+
+https://www.zhihu.com/question/465899092
+
+如何看待中国空间站操作界面都是中文？
+
+https://mp.weixin.qq.com/s/klSndj6LPENaW53OPq15Yg
+
+中国在太空用上了机械臂，却被美国人质疑会去抓他们的卫星？
+
+# 火星探测
+
+在太空动力学，霍曼转移轨道（或译为郝曼转移轨道，Hohmann transfer orbit）是一种变换太空船轨道的方法，途中只需两次引擎推进，相对地节省燃料。此种轨道操纵名称来自Walter Hohmann，他于1925年出版了相关著作。
+
+>Walter Hohmann，1880~1945，德国工程师，亚琛工业大学博士。轨道动力学（orbital dynamics）之父。
+
+![](/images/img2/Hohmann.gif)
+
+---
+
+《火星叔叔马丁》、《异星战场之火星公主》。
+
+https://mp.weixin.qq.com/s/oHO6TZuFGeGdDbACdOjS9w
+
+马丁叔叔所在的火星，有公主吗？
+
+---
+
+F´(F Prime)是一个组件驱动的框架，可以快速开发和部署航天飞行及其他嵌入式软件应用程序。而F´也是火星无人机“机智号”所用的飞行软件框架，它刚由毅力号携带到火星。
+
+https://github.com/nasa/fprime
+
+https://mp.weixin.qq.com/s/8Zepha-05GRiC5bGVp0LkQ
+
+Linux登陆火星，占有率再超Windows，NASA还在GitHub发布源码教程
+
+https://mp.weixin.qq.com/s/x9Nps_oGoVQd2PW3H2VdyA
+
+人类刚给火星送去Linux系统，以及一款安卓手机芯片
+
+---
+
+格鲁什科和萨格尔耶夫认为，苏联应该放弃失败率居高不下的火星探测，不在这一领域与美国人竞争，而专注于十分成功的金星探测计划。他们及其支持者也被戏称为“金星人”。
+
+当然，远非所有人都支持他们的看法。毕竟，相比于浓云密布、灼热的金星而言，火星看起来更有趣，也能取得更多的科研成果。支持火星探测计划的科学家则被称为“火星人”。
+
+“金星人”和“火星人”关于苏联行星探索方向的争论被时人戏称为“行星间的战争”。
+
+https://mp.weixin.qq.com/s/xWBSzEfKAi2pMUldp0zL9w
+
+先发未能制人，苏联探火为何成果寥寥
+
+---
+
+![](/images/img4/walle.jpg)
+
+![](/images/img4/walle_2.jpg)
+
+---
+
+https://mp.weixin.qq.com/s/SqL5WlQXQgNNiXHACfeN1A
+
+苏萌解读“天问一号”：中国人为什么要探测火星？
+
+https://www.zhihu.com/question/312142122
+
+如何评价NASA宣布机遇号火星车永久失联？
+
+https://mp.weixin.qq.com/s/FT6HTL1AGPddPpxdngvlFA
+
+中国“天问一号”即将发射，2020火星年，围观各国火星探测计划！
+
+https://mp.weixin.qq.com/s/N3rxdJVE3qtFUDbd5g_eJA
+
+“天问一号”发射升空！在火星上，能看到哪些天象奇观？
+
+https://mp.weixin.qq.com/s/HVxnSCfLuz3-RMynleCSSQ
+
+天问一号发射了，回火星的票你买了吗？
+
+https://mp.weixin.qq.com/s/C4-HY5xmV8hHtfHfTJ4jFg
+
+关于火星探测的问号，这篇文章都给你拉直
+
+https://mp.weixin.qq.com/s/iAHpr8ZmChCDWGuFxC9uQQ
+
+发射成功！探测火星八大关卡，“天问一号”到了哪一关？
+
+https://mp.weixin.qq.com/s/Y1xXt9yPYYHCBUtZJddkoQ
+
+核动力优势明显，天问一号为什么还要使用太阳能？
+
+https://mp.weixin.qq.com/s/5F4wORf1k2XDIMKzFZBTDw
+
+古人为了看火星，都是怎么做的？
+
+https://mp.weixin.qq.com/s/VMfL5iF3BJg9Xnu5zI3RAA
+
+NASA毅力号直播攻略来了！万字长文详解火星任务：直升机飞行测试、寻找生命迹象、开启往返火星第一步
+
+https://mp.weixin.qq.com/s/rv2ayzNS4OpFHFKyW0Papw
+
+火星陨石的地球“流浪记”
+
+https://mp.weixin.qq.com/s/rLcrrCQnB9gy6gMbFXTAkg
+
+火星上曾有过河流吗？
+
+https://mp.weixin.qq.com/s/5KR2vlOq5HuFLIJNl3Q3pw
+
+从“中国第一张火星近照”中猜到的：这张照片怎么拍的？
+
+https://mp.weixin.qq.com/s/5YK6qK-aUQ-_RuQVzaSH8w
+
+指南针在火星上能用吗？
 
 https://mp.weixin.qq.com/s/cht7uCrbhAttO1cmXRvcPw
 
@@ -191,14 +311,6 @@ https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
 
 ---
 
-1929年，余青松接任天文研究所第二任所长后，秉承高鲁的宏愿，费时五载，于公元1935年，建立紫金山天文台。1938年因抗日战争，他主持该台的内迁工作，并在昆明东郊建成了昆明凤凰山天文台。
-
-https://mp.weixin.qq.com/s/vMe5RmD8uBW3AeGDYwbI5A
-
-紫金山天文台的创立（高鲁、余青松）
-
----
-
 现代农历是民国时期开始用的。自古每当王朝更迭，第一件事就是改历法，一方面体现新朝气象，一方面也因为旧历使用多年，已经有了误差。
 
 民国成立时也未能免俗，废除了清朝使用的时宪历，1929年推出了紫金历，也就是现代农历。
@@ -211,80 +323,8 @@ https://www.zhihu.com/question/405115980
 
 ---
 
-1928年10月25日，一位旅美求学的中国青年在美国叶凯士天文台发现一颗小行星（临时编号为1928 UF），这是第一颗由中国人发现的小行星。这位青年学子感怀祖国，随即将其命名为中华星（1125 China）。
+1929年，余青松接任天文研究所第二任所长后，秉承高鲁的宏愿，费时五载，于公元1935年，建立紫金山天文台。1938年因抗日战争，他主持该台的内迁工作，并在昆明东郊建成了昆明凤凰山天文台。
 
-不久，青年回国效力，成为中国现代天文学的拓荒者之一，但却再也没找到这颗小行星的踪迹。直到1957年10月30日，青年在紫金山天文台发现了一颗轨道酷似1125的小行星。
+https://mp.weixin.qq.com/s/vMe5RmD8uBW3AeGDYwbI5A
 
-虽后经证实这颗小行星并非1125，但20年后的1977年，当这颗小行星的轨道被精确确定后，国际小行星命名委员会破例将“1125 China”给了这颗新发现的小行星。而原本以为失踪了的1125号小行星，却在1986年被再次观测到，并于1988年被重新命名为中国星（3789 zhongguo）。
-
->张钰哲，1902～1986，芝加哥大学博士（1929），中国近代天文学的奠基人。中国科学院院士。紫金山天文台台长。1941年9月21日，在战时极端困难的条件下，他组织了中国境内第一次日全食的科学观测，拍摄了中国境内第一张日全食照片和第一部日全食彩色影片。
-
-https://mp.weixin.qq.com/s/0zlHeZsr_gVNoaufr_--Hw
-
-给飞过头顶的星星起个响当当的名字
-
-https://zhuanlan.zhihu.com/p/61467796
-
-抗日时期，中国人完成哪些不可能做到的壮举？
-
----
-
-1990年发射的哈勃太空望远镜，由于一片镜片边缘磨薄了2.2mm，相机镜头misallignment, 最终导致发射后拍摄图像模糊。
-
-NASA的科学家开始没有意识到是望远镜的镜头质量问题，还在讨论是不是外太空就是模模糊糊的形态……
-
-后来相机工程师发现了是由于一个镜片零件生产误差造成的问题，花了3年时间在太空修复了这个问题，避免了重新发射，为NASA节省了47亿美元。科学家终于能拍到清晰的太空图像了。
-
-另一个已于2020年退役的太空红外望远镜斯皮策空间望远镜（Spitzer Space Telescope）覆盖波长为3-180微米，但其镜面直径仅为0.85米，观测能力有限。
-
-20年代三大空间巡天望远镜——载人空间站工程巡天空间望远镜（Chinese Survey Space Telescope, 简称CSST，亦被称为Chinese Space Station Telescope）、欧洲航天局的欧几里得（Euclid）和美国航天局的罗曼太空望远镜（Roman Space Telescope）。
-
-https://mp.weixin.qq.com/s/Wcd_bv_bt-xv42UD40dDww
-
-深度传感进化史
-
-https://mp.weixin.qq.com/s/8vRFfFLdLWSPpTzHjUKegQ
-
-哈勃太空望远镜30岁生日快乐！我们看到的宇宙因你而不同
-
-https://www.zhihu.com/question/452589619
-
-中国空间站工程巡天望远镜和哈勃相比有什么优势和劣势？
-
-https://www.zhihu.com/question/363427886
-
-很多人说哈勃望远镜是锁眼卫星的民用版，那么锁眼调转过去观测宇宙能够达到哈勃的效果吗？
-
-https://zhuanlan.zhihu.com/p/36125534
-
-哈勃28周岁，但大家知道锁眼么？
-
-https://mp.weixin.qq.com/s/DFUMQ08Efr5iJJJlRthsOA
-
-这将是中国有史以来最昂贵、也最先进的望远镜（巡天空间望远镜）
-
-https://mp.weixin.qq.com/s/k1v-sDi0x1pRDZsHcDRTpA
-
-雄心勃勃，中国建造首个大型太空光学望远镜
-
----
-
-https://view.inews.qq.com/wxn/20211224A03SC600
-
-韦伯望远镜即将发射！梭哈百亿美元上天，是为了看啥？
-
-https://view.inews.qq.com/wxn/20211225A0A9SJ00
-
-韦伯望远镜成功背后：成本约110亿美元，共推迟发射18次
-
-https://view.inews.qq.com/wxn/20211225A08N9G00
-
-“鸽王之王”韦伯终于上天！比哈勃看得更远，烧钱更多
-
-https://mp.weixin.qq.com/s/AIMccIbtB6W5nwu-6yRuJw
-
-“鸽王” 韦伯上天之前，你需要知道这些
-
-https://mp.weixin.qq.com/s/BYw9HJehGC528WkX_q4JLw
-
-情人节将至，韦伯望远镜首次太空“睁眼”！
+紫金山天文台的创立（高鲁、余青松）

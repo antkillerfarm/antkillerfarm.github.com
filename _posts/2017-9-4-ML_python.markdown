@@ -118,6 +118,12 @@ Anaconda同时也支持多个Python版本的并存和切换。它的底层用到
 
 `conda deactivate`
 
+安装包：
+
+`conda install XXX`
+
+conda环境也支持用pip安装包，而且在`conda list`的时候会给出来源。
+
 参考：
 
 http://www.cnblogs.com/zhusleep/p/5616099.html

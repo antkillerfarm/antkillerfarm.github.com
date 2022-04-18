@@ -197,7 +197,7 @@ https://wallstreetcn.com/articles/250536
 
 http://blog.sina.com.cn/s/blog_52f526870102w7xo.html
 
-历经百年兴衰 德国化工三巨头为何屹立不倒
+历经百年兴衰 德国化工三巨头为何屹立不倒（巴斯夫、拜耳、赫希斯特）
 
 http://www.weixinso.com/document/KPyZBb.html
 

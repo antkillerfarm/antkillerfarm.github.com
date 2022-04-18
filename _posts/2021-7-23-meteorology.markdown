@@ -102,7 +102,6 @@ Hadley Cells
 2021.7.20
 
 <video  id="myvideo" width="100%" height="auto" controls="controls" loop="loop">
-    你的浏览器不支持HTML5播放此视频
     <source src="/images/img4/rainstorm.mp4" type='video/mp4' />
 </video>
 
@@ -243,3 +242,61 @@ https://mp.weixin.qq.com/s/vSLGvcII2z8DBKBrV6JLOA
 https://mp.weixin.qq.com/s/VIMKnqcoNw4VGigZJiDoYg
 
 泾渭分明：中国北方的气候变迁史
+
+# 天文杂谈+
+
+https://mp.weixin.qq.com/s/I7iLRXWAttIomGp-ra61AA
+
+日冕观测进化史：日食太少，我们就造一个出来
+
+https://mp.weixin.qq.com/s/rBFmWjHDOcdUz3uKQ3HqMA
+
+宇宙的数字
+
+https://mp.weixin.qq.com/s/nCSgobpyy4-U9z1ycMXg0g
+
+在美丽的稻城，我们建了一个漂亮的“天阵”，它的名字叫拉索
+
+https://mp.weixin.qq.com/s/xfJ_EiAoW0i_k_zUWHoQTQ
+
+先磕为敬！你们两颗星星为什么这么浪漫这么甜？（冥王星和卡戎）Charon是冥王的船夫，负责将逝者摆渡过冥河。
+
+https://mp.weixin.qq.com/s/nzoE3EYOhwfg-D7Uz5PyxQ
+
+太阳观测的新窗口
+
+https://mp.weixin.qq.com/s/PrsKjWC9YC2mRE1pI1dFCg
+
+杨利伟被文盲编辑坑了？《地月同辉》考
+
+https://mp.weixin.qq.com/s/MWNhWTTef4L7RGz-340kuQ
+
+人工智能，如何“拯救”不堪重负的天文学家？
+
+https://mp.weixin.qq.com/s/rF42Dmj3_PcGsOj17am7VA
+
+我们的坐标，已经被2000多颗星星熟知
+
+https://mp.weixin.qq.com/s/LnNRNKqecwJyUtrKS1HfkQ
+
+脉冲星研究
+
+https://mp.weixin.qq.com/s/pJQnMZthdNIQEi0jqwliHg
+
+木星持续“发烧”的幕后推手找到了，原来是它！
+
+https://mp.weixin.qq.com/s/LsNhcqXFDg5qTbsQI2a95Q
+
+在不同的世界，我们会看到…
+
+https://mp.weixin.qq.com/s/bwfRBCiLJqNZBxrZDpjcEQ
+
+天文学家与野生动物的爱恨情仇
+
+https://www.zhihu.com/question/25663240
+
+为何说银河系的中央是巨大的黑洞？
+
+https://www.zhihu.com/question/28099598
+
+怎样测量天体的质量?

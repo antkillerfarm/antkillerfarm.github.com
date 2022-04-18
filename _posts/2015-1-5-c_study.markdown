@@ -37,6 +37,18 @@ https://www.edg.com/
 
 这是EDG的官网。它是一家专门做C++前端的公司。因此，他们的更新和开源项目gcc/Clang一样勤，也就不足为奇了。事实上它的商业模式就是：如果硬件公司没有实力或财力做编译器，那么就购买我的前端好了。
 
+---
+
+Compiler Explorer是Matt Godbolt创建的一个在线编译网站。支持不同版本的gcc生成不同平台的汇编代码。
+
+官网：
+
+https://godbolt.org/
+
+代码：
+
+https://github.com/compiler-explorer/compiler-explorer
+
 # 历史
 
 https://mp.weixin.qq.com/s/cfBT0wsqzZRwedMO7Qz_vA

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 天文杂谈（二）
+title: 天文杂谈
 category: Nature 
 ---
 
@@ -8,6 +8,86 @@ category: Nature
 {:toc}
 
 # 天文杂谈
+
+1990年发射的哈勃太空望远镜，由于一片镜片边缘磨薄了2.2mm，相机镜头misallignment, 最终导致发射后拍摄图像模糊。
+
+NASA的科学家开始没有意识到是望远镜的镜头质量问题，还在讨论是不是外太空就是模模糊糊的形态……
+
+后来相机工程师发现了是由于一个镜片零件生产误差造成的问题，花了3年时间在太空修复了这个问题，避免了重新发射，为NASA节省了47亿美元。科学家终于能拍到清晰的太空图像了。
+
+另一个已于2020年退役的太空红外望远镜斯皮策空间望远镜（Spitzer Space Telescope）覆盖波长为3-180微米，但其镜面直径仅为0.85米，观测能力有限。
+
+20年代三大空间巡天望远镜——载人空间站工程巡天空间望远镜（Chinese Survey Space Telescope, 简称CSST，亦被称为Chinese Space Station Telescope）、欧洲航天局的欧几里得（Euclid）和美国航天局的罗曼太空望远镜（Roman Space Telescope）。
+
+https://mp.weixin.qq.com/s/Wcd_bv_bt-xv42UD40dDww
+
+深度传感进化史
+
+https://mp.weixin.qq.com/s/8vRFfFLdLWSPpTzHjUKegQ
+
+哈勃太空望远镜30岁生日快乐！我们看到的宇宙因你而不同
+
+https://www.zhihu.com/question/452589619
+
+中国空间站工程巡天望远镜和哈勃相比有什么优势和劣势？
+
+https://www.zhihu.com/question/363427886
+
+很多人说哈勃望远镜是锁眼卫星的民用版，那么锁眼调转过去观测宇宙能够达到哈勃的效果吗？
+
+https://zhuanlan.zhihu.com/p/36125534
+
+哈勃28周岁，但大家知道锁眼么？
+
+https://mp.weixin.qq.com/s/DFUMQ08Efr5iJJJlRthsOA
+
+这将是中国有史以来最昂贵、也最先进的望远镜（巡天空间望远镜）
+
+https://mp.weixin.qq.com/s/k1v-sDi0x1pRDZsHcDRTpA
+
+雄心勃勃，中国建造首个大型太空光学望远镜
+
+---
+
+https://view.inews.qq.com/wxn/20211224A03SC600
+
+韦伯望远镜即将发射！梭哈百亿美元上天，是为了看啥？
+
+https://view.inews.qq.com/wxn/20211225A0A9SJ00
+
+韦伯望远镜成功背后：成本约110亿美元，共推迟发射18次
+
+https://view.inews.qq.com/wxn/20211225A08N9G00
+
+“鸽王之王”韦伯终于上天！比哈勃看得更远，烧钱更多
+
+https://mp.weixin.qq.com/s/AIMccIbtB6W5nwu-6yRuJw
+
+“鸽王” 韦伯上天之前，你需要知道这些
+
+https://mp.weixin.qq.com/s/BYw9HJehGC528WkX_q4JLw
+
+情人节将至，韦伯望远镜首次太空“睁眼”！
+
+---
+
+1928年10月25日，一位旅美求学的中国青年在美国叶凯士天文台发现一颗小行星（临时编号为1928 UF），这是第一颗由中国人发现的小行星。这位青年学子感怀祖国，随即将其命名为中华星（1125 China）。
+
+不久，青年回国效力，成为中国现代天文学的拓荒者之一，但却再也没找到这颗小行星的踪迹。直到1957年10月30日，青年在紫金山天文台发现了一颗轨道酷似1125的小行星。
+
+虽后经证实这颗小行星并非1125，但20年后的1977年，当这颗小行星的轨道被精确确定后，国际小行星命名委员会破例将“1125 China”给了这颗新发现的小行星。而原本以为失踪了的1125号小行星，却在1986年被再次观测到，并于1988年被重新命名为中国星（3789 zhongguo）。
+
+>张钰哲，1902～1986，芝加哥大学博士（1929），中国近代天文学的奠基人。中国科学院院士。紫金山天文台台长。1941年9月21日，在战时极端困难的条件下，他组织了中国境内第一次日全食的科学观测，拍摄了中国境内第一张日全食照片和第一部日全食彩色影片。
+
+https://mp.weixin.qq.com/s/0zlHeZsr_gVNoaufr_--Hw
+
+给飞过头顶的星星起个响当当的名字
+
+https://zhuanlan.zhihu.com/p/61467796
+
+抗日时期，中国人完成哪些不可能做到的壮举？
+
+---
 
 ![](/images/img4/Van_Allen_radiation_belts.jpg)
 
@@ -228,59 +308,3 @@ https://mp.weixin.qq.com/s/nrjY7LOY_XuytJ2xXk3K1Q
 https://zhuanlan.zhihu.com/p/375675282
 
 美国超级工程，核弹炸月球
-
-https://mp.weixin.qq.com/s/I7iLRXWAttIomGp-ra61AA
-
-日冕观测进化史：日食太少，我们就造一个出来
-
-https://mp.weixin.qq.com/s/rBFmWjHDOcdUz3uKQ3HqMA
-
-宇宙的数字
-
-https://mp.weixin.qq.com/s/nCSgobpyy4-U9z1ycMXg0g
-
-在美丽的稻城，我们建了一个漂亮的“天阵”，它的名字叫拉索
-
-https://mp.weixin.qq.com/s/xfJ_EiAoW0i_k_zUWHoQTQ
-
-先磕为敬！你们两颗星星为什么这么浪漫这么甜？（冥王星和卡戎）Charon是冥王的船夫，负责将逝者摆渡过冥河。
-
-https://mp.weixin.qq.com/s/nzoE3EYOhwfg-D7Uz5PyxQ
-
-太阳观测的新窗口
-
-https://mp.weixin.qq.com/s/PrsKjWC9YC2mRE1pI1dFCg
-
-杨利伟被文盲编辑坑了？《地月同辉》考
-
-https://mp.weixin.qq.com/s/MWNhWTTef4L7RGz-340kuQ
-
-人工智能，如何“拯救”不堪重负的天文学家？
-
-https://mp.weixin.qq.com/s/rF42Dmj3_PcGsOj17am7VA
-
-我们的坐标，已经被2000多颗星星熟知
-
-https://mp.weixin.qq.com/s/LnNRNKqecwJyUtrKS1HfkQ
-
-脉冲星研究
-
-https://mp.weixin.qq.com/s/pJQnMZthdNIQEi0jqwliHg
-
-木星持续“发烧”的幕后推手找到了，原来是它！
-
-https://mp.weixin.qq.com/s/LsNhcqXFDg5qTbsQI2a95Q
-
-在不同的世界，我们会看到…
-
-https://mp.weixin.qq.com/s/bwfRBCiLJqNZBxrZDpjcEQ
-
-天文学家与野生动物的爱恨情仇
-
-https://www.zhihu.com/question/25663240
-
-为何说银河系的中央是巨大的黑洞？
-
-https://www.zhihu.com/question/28099598
-
-怎样测量天体的质量?

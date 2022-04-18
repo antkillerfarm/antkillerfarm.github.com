@@ -1,13 +1,153 @@
 ---
 layout: post
-title: 黑洞成像, SpaceX
+title: 黑洞成像
 category: Nature 
 ---
 
 * toc
 {:toc}
 
-# 黑洞成像（续）
+# 轨道学（续）
+
+木星的轨道上存在两个与木星运行轨道及速率一致两群小行星，统称为特洛伊群，其中运行在木星“前方”的为“希腊群”，运行在木星“后方”的为“纯特洛伊群”。
+
+![](/images/img2/InnerSolarSystem-en.png)
+
+上图中橙色的部分是Hilda asteroid，它实际上是一群更有意思的小行星。它们与木星间形成2:3的轨道共振。希尔达小行星的远日点可能是L3、L4、L5这三个拉格朗日点。当其连续绕太阳旋转三圈，会相继通过这三个点。
+
+![](/images/img2/Hildas01.jpg)
+
+上图是Hilda asteroid的分布图。其中左图还叠加了其他小行星群（主要是希腊群和特洛伊群）。
+
+![](/images/img3/solar.gif)
+
+由开普勒定律可知，公转周期越短，公转半径越小。所以可以利用这点的将Hilda asteroid从中区分开来。
+
+从上图还可以看出Hilda asteroid的公转轨道被木星引力挤压成了等边三角形。
+
+轨道共振现象还有木星和它的几个卫星：
+
+![](/images/img2/Galilean_moon_Laplace_resonance.gif)
+
+https://en.wikipedia.org/wiki/Titius–Bode_law
+
+https://en.wikipedia.org/wiki/Orbital_resonance
+
+当然，也不是所有的共振都能稳定存在，不能稳定存在的共振区也有，比如木星的Kirkwood Gaps。这个共振区的小行星都被木星清除了。
+
+---
+
+https://mp.weixin.qq.com/s/nbA86PutvWWcA7t89XWhfA
+
+三体问题
+
+https://mp.weixin.qq.com/s/aa41t7GoMl2im5uJuhc_KQ
+
+双体：有两颗恒星的星系是怎样的？
+
+https://mp.weixin.qq.com/s/L72Iwf7EZ5LbbBPRGQibdA
+
+双体：拥有两个太阳的家园
+
+https://mp.weixin.qq.com/s/HoCibMd3YurC1TeFIYm4jA
+
+双体：非环双星中的双体文明
+
+https://mp.weixin.qq.com/s/gjE_gqg14sGF8dFxNfeeWA
+
+双体：环双星系统中的地球
+
+https://www.zhihu.com/question/267166775
+
+真空中有两个位置固定的引力源(恒星)，一个质量较小的小球(行星)有哪些典型的稳定绕转方式?
+
+https://www.zhihu.com/answer/564059120
+
+水星为什么没有卫星？这个答案同样可以解释——为什么卫星没有卫星？
+
+https://www.zhihu.com/answer/106715405
+
+金星每八年的运行轨迹真的是五角形吗？
+
+https://www.zhihu.com/question/425376324
+
+根据牛顿万有引力定律可知，太阳对月球的引力大于地球对月球的引力，为什么月球仍然绕地球运动？（希尔球）
+
+https://new.qq.com/omn/20191012/20191012A0KQHZ00.html
+
+这个四星系统与我们以前见过的任何星系都不一样
+
+https://www.zhihu.com/question/352476422
+
+存在四星系统吗（及四星以上）?
+
+---
+
+![](/images/img3/Chicxulub-Crater-Yucatan.jpg)
+
+![](/images/img3/NEA.png)
+
+希克苏鲁伯陨石坑（Chicxulub Crater）是一个在墨西哥犹加敦或称尤卡坦半岛发现的陨石坑撞击遗迹。它的中心在一个叫做Chicxulub的村庄上，故名。然而由于坑太大，在坑底反而是一马平川，没啥坑。
+
+巴林格陨星坑（Barringer Crater），或称亚利桑那陨石坑：美国亚利桑那沙漠中一个直径1.2公里、深180米的巨大陨星坑，是大约5万年前一个陨星撞击地球而形成的。该陨星坑的名字取自矿业工程师丹尼尔·巴林格（Daniel Barringer），是他在20世纪初最先指出它是陨星撞击所造成的，比人们普遍接受这一观点早50多年。
+
+参见：
+
+https://mp.weixin.qq.com/s/-8WDtspQqL0ztmb7PJtokw
+
+当小行星来袭，除了让地球流浪，我们还能怎么做？
+
+https://mp.weixin.qq.com/s/NHjfCLp6k7GYh8fScL_UWg
+
+几天前，一颗小行星与地球擦肩而过，我们几乎毫不知情
+
+https://mp.weixin.qq.com/s/FLu3lWsqPbTsQFC9FMIYKQ
+
+今天一颗小行星跟地球“擦肩而过”，半个月前我们就发现了
+
+https://mp.weixin.qq.com/s/SaerXt0jYjtwKdWa-d2bPA
+
+不确定的未来：人类会因小天体的撞击而灭亡吗？
+
+https://www.zhihu.com/question/425874775
+
+人类300多万年的历史上，为何地球很少受到陨石大规模冲击？
+
+https://mp.weixin.qq.com/s/nXbjy6v0sgfG42DrRCohcA
+
+刚路过太阳，下面是地球人对我的探索回顾
+
+# 黑洞成像
+
+## 黑洞照片
+
+![](/images/img2/Black_hole_-_Messier_87.jpg)
+
+2019.4.10，EHT发布了人类第一张黑洞照片。拍摄日期：2017.4.11。拍摄对象：Messier 87星系的超大质量黑洞（$$3.5\times 10^9 M_{\odot} \sim 6.6 \times 10^9 M_{\odot}$$）
+
+![](/images/img2/BH-illum1.jpg)
+
+![](/images/img2/BH-illumin2.jpg)
+
+![](/images/img2/BH-illumin3.jpg)
+
+![](/images/img2/BH-illumin4.jpg)
+
+https://www.zhihu.com/question/319589547
+
+如何评价人类的第一张黑洞照片？
+
+https://blogs.futura-sciences.com/e-luminet/tag/black-hole/
+
+一个关于Black Hole Imaging的系列blog
+
+https://mp.weixin.qq.com/s/GTHiZZ0ox8GsYKseYfDiRw
+
+科学界大事要来，世界首张黑洞照片即将公布！
+
+https://mp.weixin.qq.com/s/zNs4NikZ912R3V1ZT2DcTg
+
+黑洞---像极了爱情！
 
 ## EHT
 
@@ -156,165 +296,3 @@ https://mp.weixin.qq.com/s/3KqyXlt69-wkkacQpkZ6uw
 https://mp.weixin.qq.com/s/qUCfrmnXBmm5LfdeU3GgxA
 
 时隔两载"黑洞"翻新：人类首次获得黑洞边缘的高清照片
-
-# SpaceX
-
-2018.2
-
-![](/images/img2/Falcon.jpg)
-
-![](/images/img2/Falcon_2.jpg)
-
-![](/images/img2/SpaceX.gif)
-
-![](/images/img2/SpaceX.png)
-
-![](/images/img2/rocket.jpg)
-
-https://www.zhihu.com/question/266793958
-
-如何看待SpaceX猎鹰重型火箭在美国时间2月6日发射并且回收成功？
-
-https://www.zhihu.com/question/21731308
-
-SpaceX猎鹰火箭和中国的长征系列火箭，各有什么优劣势？
-
-https://mp.weixin.qq.com/s/d6Z0pF7SG3mEFAgUuwTPZQ
-
-马斯克的“神性思维模式”，简直太神奇了！
-
-https://www.zhihu.com/question/314292163
-
-如何评价SpaceX载人龙飞船成功首飞并与国际空间站对接？
-
-https://www.zhihu.com/question/54009933
-
-空间站是怎么取暖？或者说是维持温度的呢？
-
----
-
-![](/images/img2/Elon_Musk.jpg)
-
-https://mp.weixin.qq.com/s/dQXL6L7Ct08QaczC9rdgqA
-
-专访梅耶·马斯克：硅谷钢铁侠是怎样被炼成的？
-
-https://mp.weixin.qq.com/s/MCofTDnwfbz7R9zuqEnX7w
-
-梅耶·马斯克：英雄的母亲，也成为他们的英雄
-
----
-
-2020.5
-
-![](/images/img4/spaceship.jpg)
-
-https://mp.weixin.qq.com/s/0zAIoiflCgwC2jMEdnJ6WQ
-
-马斯克的星际飞船，爆炸了
-
-https://mp.weixin.qq.com/s/-eNzkpxJ_nQOF0RURjuSUg
-
-96秒4.25亿！马斯克疯狂炸毁载人火箭猎鹰9，最贵烟花锤炼逃生系统
-
-https://mp.weixin.qq.com/s/tDdu0-wqtiqBetOuULgeTg
-
-马斯克又实现了一个“梦想”！人类首个商业载人航天飞船发射成功！
-
-https://mp.weixin.qq.com/s/q8qpmoDcHaEYWPpk0kFTFw
-
-Space X龙飞船成功发射，它和NASA到底有什么关系？
-
-![](/images/img3/NASA.png)
-
-![](/images/img3/Canaveral.jpg)
-
-https://mp.weixin.qq.com/s/u5BuBhkrgLkUfuGWHA5ZRg
-
-美国国防先进研究计划局（Defense Advanced Research Projects Agency, DARPA），如何成为美国科技的核心引擎？
-
-https://mp.weixin.qq.com/s/LTE-m0u6469kNk1Dple4Zg
-
-史上最全SpaceX火箭数据开源，核心、组员舱、起落架、发射信息全都有！
-
-https://www.zhihu.com/question/396878847
-
-SpaceX龙飞船中的新触控交互操作系统，意味着什么？
-
-https://mp.weixin.qq.com/s/m6UgJjvsNjQkMm_20tz5sQ
-
-成本相差5384倍，编程用C++和Python！马斯克如何搞翻航天圈（SpaceX的系统冗余设计）
-
-https://mp.weixin.qq.com/s/bwUZEzgAzANPgaWTFa3GHA
-
-马斯克是如何给NASA省钱的？
-
-https://mp.weixin.qq.com/s/J3bk8C-yp3O_PBxn_I9Ywg
-
-马斯克的星际飞船首次起飞测试成功！起跳150米后平稳着陆，“火星在望”
-
-https://www.zhihu.com/question/430470879
-
-如何看待SpaceX首次正式发射载人飞船，送四名宇航员进空间站，商业载人航天将进入怎样的新纪元？
-
-https://mp.weixin.qq.com/s/v56_d3UVm7ItmdHXYt1JjA
-
-马斯克只高兴了8分钟：星舰10号历史性成功着陆，却突然原地爆炸
-
-https://mp.weixin.qq.com/s/odjANeqbHuZAX4t_OhFwjw
-
-终于不再爆炸了！马斯克的星舰原型SN15挑战10千米高度，稳稳着陆
-
-https://mp.weixin.qq.com/s/Bvk-jZ4tbi3jXfDkYwiMlQ
-
-首次成功着陆：SpaceX星舰试飞实现突破
-
-https://mp.weixin.qq.com/s/ed93ZOHB62XKIREnOwIJIQ
-
-马斯克的火箭，这次没！爆！炸！
-
-https://www.zhihu.com/question/487093505
-
-SpaceX执行首次全平民任务，送4名普通人进太空旅行3天，有哪些亮点和里程碑意义？
-
----
-
-液氢液氧
-
-液氧煤油
-
-四氧化二氮+偏二甲肼（传说中的毒发）
-
-https://www.zhihu.com/question/315485320
-
-目前常见的“火箭燃料”有哪几种，各类燃料的优劣有哪些？
-
----
-
-齐奥尔科夫斯基火箭方程：
-
-$$\Delta V=v_e\ln \frac{m_0}{m_1}$$
-
-其中，$$\Delta V$$是速度增量，$$v_e$$是喷气速度，$$m_0,m_1$$分别是初始质量和终末质量。
-
----
-
-![](/images/img4/cost.jpg)
-
-https://www.zhihu.com/question/471620540
-
-马斯克称猎鹰9号回收和翻新过程仅占成本的10%，参考维护成本高昂的航天飞机，此话可信度如何？
-
----
-
-卡门线（Kármán line）是一条位于海拔100 km（330,000英尺）处，被大部分认可为外太空与地球大气层的界线的分界线。
-
----
-
-虽然亚里士多德和托勒密的天文学思想有很多区别，地圆却都是其中的核心事实。他们的思想一直影响着西方的天文学，直到由哥白尼引发并由伽利略、开普勒和牛顿等人推动的天文学革命。但在这场革命中，发生改变的主要是地球在宇宙中的位置，而地球的形状并未引起过争议。
-
-但对中国人来说，了解地球是圆的这个事实却花了很长的一段时间。中国自古以来有“天圆地方”的说法，其中的“地方”既指大地是方形，也指大地是平面。中国古代的宇宙观中有两种观念，分别是浑天说和盖天说。这两种说法的区别在于前者认为天地有相交会处，而后者认为天地是平行的，但是二者均没有地圆的观念。
-
-https://mp.weixin.qq.com/s/0lDJiu1nyS0j1aj7C4tT-g
-
-火箭狂人不幸坠亡，生前坚信“地平说”

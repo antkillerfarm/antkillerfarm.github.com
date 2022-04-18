@@ -10,7 +10,6 @@ category: Nature
 # 机械
 
 <video  id="myvideo" width="100%" height="auto" controls="controls" loop="loop">
-    你的浏览器不支持HTML5播放此视频
     <source src="/images/img4/gun.mp4" type='video/mp4' />
 </video>
 

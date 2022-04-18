@@ -127,6 +127,16 @@ https://www.sohu.com/a/537780964_115479
 
 ---
 
+俄罗斯的紫皮糖多数都是波罗申科家生产的，好多人还以为买糖能支援大毛。
+
+波罗申科：巧克力大王，旗下公司：如胜。
+
+https://www.zhihu.com/answer/2444031933
+
+为什么乌克兰军队能在俄罗斯联邦军队的攻击下坚持这么久？（波罗申科军事改革）
+
+---
+
 https://new.qq.com/omn/20220224/20220224A06G0T00.html
 
 基辅攻陷：普京闪电战，一个半小时打趴乌克兰；绍伊古一战封神，比肩战神朱可夫
@@ -186,39 +196,3 @@ https://news.ifeng.com/c/8EeAtgpJ0Ob
 https://news.ifeng.com/c/8Emu7czkfWy
 
 俄罗斯宣布从基辅方向撤军，要停战了？
-
-https://news.ifeng.com/c/8ErWfeGuVev
-
-将军阵亡率15%？俄军在乌克兰遭遇了什么
-
-https://news.ifeng.com/c/8F4v75koosu
-
-4月顿巴斯分胜负决生死，重演二战战役
-
-https://news.ifeng.com/c/8FB20CHoBDN
-
-统帅部最高机密——普京为何做出错误决断
-
-https://www.zhihu.com/answer/2387251266
-
-如何评价俄罗斯国防部长绍伊古？
-
-https://mil.sina.cn/sd/2018-12-18/detail-ihmutuee0269859.d.html
-
-俄军唯一航母居然被偷了 大量贵金属失窃价值140万
-
-https://mp.weixin.qq.com/s/kwRY-he_wcMp7b2VuQoDOQ
-
-都打了一个多月了，俄军在打什么东西
-
-https://mp.weixin.qq.com/s/yI6P2bRpJC-VG39SLikLng
-
-2022年俄乌战争——乌克兰主要参战部队的历史（1）
-
-https://mp.weixin.qq.com/s/jlUZvp3XmF5TBUHZGS-piw
-
-2022年俄乌战争——乌克兰主要参战部队的历史（2）
-
-https://mp.weixin.qq.com/s/0KyzvO3MJ1iEadRqtOQo3A
-
-唐驳虎：俄罗斯军队虚弱的本质终于暴露无遗

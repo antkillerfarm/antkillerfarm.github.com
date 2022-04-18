@@ -79,7 +79,7 @@ https://www.jianshu.com/p/024ad859c8de
 
 人脸检测的Viola-Jones方法
 
-http://c.blog.sina.com.cn/profile.php?blogid=ab0aa22c890006v0
+https://blog.csdn.net/laiqun_ai/article/details/46761437
 
 从Viola&Jones的人脸检测说起
 
