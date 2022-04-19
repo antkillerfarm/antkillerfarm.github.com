@@ -69,33 +69,6 @@ DCE(Dead code elimination)
 
 TFE(Tensorflow Eager)
 
-## HLO
-
-XLA用HLO(High Level Optimizer)这种中间表示形式，表示正在被优化的计算图。
-
-三个概念，hlo module, computation, instruction。
-
-- hlo module用源码注释的解释，就是一个编译单元，相当于是一个完整可运行的程序。既然是一个程序，就有入口函数，也就是entry_computation，每个module都有且仅有一个entry_computation，相当于main函数，有输入和输出，输入可以是多个参数，但输出只有一个（root instruction的值），如果要返回多个值，需要把多个值构造成一个元组（tuple）返回。
-- 一个module可以包含多个computation，除了entry_computation，其他的都是"nested"，也就是被调用。
-- HLO instructions就是op了，对应了官网上列出的operation semantics，看注释已经解释的非常清楚了，op融合和向llvm ir转换都是在这个层面进行的。
-
-op的官方定义：
-
-https://tensorflow.google.cn/xla/operation_semantics
-
-HLO也可以有pass：`HloModulePass`
-
-```cpp
-HloPassPipeline pipeline("pass");
-pipeline.AddPass<XXXPass>();
-```
-
-参考：
-
-https://zhuanlan.zhihu.com/p/71980945
-
-tensorflow xla hlo基本概念和pass pipeline
-
 ## 应用层
 
 TF目前（v2.4.1）的默认编译选项中已经包含了XLA，但是默认不会启动。
@@ -130,6 +103,58 @@ tensorflow/compiler/xla/tests
 ```bash
 bazel build //tensorflow/compiler/xla/tests:convolution_test
 ./bazel-bin/tensorflow/compiler/xla/tests/convolution_test_cpu --gtest_filter="XXXX"
+```
+
+## HLO
+
+XLA用HLO(High Level Optimizer)这种中间表示形式，表示正在被优化的计算图。
+
+三个概念，hlo module, computation, instruction。
+
+- hlo module用源码注释的解释，就是一个编译单元，相当于是一个完整可运行的程序。既然是一个程序，就有入口函数，也就是entry_computation，每个module都有且仅有一个entry_computation，相当于main函数，有输入和输出，输入可以是多个参数，但输出只有一个（root instruction的值），如果要返回多个值，需要把多个值构造成一个元组（tuple）返回。
+- 一个module可以包含多个computation，除了entry_computation，其他的都是"nested"，也就是被调用。
+- HLO instructions就是op了，对应了官网上列出的operation semantics，看注释已经解释的非常清楚了，op融合和向llvm ir转换都是在这个层面进行的。
+
+op的官方定义：
+
+https://tensorflow.google.cn/xla/operation_semantics
+
+HLO也可以有pass：`HloModulePass`
+
+```cpp
+HloPassPipeline pipeline("pass");
+pipeline.AddPass<XXXPass>();
+```
+
+参考：
+
+https://zhuanlan.zhihu.com/p/71980945
+
+tensorflow xla hlo基本概念和pass pipeline
+
+## 从TF到HLO
+
+一个op从上到下一般有这样几个步骤：
+
+TF op -> XLA op -> HLO op
+
+- TF op -> XLA op:
+
+```text
+tensorflow/python/ops/nn_ops.py
+conv2d
+gen_nn_ops.conv2d
+_op_def_library._apply_op_helper("Conv2D")
+```
+
+- XLA op -> HLO op:
+
+```text
+tensorflow/compiler/tf2xla/kernels/conv_ops.cc
+REGISTER_XLA_OP(Name("Conv2D"), Conv2DOp);
+ConvOp::Compile
+MakeXlaForwardConvOp
+HandleConcatenate
 ```
 
 ## 底层实现

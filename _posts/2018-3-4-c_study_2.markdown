@@ -236,6 +236,10 @@ f(p.get()); // OK
 
 ---
 
+多线程的weak_ptr需要使用enable_shared_from_this来持有shared_ptr。使用时，用weak_ptr的`lock`函数返回shared_ptr，如果shared_ptr为null，则表明该对象已经被析构了。
+
+---
+
 参考：
 
 https://mp.weixin.qq.com/s/32aeGOPaySjTmyKcjFKgYA
@@ -249,6 +253,10 @@ C++内存管理之shared_ptr
 https://blog.csdn.net/River_Lethe/article/details/78734879
 
 shared_ptr的使用和陷阱
+
+https://blog.csdn.net/qq_38410730/article/details/105903979
+
+weak_ptr弱引用智能指针详解
 
 # decltype
 

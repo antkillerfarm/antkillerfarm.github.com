@@ -186,6 +186,16 @@ MD5算法和SHA-1算法
 | 思维导图 | Mindmanager | FreeMind |
 | 快速原型 | Axure RP | pencil |
 
+## UMLet
+
+UMLet是最近流行的一个绘制UML图的工具。
+
+官网：
+
+https://www.umlet.com/
+
+除了独立工具之外，还提供了VSCode和Eclipse的插件。
+
 # Firefox插件
 
 http://mozilla.com.cn/addon/76-pagesaver/

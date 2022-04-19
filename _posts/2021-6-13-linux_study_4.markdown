@@ -240,6 +240,18 @@ https://blog.csdn.net/weixin_38472804/article/details/109361682
 
 linux系统格式化硬盘
 
+# MOTD
+
+motd：message of the day。即系统登陆时，通过终端展示给登陆用户的消息。
+
+静态MOTD: `/etc/motd`
+
+动态MOTD: `/etc/update-motd.d/`
+
+https://www.cnblogs.com/gageshen/p/11565980.html
+
+Linux中创建自己的MOTD
+
 # Linux参考资源
 
 https://www.kernel.org/doc/html/latest/
