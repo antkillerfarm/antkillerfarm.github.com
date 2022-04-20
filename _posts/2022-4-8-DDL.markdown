@@ -311,3 +311,19 @@ https://thrift.apache.org/
 安装：
 
 `sudo apt install libthrift-dev thrift-compiler`
+
+示例：
+
+https://thrift.apache.org/tutorial/cpp.html
+
+## gRPC
+
+gRPC在Protocol Buffers的基础上提供了客户端/服务端堆栈。相当于是Thrift的等价物。
+
+官网：
+
+https://grpc.io/
+
+示例：
+
+https://grpc.io/docs/languages/cpp/quickstart/

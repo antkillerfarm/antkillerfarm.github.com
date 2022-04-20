@@ -39,6 +39,8 @@ GLU一般用在NLP领域，它和CNN结合，也就是所谓的GCNN了。
 
 《Gaussian Error Linear Units (GELUs)》
 
+![](/images/img4/GELU.png)
+
 $$\text{GELU}(x)=x \Phi(x)$$
 
 其中$$\Phi(x)$$是标准正态分布的累积概率函数，即：
@@ -169,7 +171,27 @@ YOLOv4中的Mish激活函数
 
 ### soft relu
 
-$$soft_relu(x) = \ln(1 + \exp(\max(\min(x, threshold), -threshold)))$$
+$$soft\_ relu(x) = \ln(1 + \exp(\max(\min(x, threshold), -threshold)))$$
+
+### SELU
+
+![](/images/img4/SELU.png)
+
+$$SELU(x) = scale * (\max(0,x) + \min(0, \alpha * (\exp(x) - 1)))$$
+
+$$\alpha = 1.6732632423543772848170429916717$$
+
+$$scale = 1.0507009873554804934193349852946$$
+
+### CELU
+
+![](/images/img4/CELU.png)
+
+$$CELU(x) = \max(0,x) + \min(0, \alpha * (\exp(x/\alpha) - 1))$$
+
+### CRELU
+
+$$CReLU(x)= Concat[ ReLU(x), ReLU(−x) ]$$
 
 ## 参考
 
@@ -228,6 +250,10 @@ https://mp.weixin.qq.com/s/jMLarSpq3Wg0OIrRIW26dA
 https://mp.weixin.qq.com/s/IuZsTKGesgTw1ATXx4OBEA
 
 深度学习最常用的10个激活函数
+
+https://blog.csdn.net/shuzfan/article/details/77807550
+
+CReLU激活函数
 
 # ResNet
 

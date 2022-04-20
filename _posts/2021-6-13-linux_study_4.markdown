@@ -173,6 +173,39 @@ Ext系列可以使用`debugfs`命令。
 
 XFS可以使用`xfs_db`命令。
 
+# 二进制文件与ASCII、Base64之间的转换
+
+xxd：这个命令可以将二进制文件转换成ASCII码表示文本文件。支持2、8、16等多种进制的ASCII表示形式，还支持输出成C语言格式的数组声明。反过来的转换也同样支持。
+
+uuencode and uudecode：支持二进制文件与Base64之间的转换。
+
+# start-stop-daemon
+
+该命令用于启动和停止系统守护程序。
+
+# 软件包管理工具
+
+各大linux发行版都有自己的软件包管理工具。例如：
+
+| Debian/Ubuntu | apt |
+| Red Hat/Fedora | yum/dnf |
+| SUSE/openSUSE | zypper |
+| Gentoo | emerge |
+| Arch Linux | pacman |
+
+各大软件包管理工具的功能对比，可参见：
+
+https://wiki.archlinux.org/index.php/Pacman/Rosetta
+
+类似的概念也被一些编程语言所使用。例如：
+
+| Ruby | RubyGems(gem) |
+| Python | PyPI(pip) |
+| Java | Maven(mvn) |
+| Perl | PPM |
+| Node.js | NPM |
+| PHP | pear |
+
 ## Inotify
 
 一种高效、实时的Linux文件系统事件监控框架。参考文档：
@@ -377,51 +410,3 @@ Linux I/O原理和Zero-copy技术全面揭秘
 https://mp.weixin.qq.com/s/cudK2dhw4jNr7I34luVKVw
 
 终于有人把零拷贝Zero-Copy讲懂了
-
-https://mp.weixin.qq.com/s/1JiXL1f3SSjsBojlJSNOpQ
-
-Linux的启动流程
-
-https://mp.weixin.qq.com/s/ZfprFQjVANuCE2N693gZBQ
-
-用户空间和内核空间
-
-https://mp.weixin.qq.com/s/P14VsWwSh9jiF-jBHSXXOw
-
-申请内存时底层发生了什么？
-
-https://mp.weixin.qq.com/s/OJHQZjxa6u8aA6jZyJnNPg
-
-一文浅析内存管理机制
-
-https://mp.weixin.qq.com/s/lAN0GKjkfkkWCurwRQb6DQ
-
-如何排查句柄泄露问题
-
-https://mp.weixin.qq.com/s/9UmzFxRdE4FFdrqEeBZtOQ
-
-如何实现一个定时器？
-
-https://mp.weixin.qq.com/s/zVi45pZka_kPpKIoNXNVBA
-
-当初我要是这么学习“进程和线程”就好了
-
-https://mp.weixin.qq.com/s/A8TnhOFLQOhEqphE760yvw
-
-15个相见恨晚的Linux神器，你可能一个都没见过
-
-https://mp.weixin.qq.com/s/ejGjsGA1ijPP--j3BLcEFA
-
-Linux并发与同步
-
-https://mp.weixin.qq.com/s/CAPU8bjJWobQs6JHHMasvQ
-
-Linux服务端最大并发数是多少？
-
-http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html
-
-Systemd入门教程：实战篇
-
-https://mp.weixin.qq.com/s/bPqnaMqhi_4p1mwjmvyoIw
-
-多图详解10大高性能开发核心技术

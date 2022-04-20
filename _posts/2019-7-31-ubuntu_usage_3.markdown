@@ -298,6 +298,54 @@ Linux下xargs命令
 
 # Linux参考资源++
 
+https://mp.weixin.qq.com/s/1JiXL1f3SSjsBojlJSNOpQ
+
+Linux的启动流程
+
+https://mp.weixin.qq.com/s/ZfprFQjVANuCE2N693gZBQ
+
+用户空间和内核空间
+
+https://mp.weixin.qq.com/s/P14VsWwSh9jiF-jBHSXXOw
+
+申请内存时底层发生了什么？
+
+https://mp.weixin.qq.com/s/OJHQZjxa6u8aA6jZyJnNPg
+
+一文浅析内存管理机制
+
+https://mp.weixin.qq.com/s/lAN0GKjkfkkWCurwRQb6DQ
+
+如何排查句柄泄露问题
+
+https://mp.weixin.qq.com/s/9UmzFxRdE4FFdrqEeBZtOQ
+
+如何实现一个定时器？
+
+https://mp.weixin.qq.com/s/zVi45pZka_kPpKIoNXNVBA
+
+当初我要是这么学习“进程和线程”就好了
+
+https://mp.weixin.qq.com/s/A8TnhOFLQOhEqphE760yvw
+
+15个相见恨晚的Linux神器，你可能一个都没见过
+
+https://mp.weixin.qq.com/s/ejGjsGA1ijPP--j3BLcEFA
+
+Linux并发与同步
+
+https://mp.weixin.qq.com/s/CAPU8bjJWobQs6JHHMasvQ
+
+Linux服务端最大并发数是多少？
+
+http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html
+
+Systemd入门教程：实战篇
+
+https://mp.weixin.qq.com/s/bPqnaMqhi_4p1mwjmvyoIw
+
+多图详解10大高性能开发核心技术
+
 https://mp.weixin.qq.com/s/ESLO1RH6Q8udwI13Z2Pz_w
 
 详解linux io flush

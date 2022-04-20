@@ -93,40 +93,9 @@ http://www.cppblog.com/elva/archive/2008/09/10/61544.html
 
 \v——vertical tab
 
-# 二进制文件与ASCII、Base64之间的转换
-
-xxd：这个命令可以将二进制文件转换成ASCII码表示文本文件。支持2、8、16等多种进制的ASCII表示形式，还支持输出成C语言格式的数组声明。反过来的转换也同样支持。
-
-uuencode and uudecode：支持二进制文件与Base64之间的转换。
-
-# start-stop-daemon
-
-该命令用于启动和停止系统守护程序。
-
-# 软件包管理工具
-
-各大linux发行版都有自己的软件包管理工具。例如：
-
-| Debian/Ubuntu | apt |
-| Red Hat/Fedora | yum/dnf |
-| SUSE/openSUSE | zypper |
-| Gentoo | emerge |
-| Arch Linux | pacman |
-
-各大软件包管理工具的功能对比，可参见：
-
-https://wiki.archlinux.org/index.php/Pacman/Rosetta
-
-类似的概念也被一些编程语言所使用。例如：
-
-| Ruby | RubyGems(gem) |
-| Python | PyPI(pip) |
-| Java | Maven(mvn) |
-| Perl | PPM |
-| Node.js | NPM |
-| PHP | pear |
-
 # IO多路复用
+
+I/O多路复用：用一个系统调用函数来监听我们所有关心的连接，也就说可以在一个监控线程里面监控很多的连接。
 
 参考文献：
 
@@ -239,7 +208,7 @@ https://zhuanlan.zhihu.com/p/384098769
 
 ## 惊群
 
-"惊群"简单地来讲，就是多个进程(线程)阻塞睡眠在某个系统调用上，在等待某个fd(socket)的事件的到来。当这个fd(socket)的事件发生的时候，这些睡眠的进程(线程)就会被同时唤醒，多个进程(线程)从阻塞的系统调用上返回，这就是"惊群"现象。
+对于高性能的服务器而言，为了利用多CPU核的优势，大多采用多个进程(线程)同时在一个listen socket上进行accept请求。当这个fd(socket)的事件发生的时候，这些睡眠的进程(线程)就会被同时唤醒，多个进程(线程)从阻塞的系统调用上返回，这就是"惊群"现象。
 
 "惊群"被人诟病的是效率低下，大量的CPU时间浪费在被唤醒发现无事可做，然后又继续睡眠的反复切换上。
 
@@ -248,6 +217,36 @@ https://zhuanlan.zhihu.com/p/384098769
 https://mp.weixin.qq.com/s/dQWKBujtPcazzw7zacP1lg
 
 深入浅出Linux惊群：现象、原因和解决方案
+
+## Reactor和Proactor
+
+Reactor模式也叫Dispatcher模式，即I/O多路复用监听事件，收到事件后，根据事件类型分配（Dispatch）给某个进程/线程。
+
+Reactor模式主要由Reactor和处理资源池这两个核心部分组成，它俩负责的事情如下：
+
+- Reactor负责监听和分发事件，事件类型包含连接事件、读写事件；
+
+- 处理资源池负责处理事件，如read -> 业务逻辑 -> send；
+
+Reactor是非阻塞同步网络模式，而Proactor是异步网络模式。
+
+Reactor可以理解为“来了事件操作系统通知应用进程，让应用进程来处理”，而Proactor可以理解为“来了事件操作系统来处理，处理完再通知应用进程”。
+
+Reactor模式是基于“待完成”的I/O事件，而Proactor模式则是基于“已完成”的I/O事件。
+
+在Linux下的异步I/O是不完善的，这也使得基于Linux的高性能网络程序都是使用Reactor方案。
+
+https://www.zhihu.com/question/26943938
+
+如何深刻理解Reactor和Proactor？
+
+https://blog.csdn.net/windows_nt/article/details/25151049
+
+Reactor与Proactor的区别
+
+https://cloud.tencent.com/developer/article/1488120
+
+彻底搞懂Reactor模型和Proactor模型
 
 ## 参考
 

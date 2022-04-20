@@ -29,7 +29,7 @@ category: resource
 
 在架构领域，有两种常见架构方法RUP和TOGAF。
 
----
+## AOP
 
 IoC（Inversion of control）：控制反转/反转控制。
 
@@ -59,9 +59,7 @@ https://mp.weixin.qq.com/s/5UwgQQHA-D0il0_8fDIW0A
 
 Python面向切面编程AOP和装饰器
 
----
-
-参考：
+## 参考
 
 https://mp.weixin.qq.com/s/9gDGQhzRAL3pj35VAinZbQ
 
