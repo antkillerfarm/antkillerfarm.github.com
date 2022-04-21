@@ -171,6 +171,32 @@ compiler/tf2xla/ -> compiler/xla/client/ -> compiler/xla/service/
 
 最终的计算由service负责实现。
 
+- `compiler/aot/`
+
+以AOT的方式将tf2xla/接入TF引擎。
+
+- `compiler/jit/`
+
+以JIT的方式将tf2xla/接入TF引擎， 核心是9个优化器和3个tfop，其中XlaCompileOp调用tf2xla的“编译”入口完成功能封装，XlaRunOp调用xla/client完成“运行”功能。
+
+- `compiler/tf2xla/`
+
+对上提供xla_compiler.cc:XlaCompiler::CompileFunction()供jit:compile_fn()使用将cluster转化为XlaComputation。核心是利用xla/client提供的接口，实现对XlaOpKernel的“Symbolic Execution”功能。每个XlaOpKernel子类均做的以下工作: **从XlaOpKernelContext中取出XlaExpression或XlaOp，调用xla/client/xla_buidler.h提供的方法完成计算，将计算结果的XlaOp存入XlaKernelContext。**
+
+- `compiler/xla/client/`
+
+对上提供xla_builder.cc:Builder等供CompileFunction()使用，将Graph由Op表达转化为HloModuleProto:HloComputationProto:HloInstructionProto表达并保存在XlaComputation中。
+
+对上提供local_client.cc:LocalClient::Compile()，作为编译入口供jit：BuildExecutable()使用，将已经得到的XlaComputation交给service并进一步编译为二进制。
+
+对上提供local_client.cc:LocalExecutable::Run()，作为运行入口供jit/kernels/xla_ops.cc:XlaRunOp使用，通过Key找到相应的二进制交给service层处理。
+
+- `compiler/xla/service/`
+
+对上提供local_service.cc:LocalService::BuildExecutable()供LocalClient::Compile()使用实现真正的编译，承接XlaComputation封装的HloProto，将其转化为HloModule:HloComputation:HloInstruction表达，对其进行优化之后，使用LLVM后端将其编译为相应Executable后端的二进制代码。
+
+对上提供executable.cc:Executable::ExecuteOnStream()供LocalExecutable::Run()使用实现真正的执行二进制。
+
 ## backward
 
 tensorflow/compiler/tf2xla/g3doc/gpu_supported_ops.md
@@ -336,91 +362,3 @@ http://geek.csdn.net/news/detail/126133
 tf-slim-mnist例子中mnist数据不是原始格式的，而是经过了`datasets/download_and_convert_mnist.py`的转换。
 
 该示例执行时也没有控制台的输出信息，一度让我觉得很不方便。后来才发现，原来可以用TensorBoard查看log文件夹。
-
-# 模型文件
-
-tensorflow model包含2个文件：
-
-a）Meta graph:
-
-使用protocol buffer来保存整个tensorflow graph.例如所有的variables, operations, collections等等。这个文件使用.meta后缀。
-
-b) Checkpoint file:
-
-有2个文件：
-
-mymodel.data-00000-of-00001
-
-mymodel.index
-
-.data文件包含所有的weights,biases,gradients和其他variables的值。
-
-tensorflow还有一个叫checkpoint的文件，用来简单保存最近一次的checkpoint记录。
-
-## 保存模型
-
-```python
-w1 = tf.Variable(tf.random_normal(shape=[2]), name='w1')
-w2 = tf.Variable(tf.random_normal(shape=[5]), name='w2')
-saver = tf.train.Saver()
-sess = tf.Session()
-sess.run(tf.global_variables_initializer())
-saver.save(sess, 'my_test_model')
-```
-
-## 加载模型
-
-```python
-new_saver = tf.train.import_meta_graph('my_test_model-1000.meta')
-new_saver.restore(sess, tf.train.latest_checkpoint('./‘))
-```
-
-参考：
-
-http://www.cnblogs.com/azheng333/archive/2017/06/09/6972619.html
-
-Tensorflow模型保存和加载
-
-http://blog.csdn.net/wiinter_fdd/article/details/72821923
-
-Tensorflow中的模型持久化
-
-https://mp.weixin.qq.com/s/3GfxnwzIeeQj1LVSYKnZjQ
-
-如何保存和恢复TensorFlow训练的模型？
-
-# .pb文件
-
-TensorFlow常用的模型保存格式还有.pb格式。这种格式下，模型和权重被整合为一个.pb文件，便于模型的发布和部署。相对应的，这种格式对于train就不太友好了。
-
-以下的脚本可用于将.pb文件导入到tensorboard中：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tensorflow/graph/pb_visualize.py
-
-参考：
-
-https://www.jianshu.com/p/243d4f0b656c
-
-TensorFlow自定义模型导出：将.ckpt格式转化为.pb格式
-
-https://www.jianshu.com/p/c9fd5c01715e
-
-TensorFlow模型保存与恢复
-
-# 模型文件的图操作
-
-基本操作一般基于tf.Graph：
-
-https://tensorflow.google.cn/api_docs/python/tf/Graph
-
-复杂一点的进阶操作可参见：
-
-https://tensorflow.google.cn/api_guides/python/contrib.graph_editor
-
-示例：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tensorflow/graph/hello_graph.py
-
-除了运算类op之外，TF还有辅助类的op，例如tf.shape和tf.Print。下面的示例展示了如何在Graph中插入tf.shape和tf.Print结点，从而导出中间的计算结果：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tensorflow/graph/insert_print_node.py

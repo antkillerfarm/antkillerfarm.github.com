@@ -7,7 +7,85 @@ category: AI
 * toc
 {:toc}
 
-# TensorFlow.js（续）
+# 控制流
+
+## tf.cond
+
+```python
+a=tf.constant(2)
+b=tf.constant(3)
+x=tf.constant(4)
+y=tf.constant(5)
+z = tf.multiply(a, b)
+result = tf.cond(x < y, lambda: tf.add(x, z), lambda: tf.square(y))
+with tf.Session() as session:
+    print(result.eval())
+```
+
+## tf.case
+
+```python
+decode_png = lambda :tf.image.decode_png(image_tensor, channels)
+decode_jpg = lambda :tf.image.decode_jpeg(image_tensor, channels)
+decoder = { tf.equal(image_ext, '.png'):  decode_png,
+            tf.equal(image_ext, '.jpg'):  decode_jpg}
+image_tensor = tf.case(decoder, default = decode_png, exclusive = True)
+```
+# 多核(multicore)，多线程(multi-thread)
+
+在Tensorflow程序中，我们会经常看到”with tf.device("/cpu:0"): “ 这个语句。单独使用这个语句，而不做其他限制，实际上默认tensorflow程序占用所有可以使用的内存资源和CPU核。
+
+参考：
+
+http://deepnlp.org/blog/tensorflow-parallelism/
+
+Tensorflow并行：多核(multicore)，多线程(multi-thread)
+
+# Grappler
+
+Grappler是TensorFlow运行时中的默认计算图优化系统。
+
+https://www.tensorflow.org/guide/graph_optimization
+
+使用Grappler优化TensorFlow计算图
+
+# Eigen
+
+Eigen是一个线性代数方面的C++模板库。tensorflow和caffe2都使用了这个库。
+
+官网：
+
+http://eigen.tuxfamily.org/
+
+使用Eigen也比较简单，无须link，只要引用相关头文件即可。
+
+参见：
+
+https://zhuanlan.zhihu.com/p/26512099
+
+tensorflow和caffe2
+
+https://www.zhihu.com/question/28571059
+
+Eigen的速度为什么这么快？
+
+# TensorFlow.js
+
+https://mp.weixin.qq.com/s/dqMS4NjmNYs7IFHm8uFM8w
+
+TensorFlow发布面向JavaScript开发者的机器学习框架TensorFlow.js
+
+https://zhuanlan.zhihu.com/p/35181413
+
+TensorFlow.js人脸识别—玩转吃豆豆小游戏
+
+https://mp.weixin.qq.com/s/ebLHZAG8H78TsZUKSzAtIw
+
+TF官方博客：基于TensorFlow.js框架的浏览器实时姿态估计
+
+https://mp.weixin.qq.com/s/z6p4A4DfCuK8IBGVGwrtLQ
+
+如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
 
 https://mp.weixin.qq.com/s/NO_XY-JmTpIkoC-fpkZ-qg
 
@@ -268,97 +346,3 @@ Using bazel to cross-compile tensorflow for other targets.
 https://www.cnblogs.com/jojodru/p/7744630.html
 
 在Ubuntu 16.04上使用bazel交叉编译tensorflow
-
-# 参考
-
-https://mp.weixin.qq.com/s/t1QFIOq-VBNOrSm0zW-PlQ
-
-深度学习TensorFlow实现集合
-
-https://mp.weixin.qq.com/s/IzijD8Sh3G2WsCz7aaxyhg
-
-TensorFlow深度学习概述
-
-https://silencezjl.coding.me/2017/05/01/%E5%81%B7%E4%B8%80%E6%B3%A2%E8%B5%84%E6%BA%90/
-
-各种TensorFlow资源
-
-https://mp.weixin.qq.com/s/haj9lS59yWtk-C75EtGIcw
-
-深度学习工程模板：简化加载数据、构建网络、训练模型和预测样本的流程
-
-https://github.com/zsdev2015/machine_learning
-
-某国内小牛写的中文入门demo，注释非常详细
-
-https://morvanzhou.github.io/tutorials/
-
-一个以python语言教学的ML、DL教程，比较通俗易懂。
-
-https://mp.weixin.qq.com/s/gJBDXf_5ViPR9dNm3eH2Hg
-
-TensorFlow初学者必须了解的55个经典案例
-
-http://mp.weixin.qq.com/s/JZ1ceGQDmQUaNW5wl6biLA
-
-TensorFlow实现流行机器学习算法教程汇集
-
-https://github.com/taki0112/Tensorflow-Cookbook
-
-1500+星标，简单易用TensorFlow代码集
-
-https://mp.weixin.qq.com/s/bjxJyOitynRtCoW0FX1gXw
-
-一文带你入门Tensorflow
-
-https://mp.weixin.qq.com/s/zmTqWNXlYcDyZb_dmEo_5Q
-
-TensorFlow/PyTorch/Sklearn实现的五十种机器学习模型
-
-https://mp.weixin.qq.com/s/O5vvGKHWkJQWzeiL7A_S_g
-
-TensorFlow简单介绍
-
-https://mp.weixin.qq.com/s/JSZwQkyxSSwfBWKJ578j3A
-
-TensorFlow最好的入门文章
-
-https://mp.weixin.qq.com/s/68vaQRqUo8u09iheKzFVEw
-
-玩转TensorFlow深度学习
-
-https://mp.weixin.qq.com/s/Es_5KUnkDzMwf_8WD8aW3g
-
-GitHub万星：适用于初学者的TensorFlow代码资源集
-
-https://mp.weixin.qq.com/s/GaK_iSTBl7B4LTdaOtiR_Q
-
-香港科技大学TensorFlow课件分享
-
-https://mp.weixin.qq.com/s/RR3EEI8vm05EZSd7dGU__A
-
-史上最全的Tensorflow学习资源汇总，速藏！
-
-https://mp.weixin.qq.com/s/MYBTWL3X_OhLZL6C4rISzw
-
-TensorFlow训练线性回归
-
-https://mp.weixin.qq.com/s/5QYlh6gV9IqdQfraK4DC8w
-
-10种深度学习算法的TensorFlow实现
-
-https://mp.weixin.qq.com/s/W1KP213Ngj-BNEyx-_nVyw
-
-利用TensorFlow实现卷积自编码器
-
-https://mp.weixin.qq.com/s/pIESRzjsmqoO46P4x5Iqhw
-
-Tensorflow卷积神经网络
-
-https://mp.weixin.qq.com/s/Cge_GY19aZ1AcMkhW93C1A
-
-TensorFlow中的那些高级API
-
-https://mp.weixin.qq.com/s/kYOwUWlTP4T0IYKDWDbCsg
-
-tensorflow object detection API训练公开数据集Oxford-IIIT Pets Dataset

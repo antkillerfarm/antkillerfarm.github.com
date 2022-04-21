@@ -359,6 +359,14 @@ https://mp.weixin.qq.com/s/LQY4Dw8-OwS52gt2HtBT8w
 
 # TensorFlow+
 
+https://github.com/indiejoseph/cnn-text-classification-tf-chinese
+
+CNN for Chinese Text Classification in Tensorflow
+
+https://mp.weixin.qq.com/s/yc1ssCzaPzI4UUsl4jl5Yw
+
+用TensorFlow和TensorBoard从零开始构建ConvNet
+
 https://mp.weixin.qq.com/s/qXMRHxDDRa-_rJZMhXWB4w
 
 详解TensorFlow的新seq2seq模块及其用法

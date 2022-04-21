@@ -7,6 +7,56 @@ category: AI
 * toc
 {:toc}
 
+# op Backprop（续）
+
+## Conv
+
+```cpp
+tensorflow/cc/gradients/nn_grad.cc:
+REGISTER_GRADIENT_OP("Conv2D", Conv2DGrad);
+
+tensorflow/python/ops/nn_grad.py:
+@ops.RegisterGradient("Conv2DBackpropInput")
+def _Conv2DBackpropInputGrad(op, grad):
+
+@ops.RegisterGradient("Conv2DBackpropFilter")
+def _Conv2DBackpropFilterGrad(op, grad):
+```
+
+Conv2D的Backprop操作可分为两部分：
+
+- Conv2DBackpropInput负责计算上一层的梯度，也就是所谓的in_grad。
+
+- Conv2DBackpropFilter负责计算Kernel的梯度。（似乎没有计算bias梯度）
+
+```cpp
+// BP input
+// tensorflow source code:
+tensorflow/core/kernels/conv_grad_input_ops.cc: LaunchConv2DBackpropInputOp
+tensorflow/core/kernels/conv_grad_input_ops.h: LaunchConv2DBackpropInputOpImpl
+tensorflow/core/kernels/eigen_backward_spatial_convolutions.h: Eigen::SpatialConvolutionBackwardInput
+// eigen source code:
+unsupported/Eigen/CXX11/src/Tensor/TensorBase.h: TensorBase::contract()
+unsupported/Eigen/CXX11/src/Tensor/TensorContraction.h: evalGemmPartial
+unsupported/Eigen/CXX11/src/Tensor/TensorContraction.h: TensorContractionKernel
+Eigen/src/Core/products/GeneralBlockPanelKernel.h: gebp_kernel::operator()
+
+// BP filter
+// tensorflow source code:
+tensorflow/core/kernels/conv_grad_filter_ops.cc: LaunchConv2DBackpropFilterOp
+tensorflow/core/kernels/eigen_backward_spatial_convolutions.h: Eigen::SpatialConvolutionBackwardKernel
+// eigen source code:
+unsupported/Eigen/CXX11/src/Tensor/TensorBase.h: TensorBase::contract()
+```
+
+以上是CPU计算BP的调用路径，要点如下：
+
+- 无论是计算BP input，还是BP filter，最终都会转换成GEMM运算。
+
+- GEMM运算会调用TensorContractionKernel。
+
+Tensor contraction是一种Tensor运算，参见《线性代数（一）》中的“张量分析”一节。
+
 # 我的TensorFlow实践
 
 ## MNIST+Softmax
@@ -320,83 +370,3 @@ TensorFlow benchmarks
 https://blog.csdn.net/zkbaba/article/details/106178542
 
 TensorFlow性能分析工具—TensorFlow Profiler
-
-# 控制流
-
-## tf.cond
-
-```python
-a=tf.constant(2)
-b=tf.constant(3)
-x=tf.constant(4)
-y=tf.constant(5)
-z = tf.multiply(a, b)
-result = tf.cond(x < y, lambda: tf.add(x, z), lambda: tf.square(y))
-with tf.Session() as session:
-    print(result.eval())
-```
-
-## tf.case
-
-```python
-decode_png = lambda :tf.image.decode_png(image_tensor, channels)
-decode_jpg = lambda :tf.image.decode_jpeg(image_tensor, channels)
-decoder = { tf.equal(image_ext, '.png'):  decode_png,
-            tf.equal(image_ext, '.jpg'):  decode_jpg}
-image_tensor = tf.case(decoder, default = decode_png, exclusive = True)
-```
-# 多核(multicore)，多线程(multi-thread)
-
-在Tensorflow程序中，我们会经常看到”with tf.device("/cpu:0"): “ 这个语句。单独使用这个语句，而不做其他限制，实际上默认tensorflow程序占用所有可以使用的内存资源和CPU核。
-
-参考：
-
-http://deepnlp.org/blog/tensorflow-parallelism/
-
-Tensorflow并行：多核(multicore)，多线程(multi-thread)
-
-# Grappler
-
-Grappler是TensorFlow运行时中的默认计算图优化系统。
-
-https://www.tensorflow.org/guide/graph_optimization
-
-使用Grappler优化TensorFlow计算图
-
-# Eigen
-
-Eigen是一个线性代数方面的C++模板库。tensorflow和caffe2都使用了这个库。
-
-官网：
-
-http://eigen.tuxfamily.org/
-
-使用Eigen也比较简单，无须link，只要引用相关头文件即可。
-
-参见：
-
-https://zhuanlan.zhihu.com/p/26512099
-
-tensorflow和caffe2
-
-https://www.zhihu.com/question/28571059
-
-Eigen的速度为什么这么快？
-
-# TensorFlow.js
-
-https://mp.weixin.qq.com/s/dqMS4NjmNYs7IFHm8uFM8w
-
-TensorFlow发布面向JavaScript开发者的机器学习框架TensorFlow.js
-
-https://zhuanlan.zhihu.com/p/35181413
-
-TensorFlow.js人脸识别—玩转吃豆豆小游戏
-
-https://mp.weixin.qq.com/s/ebLHZAG8H78TsZUKSzAtIw
-
-TF官方博客：基于TensorFlow.js框架的浏览器实时姿态估计
-
-https://mp.weixin.qq.com/s/z6p4A4DfCuK8IBGVGwrtLQ
-
-如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用

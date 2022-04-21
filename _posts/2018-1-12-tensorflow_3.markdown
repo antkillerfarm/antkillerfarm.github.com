@@ -7,6 +7,94 @@ category: AI
 * toc
 {:toc}
 
+# 模型文件
+
+tensorflow model包含2个文件：
+
+a）Meta graph:
+
+使用protocol buffer来保存整个tensorflow graph.例如所有的variables, operations, collections等等。这个文件使用.meta后缀。
+
+b) Checkpoint file:
+
+有2个文件：
+
+mymodel.data-00000-of-00001
+
+mymodel.index
+
+.data文件包含所有的weights,biases,gradients和其他variables的值。
+
+tensorflow还有一个叫checkpoint的文件，用来简单保存最近一次的checkpoint记录。
+
+## 保存模型
+
+```python
+w1 = tf.Variable(tf.random_normal(shape=[2]), name='w1')
+w2 = tf.Variable(tf.random_normal(shape=[5]), name='w2')
+saver = tf.train.Saver()
+sess = tf.Session()
+sess.run(tf.global_variables_initializer())
+saver.save(sess, 'my_test_model')
+```
+
+## 加载模型
+
+```python
+new_saver = tf.train.import_meta_graph('my_test_model-1000.meta')
+new_saver.restore(sess, tf.train.latest_checkpoint('./‘))
+```
+
+## 参考
+
+http://www.cnblogs.com/azheng333/archive/2017/06/09/6972619.html
+
+Tensorflow模型保存和加载
+
+http://blog.csdn.net/wiinter_fdd/article/details/72821923
+
+Tensorflow中的模型持久化
+
+https://mp.weixin.qq.com/s/3GfxnwzIeeQj1LVSYKnZjQ
+
+如何保存和恢复TensorFlow训练的模型？
+
+# .pb文件
+
+TensorFlow常用的模型保存格式还有.pb格式。这种格式下，模型和权重被整合为一个.pb文件，便于模型的发布和部署。相对应的，这种格式对于train就不太友好了。
+
+以下的脚本可用于将.pb文件导入到tensorboard中：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tensorflow/graph/pb_visualize.py
+
+参考：
+
+https://www.jianshu.com/p/243d4f0b656c
+
+TensorFlow自定义模型导出：将.ckpt格式转化为.pb格式
+
+https://www.jianshu.com/p/c9fd5c01715e
+
+TensorFlow模型保存与恢复
+
+# 模型文件的图操作
+
+基本操作一般基于tf.Graph：
+
+https://tensorflow.google.cn/api_docs/python/tf/Graph
+
+复杂一点的进阶操作可参见：
+
+https://tensorflow.google.cn/api_guides/python/contrib.graph_editor
+
+示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tensorflow/graph/hello_graph.py
+
+除了运算类op之外，TF还有辅助类的op，例如tf.shape和tf.Print。下面的示例展示了如何在Graph中插入tf.shape和tf.Print结点，从而导出中间的计算结果：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tensorflow/graph/insert_print_node.py
+
 # TFLite
 
 官网：
@@ -295,51 +383,3 @@ Gradient有两种处理方式：（tensorflow/python/ops/gradients_util.py: _Gra
 https://www.zhihu.com/question/56443480
 
 TensorFlow的自动求导具体是在哪部分代码里实现的？
-
-## Conv
-
-```cpp
-tensorflow/cc/gradients/nn_grad.cc:
-REGISTER_GRADIENT_OP("Conv2D", Conv2DGrad);
-
-tensorflow/python/ops/nn_grad.py:
-@ops.RegisterGradient("Conv2DBackpropInput")
-def _Conv2DBackpropInputGrad(op, grad):
-
-@ops.RegisterGradient("Conv2DBackpropFilter")
-def _Conv2DBackpropFilterGrad(op, grad):
-```
-
-Conv2D的Backprop操作可分为两部分：
-
-- Conv2DBackpropInput负责计算上一层的梯度，也就是所谓的in_grad。
-
-- Conv2DBackpropFilter负责计算Kernel的梯度。（似乎没有计算bias梯度）
-
-```cpp
-// BP input
-// tensorflow source code:
-tensorflow/core/kernels/conv_grad_input_ops.cc: LaunchConv2DBackpropInputOp
-tensorflow/core/kernels/conv_grad_input_ops.h: LaunchConv2DBackpropInputOpImpl
-tensorflow/core/kernels/eigen_backward_spatial_convolutions.h: Eigen::SpatialConvolutionBackwardInput
-// eigen source code:
-unsupported/Eigen/CXX11/src/Tensor/TensorBase.h: TensorBase::contract()
-unsupported/Eigen/CXX11/src/Tensor/TensorContraction.h: evalGemmPartial
-unsupported/Eigen/CXX11/src/Tensor/TensorContraction.h: TensorContractionKernel
-Eigen/src/Core/products/GeneralBlockPanelKernel.h: gebp_kernel::operator()
-
-// BP filter
-// tensorflow source code:
-tensorflow/core/kernels/conv_grad_filter_ops.cc: LaunchConv2DBackpropFilterOp
-tensorflow/core/kernels/eigen_backward_spatial_convolutions.h: Eigen::SpatialConvolutionBackwardKernel
-// eigen source code:
-unsupported/Eigen/CXX11/src/Tensor/TensorBase.h: TensorBase::contract()
-```
-
-以上是CPU计算BP的调用路径，要点如下：
-
-- 无论是计算BP input，还是BP filter，最终都会转换成GEMM运算。
-
-- GEMM运算会调用TensorContractionKernel。
-
-Tensor contraction是一种Tensor运算，参见《数学狂想曲（五）》中的“张量分析”一节。

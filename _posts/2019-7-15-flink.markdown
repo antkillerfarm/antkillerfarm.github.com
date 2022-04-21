@@ -369,6 +369,14 @@ https://mp.weixin.qq.com/s/F3KRfVyvbtc5x2LZ7wgXuQ
 
 # TensorFlow++
 
+https://mp.weixin.qq.com/s/XHKrkNf2bWLF7r7gzdU24w
+
+Quick, Draw!涂鸦分类递归神经网络
+
+https://mp.weixin.qq.com/s/n4nEtyRc5G44kj3zmHpd5g
+
+TensorFlow实战——图像分类神经网络模型
+
 https://mp.weixin.qq.com/s/8uDsaZjsiKXGea6M-w-RvA
 
 tensorflow object detection API使用之GPU训练实现宠物识别
