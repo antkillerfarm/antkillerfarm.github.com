@@ -62,8 +62,10 @@ indicator-netspeed
 
 ```bash
 mkdir -p ~/.config/autostart
-cp indicator-netspeed ~/.config/autostart
+cp indicator-netspeed.desktop ~/.config/autostart
 ```
+
+在Ubuntu 22.04中，`libappindicator3-dev`被`libayatana-appindicator3-dev`取代，但用法基本不变。
 
 ## 虚拟机和宿主机的文件共享——FTP方式
 

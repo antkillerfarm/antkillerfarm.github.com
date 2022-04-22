@@ -76,6 +76,8 @@ pkg-config就是用来解决编译连接界面不统一问题的一个工具。
 
 它的基本思想：pkg-config是通过库提供的一个.pc文件获得库的各种必要信息的，包括版本信息、编译和连接需要的参数等。需要的时候可以通过pkg-config提供的参数(–cflags, –libs)，将所需信息提取出来供编译和连接使用。这样，不管库文件安装在哪，通过库对应的.pc文件就可以准确定位,可以使用相同的编译和连接命令，使得编译和连接界面统一。
 
+.pc文件一般在`/usr/lib/x86_64-linux-gnu/pkgconfig`。
+
 参见：
 
 http://www.mike.org.cn/articles/description-configure-pkg-config-pkg_config_path-of-the-relations-between/
