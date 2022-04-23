@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Ubuntu使用技巧（三）, diff&patch, 硬盘安装Linux（grub2）
+title:  Ubuntu使用技巧（三）, diff&patch
 category: linux 
 ---
 
@@ -228,8 +228,6 @@ https://www.cnblogs.com/schips/p/10141278.html
 
 使用boot-repair对Windows+Ubuntu双系统引导修复
 
-
-
 # Ubuntu字体相关
 
 最近gitk中文显示不正常，明明系统的字体是很多的，但可以设置的却甚少。后来发现这里能够设置的并非系统字体，而只是X11字体。
@@ -298,32 +296,19 @@ https://mp.weixin.qq.com/s/HchAIWJmqPNTqEEwb3TbAg
 
 Linux下xargs命令
 
-# 硬盘安装Linux（grub2）
+# Ubuntu 22.04使用手记
 
-2022.4
+Ubuntu 20.04是2022.4.21发布的。
 
-升级Ubuntu 22.04的时候，遇到了新的问题：Ubuntu 22.04只支持UEFI启动，但是有几台PC是legacy BIOS启动的。。。
+内核：5.15
 
-经过检查BIOS启动设置，发现PC本身实际上是支持UEFI的。这时又引入了一个新的问题——硬盘分区表。
+LibreOffice：7.3
 
-```bash
-set root=(hd1,msdos3)
+---
 
-loopback loop /ubuntu.iso
-linux (loop)/casper/vmlinuz boot=casper iso-scan/filename=/ubuntu.iso
-initrd (loop)/casper/initrd
-boot
-```
+RTL8821CE网卡驱动已经集成到内核中，所以这次的网络安装体验满分。
 
-参见：
-
-https://www.cnblogs.com/f-ck-need-u/archive/2017/06/29/7094693.html
-
-grub2详解
-
-https://www.cnblogs.com/gdme1320/p/9166564.html
-
-grub2引导系统iso镜像
+其实离线安装并非不可以，只要你选择安装英文版就行了。
 
 # Linux参考资源++
 

@@ -176,6 +176,10 @@ git的reset和checkout的区别
     helper = store
 ```
 
+### 使用密码
+
+`git clone https://<USERNAME>:<PASSWORD>@github.com/path/to/repo1.git`
+
 ### cherry-pick
 
 用于将分支A上的修改C，移植到分支B上。

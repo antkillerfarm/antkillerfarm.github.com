@@ -21,7 +21,7 @@ Age of Empires 1、2、3、Age of Mythology。Rise of Nations是Microsoft的另�
 
 ## 3.Westwood
 
-Dune 2、2000、3000、Command & Conquer 1、2、3、Red Alart 1、2、Command & Conquer:Generals
+Dune 2、2000、3000、Command & Conquer 1、2、3、Red Alert 1、2、Command & Conquer:Generals
 
 ![](/images/img2/red_alert.gif)
 
@@ -117,7 +117,7 @@ Total War是后成熟期的集大成者。3D画面、千人会战、Heroes of Mi
 
 StarCraft 2后来也算是出来了，玩了一下，感觉还不错。但是也没觉得游戏性就比魔兽3好多少，无非是画面更炫而已，这和预期还是有很大差距的。
 
-类似的还有Red Alart 3，真没看出和Command & Conquer 3有啥区别，炒冷饭而已。
+类似的还有Red Alert 3，真没看出和Command & Conquer 3有啥区别，炒冷饭而已。
 
 全面战争系列继续它的辉煌历程，但除了《罗马》之外，只很短的玩了一下《幕府2》和《罗马2》。感觉现在的全战设定实在太复杂了，就是选择最简单的难度，也经常被电脑虐。。。游戏性太不好了。。。
 

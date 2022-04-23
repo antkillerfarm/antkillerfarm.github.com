@@ -171,10 +171,6 @@ https://mp.weixin.qq.com/s/vBFOQjJr27AeRsqCej85iA
 
 70年前，在苏联第一家AI LAB从事AI研究是种什么体验？
 
-https://mp.weixin.qq.com/s/jHXri6x6a1fPISEwlm_4Eg
-
-《红警1》源码放出，众网友GitHub怀古！4K高清“重制版”开启预售，登顶Steam畅销榜第三
-
 https://mp.weixin.qq.com/s/L6GP0LiCQX0Z2lps3Y0ekQ
 
 Matlab简史
@@ -258,3 +254,7 @@ https://zhuanlan.zhihu.com/p/38973085
 https://zhuanlan.zhihu.com/p/53623636
 
 我的电子邮件发不到500英里以外！
+
+https://mp.weixin.qq.com/s/hgoZuG0Kp5PIU7pVajjX-Q
+
+西祠胡同被一元钱拍卖：别了，青春里的BBS时代

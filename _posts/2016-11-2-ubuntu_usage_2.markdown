@@ -188,7 +188,7 @@ MD5算法和SHA-1算法
 
 ## UMLet
 
-UMLet是最近流行的一个绘制UML图的工具。
+UMLet是最近流行的一个绘制UML图的工具。它生成后缀为`.uxf`的UML图文件。
 
 官网：
 
@@ -354,12 +354,9 @@ https://mp.weixin.qq.com/s/yD12Ih29_9CwwOe4z5BtgQ
 
 # Chrome
 
-/etc/apt/sources.list.d/google-chrome.list：
-
-`deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main`
-
 ```bash
-wget -q -O - https://dl.google.com/linux/linux_signing_key.pub  | sudo apt-key add -
+wget -O- https://dl.google.com/linux/linux_signing_key.pub | gpg --dearmor | sudo tee /usr/share/keyrings/google-chrome-archive-keyring.gpg
+echo deb [arch=amd64 signed-by=/usr/share/keyrings/google-chrome-archive-keyring.gpg] http://dl.google.com/linux/chrome/deb/ stable main | sudo tee /etc/apt/sources.list.d/google-chrome.list
 sudo apt update
 sudo apt install google-chrome-stable
 google-chrome-stable

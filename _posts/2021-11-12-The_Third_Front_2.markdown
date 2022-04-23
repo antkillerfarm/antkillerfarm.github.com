@@ -197,6 +197,14 @@ https://www.zhihu.com/answer/2368182293
 
 ---
 
+伊拉克共和国卫队编制
+
+装甲师2个，即汉谟拉比装甲师和麦地那装甲师；
+
+机械化步兵师5个，即塔瓦卡尔那师、尼布查德尼扎尔师、阿德南师、巴格达师和总统警卫师；
+
+---
+
 https://mp.weixin.qq.com/s/3Frx_ZmmmEC_aj4tLUPleg
 
 苏莱曼尼被斩首后，这篇文章把两伊根本问题说清楚了
@@ -260,3 +268,7 @@ https://zhuanlan.zhihu.com/p/409195354
 https://zhuanlan.zhihu.com/p/438002125
 
 全球唯一器官交易合法国家：穷人拿命换钱，富人花钱续命（伊朗器官交易合法化）
+
+https://mp.weixin.qq.com/s/giuTx7hS3HD4GdiD_dyRNg
+
+黎巴嫩央行破产：一个悲情国家的不可承受之重
