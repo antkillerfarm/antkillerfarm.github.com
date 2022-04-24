@@ -99,7 +99,7 @@ https://jenkins.io/index.html
 
 gitlab管理代码版本，触发jenkins自动构建+测试，然后走迭代或者发布，全部环境都在docker内。
 
-和Jenkins同类型的工具还有Travis CI。
+和Jenkins同类型的工具还有Travis、Codeship、Strider等。
 
 参考：
 

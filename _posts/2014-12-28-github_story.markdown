@@ -53,6 +53,12 @@ https://github.com/trending/python?since=monthly
 
 可以查看repo的基本信息，比如repo的大小（单位：KB）。
 
+---
+
+https://zhuanlan.zhihu.com/p/250534172
+
+基于Github Action的CI/CD流程
+
 ## 搭建本地GitHub Blog服务
 
 1.安装ruby

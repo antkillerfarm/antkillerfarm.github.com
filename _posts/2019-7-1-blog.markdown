@@ -163,6 +163,8 @@ sudo chmod a+x OpenRA-Red-Alert-x86_64.AppImage
 
 值得注意的是该项目是从2007年开始的，并非基于EA于2020年开源的那份代码。
 
+有的PC的mesa驱动和游戏不兼容，解决办法：`export GALLIUM_THREAD=0`
+
 # 超算
 
 ![](/images/img3/power.aug.gif)
