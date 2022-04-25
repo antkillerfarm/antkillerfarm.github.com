@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blog维护日志, Red Alert, 超算
+title: Blog维护日志, 超算
 category: my story 
 ---
 
@@ -124,46 +124,6 @@ category: my story
 2015.1.7 blog搬家基本完成。
 
 2014.12.23 围观大徐的blog有感，特在github上安家落户，废弃了原来的搜狐blog。
-
-# Red Alert
-
-“龟龟便利店”，是《红色警戒2》中的著名空耳，有的玩家可能听到的是“龟龟的败类带”，那都不重要，因为原文实际为“We will bury them”，是游戏里苏军犀牛坦克下令攻击时所发出台词（尤里的复仇版）。
-
-动员兵的“脖子右拧”（For the Union）成了红警玩家最熟悉的词。
-
-https://www.163.com/dy/article/GITRPEVD05467D9Z.html
-
-脖子右拧，红警2军事单位原型考究（苏军步兵篇）
-
-https://www.163.com/dy/article/GJ012GKQ05467D9Z.html
-
-龟龟便利店，红警2军事单位原型考究（苏军战车篇）
-
----
-
-https://mp.weixin.qq.com/s/jHXri6x6a1fPISEwlm_4Eg
-
-《红警1》源码放出，众网友GitHub怀古！4K高清“重制版”开启预售，登顶Steam畅销榜第三
-
-至于《红警2》的源代码貌似在EA收购中下落不明，永远消失了，所以也就没有高清重制版了。
-
----
-
-https://www.openra.net/
-
-OpenRA是一个红警开源并现代化的版本，加入了Attack-Move、战雾、单位升级之类的元素。目前支持 Red Alert, Command & Conquer和Dune 2000等三款游戏，这三款正好也是当年WestWood用同一套引擎设计出来的。
-
-安装：
-
-```bash
-sudo apt install mono-complete libfuse2
-sudo chmod a+x OpenRA-Red-Alert-x86_64.AppImage
-./OpenRA-Red-Alert-x86_64.AppImage
-```
-
-值得注意的是该项目是从2007年开始的，并非基于EA于2020年开源的那份代码。
-
-有的PC的mesa驱动和游戏不兼容，解决办法：`export GALLIUM_THREAD=0`
 
 # 超算
 

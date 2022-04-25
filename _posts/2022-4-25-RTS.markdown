@@ -1,0 +1,133 @@
+---
+layout: post
+title:  RTS
+category: my story 
+---
+
+* toc
+{:toc}
+
+# RTS
+
+## 点评
+
+2010.2
+
+下面再对RTS做一下我的分析和评论。
+
+- 1.初创期。
+
+Dune 2是这个类型的开山之作。这个类型的基本框架就是在这时定下来的。它第一次将坦克大战的动作性和三国的策略性结合起来创建了一种全新的玩法。
+
+- 2.成熟期。
+
+成熟期开始的标志是Command & Conquer。它最大的改进是支持拉框选择多个单位，大大简化了操作。这也因此带来了Westwood的全盛时期。在这个时期blizzard虽然也推出了Warcraft 2，但完全无法和Westwood匹敌。不过blizzard虽然在制作方面比不了财大气粗的Westwood（后者招牌式的真人开场白可是要烧不少钱的），但在某些细节上却要超过后者。例如，战雾、鼠标右键和键盘的使用、农民的出现、以及资源的多样化等。这些特点在之后的StarCraft和Age of Empires上被发扬光大，从而带来了RTS的成熟期。
+
+- 3.后成熟期。
+
+StarCraft和Age of Empires 2的成功，使得这种游戏的发展一度停滞下来。期间虽然有诸多同类游戏的出现，但再无亮点。甚至就连blizzard的设计师也认为，如果不在某些方面做些改进的话，新的作品充其量也就是个画面更好的StarCraft。
+
+请注意这里我说的是玩法的亮点，而非技术的亮点。例如，Empire Earth是第一款现代意义上的3D RTS，比WarCraft 3早一年上市，画面甚至比WarCraft 3还好。但玩法上比Age of Empires改进不多，而且所谓的改进在我看来简直就是倒退。Age of Empires有4个时代，其实已经差不多了，可Empire Earth居然有15个，Age of Empires有4种资源，而后者有6种资源。这种简单的数量增加，对用户体验来说其实并没有什么提升，相反会拖长一盘游戏的时间。Age of Empires或者并不比StarCraft差，但随便一盘就要40多分钟的节奏，无疑和这个时代的节奏不符。
+
+这里插上一句，有人认为blizzard的技术天下第一，其实是不准确的。在我看来，它的技术的确很牛，但出于一些对目标用户定位的考虑，并没有把最先进的技术用在游戏中。例如，StarCraft中的nuclear bomb竟然也无法使地形改观，而C&C很早就可以用大炮在地上砸坑了。还有有些游戏中的树木会随风摆动，同一种兵被不同的武器杀死，甚至被同一武器从不同的角度杀死，死法都不一样。这些细节就比blizzard做的还要出色。
+
+在长达4、5年的沉寂之后，RTS终于再度爆发，以WarCraft 3为开端，进入了后成熟期。后成熟期的作品都试图在StarCraft和Age of Empires 2的基础之上做出一些改变。主要的改变有以下几点：
+
+- 1)英雄。
+
+虽然早在C&C时代就出现了兰博这样的特殊单位，但直到WarCraft 3中技能、经验、宝物等RPG因素的引入，才使得英雄从战术的辅助，上升到战术的主角。
+
+- 2)非资源采集化。
+
+屠农是之前所有RTS取胜的法宝之一。但Celtic Kings和Total War弱化了资源采集对战术的影响。请注意这只是对战术的影响。从战略上讲，战争，归根到底打的就是钱，无论现实还是游戏都是如此。但屠农在现实战争中出现的并不多。多数情况下，农民只要投降了，征服者通常会对其网开一面。受此启发，这两款游戏将资源的采集转化为对资源点的控制。资源开采无需农民，只要占领资源点就可以每隔一段时间获得一定的收入。
+
+- 3)单位因素的多元化。
+
+之前的RTS单位通常只有生命值、魔法值，攻防参数之类的属性，C&C 2给普通单位引入了经验值的概念，三颗星的坦克可以很轻松的干掉刚出厂的同类。Celtic Kings还针对现实战争的场景，引入了食物的概念，也就是行军中需要注意后勤，一旦断粮，部队的生命值就会下降。而Total War也提出了士气以及耐力的概念，之前的RTS，单位没有不受控制逃跑一说，但现实战争中，很少有死战不退，绝不溃散的部队。当士气或耐力下降到一定程度的时候，部队的溃散也就无可避免了。
+
+Celtic Kings是2004年发布的，一款2D的RTS能在WarCraft 3出来2年后，还卖出100W份，不能不说设计还是有独到之处了。我将之列在Total War之前，恰恰就是因为这一点。
+
+Total War是后成熟期的集大成者。3D画面、千人会战、Heroes of Might and Magic式的战略层面使得这款游戏成为StarCraft 2出现之前最具特色的RTS。
+
+---
+
+2015.9
+
+StarCraft 2后来也算是出来了，玩了一下，感觉还不错。但是也没觉得游戏性就比魔兽3好多少，无非是画面更炫而已，这和预期还是有很大差距的。
+
+类似的还有Red Alert 3，真没看出和Command & Conquer 3有啥区别，炒冷饭而已。
+
+全面战争系列继续它的辉煌历程，但除了《罗马》之外，只很短的玩了一下《幕府2》和《罗马2》。感觉现在的全战设定实在太复杂了，就是选择最简单的难度，也经常被电脑虐。。。游戏性太不好了。。。
+
+## Red Alert
+
+“龟龟便利店”，是《红色警戒2》中的著名空耳，有的玩家可能听到的是“龟龟的败类带”，那都不重要，因为原文实际为“We will bury them”，是游戏里苏军犀牛坦克下令攻击时所发出台词（尤里的复仇版）。
+
+动员兵的“脖子右拧”（For the Union）成了红警玩家最熟悉的词。
+
+https://www.163.com/dy/article/GITRPEVD05467D9Z.html
+
+脖子右拧，红警2军事单位原型考究（苏军步兵篇）
+
+https://www.163.com/dy/article/GJ012GKQ05467D9Z.html
+
+龟龟便利店，红警2军事单位原型考究（苏军战车篇）
+
+---
+
+https://mp.weixin.qq.com/s/jHXri6x6a1fPISEwlm_4Eg
+
+《红警1》源码放出，众网友GitHub怀古！4K高清“重制版”开启预售，登顶Steam畅销榜第三
+
+至于《红警2》的源代码貌似在EA收购中下落不明，永远消失了，所以也就没有高清重制版了。
+
+## OpenRA
+
+https://www.openra.net/
+
+OpenRA是一个红警开源并现代化的版本，加入了Attack-Move、战雾、单位升级之类的元素。目前支持Red Alert、Command & Conquer和Dune 2000等三款游戏，这三款正好也是当年WestWood用同一套引擎设计出来的。
+
+安装：
+
+```bash
+sudo apt install mono-complete libfuse2
+sudo chmod a+x OpenRA-Red-Alert-x86_64.AppImage
+./OpenRA-Red-Alert-x86_64.AppImage
+```
+
+值得注意的是该项目是从2007年开始的，并非基于EA于2020年开源的那份代码。
+
+有的PC的mesa驱动和游戏不兼容，解决办法：`export GALLIUM_THREAD=0`
+
+https://www.bilibili.com/read/cv6590012
+
+OpenRA官方蓝贴 2020.06.29 —— 关于目前进度的报告以及与命令与征服重制版的互动
+
+## OpenSAGE
+
+SAGE的开源版本OpenSAGE：
+
+https://github.com/OpenSAGE/OpenSAGE/
+
+## OpenRCT2
+
+
+https://openrct2.org/
+
+RollerCoaster Tycoon 2
+
+## OpenTTD
+
+Transport Tycoon Deluxe
+
+https://www.openttd.org/screenshots
+
+## OpenMW
+
+Morrowind
+
+https://gitlab.com/OpenMW/openmw
+
+# OpenDiablo2
+
+https://github.com/OpenDiablo2/OpenDiablo2
