@@ -11,6 +11,10 @@ category: my story
 
 ## 点评
 
+![](/images/img4/RTS.jpg)
+
+---
+
 2010.2
 
 下面再对RTS做一下我的分析和评论。
@@ -105,29 +109,48 @@ OpenRA官方蓝贴 2020.06.29 —— 关于目前进度的报告以及与命令�
 
 ## OpenSAGE
 
-SAGE的开源版本OpenSAGE：
+W3D -> SAGE -> RNA
+
+使用W3D引擎的游戏：
+
+Emperor: Battle for Dune
+
+使用SAGE引擎的游戏：
+
+命令与征服：将军
+
+命令与征服3
+
+使用RNA引擎的游戏：
+
+红色警戒3
+
+命令与征服4
+
+SAGE引擎的开源版本OpenSAGE：
 
 https://github.com/OpenSAGE/OpenSAGE/
 
 ## OpenRCT2
 
+RollerCoaster Tycoon 2（过山车大亨）的开源复刻版：
 
 https://openrct2.org/
 
-RollerCoaster Tycoon 2
-
 ## OpenTTD
 
-Transport Tycoon Deluxe
+Transport Tycoon Deluxe（运输大亨）的开源复刻版：
 
 https://www.openttd.org/screenshots
 
 ## OpenMW
 
-Morrowind
+The Elder Scrolls III:Morrowind（上古卷轴3：晨风）的开源复刻版：
 
 https://gitlab.com/OpenMW/openmw
 
 # OpenDiablo2
+
+Diablo 2的开源复刻版：
 
 https://github.com/OpenDiablo2/OpenDiablo2
