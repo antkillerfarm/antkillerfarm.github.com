@@ -237,6 +237,16 @@ https://www.zhihu.com/question/425823778
 
 # 中国航天
 
+![](/images/img4/CZ.jpg)
+
+![](/images/img4/CZ_2.jpg)
+
+https://mp.weixin.qq.com/s/YxfuqVdWsteW7P3rNkhYNQ
+
+中国航天日，一文带你看长征火箭发展史
+
+---
+
 https://news.qq.com/a/20180927/005739.htm
 
 离职能直接影响中国登月的人才，只配待在国企底层？
