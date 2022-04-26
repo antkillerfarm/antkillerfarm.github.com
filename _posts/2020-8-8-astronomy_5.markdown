@@ -9,6 +9,26 @@ category: Nature
 
 # 天文杂谈
 
+现代农历是民国时期开始用的。自古每当王朝更迭，第一件事就是改历法，一方面体现新朝气象，一方面也因为旧历使用多年，已经有了误差。
+
+民国成立时也未能免俗，废除了清朝使用的时宪历，1929年推出了紫金历，也就是现代农历。
+
+紫金历跟公历不同，置闰规则里有实时观测修正的部分，不是一成不变的。比如说2057年农历九月初一应该是哪天就有争议。因为该日的朔时刚好卡在北京时间零点整附近，用不同的天文算法会导致算出来的日期不一样。
+
+https://www.zhihu.com/question/405115980
+
+公历1582年消失了10天，但我国的农历用了这么多年，难道没有误差吗？
+
+---
+
+1929年，余青松接任天文研究所第二任所长后，秉承高鲁的宏愿，费时五载，于公元1935年，建立紫金山天文台。1938年因抗日战争，他主持该台的内迁工作，并在昆明东郊建成了昆明凤凰山天文台。
+
+https://mp.weixin.qq.com/s/vMe5RmD8uBW3AeGDYwbI5A
+
+紫金山天文台的创立（高鲁、余青松）
+
+---
+
 1990年发射的哈勃太空望远镜，由于一片镜片边缘磨薄了2.2mm，相机镜头misallignment, 最终导致发射后拍摄图像模糊。
 
 NASA的科学家开始没有意识到是望远镜的镜头质量问题，还在讨论是不是外太空就是模模糊糊的形态……
@@ -260,51 +280,3 @@ https://mp.weixin.qq.com/s/5JLSuv54Xyt_Fcg_Ps1Rsg
 https://mp.weixin.qq.com/s/eO71ulxgc-Fdx8KtMf7CXg
 
 40多年前美国赠送给我国1克月岩样品，背后有怎样的故事？
-
-https://mp.weixin.qq.com/s/vxTJf4pwpB3a2lqtx4fQ6g
-
-万家灯火，有你守护！我是如何拍到这次陆基中段反导试验靶弹发射的？
-
-https://mp.weixin.qq.com/s/wDhmqd2u56xJb3wcQHTW_g
-
-260年前，一个不同寻常的新年（日月同升，五星联珠）
-
-https://mp.weixin.qq.com/s/6syX6eZ3l0qnH47GL8iulg
-
-ASO-S卫星流浪计划：一起揭秘太阳磁场的秘密
-
-https://mp.weixin.qq.com/s/KFO1ar8awQ7Xl2Iam2iLEA
-
-如果没有磁场，太阳将变得枯燥无味
-
-https://mp.weixin.qq.com/s/4x9dfPsrUaXlE8_vxri7jg
-
-火箭发射失利后，一封初中生的信冲上热搜！
-
-https://mp.weixin.qq.com/s/oP5prD-KuxI8CNVo16arVQ
-
-1994年，木星曾帮地球抗下了21波灭星级打击（苏梅克-列维九号彗星）
-
-https://mp.weixin.qq.com/s/Sija998_IKP2G0GQEYynCw
-
-知否知否，月球种菜可否？
-
-https://mp.weixin.qq.com/s/rvH-gvgbjLITyP8QOuzgKA
-
-我们在新疆发现了一个建天文台的好地方
-
-https://mp.weixin.qq.com/s/03FiFl8hK8Ilbe0Amh278A
-
-发射至今44年，已飞出日球顶层的旅行者1号仍在回传数据！是如何实现的？
-
-https://mp.weixin.qq.com/s/BsAbS1QadPcBDqHYr7eiQA
-
-你绝对没见过的4种天气
-
-https://mp.weixin.qq.com/s/nrjY7LOY_XuytJ2xXk3K1Q
-
-来自星际空间的持续信号
-
-https://zhuanlan.zhihu.com/p/375675282
-
-美国超级工程，核弹炸月球

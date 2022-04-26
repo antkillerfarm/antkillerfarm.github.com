@@ -233,6 +233,26 @@ https://zhuanlan.zhihu.com/p/372974514
 
 # 机械+
 
+https://zhuanlan.zhihu.com/p/29344047
+
+缩小版坦克 中国山猫全地形车
+
+https://zhuanlan.zhihu.com/p/141028517
+
+石与火的较量-火炮时代的要塞工程学
+
+https://blog.csdn.net/ufv59to8/article/details/104421787
+
+用火烧子弹，结果会怎样？可能又要颠覆你的认知了！
+
+https://mp.weixin.qq.com/s/9TLch3E9Kiv2ImzcV9atgA
+
+上海两群众被流弹击伤：15米开外，手枪基本打不中目标
+
+https://zhuanlan.zhihu.com/p/36664340
+
+19世纪美国枪械简史
+
 https://zhuanlan.zhihu.com/p/20794653
 
 历史上第一篇关于JEEP的长篇报道都说了什么——非军迷退下

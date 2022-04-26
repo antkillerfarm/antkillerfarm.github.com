@@ -128,6 +128,8 @@ Bézier curve也可用于超参数的search。
 
 上图是Carnot cycle的PV图，其中，1->2（吸热）和3->4（放热）是等温过程，而2->3和4->1是绝热过程。
 
+>P-V图，是由James Watt发明的。
+
 由热力学第一定律可得：
 
 $$W=Q_H-Q_C\tag{1}$$

@@ -209,6 +209,36 @@ https://www.zhihu.com/question/271957617
 
 ---
 
+Savery Pump：
+
+![](/images/img4/savery_engine.gif)
+
+Newcomen Atmospheric Engine：
+
+![](/images/img4/Newcomen.gif)
+
+Watt Atmospheric Steam Engine：
+
+![](/images/img4/steam_engine.gif)
+
+Stirling Engine：
+
+![](/images/img4/stirling_engine.gif)
+
+https://zhuanlan.zhihu.com/p/24900853
+
+蒸汽机的进化（上）：从Savery到Newcomen
+
+https://www.egr.msu.edu/~lira/supp/steam/index.htm
+
+Brief History of the Steam Engine
+
+https://www.zhihu.com/question/305046391
+
+为什么英国当年不封锁蒸汽机技术，使得工业革命只发生在英国，形成高于世界任何国家的文明？
+
+---
+
 https://mp.weixin.qq.com/s/KuIf0oIkLjMTKp2FgAnpyA
 
 一口气做出12只同款雪糕，强迫症都被食物加工流水线治好了
@@ -248,23 +278,3 @@ https://www.zhihu.com/zvideo/1350151967721754624
 https://mp.weixin.qq.com/s/DIEl5q9v8Rq5cgnlr2i7cA
 
 电磁弹射为什么能淘汰蒸汽发射？
-
-https://zhuanlan.zhihu.com/p/29344047
-
-缩小版坦克 中国山猫全地形车
-
-https://zhuanlan.zhihu.com/p/141028517
-
-石与火的较量-火炮时代的要塞工程学
-
-https://blog.csdn.net/ufv59to8/article/details/104421787
-
-用火烧子弹，结果会怎样？可能又要颠覆你的认知了！
-
-https://mp.weixin.qq.com/s/9TLch3E9Kiv2ImzcV9atgA
-
-上海两群众被流弹击伤：15米开外，手枪基本打不中目标
-
-https://zhuanlan.zhihu.com/p/36664340
-
-19世纪美国枪械简史
