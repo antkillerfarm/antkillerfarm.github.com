@@ -258,3 +258,7 @@ https://zhuanlan.zhihu.com/p/53623636
 https://mp.weixin.qq.com/s/hgoZuG0Kp5PIU7pVajjX-Q
 
 西祠胡同被一元钱拍卖：别了，青春里的BBS时代
+
+https://www.zhihu.com/question/20722310
+
+计算机底层是如何访问显卡的？

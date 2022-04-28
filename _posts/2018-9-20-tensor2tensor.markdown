@@ -351,6 +351,10 @@ https://mp.weixin.qq.com/s/yNxjJHpGns6utpBpI-0XDA
 
 分布式训练框架Horovod初步学习
 
+https://zhuanlan.zhihu.com/p/374575049
+
+一文看懂Horovod源码
+
 # DMLC
 
 Distributed (Deep) Machine Learning Community是陈天奇发起的一个社区。

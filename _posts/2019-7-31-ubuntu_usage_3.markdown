@@ -172,6 +172,18 @@ https://zhuanlan.zhihu.com/p/53298578
 
 7个最佳Linux电子书阅读器
 
+# pdf
+
+Evince：GNOME的PDF阅读器。
+
+Okular：KDE 4中的PDF阅读器。
+
+KPDF：Okular的前身。KDE 3使用的PDF阅读器。
+
+上述软件都基于Poppler渲染引擎：
+
+https://poppler.freedesktop.org/
+
 # tftp
 
 tftp可提供不复杂、开销不大的文件传输服务。可以理解为是简化版的FTP。

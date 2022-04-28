@@ -346,3 +346,9 @@ Using bazel to cross-compile tensorflow for other targets.
 https://www.cnblogs.com/jojodru/p/7744630.html
 
 在Ubuntu 16.04上使用bazel交叉编译tensorflow
+
+# tf.distribute
+
+https://www.cnblogs.com/rossiXYZ/p/16142677.html
+
+TensorFlow之分布式变量（该作者写了一系列的TF分布式文章）

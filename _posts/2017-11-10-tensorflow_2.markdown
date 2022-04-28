@@ -299,6 +299,10 @@ https://blog.slinuxer.com/2019/06/tensorflow-xla
 
 TensorFlow XLA初步接触
 
+https://github.com/horance-liu/tensorflow-internals
+
+电子书《TensorFlow Internals》
+
 # TensorFlow Addons
 
 TensorFlow SIG Addons是包含社区贡献的代码库，也就是1.x时代的contrib文件夹内的内容。一般用`tfa`作为包前缀。

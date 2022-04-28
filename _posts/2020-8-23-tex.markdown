@@ -449,3 +449,7 @@ LaTeX的历史：图灵奖得主1977年开启的计划，引发学术圈重大�
 https://mp.weixin.qq.com/s/KMWhz5_EXWoxgmHUek6zBA
 
 不会用latex写公式？看看这个python转latex的库（python2latex）
+
+https://www.zhihu.com/question/65508676
+
+怎么在LaTeX中排版Python代码？

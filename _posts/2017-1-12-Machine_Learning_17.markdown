@@ -168,3 +168,125 @@ $$X_{n\times m}\approx U_{n\times k}Y_{k\times m}$$
 ## PCA和特征选择的区别
 
 两者虽然都是降维算法，但特征选择是在原有的n个特征中选择k个特征，而PCA是重建k个新的特征。
+
+## Other
+
+常见的降维算法还有：
+
+https://www.cnblogs.com/lochan/p/6627511.html
+
+数据降维之多维缩放MDS（Multiple Dimensional Scaling）
+
+https://mp.weixin.qq.com/s/cfeILnMsWlMC_T6lcSEW7A
+
+图像降维之MDS特征抽取方法
+
+https://mp.weixin.qq.com/s/C-tZRvHKcpO5jQArZi_GQA
+
+数据降维算法-从PCA到LargeVis
+
+https://mp.weixin.qq.com/s/HGBB1RLr5eux9xLtXJpokg
+
+哈工大硕士生用Python实现了11种经典数据降维算法，源代码库已开放
+
+PCA还可用于升维：
+
+https://www.cnblogs.com/lochan/p/7011831.html
+
+核化主成分分析（Kernel PCA）应用及调参
+
+https://zhuanlan.zhihu.com/p/59644996
+
+Kernel Principal Component Analysis(KPCA核主成分分析)
+
+## 参考
+
+https://mp.weixin.qq.com/s/tJ_FbL2nFQfkvKqpQJ8kmg
+
+从特征分解到协方差矩阵：详细剖析和实现PCA算法
+
+https://mp.weixin.qq.com/s/dDdyaA7Nxqa8tBE_qQ80Dw
+
+典型相关性分析(CCA)详解
+
+https://mp.weixin.qq.com/s/JDWgw3OOdBurDAShrPHJ7Q
+
+从最大方差来看主成分分析PCA
+
+https://mp.weixin.qq.com/s/ZDipXGPOxKhxtAx2Dc9RjA
+
+主成分分析（PCA）以及在图像上的应用
+
+https://mp.weixin.qq.com/s/9-nNNhhDWSYWy46u0hTazQ
+
+降维：PCA真的能改善分类结果吗？
+
+https://mp.weixin.qq.com/s/vkBSextwFQv8-DUwAxgVyA
+
+图像降维之Isomap特征抽取方法
+
+https://zhuanlan.zhihu.com/p/78193297
+
+PCA和SVD的联系和区别？
+
+https://mp.weixin.qq.com/s/Uj9AFbyFRO6jIBoC3Gy8nA
+
+小孩都看得懂的主成分分析
+
+https://mp.weixin.qq.com/s/N-JtuayRYRrZ-_P67u7rvA
+
+如何使用PCA去除数据集中的多重共线性
+
+# Loss function详解++
+
+https://mp.weixin.qq.com/s/7Jg-YvS3nvcPJ-zYhK96EA
+
+分享神经网络中设计loss function的一些技巧
+
+https://mp.weixin.qq.com/s/cYcztl8N9JF-XXp9xLJIxg
+
+一文道尽softmax loss及其变种
+
+https://mp.weixin.qq.com/s/MTeuRYutMiCmthEAObyAIg
+
+从最优化的角度看待Softmax损失函数
+
+https://zhuanlan.zhihu.com/p/23340343
+
+Center Loss及其在人脸识别中的应用
+
+https://zhuanlan.zhihu.com/p/34404607
+
+人脸识别的LOSS（上）
+
+https://zhuanlan.zhihu.com/p/34436551
+
+人脸识别的LOSS（下）
+
+https://mp.weixin.qq.com/s/kI22wSoyNT3QXXI8pVwbjA
+
+腾讯AI Lab提出新型损失函数LMCL：可显著增强人脸识别模型的判别能力
+
+https://mp.weixin.qq.com/s/8KM7wUg_lnFBd0fIoczTHQ
+
+用收缩损失(Shrinkage Loss)进行深度回归跟踪
+
+https://mp.weixin.qq.com/s/piYyhPbA6kAXuSE5yHfQ1g
+
+人脸识别损失函数综述
+
+https://zhuanlan.zhihu.com/p/60747096
+
+人脸识别损失函数简介与Pytorch实现：ArcFace、SphereFace、CosFace
+
+https://mp.weixin.qq.com/s/_cVNNZBBJljdWBPU9d38CA
+
+常见的损失函数超全总结
+
+https://mp.weixin.qq.com/s/P6xLYrNP4pNKtHcxAWAOKg
+
+数据竞赛中的各种loss function
+
+https://mp.weixin.qq.com/s/Q4ryiTOSJQaJ2e5clmXjtg
+
+一文看尽深度学习中的15种损失函数

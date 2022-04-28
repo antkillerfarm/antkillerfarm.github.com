@@ -215,56 +215,54 @@ Parameter Server就是处理海量特征计算的一种方法。
 
 这类问题的另一个特征是：特征虽多，但单独的一个样本具有的有效特征相对有限，一般不过数百个。使用样本更新参数时，只考虑这几百个特征即可，这也为相关的分布式运算提供了有利条件。
 
-# Loss function详解++
+参考：
 
-https://mp.weixin.qq.com/s/7Jg-YvS3nvcPJ-zYhK96EA
+https://www.zhihu.com/question/26998075
 
-分享神经网络中设计loss function的一些技巧
+最近比较火的parameter server是什么？
 
-https://mp.weixin.qq.com/s/cYcztl8N9JF-XXp9xLJIxg
+http://blog.csdn.net/cyh_24/article/details/50545780
 
-一文道尽softmax loss及其变种
+Parameter Server详解
 
-https://mp.weixin.qq.com/s/MTeuRYutMiCmthEAObyAIg
+https://mp.weixin.qq.com/s/yuHavuGTYMH5JDC_1fnjcg
 
-从最优化的角度看待Softmax损失函数
+阿里妈妈基于TensorFlow做了哪些深度优化？TensorFlowRS架构解析
 
-https://zhuanlan.zhihu.com/p/23340343
+https://zhuanlan.zhihu.com/p/29968773
 
-Center Loss及其在人脸识别中的应用
+大规模机器学习框架的四重境界
 
-https://zhuanlan.zhihu.com/p/34404607
+https://mp.weixin.qq.com/s/2RCH2Or_ITUTGrlfYLB8mg
 
-人脸识别的LOSS（上）
+腾讯千亿级参数分布式ML系统无量背后的秘密
 
-https://zhuanlan.zhihu.com/p/34436551
+https://mp.weixin.qq.com/s/Na2SJkfC9LzgfbTfSCclOw
 
-人脸识别的LOSS（下）
+如何基于Ray使用15行代码实现参数服务器
 
-https://mp.weixin.qq.com/s/kI22wSoyNT3QXXI8pVwbjA
+https://zhuanlan.zhihu.com/p/82116922
 
-腾讯AI Lab提出新型损失函数LMCL：可显著增强人脸识别模型的判别能力
+一文读懂“Parameter Server”的分布式机器学习训练原理
 
-https://mp.weixin.qq.com/s/8KM7wUg_lnFBd0fIoczTHQ
+https://mp.weixin.qq.com/s/5Ae1NyLM-jZnO6TCOPMYkQ
 
-用收缩损失(Shrinkage Loss)进行深度回归跟踪
+PS Worker分布式性能优化
 
-https://mp.weixin.qq.com/s/piYyhPbA6kAXuSE5yHfQ1g
+# AllReduce
 
-人脸识别损失函数综述
+https://www.zhihu.com/question/57799212
 
-https://zhuanlan.zhihu.com/p/60747096
+ring allreduce和tree allreduce的具体区别是什么？
 
-人脸识别损失函数简介与Pytorch实现：ArcFace、SphereFace、CosFace
+https://andrew.gibiansky.com/blog/machine-learning/baidu-allreduce/
 
-https://mp.weixin.qq.com/s/_cVNNZBBJljdWBPU9d38CA
+Bringing HPC Techniques to Deep Learning
 
-常见的损失函数超全总结
+https://zhuanlan.zhihu.com/p/79030485
 
-https://mp.weixin.qq.com/s/P6xLYrNP4pNKtHcxAWAOKg
+AllReduce算法的前世今生
 
-数据竞赛中的各种loss function
+https://mp.weixin.qq.com/s/4XMVYXnzpYZ4DrIabuTUig
 
-https://mp.weixin.qq.com/s/Q4ryiTOSJQaJ2e5clmXjtg
-
-一文看尽深度学习中的15种损失函数
+Ring All-reduce: 分布式深度学习的巧妙同步

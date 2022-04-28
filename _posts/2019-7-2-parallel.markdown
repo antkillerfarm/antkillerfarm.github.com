@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  并行 & 框架 & 优化
-category: resource 
+category: DL acceleration 
 ---
 
 * toc
@@ -72,24 +72,6 @@ DDP系列第二篇：实现原理与源代码解析
 https://zhuanlan.zhihu.com/p/250471767
 
 DDP系列第三篇：实战与技巧
-
-## AllReduce
-
-https://www.zhihu.com/question/57799212
-
-ring allreduce和tree allreduce的具体区别是什么？
-
-https://andrew.gibiansky.com/blog/machine-learning/baidu-allreduce/
-
-Bringing HPC Techniques to Deep Learning
-
-https://zhuanlan.zhihu.com/p/79030485
-
-AllReduce算法的前世今生
-
-https://mp.weixin.qq.com/s/4XMVYXnzpYZ4DrIabuTUig
-
-Ring All-reduce: 分布式深度学习的巧妙同步
 
 ## 参考
 
