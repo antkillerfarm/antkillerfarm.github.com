@@ -438,6 +438,10 @@ https://zhuanlan.zhihu.com/p/99801808
 
 ## 参考
 
+https://zhuanlan.zhihu.com/p/508559139
+
+Latex简明速查手册
+
 https://www.zhihu.com/question/40763253
 
 如何在Word和PowerPoint中优雅地插入Latex公式？

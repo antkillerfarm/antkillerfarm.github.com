@@ -446,3 +446,7 @@ https://www.zhihu.com/question/498271491
 https://mp.weixin.qq.com/s/LjdHBEyQhJq3ptMj8XVT-w
 
 TensorFlow在推荐系统中的分布式训练优化实践
+
+https://mp.weixin.qq.com/s/rEHhf32L09KXGJ9bbB2LEA
+
+TensorFlow在美团外卖推荐场景的GPU训练优化实践

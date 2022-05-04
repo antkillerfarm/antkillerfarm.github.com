@@ -233,6 +233,38 @@ https://zhuanlan.zhihu.com/p/372974514
 
 # 机械+
 
+https://mp.weixin.qq.com/s/IcY_RfIpioEBC493bEtUdw
+
+计算机鼻祖的鼻祖-差分机：机械史上的最强大脑，最复杂的巅峰之作
+
+https://www.zhihu.com/zvideo/1326523456260132864
+
+3D高清动画展示博福斯40mm高射炮的工作原理
+
+https://www.zhihu.com/zvideo/1313875144842940416
+
+二战苏联的DSHK重机枪，3D动画演示它的工作原理
+
+https://www.zhihu.com/zvideo/1324714363509334016
+
+3D动画演示布朗式轻机枪的工作原理
+
+https://www.zhihu.com/question/263808184
+
+蜂鸟手枪
+
+https://mp.weixin.qq.com/s/3nQAEdHfI9QF5E6n2Sbcew
+
+俄军士兵为什么要坐在车顶上?—浅谈苏联装甲运兵车和步战的取舍
+
+https://www.zhihu.com/zvideo/1350151967721754624
+
+吊威亚如何让你飞檐走壁？
+
+https://mp.weixin.qq.com/s/DIEl5q9v8Rq5cgnlr2i7cA
+
+电磁弹射为什么能淘汰蒸汽发射？
+
 https://zhuanlan.zhihu.com/p/29344047
 
 缩小版坦克 中国山猫全地形车

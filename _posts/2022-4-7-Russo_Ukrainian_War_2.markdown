@@ -119,6 +119,14 @@ https://www.zhihu.com/question/527898248
 
 俄媒：俄罗斯莫斯科号导弹巡洋舰起火受损严重，详细情况如何？还有哪些信息值得关注？
 
+https://mp.weixin.qq.com/s/LiizCAIwWigbpOxG8Y-T6w
+
+“莫斯科”号沉没十天后，美海军突然放弃所有巡洋舰
+
+https://mp.weixin.qq.com/s/Glt5N5OmT82HGy9yF84UWw
+
+“莫斯科号”沉没：一艘巡洋舰的曲折命运
+
 ---
 
 俄罗斯的紫皮糖多数都是波罗申科家生产的，好多人还以为买糖能支援大毛。

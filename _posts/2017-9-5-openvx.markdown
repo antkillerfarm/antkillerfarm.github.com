@@ -400,7 +400,3 @@ https://mp.weixin.qq.com/s/_9NJ6QLQArUAD1DKb0KRfA
 https://mp.weixin.qq.com/s/e_TzQxFLAonLMyYAhte6Cg
 
 face-api.js：在浏览器中进行人脸识别的JavaScript接口
-
-https://mp.weixin.qq.com/s/LjdHBEyQhJq3ptMj8XVT-w
-
-TensorFlow在推荐系统中的分布式训练优化实践

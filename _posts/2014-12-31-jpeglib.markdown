@@ -287,6 +287,16 @@ WireShark以丰富的过滤器著称，现将我使用到的过滤器规则摘�
 
 将一次TCP交互的包过滤出来，id表示是第几次交互。
 
+---
+
+这套规则实际上就是所谓的BPF(Berkeley Packet Filter）。1992年由Steven McCanne和Van Jacobson提出，1997年引入Linux Kernel 2.1，3.0中增加了即时编译器，应用在网络过滤领域。
+
+2014年Alexei Starovoitov实现了eBPF并扩展到用户空间，威力更大。
+
+https://mp.weixin.qq.com/s/SQ-3fO5ZInqB5aeKCPpluw
+
+Linux中基于eBPF的恶意利用与检测机制
+
 ## 参考
 
 https://mp.weixin.qq.com/s/y89cPgaIBWeudJnsFRR-Ow

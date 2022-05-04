@@ -23,7 +23,7 @@ http://blog.csdn.net/believefym/archive/2007/06/08/1644635.aspx
 
 eclipse下jni初试
 
- 这里需要注意的是javah命令处理的是.class文件，而不是.java文件。你需要指定package的路径和package名。javap命令也有类似的要求。
+这里需要注意的是javah命令处理的是.class文件，而不是.java文件。你需要指定package的路径和package名。javap命令也有类似的要求。
 
 (2)Native C call Java
 
@@ -75,9 +75,9 @@ Android原生(Native)C开发之一：环境搭建篇
 
 还有一点需要注意的是，风临左岸使用的交叉编译工具，所编出的程序虽然可以在模拟器中运行，但却是无法直接用于JNI的，需要使用一定的技巧，可参见以下网页：
 
-Shared library "Hello World!" for Android
-
 http://honeypod.blogspot.com/2007/12/shared-library-hello-world-for-android.html
+
+Shared library "Hello World!" for Android
 
 从这篇文章可以看出，风临左岸使用的交叉编译工具的动态库的默认格式，和Android平台的动态库的格式是不同的，这也是之前有人说Android无法使用JNI的原因。
 

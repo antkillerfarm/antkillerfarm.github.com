@@ -99,6 +99,18 @@ https://www.runoob.com/w3cnote/cglibcode-generation-library-intro.html
 
 CGLIB(Code Generation Library) 介绍与原理
 
+## JNA
+
+JNA(Java Native Access)是一个开源的Java框架，是Sun公司推出的一种调用本地方法的技术，是建立在经典的JNI基础之上的一个框架。之所以说它是JNI的替代者，是因为JNA大大简化了调用本地方法的过程，使用很方便，基本上不需要脱离Java环境就可以完成。
+
+https://www.cnblogs.com/lanxuezaipiao/p/3635556.html
+
+JNI的替代者—使用JNA访问Java外部功能接口
+
+https://mp.weixin.qq.com/s/vA69QGfZeKRlxZs_v_DQkw
+
+Linux下跨语言调用C++实践
+
 ## 参考
 
 http://blog.csdn.net/u014717036/article/details/52234679

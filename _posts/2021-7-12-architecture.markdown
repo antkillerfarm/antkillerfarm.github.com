@@ -175,6 +175,16 @@ https://www.zhihu.com/question/303797739
 
 ---
 
+![](/images/img4/truss.jpg)
+
+![](/images/img4/truss_2.jpg)
+
+http://www.archcollege.com/archcollege/2018/09/41678.html
+
+建筑师不得不知的桁架常识
+
+---
+
 https://zhuanlan.zhihu.com/p/343944664
 
 人防工程
