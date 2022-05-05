@@ -325,3 +325,7 @@ GPU架构（上）—AI芯片设计入门
 https://zhuanlan.zhihu.com/p/446837354
 
 GPU架构（下）—AI芯片设计入门
+
+https://www.zhihu.com/question/523521515
+
+如何评价英伟达3月22日发布的全新GPU H100？

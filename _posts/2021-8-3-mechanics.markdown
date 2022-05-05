@@ -249,10 +249,4 @@ https://www.zhihu.com/question/53028127
 
 ---
 
-https://mp.weixin.qq.com/s/KuIf0oIkLjMTKp2FgAnpyA
-
-一口气做出12只同款雪糕，强迫症都被食物加工流水线治好了
-
-https://mp.weixin.qq.com/s/-Utzrysum7Io1DVCVExywQ
-
-真的名媛，敢于突破被洗碗支配的恐惧
+![](/images/img4/tank.jpg)

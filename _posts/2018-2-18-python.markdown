@@ -113,6 +113,12 @@ pip解决ImportError: cannot import name 'main'
 
 ---
 
+`SSL: CERTIFICATE_VERIFY_FAILED`
+
+`pip3 --trusted-host pypi.python.org install numpy`
+
+---
+
 requirements：
 
 `pip install -r requirements.txt`
@@ -122,6 +128,8 @@ requirements：
 https://www.jianshu.com/p/b183b464a611
 
 python requirements文件生成与使用
+
+---
 
 https://mp.weixin.qq.com/s/9q0bLHTpzS-SvzfzHtZBXg
 

@@ -260,6 +260,12 @@ Google launches i.MX8M dev board with Edge TPU AI chip
 
 ### 脉动阵列
 
+**AI=矩阵乘+非线性**
+
+由于非线性只有可怜的O(N)的计算量，矩阵乘的O(N^3)的计算量才是AI中的绝对计算瓶颈。
+
+---
+
 Systolic array是孔祥重和他的博士生Charles Leiserson于1978年发明的。
 
 论文：
