@@ -9,7 +9,13 @@ category: DL acceleration
 
 # 知识蒸馏
 
-## 基本概念（续）
+## 基本概念
+
+知识蒸馏是另一大类的模型压缩方法。
+
+这类方法的开山之作，当属Geoffrey Hinton和Jeff Dean的论文：
+
+《Distilling the Knowledge in a Neural Network》
 
 一个很大的DNN往往训练出来的效果会比较好，并且多个DNN一起ensemble的话效果会更好。但是实际应用中，过于庞大的DNN ensemble会增大计算量，从而影响应用。于是一个问题就被提出了：有没有一个方法，能使降低网络的规模，但是保持（一定程度上的）精确度呢？
 

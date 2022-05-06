@@ -196,6 +196,42 @@ https://www.umlet.com/
 
 除了独立工具之外，还提供了VSCode和Eclipse的插件。
 
+## draw.io
+
+draw.io是一个在线的流程图工具。
+
+官网：
+
+https://app.diagrams.net/
+
+此外，它也有离线版和VSCode插件。
+
+## ProcessOn
+
+ProcessOn也是一个在线的流程图工具。
+
+官网：
+
+https://www.processon.com
+
+## mxGraph
+
+mxGraph是一个JS的流程图工具库。上面提到draw.io、ProcessOn都使用了该库。
+
+官网：
+
+https://jgraph.github.io/mxgraph/
+
+参考：
+
+https://juejin.cn/post/6844903811115401224
+
+mxgraph的艰难入门
+
+https://yejinzhan.gitee.io/2019/04/27/mxGraph%20%E5%85%A5%E9%97%A8%E5%AE%9E%E4%BE%8B%E6%95%99%E7%A8%8B/
+
+mxGraph入门实例教程
+
 # Firefox插件
 
 http://mozilla.com.cn/addon/76-pagesaver/
@@ -351,31 +387,3 @@ https://www.freeplane.org/wiki/index.php/Home
 https://mp.weixin.qq.com/s/yD12Ih29_9CwwOe4z5BtgQ
 
 被收费绘图工具PUA了怎么办？来看看这个老实工具吧
-
-# Chrome
-
-```bash
-wget -O- https://dl.google.com/linux/linux_signing_key.pub | gpg --dearmor | sudo tee /usr/share/keyrings/google-chrome-archive-keyring.gpg
-echo deb [arch=amd64 signed-by=/usr/share/keyrings/google-chrome-archive-keyring.gpg] http://dl.google.com/linux/chrome/deb/ stable main | sudo tee /etc/apt/sources.list.d/google-chrome.list
-sudo apt update
-sudo apt install google-chrome-stable
-google-chrome-stable
-```
-
-安装flash：
-
-1、首先在adobe官网下载tar.gz格式的linux安装包，之后将其解压。
-
-2.`sudo gedit /usr/share/applications/google-chrome.desktop`
-
-3.将`Exec=/usr/bin/google-chrome-stable %U`后，添加`--ppapi-flash-path=path/libpepflashplayer.so --ppapi-flash-version=<version>`
-
-# 常用快捷键
-
-Ctrl+Alt+T：启动Terminal
-
-Ctrl+Shift+T：在terminal中打开多个标签
-
-alt+1 alt+2 alt+3...：切换标签
-
-Ctrl+Super+D：最小化所有窗口

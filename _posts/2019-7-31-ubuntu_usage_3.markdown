@@ -7,6 +7,34 @@ category: linux
 * toc
 {:toc}
 
+# Chrome
+
+```bash
+wget -O- https://dl.google.com/linux/linux_signing_key.pub | gpg --dearmor | sudo tee /usr/share/keyrings/google-chrome-archive-keyring.gpg
+echo deb [arch=amd64 signed-by=/usr/share/keyrings/google-chrome-archive-keyring.gpg] http://dl.google.com/linux/chrome/deb/ stable main | sudo tee /etc/apt/sources.list.d/google-chrome.list
+sudo apt update
+sudo apt install google-chrome-stable
+google-chrome-stable
+```
+
+安装flash：
+
+1、首先在adobe官网下载tar.gz格式的linux安装包，之后将其解压。
+
+2.`sudo gedit /usr/share/applications/google-chrome.desktop`
+
+3.将`Exec=/usr/bin/google-chrome-stable %U`后，添加`--ppapi-flash-path=path/libpepflashplayer.so --ppapi-flash-version=<version>`
+
+# 常用快捷键
+
+Ctrl+Alt+T：启动Terminal
+
+Ctrl+Shift+T：在terminal中打开多个标签
+
+alt+1 alt+2 alt+3...：切换标签
+
+Ctrl+Super+D：最小化所有窗口
+
 # Ubuntu 18.04使用手记
 
 又是两年过去了，这次是Ubuntu 18.04（2018.4.26发布）。
@@ -318,68 +346,6 @@ LibreOffice：7.3
 
 ---
 
-RTL8821CE网卡驱动已经集成到内核中，所以这次的网络安装体验满分。
+RTL8821CE网卡驱动已经集成到内核中，所以这次安装的网络体验满分。
 
-其实离线安装并非不可以，只要你选择安装英文版就行了。
-
-# Linux参考资源++
-
-https://mp.weixin.qq.com/s/1JiXL1f3SSjsBojlJSNOpQ
-
-Linux的启动流程
-
-https://mp.weixin.qq.com/s/ZfprFQjVANuCE2N693gZBQ
-
-用户空间和内核空间
-
-https://mp.weixin.qq.com/s/P14VsWwSh9jiF-jBHSXXOw
-
-申请内存时底层发生了什么？
-
-https://mp.weixin.qq.com/s/OJHQZjxa6u8aA6jZyJnNPg
-
-一文浅析内存管理机制
-
-https://mp.weixin.qq.com/s/lAN0GKjkfkkWCurwRQb6DQ
-
-如何排查句柄泄露问题
-
-https://mp.weixin.qq.com/s/9UmzFxRdE4FFdrqEeBZtOQ
-
-如何实现一个定时器？
-
-https://mp.weixin.qq.com/s/zVi45pZka_kPpKIoNXNVBA
-
-当初我要是这么学习“进程和线程”就好了
-
-https://mp.weixin.qq.com/s/A8TnhOFLQOhEqphE760yvw
-
-15个相见恨晚的Linux神器，你可能一个都没见过
-
-https://mp.weixin.qq.com/s/ejGjsGA1ijPP--j3BLcEFA
-
-Linux并发与同步
-
-https://mp.weixin.qq.com/s/CAPU8bjJWobQs6JHHMasvQ
-
-Linux服务端最大并发数是多少？
-
-http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html
-
-Systemd入门教程：实战篇
-
-https://mp.weixin.qq.com/s/bPqnaMqhi_4p1mwjmvyoIw
-
-多图详解10大高性能开发核心技术
-
-https://mp.weixin.qq.com/s/ESLO1RH6Q8udwI13Z2Pz_w
-
-详解linux io flush
-
-https://mp.weixin.qq.com/s/LLlzPB2emr9Hqr7gql0B4Q
-
-为什么Linux需要Swapping
-
-https://mp.weixin.qq.com/s/fzLcAkYwKhj-9hgoVkTzaw
-
-CPU飙高，系统性能问题如何排查？
+而且我还发现，其实离线安装并非不可以，只要你选择安装英文版就行了。

@@ -121,6 +121,12 @@ https://zhuanlan.zhihu.com/p/143499632
 
 NVIDIA A100 GPU中的TF32将AI训练与HPC速度提升20倍
 
+## x86 Extended Precision Format
+
+Intel在早期的8087芯片上引入了一种80bit的浮点格式：1 Sign + 15 Exponent + 80 Significand
+
+这个格式设计不知道是否启发了BF16，因为它采用了和IEEE 754中128bit相同的Exponent，正如BF16使用FP32的Exponent一样，都是高一个档次的Exponent搭配低档次的Significand。
+
 ## Posit
 
 ![](/images/img4/Posit.png)
@@ -320,27 +326,3 @@ https://mp.weixin.qq.com/s/S9VcoS_59nbZWe_P3ye2Tw
 https://zhuanlan.zhihu.com/p/35700882
 
 CNN量化技术
-
-https://mp.weixin.qq.com/s/9DXMqiPIK5P5wzUMT7_Vfw
-
-基于交替方向法的循环神经网络多比特量化
-
-https://mp.weixin.qq.com/s/PDeChj1hQqUrZiepxXODJg
-
-ICLR oral：清华提出离散化架构WAGE，神经网络训练推理合二为一
-
-https://mp.weixin.qq.com/s/KgM1k1bziLTCec67hQ8hlQ
-
-超全总结：神经网络加速之量化模型
-
-https://mp.weixin.qq.com/s/7dzQhgblEm-kzRnpddweSw
-
-嵌入式端CNN网络计算的量化-动态定点法（1）
-
-https://mp.weixin.qq.com/s/M3NcH30zY5Wlj76BDPQlMA
-
-模型压缩一半，精度几乎无损，TensorFlow推出半精度浮点量化工具包，还有在线Demo
-
-https://www.zhihu.com/question/498135156
-
-如何看待FAIR提出的8-bit optimizer：效果和32-bit optimizer相当？

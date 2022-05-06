@@ -113,9 +113,15 @@ pip解决ImportError: cannot import name 'main'
 
 ---
 
+问题：
+
 `SSL: CERTIFICATE_VERIFY_FAILED`
 
+解决：
+
 `pip3 --trusted-host pypi.python.org install numpy`
+
+当然最根本的办法还是安装相关的SSL证书，只是有点麻烦。
 
 ---
 
