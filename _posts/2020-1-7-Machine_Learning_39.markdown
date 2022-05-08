@@ -349,6 +349,10 @@ https://mp.weixin.qq.com/s/qXIfqwP-ar77QhnooJRYqA
 
 基于图的异常检测，94页ppt
 
+https://zhuanlan.zhihu.com/p/500163005
+
+时间序列异常检测（一）——算法综述
+
 # 因果推理
 
 https://mp.weixin.qq.com/s/doi26r9AVIMbpkZ01wsCZA
