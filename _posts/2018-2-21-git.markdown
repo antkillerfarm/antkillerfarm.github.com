@@ -413,6 +413,10 @@ GitLab self-managed是GitLab出品的本地Git Server。
 
 `git submodule update --init --remote --rebase`
 
+单独更新子module AAA：
+
+`git submodule update AAA`
+
 参考：
 
 https://www.jianshu.com/p/284ded3d191b

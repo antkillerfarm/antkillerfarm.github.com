@@ -125,6 +125,10 @@ OpenRA支持的游戏还包括RA 2、C&C 2、KKND等。
 
 相关资源无需安装，直接放在`~/.config/openra/Context`下即可。
 
+---
+
+OpenRA提供了Debug模式，相当于内置了作弊器。。。
+
 ## OpenSAGE
 
 W3D -> SAGE -> RNA
@@ -161,6 +165,14 @@ Transport Tycoon Deluxe（运输大亨）的开源复刻版：
 
 https://www.openttd.org/screenshots
 
+Ludde是Ludvig Strigeus的昵称，除了OpenTTD之外，他还是ScummVM、μTorrent等知名开源软件的作者。
+
+因为罕见的肌肉疾病，Ludde不得不一直坐在轮椅上。但这丝毫不能阻止他不断的挑战自己的极限，为这个世界带来更多的进步与贡献。
+
+https://zhuanlan.zhihu.com/p/131228429
+
+开源重制——拯救失落的文化遗产
+
 ## OpenMW
 
 The Elder Scrolls III:Morrowind（上古卷轴3：晨风）的开源复刻版：
@@ -172,3 +184,27 @@ https://gitlab.com/OpenMW/openmw
 Diablo 2的开源复刻版：
 
 https://github.com/OpenDiablo2/OpenDiablo2
+
+除了单机游戏之外，网游也有开源版本，例如Open Unlight。
+
+## DosBox
+
+DosBox是Linux平台玩DOS老游戏的法宝。
+
+安装：
+
+`sudo apt install dosbox`
+
+启动DosBox之后，需要使用如下命令加载本地文件夹：
+
+`mount c ~/dosprom`
+
+## 藏宝屋
+
+https://github.com/rwv/chinese-dos-games
+
+中文DOS游戏
+
+https://github.com/skywind3000/preserve-cd
+
+绝版游戏保护工程

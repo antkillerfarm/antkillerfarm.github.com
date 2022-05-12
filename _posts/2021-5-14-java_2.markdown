@@ -405,6 +405,10 @@ http://www.phreedom.org/research/tinype/
 
 Tiny PE
 
+https://www.zhihu.com/question/30576554
+
+自己写的COFF文件格式和编译器生成的.obj文件一样吗？
+
 ---
 
 elf格式除了代码和数据外还有很多有用的信息，可以被标准boot loader识别，你如果不想自己花费10+天去自己实现stage1和stage2的bootloader的话，elf文件可以帮你省很多时间，因为grub可以直接加载，qemu也可以直接运行。

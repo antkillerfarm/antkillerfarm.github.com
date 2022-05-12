@@ -123,10 +123,6 @@ https://mp.weixin.qq.com/s/NFYlupa0piLjcWrRaP-C-Q
 
 中年失业破产后当雇佣兵、倒卖煎饼果子，游戏里的打工人也这么难？
 
-https://github.com/skywind3000/preserve-cd
-
-绝版游戏保护工程
-
 https://www.zhihu.com/zvideo/1358906505719336960
 
 一个讲述War 3秘密的专栏

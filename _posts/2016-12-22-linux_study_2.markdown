@@ -459,15 +459,3 @@ bash只支持整数四则运算，浮点数和复杂运算就靠`bc`了。
 删除`0-9`开头的文件。
 
 linux文件分割用split,合并用cat。最近下了一本采用split分割的书，但是我没有Linux环境，于是在windows的命令行下用`type *.txt >>f:\1.txt`合并了文件。
-
-# DosBox
-
-DosBox是Linux平台玩DOS老游戏的法宝。
-
-安装：
-
-`sudo apt install dosbox`
-
-启动DosBox之后，需要使用如下命令加载本地文件夹：
-
-`mount c ~/dosprom`
