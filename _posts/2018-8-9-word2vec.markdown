@@ -150,6 +150,14 @@ https://blog.csdn.net/congwulong/article/details/7576012
 
 FFTW中文参考
 
+## ocenaudio
+
+一个用于音频剪辑处理的工具。免费但不开源。
+
+官网：
+
+http://www.ocenaudio.com/
+
 ## aubio
 
 aubio是一个C语言的音频分析库，提供了提取fbank、MFCC等特征的能力。

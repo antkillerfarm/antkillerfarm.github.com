@@ -106,10 +106,6 @@ http://conky.sourceforge.net/
 
 Conky---自由软件，用于X视窗系统的系统监视。
 
-http://www.ocenaudio.com/
-
-ocenaudio---用于音频剪辑处理的工具。免费但不开源。
-
 https://obsproject.com/
 
 OBS Studio---一个录屏软件
