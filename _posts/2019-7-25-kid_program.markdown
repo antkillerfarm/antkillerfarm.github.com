@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  孩子的编程语言, Go, Julia, Rust, perl, VS, Objective-C
+title:  孩子的编程语言, Go, Julia, Rust, perl, VS
 category: language 
 ---
 
@@ -235,6 +235,14 @@ https://mp.weixin.qq.com/s/N5wby-aWWEPc7mHN_lN3lQ
 https://mp.weixin.qq.com/s/SxaNLfGwM4dyzvBUvLAHvA
 
 写给想去字节写Go的你
+
+https://zhuanlan.zhihu.com/p/265806072
+
+将Go程序跑在裸机上
+
+https://zhuanlan.zhihu.com/p/397473228
+
+将Go程序跑在裸机上之LibOS
 
 ## GTK
 
@@ -471,19 +479,3 @@ VS2015以后，MS不再提供VS的离线安装包，因为安装文件实在是�
 2.安装证书。证书在offline\certificates下。
 
 3.运行offline\vs_community.exe。
-
-# Objective-C
-
-## 环境搭建
-
-PC上搭建Objective-C（以下简称OC）开发环境，主要借助GNUstep开源项目的成果。
-
-以Ubuntu为例，步骤如下：
-
-1.安装软件包。
-
-`sudo apt install gnustep-devel libjpeg-dev libtiff5-dev gobjc-4.9`
-
-2.设置环境变量。
-
-`GNUSTEP_MAKEFILES=/usr/share/GNUstep/Makefiles`

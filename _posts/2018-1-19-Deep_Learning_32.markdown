@@ -155,6 +155,14 @@ https://mp.weixin.qq.com/s/blWOcxts_V_0w0g8zFWz7w
 
 自动驾驶之点云与图像融合综述
 
+https://mp.weixin.qq.com/s/CMBNNhUrvfx87DeX0KbdXg
+
+常用三维点云采样方法总结
+
+https://mp.weixin.qq.com/s/GhJnofRLQWCnJNM4_DDtNA
+
+点云配准算法ICP及其各种变体
+
 # AutoDL
 
 DL领域目前存在的主要问题之一是：如何设计网络结构和调整超参数。目前的做法，通常依赖于作者的直觉，属于典型的拍脑袋想点子。

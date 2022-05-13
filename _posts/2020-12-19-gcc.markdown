@@ -196,6 +196,20 @@ https://www.zhihu.com/question/441129390
 
 mold（A Modern Linker）大大改进了相关算法的并行性，因此性能要比前两者快得多。
 
+## glibc
+
+查看glibc版本：
+
+`ldd --version`
+
+代码中获得glibc版本：
+
+```cpp
+#if defined(__GLIBC__) && __GLIBC_MINOR__ >= 33 // for glibc 2.33+
+...
+#endif
+```
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/372526494
@@ -287,6 +301,10 @@ https://csstormq.github.io/
 https://www.zhihu.com/question/484069566
 
 LLVM怎么表达硬件相关的特性?
+
+https://mp.weixin.qq.com/s/-IjJJG5huL6p3KjhO70s7Q
+
+编译器中的图论算法
 
 # ANTLR
 
