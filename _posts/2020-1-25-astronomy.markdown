@@ -33,6 +33,8 @@ https://www.atnf.csiro.au/outreach/education/senior/astrophysics/stellarevolutio
 
 The Hertzsprung-Russell Diagram
 
+![](/images/img4/star.jpg)
+
 ---
 
 ![](/images/img3/B2FH.jpg)
@@ -298,11 +300,3 @@ https://commons.wikimedia.org/wiki/User:Azcolvin429#/media/File:Earth's_Location
 北河二（双子座 α），六颗星，是已知最著名的聚星系统。Aa与Ab, Ba与Bb, Ca与Cb各自都是双星系统。Castor A和Castor B互相环绕组成了一个四星系统。该四星系统和Castor C互相环绕又组成了一个六星系统。
 
 早在1678年，人们就看出北河二是由两颗子星构成的。1802年，也是威廉•赫歇耳，发现这两颗子星在万有引力的作用下围绕着它们共同的质心转动，这是第一颗被天文观测确认的物理双星现象，这种能直接被望远镜认出的双星叫做“目视双星”。
-
-此后，人们又发现这两颗 “子星”其实各自都是双星，不过这种双星靠得很近，用望远镜也看不出来，只能从光谱特征上判断出是两颗星，因此叫“分光双星”。离这四颗星稍远的地方，还有一颗暗的“伴星”（Castor C），它本身也是两颗星在围绕质心转动时会相互掩映的系统，称作“食双星”。
-
-还有更变态的七星系统——键闭（天蝎座 ν）。
-
-![](/images/img4/7_stars.webp)
-
-它由一个4星系统+一个3星系统组成，这些系统本身又是套叠而成的。

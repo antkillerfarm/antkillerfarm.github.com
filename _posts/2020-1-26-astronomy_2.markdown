@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 黑洞成像
+title: 黑洞
 category: Nature 
 ---
 
@@ -8,6 +8,16 @@ category: Nature
 {:toc}
 
 # 轨道学（续）
+
+此后，人们又发现这两颗 “子星”其实各自都是双星，不过这种双星靠得很近，用望远镜也看不出来，只能从光谱特征上判断出是两颗星，因此叫“分光双星”。离这四颗星稍远的地方，还有一颗暗的“伴星”（Castor C），它本身也是两颗星在围绕质心转动时会相互掩映的系统，称作“食双星”。
+
+还有更变态的七星系统——键闭（天蝎座 ν）。
+
+![](/images/img4/7_stars.webp)
+
+它由一个4星系统+一个3星系统组成，这些系统本身又是套叠而成的。
+
+---
 
 木星的轨道上存在两个与木星运行轨道及速率一致两群小行星，统称为特洛伊群，其中运行在木星“前方”的为“希腊群”，运行在木星“后方”的为“纯特洛伊群”。
 
@@ -117,7 +127,7 @@ https://mp.weixin.qq.com/s/nXbjy6v0sgfG42DrRCohcA
 
 刚路过太阳，下面是地球人对我的探索回顾
 
-# 黑洞成像
+# 黑洞
 
 ## 黑洞照片
 
@@ -284,15 +294,3 @@ https://mp.weixin.qq.com/s/iJoPJiP3KxDXz6ZOBN4seQ
 https://mp.weixin.qq.com/s/Vw6vuuyIoJJIzn04NzS5AQ
 
 被“天眼”改变的县城中学
-
-https://mp.weixin.qq.com/s/GLjXHV7aYQ77OoDuZfMXmQ
-
-黑洞偏振照片发布！
-
-https://mp.weixin.qq.com/s/3KqyXlt69-wkkacQpkZ6uw
-
-又有新消息！人类获取了M87黑洞的“指纹”
-
-https://mp.weixin.qq.com/s/qUCfrmnXBmm5LfdeU3GgxA
-
-时隔两载"黑洞"翻新：人类首次获得黑洞边缘的高清照片
