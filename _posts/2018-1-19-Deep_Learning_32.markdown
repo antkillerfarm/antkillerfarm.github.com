@@ -9,6 +9,26 @@ category: DL
 
 # 点云
 
+## 概述
+
+![](/images/img4/voxel.jpg)
+
+上图是3D数据的不同表示类型:（a）点云（Point clouds）；(b) 体素网格(Voxel grids)； (c) 多边形网格(Polygon meshes)； (d) 多视图表示(Multi-view representations)
+
+a. 点云是三维空间(xyz坐标)点的集合。
+
+b. 体素是3D空间的像素。量化的，大小固定的点云。每个单元都是固定大小和离散坐标。
+
+c. mesh是面片的集合。
+
+d. 多视图表示是从不同模拟视点渲染的2D图像集合。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/348563616
+
+什么是体素(Voxel)?
+
 ## PCL
 
 The Point Cloud Library是一个点云处理的库。
