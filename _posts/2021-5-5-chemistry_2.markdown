@@ -147,6 +147,14 @@ https://www.zhihu.com/question/34623286
 
 ---
 
+硅和矽的区别，说到底就和Sodium和Natrium，Potassium和Kalium一样，只不过是近代欧洲化学用名中，反映在西欧的两大主流语族——日耳曼系和拉丁系名称上的区别而已。这两大系统分别以不同的途径传入中国，比如日耳曼系的路线是德语~荷兰语~日本兰学家~明治后日本化学教材~由日语（和制汉字）翻译到国内，拉丁系则是由拉丁语（欧洲科学领域的通用语）~法语~英语~英美传教士~由英语翻译到国内。
+
+https://www.zhihu.com/question/359213795
+
+大陆为何改“矽”为“硅”？
+
+---
+
 https://mp.weixin.qq.com/s/0fdnEWpLvPSbweFh0v4x9A
 
 科学家的浪漫，是用激光画一道彩虹（姜黄素）
@@ -170,51 +178,3 @@ https://mp.weixin.qq.com/s/cYa9uQSjtxgtJawhJ8WYcw
 https://mp.weixin.qq.com/s/wRgzQ43fxHkYCl2g5ei3Eg
 
 做环境毒理学挺焦虑的：做不出毒性，愁论文，做出毒性，又替地球担心
-
-https://mp.weixin.qq.com/s/A9M_2DVqmFQaTdSy2yEJ1A
-
-为什么烤面包会这么香？
-
-https://mp.weixin.qq.com/s/hTp5-EU_83y_XUk0BmwoZw
-
-shan气还是xian气？神秘元素这样给水合物拍CT...
-
-https://mp.weixin.qq.com/s/WM4_VtZ6k34dz-vAPallGA
-
-神秘的第99号（锿）
-
-https://mp.weixin.qq.com/s/7Lhvj46YuTNGhmJ0lBCy7w
-
-它是世界上最轻的固体！1000℃下不会熔化，上过火星，还能进你家...（气凝胶）
-
-https://mp.weixin.qq.com/s/L-B9KdZTT8iZXN6XcXuFQQ
-
-户外服饰半个世纪以来的面料创新，也是一场人与自然的角力
-
-https://mp.weixin.qq.com/s/Jtsbkeq5x_7kv3Y5f5w-mQ
-
-你可能想不到，钱学森是个化学家（物理化学学科）
-
-https://mp.weixin.qq.com/s/Vam7uTbwPfF8Ht365lGtvA
-
-一般不扯淡--直男口红入门！
-
-https://mp.weixin.qq.com/s/a3z7PKTOqmxlEosi2EgoaA
-
-blue生色，九寨沟不得不说的“蓝”题
-
-https://mp.weixin.qq.com/s/XZyOXfqvq7bJ1_2eUPknAA
-
-千年锈色耐人寻——古代铜锡铅合金锈蚀谜题
-
-https://mp.weixin.qq.com/s/v_6w1XOs5iqnoZ-y04B3XQ
-
-一个只涉及三个电子的化学反应居然这么复杂？
-
-https://mp.weixin.qq.com/s/LUeWIT-gUFZTPs2CFJ3ygQ
-
-卡姆吸毒被抓，北京大学的这项黑科技一直在闷声干大事！
-
-https://mp.weixin.qq.com/s/K2magOnDUmcWPN52QExO6g
-
-Tony老师，我明明染的蓝黑，怎么就绿了？？

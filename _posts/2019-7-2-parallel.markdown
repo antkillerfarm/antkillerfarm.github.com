@@ -21,6 +21,10 @@ https://zhuanlan.zhihu.com/c_1174996853811335168
 
 一个多核&并行的专栏
 
+https://deeplearningsystems.ai
+
+Deep Learning Systems: Algorithms, Compilers, and Processors for Large-Scale Production
+
 ## 并发和并行
 
 并发(concurrency)是指能处理多个同时性活动的能力，并发事件之间不一定要同一时刻发生。
