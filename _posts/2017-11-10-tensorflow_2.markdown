@@ -126,6 +126,8 @@ HloPassPipeline pipeline("pass");
 pipeline.AddPass<XXXPass>();
 ```
 
+HLO和TVM类似，计算图的遍历都是从所谓的root instruction，也就是输出Tensor开始的。但是实际的`HandleXXXX`的调用，却是从输入Tensor开始的，毕竟这个更符合一般人的思考习惯。想要做到这一点，也不难，采用`PostOrderDFS`即可。
+
 参考：
 
 https://zhuanlan.zhihu.com/p/71980945
