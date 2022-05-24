@@ -313,6 +313,14 @@ https://mp.weixin.qq.com/s/EuOap3a9Ceo31yZbHoRLCg
 
 动图：秒懂各种常用通信协议原理
 
+http://ruanyifeng.com/blog/2016/04/cors.html
+
+跨域资源共享CORS详解
+
+https://blog.csdn.net/cuixiaogang110/article/details/81948173
+
+前后端分离与跨域的解决方案（CORS的原理）
+
 # Autoware
 
 Autoware是另一个开源的无人驾驶平台。不像Apollo，没有百度这样的强势公司的介入，社区氛围更浓一些，相对的，功能也要弱一些。
@@ -422,3 +430,7 @@ https://mp.weixin.qq.com/s/ZHIpG4TN-wyHtcD67s7Y8A
 https://zhuanlan.zhihu.com/p/103141172
 
 苏联曾差点搞出超级互联网，竟然有...（苏联大数据之父格卢什科夫）
+
+https://www.zhihu.com/answer/1513267624
+
+1994年，Matlab发现著名的Intel CPU浮点运算bug

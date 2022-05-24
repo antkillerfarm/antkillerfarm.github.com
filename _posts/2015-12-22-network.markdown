@@ -229,7 +229,7 @@ https://mp.weixin.qq.com/s/wX-BXGDAZGm8FYc6-FbUhg
 
 ## socket通信基本流程
 
-### TCP
+- TCP
 
 | 服务器端 | 客户端 |
 |:--:|:--:|
@@ -241,7 +241,7 @@ https://mp.weixin.qq.com/s/wX-BXGDAZGm8FYc6-FbUhg
 | 6.写数据（send） | 5.读数据（recv） |
 | 7.关闭socket（closesocket） | 6.关闭socket（closesocket） |
 
-### UDP
+- UDP
 
 | 服务器端 | 客户端 |
 |:--:|:--:|
@@ -251,6 +251,18 @@ https://mp.weixin.qq.com/s/wX-BXGDAZGm8FYc6-FbUhg
 | 等待连接 | 3.sendto |
 | 4.sendto | 4.recvfrom |
 | 5.关闭socket（closesocket） | 5.关闭socket（closesocket） |
+
+---
+
+在linux当中，socket包括两类：使用网络的socket，称为Berkeley socket；不使用网络的socket，称为Unix domain socket。两者API结构很像，所以容易被混淆，但是其实不是一个东西。
+
+Unix domain socket是为单机上跨进程通信，也就是IPC设计的。通信数据直接通过kernel在进程间交换，与网卡毫无关联。
+
+本机Socket通信不走网卡，不走物理设备，但是走虚拟设备，loopback device环回。
+
+https://www.zhihu.com/question/43590414
+
+Linux中本机和本机Socket通信会走网卡吗？
 
 ## WIFI WPS
 

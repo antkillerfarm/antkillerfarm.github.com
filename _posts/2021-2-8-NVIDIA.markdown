@@ -238,6 +238,10 @@ https://zhuanlan.zhihu.com/p/410278370
 
 CUDA矩阵乘法终极优化指南
 
+https://www.zhihu.com/column/c_1437330196193640448
+
+深入浅出GPU优化
+
 # Shader
 
 基于OpenGL的OpenGL Shading Language，简称GLSL;

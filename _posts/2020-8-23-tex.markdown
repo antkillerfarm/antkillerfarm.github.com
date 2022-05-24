@@ -43,6 +43,10 @@ http://3iter.com/2015/10/14/Mathjax%E4%B8%8ELaTex%E5%85%AC%E5%BC%8F%E7%AE%80%E4%
 
 Mathjax与LaTex公式简介
 
+http://www.uinio.com/Math/LaTex/
+
+通用LaTeX数学公式语法手册
+
 如果在Vscode下编辑Markdown和Latex的话，可以使用`Markdown All in One`插件。
 
 如果是其他编辑器的话，推荐使用：

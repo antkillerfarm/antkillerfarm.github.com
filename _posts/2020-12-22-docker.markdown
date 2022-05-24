@@ -113,6 +113,10 @@ https://mp.weixin.qq.com/s/8Rr-hxKQyHpT7L-Zx7PkcA
 
 浅谈Cgroups V2
 
+https://www.zhihu.com/answer/2488146755
+
+如何通俗解释Docker是什么？
+
 ## 使用
 
 1.镜像和容器的关系，类似于类和对象的关系，它们有各自不同的ID。

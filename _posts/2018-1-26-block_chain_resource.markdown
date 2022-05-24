@@ -87,6 +87,12 @@ https://mp.weixin.qq.com/s/SZJxVFa3PcDRWdbt3etqaQ
 
 比特币“矿难”：当草根的财富梦碎
 
+## 2022.5
+
+https://www.zhihu.com/question/532645455
+
+LUNA跌至几乎归零，孙宇晨一天或亏上亿泰达币，赵长鹏身家缩水5736亿，如何看待币圈大逃杀？
+
 ## 参考
 
 https://mp.weixin.qq.com/s/H860_Es3uO9ozDTnifNvgQ

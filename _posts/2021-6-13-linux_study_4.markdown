@@ -293,6 +293,14 @@ Linux官方文档
 
 ---
 
+W.Richard Stevens著：
+
+APUE: Advanced Programming in the UNIX Environment
+
+UNP: UNIX Network Programming
+
+---
+
 https://mp.weixin.qq.com/s/n6D5_6K9TrnuXg3h6AiFNA
 
 华为“鸿蒙”所涉及的微内核到底是什么？一文带你认识微内核

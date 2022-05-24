@@ -103,6 +103,14 @@ https://www.zhihu.com/question/51667350
 
 ---
 
+Ken Thompson在贝尔实验室的时候，他总是能在一台装了Unix的服务器上黑进他人的账户，不管他人怎么修改账户密码都没有用，当时贝尔实验室里面聚集的都是智商爆表、专业知识过硬的科学家，Ken的行为无疑让他们非常不爽。
+
+有个人分析了Unix的代码之后，找到了后门，重新编译部署了Uinx，但是让他们崩溃的事情再次发生，Ken还是能黑进他们的账户，这个事情让他们百思不得其解。
+
+一直到1983年，Ken获得图灵奖，在大会上解开了这个秘密，原来这个密码后门是通过他写的一个C编译器植入的，而当时那台Unix的机器必须通过这个C编译器编译之后才能运行，所以不管unix怎么修改都没有用，毕竟是要编译的。
+
+---
+
 https://github.com/chrislgarry/Apollo-11
 
 Apollo 11登月代码成Github热度第一
@@ -250,35 +258,3 @@ https://mp.weixin.qq.com/s/3ZszI7PupWsuTvy69BwPnw
 https://mp.weixin.qq.com/s/ywTkMMP6ysBfByIXW3_xeQ
 
 全世界下载量超100亿，curl怎样成为影响世界的开源项目？
-
-https://mp.weixin.qq.com/s/lqGCGj1EuwRvg6S9Dt3yEg
-
-PDF之父、Adobe联合创始人离世，乔布斯收购未果给了他第一桶金
-
-https://mp.weixin.qq.com/s/x-N7n7RkrvcCXT4C7UxPSQ
-
-Linux之父：财务自由以后，我失眠了！
-
-https://mp.weixin.qq.com/s/wIIQQibtFR3cecOpmNenvQ
-
-YouTube博主实测病毒之王“熊猫烧香”，当年是它太强还是杀毒软件太弱？
-
-https://zhuanlan.zhihu.com/p/38973085
-
-史上最烂的开发项目长啥样：苦撑12年，600多万行代码...
-
-https://zhuanlan.zhihu.com/p/53623636
-
-我的电子邮件发不到500英里以外！
-
-https://mp.weixin.qq.com/s/hgoZuG0Kp5PIU7pVajjX-Q
-
-西祠胡同被一元钱拍卖：别了，青春里的BBS时代
-
-https://www.zhihu.com/question/20722310
-
-计算机底层是如何访问显卡的？
-
-https://mp.weixin.qq.com/s/bELFDhgmhzSPEmdIQqTvDA
-
-《QQ堂》停运冲上热搜：90后的青春落幕

@@ -283,6 +283,10 @@ https://mp.weixin.qq.com/s/vq2znBRXqW3kAtk5Ixn_Jg
 
 JavaScript和Node.js简史，前端未来走向何方？
 
+http://www.uinio.com/Web/Electron/
+
+使用Electron打造跨平台桌面应用
+
 ## CEF
 
 Chromium Embedded Framework的官网是：
