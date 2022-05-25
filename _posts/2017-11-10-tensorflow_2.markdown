@@ -201,6 +201,12 @@ compiler/tf2xla/ -> compiler/xla/client/ -> compiler/xla/service/
 
 ## backward
 
+tensorflow/core/ops/nn_grad.cc:
+
+```cpp
+REGISTER_OP_GRADIENT("BiasAdd", BiasAddGrad);
+```
+
 tensorflow/compiler/tf2xla/g3doc/gpu_supported_ops.md
 
 ```cpp
