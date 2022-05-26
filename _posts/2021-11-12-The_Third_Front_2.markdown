@@ -59,6 +59,42 @@ https://mp.weixin.qq.com/s/qgp97solB7pZauOnlH62wg
 
 # 两弹一星+
 
+https://mp.weixin.qq.com/s/ajfoQAH-WSZ_OYIRK8uGAQ
+
+被遗忘的中国生命科学之父（林可胜）
+
+https://mp.weixin.qq.com/s/Z2xRTxgRRHWWY2VICT4lQg
+
+中国有哪些领跑全球的技术
+
+https://mp.weixin.qq.com/s/NQ4OiPgguAVkRPBn1uEYjg
+
+他奉密令去美国长期潜伏，周总理亲自送行长谈（吴大琨）
+
+https://mp.weixin.qq.com/s/z0FdqtVOmhv1mbVRJ42UFA
+
+“奋斗者”号再探万米深海，制造一个深潜器到底有多难？
+
+https://mp.weixin.qq.com/s/toX25yTvQWnwid26oOXROA
+
+深潜海底10909
+
+https://www.zhihu.com/answer/378935681
+
+谁能告诉我一些关于肯尼亚蒙内铁路的故事？
+
+https://mp.weixin.qq.com/s/Ar-67u7UbPz5z2odN1YeQQ
+
+从被列强剥削，到成为发达国家“粉碎机”：中国付出了多少代价？
+
+https://zhuanlan.zhihu.com/p/352959565
+
+参与加勒万冲突保障，民企员工受到表彰，该公司堪称军工界大疆
+
+https://www.zhihu.com/question/425270883
+
+非五常国家的军事实力究竟有多弱？
+
 https://mp.weixin.qq.com/s/-iv72YL5jm5OyHPuNzEzmg
 
 破晓时分，加州教授团访华记

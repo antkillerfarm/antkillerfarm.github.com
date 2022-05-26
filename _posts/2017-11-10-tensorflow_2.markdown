@@ -96,15 +96,6 @@ with tf.device("/device:XLA_CPU:0"):
 
 代码无需修改。
 
-unit test：
-
-tensorflow/compiler/xla/tests
-
-```bash
-bazel build //tensorflow/compiler/xla/tests:convolution_test
-./bazel-bin/tensorflow/compiler/xla/tests/convolution_test_cpu --gtest_filter="XXXX"
-```
-
 ## HLO
 
 XLA用HLO(High Level Optimizer)这种中间表示形式，表示正在被优化的计算图。
