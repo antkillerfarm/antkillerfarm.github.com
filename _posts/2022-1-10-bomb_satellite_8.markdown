@@ -115,6 +115,24 @@ https://www.zhihu.com/question/497597805
 
 ---
 
+三花集团前身是上个世纪的浙江绍兴市新昌制冷零配件厂，张道才先生是毕业于上海交大的博士。当时日本兰柯，是四通换向阀市场占有率最高的公司，想收购三花，张先生力排众议，不愿意拿了钱去享受生活。又过了些年三花越做越大，反过来把兰柯收购了。
+
+日本和德国联合研制一种钢材，厚度仅有0.05mm。两个国家对于这种技术绝对保密，以期获取暴利。
+
+而这种手撕钢，可用于军事领域，如航天、航海、陆战装备等軍事领域。因手撕钢重量轻，可屏蔽敌方干扰信号的干扰，对抗敌方电子战必不可少。
+
+太原钢铁集团，从06年开始，组织团队进行攻克了175个设备难题、452个工艺难题，经历了700多次失败，最终于2018年实现“手撕钢”量产。
+
+日本、德国是多少呢？0.05mm。
+
+我们是多少呢？0.02mm。
+
+https://www.zhihu.com/question/276351428
+
+中国有没有已经垄断世界的技术？
+
+---
+
 ![](/images/img3/top10.png)
 
 ![](/images/img4/manufact.jpg)
@@ -176,39 +194,3 @@ https://mp.weixin.qq.com/s/IQPiGqqad4YajaCu9bQhJw
 https://mp.weixin.qq.com/s/CTpwRV9BJ6JW2BOtVC7uMg
 
 她是清华第一位女教授，被称为中国的“居里夫人”，却在62岁高龄被打入大牢...（王明贞）
-
-https://mp.weixin.qq.com/s/ajfoQAH-WSZ_OYIRK8uGAQ
-
-被遗忘的中国生命科学之父（林可胜）
-
-https://mp.weixin.qq.com/s/Z2xRTxgRRHWWY2VICT4lQg
-
-中国有哪些领跑全球的技术
-
-https://mp.weixin.qq.com/s/NQ4OiPgguAVkRPBn1uEYjg
-
-他奉密令去美国长期潜伏，周总理亲自送行长谈（吴大琨）
-
-https://mp.weixin.qq.com/s/z0FdqtVOmhv1mbVRJ42UFA
-
-“奋斗者”号再探万米深海，制造一个深潜器到底有多难？
-
-https://mp.weixin.qq.com/s/toX25yTvQWnwid26oOXROA
-
-深潜海底10909
-
-https://www.zhihu.com/answer/378935681
-
-谁能告诉我一些关于肯尼亚蒙内铁路的故事？
-
-https://mp.weixin.qq.com/s/Ar-67u7UbPz5z2odN1YeQQ
-
-从被列强剥削，到成为发达国家“粉碎机”：中国付出了多少代价？
-
-https://zhuanlan.zhihu.com/p/352959565
-
-参与加勒万冲突保障，民企员工受到表彰，该公司堪称军工界大疆
-
-https://www.zhihu.com/question/425270883
-
-非五常国家的军事实力究竟有多弱？
