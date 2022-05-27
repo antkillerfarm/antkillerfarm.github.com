@@ -117,6 +117,10 @@ https://www.zhihu.com/answer/2488146755
 
 如何通俗解释Docker是什么？
 
+https://zhuanlan.zhihu.com/p/519499603
+
+一文读懂Docker原理
+
 ## 使用
 
 1.镜像和容器的关系，类似于类和对象的关系，它们有各自不同的ID。

@@ -11,6 +11,8 @@ category: AI
 
 Flink是一个流计算引擎。
 
+Flink的关键算法即Chandy-Lamport分布式快照算法，参见《数据库（一）》的“分布式算法”一节。
+
 官网：
 
 https://flink.apache.org
