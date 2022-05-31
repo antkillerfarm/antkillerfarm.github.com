@@ -328,3 +328,7 @@ https://mp.weixin.qq.com/s/NBXndV2DnGFoRZUyMDWw3Q
 https://mp.weixin.qq.com/s/a6cJvb45Cx5YPXI3FFBJJA
 
 从61式到10式：日本战后坦克发展(下)
+
+https://mp.weixin.qq.com/s/tBDQ1Ko7UbX5lfzV42qmrQ
+
+人类科技工程发展图鉴：哪个是你心中的硬核担当？

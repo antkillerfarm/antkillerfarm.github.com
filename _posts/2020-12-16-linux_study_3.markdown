@@ -7,18 +7,6 @@ category: linux
 * toc
 {:toc}
 
-# 大文件处理
-
-在“大数据”时代，我们会经常遇到有大文本文件（上 GB 或更大）的情况。传统的文本编辑软件对处理这样的大文件不太有效，当我们试图打开一个大文件时会经常由于内存不足而郁闷的不行。
-
-如果你只需要查看一个文本文件，并不对它做编辑，可以考虑下glogg。
-
-`sudo apt install glogg`
-
-如果需要修改的话，可以使用JOE。
-
-`sudo apt install joe`
-
 # 环境变量
 
 设置环境变量的方法：
@@ -83,6 +71,35 @@ https://github.com/tmux/tmux/
 
 `sudo apt install tmux`
 
+tmux也有一些高端功能，比如分屏等。
+
+常用命令：
+
+`Ctrl+b c`: 创建窗口。
+
+`Ctrl+b "`: 上下分屏。
+
+`Ctrl+b %`: 左右分屏。
+
+`ctrl+b d`: 不销毁进程退出（detach）。
+
+`ctrl+d`: 销毁进程退出。
+
+`tmux ls`: 查看会话。
+
+`tmux attach -t 0`: 重新接入某个已存在的会话。
+
+复制粘贴有两种方法：
+
+- 方法1：按住Shift，使用系统的复制粘贴。
+- 方法2：`ctrl+b [`: 复制。 `ctrl+b ]`: 粘贴。
+
+常用配置：`~/.tmux.conf`：
+
+```bash
+set -g mouse on
+```
+
 参考：
 
 https://linuxtoy.org/archives/from-screen-to-tmux.html
@@ -96,6 +113,10 @@ tmux的使用方法和个性化配置
 http://chengjin.li/2017/08/09/tmux-using-tutorial/
 
 终端复用工具---tmux的安装及使用
+
+https://www.ruanyifeng.com/blog/2019/10/tmux.html
+
+Tmux使用教程
 
 # 设置终端颜色
 
@@ -114,6 +135,18 @@ https://en-m.jinzhao.wiki/wiki/ANSI_escape_code
 https://mp.weixin.qq.com/s/Q8RkA4cjko-sD5jn7NGzGw
 
 一行命令堆出你的新垣结衣，不爆肝也能创作ASCII Art
+
+# MOTD
+
+motd：message of the day。即系统登陆时，通过终端展示给登陆用户的消息。
+
+静态MOTD: `/etc/motd`
+
+动态MOTD: `/etc/update-motd.d/`
+
+https://www.cnblogs.com/gageshen/p/11565980.html
+
+Linux中创建自己的MOTD
 
 # 设置随机的MAC地址
 
@@ -212,24 +245,6 @@ sudo service nfs-server restart
 https://www.cnblogs.com/tu13/p/ubuntu_nfs.html
 
 ubuntu18.04搭建NFS服务器
-
-# OpenGrok
-
-OpenGrok是一个阅读源码的Web系统。
-
-官网：
-
-http://oracle.github.io/opengrok/
-
-代码：
-
-https://github.com/oracle/opengrok
-
-参考：
-
-http://mazhuang.org/2016/12/14/rtfsc-with-opengrok/
-
-搭建大型源码阅读环境——使用OpenGrok
 
 # 同步锁
 
@@ -376,20 +391,6 @@ if (pfile != NULL){
 }
 ```
 
-# 调整交换文件大小
-
-```bash
-fallocate -l 16G /swapfile
-chmod 600 /swapfile
-ls -lh /swapfile
-mkswap /swapfile
-swapon /swapfile
-swapon --show
-# Add this line to /etc/fstab to mount swap at boot
-/swapfile swap swap defaults 0 0
-swapoff /swapfile
-```
-
 # SSH
 
 ## keygen
@@ -445,19 +446,3 @@ ssh & display
 https://mp.weixin.qq.com/s/u3VSyEtdcIgp8dCbwCaavA
 
 SSH只能用于远程Linux主机？那说明你见识太小了！
-
-# tldr
-
-tldr是一个采用示例说明的简化版的man。
-
-官网：
-
-http://tldr.sh/
-
-该项目原生支持node.js，但也提供了其他多种语言的支持。
-
-参考：
-
-https://linuxtoy.org/archives/tldr.html
-
-tldr: 简读Manpage

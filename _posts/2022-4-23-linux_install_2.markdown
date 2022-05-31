@@ -107,6 +107,58 @@ grub2引导系统iso镜像
 
 # Linux参考资源+
 
+https://mp.weixin.qq.com/s/4ZdnacKuqkpWTso6P1Rmjg
+
+如何调试多线程程序
+
+https://mp.weixin.qq.com/s/8DNyicMcycUL3RRAiKAz8g
+
+Linux进程必知必会
+
+https://mp.weixin.qq.com/s/EkScI-WCdjLz1g2ec6nkhQ
+
+理解格式化原理
+
+https://mp.weixin.qq.com/s/Sqpp82FhZEC8HkeVHzk9QA
+
+5万字、97张图总结操作系统核心知识点
+
+https://mp.weixin.qq.com/s/SYlaIkuXBqFrbZ-gDMYqtA
+
+高并发高性能服务器是如何实现的
+
+https://mp.weixin.qq.com/s/73eaj0qvhUFWGbDA4H2MNQ
+
+读取文件时，程序经历了什么？
+
+https://mp.weixin.qq.com/s/Y8YZzkuzVr_ti6skHpd1NA
+
+Linux网络包接收过程的监控与调优
+
+https://mp.weixin.qq.com/s/4tAxQ0auQfv5x7Dh3B-85g
+
+Linux内存管理
+
+https://mp.weixin.qq.com/s/jDPxu6IVo3_VpK5l6_-jdQ
+
+Linux系统内存知识
+
+http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html
+
+进程与线程的一个简单解释
+
+https://www.cnblogs.com/biyeymyhjob/archive/2012/07/20/2601655.html
+
+Linux写时拷贝技术(copy-on-write)
+
+https://zhuanlan.zhihu.com/p/296207162
+
+Linux I/O原理和Zero-copy技术全面揭秘
+
+https://mp.weixin.qq.com/s/cudK2dhw4jNr7I34luVKVw
+
+终于有人把零拷贝Zero-Copy讲懂了
+
 https://mp.weixin.qq.com/s/-U7L8aXoaPXSwZshSpjQ2g
 
 进程间通信

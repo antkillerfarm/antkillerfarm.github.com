@@ -277,17 +277,65 @@ https://blog.csdn.net/weixin_38472804/article/details/109361682
 
 linux系统格式化硬盘
 
-# MOTD
+# tldr
 
-motd：message of the day。即系统登陆时，通过终端展示给登陆用户的消息。
+tldr是一个采用示例说明的简化版的man。
 
-静态MOTD: `/etc/motd`
+官网：
 
-动态MOTD: `/etc/update-motd.d/`
+http://tldr.sh/
 
-https://www.cnblogs.com/gageshen/p/11565980.html
+该项目原生支持node.js，但也提供了其他多种语言的支持。
 
-Linux中创建自己的MOTD
+参考：
+
+https://linuxtoy.org/archives/tldr.html
+
+tldr: 简读Manpage
+
+# OpenGrok
+
+OpenGrok是一个阅读源码的Web系统。
+
+官网：
+
+http://oracle.github.io/opengrok/
+
+代码：
+
+https://github.com/oracle/opengrok
+
+参考：
+
+http://mazhuang.org/2016/12/14/rtfsc-with-opengrok/
+
+搭建大型源码阅读环境——使用OpenGrok
+
+# 大文件处理
+
+在“大数据”时代，我们会经常遇到有大文本文件（上 GB 或更大）的情况。传统的文本编辑软件对处理这样的大文件不太有效，当我们试图打开一个大文件时会经常由于内存不足而郁闷的不行。
+
+如果你只需要查看一个文本文件，并不对它做编辑，可以考虑下glogg。
+
+`sudo apt install glogg`
+
+如果需要修改的话，可以使用JOE。
+
+`sudo apt install joe`
+
+# 调整交换文件大小
+
+```bash
+fallocate -l 16G /swapfile
+chmod 600 /swapfile
+ls -lh /swapfile
+mkswap /swapfile
+swapon /swapfile
+swapon --show
+# Add this line to /etc/fstab to mount swap at boot
+/swapfile swap swap defaults 0 0
+swapoff /swapfile
+```
 
 # Linux参考资源
 
@@ -370,55 +418,3 @@ https://mp.weixin.qq.com/s/rH7WqriomFTA55ecacV8Gw
 https://mp.weixin.qq.com/s/vDlWCVK8knxPf5HoqmtZyQ
 
 从创建进程到进入main函数，发生了什么？
-
-https://mp.weixin.qq.com/s/4ZdnacKuqkpWTso6P1Rmjg
-
-如何调试多线程程序
-
-https://mp.weixin.qq.com/s/8DNyicMcycUL3RRAiKAz8g
-
-Linux进程必知必会
-
-https://mp.weixin.qq.com/s/EkScI-WCdjLz1g2ec6nkhQ
-
-理解格式化原理
-
-https://mp.weixin.qq.com/s/Sqpp82FhZEC8HkeVHzk9QA
-
-5万字、97张图总结操作系统核心知识点
-
-https://mp.weixin.qq.com/s/SYlaIkuXBqFrbZ-gDMYqtA
-
-高并发高性能服务器是如何实现的
-
-https://mp.weixin.qq.com/s/73eaj0qvhUFWGbDA4H2MNQ
-
-读取文件时，程序经历了什么？
-
-https://mp.weixin.qq.com/s/Y8YZzkuzVr_ti6skHpd1NA
-
-Linux网络包接收过程的监控与调优
-
-https://mp.weixin.qq.com/s/4tAxQ0auQfv5x7Dh3B-85g
-
-Linux内存管理
-
-https://mp.weixin.qq.com/s/jDPxu6IVo3_VpK5l6_-jdQ
-
-Linux系统内存知识
-
-http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html
-
-进程与线程的一个简单解释
-
-https://www.cnblogs.com/biyeymyhjob/archive/2012/07/20/2601655.html
-
-Linux写时拷贝技术(copy-on-write)
-
-https://zhuanlan.zhihu.com/p/296207162
-
-Linux I/O原理和Zero-copy技术全面揭秘
-
-https://mp.weixin.qq.com/s/cudK2dhw4jNr7I34luVKVw
-
-终于有人把零拷贝Zero-Copy讲懂了

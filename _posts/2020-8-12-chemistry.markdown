@@ -178,3 +178,7 @@ https://mp.weixin.qq.com/s/fofNEdcFNI-Yr74imW2N8g
 https://mp.weixin.qq.com/s/F0ONga94HeMbHfcPIMHfrg
 
 花花草草催人命
+
+---
+
+很多人连一硝二硫三木炭的单位都不知道是什么，就以为自己能回到过去点出热兵器，我也是最近才知道，一硝的硝是一斤（十六两）硝，二硫三碳是论两的。

@@ -93,6 +93,10 @@ https://mp.weixin.qq.com/s/V8yeWoVM_HU1OnhgXOk6Vg
 
 听说你还不知道条件熵是什么?
 
+http://blog.csdn.net/luo123n/article/details/48574123
+
+PMI（Pointwise Mutual Information）
+
 ## Landauer’s Erasure Principle
 
 在量子力学中，如同电荷、质量、时间有最小单位一样，热力学熵也有最小单位。Landauer’s Erasure Principle指出这个单位为$$K_B\ln(2)$$，其中$$K_B$$为玻尔兹曼常数。

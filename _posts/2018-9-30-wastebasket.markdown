@@ -9,26 +9,6 @@ category: Nature
 
 # 垃圾筐
 
-http://blog.codinglabs.org/articles/algorithms-for-cardinality-estimation-part-i.html
-
-解读Cardinality Estimation算法
-
-https://mp.weixin.qq.com/s/zQJve_w5OoM6u-WcSWArdQ
-
-神速Hash
-
-http://blog.csdn.net/luo123n/article/details/48574123
-
-PMI（Pointwise Mutual Information）
-
-https://mp.weixin.qq.com/s/E_EzwLr4JOzR1pk3MOeU_w
-
-复动力系统简介
-
-http://www.cnblogs.com/zeze/p/6999651.html
-
-粗糙集（Rough Set Approach）
-
 https://mp.weixin.qq.com/s/tIau6pRZU0r4Aasofca5yQ
 
 50张动图带你走进神奇的物理化学生物世界，超震撼！
@@ -54,10 +34,6 @@ https://www.sohu.com/a/388192289_597695
 https://mp.weixin.qq.com/s/w6aY1_RryWnFq8FomPTDhw
 
 地铁也要遵循“红灯停、绿灯行”的交通规则吗？
-
-https://mp.weixin.qq.com/s/tBDQ1Ko7UbX5lfzV42qmrQ
-
-人类科技工程发展图鉴：哪个是你心中的硬核担当？
 
 ---
 
@@ -312,3 +288,11 @@ https://www.sohu.com/a/537882125_115479
 https://www.zhihu.com/question/421679320
 
 大谈“导师崇高师娘优美”论文作者徐中民被处理，已拨项目资金被追回，说明了什么问题？
+
+---
+
+苏式动员型模式的核心要素：人为操纵劳动力价格，以实物、货币、非实物（社会地位、荣誉等）三重保障来降低人力资源成本。
+
+https://www.zhihu.com/question/442248640
+
+饶-裴一事最终不了了之，会对中国学术圈产生怎样的影响？

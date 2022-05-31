@@ -17,91 +17,91 @@ emacs是大名鼎鼎的Richard Stallman的作品，我闻名已久。但作为�
 
 M-x使用技巧：M-x下输入的命令过长的时候，可以输入开头的字符串，然后按TAB，emacs会显示所有满足输入前缀的命令。
 
-复制、剪切——M-w、C-w，或者用M-x cua-mode切换到CUA模式，就可以用C-c和C-v来复制粘贴了
+复制、剪切: M-w、C-w，或者用M-x cua-mode切换到CUA模式，就可以用C-c和C-v来复制粘贴了
 
-粘贴——C-y
+粘贴: C-y
 
-搜索——C-s，如果要利用剪切板的内容来进行搜索的话，使用Esc-y
+搜索: C-s，如果要利用剪切板的内容来进行搜索的话，使用Esc-y
 
-搜索下一个——继续按C-s
+搜索下一个: 继续按C-s
 
-向前搜索——C-r
+向前搜索: C-r
 
-正则式搜索和普通搜索的快捷键类似——C-M-s和C-M-r //在ubuntu里由于C-M-s和系统快捷键冲突，因此可以用Esc C-s的方式启动向前的正则式搜索。
+正则式搜索和普通搜索的快捷键类似: C-M-s和C-M-r //在ubuntu里由于C-M-s和系统快捷键冲突，因此可以用Esc C-s的方式启动向前的正则式搜索。
 
-替换——M-%
+替换: M-%
 
-保存缓冲区——C-x C-s
+保存缓冲区: C-x C-s
 
-十六进制模式——M-x hexl-mode
+十六进制模式: M-x hexl-mode
 
-十六进制模式下跳转到某个十六进制地址——M-g
+十六进制模式下跳转到某个十六进制地址: M-g
 
-十六进制模式退出——C-c C-c
+十六进制模式退出: C-c C-c
 
-多窗口的时候切换窗口——C-x o //"o",not zero
+多窗口的时候切换窗口: C-x o //"o",not zero
 
-关闭当前的窗口——C-x 0
+关闭当前的窗口: C-x 0
 
-只保留当前的窗口——C-x 1
+只保留当前的窗口: C-x 1
 
-新建一个上下式的窗口——C-x 2
+新建一个上下式的窗口: C-x 2
 
-新建一个左右式的窗口——C-x 3
+新建一个左右式的窗口: C-x 3
 
-退出emacs——C-x C-c
+退出emacs: C-x C-c
 
-召唤菜单——M-`
+召唤菜单: M-`
 
-打开shell——M-x shell //shell模式下，如果需要按C-c，终止程序的话，可以按两下C-c
+打开shell: M-x shell //shell模式下，如果需要按C-c，终止程序的话，可以按两下C-c
 
-关闭缓冲区——C-x k
+关闭缓冲区: C-x k
 
-比较两个已经打开的缓冲区——M-x ediff-buffers
+比较两个已经打开的缓冲区: M-x ediff-buffers
 
-比较两个文件夹——M-x edirs
+比较两个文件夹: M-x edirs
 
-缓冲区被外部程序改变之后，重新刷新缓冲区——M-x revert-buffer
+缓冲区被外部程序改变之后，重新刷新缓冲区: M-x revert-buffer
 
-Undo——C-x u
+Undo: C-x u
 
-Redo——用C-f中断Undo执行序列，然后再Undo，就可以Undo之前做的“Undo”操作，也就是Redo操作了。
+Redo: 用C-f中断Undo执行序列，然后再Undo，就可以Undo之前做的“Undo”操作，也就是Redo操作了。
 
-打开文件——C-x C-f//这个命令不仅可用于打开文件，还可用于确定emacs默认的操作目录，.emacs配置文件就放在这个目录下，这一点对Windows用户来说十分重要。
+打开文件: C-x C-f//这个命令不仅可用于打开文件，还可用于确定emacs默认的操作目录，.emacs配置文件就放在这个目录下，这一点对Windows用户来说十分重要。
 
-空格变TAB——M-x tabify
+空格变TAB: M-x tabify
 
-在emacs中去除`^M`——M-x replace-string C-q C-m RET
+在emacs中去除`^M`: M-x replace-string C-q C-m RET
 
-选择整个缓冲区——C-x h
+选择整个缓冲区: C-x h
 
-在windows下使用ediff——windows版的emacs没有自带diff工具，可以用cygwin中的diff代替之，具体的办法是将cygwin的bin文件夹加到PATH环境变量中。
+在windows下使用ediff: windows版的emacs没有自带diff工具，可以用cygwin中的diff代替之，具体的办法是将cygwin的bin文件夹加到PATH环境变量中。
 
-高亮显示——C-x w h//后面需要跟正则表达式，如果是要全字匹配才高亮显示的话，可以用\的方式给出相应的正则表达式。
+高亮显示: C-x w h//后面需要跟正则表达式，如果是要全字匹配才高亮显示的话，可以用\的方式给出相应的正则表达式。
 
-取消高亮显示——C-x w r
+取消高亮显示: C-x w r
 
-M-x list-matching-lines 或 M-x occur——另开一个buffer列出当前buffer中所有匹配正则表达式的那些行。这个功能我找了好半天才查到，之前还以为只有UltraEdit里才有呢。。。
+M-x list-matching-lines 或 M-x occur: 另开一个buffer列出当前buffer中所有匹配正则表达式的那些行。这个功能我找了好半天才查到，之前还以为只有UltraEdit里才有呢。。。
 
-M-x find-grep-dired——列出文件夹下所有匹配字符串的文件的名字。这个命令只能列出文件名，而不能列出在该文件中出现的匹配字符串的位置，有的时候仍然不太好用。
+M-x find-grep-dired: 列出文件夹下所有匹配字符串的文件的名字。这个命令只能列出文件名，而不能列出在该文件中出现的匹配字符串的位置，有的时候仍然不太好用。
 
-M-x rgrep——这个命令可以解决上面的问题，列出匹配字符串在文件夹中所有出现的位置。
+M-x rgrep: 这个命令可以解决上面的问题，列出匹配字符串在文件夹中所有出现的位置。
 
 C代码相关的内容：
 
-选择缩进的版式——C-c . //然后会提问使用什么风格，默认的gnu风格是缩进两个空格，我比较喜欢bsd风格的——缩进一个TAB
+选择缩进的版式: C-c . //然后会提问使用什么风格，默认的gnu风格是缩进两个空格，我比较喜欢bsd风格的: 缩进一个TAB
 
-代码排版——TAB//可支持块操作
+代码排版: TAB//可支持块操作
 
-输入TAB——C-q TAB
+输入TAB: C-q TAB
 
-块小写——C-x C-l
+块小写: C-x C-l
 
-块大写——C-x C-u
+块大写: C-x C-u
 
-显示行号——`(global-linum-mode t)`
+显示行号: `(global-linum-mode t)`
 
-跳到第N行——M-g g
+跳到第N行: M-g g
 
 以指定编码读取文件--M-x revert-buffer-with-coding-system
 
@@ -284,17 +284,37 @@ https://github.com/myuhe/ess-R-data-view.el
 
 # Vim
 
+## 模式
+
+普通模式：使用vim打开一个文件时默认模式，也叫命令模式，允许用户通过各种命令浏览代码、滚屏等操作。
+
+插入模式：也可以叫做编辑模式，在普通模式下敲击 i 、a 或 o 就进入插入模式，允许用户通过键盘输入、编辑。
+
+命令行模式：在普通模式下，先输入冒号:，接着输入命令，就可以通过配置命令对vim进行配置了，如改变颜色主题、显示行号等，这些配置命令也可以保存到/etc/vim/vimrc配置文件中，每次打开默认配置执行。
+
+可视化模式：在普通模式下敲击前盘上的 v 键，就进入可视化模式，然后移动光标就可以选中一块文本，常用来完成文本的复制、粘贴、删除等操作。
+
+替换模式：如果我们想修改某个字符，不需要先进入插入模式，删除，然后再输入新的字符，直接在普通模式下，敲击R键就可以直接替换。
+
+EX模式：类似于命令行模式，可以一次运行多个命令。
+
+用户统一使用ESC键返回到普通模式。
+
 ## 常用操作
 
-`dd`——删除整行
+`dd`: 删除整行
 
 `/`是向下查找，而`?`是向上查找，n是继续查找。
 
 `u`——撤销上一个编辑操作
 
-`:set nu`——显示行号
+`:set nu`: 显示行号
 
-`:行号`——跳转到行号
+`:行号`: 跳转到行号
+
+`yy`: 复制整行
+
+`p`: 粘贴
 
 ## 分栏显示
 
@@ -347,41 +367,3 @@ Linux vi/vim
 https://zhuanlan.zhihu.com/p/37352209
 
 VimScript五分钟入门
-
-# IDE
-
-http://pypl.github.io/IDE.html
-
-这个网站提供了常用IDE的流行排名
-
-## Source Insight
-
-Shift+F8：高亮选中的字
-
-http://www.cnblogs.com/bluestorm/archive/2012/10/28/2743792.html
-
-Source Insight常用设置和快捷键大全
-
-## Eclipse
-
-### 分栏显示
-
-1.拖住一个文件不放，直到鼠标图案发生改变。
-
-2.如果需要左右显示两个文件，向左右移动鼠标，如果需要上下显示两个文件，上下移动。这里的移动需要移出编辑窗口范围。
-
-## Other
-
-http://dcloud.io/index.html
-
-HBuilder，一个html编辑的IDE。
-
-# 十六进制编辑器
-
-https://mp.weixin.qq.com/s/Bq6p3DUePBAUlw1kek86QA
-
-开源十六进制编辑器登顶GitHub热榜
-
-https://zhuanlan.zhihu.com/p/59119723
-
-Linux上最好的十六进制编辑器

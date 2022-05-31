@@ -356,3 +356,11 @@ https://mp.weixin.qq.com/s/KZq5SjPESQnQaNU1Mn5a-A
 https://www.zhihu.com/question/20298134
 
 即时战略游戏中实用的寻路算法都有哪些，比较如何？
+
+http://blog.codinglabs.org/articles/algorithms-for-cardinality-estimation-part-i.html
+
+解读Cardinality Estimation算法
+
+https://mp.weixin.qq.com/s/zQJve_w5OoM6u-WcSWArdQ
+
+神速Hash
