@@ -117,7 +117,7 @@ cd $CAFFE_ROOT
 
 prototxt：模板文件。定义NN中的层之类的结构。
 
-从阅读习惯上，我们浏览一个NN结构，通常是从input到output。prototxt文件的组织也采用了这样的顺序。然而和通常描述上下访问关系的顺序（从上到下）不同，Caffe认为input在最底部，所以input结点只有top属性。
+从阅读习惯上，我们浏览一个NN结构，通常是从input到output。prototxt文件的组织也采用了这样的顺序。然而和通常描述访问关系的顺序（从上到下）不同，Caffe认为Layer的input是bottom，而output是top。
 
 复杂网络的prototxt往往不止一个：
 

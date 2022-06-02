@@ -249,6 +249,14 @@ https://mp.weixin.qq.com/s/4iUTsx_rSjRI93b71YOyLg
 
 万字长文带你从C++案例一步一步实操cmake
 
+---
+
+FetchContent如果网络不好的话，也可使用`FETCHCONTENT_SOURCE_DIR_<uppercaseName>`引用已经下载好的外部路径。
+
+https://zhuanlan.zhihu.com/p/102050750
+
+CMake之引入外部项目的三种方法
+
 ## cross compile
 
 需要用`-DCMAKE_TOOLCHAIN_FILE=XXXX`来指定toolchain file。后者的示例如下：

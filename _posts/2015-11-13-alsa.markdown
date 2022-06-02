@@ -9,7 +9,23 @@ category: technology
 
 # 参考文献
 
-ALSA（Advanced Linux Sound Architecture）是Linux内核默认的音频驱动框架。以下是一些参考资料：
+ALSA（Advanced Linux Sound Architecture）是Linux内核默认的音频驱动框架。
+
+OSS（Open Sound System）是一个早期的Unix/Linux平台上的音频接口。目前已经被ALSA所取代。
+
+OSS有声卡独占问题，而ALSA支持混音，能在不同应用程序之间声卡共享。
+
+在ALSA/OSS之上还有一些API接口标准:
+
+- PulseAudio
+- SDL
+- OpenAL
+
+OpenAL官网：
+
+http://www.openal.org/
+
+参考：
 
 http://www.alsa-project.org/main/index.php/Tutorials_and_Presentations
 

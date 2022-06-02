@@ -205,7 +205,7 @@ Heron。
 
 Eratosthenes，地理学之父，亚历山大里亚图书馆馆长。
 
-Hipparchus、Ptolemy，这两人都有天文学之父的称号。前者有开创之功，后者是前者的学生，号称天文学的集大成者。
+Hipparchus、Ptolemy，这两人都有天文学之父的称号。前者有开创之功，后者号称天文学的集大成者。
 
 Diophantus，代数之父。
 

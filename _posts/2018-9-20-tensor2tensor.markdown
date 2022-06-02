@@ -241,6 +241,10 @@ https://zhuanlan.zhihu.com/p/361448250
 
 MLIR Toy Tutorials
 
+https://zhuanlan.zhihu.com/p/141256429
+
+MLIR文章视频汇总
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/32711259

@@ -98,6 +98,7 @@ tmux也有一些高端功能，比如分屏等。
 
 ```bash
 set -g mouse on
+set -g history-limit 100000
 ```
 
 参考：

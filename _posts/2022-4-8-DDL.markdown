@@ -316,6 +316,14 @@ https://thrift.apache.org/
 
 https://thrift.apache.org/tutorial/cpp.html
 
+![](/images/img4/Thrift.png)
+
+参考：
+
+https://www.cnblogs.com/luckygxf/category/1092361.html
+
+一个thrift的专栏
+
 ## gRPC
 
 gRPC在Protocol Buffers的基础上提供了客户端/服务端堆栈。相当于是Thrift的等价物。
