@@ -98,6 +98,10 @@ http://mp.weixin.qq.com/s/MWQDwMoRc0c1ofkENzn3Ew
 
 结构光，TOF，双目视觉的异同
 
+https://zhuanlan.zhihu.com/p/98492961
+
+深度相机(TOF)的工作原理
+
 https://mp.weixin.qq.com/s/uT_jrFzfttnG_VYiJIsRbQ
 
 走近3D ToF摄像头，揭秘ToF传感器工作原理

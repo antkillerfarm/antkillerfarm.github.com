@@ -141,6 +141,10 @@ https://mp.weixin.qq.com/s/Kt4xDLo-NRui8Whl0DqcSA
 
 Data Flow和Control Flow
 
+https://zhuanlan.zhihu.com/p/523395133
+
+Relax: TVM的下一代图层级IR
+
 ## Pass
 
 https://tvm.apache.org/docs/how_to/extend_tvm/use_pass_infra.html

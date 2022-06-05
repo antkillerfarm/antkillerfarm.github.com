@@ -94,6 +94,24 @@ https://blog.csdn.net/stpeace/article/details/46461167
 
 聊聊C++临时对象的析构时间点
 
+## switch...case
+
+```c
+switch (reg) {
+       case TAS5086_CLOCK_CONTROL ... TAS5086_BKNDERR:
+       return 1;
+       case TAS5086_INPUT_MUX:
+       case TAS5086_PWM_OUTPUT_MUX:
+       return 4;
+}
+```
+
+可以用上面的办法，少写一些case语句。
+
+## uint8_t
+
+对于要求严格位宽的场合，应用程序可以使用uint8_t，uint16_t，uint32_t来获得移植时的一致性。它的头文件是inttypes.h。
+
 ## 并发与多线程
 
 https://blog.csdn.net/qq_38231713/category_10001159.html

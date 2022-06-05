@@ -21,6 +21,8 @@ https://mp.weixin.qq.com/s/KPT4P5SQ4E4ofPdjhhjRvA
 
 ![](/images/img4/im2col.jpg)
 
+![](/images/img4/im2col_2.jpg)
+
 这种将卷积运算变为矩阵乘法运算的方法，一般被称为GEMM（General Matrix Matrix multiplication）。因为卷积变为矩阵这一步运算在Caffe中是用im2col函数实现的，因此，也有使用im2col来指代这类方法的。
 
 要点：

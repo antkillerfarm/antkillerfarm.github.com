@@ -29,7 +29,19 @@ https://mp.weixin.qq.com/s/C2OSscx8JzTBhyzxCqesCQ
 
 ## A/B Testing
 
-A/B Testing通过分隔A和B两个版本，统计数据，进而看哪个版本的数据效果更好，对产品目标更有帮助。
+A/B Testing脱胎于版本发布中的A/B发布：通过分隔A和B两个版本，统计数据，进而看哪个版本的数据效果更好，对产品目标更有帮助。
+
+类似的还有：
+
+- 金丝雀发布。
+
+人们发现金丝雀这种生物对于有毒气体很敏感。因此矿工在下井采矿之前会把金丝雀鸟儿投入或携带到矿井中，如果鸟儿能够从矿井中飞出就表示井下有氧气，矿工就可以安心下井采矿了。
+
+部署的时候让一小部分用户先试用功能 ，通过日志监控或者服务器监控，看下新用户的反馈。如果没有严重问题，尽快部署这个新版本，否则快速会退。小代价去试错。
+
+- 蓝绿发布。
+
+后台服务有2个服务。一个是绿色版本，就是当前正在运行的版本。一个是蓝色版本，比当前线上版本高一个版本。就是未来要发布的版本。发布前先测试蓝色版本，保证质量一切OK。就直接切换到蓝色版本。让用户无缝衔接。
 
 https://mp.weixin.qq.com/s/fB3AFUiS4nFmqXpSnOpf4w
 
@@ -388,35 +400,3 @@ https://zhuanlan.zhihu.com/p/259985388
 https://mp.weixin.qq.com/s/Hsw_IbphFotR-Q89wKpMXQ
 
 Embedding在腾讯应用宝的推荐实践
-
-https://mp.weixin.qq.com/s/SRd7Cr16kpa_aUWDNwww_g
-
-淘宝搜索模型核心技术：用户建模篇
-
-https://mp.weixin.qq.com/s/YtQCGWNXDdUQGyF9mYKFHg
-
-莫比乌斯: 百度的下一代query-ad匹配算法
-
-https://mp.weixin.qq.com/s/ZtnaQrVIpVOPJpqMdLWOcw
-
-基于用户的协同过滤来构建推荐系统
-
-https://mp.weixin.qq.com/s/1hc7G4eBSyk-b8Dv4FsYbg
-
-万字长文解读电商搜索——如何让你买得又快又好
-
-https://mp.weixin.qq.com/s/NJDfrGJgIE2KK_t-yJ-C9Q
-
-向量体系(Embedding)在严选的落地实践
-
-https://mp.weixin.qq.com/s/iGC_zJnHxyRBnKR1gH1czg
-
-智能重排序在推荐场景中的应用
-
-https://mp.weixin.qq.com/s/j6FWqkdbOdQk-qAmYNmJqQ
-
-58同镇下沉市场中的推荐技术实践
-
-https://mp.weixin.qq.com/s/WfpSSQNLxua53o_AWsq4Gg
-
-如何设计秒杀场景

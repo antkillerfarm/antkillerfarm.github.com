@@ -141,6 +141,14 @@ ARM：Mali
 
 ---
 
+![](/images/img4/AMD.jpg)
+
+https://www.expreview.com/68888.html
+
+AMD RDNA显卡架构简析
+
+---
+
 http://tieba.baidu.com/p/2250616047
 
 史上最全桌面显卡天梯图

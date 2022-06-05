@@ -137,7 +137,17 @@ OpenVG和OpenGL 3D的差异：
 
 ## Vulkan
 
-Vulkan是OpenGL的升级版本。在OpenGL中Context和单一线程是绑定的，所以所有需要作用于Context的操作，例如改变渲染状态，绑定Shader，调用Draw Call，都只能在单一线程上进行。Vulkan中不再需要依赖于绑定在某个线程上的Context，而是用全新的基于Queue的方式向GPU递交任务，并且提供多种Synchronization的组件让多线程编程更加亲民。
+Vulkan是OpenGL的升级版本。
+
+在OpenGL中Context和单一线程是绑定的，所以所有需要作用于Context的操作，例如改变渲染状态，绑定Shader，调用Draw Call，都只能在单一线程上进行。
+
+Vulkan中不再需要依赖于绑定在某个线程上的Context，而是用全新的基于Queue的方式向GPU递交任务，并且提供多种Synchronization的组件让多线程编程更加亲民。
+
+OpenGL(ES)从来也没很好地解决过硬件设备本身的能力差异问题。
+
+Vulkan：设备都不一样，就别假装自己上层能一样了，上层是否要一样，就让开发者自己决定吧。
+
+Vulkan与Metal、DirectX12并称为三大现代图形API。
 
 Sample:
 
@@ -158,6 +168,10 @@ Vulkan-高性能渲染
 https://www.zhihu.com/people/snowfox-68/posts
 
 一个Vulkan的专栏
+
+https://www.zhihu.com/question/456407362
+
+跨平台图形编程的未来会是怎么样的？
 
 # 运算加速库
 

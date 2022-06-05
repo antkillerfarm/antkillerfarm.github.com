@@ -88,6 +88,10 @@ https://www.zhihu.com/question/315313590
 
 学习编译原理有什么好的书籍?
 
+https://parsing-techniques.duguying.net/
+
+《Parsing Techniques》的中文译本
+
 ## blog
 
 https://zhuanlan.zhihu.com/frozengene
@@ -112,7 +116,7 @@ ABI：Application Binary Interface
 
 API：Application Programming Interface
 
-比如，在内核中 int register_netdevice(struct net_device *dev) 这个内核函数原型基本上是不会变的，所以保持这个API稳定是很简单的，但它的ABI就未必了，就算是这个函数定义本身没变，即API没变，而struct net_device的定义变了，里面多了或者少了某一个字段，它的ABI就变了，你之前编译好的二进制模块就很可能会出错了，必须重新编译才行。
+比如，`int register_netdevice(struct net_device *dev)`这个内核函数，原型基本上是不会变的，所以保持这个API稳定是很简单的，但它的ABI就未必了，就算是这个函数定义本身没变，即API没变，而struct net_device的定义变了，里面多了或者少了某一个字段，它的ABI就变了，你之前编译好的二进制模块就很可能会出错了，必须重新编译才行。
 
 ## Transpiler
 
@@ -123,6 +127,12 @@ Transpiler是一个经常用来和Compiler比较的术语。它用于将一种�
 而当你编译TypeScript时，编译器将它转换为JavaScript。二者的抽象层次相同，所以你可以称之为Transpiler。
 
 可以看出transpiler和compiler的区别，主要在于两种语言的抽象层次是否相同。因此，transpiler也被称为source-to-source compiler。
+
+## DSL
+
+tf实现了神经网络的计算图语义模型，但由于其镶嵌于python中，所以是内部DSL编译器。
+
+外部DSL编译器，典型的如verilog、systemverilog，他们是硬件描述语言，应用的领域是数字IC设计，目标代码不是汇编代码，而是逻辑网表文件。
 
 ## Pass
 
@@ -289,10 +299,6 @@ https://www.zhihu.com/question/329294933
 如何评价PLUTO编译器？
 
 ## 参考
-
-https://github.com/compiler-explorer/compiler-explorer
-
-一个web版本的编译器工具
 
 https://mp.weixin.qq.com/s/MqfteZBSWbnBpHbFYw8Eqw
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Python（六）
+title:  Python（六）, IDE, Vim
 category: language 
 ---
 
@@ -97,3 +97,186 @@ https://mp.weixin.qq.com/s/xamO4TZS90FtZMcn398stQ
 
 推荐3个Python文本终端GUI框架
 
+# IDE
+
+http://pypl.github.io/IDE.html
+
+这个网站提供了常用IDE的流行排名
+
+## Scintilla
+
+Scintilla是Neil Hodgson出于对Richedit控件的失望，所开发的替代品（1990）。它是Notepad++等编辑器的基础控件。
+
+官网：
+
+https://www.scintilla.org
+
+Scintilla官方还推出了一个名叫SciTE的编辑器，用于展示Scintilla的新功能。
+
+## tree-sitter
+
+tree-sitter是一个多语言的语法分析器。
+
+官网：
+
+https://tree-sitter.github.io/
+
+参考：
+
+https://blog.csdn.net/weixin_43646592/article/details/119895482
+
+tree-sitter-编程语言解析工具包
+
+## LSP
+
+language server protocol是一种跨编辑器的语言支持实现规范。它由微软提出，目前vscode、vim、atom都已经支持了这个规范。
+
+在过去，每个IDE遇到一门全新的语言，往往都需要重新实现一次基本功能：对于流行的语言来说还好，因为IDE厂商有动力提供支持。但对于一门全新的语言，往往需要语言的发明人自己实现各种IDE的语言支持。由于各个IDE的接口不同，需要将语言支持在各个IDE中重新移植一遍。
+
+有了LSP规范后，语言支持插件开发者只需要编写一次，就可以很快地在IDE之间移植代码了。
+
+官网：
+
+https://microsoft.github.io/language-server-protocol/
+
+这里有一个社区维护的LSP Server列表：
+
+https://langserver.org/
+
+类似的还有DAP(Debug Adapter Protocol)，用于IDE与具体调试器通信。
+
+BSP(Build Server Protocol)，处于IDE和构建工具之间，用于统一构建功能的通信协议。
+
+它们都是通过协议去统一相同功能在不同工具之间的差异性。
+
+参考：
+
+https://blog.csdn.net/weixin_38358700/article/details/121919353
+
+DAP调试适配协议
+
+https://blog.csdn.net/weixin_38358700/article/details/121919581
+
+BSP构建服务协议
+
+## Source Insight
+
+Shift+F8：高亮选中的字
+
+http://www.cnblogs.com/bluestorm/archive/2012/10/28/2743792.html
+
+Source Insight常用设置和快捷键大全
+
+## Eclipse
+
+### 分栏显示
+
+1.拖住一个文件不放，直到鼠标图案发生改变。
+
+2.如果需要左右显示两个文件，向左右移动鼠标，如果需要上下显示两个文件，上下移动。这里的移动需要移出编辑窗口范围。
+
+## Other
+
+http://dcloud.io/index.html
+
+HBuilder，一个html编辑的IDE。
+
+## 十六进制编辑器
+
+https://mp.weixin.qq.com/s/Bq6p3DUePBAUlw1kek86QA
+
+开源十六进制编辑器登顶GitHub热榜（ImHex）
+
+https://zhuanlan.zhihu.com/p/59119723
+
+Linux上最好的十六进制编辑器
+
+# Vim
+
+## 模式
+
+普通模式：使用vim打开一个文件时默认模式，也叫命令模式，允许用户通过各种命令浏览代码、滚屏等操作。
+
+插入模式：也可以叫做编辑模式，在普通模式下敲击 i 、a 或 o 就进入插入模式，允许用户通过键盘输入、编辑。
+
+命令行模式：在普通模式下，先输入冒号:，接着输入命令，就可以通过配置命令对vim进行配置了，如改变颜色主题、显示行号等，这些配置命令也可以保存到/etc/vim/vimrc配置文件中，每次打开默认配置执行。
+
+可视化模式：在普通模式下敲击前盘上的 v 键，就进入可视化模式，然后移动光标就可以选中一块文本，常用来完成文本的复制、粘贴、删除等操作。
+
+替换模式：如果我们想修改某个字符，不需要先进入插入模式，删除，然后再输入新的字符，直接在普通模式下，敲击R键就可以直接替换。
+
+EX模式：类似于命令行模式，可以一次运行多个命令。
+
+用户统一使用ESC键返回到普通模式。
+
+## 常用操作
+
+`dd`: 删除整行
+
+`/`是向下查找，而`?`是向上查找，n是继续查找。
+
+`u`——撤销上一个编辑操作
+
+`:set nu`: 显示行号
+
+`:行号`: 跳转到行号
+
+`yy`: 复制整行
+
+`p`: 粘贴
+
+## 分栏显示
+
+`vim -on file1 file2 ...`：上下分屏。n为分屏个数。
+
+`vim -On file1 file2 ...`：左右分屏。
+
+`:new`——创建一个空白分栏界面，和原文件窗口上下排列。
+
+`:split`——将当前文件分成上下两栏显示。
+
+`:vnew`和`:vsplit`——功能相同，不同的是新窗口是左右排列的。
+
+`:only`——取消分屏。
+
+按下ctrl+w之后再利用方向键或者h,j,k,l可以选择当前激活的窗口。
+
+把光标移动到下一个的屏：ctrl+w w
+
+把光标移动到上一个的屏：ctrl+w p
+
+关闭其他窗口：Ctrl + w, o
+
+关闭当前屏：Ctrl+w，c
+
+`:vertical diffsplit file2`——垂直对比两个文档。
+
+## NeoVim
+
+NeoVim是Vim的派生品，以及最有力的竞争者。
+
+## 参考
+
+https://mp.weixin.qq.com/s/5694PDHy9BeoL8qy31MaxQ
+
+如何用vim格式化代码
+
+https://mp.weixin.qq.com/s/QpJWyLY5AyrXGF-j7LYTGg
+
+1700页数学笔记火了！全程敲代码，速度飞快易搜索，硬核小哥教你上手LaTeX+Vim
+
+https://mp.weixin.qq.com/s/tvn2SKXyrZZRGDF6-Myx3A
+
+Vim激荡30年发展史
+
+https://mp.weixin.qq.com/s/c9KAOJ6Z_5zjwI7C3OMq4w
+
+5分钟学会Vim分屏操作方方面面
+
+https://www.runoob.com/linux/linux-vim.html
+
+Linux vi/vim
+
+https://zhuanlan.zhihu.com/p/37352209
+
+VimScript五分钟入门

@@ -58,6 +58,10 @@ M：按%MEM排序
 
 除此之外，还有个升级版本的命令htop，以及htop的升级版——glances。
 
+`sudo apt install glances`
+
+另一个top的升级版：bottom
+
 参考：
 
 https://mp.weixin.qq.com/s/8892B95aQZHw4fZhi8iO5A
@@ -73,12 +77,6 @@ https://mp.weixin.qq.com/s/FV13ma9LxI1gsgi9ovU4Mw
 free命令的内容比较概括，主要包含系统内存的整体使用情况，不深入到进程一级。
 
 `free -m -s 5`：每5秒输出一次内存使用情况。
-
-## glances
-
-glances算是top的威力加强版了。
-
-`sudo apt install glances`
 
 ## bashtop
 
@@ -177,6 +175,12 @@ https://mp.weixin.qq.com/s/ALyVaHfEfgPsT-N1KCGS3w
 dstat是后起之秀，号称可以替代vmstat、iostat、ifstat。
 
 `dstat -d --top-io`
+
+## 文件管理器
+
+ranger是一个字符式的文件管理器。
+
+https://ranger.github.io/
 
 # 性能分析
 

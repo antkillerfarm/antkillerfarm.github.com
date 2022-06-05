@@ -242,6 +242,14 @@ https://www.zhihu.com/column/c_1437330196193640448
 
 深入浅出GPU优化
 
+# AMD
+
+![](/images/img4/latestGPU.png)
+
+HIP：Heterogeneous Interface for Portability。
+
+HIP是AMD提出的C++接口，号称能兼容CUDA和自家的ROCm。
+
 # Shader
 
 基于OpenGL的OpenGL Shading Language，简称GLSL;

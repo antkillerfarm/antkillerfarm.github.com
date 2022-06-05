@@ -207,6 +207,10 @@ https://www.zhihu.com/question/271957617
 
 搭乘三叉戟（Trident）客机是怎样一番体验？
 
+https://www.zhihu.com/answer/1559912123
+
+乘波体加莱特进气道
+
 ---
 
 Savery Pump：

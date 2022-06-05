@@ -140,3 +140,7 @@ http://news.17173.com/content/11112021/094129154.shtml
 https://zhuanlan.zhihu.com/p/500967361
 
 街机《三国志》“很黄很暴力”的漫画剧情，刘皇叔靠处子之身起家
+
+https://www.zhihu.com/question/328681136
+
+什么是弹幕射击游戏？

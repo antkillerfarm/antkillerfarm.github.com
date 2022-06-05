@@ -208,6 +208,10 @@ gcc还可以用`__attribute__((packed))`
 
 ---
 
+C++语言为了保持与C语言的兼容性，在语法层面上曾经尽力保持C-like。但随着越来越多内容被加入到C++中，这一要求也越来越难以实现。最终，C++11标准的发布彻底改变了C++语言的面貌，其改变之大甚至让C++11看起来像一门全新的语言。因此，多把C++11后的C++称为“Modern C++”。
+
+---
+
 C++ 03标准到C++ 11标准之间长达8年的间隙，给了其他语言赶超并诟病C++的机会。一些厂商为了解决C++的问题，也加了不少私货，从而导致了版本兼容性的分裂。
 
 为了解决这个问题，C++标准委员会提出了新的版本发布策略：不再等待某项重要特性的成熟，再集体打包发布。而是成熟一项，发布一项。
@@ -390,21 +394,3 @@ abc.cpp:6:7: note: no known conversion for argument 1 from ‘Base’ to ‘Base
 可以参看下文：
 
 http://stackoverflow.com/questions/20247525/about-c-conversion-no-known-conversion-for-argument-1-from-some-class-to
-
-# switch...case
-
-```c
-switch (reg) {
-       case TAS5086_CLOCK_CONTROL ... TAS5086_BKNDERR:
-       return 1;
-       case TAS5086_INPUT_MUX:
-       case TAS5086_PWM_OUTPUT_MUX:
-       return 4;
-}
-```
-
-可以用上面的办法，少写一些case语句。
-
-# uint8_t
-
-对于要求严格位宽的场合，应用程序可以使用uint8_t，uint16_t，uint32_t来获得移植时的一致性。它的头文件是inttypes.h。
