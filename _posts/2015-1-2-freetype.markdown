@@ -182,3 +182,7 @@ WebP格式是google于2010年推出的一种旨在加快图片加载速度的图
 `cwebp -q 80 image.png -o image.webp`
 
 `dwebp image.webp -o image.png`
+
+webp转gif：
+
+`convert a.webp a.gif`

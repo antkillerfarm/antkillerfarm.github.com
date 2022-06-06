@@ -15,6 +15,14 @@ https://learngitbranching.js.org
 
 这个网站提供了一个可视化的交互式git教程。非常不错。
 
+## git实现原理
+
+![](/images/img3/git.jpg)
+
+git采用如上图所示的树状结构，因此分支的速度很快。
+
+svn本身不支持分支功能，所谓分支无非是创建一个新的副本文件夹，而这是一个代价很高的操作，而git就简单多了，增加一个指向新分支的指针即可。
+
 ## git常用命令
 
 ![](/images/img3/git.png)
