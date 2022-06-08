@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 商业风云
+title: 商业风云（二）
 category: essay 
 ---
 
@@ -8,114 +8,6 @@ category: essay
 {:toc}
 
 # 商业风云
-
-![](/images/img2/big4.jpg)
-
----
-
-https://mp.weixin.qq.com/s/m72bakeHShkM8yvPubMa8A
-
-狂飙突进的“蛋壳”，一触即溃的“蛋壳”
-
-https://mp.weixin.qq.com/s/LWhuImT3W1Pg-4WA0RMq6g
-
-被长租公寓割韭菜的打工一代
-
-https://mp.weixin.qq.com/s/diYe8bOXfOseXOLKScxdGw
-
-困在蛋壳里的人
-
----
-
-目前，共享充电宝领域几乎被街电、来电、小电和怪兽充电瓜分，形成所谓“三电一兽”的格局。
-
----
-
-圈内大佬说这个和林奇的用人策略有关系，一直以来都喜欢用道德有瑕疵的人，肯干还便宜，但是后果就是……
-
-https://www.zhihu.com/question/436136515
-
-游族网络董事长疑似中毒，同事有重大作案嫌疑，你怎么看？
-
----
-
-从来没有什么马云的时代，只有时代中的马云。
-
-https://mp.weixin.qq.com/s/XDE62Q2cbXamvtUdstT_lg
-
-阿里被罚182亿，背后是中国两千年不变的国策
-
-https://mp.weixin.qq.com/s/pzaM0T8E6LEsZ70w4M89aA
-
-阿里被罚182亿，它的问题并不简单
-
----
-
-滴滴有个独立董事，叫Adrian Perica，从2016年6月30日起担任滴滴出行独立董事，根据披露，此人在西点军校毕业，前美国军官。
-
-https://www.zhihu.com/question/470015739
-
-如何看待网信办通知应用商店下架滴滴出行App？
-
----
-
-教育行业，护城河还在，但是城没了。
-
----
-
-9月13日，恒大集团的最新兑付方案公布之后，有投资者不买账，要求实行“杜亮方案”，所谓杜亮方案，是指恒大财富总经理杜亮，于2021年5月31日提前兑付了自己在恒大财富购买的理财产品。
-
-老公做教育培训，老婆在恒大，买了恒大的期房又买了恒大财富。
-
----
-
-当时一名雇员的失误给IBM公司带来了巨大损失，当大家问IBM创始人Thomas J Watson是否会解雇这名员工时，他略带自嘲的回应道：“No, I just spent $600,000 training him. Why would I want somebody to hire his experience?”
-
----
-
-各大奶茶店品牌开店前十数量排名如下：
-
-1、蜜雪冰城 11948家
-
-2、书亦烧仙草 5854家
-
-3、CoCo都可 4529家
-
-4、古茗茶饮 4298家
-
-5、益禾堂 4176家
-
-6、一点点 3163家
-
-7、甜啦啦 2467家
-
-8、茶百道 2317家
-
-9、沪上阿姨 2027家
-
-10、快乐柠檬 994家
-
----
-
-我爱表演，不爱扮演；
-
-我爱奋斗，也爱享受生活；
-
-我爱漂亮衣服，更爱打折标签；
-
-不是米莱，不是钱小样，不是大明星，我是王珞丹。
-
-我没什么特别，我很特别；
-
-我和别人不一样，我和你一样，我是凡客。
-
-如果看过陈年《归去来》这本自传的，大概会知道，陈年并不是其真名。陈年真姓王，其小说中自称王平平。事实上，凡客内部，陈年也安插了好几位王X平的亲信。一旦陈年对高管不放心，其必会安排自己的亲属进驻该部门。用亲信挤走功臣和干将，也是常有发生的事情。要知道，当年许晓辉和张小军，也曾被逼得动弹不得，束手无策。
-
-https://www.zhihu.com/question/37691011
-
-凡客诚品为何衰落？
-
----
 
 巴菲特说护城河有五类：无形资产、成本优势、有效规模、转换成本、网络效应。
 
@@ -273,6 +165,20 @@ https://mp.weixin.qq.com/s/43H6jxd54zfQ1khWjurupg
 
 ---
 
+阿里、字节以往的平台模型属于双边市场平台模型，商品的库存积压风险都是平台加盟的B端承担，无论服装设计得好不好，市场反馈销量好不好，卖不出去都是商家的事。目前所有互联网企业运营的双边市场平台模型，说白了，就是一个空手套白狼的角色，亲自下场做产品、输出内容不是他们擅长的。
+
+设计方案由中间商提供，犀牛只负责制造，消费市场不接受最终产品的风险实际上全部由中间商买单，原来市场产业链中的制造业库存风险全部转换成为了中间商库存风险。
+
+字节跳动迅速推出了跨境电商独立站Dmonstudio，阿里也上线了快时尚女装平台Allylikes。几番挣扎之后，他们都没有超越SHEIN，以失败告终。
+
+制约服装行业发展的三个重要因素是“上新速度”、“性价比”和“库存周转”，这三个因素也被称为服装行业的“不可能三角”。
+
+https://www.zhihu.com/question/530021203
+
+为什么阿里和字节复制SHEIN会失败？
+
+---
+
 https://mp.weixin.qq.com/s/fov2fS345enPB_M7kEzFpQ
 
 无代码的时代真的来了吗？
@@ -316,3 +222,59 @@ https://mp.weixin.qq.com/s/67ZXEMtgaojbzXr7hb_vmA
 https://mp.weixin.qq.com/s/AUJRb7dap0neW6TZlUZa1A
 
 女版“乔布斯”覆灭记！硅谷美女CEO被曝百亿美元大骗局
+
+https://mp.weixin.qq.com/s/7qxTcPx_qjq3ySEYk6J5VQ
+
+曾经排名第一的安全软件，为啥会变成流氓软件？（瑞星杀毒软件）
+
+https://mp.weixin.qq.com/s/zavvvVdAZaTvneP2MikWnQ
+
+他晒了一张奶酪照片，被判入狱13年半
+
+https://mp.weixin.qq.com/s/07QuqR7ZFbXR6WCDkkD4Lw
+
+宿迁神苗，淘宝诚信的耻辱
+
+https://mp.weixin.qq.com/s/KXIHG3upGll_ERxqdAOtyw
+
+货车司机之死、内卷、政策制订中的两难
+
+https://mp.weixin.qq.com/s/OBmq9OZjfhAu7NTgyWX2Mg
+
+别人送的第一桶金，一文不值（王健林）
+
+https://www.sohu.com/a/500633989_120146415
+
+困在光伏里的老人：失去土地痛骂“败家子” 拿出养老本还贷
+
+https://view.inews.qq.com/wxn/20211118A0COXA00
+
+桑塔纳停产？昔日“天价”豪车如今不到十万，曾是自主之光
+
+https://mp.weixin.qq.com/s/EumGqvsIwgGXsSPX2TbrrA
+
+世界最牛员工每天挣10亿，记录保持23年！宣布退休后波音公司终于松了口气！——空中客车集团的销售总监John Leahy
+
+https://mp.weixin.qq.com/s/qmklQdBBEDnFB2LZcjy-5Q
+
+我还是个孩子，别让我看海南广告
+
+https://money.163.com/20/0102/08/F1SDMA3L00258105.html
+
+拯救老板戈恩:自己装到乐器盒子里 堪称逃亡史经典
+
+https://mp.weixin.qq.com/s/thmsiaJf41PEQktroG2Vlw
+
+看不透的曹德旺
+
+https://mp.weixin.qq.com/s/vxk1_WCvTzBxK0vzuhcrpg
+
+阴阳师，如何席卷东亚？
+
+https://www.zhihu.com/answer/1595636550
+
+为什么许多国外品牌以创始人名字命名我们觉得高大上，而中国品牌以创始人命名却难接受？
+
+https://view.inews.qq.com/wxn/20210303A06LLF00
+
+“货拉拉事件”像素级调查报告：司机是如何把女孩吓得跳车的？

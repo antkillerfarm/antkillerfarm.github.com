@@ -248,6 +248,8 @@ TPU v3, cloud beta 2018, 420 teraflops, 128 GB HBM, training and inference, beta
 
 《In-Datacenter Performance Analysis of a Tensor Processing Unit​》
 
+![](/images/img4/TPU.png)
+
 ### Coral Dev Board
 
 Coral Dev Board是Google于2019年3月推出的一款搭载TPU的嵌入式开发板。

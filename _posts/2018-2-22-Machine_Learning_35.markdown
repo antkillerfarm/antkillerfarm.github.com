@@ -285,6 +285,10 @@ https://zhuanlan.zhihu.com/p/408783183
 
 卡尔曼滤波的基本原理（也许是我写过最详细的推导）
 
+https://www.zhihu.com/column/c_1303778703026126848
+
+一个多传感器信息融合的专栏
+
 # Loss function详解+
 
 https://mp.weixin.qq.com/s/CPfhGxig9BMAgimBSOLy3g
@@ -362,23 +366,3 @@ Siamese网络，Triplet Loss以及Circle Loss的解释
 https://zhuanlan.zhihu.com/p/58883095
 
 常见的损失函数(loss function)总结
-
-https://mp.weixin.qq.com/s/UjBCjwNDIxDoAoyQAf8V6A
-
-旷视研究院提出Circle Loss，革新深度特征学习范式
-
-https://mp.weixin.qq.com/s/5RpbXzuHp_tR6C_nBdiXGA
-
-Circle Loss：从统一的相似性对的优化角度进行深度特征学习
-
-https://zhuanlan.zhihu.com/p/304462034
-
-根据标签分布来选择损失函数
-
-https://mp.weixin.qq.com/s/Ywzbn2_QqYd1W8dv8cxupw
-
-Seesaw Loss：一种面向长尾目标检测的平衡损失函数
-
-https://mp.weixin.qq.com/s/qJIlbLuM7--wj3fDLUecYw
-
-Pytorch中的四种经典Loss源码解析

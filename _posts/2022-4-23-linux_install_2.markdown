@@ -107,6 +107,34 @@ grub2引导系统iso镜像
 
 # Linux参考资源+
 
+https://www.cnblogs.com/Malphite/p/10405465.html
+
+Makefile中的-rpath/-rpath-link
+
+https://juejin.im/post/5e8844996fb9a03c6675b9d6
+
+我们按下电脑开机键的背后发生了什么？
+
+https://mp.weixin.qq.com/s/DCqkgksOHa81EI-I0oaZvg
+
+Linux下9种优秀的代码比对工具推荐
+
+https://zhuanlan.zhihu.com/p/162366167
+
+Linux下C++so热更新
+
+https://mp.weixin.qq.com/s/rH7WqriomFTA55ecacV8Gw
+
+键盘敲入A字母时，操作系统期间发生了什么...
+
+https://mp.weixin.qq.com/s/vDlWCVK8knxPf5HoqmtZyQ
+
+从创建进程到进入main函数，发生了什么？
+
+https://mp.weixin.qq.com/s/7YVuouHAq2OfrowhoHVmnQ
+
+Android对so体积优化的探索与实践
+
 https://mp.weixin.qq.com/s/4ZdnacKuqkpWTso6P1Rmjg
 
 如何调试多线程程序

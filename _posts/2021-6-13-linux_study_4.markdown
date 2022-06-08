@@ -179,9 +179,17 @@ XFS可以使用`xfs_db`命令。
 
 # 二进制文件与ASCII、Base64之间的转换
 
+ASCII中共有95个可打印字符。常见的Binary-to-text编码主要有：Base32/Base36/Base64/Base85。其中尤以Base64使用最为广泛
+
 xxd：这个命令可以将二进制文件转换成ASCII码表示文本文件。支持2、8、16等多种进制的ASCII表示形式，还支持输出成C语言格式的数组声明。反过来的转换也同样支持。
 
 uuencode and uudecode：支持二进制文件与Base64之间的转换。
+
+参考：
+
+https://zhuyie.github.io/posts/binary-to-text-encoding/
+
+从Base16到Base85, 谈谈Binary-to-text编码
 
 # start-stop-daemon
 
@@ -394,31 +402,3 @@ https://mp.weixin.qq.com/s/3Pp7wkDO6Rnxb5aZP0sacw
 https://mp.weixin.qq.com/s/xM8uvYbX6VY8MVZrYkvCUg
 
 链接选项rpath的原理和应用
-
-https://www.cnblogs.com/Malphite/p/10405465.html
-
-Makefile中的-rpath/-rpath-link
-
-https://juejin.im/post/5e8844996fb9a03c6675b9d6
-
-我们按下电脑开机键的背后发生了什么？
-
-https://mp.weixin.qq.com/s/DCqkgksOHa81EI-I0oaZvg
-
-Linux下9种优秀的代码比对工具推荐
-
-https://zhuanlan.zhihu.com/p/162366167
-
-Linux下C++so热更新
-
-https://mp.weixin.qq.com/s/rH7WqriomFTA55ecacV8Gw
-
-键盘敲入A字母时，操作系统期间发生了什么...
-
-https://mp.weixin.qq.com/s/vDlWCVK8knxPf5HoqmtZyQ
-
-从创建进程到进入main函数，发生了什么？
-
-https://mp.weixin.qq.com/s/7YVuouHAq2OfrowhoHVmnQ
-
-Android对so体积优化的探索与实践
