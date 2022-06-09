@@ -137,7 +137,7 @@ $$\frac{Crd \; arc \; 2BZ}{Crd \; arc \; 2AB} = \frac{Crd \; arc 2HZ}{Crd \; arc
 
 ![](/images/img4/Menelaus_5.png)
 
-Menelaus' theorem现存最早的记录是Menelaus的著作《Spherics》。书中将平面版本的Menelaus' theorem作为引理引入，并将之推广到球面三角形。按照当时的写作习惯，引理一般记述的是前人的成果，因此Menelaus' theorem的平面三角版本的发现者应该另有其人。只有球面三角版本才是他的原创。
+Menelaus' theorem现存最早的记录是Menelaus的著作《Spherics》。书中将平面版本的Menelaus' theorem作为引理引入，并将之推广到球面三角形。按照当时的写作习惯，引理一般记述的是前人的成果，因此，Menelaus' theorem的平面三角版本的发现者应该另有其人，只有球面三角版本才是他的原创。
 
 Menelaus的贡献不止于此。还有下图：
 
@@ -155,7 +155,7 @@ $$\frac{\sin AD}{\sin DC} \cdot \frac{\sin BC}{\sin AB} = \frac{\sin A'D'}{\sin 
 
 和人们通常的想法不同，**三角术从一开始就是球面三角学**，因为它的几个最初的奠基人（Hipparchus、Menelaus、Ptolemy）都是天文学家。。。平面三角学反而是很后来的事情了。。。大地测量对于Ptolemy这样的神兽来说，显然太low了。。。
 
-类似的，Euclid的真正本事，其实并不在《几何原本》中，而是在稍后时代相关数学家的记述中。一般认为**《几何原本》只是Euclid给自己弟子编写的入门书籍**，完全显不出Euclid的真正水平。
+类似的，Euclid的真正本事，其实并不在《几何原本》中，而是在稍后时代相关数学家的记述中。一般认为**几何原本只是Euclid给自己弟子编写的入门书籍**，完全显不出Euclid的真正水平。
 
 最后，再稍微从现代的角度解释一下，**为什么弦的比例关系确定了，对应圆弧的比例也就定了。以及这个比例为什么是正弦。**
 
