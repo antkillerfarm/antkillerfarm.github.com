@@ -306,3 +306,7 @@ https://mp.weixin.qq.com/s/7athL-OWrFSxMwxqvR73TA
 https://mp.weixin.qq.com/s/ChAfcT5xDgExiEXytTfynw
 
 关于存储技术的最强入门科普
+
+https://www.sohu.com/a/394211914_444417
+
+SMR硬盘到底能用不？

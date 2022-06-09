@@ -133,6 +133,14 @@ https://www.zhihu.com/question/66376147
 
 这种方法的好处是显而易见的，你收获了威信的同时并没有透露出你的求根公式，在没有提供任何有效信息的前提下完成了证明。
 
+---
+
+原来电信部门侦测到http信息，就用iframe给它嵌入了一段广告，这样用户就能在浏览器右下角看到一刀999之类内容。。。
+
+https://blog.csdn.net/wr410/article/details/25594273
+
+分析深圳电信的新型HTTP劫持方式
+
 ## 参考
 
 https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126

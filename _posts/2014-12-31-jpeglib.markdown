@@ -233,6 +233,14 @@ ZIP也能边下载边解压？流式解压技术揭秘！
 
 ## 参考
 
+主流的压缩格式（zip、7z等）不支持保留Unix风格的文件访问权限，一旦在Linux系统里解压，解压出来的文件可能会出现“拒绝访问”的现象，而tar支持保留文件的访问权限。
+
+https://www.zhihu.com/question/335911358
+
+为什么Linux要用tar.gz，很少用7Z或ZIP？
+
+---
+
 https://mp.weixin.qq.com/s/9kdeSj0RwUvlIi4oBEF_Wg
 
 速度与压缩比如何兼得？压缩算法在构建部署中的优化
