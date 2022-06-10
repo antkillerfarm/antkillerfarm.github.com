@@ -304,13 +304,15 @@ TensorFlow Probability中的联合分布变分推断
 
 # Debug/Profiling
 
-## 设置python
+## VS Code + gdb
+
+- 设置python
 
 Setting中搜索`python path`，设置路径类似于：`/anaconda3/envs/mlbook/bin/python`
 
 打开python文件，在状态栏有python版本的提示，点击该提示，可以切换不同的python版本。
 
-## gdb调试
+- gdb调试
 
 Tensorflow App，一般是从python开始的，因此需要掌握python+C的混合调试方法。
 
@@ -330,7 +332,7 @@ https://www.cnblogs.com/djzny/p/4956752.html
 
 gdb命令中attach使用
 
-## vscode调试
+- vscode调试
 
 vscode调试同样需要两段式的方法：
 
@@ -341,6 +343,10 @@ Example debugging mixed Python C++ in VS Code
 相关配置文件参见：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/vscode/launch.json
+
+## 打印stack trace
+
+tensorflow::CurrentStackTrace()
 
 ## profiling
 

@@ -7,7 +7,11 @@ category: AI
 * toc
 {:toc}
 
-# TensorFlow
+# MultiDevice
+
+tensorflow::ProcessFunctionLibraryRuntime::RunMultiDevice
+
+# TensorFlow参考
 
 https://mp.weixin.qq.com/s/t1QFIOq-VBNOrSm0zW-PlQ
 
@@ -396,23 +400,3 @@ https://mp.weixin.qq.com/s/N2OP1uX7JjfIJQ_B4NHKpw
 https://mp.weixin.qq.com/s/bJigyEv6iNDp799KlHsclg
 
 TensorFlow 不仅用于机器学习，还能模拟偏微分方程（水滴特效）
-
-https://mp.weixin.qq.com/s/dmNEzrWNX3YWmocjpORpig
-
-谷歌开源TF-Ranking可扩展库，支持多种排序学习
-
-https://mp.weixin.qq.com/s/n_zU7Rg7v6PwjZWEF88fNA
-
-如何使用TensorFlow实现音频分类任务
-
-https://mp.weixin.qq.com/s/UbBJYOmWtUXPFliRMyzDrg
-
-最新TensorFlow专业深度学习实战书籍和代码《Pro Deep Learning with TensorFlow》
-
-https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
-
-Docker Compose+GPU+TensorFlow所产生的奇妙火花
-
-https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
-
-TensorFlow中那些鲜为人知却又极其实用的知识

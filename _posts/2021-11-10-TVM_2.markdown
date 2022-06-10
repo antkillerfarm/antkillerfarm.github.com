@@ -201,3 +201,41 @@ SPIR-V研究：编译器基本原理
 从上表可以看出增大batch size可以减少iteration的数量，但是该方法有极限，不可任意小。
 
 增大batch size会增加计算量，但是由于设备IO和计算量的平衡，并不是batch size越小，运行时间就越短。
+
+# TensorFlow++++
+
+https://mp.weixin.qq.com/s/dmNEzrWNX3YWmocjpORpig
+
+谷歌开源TF-Ranking可扩展库，支持多种排序学习
+
+https://mp.weixin.qq.com/s/n_zU7Rg7v6PwjZWEF88fNA
+
+如何使用TensorFlow实现音频分类任务
+
+https://mp.weixin.qq.com/s/UbBJYOmWtUXPFliRMyzDrg
+
+最新TensorFlow专业深度学习实战书籍和代码《Pro Deep Learning with TensorFlow》
+
+https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
+
+Docker Compose+GPU+TensorFlow所产生的奇妙火花
+
+https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
+
+TensorFlow中那些鲜为人知却又极其实用的知识
+
+https://mp.weixin.qq.com/s/gW_KX6eF9XEsSUO1UzJ3WQ
+
+基于LSTM的情感分析
+
+https://mp.weixin.qq.com/s/KZhL477ApHgQfmM2xFrYJw
+
+Tensorlang：基于TensorFlow的可微编程语言
+
+https://mp.weixin.qq.com/s/_9NJ6QLQArUAD1DKb0KRfA
+
+如何使用TensorFlow mobile部署模型到移动设备
+
+https://mp.weixin.qq.com/s/e_TzQxFLAonLMyYAhte6Cg
+
+face-api.js：在浏览器中进行人脸识别的JavaScript接口

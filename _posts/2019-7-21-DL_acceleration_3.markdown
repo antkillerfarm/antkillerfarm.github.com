@@ -303,8 +303,18 @@ FP16相对于FP32，通常会有不到1%的精度损失。即使是不re-train�
 
 UINT量化使用bias将数据搬移到均值为0的区间。
 
-这篇论文的另一个贡献在于：原先的INT8量化是针对已经训练好的模型。而现在还可以在训练的时候就进行量化——前向计算进行量化，而反向的误差修正不做量化。
+$$r=S(q-Z)$$
 
-`tf.quantization.fake_quant_XXXX`系列API可用于前向计算时的量化。
+r为fp32表示；q则是low-bit(如int8)表示；S是自low-bit（int8）到fp32的scale；Z为零点shift，用于使q的某数值对应于r中的0.0。
 
-Fake quant之所以叫伪量化，是因为虽然可量化weights/activations，但不是真正意义上的量化，即变量类型还是floating point，而不是integer。
+一般情况下，一个Tensor共享同一个S。有的时候为了提升精度，也可以一个channel共享同一个S，这也被称为per channel quantization。如果不共享S，则退化为普通的浮点数表示。
+
+对于矩阵乘法来说：
+
+$$q_3^{(i,k)}=Z_3+M\sum_{j=1}^N(q_1^{(i,j)}-Z_1)(q_2^{(j,k)}-Z_2)$$
+
+则：
+
+$$S_3(q_3^{(i,k)}-Z_3)=\sum_{j=1}^N S_1(q_1^{(i,j)}-Z_1)S_2(q_2^{(j,k)}-Z_2)$$
+
+其中，$$M=\frac{S_1S_2}{S_3}$$。如果令$$S_3=S_1S_2$$，则上述运算将全部转为整数运算。

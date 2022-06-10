@@ -7,7 +7,15 @@ category: DL acceleration
 * toc
 {:toc}
 
-# NN Quantization（续）
+# NN Quantization
+
+## UINT量化（续）
+
+这篇论文的另一个贡献在于：原先的INT8量化是针对已经训练好的模型。而现在还可以在训练的时候就进行量化——前向计算进行量化，而反向的误差修正不做量化。
+
+`tf.quantization.fake_quant_XXXX`系列API可用于前向计算时的量化。
+
+Fake quant之所以叫伪量化，是因为虽然可量化weights/activations，但不是真正意义上的量化，即变量类型还是floating point，而不是integer。
 
 ## bfloat16
 
@@ -304,25 +312,3 @@ https://mp.weixin.qq.com/s/wCx7rQFwC2mW45FMR77tGQ
 https://mp.weixin.qq.com/s/7L26ghhDqdMU6LRV0iD6vQ
 
 模型量化从1bit到8bit，二值到三值
-
-## 参考
-
-https://mp.weixin.qq.com/s/M79xGWWtJUB6wBVlHXw8ig
-
-低精度神经网络：从数值计算角度优化模型效率
-
-https://www.chiphell.com/thread-1620755-1-1.html
-
-新Titan X的INT8计算到底是什么鬼
-
-https://mp.weixin.qq.com/s/5LhLbzyWTlP2R_zGAIKuiA
-
-INT8量化训练
-
-https://mp.weixin.qq.com/s/S9VcoS_59nbZWe_P3ye2Tw
-
-减少模型半数内存用量：百度&英伟达提出混合精度训练法
-
-https://zhuanlan.zhihu.com/p/35700882
-
-CNN量化技术

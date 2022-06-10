@@ -134,6 +134,14 @@ https://xblog.lufficc.com/blog/useful-online-tools
 
 实用的工具网站
 
+https://libgeos.org/
+
+一个GIS方面的C++库
+
+http://ogdi.sourceforge.net/
+
+Open Geographic Datastore Interface
+
 ## Wikipedia镜像网站
 
 https://encyclopedia.thefreedictionary.com

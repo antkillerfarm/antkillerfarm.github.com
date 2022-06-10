@@ -9,6 +9,46 @@ category: DL acceleration
 
 # 模型压缩与加速进阶
 
+https://mp.weixin.qq.com/s/GFE2XYHZXPP0doQ5nd0JNQ
+
+当前深度神经网络模型压缩和加速方法速览
+
+https://mp.weixin.qq.com/s/JnW7RnOQKG-dPOOAQeOmSA
+
+当前深度神经网络模型压缩和加速都有哪些方法？
+
+https://mp.weixin.qq.com/s/YUg2dZZhDSsRpSftdNfiIQ
+
+极致的优化：智能手机是如何处理大型神经网络的
+
+https://mp.weixin.qq.com/s/vswtn3D1-VZZlyKLJmHc7A
+
+纪荣嵘：深度神经网络压缩及应用
+
+https://mp.weixin.qq.com/s/mWfZ4jfuby4myGfi6TW3wQ
+
+从超参数到架构，一文简述模型优化策略
+
+https://mp.weixin.qq.com/s/fU-AeaPz-lHlg0CBgqnpZQ
+
+轻量化神经网络综述
+
+https://mp.weixin.qq.com/s/n7neAptKozRz5p5ctvKZrQ
+
+模型压缩——结构篇
+
+https://mp.weixin.qq.com/s/MGR36sC581WuQ-2WMnf5vA
+
+深度压缩网络总结
+
+https://mp.weixin.qq.com/s/1EnPWdJk8vGzxxdzAwPO4A
+
+剪枝乱炖
+
+https://mp.weixin.qq.com/s/UmtCq6WzIDQs3IAxhRFgNw
+
+浅谈模型压缩之量化、剪枝、权重共享
+
 https://mp.weixin.qq.com/s/H6OTkpdIgSdugDrEMBLybw
 
 超越MobileNetV3的轻量级网络（GhostNet）

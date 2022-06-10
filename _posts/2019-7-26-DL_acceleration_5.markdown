@@ -9,6 +9,28 @@ category: DL acceleration
 
 # NN Quantization（续）
 
+## 参考
+
+https://mp.weixin.qq.com/s/M79xGWWtJUB6wBVlHXw8ig
+
+低精度神经网络：从数值计算角度优化模型效率
+
+https://www.chiphell.com/thread-1620755-1-1.html
+
+新Titan X的INT8计算到底是什么鬼
+
+https://mp.weixin.qq.com/s/5LhLbzyWTlP2R_zGAIKuiA
+
+INT8量化训练
+
+https://mp.weixin.qq.com/s/S9VcoS_59nbZWe_P3ye2Tw
+
+减少模型半数内存用量：百度&英伟达提出混合精度训练法
+
+https://zhuanlan.zhihu.com/p/35700882
+
+CNN量化技术
+
 https://mp.weixin.qq.com/s/9DXMqiPIK5P5wzUMT7_Vfw
 
 基于交替方向法的循环神经网络多比特量化
@@ -304,43 +326,3 @@ https://mp.weixin.qq.com/s/dEdWz4bovmk65fwLknHBhg
 https://mp.weixin.qq.com/s/f1SCK0J5oTWNJvtld3UAHQ
 
 神经网络修剪最新研究进展
-
-https://mp.weixin.qq.com/s/GFE2XYHZXPP0doQ5nd0JNQ
-
-当前深度神经网络模型压缩和加速方法速览
-
-https://mp.weixin.qq.com/s/JnW7RnOQKG-dPOOAQeOmSA
-
-当前深度神经网络模型压缩和加速都有哪些方法？
-
-https://mp.weixin.qq.com/s/YUg2dZZhDSsRpSftdNfiIQ
-
-极致的优化：智能手机是如何处理大型神经网络的
-
-https://mp.weixin.qq.com/s/vswtn3D1-VZZlyKLJmHc7A
-
-纪荣嵘：深度神经网络压缩及应用
-
-https://mp.weixin.qq.com/s/mWfZ4jfuby4myGfi6TW3wQ
-
-从超参数到架构，一文简述模型优化策略
-
-https://mp.weixin.qq.com/s/fU-AeaPz-lHlg0CBgqnpZQ
-
-轻量化神经网络综述
-
-https://mp.weixin.qq.com/s/n7neAptKozRz5p5ctvKZrQ
-
-模型压缩——结构篇
-
-https://mp.weixin.qq.com/s/MGR36sC581WuQ-2WMnf5vA
-
-深度压缩网络总结
-
-https://mp.weixin.qq.com/s/1EnPWdJk8vGzxxdzAwPO4A
-
-剪枝乱炖
-
-https://mp.weixin.qq.com/s/UmtCq6WzIDQs3IAxhRFgNw
-
-浅谈模型压缩之量化、剪枝、权重共享
