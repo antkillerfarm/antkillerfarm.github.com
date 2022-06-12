@@ -161,7 +161,7 @@ configure脚本会询问使用什么版本的gcc，填`/usr/bin/gcc-4.9`即可�
 
 具体的要求参见：
 
-https://tensorflow.google.cn/install/source
+https://tensorflow.google.cn/install/source?hl=en
 
 ---
 
@@ -197,7 +197,7 @@ https://developer.nvidia.com/rdp/cudnn-archive
 
 Ubuntu 20.04已经自带了相应的driver和CUDA：
 
-`sudo apt install nvidia-driver-440 nvidia-utils-440`
+`sudo apt install nvidia-driver-440 nvidia-utils-440 nvidia-cuda-toolkit`
 
 Pytorch可支持最新的CUDA，因此这样就可以了。
 
@@ -212,6 +212,12 @@ cuDNN这个没办法，只有硬装。
 `successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero`
 
 这个是正常的，NUMA是多机多卡才有的东西。
+
+---
+
+2022.6
+
+Nvidia的向后兼容性其实还马马虎虎，由于我尝鲜Ubuntu 22.04，并不能安装旧版的CUDA，以适配当前的TF（2.9.0）。于是我直接安装CUDA 11.5，竟然也没出啥问题。。。
 
 ---
 

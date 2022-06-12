@@ -173,6 +173,10 @@ https://mp.weixin.qq.com/s/XqFe9d72CepdfTSOq2gWJg
 
 半全局匹配SGM
 
+https://blog.csdn.net/wsp_1138886114/article/details/106633364
+
+NLM去噪算法
+
 https://mp.weixin.qq.com/s/3Z7DUr6s-XGsthF8WrrXDA
 
 基于曲率的图像处理

@@ -395,6 +395,24 @@ https://github.com/lutzroeder/netron
 
 `snap install netron`
 
+## SymPy
+
+SymPy是一个符号计算的Python库。
+
+官网：
+
+https://www.sympy.org/en/index.html
+
+参考：
+
+https://zhuanlan.zhihu.com/p/96738286
+
+用Python来研究数学---SymPy符号工具包介绍
+
+https://mp.weixin.qq.com/s/pexY5bG0NhQL2uOJF4UHPQ
+
+符号运算他做得比Matlab更漂亮
+
 ## 可视化
 
 GCJ-02是由中国国家测绘局（G表示Guojia国家，C表示Cehui测绘，J表示Ju局）制订的地理信息系统的坐标系统。又名“火星坐标系”。
@@ -452,15 +470,3 @@ https://mp.weixin.qq.com/s/wsa-HxJRCzhBF8E6yrLCQg
 https://mp.weixin.qq.com/s/c7Sry6FaGv3ZgkKLekxc2g
 
 用Python画中国地图（下）
-
-https://mp.weixin.qq.com/s/ty5xy6s0z3rvMYZptdTdBQ
-
-Python热图进阶
-
-https://mp.weixin.qq.com/s/mJpk0ZM9kvxBKOiyRJvAQw
-
-Python+Kepler.gl轻松制作酷炫路径动画
-
-https://mp.weixin.qq.com/s/CztcMqrFh_f01N88ybsQUg
-
-B站爆红的数学视频，竟是用这个神器做的！（manim）

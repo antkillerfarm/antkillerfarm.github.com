@@ -177,6 +177,10 @@ webp转gif：
 
 Maya、3DS Max、ZBrush、Blender、BodyPaint 3D、CINEMA 4D。
 
+https://www.blendercn.org/
+
+斑斓社区
+
 ## Others
 
 Adobe无疑是图像处理的王者，所以它家的产品线也有标杆价值，一般用“XX替代品”作为关键字搜索，就能得到你想要的东西。所以这里也列一下Adobe的产品。

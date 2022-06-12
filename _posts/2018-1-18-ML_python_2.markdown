@@ -11,6 +11,24 @@ category: AI
 
 ## Matplotlib（续）
 
+参考：
+
+https://mp.weixin.qq.com/s/mpj1QpWpnGm8117p3cEWZw
+
+如何优雅而高效地使用Matplotlib实现数据可视化
+
+https://mp.weixin.qq.com/s/LBrlXEhGYOx1aPFZzQcyTQ
+
+5种快速易用的Python Matplotlib数据可视化方法
+
+https://mp.weixin.qq.com/s/aBi1PTEumRs0frUpb_uYrA
+
+用Python做图像处理（2）
+
+https://mp.weixin.qq.com/s/3VgFKiUOFvtWmqg1BO9xGw
+
+matplotlib--python的数据可视化
+
 https://mp.weixin.qq.com/s/LuXyUBkaJUfg4WteFxStrg
 
 Matplotlib可视化最有价值的50个图表
@@ -436,21 +454,3 @@ http://numba.pydata.org/
 https://mp.weixin.qq.com/s/5peMiGXNnviAjMP76tV3pw
 
 Python高性能计算库——Numba
-
-## SymPy
-
-SymPy是一个符号计算的Python库。
-
-官网：
-
-https://www.sympy.org/en/index.html
-
-参考：
-
-https://zhuanlan.zhihu.com/p/96738286
-
-用Python来研究数学---SymPy符号工具包介绍
-
-https://mp.weixin.qq.com/s/pexY5bG0NhQL2uOJF4UHPQ
-
-符号运算他做得比Matlab更漂亮

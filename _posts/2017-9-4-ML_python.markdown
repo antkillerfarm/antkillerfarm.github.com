@@ -63,6 +63,8 @@ Conda是一个开源的软件包管理系统和环境管理系统，用于安装
 
 https://conda.io/docs/
 
+Conda一般有两个发行版——Anaconda和Miniconda。前者默认安装的包比较多，而后者则是一个最小安装。
+
 参考：
 
 https://mp.weixin.qq.com/s/NX2zWc7y8Y2kK9ZNxlUBVA
@@ -440,21 +442,3 @@ http://matplotlib.org/1.5.3/api/index.html
 示例：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/plot/matplotlib_helloworld.py
-
-参考：
-
-https://mp.weixin.qq.com/s/mpj1QpWpnGm8117p3cEWZw
-
-如何优雅而高效地使用Matplotlib实现数据可视化
-
-https://mp.weixin.qq.com/s/LBrlXEhGYOx1aPFZzQcyTQ
-
-5种快速易用的Python Matplotlib数据可视化方法
-
-https://mp.weixin.qq.com/s/aBi1PTEumRs0frUpb_uYrA
-
-用Python做图像处理（2）
-
-https://mp.weixin.qq.com/s/3VgFKiUOFvtWmqg1BO9xGw
-
-matplotlib--python的数据可视化
