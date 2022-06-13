@@ -35,14 +35,6 @@ https://mp.weixin.qq.com/s/w6aY1_RryWnFq8FomPTDhw
 
 地铁也要遵循“红灯停、绿灯行”的交通规则吗？
 
----
-
-寒潮逼出了三种人，羽绒服面包人、皮草贵妇和摇粒绒小绵羊。
-
-https://mp.weixin.qq.com/s/YyXpzyvkSvRd4KR8Wlac9g
-
-寒冬腊月，你被摇粒绒征服了吗？
-
 # 真垃圾筐
 
 主流发达国家教职体系，PI（Principal Investigator）制：助理教授（Assistant Professor，AP）->副教授（Associate Professor）->教授（Full Professor->讲席教授（Chair Professor）

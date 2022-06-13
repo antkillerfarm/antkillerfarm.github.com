@@ -206,3 +206,15 @@ https://zhuanlan.zhihu.com/p/36588396
 https://blog.codingnow.com/2020/07/game_ui.html
 
 游戏UI模块的选择
+
+## 其他
+
+Single Document Interface（SDI）
+
+Multiple Document Interface（MDI）
+
+Tab Document Interface（TDI）
+
+https://www.zhihu.com/question/21143701
+
+在macOS中关闭应用窗口，为什么默认设定不是完全退出？
