@@ -207,6 +207,10 @@ https://mp.weixin.qq.com/s/hI9Z3l2eVJxkPbL8zG5uGA
 
 图形学基础，427页pdf
 
+https://zhuanlan.zhihu.com/p/430541328
+
+图形学基础篇
+
 http://15462.courses.cs.cmu.edu/fall2020/courseinfo
 
 Computer Graphics

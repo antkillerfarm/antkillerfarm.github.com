@@ -332,3 +332,7 @@ https://mp.weixin.qq.com/s/a6cJvb45Cx5YPXI3FFBJJA
 https://mp.weixin.qq.com/s/tBDQ1Ko7UbX5lfzV42qmrQ
 
 人类科技工程发展图鉴：哪个是你心中的硬核担当？
+
+https://www.zhihu.com/question/24810449
+
+纯电动车是否有变速箱？

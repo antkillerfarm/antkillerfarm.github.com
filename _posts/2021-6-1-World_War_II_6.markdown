@@ -202,3 +202,7 @@ https://mp.weixin.qq.com/s/kNFx85eGgYC81nz3ElN21Q
 https://mp.weixin.qq.com/s/WbMHXf1EhUIV7kZSJki-_g
 
 为什么希特勒冒着两线作战的危险，也要坚持1941年入侵苏联？
+
+https://mp.weixin.qq.com/s/ydXEPpyH4S_Zv94aE5yZ9w
+
+F9F单挑苏联6架米格15，性能数量绝对劣势，竟反杀4架全身而退
