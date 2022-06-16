@@ -141,34 +141,6 @@ TF里有两套Log系统：`LOG`和`VLOG`。
 
 `VLOG`都是INFO级别的Log，因此，`TF_CPP_MIN_LOG_LEVEL`必须为0。此外，`VLOG`本身亦有不同等级，可使用`TF_CPP_MIN_VLOG_LEVEL`控制，值越大，信息越多。
 
-# loss & accuracy
-
-loss：训练集损失值
-
-accuracy:训练集准确率
-
-val_loss:测试集损失值
-
-val_accruacy:测试集准确率
-
-以下5种情况可供参考：
-
-train loss 不断下降，test loss不断下降，说明网络仍在学习;（最好的）
-
-train loss 不断下降，test loss趋于不变，说明网络过拟合;（max pool或者正则化）
-
-train loss 趋于不变，test loss不断下降，说明数据集100%有问题;（检查dataset）
-
-train loss 趋于不变，test loss趋于不变，说明学习遇到瓶颈，需要减小学习率或批量数目;（减少学习率）
-
-train loss 不断上升，test loss不断上升，说明网络结构设计不当，训练超参数设置不当，数据集经过清洗等问题。（最不好的情况）
-
-参考：
-
-https://www.cnblogs.com/Timeouting-Study/p/12591448.html
-
-TensorFlow中loss与val_loss、accuracy和val_accuracy分别是什么含义
-
 # Eager Execution
 
 TensorFlow的Eager Execution可立即评估操作，无需构建图：操作会返回具体的值，而不是构建以后再运行的计算图。这也就是所谓的动态图计算的概念。
@@ -347,7 +319,11 @@ https://www.cnblogs.com/jojodru/p/7744630.html
 
 在Ubuntu 16.04上使用bazel交叉编译tensorflow
 
-# tf.distribute
+# tf.distribute & MultiDevice
+
+tf.distribute.MirroredStrategy
+
+tensorflow::ProcessFunctionLibraryRuntime::RunMultiDevice
 
 https://www.cnblogs.com/rossiXYZ/p/16142677.html
 

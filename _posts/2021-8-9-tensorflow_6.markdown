@@ -7,10 +7,6 @@ category: AI
 * toc
 {:toc}
 
-# MultiDevice
-
-tensorflow::ProcessFunctionLibraryRuntime::RunMultiDevice
-
 # TensorFlow参考
 
 https://mp.weixin.qq.com/s/t1QFIOq-VBNOrSm0zW-PlQ

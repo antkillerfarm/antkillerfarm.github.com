@@ -186,6 +186,36 @@ SPIR-V研究：编译器基本原理
 
 # 炼丹实录
 
+## loss & accuracy
+
+loss：训练集损失值
+
+accuracy:训练集准确率
+
+val_loss:测试集损失值
+
+val_accruacy:测试集准确率
+
+以下5种情况可供参考：
+
+train loss 不断下降，test loss不断下降，说明网络仍在学习;（最好的）
+
+train loss 不断下降，test loss趋于不变，说明网络过拟合;（max pool或者正则化）
+
+train loss 趋于不变，test loss不断下降，说明数据集100%有问题;（检查dataset）
+
+train loss 趋于不变，test loss趋于不变，说明学习遇到瓶颈，需要减小学习率或批量数目;（减少学习率）
+
+train loss 不断上升，test loss不断上升，说明网络结构设计不当，训练超参数设置不当，数据集经过清洗等问题。（最不好的情况）
+
+参考：
+
+https://www.cnblogs.com/Timeouting-Study/p/12591448.html
+
+TensorFlow中loss与val_loss、accuracy和val_accuracy分别是什么含义
+
+## lenet
+
 最近对Lenet的训练过程作了一个有趣的测试。
 
 下表以accuracy达到90%，作为测试的目标：
