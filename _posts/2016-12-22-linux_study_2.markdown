@@ -284,10 +284,6 @@ https://mp.weixin.qq.com/s/DG7RjJ_HXSRb6nAZuoTz3g
 
 详解Linux中3个文件查找相关命令
 
-https://www.cnblogs.com/zqb-all/p/10666474.html
-
-Linux实用命令之xdg-open
-
 https://www.cnblogs.com/traditional/p/12580638.html
 
 psutil：获取硬件、网络相关信息，以及管理进程

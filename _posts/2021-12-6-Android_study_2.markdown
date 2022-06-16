@@ -211,6 +211,22 @@ https://mp.weixin.qq.com/s/QbBr7ZQhD8DwzSzf4RRvgQ
 
 # git+
 
+## Monorepo
+
+上面提到的多项目管理，一般称为MultiRepo，即每个项目对应一个单独的仓库。与之相对的则是Monorepo，即把多个项目放在一个仓库里面。
+
+![](/images/img4/Monorepo.png)
+
+参考：
+
+https://juejin.cn/post/6944877410827370504
+
+现代前端工程为什么越来越离不开Monorepo?
+
+https://zhuanlan.zhihu.com/p/77577415
+
+Monorepo是什么，为什么大家都在用？
+
 ## 参考
 
 https://mp.weixin.qq.com/s/z_zFveiiLu9vLvWuBcsaIg

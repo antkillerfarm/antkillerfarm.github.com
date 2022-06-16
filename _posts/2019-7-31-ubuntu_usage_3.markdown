@@ -340,12 +340,6 @@ https://www.cnblogs.com/schips/p/10141278.html
 
 `sudo apt install ttf-wqy-microhei ttf-wqy-zenhei`
 
-# GnuGo
-
-GnuGo是一个著名的开源围棋软件，但是它只有文字界面。一般使用Quarry作为它的GUI。
-
-`sudo apt install quarry`
-
 # 手机上网
 
 最近公司网络有问题，只好使用手机连接互联网，也就是所谓WLAN热点。
@@ -365,3 +359,15 @@ LibreOffice：7.3
 RTL8821CE网卡驱动已经集成到内核中，所以这次安装的网络体验满分。
 
 而且我还发现，其实离线安装并非不可以，只要你选择安装英文版就行了。
+
+# X Desktop Group
+
+设置`XDG_CACHE_HOME`可以将cache文件移动到较快的介质如SSD中，从而加速运行。或者移动到较大的分区，以腾出系统空间。
+
+https://www.cnblogs.com/zqb-all/p/10666474.html
+
+Linux实用命令之xdg-open
+
+https://blog.csdn.net/u014025444/article/details/94029895
+
+linux的XDG基本目录规范

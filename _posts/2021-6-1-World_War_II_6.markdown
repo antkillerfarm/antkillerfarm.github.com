@@ -194,15 +194,3 @@ https://mp.weixin.qq.com/s/f_tbl1KT6suEB4HarHJKQQ
 https://mp.weixin.qq.com/s/d_Ua9kAvvz-W2YHjRCa_0w
 
 纳粹德国战犯百态：纽伦堡审判庭之外的细节
-
-https://mp.weixin.qq.com/s/kNFx85eGgYC81nz3ElN21Q
-
-俾斯麦家族与二战：铁血宰相后人的沉浮
-
-https://mp.weixin.qq.com/s/WbMHXf1EhUIV7kZSJki-_g
-
-为什么希特勒冒着两线作战的危险，也要坚持1941年入侵苏联？
-
-https://mp.weixin.qq.com/s/ydXEPpyH4S_Zv94aE5yZ9w
-
-F9F单挑苏联6架米格15，性能数量绝对劣势，竟反杀4架全身而退
