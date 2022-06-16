@@ -198,6 +198,8 @@ dmesg：系统log信息。
 
 mallinfo：获得内存分配信息。
 
+`sudo systemctl status xrdp -n50`：打印xrdp服务的log，显示最新的50行。
+
 ---
 
 打印文件/proc/{pid}/maps查看内存地址和文件的映射关系，可以得到函数在哪个文件里。

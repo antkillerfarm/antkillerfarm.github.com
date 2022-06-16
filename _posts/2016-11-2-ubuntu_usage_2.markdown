@@ -59,6 +59,10 @@ https://github.com/tualatrix/ubuntu-tweak
 
 支持平台广泛，大多数Linux发行版都有对应的软件包。
 
+3.gnome-tweaks
+
+这是Gnome官方的优化工具，当然了这个主要关注gnome桌面的设置，并没有系统设置的内容。
+
 # 清理系统
 
 ## 清理安装包
@@ -241,20 +245,6 @@ http://mozilla.com.cn/addon/76-pagesaver/
 # Virtual MIDI Piano Keyboard
 
 VMPK是一款MIDI生成工具软件，也就是俗称的“虚拟电子琴”软件。但它本身只生成MIDI输出，需要配合使用MIDI后处理软件，才能发声。常见的MIDI后处理软件有Qsynth、TiMidity。
-
-# 远程桌面
-
-Linux下的远程桌面软件主要有RealVNC和rdesktop。前者支持VNC协议，而后者支持MS RDP协议，可连接Windows系统。
-
-## rdesktop
-
-安装方法：
-
-`sudo apt install rdesktop`
-
-使用方法：
-
-`rdesktop -u administrator -p ****** -a 16 192.168.1.1`
 
 # Xming
 

@@ -73,7 +73,7 @@ ubuntu不同于一般的发行版，它对桌面做了很大的改动，因此�
 
 - 客户端：remmina
 
-该方法可将物理桌面共享给VNC，但是无法创建新的桌面。
+该方法可将物理桌面共享给VNC，但是无法创建新的虚拟桌面。
 
 参考：
 
@@ -117,6 +117,58 @@ Ubuntu 18.04搭建VNC服务器
 https://linuxconfig.org/ubuntu-remote-desktop-18-04-bionic-beaver-linux
 
 VNC server on Ubuntu 18.04 Bionic Beaver Linux
+
+## xrdp
+
+RDP是和VNC齐名的远程桌面协议，也是Windows平台的标配。RDP对于网络带宽的要求比VNC低。
+
+Ubuntu下一般使用xrdp作为服务端。至于客户端，仍然可以使用remmina。
+
+```bash
+sudo apt install xrdp
+sudo adduser xrdp ssl-cert
+sudo ufw allow from 192.168.1.0/24 to any port 3389
+```
+
+/etc/xrdp/startwm.sh:
+
+```bash
+# add 2 lines below
+unset DBUS_SESSION_BUS_ADDRESS
+unset XDG_RUNTIME_DIR
+
+if test -r /etc/profile; then
+	. /etc/profile
+fi
+```
+
+~/.xsessionrc:
+
+```bash
+export GNOME_SHELL_SESSION_MODE=ubuntu
+export XDG_CURRENT_DESKTOP=ubuntu:GNOME
+export XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+```
+
+`sudo systemctl restart xrdp`
+
+打开remmina，用+号按钮新建会话，设置分辨率为“使用客户机的分辨率”。
+
+这里得到的是一个新建的虚拟桌面。
+
+## 远程桌面客户端
+
+Linux下的远程桌面客户端软件主要有RealVNC和rdesktop。前者支持VNC协议，而后者支持MS RDP协议，可连接Windows系统。
+
+### rdesktop
+
+安装方法：
+
+`sudo apt install rdesktop`
+
+使用方法：
+
+`rdesktop -u administrator -p ****** -a 16 192.168.1.1`
 
 # 桌面主题
 
@@ -299,42 +351,6 @@ GnuGo是一个著名的开源围棋软件，但是它只有文字界面。一般
 最近公司网络有问题，只好使用手机连接互联网，也就是所谓WLAN热点。
 
 除了Wifi之外，现在的手机还有USB网络共享的功能，该功能基于RNDIS（Remote NDIS）技术，实际上就是TCP/IP over USB，就是在USB设备上跑TCP/IP，让USB设备看上去像一块网卡。
-
-# diff&patch
-
-diff/patch这对工具在数学上来说，diff是对2个集合求差，patch是求和。
-
-```bash
-diff -uNr A B > C #生成A和B的diff文件C,-uNr为最常用的选项
-patch A C #给A打上diff文件得到B
-patch -R B C #B还原为A
-```
-
-## 给目录应用patch。
-
-`patch -p1 <1.patch`
-
-这种情况适合1.patch中包含对多个文件的修改时。
-
-## 批量应用patch
-
-有的时候，patch不是一个patch文件，而是一个目录中的若干个patch文件。这时可用如下办法：
-
-`find . -name "*.patch">1.txt`
-
-`sort 1.txt | xargs cat >2.patch`
-
-`patch -p1 <2.patch`
-
-参考：
-
-https://mp.weixin.qq.com/s/VlQnDAD4dGQpmHNil7uPuQ
-
-如何在Linux上使用xargs命令
-
-https://mp.weixin.qq.com/s/HchAIWJmqPNTqEEwb3TbAg
-
-Linux下xargs命令
 
 # Ubuntu 22.04使用手记
 
