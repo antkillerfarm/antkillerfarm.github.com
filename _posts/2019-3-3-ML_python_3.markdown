@@ -343,6 +343,10 @@ https://pyflux.readthedocs.io/en/latest/index.html
 
 https://github.com/google/jax
 
+文档：
+
+https://jax.readthedocs.io/en/latest/
+
 参考：
 
 https://mp.weixin.qq.com/s/IMMdbF33ZHEz7N_XwgIhHA

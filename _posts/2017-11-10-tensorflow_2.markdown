@@ -27,284 +27,251 @@ http://www.cnblogs.com/lienhua34/p/5998853.html
 
 Tensorflow学习笔记2：About Session, Graph, Operation and Tensor
 
-# Fused Graph
+# 控制流
 
-Fused Graph是TensorFlow新推出的概念。这里仍以softmax运算为例，讲一下它的基本思想。
+## tf.cond
 
-上面的softmax运算计算图中，总共有4个operation。Fused Graph则将这4个op整合为1个op，发给运算单元。
+```python
+a=tf.constant(2)
+b=tf.constant(3)
+x=tf.constant(4)
+y=tf.constant(5)
+z = tf.multiply(a, b)
+result = tf.cond(x < y, lambda: tf.add(x, z), lambda: tf.square(y))
+with tf.Session() as session:
+    print(result.eval())
+```
 
-这样不同的硬件厂商就可以自行对这个整合的op进行解释。功能强的硬件，可能直接就支持softmax运算。功能弱的硬件也不怕，反正总归可以将softmax分解为基本运算的。
+## tf.case
 
-Qualcomm Hexagon平台的Fused Graph实现可参见：
+```python
+decode_png = lambda :tf.image.decode_png(image_tensor, channels)
+decode_jpg = lambda :tf.image.decode_jpeg(image_tensor, channels)
+decoder = { tf.equal(image_ext, '.png'):  decode_png,
+            tf.equal(image_ext, '.jpg'):  decode_jpg}
+image_tensor = tf.case(decoder, default = decode_png, exclusive = True)
+```
+# 多核(multicore)，多线程(multi-thread)
 
-tensorflow/core/kernels/hexagon
-
-![](/images/article/fused_graph_2.png)
-
-上图是另一个计算图优化的例子。
+在Tensorflow程序中，我们会经常看到”with tf.device("/cpu:0"): “ 这个语句。单独使用这个语句，而不做其他限制，实际上默认tensorflow程序占用所有可以使用的内存资源和CPU核。
 
 参考：
 
-https://developers.googleblog.com/2017/03/xla-tensorflow-compiled.html
+http://deepnlp.org/blog/tensorflow-parallelism/
 
-XLA - TensorFlow, compiled
+Tensorflow并行：多核(multicore)，多线程(multi-thread)
 
-# XLA
+# tf.data
 
-XLA(Accelerated Linear Algebra)是TensorFlow计算图的编译器。
+tf.data提供了一套构建灵活高效的输入流水线的API。
+
+![](/images/img2/datasets_without_pipelining.png)
+
+![](/images/img2/datasets_with_pipelining.png)
+
+上面两幅图中，第一幅图是没有使用流水线的情况，而第二幅图则是使用流水线的情况。
+
+参考：
+
+https://mp.weixin.qq.com/s/dfXTV4PFgC1Wbti42Zf4wQ
+
+tf.data API，让你轻松处理数据
+
+https://mp.weixin.qq.com/s/mjUnrPBPBuY6XKXkUymX-w
+
+实例介绍TensorFlow的输入流水线
+
+https://mp.weixin.qq.com/s/1ZlyVDJK6RWZ_1Ox7399IA
+
+用一行tf.data实现数据Shuffle、Batch划分、异步预加载等
+
+# Grappler
+
+Grappler是TensorFlow运行时中的默认计算图优化系统。
+
+https://www.tensorflow.org/guide/graph_optimization
+
+使用Grappler优化TensorFlow计算图
+
+# Eigen
+
+Eigen是一个线性代数方面的C++模板库。tensorflow和caffe2都使用了这个库。
 
 官网：
 
-https://www.tensorflow.org/xla?hl=zh-cn
+http://eigen.tuxfamily.org/
 
-基本架构：
+使用Eigen也比较简单，无须link，只要引用相关头文件即可。
 
-https://www.tensorflow.org/xla/architecture
+参见：
 
-![](/images/img4/XLA.png)
+https://zhuanlan.zhihu.com/p/26512099
 
-CSE(Common subexpression elimination)
+tensorflow和caffe2
 
-DCE(Dead code elimination)
+https://www.zhihu.com/question/28571059
 
-TFE(Tensorflow Eager)
+Eigen的速度为什么这么快？
 
-## 应用层
+# Eager Execution
 
-TF目前（v2.4.1）的默认编译选项中已经包含了XLA，但是默认不会启动。
-
-启动方法：
-
-- 手动启动
-
-设置环境变量：
-
-`TF_XLA_FLAGS="--tf_xla_enable_xla_devices"`
-
-手动指定需要XLA计算的op：
-
-```bash
-with tf.device("/device:XLA_CPU:0"):
-  ...
-```
-
-这种方法的缺点是：代码需要修改，且XLA不支持有些复杂的op。
-
-- 自动启动
-
-`TF_XLA_FLAGS="--tf_xla_auto_jit=2 --tf_xla_cpu_global_jit"`
-
-代码无需修改。
-
-## HLO
-
-XLA用HLO(High Level Optimizer)这种中间表示形式，表示正在被优化的计算图。
-
-三个概念，hlo module, computation, instruction。
-
-- hlo module用源码注释的解释，就是一个编译单元，相当于是一个完整可运行的程序。既然是一个程序，就有入口函数，也就是entry_computation，每个module都有且仅有一个entry_computation，相当于main函数，有输入和输出，输入可以是多个参数，但输出只有一个（root instruction的值），如果要返回多个值，需要把多个值构造成一个元组（tuple）返回。
-- 一个module可以包含多个computation，除了entry_computation，其他的都是"nested"，也就是被调用。
-- HLO instructions就是op了，对应了官网上列出的operation semantics，看注释已经解释的非常清楚了，op融合和向llvm ir转换都是在这个层面进行的。
-
-op的官方定义：
-
-https://tensorflow.google.cn/xla/operation_semantics
-
-HLO也可以有pass：`HloModulePass`
-
-```cpp
-HloPassPipeline pipeline("pass");
-pipeline.AddPass<XXXPass>();
-```
-
-HLO和TVM类似，计算图的遍历都是从所谓的root instruction，也就是输出Tensor开始的。但是实际的`HandleXXXX`的调用，却是从输入Tensor开始的，毕竟这个更符合一般人的思考习惯。想要做到这一点，也不难，采用`PostOrderDFS`即可。
+TensorFlow的Eager Execution可立即评估操作，无需构建图：操作会返回具体的值，而不是构建以后再运行的计算图。这也就是所谓的动态图计算的概念。
 
 参考：
 
-https://zhuanlan.zhihu.com/p/71980945
+https://mp.weixin.qq.com/s/Yp2zE85VCx8q67YXvuw5qw
 
-tensorflow xla hlo基本概念和pass pipeline
+TensorFlow引入了动态图机制Eager Execution
 
-## 从TF到HLO
+https://github.com/ZhuanZhiCode/TensorFlow-Eager-Execution-Examples
 
-一个op从上到下一般有这样几个步骤：
+Eager Execution的代码示例
 
-TF op -> XLA op -> HLO op
+https://github.com/madalinabuzau/tensorflow-eager-tutorials
 
-- TF op -> XLA op:
+TensorFlow的动态图工具Eager怎么用？这是一篇极简教程
 
-```text
-tensorflow/python/ops/nn_ops.py
-conv2d
-gen_nn_ops.conv2d
-_op_def_library._apply_op_helper("Conv2D")
+https://mp.weixin.qq.com/s/Lvd4NfLg0Lzivb4BingV7w
+
+Tensorflow Eager Execution入门指南
+
+https://github.com/snowkylin/TensorFlow-cn
+
+简单粗暴TensorFlow Eager教程
+
+https://github.com/snowkylin/tensorflow-handbook
+
+简单粗暴TensorFlow 2.0
+
+https://mp.weixin.qq.com/s/zz8XCykJ6jxbE5J4YwAkEA
+
+一招教你使用tf.keras和eager execution解决复杂问题
+
+# Tensorflow 2.x
+
+![](/images/img3/TF.png)
+
+![](/images/img3/TF_2.png)
+
+```python
+import tensorflow
+main_version = tensorflow.__version__.split('.')[0]
+if int(main_version) == 2:
+    import tensorflow.compat.v1 as tf
+    tf.compat.v1.disable_v2_behavior()
+    import tensorflow.compat.v1.lite as tflite
+else:
+    import tensorflow as tf
+    import tensorflow.contrib.lite as tflite
 ```
 
-- XLA op -> HLO op:
+https://mp.weixin.qq.com/s/BD-nJSZJLjBBq1n7HEHpKw
 
-```text
-tensorflow/compiler/tf2xla/kernels/conv_ops.cc
-REGISTER_XLA_OP(Name("Conv2D"), Conv2DOp);
-ConvOp::Compile
-MakeXlaForwardConvOp
-HandleConcatenate
-```
+将您的代码升级至TensorFlow 2.0
 
-## 底层实现
+https://mp.weixin.qq.com/s/xgsUF97aI1YfGSdh0FJ6Cw
 
-XLA支持两种接入模式：
+都在关心TensorFlow 2.0，那我手里基于1.x构建的程序怎么办？
 
-- JIT。compiler/jit/
+https://mp.weixin.qq.com/s/s8hAYadCw9-_BpWSCh38gg
 
-- AOT。compiler/aot/
+TensorFlow 2.0：数据读取与使用方式
 
-将整个计算图用_XlaCompile & _XlaRun替换。
+https://mp.weixin.qq.com/s/rVSC1AXj9YECjUrl5PkSGw
 
-compiler/tf2xla/ -> compiler/xla/client/ -> compiler/xla/service/
+详解深度强化学习展现TensorFlow 2.0新特性
 
-最终的计算由service负责实现。
+https://mp.weixin.qq.com/s/8D8kxFSfruwWhU2jmYL3sg
 
-- `compiler/aot/`
+Google大佬Josh Gordon发布Tensorflow 2.0入门教程
 
-以AOT的方式将tf2xla/接入TF引擎。
+https://cloud.tencent.com/developer/article/1498043
 
-- `compiler/jit/`
+有了TensorFlow2.0，我手里的1.x程序怎么办？
 
-以JIT的方式将tf2xla/接入TF引擎， 核心是9个优化器和3个tfop，其中XlaCompileOp调用tf2xla的“编译”入口完成功能封装，XlaRunOp调用xla/client完成“运行”功能。
+https://mp.weixin.qq.com/s/ddHKc5AffznRaEY_qhHN_g
 
-- `compiler/tf2xla/`
+升级到tensorflow2.0，我整个人都不好了
 
-对上提供xla_compiler.cc:XlaCompiler::CompileFunction()供jit:compile_fn()使用将cluster转化为XlaComputation。核心是利用xla/client提供的接口，实现对XlaOpKernel的“Symbolic Execution”功能。每个XlaOpKernel子类均做的以下工作: **从XlaOpKernelContext中取出XlaExpression或XlaOp，调用xla/client/xla_buidler.h提供的方法完成计算，将计算结果的XlaOp存入XlaKernelContext。**
+https://mp.weixin.qq.com/s/RcolwQnCqrAsGaKEK0oo_A
 
-- `compiler/xla/client/`
+TensorFlow 2.0中的tf.keras和Keras有何区别？为什么以后一定要用tf.keras？
 
-对上提供xla_builder.cc:Builder等供CompileFunction()使用，将Graph由Op表达转化为HloModuleProto:HloComputationProto:HloInstructionProto表达并保存在XlaComputation中。
+https://mp.weixin.qq.com/s/BI2BjAJGXzRk4k9d99PgLQ
 
-对上提供local_client.cc:LocalClient::Compile()，作为编译入口供jit：BuildExecutable()使用，将已经得到的XlaComputation交给service并进一步编译为二进制。
+tensorflow2.4性能调优最佳实践
 
-对上提供local_client.cc:LocalExecutable::Run()，作为运行入口供jit/kernels/xla_ops.cc:XlaRunOp使用，通过Key找到相应的二进制交给service层处理。
-
-- `compiler/xla/service/`
-
-对上提供local_service.cc:LocalService::BuildExecutable()供LocalClient::Compile()使用实现真正的编译，承接XlaComputation封装的HloProto，将其转化为HloModule:HloComputation:HloInstruction表达，对其进行优化之后，使用LLVM后端将其编译为相应Executable后端的二进制代码。
-
-对上提供executable.cc:Executable::ExecuteOnStream()供LocalExecutable::Run()使用实现真正的执行二进制。
-
-## backward
-
-tensorflow/core/ops/nn_grad.cc:
-
-```cpp
-REGISTER_OP_GRADIENT("BiasAdd", BiasAddGrad);
-```
-
-tensorflow/compiler/tf2xla/g3doc/gpu_supported_ops.md
-
-```cpp
-CanonicalizeBackwardFilterConvolution
-Conv2DBackpropFilter
-GetKnownXLAWhitelistOp
-XlaOpRegistry::GetAllRegisteredOps
-REGISTER_XLA_OP
-HloInstruction::Visit
-class ConvBackpropFilterOp : public XlaOpKernel
-MakeXlaBackpropFilterConvOp
-ConvGeneralDilated
-```
-
-https://discuss.tvm.apache.org/t/rfc-mlir-frontend/6473
-
-## backend
-
-官方backend：
-
-tensorflow/compiler/xla/service
-
-第三方的XLA backend接入：
-
-tensorflow/compiler/plugin
-
-第三方的XLA backend中，比较出名的是graphcore。
-
-它的TF实现：
-
-https://github.com/graphcore/tensorflow/tensorflow/compiler/plugin/poplar
-
-XLA的主要目的是方便硬件厂商更好的适配tensorflow。因此，作为XLA基础的HLO，其op数非常少，仅有不到100个。用户只要实现了这些op，就可以接入tf了——其他不支持的tf op，都被分解为简单的HLO op。
-
-```cpp
-HloTransposeInstruction
-HandleTranspose
-```
-
-HLO op的弊端是颗粒度太细，导致执行效率不高。因此，XLA还提供了高级op的注册功能，主要是用`xla::CustomCall`来实现。
-
-```cpp
-MaxPool2DGradOp
-REGISTER_XLA_OP(Name("MaxPoolGrad").Device(DEVICE_IPU_XLA_JIT),
-                MaxPool2DGradOp);
-xla::CustomCall(&b, PoplarOp_Name(PoplarOp::MaxPoolGrad), args,
-                          input_shape, attribute_map_.Serialise());
-```
-
-model test:
-
-tensorflow/compiler/plugin/poplar/docs/example_tf2_model_fit.py
-
-## 混合backend
-
-XLA支持混合多backend的运行，可用`tf.debugging.set_log_device_placement(True)`查看相关的设备指派信息。
-
-设备指派主要由Placer模块负责：
-
-https://www.cnblogs.com/deep-learning-stacks/p/9823486.html
-
-TensorFlow中的Placement启发式算法模块——Placer
-
-## backend优先级
-
-`REGISTER_LOCAL_DEVICE_FACTORY(DEVICE_XLA_XXX_NPU, XlaXXXNpuDeviceFactory, 500);`
-
-CPU的优先级是50，添加的backend的优先级只要大于50，就可以得到调度权。
-
-## unit test
-
-写好的backend需要测试，同时Unit Test也是编写一个backend的入门级入口。
-
-```bash
-bazel build -c dbg tensorflow/compiler/xla/tests:convolution_variants_test
-./bazel-bin/tensorflow/compiler/xla/tests/convolution_variants_test_cpu --gtest_filter=*BackwardInputLowPaddingLessThanHighPadding*
-```
-
-## 参考
-
-https://mp.weixin.qq.com/s/RO3FrPxhK2GEoDCGE9DXrw
-
-利用XLA将GPU性能推向极限
-
-https://mp.weixin.qq.com/s/MPI9KERDS-Al4DTBDRV04w
-
-TensorFlow XLA工作原理简介
-
-https://sketch2sky.com/
-
-一个XLA方面的blog
-
-https://tensorflow.juejin.im/performance/xla/jit.html
-
-使用即时编译
-
-https://blog.slinuxer.com/2019/06/tensorflow-xla
-
-TensorFlow XLA初步接触
-
-https://github.com/horance-liu/tensorflow-internals
-
-电子书《TensorFlow Internals》
-
-# TensorFlow Addons
+## TensorFlow Addons
 
 TensorFlow SIG Addons是包含社区贡献的代码库，也就是1.x时代的contrib文件夹内的内容。一般用`tfa`作为包前缀。
+
+# cross-compile
+
+TF的交叉编译不是不好用，而是非常不好用。。。这一点其实Google内部也心知肚明。但凡能不用bazel的地方，其实Google也不想用，比如TF Lite就提供了CMake的编译选项。
+
+但TF由于是个跨语言的项目（至少包含了Python和C++），所以Bazel还是有一定的优势的。
+
+网上关于TF交叉编译的文章不多，写的比较好的主要有：
+
+https://www.morethantechnical.com/2018/03/08/cross-compile-latest-tensorflow-1-5-for-the-nvidia-jetson-tk1/
+
+Cross-compile latest Tensorflow (1.5+) for the Nvidia Jetson TK1
+
+然而这个已经有点年头了，并不适合新版本的bazel。
+
+其实目前官方代码库中，已经有一些交叉编译的例子了。比如raspberry pi的：
+
+`./tensorflow/tools/ci_build/pi/build_raspberry_pi.sh AARCH64`
+
+TF也有一个repo用于放置工具链相关的内容：
+
+https://github.com/tensorflow/toolchains.git
+
+我这里是参考`toolchains/cpus/arm/cc_config.bzl.tpl`来编写适合自己的脚本。
+
+目前可行的编译选项如下：
+
+```bash
+bazel build --crosstool_top=//cross_compiler:toolchain --cpu=aarch64 --host_crosstool_top=@bazel_tools//tools/cpp:toolchain --distinct_host_configuration=true --config=opt //tensorflow/tools/pip_package:build_pip_package
+```
+
+相关选项的含义如下：
+
+`--crosstool_top`：指定交叉编译的工具链。
+
+`--host_crosstool_top`：有些项目实际上需要编译Host版本，比如flatbuffers。这些项目的bazel文件中，往往能找到类似`cfg = "host"`的选项。因此，这里还需要指定Host的工具链。当然Host的工具链一般都是系统自带的，也许并不需要特殊指定，这时可以使用`@bazel_tools//tools/cpp:toolchain`这样的默认设置。
+
+`--distinct_host_configuration=true`：即使配置好Host的工具链，也不代表项目会被按照Host编译。这时就需要打开这个开关了。
+
+最后是打包wheel的环节：
+
+虽然打包出来的wheel文件名字叫做`tensorflow-2.7.0-cp39-cp39-linux_x86_64.whl`，但是不要紧，相关的cross-compile的内容已经在里面了，只需要将之改名字为`tensorflow-2.7.0-cp39-none-linux_aarch64.whl`即可。
+
+---
+
+以下是一些趟坑的细节：
+
+一般来说，标准库的头文件是不需要加入项目的依赖的，如果bazel报这方面的问题，设置一下`cxx_builtin_include_directories`即可。
+
+`__float128`只存在于X86体系下。如果报错，多半是工具链没有设置到`aarch64`的头文件路径下。
+
+编译python包的话，还需要相应平台提供python-dev的环境，不然这些也要自己搞定。
+
+---
+
+参考：
+
+https://bazel.build/tutorials/cc-toolchain-config
+
+Bazel Tutorial: Configure C++ Toolchains
+
+https://github.com/bazelbuild/bazel/issues/1353
+
+Using bazel to cross-compile tensorflow for other targets.
+
+https://www.cnblogs.com/jojodru/p/7744630.html
+
+在Ubuntu 16.04上使用bazel交叉编译tensorflow
 
 # TensorFlow高层封装
 
@@ -365,3 +332,33 @@ http://geek.csdn.net/news/detail/126133
 tf-slim-mnist例子中mnist数据不是原始格式的，而是经过了`datasets/download_and_convert_mnist.py`的转换。
 
 该示例执行时也没有控制台的输出信息，一度让我觉得很不方便。后来才发现，原来可以用TensorBoard查看log文件夹。
+
+# Estimator
+
+![](/images/img2/tensorflow_programming_environment.png)
+
+Estimator是一个非常高级的API，其抽象等级甚至在Keras之上。
+
+Estimator主要包括以下部分：
+
+1.初始化。定义网络结构。
+
+2.train。
+
+3.evaluate。
+
+4.predict。
+
+TensorFlow已经包含了一些预置的Estimator。例如：BoostedTreesClassifier、DNNClassifier、LinearClassifier等。具体可参见：
+
+https://tensorflow.google.cn/api_docs/python/tf/estimator
+
+参考：
+
+https://mp.weixin.qq.com/s/a68brFJthczgwiFoUBh30A
+
+TensorFlow数据集和估算器介绍
+
+https://mp.weixin.qq.com/s/zpEVU1E5DfElAnFqHCqHOw
+
+训练效率低？GPU利用率上不去？快来看看别人家的tricks吧～

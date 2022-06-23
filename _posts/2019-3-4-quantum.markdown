@@ -11,6 +11,8 @@ category: resource
 
 ![](/images/img4/Quantum.png)
 
+![](/images/img4/quant.jpg)
+
 https://www.zhihu.com/people/xuan-xing-29/posts
 
 某量子通信牛人的blog

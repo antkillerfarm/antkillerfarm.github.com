@@ -7,7 +7,195 @@ category: AI
 * toc
 {:toc}
 
-# op Backprop（续）
+# Debug/Profiling
+
+## VS Code + gdb
+
+- 设置python
+
+Setting中搜索`python path`，设置路径类似于：`/anaconda3/envs/mlbook/bin/python`
+
+打开python文件，在状态栏有python版本的提示，点击该提示，可以切换不同的python版本。
+
+- gdb调试
+
+Tensorflow App，一般是从python开始的，因此需要掌握python+C的混合调试方法。
+
+在所有模块import之后（否则后面的gdb加载不到相关的符号），添加如下语句：
+
+`input("pid: " + str(os.getpid()) +", press enter after attached")`
+
+启动gdb，使用attach命令，attach到相关的进程。设置断点，然后continue即可。
+
+参考：
+
+https://sketch2sky.com/2019/08/25/tensorflow-debugtrick/
+
+Tensorflow XLA Debug/Profiling Methods
+
+https://www.cnblogs.com/djzny/p/4956752.html
+
+gdb命令中attach使用
+
+- vscode调试
+
+vscode调试同样需要两段式的方法：
+
+https://nadiah.org/2020/03/01/example-debug-mixed-python-c-in-visual-studio-code/
+
+Example debugging mixed Python C++ in VS Code
+
+相关配置文件参见：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/vscode/launch.json
+
+## 打印stack trace
+
+C++：
+```cpp
+#include "tensorflow/core/platform/stacktrace.h"
+tensorflow::CurrentStackTrace()
+```
+
+Python：`tf.debugging.disable_traceback_filtering()`
+
+## profiling
+
+`pip install -U tensorboard-plugin-profile`
+
+```python
+from tensorflow.profiler.experimental import Profile
+
+with Profile('/logdir_path'):
+    # do sth
+```
+
+## Log
+
+TF里有两套Log系统：`LOG`和`VLOG`。
+
+`LOG`由`TF_CPP_MIN_LOG_LEVEL`控制，值越小，信息越多。
+
+`VLOG`都是INFO级别的Log，因此，`TF_CPP_MIN_LOG_LEVEL`必须为0。此外，`VLOG`本身亦有不同等级，可使用`TF_CPP_MIN_VLOG_LEVEL`控制，值越大，信息越多。
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/140343833
+
+tensorflow profiling工具简介——tensorflow原生工具
+
+https://www.tensorflow.org/tensorboard/tensorboard_profiling_keras
+
+TensorBoard性能分析:在Keras中对基本训练指标进行性能分析
+
+https://github.com/tensorflow/benchmarks
+
+TensorFlow benchmarks
+
+https://blog.csdn.net/zkbaba/article/details/106178542
+
+TensorFlow性能分析工具—TensorFlow Profiler
+
+# TensorBoard
+
+TensorBoard是一个http服务，用以监控TensorFlow的执行。
+
+`writer = tf.summary.FileWriter("logs/", sess.graph)`
+
+然后
+
+`tensorboard --logdir='logs/'`
+
+启动之后，用浏览器打开`http://localhost:6006`即可。
+
+TensorBoard会将同类结点Group，但Group之后，有时反而不易观察具体的结构。这个时候最好Ungroup一下。
+
+参考：
+
+http://blog.csdn.net/u013082989/article/details/53510625
+
+TensorFlow学习_01_安装_基本操作_可视化结构、过程_Mnist
+
+https://blog.csdn.net/sinat_33761963/article/details/62433234
+
+Tensorflow的可视化工具Tensorboard的初步使用
+
+https://mp.weixin.qq.com/s/Zaz9hmTuUbd-hCx-zHhBgg
+
+TensorBoard：可视化学习
+
+https://mp.weixin.qq.com/s/Kc-DqiuG2kn0NlVxkcNa4w
+
+TensorBoard直方图信息中心
+
+https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247515390&idx=2&sn=ebf548bac3c7db9b0174265666c67d0c
+
+tensorboard学习笔记
+
+https://mp.weixin.qq.com/s/JRa0tgXtGdzaj0UnYcmZ3Q
+
+tensorboard指南
+
+https://mp.weixin.qq.com/s/BAR-UM3rTveYrKa4kiJvcQ
+
+使用TensorBoard进行超参数优化
+
+https://mp.weixin.qq.com/s/5zfKiP9Fxpl7suqBQILL-g
+
+还在用Tensorboard？机器学习实验管理平台大盘点
+
+https://mp.weixin.qq.com/s/8scMr0jcW87y6k_wFgOBEg
+
+使用Tensorboard投影进行高维向量的可视化
+
+# op Backprop
+
+## compute_gradients & apply_gradients
+
+由源代码可以知道`optimizer.minimize`实际上包含了两个步骤，即`compute_gradients`和`apply_gradients`，前者用于计算梯度，后者用于使用计算得到的梯度来更新对应的variable。
+
+如果想要部分更新某个Variable的话，可用如下步骤：
+
+1.生成需要更新的元素的mask tensor。1代表要更新，0代表不更新。
+
+2.`compute_gradients`得到grad tensor。
+
+3.`grad = grad * mask`
+
+4.`apply_gradients`。
+
+通常来说，如果一个计算图中没有optimizer，则一般只包含forward运算，而没有backward运算。
+
+## Add
+
+```cpp
+//forward
+REGISTER3(BinaryOp, GPU, "AddV2", functor::add, float, Eigen::half, double);
+tensorflow/core/kernels/cwise_ops_common.h: BinaryOp
+
+//backward
+tensorflow/python/ops/math_grad.py:
+@ops.RegisterGradient("AddV2")
+def _AddGrad(op, grad):
+tensorflow/core/ops/math_grad.cc:
+REGISTER_OP_GRADIENT("AddV2", AddGrad);
+
+//RegisterGradient
+tensorflow/python/framework/ops.py:
+class RegisterGradient(object):
+```
+
+Gradient有两种处理方式：（tensorflow/python/ops/gradients_util.py: _GradientsHelper）
+
+- 有RegisterGradient的op，直接调用注册的函数。
+
+- 没有的，调用SymbolicGradient。
+
+参考：
+
+https://www.zhihu.com/question/56443480
+
+TensorFlow的自动求导具体是在哪部分代码里实现的？
 
 ## Conv
 
@@ -105,124 +293,6 @@ https://mp.weixin.qq.com/s/6QKyE3jIOwBK_2rcG-Vtiw
 
 联邦机器学习-概念与应用
 
-# Hama
-
-TensorFlow实际上是Google开发的第二代DL框架。在它之前，Google内部还有一个叫做DistBelief的框架。这个框架没有开源，但是有论文发表。因此，就有了一个叫做Apache Hama的项目，作为它的开源实现。
-
-官网：
-
-https://hama.apache.org/
-
-这个项目采用了一种叫做Bulk Synchronous Parallel的并行计算模型。
-
-# Tensorflow 2.x
-
-![](/images/img3/TF.png)
-
-![](/images/img3/TF_2.png)
-
-```python
-import tensorflow
-main_version = tensorflow.__version__.split('.')[0]
-if int(main_version) == 2:
-    import tensorflow.compat.v1 as tf
-    tf.compat.v1.disable_v2_behavior()
-    import tensorflow.compat.v1.lite as tflite
-else:
-    import tensorflow as tf
-    import tensorflow.contrib.lite as tflite
-```
-
-https://mp.weixin.qq.com/s/BD-nJSZJLjBBq1n7HEHpKw
-
-将您的代码升级至TensorFlow 2.0
-
-https://mp.weixin.qq.com/s/xgsUF97aI1YfGSdh0FJ6Cw
-
-都在关心TensorFlow 2.0，那我手里基于1.x构建的程序怎么办？
-
-https://mp.weixin.qq.com/s/s8hAYadCw9-_BpWSCh38gg
-
-TensorFlow 2.0：数据读取与使用方式
-
-https://mp.weixin.qq.com/s/rVSC1AXj9YECjUrl5PkSGw
-
-详解深度强化学习展现TensorFlow 2.0新特性
-
-https://mp.weixin.qq.com/s/8D8kxFSfruwWhU2jmYL3sg
-
-Google大佬Josh Gordon发布Tensorflow 2.0入门教程
-
-https://cloud.tencent.com/developer/article/1498043
-
-有了TensorFlow2.0，我手里的1.x程序怎么办？
-
-https://mp.weixin.qq.com/s/ddHKc5AffznRaEY_qhHN_g
-
-升级到tensorflow2.0，我整个人都不好了
-
-https://mp.weixin.qq.com/s/RcolwQnCqrAsGaKEK0oo_A
-
-TensorFlow 2.0中的tf.keras和Keras有何区别？为什么以后一定要用tf.keras？
-
-https://mp.weixin.qq.com/s/BI2BjAJGXzRk4k9d99PgLQ
-
-tensorflow2.4性能调优最佳实践
-
-# 细节
-
-执行`session.run(out)`，会在终端打印out的值，但执行`res = session.run(out)`则不会。
-
-此外，`session.run`可以接受list作为参数。返回值也是一个list，分别对应输入list的每个元素的计算结果。
-
----
-
-tensorflow的程序中,在main函数下,都是使用tf.app.run()来启动。查看源码可知,该函数是用来处理flag解析，然后执行main函数。
-
-https://blog.csdn.net/lujiandong1/article/details/53262612
-
-tensorflow中的tf.app.run()
-
----
-
-TF提供了一套专门的IO函数：tf.gfile。主要优点在于：对于写文件来说，open操作直到真的需要写的时候才执行。
-
----
-
-迁移学习的时候，有的时候需要保持某几层的权值，在后续训练中不被改变。这时，可以在创建Variable时，令trainable=false。
-
----
-
-sparse_softmax_cross_entropy_with_logits和softmax_cross_entropy_with_logits的区别在于：后者的label是一个one hot的tensor，而前者label直接用对应分类的index表示就行了。
-
----
-
-CNN中的padding：
-
-"SAME" = with zero padding。
-
-"VALID" = without padding。
-
----
-
-op的自定义实现可使用`tf.py_func`。
-
----
-
-tf.dtypes.cast: 类型转换
-
----
-
-Keras对大部分权重矩阵都采用了标准的Glorot uniform初始化，对GRU的recurrent weight采用了正交初始化，对所有偏置都采用了零初始化；而PyTorch对所有参数都一律采用了uniform初始化，但范围与Glorot不同。
-
-https://www.zhihu.com/question/268494717
-
-同一个模型用theano，tf，pytorch实现，performance可能差距较大吗？
-
----
-
-`CUDA_VISIBLE_DEVICES`用于指定使用的显卡，因此`CUDA_VISIBLE_DEVICES=0`表示使用0号显卡。如果打算使用CPU的话，需要`CUDA_VISIBLE_DEVICES=`。
-
 # TFRecord
 
 TFRecord是TensorFlow官方定义的存放样本数据文件。
@@ -301,78 +371,3 @@ https://mp.weixin.qq.com/s/2cbd7LBPBRqGt-QO1A7SfQ
 https://mp.weixin.qq.com/s/7CjLP5SYpQ-hoC1jwxT1vQ
 
 TensorFlow Probability中的联合分布变分推断
-
-# Debug/Profiling
-
-## VS Code + gdb
-
-- 设置python
-
-Setting中搜索`python path`，设置路径类似于：`/anaconda3/envs/mlbook/bin/python`
-
-打开python文件，在状态栏有python版本的提示，点击该提示，可以切换不同的python版本。
-
-- gdb调试
-
-Tensorflow App，一般是从python开始的，因此需要掌握python+C的混合调试方法。
-
-在所有模块import之后（否则后面的gdb加载不到相关的符号），添加如下语句：
-
-`input("pid: " + str(os.getpid()) +", press enter after attached")`
-
-启动gdb，使用attach命令，attach到相关的进程。设置断点，然后continue即可。
-
-参考：
-
-https://sketch2sky.com/2019/08/25/tensorflow-debugtrick/
-
-Tensorflow XLA Debug/Profiling Methods
-
-https://www.cnblogs.com/djzny/p/4956752.html
-
-gdb命令中attach使用
-
-- vscode调试
-
-vscode调试同样需要两段式的方法：
-
-https://nadiah.org/2020/03/01/example-debug-mixed-python-c-in-visual-studio-code/
-
-Example debugging mixed Python C++ in VS Code
-
-相关配置文件参见：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/vscode/launch.json
-
-## 打印stack trace
-
-tensorflow::CurrentStackTrace()
-
-## profiling
-
-`pip install -U tensorboard-plugin-profile`
-
-```python
-from tensorflow.profiler.experimental import Profile
-
-with Profile('/logdir_path'):
-    # do sth
-```
-
-参考：
-
-https://zhuanlan.zhihu.com/p/140343833
-
-tensorflow profiling工具简介——tensorflow原生工具
-
-https://www.tensorflow.org/tensorboard/tensorboard_profiling_keras
-
-TensorBoard性能分析:在Keras中对基本训练指标进行性能分析
-
-https://github.com/tensorflow/benchmarks
-
-TensorFlow benchmarks
-
-https://blog.csdn.net/zkbaba/article/details/106178542
-
-TensorFlow性能分析工具—TensorFlow Profiler

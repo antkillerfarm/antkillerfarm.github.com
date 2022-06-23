@@ -7,6 +7,16 @@ category: AI
 * toc
 {:toc}
 
+# Hama
+
+TensorFlow实际上是Google开发的第二代DL框架。在它之前，Google内部还有一个叫做DistBelief的框架。这个框架没有开源，但是有论文发表。因此，就有了一个叫做Apache Hama的项目，作为它的开源实现。
+
+官网：
+
+https://hama.apache.org/
+
+这个项目采用了一种叫做Bulk Synchronous Parallel的并行计算模型。
+
 # 模型文件
 
 tensorflow model包含2个文件：
@@ -334,52 +344,3 @@ tensorflow/core/ops
 tensorflow/contrib/lite/kernels/internal/reference/reference_ops.h
 
 注册一个tfop分为两部分:Op和OpKernel。其中，Op是tfop的声明部分，类似于函数的声明，主要描述Op静态属性。OpKernel是tfop的实现部分，同样类似于函数的实现，主要描述OpKernel的具体计算逻辑。
-
-# op Backprop
-
-## compute_gradients & apply_gradients
-
-由源代码可以知道`optimizer.minimize`实际上包含了两个步骤，即`compute_gradients`和`apply_gradients`，前者用于计算梯度，后者用于使用计算得到的梯度来更新对应的variable。
-
-如果想要部分更新某个Variable的话，可用如下步骤：
-
-1.生成需要更新的元素的mask tensor。1代表要更新，0代表不更新。
-
-2.`compute_gradients`得到grad tensor。
-
-3.`grad = grad * mask`
-
-4.`apply_gradients`。
-
-通常来说，如果一个计算图中没有optimizer，则一般只包含forward运算，而没有backward运算。
-
-## Add
-
-```cpp
-//forward
-REGISTER3(BinaryOp, GPU, "AddV2", functor::add, float, Eigen::half, double);
-tensorflow/core/kernels/cwise_ops_common.h: BinaryOp
-
-//backward
-tensorflow/python/ops/math_grad.py:
-@ops.RegisterGradient("AddV2")
-def _AddGrad(op, grad):
-tensorflow/core/ops/math_grad.cc:
-REGISTER_OP_GRADIENT("AddV2", AddGrad);
-
-//RegisterGradient
-tensorflow/python/framework/ops.py:
-class RegisterGradient(object):
-```
-
-Gradient有两种处理方式：（tensorflow/python/ops/gradients_util.py: _GradientsHelper）
-
-- 有RegisterGradient的op，直接调用注册的函数。
-
-- 没有的，调用SymbolicGradient。
-
-参考：
-
-https://www.zhihu.com/question/56443480
-
-TensorFlow的自动求导具体是在哪部分代码里实现的？

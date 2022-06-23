@@ -203,6 +203,20 @@ https://mp.weixin.qq.com/s/mEUhBnEuGxbU6_wALt0crw
 
 # 计算机图形学
 
+## 教程
+
+Fundamentals Of Computer Graphics。中文常称为“虎书”。
+
+Physically Based Rendering: From Theory to Implemention
+
+Ray Tracing in One Weekend
+
+Ray Tracing The Next Week
+
+Ray Tracing The Rest Of Your Life
+
+## 参考
+
 https://mp.weixin.qq.com/s/hI9Z3l2eVJxkPbL8zG5uGA
 
 图形学基础，427页pdf
