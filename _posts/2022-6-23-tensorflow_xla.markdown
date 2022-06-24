@@ -264,6 +264,8 @@ if (op_registration->allow_string_type) {
 
 这个技巧是有实际意义的，比如某个数据类型如果只用在个别op上的话，给大多数op做减法，就不如给这几个个别的op做加法了。
 
+在`REGISTER_XLA_BACKEND`之外，还有诸如`REGISTER_XLA_DEVICE_KERNELS`之类的宏，他们使用类型集合的**全集**就好。只有`REGISTER_XLA_BACKEND`需要做加法，也只有这个宏会影响Placer的行为，其他宏都和Placer无关。
+
 ## system op
 
 除了运算和控制流的op之外，tf中还存在相当数量的用于执行框架功能的system op。
