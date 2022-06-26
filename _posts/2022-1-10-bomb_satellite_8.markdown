@@ -133,6 +133,16 @@ https://www.zhihu.com/question/276351428
 
 ---
 
+其实，早在上世纪70年代末，中科院理化所冉启泽团队就开发出了湿式稀释制冷机，实现了34mK的极低温，甚至还将设备出口到美国，但当时为了创汇，卖到美国的稀释制冷机极为廉价，仅约5000美金。
+
+随着那一批研究团队成员的退休与离世，稀释制冷机的技术也逐渐“失传”。
+
+https://mp.weixin.qq.com/s/WQWJMaTFUrggWRWuOoM8bw
+
+零下273.14度稳定运行！中科院自主研发稀释制冷机
+
+---
+
 ![](/images/img3/top10.png)
 
 ![](/images/img4/manufact.jpg)
@@ -182,15 +192,3 @@ https://mp.weixin.qq.com/s/wcDiuHjtGgWjWdLRtJTpTg
 https://mp.weixin.qq.com/s/IQPiGqqad4YajaCu9bQhJw
 
 美国一再拒绝两个中国人的回国申请，有人道破天机：你们是重大威胁（王承书、张文裕）
-
-https://mp.weixin.qq.com/s/Ar-67u7UbPz5z2odN1YeQQ
-
-从被列强剥削，到成为发达国家“粉碎机”：中国付出了多少代价？
-
-https://mp.weixin.qq.com/s/IQPiGqqad4YajaCu9bQhJw
-
-美国一再拒绝两个中国人的回国申请，有人道破天机：你们是重大威胁（王承书、张文裕）
-
-https://mp.weixin.qq.com/s/CTpwRV9BJ6JW2BOtVC7uMg
-
-她是清华第一位女教授，被称为中国的“居里夫人”，却在62岁高龄被打入大牢...（王明贞）

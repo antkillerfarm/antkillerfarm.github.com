@@ -59,6 +59,18 @@ https://mp.weixin.qq.com/s/qgp97solB7pZauOnlH62wg
 
 # 两弹一星+
 
+https://mp.weixin.qq.com/s/Ar-67u7UbPz5z2odN1YeQQ
+
+从被列强剥削，到成为发达国家“粉碎机”：中国付出了多少代价？
+
+https://mp.weixin.qq.com/s/IQPiGqqad4YajaCu9bQhJw
+
+美国一再拒绝两个中国人的回国申请，有人道破天机：你们是重大威胁（王承书、张文裕）
+
+https://mp.weixin.qq.com/s/CTpwRV9BJ6JW2BOtVC7uMg
+
+她是清华第一位女教授，被称为中国的“居里夫人”，却在62岁高龄被打入大牢...（王明贞）
+
 https://mp.weixin.qq.com/s/ajfoQAH-WSZ_OYIRK8uGAQ
 
 被遗忘的中国生命科学之父（林可胜）
