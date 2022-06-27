@@ -43,6 +43,14 @@ category: language
 
 3）显式调用时,要注意动态库函数的声明,可能要加`extern "C"`才能正常执行。（显式调用是运行时加载，所以编译能过，执行却不对了。）可以用nm命令看看链接库的符号表，以确定问题所在。
 
+---
+
+so最大的麻烦来自于，它的链接是顺序相关的。比如一个可执行文件，如果依赖于a.so和b.so，而a.so又依赖于b.so，那么链接的时候就要写`-Wl a.so b.so`。如果写反了，就会找不到符号。
+
+https://www.zhihu.com/question/320400918
+
+动态库是像Windows那样两个文件(.lib/.dll)好，还是Linux那样合二为一(.so)好？
+
 # strtok
 
 strtok函数多用于分割字符串，但它会改变被分割字符串的值。因此，如果该字符串以后还有用的话，需要首先复制该字符串，然后对复制的字符串执行strtok函数。
@@ -278,23 +286,3 @@ int main(){
 https://www.cnblogs.com/npbool/p/3433360.html
 
 C++11初探：类型推导，auto和decltype
-
-# 类型转换
-
-**static_cast**：基本等同于C语言的强制类型转换，只有很小的差异。
-
-**dynamic_cast**：主要用于类层次间的上行转换和下行转换。
-
-**const_cast**：用于修改类型的const或volatile属性。
-
-**reinterpret_cast**：它可以把一个指针转换成一个整数，也可以把一个整数转换成一个指针。
-
-上面4个算是C++的基本类型变换。除此之外还有一些变种。
-
-- 和shared_ptr配套的类型变换：
-
-**static_pointer_cast**：Static cast of shared_ptr
-
-**dynamic_pointer_cast**：Dynamic cast of shared_ptr
-
-**const_pointer_cast**：Const cast of shared_ptr

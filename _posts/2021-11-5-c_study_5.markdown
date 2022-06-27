@@ -118,6 +118,20 @@ https://blog.csdn.net/qq_38231713/category_10001159.html
 
 一个C++11并发与多线程的专栏
 
+## K&R风格
+
+在C语言的函数定义上，我们通常用的函数定义方式为ANSI C的函数定义方式。但是在C语言之父创立C语言之时，函数的定义形式并非现在我们所见到的形式。
+
+这种风格被称为K&R风格，多见于一些历史悠久的项目或者老的书籍中。出于兼容性考虑，现代的C编译器仍然支持K&R风格。
+
+>记得大学学C语言，用的是谭浩强的书。当时，授课老师看不上谭的书，于是另外推荐了一本，那本书更古老，用的就是所谓的K&R风格。。。但在实际工作中，从来没见过K&R风格的代码。。。
+
+详见：
+
+http://blog.chinaunix.net/uid-7426920-id-2627743.html
+
+ANSI和K&R两种函数定义风格
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/23016264
@@ -199,6 +213,10 @@ https://www.zhihu.com/question/280665935
 https://www.zhihu.com/question/485183321
 
 一个接口只有一个实现类，写接口的意义是什么？只写类不写接口不是更简单且清晰吗？
+
+https://www.zhihu.com/question/36642771
+
+C++的string为什么不提供split函数？
 
 # C++ Test framework
 

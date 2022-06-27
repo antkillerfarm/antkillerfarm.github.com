@@ -115,6 +115,10 @@ Memory consistency model
 
 Multisample anti-aliasing，MSAA
 
+## 模拟器
+
+计算机系统架构模拟器gem5。
+
 ## 参考
 
 https://blog.csdn.net/do2jiang/article/details/4545889
