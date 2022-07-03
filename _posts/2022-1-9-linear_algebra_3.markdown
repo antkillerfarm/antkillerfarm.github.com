@@ -108,6 +108,12 @@ https://mp.weixin.qq.com/s/R54brOW-TBD3UGJUwE2QOg
 
 SVD加速：rSVD
 
+## 矩阵的其他几何意义
+
+https://www.zhihu.com/question/407150749
+
+旋转矩阵为何左乘是相对固定坐标系，右乘是相对当前坐标系？
+
 ## 矩阵的秩
 
 一个矩阵A的列（行）秩是A的线性独立的列（行）的极大数。

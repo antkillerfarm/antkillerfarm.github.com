@@ -29,6 +29,10 @@ category: technology
 
 结论：LibreOffice胜。开源软件的生命力和魅力都在于开源，人心向背是开源软件胜负的根本。
 
+![](/images/img4/office.jpg)
+
+----
+
 2020.5
 
 和LibreOffice同样遭遇的还有MySQL vs MariaDB。Oracle果然是开源社区的公敌。。。

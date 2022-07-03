@@ -7,7 +7,25 @@ category: Nature
 * toc
 {:toc}
 
+# 阿波罗50年（续）
+
+![](/images/img3/india_moon.jpg)
+
+https://www.zhihu.com/question/344795065/
+
+印度“月船2号”登陆月球失败，失败原因可能是什么？有什么影响和教训？
+
+https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
+
+印度失联的月球探测器依然成功了95%？那些年我们一起追过的月球
+
 # 天文杂谈
+
+恩克彗星是人们发现的第一颗短周期彗星，至今也还没有找到过周期比它更短的彗星。恩克用6个星期的时间，计算出这颗彗星的轨道，周期为3.3年，并且预言1822年5月24日再回到近日点，果然它准时回来了，成为继哈雷彗星之后，第二颗按预言回归的彗星。
+
+>Johann Franz Encke，1791～1865，德国天文学家。University of Göttingen毕业，导师Gauss。1825年担任柏林天文台台长。Leopold Kronecker的导师。他还发现了土星环的Encke Gap。
+
+---
 
 现代农历是民国时期开始用的。自古每当王朝更迭，第一件事就是改历法，一方面体现新朝气象，一方面也因为旧历使用多年，已经有了误差。
 
@@ -238,55 +256,3 @@ https://mp.weixin.qq.com/s/xo9aRt5rAX7bWeK4jwmkXA
 https://mp.weixin.qq.com/s/1L10R2c7wCTYFYcxPKiRtA
 
 彗星怎么拖了个长长的尾巴？
-
-https://mp.weixin.qq.com/s/yCmwX5srpmhYrbAkFbC-gQ
-
-20年，241人，5400000000000米（国际空间站）
-
-https://mp.weixin.qq.com/s/Qld7bVs9ASJ23vAhE0h7_w
-
-日月星辰如何指引着中国人前行？（中国古代天文学）
-
-https://cooltowel.github.io/2018/04/16/%E5%9B%BD%E9%99%85%E5%A4%A9%E7%90%83%E5%8F%82%E8%80%83%E7%B3%BB%E7%BB%9F%E2%80%94%E2%80%94ICRS%20%E7%AE%80%E4%BB%8B/
-
-国际天球参考系统——ICRS简介
-
-https://mp.weixin.qq.com/s/hBAWo8Zsgjm0svYv_UG1jw
-
-一场历经数百万年的瘦身记
-
-https://mp.weixin.qq.com/s/REzPDwfZbqz-RneOZZmvUQ
-
-青海火球事件——“肇事者”身份调查
-
-https://mp.weixin.qq.com/s/NKzv2VpVDaJ_gSDl_L7FHA
-
-太阳，我们来了！
-
-https://mp.weixin.qq.com/s/lHc8w6wn3Tm6ZD5PPw0TFQ
-
-宇宙7问
-
-https://mp.weixin.qq.com/s/epb4AIyg8_OqjAgGEbB9Ag
-
-31年前的北美大停电 背后的神秘力量是谁？（太阳风暴）
-
-https://mp.weixin.qq.com/s/oTltrhF25ClrImp6KUlagw
-
-他俩曾和鸽子较劲，却歪打正着获得诺奖（阿诺·彭齐亚斯（Arno Penzias）和罗伯特·威尔逊（Robert Wilson）——宇宙微波背景）
-
-https://mp.weixin.qq.com/s/O5L7hvg1WXJpbwKvaY880w
-
-捕手LAMOST与高速星的故事
-
-https://mp.weixin.qq.com/s/oU6KRPwuj9SJOLEYHNmE9A
-
-巨石来自外星球？是你来自外太空！
-
-https://mp.weixin.qq.com/s/5JLSuv54Xyt_Fcg_Ps1Rsg
-
-最古老、最遥远、最明亮...
-
-https://mp.weixin.qq.com/s/eO71ulxgc-Fdx8KtMf7CXg
-
-40多年前美国赠送给我国1克月岩样品，背后有怎样的故事？

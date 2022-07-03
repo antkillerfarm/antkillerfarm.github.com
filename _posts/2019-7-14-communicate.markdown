@@ -431,6 +431,6 @@ https://zhuanlan.zhihu.com/p/103141172
 
 苏联曾差点搞出超级互联网，竟然有...（苏联大数据之父格卢什科夫）
 
-https://www.zhihu.com/answer/1513267624
+https://www.zhihu.com/question/458007412
 
-1994年，Matlab发现著名的Intel CPU浮点运算bug
+为什么显卡更新换代极快，每年都会有更强的新系列，而声卡却永远停留在了"兼容DX9的集成声卡"？

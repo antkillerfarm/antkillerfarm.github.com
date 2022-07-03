@@ -241,6 +241,16 @@ https://www.zhihu.com/question/508552825
 
 ---
 
+Gerald Vincent Bull博士受到美国和加拿大的资助在巴巴多斯(Barbados)建立了一门大炮，称为巴巴多斯大炮，或HARP项目。
+
+巴巴多斯大炮使用了2根406mm战列舰炮管连接而成，长度达到41米。在1966年11月18日的测试中，将180公斤的弹丸加速到2100m/s的速度。弹丸达到180公里的高度，越过100公里高度的卡门线进入太空。
+
+https://www.zhihu.com/question/342491181
+
+造个超大巨炮发射卫星可以吗？
+
+---
+
 https://mp.weixin.qq.com/s/sPTRKfuhEc0xx7GacomxkA
 
 霍尔效应推进器
@@ -288,33 +298,3 @@ https://www.zhihu.com/answer/136456079
 https://zhuanlan.zhihu.com/p/385461869
 
 这一次，中国人，笑了
-
----
-
-![](/images/img4/chang_e.png)
-
-![](/images/img4/chang_e_2.png)
-
-https://www.zhihu.com/question/329267129
-
-中国空间站和国际空间站的区别在哪？
-
-https://www.zhihu.com/question/395220918
-
-为什么中国有四个航天发射场？各有什么优势？
-
-https://mp.weixin.qq.com/s/uVayftwQ-mJU04XGn67QoQ
-
-长征五号复飞成功：史上最重最大，2020月岩采样火星探测都要靠它
-
-https://mp.weixin.qq.com/s/iMr811ClFpmW24khhxkFjg
-
-大神！00后大学生成功发射自制火箭，网友惊了...
-
-https://mp.weixin.qq.com/s/CI5V2LirWMuTUn9riaJPSA
-
-南航大二学生两年手搓火箭成功发射
-
-https://mp.weixin.qq.com/s/QjB7zDCXC82x5O25InGZtA
-
-嫦娥五号开启我国首次地外天体采样返回之旅

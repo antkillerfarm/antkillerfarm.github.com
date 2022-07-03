@@ -183,6 +183,20 @@ https://mp.weixin.qq.com/s/LGK3YPZCe6oPTf48QaAIqA
 
 携程数据血缘构建及应用
 
+## 事务的隔离级别
+
+数据库事务的隔离级别有4种，由低到高分别为Read uncommitted 、Read committed 、Repeatable read 、Serializable 。而且，在事务的并发操作中可能会出现脏读，不可重复读，幻读。
+
+脏读：指当一个事务正在访问数据，并且对数据进行了修改，而这种数据还没有提交到数据库中，这时，另外一个事务也访问这个数据，然后使用了这个数据。因为这个数据还没有提交那么另外一个事务读取到的这个数据我们称之为脏数据。依据脏数据所做的操作肯能是不正确的。
+
+不可重复读：指在一个事务内，多次读同一数据。在这个事务还没有执行结束，另外一个事务也访问该同一数据，那么在第一个事务中的两次读取数据之间，由于第二个事务的修改第一个事务两次读到的数据可能是不一样的，这样就发生了在一个事物内两次连续读到的数据是不一样的，这种情况被称为是不可重复读。
+
+幻象读：一个事务先后读取一个范围的记录，但两次读取的纪录数不同，我们称之为幻象读（两次执行同一条 select 语句会出现不同的结果，第二次读会增加一数据行，并没有说这两次执行是在同一个事务中）
+
+https://www.cnblogs.com/myseries/p/10748912.html
+
+数据库的4种隔离级别
+
 ## 参考
 
 https://mp.weixin.qq.com/s/ActS6PxbtZGqPb0jOn0iFg
@@ -296,84 +310,3 @@ https://mp.weixin.qq.com/s/QbwTY8Tfkv1uUdsL9vk8iw
 https://mp.weixin.qq.com/s/mcyljauYnyydePLPeshjhw
 
 程序员硬核“年终大扫除”，清理了数据库70GB空间
-
-# Mysql
-
-## 安装
-
-`sudo apt install mysql-server mysql-client mysql-workbench`
-
-其中，mysql-workbench是一个查看mysql的GUI工具。
-
-安装过程中，会提示输入root用户的密码。注意：这里的root是mysql的登录帐号，而不是系统的登录帐号。
-
-·/etc/my.cnf是默认的MySQL配置文件。
-
-## 导入csv文件
-
-http://www.mysqltutorial.org/import-csv-file-mysql-table/
-
-Import CSV File Into MySQL Table
-
-示例：
-
-```sql
-LOAD DATA LOCAL INFILE 'c:/tmp/discounts.csv' 
-INTO TABLE discounts 
-FIELDS TERMINATED BY ',' 
-ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
-IGNORE 1 ROWS;
-```
-
-上面的语句中，LOCAL必不可少，否则会报如下错误：
-
-`ERROR 1290 (HY000): The MySQL server is running with the --secure-file-priv option so it cannot execute this statement`
-
-## 执行脚本
-
-mysql命令行下执行：
-
-`source a.sql`
-
-## 日志
-
-http://www.cnblogs.com/jevo/p/3281139.html
-
-MySQL日志
-
-## 时间的格式
-
-| 名称 | 格式 |
-|:--|:--|
-| DATE | YYYY-MM-DD |
-| DATETIME | YYYY-MM-DD HH:MM:SS |
-| TIMESTAMP | YYYY-MM-DD HH:MM:SS |
-| YEAR | YYYY或YY |
-
-## 中间数据的存储
-
-有的时候，SQL中间处理的结果需要存储起来，以备后用。这时有两种办法：
-
-1.创建View。
-
-```sql
-CREATE VIEW view_name AS
-SELECT column_name(s)
-FROM table_name
-WHERE condition;
-```
-
-View并不在数据库中存储数据，而是在查询时，执行其中的select语句（每次查询，都会执行），生成中间结果。因此，View从原理来说，更像是一种语法糖，而非存储机制。
-
-2.使用select语句创建table。
-
-`Create table new_table_name (Select * from old_table_name);`
-
-这种方法会将中间结果存储到数据库中，下次使用的时候，就无需重新生成了。但缺点是原table中的更新不会体现到新table中，只适合处理历史数据。
-
-## 模糊查询
-
-http://www.cnblogs.com/GT_Andy/archive/2009/12/25/1921914.html
-
-SQL模糊查询

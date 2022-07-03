@@ -336,6 +336,14 @@ https://mp.weixin.qq.com/s/vV8kFF7e1uxjMR48_uRcSw
 
 MATLAB动画没有密秘
 
+https://mp.weixin.qq.com/s/L6GP0LiCQX0Z2lps3Y0ekQ
+
+Matlab简史
+
+https://www.zhihu.com/answer/1513267624
+
+1994年，Matlab发现著名的Intel CPU浮点运算bug
+
 ## GNU Octave
 
 GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。

@@ -195,10 +195,6 @@ https://mp.weixin.qq.com/s/vBFOQjJr27AeRsqCej85iA
 
 70年前，在苏联第一家AI LAB从事AI研究是种什么体验？
 
-https://mp.weixin.qq.com/s/L6GP0LiCQX0Z2lps3Y0ekQ
-
-Matlab简史
-
 https://mp.weixin.qq.com/s/7cf14CEDa-LHFvO8gyedzg
 
 为什么老编辑器Vim这么难用，却很受欢迎？

@@ -129,6 +129,58 @@ https://mp.weixin.qq.com/s/Kfiz22KpxHtkQof3C5g81A
 
 # 天文杂谈+
 
+https://mp.weixin.qq.com/s/yCmwX5srpmhYrbAkFbC-gQ
+
+20年，241人，5400000000000米（国际空间站）
+
+https://mp.weixin.qq.com/s/Qld7bVs9ASJ23vAhE0h7_w
+
+日月星辰如何指引着中国人前行？（中国古代天文学）
+
+https://cooltowel.github.io/2018/04/16/%E5%9B%BD%E9%99%85%E5%A4%A9%E7%90%83%E5%8F%82%E8%80%83%E7%B3%BB%E7%BB%9F%E2%80%94%E2%80%94ICRS%20%E7%AE%80%E4%BB%8B/
+
+国际天球参考系统——ICRS简介
+
+https://mp.weixin.qq.com/s/hBAWo8Zsgjm0svYv_UG1jw
+
+一场历经数百万年的瘦身记
+
+https://mp.weixin.qq.com/s/REzPDwfZbqz-RneOZZmvUQ
+
+青海火球事件——“肇事者”身份调查
+
+https://mp.weixin.qq.com/s/NKzv2VpVDaJ_gSDl_L7FHA
+
+太阳，我们来了！
+
+https://mp.weixin.qq.com/s/lHc8w6wn3Tm6ZD5PPw0TFQ
+
+宇宙7问
+
+https://mp.weixin.qq.com/s/epb4AIyg8_OqjAgGEbB9Ag
+
+31年前的北美大停电 背后的神秘力量是谁？（太阳风暴）
+
+https://mp.weixin.qq.com/s/oTltrhF25ClrImp6KUlagw
+
+他俩曾和鸽子较劲，却歪打正着获得诺奖（阿诺·彭齐亚斯（Arno Penzias）和罗伯特·威尔逊（Robert Wilson）——宇宙微波背景）
+
+https://mp.weixin.qq.com/s/O5L7hvg1WXJpbwKvaY880w
+
+捕手LAMOST与高速星的故事
+
+https://mp.weixin.qq.com/s/oU6KRPwuj9SJOLEYHNmE9A
+
+巨石来自外星球？是你来自外太空！
+
+https://mp.weixin.qq.com/s/5JLSuv54Xyt_Fcg_Ps1Rsg
+
+最古老、最遥远、最明亮...
+
+https://mp.weixin.qq.com/s/eO71ulxgc-Fdx8KtMf7CXg
+
+40多年前美国赠送给我国1克月岩样品，背后有怎样的故事？
+
 https://mp.weixin.qq.com/s/vxTJf4pwpB3a2lqtx4fQ6g
 
 万家灯火，有你守护！我是如何拍到这次陆基中段反导试验靶弹发射的？
