@@ -335,3 +335,17 @@ https://grpc.io/
 示例：
 
 https://grpc.io/docs/languages/cpp/quickstart/
+
+参考：
+
+https://mp.weixin.qq.com/s/TL87BY3DdP1bolc0Sxkahg
+
+gRPC客户端创建和调用原理解析
+
+https://zhuanlan.zhihu.com/p/30628048
+
+远程通信协议：从CORBA到gRPC
+
+https://mp.weixin.qq.com/s/I2QHEBO26nGqhGwIw281Pg
+
+gRPC基础概念详解

@@ -125,6 +125,10 @@ https://zhuanlan.zhihu.com/p/248356236
 
 让你访问github提速到2MB每秒
 
+https://blog.csdn.net/yimenren/article/details/124773923
+
+github国内镜像https://hub.fastgit.xyz/使用指南
+
 ## arxiv下载速度慢
 
 http://xxx.itp.ac.cn

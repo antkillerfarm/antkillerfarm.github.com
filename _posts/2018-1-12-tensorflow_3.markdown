@@ -271,18 +271,6 @@ https://mp.weixin.qq.com/s/iqvpX6QuBEmF_UK9RMu9eQ
 
 TensorFlow Serving入门
 
-https://mp.weixin.qq.com/s/TL87BY3DdP1bolc0Sxkahg
-
-gRPC客户端创建和调用原理解析
-
-https://zhuanlan.zhihu.com/p/30628048
-
-远程通信协议：从CORBA到gRPC
-
-https://mp.weixin.qq.com/s/I2QHEBO26nGqhGwIw281Pg
-
-gRPC基础概念详解
-
 https://mp.weixin.qq.com/s/b569est_LpcxsoTNWXcfog
 
 TensorFlow Extended帮你快速落地项目
