@@ -71,9 +71,9 @@ https://www.zhihu.com/question/482003599
 
 ---
 
-在PC开始出现的初期，IBM的Lotus 1-2-3是PC的杀手应用，它被认为是PC所以成功的因素之一。Lotus 1-2-3纪元（epoch）从1900年开始，所以第一天是1900年1月1日，其后所有的日期都是在它上面加一个Delta差值，这也是为什么我们上面1900年2月28是的年份表示是00的原因。Lotus从诞生起就有个bug，它认为1900年是闰年！
+在PC开始出现的初期，IBM的Lotus 1-2-3是PC的杀手应用，它被认为是PC所以成功的因素之一。Lotus 1-2-3纪元（epoch）从1900年开始，所以第一天是1900年1月1日，其后所有的日期都是在它上面加一个Delta差值，这也是为什么我们上面1900年2月28日的年份表示是00的原因。Lotus从诞生起就有个bug，它认为1900年是闰年！
 
-微软因为Lotus的大卖而自己研发的表格系统Multiplan，它和它的继任者Excel为了能够与Lotus兼容，不但要做到外观十分相似，而且为了能够读取Lotus的文件而故意引入了一样的bug。
+微软因为Lotus的大卖而自己研发表格系统Multiplan，它和它的继任者Excel为了能够与Lotus兼容，不但要做到外观十分相似，而且为了能够读取Lotus的文件而故意引入了一样的bug。
 
 ---
 
@@ -108,6 +108,24 @@ Ken Thompson在贝尔实验室的时候，他总是能在一台装了Unix的服�
 有个人分析了Unix的代码之后，找到了后门，重新编译部署了Uinx，但是让他们崩溃的事情再次发生，Ken还是能黑进他们的账户，这个事情让他们百思不得其解。
 
 一直到1983年，Ken获得图灵奖，在大会上解开了这个秘密，原来这个密码后门是通过他写的一个C编译器植入的，而当时那台Unix的机器必须通过这个C编译器编译之后才能运行，所以不管unix怎么修改都没有用，毕竟是要编译的。
+
+---
+
+最开始的C++编译器是CFront，由C++之父Bjarne在1982年春到1983年夏完成，而直到1988年6月前，几乎所有的C++编译器都是CFront的移植版本。很多人认为Borland C++与VC++算真正意义的首先非CFront的C++编译器实现，而Bjarne在他书写的C++历史中，认为Zortech才算。
+
+四大高手：Borland C++, Microsoft C++, Watcom C++， Symantec C++。
+
+Portable C Compiler，一种早期的C语言编译器，由Stephen C. Johnson于1970年代中期，在贝尔实验室写作。
+
+虽然现在PCC已经式微了，但80年代初C编译器家族们可都是要么基于PCC，要么大量参考了PCC的设计的。
+
+除了PCC之外，Stephen C. Johnson还是YACC的作者。
+
+SGI的MIPSPro -> Pro64 -> Open64 -> PathScale这条线。Fred Chow（周志德）是Open64项目的主导者。
+
+https://www.zhihu.com/question/39661628
+
+历史上出现过的主流C/C++编译器都有哪些？
 
 ---
 
@@ -226,31 +244,3 @@ Java的战争（Oracle vs Google）
 https://mp.weixin.qq.com/s/af_MzLovqnt5JemXBQGdxg
 
 Java的战争(后续)
-
-https://mp.weixin.qq.com/s/oeusDoCSYiwwX61H_6wQHw
-
-浏览器（内核）发展史
-
-https://www.zhihu.com/question/439434803/answer/1679210108
-
-如何评价大连车务段现在车系统瘫痪，“全力攻关一昼夜”恢复Flash运行?
-
-https://mp.weixin.qq.com/s/YOcKv4InA1G7sdERanGZSA
-
-《是男人就下100层》真的有隐藏剧情！
-
-https://mp.weixin.qq.com/s/popvQv-CM7--5ByTMpeaxA
-
-编程语言考古：曾经影响一代人的BASIC，原来还有前身
-
-https://mp.weixin.qq.com/s/K-KIA18cCj6ANM4Sb7fEvw
-
-50年长盛不衰，SQL为什么如此成功？
-
-https://mp.weixin.qq.com/s/3ZszI7PupWsuTvy69BwPnw
-
-“C语言之父”40年前搞的操作系统复活！Linux、Windows都借鉴过它（Plan 9）
-
-https://mp.weixin.qq.com/s/ywTkMMP6ysBfByIXW3_xeQ
-
-全世界下载量超100亿，curl怎样成为影响世界的开源项目？

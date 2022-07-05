@@ -240,3 +240,7 @@ https://mp.weixin.qq.com/s/2GQacLs1CNNQXKjmJmPiVQ
 https://mp.weixin.qq.com/s/DXIGBypPQd1FkZ70aBG_9g
 
 我用Python合成大西瓜！
+
+https://zhuanlan.zhihu.com/p/475557186
+
+如何下出最菜的五子棋？“反五子棋”玩法简介与AI研究

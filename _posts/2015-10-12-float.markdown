@@ -179,6 +179,10 @@ https://zhuanlan.zhihu.com/p/69497154
 
 高性能计算--mpi
 
+https://mpitutorial.com/tutorials/
+
+MPI Tutorials
+
 ## 教程
 
 http://blog.csdn.net/augusdi/article/details/12833235

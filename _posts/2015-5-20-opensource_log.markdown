@@ -175,6 +175,34 @@ https://zhuanlan.zhihu.com/p/96986818
 
 # 上古软件开发+
 
+https://mp.weixin.qq.com/s/oeusDoCSYiwwX61H_6wQHw
+
+浏览器（内核）发展史
+
+https://www.zhihu.com/question/439434803/answer/1679210108
+
+如何评价大连车务段现在车系统瘫痪，“全力攻关一昼夜”恢复Flash运行?
+
+https://mp.weixin.qq.com/s/YOcKv4InA1G7sdERanGZSA
+
+《是男人就下100层》真的有隐藏剧情！
+
+https://mp.weixin.qq.com/s/popvQv-CM7--5ByTMpeaxA
+
+编程语言考古：曾经影响一代人的BASIC，原来还有前身
+
+https://mp.weixin.qq.com/s/K-KIA18cCj6ANM4Sb7fEvw
+
+50年长盛不衰，SQL为什么如此成功？
+
+https://mp.weixin.qq.com/s/3ZszI7PupWsuTvy69BwPnw
+
+“C语言之父”40年前搞的操作系统复活！Linux、Windows都借鉴过它（Plan 9）
+
+https://mp.weixin.qq.com/s/ywTkMMP6ysBfByIXW3_xeQ
+
+全世界下载量超100亿，curl怎样成为影响世界的开源项目？
+
 https://mp.weixin.qq.com/s/lqGCGj1EuwRvg6S9Dt3yEg
 
 PDF之父、Adobe联合创始人离世，乔布斯收购未果给了他第一桶金

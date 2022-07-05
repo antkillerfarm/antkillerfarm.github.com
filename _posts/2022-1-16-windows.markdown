@@ -79,6 +79,28 @@ https://github.com/zeroc-ice/ice-demos
 
 `git checkout 3.6`
 
+---
+
+2022.7
+
+和CORBA竞争的MS的DCOM也好不到哪里去。唯一用的多的，主要在工控领域。
+
+OPC DA在其发展时，建立在当时的Windows技术：OLE、ActiveX、COM/DCOM 之上。但此后行业发生了变化，其他操作系统和技术也开始流行。
+
+COM是微软投入C++门下后给C++打的一个超大补丁用来解决C++的ABI没有标准的问题。
+
+https://zhuanlan.zhihu.com/p/426818530
+
+聊聊越来越火的OPC DA OPC UA的标准
+
+https://www.zhihu.com/question/19998748
+
+COM过时了吗？它的应用前景究竟如何？
+
+https://www.zhihu.com/question/49433640
+
+怎么通俗的解释COM组件？
+
 # Hprose
 
 Hprose是ZeroC ICE的一个竞争者，由国内某高手打造，支持的语言超过20种，堪称最全。不过貌似没什么大公司用啊。。。
