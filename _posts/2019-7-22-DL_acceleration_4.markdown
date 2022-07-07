@@ -281,6 +281,18 @@ https://mp.weixin.qq.com/s/Q54AdQmqa5JD0v9CEeFtSQ
 
 二值化神经网络(BNN)综述
 
+https://zhuanlan.zhihu.com/p/431680710
+
+谈谈BNN二值化神经网络的设计，以及几代学界工作的演进 -（1）架构与原理
+
+https://zhuanlan.zhihu.com/p/433429767
+
+谈谈BNN二值化神经网络的设计，以及几代学界工作的演进 -（2）二值训练
+
+https://zhuanlan.zhihu.com/p/435285316
+
+谈谈BNN二值化神经网络的设计，以及几代学界工作的演进 -（3）二值化设计法则、推理框架与发展潜力
+
 https://mp.weixin.qq.com/s/lVja7woyFWpmr9sH0CitAA
 
 BMXNet：基于MXNet的开源二值神经网络实现

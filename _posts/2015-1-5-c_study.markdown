@@ -49,6 +49,12 @@ https://godbolt.org/
 
 https://github.com/compiler-explorer/compiler-explorer
 
+---
+
+https://lgtm.com/
+
+这是一个代码缺陷检测工具
+
 # 历史
 
 https://mp.weixin.qq.com/s/cfBT0wsqzZRwedMO7Qz_vA

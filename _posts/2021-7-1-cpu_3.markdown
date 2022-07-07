@@ -67,6 +67,20 @@ https://mp.weixin.qq.com/s/SaUr2Mp4W5xmlyTcePrzlQ
 
 目前最全国产芯片公司一览
 
+---
+
+大家都知道Flink是阿里研发的，上云后就是阿里云的流计算。
+
+可是吧，这玩意是德国团队开发的哇，人家还在Apache基金会开源了。
+
+阿里借助程序员多，钱多，在Apache上贡献代码比较多，就说自己是开发的flink，说到底，这玩意就是阿里优化而已。为了圆这个梦，还花了钱把人家创始团队给买了，技术归阿里了。
+
+Data Artisans是由开源数据流处理技术Apache Fink的几位开发者于2014年创办的数据处理创业公司。2019年1月被阿里巴巴收购。
+
+https://www.zhihu.com/question/435517345
+
+如何看待阿里奇点编码器可以把视频压缩上千倍而画质影响不大？
+
 ## C Model
 
 在芯片的架构设计阶段需要对芯片进行建模（modeling），建模的主要目的是在大规模投入人力之前先用低成本的计算机软件实现目标芯片的主要功能，评估芯片的工作效果，验证设计思想，并作为后续开发活动的标准和依据。由于这里的软件开发一般使用C语言，所以也叫做C Model。
@@ -270,27 +284,3 @@ https://mp.weixin.qq.com/s/Hq9hzkyfGcCQa_FfzSDoRg
 https://zhuanlan.zhihu.com/p/66263349
 
 为什么内存和闪存制程比CPU低？它们现在都在什么节点？
-
-https://mp.weixin.qq.com/s/lz6EoLiLtPtWFMG1FJCuQw
-
-化合物半导体的机遇
-
-https://mp.weixin.qq.com/s/tTtySk3u6m2BGUkDto5Ojw
-
-可重构芯片的方法学原理
-
-https://mp.weixin.qq.com/s/RkRZX_scr__Q_mLPhaaWAA
-
-AMD Zen 2处理器架构为何要如此设计？
-
-https://mp.weixin.qq.com/s/dRv4xWV8laCYBaZ0DwOC3A
-
-如何从零开始设计一颗芯片？
-
-https://mp.weixin.qq.com/s/eAzdtKvfw7EVz5Ax3nXeZg
-
-自己动手设计专用处理器
-
-https://mp.weixin.qq.com/s/NfNJVoAC5aW1sgToAmYsGw
-
-3nm芯片终结者

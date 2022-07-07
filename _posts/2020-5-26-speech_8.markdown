@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  语音识别（八）——声纹识别
+title:  语音识别（八）——声纹识别, Video
 category: speech 
 ---
 
@@ -208,6 +208,74 @@ https://mp.weixin.qq.com/s/6KBQ9CzyMcUPiJTppI5eFQ
 https://mp.weixin.qq.com/s/J11lDgGsYXLgT7jXmRQtAA
 
 地球上最先进的麦克风，居是苍蝇耳朵
+
+# Video
+
+## WebRTC
+
+Gobal IP Solutions，简称GIPS。这是一家1990年成立于瑞典斯德哥尔摩的VoIP软件开发商，提供了可以说是世界上最好的语音引擎。
+
+Skype、腾讯 QQ、WebEx、Vidyo 等都使用了它的音频处理引擎，包含了受专利保护的回声消除算法，适应网络抖动和丢包的低延迟算法，以及先进的音频编解码器。
+
+Google在2011年收购了GIPS，并将其源代码开源，加上在2010年收购的On2获取到的VPx系列视频编解码器，WebRTC开源项目应运而生，即GIPS音视频引擎+替换掉H.264的VPx视频编解码器。
+
+https://mp.weixin.qq.com/s/DhQ0kks7SnyAROYEH_1BQg
+
+进击的WebRTC：我们为什么需要它？
+
+http://blog.shengbin.me/posts/multi-user-video-conference-based-on-webrtc
+
+基于WebRTC的多人视频会议
+
+https://mp.weixin.qq.com/s/JAzROTYsnF_JqiI5vjVglA
+
+腾讯天籁：音频联合信源信道编码技术白皮书
+
+## H.264
+
+H.264的开源实现主要有：
+
+JM：
+
+https://iphome.hhi.de/suehring/tml/
+
+X264：
+
+https://www.videolan.org/developers/x264.html
+
+X264是从JM的早期版本发展而来，是JM的简化优化版本：只支持H.264的一个子集，并进行了针对性的工程优化。
+
+参考：
+
+https://blog.csdn.net/leixiaohua1020/article/details/45536607
+
+x264源代码简单分析：概述
+
+## H.265
+
+H.264的开源实现主要有：
+
+HM：
+
+https://hevc.hhi.fraunhofer.de/
+
+可以看得出HM和JM系出同门，都是德国Fraunhofer研究所的产品。
+
+x265：
+
+https://www.videolan.org/developers/x265.html
+
+---
+
+国内这些做视频业务的大公司有一个算一个，大家所谓"自研编码器"，都是基于JM和x264，以及HM和x265开源代码做自己的优化。都是一个爹妈生的。
+
+H.265可不是免费使用的。至少有四家组织或公司在收取HEVC的许可费用：老牌的专利池MPEG LA，新兴的专利池HEVC Advance和Velos Media，以及Technicolor公司。
+
+比如说一项标准有2000个专利组成，这些专利来自于50个公司，这些公司有权利对自己的专利收费。设备生产商和内容生产商要给50个公司交专利显然很麻烦，他们可以把这2000项专利授权给一个组织，由他代收，再分发给这些专利提供公司。h.264就是这样。h.265这些公司由于对于收费的标准产生了不同的意见，组成了不同的专利池，分别对于自己的专利收费。
+
+---
+
+在过去的30年里，不同的组织发布了很多视频标准。幸运的是，这些标准都是基于块的运动补偿和混合变换方案。事实上，自从h.261发布以来，这些编码方法从未改变过。
 
 # Machine Learning之Python篇++
 

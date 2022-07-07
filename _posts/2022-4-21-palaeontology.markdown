@@ -340,3 +340,7 @@ https://mp.weixin.qq.com/s/tBDQ1Ko7UbX5lfzV42qmrQ
 https://www.zhihu.com/question/24810449
 
 纯电动车是否有变速箱？
+
+https://mp.weixin.qq.com/s/5uF_QiFlSmaCn3YUMr6p8w
+
+大和级战列舰有克星？蒙大拿：不好意思！在座的各位都是垃圾

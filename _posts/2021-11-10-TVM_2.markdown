@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  TVM实战
+title:  TVM实战, Optimizer软件, Zookeeper
 category: AI 
 ---
 
@@ -231,3 +231,75 @@ TensorFlow中loss与val_loss、accuracy和val_accuracy分别是什么含义
 从上表可以看出增大batch size可以减少iteration的数量，但是该方法有极限，不可任意小。
 
 增大batch size会增加计算量，但是由于设备IO和计算量的平衡，并不是batch size越小，运行时间就越短。
+
+# Optimizer软件
+
+## 统计类
+
+在前ML时代，工业界已经有不少Optimizer软件用于求解凸优化问题，这些软件从原理上基本都属于传统统计学的范畴。
+
+比较知名的Optimizer软件有：CPlex, Gurobi, Mosek, cvx, LINGO。
+
+参考：
+
+https://mp.weixin.qq.com/s/kdfGUzY6KnI3tpcDg0GX6w
+
+运筹优化问题求解工具Lingo
+
+https://mp.weixin.qq.com/s/ooYg7-pI9axo8Z_vUwMGzg
+
+离散优化求解器大搜罗
+
+https://mp.weixin.qq.com/s/_uGNwcvsIpzQyH6fI_HIPw
+
+MOSEK，一个专注而卓越的优化求解器（一）
+
+https://mp.weixin.qq.com/s/q0x9pXz7p7OciWqBOIV5JQ
+
+XPROG: 简单实用的鲁棒优化(RO, DRO)编程语言
+
+https://mp.weixin.qq.com/s/wJAt-RqmsoyECLGgdlH6RA
+
+基于数据的分布式鲁棒优化算法及其应用
+
+# Zookeeper
+
+http://zookeeper.apache.org/
+
+`bin/zkServer.sh status`
+
+http://www.cnblogs.com/lpshou/archive/2013/06/14/3136904.html
+
+zookeeper原理
+
+https://mp.weixin.qq.com/s/WPyJC4nyLQGWk-OQylUHHw
+
+Zookeeper简单介绍
+
+http://www.ibm.com/developerworks/cn/opensource/os-cn-zookeeper/index.html
+
+分布式服务框架Zookeeper--管理分布式环境中的数据
+
+https://mp.weixin.qq.com/s/uMj3JEhgyYw4CaIhP1-GTQ
+
+阿里巴巴为什么不用ZooKeeper做服务发现？
+
+https://mp.weixin.qq.com/s/KFzJAxL_xvrrjhubd7zH-Q
+
+Facebook为何放弃ZooKeeper转用自研配置管理系统？
+
+https://mp.weixin.qq.com/s/DigeE4YxuT55cSeyb1q1tQ
+
+ZooKeeper源码和实践揭秘
+
+https://mp.weixin.qq.com/s/Tb670Jdt4s7CKzGZZQRL_A
+
+用大白话给你解释Zookeeper的选举机制
+
+https://mp.weixin.qq.com/s/BejPSfvEe98nSch81WKgAg
+
+Zookeeper九个问题
+
+https://mp.weixin.qq.com/s/03A4LnDqNhNgQ5bSRIgR_Q
+
+一举拿下高可用与分布式协调系统设计
