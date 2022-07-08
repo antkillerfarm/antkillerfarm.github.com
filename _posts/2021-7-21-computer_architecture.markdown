@@ -119,6 +119,56 @@ Multisample anti-aliasing，MSAA
 
 计算机系统架构模拟器gem5。
 
+## 多核
+
+SMP(Symmetric Multiprocessing)架构：即多处理器架构，是目前最常见的多处理器计算机架构。
+
+AMP(Asymmetric Multiprocessing)架构：即非对称多处理器架构，则是与SMP架构相对的概念。
+
+https://zhuanlan.zhihu.com/p/53596593
+
+所有CPU内核一定生来平等吗？Intel非对称异构多处理器：Lakefield
+
+https://en.wikipedia.org/wiki/ARM_big.LITTLE
+
+ARM的big.LITTLE架构
+
+## NUMA
+
+在SMP架构中，又可以分为NUMA架构和UMA架构。
+
+NUMA(non-Uniform Memory Access)非均匀内存访问架构是指多处理器系统中，内存的访问时间是依赖处理器和内存之间相对位置的。在这种设计里面存在和处理器相近的内存，通常称作本地内存；还有和处理器相对远的内存，通常称之为远端内存。
+
+UMA(Uniform Memory Access)均匀内存访问架构则是与NUMA架构相反，所以处理器对共享内存的访问距离和时间是相同的。
+
+![](/images/img2/NUMA.jpg)
+
+![](/images/img4/NUMA.jpg)
+
+上图是NUMA（Non-Uniform Memory Access）的结构图。可以看到CPU和一部分内存直接相连，而和其他内存通过总线相连。接近NUMA结点的内存称为本地内存，其他NUMA节点的内存称之为远端内存。
+
+如果我们把局部数据放到直连内存上，CPU显然就能够更快速的访问数据。
+
+与NUMA相关的还有一个著名的BUG：
+
+https://zhuanlan.zhihu.com/p/387117470
+
+十年后数据库还是不敢拥抱NUMA？
+
+参考：
+
+https://software.intel.com/en-us/articles/optimizing-applications-for-numa
+
+Optimizing Applications for NUMA
+
+https://mp.weixin.qq.com/s/uH0XRjDNfVQe5r1aes0zDw
+
+性能之殇：从冯·诺依曼瓶颈谈起
+
+https://zhuanlan.zhihu.com/p/476411477
+
+NUMA架构详解
+
 ## 参考
 
 https://blog.csdn.net/do2jiang/article/details/4545889
@@ -161,7 +211,7 @@ https://mp.weixin.qq.com/s/Ud4f5L2tYNbP1oURVBszag
 
 >Boris Babayan，1933年生，俄罗斯科学院院士，Intel院士。俄罗斯CPU之父。
 
-## DPU
+# DPU
 
 如同GPU是针对图像显示领域的加速，DPU（Data Processing Unit）则是对于数据传输方面的加速。
 
