@@ -51,6 +51,10 @@ https://mp.weixin.qq.com/s/f44TkWXklGONCuXnIuTbXg
 
 无人驾驶汽车系统入门：基于VoxelNet的激光雷达点云车辆检测及ROS实现
 
+https://www.zhihu.com/question/465405015
+
+自动驾驶公司3d点云目标检测算法都基于哪个网络在做？
+
 https://mp.weixin.qq.com/s/_lK-DPldCYGcicV7O0njfg
 
 上海交大卢策吾团队开源PointSIFT刷新点云语义分割记录

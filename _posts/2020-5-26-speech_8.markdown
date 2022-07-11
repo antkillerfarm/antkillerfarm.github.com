@@ -231,7 +231,7 @@ https://mp.weixin.qq.com/s/JAzROTYsnF_JqiI5vjVglA
 
 腾讯天籁：音频联合信源信道编码技术白皮书
 
-## H.264
+## H.264/AVC
 
 H.264的开源实现主要有：
 
@@ -251,7 +251,7 @@ https://blog.csdn.net/leixiaohua1020/article/details/45536607
 
 x264源代码简单分析：概述
 
-## H.265
+## H.265/HEVC
 
 H.264的开源实现主要有：
 
@@ -276,6 +276,12 @@ H.265可不是免费使用的。至少有四家组织或公司在收取HEVC的�
 ---
 
 在过去的30年里，不同的组织发布了很多视频标准。幸运的是，这些标准都是基于块的运动补偿和混合变换方案。事实上，自从h.261发布以来，这些编码方法从未改变过。
+
+## H.266/VVC
+
+https://www.zhihu.com/question/406149352
+
+如何看待最新的国际视频编解码标准H.266?
 
 # Machine Learning之Python篇++
 

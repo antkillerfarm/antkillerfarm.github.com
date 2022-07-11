@@ -378,9 +378,16 @@ Linux文件搜索神器find实战详解
 
 ---
 
+烧写系统到U盘：
+
 `sudo dd if=./865_R11_RC2.sdcard of=/dev/sdb status=progress`
 
-烧写系统到U盘。
+dd + gzip：
+
+```bash
+sudo dd if=/dev/sdb bs=32M status=progress | gzip > ./imx865.iso
+gzip -dc ,/imx865.iso | sudo dd of=/dev/sdb status=progress
+```
 
 https://blog.csdn.net/weixin_30416497/article/details/97144840
 
