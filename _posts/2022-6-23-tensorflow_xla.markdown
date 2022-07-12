@@ -320,29 +320,3 @@ Pytorch官方提供了如下项目支持XLA：
 https://github.com/pytorch/xla
 
 粗看了一下，都是些上层的代码，底层直接调用TF的实现。所以如果目标硬件已经接入TF XLA接口的话，理论上不需要修改就可以跑pytorch。
-
-## 参考
-
-https://mp.weixin.qq.com/s/RO3FrPxhK2GEoDCGE9DXrw
-
-利用XLA将GPU性能推向极限
-
-https://mp.weixin.qq.com/s/MPI9KERDS-Al4DTBDRV04w
-
-TensorFlow XLA工作原理简介
-
-https://sketch2sky.com/
-
-一个XLA方面的blog
-
-https://tensorflow.juejin.im/performance/xla/jit.html
-
-使用即时编译
-
-https://blog.slinuxer.com/2019/06/tensorflow-xla
-
-TensorFlow XLA初步接触
-
-https://github.com/horance-liu/tensorflow-internals
-
-电子书《TensorFlow Internals》

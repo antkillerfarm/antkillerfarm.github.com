@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  浮点运算和代码优化, 并行计算, 稀疏矩阵的存储, MPI
+title:  浮点运算和代码优化, 并行计算, 稀疏矩阵的存储, Optimizer软件, Zookeeper
 category: AI 
 ---
 
@@ -208,96 +208,74 @@ IA是每行的非零元素在A的offset（类似于文件操作中的游标）�
 
 按照这个规则，可以看出A和JA中的元素个数相等，而IA的元素个数=行数+1。由于IA的最后一个元素必然和A中的元素个数相等（矩阵都遍历完了，offset当然到末尾了），因此有时也会把它省略。
 
-# MPI
+# Optimizer软件
 
-集群可以很好解决单节点计算力不足的问题，但在集群中大规模的数据交换是很耗费时间的，因此需要一种在多节点的情况下能快速进行数据交流的标准，这就是Message passing interface(MPI)。
+## 统计类
 
-MPI的主流实现主要是：mpich和openmpi。
+在前ML时代，工业界已经有不少Optimizer软件用于求解凸优化问题，这些软件从原理上基本都属于传统统计学的范畴。
 
-官网：
+比较知名的Optimizer软件有：CPlex, Gurobi, Mosek, cvx, LINGO。
 
-http://www.mpi-forum.org/docs/
+参考：
 
-1994：MPI-1
+https://mp.weixin.qq.com/s/kdfGUzY6KnI3tpcDg0GX6w
 
-1998：MPI-2
+运筹优化问题求解工具Lingo
 
-2012：MPI-2
+https://mp.weixin.qq.com/s/ooYg7-pI9axo8Z_vUwMGzg
 
-因为MPI的历史比较久远，深刻影响了后来的分布式并行程序，比如TF等。所以这里简单介绍一下几个关键的术语。
+离散优化求解器大搜罗
 
-## Barrier
+https://mp.weixin.qq.com/s/_uGNwcvsIpzQyH6fI_HIPw
 
-![](/images/img4/barrier.png)
+MOSEK，一个专注而卓越的优化求解器（一）
 
-这个方法会构建一个屏障，任何进程都没法跨越屏障，直到所有的进程都到达屏障。
+https://mp.weixin.qq.com/s/q0x9pXz7p7OciWqBOIV5JQ
 
-实现屏障的方式有很多，最简单的是令牌环（token ring）。
+XPROG: 简单实用的鲁棒优化(RO, DRO)编程语言
 
-第一个进程到达的屏障生成一个token，然后传递给下一个到达屏障的进程。所有的进程都到达屏障之后，token被传递回第一个进程。
+https://mp.weixin.qq.com/s/wJAt-RqmsoyECLGgdlH6RA
 
-`MPI_Barrier`在TF中被称为`AfterAll`。
+基于数据的分布式鲁棒优化算法及其应用
 
-## Bcast & Scatter
+# Zookeeper
 
-![](/images/img4/broadcastvsscatter.png)
+http://zookeeper.apache.org/
 
-`MPI_Bcast`给每个进程发送的是同样的数据，然而`MPI_Scatter`给每个进程发送的是一个数组的一部分数据。
+`bin/zkServer.sh status`
 
-![](/images/img4/broadcast_tree.png)
+http://www.cnblogs.com/lpshou/archive/2013/06/14/3136904.html
 
-在上图的树形算法里，能够利用的网络连接每个阶段都会比前一阶段翻番，直到所有的进程接收到数据为止。
+zookeeper原理
 
-## Gather & Allgather
+https://mp.weixin.qq.com/s/WPyJC4nyLQGWk-OQylUHHw
 
-![](/images/img4/gather.png)
+Zookeeper简单介绍
 
-`MPI_Gather`跟`MPI_Scatter`是相反的。
+http://www.ibm.com/developerworks/cn/opensource/os-cn-zookeeper/index.html
 
-![](/images/img4/allgather.png)
+分布式服务框架Zookeeper--管理分布式环境中的数据
 
-`MPI_Allgather`相当于一个`MPI_Gather`操作之后跟着一个`MPI_Bcast`操作。
+https://mp.weixin.qq.com/s/uMj3JEhgyYw4CaIhP1-GTQ
 
-## Reduce & Allreduce
+阿里巴巴为什么不用ZooKeeper做服务发现？
 
-![](/images/img4/mpi_reduce_1.png)
+https://mp.weixin.qq.com/s/KFzJAxL_xvrrjhubd7zH-Q
 
-数据归约包括通过函数将一组数字归约为较小的一组数字。例如，假设我们有一个数字列表[1,2,3,4,5]。用sum函数归约此数字列表将产生`sum([1、2、3、4、5]) = 15`。
+Facebook为何放弃ZooKeeper转用自研配置管理系统？
 
-![](/images/img4/mpi_allreduce_1.png)
+https://mp.weixin.qq.com/s/DigeE4YxuT55cSeyb1q1tQ
 
-`MPI_Allreduce`等效于先执行`MPI_Reduce`，然后执行`MPI_Bcast`。
+ZooKeeper源码和实践揭秘
 
-## Alltoall
+https://mp.weixin.qq.com/s/Tb670Jdt4s7CKzGZZQRL_A
 
-![](/images/img4/all-to-all-collective.png)
+用大白话给你解释Zookeeper的选举机制
 
-`MPI_Alltoall`的工作方式是`MPI_Scatter`和`MPI_Gather`的组合。它的用途之一就是上图所示的数据的行列转置,但它比转置要灵活的多。
+https://mp.weixin.qq.com/s/BejPSfvEe98nSch81WKgAg
 
-## groups
+Zookeeper九个问题
 
-以上这些操作都涉及了多个计算节点。执行同一操作的多个节点组成一个group。
+https://mp.weixin.qq.com/s/03A4LnDqNhNgQ5bSRIgR_Q
 
-group里包含了相关的节点的id，如果group为null，则该操作会在整个计算集群上执行。两个group可以进行交集、并集之类的集合运算，生成新的group。
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/69497154
-
-高性能计算--mpi
-
-https://mpitutorial.com/tutorials/
-
-MPI Tutorials
-
-https://zhuanlan.zhihu.com/p/363710263
-
-集体通信
-
-https://downey.io/notes/omscs/cse6220/distributed-memory-model-mpi-collectives/
-
-distributed memory model and mpi collectives
-
-https://blog.csdn.net/q19149/article/details/102594031
-
-集合通信函数图解
+一举拿下高可用与分布式协调系统设计

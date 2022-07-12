@@ -155,6 +155,54 @@ https://mp.weixin.qq.com/s/TV1MJfaOq27y2DVCGMuqhA
 
 用Pandas和Streamlit对时间序列数据集进行可视化过滤
 
+## pygame
+
+![](/images/img4/game.jpg)
+
+---
+
+pygame是一个python的游戏引擎。
+
+官网：
+
+https://www.pygame.org/
+
+类似的引擎还有：
+
+https://kaboomjs.com/
+
+kaboom.js（一个JS写的引擎）
+
+https://solar2d.com/
+
+Solar2D（一个Lus写的引擎）
+
+参考：
+
+https://github.com/marblexu/PythonPlantsVsZombies
+
+Python《植物大战僵尸》代码实现
+
+https://mp.weixin.qq.com/s/la9srinIeibkXZEDRvv5pA
+
+手把手教你用Python实现“坦克大战”，附详细代码！
+
+https://mp.weixin.qq.com/s/1xXULpT36P7LTO5HDbjptg
+
+坦克大战小游戏
+
+https://mp.weixin.qq.com/s/EEw4x1mk0y8xsL9mORd9sA
+
+如何用Python实现超级玛丽的界面和状态机？
+
+https://mp.weixin.qq.com/s/HRdc5O6hT-dzx4jmgmlSYw
+
+如何用Python实现超级玛丽的人物行走和碰撞检测？
+
+https://mp.weixin.qq.com/s/20F0ieUjJSZp7yI7ymeJ5Q
+
+试试在终端模拟下雪的效果呗？
+
 ## 细节
 
 python有个叫做`attr`的包，还有一个叫做`attrs`的包，然而`import attr`实际上用的是`attrs`。
@@ -408,53 +456,3 @@ https://mp.weixin.qq.com/s/XV4LOBM1pO0N8oShZl7MzQ
 https://mp.weixin.qq.com/s/b19SLduKoiOIeE5CA3ZOjg
 
 Python标准库之LRU缓存实现学习
-
-https://mp.weixin.qq.com/s/zABXQksUX6le8zWJeWUQXw
-
-Python的`__name__`变量，到底是个什么东西？
-
-https://mp.weixin.qq.com/s/FtlAkInyXgvUxDnSCikTIw
-
-全面深入理解Python面向对象编程
-
-https://blog.csdn.net/lys_828/article/details/106489371
-
-字符串模糊匹配及在实战中的应用（FuzzyWuzzy库）
-
-https://mp.weixin.qq.com/s/Ln5EPqbdNjy3HrVM7Wwe2g
-
-Heartrate：一个牛逼的工具，Python执行实时可视化
-
-https://mp.weixin.qq.com/s/J8IHOdUevyn9YS09D8Ou-g
-
-聊聊Python发送邮件的几种方式
-
-https://mp.weixin.qq.com/s/L0FoYh1npy-3rwRQWcj71g
-
-五大自动化测试的Python框架
-
-https://mp.weixin.qq.com/s/Oq316PWN10FBWzv-X26pAg
-
-高性能Python CPU Memery分析器
-
-https://mp.weixin.qq.com/s/wr18ylCJyJOX83BhbvGXng
-
-13个Python开发者必知的Python GUI库
-
-https://mp.weixin.qq.com/s/S_mIspLOrmj8ny0VHP52ZA
-
-Python高级技巧：lazy property
-
-https://mp.weixin.qq.com/s/QWH9qhKzECX-1rqDLfZyhw
-
-如何加速Python代码？
-
-https://mp.weixin.qq.com/s/OT9yRMFsNowXBbwKqmzP-Q
-
-一起来尝试借助哈密顿环自动玩贪吃蛇小游戏呀~
-
-哈密顿图：由指定的起点前往指定的终点，途中经过所有其他节点且只经过一次。
-
-https://segmentfault.com/a/1190000000414339
-
-一行Python代码实现并行

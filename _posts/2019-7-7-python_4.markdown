@@ -160,7 +160,7 @@ http://gashero.yeax.com/?p=38
 
 ## Pythran
 
-Pythran是一个将python翻译成C++的库，而Cython和SWIG则是对C++进行python封装。
+Pythran是一个transpiler，可以把Python的prototype转到C++。
 
 官网：
 
@@ -176,9 +176,39 @@ https://mp.weixin.qq.com/s/hJGaREpBP0j7rqCXSZQMvA
 
 pybind11可以在C++11和Python之间建立互操作的关系，而且还是个header-only的方案。
 
+pybind11的灵感来源于Boost.Python，但是后者属于Boost的一部分，使用起来太笨重。
+
 官网：
 
 https://pybind11.readthedocs.io/en/stable/
+
+安装：
+
+`pip3 install pybind11`
+
+示例：
+
+https://github.com/pybind/cmake_example
+
+手动添加wrapper太麻烦。目前有一些开源项目，专门用来针对已有的C++代码来自动生成pybind11绑定代码：
+
+- binder
+- AutoWIG
+- robotpy-build
+
+参考：
+
+https://github.com/tensorflow/community/blob/master/rfcs/20190208-pybind11.md
+
+pybind11 vs SWIG
+
+https://zhuanlan.zhihu.com/p/52619334
+
+使用pybind11将C++代码编译为python模块
+
+https://zhuanlan.zhihu.com/p/192974017
+
+pybind11的最佳实践
 
 ## python调用GTK函数的一般规则
 
@@ -320,54 +350,6 @@ Django比较重量级了，如果只是想发布静态网页的话，可以用�
 https://juejin.cn/post/6944598601674784775
 
 异步Web框架Sanic凭什么比Django Flask强？
-
-## pygame
-
-![](/images/img4/game.jpg)
-
----
-
-pygame是一个python的游戏引擎。
-
-官网：
-
-https://www.pygame.org/
-
-类似的引擎还有：
-
-https://kaboomjs.com/
-
-kaboom.js（一个JS写的引擎）
-
-https://solar2d.com/
-
-Solar2D（一个Lus写的引擎）
-
-参考：
-
-https://github.com/marblexu/PythonPlantsVsZombies
-
-Python《植物大战僵尸》代码实现
-
-https://mp.weixin.qq.com/s/la9srinIeibkXZEDRvv5pA
-
-手把手教你用Python实现“坦克大战”，附详细代码！
-
-https://mp.weixin.qq.com/s/1xXULpT36P7LTO5HDbjptg
-
-坦克大战小游戏
-
-https://mp.weixin.qq.com/s/EEw4x1mk0y8xsL9mORd9sA
-
-如何用Python实现超级玛丽的界面和状态机？
-
-https://mp.weixin.qq.com/s/HRdc5O6hT-dzx4jmgmlSYw
-
-如何用Python实现超级玛丽的人物行走和碰撞检测？
-
-https://mp.weixin.qq.com/s/20F0ieUjJSZp7yI7ymeJ5Q
-
-试试在终端模拟下雪的效果呗？
 
 ## 处理eml文件
 

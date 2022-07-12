@@ -438,6 +438,10 @@ https://mp.weixin.qq.com/s/xGBAGBGsxBDuKkSxXOZRjQ
 
 在Rust代码中编写Python是种怎样的体验？
 
+https://zyxin.xyz/blog/2021-10/FirstGlanceOnRust/
+
+初识Rust - 从一个Python/C++/C#程序员的角度对比Rust
+
 # perl
 
 中文教程：

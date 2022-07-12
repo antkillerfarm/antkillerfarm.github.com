@@ -23,6 +23,14 @@ https://mlperf.org/
 
 ![](/images/img4/MLPerf.png)
 
+---
+
+2022.7
+
+官网改名为：
+
+https://mlcommons.org
+
 # 移动端推理框架
 
 最知名的移动端推理框架毫无疑问是Google的Tensorflow Lite和Android NN。这两个框架在本blog的Tensorflow章节已有描述。

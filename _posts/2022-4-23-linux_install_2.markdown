@@ -11,16 +11,6 @@ category: linux
 
 ## 内核版本回退（续）
 
-2.编译网卡驱动。
-
-首先去github更新驱动的代码。这里必须感谢驱动原作者的持续维护，修正了一些在新内核中出现的问题。
-
-必须说这次的更新，依赖做的很差，连linux-headers都没有，造成了有些驱动无法更新。。。
-
-`sudo apt install linux-headers-5.8.0-36-generic`
-
-安装之后，还是网卡不好使。只好暂时工作在旧内核下了。
-
 3.默认启动旧内核
 
 参考：
@@ -106,6 +96,14 @@ grub2引导系统iso镜像
 在程序中找到“启动盘创建器”即可。这也是防止变砖的最后一条路，反正BIOS是不可能安装坏的，随便折腾吧。
 
 # Linux参考资源+
+
+https://mp.weixin.qq.com/s/3Pp7wkDO6Rnxb5aZP0sacw
+
+一文了解操作系统I/O
+
+https://mp.weixin.qq.com/s/xM8uvYbX6VY8MVZrYkvCUg
+
+链接选项rpath的原理和应用
 
 https://www.cnblogs.com/Malphite/p/10405465.html
 

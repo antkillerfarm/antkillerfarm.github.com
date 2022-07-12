@@ -9,6 +9,56 @@ category: language
 
 # Python
 
+https://mp.weixin.qq.com/s/zABXQksUX6le8zWJeWUQXw
+
+Python的`__name__`变量，到底是个什么东西？
+
+https://mp.weixin.qq.com/s/FtlAkInyXgvUxDnSCikTIw
+
+全面深入理解Python面向对象编程
+
+https://blog.csdn.net/lys_828/article/details/106489371
+
+字符串模糊匹配及在实战中的应用（FuzzyWuzzy库）
+
+https://mp.weixin.qq.com/s/Ln5EPqbdNjy3HrVM7Wwe2g
+
+Heartrate：一个牛逼的工具，Python执行实时可视化
+
+https://mp.weixin.qq.com/s/J8IHOdUevyn9YS09D8Ou-g
+
+聊聊Python发送邮件的几种方式
+
+https://mp.weixin.qq.com/s/L0FoYh1npy-3rwRQWcj71g
+
+五大自动化测试的Python框架
+
+https://mp.weixin.qq.com/s/Oq316PWN10FBWzv-X26pAg
+
+高性能Python CPU Memery分析器
+
+https://mp.weixin.qq.com/s/wr18ylCJyJOX83BhbvGXng
+
+13个Python开发者必知的Python GUI库
+
+https://mp.weixin.qq.com/s/S_mIspLOrmj8ny0VHP52ZA
+
+Python高级技巧：lazy property
+
+https://mp.weixin.qq.com/s/QWH9qhKzECX-1rqDLfZyhw
+
+如何加速Python代码？
+
+https://mp.weixin.qq.com/s/OT9yRMFsNowXBbwKqmzP-Q
+
+一起来尝试借助哈密顿环自动玩贪吃蛇小游戏呀~
+
+哈密顿图：由指定的起点前往指定的终点，途中经过所有其他节点且只经过一次。
+
+https://segmentfault.com/a/1190000000414339
+
+一行Python代码实现并行
+
 https://mp.weixin.qq.com/s/nNGTVQDt9TxHeIKOyxh1Jw
 
 WTF Python：盘点鲜为人知的Python特性

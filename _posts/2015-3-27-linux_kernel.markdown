@@ -65,7 +65,9 @@ simple_lkm: module verification failed: signature and/or  required key missing -
 
 3）自动加载LKM
 
-参考文献: [http://edoceo.com/howto/kernel-modules](http://edoceo.com/howto/kernel-modules)
+参考文献: 
+
+http://edoceo.com/howto/kernel-modules
 
 以下为节选:
 
@@ -83,7 +85,9 @@ rc.local - Using this method loads the modules after all other services are star
 
 PS：/etc/modules由/etc/init/module-init-tools.conf 或 /etc/init/kmod.conf负责执行。
 
-例子见[这里](https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/linux_driver/simple-lkm)。
+示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/linux_driver/simple-lkm
 
 * proc文件系统
 
@@ -91,7 +95,9 @@ PS：/etc/modules由/etc/init/module-init-tools.conf 或 /etc/init/kmod.conf负�
 
 这个过程同时也打开了我的思路——还有什么比内核代码更丰富的例子库呢？不管是proc文件系统，还是普通的设备驱动，在内核代码里例子比比皆是。
 
-因此，有了下面的[例子](https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/linux_driver/simple-vfs)。
+因此，有了下面的示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/linux_driver/simple-vfs
 
 这里需要注意的是:
 
@@ -195,7 +201,7 @@ IO操作之所以用宏实现，是由于这是和具体机器相关的操作，
 
 `obj-$(CONFIG_FOO) += foo.o`
 
-这里的`$(CONFIG_FOO)`可以为y(编译进内核) 或m(编译成模块)。如果CONFIG_FOO不是y 和m,那么该文件就不会被编译联接了。通过控制`$(CONFIG_FOO)`的值，即可实现.o文件一级的条件编译。
+这里的`$(CONFIG_FOO)`可以为y(编译进内核)或m(编译成模块)。如果CONFIG_FOO不是y和m,那么该文件就不会被编译联接了。通过控制`$(CONFIG_FOO)`的值，即可实现.o文件一级的条件编译。
 
 # 内核重启
 

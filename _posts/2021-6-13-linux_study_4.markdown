@@ -345,6 +345,36 @@ swapon --show
 swapoff /swapfile
 ```
 
+# eBPF
+
+eBPF是一项革命性技术，它能在内核中运行沙箱程序（sandbox programs），而无需修改内核源码或者加载内核模块。
+
+参考：
+
+https://ebpf.io/zh-cn/
+
+一个eBPF的专栏
+
+https://www.ebpf.top/
+
+一个eBPF的专栏
+
+# pahole
+
+pahole可用来检查结构体中的内存漏洞，可作为内存优化的一个工具。
+
+代码：
+
+https://git.kernel.org/pub/scm/devel/pahole/pahole.git
+
+# DWARF
+
+DWARF第一版发布于1992年，主要是为UNIX下的调试器提供必要的调试信息。
+
+https://zhuanlan.zhihu.com/p/419908664
+
+DWARF, 调试信息存储格式
+
 # Linux参考资源
 
 https://www.kernel.org/doc/html/latest/
@@ -394,11 +424,3 @@ https://mp.weixin.qq.com/s/IucIsbJPo4eUUopV8xNN9w
 https://mp.weixin.qq.com/s/zBtdhjAOjwcJbGluccwOlA
 
 我和面试官之间关于操作系统的一场对弈！写了很久，希望对你有帮助！
-
-https://mp.weixin.qq.com/s/3Pp7wkDO6Rnxb5aZP0sacw
-
-一文了解操作系统I/O
-
-https://mp.weixin.qq.com/s/xM8uvYbX6VY8MVZrYkvCUg
-
-链接选项rpath的原理和应用
