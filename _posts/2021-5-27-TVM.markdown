@@ -273,7 +273,7 @@ TinyML-TVM是如何驯服Tiny的（下）
 
 深度学习编译生态围绕着四类抽象展开:
 
-计算图表示(computational graph)：计算图可以把深度学习程序表示成DAG，然后进行类似于算子融合，改写，并行等高级优化。Relay, XLA, Torch-MLIR，ONXX 等基本都在这一级别。
+计算图表示(computational graph)：计算图可以把深度学习程序表示成DAG（Directed Acyclic Graph），然后进行类似于算子融合，改写，并行等高级优化。Relay, XLA, Torch-MLIR，ONXX 等基本都在这一级别。
 
 张量程序表示(tensor program): 在这个级别我们需要对子图进行循环优化，对于DSA支持还要包含张量化和内存搬移的优化。
 

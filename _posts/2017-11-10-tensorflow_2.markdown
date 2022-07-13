@@ -51,6 +51,11 @@ decoder = { tf.equal(image_ext, '.png'):  decode_png,
             tf.equal(image_ext, '.jpg'):  decode_jpg}
 image_tensor = tf.case(decoder, default = decode_png, exclusive = True)
 ```
+
+---
+
+控制流对于多数的AI加速硬件并不友好，违背了Directed Acyclic Graph的假设。所以针对这一点，TF亦提出了condition sub graph和body sub graph的概念。
+
 # 多核(multicore)，多线程(multi-thread)
 
 在Tensorflow程序中，我们会经常看到”with tf.device("/cpu:0"): “ 这个语句。单独使用这个语句，而不做其他限制，实际上默认tensorflow程序占用所有可以使用的内存资源和CPU核。

@@ -323,7 +323,7 @@ https://zhuanlan.zhihu.com/p/42345854
 
 # Horovod
 
-Horovod是Uber开源的一套分布式深度学习框架。
+Horovod是Uber开源的一套分布式深度学习框架。Horovod支持TensorFlow、Keras、PyTorch和Apache MXNet等后端框架。
 
 官网：
 
