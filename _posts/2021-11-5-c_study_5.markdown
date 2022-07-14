@@ -132,6 +132,18 @@ http://blog.chinaunix.net/uid-7426920-id-2627743.html
 
 ANSI和K&R两种函数定义风格
 
+## SFINAE
+
+SFINAE：Substitution failure is not an error
+
+https://en.cppreference.com/w/cpp/language/sfinae
+
+官方文档
+
+https://zhuanlan.zhihu.com/p/21314708
+
+C++模板进阶指南：SFINAE
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/23016264
