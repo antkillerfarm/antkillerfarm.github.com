@@ -348,3 +348,7 @@ LeCun哈佛演讲：《机器怎样才能像人和动物一样学习》（135页
 https://www.zhihu.com/question/427088601
 
 在CV/NLP/DL领域中，有哪些修改一行代码或者几行代码提升性能的算法？
+
+https://www.zhihu.com/question/541441389
+
+有没有一种神经网络结构能同时求得其概率密度函数？
