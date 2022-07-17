@@ -263,9 +263,9 @@ $$G_H\left ( x_i-x \right )=\left | H \right |^{-\frac{1}{2}}G\left ( H^{-\frac{
 
 G(x)是一个单位的核函数。H是一个正定的对称d×d矩阵，称为带宽矩阵，其是一个对角阵。$$w\left ( x_i \right )\geqslant 0$$是每一个样本的权重。对角阵H的形式为：
 
-$$H=\begin{pmatrix}
+$$H=\begin{bmatrix}
 h_1^2 & 0 & \cdots & 0\\ 
 0 & h_2^2 & \cdots & 0\\ 
 \vdots  & \vdots  &  & \vdots \\ 
 0 & 0 & \cdots & h_d^2
-\end{pmatrix}_{d\times d}$$
+\end{bmatrix}_{d\times d}$$

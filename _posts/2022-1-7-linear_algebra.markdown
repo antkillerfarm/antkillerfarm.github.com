@@ -79,19 +79,19 @@ $$\left\langle \psi , \chi \right\rangle = \int_a^b \psi(x) \overline{\chi(x)} d
 
 matrix product的定义如下（以3阶方阵为例）：
 
-$$\mathbf{AB} = \begin{pmatrix}
+$$\mathbf{AB} = \begin{bmatrix}
 a & b & c \\
 p & q & r \\
 u & v & w
-\end{pmatrix} \begin{pmatrix}
+\end{bmatrix} \begin{bmatrix}
 \alpha & \beta & \gamma \\
 \lambda & \mu & \nu \\
 \rho & \sigma & \tau \\
-\end{pmatrix} =\begin{pmatrix}
+\end{bmatrix} =\begin{bmatrix}
 a\alpha + b\lambda + c\rho & a\beta + b\mu + c\sigma & a\gamma + b\nu + c\tau \\
 p\alpha + q\lambda + r\rho & p\beta + q\mu + r\sigma & p\gamma + q\nu + r\tau \\
 u\alpha + v\lambda + w\rho & u\beta + v\mu + w\sigma & u\gamma + v\nu + w\tau
-\end{pmatrix}$$
+\end{bmatrix}$$
 
 可以看出，积矩阵的每个元素是矩阵A、B相应行列向量的内积。
 

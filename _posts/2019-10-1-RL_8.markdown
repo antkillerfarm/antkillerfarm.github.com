@@ -57,7 +57,7 @@ $$\Delta\theta=\alpha\nabla_\theta J(\theta)$$
 
 其中，
 
-$$\nabla_\theta J(\theta)=\begin{pmatrix} \frac{\partial J(\theta)}{\partial \theta_1} \\ \vdots \\ \frac{\partial J(\theta)}{\partial \theta_n} \end{pmatrix}$$
+$$\nabla_\theta J(\theta)=\begin{bmatrix} \frac{\partial J(\theta)}{\partial \theta_1} \\ \vdots \\ \frac{\partial J(\theta)}{\partial \theta_n} \end{bmatrix}$$
 
 然而，梯度函数有的时候并不简单，也许并不可微。这时可以使用有限差分法：
 

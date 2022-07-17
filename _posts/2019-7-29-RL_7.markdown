@@ -62,11 +62,11 @@ $$\Delta w=\alpha (v_\pi(S)-\hat v(S,w))x(S)$$
 
 最简单的一类线性函数，被叫做Table Lookup Features：
 
-$$x^{table}(S)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}$$
+$$x^{table}(S)=\begin{bmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{bmatrix}$$
 
 则：
 
-$$\hat v(S,w)=\begin{pmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{pmatrix}\begin{pmatrix} w_1 \\ \vdots \\ w_n \end{pmatrix}$$
+$$\hat v(S,w)=\begin{bmatrix} 1(S=s_1) \\ \vdots \\ 1(S=s_n) \end{bmatrix}\begin{bmatrix} w_1 \\ \vdots \\ w_n \end{bmatrix}$$
 
 ## Incremental Prediction Algorithms
 
