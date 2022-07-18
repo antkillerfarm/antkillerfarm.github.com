@@ -300,6 +300,10 @@ https://github.com/facebook/folly
 
 https://github.com/abseil/abseil-cpp
 
+而且还有一个给python用的基础库：
+
+https://github.com/abseil/abseil-py
+
 ## ACE
 
 Douglas C. Schmidt写的一个C++的网络库。历史非常悠久了（1993年），其中的很多部分都有很高的参考价值。

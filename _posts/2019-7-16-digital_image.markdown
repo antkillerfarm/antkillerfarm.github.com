@@ -230,6 +230,14 @@ https://mp.weixin.qq.com/s/zPHNtK4wUQnVLkIXcjqd_A
 
 韩国科技院Lin Wang最新TPAMI《深度学习HDR成像》综述论文阐述深度学习高动态范围成像方法
 
+## Noise Reduce
+
+2D降噪：只在2维空间域上进行降噪处理。基本方法：对一个像素将其与周围像素平均，平均后噪声降低，但缺点是会造成画面模糊，特别是物体边缘部分。因此对这种算法的改进主要是进行边缘检测，边缘部分的像素不用来进行模糊。
+
+3D降噪：增添了时域处理，因此变为3维。和2d降噪的不同在于，2d降噪只考虑一帧图像，而3d降噪进一步考虑帧与帧之间的时域关系，对每个像素进行时域上的平均。例如，假设场景静止，那么连续两帧图像内容没变，他们的差值就是2倍的噪声。通过减少时域上的改变降低噪声。
+
+相比2d降噪，3d降噪效果更好，且不会造成边缘的模糊，但存在的主要问题是：画面不会是完全静止的，如果对不属于同一物体的两个点进行降噪处理会造成错误。因此该方法需要运动估计，其效果好坏也与运动估计相关。而运动估计计算量大，耗时长，是制约3d降噪的主要瓶颈。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/od9uDZdRU4QaBKPHb0tLag
@@ -375,51 +383,3 @@ https://mp.weixin.qq.com/s/gOikxUxWpqdDRr6_KT2jxQ
 https://mp.weixin.qq.com/s/7fvVmmpPSldwa3TZ3dVb2g
 
 3D LUT--色彩校正的利器
-
-https://mp.weixin.qq.com/s/m_EKOLjWjTyx4RBxsAAAGg
-
-4x4阵列摄/“深感”摄
-
-https://mp.weixin.qq.com/s/dX_thGA2V_-AMjDGTUgWrg
-
-计算摄影技术：身怀绝技的扫地僧
-
-https://mp.weixin.qq.com/s/ZSczU1_J_exb2oreiHtK3g
-
-夜景拍照之sensor篇
-
-https://mp.weixin.qq.com/s/eyIeLaBZ0f_EsxglsUuH8A
-
-深度学习自动构图研究报告
-
-https://mp.weixin.qq.com/s/k2JLF_aM3j68GjEByCZF-g
-
-模拟/数字增益对图像噪声的影响
-
-https://mp.weixin.qq.com/s/QmEQuEk2B_fAleewTuNClg
-
-3D成像技术和CMOS传感器的发展方向简析
-
-https://mp.weixin.qq.com/s/R7wnyHT6M-KF3ZMz0bPrVg
-
-这台相机没镜头！美国教授新发明，一块玻璃可成像，拍照给计算机看
-
-https://mp.weixin.qq.com/s/j970Qp8Cz2fpbImujkS2Xg
-
-自动驾驶应用中的LED flicker问题
-
-https://mp.weixin.qq.com/s/Yy-XEyM0YGTRFUX2uWgNKw
-
-夜景拍照之算法篇
-
-https://mp.weixin.qq.com/s/h7MQhZjnP3lLkLD0cKNixA
-
-高动态范围成像的理论基础
-
-https://mp.weixin.qq.com/s/Wd6LD8Rme8XJwtYWU-ALtQ
-
-动态范围压缩（DRC）的四种方法
-
-https://mp.weixin.qq.com/s/7_mDPCEq3S-843PwUQSwXA
-
-车载相机image sensor选型

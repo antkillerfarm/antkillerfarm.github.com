@@ -307,7 +307,11 @@ https://mp.weixin.qq.com/s/lHFbec5oBshoASjJQHXxtg
 
 ## @的用法
 
-@在python中是装饰器的意思，它的用法比较复杂。假设我们要增强函数的功能，比如，在函数调用前后自动打印日志，但又不希望修改函数的定义，这种在代码运行期间动态增加功能的方式，称之为“装饰器”（Decorator）。
+`@`在python中是装饰器的意思，它的用法比较复杂。假设我们要增强函数的功能，比如，在函数调用前后自动打印日志，但又不希望修改函数的定义，这种在代码运行期间动态增加功能的方式，称之为“装饰器”（Decorator）。
+
+在python 3.5以后，`@`是一个操作符，表示矩阵-向量乘法。
+
+`A@x`就是矩阵-向量乘法`np.dot(A, x)`。
 
 参见：
 
@@ -410,7 +414,7 @@ python中del的用法
 
 ## deep copy
 
-https://mp.weixin.qq.com/s/0jjJrclscaA5LkdhHUNkUg
+https://blog.csdn.net/qq_32907349/article/details/52190796
 
 Python的进阶：copy()与deepcopy()区别
 
