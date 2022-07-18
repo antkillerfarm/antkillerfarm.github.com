@@ -225,9 +225,7 @@ https://github.com/Microsoft/MMdnn
 
 从趋势来看，仅仅纠结于各种模型的导入/导出已经不再是最佳的做法，DL compiler才是王道。
 
-https://mp.weixin.qq.com/s/fal6vz9gaZMbR41QMGE3AQ
-
-MLIR发布：全新的中介码与编译器框架
+---
 
 Google（2020.9）又推出了IREE项目，定位和TVM类似。
 
@@ -235,7 +233,25 @@ Google（2020.9）又推出了IREE项目，定位和TVM类似。
 
 https://google.github.io/iree/
 
+## MLIR
+
+代码：
+
+tensorflow/compiler/mlir
+
+三种到XLA的IR dialect：
+
+chlo：client HLO dialect，上层前端的IR。
+
+mhlo：支持动态shape的IR。
+
+lmhlo：内存分配之后的IR，也就是无动态shape的IR。
+
 参考：
+
+https://mp.weixin.qq.com/s/fal6vz9gaZMbR41QMGE3AQ
+
+MLIR发布：全新的中介码与编译器框架
 
 https://zhuanlan.zhihu.com/p/361448250
 
