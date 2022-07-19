@@ -261,6 +261,10 @@ https://zhuanlan.zhihu.com/p/141256429
 
 MLIR文章视频汇总
 
+https://zhuanlan.zhihu.com/p/379063169
+
+MLIR: 编译器基础架构重定义
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/32711259

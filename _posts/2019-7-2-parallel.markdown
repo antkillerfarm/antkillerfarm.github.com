@@ -9,6 +9,22 @@ category: DL acceleration
 
 # 并行 & 框架 & 优化
 
+## 概述
+
+![](/images/img4/Parallel.png)
+
+![](/images/img4/Deep_Learning_System.png)
+
+## 教程
+
+https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial
+
+Introduction to Parallel Computing Tutorial
+
+https://www.cnblogs.com/Carrawayang/p/14691607.html
+
+上文的中文版
+
 ## 论文
 
 《Demystifying Parallel and Distributed Deep Learning: An In-Depth Concurrency Analysis》
@@ -49,12 +65,6 @@ https://mp.weixin.qq.com/s/-kizIk3ZXqu7UNqAb3QlQw
 
 C++并发编程（C++11到C++17）
 
-## 概述
-
-![](/images/img4/Parallel.png)
-
-![](/images/img4/Deep_Learning_System.png)
-
 ## Distributed Data Parallel
 
 https://mp.weixin.qq.com/s/52Wz4pUI8egKugMFuknWKw
@@ -76,6 +86,32 @@ DDP系列第二篇：实现原理与源代码解析
 https://zhuanlan.zhihu.com/p/250471767
 
 DDP系列第三篇：实战与技巧
+
+# tf.distribute & MultiDevice
+
+MirroredStrategy：单机多卡训练
+
+MultiWorkerMirroredStrategy：多机训练
+
+CentralStorageStrategy也执行同步训练，但是变量不会被镜像，而是放在CPU上。各操作(operation)在本地GPU之间复制进行。如果只有一个GPU，变量和操作都会放在GPU上。在对CPU上的变量进行更新前，该策略会先将所有 GPU副本的上的变量梯度进行聚合，然后应用到CPU变量更新中。
+
+---
+
+当数据量很大时，单个节点需要很长时间才能完成1轮训练，这对于动辄十几轮或几十轮的训练来说是不可忍受的，所以可以将数据进行划分并分配给多个节点，每个节点处理自己的一小部分数据，从而加快整体的训练速度。在TensorFlow中**数据并行**也被称为图间复制(Between-graph Replication)。
+
+模型并行是指将模型切分为多个部分并将各个部分放置到不同的节点进行训练的分布式模式。因为当模型很复杂，参数很多时，由于内存的限制，单个节点无法将整个模型加载并进行训练，所以需要将模型切割为更小的部分，并将各个部分运行在不同的节点上以完成训练。在TensorFlow中**模型并行**也被称为图内复制 (In-graph Replication)。
+
+---
+
+tensorflow::ProcessFunctionLibraryRuntime::RunMultiDevice
+
+https://www.cnblogs.com/rossiXYZ/p/16142677.html
+
+TensorFlow之分布式变量（该作者写了一系列的TF分布式文章）
+
+示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/xla/multi_device_lenet_xla.py
 
 ## 参考
 
@@ -273,86 +309,3 @@ https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750181&idx=1&sn=156dac
 
 GPU捉襟见肘还想训练大批量模型？谁说不可以
 
-https://mp.weixin.qq.com/s/UbZtUL6Iveb4S3nTU0liGw
-
-深度神经网络的分布式训练概述：常用方法和技巧全面总结
-
-https://mp.weixin.qq.com/s/kLXJsHbBnRIFC3NLChPhzA
-
-如何高效进行大规模分类？港中文联合商汤提出新方法
-
-https://mp.weixin.qq.com/s/F10UaaoxGPOE4pc59LBCRw
-
-数据并行化对神经网络训练有何影响？谷歌大脑进行了实证研究
-
-https://mp.weixin.qq.com/s/UF7DDenUQJ3bL83IHxOkIw
-
-分布式优化算法及其在多智能体系统与机器学习中的应用
-
-https://mp.weixin.qq.com/s/6h9MeBs89hTtWsYSZ4pZ5g
-
-蚂蚁金服核心技术：百亿特征实时推荐算法揭秘
-
-https://mp.weixin.qq.com/s/xV5cLbCPb7Nh6i4i7DxJIQ
-
-没人告诉你的大规模部署AI高效流程！
-
-https://mp.weixin.qq.com/s/8R7YhcZ_Dt0oFIF3bQovxw
-
-为了提升DL模型性能，阿里工程师打造了流式编程框架
-
-https://mp.weixin.qq.com/s/z6gXp-EeDID1ed8_DsUbOg
-
-90秒训练AlexNet！商汤刷新纪录
-
-https://mp.weixin.qq.com/s/HY2yPZ--Zm5_m3B70baWjQ
-
-谷歌开源效率怪兽GPipe，速度提升25倍，CIFAR-10精度达到99%
-
-https://mp.weixin.qq.com/s/HQW2bPyDY_3ecZWP6NYr-w
-
-大规模机器学习在LinkedIn预测模型中的应用实践
-
-https://mp.weixin.qq.com/s/i1PLA1xr3CefKx1EcVUVIg
-
-谷歌破世界纪录！圆周率计算到小数点后31.4万亿位
-
-https://mp.weixin.qq.com/s/rX8L63-jDGJT6lCAj04I3Q
-
-独家解读！阿里重磅发布机器学习平台PAI 3.0
-
-https://mp.weixin.qq.com/s/Ye2GVTFIrX3SbU1-4cDLoQ
-
-你天天叫的外卖，你知道这里面深度学习的水有多深吗
-
-https://mp.weixin.qq.com/s/FIWfbCLgckVzeNvfThIl4Q
-
-阿里线下智能方案进化史
-
-https://mp.weixin.qq.com/s/pqxiF6yEZzrw8qXu2hEsaA
-
-单机训练速度提升640倍！独家解读快手商业广告模型GPU训练平台Persia
-
-https://mp.weixin.qq.com/s/Jcz4XWDjMmbhmAiI_zBQXQ
-
-流式计算优化：时效性
-
-https://mp.weixin.qq.com/s/iAHvfgn54zIwfM9K8KFJnw
-
-DLM：微信大规模分布式n-gram语言模型系统
-
-https://mp.weixin.qq.com/s/s7sHzzLANOp8-1LxgXQskA
-
-谷歌开发者大会上，蚂蚁金服开源ElasticDL分布式深度学习系统
-
-https://mp.weixin.qq.com/s/IQMXg6nIJO-9-IG3mJpvRg
-
-ElasticDL：同时提升集群利用率和研发效率的分布式深度学习框架
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771181&idx=1&sn=30b2a5abc7261b4f2ea122e8e96fdabf
-
-世界第一超算跑深度学习模型，2.76万块V100 GPU将分布式训练扩展到极致
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771231&idx=2&sn=6907d6d7a98eab353a076ed48352aadc
-
-15分钟完成Kinetics视频识别训练，除了超级计算机你还需要TSM

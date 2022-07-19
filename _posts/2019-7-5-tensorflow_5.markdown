@@ -41,20 +41,6 @@ https://mp.weixin.qq.com/s/C7QdVathJ8YTXF-zXPC-Ow
 
 有人分析了7个基于JS语言的DL框架，发现还有很长的路要走
 
-# tf.distribute & MultiDevice
-
-tf.distribute.MirroredStrategy
-
-tensorflow::ProcessFunctionLibraryRuntime::RunMultiDevice
-
-https://www.cnblogs.com/rossiXYZ/p/16142677.html
-
-TensorFlow之分布式变量（该作者写了一系列的TF分布式文章）
-
-示例：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/xla/multi_device_lenet_xla.py
-
 # 细节
 
 执行`session.run(out)`，会在终端打印out的值，但执行`res = session.run(out)`则不会。

@@ -110,6 +110,8 @@ NVIDIA Deep Learning Accelerator是一个开源的用于inference的芯片方案
 
 http://nvdla.org/
 
+NVDLA由于其强大的背景，被很多芯片公司拿来套壳开发。
+
 参考：
 
 https://mp.weixin.qq.com/s/aFmr6WKhZ3E-PsF6-uJvJg
