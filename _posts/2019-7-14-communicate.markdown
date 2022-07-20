@@ -434,3 +434,7 @@ https://zhuanlan.zhihu.com/p/103141172
 https://www.zhihu.com/question/458007412
 
 为什么显卡更新换代极快，每年都会有更强的新系列，而声卡却永远停留在了"兼容DX9的集成声卡"？
+
+https://blog.csdn.net/OneFlow_Official/article/details/120574569
+
+计算机架构史上的一次伟大失败（Multiflow公司与VLIW）

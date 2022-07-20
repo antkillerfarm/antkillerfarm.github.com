@@ -113,6 +113,16 @@ TensorFlow之分布式变量（该作者写了一系列的TF分布式文章）
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/xla/multi_device_lenet_xla.py
 
+## Pathways
+
+https://blog.csdn.net/OneFlow_Official/article/details/124054450
+
+解读谷歌Pathways架构（一）：Single-controller与Multi-controller
+
+https://blog.csdn.net/OneFlow_Official/article/details/124113864
+
+解读谷歌Pathways架构（二）：向前一步是OneFlow
+
 ## 参考
 
 https://mp.weixin.qq.com/s/ai_XI8ddP5I2m3ChCqnQsA

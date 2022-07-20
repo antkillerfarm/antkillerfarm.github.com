@@ -119,6 +119,10 @@ https://mp.weixin.qq.com/s/7vxJTh4IHeqUsc7IsLFLSA
 
 解密哈萨比斯投资的IPU，他们要分英伟达一杯羹
 
+https://www.cnblogs.com/zuyunfei/p/16349835.html
+
+AI芯片：编程模型和硬件抽象（Nvidia CUDA vs Graphcore Poplar）
+
 ## HBM
 
 HBM==High Bandwidth Memory是一款新型的CPU/GPU内存芯片（即 “RAM”），其实就是将很多个DDR芯片堆叠在一起后和GPU封装在一起，实现大容量，高位宽的DDR组合阵列。

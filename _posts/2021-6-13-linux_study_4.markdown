@@ -119,6 +119,8 @@ https://zhuanlan.zhihu.com/p/347445164
 
 DPDK(Data Plane Development Kit)由Intel开发，针对Linux Kernel传统的数据包捕获模式的问题，进行了一定程度的优化。
 
+内核网络栈的根本瓶颈是内核是通用软件，要考虑复杂多样的使用场景和历史路径，因此不能完全为性能而生，所以实现方式上有很多束缚和历史遗留问题；而且DPDK只专注于高IO场景，可以以性能为最优先去重新实现网络栈。DPDK可以看作是优先性能的专用内核软件。
+
 官网：
 
 https://www.dpdk.org/
@@ -132,6 +134,10 @@ DPDK解析
 https://zhuanlan.zhihu.com/p/347693559
 
 DPDK的基本原理、学习路线总结
+
+https://www.zhihu.com/question/27413080
+
+Intel推出DPDK开发包的意义是什么？
 
 # 文件系统
 

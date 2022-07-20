@@ -204,6 +204,10 @@ https://www.visualcapitalist.com/ai-revolution-infographic/
 
 Visualizing the AI Revolution in One Infographic
 
+https://blog.csdn.net/OneFlow_Official/article/details/125013611
+
+深度学习六十年简史
+
 # BP算法
 
 单层神经网络的学习算法最早由Donald Olding Hebb提出，因此又被叫做Hebb算法。但是这种算法无法扩展到多层神经网络，这最终导致了AI的第一个冬天，直到BP算法的出现。

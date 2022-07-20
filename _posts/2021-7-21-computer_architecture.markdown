@@ -33,10 +33,6 @@ https://en.wikipedia.org/wiki/Flynn%27s_taxonomy
 
 CPU通常是SISD和SIMD的，而GPU则是SIMD的，超级计算机则是MIMD的。
 
-SIMT: Single Instruction Multiple Threads.
-
-SIMT最早是Nvidia发明的概念，仅用于GPU领域。它和SIMD的差异很小。
-
 参考：
 
 https://zhuanlan.zhihu.com/p/31271788
@@ -50,6 +46,32 @@ https://zhuanlan.zhihu.com/p/113360369
 https://mp.weixin.qq.com/s/UExKPAMbA9EfRW35P3WnFA
 
 RISC-V其实是反潮流，但是……
+
+## SPMD和MPMD
+
+Single Program Multiple Data (SPMD)：
+
+![](/images/img4/spmd_model.gif)
+
+单个程序：所有任务同时执行同一程序的副本。该程序可以是线程，消息传递，并行数据或混合数据。
+
+多个数据：所有任务可能使用不同的数据。
+
+Multiple Program Multiple Data (MPMD)：
+
+![](/images/img4/mpmd_model.gif)
+
+多个程序：任务可以同时执行不同的程序。程序可以是线程，消息传递，并行数据或混合数据。
+
+多个数据：所有任务可能使用不同的数据。
+
+SPMD和MPMD都是编程模型的概念。
+
+**编程模型就是对编程共性的抽象。而体系结构是对于硬件的抽象。**
+
+SIMT: Single Instruction Multiple Threads.
+
+SIMT最早是Nvidia发明的概念，它也是一种编程模型。
 
 ## RISC vs. CISC
 
