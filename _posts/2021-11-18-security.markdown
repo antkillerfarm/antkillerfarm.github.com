@@ -262,3 +262,7 @@ https://zhuanlan.zhihu.com/p/28528257
 https://www.sohu.com/a/250882983_355019
 
 一个42KB的文件，解压完其实是个4.5PB的“炸弹”
+
+https://www.zhihu.com/question/24215752
+
+svchost.exe为什么会占用那么多CPU？

@@ -9,6 +9,42 @@ category: Nature
 
 # 化学
 
+“洗洞”，就是一座废弃金矿用水和化学物质再“洗”一遍，能再淘出不少的金砂、金石，让这座金矿的价值直接翻个倍，然而被“洗”过的矿洞，却会变成夺命的“大口”。因为洗洞要使用高毒物质氰化钠，氰化钠遇水会释放出更毒的氢氰酸气体。所以洗洞者都要戴着防毒面具、背着氧气瓶进去“淘金”，一旦面具破损，他们就会马上死于矿坑。
+
+---
+
+硅和矽的区别，说到底就和Sodium和Natrium，Potassium和Kalium一样，只不过是近代欧洲化学用名中，反映在西欧的两大主流语族——日耳曼系和拉丁系名称上的区别而已。这两大系统分别以不同的途径传入中国，比如日耳曼系的路线是德语~荷兰语~日本兰学家~明治后日本化学教材~由日语（和制汉字）翻译到国内，拉丁系则是由拉丁语（欧洲科学领域的通用语）~法语~英语~英美传教士~由英语翻译到国内。
+
+https://www.zhihu.com/question/359213795
+
+大陆为何改“矽”为“硅”？
+
+---
+
+https://mp.weixin.qq.com/s/0fdnEWpLvPSbweFh0v4x9A
+
+科学家的浪漫，是用激光画一道彩虹（姜黄素）
+
+https://mp.weixin.qq.com/s/TM8Cc3AI7Vo5H6VnOl3gyw
+
+唯一两获诺贝尔化学奖的科学家，自称“只是把实验室搞砸的家伙”（弗雷德里克·桑格）
+
+https://mp.weixin.qq.com/s/wIaMPdYWHzn9vDpiuWZOVg
+
+解读2019诺贝尔化学奖：他们创造了一个可充电的世界
+
+https://wenku.baidu.com/view/209d2f8183d049649b665894.html
+
+超纯水18.2的意义
+
+https://mp.weixin.qq.com/s/cYa9uQSjtxgtJawhJ8WYcw
+
+古今取暖神器大赏：一场关于温度与风度的奋斗史
+
+https://mp.weixin.qq.com/s/wRgzQ43fxHkYCl2g5ei3Eg
+
+做环境毒理学挺焦虑的：做不出毒性，愁论文，做出毒性，又替地球担心
+
 https://mp.weixin.qq.com/s/A9M_2DVqmFQaTdSy2yEJ1A
 
 为什么烤面包会这么香？
@@ -266,19 +302,3 @@ https://new.qq.com/omn/20180819/20180819A011JT.html
 http://www.qdaily.com/articles/18872.html
 
 杜邦要合并了，过去一百年，这家公司的发明都改变了些什么？
-
-https://mp.weixin.qq.com/s/MkVeQ7xYAHV8mA1zmdr0qg
-
-四川五通桥事故频发：“化工围城”之殇
-
-https://mp.weixin.qq.com/s/jX9AMoQDTMZ8s2m_RFg0Pg
-
-这家马桶刷公司，生产了最早的现代人造圣诞树
-
-https://mp.weixin.qq.com/s/aUYieCVLLom7EaWIhfccRQ
-
-院士写了首《化工之歌》，聊聊化工那些事
-
-https://zhuanlan.zhihu.com/p/372974514
-
-为什么不趁油价下跌大量购入原油并注入油田，以备不时之需？

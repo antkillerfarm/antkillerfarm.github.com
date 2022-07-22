@@ -242,3 +242,23 @@ https://mp.weixin.qq.com/s/vSLGvcII2z8DBKBrV6JLOA
 https://mp.weixin.qq.com/s/VIMKnqcoNw4VGigZJiDoYg
 
 泾渭分明：中国北方的气候变迁史
+
+# 化学+
+
+## 化学工业（续）
+
+https://mp.weixin.qq.com/s/MkVeQ7xYAHV8mA1zmdr0qg
+
+四川五通桥事故频发：“化工围城”之殇
+
+https://mp.weixin.qq.com/s/jX9AMoQDTMZ8s2m_RFg0Pg
+
+这家马桶刷公司，生产了最早的现代人造圣诞树
+
+https://mp.weixin.qq.com/s/aUYieCVLLom7EaWIhfccRQ
+
+院士写了首《化工之歌》，聊聊化工那些事
+
+https://zhuanlan.zhihu.com/p/372974514
+
+为什么不趁油价下跌大量购入原油并注入油田，以备不时之需？
