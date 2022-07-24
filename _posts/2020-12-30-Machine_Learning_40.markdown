@@ -268,3 +268,9 @@ https://mp.weixin.qq.com/s/4mn2RqkefkpAD3NsEhqHpQ
 https://mp.weixin.qq.com/s/TtuC4DRqz1-QIDI66rBWcA
 
 内蒙人报高考志愿，比在纽交所炒股还刺激
+
+---
+
+https://www.zhihu.com/question/544511862
+
+网红教授陈春花学历遭质疑，其博士毕业学校为私人公司。还有哪些信息值得关注？
