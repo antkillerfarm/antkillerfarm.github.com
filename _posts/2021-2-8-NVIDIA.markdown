@@ -46,6 +46,10 @@ RTX系列属于对于机器学习来说性价比较高的显卡，但是双精�
 
 `sudo ubuntu-drivers autoinstall`
 
+N卡型号：
+
+`nvidia-smi -L`
+
 参考：
 
 https://zhuanlan.zhihu.com/p/59618999
@@ -76,8 +80,6 @@ CUTLASS：另一个线性计算库。功能比cuBLAS更多。
 
 cuDNN：DL计算库。
 
-NCCL：多结点、多GPU的通信库。
-
 TensorRT：嵌入式设备上专用于DL inference的计算库。
 
 NVIDIA DIGITS：一款web应用工具，可在网页上对Caffe进行图形化操作和可视化。
@@ -99,10 +101,6 @@ AI视频处理加速引擎TensorRT及Deepstream介绍
 https://zhuanlan.zhihu.com/p/35657027
 
 高性能深度学习支持引擎实战——TensorRT
-
-https://www.zhihu.com/question/63219175
-
-如何理解Nvidia英伟达的Multi-GPU多卡通信框架NCCL？
 
 ## NVDLA
 
@@ -252,6 +250,10 @@ HIP：Heterogeneous Interface for Portability。
 
 HIP是AMD提出的C++接口，号称能兼容CUDA和自家的ROCm。
 
+https://zhuanlan.zhihu.com/p/545296023
+
+写给CUDA开发者AMD ROCm & Intel oneAPI开发贴士
+
 # Shader
 
 基于OpenGL的OpenGL Shading Language，简称GLSL;
@@ -285,6 +287,10 @@ https://zhuanlan.zhihu.com/p/25595069
 https://zhuanlan.zhihu.com/p/25939794
 
 卡通渲染（下）
+
+https://zhuanlan.zhihu.com/p/544879511
+
+GPU底层机制分析：显存分配开销
 
 # GPU通信技术
 
@@ -333,6 +339,26 @@ Tesla V100中以NVLink连接的GPU至GPU和GPU至CPU通信。
 ![](/images/img3/nvswitch.png)
 
 NVSwitch是首款节点交换架构，可支持单个服务器节点中16个全互联的GPU，并可使全部8个GPU对分别以300GB/s的惊人速度进行同时通信。这16个全互联的GPU还可作为单个大型加速器，拥有0.5 TB统一显存空间和2 PetaFLOPS计算性能。
+
+https://zhuanlan.zhihu.com/p/35470532
+
+全球最大GPU 背后的秘密：NVSwitch如何实现NVIDIA DGX-2的超强功力？
+
+## NCCL
+
+NCCL是Nvidia Collective multi-GPU Communication Library的简称，它是一个实现多GPU的collective communication通信库，可以在PCIe、Nvlink、InfiniBand上实现较高的通信速度。
+
+InfiniBand（直译为“无限带宽”技术，缩写为IB）是一个用于高性能计算的计算机网络通信标准，它具有极高的吞吐量和极低的延迟，用于计算机与计算机之间的数据互连。
+
+Mellanox Technologies是一家InfiniBand制造商，于2020年被Nvidia收购。
+
+https://www.zhihu.com/question/63219175
+
+如何理解Nvidia英伟达的Multi-GPU多卡通信框架NCCL？
+
+https://zhuanlan.zhihu.com/p/364816069
+
+NCCL--GPU的collective communication通信技术
 
 ## 参考
 

@@ -170,3 +170,7 @@ VG10刀芯，M390刀芯，硬度都比80年代的锰钢更高，而外层刀皮�
 https://www.zhihu.com/question/543112928
 
 网曝张小泉菜刀拍一下蒜就断了，如何看待客服称“我们的菜刀不能拍蒜”？这个解释合理吗？菜刀应怎么选？
+
+https://mp.weixin.qq.com/s/lawAIa_gZx04ZxWZv2G61A
+
+怎么看待张小泉菜刀拍蒜断裂？

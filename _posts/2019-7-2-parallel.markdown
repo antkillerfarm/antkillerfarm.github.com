@@ -123,6 +123,18 @@ https://blog.csdn.net/OneFlow_Official/article/details/124113864
 
 解读谷歌Pathways架构（二）：向前一步是OneFlow
 
+## Bucketing
+
+Bucketing是一种训练多个不同但又相似的结构的网络的方法，这些网络共享相同的参数集。
+
+一个典型的应用是循环神经网络（RNNs）。实现RNNs通常会沿时间轴将网络显式地展开。为了处理序列中的所有元素，我们需要将网络展开成最大可能的序列长度。然而这很浪费资源，因为对于较短的序列，大部分计算都浪费在填充的数据的执行上了。
+
+Bucketing不再将网络展开成最大可能长度，而是展开成多个不同长度的实例（比如，长度为5, 10, 20, 30）。在训练过程中，对于不同长度的最小批数据，使用最恰当的展开模型。
+
+https://blog.csdn.net/xuezhisdc/article/details/54927869
+
+how_to——bucketing
+
 ## 参考
 
 https://mp.weixin.qq.com/s/ai_XI8ddP5I2m3ChCqnQsA

@@ -93,6 +93,10 @@ https://zhuanlan.zhihu.com/p/377983386
 
 流式语音识别原理和实现思路
 
+https://mp.weixin.qq.com/s/zgoc3g5p-bq5xTKI_7Z8gA
+
+ASR：从GMM到Transformer
+
 # 语音合成参考资源
 
 https://mp.weixin.qq.com/s/jwV4glj8vIUKSelzeRrxSg

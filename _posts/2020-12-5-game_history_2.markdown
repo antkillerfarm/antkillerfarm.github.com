@@ -273,6 +273,10 @@ https://www.cnblogs.com/AMzz/p/12597808.html
 
 Havok物理引擎不完全指南--从入门到放弃
 
+https://www.zhihu.com/question/43616312
+
+为什么很少有游戏支持场景破坏？是因为技术问题吗？
+
 ---
 
 securom是一个过时的保护软件，可以被欺骗注册、脱壳、虚拟机等方法轻易绕过，早已经被放弃开发。
@@ -280,37 +284,3 @@ securom是一个过时的保护软件，可以被欺骗注册、脱壳、虚拟�
 https://zhuanlan.zhihu.com/p/20519697
 
 让“三大妈”头疼的Denuvo是一种怎样的技术？
-
-# RTS+
-
-## DosBox
-
-DosBox是Linux平台玩DOS老游戏的法宝。
-
-安装：
-
-`sudo apt install dosbox`
-
-启动DosBox之后，需要使用如下命令加载本地文件夹：
-
-`mount c ~/dosprom`
-
----
-
-DOS下的游戏编程主要是受内存访问范围的限制，实模式直接可以访问的内存才640KB。突破内存的技术有EMS和XMS等。发展到后期，基本上都使用DOS下32位保护模式技术。比如DPMI、DOS4GW。使用Watcom C++ & DOS4GW就能轻松获得平展的4G内存空间。
-
-## 藏宝屋
-
-https://github.com/rwv/chinese-dos-games
-
-中文DOS游戏
-
-https://github.com/skywind3000/preserve-cd
-
-绝版游戏保护工程
-
-## 参考
-
-https://www.sohu.com/a/299902957_100163351
-
-女神节特辑：那些年我们一起追过的War3女神
