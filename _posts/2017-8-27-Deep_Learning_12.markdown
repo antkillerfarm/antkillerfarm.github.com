@@ -113,6 +113,10 @@ https://mp.weixin.qq.com/s/HMLKUL3_3MhWmJ8ub-Yfcg
 
 一文速览Deep Learning中的11种卷积
 
+https://zhuanlan.zhihu.com/p/540426043
+
+51x51的kernelsize暴力美学：SLaK论文解读
+
 # Siamese network
 
 Siamese和Chinese有点像。Siam是古时候泰国的称呼，中文译作暹罗。Siamese也就是“暹罗”人或“泰国”人。Siamese在英语中是“孪生”、“连体”的意思，这是为什么呢？

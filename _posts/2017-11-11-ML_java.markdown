@@ -232,6 +232,10 @@ When UnitSize = TotalSize and there are multiple sources and destinations, it is
 When UnitSize != TotalSize and there are multiple sources and destinations, it is a All-to-All operation
 ```
 
+从上面可以看出，除了Reduce一系的操作之外，其他的都可以总结为Scatter+Gather。
+
+Scatter也被称为One-to-all，Gather也被称为All-to-one。
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/69497154

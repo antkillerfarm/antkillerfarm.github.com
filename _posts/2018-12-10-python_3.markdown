@@ -184,6 +184,12 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/pysqlite
 
 `sudo pip install sqlite_bro`
 
+SQLCipher是Sqlite的一个fork，添加了AES加密和其他一些安全特性。
+
+代码：
+
+https://github.com/sqlcipher/sqlcipher
+
 参考：
 
 https://mp.weixin.qq.com/s/HcmOmwWQFBIOZs8p3nr7CQ

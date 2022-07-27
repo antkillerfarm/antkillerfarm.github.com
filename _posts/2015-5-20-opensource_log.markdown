@@ -183,6 +183,10 @@ https://mp.weixin.qq.com/s/oeusDoCSYiwwX61H_6wQHw
 
 浏览器（内核）发展史
 
+https://www.zhihu.com/question/19553117
+
+为什么所有主流浏览器的User-Agent都是Mozilla/x.0开头？
+
 https://www.zhihu.com/question/439434803/answer/1679210108
 
 如何评价大连车务段现在车系统瘫痪，“全力攻关一昼夜”恢复Flash运行?
@@ -238,3 +242,7 @@ https://www.zhihu.com/question/20722310
 https://mp.weixin.qq.com/s/bELFDhgmhzSPEmdIQqTvDA
 
 《QQ堂》停运冲上热搜：90后的青春落幕
+
+https://www.zhihu.com/question/545441391
+
+如何看待微信安装包11年膨胀575倍？为什么现在的应用安装包越来越大了？

@@ -358,6 +358,12 @@ InfiniBand（直译为“无限带宽”技术，缩写为IB）是一个用于�
 
 Mellanox Technologies是一家InfiniBand制造商，于2020年被Nvidia收购。
 
+官方文档：
+
+https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/index.html
+
+参考：
+
 https://www.zhihu.com/question/63219175
 
 如何理解Nvidia英伟达的Multi-GPU多卡通信框架NCCL？

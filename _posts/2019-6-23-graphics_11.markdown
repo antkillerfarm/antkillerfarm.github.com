@@ -201,6 +201,10 @@ https://mp.weixin.qq.com/s/mEUhBnEuGxbU6_wALt0crw
 
 基于Python查找图像中最常见的颜色
 
+https://www.cnblogs.com/xyf327/category/1985244.html
+
+一个工业机器视觉的专栏
+
 # 计算机图形学
 
 ## 教程

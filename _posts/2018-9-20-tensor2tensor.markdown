@@ -265,6 +265,10 @@ https://zhuanlan.zhihu.com/p/379063169
 
 MLIR: 编译器基础架构重定义
 
+https://zhuanlan.zhihu.com/p/508345356
+
+AI编译器的概览、挑战和实践
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/32711259
