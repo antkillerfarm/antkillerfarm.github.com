@@ -185,6 +185,22 @@ http://www.archcollege.com/archcollege/2018/09/41678.html
 
 ---
 
+三总五项：三年做到总工，五年做到项目经理。由于土木行业人才饱和，大量本科大学生毕业工作只得选择条件艰苦的施工单位，工作后认清现实，造成行业离职率奇高。常有行业前辈画大饼，引诱年轻人不要离职，常说三总五项。而在年轻人眼里，三总五项实指“三年总在工地，五年还是项目”或者“三年总不在家，五年常在项目”。
+
+有人出生在罗马，有人生来就是牛马。
+
+付酥运动是在土木工程行业里，一个叫付贵，一个叫酥工的土木工程人，他们认为生活需要工作，但生活从来不只有工作，最后两个人都纷纷跑路离职调岗了。。。
+
+https://mp.weixin.qq.com/s/_gq1nxHJGzCZtmjHBNjM1w
+
+笑死我了，土木行业真是惨
+
+https://mp.weixin.qq.com/s/eoqrkj6fnCWUiKQpCyDJbw
+
+人人都想成为何同学，但人人都活成了大猛子
+
+---
+
 https://zhuanlan.zhihu.com/p/343944664
 
 人防工程
@@ -232,3 +248,7 @@ https://mp.weixin.qq.com/s/jD5O3EuK4QRpTmHC7ZBmIQ
 https://mp.weixin.qq.com/s/7pdQ8UMNwAw-YZb90sR-ng
 
 “132万红砖房”改造风波后，房子总要归于生活
+
+https://www.zhihu.com/question/545480673
+
+沙特阿拉伯计划建长近120公里的大楼，将用到哪些技术？对当地人的生活将带来哪些影响？

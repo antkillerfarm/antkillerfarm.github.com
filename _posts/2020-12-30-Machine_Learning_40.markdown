@@ -260,17 +260,3 @@ https://mp.weixin.qq.com/s/4Adurm5RDMzN3GV1Bah1Ww
 https://mp.weixin.qq.com/s/4mn2RqkefkpAD3NsEhqHpQ
 
 后疫情时代的印度真的会成为全球产业链的“救世主”吗？
-
-# 真垃圾筐+
-
-我的同学小刘考了580分，特别想上山东大学，但它在内蒙古的录取分数要600分。怎么办呢？小刘找了十几个650分的考生去报山东大学，让那些600分的人望而却步。到了最后一分钟，小刘一声令下，所有650分的考生统统撤离山东大学，把坑位留给小刘。
-
-https://mp.weixin.qq.com/s/TtuC4DRqz1-QIDI66rBWcA
-
-内蒙人报高考志愿，比在纽交所炒股还刺激
-
----
-
-https://www.zhihu.com/question/544511862
-
-网红教授陈春花学历遭质疑，其博士毕业学校为私人公司。还有哪些信息值得关注？
