@@ -11,6 +11,30 @@ category: DL acceleration
 
 ## 参考
 
+https://mp.weixin.qq.com/s/Xvlxs-Os2meduHrEQFc7vg
+
+第一次胜过MobileNet的二值神经网络，-1与+1的三年艰苦跋涉
+
+https://mp.weixin.qq.com/s/Ak9Yh_MBDR6i7J2rDR99eQ
+
+低成本的二值神经网络介绍以及它能代替全精度网络吗?
+
+https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
+
+异或神经网络
+
+https://mp.weixin.qq.com/s/XzLJzfvpP93cDYplf6-LXA
+
+港科腾讯等提出Bi-Real net：超XNOR-net 10%的ImageNet分类精度
+
+https://mp.weixin.qq.com/s/wCx7rQFwC2mW45FMR77tGQ
+
+二值网络，围绕STE的那些事儿
+
+https://mp.weixin.qq.com/s/7L26ghhDqdMU6LRV0iD6vQ
+
+模型量化从1bit到8bit，二值到三值
+
 https://mp.weixin.qq.com/s/M79xGWWtJUB6wBVlHXw8ig
 
 低精度神经网络：从数值计算角度优化模型效率
@@ -302,27 +326,3 @@ http://blog.csdn.net/shuzfan/article/details/51383809
 https://mp.weixin.qq.com/s/2NOFyu_twx1EciDeDPBLKw
 
 深度神经网络加速与压缩
-
-https://mp.weixin.qq.com/s/lO2UM04PfSM5VJYh6vINhw
-
-为模型减减肥：谈谈移动／嵌入式端的深度学习
-
-https://mp.weixin.qq.com/s/cIGuJvYr4lZW01TdINBJnA
-
-深度压缩网络：较大程度减少了网络参数存储问题
-
-https://mp.weixin.qq.com/s/1JwLP0FmV1AGJ65iDgLWQw
-
-神经网络模型压缩技术
-
-http://mp.weixin.qq.com/s/iapih9Mme-VKCfsFCmO7hQ
-
-简单聊聊压缩网络
-
-https://mp.weixin.qq.com/s/dEdWz4bovmk65fwLknHBhg
-
-韩松毕业论文：面向深度学习的高效方法与硬件
-
-https://mp.weixin.qq.com/s/f1SCK0J5oTWNJvtld3UAHQ
-
-神经网络修剪最新研究进展

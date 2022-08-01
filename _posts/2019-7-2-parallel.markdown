@@ -11,8 +11,6 @@ category: DL acceleration
 
 ## 概述
 
-![](/images/img4/Parallel.png)
-
 ![](/images/img4/Deep_Learning_System.png)
 
 ## 教程
@@ -24,6 +22,10 @@ Introduction to Parallel Computing Tutorial
 https://www.cnblogs.com/Carrawayang/p/14691607.html
 
 上文的中文版
+
+http://www.cs.cmu.edu/~418/
+
+15-418/15-618: Parallel Computer Architecture and Programming
 
 ## 论文
 
@@ -101,6 +103,10 @@ CentralStorageStrategy也执行同步训练，但是变量不会被镜像，而�
 
 模型并行是指将模型切分为多个部分并将各个部分放置到不同的节点进行训练的分布式模式。因为当模型很复杂，参数很多时，由于内存的限制，单个节点无法将整个模型加载并进行训练，所以需要将模型切割为更小的部分，并将各个部分运行在不同的节点上以完成训练。在TensorFlow中**模型并行**也被称为图内复制 (In-graph Replication)。
 
+![](/images/img4/Parallel.png)
+
+![](/images/img4/Parallel_2.png)
+
 ---
 
 tensorflow::ProcessFunctionLibraryRuntime::RunMultiDevice
@@ -134,6 +140,30 @@ Bucketing不再将网络展开成最大可能长度，而是展开成多个不�
 https://blog.csdn.net/xuezhisdc/article/details/54927869
 
 how_to——bucketing
+
+## 框架设计
+
+![](/images/img4/mindspore.jpg)
+
+https://zhuanlan.zhihu.com/p/547878945
+
+五谈AI软件栈--无责乱弹AI软件栈研发方法论
+
+## 大模型
+
+目前部分深度学习框架，例如Pytorch和Tensorflow，没有办法满足超大规模模型训练的需求，于是微软基于Pytroch开发了DeepSpeed，腾讯基于Pytroch开发了派大星PatricStar，达摩院基于Tensoflow开发的分布式框架Whale。像是华为昇腾的MindSpore、百度的PaddlePaddle，还有国内的一流科技OneFlow等厂商，对超大模型训练进行了深度的跟进与探索，基于原生的AI框架支持超大模型训练。
+
+https://zhuanlan.zhihu.com/p/432813821
+
+大模型的发展与解决的问题
+
+https://zhuanlan.zhihu.com/p/432289008
+
+从分布式训练到大模型训练
+
+https://www.zhihu.com/question/498271491
+
+为什么说大模型训练很难？
 
 ## 参考
 
@@ -298,36 +328,3 @@ https://mp.weixin.qq.com/s/wIdTDHEPffWqHA3_XWBLyw
 https://zhuanlan.zhihu.com/p/33351291
 
 基于忆阻器（ReRAM），Computing-in-Memory的DLA
-
-https://mp.weixin.qq.com/s/eTwSo3GnxSnK-BwwZeWmKA
-
-Jeff Dean等提出自动化分层模型，优化CPU、GPU等异构环境，性能提升超60%
-
-https://mp.weixin.qq.com/s/q0VENBNgolpeWmDapF5q_g
-
-在有池化层、1步幅的CNN上减少冗余计算，一种广泛适用的架构转换方法
-
-https://mp.weixin.qq.com/s/sn8fMAbJbeT6JUbCpBpN6A
-
-Jeff Dean与David Patterson：不思考体系结构的深度学习研究者不是好工程师
-
-https://mp.weixin.qq.com/s/6zLrWJ4nE0bHFlVe5dMxHw
-
-分布式深度学习新进展：让“分布式”和“深度学习”真正深度融合
-
-https://mp.weixin.qq.com/s/hjC-WTMIpbWWpmXoLBfD2g
-
-腾讯大规模分布式机器学习系统无量是如何进行技术选型的？
-
-https://mp.weixin.qq.com/s/mg-d1W5i9rzaLMNrvq0tSQ
-
-32分钟训练神经机器翻译，速度提升45倍
-
-https://mp.weixin.qq.com/s/iW0k80TUPuWDE9xwHvX91g
-
-为什么你需要Raven：全球首个真正分布式深度学习训练协议
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750181&idx=1&sn=156dac3c5646143fc2577972f1506836
-
-GPU捉襟见肘还想训练大批量模型？谁说不可以
-

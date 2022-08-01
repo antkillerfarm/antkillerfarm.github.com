@@ -224,6 +224,8 @@ xla::CustomCall(&b, PoplarOp_Name(PoplarOp::MaxPoolGrad), args,
                           input_shape, attribute_map_.Serialise());
 ```
 
+首先派生一个XlaOpKernel，还要派生一个HloCustomCallInstruction，最后再到HandleCustomCall去接收相关的图信息。
+
 model test:
 
 tensorflow/compiler/plugin/poplar/docs/example_tf2_model_fit.py

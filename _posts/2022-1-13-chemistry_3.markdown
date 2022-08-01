@@ -233,6 +233,18 @@ https://mp.weixin.qq.com/s/p5tSSJSfyrynqg3yjQr7Mw
 
 ---
 
+击沉俾斯麦、战术核企鹅、历史的终结。
+
+https://www.sohu.com/a/275833950_236308
+
+世界上最带劲儿的十种啤酒
+
+https://zhuanlan.zhihu.com/p/97199415
+
+世界最烈啤酒之争，一场只为噱头的战争
+
+---
+
 http://bbs.tianya.cn/post-no05-401394-372.shtml
 
 "灵肉"传奇：斯帕姆午餐肉

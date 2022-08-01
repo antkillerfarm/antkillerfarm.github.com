@@ -7,6 +7,32 @@ category: DL acceleration
 * toc
 {:toc}
 
+# 模型压缩与加速（续）
+
+https://mp.weixin.qq.com/s/lO2UM04PfSM5VJYh6vINhw
+
+为模型减减肥：谈谈移动／嵌入式端的深度学习
+
+https://mp.weixin.qq.com/s/cIGuJvYr4lZW01TdINBJnA
+
+深度压缩网络：较大程度减少了网络参数存储问题
+
+https://mp.weixin.qq.com/s/1JwLP0FmV1AGJ65iDgLWQw
+
+神经网络模型压缩技术
+
+http://mp.weixin.qq.com/s/iapih9Mme-VKCfsFCmO7hQ
+
+简单聊聊压缩网络
+
+https://mp.weixin.qq.com/s/dEdWz4bovmk65fwLknHBhg
+
+韩松毕业论文：面向深度学习的高效方法与硬件
+
+https://mp.weixin.qq.com/s/f1SCK0J5oTWNJvtld3UAHQ
+
+神经网络修剪最新研究进展
+
 # 知识蒸馏
 
 ## 基本概念
@@ -308,31 +334,3 @@ BERT蒸馏完全指南
 https://mp.weixin.qq.com/s/xgCtgEMRZ1VgzRZWjYIjTQ
 
 知乎搜索文本相关性与知识蒸馏
-
-https://mp.weixin.qq.com/s/6K5FvjMIVer-_fXJazU20Q
-
-深度学习中的3个秘密：集成，知识蒸馏和蒸馏
-
-https://mp.weixin.qq.com/s/-Rzvx9RMg9uZK5NFDs6cNg
-
-语义分割的结构知识蒸馏
-
-https://zhuanlan.zhihu.com/p/160206075
-
-Knowledge Distillation（知识蒸馏）Review--20篇paper回顾
-
-https://mp.weixin.qq.com/s/E7-MF18Y-UeKx694kGFHzA
-
-深度学习中的知识蒸馏技术（上）
-
-https://mp.weixin.qq.com/s/Noac4YLIimr1HM2fln2bjg
-
-深度学习中的知识蒸馏技术（下）
-
-https://mp.weixin.qq.com/s/IkKig7I5_97y_siixEj72w
-
-协同训练
-
-https://mp.weixin.qq.com/s/SUcz-Ba37CzUoAG52zW7YA
-
-强化学习推荐模型的知识蒸馏探索之路

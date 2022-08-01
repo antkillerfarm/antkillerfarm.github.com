@@ -9,6 +9,30 @@ category: DL acceleration
 
 # 模型压缩与加速进阶
 
+https://mp.weixin.qq.com/s/0_66CScEk0qhGlTvfpmqBA
+
+2019年的最后一个月，这里有6种你必须要知道的最新剪枝技术
+
+https://mp.weixin.qq.com/s/u94NZVwb_ywqjTMla2upbQ
+
+模型压缩究竟在做什么？我们真的需要模型压缩么？
+
+https://mp.weixin.qq.com/s/Qr2Q2ARht0pEP3F8l3k98g
+
+滴滴&东北大学提出自动结构化剪枝压缩算法框架，性能提升高达120倍
+
+https://zhuanlan.zhihu.com/p/104447447
+
+剪枝实践：图像检索如何加速和省显存？
+
+https://zhuanlan.zhihu.com/p/105064255
+
+Slimmable Networks
+
+https://mp.weixin.qq.com/s/EBCcBWob_iFa51-gOVPYQA
+
+揭秘微信“扫一扫”识物为什么这么快？
+
 https://mp.weixin.qq.com/s/GFE2XYHZXPP0doQ5nd0JNQ
 
 当前深度神经网络模型压缩和加速方法速览

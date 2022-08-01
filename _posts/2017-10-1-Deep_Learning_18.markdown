@@ -1,15 +1,125 @@
 ---
 layout: post
-title:  深度学习（十八）——无监督/半监督/自监督深度学习（2）
+title:  深度学习（十八）——无监督/半监督/自监督深度学习（1）
 category: DL 
 ---
 
 * toc
 {:toc}
 
+# 自动求导（续）
+
+https://mp.weixin.qq.com/s/xXwbV46-kTobAMRwfKyk_w
+
+自动求导--Deep Learning框架必备技术二三事
+
+https://mp.weixin.qq.com/s/f0xFfA1inOVOdJnSZR4k6Q
+
+自动微分技术
+
+https://zhuanlan.zhihu.com/p/79801410
+
+PyTorch的自动求导机制详细解析，PyTorch的核心魔法
+
+https://zhuanlan.zhihu.com/p/29904755
+
+Autograd:PyTorch中的梯度计算
+
+https://zhuanlan.zhihu.com/p/69294347
+
+PyTorch的Autograd
+
+https://zhuanlan.zhihu.com/p/83172023
+
+Pytorch autograd,backward详解
+
+https://mp.weixin.qq.com/s/PELBuCvu-7KQ33XBtlYfYQ
+
+深度学习中的微分
+
+https://zhuanlan.zhihu.com/p/24709748
+
+矩阵求导术（上）
+
+https://zhuanlan.zhihu.com/p/24863977
+
+矩阵求导术（下）
+
+https://mp.weixin.qq.com/s/2hu6a0wScJedwk3a5aKbIw
+
+自动微分到底是什么？这里有一份自我简述
+
+https://zhuanlan.zhihu.com/p/347385418
+
+AI框架基础技术之自动求导机制 (Autograd)
+
+https://www.zhihu.com/question/497827630
+
+Pytorch的自动微分机制是自动创建一个可以记录所有数据操作的计算图（有向无环图(DAG)）吗？
+
+https://www.cnblogs.com/royhoo/p/Autodiff.html
+
+自动微分（Autodiff）
+
 # 无监督/半监督/自监督深度学习
 
-## 对比学习（续）
+自监督学习是一种特殊目的的无监督学习。不同于传统的AutoEncoder等方法，仅仅以重构输入为目的，而是希望通过surrogate task学习到和高层语义信息相关联的特征。
+
+## 对比学习
+
+![](/images/img4/SimCLR.jpg)
+
+https://mp.weixin.qq.com/s/r1uXn2jGsHZcZ8Nk7GnGFA
+
+语义表征的无监督对比学习：一个新理论框架
+
+https://zhuanlan.zhihu.com/p/346686467
+
+对比学习（Contrastive Learning）综述
+
+https://mp.weixin.qq.com/s/SOaA9XNnymLgGgJ5JNSdBg
+
+对比学习（Contrastive Learning）相关进展梳理
+
+https://mp.weixin.qq.com/s/U0pTQkW55evm94iQORwGeA
+
+图解SimCLR框架，用对比学习得到一个好的视觉预训练模型
+
+https://mp.weixin.qq.com/s/1RJ4bbfDC5LiN2PNIxdzew
+
+SimCLR框架的理解和代码实现以及代码讲解
+
+https://mp.weixin.qq.com/s/-Vtl_8nND7WCPLdL5bNlMw
+
+探索孪生神经网络：请停止你的梯度传递
+
+https://zhuanlan.zhihu.com/p/321642265
+
+《探索简单孪生网络表示学习》阅读笔记
+
+https://mp.weixin.qq.com/s/6qqFAQBaOFuXtaeRSmQgsQ
+
+一文梳理2020年大热的对比学习模型
+
+https://mp.weixin.qq.com/s/SeAZERYdfqDbtqTLnuWfGg
+
+盘点近期大热对比学习模型：MoCo/SimCLR/BYOL/SimSiam
+
+https://mp.weixin.qq.com/s/jHVg-BMRRVNjAf6ZFEoPxQ
+
+自监督学习的SimCLRv2框架
+
+https://mp.weixin.qq.com/s/7iBC_n6EARW3V8bNuKUqQA
+
+Hinton团队力作：SimCLR系列
+
+https://mp.weixin.qq.com/s/sH-G4g0EyQLu2l91Xvdefw
+
+Neighbor2Neighbor：无需干净图像的自监督图像降噪
+
+https://mp.weixin.qq.com/s/xYlCAUIue_z14Or4oyaCCg
+
+对比学习研究进展精要
 
 https://mp.weixin.qq.com/s/VlSoMmAGDblQ2UYhLD96gA
 
@@ -278,95 +388,3 @@ https://mp.weixin.qq.com/s/HopNSLS75TgE28LfY02qog
 https://mp.weixin.qq.com/s/XiLBHkraT8lJcOu2faqK5g
 
 关于弱监督学习，这可能是目前最详尽的一篇科普文
-
-https://mp.weixin.qq.com/s/VnOfYuHQQf_q92VHVE3mrQ
-
-谷歌新发布的半监督学习算法降低4倍错误率
-
-https://mp.weixin.qq.com/s/rOj_J1zNYf-Vj9tqLG5KOQ
-
-超强半监督学习MixMatch
-
-https://zhuanlan.zhihu.com/p/66389797
-
-虚拟对抗训练（VAT）：一种新颖的半监督学习正则化方法
-
-https://mp.weixin.qq.com/s/DAtHXSfCpqCAZ0iVsfWkDA
-
-半监督学习理论及其研究进展概述
-
-https://mp.weixin.qq.com/s/eHzNIO-RSY-uf-K-OwtWfw
-
-集多种半监督学习范式为一体，谷歌新研究提出新型半监督方法MixMatch
-
-https://mp.weixin.qq.com/s/3el7bPAeJrTQGfWW29ewuA
-
-新技术“红”不过十年，半监督学习为什么是个例外？
-
-https://mp.weixin.qq.com/s/alnji5kgTxc34O7k78uGiA
-
-无监督学习中的目标检测
-
-https://mp.weixin.qq.com/s/8FtDhpgc-1j3TSL771N-Ng
-
-无标注数据是鸡肋还是宝藏？阿里工程师这样用它
-
-https://mp.weixin.qq.com/s/LdfLd2cZCdpvNYLKHUNwuA
-
-简述无监督图像分类发展现状
-
-https://mp.weixin.qq.com/s/qaLQK3uzaeyp68AbL0aOOQ
-
-怎么在视频标注上省钱？这里有一个面向视频推荐的多视图主动学习
-
-https://mp.weixin.qq.com/s/-cXOUw9zJteVUkbpRMIWtQ
-
-何恺明一作，刷新7项检测分割任务，无监督预训练完胜有监督
-
-https://mp.weixin.qq.com/s/wtHrHFoT2E_HLHukPdJUig
-
-OpenAI科学家一文详解自监督学习
-
-https://mp.weixin.qq.com/s/fy1gUElWVWcOVvzv6fGmdg
-
-谷歌大脑推出视觉领域任务自适应基准：VTAB
-
-https://zhuanlan.zhihu.com/p/80815225
-
-Image-Level弱监督图像语义分割汇总简析
-
-https://mp.weixin.qq.com/s/5czWf0xpqva5pmuvJDn5AQ
-
-Google研究院提出FixMatch，简单粗暴却极其有效的半监督学习方法，附14页PDF下载
-
-https://zhuanlan.zhihu.com/p/108088719
-
-SSL:Self-Supervised Learning(自监督学习)
-
-https://zhuanlan.zhihu.com/p/108625273
-
-Self-Supervised Learning入门介绍
-
-https://zhuanlan.zhihu.com/p/108906502
-
-Self-supervised Learning再次入门
-
-https://mp.weixin.qq.com/s/VvUj0S2OTf8BowGRjDuVag
-
-图解自监督学习，人工智能蛋糕中最大的一块
-
-https://mp.weixin.qq.com/s/df51T24mBVycBeI_M7QqOQ
-
-无标记数据学习, 83ppt
-
-https://mp.weixin.qq.com/s/2FxD6ga6b_WOdAni16wd2Q
-
-自监督学习在计算机视觉应用最新概述，108页ppt Self-supervised learning
-
-https://mp.weixin.qq.com/s/3kwLoojFjJoPz4pUuEVA8g
-
-神奇的自监督场景去遮挡
-
-https://mp.weixin.qq.com/s/eROWWPQkUs91bcv4VsQqSA
-
-NLP中的自监督表示学习，全是动图，很过瘾的

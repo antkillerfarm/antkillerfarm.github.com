@@ -370,15 +370,3 @@ https://mp.weixin.qq.com/s/s7sHzzLANOp8-1LxgXQskA
 https://mp.weixin.qq.com/s/IQMXg6nIJO-9-IG3mJpvRg
 
 ElasticDL：同时提升集群利用率和研发效率的分布式深度学习框架
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771181&idx=1&sn=30b2a5abc7261b4f2ea122e8e96fdabf
-
-世界第一超算跑深度学习模型，2.76万块V100 GPU将分布式训练扩展到极致
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771231&idx=2&sn=6907d6d7a98eab353a076ed48352aadc
-
-15分钟完成Kinetics视频识别训练，除了超级计算机你还需要TSM
-
-https://www.zhihu.com/question/404721763
-
-如何评价Google的GShard论文？

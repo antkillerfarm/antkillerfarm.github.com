@@ -252,3 +252,7 @@ https://mp.weixin.qq.com/s/7pdQ8UMNwAw-YZb90sR-ng
 https://www.zhihu.com/question/545480673
 
 沙特阿拉伯计划建长近120公里的大楼，将用到哪些技术？对当地人的生活将带来哪些影响？
+
+https://mp.weixin.qq.com/s/2HNEJVZHcsDkpC87sTHwDw
+
+沙特要花1万亿美元建世界最大建筑，造型看着像长城

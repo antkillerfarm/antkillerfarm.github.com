@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十七）——人脸检测/识别（1）, 自动求导, 无监督/半监督/自监督深度学习（1）
+title:  深度学习（十七）——人脸检测/识别（1）, 自动求导
 category: DL 
 ---
 
@@ -153,9 +153,23 @@ $$f'(x)=\lim_{h\to 0}{f(x+h)-f(x)\over h}$$
 
 这种方法没有误差，是目前的主流，但遍历比较费时间。
 
-## Automatic differentiation
+符号微分最大的弊病在于其对表达式的严格展开和变换也导致了所谓的表达式膨胀（expression swell）问题。
 
-除此之外，常用的自动求导技术，还有Automatic differentiation。（请注意这里的AD是一个很狭义的概念。）
+## Automatic Differentiation
+
+自动微分是介于数值微分和符号微分之间的方法。首先对基本算子（函数）应用符号微分方法，其次带入数值进行计算，保留中间结果，最后通过链式求导法将中间结果应用于整个函数。
+
+简单来说就是，**layer内部采用符号微分，layer之间采用数值微分。**
+
+优点：精度高，无表达式膨胀问题。
+
+缺点：需要存储一些中间求导结果，内存占用会增加。
+
+Automatic Differentiation主要包括Forward-Mode Autodiff和Reverse-Mode Autodiff两种方法。
+
+## Forward-Mode Autodiff
+
+Forward-Mode Autodiff依赖于dual numbers。
 
 类比复数的概念：
 
@@ -191,6 +205,30 @@ p_1\dot{x}d + 2p_2x\dot{x}d + ... + np_{n-1}x\dot{x}d\\
 
 可以看出d的系数就是$$f'(x)$$。
 
+![](/images/img4/FMA.png)
+
+## Reverse-Mode Autodiff
+
+![](/images/img4/RMA.png)
+
+该算法首先前向（也就是从输入到输出）计算每个节点的值，然后反向（从输出到输入）计算所有的偏导数。
+
+当输出的维度大于输入的时候，适宜使用前向模式微分；当输出维度远远小于输入的时候，适宜使用反向模式微分。
+
+考虑到大多数应用的特点是输出维度远远小于输入，因此目前大部分AI框架都会优先采用反向模式。
+
+## 实现方式
+
+虽然自动微分的数学原理已经明确，包括正向和反向的数学逻辑和模式。但具体的实现方法则可以有很大的差异。
+
+目前主要有三类方案：
+
+**基本表达式**：基本表达式或者称元素库（Elemental Libraries），基于元素库中封装一系列基本的表达式（如：加减乘除等）及其对应的微分结果表达式，作为库函数。用户通过调用库函数构建需要被微分的程序。
+
+**操作符重载**：操作符重载或者称运算重载（Operator Overloading，OO），利用现代语言的多态特性（例如C++/JAVA/Python等高级语言），使用操作符重载对语言中基本运算表达式的微分规则进行封装。
+
+**源代码变换**（Source Code Transformation，SCT）：源代码变换或者叫做源码转换（Source Code Transformation，SCT）则是通过对语言预处理器、编译器或解释器的扩展，将其中程序表达（如：源码、AST抽象语法树 或 编译过程中的中间表达 IR）的基本表达式微分规则进行预定义，再对程序表达进行分析得到基本表达式的组合关系，最后使用链式法则对上述基本表达式的微分结果进行组合生成对应微分结果的新程序表达，完成自动微分。
+
 ## 不可导函数的求导
 
 不可导函数的求导，一般采用泰勒展开的方式。典型的算法有PGD（Proximal Gradient Descent）。
@@ -201,7 +239,9 @@ https://blog.csdn.net/bingecuilab/article/details/50628634
 
 Proximal Gradient Descent for L1 Regularization
 
-## 动态图
+## Tape
+
+无论前向还是后向求导，都需要记录前向传播的所有计算过程以及中间结果。这种记录和调用的过程类似于磁带的读写，是一种顺序访问，而非随机访问，故名为Tape方法。
 
 针对动态图的自动求导，TF提出了GradientTape方法。
 
@@ -242,107 +282,3 @@ http://txshi-mt.com/2018/10/04/NMT-Tutorial-3b-Autodiff/
 https://mp.weixin.qq.com/s/WiZ00mkEB7CND3VyIM5Swg
 
 最新《自动微分手册》77页pdf
-
-https://mp.weixin.qq.com/s/xXwbV46-kTobAMRwfKyk_w
-
-自动求导--Deep Learning框架必备技术二三事
-
-https://mp.weixin.qq.com/s/f0xFfA1inOVOdJnSZR4k6Q
-
-自动微分技术
-
-https://zhuanlan.zhihu.com/p/79801410
-
-PyTorch的自动求导机制详细解析，PyTorch的核心魔法
-
-https://zhuanlan.zhihu.com/p/29904755
-
-Autograd:PyTorch中的梯度计算
-
-https://zhuanlan.zhihu.com/p/69294347
-
-PyTorch的Autograd
-
-https://zhuanlan.zhihu.com/p/83172023
-
-Pytorch autograd,backward详解
-
-https://mp.weixin.qq.com/s/PELBuCvu-7KQ33XBtlYfYQ
-
-深度学习中的微分
-
-https://zhuanlan.zhihu.com/p/24709748
-
-矩阵求导术（上）
-
-https://zhuanlan.zhihu.com/p/24863977
-
-矩阵求导术（下）
-
-https://mp.weixin.qq.com/s/2hu6a0wScJedwk3a5aKbIw
-
-自动微分到底是什么？这里有一份自我简述
-
-https://zhuanlan.zhihu.com/p/347385418
-
-AI框架基础技术之自动求导机制 (Autograd)
-
-# 无监督/半监督/自监督深度学习
-
-自监督学习是一种特殊目的的无监督学习。不同于传统的AutoEncoder等方法，仅仅以重构输入为目的，而是希望通过surrogate task学习到和高层语义信息相关联的特征。
-
-## 对比学习
-
-![](/images/img4/SimCLR.jpg)
-
-https://mp.weixin.qq.com/s/r1uXn2jGsHZcZ8Nk7GnGFA
-
-语义表征的无监督对比学习：一个新理论框架
-
-https://zhuanlan.zhihu.com/p/346686467
-
-对比学习（Contrastive Learning）综述
-
-https://mp.weixin.qq.com/s/SOaA9XNnymLgGgJ5JNSdBg
-
-对比学习（Contrastive Learning）相关进展梳理
-
-https://mp.weixin.qq.com/s/U0pTQkW55evm94iQORwGeA
-
-图解SimCLR框架，用对比学习得到一个好的视觉预训练模型
-
-https://mp.weixin.qq.com/s/1RJ4bbfDC5LiN2PNIxdzew
-
-SimCLR框架的理解和代码实现以及代码讲解
-
-https://mp.weixin.qq.com/s/-Vtl_8nND7WCPLdL5bNlMw
-
-探索孪生神经网络：请停止你的梯度传递
-
-https://zhuanlan.zhihu.com/p/321642265
-
-《探索简单孪生网络表示学习》阅读笔记
-
-https://mp.weixin.qq.com/s/6qqFAQBaOFuXtaeRSmQgsQ
-
-一文梳理2020年大热的对比学习模型
-
-https://mp.weixin.qq.com/s/SeAZERYdfqDbtqTLnuWfGg
-
-盘点近期大热对比学习模型：MoCo/SimCLR/BYOL/SimSiam
-
-https://mp.weixin.qq.com/s/jHVg-BMRRVNjAf6ZFEoPxQ
-
-自监督学习的SimCLRv2框架
-
-https://mp.weixin.qq.com/s/7iBC_n6EARW3V8bNuKUqQA
-
-Hinton团队力作：SimCLR系列
-
-https://mp.weixin.qq.com/s/sH-G4g0EyQLu2l91Xvdefw
-
-Neighbor2Neighbor：无需干净图像的自监督图像降噪
-
-https://mp.weixin.qq.com/s/xYlCAUIue_z14Or4oyaCCg
-
-对比学习研究进展精要

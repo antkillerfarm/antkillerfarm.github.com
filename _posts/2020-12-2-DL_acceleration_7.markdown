@@ -7,6 +7,36 @@ category: DL acceleration
 * toc
 {:toc}
 
+# 知识蒸馏（续）
+
+https://mp.weixin.qq.com/s/6K5FvjMIVer-_fXJazU20Q
+
+深度学习中的3个秘密：集成，知识蒸馏和蒸馏
+
+https://mp.weixin.qq.com/s/-Rzvx9RMg9uZK5NFDs6cNg
+
+语义分割的结构知识蒸馏
+
+https://zhuanlan.zhihu.com/p/160206075
+
+Knowledge Distillation（知识蒸馏）Review--20篇paper回顾
+
+https://mp.weixin.qq.com/s/E7-MF18Y-UeKx694kGFHzA
+
+深度学习中的知识蒸馏技术（上）
+
+https://mp.weixin.qq.com/s/Noac4YLIimr1HM2fln2bjg
+
+深度学习中的知识蒸馏技术（下）
+
+https://mp.weixin.qq.com/s/IkKig7I5_97y_siixEj72w
+
+协同训练
+
+https://mp.weixin.qq.com/s/SUcz-Ba37CzUoAG52zW7YA
+
+强化学习推荐模型的知识蒸馏探索之路
+
 # 硬件加速技巧
 
 https://mp.weixin.qq.com/s/KPT4P5SQ4E4ofPdjhhjRvA
@@ -370,27 +400,3 @@ https://mp.weixin.qq.com/s/oDwvMtET0moHVGgtQLfCow
 https://mp.weixin.qq.com/s/nbEa0csbaMvEM3TCI3fn0Q
 
 当前模型剪枝有哪些可用的开源工具？
-
-https://mp.weixin.qq.com/s/0_66CScEk0qhGlTvfpmqBA
-
-2019年的最后一个月，这里有6种你必须要知道的最新剪枝技术
-
-https://mp.weixin.qq.com/s/u94NZVwb_ywqjTMla2upbQ
-
-模型压缩究竟在做什么？我们真的需要模型压缩么？
-
-https://mp.weixin.qq.com/s/Qr2Q2ARht0pEP3F8l3k98g
-
-滴滴&东北大学提出自动结构化剪枝压缩算法框架，性能提升高达120倍
-
-https://zhuanlan.zhihu.com/p/104447447
-
-剪枝实践：图像检索如何加速和省显存？
-
-https://zhuanlan.zhihu.com/p/105064255
-
-Slimmable Networks
-
-https://mp.weixin.qq.com/s/EBCcBWob_iFa51-gOVPYQA
-
-揭秘微信“扫一扫”识物为什么这么快？

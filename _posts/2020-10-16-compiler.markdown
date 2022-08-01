@@ -297,13 +297,3 @@ http://pluto-compiler.sourceforge.net/
 https://www.zhihu.com/question/329294933
 
 如何评价PLUTO编译器？
-
-## 参考
-
-https://mp.weixin.qq.com/s/MqfteZBSWbnBpHbFYw8Eqw
-
-如何编写一个简单的Python编译器
-
-https://zhuanlan.zhihu.com/p/28637279
-
-使用LLVM+PLY实现一个C语言子集的玩具编译器

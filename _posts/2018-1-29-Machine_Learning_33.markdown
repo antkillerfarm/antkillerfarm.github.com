@@ -249,6 +249,10 @@ https://mp.weixin.qq.com/s/5Ae1NyLM-jZnO6TCOPMYkQ
 
 PS Worker分布式性能优化
 
+https://www.cnblogs.com/rossiXYZ/p/15897877.html
+
+NVIDIA HugeCTR，GPU版本参数服务器
+
 # AllReduce
 
 https://www.zhihu.com/question/57799212

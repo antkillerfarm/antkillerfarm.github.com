@@ -13,6 +13,8 @@ category: DL acceleration
 
 这篇论文的另一个贡献在于：原先的INT8量化是针对已经训练好的模型。而现在还可以在训练的时候就进行量化——前向计算进行量化，而反向的误差修正不做量化。
 
+![](/images/img4/quantize.jpg)
+
 `tf.quantization.fake_quant_XXXX`系列API可用于前向计算时的量化。
 
 Fake quant之所以叫伪量化，是因为虽然可量化weights/activations，但不是真正意义上的量化，即变量类型还是floating point，而不是integer。
@@ -51,7 +53,11 @@ https://mp.weixin.qq.com/s/zBtpwrQ5HtI6uzYOx5VsCQ
 
 https://mp.weixin.qq.com/s/cYGMZuY7jSrjhUAXlDwD_w
 
-Mixed Precision Traning
+Mixed Precision Training
+
+https://zhuanlan.zhihu.com/p/441591808
+
+混合精度训练原理
 
 ## Flexpoint
 
@@ -300,27 +306,3 @@ BMXNet：基于MXNet的开源二值神经网络实现
 https://mp.weixin.qq.com/s/naDk0mmxd08dNl9LawLUnw
 
 不使用先验知识与复杂训练策略，从头训练二值神经网络！
-
-https://mp.weixin.qq.com/s/Xvlxs-Os2meduHrEQFc7vg
-
-第一次胜过MobileNet的二值神经网络，-1与+1的三年艰苦跋涉
-
-https://mp.weixin.qq.com/s/Ak9Yh_MBDR6i7J2rDR99eQ
-
-低成本的二值神经网络介绍以及它能代替全精度网络吗?
-
-https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
-
-异或神经网络
-
-https://mp.weixin.qq.com/s/XzLJzfvpP93cDYplf6-LXA
-
-港科腾讯等提出Bi-Real net：超XNOR-net 10%的ImageNet分类精度
-
-https://mp.weixin.qq.com/s/wCx7rQFwC2mW45FMR77tGQ
-
-二值网络，围绕STE的那些事儿
-
-https://mp.weixin.qq.com/s/7L26ghhDqdMU6LRV0iD6vQ
-
-模型量化从1bit到8bit，二值到三值

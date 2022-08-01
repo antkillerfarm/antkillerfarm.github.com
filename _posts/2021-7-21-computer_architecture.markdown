@@ -101,6 +101,10 @@ https://mp.weixin.qq.com/s/HlOqQUCPljvnxNxqathWcA
 
 都2021年了，还把x86和ARM归为CISC和RISC？
 
+https://blog.csdn.net/windeal3203/article/details/51985832
+
+RISC诞生与发展的缩影
+
 ---
 
 ![](/images/img3/ISA.png)
@@ -312,31 +316,3 @@ Fab的那些事儿
 https://mp.weixin.qq.com/s/_NcQ-PxNpEtpYdo450Uukg
 
 半导体材料全球格局
-
-https://zhuanlan.zhihu.com/p/114448236
-
-什么是Win10的“现代待机”？为什么它未来会越来越重要？这篇文章部分解释了我的第一个平板为什么那么耗电。
-
-https://mp.weixin.qq.com/s/J7RlmvU7JY1J8rV-eqjQ2A
-
-浅谈多核心CPU和SoC芯片及其工作原理
-
-https://mp.weixin.qq.com/s/Lnrlv7JcrOSwbnDweYf1Yg
-
-片上系统设计案例分析-Xbox主机
-
-https://zhuanlan.zhihu.com/p/86432216
-
-Microcode是什么？它为什么能修正CPU硬件错误？
-
-https://zhuanlan.zhihu.com/p/152167194
-
-两大FPGA公司的“AI技术路线”
-
-https://www.zhihu.com/question/503287789
-
-当两个CPU核心要求读写同一内存地址时，其后果是未定义行为吗？
-
-https://mp.weixin.qq.com/s/Kake5sQm79L2j_uDqKfznQ
-
-在《我的世界》里从零打造一台计算机有多难？复旦本科生大神花费了一年心血

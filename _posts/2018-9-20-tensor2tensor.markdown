@@ -359,6 +359,10 @@ https://github.com/horovod/horovod
 
 参考：
 
+https://www.cnblogs.com/rossiXYZ/p/14856464.html
+
+深度学习分布式训练框架Horovod
+
 https://zhuanlan.zhihu.com/p/40578792
 
 Horovod-基于TensorFlow分布式深度学习框架

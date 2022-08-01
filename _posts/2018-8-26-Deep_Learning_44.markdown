@@ -223,6 +223,68 @@ https://mp.weixin.qq.com/s/TFHS5lZYFwcjP_SC1dAckA
 
 多模态信息如何嵌入推荐系统？RecSys2021《多模态推荐系统》教程
 
+# Capsule+
+
+https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Network/
+
+“Understanding Matrix capsules with EM Routing (Based on Hinton's Capsule Networks)”
+
+https://zhuanlan.zhihu.com/p/42864711
+
+胶囊网络到底是什么东东？
+
+https://zhuanlan.zhihu.com/p/32106577
+
+酉变换与递归神经网络
+
+https://github.com/freefuiiismyname/capsule-mrc
+
+基于capsule的观点型阅读理解模型
+
+https://mp.weixin.qq.com/s/cskdgsysD7R_FKChAKmlDg
+
+利用Capsule重构过程，Hinton等人实现对抗样本的自动检测
+
+https://mp.weixin.qq.com/s/7fBXMvT4eyZrKhPKQTAIZQ
+
+你听说过胶囊网络吗？
+
+https://www.cnblogs.com/CZiFan/p/9803067.html
+
+CapsNet胶囊网络
+
+https://mp.weixin.qq.com/s/F9SGZPZj6gup_nOVuDel6A
+
+与胶囊网络异曲同工：Bengio等提出四元数循环神经网络
+
+https://mp.weixin.qq.com/s/4o9XHGwx5lYsJ7YfUNHSoQ
+
+百年老图难倒谷歌AI，网友：是鸭是兔？连我都不能确定
+
+https://mp.weixin.qq.com/s/dN1p7nuv6xtnIsSuY73CcA
+
+基于GNN，强于GNN：胶囊图神经网络的PyTorch实现
+
+https://mp.weixin.qq.com/s/lcJcaiMtYXGVOwa_sVsVfA
+
+Hinton老爷子CapsNet再升级，结合无监督，接近当前最佳效果
+
+https://mp.weixin.qq.com/s/A0m3lkIBCTFf5bzTQlYbgQ
+
+基于胶囊网络的计算机视觉应用
+
+https://mp.weixin.qq.com/s/BqsFIUrVEVz5kOFh3W93gQ
+
+胶囊网络升级新版本，推特2000+赞
+
+https://zhuanlan.zhihu.com/p/106330900
+
+解读－Stacked Capsule AutoEncoder－堆叠的胶囊自编码器
+
+https://mp.weixin.qq.com/s/ubi1L1Zlh4yZqCjZnpD58w
+
+Capsule Network深度解读
+
 # 东南亚+
 
 2021年越南的胡志明市房价高于中国武汉，但人均GDP连武汉的一半都不到。
