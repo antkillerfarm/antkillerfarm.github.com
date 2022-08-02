@@ -279,6 +279,10 @@ https://mp.weixin.qq.com/s/jjT0x99ht8xtfWmzL-0R1A
 
 深度学习的IR“之争”
 
+https://mp.weixin.qq.com/s/hEt4BSPMP1WWuHFMEbICqw
+
+机器学习编译器：MLIR Dialect体系
+
 https://mp.weixin.qq.com/s/G36IllLOTXXbc4LagbNH9Q
 
 编译器与IR的思考: LLVM IR，SPIR-V到MLIR
@@ -396,21 +400,3 @@ Distributed (Deep) Machine Learning Community是陈天奇发起的一个社区�
 代码：
 
 https://github.com/dmlc/dmlc-core
-
-# Flume & Kafka+
-
-https://mp.weixin.qq.com/s/UFfpPnouxXjOFAmZVdSTVg
-
-Kafka核心源码剖析（一）：Producer发送消息流程
-
-https://mp.weixin.qq.com/s/exOs0zrZ2x8Mxi6aB1x-QQ
-
-流数据并行处理性能比较：Kafka vs Pulsar vs Pravega
-
-https://mp.weixin.qq.com/s/ijek6Tdb6H3hqY2CEC917Q
-
-从面试角度来看一看Kafka
-
-https://mp.weixin.qq.com/s/zmDTaW8c65BWZ-mhsED1jw
-
-从演进式角度看消息队列
