@@ -233,42 +233,6 @@ Google（2020.9）又推出了IREE项目，定位和TVM类似。
 
 https://google.github.io/iree/
 
-## MLIR
-
-代码：
-
-tensorflow/compiler/mlir
-
-三种到XLA的IR dialect：
-
-chlo：client HLO dialect，上层前端的IR。
-
-mhlo：支持动态shape的IR。
-
-lmhlo：内存分配之后的IR，也就是无动态shape的IR。
-
-参考：
-
-https://mp.weixin.qq.com/s/fal6vz9gaZMbR41QMGE3AQ
-
-MLIR发布：全新的中介码与编译器框架
-
-https://zhuanlan.zhihu.com/p/361448250
-
-MLIR Toy Tutorials
-
-https://zhuanlan.zhihu.com/p/141256429
-
-MLIR文章视频汇总
-
-https://zhuanlan.zhihu.com/p/379063169
-
-MLIR: 编译器基础架构重定义
-
-https://zhuanlan.zhihu.com/p/508345356
-
-AI编译器的概览、挑战和实践
-
 ## 参考
 
 https://zhuanlan.zhihu.com/p/32711259

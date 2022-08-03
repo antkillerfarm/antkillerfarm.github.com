@@ -252,21 +252,3 @@ PS Worker分布式性能优化
 https://www.cnblogs.com/rossiXYZ/p/15897877.html
 
 NVIDIA HugeCTR，GPU版本参数服务器
-
-# AllReduce
-
-https://www.zhihu.com/question/57799212
-
-ring allreduce和tree allreduce的具体区别是什么？
-
-https://andrew.gibiansky.com/blog/machine-learning/baidu-allreduce/
-
-Bringing HPC Techniques to Deep Learning
-
-https://zhuanlan.zhihu.com/p/79030485
-
-AllReduce算法的前世今生
-
-https://mp.weixin.qq.com/s/4XMVYXnzpYZ4DrIabuTUig
-
-Ring All-reduce: 分布式深度学习的巧妙同步

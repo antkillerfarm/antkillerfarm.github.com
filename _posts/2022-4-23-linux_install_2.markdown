@@ -95,7 +95,63 @@ grub2引导系统iso镜像
 
 在程序中找到“启动盘创建器”即可。这也是防止变砖的最后一条路，反正BIOS是不可能安装坏的，随便折腾吧。
 
-# Linux参考资源+
+# wifi配置
+
+Linux下的wifi配置主要使用iw系列命令，包括iw、iwconfig、iwlist、iwpriv。参见：
+
+http://blog.csdn.net/liangyamin/article/details/7209761
+
+Linux下的iwpriv（iwlist、iwconfig）的简单应用
+
+# Linux参考资源
+
+https://www.kernel.org/doc/html/latest/
+
+Linux官方文档
+
+---
+
+W.Richard Stevens著：
+
+APUE: Advanced Programming in the UNIX Environment
+
+UNP: UNIX Network Programming
+
+---
+
+https://mp.weixin.qq.com/s/n6D5_6K9TrnuXg3h6AiFNA
+
+华为“鸿蒙”所涉及的微内核到底是什么？一文带你认识微内核
+
+![](/images/img3/Monolithic_vs_Micro.jpg)
+
+![](/images/img3/UNIX.jpg)
+
+---
+
+https://mp.weixin.qq.com/s/I7C7cXFgxO7RO0Wpjjj3xQ
+
+一篇文章带你“重新认识”线程上下文切换怎么玩儿
+
+https://www.cnblogs.com/liqiuhao/p/9450093.html
+
+关于TOCTTOU攻击的简介
+
+https://mp.weixin.qq.com/s/Y_GYtL9m3zmY-5VZMbCfWg
+
+Linux中用户的简介与管理
+
+https://linux.cn/article-8290-1.html
+
+漫画赏析：Linux内核到底长啥样
+
+https://mp.weixin.qq.com/s/IucIsbJPo4eUUopV8xNN9w
+
+图解Linux程序的链接原理
+
+https://mp.weixin.qq.com/s/zBtdhjAOjwcJbGluccwOlA
+
+我和面试官之间关于操作系统的一场对弈！写了很久，希望对你有帮助！
 
 https://mp.weixin.qq.com/s/3Pp7wkDO6Rnxb5aZP0sacw
 
@@ -337,10 +393,6 @@ https://mp.weixin.qq.com/s/djEPqxZSfMp13Uf_h6TSiA
 
 认真分析mmap：是什么 为什么 怎么用
 
-https://mp.weixin.qq.com/s/FMYimnxcAya6bhvdGD5LUw
-
-惊魂48小时，阿里工程师如何紧急定位线上内存泄露？
-
 https://zhuanlan.zhihu.com/p/424240082
 
 编译一个属于自己的最小Linux系统
@@ -364,51 +416,3 @@ https://mp.weixin.qq.com/s/ZfprFQjVANuCE2N693gZBQ
 https://mp.weixin.qq.com/s/P14VsWwSh9jiF-jBHSXXOw
 
 申请内存时底层发生了什么？
-
-https://mp.weixin.qq.com/s/OJHQZjxa6u8aA6jZyJnNPg
-
-一文浅析内存管理机制
-
-https://mp.weixin.qq.com/s/lAN0GKjkfkkWCurwRQb6DQ
-
-如何排查句柄泄露问题
-
-https://mp.weixin.qq.com/s/9UmzFxRdE4FFdrqEeBZtOQ
-
-如何实现一个定时器？
-
-https://mp.weixin.qq.com/s/zVi45pZka_kPpKIoNXNVBA
-
-当初我要是这么学习“进程和线程”就好了
-
-https://mp.weixin.qq.com/s/A8TnhOFLQOhEqphE760yvw
-
-15个相见恨晚的Linux神器，你可能一个都没见过
-
-https://mp.weixin.qq.com/s/ejGjsGA1ijPP--j3BLcEFA
-
-Linux并发与同步
-
-https://mp.weixin.qq.com/s/CAPU8bjJWobQs6JHHMasvQ
-
-Linux服务端最大并发数是多少？
-
-http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html
-
-Systemd入门教程：实战篇
-
-https://mp.weixin.qq.com/s/bPqnaMqhi_4p1mwjmvyoIw
-
-多图详解10大高性能开发核心技术
-
-https://mp.weixin.qq.com/s/ESLO1RH6Q8udwI13Z2Pz_w
-
-详解linux io flush
-
-https://mp.weixin.qq.com/s/LLlzPB2emr9Hqr7gql0B4Q
-
-为什么Linux需要Swapping
-
-https://mp.weixin.qq.com/s/fzLcAkYwKhj-9hgoVkTzaw
-
-CPU飙高，系统性能问题如何排查？

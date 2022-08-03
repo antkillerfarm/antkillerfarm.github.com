@@ -381,52 +381,12 @@ https://zhuanlan.zhihu.com/p/419908664
 
 DWARF, 调试信息存储格式
 
-# Linux参考资源
+# 时间的表示方法
 
-https://www.kernel.org/doc/html/latest/
+一般遵循ISO 8601标准：
 
-Linux官方文档
+https://www.w3.org/TR/NOTE-datetime
 
----
+YYYY-MM-DDThh:mm:ss.sTZD (eg 1997-07-16T19:20:30.45+01:00)
 
-W.Richard Stevens著：
-
-APUE: Advanced Programming in the UNIX Environment
-
-UNP: UNIX Network Programming
-
----
-
-https://mp.weixin.qq.com/s/n6D5_6K9TrnuXg3h6AiFNA
-
-华为“鸿蒙”所涉及的微内核到底是什么？一文带你认识微内核
-
-![](/images/img3/Monolithic_vs_Micro.jpg)
-
-![](/images/img3/UNIX.jpg)
-
----
-
-https://mp.weixin.qq.com/s/I7C7cXFgxO7RO0Wpjjj3xQ
-
-一篇文章带你“重新认识”线程上下文切换怎么玩儿
-
-https://www.cnblogs.com/liqiuhao/p/9450093.html
-
-关于TOCTTOU攻击的简介
-
-https://mp.weixin.qq.com/s/Y_GYtL9m3zmY-5VZMbCfWg
-
-Linux中用户的简介与管理
-
-https://linux.cn/article-8290-1.html
-
-漫画赏析：Linux内核到底长啥样
-
-https://mp.weixin.qq.com/s/IucIsbJPo4eUUopV8xNN9w
-
-图解Linux程序的链接原理
-
-https://mp.weixin.qq.com/s/zBtdhjAOjwcJbGluccwOlA
-
-我和面试官之间关于操作系统的一场对弈！写了很久，希望对你有帮助！
+其中的TZD表示time zone designator。

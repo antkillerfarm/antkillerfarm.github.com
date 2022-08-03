@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Zigbee音频, 6LowPAN, 各种智能家居通信技术比较, 边缘计算
+title:  Zigbee音频, 6LowPAN, 物联网通信技术, 边缘计算
 category: technology 
 ---
 
@@ -135,7 +135,7 @@ https://github.com/xukai871105/contiki_cc2530_iar/
 
 无线图像回传技术采用COFDM调制方式，频段一般为300MHZ,实现视频高清图像实时回传到地面，比如NV301等。
 
-# 各种智能家居通信技术比较
+# 物联网通信技术
 
 2015.12
 
@@ -211,6 +211,10 @@ https://github.com/xukai871105/contiki_cc2530_iar/
 ![](/images/img4/Wifi.png)
 
 ---
+
+![](/images/img4/LTE.jpg)
+
+![](/images/img4/LTE_2.jpg)
 
 https://mp.weixin.qq.com/s/J700Ifq5FfJqtgmO2VVn6g
 

@@ -236,6 +236,38 @@ When UnitSize != TotalSize and there are multiple sources and destinations, it i
 
 Scatter也被称为One-to-all，Gather也被称为All-to-one。
 
+## AllReduce
+
+AllReduce有多种具体的实现方式。
+
+Ring AllReduce：
+
+![](/images/img4/Ring_AllReduce.jpg)
+
+Having-Doubling AllReduce：
+
+![](/images/img4/Having-Doubling_AllReduce.jpg)
+
+该算法每次选择节点距离倍增的节点相互通信，每次通信量倍减（或倍增）。
+
+该算法的优点是通信步骤较少，只有$$2 * log_2N$$次（其中N表示参与通信的节点数）通信即可完成，所以其有更低的延迟。相比之下Ring算法的通信步骤是$$2 ∗ (N−1)$$次；缺点是每一个步骤相互通信的节点均不相同，链接来回切换会带来额外开销。
+
+https://www.zhihu.com/question/57799212
+
+ring allreduce和tree allreduce的具体区别是什么？
+
+https://andrew.gibiansky.com/blog/machine-learning/baidu-allreduce/
+
+Bringing HPC Techniques to Deep Learning
+
+https://zhuanlan.zhihu.com/p/79030485
+
+AllReduce算法的前世今生
+
+https://mp.weixin.qq.com/s/4XMVYXnzpYZ4DrIabuTUig
+
+Ring All-reduce: 分布式深度学习的巧妙同步
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/69497154
@@ -321,27 +353,3 @@ https://www.zhihu.com/question/447330716
 https://www.zhihu.com/answer/55990572
 
 藤子A不二雄
-
-https://mp.weixin.qq.com/s/oX91Lk_d5jh91SFyGVbRaQ
-
-福岛的宿命
-
-https://zhuanlan.zhihu.com/p/66650137
-
-中国摩托车是如何在东南亚惨败给日本的？
-
-https://mp.weixin.qq.com/s/0vpvVezKbfG7CkEjtiL-Cw
-
-为什么清理福岛损毁的核电站还需要30年？
-
-https://mp.weixin.qq.com/s/FCKIYZjqSiDc6EpAsA-FMw
-
-日本真相：汇率、出口与广场协议
-
-https://mp.weixin.qq.com/s/mBdZMaD7AmWzqm4WvhwBIA
-
-学生们打架斗殴、宿舍厕所男女公用，这个烂到学校都没法管的宿舍究竟是如何培养出诺奖得主的？
-
-https://mp.weixin.qq.com/s/xaGdGYZSQCPsaZjcdr07Pg
-
-你的“老婆”新垣结衣，嫁人了

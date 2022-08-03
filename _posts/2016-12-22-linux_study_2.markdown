@@ -222,6 +222,14 @@ https://zhuanlan.zhihu.com/p/111556601
 
 valgrind排查内存泄露
 
+https://www.zhihu.com/question/63946754
+
+C++怎么检测内存泄露，怎么定位内存泄露？
+
+https://mp.weixin.qq.com/s/FMYimnxcAya6bhvdGD5LUw
+
+惊魂48小时，阿里工程师如何紧急定位线上内存泄露？
+
 ## 白盒测试
 
 上面提到的主要是黑盒测试工具。
@@ -323,24 +331,6 @@ Linux大神都是怎么记住这么多命令的？
 http://github.com/ibraheemdev/modern-unix
 
 这里收集了几个非常好用的工具
-
-# 时间的表示方法
-
-一般遵循ISO 8601标准：
-
-https://www.w3.org/TR/NOTE-datetime
-
-YYYY-MM-DDThh:mm:ss.sTZD (eg 1997-07-16T19:20:30.45+01:00)
-
-其中的TZD表示time zone designator。
-
-# wifi配置
-
-Linux下的wifi配置主要使用iw系列命令，包括iw、iwconfig、iwlist、iwpriv。参见：
-
-http://blog.csdn.net/liangyamin/article/details/7209761
-
-Linux下的iwpriv（iwlist、iwconfig）的简单应用
 
 # /usr
 

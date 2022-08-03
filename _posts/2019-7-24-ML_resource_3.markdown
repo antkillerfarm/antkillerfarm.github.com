@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ML参考资源（三）, 内存
+title:  ML参考资源（三）, 内存, ANTLR
 category: resource 
 ---
 
@@ -234,6 +234,32 @@ https://mp.weixin.qq.com/s/9skWM6yirEupLj2wdpgqkA
 https://mp.weixin.qq.com/s/Mb7iSXfrOtettVn-Sz8QUA
 
 主板上这家伙，要当CPU和内存的中间商！
+
+# ANTLR
+
+ANTLR—Another Tool for Language Recognition，其前身是PCCTS，它为包括Java，C++，C#,python在内的语言提供了一个通过语法描述来自动构造自定义语言的识别器（recognizer），编译器（parser）和解释器（translator）的框架。
+
+官网：
+
+http://www.antlr.org/
+
+参考：
+
+http://yuzhouwan.com/posts/55501/
+
+Antlr
+
+https://www.ibm.com/developerworks/cn/java/j-lo-antlr/index.html
+
+使用Antlr开发领域语言
+
+# MPS
+
+MPS是jetbrains推出的用于构建DSL的工具。
+
+官网：
+
+https://www.jetbrains.com/mps/
 
 # AI工具+
 

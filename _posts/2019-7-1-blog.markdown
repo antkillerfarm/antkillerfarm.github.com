@@ -91,7 +91,7 @@ category: my story
 
 2018.1.10 近来转战DL以后，blog的产量日增，也渐有重量级的follower：几个中科院、浙大的硕士。并收到了第一笔打赏。
 
-2017.12.21 blog图片太多，特添加第2个图片文件夹。
+2017.12.21 blog图片太多，特添加第2个图片文件夹img2。
 
 2017.10.22 文章分为Language、Linux、Technology、Essay、Resource、Graphics、AI、ML、Math、DL十类。可命名为v3.5。
 
