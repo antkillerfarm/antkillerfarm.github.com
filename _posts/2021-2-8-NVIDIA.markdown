@@ -362,6 +362,10 @@ Mellanox Technologies是一家InfiniBand制造商，于2020年被Nvidia收购。
 
 https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/index.html
 
+nccl v1：支持单机多卡通信，不支持多机通信。
+
+nccl v2：支持多机通信。
+
 参考：
 
 https://www.zhihu.com/question/63219175
@@ -371,6 +375,14 @@ https://www.zhihu.com/question/63219175
 https://zhuanlan.zhihu.com/p/364816069
 
 NCCL--GPU的collective communication通信技术
+
+https://blog.csdn.net/TH_NUM/article/details/81479317
+
+nvidia-nccl学习笔记
+
+https://developer.nvidia.com/blog/fast-multi-gpu-collectives-nccl/
+
+Fast Multi-GPU collectives with NCCL
 
 ## 参考
 

@@ -224,3 +224,7 @@ https://zhuanlan.zhihu.com/p/352232012
 https://mp.weixin.qq.com/s/M-6Ax_MJ0Xs3oBLnTwjnpQ
 
 多炮塔神教最辉煌一战，苏军T-28单车独闯龙潭，杀伤数百德军
+
+https://zhuanlan.zhihu.com/p/545424688
+
+克宫光头总工基里延科

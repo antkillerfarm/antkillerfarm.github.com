@@ -135,6 +135,8 @@ https://zhuanlan.zhihu.com/p/519499603
 
 启动容器：`docker start -i <container id>`
 
+进入已启动容器：`docker attach <container id>`
+
 2.
 
 列出镜像：`docker images`
@@ -155,7 +157,7 @@ https://zhuanlan.zhihu.com/p/519499603
 
 4.退出
 
-`exit`：退出后，会stop容器。2
+`exit`：退出后，会stop容器。
 
 Ctrl+p Ctrl+q：退出后，容器仍然运行。
 

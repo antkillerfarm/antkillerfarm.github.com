@@ -305,6 +305,10 @@ https://mp.weixin.qq.com/s/KtArx_RRr5aw0QBVr_Tffw
 
 这27个电源符号，还傻傻分不清楚？
 
+https://zhuanlan.zhihu.com/p/549588865
+
+推荐一个非常实用的峰值查找算法（peak detection）
+
 # 并行 & 框架 & 优化++
 
 https://mp.weixin.qq.com/s/sn8fMAbJbeT6JUbCpBpN6A
@@ -366,6 +370,10 @@ PyTorch分布式训练
 https://mp.weixin.qq.com/s/0aSBHvscloEnPMRLyNjQsg
 
 PyTorch分布式训练简明教程
+
+https://blog.csdn.net/orangerfun/article/details/123887725
+
+torch分布式训练
 
 https://mp.weixin.qq.com/s/r7kt1k7D1wurWs_uxdLCtg
 

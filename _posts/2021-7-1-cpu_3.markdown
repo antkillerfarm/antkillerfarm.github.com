@@ -147,6 +147,14 @@ IC科普文：ECO的那些事
 
 ---
 
+Register Transfer Level
+
+https://blog.csdn.net/hqzl225411/article/details/117819843
+
+RTL概念与常用RTL建模
+
+---
+
 https://mp.weixin.qq.com/s/Cij_95iLbAm0AEtrSb72_A
 
 关于CPU科普，这篇说得最详细
@@ -276,19 +284,3 @@ RISC-V有何特别之处？
 https://mp.weixin.qq.com/s/26se041cc9aBRw16kvPPjA
 
 芯片制造新模式--像搭积木一样造芯片
-
-https://mp.weixin.qq.com/s/QwE_VTEUS9kGDDrHlzPYmg
-
-硅片为什么不是方的？
-
-https://zhuanlan.zhihu.com/p/32378843
-
-ARM攒机指南-汽车篇
-
-https://mp.weixin.qq.com/s/Hq9hzkyfGcCQa_FfzSDoRg
-
-5nm工艺节点以后，半导体器件的发展方向
-
-https://zhuanlan.zhihu.com/p/66263349
-
-为什么内存和闪存制程比CPU低？它们现在都在什么节点？

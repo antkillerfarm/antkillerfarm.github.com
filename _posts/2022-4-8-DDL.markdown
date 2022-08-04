@@ -352,6 +352,22 @@ gRPC基础概念详解
 
 # CPU++
 
+https://mp.weixin.qq.com/s/QwE_VTEUS9kGDDrHlzPYmg
+
+硅片为什么不是方的？
+
+https://zhuanlan.zhihu.com/p/32378843
+
+ARM攒机指南-汽车篇
+
+https://mp.weixin.qq.com/s/Hq9hzkyfGcCQa_FfzSDoRg
+
+5nm工艺节点以后，半导体器件的发展方向
+
+https://zhuanlan.zhihu.com/p/66263349
+
+为什么内存和闪存制程比CPU低？它们现在都在什么节点？
+
 https://zhuanlan.zhihu.com/p/114448236
 
 什么是Win10的“现代待机”？为什么它未来会越来越重要？这篇文章部分解释了我的第一个平板为什么那么耗电。

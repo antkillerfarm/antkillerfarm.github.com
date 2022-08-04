@@ -199,7 +199,43 @@ AE：全名After Effects，方向于PR相似，但AE在特效制作上，效果�
 
 Linux平台的绘图软件还有KolourPaint、mtPaint、MyPaint。
 
-# 日本++
+# 日本+++
+
+https://mp.weixin.qq.com/s/08stAzq0zVIxfawKJ1yBnQ
+
+日本凭什么如此“猖狂”盘点一下日本那些知名制造企业
+
+https://mp.weixin.qq.com/s/V-GlYhzPbuuPZraKgtXvjQ
+
+重走日本47县，打卡100名城
+
+https://www.zhihu.com/question/416636170
+
+既然黑船事件之前的日本对外完全封闭，那么佩里等人是如何跟日本人交流的？
+
+https://www.zhihu.com/question/26250792
+
+汉献帝的后代真的东渡日本了吗？
+
+https://zhuanlan.zhihu.com/p/309430727
+
+日本一把手为什么喜欢黑人？（织田信长&弥助）
+
+https://mp.weixin.qq.com/s/aRt6iFBr6H9-D92eG5K-cA
+
+一所影响中国历史50年的日本学校，连蒋介石都冒充从该校毕业（日本陆军士官学校）
+
+https://mp.weixin.qq.com/s/_urveiZERCbqZPv3CkI0sg
+
+日本味精企业，真的卡住了芯片脖子？
+
+https://www.zhihu.com/question/447330716
+
+旧日本陆军会羡慕、嫉妒海军伙食好吗?
+
+https://www.zhihu.com/answer/55990572
+
+藤子A不二雄
 
 https://mp.weixin.qq.com/s/oX91Lk_d5jh91SFyGVbRaQ
 
