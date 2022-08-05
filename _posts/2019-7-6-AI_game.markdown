@@ -245,6 +245,42 @@ https://zhuanlan.zhihu.com/p/475557186
 
 如何下出最菜的五子棋？“反五子棋”玩法简介与AI研究
 
+# 英雄无敌
+
+1、2代：New Word Computing
+
+3、4代：3DO旗下的New Word Computing
+
+5代以后，发行商均为育碧。
+
+5代：Nival Interactive
+
+6代：Black Hole Entertainment
+
+7代：Limbic Entertainment
+
+http://heroworld.gamerhome.com/
+
+这是目前网上最全面的英雄无敌系列的资料站。
+
+# 游戏开发
+
+https://www.cnblogs.com/AMzz/p/12597808.html
+
+Havok物理引擎不完全指南--从入门到放弃
+
+https://www.zhihu.com/question/43616312
+
+为什么很少有游戏支持场景破坏？是因为技术问题吗？
+
+---
+
+securom是一个过时的保护软件，可以被欺骗注册、脱壳、虚拟机等方法轻易绕过，早已经被放弃开发。
+
+https://zhuanlan.zhihu.com/p/20519697
+
+让“三大妈”头疼的Denuvo是一种怎样的技术？
+
 # RTS+
 
 ## DosBox

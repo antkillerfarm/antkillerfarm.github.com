@@ -135,16 +135,6 @@ https://github.com/ysh329/deep-learning-model-convertor
 
 这类many-to-many工具从实现原理上，主要是将各种模型转换成中间语言（IR，intermediate representation），然后再变换成目标语言。
 
-某网友的评价：
-
-Tensorflow Model / ONNX / Caffe Model / ... ---> DL IR (nGraph IR / *.IR) ---> LLVM IR ---> CPU JIT / GPU / ...
-
-如果把前面的Model看成一种语言或者DSL，就是DSL ---> DL IR ---> LLVM IR ---> Target，然后你就在中间层疯狂的做优化，编译器优化开发也是这样做的。
-
-在LLVM IR出现以前，很多编译器都有几层的IR表示，比如 C++ ---> 1st IR ---> OPT ---> 2nd IR ---> .... -> Target，只是LLVM出来以后，LLVM IR做了统一，编译器变为了 C++ ---> LLVM IR ---> OPT ---> LLVM IR ---> Target
-
-![](/images/img3/IR.jpg)
-
 ## NNEF
 
 Neural Network Exchange Format是Khronos制定的用于交换NN模型数据的数据格式标准。
@@ -209,6 +199,10 @@ https://mp.weixin.qq.com/s/naJwpmXm7Yl3pxEFYiGf-g
 
 深度探索ONNX模型部署
 
+https://zhuanlan.zhihu.com/p/32711259
+
+从NNVM和ONNX看AI芯片的基础运算算子
+
 ## MMdnn
 
 MMdnn是微软推出的工具集，也是目前功能最强的工具集。
@@ -216,40 +210,6 @@ MMdnn是微软推出的工具集，也是目前功能最强的工具集。
 官网：
 
 https://github.com/Microsoft/MMdnn
-
-## 展望
-
-总的来说，DL方面的中间语言/接口/编译器架构都太多了。下图是Google（2019.4）推出的MLIR对自家各种优化技术的总结，这里还不包括其他家的相关技术。
-
-![](/images/img2/MLIR.png)
-
-从趋势来看，仅仅纠结于各种模型的导入/导出已经不再是最佳的做法，DL compiler才是王道。
-
----
-
-Google（2020.9）又推出了IREE项目，定位和TVM类似。
-
-官网：
-
-https://google.github.io/iree/
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/32711259
-
-从NNVM和ONNX看AI芯片的基础运算算子
-
-https://mp.weixin.qq.com/s/jjT0x99ht8xtfWmzL-0R1A
-
-深度学习的IR“之争”
-
-https://mp.weixin.qq.com/s/hEt4BSPMP1WWuHFMEbICqw
-
-机器学习编译器：MLIR Dialect体系
-
-https://mp.weixin.qq.com/s/G36IllLOTXXbc4LagbNH9Q
-
-编译器与IR的思考: LLVM IR，SPIR-V到MLIR
 
 # MXNet
 
@@ -364,3 +324,79 @@ Distributed (Deep) Machine Learning Community是陈天奇发起的一个社区�
 代码：
 
 https://github.com/dmlc/dmlc-core
+
+# AI Compiler+
+
+https://mp.weixin.qq.com/s/jjT0x99ht8xtfWmzL-0R1A
+
+深度学习的IR“之争”
+
+https://mp.weixin.qq.com/s/hEt4BSPMP1WWuHFMEbICqw
+
+机器学习编译器：MLIR Dialect体系
+
+https://mp.weixin.qq.com/s/G36IllLOTXXbc4LagbNH9Q
+
+编译器与IR的思考: LLVM IR，SPIR-V到MLIR
+
+https://www.zhihu.com/question/391811802
+
+如何评价TensorFlow开源的新运行时TFRT？
+
+https://zhuanlan.zhihu.com/p/347599203
+
+TFRT的开源代码分析
+
+## MLIR
+
+Multi-Level IR
+
+代码：
+
+tensorflow/compiler/mlir
+
+三种到XLA的IR dialect：
+
+chlo：client HLO dialect，上层前端的IR。
+
+mhlo：支持动态shape的IR。
+
+lmhlo：内存分配之后的IR，也就是无动态shape的IR。
+
+---
+
+Affine Dialect：这种Dialect使用来自多面体编译的技术使依赖分析和循环转换高效可靠。
+
+GPU Dialect：MLIR中的GPU Dialect模拟了类似于CUDA或OpenCL的通用GPU编程范式。它的目标是提供抽象来模拟GPU特定的操作和属性。它在很大程度上意味着与供应商无关。
+
+文档：
+
+https://mlir.llvm.org/docs/Dialects/
+
+---
+
+参考：
+
+https://mp.weixin.qq.com/s/fal6vz9gaZMbR41QMGE3AQ
+
+MLIR发布：全新的中介码与编译器框架
+
+https://zhuanlan.zhihu.com/p/361448250
+
+MLIR Toy Tutorials
+
+https://zhuanlan.zhihu.com/p/141256429
+
+MLIR文章视频汇总
+
+https://zhuanlan.zhihu.com/p/379063169
+
+MLIR: 编译器基础架构重定义
+
+https://zhuanlan.zhihu.com/p/508345356
+
+AI编译器的概览、挑战和实践
+
+https://blog.csdn.net/just_sort/article/details/123624966
+
+基于MLIR的矩阵乘法高性能GPU代码生成：一些早期结果
