@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Tensor2Tensor, NN中间语言, MXNet, Horovod
+title:  Tensor2Tensor, MXNet, Horovod
 category: AI 
 ---
 
@@ -123,93 +123,6 @@ num_encoder_layers/num_decoder_layers控制transformer的层数，如果为0，�
 
 get_timing_signal_1d
 
-# NN中间语言
-
-## 概述
-
-随着目前DL框架越来越多，如何在框架之间对模型进行相互转换，就成为了工业界的一个大问题。
-
-https://github.com/ysh329/deep-learning-model-convertor
-
-这个网页包含了各种深度框架之间的模型相互转换的工具的列表。从中可以看出ONNX和MMdnn算是目前比较有用的转换工具了。
-
-这类many-to-many工具从实现原理上，主要是将各种模型转换成中间语言（IR，intermediate representation），然后再变换成目标语言。
-
-## NNEF
-
-Neural Network Exchange Format是Khronos制定的用于交换NN模型数据的数据格式标准。
-
-官网：
-
-https://www.khronos.org/nnef
-
-## ONNX
-
-和NNEF竞争的标准还有微软和Facebook联合推出的Open Neural Network Exchange。
-
-官网：
-
-https://onnx.ai/
-
-代码：
-
-https://github.com/onnx
-
-![](/images/img3/ONNX.jpg)
-
-截止2020.5，ONNX已经获得压倒性的胜利，成为了事实上的标准。
-
-中文指南：
-
-https://zhuanlan.zhihu.com/p/41255090
-
-ONNX--跨框架的模型中间表达框架
-
-修改ONNX模型：
-
-https://github.com/saurabh-shandilya/onnx-utils
-
-参考：
-
-https://mp.weixin.qq.com/s/etSrI8Z3-NWbrqNWIbfzjw
-
-微软Facebook联手发布AI生态系统
-
-https://mp.weixin.qq.com/s/D5rQ6r3s54PR_esAAu5rhQ
-
-开源一年多的模型交换格式ONNX，已经一统框架江湖了？
-
-https://blog.csdn.net/xxradon/article/details/104715524
-
-onnx模型如何增加或者去除里面node，即修改图方法
-
-https://mp.weixin.qq.com/s/H1tDcmrg0vTcSw9PgpgIIQ
-
-ONNX初探
-
-https://mp.weixin.qq.com/s/_iNhfZNR5-swXLhHKjYRkQ
-
-ONNX再探
-
-https://zhuanlan.zhihu.com/p/350702340
-
-onnx simplifier和optimizer
-
-https://mp.weixin.qq.com/s/naJwpmXm7Yl3pxEFYiGf-g
-
-深度探索ONNX模型部署
-
-https://zhuanlan.zhihu.com/p/32711259
-
-从NNVM和ONNX看AI芯片的基础运算算子
-
-## MMdnn
-
-MMdnn是微软推出的工具集，也是目前功能最强的工具集。
-
-官网：
-
-https://github.com/Microsoft/MMdnn
 
 # MXNet
 
@@ -325,78 +238,88 @@ Distributed (Deep) Machine Learning Community是陈天奇发起的一个社区�
 
 https://github.com/dmlc/dmlc-core
 
-# AI Compiler+
+# 并行 & 框架 & 优化++
 
-https://mp.weixin.qq.com/s/jjT0x99ht8xtfWmzL-0R1A
+https://mp.weixin.qq.com/s/dJa5zOXgJJQOM5uWog3JZA
 
-深度学习的IR“之争”
+Local Parallesim：一种新并行训练方法
 
-https://mp.weixin.qq.com/s/hEt4BSPMP1WWuHFMEbICqw
+https://zhuanlan.zhihu.com/p/335116835
 
-机器学习编译器：MLIR Dialect体系
+推荐系统Serving架构分析
 
-https://mp.weixin.qq.com/s/G36IllLOTXXbc4LagbNH9Q
+https://mp.weixin.qq.com/s/DdsJ-ZB_cX9UhbQNK6dCag
 
-编译器与IR的思考: LLVM IR，SPIR-V到MLIR
+分布式深度学习训练网络综述
 
-https://www.zhihu.com/question/391811802
+https://mp.weixin.qq.com/s/qpwBGlTtTLEAhYAUpPyXTQ
 
-如何评价TensorFlow开源的新运行时TFRT？
+CMU：分布式机器学习原理与策略 AAAI2021教程，附221页ppt
 
-https://zhuanlan.zhihu.com/p/347599203
+https://mp.weixin.qq.com/s/nK-9ck5S6noIETOb8b2dJw
 
-TFRT的开源代码分析
+vivo AI计算平台弹性分布式训练的探索和实践
 
-## MLIR
+https://mp.weixin.qq.com/s/IzLtn1SR-aFuxXM3GNZbFw
 
-Multi-Level IR
+蘑菇街自研服务框架如何提升在线推理效率？
 
-代码：
+https://mp.weixin.qq.com/s/GheEA0Ag0vbhZeyzqpTl0A
 
-tensorflow/compiler/mlir
+分布式优化：在大数据时代应运而生
 
-三种到XLA的IR dialect：
+https://mp.weixin.qq.com/s/Vb3AkoWHQY7WWBMZaVnf4g
 
-chlo：client HLO dialect，上层前端的IR。
+微软发布DeepSpeed开源库，支持1000亿个参数模型的训练
 
-mhlo：支持动态shape的IR。
+https://mp.weixin.qq.com/s/3uu50NWFJqA_MTb8wSxIKA
 
-lmhlo：内存分配之后的IR，也就是无动态shape的IR。
+如何优雅地训练大型模型？
 
----
+https://mp.weixin.qq.com/s/RMDEvy-3-L-Rag1OrZLYhg
 
-Affine Dialect：这种Dialect使用来自多面体编译的技术使依赖分析和循环转换高效可靠。
+深度学习模型的训练时内存次线性优化
 
-GPU Dialect：MLIR中的GPU Dialect模拟了类似于CUDA或OpenCL的通用GPU编程范式。它的目标是提供抽象来模拟GPU特定的操作和属性。它在很大程度上意味着与供应商无关。
+https://mp.weixin.qq.com/s/8PUIJykzoNe-fYht5ozrcQ
 
-文档：
+新一代CTR预测服务的GPU优化实践
 
-https://mlir.llvm.org/docs/Dialects/
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771181&idx=1&sn=30b2a5abc7261b4f2ea122e8e96fdabf
 
----
+世界第一超算跑深度学习模型，2.76万块V100 GPU将分布式训练扩展到极致
 
-参考：
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771231&idx=2&sn=6907d6d7a98eab353a076ed48352aadc
 
-https://mp.weixin.qq.com/s/fal6vz9gaZMbR41QMGE3AQ
+15分钟完成Kinetics视频识别训练，除了超级计算机你还需要TSM
 
-MLIR发布：全新的中介码与编译器框架
+https://www.zhihu.com/question/404721763
 
-https://zhuanlan.zhihu.com/p/361448250
+如何评价Google的GShard论文？
 
-MLIR Toy Tutorials
+https://mp.weixin.qq.com/s/eTwSo3GnxSnK-BwwZeWmKA
 
-https://zhuanlan.zhihu.com/p/141256429
+Jeff Dean等提出自动化分层模型，优化CPU、GPU等异构环境，性能提升超60%
 
-MLIR文章视频汇总
+https://mp.weixin.qq.com/s/q0VENBNgolpeWmDapF5q_g
 
-https://zhuanlan.zhihu.com/p/379063169
+在有池化层、1步幅的CNN上减少冗余计算，一种广泛适用的架构转换方法
 
-MLIR: 编译器基础架构重定义
+https://mp.weixin.qq.com/s/YusIuUtvTwoskNRV_OV7iw
 
-https://zhuanlan.zhihu.com/p/508345356
+100万帧数据仅1秒！AI大牛颜水成团队强化学习新作，代码已开源
 
-AI编译器的概览、挑战和实践
+https://www.zhihu.com/answer/2259890109
 
-https://blog.csdn.net/just_sort/article/details/123624966
+资源受限的人工智能
 
-基于MLIR的矩阵乘法高性能GPU代码生成：一些早期结果
+https://zhuanlan.zhihu.com/p/371499074
+
+OneFlow——让每一位算法工程师都有能力训练GPT
+
+https://mp.weixin.qq.com/s/LjdHBEyQhJq3ptMj8XVT-w
+
+TensorFlow在推荐系统中的分布式训练优化实践
+
+https://mp.weixin.qq.com/s/rEHhf32L09KXGJ9bbB2LEA
+
+TensorFlow在美团外卖推荐场景的GPU训练优化实践

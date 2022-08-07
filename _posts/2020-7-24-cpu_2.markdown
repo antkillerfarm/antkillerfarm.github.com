@@ -85,6 +85,10 @@ https://www.zhihu.com/question/31049944
 
 片上网络NoC为何还没有得到实际应用？
 
+https://www.zhihu.com/question/521098765
+
+用算力强大的SOC来控制汽车是不是能够大幅减少MCU的使用数量？
+
 ## 南北桥
 
 北桥芯片则是整个主板的数据交换中枢，整合有内存控制器以及AGP/PCI-E控制器等重要的控制功能，CPU、GPU与内存之间的数据交换都要通过北桥芯片进行；

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  gcc, LLVM, AI Compiler
+title:  gcc, LLVM
 category: toolchain 
 ---
 
@@ -341,39 +341,3 @@ LLVM基本概念入门
 https://zhuanlan.zhihu.com/p/141265959
 
 有关于TableGen的简单介绍
-
-# AI Compiler
-
-## 概述
-
-我们在《NN中间语言》一文中已经展示了各种中间语言/接口。
-
-从目前来看，DL方面的中间语言/接口/编译器架构实在太多了。下图是Google（2019.4）推出的MLIR对自家各种优化技术的总结，这里还不包括其他家的相关技术。
-
-![](/images/img2/MLIR.png)
-
-从趋势来看，仅仅纠结于各种模型的导入/导出已经不再是最佳的做法，AI compiler才是王道。
-
----
-
-某网友的评价：
-
-Tensorflow Model / ONNX / Caffe Model / ... ---> DL IR (nGraph IR / *.IR) ---> LLVM IR ---> CPU JIT / GPU / ...
-
-如果把前面的Model看成一种语言或者DSL，就是DSL ---> DL IR ---> LLVM IR ---> Target，然后你就在中间层疯狂的做优化，编译器优化开发也是这样做的。
-
-在LLVM IR出现以前，很多编译器都有几层的IR表示，比如 C++ ---> 1st IR ---> OPT ---> 2nd IR ---> .... -> Target，只是LLVM出来以后，LLVM IR做了统一，编译器变为了 C++ ---> LLVM IR ---> OPT ---> LLVM IR ---> Target
-
-![](/images/img3/IR.jpg)
-
----
-
-Google（2020.9）又推出了IREE项目，定位和TVM类似。
-
-官网：
-
-https://google.github.io/iree/
-
-同期，还有一个叫做TFRT的项目：
-
-https://github.com/tensorflow/runtime

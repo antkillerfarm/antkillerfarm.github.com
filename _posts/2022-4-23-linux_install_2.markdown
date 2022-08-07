@@ -221,6 +221,10 @@ https://mp.weixin.qq.com/s/4tAxQ0auQfv5x7Dh3B-85g
 
 Linux内存管理
 
+https://blog.csdn.net/orangeboyye/article/details/125998574
+
+深入理解Linux内存管理
+
 https://mp.weixin.qq.com/s/jDPxu6IVo3_VpK5l6_-jdQ
 
 Linux系统内存知识
