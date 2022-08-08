@@ -323,6 +323,10 @@ https://yang-song.github.io/blog/2021/score/
 
 Generative Modeling by Estimating Gradients of the Data Distribution
 
+https://www.zhihu.com/question/536012286
+
+diffusion model最近在图像生成领域大红大紫，如何看待它的风头开始超过GAN？
+
 # VAE参考资源
 
 https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw

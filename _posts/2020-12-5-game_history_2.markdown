@@ -169,6 +169,10 @@ https://www.zhihu.com/question/328681136
 
 什么是弹幕射击游戏？
 
+https://www.zhihu.com/question/20795678
+
+为什么PS主机从每一代硬件架构差异都很大？
+
 # RPG
 
 大宇双剑：轩辕剑、仙剑奇侠传

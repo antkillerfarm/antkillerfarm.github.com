@@ -193,10 +193,6 @@ https://mp.weixin.qq.com/s/imOFQL01RaXUuZwew1izzg
 
 基于GAN来做低光照图像增强，EnlightenGAN论文解读
 
-https://www.zhihu.com/question/536012286
-
-diffusion model最近在图像生成领域大红大紫，如何看待它的风头开始超过GAN？
-
 # VAE参考资源+
 
 https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
