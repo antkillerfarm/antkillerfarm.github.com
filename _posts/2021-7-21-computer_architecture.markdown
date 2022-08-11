@@ -135,11 +135,11 @@ https://www.jianshu.com/p/2a756f9c379f
 
 ## 术语
 
-Shared Virtual Memory，SVM
+Shared Virtual Memory, SVM
 
 Memory consistency model
 
-Multisample anti-aliasing，MSAA
+Multisample anti-aliasing, MSAA
 
 ## 模拟器
 

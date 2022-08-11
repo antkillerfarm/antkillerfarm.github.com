@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  雷达 & 信号处理
+title:  雷达 & 信号处理, 硬盘
 category: resource 
 ---
 
@@ -308,3 +308,67 @@ https://mp.weixin.qq.com/s/KtArx_RRr5aw0QBVr_Tffw
 https://zhuanlan.zhihu.com/p/549588865
 
 推荐一个非常实用的峰值查找算法（peak detection）
+
+# 硬盘
+
+早期，磁带和硬盘驱动器的面密度相似。但由于的市场规模和硬盘销售收入的增加，为更大规模的研发工作提供了资金，这使得他们的制造商能够更积极地扩大存储密度。因此，大容量硬盘驱动器的当前面密度约为最新磁带驱动器的100倍。
+
+相比之下，磁带存储设备目前的区域密度远低于超顺磁极限。因此，磁带的摩尔定律可以持续十年或更长时间，而不会遇到基础物理学方面的障碍。
+
+参考：
+
+https://mp.weixin.qq.com/s/Fzu5YmWYxEohDJjmcGGjhQ
+
+为什么说，数据存储的未来属于磁带
+
+---
+
+随着硬件设备存储介质的改变和性能不断的提升，存储设备处理IO的能力越来越快，传统的旋转设备HDD单个IO需要几毫秒到十几毫秒不等，而如今的高性能的NVMe SSD已经降低到了微秒级别。
+
+因此也有了一些专门针对SSD硬盘的存储软件框架。
+
+https://mp.weixin.qq.com/s/d8aoAFi_lpFoZZCZsPij_g
+
+SPDK概览
+
+---
+
+千年盘，是美国Millenniata的公司将推出新型磁盘存储技术，这种光盘新技术可以将数据在室温下存储1000年，使用这种技术的特殊光盘叫Millennial Disc。
+
+---
+
+https://zhuanlan.zhihu.com/p/34858149
+
+128G的固态硬盘为什么有的标120G，有的标100G？固态硬盘容量背后的秘密
+
+https://zhuanlan.zhihu.com/p/38847308
+
+为什么硬盘转速是5400或者7200这么奇怪的数字？7200转的硬盘一定比5400快吗？
+
+https://www.zhihu.com/answer/470917953
+
+Windows等操作系统是如何做到复制几G文件不出错的？
+
+https://zhuanlan.zhihu.com/p/53547723
+
+一篇文章告诉你SLC、MLC、TLC和QLC究竟有啥区别?
+
+https://zhuanlan.zhihu.com/p/92712620
+
+SLC、MLC、TLC、QLC究竟有什么不同
+
+https://zhuanlan.zhihu.com/p/71267390
+
+固态硬盘和u盘的区别
+
+https://mp.weixin.qq.com/s/7athL-OWrFSxMwxqvR73TA
+
+为了让你的硬盘资源能完好地传给曾曾曾孙，科学家想到了这些办法
+
+https://mp.weixin.qq.com/s/ChAfcT5xDgExiEXytTfynw
+
+关于存储技术的最强入门科普
+
+https://www.sohu.com/a/394211914_444417
+
+SMR硬盘到底能用不？

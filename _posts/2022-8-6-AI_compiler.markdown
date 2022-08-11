@@ -175,9 +175,29 @@ Affine Dialect：这种Dialect使用来自多面体编译的技术使依赖分�
 
 GPU Dialect：MLIR中的GPU Dialect模拟了类似于CUDA或OpenCL的通用GPU编程范式。它的目标是提供抽象来模拟GPU特定的操作和属性。它在很大程度上意味着与供应商无关。
 
+Tensor Operator Set Architecture (TOSA) Dialect
+
+![](/images/img4/codegen-dialect-hierarchy.svg)
+
 文档：
 
 https://mlir.llvm.org/docs/Dialects/
+
+---
+
+ONNX MLIR:
+
+http://onnx.ai/onnx-mlir
+
+---
+
+Torch-MLIR
+
+![](/images/img4/torch_mlir.jpg)
+
+https://blog.csdn.net/HaoBBNuanMM/article/details/124385542
+
+Torch-MLIR技术详解
 
 ---
 
@@ -206,6 +226,10 @@ AI编译器的概览、挑战和实践
 https://blog.csdn.net/just_sort/article/details/123624966
 
 基于MLIR的矩阵乘法高性能GPU代码生成：一些早期结果
+
+https://zhuanlan.zhihu.com/p/442140282
+
+MLIR: A Brief Survey
 
 # 并行 & 框架 & 优化+
 

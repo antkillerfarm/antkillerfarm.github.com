@@ -95,6 +95,14 @@ https://www.zhihu.com/question/521098765
 
 南桥芯片则用于扩展外围I/O接口，例如SATA和USB接口等。
 
+## 总线
+
+ISA -> PCI -> AGP -> PCI-E
+
+https://www.sohu.com/a/193807422_588758
+
+PCI，AGP，PCI-E接口啥区别？
+
 ## 历史
 
 NetBurst可以说是Intel历史上最大的战略错误。
@@ -250,6 +258,14 @@ https://mp.weixin.qq.com/s/AdmEd1FHxpZUwSGYy3qggg
 https://mp.weixin.qq.com/s/kq5F47N3LS43ZKdwe9-CUQ
 
 端侧智能存算一体芯片的需求、现状与挑战
+
+https://zhuanlan.zhihu.com/p/480612865
+
+存算一体技术是什么？发展史、优势、应用方向、主要介质
+
+https://zhuanlan.zhihu.com/p/522755103
+
+存算一体芯片设计与编译器开发
 
 ## Jim Keller
 

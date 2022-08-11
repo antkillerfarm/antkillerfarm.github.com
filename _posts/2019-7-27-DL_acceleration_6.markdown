@@ -9,6 +9,72 @@ category: DL acceleration
 
 # 模型压缩与加速（续）
 
+## EfficientNet
+
+**反思**：为什么有些模型FLOPs很低，以EfficientNet为代表，其推理速度却很慢。
+
+https://zhuanlan.zhihu.com/p/122943688
+
+FLOPs与模型推理速度
+
+---
+
+参考：
+
+https://mp.weixin.qq.com/s/on1YdDexq5ICZL70mvikyw
+
+谷歌大脑提出EfficientNet平衡模型扩展三个维度，取得精度-效率的最大化！
+
+https://mp.weixin.qq.com/s/tCdG9gvpav1SvEzyAyBZXA
+
+谷歌EfficientNet缩放模型，PyTorch实现出炉，登上GitHub热榜
+
+https://mp.weixin.qq.com/s/NPM4E2gGOf3awQw7-_s6Uw
+
+令人拍案叫绝的EfficientNet和EfficientDet
+
+https://mp.weixin.qq.com/s/_eJ27nKULYzUNzDEf62x2w
+
+何恺明团队最新力作RegNet：超越EfficientNet，GPU上提速5倍
+
+https://mp.weixin.qq.com/s/WYG0XAhoPTOn_qCilT9yfw
+
+​一文读懂EfficientDet
+
+https://mp.weixin.qq.com/s/Jklyqt55-8NfKJ5oUXCmHw
+
+EfficientDet框架详解
+
+## 参考
+
+https://github.com/memoiry/Awesome-model-compression-and-acceleration
+
+模型压缩与加速相关资源汇总
+
+https://mp.weixin.qq.com/s/bndECrtEcNCkCF5EG0wO-A
+
+移动端机器学习资源合集
+
+https://blog.csdn.net/hw5226349/article/details/84888416
+
+Deep Compression/Acceleration：模型压缩加速论文汇总
+
+https://zhuanlan.zhihu.com/p/58805980
+
+深度学习的模型加速与模型裁剪方法
+
+https://mp.weixin.qq.com/s/pAEoVs8xu0SY9tfBqOJHHA
+
+Google DeepMind最新报告—深度神经网络压缩进展
+
+http://blog.csdn.net/shuzfan/article/details/51383809
+
+神经网络压缩：Deep Compression
+
+https://mp.weixin.qq.com/s/2NOFyu_twx1EciDeDPBLKw
+
+深度神经网络加速与压缩
+
 https://mp.weixin.qq.com/s/lO2UM04PfSM5VJYh6vINhw
 
 为模型减减肥：谈谈移动／嵌入式端的深度学习
@@ -266,71 +332,3 @@ https://mp.weixin.qq.com/s/wwtsqjjUGt7MTEWDc5bSvQ
 https://mp.weixin.qq.com/s/9dHRO80mMTGdRHaa0AdihQ
 
 无需数据集的Student Networks
-
-https://mp.weixin.qq.com/s/fQAkNdNhwkFichSZCwnNqA
-
-北大、华为联合提出无需数据集的Student Networks
-
-https://mp.weixin.qq.com/s/fA5NWLvLQN6kbB563pJnKg
-
-从16.6%到74.2%，谷歌新模型刷新ImageNet纪录（Noisy Student）
-
-https://mp.weixin.qq.com/s/UPm02RtTwhQhP_YhtmheBg
-
-面向视觉智能的知识蒸馏和Student-Teacher方法，附37页pdf下载
-
-https://zhuanlan.zhihu.com/p/143155437
-
-知识蒸馏在推荐系统的应用
-
-https://mp.weixin.qq.com/s/OFCzl8stFU5b1MWrkDU7NA
-
-阿里电商推荐中如何进行特征蒸馏提升模型效果
-
-https://mp.weixin.qq.com/s/ZNjC30F28uX2lBkHBAAU3g
-
-双DNN排序模型：在线知识蒸馏在爱奇艺推荐的实践
-
-https://mp.weixin.qq.com/s/_Wq7qawac1nTfZnV_AKG6w
-
-模型压缩中知识蒸馏技术原理及其发展现状和展望
-
-https://mp.weixin.qq.com/s/W8mLxU48dgWBB4eEFnU2rQ
-
-知识蒸馏经典解读
-
-https://zhuanlan.zhihu.com/p/144982430
-
-强化学习如何用于模型蒸馏？
-
-https://zhuanlan.zhihu.com/p/144987182
-
-模型蒸馏的核心技术点有哪些，如何对其进行长期深入学习
-
-https://mp.weixin.qq.com/s/3zpri6pfVtp-3-5_004B1Q
-
-优势特征蒸馏在淘宝推荐中的应用
-
-https://zhuanlan.zhihu.com/p/163477538
-
-知识蒸馏与推荐系统
-
-https://mp.weixin.qq.com/s/QpOx58M7lUfkONt-3SP8yg
-
-知识蒸馏与推荐系统
-
-https://mp.weixin.qq.com/s/TJVMuaDVZIjwqzuw6gd8uA
-
-无数据知识蒸馏
-
-https://zhuanlan.zhihu.com/p/90049906
-
-知识蒸馏是什么？一份入门随笔
-
-https://mp.weixin.qq.com/s/rxwHFjl0FEPWEcfMcwXL8w
-
-BERT蒸馏完全指南
-
-https://mp.weixin.qq.com/s/xgCtgEMRZ1VgzRZWjYIjTQ
-
-知乎搜索文本相关性与知识蒸馏

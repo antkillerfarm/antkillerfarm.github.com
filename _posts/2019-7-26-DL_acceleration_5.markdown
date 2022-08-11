@@ -9,6 +9,58 @@ category: DL acceleration
 
 # NN Quantization（续）
 
+## 二值神经网络
+
+二值神经网络的主要缺点在于，它们无法实现与完全精度的深层网络一样高的精度。但这一直在缓慢地变化，已经有了很多进步。
+
+http://blog.csdn.net/tangwei2014/article/details/55077172
+
+二值化神经网络介绍
+
+https://mp.weixin.qq.com/s/0twiT2mrVdnwyS-mqgrjVA
+
+低比特量化之XNOR-Net
+
+https://mp.weixin.qq.com/s/oumf8l28ijYLxc9fge0FMQ
+
+嵌入式深度学习之神经网络二值化（1）
+
+https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
+
+嵌入式深度学习之神经网络二值化（2）
+
+https://mp.weixin.qq.com/s/RsZCTqCKwpnjATUFC8da7g
+
+嵌入式深度学习之神经网络二值化（3）
+
+https://blog.csdn.net/stdcoutzyx/article/details/50926174
+
+二值神经网络（Binary Neural Network，BNN）
+
+https://mp.weixin.qq.com/s/Q54AdQmqa5JD0v9CEeFtSQ
+
+二值化神经网络(BNN)综述
+
+https://zhuanlan.zhihu.com/p/431680710
+
+谈谈BNN二值化神经网络的设计，以及几代学界工作的演进 -（1）架构与原理
+
+https://zhuanlan.zhihu.com/p/433429767
+
+谈谈BNN二值化神经网络的设计，以及几代学界工作的演进 -（2）二值训练
+
+https://zhuanlan.zhihu.com/p/435285316
+
+谈谈BNN二值化神经网络的设计，以及几代学界工作的演进 -（3）二值化设计法则、推理框架与发展潜力
+
+https://mp.weixin.qq.com/s/lVja7woyFWpmr9sH0CitAA
+
+BMXNet：基于MXNet的开源二值神经网络实现
+
+https://mp.weixin.qq.com/s/naDk0mmxd08dNl9LawLUnw
+
+不使用先验知识与复杂训练策略，从头训练二值神经网络！
+
 ## 参考
 
 https://mp.weixin.qq.com/s/Xvlxs-Os2meduHrEQFc7vg
@@ -260,69 +312,3 @@ https://mp.weixin.qq.com/s/wOaCjSifZqkndaGbst1-aw
 《AMC: AutoML for Model Compression and Acceleration on Mobile Devices》
 
 这是韩松组的何宜晖的作品。该论文采用深度强化学习的DDPG网络来优化目标网络，从而大大减少了需要搜索的状态空间。
-
-## EfficientNet
-
-**反思**：为什么有些模型FLOPs很低，以EfficientNet为代表，其推理速度却很慢。
-
-https://zhuanlan.zhihu.com/p/122943688
-
-FLOPs与模型推理速度
-
----
-
-参考：
-
-https://mp.weixin.qq.com/s/on1YdDexq5ICZL70mvikyw
-
-谷歌大脑提出EfficientNet平衡模型扩展三个维度，取得精度-效率的最大化！
-
-https://mp.weixin.qq.com/s/tCdG9gvpav1SvEzyAyBZXA
-
-谷歌EfficientNet缩放模型，PyTorch实现出炉，登上GitHub热榜
-
-https://mp.weixin.qq.com/s/NPM4E2gGOf3awQw7-_s6Uw
-
-令人拍案叫绝的EfficientNet和EfficientDet
-
-https://mp.weixin.qq.com/s/_eJ27nKULYzUNzDEf62x2w
-
-何恺明团队最新力作RegNet：超越EfficientNet，GPU上提速5倍
-
-https://mp.weixin.qq.com/s/WYG0XAhoPTOn_qCilT9yfw
-
-​一文读懂EfficientDet
-
-https://mp.weixin.qq.com/s/Jklyqt55-8NfKJ5oUXCmHw
-
-EfficientDet框架详解
-
-## 参考
-
-https://github.com/memoiry/Awesome-model-compression-and-acceleration
-
-模型压缩与加速相关资源汇总
-
-https://mp.weixin.qq.com/s/bndECrtEcNCkCF5EG0wO-A
-
-移动端机器学习资源合集
-
-https://blog.csdn.net/hw5226349/article/details/84888416
-
-Deep Compression/Acceleration：模型压缩加速论文汇总
-
-https://zhuanlan.zhihu.com/p/58805980
-
-深度学习的模型加速与模型裁剪方法
-
-https://mp.weixin.qq.com/s/pAEoVs8xu0SY9tfBqOJHHA
-
-Google DeepMind最新报告—深度神经网络压缩进展
-
-http://blog.csdn.net/shuzfan/article/details/51383809
-
-神经网络压缩：Deep Compression
-
-https://mp.weixin.qq.com/s/2NOFyu_twx1EciDeDPBLKw
-
-深度神经网络加速与压缩

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度加速（八）——模型压缩与加速进阶（2）, 硬盘
+title:  深度加速（八）——模型压缩与加速进阶（2）
 category: DL acceleration 
 ---
 
@@ -8,6 +8,90 @@ category: DL acceleration
 {:toc}
 
 # 模型压缩与加速进阶
+
+https://mp.weixin.qq.com/s/ZfW-jDSo6uaaqdmJtBizOA
+
+从模型精简，硬件实现，到模型剪枝
+
+https://mp.weixin.qq.com/s/5ywMyedmplCSLzWlnoFDSQ
+
+模型剪枝技术原理及其发展现状和展望
+
+https://mp.weixin.qq.com/s/8jyQ_7DYn7lHMcAWokKbcA
+
+超Mask RCNN速度4倍，仅在单个GPU训练的实时实例分割算法
+
+https://mp.weixin.qq.com/s/TC_Ju2vuKDP6d538v2F8CQ
+
+剪枝需有的放矢，快手&罗切斯特大学提出基于能耗建模的模型压缩
+
+https://mp.weixin.qq.com/s/UkqwPBYgYQuIB9_jGMt2QQ
+
+Rocket Training: 一种提升轻量网络性能的训练方法
+
+https://mp.weixin.qq.com/s/xCzS7sYMFmk5K4ClB1I2YQ
+
+Uber提出SBNet：利用激活的稀疏性加速卷积网络
+
+https://mp.weixin.qq.com/s/6Wj0Y4y30BVA75WrU4oZbQ
+
+SBNet: 提高自动驾驶系统的感知效率
+
+https://mp.weixin.qq.com/s/HXxnhMjAchxKSidu45kOeg
+
+网络压缩最新进展：2019年最新文章概览
+
+https://mp.weixin.qq.com/s/Bl7-hGIxZMsHxscqb7DnMA
+
+200～1000+fps！谷歌公布亚毫秒级人脸检测算法BlazeFace，面向移动GPU
+
+https://mp.weixin.qq.com/s/l2_N-PXjDMCqSRwYxU4BEA
+
+模型加速概述与模型裁剪算法技术解析
+
+https://mp.weixin.qq.com/s/af-z73asc-PmpEsI_yEulA
+
+北邮提出新AI模型压缩算法，显著降低计算复杂度
+
+https://mp.weixin.qq.com/s/AOI2LUjiKPUJFE0D7zX0Hw
+
+谷歌新研究：基于数据共享的神经网络快速训练方法
+
+https://mp.weixin.qq.com/s/Q0XyKIrbOIrA3YsYHmwK1Q
+
+移动端高效率的分组网络都发展到什么程度了？
+
+https://mp.weixin.qq.com/s/l3790PuutrOF27RRmVqJhQ
+
+面对千万级推荐，如何压缩模型最高效？这是腾讯看点新框架
+
+https://mp.weixin.qq.com/s/n_LY6mmJRH5k_cubYOTq1A
+
+模型剪枝有哪些关键技术，如何对其进行长期深入学习
+
+https://mp.weixin.qq.com/s/NsvjADgQZrYkUGNN6fzXVg
+
+驭势科技推出“东风网络”：如何找到速度-精度的最优解？
+
+https://mp.weixin.qq.com/s/HzgRHtVwdmW6_m7OJwK-ew
+
+SysML 2019论文解读：Accurate and Efficient 2-Bit Quantized Neural Netowrks
+
+https://mp.weixin.qq.com/s/oah61YozMB2fMfpDqPwHjw
+
+Deep Compression神经网络压缩经典之作
+
+https://mp.weixin.qq.com/s/ulrPhfsPunKAWYohBhkh9w
+
+寻找最佳的神经网络架构，韩松组两篇论文解读
+
+https://mp.weixin.qq.com/s/oDwvMtET0moHVGgtQLfCow
+
+5个可以让你的模型在边缘设备上高效推理的算法
+
+https://mp.weixin.qq.com/s/nbEa0csbaMvEM3TCI3fn0Q
+
+当前模型剪枝有哪些可用的开源工具？
 
 https://mp.weixin.qq.com/s/0_66CScEk0qhGlTvfpmqBA
 
@@ -304,73 +388,3 @@ https://zhuanlan.zhihu.com/p/93020471
 https://mp.weixin.qq.com/s/AjuTXFmxHYdUUqodSpP_4w
 
 10倍加速！爱奇艺超分辨模型加速实践
-
-# Tile
-
-矩阵乘法的实现（matmul）是一个简易的三层for循环。这样的循环其实对于缓存是不友好的。
-
-为解决缓存使用的问题，可以改变matmul的计算顺序，使得data矩阵的一部分数据可以长久地驻扎在缓存中，避免重复从内存读取这部分数据，这种技术被称为Blocking（或tiling）。它将矩阵划分几块，然后在小块中进行矩阵乘法，最后将数据汇集到输出矩阵中。
-
-# 硬盘
-
-早期，磁带和硬盘驱动器的面密度相似。但由于的市场规模和硬盘销售收入的增加，为更大规模的研发工作提供了资金，这使得他们的制造商能够更积极地扩大存储密度。因此，大容量硬盘驱动器的当前面密度约为最新磁带驱动器的100倍。
-
-相比之下，磁带存储设备目前的区域密度远低于超顺磁极限。因此，磁带的摩尔定律可以持续十年或更长时间，而不会遇到基础物理学方面的障碍。
-
-参考：
-
-https://mp.weixin.qq.com/s/Fzu5YmWYxEohDJjmcGGjhQ
-
-为什么说，数据存储的未来属于磁带
-
----
-
-随着硬件设备存储介质的改变和性能不断的提升，存储设备处理IO的能力越来越快，传统的旋转设备HDD单个IO需要几毫秒到十几毫秒不等，而如今的高性能的NVMe SSD已经降低到了微秒级别。
-
-因此也有了一些专门针对SSD硬盘的存储软件框架。
-
-https://mp.weixin.qq.com/s/d8aoAFi_lpFoZZCZsPij_g
-
-SPDK概览
-
----
-
-千年盘，是美国Millenniata的公司将推出新型磁盘存储技术，这种光盘新技术可以将数据在室温下存储1000年，使用这种技术的特殊光盘叫Millennial Disc。
-
----
-
-https://zhuanlan.zhihu.com/p/34858149
-
-128G的固态硬盘为什么有的标120G，有的标100G？固态硬盘容量背后的秘密
-
-https://zhuanlan.zhihu.com/p/38847308
-
-为什么硬盘转速是5400或者7200这么奇怪的数字？7200转的硬盘一定比5400快吗？
-
-https://www.zhihu.com/answer/470917953
-
-Windows等操作系统是如何做到复制几G文件不出错的？
-
-https://zhuanlan.zhihu.com/p/53547723
-
-一篇文章告诉你SLC、MLC、TLC和QLC究竟有啥区别?
-
-https://zhuanlan.zhihu.com/p/92712620
-
-SLC、MLC、TLC、QLC究竟有什么不同
-
-https://zhuanlan.zhihu.com/p/71267390
-
-固态硬盘和u盘的区别
-
-https://mp.weixin.qq.com/s/7athL-OWrFSxMwxqvR73TA
-
-为了让你的硬盘资源能完好地传给曾曾曾孙，科学家想到了这些办法
-
-https://mp.weixin.qq.com/s/ChAfcT5xDgExiEXytTfynw
-
-关于存储技术的最强入门科普
-
-https://www.sohu.com/a/394211914_444417
-
-SMR硬盘到底能用不？

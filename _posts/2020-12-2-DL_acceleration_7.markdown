@@ -9,6 +9,74 @@ category: DL acceleration
 
 # 知识蒸馏（续）
 
+https://mp.weixin.qq.com/s/fQAkNdNhwkFichSZCwnNqA
+
+北大、华为联合提出无需数据集的Student Networks
+
+https://mp.weixin.qq.com/s/fA5NWLvLQN6kbB563pJnKg
+
+从16.6%到74.2%，谷歌新模型刷新ImageNet纪录（Noisy Student）
+
+https://mp.weixin.qq.com/s/UPm02RtTwhQhP_YhtmheBg
+
+面向视觉智能的知识蒸馏和Student-Teacher方法，附37页pdf下载
+
+https://zhuanlan.zhihu.com/p/143155437
+
+知识蒸馏在推荐系统的应用
+
+https://mp.weixin.qq.com/s/OFCzl8stFU5b1MWrkDU7NA
+
+阿里电商推荐中如何进行特征蒸馏提升模型效果
+
+https://mp.weixin.qq.com/s/ZNjC30F28uX2lBkHBAAU3g
+
+双DNN排序模型：在线知识蒸馏在爱奇艺推荐的实践
+
+https://mp.weixin.qq.com/s/_Wq7qawac1nTfZnV_AKG6w
+
+模型压缩中知识蒸馏技术原理及其发展现状和展望
+
+https://mp.weixin.qq.com/s/W8mLxU48dgWBB4eEFnU2rQ
+
+知识蒸馏经典解读
+
+https://zhuanlan.zhihu.com/p/144982430
+
+强化学习如何用于模型蒸馏？
+
+https://zhuanlan.zhihu.com/p/144987182
+
+模型蒸馏的核心技术点有哪些，如何对其进行长期深入学习
+
+https://mp.weixin.qq.com/s/3zpri6pfVtp-3-5_004B1Q
+
+优势特征蒸馏在淘宝推荐中的应用
+
+https://zhuanlan.zhihu.com/p/163477538
+
+知识蒸馏与推荐系统
+
+https://mp.weixin.qq.com/s/QpOx58M7lUfkONt-3SP8yg
+
+知识蒸馏与推荐系统
+
+https://mp.weixin.qq.com/s/TJVMuaDVZIjwqzuw6gd8uA
+
+无数据知识蒸馏
+
+https://zhuanlan.zhihu.com/p/90049906
+
+知识蒸馏是什么？一份入门随笔
+
+https://mp.weixin.qq.com/s/rxwHFjl0FEPWEcfMcwXL8w
+
+BERT蒸馏完全指南
+
+https://mp.weixin.qq.com/s/xgCtgEMRZ1VgzRZWjYIjTQ
+
+知乎搜索文本相关性与知识蒸馏
+
 https://mp.weixin.qq.com/s/6K5FvjMIVer-_fXJazU20Q
 
 深度学习中的3个秘密：集成，知识蒸馏和蒸馏
@@ -63,6 +131,16 @@ https://mp.weixin.qq.com/s/KPT4P5SQ4E4ofPdjhhjRvA
 
 和GEMM类似的还有GEMV（General Matrix Vector multiplication）。
 
+---
+
+Multiply Accumulate, MAC
+
+Matrix Multiply Accumulate, MMA
+
+Fused Multiply-Add, FMA
+
+---
+
 参见：
 
 http://blog.csdn.net/u014114990/article/details/51125776
@@ -116,6 +194,12 @@ https://mp.weixin.qq.com/s/PMOrY5ZElyPGOVxZgXFVzw
 https://mp.weixin.qq.com/s/Fes8FHngKnL8jklB7DhNCQ
 
 图计算加速架构综述
+
+## Tile
+
+矩阵乘法的实现（matmul）是一个简易的三层for循环。这样的循环其实对于缓存是不友好的。
+
+为解决缓存使用的问题，可以改变matmul的计算顺序，使得data矩阵的一部分数据可以长久地驻扎在缓存中，避免重复从内存读取这部分数据，这种技术被称为Blocking（或tiling）。它将矩阵划分几块，然后在小块中进行矩阵乘法，最后将数据汇集到输出矩阵中。
 
 # 模型优化工具
 
@@ -316,87 +400,3 @@ https://zhuanlan.zhihu.com/c_151876233
 https://mp.weixin.qq.com/s/kU0_BuQW8VQihUwBuZ90cA
 
 发布可伸缩超网SCARLET，小米AutoML团队NAS三部曲杀青
-
-https://mp.weixin.qq.com/s/ZfW-jDSo6uaaqdmJtBizOA
-
-从模型精简，硬件实现，到模型剪枝
-
-https://mp.weixin.qq.com/s/5ywMyedmplCSLzWlnoFDSQ
-
-模型剪枝技术原理及其发展现状和展望
-
-https://mp.weixin.qq.com/s/8jyQ_7DYn7lHMcAWokKbcA
-
-超Mask RCNN速度4倍，仅在单个GPU训练的实时实例分割算法
-
-https://mp.weixin.qq.com/s/TC_Ju2vuKDP6d538v2F8CQ
-
-剪枝需有的放矢，快手&罗切斯特大学提出基于能耗建模的模型压缩
-
-https://mp.weixin.qq.com/s/UkqwPBYgYQuIB9_jGMt2QQ
-
-Rocket Training: 一种提升轻量网络性能的训练方法
-
-https://mp.weixin.qq.com/s/xCzS7sYMFmk5K4ClB1I2YQ
-
-Uber提出SBNet：利用激活的稀疏性加速卷积网络
-
-https://mp.weixin.qq.com/s/6Wj0Y4y30BVA75WrU4oZbQ
-
-SBNet: 提高自动驾驶系统的感知效率
-
-https://mp.weixin.qq.com/s/HXxnhMjAchxKSidu45kOeg
-
-网络压缩最新进展：2019年最新文章概览
-
-https://mp.weixin.qq.com/s/Bl7-hGIxZMsHxscqb7DnMA
-
-200～1000+fps！谷歌公布亚毫秒级人脸检测算法BlazeFace，面向移动GPU
-
-https://mp.weixin.qq.com/s/l2_N-PXjDMCqSRwYxU4BEA
-
-模型加速概述与模型裁剪算法技术解析
-
-https://mp.weixin.qq.com/s/af-z73asc-PmpEsI_yEulA
-
-北邮提出新AI模型压缩算法，显著降低计算复杂度
-
-https://mp.weixin.qq.com/s/AOI2LUjiKPUJFE0D7zX0Hw
-
-谷歌新研究：基于数据共享的神经网络快速训练方法
-
-https://mp.weixin.qq.com/s/Q0XyKIrbOIrA3YsYHmwK1Q
-
-移动端高效率的分组网络都发展到什么程度了？
-
-https://mp.weixin.qq.com/s/l3790PuutrOF27RRmVqJhQ
-
-面对千万级推荐，如何压缩模型最高效？这是腾讯看点新框架
-
-https://mp.weixin.qq.com/s/n_LY6mmJRH5k_cubYOTq1A
-
-模型剪枝有哪些关键技术，如何对其进行长期深入学习
-
-https://mp.weixin.qq.com/s/NsvjADgQZrYkUGNN6fzXVg
-
-驭势科技推出“东风网络”：如何找到速度-精度的最优解？
-
-https://mp.weixin.qq.com/s/HzgRHtVwdmW6_m7OJwK-ew
-
-SysML 2019论文解读：Accurate and Efficient 2-Bit Quantized Neural Netowrks
-
-https://mp.weixin.qq.com/s/oah61YozMB2fMfpDqPwHjw
-
-Deep Compression神经网络压缩经典之作
-
-https://mp.weixin.qq.com/s/ulrPhfsPunKAWYohBhkh9w
-
-寻找最佳的神经网络架构，韩松组两篇论文解读
-
-https://mp.weixin.qq.com/s/oDwvMtET0moHVGgtQLfCow
-
-5个可以让你的模型在边缘设备上高效推理的算法
-
-https://mp.weixin.qq.com/s/nbEa0csbaMvEM3TCI3fn0Q
-
-当前模型剪枝有哪些可用的开源工具？

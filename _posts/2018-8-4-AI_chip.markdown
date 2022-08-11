@@ -15,6 +15,8 @@ https://basicmi.github.io/AI-Chip/
 
 A list of ICs and IPs for AI, Machine Learning and Deep Learning.
 
+![](/images/img4/AI_chip.png)
+
 ## NN计算的硬件设计
 
 NN计算问题的瓶颈主要包括两类：
@@ -140,6 +142,12 @@ https://zhuanlan.zhihu.com/p/103597189
 https://www.zhihu.com/question/41469046
 
 寒武纪神经网络处理器效能如何？
+
+## 壁仞
+
+https://www.zhihu.com/question/547728200
+
+如何评价壁仞科技发布的最大算力GPGPU BR100？
 
 ## Habana
 
@@ -274,11 +282,4 @@ Systolic array是孔祥重和他的博士生Charles Leiserson于1978年发明的
 
 《Why systolic architectures?》
 
->孔祥重（H. T. Kung/Kung, Hsiang-Tsung），1945年生。台湾国立清华大学本科（1968）+CMU博士（1974）。CMU、Harvard教授。台湾中央研究院院士、美国工程院院士。除了Systolic array之外，数据库领域的Optimistic concurrency control（乐观并发控制）也是他的贡献。   
->除了Charles Eric Leiserson之外，他的博士生还有Robert Tappan Morris，也就是著名的Morris Worm的作者。
-
-参考：
-
-http://web.cecs.pdx.edu/~mperkows/temp/May22/0020.Matrix-multiplication-systolic.pdf
-
-矩阵乘法器原理
+![](/images/img4/Systolic_array.gif)

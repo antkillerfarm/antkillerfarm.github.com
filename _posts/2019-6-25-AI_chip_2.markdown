@@ -13,6 +13,15 @@ category: Chip
 
 ### 脉动阵列（续）
 
+>孔祥重（H. T. Kung/Kung, Hsiang-Tsung），1945年生。台湾国立清华大学本科（1968）+CMU博士（1974）。CMU、Harvard教授。台湾中央研究院院士、美国工程院院士。除了Systolic array之外，数据库领域的Optimistic concurrency control（乐观并发控制）也是他的贡献。   
+>除了Charles Eric Leiserson之外，他的博士生还有Robert Tappan Morris，也就是著名的Morris Worm的作者。
+
+参考：
+
+http://web.cecs.pdx.edu/~mperkows/temp/May22/0020.Matrix-multiplication-systolic.pdf
+
+矩阵乘法器原理
+
 http://www.eecs.harvard.edu/~htk/publication/1980-introduction-to-vlsi-systems-kung-leiserson.pdf
 
 Algorithms for VLSI Processor Arrays
@@ -394,27 +403,3 @@ NovuMind异构智能核心技术引领智联网
 https://mp.weixin.qq.com/s/fSSyOs4-NXbPTbDjpfJBNQ
 
 Google IPU：互联网巨头纷纷进军芯片行业是为何？
-
-https://mp.weixin.qq.com/s/S1y4NEx4_Mgwf68S2pexqA
-
-拿着锤子找钉子，数字芯片领导者比特大陆进军人工智能
-
-https://mp.weixin.qq.com/s/gtgPYf939uYRzxAab_LZLQ
-
-谢源：计算存储一体化，在存储里做深度学习，架构创新实现下一代AI芯片
-
-https://mp.weixin.qq.com/s/s-fYxv4z5kkJUFueU2IR7w
-
-BP表达式与硬件架构：相似性构建更高效的计算单元
-
-https://mp.weixin.qq.com/s/1r7G84les7FihqPbSiS0Ng
-
-华为首款手机端AI芯片麒麟970
-
-https://mp.weixin.qq.com/s/y9dVg9YtfWxu6NcW-fxi6Q
-
-内存带宽与计算能力，谁才是决定深度学习执行性能的关键？
-
-https://mp.weixin.qq.com/s/K_dohaZbCISZlxe1Utu50w
-
-如何用FPGA加速卷积神经网络(CNN)？

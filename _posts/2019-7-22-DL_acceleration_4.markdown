@@ -101,6 +101,10 @@ float16已经被证明是不适合training的，更遑论Flexpoint了。
 
 BF16的成功经验表明，算法专家在AI芯片中的重要程度，甚至超过了IC专家。
 
+需要注意的是Flexpoint的失败，主要在于Dynamic Range和底数的位宽取舍上，其他设计思路还是有可取之处的。采用同样思路的MSFP就获得了成功。
+
+MSFP由微软提出，在微软Project Brainwave产品上得到了广泛的应用。
+
 参考：
 
 https://www.intel.ai/flexpoint-numerical-innovation-underlying-intel-nervana-neural-network-processor/
@@ -125,6 +129,10 @@ https://mp.weixin.qq.com/s/z4OEPrAAtaNmBQoyvEd7Nw
 
 缺点：毕竟不是16位，运算速度只有FP16/BF16的一半，但比FP32快一些。
 
+BF16和TF32的先例一开，各种格式如火山爆发一般涌现。例如AMD的fp24，Pixar的pxr24，Enflame的ef32。
+
+壁仞原创定义了TF32+，相较于TF32，在满足同样动态表示范围的前提下，增加了5位尾数。实际上就是pxr24。。。
+
 参考：
 
 https://mp.weixin.qq.com/s/cGKtvtZzR--sGL4oNSZfAw
@@ -135,11 +143,31 @@ https://zhuanlan.zhihu.com/p/143499632
 
 NVIDIA A100 GPU中的TF32将AI训练与HPC速度提升20倍
 
+https://www.cnblogs.com/zhouronghua/p/15170247.html
+
+AI中各种浮点精度概念集合：fp16，fp32，bf16，tf32，fp24，pxr24，ef32
+
+https://zhuanlan.zhihu.com/p/449857213
+
+那些年，AI芯片里的浮点(FloatPoint)格式
+
 ## x86 Extended Precision Format
 
 Intel在早期的8087芯片上引入了一种80bit的浮点格式：1 Sign + 15 Exponent + 80 Significand
 
 这个格式设计不知道是否启发了BF16，因为它采用了和IEEE 754中128bit相同的Exponent，正如BF16使用FP32的Exponent一样，都是高一个档次的Exponent搭配低档次的Significand。
+
+## BF8 and Tesla CFloat
+
+当我们将浮点的继续降低到8-bit的时候，BF8遇到的挑战越来越大。
+
+在论文HFP8中，模型inference的时候，FP8(1-4-3)在mobilenet和transformer任务上明显的精度降低。
+
+对于training来说，遇到的挑战进一步增大，weight/gradients/activation的范围相差更大，没有办法选择一个合适的格式来满足所有数值的要求。
+
+HFP8就提出了一种Hybrid的方式: forward的时候用 FP-1-4-3, backward的时候用 FP-1-5-2. forward的时候，更关注精度，backward的时候更注重范围。这样的话，HFP8就能够在训练的过程中获得接近FP32的表现。
+
+在工业界Tesla DoJo 提出了一种可配置的CFloat，exponent和mantissa的位数可以动态的调整，只要满足总共的bit数就可以了。这样，由软件来选择合适的浮点类型CFormat，来最大化的利用硬件的性能。
 
 ## Posit
 
@@ -254,55 +282,3 @@ https://github.com/google/gemmlowp
 ## 论文
 
 《Quantizing deep convolutional networks for efficient inference: A whitepaper》
-
-## 二值神经网络
-
-二值神经网络的主要缺点在于，它们无法实现与完全精度的深层网络一样高的精度。但这一直在缓慢地变化，已经有了很多进步。
-
-http://blog.csdn.net/tangwei2014/article/details/55077172
-
-二值化神经网络介绍
-
-https://mp.weixin.qq.com/s/0twiT2mrVdnwyS-mqgrjVA
-
-低比特量化之XNOR-Net
-
-https://mp.weixin.qq.com/s/oumf8l28ijYLxc9fge0FMQ
-
-嵌入式深度学习之神经网络二值化（1）
-
-https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
-
-嵌入式深度学习之神经网络二值化（2）
-
-https://mp.weixin.qq.com/s/RsZCTqCKwpnjATUFC8da7g
-
-嵌入式深度学习之神经网络二值化（3）
-
-https://blog.csdn.net/stdcoutzyx/article/details/50926174
-
-二值神经网络（Binary Neural Network，BNN）
-
-https://mp.weixin.qq.com/s/Q54AdQmqa5JD0v9CEeFtSQ
-
-二值化神经网络(BNN)综述
-
-https://zhuanlan.zhihu.com/p/431680710
-
-谈谈BNN二值化神经网络的设计，以及几代学界工作的演进 -（1）架构与原理
-
-https://zhuanlan.zhihu.com/p/433429767
-
-谈谈BNN二值化神经网络的设计，以及几代学界工作的演进 -（2）二值训练
-
-https://zhuanlan.zhihu.com/p/435285316
-
-谈谈BNN二值化神经网络的设计，以及几代学界工作的演进 -（3）二值化设计法则、推理框架与发展潜力
-
-https://mp.weixin.qq.com/s/lVja7woyFWpmr9sH0CitAA
-
-BMXNet：基于MXNet的开源二值神经网络实现
-
-https://mp.weixin.qq.com/s/naDk0mmxd08dNl9LawLUnw
-
-不使用先验知识与复杂训练策略，从头训练二值神经网络！

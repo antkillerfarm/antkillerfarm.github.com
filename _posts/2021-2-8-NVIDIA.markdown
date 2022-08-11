@@ -328,6 +328,8 @@ https://www.zhihu.com/column/c_1231181516811390976
 
 NVLink技术提供比PCIe 3更高的带宽与更多的链路，并可提升多GPU和多GPU/CPU系统配置的可扩展性。
 
+SXM是Nvidia的双插槽卡设计，与PCIe卡不同，它不需要连接电源。
+
 官网：
 
 https://www.nvidia.cn/data-center/nvlink/
