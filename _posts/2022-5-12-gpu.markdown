@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GPU体系结构
+title: GPU体系结构, GPU通信技术
 category: Chip 
 ---
 
@@ -221,132 +221,100 @@ https://zhuanlan.zhihu.com/p/446837354
 
 GPU架构（下）—AI芯片设计入门
 
-# AI Chip+
+# GPU通信技术
 
-https://mp.weixin.qq.com/s/S1y4NEx4_Mgwf68S2pexqA
+## RDMA
 
-拿着锤子找钉子，数字芯片领导者比特大陆进军人工智能
+RDMA网卡（Remote Direct Memory Access，这是一种硬件的网络技术，它使得计算机访问远程的内存时无需远程机器上CPU的干预）已经可以提供50~100Gbps的网络带宽和微秒级的传输延迟。
 
-https://mp.weixin.qq.com/s/gtgPYf939uYRzxAab_LZLQ
+目前许多以深度学习为目标应用的GPU机群都部署了这样的网络。
 
-谢源：计算存储一体化，在存储里做深度学习，架构创新实现下一代AI芯片
+UCX是一个建立在RDMA等技术之上的用于数据处理和高性能计算的通信框架，RDMA是其底层核心之一。
 
-https://mp.weixin.qq.com/s/s-fYxv4z5kkJUFueU2IR7w
+OpenUCX是UCX的一个开源实现。
 
-BP表达式与硬件架构：相似性构建更高效的计算单元
+官网：
 
-https://mp.weixin.qq.com/s/1r7G84les7FihqPbSiS0Ng
+https://www.openucx.org/
 
-华为首款手机端AI芯片麒麟970
+参考：
 
-https://mp.weixin.qq.com/s/y9dVg9YtfWxu6NcW-fxi6Q
+https://mp.weixin.qq.com/s/_xcE8RUs0m4gwk3kxpe9jA
 
-内存带宽与计算能力，谁才是决定深度学习执行性能的关键？
+基于HTM/RDMA的可扩展内存事务处理系统
 
-https://mp.weixin.qq.com/s/K_dohaZbCISZlxe1Utu50w
+https://www.zhihu.com/column/c_1231181516811390976
 
-如何用FPGA加速卷积神经网络(CNN)？
+一个RDMA方面的专栏
 
-https://mp.weixin.qq.com/s/z68hk1yqg60QCjgTyzgG2w
+## NVLink
 
-GPU深度学习的“加速神器”
+NVLink技术提供比PCIe 3更高的带宽与更多的链路，并可提升多GPU和多GPU/CPU系统配置的可扩展性。
 
-https://mp.weixin.qq.com/s/O-NDsFs6AOwl43LyevXtzg
+SXM是Nvidia的双插槽卡设计，与PCIe卡不同，它不需要连接电源。
 
-OpenAI发布“块稀疏”GPU内核：实现文本情感分析与图像生成建模当前最优水平
+官网：
 
-https://mp.weixin.qq.com/s/Qfbc2iQnXacOqOGIrpRQRw
+https://www.nvidia.cn/data-center/nvlink/
 
-Tensor Core究竟有多快？全面对比英伟达Tesla V100/P100的RNN加速能力
+![](/images/img3/nvlink.png)
 
-https://mp.weixin.qq.com/s/XXef4F9HEZizoWRYXwHitw
+Tesla V100中以NVLink连接的GPU至GPU和GPU至CPU通信。
 
-如何配置一台深度学习工作站?
+![](/images/img3/nvlink_2.png)
 
-https://mp.weixin.qq.com/s/_xFRRkVyN9qevLeek7bFxQ
+在DGX-1V服务器中，混合立体网络拓扑使用NVLink连接8个Tesla V100加速器。每个GPU有6条nvlink通道，总带宽高达300GB/s。
 
-深度学习中GPU和显存分析
+从上图可以看到，即使每个GPU拥有6条nvlink通道，仍然无法做到“全连接”（即任意两个GPU之间存在双向通道）。这就引出了下一个更加疯狂的技术：nvswitch。
 
-https://mp.weixin.qq.com/s/k5Xx-nnaf-yfWqGLIY3LEg
+![](/images/img3/nvswitch.png)
 
-特斯拉的芯片究竟多强
+NVSwitch是首款节点交换架构，可支持单个服务器节点中16个全互联的GPU，并可使全部8个GPU对分别以300GB/s的惊人速度进行同时通信。这16个全互联的GPU还可作为单个大型加速器，拥有0.5 TB统一显存空间和2 PetaFLOPS计算性能。
 
-https://zhuanlan.zhihu.com/p/88927564
+https://zhuanlan.zhihu.com/p/35470532
 
-窥探神经网络加速器的数据复用（一）
+全球最大GPU 背后的秘密：NVSwitch如何实现NVIDIA DGX-2的超强功力？
 
-https://mp.weixin.qq.com/s/YARcCzQXqnJmWRtV2zd_FQ
+## NCCL
 
-国内外AI芯片发展现状
+NCCL是Nvidia Collective multi-GPU Communication Library的简称，它是一个实现多GPU的collective communication通信库，可以在PCIe、Nvlink、InfiniBand上实现较高的通信速度。
 
-https://mp.weixin.qq.com/s/b_Hy0JSZ5ZGT9AsczCkp9Q
+InfiniBand（直译为“无限带宽”技术，缩写为IB）是一个用于高性能计算的计算机网络通信标准，它具有极高的吞吐量和极低的延迟，用于计算机与计算机之间的数据互连。
 
-ISSCC 2020：AI芯片架构的转变
+Mellanox Technologies是一家InfiniBand制造商，于2020年被Nvidia收购。
 
-https://zhuanlan.zhihu.com/p/115219461
+官方文档：
 
-张量在神经网络加速器中的应用
+https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/index.html
 
-https://pan.baidu.com/s/1zcXdXTaN3dbJ9VGplViHZw 提取码:ews4
+nccl v1：支持单机多卡通信，不支持多机通信。
 
-AI芯片体系架构和软件专题报告会2020论文下载
+nccl v2：支持多机通信。
 
-https://mp.weixin.qq.com/s/cBVio3W64np8fXwUQs2wIw
+参考：
 
-机器学习如何用于芯片系统设计？Jeff Dean推荐Google最新《机器学习系统芯片设计》70页ppt为你讲解
+https://www.zhihu.com/question/63219175
 
-https://zhuanlan.zhihu.com/p/150656419
+如何理解Nvidia英伟达的Multi-GPU多卡通信框架NCCL？
 
-AI芯片技术发展
+https://zhuanlan.zhihu.com/p/364816069
 
-https://mp.weixin.qq.com/s/9fBe6MsUOCDhtp4MSfP2jg
+NCCL--GPU的collective communication通信技术
 
-AI处理器热潮正在消退
+https://blog.csdn.net/TH_NUM/article/details/81479317
 
-https://mp.weixin.qq.com/s/JYTqJDlGw6Q2gNLaYIGLcQ
+nvidia-nccl学习笔记
 
-特斯拉芯片究竟怎么样？
+https://developer.nvidia.com/blog/fast-multi-gpu-collectives-nccl/
 
-https://mp.weixin.qq.com/s/cA1AXfpV3ZcMNX9k5XKlww
+Fast Multi-GPU collectives with NCCL
 
-面向深度神经网络的芯片布图规划问题简介
+## 参考
 
-https://zhuanlan.zhihu.com/p/231302709
+https://www.infoq.cn/article/3D4MsRVS8ZOtGCj7*krT
 
-聊聊GPU峰值计算能力
+GPU通信技术初探
 
-https://zhuanlan.zhihu.com/p/340775090
+https://zhuanlan.zhihu.com/p/67785062
 
-从Thinker到Evolver：对可演化AI芯片的探索
-
-https://mp.weixin.qq.com/s/kuIsyX0QEIeFHn8tvFE8vw
-
-AI训练的最大障碍不是算力，而是“内存墙”
-
-https://mp.weixin.qq.com/s/MwZ9j1MIwRBrJK4iWKzRqQ
-
-芯故事：和AMD有渊源的那些AI创业公司
-
-https://mp.weixin.qq.com/s/rtO8PxRj08GVimT3bfbplA
-
-我看英伟达H100 GPU
-
-https://www.zhihu.com/question/523521515
-
-如何评价英伟达3月22日发布的全新GPU H100？
-
-https://mp.weixin.qq.com/s/S1fVrSfAM_UJh06Q43s8vA
-
-网络芯片架构的新改变
-
-https://zhuanlan.zhihu.com/p/47904879
-
-AI芯片在5G中的机会
-
-https://mp.weixin.qq.com/s/Z_QVN7OCLqeyMrwK3Sc7qA
-
-AI芯片和传统芯片的区别
-
-https://mp.weixin.qq.com/s/mMiAGH2Yz42xes7jicyygA
-
-“超级芯片”或在十年内诞生，摩尔定律再续一命！（自旋电子逻辑器件“MESO器件”）
+不止显卡！这些硬件因素也影响着你的深度学习模型性能

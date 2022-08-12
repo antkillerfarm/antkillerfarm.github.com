@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 再谈高考（二）, 拼爹年代
-category: essay 
+category: Education 
 ---
 
 * toc

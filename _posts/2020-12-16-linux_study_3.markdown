@@ -119,6 +119,10 @@ https://www.ruanyifeng.com/blog/2019/10/tmux.html
 
 Tmux使用教程
 
+https://blog.csdn.net/mainking2003/article/details/120504004
+
+用shell脚本运行Tmux
+
 # 设置终端颜色
 
 `printf "\033[1;42mH\033[4;32;49me\033[5ml\033[7ml\033[0;32mo\033[0m\n"`

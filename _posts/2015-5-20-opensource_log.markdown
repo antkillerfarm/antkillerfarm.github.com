@@ -179,6 +179,14 @@ https://zhuanlan.zhihu.com/p/96986818
 
 # 上古软件开发+
 
+https://mp.weixin.qq.com/s/21eCFfRZYyTstnw777-Fhg
+
+Java的战争（Oracle vs Google）
+
+https://mp.weixin.qq.com/s/af_MzLovqnt5JemXBQGdxg
+
+Java的战争(后续)
+
 https://mp.weixin.qq.com/s/oeusDoCSYiwwX61H_6wQHw
 
 浏览器（内核）发展史

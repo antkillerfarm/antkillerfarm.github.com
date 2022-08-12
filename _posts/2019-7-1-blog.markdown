@@ -9,6 +9,8 @@ category: my story
 
 # Blog维护日志
 
+2022.8.12 添加Education分类。
+
 2022.5.23 MathJax的CDN换了几个，还是不满意，现在暂时用字节跳动的CDN吧。
 
 2022.4.23 文章数达到550篇。

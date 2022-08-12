@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 再谈高考（一）
-category: essay 
+category: Education 
 ---
 
 * toc

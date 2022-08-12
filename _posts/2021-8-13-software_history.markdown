@@ -129,6 +129,10 @@ https://www.zhihu.com/question/39661628
 
 ---
 
+Afx前缀是微软MFC一个小组的名称简写。
+
+---
+
 https://github.com/chrislgarry/Apollo-11
 
 Apollo 11登月代码成Github热度第一
@@ -201,6 +205,10 @@ https://www.w3cschool.cn/article/leijuncode
 
 分享雷军22年前编写的代码
 
+https://mp.weixin.qq.com/s/7AtuIcic3ubzYAHnkDpONA
+
+雷军：穿越人生低谷的感悟
+
 https://mp.weixin.qq.com/s/movz5aesYdZZZHle-hHRIw
 
 诞生于穿孔纸带时期的语言，ALGOL 60今年60岁了
@@ -236,11 +244,3 @@ https://mp.weixin.qq.com/s/RzrQpJ8M4SoY6YXhUQNWHg
 https://www.zhihu.com/question/420656795
 
 有哪个高手可以解读“世界黑客编程大赛第一名的作品（97年Mekka ’97 4K Intro）”?
-
-https://mp.weixin.qq.com/s/21eCFfRZYyTstnw777-Fhg
-
-Java的战争（Oracle vs Google）
-
-https://mp.weixin.qq.com/s/af_MzLovqnt5JemXBQGdxg
-
-Java的战争(后续)
