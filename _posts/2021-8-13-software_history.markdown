@@ -133,6 +133,14 @@ Afx前缀是微软MFC一个小组的名称简写。
 
 ---
 
+DISKMAN由国人李大海编写。
+
+https://www.zhihu.com/question/47503655
+
+如何评价DiskGenius这款软件？
+
+---
+
 https://github.com/chrislgarry/Apollo-11
 
 Apollo 11登月代码成Github热度第一
