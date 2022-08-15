@@ -243,16 +243,16 @@ https://zhuanlan.zhihu.com/p/97346034
 
 球面三角学基础
 
-# 数学杂谈
+---
 
-![](/images/img4/sheep.png)
+![](/images/img4/space.jpg)
 
-山羊吃草问题有两种形式。内部问题是给出吃草面积求绳长，外部问题是给出绳长和篱笆周长求吃草面积（绳长等于篱笆周长）
+最左边的“束腰型”的曲线具有负的高斯曲率，中间的圆柱体曲面的高斯曲率为零，而最右边的球面具有正的高斯曲率。
 
-https://mp.weixin.qq.com/s/OCTifPIZHVjYWjuxyQQWbA
+如果大家对高斯曲率还不能理解的话，还可用另外一个量来描述曲面的弯曲程度，那就是三角形的内角和，正曲率的曲面上三角形内角和大于180度，负曲率的曲面上三角形内角和小于180度，而平直平面上的三角形内角和等于180度。
 
-诞生272年后，这个看似简单的数学问题终求得闭式解（山羊问题）
+![](/images/img4/Curvature.jpg)
 
-https://mp.weixin.qq.com/s/ydYVWnsEQ5QFLWmiDxeSTg
+https://www.zhihu.com/question/330796123
 
-两圆重叠问题你会求解吗？
+怎么理解万有引力的本质是空间的弯曲？

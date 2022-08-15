@@ -366,3 +366,21 @@ https://www.openldap.org/
 https://zhuanlan.zhihu.com/p/53299778
 
 既生Redis何生LevelDB？
+
+# 美食+
+
+https://mp.weixin.qq.com/s/R5Mf1Y4U_gxo9RW6QGHKtQ
+
+没有酸菜，东北人可过不了冬
+
+https://mp.weixin.qq.com/s/FCySBHsbvDcxY5pF3XEiWQ
+
+全国最辣的地方，不是四川和重庆？（赣菜）
+
+https://mp.weixin.qq.com/s/lECyFlTRdypflF3_f6329g
+
+腌笃鲜，上海人笃信的美味
+
+https://www.zhihu.com/question/528187591
+
+外国有哪些特色油炸美食？
