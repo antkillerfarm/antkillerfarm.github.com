@@ -9,6 +9,38 @@ category: DL acceleration
 
 # 知识蒸馏（续）
 
+https://mp.weixin.qq.com/s/Nkxy0SUdbwIjp5swU6tS9g
+
+深度互学习-Deep Mutual Learning：三人行必有我师
+
+https://mp.weixin.qq.com/s/I08kMmUohWWbYVpPDgTJsw
+
+Startdt AI提出：使用生成对抗网络用于One-Stage目标检测的知识蒸馏方法
+
+https://mp.weixin.qq.com/s/yFyM5OVp1YLKQBlgXeAzhw
+
+华为诺亚方舟实验室提出无需数据网络压缩技术
+
+https://mp.weixin.qq.com/s/0f0aToVaAsU7yWK4xz-HzQ
+
+剪枝量化初完结，蒸馏学习又上线
+
+https://github.com/patrickwaters1000/DistillingNeuralNets
+
+Implements the technique of distillation
+
+https://mp.weixin.qq.com/s/ckn4RERri-mfqLVPDRHGog
+
+让学生网络相互学习，为什么深度相互学习优于传统蒸馏模型？
+
+https://mp.weixin.qq.com/s/wwtsqjjUGt7MTEWDc5bSvQ
+
+一种无需原始训练数据的Teacher-Student模型压缩方法
+
+https://mp.weixin.qq.com/s/9dHRO80mMTGdRHaa0AdihQ
+
+无需数据集的Student Networks
+
 https://mp.weixin.qq.com/s/fQAkNdNhwkFichSZCwnNqA
 
 北大、华为联合提出无需数据集的Student Networks
@@ -368,35 +400,3 @@ ThunderNet：Two-stage形式的目标检测也可很快而且精度很高
 https://mp.weixin.qq.com/s/ie2O5BPT-QxTRhK3S0Oa0Q
 
 剪枝需有的放矢，快手&罗切斯特大学提出基于能耗建模的模型压缩
-
-https://mp.weixin.qq.com/s/m9I5TM9uJcgZvMusO667OA
-
-5MB的神经网络也高效，Facebook新压缩算法造福嵌入式设备
-
-https://mp.weixin.qq.com/s/FFs0-ROvbXSAIOspW_rMbw
-
-超越MobileNetV3！谷歌大脑提出MixNet轻量级网络
-
-https://mp.weixin.qq.com/s/nys9R6xCJXt0vG06gnQzFQ
-
-模型剪枝，不可忽视的推断效率提升方法
-
-https://mp.weixin.qq.com/s/EuT-4_eEtIVKh6QdLDbohg
-
-解读小米MoGA：超过MobileNetV3的移动端GPU敏感型搜索
-
-https://mp.weixin.qq.com/s/L49cqZ2PXP-x4Y6xBJG5cQ
-
-旷视研究院提出MetaPruning：基于元学习和AutoML的模型压缩新方法
-
-https://mp.weixin.qq.com/s/F_p414ezQ0RDhPnZj36SUA
-
-网络剪枝中的AutoML方法
-
-https://zhuanlan.zhihu.com/c_151876233
-
-如何Finetune一个小网络到移动端（时空性能分析篇）
-
-https://mp.weixin.qq.com/s/kU0_BuQW8VQihUwBuZ90cA
-
-发布可伸缩超网SCARLET，小米AutoML团队NAS三部曲杀青

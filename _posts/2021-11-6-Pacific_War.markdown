@@ -202,3 +202,7 @@ http://blog.sina.com.cn/s/blog_672807b40102xh4m.html
 https://mb.yidianzixun.com/article/0JpuhkXG
 
 零式战斗机最逆天战绩，造成损失远远超过珍珠港
+
+https://www.zhihu.com/question/283912809
+
+战列舰船员这么多，船员睡觉的环境怎么样？

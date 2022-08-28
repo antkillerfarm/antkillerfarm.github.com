@@ -79,6 +79,16 @@ OpenCL是一个硬件中立标准，原则上和计算机的体系结构无关�
 
 简单来说，**OpenVX的封装粒度在层一级，而OpenCL最多只提供到矩阵运算一级的API**。
 
+---
+
+执行内核的各个实例称为work-item。若干个同类的work-item组成一个work-group。
+
+https://www.cnblogs.com/biglucky/p/3755189.html
+
+kernel,work_item和workgroup
+
+---
+
 参考：
 
 http://blog.csdn.net/leonwei/article/details/8880012
@@ -378,15 +388,3 @@ AI处理器热潮正在消退
 https://mp.weixin.qq.com/s/JYTqJDlGw6Q2gNLaYIGLcQ
 
 特斯拉芯片究竟怎么样？
-
-https://mp.weixin.qq.com/s/cA1AXfpV3ZcMNX9k5XKlww
-
-面向深度神经网络的芯片布图规划问题简介
-
-https://zhuanlan.zhihu.com/p/231302709
-
-聊聊GPU峰值计算能力
-
-https://zhuanlan.zhihu.com/p/340775090
-
-从Thinker到Evolver：对可演化AI芯片的探索

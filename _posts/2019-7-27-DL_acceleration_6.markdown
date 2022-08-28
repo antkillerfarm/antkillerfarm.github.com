@@ -7,7 +7,29 @@ category: DL acceleration
 * toc
 {:toc}
 
-# 模型压缩与加速（续）
+# 模型压缩与加速
+
+## 权值稀疏化实战（续）
+
+除了训练后的权值稀疏化之外，权值稀疏化训练也是一种方法。
+
+论文：
+
+《FLOPs as a Direct Optimization Objective for Learning Sparse Neural Networks》
+
+这篇论文，将计算量也就是FLOPs作为Loss function设计的一部分，由于稀疏化的权值没有运算量，因此，采用这种Loss训练出的网络，天生就是稀疏化的。
+
+## AutoML
+
+由于模型压缩，本质上是一个精益求精的优化问题，因此采用AutoML技术对于各个超参数进行优化，就成为了一件很有必要的事情。
+
+这里主要的问题在于超参数数量众多，导致状态空间过大。
+
+论文：
+
+《AMC: AutoML for Model Compression and Acceleration on Mobile Devices》
+
+这是韩松组的何宜晖的作品。该论文采用深度强化学习的DDPG网络来优化目标网络，从而大大减少了需要搜索的状态空间。
 
 ## EfficientNet
 
@@ -300,35 +322,3 @@ Hinton胶囊网络后最新研究：用“在线蒸馏”训练大规模分布�
 https://mp.weixin.qq.com/s/SqxooZqSeD3wA4EFK5D3Kg
 
 再生神经网络：利用知识蒸馏收敛到更优的模型
-
-https://mp.weixin.qq.com/s/Nkxy0SUdbwIjp5swU6tS9g
-
-深度互学习-Deep Mutual Learning：三人行必有我师
-
-https://mp.weixin.qq.com/s/I08kMmUohWWbYVpPDgTJsw
-
-Startdt AI提出：使用生成对抗网络用于One-Stage目标检测的知识蒸馏方法
-
-https://mp.weixin.qq.com/s/yFyM5OVp1YLKQBlgXeAzhw
-
-华为诺亚方舟实验室提出无需数据网络压缩技术
-
-https://mp.weixin.qq.com/s/0f0aToVaAsU7yWK4xz-HzQ
-
-剪枝量化初完结，蒸馏学习又上线
-
-https://github.com/patrickwaters1000/DistillingNeuralNets
-
-Implements the technique of distillation
-
-https://mp.weixin.qq.com/s/ckn4RERri-mfqLVPDRHGog
-
-让学生网络相互学习，为什么深度相互学习优于传统蒸馏模型？
-
-https://mp.weixin.qq.com/s/wwtsqjjUGt7MTEWDc5bSvQ
-
-一种无需原始训练数据的Teacher-Student模型压缩方法
-
-https://mp.weixin.qq.com/s/9dHRO80mMTGdRHaa0AdihQ
-
-无需数据集的Student Networks

@@ -17,10 +17,6 @@ VMWare自带的VMWare tools在新版的Ubuntu上总是安装不上，其实解�
 
 `sudo apt install --no-install-recommends linux-headers-virtual open-vm-dkms open-vm-tools（命令行）`
 
-# 如何以管理员身份操作Gnome的资源管理器--nautilus
-
-`apt install nautilus-gksu`
-
 # 没有声音
 
 没有声音的话，使用alsamixer来配置一下。

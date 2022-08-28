@@ -163,6 +163,36 @@ https://mp.weixin.qq.com/s/7YnoVGdP7CL06RJ7zvQKwQ
 
 ---
 
+四川电力丰富，很多电站在规划期间就只考虑了外送需求，以至于电厂主回路直接接上超高压/特高压线路送走了，压根就没过四川电网。只有辅助回路接进了省网，但是线路容量很小。
+
+https://www.zhihu.com/question/548984091
+
+上海经信委回应发函向四川要电，称“不和民生抢电力， 优先保障居民用电”，如何看待这一回应？
+
+https://www.sohu.com/a/578059311_121284943
+
+长江流域60年来最严重干旱，鄱阳湖洞庭湖“瘦成闪电”
+
+https://www.sohu.com/a/579966753_120146415
+
+四川限电：临终老人靠子女打扇子降温 居民辗转3个家避开断电
+
+---
+
+在罗马尼亚海港和河港里，还滞留着约200艘德国海岸防御船、运输船及卫生船，这些船上载有德国平民、士兵、伤员、难民和来自德国各修船厂的工人。
+
+在这个危急关头，主管黑海海军船厂和装备工厂工作的齐布海军少将决定担任这批船只的指挥官，并立即率领它们向多瑙河上游进发。
+
+https://www.zhihu.com/question/549233580
+
+如何看待纳粹德国舰队因河流干旱“重现天日”，数十艘露出水面，载有大量弹药？
+
+https://www.guancha.cn/internation/2022_08_20_654516_s.shtml
+
+欧洲大旱，“饥饿之石”重见天日：“如你看到我，就哭泣吧”
+
+---
+
 https://mp.weixin.qq.com/s/0ZQvZNHOmiMZ1dr_-VXR6Q
 
 谁奠定了气候变化的基础？（John Tyndall）
@@ -245,7 +275,31 @@ https://mp.weixin.qq.com/s/VIMKnqcoNw4VGigZJiDoYg
 
 # 化学+
 
-## 化学工业（续）
+## 化学工业
+
+https://wallstreetcn.com/articles/250536
+
+巴斯夫原本是它小弟，德国化工产业的代名词：揭秘史前化工巨兽 IG 法本
+
+http://blog.sina.com.cn/s/blog_52f526870102w7xo.html
+
+历经百年兴衰 德国化工三巨头为何屹立不倒（巴斯夫、拜耳、赫希斯特）
+
+http://www.weixinso.com/document/KPyZBb.html
+
+陶氏化学发展史
+
+http://www.pnchina.com/cn/Detail.aspx?id=1361250587
+
+业界经典：陶氏化学Styrofoam之75年
+
+https://new.qq.com/omn/20180819/20180819A011JT.html
+
+起于硝烟的化工帝国：杜邦是怎么与化工行业同呼吸共命运的？
+
+http://www.qdaily.com/articles/18872.html
+
+杜邦要合并了，过去一百年，这家公司的发明都改变了些什么？
 
 https://mp.weixin.qq.com/s/MkVeQ7xYAHV8mA1zmdr0qg
 

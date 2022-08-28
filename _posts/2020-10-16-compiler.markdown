@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  lex&yacc, 编译原理
+title:  lex&yacc, 编译原理, Polyhedral Model
 category: toolchain 
 ---
 
@@ -222,7 +222,7 @@ https://juejin.im/post/5d70fb2ce51d4557ca7fddaa
 
 Android CPU, Compilers, D8 & R8
 
-## Polyhedral Model
+# Polyhedral Model
 
 基于多面体模型的编译优化技术代表了程序自动并行化领域众多方向最先进的水平,成为国际上多个编译研发团队的研究热点。
 
@@ -239,6 +239,14 @@ Android CPU, Compilers, D8 & R8
 https://www.cs.colostate.edu/~pouchet/
 
 888.11-Polyhedral Compilation Foundations
+
+https://polyhedral.info/
+
+一个Polyhedral方面的社区，有大量资料
+
+https://polly.llvm.org/
+
+LLVM Framework for High-Level Loop and Data-Locality Optimizations
 
 http://www.jos.org.cn/jos/ch/reader/create_pdf.aspx?file_no=5563
 

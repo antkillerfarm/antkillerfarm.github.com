@@ -103,6 +103,22 @@ https://zhuanlan.zhihu.com/p/384223882
 
 ---
 
+![](/images/img4/water.jpg)
+
+在低压下很容易理解，随着压力的上升，沸点会上升。但是这种上升并不是无休止的。当达到水的临界压力以后（大约是22MPa），水的沸点将不复存在。此时升温并不会导致水的沸腾，当温度超过临界温度（约650K）时，水会进入超临界状态-这是一种非液非气的状态。此时水具有很多气体的典型性质，诸如流动、扩散等等，但是却不会产生气液界面，并且密度更接近液态。
+
+在低压情况下，我们会看到气液两相的并存：有着明显的液面。当接近临界点时（亚临界状态），我们会看到液面渐渐模糊。最后当达到临界点的时候，我们会看到容器里的流体突然发生了变化：界面消失了，气液两相不复存在，它们变成了一体，不分彼此。
+
+当压力极高的时候，水就总是以冰的形式存在（50GPa以上），无论如何加热都不会使它融化。
+
+固体的相其实很复杂，虽然都是固体，但是很多物质在不同的压力和温度下会以不同的相存在。比如水的固相就有十多种，一般相与相之间转化时会有热效应。
+
+https://www.zhihu.com/question/349336520
+
+水能否烧到一千摄氏度？
+
+---
+
 https://mp.weixin.qq.com/s/R__7gmP4upYPf1URBzTRug
 
 冬日里的“水货”：挨了冻，内心居然更膨胀了？
@@ -126,6 +142,14 @@ https://mp.weixin.qq.com/s/oweK30KIVInGK6wcFSRrTQ
 https://mp.weixin.qq.com/s/Kfiz22KpxHtkQof3C5g81A
 
 卡路里的身世变迁
+
+https://mp.weixin.qq.com/s/CnAgNBFpiTXukR7daDugkw
+
+如何测量一亿度的高温？
+
+https://mp.weixin.qq.com/s/Y6zjFQBche_tyOWF9VMtmg
+
+没有空调的夏天，古人到底要怎么熬呀！
 
 # 天文杂谈+
 
@@ -240,47 +264,3 @@ https://mp.weixin.qq.com/s/rBFmWjHDOcdUz3uKQ3HqMA
 https://mp.weixin.qq.com/s/nCSgobpyy4-U9z1ycMXg0g
 
 在美丽的稻城，我们建了一个漂亮的“天阵”，它的名字叫拉索
-
-https://mp.weixin.qq.com/s/xfJ_EiAoW0i_k_zUWHoQTQ
-
-先磕为敬！你们两颗星星为什么这么浪漫这么甜？（冥王星和卡戎）Charon是冥王的船夫，负责将逝者摆渡过冥河。
-
-https://mp.weixin.qq.com/s/nzoE3EYOhwfg-D7Uz5PyxQ
-
-太阳观测的新窗口
-
-https://mp.weixin.qq.com/s/PrsKjWC9YC2mRE1pI1dFCg
-
-杨利伟被文盲编辑坑了？《地月同辉》考
-
-https://mp.weixin.qq.com/s/MWNhWTTef4L7RGz-340kuQ
-
-人工智能，如何“拯救”不堪重负的天文学家？
-
-https://mp.weixin.qq.com/s/rF42Dmj3_PcGsOj17am7VA
-
-我们的坐标，已经被2000多颗星星熟知
-
-https://mp.weixin.qq.com/s/LnNRNKqecwJyUtrKS1HfkQ
-
-脉冲星研究
-
-https://mp.weixin.qq.com/s/pJQnMZthdNIQEi0jqwliHg
-
-木星持续“发烧”的幕后推手找到了，原来是它！
-
-https://mp.weixin.qq.com/s/LsNhcqXFDg5qTbsQI2a95Q
-
-在不同的世界，我们会看到…
-
-https://mp.weixin.qq.com/s/bwfRBCiLJqNZBxrZDpjcEQ
-
-天文学家与野生动物的爱恨情仇
-
-https://www.zhihu.com/question/25663240
-
-为何说银河系的中央是巨大的黑洞？
-
-https://www.zhihu.com/question/28099598
-
-怎样测量天体的质量?

@@ -157,6 +157,17 @@ https://blog.csdn.net/u012587637/article/details/51670975
 
 使用ffmpeg合并视频文件的三种方法
 
+## ffmpeg + cuda
+
+```bash
+ffmpeg -codecs | grep nv
+ffmpeg -i ./1.VOB -c:v nvenc ./1.mp4
+```
+
+https://blog.csdn.net/weixin_41868104/article/details/124420500
+
+Ubuntu20配置ffmpeg进行gpu硬件加速视频编码记录
+
 # 清++
 
 国内上映了一部关于晚晴中兴名臣张之洞的电影，电影上映6天，票房仅2018元。

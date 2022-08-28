@@ -223,6 +223,26 @@ https://www.zhihu.com/question/303667076
 
 ---
 
+麻花钻于1864年由美国机械师（Stephen A. Morse）发明并生产及推广。
+
+莫氏在钻头俩条切削刃的前刀面处首次划时代的磨成圆弧槽，该槽沿着刀体外周螺旋状似的伸向钻头柄部，这样，钻孔时刀刃处产生的切削就可以顺着槽轻易的排到孔外。
+
+因为这种钻头的外形酷似麻花，所以在中国顺理成章的叫做了麻花钻。
+
+为了更好的解决大孔加工的夹持容易打滑的问题，莫氏又开发了莫氏锥柄，莫氏锥柄很快就被大量的工厂使用。
+
+1953年倪志福发明创造了倪志福钻头。由原来的麻花钻的“一尖三刃”，磨成了“三尖七刃”，使用时轴向力和扭矩比标准的麻花钻降低了10-30%, 寿命提高了2-3倍，效率提高2倍以上，并且由于独特的三个顶尖涉及，可改善钻削时的定心性，提高钻孔精度。
+
+https://zhuanlan.zhihu.com/p/95072133
+
+永不磨灭的麻花钻
+
+https://zhuanlan.zhihu.com/p/495453408
+
+美国Morse Cutting Tools公司
+
+---
+
 https://mp.weixin.qq.com/s/KuIf0oIkLjMTKp2FgAnpyA
 
 一口气做出12只同款雪糕，强迫症都被食物加工流水线治好了
@@ -322,31 +342,3 @@ https://zhuanlan.zhihu.com/p/451794381
 https://mp.weixin.qq.com/s/QjuQgjChunKm8O8N86GZGQ
 
 让机器帮人砌堵墙怎么那么难？这是人类的百年奋斗史
-
-https://mp.weixin.qq.com/s/010SPkEVV4e7f5MIoiL6xA
-
-《狙击手》预告不相信重机枪能打狙击？中国人要自信！
-
-https://www.zhihu.com/zvideo/1449458713610919936
-
-坦克的工作原理是这样的
-
-https://mp.weixin.qq.com/s/NBXndV2DnGFoRZUyMDWw3Q
-
-从61式到10式：日本战后坦克发展(上)
-
-https://mp.weixin.qq.com/s/a6cJvb45Cx5YPXI3FFBJJA
-
-从61式到10式：日本战后坦克发展(下)
-
-https://mp.weixin.qq.com/s/tBDQ1Ko7UbX5lfzV42qmrQ
-
-人类科技工程发展图鉴：哪个是你心中的硬核担当？
-
-https://www.zhihu.com/question/24810449
-
-纯电动车是否有变速箱？
-
-https://mp.weixin.qq.com/s/5uF_QiFlSmaCn3YUMr6p8w
-
-大和级战列舰有克星？蒙大拿：不好意思！在座的各位都是垃圾

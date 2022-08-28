@@ -37,6 +37,12 @@ category: language
 
 ---
 
+libstdc++是GCC搞的，是g++默认的stdlib链接库。
+
+libc++是LLVM搞的，是clang++默认的stdlib链接库。
+
+---
+
 因此，某些时候编不过去，可以试试换换cc的值。
 
 2）gcc4.1.1下似乎对类型检查严了一些，dlsym返回的void*类型不能转换为相应的函数指针类型，需要强制转换。某些网上的例子在这里编不过去。

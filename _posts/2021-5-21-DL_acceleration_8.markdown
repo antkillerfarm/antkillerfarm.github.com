@@ -9,6 +9,38 @@ category: DL acceleration
 
 # 模型压缩与加速进阶
 
+https://mp.weixin.qq.com/s/m9I5TM9uJcgZvMusO667OA
+
+5MB的神经网络也高效，Facebook新压缩算法造福嵌入式设备
+
+https://mp.weixin.qq.com/s/FFs0-ROvbXSAIOspW_rMbw
+
+超越MobileNetV3！谷歌大脑提出MixNet轻量级网络
+
+https://mp.weixin.qq.com/s/nys9R6xCJXt0vG06gnQzFQ
+
+模型剪枝，不可忽视的推断效率提升方法
+
+https://mp.weixin.qq.com/s/EuT-4_eEtIVKh6QdLDbohg
+
+解读小米MoGA：超过MobileNetV3的移动端GPU敏感型搜索
+
+https://mp.weixin.qq.com/s/L49cqZ2PXP-x4Y6xBJG5cQ
+
+旷视研究院提出MetaPruning：基于元学习和AutoML的模型压缩新方法
+
+https://mp.weixin.qq.com/s/F_p414ezQ0RDhPnZj36SUA
+
+网络剪枝中的AutoML方法
+
+https://zhuanlan.zhihu.com/c_151876233
+
+如何Finetune一个小网络到移动端（时空性能分析篇）
+
+https://mp.weixin.qq.com/s/kU0_BuQW8VQihUwBuZ90cA
+
+发布可伸缩超网SCARLET，小米AutoML团队NAS三部曲杀青
+
 https://mp.weixin.qq.com/s/ZfW-jDSo6uaaqdmJtBizOA
 
 从模型精简，硬件实现，到模型剪枝
@@ -360,31 +392,3 @@ Facebook新研究优化硬件浮点运算，强化AI模型运行速率
 https://mp.weixin.qq.com/s/Jsxiha_BFtWVLvO4HMwJ3Q
 
 工业界第一手实战经验：深度学习高效网络结构设计
-
-https://mp.weixin.qq.com/s/uXbLb5ITHOU0dZRSWNobVg
-
-算力限制场景下的目标检测实战浅谈
-
-https://mp.weixin.qq.com/s/DoeoPGnS88HQmxagKJWLlg
-
-小米开源FALSR算法：快速精确轻量级的超分辨率模型
-
-https://mp.weixin.qq.com/s/wT39oUWfrQK-dg7hGXRynQ
-
-实时单人姿态估计，在自己手机上就能实现
-
-https://mp.weixin.qq.com/s/RVsXUnAJ2f0Cby7BPaWifA
-
-人物属性模型移动端实验记录
-
-https://mp.weixin.qq.com/s/yCcK6UJqm850HON7xU3R6g
-
-模型压缩重要方向-动态模型，如何对其长期深入
-
-https://zhuanlan.zhihu.com/p/93020471
-
-轻量型网络：IdleBlock
-
-https://mp.weixin.qq.com/s/AjuTXFmxHYdUUqodSpP_4w
-
-10倍加速！爱奇艺超分辨模型加速实践

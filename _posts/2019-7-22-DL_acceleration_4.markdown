@@ -11,6 +11,18 @@ category: DL acceleration
 
 ## UINT量化（续）
 
+一般情况下，一个Tensor共享同一个S。有的时候为了提升精度，也可以一个channel共享同一个S，这也被称为per channel quantization。如果不共享S，则退化为普通的浮点数表示。
+
+对于矩阵乘法来说：
+
+$$q_3^{(i,k)}=Z_3+M\sum_{j=1}^N(q_1^{(i,j)}-Z_1)(q_2^{(j,k)}-Z_2)$$
+
+则：
+
+$$S_3(q_3^{(i,k)}-Z_3)=\sum_{j=1}^N S_1(q_1^{(i,j)}-Z_1)S_2(q_2^{(j,k)}-Z_2)$$
+
+其中，$$M=\frac{S_1S_2}{S_3}$$。如果令$$S_3=S_1S_2$$，则上述运算将全部转为整数运算。
+
 这篇论文的另一个贡献在于：原先的INT8量化是针对已经训练好的模型。而现在还可以在训练的时候就进行量化——前向计算进行量化，而反向的误差修正不做量化。
 
 ![](/images/img4/quantize.jpg)
@@ -260,25 +272,3 @@ https://mp.weixin.qq.com/s/7rMnzbvp1hjDLuw_oifbng
 2.tensor中各分量的值域范围最好相近。这个的原理和第1条一致。比如YOLO的结果中，同时包含分类和bbox，而且分类的值域范围远大于bbox，导致量化效果不佳。
 
 3.最好不要使用ReluN这样的激活函数，死的神经元太多。神经元一旦“死亡”，相应的权值就不再更新，而这些值往往不在正常范围内。
-
-4.对于sigmoid、tanh这样的S形函数，其输入在$$\mid x \mid > \sigma$$范围的值，最终的结果都在sigmoid、tanh的上下限附近。因此，可以直接将这些x值量化为$$\sigma$$。这里的$$\sigma$$的取值，对于sigmoid来说是6，而对于tanh来说是3。
-
-## NN硬件的指标术语
-
-MACC：multiply-accumulate，乘法累加。
-
-FLOPS：Floating-point Operations Per Second，每秒所执行的浮点运算次数。
-
-显然NN的INT8计算主要以MACC为单位。
-
-## gemmlowp
-
-gemmlowp是Google提出的一个支持低精度数据的GEMM（General Matrix Multiply）库。
-
-代码：
-
-https://github.com/google/gemmlowp
-
-## 论文
-
-《Quantizing deep convolutional networks for efficient inference: A whitepaper》

@@ -179,6 +179,8 @@ Tensor Operator Set Architecture (TOSA) Dialect
 
 ![](/images/img4/codegen-dialect-hierarchy.svg)
 
+
+
 文档：
 
 https://mlir.llvm.org/docs/Dialects/
@@ -230,6 +232,10 @@ https://blog.csdn.net/just_sort/article/details/123624966
 https://zhuanlan.zhihu.com/p/442140282
 
 MLIR: A Brief Survey
+
+https://zhuanlan.zhihu.com/p/545672504
+
+MLIR原理与应用技术杂谈
 
 # 并行 & 框架 & 优化+
 

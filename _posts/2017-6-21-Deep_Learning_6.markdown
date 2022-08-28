@@ -268,7 +268,7 @@ y_t &= \sigma_y(W_{y} h_t + b_y)
 
 >American Academy of Arts and Sciences建于1780年。当时，美国正在法国等国的协助下与英国作战，所以美国的创立者选择比照包括作家、人文学者、科学家、军事家、政治家在内的法兰西学术院，建立新大陆的学术院。   
 >后来，林肯总统比照英国皇家学会，于1863年创建了主要涵盖自然科学的National Academy of Sciences，United States。   
->这两个学院是美国学术界最权威的组织。
+>这两个学院是美国学术界最权威的组织。前者的重要度略高于后者。
 
 >美国的创立者，一般被翻译为Founding Fathers of the United States。此外还有一个更响亮的称号76ers。没错，NBA那支球队的名字就是这么来的。
 

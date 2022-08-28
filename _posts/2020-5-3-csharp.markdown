@@ -304,6 +304,10 @@ https://github.com/abseil/abseil-cpp
 
 https://github.com/abseil/abseil-py
 
+abseil不光提供代码，还有一个编程的技巧：
+
+https://abseil.io/tips/
+
 ## ACE
 
 Douglas C. Schmidt写的一个C++的网络库。历史非常悠久了（1993年），其中的很多部分都有很高的参考价值。

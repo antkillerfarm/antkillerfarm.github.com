@@ -122,7 +122,7 @@ Sarsa算法的最优化收敛性（即$$Q(s,a)\to q_*(s,a)$$）的条件是：
 
 $$\sum_{t=1}^\infty \alpha_t=\infty, \sum_{t=1}^\infty \alpha_t^2<\infty$$
 
->Herbert Ellis Robbins，1915～2001，美国数学家，Harvard博士，University of North Carolina教授，Columbia University教授。美国科学院院士，美国艺术科学院院士。
+>Herbert Ellis Robbins，1915～2001，美国数学家，Harvard博士，University of North Carolina教授，Columbia University教授。美国艺术科学院、美国科学院院士。
 
 >Sutton Monro，1920～1995，美国数学家，MIT博士，Lehigh University教授。作为海军参加过二战和韩战。
 

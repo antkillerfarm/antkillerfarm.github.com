@@ -126,6 +126,8 @@ Anaconda同时也支持多个Python版本的并存和切换。它的底层用到
 
 conda环境也支持用pip安装包，而且在`conda list`的时候会给出来源。
 
+在conda环境中，使用pip的话，需要`conda install pip`。
+
 参考：
 
 http://www.cnblogs.com/zhusleep/p/5616099.html
@@ -165,6 +167,14 @@ https://mp.weixin.qq.com/s/i4oUKZXAUMLGaRpJVmT1ZQ
 `deactivate`
 
 Conda可以创建当前系统中没有的python版本的env，但是virtualenv则不行。
+
+---
+
+venv多了，有的时候查找lib path就成了问题。
+
+```python
+print(tensorflow.__file__)
+```
 
 ## NumPy
 

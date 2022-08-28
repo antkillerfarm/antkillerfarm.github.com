@@ -297,6 +297,10 @@ https://mp.weixin.qq.com/s/n7zyDFOeHd9K5oSKz7Zg9Q
 
 vsCode离线安装remote-ssh插件搭建远程开发环境
 
+https://zhuanlan.zhihu.com/p/294933020
+
+VS Code Server的离线安装过程
+
 ## C/C++ IntelliSense失效
 
 检查`C_Cpp.IntelliSenseEngine`是否打开。
@@ -348,3 +352,53 @@ VSCode插件开发全攻略
 http://blog.haoji.me/chrome-plugin-develop.html
 
 Chrome插件(扩展)开发全攻略
+
+# 抗日战争+++
+
+田中军吉，谷寿夫麾下第6师团的上尉，在南京大屠杀中杀人无数。因没上报纸，没人知道他的罪行，日军投降后他甚至安然无恙的复员回家，过上了普通人的生活。
+
+之所以被逮捕，是因为当时巡查东京的国际宪兵队在路过一家鱼丸店的时候听到店内传来争吵声，一名日本男子在吃完鱼丸后不给钱，打了店老板一耳光，还疯狂叫嚣：“老子当年在中国参战，一天就杀掉了100多个中国人，还敢跟我要钱。”
+
+在路边恰好经过的国际宪兵队听到这句话后，当场进入店内将田中军吉逮捕押走。
+
+---
+
+https://mp.weixin.qq.com/s/gF3Hv07zzLUQqGQzdYpzQw
+
+丢人丢大了！日本人给中国抗日神剧编了本书，正满世界传播！
+
+https://zhuanlan.zhihu.com/p/350333113
+
+五一大扫荡后的冀中，区小队、县大队等都是怎样的武装
+
+https://www.sohu.com/a/58658944_180393
+
+《亮剑》中消灭日本军官观战团章节的历史原貌
+
+https://zhuanlan.zhihu.com/p/277437564
+
+日本是如何给东北人洗脑的？
+
+https://www.zhihu.com/answer/1678871797
+
+林迈可的故事
+
+https://www.zhihu.com/answer/133590732
+
+日本对台湾的殖民统治给台湾造成了什么样的影响？
+
+http://www.360doc.com/content/18/1220/07/17283749_803043906.shtml
+
+华北平原的“皇军”哗变——馆陶事件始末
+
+http://ah.ifeng.com/news/wangluo/detail_2015_08/06/4200178_0.shtml
+
+通州事件：一支“伪军”对日本人的“杀戮”
+
+https://zhuanlan.zhihu.com/p/397085288
+
+1983年，山东一农民给领导斟茶时暴露身份，才知：他是16期黄埔生（王延周）
+
+https://mp.weixin.qq.com/s/SKofqgEG4fTRirMPu89IMw
+
+老百姓集体抢劫日军，日本鬼子还忍了，整个抗战时期仅此一例

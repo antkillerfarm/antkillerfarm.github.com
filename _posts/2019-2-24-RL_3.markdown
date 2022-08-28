@@ -9,7 +9,7 @@ category: RL
 
 # Q-learning（续）
 
->Richard Ernest Bellman，1920～1984，美国应用数学家、控制论学家、数理生物学家。布鲁克林学院本科+威斯康星大学麦迪逊分校硕士+普林斯顿博士。二战期间曾在Los Alamos研究理论物理，后任职于美国智库RAND Corporation，南加州大学教授。美国艺术科学院院士，美国科学院院士。   
+>Richard Ernest Bellman，1920～1984，美国应用数学家、控制论学家、数理生物学家。布鲁克林学院本科+威斯康星大学麦迪逊分校硕士+普林斯顿博士。二战期间曾在Los Alamos研究理论物理，后任职于美国智库RAND Corporation，南加州大学教授。美国艺术科学院、美国科学院院士。   
 >Bellman–Ford算法的发明人之一。以他命名的奖项有Richard E. Bellman Control Heritage Award和Bellman Prize in Mathematical Biosciences。
 
 在无监督的情况下，agent不断从一个状态转至另一状态进行探索，直到到达目标。我们将agent的每一次探索（从任意初始状态开始，经历若干action，直到到达目标状态的过程）称为一个**episode**。

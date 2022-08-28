@@ -21,6 +21,16 @@ https://www.zhihu.com/question/359213795
 
 ---
 
+胶片的成像最小单位是银盐晶体颗粒，尺度大约几个到几十个微米，微观上并不是无限细分的。银盐晶体在成像时还会形成团簇排列的二级结构，进一步降低了有效分辨率。
+
+但是胶片仍然有一个巨大的优势是便宜。剪裁大幅面的胶片，和剪裁大幅面的硅晶圆技术难度完全不可同日而语，中画幅胶片比中画幅数码要廉价的多，大画幅下胶片仍然是目前唯一的选择。
+
+https://www.zhihu.com/question/34623286
+
+胶卷的像素是无限的吗？
+
+---
+
 https://mp.weixin.qq.com/s/0fdnEWpLvPSbweFh0v4x9A
 
 科学家的浪漫，是用激光画一道彩虹（姜黄素）
@@ -288,29 +298,3 @@ https://mp.weixin.qq.com/s/Lz8QRs7HkZbWFxLqf4h6OA
 https://www.zhihu.com/question/510151356
 
 皮蛋制作过程中用到氢氧化钠，通过渗入蛋壳气孔与其中蛋白质反应凝固，那么可以用其他碱性物替代吗？
-
-## 化学工业
-
-https://wallstreetcn.com/articles/250536
-
-巴斯夫原本是它小弟，德国化工产业的代名词：揭秘史前化工巨兽 IG 法本
-
-http://blog.sina.com.cn/s/blog_52f526870102w7xo.html
-
-历经百年兴衰 德国化工三巨头为何屹立不倒（巴斯夫、拜耳、赫希斯特）
-
-http://www.weixinso.com/document/KPyZBb.html
-
-陶氏化学发展史
-
-http://www.pnchina.com/cn/Detail.aspx?id=1361250587
-
-业界经典：陶氏化学Styrofoam之75年
-
-https://new.qq.com/omn/20180819/20180819A011JT.html
-
-起于硝烟的化工帝国：杜邦是怎么与化工行业同呼吸共命运的？
-
-http://www.qdaily.com/articles/18872.html
-
-杜邦要合并了，过去一百年，这家公司的发明都改变了些什么？

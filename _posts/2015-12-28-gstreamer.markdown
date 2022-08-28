@@ -235,5 +235,3 @@ static PlaylistTypes special_types[] = {
 3）cache型。二进制文件，不可阅读，空间最小，效率最高。
 
 我这里采用glob2文件，既方便修改，其占用空间也在可接受的范围内。
-
-

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  TVM
-category: AI 
+category: toolchain 
 ---
 
 * toc
@@ -380,6 +380,10 @@ TVM中的scheduler
 https://zhuanlan.zhihu.com/p/388452164
 
 tvm or mlir？
+
+https://zhuanlan.zhihu.com/p/428713676
+
+如何在MLIR里面写Pass？
 
 # TVM实战
 

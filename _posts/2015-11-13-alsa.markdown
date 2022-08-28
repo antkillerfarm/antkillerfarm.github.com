@@ -101,9 +101,13 @@ aplay -D plug:dmix_44k /mnt/nfs/test2.wav`
 
 `amixer set Line 10`
 
-列出可用的ALSA设备
+列出音频输出设备
 
-`aplay -L`
+`aplay -l`
+
+列出音频输入设备
+
+`arecord -l`
 
 # ALSA System on Chip (ASoC) layer
 

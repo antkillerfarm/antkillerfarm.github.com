@@ -209,6 +209,10 @@ ACBM算法是在AC（Aho-Corasick）自动机（UNIX上的fgrep命令使用的�
 
 >J Strother Moore，德克萨斯大学教授。Boyer的好朋友，两人的绝大多数成就都是合作完成的。
 
+虽然KMP算法以$$O(m+n)$$的复杂度独树一帜，常数也是1，但由于其很烂的缓存命中率，还不如其他最坏复杂度更高的算法。
+
+C++标准库在待查找串$$len <= 3$$时，直接进行一次线性比较；在$$3< len < 256$$时，会使用一种修改后的Horspool算法，以提高缓存效率。而当待查找串$$len > 256$$时，则会使用Two-Way算法。
+
 参见：
 
 http://blog.csdn.net/sealyao/article/details/6817944
@@ -234,6 +238,10 @@ https://mp.weixin.qq.com/s/if7P0yq59DbBEjW15vfaQA
 https://mp.weixin.qq.com/s/4m1O5ZHsZTRc-JuBF97_3w
 
 字符串匹配的Boyer-Moore算法
+
+https://www.zhihu.com/question/392846851
+
+C++string中find函数是用什么算法实现的？他的时间复杂度如何？实际比手写KMP效率相比如何？
 
 ## 参考
 

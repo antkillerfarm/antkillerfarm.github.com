@@ -7,6 +7,20 @@ category: math
 * toc
 {:toc}
 
+# Menelaus' Theorem（续）
+
+![](/images/img4/space.jpg)
+
+最左边的“束腰型”的曲线具有负的高斯曲率，中间的圆柱体曲面的高斯曲率为零，而最右边的球面具有正的高斯曲率。
+
+如果大家对高斯曲率还不能理解的话，还可用另外一个量来描述曲面的弯曲程度，那就是三角形的内角和，正曲率的曲面上三角形内角和大于180度，负曲率的曲面上三角形内角和小于180度，而平直平面上的三角形内角和等于180度。
+
+![](/images/img4/Curvature.jpg)
+
+https://www.zhihu.com/question/330796123
+
+怎么理解万有引力的本质是空间的弯曲？
+
 # 20世纪10大算法
 
 2000年，IEEE评选出20世纪10大算法。名单如下：
@@ -201,28 +215,6 @@ Hilbert-Huang Transform（希尔伯特-黄变换）
 https://mp.weixin.qq.com/s/avLWHXj2JkjXOomCipj8kA
 
 使用希尔伯特-黄变换（HHT）进行时间序列分析
-
-# 拓扑学
-
-《Topopogy Without Tears》，University of New South Wales的Sidney A. Morris著。
-
-该书的中文版：
-
-http://www.topologywithouttears.net/topbookchinese.pdf
-
-参考：
-
-https://mp.weixin.qq.com/s/QmDCFY0SP3cl71HvwvthJQ
-
-如果高斯没有故意“坑”黎曼，估计这门神奇的学科就不会出现了……（拓扑学（Topology）是一门研究几何图形或空间在连续改变形状后还能保持不变的一些性质的学科。）
-
-https://mp.weixin.qq.com/s/H6QV5L-Ewdb1NkMKZrNK9w
-
-一杯咖啡背后的拓扑
-
-https://mp.weixin.qq.com/s/zoMJpYQeAAt6GmjPDx863Q
-
-这个“橡皮泥几何”，竟然解决了城中村难题！实在是太牛了！
 
 # 无理数指数
 

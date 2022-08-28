@@ -330,6 +330,8 @@ https://mp.weixin.qq.com/s/57Vxc1A5FCVbMdDYShWiDA
 
 有限元方法(FEA)的基础是变分原理和加权余量法，其基本求解思想是把计算域划分为有限个互不重叠的单元，在每个单元内，选择一些合适的节点作为求解函数的插值点，将微分方程中的变量改写成由各变量或其导数的节点值与所选用的插值函数组成的线性表达式，借助于变分原理或加权余量法，将微分方程离散求解。
 
+>冯康，1920~1993。中国计算数学研究的奠基人和开拓者。中国科学院院士，中国科学院计算中心创始人。他独立于西方创始了有限元方法。当时，有限元法作为一种工程结构问题的数值分析方法才刚刚兴起，甚至连超级大国苏联都没有采用。
+
 Physics-informed neural networks：
 
 ![](/images/img4/PDE.png)
@@ -343,3 +345,7 @@ https://deepxde.readthedocs.io
 https://blog.csdn.net/qq_38517015/article/details/101468893
 
 《DeepXDE:a deep learning library for solving differential equations》梳理
+
+https://mp.weixin.qq.com/s/X7aGCeUkLuuFbHrnK2TiMg
+
+啥是有限元？

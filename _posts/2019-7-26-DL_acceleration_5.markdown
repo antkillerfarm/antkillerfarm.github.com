@@ -7,7 +7,31 @@ category: DL acceleration
 * toc
 {:toc}
 
-# NN Quantization（续）
+# NN Quantization
+
+## 量化技巧（续）
+
+4.对于sigmoid、tanh这样的S形函数，其输入在$$\mid x \mid > \sigma$$范围的值，最终的结果都在sigmoid、tanh的上下限附近。因此，可以直接将这些x值量化为$$\sigma$$。这里的$$\sigma$$的取值，对于sigmoid来说是6，而对于tanh来说是3。
+
+## NN硬件的指标术语
+
+MACC：multiply-accumulate，乘法累加。
+
+FLOPS：Floating-point Operations Per Second，每秒所执行的浮点运算次数。
+
+显然NN的INT8计算主要以MACC为单位。
+
+## gemmlowp
+
+gemmlowp是Google提出的一个支持低精度数据的GEMM（General Matrix Multiply）库。
+
+代码：
+
+https://github.com/google/gemmlowp
+
+## 论文
+
+《Quantizing deep convolutional networks for efficient inference: A whitepaper》
 
 ## 二值神经网络
 
@@ -292,23 +316,3 @@ https://mp.weixin.qq.com/s/wOaCjSifZqkndaGbst1-aw
 权值稀疏化的设置也和网络结构有关。比如分类网络，由于输入图片是高维数据，而分类结果是低维数据，因此在稀疏化处理的时候，**越靠近输出结果的Layer，其稀疏化程度就可以越高。**而最初的几层，即使只加少量稀疏化，也会导致精度的大幅下降，这时往往就不做或者少做稀疏化处理了。
 
 上述方法的问题在于，分类网络的计算量主要集中在最初几层，所以这种triangle prune mode对于压缩计算量的效果一般。
-
-除了训练后的权值稀疏化之外，权值稀疏化训练也是一种方法。
-
-论文：
-
-《FLOPs as a Direct Optimization Objective for Learning Sparse Neural Networks》
-
-这篇论文，将计算量也就是FLOPs作为Loss function设计的一部分，由于稀疏化的权值没有运算量，因此，采用这种Loss训练出的网络，天生就是稀疏化的。
-
-## AutoML
-
-由于模型压缩，本质上是一个精益求精的优化问题，因此采用AutoML技术对于各个超参数进行优化，就成为了一件很有必要的事情。
-
-这里主要的问题在于超参数数量众多，导致状态空间过大。
-
-论文：
-
-《AMC: AutoML for Model Compression and Acceleration on Mobile Devices》
-
-这是韩松组的何宜晖的作品。该论文采用深度强化学习的DDPG网络来优化目标网络，从而大大减少了需要搜索的状态空间。

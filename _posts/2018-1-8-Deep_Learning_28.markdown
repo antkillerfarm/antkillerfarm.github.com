@@ -75,7 +75,7 @@ https://mp.weixin.qq.com/s/hnmKM-_zgb5m80NTd_b8gw
 
 能量学习之Hopfield Networks
 
->John Joseph Hopfield，1933年生，美国科学家。Cornell University博士（1958），先后执教于UCB、Princeton和Caltech。美国科学院、美国艺术科学院院士。   
+>John Joseph Hopfield，1933年生，美国科学家。Cornell University博士（1958），先后执教于UCB、Princeton和Caltech。美国艺术科学院、美国科学院院士。   
 >他爸也叫John Joseph Hopfield，波兰物理学家。
 
 http://txshi-mt.com/2018/02/10/UTNN-12-Restricted-Boltzmann-Machines/

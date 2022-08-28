@@ -97,6 +97,10 @@ https://mp.weixin.qq.com/s/GmaZMPPUh20PEuV2n2mdPA
 
 我们说TCP是流式协议究竟意味着什么？
 
+https://www.zhihu.com/question/53672815
+
+TCP链接之间的网络物理断开了然后有连上，这个TCP链接是否断开？
+
 ## DNS
 
 https://mp.weixin.qq.com/s/DDk5YZv9Q7CaqdiKvQxZGQ

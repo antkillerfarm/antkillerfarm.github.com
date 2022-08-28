@@ -63,6 +63,18 @@ https://github.com/tualatrix/ubuntu-tweak
 
 这是Gnome官方的优化工具，当然了这个主要关注gnome桌面的设置，并没有系统设置的内容。
 
+4.gconf-editor
+
+这个相当于是Windows的注册表编辑器在Gnome桌面的等价物。
+
+---
+
+如何以管理员身份操作Gnome的资源管理器--nautilus
+
+`apt install nautilus-gksu`
+
+地址栏不能用输入，使用快捷键Ctrl+L
+
 # 清理系统
 
 ## 清理安装包

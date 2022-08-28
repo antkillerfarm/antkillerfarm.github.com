@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  TVM实战
-category: AI 
+title:  TVM实战, 炼丹实录
+category: toolchain 
 ---
 
 * toc
@@ -108,7 +108,9 @@ class QnnQuantizeConstFold : public DFPatternRewrite {
 };
 ```
 
-`Rewrite_`是Pass最重要的函数。其中最简单的当属`DFPatternRewrite`。
+`Rewrite_`是Pass最重要的函数。
+
+Pass有很多种，其中最简单的当属`DFPatternRewrite`。它的`Rewrite_`已经写好了，我们仅仅需要实现`Callback`即可。
 
 `Callback`的参数中，`pre`表示原始`Expr`，`post`表示替换后的`Expr`，返回值也是替换后的`Expr`。（方便使用链式调用？）
 
@@ -233,6 +235,19 @@ TensorFlow中loss与val_loss、accuracy和val_accuracy分别是什么含义
 增大batch size会增加计算量，但是由于设备IO和计算量的平衡，并不是batch size越小，运行时间就越短。
 
 # XLA+
+
+## pass
+
+HLO也可以有pass：`HloModulePass`
+
+```cpp
+HloPassPipeline pipeline("pass");
+pipeline.AddPass<XXXPass>();
+```
+
+和TVM相仿，MatchPattern仍然是最简单的一类Pass。HLO的实现叫做`HloMatcher`。
+
+替换可以使用`ReplaceWithNewInstruction`。
 
 ## 参考
 

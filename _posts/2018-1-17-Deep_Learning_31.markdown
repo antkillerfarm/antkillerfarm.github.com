@@ -316,3 +316,33 @@ https://mp.weixin.qq.com/s/T6S1_cFXPEuhRAkJo2m8Ig
 https://mp.weixin.qq.com/s/RRu3r_dokORhpSq3eyrPDQ
 
 为什么MobileNet及其变体如此之快？
+
+# 模型压缩与加速进阶+
+
+https://mp.weixin.qq.com/s/uXbLb5ITHOU0dZRSWNobVg
+
+算力限制场景下的目标检测实战浅谈
+
+https://mp.weixin.qq.com/s/DoeoPGnS88HQmxagKJWLlg
+
+小米开源FALSR算法：快速精确轻量级的超分辨率模型
+
+https://mp.weixin.qq.com/s/wT39oUWfrQK-dg7hGXRynQ
+
+实时单人姿态估计，在自己手机上就能实现
+
+https://mp.weixin.qq.com/s/RVsXUnAJ2f0Cby7BPaWifA
+
+人物属性模型移动端实验记录
+
+https://mp.weixin.qq.com/s/yCcK6UJqm850HON7xU3R6g
+
+模型压缩重要方向-动态模型，如何对其长期深入
+
+https://zhuanlan.zhihu.com/p/93020471
+
+轻量型网络：IdleBlock
+
+https://mp.weixin.qq.com/s/AjuTXFmxHYdUUqodSpP_4w
+
+10倍加速！爱奇艺超分辨模型加速实践

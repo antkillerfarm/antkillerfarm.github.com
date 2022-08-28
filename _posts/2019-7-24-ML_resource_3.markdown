@@ -49,10 +49,6 @@ https://mp.weixin.qq.com/s/rDdpQDogQR1E6TMkG4j1sA
 
 80页PPT解读量化开发与实盘
 
-https://mp.weixin.qq.com/s/X7aGCeUkLuuFbHrnK2TiMg
-
-啥是有限元？
-
 https://mp.weixin.qq.com/s/hPjf7t5j-kBrrEIhNGo8jQ
 
 从区域到边界（边界元）
@@ -358,3 +354,57 @@ https://mp.weixin.qq.com/s/kWJZA0acOPi46c2_Gd9aeA
 https://mp.weixin.qq.com/s/b-w_jUqxGR7hY19auiar-A
 
 FAIR发布自监督训练库VISSL
+
+# 两弹一星+++
+
+https://mp.weixin.qq.com/s/Ar-67u7UbPz5z2odN1YeQQ
+
+从被列强剥削，到成为发达国家“粉碎机”：中国付出了多少代价？
+
+https://zhuanlan.zhihu.com/p/352959565
+
+参与加勒万冲突保障，民企员工受到表彰，该公司堪称军工界大疆
+
+https://www.zhihu.com/question/425270883
+
+非五常国家的军事实力究竟有多弱？
+
+https://mp.weixin.qq.com/s/-iv72YL5jm5OyHPuNzEzmg
+
+破晓时分，加州教授团访华记
+
+https://mp.weixin.qq.com/s/_0SN18UFx_GGlHebUaar9A
+
+兵器试验中心数字弹道的传奇。陆载德的故事——从一位左腿残疾的清华学子成长为90年代共和国军队中唯一的独腿将军。
+
+https://mp.weixin.qq.com/s/tg5ovnXBV0aqM51DGj-mUQ
+
+中国计算数学和最优化事业的创始人之一、原南京大学教授何旭初
+
+https://mp.weixin.qq.com/s/fJeYJt42nQcnugqEHUGrTw
+
+捐出200万元的中国工程院院士！一生都在做“吃螃蟹的人”……（徐寿波）
+
+https://view.inews.qq.com/wxn/20220202A087ZO00
+
+这位院士一个决定，让救命药仅售290元（王振义）
+
+https://mp.weixin.qq.com/s/fVOd3ARuymsSqPXdz25nnw
+
+控制论与被遗忘的华人科学家（李郁荣）
+
+https://mp.weixin.qq.com/s/dNe-OmF_eTbtApyy13_QLA
+
+管梅谷先生简介
+
+https://www.zhihu.com/question/51700891
+
+如何评价“前三十年的工业化是一堆破铜烂铁＂？
+
+https://mp.weixin.qq.com/s/TLe6qAAxWJZnKUXo6EGp5g
+
+上海滩无线和芯片30年史
+
+https://mp.weixin.qq.com/s/Sq53aEbG3bIBML9qSwPzoA
+
+从奴隶到将军：工控“小华为”的三场战事（汇川技术）
