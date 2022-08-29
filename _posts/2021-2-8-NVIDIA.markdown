@@ -314,6 +314,22 @@ GPU底层机制分析：显存分配开销
 
 # AI Chip++
 
+https://mp.weixin.qq.com/s/cBVio3W64np8fXwUQs2wIw
+
+机器学习如何用于芯片系统设计？Jeff Dean推荐Google最新《机器学习系统芯片设计》70页ppt为你讲解
+
+https://zhuanlan.zhihu.com/p/150656419
+
+AI芯片技术发展
+
+https://mp.weixin.qq.com/s/9fBe6MsUOCDhtp4MSfP2jg
+
+AI处理器热潮正在消退
+
+https://mp.weixin.qq.com/s/JYTqJDlGw6Q2gNLaYIGLcQ
+
+特斯拉芯片究竟怎么样？
+
 https://mp.weixin.qq.com/s/cA1AXfpV3ZcMNX9k5XKlww
 
 面向深度神经网络的芯片布图规划问题简介

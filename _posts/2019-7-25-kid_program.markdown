@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  孩子的编程语言, Go, Julia, Rust, perl, VS
+title:  孩子的编程语言, Go, Julia, Rust, VS
 category: language 
 ---
 
@@ -141,6 +141,20 @@ https://www.runoob.com/go/go-tutorial.html
 - 中间件软件：etcd、Consul、NSQ、Caddy等。
 - 数据库软件：TiDB、Cockroach、InfluxDB、Cayley等。
 - 数据爬取软件：Pholcus、Colly等。
+
+---
+
+Go的几个创始人（Ken Thompson、Rob Pike）来自于Bell Lab的Plan 9项目，所以Go里有大量的Plan 9遗产。
+
+https://zhuanlan.zhihu.com/p/29892487
+
+Go语言的实现为何使用Plan 9的汇编器?
+
+https://www.zhihu.com/question/19706063
+
+为什么Plan9在生产环境没有实际的应用，是因为应用程序匮乏的原因么？
+
+---
 
 参考：
 
@@ -441,24 +455,6 @@ https://mp.weixin.qq.com/s/xGBAGBGsxBDuKkSxXOZRjQ
 https://zyxin.xyz/blog/2021-10/FirstGlanceOnRust/
 
 初识Rust - 从一个Python/C++/C#程序员的角度对比Rust
-
-# perl
-
-中文教程：
-
-http://www.runoob.com/perl/perl-tutorial.html
-
-perl的语法和C差别不算太大，好多语法大致上从关键字也可以猜出来。这里仅对一些符号做个简短的说明。
-
-`$name`：变量name。
-
-`@name`：数组name。
-
-`&name`：函数name。这种情况下，name的定义在使用之后。如果name的定义在使用之前，`&`可省略。
-
-`%name`：哈希数组name。
-
-perl的包管理器叫做cpan。这实际上也是该工具网站的名字。
 
 # VS
 

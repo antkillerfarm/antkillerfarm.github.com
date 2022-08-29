@@ -47,6 +47,26 @@ Khronos官方提供了一个OpenVX的软件参考实现，用于软硬件厂商�
 
 https://www.khronos.org/registry/OpenVX/
 
+## Graph mode
+
+Graph mode是OpenVX NN提出的一个基本概念，与之相对的则是原先VX/CL/GL系列标准的immediate mode。
+
+尽管VX标准至今影响力有限，但Graph mode的概念却被越来越多的硬件厂商所接受，比如NVIDIA。
+
+![](/images/img4/cuda-graphs.png)
+
+使用Graph的好处如上图所示，它主要减少了Launch阶段所需要的时间。
+
+参考：
+
+https://developer.nvidia.com/blog/constructing-cuda-graphs-with-dynamic-parameters
+
+Constructing CUDA Graphs with Dynamic Parameters
+
+https://blog.csdn.net/qq_38505858/article/details/124290876
+
+OpenVX的立即模式(immediate mode)和图模式(graph mode)和示例讲解
+
 ## Host & Device
 
 和OpenGL类似，一般将CPU称作Host，而将GPU称作Device。App运行在Host上，而硬件加速由Device实现。
@@ -372,19 +392,3 @@ https://zhuanlan.zhihu.com/p/115219461
 https://pan.baidu.com/s/1zcXdXTaN3dbJ9VGplViHZw 提取码:ews4
 
 AI芯片体系架构和软件专题报告会2020论文下载
-
-https://mp.weixin.qq.com/s/cBVio3W64np8fXwUQs2wIw
-
-机器学习如何用于芯片系统设计？Jeff Dean推荐Google最新《机器学习系统芯片设计》70页ppt为你讲解
-
-https://zhuanlan.zhihu.com/p/150656419
-
-AI芯片技术发展
-
-https://mp.weixin.qq.com/s/9fBe6MsUOCDhtp4MSfP2jg
-
-AI处理器热潮正在消退
-
-https://mp.weixin.qq.com/s/JYTqJDlGw6Q2gNLaYIGLcQ
-
-特斯拉芯片究竟怎么样？

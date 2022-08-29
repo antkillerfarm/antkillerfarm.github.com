@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ML参考资源（三）, 内存, ANTLR
+title:  ML参考资源（三）, 内存
 category: resource 
 ---
 
@@ -231,7 +231,31 @@ https://mp.weixin.qq.com/s/Mb7iSXfrOtettVn-Sz8QUA
 
 主板上这家伙，要当CPU和内存的中间商！
 
-# ANTLR
+# 编译原理+
+
+## PPCG
+
+Polyhedral Parallel Code Generation
+
+代码：
+
+https://github.com/Meinersbur/ppcg
+
+## PLUTO
+
+An automatic parallelizer and locality optimizer for affine loop nests
+
+官网：
+
+http://pluto-compiler.sourceforge.net/
+
+参考：
+
+https://www.zhihu.com/question/329294933
+
+如何评价PLUTO编译器？
+
+## ANTLR
 
 ANTLR—Another Tool for Language Recognition，其前身是PCCTS，它为包括Java，C++，C#,python在内的语言提供了一个通过语法描述来自动构造自定义语言的识别器（recognizer），编译器（parser）和解释器（translator）的框架。
 
@@ -249,7 +273,7 @@ https://www.ibm.com/developerworks/cn/java/j-lo-antlr/index.html
 
 使用Antlr开发领域语言
 
-# MPS
+## MPS
 
 MPS是jetbrains推出的用于构建DSL的工具。
 
@@ -388,23 +412,3 @@ https://mp.weixin.qq.com/s/fJeYJt42nQcnugqEHUGrTw
 https://view.inews.qq.com/wxn/20220202A087ZO00
 
 这位院士一个决定，让救命药仅售290元（王振义）
-
-https://mp.weixin.qq.com/s/fVOd3ARuymsSqPXdz25nnw
-
-控制论与被遗忘的华人科学家（李郁荣）
-
-https://mp.weixin.qq.com/s/dNe-OmF_eTbtApyy13_QLA
-
-管梅谷先生简介
-
-https://www.zhihu.com/question/51700891
-
-如何评价“前三十年的工业化是一堆破铜烂铁＂？
-
-https://mp.weixin.qq.com/s/TLe6qAAxWJZnKUXo6EGp5g
-
-上海滩无线和芯片30年史
-
-https://mp.weixin.qq.com/s/Sq53aEbG3bIBML9qSwPzoA
-
-从奴隶到将军：工控“小华为”的三场战事（汇川技术）

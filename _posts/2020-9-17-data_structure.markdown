@@ -372,3 +372,7 @@ http://blog.codinglabs.org/articles/algorithms-for-cardinality-estimation-part-i
 https://mp.weixin.qq.com/s/zQJve_w5OoM6u-WcSWArdQ
 
 神速Hash
+
+https://www.codeproject.com/Articles/69941/Best-Square-Root-Method-Algorithm-Function-Precisi
+
+Best Square Root Method

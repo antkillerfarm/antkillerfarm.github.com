@@ -40,10 +40,6 @@ http://tensorflow.google.cn/xla/architecture
 
 ![](/images/img4/XLA.png)
 
-CSE: Common subexpression elimination
-
-DCE: Dead code elimination
-
 TFE: Tensorflow Eager
 
 ## 应用层

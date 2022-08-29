@@ -118,6 +118,14 @@ API：Application Programming Interface
 
 比如，`int register_netdevice(struct net_device *dev)`这个内核函数，原型基本上是不会变的，所以保持这个API稳定是很简单的，但它的ABI就未必了，就算是这个函数定义本身没变，即API没变，而struct net_device的定义变了，里面多了或者少了某一个字段，它的ABI就变了，你之前编译好的二进制模块就很可能会出错了，必须重新编译才行。
 
+SSA：static single assignment form
+
+CSE: Common subexpression elimination
+
+DCE: Dead code elimination
+
+peephole optimization
+
 ## Transpiler
 
 Transpiler是一个经常用来和Compiler比较的术语。它用于将一种语言编写的源代码转换为另一种具有**相同抽象层次**的语言。
@@ -283,25 +291,3 @@ Polyhedral Model—AI芯片软硬件优化利器（三）
 https://mp.weixin.qq.com/s/wjk2Mxhd2NDpH72l3rdqgQ
 
 多面体编译技术在软硬协同设计中的应用
-
-## PPCG
-
-Polyhedral Parallel Code Generation
-
-代码：
-
-https://github.com/Meinersbur/ppcg
-
-## PLUTO
-
-An automatic parallelizer and locality optimizer for affine loop nests
-
-官网：
-
-http://pluto-compiler.sourceforge.net/
-
-参考：
-
-https://www.zhihu.com/question/329294933
-
-如何评价PLUTO编译器？
