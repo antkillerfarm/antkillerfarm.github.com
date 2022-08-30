@@ -335,36 +335,6 @@ PyFlux是Python中为处理时间序列问题而创建的开源库。该库有�
 
 https://pyflux.readthedocs.io/en/latest/index.html
 
-## JAX
-
-一款由谷歌团队打造（非官方发布），用于从纯Python和Numpy机器学习程序中生成高性能加速器（accelerator）代码，且特定于域的跟踪JIT编译器。
-
-代码：
-
-https://github.com/google/jax
-
-文档：
-
-https://jax.readthedocs.io/en/latest/
-
-参考：
-
-https://mp.weixin.qq.com/s/IMMdbF33ZHEz7N_XwgIhHA
-
-试试谷歌这个新工具：说不定比TensorFlow还好用！
-
-https://mp.weixin.qq.com/s/tZ3yWQ9--l9e81UqoUoWIQ
-
-要替代TensorFlow？谷歌开源机器学习库JAX
-
-https://mp.weixin.qq.com/s/eaYwiV2LZNRwzPEeOA1XFg
-
-新星JAX ：双挑TensorFlow和PyTorch！有望担纲Google主要科学计算库和神经网络库
-
-https://mp.weixin.qq.com/s/NhMbr_niHjSaqh2azuSaog
-
-只知道TF和PyTorch还不够，快来看看怎么从PyTorch转向自动微分神器JAX
-
 ## ImagePy
 
 ImagePy是国人写的一个图像处理工具。

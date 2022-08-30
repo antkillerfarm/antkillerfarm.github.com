@@ -37,6 +37,10 @@ https://www.cnblogs.com/djzny/p/4956752.html
 
 gdb命令中attach使用
 
+https://wzzju.github.io/tensorflow/gdb/2020/03/17/tf-compile/
+
+使用gdb调试并阅读TensorFlow源码
+
 - vscode调试
 
 vscode调试同样需要两段式的方法：
