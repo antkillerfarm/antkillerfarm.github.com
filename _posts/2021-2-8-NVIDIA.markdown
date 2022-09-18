@@ -262,6 +262,10 @@ https://www.zhihu.com/question/41060378
 
 自己写的CUDA矩阵乘法能优化到多快？
 
+https://zhuanlan.zhihu.com/p/559957579
+
+简单谈谈CUDA的访存合并
+
 # AMD
 
 ![](/images/img4/latestGPU.png)
@@ -311,69 +315,3 @@ https://zhuanlan.zhihu.com/p/25939794
 https://zhuanlan.zhihu.com/p/544879511
 
 GPU底层机制分析：显存分配开销
-
-# AI Chip++
-
-https://mp.weixin.qq.com/s/cBVio3W64np8fXwUQs2wIw
-
-机器学习如何用于芯片系统设计？Jeff Dean推荐Google最新《机器学习系统芯片设计》70页ppt为你讲解
-
-https://zhuanlan.zhihu.com/p/150656419
-
-AI芯片技术发展
-
-https://mp.weixin.qq.com/s/9fBe6MsUOCDhtp4MSfP2jg
-
-AI处理器热潮正在消退
-
-https://mp.weixin.qq.com/s/JYTqJDlGw6Q2gNLaYIGLcQ
-
-特斯拉芯片究竟怎么样？
-
-https://mp.weixin.qq.com/s/cA1AXfpV3ZcMNX9k5XKlww
-
-面向深度神经网络的芯片布图规划问题简介
-
-https://zhuanlan.zhihu.com/p/231302709
-
-聊聊GPU峰值计算能力
-
-https://zhuanlan.zhihu.com/p/340775090
-
-从Thinker到Evolver：对可演化AI芯片的探索
-
-https://mp.weixin.qq.com/s/kuIsyX0QEIeFHn8tvFE8vw
-
-AI训练的最大障碍不是算力，而是“内存墙”
-
-https://mp.weixin.qq.com/s/MwZ9j1MIwRBrJK4iWKzRqQ
-
-芯故事：和AMD有渊源的那些AI创业公司
-
-https://mp.weixin.qq.com/s/rtO8PxRj08GVimT3bfbplA
-
-我看英伟达H100 GPU
-
-https://www.zhihu.com/question/523521515
-
-如何评价英伟达3月22日发布的全新GPU H100？
-
-https://mp.weixin.qq.com/s/S1fVrSfAM_UJh06Q43s8vA
-
-网络芯片架构的新改变
-
-https://zhuanlan.zhihu.com/p/47904879
-
-AI芯片在5G中的机会
-
-https://mp.weixin.qq.com/s/Z_QVN7OCLqeyMrwK3Sc7qA
-
-AI芯片和传统芯片的区别
-
-https://mp.weixin.qq.com/s/mMiAGH2Yz42xes7jicyygA
-
-“超级芯片”或在十年内诞生，摩尔定律再续一命！（自旋电子逻辑器件“MESO器件”）
-
-https://zhuanlan.zhihu.com/p/557933130
-
-从2022新公开的特斯拉机器人Dojo芯片架构信息到存算一体

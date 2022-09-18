@@ -7,9 +7,47 @@ category: DL
 * toc
 {:toc}
 
-# CNN进化史
+# CNN进化史（续）
 
-## 总结（续）
+### ZF Net
+
+论文：
+
+《Visualizing and understandingConvolutional Networks》
+
+本文是Matthew D.Zeiler 和Rob Fergus于（纽约大学）2013年撰写的论文，主要通过Deconvnet（反卷积）来可视化卷积网络，来理解卷积网络，并调整卷积网络；本文通过Deconvnet技术，可视化Alex-net，并指出了Alex-net的一些不足，最后修改网络结构，使得分类结果提升。
+
+参考：
+
+http://blog.csdn.net/u011534057/article/details/51274862
+
+论文阅读笔记
+
+http://blog.csdn.net/whiteinblue/article/details/43312059
+
+另一篇论文阅读笔记
+
+## 总结
+
+以下内容摘自中科视拓CEO山世光的演讲。
+
+以让小区里的巡逻机器人学会检测狗屎为例。
+
+在**前深度学习时代**，这个过程大概分三步：
+
+第一步，花几个月时间收集和标注几百或上千张图；
+
+第二步，观察并人为设计形状、颜色、纹理等特征；
+
+第三步，尝试各种分类器做测试，如果测试结果不好，返回第二步不断地迭代。
+
+人脸检测就是这样进行的，从上世纪八十年代开始做，大量研究者花了大概二十年时间，才得到了一个基本可用的模型，能较好地解决人脸检测的问题。而后在监控场景下做行人和车辆的检测，前后也花了大概十年的时间。就算基于这些经验，做出好用的狗屎检测器，至少还是需要一年左右的时间。
+
+在**深度学习时代**，开发一个狗屎检测器的流程被大大缩短了。尽管深度学习需要收集大量的数据并进行标注（用矩形把图中的狗屎位置框出来），但由于众包平台的繁荣，收集一万张左右的数据可能只需要两星期。
+
+接下来，我们只需要挑几个已经被证明有效的深度学习模型进行优化训练就可以了，训练优化大概需要一个星期，就算换几个模型再试试看。这样完成整个过程只需要一两个月而已。
+
+而在**后深度学习时代**，我们期待先花几分钟时间，在网上随便收集几张狗屎照片，交给机器去完成余下所有的模型选择与优化工作，或许最终只需要一、两星期解决这个问题。
 
 前深度学习时代的人脸识别的标准流程：
 
@@ -204,59 +242,3 @@ Dilated convolution在CNN方面的应用主要是Fisher Yu的贡献。
 https://github.com/fyu/dilation
 
 https://github.com/fyu/drn
-
->Fisher Yu，密歇根大学本硕+普林斯顿大学博士。   
->个人主页：   
->http://www.yf.io/
-
-和Deconvolution类似，Dilated convolution也可以采用space_to_batch和batch_to_space操作，将之转换为普通卷积。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/28822428
-
-Paper笔记：Dilated Residual Networks
-
-https://mp.weixin.qq.com/s/1lMlSMS5xKc8k0QMAou45g
-
-重新思考扩张卷积！中科院&深睿提出新型上采样模块JPU
-
-https://mp.weixin.qq.com/s/NjFdu6iP3Sn9GbDhrbpisQ
-
-感受野与分辨率的控制术—空洞卷积
-
-https://zhuanlan.zhihu.com/p/94477174
-
-CNN真的需要下采样（上采样）吗?
-
-## 分组卷积
-
-![](/images/article/AlexNet.png)
-
-Grouped Convolution最早在AlexNet中出现，由于当时的硬件资源有限，训练AlexNet时卷积操作不能全部放在同一个GPU处理，因此作者把feature maps分给2个GPU分别进行处理，最后把2个GPU的结果进行融合。
-
-![](/images/img3/group_conv.png)
-
-上图是Grouped Convolution的具体运算图：
-
-- input分成了g组。每组的channel数只有全部的1/g。（上图中g=2）
-
-- weight和bias也分成了g组。每组weight的input_num和output_num都只有普通卷积的1/g。也就是每组weight的尺寸只有原来的$$1/g^2$$，g组weight的总尺寸就是原来的1/g。
-
-- 每组input和相应的weight/bias进行普通的conv运算得到一个结果。g组结果合并在一起得到一个最终结果。
-
-可以看出，Grouped Convolution和普通Convolution的input/output的尺寸是完全一致的，只是运算方式有差异。由于group之间没有数据交换，总的计算量只有普通Convolution的1/g。
-
-在AlexNet的Group Convolution当中，特征的通道被平均分到不同组里面，最后再通过两个全连接层来融合特征，这样一来，就只能在最后时刻才融合不同组之间的特征，对模型的泛化性是相当不利的。
-
-为了解决这个问题，ShuffleNet在每一次层叠这种Group conv层前，都进行一次channel shuffle，shuffle过的通道被分配到不同组当中。进行完一次group conv之后，再一次channel shuffle，然后分到下一层组卷积当中，以此循环。
-
-![](/images/img2/ShuffleNet.png)
-
-论文：
-
-《ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices》
-
-代码：
-
-https://github.com/megvii-model/ShuffleNet-Series

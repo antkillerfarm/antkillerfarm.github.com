@@ -372,3 +372,7 @@ AI时代的去马赛克算法
 https://mp.weixin.qq.com/s/YKL0Cwp1l9_4lAj8knMIqQ
 
 高级AI视觉算法是否还需要ISP?
+
+https://mp.weixin.qq.com/s/x4cz9mW1HOF8rtRv4uqLCQ
+
+门控相机：车载ADAS相机的未来？

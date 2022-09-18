@@ -254,7 +254,7 @@ SpeechBrain是一个基于pytorch的语音工具包，目前（2019.9）正在�
 
 https://speechbrain.github.io/
 
-# 推荐系统的工程细节++
+# 推荐系统的工程细节+
 
 https://mp.weixin.qq.com/s/SRd7Cr16kpa_aUWDNwww_g
 

@@ -230,6 +230,10 @@ https://zhuanlan.zhihu.com/p/149889589
 
 Avro，Protocol Buffer和Thrift中的模式演化
 
+https://zhuanlan.zhihu.com/p/561275099
+
+神奇的Google二进制编解码技术：Protobuf
+
 ### proto3
 
 Protocol Buffers本身也有若干版本，且互不兼容。目前用的比较多的是proto2和proto3。
@@ -349,49 +353,3 @@ https://zhuanlan.zhihu.com/p/30628048
 https://mp.weixin.qq.com/s/I2QHEBO26nGqhGwIw281Pg
 
 gRPC基础概念详解
-
-# CPU++
-
-https://mp.weixin.qq.com/s/QwE_VTEUS9kGDDrHlzPYmg
-
-硅片为什么不是方的？
-
-https://zhuanlan.zhihu.com/p/32378843
-
-ARM攒机指南-汽车篇
-
-https://mp.weixin.qq.com/s/Hq9hzkyfGcCQa_FfzSDoRg
-
-5nm工艺节点以后，半导体器件的发展方向
-
-https://zhuanlan.zhihu.com/p/66263349
-
-为什么内存和闪存制程比CPU低？它们现在都在什么节点？
-
-https://zhuanlan.zhihu.com/p/114448236
-
-什么是Win10的“现代待机”？为什么它未来会越来越重要？这篇文章部分解释了我的第一个平板为什么那么耗电。
-
-https://mp.weixin.qq.com/s/J7RlmvU7JY1J8rV-eqjQ2A
-
-浅谈多核心CPU和SoC芯片及其工作原理
-
-https://mp.weixin.qq.com/s/Lnrlv7JcrOSwbnDweYf1Yg
-
-片上系统设计案例分析-Xbox主机
-
-https://zhuanlan.zhihu.com/p/86432216
-
-Microcode是什么？它为什么能修正CPU硬件错误？
-
-https://zhuanlan.zhihu.com/p/152167194
-
-两大FPGA公司的“AI技术路线”
-
-https://www.zhihu.com/question/503287789
-
-当两个CPU核心要求读写同一内存地址时，其后果是未定义行为吗？
-
-https://mp.weixin.qq.com/s/Kake5sQm79L2j_uDqKfznQ
-
-在《我的世界》里从零打造一台计算机有多难？复旦本科生大神花费了一年心血

@@ -159,38 +159,18 @@ PRRSV（猪蓝耳）是单股正链RNA病毒，具有RNA病毒复制时缺乏校
 
 你以为艾滋病是什么？毒力强大的七年挂了，无菌室加所有药物一起上都治疗不来。温和型有三十年不发病的。几乎都不是一个品种的病毒了。
 
-## 肝炎病毒
+---
 
-https://mp.weixin.qq.com/s/Op5LQvLol4q4FVS0vIzw_Q
+细菌的基因组很大、有很多冗余，丢失几个基因不是啥问题，捡到一个具有抗生素抗性的质粒就更开心了；
 
-人类与肝炎病毒的千年激斗
+普通病毒的基因组很小，丢几个基因基本上就没戏了；
 
-https://mp.weixin.qq.com/s/lmkUDDKMg8d82C-Gc1pxQg
+但核质大DNA病毒（NCLDV）体型大、基因组也很大，有几百个开放阅读框（orf），随便丢弃几个基因或片段（缩减演化）简直就是家常便饭。
 
-抗击丙型肝炎
+现在所有的各种正痘病毒，都是由牛痘病毒的原始株系，通过丢弃附属基因的方式演化出来的（也就是所谓的“缩减演化”）；
 
-https://mp.weixin.qq.com/s/tDHWJfw7zx-Aoh9QfCJLQQ
+其中，天花病毒附属基因大礼包最袖珍，针对人类的致病性也最强。
 
-曾有无数人因输血而患上肝病，直到他们揪出元凶
+https://mp.weixin.qq.com/s/MR14pRiy7eH87Nnoa1whzA
 
-https://mp.weixin.qq.com/s/iFxvk45TfFjIWKz1A4DHAA
-
-没得乙肝，我们要感谢一个人（Baruch S. Blumberg）
-
-## 参考
-
-https://mp.weixin.qq.com/s/lwBpRJ4VQxD3DzeMropylQ
-
-病毒简史：人类对大自然的不知敬畏，才是一切灾难的源头
-
-https://mp.weixin.qq.com/s/Zh9-8C-hilrlKk8jrVo60g
-
-入侵&反击！病原体和人体的攻防战
-
-https://mp.weixin.qq.com/s/bgF5p9g47FmnPmR2hcvU3Q
-
-病毒，那条静止的河流
-
-https://mp.weixin.qq.com/s/ebaz8rd7ft3eH8E-cS3YpA
-
-病毒从哪里来？
+猴痘，缩减演化，现在进行时

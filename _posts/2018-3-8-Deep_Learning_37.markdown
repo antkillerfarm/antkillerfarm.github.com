@@ -1,376 +1,264 @@
 ---
 layout: post
-title:  深度学习（三十七）——人脸检测/识别（3）
+title:  深度学习（三十七）——无监督/半监督/自监督深度学习（2）
 category: DL 
 ---
 
 * toc
 {:toc}
 
-# 人脸检测/识别
+# 无监督/半监督/自监督深度学习
 
-## 参考（续）
+https://mp.weixin.qq.com/s/IsLlzDWnUXe8LVp4Y1Jb_A
 
-https://github.com/ChanChiChoi/awesome-Face_Recognition
+35亿张图像！Facebook基于弱监督学习刷新ImageNet基准测试记录
 
-不止面部识别，一切关于人脸AI的资源都能在这里下载
+https://mp.weixin.qq.com/s/TEk_i4kEjUqmAqF8LgTVjg
 
-https://mp.weixin.qq.com/s/FqH_5ztUWRDqb6X9_QggJw
+FAIR提出用聚类方法结合卷积网络，实现无监督端到端图像分类
 
-深度学习在人脸检测中的应用
+https://mp.weixin.qq.com/s/dSncg1pDHpIFOT4mXrFntA
 
-https://mp.weixin.qq.com/s/lVsQDOJ9hfsgYuAxguKxkA
+Yan Lecun自监督学习：机器能像人一样学习吗？ 110页PPT
 
-最新《端到端人脸识别》2020综述论文，44页pdf
+https://mp.weixin.qq.com/s/W4zwKqkVQN4v-IKzGrkudg
 
-https://github.com/jiankangdeng/handbook
+通过传递不变性实现自监督视觉表征学习
 
-人脸识别手册 (分类论文集)
+https://zhuanlan.zhihu.com/p/30265894
 
-https://github.com/ShownX/FacePaperCollection
+自监督学习近期进展
 
-人脸相关文献代码集锦：人脸检测、人脸识别、人脸生成等
+https://mp.weixin.qq.com/s/qyQjKsgktWv9SihotaQX3w
 
-https://zhuanlan.zhihu.com/p/74603794
+从顶会看自监督学习最新研究进展
 
-基于深度学习的人脸检测和识别方法介绍
+https://mp.weixin.qq.com/s/cTlXMxcpzc7_5NVsTm1jcA
 
-https://mp.weixin.qq.com/s/FMremLz7777x-XGc02mmkA
+学习一帧，为整段黑白视频上色：谷歌提出自监督视觉追踪模型
 
-深度学习人脸检测入门必读文章
+https://mp.weixin.qq.com/s/Amr34SdrPZho1GQpFS7WBA
 
-https://mp.weixin.qq.com/s/__b-7Cl482taXwIVb_9vwQ
+见微知著：语义分割中的弱监督学习
 
-以人为本的计算机视觉研究：WIDER Challenge 2019（人脸检测/行人检测/人物检索）
+https://mp.weixin.qq.com/s/zOWA1oKbopZJuYIAYYlKTA
 
-https://mp.weixin.qq.com/s/eZ78biXN-mVw3s9Ky_LBZg
+港中文-商汤联合论文：自监督语义分割的混合与匹配调节
 
-如何走近深度学习人脸识别？你需要这篇超长综述
+https://mp.weixin.qq.com/s/5xlSoC5sgzsAwMYMSFCjnw
 
-https://mp.weixin.qq.com/s/tum24mzS2cUiKW87a1weFA
+TextTopicNet:CMU开源无标注高精度自监督模型
 
-人脸识别全面总结：从传统方法到深度学习
+https://mp.weixin.qq.com/s/343DfjOvkaozuxNK89V3zQ
 
-https://mp.weixin.qq.com/s/bFnuGu4xLJiRfANi0Rkduw
+前景目标检测的无监督学习
 
-人脸识别的前世今生：从人工特征的百花齐放到深度学习的一统江湖
+https://mp.weixin.qq.com/s/DwY0oGu-G30Szs-ArI5WaQ
 
-https://zhuanlan.zhihu.com/p/32702868
+程明明：面向弱监督的图像理解
 
-人脸检测背景介绍和发展现状
+https://mp.weixin.qq.com/s/LFOljv-Hr6JqyI6TQ2X4sw
 
-https://zhuanlan.zhihu.com/p/69777256
+半监督学习也能自动化？南大和第四范式提出Auto-SSL
 
-简述人脸识别开发原理。这篇文章对传统算法做了一个很好的总结。
+https://mp.weixin.qq.com/s/83xAXrc_H_OExW3vii08hA
 
-https://zhuanlan.zhihu.com/p/79863225
+谷歌提出新方法：基于单目视频的无监督深度学习结构化
 
-人脸识别特征介绍以及难题概括
+https://mp.weixin.qq.com/s/gr0_p4WFToTrDfy47h-p0A
 
-https://mp.weixin.qq.com/s/QvmHO_fulTtYJYB4MdoKGw
+基于自监督学习的视听觉信息同一性判断
 
-初学深度学习人脸识别和验证必读文章
+https://mp.weixin.qq.com/s/Dqz97_U5pw_4d9KFblJfLg
 
-http://mp.weixin.qq.com/s/KQxGQdLa3XzKVIFYqlrV7g
+基于自编码器的表征学习：如何攻克半监督和无监督学习？
 
-人脸检测与识别的趋势和分析
+https://mp.weixin.qq.com/s/LaIvAuBHYGNMug3NZ1pLhQ
 
-https://zhuanlan.zhihu.com/p/25335957
+半监督深度学习小结：类协同训练和一致性正则化
 
-人脸检测与深度学习
+https://mp.weixin.qq.com/s/aBDgV7u93MAv2MogZKBmvw
 
-https://mp.weixin.qq.com/s/a4aPycxfIe_qNIP_vrIZ5w
+Google提出Grasp2Vec模型：利用自监督方法学习物体表示
 
-人脸检测算法综述
+https://mp.weixin.qq.com/s/YfDZMEkOnxp0_ei2Oam-YQ
 
-http://www.leiphone.com/news/201608/MPXlWtGaJLPYL7NB.html
+基于弱监督的视频时序动作检测的介绍
 
-人脸检测发展：从VJ到深度学习
+https://mp.weixin.qq.com/s/RiL-s50oOI--PZyIOd2E0g
 
-https://zhuanlan.zhihu.com/p/22591740
+弱监督语义分割最新方法资源列表
 
-从事人脸识别研究必读的N篇文章
+https://mp.weixin.qq.com/s/USOWECXk_az4b6eTssfOBw
 
-https://mp.weixin.qq.com/s/HteNoL3hkjNgUTbGguMflQ
+基于弱监督深度学习的图像分割方法综述
 
-人脸识别技术全面总结：从传统方法到深度学习
+https://mp.weixin.qq.com/s/8oEdQOmSRrkIaTVQdhk2Dw
 
-https://zhuanlan.zhihu.com/p/56619497
+无监督领域特定单图像去模糊
 
-人脸检测江湖的那些事儿——从旷视说起
+https://mp.weixin.qq.com/s/FpIaa8XoJ9GsHxL-W1Cl5Q
 
-https://mp.weixin.qq.com/s/7cZTbTBttEvN6NvOarSFgw
+斯坦福AI实验室机器学习编程新范式：弱监督
 
-如何构建自定义人脸识别数据集
+https://mp.weixin.qq.com/s/ys9iiiBL3iL2SJL247AMlA
 
-https://zhuanlan.zhihu.com/p/234369216
+多伦多大学&NVIDIA最新成果：图像标注速度提升10倍！
 
-人脸识别最新进展
+https://mp.weixin.qq.com/s/V6xiG931OUJyVx15QFb_mQ
 
-https://mp.weixin.qq.com/s/U1g1pNjVn5CP6Q5ZosFc4Q
+弱监督视觉理解笔记
 
-深度人脸识别算法串讲
+https://mp.weixin.qq.com/s/HopNSLS75TgE28LfY02qog
 
-https://mp.weixin.qq.com/s/_hAxj4UX0qIxddVQSL_iWA
+不同视角构造cycle-consistency，降低视频标注成本
 
-一种快速准确的人脸检测、识别和验证系统
+https://mp.weixin.qq.com/s/XiLBHkraT8lJcOu2faqK5g
 
-https://mp.weixin.qq.com/s/tS_9gS2ADoEdSKCLB-cxpA
+关于弱监督学习，这可能是目前最详尽的一篇科普文
 
-刘小明教授为你讲解人脸识别
+https://mp.weixin.qq.com/s/gXqB7JJyIEJa74McbYcrzg
 
-https://mp.weixin.qq.com/s/CLgyaAslE4hYHi62UhzeGw
+只有正样本和无标记数据的半监督学习（PU Learning）
 
-韩琥：深度学习让机器给人脸“贴标签”
+https://mp.weixin.qq.com/s/kGProJmrf43-2O48PMPM5g
 
-https://mp.weixin.qq.com/s/pUcVO8Fj-n9-pMwAzBvWuQ
+正样本和无标签学习（PU Learning）：使用机器学习恢复数据的标签
 
-山世光：人脸识别领域的“激荡20年”
+https://mp.weixin.qq.com/s/vm1p3YceIC0nd191xsktfg
 
-https://mp.weixin.qq.com/s/Gqlo4wU0wtIcJDvQs2kTAw
+自监督学习的视觉语言建模，115页ppt讲述多模态预训练进展
 
-为了让你分清人脸识别与人脸检测，苹果要亲自给你科普
+https://mp.weixin.qq.com/s/PCXcvzwv8DF693_KzXK5bg
 
-https://mp.weixin.qq.com/s/ZJmgC8xTruaRLfCocodjqA
+计算机视觉研究新方向：自监督表示学习总结
 
-人脸检测与识别总结
+https://mp.weixin.qq.com/s/TOwOa3noN_UYrd5g0Nrrrg
 
-https://mp.weixin.qq.com/s/lGIkLcglQGvDzdBQmZW0Qw
+半监督学习技术在金融文本分类上的实践
 
-判别特征学习方法用于人脸识别
+https://mp.weixin.qq.com/s/uh25WRHVsFpoKwFyTSZtIw
 
-https://mp.weixin.qq.com/s/t-vFSkQ7SYlTGGxEEY1mSg
+计算机视觉中的半监督学习
 
-近期人脸对齐的实证性研究
+https://mp.weixin.qq.com/s/lweM2STVbldYEGwPcK1YEg
 
-https://mp.weixin.qq.com/s/zhIyZ9MEFXAuIVUxAGkW-w
+图像自标记的可视化指南
 
-人脸对齐之GBDT(ERT)算法解读
+https://mp.weixin.qq.com/s/hLFPWiHmDIzeUlQjInbgGw
 
-https://mp.weixin.qq.com/s/1g9PXc_3nhKMf1_-E_cVAA
+ActBERT: 自监督多模态视频文字学习
 
-图像识别的原理、过程、应用前景，精华篇！
+https://mp.weixin.qq.com/s/1hK3k6Mf3uTEXrqMFr1evA
 
-https://mp.weixin.qq.com/s/JY9WXneps-_tYmYhJAFlTg
+Kaggle知识点：伪标签Pseudo Label
 
-人脸识别/人证比对《DocFace+: ID Document to Selfie Matching》论文解读
+https://zhuanlan.zhihu.com/p/157325083
 
-https://mp.weixin.qq.com/s/d3aaN4vGAtMfLqOpU9oC6w
+伪标签（Pseudo-Labelling）——锋利的匕首
 
-香港中文大学助理教授吕健勤：面向人脸分析的深度学习方法
+https://mp.weixin.qq.com/s/qVGveKfCfNKqJoqwMbUVKg
 
-https://mp.weixin.qq.com/s/qUFjfsDtTQfAEjBCuoWHew
+长文总结半监督学习
 
-人脸脸型分类研究现状
+https://mp.weixin.qq.com/s/LAnP5OMuJFDhsfJWRoVMFw
 
-https://mp.weixin.qq.com/s/wcKUURsYiEYVzn7qTMVPag
+无监督领域迁移及文本表示学习的相关进展
 
-格灵深瞳：人脸识别最新进展以及工业级大规模人脸识别实践探讨
+https://mp.weixin.qq.com/s/Tau5jzNbBd0NketdgytvAg
 
-https://mp.weixin.qq.com/s/Cy5gxHl_Z4v7BX0k8SDNSQ
+计算机视觉中的自监督表示学习近期进展
 
-AI人像美妆算法初识
+https://mp.weixin.qq.com/s/uYmHxScroi4jB2okmqwHcA
 
-https://mp.weixin.qq.com/s/5vx1FGgSOhF71FwHeUwaAQ
+半监督学习入门基础（一）
 
-清华&商汤开源CVPR2018超高精度人脸对齐算法LAB
+https://zhuanlan.zhihu.com/p/212873650
 
-https://mp.weixin.qq.com/s/PW_fjdC0hzzwmeY3gUXPkw
+Contrastive Self-Supervised Learning
 
-如何降低遮挡对人脸识别的影响
+https://mp.weixin.qq.com/s/XwGvH0mTEf-jF5XQKk2lBw
 
-https://zhuanlan.zhihu.com/p/35968767
+电子科大最新《深度半监督学习》综述论文，24页pdf
 
-格灵深瞳首席科学家张徳兵：如何进行上亿类的人脸识别？
+https://zhuanlan.zhihu.com/p/355523266
 
-https://mp.weixin.qq.com/s/b-v_hDHJjUxMithBDr3TcQ
+从SimCLR到BarLow Twins，一文了解自监督学习不断打脸的认知发展史
 
-实时旋转鲁棒人脸检测算法
+https://mp.weixin.qq.com/s/WqUb9MY_3hVPRdxSl9BE1Q
 
-https://blog.csdn.net/xiamentingtao/article/details/50908190
+S4L: 半监督+自监督学习
 
-Facial Landmark Detection(人脸特征点检测)
+https://mp.weixin.qq.com/s/1f1Ma2ZQVTuPo38_uCE0fQ
 
-https://mp.weixin.qq.com/s/ZZmLbFzi843g0k3gTncQmA
+大规模推荐系统的自监督学习
 
-拿下人脸识别“世界杯”冠军！松下-NUS和美国东北大学实战分享
+https://mp.weixin.qq.com/s/qgP39JKD3fbVNK8e4Hw4PQ
 
-https://mp.weixin.qq.com/s/DYCXef_09yFFNR0uHL2Q0Q
+重邮高新波等最新《少样本目标检测算法》综述论文
 
-基于Python的开源人脸识别库：离线识别率高达99.38%
+# 姿态/行为检测进阶+
 
-https://mp.weixin.qq.com/s/eOxd5XbeyVcRYyAAmPr20Q
+https://mp.weixin.qq.com/s/6HsL2B7p-XyvGWAb4SwALA
 
-利用空间融合卷积神经网络通过面部关键点进行伪装人脸识别
+图灵奖得主Geoffrey Hinton最新研究NASA：一种更好地学习三维模型动作的方法
 
-https://mp.weixin.qq.com/s/vAjWHpn5HP_lwSv49g71SA
+https://zhuanlan.zhihu.com/p/26460437
 
-新型半参数变分自动编码器DeepCoder：可分层级编码人脸动作
+Video Analysis相关领域解读之Action Recognition(行为识别)
 
-https://mp.weixin.qq.com/s/IS5iAPZeUrvvyWs29O8Ukg
+https://zhuanlan.zhihu.com/p/26603387
 
-通过提取神经元知识实现人脸模型压缩
+Video Analysis相关领域解读之Temporal Action Detection(时序行为检测)
 
-https://mp.weixin.qq.com/s/DEJ0z2CahZIrhTE3VXNVvg
+https://zhuanlan.zhihu.com/p/26730181
 
-基于注意力机制学习的人脸幻构
+Video Analysis相关领域介绍之Video Captioning(视频to文字描述)
 
-https://mp.weixin.qq.com/s/-G94Mj-8972i2HtEcIZDpA
+https://mp.weixin.qq.com/s/-HEYU_El8xysk8atHYx1Mg
 
-人脸识别世界杯榜单出炉，微软百万名人识别竞赛冠军分享
+基于3D行人姿态和步态预测的神经网络模型
 
-https://mp.weixin.qq.com/s/bqWle_188lhYO4hpCfafkQ
+https://zhuanlan.zhihu.com/p/72561165
 
-用浏览器做人脸检测，竟然这么简单？
+重新思考人体姿态估计 Rethinking Human Pose Estimation
 
-https://mp.weixin.qq.com/s/kn9JS55wIW2cfpUv7Jm0eQ
+https://mp.weixin.qq.com/s/8vdTlIe9LV88AVw9kAcVjA
 
-深度学习教你如何“以貌取人”！
+基于空间AdaIN的深度姿态迁移
 
-https://mp.weixin.qq.com/s/3xEDtMoe0iRQSZiN5A1FGw
+https://zhuanlan.zhihu.com/p/129279351
 
-IPHONE X“刷脸”技术奥秘大揭底
+X3D Facebook视频理解/行为识别新作
 
-https://mp.weixin.qq.com/s/s5HL6y2P9_KqpSAQg08URw
+https://zhuanlan.zhihu.com/p/149429010
 
-世界最大人脸对齐数据集ICCV 2017：距离解决人脸对齐已不远
+TAM: 针对动作识别的时序自适应模块
 
-https://mp.weixin.qq.com/s/7AnF0uMgepchiUeqfqVbCg
+https://mp.weixin.qq.com/s/skCOaKf9kRABTX7hkdjGXA
 
-清华大学王生进：新智能安防：人脸识别技术与应用系统
+谷歌极速人脸、手、人体姿态分析Blaze算法家族
 
-https://mp.weixin.qq.com/s/-T5k2ViPjvEoXccKt-_J3Q
+https://zhuanlan.zhihu.com/p/69042249
 
-中科院自动化研究所提出FaceBoxes：实时、高准确率的CPU面部检测器
+2020 Pose Estimation人体骨骼关键点检测综述笔记
 
-https://www.leiphone.com/news/201707/mFuwXGvZBhoVQD5S.html
+https://zhuanlan.zhihu.com/p/164603050
 
-一秒分辨出杨臣刚、王大治和孙楠，这个黑产居然用AI来"打码"
+3D Pose Estimation关键点检测的算法整理（2020）
 
-https://mp.weixin.qq.com/s/PF7_kSnwngnJ1jeh7ebyww
+https://mp.weixin.qq.com/s/AW-L_5acaDzGTObUGjTuuw
 
-手把手教你用1行代码实现人脸识别
+用AI“驯服”人类幼崽：这个奶爸找到了硬核带娃的乐趣
 
-http://blog.csdn.net/gitchat/article/details/78546894
+https://mp.weixin.qq.com/s/P4FxL2jAXaJYZ0ZTY8xtzg
 
-TensorFlow人脸识别网络与对抗网络搭建
+深度学习人体姿态估计：2014-2020全面调研
 
-https://mp.weixin.qq.com/s/YRsVi09u3W0aQMdsR5KY4Q
+https://zhuanlan.zhihu.com/p/414173365
 
-腾讯AI Lab提出Face R-FCN与Face CNN，刷新人脸检测与识别两大测评记录
+记一次坎坷的算法需求实现：轻量级人体姿态估计模型的修炼之路（附MoveNet复现经验）
 
-https://mp.weixin.qq.com/s/zyMIRGig-m732rvraPKxwA
+https://mp.weixin.qq.com/s/zzFb55Yj9j3x_pxeXRlOaw
 
-单样本学习：使用孪生神经网络进行人脸识别
-
-https://mp.weixin.qq.com/s/QJm7YoCYmiF0dX8uac5w4Q
-
-旷视研究院：被遮挡人脸区域检测的技术细节
-
-https://mp.weixin.qq.com/s/Fmi9RJz-bMOYBoZWt1nWag
-
-人脸注意机制网络
-
-https://mp.weixin.qq.com/s/s9H_OXX-CCakrTAQUFDm8g
-
-申省梅颜水成团队获国际非受限人脸识别竞赛IJB-A冠军，主要负责人熊霖技术分享
-
-https://mp.weixin.qq.com/s/ZFFSTFDVxFUe2KOFy8XDxw
-
-人脸识别——新的一个境界（无约束）
-
-https://mp.weixin.qq.com/s/xDEga2tITO8rVkvXCZ62sg
-
-中国团以98%精度夺得MegaFace人脸识别冠军
-
-https://mp.weixin.qq.com/s/HVooLtr_k6fwh2N3GjMb1A
-
-新研究提出深度残差等价映射：由正脸加强侧脸识别效果
-
-https://mp.weixin.qq.com/s/9noWOZJSRAi424ZDTD1IRQ
-
-世界权威评测冠军：百度人脸检测算法PyramidBox
-
-https://www.zhihu.com/question/37060782
-
-人脸识别哪家强？不如问哪家公司吹牛逼强
-
-https://mp.weixin.qq.com/s/S_T0tYhZ1pjoIMysP0aVWA
-
-美军AI黑科技：黑暗中也能准确识别人脸，谁该为此感到紧张？
-
-https://mp.weixin.qq.com/s/GLKvzC_o6MR1ixThAVc9lQ
-
-CosFace: 面向深度人脸识别的增强边缘余弦损失函数设计
-
-https://mp.weixin.qq.com/s/AMDkkbdTQbL-2jyweVid-A
-
-摆好Pose却没管理好面部表情？腾讯优图Facelet-Bank人脸处理技术了解一下
-
-https://mp.weixin.qq.com/s/OjId_YfxkhEh4tJ1Sw-Hbw
-
-多伦多大学反人脸识别，身份欺骗成功率达99.5%
-
-https://mp.weixin.qq.com/s/tUSNk5R_zbEFz-yIx0LXYQ
-
-基于DNN的人脸识别中的反欺骗机制
-
-https://mp.weixin.qq.com/s/mjdW7xY77H03RIKuKuFmQg
-
-人脸画像合成研究的综述与对比分析
-
-https://mp.weixin.qq.com/s/Ieha-lJ_KuEnpbJha_nxJw
-
-利用人脸图片准确识别年龄：上海大学研究者提出“深度回归森林”
-
-https://mp.weixin.qq.com/s/9VTpbqwALmxr07pEfdQBCA
-
-旷视科技提出GridFace：通过学习局部单应变换实现人脸校正
-
-https://mp.weixin.qq.com/s/z726pDBhn5bML5Xho2XCig
-
-人脸对齐与跟踪如何克服遮挡、姿态变化带来的特征点跳变？
-
-https://mp.weixin.qq.com/s/qpP6AzLdgtH6NnIUl4JNpQ
-
-腾讯AI Lab提出正交深度特征分解算法：在多个跨年龄人脸识别任务中创造新记录
-
-https://mp.weixin.qq.com/s/J4_snLK7DoV5oN7GP5M_Ww
-
-新思路！商汤开源利用无标注数据大幅提高精度的人脸识别算法
-
-https://mp.weixin.qq.com/s/4xYAhNys6svltEb4cQUrXw
-
-Bi-box行人检测：‘行人遮挡’为几何？
-
-https://mp.weixin.qq.com/s/IfZ5gTZrSFqQP2cpcIxAeQ
-
-清华&商汤开源CVPR2018超高精度人脸对齐算法LAB
-
-https://mp.weixin.qq.com/s/R1hdkPTdFCo7JvOKNcEzJg
-
-DeepMind&VGG提出基于集合的人脸识别算法GhostVLAD,精度远超IJB-B数据集state-of-the-art
-
-https://mp.weixin.qq.com/s/CH46uvOshGss7O2bbxFoWQ
-
-曹杰：Rotating is Believing
-
-https://mp.weixin.qq.com/s/unoSZVPQrjMjjxSbnp1IBQ
-
-FaceBoxes—官方开源CPU实时高精度人脸检测器
-
-https://zhuanlan.zhihu.com/p/55983565
-
-中科院和京东AI研究院提出：改进SRN人脸检测算法，目前业界最强！
-
-https://mp.weixin.qq.com/s/KY11jsedOa0HHIhET83V3g
-
-目前最强性能的人脸检测算法Improved SRN
-
-https://mp.weixin.qq.com/s/Chw_gLxQHdfe0hFJGMk-3A
-
-日本东北大学改进单阶段人脸检测—兼具速度与精度优势
-
-https://mp.weixin.qq.com/s/E9Esoe4VHvMdJNTbxF-sXA
-
-ShapeNet:超实时人脸特征点检测与形状拟合开源库
+在线试玩，在体感游戏中打败泰森，这位小哥破解了任天堂“拳无虚发”（MoveNet）

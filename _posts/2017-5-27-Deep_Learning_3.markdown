@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三）——深度学习常用术语解释, Neural Network Zoo
+title:  深度学习（三）——深度学习常用术语解释
 category: DL 
 ---
 
@@ -20,6 +20,20 @@ category: DL
 随机drop-> 自适应drop
 
 像素级drop -> 区域级drop
+
+---
+
+经过dropout之后，输出的均值没有发生变化，但是方差发生了变化。
+
+如果使用了dropout，在训练时隐藏层神经元的输出的方差会与验证时输出的方差不一致，这个方差的变化在经过非线性层的映射之后会导致输出值发生偏移，最终导致了在验证集上的效果很差。
+
+由于回归问题输出是一个绝对值，对这种变化就很敏感，但是分类问题输出只是一个相对的logit，对这种变化就没那么敏感，因此，在回归问题上最好不要用dropout，而在分类问题上才用dropout。
+
+https://zhuanlan.zhihu.com/p/561124500
+
+为什么回归问题不能用Dropout
+
+---
 
 参考：
 
@@ -283,31 +297,3 @@ https://zhuanlan.zhihu.com/p/74553341
 ## 模型容量
 
 如果你切换到工业级数据集，上亿条数据的时候，你会发现有些模型会随着数据量的增大，效果持续变好，而其他模型，一开始随着数据增加上升很快，但慢慢就会进入一个瓶颈期，再怎么增加数据都无法提高了。我们一般认为这是模型容量导致的。
-
-# Neural Network Zoo
-
-在继续后续讲解之前，我们首先给出常见神经网络的结构图：
-
-![](/images/article/Neural_Networks.png)
-
-上图的原地址为：
-
-http://www.asimovinstitute.org/neural-network-zoo/
-
-单元结构：
-
-![](/images/article/neuralnetworkcells.png)
-
-层结构：
-
-![](/images/article/neuralnetworkgraphs.png)
-
-上图的原地址为：
-
-http://www.asimovinstitute.org/neural-network-zoo-prequel-cells-layers/
-
-参考：
-
-https://mp.weixin.qq.com/s/ysnLwvbSD4fcL5LK7wSnyA
-
-MIT高赞深度学习教程：一文看懂CNN、RNN等7种范例

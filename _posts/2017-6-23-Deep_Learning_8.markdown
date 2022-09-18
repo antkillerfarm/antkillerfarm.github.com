@@ -7,7 +7,55 @@ category: DL
 * toc
 {:toc}
 
-# 神经元激活函数进阶（续）
+# 神经元激活函数进阶
+
+## ReLU的缺点（续）
+
+ReLU还经常被“诟病”的另一个问题是输出具有**偏移现象**，即输出均值恒大于零。偏移现象和神经元死亡会共同影响网络的收敛性。实验表明，如果不采用Batch Normalization，即使用MSRA初始化30层以上的ReLU网络，最终也难以收敛。
+
+为了解决上述问题，人们提出了Leaky ReLU、PReLU、RReLU、ELU、Maxout等ReLU的变种。
+
+Leaky ReLU:
+
+$$f(x)  = \begin{cases}
+    x & \mbox{if } x > 0 \\
+    a x & \mbox{otherwise}
+\end{cases}$$
+
+这里的a是个常数，如果是个vector的话，那么就是PReLU了。
+
+ELU：
+
+$$f(x) = \begin{cases} 
+x & \mbox{if } x \geq 0 \\ 
+a(e^x-1) & \mbox{otherwise}
+\end{cases}$$
+
+## Maxout
+
+Maxout Networks是Ian J. Goodfellow于2013年提出的一大类激活函数。
+
+![](/images/article/maxout.png)
+
+上图是Maxout Networks的结构图。传统的激活函数一般是这样的形式：$$\sigma(Wx+b)$$
+
+Maxout Networks将$$Wx+b$$这部分运算，分成k个组。每组的w和b都不相同。然后对每组计算结果$$z_{ij}$$取最大值。
+
+从这个意义来说，ReLU可以看做是Maxout的特殊情况，即：
+
+$$y=\max(W_1x+b_1,W_2x+b_2)=\max(0,Wx+b)$$
+
+更多的情况参见下图：
+
+![](/images/article/maxout_2.png)
+
+从Maxout Networks的角度来看，ReLU和DropOut实际上是非常类似的。
+
+参考：
+
+http://blog.csdn.net/hjimce/article/details/50414467
+
+Maxout网络学习
 
 ## GLU
 
@@ -338,59 +386,3 @@ resnet中的残差连接，你确定真的看懂了？
 https://mp.weixin.qq.com/s/AyJ_ZtNFTjkWVH3_Kw7wJg
 
 ResNet架构可逆！多大等提出性能优越的可逆残差网络
-
-https://mp.weixin.qq.com/s/2JwgiCuBoluBNYesYp4zAA
-
-ResNet及其变种的结构梳理、有效性分析与代码解读
-
-https://mp.weixin.qq.com/s/CFKRzF9WuDrNVSivMf3YNw
-
-目标检测新突破！了解Res2Net深度多尺度目标检测架构
-
-https://mp.weixin.qq.com/s/1R7XWPqiDBNcUjIE-sF08Q
-
-ResNeXt深入解读与模型实现
-
-https://zhuanlan.zhihu.com/p/100122970
-
-基于Keras框架的深度残差收缩网络代码
-
-https://mp.weixin.qq.com/s/scFnuqx0zOtBvFh0JYA0UA
-
-来聊聊ResNet及其变种
-
-https://mp.weixin.qq.com/s/W4IqXMRZJbQ-7fGEF43-sA
-
-真正的最强ResNet改进，高性能“即插即用”金字塔卷积
-
-# Bi-directional RNN
-
-众所周知，RNN在处理长距离依赖关系时会出现问题。LSTM虽然改进了一些，但也只能缓解问题，而不能解决该问题。
-
-研究人员发现将原文倒序（将其倒序输入编码器）产生了显著改善的结果，因为从解码器到编码器对应部分的路径被缩短了。同样，两次输入同一个序列似乎也有助于网络更好地记忆。
-
-基于这样的实验结果，1997年Mike Schuster提出了Bi-directional RNN模型。
-
->注：Mike Schuster，杜伊斯堡大学硕士（1993）+奈良科技大学博士。语音识别专家，尤其是日语、韩语方面。Google研究员。
-
-论文：
-
-《Bidirectional Recurrent Neural Networks》
-
-下图是Bi-directional RNN的结构示意图：
-
-![](/images/article/Bi_directional_RNN.png)
-
-从图中可以看出，Bi-directional RNN有两个隐层，分别处理前向和后向的时序信息。
-
-除了原始的Bi-directional RNN之外，后来还出现了Deep Bi-directional RNN。
-
-![](/images/article/Deep_Bi_RNN.png)
-
-上图是包含3个隐层的Deep Bi-directional RNN。
-
-参见：
-
-https://mp.weixin.qq.com/s/_CENjzEK1kjsFpvX0H5gpQ
-
-结合堆叠与深度转换的新型神经翻译架构：爱丁堡大学提出BiDeep RNN

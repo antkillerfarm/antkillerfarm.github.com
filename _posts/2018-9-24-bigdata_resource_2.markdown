@@ -281,128 +281,64 @@ https://mp.weixin.qq.com/s/JQaXbt9loJ3k7YFDgyLnog
 
 微信直播聊天室架构演进
 
-# 机器人/无人驾驶参考资源+
+# 知名数据集+
 
-https://mp.weixin.qq.com/s/cLhnFCQdftj6Qi5j-PWDzw
+## 医疗
 
-控制技术详解——控制理论
+https://mp.weixin.qq.com/s/849fLGndmaRvz_oWt6HWtg
 
-https://mp.weixin.qq.com/s/N39CF1M7nV2cwUUMGRnG7g
+一文道尽医学图像数据集与竞赛
 
-控制技术详解——基于模型的控制方法
+https://mp.weixin.qq.com/s/AW5PGDXCTPMf8hwsPxOfjg
 
-https://mp.weixin.qq.com/s/DrWeZOIhJV1dbpg7Ns6gJQ
+NIHCC发布迄今世界最大的CT医学影像数据集
 
-控制技术详解——控制器的类型
+https://mp.weixin.qq.com/s/M3s3z3YnEBvUxpDVGFVKHw
 
-https://mp.weixin.qq.com/s/Q4me1G9B8uwwRIr6dfETEA
+斯坦福吴恩达团队公布最大医学影像数据集
 
-行为轨迹预测技术
+https://mp.weixin.qq.com/s/9TFLE3R7ct0HzaAwOCfkbw
 
-https://mp.weixin.qq.com/s/3ApXC3u13_O8s4QCYxldlQ
+斯坦福联合MIT，发布两类巨大量级X光胸片数据集
 
-基于模块化轻量级网络的道路目标检测
+https://mp.weixin.qq.com/s/OhwDbFfHs-farxUVxRDw4Q
 
-https://mp.weixin.qq.com/s/kAP8MMjTjVyeBPcpY5E1FQ
+吴恩达斯坦福实验室发布MRNet数据集，包含1千多张标注膝关节核磁共振成像
 
-障碍物行为预测技术
+## Other
 
-https://mp.weixin.qq.com/s/VwLNq84Nmg5--yTHlRdSJA
+https://mp.weixin.qq.com/s/VCJoBf2ECdvyRLU7atciYA
 
-深度学习在道路封闭挖掘方案的探索与实践
+浙江大学和帝国理工大学发布的交通速度预测数据集
 
-https://mp.weixin.qq.com/s/sxm2cD7DAhJ6eIhUDvYRKA
+https://mp.weixin.qq.com/s/dsLVogBtYjYeMULWp4QrhA
 
-运动轨迹规划技术
+一网打尽成语歇后语，GitHub新华字典数据库
 
-https://mp.weixin.qq.com/s/hs6uMkRctASmH1YrNOKFdw
+https://zhuanlan.zhihu.com/p/40984645
 
-脱手检测在自动驾驶中的原理及应用
+打通推荐系统与知识图谱: 第一个公开的大规模链接数据集合
 
-https://zhuanlan.zhihu.com/p/83129242
+http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201703/t20170310_1471429.html
 
-自动驾驶近期行为预测和规划的一些文章介绍
+国家统计局：最新县及县以上行政区划代码
 
-https://zhuanlan.zhihu.com/p/83605553
+https://github.com/wecatch/china_regions
 
-移动机器人同时估计自身位姿和物体位姿
+最全最新中国省，市，地区json及sql数据
 
-https://mp.weixin.qq.com/s/M-ihYsQUsT3deekhniixrQ
+https://mp.weixin.qq.com/s/h38VZnInkuOjkgcEmsTtMg
 
-聊聊无人驾驶技术中的路由寻径
+让机器帮你做行测题，UCLA朱松纯团队提出关系和类比视觉推理数据集RAVEN
 
-https://mp.weixin.qq.com/s/eVHAmNn7sHcghLkl-ksnAw
+https://mp.weixin.qq.com/s/8wiHVMhKjzlg8BqMMLLgYw
 
-谈谈“域控制器”
+神经网络也能解数学题，DeepMind发布千万数学题海数据集
 
-https://mp.weixin.qq.com/s/aaN7W1cnlQyl4kPNGvxn_Q
+https://mp.weixin.qq.com/s/YU4tRplyLxFpJdkqclhXyQ
 
-斯坦福大学李飞飞高徒朱玉可博士毕业论文——闭合感知-动作循环: 通用自主机器人探索
+DeepMind大放送：开放4个多物体表征学习数据集，还有一篇智能体新研究
 
-https://mp.weixin.qq.com/s/w8gjhL_NiQSY_OKZ_RXb2g
+https://mp.weixin.qq.com/s/fCoQv6zMQw_8eOwANS16OQ
 
-3D机器人视觉在仓储物流和工业自动化领域的应用
-
-https://mp.weixin.qq.com/s/rA9AAVx7AlNuS1l4IUuG0w
-
-深度学习技术在自动驾驶中的应用
-
-https://mp.weixin.qq.com/s/4_jtb9gv20F6h1Ljw4JwEw
-
-车载以太网通信的“套娃游戏”
-
-https://zhuanlan.zhihu.com/p/86184886
-
-行人的行为意图建模和预测(上)
-
-https://zhuanlan.zhihu.com/p/86185203
-
-行人的行为意图建模和预测(下)
-
-https://zhuanlan.zhihu.com/p/90773462
-
-多传感器数据深度图的融合：最近基于深度学习的方法
-
-https://mp.weixin.qq.com/s/4tOYmCRiFN0xsG6vbedrrg
-
-ADAS系统中的动态目标感知策略（一）
-
-https://mp.weixin.qq.com/s/JT4p03m77ohOufL3JFecvA
-
-从硬件角度剖析自动驾驶，为什么说它是复杂的系统工程？
-
-https://mp.weixin.qq.com/s/UGdZCC80gQRTgHz9GV6USA
-
-MEMS IMU/陀螺仪对准基础
-
-https://mp.weixin.qq.com/s/v3gsmCWSI9pEwRolN8qWNA
-
-基于深度卷积网络的自动驾驶多模态轨迹预测
-
-https://mp.weixin.qq.com/s/R-17JgcGHG67KZ6yRYNFlA
-
-基于Frenet优化轨迹的无人车动作规划方法
-
-https://mp.weixin.qq.com/s/qZwqp5x6yEXbMBHGzevm0g
-
-ACC自适应巡航控制系统介绍
-
-https://zhuanlan.zhihu.com/p/57077589
-
-自动驾驶中路上行人的行为和意图理解及预测
-
-https://zhuanlan.zhihu.com/p/109900137
-
-传感器融合-任务篇
-
-https://zhuanlan.zhihu.com/p/109895639
-
-传感器融合-数据篇
-
-https://mp.weixin.qq.com/s/1sbL2vmugiIlSn_ehIOuig
-
-车载多传感器融合定位方案：GPS +IMU+MM
-
-https://mp.weixin.qq.com/s/5kJfhp3vi9uuSFaeONKfrA
-
-打破传统方法，MIT新芯片帮自动驾驶汽车穿越浓雾
+图神经网络的ImageNet？斯坦福大学等开源百万量级OGB基准测试数据集

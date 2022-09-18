@@ -143,88 +143,38 @@ Windows编程革命简史
 
 2021.1～ 研究TF XLA和TVM。
 
-# 两弹一星++
+# 三国+
 
-https://mp.weixin.qq.com/s/EWU26Xp8Xx4rQDiLnNPLQw
+朱然是朱治的外甥，本姓施，朱治早年无子，过继来的。后朱治有子，爵位传给亲子，朱然凭借个人能力和孙权交情，搏出功名。所以，朱然的儿子叫施绩。
 
-中国人是什么时候知道计算机的?
+---
 
-https://mp.weixin.qq.com/s/gJ315Byg0EtZVldxFp-q3A
+天地英雄气，千秋尚凛然。
 
-“最牛上下铺”！他们竟是舍友（歼-20总设计师杨伟、运-20总设计师唐长红）
+势分三足鼎，业复五铢钱。
 
-https://mp.weixin.qq.com/s/aX0aqG6h_0V0jMnQvJxfLQ
+得相能开国，生儿不象贤。
 
-袁隆平逝世：播下改变中国的种子
+凄凉蜀故妓，来舞魏宫前。
 
-https://mp.weixin.qq.com/s/ro1xdxRqfQo0S7qxMyHZSg
+鲁迅说《三国演义》“欲显刘备之长厚而似伪”，可能这句话引起了误会。他的意思是《三国演义》把刘备说得太好，结果看起来像是假的或者是做作。并不是说刘备本人是伪君子或者做作。
 
-这一次，外媒集体为袁隆平刷屏
+---
 
-http://news.sina.com.cn/o/2018-06-25/doc-iheirxyf5801793.shtml
+https://www.zhihu.com/answer/540540030
 
-儿子智力残疾、妻女精神分裂…77岁核弹老人魏世杰的故事，让无数观众为之动容
+蜀汉当时如果不全力进攻关中，慢慢经营南中的话，会那么快覆灭吗？
 
-https://mp.weixin.qq.com/s/vuNGjU3lPvw_k0-96v3Q6g
+---
 
-和袁隆平是同学！这位91岁院士把一切献给“吃瓜群众”...（吴明珠）
+《蒲元别传》是姜维的代表作。蒲元，是中国历史上极少能够在文人所编写的历史文献资料中留下自己姓名和事迹的工匠之一，这大概是因为蒲元随军作战的缘故吧。
 
-https://mp.weixin.qq.com/s/ey3uNb3SAUR70A86-E1klg
+---
 
-中国制造高精度机床的困难在哪里？
+出师一表真名世，千载谁堪伯仲间！——陆游《书愤》
 
-https://mp.weixin.qq.com/s/QSS7dIe1MeIOBu6tko9maQ
+读诸葛孔明《出师表》不堕泪者，其人必不忠也；读李密《陈情表》不堕泪者，其人必不孝也；读韩退之《祭十二郎文》不堕泪者，其人必不友。——宋 赵与时《宾退录》
 
-美国人万万没想到，这个不起眼的留学生，将会成为中国雷达之父（毕德显）
+或为出师表，鬼神泣壮烈！——文天祥《正气歌》
 
-https://zhuanlan.zhihu.com/p/109751703
-
-为了研究，他骨折14处（吴天一）
-
-https://mp.weixin.qq.com/s/_FKBOk6IrxTixo2YrowLQw
-
-这块来自月球的小石头，撞出了他的“月球梦”（欧阳自远）
-
-https://www.zhihu.com/answer/1950534833
-
-民国工业成就
-
-https://mp.weixin.qq.com/s/LzMaq9LDADzUxc-8VrOcsA
-
-她们从安娜堡走来：巴伯奖学金和中国女留学生先驱
-
-https://www.163.com/dy/article/GIGUJPNF0534A4RZ.html
-
-原子弹核心部件操刀人原公浦最后的日子：癌痛时他唱《东方红》
-
-https://zhuanlan.zhihu.com/p/397501035
-
-《逐梦蓝天》：他是将门虎子，23岁毛主席为他题词，享年90岁（叶正大）
-
-https://mp.weixin.qq.com/s/mkUxG7UMTPyeXnFzPFhNRw
-
-追怀郑哲敏：一生波折，留些话给后人
-
-https://mp.weixin.qq.com/s/-9Q5U50IwtEiv6MX5Z7NuA
-
-一张老照片：九十年前的中国女留学生
-
-https://www.zhihu.com/question/48422826
-
-茅以升晚年，10年失两爱妻，六子女怨恨责备，临终只有幼女陪伴
-
-http://www.zjgrrb.com/zjzgol/system/2017/08/28/030351671.shtml
-
-80年前， 钱塘江建桥克服三重难关
-
-https://new.qq.com/omn/20210518/20210518A020HP00.html
-
-杭州钱江大桥，面对日军步步逼近，不得不炸毁的经历
-
-https://mp.weixin.qq.com/s/wEqbmkJuIGjqmshE96woAQ
-
-林巧稚诞辰120周年：终身未婚的“万婴之母”
-
-https://mp.weixin.qq.com/s/TQPcOAXvjo3MXFeWN4OvhA
-
-治学报国：民国时期的统计留学生
+知天易，逆天难；观今夜天象，知天下大事。——囧

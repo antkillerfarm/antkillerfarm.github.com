@@ -283,76 +283,12 @@ https://www.zhihu.com/question/406149352
 
 如何看待最新的国际视频编解码标准H.266?
 
-# Machine Learning之Python篇++
+## 参考
 
-https://mp.weixin.qq.com/s/TglQzG1iE0keEGLKZ-pGIg
+https://zhuanlan.zhihu.com/p/559429803
 
-Python数据处理实战——使用Scikit-Learn进行多类文本分类
+视频压缩的原理-发展-应用，手把手教你学习codec
 
-https://mp.weixin.qq.com/s/EL1lST59dVibr6vIbqkdzw
+https://blog.csdn.net/vn9PLgZvnPs1522s82g/article/details/106152333
 
-如何用200行Python代码换张脸
-
-https://mp.weixin.qq.com/s/440osIoULBRDOHq7Bk8awA
-
-一文带你了解Python集合与基本的集合运算
-
-https://mp.weixin.qq.com/s/tJwgNXKVwoJby-WkeMeBqQ
-
-40行Python代码实现“旅行者困境“演化过程
-
-https://mp.weixin.qq.com/s/-s5K8gl4Xdjh_1xgTn9PZg
-
-维基百科中的数据科学：手把手教你用Python读懂全球最大百科全书
-
-https://mp.weixin.qq.com/s/LiilfmvA5YUaY3QUQD6odA
-
-如何用Python将数据预处理速度提升2至6倍？
-
-https://mp.weixin.qq.com/s/4s7lDKlQjV1mUoVv558Y7Q
-
-面向云数据库，超低延迟文件系统PolarFS诞生了
-
-https://mp.weixin.qq.com/s/VfmudolvWzQN4ghgnI2rZA
-
-机器学习中Python库的3个简单实践——你的图片将由你来创造
-
-https://mp.weixin.qq.com/s/goxciguoxcamTo2WyUd1Lg
-
-大吉大利，今晚如何用Python解锁“吃鸡”的正确姿势
-
-https://mp.weixin.qq.com/s/dQ75O2h1orGzKcaCSDWshQ
-
-自然语言处理是如何工作的？一步步教你构建NLP流水线
-
-https://mp.weixin.qq.com/s/dwxTla5iiYKvELrpbWf1yQ
-
-8个Python高效数据分析的技巧
-
-https://mp.weixin.qq.com/s/TYiqZvY25qxHcmEXRpqO5Q
-
-如何用Python做自动化特征工程
-
-https://mp.weixin.qq.com/s/lfkTryraR22INdPzR0sidg
-
-基于协同过滤的推荐系统实战
-
-https://mp.weixin.qq.com/s/n3gaWuJCt945ycmliJatpA
-
-python语音识别指南终极版
-
-https://mp.weixin.qq.com/s/pDTbiS8xFH0llUBaN1Mb_Q
-
-如何用Python写一个贪吃蛇AI
-
-https://mp.weixin.qq.com/s/WdYa7Q-yA-s_EO59YkYbqw
-
-7个基本机器学习算法Python实现
-
-https://mp.weixin.qq.com/s/EqLzNzzMcwq5SEyBoTsuug
-
-11种NLP文本预处理Python代码，简洁实用
-
-https://mp.weixin.qq.com/s/mCUdK4i6XGEyaWNCIWA-wQ
-
-集五福，我用Python
+从HEVC到通用视频编码的下一代视频压缩技术

@@ -9,6 +9,26 @@ category: DL
 
 # AutoEncoder（续）
 
+## Stacked AutoEncoders
+
+AE不仅可以单独使用，还可以堆叠式的使用。
+
+![](/images/img2/Stacked_SparseAE_Features1.png)
+
+上图是个普通的AE，其中的hidden层可以看作是input的Features，不妨称作Features I。
+
+![](/images/img2/Stacked_SparseAE_Features2.png)
+
+将Features I作为input，送进另一个AE，得到Features II。依此类推，就可以形成一个深度网络，这种方法叫做Stacked Auto-encoder Networks（SANs）。
+
+这实际上，就是Relu发明之前，预训练DNN的标准做法。经过SANs预训练的网络，每层的参数都被归一化，即使使用sigmoid激活函数，也没有严重的梯度消失现象，从而使DNN的训练成为了可能。
+
+参考：
+
+http://ufldl.stanford.edu/wiki/index.php/Stacked_Autoencoders
+
+Stacked Autoencoders
+
 ## Deep AE
 
 一层的AE有时可能不能很好的进行数据降维，这个时候就可以使用如下所示的Deep AE：
@@ -273,41 +293,3 @@ https://www.zhihu.com/question/33952003
 https://mp.weixin.qq.com/s/x_y_yygV0L5FdqfKM9xzig
 
 Doc2vec原理解析及代码实践
-
-## FastText
-
-Word2Vec作者Mikolov加盟Facebook之后，提出了文本分类新作FastText。
-
-FastText模型架构和Word2Vec中的CBOW模型很类似。不同之处在于，FastText预测标签，而CBOW模型预测中间词。
-
-Github：
-
-https://github.com/facebookresearch/fastText
-
-FastText的论文其实有两篇：
-
-《Bag of Tricks for Efficient Text Classification》
-
-这篇就是上述文本分类的论文。
-
-《Enriching Word Vectors with Subword Information》
-
-这篇是根据词根改进词向量的论文。因此，有的blog说，使用FastText生成词向量，实际上就是指的这篇文章。
-
-参考：
-
-http://www.algorithmdog.com/fast-fasttext
-
-超快的 fastText
-
-https://mp.weixin.qq.com/s/tXgF7rQdZm3IFAluMU5ywg
-
-fastText之源码分析
-
-https://mp.weixin.qq.com/s/S4RGicXwZqis6vQFpB31qQ
-
-Bag of Tricks for Efficient Text Classification
-
-https://mp.weixin.qq.com/s/eq1I92rjIAWEpYw-1fEHeQ
-
-从Facebook AI Research开源fastText谈起文本分类：词向量模性、深度表征和全连接

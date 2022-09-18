@@ -55,6 +55,8 @@ http://www.brendangregg.com/linuxperf.html
 
 ![](/images/img4/Linux-storage-stack-diagram_v4.10.png)
 
+BSP: Board Support Package
+
 参考：
 
 https://mp.weixin.qq.com/s/-iCuxQjSghtDGaPMqaDSgQ

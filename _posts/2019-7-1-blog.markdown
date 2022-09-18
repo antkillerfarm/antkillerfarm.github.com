@@ -9,6 +9,12 @@ category: my story
 
 # Blog维护日志
 
+blog的体例介于日记和文章之间。倘以日记来弄，时间长了，不免成了一笔流水账。所以根据主题时刻增补，似乎是更好的办法，尤其git更擅长做这个。因此，如果老文章出现了时空穿越的新内容，再正常不过了。
+
+---
+
+2022.9.11 添加Anti Japanese War和Russia分类。
+
 2022.8.12 添加Education分类。
 
 2022.5.23 MathJax的CDN换了几个，还是不满意，现在暂时用字节跳动的CDN吧。
@@ -189,60 +195,116 @@ https://www.zhihu.com/question/444819295
 
 控制周期越短，控制效果是否越好？
 
-# 抗日战争++
+# 上古软件开发+
 
-现代的影视作品大多集中在对日军早期疯狂的描述，其实在抗日战争后期，敌后战场的日军已经沦落到快要当叫花子的地步。
+https://mp.weixin.qq.com/s/movz5aesYdZZZHle-hHRIw
 
-在华北与山东，很多县城驻扎的日军窘迫到吃高粱面饼遭当地富农鄙视的，还有卖大衣换地瓜的......
+诞生于穿孔纸带时期的语言，ALGOL 60今年60岁了
 
-后方给据点里日军送补给物资，要给八路交过路费，不然别说物质，连押运的日军也到不了据点。
+https://mp.weixin.qq.com/s/aYGcJaLwbuXzjI5z1Crsrw
 
-45年的时候，为了和北平鬼子粮食换武器方便，当地县委在清华园附近支了个早点摊……山东八路和鬼子双方约好的，多少条步枪和子弹换多少斤白面，多少挺轻重机枪和掷弹筒换多少斤猪肉，大炮不能换。鬼子保证拿来换的武器是真金白银，八路保证拿来换的粮食不短斤缺两。万毅的滨海支队45年专门下文件要求地方部队与日军换武器弹药一律上缴统一分配。
+LeCun自曝使用C语言23年之久，2年前才上手Python，还曾短暂尝试Lua
 
-45年农历正月冀县的鬼子打算吃大户，集中了两个小队外带一挺重机枪去吃当地维持会长的大户，然后因为饿的体力不支被维持会长手下在大院里用棍子一顿胖揍，最后装备留下，人管了顿羊肉饺子扔了出去。
+https://mp.weixin.qq.com/s/vBFOQjJr27AeRsqCej85iA
 
-能给地主扛活混口饱饭吃的鬼子算是命好的，诸城的鬼子要找老百姓讨野菜吃野菜团子，吃野菜团子的时候还被拍下来见报了。
+70年前，在苏联第一家AI LAB从事AI研究是种什么体验？
 
-因为粮食不足鬼子还有自己开荒种田的。然后当地有老百姓往地里放羊，鬼子还亲自带烟酒上门求别在那儿放了。
+https://mp.weixin.qq.com/s/7cf14CEDa-LHFvO8gyedzg
 
-南宫县城里的鬼子到撤退日子都过的不错。因为他们45年过了二月就利用自己的机器和技术替老百姓造农机，还出租军马当大牲口帮当地农民耕地。
+为什么老编辑器Vim这么难用，却很受欢迎？
 
-44年底，豫北某地，鬼子凑钱买面买肉置办年货，中队长亲自带人给之前死难的八路家属送上门……那个中队长和当地八路头头面谈的时候，还不无感慨的说：幸亏前任和八路处得不错，没发生太多摩擦事件，不然真是坑死爹了。（他前任最大的手笔是一次性卖掉四挺机枪）。
+https://mp.weixin.qq.com/s/b-34Y230B_I56Epf64hYDQ
 
-山东伪警察抓了人，八路找皇军协商放人，完了管中队长一顿酒，给中队长喝得嚎啕大哭的。事后八路说，看见肉，皇军的眼都绿了；还有馋得受不了偷吃老百姓的鸡，老百姓找上门来讨，没钱只好赔杆枪给人的。完了还不无遗憾的跟那老百姓说，这一杆枪在八路那里能换多少斤面......
+宇宙第一IDE到底是谁？
 
----
+https://mp.weixin.qq.com/s/gSW5lxCoo9JkH1JRp6hfzA
 
-冀中军区是八路军的一个二级军区，司令员吕正操，下属5个军分区，1938年10月最盛时拥有44个县（其中22个县完全控制）800万人，部队6.3万。因为富庶而被八路军称为中国的乌克兰，日军则称其为八路的兵站。五一大扫荡就是日军为摧毁这个八路兵站而发动的战役。
+30年前未曾发行的任天堂红白机游戏，被这个团队从21张软盘中重新恢复了，还是3D的
 
-https://www.zhihu.com/question/466833640
+https://mp.weixin.qq.com/s/E3_UrGoN1uSmD_4NYG-YWw
 
-五一大扫荡给敌后抗日根据地带来的那么大的损失，日寇为何没有继续推广这种“经验”呢？
+来看看比尔盖茨当年写的BASIC解释器源代码吧，你就知道泰勒级数有什么用了
 
----
+https://mp.weixin.qq.com/s/RzrQpJ8M4SoY6YXhUQNWHg
 
-日军战报一直有个奇怪现象：
+你上世纪写的代码现在还work吗？挑战者：我需要一个读磁带的机器
 
-平型关死伤几十人，一个中队长战死，一个失踪。
+https://www.zhihu.com/question/420656795
 
-黄土岭阵亡三个还是几个，阿部中将赫然在列。
+有哪个高手可以解读“世界黑客编程大赛第一名的作品（97年Mekka ’97 4K Intro）”?
 
-关家垴据说也不到百人，大队长不幸殉国。。。
+https://mp.weixin.qq.com/s/21eCFfRZYyTstnw777-Fhg
 
-大概和日式RPG里差不多，越牛逼的boss体型越大，所以比较招子弹吧。。。
+Java的战争（Oracle vs Google）
 
----
+https://mp.weixin.qq.com/s/af_MzLovqnt5JemXBQGdxg
 
-《有一类战犯叫参谋》里曾说过一件事，身为联队长(团长)的东条英机，在部下来借钱的时候，只好让太太去当衣服来为部下救急，而这在国军是几乎不可想象的。作者说国军打不过日军的原因之一，就是日军的高级军官没有国军高级军官有钱。
+Java的战争(后续)
 
----
+https://mp.weixin.qq.com/s/oeusDoCSYiwwX61H_6wQHw
 
-当年东史郎写过，日军也强调军纪。
+浏览器（内核）发展史
 
-他曾经去商店搜集一大包东西，象征性留下一点零钱（一分日元？）。
+https://www.zhihu.com/question/19553117
 
-只要留下一点零钱，就不算抢。
+为什么所有主流浏览器的User-Agent都是Mozilla/x.0开头？
 
-解释起来，就是语言不通，不懂市价……
+https://www.zhihu.com/question/439434803/answer/1679210108
 
-愤怒的中国店员，直接把那一分钱扔出去……
+如何评价大连车务段现在车系统瘫痪，“全力攻关一昼夜”恢复Flash运行?
+
+https://mp.weixin.qq.com/s/YOcKv4InA1G7sdERanGZSA
+
+《是男人就下100层》真的有隐藏剧情！
+
+https://mp.weixin.qq.com/s/popvQv-CM7--5ByTMpeaxA
+
+编程语言考古：曾经影响一代人的BASIC，原来还有前身
+
+https://mp.weixin.qq.com/s/K-KIA18cCj6ANM4Sb7fEvw
+
+50年长盛不衰，SQL为什么如此成功？
+
+https://mp.weixin.qq.com/s/3ZszI7PupWsuTvy69BwPnw
+
+“C语言之父”40年前搞的操作系统复活！Linux、Windows都借鉴过它（Plan 9）
+
+https://mp.weixin.qq.com/s/ywTkMMP6ysBfByIXW3_xeQ
+
+全世界下载量超100亿，curl怎样成为影响世界的开源项目？
+
+https://mp.weixin.qq.com/s/lqGCGj1EuwRvg6S9Dt3yEg
+
+PDF之父、Adobe联合创始人离世，乔布斯收购未果给了他第一桶金
+
+https://mp.weixin.qq.com/s/x-N7n7RkrvcCXT4C7UxPSQ
+
+Linux之父：财务自由以后，我失眠了！
+
+https://mp.weixin.qq.com/s/wIIQQibtFR3cecOpmNenvQ
+
+YouTube博主实测病毒之王“熊猫烧香”，当年是它太强还是杀毒软件太弱？
+
+https://zhuanlan.zhihu.com/p/38973085
+
+史上最烂的开发项目长啥样：苦撑12年，600多万行代码...
+
+https://zhuanlan.zhihu.com/p/53623636
+
+我的电子邮件发不到500英里以外！
+
+https://mp.weixin.qq.com/s/hgoZuG0Kp5PIU7pVajjX-Q
+
+西祠胡同被一元钱拍卖：别了，青春里的BBS时代
+
+https://www.zhihu.com/question/20722310
+
+计算机底层是如何访问显卡的？
+
+https://mp.weixin.qq.com/s/bELFDhgmhzSPEmdIQqTvDA
+
+《QQ堂》停运冲上热搜：90后的青春落幕
+
+https://www.zhihu.com/question/545441391
+
+如何看待微信安装包11年膨胀575倍？为什么现在的应用安装包越来越大了？

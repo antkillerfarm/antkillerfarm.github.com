@@ -148,6 +148,19 @@ https://zhuanlan.zhihu.com/p/21314708
 
 C++模板进阶指南：SFINAE
 
+## 打印vector的N种方法
+
+```cpp
+auto vec = make_index_vector(std::make_index_sequence<10>());
+for(auto i : vec) {std::cout << i << ' ';}
+std::cout << std::endl;
+std::iota(vec.begin(), vec.end(), 999);
+std::copy(vec.begin(), vec.end(), std::ostream_iterator<int>(std::cout, " "));
+std::cout << std::endl;
+std::for_each(std::begin(vec),std::end(vec),[](int n){std::cout<<n<<" ";});
+std::cout << std::endl;
+```
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/23016264
@@ -397,11 +410,3 @@ GeoGebra官网包含了很多网友分享的几何绘图，所以常用图形就
 官网：
 
 http://maxima.sourceforge.net/
-
-# Lazarus
-
-Lazarus为开放的IDE，且在Linux下表现良好，目前被中国计算机学会指定为NOI系列竞赛的Pascal语言推荐IDE。
-
-官网：
-
-https://www.lazarus-ide.org/

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Transifex与GTK文档翻译, 外设接口杂谈, 中文编码格式问题, Graphics Framework
+title:  Transifex与GTK文档翻译, 外设接口杂谈, Graphics Framework
 category: technology 
 ---
 
@@ -13,7 +13,9 @@ category: technology
 
 最近忽然对GTK+产生了浓厚的兴趣，打算研究一下。学习一个新东西，最好的方法就是先阅读一下它的文档。应该说GTK的文档虽然比不了MSDN，但也颇为详尽。主要的问题在于文档都是英文的，阅读起来比较吃力。
 
-考虑到GTK已经有15年的历史，所以试着在网上搜了一下参考手册的中文版，结果找到了这个网址：http://code.google.com/p/gtk-doc-cn/
+考虑到GTK已经有15年的历史，所以试着在网上搜了一下参考手册的中文版，结果找到了这个网址：
+
+http://code.google.com/p/gtk-doc-cn/
 
 这是一个叫yetist的人发起的翻译项目。
 
@@ -42,6 +44,16 @@ yetist同学还同时主导了一系列的GTK文档翻译项目。有兴趣的�
 http://imtx.me/
 
 他也是ubuntu-tweak的作者。我经常用这个软件清理磁盘。
+
+---
+
+https://toshiocp.github.io/Gobject-tutorial/index.html
+
+GObject Tutorial for beginners
+
+https://www.cnblogs.com/silvermagic/p/9087883.html
+
+Glib之GObject简介
 
 ## GTK文档翻译流程
 
@@ -119,9 +131,11 @@ http://docs.transifex.com/client/
 
 这里不知是否存在bug，有的时候这个命令需要运行两次，第1次失败，第2次就可以看到最终的文档了。
 
-# GLib的Socket操作
+# GIO网络应用开发
 
-示例如下：
+GIO提供了以GSocket为首的低级API，和以GSocketClient、GSocketConnection为首的高级API。
+
+高级API的使用示例如下：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/glib/network
 
@@ -193,22 +207,6 @@ https://zhuanlan.zhihu.com/p/201075632
 
 什么是I3C总线？它和I2C和SMBus是什么关系？
 
-# 中文编码格式问题
-
-常用的中文编码格式，主要包括大陆的GB系列和台湾的BIG5系列。
-
-GB系列按照发布时间的顺序，又包括GB2312、GBK和GB18030三种格式。越晚的编码格式，其包含的字符数越多，但同时又兼容之前的编码格式。
-
-除此之外，能表示中文的还有Unicode系列。比如，Java内部使用的UTF16BE，以及网络上用的比较多的UTF8。
-
-需要指出的是，由于各种编码格式的字节数不尽相同，单独对文章中的某些字段进行转码，常会由于字节对齐的问题，而产生异常的结果。最好是在一种编码下生成整个文档之后，统一转换成另一种格式。
-
-参考：
-
-https://mp.weixin.qq.com/s/q-VmuWrsKSBMhWxjafPsng
-
-Unicode与UTF-8的区别
-
 # Graphics Framework
 
 ## Linux Graphics Framework
@@ -250,6 +248,8 @@ Double Buffering则使用两个缓冲区，一个前置Buffer，一个后置Buff
 Triple Buffering使用一个前置缓存和两个后置缓存。在着色完第一个后置缓冲区的数据后，立即开始处理第二个后置缓冲区，没有Vsync等待的时间。
 
 Gralloc
+
+OpenCore：Android系统中早期内置的多媒体框架（是Google收购的PacketVideo公司的），后续Android又增加了StageFright框架。
 
 https://source.android.google.cn/devices/graphics
 

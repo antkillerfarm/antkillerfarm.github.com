@@ -97,10 +97,6 @@ https://mp.weixin.qq.com/s/gT0P5hXry1Yfs_TbIma18A
 
 基于1R1V的L2级ADAS功能（一）：TJA&ICA系统简介
 
-https://mp.weixin.qq.com/s/BFNaEBa8KwvRBK_mSunXjw
-
-MPC与LQR比较
-
 https://mp.weixin.qq.com/s/8n_o83A-5AjG3YCPG4FOgA
 
 Apollo自动定位技术——三维几何变换和坐标系介绍

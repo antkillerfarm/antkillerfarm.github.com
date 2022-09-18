@@ -9,7 +9,63 @@ category: DL
 
 # 花式卷积
 
-## 分组卷积（续）
+## Dilated convolution（续）
+
+>Fisher Yu，密歇根大学本硕+普林斯顿大学博士。   
+>个人主页：   
+>http://www.yf.io/
+
+和Deconvolution类似，Dilated convolution也可以采用space_to_batch和batch_to_space操作，将之转换为普通卷积。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/28822428
+
+Paper笔记：Dilated Residual Networks
+
+https://mp.weixin.qq.com/s/1lMlSMS5xKc8k0QMAou45g
+
+重新思考扩张卷积！中科院&深睿提出新型上采样模块JPU
+
+https://mp.weixin.qq.com/s/NjFdu6iP3Sn9GbDhrbpisQ
+
+感受野与分辨率的控制术—空洞卷积
+
+https://zhuanlan.zhihu.com/p/94477174
+
+CNN真的需要下采样（上采样）吗?
+
+## 分组卷积
+
+![](/images/article/AlexNet.png)
+
+Grouped Convolution最早在AlexNet中出现，由于当时的硬件资源有限，训练AlexNet时卷积操作不能全部放在同一个GPU处理，因此作者把feature maps分给2个GPU分别进行处理，最后把2个GPU的结果进行融合。
+
+![](/images/img3/group_conv.png)
+
+上图是Grouped Convolution的具体运算图：
+
+- input分成了g组。每组的channel数只有全部的1/g。（上图中g=2）
+
+- weight和bias也分成了g组。每组weight的input_num和output_num都只有普通卷积的1/g。也就是每组weight的尺寸只有原来的$$1/g^2$$，g组weight的总尺寸就是原来的1/g。
+
+- 每组input和相应的weight/bias进行普通的conv运算得到一个结果。g组结果合并在一起得到一个最终结果。
+
+可以看出，Grouped Convolution和普通Convolution的input/output的尺寸是完全一致的，只是运算方式有差异。由于group之间没有数据交换，总的计算量只有普通Convolution的1/g。
+
+在AlexNet的Group Convolution当中，特征的通道被平均分到不同组里面，最后再通过两个全连接层来融合特征，这样一来，就只能在最后时刻才融合不同组之间的特征，对模型的泛化性是相当不利的。
+
+为了解决这个问题，ShuffleNet在每一次层叠这种Group conv层前，都进行一次channel shuffle，shuffle过的通道被分配到不同组当中。进行完一次group conv之后，再一次channel shuffle，然后分到下一层组卷积当中，以此循环。
+
+![](/images/img2/ShuffleNet.png)
+
+论文：
+
+《ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices》
+
+代码：
+
+https://github.com/megvii-model/ShuffleNet-Series
 
 ![](/images/img2/ShuffleNet_2.png)
 
@@ -222,81 +278,3 @@ https://mp.weixin.qq.com/s/w43wfF1dKMu65as6lAlrsg
 https://mp.weixin.qq.com/s/PKSrgy7KdtVUv4EXVDyiOw
 
 再思考可变形卷积
-
-## 3D卷积
-
-3D卷积一般用于视频（2D图像+1D时序）和医学影像（3D立体图像）的分析处理中。
-
-![](/images/article/conv_3d.png)
-
-![](/images/img2/conv3d.gif)
-
-如上两图所示，3D卷积的kernel不再是2D的，而是3D的。
-
-它和多通道卷积的区别在于：
-
-多通道卷积不同的通道上的卷积核的参数是不同的，而3D卷积则由于卷积核本身是3D的，所以这个由于“深度”造成的看似不同通道上用的就是同一个卷积。
-
-3D卷积可以转化为2D卷积，方法如下图：
-
-Prepare Input：
-
-![](/images/img4/conv3d.png)
-
-Prepare Kernel：
-
-![](/images/img4/conv3d_2.png)
-
-Compute Output：
-
-![](/images/img4/conv3d_3.png)
-
-论文：
-
-《A two-stage 3D Unet framework for multi-class segmentation on full resolution image》
-
-![](/images/img2/UNet-3D.jpg)
-
-上图是一个用于CT图像的语义分割网络。其结构仿照UNet，故被称作UNet-3D。
-
-处理大型高分辨率3D数据时的一个常见问题是，由于计算设备的存储容量有限，输入深度CNN的体积必须进行裁剪（crop）或降采样（downsample）。这些操作会导致输入数据 batches 中分辨率的降低和类不平衡的增加，从而降低分割算法的性能。
-
-受到图像超分辨率CNN（SRCNN）和self-normalization（SNN）的架构的启发，我们开发了一个两阶段修改的Unet框架，它可以同时学习检测整个体积内的ROI并对体素进行分类而不会丢失原始图像解析度。对各种多模式音量的实验表明，当用简单加权的模子系数和我们定制的学习程序进行训练时，该框架显示比具有高级相似性度量标准的最先进的深CNN更好的分割性能。
-
-除了方形的3D卷积之外，还有球形的3D卷积：
-
-![](/images/img3/sph3d.png)
-
-上图是球卷积在点云处理中的应用。论文：
-
-《Spherical Kernel for Efficient Graph Convolution on 3D Point Clouds》
-
-参考：
-
-https://zhuanlan.zhihu.com/p/21325913
-
-3D卷积神经网络Note01
-
-https://zhuanlan.zhihu.com/p/21331911
-
-3D卷积神经网络Note02
-
-https://zhuanlan.zhihu.com/p/31841353
-
-3D CNN阅读笔记
-
-https://mp.weixin.qq.com/s/tcuyp4SK_9zXZKZtUu8h9Q
-
-从2D卷积到3D卷积，都有什么不一样
-
-https://zhuanlan.zhihu.com/p/25912625
-
-C3D network: 用于视频特征提取的3维卷积网络
-
-https://zhuanlan.zhihu.com/p/26350774
-
-SCNN-用于时序动作定位的多阶段3D卷积网络
-
-https://www.jiqizhixin.com/articles/2016-08-03
-
-FusionNet融合三个卷积网络：识别对象从二维升级到三维

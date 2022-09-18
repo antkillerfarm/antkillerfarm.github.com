@@ -69,6 +69,10 @@ https://mp.weixin.qq.com/s/yH3PzGEFopbpA-jw4MythQ
 
 TCP三次握手原理，你真的理解吗？
 
+https://www.zhihu.com/question/50646354
+
+TCP中断可以用3次挥手吗？
+
 https://mp.weixin.qq.com/s/ct3wknW9b9oZBoXwZTh-Fg
 
 面试官问我：一个TCP连接可以发多少个HTTP请求？我竟然回答不上来...

@@ -141,6 +141,19 @@ https://www.zhihu.com/question/47503655
 
 ---
 
+中国第一批互联网创业者有不少来自惠多网，马化腾是深圳的DE站站长，金山的求伯君也是一个站长，好像丁磊也玩。
+
+当时中国的互联网出口有两个，一个是中科院的网络，一个是教育科研网。教育网的国际出口在清华大学，清华到中科院也就三四公里的路，但清华的电脑要连上曙光站，得从国际出口去美国兜一圈回来，既慢又不稳定。
+
+清华的学生一直熬到1995年8月，有个网名ACE的用户，一怒之下在自己实验室的386电脑上装了套台湾的BBS软件，把站点起名“水木清华”。水木清华BBS是中国大陆第一个同时在线超过100人的“大型”网站。
+
+
+https://www.zhihu.com/question/19848288
+
+中国最早的论坛（BBS）是哪个？
+
+---
+
 https://github.com/chrislgarry/Apollo-11
 
 Apollo 11登月代码成Github热度第一
@@ -216,39 +229,3 @@ https://www.w3cschool.cn/article/leijuncode
 https://mp.weixin.qq.com/s/7AtuIcic3ubzYAHnkDpONA
 
 雷军：穿越人生低谷的感悟
-
-https://mp.weixin.qq.com/s/movz5aesYdZZZHle-hHRIw
-
-诞生于穿孔纸带时期的语言，ALGOL 60今年60岁了
-
-https://mp.weixin.qq.com/s/aYGcJaLwbuXzjI5z1Crsrw
-
-LeCun自曝使用C语言23年之久，2年前才上手Python，还曾短暂尝试Lua
-
-https://mp.weixin.qq.com/s/vBFOQjJr27AeRsqCej85iA
-
-70年前，在苏联第一家AI LAB从事AI研究是种什么体验？
-
-https://mp.weixin.qq.com/s/7cf14CEDa-LHFvO8gyedzg
-
-为什么老编辑器Vim这么难用，却很受欢迎？
-
-https://mp.weixin.qq.com/s/b-34Y230B_I56Epf64hYDQ
-
-宇宙第一IDE到底是谁？
-
-https://mp.weixin.qq.com/s/gSW5lxCoo9JkH1JRp6hfzA
-
-30年前未曾发行的任天堂红白机游戏，被这个团队从21张软盘中重新恢复了，还是3D的
-
-https://mp.weixin.qq.com/s/E3_UrGoN1uSmD_4NYG-YWw
-
-来看看比尔盖茨当年写的BASIC解释器源代码吧，你就知道泰勒级数有什么用了
-
-https://mp.weixin.qq.com/s/RzrQpJ8M4SoY6YXhUQNWHg
-
-你上世纪写的代码现在还work吗？挑战者：我需要一个读磁带的机器
-
-https://www.zhihu.com/question/420656795
-
-有哪个高手可以解读“世界黑客编程大赛第一名的作品（97年Mekka ’97 4K Intro）”?

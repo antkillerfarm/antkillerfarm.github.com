@@ -78,6 +78,10 @@ GtkScale有两个容易混淆的事件：change-value和value-changed。
 
 ## 资源
 
+GTK中最关键的GLib，是由Tim Janik设计的。
+
+---
+
 https://blog.csdn.net/taiyang1987912/article/category/5778511
 
 一个GTK的专栏
@@ -212,11 +216,3 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gtk_browser
 http://imtx.me/archives/1124.html
 
 中摘录的，原始的版本基于Gtk 2.x，现在改用Gtk 3.x。
-
-# GIO网络应用开发
-
-GIO提供了以GSocket为首的低级API，和以GSocketClient、GSocketConnection为首的高级API。
-
-高级API的使用示例如下：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/glib/network

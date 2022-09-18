@@ -47,10 +47,6 @@ https://mp.weixin.qq.com/s/Ja6DxqadbFBIWUk44DjGqw
 
 密集场景中自动驾驶车辆的仿真与导航
 
-https://mp.weixin.qq.com/s/pMnbVWDDVgIdFpzkfSUd5Q
-
-时延MPC自主车辆协同控制算法与仿真
-
 https://zhuanlan.zhihu.com/p/57169482
 
 自动驾驶研发模拟仿真系统的工作介绍
@@ -258,10 +254,6 @@ https://mp.weixin.qq.com/s/uy16CGG01o3BfYB7Qtvzcg
 https://mp.weixin.qq.com/s/NH09Pvh8vKtOGrS6Lwq3Tw
 
 自动驾驶中行为预测的一些根本问题和最新方法
-
-https://mp.weixin.qq.com/s/UAPbNq_KNWCFd7p8U8HnYQ
-
-模型预测控制（MPC)
 
 https://zhuanlan.zhihu.com/p/93828943
 

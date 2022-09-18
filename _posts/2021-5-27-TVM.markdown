@@ -267,6 +267,18 @@ https://zhuanlan.zhihu.com/p/337087273
 
 TinyML-TVM是如何驯服Tiny的（下）
 
+## VTA
+
+VTA：Versatile Tensor Accelerator
+
+https://mp.weixin.qq.com/s/1oDVo7eGMGYODRd00OxpIw
+
+陈天奇团队推出开源AI芯片栈VTA，降低芯片设计门槛
+
+https://zhuanlan.zhihu.com/p/39635145
+
+VTA: 开源AI芯片栈
+
 ## 技术变革和展望
 
 ![](/images/img4/TVM.jpg)

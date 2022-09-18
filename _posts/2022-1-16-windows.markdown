@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Win10/11历险记, Kannel, ZeroC ICE, 分布式ID生成器
+title:  Win10/11历险记, 区块链
 category: technology 
 ---
 
@@ -37,168 +37,202 @@ https://docs.microsoft.com/zh-cn/windows-server/storage/disk-management/change-a
 
 最近电脑更新了Win11，升级顺利，暂时无感。
 
-# Kannel
+# 区块链
 
-Kannel是一个开源的WAP&SMS网关项目。
+比特币闻名已久，大概2009年时，我就听说过，然而一直没有研究它的原理。直到最近比特币大火，方才有所研究。不过这个东西，不太合我的研究兴趣，所以也就简单写一些吧。
 
-官网：
+## 结构
 
-http://www.kannel.org/
+![](/images/img2/blockchain.png)
 
-这里提到这个项目，并非它有多么重要——实际上它从2010年之后就几乎没有更新了，最新的版本定格在2014年。它所代表的WAP已经无人问津，至于SMS吧，似乎又用不到这么复杂的框架。
+上图是区块链的结构图。它是由若干个Block链接而成的单向链表。
 
-但我之所以要提它，主要在于情怀。2007年底的时候，公司给我安排了一个在App中集成彩信发送功能的任务。当时由于能力尚浅，虽然努力了一个月，最终却没有实际成果，很是让领导质疑了一阵，幸好接手的哥们同样做不出来，而我的下一个任务——使用jpeglib，获得了成功，才算将事情平息下来。
+## Block的生成
 
-过了一年，闲暇无聊之际，旧事重提，于是发现了Kannel，并做了一个demo。可惜公司时局变化，这一切都变得无足轻重了。
+以比特币为例，Block由特殊算法计算生成。每个Block包含一定数量的比特币。为了得到比特币，人们就需要计算，这个行为被称为“挖矿”。
 
-# ZeroC ICE
+“挖矿”得到的Block需要添加到现有Block chain的末端。这实际上导致了以下问题：
 
-我在研究生时代，研究过CORBA、EJB、COM这样的中间件技术。然而工作以后，再没有机会使用。平时偶尔关注，也只是晓得CORBA从来没有流行过，EJB在Struts、Hibernate、Spring等框架的围攻下，用者寥寥。直到最近，因为项目需要接触到ZeroC的ICE框架。
+1.同一时间只有一个Block能够添加到Block chain。这导致比特币的交易速度不可能很快。这也是一些新的区块链协议所要改进的方向。
 
-ICE框架的官网地址：
+2.所有的历史交易记录都保存在Block chain中。比如可用以下网址查询历史记录：
 
-https://zeroc.com/downloads/ice
+https://blockchain.info/zh-cn/block-height/254642
 
-安装：
+可以想象随着交易的进行，这个链会越来越大。由于每个钱包都有特定的秘钥，虽然我们不能直接知道它的主人，但是通过对历史数据的分析，还是很有可能找到蛛丝马迹的。因此，一些山寨币开始使用更高端的加密算法，提供更好的匿名性。
 
-```bash
-wget https://zeroc.com/download/GPG-KEY-zeroc-release
-sudo apt-key add GPG-KEY-zeroc-release
-sudo apt-add-repository "deb http://zeroc.com/download/apt/ubuntu16.04 stable main"
-sudo apt update
-sudo apt install zeroc-ice-all-runtime zeroc-ice-all-dev
-sudo apt install libssl-dev
-pip install zeroc-ice
-```
+## 比特币的交易
 
-多语言demo：
+Block的绝大多数空间都用于保存交易记录。因此，矿工除了挖出新Block之外，还要负责将新的交易数据写进Block，这个行为被称为“打包”。
 
-https://github.com/zeroc-ice/ice-demos
+打包可以收取手续费，以获得更高的打包优先级。在中本聪的设想中，这是在挖矿越来越难的时候，保证比特币运作的一种方式。
 
-注意demo的master分支是开发分支，好多代码都是有问题的，请切换到正在使用版本的分支，例如：
+## 区块链的安全性
 
-`git checkout 3.6`
+1.块中有用于检验数据完整性的字段，这个完整性不仅包括本Block的完整性，还包括之前Block数据的完整性。因此，篡改者必须对被修改的Block之后的所有Block都进行修改才行。
 
----
+2.修改需要得到多数结点确认才可以生效。理论来说，如果有组织掌握全网51%的算力，那么他们就可以为所欲为了。
 
-2022.7
+## 区块链的缺点
 
-和CORBA竞争的MS的DCOM也好不到哪里去。唯一用的多的，主要在工控领域。
+区块链保存历史信息既是优点，有的时候亦是缺点。
 
-OPC DA在其发展时，建立在当时的Windows技术：OLE、ActiveX、COM/DCOM 之上。但此后行业发生了变化，其他操作系统和技术也开始流行。
+比如以太坊现在的区块链总大小已经999GB了，运行以太坊的全节点数量也从巅峰的1万降到现在3千左右了，而且基本所有运行全节点的人都是租云服务器运行，极少人自己运行了。全节点数量如果再继续下降，以太坊就会变得更加脆弱。
 
-COM是微软投入C++门下后给C++打的一个超大补丁用来解决C++的ABI没有标准的问题。
+## 各种数字货币
 
-https://zhuanlan.zhihu.com/p/426818530
+![](/images/article/bit_coin.png)
 
-聊聊越来越火的OPC DA OPC UA的标准
+## 以太坊
 
-https://www.zhihu.com/question/19998748
-
-COM过时了吗？它的应用前景究竟如何？
-
-https://www.zhihu.com/question/49433640
-
-怎么通俗的解释COM组件？
-
-# Hprose
-
-Hprose是ZeroC ICE的一个竞争者，由国内某高手打造，支持的语言超过20种，堪称最全。不过貌似没什么大公司用啊。。。
-
-其标榜的无需生成桩代码的优点，相比ZeroC ICE的老版本来说，的确是个进步。但目前的ZeroC ICE 3.6版本，也同样提供了类似的功能。这或者也是Hprose一直火不起来的原因。
+虽然，比特币一直是区块链技术的主角，但毕竟创建的年代已经久远，技术局限较多。以太坊不仅是数字货币，而且还是很多其它数字货币的发行平台，提供了一系列完善的数字货币发行和流通服务，当然服务的费用需要通过购买以太坊币来支付。目前，很多山寨币都是利用以太坊进行发布的。
 
 官网：
 
-http://hprose.com/
+https://www.ethereum.org/
 
-Github：
+以太坊的API是一个叫做Solidity的项目。代码会被编译运行在所谓的Ethereum Virtual Machine (EVM)上。
 
-https://github.com/hprose
+Solidity文档：
 
-# 分布式ID生成器
-
-![](/images/img3/Snow.png)
-
-这种结构是雪花算法提出者Twitter的分法。百度的UidGenerator、美团的Leaf等，都是基于雪花算法做一些适合自身业务的变化。
+https://solidity.readthedocs.io/
 
 参考：
 
-http://mp.weixin.qq.com/s/Bk5k6vRG4Rq4iCtmtYDEGQ
+https://zhuanlan.zhihu.com/p/32796998
 
-Leaf——美团点评分布式ID生成系统
+10分钟搞定ICO
 
-https://mp.weixin.qq.com/s/6J7n3udEyQvUHRHwvALNYw
+## 实体链
 
-Leaf：美团分布式ID生成服务开源
+![](/images/img4/block_chain.png)
 
-https://mp.weixin.qq.com/s/_z0-90xbsCd4Pdi6UlEvnA
+- 去中心化（不需要统一管理）
 
-分布式ID生成器
+- 可追溯性（一人一锁，谁没锁找谁）
 
-https://mp.weixin.qq.com/s/Yk2ZlGCEINGrsTfHI6zpsw
+- 不可篡改性（这个似乎没办法）
 
-分布式id生成器
+http://tech.ifeng.com/c/82IsX1VJuPq
 
-https://mp.weixin.qq.com/s/E3PGP6FDBFUcghYfpe6vsg
+小区业主自制66把锁门禁系统 网友：区块链技术实体化
 
-唯一ID生成算法剖析
+## 共识机制
 
-https://mp.weixin.qq.com/s/ZbZRMFjbl5oG8yncv8hCtQ
+共识机制不同于共识算法，后者属于安全领域，旨在防止攻击和篡改，而前者则更多的有些社会实践的性质，属于更高层面的东西。
 
-认识“雪花ID”：如何在分布式环境中大规模生成唯一ID？  
+- POW(Proof of Work，工作量证明)
 
-https://mp.weixin.qq.com/s/F7WTNeC3OUr76sZARtqRjw
+一方（通常称为证明人）出示计算结果，这个结果众所周知是很难计算的但却很容易验证的。通过验证这个结果，任何人都能够确认证明人执行了一定量的计算工作量来产生这个结果。
 
-分布式架构系统生成全局唯一序列号的一个思路
+缺点：浪费了算力，消耗了大量的资源。存在51%攻击。
 
-# 苏俄+
+第一个POW程序是1996年Adam Back开发的“Hashcash”程序。它主要用于反垃圾邮件——发送者需要大量的运算之后，才能发送邮件，而接收者则很容易验证这个认证。此系统使得垃圾邮件发送者在大量发送邮件时，在经济上不可行。
 
-德纳尔被俘之后，接受了法国的军事审判。几乎所有人都以为他会因此受到惩罚，然而却并非如此。直到此时，大家这才恍然大悟，原来德纳尔与法国政府的关系并非表面看上去的样子，德纳尔就像是法国在殖民地的影子一样。在德纳尔死的时候，法国悲伤地认为“法国第一雇佣兵死了”。
+- POS(Proof of Stake，权益证明)
 
-瓦格纳集团以前是被普京收编了的光头党组织，然后开始境外发展。俄乌战争以前就是俄国在中东与非洲扩展与维持势力范围的马前卒。有点儿像法国德纳尔集团以及美国以前的平克顿侦探社，白手套武装组织，专替普京和俄军干黑活儿的。
+区块记账权的抉择是根据不同节点的股份和占有时间来进行随机选择的。
 
-战前他们是跑到其他国家，现在他们是从其他国家拉壮丁回俄国参加侵乌战争。
+它解决了比特币随着矿工积极性的下降从而使矿工人数的减少，造成的整个网络可能陷入瘫痪的问题，也增加了安全性，因为破环成本不光是51%的算例，而且还需要51%的持有量。（51%算力+51%货币持有量可以攻破）
 
-https://www.sohu.com/a/549791570_121136722
+缺点：初始会通过IPO方式发行，有大庄家的存在，存在被大庄家炒作的嫌疑。
 
-德纳尔：退伍兵组建雇佣兵团，纵横多年还控制一个小国，安享晚年
+工作量证明(PoW)类似于社会主义，人多力量大(“工分”越多得到的越多)，而权益证明(PoS)类似于资本主义，钱多力量大(钱越多拿到的利息越多)；
 
----
+- DPOS(Delegate Proof of Stake)
 
-亚美尼亚有一个马米科尼扬家族，自称祖上是“中国”（Chem国）某个王子马姆贡的后裔，因为和兄弟争皇位失败 润到了萨珊波斯，因为出身高贵，受到了波斯皇帝的重用，后来“中国”皇帝派出追兵，要求波斯交出这个人，波斯人不想交人，也不敢得罪“中国”，就把这人继续往西润，润到了亚美尼亚当总督。
+每个持有（权益、股权、股份）的帐户人将投票（授权、委托）予某位代表，在系统中获得最多票数的前101位代表就可以按分配到的时间段轮流产生区块（出块），而这些代表成功出块后将可以收到产生这些区块平均交易费作为出块的报酬，如果这些代表出块不成功，将可能会被淘汰，由投票产生的新代表所取代。
 
-他的后代马米科尼扬家族成为当地的旺族，统治亚美尼亚四百多年，率领国家抵抗外族的压迫，近代民族主义兴起后，他们又被塑造成亚美尼亚民族英雄。
+DPOS类似于现时的议会制度。
 
-现在唯一的问题是中国这边在对应的时间线上，根本找不到这个所谓的王子。。。
+# CPU+
 
-https://www.zhihu.com/question/527847806
+https://mp.weixin.qq.com/s/lz6EoLiLtPtWFMG1FJCuQw
 
-如果我一个黑发黑瞳穿越到中世纪欧洲，如何冒充贵族跻身上流社会?
+化合物半导体的机遇
 
----
+https://mp.weixin.qq.com/s/tTtySk3u6m2BGUkDto5Ojw
 
-面包和盐是一种斯拉夫人的欢迎客人的习俗。在斯拉夫人的传统文化中，“面包和盐”是最隆重的一种礼节，用来欢迎“重要、尊敬和钦佩的客人”。
+可重构芯片的方法学原理
 
----
+https://mp.weixin.qq.com/s/RkRZX_scr__Q_mLPhaaWAA
 
-1998年俄罗斯确实违约了：违约了本币国债，这是历史上唯一一次有国家违约了信用本币国债，因为在信用本币体系完成后，一个现代国家有印钞机是没有必要违约本币的。但是同时他们却把外币国债按时付了。。。
+AMD Zen 2处理器架构为何要如此设计？
 
----
+https://mp.weixin.qq.com/s/dRv4xWV8laCYBaZ0DwOC3A
 
-当时国际惯例，双方使用黄金交易。美国财政部出具了720万美金（金本位美元，有足额黄金保证，以下所有未指名美元都默认等于金本位美元）的国库汇款命令书（Treasury Warrant）。俄罗斯驻美大使收到后向里格斯银行（Riggs Bank）兑换，此时双方已经银货两讫。然后大使继续转账汇入俄国在伦敦巴林银行的账户里。
+如何从零开始设计一颗芯片？
 
-https://www.zhihu.com/question/542210837
+https://mp.weixin.qq.com/s/eAzdtKvfw7EVz5Ax3nXeZg
 
-金一南称美国购买阿拉斯加，但付款运钞船沉没，确有其事吗?
+自己动手设计专用处理器
 
----
+https://mp.weixin.qq.com/s/NfNJVoAC5aW1sgToAmYsGw
 
-若是能源价格走高时，俄罗斯就低买高卖中亚邻居的能源，当能源二道贩子。由于俄罗斯霸占了向欧洲出口能源的有利位置，而且中亚又迫于被俄罗斯保护（威慑），不敢贸然建设直接通向欧洲的能源出口路线，因此中亚的能源只得贱价卖给俄罗斯，然后俄罗斯再把这些能源“包装”成俄罗斯天然气、石油，再卖给欧洲。
+3nm芯片终结者
 
-你以为这就完了？这还算好的呢。
+https://mp.weixin.qq.com/s/o8C6n-ZRw3vFS8E-hikXJQ
 
-若是能源价格走低，嘿嘿，俄罗斯就图穷匕见了。如果想抬能源价格，就必须削减市场上的能源产量。如何削减产量呢？俄罗斯的答案是：把中亚邻居的管道炸掉就可以了。2009年，俄罗斯为了要挟土库曼斯坦天然气降价，制造了一场小小的“意外”，把土库曼斯坦的天然气管道炸了。资本家为了抬价好歹是倒自家的牛奶，俄罗斯为了抬价则是倒邻居家的牛奶。
+移动的王者：深入分析ARM最强处理器Cortex A77
 
----
+https://www.cnblogs.com/f-ck-need-u/p/11141636.html
 
-一般一个俄军的师有四个副师长：军事政治工作副师长，参谋长，后勤副师长，技术副师长。
+关于CPU的一些基本知识总结
+
+https://mp.weixin.qq.com/s/vTOGmcahRxQBH8RgkTJ2GA
+
+中文系同学都能听懂的集成电路设计流程
+
+https://mp.weixin.qq.com/s/O-2ecxYVOgEfRuwEoS7gRA
+
+Fab的那些事儿
+
+>Fab的全称叫Fabrication，也就是集成电路制造的工厂、车间。
+
+https://mp.weixin.qq.com/s/_NcQ-PxNpEtpYdo450Uukg
+
+半导体材料全球格局
+
+https://mp.weixin.qq.com/s/QwE_VTEUS9kGDDrHlzPYmg
+
+硅片为什么不是方的？
+
+https://zhuanlan.zhihu.com/p/32378843
+
+ARM攒机指南-汽车篇
+
+https://mp.weixin.qq.com/s/Hq9hzkyfGcCQa_FfzSDoRg
+
+5nm工艺节点以后，半导体器件的发展方向
+
+https://zhuanlan.zhihu.com/p/66263349
+
+为什么内存和闪存制程比CPU低？它们现在都在什么节点？
+
+https://zhuanlan.zhihu.com/p/114448236
+
+什么是Win10的“现代待机”？为什么它未来会越来越重要？这篇文章部分解释了我的第一个平板为什么那么耗电。
+
+https://mp.weixin.qq.com/s/J7RlmvU7JY1J8rV-eqjQ2A
+
+浅谈多核心CPU和SoC芯片及其工作原理
+
+https://mp.weixin.qq.com/s/Lnrlv7JcrOSwbnDweYf1Yg
+
+片上系统设计案例分析-Xbox主机
+
+https://zhuanlan.zhihu.com/p/86432216
+
+Microcode是什么？它为什么能修正CPU硬件错误？
+
+https://zhuanlan.zhihu.com/p/152167194
+
+两大FPGA公司的“AI技术路线”
+
+https://www.zhihu.com/question/503287789
+
+当两个CPU核心要求读写同一内存地址时，其后果是未定义行为吗？
+
+https://mp.weixin.qq.com/s/Kake5sQm79L2j_uDqKfznQ
+
+在《我的世界》里从零打造一台计算机有多难？复旦本科生大神花费了一年心血

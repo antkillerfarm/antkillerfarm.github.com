@@ -298,3 +298,7 @@ https://mp.weixin.qq.com/s/Lz8QRs7HkZbWFxLqf4h6OA
 https://www.zhihu.com/question/510151356
 
 皮蛋制作过程中用到氢氧化钠，通过渗入蛋壳气孔与其中蛋白质反应凝固，那么可以用其他碱性物替代吗？
+
+https://zhuanlan.zhihu.com/p/564622230
+
+几十年的老厨师不如一勺“高科技”？“海克斯科技”到底有多猛？

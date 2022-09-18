@@ -219,21 +219,3 @@ http://www.cnblogs.com/fengfenggirl/p/associate_measure.html
 https://mp.weixin.qq.com/s/s1Snb4XnIQk1DcK3nESilw
 
 PrefixSpan算法原理详解
-
-# 抗日战争++++
-
-http://www.360doc.com/content/18/1220/07/17283749_803043906.shtml
-
-华北平原的“皇军”哗变——馆陶事件始末
-
-http://ah.ifeng.com/news/wangluo/detail_2015_08/06/4200178_0.shtml
-
-通州事件：一支“伪军”对日本人的“杀戮”
-
-https://zhuanlan.zhihu.com/p/397085288
-
-1983年，山东一农民给领导斟茶时暴露身份，才知：他是16期黄埔生（王延周）
-
-https://mp.weixin.qq.com/s/SKofqgEG4fTRirMPu89IMw
-
-老百姓集体抢劫日军，日本鬼子还忍了，整个抗战时期仅此一例

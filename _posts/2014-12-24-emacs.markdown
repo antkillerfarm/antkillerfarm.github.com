@@ -282,68 +282,52 @@ https://github.com/myuhe/ess-R-data-view.el
 
 2.搜索中文时，不要用引号括起来，否则什么都找不到。
 
-# 常凯申+
+# Lazarus
 
-https://mp.weixin.qq.com/s/E77i0I6pPNfWbPo-r61QZA
+Lazarus为开放的IDE，且在Linux下表现良好，目前被中国计算机学会指定为NOI系列竞赛的Pascal语言推荐IDE。
 
-台湾大佬，陈水扁的黑道盟友豹哥，死了
+官网：
 
-https://www.zhihu.com/question/56175099
+https://www.lazarus-ide.org/
 
-如何评价孙元良？
+# 清+
 
-https://mp.weixin.qq.com/s/yIAEzugvMkZcLpxJvAvH3w
+https://new.qq.com/omn/20210519/20210519A02OPX00.html
 
-台海最后一次空战！歼-6拼刺刀击落F-104，对面竟无耻称2:0大胜
+乾隆晚年大办千叟宴，结果一顿饭下来，很多老寿星却纷纷死去
 
-https://mp.weixin.qq.com/s/-gl0p05fKdV9dkXUsBmtRA
+https://www.zhihu.com/question/61094729
 
-马家军最惧怕的人，官至国民党中将，却投靠了共产党（吉鸿昌）
+“四不能战”的冯子材为何能拿下镇南关大捷？
 
-https://mp.weixin.qq.com/s/axqjwH8jwBiZ1clgYh2lwA
+https://new.qq.com/omn/20201024/20201024A01TSJ00.html
 
-为什么都说国军不能打仗？
+清朝满洲的八旗由什么姓氏掌握？旗主又是怎么更迭的？
 
-https://mp.weixin.qq.com/s/Tdh736fhMRIfGHvGpGwyRg
+https://www.zhihu.com/question/26049905/answer/1554663955
 
-蒋介石“国军”战斗力低下成因之：器不如人
+谁偷走了永乐大典？
 
-https://mp.weixin.qq.com/s/xoA11jhbDViFF8PQUa50CA
+https://www.zhihu.com/question/434334653
 
-蒋介石“国军”战斗力低下成因之：气不如人（上）
+清朝（后金）为什么不尊金朝而以南宋为正统？
 
-https://mp.weixin.qq.com/s/QFweJ_WY6huZvlVfXzqkhQ
+https://zhuanlan.zhihu.com/p/361823108
 
-蒋介石“国军”战斗力低下成因之：气不如人（下）
+大清帝国，远征加勒比！（海圻舰）
 
-https://mp.weixin.qq.com/s/vtibWmNys12EVlTRroAxQQ
+https://mp.weixin.qq.com/s/6nU6mJzaYYN8axyCkINKnw
 
-蒋介石“国军”战斗力低下成因之：技不如人
+八国联军占领北京后，为何不直接推翻清朝瓜分中国？
 
-https://www.zhihu.com/question/317442450
+https://mp.weixin.qq.com/s/fx6ozgom-8zmHM6nuwWOQg
 
-对于“抗战期间八路军基层士兵伙食比国军好”这一事实你怎么看?
+扬州百万居民被十万清兵屠杀，为何需要屠十天？
 
-https://mp.weixin.qq.com/s/od861LKyC6rFfCr54gtbNw
+https://mp.weixin.qq.com/s/axjc7ku5AM7LdoyV7R5Jfg
 
-“告诉老蒋，老子走了！”被骗去台7年跑路6次，劫蒋纬国专机起义
+清朝人娶老婆花多少钱，嫁女儿花多少钱，买小妾又花多少钱？
 
-https://mp.weixin.qq.com/s/ovcveJHG_TODVJygmoqXEA
+https://mp.weixin.qq.com/s/YcGJWrat4JQxNSC9t7CPHQ
 
-把汤唯捧红的电影《色·戒》，背后的故事却让人唏嘘不已
-
-https://www.zhihu.com/answer/2253092822
-
-二战轴心国德国，为什么要帮助同盟国中国？（德国与中华民国在20～30年代的合作）
-
-https://www.zhihu.com/question/505898387
-
-为啥蒋介石塔山要用侯镜如？
-
-https://www.sohu.com/a/276763234_411871
-
-汤恩伯为何死在日本手术台上！？
-
-https://mp.weixin.qq.com/s/lWRFdH0QRjeolsKTMBuyhA
-
-新中国成立，他准备去北京当官，半路才想起自己是汉奸，连夜南逃（胡兰成）
+鸦片战争之后，清朝开始全国种植鸦片，并迅速实现了国产化和全民吸烟

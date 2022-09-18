@@ -325,33 +325,3 @@ https://mp.weixin.qq.com/s/vo1v5dYGLMqzCSUG9gPvag
 https://mp.weixin.qq.com/s/EkxXV7Bizf4JxG15SQb79w
 
 修改OpenCV一行代码，提升14%图像匹配效果（BEBLID(Boosted Efficient Binary Local Image Descriptor)是一个2020年才开发出来的算子）
-
-# 机器人/无人驾驶参考资源++
-
-https://zhuanlan.zhihu.com/p/57781001
-
-自动驾驶系统的硬件平台讨论
-
-https://mp.weixin.qq.com/s/ZUxkZXLC0tPkzptFKtudhw
-
-让机器人也能“问路”的视觉语言导航新方法
-
-https://mp.weixin.qq.com/s/6OkLjK1bMbw6a3bvYn_DCQ
-
-深度学习在自动驾驶感知领域的应用
-
-https://zhuanlan.zhihu.com/p/57029694
-
-自动驾驶中单目摄像头检测输出3-D边界框的方法一览
-
-https://mp.weixin.qq.com/s/SZlwjnZrxCyaqRBg_sjQaA
-
-浅谈自动驾驶中的行为风险识别（一）
-
-https://mp.weixin.qq.com/s/QBnvLrD93b8cDEeNeZ5kAw
-
-车联网正步入歧途，命悬一线的开始
-
-https://zhuanlan.zhihu.com/p/553588646
-
-最新的“视觉为中心的BEV感知”综述论文

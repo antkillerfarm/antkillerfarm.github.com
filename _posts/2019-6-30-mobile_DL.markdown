@@ -394,33 +394,3 @@ https://github.com/tensorflow/models/tree/master/research/a3c_blogpost
 https://mp.weixin.qq.com/s/atQHJ5U2pJpSG6PguN7J4Q
 
 如何保持运动小车上的旗杆屹立不倒？TensorFlow利用A3C算法训练智能体玩CartPole游戏
-
-# 目标检测进阶++
-
-https://mp.weixin.qq.com/s/Qvjk7mz8d9lxeyIMND1mPA
-
-目标检测Anchor是什么？怎么科学设置？人人都能彻底搞懂的Anchor深度解析
-
-https://mp.weixin.qq.com/s/0wJHO_9e4iBMaWu-E20S6A
-
-一文了解目标检测边界框概率分布
-
-https://mp.weixin.qq.com/s/hMhDIV3eCEzmRzuyT3CvUg
-
-训练鲁棒的物体检测器的6大障碍
-
-https://zhuanlan.zhihu.com/p/342011052
-
-目标检测之Neck选择
-
-https://mp.weixin.qq.com/s/sJGvvwCkXCJ52MYSsjkwrg
-
-计算机视觉来看看苏伊士运河堵船（船舶检测）
-
-https://mp.weixin.qq.com/s/UHrYk7_oM0_WBy-FCQXM0g
-
-一文梳理水下目标检测方法
-
-https://mp.weixin.qq.com/s/PJYJ_Q7eTQFk46tladYFIQ
-
-使用合成数据集来做目标检测

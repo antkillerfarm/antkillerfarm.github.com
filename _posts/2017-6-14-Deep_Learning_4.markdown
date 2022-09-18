@@ -1,11 +1,40 @@
 ---
 layout: post
-title:  深度学习（四）——CNN, AutoEncoder
+title:  深度学习（四）——Neural Network Zoo, CNN, AutoEncoder
 category: DL 
 ---
 
 * toc
 {:toc}
+
+
+# Neural Network Zoo
+
+在继续后续讲解之前，我们首先给出常见神经网络的结构图：
+
+![](/images/article/Neural_Networks.png)
+
+上图的原地址为：
+
+http://www.asimovinstitute.org/neural-network-zoo/
+
+单元结构：
+
+![](/images/article/neuralnetworkcells.png)
+
+层结构：
+
+![](/images/article/neuralnetworkgraphs.png)
+
+上图的原地址为：
+
+http://www.asimovinstitute.org/neural-network-zoo-prequel-cells-layers/
+
+参考：
+
+https://mp.weixin.qq.com/s/ysnLwvbSD4fcL5LK7wSnyA
+
+MIT高赞深度学习教程：一文看懂CNN、RNN等7种范例
 
 # CNN
 
@@ -298,23 +327,3 @@ Autoencoder的结构如上图所示。它的特殊之处在于：
 ![](/images/img3/dae.png)
 
 黄色的三角表明输入数据中被加入了噪声。当然了DAE的输出要和无噪声样本做比较，这样才能体现去噪的效果。
-
-## Stacked AutoEncoders
-
-AE不仅可以单独使用，还可以堆叠式的使用。
-
-![](/images/img2/Stacked_SparseAE_Features1.png)
-
-上图是个普通的AE，其中的hidden层可以看作是input的Features，不妨称作Features I。
-
-![](/images/img2/Stacked_SparseAE_Features2.png)
-
-将Features I作为input，送进另一个AE，得到Features II。依此类推，就可以形成一个深度网络，这种方法叫做Stacked Auto-encoder Networks（SANs）。
-
-这实际上，就是Relu发明之前，预训练DNN的标准做法。经过SANs预训练的网络，每层的参数都被归一化，即使使用sigmoid激活函数，也没有严重的梯度消失现象，从而使DNN的训练成为了可能。
-
-参考：
-
-http://ufldl.stanford.edu/wiki/index.php/Stacked_Autoencoders
-
-Stacked Autoencoders

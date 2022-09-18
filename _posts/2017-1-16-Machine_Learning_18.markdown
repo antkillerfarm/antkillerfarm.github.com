@@ -167,94 +167,72 @@ http://patternrecognition.cn/~jin/gs/seminar/20140515_jinzhong.ppt
 
 Robust PCA-模式识别
 
-# 苏俄++
+# 模型压缩与加速进阶+
 
-https://mp.weixin.qq.com/s/kCLZyjoDoNK-py06hvmujA
+https://mp.weixin.qq.com/s/F0ykoKv027ycinsAZZjbWQ
 
-特供商店在苏联的兴衰（上）
+ThunderNet：国防科大、旷视提出首个在ARM上实时运行的通用目标检测算法
 
-https://mp.weixin.qq.com/s/C2DIOcL9pE-FWspAt8Ut_Q
+https://mp.weixin.qq.com/s/J3ftOKDPBY5YYD4jkS5-aQ
 
-特供商店在苏联的兴衰（下）
+ThunderNet：Two-stage形式的目标检测也可很快而且精度很高
 
-https://www.zhihu.com/question/21817255
+https://mp.weixin.qq.com/s/uXbLb5ITHOU0dZRSWNobVg
 
-俄罗斯（苏联）作为一个工业大国，为什么没有世界性的汽车品牌？
+算力限制场景下的目标检测实战浅谈
 
-https://zhuanlan.zhihu.com/p/331709823
+https://mp.weixin.qq.com/s/DoeoPGnS88HQmxagKJWLlg
 
-苏联人给他发的奖章，比给勃列日涅夫还多
+小米开源FALSR算法：快速精确轻量级的超分辨率模型
 
-https://zhuanlan.zhihu.com/p/390097908
+https://mp.weixin.qq.com/s/wT39oUWfrQK-dg7hGXRynQ
 
-乌兹别克棉花案：苏联解体的潘多拉魔盒之钥
+实时单人姿态估计，在自己手机上就能实现
 
-https://mp.weixin.qq.com/s/M3ZselQLqCdLY53dpqILLA
+https://mp.weixin.qq.com/s/RVsXUnAJ2f0Cby7BPaWifA
 
-穿越回苏联：火红岁月的情与色（上）
+人物属性模型移动端实验记录
 
-https://mp.weixin.qq.com/s/2TAWe4frnI6RTpe4ui0mAg
+https://mp.weixin.qq.com/s/yCcK6UJqm850HON7xU3R6g
 
-穿越回苏联：火红岁月的情与色（下）
+模型压缩重要方向-动态模型，如何对其长期深入
 
-https://mp.weixin.qq.com/s/YPgFtLkpl9BGNZPo_IEcrg
+https://zhuanlan.zhihu.com/p/93020471
 
-《功勋》孙家栋单元的中苏军服细节看不清？来看特写和解析
+轻量型网络：IdleBlock
 
-https://www.zhihu.com/question/498827834
+https://mp.weixin.qq.com/s/AjuTXFmxHYdUUqodSpP_4w
 
-苏联拖拉机为什么没有解决农业问题？
+10倍加速！爱奇艺超分辨模型加速实践
 
-https://www.zhihu.com/question/22972794
+https://mp.weixin.qq.com/s/rzv8VCAxBQi0HsUcnLqqUA
 
-没有出海口的黑海舰队对俄罗斯的意义是什么？
+处理移动端传感器时序数据的深度学习框架：DeepSense
 
-http://www.mofcom.gov.cn/article/i/jyjl/e/201909/20190902900697.shtml
+https://mp.weixin.qq.com/s/UYk3YQmFW7-44RUojUqfGg
 
-毕马威：哈萨克斯坦一半财富集中在162人之手
+上交大ICCV：精度保证下的新型深度网络压缩框架
 
-https://www.zhihu.com/question/321165966
+https://mp.weixin.qq.com/s/ZuEi32ZBSjruvtyUimBgxQ
 
-如何看待演员泽连斯基2019年乌克兰大选高票当选乌克兰总统？
+揭秘支付宝中的深度学习引擎：xNN
 
-https://zhuanlan.zhihu.com/p/352232012
+https://mp.weixin.qq.com/s/0KlnQ8UUxpyhBRdeo0EOAA
 
-他，就是那个在厦门肉食公司门口抱摔春丽的大肌霸
+用于网络压缩的滤波器级别剪枝算法ThiNet
 
-https://mp.weixin.qq.com/s/M-6Ax_MJ0Xs3oBLnTwjnpQ
+https://mp.weixin.qq.com/s/FvR6loJ8KUxm7qwclestcQ
 
-多炮塔神教最辉煌一战，苏军T-28单车独闯龙潭，杀伤数百德军
+专门为卷积神经网络设计的训练方法：RePr
 
-https://zhuanlan.zhihu.com/p/545424688
+https://mp.weixin.qq.com/s/67GSnZnJySFrCESvmwhO9A
 
-克宫光头总工基里延科
+论文解读Channel pruning for Accelerating Very Deep Neural Networks
 
-# 朝鲜+
+https://mp.weixin.qq.com/s/Lkxc_9sbRY157sMWaD5c7g
 
-朝鲜队殴打裁判的历史源远流长，1974年和1982年就两次因为在亚运会殴打裁判被禁赛两年。不仅大赛打人，连普通的训练赛、友谊赛都坚持能动手绝不逼逼的优良作风。
+视频分割在移动端的算法进展综述
 
-https://mp.weixin.qq.com/s/eqMupDD1GzkgpfpedU1l2w
+https://mp.weixin.qq.com/s/ie2O5BPT-QxTRhK3S0Oa0Q
 
-朝鲜足球永不说RNM退钱
-
----
-
-李氏朝鲜历史上，州降为郡县的时候，往往是把州字改成川字，比如阶州改价川、成州改成川、嘉州改嘉川、熙州改熙川、宣州改宣川、泰州改泰川、肃州改肃川、德州改德川，等等等等。
-
----
-
-1904年，日俄战争爆发，清朝耻辱的宣布中立，南边的大韩帝国看清廷废物一个，于是也想过来分杯羹，他们计划搞到吉林两万多平方公里的土地，于是由李范允带领俄军教官训练的五六千人的私军进攻间岛，结果不到一周就被吉林的清军守军打得惨败，被迫宣布“搁置”边境划线的谈判。
-
----
-
-https://zhuanlan.zhihu.com/p/28517736
-
-百货大楼20秒塌为平地，贪得无厌导致1500人遭活埋（韩国三丰百货店倒塌灾难）
-
-https://www.zhihu.com/question/291798701
-
-朝鲜人的实际生活是什么样子的？
-
-https://zhuanlan.zhihu.com/p/444286151
-
-世界卷王--从两个数据看韩国的现状
+剪枝需有的放矢，快手&罗切斯特大学提出基于能耗建模的模型压缩

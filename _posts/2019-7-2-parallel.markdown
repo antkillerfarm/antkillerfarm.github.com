@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化
+title:  并行 & 框架 & 优化（一）
 category: DL acceleration 
 ---
 
@@ -89,7 +89,7 @@ https://zhuanlan.zhihu.com/p/250471767
 
 DDP系列第三篇：实战与技巧
 
-# tf.distribute & MultiDevice
+## tf.distribute & MultiDevice
 
 MirroredStrategy：单机多卡训练
 

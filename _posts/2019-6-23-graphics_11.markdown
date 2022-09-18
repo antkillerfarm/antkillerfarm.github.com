@@ -305,6 +305,10 @@ https://zhuanlan.zhihu.com/p/22337544
 
 不只是噪音（Perlin噪音）
 
+https://mp.weixin.qq.com/s/jq4B_4kUOZE8yN5y0u-5yg
+
+万字长文！UCLA蒋陈凡夫12年自我回顾，图形学的终极浪漫
+
 ## 术语
 
 Material Point Method（物质点法）

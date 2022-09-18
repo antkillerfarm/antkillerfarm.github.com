@@ -9,7 +9,103 @@ category: DL
 
 # Style Transfer
 
-## DL方法（续）
+## Deep Visualization
+
+上述的CNN可视化的方法一般被称作Deep Visualization。
+
+论文：
+
+《Understanding Neural Networks Through Deep Visualization》
+
+这篇论文是Deep Visualization的经典之作。作者是Jason Yosinski。
+
+>Jason Yosinski，Caltech本科+Cornell博士。现为Uber AI Labs的科学家。   
+>个人主页：   
+>http://yosinski.com/
+
+该文提出了如下公式：
+
+$$V(F_i^l)=\mathop{\arg\max}_{X}A_i^l(X), X \leftarrow X + \eta\frac{\partial A_i^l(X)}{\partial X}$$
+
+X初始化为一张噪声图片，然后按照上述公式，优化得到激活函数输出最大的X。
+
+Deep Visualization除了用于提取纹理之外，还可用于模型压缩。
+
+论文：
+
+《Demystifying Neural Network Filter Pruning》
+
+https://github.com/yosinski/deep-visualization-toolbox
+
+这是作者Jason Yosinski提供的Deep Visualization的工具的代码。
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/deep-visualization-toolbox
+
+原始版本是基于python 2编写的，这是我修改的python 3版本
+
+https://github.com/Sunghyo/revacnn
+
+这是另一个CNN可视化工具
+
+参考：
+
+https://zhuanlan.zhihu.com/p/24833574
+
+Deep Visualization:可视化并理解CNN
+
+http://www.cnblogs.com/jesse123/p/7101649.html
+
+Tool-Deep Visualization
+
+https://mp.weixin.qq.com/s/dflEAOELK0f19y4KuVd_dQ
+
+40行Python代码，实现卷积特征可视化
+
+https://mp.weixin.qq.com/s/fpVFpN5beJFyLW19WnBzvw
+
+揭开黑盒一角！谷歌联合OpenAI发布“神经元显微镜”，可视化神经网络运行机制
+
+https://mp.weixin.qq.com/s/o-MFPt6LR_5XDpacqw754Q
+
+马里兰大学论文：可视化神经网络的损失函数
+
+https://mp.weixin.qq.com/s/iIhiMKutVtYEUgAiErLkVQ
+
+Deep Dream
+
+https://mp.weixin.qq.com/s/z_n_9Z88aiFaQ35jjPMcqg
+
+OpenAI发布“显微镜”，可视化神经网络内部结构
+
+https://mp.weixin.qq.com/s/MFKhmHcaQvufdRawFqisjA
+
+Distill详述“可微图像参数化“：神经网络可视化和风格迁移利器！
+
+https://mp.weixin.qq.com/s/Tm6fTjXG_7BVc70GROPdag
+
+TensorSpace：超酷炫3D神经网络可视化框架
+
+https://mp.weixin.qq.com/s/dBCGxi78D3TZybRedd7XVA
+
+最前沿的特征可视化(CAM)技术
+
+## DL方法
+
+受到上述事实的启发，2015年德国University of Tuebingen的Leon A. Gatys写了如下两篇论文：
+
+《Texture Synthesis Using Convolutional Neural Networks》
+
+《A Neural Algorithm of Artistic Style》
+
+代码：
+
+https://github.com/jcjohnson/neural-style
+
+torch版本
+
+https://github.com/anishathalye/neural-style
+
+tensorflow版本
 
 在第一篇论文中，Gatys使用Gramian matrix从各层CNN中提取纹理信息，于是就有了一个不用手工建模就能生成纹理的方法。
 
@@ -178,98 +274,3 @@ https://mp.weixin.qq.com/s/Pub83W6nMM02lEIrsBe49Q
 ## Style transfer的其他用法
 
 使用VGG抽取的所谓纹理信息，也可以用于图像增强领域。具体的做法是将纹理信息作为Loss的一部分。（注意不是Loss的全部，否则就只是Style transfer了）。
-
-## 文本风格迁移
-
-不光图像、语音有风格迁移，文本也有。
-
-下面是一个金庸风格的例子
-
-```text
-Input：谢谢
-Output（金庸）：多谢之至
-
-Input：再见
-Output（金庸）：别过!
-
-Input：请问您贵性？
-Output（金庸）：请教阁下尊姓大名?
-```
-
-https://mp.weixin.qq.com/s/7nvqifY_J34mWEUM5IUsLQ
-
-NLP文本风格迁移
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/26746283
-
-图像风格迁移(Neural Style)简史
-
-https://mp.weixin.qq.com/s/64H2dDcaTcKdKaOnwdsoEg
-
-基于深度学习的艺术风格化研究
-
-https://blog.csdn.net/red_stone1/article/details/79055467
-
-人脸识别与神经风格迁移
-
-https://blog.csdn.net/cicibabe/article/details/70885715
-
-卷积神经网络图像风格转移
-
-https://blog.csdn.net/stdcoutzyx/article/details/53771471
-
-图像风格转换(Image style transfer)
-
-https://blog.csdn.net/u011534057/article/details/78935202
-
-风格迁移学习笔记(1):Multimodal Transfer: A Hierarchical Deep Convolutional Neural Network for Fast
-
-https://blog.csdn.net/u011534057/article/details/78935230
-
-风格迁移学习笔记(2):Universal Style Transfer via Feature Transforms
-
-https://mp.weixin.qq.com/s/l3hQCQWh5NgihzTs2A049w
-
-风格迁移原理及tensorflow实现
-
-https://mp.weixin.qq.com/s/5Omfj-fYRDt9j2VZH1XXkQ
-
-如何用Keras打造出“风格迁移”的AI艺术作品
-
-https://mp.weixin.qq.com/s/4q-9QsXD04mD-f2ke7ql8A
-
-tensorflow风格迁移网络训练与使用
-
-https://blog.csdn.net/hungryof/article/details/53981959
-
-谈谈图像的Style Transfer（一）
-
-https://blog.csdn.net/Hungryof/article/details/71512406
-
-谈谈图像的style transfer（二）
-
-https://mp.weixin.qq.com/s/8Fz6Q-6VgJsAko0K7HDsow
-
-一个模型搞定所有风格转换，直接在浏览器实现（demo+代码）
-
-https://github.com/cysmith/neural-style-tf
-
-TensorFlow (Python API) implementation of Neural Style.这个项目实现了两张图片的画风融合，非常牛。
-
-https://github.com/jinfagang/pytorch_style_transfer
-
-这个和上面的一样，不过是用pytorch实现的。
-
-https://mp.weixin.qq.com/s/g1hpuzH36j_rbYR23Mwx0w
-
-开源图像风格迁移，快看看大画家的潜力股
-
-https://mp.weixin.qq.com/s/OzancX-44Si13ZtZiONnpQ
-
-基于感知损失的实时风格迁移与超分辨率重建
-
-https://mp.weixin.qq.com/s/yr9fNyzpOBt7dLsnh2T2xg
-
-使用TFLite在移动设备上优化与部署风格转化模型

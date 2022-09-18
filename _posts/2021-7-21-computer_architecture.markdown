@@ -39,10 +39,6 @@ https://zhuanlan.zhihu.com/p/31271788
 
 SIMD指令集
 
-https://zhuanlan.zhihu.com/p/113360369
-
-从现代GPU编程角度看SIMD与SIMT
-
 https://mp.weixin.qq.com/s/UExKPAMbA9EfRW35P3WnFA
 
 RISC-V其实是反潮流，但是……
@@ -72,6 +68,14 @@ SPMD和MPMD都是编程模型的概念。
 SIMT: Single Instruction Multiple Threads.
 
 SIMT最早是Nvidia发明的概念，它也是一种编程模型。
+
+https://zhuanlan.zhihu.com/p/562135333
+
+SIMT、SIMD和DSA（1）
+
+https://zhuanlan.zhihu.com/p/113360369
+
+从现代GPU编程角度看SIMD与SIMT
 
 ## RISC vs. CISC
 
@@ -114,6 +118,10 @@ RISC诞生与发展的缩影
 https://mp.weixin.qq.com/s/8w3V-ndKBD2fReM9QZokwA
 
 ARM架构要逆天？
+
+https://www.zhihu.com/question/267873770
+
+请问X86与ARM的功耗控制有什么区别？
 
 ---
 
@@ -268,51 +276,3 @@ https://mp.weixin.qq.com/s/xRvXCpHpDnMqSNjJyIf3XQ
 https://mp.weixin.qq.com/s/hN8tZ7xCRttIc-3pXdqElQ
 
 中科院计算所牵头发布《专⽤数据处理器DPU技术白皮书》，94页pdf
-
-# CPU+
-
-https://mp.weixin.qq.com/s/lz6EoLiLtPtWFMG1FJCuQw
-
-化合物半导体的机遇
-
-https://mp.weixin.qq.com/s/tTtySk3u6m2BGUkDto5Ojw
-
-可重构芯片的方法学原理
-
-https://mp.weixin.qq.com/s/RkRZX_scr__Q_mLPhaaWAA
-
-AMD Zen 2处理器架构为何要如此设计？
-
-https://mp.weixin.qq.com/s/dRv4xWV8laCYBaZ0DwOC3A
-
-如何从零开始设计一颗芯片？
-
-https://mp.weixin.qq.com/s/eAzdtKvfw7EVz5Ax3nXeZg
-
-自己动手设计专用处理器
-
-https://mp.weixin.qq.com/s/NfNJVoAC5aW1sgToAmYsGw
-
-3nm芯片终结者
-
-https://mp.weixin.qq.com/s/o8C6n-ZRw3vFS8E-hikXJQ
-
-移动的王者：深入分析ARM最强处理器Cortex A77
-
-https://www.cnblogs.com/f-ck-need-u/p/11141636.html
-
-关于CPU的一些基本知识总结
-
-https://mp.weixin.qq.com/s/vTOGmcahRxQBH8RgkTJ2GA
-
-中文系同学都能听懂的集成电路设计流程
-
-https://mp.weixin.qq.com/s/O-2ecxYVOgEfRuwEoS7gRA
-
-Fab的那些事儿
-
->Fab的全称叫Fabrication，也就是集成电路制造的工厂、车间。
-
-https://mp.weixin.qq.com/s/_NcQ-PxNpEtpYdo450Uukg
-
-半导体材料全球格局

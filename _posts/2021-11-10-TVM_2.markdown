@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  TVM实战, 炼丹实录
+title:  TVM实战
 category: toolchain 
 ---
 
@@ -185,54 +185,6 @@ SPIR-V是一种用于GPU通用计算和图形学的中间语言。
 https://blog.csdn.net/qwertyu1234/article/details/50163847
 
 SPIR-V研究：编译器基本原理
-
-# 炼丹实录
-
-## loss & accuracy
-
-loss：训练集损失值
-
-accuracy:训练集准确率
-
-val_loss:测试集损失值
-
-val_accruacy:测试集准确率
-
-以下5种情况可供参考：
-
-train loss 不断下降，test loss不断下降，说明网络仍在学习;（最好的）
-
-train loss 不断下降，test loss趋于不变，说明网络过拟合;（max pool或者正则化）
-
-train loss 趋于不变，test loss不断下降，说明数据集100%有问题;（检查dataset）
-
-train loss 趋于不变，test loss趋于不变，说明学习遇到瓶颈，需要减小学习率或批量数目;（减少学习率）
-
-train loss 不断上升，test loss不断上升，说明网络结构设计不当，训练超参数设置不当，数据集经过清洗等问题。（最不好的情况）
-
-参考：
-
-https://www.cnblogs.com/Timeouting-Study/p/12591448.html
-
-TensorFlow中loss与val_loss、accuracy和val_accuracy分别是什么含义
-
-## lenet
-
-最近对Lenet的训练过程作了一个有趣的测试。
-
-下表以accuracy达到90%，作为测试的目标：
-
-| Batch size | Epochs | Iterations | 计算量（以batch size=4的一个iteration为基准1） | 时间 |
-|:--:|:--:|:--:|:--:|:--:|
-| 4 | 4 | 15000 * 4 = 60000 | 60000 | 350min * 4 = 1400min |
-| 8 | 7 | 7500 * 7 = 52500 | 52500 * 2 = 105000 | 190min * 7 = 1330min |
-| 16 | 13 | 3750 * 13 = 48750 | 48750 * 4 = 195000 | 95min * 13 = 1235min |
-| 32 | 25 | 1875 * 25 = 46875 | 46875 * 8 = 375000 | 65min * 25 = 1625min |
-| 64 | 50 | 938 * 50 = 46900 | 46900 * 16 = 750400 | 41min * 50 = 2050min |
-
-从上表可以看出增大batch size可以减少iteration的数量，但是该方法有极限，不可任意小。
-
-增大batch size会增加计算量，但是由于设备IO和计算量的平衡，并不是batch size越小，运行时间就越短。
 
 # XLA+
 

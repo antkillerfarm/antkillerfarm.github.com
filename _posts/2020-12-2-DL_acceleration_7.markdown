@@ -143,7 +143,7 @@ https://mp.weixin.qq.com/s/KPT4P5SQ4E4ofPdjhhjRvA
 
 如何加速深度神经网络计算效率？看NVIDIA-ISSCC2021教程，附93页Slides与视频
 
----
+## GEMM
 
 多通道卷积操作最终可以转化为矩阵运算，如下图所示：
 
@@ -219,6 +219,32 @@ https://mp.weixin.qq.com/s/moQnarr1U-8v834bNJ10Zw
 
 GPU上的高效softmax近似
 
+## Tile
+
+矩阵乘法的实现（matmul）是一个简易的三层for循环。这样的循环其实对于缓存是不友好的。
+
+为解决缓存使用的问题，可以改变matmul的计算顺序，使得data矩阵的一部分数据可以长久地驻扎在缓存中，避免重复从内存读取这部分数据，这种技术被称为Blocking（或tiling）。它将矩阵划分几块，然后在小块中进行矩阵乘法，最后将数据汇集到输出矩阵中。
+
+## 内积乘法 vs 外积乘法
+
+![](/images/img4/matmul.png)
+
+内积：优点是每次每个计算单元缓存的并不需要太多，gather时通讯带宽需求也低。缺点是每个计算单元会重复缓存相同行和列，整体上看缓存了很多遍AB矩阵，潜在问题是缓存冲突，访存延迟增加。
+
+外积：优点是计算单元需要的数据少，整体上看只缓存一份A和B矩阵；缺点是每个计算节点计算结果无法及时reduce，导致输出访存量大，同时reduce操作数据较多，内部带宽要求高。
+
+![](/images/img4/bert.jpg)
+
+对于传统CNN网络，卷积核一般较小，适合于将核放入scratchpad memory，内积的缓存劣势不明显，计算效率高。
+
+但是对于transformer/bert等基于注意力机制的模型不但统治了NLP，在CV领域也大行其道的眼下，势必要优化下硬件结构，见前文分析，注意力机制使用QKV三个大矩阵两两相乘的结构，似乎更适合外积+片上SRAM。
+
+https://zhuanlan.zhihu.com/p/441943479
+
+矩阵乘法电路使用内积外积的优缺点及对计算架构需求分析
+
+## 参考
+
 https://mp.weixin.qq.com/s/PMOrY5ZElyPGOVxZgXFVzw
 
 如果只能做整数Integer运算还能用BERT吗？
@@ -226,12 +252,6 @@ https://mp.weixin.qq.com/s/PMOrY5ZElyPGOVxZgXFVzw
 https://mp.weixin.qq.com/s/Fes8FHngKnL8jklB7DhNCQ
 
 图计算加速架构综述
-
-## Tile
-
-矩阵乘法的实现（matmul）是一个简易的三层for循环。这样的循环其实对于缓存是不友好的。
-
-为解决缓存使用的问题，可以改变matmul的计算顺序，使得data矩阵的一部分数据可以长久地驻扎在缓存中，避免重复从内存读取这部分数据，这种技术被称为Blocking（或tiling）。它将矩阵划分几块，然后在小块中进行矩阵乘法，最后将数据汇集到输出矩阵中。
 
 # 模型优化工具
 
@@ -360,43 +380,3 @@ https://mp.weixin.qq.com/s/gbOmpP7XO1Hz_ld4iSEsrw
 https://mp.weixin.qq.com/s/rTFLiZ7DCo6vzD5O64UnMQ
 
 阿里提出新神经网络算法，压缩掉最后一个比特
-
-https://mp.weixin.qq.com/s/rzv8VCAxBQi0HsUcnLqqUA
-
-处理移动端传感器时序数据的深度学习框架：DeepSense
-
-https://mp.weixin.qq.com/s/UYk3YQmFW7-44RUojUqfGg
-
-上交大ICCV：精度保证下的新型深度网络压缩框架
-
-https://mp.weixin.qq.com/s/ZuEi32ZBSjruvtyUimBgxQ
-
-揭秘支付宝中的深度学习引擎：xNN
-
-https://mp.weixin.qq.com/s/0KlnQ8UUxpyhBRdeo0EOAA
-
-用于网络压缩的滤波器级别剪枝算法ThiNet
-
-https://mp.weixin.qq.com/s/FvR6loJ8KUxm7qwclestcQ
-
-专门为卷积神经网络设计的训练方法：RePr
-
-https://mp.weixin.qq.com/s/67GSnZnJySFrCESvmwhO9A
-
-论文解读Channel pruning for Accelerating Very Deep Neural Networks
-
-https://mp.weixin.qq.com/s/Lkxc_9sbRY157sMWaD5c7g
-
-视频分割在移动端的算法进展综述
-
-https://mp.weixin.qq.com/s/F0ykoKv027ycinsAZZjbWQ
-
-ThunderNet：国防科大、旷视提出首个在ARM上实时运行的通用目标检测算法
-
-https://mp.weixin.qq.com/s/J3ftOKDPBY5YYD4jkS5-aQ
-
-ThunderNet：Two-stage形式的目标检测也可很快而且精度很高
-
-https://mp.weixin.qq.com/s/ie2O5BPT-QxTRhK3S0Oa0Q
-
-剪枝需有的放矢，快手&罗切斯特大学提出基于能耗建模的模型压缩

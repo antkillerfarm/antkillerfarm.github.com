@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  uboot, Linux镜像文件, 嵌入式Linux
+title:  uboot, Linux镜像文件, 嵌入式Linux, diff&patch
 category: linux 
 ---
 
@@ -245,6 +245,20 @@ https://mp.weixin.qq.com/s/HchAIWJmqPNTqEEwb3TbAg
 
 Linux下xargs命令
 
+# Ubuntu使用技巧+
+
+## X Desktop Group
+
+设置`XDG_CACHE_HOME`可以将cache文件移动到较快的介质如SSD中，从而加速运行。或者移动到较大的分区，以腾出系统空间。
+
+https://www.cnblogs.com/zqb-all/p/10666474.html
+
+Linux实用命令之xdg-open
+
+https://blog.csdn.net/u014025444/article/details/94029895
+
+linux的XDG基本目录规范
+
 # Linux参考资源+
 
 https://mp.weixin.qq.com/s/OJHQZjxa6u8aA6jZyJnNPg
@@ -294,53 +308,3 @@ https://mp.weixin.qq.com/s/LLlzPB2emr9Hqr7gql0B4Q
 https://mp.weixin.qq.com/s/fzLcAkYwKhj-9hgoVkTzaw
 
 CPU飙高，系统性能问题如何排查？
-
-# 美帝暴行录++
-
-https://mp.weixin.qq.com/s/nh4suQ9zbm2NH-_uJRepbA
-
-美军强奸北大学生，中国“美分”竟提议：“被强暴女生扰乱治安，应予严惩”
-
-https://mp.weixin.qq.com/s/0v5V9BtRBzGslpbEsqaQfw
-
-美军卡车撞死中国律师，国民党怒斥“煽动造谣”，美军称死者“自行撞入”
-
-https://zhuanlan.zhihu.com/p/146006523
-
-从1921塔尔萨大屠杀看文明的冲突
-
-https://mp.weixin.qq.com/s/58nFythOXkPIN6i0rUOHNg
-
-“冤枉！我没有通共！”读美国前助理国务卿福特的万言自白书
-
-https://mp.weixin.qq.com/s/u8j0hgwUOhCW73bfO7ZD7g
-
-对于美国严重侵犯难民人权的问题，中国表示严重关切
-
-https://mp.weixin.qq.com/s/ec0h7TMhsbeE2q6TvtUYiQ
-
-22年前是谁下令轰炸了中国大使馆
-
-https://mp.weixin.qq.com/s/OJ2OyC3VvFUZN6Gqne7m5Q
-
-帝国主义的耻辱，抢殖民地都能亏钱（意大利）
-
-https://mp.weixin.qq.com/s/GakM5MRhZbCZOz1VJC7HHQ
-
-福报来了，美国14岁童工被政客允许工作至深夜11点
-
-https://mp.weixin.qq.com/s/KzW_4l-Ywr4hNHRbcWxPkg
-
-人被当做动物展览，人性之恶的底线在哪里？
-
-https://mp.weixin.qq.com/s/pkY6JIb3S0Vxvhq6wKch9w
-
-美国中情局是如何在非洲进行颠覆行动的？
-
-https://finance.sina.com.cn/jjxw/2021-11-27/doc-ikyakumx0623932.shtml
-
-“毒小麦”送叙利亚，美国实名制“投毒”！
-
-https://www.zhihu.com/answer/642503123
-
-科罗拉多煤田战争

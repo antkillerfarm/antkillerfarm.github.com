@@ -210,6 +210,12 @@ bazel还可以从网上下载依赖文件：`http_archive`
 
 `bazel clean --expunge`
 
+---
+
+可以通过在工作区中运行`bazel info output_base`来查找该工作区的输出库。但请注意，有一个包含最后一个命令输出的`command.log`文件，而`bazel info`本身是一个命令，因此这将覆盖`command.log`。
+
+---
+
 参考：
 
 http://www.cnblogs.com/Jack47/p/bazel-faq.html
@@ -252,7 +258,7 @@ sudo wget -O /usr/local/bin/bazel https://github.com/bazelbuild/bazelisk/release
 sudo chmod +x /usr/local/bin/bazel
 ```
 
-# Other
+# Build tools
 
 ## blade
 
@@ -275,27 +281,3 @@ https://msdn.microsoft.com/en-us/library/dd393574.aspx
 http://www.cnblogs.com/linianhui/archive/2012/08/30/2662648.html
 
 MSBuild入门
-
-## OkBuck
-
-OkBuck是Uber推出的构建工具。
-
-官网：
-
-https://github.com/uber/okbuck
-
-## WAF
-
-WAF是一个python写的构建工具。
-
-官网：
-
-https://waf.io
-
-## vcpkg
-
-这是MS提供的一个C/C++包管理工具，一般配合CMake使用。支持平台包括Windows/Linux/MacOS。
-
-官网：
-
-https://github.com/Microsoft/vcpkg

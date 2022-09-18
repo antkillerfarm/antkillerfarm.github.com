@@ -237,180 +237,32 @@ https://zhuanlan.zhihu.com/p/545672504
 
 MLIR原理与应用技术杂谈
 
-# 并行 & 框架 & 优化+
+https://zhuanlan.zhihu.com/p/513872467
 
-https://mp.weixin.qq.com/s/UbZtUL6Iveb4S3nTU0liGw
+面向ASIC设备的编译器框架：TVM or MLIR？
 
-深度神经网络的分布式训练概述：常用方法和技巧全面总结
+# Build tools+
 
-https://mp.weixin.qq.com/s/kLXJsHbBnRIFC3NLChPhzA
+## OkBuck
 
-如何高效进行大规模分类？港中文联合商汤提出新方法
+OkBuck是Uber推出的构建工具。
 
-https://mp.weixin.qq.com/s/F10UaaoxGPOE4pc59LBCRw
+官网：
 
-数据并行化对神经网络训练有何影响？谷歌大脑进行了实证研究
+https://github.com/uber/okbuck
 
-https://mp.weixin.qq.com/s/UF7DDenUQJ3bL83IHxOkIw
+## WAF
 
-分布式优化算法及其在多智能体系统与机器学习中的应用
+WAF是一个python写的构建工具。
 
-https://mp.weixin.qq.com/s/6h9MeBs89hTtWsYSZ4pZ5g
+官网：
 
-蚂蚁金服核心技术：百亿特征实时推荐算法揭秘
+https://waf.io
 
-https://mp.weixin.qq.com/s/xV5cLbCPb7Nh6i4i7DxJIQ
+## vcpkg
 
-没人告诉你的大规模部署AI高效流程！
+这是MS提供的一个C/C++包管理工具，一般配合CMake使用。支持平台包括Windows/Linux/MacOS。
 
-https://mp.weixin.qq.com/s/8R7YhcZ_Dt0oFIF3bQovxw
+官网：
 
-为了提升DL模型性能，阿里工程师打造了流式编程框架
-
-https://mp.weixin.qq.com/s/z6gXp-EeDID1ed8_DsUbOg
-
-90秒训练AlexNet！商汤刷新纪录
-
-https://mp.weixin.qq.com/s/HY2yPZ--Zm5_m3B70baWjQ
-
-谷歌开源效率怪兽GPipe，速度提升25倍，CIFAR-10精度达到99%
-
-https://mp.weixin.qq.com/s/HQW2bPyDY_3ecZWP6NYr-w
-
-大规模机器学习在LinkedIn预测模型中的应用实践
-
-https://mp.weixin.qq.com/s/i1PLA1xr3CefKx1EcVUVIg
-
-谷歌破世界纪录！圆周率计算到小数点后31.4万亿位
-
-https://mp.weixin.qq.com/s/rX8L63-jDGJT6lCAj04I3Q
-
-独家解读！阿里重磅发布机器学习平台PAI 3.0
-
-https://mp.weixin.qq.com/s/Ye2GVTFIrX3SbU1-4cDLoQ
-
-你天天叫的外卖，你知道这里面深度学习的水有多深吗
-
-https://mp.weixin.qq.com/s/FIWfbCLgckVzeNvfThIl4Q
-
-阿里线下智能方案进化史
-
-https://mp.weixin.qq.com/s/pqxiF6yEZzrw8qXu2hEsaA
-
-单机训练速度提升640倍！独家解读快手商业广告模型GPU训练平台Persia
-
-https://mp.weixin.qq.com/s/Jcz4XWDjMmbhmAiI_zBQXQ
-
-流式计算优化：时效性
-
-https://mp.weixin.qq.com/s/iAHvfgn54zIwfM9K8KFJnw
-
-DLM：微信大规模分布式n-gram语言模型系统
-
-https://mp.weixin.qq.com/s/s7sHzzLANOp8-1LxgXQskA
-
-谷歌开发者大会上，蚂蚁金服开源ElasticDL分布式深度学习系统
-
-https://mp.weixin.qq.com/s/IQMXg6nIJO-9-IG3mJpvRg
-
-ElasticDL：同时提升集群利用率和研发效率的分布式深度学习框架
-
-https://mp.weixin.qq.com/s/sn8fMAbJbeT6JUbCpBpN6A
-
-Jeff Dean与David Patterson：不思考体系结构的深度学习研究者不是好工程师
-
-https://mp.weixin.qq.com/s/6zLrWJ4nE0bHFlVe5dMxHw
-
-分布式深度学习新进展：让“分布式”和“深度学习”真正深度融合
-
-https://mp.weixin.qq.com/s/hjC-WTMIpbWWpmXoLBfD2g
-
-腾讯大规模分布式机器学习系统无量是如何进行技术选型的？
-
-https://mp.weixin.qq.com/s/mg-d1W5i9rzaLMNrvq0tSQ
-
-32分钟训练神经机器翻译，速度提升45倍
-
-https://mp.weixin.qq.com/s/iW0k80TUPuWDE9xwHvX91g
-
-为什么你需要Raven：全球首个真正分布式深度学习训练协议
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750181&idx=1&sn=156dac3c5646143fc2577972f1506836
-
-GPU捉襟见肘还想训练大批量模型？谁说不可以
-
-https://mp.weixin.qq.com/s/-CTVyKWtdTK0RIfzzPVyNQ
-
-分布式与高效深度学习，140页ppt详述深度学习压缩与联邦学习训练技术进展
-
-https://mp.weixin.qq.com/s/nTBuYuW7h9wZYuo3w1xGmQ
-
-分布式训练的方案和效率对比
-
-https://mp.weixin.qq.com/s/LOTQfD9KKtAq0zz4rObCGA
-
-EB级系统空中换引擎：阿里调度执行框架如何全面升级？（DAG 2.0）
-
-https://zhuanlan.zhihu.com/p/276122469
-
-分布式训练常用技术简介
-
-https://mp.weixin.qq.com/s/uQzwqcGwC9ZveuW64Lzkmg
-
-分布式训练怎么还减速了呢？
-
-https://zhuanlan.zhihu.com/p/294698838
-
-DLPerf—分布式深度学习最佳入门(踩坑)指南
-
-https://zhuanlan.zhihu.com/p/76638962
-
-Pytorch分布式训练
-
-https://zhuanlan.zhihu.com/p/360405558
-
-PyTorch分布式训练
-
-https://mp.weixin.qq.com/s/0aSBHvscloEnPMRLyNjQsg
-
-PyTorch分布式训练简明教程
-
-https://blog.csdn.net/orangerfun/article/details/123887725
-
-torch分布式训练
-
-https://mp.weixin.qq.com/s/r7kt1k7D1wurWs_uxdLCtg
-
-PyTorch源码解读之分布式训练
-
-https://mp.weixin.qq.com/s/_85oWK2plv2QOX5Qfg_-ZA
-
-大规模机器学习优化，195页ppt与视频
-
-https://mp.weixin.qq.com/s/soruo90Dbtzi6d1kA63Akg
-
-阿里提出智能算力引擎DCAF，节省20%GPU算力
-
-https://mp.weixin.qq.com/s/oDak7peTT5ynNYrH7LSWTg
-
-分布式层次GPU参数服务器架构
-
-https://zhuanlan.zhihu.com/p/28226956
-
-浮点峰值那些事儿
-
-https://zhuanlan.zhihu.com/p/285994980
-
-针对深度学习的GPU共享
-
-https://mp.weixin.qq.com/s/Np4w7RC2JFlB7ZGIduu71w
-
-爱奇艺机器学习平台的建设实践
-
-https://mp.weixin.qq.com/s/9k6PDusoDHjmz58HAZxZcw
-
-GPipe: 小批量流水线带来的大模型训练
-
-https://mp.weixin.qq.com/s/DwjvEn04lGzKU8mDu-5q4g
-
-大幅提升训练性能，字节跳动与清华提出新型分布式DNN训练架构
+https://github.com/Microsoft/vcpkg

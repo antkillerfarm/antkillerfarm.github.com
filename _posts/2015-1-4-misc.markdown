@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  大杂烩, Mac OS X
-category: linux 
+category: technology 
 ---
 
 * toc
@@ -122,192 +122,136 @@ https://mp.weixin.qq.com/s/vmIscEgDotR6ntiIdjGBLg
 
 可用的boot工具，早期有empireEFI、HackBoot。较新的有chameleon、Niresh。
 
-# 俄乌战争++
+# AI Chip+
 
-https://new.qq.com/omn/20220224/20220224A06G0T00.html
+https://mp.weixin.qq.com/s/S1y4NEx4_Mgwf68S2pexqA
 
-基辅攻陷：普京闪电战，一个半小时打趴乌克兰；绍伊古一战封神，比肩战神朱可夫
+拿着锤子找钉子，数字芯片领导者比特大陆进军人工智能
 
-https://mp.weixin.qq.com/s/zPO-ScWfgn3_GMsqE3A-4w
+https://mp.weixin.qq.com/s/gtgPYf939uYRzxAab_LZLQ
 
-俄乌冲突：为什么没看到钢铁洪流和百万大军
+谢源：计算存储一体化，在存储里做深度学习，架构创新实现下一代AI芯片
 
-https://www.zhihu.com/question/522594323
+https://mp.weixin.qq.com/s/s-fYxv4z5kkJUFueU2IR7w
 
-泽连斯基2022年3月17日联合国演讲，左胸图案为什么那么像纳粹铁十字勋章?（哥萨克十字）
+BP表达式与硬件架构：相似性构建更高效的计算单元
 
-https://mp.weixin.qq.com/s/PUqFEBUN6OaGZjB-ojrMRg
+https://mp.weixin.qq.com/s/1r7G84les7FihqPbSiS0Ng
 
-一个乌克兰女性的伤痛与纪念
+华为首款手机端AI芯片麒麟970
 
-https://mp.weixin.qq.com/s/u8rbgwjt-WOsHaFSj-JeMw
+https://mp.weixin.qq.com/s/y9dVg9YtfWxu6NcW-fxi6Q
 
-从2014到2022：俄乌之间，发生了什么？
+内存带宽与计算能力，谁才是决定深度学习执行性能的关键？
 
-https://mp.weixin.qq.com/s/u7C1THhjnWLRLR4z7casbQ
+https://mp.weixin.qq.com/s/K_dohaZbCISZlxe1Utu50w
 
-在乌克兰，日常生活与国家的分裂
+如何用FPGA加速卷积神经网络(CNN)？
 
-https://www.zhihu.com/question/523693204
+https://mp.weixin.qq.com/s/z68hk1yqg60QCjgTyzgG2w
 
-普京表示向欧洲国家供应天然气将用卢布进行结算，将产生哪些影响？
+GPU深度学习的“加速神器”
 
-https://www.163.com/dy/article/H27B36J005453NII.html
+https://mp.weixin.qq.com/s/O-NDsFs6AOwl43LyevXtzg
 
-对乌战争并非易事！俄国总参退役上校2月初的惊人预言
+OpenAI发布“块稀疏”GPU内核：实现文本情感分析与图像生成建模当前最优水平
 
-https://www.zhihu.com/question/523822936
+https://mp.weixin.qq.com/s/Qfbc2iQnXacOqOGIrpRQRw
 
-俄军控制的别尔江斯克港口地区发生三次原因不明爆炸，目前当地情况如何？
+Tensor Core究竟有多快？全面对比英伟达Tesla V100/P100的RNN加速能力
 
-https://baijiahao.baidu.com/s?id=1720008637085855507
+https://mp.weixin.qq.com/s/XXef4F9HEZizoWRYXwHitw
 
-一种几乎改变战争进程的武器：莫洛托夫鸡尾酒
+如何配置一台深度学习工作站?
 
-https://www.zhihu.com/question/524614755
+https://mp.weixin.qq.com/s/_xFRRkVyN9qevLeek7bFxQ
 
-如何评价3月27日前后俄军从基辅附近地区主动后撤？（普里皮亚季沼泽）
+深度学习中GPU和显存分析
 
-https://news.ifeng.com/c/8ESc2rP54Dv
+https://mp.weixin.qq.com/s/k5Xx-nnaf-yfWqGLIY3LEg
 
-要停火了？俄军调兵情况说明一切
+特斯拉的芯片究竟多强
 
-https://news.ifeng.com/c/8EXj93OufHt
+https://zhuanlan.zhihu.com/p/88927564
 
-全军出击！普京压上了俄军全部力量
+窥探神经网络加速器的数据复用（一）
 
-https://news.ifeng.com/c/8EeAtgpJ0Ob
+https://mp.weixin.qq.com/s/YARcCzQXqnJmWRtV2zd_FQ
 
-惊人反转，乌克兰兵力已是俄罗斯2倍
+国内外AI芯片发展现状
 
-https://news.ifeng.com/c/8Emu7czkfWy
+https://mp.weixin.qq.com/s/b_Hy0JSZ5ZGT9AsczCkp9Q
 
-俄罗斯宣布从基辅方向撤军，要停战了？
+ISSCC 2020：AI芯片架构的转变
 
-https://news.ifeng.com/c/8ErWfeGuVev
+https://zhuanlan.zhihu.com/p/115219461
 
-将军阵亡率15%？俄军在乌克兰遭遇了什么
+张量在神经网络加速器中的应用
 
-https://news.ifeng.com/c/8F4v75koosu
+https://pan.baidu.com/s/1zcXdXTaN3dbJ9VGplViHZw 提取码:ews4
 
-4月顿巴斯分胜负决生死，重演二战战役
+AI芯片体系架构和软件专题报告会2020论文下载
 
-https://news.ifeng.com/c/8FB20CHoBDN
+https://mp.weixin.qq.com/s/cBVio3W64np8fXwUQs2wIw
 
-统帅部最高机密——普京为何做出错误决断
+机器学习如何用于芯片系统设计？Jeff Dean推荐Google最新《机器学习系统芯片设计》70页ppt为你讲解
 
-https://news.ifeng.com/c/8FEyCcwsVG6
+https://zhuanlan.zhihu.com/p/150656419
 
-两只“大老虎”，坏了普京的大事
+AI芯片技术发展
 
-https://news.ifeng.com/c/8FMpNxpSHjc
+https://mp.weixin.qq.com/s/9fBe6MsUOCDhtp4MSfP2jg
 
-二战时苏军两度折戟之地，俄乌或将在此决胜负
+AI处理器热潮正在消退
 
-https://news.ifeng.com/c/8Fsc6DZP5g5
+https://mp.weixin.qq.com/s/JYTqJDlGw6Q2gNLaYIGLcQ
 
-俄罗斯乌克兰的大决战终于打响了
+特斯拉芯片究竟怎么样？
 
-https://news.ifeng.com/c/8G653CGmggn
+https://mp.weixin.qq.com/s/cA1AXfpV3ZcMNX9k5XKlww
 
-双线在决战，这两点决定俄乌战场输赢
+面向深度神经网络的芯片布图规划问题简介
 
-https://news.ifeng.com/c/8GKljOt9z6z
+https://zhuanlan.zhihu.com/p/231302709
 
-俄军只用“一只手”打乌克兰，自信还是动不了？
+聊聊GPU峰值计算能力
 
-https://news.ifeng.com/c/8GRIdyw3Bn2
+https://zhuanlan.zhihu.com/p/340775090
 
-5月决战初步战果，乌克兰陷入绝境？
+从Thinker到Evolver：对可演化AI芯片的探索
 
-https://news.ifeng.com/c/8GdA8irm4wu
+https://mp.weixin.qq.com/s/kuIsyX0QEIeFHn8tvFE8vw
 
-俄乌战争啥时候结束？美欧想法高度一致
+AI训练的最大障碍不是算力，而是“内存墙”
 
-https://www.zhihu.com/answer/2387251266
+https://mp.weixin.qq.com/s/MwZ9j1MIwRBrJK4iWKzRqQ
 
-如何评价俄罗斯国防部长绍伊古？
+芯故事：和AMD有渊源的那些AI创业公司
 
-https://mil.sina.cn/sd/2018-12-18/detail-ihmutuee0269859.d.html
+https://mp.weixin.qq.com/s/rtO8PxRj08GVimT3bfbplA
 
-俄军唯一航母居然被偷了 大量贵金属失窃价值140万
+我看英伟达H100 GPU
 
-https://mp.weixin.qq.com/s/kwRY-he_wcMp7b2VuQoDOQ
+https://www.zhihu.com/question/523521515
 
-都打了一个多月了，俄军在打什么东西
+如何评价英伟达3月22日发布的全新GPU H100？
 
-https://mp.weixin.qq.com/s/yI6P2bRpJC-VG39SLikLng
+https://mp.weixin.qq.com/s/S1fVrSfAM_UJh06Q43s8vA
 
-2022年俄乌战争——乌克兰主要参战部队的历史（1）
+网络芯片架构的新改变
 
-https://mp.weixin.qq.com/s/jlUZvp3XmF5TBUHZGS-piw
+https://zhuanlan.zhihu.com/p/47904879
 
-2022年俄乌战争——乌克兰主要参战部队的历史（2）
+AI芯片在5G中的机会
 
-https://mp.weixin.qq.com/s/0KyzvO3MJ1iEadRqtOQo3A
+https://mp.weixin.qq.com/s/Z_QVN7OCLqeyMrwK3Sc7qA
 
-俄罗斯军队虚弱的本质终于暴露无遗
+AI芯片和传统芯片的区别
 
-https://zhuanlan.zhihu.com/p/496004672
+https://mp.weixin.qq.com/s/mMiAGH2Yz42xes7jicyygA
 
-乌克兰：“喜剧演员”总统背后，站着乌军“冷面导演”铁将军（乌克兰武装部队总参谋长瓦列里·扎卢日内 Valeriy Zaluzhnyy）
+“超级芯片”或在十年内诞生，摩尔定律再续一命！（自旋电子逻辑器件“MESO器件”）
 
-https://www.163.com/dy/article/H534FI0S05531JS1.html
+https://zhuanlan.zhihu.com/p/557933130
 
-变态人妻鼓励俄军人老公戴套性侵乌克兰女人，魔鬼人妻遭人肉曝光
-
-https://zhuanlan.zhihu.com/p/506648469
-
-来自前线的回忆：鲁比日内血战纪实
-
-https://mp.weixin.qq.com/s/BZSPNVXJMUPYawB2d4v5eA
-
-战争中乌克兰的“寡头”们
-
-https://mp.weixin.qq.com/s/sinqouToEWsGaxk6hM6Nmg
-
-钢铁厂变身血肉磨坊 21世纪最惨烈攻城战将落幕
-
-https://www.zhihu.com/question/530996641
-
-如何看待在乌军发动的炮击中俄军总参谋长格拉西莫夫陆军大将负伤，电子战部队副司令西蒙诺夫陆军少将阵亡?
-
-https://zhuanlan.zhihu.com/p/502798862
-
-闪击覆灭——复盘霍斯托梅尔机场之战
-
-https://zhuanlan.zhihu.com/p/508508558
-
-踏入地狱——一位俄军空降兵的自述
-
-https://mp.weixin.qq.com/s/zoL1ZPt8rBm2eerZSR6xzA
-
-芬兰瑞典申请加入北约，北欧中立国模式宣告终结了吗？
-
-https://www.zhihu.com/question/49927644
-
-都有非常相似的历史，为什么乌克兰人反俄，而白罗斯人却亲俄？
-
-https://zhuanlan.zhihu.com/p/519481132
-
-俄罗斯还有多少辆坦克？
-
-https://zhuanlan.zhihu.com/p/509289102
-
-毁家纾难——俄罗斯是怎样援助顿巴斯分裂武装的？
-
-https://view.inews.qq.com/a/20220528A00YI019
-
-空有优势的俄军，为何拿乌克兰无人机没招？
-
-https://www.thepaper.cn/newsDetail_forward_18439240
-
-乌克兰总统泽连斯基视察卢甘斯克地区利西昌斯克前线
-
-https://mp.weixin.qq.com/s/A8qiQqTGl-heIOXmVAC3dA
-
-乌克兰战场直播，300美元刷一发火箭弹
-
-https://zhuanlan.zhihu.com/p/557550632
-
-基辅之战 华邮深度系列报道
+从2022新公开的特斯拉机器人Dojo芯片架构信息到存算一体

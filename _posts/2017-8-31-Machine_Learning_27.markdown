@@ -161,64 +161,152 @@ https://mp.weixin.qq.com/s/iZOVUYKWP-fN8BwAuVwAUw
 
 TF-IDF不容小觑
 
-# 明++
+# Loss function详解+
 
-明成祖朱棣在位之时，紫禁城里发生了一件妃子阴谋弑杀朱棣的谋逆大案，由于此案涉及到明朝皇室机密，因此该案不见于目前国内留存的任何史料里，但在朝鲜史料《李朝实录》中，却详细记录了该事件的来龙去脉。
+https://mp.weixin.qq.com/s/CPfhGxig9BMAgimBSOLy3g
 
-https://xw.qq.com/amphtml/20220111A0AOA300
+用于图像检索的等距离等分布三元组损失函数
 
-女方因丈夫身体不好出轨并欲谋害，深藏600年的宠妃谋弑朱棣真相
+https://www.zhihu.com/question/375794498
 
----
+深度学习的多个loss如何平衡？
 
-古代的大户人家的家族墓地，有一种“坟少爷”，就是专门看坟的。一般都是本家的信得过的仆人，或者自家的佃户。
+https://mp.weixin.qq.com/s/tzY_lG0F9dP5Q-LmwuHLmQ
 
-大户人家的墓园，很多都占地好多亩，坟本身占不了多少地。其他地方坟少爷可以进行耕种，甚至雇人进行耕种，自己收租，俨然是个“代理地主”。
+常见损失函数和评价指标总结
 
-为什么叫坟“少爷”呢，因为仆人按岁数比主人小一辈。京剧《打侄上坟》里，朱灿就是陈家的坟少爷，他跟陈大官岁数差不多，陈大官21岁他可能不到20？或者大一点20多岁？他得管陈大官叫叔，在老爷陈伯愚面前称呼陈大官：“我一个人的大官叔”。
+https://mp.weixin.qq.com/s/lw9frtqocqsS-q2KGfzO1Q
 
-所以老严头的结局是，唯一的儿子死了，孙子们获罪也养不起他，他们家坟少爷给他养老送终的。
+深入理解计算机视觉中的损失函数
 
-最后的生活水平也不会很低，但绝比不了辉煌时。
+https://mp.weixin.qq.com/s/_HQ5an_krRCYMVnwEgGJow
 
-https://www.zhihu.com/question/436448306
+深度学习的多个loss如何平衡 & 有哪些“魔改”损失函数，曾经拯救了你的深度学习模型？
 
-严嵩明明是乞食于墓穴而死，为何《大明王朝1566》会让严嵩善终？？
+https://blog.csdn.net/shanglianlm/article/details/85019768
 
----
+十九种损失函数
 
-徐霞客1605年第一次出门旅行，1639年最后一次，去世于1641年。三年后的1644，大明灭亡。第二年他的家乡江阴变修罗战场。
+https://mp.weixin.qq.com/s/8oKiVRjtPQIH1D2HltsREQ
 
-1645年，江阴抵抗清军八十一天，被屠城。
+图像分割损失函数最全面、最详细总结
 
-1645年中元节，江阴城
+https://zhuanlan.zhihu.com/p/158853633
 
-奴仆暴动，斗争波及乡下，许多富户的房屋被烧毁，田契被撕毁，地主被杀死。
+一文理解Ranking Loss/Margin Loss/Triplet Loss
 
-徐霞客的大儿子就死在这时，非清军所杀，而是徐家的“奴变”。徐家奴仆趁战乱之际暴动，把徐家的田产分抢而空。
+https://zhuanlan.zhihu.com/p/235533342
 
-https://www.zhihu.com/question/437207962
+目标检测：Loss整理
 
-徐霞客为什么可以旅游30年不工作？
+https://zhuanlan.zhihu.com/p/191355122
 
----
+NLP样本不均衡之常用损失函数对比
 
-https://www.zhihu.com/question/424976410
+https://mp.weixin.qq.com/s/KL_D8pWtcXCJHz7dd70jyw
 
-为什么明末西北没出现清末规模的回民战争，只是传统农民军？
+Face Recognition Loss on Mnist with Pytorch
 
-https://mp.weixin.qq.com/s/EsTiaXJFR_DVhOqzX7FDNw
+https://zhuanlan.zhihu.com/p/77686118
 
-明朝亡国启示录：民间不懂资本主义，还和国家抢利益
+机器学习常用损失函数小结
 
-https://www.zhihu.com/question/388077990
+https://zhuanlan.zhihu.com/p/38855840
 
-如果明朝愿意的话，当年的明朝有能力在东南亚建立殖民统治吗？
+SphereReID：从人脸到行人，Softmax变种效果显著
 
-https://www.zhihu.com/question/20096248
+https://mp.weixin.qq.com/s/ZoLO6OilivPgle03KdNzCQ
 
-古代打仗攻占城池，若攻打不下来，不能绕开，或者干脆放弃转而攻打重要城池引敌军来救吗？比如打南京，为何必须先打安庆？
+人脸识别中Softmax-based Loss的演化史
 
-https://www.zhihu.com/question/26899399
+https://mp.weixin.qq.com/s/DwtA6GivVCDvL4MXNDBFWg
 
-为什么元朝以海运为主，明清以运河漕运为主呢？
+阿里巴巴提出DR Loss：解决目标检测的样本不平衡问题
+
+https://zhuanlan.zhihu.com/p/145927429
+
+DR Loss
+
+https://mp.weixin.qq.com/s/x0aBo-w669_2FyCGKWJ4iQ
+
+理解计算机视觉中的损失函数
+
+https://mp.weixin.qq.com/s/LOewKsxtWm7dFJS6ioryuw
+
+Siamese网络，Triplet Loss以及Circle Loss的解释
+
+https://zhuanlan.zhihu.com/p/58883095
+
+常见的损失函数(loss function)总结
+
+https://mp.weixin.qq.com/s/UjBCjwNDIxDoAoyQAf8V6A
+
+旷视研究院提出Circle Loss，革新深度特征学习范式
+
+https://mp.weixin.qq.com/s/5RpbXzuHp_tR6C_nBdiXGA
+
+Circle Loss：从统一的相似性对的优化角度进行深度特征学习
+
+https://zhuanlan.zhihu.com/p/304462034
+
+根据标签分布来选择损失函数
+
+https://mp.weixin.qq.com/s/Ywzbn2_QqYd1W8dv8cxupw
+
+Seesaw Loss：一种面向长尾目标检测的平衡损失函数
+
+https://mp.weixin.qq.com/s/qJIlbLuM7--wj3fDLUecYw
+
+Pytorch中的四种经典Loss源码解析
+
+https://mp.weixin.qq.com/s/7Jg-YvS3nvcPJ-zYhK96EA
+
+分享神经网络中设计loss function的一些技巧
+
+https://mp.weixin.qq.com/s/cYcztl8N9JF-XXp9xLJIxg
+
+一文道尽softmax loss及其变种
+
+https://mp.weixin.qq.com/s/MTeuRYutMiCmthEAObyAIg
+
+从最优化的角度看待Softmax损失函数
+
+https://zhuanlan.zhihu.com/p/23340343
+
+Center Loss及其在人脸识别中的应用
+
+https://zhuanlan.zhihu.com/p/34404607
+
+人脸识别的LOSS（上）
+
+https://zhuanlan.zhihu.com/p/34436551
+
+人脸识别的LOSS（下）
+
+https://mp.weixin.qq.com/s/kI22wSoyNT3QXXI8pVwbjA
+
+腾讯AI Lab提出新型损失函数LMCL：可显著增强人脸识别模型的判别能力
+
+https://mp.weixin.qq.com/s/8KM7wUg_lnFBd0fIoczTHQ
+
+用收缩损失(Shrinkage Loss)进行深度回归跟踪
+
+https://mp.weixin.qq.com/s/piYyhPbA6kAXuSE5yHfQ1g
+
+人脸识别损失函数综述
+
+https://zhuanlan.zhihu.com/p/60747096
+
+人脸识别损失函数简介与Pytorch实现：ArcFace、SphereFace、CosFace
+
+https://mp.weixin.qq.com/s/_cVNNZBBJljdWBPU9d38CA
+
+常见的损失函数超全总结
+
+https://mp.weixin.qq.com/s/P6xLYrNP4pNKtHcxAWAOKg
+
+数据竞赛中的各种loss function
+
+https://mp.weixin.qq.com/s/Q4ryiTOSJQaJ2e5clmXjtg
+
+一文看尽深度学习中的15种损失函数

@@ -1,13 +1,105 @@
 ---
 layout: post
-title:  深度学习（十三）——花式池化, seq2seq
+title:  深度学习（十三）——姿态/行为检测, 花式池化
 category: DL 
 ---
 
 * toc
 {:toc}
 
-# 姿态/行为检测（续）
+# Non-local
+
+https://zhuanlan.zhihu.com/p/33345791
+
+Non-local neural networks
+
+https://zhuanlan.zhihu.com/p/109514384
+
+医学图像分割的Non-local U-Nets
+
+https://mp.weixin.qq.com/s/Tox7jEFNHFHZQ-KdojMIpA
+
+GCNet：当Non-local遇见SENet
+
+https://zhuanlan.zhihu.com/p/48198502
+
+Non-local Neural Networks论文笔记
+
+https://mp.weixin.qq.com/s/zHZO1pmY8PCoI9vkDOaUgw
+
+CCNet--于"阡陌交通"处超越恺明的Non-local
+
+https://mp.weixin.qq.com/s/6q2q9OVhOYjk4ZrhLvAdkA
+
+Non-local Neural Networks及自注意力机制思考
+
+https://mp.weixin.qq.com/s/v4IK4gJvZ3J03Ikrujiyhw
+
+视觉注意力机制：Non-local模块与Self-attention的之间的关系与区别？
+
+https://mp.weixin.qq.com/s/EElEYaDbfdxlGWL_jBEwzQ
+
+Non-local与SENet、CBAM模块融合：GCNet、DANet
+
+https://mp.weixin.qq.com/s/lZxamQryotfLTKpRJKaA5Q
+
+Non-local模块如何改进？来看CCNet、ANN
+
+https://mp.weixin.qq.com/s/2O-T6akdPjGe2rUZKoE4Kw
+
+Self-attention机制及其应用：Non-local网络模块
+
+https://zhuanlan.zhihu.com/p/138444916
+
+写写non local network
+
+# 姿态/行为检测
+
+基于CNN的2D多人姿态估计方法，通常有2个思路（Bottom-Up Approaches和Top-Down Approaches）：
+
+- Top-Down framework，就是先进行行人检测，得到边界框，然后在每一个边界框中检测人体关键点，连接成每个人的姿态，缺点是受人体检测框影响较大，代表算法有RMPE。
+
+- Bottom-Up framework，就是先对整个图片进行每个人体关键点部件的检测，再将检测到的人体部位拼接成每个人的姿态，代表方法就是openpose。
+
+## OpenPose
+
+OpenPose是一个实时多人关键点检测的库，基于OpenCV和Caffe编写。它是CMU的Yaser Sheikh小组的作品。
+
+>Yaser Ajmal Sheikh，巴基斯坦信德省易司哈克工程科学与技术学院本科（2001年）+中佛罗里达大学博士（2006年）。现为CMU副教授。
+
+![](/images/article/openpose.png)
+
+OpenPose的使用效果如上图所示。
+
+论文：
+
+《Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields》
+
+《Hand Keypoint Detection in Single Images using Multiview Bootstrapping》
+
+《Convolutional pose machines》
+
+官方代码（caffe）：
+
+https://github.com/CMU-Perceptual-Computing-Lab/openpose
+
+Tensorflow版本：
+
+https://github.com/ildoonet/tf-pose-estimation
+
+参考：
+
+https://zhuanlan.zhihu.com/p/37526892
+
+OpenPose：实时多人2D姿态估计
+
+https://mp.weixin.qq.com/s?__biz=MzIwMTE1NjQxMQ==&mid=2247488741&idx=2&sn=93f05747f3a94a2cbfa2431901d2d97f
+
+OpenPose升级，CMU提出首个单网络全人体姿态估计网络，速度大幅提高
+
+https://mp.weixin.qq.com/s/jAmUscrMZ8EmG3th-3Yx3w
+
+实战：基于OpenPose的卡通人物可视化
 
 ## DensePose
 
@@ -270,81 +362,3 @@ SoftPool：基于Softmax加权的池化操作
 https://mp.weixin.qq.com/s/86cOSCLWJZBs4vLHGxrjGQ
 
 我看尽了池化
-
-# seq2seq
-
-seq2seq最早用于Neural Machine Translation领域（与之相对应的有Statistical Machine Translation）。训练后的seq2seq模型，可以根据输入语句，自动生成翻译后的输出语句。
-
-![](/images/article/seq2seq.png)
-
-上图是seq2seq的结构图。可以看出seq2seq实际上是一种Encoder-Decoder结构。
-
-在Encoder阶段，RNN依次读入输入序列。但由于这时，没有输出序列与之对应，因此这仅仅相当于一个对隐层的编码过程，即将句子的语义编码为隐层的状态向量。
-
-从中发现一个问题：状态向量的维数决定了存储的语义的内容上限（显然不能指望，一个200维的向量，能够表示一部百科全书。）因此，seq2seq通常只用于短文本的翻译。
-
-在Decoder阶段，我们根据输出序列，反向修正RNN的参数，以达到训练神经网络的目的。
-
-## Beam Search Decoder
-
-https://guillaumegenthial.github.io/sequence-to-sequence.html
-
-Seq2Seq with Attention and Beam Search
-
-https://blog.csdn.net/mr_tyting/article/details/78604721
-
-Seq2Seq Learning(Encoder-Decoder,Beam Search,Attention)
-
-## 参考
-
-https://github.com/ematvey/tensorflow-seq2seq-tutorials
-
-一步步的seq2seq教程
-
-http://blog.csdn.net/sunlylorn/article/details/50607376
-
-seq2seq模型
-
-http://datartisan.com/article/detail/120.html
-
-Seq2Seq的DIY简介
-
-https://mp.weixin.qq.com/s/U5yqXBHFD9LgIQJrqOlXFw
-
-机器翻译不可不知的Seq2Seq模型
-
-http://www.cnblogs.com/Determined22/p/6650373.html
-
-DL4NLP——seq2seq+attention机制的应用：文档自动摘要（Automatic Text Summarization）
-
-https://mp.weixin.qq.com/s/m-Z0UBgmFQ4CE0yLKYoHZw
-
-seq2seq和attention如何应用到文档自动摘要
-
-http://blog.csdn.net/young_gy/article/details/73412285
-
-基于RNN的语言模型与机器翻译NMT
-
-http://karpathy.github.io/2015/05/21/rnn-effectiveness/
-
-The Unreasonable Effectiveness of Recurrent Neural Networks
-
-https://mp.weixin.qq.com/s/8u3v9XzECkwcNn5Ay-kYQQ
-
-基于Depthwise Separable Convolutions的Seq2Seq模型_SliceNet原理解析
-
-https://mp.weixin.qq.com/s/H6eYxS7rXGDH_B8Znrxqsg
-
-seq2seq中的beam search算法过程
-
-https://mp.weixin.qq.com/s/U1yHIc5Zq0yKCezRm185VA
-
-Attentive Sequence to Sequence Networks
-
-https://mp.weixin.qq.com/s/cGXANj7BB2ktTdPAL4ZEWA
-
-图解神经网络机器翻译原理：LSTM、seq2seq到Zero-Shot
-
-https://mp.weixin.qq.com/s/jYUAKyTpm69J6Q34A06E-w
-
-百度提出冷聚变方法：使用语言模型训练Seq2Seq模型

@@ -238,88 +238,156 @@ Distributed (Deep) Machine Learning Community是陈天奇发起的一个社区�
 
 https://github.com/dmlc/dmlc-core
 
-# 并行 & 框架 & 优化++
+# 机器人/无人驾驶参考资源+
 
-https://mp.weixin.qq.com/s/dJa5zOXgJJQOM5uWog3JZA
+https://mp.weixin.qq.com/s/cLhnFCQdftj6Qi5j-PWDzw
 
-Local Parallesim：一种新并行训练方法
+控制技术详解——控制理论
 
-https://zhuanlan.zhihu.com/p/335116835
+https://mp.weixin.qq.com/s/N39CF1M7nV2cwUUMGRnG7g
 
-推荐系统Serving架构分析
+控制技术详解——基于模型的控制方法
 
-https://mp.weixin.qq.com/s/DdsJ-ZB_cX9UhbQNK6dCag
+https://mp.weixin.qq.com/s/DrWeZOIhJV1dbpg7Ns6gJQ
 
-分布式深度学习训练网络综述
+控制技术详解——控制器的类型
 
-https://mp.weixin.qq.com/s/qpwBGlTtTLEAhYAUpPyXTQ
+https://mp.weixin.qq.com/s/Q4me1G9B8uwwRIr6dfETEA
 
-CMU：分布式机器学习原理与策略 AAAI2021教程，附221页ppt
+行为轨迹预测技术
 
-https://mp.weixin.qq.com/s/nK-9ck5S6noIETOb8b2dJw
+https://mp.weixin.qq.com/s/3ApXC3u13_O8s4QCYxldlQ
 
-vivo AI计算平台弹性分布式训练的探索和实践
+基于模块化轻量级网络的道路目标检测
 
-https://mp.weixin.qq.com/s/IzLtn1SR-aFuxXM3GNZbFw
+https://mp.weixin.qq.com/s/kAP8MMjTjVyeBPcpY5E1FQ
 
-蘑菇街自研服务框架如何提升在线推理效率？
+障碍物行为预测技术
 
-https://mp.weixin.qq.com/s/GheEA0Ag0vbhZeyzqpTl0A
+https://mp.weixin.qq.com/s/VwLNq84Nmg5--yTHlRdSJA
 
-分布式优化：在大数据时代应运而生
+深度学习在道路封闭挖掘方案的探索与实践
 
-https://mp.weixin.qq.com/s/Vb3AkoWHQY7WWBMZaVnf4g
+https://mp.weixin.qq.com/s/sxm2cD7DAhJ6eIhUDvYRKA
 
-微软发布DeepSpeed开源库，支持1000亿个参数模型的训练
+运动轨迹规划技术
 
-https://mp.weixin.qq.com/s/3uu50NWFJqA_MTb8wSxIKA
+https://mp.weixin.qq.com/s/hs6uMkRctASmH1YrNOKFdw
 
-如何优雅地训练大型模型？
+脱手检测在自动驾驶中的原理及应用
 
-https://mp.weixin.qq.com/s/RMDEvy-3-L-Rag1OrZLYhg
+https://zhuanlan.zhihu.com/p/83129242
 
-深度学习模型的训练时内存次线性优化
+自动驾驶近期行为预测和规划的一些文章介绍
 
-https://mp.weixin.qq.com/s/8PUIJykzoNe-fYht5ozrcQ
+https://zhuanlan.zhihu.com/p/83605553
 
-新一代CTR预测服务的GPU优化实践
+移动机器人同时估计自身位姿和物体位姿
 
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771181&idx=1&sn=30b2a5abc7261b4f2ea122e8e96fdabf
+https://mp.weixin.qq.com/s/M-ihYsQUsT3deekhniixrQ
 
-世界第一超算跑深度学习模型，2.76万块V100 GPU将分布式训练扩展到极致
+聊聊无人驾驶技术中的路由寻径
 
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771231&idx=2&sn=6907d6d7a98eab353a076ed48352aadc
+https://mp.weixin.qq.com/s/eVHAmNn7sHcghLkl-ksnAw
 
-15分钟完成Kinetics视频识别训练，除了超级计算机你还需要TSM
+谈谈“域控制器”
 
-https://www.zhihu.com/question/404721763
+https://mp.weixin.qq.com/s/aaN7W1cnlQyl4kPNGvxn_Q
 
-如何评价Google的GShard论文？
+斯坦福大学李飞飞高徒朱玉可博士毕业论文——闭合感知-动作循环: 通用自主机器人探索
 
-https://mp.weixin.qq.com/s/eTwSo3GnxSnK-BwwZeWmKA
+https://mp.weixin.qq.com/s/w8gjhL_NiQSY_OKZ_RXb2g
 
-Jeff Dean等提出自动化分层模型，优化CPU、GPU等异构环境，性能提升超60%
+3D机器人视觉在仓储物流和工业自动化领域的应用
 
-https://mp.weixin.qq.com/s/q0VENBNgolpeWmDapF5q_g
+https://mp.weixin.qq.com/s/rA9AAVx7AlNuS1l4IUuG0w
 
-在有池化层、1步幅的CNN上减少冗余计算，一种广泛适用的架构转换方法
+深度学习技术在自动驾驶中的应用
 
-https://mp.weixin.qq.com/s/YusIuUtvTwoskNRV_OV7iw
+https://mp.weixin.qq.com/s/4_jtb9gv20F6h1Ljw4JwEw
 
-100万帧数据仅1秒！AI大牛颜水成团队强化学习新作，代码已开源
+车载以太网通信的“套娃游戏”
 
-https://www.zhihu.com/answer/2259890109
+https://zhuanlan.zhihu.com/p/86184886
 
-资源受限的人工智能
+行人的行为意图建模和预测(上)
 
-https://zhuanlan.zhihu.com/p/371499074
+https://zhuanlan.zhihu.com/p/86185203
 
-OneFlow——让每一位算法工程师都有能力训练GPT
+行人的行为意图建模和预测(下)
 
-https://mp.weixin.qq.com/s/LjdHBEyQhJq3ptMj8XVT-w
+https://zhuanlan.zhihu.com/p/90773462
 
-TensorFlow在推荐系统中的分布式训练优化实践
+多传感器数据深度图的融合：最近基于深度学习的方法
 
-https://mp.weixin.qq.com/s/rEHhf32L09KXGJ9bbB2LEA
+https://mp.weixin.qq.com/s/4tOYmCRiFN0xsG6vbedrrg
 
-TensorFlow在美团外卖推荐场景的GPU训练优化实践
+ADAS系统中的动态目标感知策略（一）
+
+https://mp.weixin.qq.com/s/JT4p03m77ohOufL3JFecvA
+
+从硬件角度剖析自动驾驶，为什么说它是复杂的系统工程？
+
+https://mp.weixin.qq.com/s/UGdZCC80gQRTgHz9GV6USA
+
+MEMS IMU/陀螺仪对准基础
+
+https://mp.weixin.qq.com/s/v3gsmCWSI9pEwRolN8qWNA
+
+基于深度卷积网络的自动驾驶多模态轨迹预测
+
+https://mp.weixin.qq.com/s/R-17JgcGHG67KZ6yRYNFlA
+
+基于Frenet优化轨迹的无人车动作规划方法
+
+https://mp.weixin.qq.com/s/qZwqp5x6yEXbMBHGzevm0g
+
+ACC自适应巡航控制系统介绍
+
+https://zhuanlan.zhihu.com/p/57077589
+
+自动驾驶中路上行人的行为和意图理解及预测
+
+https://zhuanlan.zhihu.com/p/109900137
+
+传感器融合-任务篇
+
+https://zhuanlan.zhihu.com/p/109895639
+
+传感器融合-数据篇
+
+https://mp.weixin.qq.com/s/1sbL2vmugiIlSn_ehIOuig
+
+车载多传感器融合定位方案：GPS +IMU+MM
+
+https://mp.weixin.qq.com/s/5kJfhp3vi9uuSFaeONKfrA
+
+打破传统方法，MIT新芯片帮自动驾驶汽车穿越浓雾
+
+https://zhuanlan.zhihu.com/p/57781001
+
+自动驾驶系统的硬件平台讨论
+
+https://mp.weixin.qq.com/s/ZUxkZXLC0tPkzptFKtudhw
+
+让机器人也能“问路”的视觉语言导航新方法
+
+https://mp.weixin.qq.com/s/6OkLjK1bMbw6a3bvYn_DCQ
+
+深度学习在自动驾驶感知领域的应用
+
+https://zhuanlan.zhihu.com/p/57029694
+
+自动驾驶中单目摄像头检测输出3-D边界框的方法一览
+
+https://mp.weixin.qq.com/s/SZlwjnZrxCyaqRBg_sjQaA
+
+浅谈自动驾驶中的行为风险识别（一）
+
+https://mp.weixin.qq.com/s/QBnvLrD93b8cDEeNeZ5kAw
+
+车联网正步入歧途，命悬一线的开始
+
+https://zhuanlan.zhihu.com/p/553588646
+
+最新的“视觉为中心的BEV感知”综述论文

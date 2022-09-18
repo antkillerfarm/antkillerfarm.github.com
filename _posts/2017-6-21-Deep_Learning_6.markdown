@@ -9,7 +9,43 @@ category: DL
 
 # 词向量
 
-## FastText（续）
+## FastText
+
+Word2Vec作者Mikolov加盟Facebook之后，提出了文本分类新作FastText。
+
+FastText模型架构和Word2Vec中的CBOW模型很类似。不同之处在于，FastText预测标签，而CBOW模型预测中间词。
+
+Github：
+
+https://github.com/facebookresearch/fastText
+
+FastText的论文其实有两篇：
+
+《Bag of Tricks for Efficient Text Classification》
+
+这篇就是上述文本分类的论文。
+
+《Enriching Word Vectors with Subword Information》
+
+这篇是根据词根改进词向量的论文。因此，有的blog说，使用FastText生成词向量，实际上就是指的这篇文章。
+
+参考：
+
+http://www.algorithmdog.com/fast-fasttext
+
+超快的 fastText
+
+https://mp.weixin.qq.com/s/tXgF7rQdZm3IFAluMU5ywg
+
+fastText之源码分析
+
+https://mp.weixin.qq.com/s/S4RGicXwZqis6vQFpB31qQ
+
+Bag of Tricks for Efficient Text Classification
+
+https://mp.weixin.qq.com/s/eq1I92rjIAWEpYw-1fEHeQ
+
+从Facebook AI Research开源fastText谈起文本分类：词向量模性、深度表征和全连接
 
 https://mp.weixin.qq.com/s/aq_kWkwgwtz5qFo0lNEEqg
 
@@ -263,20 +299,3 @@ y_t &= \sigma_y(W_{y} h_t + b_y)
 >Jeffrey Locke Elman，1948年生，Harvard College本科（1969年）+University of Texas博士（1977年）。University of California, San Diego教授，American Academy of Arts and Sciences院士（2015年）。 美国心理学会会员。  
 >个人主页：   
 >https://tatar.ucsd.edu/jeffelman/
-
->Harvard College是Harvard University最古老的本部，目前一般提供本科教育。它和其他许多研究生院以及相关部门，共同组成了Harvard University。类似的还有Yale College和Yale University。
-
->American Academy of Arts and Sciences建于1780年。当时，美国正在法国等国的协助下与英国作战，所以美国的创立者选择比照包括作家、人文学者、科学家、军事家、政治家在内的法兰西学术院，建立新大陆的学术院。   
->后来，林肯总统比照英国皇家学会，于1863年创建了主要涵盖自然科学的National Academy of Sciences，United States。   
->这两个学院是美国学术界最权威的组织。前者的重要度略高于后者。
-
->美国的创立者，一般被翻译为Founding Fathers of the United States。此外还有一个更响亮的称号76ers。没错，NBA那支球队的名字就是这么来的。
-
-除了Elman RNN之外，还有Jordan RNN。（没错，这就是吴恩达的导师的作品）
-
-$$\begin{align}
-h_t &= \sigma_h(W_{h} x_t + U_{h} y_{t-1} + b_h) \\
-y_t &= \sigma_y(W_{y} h_t + b_y)
-\end{align}$$
-
-Elman RNN的记忆来自于隐层单元，而Jordan RNN的记忆来自于输出层单元。

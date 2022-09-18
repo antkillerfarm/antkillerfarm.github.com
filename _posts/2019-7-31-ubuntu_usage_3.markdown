@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Ubuntu使用技巧（三）, diff&patch
+title:  Ubuntu使用技巧（三）
 category: linux 
 ---
 
@@ -372,14 +372,4 @@ RTL8821CE网卡驱动已经集成到内核中，所以这次安装的网络体�
 
 3.开机进入Ubuntu，问题解决。后续进Windows，还是必须选择关机退出，而不是重启。
 
-# X Desktop Group
-
-设置`XDG_CACHE_HOME`可以将cache文件移动到较快的介质如SSD中，从而加速运行。或者移动到较大的分区，以腾出系统空间。
-
-https://www.cnblogs.com/zqb-all/p/10666474.html
-
-Linux实用命令之xdg-open
-
-https://blog.csdn.net/u014025444/article/details/94029895
-
-linux的XDG基本目录规范
+>Windows关机还是重启，对于挂载的Windows分区的写权限也有影响。必须重启才有写权限，这和麦克刚好相反。。。

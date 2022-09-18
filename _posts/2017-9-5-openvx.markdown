@@ -203,6 +203,26 @@ https://www.zhihu.com/question/456407362
 
 跨平台图形编程的未来会是怎么样的？
 
+## OpenMax
+
+一个免费的跨平台抽象软件层，用于加速在嵌入式和移动设备上的多媒体应用程序中捕获和呈现音频、视频和图像。
+
+但是在目前实际应用中，大部分硬件厂商主要提供算法功能，通常也以OMX IL层组件接口方式提供。所以OMX IL层的标准使用最多，DL层几乎没有厂商提供。而AL层是应用逻辑层，大部分系统也都有自己的多媒体框架，也比较少使用AL层接口。
+
+https://zhuanlan.zhihu.com/p/366810565
+
+OpenMax (OMX) 开发入门
+
+## DRM
+
+![](/images/img4/Graphics_Framework.png)
+
+DRM是Linux内核层的显示驱动框架，它把显示功能封装成open/close/ioctl等标准接口，用户空间的程序调用这些接口，驱动设备，显示数据。
+
+https://blog.csdn.net/weixin_41028621/article/details/110202300
+
+Libdrm库
+
 # 运算加速库
 
 ## Neon
@@ -322,73 +342,3 @@ GMP是一个C/C++的大整数计算库。
 官网：
 
 https://gmplib.org/
-
-# AI Chip+
-
-https://mp.weixin.qq.com/s/S1y4NEx4_Mgwf68S2pexqA
-
-拿着锤子找钉子，数字芯片领导者比特大陆进军人工智能
-
-https://mp.weixin.qq.com/s/gtgPYf939uYRzxAab_LZLQ
-
-谢源：计算存储一体化，在存储里做深度学习，架构创新实现下一代AI芯片
-
-https://mp.weixin.qq.com/s/s-fYxv4z5kkJUFueU2IR7w
-
-BP表达式与硬件架构：相似性构建更高效的计算单元
-
-https://mp.weixin.qq.com/s/1r7G84les7FihqPbSiS0Ng
-
-华为首款手机端AI芯片麒麟970
-
-https://mp.weixin.qq.com/s/y9dVg9YtfWxu6NcW-fxi6Q
-
-内存带宽与计算能力，谁才是决定深度学习执行性能的关键？
-
-https://mp.weixin.qq.com/s/K_dohaZbCISZlxe1Utu50w
-
-如何用FPGA加速卷积神经网络(CNN)？
-
-https://mp.weixin.qq.com/s/z68hk1yqg60QCjgTyzgG2w
-
-GPU深度学习的“加速神器”
-
-https://mp.weixin.qq.com/s/O-NDsFs6AOwl43LyevXtzg
-
-OpenAI发布“块稀疏”GPU内核：实现文本情感分析与图像生成建模当前最优水平
-
-https://mp.weixin.qq.com/s/Qfbc2iQnXacOqOGIrpRQRw
-
-Tensor Core究竟有多快？全面对比英伟达Tesla V100/P100的RNN加速能力
-
-https://mp.weixin.qq.com/s/XXef4F9HEZizoWRYXwHitw
-
-如何配置一台深度学习工作站?
-
-https://mp.weixin.qq.com/s/_xFRRkVyN9qevLeek7bFxQ
-
-深度学习中GPU和显存分析
-
-https://mp.weixin.qq.com/s/k5Xx-nnaf-yfWqGLIY3LEg
-
-特斯拉的芯片究竟多强
-
-https://zhuanlan.zhihu.com/p/88927564
-
-窥探神经网络加速器的数据复用（一）
-
-https://mp.weixin.qq.com/s/YARcCzQXqnJmWRtV2zd_FQ
-
-国内外AI芯片发展现状
-
-https://mp.weixin.qq.com/s/b_Hy0JSZ5ZGT9AsczCkp9Q
-
-ISSCC 2020：AI芯片架构的转变
-
-https://zhuanlan.zhihu.com/p/115219461
-
-张量在神经网络加速器中的应用
-
-https://pan.baidu.com/s/1zcXdXTaN3dbJ9VGplViHZw 提取码:ews4
-
-AI芯片体系架构和软件专题报告会2020论文下载

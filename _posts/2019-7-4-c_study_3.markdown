@@ -218,6 +218,17 @@ typeid可用于打印类型名称。这里的类型可以是固定类型，也�
 
 `cout << typeid(int).name() << typeid(T).name() << endl;`
 
+以下是一个复杂的例子，用于处理shared_ptr+派生类的情况：
+
+```cpp
+std::vector<std::shared_ptr<A>> a;
+class B : public A;
+class C : public A;
+a.push_back(std::make_shared<B>());
+auto a0 = a[0];
+cout << typeid(*a0).name() << endl;
+```
+
 # 判断模板参数的实际类型
 
 ```cpp
@@ -395,19 +406,6 @@ public:
 https://www.ibm.com/developerworks/cn/aix/library/1212_lufang_c11new/index.html
 
 C++11标准新特性：Defaulted和Deleted函数
-
-# 打印vector的N种方法
-
-```cpp
-auto vec = make_index_vector(std::make_index_sequence<10>());
-for(auto i : vec) {std::cout << i << ' ';}
-std::cout << std::endl;
-std::iota(vec.begin(), vec.end(), 999);
-std::copy(vec.begin(), vec.end(), std::ostream_iterator<int>(std::cout, " "));
-std::cout << std::endl;
-std::for_each(std::begin(vec),std::end(vec),[](int n){std::cout<<n<<" ";});
-std::cout << std::endl;
-```
 
 # const
 

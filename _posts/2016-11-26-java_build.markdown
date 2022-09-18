@@ -293,25 +293,3 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/jam
 https://blog.csdn.net/jadedrip/article/details/1722318
 
 bjam初接触
-
-# 两弹一星++++
-
-https://mp.weixin.qq.com/s/fVOd3ARuymsSqPXdz25nnw
-
-控制论与被遗忘的华人科学家（李郁荣）
-
-https://mp.weixin.qq.com/s/dNe-OmF_eTbtApyy13_QLA
-
-管梅谷先生简介
-
-https://www.zhihu.com/question/51700891
-
-如何评价“前三十年的工业化是一堆破铜烂铁＂？
-
-https://mp.weixin.qq.com/s/TLe6qAAxWJZnKUXo6EGp5g
-
-上海滩无线和芯片30年史
-
-https://mp.weixin.qq.com/s/Sq53aEbG3bIBML9qSwPzoA
-
-从奴隶到将军：工控“小华为”的三场战事（汇川技术）

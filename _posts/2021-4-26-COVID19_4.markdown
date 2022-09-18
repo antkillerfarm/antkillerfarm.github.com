@@ -1,11 +1,57 @@
 ---
 layout: post
-title: 新冠肺炎（四）——口罩, 科研
+title: 新冠肺炎（四）——口罩
 category: COVID19 
 ---
 
 * toc
 {:toc}
+
+# 国外疫情（续）
+
+https://www.zhihu.com/question/440392936
+
+如何看待巴西玛瑙斯的新冠疫情失控，是否宣告群体免疫最终会失败？
+
+https://www.zhihu.com/question/392250734
+
+如何看待巴西的疫情？
+
+https://mp.weixin.qq.com/s/9IX-1C1_-yrtUGmZde8drw
+
+全球疫情已触顶？或许尚未可知
+
+https://mp.weixin.qq.com/s/DuU6KJ8s3Cnfqs8nXFIZEw
+
+猛男露香肩打疫苗，为了号召民众各国领导人真的拼了
+
+https://mp.weixin.qq.com/s/wS6ZDo13UiSpHKc2yxGChw
+
+疫苗有时，归期无期——印度疫苗接种记
+
+https://mp.weixin.qq.com/s/mT_DqZbO8MsHrVwD4RCOwg
+
+印度疫情是怎么会一步步走到失控的？
+
+https://mp.weixin.qq.com/s/xqtYcPWPHtyO3d5ghBTQ4A
+
+你妈妈没氧气瓶就要死，这和我们警察有什么关系
+
+https://www.163.com/dy/article/G9QPULT4051480KF.html
+
+仅18天！印度一所大学34名教授死于新冠，怀疑特殊的变异病毒在校内传播
+
+https://mp.weixin.qq.com/s/IDWRFsA3im2VTx-gkIYvUw
+
+接种两剂疫苗后，我感染了新冠（商周）
+
+https://mp.weixin.qq.com/s/Or4XUC_Jsy3gKg4NHAwkPw
+
+年终小总结：In Waves
+
+https://mp.weixin.qq.com/s/zOEYWGkUA4LDQMrRtlsxRA
+
+年终小总结：Out of Waves
 
 # 口罩
 
@@ -200,43 +246,3 @@ https://mp.weixin.qq.com/s/tLljo8q-1eybDIk7CLQiSA
 https://mp.weixin.qq.com/s/SwYQFBv5lnej0g08bsBF1A
 
 “英伟达呼吸机”开源：计算机架构大师打造，成本暴减98%，黄仁勋点赞
-
-# 科研
-
-抗病毒药一般以vir结尾，例如Remdesivir。所以药品的中文名一般就是XXX韦。
-
-https://mp.weixin.qq.com/s/GAAeUD5ZDROltfxcoSFaeA
-
-期待救急，你了解“老药新用”吗？
-
----
-
-双黄连由金银花（双花）、黄芩和连翘三味中药配伍而成。它的历史并不算悠久，但在现有的网络信息中，也无法准确地指出究竟是何人、何时开发出这个如今家喻户晓的方子。有文献可考的历史表明，双黄连方剂产生于文革期间的东北地区——再准确一点，黑龙江哈尔滨，并且与现在的哈药集团有着千丝万缕的联系。
-
-https://mp.weixin.qq.com/s/7YscNLoSsuYhf3XQ5qz36w
-
-双黄连热销背后，那些你不知道的事
-
----
-
-![](/images/img3/covid.jpg)
-
-![](/images/img3/covid_2.jpg)
-
-大概在年初，新冠发生过一次重要的变异，就是D614G，在最早武汉上传的病毒序列中，这个位置的氨基酸编码是天冬氨酸(Asparagine,缩写为D)，也就是D614，而后来该位置发生了变异，氨基酸变成了甘氨酸（Glycine，缩写为G）。而变异后的结果就是这个突变株获得了更大的生存优势，更容易感染。
-
-![](/images/img4/COVID19.png)
-
-![](/images/img4/immuno.jpg)
-
-https://www.zhihu.com/question/26658191
-
-南方汉族中Y染色体的相同率较高，线粒体DNA的相同率很低，是否说明北方汉族对南方男性进行过灭族屠杀？
-
-https://mp.weixin.qq.com/s/TE7sPT-8sAyzsV7vPWYmtA
-
-南非新冠病毒变体快速传播，哪些值得注意？
-
-https://www.zhihu.com/question/435655677
-
-新冠病毒在英国变异后传播力高出70%，这该怎么防范？变种病毒会导致更高死亡率吗？

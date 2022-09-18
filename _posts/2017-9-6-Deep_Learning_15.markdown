@@ -9,6 +9,100 @@ category: DL
 
 # Normalization进阶（续）
 
+## Cosine Normalization
+
+Normalization还能怎么做？
+
+我们再来看看神经元的经典变换$$f_w(x)=w\cdot x$$。
+
+对输入数据x的变换已经做过了，横着来是LN，纵着来是BN。
+
+对模型参数w的变换也已经做过了，就是WN。
+
+好像没啥可做的了。然而天才的研究员们盯上了中间的那个点，对，就是$$\cdot$$。
+
+$$f_w(x)=\cos \theta=\frac{w\cdot x}{\|w\|\cdot\|x\|}$$
+
+参考：
+
+https://mp.weixin.qq.com/s/EBRYlCoj9rwf0NQY0B4nhQ
+
+Layer Normalization原理及其TensorFlow实现
+
+http://mlexplained.com/2018/01/10/an-intuitive-explanation-of-why-batch-normalization-really-works-normalization-in-deep-learning-part-1/
+
+An Intuitive Explanation of Why Batch Normalization Really Works
+
+https://mp.weixin.qq.com/s/KnmQTKneSimuOGqGSPy58w
+
+详解深度学习中的Normalization，不只是BN（1）
+
+https://mp.weixin.qq.com/s/nSQvjBRMaBeoOjdHbyrbuw
+
+详解深度学习中的Normalization，不只是BN（2）
+
+https://mp.weixin.qq.com/s/Z119_EpLKDz1TiLXGbygJQ
+
+MIT新研究参透批归一化原理
+
+https://mp.weixin.qq.com/s/Lp2pq95woQ5-E3RemdRnyw
+
+动态层归一化（Dynamic Layer Normalization）
+
+https://zhuanlan.zhihu.com/p/43200897
+
+深度学习中的Normalization模型
+
+## IBN-Net
+
+IBN-Net是汤晓鸥小组的新作（2018.7）。
+
+![](/images/img2/IBN-Net.png)
+
+与BN相比，IN有两个主要的特点：第一，它不是用训练批次来将图像特征标准化，而是用单个样本的统计信息；第二，IN能将同样的标准化步骤既用于训练，又用于推断。
+
+潘新钢等发现，IN和BN的核心区别在于，IN学习到的是不随着颜色、风格、虚拟性/现实性等外观变化而改变的特征，而要保留与内容相关的信息，就要用到BN。
+
+论文：
+
+《Two at Once: Enhancing Learning and Generalization Capacities via IBN-Net》
+
+参考：
+
+https://mp.weixin.qq.com/s/LVL90n4--WPgFLMQ-Gnf6g
+
+汤晓鸥为CNN搓了一颗大力丸
+
+https://mp.weixin.qq.com/s/6hNpgffEnUTkNAfrPgKHkA
+
+IBN-Net：打开Domain Generalization的新方式
+
+https://mp.weixin.qq.com/s/lCasw_-Bl3_J6cGBipNsSA
+
+从IBN-Net到Switchable Whitening：在不变性与判别力之间权衡
+
+## Group Normalization
+
+论文：
+
+《Group Normalization》
+
+![](/images/img2/Group_Normalization.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/H2GmqloNumttFlaSArjgUg
+
+FAIR何恺明等人提出组归一化：替代批归一化，不受批量大小限制
+
+https://mp.weixin.qq.com/s/44RvXEYYc5lebsHs_ooswg
+
+全面解读Group Normalization
+
+https://mp.weixin.qq.com/s/J8i0Qsl0q9sYS2iAc-M44w
+
+BN，LN，IN，GN都是什么？不同归一化方法的比较
+
 ## L2 Normalization
 
 L2 Normalization本身并不复杂，然而多数资料都只提到1维的L2 Normalization的计算公式：
@@ -185,101 +279,3 @@ https://mp.weixin.qq.com/s/54HQU3B4cSdRb1Z4srSfJg
 ![](/images/img2/style_transfer_2.png)
 
 可以看出随着层数的增加，CNN捕捉的区域更大，特征更加复杂，从边缘到纹理再到具体物体。
-
-## Deep Visualization
-
-上述的CNN可视化的方法一般被称作Deep Visualization。
-
-论文：
-
-《Understanding Neural Networks Through Deep Visualization》
-
-这篇论文是Deep Visualization的经典之作。作者是Jason Yosinski。
-
->Jason Yosinski，Caltech本科+Cornell博士。现为Uber AI Labs的科学家。   
->个人主页：   
->http://yosinski.com/
-
-该文提出了如下公式：
-
-$$V(F_i^l)=\mathop{\arg\max}_{X}A_i^l(X), X \leftarrow X + \eta\frac{\partial A_i^l(X)}{\partial X}$$
-
-X初始化为一张噪声图片，然后按照上述公式，优化得到激活函数输出最大的X。
-
-Deep Visualization除了用于提取纹理之外，还可用于模型压缩。
-
-论文：
-
-《Demystifying Neural Network Filter Pruning》
-
-https://github.com/yosinski/deep-visualization-toolbox
-
-这是作者Jason Yosinski提供的Deep Visualization的工具的代码。
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/deep-visualization-toolbox
-
-原始版本是基于python 2编写的，这是我修改的python 3版本
-
-https://github.com/Sunghyo/revacnn
-
-这是另一个CNN可视化工具
-
-参考：
-
-https://zhuanlan.zhihu.com/p/24833574
-
-Deep Visualization:可视化并理解CNN
-
-http://www.cnblogs.com/jesse123/p/7101649.html
-
-Tool-Deep Visualization
-
-https://mp.weixin.qq.com/s/dflEAOELK0f19y4KuVd_dQ
-
-40行Python代码，实现卷积特征可视化
-
-https://mp.weixin.qq.com/s/fpVFpN5beJFyLW19WnBzvw
-
-揭开黑盒一角！谷歌联合OpenAI发布“神经元显微镜”，可视化神经网络运行机制
-
-https://mp.weixin.qq.com/s/o-MFPt6LR_5XDpacqw754Q
-
-马里兰大学论文：可视化神经网络的损失函数
-
-https://mp.weixin.qq.com/s/iIhiMKutVtYEUgAiErLkVQ
-
-Deep Dream
-
-https://mp.weixin.qq.com/s/z_n_9Z88aiFaQ35jjPMcqg
-
-OpenAI发布“显微镜”，可视化神经网络内部结构
-
-https://mp.weixin.qq.com/s/MFKhmHcaQvufdRawFqisjA
-
-Distill详述“可微图像参数化“：神经网络可视化和风格迁移利器！
-
-https://mp.weixin.qq.com/s/Tm6fTjXG_7BVc70GROPdag
-
-TensorSpace：超酷炫3D神经网络可视化框架
-
-https://mp.weixin.qq.com/s/dBCGxi78D3TZybRedd7XVA
-
-最前沿的特征可视化(CAM)技术
-
-## DL方法
-
-受到上述事实的启发，2015年德国University of Tuebingen的Leon A. Gatys写了如下两篇论文：
-
-《Texture Synthesis Using Convolutional Neural Networks》
-
-《A Neural Algorithm of Artistic Style》
-
-代码：
-
-https://github.com/jcjohnson/neural-style
-
-torch版本
-
-https://github.com/anishathalye/neural-style
-
-tensorflow版本

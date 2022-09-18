@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十二）——Siamese network, SENet, 姿态/行为检测
+title:  深度学习（十二）——Siamese network, SENet
 category: DL 
 ---
 
@@ -9,7 +9,83 @@ category: DL
 
 # 花式卷积
 
-## 3D卷积（续）
+## 3D卷积
+
+3D卷积一般用于视频（2D图像+1D时序）和医学影像（3D立体图像）的分析处理中。
+
+![](/images/article/conv_3d.png)
+
+![](/images/img2/conv3d.gif)
+
+如上两图所示，3D卷积的kernel不再是2D的，而是3D的。
+
+它和多通道卷积的区别在于：
+
+多通道卷积不同的通道上的卷积核的参数是不同的，而3D卷积则由于卷积核本身是3D的，所以这个由于“深度”造成的看似不同通道上用的就是同一个卷积。
+
+3D卷积可以转化为2D卷积，方法如下图：
+
+Prepare Input：
+
+![](/images/img4/conv3d.png)
+
+Prepare Kernel：
+
+![](/images/img4/conv3d_2.png)
+
+Compute Output：
+
+![](/images/img4/conv3d_3.png)
+
+论文：
+
+《A two-stage 3D Unet framework for multi-class segmentation on full resolution image》
+
+![](/images/img2/UNet-3D.jpg)
+
+上图是一个用于CT图像的语义分割网络。其结构仿照UNet，故被称作UNet-3D。
+
+处理大型高分辨率3D数据时的一个常见问题是，由于计算设备的存储容量有限，输入深度CNN的体积必须进行裁剪（crop）或降采样（downsample）。这些操作会导致输入数据 batches 中分辨率的降低和类不平衡的增加，从而降低分割算法的性能。
+
+受到图像超分辨率CNN（SRCNN）和self-normalization（SNN）的架构的启发，我们开发了一个两阶段修改的Unet框架，它可以同时学习检测整个体积内的ROI并对体素进行分类而不会丢失原始图像解析度。对各种多模式音量的实验表明，当用简单加权的模子系数和我们定制的学习程序进行训练时，该框架显示比具有高级相似性度量标准的最先进的深CNN更好的分割性能。
+
+除了方形的3D卷积之外，还有球形的3D卷积：
+
+![](/images/img3/sph3d.png)
+
+上图是球卷积在点云处理中的应用。论文：
+
+《Spherical Kernel for Efficient Graph Convolution on 3D Point Clouds》
+
+参考：
+
+https://zhuanlan.zhihu.com/p/21325913
+
+3D卷积神经网络Note01
+
+https://zhuanlan.zhihu.com/p/21331911
+
+3D卷积神经网络Note02
+
+https://zhuanlan.zhihu.com/p/31841353
+
+3D CNN阅读笔记
+
+https://mp.weixin.qq.com/s/tcuyp4SK_9zXZKZtUu8h9Q
+
+从2D卷积到3D卷积，都有什么不一样
+
+https://zhuanlan.zhihu.com/p/25912625
+
+C3D network: 用于视频特征提取的3维卷积网络
+
+https://zhuanlan.zhihu.com/p/26350774
+
+SCNN-用于时序动作定位的多阶段3D卷积网络
+
+https://www.jiqizhixin.com/articles/2016-08-03
+
+FusionNet融合三个卷积网络：识别对象从二维升级到三维
 
 http://blog.csdn.net/zouxy09/article/details/9002508
 
@@ -248,97 +324,3 @@ https://mp.weixin.qq.com/s/ao7gOfMYDJDPsNMVV9-Dlg
 https://mp.weixin.qq.com/s/_7Iir2DZ_lROyR-BxScbnA
 
 SANet：视觉注意力SE模块的改进，并用于语义分割
-
-# Non-local
-
-https://zhuanlan.zhihu.com/p/33345791
-
-Non-local neural networks
-
-https://zhuanlan.zhihu.com/p/109514384
-
-医学图像分割的Non-local U-Nets
-
-https://mp.weixin.qq.com/s/Tox7jEFNHFHZQ-KdojMIpA
-
-GCNet：当Non-local遇见SENet
-
-https://zhuanlan.zhihu.com/p/48198502
-
-Non-local Neural Networks论文笔记
-
-https://mp.weixin.qq.com/s/zHZO1pmY8PCoI9vkDOaUgw
-
-CCNet--于"阡陌交通"处超越恺明的Non-local
-
-https://mp.weixin.qq.com/s/6q2q9OVhOYjk4ZrhLvAdkA
-
-Non-local Neural Networks及自注意力机制思考
-
-https://mp.weixin.qq.com/s/v4IK4gJvZ3J03Ikrujiyhw
-
-视觉注意力机制：Non-local模块与Self-attention的之间的关系与区别？
-
-https://mp.weixin.qq.com/s/EElEYaDbfdxlGWL_jBEwzQ
-
-Non-local与SENet、CBAM模块融合：GCNet、DANet
-
-https://mp.weixin.qq.com/s/lZxamQryotfLTKpRJKaA5Q
-
-Non-local模块如何改进？来看CCNet、ANN
-
-https://mp.weixin.qq.com/s/2O-T6akdPjGe2rUZKoE4Kw
-
-Self-attention机制及其应用：Non-local网络模块
-
-https://zhuanlan.zhihu.com/p/138444916
-
-写写non local network
-
-# 姿态/行为检测
-
-基于CNN的2D多人姿态估计方法，通常有2个思路（Bottom-Up Approaches和Top-Down Approaches）：
-
-- Top-Down framework，就是先进行行人检测，得到边界框，然后在每一个边界框中检测人体关键点，连接成每个人的姿态，缺点是受人体检测框影响较大，代表算法有RMPE。
-
-- Bottom-Up framework，就是先对整个图片进行每个人体关键点部件的检测，再将检测到的人体部位拼接成每个人的姿态，代表方法就是openpose。
-
-## OpenPose
-
-OpenPose是一个实时多人关键点检测的库，基于OpenCV和Caffe编写。它是CMU的Yaser Sheikh小组的作品。
-
->Yaser Ajmal Sheikh，巴基斯坦信德省易司哈克工程科学与技术学院本科（2001年）+中佛罗里达大学博士（2006年）。现为CMU副教授。
-
-![](/images/article/openpose.png)
-
-OpenPose的使用效果如上图所示。
-
-论文：
-
-《Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields》
-
-《Hand Keypoint Detection in Single Images using Multiview Bootstrapping》
-
-《Convolutional pose machines》
-
-官方代码（caffe）：
-
-https://github.com/CMU-Perceptual-Computing-Lab/openpose
-
-Tensorflow版本：
-
-https://github.com/ildoonet/tf-pose-estimation
-
-参考：
-
-https://zhuanlan.zhihu.com/p/37526892
-
-OpenPose：实时多人2D姿态估计
-
-https://mp.weixin.qq.com/s?__biz=MzIwMTE1NjQxMQ==&mid=2247488741&idx=2&sn=93f05747f3a94a2cbfa2431901d2d97f
-
-OpenPose升级，CMU提出首个单网络全人体姿态估计网络，速度大幅提高
-
-https://mp.weixin.qq.com/s/jAmUscrMZ8EmG3th-3Yx3w
-
-实战：基于OpenPose的卡通人物可视化

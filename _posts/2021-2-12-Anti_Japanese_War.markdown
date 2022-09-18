@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 抗日战争（一）
-category: Red star 
+category: Anti Japanese War 
 ---
 
 * toc

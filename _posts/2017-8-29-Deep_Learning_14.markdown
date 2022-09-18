@@ -1,13 +1,89 @@
 ---
 layout: post
-title:  深度学习（十四）——Normalization进阶
+title:  深度学习（十四）——seq2seq, Normalization进阶
 category: DL 
 ---
 
 * toc
 {:toc}
 
-# seq2seq（续）
+# seq2seq
+
+seq2seq最早用于Neural Machine Translation领域（与之相对应的有Statistical Machine Translation）。训练后的seq2seq模型，可以根据输入语句，自动生成翻译后的输出语句。
+
+![](/images/article/seq2seq.png)
+
+上图是seq2seq的结构图。可以看出seq2seq实际上是一种Encoder-Decoder结构。
+
+在Encoder阶段，RNN依次读入输入序列。但由于这时，没有输出序列与之对应，因此这仅仅相当于一个对隐层的编码过程，即将句子的语义编码为隐层的状态向量。
+
+从中发现一个问题：状态向量的维数决定了存储的语义的内容上限（显然不能指望，一个200维的向量，能够表示一部百科全书。）因此，seq2seq通常只用于短文本的翻译。
+
+在Decoder阶段，我们根据输出序列，反向修正RNN的参数，以达到训练神经网络的目的。
+
+## Beam Search Decoder
+
+https://guillaumegenthial.github.io/sequence-to-sequence.html
+
+Seq2Seq with Attention and Beam Search
+
+https://blog.csdn.net/mr_tyting/article/details/78604721
+
+Seq2Seq Learning(Encoder-Decoder,Beam Search,Attention)
+
+## 参考
+
+https://github.com/ematvey/tensorflow-seq2seq-tutorials
+
+一步步的seq2seq教程
+
+http://blog.csdn.net/sunlylorn/article/details/50607376
+
+seq2seq模型
+
+http://datartisan.com/article/detail/120.html
+
+Seq2Seq的DIY简介
+
+https://mp.weixin.qq.com/s/U5yqXBHFD9LgIQJrqOlXFw
+
+机器翻译不可不知的Seq2Seq模型
+
+http://www.cnblogs.com/Determined22/p/6650373.html
+
+DL4NLP——seq2seq+attention机制的应用：文档自动摘要（Automatic Text Summarization）
+
+https://mp.weixin.qq.com/s/m-Z0UBgmFQ4CE0yLKYoHZw
+
+seq2seq和attention如何应用到文档自动摘要
+
+http://blog.csdn.net/young_gy/article/details/73412285
+
+基于RNN的语言模型与机器翻译NMT
+
+http://karpathy.github.io/2015/05/21/rnn-effectiveness/
+
+The Unreasonable Effectiveness of Recurrent Neural Networks
+
+https://mp.weixin.qq.com/s/8u3v9XzECkwcNn5Ay-kYQQ
+
+基于Depthwise Separable Convolutions的Seq2Seq模型_SliceNet原理解析
+
+https://mp.weixin.qq.com/s/H6eYxS7rXGDH_B8Znrxqsg
+
+seq2seq中的beam search算法过程
+
+https://mp.weixin.qq.com/s/U1yHIc5Zq0yKCezRm185VA
+
+Attentive Sequence to Sequence Networks
+
+https://mp.weixin.qq.com/s/cGXANj7BB2ktTdPAL4ZEWA
+
+图解神经网络机器翻译原理：LSTM、seq2seq到Zero-Shot
+
+https://mp.weixin.qq.com/s/jYUAKyTpm69J6Q34A06E-w
+
+百度提出冷聚变方法：使用语言模型训练Seq2Seq模型
 
 https://mp.weixin.qq.com/s/Fp6G1aI_utDd_kTbdHvEVQ
 
@@ -230,97 +306,3 @@ Weight Normalization and Layer Normalization Explained
 https://zhuanlan.zhihu.com/p/114314389
 
 weight normalization原理和实现
-
-## Cosine Normalization
-
-Normalization还能怎么做？
-
-我们再来看看神经元的经典变换$$f_w(x)=w\cdot x$$。
-
-对输入数据x的变换已经做过了，横着来是LN，纵着来是BN。
-
-对模型参数w的变换也已经做过了，就是WN。
-
-好像没啥可做的了。然而天才的研究员们盯上了中间的那个点，对，就是$$\cdot$$。
-
-$$f_w(x)=\cos \theta=\frac{w\cdot x}{\|w\|\cdot\|x\|}$$
-
-参考：
-
-https://mp.weixin.qq.com/s/EBRYlCoj9rwf0NQY0B4nhQ
-
-Layer Normalization原理及其TensorFlow实现
-
-http://mlexplained.com/2018/01/10/an-intuitive-explanation-of-why-batch-normalization-really-works-normalization-in-deep-learning-part-1/
-
-An Intuitive Explanation of Why Batch Normalization Really Works
-
-https://mp.weixin.qq.com/s/KnmQTKneSimuOGqGSPy58w
-
-详解深度学习中的Normalization，不只是BN（1）
-
-https://mp.weixin.qq.com/s/nSQvjBRMaBeoOjdHbyrbuw
-
-详解深度学习中的Normalization，不只是BN（2）
-
-https://mp.weixin.qq.com/s/Z119_EpLKDz1TiLXGbygJQ
-
-MIT新研究参透批归一化原理
-
-https://mp.weixin.qq.com/s/Lp2pq95woQ5-E3RemdRnyw
-
-动态层归一化（Dynamic Layer Normalization）
-
-https://zhuanlan.zhihu.com/p/43200897
-
-深度学习中的Normalization模型
-
-## IBN-Net
-
-IBN-Net是汤晓鸥小组的新作（2018.7）。
-
-![](/images/img2/IBN-Net.png)
-
-与BN相比，IN有两个主要的特点：第一，它不是用训练批次来将图像特征标准化，而是用单个样本的统计信息；第二，IN能将同样的标准化步骤既用于训练，又用于推断。
-
-潘新钢等发现，IN和BN的核心区别在于，IN学习到的是不随着颜色、风格、虚拟性/现实性等外观变化而改变的特征，而要保留与内容相关的信息，就要用到BN。
-
-论文：
-
-《Two at Once: Enhancing Learning and Generalization Capacities via IBN-Net》
-
-参考：
-
-https://mp.weixin.qq.com/s/LVL90n4--WPgFLMQ-Gnf6g
-
-汤晓鸥为CNN搓了一颗大力丸
-
-https://mp.weixin.qq.com/s/6hNpgffEnUTkNAfrPgKHkA
-
-IBN-Net：打开Domain Generalization的新方式
-
-https://mp.weixin.qq.com/s/lCasw_-Bl3_J6cGBipNsSA
-
-从IBN-Net到Switchable Whitening：在不变性与判别力之间权衡
-
-## Group Normalization
-
-论文：
-
-《Group Normalization》
-
-![](/images/img2/Group_Normalization.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/H2GmqloNumttFlaSArjgUg
-
-FAIR何恺明等人提出组归一化：替代批归一化，不受批量大小限制
-
-https://mp.weixin.qq.com/s/44RvXEYYc5lebsHs_ooswg
-
-全面解读Group Normalization
-
-https://mp.weixin.qq.com/s/J8i0Qsl0q9sYS2iAc-M44w
-
-BN，LN，IN，GN都是什么？不同归一化方法的比较

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  word2vec, LSTM Speech Recognition实战
+title:  word2vec, LSTM Speech Recognition实战, 炼丹实录
 category: AI 
 ---
 
@@ -270,86 +270,58 @@ https://mp.weixin.qq.com/s/_hVHettrQLNZRTrO7Qh8qg
 
 简单的音频识别
 
-# 非洲+
+# 炼丹实录
 
-那部电影错误地将鲁塞萨巴吉纳塑造为一名英雄，其实当时胡图族政府是将饭店的幸存者作为和卢旺达爱国阵线讨价还价的人质。
+## loss & accuracy
 
-https://mp.weixin.qq.com/s/ujUym7tdraIYxgAstMTobg
+loss：训练集损失值
 
-《卢旺达饭店》主角原型，“有罪”！
+accuracy:训练集准确率
 
----
+val_loss:测试集损失值
 
-![](/images/img4/Ethiopia.jpg)
+val_accruacy:测试集准确率
 
-https://www.zhihu.com/question/271535502
+以下5种情况可供参考：
 
-埃塞俄比亚复兴大坝的建设会造成什么影响？
+train loss 不断下降，test loss不断下降，说明网络仍在学习;（最好的）
 
-https://www.zhihu.com/answer/218497294
+train loss 不断下降，test loss趋于不变，说明网络过拟合;（max pool或者正则化）
 
-中国在非洲的建设项目
+train loss 趋于不变，test loss不断下降，说明数据集100%有问题;（检查dataset）
 
-https://zhuanlan.zhihu.com/p/51947438
+train loss 趋于不变，test loss趋于不变，说明学习遇到瓶颈，需要减小学习率或批量数目;（减少学习率）
 
-非洲农业黑科技一览
+train loss 不断上升，test loss不断上升，说明网络结构设计不当，训练超参数设置不当，数据集经过清洗等问题。（最不好的情况）
 
----
+参考：
 
-非洲三大暴君：乌干达总统阿明、中非皇帝博卡萨、扎伊尔总统蒙博托。
+https://www.cnblogs.com/Timeouting-Study/p/12591448.html
 
----
+TensorFlow中loss与val_loss、accuracy和val_accuracy分别是什么含义
 
-自2013年开始法国就向马里派兵，打击当地分离主义图阿雷格民兵和伊斯兰国西非分支，结果却累战累败，不得不今年宣布减少在这一地区的军事存在。
+## lenet
 
-毕竟现在连马里军政府都敢驱逐法国大使。
+最近对Lenet的训练过程作了一个有趣的测试。
 
-https://www.zhihu.com/question/20360133
+下表以accuracy达到90%，作为测试的目标：
 
-法国是不是一直在衰落？
+| Batch size | Epochs | Iterations | 计算量（以batch size=4的一个iteration为基准1） | 时间 |
+|:--:|:--:|:--:|:--:|:--:|
+| 4 | 4 | 15000 * 4 = 60000 | 60000 | 350min * 4 = 1400min |
+| 8 | 7 | 7500 * 7 = 52500 | 52500 * 2 = 105000 | 190min * 7 = 1330min |
+| 16 | 13 | 3750 * 13 = 48750 | 48750 * 4 = 195000 | 95min * 13 = 1235min |
+| 32 | 25 | 1875 * 25 = 46875 | 46875 * 8 = 375000 | 65min * 25 = 1625min |
+| 64 | 50 | 938 * 50 = 46900 | 46900 * 16 = 750400 | 41min * 50 = 2050min |
 
----
+从上表可以看出增大batch size可以减少iteration的数量，但是该方法有极限，不可任意小。
 
-同一个客户，敬爱的阿比总统。用某龙和契丹装甲、教官差点亡国，一周损耗三万壮丁。换了土鸡装备和教官，立刻威风了起来，把提格雷赶回了老家。
+增大batch size会增加计算量，但是由于设备IO和计算量的平衡，并不是batch size越小，运行时间就越短。
 
-历史上的埃塞长期就是今天的提格雷+阿姆哈拉+奥罗莫州北部+厄立特里亚南部。其他地方都是时归附时脱离的属国，相当于埃塞俄比亚天下秩序里的朝贡国。
+## Other
 
----
+他是做图网络分类的，同一个数据集之前的测试准确率只有80出头，后来几篇文章就飙到了接近90，师兄怎么都复现不出来，后来开源了代码一看，好家伙，之前训练测试是二八分，新文章直接变成了三七分，就在dataloader里改的，但是作者文章完全没有提及，而且师兄把分布换成最开始的数据分布之后，那个新方法的效果还比不上原来的baseline
 
-在非洲有个国家叫加蓬，这个国家某些地方有一种神奇的“舅甥继承制”。自己的遗产不传给自己孩子，而是传给自己外甥。因为男性不能保证自己妻子生的孩子是自己的。但是可以保证，自己亲姐妹的孩子跟自己一定有血缘关系。
+https://www.zhihu.com/question/265953178
 
----
-
-所谓“瑙莱坞”，也称“尼莱坞”（Nollywood），都是尼日利亚电影的“昵称”。
-
-受到尼日利亚影响，乌干达的非洲同胞也炮制出一个“瓦卡莱坞”。
-
-https://www.zhihu.com/question/21614905
-
-尼日利亚作为电影年产量最大的国家是一个怎样的存在？
-
----
-
-https://zhuanlan.zhihu.com/p/311321195
-
-埃塞俄比亚，打起来了
-
-https://www.zhihu.com/question/40795708
-
-索马里兰是一个什么样的存在？
-
-https://www.zhihu.com/question/33912256
-
-索马里有多混乱？
-
-https://zhuanlan.zhihu.com/p/367150702
-
-刚刚总统阵亡的乍得，是个怎样的国家？
-
-https://zhuanlan.zhihu.com/p/368174414
-
-超级工程，撒哈拉沙漠大运河！
-
-https://zhuanlan.zhihu.com/p/371417880
-
-警惕，该组织已经渗透多个国家
+如何评价深度学习相关顶级期刊论文难复现的问题？
