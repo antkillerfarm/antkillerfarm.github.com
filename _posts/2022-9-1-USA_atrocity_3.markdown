@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 美帝暴行录（三）
-category: Red star 
+category: Korean War 
 ---
 
 * toc

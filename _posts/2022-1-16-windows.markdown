@@ -37,6 +37,12 @@ https://docs.microsoft.com/zh-cn/windows-server/storage/disk-management/change-a
 
 最近电脑更新了Win11，升级顺利，暂时无感。
 
+2022.9
+
+最近使用HP打印机的扫描功能，发现怎么都用不了。后来查了资料，除了要装打印机驱动之外，还要把Windows Image Acquisition服务重新启动一下。
+
+控制面板--管理工具--服务
+
 # 区块链
 
 比特币闻名已久，大概2009年时，我就听说过，然而一直没有研究它的原理。直到最近比特币大火，方才有所研究。不过这个东西，不太合我的研究兴趣，所以也就简单写一些吧。

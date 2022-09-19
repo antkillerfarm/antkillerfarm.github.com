@@ -19,9 +19,15 @@ category: Russia
 
 2月24日 普京宣布在顿巴斯地区展开军事行动。
 
-ISW（The Institute for the Study of War）的官网：
+
 
 https://www.understandingwar.org/
+
+ISW（The Institute for the Study of War）
+
+https://www.oryxspioenkop.com/2022/02/attack-on-europe-documenting-equipment.html
+
+这是荷兰的一家网站，提供了收集到的所有俄罗斯战损的信息。
 
 ---
 
@@ -150,20 +156,6 @@ https://mp.weixin.qq.com/s/nIX05VS_lJqMHaGhGDxZeg
 世界名画：近坦4师在苏梅。近坦四师在苏梅被乌克兰老乡捡漏捡成了世界名画。
 
 面对伤亡太大，俄军第37摩步旅旅长梅德韦杰夫仍命令士兵强行进攻，结果一位愤怒的俄军坦克兵开着坦克朝着梅德韦杰夫冲去，结果把旅长活活压死。
-
----
-
-苏联的工程师，声望和薪水双高，军事工程师就是王。但现在？他们是一无尊重二缺薪水的屌丝。
-
-结果，设计局和工程院找不到合格的新工程师。有些大学毕业会来，然后不得不走人，因为他们得养家糊口。坦克工程师现在平均年龄：55-60。
-
-https://zhuanlan.zhihu.com/p/507112662
-
-制裁怎样干掉俄罗斯(上)
-
-https://zhuanlan.zhihu.com/p/507342713
-
-制裁怎样干掉俄罗斯(下)
 
 ---
 
