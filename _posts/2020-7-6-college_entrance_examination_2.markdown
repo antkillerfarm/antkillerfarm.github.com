@@ -11,6 +11,8 @@ category: Education
 
 ## 中专的含金量是如何下降的（续）
 
+到了90年代初，国家开始试点教育产业化。首先是在国家统招计划之外增加了少量的地方定向生和委托培养生；后来又在国家的招生计划之外增加了地方招生计划。招生数量的增加降低了录取分数线（十分左右），但这种降分录取者需要向学校缴纳一定的培养费用。
+
 通常来说，培养费用一般是学费的2倍，加上学费本身，就是3倍，且持续2～3年。即使是城里的工薪阶层，也有些费劲，更不用说广大农民了。
 
 相关资料如下：
@@ -152,25 +154,3 @@ https://mp.weixin.qq.com/s/fGsdDiOOHhXeUMZg4zj8pA
 五道口职业技术学院：清华大学
 
 华北电力大学：朱辛庄电工职业技术学校
-
----
-
-https://mp.weixin.qq.com/s/X0rFmiGFL0A_WY72Fy-Ebg
-
-这个偏僻的小山村竟出了12位博士28位硕士，高产“学霸”背后原因曝光......
-
-https://mp.weixin.qq.com/s/Bu0kSL84XdZwcaidsWQrwQ
-
-他是新中国第一位博士（马中骐）
-
-https://mp.weixin.qq.com/s/0VCmgUSdR_NLqMz1q9IxXA
-
-清华北大算个啥，进这些班级才算牛！姚班，智班，图灵班你知多少？
-
-https://mp.weixin.qq.com/s/X0qCDTc9brd7qky38hT55g
-
-一张图看懂中科大、国科大、中科院、社科院、上科大之间的关系
-
-https://mp.weixin.qq.com/s/57YtRUOxB0BShJSvDbNgzg
-
-一张30年前的大学排行榜！

@@ -286,3 +286,7 @@ https://mp.weixin.qq.com/s/TtuC4DRqz1-QIDI66rBWcA
 https://www.zhihu.com/question/544511862
 
 网红教授陈春花学历遭质疑，其博士毕业学校为私人公司。还有哪些信息值得关注？
+
+https://www.zhihu.com/question/538443359
+
+南京大学大凉山少年全奖直博，毕业论文致谢自己看哭网友，你有哪些感受？
