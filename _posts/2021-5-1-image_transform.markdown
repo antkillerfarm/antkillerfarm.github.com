@@ -145,6 +145,10 @@ https://mp.weixin.qq.com/s/nL1monnsOPvYQAhJ874jhg
 
 AI修复抗美援朝影像：彩色高清还原志愿军71年前跨过鸭绿江
 
+https://mp.weixin.qq.com/s/TcRpQdpxOsktJiFpKVPSOA
+
+大谷Stable Diffusion巨制：《华强买瓜》好莱坞巨星版来了！
+
 ---
 
 最左边的那位是北洋政府第一任总理唐绍仪之第八女名甘唐宝玫（1902-1941）（后离婚再嫁改姓岑）～中国历史上的首个大型时装show的组织者。
