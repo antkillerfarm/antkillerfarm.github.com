@@ -127,6 +127,8 @@ https://mp.weixin.qq.com/s/43iUjHO5JcM6YRji8o6OjQ
 
 就在此时，有人劝陈嘉庚停办集美和厦大，借此维持营业，但他坚决不肯。他说：两校如关门，自己误青年之罪小，影响社会罪大……一经停闭，则恢复难望。
 
+敌未出国土前，言和即汉奸。
+
 https://mp.weixin.qq.com/s/hTjzZAjVh_0P9gJTSoC1XA
 
 他白手起家创办亚洲最大企业，百年前身家400万，全部捐出办大学
