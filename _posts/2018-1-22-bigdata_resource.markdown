@@ -25,7 +25,7 @@ https://www.cs.cmu.edu/~15712/index.html
 
 https://courses.cs.washington.edu/courses/cse552/
 
-CSE552: Distributed and Parallel Systems
+CSE 552: Distributed and Parallel Systems
 
 https://people.eecs.berkeley.edu/~alig/cs294-91/
 
