@@ -203,13 +203,17 @@ https://mp.weixin.qq.com/s/du3hb2oM5X6bMocdOab4dg
 
 模型量化: 只有整数计算的高效推理
 
-7Si6GQlj8IvYajoVnwm5DQ
+https://mp.weixin.qq.com/s/7Si6GQlj8IvYajoVnwm5DQ
 
 INT4量化用于目标检测
 
 https://mp.weixin.qq.com/s/7VEiQ0y8kB4nODtLCx1UQA
 
 模型量化打怪升级之路
+
+https://mp.weixin.qq.com/s/TXWdx3bbBNfaG3yp2G56ew
+
+提速还能不掉点！深度解析MegEngine 4 bits量化开源实现
 
 # 模型压缩与加速
 

@@ -141,42 +141,6 @@ https://www.zhihu.com/answer/642503123
 
 科罗拉多煤田战争
 
-https://zhuanlan.zhihu.com/p/242294917
+https://view.inews.qq.com/a/20220923A08QA200
 
-泰国，大战缅甸三百年！
-
-https://zhuanlan.zhihu.com/p/37928659
-
-越南帝国扩张
-
-https://zhuanlan.zhihu.com/p/303875663
-
-从数据看越南制造对中国的威胁有多大？
-
-https://mp.weixin.qq.com/s/NHkTQmJ3Jq1A3pgKI2DCeg
-
-这是9·11事件后，全世界最严重的恐怖袭击（巴厘岛恐怖袭击）
-
-https://zhuanlan.zhihu.com/p/377325999
-
-改名泰国，激怒中国
-
-https://mp.weixin.qq.com/s/61qqxaLhfcLSzbBi_x1XWw
-
-亚洲第二富国菲律宾，如今却靠出口女佣赚钱
-
-https://www.zhihu.com/question/456075868
-
-南越F4到底是什么来头？
-
-https://mp.weixin.qq.com/s/E-xJ1IGxklGpICFsrZla9Q
-
-西贡铁拳在西贡？南越总崩溃时的照片何止这张被误解
-
-https://www.zhihu.com/question/27700838
-
-越南的军事实力有能力统一中南半岛吗？
-
-https://www.zhihu.com/question/386153966
-
-导致明朝最终放弃安南的主导因素是什么？
+15岁少女30刀刺死强奸犯，被判赔15万美元
