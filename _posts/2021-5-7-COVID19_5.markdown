@@ -1,27 +1,31 @@
 ---
 layout: post
-title: 新冠肺炎（五）——科研
+title: 新冠肺炎（五）——病毒变异, 科研
 category: COVID19 
 ---
 
 * toc
 {:toc}
 
-# 科研
+# 病毒变异
 
-抗病毒药一般以vir结尾，例如Remdesivir。所以药品的中文名一般就是XXX韦。
+变异毒株的信息可搜寻以下网站：
 
-https://mp.weixin.qq.com/s/GAAeUD5ZDROltfxcoSFaeA
+https://www.who.int/en/activities/tracking-SARS-CoV-2-variants/
 
-期待救急，你了解“老药新用”吗？
+Tracking SARS-CoV-2 variants。这是WHO的官方网站
 
----
+https://nextstrain.org/
 
-双黄连由金银花（双花）、黄芩和连翘三味中药配伍而成。它的历史并不算悠久，但在现有的网络信息中，也无法准确地指出究竟是何人、何时开发出这个如今家喻户晓的方子。有文献可考的历史表明，双黄连方剂产生于文革期间的东北地区——再准确一点，黑龙江哈尔滨，并且与现在的哈药集团有着千丝万缕的联系。
+该站跟踪各种病原的演进
 
-https://mp.weixin.qq.com/s/7YscNLoSsuYhf3XQ5qz36w
+https://outbreak.info/
 
-双黄连热销背后，那些你不知道的事
+这是来自Scripps Research的几位科学家创办的COVID-19专题站。Scripps Research是美国最大的私立非营利性的生物医学研究机构，成立于1924年。
+
+https://cov-lineages.org/lineage_list.html
+
+变种列表
 
 ---
 
@@ -129,26 +133,6 @@ https://www.zhihu.com/question/464038841
 
 ---
 
-变异毒株的信息可搜寻以下网站：
-
-https://www.who.int/en/activities/tracking-SARS-CoV-2-variants/
-
-Tracking SARS-CoV-2 variants。这是WHO的官方网站
-
-https://nextstrain.org/
-
-该站跟踪各种病原的演进
-
-https://outbreak.info/
-
-这是来自Scripps Research的几位科学家创办的COVID-19专题站。Scripps Research是美国最大的私立非营利性的生物医学研究机构，成立于1924年。
-
-https://cov-lineages.org/lineage_list.html
-
-变种列表
-
----
-
 其实吧，19个变异点位真没啥稀奇的……
 
 比如说啊，快要销声匿迹的B.1.616，它有29个变异位点。
@@ -200,6 +184,34 @@ delta进入阿根廷，delta欲哭无泪……
 delta进入埃及，delta（可能）还是被挤没了……
 
 delta进入博茨瓦纳，流行率死活没法过半（然而隔壁南非和纳米比亚早已陷落）
+
+---
+
+就以英国为例吧，大流行的头两年，基本上全年爆两到三波的样子；结果到了2022年，时间轴顿时调整到快进模式，6个月时间爆了三波可还行：
+
+先是BA.1把Delta拍死在了沙滩上，
+
+然后BA.2又把BA.1拍死在了沙滩上，
+
+接下来BA.5马上就要把BA.2拍死在沙滩上……
+
+现在BA.5都还风头正劲呢，下一波毒王的有力竞争者BA.2.75就已经早早就位。
+
+# 科研
+
+抗病毒药一般以vir结尾，例如Remdesivir。所以药品的中文名一般就是XXX韦。
+
+https://mp.weixin.qq.com/s/GAAeUD5ZDROltfxcoSFaeA
+
+期待救急，你了解“老药新用”吗？
+
+---
+
+双黄连由金银花（双花）、黄芩和连翘三味中药配伍而成。它的历史并不算悠久，但在现有的网络信息中，也无法准确地指出究竟是何人、何时开发出这个如今家喻户晓的方子。有文献可考的历史表明，双黄连方剂产生于文革期间的东北地区——再准确一点，黑龙江哈尔滨，并且与现在的哈药集团有着千丝万缕的联系。
+
+https://mp.weixin.qq.com/s/7YscNLoSsuYhf3XQ5qz36w
+
+双黄连热销背后，那些你不知道的事
 
 ---
 

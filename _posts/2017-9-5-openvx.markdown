@@ -179,6 +179,18 @@ Vulkan：设备都不一样，就别假装自己上层能一样了，上层是�
 
 Vulkan与Metal、DirectX12并称为三大现代图形API。
 
+---
+
+OGL：非常老的API，包袱重。如果想做手机端，可以用GLES，相对来说干净很多；
+
+D3D11：状态API，有非常强大完善的驱动支持，易用并且性能非常高。并且有延迟状态模式，和D3D12很多情况下打的有来有回；
+
+D3D12：命令机式的API，完全异步的操作模式，开始把GPU作为异步硬件的更多细节呈现给程序员，难用；
+
+Vulkan：同上，但是全平台。因为没有D3D那么多的包袱，设计更加符合GPU行为。但加入了很多TBD/TBR概念，且信号量复杂，更加难用；
+
+---
+
 Sample:
 
 https://github.com/KhronosGroup/Vulkan-Samples
@@ -202,6 +214,10 @@ https://www.zhihu.com/people/snowfox-68/posts
 https://www.zhihu.com/question/456407362
 
 跨平台图形编程的未来会是怎么样的？
+
+https://zhuanlan.zhihu.com/p/456417172
+
+关于实时渲染和图形API的一些学习资料收录
 
 ## OpenMax
 

@@ -57,6 +57,16 @@ https://mp.weixin.qq.com/s/eY8h41X5d4Cw0eUoPsQEEA
 
 基于深度学习的图像匹配技术一览
 
+## neural rendering
+
+https://zhuanlan.zhihu.com/p/386589821
+
+神经渲染（neural rendering）
+
+https://zhuanlan.zhihu.com/p/567654308
+
+神经渲染的进展综述
+
 ## 参考
 
 https://mp.weixin.qq.com/s/djkjAfUO_DefTP2drzY_iQ

@@ -346,3 +346,7 @@ Python中的时间序列分解
 https://mp.weixin.qq.com/s/XImzWu0ZBe8Cgquc167iLA
 
 用于时间序列数据的泊松回归模型
+
+https://mp.weixin.qq.com/s/f8XG4tiYJUna2rMSo48Yyw
+
+漫谈时间序列预测

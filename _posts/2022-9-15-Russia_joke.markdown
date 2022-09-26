@@ -87,6 +87,14 @@ https://www.zhihu.com/question/542210837
 
 ---
 
+苏联自己连续宰了五任伪外蒙古的国家元首和政府首脑外加一个总素鸡卓勒宾·希耶。
+
+https://www.zhihu.com/answer/2685948108
+
+苏联对盟友真有可汗说得那么好吗?
+
+---
+
 https://mp.weixin.qq.com/s/kCLZyjoDoNK-py06hvmujA
 
 特供商店在苏联的兴衰（上）

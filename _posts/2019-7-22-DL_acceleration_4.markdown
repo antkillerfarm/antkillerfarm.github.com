@@ -115,7 +115,7 @@ float16已经被证明是不适合training的，更遑论Flexpoint了。
 
 BF16的成功经验表明，算法专家在AI芯片中的重要程度，甚至超过了IC专家。
 
-需要注意的是Flexpoint的失败，主要在于Dynamic Range和底数的位宽取舍上，其他设计思路还是有可取之处的。采用同样思路的MSFP就获得了成功。
+需要注意的是Flexpoint的失败，主要在于Dynamic Range和底数的位宽取舍上。他的设计思路本身还是有可取之处的。采用同样思路的MSFP就获得了成功。
 
 MSFP由微软提出，在微软Project Brainwave产品上得到了广泛的应用。
 

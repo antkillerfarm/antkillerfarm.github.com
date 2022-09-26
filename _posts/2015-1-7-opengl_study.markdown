@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenGL研究, GUI框架分析
+title:  OpenGL研究, GUI框架分析, 游戏开发
 category: technology 
 ---
 
@@ -106,6 +106,10 @@ OpenGL学习脚印: 绘制一个三角形
 https://zhuanlan.zhihu.com/p/97457249
 
 OpenGL + Qt: 三角形绘制
+
+https://mp.weixin.qq.com/s/APVu9agDJN4VJT8u18N1rQ
+
+移动应用中使用OpenGL生成转场特效
 
 # GUI框架分析
 
@@ -218,3 +222,55 @@ Tab Document Interface（TDI）
 https://www.zhihu.com/question/21143701
 
 在macOS中关闭应用窗口，为什么默认设定不是完全退出？
+
+# 游戏开发
+
+https://www.cnblogs.com/AMzz/p/12597808.html
+
+Havok物理引擎不完全指南--从入门到放弃
+
+https://www.zhihu.com/question/43616312
+
+为什么很少有游戏支持场景破坏？是因为技术问题吗？
+
+---
+
+securom是一个过时的保护软件，可以被欺骗注册、脱壳、虚拟机等方法轻易绕过，早已经被放弃开发。
+
+https://zhuanlan.zhihu.com/p/20519697
+
+让“三大妈”头疼的Denuvo是一种怎样的技术？
+
+---
+
+所谓的Voxel Space引擎，说白了就是高度图+Raycast的伪3D方案，适用于描绘起伏不定的山野开阔地形。野外大场景的一个特点是超级扁平化（水平尺度能大到几公里，垂直高度差却只有几十米、百十米）这种情况，BSP很不擅长去负担，树会超级不平衡，效力底下，遮挡关系很少，基于BSP的PVS会很可怜。Voxel在当时可以说是效果惊人，处理野外场景的能力，得到的表现力可以说甩开多边形3D引擎几条街。
+
+杯具的是后面行业的发展是GPU和相关的图形硬件突飞猛进。DF即使是野外场景也毫无优势，能支持的表现力和性能大幅度落后当时主流走多边形路线的FPS。
+
+参考：
+
+https://s-macke.github.io/VoxelSpace/
+
+Voxel Space
+
+https://www.zhihu.com/question/51667350
+
+曾经赫赫有名的FPS射击游戏《Delta Force 三角洲特种部队》为什么没落了？
+
+https://www.zhihu.com/answer/2154627154
+
+上古游戏引擎
+
+---
+
+https://zhuanlan.zhihu.com/p/32462890
+
+学习编程的好方法——控制台游戏
+
+https://zhuanlan.zhihu.com/p/529694839
+
+来，我们用Unity做一个大炮
+
+https://zhuanlan.zhihu.com/p/562570278
+
+像《红警》里的大兵那样找路（上）——全局向量场寻路

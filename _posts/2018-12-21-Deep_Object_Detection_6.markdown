@@ -163,6 +163,10 @@ https://www.zhihu.com/question/473350307
 
 如何评价旷视开源的YOLOX，效果超过YOLOv5?
 
+https://zhuanlan.zhihu.com/p/566469003
+
+YOLO内卷时期该如何选模型？
+
 # One-stage vs. Two-stage
 
 虽然我们在概述一节已经提到了One-stage和Two-stage的概念。但鉴于这个概念的重要性，在介绍完主要的目标检测网络之后，很有必要再次总结一下。

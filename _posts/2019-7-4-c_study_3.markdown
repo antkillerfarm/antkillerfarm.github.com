@@ -227,6 +227,9 @@ class C : public A;
 a.push_back(std::make_shared<B>());
 auto a0 = a[0];
 cout << typeid(*a0).name() << endl;
+
+std::reference_wrapper<const std::type_info> AInfo = typeid(A);
+typeid(*p) == AInfo.get()
 ```
 
 # 判断模板参数的实际类型

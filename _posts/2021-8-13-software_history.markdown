@@ -87,22 +87,6 @@ https://view.inews.qq.com/wxn/20220119A03BL400
 
 ---
 
-所谓的Voxel Space引擎，说白了就是高度图+Raycast的伪3D方案，适用于描绘起伏不定的山野开阔地形。野外大场景的一个特点是超级扁平化（水平尺度能大到几公里，垂直高度差却只有几十米、百十米）这种情况，BSP很不擅长去负担，树会超级不平衡，效力底下，遮挡关系很少，基于BSP的PVS会很可怜。Voxel在当时可以说是效果惊人，处理野外场景的能力，得到的表现力可以说甩开多边形3D引擎几条街。
-
-杯具的是后面行业的发展是GPU和相关的图形硬件突飞猛进。DF即使是野外场景也毫无优势，能支持的表现力和性能大幅度落后当时主流走多边形路线的FPS。
-
-参考：
-
-https://s-macke.github.io/VoxelSpace/
-
-Voxel Space
-
-https://www.zhihu.com/question/51667350
-
-曾经赫赫有名的FPS射击游戏《Delta Force 三角洲特种部队》为什么没落了？
-
----
-
 Ken Thompson在贝尔实验室的时候，他总是能在一台装了Unix的服务器上黑进他人的账户，不管他人怎么修改账户密码都没有用，当时贝尔实验室里面聚集的都是智商爆表、专业知识过硬的科学家，Ken的行为无疑让他们非常不爽。
 
 有个人分析了Unix的代码之后，找到了后门，重新编译部署了Uinx，但是让他们崩溃的事情再次发生，Ken还是能黑进他们的账户，这个事情让他们百思不得其解。
@@ -201,10 +185,6 @@ https://mp.weixin.qq.com/s/XPuJJm3k8gDl17oVmtdGtA
 https://www.zhihu.com/answer/840708044
 
 怎样评价《数码宝贝》第一部中的泉光子郎的编程水平？
-
-https://www.zhihu.com/answer/2154627154
-
-上古游戏引擎
 
 https://mp.weixin.qq.com/s/yDaIuhjhjqL-Vtl1gwcd0A
 

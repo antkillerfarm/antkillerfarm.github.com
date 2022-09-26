@@ -233,6 +233,12 @@ https://github.com/gcp/leela-zero
 
 这次作弊风波所使用的AI就是Leela Zero，可见目前（2018.5）它的棋力已经超过了顶尖棋手。
 
+---
+
+https://www.zhihu.com/question/554569740
+
+国际象棋比赛疑用智能肛珠作弊，比赛作弊是如何靠人工智能和肛珠实现的？
+
 ## ELF OpenGo
 
 ELF OpenGo是Facebook开源的围棋AI，它是FB的AI游戏框架ELF的一部分。

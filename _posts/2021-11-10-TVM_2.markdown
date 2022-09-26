@@ -243,6 +243,14 @@ https://wzzju.github.io/jax/xla/2022/02/17/jax-cpp/
 
 JAX程序转HLO执行
 
+https://zhuanlan.zhihu.com/p/532504225
+
+面向PyTorch用户的JAX简易教程[1]: JAX介绍
+
+https://zhuanlan.zhihu.com/p/544216783
+
+面向PyTorch用户的JAX简易教程[2]: 如何训练一个神经网络
+
 ## 参考
 
 https://mp.weixin.qq.com/s/RO3FrPxhK2GEoDCGE9DXrw
