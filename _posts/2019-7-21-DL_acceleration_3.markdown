@@ -15,6 +15,20 @@ https://github.com/andravin/wincnn
 
 这个项目可以很方便的计算不同大小的核的Winograd的结果。这个项目中还有一个pdf文件作为上述论文的补充材料，详细的给出了各矩阵的计算方法。
 
+---
+
+介绍Winograd的论文里一般使用了如下表示法：
+
+F(2x2,3x3)：
+
+2x2: 一次性输出结果大小。注意这里的“一次性”的定语，对于大尺寸的输入tensor来说，这意味着需要重复进行若干次小计算，才能得到完整的输出结果。因此这里的size，更准确的说法是output tile size。
+
+3x3: 卷积核大小
+
+之所以采用这个方法，是因为改变这两者都会导致预处理的稀疏矩阵的变化。
+
+---
+
 论文：
 
 《Efficient Sparse-Winograd Convolutional Neural Networks》
@@ -296,17 +310,3 @@ FP16相对于FP32，通常会有不到1%的精度损失。即使是不re-train�
 1.取整批样本在该layer的数值范围的并集，也就是所有最大（小）值的极值。
 
 2.取所有最大（小）值的平均值。
-
-## UINT量化
-
-论文：
-
-《Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference》
-
-![](/images/img2/INT8_2.png)
-
-UINT量化使用bias将数据搬移到均值为0的区间。
-
-$$r=S(q-Z)$$
-
-r为fp32表示；q则是low-bit(如int8)表示；S是自low-bit（int8）到fp32的scale；Z为零点shift，用于使q的某数值对应于r中的0.0。

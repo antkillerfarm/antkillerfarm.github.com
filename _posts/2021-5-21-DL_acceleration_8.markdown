@@ -9,6 +9,26 @@ category: DL acceleration
 
 # 模型压缩与加速进阶
 
+https://mp.weixin.qq.com/s/Faej1LKqurtwEIreUVJ0cw
+
+普林斯顿新算法自动生成高性能神经网络，同时超高效压缩
+
+https://mp.weixin.qq.com/s/uK-HasmiavM3jv6hNRY11A
+
+深度梯度压缩：降低分布式训练的通信带宽
+
+https://mp.weixin.qq.com/s/_MDbbGzDOGHk5TBgbu_-oA
+
+中大商汤等提出深度网络加速新方法，具有强大兼容能力
+
+https://mp.weixin.qq.com/s/gbOmpP7XO1Hz_ld4iSEsrw
+
+三星提出移动端神经网络模型加速框架DeepRebirth
+
+https://mp.weixin.qq.com/s/rTFLiZ7DCo6vzD5O64UnMQ
+
+阿里提出新神经网络算法，压缩掉最后一个比特
+
 https://mp.weixin.qq.com/s/m9I5TM9uJcgZvMusO667OA
 
 5MB的神经网络也高效，Facebook新压缩算法造福嵌入式设备
@@ -364,31 +384,3 @@ https://mp.weixin.qq.com/s/UDUOIIyGJtXHdc3xcyfOIg
 https://zhuanlan.zhihu.com/p/301162618
 
 深度学习模型压缩与加速
-
-https://mp.weixin.qq.com/s/Lv1JuwNohAsIAB1SKT7Lkg
-
-深度卷积网络的剪枝和加速
-
-https://mp.weixin.qq.com/s/VEnX3YKQ02mRg2qbqMbXcg
-
-轻量级网络综述—主干网络篇
-
-https://mp.weixin.qq.com/s/s9Bp3s-Ep3QPDpo1mmwgWw
-
-模型压缩系列一：模型替换
-
-https://mp.weixin.qq.com/s/CNaQbeLbN4J3CsUIMaezFw
-
-模型压缩系列二：模型蒸馏
-
-https://mp.weixin.qq.com/s/WVwB-ldc8Yoin6I_m6RT5g
-
-CNN轻量化模型及其设计原则综述
-
-https://mp.weixin.qq.com/s/IfvXrsUq8-cBDC4_3O5v_w
-
-Facebook新研究优化硬件浮点运算，强化AI模型运行速率
-
-https://mp.weixin.qq.com/s/Jsxiha_BFtWVLvO4HMwJ3Q
-
-工业界第一手实战经验：深度学习高效网络结构设计

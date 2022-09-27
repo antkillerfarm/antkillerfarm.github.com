@@ -255,3 +255,7 @@ https://mp.weixin.qq.com/s/mMiAGH2Yz42xes7jicyygA
 https://zhuanlan.zhihu.com/p/557933130
 
 从2022新公开的特斯拉机器人Dojo芯片架构信息到存算一体
+
+https://zhuanlan.zhihu.com/p/503371595
+
+AI芯片（下），自动驾驶里的“水浒卡”

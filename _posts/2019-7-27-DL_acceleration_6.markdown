@@ -11,6 +11,12 @@ category: DL acceleration
 
 ## 权值稀疏化实战（续）
 
+一般采用稀疏化率来描述权值的稀疏化程度。每层的稀疏化率可以相同，也可以不同。前者被称作Magnitude Pruner，而后者被称作Sensitivity Pruner。
+
+权值稀疏化的设置也和网络结构有关。比如分类网络，由于输入图片是高维数据，而分类结果是低维数据，因此在稀疏化处理的时候，**越靠近输出结果的Layer，其稀疏化程度就可以越高。**而最初的几层，即使只加少量稀疏化，也会导致精度的大幅下降，这时往往就不做或者少做稀疏化处理了。
+
+上述方法的问题在于，分类网络的计算量主要集中在最初几层，所以这种triangle prune mode对于压缩计算量的效果一般。
+
 除了训练后的权值稀疏化之外，权值稀疏化训练也是一种方法。
 
 论文：
@@ -298,27 +304,3 @@ https://mp.weixin.qq.com/s/5_qgj33tyVTHivpXkU4LDw
 https://zhuanlan.zhihu.com/p/93287223
 
 从入门到放弃：深度学习中的模型蒸馏技术
-
-https://zhuanlan.zhihu.com/p/113549023
-
-浅谈知识蒸馏方法研究综述
-
-https://mp.weixin.qq.com/s/mFuxCl0Mzv5hmDFewWZkrw
-
-FAIR&MIT提出知识蒸馏新方法：数据集蒸馏
-
-https://mp.weixin.qq.com/s/MDgqSwVEClNqNpaWuGTEpg
-
-微软亚研院提出用于语义分割的结构化知识蒸馏
-
-https://blog.csdn.net/xbinworld/article/details/83063726
-
-知识蒸馏（Distilling the Knowledge in a Neural Network），在线蒸馏
-
-https://mp.weixin.qq.com/s/ekKg46bQlWrlg9Hon01M5g
-
-Hinton胶囊网络后最新研究：用“在线蒸馏”训练大规模分布式神经网络
-
-https://mp.weixin.qq.com/s/SqxooZqSeD3wA4EFK5D3Kg
-
-再生神经网络：利用知识蒸馏收敛到更优的模型

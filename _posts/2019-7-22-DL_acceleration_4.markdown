@@ -7,9 +7,21 @@ category: DL acceleration
 * toc
 {:toc}
 
-# NN Quantization
+# NN Quantization（续）
 
-## UINT量化（续）
+## UINT量化
+
+论文：
+
+《Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference》
+
+![](/images/img2/INT8_2.png)
+
+UINT量化使用bias将数据搬移到均值为0的区间。
+
+$$r=S(q-Z)$$
+
+r为fp32表示；q则是low-bit(如int8)表示；S是自low-bit（int8）到fp32的scale；Z为零点shift，用于使q的某数值对应于r中的0.0。
 
 一般情况下，一个Tensor共享同一个S。有的时候为了提升精度，也可以一个channel共享同一个S，这也被称为per channel quantization。如果不共享S，则退化为普通的浮点数表示。
 
@@ -266,11 +278,3 @@ int8量化和tvm实现
 https://mp.weixin.qq.com/s/7rMnzbvp1hjDLuw_oifbng
 
 我们是这样改进PACT量化算法的
-
-## 量化技巧
-
-1.设计模型时，需要对输入进行归一化，缩小输入值的值域范围，以减小量化带来的精度损失。
-
-2.tensor中各分量的值域范围最好相近。这个的原理和第1条一致。比如YOLO的结果中，同时包含分类和bbox，而且分类的值域范围远大于bbox，导致量化效果不佳。
-
-3.最好不要使用ReluN这样的激活函数，死的神经元太多。神经元一旦“死亡”，相应的权值就不再更新，而这些值往往不在正常范围内。

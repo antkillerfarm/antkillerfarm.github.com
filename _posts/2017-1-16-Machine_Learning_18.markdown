@@ -169,6 +169,34 @@ Robust PCA-模式识别
 
 # 模型压缩与加速进阶+
 
+https://mp.weixin.qq.com/s/Lv1JuwNohAsIAB1SKT7Lkg
+
+深度卷积网络的剪枝和加速
+
+https://mp.weixin.qq.com/s/VEnX3YKQ02mRg2qbqMbXcg
+
+轻量级网络综述—主干网络篇
+
+https://mp.weixin.qq.com/s/s9Bp3s-Ep3QPDpo1mmwgWw
+
+模型压缩系列一：模型替换
+
+https://mp.weixin.qq.com/s/CNaQbeLbN4J3CsUIMaezFw
+
+模型压缩系列二：模型蒸馏
+
+https://mp.weixin.qq.com/s/WVwB-ldc8Yoin6I_m6RT5g
+
+CNN轻量化模型及其设计原则综述
+
+https://mp.weixin.qq.com/s/IfvXrsUq8-cBDC4_3O5v_w
+
+Facebook新研究优化硬件浮点运算，强化AI模型运行速率
+
+https://mp.weixin.qq.com/s/Jsxiha_BFtWVLvO4HMwJ3Q
+
+工业界第一手实战经验：深度学习高效网络结构设计
+
 https://mp.weixin.qq.com/s/F0ykoKv027ycinsAZZjbWQ
 
 ThunderNet：国防科大、旷视提出首个在ARM上实时运行的通用目标检测算法
