@@ -117,6 +117,10 @@ https://news.ifeng.com/c/8GdA8irm4wu
 
 俄乌战争啥时候结束？美欧想法高度一致
 
+https://news.ifeng.com/c/8JWGnIAc1x8
+
+俄乌交战200天 俄军曾有4次机会取胜
+
 https://www.zhihu.com/answer/2387251266
 
 如何评价俄罗斯国防部长绍伊古？
@@ -216,3 +220,11 @@ http://www.chinadaily.com.cn/hqkx/2006-06/08/content_612041.htm
 https://zhuanlan.zhihu.com/p/566841960
 
 统计——乌克兰目前接受的军援
+
+https://www.zhihu.com/question/555976713
+
+顿涅茨克等四地入俄公投结果公布，将对俄乌局势产生什么影响？
+
+https://www.zhihu.com/question/555941937
+
+“北溪”管道遭破坏发现3处泄露，泄漏区域发生强烈水下爆炸，这会造成什么影响？哪些信息值得关注？

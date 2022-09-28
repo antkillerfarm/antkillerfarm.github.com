@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  元, 明
+title:  元, 明（一）
 category: Ancient China 
 ---
 

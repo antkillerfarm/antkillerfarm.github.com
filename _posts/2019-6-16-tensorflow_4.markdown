@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  TensorFlow（四）
-category: AI 
+category: DL Framework 
 ---
 
 * toc

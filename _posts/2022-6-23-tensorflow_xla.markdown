@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  TF XLA
-category: AI 
+category: DL Framework 
 ---
 
 # Fused Graph

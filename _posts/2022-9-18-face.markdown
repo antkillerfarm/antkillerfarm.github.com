@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  人脸检测/识别进阶
+title:  人脸检测/识别（一）
 category: CV 
 ---
 
@@ -9,366 +9,364 @@ category: CV
 
 # 人脸检测/识别
 
-https://github.com/ChanChiChoi/awesome-Face_Recognition
+## Cascade CNN
 
-不止面部识别，一切关于人脸AI的资源都能在这里下载
+论文：
 
-https://mp.weixin.qq.com/s/FqH_5ztUWRDqb6X9_QggJw
+《A Convolutional Neural Network Cascade for Face Detection》
 
-深度学习在人脸检测中的应用
+![](/images/img2/CascadeCNN.jpg)
 
-https://mp.weixin.qq.com/s/lVsQDOJ9hfsgYuAxguKxkA
+这篇可以说是对经典的Viola-Jones方法的深度卷积网络实现，可以明显看出是3阶级联（12-net、24-net、48-net）。
 
-最新《端到端人脸识别》2020综述论文，44页pdf
+前2阶的网络都非常简单，只有第3阶才比较复杂。这不是重点，重点是我们要从上图中学习多尺度特征组合。
 
-https://github.com/jiankangdeng/handbook
+以第2阶段的24-net为例，首先把上一阶段剩下的窗口resize为24*24大小，然后送入网络，得到全连接层的特征。同时，将之前12-net的全连接层特征取出与之拼接在一起。最后对组合后的特征进行softmax分类。
 
-人脸识别手册 (分类论文集)
+除了分类网络之外，Cascade CNN还包含了3个修正bounding box的CNN网络，分别叫做12-calibration-net，24-calibration-net和48-calibration-net。他们的结构与12-net等类似。
 
-https://github.com/ShownX/FacePaperCollection
+网络结构方面也就这样了，该论文最牛之处在于给出了这类级联网络的训练方法。
 
-人脸相关文献代码集锦：人脸检测、人脸识别、人脸生成等
+![](/images/img2/CascadeCNN_2.jpg)
 
-https://zhuanlan.zhihu.com/p/74603794
+1.按照一般的方法组织正负样本训练第一阶段的12-net和12-calibration-net网络；
 
-基于深度学习的人脸检测和识别方法介绍
+2.利用上述的1层网络在AFLW数据集上作人脸检测，在保证99%的召回率的基础上确定判别阈值T1。
 
-https://mp.weixin.qq.com/s/FMremLz7777x-XGc02mmkA
+3.将在AFLW上判为人脸的非人脸窗口作为负样本，将所有真实人脸作为正样本，训练第二阶段的24-net和24-calibration-net网络；
 
-深度学习人脸检测入门必读文章
+4.重复2和3，完成最后阶段的训练。
 
-https://mp.weixin.qq.com/s/__b-7Cl482taXwIVb_9vwQ
+参考：
 
-以人为本的计算机视觉研究：WIDER Challenge 2019（人脸检测/行人检测/人物检索）
+http://blog.csdn.net/shuzfan/article/details/50358809
 
-https://mp.weixin.qq.com/s/eZ78biXN-mVw3s9Ky_LBZg
+人脸检测——CascadeCNN
 
-如何走近深度学习人脸识别？你需要这篇超长综述
+## MTCNN
 
-https://mp.weixin.qq.com/s/tum24mzS2cUiKW87a1weFA
+论文：
 
-人脸识别全面总结：从传统方法到深度学习
+《Joint Face Detection and Alignment using Multi-task Cascaded Convolutional Networks》
 
-https://mp.weixin.qq.com/s/bFnuGu4xLJiRfANi0Rkduw
+![](/images/img2/MTCNN.png)
 
-人脸识别的前世今生：从人工特征的百花齐放到深度学习的一统江湖
+上面是该方法的流程图，可以看出也是三阶级联，和CascadeCNN很像。
 
-https://zhuanlan.zhihu.com/p/32702868
+stage1: 在构建图像金字塔的基础上，利用fully convolutional network来进行检测，同时利用boundingbox regression和NMS来进行修正。
 
-人脸检测背景介绍和发展现状
+stage2: 将通过stage1的所有窗口输入作进一步判断，同时也要做boundingbox regression和NMS。
 
-https://zhuanlan.zhihu.com/p/69777256
+stage3: 和stage2相似，只不过增加了更强的约束：5个人脸关键点（landmark）。
 
-简述人脸识别开发原理。这篇文章对传统算法做了一个很好的总结。
+![](/images/img3/P-Net.jpg)
 
-https://zhuanlan.zhihu.com/p/79863225
+![](/images/img3/R-Net.jpg)
 
-人脸识别特征介绍以及难题概括
+![](/images/img3/O-Net.jpg)
 
-https://mp.weixin.qq.com/s/QvmHO_fulTtYJYB4MdoKGw
+上面三图分别是P-Net、R-Net和O-Net的网络结构图。
 
-初学深度学习人脸识别和验证必读文章
+需要注意的是，Cascade CNN和MTCNN都是比较早期的方案了，这里的人脸候选框，一般是用**滑动窗口**的方式生成的，这种方法的效率不高，不仅比不上Faster RCNN以后的RPN Layer，就连RCNN的Selective Search也颇有不如，完全就是Viola-Jones方法的简单翻版。
 
-http://mp.weixin.qq.com/s/KQxGQdLa3XzKVIFYqlrV7g
+参考：
 
-人脸检测与识别的趋势和分析
+http://blog.csdn.net/qq_14845119/article/details/52680940
 
-https://zhuanlan.zhihu.com/p/25335957
+MTCNN（Multi-task convolutional neural networks）人脸对齐
 
-人脸检测与深度学习
+http://blog.csdn.net/shuzfan/article/details/52668935
 
-https://mp.weixin.qq.com/s/a4aPycxfIe_qNIP_vrIZ5w
+人脸检测——MTCNN
 
-人脸检测算法综述
+https://mp.weixin.qq.com/s/IrZEQ69RNUdcs0Fl8fHmmQ
 
-http://www.leiphone.com/news/201608/MPXlWtGaJLPYL7NB.html
+如何应用MTCNN和FaceNet模型实现人脸检测及识别
 
-人脸检测发展：从VJ到深度学习
+https://mp.weixin.qq.com/s/NfqFj5iCIkbRD34Eu2Lb5g
 
-https://zhuanlan.zhihu.com/p/22591740
+MTCNN实时人脸检测网络详解与代码演示
 
-从事人脸识别研究必读的N篇文章
+## 人脸识别
 
-https://mp.weixin.qq.com/s/HteNoL3hkjNgUTbGguMflQ
+人脸检测是从一张图片中，识别出人脸，这和通常的目标检测没有太大的差别。**而人脸识别，则是精确到具体的人。**
 
-人脸识别技术全面总结：从传统方法到深度学习
+人脸识别通常的做法是：
 
-https://zhuanlan.zhihu.com/p/56619497
+1.使用人脸检测，得到人脸区域的图像。
 
-人脸检测江湖的那些事儿——从旷视说起
+2.提取人脸特征。一般采用CNN+FC+loss的结构。其中，CNN+FC用于提取特征，而loss仅用于训练阶段。在推理阶段，我们使用CNN+FC得到人脸的特征向量即可。
 
-https://mp.weixin.qq.com/s/7cZTbTBttEvN6NvOarSFgw
+3.特征的对比。比较两个特征向量的相似度（可以使用LMS或者cos相似度）。超过阈值，即认为是同一张脸。
 
-如何构建自定义人脸识别数据集
+## 生物特征识别
 
-https://zhuanlan.zhihu.com/p/234369216
+生物特征模态：人脸、虹膜、指纹、掌纹、静脉、声纹、步态、行人重识别。
 
-人脸识别最新进展
+https://mp.weixin.qq.com/s/t80KjO54AQyNSU1UgRJ5og
 
-https://mp.weixin.qq.com/s/U1g1pNjVn5CP6Q5ZosFc4Q
+生物特征识别学科发展报告
 
-深度人脸识别算法串讲
+## OHEM
 
-https://mp.weixin.qq.com/s/_hAxj4UX0qIxddVQSL_iWA
+论文：
 
-一种快速准确的人脸检测、识别和验证系统
+《Training Region-based Object Detectors with Online Hard Example Mining》
 
-https://mp.weixin.qq.com/s/tS_9gS2ADoEdSKCLB-cxpA
+代码：
 
-刘小明教授为你讲解人脸识别
+https://github.com/abhi2610/ohem
 
-https://mp.weixin.qq.com/s/CLgyaAslE4hYHi62UhzeGw
+参考：
 
-韩琥：深度学习让机器给人脸“贴标签”
+https://blog.csdn.net/zimenglan_sysu/article/details/51318058
 
-https://mp.weixin.qq.com/s/pUcVO8Fj-n9-pMwAzBvWuQ
+论文笔记
 
-山世光：人脸识别领域的“激荡20年”
+https://blog.csdn.net/Wayne2019/article/details/78945099
 
-https://mp.weixin.qq.com/s/Gqlo4wU0wtIcJDvQs2kTAw
+OHEM，Batch Hard（识别乱入），Focal Loss
 
-为了让你分清人脸识别与人脸检测，苹果要亲自给你科普
+https://blog.csdn.net/Z5337209/article/details/72838049
 
-https://mp.weixin.qq.com/s/ZJmgC8xTruaRLfCocodjqA
+Faster R-CNN 深入理解 && 改进方法汇总
 
-人脸检测与识别总结
+https://zhuanlan.zhihu.com/p/28202204
 
-https://mp.weixin.qq.com/s/lGIkLcglQGvDzdBQmZW0Qw
+困难样本挖掘
 
-判别特征学习方法用于人脸识别
+https://zhuanlan.zhihu.com/p/34179420
 
-https://mp.weixin.qq.com/s/t-vFSkQ7SYlTGGxEEY1mSg
+目标检测入门（二）：模型的评测与训练技巧
 
-近期人脸对齐的实证性研究
+https://mp.weixin.qq.com/s/GX_8uI398ghSegw9QLr_ew
 
-https://mp.weixin.qq.com/s/zhIyZ9MEFXAuIVUxAGkW-w
+Hard Negative Mining/OHEM你真的知道二者的区别吗？
 
-人脸对齐之GBDT(ERT)算法解读
+## FaceNet
 
-https://mp.weixin.qq.com/s/1g9PXc_3nhKMf1_-E_cVAA
+论文：
 
-图像识别的原理、过程、应用前景，精华篇！
+《FaceNet: A Unified Embedding for Face Recognition and Clustering》
 
-https://mp.weixin.qq.com/s/JY9WXneps-_tYmYhJAFlTg
+https://blog.csdn.net/stdcoutzyx/article/details/46687471
 
-人脸识别/人证比对《DocFace+: ID Document to Selfie Matching》论文解读
+FaceNet--Google的人脸识别
 
-https://mp.weixin.qq.com/s/d3aaN4vGAtMfLqOpU9oC6w
+## OpenFace
 
-香港中文大学助理教授吕健勤：面向人脸分析的深度学习方法
+OpenFace是一款开源的人脸识别软件。它的原理基于CVPR 2015年的论文：FaceNet。由于采用了深度学习技术，OpenFace对人脸识别的准确率，大大超过了OpenCV。
 
-https://mp.weixin.qq.com/s/qUFjfsDtTQfAEjBCuoWHew
+OpenFace是用Python和Torch编写的。
 
-人脸脸型分类研究现状
+官网：
 
-https://mp.weixin.qq.com/s/wcKUURsYiEYVzn7qTMVPag
+https://cmusatyalab.github.io/openface/
 
-格灵深瞳：人脸识别最新进展以及工业级大规模人脸识别实践探讨
+参考：
 
-https://mp.weixin.qq.com/s/Cy5gxHl_Z4v7BX0k8SDNSQ
+http://www.cnblogs.com/pandaroll/p/6590339.html
 
-AI人像美妆算法初识
+开源人脸识别openface
 
-https://mp.weixin.qq.com/s/5vx1FGgSOhF71FwHeUwaAQ
+https://mp.weixin.qq.com/s/RSCrkeIToeNKrFvMITxzDg
 
-清华&商汤开源CVPR2018超高精度人脸对齐算法LAB
+通过OpenFace来理解人脸识别
 
-https://mp.weixin.qq.com/s/PW_fjdC0hzzwmeY3gUXPkw
+## SeetaFace
 
-如何降低遮挡对人脸识别的影响
+SeetaFace人脸识别引擎由中科院计算所山世光研究员带领的人脸识别研究组研发。代码基于C++实现，且不依赖于任何第三方的库函数，开源协议为BSD-2，可供学术界和工业界免费使用。
 
-https://zhuanlan.zhihu.com/p/35968767
+代码：
 
-格灵深瞳首席科学家张徳兵：如何进行上亿类的人脸识别？
+https://github.com/seetaface
 
-https://mp.weixin.qq.com/s/b-v_hDHJjUxMithBDr3TcQ
+第一代
 
-实时旋转鲁棒人脸检测算法
+https://github.com/seetafaceengine/SeetaFace2
 
-https://blog.csdn.net/xiamentingtao/article/details/50908190
+第二代
 
-Facial Landmark Detection(人脸特征点检测)
+论文：
 
-https://mp.weixin.qq.com/s/ZZmLbFzi843g0k3gTncQmA
+《Coarse-to-Fine Auto-Encoder Networks (CFAN) for Real-Time Face Alignment》
 
-拿下人脸识别“世界杯”冠军！松下-NUS和美国东北大学实战分享
+参考：
 
-https://mp.weixin.qq.com/s/DYCXef_09yFFNR0uHL2Q0Q
+https://zhuanlan.zhihu.com/p/22451474
 
-基于Python的开源人脸识别库：离线识别率高达99.38%
+SeetaFace开源人脸识别引擎介绍
 
-https://mp.weixin.qq.com/s/eOxd5XbeyVcRYyAAmPr20Q
+http://www.cnblogs.com/nenya33/p/6801045.html
 
-利用空间融合卷积神经网络通过面部关键点进行伪装人脸识别
+CFAN
 
-https://mp.weixin.qq.com/s/vAjWHpn5HP_lwSv49g71SA
+https://mp.weixin.qq.com/s/iESGCZjdvwUzqW7pu0GwrQ
 
-新型半参数变分自动编码器DeepCoder：可分层级编码人脸动作
+中科视拓开源SeetaFace2人脸识别算法
 
-https://mp.weixin.qq.com/s/IS5iAPZeUrvvyWs29O8Ukg
+https://mp.weixin.qq.com/s/xINjY494A8ctwyXtmeRCZg
 
-通过提取神经元知识实现人脸模型压缩
+SeetaFace6Open开源人脸识别引擎库
 
-https://mp.weixin.qq.com/s/DEJ0z2CahZIrhTE3VXNVvg
+## S3FD
 
-基于注意力机制学习的人脸幻构
+https://mp.weixin.qq.com/s/MyA8_yt4YCkFl67AyhpZow
 
-https://mp.weixin.qq.com/s/-G94Mj-8972i2HtEcIZDpA
+尺度不变人脸检测器（S3FD-Single Shot Scale-invariant Face Detector）
 
-人脸识别世界杯榜单出炉，微软百万名人识别竞赛冠军分享
+https://github.com/sfzhang15/SFD
 
-https://mp.weixin.qq.com/s/bqWle_188lhYO4hpCfafkQ
+S3FD: Single Shot Scale-invariant Face Detector
 
-用浏览器做人脸检测，竟然这么简单？
+## 人脸属性
 
-https://mp.weixin.qq.com/s/kn9JS55wIW2cfpUv7Jm0eQ
+人脸属性包括：人脸年龄、表情、颜值等。
 
-深度学习教你如何“以貌取人”！
+相关应用可分为两类：
 
-https://mp.weixin.qq.com/s/3xEDtMoe0iRQSZiN5A1FGw
+Get类：从图片中获得人脸属性，比如年龄估计、表情识别、颜值打分等。
 
-IPHONE X“刷脸”技术奥秘大揭底
+Set类：编辑人脸属性。比如给一张年轻时的照片，来预估年老时的样子。
 
-https://mp.weixin.qq.com/s/s5HL6y2P9_KqpSAQg08URw
+参考：
 
-世界最大人脸对齐数据集ICCV 2017：距离解决人脸对齐已不远
+https://mp.weixin.qq.com/s/M952HsJnmfx3EGmiDcySGQ
 
-https://mp.weixin.qq.com/s/7AnF0uMgepchiUeqfqVbCg
+初学深度学习人脸属性分析必读的文章
 
-清华大学王生进：新智能安防：人脸识别技术与应用系统
+https://zhuanlan.zhihu.com/p/53229759
 
-https://mp.weixin.qq.com/s/-T5k2ViPjvEoXccKt-_J3Q
+年龄估计技术综述
 
-中科院自动化研究所提出FaceBoxes：实时、高准确率的CPU面部检测器
+https://www.openu.ac.il/home/hassner/projects/cnn_agegender/
 
-https://www.leiphone.com/news/201707/mFuwXGvZBhoVQD5S.html
+Age and Gender Classification using Convolutional Neural Networks
 
-一秒分辨出杨臣刚、王大治和孙楠，这个黑产居然用AI来"打码"
+https://mp.weixin.qq.com/s/0hVPateb108B1KpVpYXK0A
 
-https://mp.weixin.qq.com/s/PF7_kSnwngnJ1jeh7ebyww
+人工智能：长相越“娘”颜值越高
 
-手把手教你用1行代码实现人脸识别
+https://mp.weixin.qq.com/s/YlrWHDPIPzN4dQO2vo4DjA
 
-http://blog.csdn.net/gitchat/article/details/78546894
+人脸颜值研究综述
 
-TensorFlow人脸识别网络与对抗网络搭建
+https://www.oukohou.wang/2019/01/30/face-aging_using_GAN/
 
-https://mp.weixin.qq.com/s/YRsVi09u3W0aQMdsR5KY4Q
+论文阅读-人脸老化：Generative Adversarial Style Transfer Networks for Face Aging
 
-腾讯AI Lab提出Face R-FCN与Face CNN，刷新人脸检测与识别两大测评记录
+https://mp.weixin.qq.com/s/s2SFQgUOZLV-f6auqymVOg
 
-https://mp.weixin.qq.com/s/zyMIRGig-m732rvraPKxwA
+基于Caffe的年龄&性别识别
 
-单样本学习：使用孪生神经网络进行人脸识别
+https://mp.weixin.qq.com/s/I3MS1gB1yjSnadex4LfOYA
 
-https://mp.weixin.qq.com/s/QJm7YoCYmiF0dX8uac5w4Q
+旷视提出极轻量级年龄估计模型C3AE
 
-旷视研究院：被遮挡人脸区域检测的技术细节
+https://mp.weixin.qq.com/s/76DJk4mZ5tBEjQENWmFAEg
 
-https://mp.weixin.qq.com/s/Fmi9RJz-bMOYBoZWt1nWag
+STGAN: 人脸高精度属性编辑模型
 
-人脸注意机制网络
+https://mp.weixin.qq.com/s/BwqOABORt6B9qd9mEufa7w
 
-https://mp.weixin.qq.com/s/s9H_OXX-CCakrTAQUFDm8g
+人脸年龄编辑：无可奈何花落去，似曾相似春又来！
 
-申省梅颜水成团队获国际非受限人脸识别竞赛IJB-A冠军，主要负责人熊霖技术分享
+https://mp.weixin.qq.com/s/17Q21OazunLEicOaJUyMxg
 
-https://mp.weixin.qq.com/s/ZFFSTFDVxFUe2KOFy8XDxw
+人脸属性编辑都有哪些核心知识点，如何长期进行学习
 
-人脸识别——新的一个境界（无约束）
+https://mp.weixin.qq.com/s/hjeOBKuyR87zBWZHqb3gow
 
-https://mp.weixin.qq.com/s/xDEga2tITO8rVkvXCZ62sg
+想提前目睹人到中年的发型？试试这款自制秃头生成器
 
-中国团以98%精度夺得MegaFace人脸识别冠军
+https://mp.weixin.qq.com/s/egU6SkpKjCznConQfg_Zmw
 
-https://mp.weixin.qq.com/s/HVooLtr_k6fwh2N3GjMb1A
+人脸妆造迁移核心技术总结
 
-新研究提出深度残差等价映射：由正脸加强侧脸识别效果
+https://mp.weixin.qq.com/s/m1TBxG_1wlfUUeDwP6Aleg
 
-https://mp.weixin.qq.com/s/9noWOZJSRAi424ZDTD1IRQ
+人脸算法新热点，人脸编辑都有哪些方向，如何学习
 
-世界权威评测冠军：百度人脸检测算法PyramidBox
+https://mp.weixin.qq.com/s/7qfZuoqG3qrTo4R4gQSg2w
 
-https://www.zhihu.com/question/37060782
+人脸合成技术综述
 
-人脸识别哪家强？不如问哪家公司吹牛逼强
+## 活体检测
 
-https://mp.weixin.qq.com/s/S_T0tYhZ1pjoIMysP0aVWA
+https://mp.weixin.qq.com/s/zOnmKSnQctnyx7pKXX-tpQ
 
-美军AI黑科技：黑暗中也能准确识别人脸，谁该为此感到紧张？
+活体检测新文解读：利用多帧人脸来预测更精确的深度
 
-https://mp.weixin.qq.com/s/GLKvzC_o6MR1ixThAVc9lQ
+https://mp.weixin.qq.com/s?__biz=MzU4MjQ3MDkwNA==&mid=2247486721&idx=1&sn=f0e5b2b0165e391c0d5adc4ce253f2f6
 
-CosFace: 面向深度人脸识别的增强边缘余弦损失函数设计
+人脸识别中的活体检测算法综述
 
-https://mp.weixin.qq.com/s/AMDkkbdTQbL-2jyweVid-A
+https://mp.weixin.qq.com/s/A1pbiU5PA9Owe69lGX9afw
 
-摆好Pose却没管理好面部表情？腾讯优图Facelet-Bank人脸处理技术了解一下
+活体识别告诉你为什么照片无法破解人脸系统
 
-https://mp.weixin.qq.com/s/OjId_YfxkhEh4tJ1Sw-Hbw
+https://mp.weixin.qq.com/s/rroBWY0roDdRap28i-KYtQ
 
-多伦多大学反人脸识别，身份欺骗成功率达99.5%
+初学活体检测与伪造人脸检测必读的文章
 
-https://mp.weixin.qq.com/s/tUSNk5R_zbEFz-yIx0LXYQ
+https://mp.weixin.qq.com/s/sPnoZyCkAhcCs_GtA79DrA
 
-基于DNN的人脸识别中的反欺骗机制
+单目可见光静默活体检测Binary or Auxiliary Supervision论文解读
 
-https://mp.weixin.qq.com/s/mjdW7xY77H03RIKuKuFmQg
+https://mp.weixin.qq.com/s/Vi2ypwO3uCD2lQZOwDFqTA
 
-人脸画像合成研究的综述与对比分析
+基于rPPG的人脸活体检测综述
 
-https://mp.weixin.qq.com/s/Ieha-lJ_KuEnpbJha_nxJw
+https://mp.weixin.qq.com/s/ViQDmUqNiXCQ1KzvlLI6Wg
 
-利用人脸图片准确识别年龄：上海大学研究者提出“深度回归森林”
+OpenCV活体检测
 
-https://mp.weixin.qq.com/s/9VTpbqwALmxr07pEfdQBCA
+https://mp.weixin.qq.com/s/2I8A_-utI4DqeDXJwwX4UQ
 
-旷视科技提出GridFace：通过学习局部单应变换实现人脸校正
+人脸反欺诈活体检测综述
 
-https://mp.weixin.qq.com/s/z726pDBhn5bML5Xho2XCig
+https://mp.weixin.qq.com/s/8q2gk9ruVw4yxf72mgZkww
 
-人脸对齐与跟踪如何克服遮挡、姿态变化带来的特征点跳变？
+CVPR2020人脸防伪检测挑战赛冠军方案开源
 
-https://mp.weixin.qq.com/s/qpP6AzLdgtH6NnIUl4JNpQ
+https://mp.weixin.qq.com/s/wQcP_dqv9KI3jEQ0soYbMw
 
-腾讯AI Lab提出正交深度特征分解算法：在多个跨年龄人脸识别任务中创造新记录
+人脸静默活体检测最新综述
 
-https://mp.weixin.qq.com/s/J4_snLK7DoV5oN7GP5M_Ww
+## DeepFace
 
-新思路！商汤开源利用无标注数据大幅提高精度的人脸识别算法
+《DeepFace: Closing the Gap to Human-Level Performance in Face Verification》
 
-https://mp.weixin.qq.com/s/4xYAhNys6svltEb4cQUrXw
+DeepFace先进行了两次全卷积＋一次池化，提取了低层次的边缘／纹理等特征。
 
-Bi-box行人检测：‘行人遮挡’为几何？
+后接了3个Local-Conv层，这里是用Local-Conv的原因是，人脸在不同的区域存在不同的特征（眼睛／鼻子／嘴的分布位置相对固定），当不存在全局的局部特征分布时，Local-Conv更适合特征的提取。
 
-https://mp.weixin.qq.com/s/IfZ5gTZrSFqQP2cpcIxAeQ
+## 人脸关键点
 
-清华&商汤开源CVPR2018超高精度人脸对齐算法LAB
+https://mp.weixin.qq.com/s/qWMQV33k1bDAHWwwVod3_g
 
-https://mp.weixin.qq.com/s/R1hdkPTdFCo7JvOKNcEzJg
+初学深度学习人脸关键点检测必读文章
 
-DeepMind&VGG提出基于集合的人脸识别算法GhostVLAD,精度远超IJB-B数据集state-of-the-art
+https://zhuanlan.zhihu.com/p/42968117
 
-https://mp.weixin.qq.com/s/CH46uvOshGss7O2bbxFoWQ
+人脸关键点检测综述
 
-曹杰：Rotating is Believing
+https://mp.weixin.qq.com/s/CvdeV5xgUF0kStJQdRst0w
 
-https://mp.weixin.qq.com/s/unoSZVPQrjMjjxSbnp1IBQ
+从传统方法到深度学习，人脸关键点检测方法综述
 
-FaceBoxes—官方开源CPU实时高精度人脸检测器
+https://mp.weixin.qq.com/s/ZrnAqDJCLtMy_qTQ2RZT0A
 
-https://zhuanlan.zhihu.com/p/55983565
+级联MobileNet-V2实现人脸关键点检测
 
-中科院和京东AI研究院提出：改进SRN人脸检测算法，目前业界最强！
+https://mp.weixin.qq.com/s/ymeJPUPRAGb1FltskqBs-A
 
-https://mp.weixin.qq.com/s/KY11jsedOa0HHIhET83V3g
+人脸关键点检测汇总（上）
 
-目前最强性能的人脸检测算法Improved SRN
+https://mp.weixin.qq.com/s/N6y-RDx7VszgCVhSiwP8jA
 
-https://mp.weixin.qq.com/s/Chw_gLxQHdfe0hFJGMk-3A
+人脸关键点检测汇总（下）
 
-日本东北大学改进单阶段人脸检测—兼具速度与精度优势
+https://mp.weixin.qq.com/s/D435jGsGPkCH5j-p8Zoksg
 
-https://mp.weixin.qq.com/s/E9Esoe4VHvMdJNTbxF-sXA
-
-ShapeNet:超实时人脸特征点检测与形状拟合开源库
+遮挡、光照等因素的人脸关键点检测

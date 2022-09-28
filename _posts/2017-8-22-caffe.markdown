@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Caffe, darknet
-category: AI 
+category: DL Framework 
 ---
 
 * toc

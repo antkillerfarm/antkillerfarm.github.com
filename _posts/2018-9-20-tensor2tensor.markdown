@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Tensor2Tensor, MXNet, Horovod
-category: AI 
+category: DL Framework 
 ---
 
 * toc

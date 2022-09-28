@@ -19,7 +19,9 @@ category: Russia
 
 2月24日 普京宣布在顿巴斯地区展开军事行动。
 
+9月28日 顿涅茨克等四地入俄公投。
 
+---
 
 https://www.understandingwar.org/
 

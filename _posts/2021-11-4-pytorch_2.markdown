@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Pytorch（二）, Kubernetes
-category: AI 
+category: DL Framework 
 ---
 
 * toc

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十七）——人脸检测/识别（1）, 自动求导
+title:  深度学习（十七）——自动求导
 category: DL 
 ---
 
@@ -111,106 +111,6 @@ https://mp.weixin.qq.com/s/9AEYcY04lAl3dCRK9LPBeQ
 https://mp.weixin.qq.com/s/ylfeWiOrftCB823_gjQNmA
 
 图像风格迁移也有框架了：使用Python编写，与PyTorch完美兼容，外行也能用
-
-# 人脸检测/识别
-
-## Cascade CNN
-
-论文：
-
-《A Convolutional Neural Network Cascade for Face Detection》
-
-![](/images/img2/CascadeCNN.jpg)
-
-这篇可以说是对经典的Viola-Jones方法的深度卷积网络实现，可以明显看出是3阶级联（12-net、24-net、48-net）。
-
-前2阶的网络都非常简单，只有第3阶才比较复杂。这不是重点，重点是我们要从上图中学习多尺度特征组合。
-
-以第2阶段的24-net为例，首先把上一阶段剩下的窗口resize为24*24大小，然后送入网络，得到全连接层的特征。同时，将之前12-net的全连接层特征取出与之拼接在一起。最后对组合后的特征进行softmax分类。
-
-除了分类网络之外，Cascade CNN还包含了3个修正bounding box的CNN网络，分别叫做12-calibration-net，24-calibration-net和48-calibration-net。他们的结构与12-net等类似。
-
-网络结构方面也就这样了，该论文最牛之处在于给出了这类级联网络的训练方法。
-
-![](/images/img2/CascadeCNN_2.jpg)
-
-1.按照一般的方法组织正负样本训练第一阶段的12-net和12-calibration-net网络；
-
-2.利用上述的1层网络在AFLW数据集上作人脸检测，在保证99%的召回率的基础上确定判别阈值T1。
-
-3.将在AFLW上判为人脸的非人脸窗口作为负样本，将所有真实人脸作为正样本，训练第二阶段的24-net和24-calibration-net网络；
-
-4.重复2和3，完成最后阶段的训练。
-
-参考：
-
-http://blog.csdn.net/shuzfan/article/details/50358809
-
-人脸检测——CascadeCNN
-
-## MTCNN
-
-论文：
-
-《Joint Face Detection and Alignment using Multi-task Cascaded Convolutional Networks》
-
-![](/images/img2/MTCNN.png)
-
-上面是该方法的流程图，可以看出也是三阶级联，和CascadeCNN很像。
-
-stage1: 在构建图像金字塔的基础上，利用fully convolutional network来进行检测，同时利用boundingbox regression和NMS来进行修正。
-
-stage2: 将通过stage1的所有窗口输入作进一步判断，同时也要做boundingbox regression和NMS。
-
-stage3: 和stage2相似，只不过增加了更强的约束：5个人脸关键点（landmark）。
-
-![](/images/img3/P-Net.jpg)
-
-![](/images/img3/R-Net.jpg)
-
-![](/images/img3/O-Net.jpg)
-
-上面三图分别是P-Net、R-Net和O-Net的网络结构图。
-
-需要注意的是，Cascade CNN和MTCNN都是比较早期的方案了，这里的人脸候选框，一般是用**滑动窗口**的方式生成的，这种方法的效率不高，不仅比不上Faster RCNN以后的RPN Layer，就连RCNN的Selective Search也颇有不如，完全就是Viola-Jones方法的简单翻版。
-
-参考：
-
-http://blog.csdn.net/qq_14845119/article/details/52680940
-
-MTCNN（Multi-task convolutional neural networks）人脸对齐
-
-http://blog.csdn.net/shuzfan/article/details/52668935
-
-人脸检测——MTCNN
-
-https://mp.weixin.qq.com/s/IrZEQ69RNUdcs0Fl8fHmmQ
-
-如何应用MTCNN和FaceNet模型实现人脸检测及识别
-
-https://mp.weixin.qq.com/s/NfqFj5iCIkbRD34Eu2Lb5g
-
-MTCNN实时人脸检测网络详解与代码演示
-
-## 人脸识别
-
-人脸检测是从一张图片中，识别出人脸，这和通常的目标检测没有太大的差别。**而人脸识别，则是精确到具体的人。**
-
-人脸识别通常的做法是：
-
-1.使用人脸检测，得到人脸区域的图像。
-
-2.提取人脸特征。一般采用CNN+FC+loss的结构。其中，CNN+FC用于提取特征，而loss仅用于训练阶段。在推理阶段，我们使用CNN+FC得到人脸的特征向量即可。
-
-3.特征的对比。比较两个特征向量的相似度（可以使用LMS或者cos相似度）。超过阈值，即认为是同一张脸。
-
-## 生物特征识别
-
-生物特征模态：人脸、虹膜、指纹、掌纹、静脉、声纹、步态、行人重识别。
-
-https://mp.weixin.qq.com/s/t80KjO54AQyNSU1UgRJ5og
-
-生物特征识别学科发展报告
 
 # 自动求导
 

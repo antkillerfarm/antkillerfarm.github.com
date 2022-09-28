@@ -276,3 +276,7 @@ TensorFlow XLA初步接触
 https://github.com/horance-liu/tensorflow-internals
 
 电子书《TensorFlow Internals》
+
+https://wzzju.github.io/tensorflow/xla/2021/06/12/xla-overview/
+
+XLA编译执行原理分析
