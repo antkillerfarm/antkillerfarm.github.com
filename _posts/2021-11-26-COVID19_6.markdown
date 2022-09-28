@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 新冠肺炎（六）——国际援助, 知名患者, 钟南山, 武汉病毒所, 疫情建模, 瘟疫公司, 蝙蝠
+title: 新冠肺炎（六）——国际援助, 知名患者, 钟南山, 武汉病毒所, 疫情建模, 蝙蝠
 category: COVID19 
 ---
 
@@ -95,6 +95,18 @@ https://www.sohu.com/a/495825123_123753
 《唐顿庄园》，很多剧中你喜欢的角色的发型与妆容都出自著名造型师Marc Pilcher之手，他在获得2021年艾美奖仅三周之后，死于新冠。
 
 英媒：白金汉宫称，英国女王新冠病毒检测呈阳性。
+
+---
+
+辉瑞CEO阿尔伯特·布尔拉（Albert Bourla）的新冠检测再次呈阳性。他表示自己是无症状，并已经开始服用新冠口服药paxlovid。阿尔伯特已经施打了4针辉瑞mRNA疫苗。他上一次感染是在8月。
+
+有意思的点来了。
+
+1、辉瑞CEO是疫苗爱好者？他准备在这次感染三个月后施打辉瑞新的二价疫苗。也就是第五针疫苗。
+
+2、辉瑞CEO是核酸爱好者？他无症状，却检测阳性。
+
+3、辉瑞CEO是新冠口服药爱好者？他无症状，却立刻服用paxlovid，担心病毒伤害器官。
 
 ---
 
@@ -265,32 +277,6 @@ https://mp.weixin.qq.com/s/0k1o-m8F5aWUWA4Nj8WnIQ
 https://mp.weixin.qq.com/s/EGJ1Upes2Ka-t9Rw2DdSZw
 
 27岁华裔小伙一战成名！搞出美国新冠最准预测模型，一人干翻专业机构，彭博：Superstar
-
-# 瘟疫公司
-
-![](/images/img4/Plague_Inc.jpg)
-
-![](/images/img4/Plague_Inc.png)
-
-https://zhuanlan.zhihu.com/p/103836857
-
-五年前的冠状病毒模组让《瘟疫公司》再度翻红，创作者是预言家？
-
-https://zhuanlan.zhihu.com/p/125727756
-
-《瘟疫公司》做错了吗？最贴近疫情的游戏被下架，被指存在违反国内法律内容
-
-https://zhuanlan.zhihu.com/p/298079109
-
-现在，你可以在《瘟疫公司》里“拯救世界”了
-
-https://zhuanlan.zhihu.com/p/293192687
-
-因为疫情爆火的《瘟疫公司》免费了，还新增了解药模式
-
-https://www.zhihu.com/question/21491731
-
-游戏《瘟疫公司》Plague Inc这款游戏对现实世界有何启示？
 
 # 蝙蝠
 

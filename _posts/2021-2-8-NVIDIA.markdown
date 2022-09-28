@@ -52,6 +52,8 @@ NVIDIA DGX：服务器级的产品。
 
 NVIDIA EGX：主打边缘计算的主板级产品。
 
+NVIDIA AGX：主打自动驾驶等AI功能的产品。目前已经有Parker、Xavier、Orin、Atlan、Thor等代产品。
+
 ## 驱动安装
 
 查看显卡硬件型号：
