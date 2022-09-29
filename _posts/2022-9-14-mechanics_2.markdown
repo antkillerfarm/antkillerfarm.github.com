@@ -162,3 +162,7 @@ https://www.zhihu.com/question/24810449
 https://mp.weixin.qq.com/s/5uF_QiFlSmaCn3YUMr6p8w
 
 大和级战列舰有克星？蒙大拿：不好意思！在座的各位都是垃圾
+
+https://www.zhihu.com/question/551426461
+
+要是我穿上最结实的板甲、举着最结实的盾牌，能在50米内硬接一发一磅加农炮合口弹还死不了吗？
