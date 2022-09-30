@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Hbase, 多维数组的行优先和列优先, DL框架怀古
+title:  Hbase, 多维数组的行优先和列优先
 category: AI 
 ---
 
@@ -227,11 +227,21 @@ C和Fortran的这种差异，实际上是上世纪60年代，两大IT巨头AT&T�
 
 典型的例子是Matlab。它最早是作为一些Fortran数学库的封装而存在的，因此很自然的采用了Fortran格式。OpenGL、OpenVX之类的接口，实际上也沿袭了这种路径依赖。
 
+---
+
 Fortran作为最早的高级语言（1957年），至今仍有很强的生命力，这主要归功于：
 
 1.对数组、复数等数值计算的原生支持。这些语法糖，对于非程序员的科技人员很友好。
 
 2.没有指针等复杂特性。这一点既降低了上手的门槛，又对于编译器优化（尤其是现在比较流行的并行计算优化）很有好处。普通科技人员即使没有经过特殊的程序训练，也可以写出非常高效的程序。
+
+FORTRAN有一条规则，名叫i到n规则 ：如果不明确定义变量类型，那么第一次使用这个变量时，凡是以i、j 、k 、l、m、n开头的变量，为整型变量，凡是不以这些字母开头的变量，为实型变量。
+
+https://www.zhihu.com/question/24890607
+
+为什么习惯使用i、j、k等作为循环变量?
+
+---
 
 对于同样的内存布局，我们只需要颠倒下标就可以进行行/列优先的转换：
 
@@ -255,57 +265,3 @@ Fortran作为最早的高级语言（1957年），至今仍有很强的生命力
 `f32[8,100,100,4]{3,0,2,1}`，其中`[8,100,100,4]`表示logical dimensions，`{3,0,2,1}`表示minor_to_major。
 
 则the most minor physical dimension为4。
-
-# DL框架怀古
-
-2017.9
-
-http://deeplearning.net/
-
-这个网站是Theano的主站，也是我最早接触DL时浏览的网站。其时，我虽然对DL有浓厚的兴趣，但尚未以此作为工作内容。
-
-从该网站提供的招聘信息来看，Caffe、Theano、Torch是当时主流的三大框架库。
-
-岂料时隔一年半载之后，这三大框架都渐趋式微。
-
-Caffe被Caffe 2替代，但使用的广泛度仍超过后者。
-
-Theano被同样基于计算图的TensorFlow淘汰。2017年9月停止更新。
-
-Torch相对变动最小，它被PyTorch替代。这更可以看作是python对于lua的胜利。
-
----
-
-2020.12
-
-又是三年过去了。
-
-生命力超强的Caffe终于过气了，大约从2019年下半年开始，即使是新入行的客户，也没人用它了。但是Caffe 2从来没火过。不知道是Caffe 2不行，让贾扬清去阿里，还是贾扬清去阿里了，导致的Caffe 2被放弃。
-
-遗弃列表还有CNTK和Chainer。
-
-mxnet一直半死不活，虽然李沐并未放弃，但是手下已经有些离开的了。
-
-倒是国内，一堆原先私有的框架，纷纷开源。比如清华Jittor，旷视MegEngine，华为Mindspore在2020.3扎堆开源。但是根本溅不起丝毫的水花。你不开源，是自己用；你开源了，还是自己用。反正我是没兴趣用。
-
-参考：
-
-https://www.zhihu.com/question/392035070
-
-如何看待亚马逊AI李沐团队大批人员离职?
-
-https://zhuanlan.zhihu.com/p/121834310
-
-深度学习框架的灵魂
-
-https://mp.weixin.qq.com/s/DxV7mm7xCXWFy_KTIDh_-Q
-
-深度学习框架简史：TF和PyTorch双头垄断
-
-https://mp.weixin.qq.com/s/_-z2d1GE_3FElzAwPyJZ8A
-
-十大流行AI框架和库的优缺点比较
-
-https://mp.weixin.qq.com/s/gWdeevVYctxjDDw9SOWe_Q
-
-PyTorch深度学习技术生态

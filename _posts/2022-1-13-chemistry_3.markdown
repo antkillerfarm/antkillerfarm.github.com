@@ -199,6 +199,10 @@ https://www.zhihu.com/question/453173153
 
 目前人类是否具备将大气层中至少1%的氮气转化为化合态氮的能力？
 
+https://www.zhihu.com/question/555702554
+
+波兰现多起煤炭诈骗案，有人买到染成黑色的石头，为何会发生此类事件？（煤矸石）
+
 ## 食品工业
 
 ![](/images/img3/Mulberry_Dyke_Fish_Pond.png)
@@ -290,15 +294,3 @@ https://mp.weixin.qq.com/s/pwWRC0ewE4GOxFAQ35pnZw
 https://www.zhihu.com/answer/925610213
 
 用铁做军粮罐头在战争期间是不是一种浪费？
-
-https://mp.weixin.qq.com/s/Lz8QRs7HkZbWFxLqf4h6OA
-
-塑料瓶、玻璃瓶、纸包装，什么饮料用什么包装有啥秘密吗？
-
-https://www.zhihu.com/question/510151356
-
-皮蛋制作过程中用到氢氧化钠，通过渗入蛋壳气孔与其中蛋白质反应凝固，那么可以用其他碱性物替代吗？
-
-https://zhuanlan.zhihu.com/p/564622230
-
-几十年的老厨师不如一勺“高科技”？“海克斯科技”到底有多猛？

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Pytorch（二）, Kubernetes
+title:  Pytorch（二）, DL框架怀古
 category: DL Framework 
 ---
 
@@ -281,96 +281,56 @@ https://zhuanlan.zhihu.com/p/73711222
 
 巧用torch.backends.cudnn.benchmark减少训练时间
 
-# Kubernetes
+# DL框架怀古
 
-Kubernetes是Google开源的容器集群管理系统，基于Docker构建一个容器的调度服务，提供资源调度、均衡容灾、服务注册、动态扩缩容等功能套件。因为Kubernetes中K和s之间有8个字母，因此又简称为K8s。类似的还有 internationalization被称为i18n。
+2017.9
 
-![](/images/img3/Kubernetes.png)
+http://deeplearning.net/
 
-官网：
+这个网站是Theano的主站，也是我最早接触DL时浏览的网站。其时，我虽然对DL有浓厚的兴趣，但尚未以此作为工作内容。
 
-https://kubernetes.io/
+从该网站提供的招聘信息来看，Caffe、Theano、Torch是当时主流的三大框架库。
 
-Kubernetes还有个ML的工具集叫KubeFlow。
+岂料时隔一年半载之后，这三大框架都渐趋式微。
 
-https://github.com/kubeflow/kubeflow
+Caffe被Caffe 2替代，但使用的广泛度仍超过后者。
+
+Theano被同样基于计算图的TensorFlow淘汰。2017年9月停止更新。
+
+Torch相对变动最小，它被PyTorch替代。这更可以看作是python对于lua的胜利。
+
+---
+
+2020.12
+
+又是三年过去了。
+
+生命力超强的Caffe终于过气了，大约从2019年下半年开始，即使是新入行的客户，也没人用它了。但是Caffe 2从来没火过。不知道是Caffe 2不行，让贾扬清去阿里，还是贾扬清去阿里了，导致的Caffe 2被放弃。
+
+遗弃列表还有CNTK和Chainer。
+
+mxnet一直半死不活，虽然李沐并未放弃，但是手下已经有些离开的了。
+
+倒是国内，一堆原先私有的框架，纷纷开源。比如清华Jittor，旷视MegEngine，华为Mindspore在2020.3扎堆开源。但是根本溅不起丝毫的水花。你不开源，是自己用；你开源了，还是自己用。反正我是没兴趣用。
 
 参考：
 
-https://mp.weixin.qq.com/s/HEUIWK4skqMge8oziQg6Nw
+https://www.zhihu.com/question/392035070
 
-kubernetes简介和实战
+如何看待亚马逊AI李沐团队大批人员离职?
 
-http://violetgo.com/blogs/2015/10/14/k8s.html
+https://zhuanlan.zhihu.com/p/121834310
 
-docker学习笔记(k8s)
+深度学习框架的灵魂
 
-https://mp.weixin.qq.com/s/wwwB8OHQmbwqmKKE8Lyv-w
+https://mp.weixin.qq.com/s/DxV7mm7xCXWFy_KTIDh_-Q
 
-容器技术演化史
+深度学习框架简史：TF和PyTorch双头垄断
 
-https://mp.weixin.qq.com/s/LpNlUlXpt2poRKXEvuIDjw
+https://mp.weixin.qq.com/s/_-z2d1GE_3FElzAwPyJZ8A
 
-Kubernetes NetworkPolicy工作原理浅析
+十大流行AI框架和库的优缺点比较
 
-https://mp.weixin.qq.com/s/s5eDSQF6mFt2F9_nVtYemQ
+https://mp.weixin.qq.com/s/gWdeevVYctxjDDw9SOWe_Q
 
-PaaS将吞噬云计算？Kubernetes的市场冲击波
-
-https://mp.weixin.qq.com/s/19xreKtNlllfFx43eUGhuQ
-
-如何使用Kubernetes轻松部署深度学习模型
-
-https://mp.weixin.qq.com/s/4e9l-GP22T-myP54hJJjPA
-
-Kubernetes如何打赢容器之战？ 
-
-https://mp.weixin.qq.com/s/iTfHv8EFx4O4G1sNxsuMkg
-
-再见，Yarn！滴滴机器学习平台架构演进
-
-https://mp.weixin.qq.com/s/CmHok-9gKVrHfiXpYUQ4nw
-
-浅析Kubernetes资源管理
-
-https://mp.weixin.qq.com/s/zzn61ADe2RA7K0L4-EMAOA
-
-你真的需要Kubernetes吗？
-
-https://mp.weixin.qq.com/s/2TRVWe01jHUtOioW31ukeg
-
-如何轻松学习Kubernetes？
-
-https://developer.aliyun.com/article/754267
-
-31篇技术文章，带你从零入门K8s
-
-https://mp.weixin.qq.com/s/mr_D_AA0zdux8F_10iRIHg
-
-自动化弹性伸缩如何支持字节跳动百万级核心错峰混部
-
-https://zhuanlan.zhihu.com/p/339008746
-
-Kubernetes入门&进阶实战
-
-https://mp.weixin.qq.com/s/LQY4Dw8-OwS52gt2HtBT8w
-
-备份和迁移Kubernetes应用程序利器-velero
-
-# Flume & Kafka+
-
-https://mp.weixin.qq.com/s/UFfpPnouxXjOFAmZVdSTVg
-
-Kafka核心源码剖析（一）：Producer发送消息流程
-
-https://mp.weixin.qq.com/s/exOs0zrZ2x8Mxi6aB1x-QQ
-
-流数据并行处理性能比较：Kafka vs Pulsar vs Pravega
-
-https://mp.weixin.qq.com/s/ijek6Tdb6H3hqY2CEC917Q
-
-从面试角度来看一看Kafka
-
-https://mp.weixin.qq.com/s/zmDTaW8c65BWZ-mhsED1jw
-
-从演进式角度看消息队列
+PyTorch深度学习技术生态
