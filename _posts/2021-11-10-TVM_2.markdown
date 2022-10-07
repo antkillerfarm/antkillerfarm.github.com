@@ -280,3 +280,7 @@ https://github.com/horance-liu/tensorflow-internals
 https://wzzju.github.io/tensorflow/xla/2021/06/12/xla-overview/
 
 XLA编译执行原理分析
+
+https://haosdent.gitbooks.io/tensorflow-document/content/resources/xla_prerelease.html
+
+XLA: The TensorFlow compiler framework

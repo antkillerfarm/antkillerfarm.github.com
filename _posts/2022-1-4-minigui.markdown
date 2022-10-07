@@ -139,6 +139,14 @@ Spring是一个Java Web应用框架。官网：
 
 http://spring.io/
 
+## SSH & SSM
+
+SSH：Spring+Struts2+Hibernate
+
+SSM：Spring+Spring MVC+MyBatis
+
+早期的Spring还需要和其他开源项目配合，但随着其自身实力的强大，目前已经可以用Spring全家桶覆盖各个层面了。
+
 ## Ubuntu安装Eclipse、Spring
 
 1.安装Eclipse
@@ -180,8 +188,6 @@ https://mp.weixin.qq.com/s/7I5OfGnGtXk2u9PtGLObCA
 ## WebService
 
 https://spring.io/guides/gs/producing-web-service/
-
-http://localhost:9999/ws/countries.wsdl
 
 # Serverless
 

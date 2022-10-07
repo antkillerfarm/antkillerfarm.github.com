@@ -69,6 +69,18 @@ MOLAP表示基于多维数据组织的OLAP实现（Multidimensional OLAP）。�
 
 HOLAP表示基于混合数据组织的OLAP实现（Hybrid OLAP）。如低层是关系型的，高层是多维矩阵型的。这种方式具有更好的灵活性。
 
+---
+
+列存储的数据库更适合OLAP。
+
+行存储的数据库更适合OLTP。
+
+https://www.zhihu.com/question/29380943
+
+为什么列存储数据库读取速度会比传统的行数据库快？
+
+---
+
 参考：
 
 https://blog.csdn.net/zhangzheng0413/article/details/8271322
@@ -374,15 +386,3 @@ https://mp.weixin.qq.com/s/JVreQzE8B6nAgPmDHM5aXQ
 **缓存雪崩**指大量缓存同一时间段集体失效，或者缓存整体不能提供服务，导致大量的请求全部到达数据库，对数据CPU和内存造成巨大压力，严重的会造成数据库宕机。也被称为缓存踩踏（Cache Stampede）。
 
 使用随机过期时间。为每一个key都合理的设计一个过期时间，这样可以避免大量的key在同一时刻集体失效。
-
-https://mp.weixin.qq.com/s/RME5b3plT97nYfUaCl9ePw
-
-关于缓存和数据库强一致的可行方案
-
-https://mp.weixin.qq.com/s/gQAA2-YuvTHrL2IP8Bco6w
-
-缓存与数据库的数据一致性方案介绍
-
-https://mp.weixin.qq.com/s/Gm7S0a5VN9L57wlry4-t6w
-
-缓存关注点——先写DB还是“缓存”？

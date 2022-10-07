@@ -13,6 +13,8 @@ category: Nature
     <source src="/images/img4/gun.mp4" type='video/mp4' />
 </video>
 
+![](/images/img4/AK47.jpg)
+
 92式重机枪：于1932年开始列装，而那一年是日本神武历2592年。99式步枪、96式轻机枪也是按照这种规则命名的。
 
 92式重机枪枪管上有一圈散热片，看上去就像野鸡脖子里的毛一样，俗称“野鸡脖子”。

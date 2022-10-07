@@ -11,6 +11,18 @@ category: database
 
 ## Cache（续）
 
+https://mp.weixin.qq.com/s/RME5b3plT97nYfUaCl9ePw
+
+关于缓存和数据库强一致的可行方案
+
+https://mp.weixin.qq.com/s/gQAA2-YuvTHrL2IP8Bco6w
+
+缓存与数据库的数据一致性方案介绍
+
+https://mp.weixin.qq.com/s/Gm7S0a5VN9L57wlry4-t6w
+
+缓存关注点——先写DB还是“缓存”？
+
 https://mp.weixin.qq.com/s/q-R7kv4696LooHy3Hn-H1A
 
 分布式系统关注点——缓存背后的“毁灭种子”

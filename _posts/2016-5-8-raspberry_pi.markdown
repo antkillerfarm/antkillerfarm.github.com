@@ -276,6 +276,12 @@ https://mp.weixin.qq.com/s/rfOTxVUpqyfqNQQJh_WhNg
 
 ## 参考
 
+树莓派的博通芯片是专门定制的，这帮英国佬精的很，现在github上很多树莓派项目都深度适配博通的那款芯片，比如有一个用来驱动spi屏幕的fbcp项目，只针对树莓派自己的videocore来写，而山寨派一般用的是国产全志芯片，虽然配置是高，但从硬件上就决定了山寨派不能直接进入树莓派生态。
+
+国产也有各种派，芒果派，菠萝派啥的，价格是树莓派的1/2～1/4，性能一致，生态系统不如树莓派丰富，需要一定经验才能玩。
+
+---
+
 https://mp.weixin.qq.com/s/YeoBILcLy2LNzDAnxygKAg
 
 如何手动养成一只“咖啡女仆”？
@@ -283,15 +289,3 @@ https://mp.weixin.qq.com/s/YeoBILcLy2LNzDAnxygKAg
 https://mp.weixin.qq.com/s/CLwGEVgkGk7Zm7Acp8NAmg
 
 树莓派上利用Tensorflow实现小车的自动驾驶
-
-https://mp.weixin.qq.com/s/1wxA7jnCgmXt5j9DXxH1UA
-
-超有趣！手把手教你使用树莓派实现实时人脸检测
-
-https://mp.weixin.qq.com/s/tW54lcv9aRz9xXC9V-DsWw
-
-Keras+树莓派，130行代码找到圣诞老人
-
-https://mp.weixin.qq.com/s/8zD3GqbQrQnZmuD59OoFuQ
-
-让树莓派记下你的笑颜

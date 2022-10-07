@@ -256,6 +256,18 @@ https://mp.weixin.qq.com/s/eXRy9kZqDlph96BdWwWwXQ
 
 # Raspberry Pi+
 
+https://mp.weixin.qq.com/s/1wxA7jnCgmXt5j9DXxH1UA
+
+超有趣！手把手教你使用树莓派实现实时人脸检测
+
+https://mp.weixin.qq.com/s/tW54lcv9aRz9xXC9V-DsWw
+
+Keras+树莓派，130行代码找到圣诞老人
+
+https://mp.weixin.qq.com/s/8zD3GqbQrQnZmuD59OoFuQ
+
+让树莓派记下你的笑颜
+
 https://mp.weixin.qq.com/s?__biz=MzU1OTMyNDcxMQ==&mid=2247484969&idx=1&sn=29d04fbb56a4464b08407eb87d26325e
 
 基于源代码为Raspberry Pi设备构建TensorFlow

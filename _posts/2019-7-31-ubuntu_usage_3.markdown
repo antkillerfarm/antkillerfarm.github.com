@@ -25,6 +25,10 @@ google-chrome-stable
 
 3.将`Exec=/usr/bin/google-chrome-stable %U`后，添加`--ppapi-flash-path=path/libpepflashplayer.so --ppapi-flash-version=<version>`
 
+---
+
+https://ping.chinaz.com/
+
 # 常用快捷键
 
 Ctrl+Alt+T：启动Terminal
