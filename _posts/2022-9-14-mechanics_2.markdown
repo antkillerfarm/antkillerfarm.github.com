@@ -224,3 +224,25 @@ https://mp.weixin.qq.com/s/aUYieCVLLom7EaWIhfccRQ
 https://zhuanlan.zhihu.com/p/372974514
 
 为什么不趁油价下跌大量购入原油并注入油田，以备不时之需？
+
+# 建筑+
+
+https://www.zhihu.com/question/23746900
+
+为何对巴西利亚城市规划会出现两种极端的评价？
+
+https://mp.weixin.qq.com/s/jD5O3EuK4QRpTmHC7ZBmIQ
+
+140年后，圣家族大教堂竣工终于指日可待？
+
+https://mp.weixin.qq.com/s/7pdQ8UMNwAw-YZb90sR-ng
+
+“132万红砖房”改造风波后，房子总要归于生活
+
+https://www.zhihu.com/question/545480673
+
+沙特阿拉伯计划建长近120公里的大楼，将用到哪些技术？对当地人的生活将带来哪些影响？
+
+https://mp.weixin.qq.com/s/2HNEJVZHcsDkpC87sTHwDw
+
+沙特要花1万亿美元建世界最大建筑，造型看着像长城

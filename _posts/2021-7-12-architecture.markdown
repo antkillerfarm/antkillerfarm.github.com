@@ -201,6 +201,20 @@ https://mp.weixin.qq.com/s/eoqrkj6fnCWUiKQpCyDJbw
 
 ---
 
+有个造桥的小游戏在外网很火。名字是Poly bridge。
+
+然后……有两个头铁的犟种（中国人）去了。这两个犟种在建造桥梁（贪污预算），完成任务的同时，永远可以把项目成本控制在1000块钱之内，并甩开所有人几条街。
+
+https://zhuanlan.zhihu.com/p/21884414
+
+《Poly Bridge》评测 疯狂工程师炼成指南
+
+https://www.zhihu.com/answer/2707968274
+
+Poly Bridge
+
+---
+
 https://zhuanlan.zhihu.com/p/343944664
 
 人防工程
@@ -236,23 +250,3 @@ https://mp.weixin.qq.com/s/hh7IJVfNifiMt7KBo0-HBw
 https://zhuanlan.zhihu.com/p/430539779
 
 台湾海峡通道最晚什么时候动工？
-
-https://www.zhihu.com/question/23746900
-
-为何对巴西利亚城市规划会出现两种极端的评价？
-
-https://mp.weixin.qq.com/s/jD5O3EuK4QRpTmHC7ZBmIQ
-
-140年后，圣家族大教堂竣工终于指日可待？
-
-https://mp.weixin.qq.com/s/7pdQ8UMNwAw-YZb90sR-ng
-
-“132万红砖房”改造风波后，房子总要归于生活
-
-https://www.zhihu.com/question/545480673
-
-沙特阿拉伯计划建长近120公里的大楼，将用到哪些技术？对当地人的生活将带来哪些影响？
-
-https://mp.weixin.qq.com/s/2HNEJVZHcsDkpC87sTHwDw
-
-沙特要花1万亿美元建世界最大建筑，造型看着像长城
