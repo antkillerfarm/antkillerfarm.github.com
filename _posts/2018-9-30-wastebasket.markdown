@@ -77,6 +77,10 @@ https://www.zhihu.com/answer/761750649
 
 学术圈五大蛊王吃瓜汇总
 
+https://www.zhihu.com/question/558481182
+
+怎样看待北京理工大学教授方岱宁在学术会议中被已婚女博士后疯狂亲吻？
+
 ---
 
 https://zhuanlan.zhihu.com/p/92515874
