@@ -230,6 +230,10 @@ https://mp.weixin.qq.com/s/FMYimnxcAya6bhvdGD5LUw
 
 惊魂48小时，阿里工程师如何紧急定位线上内存泄露？
 
+https://developer.mantidproject.org/ProfilingWithValgrind.html
+
+Profiling with Valgrind
+
 ## 白盒测试
 
 上面提到的主要是黑盒测试工具。

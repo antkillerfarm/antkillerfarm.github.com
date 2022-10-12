@@ -158,3 +158,7 @@ https://zhuanlan.zhihu.com/p/545424688
 https://www.zhihu.com/question/36328609
 
 “灰色牲口”这个词的出处？
+
+https://mp.weixin.qq.com/s/6BvykIJNhvoSc3it22nACg
+
+第一颗芯片只比美国晚四年！为何俄罗斯还缺乏智能武器？

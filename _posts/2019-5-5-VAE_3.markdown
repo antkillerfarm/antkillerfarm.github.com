@@ -327,6 +327,10 @@ https://www.zhihu.com/question/536012286
 
 diffusion model最近在图像生成领域大红大紫，如何看待它的风头开始超过GAN？
 
+https://www.zhihu.com/question/558475081
+
+AI绘画过去也一直有研究，为什么会在最近几个月突然爆发？
+
 # VAE参考资源
 
 https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw

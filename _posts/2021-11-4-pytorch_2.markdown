@@ -281,6 +281,10 @@ https://zhuanlan.zhihu.com/p/73711222
 
 巧用torch.backends.cudnn.benchmark减少训练时间
 
+https://zhuanlan.zhihu.com/p/570989882
+
+Pytorch编译机制的总结（来自吴芃老师）
+
 # DL框架怀古
 
 2017.9
