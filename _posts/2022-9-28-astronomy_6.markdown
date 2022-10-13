@@ -9,6 +9,74 @@ category: Nature
 
 # 天文杂谈
 
+https://mp.weixin.qq.com/s/EZWl8UwhiAkIXWkWE0abUQ
+
+半个世纪的角逐：二战后的国际脉冲星搜寻竞赛
+
+https://mp.weixin.qq.com/s/tmSL5NIyjBpivtbGpbdKqQ
+
+威廉·赫歇尔：我一个德国音乐家，怎么就跑到英国当了天文学家？
+
+https://mp.weixin.qq.com/s/R2Hco-nE-e0S_gmTSImrAA
+
+它曾“超长待机”俯瞰地球，最终在“回家”路上粉身碎骨
+
+![](/images/img2/FYWX.jpg)
+
+https://mp.weixin.qq.com/s/yD3THPdd1rvx3oqBF1tayQ
+
+那个提出“戴森球”的物理学家去世了（Freeman Dyson）
+
+https://mp.weixin.qq.com/s/3dByllGuY9fsvUjoy7fPwg
+
+戴森传奇
+
+https://mp.weixin.qq.com/s/5NyYCE1vt99i2O_r-ThAGA
+
+下一次去哪？金星、木卫一，还是海卫一？
+
+https://mp.weixin.qq.com/s/6acgwIaDYC3VjMmdVSYYKQ
+
+未来的望远镜，能带我们看到宇宙大爆炸的边缘吗？（卡塞格林望远镜）
+
+![](/images/img3/eclipse.png)
+
+https://mp.weixin.qq.com/s/UDHAT3vLMS_yo4w0wbcpJQ
+
+十问北斗
+
+https://zhuanlan.zhihu.com/p/29213504
+
+从沙漏和星盘到六分仪和航海钟——恼人的航海定位
+
+https://mp.weixin.qq.com/s/SQPVTNYBU8JIRPYFqsXgtA
+
+神秘力量？上帝使者？彗星的“人设”早就崩塌了
+
+https://mp.weixin.qq.com/s/pAUiirbHyfrEgWUE21x93Q
+
+另一个费曼（Richard Feynman的妹妹Joan Feynman）
+
+https://mp.weixin.qq.com/s/iznVJzjkYA2I5Y-P0NKrdA
+
+美丽天文图片下，有哪些不为人知的“套路”
+
+https://mp.weixin.qq.com/s/hZBYHvYktdJeOrAHTCKTTA
+
+如何肉眼识别夜空中的人造卫星？
+
+https://mp.weixin.qq.com/s/lNh3jxjvRbpZ3zZYSZuOVg
+
+曾为地球“挺身而出”的磁场
+
+https://mp.weixin.qq.com/s/xo9aRt5rAX7bWeK4jwmkXA
+
+月球能承载多少人类生存？
+
+https://mp.weixin.qq.com/s/1L10R2c7wCTYFYcxPKiRtA
+
+彗星怎么拖了个长长的尾巴？
+
 https://mp.weixin.qq.com/s/yCmwX5srpmhYrbAkFbC-gQ
 
 20年，241人，5400000000000米（国际空间站）

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SpaceX, 中国航天
+title: SpaceX
 category: Nature 
 ---
 
@@ -251,6 +251,16 @@ https://www.zhihu.com/question/342491181
 
 ---
 
+SpaceX的Starlink卫星是大规模量产卫星的代表，因为沿用了特斯拉的GIGA工厂的思维建造产线，每颗制造成本低于25万美元，如果计算上猎鹰九号的发射成本，平摊到每颗卫星上成本也不超过65万美元，而一枚反卫星导弹的成本大约1000-2000万美元左右，所以俄罗斯反卫星实验不可能针对Starlink卫星。
+
+大家知道当60颗Starlink卫星准备发射前夕完成堆叠后发现其中几颗有问题会如何？答案是继续发射，因为成本极低并且马斯克的Starlink不是直送低轨，先送到一定高度由每颗Starlink卫星自己的霍尔推进器工作爬到指定的工作高度，因此质量有问题的Starlink卫星释放后不会爬升，而是快速进入大气层自毁不会成为太空垃圾。
+
+https://www.zhihu.com/question/558699932
+
+俄媒表示，俄军方宣布针对外国卫星展开反卫星武器试验，有哪些信息值得关注？
+
+---
+
 https://mp.weixin.qq.com/s/sPTRKfuhEc0xx7GacomxkA
 
 霍尔效应推进器
@@ -258,47 +268,3 @@ https://mp.weixin.qq.com/s/sPTRKfuhEc0xx7GacomxkA
 https://www.zhihu.com/question/425823778
 
 重力多大的星球无法发射化学火箭？
-
-# 中国航天
-
-![](/images/img4/CZ.jpg)
-
-![](/images/img4/CZ_2.jpg)
-
-![](/images/img4/CZ_3.jpg)
-
-![](/images/img4/CZ_4.jpg)
-
-![](/images/img4/CZ_5.jpg)
-
-https://mp.weixin.qq.com/s/YxfuqVdWsteW7P3rNkhYNQ
-
-中国航天日，一文带你看长征火箭发展史
-
----
-
-据《财经》报道，从融资和估值来看，蓝箭航天、零壹空间、星际荣耀已经成为目前众多民营航天企业的第一梯队，备受市场的关注。除此之外，还包括翎客航天、星途探索、九州云箭、灵动飞天、深蓝航天等。
-
-https://news.qq.com/a/20180927/005739.htm
-
-离职能直接影响中国登月的人才，只配待在国企底层？
-
-https://www.zhihu.com/question/295927388
-
-如何看待西航动力研究所张小平离职一事？
-
----
-
-1960年2月19日，南汇老港的一片滩涂上，响起了中国航天迈向太空的第一声轰鸣，第一枚液体探空火箭“T-7M”腾空而起，飞上了八千米高空。
-
-美国在2011年正式签订了《沃尔夫条款》，以法令的形式直接禁止了中美两国间的任何航空技术合作。
-
-NASA在2012年更是出台了指引，进一步指出，法令不仅适用于这些企业的一级机构，也包括其旗下的附属公司。
-
-https://www.zhihu.com/answer/136456079
-
-美国拟出台沃尔夫条款永久禁止中国进入国际空间站
-
-https://zhuanlan.zhihu.com/p/385461869
-
-这一次，中国人，笑了

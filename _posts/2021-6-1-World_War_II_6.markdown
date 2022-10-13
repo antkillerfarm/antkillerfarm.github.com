@@ -182,15 +182,3 @@ https://mp.weixin.qq.com/s/mD74va6Oy99eePxvGJKmaw
 https://mp.weixin.qq.com/s/Ey3siLU4Ti9qy_yKptsLJw
 
 史上最牛火山喷发：团灭美军轰炸机大队，把88架飞机烧成渣渣
-
-https://www.zhihu.com/question/368905319
-
-为什么二战美军钢盔上都有网？
-
-https://mp.weixin.qq.com/s/f_tbl1KT6suEB4HarHJKQQ
-
-荒诞却真实的历史：阿道夫·希特勒与动物保护
-
-https://mp.weixin.qq.com/s/d_Ua9kAvvz-W2YHjRCa_0w
-
-纳粹德国战犯百态：纽伦堡审判庭之外的细节

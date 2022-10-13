@@ -1,13 +1,71 @@
 ---
 layout: post
-title: 天文杂谈（一）
+title: 阿波罗50年, 天文杂谈（一）
 category: Nature 
 ---
 
 * toc
 {:toc}
 
-# 阿波罗50年（续）
+# 阿波罗50年
+
+https://mp.weixin.qq.com/s/79e6p2TYpttO-NR1of21jw
+
+月之梦的起源
+
+https://mp.weixin.qq.com/s/QtvKdwbuzUJICjdKbcPIlg
+
+登月究竟是真是假？
+
+https://view.inews.qq.com/a/TEC201907170006770C
+
+别误会，那个经典的月球脚印不是阿姆斯特朗的（巴兹·奥尔德林）
+
+https://mp.weixin.qq.com/s/OdMaaP_gE1rR_rd14LfA9w
+
+战争与登月的渊源
+
+https://mp.weixin.qq.com/s/YRJpHvlEulfBFm8HpBYBZQ
+
+苏联开启的登月序曲
+
+https://mp.weixin.qq.com/s/v3HNhV08vWYPGdeXAZ47ag
+
+月球来到你身边
+
+https://view.inews.qq.com/a/TEC2019072100124408
+
+一文俯瞰从阿波罗1号到17号全舰队
+
+![](/images/img3/Apollo11_AnnotatedHero.jpg)
+
+https://mp.weixin.qq.com/s/Y1hQJHFB5InSZNB2T2KfVw
+
+10万镜子反射月光，组成3.6平方公里巨幅头像，谷歌花式纪念登月50年
+
+https://mp.weixin.qq.com/s/d6nmsH10qchY1pP8CibiBA
+
+跌跌撞撞的美国
+
+https://mp.weixin.qq.com/s/-KHsG9lZknY952U_LTV7qg
+
+天气太热了，我们去太阳系度假吧
+
+https://mp.weixin.qq.com/s/EPMdW1qxQVl0MVUSjhWxyQ
+
+NASA传奇数学家去世，她曾笔算了登月轨道
+
+由于飞行前的制造和测试错误，氧气罐中的电线暴露了出来。在那个致命的夜晚，氧气罐中暴露的电线产生的火花引发了火灾，引爆了氧气罐，将服务舱外的隔热层炸飞。。。
+
+https://mp.weixin.qq.com/s/NmS1dbeIsQomsWYI8-OyZg
+
+阿波罗13号“伟大失败”50周年，NASA发布纪录片追忆奥德赛号逃生往事
+
+https://mp.weixin.qq.com/s/1Jm00gCel41frG43oT9yyA
+
+他是探月英雄，但没登上过月球（Michael Collins）
+
+---
 
 ![](/images/img3/india_moon.jpg)
 
@@ -192,71 +250,3 @@ https://mp.weixin.qq.com/s/DKMs8sZtE_JzWaxr8o-DWA
 https://mp.weixin.qq.com/s/sv6McqKzoqJ3snUeDvFfwg
 
 这地儿跟中国一个时区，你却从来没听说过？这个blog介绍了西澳大学和它的天文学成就。
-
-https://mp.weixin.qq.com/s/EZWl8UwhiAkIXWkWE0abUQ
-
-半个世纪的角逐：二战后的国际脉冲星搜寻竞赛
-
-https://mp.weixin.qq.com/s/tmSL5NIyjBpivtbGpbdKqQ
-
-威廉·赫歇尔：我一个德国音乐家，怎么就跑到英国当了天文学家？
-
-https://mp.weixin.qq.com/s/R2Hco-nE-e0S_gmTSImrAA
-
-它曾“超长待机”俯瞰地球，最终在“回家”路上粉身碎骨
-
-![](/images/img2/FYWX.jpg)
-
-https://mp.weixin.qq.com/s/yD3THPdd1rvx3oqBF1tayQ
-
-那个提出“戴森球”的物理学家去世了（Freeman Dyson）
-
-https://mp.weixin.qq.com/s/3dByllGuY9fsvUjoy7fPwg
-
-戴森传奇
-
-https://mp.weixin.qq.com/s/5NyYCE1vt99i2O_r-ThAGA
-
-下一次去哪？金星、木卫一，还是海卫一？
-
-https://mp.weixin.qq.com/s/6acgwIaDYC3VjMmdVSYYKQ
-
-未来的望远镜，能带我们看到宇宙大爆炸的边缘吗？（卡塞格林望远镜）
-
-![](/images/img3/eclipse.png)
-
-https://mp.weixin.qq.com/s/UDHAT3vLMS_yo4w0wbcpJQ
-
-十问北斗
-
-https://zhuanlan.zhihu.com/p/29213504
-
-从沙漏和星盘到六分仪和航海钟——恼人的航海定位
-
-https://mp.weixin.qq.com/s/SQPVTNYBU8JIRPYFqsXgtA
-
-神秘力量？上帝使者？彗星的“人设”早就崩塌了
-
-https://mp.weixin.qq.com/s/pAUiirbHyfrEgWUE21x93Q
-
-另一个费曼（Richard Feynman的妹妹Joan Feynman）
-
-https://mp.weixin.qq.com/s/iznVJzjkYA2I5Y-P0NKrdA
-
-美丽天文图片下，有哪些不为人知的“套路”
-
-https://mp.weixin.qq.com/s/hZBYHvYktdJeOrAHTCKTTA
-
-如何肉眼识别夜空中的人造卫星？
-
-https://mp.weixin.qq.com/s/lNh3jxjvRbpZ3zZYSZuOVg
-
-曾为地球“挺身而出”的磁场
-
-https://mp.weixin.qq.com/s/xo9aRt5rAX7bWeK4jwmkXA
-
-月球能承载多少人类生存？
-
-https://mp.weixin.qq.com/s/1L10R2c7wCTYFYcxPKiRtA
-
-彗星怎么拖了个长长的尾巴？
