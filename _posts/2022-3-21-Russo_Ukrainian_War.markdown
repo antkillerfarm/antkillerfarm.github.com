@@ -177,6 +177,8 @@ https://mp.weixin.qq.com/s/ommR-5zMvYvFiGodVZxBLw
 
 ![](/images/img4/Ukraine.png)
 
+![](/images/img4/Ukraine_3.jpg)
+
 https://zhuanlan.zhihu.com/p/360271391
 
 整兵经武 东乌克兰序列

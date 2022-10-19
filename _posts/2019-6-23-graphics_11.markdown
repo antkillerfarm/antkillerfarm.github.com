@@ -261,6 +261,10 @@ https://www.zhihu.com/question/310930978
 
 实时光线追踪（real-time ray tracing）技术还有哪些未攻克的难题？
 
+https://www.embree.org/
+
+Intel Embree：一个光线追踪方面的库。
+
 https://www.jianshu.com/p/4ec47871973c
 
 Path Tracing介绍
