@@ -52,6 +52,16 @@ https://www.zhihu.com/answer/2258430030
 
 GNU Binutils工具集介绍
 
+## 基本流程
+
+1、预处理，生成.i的文件（预处理器cpp）
+
+2、将预处理后的文件转换成汇编语言，生成文件.s（编译器egcs）
+
+3、有汇编变为目标代码(机器代码)生成.o的文件（汇编器as）
+
+4、连接目标代码，生成可执行程序（链接器ld）
+
 ## Linker
 
 常见的Linker主要有：GNU的Gold、LLVM的LLD，以及最新的Mold。

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争（一）——概述, 人物, 2014年战争, 战前 & 军改
+title:  俄乌战争（一）——概述, 人物, 2014年战争
 category: Russia 
 ---
 
