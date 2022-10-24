@@ -295,6 +295,10 @@ https://zhuanlan.zhihu.com/p/564622230
 
 几十年的老厨师不如一勺“高科技”？“海克斯科技”到底有多猛？
 
+https://www.zhihu.com/question/557265767
+
+全国单体面积最大养猪大楼鄂州投用，3700头猪将入住26层高楼，你对此事件有哪些评价？
+
 ## 化学工业
 
 https://wallstreetcn.com/articles/250536

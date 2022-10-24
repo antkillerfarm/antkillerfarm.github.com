@@ -9,6 +9,26 @@ category: resource
 
 # 电子科技史
 
+https://mp.weixin.qq.com/s/Dk_W-85_u_trzP4WrjZPfw
+
+“机器人界的微软”创始人逝世，从iPhone到汽车都离不开他的创造（发那科创始人稻叶清右卫门）
+
+https://mp.weixin.qq.com/s/BXy4vQepgNwir0ft_E0Knw
+
+短信诞生28年：先有短信，后有能发短信的手机，最后才诞生真正的九宫格
+
+https://mp.weixin.qq.com/s/E9Q1ceL9lZ7CkoDT61ioMg
+
+贝尔实验室的百年沉浮
+
+https://mp.weixin.qq.com/s/ZWn4k8AoT63Lgl77SxzQow
+
+英特尔史上最强的竞争对手，不是AMD！
+
+https://mp.weixin.qq.com/s/CWCPmfLrh3FY2VtpmiWJug
+
+揭秘GPS背后的“隐藏人物”！从小乡村到海军基地，这位女程序员把“地球”带进日常（Gladys West）
+
 https://mp.weixin.qq.com/s/Jf2xn5E1yvlxlT9lEWT47Q
 
 30张照片回顾乔布斯和比尔盖茨之间“不得不说”的故事
@@ -206,3 +226,45 @@ https://mp.weixin.qq.com/s/bELFDhgmhzSPEmdIQqTvDA
 https://www.zhihu.com/question/545441391
 
 如何看待微信安装包11年膨胀575倍？为什么现在的应用安装包越来越大了？
+
+https://zhuanlan.zhihu.com/p/357105224
+
+打开游戏要运行19.8亿次if语句？黑客嘲讽RockStar游戏代码太烂了
+
+# 区块链参考资源+
+
+https://mp.weixin.qq.com/s/9hhUZyeax206bAsSqks-1w
+
+比特币黑客攻击手段大揭秘
+
+https://mp.weixin.qq.com/s/Xxi50rDBjrqG-7MIloZMDw
+
+浅谈区块链技术与阿里云的探索实践
+
+https://mp.weixin.qq.com/s/cxzI5oFBAUdtV6akre678w
+
+当区块链与人工智能相遇，会有怎样火花？这篇23页《Blockchain for AI》综述论文告诉你
+
+https://mp.weixin.qq.com/s/4lccUIoXrfWn_Za8xJXH-w
+
+基于tendermint实现Hyperledger Fabric的拜占庭容错排序
+
+https://mp.weixin.qq.com/s/TaHiX6uZiGt-K4Na1r7kcA
+
+社科院商法研究室赵磊：证券交易信用机制，从CSD到DLT
+
+https://mp.weixin.qq.com/s/V4PUZF7JkV9N_EkSCtql2w
+
+Facebook发币，AI大牛签署白皮书，Keras之父评价：没用
+
+https://mp.weixin.qq.com/s/DGx3Y3cu00QN-p-AjkNx7g
+
+深入剖析实现比特币减半的十五行代码
+
+https://mp.weixin.qq.com/s/rlTJVV0PXjII2YJYENlwlw
+
+数字人民币官宣内测，双离线支付 “碰一碰”完成 转账！四个城市抢先试点！
+
+https://mp.weixin.qq.com/s/J6yF8fzvhLK-kJcdFXBxJg
+
+马斯克投15亿，价值47000美元的比特币，其实是一群数学家搞出来的……

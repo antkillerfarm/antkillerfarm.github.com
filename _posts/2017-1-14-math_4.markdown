@@ -144,7 +144,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/Tool/Gcc/random
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/Tool/Gcc/random/philox_1.c
 
-这个算法能够并行的要害在于，他又两个寄存器：种子寄存器和状态寄存器。这两个中任意一个不同，都会生成不同的随机数序列。
+这个算法能够并行的要害在于，它有两个寄存器：种子寄存器和状态寄存器。这两个中任意一个不同，都会生成不同的随机数序列。
 
 类似的，在tf中有两组随机数生成器：`tf.random.stateless_xxx`和`tf.random.xxx`。
 

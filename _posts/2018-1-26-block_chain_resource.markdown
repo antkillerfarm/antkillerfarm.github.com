@@ -127,6 +127,10 @@ https://mp.weixin.qq.com/s/kc0M19VFjfz8Ji1461V8nw
 
 狗狗币大火：一枚“山寨币”为啥被追着买？
 
+https://mp.weixin.qq.com/s/_kSC3ALUtVZQFHkAsG7ayw
+
+全球割韭菜40亿美元，中国成重灾区！“加密货币女王”人间蒸发已五年
+
 # 区块链参考资源
 
 https://mp.weixin.qq.com/s/bkLBaTs3pSQyYg9YgRnG8w
@@ -366,23 +370,3 @@ https://mp.weixin.qq.com/s/OUfDGYdgw6XKRgaUXmog1w
 https://mp.weixin.qq.com/s/k_mYbnchN2UF0kZ_2JD4Wg
 
 教你用C++搭建一条迷你区块链！
-
-https://mp.weixin.qq.com/s/9hhUZyeax206bAsSqks-1w
-
-比特币黑客攻击手段大揭秘
-
-https://mp.weixin.qq.com/s/Xxi50rDBjrqG-7MIloZMDw
-
-浅谈区块链技术与阿里云的探索实践
-
-https://mp.weixin.qq.com/s/cxzI5oFBAUdtV6akre678w
-
-当区块链与人工智能相遇，会有怎样火花？这篇23页《Blockchain for AI》综述论文告诉你
-
-https://mp.weixin.qq.com/s/4lccUIoXrfWn_Za8xJXH-w
-
-基于tendermint实现Hyperledger Fabric的拜占庭容错排序
-
-https://mp.weixin.qq.com/s/TaHiX6uZiGt-K4Na1r7kcA
-
-社科院商法研究室赵磊：证券交易信用机制，从CSD到DLT

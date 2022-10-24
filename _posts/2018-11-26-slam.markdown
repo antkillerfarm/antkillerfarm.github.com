@@ -400,21 +400,3 @@ https://mp.weixin.qq.com/s/7EKBehM3Dd0Oq7HTkjrm0g
 https://zhuanlan.zhihu.com/p/52322904
 
 相机模型与标定
-
-# 区块链参考资源+
-
-https://mp.weixin.qq.com/s/V4PUZF7JkV9N_EkSCtql2w
-
-Facebook发币，AI大牛签署白皮书，Keras之父评价：没用
-
-https://mp.weixin.qq.com/s/DGx3Y3cu00QN-p-AjkNx7g
-
-深入剖析实现比特币减半的十五行代码
-
-https://mp.weixin.qq.com/s/rlTJVV0PXjII2YJYENlwlw
-
-数字人民币官宣内测，双离线支付 “碰一碰”完成 转账！四个城市抢先试点！
-
-https://mp.weixin.qq.com/s/J6yF8fzvhLK-kJcdFXBxJg
-
-马斯克投15亿，价值47000美元的比特币，其实是一群数学家搞出来的……

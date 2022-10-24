@@ -170,3 +170,7 @@ https://www.zhihu.com/question/36328609
 https://mp.weixin.qq.com/s/6BvykIJNhvoSc3it22nACg
 
 第一颗芯片只比美国晚四年！为何俄罗斯还缺乏智能武器？
+
+https://mp.weixin.qq.com/s/HReTBOIof1lnZHOPqzZT7w
+
+1917-49年苏联（俄）中央委员会政治局的人事变动与派系斗争

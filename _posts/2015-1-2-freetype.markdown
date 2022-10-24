@@ -175,7 +175,7 @@ webp转gif：
 
 ## 3D
 
-Maya、3DS Max、ZBrush、Blender、BodyPaint 3D、CINEMA 4D。
+Maya、3DS Max、ZBrush、Blender、BodyPaint 3D、CINEMA 4D、Rhino。
 
 https://www.blendercn.org/
 
@@ -184,6 +184,10 @@ https://www.blendercn.org/
 https://space.bilibili.com/299275195
 
 一个blender方面的视频教程
+
+https://zhuanlan.zhihu.com/p/41814701
+
+Rhino超详细基础教程
 
 ## Others
 

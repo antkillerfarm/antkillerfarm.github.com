@@ -121,6 +121,14 @@ https://mp.weixin.qq.com/s/QcNm1x-RxagvgkXIXzhJMw
 
 ---
 
+这位1951年出生在美国纽约的发明家，从童年起就痴迷发明创造，如今已经有400多项个人专利，获得了总额25亿美元的身家。
+
+https://www.sohu.com/a/416602990_120757238
+
+“当代爱迪生”迪恩·卡门的10大逆天发明
+
+---
+
 https://mp.weixin.qq.com/s/YdoIVBpn1dFUEzDEF5pYJw
 
 被迫离开工作近20年的公司，半导体老兵上演逆袭。林孝平，一个小儿麻痹患者。
@@ -296,23 +304,3 @@ https://mp.weixin.qq.com/s/epI7bBrXq5tPPHDr8QyANQ
 https://mp.weixin.qq.com/s/N44XML7bXRyTU8DM40XDzg
 
 有史以来最贵的计算机bug，是如何让英特尔损失数十亿美元的
-
-https://mp.weixin.qq.com/s/Dk_W-85_u_trzP4WrjZPfw
-
-“机器人界的微软”创始人逝世，从iPhone到汽车都离不开他的创造（发那科创始人稻叶清右卫门）
-
-https://mp.weixin.qq.com/s/BXy4vQepgNwir0ft_E0Knw
-
-短信诞生28年：先有短信，后有能发短信的手机，最后才诞生真正的九宫格
-
-https://mp.weixin.qq.com/s/E9Q1ceL9lZ7CkoDT61ioMg
-
-贝尔实验室的百年沉浮
-
-https://mp.weixin.qq.com/s/ZWn4k8AoT63Lgl77SxzQow
-
-英特尔史上最强的竞争对手，不是AMD！
-
-https://mp.weixin.qq.com/s/CWCPmfLrh3FY2VtpmiWJug
-
-揭秘GPS背后的“隐藏人物”！从小乡村到海军基地，这位女程序员把“地球”带进日常（Gladys West）
