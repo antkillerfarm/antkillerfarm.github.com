@@ -364,3 +364,7 @@ http://www.cnblogs.com/zeze/p/6999651.html
 https://www.zhihu.com/question/21400777
 
 Borwein integral
+
+https://www.zhihu.com/question/527065482
+
+怎么证明圆周率π是无理数不是有理数?

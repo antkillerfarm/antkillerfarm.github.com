@@ -231,6 +231,10 @@ https://zhuanlan.zhihu.com/p/357105224
 
 打开游戏要运行19.8亿次if语句？黑客嘲讽RockStar游戏代码太烂了
 
+https://www.zhihu.com/question/28504752
+
+既然可以用拼音打字，当初为什么推广五笔？
+
 # 区块链参考资源+
 
 https://mp.weixin.qq.com/s/9hhUZyeax206bAsSqks-1w
