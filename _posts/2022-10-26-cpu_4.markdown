@@ -1,0 +1,146 @@
+---
+layout: post
+title: CPU(四)
+category: Chip 
+---
+
+* toc
+{:toc}
+
+# CPU
+
+https://mp.weixin.qq.com/s/lz6EoLiLtPtWFMG1FJCuQw
+
+化合物半导体的机遇
+
+https://mp.weixin.qq.com/s/tTtySk3u6m2BGUkDto5Ojw
+
+可重构芯片的方法学原理
+
+https://mp.weixin.qq.com/s/RkRZX_scr__Q_mLPhaaWAA
+
+AMD Zen 2处理器架构为何要如此设计？
+
+https://mp.weixin.qq.com/s/dRv4xWV8laCYBaZ0DwOC3A
+
+如何从零开始设计一颗芯片？
+
+https://mp.weixin.qq.com/s/eAzdtKvfw7EVz5Ax3nXeZg
+
+自己动手设计专用处理器
+
+https://mp.weixin.qq.com/s/NfNJVoAC5aW1sgToAmYsGw
+
+3nm芯片终结者
+
+https://mp.weixin.qq.com/s/o8C6n-ZRw3vFS8E-hikXJQ
+
+移动的王者：深入分析ARM最强处理器Cortex A77
+
+https://www.cnblogs.com/f-ck-need-u/p/11141636.html
+
+关于CPU的一些基本知识总结
+
+https://mp.weixin.qq.com/s/vTOGmcahRxQBH8RgkTJ2GA
+
+中文系同学都能听懂的集成电路设计流程
+
+https://mp.weixin.qq.com/s/O-2ecxYVOgEfRuwEoS7gRA
+
+Fab的那些事儿
+
+>Fab的全称叫Fabrication，也就是集成电路制造的工厂、车间。
+
+https://mp.weixin.qq.com/s/_NcQ-PxNpEtpYdo450Uukg
+
+半导体材料全球格局
+
+https://mp.weixin.qq.com/s/QwE_VTEUS9kGDDrHlzPYmg
+
+硅片为什么不是方的？
+
+https://zhuanlan.zhihu.com/p/32378843
+
+ARM攒机指南-汽车篇
+
+https://mp.weixin.qq.com/s/Hq9hzkyfGcCQa_FfzSDoRg
+
+5nm工艺节点以后，半导体器件的发展方向
+
+https://zhuanlan.zhihu.com/p/66263349
+
+为什么内存和闪存制程比CPU低？它们现在都在什么节点？
+
+https://zhuanlan.zhihu.com/p/114448236
+
+什么是Win10的“现代待机”？为什么它未来会越来越重要？这篇文章部分解释了我的第一个平板为什么那么耗电。
+
+https://mp.weixin.qq.com/s/J7RlmvU7JY1J8rV-eqjQ2A
+
+浅谈多核心CPU和SoC芯片及其工作原理
+
+https://mp.weixin.qq.com/s/Lnrlv7JcrOSwbnDweYf1Yg
+
+片上系统设计案例分析-Xbox主机
+
+https://zhuanlan.zhihu.com/p/86432216
+
+Microcode是什么？它为什么能修正CPU硬件错误？
+
+https://zhuanlan.zhihu.com/p/152167194
+
+两大FPGA公司的“AI技术路线”
+
+https://www.zhihu.com/question/503287789
+
+当两个CPU核心要求读写同一内存地址时，其后果是未定义行为吗？
+
+https://mp.weixin.qq.com/s/Kake5sQm79L2j_uDqKfznQ
+
+在《我的世界》里从零打造一台计算机有多难？复旦本科生大神花费了一年心血
+
+# GPU通信技术+
+
+## NCCL
+
+NCCL是Nvidia Collective multi-GPU Communication Library的简称，它是一个实现多GPU的collective communication通信库，可以在PCIe、Nvlink、InfiniBand上实现较高的通信速度。
+
+InfiniBand（直译为“无限带宽”技术，缩写为IB）是一个用于高性能计算的计算机网络通信标准，它具有极高的吞吐量和极低的延迟，用于计算机与计算机之间的数据互连。
+
+Mellanox Technologies是一家InfiniBand制造商，于2020年被Nvidia收购。
+
+官方文档：
+
+https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/index.html
+
+nccl v1：支持单机多卡通信，不支持多机通信。
+
+nccl v2：支持多机通信。
+
+参考：
+
+https://www.zhihu.com/question/63219175
+
+如何理解Nvidia英伟达的Multi-GPU多卡通信框架NCCL？
+
+https://zhuanlan.zhihu.com/p/364816069
+
+NCCL--GPU的collective communication通信技术
+
+https://blog.csdn.net/TH_NUM/article/details/81479317
+
+nvidia-nccl学习笔记
+
+https://developer.nvidia.com/blog/fast-multi-gpu-collectives-nccl/
+
+Fast Multi-GPU collectives with NCCL
+
+## 参考
+
+https://www.infoq.cn/article/3D4MsRVS8ZOtGCj7*krT
+
+GPU通信技术初探
+
+https://zhuanlan.zhihu.com/p/67785062
+
+不止显卡！这些硬件因素也影响着你的深度学习模型性能

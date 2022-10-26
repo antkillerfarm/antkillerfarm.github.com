@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  AI Chip（三）, CPU（四）
+title:  AI Chip（三）
 category: Chip 
 ---
 
@@ -145,94 +145,172 @@ https://zhuanlan.zhihu.com/p/503371595
 
 AI芯片（下），自动驾驶里的“水浒卡”
 
-# CPU
+# 数字成像+
 
-https://mp.weixin.qq.com/s/lz6EoLiLtPtWFMG1FJCuQw
+https://mp.weixin.qq.com/s/Fpy3_kljryrjEqoZz4IlNg
 
-化合物半导体的机遇
+电子后视镜（一）——相关标准汇总
 
-https://mp.weixin.qq.com/s/tTtySk3u6m2BGUkDto5Ojw
+https://mp.weixin.qq.com/s/aUAD-SWJ6PEplrFRb5SHZg
 
-可重构芯片的方法学原理
+消除摩尔纹的光学方法
 
-https://mp.weixin.qq.com/s/RkRZX_scr__Q_mLPhaaWAA
+https://mp.weixin.qq.com/s/yBd9qcmMHKIGx88voovFgw
 
-AMD Zen 2处理器架构为何要如此设计？
+有趣的偏振相机
 
-https://mp.weixin.qq.com/s/dRv4xWV8laCYBaZ0DwOC3A
+https://mp.weixin.qq.com/s/eVtbmy8rJ6V2j-6XJ0JJCA
 
-如何从零开始设计一颗芯片？
+夜景拍照之技术创新
 
-https://mp.weixin.qq.com/s/eAzdtKvfw7EVz5Ax3nXeZg
+https://mp.weixin.qq.com/s/DH3mZgh4YbnceaFGs03kOQ
 
-自己动手设计专用处理器
+曹汛：计算摄像学研究
 
-https://mp.weixin.qq.com/s/NfNJVoAC5aW1sgToAmYsGw
+https://mp.weixin.qq.com/s/f2BIrZ8if7_rX__J9hMHog
 
-3nm芯片终结者
+广色域---iphone X/8 camera的色彩进化
 
-https://mp.weixin.qq.com/s/o8C6n-ZRw3vFS8E-hikXJQ
+https://mp.weixin.qq.com/s/VjzXYgkzAGloczaaPXni2A
 
-移动的王者：深入分析ARM最强处理器Cortex A77
+PDAF进化史
 
-https://www.cnblogs.com/f-ck-need-u/p/11141636.html
+https://mp.weixin.qq.com/s/vg64EpcCVsk7gQAoEozSRQ
 
-关于CPU的一些基本知识总结
+PDAF进阶
 
-https://mp.weixin.qq.com/s/vTOGmcahRxQBH8RgkTJ2GA
+https://mp.weixin.qq.com/s/m7q6jHbdnb7fw4lKIDfVWw
 
-中文系同学都能听懂的集成电路设计流程
+camera接口之MIPI联盟浅谈
 
-https://mp.weixin.qq.com/s/O-2ecxYVOgEfRuwEoS7gRA
+https://mp.weixin.qq.com/s/DbDrDhbQAhXOsfxQ8UJVZg
 
-Fab的那些事儿
+三星S9凝时摄影背后的sensor技术
 
->Fab的全称叫Fabrication，也就是集成电路制造的工厂、车间。
+https://mp.weixin.qq.com/s/gOikxUxWpqdDRr6_KT2jxQ
 
-https://mp.weixin.qq.com/s/_NcQ-PxNpEtpYdo450Uukg
+图像处理，计算机视觉与machine learning的区别与联系
 
-半导体材料全球格局
+https://mp.weixin.qq.com/s/7fvVmmpPSldwa3TZ3dVb2g
 
-https://mp.weixin.qq.com/s/QwE_VTEUS9kGDDrHlzPYmg
+3D LUT--色彩校正的利器
 
-硅片为什么不是方的？
+https://mp.weixin.qq.com/s/m_EKOLjWjTyx4RBxsAAAGg
 
-https://zhuanlan.zhihu.com/p/32378843
+4x4阵列摄/“深感”摄
 
-ARM攒机指南-汽车篇
+https://mp.weixin.qq.com/s/dX_thGA2V_-AMjDGTUgWrg
 
-https://mp.weixin.qq.com/s/Hq9hzkyfGcCQa_FfzSDoRg
+计算摄影技术：身怀绝技的扫地僧
 
-5nm工艺节点以后，半导体器件的发展方向
+https://mp.weixin.qq.com/s/ZSczU1_J_exb2oreiHtK3g
 
-https://zhuanlan.zhihu.com/p/66263349
+夜景拍照之sensor篇
 
-为什么内存和闪存制程比CPU低？它们现在都在什么节点？
+https://mp.weixin.qq.com/s/eyIeLaBZ0f_EsxglsUuH8A
 
-https://zhuanlan.zhihu.com/p/114448236
+深度学习自动构图研究报告
 
-什么是Win10的“现代待机”？为什么它未来会越来越重要？这篇文章部分解释了我的第一个平板为什么那么耗电。
+https://mp.weixin.qq.com/s/k2JLF_aM3j68GjEByCZF-g
 
-https://mp.weixin.qq.com/s/J7RlmvU7JY1J8rV-eqjQ2A
+模拟/数字增益对图像噪声的影响
 
-浅谈多核心CPU和SoC芯片及其工作原理
+https://mp.weixin.qq.com/s/QmEQuEk2B_fAleewTuNClg
 
-https://mp.weixin.qq.com/s/Lnrlv7JcrOSwbnDweYf1Yg
+3D成像技术和CMOS传感器的发展方向简析
 
-片上系统设计案例分析-Xbox主机
+https://mp.weixin.qq.com/s/R7wnyHT6M-KF3ZMz0bPrVg
 
-https://zhuanlan.zhihu.com/p/86432216
+这台相机没镜头！美国教授新发明，一块玻璃可成像，拍照给计算机看
 
-Microcode是什么？它为什么能修正CPU硬件错误？
+https://mp.weixin.qq.com/s/j970Qp8Cz2fpbImujkS2Xg
 
-https://zhuanlan.zhihu.com/p/152167194
+自动驾驶应用中的LED flicker问题
 
-两大FPGA公司的“AI技术路线”
+https://mp.weixin.qq.com/s/Yy-XEyM0YGTRFUX2uWgNKw
 
-https://www.zhihu.com/question/503287789
+夜景拍照之算法篇
 
-当两个CPU核心要求读写同一内存地址时，其后果是未定义行为吗？
+https://mp.weixin.qq.com/s/h7MQhZjnP3lLkLD0cKNixA
 
-https://mp.weixin.qq.com/s/Kake5sQm79L2j_uDqKfznQ
+高动态范围成像的理论基础
 
-在《我的世界》里从零打造一台计算机有多难？复旦本科生大神花费了一年心血
+https://mp.weixin.qq.com/s/Wd6LD8Rme8XJwtYWU-ALtQ
+
+动态范围压缩（DRC）的四种方法
+
+https://mp.weixin.qq.com/s/7_mDPCEq3S-843PwUQSwXA
+
+车载相机image sensor选型
+
+https://mp.weixin.qq.com/s/byeQKa7d5FSLS7JrBwP_Zw
+
+什么是多光谱/高光谱成像
+
+https://mp.weixin.qq.com/s/nz9NHdyhRqxdhYopFQ_5Ag
+
+红外热成像与快速发热病患检测
+
+https://mp.weixin.qq.com/s/Htn1Il96fus7s8NkD2_98w
+
+Google Pixel4相机解密(1)夜景
+
+https://mp.weixin.qq.com/s/2uNcJxU-USpb-LZkka__eQ
+
+剖析苹果的激光雷达及参数估计
+
+https://mp.weixin.qq.com/s/DLsmHtUz3gAXMdzNsUTyFA
+
+苹果的DTOF中的SPAD原理和特性
+
+https://mp.weixin.qq.com/s/S8Wda_orUyco43FzV0cEeQ
+
+紫边/紫晕与图像传感器的关系
+
+https://zhuanlan.zhihu.com/p/74085115
+
+深度学习在3-D环境重建中的应用
+
+https://mp.weixin.qq.com/s/k9gff0Ote_V9qtN7HAruBA
+
+工业相机的sensor
+
+https://mp.weixin.qq.com/s/kvINl4pL4_wD71e33jaUSg
+
+下一代cmos image sensor---有机光导薄膜图像传感器
+
+https://mp.weixin.qq.com/s/024h8tPvCPPUyuT53CCPWQ
+
+液态镜头的发展与应用
+
+https://mp.weixin.qq.com/s/0XlH3fFKZBfX3UMq7eTbYw
+
+什么是event camera
+
+https://mp.weixin.qq.com/s/5fQDFlR5NZNW_HS2cOfTzg
+
+高光谱成像技术的介绍
+
+https://mp.weixin.qq.com/s/tSc_VKlohhhpT-3l37Bx0w
+
+激荡二十年——手机相机技术的发展历程
+
+https://mp.weixin.qq.com/s/GYpuj1rPRknWsRX6Av9XsQ
+
+各种有趣的屏下摄像头
+
+https://mp.weixin.qq.com/s/XihwGVU-8QJORfvENhhLnA
+
+图像传感器厂家大盘点（上）
+
+https://mp.weixin.qq.com/s/wSgSZA2c0fP3E8JgHn6yRQ
+
+AI时代的去马赛克算法
+
+https://mp.weixin.qq.com/s/YKL0Cwp1l9_4lAj8knMIqQ
+
+高级AI视觉算法是否还需要ISP?
+
+https://mp.weixin.qq.com/s/x4cz9mW1HOF8rtRv4uqLCQ
+
+门控相机：车载ADAS相机的未来？

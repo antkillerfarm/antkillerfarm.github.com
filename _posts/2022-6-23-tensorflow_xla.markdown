@@ -42,6 +42,14 @@ http://tensorflow.google.cn/xla/architecture
 
 TFE: Tensorflow Eager
 
+---
+
+2022.10 Google又创建了一个新的OpenXLA项目，旨在将XLA从TF中解耦。
+
+官网：
+
+https://github.com/openxla/xla
+
 ## 应用层
 
 TF目前（v2.4.1）的默认编译选项中已经包含了XLA，但是默认不会启动。
@@ -309,17 +317,3 @@ CPU的优先级是50，添加的backend的优先级只要大于50，就可以得
 bazel build -c dbg tensorflow/compiler/xla/tests:convolution_variants_test
 ./bazel-bin/tensorflow/compiler/xla/tests/convolution_variants_test_cpu --gtest_filter=*BackwardInputLowPaddingLessThanHighPadding*
 ```
-
-## python/C++ wrapper
-
-python: `pywrap_tfe.TFE_Py_Execute`
-
-C++: `TFE_Py_Execute`
-
-## Pytorch XLA
-
-Pytorch官方提供了如下项目支持XLA：
-
-https://github.com/pytorch/xla
-
-粗看了一下，都是些上层的代码，底层直接调用TF的实现。所以如果目标硬件已经接入TF XLA接口的话，理论上不需要修改就可以跑pytorch。

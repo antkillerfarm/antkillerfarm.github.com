@@ -134,6 +134,20 @@ https://mp.weixin.qq.com/s/9RUnWSSlEiwfoBB19faTcg
 
 双目立体视觉I：标定和校正
 
+## 全向视图
+
+在需要大视野的场景，如虚拟现实应用程序或自动机器人，全向（Omnidirectional）摄像机比传统摄像机具有巨大优势。不幸的是，标准的卷积神经网络不适用于这种情况，因为自然投影表面是一个球体，尤其是在两极地区（polar regions），如果不引入明显的畸变（distortions），无法将其展开（unwrapped）到一个平面。
+
+将球面图像映射为平面图像的过程，一般被称为dewarp。
+
+https://zhuanlan.zhihu.com/p/88675419
+
+在鱼眼和全向视图图像的深度学习方法（上）
+
+https://zhuanlan.zhihu.com/p/88675790
+
+在鱼眼和全向视图图像的深度学习方法（下）
+
 ## 结构光
 
 https://mp.weixin.qq.com/s/o_XsmqLSPhvuC0iiK7xHag
@@ -335,51 +349,3 @@ AI camera时代对成像带来了哪些影响
 https://mp.weixin.qq.com/s/YW3anc5S9_BDrXiyVro5fQ
 
 从光学成像到计算光学成像
-
-https://mp.weixin.qq.com/s/Fpy3_kljryrjEqoZz4IlNg
-
-电子后视镜（一）——相关标准汇总
-
-https://mp.weixin.qq.com/s/aUAD-SWJ6PEplrFRb5SHZg
-
-消除摩尔纹的光学方法
-
-https://mp.weixin.qq.com/s/yBd9qcmMHKIGx88voovFgw
-
-有趣的偏振相机
-
-https://mp.weixin.qq.com/s/eVtbmy8rJ6V2j-6XJ0JJCA
-
-夜景拍照之技术创新
-
-https://mp.weixin.qq.com/s/DH3mZgh4YbnceaFGs03kOQ
-
-曹汛：计算摄像学研究
-
-https://mp.weixin.qq.com/s/f2BIrZ8if7_rX__J9hMHog
-
-广色域---iphone X/8 camera的色彩进化
-
-https://mp.weixin.qq.com/s/VjzXYgkzAGloczaaPXni2A
-
-PDAF进化史
-
-https://mp.weixin.qq.com/s/vg64EpcCVsk7gQAoEozSRQ
-
-PDAF进阶
-
-https://mp.weixin.qq.com/s/m7q6jHbdnb7fw4lKIDfVWw
-
-camera接口之MIPI联盟浅谈
-
-https://mp.weixin.qq.com/s/DbDrDhbQAhXOsfxQ8UJVZg
-
-三星S9凝时摄影背后的sensor技术
-
-https://mp.weixin.qq.com/s/gOikxUxWpqdDRr6_KT2jxQ
-
-图像处理，计算机视觉与machine learning的区别与联系
-
-https://mp.weixin.qq.com/s/7fvVmmpPSldwa3TZ3dVb2g
-
-3D LUT--色彩校正的利器

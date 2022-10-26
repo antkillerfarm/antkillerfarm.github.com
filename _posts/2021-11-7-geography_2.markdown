@@ -71,18 +71,6 @@ https://www.zhihu.com/question/531584906
 
 ---
 
-地表上距离陆地最远的地方叫“尼莫点”在南太平洋中间，要从陆地上到达这里需要航行2700千米左右。
-
-尼莫点是一位叫赫尔沃耶·卢卡泰拉，加拿大克罗地亚裔的测量工程学家，在1992年的时候发现的。“尼莫”一词来自拉丁语，词的意思是“无人”。
-
-陆地上离海最远的点，是我国新疆省塔城地区托里县的老风口。
-
-https://www.zhihu.com/question/530791489
-
-世界上离海最远的地方是哪？
-
----
-
 每天有约400万m³来自丹江口的水进京，相当于每天72亿瓶矿泉水运进北京，能解决北京城区7成的供水，有了长江这条动脉带来的南水，枯竭的密云水库也涨回来了。2021年，北京地下水位已经回升至20年来最高了。
 
 2010年开始，政府花了总共170个亿，在长江口的小岛上围起了一座水库，长江水在这里沉淀净化，再跨江送入上海。如今，上海中心城区7成以上的饮用水，都是从这个小岛上来的。
@@ -90,6 +78,28 @@ https://www.zhihu.com/question/530791489
 https://mp.weixin.qq.com/s/0gij_WOmZcHixwc-SoxSJQ
 
 节约用水喊了十几年，水危机怎么悄无声息被解决的？
+
+---
+
+经线圈的周长除以360，然后再除以60，得到的长度就是1海里，即一分经线的长度。
+
+地心纬度：球心连接线和赤道面的角度。
+
+大地纬度：地面法线和赤道面的角度。
+
+后者可以通过天文观测直接获得，而前者并不能直接测量。
+
+18世纪中叶法国科学院组织了两只探险队进行弧度测量，一支是由皮埃尔·莫佩尔蒂率领前往北欧的拉普兰，令一支则由皮埃尔·布给(Pierre Bouguer)率领前往南美的厄瓜多尔，测量得出地球扁率为1:210，证实了地扁说。
+
+如果地球的两极是扁平的，那么靠近北极地区的相邻两纬度线之间的距离就比其他地方的大。但是如果地球的形状像一个柠檬的话，在两极地区相邻两纬度线之间的距离就比其他地方要小。
+
+https://www.zhihu.com/question/368834763
+
+海洋中为什么使用海里这一单位？
+
+https://www.zhihu.com/question/52529145
+
+请问一度经线的长度是怎么计算的？为什么离两极越远，经线长度越短？
 
 ---
 
@@ -228,63 +238,3 @@ https://mp.weixin.qq.com/s/PcAATiyQrfKKLIlEymSsog
 https://mp.weixin.qq.com/s/w0CA3uqZj9llyCxhOU-xgw
 
 地球上十座最危险的毒物废城
-
-https://www.zhihu.com/question/464055142
-
-美国国家地理正式承认南大洋为地球第五大洋，为什么此前不承认？南大洋有哪些特殊的地方？
-
-https://www.zhihu.com/question/22586409
-
-鄱阳湖还有救吗？
-
-https://mp.weixin.qq.com/s/n67jhRbOimVXqN3YKhDzuQ
-
-假如地球南北翻转会怎么样？
-
-https://mp.weixin.qq.com/s/Mdxrwy4NMW0A9sq7FJSU3w
-
-南北也曾是北南
-
-https://mp.weixin.qq.com/s/KR50fOET-9i7yFM6pY18_w
-
-假如有一天，地球上发生了这件事……
-
-https://www.zhihu.com/question/25543335
-
-世界上有哪些著名的飞地？
-
-https://mp.weixin.qq.com/s/QOw3ZZ-Ql2ob8IMt97U-cA
-
-明朝用“束水攻沙”对付黄河，这科学吗？
-
-https://mp.weixin.qq.com/s/DVNH663X4yUDWu5m9Uy37w
-
-为了“碳中和”，青藏高原上的石头也在努力
-
-https://mp.weixin.qq.com/s/TiZkQ2SBU4aVofXwd4yEug
-
-这个陌生又熟悉的光点
-
-https://mp.weixin.qq.com/s/WJMtsDoSj98FZdHlfj0zuQ
-
-现时与清代省会以上城池图鉴
-
-https://mp.weixin.qq.com/s/OAJ6KOWqX1Y-AyYdSTPk2Q
-
-喜马拉雅山曾高达12000米，你相信吗？
-
-https://www.zhihu.com/question/32141371
-
-美国黄石国家公园地下的超级火山的前世今生是怎样的？
-
-https://www.zhihu.com/question/375319488
-
-为什么史前会下几百万年的大雨?（卡尼期洪积事件）
-
-https://mp.weixin.qq.com/s/HhPE8RzIk5_XnMY9mdHB1g
-
-中国大运河：权力与财富的千年奔流
-
-https://www.zhihu.com/question/413322597
-
-马里亚纳海沟为什么会那么深？

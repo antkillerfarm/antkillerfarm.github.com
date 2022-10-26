@@ -235,6 +235,10 @@ https://www.zhihu.com/question/28504752
 
 既然可以用拼音打字，当初为什么推广五笔？
 
+https://mp.weixin.qq.com/s/Bi4CFs9pNvvuv7Qb-KSyKQ
+
+58岁PDF发明人离世
+
 # 区块链参考资源+
 
 https://mp.weixin.qq.com/s/9hhUZyeax206bAsSqks-1w

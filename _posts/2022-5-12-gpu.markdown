@@ -229,7 +229,23 @@ https://zhuanlan.zhihu.com/p/446837354
 
 GPU架构（下）—AI芯片设计入门
 
+https://zhuanlan.zhihu.com/p/576793055
+
+Intel四十年显卡坎坷路
+
 # GPU通信技术
+
+## 共享数据
+
+共享数据很简单，OpenGL时代的persistent map，让驱动去做同步、做数据搬运，从而给开发者营造“数据随时可得”的假象（当然也可能的确就是随时可得），这就已经达到共享数据的要求了。
+
+共享地址的难度则增加了一些，其目标是为了让你在CPU上跑的链表能直接在GPU等地方使用。x64时代到来使得内存地址扩充到48位，而且CPU上已经全面虚拟地址，GPU也要跟着加上地址转换的能力。
+
+共享物理内存则明确表明，实现了上两者的独显（OpenCL的SVM就是前两个要求）也要被排除。那就基本是核显Only（主机的架构也可以看作是核显）。
+
+https://www.zhihu.com/question/430936274
+
+苹果的统一内存和集成显卡与CPU共用内存有什么区别？
 
 ## RDMA
 
@@ -282,47 +298,3 @@ NVSwitch是首款节点交换架构，可支持单个服务器节点中16个全�
 https://zhuanlan.zhihu.com/p/35470532
 
 全球最大GPU 背后的秘密：NVSwitch如何实现NVIDIA DGX-2的超强功力？
-
-## NCCL
-
-NCCL是Nvidia Collective multi-GPU Communication Library的简称，它是一个实现多GPU的collective communication通信库，可以在PCIe、Nvlink、InfiniBand上实现较高的通信速度。
-
-InfiniBand（直译为“无限带宽”技术，缩写为IB）是一个用于高性能计算的计算机网络通信标准，它具有极高的吞吐量和极低的延迟，用于计算机与计算机之间的数据互连。
-
-Mellanox Technologies是一家InfiniBand制造商，于2020年被Nvidia收购。
-
-官方文档：
-
-https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/index.html
-
-nccl v1：支持单机多卡通信，不支持多机通信。
-
-nccl v2：支持多机通信。
-
-参考：
-
-https://www.zhihu.com/question/63219175
-
-如何理解Nvidia英伟达的Multi-GPU多卡通信框架NCCL？
-
-https://zhuanlan.zhihu.com/p/364816069
-
-NCCL--GPU的collective communication通信技术
-
-https://blog.csdn.net/TH_NUM/article/details/81479317
-
-nvidia-nccl学习笔记
-
-https://developer.nvidia.com/blog/fast-multi-gpu-collectives-nccl/
-
-Fast Multi-GPU collectives with NCCL
-
-## 参考
-
-https://www.infoq.cn/article/3D4MsRVS8ZOtGCj7*krT
-
-GPU通信技术初探
-
-https://zhuanlan.zhihu.com/p/67785062
-
-不止显卡！这些硬件因素也影响着你的深度学习模型性能

@@ -188,6 +188,20 @@ SPIR-V研究：编译器基本原理
 
 # XLA+
 
+## python/C++ wrapper
+
+python: `pywrap_tfe.TFE_Py_Execute`
+
+C++: `TFE_Py_Execute`
+
+## Pytorch XLA
+
+Pytorch官方提供了如下项目支持XLA：
+
+https://github.com/pytorch/xla
+
+粗看了一下，都是些上层的代码，底层直接调用TF的实现。所以如果目标硬件已经接入TF XLA接口的话，理论上不需要修改就可以跑pytorch。
+
 ## pass
 
 HLO也可以有pass：`HloModulePass`
