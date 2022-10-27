@@ -217,7 +217,73 @@ https://www.zhihu.com/question/466696410/answer/2219153613
 
 Tomcat为什么要JAVA破坏双亲委派机制？
 
+# 汇编
+
+https://mp.weixin.qq.com/s/OWGi1htNugOv81ZFPinRGw
+
+汇编实现的memcpy和memset
+
+https://mp.weixin.qq.com/s/6RoQAPsenD7Pu9enTqGeoQ
+
+移动端arm cpu优化学习笔记之内联汇编入门
+
+https://mp.weixin.qq.com/s/gr6YKmxbZjwfB4Rft1w55A
+
+一口气看完45个寄存器，CPU核心技术大揭秘
+
+https://mp.weixin.qq.com/s/504MLGjCESZPOvv8AwY6Pw
+
+这篇寄存器讲的有点意思
+
+https://github.com/zyantific/zydis
+
+一个x86/x86-64反汇编的的库。
+
+## ELF & PE
+
+![](/images/img4/exe.png)
+
+https://zhuanlan.zhihu.com/p/254882216
+
+深入浅出ELF
+
+https://mp.weixin.qq.com/s/vnqANjTMNqdjkHXl203eRg
+
+逆向工程基础：从PE文件到进程地址空间
+
+https://mp.weixin.qq.com/s/_RD_jY-gJFxlT9DX2jGDAA
+
+只有170字节，最小的64位Hello World程序这样写成
+
+https://www.zhihu.com/question/21715980
+
+Windows上最小的“HelloWorld.exe”能有多小？
+
+http://www.phreedom.org/research/tinype/
+
+Tiny PE
+
+https://www.zhihu.com/question/30576554
+
+自己写的COFF文件格式和编译器生成的.obj文件一样吗？
+
+---
+
+elf格式除了代码和数据外还有很多有用的信息，可以被标准boot loader识别，你如果不想自己花费10+天去自己实现stage1和stage2的bootloader的话，elf文件可以帮你省很多时间，因为grub可以直接加载，qemu也可以直接运行。
+
+https://www.zhihu.com/question/49580321
+
+C如何编译出一个不需要操作系统的程序？
+
 # Javascript参考资源+
+
+https://zhuanlan.zhihu.com/p/22989691
+
+JavaScript世界万物诞生记
+
+https://mp.weixin.qq.com/s/F5jCHDzgj1YSJBGrEi-RfA
+
+JavaScript性能优化的小知识总结
 
 https://mp.weixin.qq.com/s/WS1hQN5SmK5uavT_0fbrkg
 
@@ -358,61 +424,3 @@ https://mp.weixin.qq.com/s/rDAAfeQmUhxaHkrt_zVCCg
 https://zhuanlan.zhihu.com/p/438734215
 
 揭秘Chromium渲染引擎（一）：RenderingNG
-
-# 汇编
-
-https://mp.weixin.qq.com/s/OWGi1htNugOv81ZFPinRGw
-
-汇编实现的memcpy和memset
-
-https://mp.weixin.qq.com/s/6RoQAPsenD7Pu9enTqGeoQ
-
-移动端arm cpu优化学习笔记之内联汇编入门
-
-https://mp.weixin.qq.com/s/gr6YKmxbZjwfB4Rft1w55A
-
-一口气看完45个寄存器，CPU核心技术大揭秘
-
-https://mp.weixin.qq.com/s/504MLGjCESZPOvv8AwY6Pw
-
-这篇寄存器讲的有点意思
-
-https://github.com/zyantific/zydis
-
-一个x86/x86-64反汇编的的库。
-
-## ELF & PE
-
-![](/images/img4/exe.png)
-
-https://zhuanlan.zhihu.com/p/254882216
-
-深入浅出ELF
-
-https://mp.weixin.qq.com/s/vnqANjTMNqdjkHXl203eRg
-
-逆向工程基础：从PE文件到进程地址空间
-
-https://mp.weixin.qq.com/s/_RD_jY-gJFxlT9DX2jGDAA
-
-只有170字节，最小的64位Hello World程序这样写成
-
-https://www.zhihu.com/question/21715980
-
-Windows上最小的“HelloWorld.exe”能有多小？
-
-http://www.phreedom.org/research/tinype/
-
-Tiny PE
-
-https://www.zhihu.com/question/30576554
-
-自己写的COFF文件格式和编译器生成的.obj文件一样吗？
-
----
-
-elf格式除了代码和数据外还有很多有用的信息，可以被标准boot loader识别，你如果不想自己花费10+天去自己实现stage1和stage2的bootloader的话，elf文件可以帮你省很多时间，因为grub可以直接加载，qemu也可以直接运行。
-
-https://www.zhihu.com/question/49580321
-
-C如何编译出一个不需要操作系统的程序？

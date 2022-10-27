@@ -197,6 +197,10 @@ https://www.zhihu.com/question/328681136
 
 什么是弹幕射击游戏？
 
+https://www.bilibili.com/read/cv2773215
+
+一个错误诞生一个经典，CS最受欢迎地图“Dust II”背后的故事
+
 # 超算
 
 ![](/images/img3/power.aug.gif)

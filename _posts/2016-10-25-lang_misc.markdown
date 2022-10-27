@@ -127,6 +127,14 @@ https://blog.csdn.net/universsky2015/article/details/100933589
 
 函数式编程的基石——Lambda Calculus（Functional Programming）
 
+https://mp.weixin.qq.com/s/XTXnTPAbK1ipaHIsUD2kBQ
+
+深入理解函数式编程（上）
+
+https://mp.weixin.qq.com/s/2a2PZkGq0eKd7ee7HnHpoQ
+
+深入理解函数式编程（下）
+
 # Javascript
 
 ## WebAssembly
@@ -236,24 +244,6 @@ TypeScript文件的后缀是`.ts`，它不能直接在浏览器中运行，而�
 编译：
 
 `tsc helloworld.ts`
-
-## D3.js
-
-D3.js是一个数据可视化的库。原理上可以将之看成是是svg版的jQuery，然后进行相应的dom操作即可。
-
-官网：
-
-https://d3js.org/
-
-参考：
-
-https://www.cnblogs.com/fastmover/p/7779660.html
-
-D3.js从入门到“放弃”指南
-
-https://blog.csdn.net/qq_31052401/article/details/93786425
-
-可视化工具D3教程
 
 ## 框架
 

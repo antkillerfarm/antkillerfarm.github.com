@@ -7,6 +7,24 @@ category: language
 * toc
 {:toc}
 
+# D3.js
+
+D3.js是一个数据可视化的库。原理上可以将之看成是是svg版的jQuery，然后进行相应的dom操作即可。
+
+官网：
+
+https://d3js.org/
+
+参考：
+
+https://www.cnblogs.com/fastmover/p/7779660.html
+
+D3.js从入门到“放弃”指南
+
+https://blog.csdn.net/qq_31052401/article/details/93786425
+
+可视化工具D3教程
+
 # Monaco Editor
 
 Monaco Editor是MS开源的一个在线代码编辑工具，可提供类似VS code的功能。
@@ -284,13 +302,3 @@ https://zhuanlan.zhihu.com/p/66113575
 https://zhuanlan.zhihu.com/p/55903320
 
 Taro vs uni-app选型对比
-
-# Javascript参考资源
-
-https://zhuanlan.zhihu.com/p/22989691
-
-JavaScript世界万物诞生记
-
-https://mp.weixin.qq.com/s/F5jCHDzgj1YSJBGrEi-RfA
-
-JavaScript性能优化的小知识总结
