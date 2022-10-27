@@ -211,6 +211,8 @@ https://mp.weixin.qq.com/s/V5gymAXJBMmN0Nqbwte2hQ
 
 ![](/images/img4/w88.jpg)
 
+原子弹称为“一相弹”，只有铀235，氢弹“双相弹”，核裂变加核聚变，威力更大，三相弹就是氢弹外面再包一层铀238，这玩意便宜，在氢弹爆炸产生的极端环境下可以裂变，还产生大量核污染。
+
 https://futureoflife.org/background/us-nuclear-targets/
 
 美国核弹目标清单（1959年）
@@ -282,17 +284,3 @@ https://mp.weixin.qq.com/s/46NrpIako2lJ2ZitAQs8Sw
 http://pinkyjie.com/2010/08/31/covariance/
 
 浅谈协方差矩阵
-
-## 平稳过程
-
-严平稳过程：有限维分布。
-
-宽平稳过程：二阶矩。
-
-不要被名字迷惑了，由于两者关注的东西不同，一般情况下，严平稳过程不一定是宽平稳过程，宽平稳过程也不一定是严平稳过程。
-
-只有以下特例：
-
-1.对于二阶矩过程，严平稳过程一定是宽平稳过程。
-
-2.对于正态过程，严平稳过程和宽平稳过程是等价的。
