@@ -43,29 +43,61 @@ https://linux.cn/article-7329-1.html
 
 面向Linux的10款最佳剪贴板管理器
 
-# Linux知识图谱
+# SSH
 
-![](/images/article/linux_perf_tools_full.png)
+## keygen
 
-![](/images/img3/linux_kernel_map.png)
+```bash
+cd ~/.ssh
+ssh-keygen
+cat ~/.ssh/id_rsa.pub
+```
 
-原图地址：
+>`ssh-keygen`命令会生成两个文件id_rsa和id_rsa.pub，前者是私钥，后者是公钥，不要弄错了。
 
-http://www.brendangregg.com/linuxperf.html
+使用SSH有的时候会update失败。
 
-![](/images/img4/Linux-storage-stack-diagram_v4.10.png)
+解决办法：
 
-BSP: Board Support Package
+修改~/.ssh/config，添加:
+
+`User XXX`
 
 参考：
 
-https://mp.weixin.qq.com/s/-iCuxQjSghtDGaPMqaDSgQ
+https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key
 
-Linux思维导图整理
+Generating Your SSH Public Key
 
-https://mp.weixin.qq.com/s/sLyD6z2xBXRxfBZnImTgtQ
+## X Server
 
-40+张最全Linux/C/C++思维导图，收藏！
+假设客户端的ip是1.1.1.1，而ssh服务器的ip是2.2.2.2。
+
+Client:
+
+```bash
+xhost +2.2.2.2
+ssh -X root@2.2.2.2
+```
+
+Server:
+
+```bash
+export DISPLAY=1.1.1.1:0.0
+xclock
+```
+
+参考：
+
+https://www.cnblogs.com/-9-8/p/5365105.html
+
+ssh & display
+
+## 参考
+
+https://mp.weixin.qq.com/s/u3VSyEtdcIgp8dCbwCaavA
+
+SSH只能用于远程Linux主机？那说明你见识太小了！
 
 # 协程
 
@@ -353,20 +385,6 @@ swapon --show
 swapoff /swapfile
 ```
 
-# eBPF
-
-eBPF是一项革命性技术，它能在内核中运行沙箱程序（sandbox programs），而无需修改内核源码或者加载内核模块。
-
-参考：
-
-https://ebpf.io/zh-cn/
-
-一个eBPF的专栏
-
-https://www.ebpf.top/
-
-一个eBPF的专栏
-
 # pahole
 
 pahole可用来检查结构体中的内存漏洞，可作为内存优化的一个工具。
@@ -382,13 +400,3 @@ DWARF第一版发布于1992年，主要是为UNIX下的调试器提供必要的�
 https://zhuanlan.zhihu.com/p/419908664
 
 DWARF, 调试信息存储格式
-
-# 时间的表示方法
-
-一般遵循ISO 8601标准：
-
-https://www.w3.org/TR/NOTE-datetime
-
-YYYY-MM-DDThh:mm:ss.sTZD (eg 1997-07-16T19:20:30.45+01:00)
-
-其中的TZD表示time zone designator。

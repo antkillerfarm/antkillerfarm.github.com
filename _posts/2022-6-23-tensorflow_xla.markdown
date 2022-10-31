@@ -50,6 +50,10 @@ TFE: Tensorflow Eager
 
 https://github.com/openxla/xla
 
+该项目还有一个叫做stablehlo的工程：
+
+https://github.com/openxla/stablehlo
+
 ## 应用层
 
 TF目前（v2.4.1）的默认编译选项中已经包含了XLA，但是默认不会启动。

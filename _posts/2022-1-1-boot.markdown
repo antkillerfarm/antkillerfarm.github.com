@@ -261,6 +261,34 @@ linux的XDG基本目录规范
 
 # Linux参考资源+
 
+https://mp.weixin.qq.com/s/djEPqxZSfMp13Uf_h6TSiA
+
+认真分析mmap：是什么 为什么 怎么用
+
+https://zhuanlan.zhihu.com/p/424240082
+
+编译一个属于自己的最小Linux系统
+
+https://www.zhihu.com/question/66902460
+
+为什么Linux下要把创建进程分为fork()和exec()(一系列函数)两个函数来处理?
+
+https://zhuanlan.zhihu.com/p/464204319
+
+Linux网络子系统中DMA机制的实现
+
+https://mp.weixin.qq.com/s/1JiXL1f3SSjsBojlJSNOpQ
+
+Linux的启动流程
+
+https://mp.weixin.qq.com/s/ZfprFQjVANuCE2N693gZBQ
+
+用户空间和内核空间
+
+https://mp.weixin.qq.com/s/P14VsWwSh9jiF-jBHSXXOw
+
+申请内存时底层发生了什么？
+
 https://mp.weixin.qq.com/s/OJHQZjxa6u8aA6jZyJnNPg
 
 一文浅析内存管理机制

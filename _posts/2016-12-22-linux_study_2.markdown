@@ -218,10 +218,6 @@ https://mp.weixin.qq.com/s/HvADkICPYflS2VTuSB16rg
 
 Linux入门必看：如何60秒内分析Linux性能
 
-https://zhuanlan.zhihu.com/p/111556601
-
-valgrind排查内存泄露
-
 https://www.zhihu.com/question/63946754
 
 C++怎么检测内存泄露，怎么定位内存泄露？
@@ -229,6 +225,20 @@ C++怎么检测内存泄露，怎么定位内存泄露？
 https://mp.weixin.qq.com/s/FMYimnxcAya6bhvdGD5LUw
 
 惊魂48小时，阿里工程师如何紧急定位线上内存泄露？
+
+## valgrind
+
+官网：
+
+https://valgrind.org/
+
+它还有一个叫做QCacheGrind(KCacheGrind)的图形化性能分析工具。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/111556601
+
+valgrind排查内存泄露
 
 https://developer.mantidproject.org/ProfilingWithValgrind.html
 

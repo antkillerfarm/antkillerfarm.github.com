@@ -114,6 +114,10 @@ TensorBoard是一个http服务，用以监控TensorFlow的执行。
 
 TensorBoard会将同类结点Group，但Group之后，有时反而不易观察具体的结构。这个时候最好Ungroup一下。
 
+https://tensorflow.google.cn/tensorboard/tensorboard_profiling_keras
+
+TensorFlow Profiler: Profile model performance
+
 参考：
 
 http://blog.csdn.net/u013082989/article/details/53510625

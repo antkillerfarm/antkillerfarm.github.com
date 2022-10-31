@@ -213,6 +213,10 @@ https://mp.weixin.qq.com/s/46GnLJw6hciXrkgNLvF12w
 
 ROS常用组件
 
+https://mp.weixin.qq.com/s/K-FdqwgxmGP0VU1UryEubA
+
+拥抱ROS2系列：ROS2概述和实践入门
+
 ## PythonRobotics
 
 PythonRobotics是一个机器人算法方面的代码示例库。

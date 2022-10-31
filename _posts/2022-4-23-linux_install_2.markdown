@@ -91,11 +91,23 @@ https://www.cnblogs.com/gdme1320/p/9166564.html
 
 grub2引导系统iso镜像
 
-# U盘安装Linux
+# Linux学习心得
+
+## 时间的表示方法
+
+一般遵循ISO 8601标准：
+
+https://www.w3.org/TR/NOTE-datetime
+
+YYYY-MM-DDThh:mm:ss.sTZD (eg 1997-07-16T19:20:30.45+01:00)
+
+其中的TZD表示time zone designator。
+
+## U盘安装Linux
 
 在程序中找到“启动盘创建器”即可。这也是防止变砖的最后一条路，反正BIOS是不可能安装坏的，随便折腾吧。
 
-# wifi配置
+## wifi配置
 
 Linux下的wifi配置主要使用iw系列命令，包括iw、iwconfig、iwlist、iwpriv。参见：
 
@@ -103,7 +115,21 @@ http://blog.csdn.net/liangyamin/article/details/7209761
 
 Linux下的iwpriv（iwlist、iwconfig）的简单应用
 
-# Linux参考资源
+## eBPF
+
+eBPF是一项革命性技术，它能在内核中运行沙箱程序（sandbox programs），而无需修改内核源码或者加载内核模块。
+
+参考：
+
+https://ebpf.io/zh-cn/
+
+一个eBPF的专栏
+
+https://www.ebpf.top/
+
+一个eBPF的专栏
+
+## Linux参考资源
 
 https://www.kernel.org/doc/html/latest/
 
@@ -392,31 +418,3 @@ https://www.zhihu.com/question/496656138
 https://mp.weixin.qq.com/s/h4LwSRAsDgRqOq3mLt_SCw
 
 浅谈mmap
-
-https://mp.weixin.qq.com/s/djEPqxZSfMp13Uf_h6TSiA
-
-认真分析mmap：是什么 为什么 怎么用
-
-https://zhuanlan.zhihu.com/p/424240082
-
-编译一个属于自己的最小Linux系统
-
-https://www.zhihu.com/question/66902460
-
-为什么Linux下要把创建进程分为fork()和exec()(一系列函数)两个函数来处理?
-
-https://zhuanlan.zhihu.com/p/464204319
-
-Linux网络子系统中DMA机制的实现
-
-https://mp.weixin.qq.com/s/1JiXL1f3SSjsBojlJSNOpQ
-
-Linux的启动流程
-
-https://mp.weixin.qq.com/s/ZfprFQjVANuCE2N693gZBQ
-
-用户空间和内核空间
-
-https://mp.weixin.qq.com/s/P14VsWwSh9jiF-jBHSXXOw
-
-申请内存时底层发生了什么？

@@ -25,7 +25,9 @@ category: linux
 
 PATH：可执行文件路径。
 
-LD_LIBRARY_PATH：动态链接库文件路径
+LD_LIBRARY_PATH：动态链接库文件路径。
+
+LD_PRELOAD：优先调用自定义库而非系统库的时候会用到。
 
 # minicom
 
@@ -396,58 +398,26 @@ if (pfile != NULL){
 }
 ```
 
-# SSH
+# Linux知识图谱
 
-## keygen
+![](/images/article/linux_perf_tools_full.png)
 
-```bash
-cd ~/.ssh
-ssh-keygen
-cat ~/.ssh/id_rsa.pub
-```
+![](/images/img3/linux_kernel_map.png)
 
->`ssh-keygen`命令会生成两个文件id_rsa和id_rsa.pub，前者是私钥，后者是公钥，不要弄错了。
+原图地址：
 
-使用SSH有的时候会update失败。
+http://www.brendangregg.com/linuxperf.html
 
-解决办法：
+![](/images/img4/Linux-storage-stack-diagram_v4.10.png)
 
-修改~/.ssh/config，添加:
-
-`User XXX`
+BSP: Board Support Package
 
 参考：
 
-https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key
+https://mp.weixin.qq.com/s/-iCuxQjSghtDGaPMqaDSgQ
 
-Generating Your SSH Public Key
+Linux思维导图整理
 
-## X Server
+https://mp.weixin.qq.com/s/sLyD6z2xBXRxfBZnImTgtQ
 
-假设客户端的ip是1.1.1.1，而ssh服务器的ip是2.2.2.2。
-
-Client:
-
-```bash
-xhost +2.2.2.2
-ssh -X root@2.2.2.2
-```
-
-Server:
-
-```bash
-export DISPLAY=1.1.1.1:0.0
-xclock
-```
-
-参考：
-
-https://www.cnblogs.com/-9-8/p/5365105.html
-
-ssh & display
-
-## 参考
-
-https://mp.weixin.qq.com/s/u3VSyEtdcIgp8dCbwCaavA
-
-SSH只能用于远程Linux主机？那说明你见识太小了！
+40+张最全Linux/C/C++思维导图，收藏！

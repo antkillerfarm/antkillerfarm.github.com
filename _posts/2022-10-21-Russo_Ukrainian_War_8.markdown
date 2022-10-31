@@ -61,6 +61,8 @@ https://www.zhihu.com/question/558277344
 
 2022年，中东人在欧洲测试自己的武器。
 
+神风队，樱花弹，回天雷，震洋艇。大东欧圣战四大封印已开启。
+
 https://www.zhihu.com/question/558969712
 
 如何评价俄乌冲突中伊朗无人机的表现？
@@ -68,6 +70,10 @@ https://www.zhihu.com/question/558969712
 https://zhuanlan.zhihu.com/p/574723360
 
 如何干烂伊朗无人机?
+
+https://www.zhihu.com/question/563363100
+
+乌官员称俄黑海舰队4艘军舰发生爆炸，包括1艘护卫舰，具体情况如何？
 
 ---
 
