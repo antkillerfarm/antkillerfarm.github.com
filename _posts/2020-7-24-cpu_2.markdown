@@ -9,6 +9,74 @@ category: Chip
 
 # CPU
 
+## 光刻（续）
+
+https://mp.weixin.qq.com/s/c_cUbBKVYKNgXrbTdvvfpw
+
+中国“芯痛”终极十问：我们能造原子弹，却造不出一枚小芯片？
+
+https://mp.weixin.qq.com/s/vp-CvAvigztYse2_TI9T6Q
+
+中国有没有必要举全国之力，去造一台光刻机？
+
+https://mp.weixin.qq.com/s/DFU4zoteqehOJkBpVVhXyA
+
+EUV光刻机里的低调王者
+
+https://zhuanlan.zhihu.com/p/435563360
+
+28nm光刻机卡住“02专项”
+
+https://zhuanlan.zhihu.com/p/434563254
+
+国产“28nm光刻机”又跳票？到底卡在了哪里？
+
+## 芯片制造
+
+![](/images/img4/Wafer_size.png)
+
+https://mp.weixin.qq.com/s/jGzdfEJaulPRjt89eLST4Q
+
+8英寸晶圆30年
+
+---
+
+半导体产业发展至今经历了三个阶段，第一代半导体材料以硅为代表；第二代半导体材料砷化镓也已经广泛应用；而以氮化镓和碳化硅、氧化锌、氧化铝、金刚石等宽禁带为代表的第三代半导体材料。
+
+---
+
+https://mp.weixin.qq.com/s/QF9Nsh_YyX9LZQ_D-4hP-A
+
+芯片是怎么制造的？央视最强科普！
+
+https://mp.weixin.qq.com/s/bKgYpZdXxAexlEtmPQ9oGw
+
+科普：芯片是怎么从沙子中一步步炼成的！
+
+https://mp.weixin.qq.com/s/9y5HFTQr2QP12iR858BFtg
+
+图解intel芯片生产全过程！
+
+https://mp.weixin.qq.com/s/aSCcdTHUoogP7TOK5MIsVw
+
+一颗芯片的全球之旅
+
+https://mp.weixin.qq.com/s/LcnyAhOofWyGHikYwfIlIA
+
+芯片的诞生
+
+https://mp.weixin.qq.com/s/lD2bkDIX6ey-VHchSdbW7g
+
+漫画芯片
+
+https://mp.weixin.qq.com/s/v3wauOfWw6TLlxTH4QKR6w
+
+一文详解MOS管
+
+https://mp.weixin.qq.com/s/kzQ-WqozBX-T8ZyS58MPnw
+
+一张图了解芯片到底是如何设计的
+
 ## 封装
 
 ### BGA & QFP
@@ -267,94 +335,18 @@ https://zhuanlan.zhihu.com/p/522755103
 
 存算一体芯片设计与编译器开发
 
-## Jim Keller
+## C Model
 
-<table style="text-align:center" width="85%">
-  <tbody>
-    <tr>
-      <td colspan="5">Jim Keller: Work Experience</td>
-    </tr>
-    <tr>
-      <td colspan="2" rowspan="1"></td>
-      <td>Company</td>
-      <td>Title</td>
-      <td>Important<br />
-      Product</td>
-    </tr>
-    <tr>
-      <td><strong>1980s</strong></td>
-      <td><strong>1998</strong></td>
-      <td>DEC</td>
-      <td>Architect</td>
-      <td>Alpha</td>
-    </tr>
-    <tr>
-      <td><strong>1998</strong></td>
-      <td><strong>1999</strong></td>
-      <td>AMD</td>
-      <td>Lead Architect</td>
-      <td>K7, K8v1<br />
-      HyperTransport</td>
-    </tr>
-    <tr>
-      <td><strong>1999</strong></td>
-      <td><strong>2000</strong></td>
-      <td>SiByte</td>
-      <td>Chief Architect</td>
-      <td>MIPS Networking</td>
-    </tr>
-    <tr>
-      <td><strong>2000</strong></td>
-      <td><strong>2004</strong></td>
-      <td>Broadcom</td>
-      <td>Chief Architect</td>
-      <td>MIPS Networking</td>
-    </tr>
-    <tr>
-      <td><strong>2004</strong></td>
-      <td><strong>2008</strong></td>
-      <td>P.A. Semi</td>
-      <td>VP Engineering</td>
-      <td>Low Power Mobile</td>
-    </tr>
-    <tr>
-      <td><strong>2008</strong></td>
-      <td><strong>2012</strong></td>
-      <td>Apple</td>
-      <td>VP Engineering</td>
-      <td>A4 / A5 Mobile</td>
-    </tr>
-    <tr>
-      <td><strong>8/2012</strong></td>
-      <td><strong>9/2015</strong></td>
-      <td>AMD</td>
-      <td>Corp VP and<br />
-      Chief Cores Architect</td>
-      <td>Skybridge / K12<br />
-      (+ Zen)</td>
-    </tr>
-    <tr>
-      <td><strong>1/2016</strong></td>
-      <td><strong>4/2018</strong></td>
-      <td>Tesla</td>
-      <td>VP Autopilot<br />
-      Hardware Engineering</td>
-      <td>Fully Self-Driving<br />
-      (FSD) Chip</td>
-    </tr>
-    <tr>
-      <td><strong>4/2018</strong></td>
-      <td><strong>6/2020</strong></td>
-      <td>Intel</td>
-      <td>Senior VP<br />
-      Silicon Engineering</td>
-      <td>?</td>
-    </tr>
-    <tr>
-      <td colspan="2" rowspan="1"><strong>2021</strong></td>
-      <td>Tenstorrent</td>
-      <td>President and CTO</td>
-      <td>TBD</td>
-    </tr>
-  </tbody>
-</table>
+在芯片的架构设计阶段需要对芯片进行建模（modeling），建模的主要目的是在大规模投入人力之前先用低成本的计算机软件实现目标芯片的主要功能，评估芯片的工作效果，验证设计思想，并作为后续开发活动的标准和依据。由于这里的软件开发一般使用C语言，所以也叫做C Model。
+
+一般而言，C Model的功能定位可能会有以下几种：
+
+1. 作为算法模型的C版本，定义模块输入输出行为的标准，实现数据的bit-match；
+
+2. 在1的基础上，定义模块的内部结构和资源约束；
+
+3. 在2的基础上，精确定义模块的输入输出时序，实现cycle-accurate；
+
+https://zhuanlan.zhihu.com/p/263012865
+
+ASIC Design and C Model

@@ -9,6 +9,98 @@ category: Chip
 
 # CPU
 
+## Jim Keller
+
+<table style="text-align:center" width="85%">
+  <tbody>
+    <tr>
+      <td colspan="5">Jim Keller: Work Experience</td>
+    </tr>
+    <tr>
+      <td colspan="2" rowspan="1"></td>
+      <td>Company</td>
+      <td>Title</td>
+      <td>Important<br />
+      Product</td>
+    </tr>
+    <tr>
+      <td><strong>1980s</strong></td>
+      <td><strong>1998</strong></td>
+      <td>DEC</td>
+      <td>Architect</td>
+      <td>Alpha</td>
+    </tr>
+    <tr>
+      <td><strong>1998</strong></td>
+      <td><strong>1999</strong></td>
+      <td>AMD</td>
+      <td>Lead Architect</td>
+      <td>K7, K8v1<br />
+      HyperTransport</td>
+    </tr>
+    <tr>
+      <td><strong>1999</strong></td>
+      <td><strong>2000</strong></td>
+      <td>SiByte</td>
+      <td>Chief Architect</td>
+      <td>MIPS Networking</td>
+    </tr>
+    <tr>
+      <td><strong>2000</strong></td>
+      <td><strong>2004</strong></td>
+      <td>Broadcom</td>
+      <td>Chief Architect</td>
+      <td>MIPS Networking</td>
+    </tr>
+    <tr>
+      <td><strong>2004</strong></td>
+      <td><strong>2008</strong></td>
+      <td>P.A. Semi</td>
+      <td>VP Engineering</td>
+      <td>Low Power Mobile</td>
+    </tr>
+    <tr>
+      <td><strong>2008</strong></td>
+      <td><strong>2012</strong></td>
+      <td>Apple</td>
+      <td>VP Engineering</td>
+      <td>A4 / A5 Mobile</td>
+    </tr>
+    <tr>
+      <td><strong>8/2012</strong></td>
+      <td><strong>9/2015</strong></td>
+      <td>AMD</td>
+      <td>Corp VP and<br />
+      Chief Cores Architect</td>
+      <td>Skybridge / K12<br />
+      (+ Zen)</td>
+    </tr>
+    <tr>
+      <td><strong>1/2016</strong></td>
+      <td><strong>4/2018</strong></td>
+      <td>Tesla</td>
+      <td>VP Autopilot<br />
+      Hardware Engineering</td>
+      <td>Fully Self-Driving<br />
+      (FSD) Chip</td>
+    </tr>
+    <tr>
+      <td><strong>4/2018</strong></td>
+      <td><strong>6/2020</strong></td>
+      <td>Intel</td>
+      <td>Senior VP<br />
+      Silicon Engineering</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td colspan="2" rowspan="1"><strong>2021</strong></td>
+      <td>Tenstorrent</td>
+      <td>President and CTO</td>
+      <td>TBD</td>
+    </tr>
+  </tbody>
+</table>
+
 ## 国产CPU
 
 当年引进“以赛亚”内核的时候，兆芯的性能是优于龙芯的，然而，经过这些年的发展，龙芯通过不断迭代内核大幅提升的CPU性能，CPU性能已经超越兆芯。要知道，当时，兆芯承接核高基01专项，而且还有上海市地方海量资金扶持，而龙芯获得的经费和补贴相对于兆芯少的可怜。龙芯用实践证明了自主研发更具发展后劲，自主研发具有更高的效费比，可以花小钱办大事。
@@ -80,22 +172,6 @@ Data Artisans是由开源数据流处理技术Apache Fink的几位开发者于20
 https://www.zhihu.com/question/435517345
 
 如何看待阿里奇点编码器可以把视频压缩上千倍而画质影响不大？
-
-## C Model
-
-在芯片的架构设计阶段需要对芯片进行建模（modeling），建模的主要目的是在大规模投入人力之前先用低成本的计算机软件实现目标芯片的主要功能，评估芯片的工作效果，验证设计思想，并作为后续开发活动的标准和依据。由于这里的软件开发一般使用C语言，所以也叫做C Model。
-
-一般而言，C Model的功能定位可能会有以下几种：
-
-1. 作为算法模型的C版本，定义模块输入输出行为的标准，实现数据的bit-match；
-
-2. 在1的基础上，定义模块的内部结构和资源约束；
-
-3. 在2的基础上，精确定义模块的输入输出时序，实现cycle-accurate；
-
-https://zhuanlan.zhihu.com/p/263012865
-
-ASIC Design and C Model
 
 ## Other
 
@@ -216,71 +292,3 @@ https://mp.weixin.qq.com/s/v_BsfSFp-LwiCOFKaMIS_g
 https://mp.weixin.qq.com/s/gpfMOW7gzVa2HhYOlDy2nQ
 
 从Intel和ARM争霸战，看看做芯片有多难
-
-https://zhuanlan.zhihu.com/p/43626576
-
-关于芯片，这篇说得最详细！
-
-https://zhuanlan.zhihu.com/p/43768401
-
-如何像搭积木一样构建CPU？Intel和AMD都是怎么做的？
-
-https://zhuanlan.zhihu.com/p/48593932
-
-CPU底部的小块是干什么用的？为什么CPU这么多电源引脚？
-
-https://zhuanlan.zhihu.com/p/51145563
-
-TDP是CPU的功耗吗？TDP是固定不变的吗？
-
-https://mp.weixin.qq.com/s/gzE46SzANLaYaXdLVEBRaA
-
-专家揭秘“低功耗芯片设计”真相
-
-https://mp.weixin.qq.com/s/pFBhnjtXi8uNMGjYFeSfow
-
-芯片行业都难在哪儿？这篇说得最详细！
-
-https://mp.weixin.qq.com/s/nDWJS4rfWsqeVgJQbAYQ6w
-
-一文看懂IGBT(绝缘栅双极型晶体管）
-
-https://mp.weixin.qq.com/s/4_eGNtXULAdK9UzsP1mwKA
-
-IGBT的现状与发展
-
-https://mp.weixin.qq.com/s/TG6C4P-DvhRTJ2FoU8PFtw
-
-IGBT基础与运用知识
-
-https://zhuanlan.zhihu.com/p/56864499
-
-CPU是怎么调节输入电压的？为什么要这么做？
-
-https://mp.weixin.qq.com/s/LreWWlXAQL-dqQBCk93soQ
-
-解读两大精简指令集：RISC-V和MIPS
-
-https://mp.weixin.qq.com/s/JLg6sEwCxTMpo2nyCt50qg
-
-指令集——CPU芯片江湖中的门派标志
-
-https://mp.weixin.qq.com/s/7gXK6Qv9gLMkYtXw9oz9Sg
-
-一文看懂指令集是什么
-
-https://mp.weixin.qq.com/s/p7FKgx-sFGDJF0y4IGWvyg
-
-CPU指令集架构科普
-
-https://mp.weixin.qq.com/s/5uie8Ci5dK_wy54Z70Gklg
-
-RISC-V精简到何种程度？能省的都省了！
-
-https://mp.weixin.qq.com/s/JNCC3C3Sq0Hzk_5VBcivng
-
-RISC-V有何特别之处？
-
-https://mp.weixin.qq.com/s/26se041cc9aBRw16kvPPjA
-
-芯片制造新模式--像搭积木一样造芯片
