@@ -240,66 +240,6 @@ https://github.com/dmlc/dmlc-core
 
 # 机器人/无人驾驶参考资源+
 
-https://mp.weixin.qq.com/s/cLhnFCQdftj6Qi5j-PWDzw
-
-控制技术详解——控制理论
-
-https://mp.weixin.qq.com/s/N39CF1M7nV2cwUUMGRnG7g
-
-控制技术详解——基于模型的控制方法
-
-https://mp.weixin.qq.com/s/DrWeZOIhJV1dbpg7Ns6gJQ
-
-控制技术详解——控制器的类型
-
-https://mp.weixin.qq.com/s/Q4me1G9B8uwwRIr6dfETEA
-
-行为轨迹预测技术
-
-https://mp.weixin.qq.com/s/3ApXC3u13_O8s4QCYxldlQ
-
-基于模块化轻量级网络的道路目标检测
-
-https://mp.weixin.qq.com/s/kAP8MMjTjVyeBPcpY5E1FQ
-
-障碍物行为预测技术
-
-https://mp.weixin.qq.com/s/VwLNq84Nmg5--yTHlRdSJA
-
-深度学习在道路封闭挖掘方案的探索与实践
-
-https://mp.weixin.qq.com/s/sxm2cD7DAhJ6eIhUDvYRKA
-
-运动轨迹规划技术
-
-https://mp.weixin.qq.com/s/hs6uMkRctASmH1YrNOKFdw
-
-脱手检测在自动驾驶中的原理及应用
-
-https://zhuanlan.zhihu.com/p/83129242
-
-自动驾驶近期行为预测和规划的一些文章介绍
-
-https://zhuanlan.zhihu.com/p/83605553
-
-移动机器人同时估计自身位姿和物体位姿
-
-https://mp.weixin.qq.com/s/M-ihYsQUsT3deekhniixrQ
-
-聊聊无人驾驶技术中的路由寻径
-
-https://mp.weixin.qq.com/s/eVHAmNn7sHcghLkl-ksnAw
-
-谈谈“域控制器”
-
-https://mp.weixin.qq.com/s/aaN7W1cnlQyl4kPNGvxn_Q
-
-斯坦福大学李飞飞高徒朱玉可博士毕业论文——闭合感知-动作循环: 通用自主机器人探索
-
-https://mp.weixin.qq.com/s/w8gjhL_NiQSY_OKZ_RXb2g
-
-3D机器人视觉在仓储物流和工业自动化领域的应用
-
 https://mp.weixin.qq.com/s/rA9AAVx7AlNuS1l4IUuG0w
 
 深度学习技术在自动驾驶中的应用

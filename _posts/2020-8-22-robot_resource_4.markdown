@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器人/无人驾驶参考资源（四）, Apollo
+title:  机器人/无人驾驶参考资源（四）
 category: resource 
 ---
 
@@ -8,6 +8,38 @@ category: resource
 {:toc}
 
 # 机器人/无人驾驶参考资源
+
+https://mp.weixin.qq.com/s/x0Ls8jeqjuyJoZ53q5R7_A
+
+自动驾驶中的障碍物行为预测
+
+https://mp.weixin.qq.com/s/cV1-mxUKisRgeu9G4NPLrQ
+
+出行领域计算机视觉技术，滴滴AI Labs教程，117页PPT
+
+https://mp.weixin.qq.com/s/lSkMJTPitiswAp3GV3NDSQ
+
+基于车辆动力学辅助多轴IMU的自动驾驶汽车车身侧偏角和姿态角估计
+
+https://mp.weixin.qq.com/s/vSa5KSSj_B_2YFNvZuaygQ
+
+规划技术详解——Motion Planning Environment
+
+https://mp.weixin.qq.com/s/E7nxUyX5TjsPnaAovf3PdA
+
+自动驾驶思考：硬件篇
+
+https://mp.weixin.qq.com/s/jMqkdhtPRUurgC5XRYWqFw
+
+分割驱动下的6D物体姿态估计
+
+https://mp.weixin.qq.com/s/OHZl3KHfhh7i_EJ9pDvBPg
+
+V2X技术发展历程及应用研究
+
+https://mp.weixin.qq.com/s/UOfagdeiREP4Acakkvfd7A
+
+自动驾驶四轮独立驱动电动汽车的自适应分层轨迹跟踪控制方法
 
 https://mp.weixin.qq.com/s/NREmqVYXo6hWsIvzcnwIDA
 
@@ -309,112 +341,62 @@ https://mp.weixin.qq.com/s/At1nXEk7t6z5az9JoZu2pA
 
 关于数据增强在自动驾驶中的探讨
 
-# Apollo
+https://mp.weixin.qq.com/s/cLhnFCQdftj6Qi5j-PWDzw
 
-Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。
+控制技术详解——控制理论
 
-官网：
+https://mp.weixin.qq.com/s/N39CF1M7nV2cwUUMGRnG7g
 
-http://apollo.auto/
+控制技术详解——基于模型的控制方法
 
-代码：
+https://mp.weixin.qq.com/s/DrWeZOIhJV1dbpg7Ns6gJQ
 
-https://github.com/ApolloAuto/apollo
+控制技术详解——控制器的类型
 
-参考：
+https://mp.weixin.qq.com/s/Q4me1G9B8uwwRIr6dfETEA
 
-https://github.com/TeamStuQ/skill-map/blob/master/data/map-Apollo.md
+行为轨迹预测技术
 
-Apollo自动驾驶工程师技能图谱
+https://mp.weixin.qq.com/s/3ApXC3u13_O8s4QCYxldlQ
 
-https://mp.weixin.qq.com/s/qtoHF4Mnj_aeGBJbkjJUMA
+基于模块化轻量级网络的道路目标检测
 
-Apollo小度车载系统
+https://mp.weixin.qq.com/s/kAP8MMjTjVyeBPcpY5E1FQ
 
-https://mp.weixin.qq.com/s/rWhnazEC35U7nsVpsxhFEg
+障碍物行为预测技术
 
-Apollo 2.0软硬件框架初探（一）
+https://mp.weixin.qq.com/s/VwLNq84Nmg5--yTHlRdSJA
 
-https://mp.weixin.qq.com/s/GccST3xJ1QRIVM7cFgsn3A
+深度学习在道路封闭挖掘方案的探索与实践
 
-Apollo 2.0软硬件框架初探（二）
+https://mp.weixin.qq.com/s/sxm2cD7DAhJ6eIhUDvYRKA
 
-https://mp.weixin.qq.com/s/UHQXF2Ju8erw9thm0Jjt2A
+运动轨迹规划技术
 
-Apollo 2.0框架及源码分析(三)
+https://mp.weixin.qq.com/s/hs6uMkRctASmH1YrNOKFdw
 
-https://mp.weixin.qq.com/s/3i8mJn4OPjt-KV1fp8bZQQ
+脱手检测在自动驾驶中的原理及应用
 
-Apollo Planning模块源代码分析（上）
+https://zhuanlan.zhihu.com/p/83129242
 
-https://mp.weixin.qq.com/s/DfdMDOQMncTau-9zGq9CYw
+自动驾驶近期行为预测和规划的一些文章介绍
 
-Apollo Planning模块源代码分析（下）
+https://zhuanlan.zhihu.com/p/83605553
 
-https://mp.weixin.qq.com/s/bH6khM8gO3JE4YT9i8hSlQ
+移动机器人同时估计自身位姿和物体位姿
 
-Apollo 2.0自动驾驶平台技术解析与应用
+https://mp.weixin.qq.com/s/M-ihYsQUsT3deekhniixrQ
 
-https://mp.weixin.qq.com/s/EgsdlDhd8lIXU3bnTYJh0w
+聊聊无人驾驶技术中的路由寻径
 
-Apollo高精地图解析
+https://mp.weixin.qq.com/s/eVHAmNn7sHcghLkl-ksnAw
 
-https://mp.weixin.qq.com/s/027QogNXtW2NPIDVcGQGzw
+谈谈“域控制器”
 
-Apollo“云+端”研发迭代新模式实战
+https://mp.weixin.qq.com/s/aaN7W1cnlQyl4kPNGvxn_Q
 
-https://mp.weixin.qq.com/s/Pjfhs-03HxFeyeKo1BmAPw
+斯坦福大学李飞飞高徒朱玉可博士毕业论文——闭合感知-动作循环: 通用自主机器人探索
 
-Apollo小度车载系统打造更舒心的出行
+https://mp.weixin.qq.com/s/w8gjhL_NiQSY_OKZ_RXb2g
 
-https://mp.weixin.qq.com/s/j4faPastB3nFmgH_nhVW6g
-
-Apollo仿真平台如何Hold住99.9999%的复杂场景？
-
-https://mp.weixin.qq.com/s/PFCCRBGWmaTQkeyOlG1qng
-
-Apollo 2.0多传感器融合定位模块
-
-https://mp.weixin.qq.com/s/KEdXmwUGHysy_LZAfdkmlw
-
-Apollo的分布式可扩展计算平台探索
-
-https://mp.weixin.qq.com/s/MfTsH9mowuWFA54z7vs5fA
-
-Apollo Control模块源码解析
-
-https://mp.weixin.qq.com/s/bIjnm74cJcHP8Zab4kt5zA
-
-Apollo 2.5实时相对地图的分享
-
-https://mp.weixin.qq.com/s/hU8__GPgxaCStSgv4FyLIw
-
-无人驾驶行业及Apollo的Overview
-
-https://mp.weixin.qq.com/s/48DcWP1kAoze0Lv8jHY3Ow
-
-Apollo 2.5预测系统介绍
-
-https://mp.weixin.qq.com/s/7ftd941pycD7h_R10cDecg
-
-Apollo 2.5自动驾驶规划控制
-
-https://mp.weixin.qq.com/s/y_mOKpgLEvDjoO-UdMBcyw
-
-Apollo AdaperManager和Routing模块源代码分析
-
-https://mp.weixin.qq.com/s/k5GNHhxEE6mIOnxXlCpKXg
-
-Apollo 3.5软件架构
-
-https://mp.weixin.qq.com/s/Xhy1w87l_b47_hS3zzCgaA
-
-3D障碍物感知
-
-https://mp.weixin.qq.com/s?__biz=MzI1NjkxOTMyNQ==&mid=2247488270&idx=1&sn=25b6e9b4fbe02ef6c84f3171c4bd2e2a
-
-Apollo决策技术分享
-
-https://mp.weixin.qq.com/s/E65x4kNNZ4ctc12e5v095w
-
-自动驾驶专用计算框架探索和实践
+3D机器人视觉在仓储物流和工业自动化领域的应用

@@ -9,7 +9,27 @@ category: resource
 
 # 机器人/无人驾驶参考资源
 
-## 泊车（续）
+## 组合导航
+
+https://mp.weixin.qq.com/s/F8aLNue_qDlMyTAznBLC7g
+
+GPS/IMU/DMI组合导航方法研究
+
+https://mp.weixin.qq.com/s/tin5FtrJLnuKZCGDr8s3GA
+
+组合导航系列文章（一）：开篇
+
+https://mp.weixin.qq.com/s/BLEP6nmGSfPY3iMh_N3JKw
+
+组合导航系列文章（二）：惯性器件综述
+
+## 泊车
+
+**半自动泊车**系统为驾驶员操控车速，计算平台根据车速及周边环境来确定并执行转向，对应于SAE自动驾驶级别中的L1；
+
+**全自动泊车**为计算平台根据周边环境来确定并执行转向和加减速等全部操作，驾驶员可在车内或车外监控，对应于SAE L2级。
+
+**自主泊车**又称为代客泊车或一键泊车：指驾驶员可以在指定地点处召唤停车位上的车辆，或让当前驾驶的车辆停入指定或随机的停车位。整个过程正常状态下无需人员操作和监管，对应于SAE L3级别。
 
 参考：
 
@@ -370,35 +390,3 @@ https://mp.weixin.qq.com/s/nQq2tzK_2y2lEt9H14zdwA
 https://mp.weixin.qq.com/s/yIFgwxU-DI6NBogfmxqqKQ
 
 基于深度学习的计算机视觉技术在无人驾驶中的应用
-
-https://mp.weixin.qq.com/s/x0Ls8jeqjuyJoZ53q5R7_A
-
-自动驾驶中的障碍物行为预测
-
-https://mp.weixin.qq.com/s/cV1-mxUKisRgeu9G4NPLrQ
-
-出行领域计算机视觉技术，滴滴AI Labs教程，117页PPT
-
-https://mp.weixin.qq.com/s/lSkMJTPitiswAp3GV3NDSQ
-
-基于车辆动力学辅助多轴IMU的自动驾驶汽车车身侧偏角和姿态角估计
-
-https://mp.weixin.qq.com/s/vSa5KSSj_B_2YFNvZuaygQ
-
-规划技术详解——Motion Planning Environment
-
-https://mp.weixin.qq.com/s/E7nxUyX5TjsPnaAovf3PdA
-
-自动驾驶思考：硬件篇
-
-https://mp.weixin.qq.com/s/jMqkdhtPRUurgC5XRYWqFw
-
-分割驱动下的6D物体姿态估计
-
-https://mp.weixin.qq.com/s/OHZl3KHfhh7i_EJ9pDvBPg
-
-V2X技术发展历程及应用研究
-
-https://mp.weixin.qq.com/s/UOfagdeiREP4Acakkvfd7A
-
-自动驾驶四轮独立驱动电动汽车的自适应分层轨迹跟踪控制方法

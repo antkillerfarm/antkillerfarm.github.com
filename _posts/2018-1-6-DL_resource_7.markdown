@@ -352,3 +352,7 @@ https://www.zhihu.com/question/427088601
 https://www.zhihu.com/question/541441389
 
 有没有一种神经网络结构能同时求得其概率密度函数？
+
+https://mp.weixin.qq.com/s/VcW-88MVAVumSfOIaY183A
+
+李白: 你的模型权重很不错, 但可惜下一秒就是我的了

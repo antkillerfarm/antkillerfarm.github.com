@@ -171,6 +171,10 @@ https://www.zhihu.com/question/562917157
 
 为什么intel的7nm工艺的处理器没有像amd的那样积热那么严重?
 
+https://www.zhihu.com/question/552957041
+
+书上说代码地址总是从0x400000开始，但是查看编译好的elf头起始地址是从0开始的，这是为什么？
+
 # GPU通信技术+
 
 ## NCCL
