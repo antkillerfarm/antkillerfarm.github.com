@@ -211,6 +211,18 @@ https://linux.cn/article-7083-1.html
 
 如何选择文件系统：EXT4、Btrfs和XFS
 
+https://zhuanlan.zhihu.com/p/579011810
+
+300行代码带你实现一个Linux文件系统
+
+## Inotify
+
+一种高效、实时的Linux文件系统事件监控框架。参考文档：
+
+http://www.infoq.com/cn/articles/inotify-linux-file-system-event-monitoring
+
+Inotify: 高效、实时的Linux文件系统事件监控框架
+
 ## debuger
 
 Ext系列可以使用`debugfs`命令。
@@ -258,13 +270,7 @@ https://wiki.archlinux.org/index.php/Pacman/Rosetta
 | Node.js | NPM |
 | PHP | pear |
 
-## Inotify
 
-一种高效、实时的Linux文件系统事件监控框架。参考文档：
-
-http://www.infoq.com/cn/articles/inotify-linux-file-system-event-monitoring
-
-Inotify: 高效、实时的Linux文件系统事件监控框架
 
 # betty
 

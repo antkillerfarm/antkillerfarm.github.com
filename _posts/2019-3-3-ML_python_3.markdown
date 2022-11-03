@@ -109,7 +109,7 @@ https://github.com/tryolabs/luminoth
 
 ## PIL
 
-PIL：Python Imaging Library，已经是Python平台事实上的图像处理标准库了。
+PIL：Python Imaging Library，已经是Python平台事实上的图像处理标准库了。由于PIL仅支持到Python 2.7，加上年久失修，于是一群志愿者在PIL的基础上创建了兼容的版本，名字叫Pillow。
 
 官网：
 

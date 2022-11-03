@@ -253,3 +253,21 @@ SpeechBrain是一个基于pytorch的语音工具包，目前（2019.9）正在�
 官网：
 
 https://speechbrain.github.io/
+
+# Flume & Kafka+
+
+https://mp.weixin.qq.com/s/UFfpPnouxXjOFAmZVdSTVg
+
+Kafka核心源码剖析（一）：Producer发送消息流程
+
+https://mp.weixin.qq.com/s/exOs0zrZ2x8Mxi6aB1x-QQ
+
+流数据并行处理性能比较：Kafka vs Pulsar vs Pravega
+
+https://mp.weixin.qq.com/s/ijek6Tdb6H3hqY2CEC917Q
+
+从面试角度来看一看Kafka
+
+https://mp.weixin.qq.com/s/zmDTaW8c65BWZ-mhsED1jw
+
+从演进式角度看消息队列

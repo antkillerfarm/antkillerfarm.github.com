@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  AI医疗, 可视化
+title:  AI医疗, AlphaFold
 category: resource 
 ---
 
@@ -117,22 +117,6 @@ https://mp.weixin.qq.com/s/ojlhC7vGB1r6scKipm0BjA
 
 小样本如何进行深度学习？西北工夏勇教授这一份54页《医学影像小数据深度学习》PPT为你讲解
 
-https://mp.weixin.qq.com/s/xi_iIr6NdC3QOpjypx3pGg
-
-AlphaGo之后，DeepMind重磅推出AlphaFold：基因序列预测蛋白质结构
-
-https://zhuanlan.zhihu.com/p/415200429
-
-解读AlphaFold优点和不足
-
-https://www.zhihu.com/question/433443455
-
-alphafold2的结果对于毕生研究蛋白质折叠问题的David Baker大牛是否是一个打击？
-
-https://mp.weixin.qq.com/s/ZIw8NQfE8Spv1_RWknhipA
-
-为什么说AlphaFold2足以改变全人类？
-
 https://mp.weixin.qq.com/s/ggZZpBPap398yQ1asHD7aQ
 
 深度重建：基于深度学习的图像重建
@@ -213,176 +197,68 @@ https://mp.weixin.qq.com/s/clPpAveascHt7xwPr83HvA
 
 Pair，医学图像标注神器
 
-# 可视化
+# AlphaFold
 
-![](/images/img2/data_visual.png)
+https://mp.weixin.qq.com/s/xi_iIr6NdC3QOpjypx3pGg
 
-这里重点推荐下文：
+AlphaGo之后，DeepMind重磅推出AlphaFold：基因序列预测蛋白质结构
 
-https://mp.weixin.qq.com/s/QUoW4eD93_DPQ7kP_6jaZg
+https://zhuanlan.zhihu.com/p/415200429
 
-定义可视化！用30分钟读懂人类感知世界的39项研究
+解读AlphaFold优点和不足
 
-这篇文章从人类感知的角度分析了各种可视化技术。其中的一个有意思的结论是：
+https://www.zhihu.com/question/433443455
 
->3D图形虽然“炫目”和“性感”，却没有传达任何额外的信息，迫使读者“处理冗余和无关的线索”。
+alphafold2的结果对于毕生研究蛋白质折叠问题的David Baker大牛是否是一个打击？
 
----
+https://mp.weixin.qq.com/s/ZIw8NQfE8Spv1_RWknhipA
 
-https://mp.weixin.qq.com/s/yF1XJ-_YteoZbVbdIvlbmg
-
-如果伦敦地铁图是数据科学家画的……
-
->Henry Charles Beck，1902～1974，英国制图师。其1931年绘制的伦敦地铁图成为了现代地铁图的设计范例。
+为什么说AlphaFold2足以改变全人类？
 
 ---
 
-最早的Sankey diagram是Charles Minard绘制的1812年拿破仑俄国战役地图（1869年）。这张战役地图将一张桑基图叠加到一张地图上，是一张流程图与地图结合的图表。
+施一公从他开始评上院士，就有很多人质疑他的水平不够。他是做啥的？蛋白分子解析的，说的简单一点，就是用冷冻镜解析蛋白结构，这是个苦力活，用冷冻镜观察蛋白结构，从中分析出来一些东西，然后记录一下发篇Nature。这个东西有用吗？据说有用，但是现在还没用上。如果施一公能够把他研究的东西用上，比如说治疗某种疾病？甚至预防某种疾病？或者研发出某种药物等等，那么他当上院士就是当之无愧的，但可惜，目前还没什么用？而且这个理论也不是他提出来的，他只是应用者。
 
-![](/images/img4/Nepoleon_1812.png)
+我记得有一个科学家说过一句话，具体是谁忘了：“中国科学家目前的状态就是，耗费大量的时间和金钱去验证国外的科学家（他们的国外导师）所提出的理论的正确性，为他们获得诺奖提供证据。”
 
-Minard的作品在当时相当受欢迎，至少在政府单位间是如此。1850年到1860年，法国政府部门首长希望在自己的画像中都有Minard画的图表。
-
-http://www.uux.cn/viewnews-84270.html
-
-史上最杰出的绘图大师——查尔斯．约瑟夫．米纳德（Charles Joseph Minard）
-
-https://www.ctocio.com/ccnews/16227.html
-
-人类历史上最有影响力的五个数据可视化信息图
-
-https://mp.weixin.qq.com/s/ItbTw9RQ2lR0WfmVLLkEzQ
-
-一张图看懂世界石油分布？用Python轻松搞定！
+施一公所做的也是这个工作，包括科大搞量子通信的潘建伟院士，他们所做的就是验证他们老师所提出的理论是否正确，并且应用这个理论做一些实验。
 
 ---
 
-伟大的Florence Nightingale不仅是一位护士，还是一位统计学家。
+颜宁施一公的工作 = 手工织衣服
 
-1855年，在争夺巴尔干半岛控制权的克里米亚战争中，英国军队与俄军和疾病两线作战。作为一位护士，你如何说服将军们投钱在医院和医疗设施上，而不是枪炮弹药？
+DeepMind的AlphaFold = 珍妮纺织机
 
-![](/images/img4/Nightingales.jpg)
+这么几十年，所有的几千名结构生物学家才解析19万个蛋白质，DeepMind一年直接上亿，打破了原有的行业发展。
 
-Florence Nightingale用数据图表的方式展示了那些可预防疾病（蓝色和灰色区域）导致的惊人死亡数字。看过南丁格尔的数据可视化信息图后，卫生和医疗成了英国军队的头号要务。
+AlphaFold两个主要大佬Demis Hassabis和John Jumper在2023年获得豪华版诺奖：科学突破奖。
 
-这种圆形直方图，又被称为南丁格尔玫瑰图。
+在ChemistryViews网站的一项调查显示，John Jumper也成为全球呼声最高的诺奖建议者名单的科学家，不过从历史来看，诺奖最短获奖时间是6年，因此AlphaFold目前只问世2年，还需要时间来验证其跨时代性。
 
->Florence Nightingale，1820～1910，英国人，女。护理事业创始人和现代护理教育奠基人。她虽然和当时大多数女性一样，没有接受学校教育，但却接受了良好的家庭教育。
+DeepMind展示了工业化集团攻关的科研形式，相对于传统的一个教授（领主）带几个学生（佃农）的封建式科研形式的优越性。
 
----
+至AlphaFold2问世之后，各国顶级投资人，政府机构，生物制药企业，原本拨给传统结构生物学的90%以上的经费，划拨给生物AI的实验室。
 
-现代数据可视化鼻祖William Playfair创建了我们现在熟悉的折线图、条形图和饼状图。
+施一公自己想必也很清楚，用蛋白质结构设计药物这件事情早在半个世纪以前就被提出来了，目前市面上根据蛋白结构设计出来的药物数量为0。
 
-https://mp.weixin.qq.com/s/djkeZ2qC9opjIVHVcT0IZw
+八年前颜宁在解出葡萄糖转运蛋白GLUT1的结构以后说可以设计药物饿死癌细胞，后来又说要饿死疟原虫，八年过去了，药物在哪里呢？除了饿死被他们骗着学生物的学生，啥都饿不死吧……
 
-在数据可视化这一块，我们可能真比不上几百年前的科学家
+施一公曾公开表示：压死骆驼的最后一根稻草，是鼓励科学家创业，后来自己却创立了一家制药公司。。。
 
----
+10年前我读书的时候，我们院系有老师是做核酸检测的，因为那个时候不是啥显学，整个学科被11g抢资源抢的非常苦，简直是仇深似海。
 
-热门题材的可视化鬼才：
+解析晶体结构且只解析晶体结构，是一项复杂的简单工作，是一件体力劳动远多于脑力劳动、重复性极高且成功率不低的技术工作。既然选择了这样的工作，就不要再把自己包装成具有深邃思考的科学大家。
 
-![](/images/img4/Covid_Japan.gif)
+一句话概括施老师颜老师的Research：基于电镜技术的热门蛋白质三维结构的解析工作。
 
----
+科学大家可能会有很多CNS，但有很多CNS的，不一定就是大科学家。
 
-爆炸图（Exploded Views）也称立体装配图。
+不料谷歌人工智能程序今年把已知的上亿种蛋白质的结构全破解了，大部分结果和用实验获得的一样好，以后只会越来越好，而且开源谁都能用。于是颜宁的专业就悲剧了，当然不会马上失业，但没前途是肯定的。而她除了解析蛋白结构又不会干别的，没法转行做功能生物学研究，毅然回国当学官、学商是最佳选择。
 
-https://www.zhihu.com/question/278958074
+https://www.zhihu.com/answer/2739900394
 
-如何绘制工业产品的爆炸图？
+如何看待颜宁宣布即将辞去普林斯顿大学教职，全职回国，出任深圳医学科学院创始院长？
 
----
+https://www.zhihu.com/answer/2737553223
 
-https://www.douban.com/group/topic/176322122/
-
-画图小白想问一句，这种核酸检测人数的贪吃蛇图怎...
-
-## howmuch.net
-
-howmuch.net是一个金融类的数据可视化网站，挺有意思的。比如下图：
-
-![](/images/article/top_10_company.jpg)
-
-网址：
-
-https://howmuch.net/
-
-## Gephi
-
-Gephi是一个针对图和网络的可视化工具。
-
-官网：
-
-https://gephi.org/
-
-## Processing
-
-Processing是一个在可视化领域用的比较多的sketchbook，类似于Logo语言的威力加强版。支持Java、python等多种语言。
-
-官网：
-
-https://processing.org
-
-## 参考
-
-https://hiplot.com.cn/
-
-一个可视化在线编辑网站。包含200+的图表种类。
-
----
-
-https://mp.weixin.qq.com/s/QL9R-bAerxnWIUgJhMz1Rw
-
-数据可视化怎么选择图表
-
-https://mp.weixin.qq.com/s/Ul6Qg2ylCgvDfJTQre4DWQ
-
-2017年数据可视化的七大趋势
-
-https://mp.weixin.qq.com/s/i2Ex8Zmu2ZzHPcoPr-1Rlw
-
-太阳系相关图，教你优雅的打开“可视化”的大门
-
-https://mp.weixin.qq.com/s/q5mPN_rt1Af5L2fnxuTdCA
-
-46款数据可视化分析工具大集合
-
-https://mp.weixin.qq.com/s/mD732PqDtqYdFZSxZWtvvg
-
-从1维到6维，一文读懂多维数据可视化策略
-
-https://zhuanlan.zhihu.com/c_122608198
-
-一个可视化方面的专栏
-
-https://www.zhihu.com/question/21664179
-
-如何在论文中画出漂亮的插图？
-
-https://zhuanlan.zhihu.com/p/20756711
-
-用Excel做出强大漂亮的数据地图
-
-https://mp.weixin.qq.com/s/XuoeOqGT_mJcFP08ZLq38g
-
-如何选择一个合适的数据图表？
-
-https://mp.weixin.qq.com/s/-XFbY7p8vjJV71Ar5G_5OA
-
-最有趣的机器学习可视化图集
-
-https://mp.weixin.qq.com/s/E-HBQs1-nzP1shC7Gge-7A
-
-“看透”神经网络
-
-https://mp.weixin.qq.com/s/Ys8lnwLyvToumnS2NhAAHg
-
-如何洞悉城市人群移动规律？DataV海量轨迹可视化实践解析
-
-https://mp.weixin.qq.com/s/ndzLKJC2Tvg2gKrr6jUNTw
-
-原来可视化能做得这么酷炫！Uber开源地理空间工具包kepler.gl
-
-http://echarts.baidu.com/echarts2/doc/example.html
-
-各种大数据展示用的图表
+为什么现在网络上对施一公的风评变得这么差？

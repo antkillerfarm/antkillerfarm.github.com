@@ -43,9 +43,11 @@ Github：深度学习文本检测识别（OCR）精选资源汇总
 
 linux下可以使用tesseract作为OCR工具。当然这个工具目前使用的还是传统算法。
 
+>4.0版本加入了基于LSTM的神经网络技术。
+
 安装方法：
 
-`sudo apt install tesseract-ocr libtesseract-dev`
+`sudo apt install tesseract-ocr libtesseract-dev tesseract-ocr-chi-sim`
 
 使用方法：
 
