@@ -9,6 +9,38 @@ category: Russia
 
 # 俄乌战争
 
+## 基辅战役（续）
+
+买家秀 VS 卖家秀
+
+![](/images/img4/t.jpg)
+
+![](/images/img4/t_2.jpg)
+
+![](/images/img4/t_3.jpg)
+
+![](/images/img4/t_4.jpg)
+
+![](/images/img4/t_5.jpg)
+
+---
+
+https://zhuanlan.zhihu.com/p/502798862
+
+闪击覆灭——复盘霍斯托梅尔机场之战
+
+https://zhuanlan.zhihu.com/p/508508558
+
+踏入地狱——一位俄军空降兵的自述
+
+https://zhuanlan.zhihu.com/p/557550632
+
+基辅之战 华邮深度系列报道
+
+https://www.zhihu.com/question/524614755
+
+如何评价3月27日前后俄军从基辅附近地区主动后撤？（普里皮亚季沼泽）
+
 ## 马里乌波尔战役
 
 查尔斯·加斯科因建立了卢甘斯克。他引入的卡戎炮(大口径短炮carronades)彻底改变了海战。他还彻底改变了俄罗斯的冶金技术。以前它只烧木炭，加斯科因在卢甘斯克附近勘探到了煤矿。
@@ -170,25 +202,3 @@ https://zhuanlan.zhihu.com/p/497789494
 https://www.thepaper.cn/newsDetail_forward_18439240
 
 乌克兰总统泽连斯基视察卢甘斯克地区利西昌斯克前线
-
-## 无官不贪
-
-俄罗斯T-72和T-80坦克由纸板鸡蛋托制成的防护装置就让人由衷赞叹。
-
-我们还要特别感谢贵方为俄军官兵提供了早在2015年就已过期的军粮包。由于缺乏口粮，俄罗斯占领军士兵丢下军车，向乌克兰村庄居民投降以果腹。
-
-![](/images/img4/Cossack.png)
-
-![](/images/img4/Cossack.jpg)
-
-https://mp.weixin.qq.com/s/LxCvZKcvDfDpgEikF7qXCg
-
-乌克兰国家预防腐败局致绍伊古的感谢信
-
-https://zhuanlan.zhihu.com/p/43207891
-
-腐败之根是向上长的
-
-http://news.ifeng.com/a/20180802/59570667_0.shtml
-
-艺术品里的历史：辱骂奥斯曼苏丹的哥萨克到底是什么人？
