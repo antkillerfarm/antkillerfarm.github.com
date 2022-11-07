@@ -191,9 +191,13 @@ https://zhuanlan.zhihu.com/p/577621180
 
 ---
 
+一位“DPR”的人告诉我们：“我们被占领了8年，现在你会感受到在俄罗斯统治下的感觉。”我甚至和他们交了朋友，给他们带啤酒之类的东西。你明白，他们和我们是同样的人，他们只是被俄罗斯人强行动员起来的。
+
 https://zhuanlan.zhihu.com/p/570335418
 
 全家人都被炸弹带走了——伊久姆居民讲述占领区的生活
+
+---
 
 https://mp.weixin.qq.com/s/PUqFEBUN6OaGZjB-ojrMRg
 

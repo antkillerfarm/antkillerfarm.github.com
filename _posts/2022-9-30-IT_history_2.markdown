@@ -113,6 +113,10 @@ https://blog.csdn.net/OneFlow_Official/article/details/120574569
 
 计算机架构史上的一次伟大失败（Multiflow公司与VLIW）
 
+https://mp.weixin.qq.com/s/83ECnBwIGD-Fz5F2Mj5HGQ
+
+江湖再无锐迪科
+
 # 上古软件开发
 
 https://mp.weixin.qq.com/s/movz5aesYdZZZHle-hHRIw

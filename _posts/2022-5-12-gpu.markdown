@@ -233,6 +233,10 @@ https://zhuanlan.zhihu.com/p/576793055
 
 Intel四十年显卡坎坷路
 
+https://zhuanlan.zhihu.com/p/572302589
+
+GPGPU流式多处理器架构之取指译码发射
+
 # GPU通信技术
 
 ## 共享数据

@@ -134,6 +134,10 @@ https://mp.weixin.qq.com/s/aFmr6WKhZ3E-PsF6-uJvJg
 
 一图理清Nvidia AI软件栈
 
+https://zhuanlan.zhihu.com/p/561018305
+
+NVDLA硬件架构之卷积核心
+
 ## NVIDIA DALI
 
 NVIDIA DALI是一个GPU加速的数据增强和图像加载库，为优化深度学习框架数据pipeline而设计，而其中的NVIDIA nvJPEG是用于JPEG解码的高性能GPU加速库。
@@ -267,6 +271,10 @@ https://www.zhihu.com/question/41060378
 https://zhuanlan.zhihu.com/p/559957579
 
 简单谈谈CUDA的访存合并
+
+https://zhuanlan.zhihu.com/p/565897763
+
+GPGPU编程模型之CUDA
 
 # AMD
 
