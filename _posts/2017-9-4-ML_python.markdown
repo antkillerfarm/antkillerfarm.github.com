@@ -128,6 +128,18 @@ conda环境也支持用pip安装包，而且在`conda list`的时候会给出来
 
 在conda环境中，使用pip的话，需要`conda install pip`。
 
+更换源：
+
+`vim ~/.condarc`
+
+```text
+channels:
+  - https://mirrors.ustc.edu.cn/anaconda/pkgs/main/
+  - https://mirrors.ustc.edu.cn/anaconda/pkgs/free/
+  - https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/
+ssl_verify: true
+```
+
 参考：
 
 http://www.cnblogs.com/zhusleep/p/5616099.html
@@ -436,19 +448,3 @@ Scikit-Learn决策树算法类库使用小结
 https://mp.weixin.qq.com/s/O1wPvi_aKK73yJcUpDf6EQ
 
 开源sk-dist，超参数调优仅需3.4秒，sk-learn训练速度提升100倍
-
-## Matplotlib
-
-Matplotlib是一个高阶的图形库，主要提供生成图表等数据可视化方面的功能。
-
-官网：
-
-http://matplotlib.org/
-
-API参考：
-
-http://matplotlib.org/1.5.3/api/index.html
-
-示例：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/plot/matplotlib_helloworld.py
