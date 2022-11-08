@@ -218,3 +218,13 @@ https://mp.weixin.qq.com/s/i-7iz89uRDZTT1B8UdfnTw
 https://zhuanlan.zhihu.com/p/269209736
 
 1974年西沙海战：艇长下令撞击敌舰，战士拼死堵漏，用手榴弹还击
+
+---
+
+https://baijiahao.baidu.com/s?id=1702089919752388215
+
+回顾2003年361号潜艇事件：70名海军勇士遇难，海军司令员被免职
+
+https://new.qq.com/rain/a/20211128A08G7W00
+
+中国海军“418”号潜艇沉没事故原因曝光
