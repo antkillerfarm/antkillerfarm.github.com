@@ -230,6 +230,10 @@ https://www.cnblogs.com/puyangsky/p/7596282.html
 
 bazel的使用
 
+https://zhuanlan.zhihu.com/p/421489117
+
+创建宏与规则
+
 ## 引用第三方库
 
 ```text

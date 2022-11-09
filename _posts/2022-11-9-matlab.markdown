@@ -1,0 +1,208 @@
+---
+layout: post
+title:  Matlab, boost
+category: language 
+---
+
+* toc
+{:toc}
+
+# Matlab
+
+![](/images/img4/Matlab.jpg)
+
+在MATLAB软件诞生之前，大约1965年，计算机只能生成和输出二维图像，对于L-型膜结构(L-Shaped Membrane)只能生成下图左侧的二维平面效果。直到1990年，MATLAB 3.5发布，3.5版本利用了隐藏线算法(Hidden Line Algorithm)，可以实现黑白网格的三维立体图像的生成。1993年，MATLAB 4进一步实现了彩色化。1995年，MATLAB 4.2利用了网格光滑化算法(Crude Shaping Algorithm)将L型网格进一步光滑处理。1995年，MATLAB 5实现了生成完全光滑和打光效果。
+
+而Mathworks公司也将他们引以为傲的进步作为了MATLAB软件的图标！这个图标反映的正是Mathworks技术的不断迭代升级。
+
+至于为啥是L-Shaped Membrane而不是其他呢？因为这是Mathworks创始人之一Moler的博士课题
+
+https://www.zhihu.com/answer/1294927798
+
+如果中国重新开发像MATLAB、solidworks这样的软件大概需要多久？
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/30905298
+
+XML和MATLAB交互的基本操作
+
+https://mp.weixin.qq.com/s/QkICCbTp53lWOyeZx63-sw
+
+后MATLAB时代的七种开源替代，一种堪称完美！
+
+https://mp.weixin.qq.com/s/vV8kFF7e1uxjMR48_uRcSw
+
+MATLAB动画没有密秘
+
+https://mp.weixin.qq.com/s/L6GP0LiCQX0Z2lps3Y0ekQ
+
+Matlab简史
+
+https://www.zhihu.com/answer/1513267624
+
+1994年，Matlab发现著名的Intel CPU浮点运算bug
+
+## GNU Octave
+
+GNU Octave是Matlab的一个开源实现。它拥有和后者兼容的语法，类似的IDE，并实现了大部分的基础库。
+
+官网：
+
+https://gnu.org/software/octave/
+
+安装方法:
+
+`sudo apt install octave`
+
+## spyder
+
+spyder是一个Python的IDE，提供了和Matlab类似的数据可视化界面。
+
+安装：
+
+`sudo apt install spyder`
+
+## GeoGebra
+
+GeoGebra是一个结合“几何”、“代数”与“微积分”的动态数学软件，由佛罗里达州亚特兰大学的数学教授Markus Hohenwarter所设计。
+
+官网：
+
+https://www.geogebra.org/
+
+GeoGebra官网包含了很多网友分享的几何绘图，所以常用图形就不要自己画了，找个现成的改改更合适。
+
+## Maxima
+
+微积分的数值解很多软件都能计算，但解析解就不行了。Maxima就是这样一款Computer Algebra System的软件。
+
+官网：
+
+http://maxima.sourceforge.net/
+
+# boost
+
+## 安装&编译
+
+boost直接安装：
+
+`sudo apt install libboost-all-dev`
+
+编译：
+
+```bash
+./bootstrap.sh
+./b2 install link=static cxxflags=-fPIC --with-test --prefix=</path/to/install>
+```
+
+boost的组件有很多，这里只编译了test组件。
+
+>注意：指定生成目录的时候，stage使用stagedir选项，而install使用prefix选项。
+
+## boost::format
+
+```cpp
+cout << boost::format("%1%"
+    "%1t 十进制 = [%2$d]\n"
+    "%1t 格式化的十进制 = [%2$5d]\n"
+    "%1t 格式化十进制，前补'0' = [%2$05d]\n"
+    "%1t 十六进制 = [%2$x]\n"
+    "%1t 八进制 = [%2$o]\n"
+    "%1t 浮点 = [%3$f]\n"
+    "%1t 格式化的浮点 = [%3$3.3f]\n"
+    "%1t 科学计数 = [%3$e]\n"
+    ) % "example :\n" % 15 % 15.01 << endl;
+```
+
+参考：
+
+https://www.cnblogs.com/WuErPIng/archive/2005/04/21/142308.html
+
+浅尝boost之format
+
+## Boost.Parameter
+
+该库可以支持命名参数，然而实现太复杂。期待新标准直接支持。
+
+## Boost.MPL
+
+元编程（Metaprogramming）是指某类计算机程序的编写，这类计算机程序编写或者操纵其他程序（或者自身）作为它们的数据，或者在运行时完成部分本应在编译时完成的工作。很多情况下与手工编写全部代码相比工作效率更高。编写元程序的语言称之为元语言，被操作的语言称之为目标语言。一门语言同时也是自身的元语言的能力称之为反射。
+
+MPL可以看成是STL的编译期版本，或者说元编程版本。它同样也提供了各种容器，只不过容纳的对象不是数据，而是类型。
+
+参考：
+
+www.cppblog.com/jack-wang/archive/2010/10/04/128589.html
+
+模板元编程---用MPL解决实际问题
+
+https://mp.weixin.qq.com/s/5ireHbuWFrVY6T9qnvs3rQ
+
+浅谈C++元编程
+
+## BGL
+
+Boost Graph Library是boost提供的一个和图论相关的工具库，集成了常见的图操作（如BFS和DFS）和图算法（最短路径、拓朴排序）。
+
+官网：
+
+https://www.boost.org/doc/libs/1_73_0/libs/graph/doc/
+
+参考：
+
+https://www.ibm.com/developerworks/cn/aix/library/au-aix-boost-graph/
+
+探索Boost Graph Library
+
+示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/cpp/boost/graph/main.cpp
+
+test1：base。
+
+test2：批量添加边+拓扑排序。
+
+test3：顶点改为字符串数据类型，使用BGL API。
+
+test4：顶点改为字符串数据类型，不使用BGL API。
+
+## folly
+
+folly是facebook出品的另一个知名的标准库扩展。
+
+代码：
+
+https://github.com/facebook/folly
+
+## abseil
+
+造轮子的事情，Google也有份。
+
+代码：
+
+https://github.com/abseil/abseil-cpp
+
+而且还有一个给python用的基础库：
+
+https://github.com/abseil/abseil-py
+
+abseil不光提供代码，还有一个编程的技巧：
+
+https://abseil.io/tips/
+
+## ACE
+
+Douglas C. Schmidt写的一个C++的网络库。历史非常悠久了（1993年），其中的很多部分都有很高的参考价值。
+
+官网：
+
+http://www.dre.vanderbilt.edu/~schmidt/ACE.html
+
+## POCO
+
+POCO也是一个C++的网络库。（2004年）
+
+官网：
+
+https://pocoproject.org/

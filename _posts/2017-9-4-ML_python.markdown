@@ -106,6 +106,8 @@ Anaconda同时也支持多个Python版本的并存和切换。它的底层用到
 
 这条命令会在Anaconda/envs下创建一个python2文件夹。
 
+>也可能是`~/.conda/envs`
+
 显示env：
 
 `conda env list`
