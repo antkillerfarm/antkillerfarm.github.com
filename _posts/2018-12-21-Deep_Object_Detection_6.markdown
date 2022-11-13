@@ -167,6 +167,10 @@ https://zhuanlan.zhihu.com/p/566469003
 
 YOLO内卷时期该如何选模型？
 
+https://www.zhihu.com/question/541985721
+
+如何评价Alexey Bochkovskiy团队提出的YoloV7？
+
 # One-stage vs. Two-stage
 
 虽然我们在概述一节已经提到了One-stage和Two-stage的概念。但鉴于这个概念的重要性，在介绍完主要的目标检测网络之后，很有必要再次总结一下。
@@ -298,17 +302,3 @@ FPN(Feature Pyramid Network)是Tsung-Yi Lin（Ross Girshick和何恺明小组成
 上图是加了FPN之后的ResNet，其中的虚线框表示的是通道融合的方法。U-Net采用了concat模式融合下采样和上采样通道，而这里则是沿用了ResNet的融合方法：Tensor Add。
 
 ![](/images/img3/FPN_2.jpg)
-
-上图是Faster R-CNN+FPN。原始的Faster R-CNN的RoI pooling是从同一个feature map中获得ROI，而这里是根据目标尺度大小，从不同尺度的feature map中获得ROI。
-
-![](/images/img3/FP.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/mY_QHvKmJ0IH_Rpp2ic1ig
-
-目标检测FPN
-
-https://mp.weixin.qq.com/s/TelGG-uVQyxwQjiDGE1pqA
-
-特征金字塔网络FPN

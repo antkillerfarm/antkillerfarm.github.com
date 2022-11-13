@@ -117,6 +117,14 @@ https://mp.weixin.qq.com/s/83ECnBwIGD-Fz5F2Mj5HGQ
 
 江湖再无锐迪科
 
+https://mp.weixin.qq.com/s/VtHbwk-_fXF2jCGzOm9Ekg
+
+你见过或没有见过的存储器
+
+https://mp.weixin.qq.com/s/roqaJWllIScw9o0LrwgLUA
+
+显卡 声卡 汉卡 防病毒卡
+
 # 上古软件开发
 
 https://mp.weixin.qq.com/s/movz5aesYdZZZHle-hHRIw
@@ -242,6 +250,14 @@ https://www.zhihu.com/question/28504752
 https://mp.weixin.qq.com/s/Bi4CFs9pNvvuv7Qb-KSyKQ
 
 58岁PDF发明人离世
+
+https://mp.weixin.qq.com/s/2IwITN2jwayREJMZRobGZw
+
+中国广告引擎简史
+
+https://mp.weixin.qq.com/s/Me5y9NGYcyKjG4Mi-K6P9w
+
+中国黑客关系图
 
 # 区块链参考资源+
 

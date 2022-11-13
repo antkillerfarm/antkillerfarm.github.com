@@ -9,6 +9,20 @@ category: Deep Object Detection
 
 # Anchor-Free（续）
 
+## Sparse R-CNN
+
+https://zhuanlan.zhihu.com/p/310058362
+
+Sparse R-CNN
+
+https://mp.weixin.qq.com/s/wLESASiP3hofrDKH7yk1aA
+
+Sparse R-CNN: 在dense（单阶段），dense2sparse（二阶段）之外的另一种物体检测模式
+
+https://mp.weixin.qq.com/s/LRSY2YsZGB_Vye7EbvhXpA
+
+Sparse R-CNN: 稀疏的目标检测，武装Fast RCNN
+
 ## RepPoints
 
 https://mp.weixin.qq.com/s/aWv7_yiX5BFKpL21SRV1MQ

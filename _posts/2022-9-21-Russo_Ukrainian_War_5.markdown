@@ -168,9 +168,3 @@ http://www.chinadaily.com.cn/hqkx/2006-06/08/content_612041.htm
 https://zhuanlan.zhihu.com/p/478954259
 
 为什么俄罗斯不能生产任何东西
-
----
-
-https://baijiahao.baidu.com/s?id=1742860565759087136
-
-西方援乌装备爆雷：防弹衣被击穿，止血带没用，乌军叫天不应

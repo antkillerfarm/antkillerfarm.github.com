@@ -9,6 +9,20 @@ category: Deep Object Detection
 
 # FPN（续）
 
+上图是Faster R-CNN+FPN。原始的Faster R-CNN的RoI pooling是从同一个feature map中获得ROI，而这里是根据目标尺度大小，从不同尺度的feature map中获得ROI。
+
+![](/images/img3/FP.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/mY_QHvKmJ0IH_Rpp2ic1ig
+
+目标检测FPN
+
+https://mp.weixin.qq.com/s/TelGG-uVQyxwQjiDGE1pqA
+
+特征金字塔网络FPN
+
 https://zhuanlan.zhihu.com/p/58603276
 
 FPN-目标检测
@@ -298,17 +312,3 @@ Anchor-Free模型主要是为了解决Two-stage模型运算速度较慢的问题
 - DenseBox
 
 《DenseBox: Unifying Landmark Localization and Object Detection》
-
-## Sparse R-CNN
-
-https://zhuanlan.zhihu.com/p/310058362
-
-Sparse R-CNN
-
-https://mp.weixin.qq.com/s/wLESASiP3hofrDKH7yk1aA
-
-Sparse R-CNN: 在dense（单阶段），dense2sparse（二阶段）之外的另一种物体检测模式
-
-https://mp.weixin.qq.com/s/LRSY2YsZGB_Vye7EbvhXpA
-
-Sparse R-CNN: 稀疏的目标检测，武装Fast RCNN
