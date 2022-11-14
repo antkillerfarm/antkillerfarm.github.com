@@ -167,6 +167,10 @@ https://www.zhihu.com/question/551426461
 
 要是我穿上最结实的板甲、举着最结实的盾牌，能在50米内硬接一发一磅加农炮合口弹还死不了吗？
 
+https://page.om.qq.com/page/ORDr8jUJJAlXS1E83tUk5K6A0
+
+穿甲弹、破甲弹、碎甲弹分不清，一炮轰上去效果差远了
+
 # 化学+
 
 ## 化学工业（续）
