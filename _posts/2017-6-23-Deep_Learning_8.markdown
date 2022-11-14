@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（八）——ResNet, Bi-directional RNN
+title:  深度学习（八）——ResNet
 category: DL 
 ---
 

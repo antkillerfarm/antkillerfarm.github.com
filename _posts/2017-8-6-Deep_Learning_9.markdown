@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（九）——CNN进化史
+title:  深度学习（九）——Bi-directional RNN, CNN进化史
 category: DL 
 ---
 

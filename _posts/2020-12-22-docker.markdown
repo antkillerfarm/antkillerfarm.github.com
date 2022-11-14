@@ -131,7 +131,7 @@ https://zhuanlan.zhihu.com/p/519499603
 
 保存/加载容器：`docker export/import`
 
-启动镜像：`docker run -it <image_name> /bin/bash `
+启动镜像：`docker run --name <container name> -it <image_name> /bin/bash `
 
 启动容器：`docker start -i <container id>`
 
@@ -139,7 +139,7 @@ https://zhuanlan.zhihu.com/p/519499603
 
 2.
 
-列出镜像：`docker images`
+列出镜像：`docker images -a`
 
 操作镜像：`docker image`
 
