@@ -157,11 +157,21 @@ https://www.zhihu.com/question/523504445
 
 泽连斯基在赫尔松解放两天后就到了赫尔松，普京在赫尔松被占领的8个月都没来过。
 
+经过近9个月的抵抗后，泽连斯基终于支持不住，叛逃出国，现已流窜至俄罗斯的赫尔松地区。
+
 ![](/images/img4/Kherson.jpg)
 
 https://www.163.com/dy/article/HM031R3U05534H4H.html
 
 乌克兰国家邮政局准备发行“解放赫尔松”邮票
+
+https://www.zhihu.com/question/566648738
+
+如何评价泽连斯基视察刚刚收复的赫尔松市?
+
+https://k.sina.com.cn/article_6427351817_17f199b0900100efyj.html
+
+2000年！普京驾驶战斗机直飞车臣战场鼓舞士气
 
 ---
 
@@ -204,3 +214,7 @@ https://www.zhihu.com/question/565653108
 https://zhuanlan.zhihu.com/p/582118157
 
 崩撤卖溜！——赫尔松大反攻V3.0 正式版
+
+https://zhuanlan.zhihu.com/p/582824955
+
+鏖战261天：俄乌赫尔松之战回顾

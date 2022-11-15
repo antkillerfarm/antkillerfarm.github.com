@@ -25,6 +25,18 @@ category: Russia
 
 ---
 
+捷捷列夫河冬泳大赛
+
+https://www.zhihu.com/question/524614755
+
+如何评价3月27日前后俄军从基辅附近地区主动后撤？（普里皮亚季沼泽）
+
+https://zhuanlan.zhihu.com/p/493533467
+
+“王牌先走”和“冬泳锻炼”——穷途末路的基辅俄军
+
+---
+
 https://zhuanlan.zhihu.com/p/502798862
 
 闪击覆灭——复盘霍斯托梅尔机场之战
@@ -37,9 +49,9 @@ https://zhuanlan.zhihu.com/p/557550632
 
 基辅之战 华邮深度系列报道
 
-https://www.zhihu.com/question/524614755
+https://zhuanlan.zhihu.com/p/583278813
 
-如何评价3月27日前后俄军从基辅附近地区主动后撤？（普里皮亚季沼泽）
+击碎闪电：俄乌基辅之战回顾
 
 ## 马里乌波尔战役
 

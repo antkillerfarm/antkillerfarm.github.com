@@ -336,3 +336,7 @@ https://mp.weixin.qq.com/s/LLlzPB2emr9Hqr7gql0B4Q
 https://mp.weixin.qq.com/s/fzLcAkYwKhj-9hgoVkTzaw
 
 CPU飙高，系统性能问题如何排查？
+
+https://zhuanlan.zhihu.com/p/583413166
+
+Linux I/O 神器之 io_uring
