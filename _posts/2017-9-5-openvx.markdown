@@ -333,6 +333,10 @@ OpenBLAS需要gfortran参与编译：
 
 需要注意gcc的版本和gfortran的版本必须一致。例如，某台机器为了项目需要，没有使用ubuntu默认的gcc版本，这样即使安装了gfortran，也还是不行。最后，安装匹配的gfortran才解决了该问题。
 
+---
+
+OpenBLAS前身是日本人后藤和茂（Goto Kazushige）写的GotoBLAS2。这是一个真正的业界传奇。GotoBLAS2已经不再维护，而后继的OpenBLAS，主要还是项目维护而已。
+
 ## Armadillo
 
 Armadillo是一个线性代数和科学计算的C++库。

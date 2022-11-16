@@ -103,6 +103,8 @@ set -g mouse on
 set -g history-limit 100000
 ```
 
+如果不生效的话，可以用`tmux source ~/.tmux.conf`使其立即生效。
+
 参考：
 
 https://linuxtoy.org/archives/from-screen-to-tmux.html
