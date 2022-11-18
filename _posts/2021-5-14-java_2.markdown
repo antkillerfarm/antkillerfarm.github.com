@@ -275,6 +275,12 @@ https://www.zhihu.com/question/49580321
 
 C如何编译出一个不需要操作系统的程序？
 
+---
+
+https://zhuanlan.zhihu.com/p/584081943
+
+C语言二进制程序同时“跨平台”在Windows和Linux上跑了
+
 # Javascript参考资源+
 
 https://zhuanlan.zhihu.com/p/22989691

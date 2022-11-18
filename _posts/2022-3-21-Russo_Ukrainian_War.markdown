@@ -55,6 +55,8 @@ https://www.oryxspioenkop.com/2022/02/attack-on-europe-documenting-equipment.htm
 
 普京的祖父斯皮里东·普京，曾经是列宁和斯大林的私人厨师。
 
+《普京正传：新沙皇的崛起与统治》
+
 https://www.zhihu.com/answer/2496149307
 
 俄罗斯为什么拿不下乌克兰？
@@ -192,27 +194,3 @@ https://zhuanlan.zhihu.com/p/337649495
 https://mp.weixin.qq.com/s/ommR-5zMvYvFiGodVZxBLw
 
 顿涅茨克机场守城战：乌克兰版《八佰》
-
-## 战前 & 军改
-
-2010年选举示意图：
-
-![](/images/img4/Ukraine.jpg)
-
-如果说顿涅茨克是皇俄基地，那卢甘斯克就是共产主义试验区。
-
-![](/images/img4/Ukraine.png)
-
-![](/images/img4/Ukraine_3.jpg)
-
-https://zhuanlan.zhihu.com/p/360271391
-
-整兵经武 东乌克兰序列
-
-https://www.zhihu.com/question/518037791
-
-乌克兰曾经也是航空防务大国，现在家底却越来越少，你知道乌克兰曾经有哪些家底吗？
-
-https://mp.weixin.qq.com/s/uRnYLzlPkC8vDORbsN8HDQ
-
-浅谈俄罗斯乌克兰的历史和未来
