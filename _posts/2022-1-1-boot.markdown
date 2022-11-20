@@ -259,6 +259,12 @@ https://blog.csdn.net/u014025444/article/details/94029895
 
 linux的XDG基本目录规范
 
+## 打印机
+
+一般使用sane做为扫描仪后端：
+
+`sudo apt-get install sane sane-utils xsane`
+
 # Linux参考资源+
 
 https://mp.weixin.qq.com/s/djEPqxZSfMp13Uf_h6TSiA
