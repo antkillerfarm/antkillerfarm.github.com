@@ -213,12 +213,6 @@ Fundamentals Of Computer Graphics。中文常称为“虎书”。
 
 Physically Based Rendering: From Theory to Implemention
 
-Ray Tracing in One Weekend
-
-Ray Tracing The Next Week
-
-Ray Tracing The Rest Of Your Life
-
 ## 参考
 
 https://mp.weixin.qq.com/s/hI9Z3l2eVJxkPbL8zG5uGA
@@ -252,14 +246,6 @@ https://github.com/KrisYu/computer-graphics-from-scratch-Notes
 http://blog.csdn.net/pizi0475/article/details/6650851
 
 全局光照模型与Rendering Equation
-
-https://www.zhihu.com/question/29863225
-
-Ray Tracing，Ray Casting，Path Tracing，Ray Marching的区别？
-
-https://www.zhihu.com/question/310930978
-
-实时光线追踪（real-time ray tracing）技术还有哪些未攻克的难题？
 
 https://www.embree.org/
 

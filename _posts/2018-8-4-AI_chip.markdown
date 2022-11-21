@@ -127,6 +127,22 @@ https://mp.weixin.qq.com/s/W7GNhEq-em18V0YjCZ7MBw
 
 被苹果抛弃的芯片供应商，现状如何？
 
+https://zhuanlan.zhihu.com/p/436515863
+
+PowerVR系列GPU架构的演进（一）
+
+https://zhuanlan.zhihu.com/p/491131559
+
+PowerVR系列GPU架构的演进（二）
+
+https://zhuanlan.zhihu.com/p/492651331
+
+PowerVR系列GPU架构的演进（三）
+
+https://zhuanlan.zhihu.com/p/493240867
+
+PowerVR系列GPU架构的演进（四）
+
 ---
 
 2020.1

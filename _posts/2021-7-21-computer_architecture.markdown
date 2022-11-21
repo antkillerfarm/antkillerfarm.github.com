@@ -239,12 +239,6 @@ https://www.zhihu.com/question/430177243
 
 CPU长指令(VLIW)失败的主要原因是什么，VLIW真的无药可救吗？
 
-https://mp.weixin.qq.com/s/Ud4f5L2tYNbP1oURVBszag
-
-俄罗斯自研Elbrus CPU参数曝光，CEO年近九旬仍未退休
-
->Boris Babayan，1933年生，俄罗斯科学院院士，Intel院士。俄罗斯CPU之父。
-
 # DPU
 
 如同GPU是针对图像显示领域的加速，DPU（Data Processing Unit）则是对于数据传输方面的加速。

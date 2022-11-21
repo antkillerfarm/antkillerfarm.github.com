@@ -80,6 +80,7 @@ https://zhuanlan.zhihu.com/p/142289703
 各状态之间变化
 
 - A- -> B : `git add <FILE>`
+- B -> A : `git restore <FILE>`
 - B -> A- : `git rm --cached <FILE>`
 - B -> 删除不保留文件 : `git rm -f <FILE>`
 - A -> A- : `git rm --cached <FILE>`
