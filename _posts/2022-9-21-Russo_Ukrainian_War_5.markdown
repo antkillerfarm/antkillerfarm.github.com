@@ -19,6 +19,10 @@ category: Russia
 
 利沃夫大饺子，第聂伯罗中饺子，顿巴斯小饺子，北顿千里香馄炖
 
+https://zhuanlan.zhihu.com/p/585213985
+
+最后的攻势：俄乌北顿内茨克之战回顾
+
 ---
 
 https://zhuanlan.zhihu.com/p/513101094

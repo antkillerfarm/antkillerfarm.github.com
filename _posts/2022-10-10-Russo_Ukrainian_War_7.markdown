@@ -224,3 +224,7 @@ https://news.ifeng.com/c/8JCKRhgLczV
 https://www.zhihu.com/answer/2388399516
 
 卡禄山
+
+https://zhuanlan.zhihu.com/p/585460483
+
+“我们在乌克兰保卫自己的国家”——格鲁吉亚志愿军团简介

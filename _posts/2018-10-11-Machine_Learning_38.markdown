@@ -350,3 +350,7 @@ https://mp.weixin.qq.com/s/XImzWu0ZBe8Cgquc167iLA
 https://mp.weixin.qq.com/s/f8XG4tiYJUna2rMSo48Yyw
 
 漫谈时间序列预测
+
+https://mp.weixin.qq.com/s/OrCWlhfiJuOuc-0GChVWow
+
+如何将时间序列分解为周期序列和趋势序列的和？
