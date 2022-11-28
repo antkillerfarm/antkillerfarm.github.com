@@ -47,6 +47,10 @@ git://git.kernel.org/pub/scm/linux/kernel/git/tglx/history.git
 
 提交数量至1399382。
 
+2022.11
+
+提交数量至1435863。
+
 ## 从git log看git的发展史
 
 Linux源代码由于历史久远，最初的版本历史已不可考证，至少无法从git log考证。但git本身的历史，则是一笔笔的都记录在git log中。

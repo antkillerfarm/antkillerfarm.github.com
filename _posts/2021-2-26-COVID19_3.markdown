@@ -7,7 +7,53 @@ category: COVID19
 * toc
 {:toc}
 
-# 国外疫情（续）
+# 国外疫情
+
+https://coronavirus.jhu.edu/map.html
+
+JHU的全球实时统计网站
+
+https://github.com/CSSEGISandData/COVID-19
+
+上述网站的代码
+
+https://view.inews.qq.com/a/20200404A0GES400
+
+全球最可靠疫情图每天点击量超10亿，由两名中国留美博士生操盘
+
+https://mp.weixin.qq.com/s/biMYttSdoe7k99v7m9H4oQ
+
+美国确诊超50万，约翰·霍普金斯大学疫情地图成全球瞩目中心
+
+https://mp.weixin.qq.com/s/rtTUT9TlAEaVci12KvsznA
+
+美国CDC、JHU在用的疫情数据库，来自这个武汉姑娘的华人团队
+
+https://newsnodes.com
+
+另一个全球实时统计网站
+
+https://mp.weixin.qq.com/s/GS4OsIvePo3O-6ltD1b9Qg
+
+用shiny和echarts4r制作一个COVID-19的dashboard
+
+除此之外，MS的网站做的也不错。
+
+https://covid.msra.cn/
+
+COVID Insights
+
+https://mp.weixin.qq.com/s/d0yif60S7NjwritA-U_6Hw
+
+增加“传播与干预模型”，COVID Insights网站新功能上线
+
+---
+
+https://www.zhihu.com/question/509243300/answer/2294945482
+
+知乎网站上关于美国疫情的完整大合订版本集（截至2021.12）
+
+---
 
 “我亲爱的安吉奥，我觉得我们被中国人骗了！”
 
@@ -262,53 +308,3 @@ https://mp.weixin.qq.com/s/wDkqwwEfpy2-As-DEdlwug
 https://mp.weixin.qq.com/s/7MmspadwBVdnKKaQ6mssig
 
 新冠在日本：行走在暴发的边缘
-
----
-
-https://mp.weixin.qq.com/s/aki6c574T6CxkBnhpI3eDg
-
-Fauci采访
-
-https://mp.weixin.qq.com/s/ZcxtiHR5l-Jcenef3JswHg
-
-美国抗疫时间线
-
-https://mp.weixin.qq.com/s/dwXUZ4mOP3Uv-TJ6Y77gOA
-
-航母疑云！戒备森严的美法军舰缘何相继中招？
-
-https://wxn.qq.com/cmsid/20200418A04EQF00
-
-反转！从抵触到支持，一文剖析欧美“戴口罩”观念转变原因
-
-https://mp.weixin.qq.com/s/RV0NYm2K7MoECnIbcJwr9Q
-
-One World演唱会：我依然相信音乐可以改变世界
-
-https://mp.weixin.qq.com/s/EAbbPBWfQeGr3Fe9HYPvnw
-
-没用上5G的One World演唱会，视频会议软件Zoom和思科WebEX立功了
-
-https://view.inews.qq.com/a/20200715A0A6EY00
-
-握着一手“防疫烂牌”的非洲 凭什么逆风翻盘？
-
-https://mp.weixin.qq.com/s/qfKe0KHk7WwWgJedn1wSsg
-
-美国总统特朗普感染，暴露了多少白宫防疫策略的漏洞？
-
-https://view.inews.qq.com/a/20201111A02SW400
-
-一位中国医疗记者在美国9个月，见证了从14例到1000万的大瘟疫
-
-https://mp.weixin.qq.com/s/X_HxCB97Jsp7drbVoOME1A
-
-为什么新冠死亡率看似在下降？
-
-https://m.sohu.com/a/398536169_292568
-
-“美国李兰娟”大火，这位战斗女神用丝巾“抵抗”疫情（黛博纳·伯克斯）
-
-https://mp.weixin.qq.com/s/X7S6WAJBy2zRkwE1AdHTpQ
-
-再度封城

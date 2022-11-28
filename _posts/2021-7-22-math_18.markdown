@@ -368,3 +368,7 @@ Borwein integral
 https://www.zhihu.com/question/527065482
 
 怎么证明圆周率π是无理数不是有理数?
+
+https://zhuanlan.zhihu.com/p/586185397
+
+流形、微分几何与黎曼度规

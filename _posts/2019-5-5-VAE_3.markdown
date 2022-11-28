@@ -331,6 +331,10 @@ https://www.zhihu.com/question/558475081
 
 AI绘画过去也一直有研究，为什么会在最近几个月突然爆发？
 
+https://mp.weixin.qq.com/s/G50p0SDQLSghTnMAOK6BMA
+
+Diffusion Model
+
 # VAE参考资源
 
 https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw

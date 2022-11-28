@@ -188,6 +188,33 @@ SPIR-V研究：编译器基本原理
 
 # XLA+
 
+## 混合backend
+
+XLA支持混合多backend的运行，可用`tf.debugging.set_log_device_placement(True)`查看相关的设备指派信息。
+
+设备指派主要由Placer模块负责：
+
+https://www.cnblogs.com/deep-learning-stacks/p/9823486.html
+
+TensorFlow中的Placement启发式算法模块——Placer
+
+`tf.config.set_soft_device_placement(True)`能让tensorflow遇到无法用GPU跑的数据时，自动切换成CPU进行。
+
+## backend优先级
+
+`REGISTER_LOCAL_DEVICE_FACTORY(DEVICE_XLA_XXX_NPU, XlaXXXNpuDeviceFactory, 500);`
+
+CPU的优先级是50，添加的backend的优先级只要大于50，就可以得到调度权。
+
+## unit test
+
+写好的backend需要测试，同时Unit Test也是编写一个backend的入门级入口。
+
+```bash
+bazel build -c dbg tensorflow/compiler/xla/tests:convolution_variants_test
+./bazel-bin/tensorflow/compiler/xla/tests/convolution_variants_test_cpu --gtest_filter=*BackwardInputLowPaddingLessThanHighPadding*
+```
+
 ## python/C++ wrapper
 
 python: `pywrap_tfe.TFE_Py_Execute`

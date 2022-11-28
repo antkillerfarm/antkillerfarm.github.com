@@ -111,6 +111,10 @@ https://www.zhihu.com/question/404967476
 
 ---
 
+![](/images/img4/cover.jpg)
+
+---
+
 https://mp.weixin.qq.com/s/3Frx_ZmmmEC_aj4tLUPleg
 
 苏莱曼尼被斩首后，这篇文章把两伊根本问题说清楚了

@@ -282,6 +282,10 @@ https://mp.weixin.qq.com/s/UFUItQlYsQrpvkHth1ujFw
 
 1W字 40图 硬核ES实战
 
+https://mp.weixin.qq.com/s/6k8THshasaYfSaLr58O1NA
+
+美团外卖搜索基于Elasticsearch的优化实践
+
 # Flume & Kafka
 
 Flume和Kafka都是日志系统。

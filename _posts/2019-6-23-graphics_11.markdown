@@ -341,6 +341,10 @@ https://zhuanlan.zhihu.com/p/507362284
 
 99行代码能干啥？造个体素小世界！
 
+https://www.zhihu.com/question/535601383
+
+Taichi和PyTorch有哪些相似和不同？
+
 ## Halide
 
 Halide也是一个高性能的图形DSL+编译器的项目。它影响了后来的TVM、Taichi等计算引擎项目。

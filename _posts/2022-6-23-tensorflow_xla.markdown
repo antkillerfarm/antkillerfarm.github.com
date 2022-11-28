@@ -249,7 +249,9 @@ tensorflow/compiler/plugin/poplar/docs/example_tf2_model_fit.py
 REGISTER_XLA_BACKEND(DEVICE_VSI_NPU_XLA_JIT, GetNpuSupportedTypes(), OpFilter);
 ```
 
-上例用于设置backend支持的数据类型（以下简称为类型集合A）和op类型。当然这个设置比较粗糙了，比如某个op只支持部分数据类型，该怎么做呢？
+上例用于设置backend支持的数据类型（以下简称为类型集合A）和op类型。这里的OpFilter用于打开XLA op到HLO op的开关，否则即使对应的HLO op已经被支持，计算也不会被分配到NPU上。
+
+当然这个设置比较粗糙了，比如某个op只支持部分数据类型，该怎么做呢？
 
 ```cpp
 REGISTER_XLA_OP(Name("Conv2DBackpropInput")
@@ -281,6 +283,20 @@ if (op_registration->allow_string_type) {
 
 在`REGISTER_XLA_BACKEND`之外，还有诸如`REGISTER_XLA_DEVICE_KERNELS`之类的宏，他们使用类型集合的**全集**就好。只有`REGISTER_XLA_BACKEND`需要做加法，也只有这个宏会影响Placer的行为，其他宏都和Placer无关。
 
+---
+
+上述OpFilter开关一旦打开，则所有计算无论计算量的大小，都会被派发到NPU上，然而有些计算图实在过于微小，在CPU上的计算时间，甚至小于调度到NPU上的时间。
+
+针对这个问题，在graphcore的tf实现中，有LiteralEvaluateForScalarElementwiseGraph函数，用于回退到CPU上。其关键点在于：
+
+```cpp
+  HloEvaluator hlo_evaluator(1);
+  TF_ASSIGN_OR_RETURN(Literal literal_evaluate,
+                      hlo_evaluator.Evaluate(*comp, arg_literals));
+```
+
+HloEvaluator中已经有了一套默认的CPU实现。
+
 ## system op
 
 除了运算和控制流的op之外，tf中还存在相当数量的用于执行框架功能的system op。
@@ -294,30 +310,3 @@ if (op_registration->allow_string_type) {
 `AssignAddVariableOp`: 一般用于给`_Arg`搬运数据。
 
 `IteratorGetNext`: 启动下一个Iterator。
-
-## 混合backend
-
-XLA支持混合多backend的运行，可用`tf.debugging.set_log_device_placement(True)`查看相关的设备指派信息。
-
-设备指派主要由Placer模块负责：
-
-https://www.cnblogs.com/deep-learning-stacks/p/9823486.html
-
-TensorFlow中的Placement启发式算法模块——Placer
-
-`tf.config.set_soft_device_placement(True)`能让tensorflow遇到无法用GPU跑的数据时，自动切换成CPU进行。
-
-## backend优先级
-
-`REGISTER_LOCAL_DEVICE_FACTORY(DEVICE_XLA_XXX_NPU, XlaXXXNpuDeviceFactory, 500);`
-
-CPU的优先级是50，添加的backend的优先级只要大于50，就可以得到调度权。
-
-## unit test
-
-写好的backend需要测试，同时Unit Test也是编写一个backend的入门级入口。
-
-```bash
-bazel build -c dbg tensorflow/compiler/xla/tests:convolution_variants_test
-./bazel-bin/tensorflow/compiler/xla/tests/convolution_variants_test_cpu --gtest_filter=*BackwardInputLowPaddingLessThanHighPadding*
-```

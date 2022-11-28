@@ -271,6 +271,12 @@ https://zhuanlan.zhihu.com/p/513540714
 
 ---
 
+11月25日凌晨，郑州深夜奔袭古彭城，4辆警车开道，26辆大巴从徐州南方向长驱直入，把870名高风险人群甩在市民广场，扬长而去。
+
+你们徐州老乡不送给你们送给谁？难道让他们徒步走回去？
+
+然而，让徐州没有想到的是，在已排查到的663人中，徐州只有4人，江苏也仅仅只有30人，其余633人全是外省籍！
+
 https://www.zhihu.com/question/561692604
 
 西宁的疫情怎么样了？
@@ -278,6 +284,10 @@ https://www.zhihu.com/question/561692604
 https://www.zhihu.com/question/562980813
 
 怎么看待富士康辟谣郑州园区约2万人确诊？
+
+https://mp.weixin.qq.com/s/6DHBk8O-fK88ERi2Ab8tWg
+
+徐州和郑州，到底谁在撒谎？
 
 ---
 
@@ -292,49 +302,3 @@ https://mp.weixin.qq.com/s/ywkwu9J4T5nTPJv430i2vw
 https://finance.ifeng.com/c/8JlCUyUlnB5
 
 申万研究所副所长被立案侦查！明知可能感染新冠，还委托研究员代做核酸
-
-# 国外疫情
-
-https://coronavirus.jhu.edu/map.html
-
-JHU的全球实时统计网站
-
-https://github.com/CSSEGISandData/COVID-19
-
-上述网站的代码
-
-https://view.inews.qq.com/a/20200404A0GES400
-
-全球最可靠疫情图每天点击量超10亿，由两名中国留美博士生操盘
-
-https://mp.weixin.qq.com/s/biMYttSdoe7k99v7m9H4oQ
-
-美国确诊超50万，约翰·霍普金斯大学疫情地图成全球瞩目中心
-
-https://mp.weixin.qq.com/s/rtTUT9TlAEaVci12KvsznA
-
-美国CDC、JHU在用的疫情数据库，来自这个武汉姑娘的华人团队
-
-https://newsnodes.com
-
-另一个全球实时统计网站
-
-https://mp.weixin.qq.com/s/GS4OsIvePo3O-6ltD1b9Qg
-
-用shiny和echarts4r制作一个COVID-19的dashboard
-
-除此之外，MS的网站做的也不错。
-
-https://covid.msra.cn/
-
-COVID Insights
-
-https://mp.weixin.qq.com/s/d0yif60S7NjwritA-U_6Hw
-
-增加“传播与干预模型”，COVID Insights网站新功能上线
-
----
-
-https://www.zhihu.com/question/509243300/answer/2294945482
-
-知乎网站上关于美国疫情的完整大合订版本集（截至2021.12）

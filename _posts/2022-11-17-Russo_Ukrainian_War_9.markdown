@@ -219,7 +219,7 @@ https://mp.weixin.qq.com/s/wp8CBSc2cBJBddSws2ktzw
 
 ---
 
-在俄宣中，乌克兰处于一个既强大又虚弱的叠加态，
+在俄宣中，乌克兰处于一个既强大又虚弱的叠加态。
 
 前线军事目标爆炸
 
