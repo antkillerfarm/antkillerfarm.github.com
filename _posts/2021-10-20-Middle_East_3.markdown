@@ -33,7 +33,7 @@ https://mp.weixin.qq.com/s/1HRur64CG8oqK9NFpNRcSQ
 
 真正的问题是，这些净水设备再好，也比不上空运来的瓶装水，因为它们不能让军事承包商赚大钱。
 
-https://www.zhihu.com/answer/2003667354
+https://www.zhihu.com/answer/2123650538
 
 塔利班很强吗？为什么阿富汗战争打了这么多年?
 

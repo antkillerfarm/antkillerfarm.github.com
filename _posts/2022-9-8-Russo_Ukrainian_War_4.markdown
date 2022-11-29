@@ -53,6 +53,10 @@ https://zhuanlan.zhihu.com/p/585869963
 
 乌克兰各部队臂章标志合集
 
+https://zhuanlan.zhihu.com/p/585114118
+
+保卫巴赫穆特的乌军第93机步旅
+
 ---
 
 买家秀 VS 卖家秀
