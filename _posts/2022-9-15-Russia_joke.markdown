@@ -186,3 +186,7 @@ https://mp.weixin.qq.com/s/6BvykIJNhvoSc3it22nACg
 https://mp.weixin.qq.com/s/HReTBOIof1lnZHOPqzZT7w
 
 1917-49年苏联（俄）中央委员会政治局的人事变动与派系斗争
+
+https://zhuanlan.zhihu.com/p/585705246
+
+普京评价列宁：列宁的最大失误，是把一个统一国家改造成国家联盟
