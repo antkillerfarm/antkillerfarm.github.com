@@ -338,6 +338,10 @@ Kafka消息中间件到底会不会丢消息
 
 ## 参考
 
+https://www.zhihu.com/question/54152397
+
+消息队列（mq）是什么？
+
 https://mp.weixin.qq.com/s/bjlDHFLwxjej2t8iDhVb1A
 
 Spark Streaming消费Kafka数据的两种方案

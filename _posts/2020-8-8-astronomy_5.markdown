@@ -7,6 +7,44 @@ category: Nature
 * toc
 {:toc}
 
+# 火星探测（续）
+
+https://mp.weixin.qq.com/s/_s7XcEz6Ft6eGXxZOUeSVg
+
+火星上存在真菌吗？
+
+https://mp.weixin.qq.com/s/nPL84Xydqdm4UGYK6AeCvA
+
+“祝融号”登陆火星：人类为何非要去那里？
+
+https://mp.weixin.qq.com/s/5Hg1nSRPSrm0-ZBphX2ToA
+
+明明地球资源无限，中国天问一号为什么要登陆火星
+
+https://mp.weixin.qq.com/s/jtPCA4sgLSY07Cqh7K_aIg
+
+国家航天局发布天问一号着陆过程 两器分离和落火影像
+
+https://mp.weixin.qq.com/s/9b618Vc_Y5EgkCYFmfUYFA
+
+这几天，祝融号到底在忙啥呢？
+
+https://mp.weixin.qq.com/s/w0EyZwI7lF3ztNXFx5MtTQ
+
+听说火星上风很大，那祝融号可以用风力发电吗？
+
+https://www.zhihu.com/question/464412564
+
+国家航天局发布火星探测任务首批科学影像图，照片中有哪些信息可以关注？
+
+https://mp.weixin.qq.com/s/B5h5yZ9unpIAD8dR3KG1yw
+
+来自火星的声音！天问一号系列实拍影像发布
+
+https://mp.weixin.qq.com/s/tqs5JtYBFedVofWlgbJ3kg
+
+“天问一号”即将失联？别担心，一切尽在掌控
+
 # 阿波罗50年
 
 https://mp.weixin.qq.com/s/79e6p2TYpttO-NR1of21jw
@@ -218,35 +256,3 @@ https://zhuanlan.zhihu.com/p/330003494
 ---
 
 第四宇宙速度（fourth cosmic velocity），是指在地球上发射的物体摆脱银河系引力束缚，飞出银河系所需的最小初始速度。但由于人们尚未知道银河系的准确大小与质量，因此只能粗略估算，其数值在525公里/秒以上。
-
----
-
-当我们进入银河系时，会发现由于太阳系的旋转面（黄道平面）与银河系的平面并不一致，大约有60度的夹角。
-
-国际天文学联合会于1959年细化并定义了“银道坐标系（GCS，Galactic coordinate system）”。它它是以太阳为中心的球面坐标系，以银盘平面为赤道面。
-
-https://www.zhihu.com/question/526726624
-
-地球的公转方向是自西向东，这“西”和“东”是相对于谁的？怎么判断？换句话说，在茫茫宇宙中怎么分辨方向？
-
----
-
-https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
-
-生的伟大，死的光荣——致敬卡西尼号土星探测器
-
-https://mp.weixin.qq.com/s/sg24WvUClEZnLxhJio0BuQ
-
-被磨难环绕的“伽利略号”的一生
-
-https://mp.weixin.qq.com/s/ros-kBOIgTgQF2SaGc99qQ
-
-哈佛名镜的前世今生
-
-https://mp.weixin.qq.com/s/DKMs8sZtE_JzWaxr8o-DWA
-
-你好，冥王星
-
-https://mp.weixin.qq.com/s/sv6McqKzoqJ3snUeDvFfwg
-
-这地儿跟中国一个时区，你却从来没听说过？这个blog介绍了西澳大学和它的天文学成就。

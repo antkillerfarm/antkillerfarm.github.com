@@ -7,6 +7,26 @@ category: Nature
 * toc
 {:toc}
 
+# SpaceX（续）
+
+SpaceX的Starlink卫星是大规模量产卫星的代表，因为沿用了特斯拉的GIGA工厂的思维建造产线，每颗制造成本低于25万美元，如果计算上猎鹰九号的发射成本，平摊到每颗卫星上成本也不超过65万美元，而一枚反卫星导弹的成本大约1000-2000万美元左右，所以俄罗斯反卫星实验不可能针对Starlink卫星。
+
+大家知道当60颗Starlink卫星准备发射前夕完成堆叠后发现其中几颗有问题会如何？答案是继续发射，因为成本极低并且马斯克的Starlink不是直送低轨，先送到一定高度由每颗Starlink卫星自己的霍尔推进器工作爬到指定的工作高度，因此质量有问题的Starlink卫星释放后不会爬升，而是快速进入大气层自毁不会成为太空垃圾。
+
+https://www.zhihu.com/question/558699932
+
+俄媒表示，俄军方宣布针对外国卫星展开反卫星武器试验，有哪些信息值得关注？
+
+---
+
+https://mp.weixin.qq.com/s/sPTRKfuhEc0xx7GacomxkA
+
+霍尔效应推进器
+
+https://www.zhihu.com/question/425823778
+
+重力多大的星球无法发射化学火箭？
+
 # 中国航天
 
 ![](/images/img4/CZ.jpg)
@@ -306,39 +326,3 @@ https://mp.weixin.qq.com/s/mpeHNXktuH9aMxz1Eu6gCw
 https://mp.weixin.qq.com/s/uvSeg8KnPTj_4au_B3WXBw
 
 一文拆解中国火星车着陆全程
-
-https://mp.weixin.qq.com/s/_s7XcEz6Ft6eGXxZOUeSVg
-
-火星上存在真菌吗？
-
-https://mp.weixin.qq.com/s/nPL84Xydqdm4UGYK6AeCvA
-
-“祝融号”登陆火星：人类为何非要去那里？
-
-https://mp.weixin.qq.com/s/5Hg1nSRPSrm0-ZBphX2ToA
-
-明明地球资源无限，中国天问一号为什么要登陆火星
-
-https://mp.weixin.qq.com/s/jtPCA4sgLSY07Cqh7K_aIg
-
-国家航天局发布天问一号着陆过程 两器分离和落火影像
-
-https://mp.weixin.qq.com/s/9b618Vc_Y5EgkCYFmfUYFA
-
-这几天，祝融号到底在忙啥呢？
-
-https://mp.weixin.qq.com/s/w0EyZwI7lF3ztNXFx5MtTQ
-
-听说火星上风很大，那祝融号可以用风力发电吗？
-
-https://www.zhihu.com/question/464412564
-
-国家航天局发布火星探测任务首批科学影像图，照片中有哪些信息可以关注？
-
-https://mp.weixin.qq.com/s/B5h5yZ9unpIAD8dR3KG1yw
-
-来自火星的声音！天问一号系列实拍影像发布
-
-https://mp.weixin.qq.com/s/tqs5JtYBFedVofWlgbJ3kg
-
-“天问一号”即将失联？别担心，一切尽在掌控

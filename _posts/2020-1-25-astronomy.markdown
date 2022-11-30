@@ -141,6 +141,10 @@ https://mp.weixin.qq.com/s/SataTBoQq11lAdiBR6x4Dw
 
 当太阳死亡时，生命也将终结
 
+https://www.zhihu.com/question/568664075
+
+为什么恒星只能聚变到铁，就聚变不下去了？
+
 ## 流浪地球
 
 https://mp.weixin.qq.com/s/O8tAEBMmZ29N1fr7BGW_UQ
@@ -299,19 +303,3 @@ https://commons.wikimedia.org/wiki/User:Azcolvin429#/media/File:Earth's_Location
 半人马座α星也是类似的。Alpha Centauri A和Alpha Centauri B距离近，且质量大，所以这个力是最主要的。Alpha Centauri C质量较小，且距离前两者较远，它更像是围绕着前两者旋转的行星。力学分析上，一般把Alpha Centauri A和Alpha Centauri B合起来当作一个质点，所以这也是个稳定的三星系统，《三体》中所谓的恒纪元和乱纪元实际上是不存在的。
 
 《三体》设定还有另一个硬伤。我们在二体问题中已经指出，两个星球离的太近，就会相撞。因此，双星系统中，两个恒星之间的距离一般是比较大的，起码比宜居带的半径大一个数量级。所以，如果有行星位于Alpha Centauri A的宜居带，那么Alpha Centauri B在它看来，也就是大号一点的月亮，晚上看个书没问题，取暖就想多了。
-
----
-
-![](/images/img4/4_stars.webp)
-
-最后，来一个四星系统的图。中间是两个大太阳的双星系统，外面有两个小太阳双星系统围着它们转。
-
-![](/images/img4/4_stars_2.webp)
-
-有趣的是，这个星系的原行星盘和内双星对的轨道平面居然是垂直的，这意味着两者的角动量有着不同的起源。
-
-![](/images/img4/6_stars.jpg)
-
-北河二（双子座 α），六颗星，是已知最著名的聚星系统。Aa与Ab, Ba与Bb, Ca与Cb各自都是双星系统。Castor A和Castor B互相环绕组成了一个四星系统。该四星系统和Castor C互相环绕又组成了一个六星系统。
-
-早在1678年，人们就看出北河二是由两颗子星构成的。1802年，也是威廉•赫歇耳，发现这两颗子星在万有引力的作用下围绕着它们共同的质心转动，这是第一颗被天文观测确认的物理双星现象，这种能直接被望远镜认出的双星叫做“目视双星”。

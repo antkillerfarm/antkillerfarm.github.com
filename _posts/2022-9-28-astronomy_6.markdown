@@ -9,6 +9,36 @@ category: Nature
 
 # 天文杂谈
 
+当我们进入银河系时，会发现由于太阳系的旋转面（黄道平面）与银河系的平面并不一致，大约有60度的夹角。
+
+国际天文学联合会于1959年细化并定义了“银道坐标系（GCS，Galactic coordinate system）”。它它是以太阳为中心的球面坐标系，以银盘平面为赤道面。
+
+https://www.zhihu.com/question/526726624
+
+地球的公转方向是自西向东，这“西”和“东”是相对于谁的？怎么判断？换句话说，在茫茫宇宙中怎么分辨方向？
+
+---
+
+https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
+
+生的伟大，死的光荣——致敬卡西尼号土星探测器
+
+https://mp.weixin.qq.com/s/sg24WvUClEZnLxhJio0BuQ
+
+被磨难环绕的“伽利略号”的一生
+
+https://mp.weixin.qq.com/s/ros-kBOIgTgQF2SaGc99qQ
+
+哈佛名镜的前世今生
+
+https://mp.weixin.qq.com/s/DKMs8sZtE_JzWaxr8o-DWA
+
+你好，冥王星
+
+https://mp.weixin.qq.com/s/sv6McqKzoqJ3snUeDvFfwg
+
+这地儿跟中国一个时区，你却从来没听说过？这个blog介绍了西澳大学和它的天文学成就。
+
 https://mp.weixin.qq.com/s/EZWl8UwhiAkIXWkWE0abUQ
 
 半个世纪的角逐：二战后的国际脉冲星搜寻竞赛

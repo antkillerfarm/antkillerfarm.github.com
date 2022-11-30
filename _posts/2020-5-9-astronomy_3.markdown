@@ -9,6 +9,50 @@ category: Nature
 
 # 黑洞（续）
 
+## 视觉中国
+
+2016年getty image侵权销售Carol Highsmith捐献给美国国会图书馆的公有领域作品被起诉。为什么被抓到呢，getty image的代理发律师信要求作者本人停止使用自己的作品……
+
+https://www.zhihu.com/question/319641115
+
+如何看待视觉中国获得人类首张黑洞照片版权，该行为有无法律依据，是否会追究转载者侵权责任？
+
+## 黑洞之王
+
+2019.11.28 国际学术期刊《自然》在线发布了我国天文学家主导的一项重大发现：
+
+中国科学院国家天文台研究员刘继峰、张昊彤领导的研究团队发现了一颗迄今为止最大质量的恒星级黑洞。
+
+https://mp.weixin.qq.com/s/aN8Pr3UG4OamzeZQXW5tiQ
+
+围猎“黑洞之王”
+
+https://mp.weixin.qq.com/s/A19GrpLGzw98tmz_Ve9eLw
+
+迄今最大质量的恒星级黑洞被发现，考点全在这了
+
+https://mp.weixin.qq.com/s/qhCqP_JjtulUrAdJYhGIUA
+
+十年前我们测量了一个黑洞，现在发现当年“小看”了它
+
+## 其他
+
+https://mp.weixin.qq.com/s/L1BCaXeNmlZ2s6GjCCap_w
+
+技术详解“中国天眼”：世界上最大的单口径射电望远镜FAST
+
+https://mp.weixin.qq.com/s/bGWlOG4BEJ4wZvlhry2vMg
+
+小行星命名背后，为啥是这颗叫“南仁东星”
+
+https://mp.weixin.qq.com/s/iJoPJiP3KxDXz6ZOBN4seQ
+
+发现第三种类型的黑洞了？！
+
+https://mp.weixin.qq.com/s/Vw6vuuyIoJJIzn04NzS5AQ
+
+被“天眼”改变的县城中学
+
 https://mp.weixin.qq.com/s/GLjXHV7aYQ77OoDuZfMXmQ
 
 黑洞偏振照片发布！
@@ -248,23 +292,3 @@ Gerald Vincent Bull博士受到美国和加拿大的资助在巴巴多斯(Barbad
 https://www.zhihu.com/question/342491181
 
 造个超大巨炮发射卫星可以吗？
-
----
-
-SpaceX的Starlink卫星是大规模量产卫星的代表，因为沿用了特斯拉的GIGA工厂的思维建造产线，每颗制造成本低于25万美元，如果计算上猎鹰九号的发射成本，平摊到每颗卫星上成本也不超过65万美元，而一枚反卫星导弹的成本大约1000-2000万美元左右，所以俄罗斯反卫星实验不可能针对Starlink卫星。
-
-大家知道当60颗Starlink卫星准备发射前夕完成堆叠后发现其中几颗有问题会如何？答案是继续发射，因为成本极低并且马斯克的Starlink不是直送低轨，先送到一定高度由每颗Starlink卫星自己的霍尔推进器工作爬到指定的工作高度，因此质量有问题的Starlink卫星释放后不会爬升，而是快速进入大气层自毁不会成为太空垃圾。
-
-https://www.zhihu.com/question/558699932
-
-俄媒表示，俄军方宣布针对外国卫星展开反卫星武器试验，有哪些信息值得关注？
-
----
-
-https://mp.weixin.qq.com/s/sPTRKfuhEc0xx7GacomxkA
-
-霍尔效应推进器
-
-https://www.zhihu.com/question/425823778
-
-重力多大的星球无法发射化学火箭？

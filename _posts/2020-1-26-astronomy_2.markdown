@@ -9,6 +9,22 @@ category: Nature
 
 # 轨道学（续）
 
+![](/images/img4/4_stars.webp)
+
+最后，来一个四星系统的图。中间是两个大太阳的双星系统，外面有两个小太阳双星系统围着它们转。
+
+![](/images/img4/4_stars_2.webp)
+
+有趣的是，这个星系的原行星盘和内双星对的轨道平面居然是垂直的，这意味着两者的角动量有着不同的起源。
+
+![](/images/img4/6_stars.jpg)
+
+北河二（双子座 α），六颗星，是已知最著名的聚星系统。Aa与Ab, Ba与Bb, Ca与Cb各自都是双星系统。Castor A和Castor B互相环绕组成了一个四星系统。该四星系统和Castor C互相环绕又组成了一个六星系统。
+
+早在1678年，人们就看出北河二是由两颗子星构成的。1802年，也是威廉•赫歇耳，发现这两颗子星在万有引力的作用下围绕着它们共同的质心转动，这是第一颗被天文观测确认的物理双星现象，这种能直接被望远镜认出的双星叫做“目视双星”。
+
+---
+
 此后，人们又发现这两颗 “子星”其实各自都是双星，不过这种双星靠得很近，用望远镜也看不出来，只能从光谱特征上判断出是两颗星，因此叫“分光双星”。离这四颗星稍远的地方，还有一颗暗的“伴星”（Castor C），它本身也是两颗星在围绕质心转动时会相互掩映的系统，称作“食双星”。
 
 还有更变态的七星系统——键闭（天蝎座 ν）。
@@ -250,47 +266,3 @@ https://mp.weixin.qq.com/s/BoF3-GGCFSr7MhVjJ1Erbg
 https://mp.weixin.qq.com/s/VdZLGE3DU80Ycid1ePIR6w
 
 DIY发现新行星操作指南：谷歌开源了行星发现代码
-
-## 视觉中国
-
-2016年getty image侵权销售Carol Highsmith捐献给美国国会图书馆的公有领域作品被起诉。为什么被抓到呢，getty image的代理发律师信要求作者本人停止使用自己的作品……
-
-https://www.zhihu.com/question/319641115
-
-如何看待视觉中国获得人类首张黑洞照片版权，该行为有无法律依据，是否会追究转载者侵权责任？
-
-## 黑洞之王
-
-2019.11.28 国际学术期刊《自然》在线发布了我国天文学家主导的一项重大发现：
-
-中国科学院国家天文台研究员刘继峰、张昊彤领导的研究团队发现了一颗迄今为止最大质量的恒星级黑洞。
-
-https://mp.weixin.qq.com/s/aN8Pr3UG4OamzeZQXW5tiQ
-
-围猎“黑洞之王”
-
-https://mp.weixin.qq.com/s/A19GrpLGzw98tmz_Ve9eLw
-
-迄今最大质量的恒星级黑洞被发现，考点全在这了
-
-https://mp.weixin.qq.com/s/qhCqP_JjtulUrAdJYhGIUA
-
-十年前我们测量了一个黑洞，现在发现当年“小看”了它
-
-## 其他
-
-https://mp.weixin.qq.com/s/L1BCaXeNmlZ2s6GjCCap_w
-
-技术详解“中国天眼”：世界上最大的单口径射电望远镜FAST
-
-https://mp.weixin.qq.com/s/bGWlOG4BEJ4wZvlhry2vMg
-
-小行星命名背后，为啥是这颗叫“南仁东星”
-
-https://mp.weixin.qq.com/s/iJoPJiP3KxDXz6ZOBN4seQ
-
-发现第三种类型的黑洞了？！
-
-https://mp.weixin.qq.com/s/Vw6vuuyIoJJIzn04NzS5AQ
-
-被“天眼”改变的县城中学

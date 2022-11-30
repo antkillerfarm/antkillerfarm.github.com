@@ -183,6 +183,10 @@ https://www.zhihu.com/question/524666283
 
 ## 2014年战争
 
+![](/images/img4/Kyiv.jpg)
+
+---
+
 2010年选举示意图：
 
 ![](/images/img4/Ukraine.jpg)
