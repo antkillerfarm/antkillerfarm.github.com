@@ -45,6 +45,14 @@ https://new.qq.com/rain/a/20220811A0AAL300
 
 ---
 
+1863～1864年1月爆发的“一月革命”中，卡斯图斯·卡利诺夫斯基率领麾下的白俄罗斯人与波兰人、立陶宛人和乌克兰人一起顽强对抗俄罗斯人。
+
+https://www.163.com/dy/article/HAK9665K05530F42.html
+
+我为两个祖国而战——白俄罗斯卡利诺夫斯基志愿军团抵抗俄罗斯入侵乌克兰的故事
+
+---
+
 https://mp.weixin.qq.com/s/PUqFEBUN6OaGZjB-ojrMRg
 
 一个乌克兰女性的伤痛与纪念

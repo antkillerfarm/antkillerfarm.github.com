@@ -289,3 +289,25 @@ krylov子空间迭代法
 https://www.zhihu.com/question/23309010
 
 如何使用Krylov方法求解矩阵的运算尤其是逆？
+
+# 数学杂谈+
+
+http://www.cnblogs.com/zeze/p/6999651.html
+
+粗糙集（Rough Set Approach）
+
+https://www.zhihu.com/question/21400777
+
+Borwein integral
+
+https://www.zhihu.com/question/527065482
+
+怎么证明圆周率π是无理数不是有理数?
+
+https://zhuanlan.zhihu.com/p/586185397
+
+流形、微分几何与黎曼度规
+
+https://zhuanlan.zhihu.com/p/588485490
+
+江泽民同志出的五角星五点共圆几何题解

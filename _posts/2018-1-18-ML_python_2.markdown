@@ -365,6 +365,10 @@ https://mp.weixin.qq.com/s/bCDXpr5yW5WFWyJSrOZpTw
 
 五种Pandas图表美化样式汇总
 
+https://www.zhihu.com/answer/2526455583
+
+为什么很多人宁愿excel贼6，也不愿意去用python？
+
 ## Super Pandas
 
 https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw

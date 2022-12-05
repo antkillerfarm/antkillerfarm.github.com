@@ -23,6 +23,14 @@ https://mp.weixin.qq.com/s/BLEP6nmGSfPY3iMh_N3JKw
 
 组合导航系列文章（二）：惯性器件综述
 
+https://zhuanlan.zhihu.com/p/515485538
+
+高精度组合导航里的松、紧、深耦合
+
+https://mp.weixin.qq.com/s/YypYIwbXavrnodGENNfZnw
+
+RTK，自动驾驶之锚
+
 ## 泊车
 
 **半自动泊车**系统为驾驶员操控车速，计算平台根据车速及周边环境来确定并执行转向，对应于SAE自动驾驶级别中的L1；

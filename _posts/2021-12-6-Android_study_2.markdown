@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Android研究（二）, 虚拟机比较, MSYS2, WSL, 线程池
+title:  Android研究（二）, MSYS2, WSL, 线程池
 category: technology 
 ---
 
@@ -8,6 +8,70 @@ category: technology
 {:toc}
 
 # Android研究
+
+## Flutter
+
+Flutter是Google用以帮助开发者在Ios和Android两个平台开发高质量原生应用的全新移动UI框架。Beta1版本于2018年2月27日在2018世界移动大会上公布。
+
+官网：
+
+https://flutter.dev/
+
+参考：
+
+https://mp.weixin.qq.com/s/pU75twMDry4VUYtTHeV_IQ
+
+一文深入了解Flutter界面开发
+
+https://mp.weixin.qq.com/s/yPvaB7sLuJoGfsjj7x7wcg
+
+深入理解Flutter的编译原理与优化
+
+https://mp.weixin.qq.com/s/SWP7Nu9DEUhvAyvdIG-Ixw
+
+聊一聊Flutter Engine线程管理与Dart Isolate机制
+
+https://mp.weixin.qq.com/s/cJjKZCqc8UuzvEtxK1BJCw
+
+Flutter的原理及美团的实践
+
+https://mp.weixin.qq.com/s/l6xvmnLE6HfRtw6upo6yUA
+
+高效开发与高性能并存的UI框架——携程Flutter实践
+
+https://mp.weixin.qq.com/s/vcbHMtaJEkZhSgiRBST1YA
+
+移动开发这十年
+
+https://mp.weixin.qq.com/s/VlleaiIzsZHZDkDrGgYi1g
+
+如何用Flutter实现混合开发？闲鱼公开源代码实例
+
+https://mp.weixin.qq.com/s/n2avWVS0FAFIEB4w0W0Xsw
+
+学习Dart的10大理由
+
+https://mp.weixin.qq.com/s/CBp1pneBa_t8bkVlh1RGVg
+
+2019年五大跨平台移动应用开发工具
+
+https://mp.weixin.qq.com/s/ygPRdtRMlNW3-nfo0PonAA
+
+揭秘！如何用Flutter设计一个100%准确的埋点框架？
+
+## Litho
+
+Litho是Facebook推出的一套高效构建Android UI的声明式框架，主要目的是提升RecyclerView复杂列表的滑动性能和降低内存占用。
+
+官网：
+
+https://fblitho.com/
+
+参考：
+
+https://mp.weixin.qq.com/s/RS7O7prvkCvKyxkK3YQxtA
+
+Litho的使用及原理剖析
 
 ## adb
 
@@ -82,26 +146,6 @@ https://mp.weixin.qq.com/s/xQ6w1qlMjgxlP8QpF34GVA
 https://mp.weixin.qq.com/s/QC0QDPwBU5OLjtZNqDzSrg
 
 鸿蒙之迷思
-
-# 虚拟机比较
-
-早期如Bochs之类的没用过，现在估计也没什么人用了吧。
-
-现在主要是以下三个选择：
-
-1.VMware。商业收费软件。有免费版本的VMware Player，但该版本不可创建虚拟机，只可使用别人已经建好的虚拟机。
-
-2.VirtualBox。开源免费软件。
-
-3.Qemu。Qemu的易用性不佳，作为使用的话，能不用就不用了。但其不仅开源，而且支持的架构也很多，有的时候往往是唯一之选。作为研究学习来说，这个是首选。
-
-这里主要讨论前两者的选择。
-
-VMware由于是收费软件之故，因此用户的软件升级是个大问题。（土豪除外，有钱的话，这个就不是事了。）而旧的软件，往往对新的Linux发行版的支持较差。很多情况下，VMware Tool因为这个原因总是无法完美运行。严重影响了软件的易用性。
-
-反之，VirtualBox就没有这些问题。虽然比较同期的VMware来说，VirtualBox的性能略逊。但是一般来说，科技行业里领先半年就已经是巨大的优势了。我相信现在的VirtualBox，无论如何也不会弱于两年前的VMware。
-
-因此与其守着过时的VMware 8.0，还不如换用VirtualBox，这就是我的选择。
 
 # MSYS2
 

@@ -41,6 +41,10 @@ https://mp.weixin.qq.com/s/C7QdVathJ8YTXF-zXPC-Ow
 
 有人分析了7个基于JS语言的DL框架，发现还有很长的路要走
 
+# 混合精度训练
+
+https://tensorflow.google.cn/guide/mixed_precision
+
 # 细节
 
 执行`session.run(out)`，会在终端打印out的值，但执行`res = session.run(out)`则不会。

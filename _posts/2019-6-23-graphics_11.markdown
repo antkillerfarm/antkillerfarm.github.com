@@ -365,6 +365,10 @@ https://zhuanlan.zhihu.com/p/122217135
 
 halide编程技术指南
 
+https://www.zhihu.com/question/479548933
+
+如何学习halide?
+
 ## Lift
 
 Lift也是一种并行编程及优化的语言。
