@@ -345,6 +345,8 @@ Django比较重量级了，如果只是想发布静态网页的话，可以用�
 
 除此之外，Flask、tornado也是较常用的Web框架。
 
+Flask底层使用的werkzeug库，是一个有名的WSGI工具包。
+
 基于python新增的async/await语法的异步Web框架，是最近的新流派，代表有：Sanic
 
 https://juejin.cn/post/6944598601674784775
