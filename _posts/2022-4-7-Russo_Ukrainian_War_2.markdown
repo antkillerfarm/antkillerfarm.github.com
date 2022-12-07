@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争（二）——战前 & 军改
+title:  俄乌战争（二）——乌东战争, 战前 & 军改
 category: Russia 
 ---
 
@@ -8,6 +8,16 @@ category: Russia
 {:toc}
 
 # 俄乌战争
+
+## 乌东战争（续）
+
+他们决定高唱着乌克兰国歌《乌克兰仍在人间》，骂着普京死战到底。
+
+2017年，这群悍汉的故事拍摄成电影《机械钢骨：英雄不死(Cyborgs: Heroes Never Die)》。
+
+https://mp.weixin.qq.com/s/ommR-5zMvYvFiGodVZxBLw
+
+顿涅茨克机场守城战：乌克兰版《八佰》
 
 ## 战前 & 军改
 
