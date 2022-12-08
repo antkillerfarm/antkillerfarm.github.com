@@ -35,6 +35,10 @@ CPU通常是SISD和SIMD的，而GPU则是SIMD的，超级计算机则是MIMD的�
 
 参考：
 
+https://mp.weixin.qq.com/s/n_V_-TOvu5hLZ0BwKpgy9A
+
+计算机体系结构发展史
+
 https://zhuanlan.zhihu.com/p/31271788
 
 SIMD指令集

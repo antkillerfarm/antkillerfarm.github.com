@@ -25,6 +25,8 @@ category: Russia
 
 Slava Ukraini：荣耀归于乌克兰
 
+Without gas or without you? – The answer is without you. Without electricity or without you? – Without you. Without water or without you? – Without you. Without food or without you? – Without you.
+
 ---
 
 2022年2月22日 普京签署承认“顿涅茨克共和国”和“卢甘斯克共和国”的命令。
@@ -93,6 +95,8 @@ https://zhuanlan.zhihu.com/p/564591728
 
 ---
 
+![](/images/img4/volodymyr-zelensky.webp)
+
 4.4 打赢基辅保卫战，视察布查。
 
 5.30 视察哈尔科夫前线。
@@ -107,9 +111,9 @@ https://zhuanlan.zhihu.com/p/564591728
 
 12.6 视察斯拉维扬斯克。
 
-沙皇这个官，德国人当得，格鲁吉亚人当得。泽子小罗斯人凭什么当不得。
-
 小泽表现出了可以成为全罗斯沙皇的勇气和演技。
+
+沙皇这个官，德国人当得，格鲁吉亚人当得。泽子小罗斯人凭什么当不得。
 
 ---
 
@@ -204,31 +208,3 @@ https://www.zhihu.com/question/524666283
 ---
 
 原来西尔斯基的老家是弗拉基米尔州的，离莫斯科还不到一百公里，是莫斯科步校(莫斯科高等指挥学校)1982年的毕业生，要说这俄罗斯纯度可比喀山坦克学校毕业的喀山佬格拉西莫夫以及没上过军校的图瓦-乌克兰混血胶合板高多了，这下是新时代罗斯人名将西尔斯基大破喀山汗手下大将格拉西莫夫和图瓦冒牌速不台，报999年前迦勒迦河一战的千年之仇了……顺带一提，迦勒迦河正是在马里乌波尔亚速钢铁厂北面注入的卡尔米乌斯河，然后流入了几公里外的亚速海。
-
-## 乌东战争
-
-![](/images/img4/Kyiv.jpg)
-
----
-
-2010年选举示意图：
-
-![](/images/img4/Ukraine.jpg)
-
-如果说顿涅茨克是皇俄基地，那卢甘斯克就是共产主义试验区。
-
-![](/images/img4/Ukraine.png)
-
-![](/images/img4/Ukraine_3.jpg)
-
-https://zhuanlan.zhihu.com/p/360271391
-
-整兵经武 东乌克兰序列
-
-https://www.zhihu.com/question/518037791
-
-乌克兰曾经也是航空防务大国，现在家底却越来越少，你知道乌克兰曾经有哪些家底吗？
-
-https://mp.weixin.qq.com/s/uRnYLzlPkC8vDORbsN8HDQ
-
-浅谈俄罗斯乌克兰的历史和未来

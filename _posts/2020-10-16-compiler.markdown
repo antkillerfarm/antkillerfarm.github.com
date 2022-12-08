@@ -244,6 +244,8 @@ Android CPU, Compilers, D8 & R8
 
 ---
 
+《多面体编译理论与深度学习实践》 赵捷 李宝亮著
+
 https://www.cs.colostate.edu/~pouchet/
 
 888.11-Polyhedral Compilation Foundations
@@ -291,3 +293,7 @@ Polyhedral Model—AI芯片软硬件优化利器（三）
 https://mp.weixin.qq.com/s/wjk2Mxhd2NDpH72l3rdqgQ
 
 多面体编译技术在软硬协同设计中的应用
+
+https://mp.weixin.qq.com/s/mBheJ9NG8khcLRshI40b2w
+
+AI编译关键技术 • 高层循环编译优化 - 不仅仅是分块和合并
