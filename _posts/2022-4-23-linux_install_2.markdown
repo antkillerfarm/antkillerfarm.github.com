@@ -155,6 +155,14 @@ https://mp.weixin.qq.com/s/n6D5_6K9TrnuXg3h6AiFNA
 
 ---
 
+Ksplice是一个实验性的项目，用于无需重启机器的情况下更新Linux内核。SUSE和Redhat也先后推出了类似的项目。其中，前者为kGraft，后者是kpatch。后来这两者又被Linux内核吸收而成livepatch技术。
+
+https://www.zhihu.com/question/406961061
+
+为什么c语言不支持热更新？
+
+---
+
 https://mp.weixin.qq.com/s/I7C7cXFgxO7RO0Wpjjj3xQ
 
 一篇文章带你“重新认识”线程上下文切换怎么玩儿
@@ -391,30 +399,3 @@ https://mp.weixin.qq.com/s/VSbzTh3xEbVdB4IgGJzQ3A
 
 25张图，一万字，拆解Linux网络包发送过程
 
-https://mp.weixin.qq.com/s/2dbr4-dxRCJ_SLCQnrt8ag
-
-Linux内核调度器源码分析
-
-https://yanqiyu.info/2021/06/21/huawei-v-qwr/
-
-某不知名网友怒斥华为，究竟发生了什么
-
-https://mp.weixin.qq.com/s/-8L5MFZrgmyatGgYaR1AEA
-
-波兰极客用一张软盘运行Linux系统，用的还是最新内核！
-
-https://mp.weixin.qq.com/s/-hfI4GLkChRJQDqcLcvbGg
-
-嵌入式C编程实现上下文的快速切换（cpost）
-
-https://zhuanlan.zhihu.com/p/400200921
-
-x86 Linux下实现10us误差的高精度延时
-
-https://www.zhihu.com/question/496656138
-
-为什么Windows文件设计成占用无法删除？
-
-https://mp.weixin.qq.com/s/h4LwSRAsDgRqOq3mLt_SCw
-
-浅谈mmap

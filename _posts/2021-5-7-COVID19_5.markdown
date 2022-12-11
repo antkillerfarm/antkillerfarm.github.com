@@ -71,6 +71,22 @@ https://cov-lineages.org/lineage_list.html
 
 ---
 
+PANGO命名法：
+
+A和B表示武汉最早测序获得的2个原始株序列。由A系演化来的病毒的第一个分支被命名为A.1，第二个为A.2，以此类推；由A.1系演化来的病毒的第一个分支被命名为A.1.1系，第二个为A.1.2系，以此类推。B系同理。
+
+当分支进化到第4阶时，就会以新字母开头。以一个具体的例子来说明，B.1.1.1.1被写作C.1，这里C就代表了B.1.1.1。
+
+当新字母再次达到4阶分支的时候，命名将再次以同样的方式获得新字母。以一个具体的例子来说明。BF.7实际上是BA.5.2.1.7在达到4阶分支时的缩写（其中BF即BA.5.2.1），而BA.5.2.1.7又可以进一步扩写为B.1.1.529.5.2.1.7（其中BA即B.1.1.529）。
+
+重组株不直接来源于A和B所演化的分支，可由两个距离较远的分支重组构成，为作区别，以字母X开头命名重组株。
+
+https://www.zhihu.com/question/566190005
+
+奥密克戎发现至今一年多了，为什么没有新的大变异？
+
+---
+
 ![](/images/img3/covid.jpg)
 
 ![](/images/img3/covid_2.jpg)
@@ -261,14 +277,6 @@ https://mp.weixin.qq.com/s/GAAeUD5ZDROltfxcoSFaeA
 
 ---
 
-双黄连由金银花（双花）、黄芩和连翘三味中药配伍而成。它的历史并不算悠久，但在现有的网络信息中，也无法准确地指出究竟是何人、何时开发出这个如今家喻户晓的方子。有文献可考的历史表明，双黄连方剂产生于文革期间的东北地区——再准确一点，黑龙江哈尔滨，并且与现在的哈药集团有着千丝万缕的联系。
-
-https://mp.weixin.qq.com/s/7YscNLoSsuYhf3XQ5qz36w
-
-双黄连热销背后，那些你不知道的事
-
----
-
 “抗原原罪”（original antigenic sin，OAS）可以粗略地理解为“免疫印记”（immunological imprinting）,在1960年的时候，由密歇根大学的Thomas Francis率先提出。
 
 Francis在20世纪40-50年代的研究表明，人们通常会对他们出生之后最初感染流感病毒株系产生更强的免疫应答。
@@ -294,25 +302,3 @@ H5N1主要针对年轻人，而H7N9则主要霍霍老年人。
 https://mp.weixin.qq.com/s/uZxx3o9MTtjrTFV-Fl8S8g
 
 原罪
-
----
-
-https://mp.weixin.qq.com/s/hG0AO43AicEN1o4GGg463w
-
-快速检测新型冠状病毒 是怎么做到的？
-
-https://mp.weixin.qq.com/s/aawHwJ8IIuHPE7Dc9yn1Ow
-
-从试剂盒到实验室 盘点一下影响确诊人数的客观因素
-
-https://mp.weixin.qq.com/s/zbqdndZTt4B0-v3KfIm5uA
-
-既没新样本，也没实验，如何猜到新冠病毒“喜欢”感染哪些细胞？
-
-https://mp.weixin.qq.com/s/T4GQWgnazMyljsa3Jg0E8Q
-
-一文分清P1、P2、P3、P4实验室四兄弟
-
-https://mp.weixin.qq.com/s/vWpQLlfHFcAPleuuEvJdhw
-
-中国人更易感染新冠肺炎吗？
