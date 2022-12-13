@@ -183,6 +183,20 @@ https://mp.weixin.qq.com/s/OcA0SSWWihdqQerZXH8pdw
 
 使用NumPy和Matplotlib进行数据可视化
 
+## Streamlit
+
+https://mp.weixin.qq.com/s/sZvawmQ1KH3b_hozAbeX9w
+
+如何用简单的Python为数据科学家编写Web应用程序？
+
+https://mp.weixin.qq.com/s/gVIVDR1pXdDArrZO56B86w
+
+如何用纯Python写Web应用？
+
+https://mp.weixin.qq.com/s/TV1MJfaOq27y2DVCGMuqhA
+
+用Pandas和Streamlit对时间序列数据集进行可视化过滤
+
 ## Pandas
 
 Pandas是一个数据分析方面的工具库。它提供的Series(1-dimensional)和DataFrame(2-dimensional)数据结构，可以提供类似sql的数据操作和查询的功能。
@@ -436,39 +450,3 @@ TuShare是一个免费、开源的python财经数据接口包。主要实现对�
 官网：
 
 http://tushare.org/
-
-## skimage
-
-skimage相当于python版本的OpenCV。
-
-官网：
-
-http://scikit-image.org/
-
-参考：
-
-https://buptldy.github.io/2016/03/31/2016-03-31-Skimage%20hog/
-
-Compute the HOG descriptor by skimage
-
-https://mp.weixin.qq.com/s/WL8jfxB-xukP_MkN2aMb0w
-
-OpenCV，PIL，Skimage你pick谁
-
-https://mp.weixin.qq.com/s/JszkK3geKXfebH4xLoerYQ
-
-scikit-image图像处理入门
-
-## Numba
-
-NumPy的一个高速版本，能完成前者大部分的功能。
-
-官网：
-
-http://numba.pydata.org/
-
-参考：
-
-https://mp.weixin.qq.com/s/5peMiGXNnviAjMP76tV3pw
-
-Python高性能计算库——Numba

@@ -323,6 +323,12 @@ https://hiplot.com.cn/
 
 ---
 
+https://github.com/Visualize-ML
+
+鸢尾花书：从加减乘除到机器学习
+
+---
+
 https://mp.weixin.qq.com/s/QL9R-bAerxnWIUgJhMz1Rw
 
 数据可视化怎么选择图表

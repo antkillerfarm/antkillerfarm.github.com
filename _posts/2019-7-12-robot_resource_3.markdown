@@ -135,6 +135,16 @@ https://www.zhihu.com/question/347701202
 
 波士顿动力旋转跳跃360°视频火了，那么它的背后是通过什么算法实现的呢？
 
+## 大疆
+
+https://zhuanlan.zhihu.com/p/59329666
+
+如何使用大疆无人机开展国土三调
+
+https://www.zhihu.com/question/292721850
+
+大疆为什么不做油动无人机？
+
 ## 参考
 
 https://www.zhihu.com/question/404870865

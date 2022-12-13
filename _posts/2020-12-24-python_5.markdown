@@ -141,20 +141,6 @@ https://mp.weixin.qq.com/s/t1DT7jyKj1moU1qnrn5GiQ
 
 好看又好用的GUI，你需要这七个Python必备库
 
-## Streamlit
-
-https://mp.weixin.qq.com/s/sZvawmQ1KH3b_hozAbeX9w
-
-如何用简单的Python为数据科学家编写Web应用程序？
-
-https://mp.weixin.qq.com/s/gVIVDR1pXdDArrZO56B86w
-
-如何用纯Python写Web应用？
-
-https://mp.weixin.qq.com/s/TV1MJfaOq27y2DVCGMuqhA
-
-用Pandas和Streamlit对时间序列数据集进行可视化过滤
-
 ## pygame
 
 ![](/images/img4/game.jpg)

@@ -74,6 +74,8 @@ $$M=U\Sigma V^*$$
 
 >William Morton Kahan，1933年生，加拿大数学家，多伦多大学博士，UCB教授。图灵奖获得者（1989）。IEEE-754标准（即浮点数标准）的主要制订者，被称为“浮点数之父”。ACM院士。
 
+![](/images/img4/SVD.jpg)
+
 参见：
 
 http://www.doc88.com/p-089411326888.html

@@ -159,6 +159,10 @@ https://mp.weixin.qq.com/s/jsW29hhY5VWE4HTciRPdvg
 
 “红色驿站”中的西电记忆
 
+https://mp.weixin.qq.com/s/Xppp4h-7avCVgIzuKFgDpQ
+
+从西影路到光华路，从小女生到资深教授，裘雪红的40载光阴只为编写计算机系列教材
+
 ---
 
 https://mp.weixin.qq.com/s/C3SsA12ji1tmEjHyiS_0Cw

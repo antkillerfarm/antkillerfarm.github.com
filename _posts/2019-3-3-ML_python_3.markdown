@@ -9,6 +9,42 @@ category: AI
 
 # Machine Learning之Python篇
 
+## skimage
+
+skimage相当于python版本的OpenCV。
+
+官网：
+
+http://scikit-image.org/
+
+参考：
+
+https://buptldy.github.io/2016/03/31/2016-03-31-Skimage%20hog/
+
+Compute the HOG descriptor by skimage
+
+https://mp.weixin.qq.com/s/WL8jfxB-xukP_MkN2aMb0w
+
+OpenCV，PIL，Skimage你pick谁
+
+https://mp.weixin.qq.com/s/JszkK3geKXfebH4xLoerYQ
+
+scikit-image图像处理入门
+
+## Numba
+
+NumPy的一个高速版本，能完成前者大部分的功能。
+
+官网：
+
+http://numba.pydata.org/
+
+参考：
+
+https://mp.weixin.qq.com/s/5peMiGXNnviAjMP76tV3pw
+
+Python高性能计算库——Numba
+
 ## iPython
 
 ipython是一个python的交互式 shell，比默认的python shell 好用得多，支持变量自动补全，自动缩进，支持 bash shell 命令，内置了许多很有用的功能和函数。

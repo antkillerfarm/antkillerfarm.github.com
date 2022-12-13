@@ -129,6 +129,10 @@ https://www.163.com/dy/article/HI2LN52M0553TZFQ.html
 
 死前最后高呼：荣耀属于乌克兰！泽连斯基授予一中校乌克兰英雄
 
+https://zhuanlan.zhihu.com/p/591256803
+
+乌萝的金星战神们
+
 ---
 
 ![](/images/img4/Ukraine_4.jpg)
