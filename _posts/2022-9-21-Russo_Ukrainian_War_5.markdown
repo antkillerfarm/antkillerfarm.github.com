@@ -57,6 +57,10 @@ https://mp.weixin.qq.com/s/Glt5N5OmT82HGy9yF84UWw
 
 “莫斯科号”沉没：一艘巡洋舰的曲折命运
 
+https://zhuanlan.zhihu.com/p/591642365
+
+黑海之王的毁灭：《乌克兰真理报》关于击沉莫斯科号导弹巡洋舰未知细节的报道
+
 ---
 
 ![](/images/img4/stamp.webp)

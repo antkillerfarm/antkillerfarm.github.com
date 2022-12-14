@@ -7,6 +7,16 @@ category: COVID19
 * toc
 {:toc}
 
+# 国内疫情（续）
+
+https://www.zhihu.com/question/572157326
+
+如何看待华西强迫阳性研一学生在岗猝死?
+
+https://www.zhihu.com/question/571922338
+
+如何看待12月5日以来清华发出的教职工讣告？
+
 # 国外疫情
 
 https://coronavirus.jhu.edu/map.html
