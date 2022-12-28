@@ -157,7 +157,7 @@ MPI的主流实现主要是：mpich和openmpi。
 
 和MPI类似的技术，还有NVIDIA的NCCL，FaceBook的gloo等。
 
-官网：
+MPI官网：
 
 http://www.mpi-forum.org/docs/
 
@@ -168,6 +168,10 @@ http://www.mpi-forum.org/docs/
 2012：MPI-3
 
 因为MPI的历史比较久远，深刻影响了后来的分布式并行程序，比如TF等。所以这里简单介绍一下几个关键的术语。
+
+gloo官网：
+
+https://github.com/facebookincubator/gloo
 
 ## Barrier
 
@@ -309,3 +313,7 @@ https://blog.csdn.net/q19149/article/details/102594031
 https://zhuanlan.zhihu.com/p/465967735
 
 分布式训练硬核技术——通讯原语
+
+https://zhuanlan.zhihu.com/p/276122469
+
+分布式训练常用技术简介

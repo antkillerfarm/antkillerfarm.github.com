@@ -179,14 +179,6 @@ https://mp.weixin.qq.com/s/ABYf1naUtycBNllvqW5y6Q
 
 荒漠中发现神秘巨型金属，网友开始光速破案
 
-https://mp.weixin.qq.com/s/MWGedW1qbeqicE0wEqcSQw
-
-5000多万年前，江南曾是一片荒漠
-
-https://mp.weixin.qq.com/s/e-3dMOZopr9GpFhzOl9RKA
-
-一年多几天该多好？曾经，地球上一年有424天！
-
 https://mp.weixin.qq.com/s/mtoEnRf7kad4JRcZ-qY40A
 
 你的人生写照：桥刚修好，河就逃了
@@ -202,10 +194,6 @@ https://mp.weixin.qq.com/s/v79QDol1ulEzllqK3niLnw
 https://mp.weixin.qq.com/s/6hJ00no0EScCjYHIIauZ7A
 
 让我们也去看看，青藏高原的雪
-
-https://mp.weixin.qq.com/s/zG3r8KO5KFtSWVlz1ZQo0A
-
-42000年前，地球变成了……（地磁极性倒转）
 
 https://mp.weixin.qq.com/s/V-YrYmDxkxj-yIzd60HjAQ
 
@@ -223,14 +211,6 @@ https://mp.weixin.qq.com/s/IQ8YSyp-m2jCIDfLtuh_ew
 
 天上会掉金子吗？会！你现在用的这些就是！
 
-https://mp.weixin.qq.com/s/KJyvT_MsD2DZ6QvwXh32ug
-
-假如把地球46亿年历史压缩到一天
-
-https://mp.weixin.qq.com/s/mc9aH5hDgRFS2h2blPhb8w
-
-21张绘画完美演绎地球演化新说！
-
 https://mp.weixin.qq.com/s/PcAATiyQrfKKLIlEymSsog
 
 河流为什么是弯曲的？
@@ -238,3 +218,19 @@ https://mp.weixin.qq.com/s/PcAATiyQrfKKLIlEymSsog
 https://mp.weixin.qq.com/s/w0CA3uqZj9llyCxhOU-xgw
 
 地球上十座最危险的毒物废城
+
+https://www.zhihu.com/question/464055142
+
+美国国家地理正式承认南大洋为地球第五大洋，为什么此前不承认？南大洋有哪些特殊的地方？
+
+https://www.zhihu.com/question/22586409
+
+鄱阳湖还有救吗？
+
+https://mp.weixin.qq.com/s/n67jhRbOimVXqN3YKhDzuQ
+
+假如地球南北翻转会怎么样？
+
+https://mp.weixin.qq.com/s/Mdxrwy4NMW0A9sq7FJSU3w
+
+南北也曾是北南

@@ -270,8 +270,6 @@ https://wiki.archlinux.org/index.php/Pacman/Rosetta
 | Node.js | NPM |
 | PHP | pear |
 
-
-
 # betty
 
 betty是Jeff Pickhardt开发的人工智能助手，可以将英文转换成Linux命令。
@@ -364,32 +362,6 @@ https://github.com/oracle/opengrok
 http://mazhuang.org/2016/12/14/rtfsc-with-opengrok/
 
 搭建大型源码阅读环境——使用OpenGrok
-
-# 大文件处理
-
-在“大数据”时代，我们会经常遇到有大文本文件（上 GB 或更大）的情况。传统的文本编辑软件对处理这样的大文件不太有效，当我们试图打开一个大文件时会经常由于内存不足而郁闷的不行。
-
-如果你只需要查看一个文本文件，并不对它做编辑，可以考虑下glogg。
-
-`sudo apt install glogg`
-
-如果需要修改的话，可以使用JOE。
-
-`sudo apt install joe`
-
-# 调整交换文件大小
-
-```bash
-fallocate -l 16G /swapfile
-chmod 600 /swapfile
-ls -lh /swapfile
-mkswap /swapfile
-swapon /swapfile
-swapon --show
-# Add this line to /etc/fstab to mount swap at boot
-/swapfile swap swap defaults 0 0
-swapoff /swapfile
-```
 
 # pahole
 

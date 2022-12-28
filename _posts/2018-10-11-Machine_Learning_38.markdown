@@ -243,26 +243,6 @@ https://mp.weixin.qq.com/s/xeRBLkJTUs5wx2hZjyYeeQ
 
 # 时间序列分析
 
-## 工具
-
-http://mp.weixin.qq.com/s/ioaS7RQ6bsJs4_X0G4ZHyQ
-
-如何优雅地用TensorFlow预测时间序列：TFTS库详细教程
-
-https://mp.weixin.qq.com/s/7WuB0uvGSAek9b4TP_0r9g
-
-内置降维、聚类等算法，时间序列数据分析Python库Deeptime
-
-https://zhuanlan.zhihu.com/p/391897734
-
-FaceBook开源全网第一个时序王器Kats
-
-https://mp.weixin.qq.com/s/XCHSulXn1hzgLqLJjXkSGg
-
-TODS：从时间序列数据中检测不同类型的异常值
-
-## 参考
-
 https://www.kaggle.com/thebrownviking20/everything-you-can-do-with-a-time-series/notebook
 
 时间序列入门教程，从理论到业务实践，Kaggle kernels Master整理分享

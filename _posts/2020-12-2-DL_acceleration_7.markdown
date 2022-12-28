@@ -259,13 +259,17 @@ GPU上的高效softmax近似
 
 ![](/images/img4/bert.jpg)
 
-对于传统CNN网络，卷积核一般较小，适合于将核放入scratchpad memory，内积的缓存劣势不明显，计算效率高。
+对于传统CNN网络，卷积核一般较小，适合于将核放入scratchpad memory（暂时存储器），内积的缓存劣势不明显，计算效率高。
 
 但是对于transformer/bert等基于注意力机制的模型不但统治了NLP，在CV领域也大行其道的眼下，势必要优化下硬件结构，见前文分析，注意力机制使用QKV三个大矩阵两两相乘的结构，似乎更适合外积+片上SRAM。
 
 https://zhuanlan.zhihu.com/p/441943479
 
 矩阵乘法电路使用内积外积的优缺点及对计算架构需求分析
+
+https://www.zhihu.com/question/478288123
+
+如何评价特斯拉的超级计算机Dojo?
 
 ## 参考
 

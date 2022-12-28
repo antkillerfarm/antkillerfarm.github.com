@@ -74,7 +74,7 @@ https://mp.weixin.qq.com/s/CTpwRV9BJ6JW2BOtVC7uMg
 https://mp.weixin.qq.com/s/ajfoQAH-WSZ_OYIRK8uGAQ
 
 被遗忘的中国生命科学之父（林可胜）
-# 两弹
+
 https://mp.weixin.qq.com/s/Z2xRTxgRRHWWY2VICT4lQg
 
 中国有哪些领跑全球的技术
@@ -230,3 +230,7 @@ https://mp.weixin.qq.com/s/TLe6qAAxWJZnKUXo6EGp5g
 https://mp.weixin.qq.com/s/Sq53aEbG3bIBML9qSwPzoA
 
 从奴隶到将军：工控“小华为”的三场战事（汇川技术）
+
+https://view.inews.qq.com/wxn/20221217A05KPO00
+
+90岁顶级大师走了，全国5.5亿用户都要感谢他（“中国光纤之父”赵梓森）

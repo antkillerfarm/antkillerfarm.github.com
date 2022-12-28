@@ -142,6 +142,24 @@ https://mp.weixin.qq.com/s/LAn9h6_WkxlZ_IsrhnzZCw
 
 波动率建模之ARCH模型
 
+## 工具
+
+http://mp.weixin.qq.com/s/ioaS7RQ6bsJs4_X0G4ZHyQ
+
+如何优雅地用TensorFlow预测时间序列：TFTS库详细教程
+
+https://mp.weixin.qq.com/s/7WuB0uvGSAek9b4TP_0r9g
+
+内置降维、聚类等算法，时间序列数据分析Python库Deeptime
+
+https://zhuanlan.zhihu.com/p/391897734
+
+FaceBook开源全网第一个时序王器Kats
+
+https://mp.weixin.qq.com/s/XCHSulXn1hzgLqLJjXkSGg
+
+TODS：从时间序列数据中检测不同类型的异常值
+
 ## Prophet
 
 Prophet是FaceBook提出的时间序列算法。同时，也是该算法的工具包的名字。
@@ -223,6 +241,10 @@ https://en.wikipedia.org/wiki/Autoregressive%E2%80%93moving-average_model
 https://zhuanlan.zhihu.com/p/23534595
 
 时间序列分析：结合ARMA的卡尔曼滤波算法（该文的参考文献中有不少好文）
+
+https://www.zhihu.com/question/337447961
+
+时间序列和回归分析有什么本质区别？
 
 http://blog.csdn.net/aliceyangxi1987/article/details/71079522
 

@@ -119,6 +119,32 @@ TensorFlow之分布式变量（该作者写了一系列的TF分布式文章）
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/xla/multi_device_lenet_xla.py
 
+---
+
+Rendezvous是一个法语单词，发音也比较特殊，一般直译为“约会、相会、会和”，而在TensorFlow中，Rendezvous是用来完成消息传输的通信组件。
+
+消息传输的唯一标识符——ParsedKey
+
+Send和RecvAsync二者的相对顺序是不能保证先后的，经常出现需求比供给在时间片上先到的情况，总是迟到的一方执行waiter函数。
+
+Send方——将Ready的Tensor挂入本地Table
+
+Recv方——向Send方主动发出请求，触发通信过程
+
+所以，真正的通信过程由Recv方触发，而不是Send方。
+
+TensorFlow已经支持包括gRPC，RDMA（Remote Direct Memroy Access），GDR（GPU Direct）和MPI四种通信协议。
+
+BFC（Best-Fit with Coalescing）是dlmalloc的一个简单实现版本。
+
+https://www.cnblogs.com/deep-learning-stacks/p/10354258.html
+
+TensorFlow中的通信机制——Rendezvous（一）本地传输
+
+https://www.cnblogs.com/deep-learning-stacks/p/10355770.html
+
+TensorFlow中的通信机制——Rendezvous（二）gRPC传输
+
 ## Pathways
 
 https://blog.csdn.net/OneFlow_Official/article/details/124054450
@@ -148,6 +174,14 @@ how_to——bucketing
 https://zhuanlan.zhihu.com/p/547878945
 
 五谈AI软件栈--无责乱弹AI软件栈研发方法论
+
+## 数据下沉
+
+数据下沉是将数据一次性传输到端侧，减少频繁的Host-Device数据传输来加速的技术。因为数据在Device上通过通道传输，Host侧和Device侧之间每个epoch进行一次数据交互，所以每个epoch只返回一次结果。
+
+https://zhuanlan.zhihu.com/p/397481167
+
+MindSpore的桎梏和破局
 
 ## 大模型
 
@@ -266,65 +300,3 @@ http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
 https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
 
 Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
-
-https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
-
-百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
-
-https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
-
-分布式深度学习原理、算法详细介绍
-
-https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
-
-苹果发布Turi Create机器学习框架，5行代码开发图像识别
-
-https://mp.weixin.qq.com/s/jOVUPhrCBI9W9vPvD9eKYg
-
-UC Berkeley提出新型分布式框架Ray：实时动态学习的开端
-
-https://mp.weixin.qq.com/s/r951Iasr4dke6MPHsUO0TA
-
-开源DAWN，Stanford的又一力作
-
-https://mp.weixin.qq.com/s/2jrMDeMcb47zpPfFLEcnIA
-
-深度学习平台技术演进
-
-https://mp.weixin.qq.com/s/L4CMKS53pNyvhhqvQhja0g
-
-5种商业AI产品的技术架构设计
-
-https://mp.weixin.qq.com/s/IqjKdAlGYREqCR9XQB5N1A
-
-伯克利AI分布式框架Ray，兼容TensorFlow、PyTorch与MXNet
-
-https://mp.weixin.qq.com/s/aNX_8UDYI_0u-MwMTYeqdQ
-
-开发易、通用难，深度学习框架何时才能飞入寻常百姓家？
-
-https://mp.weixin.qq.com/s/UbAHB-uEIvqYZCB7xIAJTg
-
-机器学习新框架Propel：使用JavaScript做可微分编程
-
-https://mp.weixin.qq.com/s/Ctl65r4iZNEOBxiiX2I2eQ
-
-Momenta王晋玮：让深度学习更高效运行的两个视角
-
-https://mp.weixin.qq.com/s/UxN9ZRmKLN30s7uPqMpHPQ
-
-Jeff Dean等提出动态控制流编程模型，大规模机器学习性能提升21%
-
-https://mp.weixin.qq.com/s/fx0Pfu0MOPjSkzi5mL6U_A
-
-清华&斯坦福提出深度梯度压缩DGC，大幅降低分布式训练网络带宽需求
-
-https://mp.weixin.qq.com/s/wIdTDHEPffWqHA3_XWBLyw
-
-没错，纯SQL查询语句可以实现神经网络。
-
->SQL跑神经网络固然没有太大意义，然而分布式数据库已经有数十年的历史，对于设计分布式深度学习框架亦有重大的启发意义。
-
-https://zhuanlan.zhihu.com/p/33351291
-
-基于忆阻器（ReRAM），Computing-in-Memory的DLA

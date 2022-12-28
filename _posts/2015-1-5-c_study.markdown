@@ -55,6 +55,12 @@ https://lgtm.com/
 
 这是一个代码缺陷检测工具
 
+---
+
+https://www.fluentcpp.com/
+
+一个教你cpp技巧的网站
+
 # 历史
 
 https://mp.weixin.qq.com/s/cfBT0wsqzZRwedMO7Qz_vA

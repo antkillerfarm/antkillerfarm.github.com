@@ -13,6 +13,8 @@ blog的体例介于日记和文章之间。倘以日记来弄，时间长了，�
 
 ---
 
+2022.12.19 之前使用的Github Issue评论系统看起来不爽，干脆取消，反正也没啥人评论。基于Github Issue的评论系统主要有gitalk和gitment。其中后者已经不再维护了。gitalk试用了一下，也就那样了。
+
 2022.9.28 添加DL Framework分类。
 
 2022.9.11 添加Anti Japanese War和Russia分类。

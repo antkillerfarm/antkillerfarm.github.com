@@ -275,6 +275,10 @@ https://mp.weixin.qq.com/s/-QzsVs6V2pwvFQlRVYVx2Q
 
 LayerNorm是Transformer的最优解吗？
 
+https://www.zhihu.com/question/395811291
+
+transformer为什么使用layer normalization，而不是其他的归一化方法？
+
 ## Weight Normalization
 
 WN的公式如下：

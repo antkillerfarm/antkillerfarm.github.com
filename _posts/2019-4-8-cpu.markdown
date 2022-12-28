@@ -43,6 +43,10 @@ https://mp.weixin.qq.com/s/TmLSHVkeyqfU-9Jgir0czA
 
 ---
 
+对设计公司来说，28nm节点上的开发需要投入5310万美元，16nm需要1亿美元，而到了7nm，则需要将近3亿美元。在这之中，仅仅流片一项付出的成本，就从14nm的300万美元跃升至7nm的3000万美元。所以7nm就算降价，还是贵。
+
+---
+
 ![](/images/img4/CPU_2.jpg)
 
 ![](/images/img4/CPU_3.jpg)

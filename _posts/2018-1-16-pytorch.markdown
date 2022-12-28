@@ -236,7 +236,19 @@ https://github.com/pytorch/vision
 
 ## JIT
 
+动态图：其核心特点是计算图的构建和计算同时发生（Define by run）。
+
+静态图：将计算图的构建和实际计算分开（Define and run）。
+
 pytorch支持scripting/trace两种模式动态图转静态图的方法。
+
+PyTorch在前向执行过程中会执行轨迹相关的记录。这种方式我们通常会称为tracing，就是代码实际执行一遍，隐藏在其后的数据流计算图(DataFlow Graph)就很容易得到了。但是这种方式会由于输入不一样，每次的trace可能不一样! 这就是动态图。
+
+动态图+Trace：通过追溯输出（比如损失值、预测值）所依赖的网络结构，得到整体的计算图，再进行编译。
+
+静态图+Eager：直接迭代和直观调试，Eager模式下求解梯度与自定义训练。
+
+前者无法真正做到静态图的优化，而是一种折中策略，而后者则是完全开发了一套不同的API书写方法，也是Tensorflow 2.x版本饱受诟病的核心原因。
 
 参考：
 
@@ -247,6 +259,10 @@ https://blog.csdn.net/ljp1919/article/details/102514357
 https://blog.csdn.net/xxradon/article/details/86504906
 
 pytorch JIT浅解析
+
+https://www.zhihu.com/question/326862986
+
+Pytorch实现动态图执行的原理和机制是什么?
 
 ## TorchServe
 
@@ -353,59 +369,3 @@ Pytorch开源VQA神经网络模块，让你快速完成看图问答
 https://mp.weixin.qq.com/s/QqRjvWMMKosPh9qfU61BzQ
 
 浅谈将Pytorch模型从CPU转换成GPU
-
-https://mp.weixin.qq.com/s/aMfPBl6E5SxckQdSAGTkBg
-
-Pytorch教程：Facebook发布的LR-GAN如何生成图像？
-
-https://mp.weixin.qq.com/s/BjSx3tSQ2Xa0ja_j6dA7eA
-
-Pytorch中的DataLoader的相关记录
-
-https://mp.weixin.qq.com/s/vx0txFUf10QDBlldz0VJmg
-
-AI插画师：如何用基于PyTorch的生成对抗网络生成动漫头像？
-
-https://mp.weixin.qq.com/s/xHXsMxMTdnCWkuwzHs_7Cg
-
-深度学习实验流程及PyTorch提供的解决方案
-
-https://mp.weixin.qq.com/s/HPRUQSsUdk3rXBBl_GpFMw
-
-对抗自编码器PyTorch手把手实战系列——PyTorch实现自编码器
-
-https://mp.weixin.qq.com/s/5sY_IzwIz-lbDLtWJM-GRQ
-
-PyTorch实例：用ResNet进行交通标志分类
-
-https://mp.weixin.qq.com/s/zN3k51g9gjQvc43AH-ypGA
-
-如何通过PyTorch上手Tensor Comprehensions？
-
-https://mp.weixin.qq.com/s/BsMwZC3IoXA58OybZ3aYcg
-
-pytorch中如何处理RNN输入变长序列padding
-
-https://mp.weixin.qq.com/s/abd62HNlen9sepH3CrmpGg
-
-PyTorch为何如此高效好用？来探寻深度学习框架的内部架构
-
-https://mp.weixin.qq.com/s/OMjfck4jlMneGZ1NJxbjKQ
-
-PyTorch有哪些坑/bug？
-
-https://mp.weixin.qq.com/s/UykIKAeKB-0eqk6UqvXwXA
-
-对抗自编码器PyTorch手把手实战系列——PyTorch实现对抗自编码器
-
-https://mp.weixin.qq.com/s/E8RMSXVZucSGQJxFdtMgkg
-
-PyTorch实例：用ResNet进行交通标志分类
-
-https://mp.weixin.qq.com/s/_hbuk9nZaLoNSZ5AnDnELg
-
-使用PyTorch从零开始构建Elman循环神经网络
-
-https://mp.weixin.qq.com/s/FQxSYjyR1U3TIinSShnOfg
-
-从头开始了解PyTorch的简单实现

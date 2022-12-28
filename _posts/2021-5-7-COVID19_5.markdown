@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 新冠肺炎（五）——病毒变异, 科研
+title: 新冠肺炎（五）——病毒变异
 category: COVID19 
 ---
 
@@ -8,6 +8,42 @@ category: COVID19
 {:toc}
 
 # 口罩（续）
+
+3M公司的全称是明尼苏达矿务及制造业公司（Minnesota Mining and Manufacturing Company）。
+
+https://mp.weixin.qq.com/s/wE69bNC7DicO6kSWhsfq2A
+
+全球新冠确诊破200万，我们为什么比以往更需要3M？
+
+https://mp.weixin.qq.com/s/Fkcbb-4LC_NsVJHCM-zRWQ
+
+3M：世界上最不务正业公司——不只是口罩，好像哪里都离不开他！芯片制造也需要3M！
+
+---
+
+https://mp.weixin.qq.com/s/IVmgIp-LC6JiqfyCfXBJhg
+
+口罩惊险史，听说内衣也可以“救急”？
+
+https://mp.weixin.qq.com/s/WoQyr__tUBJ6HQrj3lnZuw
+
+一图彻底了解怎么戴口罩！国家卫健委图解《不同人群预防新型冠状病毒感染口罩选择与使用技术指引》
+
+https://mp.weixin.qq.com/s/lekdAyT0woQGwSO-xDSAMA
+
+“疫不容辞” 这些电子厂“转型”口罩厂
+
+https://mp.weixin.qq.com/s/iC0p5jFbZfoFAPL82zJAkQ
+
+中国能生产多少口罩？解析从石油到医用口罩的制造流程
+
+https://cj.sina.com.cn/articles/view/1650111241/625ab30901900p4r1
+
+为什么口罩还是不好买？原来……
+
+https://mp.weixin.qq.com/s/2LMnpJtSvO0KEDZ3GBtrog
+
+为什么全国口罩日产量超1亿个，你却连1个都买不到？看完我惊了...
 
 https://mp.weixin.qq.com/s/pSYJizQDQP_T2-krWPGUoA
 
@@ -81,6 +117,8 @@ A和B表示武汉最早测序获得的2个原始株序列。由A系演化来的�
 
 重组株不直接来源于A和B所演化的分支，可由两个距离较远的分支重组构成，为作区别，以字母X开头命名重组株。
 
+![](/images/img4/XBB.jpg)
+
 https://www.zhihu.com/question/566190005
 
 奥密克戎发现至今一年多了，为什么没有新的大变异？
@@ -148,26 +186,6 @@ https://mp.weixin.qq.com/s/g9gPLEN6R02F49eRGGSuAA
 https://mp.weixin.qq.com/s/o7Eq7xoxqM_fOlS9HiZ_OA
 
 新冠大流行，哪些关键突变株值得关注？
-
-https://www.zhihu.com/question/501576771
-
-新冠B.1.1.529毒株被指“可能比德尔塔还可怕”，是真的吗？有多大危害？
-
-https://www.zhihu.com/question/502139594
-
-以色列禁止所有外国人入境，以防“奥密克戎“变异毒株传播，“奥密克戎”是如何传播的？传播速度有多快？
-
-https://mp.weixin.qq.com/s/w8JlU_vu9VKoH0LvU5qriQ
-
-重组狂潮（Omicron的子孙们）
-
-https://mp.weixin.qq.com/s/kjc1xEDmPvjInBW0FhuPyA
-
-论，持久战
-
-https://mp.weixin.qq.com/s/-_e9Doxkinp2fNTo8-p9_A
-
-Omicron：毒王族谱
 
 ---
 
@@ -266,43 +284,3 @@ Omicron正在演化成为人类专属病毒，作为代价，这货在小鼠/仓
 https://mp.weixin.qq.com/s/AYluJy1DzLhPPreN6JTxeQ
 
 新冠病毒是在越变越弱吗？
-
----
-
-此前Alpha→Delta→BA.1→BA.2→BA.5，是非常清晰的单一毒株的依次更替。但今年9月份以来，这种规律已被打破，各类突变株百花齐放，上百种突变株在全球范围内同时出现，且每种突变株与BA.5相比都具有增长优势，这种新冠病毒进化现象是前所未有的。
-
-# 科研
-
-抗病毒药一般以vir结尾，例如Remdesivir。所以药品的中文名一般就是XXX韦。
-
-https://mp.weixin.qq.com/s/GAAeUD5ZDROltfxcoSFaeA
-
-期待救急，你了解“老药新用”吗？
-
----
-
-“抗原原罪”（original antigenic sin，OAS）可以粗略地理解为“免疫印记”（immunological imprinting）,在1960年的时候，由密歇根大学的Thomas Francis率先提出。
-
-Francis在20世纪40-50年代的研究表明，人们通常会对他们出生之后最初感染流感病毒株系产生更强的免疫应答。
-
-![](/images/img4/OAS.png)
-
-![](/images/img4/OAS_2.png)
-
-以上是西班牙流感大流行期间的分年龄段超额死亡比例：
-
-25-34年龄组直接死麻了……
-
-H5N1和H7N9这两种禽流感病毒，似乎倾向于感染不同年龄段的宿主：
-
-H5N1主要针对年轻人，而H7N9则主要霍霍老年人。
-
-以上两种倾向性的年龄分界线正好是——1968年。
-
-1968年，正好发生了香港流感（株系为H3N2）大流行。
-
-在1968年之前，市面上的主流毒株是H1N1，这货跟禽流感H5N1的抗原距离较为接近，于是1968年以前出身的人群，由于H1N1的免疫印记（或者说抗原原罪），变得对H7N9更为易感。。。
-
-https://mp.weixin.qq.com/s/uZxx3o9MTtjrTFV-Fl8S8g
-
-原罪

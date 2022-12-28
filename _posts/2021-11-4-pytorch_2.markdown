@@ -9,6 +9,62 @@ category: DL Framework
 
 # Pytorch
 
+https://mp.weixin.qq.com/s/aMfPBl6E5SxckQdSAGTkBg
+
+Pytorch教程：Facebook发布的LR-GAN如何生成图像？
+
+https://mp.weixin.qq.com/s/BjSx3tSQ2Xa0ja_j6dA7eA
+
+Pytorch中的DataLoader的相关记录
+
+https://mp.weixin.qq.com/s/vx0txFUf10QDBlldz0VJmg
+
+AI插画师：如何用基于PyTorch的生成对抗网络生成动漫头像？
+
+https://mp.weixin.qq.com/s/xHXsMxMTdnCWkuwzHs_7Cg
+
+深度学习实验流程及PyTorch提供的解决方案
+
+https://mp.weixin.qq.com/s/HPRUQSsUdk3rXBBl_GpFMw
+
+对抗自编码器PyTorch手把手实战系列——PyTorch实现自编码器
+
+https://mp.weixin.qq.com/s/5sY_IzwIz-lbDLtWJM-GRQ
+
+PyTorch实例：用ResNet进行交通标志分类
+
+https://mp.weixin.qq.com/s/zN3k51g9gjQvc43AH-ypGA
+
+如何通过PyTorch上手Tensor Comprehensions？
+
+https://mp.weixin.qq.com/s/BsMwZC3IoXA58OybZ3aYcg
+
+pytorch中如何处理RNN输入变长序列padding
+
+https://mp.weixin.qq.com/s/abd62HNlen9sepH3CrmpGg
+
+PyTorch为何如此高效好用？来探寻深度学习框架的内部架构
+
+https://mp.weixin.qq.com/s/OMjfck4jlMneGZ1NJxbjKQ
+
+PyTorch有哪些坑/bug？
+
+https://mp.weixin.qq.com/s/UykIKAeKB-0eqk6UqvXwXA
+
+对抗自编码器PyTorch手把手实战系列——PyTorch实现对抗自编码器
+
+https://mp.weixin.qq.com/s/E8RMSXVZucSGQJxFdtMgkg
+
+PyTorch实例：用ResNet进行交通标志分类
+
+https://mp.weixin.qq.com/s/_hbuk9nZaLoNSZ5AnDnELg
+
+使用PyTorch从零开始构建Elman循环神经网络
+
+https://mp.weixin.qq.com/s/FQxSYjyR1U3TIinSShnOfg
+
+从头开始了解PyTorch的简单实现
+
 https://mp.weixin.qq.com/s/wz1YdHYom6y-gOB58R86OQ
 
 对抗自编码器PyTorch手把手实战系列——对抗自编码器学习笔迹风格

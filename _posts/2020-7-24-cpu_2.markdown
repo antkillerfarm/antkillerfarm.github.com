@@ -309,6 +309,10 @@ https://mp.weixin.qq.com/s/AdmEd1FHxpZUwSGYy3qggg
 
 利用cpu缓存实现高性能程序
 
+https://zhuanlan.zhihu.com/p/591436083
+
+经典论文解读——Cache替换算法
+
 ## 存算一体
 
 ![](/images/img4/bottleneck.png)

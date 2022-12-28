@@ -228,6 +228,10 @@ https://zhuanlan.zhihu.com/p/374575049
 
 一文看懂Horovod源码
 
+https://mp.weixin.qq.com/s/7c7Q0P3g3IEL_r4BU2ZxRg
+
+Horovod架构剖析——解密最成功的第三方DL分布式训练框架
+
 # DMLC
 
 Distributed (Deep) Machine Learning Community是陈天奇发起的一个社区。

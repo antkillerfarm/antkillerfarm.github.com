@@ -146,6 +146,32 @@ https://mp.weixin.qq.com/s/lkB1xn6G2P5Nivj7DcYg5w
 
 Electra: 判别还是生成，这是一个选择
 
+## ChatGPT
+
+![](/images/img4/ChatGPT.jpg)
+
+![](/images/img4/ChatGPT_2.jpg)
+
+TAMER（Training an Agent Manually via Evaluative Reinforcement，评估式强化人工训练代理）框架将人类标记者引入到Agents的学习循环中，可以通过人类向Agents提供奖励反馈（即指导Agents进行训练），从而快速达到训练任务目标。
+
+![](/images/img4/TAMER.jpg)
+
+这算得上是一种有监督学习+RL了。
+
+利用强化学习在大模型中注入人类的经验，所谓的Reinforcement Learning from Human Feedback(RLHF)，Policy Network输出的多样性及Reward的学习是ChatGPT成功的关键。
+
+https://zhuanlan.zhihu.com/p/590655677
+
+ChatGPT特点、原理、技术架构和产业未来
+
+https://zhuanlan.zhihu.com/p/592671478
+
+ChatGPT背后的算法——RLHF
+
+https://mp.weixin.qq.com/s/L8E-dd9988Prbxau5awFtw
+
+ChatGPT怎么突然变得这么强？华人博士万字长文深度拆解GPT-3.5能力起源
+
 ## 参考
 
 https://www.zhihu.com/question/298203515
@@ -347,43 +373,3 @@ https://mp.weixin.qq.com/s/7sIUaSON53hsXUJjq8uVUA
 https://mp.weixin.qq.com/s/s1bQFdA6gtoHeeQMJKQ8UQ
 
 Bert时代的创新：Bert应用模式比较及其它
-
-https://mp.weixin.qq.com/s/zqlWx3e4LOJ3_Zy2DEbCjw
-
-从语言模型看Bert的善变与GPT的坚守
-
-https://mp.weixin.qq.com/s/LngE10Hnqe9bgFzpNfUwLQ
-
-NLP中的词向量对比：word2vec/glove/fastText/elmo/GPT/bert
-
-https://mp.weixin.qq.com/s/MgLLPEY3ynJGkuTgnIXndQ
-
-站在BERT肩膀上的NLP新秀们（PART I）
-
-https://mp.weixin.qq.com/s/yPq1cGnhcbaNLOjadj91pw
-
-Bert时代的创新：Bert在NLP各领域的应用进展
-
-https://mp.weixin.qq.com/s/l-de0vfx-L24g58IxK-NKQ
-
-Jeff Dean强推：可视化Bert网络，发掘其中的语言、语法树与几何学
-
-https://mp.weixin.qq.com/s/nlFXfgM5KKZXnPdwd97JYg
-
-哈工大讯飞联合实验室发布基于全词覆盖的中文BERT预训练模型
-
-https://zhuanlan.zhihu.com/p/70389596
-
-一批高质量中文BERT预训练模型请查收（上）
-
-https://mp.weixin.qq.com/s/h1VUSY7_UZF3PmjSN0DMSg
-
-从One-hot, Word embedding到Transformer，一步步教你理解Bert
-
-https://zhuanlan.zhihu.com/p/132554155
-
-超细节的BERT/Transformer知识点
-
-https://mp.weixin.qq.com/s/UJlmjFHWhnlXXJoRv4zkEQ
-
-虽被BERT碾压，但还是有必要谈谈BERT时代与后时代的NLP

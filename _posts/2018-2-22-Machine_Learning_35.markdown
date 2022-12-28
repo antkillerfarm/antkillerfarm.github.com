@@ -289,3 +289,6 @@ https://www.zhihu.com/column/c_1303778703026126848
 
 一个多传感器信息融合的专栏
 
+https://www.zhihu.com/question/41823401
+
+有什么将卡尔曼滤波讲得透彻的书籍或资料？

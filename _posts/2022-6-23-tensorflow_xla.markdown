@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  TF XLA
+title:  TF XLA（一）
 category: DL Framework 
 ---
 
@@ -82,6 +82,10 @@ with tf.device("/device:XLA_CPU:0"):
 代码无需修改。
 
 ## HLO
+
+![](/images/img4/XLA_Block_Diagram.svg)
+
+![](/images/img4/XLA_Pipeline.svg)
 
 XLA用HLO(High Level Optimizer)这种中间表示形式，表示正在被优化的计算图。
 

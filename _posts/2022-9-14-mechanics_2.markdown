@@ -171,6 +171,10 @@ https://page.om.qq.com/page/ORDr8jUJJAlXS1E83tUk5K6A0
 
 穿甲弹、破甲弹、碎甲弹分不清，一炮轰上去效果差远了
 
+https://www.zhihu.com/question/543186991
+
+bmp系列步兵战车各有什么优点、缺点?
+
 # 化学+
 
 ## 化学工业（续）

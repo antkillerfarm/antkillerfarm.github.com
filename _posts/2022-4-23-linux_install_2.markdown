@@ -93,42 +93,6 @@ grub2引导系统iso镜像
 
 # Linux学习心得
 
-## 时间的表示方法
-
-一般遵循ISO 8601标准：
-
-https://www.w3.org/TR/NOTE-datetime
-
-YYYY-MM-DDThh:mm:ss.sTZD (eg 1997-07-16T19:20:30.45+01:00)
-
-其中的TZD表示time zone designator。
-
-## U盘安装Linux
-
-在程序中找到“启动盘创建器”即可。这也是防止变砖的最后一条路，反正BIOS是不可能安装坏的，随便折腾吧。
-
-## wifi配置
-
-Linux下的wifi配置主要使用iw系列命令，包括iw、iwconfig、iwlist、iwpriv。参见：
-
-http://blog.csdn.net/liangyamin/article/details/7209761
-
-Linux下的iwpriv（iwlist、iwconfig）的简单应用
-
-## eBPF
-
-eBPF是一项革命性技术，它能在内核中运行沙箱程序（sandbox programs），而无需修改内核源码或者加载内核模块。
-
-参考：
-
-https://ebpf.io/zh-cn/
-
-一个eBPF的专栏
-
-https://www.ebpf.top/
-
-一个eBPF的专栏
-
 ## Linux参考资源
 
 https://www.kernel.org/doc/html/latest/
@@ -399,3 +363,26 @@ https://mp.weixin.qq.com/s/VSbzTh3xEbVdB4IgGJzQ3A
 
 25张图，一万字，拆解Linux网络包发送过程
 
+https://mp.weixin.qq.com/s/2dbr4-dxRCJ_SLCQnrt8ag
+
+Linux内核调度器源码分析
+
+https://yanqiyu.info/2021/06/21/huawei-v-qwr/
+
+某不知名网友怒斥华为，究竟发生了什么
+
+https://mp.weixin.qq.com/s/-8L5MFZrgmyatGgYaR1AEA
+
+波兰极客用一张软盘运行Linux系统，用的还是最新内核！
+
+https://mp.weixin.qq.com/s/-hfI4GLkChRJQDqcLcvbGg
+
+嵌入式C编程实现上下文的快速切换（cpost）
+
+https://zhuanlan.zhihu.com/p/400200921
+
+x86 Linux下实现10us误差的高精度延时
+
+https://www.zhihu.com/question/496656138
+
+为什么Windows文件设计成占用无法删除？

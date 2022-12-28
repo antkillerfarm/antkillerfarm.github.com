@@ -289,6 +289,26 @@ https://mp.weixin.qq.com/s/WD804KImL5jCvq-EJUdmSw
 
 100道MySQL数据库经典面试题解析
 
+# LevelDB
+
+LevelDB是一个持久化的key/value存储。作者是大名鼎鼎的Sanjay Ghemawat和Jeff Dean。
+
+代码：
+
+https://github.com/google/leveldb
+
+和它类似的还有LMDB。
+
+官网：
+
+https://www.openldap.org/
+
+参考：
+
+https://zhuanlan.zhihu.com/p/53299778
+
+既生Redis何生LevelDB？
+
 # 数据库参考资源
 
 ![](/images/img4/database.svg)
@@ -347,22 +367,42 @@ https://mp.weixin.qq.com/s/thg9xOKI-GWfADF5tXh29A
 
 面试官：了解数据库连接池吗？
 
-# LevelDB
+https://mp.weixin.qq.com/s/5Qcbz6dT20Sa_OvRfbNXNw
 
-LevelDB是一个持久化的key/value存储。作者是大名鼎鼎的Sanjay Ghemawat和Jeff Dean。
+如何给新来的师妹解释什么是数据库的脏读、不可重复读和幻读
 
-代码：
+https://mp.weixin.qq.com/s/1zarqgOh9-3chlBsB4TsuA
 
-https://github.com/google/leveldb
+物联网时代数据数据库如何选型？
 
-和它类似的还有LMDB。
+https://mp.weixin.qq.com/s/AcuFiHgRJg2OcNGtfjRxYA
 
-官网：
+我们对比了5款数据库，告诉你NewSQL的独到之处
 
-https://www.openldap.org/
+https://mp.weixin.qq.com/s/DaspXFLPASYE7N0WHllcYQ
 
-参考：
+Cassandra的过去、现在、未来
 
-https://zhuanlan.zhihu.com/p/53299778
+https://mp.weixin.qq.com/s/cLIrRmcS5sbiDVl0cwDlIw
 
-既生Redis何生LevelDB？
+Cassandra在时空数据上的探索
+
+https://mp.weixin.qq.com/s/ufficZ7cCvRFdEpaAfm8Fg
+
+面试官问：讲讲高并发下的接口幂等性怎么实现？
+
+https://www.jianshu.com/p/0355d9e5ba0e
+
+数据库三大范式
+
+https://mp.weixin.qq.com/s/QbwTY8Tfkv1uUdsL9vk8iw
+
+一文看懂阿里文娱大数据OLAP选型
+
+https://mp.weixin.qq.com/s/mcyljauYnyydePLPeshjhw
+
+程序员硬核“年终大扫除”，清理了数据库70GB空间
+
+https://mp.weixin.qq.com/s/O3A5gVewRQ11Z8RdPcs-9w
+
+一文看懂Pinterest如何构建时间序列数据库系统Goku

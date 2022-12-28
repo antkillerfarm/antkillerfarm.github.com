@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  C/C++编程心得（五）, C++ Test framework, Matlab
+title:  C/C++编程心得（五）, C++ Test framework
 category: language 
 ---
 
@@ -160,6 +160,29 @@ std::cout << std::endl;
 std::for_each(std::begin(vec),std::end(vec),[](int n){std::cout<<n<<" ";});
 std::cout << std::endl;
 ```
+
+## malloc与calloc
+
+两者都是动态分配内存。
+
+**主要的不同**：malloc不初始化分配的内存，已分配的内存中可以是任意的值。calloc初始化已分配的内存为0。
+
+**次要的不同**：calloc返回的是一个数组，而malloc返回的是一个对象。
+
+常用的malloc实现主要有：
+
+- dlmalloc。由Doug Lea从1987年开始编写。
+- ptmalloc（pthread malloc）。glibc使用的malloc版本。dlmalloc的一个变种。
+- tcmalloc。Google开源的一个内存管理库。
+- Jemalloc。facebook推出的，最早的时候是freebsd的libc malloc实现。
+
+在多线程环境使用tcmalloc和jemalloc效果非常明显。
+
+当线程数量固定，不会频繁创建退出的时候， 可以使用jemalloc；反之使用tcmalloc可能是更好的选择。
+
+https://www.cnblogs.com/cthon/p/10563946.html
+
+内存优化总结:ptmalloc、tcmalloc和jemalloc
 
 ## 参考
 
@@ -324,6 +347,20 @@ Google C++ Testing Framework简介
 https://www.cnblogs.com/coderzh/archive/2009/04/06/1426755.html
 
 玩转Google开源C++单元测试框架Google Test系列(gtest)
+
+## gmock
+
+gmock是google公司推出的一款开源的白盒测试工具。
+
+测试一个模块的时候，可能涉及到和其他模块交互，可以将模块之间的接口mock起来，模拟交互过程。
+
+比如要测试A模块，必过A模块需要调用B模块的函数。如果B模块还没有实现，此时，就可以用gmock将B模块的某些接口打桩。这样就可以让A模块的测试继续进行下去。
+
+gmock目前是googletest的一部分，一般也与后者配合使用。
+
+https://zhuanlan.zhihu.com/p/101906555
+
+googletest-gmock使用示例
 
 ## CTest
 

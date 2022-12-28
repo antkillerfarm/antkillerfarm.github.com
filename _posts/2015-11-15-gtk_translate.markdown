@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Transifex与GTK文档翻译, 外设接口杂谈, Graphics Framework
+title:  Transifex与GTK文档翻译, 外设接口杂谈
 category: technology 
 ---
 
@@ -206,57 +206,3 @@ SMBus(System Management Bus,系统管理总线)是1995年由Intel提出的，应
 https://zhuanlan.zhihu.com/p/201075632
 
 什么是I3C总线？它和I2C和SMBus是什么关系？
-
-# Graphics Framework
-
-## Linux Graphics Framework
-
-fbdev - video driver for framebuffer device
-
-libkms(Kernel ModeSetting）
-
-DRM(Direct Rendering Manager)
-
-GBM(Generic Buffer Management)
-
-Wayland是一套display server(Wayland compositor)与client间的通信协议，而Weston是Wayland compositor的参考实现。
-
-https://www.cnblogs.com/armlinux/archive/2010/08/30/2396932.html
-
-全面的framebuffer详解
-
-https://blog.csdn.net/fyh2003/article/details/49253713
-
-Wayland与Weston简介
-
-https://www.cnblogs.com/lenomirei/p/11379535.html
-
-渲染显示相关概念
-
-## Android Graphics Framework
-
-SurfaceFlinger
-
-VSYNC
-
-前置Buffer是当前显示在萤幕上的缓冲区，后置Buffer是尚未显示在萤幕上的缓冲区。
-
-Single Buffering使用一个前置缓冲区，在着色的同时影像立即显示在萤幕上。因此当萤幕更新影像时会出现闪烁的现象。Single Buffering在目前的程序中已很少使用。
-
-Double Buffering则使用两个缓冲区，一个前置Buffer，一个后置Buffer。前置缓存的像素在屏幕上显示的同时，显卡正在紧张地着色后置缓存中的像素。
-
-Triple Buffering使用一个前置缓存和两个后置缓存。在着色完第一个后置缓冲区的数据后，立即开始处理第二个后置缓冲区，没有Vsync等待的时间。
-
-Gralloc
-
-OpenCore：Android系统中早期内置的多媒体框架（是Google收购的PacketVideo公司的），后续Android又增加了StageFright框架。
-
-https://source.android.google.cn/devices/graphics
-
-https://www.sohu.com/a/308763349_100093134
-
-深入浅出Android BufferQueue
-
-https://blog.csdn.net/jinzhuojun/article/details/39698317
-
-Android中的GraphicBuffer同步机制-Fence

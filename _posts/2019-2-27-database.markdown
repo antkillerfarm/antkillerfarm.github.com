@@ -59,7 +59,7 @@ https://mp.weixin.qq.com/s/SsrDWrcmCHXCb3lZFzJC7w
 
 ## OLTP与OLAP
 
-数据处理大致可以分成两大类：联机事务处理OLTP（on-line transaction processing）、联机分析处理OLAP（On-Line Analytical Processing）。OLTP是传统的关系型数据库的主要应用，主要是基本的、日常的事务处理，例如银行交易。OLAP是数据仓库系统的主要应用，支持复杂的分析操作，侧重决策支持，并且提供直观易懂的查询结果。
+数据处理大致可以分成两大类：联机事务处理OLTP（On-Line Transaction Processing）、联机分析处理OLAP（On-Line Analytical Processing）。OLTP是传统的关系型数据库的主要应用，主要是基本的、日常的事务处理，例如银行交易。OLAP是数据仓库系统的主要应用，支持复杂的分析操作，侧重决策支持，并且提供直观易懂的查询结果。
 
 OLAP有多种实现方法，根据存储数据的方式不同可以分为ROLAP、MOLAP、HOLAP。
 
@@ -122,6 +122,18 @@ https://mp.weixin.qq.com/s/YSYkvv_74WVDceoJ9XWOjw
 https://mp.weixin.qq.com/s/IM57guTCRvx7Pz5wDDgOTA
 
 优酷大数据OLAP技术选型
+
+## HTAP
+
+随着时间的推移，越来越多的业务对于AP的要求越来越向着TP的指标看齐，例如：要求AP系统能够实时反映出当前TP系统中的实际数据。同时，AP系统可以支持数据的更新等等。总之，TP系统和AP系统之间的边界在业务层面和用户层面上也越来越模糊，市场上迫切希望能够出现一种新的架构或者称之为者解决方案，能够同时满足业务对于TP负载和AP负载的需求。因此，HTAP（Hybrid transaction/analytical processing）的概念随之而诞生。2014年Gartner给出了HTAP的明确概念：Systems that can support both OLTP (On-line transaction processing) as well as OLAP (on-line analytics processing) within a single transaction.
+
+https://zhuanlan.zhihu.com/p/542008685
+
+什么是真正的HTAP？
+
+https://zhuanlan.zhihu.com/p/592199835
+
+哪篇论文宣布了HTAP数据库诞生？解读《A Common Database Approach for OLTP and OLAP Using an In-Memory Column DataBase》
 
 ## SQL
 
@@ -349,40 +361,3 @@ https://mp.weixin.qq.com/s/42cStPudXRHjs61gjSIgWw
 
 一文读懂区块链与传统数据库之共识机制
 
-https://blog.csdn.net/blockchain_lemon/article/details/84801413
-
-一文读懂11个主流共识算法, 彻底搞懂PoS,PoW,dPoW,PBFT,dBFT这些究竟是什么鬼...
-
-https://zhuanlan.zhihu.com/p/113612578
-
-Chandy-Lamport算法核心解读
-
-https://mp.weixin.qq.com/s/q2XL-_XoRLL1xLzGmzlo6A
-
-分布式快照算法: Chandy-Lamport
-
-https://zhuanlan.zhihu.com/p/130332285
-
-分布式一致性算法-Paxos、Raft、ZAB、Gossip
-
-https://mp.weixin.qq.com/s/ow-6rQYGlvX316h63aCGVg
-
-百度正式开源其Raft一致性算法实现braft
-
-https://zhuanlan.zhihu.com/p/273270802
-
-包教包会的用一张白纸推导出RAFT算法
-
-https://zhuanlan.zhihu.com/p/25664121
-
-比较raft ，basic paxos以及multi-paxos
-
-https://mp.weixin.qq.com/s/JVreQzE8B6nAgPmDHM5aXQ
-
-从Paxos到Multi-Paxos
-
-## Cache
-
-**缓存雪崩**指大量缓存同一时间段集体失效，或者缓存整体不能提供服务，导致大量的请求全部到达数据库，对数据CPU和内存造成巨大压力，严重的会造成数据库宕机。也被称为缓存踩踏（Cache Stampede）。
-
-使用随机过期时间。为每一个key都合理的设计一个过期时间，这样可以避免大量的key在同一时刻集体失效。

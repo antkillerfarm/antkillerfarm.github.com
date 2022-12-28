@@ -180,6 +180,10 @@ https://zhuanlan.zhihu.com/p/356505099
 
 Chiplet与异构集成技术研究
 
+https://www.zhihu.com/question/565166250
+
+AMD的chiplets芯片出了这么多年了，为什么Intel和NVIDIA还不跟进？
+
 ## 行业信息
 
 https://mp.weixin.qq.com/s/vGoWsyaal-gAzsrhPguvFg

@@ -255,94 +255,6 @@ https://www.cnblogs.com/tu13/p/ubuntu_nfs.html
 
 ubuntu18.04搭建NFS服务器
 
-# 同步锁
-
-read-write lock、RCU lock、spin lock
-
-对于悲观锁，开发者认为数据发送时发生并发冲突的概率很大，所以每次进行读操作前都会上锁。
-
-对于乐观锁，开发者认为数据发送时发生并发冲突的概率不大，所以读操作前不上锁。
-
-到了写操作时才会进行判断，数据在此期间是否被其他线程修改。如果发生修改，那就返回写入失败；如果没有被修改，那就执行修改操作，返回修改成功。
-
-乐观锁一般采用Compare And Swap（CAS）算法进行实现。
-
-比较并交换(compare and swap, CAS)，是原子操作的一种，可用于在多线程编程中实现不被打断的数据交换操作，从而避免多线程同时改写某一数据时由于执行顺序不确定性以及中断的不可预知性产生的数据不一致问题。
-
-RCU（Read-Copy Update）机制读取数据的时候不对链表进行耗时的加锁操作。这样在同一时间可以有多个线程同时读取该链表，并且允许一个线程对链表进行修改（修改的时候，需要加锁）。
-
-RCU适用于需要频繁的读取数据，而相应修改数据并不多的情景，例如在文件系统中，经常需要查找定位目录，而对目录的修改相对来说并不多，这就是RCU发挥作用的最佳场景。
-
-ABA问题是指在CAS操作时，其他线程将变量值A改为了B，但是又被改回了A，等到本线程使用期望值A与当前变量进行比较时，发现变量A没有变，于是CAS就将A值进行了交换操作，但是实际上该值已经被其他线程改变过。
-
-https://mp.weixin.qq.com/s/mTOzcdjaak-z6ypL9MR2Lw
-
-小白科普：悲观锁和乐观锁
-
-https://mp.weixin.qq.com/s/t-jZ9GoqW46rU3t9ahHqCQ
-
-mysql悲观锁总结和实践
-
-https://mp.weixin.qq.com/s/6MRi_UEcMybKn4YXi6qWng
-
-操作系统中锁的实现原理
-
-https://mp.weixin.qq.com/s/yHSraIAYsjYWPaGXA3PijA
-
-一张图读懂非公平锁与公平锁
-
-https://mp.weixin.qq.com/s/qnZL4ENAbTvVMVcImVTtYw
-
-深入浅出CAS
-
-https://mp.weixin.qq.com/s/g6TK1QiZgqPBDCE7gDJ3dA
-
-面试必问的CAS原理你会了吗？
-
-https://mp.weixin.qq.com/s/T_z2_gsYfs6A-XjVTVV_uQ
-
-说说无锁(Lock-Free)编程那些事（上）
-
-https://mp.weixin.qq.com/s/h75n7sHnrmoLJ4DVAW5AUQ
-
-说说无锁(Lock-Free)编程那些事（下）
-
-https://blog.csdn.net/zqz_zqz/article/details/70233767
-
-java中的锁--偏向锁、轻量级锁、自旋锁、重量级锁
-
-https://mp.weixin.qq.com/s/muSUJuE1A45UTXpWTeFxOA
-
-24张图带你彻底理解Java中的21种锁
-
-https://mp.weixin.qq.com/s/gbCshU5eEn4Gefduk1zdCQ
-
-浅谈Java并发下的乐观锁
-
-https://mp.weixin.qq.com/s/czLqzt0cRwPZeQ4WDaKiJQ
-
-无锁队列的实现
-
-https://mp.weixin.qq.com/s/rpufplXGYFo3P3mdIyY6vA
-
-24张图带你彻底理解Java中的21种锁
-
-https://www.cnblogs.com/linhaostudy/p/8463529.html
-
-Linux RCU机制详解
-
-https://zhuanlan.zhihu.com/p/67520807
-
-Linux内核中的RCU
-
-https://mp.weixin.qq.com/s/azy-lYHTtqdq2OrGwkfsmQ
-
-图解多线程+1的最快操作
-
-https://blog.csdn.net/qq_47768542/article/details/109117044
-
-CAS原理分析及ABA问题详解
-
 # 动态库
 
 ## 版本设置
@@ -423,3 +335,65 @@ Linux思维导图整理
 https://mp.weixin.qq.com/s/sLyD6z2xBXRxfBZnImTgtQ
 
 40+张最全Linux/C/C++思维导图，收藏！
+
+## 时间的表示方法
+
+一般遵循ISO 8601标准：
+
+https://www.w3.org/TR/NOTE-datetime
+
+YYYY-MM-DDThh:mm:ss.sTZD (eg 1997-07-16T19:20:30.45+01:00)
+
+其中的TZD表示time zone designator。
+
+## U盘安装Linux
+
+在程序中找到“启动盘创建器”即可。这也是防止变砖的最后一条路，反正BIOS是不可能安装坏的，随便折腾吧。
+
+## wifi配置
+
+Linux下的wifi配置主要使用iw系列命令，包括iw、iwconfig、iwlist、iwpriv。参见：
+
+http://blog.csdn.net/liangyamin/article/details/7209761
+
+Linux下的iwpriv（iwlist、iwconfig）的简单应用
+
+## eBPF
+
+eBPF是一项革命性技术，它能在内核中运行沙箱程序（sandbox programs），而无需修改内核源码或者加载内核模块。
+
+参考：
+
+https://ebpf.io/zh-cn/
+
+一个eBPF的专栏
+
+https://www.ebpf.top/
+
+一个eBPF的专栏
+
+# 大文件处理
+
+在“大数据”时代，我们会经常遇到有大文本文件（上 GB 或更大）的情况。传统的文本编辑软件对处理这样的大文件不太有效，当我们试图打开一个大文件时会经常由于内存不足而郁闷的不行。
+
+如果你只需要查看一个文本文件，并不对它做编辑，可以考虑下glogg。
+
+`sudo apt install glogg`
+
+如果需要修改的话，可以使用JOE。
+
+`sudo apt install joe`
+
+# 调整交换文件大小
+
+```bash
+fallocate -l 16G /swapfile
+chmod 600 /swapfile
+ls -lh /swapfile
+mkswap /swapfile
+swapon /swapfile
+swapon --show
+# Add this line to /etc/fstab to mount swap at boot
+/swapfile swap swap defaults 0 0
+swapoff /swapfile
+```

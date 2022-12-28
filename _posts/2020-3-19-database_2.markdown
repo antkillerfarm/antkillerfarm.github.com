@@ -9,7 +9,47 @@ category: database
 
 # 数据库
 
-## Cache（续）
+## 分布式算法（续）
+
+https://blog.csdn.net/blockchain_lemon/article/details/84801413
+
+一文读懂11个主流共识算法, 彻底搞懂PoS,PoW,dPoW,PBFT,dBFT这些究竟是什么鬼...
+
+https://zhuanlan.zhihu.com/p/113612578
+
+Chandy-Lamport算法核心解读
+
+https://mp.weixin.qq.com/s/q2XL-_XoRLL1xLzGmzlo6A
+
+分布式快照算法: Chandy-Lamport
+
+https://zhuanlan.zhihu.com/p/130332285
+
+分布式一致性算法-Paxos、Raft、ZAB、Gossip
+
+https://mp.weixin.qq.com/s/ow-6rQYGlvX316h63aCGVg
+
+百度正式开源其Raft一致性算法实现braft
+
+https://zhuanlan.zhihu.com/p/273270802
+
+包教包会的用一张白纸推导出RAFT算法
+
+https://zhuanlan.zhihu.com/p/25664121
+
+比较raft ，basic paxos以及multi-paxos
+
+https://mp.weixin.qq.com/s/JVreQzE8B6nAgPmDHM5aXQ
+
+从Paxos到Multi-Paxos
+
+## Cache
+
+**缓存雪崩**指大量缓存同一时间段集体失效，或者缓存整体不能提供服务，导致大量的请求全部到达数据库，对数据CPU和内存造成巨大压力，严重的会造成数据库宕机。也被称为缓存踩踏（Cache Stampede）。
+
+使用随机过期时间。为每一个key都合理的设计一个过期时间，这样可以避免大量的key在同一时刻集体失效。
+
+---
 
 https://mp.weixin.qq.com/s/RME5b3plT97nYfUaCl9ePw
 
@@ -282,43 +322,3 @@ https://mp.weixin.qq.com/s/m76PFxbcY6_-XyeU7uu4Jg
 https://mp.weixin.qq.com/s/pZnAcjFlBM2I4Hyctd6MHw
 
 图数据库真的比关系数据库更先进吗？
-
-https://mp.weixin.qq.com/s/O3A5gVewRQ11Z8RdPcs-9w
-
-一文看懂Pinterest如何构建时间序列数据库系统Goku
-
-https://mp.weixin.qq.com/s/5Qcbz6dT20Sa_OvRfbNXNw
-
-如何给新来的师妹解释什么是数据库的脏读、不可重复读和幻读
-
-https://mp.weixin.qq.com/s/1zarqgOh9-3chlBsB4TsuA
-
-物联网时代数据数据库如何选型？
-
-https://mp.weixin.qq.com/s/AcuFiHgRJg2OcNGtfjRxYA
-
-我们对比了5款数据库，告诉你NewSQL的独到之处
-
-https://mp.weixin.qq.com/s/DaspXFLPASYE7N0WHllcYQ
-
-Cassandra的过去、现在、未来
-
-https://mp.weixin.qq.com/s/cLIrRmcS5sbiDVl0cwDlIw
-
-Cassandra在时空数据上的探索
-
-https://mp.weixin.qq.com/s/ufficZ7cCvRFdEpaAfm8Fg
-
-面试官问：讲讲高并发下的接口幂等性怎么实现？
-
-https://www.jianshu.com/p/0355d9e5ba0e
-
-数据库三大范式
-
-https://mp.weixin.qq.com/s/QbwTY8Tfkv1uUdsL9vk8iw
-
-一文看懂阿里文娱大数据OLAP选型
-
-https://mp.weixin.qq.com/s/mcyljauYnyydePLPeshjhw
-
-程序员硬核“年终大扫除”，清理了数据库70GB空间

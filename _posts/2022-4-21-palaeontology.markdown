@@ -91,6 +91,26 @@ https://mp.weixin.qq.com/s/NOs-EPRgcafv3zasR-zXCw
 
 ---
 
+https://mp.weixin.qq.com/s/KJyvT_MsD2DZ6QvwXh32ug
+
+假如把地球46亿年历史压缩到一天
+
+https://mp.weixin.qq.com/s/mc9aH5hDgRFS2h2blPhb8w
+
+21张绘画完美演绎地球演化新说！
+
+https://mp.weixin.qq.com/s/zG3r8KO5KFtSWVlz1ZQo0A
+
+42000年前，地球变成了……（地磁极性倒转）
+
+https://mp.weixin.qq.com/s/MWGedW1qbeqicE0wEqcSQw
+
+5000多万年前，江南曾是一片荒漠
+
+https://mp.weixin.qq.com/s/e-3dMOZopr9GpFhzOl9RKA
+
+一年多几天该多好？曾经，地球上一年有424天！
+
 https://www.zhihu.com/question/264962911
 
 南极大陆上曾存在过怎样的动植物？
@@ -219,23 +239,23 @@ https://www.zhihu.com/zvideo/1437447831220703232
 
 你给我解释解释什么叫打制石器
 
+https://www.zhihu.com/question/574139550
+
+西伯利亚暗色岩事件是地质史上最大的火山爆发吗？
+
+https://mp.weixin.qq.com/s/OAJ6KOWqX1Y-AyYdSTPk2Q
+
+喜马拉雅山曾高达12000米，你相信吗？
+
+https://www.zhihu.com/question/32141371
+
+美国黄石国家公园地下的超级火山的前世今生是怎样的？
+
+https://www.zhihu.com/question/375319488
+
+为什么史前会下几百万年的大雨?（卡尼期洪积事件）
+
 # 地理+
-
-https://www.zhihu.com/question/464055142
-
-美国国家地理正式承认南大洋为地球第五大洋，为什么此前不承认？南大洋有哪些特殊的地方？
-
-https://www.zhihu.com/question/22586409
-
-鄱阳湖还有救吗？
-
-https://mp.weixin.qq.com/s/n67jhRbOimVXqN3YKhDzuQ
-
-假如地球南北翻转会怎么样？
-
-https://mp.weixin.qq.com/s/Mdxrwy4NMW0A9sq7FJSU3w
-
-南北也曾是北南
 
 https://mp.weixin.qq.com/s/KR50fOET-9i7yFM6pY18_w
 
@@ -260,18 +280,6 @@ https://mp.weixin.qq.com/s/TiZkQ2SBU4aVofXwd4yEug
 https://mp.weixin.qq.com/s/WJMtsDoSj98FZdHlfj0zuQ
 
 现时与清代省会以上城池图鉴
-
-https://mp.weixin.qq.com/s/OAJ6KOWqX1Y-AyYdSTPk2Q
-
-喜马拉雅山曾高达12000米，你相信吗？
-
-https://www.zhihu.com/question/32141371
-
-美国黄石国家公园地下的超级火山的前世今生是怎样的？
-
-https://www.zhihu.com/question/375319488
-
-为什么史前会下几百万年的大雨?（卡尼期洪积事件）
 
 https://mp.weixin.qq.com/s/HhPE8RzIk5_XnMY9mdHB1g
 

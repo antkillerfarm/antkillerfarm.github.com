@@ -243,6 +243,10 @@ https://www.zhihu.com/question/430177243
 
 CPU长指令(VLIW)失败的主要原因是什么，VLIW真的无药可救吗？
 
+https://zhuanlan.zhihu.com/p/594532014
+
+一文搞懂Cortex-A77（ARMv8架构）工作原理
+
 # DPU
 
 如同GPU是针对图像显示领域的加速，DPU（Data Processing Unit）则是对于数据传输方面的加速。

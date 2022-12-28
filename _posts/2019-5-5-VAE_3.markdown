@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  VAE（三）——VAE vs GAN, Normalizing Flow, Diffusion Model, VAE参考资源
+title:  VAE（三）——VAE vs GAN, Normalizing Flow, Diffusion Model
 category: GAN & VAE 
 ---
 
@@ -334,17 +334,3 @@ AI绘画过去也一直有研究，为什么会在最近几个月突然爆发？
 https://mp.weixin.qq.com/s/G50p0SDQLSghTnMAOK6BMA
 
 Diffusion Model
-
-# VAE参考资源
-
-https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw
-
-变分U-Net，可按条件独立变换目标的外观和形状
-
-https://zhuanlan.zhihu.com/p/88750084
-
-从自编码器（AE）到变分自编码器（VAE）再到条件变分自编码器（CVAE）：一份小白入门基础总结
-
-https://mp.weixin.qq.com/s/ZlLuhu08m_RnD-h86df8sA
-
-清华大学提出SA-VAE框架，通过单样本/少样本学习生成任意风格的汉字
