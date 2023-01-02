@@ -167,18 +167,8 @@ https://share.america.gov/zh-hans/america-sent-equipment-to-the-soviet-union-to-
 
 ---
 
-https://uboat.net/boats/finder.php
+纳粹什么报都办，既有严肃的党报《人民观察家》，也有幽默小报，叫《荨蔴》，甚至还有黄色成人版的《冲锋队员》。不过纳粹的办报水平实在堪忧。戈培尔承认，我们有最好的演说家，但缺乏强有力的笔。希特勒则用他一贯玩世不恭的腔调调侃，他说：没有什么报比纳粹的幽默小报荨麻更沉闷，相比之下，人民观察家报倒更像份幽默小报。纳粹报纸最火的当属冲锋队员周刊，它连篇累牍登所谓犹太人强暴雅利安女孩的下流故事。
 
-一个关于德国U型潜艇的网站。
+https://www.zhihu.com/question/20117290
 
-https://mp.weixin.qq.com/s/0Lyk7Y31ViFOmfCXHaBdBQ
-
-二战南斯拉夫波黑游击队早期领导人姆拉登医学博士
-
-https://mp.weixin.qq.com/s/mD74va6Oy99eePxvGJKmaw
-
-科扎拉战役，二战南斯拉夫游击队初期的挫折
-
-https://mp.weixin.qq.com/s/Ey3siLU4Ti9qy_yKptsLJw
-
-史上最牛火山喷发：团灭美军轰炸机大队，把88架飞机烧成渣渣
+纳粹德国的宣传术有什么鲜明的特点？

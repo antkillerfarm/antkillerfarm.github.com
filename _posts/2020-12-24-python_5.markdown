@@ -9,6 +9,22 @@ category: language
 
 # Python
 
+## python执行shell脚本
+
+示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/misc/hello_cmd.py
+
+需要注意的是`shell`这个选项是有讲究的。
+
+`shell=True`:
+
+`args = ["ls -al ."]`
+
+`shell=False`:
+
+`args = ["ls","-al","."]`
+
 ## python调试
 
 首先：

@@ -125,6 +125,10 @@ https://mp.weixin.qq.com/s/roqaJWllIScw9o0LrwgLUA
 
 显卡 声卡 汉卡 防病毒卡
 
+https://www.zhihu.com/question/397027038
+
+Intel为什么不取消AMD的X86架构授权？
+
 # 上古软件开发
 
 https://mp.weixin.qq.com/s/movz5aesYdZZZHle-hHRIw

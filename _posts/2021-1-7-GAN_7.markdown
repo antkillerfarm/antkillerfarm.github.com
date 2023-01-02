@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GAN（七）——GAN参考资源（3）, VAE参考资源
+title:  GAN（七）——GAN参考资源（3）, Diffusion Model, VAE参考资源
 category: GAN & VAE 
 ---
 
@@ -193,6 +193,56 @@ https://mp.weixin.qq.com/s/imOFQL01RaXUuZwew1izzg
 
 基于GAN来做低光照图像增强，EnlightenGAN论文解读
 
+# Diffusion Model
+
+Diffusion Model也是一类生成模型方法。
+
+![](/images/img4/FLOW.png)
+
+Diffusion Model主要通过采样的方法，不断逼近模型的数据分布，从而生成数据。基本原理和VAE一样仍然是Markov Chain Monte Carlo。
+
+Diffusion Model由于天生就是渐变的迭代过程，因此在流程的可控性上很有优势。当时间宽裕时可以通过高轮次的迭代获得高质量的合成样本，同时较低轮次的快速合成也可以得到没有明显瑕疵的合成样本。而高低轮次迭代之间完全不需要重新训练模型，只用手动调整一些轮次相关的参数。
+
+因此，很自然的又有了Cascaded Diffusion Models。
+
+论文：
+
+《Cascaded Diffusion Models for High Fidelity Image Generation》
+
+参考：
+
+https://lilianweng.github.io/lil-log/2021/07/11/diffusion-models.html
+
+What are Diffusion Models?
+
+https://zhuanlan.zhihu.com/p/366004028
+
+另辟蹊径—Denoising Diffusion Probabilistic一种从噪音中剥离出图像/音频的模型
+
+https://zhuanlan.zhihu.com/p/384144179
+
+Denoising Diffusion Probabilistic Model(DDPM)
+
+https://zhuanlan.zhihu.com/p/377603135
+
+Diffusion Probabilistic Model
+
+https://yang-song.github.io/blog/2021/score/
+
+Generative Modeling by Estimating Gradients of the Data Distribution
+
+https://www.zhihu.com/question/536012286
+
+diffusion model最近在图像生成领域大红大紫，如何看待它的风头开始超过GAN？
+
+https://www.zhihu.com/question/558475081
+
+AI绘画过去也一直有研究，为什么会在最近几个月突然爆发？
+
+https://mp.weixin.qq.com/s/G50p0SDQLSghTnMAOK6BMA
+
+Diffusion Model
+
 # VAE参考资源
 
 https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw
@@ -206,10 +256,6 @@ https://zhuanlan.zhihu.com/p/88750084
 https://mp.weixin.qq.com/s/ZlLuhu08m_RnD-h86df8sA
 
 清华大学提出SA-VAE框架，通过单样本/少样本学习生成任意风格的汉字
-
-https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
-
-面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
 
 https://mp.weixin.qq.com/s/51Xu7osdVa-fCV-IZbHdCA
 
@@ -271,10 +317,6 @@ https://mp.weixin.qq.com/s/0coPJFrW7anW7QuqjPBt3g
 
 深度生成模型在信号处理领域的应用
 
-https://mp.weixin.qq.com/s/GJr-YtV84eV1KbkyVSkcBA
-
-超越BigGAN，DeepMind提出“史上最强非GAN生成器”VQ-VAE-2
-
 https://mp.weixin.qq.com/s/3ZHlWlO0FdnQTnskcrz2IA
 
 生成式模型入门：训练似然模型的技巧
@@ -306,41 +348,3 @@ https://mp.weixin.qq.com/s/g-OPU4vp66HWcpqjdD2bBg
 https://mp.weixin.qq.com/s/8zi0JrloxuRdHcRm1dzCEQ
 
 利用VAE和LSTM生成时间序列
-
-# 新冠疫苗+
-
-https://mp.weixin.qq.com/s/8L3euDhDzu9NUb15sUCpcw
-
-疫苗接种6个月的真实世界数据
-
-https://view.inews.qq.com/wxn/20210105A037TJ00
-
-30多个国家和地区发现变异毒株，疫苗效果会受影响吗？
-
-https://mp.weixin.qq.com/s/ZXWV8joWMNCbOfH04_TbXA
-
-美国CDC的“Delta末日文档”：感染人数激增，接种疫苗仍传播病毒？
-
-https://mp.weixin.qq.com/s/krRGv6N20YALpG-STMbIzg
-
-以色列新冠疫苗真实世界数据，有什么用？
-
-https://mp.weixin.qq.com/s/U1eteX7FwhyW-4qhVX4_bQ
-
-多国暂停牛津新冠疫苗接种，接下来呢？
-
-https://mp.weixin.qq.com/s/5E9h6snRo_2OuPJqInYvjw
-
-阿斯利康疫苗接种后出现脑血栓，意味着什么？
-
-https://mp.weixin.qq.com/s/qzUObhyykBn88EgV0PK9Dg
-
-姗姗来迟，科兴新冠疫苗究竟怎么样？
-
-https://mp.weixin.qq.com/s/YEt7XH9mNPmx3QURebbBmg
-
-什么是最好的新冠疫苗？
-
-https://mp.weixin.qq.com/s/pkgbDDBv-OPGHyeEBVDXQQ
-
-国产疫苗，对新冠病毒突变株效果如何？

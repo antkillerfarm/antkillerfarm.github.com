@@ -75,6 +75,46 @@ http://blog.csdn.net/OpenNaive/article/details/7047823
 
 # 苏俄+
 
+https://mp.weixin.qq.com/s/kCLZyjoDoNK-py06hvmujA
+
+特供商店在苏联的兴衰（上）
+
+https://mp.weixin.qq.com/s/C2DIOcL9pE-FWspAt8Ut_Q
+
+特供商店在苏联的兴衰（下）
+
+https://www.zhihu.com/question/21817255
+
+俄罗斯（苏联）作为一个工业大国，为什么没有世界性的汽车品牌？
+
+https://zhuanlan.zhihu.com/p/331709823
+
+苏联人给他发的奖章，比给勃列日涅夫还多
+
+https://zhuanlan.zhihu.com/p/390097908
+
+乌兹别克棉花案：苏联解体的潘多拉魔盒之钥
+
+https://mp.weixin.qq.com/s/M3ZselQLqCdLY53dpqILLA
+
+穿越回苏联：火红岁月的情与色（上）
+
+https://mp.weixin.qq.com/s/2TAWe4frnI6RTpe4ui0mAg
+
+穿越回苏联：火红岁月的情与色（下）
+
+https://mp.weixin.qq.com/s/YPgFtLkpl9BGNZPo_IEcrg
+
+《功勋》孙家栋单元的中苏军服细节看不清？来看特写和解析
+
+https://www.zhihu.com/question/498827834
+
+苏联拖拉机为什么没有解决农业问题？
+
+https://www.zhihu.com/question/22972794
+
+没有出海口的黑海舰队对俄罗斯的意义是什么？
+
 http://www.mofcom.gov.cn/article/i/jyjl/e/201909/20190902900697.shtml
 
 毕马威：哈萨克斯坦一半财富集中在162人之手

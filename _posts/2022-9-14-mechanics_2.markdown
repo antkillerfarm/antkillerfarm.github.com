@@ -175,6 +175,10 @@ https://www.zhihu.com/question/543186991
 
 bmp系列步兵战车各有什么优点、缺点?
 
+https://zhuanlan.zhihu.com/p/595696179
+
+乌克兰国产Triton装甲运兵车
+
 # 化学+
 
 ## 化学工业（续）

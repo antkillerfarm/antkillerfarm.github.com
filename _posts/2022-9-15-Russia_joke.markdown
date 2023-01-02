@@ -137,6 +137,10 @@ https://www.zhihu.com/question/359670472
 
 莫斯科国立大学，留学门槛为什么这么低？
 
+https://www.zhihu.com/question/549720511
+
+如何看待中银租赁因旗下17架飞机被俄罗斯扣押导致上半年账面减记8.04亿美元，亏损约3亿美元？
+
 ---
 
 米哈伊尔·瓦西里耶维奇·罗蒙诺索夫，1711～1765，俄国百科全书式的科学家、语言学家、哲学家和诗人，被誉为俄国科学史上的彼得大帝。1755年创办莫斯科大学。
@@ -147,42 +151,8 @@ https://www.zhihu.com/question/359670472
 
 ---
 
-https://mp.weixin.qq.com/s/kCLZyjoDoNK-py06hvmujA
+苏57，从2010年首飞开始，就被俄罗斯航空界寄予厚望，他们设想过，将外销最少400架，其中100架将是中国下单，谁都没想到，最近些年中国歼20打破了俄罗斯人的梦想，隐身技术更好，航电更先进，总体作战性能更逼近西方F22和F35战斗机。
 
-特供商店在苏联的兴衰（上）
+https://zhuanlan.zhihu.com/p/359270252
 
-https://mp.weixin.qq.com/s/C2DIOcL9pE-FWspAt8Ut_Q
-
-特供商店在苏联的兴衰（下）
-
-https://www.zhihu.com/question/21817255
-
-俄罗斯（苏联）作为一个工业大国，为什么没有世界性的汽车品牌？
-
-https://zhuanlan.zhihu.com/p/331709823
-
-苏联人给他发的奖章，比给勃列日涅夫还多
-
-https://zhuanlan.zhihu.com/p/390097908
-
-乌兹别克棉花案：苏联解体的潘多拉魔盒之钥
-
-https://mp.weixin.qq.com/s/M3ZselQLqCdLY53dpqILLA
-
-穿越回苏联：火红岁月的情与色（上）
-
-https://mp.weixin.qq.com/s/2TAWe4frnI6RTpe4ui0mAg
-
-穿越回苏联：火红岁月的情与色（下）
-
-https://mp.weixin.qq.com/s/YPgFtLkpl9BGNZPo_IEcrg
-
-《功勋》孙家栋单元的中苏军服细节看不清？来看特写和解析
-
-https://www.zhihu.com/question/498827834
-
-苏联拖拉机为什么没有解决农业问题？
-
-https://www.zhihu.com/question/22972794
-
-没有出海口的黑海舰队对俄罗斯的意义是什么？
+再也养不起！俄罗斯5大设计局合并，米格苏霍伊设计局已成历史

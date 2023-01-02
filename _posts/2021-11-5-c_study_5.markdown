@@ -112,6 +112,10 @@ switch (reg) {
 
 可以用上面的办法，少写一些case语句。
 
+https://www.zhihu.com/question/300975864
+
+为什么很多程序员不用 switch，而是大量的 if...else if ...？
+
 ## uint8_t
 
 对于要求严格位宽的场合，应用程序可以使用uint8_t，uint16_t，uint32_t来获得移植时的一致性。它的头文件是inttypes.h。

@@ -35,6 +35,10 @@ https://mp.weixin.qq.com/s/ibiElLIgrT3wYx3tDYMMTw
 
 理解特征工程
 
+https://www.zhihu.com/question/29316149
+
+特征工程到底是什么？
+
 https://mp.weixin.qq.com/s/3Ce8uMf_Kyt-hEZUYfdh3g
 
 特征工程之特征选择

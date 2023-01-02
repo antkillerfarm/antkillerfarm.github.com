@@ -98,6 +98,10 @@ http://www.ceiwei.com/CommMonitor.html
 
 CommMonitor---一个串口监控工具。
 
+https://github.com/sige5193/bittly
+
+Bittly---一个串口监控工具。基于electron。
+
 https://github.com/appunite/AndroidFFmpeg
 
 Android FFmpeg---Android上的一个FFmpeg开源实现。

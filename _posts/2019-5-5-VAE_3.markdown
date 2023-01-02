@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  VAE（三）——VAE vs GAN, Normalizing Flow, Diffusion Model
+title:  VAE（三）——VAE vs GAN, Normalizing Flow
 category: GAN & VAE 
 ---
 
@@ -243,6 +243,20 @@ https://mp.weixin.qq.com/s/fzadP8NwPTxuhEB0O4GU8g
 
 我们前面提到的风格转换都是比较小幅度的风格转换,有的时候我们会需要做非常大的风格转换,譬如把真人照片转成动漫照片。
 
+# VQ-VAE
+
+https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
+
+面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
+
+https://mp.weixin.qq.com/s/GJr-YtV84eV1KbkyVSkcBA
+
+超越BigGAN，DeepMind提出“史上最强非GAN生成器”VQ-VAE-2
+
+https://zhuanlan.zhihu.com/p/91434658
+
+VQ-VAE解读
+
 # Normalizing Flow
 
 Normalizing Flow是GAN和VAE之外的另一大类生成模型方法。
@@ -284,53 +298,3 @@ Flow-based Generative Model流的生成模型
 https://mp.weixin.qq.com/s/KrvW16GAxSGAPOCYYKbGUg
 
 生成模型：标准化流（Normalized Flow）
-
-# Diffusion Model
-
-Diffusion Model也是一类生成模型方法。
-
-![](/images/img4/FLOW.png)
-
-Diffusion Model主要通过采样的方法，不断逼近模型的数据分布，从而生成数据。基本原理和VAE一样仍然是Markov Chain Monte Carlo。
-
-Diffusion Model由于天生就是渐变的迭代过程，因此在流程的可控性上很有优势。当时间宽裕时可以通过高轮次的迭代获得高质量的合成样本，同时较低轮次的快速合成也可以得到没有明显瑕疵的合成样本。而高低轮次迭代之间完全不需要重新训练模型，只用手动调整一些轮次相关的参数。
-
-因此，很自然的又有了Cascaded Diffusion Models。
-
-论文：
-
-《Cascaded Diffusion Models for High Fidelity Image Generation》
-
-参考：
-
-https://lilianweng.github.io/lil-log/2021/07/11/diffusion-models.html
-
-What are Diffusion Models?
-
-https://zhuanlan.zhihu.com/p/366004028
-
-另辟蹊径—Denoising Diffusion Probabilistic一种从噪音中剥离出图像/音频的模型
-
-https://zhuanlan.zhihu.com/p/384144179
-
-Denoising Diffusion Probabilistic Model(DDPM)
-
-https://zhuanlan.zhihu.com/p/377603135
-
-Diffusion Probabilistic Model
-
-https://yang-song.github.io/blog/2021/score/
-
-Generative Modeling by Estimating Gradients of the Data Distribution
-
-https://www.zhihu.com/question/536012286
-
-diffusion model最近在图像生成领域大红大紫，如何看待它的风头开始超过GAN？
-
-https://www.zhihu.com/question/558475081
-
-AI绘画过去也一直有研究，为什么会在最近几个月突然爆发？
-
-https://mp.weixin.qq.com/s/G50p0SDQLSghTnMAOK6BMA
-
-Diffusion Model

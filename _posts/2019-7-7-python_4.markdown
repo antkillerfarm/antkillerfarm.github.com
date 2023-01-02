@@ -419,6 +419,16 @@ https://mp.weixin.qq.com/s/UVKOU11dfWwP9Uyw9E400Q
 
 ## word & excel
 
+安装：
+
+`pip install python-docx`
+
+文档：
+
+https://python-docx.readthedocs.io/en/latest/
+
+参考：
+
 https://mp.weixin.qq.com/s/lEtE3ejBLzmm9_eo-_8NBg
 
 处理大型Excel文件，用Python就对了！
@@ -476,19 +486,3 @@ music21官网
 https://mp.weixin.qq.com/s/ONZD5RGI18rLTYhzIQQbVA
 
 用R包gm生成音乐
-
-## python执行shell脚本
-
-示例：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/misc/hello_cmd.py
-
-需要注意的是`shell`这个选项是有讲究的。
-
-`shell=True`:
-
-`args = ["ls -al ."]`
-
-`shell=False`:
-
-`args = ["ls","-al","."]`
