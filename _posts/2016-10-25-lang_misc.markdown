@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  小众语言集中营, Javascript（二）
+title:  小众语言集中营, boost
 category: language 
 ---
 
@@ -135,144 +135,128 @@ https://mp.weixin.qq.com/s/2a2PZkGq0eKd7ee7HnHpoQ
 
 深入理解函数式编程（下）
 
-# Javascript
+# boost
 
-## WebAssembly
+## 安装&编译
 
-WebAssembly，简称Wasm，是一种能在浏览器上执行的二进制虚拟机字节码。
+boost直接安装：
 
-官网：
-
-https://webassembly.org/
-
-参考：
-
-https://www.ibm.com/developerworks/cn/web/wa-lo-webassembly-status-and-reality/index.html
-
-WebAssembly现状与实战
-
-https://www.jianshu.com/p/bff8aa23fe4d
-
-几张图让你看懂WebAssembly
-
-https://www.zhihu.com/question/31415286
-
-如何评论浏览器最新的WebAssembly字节码技术？
-
-https://mp.weixin.qq.com/s/LRGNOuFwHXALs_lhPyN3Zw
-
-爱奇艺直播WebAssembly优化之路
-
-https://mp.weixin.qq.com/s/I0grz0IfFZo98sfaCNh-Vw
-
-可能是世界上最简单的用Go来写WebAssembly的教程
-
-https://mp.weixin.qq.com/s/yTebereUkcyvwJbLssZjPQ
-
-5分钟看懂WebAssembly
-
-https://mp.weixin.qq.com/s/QDjxfoY7gjcCmOeV0kq1pw
-
-web多媒体技术在视频编辑场景的应用
-
-https://mp.weixin.qq.com/s/G3NGVV9wSHMMtFtq0MB6SA
-
-快速上手WebAssembly应用开发：Emscripten使用入门
-
-https://zhuanlan.zhihu.com/p/25800318
-
-WebAssembly系列（一）生动形象地介绍WebAssembly
-
-https://zhuanlan.zhihu.com/p/25669120
-
-WebAssembly系列（二）JavaScript Just-in-time (JIT)工作原理
-
-https://zhuanlan.zhihu.com/p/25718411
-
-WebAssembly系列（三）编译器如何生成汇编
-
-https://zhuanlan.zhihu.com/p/25754084
-
-WebAssembly系列（四）WebAssembly工作原理
-
----
-
-V8开发者Vyacheslav Egorov和Mozilla Hacks之间的source-map之战了。对于同一份source-map库的JS代码，Vyacheslav所魔改出的纯JS版本，其性能一举反超了Mozilla重写的Rust版。
-
-https://www.zhihu.com/answer/1322391162
-
-有没有让JavaScript在JS引擎上稳定、更快运行的Style Guide?
-
-## Javascript在客户端的使用
-
-Javascript在服务器前端的成功，促使人们思考其在客户端的使用。
-
-最早的尝试，是MS提供的web broswer控件（例如MFC的CHtmlView类）。然而，当时的目的，并不是美化应用程序外观，而只是给程序提供一个访问互联网的机会。其最常见的用处，就是给About添加一个网站链接。这种方式不光用途简陋，更关键的是从外观来看，网页和应用程序完全是两种风格。
-
-网站的外观在随后的几年中进化的很快，由于CSS和Javascript的出现，网页前端不再是一成不变的静态网页，而是具有了一定的动画和交互能力。强大的功能促进了分工的发展，网站设计逐渐分成了前端和后端两大工种。这种分工又促进了网页交互技术的进步。
-
-反观普通的应用程序，由于受限于编程的复杂度，前端人员一直难于介入，很多年都处于停滞阶段。这期间一些不甘平庸的公司，在UI技术方面也做了一些尝试。
-
-首先是DirectUI。这个是MS对于Win32窗口模型的一个重大改进。
-
-在原始的Win32窗口模型中，每个控件都是一个窗口，拥有一个窗口句柄（相当于窗口资源的描述符）。窗口事件的处理和资源管理都在OS层面进行，开销比较大。（比如包含10000个按钮的窗口怎么处理的问题）窗口之间的交互，比如透明、动画，也由于需要跨窗口句柄，而变得非常复杂。
-
-DirectUI的思路，是将控件降级为贴图，并接管整体窗口事件的处理，以模拟的方式实现控件的行为。开销和扩展性得到了很大的提升。
-
-DirectUI技术最早出现在Windows XP中。比如，“我的电脑”左侧的控制面板。由于它的HWND的名字叫做DirectUI，故名。GTK项目实际上也采用了类似的方案。
-
-各种DirectUI技术，普遍引入了UI配置文件的概念，而且UI配置文件的功能也越来越强。比如，GTK的设计器Glade，早期的时候是根据UI设计，导出代码，但现在已经改为导出UI配置文件了。
-
-然而，由于低层实现的限制，这些UI配置文件语法各异，虽然有设计器来简化设计难度，但注定不能做的太复杂。因此，功能上无论如何都无法与网页相比，更不必说和HTML 5相比了。
-
-2012年以后，以CEF（Chromium Embedded Framework）和XULRunner为代表的浏览器派，开始逐渐崭露头角。从此，开发桌面应用程序，不再是Javascript的禁区。桌面应用UI和网页前端开始呈现融合的局面。
-
-## TypeScript
-
-TypeScript是JavaScript的一个超集，而且本质上向这个语言添加了可选的静态类型和基于类的面向对象编程。
-
-官网：
-
-https://www.typescriptlang.org/
-
-安装：
-
-`npm install -g typescript`
-
-TypeScript文件的后缀是`.ts`，它不能直接在浏览器中运行，而需要编译成JS才能运行。也正因为如此，TS并没有什么兼容性问题。
+`sudo apt install libboost-all-dev`
 
 编译：
 
-`tsc helloworld.ts`
+```bash
+./bootstrap.sh
+./b2 install link=static cxxflags=-fPIC --with-test --prefix=</path/to/install>
+```
 
-## 框架
+boost的组件有很多，这里只编译了test组件。
 
-React、Angular、Vue.js似乎是目前最流行的三个框架了。
+>注意：指定生成目录的时候，stage使用stagedir选项，而install使用prefix选项。
 
-https://zhuanlan.zhihu.com/p/35551654
+## boost::format
 
-基于React的高质量坦克大战复刻版
+```cpp
+cout << boost::format("%1%"
+    "%1t 十进制 = [%2$d]\n"
+    "%1t 格式化的十进制 = [%2$5d]\n"
+    "%1t 格式化十进制，前补'0' = [%2$05d]\n"
+    "%1t 十六进制 = [%2$x]\n"
+    "%1t 八进制 = [%2$o]\n"
+    "%1t 浮点 = [%3$f]\n"
+    "%1t 格式化的浮点 = [%3$3.3f]\n"
+    "%1t 科学计数 = [%3$e]\n"
+    ) % "example :\n" % 15 % 15.01 << endl;
+```
 
-https://mp.weixin.qq.com/s/zfOZAmgpndcqgxHHaS1j3g
+参考：
 
-用Vue和React构建相同应用程序，区别在哪？
+https://www.cnblogs.com/WuErPIng/archive/2005/04/21/142308.html
 
-https://mp.weixin.qq.com/s/zDt92-5NVaAFZJRfEHCUvg
+浅尝boost之format
 
-什么是Native、Web App、Hybrid、React Native和Weex？
+## Boost.Parameter
 
-https://mp.weixin.qq.com/s/RC3eVNfYeVx4mQT3WQHMcw
+该库可以支持命名参数，然而实现太复杂。期待新标准直接支持。
 
-6个常用的React组件库
+## Boost.MPL
 
-https://zhuanlan.zhihu.com/p/28305975
+元编程（Metaprogramming）是指某类计算机程序的编写，这类计算机程序编写或者操纵其他程序（或者自身）作为它们的数据，或者在运行时完成部分本应在编译时完成的工作。很多情况下与手工编写全部代码相比工作效率更高。编写元程序的语言称之为元语言，被操作的语言称之为目标语言。一门语言同时也是自身的元语言的能力称之为反射。
 
-Vue.js&jQuery比较
+MPL可以看成是STL的编译期版本，或者说元编程版本。它同样也提供了各种容器，只不过容纳的对象不是数据，而是类型。
 
-https://zhuanlan.zhihu.com/p/20197803
+参考：
 
-VUE（现代库） VS jquery（传统库）
+www.cppblog.com/jack-wang/archive/2010/10/04/128589.html
 
-https://zhuanlan.zhihu.com/p/359540593
+模板元编程---用MPL解决实际问题
 
-2021年Angular vs. React vs. Vue前端框架对比
+https://mp.weixin.qq.com/s/5ireHbuWFrVY6T9qnvs3rQ
+
+浅谈C++元编程
+
+## BGL
+
+Boost Graph Library是boost提供的一个和图论相关的工具库，集成了常见的图操作（如BFS和DFS）和图算法（最短路径、拓朴排序）。
+
+官网：
+
+https://www.boost.org/doc/libs/1_73_0/libs/graph/doc/
+
+参考：
+
+https://www.ibm.com/developerworks/cn/aix/library/au-aix-boost-graph/
+
+探索Boost Graph Library
+
+示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/cpp/boost/graph/main.cpp
+
+test1：base。
+
+test2：批量添加边+拓扑排序。
+
+test3：顶点改为字符串数据类型，使用BGL API。
+
+test4：顶点改为字符串数据类型，不使用BGL API。
+
+## folly
+
+folly是facebook出品的另一个知名的标准库扩展。
+
+代码：
+
+https://github.com/facebook/folly
+
+## abseil
+
+造轮子的事情，Google也有份。
+
+代码：
+
+https://github.com/abseil/abseil-cpp
+
+而且还有一个给python用的基础库：
+
+https://github.com/abseil/abseil-py
+
+abseil不光提供代码，还有一个编程的技巧：
+
+https://abseil.io/tips/
+
+## ACE
+
+Douglas C. Schmidt写的一个C++的网络库。历史非常悠久了（1993年），其中的很多部分都有很高的参考价值。
+
+官网：
+
+http://www.dre.vanderbilt.edu/~schmidt/ACE.html
+
+## POCO
+
+POCO也是一个C++的网络库。（2004年）
+
+官网：
+
+https://pocoproject.org/

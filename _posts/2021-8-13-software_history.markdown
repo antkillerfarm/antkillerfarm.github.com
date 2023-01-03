@@ -138,6 +138,14 @@ https://www.zhihu.com/question/19848288
 
 ---
 
+2021年，美国前总统特朗普团队使用了Mastodon的源代码，开发了他们的新社交媒体平台，即所谓的Truth Social。
+
+https://mp.weixin.qq.com/s/EG65kmRlKAdTzn8kPmU0BA
+
+反Twitter平台用户激增250万，这名29岁程序员如何凭一己之力扛住超8倍流量增长？
+
+---
+
 https://github.com/chrislgarry/Apollo-11
 
 Apollo 11登月代码成Github热度第一

@@ -154,3 +154,7 @@ https://zhuanlan.zhihu.com/p/585705246
 https://www.sohu.com/a/483525785_120939180
 
 60年前涅杰林元帅不顾劝阻，坚持现场指挥，结果火箭爆炸，元帅瞬间蒸发 
+
+https://baijiahao.baidu.com/s?id=1737669684389281513
+
+拉希多夫制造了苏联第一贪腐大案
