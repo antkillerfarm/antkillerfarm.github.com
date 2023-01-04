@@ -281,6 +281,10 @@ https://mp.weixin.qq.com/s/BPuRRgcRQTo2jSYY-y2c8w
 
 清华最新《图神经网络推荐系统》综述论文
 
+https://zhuanlan.zhihu.com/p/595993927
+
+DeepMind通天了！AI中期天气预报吊打全球顶级气象台：1台TPU1分钟预测10天天气
+
 # PageRank算法+
 
 http://www.docin.com/p-630952720.html
