@@ -132,6 +132,10 @@ https://mp.weixin.qq.com/s/Zaz9hmTuUbd-hCx-zHhBgg
 
 TensorBoard：可视化学习
 
+https://www.cnblogs.com/deepllz/p/9207981.html
+
+Tensorboard数据(tfevents文件)格式解析及ofstream使用问题
+
 https://mp.weixin.qq.com/s/Kc-DqiuG2kn0NlVxkcNa4w
 
 TensorBoard直方图信息中心

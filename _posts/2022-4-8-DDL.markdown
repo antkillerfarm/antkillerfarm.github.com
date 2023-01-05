@@ -149,11 +149,11 @@ https://github.com/google/protobuf
 
 文档：
 
-https://developers.google.com/protocol-buffers/
+https://developers.google.cn/protocol-buffers/
 
 Tutorials：
 
-https://developers.google.com/protocol-buffers/docs/tutorials
+https://developers.google.cn/protocol-buffers/docs/tutorials
 
 安装：
 
@@ -207,6 +207,12 @@ print test1
 示例代码下载：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/protobuf
+
+---
+
+如果需要传输一个不定长的缓冲区或者非格式化数据的话，可以使用bytes数据类型。
+
+---
 
 参考：
 
