@@ -113,6 +113,12 @@ https://www.zhihu.com/question/39661628
 
 ---
 
+Borland Graphics Interface，或者Turbo C Graphics，是上世纪八九十年代Borland公司出品的Turbo C/Turbo C++/Borland C++等C语言产品中自带的绘图库。因为其简单易用而广受欢迎。
+
+它的现代版本主要有：SDL_bgi/libXbgi/WINBGIm等。
+
+---
+
 Afx前缀是微软MFC一个小组的名称简写。
 
 ---

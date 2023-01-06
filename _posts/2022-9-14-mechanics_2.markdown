@@ -35,6 +35,10 @@ https://zhuanlan.zhihu.com/p/495453408
 
 ---
 
+![](/images/img4/Tanks.jpg)
+
+---
+
 https://mp.weixin.qq.com/s/KuIf0oIkLjMTKp2FgAnpyA
 
 一口气做出12只同款雪糕，强迫症都被食物加工流水线治好了

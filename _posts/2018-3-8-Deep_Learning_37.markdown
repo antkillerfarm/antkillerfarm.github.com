@@ -9,62 +9,6 @@ category: DL
 
 # 无监督/半监督/自监督深度学习
 
-https://mp.weixin.qq.com/s/IsLlzDWnUXe8LVp4Y1Jb_A
-
-35亿张图像！Facebook基于弱监督学习刷新ImageNet基准测试记录
-
-https://mp.weixin.qq.com/s/TEk_i4kEjUqmAqF8LgTVjg
-
-FAIR提出用聚类方法结合卷积网络，实现无监督端到端图像分类
-
-https://mp.weixin.qq.com/s/dSncg1pDHpIFOT4mXrFntA
-
-Yan Lecun自监督学习：机器能像人一样学习吗？ 110页PPT
-
-https://mp.weixin.qq.com/s/W4zwKqkVQN4v-IKzGrkudg
-
-通过传递不变性实现自监督视觉表征学习
-
-https://zhuanlan.zhihu.com/p/30265894
-
-自监督学习近期进展
-
-https://mp.weixin.qq.com/s/qyQjKsgktWv9SihotaQX3w
-
-从顶会看自监督学习最新研究进展
-
-https://mp.weixin.qq.com/s/cTlXMxcpzc7_5NVsTm1jcA
-
-学习一帧，为整段黑白视频上色：谷歌提出自监督视觉追踪模型
-
-https://mp.weixin.qq.com/s/Amr34SdrPZho1GQpFS7WBA
-
-见微知著：语义分割中的弱监督学习
-
-https://mp.weixin.qq.com/s/zOWA1oKbopZJuYIAYYlKTA
-
-港中文-商汤联合论文：自监督语义分割的混合与匹配调节
-
-https://mp.weixin.qq.com/s/5xlSoC5sgzsAwMYMSFCjnw
-
-TextTopicNet:CMU开源无标注高精度自监督模型
-
-https://mp.weixin.qq.com/s/343DfjOvkaozuxNK89V3zQ
-
-前景目标检测的无监督学习
-
-https://mp.weixin.qq.com/s/DwY0oGu-G30Szs-ArI5WaQ
-
-程明明：面向弱监督的图像理解
-
-https://mp.weixin.qq.com/s/LFOljv-Hr6JqyI6TQ2X4sw
-
-半监督学习也能自动化？南大和第四范式提出Auto-SSL
-
-https://mp.weixin.qq.com/s/83xAXrc_H_OExW3vii08hA
-
-谷歌提出新方法：基于单目视频的无监督深度学习结构化
-
 https://mp.weixin.qq.com/s/gr0_p4WFToTrDfy47h-p0A
 
 基于自监督学习的视听觉信息同一性判断
@@ -262,3 +206,6 @@ https://zhuanlan.zhihu.com/p/414173365
 https://mp.weixin.qq.com/s/zzFb55Yj9j3x_pxeXRlOaw
 
 在线试玩，在体感游戏中打败泰森，这位小哥破解了任天堂“拳无虚发”（MoveNet）
+
+# 俄乌战争++++
+

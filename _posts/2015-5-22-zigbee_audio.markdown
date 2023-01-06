@@ -295,3 +295,7 @@ https://mp.weixin.qq.com/s/rM3SkUiQIxsGz9MNIg1skQ
 https://zhuanlan.zhihu.com/p/301860804
 
 如何把树莓派400打造成小霸王游戏机，Retropie包含上万经典老游戏
+
+https://www.zhihu.com/question/339388119
+
+树莓派做网站靠谱不？

@@ -7,126 +7,6 @@ category: DL
 * toc
 {:toc}
 
-# 自动求导（续）
-
-## 实现方式
-
-虽然自动微分的数学原理已经明确，包括正向和反向的数学逻辑和模式。但具体的实现方法则可以有很大的差异。
-
-目前主要有三类方案：
-
-**基本表达式**：基本表达式或者称元素库（Elemental Libraries），基于元素库中封装一系列基本的表达式（如：加减乘除等）及其对应的微分结果表达式，作为库函数。用户通过调用库函数构建需要被微分的程序。
-
-**操作符重载**：操作符重载或者称运算重载（Operator Overloading，OO），利用现代语言的多态特性（例如C++/JAVA/Python等高级语言），使用操作符重载对语言中基本运算表达式的微分规则进行封装。
-
-**源代码变换**（Source Code Transformation，SCT）：源代码变换或者叫做源码转换（Source Code Transformation，SCT）则是通过对语言预处理器、编译器或解释器的扩展，将其中程序表达（如：源码、AST抽象语法树 或 编译过程中的中间表达 IR）的基本表达式微分规则进行预定义，再对程序表达进行分析得到基本表达式的组合关系，最后使用链式法则对上述基本表达式的微分结果进行组合生成对应微分结果的新程序表达，完成自动微分。
-
-## 不可导函数的求导
-
-不可导函数的求导，一般采用泰勒展开的方式。典型的算法有PGD（Proximal Gradient Descent）。
-
-参考：
-
-https://blog.csdn.net/bingecuilab/article/details/50628634
-
-Proximal Gradient Descent for L1 Regularization
-
-## Tape
-
-无论前向还是后向求导，都需要记录前向传播的所有计算过程以及中间结果。这种记录和调用的过程类似于磁带的读写，是一种顺序访问，而非随机访问，故名为Tape方法。
-
-针对动态图的自动求导，TF提出了GradientTape方法。
-
-https://zhuanlan.zhihu.com/p/102207302
-
-tensorflow计算图与自动求导——tf.GradientTape
-
-## 其他
-
-Jacobian-vector product function,JVP
-
-vector-Jacobian product function,VJP
-
-Hessian Vector Product,HVP
-
-https://blog.csdn.net/apache/article/details/113925886
-
-Pytorch,Tensorflow Autograd/AutoDiff nutshells: Jacobian,Gradient,Hessian,JVP,VJP,etc
-
-## 参考
-
-https://mp.weixin.qq.com/s/7Z2tDhSle-9MOslYEUpq6g
-
-从概念到实践，我们该如何构建自动微分库
-
-https://mp.weixin.qq.com/s/bigKoR3IX_Jvo-re9UjqUA
-
-机器学习之——自动求导
-
-https://www.jianshu.com/p/4c2032c685dc
-
-自动求导框架综述
-
-http://txshi-mt.com/2018/10/04/NMT-Tutorial-3b-Autodiff/
-
-自动微分
-
-https://mp.weixin.qq.com/s/WiZ00mkEB7CND3VyIM5Swg
-
-最新《自动微分手册》77页pdf
-
-https://mp.weixin.qq.com/s/xXwbV46-kTobAMRwfKyk_w
-
-自动求导--Deep Learning框架必备技术二三事
-
-https://mp.weixin.qq.com/s/f0xFfA1inOVOdJnSZR4k6Q
-
-自动微分技术
-
-https://zhuanlan.zhihu.com/p/79801410
-
-PyTorch的自动求导机制详细解析，PyTorch的核心魔法
-
-https://zhuanlan.zhihu.com/p/29904755
-
-Autograd:PyTorch中的梯度计算
-
-https://zhuanlan.zhihu.com/p/69294347
-
-PyTorch的Autograd
-
-https://zhuanlan.zhihu.com/p/83172023
-
-Pytorch autograd,backward详解
-
-https://mp.weixin.qq.com/s/PELBuCvu-7KQ33XBtlYfYQ
-
-深度学习中的微分
-
-https://zhuanlan.zhihu.com/p/24709748
-
-矩阵求导术（上）
-
-https://zhuanlan.zhihu.com/p/24863977
-
-矩阵求导术（下）
-
-https://mp.weixin.qq.com/s/2hu6a0wScJedwk3a5aKbIw
-
-自动微分到底是什么？这里有一份自我简述
-
-https://zhuanlan.zhihu.com/p/347385418
-
-AI框架基础技术之自动求导机制 (Autograd)
-
-https://www.zhihu.com/question/497827630
-
-Pytorch的自动微分机制是自动创建一个可以记录所有数据操作的计算图（有向无环图(DAG)）吗？
-
-https://www.cnblogs.com/royhoo/p/Autodiff.html
-
-自动微分（Autodiff）
-
 # 无监督/半监督/自监督深度学习
 
 自监督学习是一种特殊目的的无监督学习。不同于传统的AutoEncoder等方法，仅仅以重构输入为目的，而是希望通过surrogate task学习到和高层语义信息相关联的特征。
@@ -346,3 +226,151 @@ https://mp.weixin.qq.com/s/_VC6PGdCjlhcsndpunIteg
 https://mp.weixin.qq.com/s/qaxzSSDuuscwL5tt0QCQ0Q
 
 破解人类识别文字之谜：对图像中的字母进行无监督学习
+
+https://mp.weixin.qq.com/s/VnOfYuHQQf_q92VHVE3mrQ
+
+谷歌新发布的半监督学习算法降低4倍错误率
+
+https://mp.weixin.qq.com/s/rOj_J1zNYf-Vj9tqLG5KOQ
+
+超强半监督学习MixMatch
+
+https://zhuanlan.zhihu.com/p/66389797
+
+虚拟对抗训练（VAT）：一种新颖的半监督学习正则化方法
+
+https://mp.weixin.qq.com/s/DAtHXSfCpqCAZ0iVsfWkDA
+
+半监督学习理论及其研究进展概述
+
+https://mp.weixin.qq.com/s/eHzNIO-RSY-uf-K-OwtWfw
+
+集多种半监督学习范式为一体，谷歌新研究提出新型半监督方法MixMatch
+
+https://mp.weixin.qq.com/s/3el7bPAeJrTQGfWW29ewuA
+
+新技术“红”不过十年，半监督学习为什么是个例外？
+
+https://mp.weixin.qq.com/s/alnji5kgTxc34O7k78uGiA
+
+无监督学习中的目标检测
+
+https://mp.weixin.qq.com/s/8FtDhpgc-1j3TSL771N-Ng
+
+无标注数据是鸡肋还是宝藏？阿里工程师这样用它
+
+https://mp.weixin.qq.com/s/LdfLd2cZCdpvNYLKHUNwuA
+
+简述无监督图像分类发展现状
+
+https://mp.weixin.qq.com/s/qaLQK3uzaeyp68AbL0aOOQ
+
+怎么在视频标注上省钱？这里有一个面向视频推荐的多视图主动学习
+
+https://mp.weixin.qq.com/s/-cXOUw9zJteVUkbpRMIWtQ
+
+何恺明一作，刷新7项检测分割任务，无监督预训练完胜有监督
+
+https://mp.weixin.qq.com/s/wtHrHFoT2E_HLHukPdJUig
+
+OpenAI科学家一文详解自监督学习
+
+https://mp.weixin.qq.com/s/fy1gUElWVWcOVvzv6fGmdg
+
+谷歌大脑推出视觉领域任务自适应基准：VTAB
+
+https://zhuanlan.zhihu.com/p/80815225
+
+Image-Level弱监督图像语义分割汇总简析
+
+https://mp.weixin.qq.com/s/5czWf0xpqva5pmuvJDn5AQ
+
+Google研究院提出FixMatch，简单粗暴却极其有效的半监督学习方法，附14页PDF下载
+
+https://zhuanlan.zhihu.com/p/108088719
+
+SSL:Self-Supervised Learning(自监督学习)
+
+https://zhuanlan.zhihu.com/p/108625273
+
+Self-Supervised Learning入门介绍
+
+https://zhuanlan.zhihu.com/p/108906502
+
+Self-supervised Learning再次入门
+
+https://mp.weixin.qq.com/s/VvUj0S2OTf8BowGRjDuVag
+
+图解自监督学习，人工智能蛋糕中最大的一块
+
+https://mp.weixin.qq.com/s/df51T24mBVycBeI_M7QqOQ
+
+无标记数据学习, 83ppt
+
+https://mp.weixin.qq.com/s/2FxD6ga6b_WOdAni16wd2Q
+
+自监督学习在计算机视觉应用最新概述，108页ppt Self-supervised learning
+
+https://mp.weixin.qq.com/s/3kwLoojFjJoPz4pUuEVA8g
+
+神奇的自监督场景去遮挡
+
+https://mp.weixin.qq.com/s/eROWWPQkUs91bcv4VsQqSA
+
+NLP中的自监督表示学习，全是动图，很过瘾的
+
+https://mp.weixin.qq.com/s/IsLlzDWnUXe8LVp4Y1Jb_A
+
+35亿张图像！Facebook基于弱监督学习刷新ImageNet基准测试记录
+
+https://mp.weixin.qq.com/s/TEk_i4kEjUqmAqF8LgTVjg
+
+FAIR提出用聚类方法结合卷积网络，实现无监督端到端图像分类
+
+https://mp.weixin.qq.com/s/dSncg1pDHpIFOT4mXrFntA
+
+Yan Lecun自监督学习：机器能像人一样学习吗？ 110页PPT
+
+https://mp.weixin.qq.com/s/W4zwKqkVQN4v-IKzGrkudg
+
+通过传递不变性实现自监督视觉表征学习
+
+https://zhuanlan.zhihu.com/p/30265894
+
+自监督学习近期进展
+
+https://mp.weixin.qq.com/s/qyQjKsgktWv9SihotaQX3w
+
+从顶会看自监督学习最新研究进展
+
+https://mp.weixin.qq.com/s/cTlXMxcpzc7_5NVsTm1jcA
+
+学习一帧，为整段黑白视频上色：谷歌提出自监督视觉追踪模型
+
+https://mp.weixin.qq.com/s/Amr34SdrPZho1GQpFS7WBA
+
+见微知著：语义分割中的弱监督学习
+
+https://mp.weixin.qq.com/s/zOWA1oKbopZJuYIAYYlKTA
+
+港中文-商汤联合论文：自监督语义分割的混合与匹配调节
+
+https://mp.weixin.qq.com/s/5xlSoC5sgzsAwMYMSFCjnw
+
+TextTopicNet:CMU开源无标注高精度自监督模型
+
+https://mp.weixin.qq.com/s/343DfjOvkaozuxNK89V3zQ
+
+前景目标检测的无监督学习
+
+https://mp.weixin.qq.com/s/DwY0oGu-G30Szs-ArI5WaQ
+
+程明明：面向弱监督的图像理解
+
+https://mp.weixin.qq.com/s/LFOljv-Hr6JqyI6TQ2X4sw
+
+半监督学习也能自动化？南大和第四范式提出Auto-SSL
+
+https://mp.weixin.qq.com/s/83xAXrc_H_OExW3vii08hA
+
+谷歌提出新方法：基于单目视频的无监督深度学习结构化

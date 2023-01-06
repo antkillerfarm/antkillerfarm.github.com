@@ -155,6 +155,12 @@ blog的体例介于日记和文章之间。倘以日记来弄，时间长了，�
 
 紫塞秋风
 
+---
+
+https://github.com/scarsty/kys-cpp
+
+金庸群侠传 c++复刻版
+
 ## 轩辕剑系列
 
 2022.6
@@ -252,6 +258,10 @@ https://baijiahao.baidu.com/s?id=1719236308961825085
 https://www.zhihu.com/answer/2245176018
 
 为什么没有人能挽救仙剑奇侠传的口碑？
+
+https://www.zhihu.com/question/302473183
+
+《仙剑奇侠传1》十里坡练成剑神的传说到底是不是真的？
 
 # RTS+
 
