@@ -257,6 +257,14 @@ https://www.zhihu.com/answer/2821127419
 
 ---
 
+浓缩干碗豆汤（Erbswurst），这是一种包裹在类似香肠包装纸中的浓缩汤块，将汤块放入水中煮沸就能得到让人难以下咽的碗豆汤。
+
+https://zhuanlan.zhihu.com/p/384340935
+
+一战士兵每天都吃些什么？——德国和奥匈篇
+
+---
+
 http://bbs.tianya.cn/post-no05-401394-372.shtml
 
 "灵肉"传奇：斯帕姆午餐肉
@@ -296,37 +304,3 @@ https://www.zhihu.com/answer/925610213
 https://mp.weixin.qq.com/s/Lz8QRs7HkZbWFxLqf4h6OA
 
 塑料瓶、玻璃瓶、纸包装，什么饮料用什么包装有啥秘密吗？
-
-https://www.zhihu.com/question/510151356
-
-皮蛋制作过程中用到氢氧化钠，通过渗入蛋壳气孔与其中蛋白质反应凝固，那么可以用其他碱性物替代吗？
-
-https://zhuanlan.zhihu.com/p/564622230
-
-几十年的老厨师不如一勺“高科技”？“海克斯科技”到底有多猛？
-
-https://www.zhihu.com/question/557265767
-
-全国单体面积最大养猪大楼鄂州投用，3700头猪将入住26层高楼，你对此事件有哪些评价？
-
-## 化学工业
-
-https://wallstreetcn.com/articles/250536
-
-巴斯夫原本是它小弟，德国化工产业的代名词：揭秘史前化工巨兽 IG 法本
-
-http://blog.sina.com.cn/s/blog_52f526870102w7xo.html
-
-历经百年兴衰 德国化工三巨头为何屹立不倒（巴斯夫、拜耳、赫希斯特）
-
-http://www.weixinso.com/document/KPyZBb.html
-
-陶氏化学发展史
-
-http://www.pnchina.com/cn/Detail.aspx?id=1361250587
-
-业界经典：陶氏化学Styrofoam之75年
-
-https://new.qq.com/omn/20180819/20180819A011JT.html
-
-起于硝烟的化工帝国：杜邦是怎么与化工行业同呼吸共命运的？

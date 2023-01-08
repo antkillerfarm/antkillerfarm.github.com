@@ -123,6 +123,8 @@ https://mp.weixin.qq.com/s/75b62kYrtxWTCUibyZ5DcQ
 
 直到877年，由于拜占庭帝国的财政困难以及拜占庭海军忙于为修复索菲亚教堂运送石材，锡拉库扎的支援连续几年都非常稀少，导致城中兵力和补给只能抵抗常规的围城攻击。当时西西里上新任的埃米尔抓住时间，在这一年夏天集中全岛的兵力全力攻击锡拉库扎，最终在苦战到878年春天的时候将锡拉库扎攻破。而此时，锡拉库扎已经抵抗了51年的围城战。如果拜占庭的支援一直稳定，他还能继续坚持下去。
 
+威尼斯是罗马残兵建立的，岛上经常被潮汐隔断所以日耳曼人没有追上去，后来罗马遗民就在这建城了。
+
 ![](/images/img3/Constantinople.jpg)
 
 君士坦丁堡地图
@@ -138,6 +140,10 @@ https://www.zhihu.com/question/464603561
 https://www.zhihu.com/question/361727989
 
 日本城堡的攻城防御能力如何？
+
+https://www.zhihu.com/question/547929146
+
+冷兵器时期，把首都建在一个小岛上，小岛跟大陆相连，能保证不被攻破吗？
 
 ---
 
@@ -236,23 +242,3 @@ https://mp.weixin.qq.com/s/oBZzzQAjQNdr3ehnAYnAqA
 https://mp.weixin.qq.com/s/Np8ffiredLID1GLmenPbuw
 
 西村大院，成都的“反向地标”
-
-https://mp.weixin.qq.com/s/aMiIg0V2avxxRSkds_WDCg
-
-石家庄市区里那些比较“老”的建筑
-
-https://mp.weixin.qq.com/s/G0G7ZosZfzREsvixNUE3cw
-
-今天开始，他把凯旋门包了起来
-
-https://mp.weixin.qq.com/s/I2jBgNgHBNKH7DLci4pVTA
-
-古建筑入门：如何判断一座建筑的年代？
-
-https://mp.weixin.qq.com/s/hh7IJVfNifiMt7KBo0-HBw
-
-暴雨后，谁来为破损的山西古建“撑伞”？
-
-https://zhuanlan.zhihu.com/p/430539779
-
-台湾海峡通道最晚什么时候动工？

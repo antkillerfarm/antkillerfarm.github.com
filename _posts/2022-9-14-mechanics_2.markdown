@@ -185,7 +185,41 @@ https://zhuanlan.zhihu.com/p/595696179
 
 # 化学+
 
-## 化学工业（续）
+## 食品工业（续）
+
+https://www.zhihu.com/question/510151356
+
+皮蛋制作过程中用到氢氧化钠，通过渗入蛋壳气孔与其中蛋白质反应凝固，那么可以用其他碱性物替代吗？
+
+https://zhuanlan.zhihu.com/p/564622230
+
+几十年的老厨师不如一勺“高科技”？“海克斯科技”到底有多猛？
+
+https://www.zhihu.com/question/557265767
+
+全国单体面积最大养猪大楼鄂州投用，3700头猪将入住26层高楼，你对此事件有哪些评价？
+
+## 化学工业
+
+https://wallstreetcn.com/articles/250536
+
+巴斯夫原本是它小弟，德国化工产业的代名词：揭秘史前化工巨兽 IG 法本
+
+http://blog.sina.com.cn/s/blog_52f526870102w7xo.html
+
+历经百年兴衰 德国化工三巨头为何屹立不倒（巴斯夫、拜耳、赫希斯特）
+
+http://www.weixinso.com/document/KPyZBb.html
+
+陶氏化学发展史
+
+http://www.pnchina.com/cn/Detail.aspx?id=1361250587
+
+业界经典：陶氏化学Styrofoam之75年
+
+https://new.qq.com/omn/20180819/20180819A011JT.html
+
+起于硝烟的化工帝国：杜邦是怎么与化工行业同呼吸共命运的？
 
 http://www.qdaily.com/articles/18872.html
 
@@ -208,6 +242,26 @@ https://zhuanlan.zhihu.com/p/372974514
 为什么不趁油价下跌大量购入原油并注入油田，以备不时之需？
 
 # 建筑+
+
+https://mp.weixin.qq.com/s/aMiIg0V2avxxRSkds_WDCg
+
+石家庄市区里那些比较“老”的建筑
+
+https://mp.weixin.qq.com/s/G0G7ZosZfzREsvixNUE3cw
+
+今天开始，他把凯旋门包了起来
+
+https://mp.weixin.qq.com/s/I2jBgNgHBNKH7DLci4pVTA
+
+古建筑入门：如何判断一座建筑的年代？
+
+https://mp.weixin.qq.com/s/hh7IJVfNifiMt7KBo0-HBw
+
+暴雨后，谁来为破损的山西古建“撑伞”？
+
+https://zhuanlan.zhihu.com/p/430539779
+
+台湾海峡通道最晚什么时候动工？
 
 https://www.zhihu.com/question/23746900
 

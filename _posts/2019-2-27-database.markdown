@@ -57,6 +57,16 @@ https://mp.weixin.qq.com/s/SsrDWrcmCHXCb3lZFzJC7w
 
 《SQLite Optimization FAQ》另一篇很好的文章。
 
+![](/images/img4/arch2.gif)
+
+https://cstack.github.io/db_tutorial/
+
+Let's Build A Simple Database
+
+https://www.zhihu.com/question/36639223
+
+初学数据库，请推荐比较好的教程?
+
 ## OLTP与OLAP
 
 数据处理大致可以分成两大类：联机事务处理OLTP（On-Line Transaction Processing）、联机分析处理OLAP（On-Line Analytical Processing）。OLTP是传统的关系型数据库的主要应用，主要是基本的、日常的事务处理，例如银行交易。OLAP是数据仓库系统的主要应用，支持复杂的分析操作，侧重决策支持，并且提供直观易懂的查询结果。
