@@ -243,6 +243,10 @@ https://mp.weixin.qq.com/s/moQnarr1U-8v834bNJ10Zw
 
 GPU上的高效softmax近似
 
+https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/
+
+Why GEMM is at the heart of deep learning
+
 ## Tile
 
 矩阵乘法的实现（matmul）是一个简易的三层for循环。这样的循环其实对于缓存是不友好的。

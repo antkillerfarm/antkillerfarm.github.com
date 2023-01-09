@@ -49,6 +49,8 @@ Without gas or without you? – The answer is without you. Without electricity o
 
 即使没有电，我们对自己的信仰之光也不会被熄灭。
 
+今年是从2月24日开始的，没有序言也没有前奏。我们被告知除了投降别无选择，我们回应说除了胜利别无选择。
+
 ---
 
 2022年2月22日 普京签署承认“顿涅茨克共和国”和“卢甘斯克共和国”的命令。
@@ -190,6 +192,10 @@ https://zhuanlan.zhihu.com/p/593679662
 https://zhuanlan.zhihu.com/p/593952619
 
 “乌克兰人也将有尊严地和成功地完成我们的独立和自由战争”——泽连斯基演讲全文和军援简评
+
+https://zhuanlan.zhihu.com/p/595906989
+
+泽连斯基的新年致辞全文
 
 ---
 
