@@ -133,10 +133,6 @@ http://www.mofcom.gov.cn/article/i/jyjl/e/201909/20190902900697.shtml
 
 毕马威：哈萨克斯坦一半财富集中在162人之手
 
-https://www.zhihu.com/question/321165966
-
-如何看待演员泽连斯基2019年乌克兰大选高票当选乌克兰总统？
-
 https://zhuanlan.zhihu.com/p/352232012
 
 他，就是那个在厦门肉食公司门口抱摔春丽的大肌霸

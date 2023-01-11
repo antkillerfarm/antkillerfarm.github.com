@@ -311,3 +311,7 @@ https://zhuanlan.zhihu.com/p/586185397
 https://zhuanlan.zhihu.com/p/588485490
 
 江泽民同志出的五角星五点共圆几何题解
+
+https://www.zhihu.com/question/569170123
+
+一个人能在一个省份只经过一次的情况下把大陆31个省会城市自驾游一遍吗？

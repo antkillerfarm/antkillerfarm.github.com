@@ -19,9 +19,15 @@ category: resource
 
 2.解码速度快。（实际上是梁肇新用汇编重写了部分C代码，比如像素从YUV转换到RGB的代码）
 
+《编程高手箴言》
+
 https://www.zhihu.com/question/20795371
 
 超级解霸为什么当年那么火？后来又是为什么衰落的？
+
+https://www.zhihu.com/question/576538000
+
+当年在Linux上运行Windows程序的豪杰兼容层，是基于Wine二次开发还是另起炉灶的？
 
 ---
 
