@@ -341,6 +341,8 @@ DRN的实现依赖于下图所示的res block：
 
 随着ResNet的应用越来越广泛，其设计也有一定的微调。上图左边是原始的ResNet结构，而右边是新的结构，据说新结构更有利于梯度的更新。
 
+![](/images/img4/Resnet.jpg)
+
 参考：
 
 https://zhuanlan.zhihu.com/p/22447440

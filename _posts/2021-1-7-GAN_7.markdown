@@ -243,6 +243,10 @@ https://mp.weixin.qq.com/s/G50p0SDQLSghTnMAOK6BMA
 
 Diffusion Model
 
+https://zhuanlan.zhihu.com/p/549623622
+
+Diffusion Models：生成扩散模型
+
 # VAE参考资源
 
 https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw
