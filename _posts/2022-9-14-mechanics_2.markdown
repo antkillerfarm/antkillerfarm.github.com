@@ -39,6 +39,10 @@ https://zhuanlan.zhihu.com/p/495453408
 
 ---
 
+乌克兰即将获得捷克“达纳”法国“凯撒”和瑞典弓箭手三款卡车炮。
+
+---
+
 https://mp.weixin.qq.com/s/KuIf0oIkLjMTKp2FgAnpyA
 
 一口气做出12只同款雪糕，强迫症都被食物加工流水线治好了
