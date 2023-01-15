@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GAN（七）——GAN参考资源（3）, Diffusion Model, VAE参考资源
+title:  GAN（七）——GAN参考资源（3）, Flow-based Model, Diffusion Model, Autoregressive Model
 category: GAN & VAE 
 ---
 
@@ -193,11 +193,89 @@ https://mp.weixin.qq.com/s/imOFQL01RaXUuZwew1izzg
 
 基于GAN来做低光照图像增强，EnlightenGAN论文解读
 
+# Flow-based Model
+
+![](/images/img4/flow.png)
+
+Flow-based Model是GAN和VAE之外的另一大类生成模型方法。
+
+从表面来看，Flow-based Model和VAE非常类似，无非把Encoder和Decoder换成了Flow和它的Inverse，但是实际上两者不仅数学原理不同，具体的训练方法也有极大差异。上图说是照骗也不为过。
+
+以下内容主要参考了李宏毅老师的课件：
+
+http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2019/Lecture/FLOW%20(v7).pdf
+
+还有以下笔记：
+
+http://www.seeprettyface.com/pdf/Note_Flow.pdf
+
+![](/images/img4/flow_2.png)
+
+Flow-based Model的训练过程是用图片x通过网络$$f(x)$$生成随机数z。由于这个经过巧妙构造的$$f(x)$$具有可直接得到的可逆函数$$f^{-1}(z)$$，所以在推理阶段，无需任何额外处理，即可直接由$$f^{-1}(z)$$，从随机数z得到图片x。
+
+随机数z可以是任意分布，但通常为了理论推导的简单，而使用正态分布，即所谓的Normalizing Flow。
+
+
+
+Flow-based Model的理论不算复杂，难点主要在于如何构造可逆的函数G。目前已经有了一些成熟的构造方法，但相对于网络结构的千变万化，构造方法的种类就少的太多了。主流的大概也就是NICE、RealNVP和GLOW。
+
+最初的NICE实现了从A分布到高斯分布的可逆求解；后来RealNVP实现了从A分布到条件非高斯分布的可逆求解；而最新的GLOW，实现了从A分布到B分布的可逆求解，其中B分布可以是与A分布同样复杂的分布，这意味着给定两堆图片，GLOW能够实现这两堆图片间的任意转换。
+
+
+
+![](/images/img4/MAF-vs-IAF.png)
+
+Masked Autoregressive Flow
+
+Inverse Autoregressive Flow
+
+参考：
+
+https://zhuanlan.zhihu.com/p/44304684
+
+Normalizing Flow小结
+
+https://www.jianshu.com/p/66393cebe8ba
+
+标准化流(Normalizing Flow)教程（一）
+
+https://www.jianshu.com/p/db72c38233f3
+
+标准化流(Normalizing Flow)（二）：现代标准化流技术
+
+https://mp.weixin.qq.com/s/oUQuHvy0lYco4HsocqvH3Q
+
+Normalizing Flows入门(上)
+
+https://mp.weixin.qq.com/s/XtlK3m-EHgFRKrtcwJHZCw
+
+Normalizing Flows入门(中)
+
+https://mp.weixin.qq.com/s/TRgTFBz_NmBJygQjOYwdqw
+
+GAN/VAE地位难保？Flow在零样本识别任务上大显身手
+
+https://mp.weixin.qq.com/s/xMO9jhzQH6P5NEA_D-uyIA
+
+这个模型的脑补能力比GAN更强，ETH提出新型超分辨率模型SRFlow
+
+https://zhuanlan.zhihu.com/p/351479696
+
+基于流的生成模型-Flow based generative models
+
+https://mp.weixin.qq.com/s/KrvW16GAxSGAPOCYYKbGUg
+
+生成模型：标准化流（Normalized Flow）
+
+https://lilianweng.github.io/posts/2018-10-13-flow-models/
+
+Flow-based Deep Generative Models
+
 # Diffusion Model
 
 Diffusion Model也是一类生成模型方法。
 
-![](/images/img4/FLOW.png)
+![](/images/img4/flow.png)
 
 Diffusion Model主要通过采样的方法，不断逼近模型的数据分布，从而生成数据。基本原理和VAE一样仍然是Markov Chain Monte Carlo。
 
@@ -247,108 +325,26 @@ https://zhuanlan.zhihu.com/p/549623622
 
 Diffusion Models：生成扩散模型
 
-# VAE参考资源
+## Autoregressive Model
 
-https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw
+AR vs AE的相关内容在《Attention（六）》中已有描述，这里不再赘述。
 
-变分U-Net，可按条件独立变换目标的外观和形状
+Autoregressive Model实际上是最古老的生成模型，比GAN/VAE/Flow/Diffusion都要古老。
 
-https://zhuanlan.zhihu.com/p/88750084
+![](/images/img4/gen.jpg)
 
-从自编码器（AE）到变分自编码器（VAE）再到条件变分自编码器（CVAE）：一份小白入门基础总结
+这里以PixelCNN为例介绍一下AR Model的原理。
 
-https://mp.weixin.qq.com/s/ZlLuhu08m_RnD-h86df8sA
+参考：
 
-清华大学提出SA-VAE框架，通过单样本/少样本学习生成任意风格的汉字
+https://zhuanlan.zhihu.com/p/591881660
 
-https://mp.weixin.qq.com/s/51Xu7osdVa-fCV-IZbHdCA
-
-Wasserstein自编码器
-
-https://mp.weixin.qq.com/s/0HK026K6jru10VscvT2rOQ
-
-哈佛大学提出变分注意力：用VAE重建注意力机制
-
-https://mp.weixin.qq.com/s/790wbFnxkNbNRampiV-0MQ
-
-谷歌大脑提出对抗正则化方法，显著改善自编码器的泛化和表征学习能力
-
-https://mp.weixin.qq.com/s/iOdh1iIP0GIYe4gRDE0z-g
-
-漫谈概率PCA和变分自编码器
-
-https://mp.weixin.qq.com/s/pBnKNRc56HhBWvrYaZjGdw
-
-稳定、表征丰富的球面变分自编码器
-
-https://mp.weixin.qq.com/s/QOdQKdLolR-YTihzaA81yw
-
-黄怀波 ：自省变分自编码器理论及其在图像生成上的应用
-
-https://mp.weixin.qq.com/s/FqY9I02blg3S8_K50B7czQ
-
-UC伯克利提出小批量MH测试：令MCMC方法在自编码器中更强劲
-
-https://zhuanlan.zhihu.com/p/48985202
-
-谈谈变分自编码器背后的数学知识
-
-https://mp.weixin.qq.com/s/fYR2dS3wCMMVk3s9O4nqUw
-
-自编码表示学习 25页最新进展综述，90篇参考文献
-
-https://zhuanlan.zhihu.com/p/52974147
-
-VAE的细节：$$p(x \mid z)$$的噪音，与$$p(z \mid x)$$的编码坍塌
-
-https://mp.weixin.qq.com/s/uNjF6NxVRs_gAKAmxRpThQ
-
-华为美研所提出自动编码变换网络AET：用无监督逼近全监督效果
-
-https://zhuanlan.zhihu.com/p/60330303
-
-用于协同过滤的变分自编码器论文引介
-
-https://mp.weixin.qq.com/s/CSx7dnqPjVDAvM6ena-FTw
-
-从俄罗斯方块到星际2，全都用得上：DeepMind无监督分割大法，为游戏而生
-
-https://mp.weixin.qq.com/s/XMLYjw_wN-M8jluczkbcyw
-
-一种考虑缓和KL消失的简单VAE训练方法
-
-https://mp.weixin.qq.com/s/0coPJFrW7anW7QuqjPBt3g
-
-深度生成模型在信号处理领域的应用
-
-https://mp.weixin.qq.com/s/3ZHlWlO0FdnQTnskcrz2IA
-
-生成式模型入门：训练似然模型的技巧
-
-https://mp.weixin.qq.com/s/KtKYk08xEqwA43Phxw2-_w
-
-基于自编码器的通用性文本表征
-
-https://mp.weixin.qq.com/s/hwb3eRWbwa9weCWz1ypOxw
-
-VAE系解纠缠：从VAE到βVAE，再到β-TCVAE
+通俗形象地分析比较生成模型（GAN/VAE/Flow/Diffusion/AR）
 
 https://mp.weixin.qq.com/s/YZcw5pnHzuACSvEmGZHnEQ
 
 自回归模型:PixelCNN
 
-https://mp.weixin.qq.com/s/yB7tq2vcBpVBnM-j9PgRsw
+https://www.microsoft.com/en-us/research/uploads/prod/2022/12/Generative-Models-for-TTS.pdf
 
-人脸合成效果媲美StyleGAN，而它是个自编码器
-
-https://mp.weixin.qq.com/s/J59d1K5WX-wnzhws3k60AQ
-
-万字长文带你了解变分自编码器VAEs
-
-https://mp.weixin.qq.com/s/g-OPU4vp66HWcpqjdD2bBg
-
-使用PyTorch从理论到实践理解变分自编码器VAE
-
-https://mp.weixin.qq.com/s/8zi0JrloxuRdHcRm1dzCEQ
-
-利用VAE和LSTM生成时间序列
+Generative Models for TTS

@@ -219,6 +219,10 @@ https://zhuanlan.zhihu.com/p/456417172
 
 关于实时渲染和图形API的一些学习资料收录
 
+https://zhuanlan.zhihu.com/p/598557707
+
+Vulkan渲染流程总结
+
 ## OpenMax
 
 一个免费的跨平台抽象软件层，用于加速在嵌入式和移动设备上的多媒体应用程序中捕获和呈现音频、视频和图像。

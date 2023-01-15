@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  VAE（三）——VAE vs GAN, Normalizing Flow
+title:  VAE（三）——VAE vs GAN, VAE参考资源
 category: GAN & VAE 
 ---
 
@@ -257,44 +257,104 @@ https://zhuanlan.zhihu.com/p/91434658
 
 VQ-VAE解读
 
-# Normalizing Flow
+# VAE参考资源
 
-Normalizing Flow是GAN和VAE之外的另一大类生成模型方法。
+https://mp.weixin.qq.com/s/6G1y2xMclUyzz_GQzKDrIw
 
-参考：
+变分U-Net，可按条件独立变换目标的外观和形状
 
-https://zhuanlan.zhihu.com/p/44304684
+https://zhuanlan.zhihu.com/p/88750084
 
-Normalizing Flow小结
+从自编码器（AE）到变分自编码器（VAE）再到条件变分自编码器（CVAE）：一份小白入门基础总结
 
-https://www.jianshu.com/p/66393cebe8ba
+https://mp.weixin.qq.com/s/ZlLuhu08m_RnD-h86df8sA
 
-标准化流(Normalizing Flow)教程（一）
+清华大学提出SA-VAE框架，通过单样本/少样本学习生成任意风格的汉字
 
-https://www.jianshu.com/p/db72c38233f3
+https://mp.weixin.qq.com/s/51Xu7osdVa-fCV-IZbHdCA
 
-标准化流(Normalizing Flow)（二）：现代标准化流技术
+Wasserstein自编码器
 
-https://mp.weixin.qq.com/s/oUQuHvy0lYco4HsocqvH3Q
+https://mp.weixin.qq.com/s/0HK026K6jru10VscvT2rOQ
 
-Normalizing Flows入门(上)
+哈佛大学提出变分注意力：用VAE重建注意力机制
 
-https://mp.weixin.qq.com/s/XtlK3m-EHgFRKrtcwJHZCw
+https://mp.weixin.qq.com/s/790wbFnxkNbNRampiV-0MQ
 
-Normalizing Flows入门(中)
+谷歌大脑提出对抗正则化方法，显著改善自编码器的泛化和表征学习能力
 
-https://mp.weixin.qq.com/s/TRgTFBz_NmBJygQjOYwdqw
+https://mp.weixin.qq.com/s/iOdh1iIP0GIYe4gRDE0z-g
 
-GAN/VAE地位难保？Flow在零样本识别任务上大显身手
+漫谈概率PCA和变分自编码器
 
-https://mp.weixin.qq.com/s/xMO9jhzQH6P5NEA_D-uyIA
+https://mp.weixin.qq.com/s/pBnKNRc56HhBWvrYaZjGdw
 
-这个模型的脑补能力比GAN更强，ETH提出新型超分辨率模型SRFlow
+稳定、表征丰富的球面变分自编码器
 
-https://zhuanlan.zhihu.com/p/279121569
+https://mp.weixin.qq.com/s/QOdQKdLolR-YTihzaA81yw
 
-Flow-based Generative Model流的生成模型
+黄怀波 ：自省变分自编码器理论及其在图像生成上的应用
 
-https://mp.weixin.qq.com/s/KrvW16GAxSGAPOCYYKbGUg
+https://mp.weixin.qq.com/s/FqY9I02blg3S8_K50B7czQ
 
-生成模型：标准化流（Normalized Flow）
+UC伯克利提出小批量MH测试：令MCMC方法在自编码器中更强劲
+
+https://zhuanlan.zhihu.com/p/48985202
+
+谈谈变分自编码器背后的数学知识
+
+https://mp.weixin.qq.com/s/fYR2dS3wCMMVk3s9O4nqUw
+
+自编码表示学习 25页最新进展综述，90篇参考文献
+
+https://zhuanlan.zhihu.com/p/52974147
+
+VAE的细节：$$p(x \mid z)$$的噪音，与$$p(z \mid x)$$的编码坍塌
+
+https://mp.weixin.qq.com/s/uNjF6NxVRs_gAKAmxRpThQ
+
+华为美研所提出自动编码变换网络AET：用无监督逼近全监督效果
+
+https://zhuanlan.zhihu.com/p/60330303
+
+用于协同过滤的变分自编码器论文引介
+
+https://mp.weixin.qq.com/s/CSx7dnqPjVDAvM6ena-FTw
+
+从俄罗斯方块到星际2，全都用得上：DeepMind无监督分割大法，为游戏而生
+
+https://mp.weixin.qq.com/s/XMLYjw_wN-M8jluczkbcyw
+
+一种考虑缓和KL消失的简单VAE训练方法
+
+https://mp.weixin.qq.com/s/0coPJFrW7anW7QuqjPBt3g
+
+深度生成模型在信号处理领域的应用
+
+https://mp.weixin.qq.com/s/3ZHlWlO0FdnQTnskcrz2IA
+
+生成式模型入门：训练似然模型的技巧
+
+https://mp.weixin.qq.com/s/KtKYk08xEqwA43Phxw2-_w
+
+基于自编码器的通用性文本表征
+
+https://mp.weixin.qq.com/s/hwb3eRWbwa9weCWz1ypOxw
+
+VAE系解纠缠：从VAE到βVAE，再到β-TCVAE
+
+https://mp.weixin.qq.com/s/yB7tq2vcBpVBnM-j9PgRsw
+
+人脸合成效果媲美StyleGAN，而它是个自编码器
+
+https://mp.weixin.qq.com/s/J59d1K5WX-wnzhws3k60AQ
+
+万字长文带你了解变分自编码器VAEs
+
+https://mp.weixin.qq.com/s/g-OPU4vp66HWcpqjdD2bBg
+
+使用PyTorch从理论到实践理解变分自编码器VAE
+
+https://mp.weixin.qq.com/s/8zi0JrloxuRdHcRm1dzCEQ
+
+利用VAE和LSTM生成时间序列

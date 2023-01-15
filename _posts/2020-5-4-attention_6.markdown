@@ -96,7 +96,7 @@ $$\text{backward:}p(x)=\prod_{t=T}^1p(x_t|x_{>t})$$
 
 - 优点：对自然语言生成任务(NLG)友好，天然符合生成式任务的生成过程。这也是为什么GPT能够编故事的原因。
 
-**AE**:Autoencoding Language Modeling，又叫自编码语言。通过上下文信息来预测当前被mask的token，代表有BERT，Word2Vec(CBOW)。
+**AE**:Autoencoding Language Modeling，又叫自编码语言模型。通过上下文信息来预测当前被mask的token，代表有BERT，Word2Vec(CBOW)。
 
 $$p(x)=\prod_{x\in Mask}p(x_t|context)$$
 

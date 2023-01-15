@@ -171,6 +171,10 @@ https://www.zhihu.com/question/541985721
 
 如何评价Alexey Bochkovskiy团队提出的YoloV7？
 
+https://zhuanlan.zhihu.com/p/598566644
+
+YOLOv8深度详解
+
 # One-stage vs. Two-stage
 
 虽然我们在概述一节已经提到了One-stage和Two-stage的概念。但鉴于这个概念的重要性，在介绍完主要的目标检测网络之后，很有必要再次总结一下。

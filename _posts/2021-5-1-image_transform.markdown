@@ -9,6 +9,12 @@ category: CV
 
 # 图像变换
 
+## 专栏
+
+http://www.seeprettyface.com/research_notes.html
+
+一个研究人脸生成技术的专栏
+
 ## 语义分割逆变换
 
 ![](/images/img2/SCAN.png)
