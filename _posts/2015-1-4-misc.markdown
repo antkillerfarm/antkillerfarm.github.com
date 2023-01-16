@@ -212,6 +212,10 @@ https://mp.weixin.qq.com/s/6MRi_UEcMybKn4YXi6qWng
 
 操作系统中锁的实现原理
 
+https://www.zhihu.com/question/332113890
+
+互斥锁（mutex）的底层原理是什么？操作系统具体是怎么实现的？？
+
 https://mp.weixin.qq.com/s/yHSraIAYsjYWPaGXA3PijA
 
 一张图读懂非公平锁与公平锁

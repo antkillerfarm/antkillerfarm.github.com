@@ -1,0 +1,194 @@
+---
+layout: post
+title:  硬件杂谈（二）, 硬盘, 内存
+category: Chip 
+---
+
+* toc
+{:toc}
+
+# 硬件杂谈
+
+# 海思Hi3531
+
+http://www.ebaina.com/bbs/forum-97-3.html
+
+# AMBA
+
+AMBA：Advanced Microcontroller Bus Architecture
+
+AXI：Advanced eXtensible Interface
+
+AHB：Advanced High-performance Bus
+
+ASB：Advanced System Bus
+
+APB：Advanced Peripheral Bus
+
+## Others
+
+SERDES是英文SERializer(串行器)/DESerializer(解串器)的简称。
+
+在一个独立的信道上，每次同时传输1bit为串口，每次同时传输多个bit为并口。
+
+标准的串口如XAUI，HDMI等，每对差分线组成一个信道（channel）,每个信道是否能成功传输并不取决于其他信道。
+
+而DDR这种，10根线组成一个信道，每次同时传8bit，错了某一bit只能重新传，便是标准并口。
+
+但前述串口本身由于包含多个信道，有一些并行的意思，因此也被称为并用多组差分串行。
+
+---
+
+https://mp.weixin.qq.com/s/ZexnsNmqsD2yq-7YNASohw
+
+数模转换器的基本原理及DAC类型简介
+
+https://mp.weixin.qq.com/s/1XmbkoRkXUtmR0pnENhfGA
+
+基于高速DDFS的高精度DAC的设计
+
+https://mp.weixin.qq.com/s/aavlfxII5PW_RrsF6nS99g
+
+模-数转换(A/D)技术
+
+https://mp.weixin.qq.com/s/Coz81Zidz_LaSYkcErJsOQ
+
+NAND Flash与NOR Flash究竟有何不同
+
+http://mp.weixin.qq.com/mp/homepage?__biz=MzUyMTA2OTM1MA==&hid=4&sn=192b1f4e49979e13c7df491725415d06&scene=18
+
+一个OLED方面的公众号
+
+https://mp.weixin.qq.com/s/lBRHV1mnO1JMwlnO_rQjxA
+
+LCD与OLED之争：谁才是真正的赢家？
+
+https://zhuanlan.zhihu.com/p/48343011
+
+芯片中的数学——均衡器EQ和它在高速外部总线中的应用。这个blog主要介绍了眼图的概念。
+
+https://mp.weixin.qq.com/s/oCBSGVtGSwq9c59rcVc2-A
+
+无线接收器的百年创新及架构发展史
+
+https://mp.weixin.qq.com/s/KPmkphlJFv5dScLlhAigEw
+
+新型存储器技术盘点
+
+https://zhuanlan.zhihu.com/p/54517790
+
+内存条应该怎么插？为什么要从远端插起？不遵循为啥还可以work？有啥副作用？
+
+https://mp.weixin.qq.com/s/AJA01Cvm3k2HntUUAg9FPg
+
+关于“陶瓷电容”，你不知道的事
+
+https://mp.weixin.qq.com/s/NKWvIJ7-J_IugnAgUehVIg
+
+博通要卖掉的射频前端，是个怎样的市场？
+
+# 硬盘
+
+早期，磁带和硬盘驱动器的面密度相似。但由于的市场规模和硬盘销售收入的增加，为更大规模的研发工作提供了资金，这使得他们的制造商能够更积极地扩大存储密度。因此，大容量硬盘驱动器的当前面密度约为最新磁带驱动器的100倍。
+
+相比之下，磁带存储设备目前的区域密度远低于超顺磁极限。因此，磁带的摩尔定律可以持续十年或更长时间，而不会遇到基础物理学方面的障碍。
+
+参考：
+
+https://mp.weixin.qq.com/s/Fzu5YmWYxEohDJjmcGGjhQ
+
+为什么说，数据存储的未来属于磁带
+
+---
+
+随着硬件设备存储介质的改变和性能不断的提升，存储设备处理IO的能力越来越快，传统的旋转设备HDD单个IO需要几毫秒到十几毫秒不等，而如今的高性能的NVMe SSD已经降低到了微秒级别。
+
+因此也有了一些专门针对SSD硬盘的存储软件框架。
+
+https://mp.weixin.qq.com/s/d8aoAFi_lpFoZZCZsPij_g
+
+SPDK概览
+
+---
+
+千年盘，是美国Millenniata的公司将推出新型磁盘存储技术，这种光盘新技术可以将数据在室温下存储1000年，使用这种技术的特殊光盘叫Millennial Disc。
+
+---
+
+https://zhuanlan.zhihu.com/p/34858149
+
+128G的固态硬盘为什么有的标120G，有的标100G？固态硬盘容量背后的秘密
+
+https://zhuanlan.zhihu.com/p/38847308
+
+为什么硬盘转速是5400或者7200这么奇怪的数字？7200转的硬盘一定比5400快吗？
+
+https://www.zhihu.com/answer/470917953
+
+Windows等操作系统是如何做到复制几G文件不出错的？
+
+https://zhuanlan.zhihu.com/p/53547723
+
+一篇文章告诉你SLC、MLC、TLC和QLC究竟有啥区别?
+
+https://zhuanlan.zhihu.com/p/92712620
+
+SLC、MLC、TLC、QLC究竟有什么不同
+
+https://zhuanlan.zhihu.com/p/71267390
+
+固态硬盘和u盘的区别
+
+https://mp.weixin.qq.com/s/7athL-OWrFSxMwxqvR73TA
+
+为了让你的硬盘资源能完好地传给曾曾曾孙，科学家想到了这些办法
+
+https://mp.weixin.qq.com/s/ChAfcT5xDgExiEXytTfynw
+
+关于存储技术的最强入门科普
+
+https://www.sohu.com/a/394211914_444417
+
+SMR硬盘到底能用不？
+
+# 内存
+
+https://mp.weixin.qq.com/s/HOhBNZfOf5xQIFLYQ5ntCw
+
+内存的故事
+
+https://mp.weixin.qq.com/s/qhR0St3CLWEYqV_kl_oXAw
+
+Rambus之战
+
+https://mp.weixin.qq.com/s/gh9cL0BPzCQ2JFOoXdtqyg
+
+内存的技术发展
+
+https://mp.weixin.qq.com/s/kHPTZlDtjqtr0Vi-5OWycQ
+
+金士顿的传说
+
+https://zhuanlan.zhihu.com/p/57780996
+
+内存延迟：因与果
+
+https://mp.weixin.qq.com/s/XcC18tulYdnwqlusg2QrxA
+
+嵌入式内存STT-MRAM趋势分析
+
+https://zhuanlan.zhihu.com/p/62234511
+
+DDR3 vs DDR4?为什么说内存是个很傻的设备？DDR5在哪里？
+
+https://zhuanlan.zhihu.com/p/40601422
+
+双通道、四通道内存对游戏重要吗？
+
+https://mp.weixin.qq.com/s/9skWM6yirEupLj2wdpgqkA
+
+带你深入理解内存对齐最底层原理
+
+https://mp.weixin.qq.com/s/Mb7iSXfrOtettVn-Sz8QUA
+
+主板上这家伙，要当CPU和内存的中间商！

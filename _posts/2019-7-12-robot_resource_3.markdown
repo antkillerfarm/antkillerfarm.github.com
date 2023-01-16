@@ -147,6 +147,12 @@ https://www.zhihu.com/question/292721850
 
 ## 参考
 
+![](/images/img5/auto.jpg)
+
+1967年，英国哲学家菲利帕·福特提出过电车难题：一个疯子把五个无辜的人绑在电车轨道上。一辆失控的电车朝他们驶来，并且片刻后就要碾压到他们。幸运的是，你可以拉一个拉杆，让电车开到另一条轨道上。但是还有一个问题，那个疯子在那另一条轨道上也绑了一个人。考虑以上状况，你应该拉拉杆吗？
+
+---
+
 https://www.zhihu.com/question/404870865
 
 自动驾驶什么时候才会凉凉，估计还要多久？
@@ -392,19 +398,3 @@ ADAS系统横纵向控制策略之碰撞时间计算方法
 https://mp.weixin.qq.com/s/ZEvNniUUzcsCbU-UpzxtEA
 
 ADAS高级辅助驾驶视觉系统（Advanced Driver Assistant System）
-
-https://zhuanlan.zhihu.com/p/73073753
-
-基于深度学习的多传感器标定
-
-https://mp.weixin.qq.com/s/m4KtRGoBgqcgF8ZBMjG6Hg
-
-深层卷积神经网络在路面分类中的应用
-
-https://mp.weixin.qq.com/s/nQq2tzK_2y2lEt9H14zdwA
-
-自动驾驶中的决策规划算法概述
-
-https://mp.weixin.qq.com/s/yIFgwxU-DI6NBogfmxqqKQ
-
-基于深度学习的计算机视觉技术在无人驾驶中的应用

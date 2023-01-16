@@ -400,3 +400,11 @@ https://mp.weixin.qq.com/s/7EKBehM3Dd0Oq7HTkjrm0g
 https://zhuanlan.zhihu.com/p/52322904
 
 相机模型与标定
+
+## VIO
+
+VIO（Visual-Inertial Odometry）：以视觉和IMU融合的方法实现定位的里程计。
+
+https://www.zhihu.com/question/325242594
+
+视觉slam和vio是什么关系？

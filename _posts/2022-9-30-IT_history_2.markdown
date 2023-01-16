@@ -129,6 +129,10 @@ https://www.zhihu.com/question/397027038
 
 Intel为什么不取消AMD的X86架构授权？
 
+https://www.zhihu.com/question/279465770
+
+286电脑究竟有多慢？
+
 # 上古软件开发
 
 https://mp.weixin.qq.com/s/movz5aesYdZZZHle-hHRIw
@@ -262,6 +266,10 @@ https://mp.weixin.qq.com/s/2IwITN2jwayREJMZRobGZw
 https://mp.weixin.qq.com/s/Me5y9NGYcyKjG4Mi-K6P9w
 
 中国黑客关系图
+
+https://zhuanlan.zhihu.com/p/599318774
+
+旧版红旗Linux桌面系统收集
 
 # 区块链参考资源+
 

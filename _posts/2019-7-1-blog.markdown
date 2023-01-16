@@ -13,6 +13,8 @@ blog的体例介于日记和文章之间。倘以日记来弄，时间长了，�
 
 ---
 
+2023.1.16 文章数达到600篇。添加img5。可命名为v6.5。
+
 2022.12.19 之前使用的Github Issue评论系统看起来不爽，干脆取消，反正也没啥人评论。基于Github Issue的评论系统主要有gitalk和gitment。其中后者已经不再维护了。gitalk试用了一下，也就那样了。
 
 2022.9.28 添加DL Framework分类。
@@ -304,21 +306,3 @@ https://www.sohu.com/a/299902957_100163351
 https://www.zhihu.com/question/512061573
 
 电竞女主播Miss透露早期经常吃馊米饭，以前的电竞选手真的这么苦吗？
-
-# 数值计算
-
-两个数值趋近于无穷小且相近的数字相除的结果应该大约为1，但却因为分母接近为0而变成无穷。这时可以直接取对数执行运算，其结果在数值上会较为稳定。
-
----
-
-https://blog.csdn.net/HiWangWenBing/article/details/119772047
-
-数学建模、科学计算、数值计算的关系
-
-https://blog.csdn.net/HiWangWenBing/article/details/119790035
-
-误差的种类、误差传播、误差分析
-
-https://www.zhihu.com/question/444819295
-
-控制周期越短，控制效果是否越好？

@@ -241,6 +241,120 @@ https://zhuanlan.zhihu.com/p/513872467
 
 面向ASIC设备的编译器框架：TVM or MLIR？
 
+# 编译原理+
+
+## PPCG
+
+Polyhedral Parallel Code Generation
+
+代码：
+
+https://github.com/Meinersbur/ppcg
+
+## PLUTO
+
+An automatic parallelizer and locality optimizer for affine loop nests
+
+官网：
+
+http://pluto-compiler.sourceforge.net/
+
+参考：
+
+https://www.zhihu.com/question/329294933
+
+如何评价PLUTO编译器？
+
+## ANTLR
+
+ANTLR—Another Tool for Language Recognition，其前身是PCCTS，它为包括Java，C++，C#,python在内的语言提供了一个通过语法描述来自动构造自定义语言的识别器（recognizer），编译器（parser）和解释器（translator）的框架。
+
+官网：
+
+http://www.antlr.org/
+
+参考：
+
+http://yuzhouwan.com/posts/55501/
+
+Antlr
+
+https://www.ibm.com/developerworks/cn/java/j-lo-antlr/index.html
+
+使用Antlr开发领域语言
+
+## MPS
+
+MPS是jetbrains推出的用于构建DSL的工具。
+
+官网：
+
+https://www.jetbrains.com/mps/
+
+## 参考
+
+x86一开始并没有使用太多的通用寄存器，原因之一（注意，只是之一）是当时的编译器无力进行寄存器分配，让编译器自动决定程序中众多变量哪些应该装入寄存器哪些应该换出、哪些变量应该映射到同一个寄存器上，并不是一件易事，JVM采用堆栈结构的原因之一就是不信任编译器的寄存器分配能力，转而使用堆栈结构，躲开寄存器分配的难题。
+
+到80年代早期，IBM的G. J. Chaitin公开了他们的图染色寄存器分配算法之后，编译器的分配能力获得长足进步，形成了现在这样的编译器主导的寄存器分配格局。
+
+https://www.zhihu.com/question/24551779
+
+为什么ARM和MIPS那么多寄存器，x86那么少？
+
+---
+
+https://mp.weixin.qq.com/s/MqfteZBSWbnBpHbFYw8Eqw
+
+如何编写一个简单的Python编译器
+
+https://zhuanlan.zhihu.com/p/28637279
+
+使用LLVM+PLY实现一个C语言子集的玩具编译器
+
+https://mp.weixin.qq.com/s/7wmBsJgPnOtPXcYaoQd1qA
+
+基于LLVM的源码级依赖分析方案的设计与实现
+
+https://mp.weixin.qq.com/s/vOJPxzH_1SUyXzNeE85zHQ
+
+编译器入门：没有siri的那些年，我们如何实现人机对话？
+
+https://zhuanlan.zhihu.com/p/66793637
+
+A Tour to LLVM IR（上）
+
+https://zhuanlan.zhihu.com/p/66909226
+
+A Tour to LLVM IR（下）
+
+https://mp.weixin.qq.com/s/4FJzxPyCmakjIU-9xlQmJQ
+
+阁下可知文言编程之精妙？CMU本科生开源文言文编程语言，数天2K星
+
+https://mp.weixin.qq.com/s/7PH8o1tbjLsM4-nOnjbwLw
+
+Java即时编译器原理解析及实践
+
+https://mp.weixin.qq.com/s/s2W_VVlS-UC8PaaVYJlNgw
+
+浅谈编译过程
+
+https://mp.weixin.qq.com/s/j8_8QwFnyOr66m9aekor1g
+
+用JS解释JS！详解AST及其应用
+
+https://zhuanlan.zhihu.com/p/471250907
+
+从零开始，写个编译器！
+
+https://www.zhihu.com/question/34619258
+
+现代c++编译器对临时对象做了怎样的优化？
+
+https://zhuanlan.zhihu.com/p/474324656
+
+我对深度学习编译器和框架的认识
+
 # Build tools+
 
 ## OkBuck

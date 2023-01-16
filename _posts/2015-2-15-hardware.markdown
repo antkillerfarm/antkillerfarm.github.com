@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  硬件杂谈
-category: technology 
+category: Chip 
 ---
 
 * toc
@@ -134,20 +134,6 @@ NorFLASH使用方便，易于连接，可以在芯片上直接运行代码（eXe
 
 NandFLASH强调更高的性能，更低的成本，更小的体积，更长的使用寿命。这使NandFLASH很擅于存储纯资料或数据等，在嵌入式系统中用来支持文件系统。NandFLASH存在坏块问题。
 
-# 海思Hi3531
-
-http://www.ebaina.com/bbs/forum-97-3.html
-
-# AMBA
-
-AMBA：Advanced Microcontroller Bus Architecture
-
-AHB：Advanced High-performance Bus
-
-ASB：Advanced System Bus
-
-APB：Advanced Peripheral Bus
-
 # 硬件调试器
 
 ## Lauterbach TRACE32
@@ -197,3 +183,47 @@ OpenOCD（Open On-Chip Debugger）是一款开源软件，最初是Dominic Rath�
 https://zhuanlan.zhihu.com/p/41517198
 
 跟我一起学OpenOCD
+
+## USB
+
+![](/images/img4/lightning.webp)
+
+Lightning的8针接口只有一条用于电流输送，最大电流也不会超过3.3A，4条数据传输线最高也只能实现480Mbps的传输速度，这些设计上的缺陷都不是后期优化可以解决的。
+
+![](/images/img4/usb.webp)
+
+过流保护有个前提条件，可以说是防君子不防小人的。不知道大家注意没有，被保护的只有VBUS，没有保护数据信号D+/D-。What if攻击的是数据信号呢？
+
+USB Killer利用VBUS为电容充电到200V，然后反向将它们释放在数据信号上，瞬间击穿了PCH南桥芯片，造成永久的损坏。
+
+https://mp.weixin.qq.com/s/pL_98GmL2qkvt71hw6A-DA
+
+终结混乱，USB族谱终极整理！
+
+https://mp.weixin.qq.com/s/EDv1ArAG5s8al33FoBfmfQ
+
+USB的前世今生
+
+https://zhuanlan.zhihu.com/p/65478149
+
+为什么USB Type C电缆正反插都可以？它是怎么做到的？
+
+https://mp.weixin.qq.com/s/dk_sl3OvPwvnRWPpPJ4D_Q
+
+USB3.1 Type-C高速接口设计指南
+
+https://zhuanlan.zhihu.com/p/153254485
+
+为什么短路的USB设备不会烧掉你的主板？著名的USB Killer又是怎么干掉主板的？
+
+https://view.inews.qq.com/wxn/20220608A0D8H200
+
+Type-C成为通用接口，苹果告别“躺赚时代”？
+
+https://www.zhihu.com/question/31304026
+
+为什么两台电脑不能直接连接USB传输文件？
+
+https://www.zhihu.com/question/571811693
+
+现在usb口普遍都有过流保护为什么还会烧南桥的例子啊?

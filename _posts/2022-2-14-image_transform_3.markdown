@@ -216,3 +216,11 @@ https://mp.weixin.qq.com/s/lNrUPLjnaAXq-HhJqakU8g
 https://mp.weixin.qq.com/s/RhIcwL8dc7VmA00e5LZ-NQ
 
 奥巴马完变白种人？师承汤晓鸥教授，GFP-GAN达到盲人脸修复新里程碑！
+
+https://zhuanlan.zhihu.com/p/597715332
+
+AI画画背后的技术原理是什么样的
+
+https://mp.weixin.qq.com/s/gg0a4PVdWpVJNZhuAEXvaA
+
+赛博仓颉，在线造字！Stable Diffusion：没人比我更懂汉字

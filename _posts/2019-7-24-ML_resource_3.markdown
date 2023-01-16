@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ML参考资源（三）, 内存
+title:  ML参考资源（三）
 category: resource 
 ---
 
@@ -188,98 +188,6 @@ https://mp.weixin.qq.com/s/v7m0I9o6QV6qKSQqnsMoRw
 https://mp.weixin.qq.com/s/Mc9vHkt--u3jyh5VZmA56Q
 
 如何消除多重共线性
-
-# 内存
-
-https://mp.weixin.qq.com/s/HOhBNZfOf5xQIFLYQ5ntCw
-
-内存的故事
-
-https://mp.weixin.qq.com/s/qhR0St3CLWEYqV_kl_oXAw
-
-Rambus之战
-
-https://mp.weixin.qq.com/s/gh9cL0BPzCQ2JFOoXdtqyg
-
-内存的技术发展
-
-https://mp.weixin.qq.com/s/kHPTZlDtjqtr0Vi-5OWycQ
-
-金士顿的传说
-
-https://zhuanlan.zhihu.com/p/57780996
-
-内存延迟：因与果
-
-https://mp.weixin.qq.com/s/XcC18tulYdnwqlusg2QrxA
-
-嵌入式内存STT-MRAM趋势分析
-
-https://zhuanlan.zhihu.com/p/62234511
-
-DDR3 vs DDR4?为什么说内存是个很傻的设备？DDR5在哪里？
-
-https://zhuanlan.zhihu.com/p/40601422
-
-双通道、四通道内存对游戏重要吗？
-
-https://mp.weixin.qq.com/s/9skWM6yirEupLj2wdpgqkA
-
-带你深入理解内存对齐最底层原理
-
-https://mp.weixin.qq.com/s/Mb7iSXfrOtettVn-Sz8QUA
-
-主板上这家伙，要当CPU和内存的中间商！
-
-# 编译原理+
-
-## PPCG
-
-Polyhedral Parallel Code Generation
-
-代码：
-
-https://github.com/Meinersbur/ppcg
-
-## PLUTO
-
-An automatic parallelizer and locality optimizer for affine loop nests
-
-官网：
-
-http://pluto-compiler.sourceforge.net/
-
-参考：
-
-https://www.zhihu.com/question/329294933
-
-如何评价PLUTO编译器？
-
-## ANTLR
-
-ANTLR—Another Tool for Language Recognition，其前身是PCCTS，它为包括Java，C++，C#,python在内的语言提供了一个通过语法描述来自动构造自定义语言的识别器（recognizer），编译器（parser）和解释器（translator）的框架。
-
-官网：
-
-http://www.antlr.org/
-
-参考：
-
-http://yuzhouwan.com/posts/55501/
-
-Antlr
-
-https://www.ibm.com/developerworks/cn/java/j-lo-antlr/index.html
-
-使用Antlr开发领域语言
-
-## MPS
-
-MPS是jetbrains推出的用于构建DSL的工具。
-
-官网：
-
-https://www.jetbrains.com/mps/
 
 # AI工具+
 

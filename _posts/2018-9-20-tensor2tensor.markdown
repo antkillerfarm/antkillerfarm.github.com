@@ -244,6 +244,22 @@ https://github.com/dmlc/dmlc-core
 
 # 机器人/无人驾驶参考资源+
 
+https://zhuanlan.zhihu.com/p/73073753
+
+基于深度学习的多传感器标定
+
+https://mp.weixin.qq.com/s/m4KtRGoBgqcgF8ZBMjG6Hg
+
+深层卷积神经网络在路面分类中的应用
+
+https://mp.weixin.qq.com/s/nQq2tzK_2y2lEt9H14zdwA
+
+自动驾驶中的决策规划算法概述
+
+https://mp.weixin.qq.com/s/yIFgwxU-DI6NBogfmxqqKQ
+
+基于深度学习的计算机视觉技术在无人驾驶中的应用
+
 https://mp.weixin.qq.com/s/rA9AAVx7AlNuS1l4IUuG0w
 
 深度学习技术在自动驾驶中的应用

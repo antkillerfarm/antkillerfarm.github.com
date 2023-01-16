@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数据结构 & 普通CS算法
+title:  数据结构 & 普通CS算法, 数值计算
 category: resource 
 ---
 
@@ -376,3 +376,21 @@ https://mp.weixin.qq.com/s/zQJve_w5OoM6u-WcSWArdQ
 https://www.codeproject.com/Articles/69941/Best-Square-Root-Method-Algorithm-Function-Precisi
 
 Best Square Root Method
+
+# 数值计算
+
+两个数值趋近于无穷小且相近的数字相除的结果应该大约为1，但却因为分母接近为0而变成无穷。这时可以直接取对数执行运算，其结果在数值上会较为稳定。
+
+---
+
+https://blog.csdn.net/HiWangWenBing/article/details/119772047
+
+数学建模、科学计算、数值计算的关系
+
+https://blog.csdn.net/HiWangWenBing/article/details/119790035
+
+误差的种类、误差传播、误差分析
+
+https://www.zhihu.com/question/444819295
+
+控制周期越短，控制效果是否越好？
