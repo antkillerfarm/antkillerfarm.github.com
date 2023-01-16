@@ -326,3 +326,7 @@ TensorFlow在推荐系统中的分布式训练优化实践
 https://mp.weixin.qq.com/s/rEHhf32L09KXGJ9bbB2LEA
 
 TensorFlow在美团外卖推荐场景的GPU训练优化实践
+
+https://zhuanlan.zhihu.com/p/522759214
+
+手把手推导分布式矩阵乘的最优并行策略

@@ -121,6 +121,10 @@ https://mp.weixin.qq.com/s/gF8DSc1aifmTCjJSdthpyg
 
 乌克兰一大学教授战壕里上网课？
 
+https://zhuanlan.zhihu.com/p/599209865
+
+《华尔街日报》：乌克兰义勇军的勇气和鲁莽
+
 ## 哈尔科夫战役
 
 https://www.zhihu.com/zvideo/1551802887226732544

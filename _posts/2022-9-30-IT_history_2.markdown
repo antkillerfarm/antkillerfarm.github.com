@@ -271,6 +271,10 @@ https://zhuanlan.zhihu.com/p/599318774
 
 旧版红旗Linux桌面系统收集
 
+https://zhuanlan.zhihu.com/p/431722918
+
+没有这个传奇工程师，就没有今天的Windows（David Cutler）
+
 # 区块链参考资源+
 
 https://mp.weixin.qq.com/s/9hhUZyeax206bAsSqks-1w

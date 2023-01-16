@@ -258,6 +258,10 @@ Having-Doubling AllReduce：
 
 该算法的优点是通信步骤较少，只有$$2 * log_2N$$次（其中N表示参与通信的节点数）通信即可完成，所以其有更低的延迟。相比之下Ring算法的通信步骤是$$2 ∗ (N−1)$$次；缺点是每一个步骤相互通信的节点均不相同，链接来回切换会带来额外开销。
 
+ring all-reduce具有理论上最优的传输带宽，而没有考虑每次传输都包含的延迟（latency）。当数据量V比较大时，延迟项可以忽略。当V特别小，或者设备数p特别大时，带宽就变得不重要了，反而是延迟比较关键。
+
+这也是为什么英伟达NCCL里既实现了ring all-reduce，也实现了double-tree all-reduce算法。
+
 https://www.zhihu.com/question/57799212
 
 ring allreduce和tree allreduce的具体区别是什么？
@@ -273,6 +277,14 @@ AllReduce算法的前世今生
 https://mp.weixin.qq.com/s/4XMVYXnzpYZ4DrIabuTUig
 
 Ring All-reduce: 分布式深度学习的巧妙同步
+
+https://zhuanlan.zhihu.com/p/504957661
+
+手把手推导Ring All-reduce的数学性质
+
+https://developer.nvidia.com/blog/massively-scale-deep-learning-training-nccl-2-4/
+
+Massively Scale Your Deep Learning Training with NCCL 2.4
 
 ## 其他概念
 
@@ -317,3 +329,7 @@ https://zhuanlan.zhihu.com/p/465967735
 https://zhuanlan.zhihu.com/p/276122469
 
 分布式训练常用技术简介
+
+https://zhuanlan.zhihu.com/p/425830285
+
+最理想的点到点通信库究竟是怎样的？

@@ -300,3 +300,7 @@ http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
 https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
 
 Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
+
+https://zhuanlan.zhihu.com/p/529388795
+
+训练千亿参数大模型，离不开四种GPU并行策略
