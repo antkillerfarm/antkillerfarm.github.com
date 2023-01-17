@@ -237,7 +237,45 @@ https://github.com/MenghaoGuo/Awesome-Vision-Attentions
 
 ![](/images/img4/Attention_4.png)
 
+## ViT
+
+上面这些主要还局限于Layer级别的替换，在这里Attention无非是Conv的平替而已。
+
+而下面的ViT则是从体系层面对CNN的一种颠覆了。
+
+![](/images/img5/ViT.png)
+
+ViT借鉴了NLP的一些做法，将图片分成若干小块，每一块就是一个词向量。这样就把一个CV问题变成了NLP问题。
+
+## Masked Autoencoders
+
+![](/images/img4/MAE.png)
+
+何恺明的MAE也是类似的套路。
+
+https://mp.weixin.qq.com/s/x-ruExbM9T8EIv2gZW0Nnw
+
+视觉预训练新范式MAE
+
+https://www.zhihu.com/question/498364155
+
+如何看待何恺明最新一作论文Masked Autoencoders？
+
+https://mp.weixin.qq.com/s/CxEvEZ9AiEfB1TFFjev0aA
+
+NLP和CV的双子星，注入Mask的预训练模型BERT和MAE
+
 ## Swin Transformer
+
+![](/images/img5/Swin_Transformer.png)
+
+Swin Transformer的改进：
+
+1.考虑了不同的分辨率。
+
+2.除了分类之外，还可以接入目标检测等后续任务。
+
+3.对MSA（multi-head self attention）进行了改进。提出了W-MSA和SW-MSA，也就是Window版本的MSA和滑动Window版的MSA。
 
 https://mp.weixin.qq.com/s/t_J0MODtWzfnJse0aNGyWg
 
@@ -336,35 +374,3 @@ https://mp.weixin.qq.com/s/G4mFW8cn-ho3KGmbw5sSTw
 https://mp.weixin.qq.com/s/gar7zcl68W4oKnFPLFekoQ
 
 Attention增强的卷积网络
-
-https://zhuanlan.zhihu.com/p/308301901
-
-3W字长文带你轻松入门视觉transformer
-
-https://mp.weixin.qq.com/s/MZo3LFyzXp-qpi5jEOQS5Q
-
-FPT：又是借鉴Transformer，这次多方向融合特征金字塔
-
-https://mp.weixin.qq.com/s/N2PAgp-epq4i9CLll1nzJA
-
-华为联合北大、悉尼大学对Visual Transformer的最新综述
-
-https://mp.weixin.qq.com/s/cLPMJm4u67QDsJg0IkmYFQ
-
-解析Vision Transformer
-
-https://www.zhihu.com/question/437495132
-
-如何看待Transformer在CV上的应用前景，未来有可能替代CNN吗？
-
-https://mp.weixin.qq.com/s/hn4EMcVJuBSjfGxJ_qM3Tw
-
-搞懂Vision Transformer原理和代码，看这篇技术综述就够了
-
-https://mp.weixin.qq.com/s/ozUHHGMqIC0-FRWoNGhVYQ
-
-搞懂Vision Transformer原理和代码，看这篇技术综述就够了（二）
-
-https://mp.weixin.qq.com/s/dysKMpOXAjSRgb5xGDO3FA
-
-搞懂Vision Transformer原理和代码，看这篇技术综述就够了(三)

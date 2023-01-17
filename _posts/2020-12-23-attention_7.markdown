@@ -9,6 +9,26 @@ category: Attention
 
 # BERT进阶（续）
 
+https://mp.weixin.qq.com/s/SDVxn3Ra1dKmr-XgKNg5IA
+
+罗玲：From Word Representation to BERT
+
+https://mp.weixin.qq.com/s/-bh8BL4LxnevS8xnW5U9ZA
+
+中科院自动化所提出BIFT模型：面向自然语言生成，同步双向推断
+
+https://mp.weixin.qq.com/s/7yCnAHk6x0ICtEwBKxXpOw
+
+序列到序列自然语言生成任务超越BERT、GPT！微软提出通用预训练模型MASS
+
+https://mp.weixin.qq.com/s/7sIUaSON53hsXUJjq8uVUA
+
+马聪：NLP中的生成式预训练模型
+
+https://mp.weixin.qq.com/s/s1bQFdA6gtoHeeQMJKQ8UQ
+
+Bert时代的创新：Bert应用模式比较及其它
+
 https://mp.weixin.qq.com/s/zqlWx3e4LOJ3_Zy2DEbCjw
 
 从语言模型看Bert的善变与GPT的坚守

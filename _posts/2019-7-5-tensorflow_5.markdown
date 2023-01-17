@@ -45,6 +45,8 @@ https://mp.weixin.qq.com/s/C7QdVathJ8YTXF-zXPC-Ow
 
 https://tensorflow.google.cn/guide/mixed_precision
 
+tensorflow/python/keras/mixed_precision/loss_scale_optimizer.py
+
 # 细节
 
 执行`session.run(out)`，会在终端打印out的值，但执行`res = session.run(out)`则不会。

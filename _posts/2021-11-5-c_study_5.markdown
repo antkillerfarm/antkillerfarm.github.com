@@ -188,6 +188,34 @@ https://www.cnblogs.com/cthon/p/10563946.html
 
 内存优化总结:ptmalloc、tcmalloc和jemalloc
 
+## RVO
+
+```cpp
+std::vector<int> return_vector(void)
+{
+    std::vector<int> tmp {1,2,3,4,5};
+    return tmp;
+}
+std::vector<int> rval_ref = return_vector();
+```
+
+如果按照一般的返回值传递的规则，tmp作为局部变量是传不到外面去的，因此返回的时候，会在外部创建一个同类型的变量，并将tmp的内容复制过去。从而带来了一次复制的开销。
+
+RVO(Return Value Optimization)就是用来优化这种情况的。上述代码执行RVO之后，就等价于：
+
+```
+void return_vector(std::vector<int>& tmp)
+{
+    tmp = std::vector<int>({1,2,3,4,5});
+}
+std::vector<int> rval_ref;
+return_vector(rval_ref);
+```
+
+https://www.zhihu.com/question/27000013
+
+什么时候应当依靠返回值优化（RVO）？
+
 ## 参考
 
 `vector<bool>`并不是一个通常意义上的vector容器，这个源自于历史遗留问题。 早在C++98的时候，就有`vector< bool>`这个类型了，但是因为当时为了考虑到节省空间的想法，所以`vector<bool>`里面不是一个Byte一个Byte储存的，它是一个bit一个bit储存的！

@@ -400,19 +400,3 @@ MoCo V3：我并不是你想的那样！
 https://mp.weixin.qq.com/s/sAYh3l2eab2r2KpbdxN30A
 
 MoCo三部曲
-
-## Masked Autoencoders
-
-![](/images/img4/MAE.png)
-
-https://mp.weixin.qq.com/s/x-ruExbM9T8EIv2gZW0Nnw
-
-视觉预训练新范式MAE
-
-https://www.zhihu.com/question/498364155
-
-如何看待何恺明最新一作论文Masked Autoencoders？
-
-https://mp.weixin.qq.com/s/CxEvEZ9AiEfB1TFFjev0aA
-
-NLP和CV的双子星，注入Mask的预训练模型BERT和MAE

@@ -10,6 +10,38 @@ category: Attention
 
 # Attention in CV & RS（续）
 
+https://zhuanlan.zhihu.com/p/308301901
+
+3W字长文带你轻松入门视觉transformer
+
+https://mp.weixin.qq.com/s/MZo3LFyzXp-qpi5jEOQS5Q
+
+FPT：又是借鉴Transformer，这次多方向融合特征金字塔
+
+https://mp.weixin.qq.com/s/N2PAgp-epq4i9CLll1nzJA
+
+华为联合北大、悉尼大学对Visual Transformer的最新综述
+
+https://mp.weixin.qq.com/s/cLPMJm4u67QDsJg0IkmYFQ
+
+解析Vision Transformer
+
+https://www.zhihu.com/question/437495132
+
+如何看待Transformer在CV上的应用前景，未来有可能替代CNN吗？
+
+https://mp.weixin.qq.com/s/hn4EMcVJuBSjfGxJ_qM3Tw
+
+搞懂Vision Transformer原理和代码，看这篇技术综述就够了
+
+https://mp.weixin.qq.com/s/ozUHHGMqIC0-FRWoNGhVYQ
+
+搞懂Vision Transformer原理和代码，看这篇技术综述就够了（二）
+
+https://mp.weixin.qq.com/s/dysKMpOXAjSRgb5xGDO3FA
+
+搞懂Vision Transformer原理和代码，看这篇技术综述就够了(三)
+
 https://mp.weixin.qq.com/s/EXtTUh4_w07Kc7hfBBMBiw
 
 搞懂Vision Transformer原理和代码，看这篇技术综述就够了（四）
@@ -353,23 +385,3 @@ BERT模型的标准调优和花式调优
 https://mp.weixin.qq.com/s/FwmEIZ3ugeZBbLIGHmH-_g
 
 BERT之后，GLUE基准升级为SuperGLUE：难度更大
-
-https://mp.weixin.qq.com/s/SDVxn3Ra1dKmr-XgKNg5IA
-
-罗玲：From Word Representation to BERT
-
-https://mp.weixin.qq.com/s/-bh8BL4LxnevS8xnW5U9ZA
-
-中科院自动化所提出BIFT模型：面向自然语言生成，同步双向推断
-
-https://mp.weixin.qq.com/s/7yCnAHk6x0ICtEwBKxXpOw
-
-序列到序列自然语言生成任务超越BERT、GPT！微软提出通用预训练模型MASS
-
-https://mp.weixin.qq.com/s/7sIUaSON53hsXUJjq8uVUA
-
-马聪：NLP中的生成式预训练模型
-
-https://mp.weixin.qq.com/s/s1bQFdA6gtoHeeQMJKQ8UQ
-
-Bert时代的创新：Bert应用模式比较及其它

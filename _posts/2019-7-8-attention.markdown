@@ -31,7 +31,7 @@ category: Attention
 
 >这里有一个训练的小技巧。虽然输出语句的长度不能事先得知，但不妨设置一个最大值$$N_{max}$$，这样tensor的尺寸就可以定下来了。然后用mask技术挡住后面的输出词语即可。例如我们训练生成第i个词的权重时，前面的i-1个词的mask为1，而后面的其他词的mask为0。
 
-Attention机制的一个主要优势是它让我们能够解释并可视化整个模型。举个例子，通过对attention权重矩阵a的可视化，我们能够理解模型翻译的过程。
+Attention机制的一个主要优势是能够解释并可视化整个模型。举个例子，通过对attention权重矩阵a的可视化，我们能够理解模型翻译的过程。
 
 ![](/images/article/attention_2.png)
 
@@ -39,7 +39,13 @@ Attention机制的一个主要优势是它让我们能够解释并可视化整�
 
 如果再仔细观察attention的等式，我们会发现attention机制有一定的成本。我们需要为每个输入输出组合分别计算attention值。50个单词的输入序列和50个单词的输出序列需要计算2500个attention值。这还不算太糟糕，但如果你做字符级别的计算，而且字符序列长达几百个字符，那么attention机制将会变得代价昂贵。
 
-attention机制解决的根本问题是允许网络返回到输入序列，而不是把所有信息编码成固定长度的向量。正如我在上面提到，我认为使用attention有点儿用词不当。换句话说，attention机制只是简单地让网络模型访问它的内部存储器，也就是编码器的隐藏状态。在这种解释中，网络选择从记忆中检索东西，而不是选择“注意”什么。不同于典型的内存，这里的内存访问机制是弹性的，也就是说模型检索到的是所有内存位置的加权组合，而不是某个独立离散位置的值。弹性的内存访问机制好处在于我们可以很容易地用反向传播算法端到端地训练网络模型（虽然有non-fuzzy的方法，其中的梯度使用抽样方法计算，而不是反向传播）。
+**attention机制解决的根本问题是允许网络返回到输入序列，而不是把所有信息编码成固定长度的向量。**也就是输出不仅仅取决于encoder的结果，还取决于输入序列。
+
+正如我在上面提到，我认为使用attention有点儿用词不当。换句话说，attention机制只是简单地让网络模型访问它的内部存储器，也就是编码器的隐藏状态。在这种解释中，网络选择从记忆中检索东西，而不是选择“注意”什么。不同于典型的内存，这里的内存访问机制是弹性的，也就是说模型检索到的是所有内存位置的加权组合，而不是某个独立离散位置的值。弹性的内存访问机制好处在于我们可以很容易地用反向传播算法端到端地训练网络模型（虽然有non-fuzzy的方法，其中的梯度使用抽样方法计算，而不是反向传播）。
+
+**输入序列加权的过程，非常类似于查字典的过程**，这也是后来的Transformer模型引入q,k,v（query,key,value）概念的原因。
+
+![](/images/img5/Attention.png)
 
 论文：
 
@@ -48,6 +54,14 @@ attention机制解决的根本问题是允许网络返回到输入序列，而�
 《Learning where to Attend with Deep Architectures for Image Tracking》
 
 《Neural Machine Translation by Jointly Learning to Align and Translate》
+
+## Luong Attention and Bahdanau Attention
+
+![](/images/img5/Attention_2.png)
+
+https://blog.csdn.net/sinat_34072381/article/details/106728056
+
+Attention机制（Bahdanau attention & Luong Attention）
 
 # Neural Turing Machines
 
