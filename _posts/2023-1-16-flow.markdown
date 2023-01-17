@@ -129,7 +129,11 @@ Diffusion Model由于天生就是渐变的迭代过程，因此在流程的可�
 
 《Cascaded Diffusion Models for High Fidelity Image Generation》
 
+以下以Stable Diffusion模型为例，介绍一下Diffusion Model的套路。
 
+![](/images/img5/stable-diffusion.png)
+
+![](/images/img5/stable-diffusion-latent-space-pixel-space.png)
 
 参考：
 
