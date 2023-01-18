@@ -183,6 +183,74 @@ https://mp.weixin.qq.com/s/dcv2pqccrAtg2nNaHTTU2Q
 
 # Attention进阶+
 
+https://mp.weixin.qq.com/s/wrmjMLPuvpLIcF5VQBqZxg
+
+最新“注意力机制Attention”大综述论文，66页pdf
+
+https://mp.weixin.qq.com/s/rrbwItXt-1EaGiqtDEGvog
+
+为节约而生：从标准Attention到稀疏Attention
+
+https://mp.weixin.qq.com/s/MzHmvbwxFCaFjmMkjfjeSg
+
+遍地开花的Attention，你真的懂吗？
+
+https://mp.weixin.qq.com/s/e_LEhLf2Rh-1zkEBmqS4nA
+
+NLP这两年：15个预训练模型对比分析与剖析
+
+https://mp.weixin.qq.com/s/LAInpFPa-3R1rfv6idILnw
+
+注意力机制发展如何了，如何学习它在各类任务中的应用？
+
+https://zhuanlan.zhihu.com/p/40920384
+
+真正的完全图解Seq2Seq Attention模型
+
+https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ
+
+深度学习注意力机制-Attention in Deep learning-附101页PPT
+
+https://mp.weixin.qq.com/s/FlA1YrR0sLQGJoJZnSXpRw
+
+DeepMind：深度学习注意力与记忆机制，附70页ppt
+
+https://mp.weixin.qq.com/s/_mBa-GTdILrvluJtegz8fw
+
+南洋理工大学：注意力神经网络，Attention Neural Networks，78页ppt
+
+https://mp.weixin.qq.com/s/pKxqPB9qIGmE_PslPa6EyA
+
+长文详解Attention的前世今生
+
+https://mp.weixin.qq.com/s/2kFZAmb_WnTNYUXT_jVMqg
+
+Attention注意力机制的前世今生
+
+https://mp.weixin.qq.com/s/eq1iTyKguQm5t6Xoc7KUgw
+
+一文搞懂NLP中的Attention机制
+
+https://zhuanlan.zhihu.com/p/106662375
+
+More About Attention
+
+https://mp.weixin.qq.com/s/MFxQSUMFNRXjdLQwzveO4w
+
+深度学习中的注意力机制
+
+https://mp.weixin.qq.com/s/vkyPwsaxH-SvHqQx09VhVw
+
+深度学习中的注意力机制（二）
+
+https://mp.weixin.qq.com/s/fbAAA7fO2voP_v-NsavQew
+
+深度学习中的注意力机制（三）
+
+https://mp.weixin.qq.com/s/CftkSOmAx0UTtCixdxj6_A
+
+深度学习中的注意力机制（完结篇）
+
 https://mp.weixin.qq.com/s/Qs6tm50YvzHaJv2rh60WMw
 
 撩一发深度文本分类之RNN via Attention

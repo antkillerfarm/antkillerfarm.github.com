@@ -7,9 +7,33 @@ category: Attention
 * toc
 {:toc}
 
-# 预训练语言模型进化史
+# 预训练语言模型进化史（续）
 
-## 预训练语言模型的前世今生（续）
+https://mp.weixin.qq.com/s/RKA_RxTQkIeJX3_VIKJiRQ
+
+周明：预训练模型在多语言、多模态任务的进展
+
+https://mp.weixin.qq.com/s/3fmZs1sFNW4IGmtql4KsVQ
+
+邱锡鹏：自然语言处理中的预训练模型，90页ppt
+
+https://mp.weixin.qq.com/s/irb_-T1T9sthW888hP6L4w
+
+清华、复旦、人大联合推出43页预训练模型综述
+
+## 预训练语言模型的前世今生
+
+https://mp.weixin.qq.com/s/1ixYjJN-bJPGrr7v-4d7Rw
+
+萌芽时代
+
+https://mp.weixin.qq.com/s/g4jEVU3BkRem-DYXCn5eFQ
+
+风起云涌
+
+https://mp.weixin.qq.com/s/U8f0cXoPrN32PM3944Oqkg
+
+十分钟了解文本分类通用训练技巧
 
 https://mp.weixin.qq.com/s/uAJ_05g0Zo33mgygTnow1Q
 
@@ -19,10 +43,6 @@ https://mp.weixin.qq.com/s/2_MXIEk5-JP5KwsV6al9XQ
 
 BERT，开启NLP新时代的王者
 
-https://mp.weixin.qq.com/s/yRn1AELGK3jgfOaaxIo67Q
-
-Huggingface简介及BERT代码浅析
-
 https://mp.weixin.qq.com/s/sMocYFvESXoBGtX_NWmQkQ
 
 百度出品ERNIE合集，问国产预训练语言模型哪家强
@@ -30,10 +50,6 @@ https://mp.weixin.qq.com/s/sMocYFvESXoBGtX_NWmQkQ
 https://mp.weixin.qq.com/s/uOGNoePkwfeixTtI4q4t8Q
 
 MT-DNN(KD) : 预训练、多任务、知识蒸馏的结合
-
-https://mp.weixin.qq.com/s/-fQ9VlaOjssDufcZuCe91w
-
-结合HuggingFace代码浅析Transformer
 
 https://mp.weixin.qq.com/s/MXZ3ygSqwyXqOH1PrWEGqg
 
@@ -332,27 +348,3 @@ https://mp.weixin.qq.com/s/_ZBvq7gXvbiP2IQve9tcKg
 https://mp.weixin.qq.com/s/QVEYQfEQV0CsklI9S4vOiA
 
 ERNIE真有官方说的那么好？亲测告诉你答案！
-
-https://mp.weixin.qq.com/s/FoX2bXCJlFYjb9U6JcZCqg
-
-超详细中文预训练模型ERNIE使用指南
-
-https://mp.weixin.qq.com/s/EYQXM-1WSommj9mKJZVVzw
-
-百度正式发布ERNIE 2.0，16项中英文任务超越BERT、XLNet，刷新SOTA
-
-https://mp.weixin.qq.com/s/PwiVCgN8dDWXTGZsiqM-2g
-
-最新NLP架构的直观解释：多任务学习–ERNIE 2.0
-
-https://mp.weixin.qq.com/s/yZvKMaBZyodr8SLvcAn7Mg
-
-深度剖析知识增强语义表示模型——ERNIE
-
-https://mp.weixin.qq.com/s/mPPnPwAvPzvJtv0B8jjDbw
-
-详解ERNIE-Baidu进化史及应用场景
-
-https://mp.weixin.qq.com/s/r5Vk_hc5-jsZ69y0dfqIfg
-
-登顶GLUE的百度ERNIE再突破：语言生成预训练模型ERNIE-GEN刷新SOTA

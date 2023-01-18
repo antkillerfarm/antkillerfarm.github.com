@@ -1,13 +1,25 @@
 ---
 layout: post
-title:  Attention（三）——预训练语言模型进化史
+title:  Attention（三）——Transformer, 预训练语言模型进化史
 category: Attention 
 ---
 
 * toc
 {:toc}
 
-# Transformer（续）
+# Transformer
+
+之前的文章已经介绍了Attention和《Attention is All You Need》。但实际上，《Attention is All You Need》不仅提出了两种Attention模块，而且还提出了如下图所示的Transformer模型。该模型主要用于NMT领域，由于Attention不依赖上一刻的数据，同时精度也不弱于LSTM，因此有很好并行计算特性，在工业界得到了广泛应用。阿里巴巴和搜狗目前的NMT方案都是基于Transformer模型的。
+
+代码：
+
+https://github.com/Kyubyong/transformer
+
+![](/images/img2/Transformer.png)
+
+上图中的Feed Forward的公式为：
+
+$$FFN(x) = \max(0,xW_1 + b_1)W_2 + b_2$$
 
 Transformer的讲解首推：
 
@@ -351,29 +363,3 @@ https://zhuanlan.zhihu.com/p/146193549
 https://mp.weixin.qq.com/s/BhcnTmSje983MYT_alEiiw
 
 一文盘点预训练神经语言模型
-
-https://mp.weixin.qq.com/s/RKA_RxTQkIeJX3_VIKJiRQ
-
-周明：预训练模型在多语言、多模态任务的进展
-
-https://mp.weixin.qq.com/s/3fmZs1sFNW4IGmtql4KsVQ
-
-邱锡鹏：自然语言处理中的预训练模型，90页ppt
-
-https://mp.weixin.qq.com/s/irb_-T1T9sthW888hP6L4w
-
-清华、复旦、人大联合推出43页预训练模型综述
-
-## 预训练语言模型的前世今生
-
-https://mp.weixin.qq.com/s/1ixYjJN-bJPGrr7v-4d7Rw
-
-萌芽时代
-
-https://mp.weixin.qq.com/s/g4jEVU3BkRem-DYXCn5eFQ
-
-风起云涌
-
-https://mp.weixin.qq.com/s/U8f0cXoPrN32PM3944Oqkg
-
-十分钟了解文本分类通用训练技巧

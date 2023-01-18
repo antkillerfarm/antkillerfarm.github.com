@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（二）——花式Attention, Transformer
+title:  Attention（二）——花式Attention
 category: Attention 
 ---
 
@@ -8,6 +8,20 @@ category: Attention
 {:toc}
 
 # 花式Attention（续）
+
+## Multi-Head Attention
+
+![](/images/img2/Attention_6.png)
+
+这个是Google提出的新概念，是Attention机制的完善。不过从形式上看，它其实就再简单不过了，就是把Q,K,V通过参数矩阵映射一下，然后再做Attention，把这个过程重复做h次，结果拼接起来就行了，可谓“大道至简”了。具体来说：
+
+$$head_i = Attention(\boldsymbol{Q}\boldsymbol{W}_i^Q,\boldsymbol{K}\boldsymbol{W}_i^K,\boldsymbol{V}\boldsymbol{W}_i^V)$$
+
+所谓“多头”（Multi-Head），就是指多做几次同样的事情（参数不共享），然后把结果拼接。
+
+https://www.zhihu.com/question/446385446
+
+BERT中，multi-head 768 * 64 * 12与直接使用768 * 768矩阵统一计算，有什么区别？
 
 ## Self Attention
 
@@ -265,17 +279,3 @@ https://juejin.im/post/5e57d69b6fb9a07c8a5a1aa2
 https://mp.weixin.qq.com/s/PF02OwP0CHDf6l4BHHDqow
 
 一文读懂Attention机制
-
-# Transformer
-
-之前的文章已经介绍了Attention和《Attention is All You Need》。但实际上，《Attention is All You Need》不仅提出了两种Attention模块，而且还提出了如下图所示的Transformer模型。该模型主要用于NMT领域，由于Attention不依赖上一刻的数据，同时精度也不弱于LSTM，因此有很好并行计算特性，在工业界得到了广泛应用。阿里巴巴和搜狗目前的NMT方案都是基于Transformer模型的。
-
-代码：
-
-https://github.com/Kyubyong/transformer
-
-![](/images/img2/Transformer.png)
-
-上图中的Feed Forward的公式为：
-
-$$FFN(x) = \max(0,xW_1 + b_1)W_2 + b_2$$

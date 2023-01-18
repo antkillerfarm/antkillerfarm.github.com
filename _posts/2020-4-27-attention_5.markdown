@@ -7,6 +7,32 @@ category: Attention
 * toc
 {:toc}
 
+# ERNIE（续）
+
+https://mp.weixin.qq.com/s/FoX2bXCJlFYjb9U6JcZCqg
+
+超详细中文预训练模型ERNIE使用指南
+
+https://mp.weixin.qq.com/s/EYQXM-1WSommj9mKJZVVzw
+
+百度正式发布ERNIE 2.0，16项中英文任务超越BERT、XLNet，刷新SOTA
+
+https://mp.weixin.qq.com/s/PwiVCgN8dDWXTGZsiqM-2g
+
+最新NLP架构的直观解释：多任务学习–ERNIE 2.0
+
+https://mp.weixin.qq.com/s/yZvKMaBZyodr8SLvcAn7Mg
+
+深度剖析知识增强语义表示模型——ERNIE
+
+https://mp.weixin.qq.com/s/mPPnPwAvPzvJtv0B8jjDbw
+
+详解ERNIE-Baidu进化史及应用场景
+
+https://mp.weixin.qq.com/s/r5Vk_hc5-jsZ69y0dfqIfg
+
+登顶GLUE的百度ERNIE再突破：语言生成预训练模型ERNIE-GEN刷新SOTA
+
 # XLNet
 
 https://mp.weixin.qq.com/s/29y2bg4KE-HNwsimD3aauw
@@ -334,43 +360,3 @@ https://mp.weixin.qq.com/s/POYTh4Jf7HttxoLhrHZQhw
 http://blog.csdn.net/leo_xu06/article/details/53491400
 
 视觉注意力的循环神经网络模型
-
-https://mp.weixin.qq.com/s/JoTzaInn_uAA9oZgMcfskw
-
-计算机视觉技术self-attention最新进展
-
-https://zhuanlan.zhihu.com/p/32928645
-
-计算机视觉中的注意力机制
-
-https://zhuanlan.zhihu.com/p/56501461
-
-计算机视觉中的注意力机制
-
-https://zhuanlan.zhihu.com/p/32971586
-
-图像描述：基于项的注意力机制
-
-https://zhuanlan.zhihu.com/p/33158614
-
-图像识别：基于位置的柔性注意力机制
-
-https://mp.weixin.qq.com/s/tVKEJ9rqlMaZ9bx6ngIelw
-
-自注意力机制在计算机视觉中的应用
-
-https://mp.weixin.qq.com/s/Di-TbseiezMBc-MUYoEFHg
-
-CV领域的注意力机制
-
-https://mp.weixin.qq.com/s/7ETHeN2xV_hEwkDxrhJyNg
-
-用Attention玩转CV，一文总览自注意力语义分割进展
-
-https://mp.weixin.qq.com/s/G4mFW8cn-ho3KGmbw5sSTw
-
-计算机视觉中注意力机制原理及其模型发展和应用
-
-https://mp.weixin.qq.com/s/gar7zcl68W4oKnFPLFekoQ
-
-Attention增强的卷积网络

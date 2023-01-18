@@ -89,6 +89,10 @@ https://zhuanlan.zhihu.com/p/585321914
 
 ---
 
+苏联的“三和两全”理论：和平共处、和平竞赛、和平过渡，全民国家、全民党。
+
+---
+
 https://mp.weixin.qq.com/s/kCLZyjoDoNK-py06hvmujA
 
 特供商店在苏联的兴衰（上）

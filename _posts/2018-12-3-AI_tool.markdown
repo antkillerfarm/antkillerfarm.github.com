@@ -9,6 +9,28 @@ category: resource
 
 # AI工具
 
+## Huggingface
+
+Hugging face起初是一家总部位于纽约的聊天机器人初创服务商，他们本来打算创业做聊天机器人，然后在github上开源了一个Transformers库，虽然聊天机器人业务没搞起来，但是他们的这个库在机器学习社区迅速大火起来。目前已经共享了超100,000个预训练模型，10,000个数据集，变成了机器学习界的github。
+
+官网：
+
+http://www.huggingface.co
+
+https://zhuanlan.zhihu.com/p/535100411
+
+Huggingface超详细介绍
+
+https://mp.weixin.qq.com/s/yRn1AELGK3jgfOaaxIo67Q
+
+Huggingface简介及BERT代码浅析
+
+https://mp.weixin.qq.com/s/-fQ9VlaOjssDufcZuCe91w
+
+结合HuggingFace代码浅析Transformer
+
+## 参考
+
 https://mp.weixin.qq.com/s/w6asQp2cI3_K6omlZKtICw
 
 50款大数据分析神器
@@ -344,23 +366,3 @@ https://mp.weixin.qq.com/s/a3zu7nvy0itOvzvgOlf01Q
 https://mp.weixin.qq.com/s/cyTHnDGdMZvhxg7hUmuYZw
 
 训练速度提升超3倍！斯坦福推出全新深度学习并行计算框架FlexFlow
-
-https://mp.weixin.qq.com/s/6q7wy7Xq7GcepdLkQN-1wA
-
-最新中文NLP开源工具箱来了！支持6大任务，面向工业应用
-
-https://mp.weixin.qq.com/s/203UyMxZ-Sx14WEX-KMusg
-
-异类框架BigDL，TensorFlow的潜在杀器！
-
-https://mp.weixin.qq.com/s/wDISPCffD-8fnW1GD4EcDg
-
-Kornia开源可微分计算机视觉库
-
-https://mp.weixin.qq.com/s/Ad-LNsbA2KRdvKRNUl2LNw
-
-DeepPavlov: 强大的聊天机器人和对话系统开源AI库
-
-https://mp.weixin.qq.com/s/W5kUPzwzCWP1qnTdbgNSFA
-
-大批量生成假数据，faker.js获得近28k个Star

@@ -10,6 +10,46 @@ category: Attention
 
 # Attention in CV & RS（续）
 
+https://mp.weixin.qq.com/s/JoTzaInn_uAA9oZgMcfskw
+
+计算机视觉技术self-attention最新进展
+
+https://zhuanlan.zhihu.com/p/32928645
+
+计算机视觉中的注意力机制
+
+https://zhuanlan.zhihu.com/p/56501461
+
+计算机视觉中的注意力机制
+
+https://zhuanlan.zhihu.com/p/32971586
+
+图像描述：基于项的注意力机制
+
+https://zhuanlan.zhihu.com/p/33158614
+
+图像识别：基于位置的柔性注意力机制
+
+https://mp.weixin.qq.com/s/tVKEJ9rqlMaZ9bx6ngIelw
+
+自注意力机制在计算机视觉中的应用
+
+https://mp.weixin.qq.com/s/Di-TbseiezMBc-MUYoEFHg
+
+CV领域的注意力机制
+
+https://mp.weixin.qq.com/s/7ETHeN2xV_hEwkDxrhJyNg
+
+用Attention玩转CV，一文总览自注意力语义分割进展
+
+https://mp.weixin.qq.com/s/G4mFW8cn-ho3KGmbw5sSTw
+
+计算机视觉中注意力机制原理及其模型发展和应用
+
+https://mp.weixin.qq.com/s/gar7zcl68W4oKnFPLFekoQ
+
+Attention增强的卷积网络
+
 https://zhuanlan.zhihu.com/p/308301901
 
 3W字长文带你轻松入门视觉transformer
@@ -337,51 +377,3 @@ https://mp.weixin.qq.com/s/OsfeAA_tbzAddh1eunwx2w
 https://mp.weixin.qq.com/s/e3n_16uB-qGeGSaGwzlBDw
 
 这群工程师，业余将中文NLP推进了一大步（中文预训练模型）
-
-https://mp.weixin.qq.com/s/V4pbjP5na1OYp-TorUik8g
-
-详聊如何用BERT实现关系抽取
-
-https://mp.weixin.qq.com/s/s5YIG6rBEy6fZkFLh-CzoA
-
-后BERT时代生存指南之VL-BERT篇
-
-https://zhuanlan.zhihu.com/p/113326366
-
-如何训练并使用Bert
-
-https://mp.weixin.qq.com/s/dmHxEkmVFXcCGhv8eH91Tw
-
-从Word2Vec到BERT:上下文嵌入(Contextual Embedding)最新综述论文
-
-https://mp.weixin.qq.com/s/g6-NjoFMPpxjsh38X-wTFQ
-
-BERT，GPT-2这些顶尖工具到底该怎么用到我的模型里?
-
-https://mp.weixin.qq.com/s/N6xBFZ82dkSGCbj6vC5nLQ
-
-上下文预训练模型最全整理：原理、应用、开源代码、数据分享
-
-https://mp.weixin.qq.com/s/-6XpuO7_ve_EdSPCMeWE7g
-
-Attention isn’t all you need！BERT的力量之源远不止注意力
-
-https://mp.weixin.qq.com/s/Y2bs2QegRadSR7lbiFFnWg
-
-BERT一作Jacob Devlin斯坦福演讲PPT：BERT介绍与答疑
-
-https://zhuanlan.zhihu.com/p/62308732
-
-浅谈Bert：语言理解中的预训练编码器
-
-https://mp.weixin.qq.com/s/1Cz6js4kYdvc8g4oKjVPeA
-
-BERT烹饪之法：fintune的艺术
-
-https://mp.weixin.qq.com/s/nVM2Kxc_Mn7BAC6-Pig2Uw
-
-BERT模型的标准调优和花式调优
-
-https://mp.weixin.qq.com/s/FwmEIZ3ugeZBbLIGHmH-_g
-
-BERT之后，GLUE基准升级为SuperGLUE：难度更大

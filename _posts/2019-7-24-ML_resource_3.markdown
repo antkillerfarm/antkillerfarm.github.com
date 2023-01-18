@@ -191,6 +191,26 @@ https://mp.weixin.qq.com/s/Mc9vHkt--u3jyh5VZmA56Q
 
 # AI工具+
 
+https://mp.weixin.qq.com/s/6q7wy7Xq7GcepdLkQN-1wA
+
+最新中文NLP开源工具箱来了！支持6大任务，面向工业应用
+
+https://mp.weixin.qq.com/s/203UyMxZ-Sx14WEX-KMusg
+
+异类框架BigDL，TensorFlow的潜在杀器！
+
+https://mp.weixin.qq.com/s/wDISPCffD-8fnW1GD4EcDg
+
+Kornia开源可微分计算机视觉库
+
+https://mp.weixin.qq.com/s/Ad-LNsbA2KRdvKRNUl2LNw
+
+DeepPavlov: 强大的聊天机器人和对话系统开源AI库
+
+https://mp.weixin.qq.com/s/W5kUPzwzCWP1qnTdbgNSFA
+
+大批量生成假数据，faker.js获得近28k个Star
+
 https://mp.weixin.qq.com/s/3eoN0YHI84oomdTZO6TrvQ
 
 快速搞定机器人开发！Facebook联合CMU开源PyRobot框架

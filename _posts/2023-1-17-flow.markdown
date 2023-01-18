@@ -49,7 +49,7 @@ $$\log p_{G}(x^i)=\log \pi(G^{-1}(x^i))+\log |det(J_{G^{-1}})|$$
 
 然而这会导致$$det(J_{G^{-1}})=0$$，也就是第二项为$$-\infty$$。
 
-所以z必须在两项之间平衡，才能得到最大值。
+所以z必须在两项之间平衡，才能得到最大值。这个平衡点就是我们的优化目标。
 
 NICE采用了一种称为耦合层（Coupling Layer）的设计，如下图所示：
 
@@ -63,7 +63,7 @@ z的1~d维直接复制（copy）给x的1~d维；z的d+1~D维分别通过F和H两
 
 ![](/images/img5/flow_2.png)
 
-如果一层变换的表现力不足的话，我们也可以多做几层变换。需要注意的是，z的1~d维直接复制（copy）给x的1~d维的方式中的copy操作，对于生成模型的表现力会有影响。所以多层变换的话，需要使用交错的方式，组合copy操作和affine操作。
+如果一层变换的表现力不足的话，我们也可以多做几层变换。需要注意的是，z的1~d维直接复制（copy）给x的1~d维的方式中的copy操作，对于生成模型的表现力会有影响。（总不可能生成图片的一部分还是随机噪声吧。）所以多层变换的话，需要使用交错的方式，组合copy操作和affine操作。
 
 ![](/images/img4/MAF-vs-IAF.png)
 
@@ -121,7 +121,31 @@ Diffusion Model也是一类生成模型方法。
 
 Diffusion Model主要通过采样的方法，不断逼近模型的数据分布，从而生成数据。基本原理和VAE一样仍然是Markov Chain Monte Carlo。
 
-Diffusion Model由于天生就是渐变的迭代过程，因此在流程的可控性上很有优势。当时间宽裕时可以通过高轮次的迭代获得高质量的合成样本，同时较低轮次的快速合成也可以得到没有明显瑕疵的合成样本。而高低轮次迭代之间完全不需要重新训练模型，只用手动调整一些轮次相关的参数。
+以下以Stable Diffusion模型为例，介绍一下Diffusion Model的套路。
+
+![](/images/img5/stable-diffusion.png)
+
+我们首先来看一下Stable Diffusion的流水线：
+
+1.输入是一段文字，或者是一段文字+一张背景图片，输出是一张生成的图片。
+
+2.Text Encoder用于NLP。
+
+3.Image Decoder用于生成图片。
+
+4.上述这些部分都是很常规的，中间的Image Information Creator才是Stable Diffusion的关键。
+
+![](/images/img5/stable-diffusion-latent-space-pixel-space.png)
+
+如上图所示，Image Information Creator的输入是一个随机的噪声，而输出是一个information tensor。无论是噪声，还是information tensor都属于Information World，而最后生成的图片属于Visual World。
+
+早期的原始Diffusion Model并没有这种World的划分，而是直接由噪声得到图片，所以很不Stable。
+
+![](/images/img5/stable-diffusion-denoising-steps-latents.png)
+
+从上图可以看出：Diffusion Model由于天生就是渐变的迭代过程，因此在流程的可控性上很有优势。
+
+当时间宽裕时可以通过高轮次的迭代获得高质量的合成样本，同时较低轮次的快速合成也可以得到没有明显瑕疵的合成样本。（仍以上图为例，实际上Step 4的图片就已经相当OK了。）而高低轮次迭代之间完全不需要重新训练模型，只用手动调整一些轮次相关的参数。
 
 因此，很自然的又有了Cascaded Diffusion Models。
 
@@ -129,11 +153,31 @@ Diffusion Model由于天生就是渐变的迭代过程，因此在流程的可�
 
 《Cascaded Diffusion Models for High Fidelity Image Generation》
 
-以下以Stable Diffusion模型为例，介绍一下Diffusion Model的套路。
+回到Stable Diffusion本身，我们先看一下没有两种World划分的Diffusion Model是怎么训练的。
 
-![](/images/img5/stable-diffusion.png)
+![](/images/img5/stable-diffusion-forward-diffusion-training-example.png)
 
-![](/images/img5/stable-diffusion-latent-space-pixel-space.png)
+首先我们生成一堆的随机噪声，然后随机选择其中一种噪声，添加到图片上。这样就得到了一组数据集：
+
+![](/images/img5/stable-diffusion-u-net-noise-training-examples-2.png)
+
+我们的目标就是训练一个噪声预测模型。
+
+![](/images/img5/stable-diffusion-u-net-noise-training-step.png)
+
+用预测的噪声和原始生成的噪声做对比，计算loss。
+
+![](/images/img5/stable-diffusion-image-generation-v2.png)
+
+推理的时候，首先生成一组噪声图片，放入Noise Predictor，生成预测的噪声。然后用噪声图片-预测的噪声就得到了生成的图片。这个去噪过程，也可以进行多个Step。显然Step越多，图片质量越高。
+
+使用两种World划分的Stable Diffusion，还要再复杂一些。，但也不多了。
+
+Image Decoder部分使用传统的AutoEncoder进行训练。
+
+这样Diffusion过程就可以在Information World中进行了。
+
+![](/images/img5/stable-diffusion-forward-and-reverse-process-v2.png)
 
 参考：
 
@@ -187,7 +231,13 @@ Autoregressive Model实际上是最古老的生成模型，比GAN/VAE/Flow/Diffu
 
 这里以PixelCNN为例介绍一下AR Model的原理。
 
+![](/images/img5/PixelCNN.png)
 
+PixelCNN简单来说就是按照从左到右，从上到下的顺序依次生成图片。表面上和Diffusion Model差不多，也是若干step的生成过程。
+
+但是有个问题就是中间步骤不能省略。比如一张28x28的图片，如果一次出1个点的话，一共就要28x28个step。少了其中的某一步，图片就不完整了。而且显然一次出1个点的模型一定和一次出2个点的模型是不一样的。
+
+但Diffusion Model就无所谓了，少了某一步，无非少了一种Noise Predictor而已，不会对结果有什么根本性的影响。
 
 参考：
 

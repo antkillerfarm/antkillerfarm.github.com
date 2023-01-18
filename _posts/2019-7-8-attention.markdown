@@ -186,13 +186,3 @@ https://mp.weixin.qq.com/s/I4FaPxj-8i3YHjaMoAniPQ
 https://www.zhihu.com/question/325839123
 
 深度学习attention机制中的Q,K,V分别是从哪来的？
-
-## Multi-Head Attention
-
-![](/images/img2/Attention_6.png)
-
-这个是Google提出的新概念，是Attention机制的完善。不过从形式上看，它其实就再简单不过了，就是把Q,K,V通过参数矩阵映射一下，然后再做Attention，把这个过程重复做h次，结果拼接起来就行了，可谓“大道至简”了。具体来说：
-
-$$head_i = Attention(\boldsymbol{Q}\boldsymbol{W}_i^Q,\boldsymbol{K}\boldsymbol{W}_i^K,\boldsymbol{V}\boldsymbol{W}_i^V)$$
-
-所谓“多头”（Multi-Head），就是指多做几次同样的事情（参数不共享），然后把结果拼接。
