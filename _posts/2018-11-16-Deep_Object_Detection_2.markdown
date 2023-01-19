@@ -149,6 +149,18 @@ VGG、AlexNet都是常见的CNN base。
 
 ![](/images/img3/backbone.jpg)
 
+每一个不同的任务所对应的网络，被称为head，比如目标检测就是Detection Head。
+
+随着技术的发展，除了backbone和head这两部分，更多的新奇的技术和模块被提了出来，最著名的，莫过于FPN了。除了FPN这种新颖的结构，还有诸如ASFF、RFB、SPP等好用的模块，都可以插在backbone和detection head之间。由于其插入的位置的微妙，故而将其称之为“neck”。
+
+因此，现在一个完整的目标检测网络主要由三部分构成：
+
+**detector=backbone+neck+head**
+
+或者还可以把流程更细分一下：
+
+![](/images/img4/AlphaRotate.png)
+
 https://zhuanlan.zhihu.com/p/93451942
 
 Backbone与Detection head
@@ -256,5 +268,3 @@ https://zhuanlan.zhihu.com/p/24780433
 http://www.cnblogs.com/objectDetect/p/5947169.html
 
 卷积神经网络物体检测之感受野大小计算
-
-**Problem 2**：ROI的在特征图上的对应的特征区域的维度不满足全连接层的输入要求怎么办（又不可能像在原始ROI图像上那样进行截取和缩放）？

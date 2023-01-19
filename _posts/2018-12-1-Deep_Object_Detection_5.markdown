@@ -153,6 +153,8 @@ https://github.com/YunYang1994/tensorflow-yolov3
 
 TF版本
 
+![](/images/img5/YOLOv3.jpg)
+
 它的改进点在于：
 
 - **骨干网络再次升级。**
@@ -162,6 +164,12 @@ TF版本
 上图是YOLOv3的网络结构图。由于这个网络共有53层Conv，因此也被作者称作**Darknet-53**。
 
 从结构来看，它明显借鉴了ResNet的残差结构。而3x3、1x1卷积核的使用，则显然是SqueezeNet的思路。
+
+Yolov3的三个基本组件：
+
+- CBL：Yolov3网络结构中的最小组件，由Conv+Bn+Leaky_relu激活函数三者组成。
+- Res unit：借鉴Resnet网络中的残差结构，让网络可以构建的更深。
+- ResX：由一个CBL和X个残差组件构成，是Yolov3中的大组件。每个Res模块前面的CBL都起到下采样的作用，因此经过5次Res模块后，得到的特征图是608->304->152->76->38->19大小。
 
 - **多尺度先验框**。
 

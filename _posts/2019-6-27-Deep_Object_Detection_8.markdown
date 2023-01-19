@@ -1,143 +1,11 @@
 ---
 layout: post
-title:  深度目标检测（八）——其它目标检测网络, 花式IOU, 3D目标检测, 旋转框检测, 小目标检测, 花式NMS
+title:  深度目标检测（八）——其它目标检测网络, 花式IOU, 3D目标检测, 旋转框检测, 小目标检测, 花式NMS, YOLOv4
 category: Deep Object Detection 
 ---
 
 * toc
 {:toc}
-
-# Anchor-Free（续）
-
-## Sparse R-CNN
-
-https://zhuanlan.zhihu.com/p/310058362
-
-Sparse R-CNN
-
-https://mp.weixin.qq.com/s/wLESASiP3hofrDKH7yk1aA
-
-Sparse R-CNN: 在dense（单阶段），dense2sparse（二阶段）之外的另一种物体检测模式
-
-https://mp.weixin.qq.com/s/LRSY2YsZGB_Vye7EbvhXpA
-
-Sparse R-CNN: 稀疏的目标检测，武装Fast RCNN
-
-## RepPoints
-
-https://mp.weixin.qq.com/s/aWv7_yiX5BFKpL21SRV1MQ
-
-RepPoints：可形变卷积的进阶
-
-https://mp.weixin.qq.com/s/nI_3kilFCsDHhtjFhRKytA
-
-RepPoints:替代边界框，基于点集的物体表示新方法
-
-https://mp.weixin.qq.com/s/VTb6CUOWnPpyU6WnYdYJ-g
-
-RepPoints V2：将角点检测和前景热图引入纯回归目标检测算法
-
-https://mp.weixin.qq.com/s/gnTZ-q2-lm8QPH6JEPylnw
-
-RepPointv2：使用点集合表示来做目标检测
-
-## 参考
-
-https://mp.weixin.qq.com/s/T7DDWvtvCULfjcDmljvx5Q
-
-Anchor-free的对象检测网络汇总
-
-https://zhuanlan.zhihu.com/p/63024247
-
-锚框：Anchor box综述
-
-https://mp.weixin.qq.com/s/dYV446meJXtCQVFrLzWV8A
-
-目标检测中Anchor的认识及理解
-
-https://mp.weixin.qq.com/s/WAx3Zazx9Pq7Lb3vKa510w
-
-目标检测最新方向：推翻固有设置，不再一成不变Anchor
-
-https://zhuanlan.zhihu.com/p/64563186
-
-Anchor free深度学习的目标检测方法
-
-https://mp.weixin.qq.com/s/DoN-vha1H-2lHhbFOaVS8w
-
-FoveaBox：目标检测新纪元，无Anchor时代来临！
-
-https://zhuanlan.zhihu.com/p/66156431
-
-从Densebox到Dubox：更快、性能更优、更易部署的anchor-free目标检测
-
-https://zhuanlan.zhihu.com/p/63273342
-
-聊聊Anchor的"前世今生"（上）
-
-https://zhuanlan.zhihu.com/p/68291859
-
-聊聊Anchor的"前世今生"（下）
-
-https://zhuanlan.zhihu.com/p/62372897
-
-物体检测的轮回：anchor-based与anchor-free
-
-https://mp.weixin.qq.com/s/m_PvEbq2QbTXNmj_gObKmQ
-
-Anchor-free目标检测之ExtremeNet
-
-https://mp.weixin.qq.com/s/LGeNgnXfYaVVAc_37j6-2A
-
-Anchor Free及Transformer时代
-
-https://mp.weixin.qq.com/s/52YBmlHioRkUgetZWHMZOw
-
-Anchor-free目标检测：工业应用更友好的新网络
-
-https://zhuanlan.zhihu.com/p/84398108
-
-目标检测中Anchor的本质分析
-
-https://mp.weixin.qq.com/s/LQOzrlaEOsrsMHj-V8l3hQ
-
-FreeAnchor：抛弃单一的IoU匹配，更自由的anchor匹配方法
-
-https://zhuanlan.zhihu.com/p/163266388
-
-Anchor-free应用一览：目标检测、实例分割、多目标跟踪
-
-https://mp.weixin.qq.com/s/4UEmRcSo0ZGoiLh6iKf_oQ
-
-ATSS：自动选择样本，消除Anchor based和Anchor free物体检测方法之间的差别
-
-https://mp.weixin.qq.com/s/UhHh_DFoxKW5K3OCe3Bjqg
-
-目标检测：Anchor-Free时代
-
-https://mp.weixin.qq.com/s/PqDkdxqvUvSKvTklVojOyA
-
-CPNDet：简单地给CenterNet加入two-stage，更快更强
-
-https://mp.weixin.qq.com/s/7mHhltqDcnYZdHWoRS_EBg
-
-YOLO之外的另一选择，手机端97FPS的Anchor-Free目标检测模型NanoDet现已开源
-
-https://zhuanlan.zhihu.com/p/336016003
-
-OneNet: End-to-End One-Stage Object Detection
-
-https://mp.weixin.qq.com/s/0FPpc2PhLPiE9mg6eRh11Q
-
-OneNet：一阶段的端到端物体检测器，无需NMS
-
-https://mp.weixin.qq.com/s/ov4xLhicTqsce0bG2pw95A
-
-anchor-base和anchor-free差异分析
-
-https://mp.weixin.qq.com/s/yft97xTTX0FUXpyHtI_XMQ
-
-anchor-free存在什么缺点？
 
 # 其它目标检测网络
 
@@ -399,32 +267,99 @@ https://mp.weixin.qq.com/s/W6m2eaysYiK6-3Niz4KeOA
 
 Confluence：物体检测中不依赖IoU的NMS替代算法论文解析
 
-# 目标检测进阶
+# YOLOv4
 
-https://mp.weixin.qq.com/s/1nlOJ7X9ogBHTl1j2adqyg
+YOLO系列(v1-v3)作者Joe Redmon宣布不再继续CV方向的研究，引起学术圈一篇哗然。
 
-83页《目标分类和目标检测综述（2D和3D数据）》论文
+YOLOv4（2020.4）的一作是Alexey Bochkovskiy。YOLO官方的github正式加入YOLOv4的论文和代码链接，也意味着YOLOv4得到了Joe Redmon的认可，也代表着YOLO的停更与交棒。
 
-https://mp.weixin.qq.com/s/HmUhlw90b2aTsoEwBdYbdQ
+论文：
 
-目标检测二十年技术综述
+《YOLOv4: Optimal Speed and Accuracy of Object Detection》
 
-https://mp.weixin.qq.com/s/cWCwcTA01oBy0BM3qRHb4Q
+代码：
 
-综述：目标检测二十年（2001-2021）
+https://github.com/AlexeyAB/darknet
 
-https://mp.weixin.qq.com/s/S1IrgEqS1Q4xqGl5adNrlg
+![](/images/img5/YOLOv4.jpg)
 
-目标检测近年综述
+Yolov4的五个基本组件：
 
-https://mp.weixin.qq.com/s/7QT7n9MpbXjo5-r-aY2Yvg
+- CBM：Yolov4网络结构中的最小组件，由Conv+Bn+Mish激活函数三者组成。
+- CBL：由Conv+Bn+Leaky_relu激活函数三者组成。
+- Res unit：借鉴Resnet网络中的残差结构，让网络可以构建的更深。
+- CSPX：借鉴CSPNet网络结构，由卷积层和X个Res unint模块Concate组成。
+- SPP：采用1×1，5×5，9×9，13×13的最大池化的方式，进行多尺度融合。
 
-深度学习目标检测方法综述
+各部分的改进如下：
 
-https://mp.weixin.qq.com/s/0B08Mzn8ngL6GoNilrjsGA
+- 输入端：这里指的创新主要是训练时对输入端的改进，主要包括Mosaic数据增强、cmBN、SAT自对抗训练。
+- BackBone主干网络：将各种新的方式结合起来，包括：CSPDarknet53、Mish激活函数、Dropblock。
+- Neck：目标检测网络在BackBone和最后的输出层之间往往会插入一些层，比如Yolov4中的SPP模块、FPN+PAN结构。
+- Prediction：输出层的锚框机制和Yolov3相同，主要改进的是训练时的损失函数CIOU_Loss，以及预测框筛选的nms变为DIOU_nms。
 
-基于深度学习目标检测方法一览
+参考：
 
-https://zhuanlan.zhihu.com/p/181169225
+https://zhuanlan.zhihu.com/p/135909702
 
-12篇论文看尽深度学习目标检测史
+大神接棒，YOLOv4来了！
+
+https://mp.weixin.qq.com/s/Ia1ZhAeTgt8anXVd4qxE3A
+
+一张图梳理YOLOv4论文
+
+https://mp.weixin.qq.com/s/ugx6CwMTqGR8CT5xpye6vw
+
+对象检测YOLOv4版本来了！
+
+https://mp.weixin.qq.com/s/XEPhK81Ms-wdDnoz5oPZgA
+
+YOLO v4它来了：接棒者出现，速度效果双提升
+
+https://mp.weixin.qq.com/s/Ny_4lK1E3bqz-LL-hHiFlg
+
+YOLO项目复活！大神接过衣钵，YOLO之父隐退2月后，v4版正式发布，性能大幅提升
+
+https://mp.weixin.qq.com/s/9SR5CUDIBmdJeYEWABASWA
+
+YOLOv4的各种新实现、配置、测试、训练资源汇总
+
+https://mp.weixin.qq.com/s/iGhYxBLdGHPydVi2FgkNtg
+
+YOLO系列：V1,V2,V3,V4简介
+
+https://mp.weixin.qq.com/s/E5TS0NuSWCWmxrJnN8AUKA
+
+想读懂YOLOV4，你需要先了解下列技术(一)
+
+https://mp.weixin.qq.com/s/5usz-wraHArK6_HcE4RuZw
+
+想读懂YOLOV4，你需要先了解下列技术(二)
+
+https://mp.weixin.qq.com/s/v2x3u3_FELz2lHqBJKR-dg
+
+Yolov3和Yolov4核心内容、代码梳理
+
+https://zhuanlan.zhihu.com/p/143747206
+
+深入浅出Yolo系列之Yolov3&Yolov4&Yolov5&Yolox核心基础知识完整讲解
+
+https://zhuanlan.zhihu.com/p/150127712
+
+YOLO V4—网络结构解析
+
+https://zhuanlan.zhihu.com/p/159209199
+
+YOLO V4—损失函数解析
+
+https://mp.weixin.qq.com/s/KRJ5e50NuACk2ZXi1Rxkxw
+
+YOLOv4中的数据增强
+
+# YOLOv5
+
+YOLOv5由Darknet的另一贡献者Ultralytics创建并维护（2010.5）。这是一家总部位于美国的粒子物理和人工智能初创公司。
+
+代码：
+
+https://github.com/ultralytics/yolov5

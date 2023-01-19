@@ -169,6 +169,22 @@ mhlo：支持动态shape的IR。
 
 lmhlo：内存分配之后的IR，也就是无动态shape的IR。
 
+开源项目：
+
+https://github.com/tensorflow/mlir-hlo
+
+https://github.com/openxla/stablehlo
+
+参考：
+
+https://zhuanlan.zhihu.com/p/404706825
+
+mlir-hlo cpu jit
+
+https://zhuanlan.zhihu.com/p/470439442
+
+elementwise fusion(hlo vs mhlo vs linalg)
+
 ---
 
 Affine Dialect：这种Dialect使用来自多面体编译的技术使依赖分析和循环转换高效可靠。
@@ -240,6 +256,16 @@ MLIR原理与应用技术杂谈
 https://zhuanlan.zhihu.com/p/513872467
 
 面向ASIC设备的编译器框架：TVM or MLIR？
+
+## OpenAI Triton
+
+https://zhuanlan.zhihu.com/p/394377526
+
+OpenAI开源GPU编程语言Triton，将同时支持N卡和A卡
+
+## NVFuser
+
+NVFuser是NV专门为Pytorch设计的自动化的GPU代码生成器。
 
 # 编译原理+
 

@@ -1,105 +1,13 @@
 ---
 layout: post
-title:  深度目标检测（七）——RetinaNet, CornerNet, CenterNet, Anchor-Free
+title:  深度目标检测（七）——CornerNet, CenterNet, Anchor-Free
 category: Deep Object Detection 
 ---
 
 * toc
 {:toc}
 
-# FPN（续）
-
-上图是Faster R-CNN+FPN。原始的Faster R-CNN的RoI pooling是从同一个feature map中获得ROI，而这里是根据目标尺度大小，从不同尺度的feature map中获得ROI。
-
-![](/images/img3/FP.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/mY_QHvKmJ0IH_Rpp2ic1ig
-
-目标检测FPN
-
-https://mp.weixin.qq.com/s/TelGG-uVQyxwQjiDGE1pqA
-
-特征金字塔网络FPN
-
-https://zhuanlan.zhihu.com/p/58603276
-
-FPN-目标检测
-
-https://zhuanlan.zhihu.com/p/70523190
-
-总结-CNN中的目标多尺度处理
-
-https://mp.weixin.qq.com/s/xMQA97k0USl69v1MC86HKA
-
-多尺度特征金字塔结构用于目标检测
-
-https://mp.weixin.qq.com/s/rMR98woa1y_sjSFgG24cGQ
-
-常见特征金字塔网络FPN及变体
-
-https://mp.weixin.qq.com/s/ZqNRxexEFRxVXI7-bGPx0A
-
-Feature Pyramid Network详解特征金字塔网络FPN的来龙去脉
-
-# RetinaNet
-
-RetinaNet也是Tsung-Yi Lin的作品（2017.8）。
-
-论文：
-
-《Focal Loss for Dense Object Detection》
-
-在《深度目标检测（五）》中，我们已经指出“类别不平衡”是导致One-stage模型精度不高的原因。那么如何解决这个问题呢？
-
-答案是：Focal Loss。（参见《机器学习（二十二）》）
-
-![](/images/img3/RetinaNet.png)
-
-上图是RetinaNet的网络结构图，可以看出它是一个One-stage模型。基本相当于：ResNet+FPN+Focal loss。
-
-参考：
-
-https://blog.csdn.net/jningwei/article/details/80038594
-
-论文阅读: RetinaNet
-
-https://zhuanlan.zhihu.com/p/68786098
-
-再谈RetinaNet
-
-# CornerNet
-
-传统的目标检测网络，无论是One-stage还是Two-stage，都有基于Anchor的。Anchor的作用主要在于：**显式枚举出不同的scale和aspect ratio的基准bbox。**
-
-但就本质而言，**框对于物体来说不是一个最好的表示。**框的顶点可能甚至都不在物体上，离物体本身已经很远了。
-
-因此，自2018年以来，逐渐有一些不基于anchor的目标检测方法出现，形成了一股Anchor-Free的热潮。下面将首先介绍一下，该类方法的开山之作——CornerNet。
-
->CornerNet并非第一个提出Anchor-Free思想的模型，但却是第一个精度和性能达到与anchor base方法同等水平的Anchor-Free模型。
-
----
-
-CornerNet是Princeton University的Hei Law的作品。（2018.8）
-
-论文：
-
-《CornerNet: Detecting Objects as Paired Keypoints》
-
-CornerNet认为Two-stage目标检测最明显的缺点是在Region Proposal阶段需要提取anchor boxes。这样做导致两个问题：
-
-- 提取的anchor boxes数量较多，比如DSSD使用40k，RetinaNet使用100k，anchor boxes众多造成正负样本不均衡。
-
-- Anchor boxes需要调整很多超参数，比如anchor boxes数量、尺寸、比率，影响模型的训练和推断速率。
-
-![](/images/img3/CornerNet_2.png)
-
-上图是CornerNet的网络结构。可以看出它主要由两部分组成：
-
-## Hourglass Network
-
-这是CornerNet的骨干部分。详情参见《深度学习（十二）》。
+# CornerNet（续）
 
 ## Bottom-right corners & Top-left Corners Prediction Module
 
@@ -312,3 +220,133 @@ Anchor-Free模型主要是为了解决Two-stage模型运算速度较慢的问题
 - DenseBox
 
 《DenseBox: Unifying Landmark Localization and Object Detection》
+
+## Sparse R-CNN
+
+https://zhuanlan.zhihu.com/p/310058362
+
+Sparse R-CNN
+
+https://mp.weixin.qq.com/s/wLESASiP3hofrDKH7yk1aA
+
+Sparse R-CNN: 在dense（单阶段），dense2sparse（二阶段）之外的另一种物体检测模式
+
+https://mp.weixin.qq.com/s/LRSY2YsZGB_Vye7EbvhXpA
+
+Sparse R-CNN: 稀疏的目标检测，武装Fast RCNN
+
+## RepPoints
+
+https://mp.weixin.qq.com/s/aWv7_yiX5BFKpL21SRV1MQ
+
+RepPoints：可形变卷积的进阶
+
+https://mp.weixin.qq.com/s/nI_3kilFCsDHhtjFhRKytA
+
+RepPoints:替代边界框，基于点集的物体表示新方法
+
+https://mp.weixin.qq.com/s/VTb6CUOWnPpyU6WnYdYJ-g
+
+RepPoints V2：将角点检测和前景热图引入纯回归目标检测算法
+
+https://mp.weixin.qq.com/s/gnTZ-q2-lm8QPH6JEPylnw
+
+RepPointv2：使用点集合表示来做目标检测
+
+## 参考
+
+https://mp.weixin.qq.com/s/T7DDWvtvCULfjcDmljvx5Q
+
+Anchor-free的对象检测网络汇总
+
+https://zhuanlan.zhihu.com/p/63024247
+
+锚框：Anchor box综述
+
+https://mp.weixin.qq.com/s/dYV446meJXtCQVFrLzWV8A
+
+目标检测中Anchor的认识及理解
+
+https://mp.weixin.qq.com/s/WAx3Zazx9Pq7Lb3vKa510w
+
+目标检测最新方向：推翻固有设置，不再一成不变Anchor
+
+https://zhuanlan.zhihu.com/p/64563186
+
+Anchor free深度学习的目标检测方法
+
+https://mp.weixin.qq.com/s/DoN-vha1H-2lHhbFOaVS8w
+
+FoveaBox：目标检测新纪元，无Anchor时代来临！
+
+https://zhuanlan.zhihu.com/p/66156431
+
+从Densebox到Dubox：更快、性能更优、更易部署的anchor-free目标检测
+
+https://zhuanlan.zhihu.com/p/63273342
+
+聊聊Anchor的"前世今生"（上）
+
+https://zhuanlan.zhihu.com/p/68291859
+
+聊聊Anchor的"前世今生"（下）
+
+https://zhuanlan.zhihu.com/p/62372897
+
+物体检测的轮回：anchor-based与anchor-free
+
+https://mp.weixin.qq.com/s/m_PvEbq2QbTXNmj_gObKmQ
+
+Anchor-free目标检测之ExtremeNet
+
+https://mp.weixin.qq.com/s/LGeNgnXfYaVVAc_37j6-2A
+
+Anchor Free及Transformer时代
+
+https://mp.weixin.qq.com/s/52YBmlHioRkUgetZWHMZOw
+
+Anchor-free目标检测：工业应用更友好的新网络
+
+https://zhuanlan.zhihu.com/p/84398108
+
+目标检测中Anchor的本质分析
+
+https://mp.weixin.qq.com/s/LQOzrlaEOsrsMHj-V8l3hQ
+
+FreeAnchor：抛弃单一的IoU匹配，更自由的anchor匹配方法
+
+https://zhuanlan.zhihu.com/p/163266388
+
+Anchor-free应用一览：目标检测、实例分割、多目标跟踪
+
+https://mp.weixin.qq.com/s/4UEmRcSo0ZGoiLh6iKf_oQ
+
+ATSS：自动选择样本，消除Anchor based和Anchor free物体检测方法之间的差别
+
+https://mp.weixin.qq.com/s/UhHh_DFoxKW5K3OCe3Bjqg
+
+目标检测：Anchor-Free时代
+
+https://mp.weixin.qq.com/s/PqDkdxqvUvSKvTklVojOyA
+
+CPNDet：简单地给CenterNet加入two-stage，更快更强
+
+https://mp.weixin.qq.com/s/7mHhltqDcnYZdHWoRS_EBg
+
+YOLO之外的另一选择，手机端97FPS的Anchor-Free目标检测模型NanoDet现已开源
+
+https://zhuanlan.zhihu.com/p/336016003
+
+OneNet: End-to-End One-Stage Object Detection
+
+https://mp.weixin.qq.com/s/0FPpc2PhLPiE9mg6eRh11Q
+
+OneNet：一阶段的端到端物体检测器，无需NMS
+
+https://mp.weixin.qq.com/s/ov4xLhicTqsce0bG2pw95A
+
+anchor-base和anchor-free差异分析
+
+https://mp.weixin.qq.com/s/yft97xTTX0FUXpyHtI_XMQ
+
+anchor-free存在什么缺点？

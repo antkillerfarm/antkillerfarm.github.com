@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（六）——Tiny-YOLO, YOLOv4, One-stage vs. Two-stage, R-FCN, FPN
+title:  深度目标检测（六）——Tiny-YOLO, One-stage vs. Two-stage, R-FCN, FPN, RetinaNet
 category: Deep Object Detection 
 ---
 
@@ -32,148 +32,6 @@ https://zhuanlan.zhihu.com/p/52928205
 https://mp.weixin.qq.com/s/LhXXPyvxci1d4xLzT0XFaw
 
 xYOLO：最新最快的实时目标检测
-
-# YOLOv4
-
-YOLO系列(v1-v3)作者Joe Redmon宣布不再继续CV方向的研究，引起学术圈一篇哗然。
-
-YOLOv4（2020.4）的一作是Alexey Bochkovskiy。YOLO官方的github正式加入YOLOv4的论文和代码链接，也意味着YOLOv4得到了Joe Redmon的认可，也代表着YOLO的停更与交棒。
-
-论文：
-
-《YOLOv4: Optimal Speed and Accuracy of Object Detection》
-
-代码：
-
-https://github.com/AlexeyAB/darknet
-
-参考：
-
-https://zhuanlan.zhihu.com/p/135909702
-
-大神接棒，YOLOv4来了！
-
-https://mp.weixin.qq.com/s/Ia1ZhAeTgt8anXVd4qxE3A
-
-一张图梳理YOLOv4论文
-
-https://mp.weixin.qq.com/s/ugx6CwMTqGR8CT5xpye6vw
-
-对象检测YOLOv4版本来了！
-
-https://mp.weixin.qq.com/s/XEPhK81Ms-wdDnoz5oPZgA
-
-YOLO v4它来了：接棒者出现，速度效果双提升
-
-https://mp.weixin.qq.com/s/Ny_4lK1E3bqz-LL-hHiFlg
-
-YOLO项目复活！大神接过衣钵，YOLO之父隐退2月后，v4版正式发布，性能大幅提升
-
-https://mp.weixin.qq.com/s/9SR5CUDIBmdJeYEWABASWA
-
-YOLOv4的各种新实现、配置、测试、训练资源汇总
-
-https://mp.weixin.qq.com/s/iGhYxBLdGHPydVi2FgkNtg
-
-YOLO系列：V1,V2,V3,V4简介
-
-https://mp.weixin.qq.com/s/E5TS0NuSWCWmxrJnN8AUKA
-
-想读懂YOLOV4，你需要先了解下列技术(一)
-
-https://mp.weixin.qq.com/s/5usz-wraHArK6_HcE4RuZw
-
-想读懂YOLOV4，你需要先了解下列技术(二)
-
-https://mp.weixin.qq.com/s/v2x3u3_FELz2lHqBJKR-dg
-
-Yolov3和Yolov4核心内容、代码梳理
-
-https://zhuanlan.zhihu.com/p/143747206
-
-深入浅出Yolo系列之Yolov3&Yolov4核心基础知识完整讲解
-
-https://zhuanlan.zhihu.com/p/150127712
-
-YOLO V4—网络结构解析
-
-https://zhuanlan.zhihu.com/p/159209199
-
-YOLO V4—损失函数解析
-
-https://mp.weixin.qq.com/s/KRJ5e50NuACk2ZXi1Rxkxw
-
-YOLOv4中的数据增强
-
-# YOLOv5
-
-YOLOv5由Darknet的另一贡献者Ultralytics创建并维护（2010.5）。这是一家总部位于美国的粒子物理和人工智能初创公司。
-
-代码：
-
-https://github.com/ultralytics/yolov5
-
-参考：
-
-https://mp.weixin.qq.com/s/0tNVoD4H6fRGenUJXuJ8yg
-
-YOLOv5来了！基于PyTorch，体积比YOLOv4小巧90%，速度却超2倍
-
-https://zhuanlan.zhihu.com/p/161083602
-
-一文读懂YOLO V5与YOLO V4
-
-https://zhuanlan.zhihu.com/p/183261974
-
-YOLO系列(从v1到v5)模型解读(上)
-
-https://zhuanlan.zhihu.com/p/183781646
-
-YOLO系列(从v1到v5)模型解读(中)
-
-https://zhuanlan.zhihu.com/p/186014243
-
-YOLO系列(从v1到v5)模型解读(下)
-
-https://zhuanlan.zhihu.com/p/143747206
-
-深入浅出Yolo系列之Yolov3&Yolov4&Yolov5核心基础知识完整讲解
-
-https://zhuanlan.zhihu.com/p/136382095
-
-YOLO系列：YOLOv1,YOLOv2,YOLOv3,YOLOv4,YOLOv5简介
-
-https://mp.weixin.qq.com/s/rzR-rAiJejR8LjDDgiauZA
-
-C++实现yolov5的OpenVINO部署
-
-https://mp.weixin.qq.com/s/OP5iLZtIABNcn_LFyBWOeA
-
-YOLObile:面向移动设备的“实时目标检测”算法
-
-https://mp.weixin.qq.com/s/JQFWf-lFT4bwWEfQBoIdwQ
-
-目标检测算法YOLOF：You Only Look One-level Feature
-
-https://mp.weixin.qq.com/s/QRPQaxUvQwNTXhuOQezdqg
-
-Yolo发展史(v4/v5的创新点汇总！)
-
-https://www.zhihu.com/question/473350307
-
-如何评价旷视开源的YOLOX，效果超过YOLOv5?
-
-https://zhuanlan.zhihu.com/p/566469003
-
-YOLO内卷时期该如何选模型？
-
-https://www.zhihu.com/question/541985721
-
-如何评价Alexey Bochkovskiy团队提出的YoloV7？
-
-https://zhuanlan.zhihu.com/p/598566644
-
-YOLOv8深度详解
 
 # One-stage vs. Two-stage
 
@@ -306,3 +164,97 @@ FPN(Feature Pyramid Network)是Tsung-Yi Lin（Ross Girshick和何恺明小组成
 上图是加了FPN之后的ResNet，其中的虚线框表示的是通道融合的方法。U-Net采用了concat模式融合下采样和上采样通道，而这里则是沿用了ResNet的融合方法：Tensor Add。
 
 ![](/images/img3/FPN_2.jpg)
+
+上图是Faster R-CNN+FPN。原始的Faster R-CNN的RoI pooling是从同一个feature map中获得ROI，而这里是根据目标尺度大小，从不同尺度的feature map中获得ROI。
+
+![](/images/img3/FP.png)
+
+![](/images/img5/PAN.png)
+
+参考：
+
+https://mp.weixin.qq.com/s/mY_QHvKmJ0IH_Rpp2ic1ig
+
+目标检测FPN
+
+https://mp.weixin.qq.com/s/TelGG-uVQyxwQjiDGE1pqA
+
+特征金字塔网络FPN
+
+https://zhuanlan.zhihu.com/p/58603276
+
+FPN-目标检测
+
+https://zhuanlan.zhihu.com/p/70523190
+
+总结-CNN中的目标多尺度处理
+
+https://mp.weixin.qq.com/s/xMQA97k0USl69v1MC86HKA
+
+多尺度特征金字塔结构用于目标检测
+
+https://mp.weixin.qq.com/s/rMR98woa1y_sjSFgG24cGQ
+
+常见特征金字塔网络FPN及变体
+
+https://mp.weixin.qq.com/s/ZqNRxexEFRxVXI7-bGPx0A
+
+Feature Pyramid Network详解特征金字塔网络FPN的来龙去脉
+
+# RetinaNet
+
+RetinaNet也是Tsung-Yi Lin的作品（2017.8）。
+
+论文：
+
+《Focal Loss for Dense Object Detection》
+
+在《深度目标检测（五）》中，我们已经指出“类别不平衡”是导致One-stage模型精度不高的原因。那么如何解决这个问题呢？
+
+答案是：Focal Loss。（参见《机器学习（二十二）》）
+
+![](/images/img3/RetinaNet.png)
+
+上图是RetinaNet的网络结构图，可以看出它是一个One-stage模型。基本相当于：ResNet+FPN+Focal loss。
+
+参考：
+
+https://blog.csdn.net/jningwei/article/details/80038594
+
+论文阅读: RetinaNet
+
+https://zhuanlan.zhihu.com/p/68786098
+
+再谈RetinaNet
+
+# CornerNet
+
+传统的目标检测网络，无论是One-stage还是Two-stage，都有基于Anchor的。Anchor的作用主要在于：**显式枚举出不同的scale和aspect ratio的基准bbox。**
+
+但就本质而言，**框对于物体来说不是一个最好的表示。**框的顶点可能甚至都不在物体上，离物体本身已经很远了。
+
+因此，自2018年以来，逐渐有一些不基于anchor的目标检测方法出现，形成了一股Anchor-Free的热潮。下面将首先介绍一下，该类方法的开山之作——CornerNet。
+
+>CornerNet并非第一个提出Anchor-Free思想的模型，但却是第一个精度和性能达到与anchor base方法同等水平的Anchor-Free模型。
+
+---
+
+CornerNet是Princeton University的Hei Law的作品。（2018.8）
+
+论文：
+
+《CornerNet: Detecting Objects as Paired Keypoints》
+
+CornerNet认为Two-stage目标检测最明显的缺点是在Region Proposal阶段需要提取anchor boxes。这样做导致两个问题：
+
+- 提取的anchor boxes数量较多，比如DSSD使用40k，RetinaNet使用100k，anchor boxes众多造成正负样本不均衡。
+
+- Anchor boxes需要调整很多超参数，比如anchor boxes数量、尺寸、比率，影响模型的训练和推断速率。
+
+![](/images/img3/CornerNet_2.png)
+
+上图是CornerNet的网络结构。可以看出它主要由两部分组成：
+
+## Hourglass Network
+
+这是CornerNet的骨干部分。详情参见《深度学习（十二）》。

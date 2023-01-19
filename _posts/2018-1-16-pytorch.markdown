@@ -250,6 +250,10 @@ PyTorch在前向执行过程中会执行轨迹相关的记录。这种方式我�
 
 前者无法真正做到静态图的优化，而是一种折中策略，而后者则是完全开发了一套不同的API书写方法，也是Tensorflow 2.x版本饱受诟病的核心原因。
 
+PyTorch 1.0对追踪模型图结构（graph capture）这件事也付出了很多的努力，例如torch.jit.trace/script，torch.fx等，但是无一例外，上述各种graph capture方法其使用手感只能用一言难尽来形容（部署、量化的同学赶快举起你们的双手！）。
+
+因此PyTorch痛定思痛，终于在年底搞了个大新闻，在2.0里推出了他们新一代的trace工具Dynamo。
+
 参考：
 
 https://blog.csdn.net/ljp1919/article/details/102514357

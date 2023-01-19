@@ -9,6 +9,98 @@ category: Deep Object Detection
 
 # 目标检测进阶
 
+https://zhuanlan.zhihu.com/p/200924181
+
+计算机视觉中低延迟检测的相关理论和应用（上）
+
+https://zhuanlan.zhihu.com/p/212842916
+
+计算机视觉中低延迟检测的相关理论和应用（下）
+
+https://mp.weixin.qq.com/s/Z5zFWr04Z2LBpf-6EXIgRg
+
+OpenImage冠军方案：在物体检测中为分类和回归任务使用各自独立的特征图
+
+https://mp.weixin.qq.com/s/_2DwSY6olj3wKy2xKukEGg
+
+商汤开源Grid R-CNN Plus：相比Grid RCNN，速度更快，精度更高
+
+https://mp.weixin.qq.com/s/baPfFVi7deEsCAFu3ColoQ
+
+CVPR2018目标检测算法总览
+
+https://mp.weixin.qq.com/s/t5p1xGKVnwd7wbiOzucFqQ
+
+基于深度学习的目标检测算法剖析与实现
+
+https://mp.weixin.qq.com/s/-zQZjHVs7bYyGkGuMUf3qg
+
+目标检测领域还有什么可做的？19个方向给你建议
+
+https://mp.weixin.qq.com/s/vAPD7VKQRJ7NCyYL7FIt3A
+
+目标检测中的Label Assignment
+
+https://zhuanlan.zhihu.com/p/332281368
+
+丢弃Transformer，FCN也可以实现E2E检测
+
+https://mp.weixin.qq.com/s/0_ap6CsBlz4pvx21c57-ag
+
+旷视研究院提出新型损失函数：改善边界框模糊问题
+
+https://zhuanlan.zhihu.com/p/67714508
+
+“取长补短”的RefineDet物体检测算法
+
+https://mp.weixin.qq.com/s/pB3_ho7JLANKRtQK4gsR5Q
+
+Kaggle实战目标检测奇淫技巧合集
+
+https://mp.weixin.qq.com/s/PpT-NmTVjRi0_SEq0lISXw
+
+旷视科技Oral论文解读：IoU-Net让目标检测用上定位置信度
+
+https://mp.weixin.qq.com/s/OqlZ2TRGbHURYW00440lgQ
+
+微软亚洲研究院与北京大学共同提出用于物体检测的可学习区域特征提取模块
+
+https://www.zhihu.com/question/270143544
+
+目标检测中，不同物体之间的距离非常接近如何解决？
+
+https://mp.weixin.qq.com/s/b4s8Te29DyS71xwQU789pQ
+
+实体零售场景下密集商品的精确探测
+
+https://mp.weixin.qq.com/s/iW-k12CIO0gSx8Y6etTzgA
+
+三分支网络——目前目标检测性能最佳网络框架
+
+https://mp.weixin.qq.com/s/JN1N-IqIL4tAh4rIkZcxpg
+
+Grid R-CNN解读：商汤最新目标检测算法
+
+https://mp.weixin.qq.com/s/23KvIquNpCJqeOXtBrkfbA
+
+YOLT:大尺寸图像目标检测的解决方案
+
+https://mp.weixin.qq.com/s/8fxqbSFj9Nkj_iFX8YEjzQ
+
+以点代物，同时执行目标检测和跟踪，这个新方法破解目标跟踪难题
+
+https://mp.weixin.qq.com/s/vQf0TmcM9A56k_FtFvao3g
+
+RDSNet：统一目标检测和实例分割的新型网络
+
+https://blog.csdn.net/u014380165/article/details/80602027
+
+Cascade RCNN算法笔记
+
+https://mp.weixin.qq.com/s/KupXlIt8bHLLGF6qWFH6vQ
+
+从Grid R-CNN到Grid R-CNN Plus：基于网格的目标检测演化
+
 https://mp.weixin.qq.com/s/kz74yb857gmG1h7MyOWx_Q
 
 目标检测正负样本区分策略和平衡策略总结(二)
