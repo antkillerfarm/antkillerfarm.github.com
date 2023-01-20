@@ -35,6 +35,46 @@ Describe-to-Detect(D2D)：一种新的特征检测方法
 
 # 花式IOU
 
+![](/images/img5/IOU.jpg)
+
+![](/images/img5/IOU_2.jpg)
+
+常规IOU存在两个问题：
+
+问题1：即状态1的情况，当预测框和目标框不相交时，IOU=0，无法反应两个框距离的远近，此时损失函数不可导，IOU无法优化两个框不相交的情况。
+
+问题2：即状态2和状态3的情况，当两个预测框大小相同，两个IOU也相同，IOU无法区分两者相交情况的不同。
+
+## GIOU
+
+![](/images/img5/IOU.jpg)
+
+![](/images/img5/IOU_2.jpg)
+
+问题：状态1、2、3都是预测框在目标框内部且预测框大小一致的情况，这时预测框和目标框的差集都是相同的，因此这三种状态的GIOU值也都是相同的，这时GIOU退化成了IOU，无法区分相对位置关系。
+
+## DIOU
+
+好的目标框回归函数应该考虑三个重要几何因素：重叠面积、中心点距离，长宽比。
+
+![](/images/img5/IOU_3.jpg)
+
+DIOU_Loss考虑了重叠面积和中心点距离，当目标框包裹预测框的时候，直接度量2个框的距离。
+
+![](/images/img5/IOU_4.jpg)
+
+但它没有考虑到长宽比。
+
+## CIOU
+
+$$CIOU\_ Loss=1-CIOU=1-(IOU-\frac{Distance\_ 2^2}{Distance\_ C^2}-\frac{v^2}{(1-IOU)+v})$$
+
+$$v=\frac{4}{\pi^2}(\arctan\frac{w^{gt}}{h^{gt}}-\arctan\frac{w^{p}}{h^{p}})^2$$
+
+由于NMS也和IOU有关，所以对应的也有DIOU_nms等。
+
+## 参考
+
 https://zhuanlan.zhihu.com/p/57992040
 
 使用GIoU作为检测任务的Loss
@@ -335,31 +375,3 @@ https://mp.weixin.qq.com/s/E5TS0NuSWCWmxrJnN8AUKA
 https://mp.weixin.qq.com/s/5usz-wraHArK6_HcE4RuZw
 
 想读懂YOLOV4，你需要先了解下列技术(二)
-
-https://mp.weixin.qq.com/s/v2x3u3_FELz2lHqBJKR-dg
-
-Yolov3和Yolov4核心内容、代码梳理
-
-https://zhuanlan.zhihu.com/p/143747206
-
-深入浅出Yolo系列之Yolov3&Yolov4&Yolov5&Yolox核心基础知识完整讲解
-
-https://zhuanlan.zhihu.com/p/150127712
-
-YOLO V4—网络结构解析
-
-https://zhuanlan.zhihu.com/p/159209199
-
-YOLO V4—损失函数解析
-
-https://mp.weixin.qq.com/s/KRJ5e50NuACk2ZXi1Rxkxw
-
-YOLOv4中的数据增强
-
-# YOLOv5
-
-YOLOv5由Darknet的另一贡献者Ultralytics创建并维护（2010.5）。这是一家总部位于美国的粒子物理和人工智能初创公司。
-
-代码：
-
-https://github.com/ultralytics/yolov5

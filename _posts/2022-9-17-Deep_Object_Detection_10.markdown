@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（十）——目标检测进阶（二）
+title:  深度目标检测（十）——目标检测进阶（1）
 category: Deep Object Detection 
 ---
 
@@ -8,6 +8,42 @@ category: Deep Object Detection
 {:toc}
 
 # 目标检测进阶
+
+https://mp.weixin.qq.com/s/oxStDMh90jB7_EY4vqja2w
+
+目标检测论文阅读：DetNet
+
+https://zhuanlan.zhihu.com/p/55972055
+
+SimpleDet:一套简单通用的目标检测与物体识别框架
+
+https://zhuanlan.zhihu.com/p/55854246
+
+Guided Anchoring: 物体检测器也能自己学Anchor
+
+https://mp.weixin.qq.com/s/-G47vOGx2iNQCarYRAiNPg
+
+基于区域分解集成的目标检测
+
+https://mp.weixin.qq.com/s/rlmgN0LbUfd2n9MI8OMT2w
+
+性能大幅度提升（速度&遮挡）:基于区域分解&集成的目标检测
+
+https://zhuanlan.zhihu.com/p/59398728
+
+CVPR2019目标检测方法进展综述
+
+https://mp.weixin.qq.com/s/apLEAMshqd3O8nU8Q0Wycg
+
+李祥泰：Context modeling in semantic segmentation
+
+https://mp.weixin.qq.com/s/bzgMWR2kzAI9NeXEY92GmA
+
+目标检测任务的优化策略tricks
+
+https://mp.weixin.qq.com/s/BsoqlaOlhXc9irSuBc6vGg
+
+在物体检测中搞定小目标
 
 https://zhuanlan.zhihu.com/p/200924181
 

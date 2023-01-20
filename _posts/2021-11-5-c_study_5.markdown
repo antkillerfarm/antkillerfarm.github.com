@@ -290,30 +290,6 @@ https://zhuanlan.zhihu.com/p/58976871
 
 编程风格之声明式与命令式的区别
 
-https://www.zhihu.com/question/447592340
-
-C语言的源程序是可以直接运行吗？（C语言的解释执行）
-
-https://zhuanlan.zhihu.com/p/346465585
-
-极大提高你开发效率的C++ tricks
-
-https://www.zhihu.com/question/280665935
-
-为什么C/C++要分为头文件和源文件？
-
-https://www.zhihu.com/question/485183321
-
-一个接口只有一个实现类，写接口的意义是什么？只写类不写接口不是更简单且清晰吗？
-
-https://www.zhihu.com/question/36642771
-
-C++的string为什么不提供split函数？
-
-https://zhuanlan.zhihu.com/p/458947637
-
-C++编程技巧: Pimpl
-
 # C++ Test framework
 
 ## boost.test
@@ -377,6 +353,10 @@ https://github.com/google/googletest
 运行所有“测试案例名称(testcase_name)”为FooTest的案例，但是除了FooTest.Bar和FooTest2.Bar。
 
 `-`表示去除，`:`表示并列。
+
+`TEST(FooTest, DISABLED_DoesAbc) { ... }`
+
+去除测试用例。
 
 参考：
 

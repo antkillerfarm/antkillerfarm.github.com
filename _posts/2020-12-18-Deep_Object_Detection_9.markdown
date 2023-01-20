@@ -1,13 +1,43 @@
 ---
 layout: post
-title:  深度目标检测（九）——目标检测进阶（一）
+title:  深度目标检测（九）——YOLOv5
 category: Deep Object Detection 
 ---
 
 * toc
 {:toc}
 
-# YOLOv5（续）
+# YOLOv4（续）
+
+https://mp.weixin.qq.com/s/v2x3u3_FELz2lHqBJKR-dg
+
+Yolov3和Yolov4核心内容、代码梳理
+
+https://zhuanlan.zhihu.com/p/143747206
+
+深入浅出Yolo系列之Yolov3&Yolov4&Yolov5&Yolox核心基础知识完整讲解
+
+https://zhuanlan.zhihu.com/p/150127712
+
+YOLO V4—网络结构解析
+
+https://zhuanlan.zhihu.com/p/159209199
+
+YOLO V4—损失函数解析
+
+https://mp.weixin.qq.com/s/KRJ5e50NuACk2ZXi1Rxkxw
+
+YOLOv4中的数据增强
+
+# YOLOv5
+
+YOLOv5由Darknet的另一贡献者Ultralytics创建并维护（2020.5）。这是一家总部位于美国的粒子物理和人工智能初创公司。
+
+代码：
+
+https://github.com/ultralytics/yolov5
+
+![](/images/img5/YOLOv5.jpg)
 
 参考：
 
@@ -54,6 +84,20 @@ https://mp.weixin.qq.com/s/JQFWf-lFT4bwWEfQBoIdwQ
 https://mp.weixin.qq.com/s/QRPQaxUvQwNTXhuOQezdqg
 
 Yolo发展史(v4/v5的创新点汇总！)
+
+# YOLOX
+
+YOLOX是旷视科技2021年的作品。
+
+论文：
+
+《YOLOX: Exceeding YOLO Series in 2021》
+
+![](/images/img5/YOLOX.jpg)
+
+
+
+参考：
 
 https://www.zhihu.com/question/473350307
 
@@ -344,39 +388,3 @@ https://mp.weixin.qq.com/s/t8pVNeW2Y-QQwD8H9Nk83w
 https://mp.weixin.qq.com/s/oF3MAkl1UikRkOhrj3equw
 
 深度学习的目标检测算法是如何解决尺度问题的？
-
-https://mp.weixin.qq.com/s/oxStDMh90jB7_EY4vqja2w
-
-目标检测论文阅读：DetNet
-
-https://zhuanlan.zhihu.com/p/55972055
-
-SimpleDet:一套简单通用的目标检测与物体识别框架
-
-https://zhuanlan.zhihu.com/p/55854246
-
-Guided Anchoring: 物体检测器也能自己学Anchor
-
-https://mp.weixin.qq.com/s/-G47vOGx2iNQCarYRAiNPg
-
-基于区域分解集成的目标检测
-
-https://mp.weixin.qq.com/s/rlmgN0LbUfd2n9MI8OMT2w
-
-性能大幅度提升（速度&遮挡）:基于区域分解&集成的目标检测
-
-https://zhuanlan.zhihu.com/p/59398728
-
-CVPR2019目标检测方法进展综述
-
-https://mp.weixin.qq.com/s/apLEAMshqd3O8nU8Q0Wycg
-
-李祥泰：Context modeling in semantic segmentation
-
-https://mp.weixin.qq.com/s/bzgMWR2kzAI9NeXEY92GmA
-
-目标检测任务的优化策略tricks
-
-https://mp.weixin.qq.com/s/BsoqlaOlhXc9irSuBc6vGg
-
-在物体检测中搞定小目标

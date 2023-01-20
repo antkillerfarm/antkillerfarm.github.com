@@ -169,6 +169,8 @@ FPN(Feature Pyramid Network)是Tsung-Yi Lin（Ross Girshick和何恺明小组成
 
 ![](/images/img3/FP.png)
 
+FPN是从上到下的提取特征，后来的PAN在此基础上又来了一些从下而上的套路：
+
 ![](/images/img5/PAN.png)
 
 参考：

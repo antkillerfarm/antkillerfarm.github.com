@@ -153,6 +153,16 @@ $$h^k=g^k\left[\sum_{t=0}^{k-1}f_t^k(h^t)\right]$$
 
 # 数据增强
 
+Mosaic：
+
+![](/images/img5/Mosaic.jpg)
+
+MixUp：
+
+![](/images/img5/MixUp.webp)
+
+---
+
 https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A
 
 SamplePairing：针对图像处理领域的高效数据增强方式
