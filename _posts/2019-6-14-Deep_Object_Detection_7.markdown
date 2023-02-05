@@ -209,7 +209,18 @@ anchor-free的回归之作：FCOS
 
 ## 总结
 
-Anchor-Free模型主要是为了解决Two-stage模型运算速度较慢的问题而提出的，因此它们绝大多数都是One-stage模型。从目前的效果来看，某些Anchor-Free模型其精度已经接近Two-stage模型，但运算速度相比YOLOv3等传统One-stage模型，仍有较大差距，尚无太大的实用优势（可以使用，但优势不大）。
+对于基于anchors的目标检测器，为了获得最优的检测性能，需要在训练前进行聚类分析来确定一组最优锚点，但是这也带来了一些问题：
+
+- 聚类得到的锚框一般只能用在该数据集上，并不是通用的；
+- 锚框增加了检测头的复杂度以及生成结果的数量。
+
+Anchor-free机制显著减少了需要启发式调整的设计参数的数量和涉及的许多技巧(例如，锚定群集、网格敏感)。使得检测器，特别是其训练和解码阶段变得相当简单。
+
+---
+
+Anchor-Free模型主要是为了解决Two-stage模型运算速度较慢的问题而提出的，因此它们绝大多数都是One-stage模型。
+
+从目前的效果来看，某些Anchor-Free模型其精度已经接近Two-stage模型，但运算速度相比YOLOv3等传统One-stage模型，仍有较大差距，尚无太大的实用优势（可以使用，但优势不大）。
 
 其他比较知名的Anchor-Free模型还有：
 
@@ -318,35 +329,3 @@ FreeAnchor：抛弃单一的IoU匹配，更自由的anchor匹配方法
 https://zhuanlan.zhihu.com/p/163266388
 
 Anchor-free应用一览：目标检测、实例分割、多目标跟踪
-
-https://mp.weixin.qq.com/s/4UEmRcSo0ZGoiLh6iKf_oQ
-
-ATSS：自动选择样本，消除Anchor based和Anchor free物体检测方法之间的差别
-
-https://mp.weixin.qq.com/s/UhHh_DFoxKW5K3OCe3Bjqg
-
-目标检测：Anchor-Free时代
-
-https://mp.weixin.qq.com/s/PqDkdxqvUvSKvTklVojOyA
-
-CPNDet：简单地给CenterNet加入two-stage，更快更强
-
-https://mp.weixin.qq.com/s/7mHhltqDcnYZdHWoRS_EBg
-
-YOLO之外的另一选择，手机端97FPS的Anchor-Free目标检测模型NanoDet现已开源
-
-https://zhuanlan.zhihu.com/p/336016003
-
-OneNet: End-to-End One-Stage Object Detection
-
-https://mp.weixin.qq.com/s/0FPpc2PhLPiE9mg6eRh11Q
-
-OneNet：一阶段的端到端物体检测器，无需NMS
-
-https://mp.weixin.qq.com/s/ov4xLhicTqsce0bG2pw95A
-
-anchor-base和anchor-free差异分析
-
-https://mp.weixin.qq.com/s/yft97xTTX0FUXpyHtI_XMQ
-
-anchor-free存在什么缺点？

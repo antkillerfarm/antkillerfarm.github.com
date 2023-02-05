@@ -253,23 +253,33 @@ https://mp.weixin.qq.com/s/QbBr7ZQhD8DwzSzf4RRvgQ
 
 聊一聊携程的Apollo
 
-# git+
+# Git+
 
-## Monorepo
+## Git多项目管理
 
-上面提到的多项目管理，一般称为MultiRepo，即每个项目对应一个单独的仓库。与之相对的则是Monorepo，即把多个项目放在一个仓库里面。
+项目越来越大，一些通用的模块我们希望将他抽离出来作为单独的项目，以便其他项目也可以使用，或者使用一些第三方库，可能我们并不想将代码直接拷贝进我们的项目里面，而仅仅只是单纯的引用。
 
-![](/images/img4/Monorepo.png)
+基于Git有多种方式来解决这个问题：
+
+- Git Submodule。
+
+- Git Subtree。这两个已经集成到git中。
+
+- GitSlave。一个git插件，需要额外安装。
+
+- Google Repo。基于git的python脚本。Android项目的官方工具。
+
+`git submodule update --init --remote --rebase`
+
+单独更新子module AAA：
+
+`git submodule update AAA`
 
 参考：
 
-https://juejin.cn/post/6944877410827370504
+https://www.jianshu.com/p/284ded3d191b
 
-现代前端工程为什么越来越离不开Monorepo?
-
-https://zhuanlan.zhihu.com/p/77577415
-
-Monorepo是什么，为什么大家都在用？
+Git多项目管理
 
 ## 参考
 

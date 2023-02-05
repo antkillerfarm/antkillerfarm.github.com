@@ -133,6 +133,10 @@ https://www.zhihu.com/question/279465770
 
 286电脑究竟有多慢？
 
+https://mp.weixin.qq.com/s/-h5m0nkbnsUnHzEDedvlMA
+
+起底Apple黑历史！盘点那些年，苹果卖不掉的赔钱货们
+
 # 上古软件开发
 
 https://mp.weixin.qq.com/s/movz5aesYdZZZHle-hHRIw

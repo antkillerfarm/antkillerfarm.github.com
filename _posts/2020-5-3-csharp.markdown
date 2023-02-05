@@ -104,6 +104,10 @@ https://blog.csdn.net/dodream/article/details/4719578
 
 CLR、CLI、CTS、CLS的关系
 
+https://www.zhihu.com/question/576573706
+
+C#有方法可以直接编译成机器语言运行吗？（NativeAOT）
+
 # Lisp & GUI
 
 客观的说，目前开源领域并没有很好用的和Lisp配套的GUI工具集，几个开源实现要么完工度不高，要么过于古老，好几个的样式都是90年代中期的风格。

@@ -93,6 +93,10 @@ https://zhuanlan.zhihu.com/p/585321914
 
 ---
 
+因为普京带货，俄罗斯冰淇淋店爱思贝瑞 (iceberry)还蛮火的，就顺利在国内市场扎根了。
+
+---
+
 https://mp.weixin.qq.com/s/kCLZyjoDoNK-py06hvmujA
 
 特供商店在苏联的兴衰（上）

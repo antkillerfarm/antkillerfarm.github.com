@@ -91,6 +91,10 @@ https://view.inews.qq.com/wxn/20220119A03BL400
 
 687亿美元！微软买下80后、90后的青春
 
+https://mp.weixin.qq.com/s/ggu2IMSzOTmHtthQhepX2g
+
+暴雪国服正式停服，与网易14年合作结束！数百万玩家纷纷祭奠，再见青春
+
 ---
 
 Ken Thompson在贝尔实验室的时候，他总是能在一台装了Unix的服务器上黑进他人的账户，不管他人怎么修改账户密码都没有用，当时贝尔实验室里面聚集的都是智商爆表、专业知识过硬的科学家，Ken的行为无疑让他们非常不爽。
@@ -155,6 +159,26 @@ https://www.zhihu.com/question/19848288
 https://mp.weixin.qq.com/s/EG65kmRlKAdTzn8kPmU0BA
 
 反Twitter平台用户激增250万，这名29岁程序员如何凭一己之力扛住超8倍流量增长？
+
+---
+
+从Sun走出的著名人物：
+
+Whitfield Diffie：图灵奖获得者，公钥密码体系先驱
+
+James Duncan Davidson：Tomcat作者
+
+Marc Fleury：JBoss作者
+
+Bob Scheifler：X-Windows领导者
+
+Paul Buchheit：GMail发明人
+
+Joshua Bloch：Java大牛，Effective Java作者
+
+Brendan Gregg：DTRace作者
+
+Lars Bak：Java HotSpot作者，V8作者
 
 ---
 

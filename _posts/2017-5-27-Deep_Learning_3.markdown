@@ -21,6 +21,10 @@ category: DL
 
 像素级drop -> 区域级drop
 
+![](/images/img5/dropblock.png)
+
+上图是区域级drop的示意图。区域级drop也叫做DropBlock。drop掉一块区域，会迫使网络学习其他区域信息，更有利于提取全局特征。
+
 ---
 
 经过dropout之后，输出的均值没有发生变化，但是方差发生了变化。

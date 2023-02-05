@@ -119,11 +119,29 @@ $$x'=f_{prompt}(x)$$
 
 如何设计合适的[X]和[Z]，就是Prompt Learning的主要议题了。
 
+---
+
+目前学术界一般将NLP任务的发展分为四个阶段即NLP四范式：
+
+第一范式：基于传统机器学习模型的范式，如tf-idf特征+朴素贝叶斯等机器算法；
+
+第二范式：基于深度学习模型的范式，如word2vec特征+LSTM等深度学习算法，相比于第一范式，模型准确有所提高，特征工程的工作也有所减少；
+
+第三范式：基于预训练模型+finetuning的范式，如BERT+finetuning的NLP任务，相比于第二范式，模型准确度显著提高，但是模型也随之变得更大，但小数据集就可训练出好模型；
+
+第四范式：基于预训练模型+Prompt+预测的范式，如BERT+Prompt的范式相比于第三范式，模型训练所需的训练数据显著减少。
+
+---
+
 参考：
 
 https://mp.weixin.qq.com/s/dkNH4BLOH36B5h_UCcRLnA
 
 NLP新宠——浅谈Prompt的前世今生
+
+https://www.zhihu.com/question/504324484
+
+Prompt Tuning相比于Fine Tuning在哪些场景下表现更好？
 
 https://mp.weixin.qq.com/s/2eA4PBd-wr9tVyyuzJ66Bw
 
@@ -342,35 +360,3 @@ https://zhuanlan.zhihu.com/p/30265894
 https://mp.weixin.qq.com/s/qyQjKsgktWv9SihotaQX3w
 
 从顶会看自监督学习最新研究进展
-
-https://mp.weixin.qq.com/s/cTlXMxcpzc7_5NVsTm1jcA
-
-学习一帧，为整段黑白视频上色：谷歌提出自监督视觉追踪模型
-
-https://mp.weixin.qq.com/s/Amr34SdrPZho1GQpFS7WBA
-
-见微知著：语义分割中的弱监督学习
-
-https://mp.weixin.qq.com/s/zOWA1oKbopZJuYIAYYlKTA
-
-港中文-商汤联合论文：自监督语义分割的混合与匹配调节
-
-https://mp.weixin.qq.com/s/5xlSoC5sgzsAwMYMSFCjnw
-
-TextTopicNet:CMU开源无标注高精度自监督模型
-
-https://mp.weixin.qq.com/s/343DfjOvkaozuxNK89V3zQ
-
-前景目标检测的无监督学习
-
-https://mp.weixin.qq.com/s/DwY0oGu-G30Szs-ArI5WaQ
-
-程明明：面向弱监督的图像理解
-
-https://mp.weixin.qq.com/s/LFOljv-Hr6JqyI6TQ2X4sw
-
-半监督学习也能自动化？南大和第四范式提出Auto-SSL
-
-https://mp.weixin.qq.com/s/83xAXrc_H_OExW3vii08hA
-
-谷歌提出新方法：基于单目视频的无监督深度学习结构化

@@ -153,6 +153,10 @@ https://zhuanlan.zhihu.com/p/347599203
 
 TFRT的开源代码分析
 
+https://zhuanlan.zhihu.com/p/600622073
+
+AI编译器之后端优化
+
 ## MLIR
 
 Multi-Level IR

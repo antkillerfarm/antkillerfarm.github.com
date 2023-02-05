@@ -170,6 +170,12 @@ https://blog.csdn.net/weixin_41868104/article/details/124420500
 
 Ubuntu20配置ffmpeg进行gpu硬件加速视频编码记录
 
+## Other
+
+https://baijiahao.baidu.com/s?id=1660308952680999991
+
+电影片源命名格式大扫盲，看懂WEB-DL/BDRip/BluRay/REMUX/4K区别
+
 # 中文编码格式问题
 
 常用的中文编码格式，主要包括大陆的GB系列和台湾的BIG5系列。

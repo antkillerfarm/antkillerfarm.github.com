@@ -7,60 +7,6 @@ category: DL
 * toc
 {:toc}
 
-# OCR（续）
-
-https://mp.weixin.qq.com/s/gKsfsRxsbfXGOsSqeQEDbw
-
-CVPR2019：文本检测算法综述
-
-https://mp.weixin.qq.com/s/H2VjRKMsuL_yrhP_v_LiVQ
-
-自然场景文本检测与识别中的深度学习方法综述
-
-https://zhuanlan.zhihu.com/p/68058851
-
-自然场景下的文字检测：从多方向迈向任意形状
-
-https://mp.weixin.qq.com/s/jO2xc7Ri6TvrHyXHH0uX4w
-
-金山WPS：基于本地TensorFlow Lite和AI云服务的文档矫正功能
-
-https://mp.weixin.qq.com/s/3t8yzjMXiZwgqBb8izVfFg
-
-场景文字检测模型PixelLink详解与使用
-
-https://zhuanlan.zhihu.com/p/68356509
-
-TensorFlow 2.0中文手写字识别（汉字OCR）
-
-https://mp.weixin.qq.com/s/F0bPat3KUEVnej77OdfYAg
-
-文本检测大满贯！自适应文本区域表示改进形状任意的文本检测
-
-https://mp.weixin.qq.com/s/QwkKqybzW0tYcGojQg9r2w
-
-深度学习场景文字检测识别，20页综述带你了解领域最新动态
-
-https://mp.weixin.qq.com/s/j8Xvj7OSoFZp-zIrd3Xjow
-
-华科提出对称性约束的校正网络ScRN，显著改进场景文本识别
-
-https://github.com/ctripcorp/C-OCR
-
-携程自研的OCR项目
-
-https://mp.weixin.qq.com/s/fZN8mtZdB4Fd6gj2dAKURw
-
-金连文：“文字检测与识别：现状及展望”
-
-https://mp.weixin.qq.com/s/_GU5y7v8HNDOjEGvWh8Fkw
-
-旷视研究院提出文字检测新方法：像素聚合网络PAN
-
-https://mp.weixin.qq.com/s/rWqmIfgNGoC4D2wl8INmtQ
-
-OCR深度实践系列：图像预处理
-
 # 问答系统
 
 GA-Reader
@@ -320,3 +266,17 @@ RBM用KL散度来衡量预测的概率分布与输入值的基准分布之间的
 权重能够近似模拟出数据的特征后，也就为下一步的学习奠定了良好基础，比如可以在随后的有监督学习阶段使用深度置信网络来对图像进行分类。
 
 RBM有许多用途，其中最强的功能之一就是对权重进行合理的初始化，为之后的学习和分类做好准备。从某种意义上来说，RBM的作用与反向传播相似：让权重能够有效地模拟数据。可以认为预训练和反向传播是实现同一个目的的不同方法，二者可以相互替代。
+
+## DBM & DBN
+
+![](/images/img4/DBM.png)
+
+RBM不仅可以单独使用，也可以堆叠起来形成Deep Boltzmann Machine(DBM)和Deep Belief Nets(DBN)，其中每个RBM层都与其前后的层进行通信。单个层中的节点之间不会横向通信。
+
+DBM是直接是拟合一个joint分布，而DBN是RBM叠加了很多bayes net。
+
+DBN可以直接用于处理无监督学习中的未标记数据聚类问题，也可以在RBM层的堆叠结构最后加上一个Softmax层来构成分类器。
+
+除了第一个和最后一个层，DBN中的每一层都扮演着双重角色：既是前一层节点的隐藏层，也是后一层节点的输入（或“可见”）层。DBN是由多个单层网络组成的。
+
+DBN常用于图像、视频序列和动作捕捉数据的识别、聚类与生成。

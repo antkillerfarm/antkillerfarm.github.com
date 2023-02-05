@@ -20,6 +20,8 @@ tensorflow/core/kernels/hexagon
 
 上图是另一个计算图优化的例子。
 
+![](/images/img5/fuse.jpg)
+
 参考：
 
 https://developers.googleblog.com/2017/03/xla-tensorflow-compiled.html

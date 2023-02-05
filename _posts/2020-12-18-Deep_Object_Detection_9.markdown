@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（九）——YOLOv5
+title:  深度目标检测（九）——YOLOv5, YOLOX, YOLOv6, YOLOv7, YOLOv8
 category: Deep Object Detection 
 ---
 
@@ -8,6 +8,44 @@ category: Deep Object Detection
 {:toc}
 
 # YOLOv4（续）
+
+参考：
+
+https://zhuanlan.zhihu.com/p/135909702
+
+大神接棒，YOLOv4来了！
+
+https://mp.weixin.qq.com/s/Ia1ZhAeTgt8anXVd4qxE3A
+
+一张图梳理YOLOv4论文
+
+https://mp.weixin.qq.com/s/ugx6CwMTqGR8CT5xpye6vw
+
+对象检测YOLOv4版本来了！
+
+https://mp.weixin.qq.com/s/XEPhK81Ms-wdDnoz5oPZgA
+
+YOLO v4它来了：接棒者出现，速度效果双提升
+
+https://mp.weixin.qq.com/s/Ny_4lK1E3bqz-LL-hHiFlg
+
+YOLO项目复活！大神接过衣钵，YOLO之父隐退2月后，v4版正式发布，性能大幅提升
+
+https://mp.weixin.qq.com/s/9SR5CUDIBmdJeYEWABASWA
+
+YOLOv4的各种新实现、配置、测试、训练资源汇总
+
+https://mp.weixin.qq.com/s/iGhYxBLdGHPydVi2FgkNtg
+
+YOLO系列：V1,V2,V3,V4简介
+
+https://mp.weixin.qq.com/s/E5TS0NuSWCWmxrJnN8AUKA
+
+想读懂YOLOV4，你需要先了解下列技术(一)
+
+https://mp.weixin.qq.com/s/5usz-wraHArK6_HcE4RuZw
+
+想读懂YOLOV4，你需要先了解下列技术(二)
 
 https://mp.weixin.qq.com/s/v2x3u3_FELz2lHqBJKR-dg
 
@@ -38,6 +76,11 @@ YOLOv5由Darknet的另一贡献者Ultralytics创建并维护（2020.5）。这�
 https://github.com/ultralytics/yolov5
 
 ![](/images/img5/YOLOv5.jpg)
+
+- 输入端：Mosaic数据增强、自适应锚框计算、自适应图片缩放
+- Backbone：Focus结构，CSP结构
+- Neck：FPN+PAN结构
+- Prediction：GIOU_Loss
 
 参考：
 
@@ -95,7 +138,16 @@ YOLOX是旷视科技2021年的作品。
 
 ![](/images/img5/YOLOX.jpg)
 
+![](/images/img5/Decoupled_Head.webp)
 
+YOLOX改进点：
+
+- Decoupled Head结构。简单说，分类和回归两个任务的head不再共享参数。
+- Mosaic + MixUp的数据增强方法。不过需要注意：在训练的最后15个epoch，这两个数据增强会被关闭掉。
+- Anchor Free。基于中心点，预测网格左上角的两个偏移量，以及预测框的高度和宽度。
+- SimOTA样本匹配。
+
+传统的YOLO系列都使用同一Head进行分类和回归。YOLOX则将分类和回归分支解耦。但由于出头的位置相当靠后，也没有RPN，所以还是One-stage模型。
 
 参考：
 
@@ -103,17 +155,104 @@ https://www.zhihu.com/question/473350307
 
 如何评价旷视开源的YOLOX，效果超过YOLOv5?
 
+# YOLOv6
+
+YOLOv6是美团2022年的作品，并得到了YOLO官方的认可。
+
+这里首先推荐一下：
+
+https://mmyolo.readthedocs.io/
+
+这个网站包含了YOLOv5以后各YOLO系列的资料，包括网络结构图。
+
+![](/images/img5/YOLOv6.png)
+
+YOLOv6的改进：
+
+- RepVGG style的Backbone。
+- 更简洁高效的Decoupled Head。
+
+## RepVGG
+
+YOLOv6包括后面的YOLOv7、YOLOv8都采用了RepVGG style作为Backbone。因此这里我们先来讲一下什么是RepVGG。
+
+论文：
+
+《RepVGG: Making VGG-style ConvNets Great Again》
+
+![](/images/img5/RepVGG.png)
+
+相比于各种多分支架构（如ResNet，Inception，DenseNet，各种NAS架构），近年来VGG式模型鲜有关注，主要是因为效果差。但是单路架构毕竟也有计算速度快，省内存的优点。
+
+因此，一个很自然的想法就是：如何同时利用多分支模型训练时的优势（性能高）和单路模型推理时的好处（速度快、省内存）。
+
+RepVGG采用了一种很巧妙的构造方法做到了这一点。
+
+![](/images/img5/RepVGG_2.png)
+
+如上图所示3x3、1x1和bypass的分支，最终都被合并为一个计算出来的3x3 kernel。
+
+当然，YOLOv6并没有直接使用RepVGG，而是使用了RepVGG style或者是RepVGG的思路。这种思路有时也叫做RepConv。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/344324470
+
+RepVGG：极简架构，SOTA性能，让VGG式模型再次伟大
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/533127196
+
+YOLOv6：又快又准的目标检测框架开源啦
+
 https://zhuanlan.zhihu.com/p/566469003
 
 YOLO内卷时期该如何选模型？
+
+# YOLOv7
+
+YOLOv7是Alexey Bochkovskiy团队（YOLOv4团队）2022年的作品。
+
+![](/images/img5/YOLOv7.jpg)
+
+论文：
+
+《YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors》
+
+YOLOv7的改进：
+
+- 扩展了高效长程注意力网络，称为Extended-ELAN（E-ELAN）。
+- auxiliary head。
+
+参考：
 
 https://www.zhihu.com/question/541985721
 
 如何评价Alexey Bochkovskiy团队提出的YoloV7？
 
+https://zhuanlan.zhihu.com/p/543743278
+
+深入浅出Yolo系列之Yolov7基础网络结构详解
+
+# YOLOv8
+
+YOLOv8是Ultralytics（YOLOv5团队）2023年的作品。
+
+![](/images/img5/YOLOv8.jpg)
+
+YOLOv8的改进：
+
+- 分类损失为VFL Loss，其回归损失为CIOU Loss+DFL（Distribution Focal Loss）。
+- TOOD的TaskAlignedAssigner。
+
 https://zhuanlan.zhihu.com/p/598566644
 
 YOLOv8深度详解
+
+https://blog.csdn.net/qq_40716944/article/details/128609569
+
+详细解读YOLOv8的改进模块
 
 # 目标检测进阶
 
@@ -264,127 +403,3 @@ https://mp.weixin.qq.com/s/nL9l7hvG3RG7G7LzCzzvug
 https://mp.weixin.qq.com/s/ZQqcsJenqkXtH1czOe5WnA
 
 阿里巴巴提出Auto-Context R-CNN算法，刷出Faster RCNN目标检测新高度
-
-https://mp.weixin.qq.com/s/aLYQepnr_BjS27Fb-zoZ_g
-
-迈向完全可学习的物体检测器：可学习区域特征提取方法
-
-https://zhuanlan.zhihu.com/p/43655912
-
-“别挡我，我要C位出道！”谈谈深度学习目标检测中的遮挡问题
-
-https://mp.weixin.qq.com/s/VtlSVF4d9LwPJhDEYSbgTg
-
-无监督难分样本挖掘改进目标检测
-
-https://mp.weixin.qq.com/s/AupXIoVmhcOBrX1z1vgdtw
-
-弱监督实现精确目标检测，上交大提出协同学习框架
-
-https://mp.weixin.qq.com/s/Lt00ASVSb_fDDJdtCO0-tQ
-
-物体检测中的结构推理网络
-
-https://mp.weixin.qq.com/s/f0Ynln-27z5A6LXt8j5qKQ
-
-据说以后在探头下面用帽子挡脸没用了：SymmNet遮挡物检测的对称卷积神经网络
-
-https://mp.weixin.qq.com/s/cEg6HmS651riJVAtHdPafg
-
-基于域适应弱监督学习的目标检测
-
-https://mp.weixin.qq.com/s/A51X1e9E9T9pPbYdQVQtSg
-
-你是个成熟的C位检测器了，应该可以自动找C位了
-
-https://mp.weixin.qq.com/s/k8msLl6c2Cp_5h-4xBD6Zw
-
-CVPR2019-目标检测分割技术进展
-
-https://mp.weixin.qq.com/s/uzG8sic5Y6LVqBS6iKQDhw
-
-目标检测中图像增强，mixup如何操作？
-
-https://mp.weixin.qq.com/s/pkFcmm15gnuRJtngFX7f0w
-
-目标检测训练trick超级大礼包—不改模型提升精度，值得拥有
-
-https://mp.weixin.qq.com/s/flXzhQ-Ypf3fwTqLelLzOQ
-
-李沐等将目标检测绝对精度提升5%，不牺牲推理速度
-
-https://mp.weixin.qq.com/s/6QsyYtEVjavoLfU_lQF1pw
-
-目标检测新文：Generalized Intersection over Union
-
-https://mp.weixin.qq.com/s/Xs3nThAcUOq62bO2p61YFA
-
-论文解读 Receptive Field Block Net for Accurate and Fast
-
-https://mp.weixin.qq.com/s/dcrBQ-t3tLOTouEyofOBxg
-
-间谍卫星：利用卷积神经网络对卫星影像进行多尺度目标检测
-
-https://mp.weixin.qq.com/s/LtXylKTKsHdjMPw9Q1HyXA
-
-优于MobileNet、YOLOv2：移动设备上的实时目标检测系统Pelee
-
-https://mp.weixin.qq.com/s/xpk9LhsZ3dRMvqR6Uc5jeg
-
-Pelee：移动端实时检测骨干网络
-
-https://mp.weixin.qq.com/s/Gq3bflJq59Tx-nDCvbweNA
-
-无需预训练分类器，清华&旷视提出专用于目标检测的骨干网络DetNet
-
-https://mp.weixin.qq.com/s/u3eXhoFvo7vZujc0XoQQWQ
-
-旷视研究院解读Light-Head R-CNN：平衡精准度和速度
-
-https://mp.weixin.qq.com/s/6cUP9vvfcuv8rIEnGnAFiA
-
-NCSU&阿里巴巴论文：可解释的R-CNN
-
-https://mp.weixin.qq.com/s/1vOdOMyByBacSBMVrscq5Q
-
-黄畅：基于DenesBox的目标检测在自动驾驶中的应用
-
-https://mp.weixin.qq.com/s/-PeXMU_gkcT5YnMcLoaKag
-
-CVPR清华大学研究，高效视觉目标检测框架RON
-
-https://mp.weixin.qq.com/s/XoKdsQKyaI3LsDxF7uyKuQ
-
-聊聊目标检测中的多尺度检测（Multi-Scale），从YOLO到FPN，SNIPER，SSD填坑贴和极大极小目标识别
-
-https://mp.weixin.qq.com/s/GpZHGksl0elxMcaQYosK-A
-
-SNIP的升级版SNIPER（效果比Mosaic更佳）
-
-https://mp.weixin.qq.com/s/XdH54ImSfgadCoISmVyyVg
-
-基于单目摄像头的物体检测
-
-https://mp.weixin.qq.com/s/h_ENriEXr7WI_XR_DtxpMQ
-
-这样可以更精确的目标检测——超网络
-
-https://mp.weixin.qq.com/s/dFoUO4xArZpmtbKg1Kx6Zg
-
-COCO mAP 53.3！骨干网合成算法CBNet带来目标检测精度新突破
-
-https://mp.weixin.qq.com/s?__biz=MzIwMTc4ODE0Mw==&mid=2247499933&idx=1&sn=b9fe7d6714c44acedd12a60cfe6b1c60
-
-小样本域适应的目标检测
-
-https://zhuanlan.zhihu.com/p/84890413
-
-PolarMask：一阶段实例分割新思路
-
-https://mp.weixin.qq.com/s/t8pVNeW2Y-QQwD8H9Nk83w
-
-定向和密集的目标检测怎么办？动态优化网络来解决
-
-https://mp.weixin.qq.com/s/oF3MAkl1UikRkOhrj3equw
-
-深度学习的目标检测算法是如何解决尺度问题的？

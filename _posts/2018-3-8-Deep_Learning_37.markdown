@@ -9,6 +9,38 @@ category: DL
 
 # 无监督/半监督/自监督深度学习
 
+https://mp.weixin.qq.com/s/cTlXMxcpzc7_5NVsTm1jcA
+
+学习一帧，为整段黑白视频上色：谷歌提出自监督视觉追踪模型
+
+https://mp.weixin.qq.com/s/Amr34SdrPZho1GQpFS7WBA
+
+见微知著：语义分割中的弱监督学习
+
+https://mp.weixin.qq.com/s/zOWA1oKbopZJuYIAYYlKTA
+
+港中文-商汤联合论文：自监督语义分割的混合与匹配调节
+
+https://mp.weixin.qq.com/s/5xlSoC5sgzsAwMYMSFCjnw
+
+TextTopicNet:CMU开源无标注高精度自监督模型
+
+https://mp.weixin.qq.com/s/343DfjOvkaozuxNK89V3zQ
+
+前景目标检测的无监督学习
+
+https://mp.weixin.qq.com/s/DwY0oGu-G30Szs-ArI5WaQ
+
+程明明：面向弱监督的图像理解
+
+https://mp.weixin.qq.com/s/LFOljv-Hr6JqyI6TQ2X4sw
+
+半监督学习也能自动化？南大和第四范式提出Auto-SSL
+
+https://mp.weixin.qq.com/s/83xAXrc_H_OExW3vii08hA
+
+谷歌提出新方法：基于单目视频的无监督深度学习结构化
+
 https://mp.weixin.qq.com/s/gr0_p4WFToTrDfy47h-p0A
 
 基于自监督学习的视听觉信息同一性判断
@@ -306,17 +338,3 @@ https://www.zhihu.com/question/558898977
 ---
 
 白鹅版瓦格纳GardService可能作为志愿者加入对线。
-
----
-
-普京搁这儿玩绝命时刻呢。
-
-什么步兵将军，坦克将军，导弹将军，空天将军，大炮将军，核弹将军都得轮流换一遍。
-
-每换一个媒体还配合介绍下这位将军特殊能力是啥。
-
-真当玩游戏么是吧。
-
----
-
-7月9日，俄军放出了一段视频，视频显示俄军正在使用OTR-21，即圆点-U弹道导弹打击乌军目标。视频存活的时间非常短，不到数分钟就被俄罗斯人撤下，因为他们突然想起来，自己在几个月前否认了还有圆点-U这一导弹的库存！如果大家忘记了，我想提醒各位的是，4月8日，俄军使用圆点-U攻击了乌占区的克拉玛托尔斯克火车站（关于乌占区很好例证，因为这地方是乌军纵深现在还在乌克兰手里），造成了大量平民伤亡。事后发现自己的所作所为过于反人类之后，俄军立刻“官宣”自己早已淘汰了所有的圆点-U，这导弹是乌克兰人打的！

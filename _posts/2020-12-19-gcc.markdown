@@ -324,6 +324,22 @@ TableGen Language Reference
 
 ## 参考
 
+所谓的intrinsic function ，是属于编译器开洞魔法的范畴，这些函数的实现是直接写死在编译器的代码生成部分的，在最终得到的二进制里面不会存在这些函数的符号和实现。
+
+https://zhuanlan.zhihu.com/p/348365662
+
+C++标准库开洞史
+
+https://www.zhihu.com/question/569519423
+
+C++标准库中是否有需要依赖编译器魔法才能实现的功能？
+
+
+
+C/C++函数“必须声明但禁止定义”才能使用，函数地址也不存在，是什么神奇的操作？
+
+---
+
 https://mp.weixin.qq.com/s/FSlJKnC0y51nsLDp1B3tXg
 
 Swift编译器Crash—Segmentation fault解决方案

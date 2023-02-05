@@ -51,6 +51,8 @@ Without gas or without you? – The answer is without you. Without electricity o
 
 今年是从2月24日开始的，没有序言也没有前奏。我们被告知除了投降别无选择，我们回应说除了胜利别无选择。
 
+for me he is nobody, nobody.
+
 ---
 
 2022年2月22日 普京签署承认“顿涅茨克共和国”和“卢甘斯克共和国”的命令。

@@ -109,6 +109,10 @@ https://www.zhihu.com/question/352476422
 
 ---
 
+地球静止轨道的理论由赫尔曼·波托西尼克在1928年首次提出，而后亚瑟·查理斯·克拉克在他的小说《无线世界》中，提议将通讯卫星放置在地球静止轨道。因此有时静止轨道也被称为克拉克轨道。
+
+---
+
 ![](/images/img3/Chicxulub-Crater-Yucatan.jpg)
 
 ![](/images/img3/NEA.png)
@@ -142,6 +146,10 @@ https://www.zhihu.com/question/425874775
 https://mp.weixin.qq.com/s/nXbjy6v0sgfG42DrRCohcA
 
 刚路过太阳，下面是地球人对我的探索回顾
+
+https://zhuanlan.zhihu.com/p/602523053
+
+大冲击！你我都是幸存者的后代
 
 # 黑洞
 

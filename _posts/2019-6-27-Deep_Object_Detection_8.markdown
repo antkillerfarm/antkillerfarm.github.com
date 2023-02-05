@@ -7,6 +7,40 @@ category: Deep Object Detection
 * toc
 {:toc}
 
+# Anchor-Free（续）
+
+https://mp.weixin.qq.com/s/4UEmRcSo0ZGoiLh6iKf_oQ
+
+ATSS：自动选择样本，消除Anchor based和Anchor free物体检测方法之间的差别
+
+https://mp.weixin.qq.com/s/UhHh_DFoxKW5K3OCe3Bjqg
+
+目标检测：Anchor-Free时代
+
+https://mp.weixin.qq.com/s/PqDkdxqvUvSKvTklVojOyA
+
+CPNDet：简单地给CenterNet加入two-stage，更快更强
+
+https://mp.weixin.qq.com/s/7mHhltqDcnYZdHWoRS_EBg
+
+YOLO之外的另一选择，手机端97FPS的Anchor-Free目标检测模型NanoDet现已开源
+
+https://zhuanlan.zhihu.com/p/336016003
+
+OneNet: End-to-End One-Stage Object Detection
+
+https://mp.weixin.qq.com/s/0FPpc2PhLPiE9mg6eRh11Q
+
+OneNet：一阶段的端到端物体检测器，无需NMS
+
+https://mp.weixin.qq.com/s/ov4xLhicTqsce0bG2pw95A
+
+anchor-base和anchor-free差异分析
+
+https://mp.weixin.qq.com/s/yft97xTTX0FUXpyHtI_XMQ
+
+anchor-free存在什么缺点？
+
 # 其它目标检测网络
 
 ## A-Fast-RCNN
@@ -67,11 +101,23 @@ DIOU_Loss考虑了重叠面积和中心点距离，当目标框包裹预测框�
 
 ## CIOU
 
+CIOU loss= IOUloss+中心点损失+长宽比例损失
+
 $$CIOU\_ Loss=1-CIOU=1-(IOU-\frac{Distance\_ 2^2}{Distance\_ C^2}-\frac{v^2}{(1-IOU)+v})$$
 
 $$v=\frac{4}{\pi^2}(\arctan\frac{w^{gt}}{h^{gt}}-\arctan\frac{w^{p}}{h^{p}})^2$$
 
 由于NMS也和IOU有关，所以对应的也有DIOU_nms等。
+
+## EIoU & SIoU
+
+EIOU loss =IOUloss+中心点损失+宽损失+长损失
+
+SIoU =Distance cost（angle + distance）+Shape cost+IOU loss
+
+https://zhuanlan.zhihu.com/p/537428926
+
+一文搞懂EIoU与SIoU
 
 ## 参考
 
@@ -337,41 +383,3 @@ Yolov4的五个基本组件：
 - BackBone主干网络：将各种新的方式结合起来，包括：CSPDarknet53、Mish激活函数、Dropblock。
 - Neck：目标检测网络在BackBone和最后的输出层之间往往会插入一些层，比如Yolov4中的SPP模块、FPN+PAN结构。
 - Prediction：输出层的锚框机制和Yolov3相同，主要改进的是训练时的损失函数CIOU_Loss，以及预测框筛选的nms变为DIOU_nms。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/135909702
-
-大神接棒，YOLOv4来了！
-
-https://mp.weixin.qq.com/s/Ia1ZhAeTgt8anXVd4qxE3A
-
-一张图梳理YOLOv4论文
-
-https://mp.weixin.qq.com/s/ugx6CwMTqGR8CT5xpye6vw
-
-对象检测YOLOv4版本来了！
-
-https://mp.weixin.qq.com/s/XEPhK81Ms-wdDnoz5oPZgA
-
-YOLO v4它来了：接棒者出现，速度效果双提升
-
-https://mp.weixin.qq.com/s/Ny_4lK1E3bqz-LL-hHiFlg
-
-YOLO项目复活！大神接过衣钵，YOLO之父隐退2月后，v4版正式发布，性能大幅提升
-
-https://mp.weixin.qq.com/s/9SR5CUDIBmdJeYEWABASWA
-
-YOLOv4的各种新实现、配置、测试、训练资源汇总
-
-https://mp.weixin.qq.com/s/iGhYxBLdGHPydVi2FgkNtg
-
-YOLO系列：V1,V2,V3,V4简介
-
-https://mp.weixin.qq.com/s/E5TS0NuSWCWmxrJnN8AUKA
-
-想读懂YOLOV4，你需要先了解下列技术(一)
-
-https://mp.weixin.qq.com/s/5usz-wraHArK6_HcE4RuZw
-
-想读懂YOLOV4，你需要先了解下列技术(二)

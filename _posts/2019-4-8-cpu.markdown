@@ -207,50 +207,34 @@ DUV是深紫外线（Deep Ultraviolet Lithography），EUV是极深紫外线（E
 
 ---
 
-倒也不全是SMEE的锅。毕竟镜子是国望光学做的，光源是科益虹源做的，双工台是华卓精科做的。加工精度达不到，运动控制精度达不到，器件频率达不到。还有很多很多性能指标达不到，整体就别想达到nxt1980型的性能。
+ASML光刻机分为四大等级:
 
-中微的5nm应用其实是偷换了一波概念。5nm芯片的刻蚀简单可以说是分成前后段，后段刻的都是大via，刻蚀精度要求不高的，而中微的设备，人家只是为了节省成本用在后段刻蚀上，其实前段的根本没法用，还是差老远。
+A、EUV7nm及以下。
+
+B、DUV湿法先进制程16-7nm。
+
+C、DUV湿法成熟制程45-28nm。
+
+D、DUV干法110-65nm。
 
 ---
 
-参考：
+目前实现商业量产完成度最高的先进制程光刻机，其一是DUV/EUV光刻机，其二是NIL（Nanoimprint Lithography）光刻机。
 
-https://mp.weixin.qq.com/s/NZGNrO_LxNc6qrIdofOIfQ
+DUV/EUV光刻机，主要涉及的企业是荷兰ASML和日本尼康。
 
-假如没有他（林本坚），就没有今天的台积电
+1995年，华裔科学家周郁（Stephen Chou）教授首次提出纳米压印概念。
 
-https://mp.weixin.qq.com/s/-cudXRIo0t4gNpEqVJ7vKw
+NIL光刻的相关企业：
 
-芯片光刻的流程详解
+Nanonex，就是周郁大佬参与的公司，总部在新泽西普林斯顿。
 
-https://mp.weixin.qq.com/s/V2AY7VcUEFCMAdMPJ54ZiA
+佳能，虽然是日本公司，但是佳能NIL光刻机大部分技术来自收购的Molecular Imprints，这家公司位于德克萨斯，至今佳能NIL光刻机的研发中心也还在德克萨斯奥斯汀。
 
-一文看懂光刻机
+HP，这个更是不用多说，几乎人人都知道HP是美国企业。
 
-https://mp.weixin.qq.com/s/VY0WeBfZ2vN8OaupcsEvxw
+---
 
-光刻胶发展历史
+倒也不全是SMEE的锅。毕竟镜子是国望光学做的，光源是科益虹源做的，双工台是华卓精科做的。加工精度达不到，运动控制精度达不到，器件频率达不到。还有很多很多性能指标达不到，整体就别想达到nxt1980型的性能。
 
-https://mp.weixin.qq.com/s/odDzhxRsGuZYOdYtbrHV8Q
-
-一文看懂光刻胶
-
-https://mp.weixin.qq.com/s/jqP52LFcmd5oGRLBfE2J_A
-
-光刻机编年史（1959-1969）
-
-https://mp.weixin.qq.com/s/YvzxV5NLz4FkKO71bxpAIA
-
-给孩子讲讲光刻机吧
-
-https://mp.weixin.qq.com/s/6Uod0Ngw4wDIISJZVDQ92A
-
-光刻缘何成为卡脖子技术？
-
-https://mp.weixin.qq.com/s/6BnrAEMpZxJ3ChBHWQ9mWA
-
-台积电缺电！30台EUV光刻机一天耗电90万度
-
-https://mp.weixin.qq.com/s/AUDDEYETPdJSyIdpMl4hLQ
-
-一文看懂ASML EUV光刻技术
+中微的5nm应用其实是偷换了一波概念。5nm芯片的刻蚀简单可以说是分成前后段，后段刻的都是大via，刻蚀精度要求不高的，而中微的设备，人家只是为了节省成本用在后段刻蚀上，其实前段的根本没法用，还是差老远。

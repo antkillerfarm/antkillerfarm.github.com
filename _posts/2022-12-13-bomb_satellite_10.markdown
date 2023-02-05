@@ -9,6 +9,14 @@ category: Bombs & Satellite
 
 # 两弹一星
 
+沈飞在仅半年时间里投产了300架歼-6III，结果1970年交付部队的299架歼-6III都出现了大量技术质量问题：飞机纵向稳定性差，后机身温度高，机尾罩烧坏，进气道掉铆钉，液压系统不可靠，襟翼滑轨变形等。导致几乎全部交付部队的歼-6III都停飞。
+
+https://www.zhihu.com/answer/2610013508
+
+你知道七十年代工人的地位吗？
+
+---
+
 ![](/images/img3/top10.png)
 
 ![](/images/img4/manufact.jpg)

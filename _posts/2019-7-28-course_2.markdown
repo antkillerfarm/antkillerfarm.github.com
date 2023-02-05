@@ -211,6 +211,18 @@ FLOTUS: First Lady of the United States
 
 lifetime achievement：终身成就奖
 
+---
+
+three-year-old boy（✓）
+
+three-years-old boy（×）
+
+同样的
+
+three-body problem（✓）
+
+three-bodies problem（×）
+
 # 可视化+
 
 https://mp.weixin.qq.com/s/8J-uDw0qwDbj21UkQch2KA

@@ -7,21 +7,9 @@ category: DL
 * toc
 {:toc}
 
-# RBM & DBM & DBN & Deep Autoencoder（续）
+# RBM & DBM & DBN & Deep Autoencoder
 
-## DBM & DBN
-
-![](/images/img4/DBM.png)
-
-RBM不仅可以单独使用，也可以堆叠起来形成Deep Boltzmann Machine(DBM)和Deep Belief Nets(DBN)，其中每个RBM层都与其前后的层进行通信。单个层中的节点之间不会横向通信。
-
-DBM是直接是拟合一个joint分布，而DBN是RBM叠加了很多bayes net。
-
-DBN可以直接用于处理无监督学习中的未标记数据聚类问题，也可以在RBM层的堆叠结构最后加上一个Softmax层来构成分类器。
-
-除了第一个和最后一个层，DBN中的每一层都扮演着双重角色：既是前一层节点的隐藏层，也是后一层节点的输入（或“可见”）层。DBN是由多个单层网络组成的。
-
-DBN常用于图像、视频序列和动作捕捉数据的识别、聚类与生成。
+## DBM & DBN（续）
 
 参考：
 
@@ -259,3 +247,61 @@ https://mp.weixin.qq.com/s/ZuiKVan3EqOQDR1wjH01WA
 https://mp.weixin.qq.com/s/MdmB4lzSjSYrhc07Gwe8mQ
 
 基于PyTorch，集合17种方法，南京大学等提出小样本算法库LibFewShot
+
+# DRL参考资源+
+
+https://mp.weixin.qq.com/s/W9yhj7_frLYWJocoBR1TMQ
+
+避免AI错把黑人识别为大猩猩：伯克利大学提出协同反向强化学习
+
+https://mp.weixin.qq.com/s/p2hlc2PsLgrvxOF8wBZANg
+
+李飞飞高徒范麟熙解析强化学习在游戏和现实中的应用
+
+http://mp.weixin.qq.com/s/EPbKE-TAnAPugJDhXHEyNA
+
+DeepMind开源Psychlab平台——搭建AI和认知心理学的桥梁
+
+https://mp.weixin.qq.com/s/xJ_g3BvbM-WaIyLthHdhEw
+
+DeepMind发布通用强化学习新范式，自主机器人可学会任何任务
+
+https://mp.weixin.qq.com/s/3HYELsdYwCJeUmXDBXx8NQ
+
+这款超火的游戏，AI只用4小时，就秀出了人类花1年才能达到的水平
+
+https://mp.weixin.qq.com/s/aEXi3XqcrWpAtdcMkFhBxw
+
+强化学习中的调参经验与编程技巧（on policy篇）
+
+https://mp.weixin.qq.com/s/VpvgNhktLBl_p9gkanp4Pw
+
+2020格斗游戏AI冠军方案：基于强化学习对手建模的滚动时域演化算法
+
+https://mp.weixin.qq.com/s/hb7iiJDWnNAXXUJmYKbqaw
+
+强化学习帮我通关了超级玛丽！
+
+https://mp.weixin.qq.com/s/BoZQ8aMF2Aohj536qhfWPg
+
+Nature重磅：OpenAI科学家提出全新增强学习算法，玩游戏可完胜人类，或推动AI向真正智能学习体进化（Go-Explore）
+
+https://mp.weixin.qq.com/s/HBqX6pz4EzO70YpmQ8xtRw
+
+世界上最难的“沙雕”游戏被AI攻破了
+
+https://mp.weixin.qq.com/s/teBlXXw4JQ8k3olCDOKXyw
+
+量化金融自动交易的深度强化学习库。哥大开源“FinRL”
+
+https://mp.weixin.qq.com/s/8UX65PGZkRokguLTnoGVFA
+
+强化学习组合优化综述论文
+
+https://mp.weixin.qq.com/s/Cfim24MSmClvo2HjW7thTw
+
+最强原创综述！当强化学习邂逅组合优化
+
+https://mp.weixin.qq.com/s/nNTag_D_qN7WcE7DEMJFaA
+
+横扫6个SOTA，吊打强化学习！谷歌最强行为克隆算法登CoRL顶会，机器人干活10倍速
