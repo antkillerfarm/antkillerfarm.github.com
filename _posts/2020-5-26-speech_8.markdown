@@ -283,6 +283,14 @@ https://www.zhihu.com/question/406149352
 
 如何看待最新的国际视频编解码标准H.266?
 
+## 流媒体服务器
+
+流媒体服务器主要可用于视频直播领域。
+
+https://cloud.tencent.com/developer/article/1786233
+
+SRS、EasyDarwin、ZLMediaKit、Monibuca对比分析
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/559429803

@@ -85,10 +85,6 @@ https://mp.weixin.qq.com/s/FQ3sxZl8twkGmnJPf1V6ag
 
 服务器芯片三十年战事
 
-https://mp.weixin.qq.com/s/-h9YE3tlvDlUD6TjT8cjEg
-
-KLA-芯片制程控制之王
-
 https://www.zhihu.com/question/310630283
 
 为什么德国和苏联在电子方面一直不如英美？
