@@ -260,29 +260,3 @@ Margaret Heafield Hamilton，1936年生，美国计算机科学家。发明了�
 Hedy Lamarr，1913～2000，美国好莱坞默片时期著名女演员，生于奥地利一个富裕的犹太人银行家庭。她曾与克拉克·盖博等顶级男星合作，主演了多部热门影片。19岁时在电影《神魂颠倒》中裸泳成为世界电影史上第一位裸体出镜的女演员。一生曾有过八次婚姻。
 
 她曾被认为是全欧最美的女人，并因美貌盖过了演技而被人称为花瓶。有意思的是，她其实数学和通信功底很深，是现代无线通信的核心专利跳频技术的第一发明者，CDMA、WiFi等技术都以此为基础。美国电话局主席安东尼·罗德（Anthony Loder）对她的评价所说：“虽然Hedy Lamarr已经被大家遗忘了，但她所做出的一切仍然影响着一代又一代的人。”
-
-参考：
-
-https://mp.weixin.qq.com/s/sIPKApVO-2OYlMKuSl1ZKg
-
-黑洞成像背后的算法
-
-https://mp.weixin.qq.com/s/xPAJ00EImF4mnv79aeVltg
-
-浅析黑洞成像背后的稀疏重构算法原理
-
-https://mp.weixin.qq.com/s/Jmm-dJ84IYhaVFv9OW1WoQ
-
-人类首张黑洞照片幕后英雄：29岁女算法工程师
-
-https://mp.weixin.qq.com/s/dAAjBL3P0FAZQqvWT5CoVw
-
-心酸科研路：3年前CVPR论文，仅被引用11次，如今成就黑洞照片！
-
-https://mp.weixin.qq.com/s/BoF3-GGCFSr7MhVjJ1Erbg
-
-反转？MIT女博士遭质疑：代码贡献太少，黑洞照片功臣另有其人
-
-https://mp.weixin.qq.com/s/VdZLGE3DU80Ycid1ePIR6w
-
-DIY发现新行星操作指南：谷歌开源了行星发现代码

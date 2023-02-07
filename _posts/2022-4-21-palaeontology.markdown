@@ -257,6 +257,46 @@ https://www.zhihu.com/question/375319488
 
 # 地理+
 
+https://mp.weixin.qq.com/s/V-YrYmDxkxj-yIzd60HjAQ
+
+却忧明月潜生祸，极地甲烷起风波
+
+https://mp.weixin.qq.com/s/7440G7FTWtap1fXM5lNrag
+
+十九次出海探矿寻宝，我就是在大洋中乘风破浪的姐姐
+
+https://mp.weixin.qq.com/s/s1hkkdIb1a-g0-GYLli5bA
+
+为什么说竖版世界地图的“中国造”优于“美国造”
+
+https://mp.weixin.qq.com/s/IQ8YSyp-m2jCIDfLtuh_ew
+
+天上会掉金子吗？会！你现在用的这些就是！
+
+https://mp.weixin.qq.com/s/PcAATiyQrfKKLIlEymSsog
+
+河流为什么是弯曲的？
+
+https://mp.weixin.qq.com/s/w0CA3uqZj9llyCxhOU-xgw
+
+地球上十座最危险的毒物废城
+
+https://www.zhihu.com/question/464055142
+
+美国国家地理正式承认南大洋为地球第五大洋，为什么此前不承认？南大洋有哪些特殊的地方？
+
+https://www.zhihu.com/question/22586409
+
+鄱阳湖还有救吗？
+
+https://mp.weixin.qq.com/s/n67jhRbOimVXqN3YKhDzuQ
+
+假如地球南北翻转会怎么样？
+
+https://mp.weixin.qq.com/s/Mdxrwy4NMW0A9sq7FJSU3w
+
+南北也曾是北南
+
 https://mp.weixin.qq.com/s/KR50fOET-9i7yFM6pY18_w
 
 假如有一天，地球上发生了这件事……

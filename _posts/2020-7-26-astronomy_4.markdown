@@ -9,6 +9,26 @@ category: Nature
 
 # SpaceX（续）
 
+https://zhuanlan.zhihu.com/p/272628707
+
+超美国95%宽带！Starlink实测网速突破160Mbps
+
+https://www.zhihu.com/question/508552825
+
+如何看待美SpaceX星链卫星两次接近中国空间站，我方为确保在轨航天员安全实施紧急避碰？
+
+---
+
+Gerald Vincent Bull博士受到美国和加拿大的资助在巴巴多斯(Barbados)建立了一门大炮，称为巴巴多斯大炮，或HARP项目。
+
+巴巴多斯大炮使用了2根406mm战列舰炮管连接而成，长度达到41米。在1966年11月18日的测试中，将180公斤的弹丸加速到2100m/s的速度。弹丸达到180公里的高度，越过100公里高度的卡门线进入太空。
+
+https://www.zhihu.com/question/342491181
+
+造个超大巨炮发射卫星可以吗？
+
+---
+
 SpaceX的Starlink卫星是大规模量产卫星的代表，因为沿用了特斯拉的GIGA工厂的思维建造产线，每颗制造成本低于25万美元，如果计算上猎鹰九号的发射成本，平摊到每颗卫星上成本也不超过65万美元，而一枚反卫星导弹的成本大约1000-2000万美元左右，所以俄罗斯反卫星实验不可能针对Starlink卫星。
 
 大家知道当60颗Starlink卫星准备发射前夕完成堆叠后发现其中几颗有问题会如何？答案是继续发射，因为成本极低并且马斯克的Starlink不是直送低轨，先送到一定高度由每颗Starlink卫星自己的霍尔推进器工作爬到指定的工作高度，因此质量有问题的Starlink卫星释放后不会爬升，而是快速进入大气层自毁不会成为太空垃圾。
@@ -290,39 +310,3 @@ https://mp.weixin.qq.com/s/WGHGXWghWhwcA0tux9bz0g
 https://mp.weixin.qq.com/s/xqBhOAMIs8dONwhgIHZOgQ
 
 火星探测成功率不足50%，人类何时能圆梦？
-
-https://mp.weixin.qq.com/s/25BnV608F7DhIdRWGURBvQ
-
-机智号火星首飞成功！30秒惊险悬停，创造“莱特星球时刻”
-
-https://mp.weixin.qq.com/s/uZofW1nPuu5MNhe9i-CRhA
-
-火星有了第一个机场！人类首架火星无人机试飞成功，场地命名“莱特兄弟机场”
-
-https://mp.weixin.qq.com/s/2nJP3oxgb_AK1P09MCWkTQ
-
-移居火星前，人类需要关注哪些健康风险？
-
-https://mp.weixin.qq.com/s/LNq09_wUKF6dfMrrcSgV-Q
-
-中国火星车即将着陆火星乌托邦平原！
-
-https://mp.weixin.qq.com/s/1W4JcHcO9ZuJnolv05Crvg
-
-中国火神踏上火星！祝融号火星车着陆火星十大问题详解
-
-https://mp.weixin.qq.com/s/DdQoBUgl6kdtrM70FgVGrw
-
-天问一号成功着陆！它是如何到达火星的?
-
-https://mp.weixin.qq.com/s/hSY4rBhCkJDoLlo8Nzmm9Q
-
-天问一号成功着陆！
-
-https://mp.weixin.qq.com/s/mpeHNXktuH9aMxz1Eu6gCw
-
-生活不只眼前的“北上广”，还有诗和火星
-
-https://mp.weixin.qq.com/s/uvSeg8KnPTj_4au_B3WXBw
-
-一文拆解中国火星车着陆全程

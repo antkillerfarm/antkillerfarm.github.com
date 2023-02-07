@@ -199,7 +199,7 @@ Tensor Operator Set Architecture (TOSA) Dialect
 
 ![](/images/img4/codegen-dialect-hierarchy.svg)
 
-
+![](/images/img5/TOSA.png)
 
 文档：
 

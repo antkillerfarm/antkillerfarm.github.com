@@ -103,6 +103,32 @@ https://www.zhihu.com/question/52529145
 
 ---
 
+![](/images/article/yellow_river.jpg)
+
+到了东汉，由于黄河的河道不断下切，导致黄河水位也随之不断降低，原来紧贴着原体的河道就会裸露出来，形成河滩。而这个河滩就让函谷关的天险不复存在。
+
+https://www.sohu.com/a/307458694_100251802
+
+为何大名鼎鼎的函谷关会被潼关所取代? 看完就明白了
+
+---
+
+世界上最大的含水层是美国的奥加拉拉含水层(Ogallala Aquifer)，其面积为日本国土的1.2倍。但是，目前全世界的含水层正在不断枯竭。含水层中的水又称为化石水，是上千年来逐渐聚集而成的。一旦枯竭则无法再生。
+
+---
+
+地表上距离陆地最远的地方叫“尼莫点”在南太平洋中间，要从陆地上到达这里需要航行2700千米左右。
+
+尼莫点是一位叫赫尔沃耶·卢卡泰拉，加拿大克罗地亚裔的测量工程学家，在1992年的时候发现的。“尼莫”一词来自拉丁语，词的意思是“无人”。
+
+陆地上离海最远的点，是我国新疆省塔城地区托里县的老风口。
+
+https://www.zhihu.com/question/530791489
+
+世界上离海最远的地方是哪？
+
+---
+
 https://zhuanlan.zhihu.com/p/53237519
 
 一文读懂印尼海啸的真正原因（喀拉喀托之子）
@@ -194,43 +220,3 @@ https://mp.weixin.qq.com/s/v79QDol1ulEzllqK3niLnw
 https://mp.weixin.qq.com/s/6hJ00no0EScCjYHIIauZ7A
 
 让我们也去看看，青藏高原的雪
-
-https://mp.weixin.qq.com/s/V-YrYmDxkxj-yIzd60HjAQ
-
-却忧明月潜生祸，极地甲烷起风波
-
-https://mp.weixin.qq.com/s/7440G7FTWtap1fXM5lNrag
-
-十九次出海探矿寻宝，我就是在大洋中乘风破浪的姐姐
-
-https://mp.weixin.qq.com/s/s1hkkdIb1a-g0-GYLli5bA
-
-为什么说竖版世界地图的“中国造”优于“美国造”
-
-https://mp.weixin.qq.com/s/IQ8YSyp-m2jCIDfLtuh_ew
-
-天上会掉金子吗？会！你现在用的这些就是！
-
-https://mp.weixin.qq.com/s/PcAATiyQrfKKLIlEymSsog
-
-河流为什么是弯曲的？
-
-https://mp.weixin.qq.com/s/w0CA3uqZj9llyCxhOU-xgw
-
-地球上十座最危险的毒物废城
-
-https://www.zhihu.com/question/464055142
-
-美国国家地理正式承认南大洋为地球第五大洋，为什么此前不承认？南大洋有哪些特殊的地方？
-
-https://www.zhihu.com/question/22586409
-
-鄱阳湖还有救吗？
-
-https://mp.weixin.qq.com/s/n67jhRbOimVXqN3YKhDzuQ
-
-假如地球南北翻转会怎么样？
-
-https://mp.weixin.qq.com/s/Mdxrwy4NMW0A9sq7FJSU3w
-
-南北也曾是北南

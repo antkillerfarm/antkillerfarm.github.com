@@ -7,7 +7,35 @@ category: Nature
 * toc
 {:toc}
 
-# 黑洞（续）
+# 黑洞
+
+## Katie Bouman（续）
+
+参考：
+
+https://mp.weixin.qq.com/s/sIPKApVO-2OYlMKuSl1ZKg
+
+黑洞成像背后的算法
+
+https://mp.weixin.qq.com/s/xPAJ00EImF4mnv79aeVltg
+
+浅析黑洞成像背后的稀疏重构算法原理
+
+https://mp.weixin.qq.com/s/Jmm-dJ84IYhaVFv9OW1WoQ
+
+人类首张黑洞照片幕后英雄：29岁女算法工程师
+
+https://mp.weixin.qq.com/s/dAAjBL3P0FAZQqvWT5CoVw
+
+心酸科研路：3年前CVPR论文，仅被引用11次，如今成就黑洞照片！
+
+https://mp.weixin.qq.com/s/BoF3-GGCFSr7MhVjJ1Erbg
+
+反转？MIT女博士遭质疑：代码贡献太少，黑洞照片功臣另有其人
+
+https://mp.weixin.qq.com/s/VdZLGE3DU80Ycid1ePIR6w
+
+DIY发现新行星操作指南：谷歌开源了行星发现代码
 
 ## 视觉中国
 
@@ -272,23 +300,3 @@ https://www.zhihu.com/question/268278478
 ---
 
 2020年4月1日，“带货女王”薇娅在淘宝直播间卖起了火箭，售价4000万元。据了解，当天在火箭链接上架后5分钟内就有800多人拍下定金。最终“长光卫星技术有限公司”与薇娅相关方联系，确定了购买意向。
-
----
-
-https://zhuanlan.zhihu.com/p/272628707
-
-超美国95%宽带！Starlink实测网速突破160Mbps
-
-https://www.zhihu.com/question/508552825
-
-如何看待美SpaceX星链卫星两次接近中国空间站，我方为确保在轨航天员安全实施紧急避碰？
-
----
-
-Gerald Vincent Bull博士受到美国和加拿大的资助在巴巴多斯(Barbados)建立了一门大炮，称为巴巴多斯大炮，或HARP项目。
-
-巴巴多斯大炮使用了2根406mm战列舰炮管连接而成，长度达到41米。在1966年11月18日的测试中，将180公斤的弹丸加速到2100m/s的速度。弹丸达到180公里的高度，越过100公里高度的卡门线进入太空。
-
-https://www.zhihu.com/question/342491181
-
-造个超大巨炮发射卫星可以吗？

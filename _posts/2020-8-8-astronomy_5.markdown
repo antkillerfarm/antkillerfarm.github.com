@@ -9,6 +9,42 @@ category: Nature
 
 # 火星探测（续）
 
+https://mp.weixin.qq.com/s/25BnV608F7DhIdRWGURBvQ
+
+机智号火星首飞成功！30秒惊险悬停，创造“莱特星球时刻”
+
+https://mp.weixin.qq.com/s/uZofW1nPuu5MNhe9i-CRhA
+
+火星有了第一个机场！人类首架火星无人机试飞成功，场地命名“莱特兄弟机场”
+
+https://mp.weixin.qq.com/s/2nJP3oxgb_AK1P09MCWkTQ
+
+移居火星前，人类需要关注哪些健康风险？
+
+https://mp.weixin.qq.com/s/LNq09_wUKF6dfMrrcSgV-Q
+
+中国火星车即将着陆火星乌托邦平原！
+
+https://mp.weixin.qq.com/s/1W4JcHcO9ZuJnolv05Crvg
+
+中国火神踏上火星！祝融号火星车着陆火星十大问题详解
+
+https://mp.weixin.qq.com/s/DdQoBUgl6kdtrM70FgVGrw
+
+天问一号成功着陆！它是如何到达火星的?
+
+https://mp.weixin.qq.com/s/hSY4rBhCkJDoLlo8Nzmm9Q
+
+天问一号成功着陆！
+
+https://mp.weixin.qq.com/s/mpeHNXktuH9aMxz1Eu6gCw
+
+生活不只眼前的“北上广”，还有诗和火星
+
+https://mp.weixin.qq.com/s/uvSeg8KnPTj_4au_B3WXBw
+
+一文拆解中国火星车着陆全程
+
 https://mp.weixin.qq.com/s/_s7XcEz6Ft6eGXxZOUeSVg
 
 火星上存在真菌吗？
@@ -206,24 +242,6 @@ https://mp.weixin.qq.com/s/BYw9HJehGC528WkX_q4JLw
 https://www.sohu.com/a/569342145_161795
 
 韦伯太空望远镜主镜被太空陨石砸中，受损情况比最初想象要大
-
----
-
-1928年10月25日，一位旅美求学的中国青年在美国叶凯士天文台发现一颗小行星（临时编号为1928 UF），这是第一颗由中国人发现的小行星。这位青年学子感怀祖国，随即将其命名为中华星（1125 China）。
-
-不久，青年回国效力，成为中国现代天文学的拓荒者之一，但却再也没找到这颗小行星的踪迹。直到1957年10月30日，青年在紫金山天文台发现了一颗轨道酷似1125的小行星。
-
-虽后经证实这颗小行星并非1125，但20年后的1977年，当这颗小行星的轨道被精确确定后，国际小行星命名委员会破例将“1125 China”给了这颗新发现的小行星。而原本以为失踪了的1125号小行星，却在1986年被再次观测到，并于1988年被重新命名为中国星（3789 zhongguo）。
-
->张钰哲，1902～1986，芝加哥大学博士（1929），中国近代天文学的奠基人。中国科学院院士。紫金山天文台台长。1941年9月21日，在战时极端困难的条件下，他组织了中国境内第一次日全食的科学观测，拍摄了中国境内第一张日全食照片和第一部日全食彩色影片。
-
-https://mp.weixin.qq.com/s/0zlHeZsr_gVNoaufr_--Hw
-
-给飞过头顶的星星起个响当当的名字
-
-https://zhuanlan.zhihu.com/p/61467796
-
-抗日时期，中国人完成哪些不可能做到的壮举？
 
 ---
 
