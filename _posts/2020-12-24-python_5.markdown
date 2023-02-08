@@ -458,3 +458,7 @@ https://mp.weixin.qq.com/s/XV4LOBM1pO0N8oShZl7MzQ
 https://mp.weixin.qq.com/s/b19SLduKoiOIeE5CA3ZOjg
 
 Python标准库之LRU缓存实现学习
+
+https://zhuanlan.zhihu.com/p/149240769
+
+Python自动化测试——必会模块 Unittest
