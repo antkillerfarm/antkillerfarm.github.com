@@ -320,6 +320,10 @@ https://mp.weixin.qq.com/s/NNAjrUv5jBN8zxnsxbBmkw
 
 Shell分析服务器日志命令
 
+https://www.cnblogs.com/chengmo/archive/2010/10/14/1851570.html
+
+linux shell不同进制数据转换（二进制，八进制，十六进制，base64)
+
 # awk&sed&grep
 
 这三个工具是文本处理中用的比较多的工具，各有各的特色，且都支持正则表达式。

@@ -7,6 +7,44 @@ category: DL Framework
 * toc
 {:toc}
 
+# TensorFlow Probability
+
+TensorFlow Probability是一个概率编程工具包。
+
+官网：
+
+https://tensorflow.google.cn/probability/
+
+参考：
+
+https://mp.weixin.qq.com/s/NPuYanaUnaX4mYbaNbNNSQ
+
+概率编程工具：TensorFlow Probability官方简介
+
+https://mp.weixin.qq.com/s/cV-5W4YWC9f9wsoNX5fIXA
+
+使用TensorFlow Probability对金融模型中的误差进行介绍性分析
+
+https://mp.weixin.qq.com/s/cxC3SarlBBPTwIxQZ4AG_g
+
+快速上手TensorFlow Probability内置概率编程教材
+
+https://mp.weixin.qq.com/s/T0TsS8YwyCbCjt4J-xonOw
+
+使用TensorFlow Probability Layers的变分自编码器
+
+https://mp.weixin.qq.com/s/6l-NS0NbYK44JS0jnRl82w
+
+使用TensorFlow Probability的概率层执行回归
+
+https://mp.weixin.qq.com/s/2cbd7LBPBRqGt-QO1A7SfQ
+
+在TensorFlow Probability中对结构时间序列建模
+
+https://mp.weixin.qq.com/s/7CjLP5SYpQ-hoC1jwxT1vQ
+
+TensorFlow Probability中的联合分布变分推断
+
 # TensorFlow.js
 
 https://mp.weixin.qq.com/s/dqMS4NjmNYs7IFHm8uFM8w
@@ -358,43 +396,3 @@ TensorFlow On Spark
 https://mp.weixin.qq.com/s/7er3wNV_IhxhFDOIwNMpww
 
 深度强化学习入门：用TensorFlow构建你的第一个游戏AI
-
-https://mp.weixin.qq.com/s/jMPVl3CWvL7MSzq5F12YxQ
-
-维度、广播操作与可视化：如何高效使用TensorFlow
-
-https://mp.weixin.qq.com/s/OmVAnkHV2aI4D4pMKyVjCQ
-
-基于TensorFlow理解三大降维技术：PCA、t-SNE和自编码器
-
-https://mp.weixin.qq.com/s/YOyOR8fdaEKcydAywcc-HA
-
-如何使用TensorFlow API构建视频物体识别系统
-
-https://zhuanlan.zhihu.com/p/28475975
-
-如何优雅地用TensorFlow预测时间序列：TFTS库详细教程
-
-https://mp.weixin.qq.com/s/zZCEOdNQsPovn_i-C57Z9g
-
-如何使用最流行框架Tensorflow进行时间序列分析？
-
-https://mp.weixin.qq.com/s/CqOo7Fu6t5-yJiYhzo03oQ
-
-利用TensorFlow和神经网络来处理文本分类问题
-
-https://mp.weixin.qq.com/s/VlvQmrS7Qi2qq6fTBXKTYw
-
-从零开始用TensorFlow搭建卷积神经网络
-
-https://mp.weixin.qq.com/s/hETnA81WlkMG3rftAHg9bw
-
-PyTorch和TensorFlow哪家强：九项对比读懂各自长项短板
-
-https://mp.weixin.qq.com/s/7R-Gvegnta9XBwIaSPBL_Q
-
-基于Tensorflow的验证码识别
-
-https://mp.weixin.qq.com/s/3QgtemxxsQmuNQVEdpiMwA
-
-如何做准确率达98%的交通标志识别系统？

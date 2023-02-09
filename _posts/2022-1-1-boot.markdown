@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  uboot, Linux镜像文件, 嵌入式Linux, diff&patch
+title:  uboot, Linux镜像文件, 嵌入式Linux, OpenWrt（三）, diff&patch
 category: linux 
 ---
 
@@ -209,6 +209,43 @@ https://www.ibm.com/developerworks/cn/linux/l-yocto-linux/index.html
 
 `-march=armv7-a -mfloat-abi=hard -mfpu=neon`
 
+# OpenWrt
+
+## 扩展包
+
+大多数情况下，我们并不需要亲手编写OpenWrt模块，因为日常使用中的绝大部分功能，OpenWrt项目都提供了相应的扩展包。因此，如何寻找、安装扩展包，就成为一个经常性的问题。
+
+官方扩展包可以在代码根目录下的feeds.conf.default文件中找到。
+
+从这里可以看出，OpenWrt项目早期的代码托管在openwrt.org下，而最近的开发已经迁移至github。因此，如果有的包在源代码中没有看到的话，可以到openwrt.org下碰碰运气。
+
+一个软件包可以生成独立的ipk安装文件（Modularizes），也可以直接打包进img中（Built-in）。这个生成选项在`make menuconfig`的选项菜单中，选择Y就是Built-in，选择M就是Modularizes。
+
+## 使用GDB调试
+
+由于完整的GDB尺寸太大（~1.5MB），因此通常使用GDBServer进行调试。两者的代码都在gdb软件包中。
+
+参考文档：
+
+http://wiki.openwrt.org/doc/devel/gdb
+
+http://h4x3rotab.github.io/blog/2014/02/27/openwrtxia-de-gdbyuan-cheng-diao-shi/
+
+OpenWRT下的GDB远程调试
+
+除了上面列出的内容之外，我还遇到了一个问题：我所用平台的SDK将`-Os`作为全局的编译选项。这在平时自然没什么，但调试的时候就有问题了。如何将`-Os`换成`-O0`呢？可参见以下示例：
+
+```c
+TARGET0_CFLAGS:=$(filter-out -Os,$(TARGET_CFLAGS))
+TARGET_CFLAGS:= -O0 $(TARGET0_CFLAGS) -ggdb3
+```
+
+这里解释一下：
+
+1.filter-out是make提供的过滤函数，可去除字符串A中包含的特定字符串B。
+
+2.定义TARGET0_CFLAGS的原因在于：make不支持变量的递归定义，需要中间变量暂存之。
+
 # diff&patch
 
 diff/patch这对工具在数学上来说，diff是对2个集合求差，patch是求和。
@@ -245,59 +282,7 @@ https://mp.weixin.qq.com/s/HchAIWJmqPNTqEEwb3TbAg
 
 Linux下xargs命令
 
-# Ubuntu使用技巧+
-
-## X Desktop Group
-
-设置`XDG_CACHE_HOME`可以将cache文件移动到较快的介质如SSD中，从而加速运行。或者移动到较大的分区，以腾出系统空间。
-
-https://www.cnblogs.com/zqb-all/p/10666474.html
-
-Linux实用命令之xdg-open
-
-https://blog.csdn.net/u014025444/article/details/94029895
-
-linux的XDG基本目录规范
-
-## 打印机
-
-一般使用sane做为扫描仪后端：
-
-`sudo apt-get install sane sane-utils xsane`
-
 # Linux参考资源+
-
-https://mp.weixin.qq.com/s/h4LwSRAsDgRqOq3mLt_SCw
-
-浅谈mmap
-
-https://mp.weixin.qq.com/s/djEPqxZSfMp13Uf_h6TSiA
-
-认真分析mmap：是什么 为什么 怎么用
-
-https://zhuanlan.zhihu.com/p/424240082
-
-编译一个属于自己的最小Linux系统
-
-https://www.zhihu.com/question/66902460
-
-为什么Linux下要把创建进程分为fork()和exec()(一系列函数)两个函数来处理?
-
-https://zhuanlan.zhihu.com/p/464204319
-
-Linux网络子系统中DMA机制的实现
-
-https://mp.weixin.qq.com/s/1JiXL1f3SSjsBojlJSNOpQ
-
-Linux的启动流程
-
-https://mp.weixin.qq.com/s/ZfprFQjVANuCE2N693gZBQ
-
-用户空间和内核空间
-
-https://mp.weixin.qq.com/s/P14VsWwSh9jiF-jBHSXXOw
-
-申请内存时底层发生了什么？
 
 https://mp.weixin.qq.com/s/OJHQZjxa6u8aA6jZyJnNPg
 

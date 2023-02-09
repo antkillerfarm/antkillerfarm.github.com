@@ -7,7 +7,7 @@ category: DL Framework
 * toc
 {:toc}
 
-# Debug/Profiling
+# Debug
 
 ## VS Code + gdb
 
@@ -63,16 +63,6 @@ tensorflow::CurrentStackTrace()
 
 Python：`tf.debugging.disable_traceback_filtering()`
 
-## profiling
-
-`pip install -U tensorboard-plugin-profile`
-
-```python
-from tensorflow.profiler.experimental import Profile
-
-with Profile('/logdir_path'):
-    # do sth
-```
 
 ## Log
 
@@ -81,24 +71,6 @@ TF里有两套Log系统：`LOG`和`VLOG`。
 `LOG`由`TF_CPP_MIN_LOG_LEVEL`控制，值越小，信息越多。
 
 `VLOG`都是INFO级别的Log，因此，`TF_CPP_MIN_LOG_LEVEL`必须为0。此外，`VLOG`本身亦有不同等级，可使用`TF_CPP_MIN_VLOG_LEVEL`控制，值越大，信息越多。
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/140343833
-
-tensorflow profiling工具简介——tensorflow原生工具
-
-https://www.tensorflow.org/tensorboard/tensorboard_profiling_keras
-
-TensorBoard性能分析:在Keras中对基本训练指标进行性能分析
-
-https://github.com/tensorflow/benchmarks
-
-TensorFlow benchmarks
-
-https://blog.csdn.net/zkbaba/article/details/106178542
-
-TensorFlow性能分析工具—TensorFlow Profiler
 
 # TensorBoard
 
@@ -112,11 +84,11 @@ TensorBoard是一个http服务，用以监控TensorFlow的执行。
 
 启动之后，用浏览器打开`http://localhost:6006`即可。
 
+如果想在局域网中用另一台PC访问TensorBoard服务，则可：
+
+`tensorboard --logdir='logs/' --host=0.0.0.0 --port=1234`
+
 TensorBoard会将同类结点Group，但Group之后，有时反而不易观察具体的结构。这个时候最好Ungroup一下。
-
-https://tensorflow.google.cn/tensorboard/tensorboard_profiling_keras
-
-TensorFlow Profiler: Profile model performance
 
 参考：
 
@@ -159,6 +131,69 @@ https://mp.weixin.qq.com/s/5zfKiP9Fxpl7suqBQILL-g
 https://mp.weixin.qq.com/s/8scMr0jcW87y6k_wFgOBEg
 
 使用Tensorboard投影进行高维向量的可视化
+
+# Profiling
+
+文档：
+
+https://tensorflow.google.cn/guide/profiler
+
+Optimize TensorFlow performance using the Profiler
+
+https://tensorflow.google.cn/tensorboard/tensorboard_profiling_keras
+
+TensorFlow Profiler: Profile model performance
+
+安装：
+
+`pip install -U tensorboard-plugin-profile`
+
+代码：
+
+```python
+from tensorflow.profiler.experimental import Profile
+
+with Profile('/logdir_path'):
+    # do sth
+```
+
+```python
+# Create a TensorBoard callback
+logs = "logs/" + datetime.now().strftime("%Y%m%d-%H%M%S")
+
+tboard_callback = tf.keras.callbacks.TensorBoard(log_dir = logs,
+                                                 histogram_freq = 1,
+                                                 profile_batch = '500,520')
+
+model.fit(ds_train,
+          epochs=2,
+          validation_data=ds_test,
+          callbacks = [tboard_callback])
+```
+
+查看步骤：
+
+1.打开TensorBoard之后，右上角下拉中选择`PROFILE`。
+
+2.左侧的`Tools`下拉中，有好多工具。其中`tensorflow_stats`和`trace_viewer`比较重要。
+
+---
+
+https://blog.csdn.net/zkbaba/article/details/106178542
+
+TensorFlow性能分析工具—TensorFlow Profiler
+
+https://zhuanlan.zhihu.com/p/140343833
+
+tensorflow profiling工具简介——tensorflow原生工具
+
+https://www.tensorflow.org/tensorboard/tensorboard_profiling_keras
+
+TensorBoard性能分析:在Keras中对基本训练指标进行性能分析
+
+https://github.com/tensorflow/benchmarks
+
+TensorFlow benchmarks
 
 # op Backprop
 
@@ -345,41 +380,3 @@ https://github.com/google/TensorNetwork
 https://mp.weixin.qq.com/s/jdjX0jirTHOUqsGagJmGLQ
 
 谷歌AI开源张量计算库TensorNetwork，计算速度暴涨100倍
-
-# TensorFlow Probability
-
-TensorFlow Probability是一个概率编程工具包。
-
-官网：
-
-https://tensorflow.google.cn/probability/
-
-参考：
-
-https://mp.weixin.qq.com/s/NPuYanaUnaX4mYbaNbNNSQ
-
-概率编程工具：TensorFlow Probability官方简介
-
-https://mp.weixin.qq.com/s/cV-5W4YWC9f9wsoNX5fIXA
-
-使用TensorFlow Probability对金融模型中的误差进行介绍性分析
-
-https://mp.weixin.qq.com/s/cxC3SarlBBPTwIxQZ4AG_g
-
-快速上手TensorFlow Probability内置概率编程教材
-
-https://mp.weixin.qq.com/s/T0TsS8YwyCbCjt4J-xonOw
-
-使用TensorFlow Probability Layers的变分自编码器
-
-https://mp.weixin.qq.com/s/6l-NS0NbYK44JS0jnRl82w
-
-使用TensorFlow Probability的概率层执行回归
-
-https://mp.weixin.qq.com/s/2cbd7LBPBRqGt-QO1A7SfQ
-
-在TensorFlow Probability中对结构时间序列建模
-
-https://mp.weixin.qq.com/s/7CjLP5SYpQ-hoC1jwxT1vQ
-
-TensorFlow Probability中的联合分布变分推断

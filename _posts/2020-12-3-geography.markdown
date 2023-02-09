@@ -200,3 +200,7 @@ https://www.zhihu.com/question/582389691
 https://www.sohu.com/a/637883753_313745
 
 第二次强震再袭土耳其，千年古堡严重受损（加济安泰普城堡）
+
+https://www.zhihu.com/question/582621285
+
+土耳其已有6200多座建筑物倒塌，当地房屋抗震能力很差吗？现代建筑会做哪些抗震设计？

@@ -205,6 +205,10 @@ https://www.cnblogs.com/xyf327/category/1985244.html
 
 一个工业机器视觉的专栏
 
+https://blog.csdn.net/xiny520/article/details/51460148
+
+聚合通道特征（Aggregate Channel Feature，ACF）
+
 # 计算机图形学
 
 ## 教程

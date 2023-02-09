@@ -392,3 +392,35 @@ x86 Linux下实现10us误差的高精度延时
 https://www.zhihu.com/question/496656138
 
 为什么Windows文件设计成占用无法删除？
+
+https://mp.weixin.qq.com/s/h4LwSRAsDgRqOq3mLt_SCw
+
+浅谈mmap
+
+https://mp.weixin.qq.com/s/djEPqxZSfMp13Uf_h6TSiA
+
+认真分析mmap：是什么 为什么 怎么用
+
+https://zhuanlan.zhihu.com/p/424240082
+
+编译一个属于自己的最小Linux系统
+
+https://www.zhihu.com/question/66902460
+
+为什么Linux下要把创建进程分为fork()和exec()(一系列函数)两个函数来处理?
+
+https://zhuanlan.zhihu.com/p/464204319
+
+Linux网络子系统中DMA机制的实现
+
+https://mp.weixin.qq.com/s/1JiXL1f3SSjsBojlJSNOpQ
+
+Linux的启动流程
+
+https://mp.weixin.qq.com/s/ZfprFQjVANuCE2N693gZBQ
+
+用户空间和内核空间
+
+https://mp.weixin.qq.com/s/P14VsWwSh9jiF-jBHSXXOw
+
+申请内存时底层发生了什么？

@@ -130,6 +130,16 @@ procd是OpenWrt中很重要的一个守护进程。它的作用主要有：
 
 3)日志系统。相当于普通linux的rsyslog。
 
+---
+
+https://blog.csdn.net/bingqingsuimeng/article/details/7924625
+
+linux热插拔之udev的使用方法
+
+https://www.cnblogs.com/xuyh/p/4212575.html
+
+openwrt实现hotplug-button
+
 ## procd的引导过程
 
 init/main.c: start_kernel --Linux的启动入口
@@ -272,31 +282,6 @@ autotools和CMake是目前应用最广的两套编译配置系统。Openwrt对�
 libubox是Openwrt平台的一个工具库。详见：
 
 http://www.w2bc.com/article/91056
-
-# 使用GDB调试
-
-由于完整的GDB尺寸太大（~1.5MB），因此通常使用GDBServer进行调试。两者的代码都在gdb软件包中。
-
-参考文档：
-
-http://wiki.openwrt.org/doc/devel/gdb
-
-http://h4x3rotab.github.io/blog/2014/02/27/openwrtxia-de-gdbyuan-cheng-diao-shi/
-
-OpenWRT下的GDB远程调试
-
-除了上面列出的内容之外，我还遇到了一个问题：我所用平台的SDK将`-Os`作为全局的编译选项。这在平时自然没什么，但调试的时候就有问题了。如何将`-Os`换成`-O0`呢？可参见以下示例：
-
-```c
-TARGET0_CFLAGS:=$(filter-out -Os,$(TARGET_CFLAGS))
-TARGET_CFLAGS:= -O0 $(TARGET0_CFLAGS) -ggdb3
-```
-
-这里解释一下：
-
-1.filter-out是make提供的过滤函数，可去除字符串A中包含的特定字符串B。
-
-2.定义TARGET0_CFLAGS的原因在于：make不支持变量的递归定义，需要中间变量暂存之。
 
 # 参考
 

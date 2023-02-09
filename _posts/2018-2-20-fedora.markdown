@@ -164,9 +164,29 @@ https://codeleading.com/article/93045146650/
 
 Makefile中($(KERNELRELEASE),)执行分析
 
+# Ubuntu使用技巧+
+
+## X Desktop Group
+
+设置`XDG_CACHE_HOME`可以将cache文件移动到较快的介质如SSD中，从而加速运行。或者移动到较大的分区，以腾出系统空间。
+
+https://www.cnblogs.com/zqb-all/p/10666474.html
+
+Linux实用命令之xdg-open
+
+https://blog.csdn.net/u014025444/article/details/94029895
+
+linux的XDG基本目录规范
+
+## 打印机
+
+一般使用sane做为扫描仪后端：
+
+`sudo apt-get install sane sane-utils xsane`
+
 # 新冠肺炎+
 
-# 蝙蝠
+## 蝙蝠
 
 https://mp.weixin.qq.com/s/QN2GQ6T9Q2cwT_CN6aX_YQ
 
@@ -176,7 +196,7 @@ https://mp.weixin.qq.com/s/Vi-PRPhFEnBEnNxGNzA6VA
 
 蝙蝠是极为有益的动物，然而也是最容易被误解的动物之一
 
-# 瘟疫公司
+## 瘟疫公司
 
 ![](/images/img4/Plague_Inc.jpg)
 
