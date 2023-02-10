@@ -308,3 +308,25 @@ https://mp.weixin.qq.com/s/KtArx_RRr5aw0QBVr_Tffw
 https://zhuanlan.zhihu.com/p/549588865
 
 推荐一个非常实用的峰值查找算法（peak detection）
+
+# 数字成像++
+
+https://mp.weixin.qq.com/s/GYpuj1rPRknWsRX6Av9XsQ
+
+各种有趣的屏下摄像头
+
+https://mp.weixin.qq.com/s/XihwGVU-8QJORfvENhhLnA
+
+图像传感器厂家大盘点（上）
+
+https://mp.weixin.qq.com/s/wSgSZA2c0fP3E8JgHn6yRQ
+
+AI时代的去马赛克算法
+
+https://mp.weixin.qq.com/s/YKL0Cwp1l9_4lAj8knMIqQ
+
+高级AI视觉算法是否还需要ISP?
+
+https://mp.weixin.qq.com/s/x4cz9mW1HOF8rtRv4uqLCQ
+
+门控相机：车载ADAS相机的未来？

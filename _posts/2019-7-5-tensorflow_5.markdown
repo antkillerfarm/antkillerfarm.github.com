@@ -7,6 +7,47 @@ category: DL Framework
 * toc
 {:toc}
 
+# TFRecord
+
+TFRecord是TensorFlow官方定义的存放样本数据文件。
+
+参考：
+
+http://www.cnblogs.com/antflow/p/7299029.html
+
+TFRecord的使用
+
+https://zhuanlan.zhihu.com/p/27481108
+
+TensorFlow直接读取图片和读写TFRecords速度对比
+
+# 内存布局
+
+Tensorflow和Caffe的内存布局存在较大差异，这是两者模型转换时，最常遇到的问题。一般认为，Caffe的内存布局对卷积硬件加速更友好一些。
+
+|  | Tensorflow | Caffe |
+|:--:|:--:|:--:|
+| Tensor | NHWC | NCHW |
+| Weight | HWIO | OIHW |
+
+# TensorSensor
+
+https://mp.weixin.qq.com/s/ZxmoBcWJa7luGOHQ32ru1A
+
+推荐一个快速定位深度学习代码bug的炼丹神器
+
+# TensorNetwork
+
+TensorFlow的计算图模型不仅可以用于DL领域，亦可应用于其他科学计算领域。TensorNetwork就是一个基于TensorFlow的张量运算库。现成的矩阵运算库已经很多了，这次升级为张量运算库了。
+
+https://github.com/google/TensorNetwork
+
+参考：
+
+https://mp.weixin.qq.com/s/jdjX0jirTHOUqsGagJmGLQ
+
+谷歌AI开源张量计算库TensorNetwork，计算速度暴涨100倍
+
 # TensorFlow Probability
 
 TensorFlow Probability是一个概率编程工具包。
@@ -348,51 +389,3 @@ https://mp.weixin.qq.com/s/O_IN39FBVPeD5fRYBsPuZQ
 https://mp.weixin.qq.com/s/8Hrq_z8s_5ms6Q_6OOaU-g
 
 如何使用TensorFlow和自编码器模型生成手写数字
-
-https://mp.weixin.qq.com/s/rQ9eZosHOoDOXg9tAg4t6A
-
-tensorflow Object Detection API使用预训练模型mask r-cnn实现对象检测
-
-https://mp.weixin.qq.com/s/cPWXAI2TBv3_ssnWDFoQ4w
-
-TensorFlow sucks，有人吐槽TensorFlow晦涩难用
-
-https://mp.weixin.qq.com/s/_kr28kN0_1QFP8BR_wGo5w
-
-TensorFlow RNN入门
-
-https://mp.weixin.qq.com/s/WqE-FRl-Thys7tHUvFNlWQ
-
-盯住梅西：TensorFlow目标检测实战
-
-https://mp.weixin.qq.com/s/WfzlHtz0FFJMsPFwPoMqJg
-
-如何利用VGG-16等模型在CPU上测评各深度学习框架
-
-http://www.jianshu.com/p/4e16ae0aad25
-
-利用TensorFlow入门Word2Vec
-
-https://mp.weixin.qq.com/s/YJmMfBhQ3cLNUp_HHsXhGA
-
-手把手教你使用TensorFlow生成对抗样本
-
-https://mp.weixin.qq.com/s/nnjyR4XGVZQ1zXCIPzTNlg
-
-基于TensorFlow的变分自编码器实现
-
-https://mp.weixin.qq.com/s/iMgesGmdb7Jq4muCxb-nFA
-
-Tensorflow实战：Discuz验证码识别
-
-https://mp.weixin.qq.com/s/4aJUGBpPG_6Oc5EqOmM0Iw
-
-作为TensorFlow的底层语言，你会用C++构建深度神经网络吗？
-
-https://github.com/yahoo/TensorFlowOnSpark
-
-TensorFlow On Spark
-
-https://mp.weixin.qq.com/s/7er3wNV_IhxhFDOIwNMpww
-
-深度强化学习入门：用TensorFlow构建你的第一个游戏AI

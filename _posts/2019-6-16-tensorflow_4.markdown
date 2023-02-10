@@ -63,7 +63,6 @@ tensorflow::CurrentStackTrace()
 
 Python：`tf.debugging.disable_traceback_filtering()`
 
-
 ## Log
 
 TF里有两套Log系统：`LOG`和`VLOG`。
@@ -91,6 +90,10 @@ TensorBoard是一个http服务，用以监控TensorFlow的执行。
 TensorBoard会将同类结点Group，但Group之后，有时反而不易观察具体的结构。这个时候最好Ungroup一下。
 
 参考：
+
+https://neptune.ai/blog/tensorboard-tutorial
+
+Deep Dive Into TensorBoard: Tutorial With Examples
 
 http://blog.csdn.net/u013082989/article/details/53510625
 
@@ -133,6 +136,8 @@ https://mp.weixin.qq.com/s/8scMr0jcW87y6k_wFgOBEg
 使用Tensorboard投影进行高维向量的可视化
 
 # Profiling
+
+## 查看
 
 文档：
 
@@ -177,6 +182,28 @@ model.fit(ds_train,
 
 2.左侧的`Tools`下拉中，有好多工具。其中`tensorflow_stats`和`trace_viewer`比较重要。
 
+trace可以保存在本地，也可以用grpc输出到远程，并通过`trace_viewer`中的`Capture Profile`按钮来接收。
+
+---
+
+Trace Viewer是Google的Chromium项目开发的一个强大的可视化展示和分析工具。TensorBoard中也使用了它。
+
+Trace Viewer有一套自己的Trace Event Format，只要文件遵循这个格式，就可以被展示。
+
+查看方法：
+
+chrome://tracing/
+
+或者
+
+https://ui.perfetto.dev/
+
+后者是Chromium项目新开发的用以替代前者的工具。
+
+https://blog.csdn.net/u011331731/article/details/108354605
+
+强大的可视化利器Chrome Trace Viewer使用详解
+
 ---
 
 https://blog.csdn.net/zkbaba/article/details/106178542
@@ -194,6 +221,30 @@ TensorBoard性能分析:在Keras中对基本训练指标进行性能分析
 https://github.com/tensorflow/benchmarks
 
 TensorFlow benchmarks
+
+## 代码实现
+
+GPU Profiling需要硬件厂商的支持。
+
+比如Nvidia的CUDA Profiling Tools Interface (CUPTI)、Graphcore的PopVision trace instrumentation library (libpvti)等。
+
+```cpp
+class GpuTracer : public profiler::ProfilerInterface {
+ public:
+  GpuTracer(RocmTracer* rocm_tracer)
+```
+
+CuptiTracerEvent/RocmTracerEvent
+
+HloExecutionProfile/ExecutionProfile
+
+`export XLA_FLAGS="--xla_hlo_profile"`
+
+参考：
+
+https://zhuanlan.zhihu.com/p/357191706
+
+使用Graphcore PopVision分析工具优化AI性能
 
 # op Backprop
 
@@ -339,44 +390,3 @@ TensorFlow Federated发布
 https://mp.weixin.qq.com/s/6QKyE3jIOwBK_2rcG-Vtiw
 
 联邦机器学习-概念与应用
-
-# TFRecord
-
-TFRecord是TensorFlow官方定义的存放样本数据文件。
-
-参考：
-
-http://www.cnblogs.com/antflow/p/7299029.html
-
-TFRecord的使用
-
-https://zhuanlan.zhihu.com/p/27481108
-
-TensorFlow直接读取图片和读写TFRecords速度对比
-
-# 内存布局
-
-Tensorflow和Caffe的内存布局存在较大差异，这是两者模型转换时，最常遇到的问题。一般认为，Caffe的内存布局对卷积硬件加速更友好一些。
-
-|  | Tensorflow | Caffe |
-|:--:|:--:|:--:|
-| Tensor | NHWC | NCHW |
-| Weight | HWIO | OIHW |
-
-# TensorSensor
-
-https://mp.weixin.qq.com/s/ZxmoBcWJa7luGOHQ32ru1A
-
-推荐一个快速定位深度学习代码bug的炼丹神器
-
-# TensorNetwork
-
-TensorFlow的计算图模型不仅可以用于DL领域，亦可应用于其他科学计算领域。TensorNetwork就是一个基于TensorFlow的张量运算库。现成的矩阵运算库已经很多了，这次升级为张量运算库了。
-
-https://github.com/google/TensorNetwork
-
-参考：
-
-https://mp.weixin.qq.com/s/jdjX0jirTHOUqsGagJmGLQ
-
-谷歌AI开源张量计算库TensorNetwork，计算速度暴涨100倍

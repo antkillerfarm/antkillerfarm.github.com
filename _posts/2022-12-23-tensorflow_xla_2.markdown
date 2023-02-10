@@ -188,6 +188,28 @@ https://haosdent.gitbooks.io/tensorflow-document/content/resources/xla_prereleas
 
 XLA: The TensorFlow compiler framework
 
+# TensorFlow参考+
+
+https://mp.weixin.qq.com/s/nnjyR4XGVZQ1zXCIPzTNlg
+
+基于TensorFlow的变分自编码器实现
+
+https://mp.weixin.qq.com/s/iMgesGmdb7Jq4muCxb-nFA
+
+Tensorflow实战：Discuz验证码识别
+
+https://mp.weixin.qq.com/s/4aJUGBpPG_6Oc5EqOmM0Iw
+
+作为TensorFlow的底层语言，你会用C++构建深度神经网络吗？
+
+https://github.com/yahoo/TensorFlowOnSpark
+
+TensorFlow On Spark
+
+https://mp.weixin.qq.com/s/7er3wNV_IhxhFDOIwNMpww
+
+深度强化学习入门：用TensorFlow构建你的第一个游戏AI
+
 # 俄乌战争=+
 
 126独立旅是去年春天在赫尔松方向损失最严重的俄军部队，虽然俄罗斯官方没有公布任何具体损失的消息，但去年3月份该旅被授予“近卫”称号——这是克里姆林宫安抚伤亡惨重部队的标准流程。

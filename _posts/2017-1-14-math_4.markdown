@@ -31,6 +31,20 @@ https://zhuanlan.zhihu.com/p/59550457
 
 Categorical Distribution
 
+## Tweedie分布
+
+Tweedie分布是一种泊松分布和伽马分布的复合分布。
+
+其重要的调节参数p，当p=1，Tweedie就是Poisson分布，当p=2，Tweedie就是Gamma分布。$$1< p < 2$$的时候就变成Poisson和Gamma的复合分布。
+
+https://mp.weixin.qq.com/s/UAXSGp0Lx_-HvIMEH3ttLg
+
+tweedie回归在信贷业务中的应用
+
+https://www.zhihu.com/question/442615310
+
+有没有大佬可以讲解一下Tweedie分布对正态、泊松、伽马分布的统一，和后三个分布间的相互转换与区别？
+
 ## 各种概率分布的关系
 
 ![](/images/article/distribution.jpg)
@@ -56,10 +70,6 @@ https://mp.weixin.qq.com/s/svNVryWhiGxWFBz0s0dX5g
 https://zhuanlan.zhihu.com/p/158801020
 
 深度学习那些需要掌握的概率分布
-
-https://mp.weixin.qq.com/s/UAXSGp0Lx_-HvIMEH3ttLg
-
-tweedie回归在信贷业务中的应用
 
 # 统计杂谈
 
