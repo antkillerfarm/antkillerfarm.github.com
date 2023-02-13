@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  TVM实战
+title:  TVM实战, 性能分析工具
 category: toolchain 
 ---
 
@@ -185,3 +185,131 @@ SPIR-V是一种用于GPU通用计算和图形学的中间语言。
 https://blog.csdn.net/qwertyu1234/article/details/50163847
 
 SPIR-V研究：编译器基本原理
+
+# 性能分析工具
+
+linux常用的调试工具：
+
+vmstat、iostat、mpstat、netstat、sar、top：查看系统、程序信息等。
+
+gprof、perf、perf top：定位到具体函数、调用等。
+
+strace、ltrace：系统调用、函数调用、库函数调用等。
+
+pstack、ptree、pmap：堆栈信息。
+
+dmesg：系统log信息。
+
+mallinfo：获得内存分配信息。
+
+`sudo systemctl status xrdp -n50`：打印xrdp服务的log，显示最新的50行。
+
+---
+
+打印文件/proc/{pid}/maps查看内存地址和文件的映射关系，可以得到函数在哪个文件里。
+
+## 黑盒测试
+
+Linux上主要有perf、gprof和valgrind三个性能分析工具。
+
+参考：
+
+https://cloud.tencent.com/developer/article/1063652
+
+Linux性能分析工具与图形化方法
+
+https://mp.weixin.qq.com/s/HvADkICPYflS2VTuSB16rg
+
+Linux入门必看：如何60秒内分析Linux性能
+
+https://www.zhihu.com/question/63946754
+
+C++怎么检测内存泄露，怎么定位内存泄露？
+
+https://mp.weixin.qq.com/s/FMYimnxcAya6bhvdGD5LUw
+
+惊魂48小时，阿里工程师如何紧急定位线上内存泄露？
+
+## valgrind
+
+官网：
+
+https://valgrind.org/
+
+它还有一个叫做QCacheGrind(KCacheGrind)的图形化性能分析工具。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/111556601
+
+valgrind排查内存泄露
+
+https://developer.mantidproject.org/ProfilingWithValgrind.html
+
+Profiling with Valgrind
+
+## 白盒测试
+
+上面提到的主要是黑盒测试工具。
+
+白盒测试工具主要是Linux Test Project和Gcov。
+
+官网：
+
+http://linux-test-project.github.io/
+
+代码：
+
+https://github.com/linux-test-project/ltp
+
+参考：
+
+https://mp.weixin.qq.com/s/Od17bQhpd3FYE2GQd-kvaQ
+
+iOS代码染色原理及技术实践（gcov，gcno，gcda）
+
+https://www.sohu.com/a/329177032_120104204
+
+一文详解C/C++代码覆盖率--gcov/lcov/gcovr
+
+## 代码检查
+
+clang-format：可以格式化排版多种不同语言的代码。
+
+clang-tidy：一个基于clang的静态代码分析框架。
+
+KLEE：一款开源的自动软件测试工具，基于LLVM编译底层基础，能够自动生成测试样例检测软件缺陷。
+
+官网：
+
+http://klee.github.io/
+
+参考：
+
+https://blog.csdn.net/weixin_43721070/article/details/122638851
+
+C++代码自动检测工具clang-format和clang-tidy
+
+# Build tools+
+
+## blade
+
+blade是腾讯出品的构建工具。
+
+官网：
+
+https://github.com/chen3feng/blade-build
+
+## MSbuild
+
+MSbuild当然是微软的构建工具了。
+
+官网：
+
+https://msdn.microsoft.com/en-us/library/dd393574.aspx
+
+参考：
+
+http://www.cnblogs.com/linianhui/archive/2012/08/30/2662648.html
+
+MSBuild入门

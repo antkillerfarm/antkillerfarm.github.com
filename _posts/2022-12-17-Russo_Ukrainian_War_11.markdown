@@ -23,6 +23,14 @@ https://zhuanlan.zhihu.com/p/598593328
 
 ---
 
+武列达尔的俄军损失30多辆装甲车，外加阵亡400多俄兵。
+
+https://www.zhihu.com/question/583144733
+
+如何看待因指挥失误俄罗斯155海兵旅损失惨重？
+
+---
+
 https://www.zhihu.com/answer/2831950888
 
 乌克兰失去马林卡意味着什么?

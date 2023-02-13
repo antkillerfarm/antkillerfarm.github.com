@@ -182,88 +182,6 @@ ranger是一个字符式的文件管理器。
 
 https://ranger.github.io/
 
-# 性能分析
-
-linux常用的调试工具：
-
-vmstat、iostat、mpstat、netstat、sar、top：查看系统、程序信息等。
-
-gprof、perf、perf top：定位到具体函数、调用等。
-
-strace、ltrace：系统调用、函数调用、库函数调用等。
-
-pstack、ptree、pmap：堆栈信息。
-
-dmesg：系统log信息。
-
-mallinfo：获得内存分配信息。
-
-`sudo systemctl status xrdp -n50`：打印xrdp服务的log，显示最新的50行。
-
----
-
-打印文件/proc/{pid}/maps查看内存地址和文件的映射关系，可以得到函数在哪个文件里。
-
-## 黑盒测试
-
-Linux上主要有perf、gprof和valgrind三个性能分析工具。
-
-参考：
-
-https://cloud.tencent.com/developer/article/1063652
-
-Linux性能分析工具与图形化方法
-
-https://mp.weixin.qq.com/s/HvADkICPYflS2VTuSB16rg
-
-Linux入门必看：如何60秒内分析Linux性能
-
-https://www.zhihu.com/question/63946754
-
-C++怎么检测内存泄露，怎么定位内存泄露？
-
-https://mp.weixin.qq.com/s/FMYimnxcAya6bhvdGD5LUw
-
-惊魂48小时，阿里工程师如何紧急定位线上内存泄露？
-
-## valgrind
-
-官网：
-
-https://valgrind.org/
-
-它还有一个叫做QCacheGrind(KCacheGrind)的图形化性能分析工具。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/111556601
-
-valgrind排查内存泄露
-
-https://developer.mantidproject.org/ProfilingWithValgrind.html
-
-Profiling with Valgrind
-
-## 白盒测试
-
-上面提到的主要是黑盒测试工具。
-
-白盒测试工具主要是Linux Test Project和Gcov。
-
-官网：
-
-http://linux-test-project.github.io/
-
-代码：
-
-https://github.com/linux-test-project/ltp
-
-参考：
-
-https://mp.weixin.qq.com/s/Od17bQhpd3FYE2GQd-kvaQ
-
-iOS代码染色原理及技术实践（gcov，gcno，gcda）
-
 # 查看网络
 
 查看网络主要使用`ss`和`netstat`命令。
@@ -362,14 +280,6 @@ lsof(list open files)是一个列出当前系统打开文件的工具。在linux
 
 列出打开的文件。
 
-# nc
-
-NetCat，在网络工具中有“瑞士军刀”美誉。它短小精悍（1.84版本也不过25k，旧版本或缩减版甚至更小）、功能实用，被设计为一个简单、可靠的网络工具，可通过TCP或UDP协议传输读写数据。同时，它还是一个网络应用Debug分析器，因为它可以根据需要创建各种不同类型的网络连接。
-
-http://blog.csdn.net/wang7dao/article/details/7684998
-
-Linux nc命令详解
-
 # 常用命令示例
 
 `find . -name *.txt`
@@ -449,11 +359,17 @@ bash只支持整数四则运算，浮点数和复杂运算就靠`bc`了。
 
 强制密码过期。
 
-`scp -rC ubuser@192.168.32.129:/home/work/xxx.txt .`
+`scp -rC user@192.168.32.129:/home/work/xxx.txt .`
 
-`rsync -zvaP ubuser@192.168.32.129::/home/work/xxx.txt .`
+`rsync -zvaP user@192.168.32.129::/home/work/xxx.txt .`
 
 这两个命令都可以传输远程机器上的文件，后者会忽略已经有的文件。后者还支持两种协议：SSH和rsync，上例展示的是rsync协议的示例，如果使用SSH的话，把上例中的`::`换成`:`即可。
+
+`ssh -o ProxyCommand="ssh -Y -q -W %h:%p user@10.10.43.99" user@192.168.32.136`
+
+`scp -rC -o ProxyCommand="ssh -Y -q -W %h:%p user@10.10.43.99" user@192.168.32.136:/home/work/1.txt .`
+
+ssh和scp还支持代理模式，上例中，`10.10.43.99`为跳板机。
 
 `cat /etc/group`
 

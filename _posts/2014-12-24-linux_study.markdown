@@ -65,25 +65,9 @@ printf("a\n");
 printf("%ls",L"b\n");
 ```
 
-# 关于SIGPIPE导致的程序退出
-
-http://www.cppblog.com/elva/archive/2008/09/10/61544.html
-
 # 使用yum
 
 在RHEL中，可以使用yum从网上下载相应的组件，但需要RHN号，所以我现在换用了CentOS。当你需要使用yum的时候，如果yum找不到相应的组件时，可以在组件名之前加lib，或者在之后加-dev或-devel。
-
-# 源码包编译4步曲
-
-1)autogen.sh
-
-2)configure
-
-3)make
-
-4)su -c "make install"
-
-其中一二两步有时只要一个就够了，如果源码包中这两个都有的话，先运行1)
 
 # 关于ascii字符集的一些打印控制字符的别名
 

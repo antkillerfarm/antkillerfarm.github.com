@@ -335,3 +335,7 @@ CPU飙高，系统性能问题如何排查？
 https://zhuanlan.zhihu.com/p/583413166
 
 Linux I/O 神器之 io_uring
+
+http://www.cppblog.com/elva/archive/2008/09/10/61544.html
+
+关于SIGPIPE导致的程序退出

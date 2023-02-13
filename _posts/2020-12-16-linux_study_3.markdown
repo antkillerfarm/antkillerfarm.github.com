@@ -7,6 +7,14 @@ category: linux
 * toc
 {:toc}
 
+# nc
+
+NetCat，在网络工具中有“瑞士军刀”美誉。它短小精悍（1.84版本也不过25k，旧版本或缩减版甚至更小）、功能实用，被设计为一个简单、可靠的网络工具，可通过TCP或UDP协议传输读写数据。同时，它还是一个网络应用Debug分析器，因为它可以根据需要创建各种不同类型的网络连接。
+
+http://blog.csdn.net/wang7dao/article/details/7684998
+
+Linux nc命令详解
+
 # 环境变量
 
 设置环境变量的方法：

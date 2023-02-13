@@ -44,6 +44,18 @@ https://autotools.io/index.html
 
 这个网站基本上每个工具都讲到了，非常值得一看。
 
+## 源码包编译4步曲
+
+1)autogen.sh
+
+2)configure
+
+3)make
+
+4)su -c "make install"
+
+其中一二两步有时只要一个就够了，如果源码包中这两个都有的话，先运行1)
+
 ## autoconf&automake
 
 这两个工具是整个autotools工具集的核心，使用的流程也比较复杂。教程中最经典的是：
@@ -261,27 +273,3 @@ Patching Bazel external dependencies
 sudo wget -O /usr/local/bin/bazel https://github.com/bazelbuild/bazelisk/releases/download/v1.10.1/bazelisk-linux-amd64
 sudo chmod +x /usr/local/bin/bazel
 ```
-
-# Build tools
-
-## blade
-
-blade是腾讯出品的构建工具。
-
-官网：
-
-https://github.com/chen3feng/blade-build
-
-## MSbuild
-
-MSbuild当然是微软的构建工具了。
-
-官网：
-
-https://msdn.microsoft.com/en-us/library/dd393574.aspx
-
-参考：
-
-http://www.cnblogs.com/linianhui/archive/2012/08/30/2662648.html
-
-MSBuild入门
