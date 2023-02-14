@@ -290,6 +290,22 @@ https://blog.csdn.net/weixin_43721070/article/details/122638851
 
 C++代码自动检测工具clang-format和clang-tidy
 
+## pahole
+
+pahole可用来检查结构体中的内存漏洞，可作为内存优化的一个工具。
+
+代码：
+
+https://git.kernel.org/pub/scm/devel/pahole/pahole.git
+
+## DWARF
+
+DWARF第一版发布于1992年，主要是为UNIX下的调试器提供必要的调试信息。
+
+https://zhuanlan.zhihu.com/p/419908664
+
+DWARF, 调试信息存储格式
+
 # Build tools+
 
 ## blade

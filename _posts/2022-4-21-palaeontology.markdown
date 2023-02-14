@@ -9,6 +9,14 @@ category: Nature
 
 # 大陆漂移与古生物
 
+https://www.zhihu.com/question/39108423
+
+有哪些不是十分学术，又比科普有深度的古生物书籍？
+
+https://www.zhihu.com/question/404684080
+
+可以推荐一些最新古生物学科普书籍吗?
+
 https://zhuanlan.zhihu.com/diqiuyanyi-jingwa
 
 这个叫做“地球演义”的专栏，堪称生物进化史的科普杰作。

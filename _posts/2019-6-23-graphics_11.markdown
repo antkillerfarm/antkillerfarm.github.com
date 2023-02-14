@@ -17,7 +17,7 @@ SPM:Spatial Pyramid Matching for Recognizing Natural Scene Categories空间金�
 
 http://blog.csdn.net/jwh_bupt/article/details/9625469
 
-Spatial Pyramid Matching 小结
+Spatial Pyramid Matching小结
 
 # ILSVRC 2010考古
 
@@ -217,6 +217,14 @@ Fundamentals Of Computer Graphics。中文常称为“虎书”。
 
 Physically Based Rendering: From Theory to Implemention
 
+## 历史
+
+Ivan Edward Sutherland，1938年生。计算机图形学之父。图灵奖获得者（1988）。
+
+https://zhuanlan.zhihu.com/p/121868664
+
+科学，艺术，天才，一篇计算科学的史诗，一场兑现的资本盛宴
+
 ## 参考
 
 https://mp.weixin.qq.com/s/hI9Z3l2eVJxkPbL8zG5uGA
@@ -247,18 +255,6 @@ https://github.com/KrisYu/computer-graphics-from-scratch-Notes
 
 一个图形学方面的专栏
 
-http://blog.csdn.net/pizi0475/article/details/6650851
-
-全局光照模型与Rendering Equation
-
-https://www.embree.org/
-
-Intel Embree：一个光线追踪方面的库。
-
-https://www.jianshu.com/p/4ec47871973c
-
-Path Tracing介绍
-
 https://mp.weixin.qq.com/s/h-vgHkzLjh9AAa6Z0lZqlg
 
 基于物理渲染(PBR)的车漆技术
@@ -270,10 +266,6 @@ https://zhuanlan.zhihu.com/p/32095589
 https://blog.csdn.net/jaccen2012/article/details/80328043
 
 跨平台渲染引擎简介
-
-https://www.cnblogs.com/mengdd/p/3237991.html
-
-图形学理论知识BRDF双向反射分布函数（Bidirectional Reflectance Distribution Function）
 
 https://zhuanlan.zhihu.com/p/163305630
 

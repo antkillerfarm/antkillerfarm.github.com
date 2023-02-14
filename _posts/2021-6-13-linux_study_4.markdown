@@ -55,13 +55,34 @@ cat ~/.ssh/id_rsa.pub
 
 >`ssh-keygen`命令会生成两个文件id_rsa和id_rsa.pub，前者是私钥，后者是公钥，不要弄错了。
 
-使用SSH有的时候会update失败。
+`scp -rC user@192.168.32.129:/home/work/xxx.txt .`
 
-解决办法：
+`rsync -zvaP user@192.168.32.129::/home/work/xxx.txt .`
 
-修改~/.ssh/config，添加:
+这两个命令都可以传输远程机器上的文件，后者会忽略已经有的文件。后者还支持两种协议：SSH和rsync，上例展示的是rsync协议的示例，如果使用SSH的话，把上例中的`::`换成`:`即可。
 
-`User XXX`
+---
+
+`ssh -o ProxyCommand="ssh -Y -q -W %h:%p user@10.10.43.99" user@192.168.32.136`
+
+`scp -rC -o ProxyCommand="ssh -Y -q -W %h:%p user@10.10.43.99" user@192.168.32.136:/home/work/1.txt .`
+
+ssh和scp还支持代理模式。上例中，`10.10.43.99`即为跳板机。还可以用类似的方式，建立多重跳板连接。
+
+还可以修改~/.ssh/config，添加：
+
+```bash
+Host bridge
+    HostName 10.10.43.99
+    User user
+
+Host s136
+    HostName 192.168.32.136
+    User user
+    ProxyCommand ssh -Y -q -W %h:%p bridge
+```
+
+---
 
 参考：
 
@@ -344,37 +365,3 @@ http://tldr.sh/
 https://linuxtoy.org/archives/tldr.html
 
 tldr: 简读Manpage
-
-# OpenGrok
-
-OpenGrok是一个阅读源码的Web系统。
-
-官网：
-
-http://oracle.github.io/opengrok/
-
-代码：
-
-https://github.com/oracle/opengrok
-
-参考：
-
-http://mazhuang.org/2016/12/14/rtfsc-with-opengrok/
-
-搭建大型源码阅读环境——使用OpenGrok
-
-# pahole
-
-pahole可用来检查结构体中的内存漏洞，可作为内存优化的一个工具。
-
-代码：
-
-https://git.kernel.org/pub/scm/devel/pahole/pahole.git
-
-# DWARF
-
-DWARF第一版发布于1992年，主要是为UNIX下的调试器提供必要的调试信息。
-
-https://zhuanlan.zhihu.com/p/419908664
-
-DWARF, 调试信息存储格式

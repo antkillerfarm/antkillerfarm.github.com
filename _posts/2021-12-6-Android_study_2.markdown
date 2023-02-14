@@ -281,6 +281,24 @@ https://www.jianshu.com/p/284ded3d191b
 
 Git多项目管理
 
+## OpenGrok
+
+OpenGrok是一个阅读源码的Web系统。
+
+官网：
+
+http://oracle.github.io/opengrok/
+
+代码：
+
+https://github.com/oracle/opengrok
+
+参考：
+
+http://mazhuang.org/2016/12/14/rtfsc-with-opengrok/
+
+搭建大型源码阅读环境——使用OpenGrok
+
 ## 参考
 
 https://mp.weixin.qq.com/s/z_zFveiiLu9vLvWuBcsaIg

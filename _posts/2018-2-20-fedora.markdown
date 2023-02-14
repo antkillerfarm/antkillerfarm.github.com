@@ -42,6 +42,10 @@ $ sudo dnf makecache
 
 https://admin.fedoraproject.org/pkgdb/
 
+## 使用yum
+
+在RHEL中，可以使用yum从网上下载相应的组件，但需要RHN号，所以我现在换用了CentOS。当你需要使用yum的时候，如果yum找不到相应的组件时，可以在组件名之前加lib，或者在之后加-dev或-devel。
+
 ## 共享文件夹
 
 我用的是VirtualBox的虚拟环境，因此除了在VirtualBox中，设置共享文件夹之外，还需对Fedora进行如下操作：

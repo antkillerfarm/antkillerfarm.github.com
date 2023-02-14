@@ -240,6 +240,13 @@ HloExecutionProfile/ExecutionProfile
 
 `export XLA_FLAGS="--xla_hlo_profile"`
 
+```cpp
+tensorflow::profiler::XLineBuilder
+XEventBuilder
+XPlaneBuilder
+HumanReadableProfileBuilder
+```
+
 参考：
 
 https://zhuanlan.zhihu.com/p/357191706

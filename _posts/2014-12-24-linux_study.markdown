@@ -65,10 +65,6 @@ printf("a\n");
 printf("%ls",L"b\n");
 ```
 
-# 使用yum
-
-在RHEL中，可以使用yum从网上下载相应的组件，但需要RHN号，所以我现在换用了CentOS。当你需要使用yum的时候，如果yum找不到相应的组件时，可以在组件名之前加lib，或者在之后加-dev或-devel。
-
 # 关于ascii字符集的一些打印控制字符的别名
 
 \b——backspace

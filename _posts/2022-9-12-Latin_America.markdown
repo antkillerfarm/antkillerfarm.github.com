@@ -127,6 +127,36 @@ https://mp.weixin.qq.com/s/TSGqmKKrWsMGT9BeIhoLBw
 
 小国骨气！一生就想要一张毛主席签名照的他，是如何被美国暗杀的？（奥马尔·托里霍斯）
 
+# 非洲+
+
+https://zhuanlan.zhihu.com/p/375381294
+
+14年了，美国非洲司令部为什么设在德国？
+
+https://www.zhihu.com/question/271066736/answer/2178362363
+
+中国在非洲修了哪些铁路？
+
+https://zhuanlan.zhihu.com/p/455814066
+
+非洲的眼泪，为何如此贫穷（乍得湖）
+
+https://zhuanlan.zhihu.com/p/540600235
+
+南苏丹，独立这11年，过得太惨了
+
+https://m.thepaper.cn/baijiahao_14423653
+
+法军“薮猫行动”研究
+
+https://www.thepaper.cn/newsDetail_forward_13394840
+
+法国马里战争的八年之殇：从闪电战到“西西弗斯困境”
+
+https://zhuanlan.zhihu.com/p/606196452
+
+被当做耗材一样榨干的国家（尼日尔）
+
 # 俄乌战争=++++
 
 https://www.zhihu.com/answer/2387251266
@@ -220,35 +250,3 @@ https://zhuanlan.zhihu.com/p/496556274
 https://zhuanlan.zhihu.com/p/588914690
 
 你给我从车顶上下来！”——再评BMP系列随车步兵搭乘方式
-
-https://www.zhihu.com/question/570589126
-
-如何评价俄罗斯萨拉托夫空军基地被不明无人机袭击导致两架图95核战略轰炸机受损和两人受伤？
-
-https://zhuanlan.zhihu.com/p/592954024
-
-“我们正在书写改变战争的大故事”——乌克兰军队是如何通过程序员来获得战场优势的
-
-https://www.zhihu.com/question/573879232
-
-如何评价当地时间12月22日，据塔斯社报道，俄罗斯库兹涅佐夫号航空母舰发生了火灾，没有人员伤亡?
-
-https://zhuanlan.zhihu.com/p/507119007
-
-乌克兰内阁组成人员简历 看看他们是不是有双重国籍？
-
-https://www.zhihu.com/answer/2837159962
-
-如果你是泽连斯基，你如何避免爆发战争？
-
-https://zhuanlan.zhihu.com/p/598377462
-
-余波——俄乌战争对叙利亚局势的影响
-
-https://zhuanlan.zhihu.com/p/603470366
-
-俄乌战争之情报战：一名乌克兰间谍被神秘杀害的来龙去脉
-
-https://zhuanlan.zhihu.com/p/603690330
-
-耗尽的遗产——俄罗斯坦克在俄乌战争中的改装
