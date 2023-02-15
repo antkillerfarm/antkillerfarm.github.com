@@ -244,6 +244,10 @@ https://mp.weixin.qq.com/s/L8E-dd9988Prbxau5awFtw
 
 ChatGPT怎么突然变得这么强？华人博士万字长文深度拆解GPT-3.5能力起源
 
+https://mp.weixin.qq.com/s/FPws8Gk18pW-TRcorlTczg
+
+ChatGPT研究框架
+
 ## 参考
 
 https://www.zhihu.com/question/298203515

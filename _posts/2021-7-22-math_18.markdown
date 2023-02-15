@@ -17,6 +17,20 @@ https://zhuanlan.zhihu.com/p/537898439
 
 ---
 
+无理数的无理数次方是可以为整数的：
+
+$$\sqrt{2}^{log_2{9}}=3$$
+
+https://www.zhihu.com/question/583941606
+
+对指数塔π^π^π^π^……，有没有可能叠到某一层数的时候值为整数？
+
+---
+
+https://www.sohu.com/a/284210653_161479
+
+日本大学生把数学“玩坏”：为了画好一只乳房，也是拼了！
+
 https://www.zhihu.com/question/20866833
 
 为什么正多面体只有5种？
