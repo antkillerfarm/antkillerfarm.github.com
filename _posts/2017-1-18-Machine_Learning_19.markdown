@@ -121,6 +121,12 @@ https://www.zhihu.com/question/427637446
 
 ---
 
+![](/images/img5/oil.webp)
+
+布伦特油价变化
+
+---
+
 https://mp.weixin.qq.com/s/kCLZyjoDoNK-py06hvmujA
 
 特供商店在苏联的兴衰（上）

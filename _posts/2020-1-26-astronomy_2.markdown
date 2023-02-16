@@ -45,6 +45,8 @@ category: Nature
 
 上图是Hilda asteroid的分布图。其中左图还叠加了其他小行星群（主要是希腊群和特洛伊群）。
 
+以下是动图：
+
 ![](/images/img3/solar.gif)
 
 由开普勒定律可知，公转周期越短，公转半径越小。所以可以利用这点的将Hilda asteroid从中区分开来。
