@@ -9,6 +9,26 @@ category: language
 
 # Python
 
+## del
+
+由于python都是引用，而python有GC机制，所以，del语句作用在变量上，而不是数据对象上。
+
+```python
+if __name__=='__main__':
+    a=1       #对象1被变量a引用，对象1的引用计数器为1
+    b=a       #对象1被变量b引用，对象1的引用计数器加1
+    c=a       #对象1被变量c引用，对象1的引用计数器加1
+    del a     #删除变量a，解除a对1的引用
+    del b     #删除变量b，解除b对1的引用
+    print(c)  #最终变量c仍然引用1
+```
+
+参考：
+
+https://blog.csdn.net/love1code/article/details/47276683
+
+python中del的用法
+
 ## python执行shell脚本
 
 示例：
@@ -442,23 +462,3 @@ https://mp.weixin.qq.com/s/0Rpbuo7LCRo1SnbE8NcH4Q
 https://mp.weixin.qq.com/s/Cujl2nxITCuZL7B72uKVrQ
 
 为什么Python这么慢？
-
-https://mp.weixin.qq.com/s/a3YTmQMfpnviHnidXrhYtg
-
-这17个骚操作你都Ok吗
-
-https://zhuanlan.zhihu.com/p/41293278
-
-把python翻译成C++
-
-https://mp.weixin.qq.com/s/XV4LOBM1pO0N8oShZl7MzQ
-
-手把手教你用Python设计一个命令行界面
-
-https://mp.weixin.qq.com/s/b19SLduKoiOIeE5CA3ZOjg
-
-Python标准库之LRU缓存实现学习
-
-https://zhuanlan.zhihu.com/p/149240769
-
-Python自动化测试——必会模块 Unittest

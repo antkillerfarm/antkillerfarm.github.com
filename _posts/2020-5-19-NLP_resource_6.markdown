@@ -49,10 +49,6 @@ https://mp.weixin.qq.com/s/5F6h2F8L-OdFJxBY2QrWJg
 
 不只有BERT！盘点2018年NLP令人激动的10大想法
 
-https://mp.weixin.qq.com/s/wBsh9dmMPks04X2pDB8Ang
-
-沈向洋等重磅论文：公开微软小冰系统设计，迄今最详细！
-
 https://mp.weixin.qq.com/s/Ce3gOZSqkG8wZQ6X1CUE1Q
 
 如何从编码器和解码器两方面改进生成式句子摘要？

@@ -1,12 +1,11 @@
 ---
 layout: post
-title:  Attention（六）——BERT进阶
+title:  Attention（六）——ChatGPT
 category: Attention 
 ---
 
 * toc
 {:toc}
-
 
 # Attention in CV & RS（续）
 
@@ -150,75 +149,11 @@ https://mp.weixin.qq.com/s/faYB3JCoUfTw_zSVxrKJzA
 
 最新“视频Transformer”2022综述
 
-# BERT进阶
+https://github.com/NVIDIA-Merlin/Transformers4Rec
 
-## AR vs AE
+NVIDIA推出的RS库
 
-自回归模型，是统计上一种处理时间序列的方法，用同一变数例如x的之前各期，亦即$$x_1$$至$$x_{t-1}$$来预测本期$$x_t$$的表现，并假设它们为一线性关系。因为这是从回归分析中的线性回归发展而来，只是不用x预测y，而是用x预测x自己，所以叫做自回归。
-
----
-
-**AR**: Autoregressive Lanuage Modeling，又叫自回归语言模型。它指的是，依据前面(或后面)出现的tokens来预测当前时刻的token，代表模型有ELMO、GTP等。
-
-$$\text{forward:}p(x)=\prod_{t=1}^Tp(x_t|x_{<t})$$
-
-$$\text{backward:}p(x)=\prod_{t=T}^1p(x_t|x_{>t})$$
-
-- 缺点：它只能利用单向语义而不能同时利用上下文信息。ELMO通过双向都做AR模型，然后进行拼接，但从结果来看，效果并不是太好。
-
-- 优点：对自然语言生成任务(NLG)友好，天然符合生成式任务的生成过程。这也是为什么GPT能够编故事的原因。
-
-**AE**:Autoencoding Language Modeling，又叫自编码语言模型。通过上下文信息来预测当前被mask的token，代表有BERT，Word2Vec(CBOW)。
-
-$$p(x)=\prod_{x\in Mask}p(x_t|context)$$
-
-- 缺点：由于训练中采用了MASK标记，导致预训练与微调阶段不一致的问题。此外对于生成式问题，AE模型也显得捉襟见肘，这也是目前BERT为数不多没有实现大的突破的领域。
-
-- 优点：能够很好的编码上下文语义信息，在自然语言理解(NLU)相关的下游任务上表现突出。
-
-参考：
-
-https://mp.weixin.qq.com/s/n6F6MTjrUCmvEoaLiVZpxA
-
-更深的编码器+更浅的解码器=更快的自回归模型
-
-https://mp.weixin.qq.com/s/pe2E69Gpw0nT9sSHvtBGSg
-
-自回归与非自回归模型不可兼得？预训练模型BANG全都要！
-
-## UniLM
-
-https://mp.weixin.qq.com/s/m_FU4NmjUsvxusRidDb-Xg
-
-UniLM:一种既能阅读又能自动生成的预训练模型
-
-https://mp.weixin.qq.com/s/yyUPqxpfBwUSRbwM6SSAcQ
-
-UniLM论文阅读笔记
-
-https://mp.weixin.qq.com/s/RjeuHXa8O3MzSpTOuOHMkQ
-
-站在BERT肩膀上的NLP新秀们：XLMs、MASS和UNILM
-
-https://mp.weixin.qq.com/s/UEBKSKEkZTbpR49_Rh50Jg
-
-微软统一预训练语言模型UniLM 2.0解读
-
-## Electra
-
-https://mp.weixin.qq.com/s/dFT7KKMH56unkOEA9H4Kuw
-
-吊打BERT Large的小型预训练模型ELECTRA终于开源！真相却让人...
-
-https://mp.weixin.qq.com/s/6i9eQISKsWU0jawKzWg8nQ
-
-超越bert，最新预训练模型ELECTRA论文阅读笔记
-
-https://mp.weixin.qq.com/s/lkB1xn6G2P5Nivj7DcYg5w
-
-Electra: 判别还是生成，这是一个选择
-
-## ChatGPT
+# ChatGPT
 
 ![](/images/img4/ChatGPT.jpg)
 
@@ -231,6 +166,28 @@ TAMER（Training an Agent Manually via Evaluative Reinforcement，评估式强�
 这算得上是一种有监督学习+RL了。
 
 利用强化学习在大模型中注入人类的经验，所谓的Reinforcement Learning from Human Feedback(RLHF)，Policy Network输出的多样性及Reward的学习是ChatGPT成功的关键。
+
+---
+
+国内某牛的山寨版本：
+
+https://zhuanlan.zhihu.com/p/605425639
+
+RWKV 14B对比GLM 130B和NeoX 20B，展示RWKV的性能
+
+代码：
+
+https://github.com/BlinkDL/ChatRWKV
+
+RWKV没有使用attention，而是号称100% RNN。
+
+RNN-based没有attention之类机制的模型是怎么获得long memory的能力的啊？
+
+这个形式就是Transformers are RNNs的形式，只不过把Q换成了positional invariant的time weighting。 最近很多work都显示Attention里的Q其实没啥用，换成一个跟着相对位置exponential decay的term就行了。
+
+---
+
+参考：
 
 https://zhuanlan.zhihu.com/p/590655677
 
@@ -248,136 +205,72 @@ https://mp.weixin.qq.com/s/FPws8Gk18pW-TRcorlTczg
 
 ChatGPT研究框架
 
-## 参考
+https://www.zhihu.com/question/575481512
 
-https://www.zhihu.com/question/298203515
+为什么chatgpt的上下文连续对话能力得到了大幅度提升？
 
-如何评价BERT模型？
+## 微软小冰
 
-https://mp.weixin.qq.com/s/Fao3i99kZ1a6aa3UhAYKhA
+微软内部之前有个类似ChatGPT 的项目，叫微软小冰，几个负责人都是那种技术栈和技术思路非常老旧的老人，在微软内部吸血吸了很多年，微软后来体面的裁掉了这个团队，转头去投了OpenAI 10亿美金。
 
-全面超越人类！Google称霸SQuAD，BERT横扫11大NLP测试
+这个被裁团队出来之后，一阵包装，说是微软为了他们更好的发展，所以让他们独立出来，然后去vc那融了好多钱。就在去年12月份投资人纷纷对比了ChatGPT和小冰的智能化程度后（对比效果简直辣眼睛，小冰那也叫智能？）
 
-https://mp.weixin.qq.com/s/INDOBcpg5p7vtPBChAIjAA
+小冰的技术原理，走的是传统nlp原理那一套，已经过时了，没有使用深度学习，基于知识图谱回答，学习的知识非常有限。
 
-最强预训练模型BERT的Pytorch实现
+ChatGPT的出现打了两种人的脸：一种是对强人工智能保持悲观态度，认为强人工智能很长时间内都不可能出现的；一种是对超大模型持怀疑态度，认为通过超大模型来实现人工智能是错误道路的。
 
-https://mp.weixin.qq.com/s/SZMYj4rMneR3OWST007H-Q
+在2022年11月30日之前，市面上有大大小小的互联网或IT企业需要进行文本处理，相应地，也就需要雇佣大量的NLP工程师们来解决相关的问题。
 
-解读谷歌最强NLP模型BERT：模型、数据和训练
+绝大多数的NLP工程师们所做的工程项目，主要是针对某些特定任务提出一个具体的模型，进行有针对性的数据标注，然后再制作模型。简而言之，就是以NLP子任务独立进行研究开发。比如分词、实体识别、文本分类、相似度判别、机器翻译、文摘系统、事件抽取，等等，不一而足。
 
-https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
+也就是说，NLP产业界实际上处于一种手工业模式，你干你的，我干我的，针对不同的企业、不同的需求，需要不断地定制模型、定制数据来完成工作。
 
-详细解读谷歌新模型BERT为什么嗨翻AI圈
+NLP中，还有一部分内容：知识图谱。知识图谱这个概念专门用来记录现实世界中的客观存在的事务的关联关系，对于 NLP任务也极为重要。更准确地讲，应当叫做领域知识图谱，几乎没有哪个机构可以做出一个通泛的图谱来供应用。
 
-https://zhuanlan.zhihu.com/p/66053631
+但知识谱图属于有多少人工，就有多少智能的最典型代表。知识图谱做一万年做不到GPT3的水平，就像蒸汽机做的再好也驱动不了登月火箭。
 
-BERT
+ChatGPT 已经完全抹去了传统NLP业态中，需要分不同子任务、分不同领域数据场景的手工业模式，而是直接采用大模型，以对话形式，直接形成了大一统，进入了机器时代。类似于传统的手工纺织女工，完全由机器替代了。
 
-https://mp.weixin.qq.com/s/WEbJnO04DOrsxUbzpgL66g
+评价NLP模型的效果，应当从两方面入手：
 
-BERT源码分析（PART I）
+一方面，是评价模型对自然语言本身的拟合，比如，前后语句连贯、通顺、符合正常人类的叙述习惯，能够理解反问、反讽、情绪、基本世界观的构建和逻辑推断。客观讲，ChatGPT已经做到了极致，它的语言表达水平，比很多人的作文能力都强非常多。
 
-https://mp.weixin.qq.com/s/iXjE7KoyvFQ8uekLKRK4jw
+另一方面，是评价模型对知识、事实类信息的拟合，这块能力ChatGPT还无法很好胜任，比如模型会告诉我3+13=23，汪小菲的姐姐是大S，谷歌的CEO是库克，等等，大家也都明白，大量的博客、文章、段子，讨论过很多了，不再赘述。
 
-BERT源码分析（PART II）
+目前，这些事实、知识，是由知识图谱来解决的。但以笨拙的实体、关系、属性等为基本概念所作的构建，显然是没有前途的。
 
-https://mp.weixin.qq.com/s/DxBC_x5ZWC6SECfnwDGnVg
+参考：
 
-BERT源码分析（PART III）
+https://zhuanlan.zhihu.com/p/158009816
 
-https://mp.weixin.qq.com/s/kI_k_plZbRzmdeXxt2_2WA
+开域聊天机器人-微软小冰的技术介绍（现实篇）
 
-从Transformer到BERT模型
+https://mp.weixin.qq.com/s/wBsh9dmMPks04X2pDB8Ang
 
-https://mp.weixin.qq.com/s/Bnk0nIjBdb58WVJEY8MqnA
+沈向洋等重磅论文：公开微软小冰系统设计，迄今最详细！
 
-NLP中各种各样的编码器
+https://www.zhihu.com/question/583134530
 
-https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
+微软解散元宇宙团队投资近900亿搞ChatGPT，如何从商业角度解读此举？
 
-预训练BERT，官方代码发布前他们是这样用TensorFlow解决的
+https://zhuanlan.zhihu.com/p/605673596
 
-https://mp.weixin.qq.com/s/vFdm-UHns7Nhbmdoiu6jWg
+ChatGPT这么强，会影响NLPer的就业环境吗
 
-谷歌终于开源BERT代码：3亿参数量，机器之心全面解读
+# BERT进阶
 
-https://zhuanlan.zhihu.com/p/58425003
+## AR vs AE
 
-从Word2Vec到Bert，聊聊词向量的前世今生（一）
+自回归模型，是统计上一种处理时间序列的方法，用同一变数例如x的之前各期，亦即$$x_1$$至$$x_{t-1}$$来预测本期$$x_t$$的表现，并假设它们为一线性关系。因为这是从回归分析中的线性回归发展而来，只是不用x预测y，而是用x预测x自己，所以叫做自回归。
 
-https://mp.weixin.qq.com/s/SfMIKfF_B4agFCHN_U_mzQ
+---
 
-BAM！利用知识蒸馏和多任务学习构建的通用语言模型
+**AR**: Autoregressive Lanuage Modeling，又叫自回归语言模型。它指的是，依据前面(或后面)出现的tokens来预测当前时刻的token，代表模型有ELMO、GTP等。
 
-https://mp.weixin.qq.com/s/6G5Mu7-1omGtQ_9Gt9lUBw
+$$\text{forward:}p(x)=\prod_{t=1}^Tp(x_t|x_{<t})$$
 
-基于预训练自然语言生成的文本摘要方法
+$$\text{backward:}p(x)=\prod_{t=T}^1p(x_t|x_{>t})$$
 
-https://mp.weixin.qq.com/s/yysnPauB22YgprpOi1ZWSQ
+- 缺点：它只能利用单向语义而不能同时利用上下文信息。ELMO通过双向都做AR模型，然后进行拼接，但从结果来看，效果并不是太好。
 
-深入理解BERT Transformer，不仅仅是注意力机制
-
-https://mp.weixin.qq.com/s/kFABJJ3fBC48-4DXK8PERQ
-
-10大任务超越BERT，微软提出多任务深度神经网络MT-DNN
-
-https://mp.weixin.qq.com/s/jlGfxkT_o9sgFlUuR_x5Tw
-
-微软开源用于学习通用语言嵌入的MT-DNN模型
-
-https://mp.weixin.qq.com/s/D68YzjYvpc2epGWFBP6rIQ
-
-谷歌实习生新算法提速惊人！BERT训练从三天三夜，缩短到一个小时
-
-https://mp.weixin.qq.com/s/iDGofh_ycWJzfqQriPEXGQ
-
-如何用Python和BERT做中文文本二元分类？
-
-https://zhuanlan.zhihu.com/p/91052495
-
-当BERT遇上知识图谱
-
-https://mp.weixin.qq.com/s/wQW-JT-sGMj60OtXwTssyQ
-
-BERT模型推理加速总结
-
-https://mp.weixin.qq.com/s/HOD1Hb70NhTXXCXlopzfng
-
-BERT推理加速实践
-
-https://mp.weixin.qq.com/s/0luHJsw7WWJskJWGThR5qg
-
-使用BERT做文本摘要
-
-https://mp.weixin.qq.com/s/IY8J09LvDAr8owYffKi5Dw
-
-五问BERT：深入理解NLP领域爆红的预训练模型
-
-https://zhuanlan.zhihu.com/p/106901954
-
-BERT, ELMo, & GPT-2: 这些上下文相关的表示到底有多上下文化？
-
-https://mp.weixin.qq.com/s/mkDmn4zy_s87kiiDIkx0VQ
-
-NLP的12种后BERT预训练方法
-
-https://www.zhihu.com/question/327450789
-
-Bert如何解决长文本问题？
-
-https://mp.weixin.qq.com/s/QTELpbr480AJsBINm-FHKQ
-
-代码也能预训练，微软&哈工大最新提出CodeBERT模型，支持自然-编程双语处理
-
-https://mp.weixin.qq.com/s/ZEWCcxTEuEMvQ5__t3gkBg
-
-BERT技术体系综述论文：40项分析探究BERT如何work
-
-https://mp.weixin.qq.com/s/OsfeAA_tbzAddh1eunwx2w
-
-关于BERT，面试官们都怎么问
-
-https://mp.weixin.qq.com/s/e3n_16uB-qGeGSaGwzlBDw
-
-这群工程师，业余将中文NLP推进了一大步（中文预训练模型）
+- 优点：对自然语言生成任务(NLG)友好，天然符合生成式任务的生成过程。这也是为什么GPT能够编故事的原因。

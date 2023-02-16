@@ -21,6 +21,10 @@ https://zhuanlan.zhihu.com/p/100616192
 
 ---
 
+信号采样窗口之外的边缘点，本来应该mirror pad（总不可能出了采样窗口，信号直接就降为0吧），结果实际成了zero pad，然后灵敏度直接掉了3db，被竞争对手按在地上摩擦。
+
+---
+
 https://mp.weixin.qq.com/s/zDcbrZeK4tlO0jA3-s_lYg
 
 雷达方面的术语

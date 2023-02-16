@@ -63,6 +63,12 @@ https://zhuanlan.zhihu.com/p/142289703
 
 - tig：一个字符式的图形界面工具。类似的还有Lazygit和gitui。
 
+---
+
+https://zhuanlan.zhihu.com/p/601987272
+
+有了这款开源神器，Git容易多了！（git-sim）
+
 ### 创建版本库
 
 `git init`

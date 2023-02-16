@@ -229,6 +229,10 @@ https://zhuanlan.zhihu.com/p/446837354
 
 GPU架构（下）—AI芯片设计入门
 
+https://www.cnblogs.com/timlly/p/11471507.html
+
+深入GPU硬件架构及运行机制
+
 https://zhuanlan.zhihu.com/p/576793055
 
 Intel四十年显卡坎坷路

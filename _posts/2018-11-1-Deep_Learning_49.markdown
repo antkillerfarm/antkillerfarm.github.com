@@ -214,3 +214,85 @@ DRN：用于单图像超分辨率的对偶回归网络
 https://mp.weixin.qq.com/s/tE_-gUBmt_0h75CnkViUHA
 
 超分辨率技术:Adobe Photoshop与深度神经网络对比
+
+# Transformer进阶+
+
+https://mp.weixin.qq.com/s/MjCIAlDWyHPLj_sGSPc4rg
+
+复旦邱锡鹏组最新综述：A Survey of Transformers
+
+https://mp.weixin.qq.com/s/-Y7Qy-5aJNJ5bx8QJf3k2w
+
+Transformer及其变种
+
+https://mp.weixin.qq.com/s/nSokDcIkOSSrRnhHCuu4Mg
+
+Transformer家族简史（PART I）
+
+https://mp.weixin.qq.com/s/p919Kfv-1GSDM6u6FpnBsA
+
+Transformer家族简史（PART II）
+
+https://mp.weixin.qq.com/s/M0zLw9hA5xzontKB7Zj23Q
+
+Memory Transformer，一种简单明了的Transformer改造方案
+
+https://mp.weixin.qq.com/s/FJeZ8X9gtyciqCTs9zvlLA
+
+Transformer是CNN是GNN是RNN，Attention is all you need！
+
+https://mp.weixin.qq.com/s/d1qqRw7sWyLdoyfnqMBdJQ
+
+深度自适应Transformer
+
+https://mp.weixin.qq.com/s/UowNtBm_hqnes-Lz3POXGQ
+
+Transformers中的Beam Search高效实现
+
+https://mp.weixin.qq.com/s/KdKbOrjeeo7Db095V7mSFA
+
+Transformer之自适应宽度注意力
+
+https://mp.weixin.qq.com/s/EuCCeWz_rkktwLuFJ75BXA
+
+Transformer+AutoML: 遗传搜索在序列式任务上的应用
+
+https://mp.weixin.qq.com/s/OEpLpWzkdfFUQf4cKNuG4w
+
+Performer:基于正交随机特征的快速注意力计算
+
+https://mp.weixin.qq.com/s/eWQLkiJ_XIo7LpTUE9c0qA
+
+Transformer中的相对位置编码
+
+https://mp.weixin.qq.com/s/mZBHjuHJG9Ffd0nSoJ2ISQ
+
+什么是Transformer位置编码？
+
+https://mp.weixin.qq.com/s/V0NAOgluyZN9P8iuhMKRwQ
+
+Transformer为啥在NER上表现不好
+
+https://mp.weixin.qq.com/s/ANFSNW1-mcjPqjcroNHeZQ
+
+RealFormer：Real简单，Real有效
+
+https://mp.weixin.qq.com/s/u-Twg6Cj6VfL6m4K0seBlw
+
+谷歌研究院出品：高效Transformer模型最新综述
+
+https://mp.weixin.qq.com/s/2S_2Z5-ioCNxH1kqFcUuQA
+
+竞赛中的Transformer家族
+
+https://mp.weixin.qq.com/s/mc6M2vEcPG6oMfKe3_apzQ
+
+Transformer变体层出不穷，它们都长什么样？
+
+https://mp.weixin.qq.com/s/IWUxVzpdGIX1Oxn4KxjhHA
+
+一个Transformer，很强；两个，更强？（TransGAN）
+
+https://mp.weixin.qq.com/s/IWUxVzpdGIX1Oxn4KxjhHA
+
+TransGAN：两个Transformer可以构造一个强大的GAN

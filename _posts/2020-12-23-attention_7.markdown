@@ -1,13 +1,199 @@
 ---
 layout: post
-title:  Attention（七）——Transformer进阶, Attention进阶
+title:  Attention（七）——BERT进阶
 category: Attention 
 ---
 
 * toc
 {:toc}
 
-# BERT进阶（续）
+# BERT进阶
+
+## AR vs AE（续）
+
+**AE**:Autoencoding Language Modeling，又叫自编码语言模型。通过上下文信息来预测当前被mask的token，代表有BERT，Word2Vec(CBOW)。
+
+$$p(x)=\prod_{x\in Mask}p(x_t|context)$$
+
+- 缺点：由于训练中采用了MASK标记，导致预训练与微调阶段不一致的问题。此外对于生成式问题，AE模型也显得捉襟见肘，这也是目前BERT为数不多没有实现大的突破的领域。
+
+- 优点：能够很好的编码上下文语义信息，在自然语言理解(NLU)相关的下游任务上表现突出。
+
+参考：
+
+https://mp.weixin.qq.com/s/n6F6MTjrUCmvEoaLiVZpxA
+
+更深的编码器+更浅的解码器=更快的自回归模型
+
+https://mp.weixin.qq.com/s/pe2E69Gpw0nT9sSHvtBGSg
+
+自回归与非自回归模型不可兼得？预训练模型BANG全都要！
+
+## UniLM
+
+https://mp.weixin.qq.com/s/m_FU4NmjUsvxusRidDb-Xg
+
+UniLM:一种既能阅读又能自动生成的预训练模型
+
+https://mp.weixin.qq.com/s/yyUPqxpfBwUSRbwM6SSAcQ
+
+UniLM论文阅读笔记
+
+https://mp.weixin.qq.com/s/RjeuHXa8O3MzSpTOuOHMkQ
+
+站在BERT肩膀上的NLP新秀们：XLMs、MASS和UNILM
+
+https://mp.weixin.qq.com/s/UEBKSKEkZTbpR49_Rh50Jg
+
+微软统一预训练语言模型UniLM 2.0解读
+
+## Electra
+
+https://mp.weixin.qq.com/s/dFT7KKMH56unkOEA9H4Kuw
+
+吊打BERT Large的小型预训练模型ELECTRA终于开源！真相却让人...
+
+https://mp.weixin.qq.com/s/6i9eQISKsWU0jawKzWg8nQ
+
+超越bert，最新预训练模型ELECTRA论文阅读笔记
+
+https://mp.weixin.qq.com/s/lkB1xn6G2P5Nivj7DcYg5w
+
+Electra: 判别还是生成，这是一个选择
+
+## 参考
+
+https://www.zhihu.com/question/298203515
+
+如何评价BERT模型？
+
+https://mp.weixin.qq.com/s/Fao3i99kZ1a6aa3UhAYKhA
+
+全面超越人类！Google称霸SQuAD，BERT横扫11大NLP测试
+
+https://mp.weixin.qq.com/s/INDOBcpg5p7vtPBChAIjAA
+
+最强预训练模型BERT的Pytorch实现
+
+https://mp.weixin.qq.com/s/SZMYj4rMneR3OWST007H-Q
+
+解读谷歌最强NLP模型BERT：模型、数据和训练
+
+https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
+
+详细解读谷歌新模型BERT为什么嗨翻AI圈
+
+https://zhuanlan.zhihu.com/p/66053631
+
+BERT
+
+https://mp.weixin.qq.com/s/WEbJnO04DOrsxUbzpgL66g
+
+BERT源码分析（PART I）
+
+https://mp.weixin.qq.com/s/iXjE7KoyvFQ8uekLKRK4jw
+
+BERT源码分析（PART II）
+
+https://mp.weixin.qq.com/s/DxBC_x5ZWC6SECfnwDGnVg
+
+BERT源码分析（PART III）
+
+https://mp.weixin.qq.com/s/kI_k_plZbRzmdeXxt2_2WA
+
+从Transformer到BERT模型
+
+https://mp.weixin.qq.com/s/Bnk0nIjBdb58WVJEY8MqnA
+
+NLP中各种各样的编码器
+
+https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
+
+预训练BERT，官方代码发布前他们是这样用TensorFlow解决的
+
+https://mp.weixin.qq.com/s/vFdm-UHns7Nhbmdoiu6jWg
+
+谷歌终于开源BERT代码：3亿参数量，机器之心全面解读
+
+https://zhuanlan.zhihu.com/p/58425003
+
+从Word2Vec到Bert，聊聊词向量的前世今生（一）
+
+https://mp.weixin.qq.com/s/SfMIKfF_B4agFCHN_U_mzQ
+
+BAM！利用知识蒸馏和多任务学习构建的通用语言模型
+
+https://mp.weixin.qq.com/s/6G5Mu7-1omGtQ_9Gt9lUBw
+
+基于预训练自然语言生成的文本摘要方法
+
+https://mp.weixin.qq.com/s/yysnPauB22YgprpOi1ZWSQ
+
+深入理解BERT Transformer，不仅仅是注意力机制
+
+https://mp.weixin.qq.com/s/kFABJJ3fBC48-4DXK8PERQ
+
+10大任务超越BERT，微软提出多任务深度神经网络MT-DNN
+
+https://mp.weixin.qq.com/s/jlGfxkT_o9sgFlUuR_x5Tw
+
+微软开源用于学习通用语言嵌入的MT-DNN模型
+
+https://mp.weixin.qq.com/s/D68YzjYvpc2epGWFBP6rIQ
+
+谷歌实习生新算法提速惊人！BERT训练从三天三夜，缩短到一个小时
+
+https://mp.weixin.qq.com/s/iDGofh_ycWJzfqQriPEXGQ
+
+如何用Python和BERT做中文文本二元分类？
+
+https://zhuanlan.zhihu.com/p/91052495
+
+当BERT遇上知识图谱
+
+https://mp.weixin.qq.com/s/wQW-JT-sGMj60OtXwTssyQ
+
+BERT模型推理加速总结
+
+https://mp.weixin.qq.com/s/HOD1Hb70NhTXXCXlopzfng
+
+BERT推理加速实践
+
+https://mp.weixin.qq.com/s/0luHJsw7WWJskJWGThR5qg
+
+使用BERT做文本摘要
+
+https://mp.weixin.qq.com/s/IY8J09LvDAr8owYffKi5Dw
+
+五问BERT：深入理解NLP领域爆红的预训练模型
+
+https://zhuanlan.zhihu.com/p/106901954
+
+BERT, ELMo, & GPT-2: 这些上下文相关的表示到底有多上下文化？
+
+https://mp.weixin.qq.com/s/mkDmn4zy_s87kiiDIkx0VQ
+
+NLP的12种后BERT预训练方法
+
+https://www.zhihu.com/question/327450789
+
+Bert如何解决长文本问题？
+
+https://mp.weixin.qq.com/s/QTELpbr480AJsBINm-FHKQ
+
+代码也能预训练，微软&哈工大最新提出CodeBERT模型，支持自然-编程双语处理
+
+https://mp.weixin.qq.com/s/ZEWCcxTEuEMvQ5__t3gkBg
+
+BERT技术体系综述论文：40项分析探究BERT如何work
+
+https://mp.weixin.qq.com/s/OsfeAA_tbzAddh1eunwx2w
+
+关于BERT，面试官们都怎么问
+
+https://mp.weixin.qq.com/s/e3n_16uB-qGeGSaGwzlBDw
+
+这群工程师，业余将中文NLP推进了一大步（中文预训练模型）
 
 https://mp.weixin.qq.com/s/V4pbjP5na1OYp-TorUik8g
 
@@ -208,209 +394,3 @@ https://mp.weixin.qq.com/s/zz3j9HEuzw5e92MQXxSQsA
 https://mp.weixin.qq.com/s/IN4YfoZnlBozwEFdhSvLZg
 
 用可视化解构BERT，我们从上亿参数中提取出了6种直观模式
-
-https://mp.weixin.qq.com/s/nIT3GIU0dUIYyGChxsiOWw
-
-Google BERT应用之《红楼梦》对话人物提取
-
-https://mp.weixin.qq.com/s/dcp_ANYijRmicMYX7OpJmA
-
-如何用最强模型BERT做NLP迁移学习？
-
-https://mp.weixin.qq.com/s/DR4SkgOfUT7KYiaXm5NynQ
-
-跨语言版BERT：Facebook提出跨语言预训练模型XLM
-
-https://mp.weixin.qq.com/s/epjjHmlmMFhWtRO_cCUITA
-
-用BERT进行多标签文本分类
-
-https://mp.weixin.qq.com/s/Wk6gvOS_Qnud6ib1esMFXA
-
-加入Transformer-XL，这个PyTorch包能调用各种NLP预训练模型！
-
-https://mp.weixin.qq.com/s/GqqU3Ixht1BzMnQeRYQEqQ
-
-谷歌NLP深度学习模型BERT特征的可解释性表现怎么样？
-
-https://mp.weixin.qq.com/s/2f91Ksj19rk_emoFpEmPfA
-
-从BERT看大规模数据的无监督利用
-
-https://mp.weixin.qq.com/s/hF4EcKqmaTm_gemxX7Kftg
-
-BERT的嵌入层是如何实现的？
-
-https://mp.weixin.qq.com/s/CdjNQKSNuklVUsXe4InSoA
-
-FastBERT：放飞BERT的推理速度
-
-https://zhuanlan.zhihu.com/p/132361501
-
-BERT是如何分词的
-
-https://mp.weixin.qq.com/s/Tld9V1jdmWs06zNxiJNkZg
-
-BART&MASS自然语言生成任务上的进步
-
-https://mp.weixin.qq.com/s/G995ulqe6Ifxml_AJqapAw
-
-BERT在小米NLP业务中的实战探索
-
-https://www.cnblogs.com/gczr/p/12874409.html
-
-Sentence-BERT: 一种能快速计算句子相似度的孪生网络
-
-https://mp.weixin.qq.com/s/0hUNG6tC-hlfyTJtuzwU5w
-
-NLP中的Mask全解
-
-https://mp.weixin.qq.com/s/cyNcVNImoCOmTrsS0QVq4w
-
-用Siamese和Dual BERT来做多源文本分类
-
-https://mp.weixin.qq.com/s/uv74FKtUNtgjIBQZbsX7Qw
-
-你finetune BERT的姿势可能不对哦？
-
-https://mp.weixin.qq.com/s/BvM5zx-3XrsZj8BQ5WEa4A
-
-一文带你了解MultiBERT
-
-https://mp.weixin.qq.com/s/mFRhp9pJRa9yHwqc98FMbg
-
-BERT在美团搜索核心排序的探索和实践
-
-https://mp.weixin.qq.com/s/MPGF3tkNn3PBA_7S-fo9eg
-
-谷歌新模型突破BERT局限：NLP版“芝麻街”新成员Big Bird长这样
-
-https://zhuanlan.zhihu.com/p/165893466
-
-BERT及其变种
-
-https://mp.weixin.qq.com/s/5HZULHPI3-HJypvAMXEOcQ
-
-MT-BERT在文本检索任务中的实践
-
-https://mp.weixin.qq.com/s/0aZdGzcGW5ZA020rhX0qSQ
-
-BERT4Rec:使用Bert进行序列推荐
-
-https://mp.weixin.qq.com/s/fr-THgOeaTspKsv_hXnU2Q
-
-CogLTX：将BERT应用于长文本
-
-https://www.cnblogs.com/zhouxiaosong/p/11397655.html
-
-使用BERT模型生成token级向量
-
-https://mp.weixin.qq.com/s/JLP4-5IR6HPK4SRQoC9FAQ
-
-BERT预训练实操总结
-
-https://mp.weixin.qq.com/s/FuO8zY3XoIF-s6_8aXAusw
-
-BERT相关模型汇总梳理
-
-https://zhuanlan.zhihu.com/p/348373259
-
-史上最细节的自然语言处理NLP/Transformer/BERT/Attention面试问题与答案
-
-https://mp.weixin.qq.com/s/Jrs8okgVAh0fymIq-jCqgA
-
-模型压缩与蒸馏！BERT的忒修斯船
-
-https://mp.weixin.qq.com/s/UNHu1eVNorWWKbDb0XBJcA
-
-模型压缩与蒸馏！BERT家族的瘦身之路
-
-https://mp.weixin.qq.com/s/oD_Vibp4Ygraix23K_oV2Q
-
-BERT在58搜索的实践
-
-https://mp.weixin.qq.com/s/bqvEeCyX8pqhJQfCUvUkEw
-
-图解BERT：通俗的解释BERT是如何工作的
-
-# Transformer进阶
-
-https://mp.weixin.qq.com/s/MjCIAlDWyHPLj_sGSPc4rg
-
-复旦邱锡鹏组最新综述：A Survey of Transformers
-
-https://mp.weixin.qq.com/s/-Y7Qy-5aJNJ5bx8QJf3k2w
-
-Transformer及其变种
-
-https://mp.weixin.qq.com/s/nSokDcIkOSSrRnhHCuu4Mg
-
-Transformer家族简史（PART I）
-
-https://mp.weixin.qq.com/s/p919Kfv-1GSDM6u6FpnBsA
-
-Transformer家族简史（PART II）
-
-https://mp.weixin.qq.com/s/M0zLw9hA5xzontKB7Zj23Q
-
-Memory Transformer，一种简单明了的Transformer改造方案
-
-https://mp.weixin.qq.com/s/FJeZ8X9gtyciqCTs9zvlLA
-
-Transformer是CNN是GNN是RNN，Attention is all you need！
-
-https://mp.weixin.qq.com/s/d1qqRw7sWyLdoyfnqMBdJQ
-
-深度自适应Transformer
-
-https://mp.weixin.qq.com/s/UowNtBm_hqnes-Lz3POXGQ
-
-Transformers中的Beam Search高效实现
-
-https://mp.weixin.qq.com/s/KdKbOrjeeo7Db095V7mSFA
-
-Transformer之自适应宽度注意力
-
-https://mp.weixin.qq.com/s/EuCCeWz_rkktwLuFJ75BXA
-
-Transformer+AutoML: 遗传搜索在序列式任务上的应用
-
-https://mp.weixin.qq.com/s/OEpLpWzkdfFUQf4cKNuG4w
-
-Performer:基于正交随机特征的快速注意力计算
-
-https://mp.weixin.qq.com/s/eWQLkiJ_XIo7LpTUE9c0qA
-
-Transformer中的相对位置编码
-
-https://mp.weixin.qq.com/s/mZBHjuHJG9Ffd0nSoJ2ISQ
-
-什么是Transformer位置编码？
-
-https://mp.weixin.qq.com/s/V0NAOgluyZN9P8iuhMKRwQ
-
-Transformer为啥在NER上表现不好
-
-https://mp.weixin.qq.com/s/ANFSNW1-mcjPqjcroNHeZQ
-
-RealFormer：Real简单，Real有效
-
-https://mp.weixin.qq.com/s/u-Twg6Cj6VfL6m4K0seBlw
-
-谷歌研究院出品：高效Transformer模型最新综述
-
-https://mp.weixin.qq.com/s/2S_2Z5-ioCNxH1kqFcUuQA
-
-竞赛中的Transformer家族
-
-https://mp.weixin.qq.com/s/mc6M2vEcPG6oMfKe3_apzQ
-
-Transformer变体层出不穷，它们都长什么样？
-
-https://mp.weixin.qq.com/s/IWUxVzpdGIX1Oxn4KxjhHA
-
-一个Transformer，很强；两个，更强？（TransGAN）
-
-https://mp.weixin.qq.com/s/IWUxVzpdGIX1Oxn4KxjhHA
-
-TransGAN：两个Transformer可以构造一个强大的GAN

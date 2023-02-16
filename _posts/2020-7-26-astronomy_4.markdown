@@ -9,13 +9,15 @@ category: Nature
 
 # SpaceX（续）
 
-https://zhuanlan.zhihu.com/p/272628707
+超声速燃烧冲压式发动机，它简称超燃冲压发动机，可以在攀升过程中从大气里获取氧气。放弃携带氧化剂，从飞行中获取氧气，节省重量，就意味着在消耗相同质量推进剂的条件下，超燃冲压发动机能够产生4倍于火箭的推力。
 
-超美国95%宽带！Starlink实测网速突破160Mbps
+根据相关人士的评估，如果让第二级省的燃料有效果，第一级至少要爬到30公里，速度达到马赫5。低于这个数，跟普通地面发射火箭相比，增益不大。
 
-https://www.zhihu.com/question/508552825
+在马赫数3以下，普通的航空发动机还可以冲一冲，但马赫数3以上，人类至今没有能用的可以吸入大气中氧的航空发动机，现在提出的很多概念，比如超燃冲压发动机、旋转爆轰发动机都是为Ma3以上准备的，困难重重，进展特别慢。
 
-如何看待美SpaceX星链卫星两次接近中国空间站，我方为确保在轨航天员安全实施紧急避碰？
+https://www.zhihu.com/question/268278478
+
+腾云工程的空天飞机和美国退役的航天飞机有区别么？
 
 ---
 
@@ -294,19 +296,3 @@ https://mp.weixin.qq.com/s/eNG-zbHfrji3frbRbQI-Xw
 https://mp.weixin.qq.com/s/0gArlvImgT6V7xEg9SCLTQ
 
 毅力号睁开几双“眼睛”，360度全景展示它的火星新家
-
-https://mp.weixin.qq.com/s/jkK0Xf3Hx0vJ0VpkEljMzw
-
-高清火星影像来了，天问一号拍的！
-
-https://mp.weixin.qq.com/s/kfCLMYvvw5NmaOdkN65Yxw
-
-火星的两极也是冰雪世界吗？
-
-https://mp.weixin.qq.com/s/WGHGXWghWhwcA0tux9bz0g
-
-想去火星旅游，记得看看天气预报
-
-https://mp.weixin.qq.com/s/xqBhOAMIs8dONwhgIHZOgQ
-
-火星探测成功率不足50%，人类何时能圆梦？

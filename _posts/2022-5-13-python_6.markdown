@@ -9,6 +9,26 @@ category: language
 
 # Python
 
+https://mp.weixin.qq.com/s/a3YTmQMfpnviHnidXrhYtg
+
+这17个骚操作你都Ok吗
+
+https://zhuanlan.zhihu.com/p/41293278
+
+把python翻译成C++
+
+https://mp.weixin.qq.com/s/XV4LOBM1pO0N8oShZl7MzQ
+
+手把手教你用Python设计一个命令行界面
+
+https://mp.weixin.qq.com/s/b19SLduKoiOIeE5CA3ZOjg
+
+Python标准库之LRU缓存实现学习
+
+https://zhuanlan.zhihu.com/p/149240769
+
+Python自动化测试——必会模块 Unittest
+
 https://mp.weixin.qq.com/s/zABXQksUX6le8zWJeWUQXw
 
 Python的`__name__`变量，到底是个什么东西？

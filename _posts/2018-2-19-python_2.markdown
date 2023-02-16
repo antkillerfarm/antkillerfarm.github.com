@@ -85,6 +85,17 @@ https://www.liaoxuefeng.com/wiki/1016959663602400/1115615597164000
 
 contextlib
 
+## Singleton
+
+```python
+class NewInt(object):
+    _singleton = None
+    def __new__(cls, *args, **kwargs):
+        if not cls._singleton:
+            cls._singleton = object.__new__(cls, *args, **kwargs)
+        return cls._singleton
+```
+
 ## `__init__.py`的作用
 
 `__init__.py`文件的作用是将文件夹变为一个Python模块,Python中的每个模块的包中，都有`__init__.py`文件。
@@ -397,26 +408,6 @@ a.age = 10
 `-v`: 打印运行信息。
 
 `-u`: stdout立即输出，无缓冲。
-
-## del
-
-由于python都是引用，而python有GC机制，所以，del语句作用在变量上，而不是数据对象上。
-
-```python
-if __name__=='__main__':
-    a=1       #对象1被变量a引用，对象1的引用计数器为1
-    b=a       #对象1被变量b引用，对象1的引用计数器加1
-    c=a       #对象1被变量c引用，对象1的引用计数器加1
-    del a     #删除变量a，解除a对1的引用
-    del b     #删除变量b，解除b对1的引用
-    print(c)  #最终变量c仍然引用1
-```
-
-参考：
-
-https://blog.csdn.net/love1code/article/details/47276683
-
-python中del的用法
 
 ## deep copy
 
