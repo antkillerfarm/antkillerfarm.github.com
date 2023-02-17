@@ -313,7 +313,7 @@ https://mp.weixin.qq.com/s/E65x4kNNZ4ctc12e5v095w
 
 自动驾驶专用计算框架探索和实践
 
-# BERT进阶+
+# BERT进阶++
 
 https://mp.weixin.qq.com/s/nIT3GIU0dUIYyGChxsiOWw
 

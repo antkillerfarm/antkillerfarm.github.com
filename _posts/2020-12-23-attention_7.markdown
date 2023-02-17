@@ -7,9 +7,61 @@ category: Attention
 * toc
 {:toc}
 
+# ChatGPT（续）
+
+## Large Language Model
+
+![](/images/img5/huge_model.jpg)
+
+OpenAI的GPT 3的规模为175B，Google的LaMDA规模为137B，PaLM的规模为540B，DeepMind的Gogher规模为280B。
+
+国内也有中文巨型模型，比如清华&智谱GLM规模130B，华为“盘古”规模200B，百度“文心”规模260B，浪潮“源1.0”规模245B。
+
+然而，OpenAI的中小模型（如 6B~13B）的性能已经远超一众超大模型（如130B的GLM和175B的OPT）。由于实力的不对等，OpenAI、Google、DeepMind等LLM头部玩家可能不再会公开最前沿的LLM研究进展（转为挤牙膏模式）。
+
+悟道2.0是一个基于MoE的稀疏模型，总参数量超过万亿，存一个checkpoint 20T。模型是神威上训练的，那玩意没有GPU或者CUDA，是神威自己的一套底层架构，因此适配起来非常困难。这个项目更像是一个国产硬件上训练巨大模型的尝试，项目启动之初就知道不可能投入到产品。
+
+其次，稀疏模型的参数量和普通模型没有太大的可比性。
+
+175B级别的训练的成本非常高。例如2020年GPT-3的单次训练成本约460万美元，总训练成本达1200万美元，如果推算到2023，国内单次训练成本约662-1170万RMB。以2022年为例，OpenAI运行成本为5.44亿美元，其中约有2亿多美元是工资/劳务费。
+
+国内这一堆利润导向的“AI研究”公司，阿里的达摩院甚至还闹出过自负盈亏这种笑话，让这些公司花费大量时间和金钱去做预训练语料库，估计比让恒大还清债务还难。
+
+参考：
+
+https://www.zhihu.com/question/584132646
+
+中国的大语言模型“悟道2.0”参数是GPT-3十倍，是否中国在大语言模型训练技术上已经远远超过美国？
+
+https://zhuanlan.zhihu.com/p/463352552
+
+稀疏性在机器学习中的发展趋势——Sparsity，稀疏激活，高效计算，MoE，稀疏注意力机制
+
+https://zhuanlan.zhihu.com/p/254821426
+
+乘风破浪的PTM：两年来预训练模型的技术进展（2020年之前的主流技术）
+
+https://zhuanlan.zhihu.com/p/597586623
+
+通向AGI之路：大型语言模型（LLM）技术精要
+
 # BERT进阶
 
-## AR vs AE（续）
+## AR vs AE
+
+自回归模型，是统计上一种处理时间序列的方法，用同一变数例如x的之前各期，亦即$$x_1$$至$$x_{t-1}$$来预测本期$$x_t$$的表现，并假设它们为一线性关系。因为这是从回归分析中的线性回归发展而来，只是不用x预测y，而是用x预测x自己，所以叫做自回归。
+
+---
+
+**AR**: Autoregressive Lanuage Modeling，又叫自回归语言模型。它指的是，依据前面(或后面)出现的tokens来预测当前时刻的token，代表模型有ELMO、GTP等。
+
+$$\text{forward:}p(x)=\prod_{t=1}^Tp(x_t|x_{<t})$$
+
+$$\text{backward:}p(x)=\prod_{t=T}^1p(x_t|x_{>t})$$
+
+- 缺点：它只能利用单向语义而不能同时利用上下文信息。ELMO通过双向都做AR模型，然后进行拼接，但从结果来看，效果并不是太好。
+
+- 优点：对自然语言生成任务(NLG)友好，天然符合生成式任务的生成过程。这也是为什么GPT能够编故事的原因。
 
 **AE**:Autoencoding Language Modeling，又叫自编码语言模型。通过上下文信息来预测当前被mask的token，代表有BERT，Word2Vec(CBOW)。
 
@@ -274,123 +326,3 @@ NLP中的词向量对比：word2vec/glove/fastText/elmo/GPT/bert
 https://mp.weixin.qq.com/s/MgLLPEY3ynJGkuTgnIXndQ
 
 站在BERT肩膀上的NLP新秀们（PART I）
-
-https://mp.weixin.qq.com/s/yPq1cGnhcbaNLOjadj91pw
-
-Bert时代的创新：Bert在NLP各领域的应用进展
-
-https://mp.weixin.qq.com/s/l-de0vfx-L24g58IxK-NKQ
-
-Jeff Dean强推：可视化Bert网络，发掘其中的语言、语法树与几何学
-
-https://mp.weixin.qq.com/s/nlFXfgM5KKZXnPdwd97JYg
-
-哈工大讯飞联合实验室发布基于全词覆盖的中文BERT预训练模型
-
-https://zhuanlan.zhihu.com/p/70389596
-
-一批高质量中文BERT预训练模型请查收（上）
-
-https://mp.weixin.qq.com/s/h1VUSY7_UZF3PmjSN0DMSg
-
-从One-hot, Word embedding到Transformer，一步步教你理解Bert
-
-https://zhuanlan.zhihu.com/p/132554155
-
-超细节的BERT/Transformer知识点
-
-https://mp.weixin.qq.com/s/UJlmjFHWhnlXXJoRv4zkEQ
-
-虽被BERT碾压，但还是有必要谈谈BERT时代与后时代的NLP
-
-https://mp.weixin.qq.com/s/e4dgIdwzDzcLSkdgr1yZpg
-
-LeCun力荐：Facebook推出十亿参数超大容量存储器
-
-https://mp.weixin.qq.com/s/zXXtbuSvyMOkgrWJwB83kg
-
-预训练语言模型的最新探索
-
-https://mp.weixin.qq.com/s/WzGa5XVi2Op4Lz-1uQXfxQ
-
-SpanBERT：提出基于分词的预训练模型，多项任务性能超越现有模型！
-
-https://zhuanlan.zhihu.com/p/76912493
-
-nlp中的预训练语言模型总结(单向模型、BERT系列模型、XLNet)
-
-https://mp.weixin.qq.com/s/pYSs6NhIAB6DuwNnKZhkZQ
-
-Bert改进：如何融入知识
-
-https://mp.weixin.qq.com/s/in5SDWlQg8ts4E8DTmHxMQ
-
-BERT在推荐系统领域可能会有什么作为？
-
-https://mp.weixin.qq.com/s/kJhOrz0VaYc-k-6XJS02ag
-
-8篇论文梳理BERT相关模型进展与反思
-
-https://mp.weixin.qq.com/s/hI9XAiqKaHLq-Z9JkaWA_A
-
-解决自然语言歧义问题，斯坦福教授、IJCAI卓越研究奖得主提出SenseBERT模型
-
-https://mp.weixin.qq.com/s/55B0ToIKDusiPI5farR19w
-
-NLP这两年：15个预训练模型对比分析与剖析
-
-https://mp.weixin.qq.com/s/SPfa17p3QetZXCC01DwmQA
-
-解密BERT
-
-https://zhuanlan.zhihu.com/p/72805778
-
-BERT的演进和应用
-
-https://mp.weixin.qq.com/s/9YuBY0wLLVQ8ZrT9fiNICA
-
-语音版BERT？滴滴提出无监督预训练模型，中文识别性能提升10%以上
-
-https://mp.weixin.qq.com/s/OXkXjPHhaMXsKw2YevV6sw
-
-邱锡鹏：从Transformer到BERT--自然语言处理中的表示学习进展
-
-https://mp.weixin.qq.com/s/dV4RkxZOC9o2BxNi0GljKQ
-
-谷歌最强NLP模型BERT官方中文版来了！多语言模型支持100种语言
-
-https://zhuanlan.zhihu.com/p/49271699
-
-从Word Embedding到Bert模型—自然语言处理中的预训练技术发展史
-
-https://mp.weixin.qq.com/s/k_33UK1RkMyHn6TSudU6Kg
-
-详解谷歌最强NLP模型BERT
-
-https://mp.weixin.qq.com/s/d2MZQbamdo0EC_MVtf-HZA
-
-BERT详解：开创性自然语言处理框架的全面指南
-
-https://mp.weixin.qq.com/s/pD4it8vQ-aE474uSMQG0YQ
-
-两行代码玩转Google BERT句向量词向量
-
-https://mp.weixin.qq.com/s/osmUZxAAX3x-oTHYJbzemA
-
-谷歌BERT模型fine-tune终极实践教程
-
-https://mp.weixin.qq.com/s/XmeDjHSFI0UsQmKeOgwnyA
-
-小数据福音！BERT在极小数据下带来显著提升的开源实现
-
-https://mp.weixin.qq.com/s/HXYDO5PM8UIoXgEPGe8p-w
-
-图解当前最强语言模型BERT：NLP是如何攻克迁移学习的？
-
-https://mp.weixin.qq.com/s/zz3j9HEuzw5e92MQXxSQsA
-
-遗珠之作？谷歌Quoc Le这篇NLP预训练模型论文值得一看
-
-https://mp.weixin.qq.com/s/IN4YfoZnlBozwEFdhSvLZg
-
-用可视化解构BERT，我们从上亿参数中提取出了6种直观模式

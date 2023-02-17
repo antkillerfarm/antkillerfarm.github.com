@@ -67,6 +67,17 @@ https://mp.weixin.qq.com/s/-kizIk3ZXqu7UNqAb3QlQw
 
 C++并发编程（C++11到C++17）
 
+## 并行性发掘
+
+从app角度可以分为：数据级并行和任务级并行。
+
+从实现角度可分为：
+
+- 指令级并行。
+- 单指令多数据并行。
+- 线程级并行。
+- 请求级并行。
+
 ## Distributed Data Parallel
 
 https://mp.weixin.qq.com/s/52Wz4pUI8egKugMFuknWKw
@@ -183,7 +194,7 @@ https://zhuanlan.zhihu.com/p/397481167
 
 MindSpore的桎梏和破局
 
-## 大模型
+## 大模型训练
 
 目前部分深度学习框架，例如Pytorch和Tensorflow，没有办法满足超大规模模型训练的需求，于是微软基于Pytroch开发了DeepSpeed，腾讯基于Pytroch开发了派大星PatricStar，达摩院基于Tensoflow开发的分布式框架Whale。像是华为昇腾的MindSpore、百度的PaddlePaddle，还有国内的一流科技OneFlow等厂商，对超大模型训练进行了深度的跟进与探索，基于原生的AI框架支持超大模型训练。
 

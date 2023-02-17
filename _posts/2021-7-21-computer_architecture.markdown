@@ -33,6 +33,8 @@ https://en.wikipedia.org/wiki/Flynn%27s_taxonomy
 
 CPU通常是SISD和SIMD的，而GPU则是SIMD的，超级计算机则是MIMD的。
 
+Intel的SSE/AVX，ARM的Neon/SVE，都属于SIMD指令。
+
 参考：
 
 https://mp.weixin.qq.com/s/n_V_-TOvu5hLZ0BwKpgy9A
@@ -207,6 +209,34 @@ https://zhuanlan.zhihu.com/p/476411477
 
 NUMA架构详解
 
+## VLIW & superscalar
+
+超长指令字(VLIW:Very long instruction word)和超标量（superscalar）都在同一个CPU中，集成了数套运算单元。
+
+超标量用硬件来决定哪些指令可以并行执行，而VLIW采用软件来决定哪些指令并行，通过把指令调度的复杂度交给编译器来降低硬件复杂度。
+
+VLIW的代表是Intel的Itanium处理器。当处理器的执行宽度(execution width)，指令执行延迟时间，执行单元个数(function unit)改变时，VLIW需要重新编译程序来适应。但是Superscalar却不需要。
+
+因此，VLIW在GPU中用的比较多。GPU程序并不直接生成GPU指令，而是通过厂商提供的DX/OpenGL库操作GPU。因此这些重新编译程序的任务已经由厂商完成，而对于使用者透明。
+
+https://mp.weixin.qq.com/s/OQ3KUAi6HMyOS8k3J_1e6g
+
+关于超长指令集VLIW的一些讨论
+
+https://www.zhihu.com/question/430177243
+
+CPU长指令(VLIW)失败的主要原因是什么，VLIW真的无药可救吗？
+
+## DSM
+
+Distributed Shared Memory是分布式系统的所有节点（处理器）共享的虚拟地址空间。程序访问DSM中的数据的方式与访问传统计算机虚拟内存中的数据的方式非常相似。
+
+分布式共享内存(DSM)在10几年前是OS领域的研究热点，不过因为网络传输的性能太差了，所以凉了。而基于消息传递模型的分布式计算发展了起来。其中数据以消息的形式从处理器传递到处理器。RPC实际上也是相同的模型。
+
+https://blog.csdn.net/JiangTao2333/article/details/124530699
+
+分布式共享内存（DSM - Distributed Shared Memory）
+
 ## 参考
 
 https://blog.csdn.net/do2jiang/article/details/4545889
@@ -234,14 +264,6 @@ Vector的前世今生（1）：从辉煌到低谷
 https://zhuanlan.zhihu.com/p/368640768
 
 Vector的前世今生（2）：ARM SVE简述
-
-https://mp.weixin.qq.com/s/OQ3KUAi6HMyOS8k3J_1e6g
-
-关于超长指令集VLIW的一些讨论
-
-https://www.zhihu.com/question/430177243
-
-CPU长指令(VLIW)失败的主要原因是什么，VLIW真的无药可救吗？
 
 https://zhuanlan.zhihu.com/p/594532014
 

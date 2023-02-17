@@ -155,6 +155,16 @@ NVIDIA推出的RS库
 
 # ChatGPT
 
+官网：
+
+https://chat.openai.com/chat
+
+ChatGPT本身并没有论文，大部分是基于InstructGPT这篇论文：
+
+https://openai.com/blog/instruction-following/
+
+Aligning Language Models to Follow Instructions
+
 ![](/images/img4/ChatGPT.jpg)
 
 ![](/images/img4/ChatGPT_2.jpg)
@@ -166,6 +176,16 @@ TAMER（Training an Agent Manually via Evaluative Reinforcement，评估式强�
 这算得上是一种有监督学习+RL了。
 
 利用强化学习在大模型中注入人类的经验，所谓的Reinforcement Learning from Human Feedback(RLHF)，Policy Network输出的多样性及Reward的学习是ChatGPT成功的关键。
+
+模型数据集可分为六类，分别是：维基百科、书籍、期刊、Reddit链接、Common Crawl和其他数据集。
+
+![](/images/img5/huge_data.jpg)
+
+上图展示了各大模型所使用的数据来源。
+
+数据语言: 主要是英语 ~46%, 俄, 德, 日与中文都是~5%左右。
+
+除了文本之外，ChatGPT还利用了github的代码进行训练。有证据显示这使模型学会了逻辑推理。
 
 ---
 
@@ -209,11 +229,31 @@ https://www.zhihu.com/question/575481512
 
 为什么chatgpt的上下文连续对话能力得到了大幅度提升？
 
+https://www.zhihu.com/question/560134313
+
+为什么强化学习里很少有预训练模型（Pretrained Model）？
+
+https://www.zhihu.com/question/570431477
+
+ChatGPT的训练集来自哪里？
+
+https://www.zhihu.com/question/570189639
+
+如何评价OpenAI的超级对话模型ChatGPT？
+
+https://mp.weixin.qq.com/s/_ipboVExouPNtGhvKnJX_g
+
+ChatGPT的技术体系总结
+
+https://mp.weixin.qq.com/s/1fSxWdgfyAaFPBXMGhBV2Q
+
+且看Chat GPT如何应对职场PUA
+
 ## 微软小冰
 
-微软内部之前有个类似ChatGPT 的项目，叫微软小冰，几个负责人都是那种技术栈和技术思路非常老旧的老人，在微软内部吸血吸了很多年，微软后来体面的裁掉了这个团队，转头去投了OpenAI 10亿美金。
+微软内部之前有个类似ChatGPT的项目，叫微软小冰，几个负责人都是那种技术栈和技术思路非常老旧的老人，在微软内部吸血吸了很多年，微软后来体面的裁掉了这个团队，转头去投了OpenAI 10亿美金。
 
-这个被裁团队出来之后，一阵包装，说是微软为了他们更好的发展，所以让他们独立出来，然后去vc那融了好多钱。就在去年12月份投资人纷纷对比了ChatGPT和小冰的智能化程度后（对比效果简直辣眼睛，小冰那也叫智能？）
+这个被裁团队出来之后，一阵包装，说是微软为了他们更好的发展，所以让他们独立出来，然后去vc那融了好多钱。就在去年12月份投资人纷纷对比了ChatGPT和小冰的智能化程度。对比效果简直辣眼睛，小冰那也叫智能？
 
 小冰的技术原理，走的是传统nlp原理那一套，已经过时了，没有使用深度学习，基于知识图谱回答，学习的知识非常有限。
 
@@ -229,7 +269,7 @@ NLP中，还有一部分内容：知识图谱。知识图谱这个概念专门�
 
 但知识谱图属于有多少人工，就有多少智能的最典型代表。知识图谱做一万年做不到GPT3的水平，就像蒸汽机做的再好也驱动不了登月火箭。
 
-ChatGPT 已经完全抹去了传统NLP业态中，需要分不同子任务、分不同领域数据场景的手工业模式，而是直接采用大模型，以对话形式，直接形成了大一统，进入了机器时代。类似于传统的手工纺织女工，完全由机器替代了。
+ChatGPT已经完全抹去了传统NLP业态中，需要分不同子任务、分不同领域数据场景的手工业模式，而是直接采用大模型，以对话形式，直接形成了大一统，进入了机器时代。类似于传统的手工纺织女工，完全由机器替代了。很多NLP子领域不再具备独立研究价值。
 
 评价NLP模型的效果，应当从两方面入手：
 
@@ -257,20 +297,6 @@ https://zhuanlan.zhihu.com/p/605673596
 
 ChatGPT这么强，会影响NLPer的就业环境吗
 
-# BERT进阶
+https://www.zhihu.com/question/575391861
 
-## AR vs AE
-
-自回归模型，是统计上一种处理时间序列的方法，用同一变数例如x的之前各期，亦即$$x_1$$至$$x_{t-1}$$来预测本期$$x_t$$的表现，并假设它们为一线性关系。因为这是从回归分析中的线性回归发展而来，只是不用x预测y，而是用x预测x自己，所以叫做自回归。
-
----
-
-**AR**: Autoregressive Lanuage Modeling，又叫自回归语言模型。它指的是，依据前面(或后面)出现的tokens来预测当前时刻的token，代表模型有ELMO、GTP等。
-
-$$\text{forward:}p(x)=\prod_{t=1}^Tp(x_t|x_{<t})$$
-
-$$\text{backward:}p(x)=\prod_{t=T}^1p(x_t|x_{>t})$$
-
-- 缺点：它只能利用单向语义而不能同时利用上下文信息。ELMO通过双向都做AR模型，然后进行拼接，但从结果来看，效果并不是太好。
-
-- 优点：对自然语言生成任务(NLG)友好，天然符合生成式任务的生成过程。这也是为什么GPT能够编故事的原因。
+ChatGPT印证了模型大一统的可行性，这在未来五年会对NLP从业者带来怎样的冲击？
