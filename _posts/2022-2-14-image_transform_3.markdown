@@ -225,6 +225,14 @@ https://mp.weixin.qq.com/s/gg0a4PVdWpVJNZhuAEXvaA
 
 赛博仓颉，在线造字！Stable Diffusion：没人比我更懂汉字
 
+https://www.zhihu.com/question/583294094
+
+Ai绘画半年了，到目前为止，AI绘画让多少画师失业了？未来又会有多少?
+
+https://www.zhihu.com/question/584139316
+
+AI绘画引入ControlNet，将会带来哪些影响？
+
 # 俄乌战争=++
 
 乌克兰人送给波兰指挥官的榴弹发射器，这个指挥官把玩了一下，以为没有弹药开了一下空枪，结果里面有弹药，就打中天花板了，天花板掉下来就把他自己和一名文职人员砸伤了。

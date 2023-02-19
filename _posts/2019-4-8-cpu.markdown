@@ -159,7 +159,9 @@ https://mp.weixin.qq.com/s/p2f59OngEOKFuELHEIl-hw
 
 ---
 
-美国Synopsys、Cadence、Siemens EDA三大巨头垄断了全球EDA行业接近70%左右的市场份额。
+![](/images/img5/EDA.jpg)
+
+Synopsys、Cadence、Siemens EDA（原Mentor）三大巨头垄断了全球EDA行业接近70%左右的市场份额。
 
 ## 3D芯片
 
