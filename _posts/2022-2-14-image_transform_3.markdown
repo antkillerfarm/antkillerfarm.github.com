@@ -9,6 +9,38 @@ category: CV
 
 # 图像变换
 
+https://mp.weixin.qq.com/s/M9r8m--Sd9kHxZrOEHbY7A
+
+视频直接变漫画！GAN又有了新玩法
+
+https://mp.weixin.qq.com/s/CbdERPAHhmLB2hVVl2Dgkg
+
+裤子换裙子，就问你GAN的这波操作秀不秀
+
+https://mp.weixin.qq.com/s/Ug0jyloNkeL6uuCqv9K0SA
+
+图像/人脸补全问题的前世今生
+
+https://mp.weixin.qq.com/s/xdFxQfgj61pgB-aCq31rLA
+
+旷视等提出GIF2Video：首个深度学习GIF质量提升方法
+
+https://mp.weixin.qq.com/s/4hKIh77UfsuJCSKwtvpq3Q
+
+最强GAN修图魔术师：美颜生发摘眼镜、草绘秒变真人脸
+
+https://mp.weixin.qq.com/s/zvEIUJpgrjSM9-TLSzr3sQ
+
+为什么说GAN很快就要替代现有摄影技术了？
+
+https://mp.weixin.qq.com/s/C2ymfvnOohDutdY4-4aDkQ
+
+用GAN也可以P图，效果还不输PS
+
+https://mp.weixin.qq.com/s/19UeRktAjf2HBIiuzrQ9cA
+
+一键cosplay各路动漫人物！快手的这个BlendGAN火了
+
 https://mp.weixin.qq.com/s/Qwe4LXnB5BitvRGm46dU2w
 
 人工智能是摄影的未来还是摄影技术的末日？
@@ -232,6 +264,10 @@ Ai绘画半年了，到目前为止，AI绘画让多少画师失业了？未来�
 https://www.zhihu.com/question/584139316
 
 AI绘画引入ControlNet，将会带来哪些影响？
+
+https://www.zhihu.com/question/584053473
+
+如何评价2023年2月AI绘画的最新水平？
 
 # 俄乌战争=++
 

@@ -315,6 +315,42 @@ https://zhuanlan.zhihu.com/p/549588865
 
 # 数字成像++
 
+https://mp.weixin.qq.com/s/k2JLF_aM3j68GjEByCZF-g
+
+模拟/数字增益对图像噪声的影响
+
+https://mp.weixin.qq.com/s/QmEQuEk2B_fAleewTuNClg
+
+3D成像技术和CMOS传感器的发展方向简析
+
+https://mp.weixin.qq.com/s/R7wnyHT6M-KF3ZMz0bPrVg
+
+这台相机没镜头！美国教授新发明，一块玻璃可成像，拍照给计算机看
+
+https://mp.weixin.qq.com/s/j970Qp8Cz2fpbImujkS2Xg
+
+自动驾驶应用中的LED flicker问题
+
+https://mp.weixin.qq.com/s/Yy-XEyM0YGTRFUX2uWgNKw
+
+夜景拍照之算法篇
+
+https://mp.weixin.qq.com/s/h7MQhZjnP3lLkLD0cKNixA
+
+高动态范围成像的理论基础
+
+https://mp.weixin.qq.com/s/Wd6LD8Rme8XJwtYWU-ALtQ
+
+动态范围压缩（DRC）的四种方法
+
+https://mp.weixin.qq.com/s/7_mDPCEq3S-843PwUQSwXA
+
+车载相机image sensor选型
+
+https://mp.weixin.qq.com/s/byeQKa7d5FSLS7JrBwP_Zw
+
+什么是多光谱/高光谱成像
+
 https://mp.weixin.qq.com/s/nz9NHdyhRqxdhYopFQ_5Ag
 
 红外热成像与快速发热病患检测

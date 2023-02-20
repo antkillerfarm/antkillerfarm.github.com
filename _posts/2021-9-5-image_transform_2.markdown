@@ -67,6 +67,22 @@ https://zhuanlan.zhihu.com/p/567654308
 
 神经渲染的进展综述
 
+## LoRA
+
+LoRA: Low-Rank Adaptation of Large Language Models是微软研究院引入的一项新技术，主要用于处理大模型微调的问题。
+
+lora模型可以简单理解为在基础模型之上的一个补丁模型，用来训练特定风格、特定人物、特定动作等效果。因为基础模型提供了强大的通用能力，但对于指定人物、或者特定的一种风格掌握的并不精，所以需要lora模型来针对性学习下特定领域的效果。
+
+https://huggingface.co/datasets/HuggingFace-CN-community/translation/blob/main/lora_cn.md
+
+使用LoRA进行Stable Diffusion的高效参数微调
+
+---
+
+https://civitai.com/
+
+一个AI艺术的网站
+
 ## 参考
 
 https://mp.weixin.qq.com/s/djkjAfUO_DefTP2drzY_iQ
@@ -332,35 +348,3 @@ https://mp.weixin.qq.com/s/V4PN0L42iisRxQ6y4Hc8fw
 https://mp.weixin.qq.com/s/-3e5xhbz01FerZp8DcRV5g
 
 谷歌小姐姐搞出魔法画板：你随便画，补不齐算AI输
-
-https://mp.weixin.qq.com/s/M9r8m--Sd9kHxZrOEHbY7A
-
-视频直接变漫画！GAN又有了新玩法
-
-https://mp.weixin.qq.com/s/CbdERPAHhmLB2hVVl2Dgkg
-
-裤子换裙子，就问你GAN的这波操作秀不秀
-
-https://mp.weixin.qq.com/s/Ug0jyloNkeL6uuCqv9K0SA
-
-图像/人脸补全问题的前世今生
-
-https://mp.weixin.qq.com/s/xdFxQfgj61pgB-aCq31rLA
-
-旷视等提出GIF2Video：首个深度学习GIF质量提升方法
-
-https://mp.weixin.qq.com/s/4hKIh77UfsuJCSKwtvpq3Q
-
-最强GAN修图魔术师：美颜生发摘眼镜、草绘秒变真人脸
-
-https://mp.weixin.qq.com/s/zvEIUJpgrjSM9-TLSzr3sQ
-
-为什么说GAN很快就要替代现有摄影技术了？
-
-https://mp.weixin.qq.com/s/C2ymfvnOohDutdY4-4aDkQ
-
-用GAN也可以P图，效果还不输PS
-
-https://mp.weixin.qq.com/s/19UeRktAjf2HBIiuzrQ9cA
-
-一键cosplay各路动漫人物！快手的这个BlendGAN火了

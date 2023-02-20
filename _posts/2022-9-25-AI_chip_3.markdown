@@ -9,6 +9,42 @@ category: Chip
 
 # AI Chip
 
+https://mp.weixin.qq.com/s/UpnkYfhaEsYhze8GdpZ8Dg
+
+Arm的NPU究竟什么水平？
+
+https://mp.weixin.qq.com/s/QPuOmv7-agrcgnchgs3Hkg
+
+清华大学提出AI计算芯片的存储优化新方法
+
+https://mp.weixin.qq.com/s/eyzzeYOKdah-9WGUrhbAkg
+
+非冯诺依曼新架构：IBM100万忆阻器大规模神经网络加速AI
+
+https://mp.weixin.qq.com/s/oOYGa4Mti6KpkpI4TtpitQ
+
+地平线杨铭：从无形视觉到有形芯片
+
+https://mp.weixin.qq.com/s/_8lbTU0GFEXQr_4pdQ6XPw
+
+同步SGD等现有分布式训练方式将过时，Yoshua Bengio谈迈向硬件友好的深度学习
+
+https://mp.weixin.qq.com/s/acAbNP_ERnKlL3_9v_mwow
+
+FPGA：AI ASIC的必经之路？
+
+https://mp.weixin.qq.com/s/5MyuZf_TBm2NV47CRAz5Dw
+
+2017图灵奖得主：通用芯片每年仅提升3%，神经专用架构才是未来
+
+https://zhuanlan.zhihu.com/p/57808378
+
+AI芯片0.5与2.0
+
+https://mp.weixin.qq.com/s/XDwTI-gnnFMLjVBbOGKL9w
+
+清华大学团队研制高能效通用神经网络处理器芯片STICKER-T
+
 https://mp.weixin.qq.com/s/xbHP1RFn7F7BbimxgWaKqg
 
 Facebook把服务27亿人的AI硬件系统开源了
@@ -320,39 +356,3 @@ https://mp.weixin.qq.com/s/ZSczU1_J_exb2oreiHtK3g
 https://mp.weixin.qq.com/s/eyIeLaBZ0f_EsxglsUuH8A
 
 深度学习自动构图研究报告
-
-https://mp.weixin.qq.com/s/k2JLF_aM3j68GjEByCZF-g
-
-模拟/数字增益对图像噪声的影响
-
-https://mp.weixin.qq.com/s/QmEQuEk2B_fAleewTuNClg
-
-3D成像技术和CMOS传感器的发展方向简析
-
-https://mp.weixin.qq.com/s/R7wnyHT6M-KF3ZMz0bPrVg
-
-这台相机没镜头！美国教授新发明，一块玻璃可成像，拍照给计算机看
-
-https://mp.weixin.qq.com/s/j970Qp8Cz2fpbImujkS2Xg
-
-自动驾驶应用中的LED flicker问题
-
-https://mp.weixin.qq.com/s/Yy-XEyM0YGTRFUX2uWgNKw
-
-夜景拍照之算法篇
-
-https://mp.weixin.qq.com/s/h7MQhZjnP3lLkLD0cKNixA
-
-高动态范围成像的理论基础
-
-https://mp.weixin.qq.com/s/Wd6LD8Rme8XJwtYWU-ALtQ
-
-动态范围压缩（DRC）的四种方法
-
-https://mp.weixin.qq.com/s/7_mDPCEq3S-843PwUQSwXA
-
-车载相机image sensor选型
-
-https://mp.weixin.qq.com/s/byeQKa7d5FSLS7JrBwP_Zw
-
-什么是多光谱/高光谱成像

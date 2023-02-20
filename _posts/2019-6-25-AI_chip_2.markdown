@@ -256,6 +256,30 @@ https://mp.weixin.qq.com/s/_n1FA7H5q4AwXqeBg9tekA
 
 ---
 
+几乎每一个概述的AI加速解决方案都是从一个已经有几十年历史的学术思想开始的：脉动阵列起源于1978；VLIW架构起源于1983；数据流编程的概念可以追溯到1975；早期的内存内处理（processing-in-memory）出现在20世纪70年代。
+
+https://www.thepaper.cn/newsDetail_forward_16268882
+
+详解AI加速器（一）：2012年的AlexNet到底做对了什么？
+
+https://www.thepaper.cn/newsDetail_forward_16641034
+
+详解AI加速器（二）：为什么说现在是AI加速器的黄金时代？
+
+https://www.thepaper.cn/newsDetail_forward_16681105
+
+详解AI加速器（三）：架构基础离不开ISA、可重构处理器
+
+https://www.thepaper.cn/newsDetail_forward_16787134
+
+详解AI加速器（四）：GPU、DPU、IPU、TPU…AI加速方案有无限种可能
+
+https://www.thepaper.cn/newsDetail_forward_16869908
+
+详解AI加速器（最终篇）：给想进入赛道的玩家一些建议
+
+---
+
 https://zhuanlan.zhihu.com/p/58971347
 
 深度学习的芯片加速器
@@ -371,39 +395,3 @@ Eyeriss是MIT设计的一款NN加速器。
 https://zhuanlan.zhihu.com/p/37520172
 
 一窥ARM的AI处理器
-
-https://mp.weixin.qq.com/s/UpnkYfhaEsYhze8GdpZ8Dg
-
-Arm的NPU究竟什么水平？
-
-https://mp.weixin.qq.com/s/QPuOmv7-agrcgnchgs3Hkg
-
-清华大学提出AI计算芯片的存储优化新方法
-
-https://mp.weixin.qq.com/s/eyzzeYOKdah-9WGUrhbAkg
-
-非冯诺依曼新架构：IBM100万忆阻器大规模神经网络加速AI
-
-https://mp.weixin.qq.com/s/oOYGa4Mti6KpkpI4TtpitQ
-
-地平线杨铭：从无形视觉到有形芯片
-
-https://mp.weixin.qq.com/s/_8lbTU0GFEXQr_4pdQ6XPw
-
-同步SGD等现有分布式训练方式将过时，Yoshua Bengio谈迈向硬件友好的深度学习
-
-https://mp.weixin.qq.com/s/acAbNP_ERnKlL3_9v_mwow
-
-FPGA：AI ASIC的必经之路？
-
-https://mp.weixin.qq.com/s/5MyuZf_TBm2NV47CRAz5Dw
-
-2017图灵奖得主：通用芯片每年仅提升3%，神经专用架构才是未来
-
-https://zhuanlan.zhihu.com/p/57808378
-
-AI芯片0.5与2.0
-
-https://mp.weixin.qq.com/s/XDwTI-gnnFMLjVBbOGKL9w
-
-清华大学团队研制高能效通用神经网络处理器芯片STICKER-T

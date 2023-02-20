@@ -191,6 +191,10 @@ https://www.zhihu.com/question/286135893
 
 为何清军迟迟不装备燧发枪？
 
+https://www.zhihu.com/question/34831530
+
+T72真的很不堪吗？
+
 # 化学+
 
 ## 食品工业（续）
