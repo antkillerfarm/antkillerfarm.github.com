@@ -315,6 +315,22 @@ https://mp.weixin.qq.com/s/E65x4kNNZ4ctc12e5v095w
 
 # BERT进阶++
 
+https://mp.weixin.qq.com/s/s1bQFdA6gtoHeeQMJKQ8UQ
+
+Bert时代的创新：Bert应用模式比较及其它
+
+https://mp.weixin.qq.com/s/zqlWx3e4LOJ3_Zy2DEbCjw
+
+从语言模型看Bert的善变与GPT的坚守
+
+https://mp.weixin.qq.com/s/LngE10Hnqe9bgFzpNfUwLQ
+
+NLP中的词向量对比：word2vec/glove/fastText/elmo/GPT/bert
+
+https://mp.weixin.qq.com/s/MgLLPEY3ynJGkuTgnIXndQ
+
+站在BERT肩膀上的NLP新秀们（PART I）
+
 https://mp.weixin.qq.com/s/nIT3GIU0dUIYyGChxsiOWw
 
 Google BERT应用之《红楼梦》对话人物提取

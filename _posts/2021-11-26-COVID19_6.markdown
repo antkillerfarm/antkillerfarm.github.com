@@ -93,6 +93,10 @@ https://www.zhihu.com/question/584629399
 
 中疾控通报国内首次检出XBB.1.5，该变异株是否会大流行？还有哪些信息值得关注？
 
+https://www.zhihu.com/question/583759294
+
+为什么新冠在中国大面积的感染没有产生新的主流变异株？
+
 # 科研
 
 抗病毒药一般以vir结尾，例如Remdesivir。所以药品的中文名一般就是XXX韦。
@@ -269,4 +273,3 @@ We are waves of the same sea, leaves of the same tree, flowers of the same garde
 
 >Giacomo Puccini，1858～1924，意大利歌剧作曲家，代表作有《波希米亚人》、《托斯卡》与《蝴蝶夫人》等。   
 >《Turandot（图兰朵）》是Puccini最后的作品，在他去世时仍未完成。后来，Franco Alfano根据普契尼的草稿将全剧完成。《今夜无人入睡》（Nessun Dorma）是其中最著名的一段咏叹调。
-

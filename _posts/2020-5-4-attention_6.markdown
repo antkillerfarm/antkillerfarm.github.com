@@ -169,6 +169,8 @@ Aligning Language Models to Follow Instructions
 
 ![](/images/img4/ChatGPT_2.jpg)
 
+![](/images/img5/GPT.jpg)
+
 TAMER（Training an Agent Manually via Evaluative Reinforcement，评估式强化人工训练代理）框架将人类标记者引入到Agents的学习循环中，可以通过人类向Agents提供奖励反馈（即指导Agents进行训练），从而快速达到训练任务目标。
 
 ![](/images/img4/TAMER.jpg)
@@ -249,6 +251,10 @@ https://mp.weixin.qq.com/s/1fSxWdgfyAaFPBXMGhBV2Q
 
 且看Chat GPT如何应对职场PUA
 
+https://zhuanlan.zhihu.com/p/607847588
+
+复现ChatGPT的难点与平替
+
 ## 微软小冰
 
 微软内部之前有个类似ChatGPT的项目，叫微软小冰，几个负责人都是那种技术栈和技术思路非常老旧的老人，在微软内部吸血吸了很多年，微软后来体面的裁掉了这个团队，转头去投了OpenAI 10亿美金。
@@ -279,24 +285,3 @@ ChatGPT已经完全抹去了传统NLP业态中，需要分不同子任务、分�
 
 目前，这些事实、知识，是由知识图谱来解决的。但以笨拙的实体、关系、属性等为基本概念所作的构建，显然是没有前途的。
 
-参考：
-
-https://zhuanlan.zhihu.com/p/158009816
-
-开域聊天机器人-微软小冰的技术介绍（现实篇）
-
-https://mp.weixin.qq.com/s/wBsh9dmMPks04X2pDB8Ang
-
-沈向洋等重磅论文：公开微软小冰系统设计，迄今最详细！
-
-https://www.zhihu.com/question/583134530
-
-微软解散元宇宙团队投资近900亿搞ChatGPT，如何从商业角度解读此举？
-
-https://zhuanlan.zhihu.com/p/605673596
-
-ChatGPT这么强，会影响NLPer的就业环境吗
-
-https://www.zhihu.com/question/575391861
-
-ChatGPT印证了模型大一统的可行性，这在未来五年会对NLP从业者带来怎样的冲击？

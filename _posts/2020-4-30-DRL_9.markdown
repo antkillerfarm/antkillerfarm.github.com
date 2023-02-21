@@ -7,7 +7,37 @@ category: DRL
 * toc
 {:toc}
 
-# DRL和Robotics（续）
+# 王者荣耀（续）
+
+https://mp.weixin.qq.com/s/Mdq9fL10Zcjs_z3PeqtN9Q
+
+腾讯AI单挑碾压王者荣耀职业玩家：人类15场只能赢1局，坚持不到8分钟
+
+https://mp.weixin.qq.com/s/_Ze8C8UQV9UZXnSX6qq2GA
+
+强化学习玩王者荣耀
+
+https://mp.weixin.qq.com/s/mj8PG-wRqSbEIR38fongHA
+
+用自己训练的AI玩王者荣耀是什么体验？
+
+# 常见问题建模方法
+
+![](/images/img4/DRL.jpg)
+
+https://zhuanlan.zhihu.com/p/356166466
+
+强化学习落地：计算机系统
+
+# DRL和Robotics
+
+虽然，DRL似乎生来就是为了Robotics，然而现实中的无人系统，目前基本还是使用传统的控制方法。
+
+例如：
+
+https://www.zhihu.com/question/50050401
+
+如何看待百度无人车， 三千多个场景，一万多个if？
 
 不止国内，就连业界标杆Boston Dynamics也是这样：
 
@@ -352,27 +382,3 @@ https://mp.weixin.qq.com/s/rpPN2rgru6krRz2fr1RhsQ
 https://mp.weixin.qq.com/s/AelAD57G4GOh7qm-_rvYsg
 
 伯克利提出DeepMimic：使用强化学习练就18般武艺
-
-https://mp.weixin.qq.com/s/0AM4eASolsPZ7GtPYVBqDQ
-
-伯克利今年大热的DeepMimic开源了~
-
-https://zhuanlan.zhihu.com/p/35567591
-
-强化学习在关系抽取、QA场景的应用
-
-https://mp.weixin.qq.com/s/zWo2iSiJBEBwnFF478xxfQ
-
-DeepMind：探索人类行为中的强化学习机制
-
-https://mp.weixin.qq.com/s/oOslkEklaZSbRb8eDDCRBw
-
-天津大学、东京大学等研究：用深度强化学习检测模型缺陷
-
-https://mp.weixin.qq.com/s/DNT9rMynbN4Th0AVDHeY_w
-
-BAIR提出人机合作新范式：教你如何高效安全地在月球着陆
-
-https://mp.weixin.qq.com/s/KqLCTSYk1C0wYpJw-hpc1g
-
-论强化学习和概率推断的等价性：一种全新概率模型

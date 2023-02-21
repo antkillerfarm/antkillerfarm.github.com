@@ -9,6 +9,22 @@ category: Chip
 
 # CPU
 
+## C Model
+
+在芯片的架构设计阶段需要对芯片进行建模（modeling），建模的主要目的是在大规模投入人力之前先用低成本的计算机软件实现目标芯片的主要功能，评估芯片的工作效果，验证设计思想，并作为后续开发活动的标准和依据。由于这里的软件开发一般使用C语言，所以也叫做C Model。
+
+一般而言，C Model的功能定位可能会有以下几种：
+
+1. 作为算法模型的C版本，定义模块输入输出行为的标准，实现数据的bit-match；
+
+2. 在1的基础上，定义模块的内部结构和资源约束；
+
+3. 在2的基础上，精确定义模块的输入输出时序，实现cycle-accurate；
+
+https://zhuanlan.zhihu.com/p/263012865
+
+ASIC Design and C Model
+
 ## Jim Keller
 
 <table style="text-align:center" width="85%">
@@ -176,16 +192,6 @@ https://zhuanlan.zhihu.com/p/530763927
 https://mp.weixin.qq.com/s/KdJ0b-E0ckK6WMG5HDcEUw
 
 互联网巨头基于全球产业链打造ARM CPU
-
----
-
-海光买了AMD zen-（浮点单元阉割一半）的IP，但是买不到zen2和之后的新核心，因为AMD不卖。
-
-飞腾找台湾世芯代理设计，但因飞腾参与超算建设上了美国黑名单，台湾世芯宁可承受损失也不再继续提供设计服务。
-
-飞腾的通用CPU单核性能变化像是过山车，因为它的FT-1000和FT-1500是基于SUN开源的UltraSPARC T2核心，2007年时的UltraSPARC T2可与Intel至强一较高下。飞腾在投靠ARM之后，CPU性能反而降低了。
-
-飞腾多核互联和多路互联的技术较强，只是在ARM推出原生的互联方案之后，飞腾的研究成果也成了鸡肋。
 
 ---
 

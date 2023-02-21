@@ -57,6 +57,10 @@ https://zhuanlan.zhihu.com/p/600246599
 
 巴赫穆特：城郊在战斗，城里的生活还在继续
 
+https://zhuanlan.zhihu.com/p/546980660
+
+真正的俄罗斯英雄——你有勇气保护敌国的平民吗？
+
 ## 哈尔科夫战役
 
 https://www.zhihu.com/zvideo/1551802887226732544

@@ -223,6 +223,16 @@ https://mp.weixin.qq.com/s/TtuC4DRqz1-QIDI66rBWcA
 
 ---
 
+他眼里面只有钱，学习就是为了钱，崇洋媚外。
+
+我们努力学习是为了什么？是为了中华民族伟大复兴。
+
+https://www.zhihu.com/question/584989437
+
+如何看安徽省庐江中学某主题会上，一男生打断陈宏友副教授的崇洋媚外发言、并号召为中华民族伟大复兴而读书？
+
+---
+
 https://mp.weixin.qq.com/s/1dlOCpoJiCkh55WDAajLuw
 
 内卷、找关系、作弊、丑闻-美国富人的名校之梦

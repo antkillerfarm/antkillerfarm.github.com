@@ -7,7 +7,31 @@ category: Attention
 * toc
 {:toc}
 
-# ChatGPT（续）
+# ChatGPT
+
+## 微软小冰（续）
+
+参考：
+
+https://zhuanlan.zhihu.com/p/158009816
+
+开域聊天机器人-微软小冰的技术介绍（现实篇）
+
+https://mp.weixin.qq.com/s/wBsh9dmMPks04X2pDB8Ang
+
+沈向洋等重磅论文：公开微软小冰系统设计，迄今最详细！
+
+https://www.zhihu.com/question/583134530
+
+微软解散元宇宙团队投资近900亿搞ChatGPT，如何从商业角度解读此举？
+
+https://zhuanlan.zhihu.com/p/605673596
+
+ChatGPT这么强，会影响NLPer的就业环境吗
+
+https://www.zhihu.com/question/575391861
+
+ChatGPT印证了模型大一统的可行性，这在未来五年会对NLP从业者带来怎样的冲击？
 
 ## Large Language Model
 
@@ -310,19 +334,3 @@ https://mp.weixin.qq.com/s/7yCnAHk6x0ICtEwBKxXpOw
 https://mp.weixin.qq.com/s/7sIUaSON53hsXUJjq8uVUA
 
 马聪：NLP中的生成式预训练模型
-
-https://mp.weixin.qq.com/s/s1bQFdA6gtoHeeQMJKQ8UQ
-
-Bert时代的创新：Bert应用模式比较及其它
-
-https://mp.weixin.qq.com/s/zqlWx3e4LOJ3_Zy2DEbCjw
-
-从语言模型看Bert的善变与GPT的坚守
-
-https://mp.weixin.qq.com/s/LngE10Hnqe9bgFzpNfUwLQ
-
-NLP中的词向量对比：word2vec/glove/fastText/elmo/GPT/bert
-
-https://mp.weixin.qq.com/s/MgLLPEY3ynJGkuTgnIXndQ
-
-站在BERT肩膀上的NLP新秀们（PART I）
