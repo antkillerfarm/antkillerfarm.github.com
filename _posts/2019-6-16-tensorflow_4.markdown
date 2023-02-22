@@ -167,14 +167,15 @@ with Profile('/logdir_path'):
 logs = "logs/" + datetime.now().strftime("%Y%m%d-%H%M%S")
 
 tboard_callback = tf.keras.callbacks.TensorBoard(log_dir = logs,
-                                                 histogram_freq = 1,
-                                                 profile_batch = '500,520')
+                                                 profile_batch = (2,6))
 
 model.fit(ds_train,
           epochs=2,
           validation_data=ds_test,
           callbacks = [tboard_callback])
 ```
+
+profile_batch参数用于设置在第几个batch进行profile。为0，表示disable。一般从第2个batch开始，以避免硬件冷启动对于profile的影响。
 
 查看步骤：
 
@@ -245,6 +246,17 @@ tensorflow::profiler::XLineBuilder
 XEventBuilder
 XPlaneBuilder
 HumanReadableProfileBuilder
+```
+
+```
+{
+  TraceMe trace("step");
+  ... do some work ...
+}
+
+auto id = ActivityStart("step");
+  ... do some work ...
+ActivityEnd(id);
 ```
 
 参考：
@@ -379,21 +391,3 @@ numpy数组广播
 https://blog.csdn.net/LoseInVain/article/details/78763303
 
 TensorFlow中的广播Broadcast机制
-
-# TensorFlow Federated
-
-TFF是一个开源框架，用于试验针对分散式数据的机器学习和其他计算。它采用的是一种名为联合学习(FL)的方法，许多参与的客户端能够训练共享的ML模型，同时将数据保存在本地。
-
-这个项目感觉上和Leela Zero有些相似。
-
-从原理上说，TFF主要使用了Federated Machine Learning技术。
-
-参考：
-
-https://mp.weixin.qq.com/s/K2-i3U-BCOctetMkvuvVxg
-
-TensorFlow Federated发布
-
-https://mp.weixin.qq.com/s/6QKyE3jIOwBK_2rcG-Vtiw
-
-联邦机器学习-概念与应用

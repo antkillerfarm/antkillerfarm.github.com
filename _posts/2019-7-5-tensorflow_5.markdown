@@ -7,6 +7,24 @@ category: DL Framework
 * toc
 {:toc}
 
+# TensorFlow Federated
+
+TFF是一个开源框架，用于试验针对分散式数据的机器学习和其他计算。它采用的是一种名为联合学习(FL)的方法，许多参与的客户端能够训练共享的ML模型，同时将数据保存在本地。
+
+这个项目感觉上和Leela Zero有些相似。
+
+从原理上说，TFF主要使用了Federated Machine Learning技术。
+
+参考：
+
+https://mp.weixin.qq.com/s/K2-i3U-BCOctetMkvuvVxg
+
+TensorFlow Federated发布
+
+https://mp.weixin.qq.com/s/6QKyE3jIOwBK_2rcG-Vtiw
+
+联邦机器学习-概念与应用
+
 # TFRecord
 
 TFRecord是TensorFlow官方定义的存放样本数据文件。
@@ -377,15 +395,3 @@ https://mp.weixin.qq.com/s/hquOoKeeHQXqWcHM6Bkvbw
 https://mp.weixin.qq.com/s/aWez5FYXXnRnDbb0zcXFXQ
 
 如何在TensorFlow中训练提升树模型
-
-https://mp.weixin.qq.com/s/kEowgNPVS1nAGBPbzkatlQ
-
-如何构建高可读性和高可重用的TensorFlow模型
-
-https://mp.weixin.qq.com/s/O_IN39FBVPeD5fRYBsPuZQ
-
-用TensorFlow开发问答系统
-
-https://mp.weixin.qq.com/s/8Hrq_z8s_5ms6Q_6OOaU-g
-
-如何使用TensorFlow和自编码器模型生成手写数字

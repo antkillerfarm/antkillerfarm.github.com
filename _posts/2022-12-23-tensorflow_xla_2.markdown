@@ -190,6 +190,18 @@ XLA: The TensorFlow compiler framework
 
 # TensorFlow参考+
 
+https://mp.weixin.qq.com/s/kEowgNPVS1nAGBPbzkatlQ
+
+如何构建高可读性和高可重用的TensorFlow模型
+
+https://mp.weixin.qq.com/s/O_IN39FBVPeD5fRYBsPuZQ
+
+用TensorFlow开发问答系统
+
+https://mp.weixin.qq.com/s/8Hrq_z8s_5ms6Q_6OOaU-g
+
+如何使用TensorFlow和自编码器模型生成手写数字
+
 https://mp.weixin.qq.com/s/nnjyR4XGVZQ1zXCIPzTNlg
 
 基于TensorFlow的变分自编码器实现
@@ -233,22 +245,6 @@ https://mp.weixin.qq.com/s/7er3wNV_IhxhFDOIwNMpww
 海马斯火箭炮更不必多说，立陶宛买5亿、爱沙尼亚买5亿，瑞士、比利时、拉脱维亚等国也纷纷下单购买。
 
 根据媒体的说法，2022年光是标枪与海马斯火箭炮的军售就达到了280亿美元。
-
----
-
-令普京意外的是，博伊科不仅没有笑脸相迎，反而政治立场开始逐渐倒向欧盟。甚至在欧盟将乌克兰列为入欧候选国以后，博伊科公开表示支持乌克兰加入欧盟。
-
-开战后，俄罗斯曾找人来劝降维尔库尔，以为维尔库尔会箪食壶浆迎接他们，维尔库尔不仅不为之所动，反而在社交媒体怒斥劝降者是叛徒。曾经是亲俄派的维尔库尔，现在却成为了Kryvyi Rih军事管理局局长，带领当地军民反抗俄军侵略。
-
-米哈伊洛·多布金，2006年3月至2010年3月任哈尔科夫市市长，2010年3月至2014年2月任哈尔科夫州州长。曾经是2014年前执政党地区党正式总统候选人。作为亚努科维奇派的亲俄铁杆人士，他曾经严厉批评在基辅参与集会的导致迈丹革命的亲西方示威者，并且质疑过当时亚努科维奇倒台后的过渡政府的合法性。
-
-https://zhuanlan.zhihu.com/p/569767902
-
-乌克兰“入俄公投”真的是民族自决吗？
-
-https://www.163.com/dy/article/HJ964Q7F05533SBL.html
-
-亲俄前哈尔科夫市长，在战争爆发后决定入伍参军，到前线对抗俄军
 
 ---
 
