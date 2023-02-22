@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenVX, 运算加速库, 线性代数库
+title:  OpenVX, 运算加速库
 category: AI 
 ---
 
@@ -223,6 +223,14 @@ https://zhuanlan.zhihu.com/p/598557707
 
 Vulkan渲染流程总结
 
+## RenderDoc
+
+RenderDoc是一种图形调试器，目前可用于Windows、Linux、Android、Stadia和Nintendo Switch上的Vulkan、D3D11、D3D12、OpenGL和OpenGL ES开发。
+
+官网：
+
+https://renderdoc.org/
+
 ## OpenMax
 
 一个免费的跨平台抽象软件层，用于加速在嵌入式和移动设备上的多媒体应用程序中捕获和呈现音频、视频和图像。
@@ -242,6 +250,14 @@ DRM是Linux内核层的显示驱动框架，它把显示功能封装成open/clos
 https://blog.csdn.net/weixin_41028621/article/details/110202300
 
 Libdrm库
+
+## DDX/DRI/Glamor
+
+DDX是X Server的2D驱动模块。
+
+DRI的主要作用是让X客户机和X服务器直接控制硬件用的。Linux OpenGL 3D的支持就是通过DRI实现的。其最流行的实现就是Mesa了。
+
+Glamor是一个统一的接口，用于GPU加速2D/3D应用。
 
 # 运算加速库
 
@@ -304,60 +320,6 @@ http://www.netlib.org/lapack/index.html
 http://www.netlib.org/blas/index.html
 
 LAPACK和BLAS的历史非常悠久，是用Fortran语言编写的。
-
-# 线性代数库
-
-## ATLAS（Automatically Tuned Linear Algebra Soft）
-
-代码：
-
-https://sourceforge.net/projects/math-atlas/
-
-安装：
-
-`sudo apt install libatlas-base-dev`
-
-## OpenBLAS
-
-官网：
-
-http://www.openblas.net/
-
-代码：
-
-https://github.com/xianyi/OpenBLAS
-
->作者：张先轶，北京理工大学本硕（2005年、2007年）+中科院博士（2014年）。PerfXLab（澎峰科技）创始人。   
->个人主页：   
->http://xianyi.github.io/index_cn.htm
-
-OpenBLAS需要gfortran参与编译：
-
-`sudo apt install gfortran`
-
-需要注意gcc的版本和gfortran的版本必须一致。例如，某台机器为了项目需要，没有使用ubuntu默认的gcc版本，这样即使安装了gfortran，也还是不行。最后，安装匹配的gfortran才解决了该问题。
-
----
-
-OpenBLAS前身是日本人后藤和茂（Goto Kazushige）写的GotoBLAS2。这是一个真正的业界传奇。GotoBLAS2已经不再维护，而后继的OpenBLAS，主要还是项目维护而已。
-
-## Armadillo
-
-Armadillo是一个线性代数和科学计算的C++库。
-
-官网：
-
-http://arma.sourceforge.net/
-
-## ensmallen
-
-ensmallen是一个基于Armadillo的数学优化方面的C++库。
-
-官网：
-
-https://ensmallen.org/
-
-# 大整数计算
 
 ## GMP
 

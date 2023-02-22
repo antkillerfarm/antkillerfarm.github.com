@@ -185,6 +185,8 @@ https://www.zhihu.com/question/321165966
 
 ![](/images/img4/volodymyr-zelensky.webp)
 
+![](/images/img5/stamp.jpg)
+
 司马南语录：泽连斯基害怕了，哪有胆儿啊，一个演员，战争啊，你真打起仗来，泽连斯基这个胆儿，他不敢正视普京的眼睛，普京的眼睛，他不敢看。
 
 2022.4.4 打赢基辅保卫战，视察布查。

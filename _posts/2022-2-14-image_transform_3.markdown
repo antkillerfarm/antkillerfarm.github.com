@@ -269,6 +269,10 @@ https://www.zhihu.com/question/584053473
 
 如何评价2023年2月AI绘画的最新水平？
 
+https://mp.weixin.qq.com/s/HpziNAqHY9Oetsgk2AVxEg
+
+ControlNet组合拳效果惊人，颠覆AI绘画游戏规则
+
 # 俄乌战争=++
 
 乌克兰人送给波兰指挥官的榴弹发射器，这个指挥官把玩了一下，以为没有弹药开了一下空枪，结果里面有弹药，就打中天花板了，天花板掉下来就把他自己和一名文职人员砸伤了。
