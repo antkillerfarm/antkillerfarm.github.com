@@ -257,6 +257,8 @@ HumanReadableProfileBuilder
 auto id = ActivityStart("step");
   ... do some work ...
 ActivityEnd(id);
+
+profiler::AnnotatedTraceMe
 ```
 
 参考：
