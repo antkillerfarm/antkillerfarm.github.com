@@ -271,6 +271,36 @@ OpenAI开源GPU编程语言Triton，将同时支持N卡和A卡
 
 NVFuser是NV专门为Pytorch设计的自动化的GPU代码生成器。
 
+# LLVM+
+
+https://mp.weixin.qq.com/s/FSlJKnC0y51nsLDp1B3tXg
+
+Swift编译器Crash—Segmentation fault解决方案
+
+https://zhuanlan.zhihu.com/p/392381317
+
+LLVM IR的第一个Pass：上手官方文档Hello Pass
+
+https://csstormq.github.io/
+
+一个LLVM、TVM、NEON的专栏
+
+https://www.zhihu.com/question/484069566
+
+LLVM怎么表达硬件相关的特性?
+
+https://mp.weixin.qq.com/s/-IjJJG5huL6p3KjhO70s7Q
+
+编译器中的图论算法
+
+https://zhuanlan.zhihu.com/p/140462815
+
+LLVM基本概念入门
+
+https://zhuanlan.zhihu.com/p/141265959
+
+有关于TableGen的简单介绍
+
 # 编译原理+
 
 ## PPCG

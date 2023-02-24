@@ -131,6 +131,10 @@ https://www.zhihu.com/question/427637446
 
 ---
 
+格里夫纳（Гривня、Grivnia，也译“吉亚”）最初是重量单位，也称斯拉夫磅，约合410克。后用作银锭重量单位，再演变为乌克兰的货币单位。字母缩写代码为UAH。
+
+---
+
 https://mp.weixin.qq.com/s/kCLZyjoDoNK-py06hvmujA
 
 特供商店在苏联的兴衰（上）

@@ -177,6 +177,8 @@ model.fit(ds_train,
 
 profile_batch参数用于设置在第几个batch进行profile。为0，表示disable。一般从第2个batch开始，以避免硬件冷启动对于profile的影响。
 
+脚本运行之后，会在logs路径下生成plugins/profile文件夹。
+
 查看步骤：
 
 1.打开TensorBoard之后，右上角下拉中选择`PROFILE`。
@@ -222,6 +224,10 @@ TensorBoard性能分析:在Keras中对基本训练指标进行性能分析
 https://github.com/tensorflow/benchmarks
 
 TensorFlow benchmarks
+
+https://blog.csdn.net/kenneth_yu/article/details/77466776
+
+使用profiler检测神经网络模型的运行性能
 
 ## 代码实现
 

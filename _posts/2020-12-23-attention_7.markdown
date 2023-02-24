@@ -87,6 +87,10 @@ https://www.zhihu.com/question/585294957
 
 ChatGPT爆火带动全新职业提示工程师，提示工程有多重要？未来该职业走向如何？
 
+https://zhuanlan.zhihu.com/p/608495853
+
+ChatGPT火爆，最全prompt工程指南登GitHub热榜
+
 # BERT进阶
 
 ## AR vs AE

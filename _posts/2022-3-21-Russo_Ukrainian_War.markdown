@@ -93,6 +93,18 @@ https://zhuanlan.zhihu.com/p/595934765
 
 镜头回顾——俄乌战争的第一年
 
+https://www.zhihu.com/question/585316382
+
+如何从军事角度评价过去一年的俄乌战局？
+
+https://zhuanlan.zhihu.com/p/609064058
+
+美联社俄乌战争一周年照片精选：死亡、破坏和苦难
+
+https://www.zhihu.com/question/585240364
+
+俄乌冲突爆发一周年，给世界带来哪些改变？如何评价这场战争？
+
 ## 人物
 
 ![](/images/img4/big3.jpg)

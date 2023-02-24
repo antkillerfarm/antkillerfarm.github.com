@@ -145,6 +145,10 @@ https://www.zhihu.com/question/568664075
 
 为什么恒星只能聚变到铁，就聚变不下去了？
 
+https://www.zhihu.com/question/43718718
+
+恒星演化的一般进程是怎样的？
+
 ## 流浪地球
 
 https://mp.weixin.qq.com/s/O8tAEBMmZ29N1fr7BGW_UQ
