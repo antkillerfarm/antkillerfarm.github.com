@@ -9,6 +9,14 @@ category: Nature
 
 # 火星探测（续）
 
+https://mp.weixin.qq.com/s/eNG-zbHfrji3frbRbQI-Xw
+
+听！火星的声音！又一辆核动力火星车刚刚着陆，寻找远古火星生命
+
+https://mp.weixin.qq.com/s/0gArlvImgT6V7xEg9SCLTQ
+
+毅力号睁开几双“眼睛”，360度全景展示它的火星新家
+
 https://mp.weixin.qq.com/s/jkK0Xf3Hx0vJ0VpkEljMzw
 
 高清火星影像来了，天问一号拍的！
@@ -282,11 +290,3 @@ https://www.zhihu.com/question/432120058
 https://zhuanlan.zhihu.com/p/330003494
 
 美国天眼塌了
-
----
-
-在目前的理论下，低于5倍地球质量的行星通常会是岩石行星，超过10倍地球质量的行星则会成为类海王星或气体行星。
-
----
-
-第四宇宙速度（fourth cosmic velocity），是指在地球上发射的物体摆脱银河系引力束缚，飞出银河系所需的最小初始速度。但由于人们尚未知道银河系的准确大小与质量，因此只能粗略估算，其数值在525公里/秒以上。

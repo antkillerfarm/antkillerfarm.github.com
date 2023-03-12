@@ -209,10 +209,6 @@ https://mp.weixin.qq.com/s/dTJ7NvVs7qjF2FRoAZ_WlQ
 
 MuZero算法过程详解
 
-https://mp.weixin.qq.com/s/XNt-iyqFeyV2iNx5bxMy0Q
-
-看似平凡的心跳，是一场关乎生死的接力
-
 ## Leela Zero
 
 Leela Zero是比利时人Gian-Carlo Pascutto开源的围棋AI。它的算法与AlphaGo Zero相同。而训练采用GTP协议，集合全球算力，进行分布式训练。
@@ -224,6 +220,34 @@ http://zero.sjeng.org/
 代码：
 
 https://github.com/gcp/leela-zero
+
+## GTP
+
+Go Text Protocol，其目的是建立一个比GMP（Go Modem Protocol）协议的ascii接口更合适于双机通信、更简单、更有效、更灵活的接口。
+
+官网：
+
+http://www.lysator.liu.se/~gunnar/gtp/
+
+参考：
+
+https://www.tianqiweiqi.com/go-gtp.html
+
+围棋引擎的GTP协议
+
+## minigo
+
+Google员工Andrew Jackson作品。但tf官方一再强调这并非TensorFlow项目的一环，也不是DeepMind的AlphaGo官方版本，而是由独立的团队依照AlphaGo Zero的论文而实做出的版本。
+
+官网：
+
+https://github.com/tensorflow/minigo
+
+参考：
+
+https://zhuanlan.zhihu.com/p/352536850
+
+AlphaGo Zero中的强化学习算法和google开源工程实现——从原理到代码实现
 
 ## AI作弊/对抗
 
@@ -294,19 +318,3 @@ https://github.com/Tencent/PhoenixGo
 https://mp.weixin.qq.com/s/tJDmxsuS1QigYS75ZIdzRA
 
 微信团队开源围棋AI技术PhoenixGo，复现AlphaGo Zero论文
-
-## KataGo
-
-KataGo是2019年以后发起的一个新项目，主要解决了Leela Zero和ELF OpenGo耗费算力过多的问题。它不仅训练更快，推理也有极大改进，即使家用显卡PC也可在合理的时间算出结果。支持更多的规则（如日本规则），改善了AlphaGo胜势下缓手的缺陷。
-
-目前，KataGo的棋力已经超越了Leela Zero和ELF OpenGo。
-
-官网：
-
-https://katagotraining.org/
-
-## 参考
-
-https://blog.csdn.net/amds123/article/details/70666594
-
-论文笔记：Mastering the game of Go with deep neural networks and tree search

@@ -45,13 +45,27 @@ https://mp.weixin.qq.com/s/ZIHqRmKHLUXm_cj-U7HYFw
 
 ---
 
-https://mp.weixin.qq.com/s/tqUNYZk8I1Yf-u3DEIxNxA
-
-一篇读懂超新星——宇宙中最酷的星
-
 https://mp.weixin.qq.com/s/V2RHcey7BaS3vQdkcdFaMw
 
 宇宙膨胀到底有多快？科学家也困惑了
+
+https://mp.weixin.qq.com/s/Pnn0J2gxOR1y9xpn2WtpZg
+
+宇宙膨胀，我们会跟着一起膨胀吗？
+
+https://mp.weixin.qq.com/s/ucW-yFzdyArhjz7lZpzNjg
+
+宇宙在膨胀，人们是怎么发现的？
+
+https://www.zhihu.com/question/586129512
+
+为什么宇宙可以“超光速膨胀”？
+
+---
+
+https://mp.weixin.qq.com/s/tqUNYZk8I1Yf-u3DEIxNxA
+
+一篇读懂超新星——宇宙中最酷的星
 
 https://mp.weixin.qq.com/s/UsNxfDC94RKOkGfu4HQMGQ
 
@@ -72,10 +86,6 @@ https://mp.weixin.qq.com/s/_8gFrsboMMda-tS9Tyra1A
 https://mp.weixin.qq.com/s/9RpeIYJXyFzh31WYC_1lbw
 
 宇宙可以用方程描述吗？
-
-https://mp.weixin.qq.com/s/ucW-yFzdyArhjz7lZpzNjg
-
-宇宙在膨胀，人们是怎么发现的？
 
 https://mp.weixin.qq.com/s/epPBEXZVZoiobDuUMISPFA
 
@@ -112,10 +122,6 @@ https://mp.weixin.qq.com/s/JINYS8oBpfocQawnUyqcyg
 https://mp.weixin.qq.com/s/iSE8FaL9WhJNWgizBVZXXA
 
 这项实验，或可解开超高能宇宙线起源的“世纪之谜”
-
-https://mp.weixin.qq.com/s/Pnn0J2gxOR1y9xpn2WtpZg
-
-宇宙膨胀，我们会跟着一起膨胀吗？
 
 https://mp.weixin.qq.com/s/dxNJfyAP8yk-VABrkEViFQ
 
@@ -311,9 +317,3 @@ https://commons.wikimedia.org/wiki/User:Azcolvin429#/media/File:Earth's_Location
 其次，幸存者偏差。
 
 能稳定存在的结构，基本都满足特解条件。不满足的，要么相撞，要么擦肩而过。所以给你的感觉就是大家似乎都挺稳定啊。
-
----
-
-三体问题实际上还有一个隐含条件：三体之间的互相引力作用不可忽略，否则就退化成二体问题了。
-
-比如，太阳、地球、木星，表面看是三体问题，然而地球和木星的引力相比太阳和地球、太阳和木星来说，实在是太小了。因此这个三体问题，实际上是两个二体问题（太阳和地球、太阳和木星）。

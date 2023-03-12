@@ -328,15 +328,3 @@ https://mp.weixin.qq.com/s/iz0KD_CQE6dPexjktpgPng
 https://mp.weixin.qq.com/s/76umxXX-YXyIPJH5n_Z-cQ
 
 科学家上！保护我方新疆棉花！
-
-https://mp.weixin.qq.com/s/VCV9VzwmvAiVrptl8XqSag
-
-鸟类去哪儿：中国学者揭秘游隼迁徙路线
-
-https://mp.weixin.qq.com/s/PuSOuUY8RwRcELhfD40X3w
-
-一次超级大旱，改写了亚洲先民的交往史
-
-https://view.inews.qq.com/wxn/20230201A04QZ700
-
-它是动物园老寿星，去世时相当于人类100岁，饲养员手写讣告看哭网友

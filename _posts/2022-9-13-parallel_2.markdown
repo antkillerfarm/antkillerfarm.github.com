@@ -9,6 +9,22 @@ category: DL acceleration
 
 # 并行 & 框架 & 优化
 
+https://mp.weixin.qq.com/s/ASqpPSIgW_bcFPBfRYz7Xg
+
+哈佛大学提出在云、边缘与终端设备上的分布式深度神经网络DDNN
+
+http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
+
+《Large Scale Distributed Deep Networks》中译文
+
+https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
+
+Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
+
+https://zhuanlan.zhihu.com/p/529388795
+
+训练千亿参数大模型，离不开四种GPU并行策略
+
 https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
 
 百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
@@ -270,10 +286,6 @@ https://mp.weixin.qq.com/s/IzLtn1SR-aFuxXM3GNZbFw
 https://mp.weixin.qq.com/s/GheEA0Ag0vbhZeyzqpTl0A
 
 分布式优化：在大数据时代应运而生
-
-https://mp.weixin.qq.com/s/Vb3AkoWHQY7WWBMZaVnf4g
-
-微软发布DeepSpeed开源库，支持1000亿个参数模型的训练
 
 https://mp.weixin.qq.com/s/3uu50NWFJqA_MTb8wSxIKA
 

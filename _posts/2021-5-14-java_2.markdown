@@ -63,6 +63,10 @@ https://mp.weixin.qq.com/s/2yxexZUr5MWdMZ02GCSwdA
 
 谈谈JVM内部锁升级过程
 
+https://zhuanlan.zhihu.com/p/608730174
+
+每天100w次登陆请求，8G内存该如何设置JVM参数？
+
 ## 动态代理
 
 动态代理可以动态的创建代理类并处理对”实际对象”的调用。

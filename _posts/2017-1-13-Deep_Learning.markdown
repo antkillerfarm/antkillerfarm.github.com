@@ -176,6 +176,10 @@ https://mp.weixin.qq.com/s/W0mVk_KtL2Tr_Uo-1el7Aw
 
 5行代码打造无限宽神经网络模型
 
+https://mp.weixin.qq.com/s/3C5b1cd4PwoYeAEkj5wbYw
+
+用小学数学带你感受人工智能的魅力
+
 # ANN简史
 
 ![](/images/article/ANN_history.png)

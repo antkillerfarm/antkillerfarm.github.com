@@ -247,6 +247,10 @@ https://mp.weixin.qq.com/s/6toEF5NHWoBVxHJrDrq-iA
 
 MySQL表联接原理分析
 
+https://www.zhihu.com/question/569862891
+
+SQL语句中where条件后写上1=1是什么意思？
+
 ## Apache Kylin
 
 Apache Kylin是一个开源的分布式分析引擎，最初由eBay开发贡献至开源社区。它提供Hadoop之上的SQL查询接口及多维分析（OLAP）能力以支持大规模数据，能够处理TB乃至PB级别的分析任务，能够在亚秒级查询巨大的Hive表，并支持高并发。
@@ -370,4 +374,3 @@ https://mp.weixin.qq.com/s/KTZQjC1JokmwmCkOH8APdg
 https://mp.weixin.qq.com/s/42cStPudXRHjs61gjSIgWw
 
 一文读懂区块链与传统数据库之共识机制
-

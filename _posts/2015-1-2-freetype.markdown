@@ -13,7 +13,9 @@ FreeType是一套跨平台的字体文件编程开发包。它的官网是www.fr
 
 网上的关于FreeType的文献很多。写得较好的有以下两篇：
 
-http://www.cppblog.com/wlwlxj/archive/2006/11/08/14843.aspx   （文献A）
+http://www.cppblog.com/wlwlxj/archive/2006/11/08/14843.aspx
+
+FreeType2研究（文献A）
 
 这篇文章比较概括，且有demo，适合入门之用。
 
@@ -25,7 +27,7 @@ http://www.cppblog.com/wlwlxj/archive/2006/11/08/14843.aspx   （文献A）
 
 ## 2.字符对齐
 
-文献A中的代码，显示单个字是没有问题的，但显示一排字尤其是数字符号时，就有问题了。虽然我们已经使用了FT_Set_Char_Size或FT_Set_Pixel_Sizes设定了字模的大小，但返回的字模并不都是一样大的。空白字符返回的字模，大小为0，逗号、句号返回的字模只有普通字的几分之一。这时就需要用glyph->bitmap_left和glyph->bitmap_top来指定起始位置。（详见文献B）
+文献A中的代码，显示单个字是没有问题的，但显示一排字尤其是数字符号时，就有问题了。虽然我们已经使用了FT_Set_Char_Size或FT_Set_Pixel_Sizes设定了字模的大小，但返回的字模并不都是一样大的。空白字符返回的字模，大小为0，逗号、句号返回的字模只有普通字的几分之一。这时就需要用glyph->bitmap_left和glyph->bitmap_top来指定起始位置。
 
 ## 3.文献A勘误
 
@@ -172,6 +174,12 @@ WebP格式是google于2010年推出的一种旨在加快图片加载速度的图
 webp转gif：
 
 `convert a.webp a.gif`
+
+## AVIF
+
+AVIF（ AV1 Image File Format）是一种由AOM（ Alliance for Open Media）开发的基于AV1编解码器的网络图像格式。
+
+![](/images/img5/codec.webp)
 
 ## 3D
 

@@ -248,16 +248,6 @@ https://yejinzhan.gitee.io/2019/04/27/mxGraph%20%E5%85%A5%E9%97%A8%E5%AE%9E%E4%B
 
 mxGraph入门实例教程
 
-# Firefox插件
-
-http://mozilla.com.cn/addon/76-pagesaver/
-
-这个插件可以将网页保存为图片。
-
-# Virtual MIDI Piano Keyboard
-
-VMPK是一款MIDI生成工具软件，也就是俗称的“虚拟电子琴”软件。但它本身只生成MIDI输出，需要配合使用MIDI后处理软件，才能发声。常见的MIDI后处理软件有Qsynth、TiMidity。
-
 # Xming
 
 除了远程桌面之外，X Server也是远程执行GUI程序的一种方法。Xming就是Windows平台上用的较多的X Server。

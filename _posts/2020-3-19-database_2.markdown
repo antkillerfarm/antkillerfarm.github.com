@@ -111,6 +111,10 @@ https://mp.weixin.qq.com/s/rxvNSZtRyA7f27TKKL3J_g
 
 爱奇艺本地实时Cache方案
 
+https://www.ibm.com/docs/en/i/7.2?topic=management-thread-local-storage
+
+Thread Local Storage
+
 ## 横向拆分和纵向拆分
 
 横向拆分：按记录进分分割，不同的记录可以分开保存，每个子表的列数相同。适用场景：数据有独立性，例如表中分别记录各个地区的数据或不同时期的数据。

@@ -263,6 +263,12 @@ https://zhuanlan.zhihu.com/p/513872467
 
 ## OpenAI Triton
 
+一个类似于TVMscript的可以通过python语法去写高性能GPU程序的库。
+
+官网：
+
+https://github.com/openai/triton
+
 https://zhuanlan.zhihu.com/p/394377526
 
 OpenAI开源GPU编程语言Triton，将同时支持N卡和A卡
@@ -440,3 +446,25 @@ https://waf.io
 官网：
 
 https://github.com/Microsoft/vcpkg
+
+# Polyhedral Model++
+
+https://mp.weixin.qq.com/s/wjk2Mxhd2NDpH72l3rdqgQ
+
+多面体编译技术在软硬协同设计中的应用
+
+https://mp.weixin.qq.com/s/mBheJ9NG8khcLRshI40b2w
+
+AI编译关键技术 • 高层循环编译优化 - 不仅仅是分块和合并
+
+https://zhuanlan.zhihu.com/p/199683290
+
+Polyhedral编译调度算法(1)——Pluto算法
+
+https://zhuanlan.zhihu.com/p/232070003
+
+Polyhedral编译调度算法(2)——Feautrier算法
+
+https://zhuanlan.zhihu.com/p/259311866
+
+Polyhedral编译调度算法(3)——isl中的调度算法

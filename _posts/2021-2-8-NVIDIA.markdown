@@ -21,6 +21,12 @@ https://www.zhihu.com/question/22407373
 
 英伟达(NVIDIA)创始人黄仁勋是一个什么样的人？
 
+---
+
+https://zhuanlan.zhihu.com/p/571633096
+
+NVIDIA软硬件全栈浅析
+
 ## 术语
 
 iGPU：Integrated Graphics Processing Unit。
@@ -155,6 +161,8 @@ https://github.com/NVIDIA/dali
 ## Tensor Core
 
 Tensor Core是Nvidia GPU里的AI计算单元。
+
+WMMA（warp matrix multiply-accumulate）
 
 https://mp.weixin.qq.com/s/pPjPLqgXZ8iCPS42vXJpuQ
 

@@ -156,6 +156,10 @@ https://www.cnblogs.com/deep-learning-stacks/p/10355770.html
 
 TensorFlow中的通信机制——Rendezvous（二）gRPC传输
 
+https://blog.csdn.net/gaofeipaopaotang/article/details/80736452
+
+模型优化之分布式执行
+
 ## Pathways
 
 https://blog.csdn.net/OneFlow_Official/article/details/124054450
@@ -209,6 +213,26 @@ https://zhuanlan.zhihu.com/p/432289008
 https://www.zhihu.com/question/498271491
 
 为什么说大模型训练很难？
+
+https://mp.weixin.qq.com/s/Vb3AkoWHQY7WWBMZaVnf4g
+
+微软发布DeepSpeed开源库，支持1000亿个参数模型的训练
+
+## FSDP
+
+Fully Sharded Data Parallel是Facebook 深度借鉴微软ZeRO之后提出的PyTorch DDP升级版本，可以认为是对标微软ZeRO，其本质是 parameter sharding。Parameter sharding就是把模型参数等切分到各个GPU之上。
+
+![](/images/img5/FSDP.png)
+
+参考：
+
+https://www.cnblogs.com/rossiXYZ/p/15815013.html
+
+Facebook如何训练超大模型---(1)
+
+https://www.cnblogs.com/rossiXYZ/p/15819817.html
+
+Facebook如何训练超大模型---(2)
 
 ## 参考
 
@@ -299,19 +323,3 @@ https://mp.weixin.qq.com/s/ToIDncp9dS_qk47PsdZm5A
 https://mp.weixin.qq.com/s/rhtrN2qDspGkpJYDAVSX7w
 
 UC Berkeley展示全新并行处理方法
-
-https://mp.weixin.qq.com/s/ASqpPSIgW_bcFPBfRYz7Xg
-
-哈佛大学提出在云、边缘与终端设备上的分布式深度神经网络DDNN
-
-http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
-
-《Large Scale Distributed Deep Networks》中译文
-
-https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
-
-Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
-
-https://zhuanlan.zhihu.com/p/529388795
-
-训练千亿参数大模型，离不开四种GPU并行策略

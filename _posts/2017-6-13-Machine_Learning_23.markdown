@@ -151,6 +151,10 @@ $$\hat{v}_t = \dfrac{v_t}{1 - \beta^t_2}$$
 
 $$\theta_{t+1} = \theta_{t} - \dfrac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t$$
 
+https://blog.csdn.net/nyist_yangguang/article/details/121603917
+
+Adam各个参数分析
+
 ## AdamW
 
 Adam自动调整学习率，大幅提高了训练速度，但是有相当多的资料报告Adam优化的最终精度略低于SGD。问题出在哪呢，其实Adam本身没有问题，问题在于目前大多数DL框架的L2 loss实现用的是weight decay的方式，而weight decay在与Adam共同使用的时候有互相耦合。

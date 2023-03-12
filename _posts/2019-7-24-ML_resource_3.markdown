@@ -309,6 +309,10 @@ FAIR发布自监督训练库VISSL
 
 # 东南亚++
 
+麓川王国、蒲甘王朝、勃固王朝、阿瓦王朝、东吁王朝、贡榜王朝。
+
+缅甸三大帝：阿奴律陀、莽应龙、雍籍牙。
+
 https://zhuanlan.zhihu.com/p/242294917
 
 泰国，大战缅甸三百年！
@@ -316,6 +320,8 @@ https://zhuanlan.zhihu.com/p/242294917
 https://www.zhihu.com/question/501195504
 
 缅甸为何没有纳入清朝版图？
+
+---
 
 https://zhuanlan.zhihu.com/p/37928659
 

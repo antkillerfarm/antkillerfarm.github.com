@@ -9,6 +9,16 @@ category: Nature
 
 # SpaceX（续）
 
+https://zhuanlan.zhihu.com/p/272628707
+
+超美国95%宽带！Starlink实测网速突破160Mbps
+
+https://www.zhihu.com/question/508552825
+
+如何看待美SpaceX星链卫星两次接近中国空间站，我方为确保在轨航天员安全实施紧急避碰？
+
+---
+
 超声速燃烧冲压式发动机，它简称超燃冲压发动机，可以在攀升过程中从大气里获取氧气。放弃携带氧化剂，从飞行中获取氧气，节省重量，就意味着在消耗相同质量推进剂的条件下，超燃冲压发动机能够产生4倍于火箭的推力。
 
 根据相关人士的评估，如果让第二级省的燃料有效果，第一级至少要爬到30公里，速度达到马赫5。低于这个数，跟普通地面发射火箭相比，增益不大。
@@ -288,11 +298,3 @@ https://mp.weixin.qq.com/s/cht7uCrbhAttO1cmXRvcPw
 https://mp.weixin.qq.com/s/LVVCA_WTd5PoAn_wHzlJjw
 
 耗资27亿美元，美国又一辆核动力火星车成功着陆，还带了一架直升机
-
-https://mp.weixin.qq.com/s/eNG-zbHfrji3frbRbQI-Xw
-
-听！火星的声音！又一辆核动力火星车刚刚着陆，寻找远古火星生命
-
-https://mp.weixin.qq.com/s/0gArlvImgT6V7xEg9SCLTQ
-
-毅力号睁开几双“眼睛”，360度全景展示它的火星新家

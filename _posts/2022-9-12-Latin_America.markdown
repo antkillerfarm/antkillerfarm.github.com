@@ -157,7 +157,29 @@ https://zhuanlan.zhihu.com/p/606196452
 
 被当做耗材一样榨干的国家（尼日尔）
 
-# 俄乌战争=++++
+# 中东+
+
+https://new.qq.com/omn/20210917/20210917A012II00.html
+
+美军噩梦幽灵狙击手“朱巴”，曾经狙杀634名美军，他到底是谁？
+
+https://mp.weixin.qq.com/s/nfPaPOpIjPrgTEGytCPf0w
+
+埃及前总统穆巴拉克去世：毁誉参半的一生
+
+http://history.people.com.cn/GB/198306/14325368.html
+
+奴隶？工人？金字塔的建造者竟是一群自由民
+
+https://www.zhihu.com/question/443184252
+
+叙利亚在军事作战中为什么一败涂地？
+
+https://zhuanlan.zhihu.com/p/588730371
+
+中东传奇女王卡塔尔太后——谢赫.莫扎
+
+# 俄乌战争==++
 
 https://www.zhihu.com/answer/2387251266
 
@@ -182,10 +204,6 @@ https://mp.weixin.qq.com/s/jlUZvp3XmF5TBUHZGS-piw
 https://mp.weixin.qq.com/s/0KyzvO3MJ1iEadRqtOQo3A
 
 俄罗斯军队虚弱的本质终于暴露无遗
-
-https://mp.weixin.qq.com/s/BZSPNVXJMUPYawB2d4v5eA
-
-战争中乌克兰的“寡头”们
 
 https://www.zhihu.com/question/530996641
 
@@ -214,39 +232,3 @@ https://view.inews.qq.com/a/20220528A00YI019
 https://mp.weixin.qq.com/s/A8qiQqTGl-heIOXmVAC3dA
 
 乌克兰战场直播，300美元刷一发火箭弹
-
-https://www.zhihu.com/question/544946847
-
-普京是现代的希特勒吗？
-
-https://zhuanlan.zhihu.com/p/566841960
-
-统计——乌克兰目前接受的军援
-
-https://www.zhihu.com/question/555976713
-
-顿涅茨克等四地入俄公投结果公布，将对俄乌局势产生什么影响？
-
-https://mp.weixin.qq.com/s/n4EMEdHNJuhrHwsCUE6m4A
-
-被欧洲人买爆的中国电热毯，真有那么火吗？
-
-https://www.zhihu.com/question/557681794
-
-如果你来设计《使命召唤：俄乌战争》的剧情，会是怎样的？
-
-https://zhuanlan.zhihu.com/p/579537323
-
-垮塌的大厦——俄罗斯坦克工业现状和梅德韦杰夫无法完成的任务
-
-https://zhuanlan.zhihu.com/p/582340201
-
-俄媒：三百年的荣耀被普京这个生物20年败光了
-
-https://zhuanlan.zhihu.com/p/496556274
-
-大毛的航模
-
-https://zhuanlan.zhihu.com/p/588914690
-
-你给我从车顶上下来！”——再评BMP系列随车步兵搭乘方式

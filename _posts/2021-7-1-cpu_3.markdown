@@ -141,6 +141,8 @@ CPU的核心设计会影响提高频率的难度，通常IPC越高，频率就�
 
 存内计算（Computing In Memory）：典型代表是Mythic、闪忆、知存、九天睿芯。计算操作由位于存储芯片/区域内部的独立计算单元完成，存储和计算可以是模拟的也可以是数字的。这种路线适合算法固定的场景算法计算，目前主要用于语音等轻算力场景。
 
+![](/images/img5/Computing_In_Memory.webp)
+
 https://mp.weixin.qq.com/s/kq5F47N3LS43ZKdwe9-CUQ
 
 端侧智能存算一体芯片的需求、现状与挑战

@@ -170,6 +170,16 @@ Makefile中($(KERNELRELEASE),)执行分析
 
 # Ubuntu使用技巧+
 
+## Firefox插件
+
+http://mozilla.com.cn/addon/76-pagesaver/
+
+这个插件可以将网页保存为图片。
+
+## Virtual MIDI Piano Keyboard
+
+VMPK是一款MIDI生成工具软件，也就是俗称的“虚拟电子琴”软件。但它本身只生成MIDI输出，需要配合使用MIDI后处理软件，才能发声。常见的MIDI后处理软件有Qsynth、TiMidity。
+
 ## X Desktop Group
 
 设置`XDG_CACHE_HOME`可以将cache文件移动到较快的介质如SSD中，从而加速运行。或者移动到较大的分区，以腾出系统空间。
@@ -188,6 +198,34 @@ linux的XDG基本目录规范
 
 `sudo apt-get install sane sane-utils xsane`
 
+## 便签软件
+
+主要有两类便签软件：
+
+1.支持超链接的便签。典型的有Gnote和Tomboy，这两个软件都有内容检索的功能。
+
+2.桌面随意贴。典型的有Indicator Stickynotes和Knotes。后者有内容检索的功能，而前者没有。
+
+## xournalpp
+
+xournalpp是一个手写笔记软件。
+
+官网：
+
+https://xournalpp.github.io/
+
+安装：
+
+`sudo snap install xournalpp`
+
+## Excalidraw
+
+Excalidraw是一个在线的手写笔记软件。
+
+官网：
+
+https://excalidraw.com/
+
 # 新冠肺炎+
 
 ## 蝙蝠
@@ -199,32 +237,6 @@ https://mp.weixin.qq.com/s/QN2GQ6T9Q2cwT_CN6aX_YQ
 https://mp.weixin.qq.com/s/Vi-PRPhFEnBEnNxGNzA6VA
 
 蝙蝠是极为有益的动物，然而也是最容易被误解的动物之一
-
-## 瘟疫公司
-
-![](/images/img4/Plague_Inc.jpg)
-
-![](/images/img4/Plague_Inc.png)
-
-https://zhuanlan.zhihu.com/p/103836857
-
-五年前的冠状病毒模组让《瘟疫公司》再度翻红，创作者是预言家？
-
-https://zhuanlan.zhihu.com/p/125727756
-
-《瘟疫公司》做错了吗？最贴近疫情的游戏被下架，被指存在违反国内法律内容
-
-https://zhuanlan.zhihu.com/p/298079109
-
-现在，你可以在《瘟疫公司》里“拯救世界”了
-
-https://zhuanlan.zhihu.com/p/293192687
-
-因为疫情爆火的《瘟疫公司》免费了，还新增了解药模式
-
-https://www.zhihu.com/question/21491731
-
-游戏《瘟疫公司》Plague Inc这款游戏对现实世界有何启示？
 
 ## 新冠疫苗
 

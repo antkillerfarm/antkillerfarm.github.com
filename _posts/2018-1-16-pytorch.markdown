@@ -250,10 +250,6 @@ PyTorch在前向执行过程中会执行轨迹相关的记录。这种方式我�
 
 前者无法真正做到静态图的优化，而是一种折中策略，而后者则是完全开发了一套不同的API书写方法，也是Tensorflow 2.x版本饱受诟病的核心原因。
 
-PyTorch 1.0对追踪模型图结构（graph capture）这件事也付出了很多的努力，例如torch.jit.trace/script，torch.fx等，但是无一例外，上述各种graph capture方法其使用手感只能用一言难尽来形容（部署、量化的同学赶快举起你们的双手！）。
-
-因此PyTorch痛定思痛，终于在年底搞了个大新闻，在2.0里推出了他们新一代的trace工具Dynamo。
-
 参考：
 
 https://blog.csdn.net/ljp1919/article/details/102514357
@@ -267,6 +263,50 @@ pytorch JIT浅解析
 https://www.zhihu.com/question/326862986
 
 Pytorch实现动态图执行的原理和机制是什么?
+
+## TorchDynamo
+
+PyTorch 1.0对追踪模型图结构（graph capture）这件事也付出了很多的努力，例如torch.jit.trace/script，torch.fx等，但是无一例外，上述各种graph capture方法其使用手感只能用一言难尽来形容。
+
+因此PyTorch痛定思痛，终于在年底搞了个大新闻，在2.0里推出了他们新一代的trace工具Dynamo。
+
+![](/images/img5/TorchDynamo.png)
+
+简单来说，TorchDynamo就是一种嵌入在Python解释器里面的JIT优化器。
+
+文档：
+
+https://pytorch.org/docs/2.0/dynamo/index.html
+
+![](/images/img5/pytorch_compile.jpg)
+
+参考：
+
+https://zhuanlan.zhihu.com/p/570989882
+
+Pytorch编译机制的总结（来自吴芃老师）
+
+https://blog.csdn.net/qq_39967751/article/details/128372797
+
+PyTorch 2.0之Dynamo: 窥探加速背后的真相
+
+## TorchInductor
+
+![](/images/img5/pytorch_compile.png)
+
+TorchDynamo偏重于Graph的捕获，而TorchInductor偏重于算子级的优化。
+
+经过TorchInductor之后的计算图将是PSC(Pure-and-Statically composed)的，更利于编译优化。
+
+参考：
+
+https://dev-discuss.pytorch.org/t/torchinductor-a-pytorch-native-compiler-with-define-by-run-ir-and-symbolic-shapes/747
+
+TorchInductor: a PyTorch-native Compiler with Define-by-Run IR and Symbolic Shapes
+
+https://zhuanlan.zhihu.com/p/595996564
+
+聊聊PyTorch 2.0(Inductor)
 
 ## TorchServe
 
@@ -329,47 +369,3 @@ https://mp.weixin.qq.com/s/i70pT7pQpdoCXXhXq2_MEw
 https://mp.weixin.qq.com/s/7Wr70NFi4pxvSpRr2Q1zsQ
 
 强大的PyTorch：10分钟让你了解深度学习领域新流行的框架
-
-https://mp.weixin.qq.com/s/y5LLraGWuYUbOted9N-GWQ
-
-如何从TensorFlow转入PyTorch
-
-https://mp.weixin.qq.com/s/KRuEuAOXU2fpSNyOJW4bpA
-
-Yoshua Bengio实验室MILA开放面向初学者的PyTorch教程
-
-https://mp.weixin.qq.com/s/QjhokXDXuglJajULKigt1g
-
-PyTorch手把手深度学习教程系列完整版
-
-https://mp.weixin.qq.com/s/FGL1vYaXvv-NCcq0vithZw
-
-深度学习框架：PyTorch入门与实践
-
-https://github.com/jinfagang/pytorch_name_net
-
-PyTorch人工智能自动取名
-
-https://mp.weixin.qq.com/s/UGGrK5LwOP2aLVTz0AGMDw
-
-如何通过PyTorch实现Tensor
-
-https://mp.weixin.qq.com/s/9X77MPcQOQPwZaOVIVfo9Q
-
-用PyTorch搭建抽取式摘要系统
-
-https://mp.weixin.qq.com/s/rORvudwdbnmSvzFhM1gVOA
-
-斯坦福大学CS-224n课程中深度NLP模型的PyTorch实现
-
-https://mp.weixin.qq.com/s/Chk-QAPhIXlIeguT4hS6kg
-
-对比ResNet：超深层网络DiracNet的PyTorch实现
-
-https://mp.weixin.qq.com/s/BP9MToKcE1MJmQTQv2UUZQ
-
-Pytorch开源VQA神经网络模块，让你快速完成看图问答
-
-https://mp.weixin.qq.com/s/QqRjvWMMKosPh9qfU61BzQ
-
-浅谈将Pytorch模型从CPU转换成GPU

@@ -144,3 +144,85 @@ https://www.zhihu.com/answer/642503123
 https://view.inews.qq.com/a/20220923A08QA200
 
 15岁少女30刀刺死强奸犯，被判赔15万美元
+
+# 古希腊/罗马+
+
+军团中的普通士兵，被称为Caligati，这个词能够联想到罗马人穿的那种军鞋caliga，很多人都知道皇帝卡里古拉
+
+这个绰号就是来源于军鞋，只不过卡里古拉这个名字只是后世人这么叫。
+
+经常说的十夫长，Decanus，其实就是兵头，管着一个十人队，其中8名战斗人员，两个军奴。
+
+骑兵队长Decurio，一个军团有120名骑兵，分成四个30人骑兵队。
+
+百夫长Centurio，一个百夫队80名军团兵。
+
+副百夫长，Opio，一个百夫队的二把手，通常是百夫长指定的。
+
+Tesserarius，真不知道这个叫啥，百夫队里的老三，管站岗放哨。
+
+除了第一大队里只有五个百夫队，其他的9个大队都有六个百夫队。除第一大队之外，其他每个大队的指挥权通常情况下归这个大队的最资深的百夫长，被称为Centurio Pilus prior，意思为首列百夫长。
+
+正常一个大队六个百夫队480人，而第一大队只有五个百夫队，但是每一个百夫队有160人。这个大队的百夫长被成为Centurio Primi ordines。
+
+除了以上59个百夫长，每个军团还有一个首席百夫长Primus pilus。首席百夫长是人中龙凤，要具备多方面的能力，不单单只是军事上。
+
+一个平民阶级出身的人，最高能达到的是营地长官Praefectus castrorum，能够担任这个职位的人通常都是前任首席百夫长。这个职位需要相当的资历，和对军事工程学相当的了解。
+
+一个军团通常会有六个军事保民官，其中五个Tribuni Angusticlavii，和一个Tribunus Laticlavius。
+
+我实在不知道这个要怎么翻译，Tribuni Angusticlavii通常出身富裕的骑士阶级，是来军团里刷资历的，他们的地位低于营地长官。
+
+Tribunus Laticlavius同样是来刷资历的，但是一般来说是元老阶级家庭出来的年轻人，理论地位高于营地长官。
+
+军团长，Legatus Legionis，这个很好理解。基本上是元老阶级出身，并且有了一定的政治履历，担任过某些低级的公职。一个军团长会指挥一个军团可能4年左右，然后回罗马担任更高级的职位。很多皇帝都在仕途中担任过某一个军团的军团长。
+
+---
+
+https://www.bilibili.com/read/cv5699454/
+
+历代罗马皇帝列表
+
+http://www.ict.griffith.edu.au/wiseman/Roman/EmpiresStrikeBack.html
+
+476年以后罗马帝国鼎盛期疆域所出现过的各大强权
+
+https://www.zhihu.com/question/317408964
+
+如何过得像个东罗马贵族?
+
+https://www.163.com/dy/article/G2TB7GMH0543HIJQ.html
+
+辟谣：罗马士兵工资发了等于没发？太低级的谣言
+
+https://www.zhihu.com/question/505031003
+
+罗马帝国最大领土是怎么样的？
+
+https://www.zhihu.com/question/423981182
+
+古罗马历史上哪些军团可以称为王牌？
+
+https://zhuanlan.zhihu.com/p/74453316
+
+古罗马斗兽场完全八卦手册（上）
+
+https://zhuanlan.zhihu.com/p/74610242
+
+古罗马斗兽场完全八卦手册（下）
+
+https://zhuanlan.zhihu.com/p/456545071
+
+钱币上的罗马（上）
+
+https://zhuanlan.zhihu.com/p/461540485
+
+钱币上的罗马（下）
+
+https://www.zhihu.com/question/266774805
+
+如何评价罗马皇帝巴西尔二世？
+
+https://zhuanlan.zhihu.com/p/24781429
+
+帝国贵族服饰变迁（6世纪-11世纪早期）

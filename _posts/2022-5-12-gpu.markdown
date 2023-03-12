@@ -312,3 +312,15 @@ NVSwitch是首款节点交换架构，可支持单个服务器节点中16个全�
 https://zhuanlan.zhihu.com/p/35470532
 
 全球最大GPU 背后的秘密：NVSwitch如何实现NVIDIA DGX-2的超强功力？
+
+---
+
+![](/images/img5/Nvidia_Grace_Hopper.jpg)
+
+https://zhuanlan.zhihu.com/p/600638633
+
+Nvidia Grace Hopper超级芯片架构解读（一）
+
+https://zhuanlan.zhihu.com/p/601072219
+
+Nvidia Grace Hopper超级芯片架构解读（二）

@@ -250,6 +250,10 @@ https://mp.weixin.qq.com/s/_AumiAx9wbpOZCGMdf0Arw
 
 字节跳动10万节点HDFS集群多机房架构演进之路
 
+https://www.zhihu.com/question/303101438
+
+mapreduce为什么被淘汰了？
+
 # Pulsar
 
 https://mp.weixin.qq.com/s/O8pj4pChyw8PK-G_4A3DWg

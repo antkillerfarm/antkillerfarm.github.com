@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Tensor2Tensor, MXNet, Horovod
+title:  Tensor2Tensor, MXNet, Horovod, DL框架怀古
 category: DL Framework 
 ---
 
@@ -232,6 +232,10 @@ https://mp.weixin.qq.com/s/7c7Q0P3g3IEL_r4BU2ZxRg
 
 Horovod架构剖析——解密最成功的第三方DL分布式训练框架
 
+https://horovod.readthedocs.io/en/stable/xla.html
+
+Horovod with XLA in Tensorflow
+
 # DMLC
 
 Distributed (Deep) Machine Learning Community是陈天奇发起的一个社区。
@@ -242,112 +246,56 @@ Distributed (Deep) Machine Learning Community是陈天奇发起的一个社区�
 
 https://github.com/dmlc/dmlc-core
 
-# 机器人/无人驾驶参考资源+
+# DL框架怀古
 
-https://zhuanlan.zhihu.com/p/73073753
+2017.9
 
-基于深度学习的多传感器标定
+http://deeplearning.net/
 
-https://mp.weixin.qq.com/s/m4KtRGoBgqcgF8ZBMjG6Hg
+这个网站是Theano的主站，也是我最早接触DL时浏览的网站。其时，我虽然对DL有浓厚的兴趣，但尚未以此作为工作内容。
 
-深层卷积神经网络在路面分类中的应用
+从该网站提供的招聘信息来看，Caffe、Theano、Torch是当时主流的三大框架库。
 
-https://mp.weixin.qq.com/s/nQq2tzK_2y2lEt9H14zdwA
+岂料时隔一年半载之后，这三大框架都渐趋式微。
 
-自动驾驶中的决策规划算法概述
+Caffe被Caffe 2替代，但使用的广泛度仍超过后者。
 
-https://mp.weixin.qq.com/s/yIFgwxU-DI6NBogfmxqqKQ
+Theano被同样基于计算图的TensorFlow淘汰。2017年9月停止更新。
 
-基于深度学习的计算机视觉技术在无人驾驶中的应用
+Torch相对变动最小，它被PyTorch替代。这更可以看作是python对于lua的胜利。
 
-https://mp.weixin.qq.com/s/rA9AAVx7AlNuS1l4IUuG0w
+---
 
-深度学习技术在自动驾驶中的应用
+2020.12
 
-https://mp.weixin.qq.com/s/4_jtb9gv20F6h1Ljw4JwEw
+又是三年过去了。
 
-车载以太网通信的“套娃游戏”
+生命力超强的Caffe终于过气了，大约从2019年下半年开始，即使是新入行的客户，也没人用它了。但是Caffe 2从来没火过。不知道是Caffe 2不行，让贾扬清去阿里，还是贾扬清去阿里了，导致的Caffe 2被放弃。
 
-https://zhuanlan.zhihu.com/p/86184886
+遗弃列表还有CNTK和Chainer。
 
-行人的行为意图建模和预测(上)
+mxnet一直半死不活，虽然李沐并未放弃，但是手下已经有些离开的了。
 
-https://zhuanlan.zhihu.com/p/86185203
+倒是国内，一堆原先私有的框架，纷纷开源。比如清华Jittor，旷视MegEngine，华为Mindspore在2020.3扎堆开源。但是根本溅不起丝毫的水花。你不开源，是自己用；你开源了，还是自己用。反正我是没兴趣用。
 
-行人的行为意图建模和预测(下)
+参考：
 
-https://zhuanlan.zhihu.com/p/90773462
+https://www.zhihu.com/question/392035070
 
-多传感器数据深度图的融合：最近基于深度学习的方法
+如何看待亚马逊AI李沐团队大批人员离职?
 
-https://mp.weixin.qq.com/s/4tOYmCRiFN0xsG6vbedrrg
+https://zhuanlan.zhihu.com/p/121834310
 
-ADAS系统中的动态目标感知策略（一）
+深度学习框架的灵魂
 
-https://mp.weixin.qq.com/s/JT4p03m77ohOufL3JFecvA
+https://mp.weixin.qq.com/s/DxV7mm7xCXWFy_KTIDh_-Q
 
-从硬件角度剖析自动驾驶，为什么说它是复杂的系统工程？
+深度学习框架简史：TF和PyTorch双头垄断
 
-https://mp.weixin.qq.com/s/UGdZCC80gQRTgHz9GV6USA
+https://mp.weixin.qq.com/s/_-z2d1GE_3FElzAwPyJZ8A
 
-MEMS IMU/陀螺仪对准基础
+十大流行AI框架和库的优缺点比较
 
-https://mp.weixin.qq.com/s/v3gsmCWSI9pEwRolN8qWNA
+https://mp.weixin.qq.com/s/gWdeevVYctxjDDw9SOWe_Q
 
-基于深度卷积网络的自动驾驶多模态轨迹预测
-
-https://mp.weixin.qq.com/s/R-17JgcGHG67KZ6yRYNFlA
-
-基于Frenet优化轨迹的无人车动作规划方法
-
-https://mp.weixin.qq.com/s/qZwqp5x6yEXbMBHGzevm0g
-
-ACC自适应巡航控制系统介绍
-
-https://zhuanlan.zhihu.com/p/57077589
-
-自动驾驶中路上行人的行为和意图理解及预测
-
-https://zhuanlan.zhihu.com/p/109900137
-
-传感器融合-任务篇
-
-https://zhuanlan.zhihu.com/p/109895639
-
-传感器融合-数据篇
-
-https://mp.weixin.qq.com/s/1sbL2vmugiIlSn_ehIOuig
-
-车载多传感器融合定位方案：GPS +IMU+MM
-
-https://mp.weixin.qq.com/s/5kJfhp3vi9uuSFaeONKfrA
-
-打破传统方法，MIT新芯片帮自动驾驶汽车穿越浓雾
-
-https://zhuanlan.zhihu.com/p/57781001
-
-自动驾驶系统的硬件平台讨论
-
-https://mp.weixin.qq.com/s/ZUxkZXLC0tPkzptFKtudhw
-
-让机器人也能“问路”的视觉语言导航新方法
-
-https://mp.weixin.qq.com/s/6OkLjK1bMbw6a3bvYn_DCQ
-
-深度学习在自动驾驶感知领域的应用
-
-https://zhuanlan.zhihu.com/p/57029694
-
-自动驾驶中单目摄像头检测输出3-D边界框的方法一览
-
-https://mp.weixin.qq.com/s/SZlwjnZrxCyaqRBg_sjQaA
-
-浅谈自动驾驶中的行为风险识别（一）
-
-https://mp.weixin.qq.com/s/QBnvLrD93b8cDEeNeZ5kAw
-
-车联网正步入歧途，命悬一线的开始
-
-https://zhuanlan.zhihu.com/p/553588646
-
-最新的“视觉为中心的BEV感知”综述论文
+PyTorch深度学习技术生态

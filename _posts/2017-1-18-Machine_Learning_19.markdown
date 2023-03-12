@@ -73,7 +73,7 @@ http://blog.csdn.net/OpenNaive/article/details/7047823
 
 关联规则挖掘（一）：基本概念
 
-# 苏俄+
+# 苏俄++
 
 美国参议员麦凯恩公开宣称“俄国是个伪装成国家的加油站”。
 
@@ -135,86 +135,18 @@ https://www.zhihu.com/question/427637446
 
 ---
 
-https://mp.weixin.qq.com/s/kCLZyjoDoNK-py06hvmujA
+十月革命后的大部分时期物资都供应缺乏，训练出了苏联人的排队文明，可称为世界上最好，规规矩矩，有条不紊，很少有插队的和一拥而上的。“谁是最后一位？”是在苏联生活必须学会的一句俄语。
 
-特供商店在苏联的兴衰（上）
+---
 
-https://mp.weixin.qq.com/s/C2DIOcL9pE-FWspAt8Ut_Q
+1970年埃以消耗战争，以色列空军一直保持对埃及境内的轰炸，甚至直接炸了在开罗郊外的苏联技术人员。埃及向苏联抱怨你们提供的防空导弹和米格21不给力，苏联说是你们飞行员太菜，埃及说你那么强你自己来打试试。然后苏联派了18特别防空导弹师进驻埃及，全都是苏联自己的人员操纵的米格21-MF，S-75和S-125防空导弹连。
 
-特供商店在苏联的兴衰（下）
+1970年7月30日以色列空军决定进行一次诱导空战，给苏联的军援一个下马威以结束对以色列不利的消耗战争。总共出动了12架幻影3C和4架F-4E，诱导了苏联紧急起飞了24架米格21拦截，结果。。。
 
-https://www.zhihu.com/question/21817255
+在米格21引以为傲的近距离交战中，被以色列空军打了个0-5，死了四个苏联飞行员不说，其中两个还是米格21中队指挥官Nikolai P. Yurchenko和Yevgenniy A. Kamenev。
 
-俄罗斯（苏联）作为一个工业大国，为什么没有世界性的汽车品牌？
+这场空战过于一边倒，以至于都被埃及军方笑话，因为以色列空军这种少数幻影3诱导，然后凭借F-4E雷达伏击拦截部队的战术，埃及空军早都熟悉了，是不会派那么多米格去拦截的。
 
-https://zhuanlan.zhihu.com/p/331709823
+https://www.zhihu.com/question/357291561
 
-苏联人给他发的奖章，比给勃列日涅夫还多
-
-https://zhuanlan.zhihu.com/p/390097908
-
-乌兹别克棉花案：苏联解体的潘多拉魔盒之钥
-
-https://mp.weixin.qq.com/s/M3ZselQLqCdLY53dpqILLA
-
-穿越回苏联：火红岁月的情与色（上）
-
-https://mp.weixin.qq.com/s/2TAWe4frnI6RTpe4ui0mAg
-
-穿越回苏联：火红岁月的情与色（下）
-
-https://mp.weixin.qq.com/s/YPgFtLkpl9BGNZPo_IEcrg
-
-《功勋》孙家栋单元的中苏军服细节看不清？来看特写和解析
-
-https://www.zhihu.com/question/498827834
-
-苏联拖拉机为什么没有解决农业问题？
-
-https://www.zhihu.com/question/22972794
-
-没有出海口的黑海舰队对俄罗斯的意义是什么？
-
-http://www.mofcom.gov.cn/article/i/jyjl/e/201909/20190902900697.shtml
-
-毕马威：哈萨克斯坦一半财富集中在162人之手
-
-https://zhuanlan.zhihu.com/p/352232012
-
-他，就是那个在厦门肉食公司门口抱摔春丽的大肌霸
-
-https://mp.weixin.qq.com/s/M-6Ax_MJ0Xs3oBLnTwjnpQ
-
-多炮塔神教最辉煌一战，苏军T-28单车独闯龙潭，杀伤数百德军
-
-https://zhuanlan.zhihu.com/p/545424688
-
-克宫光头总工基里延科
-
-https://www.zhihu.com/question/36328609
-
-“灰色牲口”这个词的出处？
-
-https://mp.weixin.qq.com/s/6BvykIJNhvoSc3it22nACg
-
-第一颗芯片只比美国晚四年！为何俄罗斯还缺乏智能武器？
-
-https://mp.weixin.qq.com/s/HReTBOIof1lnZHOPqzZT7w
-
-1917-49年苏联（俄）中央委员会政治局的人事变动与派系斗争
-
-https://zhuanlan.zhihu.com/p/585705246
-
-普京评价列宁：列宁的最大失误，是把一个统一国家改造成国家联盟
-
-https://www.sohu.com/a/483525785_120939180
-
-60年前涅杰林元帅不顾劝阻，坚持现场指挥，结果火箭爆炸，元帅瞬间蒸发 
-
-https://baijiahao.baidu.com/s?id=1737669684389281513
-
-拉希多夫制造了苏联第一贪腐大案
-
-https://www.zhihu.com/answer/94556445
-
-乌克兰议会油画般唯美的打架
+俄制武器装备真像某些人说的那么不堪吗？

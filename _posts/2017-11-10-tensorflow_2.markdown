@@ -90,14 +90,6 @@ https://mp.weixin.qq.com/s/1ZlyVDJK6RWZ_1Ox7399IA
 
 用一行tf.data实现数据Shuffle、Batch划分、异步预加载等
 
-# Grappler
-
-Grappler是TensorFlow运行时中的默认计算图优化系统。
-
-https://www.tensorflow.org/guide/graph_optimization
-
-使用Grappler优化TensorFlow计算图
-
 # Eigen
 
 Eigen是一个线性代数方面的C++模板库。tensorflow和caffe2都使用了这个库。

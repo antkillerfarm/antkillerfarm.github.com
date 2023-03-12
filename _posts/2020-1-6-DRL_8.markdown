@@ -9,6 +9,22 @@ category: DRL
 
 # MARL（续）
 
+https://mp.weixin.qq.com/s/5I8-_4Xsj8wzJwmDOQpkWQ
+
+多智能体学习231页PPT总结
+
+https://blog.csdn.net/qq_38163755/article/details/98057751
+
+Game Theory and Multi-agent Reinforcement Learning笔记1
+
+https://blog.csdn.net/qq_38163755/article/details/98223987
+
+Game Theory and Multi-agent Reinforcement Learning笔记2
+
+https://mp.weixin.qq.com/s/Yx0pfAJwOSQD2ABJd3gJSA
+
+多智能体强化学习（MARL）近年研究概览
+
 https://mp.weixin.qq.com/s/bQx-ydEAfijgK1Ii5ilPFQ
 
 UCL汪军团队新方法提高群体智能，解决大规模AI合作竞争

@@ -255,6 +255,14 @@ https://zhuanlan.zhihu.com/p/607847588
 
 复现ChatGPT的难点与平替
 
+https://zhuanlan.zhihu.com/p/601044938
+
+nanoGPT源码阅读
+
+https://zhuanlan.zhihu.com/p/608705255
+
+GPT-3+RL全流程训练开源整理
+
 ## 微软小冰
 
 微软内部之前有个类似ChatGPT的项目，叫微软小冰，几个负责人都是那种技术栈和技术思路非常老旧的老人，在微软内部吸血吸了很多年，微软后来体面的裁掉了这个团队，转头去投了OpenAI 10亿美金。

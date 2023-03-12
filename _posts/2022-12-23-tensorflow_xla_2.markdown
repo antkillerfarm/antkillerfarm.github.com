@@ -65,7 +65,9 @@ https://github.com/pytorch/xla
 
 粗看了一下，都是些上层的代码，底层直接调用TF的实现。所以如果目标硬件已经接入TF XLA接口的话，理论上不需要修改就可以跑pytorch。
 
-## IR & pass
+![](/images/img5/pytorch_xla.png)
+
+## IR
 
 XLA IR一般如下所示：
 
@@ -83,7 +85,7 @@ HLO IR一般如下所示：
 
 `[]`内是shape，`()`内是layout。
 
----
+## HLO pass
 
 HLO可以有pass：`HloModulePass`
 
@@ -98,13 +100,103 @@ pipeline.AddPass<XXXPass>();
 
 ConstFolding、AlgebraicSimplifier、HloCSE、HloDCE、TransposeFolding
 
-上层的XLA graph也有pass：GraphOptimizer
-
-tensorflow/core/common_runtime/graph_optimizer.cc
+参考：
 
 https://wzzju.github.io/tensorflow/xla/2021/12/23/xla-pass/
 
 XLA Pass功能分析
+
+## XLA pass
+
+上层的XLA graph有pass：GraphOptimizer
+
+tensorflow/core/common_runtime/graph_optimizer.cc
+
+jit compilation这样的构图阶段也有pass：
+
+tensorflow/compiler/jit/jit_compilation_pass_registration.cc
+
+一个典型的pass的注册如下所示：
+
+```cpp
+REGISTER_OPTIMIZATION(OptimizationPassRegistry::POST_REWRITE_FOR_EXEC, 10,
+                      MarkForCompilationPass);
+```
+
+第一个参数表示是什么阶段的pass。目前有以下几个阶段：
+
+```cpp
+    PRE_PLACEMENT,          // after cost model assignment, before placement.
+    POST_PLACEMENT,         // after placement.
+    POST_REWRITE_FOR_EXEC,  // after re-write using feed/fetch endpoints.
+    POST_PARTITIONING,      // after partitioning
+```
+
+同一个阶段的pass，使用优先级（上面的第二个参数）确定执行顺序。所有pass都必须走一遍，不能条件执行。
+
+在`PRE_PLACEMENT`和`POST_PLACEMENT`之间会插入`placer.Run()`。在`POST_REWRITE_FOR_EXEC`和`POST_PARTITIONING`之间会插入`PartitionFunctionGraph`。
+
+必须指出的是，这些阶段的划分都是人为的。比如`POST_PLACEMENT`和`POST_REWRITE_FOR_EXEC`之间并无任何其他操作，pass放在哪里，对于结果都没有任何影响。
+
+## AutoClustering
+
+1.CloneConstantsForBetterClusteringPass, ClusterScopingPass都是一些准备工作，方便MarkForCompilationPass的处理。
+
+2.MarkForCompilationPass负责寻找合适的Cluster, 并为找到的同一个Cluster内所有节点设置同样的_xla_compile_id属性。
+
+3.ForceXlaConstantsOnHostPass, IncreaseDynamismForAutoJitPass, PartiallyDeclusterPass则是对MarkForCompilationPass的结果进行微调。
+
+4.EncapsulateSubgraphsPass将每个Cluster内的多个节点替换为单个节点，但在单个节点内记录了Cluster内子图的信息。
+
+5.将EncapsulateSubgraphsPass融合的节点替换为XlaCompileOp + XlaRunOp两个算子。
+
+https://zhuanlan.zhihu.com/p/427444916
+
+Tensorflow编译加速器XLA源码深入解读
+
+https://sketch2sky.com/2019/09/24/tensorflow-jit-%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3/
+
+Tensorflow JIT技术详解
+
+https://blog.csdn.net/gaofeipaopaotang/article/details/80679100
+
+模型优化之XLA（上）
+
+https://blog.csdn.net/gaofeipaopaotang/article/details/80703367
+
+模型优化之XLA（下）
+
+https://blog.csdn.net/weixin_41644391/article/details/120948964
+
+MarkForCompilationPass
+
+https://blog.csdn.net/weixin_41644391/article/details/120949032
+
+EncapsulateSubgraphsPass
+
+## Grappler
+
+Grappler是TensorFlow运行时中的默认计算图优化系统。
+
+Grappler生成的计算图，会做为XLA的输入。
+
+https://www.tensorflow.org/guide/graph_optimization
+
+使用Grappler优化TensorFlow计算图
+
+https://blog.csdn.net/gaofeipaopaotang/article/details/80621902
+
+模型优化之Grappler
+
+## 代码生成
+
+如果是CPU/GPU的话，一般会用LLVM生成代码。
+
+xla.cpu.IrEmitter，将xla.HloModule中的每个xla.HloComputation转化为llvm IR表示，并创建对应的llvm.Module。
+
+如果是DSA的话，一般采用直接代理HLO IR的模式。
+
+xla.DfsHloVisitorBase会遍历整个Cluster。
 
 ## JAX
 
@@ -221,59 +313,3 @@ TensorFlow On Spark
 https://mp.weixin.qq.com/s/7er3wNV_IhxhFDOIwNMpww
 
 深度强化学习入门：用TensorFlow构建你的第一个游戏AI
-
-# 俄乌战争=+
-
-126独立旅是去年春天在赫尔松方向损失最严重的俄军部队，虽然俄罗斯官方没有公布任何具体损失的消息，但去年3月份该旅被授予“近卫”称号——这是克里姆林宫安抚伤亡惨重部队的标准流程。
-
----
-
-4月7日乌克兰方面宣布在顿涅茨克干掉一架俄军最新型的ORLAN-10无人机。
-
-好奇的乌克兰军人拆开战利品后发现，号称单价10万美元的ORLAN无人机，燃料供应系统居然使用了一个矿泉水瓶，负责照片和视频的佳能相机，被用魔术贴和胶水与无人机连接。
-
-他们在电话中与上司汇报这一拆解结果时，他们的上校坚定地说： “这不可能，你在和我们开玩笑”，直到上校收到士兵们拍摄的照片和视频，他们的上司才认可了这一事实。
-
-乌克兰军方把ORLAN无人机的拆解视频发给与他们合作的北约军事专家，这些专家们也惊呆了。
-
----
-
-芬兰向美国雷神公司提出采购3.8亿美元的毒刺订单，科威特直接向雷神公司下单30亿美元毒刺订单，某蛙下单了11亿美元.....等等。
-
-英国向雷神下单3亿美元的标枪订单，立陶宛向雷神下单1.25亿美元的标枪订单，巴西向雷神下单222套标枪订单金额未透露，但是应该也是数亿美元.......等等。
-
-海马斯火箭炮更不必多说，立陶宛买5亿、爱沙尼亚买5亿，瑞士、比利时、拉脱维亚等国也纷纷下单购买。
-
-根据媒体的说法，2022年光是标枪与海马斯火箭炮的军售就达到了280亿美元。
-
----
-
-俄军说击毁很多海玛斯，乌克兰和美军笑而不语。其实俄军打掉的很多“海玛斯”只是乌军制作的木头模型，花几千美元做的，却引诱俄军往这上面丢价值几十万美元甚至几百万美元一发的精确导弹，搞得俄军现在很缺乏精确导弹了。
-
-乌军制作的假“凯撒”，只是几根钢管搭接起来的，当然车是真卡车，能载着钢管到处跑，迷惑天上的俄罗斯侦察无人机，远看根本看不出破绽。
-
-消息人士透露，乌军在战场上大量使用这类假目标，他们出动这辆假“凯撒”，后方几公里就是乌军真正的“凯撒”卡车炮，在成功吸引俄军炮兵开火后，“凯撒”随即根据反炮兵雷达获得的信息，利用其快速反应能力对俄军进行反炮兵作战，这也是俄军炮兵最近在乌军反炮兵作战下损失惨重的原因之一。
-
-戏耍普京 捷克为乌克兰制造橡胶海马斯诱骗俄罗斯军队。
-
-https://zhuanlan.zhihu.com/p/566523323
-
-俄乌战况（9月20日）
-
----
-
-![](/images/img5/Ukraine.jpg)
-
-援助乌克兰的榜一大哥，原来一直是俄罗斯，美国其实只能屈尊第二。
-
----
-
-在俄罗斯一直有军事游玩项目，其内容是游客花钱使用军事装备，比如坦克步战车等，碾压一下报废车，有钱的人多花个一千来元人民币还能干她娘的一炮。不过之前提供的军事装备都是T-55, PT-76等上个世纪五六十年代的，现在都快报废的装备。但是刚刚随手一划，他奶奶地竟然更新出T-80，BMP-2这种前线都缺的装备。
-
----
-
-当欧美限价60美元后，像印度之类阴诈至极的“伙伴”，又趁机再度索要折扣，把油价打压到仅仅维持俄罗斯石油公司成本运作平衡的40多美元。
-
----
-
-俄军现在已经分化出了各个山头，西部军区，中部军区，瓦格纳，车臣，顿涅茨克卢甘斯克，皇俄志愿兵都是山头，各有各的指挥。听不听军令看心情，出事就推锅。颇有功德林遗风。

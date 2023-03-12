@@ -89,6 +89,10 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/tvm/p
 
 3.使用`print(mod.astext(show_meta_data=False))`可以打印相关IR的内容。meta data有的时候包含了权重，打印出来意义不大，反而导致其他有意义的部分，淹没在大量的log中，没法看了。
 
+TVM最近还推出了TVM Web runtime。
+
+![](/images/img5/TVM.jpg)
+
 参考：
 
 https://zhuanlan.zhihu.com/p/369981405
@@ -98,6 +102,10 @@ https://zhuanlan.zhihu.com/p/369981405
 https://zhuanlan.zhihu.com/p/352988283
 
 TVM学习记录——pytorch
+
+https://zhuanlan.zhihu.com/p/612517660
+
+面向Web的机器学习编译突破：纯浏览器运行Stable Diffusion
 
 ## NNVM
 

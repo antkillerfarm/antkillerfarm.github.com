@@ -329,3 +329,7 @@ Pytorch的自动微分机制是自动创建一个可以记录所有数据操作�
 https://www.cnblogs.com/royhoo/p/Autodiff.html
 
 自动微分（Autodiff）
+
+https://zhuanlan.zhihu.com/p/427444916
+
+梯度的计算

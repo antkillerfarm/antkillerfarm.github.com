@@ -131,9 +131,13 @@ exit用于整个shell脚本的退出。
 
 ## 预定义变量
 
-`$?`: 上条命令的返回值
+`$?`: 上条命令的返回值。
 
 `$$`: 当前shell的PID。
+
+`$0`：当前Shell程序的文件名。
+
+`dirname $0`，获取当前Shell程序的路径。
 
 ## shell如何把多行内容输出到一个文件
 
@@ -323,6 +327,10 @@ Shell分析服务器日志命令
 https://www.cnblogs.com/chengmo/archive/2010/10/14/1851570.html
 
 linux shell不同进制数据转换（二进制，八进制，十六进制，base64)
+
+https://www.freecodecamp.org/news/command-line-commands-cli-tutorial/
+
+Command Line Commands – CLI Tutorial（powershell）
 
 # awk&sed&grep
 

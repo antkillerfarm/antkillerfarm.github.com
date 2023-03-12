@@ -121,6 +121,14 @@ https://www.zhihu.com/question/404967476
 
 ---
 
+巴基斯坦和阿富汗交界的开伯尔山口地区是巴基斯坦的土造枪械中心，当地的铁匠铺大量仿制美英苏制式枪械，并且“添加了自己的理解”，甚至专门衍生出一个词“开伯尔山口造”（Khyber Pass copy）来形容这些土枪，地位和名声都远高于国内“化隆造”，因为当地枪匠们无穷的想象力和产品的奇葩程度之高，作为梗在国外枪械爱好者中颇为流行。
+
+https://www.zhihu.com/question/577288629
+
+传说中非洲巫师和中东的纯手工敲出来的AK步枪是否存在？
+
+---
+
 https://mp.weixin.qq.com/s/3Frx_ZmmmEC_aj4tLUPleg
 
 苏莱曼尼被斩首后，这篇文章把两伊根本问题说清楚了
@@ -219,19 +227,3 @@ https://xw.qq.com/cmsid/20200710A0JO9X00
 https://baijiahao.baidu.com/s?id=1711492174611034081
 
 19岁沙特公主因私奔遭极刑，男友被斩首，差点造成英国沙特断交
-
-https://new.qq.com/omn/20210917/20210917A012II00.html
-
-美军噩梦幽灵狙击手“朱巴”，曾经狙杀634名美军，他到底是谁？
-
-https://mp.weixin.qq.com/s/nfPaPOpIjPrgTEGytCPf0w
-
-埃及前总统穆巴拉克去世：毁誉参半的一生
-
-http://history.people.com.cn/GB/198306/14325368.html
-
-奴隶？工人？金字塔的建造者竟是一群自由民
-
-https://www.zhihu.com/question/443184252
-
-叙利亚在军事作战中为什么一败涂地？

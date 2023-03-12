@@ -233,6 +233,12 @@ https://www.zhihu.com/question/584989437
 
 ---
 
+张尧学用开源项目remote-desktop-clients（不确定占比多少），获得了国家级的大奖。
+
+https://github.com/iiordanov/remote-desktop-clients/issues/39
+
+---
+
 https://mp.weixin.qq.com/s/1dlOCpoJiCkh55WDAajLuw
 
 内卷、找关系、作弊、丑闻-美国富人的名校之梦

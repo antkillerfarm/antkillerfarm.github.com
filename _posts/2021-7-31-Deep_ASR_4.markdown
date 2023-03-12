@@ -300,3 +300,19 @@ https://mp.weixin.qq.com/s/7yCnAHk6x0ICtEwBKxXpOw
 https://mp.weixin.qq.com/s/7sIUaSON53hsXUJjq8uVUA
 
 马聪：NLP中的生成式预训练模型
+
+https://mp.weixin.qq.com/s/Jrs8okgVAh0fymIq-jCqgA
+
+模型压缩与蒸馏！BERT的忒修斯船
+
+https://mp.weixin.qq.com/s/UNHu1eVNorWWKbDb0XBJcA
+
+模型压缩与蒸馏！BERT家族的瘦身之路
+
+https://mp.weixin.qq.com/s/oD_Vibp4Ygraix23K_oV2Q
+
+BERT在58搜索的实践
+
+https://mp.weixin.qq.com/s/bqvEeCyX8pqhJQfCUvUkEw
+
+图解BERT：通俗的解释BERT是如何工作的

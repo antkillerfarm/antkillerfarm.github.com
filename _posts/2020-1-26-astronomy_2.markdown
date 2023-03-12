@@ -9,6 +9,10 @@ category: Nature
 
 # 轨道学（续）
 
+三体问题实际上还有一个隐含条件：三体之间的互相引力作用不可忽略，否则就退化成二体问题了。
+
+比如，太阳、地球、木星，表面看是三体问题，然而地球和木星的引力相比太阳和地球、太阳和木星来说，实在是太小了。因此这个三体问题，实际上是两个二体问题（太阳和地球、太阳和木星）。
+
 半人马座α星也是类似的。Alpha Centauri A和Alpha Centauri B距离近，且质量大，所以这个力是最主要的。Alpha Centauri C质量较小，且距离前两者较远，它更像是围绕着前两者旋转的行星。力学分析上，一般把Alpha Centauri A和Alpha Centauri B合起来当作一个质点，所以这也是个稳定的三星系统，《三体》中所谓的恒纪元和乱纪元实际上是不存在的。
 
 《三体》设定还有另一个硬伤。我们在二体问题中已经指出，两个星球离的太近，就会相撞。因此，双星系统中，两个恒星之间的距离一般是比较大的，起码比宜居带的半径大一个数量级。所以，如果有行星位于Alpha Centauri A的宜居带，那么Alpha Centauri B在它看来，也就是大号一点的月亮，晚上看个书没问题，取暖就想多了。
@@ -252,11 +256,3 @@ https://github.com/achael/eht-imaging
 个人主页：
 
 https://people.csail.mit.edu/klbouman/
-
----
-
-Margaret Heafield Hamilton，1936年生，美国计算机科学家。发明了“software engineering”一词。在MIT期间，负责领导了Apollo计划的飞行软件的设计工作。
-
-![](/images/img2/Margaret_Hamilton.jpg)
-
-上图是1969年Margaret和她的小组所编写的软件代码的合影。

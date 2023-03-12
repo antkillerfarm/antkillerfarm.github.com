@@ -7,9 +7,23 @@ category: DRL
 * toc
 {:toc}
 
-# AlphaGo
+# AlphaGo（续）
 
-## 参考（续）
+## KataGo
+
+KataGo是2019年以后发起的一个新项目，主要解决了Leela Zero和ELF OpenGo耗费算力过多的问题。它不仅训练更快，推理也有极大改进，即使家用显卡PC也可在合理的时间算出结果。支持更多的规则（如日本规则），改善了AlphaGo胜势下缓手的缺陷。
+
+目前，KataGo的棋力已经超越了Leela Zero和ELF OpenGo。
+
+官网：
+
+https://katagotraining.org/
+
+## 参考
+
+https://blog.csdn.net/amds123/article/details/70666594
+
+论文笔记：Mastering the game of Go with deep neural networks and tree search
 
 https://mp.weixin.qq.com/s/Sfv-jzQAkN0PsZOGZUQhkQ
 
@@ -327,19 +341,3 @@ https://www.zhihu.com/people/yao-xing-hu/posts
 https://github.com/LantaoYu/MARL-Papers
 
 Paper list of multi-agent reinforcement learning (MARL)
-
-https://mp.weixin.qq.com/s/5I8-_4Xsj8wzJwmDOQpkWQ
-
-多智能体学习231页PPT总结
-
-https://blog.csdn.net/qq_38163755/article/details/98057751
-
-Game Theory and Multi-agent Reinforcement Learning笔记1
-
-https://blog.csdn.net/qq_38163755/article/details/98223987
-
-Game Theory and Multi-agent Reinforcement Learning笔记2
-
-https://mp.weixin.qq.com/s/Yx0pfAJwOSQD2ABJd3gJSA
-
-多智能体强化学习（MARL）近年研究概览

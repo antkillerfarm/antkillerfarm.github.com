@@ -396,15 +396,3 @@ https://mp.weixin.qq.com/s/S5_7wQynrBR0yLtNRKC-kw
 https://mp.weixin.qq.com/s/2Fu3s1Hy6ZW8Ex8yLPDnyQ
 
 提速100倍，秒杀传统A/B测试！Netflix推出交错测试个性化推荐算法
-
-https://mp.weixin.qq.com/s/6OMMboBdbLVA-HsEjA3bSA
-
-Ctr预估之Calibration
-
-https://mp.weixin.qq.com/s/WVPgLXN7KZueNbmfTJNhDA
-
-推荐系统的PMF-概率矩阵分解和协同过滤
-
-https://zhuanlan.zhihu.com/p/148951213
-
-Item-CF的几种优化方式

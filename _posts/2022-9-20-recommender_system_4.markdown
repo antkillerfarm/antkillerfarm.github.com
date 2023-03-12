@@ -139,6 +139,18 @@ https://mp.weixin.qq.com/s/h1V-TyJWbXq-8gSvAnkneQ
 
 # 推荐系统进阶
 
+https://mp.weixin.qq.com/s/6OMMboBdbLVA-HsEjA3bSA
+
+Ctr预估之Calibration
+
+https://mp.weixin.qq.com/s/WVPgLXN7KZueNbmfTJNhDA
+
+推荐系统的PMF-概率矩阵分解和协同过滤
+
+https://zhuanlan.zhihu.com/p/148951213
+
+Item-CF的几种优化方式
+
 https://mp.weixin.qq.com/s/sDG5xm1JZ8rIEaVXeVQ5cA
 
 主流推荐引擎技术及优缺点分析
@@ -438,19 +450,3 @@ BERT相关模型汇总梳理
 https://zhuanlan.zhihu.com/p/348373259
 
 史上最细节的自然语言处理NLP/Transformer/BERT/Attention面试问题与答案
-
-https://mp.weixin.qq.com/s/Jrs8okgVAh0fymIq-jCqgA
-
-模型压缩与蒸馏！BERT的忒修斯船
-
-https://mp.weixin.qq.com/s/UNHu1eVNorWWKbDb0XBJcA
-
-模型压缩与蒸馏！BERT家族的瘦身之路
-
-https://mp.weixin.qq.com/s/oD_Vibp4Ygraix23K_oV2Q
-
-BERT在58搜索的实践
-
-https://mp.weixin.qq.com/s/bqvEeCyX8pqhJQfCUvUkEw
-
-图解BERT：通俗的解释BERT是如何工作的

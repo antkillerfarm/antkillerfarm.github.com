@@ -115,6 +115,10 @@ https://mp.weixin.qq.com/s/NKWvIJ7-J_IugnAgUehVIg
 
 博通要卖掉的射频前端，是个怎样的市场？
 
+https://www.zhihu.com/question/514589190
+
+为什么嘉立创打PCB不要钱？
+
 # 硬盘
 
 早期，磁带和硬盘驱动器的面密度相似。但由于的市场规模和硬盘销售收入的增加，为更大规模的研发工作提供了资金，这使得他们的制造商能够更积极地扩大存储密度。因此，大容量硬盘驱动器的当前面密度约为最新磁带驱动器的100倍。
@@ -241,7 +245,7 @@ https://mp.weixin.qq.com/s/Mb7iSXfrOtettVn-Sz8QUA
 
 NCCL是Nvidia Collective multi-GPU Communication Library的简称，它是一个实现多GPU的collective communication通信库，可以在PCIe、Nvlink、InfiniBand上实现较高的通信速度。
 
-InfiniBand（直译为“无限带宽”技术，缩写为IB）是一个用于高性能计算的计算机网络通信标准，它具有极高的吞吐量和极低的延迟，用于计算机与计算机之间的数据互连。
+InfiniBand（直译为“无限带宽”技术，缩写为IB）是一个用于高性能计算的计算机网络通信标准，它具有极高的吞吐量和极低的延迟，用于计算机与计算机之间的数据互连。相当于是面向HPC的以太网的替代品。
 
 Mellanox Technologies是一家InfiniBand制造商，于2020年被Nvidia收购。
 
@@ -270,6 +274,10 @@ nvidia-nccl学习笔记
 https://developer.nvidia.com/blog/fast-multi-gpu-collectives-nccl/
 
 Fast Multi-GPU collectives with NCCL
+
+https://www.zhihu.com/question/422501188
+
+什么是InfiniBand，它和以太网的区别在于什么？
 
 ## 参考
 
