@@ -241,6 +241,42 @@ https://mp.weixin.qq.com/s/Mb7iSXfrOtettVn-Sz8QUA
 
 # GPU通信技术+
 
+## NVLink（续）
+
+官网：
+
+https://www.nvidia.cn/data-center/nvlink/
+
+![](/images/img3/nvlink.png)
+
+Tesla V100中以NVLink连接的GPU至GPU和GPU至CPU通信。
+
+![](/images/img3/nvlink_2.png)
+
+在DGX-1V服务器中，混合立体网络拓扑使用NVLink连接8个Tesla V100加速器。每个GPU有6条nvlink通道，总带宽高达300GB/s。
+
+从上图可以看到，即使每个GPU拥有6条nvlink通道，仍然无法做到“全连接”（即任意两个GPU之间存在双向通道）。这就引出了下一个更加疯狂的技术：nvswitch。
+
+![](/images/img3/nvswitch.png)
+
+NVSwitch是首款节点交换架构，可支持单个服务器节点中16个全互联的GPU，并可使全部8个GPU对分别以300GB/s的惊人速度进行同时通信。这16个全互联的GPU还可作为单个大型加速器，拥有0.5 TB统一显存空间和2 PetaFLOPS计算性能。
+
+https://zhuanlan.zhihu.com/p/35470532
+
+全球最大GPU 背后的秘密：NVSwitch如何实现NVIDIA DGX-2的超强功力？
+
+---
+
+![](/images/img5/Nvidia_Grace_Hopper.jpg)
+
+https://zhuanlan.zhihu.com/p/600638633
+
+Nvidia Grace Hopper超级芯片架构解读（一）
+
+https://zhuanlan.zhihu.com/p/601072219
+
+Nvidia Grace Hopper超级芯片架构解读（二）
+
 ## NCCL
 
 NCCL是Nvidia Collective multi-GPU Communication Library的简称，它是一个实现多GPU的collective communication通信库，可以在PCIe、Nvlink、InfiniBand上实现较高的通信速度。

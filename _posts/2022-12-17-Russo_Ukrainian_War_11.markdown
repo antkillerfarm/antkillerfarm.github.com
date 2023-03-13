@@ -47,6 +47,10 @@ https://zhuanlan.zhihu.com/p/546980660
 
 真正的俄罗斯英雄——你有勇气保护敌国的平民吗？
 
+https://zhuanlan.zhihu.com/p/613419718
+
+荣耀背后的阴影——乌克兰士兵心理问题调查
+
 ## 哈尔科夫战役
 
 https://www.zhihu.com/zvideo/1551802887226732544

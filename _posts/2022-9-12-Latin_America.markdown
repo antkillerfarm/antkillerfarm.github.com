@@ -179,6 +179,10 @@ https://zhuanlan.zhihu.com/p/588730371
 
 中东传奇女王卡塔尔太后——谢赫.莫扎
 
+https://zhuanlan.zhihu.com/p/598834668
+
+为什么生为奥斯曼帝国的王子不一定是一件好事？
+
 # 俄乌战争==++
 
 https://www.zhihu.com/answer/2387251266

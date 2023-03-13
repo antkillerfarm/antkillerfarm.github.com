@@ -160,6 +160,22 @@ https://blog.csdn.net/gaofeipaopaotang/article/details/80736452
 
 模型优化之分布式执行
 
+---
+
+大模型不光模型的训练是分布式的，数据集也是分布式的。
+
+https://www.alanshawn.com/tech/2022/02/27/tensorflow-big-dataset.html
+
+Using Huge, Heterogenous Datasets in TensorFlow
+
+https://tensorflow.google.cn/datasets/beam_datasets?hl=zh-cn
+
+使用Apache Beam生成大型数据集
+
+https://www.tensorflow.org/tutorials/distribute/input?hl=zh-cn
+
+分布式输入
+
 ## Pathways
 
 https://blog.csdn.net/OneFlow_Official/article/details/124054450
@@ -307,19 +323,3 @@ https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
 https://mp.weixin.qq.com/s/kOCftzSbHe2mvDmlRp-ihA
 
 Jeff Dean：AI对计算机系统设计的影响
-
-https://mp.weixin.qq.com/s/XjNPaL6PC9LHX1PEGn5UZg
-
-微软实时AI系统“脑波计划”有多牛？看完秒懂！
-
-https://mp.weixin.qq.com/s/OkqUulFYHQSdgAbf9Fi9LA
-
-CoCoA：大规模机器学习的分布式优化通用框架
-
-https://mp.weixin.qq.com/s/ToIDncp9dS_qk47PsdZm5A
-
-杜克大学：分布式深度学习训练算法TernGrad
-
-https://mp.weixin.qq.com/s/rhtrN2qDspGkpJYDAVSX7w
-
-UC Berkeley展示全新并行处理方法

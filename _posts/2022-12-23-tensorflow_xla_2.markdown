@@ -108,6 +108,15 @@ XLA Pass功能分析
 
 ## XLA pass
 
+在分析细节之前，我们首先给一下debug这些pass的手段：
+
+```bash
+export TF_XLA_FLAGS="--tf_xla_clustering_debug"
+export TF_DUMP_GRAPH_PREFIX=./dump_graph
+```
+
+---
+
 上层的XLA graph有pass：GraphOptimizer
 
 tensorflow/core/common_runtime/graph_optimizer.cc

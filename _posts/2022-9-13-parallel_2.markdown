@@ -9,6 +9,22 @@ category: DL acceleration
 
 # 并行 & 框架 & 优化
 
+https://mp.weixin.qq.com/s/XjNPaL6PC9LHX1PEGn5UZg
+
+微软实时AI系统“脑波计划”有多牛？看完秒懂！
+
+https://mp.weixin.qq.com/s/OkqUulFYHQSdgAbf9Fi9LA
+
+CoCoA：大规模机器学习的分布式优化通用框架
+
+https://mp.weixin.qq.com/s/ToIDncp9dS_qk47PsdZm5A
+
+杜克大学：分布式深度学习训练算法TernGrad
+
+https://mp.weixin.qq.com/s/rhtrN2qDspGkpJYDAVSX7w
+
+UC Berkeley展示全新并行处理方法
+
 https://mp.weixin.qq.com/s/ASqpPSIgW_bcFPBfRYz7Xg
 
 哈佛大学提出在云、边缘与终端设备上的分布式深度神经网络DDNN
