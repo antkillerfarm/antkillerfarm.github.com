@@ -287,6 +287,26 @@ https://zhuanlan.zhihu.com/p/39635145
 
 VTA: 开源AI芯片栈
 
+## auto-scheduler
+
+TVM中的auto-scheduler，包括第一代的AutoTVM和第二代的Ansor。
+
+https://mp.weixin.qq.com/s/YVIvdMznb3oatIXqD5a5_A
+
+陈天奇等人提出AutoTVM：让AI来编译优化AI系统底层算子
+
+https://zhuanlan.zhihu.com/p/401120318
+
+谈谈tvm ansor
+
+https://zhuanlan.zhihu.com/p/394765523
+
+AutoScheduler：Ansor
+
+https://blog.csdn.net/jinzhuojun/article/details/121296836
+
+TVM中的auto-scheduling机制(Ansor)学习笔记
+
 ## 技术变革和展望
 
 ![](/images/img4/TVM.jpg)
@@ -303,7 +323,7 @@ VTA: 开源AI芯片栈
 
 ---
 
-目前的整个生态，包括深度学习框架，编译框架(包括基于MLIR，ONNX或者是TVM的解决方案）。大家都遵循一种叫做多层渐进优化(Multi-stage lowering)的方式。这种构建方式的大致思路是我们在每一层抽象中采用一个（有时多个）中间表示。我们会在每一个层级(dialect, abstraction）做一些内部优化，然后把问题丢给下一个层级继续进行优化。
+目前的整个生态，包括深度学习框架，编译框架（包括基于MLIR，ONNX或者是TVM的解决方案）。大家都遵循一种叫做多层渐进优化(Multi-stage lowering)的方式。这种构建方式的大致思路是我们在每一层抽象中采用一个（有时多个）中间表示。我们会在每一个层级（dialect, abstraction）做一些内部优化，然后把问题丢给下一个层级继续进行优化。
 
 ---
 
@@ -357,10 +377,6 @@ https://mp.weixin.qq.com/s/7JGLm-hkCZBNDLA98qvWNA
 
 自动生成硬件优化内核：陈天奇等人发布深度学习编译器TVM
 
-https://mp.weixin.qq.com/s/YVIvdMznb3oatIXqD5a5_A
-
-陈天奇等人提出AutoTVM：让AI来编译优化AI系统底层算子
-
 https://mp.weixin.qq.com/s/HquT_mKm7x_rbDGz4Voqpw
 
 阿里巴巴最新实践：TVM+TensorFlow提高神经机器翻译性能
@@ -405,24 +421,6 @@ https://zhuanlan.zhihu.com/p/428713676
 
 如何在MLIR里面写Pass？
 
-# TVM实战
+https://zhuanlan.zhihu.com/p/500041871
 
-## 问题的由来
-
-最近客户反馈我们的backend导入Pytorch模型会出错，而TFLite模型是OK的。
-
-打印模型的IR后，我们发现：
-
-这是Pytorch模型的IR片段：
-
-```text
-  %0 = qnn.quantize(%input, 0.0186579f, 114, out_dtype="uint8", axis=1);
-  %1 = nn.pad(%0, 114f, pad_width=[[0, 0], [0, 0], [1, 1], [1, 1]]);
-  %2 = qnn.quantize(%features.0.0_weight, 0.00288958f, 0, out_dtype="int8", axis=0);
-  %3 = qnn.conv2d(%1, %2, 114, 0, 0.0186579f, 0.00288958f, strides=[2, 2], padding=[0, 0, 0, 0], channels=32, kernel_size=[3, 3], out_dtype="int32");
-  %4 = qnn.quantize(%features.0.0_bias, 5.39136e-05f, 0, out_dtype="int32", axis=0);
-  %5 = nn.bias_add(%3, %4);
-  %6 = qnn.requantize(%5, 5.39136e-05f, 0, 0.0150183f, 0, axis=1, out_dtype="int32");
-  %7 = clip(%6, a_min=0f, a_max=255f);
-  %8 = cast(%7, dtype="uint8");
-```
+TVM及深度学习编译器相关论文

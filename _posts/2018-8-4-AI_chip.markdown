@@ -83,6 +83,12 @@ http://www.deephi.com/zh-cn/dnndk.html
 - 登临科技
 - 天数智芯
 
+---
+
+某牛点评：
+
+做一个ASIC其实目前真没有什么大的门槛，不然你以为上海那么多家的ASIC公司是怎么来的，随便拉几个人都敢成立ASIC公司，还不是门槛不高，你让他就那几个人搞个CPU和GPU试试。但是要做一个好的ASIC，适配模型和场景丰富的ASIC，是非常不容易的。而且一旦模型场景丰富，你就不仅仅是在硬件领域所谓的PPA各种挣扎，你还需要在指令级别，或者说通用和性能做妥协，甚至架构上的一些妥协改变。
+
 ## Imagination
 
 Imagination Technologies公司前身是一家名为Video Logic的公司，VideoLogic成立于1985年，主营业务是图形与音频加速等方面。后来选择了与ARM的类似盈利模式——授权IP核，并在1999年更名为Imagination Technologies。
@@ -257,45 +263,3 @@ https://mp.weixin.qq.com/s/Zsmvsy8I_qKZWrONj9Juuw
 https://mp.weixin.qq.com/s/nGzDVR9dlF-jL4ZIkss0Ow
 
 这家用一整块硅片做AI芯片的公司成功了？
-
-## TPU
-
-​Tensor Processing Unit(TPU)是Google推出的AI芯片系列。目前已经有3个版本：
-
-TPU v1, deployed 2015, 92 teraops, inference only.
-
-TPU v2, cloud TPU 2017, pod 2018, 180 teraflops, 64 GB HBM, training and inference, generally available. 11.5 petaflops in a pod.
-
-TPU v3, cloud beta 2018, 420 teraflops, 128 GB HBM, training and inference, beta. >100 petaflops in a pod.
-
-论文：
-
-《In-Datacenter Performance Analysis of a Tensor Processing Unit​》
-
-![](/images/img4/TPU.png)
-
-### Coral Dev Board
-
-Coral Dev Board是Google于2019年3月推出的一款搭载TPU的嵌入式开发板。
-
-参考：
-
-http://linuxgizmos.com/google-launches-i-mx8m-dev-board-with-edge-tpu-ai-chip/
-
-Google launches i.MX8M dev board with Edge TPU AI chip
-
-### 脉动阵列
-
-**AI=矩阵乘+非线性**
-
-由于非线性只有可怜的O(N)的计算量，矩阵乘的O(N^3)的计算量才是AI中的绝对计算瓶颈。
-
----
-
-Systolic array是孔祥重和他的博士生Charles Leiserson于1978年发明的。
-
-论文：
-
-《Why systolic architectures?》
-
-![](/images/img4/Systolic_array.gif)

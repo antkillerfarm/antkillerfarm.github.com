@@ -332,3 +332,29 @@ http://blog.csdn.net/dm_vincent/article/details/8554244
 http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
 
 强连通分支算法--Kosaraju算法、Tarjan算法和Gabow算法
+
+# 数字成像+
+
+https://mp.weixin.qq.com/s/Fpy3_kljryrjEqoZz4IlNg
+
+电子后视镜（一）——相关标准汇总
+
+https://mp.weixin.qq.com/s/aUAD-SWJ6PEplrFRb5SHZg
+
+消除摩尔纹的光学方法
+
+https://mp.weixin.qq.com/s/yBd9qcmMHKIGx88voovFgw
+
+有趣的偏振相机
+
+https://mp.weixin.qq.com/s/eVtbmy8rJ6V2j-6XJ0JJCA
+
+夜景拍照之技术创新
+
+https://mp.weixin.qq.com/s/DH3mZgh4YbnceaFGs03kOQ
+
+曹汛：计算摄像学研究
+
+https://mp.weixin.qq.com/s/f2BIrZ8if7_rX__J9hMHog
+
+广色域---iphone X/8 camera的色彩进化

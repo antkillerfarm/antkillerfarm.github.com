@@ -35,6 +35,10 @@ https://mp.weixin.qq.com/s/w6aY1_RryWnFq8FomPTDhw
 
 地铁也要遵循“红灯停、绿灯行”的交通规则吗？
 
+https://zhuanlan.zhihu.com/p/37801456
+
+科学家有了钱以后真是挺吓人的！看看DE.Shaw的牛逼人生
+
 # 真垃圾筐
 
 主流发达国家教职体系，PI（Principal Investigator）制：助理教授（Assistant Professor，AP）->副教授（Associate Professor）->教授（Full Professor->讲席教授（Chair Professor）

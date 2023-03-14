@@ -207,6 +207,10 @@ xla.cpu.IrEmitter，将xla.HloModule中的每个xla.HloComputation转化为llvm 
 
 xla.DfsHloVisitorBase会遍历整个Cluster。
 
+## Other
+
+XLA在内的主流深度学习框架，都是基于Static Shape语义的编译器框架。即，just-in-time运行的编译器，会在运行时捕捉待编译子图的实际输入shape组合，并且为每一个输入shape组合生成一份编译结果。
+
 ## JAX
 
 一款由谷歌团队打造（非官方发布），用于从纯Python和Numpy机器学习程序中生成高性能加速器（accelerator）代码，且特定于域的跟踪JIT编译器。
@@ -288,6 +292,28 @@ XLA编译执行原理分析
 https://haosdent.gitbooks.io/tensorflow-document/content/resources/xla_prerelease.html
 
 XLA: The TensorFlow compiler framework
+
+# Polyhedral Model++
+
+https://mp.weixin.qq.com/s/wjk2Mxhd2NDpH72l3rdqgQ
+
+多面体编译技术在软硬协同设计中的应用
+
+https://mp.weixin.qq.com/s/mBheJ9NG8khcLRshI40b2w
+
+AI编译关键技术 • 高层循环编译优化 - 不仅仅是分块和合并
+
+https://zhuanlan.zhihu.com/p/199683290
+
+Polyhedral编译调度算法(1)——Pluto算法
+
+https://zhuanlan.zhihu.com/p/232070003
+
+Polyhedral编译调度算法(2)——Feautrier算法
+
+https://zhuanlan.zhihu.com/p/259311866
+
+Polyhedral编译调度算法(3)——isl中的调度算法
 
 # TensorFlow参考+
 

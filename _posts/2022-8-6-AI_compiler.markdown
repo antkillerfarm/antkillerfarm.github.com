@@ -97,6 +97,18 @@ https://github.com/Microsoft/MMdnn
 
 # AI Compiler
 
+## 教程
+
+https://dlsyscourse.org/lectures/
+
+10-414/714: Deep Learning Systems
+
+https://mlc.ai/
+
+Machine Learning Compilation
+
+这两个课程都是陈天奇主讲的。
+
 ## 概述
 
 我们在《NN中间语言》一文中已经展示了各种中间语言/接口。
@@ -125,11 +137,25 @@ Google（2020.9）又推出了IREE项目，定位和TVM类似。
 
 官网：
 
-https://google.github.io/iree/
+https://github.com/openxla/iree
+
+![](/images/img5/iree_architecture.svg)
 
 同期，还有一个叫做TFRT的项目：
 
 https://github.com/tensorflow/runtime
+
+---
+
+ML编译器核心问题主要有三部分：auto-tensorize、auto-tiling和auto-schedule。
+
+---
+
+![](/images/img5/Dynamic_Shape_Compiler.jpg)
+
+https://zhuanlan.zhihu.com/p/305546437
+
+AI编译优化--Dynamic Shape Compiler
 
 ---
 
@@ -261,6 +287,10 @@ https://zhuanlan.zhihu.com/p/513872467
 
 面向ASIC设备的编译器框架：TVM or MLIR？
 
+https://www.zhihu.com/question/442964082
+
+如何评价MLIR项目中Linalg Dialect的设计思想？
+
 ## OpenAI Triton
 
 一个类似于TVMscript的可以通过python语法去写高性能GPU程序的库。
@@ -276,6 +306,14 @@ OpenAI开源GPU编程语言Triton，将同时支持N卡和A卡
 ## NVFuser
 
 NVFuser是NV专门为Pytorch设计的自动化的GPU代码生成器。
+
+## AKG
+
+官网：
+
+https://gitee.com/mindspore/akg/
+
+![](/images/img5/akg-design.png)
 
 # LLVM+
 
@@ -420,51 +458,3 @@ https://www.zhihu.com/question/34619258
 https://zhuanlan.zhihu.com/p/474324656
 
 我对深度学习编译器和框架的认识
-
-# Build tools+
-
-## OkBuck
-
-OkBuck是Uber推出的构建工具。
-
-官网：
-
-https://github.com/uber/okbuck
-
-## WAF
-
-WAF是一个python写的构建工具。
-
-官网：
-
-https://waf.io
-
-## vcpkg
-
-这是MS提供的一个C/C++包管理工具，一般配合CMake使用。支持平台包括Windows/Linux/MacOS。
-
-官网：
-
-https://github.com/Microsoft/vcpkg
-
-# Polyhedral Model++
-
-https://mp.weixin.qq.com/s/wjk2Mxhd2NDpH72l3rdqgQ
-
-多面体编译技术在软硬协同设计中的应用
-
-https://mp.weixin.qq.com/s/mBheJ9NG8khcLRshI40b2w
-
-AI编译关键技术 • 高层循环编译优化 - 不仅仅是分块和合并
-
-https://zhuanlan.zhihu.com/p/199683290
-
-Polyhedral编译调度算法(1)——Pluto算法
-
-https://zhuanlan.zhihu.com/p/232070003
-
-Polyhedral编译调度算法(2)——Feautrier算法
-
-https://zhuanlan.zhihu.com/p/259311866
-
-Polyhedral编译调度算法(3)——isl中的调度算法

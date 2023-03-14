@@ -276,3 +276,7 @@ https://mp.weixin.qq.com/s/Sq53aEbG3bIBML9qSwPzoA
 https://view.inews.qq.com/wxn/20221217A05KPO00
 
 90岁顶级大师走了，全国5.5亿用户都要感谢他（“中国光纤之父”赵梓森）
+
+https://mp.weixin.qq.com/s/5E67HQ_TqIdtc8T-bvI7tA
+
+制造宁德时代

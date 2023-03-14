@@ -293,3 +293,51 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/jam
 https://blog.csdn.net/jadedrip/article/details/1722318
 
 bjam初接触
+
+# Build tools+
+
+## blade
+
+blade是腾讯出品的构建工具。
+
+官网：
+
+https://github.com/chen3feng/blade-build
+
+## MSbuild
+
+MSbuild当然是微软的构建工具了。
+
+官网：
+
+https://msdn.microsoft.com/en-us/library/dd393574.aspx
+
+参考：
+
+http://www.cnblogs.com/linianhui/archive/2012/08/30/2662648.html
+
+MSBuild入门
+
+## OkBuck
+
+OkBuck是Uber推出的构建工具。
+
+官网：
+
+https://github.com/uber/okbuck
+
+## WAF
+
+WAF是一个python写的构建工具。
+
+官网：
+
+https://waf.io
+
+## vcpkg
+
+这是MS提供的一个C/C++包管理工具，一般配合CMake使用。支持平台包括Windows/Linux/MacOS。
+
+官网：
+
+https://github.com/Microsoft/vcpkg

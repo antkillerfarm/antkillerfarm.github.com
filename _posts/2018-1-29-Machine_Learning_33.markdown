@@ -111,6 +111,10 @@ https://mp.weixin.qq.com/s/AtImcIBaRIJVXpOP2hruBQ
 
 Google发布机器学习术语表 (包括简体中文)
 
+https://www.zhihu.com/question/469612040
+
+刚进算法团队，大牛们讨论高深的cv术语和算法，如何才能听懂？
+
 # 高斯过程回归
 
 从大的分类来说，机器学习的算法可分为两类：

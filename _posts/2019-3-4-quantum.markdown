@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  量子计算, 遗传算法 & 进化算法, PaddlePaddle, X-Deep Learning
+title:  量子计算, 遗传 & 进化 & 模拟退火算法, PaddlePaddle, X-Deep Learning
 category: resource 
 ---
 
@@ -65,14 +65,6 @@ https://mp.weixin.qq.com/s/mNOLn7WiZFpGW25Ppefo3g
 
 何为量子机器学习？
 
-https://mp.weixin.qq.com/s/egmodqeThnw5H7DwKRwQbw
-
-如何运用数学进行高效生产？（模拟退火算法）
-
-https://mp.weixin.qq.com/s/tig9hpBJxvIZeGyWF0i8ug
-
-什么是模拟退火算法？
-
 https://mp.weixin.qq.com/s/86c59-nIsrTNUABx4QYobA
 
 量子机器学习入门科普：解读量子力学和机器学习的共生关系
@@ -120,7 +112,7 @@ https://mp.weixin.qq.com/s/NRI6HhhpHiRbLy44FMKtCg
 
 敲开图灵之门：CS大四学生长文畅谈量子计算机的“前世、今生、未来”
 
-# 遗传算法 & 进化算法
+# 遗传 & 进化 & 模拟退火算法
 
 http://blog.csdn.net/u010945683/article/details/40987331
 
@@ -253,6 +245,18 @@ https://mp.weixin.qq.com/s/95h7WQHGP-glfyO6-S9S8g
 https://mp.weixin.qq.com/s/j9BGw_oCg7eyzg4w4j681w
 
 生物老师：数学老师，你走开，这道题我来解（遗传算法）
+
+https://mp.weixin.qq.com/s/egmodqeThnw5H7DwKRwQbw
+
+如何运用数学进行高效生产？（模拟退火算法）
+
+https://mp.weixin.qq.com/s/tig9hpBJxvIZeGyWF0i8ug
+
+什么是模拟退火算法？
+
+https://zhuanlan.zhihu.com/p/266874840
+
+模拟退火算法详解
 
 # PaddlePaddle
 

@@ -347,6 +347,8 @@ Halide也是一个高性能的图形DSL+编译器的项目。它影响了后来�
 
 如果你想用普通的CPU做加速，又不想去优化算法，那么halide将是非常优秀的选择。唯一要做的，就是把算法用halide重写一遍即可。
 
+Halide采用的计算和调度分离的方案，为后来的Taichi和TVM所采用。
+
 官网：
 
 https://halide-lang.org/

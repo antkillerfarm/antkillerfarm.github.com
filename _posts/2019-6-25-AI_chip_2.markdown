@@ -11,7 +11,45 @@ category: Chip
 
 ## TPU
 
-### 脉动阵列（续）
+​Tensor Processing Unit(TPU)是Google推出的AI芯片系列。目前已经有3个版本：
+
+TPU v1, deployed 2015, 92 teraops, inference only.
+
+TPU v2, cloud TPU 2017, pod 2018, 180 teraflops, 64 GB HBM, training and inference, generally available. 11.5 petaflops in a pod.
+
+TPU v3, cloud beta 2018, 420 teraflops, 128 GB HBM, training and inference, beta. >100 petaflops in a pod.
+
+论文：
+
+《In-Datacenter Performance Analysis of a Tensor Processing Unit​》
+
+![](/images/img4/TPU.png)
+
+### Coral Dev Board
+
+Coral Dev Board是Google于2019年3月推出的一款搭载TPU的嵌入式开发板。
+
+参考：
+
+http://linuxgizmos.com/google-launches-i-mx8m-dev-board-with-edge-tpu-ai-chip/
+
+Google launches i.MX8M dev board with Edge TPU AI chip
+
+### 脉动阵列
+
+**AI=矩阵乘+非线性**
+
+由于非线性只有可怜的O(N)的计算量，矩阵乘的O(N^3)的计算量才是AI中的绝对计算瓶颈。
+
+---
+
+Systolic array是孔祥重和他的博士生Charles Leiserson于1978年发明的。
+
+论文：
+
+《Why systolic architectures?》
+
+![](/images/img4/Systolic_array.gif)
 
 >孔祥重（H. T. Kung/Kung, Hsiang-Tsung），1945年生。台湾国立清华大学本科（1968）+CMU博士（1974）。CMU、Harvard教授。台湾中央研究院院士、美国工程院院士。除了Systolic array之外，数据库领域的Optimistic concurrency control（乐观并发控制）也是他的贡献。   
 >除了Charles Eric Leiserson之外，他的博士生还有Robert Tappan Morris，也就是著名的Morris Worm的作者。
@@ -351,47 +389,3 @@ https://mp.weixin.qq.com/s/VM-KiIJHA2gXLVu0WRIzwA
 https://mp.weixin.qq.com/s/f5mQkWxPYc77t2we1Y306Q
 
 深度学习引领AI芯片大战
-
-https://mp.weixin.qq.com/s/6ksL9p1Gmnrd2HahU3KniQ
-
-ARM攒机指南——AI篇：5大千万级设备市场技术拆解
-
-https://zhuanlan.zhihu.com/p/32953957
-
-浅析图像视频类AI芯片的灵活度
-
-https://mp.weixin.qq.com/s/cfqnLYZSxJhtsgtrydx02A
-
-语音及文本类AI芯片的需求分析
-
-https://mp.weixin.qq.com/s/31SBgTXfIcwkmIzujBLxOA
-
-深度学习引擎的终极形态是什么?
-
-https://zhuanlan.zhihu.com/p/35103140
-
-“传说中”的异步电路能否在AI芯片界异军突起？
-
-https://mp.weixin.qq.com/s/DnurlGgd5q4Fwjxy3YnIrQ
-
-当数据库遇见FPGA：X-DB异构计算如何实现百万级TPS？
-
-https://mp.weixin.qq.com/s/PDe8O5zskxD_mycwH0_3lg
-
-AI是如何影响计算机内存系统的？
-
-https://blog.csdn.net/lien0906/article/details/78863118
-
-深度学习中GPU和显存分析
-
-https://mp.weixin.qq.com/s/H_KnHQ6AzCNFqmW8uDj1rA
-
-基于FPGA的深度学习加速器综述：挑战与机遇
-
-http://eyeriss.mit.edu/
-
-Eyeriss是MIT设计的一款NN加速器。
-
-https://zhuanlan.zhihu.com/p/37520172
-
-一窥ARM的AI处理器

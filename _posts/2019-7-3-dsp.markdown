@@ -315,6 +315,46 @@ https://zhuanlan.zhihu.com/p/549588865
 
 # 数字成像++
 
+https://mp.weixin.qq.com/s/VjzXYgkzAGloczaaPXni2A
+
+PDAF进化史
+
+https://mp.weixin.qq.com/s/vg64EpcCVsk7gQAoEozSRQ
+
+PDAF进阶
+
+https://mp.weixin.qq.com/s/m7q6jHbdnb7fw4lKIDfVWw
+
+camera接口之MIPI联盟浅谈
+
+https://mp.weixin.qq.com/s/DbDrDhbQAhXOsfxQ8UJVZg
+
+三星S9凝时摄影背后的sensor技术
+
+https://mp.weixin.qq.com/s/gOikxUxWpqdDRr6_KT2jxQ
+
+图像处理，计算机视觉与machine learning的区别与联系
+
+https://mp.weixin.qq.com/s/7fvVmmpPSldwa3TZ3dVb2g
+
+3D LUT--色彩校正的利器
+
+https://mp.weixin.qq.com/s/m_EKOLjWjTyx4RBxsAAAGg
+
+4x4阵列摄/“深感”摄
+
+https://mp.weixin.qq.com/s/dX_thGA2V_-AMjDGTUgWrg
+
+计算摄影技术：身怀绝技的扫地僧
+
+https://mp.weixin.qq.com/s/ZSczU1_J_exb2oreiHtK3g
+
+夜景拍照之sensor篇
+
+https://mp.weixin.qq.com/s/eyIeLaBZ0f_EsxglsUuH8A
+
+深度学习自动构图研究报告
+
 https://mp.weixin.qq.com/s/k2JLF_aM3j68GjEByCZF-g
 
 模拟/数字增益对图像噪声的影响

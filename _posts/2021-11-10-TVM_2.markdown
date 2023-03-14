@@ -9,7 +9,25 @@ category: toolchain
 
 # TVM实战
 
-## 问题的由来（续）
+## 问题的由来
+
+最近客户反馈我们的backend导入Pytorch模型会出错，而TFLite模型是OK的。
+
+打印模型的IR后，我们发现：
+
+这是Pytorch模型的IR片段：
+
+```text
+  %0 = qnn.quantize(%input, 0.0186579f, 114, out_dtype="uint8", axis=1);
+  %1 = nn.pad(%0, 114f, pad_width=[[0, 0], [0, 0], [1, 1], [1, 1]]);
+  %2 = qnn.quantize(%features.0.0_weight, 0.00288958f, 0, out_dtype="int8", axis=0);
+  %3 = qnn.conv2d(%1, %2, 114, 0, 0.0186579f, 0.00288958f, strides=[2, 2], padding=[0, 0, 0, 0], channels=32, kernel_size=[3, 3], out_dtype="int32");
+  %4 = qnn.quantize(%features.0.0_bias, 5.39136e-05f, 0, out_dtype="int32", axis=0);
+  %5 = nn.bias_add(%3, %4);
+  %6 = qnn.requantize(%5, 5.39136e-05f, 0, 0.0150183f, 0, axis=1, out_dtype="int32");
+  %7 = clip(%6, a_min=0f, a_max=255f);
+  %8 = cast(%7, dtype="uint8");
+```
 
 这是TFLite模型的IR片段：
 
@@ -305,27 +323,3 @@ DWARF第一版发布于1992年，主要是为UNIX下的调试器提供必要的�
 https://zhuanlan.zhihu.com/p/419908664
 
 DWARF, 调试信息存储格式
-
-# Build tools+
-
-## blade
-
-blade是腾讯出品的构建工具。
-
-官网：
-
-https://github.com/chen3feng/blade-build
-
-## MSbuild
-
-MSbuild当然是微软的构建工具了。
-
-官网：
-
-https://msdn.microsoft.com/en-us/library/dd393574.aspx
-
-参考：
-
-http://www.cnblogs.com/linianhui/archive/2012/08/30/2662648.html
-
-MSBuild入门
