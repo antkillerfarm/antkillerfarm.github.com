@@ -172,6 +172,12 @@ NVIDIA Tensor Core深度学习核心解析
 
 PTX (Parallel Thread Execution) 是NVIDIA GPU的伪指令集，之所以加个伪字，主要是因为这个指令集并不是真的硬件指令集，而仅仅是个抽象指令集。
 
+该抽象指令集可以屏蔽不同架构显卡之间的指令差异。
+
+官网：
+
+https://docs.nvidia.com/cuda/parallel-thread-execution/index.html
+
 gcc和llvm都有特定的pass可以生成PTX代码。
 
 NVIDIA GPU真正的指令集，被称作SASS。

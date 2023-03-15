@@ -197,6 +197,10 @@ https://zhuanlan.zhihu.com/p/610281800
 
 当死亡袭来的时刻我依旧选择向前——乌克兰英雄德米特罗-菲纳辛的故事
 
+https://zhuanlan.zhihu.com/p/613381539
+
+乌克兰人民坚韧不屈，近日基辅纪念在巴赫穆特战役中牺牲的乌克兰英雄（Dmytro Kotsiubailo）
+
 ---
 
 ![](/images/img4/Ukraine_4.jpg)

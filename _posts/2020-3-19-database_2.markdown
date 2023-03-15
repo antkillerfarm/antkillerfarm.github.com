@@ -113,7 +113,7 @@ https://mp.weixin.qq.com/s/rxvNSZtRyA7f27TKKL3J_g
 
 https://www.ibm.com/docs/en/i/7.2?topic=management-thread-local-storage
 
-Thread Local Storage
+Thread Local Storage（TLS）
 
 ## 横向拆分和纵向拆分
 

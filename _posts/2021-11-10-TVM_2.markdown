@@ -222,6 +222,20 @@ mallinfo：获得内存分配信息。
 
 `sudo systemctl status xrdp -n50`：打印xrdp服务的log，显示最新的50行。
 
+linux-tools-perf：Android中的perf。
+
+Simpleperf: Android上的Native CPU剖析分析工具。
+
+Android Stuido CPU Profiler：Android Studio提供的CPU剖析工具，本质上就是基于Simpleperf和systrace进行剖析。
+
+GPU Profiler: GPU剖析工具。
+
+heapprofd：Android进程本地内存分析工具。
+
+Perfetto:针对Linux/Android/Chrome平台和用户空间应用性能检测和跟踪工具。基于ftrace，atrace和heapprofd。
+
+Profilo: Facebook开发Android性能剖析库，用于在线收集应用程序的性能跟踪数据。
+
 ---
 
 打印文件/proc/{pid}/maps查看内存地址和文件的映射关系，可以得到函数在哪个文件里。
@@ -247,6 +261,10 @@ C++怎么检测内存泄露，怎么定位内存泄露？
 https://mp.weixin.qq.com/s/FMYimnxcAya6bhvdGD5LUw
 
 惊魂48小时，阿里工程师如何紧急定位线上内存泄露？
+
+https://blog.csdn.net/xiaowei_cqu/article/details/104238289
+
+性能分析工具：开篇
 
 ## valgrind
 

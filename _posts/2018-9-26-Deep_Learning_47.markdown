@@ -293,6 +293,10 @@ https://mp.weixin.qq.com/s/GyE86DG7VqW0n4p0IP-lmQ
 
 R-MVSNet:一个高精度高效率的三维重建网络
 
+https://www.zhihu.com/column/c_1451693094165516288
+
+人体三维重建与虚拟试衣
+
 ## NetVLAD
 
 NetVLAD算的上是CNN+传统算子的一个范例。
