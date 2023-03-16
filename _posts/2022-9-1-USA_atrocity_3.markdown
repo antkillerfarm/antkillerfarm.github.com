@@ -170,3 +170,7 @@ https://www.zhihu.com/answer/642503123
 https://view.inews.qq.com/a/20220923A08QA200
 
 15岁少女30刀刺死强奸犯，被判赔15万美元
+
+https://mp.weixin.qq.com/s/aAfwZUoatlwXgW55UWeFyQ
+
+中国救援叙利亚灾区的救命物资，被美军抢走了

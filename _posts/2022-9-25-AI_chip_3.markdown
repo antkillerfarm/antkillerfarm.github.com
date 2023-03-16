@@ -334,3 +334,7 @@ Global Illumination_Voxel Global Illumintaion (VXGI)
 https://www.cnblogs.com/machong8183/p/7543724.html
 
 全局光照:光线追踪、路径追踪与GI技术进化编年史
+
+https://gamebaby.blog.csdn.net/article/details/80399195
+
+光线追踪渲染（RayTracing Render）核心原理详解

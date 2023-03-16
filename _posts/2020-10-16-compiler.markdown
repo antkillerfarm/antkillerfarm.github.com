@@ -236,6 +236,22 @@ Android CPU, Compilers, D8 & R8
 
 # Polyhedral Model
 
+## 教程
+
+Polyhedral Model的内容主要在《编译原理》（龙书）第十一章——并行和局部优化。
+
+《多面体编译理论与深度学习实践》 赵捷 李宝亮著
+
+https://www.cs.colostate.edu/~pouchet/
+
+888.11-Polyhedral Compilation Foundations
+
+https://polyhedral.info/
+
+一个Polyhedral方面的社区，有大量资料
+
+## 笔记
+
 基于多面体模型的编译优化技术代表了程序自动并行化领域众多方向最先进的水平,成为国际上多个编译研发团队的研究热点。
 
 ![](/images/img4/Polyhedral.png)
@@ -248,7 +264,21 @@ Android CPU, Compilers, D8 & R8
 
 ---
 
+Polyhedral Model在传统的CPU/GPU编译器领域已经有非常多的实践。
 
+比如gcc中的Graphite：
+
+http://gcc.gnu.org/wiki/Graphite
+
+论文：
+
+GRAPHITE: Polyhedral Analyses and Optimizations for GCC
+
+还有LLVM中的polly：
+
+https://polly.llvm.org/
+
+LLVM Framework for High-Level Loop and Data-Locality Optimizations
 
 ---
 
@@ -261,21 +291,3 @@ Android CPU, Compilers, D8 & R8
 并行化：将任务拆分成多个可并行执行的子任务，并同时在多个硬件单元上执行。
 
 向量化和并行化通常是两个冲突的优化目标，前者通常在内层循环进行，而后者通常在外层循环进行。
-
----
-
-Loop tiling：将大块循环迭代拆解为若干小块的循环迭代，减少数据重用的周期。
-
-Loop fusion：将多个具有“生产-消费”关系的循环块合并到一起，减少中间数据的搬运。
-
-这也是两个冲突的目标，Loop fusion会导致Loop tiling的约束复杂化。
-
-https://blog.csdn.net/wangbowj123/article/details/101173269
-
-循环优化与多面体模型
-
----
-
-线性变换：$$y=Ax$$
-
-仿射变换：$$y=Ax+b$$

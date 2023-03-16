@@ -295,6 +295,22 @@ XLA: The TensorFlow compiler framework
 
 # Polyhedral Model++
 
+https://mp.weixin.qq.com/s/QEooKxP1sm5O90AUiqKQEQ
+
+Polyhedral Model—AI芯片软硬件优化利器（一）
+
+https://mp.weixin.qq.com/s/NRtud1UImE5ArZ2zQWFRyg
+
+Polyhedral Model—AI芯片软硬件优化利器（二）
+
+https://mp.weixin.qq.com/s/bLBIrJb82IsnyoXSEr2xtw
+
+Polyhedral Model—AI芯片软硬件优化利器（三）
+
+https://www.cnblogs.com/XianghuanHe/articles/15432300.html
+
+编译原理（龙书）第十一章 并行和局部优化学习笔记
+
 https://mp.weixin.qq.com/s/wjk2Mxhd2NDpH72l3rdqgQ
 
 多面体编译技术在软硬协同设计中的应用

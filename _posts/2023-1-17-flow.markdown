@@ -227,7 +227,7 @@ https://www.zhihu.com/question/549222340
 
 # Autoregressive Model
 
-AR vs AE的相关内容在《Attention（六）》中已有描述，这里不再赘述。
+AR vs AE的相关内容在《Attention（七）》中已有描述，这里不再赘述。
 
 Autoregressive Model实际上是最古老的生成模型，比GAN/VAE/Flow/Diffusion都要古老。
 
