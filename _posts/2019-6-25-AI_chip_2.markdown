@@ -106,10 +106,6 @@ https://mp.weixin.qq.com/s/3DubSQ1D59Z-PCovjHiidQ
 
 TPU(灵魂三问 WHAT? WHY? HOW?)
 
-https://mp.weixin.qq.com/s/lP7sLiqiGGR2IY-FaorIPw
-
-英伟达：AI芯片还可以这样做
-
 https://mp.weixin.qq.com/s/j053qtpdz21IdgS22uGwAw
 
 深入剖析卷积乘累加的硬件加速技术

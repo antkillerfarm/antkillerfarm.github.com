@@ -309,6 +309,8 @@ NVFuser是NV专门为Pytorch设计的自动化的GPU代码生成器。
 
 ## AKG
 
+AKG是面向华为昇腾AI处理器的张量编译器。
+
 官网：
 
 https://gitee.com/mindspore/akg/

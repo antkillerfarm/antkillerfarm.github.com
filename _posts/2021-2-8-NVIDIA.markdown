@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NVIDIA
+title:  NVIDIA, AMD, Shader
 category: Chip 
 ---
 
@@ -65,6 +65,10 @@ NVIDIA DGX：服务器级的产品。
 NVIDIA EGX：主打边缘计算的主板级产品。
 
 NVIDIA AGX：主打自动驾驶等AI功能的产品。目前已经有Parker、Xavier、Orin、Atlan、Thor等代产品。
+
+历代GPU架构代号：Tesla → Fermi → Kepler → Maxwell → Pascal → Volta → Turing → Amper → Hopper。
+
+V100表示是Volta架构的GPU，A100和H100同理。
 
 ## 驱动安装
 
@@ -297,6 +301,32 @@ https://zhuanlan.zhihu.com/p/559957579
 https://zhuanlan.zhihu.com/p/565897763
 
 GPGPU编程模型之CUDA
+
+## 参考
+
+https://mp.weixin.qq.com/s/cGKtvtZzR--sGL4oNSZfAw
+
+深度分析NVIDIA A100显卡架构
+
+https://mp.weixin.qq.com/s/rtO8PxRj08GVimT3bfbplA
+
+我看英伟达H100 GPU
+
+https://www.zhihu.com/question/523521515
+
+如何评价英伟达3月22日发布的全新GPU H100？
+
+https://mp.weixin.qq.com/s/lP7sLiqiGGR2IY-FaorIPw
+
+英伟达：AI芯片还可以这样做
+
+https://mp.weixin.qq.com/s/jGGGMDokN9akzbjRkvUOaA
+
+NVIDIA GPU架构的变迁史
+
+https://jcf94.com/2020/05/24/2020-05-24-nvidia-arch/
+
+NVIDIA GPU架构演进
 
 # AMD
 

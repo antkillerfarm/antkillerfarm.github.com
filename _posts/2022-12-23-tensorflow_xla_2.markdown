@@ -293,7 +293,7 @@ https://haosdent.gitbooks.io/tensorflow-document/content/resources/xla_prereleas
 
 XLA: The TensorFlow compiler framework
 
-# Polyhedral Model++
+# Polyhedral Model+++
 
 https://mp.weixin.qq.com/s/QEooKxP1sm5O90AUiqKQEQ
 

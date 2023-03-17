@@ -267,6 +267,18 @@ https://pocoproject.org/
 
 # Polyhedral Model+
 
+循环不变量外提
+
+循环展开，软流水，并行化，向量化
+
+向量化：标量运算转换为向量运算，并在同一硬件上执行。
+
+并行化：将任务拆分成多个可并行执行的子任务，并同时在多个硬件单元上执行。
+
+向量化和并行化通常是两个冲突的优化目标，前者通常在内层循环进行，而后者通常在外层循环进行。
+
+---
+
 Loop tiling：将大块循环迭代拆解为若干小块的循环迭代，减少数据重用的周期。
 
 Loop fusion：将多个具有“生产-消费”关系的循环块合并到一起，减少中间数据的搬运。
@@ -279,9 +291,9 @@ https://blog.csdn.net/wangbowj123/article/details/101173269
 
 ---
 
-线性变换：$$y=Ax$$
+线性变换（linear transformation）：$$y=Ax$$
 
-仿射变换：$$y=Ax+b$$
+仿射变换（affine transformation）：$$y=Ax+b$$
 
 迭代空间（iteration space）：在一些计算过程中动态执行示例的集合，也就是各个循环下标的取值的组合。
 
@@ -289,26 +301,8 @@ https://blog.csdn.net/wangbowj123/article/details/101173269
 
 处理器空间（processor space）：系统中处理器的集合。通常情况下，这些处理器使用整数或者整数向量进行编号。
 
+因为循环是多重的，所以iteration space是个多面体。同样的，数据是多维的，它也是一个多面体。
 
+从ALU到core，到die，到chip；从register到L0 Cache，到L1 Cache，到RAM；无论是运算器，还是存储器，都是一个有层次的结构，这也是一个多面体。
 
----
-
-http://www.jos.org.cn/jos/ch/reader/create_pdf.aspx?file_no=5563
-
-基于多面体模型的编译“黑魔法”
-
-https://zhuanlan.zhihu.com/p/310142893
-
-编译器领域的多面体模型
-
-https://zhuanlan.zhihu.com/p/111680367
-
-Polyhedral Model, Interval Analysis and Compilers
-
-https://www.zhihu.com/question/65708935
-
-深入学习auto vectorization和polyhedral变换方面的优化技术有哪些资料？
-
-https://pliss2019.github.io/albert_cohen_slides.pdf
-
-Polyhedral Compilation as a Design Pattern for Compiler Construction
+由于非线性数学理论的不完备，目前的Polyhedral Model主要研究仿射变换。在这个前提下，人们发现不同space之间的变换，可以用矩阵运算来表示。而矩阵运算的数学工具已经相当丰富了。

@@ -25,6 +25,12 @@ Hedy Lamarr，1913～2000，美国好莱坞默片时期著名女演员，生于�
 
 ---
 
+https://zhuanlan.zhihu.com/p/78055680
+
+编译器与Debug的传奇：Grace Murray Hopper小传
+
+---
+
 参考：
 
 https://mp.weixin.qq.com/s/sIPKApVO-2OYlMKuSl1ZKg

@@ -367,6 +367,18 @@ https://www.zhihu.com/question/479548933
 
 如何学习halide?
 
+## Tiramisu
+
+官网：
+
+http://tiramisu-compiler.org/
+
+参考：
+
+https://zhuanlan.zhihu.com/p/363516429
+
+Tiramisu：一种基于Polyheral的深度学习模型编译器
+
 ## Lift
 
 Lift也是一种并行编程及优化的语言。

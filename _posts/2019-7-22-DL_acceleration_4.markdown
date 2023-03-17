@@ -161,10 +161,6 @@ BF16和TF32的先例一开，各种格式如火山爆发一般涌现。例如AMD
 
 参考：
 
-https://mp.weixin.qq.com/s/cGKtvtZzR--sGL4oNSZfAw
-
-深度分析NVIDIA A100显卡架构
-
 https://zhuanlan.zhihu.com/p/143499632
 
 NVIDIA A100 GPU中的TF32将AI训练与HPC速度提升20倍

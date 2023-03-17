@@ -179,14 +179,6 @@ https://zhuanlan.zhihu.com/p/365926059
 
 2021超全的显卡挑选指南
 
-https://mp.weixin.qq.com/s/jGGGMDokN9akzbjRkvUOaA
-
-NVIDIA GPU架构的变迁史
-
-https://jcf94.com/2020/05/24/2020-05-24-nvidia-arch/
-
-NVIDIA GPU架构演进
-
 https://mp.weixin.qq.com/s/8HIZRhb-KJOtPnQtQ3GQVg
 
 第一代芯片是CPU，第二代是GPU，第三代是什么？

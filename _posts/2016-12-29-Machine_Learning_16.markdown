@@ -181,3 +181,33 @@ https://zhuanlan.zhihu.com/p/270675634
 https://zhuanlan.zhihu.com/p/358895758
 
 统计距离（STATISTICAL DISTANCE）
+
+# Polyhedral Model++
+
+访问函数：从迭代空间到数据空间的一个映射关系。
+
+所有不破环原有程序语义中的数据依赖的访问遍历顺序都是合法的，这个遍历顺序被称为一种**调度**。显然不同调度的性能是不同的，循环优化算法的目标就是找到其中的最优调度。
+
+
+
+---
+
+http://www.jos.org.cn/jos/ch/reader/create_pdf.aspx?file_no=5563
+
+基于多面体模型的编译“黑魔法”
+
+https://zhuanlan.zhihu.com/p/310142893
+
+编译器领域的多面体模型
+
+https://zhuanlan.zhihu.com/p/111680367
+
+Polyhedral Model, Interval Analysis and Compilers
+
+https://www.zhihu.com/question/65708935
+
+深入学习auto vectorization和polyhedral变换方面的优化技术有哪些资料？
+
+https://pliss2019.github.io/albert_cohen_slides.pdf
+
+Polyhedral Compilation as a Design Pattern for Compiler Construction
