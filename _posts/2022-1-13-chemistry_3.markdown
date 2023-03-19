@@ -304,3 +304,7 @@ https://www.zhihu.com/answer/925610213
 https://mp.weixin.qq.com/s/Lz8QRs7HkZbWFxLqf4h6OA
 
 塑料瓶、玻璃瓶、纸包装，什么饮料用什么包装有啥秘密吗？
+
+https://www.zhihu.com/answer/2876815175
+
+有哪些食物是因为制作失误才被发明出来的？（糖精）

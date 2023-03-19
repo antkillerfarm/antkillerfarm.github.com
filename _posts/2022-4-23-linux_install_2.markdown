@@ -11,6 +11,16 @@ category: linux
 
 ## 内核版本回退（续）
 
+2.编译网卡驱动。
+
+首先去github更新驱动的代码。这里必须感谢驱动原作者的持续维护，修正了一些在新内核中出现的问题。
+
+必须说这次的更新，依赖做的很差，连linux-headers都没有，造成了有些驱动无法更新。。。
+
+`sudo apt install linux-headers-5.8.0-36-generic`
+
+安装之后，还是网卡不好使。只好暂时工作在旧内核下了。
+
 3.默认启动旧内核
 
 参考：
@@ -400,27 +410,3 @@ https://mp.weixin.qq.com/s/h4LwSRAsDgRqOq3mLt_SCw
 https://mp.weixin.qq.com/s/djEPqxZSfMp13Uf_h6TSiA
 
 认真分析mmap：是什么 为什么 怎么用
-
-https://zhuanlan.zhihu.com/p/424240082
-
-编译一个属于自己的最小Linux系统
-
-https://www.zhihu.com/question/66902460
-
-为什么Linux下要把创建进程分为fork()和exec()(一系列函数)两个函数来处理?
-
-https://zhuanlan.zhihu.com/p/464204319
-
-Linux网络子系统中DMA机制的实现
-
-https://mp.weixin.qq.com/s/1JiXL1f3SSjsBojlJSNOpQ
-
-Linux的启动流程
-
-https://mp.weixin.qq.com/s/ZfprFQjVANuCE2N693gZBQ
-
-用户空间和内核空间
-
-https://mp.weixin.qq.com/s/P14VsWwSh9jiF-jBHSXXOw
-
-申请内存时底层发生了什么？

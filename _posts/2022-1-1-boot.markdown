@@ -284,6 +284,30 @@ Linux下xargs命令
 
 # Linux参考资源+
 
+https://zhuanlan.zhihu.com/p/424240082
+
+编译一个属于自己的最小Linux系统
+
+https://www.zhihu.com/question/66902460
+
+为什么Linux下要把创建进程分为fork()和exec()(一系列函数)两个函数来处理?
+
+https://zhuanlan.zhihu.com/p/464204319
+
+Linux网络子系统中DMA机制的实现
+
+https://mp.weixin.qq.com/s/1JiXL1f3SSjsBojlJSNOpQ
+
+Linux的启动流程
+
+https://mp.weixin.qq.com/s/ZfprFQjVANuCE2N693gZBQ
+
+用户空间和内核空间
+
+https://mp.weixin.qq.com/s/P14VsWwSh9jiF-jBHSXXOw
+
+申请内存时底层发生了什么？
+
 https://mp.weixin.qq.com/s/OJHQZjxa6u8aA6jZyJnNPg
 
 一文浅析内存管理机制
@@ -311,31 +335,3 @@ Linux并发与同步
 https://mp.weixin.qq.com/s/CAPU8bjJWobQs6JHHMasvQ
 
 Linux服务端最大并发数是多少？
-
-http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html
-
-Systemd入门教程：实战篇
-
-https://mp.weixin.qq.com/s/bPqnaMqhi_4p1mwjmvyoIw
-
-多图详解10大高性能开发核心技术
-
-https://mp.weixin.qq.com/s/ESLO1RH6Q8udwI13Z2Pz_w
-
-详解linux io flush
-
-https://mp.weixin.qq.com/s/LLlzPB2emr9Hqr7gql0B4Q
-
-为什么Linux需要Swapping
-
-https://mp.weixin.qq.com/s/fzLcAkYwKhj-9hgoVkTzaw
-
-CPU飙高，系统性能问题如何排查？
-
-https://zhuanlan.zhihu.com/p/583413166
-
-Linux I/O 神器之 io_uring
-
-http://www.cppblog.com/elva/archive/2008/09/10/61544.html
-
-关于SIGPIPE导致的程序退出

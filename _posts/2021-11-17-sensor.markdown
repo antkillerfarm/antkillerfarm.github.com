@@ -378,3 +378,33 @@ Carhart four-factor model
 https://mp.weixin.qq.com/s/4qZkMN5lw-vzV7FEB8iTGA
 
 信用风险建模
+
+# Linux参考资源++
+
+http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html
+
+Systemd入门教程：实战篇
+
+https://mp.weixin.qq.com/s/bPqnaMqhi_4p1mwjmvyoIw
+
+多图详解10大高性能开发核心技术
+
+https://mp.weixin.qq.com/s/ESLO1RH6Q8udwI13Z2Pz_w
+
+详解linux io flush
+
+https://mp.weixin.qq.com/s/LLlzPB2emr9Hqr7gql0B4Q
+
+为什么Linux需要Swapping
+
+https://mp.weixin.qq.com/s/fzLcAkYwKhj-9hgoVkTzaw
+
+CPU飙高，系统性能问题如何排查？
+
+https://zhuanlan.zhihu.com/p/583413166
+
+Linux I/O 神器之 io_uring
+
+http://www.cppblog.com/elva/archive/2008/09/10/61544.html
+
+关于SIGPIPE导致的程序退出

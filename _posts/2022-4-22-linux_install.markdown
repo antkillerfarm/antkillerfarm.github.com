@@ -131,11 +131,21 @@ https://uefi.org/
 
 UEFI要求硬盘分区必须是GPT方式的，因此也被称作UEFI+GPT，与之相对的传统方案叫做legacy+MBR。
 
+UEFI的竞争对手主要有：MinPlatform、CoreBoot和LinuxBoot。
+
 参考：
 
 https://zhuanlan.zhihu.com/p/81960137
 
 UEFI引导与传统BIOS引导在原理上有什么区别？芯片公司在其中扮演什么角色？
+
+https://zhuanlan.zhihu.com/p/354914114
+
+下一代BIOS标准探讨引子：之各种Bootloader大比拼
+
+https://zhuanlan.zhihu.com/p/83039006
+
+X86生态圈为什么在物联网玩不转？什么是Intel FSP？它能解决什么问题？
 
 ## 安装步骤
 
@@ -228,13 +238,3 @@ https://github.com/tomaspinho/rtl8821ce
 1.现象：Wifi找不到了。
 
 首先排查设置和Secure Boot，发现没有问题。然后想起来，上次开机更新了系统内核。重启，进入上个版本的内核，一切正常，看来原因的确和内核版本有关。
-
-2.编译网卡驱动。
-
-首先去github更新驱动的代码。这里必须感谢驱动原作者的持续维护，修正了一些在新内核中出现的问题。
-
-必须说这次的更新，依赖做的很差，连linux-headers都没有，造成了有些驱动无法更新。。。
-
-`sudo apt install linux-headers-5.8.0-36-generic`
-
-安装之后，还是网卡不好使。只好暂时工作在旧内核下了。
