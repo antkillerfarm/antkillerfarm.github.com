@@ -9,6 +9,22 @@ category: database
 
 # 数据库
 
+## 教程
+
+《Database System Concepts》，Avi Silberschatz，Henry F. Korth，S. Sudarshan著。
+
+https://15445.courses.cs.cmu.edu/fall2021/
+
+Database Systems
+
+https://github.com/talent-plan/tinykv
+
+A course to build distributed key-value service based on TiKV model
+
+https://zhuanlan.zhihu.com/p/457696758
+
+如何快速通关Talent Plan TinyKV？
+
 ## SQL与数据库
 
 2010.3
@@ -342,39 +358,3 @@ https://mp.weixin.qq.com/s/VxeRwsYw0qL35BlPsDGbtg
 https://mp.weixin.qq.com/s/ea6w5srIG0u7vyYEcuxaVQ
 
 GraphQL最突出的架构优势是什么？
-
-## 分布式算法
-
-Paxos、Raft、Gossip、Nuorum NWR、PBFT、Anti-Entropy、POW、ZAB等等。
-
-https://mp.weixin.qq.com/s/KKrxuVCrjlXXWMPTXQ-fvA
-
-分布式之系统底层原理
-
-https://zhuanlan.zhihu.com/p/130974371
-
-分布式一致性协议概述
-
-https://mp.weixin.qq.com/s/NqLpT47ZWD6oJzfo_tWceA
-
-Paxos（分布式一致性算法）
-
-https://mp.weixin.qq.com/s/OXE7prU9cMuZG8kFydPm9A
-
-Paxos和Raft的前世今生
-
-https://mp.weixin.qq.com/s/ZE3sXRWoZYgbSIPTYIHWoA
-
-浅谈分布式一致性：Raft与SOFAJRaft
-
-https://mp.weixin.qq.com/s/Fj4zERz9PEuNumd_SI0bEA
-
-浅谈CAP和Paxos共识算法
-
-https://mp.weixin.qq.com/s/KTZQjC1JokmwmCkOH8APdg
-
-一文了解分布式一致性算法EPaxos
-
-https://mp.weixin.qq.com/s/42cStPudXRHjs61gjSIgWw
-
-一文读懂区块链与传统数据库之共识机制

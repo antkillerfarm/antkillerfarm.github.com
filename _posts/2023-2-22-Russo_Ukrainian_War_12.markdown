@@ -117,7 +117,7 @@ https://zhuanlan.zhihu.com/p/606942602
 
 ## 顿涅斯克战役
 
-本节主要包括巴赫穆特、马林卡、苏勒达尔、Vuhledar等地的攻防战。
+本节主要包括巴赫穆特、chasiv yar、马林卡、苏勒达尔、Vuhledar等地的攻防战。
 
 ![](/images/img4/joke_4.jpg)
 

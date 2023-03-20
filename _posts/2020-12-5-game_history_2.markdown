@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  我的PC Game（二）, 超算
+title:  我的PC Game（二）
 category: my story 
 ---
 
@@ -56,6 +56,14 @@ https://www.bilibili.com/video/BV1J44y1N73a
 https://www.zhihu.com/question/30113326
 
 为什么《大航海时代3》鲜有人关注？
+
+## 2023.3
+
+又是5年没玩RimWorld，现在已经出了正式版和3个DLC。没空追最新的，用《皇权》DLC又玩了一把，感觉不错。
+
+https://www.zhihu.com/question/589761499
+
+COLONY SIM游戏列表
 
 ## NES
 
@@ -204,47 +212,3 @@ https://www.zhihu.com/question/328681136
 https://www.bilibili.com/read/cv2773215
 
 一个错误诞生一个经典，CS最受欢迎地图“Dust II”背后的故事
-
-# 超算
-
-Massively Parallel Processor
-
-![](/images/img3/power.aug.gif)
-
-![](/images/img3/Supercomputers-history.png)
-
-Top 500超算之间的差距竟有3个数量级，从榜首到落榜差不多要10年时间。OS从2015年开始全都是Linux了。Windows在超算领域从来没有风光过，之前没钱，自然斗不过UNIX，后来又被Linux打趴下了。
-
-Sunway TaihuLight和Sierra的算力相当，但core的数量竟是后者的6.7倍，功耗是后者的2.06倍。差距明显啊！
-
-https://www.top500.org/
-
-超算排名网站
-
-https://zhuanlan.zhihu.com/p/33956771
-
-超算排名之中的地区和架构之争
-
----
-
-![](/images/img3/SC.png)
-
-https://mp.weixin.qq.com/s/gJWTiMCovGMQ8ye_TovdOw
-
-富士通的这颗芯片凭啥让日本走向了世界之巅？
-
-https://www.zhihu.com/question/404217836
-
-如何看待全球超级计算机TOP 500榜单日本登顶，中国跌出前三？近年中国超算发展现状如何？
-
----
-
-传统的排名是基于涉及64位浮点计算的基准，除此之外还有其他基准。
-
-2021年7月，由国防科技大学研制，部署在国家超级计算天津中心的“天河”E级计算机关键技术验证系统在国际Graph500排名中，获得SSSP Graph500（单源最短路径）榜单世界第一和BIG Data Green Graph500（大数据图计算能效）榜单世界第一的成绩。
-
----
-
-https://www.zhihu.com/answer/2512513124
-
-如何看待美国新的超级计算机Frontier成为超算榜全球第一，超过2–8名计算能力之和？

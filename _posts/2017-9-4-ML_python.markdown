@@ -412,6 +412,12 @@ Scipy使用大全
 
 Scikit-learn提供了常见的机器学习算法的实现。
 
+安装：
+
+`pip install scikit-learn`
+
+>注：`sklearn`似乎是另外的包。
+
 官网：
 
 http://scikit-learn.org/stable/index.html

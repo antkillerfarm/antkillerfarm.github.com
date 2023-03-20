@@ -9,7 +9,41 @@ category: database
 
 # 数据库
 
-## 分布式算法（续）
+## 分布式算法
+
+Paxos、Raft、Gossip、Nuorum NWR、PBFT、Anti-Entropy、POW、ZAB等等。
+
+https://mp.weixin.qq.com/s/KKrxuVCrjlXXWMPTXQ-fvA
+
+分布式之系统底层原理
+
+https://zhuanlan.zhihu.com/p/130974371
+
+分布式一致性协议概述
+
+https://mp.weixin.qq.com/s/NqLpT47ZWD6oJzfo_tWceA
+
+Paxos（分布式一致性算法）
+
+https://mp.weixin.qq.com/s/OXE7prU9cMuZG8kFydPm9A
+
+Paxos和Raft的前世今生
+
+https://mp.weixin.qq.com/s/ZE3sXRWoZYgbSIPTYIHWoA
+
+浅谈分布式一致性：Raft与SOFAJRaft
+
+https://mp.weixin.qq.com/s/Fj4zERz9PEuNumd_SI0bEA
+
+浅谈CAP和Paxos共识算法
+
+https://mp.weixin.qq.com/s/KTZQjC1JokmwmCkOH8APdg
+
+一文了解分布式一致性算法EPaxos
+
+https://mp.weixin.qq.com/s/42cStPudXRHjs61gjSIgWw
+
+一文读懂区块链与传统数据库之共识机制
 
 https://blog.csdn.net/blockchain_lemon/article/details/84801413
 
@@ -253,6 +287,22 @@ https://www.cnblogs.com/myseries/p/10748912.html
 
 数据库的4种隔离级别
 
+## Share Nothing & Share Disk
+
+share nothing和share disk是两种常见的分布式数据库模型。
+
+share nothing架构下，每个结点都有自己的CPU、内存、存储。跨结点的数据访问通过结点之间的网络通讯来完成。
+
+share disk架构下，每个结点有自己的CPU和内存，但是共享同一个存储。也就是说，存储只有一份，放在单独的分布式文件系统上，由文件系统本身来保证其可用性，一般由高端的专门存储设备来完成。
+
+https://zhuanlan.zhihu.com/p/32924680
+
+分布式数据库的Share Nothing/Share Disk/Share Storage
+
+https://www.zhihu.com/question/20120283
+
+为什么说MySQL Cluster是shared-nothing架构的？如何理解shared-nothing？
+
 ## 参考
 
 https://mp.weixin.qq.com/s/ActS6PxbtZGqPb0jOn0iFg
@@ -266,63 +316,3 @@ http://www.ruanyifeng.com/blog/2014/07/database_implementation.html
 https://blog.csdn.net/zhengzhb/article/details/8590390
 
 SQL查找删除重复行
-
-https://mp.weixin.qq.com/s/09BlPee0-kP-At2aDyDbMw
-
-中国数据库40年历史：隐秘的江湖与恩怨
-
-https://mp.weixin.qq.com/s/4lZ7My6cs4-VJQ1qGhQxZg
-
-AliSQL X-Cluste：基于X-Paxos的高性能强一致MySQL数据库
-
-https://mp.weixin.qq.com/s/tPzBlQGxGq1WEnXz5ggpxg
-
-sysbench在美团点评中的应用
-
-https://mp.weixin.qq.com/s/lJfIkLQaZnN4e9DxX163SA
-
-一款可能解放DBA的分布式数据库RadonDB的体验之旅
-
-http://mp.weixin.qq.com/s/idz6b2rls97W4Iw6J-ubng
-
-美团点评SQL优化工具SQLAdvisor开源
-
-https://mp.weixin.qq.com/s/jCFjhkwQpj1_P-seQurPqQ
-
-SQL解析在美团点评中的应用
-
-https://mp.weixin.qq.com/s/Al0yvkv0FUPjEBtcxS6Fmg
-
-传统数据仓库和云数据仓库的区别
-
-https://mp.weixin.qq.com/s/RfsFcqbtQYqE7_-snBZSTw
-
-京东实时数据仓库开发实践
-
-https://mp.weixin.qq.com/s/3XyRDgoOLBzUx0f6qYW7IQ
-
-数据仓库分层存储技术揭秘
-
-https://mp.weixin.qq.com/s/GXGSDxukbIAM5W-YSX0pDg
-
-美团点评数据库高可用架构的演进与设想
-
-https://mp.weixin.qq.com/s/crluKkEdvfZlHyF_gQm1ZA
-
-漫谈推荐系统及数据库技术
-
-https://mp.weixin.qq.com/s/CwUW-Ntb4qphrqha24P-Og
-
-漫谈推荐系统及数据库技术（二）——分布式数据库技术
-
-https://mp.weixin.qq.com/s/1pXMCcO6NR1SMBzsyES-cw
-
-分布式数据库又支持关系数据模型了？
-
-https://mp.weixin.qq.com/s/m76PFxbcY6_-XyeU7uu4Jg
-
-数据库的最简单实现
-
-https://mp.weixin.qq.com/s/pZnAcjFlBM2I4Hyctd6MHw
-
-图数据库真的比关系数据库更先进吗？

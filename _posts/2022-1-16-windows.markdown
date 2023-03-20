@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Win10/11历险记, 区块链
+title:  Win10/11历险记, 区块链, 网络架构
 category: technology 
 ---
 
@@ -151,4 +151,88 @@ http://tech.ifeng.com/c/82IsX1VJuPq
 
 DPOS类似于现时的议会制度。
 
+# 网络架构
+
+## LVS
+
+简单来说，Linux Virtual Server就是把一个集群虚拟成一台机器。
+
+参考：
+
+http://www.linuxvirtualserver.org/zh/lvs1.html
+
+章文嵩博士的LVS经典论文，非常值得一读。
+
+LVS的代码已经集成进Linux内核，在net/netfilter/ipvs目录下。
+
+http://www.cnblogs.com/xybaby/p/7867735.html
+
+关于负载均衡的一切：总结与思考
+
+## 网络虚拟化
+
+网络虚拟化是一个相反的过程，即将一台机器虚拟成一个集群。
+
+它和LVS不是相对的概念，而是相辅相成的：
+
+1.对于用户来说，无论多大的集群，用起来都像一台机器一样。
+
+2.对于集群内部来说，资源调度的颗粒度，从单台机器下移到单个实例（服务/VM/容器）。
+
+这里的内容较多，仅列出关键术语，备查。
+
+Software Defined Network，SDN
+
+Open vSwitch，OVS
+
+Overlay，顾名思义，上层的，或者说，业务层面的、用户层面的，overlay traffic 是指用户业务流量。
+
+而与overlay所对应的是underlay，顾名思义，下层的，或者说，基础架构层，专门用于承载用户流量的传统的IP网络，只要可以提供IP包的转发即可。
+
+leaf-spine
+
+参考：
+
+https://mp.weixin.qq.com/s/blU7ewaKiQowV8Yju5J4lA
+
+云计算时代携程的网络架构变迁
+
+https://mp.weixin.qq.com/s/zuTgPlNSUpUBp8eZUFMbPA
+
+OpenStack的架构详解
+
+https://www.cnblogs.com/bakari/p/8037105.html
+
+网络虚拟化
+
+https://www.cnblogs.com/bakari/p/8097439.html
+
+从Bridge到OVS，探索虚拟交换机
+
+https://zhuanlan.zhihu.com/p/29881248
+
+数据中心网络架构浅谈（一）
+
+https://zhuanlan.zhihu.com/p/29975418
+
+数据中心网络架构浅谈（二）
+
+https://zhuanlan.zhihu.com/p/30119950
+
+数据中心网络架构浅谈（三）
+
+https://zhuanlan.zhihu.com/p/64445886
+
+数据中心网络架构浅谈（四）
+
 # 俄乌战争==
+
+我们这里一名技术大神的收入超过国府级执权人，因为后者的职位太多人都能干，甚至毫无经验的戏子被选上去都干得有声有色，能干翻有20年工作经验的老同行。。。
+
+---
+
+从战前的“合作无上限”，到开战后的“中立”，再到“合作无上限，中国有底线”，然后“不要恶意绑架中俄”，直至“美西方势力和亲俄网络账号是同一类人”。。。
+
+---
+
+感觉这是要上演循环了，瓦格纳到监狱的无限循环，先当逃兵进监狱，然后瓦格纳再到监狱招募志愿兵，再当逃兵，瓦格纳再到监狱招募志愿兵.....这是循环了！
