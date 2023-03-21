@@ -303,6 +303,8 @@ Material Point Method（物质点法）
 
 Taichi是胡渊鸣开发的一套计算机图形库。它拥有一套特有的DSL，并可将之编译为能在不同backend硬件上运行程序。
 
+>胡渊鸣，清华本科（2017）+MIT博士（2021）。
+
 官网：
 
 https://taichi.graphics/
@@ -340,6 +342,18 @@ https://zhuanlan.zhihu.com/p/507362284
 https://www.zhihu.com/question/535601383
 
 Taichi和PyTorch有哪些相似和不同？
+
+https://zhuanlan.zhihu.com/p/573894977
+
+用Taichi实现GPU图像处理：从入门到入魔
+
+https://zhuanlan.zhihu.com/p/612102573
+
+Taichi NeRF（上）：不写CUDA也能开发、部署Instant NGP
+
+https://zhuanlan.zhihu.com/p/613679756
+
+Taichi NeRF (下): 关于3D AIGC的务实探讨
 
 ## Halide
 

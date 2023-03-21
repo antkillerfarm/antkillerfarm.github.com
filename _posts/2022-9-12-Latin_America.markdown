@@ -157,6 +157,10 @@ https://zhuanlan.zhihu.com/p/606196452
 
 被当做耗材一样榨干的国家（尼日尔）
 
+https://zhuanlan.zhihu.com/p/410234239
+
+“作茧自缚”林碧春：嫁给比自己大29岁非洲皇帝，今有苦说不出
+
 # 中东+
 
 https://new.qq.com/omn/20210917/20210917A012II00.html
