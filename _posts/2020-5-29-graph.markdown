@@ -221,6 +221,14 @@ https://mp.weixin.qq.com/s/87i2u2ZKqSxG_1-dK_Hv1w
 
 理解图的拉普拉斯矩阵
 
+## Pearce-Kelly算法
+
+Pearce-Kelly算法是检测DAG，并进行拓扑排序的算法。
+
+https://www.doc.ic.ac.uk/~phjk/Publications/DynamicTopoSortAlg-JEA-07.pdf
+
+A Dynamic Topological Sort Algorithm for Directed Acyclic Graphs
+
 ## 参考
 
 https://mp.weixin.qq.com/s/LqCfwf90bzZKVMLLY5dbXA

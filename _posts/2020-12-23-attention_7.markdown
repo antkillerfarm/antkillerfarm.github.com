@@ -165,9 +165,19 @@ $$\text{backward:}p(x)=\prod_{t=T}^1p(x_t|x_{>t})$$
 
 $$p(x)=\prod_{x\in Mask}p(x_t|context)$$
 
-- 缺点：由于训练中采用了MASK标记，导致预训练与微调阶段不一致的问题。此外对于生成式问题，AE模型也显得捉襟见肘，这也是目前BERT为数不多没有实现大的突破的领域。
+- 缺点：由于训练中采用了MASK标记，导致预训练与微调阶段不一致的问题。此外对于生成式问题，AE模型也显得捉襟见肘，这也是目前为止，BERT为数不多没有实现大的突破的领域。
 
 - 优点：能够很好的编码上下文语义信息，在自然语言理解(NLU)相关的下游任务上表现突出。
+
+---
+
+2023.3
+
+ChatGPT的出现，为自然语言生成任务找到了商业化的路径。有鉴于此，Google也不得不在BERT上对AR模型，做了一些有损逼格的妥协。。。囧
+
+![](/images/img5/T5.png)
+
+---
 
 参考：
 
@@ -288,19 +298,3 @@ https://mp.weixin.qq.com/s/kFABJJ3fBC48-4DXK8PERQ
 https://mp.weixin.qq.com/s/jlGfxkT_o9sgFlUuR_x5Tw
 
 微软开源用于学习通用语言嵌入的MT-DNN模型
-
-https://mp.weixin.qq.com/s/D68YzjYvpc2epGWFBP6rIQ
-
-谷歌实习生新算法提速惊人！BERT训练从三天三夜，缩短到一个小时
-
-https://mp.weixin.qq.com/s/iDGofh_ycWJzfqQriPEXGQ
-
-如何用Python和BERT做中文文本二元分类？
-
-https://zhuanlan.zhihu.com/p/91052495
-
-当BERT遇上知识图谱
-
-https://mp.weixin.qq.com/s/wQW-JT-sGMj60OtXwTssyQ
-
-BERT模型推理加速总结

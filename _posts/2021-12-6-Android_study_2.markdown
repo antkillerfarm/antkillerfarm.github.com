@@ -340,3 +340,21 @@ https://mp.weixin.qq.com/s/GZkGfwrfMTzrMfki8LKbIw
 https://mp.weixin.qq.com/s/KEu6qCl-En6HiKGo2pgEQg
 
 TensorBay：一款易用的像Git一样数据版本管理工具！
+
+# BERT进阶++++
+
+https://mp.weixin.qq.com/s/D68YzjYvpc2epGWFBP6rIQ
+
+谷歌实习生新算法提速惊人！BERT训练从三天三夜，缩短到一个小时
+
+https://mp.weixin.qq.com/s/iDGofh_ycWJzfqQriPEXGQ
+
+如何用Python和BERT做中文文本二元分类？
+
+https://zhuanlan.zhihu.com/p/91052495
+
+当BERT遇上知识图谱
+
+https://mp.weixin.qq.com/s/wQW-JT-sGMj60OtXwTssyQ
+
+BERT模型推理加速总结

@@ -9,6 +9,38 @@ category: CV
 
 # 图像变换
 
+https://mp.weixin.qq.com/s/HinUtoYNq_e8HYBqPKozsQ
+
+GAN：艺术家眼里生成作品的创作利器
+
+https://mp.weixin.qq.com/s/Cyy4FgVZyVN-4KvG-9pHMA
+
+品质超高！超火的漫画线稿上色AI最新版来了
+
+https://mp.weixin.qq.com/s/lp769k6wsyh-991ACf5upw
+
+计算机也会ps图片：TL-GAN
+
+https://mp.weixin.qq.com/s/OmSb1dl9smyZt_uASOcofQ
+
+人人都是画家：朱俊彦&周博磊等人的GAN画笔帮你开启艺术生涯
+
+https://mp.weixin.qq.com/s/7xGtUHfk_FNpDTksLxKaHw
+
+杨超越的声音+高晓松的脸~如此酸爽的技术，你值得拥有！
+
+https://mp.weixin.qq.com/s/y9h6xkK9Keq4UrdpGJS-4Q
+
+这些假脸实在太逼真了！英伟达造出新一代GAN，生成壁纸级高清大图毫无破绽
+
+https://mp.weixin.qq.com/s/V4PN0L42iisRxQ6y4Hc8fw
+
+英伟达“AI假脸王”开源：新一代GAN攻破几乎所有人脸识别系统
+
+https://mp.weixin.qq.com/s/-3e5xhbz01FerZp8DcRV5g
+
+谷歌小姐姐搞出魔法画板：你随便画，补不齐算AI输
+
 https://mp.weixin.qq.com/s/M9r8m--Sd9kHxZrOEHbY7A
 
 视频直接变漫画！GAN又有了新玩法
@@ -88,10 +120,6 @@ https://mp.weixin.qq.com/s/entoLCunjKY7PYWI8-aAgg
 https://mp.weixin.qq.com/s/uhbKu69K6N-pxFZCRwAz1g
 
 秒变“女装大佬”！Snapchat推出性别转换滤镜，离线实时渲染
-
-https://mp.weixin.qq.com/s/H2nqQi2EVQ_EyeDNCRD3Cg
-
-一文回顾AI绘画的成长之路：从简笔画到真实人脸生成
 
 https://mp.weixin.qq.com/s/ttdr14ryy6C-Fcm06kC7pQ
 
@@ -257,25 +285,13 @@ https://mp.weixin.qq.com/s/gg0a4PVdWpVJNZhuAEXvaA
 
 赛博仓颉，在线造字！Stable Diffusion：没人比我更懂汉字
 
-https://www.zhihu.com/question/583294094
-
-Ai绘画半年了，到目前为止，AI绘画让多少画师失业了？未来又会有多少?
-
-https://www.zhihu.com/question/584139316
-
-AI绘画引入ControlNet，将会带来哪些影响？
-
-https://www.zhihu.com/question/584053473
-
-如何评价2023年2月AI绘画的最新水平？
-
-https://mp.weixin.qq.com/s/HpziNAqHY9Oetsgk2AVxEg
-
-ControlNet组合拳效果惊人，颠覆AI绘画游戏规则
-
 https://mp.weixin.qq.com/s/iqYZ5CpMzreHZgwIZUvvoQ
 
 爆火情侣竟不是真人！新版Midjourney效果炸裂
+
+https://mp.weixin.qq.com/s/up5n6ZUP6SmSfRNpRX37qQ
+
+一句话拍大片，导演末日来了！Gen-2震撼发布，科幻日系二次元统统拿捏
 
 # 俄乌战争=++
 
@@ -290,18 +306,6 @@ https://mp.weixin.qq.com/s/iqYZ5CpMzreHZgwIZUvvoQ
 ---
 
 当欧美限价60美元后，像印度之类阴诈至极的“伙伴”，又趁机再度索要折扣，把油价打压到仅仅维持俄罗斯石油公司成本运作平衡的40多美元。
-
----
-
-俄军现在已经分化出了各个山头，西部军区，中部军区，瓦格纳，车臣，顿涅茨克卢甘斯克，皇俄志愿兵都是山头，各有各的指挥。听不听军令看心情，出事就推锅。颇有功德林遗风。
-
----
-
-乌克兰国防事务和国家安全委员会主席阿列克谢•丹尼洛夫的年迈母亲，住在被乌克兰政府封锁的卢甘斯克，靠俄罗斯发放的养老金生活。
-
-https://mp.weixin.qq.com/s/nIX05VS_lJqMHaGhGDxZeg
-
-大义灭亲？乌克兰高官给89岁母亲留下一张纸条，上面写着“滚出乌克兰！”
 
 ---
 

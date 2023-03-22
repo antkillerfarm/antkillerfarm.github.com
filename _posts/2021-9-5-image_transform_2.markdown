@@ -67,7 +67,33 @@ https://zhuanlan.zhihu.com/p/567654308
 
 神经渲染的进展综述
 
-## LoRA
+## AIGC
+
+《A Comprehensive Survey of AI-Generated Content (AIGC): A History of Generative AI from GAN to ChatGPT》
+
+《ChatGPT is not all you need. A State of the Art Review of large Generative AI models》
+
+---
+
+ChatGPT（文本到文本的对话模型）
+
+DALL-E-2（文本到图像的生成模型）
+
+Codex（文本到代码的生成模型）
+
+Dreamfusion （文本到3D图像）
+
+Flamingo（图像到文本）
+
+Phenaki（文本到视频）
+
+AudioLM（文本到音频）
+
+Galactica（文本到科学文本）
+
+AlphaTensor（自动搜索高性能的矩阵运算逻辑）
+
+---
 
 LoRA: Low-Rank Adaptation of Large Language Models是微软研究院引入的一项新技术，主要用于处理大模型微调的问题。
 
@@ -82,6 +108,32 @@ https://huggingface.co/datasets/HuggingFace-CN-community/translation/blob/main/l
 https://civitai.com/
 
 一个AI艺术的网站
+
+---
+
+https://mp.weixin.qq.com/s/H2nqQi2EVQ_EyeDNCRD3Cg
+
+一文回顾AI绘画的成长之路：从简笔画到真实人脸生成
+
+https://www.zhihu.com/question/583294094
+
+Ai绘画半年了，到目前为止，AI绘画让多少画师失业了？未来又会有多少?
+
+https://www.zhihu.com/question/584139316
+
+AI绘画引入ControlNet，将会带来哪些影响？
+
+https://www.zhihu.com/question/584053473
+
+如何评价2023年2月AI绘画的最新水平？
+
+https://mp.weixin.qq.com/s/HpziNAqHY9Oetsgk2AVxEg
+
+ControlNet组合拳效果惊人，颠覆AI绘画游戏规则
+
+https://zhuanlan.zhihu.com/p/615522634
+
+AIGC的一些记录
 
 ## 参考
 
@@ -316,35 +368,3 @@ https://mp.weixin.qq.com/s/9LvP3AH1PJhjrokTGg3blA
 https://mp.weixin.qq.com/s/cBTnX1lNHJhCMDX926aujA
 
 想怎么GAN就怎么GAN，一键拯救发际线
-
-https://mp.weixin.qq.com/s/HinUtoYNq_e8HYBqPKozsQ
-
-GAN：艺术家眼里生成作品的创作利器
-
-https://mp.weixin.qq.com/s/Cyy4FgVZyVN-4KvG-9pHMA
-
-品质超高！超火的漫画线稿上色AI最新版来了
-
-https://mp.weixin.qq.com/s/lp769k6wsyh-991ACf5upw
-
-计算机也会ps图片：TL-GAN
-
-https://mp.weixin.qq.com/s/OmSb1dl9smyZt_uASOcofQ
-
-人人都是画家：朱俊彦&周博磊等人的GAN画笔帮你开启艺术生涯
-
-https://mp.weixin.qq.com/s/7xGtUHfk_FNpDTksLxKaHw
-
-杨超越的声音+高晓松的脸~如此酸爽的技术，你值得拥有！
-
-https://mp.weixin.qq.com/s/y9h6xkK9Keq4UrdpGJS-4Q
-
-这些假脸实在太逼真了！英伟达造出新一代GAN，生成壁纸级高清大图毫无破绽
-
-https://mp.weixin.qq.com/s/V4PN0L42iisRxQ6y4Hc8fw
-
-英伟达“AI假脸王”开源：新一代GAN攻破几乎所有人脸识别系统
-
-https://mp.weixin.qq.com/s/-3e5xhbz01FerZp8DcRV5g
-
-谷歌小姐姐搞出魔法画板：你随便画，补不齐算AI输
