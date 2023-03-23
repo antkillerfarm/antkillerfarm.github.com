@@ -179,6 +179,24 @@ TAMER（Training an Agent Manually via Evaluative Reinforcement，评估式强�
 
 利用强化学习在大模型中注入人类的经验，所谓的Reinforcement Learning from Human Feedback(RLHF)，Policy Network输出的多样性及Reward的学习是ChatGPT成功的关键。
 
+---
+
+基座预训练（Base pretrain）
+
+SFT微调（Supervised Fine-Tuning）
+
+奖励函数训练（Reward Modeling, RM），最常用的是基于排序的奖励函数建模（Ranking-Based Reward Modeling，RBRM）
+
+基于人类反馈的强化学习（RLHF，基于RM/RBRM进行PPO强化学习训练）
+
+与人类对齐（Align AI with human values）
+
+https://zhuanlan.zhihu.com/p/614987279
+
+ChatGPT的训练过程术语整理
+
+---
+
 模型数据集可分为六类，分别是：维基百科、书籍、期刊、Reddit链接、Common Crawl和其他数据集。
 
 ![](/images/img5/huge_data.jpg)

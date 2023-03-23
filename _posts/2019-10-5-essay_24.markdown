@@ -109,9 +109,19 @@ https://www.163.com/dy/article/HJ964Q7F05533SBL.html
 
 ---
 
-![](/images/img5/Ukraine.jpg)
+不久之前，乌克兰搞了一个“俄军最新型坦克性能新闻发布会”。
 
-援助乌克兰的榜一大哥，原来一直是俄罗斯，美国其实只能屈尊第二。
+乌克兰人指出T-90M的V-92S2F发动机是T-34坦克V-2发动机的后代（有意思的是后者又是德国人1930年技术的传承者）。
+
+在拆解T-90M后乌克兰军方发现，除了火控设备上的俄文铭牌是俄罗斯自产的意外，几乎全部原件都是购自国外，而且绝大部分来自欧洲国家，比如德国和法国。
+
+乌克兰人表示在缴获T-90M之前，他们一直困惑与俄军装甲兵声称的“通讯问题”，即数辆坦克之间无法完成有效的通讯协作。在21世纪的现代战争中，这几乎是无法想象的。在深入研究T-90M之后，他们发现了原因——通讯电台的电子零件不仅是商用级别的，更是裸露在外部的。在夏季作战时，封闭的坦克内部湿度较大，湿气在电子设备上凝结，导致这些“1970年代样式”的电子零件出现各种问题。
+
+毛子拉出来的还有T-54早期型，没有炮口抽烟装置，这玩意可比老59还古老……没有火炮稳定装置，没有夜视仪（54B有红外大灯），电台也是50年代的电台，驾驶员都没辅助转向，甚至连电瓶电量指示表都没有。只能打铁坨穿甲弹和早期钢针。59式好歹还是T-54A呢……
+
+https://zhuanlan.zhihu.com/p/616249661
+
+从T-90M到T-54，俄罗斯装甲部队的退化史
 
 ---
 
@@ -178,55 +188,3 @@ https://news.ifeng.com/c/8FMpNxpSHjc
 https://news.ifeng.com/c/8Fsc6DZP5g5
 
 俄罗斯乌克兰的大决战终于打响了
-
-https://news.ifeng.com/c/8G653CGmggn
-
-双线在决战，这两点决定俄乌战场输赢
-
-https://news.ifeng.com/c/8GKljOt9z6z
-
-俄军只用“一只手”打乌克兰，自信还是动不了？
-
-https://news.ifeng.com/c/8GRIdyw3Bn2
-
-5月决战初步战果，乌克兰陷入绝境？
-
-https://news.ifeng.com/c/8GdA8irm4wu
-
-俄乌战争啥时候结束？美欧想法高度一致
-
-https://news.ifeng.com/c/8JWGnIAc1x8
-
-俄乌交战200天 俄军曾有4次机会取胜
-
-https://news.ifeng.com/c/8JY3zMpfAVx
-
-俄军火炮猛射2个月，炮弹库存还能撑多久？
-
-https://news.ifeng.com/c/8Jcv9bjeSPV
-
-为什么乌克兰要过上三月才能反攻？
-
-https://news.ifeng.com/c/8KivcEeZ16O
-
-“冬将军”曾击败拿破仑，现在轮到俄罗斯了？
-
-https://news.ifeng.com/c/8Kph5NYlxxB
-
-果然！俄军退出赫尔松，苏罗维金一战封神？
-
-https://news.ifeng.com/c/8McreoQx3df
-
-打不赢就闹革命，俄罗斯又要陷入这个历史循环？
-
-https://news.ifeng.com/c/8Mwi4IFyf1B
-
-“普京名言”的真正主人，给俄罗斯挖了多大坑？
-
-https://news.ifeng.com/c/8N1kCsAAdaa
-
-为了“500年终极梦想”，俄国付出了什么代价？
-
-https://news.ifeng.com/c/8NK6iq9Smvn
-
-前所未有的财政大危机，俄罗斯准备无条件谈判

@@ -244,3 +244,25 @@ https://mp.weixin.qq.com/s/3djAWJs6ecDdPSpQMxqmrg
 https://mp.weixin.qq.com/s/__qC6Wzy4jaGNGzWr3eOIg
 
 引入额外门控运算，LSTM稍做修改，性能便堪比Transformer-XL
+
+# 俄乌战争==++++
+
+https://zhuanlan.zhihu.com/p/611595424
+
+权力斗争、炮弹短缺——瓦格纳-国防部的较量与俄罗斯的战争潜力
+
+https://zhuanlan.zhihu.com/p/608784859
+
+俄雇佣兵的子弹，没用来打乌军，瓦格纳把俄军大将，画在了靶子上
+
+https://zhuanlan.zhihu.com/p/538532137
+
+为了真正的信仰——战斗在乌克兰的国际军团
+
+https://zhuanlan.zhihu.com/p/615070298
+
+危险的攻势——乌克兰军队可能面临缺乏老兵的困境
+
+https://zhuanlan.zhihu.com/p/615630800
+
+恐惧蔓延——俄罗斯国防部将莫斯科划为防空作战区

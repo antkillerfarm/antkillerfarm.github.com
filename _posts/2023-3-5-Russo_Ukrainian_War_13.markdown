@@ -172,3 +172,7 @@ https://www.163.com/dy/article/HRQNAORK0556124L.html
 https://news.ifeng.com/c/8NeAMFsDLW0
 
 300亿美元挡住俄军，乌克兰效率是俄罗斯5倍
+
+https://news.ifeng.com/c/8NYovNxIL83
+
+俄罗斯收入腰斩，一年赤字8万亿

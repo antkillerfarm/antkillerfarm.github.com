@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NVIDIA, AMD, Shader
+title:  NVIDIA, AMD
 category: Chip 
 ---
 
@@ -302,6 +302,12 @@ https://zhuanlan.zhihu.com/p/565897763
 
 GPGPU编程模型之CUDA
 
+## cuLitho
+
+光刻是芯片制造过程中最复杂、最昂贵、最关键的环节，其成本约占整个硅片加工成本的1/3甚至更多。计算光刻模拟了光通过光学元件并与光刻胶相互作用时的行为，应用逆物理算法来预测掩膜板上的图案，以便在晶圆上生成最终图案。
+
+“计算光刻是芯片设计和制造领域中最大的计算工作负载，每年消耗数百亿CPU小时。”黄仁勋讲解道，“大型数据中心24x7全天候运行，以便创建用于光刻系统的掩膜板。这些数据中心是芯片制造商每年投资近2000亿美元的资本支出的一部分。”而cuLitho能够将计算光刻的速度提高到原来的40倍。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/cGKtvtZzR--sGL4oNSZfAw
@@ -371,41 +377,3 @@ https://github.com/facebookincubator/AITemplate
 https://www.zhihu.com/question/557608132
 
 如何看待Meta发布的全新推理引擎AITemplate？
-
-# Shader
-
-基于OpenGL的OpenGL Shading Language，简称GLSL;
-
-基于DirectX的High Level Shading Language，简称HLSL;
-
-NVIDIA公司的C for Graphic，简称Cg。
-
-除此之外，一些框架也有自己的SL，例如Unity-Shader。
-
-https://zhuanlan.zhihu.com/p/47433678
-
-三大Shader编程语言（CG/HLSL/GLSL）
-
-https://zhuanlan.zhihu.com/p/25024372
-
-跨平台shader编译的过去、现在和未来
-
-http://tieba.baidu.com/p/2155772860
-
-GPU和Shader技术的基础知识
-
-http://www.jianshu.com/p/8687a040eb48
-
-GPU处理图像Shader的入门
-
-https://zhuanlan.zhihu.com/p/25595069
-
-卡通渲染（上）：致从没看懂过着色器代码的你
-
-https://zhuanlan.zhihu.com/p/25939794
-
-卡通渲染（下）
-
-https://zhuanlan.zhihu.com/p/544879511
-
-GPU底层机制分析：显存分配开销
