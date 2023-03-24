@@ -270,3 +270,7 @@ https://zhuanlan.zhihu.com/p/615630800
 https://zhuanlan.zhihu.com/p/616389334
 
 侵略战争的附带伤害：俄罗斯边境城市面临水污染问题
+
+https://zhuanlan.zhihu.com/p/616547047
+
+马里乌波尔的居民开始被赶出普京访问过的房屋

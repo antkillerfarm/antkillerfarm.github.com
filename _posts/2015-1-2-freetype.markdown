@@ -210,3 +210,21 @@ AE：全名After Effects，方向于PR相似，但AE在特效制作上，效果�
 ---
 
 Linux平台的绘图软件还有KolourPaint、mtPaint、MyPaint。
+
+# CPU+
+
+https://www.zhihu.com/question/503287789
+
+当两个CPU核心要求读写同一内存地址时，其后果是未定义行为吗？
+
+https://mp.weixin.qq.com/s/Kake5sQm79L2j_uDqKfznQ
+
+在《我的世界》里从零打造一台计算机有多难？复旦本科生大神花费了一年心血
+
+https://www.zhihu.com/question/562917157
+
+为什么intel的7nm工艺的处理器没有像amd的那样积热那么严重?
+
+https://www.zhihu.com/question/552957041
+
+书上说代码地址总是从0x400000开始，但是查看编译好的elf头起始地址是从0开始的，这是为什么？
