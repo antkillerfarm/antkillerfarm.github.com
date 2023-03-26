@@ -170,17 +170,3 @@ https://www.zhihu.com/question/585793989
 https://zhuanlan.zhihu.com/p/608933859
 
 一号列车：拜登基辅之行的幕后花絮
-
----
-
-乌克兰前总检察长卢参科（Луценко），算是高干了吧。
-
-开战后马上就被征召入伍，在前线打了10个月的仗，其中最近4个月一直在巴赫穆特。近日刚被提拔成了上尉，战争结束之前也是继续卫国没有结束服役的期限。
-
-https://www.163.com/dy/article/HU9D6KIO0552CVMC.html
-
-乌前总检察长当无人机排长前线作战，俄高官儿子没一个上战场
-
-https://mp.weixin.qq.com/s/BZSPNVXJMUPYawB2d4v5eA
-
-战争中乌克兰的“寡头”们

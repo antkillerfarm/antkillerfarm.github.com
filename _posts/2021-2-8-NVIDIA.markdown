@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NVIDIA, AMD
+title:  NVIDIA
 category: Chip 
 ---
 
@@ -20,6 +20,12 @@ NVIDIA作为行业龙头，其影响力甚至在Khronos Group之上，它提出�
 https://www.zhihu.com/question/22407373
 
 英伟达(NVIDIA)创始人黄仁勋是一个什么样的人？
+
+---
+
+第一代NVIDIA显卡甚至都不是PC游戏用的显卡，它是世嘉土星的兼容卡，可以在PC上玩SS游戏。因为要和Sega的3D技术兼容，N卡一度偏离了行业主流，差点破产。
+
+一款叫《孤岛危机》，别称“显卡危机”的游戏于2007年诞生了，带来绝佳画面的同时，也“羞辱”了包括卡皇8800 Ultra在内的全部游戏GPU。当年主流分辨率尚且只是720P，但孤岛危机也需要3张8800 Ultra（总价在当年的北京可以买下2.5㎡房）SLI到一起，才能满足最高画质+4AA下，60帧流畅玩的需求。
 
 ---
 
@@ -333,47 +339,3 @@ NVIDIA GPU架构的变迁史
 https://jcf94.com/2020/05/24/2020-05-24-nvidia-arch/
 
 NVIDIA GPU架构演进
-
-# AMD
-
-## Matrix Core
-
-对标英伟达Tensor Core，AMD推出Matrix Core。
-
-## HIP
-
-![](/images/img4/latestGPU.png)
-
-HIP：Heterogeneous Interface for Portability。
-
-HIP是AMD提出的C++接口，号称能兼容CUDA和自家的ROCm。
-
-https://zhuanlan.zhihu.com/p/545296023
-
-写给CUDA开发者AMD ROCm & Intel oneAPI开发贴士
-
-## Composable Kernel
-
-Composable Kernel（CK）库旨在提供一套在AMD GPU上算子融合的后端方案。
-
-https://www.sohu.com/a/603796560_129720
-
-AMD Composable Kernel: 定制化算子融合，大幅提升AI端到端性能
-
-## AITemplate
-
-AITemplate首先在Python层寻找最优的kernel配置，生成Jinja2 template，再生成C++ template：
-
-- NVIDIA GPU：基于CUTLASS的GPU Tensor Core C++ template；
-
-- AMD GPU：基于CK（Composable Kernel）的Matrix Core C++ Template。
-
-官网：
-
-https://github.com/facebookincubator/AITemplate
-
-参考：
-
-https://www.zhihu.com/question/557608132
-
-如何看待Meta发布的全新推理引擎AITemplate？

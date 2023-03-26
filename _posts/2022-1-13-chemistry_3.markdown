@@ -302,27 +302,3 @@ https://zhuanlan.zhihu.com/p/24326554
 http://www.sohu.com/a/64190509_139533
 
 曾经象征食品工业繁荣的罐头，为何已经远离了你的生活
-
-https://mp.weixin.qq.com/s/GHgfNAkV7ttXfasGkM083A
-
-用算法改造过的植物肉，有兴趣试试么？
-
-https://www.zhihu.com/question/21171331
-
-火腿肠里真的有肉吗？
-
-https://mp.weixin.qq.com/s/pwWRC0ewE4GOxFAQ35pnZw
-
-掺假食品的泛滥
-
-https://www.zhihu.com/answer/925610213
-
-用铁做军粮罐头在战争期间是不是一种浪费？
-
-https://mp.weixin.qq.com/s/Lz8QRs7HkZbWFxLqf4h6OA
-
-塑料瓶、玻璃瓶、纸包装，什么饮料用什么包装有啥秘密吗？
-
-https://www.zhihu.com/answer/2876815175
-
-有哪些食物是因为制作失误才被发明出来的？（糖精）

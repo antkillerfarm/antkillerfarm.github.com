@@ -11,6 +11,20 @@ category: Russia
 
 ## 凡人列传（续）
 
+乌克兰前总检察长卢参科（Луценко），算是高干了吧。
+
+开战后马上就被征召入伍，在前线打了10个月的仗，其中最近4个月一直在巴赫穆特。近日刚被提拔成了上尉，战争结束之前也是继续卫国没有结束服役的期限。
+
+https://www.163.com/dy/article/HU9D6KIO0552CVMC.html
+
+乌前总检察长当无人机排长前线作战，俄高官儿子没一个上战场
+
+https://mp.weixin.qq.com/s/BZSPNVXJMUPYawB2d4v5eA
+
+战争中乌克兰的“寡头”们
+
+---
+
 ![](/images/img5/Slava_Ukraini.jpg)
 
 这是一个最标准的处决现场，和一段最标准的爱国电影剧情。挖好的尸坑，抽着上路烟的战俘，一个拿着手机拍摄的士兵，和至少一个拿着枪的行刑者。拿着手机的士兵试图通过摧毁战俘的意志来获得精神上的胜利，但这个战俘似乎并未让他得逞。
@@ -43,6 +57,10 @@ https://zhuanlan.zhihu.com/p/611916477
 
 ---
 
+Viktoriia Honcharuk，日托米尔人，2016年拿UGS奖学金的留学生，2022年在纽约入职摩根士利丹。对线开始之后，放弃60万美金的年薪，毅然回国加入乌萝医疗团队。
+
+---
+
 https://mp.weixin.qq.com/s/PUqFEBUN6OaGZjB-ojrMRg
 
 一个乌克兰女性的伤痛与纪念
@@ -70,6 +88,10 @@ https://zhuanlan.zhihu.com/p/546980660
 https://zhuanlan.zhihu.com/p/613419718
 
 荣耀背后的阴影——乌克兰士兵心理问题调查
+
+https://zhuanlan.zhihu.com/p/617040010
+
+“我工作，然后我哭泣”：巴赫穆特附近疲惫不堪的乌克兰医务人员为生命而战
 
 ## 哈尔科夫战役
 

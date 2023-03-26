@@ -199,6 +199,30 @@ T72真的很不堪吗？
 
 ## 食品工业（续）
 
+https://mp.weixin.qq.com/s/GHgfNAkV7ttXfasGkM083A
+
+用算法改造过的植物肉，有兴趣试试么？
+
+https://www.zhihu.com/question/21171331
+
+火腿肠里真的有肉吗？
+
+https://mp.weixin.qq.com/s/pwWRC0ewE4GOxFAQ35pnZw
+
+掺假食品的泛滥
+
+https://www.zhihu.com/answer/925610213
+
+用铁做军粮罐头在战争期间是不是一种浪费？
+
+https://mp.weixin.qq.com/s/Lz8QRs7HkZbWFxLqf4h6OA
+
+塑料瓶、玻璃瓶、纸包装，什么饮料用什么包装有啥秘密吗？
+
+https://www.zhihu.com/answer/2876815175
+
+有哪些食物是因为制作失误才被发明出来的？（糖精）
+
 https://www.zhihu.com/question/510151356
 
 皮蛋制作过程中用到氢氧化钠，通过渗入蛋壳气孔与其中蛋白质反应凝固，那么可以用其他碱性物替代吗？
@@ -306,25 +330,3 @@ https://www.zhihu.com/question/545480673
 https://mp.weixin.qq.com/s/2HNEJVZHcsDkpC87sTHwDw
 
 沙特要花1万亿美元建世界最大建筑，造型看着像长城
-
-# 生物++
-
-https://mp.weixin.qq.com/s/KuQlVs7UBQVOvqk-FUycDg
-
-真的假的？
-
-https://mp.weixin.qq.com/s/0BhKyUEjAC9IMDc2pg8kwA
-
-看到电影《美人鱼》末尾主角游来游去，我想，这不是水蛛的水泡嘛
-
-https://mp.weixin.qq.com/s/Rxinin1xmZCEgKDiFzuESw
-
-有些小可怜啊，还没准备好就被爹娘赶出了家
-
-https://mp.weixin.qq.com/s/iz0KD_CQE6dPexjktpgPng
-
-我很高，可是我很......（长颈鹿）
-
-https://mp.weixin.qq.com/s/76umxXX-YXyIPJH5n_Z-cQ
-
-科学家上！保护我方新疆棉花！

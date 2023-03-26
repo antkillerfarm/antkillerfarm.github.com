@@ -394,3 +394,29 @@ https://github.com/tensorflow/models/tree/master/research/a3c_blogpost
 https://mp.weixin.qq.com/s/atQHJ5U2pJpSG6PguN7J4Q
 
 如何保持运动小车上的旗杆屹立不倒？TensorFlow利用A3C算法训练智能体玩CartPole游戏
+
+# 朝鲜+
+
+今臣战船尚有十二，出死力拒战，则犹可为也。
+
+---
+
+李承晚匪帮麾下的池青天、李范奭、宋虎声、金弘壹，都曾在中国大陆参与抗战。但由于李承晚的支持，韩国军方逐渐被伪军系军官把持。
+
+---
+
+https://zhuanlan.zhihu.com/p/28517736
+
+百货大楼20秒塌为平地，贪得无厌导致1500人遭活埋（韩国三丰百货店倒塌灾难）
+
+https://www.zhihu.com/question/291798701
+
+朝鲜人的实际生活是什么样子的？
+
+https://zhuanlan.zhihu.com/p/444286151
+
+世界卷王--从两个数据看韩国的现状
+
+https://mp.weixin.qq.com/s/Z_OrKMIDGbcvbdqscCKtSA
+
+韩国“梨泰院事件”：“没人必须承担责任，所以无人负责”

@@ -247,6 +247,42 @@ https://mp.weixin.qq.com/s/__qC6Wzy4jaGNGzWr3eOIg
 
 # 俄乌战争==++++
 
+https://zhuanlan.zhihu.com/p/592954024
+
+“我们正在书写改变战争的大故事”——乌克兰军队是如何通过程序员来获得战场优势的
+
+https://www.zhihu.com/question/573879232
+
+如何评价当地时间12月22日，据塔斯社报道，俄罗斯库兹涅佐夫号航空母舰发生了火灾，没有人员伤亡?
+
+https://zhuanlan.zhihu.com/p/507119007
+
+乌克兰内阁组成人员简历 看看他们是不是有双重国籍？
+
+https://www.zhihu.com/answer/2837159962
+
+如果你是泽连斯基，你如何避免爆发战争？
+
+https://zhuanlan.zhihu.com/p/598377462
+
+余波——俄乌战争对叙利亚局势的影响
+
+https://zhuanlan.zhihu.com/p/603470366
+
+俄乌战争之情报战：一名乌克兰间谍被神秘杀害的来龙去脉
+
+https://zhuanlan.zhihu.com/p/603690330
+
+耗尽的遗产——俄罗斯坦克在俄乌战争中的改装
+
+https://zhuanlan.zhihu.com/p/609421277
+
+坦克没有过时、无人机主宰天空——俄乌战争的18个经验和教训
+
+https://www.zhihu.com/question/586911709
+
+俄军预警机A50疑似遇袭，大家如何看待此事？
+
 https://zhuanlan.zhihu.com/p/611595424
 
 权力斗争、炮弹短缺——瓦格纳-国防部的较量与俄罗斯的战争潜力
