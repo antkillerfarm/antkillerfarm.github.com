@@ -61,6 +61,8 @@ https://www.zhihu.com/question/30113326
 
 又是5年没玩RimWorld，现在已经出了正式版和3个DLC。没空追最新的，用《皇权》DLC又玩了一把，感觉不错。
 
+Songs of syx
+
 https://www.zhihu.com/question/589761499
 
 COLONY SIM游戏列表
