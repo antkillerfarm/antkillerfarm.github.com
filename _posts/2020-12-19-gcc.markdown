@@ -214,6 +214,22 @@ https://mp.weixin.qq.com/s/y3c07Hk7g3P-rd0oDzszlA
 
 GDB底层实现原理
 
+## rr
+
+逆向调试，不是逆向工程的逆向，而是在debug的时候，需要退回到过去，比如还想再看看这个函数是如何计算的，但是又不想重新启动程序，或者重新复现。这里的退回到过去，就是逆向。
+
+gdb提供的reverse debugging比较原始，需要长时间使用才能熟练。rr: record, Replay就是一大杀器，它由 Mozilla开发。
+
+官网：
+
+https://rr-project.org/
+
+参考：
+
+https://zhuanlan.zhihu.com/p/364075104
+
+又一debug装逼技能：record, replay
+
 ## 白手起家
 
 - Stage0 部分
@@ -347,19 +363,3 @@ TableGen_Overview
 https://zhuanlan.zhihu.com/p/447728683
 
 TableGen Language Reference
-
-## 参考
-
-所谓的intrinsic function ，是属于编译器开洞魔法的范畴，这些函数的实现是直接写死在编译器的代码生成部分的，在最终得到的二进制里面不会存在这些函数的符号和实现。
-
-https://zhuanlan.zhihu.com/p/348365662
-
-C++标准库开洞史
-
-https://www.zhihu.com/question/569519423
-
-C++标准库中是否有需要依赖编译器魔法才能实现的功能？
-
-https://www.zhihu.com/question/582148351
-
-C/C++函数“必须声明但禁止定义”才能使用，函数地址也不存在，是什么神奇的操作？

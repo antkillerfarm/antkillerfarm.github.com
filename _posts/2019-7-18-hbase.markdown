@@ -251,20 +251,18 @@ https://www.zhihu.com/question/24890607
 
 两者在内存中的布局是完全相同的。
 
-到了TensorFlow，内存布局问题有了更进一步的抽象。TF将内存布局称为physical dimension，而将数组下标称为logical dimensions。
+到了TensorFlow，内存布局问题有了更进一步的抽象。TF将内存布局称为physical dimensions，而将数组下标称为logical dimensions。
 
 定义如下术语：
 
-- the most minor physical dimension (fastest varyingindex)
+- the most minor physical dimension (fastest varying index)
 - the last the most major (slowest varying index)
 
 使用minor_to_major的方式表示logical dimensions。
 
 例如：
 
-`f32[8,100,100,4]{3,0,2,1}`，其中`[8,100,100,4]`表示logical dimensions，`{3,0,2,1}`表示minor_to_major。
-
-则the most minor physical dimension为4。
+`f32[8,100,100,4]{3,0,2,1}`，其中`[8,100,100,4]`表示logical dimensions，`{3,0,2,1}`表示minor_to_major。则the most minor index为3，也就是the most minor physical dimension为4。
 
 # 线性代数库
 

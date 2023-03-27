@@ -299,3 +299,49 @@ https://mp.weixin.qq.com/s/_-z2d1GE_3FElzAwPyJZ8A
 https://mp.weixin.qq.com/s/gWdeevVYctxjDDw9SOWe_Q
 
 PyTorch深度学习技术生态
+
+# LLVM+
+
+## 参考
+
+所谓的intrinsic function ，是属于编译器开洞魔法的范畴，这些函数的实现是直接写死在编译器的代码生成部分的，在最终得到的二进制里面不会存在这些函数的符号和实现。
+
+https://zhuanlan.zhihu.com/p/348365662
+
+C++标准库开洞史
+
+https://www.zhihu.com/question/569519423
+
+C++标准库中是否有需要依赖编译器魔法才能实现的功能？
+
+https://www.zhihu.com/question/582148351
+
+C/C++函数“必须声明但禁止定义”才能使用，函数地址也不存在，是什么神奇的操作？
+
+https://mp.weixin.qq.com/s/FSlJKnC0y51nsLDp1B3tXg
+
+Swift编译器Crash—Segmentation fault解决方案
+
+https://zhuanlan.zhihu.com/p/392381317
+
+LLVM IR的第一个Pass：上手官方文档Hello Pass
+
+https://csstormq.github.io/
+
+一个LLVM、TVM、NEON的专栏
+
+https://www.zhihu.com/question/484069566
+
+LLVM怎么表达硬件相关的特性?
+
+https://mp.weixin.qq.com/s/-IjJJG5huL6p3KjhO70s7Q
+
+编译器中的图论算法
+
+https://zhuanlan.zhihu.com/p/140462815
+
+LLVM基本概念入门
+
+https://zhuanlan.zhihu.com/p/141265959
+
+有关于TableGen的简单介绍
