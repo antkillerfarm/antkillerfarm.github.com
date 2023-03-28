@@ -51,6 +51,10 @@ OpenAI的GPT 3的规模为175B，Google的LaMDA规模为137B，PaLM的规模为5
 
 国内这一堆利润导向的“AI研究”公司，阿里的达摩院甚至还闹出过自负盈亏这种笑话，让这些公司花费大量时间和金钱去做预训练语料库，估计比让恒大还清债务还难。
 
+Q：微软调度了1万张卡给OpenAI做训练，商汤的反馈是我们国内最多也就调动2000张卡，这个技术有难度吗？
+
+A：我目前了解到这一块国内目前没有哪个达到1万张量级的，不可能的，现在没有水平。现在的确从百度视角来看，现在几千张卡在测试就不错了。从技术积累来说，涉及到集群做调度还是有一些协同性的难度。我认为包括商汤、百度，离微软的差距还是短时间内无法追上的。
+
 参考：
 
 https://www.zhihu.com/question/584132646
@@ -270,31 +274,3 @@ NLP中各种各样的编码器
 https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
 
 预训练BERT，官方代码发布前他们是这样用TensorFlow解决的
-
-https://mp.weixin.qq.com/s/vFdm-UHns7Nhbmdoiu6jWg
-
-谷歌终于开源BERT代码：3亿参数量，机器之心全面解读
-
-https://zhuanlan.zhihu.com/p/58425003
-
-从Word2Vec到Bert，聊聊词向量的前世今生（一）
-
-https://mp.weixin.qq.com/s/SfMIKfF_B4agFCHN_U_mzQ
-
-BAM！利用知识蒸馏和多任务学习构建的通用语言模型
-
-https://mp.weixin.qq.com/s/6G5Mu7-1omGtQ_9Gt9lUBw
-
-基于预训练自然语言生成的文本摘要方法
-
-https://mp.weixin.qq.com/s/yysnPauB22YgprpOi1ZWSQ
-
-深入理解BERT Transformer，不仅仅是注意力机制
-
-https://mp.weixin.qq.com/s/kFABJJ3fBC48-4DXK8PERQ
-
-10大任务超越BERT，微软提出多任务深度神经网络MT-DNN
-
-https://mp.weixin.qq.com/s/jlGfxkT_o9sgFlUuR_x5Tw
-
-微软开源用于学习通用语言嵌入的MT-DNN模型

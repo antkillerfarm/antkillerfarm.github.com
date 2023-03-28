@@ -315,3 +315,7 @@ https://zhuanlan.zhihu.com/p/588485490
 https://www.zhihu.com/question/569170123
 
 一个人能在一个省份只经过一次的情况下把大陆31个省会城市自驾游一遍吗？
+
+https://www.zhihu.com/question/592101172
+
+如何看待“韦神”出的数学题初二生给出标准答案？

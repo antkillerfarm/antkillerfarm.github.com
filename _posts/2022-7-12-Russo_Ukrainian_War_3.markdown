@@ -69,6 +69,8 @@ https://mp.weixin.qq.com/s/ommR-5zMvYvFiGodVZxBLw
 
 而根据顿巴斯营突围途中抓获的战俘的叙述，底层的俄军士兵甚至根本就不知道什么“人道主义绿色走廊”。。。
 
+伊洛瓦斯克罪魁祸首之一的德米特里·莱西茨基 (Dmitry Lissitzky)于2023年被乌萝清算。
+
 https://zhuanlan.zhihu.com/p/59170352
 
 普京承诺为被围乌军开辟人道走廊，撤退路上俄军伏兵四出屠杀千人

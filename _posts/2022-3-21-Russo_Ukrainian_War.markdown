@@ -75,6 +75,10 @@ https://www.understandingwar.org/
 
 ISW（The Institute for the Study of War）
 
+https://liveuamap.com/
+
+另一个消息来源
+
 https://www.oryxspioenkop.com/2022/02/attack-on-europe-documenting-equipment.html
 
 这是荷兰的一家网站，提供了收集到的所有俄罗斯战损的信息。
@@ -158,6 +162,10 @@ https://www.zhihu.com/answer/2496149307
 https://zhuanlan.zhihu.com/p/586805623
 
 京子的剧组
+
+https://zhuanlan.zhihu.com/p/617526848
+
+鹅的花式整活
 
 ---
 
