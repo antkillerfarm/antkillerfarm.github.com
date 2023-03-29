@@ -341,43 +341,7 @@ https://mp.weixin.qq.com/s/KEu6qCl-En6HiKGo2pgEQg
 
 TensorBay：一款易用的像Git一样数据版本管理工具！
 
-# BERT进阶++++
-
-https://mp.weixin.qq.com/s/vFdm-UHns7Nhbmdoiu6jWg
-
-谷歌终于开源BERT代码：3亿参数量，机器之心全面解读
-
-https://zhuanlan.zhihu.com/p/58425003
-
-从Word2Vec到Bert，聊聊词向量的前世今生（一）
-
-https://mp.weixin.qq.com/s/SfMIKfF_B4agFCHN_U_mzQ
-
-BAM！利用知识蒸馏和多任务学习构建的通用语言模型
-
-https://mp.weixin.qq.com/s/6G5Mu7-1omGtQ_9Gt9lUBw
-
-基于预训练自然语言生成的文本摘要方法
-
-https://mp.weixin.qq.com/s/yysnPauB22YgprpOi1ZWSQ
-
-深入理解BERT Transformer，不仅仅是注意力机制
-
-https://mp.weixin.qq.com/s/kFABJJ3fBC48-4DXK8PERQ
-
-10大任务超越BERT，微软提出多任务深度神经网络MT-DNN
-
-https://mp.weixin.qq.com/s/jlGfxkT_o9sgFlUuR_x5Tw
-
-微软开源用于学习通用语言嵌入的MT-DNN模型
-
-https://mp.weixin.qq.com/s/D68YzjYvpc2epGWFBP6rIQ
-
-谷歌实习生新算法提速惊人！BERT训练从三天三夜，缩短到一个小时
-
-https://mp.weixin.qq.com/s/iDGofh_ycWJzfqQriPEXGQ
-
-如何用Python和BERT做中文文本二元分类？
+# BERT进阶+
 
 https://zhuanlan.zhihu.com/p/91052495
 

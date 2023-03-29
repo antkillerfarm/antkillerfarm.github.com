@@ -293,44 +293,6 @@ https://haosdent.gitbooks.io/tensorflow-document/content/resources/xla_prereleas
 
 XLA: The TensorFlow compiler framework
 
-# Polyhedral Model+++
-
-https://mp.weixin.qq.com/s/QEooKxP1sm5O90AUiqKQEQ
-
-Polyhedral Model—AI芯片软硬件优化利器（一）
-
-https://mp.weixin.qq.com/s/NRtud1UImE5ArZ2zQWFRyg
-
-Polyhedral Model—AI芯片软硬件优化利器（二）
-
-https://mp.weixin.qq.com/s/bLBIrJb82IsnyoXSEr2xtw
-
-Polyhedral Model—AI芯片软硬件优化利器（三）
-
-https://www.cnblogs.com/XianghuanHe/articles/15432300.html
-
-编译原理（龙书）第十一章 并行和局部优化学习笔记
-
-https://mp.weixin.qq.com/s/wjk2Mxhd2NDpH72l3rdqgQ
-
-多面体编译技术在软硬协同设计中的应用
-
-https://mp.weixin.qq.com/s/mBheJ9NG8khcLRshI40b2w
-
-AI编译关键技术 • 高层循环编译优化 - 不仅仅是分块和合并
-
-https://zhuanlan.zhihu.com/p/199683290
-
-Polyhedral编译调度算法(1)——Pluto算法
-
-https://zhuanlan.zhihu.com/p/232070003
-
-Polyhedral编译调度算法(2)——Feautrier算法
-
-https://zhuanlan.zhihu.com/p/259311866
-
-Polyhedral编译调度算法(3)——isl中的调度算法
-
 # TensorFlow参考+
 
 https://mp.weixin.qq.com/s/kEowgNPVS1nAGBPbzkatlQ

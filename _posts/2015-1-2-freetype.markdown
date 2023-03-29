@@ -209,6 +209,18 @@ AE：全名After Effects，方向于PR相似，但AE在特效制作上，效果�
 
 ---
 
+GIMP vs Adobe Photoshop
+
+Inkscape vs Adobe Illustrator
+
+Pencil2D vs Adobe Animate
+
+Krita vs Clip Studio Paint
+
+Kdenlive vs Adobe Premiere
+
+---
+
 Linux平台的绘图软件还有KolourPaint、mtPaint、MyPaint。
 
 # CPU+

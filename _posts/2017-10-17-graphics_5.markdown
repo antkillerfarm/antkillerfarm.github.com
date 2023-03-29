@@ -236,3 +236,11 @@ RAW Data的取值范围取决于sensor的处理器位宽。比如12bit的范围�
 比如下图所示的RAW Data，由于取值主要集中于低值区间，因此看起来就是黑乎乎的一片，什么也看不出来。
 
 ![](/images/img2/ISP_1.png)
+
+---
+
+LibRaw是一个专门用于处理Raw Data的库。
+
+官网：
+
+https://www.libraw.org/

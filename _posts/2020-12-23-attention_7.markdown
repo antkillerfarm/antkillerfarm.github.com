@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（七）——BERT进阶
+title:  Attention（七）——BERT进阶（1）
 category: Attention 
 ---
 

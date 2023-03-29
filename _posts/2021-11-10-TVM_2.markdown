@@ -280,6 +280,8 @@ https://valgrind.org/
 
 它还有一个叫做QCacheGrind(KCacheGrind)的图形化性能分析工具。
 
+`sudo apt install valgrind kcachegrind`
+
 参考：
 
 https://zhuanlan.zhihu.com/p/111556601
