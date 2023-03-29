@@ -240,6 +240,12 @@ Profilo: Facebook开发Android性能剖析库，用于在线收集应用程序�
 
 打印文件/proc/{pid}/maps查看内存地址和文件的映射关系，可以得到函数在哪个文件里。
 
+---
+
+https://blog.csdn.net/anualday/article/details/51483993
+
+流量测试三个工具(iperf/netperf/Flowgrind)
+
 ## 黑盒测试
 
 Linux上主要有perf、gprof和valgrind三个性能分析工具。
