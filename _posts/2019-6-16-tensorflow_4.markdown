@@ -209,6 +209,24 @@ https://blog.csdn.net/u011331731/article/details/108354605
 
 ---
 
+LTTng是一个开源的trace框架。
+
+官网：
+
+https://lttng.org/
+
+LTTng有相关的工具，可以导出CTF（Chrome Trace Format）格式的数据。
+
+---
+
+minitrace可以直接生成CTF格式的数据。
+
+代码：
+
+https://github.com/hrydgard/minitrace
+
+---
+
 https://blog.csdn.net/zkbaba/article/details/106178542
 
 TensorFlow性能分析工具—TensorFlow Profiler

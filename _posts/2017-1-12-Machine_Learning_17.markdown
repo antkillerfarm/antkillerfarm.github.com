@@ -253,6 +253,14 @@ https://mp.weixin.qq.com/s/N-JtuayRYRrZ-_P67u7rvA
 
 ---
 
+新时代的印巴分治。。。囧
+
+https://zhuanlan.zhihu.com/p/617758344
+
+穆斯林尤萨夫将任苏格兰首席大臣！英国多个重要职位被印巴裔垄断
+
+---
+
 https://www.fmprc.gov.cn/ce/cepl/chn/hwly/t754262.htm
 
 伟大的国王卡齐米日三世

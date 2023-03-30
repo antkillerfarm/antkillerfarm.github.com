@@ -289,7 +289,9 @@ VTA: 开源AI芯片栈
 
 ## auto-scheduler
 
-TVM中的auto-scheduler，包括第一代的AutoTVM和第二代的Ansor。
+TVM中的auto-scheduler，包括第一代的AutoTVM、第二代的Ansor、第三代的MetaSchedule。
+
+《Tensor Program Optimization with Probabilistic Programs》
 
 https://mp.weixin.qq.com/s/YVIvdMznb3oatIXqD5a5_A
 
