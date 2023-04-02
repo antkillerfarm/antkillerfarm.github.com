@@ -51,7 +51,7 @@ When you attack us, you will see our faces, not our backs.
 
 Without gas or without you? – The answer is without you. Without electricity or without you? – Without you. Without water or without you? – Without you. Without food or without you? – Without you.
 
-我希望能有光，但情况非常困难，现在有时有光，有时没有光。最重要的是里面要有光。
+我希望能有光，但情况非常困难，现在有时有光，有时没有光。最重要的是（心）里面要有光。
 
 即使没有电，我们对自己的信仰之光也不会被熄灭。
 
@@ -247,8 +247,4 @@ https://www.zhihu.com/question/321165966
 
 ![](/images/img5/stamp.jpg)
 
-司马南语录：泽连斯基害怕了，哪有胆儿啊，一个演员，战争啊，你真打起仗来，泽连斯基这个胆儿，他不敢正视普京的眼睛，普京的眼睛，他不敢看。
-
-李建秋语录：现在泽连斯基如日中天，我都不敢叫他圣·泽连斯基了，应该叫泽圣。
-
-现在泽圣都不允许施泰因迈尔去朝见他了，施泰因迈尔再不忏悔，恐怕要被绝罚啊。
+这张邮票上的漫画来自于乌克兰基辅州被俄军炸毁的城镇波尔江卡。著名漫画大师——班克斯在前往波尔江卡的废墟的时候，在其中的一面墙上画下了这么一幅漫画，后来乌克兰邮政为了纪念战争爆发一周年，在2023年2月24正式发行了这一套邮票。

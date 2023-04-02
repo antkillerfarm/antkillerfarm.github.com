@@ -229,6 +229,10 @@ https://zhuanlan.zhihu.com/p/617905470
 
 Stable Diffussion显存不够用的拯救者插件
 
+https://www.zhihu.com/question/577079491
+
+stable diffusion的技术原理是什么？
+
 # Autoregressive Model
 
 AR vs AE的相关内容在《Attention（七）》中已有描述，这里不再赘述。

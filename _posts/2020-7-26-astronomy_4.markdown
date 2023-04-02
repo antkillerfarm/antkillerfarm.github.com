@@ -51,6 +51,20 @@ https://www.zhihu.com/question/558699932
 
 ---
 
+在航天飞机完蛋后，空射方案一度是最主流的低成本发射思路。其实从经济角度来看并不是很合算，因为大型运输机的速度不会超过音速，而火箭入轨至少要23倍音速，飞机能提供的速度增量太低了。白嫖高度带来的节约就更少了。真正有用的也就是减少了1万米以下这段的空气阻力，节约的燃料很有限。
+
+被寄予厚望的微软创始人投资的平流层发射系统，造一架史无前例的大飞机，运火箭到高空发射，下一步是开发专用航天飞机。
+
+结果SPACEX发明了垂直回收火箭，把桌子掀了。
+
+原本空射火箭还有最后一个优点，就是快速发射。一些军方的紧急任务只有飞机空射能满足，这也是为什么轨道科学很早就搞出了空射火箭。但是现在SPACEX两次任务的间隔只有几天，再也不是以前准备一枚火箭需要几个月的时代了。
+
+https://www.zhihu.com/question/592998807
+
+维珍轨道宣布将裁掉几乎全部员工，并停止运营，从商业角度如何看待企业此举？
+
+---
+
 https://mp.weixin.qq.com/s/sPTRKfuhEc0xx7GacomxkA
 
 霍尔效应推进器
@@ -266,35 +280,3 @@ https://mp.weixin.qq.com/s/iAHpr8ZmChCDWGuFxC9uQQ
 https://mp.weixin.qq.com/s/Y1xXt9yPYYHCBUtZJddkoQ
 
 核动力优势明显，天问一号为什么还要使用太阳能？
-
-https://mp.weixin.qq.com/s/5F4wORf1k2XDIMKzFZBTDw
-
-古人为了看火星，都是怎么做的？
-
-https://mp.weixin.qq.com/s/VMfL5iF3BJg9Xnu5zI3RAA
-
-NASA毅力号直播攻略来了！万字长文详解火星任务：直升机飞行测试、寻找生命迹象、开启往返火星第一步
-
-https://mp.weixin.qq.com/s/rv2ayzNS4OpFHFKyW0Papw
-
-火星陨石的地球“流浪记”
-
-https://mp.weixin.qq.com/s/rLcrrCQnB9gy6gMbFXTAkg
-
-火星上曾有过河流吗？
-
-https://mp.weixin.qq.com/s/5KR2vlOq5HuFLIJNl3Q3pw
-
-从“中国第一张火星近照”中猜到的：这张照片怎么拍的？
-
-https://mp.weixin.qq.com/s/5YK6qK-aUQ-_RuQVzaSH8w
-
-指南针在火星上能用吗？
-
-https://mp.weixin.qq.com/s/cht7uCrbhAttO1cmXRvcPw
-
-为什么“天问一号”必须进入环绕火星大椭圆轨道？
-
-https://mp.weixin.qq.com/s/LVVCA_WTd5PoAn_wHzlJjw
-
-耗资27亿美元，美国又一辆核动力火星车成功着陆，还带了一架直升机

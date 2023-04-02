@@ -9,11 +9,43 @@ category: Nature
 
 # 天文杂谈
 
-在目前的理论下，低于5倍地球质量的行星通常会是岩石行星，超过10倍地球质量的行星则会成为类海王星或气体行星。
+1990年发射的哈勃太空望远镜，由于一片镜片边缘磨薄了2.2mm，相机镜头misallignment, 最终导致发射后拍摄图像模糊。
 
----
+NASA的科学家开始没有意识到是望远镜的镜头质量问题，还在讨论是不是外太空就是模模糊糊的形态……
 
-第四宇宙速度（fourth cosmic velocity），是指在地球上发射的物体摆脱银河系引力束缚，飞出银河系所需的最小初始速度。但由于人们尚未知道银河系的准确大小与质量，因此只能粗略估算，其数值在525公里/秒以上。
+后来相机工程师发现了是由于一个镜片零件生产误差造成的问题，花了3年时间在太空修复了这个问题，避免了重新发射，为NASA节省了47亿美元。科学家终于能拍到清晰的太空图像了。
+
+另一个已于2020年退役的太空红外望远镜斯皮策空间望远镜（Spitzer Space Telescope）覆盖波长为3-180微米，但其镜面直径仅为0.85米，观测能力有限。
+
+20年代三大空间巡天望远镜——载人空间站工程巡天空间望远镜（Chinese Survey Space Telescope, 简称CSST，亦被称为Chinese Space Station Telescope）、欧洲航天局的欧几里得（Euclid）和美国航天局的罗曼太空望远镜（Roman Space Telescope）。
+
+https://mp.weixin.qq.com/s/Wcd_bv_bt-xv42UD40dDww
+
+深度传感进化史
+
+https://mp.weixin.qq.com/s/8vRFfFLdLWSPpTzHjUKegQ
+
+哈勃太空望远镜30岁生日快乐！我们看到的宇宙因你而不同
+
+https://www.zhihu.com/question/452589619
+
+中国空间站工程巡天望远镜和哈勃相比有什么优势和劣势？
+
+https://www.zhihu.com/question/363427886
+
+很多人说哈勃望远镜是锁眼卫星的民用版，那么锁眼调转过去观测宇宙能够达到哈勃的效果吗？
+
+https://zhuanlan.zhihu.com/p/36125534
+
+哈勃28周岁，但大家知道锁眼么？
+
+https://mp.weixin.qq.com/s/DFUMQ08Efr5iJJJlRthsOA
+
+这将是中国有史以来最昂贵、也最先进的望远镜（巡天空间望远镜）
+
+https://mp.weixin.qq.com/s/k1v-sDi0x1pRDZsHcDRTpA
+
+雄心勃勃，中国建造首个大型太空光学望远镜
 
 ---
 
@@ -32,16 +64,6 @@ https://mp.weixin.qq.com/s/0zlHeZsr_gVNoaufr_--Hw
 https://zhuanlan.zhihu.com/p/61467796
 
 抗日时期，中国人完成哪些不可能做到的壮举？
-
----
-
-当我们进入银河系时，会发现由于太阳系的旋转面（黄道平面）与银河系的平面并不一致，大约有60度的夹角。
-
-国际天文学联合会于1959年细化并定义了“银道坐标系（GCS，Galactic coordinate system）”。它它是以太阳为中心的球面坐标系，以银盘平面为赤道面。
-
-https://www.zhihu.com/question/526726624
-
-地球的公转方向是自西向东，这“西”和“东”是相对于谁的？怎么判断？换句话说，在茫茫宇宙中怎么分辨方向？
 
 ---
 

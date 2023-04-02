@@ -329,7 +329,7 @@ https://mp.weixin.qq.com/s/o129MwpGzx8tzjUCkz1npw
 
 使用CatBoost和NODE建模表格数据对比测试
 
-# 俄乌战争===
+# 俄乌战争=
 
 https://mp.weixin.qq.com/s/n4EMEdHNJuhrHwsCUE6m4A
 

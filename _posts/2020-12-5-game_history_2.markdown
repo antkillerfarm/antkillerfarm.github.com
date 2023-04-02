@@ -149,6 +149,14 @@ https://www.zhihu.com/question/26380205
 
 FC游戏《中国象棋》中，困难难度是真的在计算棋谱吗？
 
+https://zhuanlan.zhihu.com/p/43546104
+
+FC游戏画面到底加了什么特技？浅谈FC的图像显示技术
+
+https://www.zhihu.com/question/38528261
+
+KONAMI的《魂斗罗》（Contra）中角色为什么要“萝莉式屈腿俯卧”？
+
 ## PSP & Switch
 
 PSP大约是2008年左右，周围有同事购买。主要游戏有：《三国无双》、《怪物猎人》等。

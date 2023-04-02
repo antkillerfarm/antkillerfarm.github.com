@@ -81,6 +81,8 @@ VGPR：Vector general purpose register
 
 SGPR：Scalar general purpose register
 
+Two-Level Adaptive Branch Predictor
+
 ---
 
 参考：

@@ -9,6 +9,22 @@ category: DL acceleration
 
 # 并行 & 框架 & 优化
 
+https://mp.weixin.qq.com/s/nvuflLfOolidDDXJVe2DZA
+
+美团深度学习系统的工程实践
+
+https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
+
+TensorFlow分布式计算机制解读：以数据并行为重
+
+https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
+
+继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本
+
+https://mp.weixin.qq.com/s/kOCftzSbHe2mvDmlRp-ihA
+
+Jeff Dean：AI对计算机系统设计的影响
+
 https://mp.weixin.qq.com/s/XjNPaL6PC9LHX1PEGn5UZg
 
 微软实时AI系统“脑波计划”有多牛？看完秒懂！

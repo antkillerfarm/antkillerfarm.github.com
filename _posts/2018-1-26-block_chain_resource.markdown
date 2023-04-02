@@ -51,6 +51,14 @@ https://mp.weixin.qq.com/s/dFI5e4f2J7R7BHZrjtiWZg
 
 涉嫌职务侵占十万元！前比特大陆矿机芯片设计总监，神马矿机创始人杨作兴被捕
 
+---
+
+杨作兴2001年从清华大学核物理专业博士毕业后，先后进入了北京方舟科技、北京中星微电子、扬州稻源微电子、深圳君正时代等公司。
+
+经过一年调查，2020年底杨作兴在朋友圈宣布归来。2021年4月，比特大陆对杨作兴和比特微提起第三次诉讼。
+
+在杨作兴离开后，詹克团研发的芯片多次流片失败，一直到2019年，比特大陆的产品几乎没有迭代，比特微则在这期间陆续发布了神马M3（28nm）、M10（16nm）、M20（10nm）、M30（8nm）共4款产品，流片速度上远超比特大陆。
+
 ## 2021.4
 
 短短几个月的时间，狗币的价格上涨了一百倍，屎币的价格上涨了28万倍，创造了2021年的财富神话。
@@ -344,29 +352,3 @@ https://mp.weixin.qq.com/s/c9Ix4d8NqyOFlX75e6Gnsg
 https://mp.weixin.qq.com/s/K9zSNM2SKjC0BEqoYr2U5w
 
 比特币的数据版图
-
-https://mp.weixin.qq.com/s/m9KwANPIudVesoXjejnOJA
-
-火币袁煜明：区块链的本质、意义与商业体系设计
-
-iele虚拟机, plutus-marlowe智能合约语言，hydra分片，sidechain侧链, ourobros generic共识协议，kemadelia p2p网络
-
-https://mp.weixin.qq.com/s/Z2wz5jb7k4QVf0PNCd0THg
-
-Cocos王哲：讲解COCOS区块链游戏的发展之路！
-
-https://mp.weixin.qq.com/s/iKiU_QF5y4t1KMmr6WMctw
-
-一文看懂DGames（区块链游戏）的技术架构和业务逻辑！
-
-https://mp.weixin.qq.com/s/zyU0ANfBS_JrFLNylnErUw
-
-C# 200行代码实现区块链
-
-https://mp.weixin.qq.com/s/OUfDGYdgw6XKRgaUXmog1w
-
-区块链对供应链管理的五大意义
-
-https://mp.weixin.qq.com/s/k_mYbnchN2UF0kZ_2JD4Wg
-
-教你用C++搭建一条迷你区块链！

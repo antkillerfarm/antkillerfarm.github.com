@@ -111,6 +111,10 @@ https://mp.weixin.qq.com/s/APVu9agDJN4VJT8u18N1rQ
 
 移动应用中使用OpenGL生成转场特效
 
+https://zhuanlan.zhihu.com/p/22679966
+
+OpenGL实现贝塞尔曲线变幻屏保效果
+
 # GUI框架分析
 
 ## 综合型GUI框架

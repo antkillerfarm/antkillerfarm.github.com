@@ -78,6 +78,16 @@ C++并发编程（C++11到C++17）
 - 线程级并行。
 - 请求级并行。
 
+## Parallelism Bubble
+
+![](/images/img5/bubble.jpg)
+
+模型经过拆分后的上一个rank的stage需要长期持续处于空闲状态，等待其他rank的stage计算完成，才可以开始计算，这极大降低了设备的平均使用率。这种现象被称为并行空泡（Parallelism Bubble）。
+
+https://zhuanlan.zhihu.com/p/618590870
+
+大模型训练Pipeline Parallel流水并行性能分析
+
 ## Distributed Data Parallel
 
 https://mp.weixin.qq.com/s/52Wz4pUI8egKugMFuknWKw
@@ -307,19 +317,3 @@ IBM发布新型分布式深度学习系统：结合软硬件实现当前最优�
 http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
 
 神经网络的分布式训练
-
-https://mp.weixin.qq.com/s/nvuflLfOolidDDXJVe2DZA
-
-美团深度学习系统的工程实践
-
-https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
-
-TensorFlow分布式计算机制解读：以数据并行为重
-
-https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
-
-继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本
-
-https://mp.weixin.qq.com/s/kOCftzSbHe2mvDmlRp-ihA
-
-Jeff Dean：AI对计算机系统设计的影响

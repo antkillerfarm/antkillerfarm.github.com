@@ -277,6 +277,32 @@ https://zhuanlan.zhihu.com/p/431722918
 
 # 区块链参考资源+
 
+https://mp.weixin.qq.com/s/m9KwANPIudVesoXjejnOJA
+
+火币袁煜明：区块链的本质、意义与商业体系设计
+
+iele虚拟机, plutus-marlowe智能合约语言，hydra分片，sidechain侧链, ourobros generic共识协议，kemadelia p2p网络
+
+https://mp.weixin.qq.com/s/Z2wz5jb7k4QVf0PNCd0THg
+
+Cocos王哲：讲解COCOS区块链游戏的发展之路！
+
+https://mp.weixin.qq.com/s/iKiU_QF5y4t1KMmr6WMctw
+
+一文看懂DGames（区块链游戏）的技术架构和业务逻辑！
+
+https://mp.weixin.qq.com/s/zyU0ANfBS_JrFLNylnErUw
+
+C# 200行代码实现区块链
+
+https://mp.weixin.qq.com/s/OUfDGYdgw6XKRgaUXmog1w
+
+区块链对供应链管理的五大意义
+
+https://mp.weixin.qq.com/s/k_mYbnchN2UF0kZ_2JD4Wg
+
+教你用C++搭建一条迷你区块链！
+
 https://mp.weixin.qq.com/s/9hhUZyeax206bAsSqks-1w
 
 比特币黑客攻击手段大揭秘
