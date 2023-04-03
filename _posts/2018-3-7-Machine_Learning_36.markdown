@@ -331,6 +331,18 @@ https://mp.weixin.qq.com/s/o129MwpGzx8tzjUCkz1npw
 
 # 俄乌战争=
 
+https://www.zhihu.com/question/544946847
+
+普京是现代的希特勒吗？
+
+https://zhuanlan.zhihu.com/p/566841960
+
+统计——乌克兰目前接受的军援
+
+https://www.zhihu.com/question/555976713
+
+顿涅茨克等四地入俄公投结果公布，将对俄乌局势产生什么影响？
+
 https://mp.weixin.qq.com/s/n4EMEdHNJuhrHwsCUE6m4A
 
 被欧洲人买爆的中国电热毯，真有那么火吗？

@@ -163,6 +163,34 @@ https://zhuanlan.zhihu.com/p/410234239
 
 # 中东+
 
+https://mp.weixin.qq.com/s/i95tMMhW_VoGtmD_RPehlg
+
+趣谈美国在阿富汗的天价军费：最高峰时超过当时中国全部军费
+
+https://zhuanlan.zhihu.com/p/409195354
+
+塔利班秒变人民公仆？市长亲自扫大街，银行行长端着冲锋枪去上班
+
+https://zhuanlan.zhihu.com/p/438002125
+
+全球唯一器官交易合法国家：穷人拿命换钱，富人花钱续命（伊朗器官交易合法化）
+
+https://mp.weixin.qq.com/s/giuTx7hS3HD4GdiD_dyRNg
+
+黎巴嫩央行破产：一个悲情国家的不可承受之重
+
+https://xw.qq.com/cmsid/20200710A0JO9X00
+
+阿勒颇监狱保卫战，堪称现代版斯大林格勒，叙利亚五百勇士死守三年终获胜利
+
+https://baijiahao.baidu.com/s?id=1711492174611034081
+
+19岁沙特公主因私奔遭极刑，男友被斩首，差点造成英国沙特断交
+
+https://www.zhihu.com/question/455642975
+
+一战英国都没想过土耳其战略地位吗，为什么要扣土耳其战舰？
+
 https://new.qq.com/omn/20210917/20210917A012II00.html
 
 美军噩梦幽灵狙击手“朱巴”，曾经狙杀634名美军，他到底是谁？
@@ -236,31 +264,3 @@ https://news.ifeng.com/c/8ErWfeGuVev
 https://news.ifeng.com/c/8F4v75koosu
 
 4月顿巴斯分胜负决生死，重演二战战役
-
-https://news.ifeng.com/c/8FB20CHoBDN
-
-统帅部最高机密——普京为何做出错误决断
-
-https://news.ifeng.com/c/8FEyCcwsVG6
-
-两只“大老虎”，坏了普京的大事
-
-https://news.ifeng.com/c/8FMpNxpSHjc
-
-二战时苏军两度折戟之地，俄乌或将在此决胜负
-
-https://news.ifeng.com/c/8Fsc6DZP5g5
-
-俄罗斯乌克兰的大决战终于打响了
-
-https://news.ifeng.com/c/8G653CGmggn
-
-双线在决战，这两点决定俄乌战场输赢
-
-https://news.ifeng.com/c/8GKljOt9z6z
-
-俄军只用“一只手”打乌克兰，自信还是动不了？
-
-https://news.ifeng.com/c/8GRIdyw3Bn2
-
-5月决战初步战果，乌克兰陷入绝境？

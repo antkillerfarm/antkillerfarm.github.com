@@ -111,6 +111,10 @@ https://mp.weixin.qq.com/s/APVu9agDJN4VJT8u18N1rQ
 
 移动应用中使用OpenGL生成转场特效
 
+https://zhuanlan.zhihu.com/p/618925299
+
+从两个图形库看CPU与GPU渲染的差异（Cairo与Skia）
+
 # GUI框架分析
 
 ## 综合型GUI框架
