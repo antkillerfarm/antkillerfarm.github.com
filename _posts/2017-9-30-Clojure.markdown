@@ -323,6 +323,10 @@ VS Code Server的离线安装过程
 
 `~/.config/Code`
 
+有时插件出问题，当重启也无效的时候，可以试一下：
+
+`rm-rf ~/.config/Code/*Cache*`
+
 ## 参考
 
 https://blog.csdn.net/GossipHHH/article/details/78132398

@@ -122,6 +122,12 @@ Bézier curve也可用于超参数的search。
 
 3.重复1，2步，直到收敛。
 
+---
+
+https://zhuanlan.zhihu.com/p/22679966
+
+OpenGL实现贝塞尔曲线变幻屏保效果
+
 # 熵
 
 在《数学狂想曲（四）》的“玻尔兹曼分布”一节，我们提到了Shannon entropy的公式。然而，这个公式是如何推导出来的呢？

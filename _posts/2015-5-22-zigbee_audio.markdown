@@ -254,48 +254,12 @@ https://mp.weixin.qq.com/s/eXRy9kZqDlph96BdWwWwXQ
 
 49页ppt，Edge Computing for Infrastructure
 
-# Raspberry Pi+
+# BERT进阶+
 
-https://mp.weixin.qq.com/s/1wxA7jnCgmXt5j9DXxH1UA
+https://zhuanlan.zhihu.com/p/91052495
 
-超有趣！手把手教你使用树莓派实现实时人脸检测
+当BERT遇上知识图谱
 
-https://mp.weixin.qq.com/s/tW54lcv9aRz9xXC9V-DsWw
+https://mp.weixin.qq.com/s/wQW-JT-sGMj60OtXwTssyQ
 
-Keras+树莓派，130行代码找到圣诞老人
-
-https://mp.weixin.qq.com/s/8zD3GqbQrQnZmuD59OoFuQ
-
-让树莓派记下你的笑颜
-
-https://mp.weixin.qq.com/s?__biz=MzU1OTMyNDcxMQ==&mid=2247484969&idx=1&sn=29d04fbb56a4464b08407eb87d26325e
-
-基于源代码为Raspberry Pi设备构建TensorFlow
-
-https://mp.weixin.qq.com/s/onN61A13xuJzNk9zE0hM-w
-
-你有特斯拉，我有树莓派，纯手工打造车载车牌识别检测系统，家用车秒变智能车
-
-https://mp.weixin.qq.com/s/rqIZSX-zRNQ3uyae3LlnZQ
-
-树莓派也能实时训练agent玩Atari
-
-https://mp.weixin.qq.com/s/pPTaxiCOTL_Y89TuKGHQmg
-
-微软放弃的游戏被他们复活了：Windows经典“三维弹球”现实版，CAD建模、Arduino编程、数控机床打造，硬核致敬童年
-
-https://mp.weixin.qq.com/s/mgdDjjIJX4y1-DXzazDhPA
-
-不会编程的外国小姐姐，3天、850块，徒手用树莓派DIY了个数码相机
-
-https://mp.weixin.qq.com/s/rM3SkUiQIxsGz9MNIg1skQ
-
-用树莓派DIY波士顿机器狗，帮你省下50万：教程开源，人人皆可上手
-
-https://zhuanlan.zhihu.com/p/301860804
-
-如何把树莓派400打造成小霸王游戏机，Retropie包含上万经典老游戏
-
-https://www.zhihu.com/question/339388119
-
-树莓派做网站靠谱不？
+BERT模型推理加速总结

@@ -277,3 +277,11 @@ https://blog.csdn.net/qq_45011547/article/details/90147363
 https://mp.weixin.qq.com/s/JGhAp4FPmEjwOpI4EsXe0A
 
 留数定理与积分
+
+---
+
+![](/images/img5/Biot-Savart_Law.jpg)
+
+https://www.zhihu.com/question/593230446
+
+留数定理能和安培环路定理联系起来吗？

@@ -249,42 +249,6 @@ https://www.zhihu.com/answer/2722552656
 
 ---
 
-北溪1号：55 BCM
-
-北溪2号：55 BCM
-
-“地中海之气”管道（Gasoducto Medgaz）：10 BCM
-
-马格里布管道（Gasoducto del Magreb）：12.5 BCM
-
-伊伦（Irún）管道：2.1 BCM
-
-拉罗（Larrau）管道：5.3 BCM
-
-规划中的MidCat管道：7.5 BCM
-
-https://www.zhihu.com/question/551675061/
-
-想问下欧洲冬天到底多冷，没俄罗斯天然气就能冻死？
-
-https://zhuanlan.zhihu.com/p/364423447
-
-只差5％，美国开始搞事情（北溪二号）
-
-https://www.zhihu.com/question/555941937
-
-“北溪”管道遭破坏发现3处泄露，泄漏区域发生强烈水下爆炸，这会造成什么影响？哪些信息值得关注？
-
-https://view.inews.qq.com/wxn/20221003A048FO00
-
-27年沉浮，“北溪”背后的历史暗战
-
-https://www.zhihu.com/question/582874371
-
-如何看待美国著名记者发文称“北溪管道系美军炸毁”?
-
----
-
 打得过就是1h22min速通，买办军队毫无战斗力，乌军不知为何而战。
 
 打不过怎么办，总不能夸买办军队吧，只能说北约天兵天将了。
