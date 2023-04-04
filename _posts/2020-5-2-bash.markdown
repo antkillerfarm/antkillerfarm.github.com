@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  bash, awk&sed&grep
+title:  bash
 category: linux 
 ---
 
@@ -272,6 +272,23 @@ https://www.cnblogs.com/xuxm2007/p/5820633.html
 
 Bash脚本实现批量作业并行化
 
+## 命令行参数解析
+
+```bash
+while getopts ":c:i:b:" opt; do
+  case $opt in
+    c) CHARM=$OPTARG ;;
+    i) IDH_PATH=$OPTARG ;;
+    b) XX_PATH=$OPTARG ;;
+    *) echo "Invalid option: -$OPTARG" >&2 ;;
+  esac
+done
+```
+
+https://blog.csdn.net/arpospf/article/details/103381621
+
+Shell命令getopts/getopt用法详解
+
 ## Other
 
 `bash --norc --noprofile`
@@ -331,72 +348,3 @@ linux shell不同进制数据转换（二进制，八进制，十六进制，bas
 https://www.freecodecamp.org/news/command-line-commands-cli-tutorial/
 
 Command Line Commands – CLI Tutorial（powershell）
-
-# awk&sed&grep
-
-这三个工具是文本处理中用的比较多的工具，各有各的特色，且都支持正则表达式。
-
-一般来说，行处理优先考虑使用sed和grep，列处理优先考虑使用awk。通常情况下，组合使用多个命令，其命令编写的难度小于只使用一个命令。比如sed和grep也可以进行列处理，但语法难度远超awk，反之亦然。
-
-这里不打算列出各个命令的选项，而仅列出使用它们的一些示例：
-
-这里假设我们有一文件名为ab。
-
-## awk
-
-```bash
-awk '{print $1}' ab #显示第一列
-```
-
-参考：
-
-https://mp.weixin.qq.com/s/-mWYn195TBSB1lDlncuYeA
-
-常用命令之awk常用实例
-
-https://mp.weixin.qq.com/s/IXHKtRKd7Zl8iT9zd2ONsg
-
-活跃了40年的AWK现在怎么样了？
-
-AWK，1977年诞生于贝尔实验室。其名称来自其作者的名字缩写：Alfred Aho，Peter Weinberger和Brian Kernighan。
-
-## sed
-
-```bash
-sed '1d' ab #删除第一行 
-sed '$d' ab #删除最后一行
-sed '1,2d' ab #删除第一行到第二行
-sed '2,$d' ab #删除第二行到最后一行
-
-sed -n '1p' ab    #显示第一行 
-sed -n '$p' ab    #显示最后一行
-sed -n '1,2p' ab  #显示第一行到第二行
-sed -n '2,$p' ab  #显示第二行到最后一行
-
-sed -n '/ruby/p' ab #查询包括关键字ruby所在所有行
-sed -n '/\$/p' ab #查询包括关键字$所在所有行，使用反斜线\屏蔽特殊含义
-
-sed -n '/ruby/p' ab | sed 's/ruby/bird/g'    #替换ruby为bird
-sed -n '/ruby/p' ab | sed 's/ruby//g'        #删除ruby
-
-sed -e 's/.$//' mydos.txt > myunix.txt #dos->unix
-```
-
-## grep
-
-```bash
-grep 'ruby' ab #查询包括关键字ruby所在所有行
-grep -nri 'ruby' #n 显示行号，r 子目录搜索，i 忽略大小写
-```
-
-## 综合
-
-```bash
-ip addr show br-lan | grep 'inet ' | awk  '{print $2}' | sed 's/\/.*//g'
-```
-
-参考：
-
-https://mp.weixin.qq.com/s/o1vuL3RrWz9tyUPguZeSWA
-
-简单快捷的数据处理，数据科学需要注意的命令行

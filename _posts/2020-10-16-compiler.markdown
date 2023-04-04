@@ -234,6 +234,16 @@ https://juejin.im/post/5d70fb2ce51d4557ca7fddaa
 
 Android CPU, Compilers, D8 & R8
 
+## 文法
+
+https://blog.csdn.net/huihuisd/article/details/103777331
+
+乔姆斯基4型文法
+
+https://zhuanlan.zhihu.com/p/94424139
+
+LL, LR文法浅析
+
 # Polyhedral Model
 
 ## 教程

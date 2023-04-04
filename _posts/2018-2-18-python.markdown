@@ -159,6 +159,8 @@ https://www.jetbrains.com/pycharm/
 
 相信熟悉Android Studio和IDEA的同学一定会觉得很亲切。没错，他们都是同一家公司的产品。
 
+IntelliJ IDEA的雏形是JBuilder编辑器的插件IntelliJ Renamer。IntelliJ IDEA本身启动于2000年。
+
 安装：
 
 `sudo snap install pycharm-community --classic`

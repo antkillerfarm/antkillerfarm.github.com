@@ -253,62 +253,50 @@ $$S(i)=Fi+f$$
 
 依赖分析：读后写依赖，写后写依赖，写后读依赖。
 
+doall循环：没有依赖的循环。
 
+doacross循环：有依赖的循环。
+
+依赖判断的充要条件是：
+
+$$F_1i_1+f_1=F_2i_2+f_2$$
+
+求上述等式整数解的问题是一个典型的整数规划问题。但后者已经确认是个NP完全问题。
+
+所以编译器通常用Banerjee测试和GCD测试来检测依赖。
 
 ---
 
-http://www.jos.org.cn/jos/ch/reader/create_pdf.aspx?file_no=5563
+几种基础的仿射变换：
 
-基于多面体模型的编译“黑魔法”
+- 循环交换（loop permutation）：交换内层循环和外层循环的次序。$$S(i,j)\to (j,i)$$
+- 循环反转（loop reversal）：按照相反的顺序执行一个循环中的所有迭代。$$S(i)\to (-i)$$
+- 循环倾斜（loop skewing）：对原始循环的迭代空间进行坐标变换。$$S(i,j)\to (i, f\times i+j)$$
 
-https://zhuanlan.zhihu.com/p/310142893
+上面3种被称为幺模变换。
 
-编译器领域的多面体模型
+- 循环延展（loop scaling）：将循环索引变量和循环步长做等比例缩放。$$S(i)\to (s\times i)$$
+- 循环合并（loop fusion）：将原程序中的多个循环下标映射到同一个循环下标上。$$S1(i)\to (0,i);S2(i)\to (1,i)$$
+- 循环分布（loop distribution/fission）：将不同语句的同一个循环下标映射到不同的循环下标。$$S(i,j)\to (j,i)$$
+- 循环偏移（loop shifting）：将一个动态语句实例偏移固定多个循环迭代。$$S(i,j)\to (j,i)$$
 
-https://zhuanlan.zhihu.com/p/111680367
+上面7种被称为基础仿射变换。
 
-Polyhedral Model, Interval Analysis and Compilers
+- 循环分段（loop strip-mining）：将某维度的迭代拆成两个粒度，比如先以4步长遍历、4步长内以1步长遍历。
+- 循环分块（loop tiling）：将对一个大数组的遍历访问拆成更多维度，以利用局部性，比如将调度（i, j）改为 (i/4, j/4, i, j)。它实际等同是循环分段+循环交换。
+- 循环展开压紧（loop unroll and jam）：提升外层循环的粒度，并向内压紧。
 
-https://www.zhihu.com/question/65708935
+这几种涉及除法，被称为近似仿射变换。无论基础仿射变换，还是近似仿射变换，都是改变指令实例执行顺序的变换。
 
-深入学习auto vectorization和polyhedral变换方面的优化技术有哪些资料？
+除此之外，还有一些不改变指令实例执行顺序的变换：
 
-https://pliss2019.github.io/albert_cohen_slides.pdf
+- 分块分离（loop tile isolation），分块有时会分出半块，导致循环内部有一些判断语句是用于处理这部分计算的。把它们分走，避免冗余判断。
+- 循环展开（loop unrolling），降低循环条件本身的判断代价。
+- 循环判断外提（loop unswitching），循环剥离（loop peeling）等。
+- 循环压紧（loop coalescing/linearization），其实就是线性化；这一般是要被避免的，这种变换使循环的结构丧失了。
 
-Polyhedral Compilation as a Design Pattern for Compiler Construction
+参考：
 
-https://mp.weixin.qq.com/s/QEooKxP1sm5O90AUiqKQEQ
+https://zhuanlan.zhihu.com/p/604571955
 
-Polyhedral Model—AI芯片软硬件优化利器（一）
-
-https://mp.weixin.qq.com/s/NRtud1UImE5ArZ2zQWFRyg
-
-Polyhedral Model—AI芯片软硬件优化利器（二）
-
-https://mp.weixin.qq.com/s/bLBIrJb82IsnyoXSEr2xtw
-
-Polyhedral Model—AI芯片软硬件优化利器（三）
-
-https://www.cnblogs.com/XianghuanHe/articles/15432300.html
-
-编译原理（龙书）第十一章 并行和局部优化学习笔记
-
-https://mp.weixin.qq.com/s/wjk2Mxhd2NDpH72l3rdqgQ
-
-多面体编译技术在软硬协同设计中的应用
-
-https://mp.weixin.qq.com/s/mBheJ9NG8khcLRshI40b2w
-
-AI编译关键技术 • 高层循环编译优化 - 不仅仅是分块和合并
-
-https://zhuanlan.zhihu.com/p/199683290
-
-Polyhedral编译调度算法(1)——Pluto算法
-
-https://zhuanlan.zhihu.com/p/232070003
-
-Polyhedral编译调度算法(2)——Feautrier算法
-
-https://zhuanlan.zhihu.com/p/259311866
-
-Polyhedral编译调度算法(3)——isl中的调度算法
+常见的循环变换

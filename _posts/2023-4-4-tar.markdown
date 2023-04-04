@@ -1,0 +1,235 @@
+---
+layout: post
+title:  各种压缩包的压缩和解压方法, awk&sed&grep
+category: linux 
+---
+
+* toc
+{:toc}
+
+# 各种压缩包的压缩和解压方法
+
+## 安装
+
+安装 7zip：
+
+`sudo apt install p7zip`
+
+安装 rar:
+
+`sudo apt install rar unrar`
+
+rar比较奇怪，压缩和解压是使用不同的包，这点和7zip是不一样的。
+
+常按Win键，会弹出Unity所用的键盘快捷键。
+
+## .tar.gz和.tgz
+
+解压：`tar zxvf FileName.tar.gz`
+
+压缩：`tar zcvf FileName.tar.gz DirName`
+
+PS:tar命令对于长选项和短选项的顺序有要求，例如，不覆盖已有文件的选项`--skip-old-files`:
+
+`tar --skip-old-files -zxvf FileName.tar.gz  #正确`
+
+`tar -zxvf --skip-old-files FileName.tar.gz  #错误`
+
+## .tar
+
+解包：`tar xvf FileName.tar`
+
+打包：`tar cvf FileName.tar DirName`
+
+（注：tar是打包，不是压缩！）
+
+## .gz
+
+解压1：`gunzip FileName.gz`
+
+解压2：`gzip -d FileName.gz`
+
+压缩：`gzip FileName`
+
+## .bz2
+
+解压1：`bzip2 -d FileName.bz2`
+
+解压2：`bunzip2 FileName.bz2`
+
+压缩： `bzip2 -z FileName`
+
+## .tar.bz2
+
+解压：`tar jxvf FileName.tar.bz2`
+
+压缩：`tar jcvf FileName.tar.bz2 DirName`
+
+## .bz
+
+解压1：`bzip2 -d FileName.bz`
+
+解压2：`bunzip2 FileName.bz`
+
+## .tar.bz
+
+解压：`tar jxvf FileName.tar.bz`
+
+## .tar.xz
+
+解压：`tar xvJf FileName.tar.xz`
+
+压缩：`tar cvJf FileName.tar.xz DirName`
+
+## .Z
+
+解压：`uncompress FileName.Z`
+
+压缩：`compress FileName`
+
+## .tar.z
+
+解压：`tar Zxvf FileName.tar.z`
+
+压缩：`tar Zcvf FileName.tar.z DirName`
+
+## .zip
+
+解压：`unzip FileName.zip`
+
+压缩：`zip FileName.zip DirName`
+
+## .rar
+
+解压：`rar x FileName.rar`
+
+压缩：`rar a FileName.rar DirName`
+
+## .lha
+
+解压：`lha -e FileName.lha`
+
+压缩：`lha -a FileName.lha FileName`
+
+## .rpm
+
+解包：`rpm2cpio FileName.rpm | cpio -div`
+
+## .deb
+
+解包：`ar p FileName.deb data.Tar.gz | Tar zxf -`
+
+## 万能脚本
+
+解压：`sEx x FileName.*`
+
+压缩：`sEx a FileName.* FileName`
+
+sEx只是调用相关程序，本身并无压缩、解压功能，请注意！
+
+sEx官网：
+
+http://sourceforge.net/projects/sex
+
+## 7zip
+
+7-Zip是Igor Pavlov于1999年开发的压缩软件。
+
+官网：
+
+https://sparanoid.com/lab/7z/
+
+它虽然支持多种压缩算法，但最重要的还是LZMA（Lempel-Ziv-Markov chain-Algorithm）算法。
+
+该算法的SDK：
+
+https://sparanoid.com/lab/7z/sdk.html
+
+参考：
+
+https://mp.weixin.qq.com/s/NB12KQOHjso9wH8Ju1ueSA
+
+ZIP也能边下载边解压？流式解压技术揭秘！
+
+## 参考
+
+主流的压缩格式（zip、7z等）不支持保留Unix风格的文件访问权限，一旦在Linux系统里解压，解压出来的文件可能会出现“拒绝访问”的现象，而tar支持保留文件的访问权限。
+
+https://www.zhihu.com/question/335911358
+
+为什么Linux要用tar.gz，很少用7Z或ZIP？
+
+---
+
+https://mp.weixin.qq.com/s/9kdeSj0RwUvlIi4oBEF_Wg
+
+速度与压缩比如何兼得？压缩算法在构建部署中的优化
+
+# awk&sed&grep
+
+这三个工具是文本处理中用的比较多的工具，各有各的特色，且都支持正则表达式。
+
+一般来说，行处理优先考虑使用sed和grep，列处理优先考虑使用awk。通常情况下，组合使用多个命令，其命令编写的难度小于只使用一个命令。比如sed和grep也可以进行列处理，但语法难度远超awk，反之亦然。
+
+这里不打算列出各个命令的选项，而仅列出使用它们的一些示例：
+
+这里假设我们有一文件名为ab。
+
+## awk
+
+```bash
+awk '{print $1}' ab #显示第一列
+```
+
+参考：
+
+https://mp.weixin.qq.com/s/-mWYn195TBSB1lDlncuYeA
+
+常用命令之awk常用实例
+
+https://mp.weixin.qq.com/s/IXHKtRKd7Zl8iT9zd2ONsg
+
+活跃了40年的AWK现在怎么样了？
+
+AWK，1977年诞生于贝尔实验室。其名称来自其作者的名字缩写：Alfred Aho，Peter Weinberger和Brian Kernighan。
+
+## sed
+
+```bash
+sed '1d' ab #删除第一行 
+sed '$d' ab #删除最后一行
+sed '1,2d' ab #删除第一行到第二行
+sed '2,$d' ab #删除第二行到最后一行
+
+sed -n '1p' ab    #显示第一行 
+sed -n '$p' ab    #显示最后一行
+sed -n '1,2p' ab  #显示第一行到第二行
+sed -n '2,$p' ab  #显示第二行到最后一行
+
+sed -n '/ruby/p' ab #查询包括关键字ruby所在所有行
+sed -n '/\$/p' ab #查询包括关键字$所在所有行，使用反斜线\屏蔽特殊含义
+
+sed -n '/ruby/p' ab | sed 's/ruby/bird/g'    #替换ruby为bird
+sed -n '/ruby/p' ab | sed 's/ruby//g'        #删除ruby
+
+sed -e 's/.$//' mydos.txt > myunix.txt #dos->unix
+```
+
+## grep
+
+```bash
+grep 'ruby' ab #查询包括关键字ruby所在所有行
+grep -nri 'ruby' #n 显示行号，r 子目录搜索，i 忽略大小写
+```
+
+## 综合
+
+```bash
+ip addr show br-lan | grep 'inet ' | awk  '{print $2}' | sed 's/\/.*//g'
+```
+
+参考：
+
+https://mp.weixin.qq.com/s/o1vuL3RrWz9tyUPguZeSWA
+
+简单快捷的数据处理，数据科学需要注意的命令行
