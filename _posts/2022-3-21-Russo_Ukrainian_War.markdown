@@ -227,6 +227,10 @@ https://www.zhihu.com/question/587586045
 
 Zelensky: The Man With the Iron Balls
 
+就算演员本人是个投降派，最起码你得让人家下台有个交代吧。就连中国历史上最丧权辱国的赵构，人也是被金军打进太平洋了才变怂的。
+
+基辅，哈尔科夫，乌军主力，俄军一个也没拿下。演员就算是个克格勃间谍，现在也没法让步啊。
+
 https://user.guancha.cn/main/content?id=702592
 
 乌克兰小姐姐：我为什么选泽连斯基做我们的总统？
