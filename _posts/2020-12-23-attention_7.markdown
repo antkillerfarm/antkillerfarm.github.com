@@ -193,7 +193,19 @@ https://mp.weixin.qq.com/s/pe2E69Gpw0nT9sSHvtBGSg
 
 自回归与非自回归模型不可兼得？预训练模型BANG全都要！
 
+https://www.zhihu.com/question/588325646
+
+为什么现在的LLM都是Decoder only的架构？
+
 ## UniLM
+
+![](/images/img5/UniLM.jpg)
+
+|  | Encoder注意力 | Decoder注意力 | 是否共享参数 |
+|:--:|:--:|:--:|:--:|
+| GPT | 单向 | 单向 | 是 |
+| UniLM | 双向 | 单向 | 是 |
+| T5 | 双向 | 单向 | 否 |
 
 https://mp.weixin.qq.com/s/m_FU4NmjUsvxusRidDb-Xg
 

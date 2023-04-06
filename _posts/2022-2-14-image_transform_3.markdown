@@ -9,6 +9,18 @@ category: CV
 
 # 图像变换
 
+https://mp.weixin.qq.com/s/h6sktVd1ywCCncUb9iwyFQ
+
+中科院自动化所：高清真实图像生成领域及GAN研究在人脸识别领域的进展
+
+https://mp.weixin.qq.com/s/9LvP3AH1PJhjrokTGg3blA
+
+心中无码：这是一个能自动脑补漫画空缺部分的AI项目
+
+https://mp.weixin.qq.com/s/cBTnX1lNHJhCMDX926aujA
+
+想怎么GAN就怎么GAN，一键拯救发际线
+
 https://mp.weixin.qq.com/s/HinUtoYNq_e8HYBqPKozsQ
 
 GAN：艺术家眼里生成作品的创作利器
@@ -293,7 +305,7 @@ https://mp.weixin.qq.com/s/up5n6ZUP6SmSfRNpRX37qQ
 
 一句话拍大片，导演末日来了！Gen-2震撼发布，科幻日系二次元统统拿捏
 
-# 俄乌战争+
+# 俄乌战争-
 
 乌克兰人送给波兰指挥官的榴弹发射器，这个指挥官把玩了一下，以为没有弹药开了一下空枪，结果里面有弹药，就打中天花板了，天花板掉下来就把他自己和一名文职人员砸伤了。
 

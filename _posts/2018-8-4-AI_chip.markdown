@@ -123,6 +123,8 @@ Imagination目前主要的客户是：
 
 从商业的角度讲，Imagination的核心产品还是GPU，NPU只是一个添头而已。它的目的应该还是利用NPU，来多卖一些GPU。
 
+摩尔线程的GPU是基于Imagination的IMG BXT-32-1024 MC4。
+
 官网：
 
 https://www.imgtec.com/vision-ai/

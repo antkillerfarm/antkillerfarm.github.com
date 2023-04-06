@@ -119,6 +119,10 @@ https://www.thepaper.cn/newsDetail_forward_10149564
 
 ---
 
+Somoza may be a son of a bitch, but he's our son of a bitch. -- by Franklin D. Roosevelt
+
+---
+
 https://mp.weixin.qq.com/s/nh4suQ9zbm2NH-_uJRepbA
 
 美军强奸北大学生，中国“美分”竟提议：“被强暴女生扰乱治安，应予严惩”

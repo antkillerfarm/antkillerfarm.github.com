@@ -141,9 +141,9 @@ BERT的强大，主要不在网络结构上。上面提到的GPT 1.0虽然输给
 
 BERT主要用了两个任务：
 
-- Masked Language Model。随机盖住一句话的某个词，让NN去预测这个被盖住的词。
+- Masked Language Model，MLM。随机盖住一句话的某个词，让NN去预测这个被盖住的词。
 
-- Next Sentence Prediction。预测下一段话。
+- Next Sentence Prediction，NSP。预测下一段话。
 
 这两个任务，算是NLP的老任务了。但在传统的NLP pipeline中，属于非常下游的任务。BERT利用它们的特点，进行无监督学习，算是一个很大的突破了。
 

@@ -135,6 +135,10 @@ https://zhuanlan.zhihu.com/p/615522634
 
 AIGC的一些记录
 
+https://www.zhihu.com/question/593770520
+
+首批因AI失业的人来了，有公司已裁减原画师，导演陆川力赞AI海报高效优质，哪些职位容易被取代？
+
 ## 参考
 
 https://mp.weixin.qq.com/s/djkjAfUO_DefTP2drzY_iQ
@@ -356,15 +360,3 @@ https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247505181&idx=1&sn=2e817e
 https://mp.weixin.qq.com/s/MPdGF2-cJbNcvaEx-2BnFg
 
 把2D公路变成3D飞车游戏，MIT、清华打破图像编辑的次元壁
-
-https://mp.weixin.qq.com/s/h6sktVd1ywCCncUb9iwyFQ
-
-中科院自动化所：高清真实图像生成领域及GAN研究在人脸识别领域的进展
-
-https://mp.weixin.qq.com/s/9LvP3AH1PJhjrokTGg3blA
-
-心中无码：这是一个能自动脑补漫画空缺部分的AI项目
-
-https://mp.weixin.qq.com/s/cBTnX1lNHJhCMDX926aujA
-
-想怎么GAN就怎么GAN，一键拯救发际线
