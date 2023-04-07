@@ -177,6 +177,8 @@ TAMER（Training an Agent Manually via Evaluative Reinforcement，评估式强�
 
 这算得上是一种有监督学习+RL了。
 
+![](/images/img5/RLHF.png)
+
 利用强化学习在大模型中注入人类的经验，所谓的Reinforcement Learning from Human Feedback(RLHF)，Policy Network输出的多样性及Reward的学习是ChatGPT成功的关键。
 
 ---

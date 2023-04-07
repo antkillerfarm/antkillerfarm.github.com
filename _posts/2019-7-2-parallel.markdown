@@ -246,7 +246,7 @@ https://mp.weixin.qq.com/s/Vb3AkoWHQY7WWBMZaVnf4g
 
 ## FSDP
 
-Fully Sharded Data Parallel是Facebook 深度借鉴微软ZeRO之后提出的PyTorch DDP升级版本，可以认为是对标微软ZeRO，其本质是 parameter sharding。Parameter sharding就是把模型参数等切分到各个GPU之上。
+Fully Sharded Data Parallel是Facebook深度借鉴微软ZeRO之后提出的PyTorch DDP升级版本，可以认为是对标微软ZeRO，其本质是parameter sharding。Parameter sharding就是把模型参数等切分到各个GPU之上。
 
 ![](/images/img5/FSDP.png)
 
@@ -259,6 +259,10 @@ Facebook如何训练超大模型---(1)
 https://www.cnblogs.com/rossiXYZ/p/15819817.html
 
 Facebook如何训练超大模型---(2)
+
+https://zhuanlan.zhihu.com/p/485208899
+
+数据并行Deep-dive: 从DP到Fully Sharded Data Parallel（FSDP）完全分片数据并行
 
 ## 参考
 

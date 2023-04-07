@@ -168,7 +168,11 @@ https://docs.graphcore.ai
 
 ---
 
+![](/images/img5/Tensorflow_Poplar.png)
+
 Graphcore的Tensorflow支持，使用了XLA接口。
+
+![](/images/img5/pytorch-software-stack.png)
 
 而Pytorch支持，则采用了自研的PopTorch和PopART库。
 
@@ -381,23 +385,3 @@ AI芯片四大流派论剑，中国能否弯道超车？
 https://zhuanlan.zhihu.com/p/27472524
 
 从AI芯片说起，一起来看芯片门类
-
-https://mp.weixin.qq.com/s/Cy_vb0PpcvGTDmlMt1VkSw
-
-从GPU、TPU到FPGA及其它：一文读懂神经网络硬件平台战局
-
-https://mp.weixin.qq.com/s/RKRDBiBzG5u2P2eaqNAFbg
-
-机器学习的处理器列表
-
-https://mp.weixin.qq.com/s/uzeeZiaAFdA0C_zAcX756w
-
-深度学习架构之争
-
-https://mp.weixin.qq.com/s/VM-KiIJHA2gXLVu0WRIzwA
-
-王中风教授：如何满足不同应用场景下深度神经网络模型算力和能效需求
-
-https://mp.weixin.qq.com/s/f5mQkWxPYc77t2we1Y306Q
-
-深度学习引领AI芯片大战

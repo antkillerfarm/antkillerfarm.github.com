@@ -79,6 +79,10 @@ https://liveuamap.com/
 
 另一个消息来源
 
+https://militaryland.net/
+
+另一个消息来源
+
 https://www.oryxspioenkop.com/2022/02/attack-on-europe-documenting-equipment.html
 
 这是荷兰的一家网站，提供了收集到的所有俄罗斯战损的信息。

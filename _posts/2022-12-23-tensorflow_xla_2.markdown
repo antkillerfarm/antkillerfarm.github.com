@@ -63,9 +63,37 @@ Pytorch官方提供了如下项目支持XLA：
 
 https://github.com/pytorch/xla
 
+这个项目实际上是Google来维护的。
+
 粗看了一下，都是些上层的代码，底层直接调用TF的实现。所以如果目标硬件已经接入TF XLA接口的话，理论上不需要修改就可以跑pytorch。
 
 ![](/images/img5/pytorch_xla.png)
+
+文档：
+
+https://pytorch.org/xla/master/
+
+PyTorch on XLA Devices
+
+参考：
+
+https://pytorch.org/blog/pytorch-2.0-xla/
+
+PyTorch 2.0 & XLA—The Latest Cutting Edge Features
+
+## XRT & PJRT
+
+PJRT：Pretty much Just another RunTime
+
+TF的代码中有如下两个文件夹：
+
+tensorflow/compiler/xla/xrt
+
+tensorflow/compiler/xla/pjrt
+
+XRT & PJRT的作用是：为其他框架如Pytorch/JAX提供生成XLA IR，并执行的能力。
+
+PJRT是XRT的升级版。
 
 ## IR
 
