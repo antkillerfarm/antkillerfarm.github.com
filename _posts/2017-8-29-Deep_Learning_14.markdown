@@ -9,7 +9,7 @@ category: DL
 
 # seq2seq
 
-seq2seq最早用于Neural Machine Translation领域（与之相对应的有Statistical Machine Translation）。训练后的seq2seq模型，可以根据输入语句，自动生成翻译后的输出语句。
+seq2seq最早用于Neural Machine Translation（NMT）领域（与之相对应的有Statistical Machine Translation）。训练后的seq2seq模型，可以根据输入语句，自动生成翻译后的输出语句。
 
 ![](/images/article/seq2seq.png)
 

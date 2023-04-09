@@ -133,6 +133,50 @@ $$x'=f_{prompt}(x)$$
 
 ---
 
+不管是ChatGPT还是Stable Diffusion，对普通用户都像是黑箱，你在对话或者提供命令之前，并不能完全预知其结果。
+
+大家在使用同样的基础模型，为什么有人能画出“赛博 Coser”，有人却只能画出“克苏鲁古神”？
+
+prompt和instruction这俩词在LLM领域偶尔会容易被混为一谈，实际上二者虽然形式相近，都是用来解锁模型的能力，但本质思路却是截然相反的。
+
+prompt是让人来适应模型，给模型以提示。
+
+instruction是让模型听人指令，给模型以指令。
+
+由于目前对LLM的认识不足、研究不深，很大程度上需要依靠prompt工程来探索LLM的能力。早期的时候，prompt-tuning火了一阵儿，一度被誉为第四范式，但最近慢慢好像不这样提了，或者说提法慢慢变成了instruction-tuning。原因可能主要就在于思路上的转变，让人工来构建prompt去适应模型属于是个经验活儿、运气活儿，费力不一定讨好，不如反过来，直接从用户数据收集用户指令。
+
+https://www.zhihu.com/question/585294957
+
+ChatGPT爆火带动全新职业提示工程师，提示工程有多重要？未来该职业走向如何？
+
+https://zhuanlan.zhihu.com/p/608495853
+
+ChatGPT火爆，最全prompt工程指南登GitHub热榜
+
+---
+
+![](/images/img5/Prompt-Tuning.png)
+
+![](/images/img5/Prompt-Tuning_2.png)
+
+---
+
+![](/images/img5/in-context_learning.png)
+
+![](/images/img5/ICL.jpg)
+
+in-context learning是一种特殊的训练模式，通过设计启发式的模板，可以在无需更新模型参数的情况下，获得答案。但是只有超大模型才具有这种启发能力，小模型就算了吧。
+
+论文：
+
+《Language Models are Few-Shot Learners》
+
+https://zhuanlan.zhihu.com/p/597036814
+
+如何优化大模型的In-Context Learning效果？
+
+---
+
 参考：
 
 https://mp.weixin.qq.com/s/dkNH4BLOH36B5h_UCcRLnA
@@ -146,6 +190,10 @@ Prompt Tuning相比于Fine Tuning在哪些场景下表现更好？
 https://mp.weixin.qq.com/s/2eA4PBd-wr9tVyyuzJ66Bw
 
 Fine-tune之后的NLP新范式：Prompt越来越火，CMU华人博士后出了篇综述文章
+
+https://wjn1996.blog.csdn.net/article/details/120607050
+
+Prompt-Tuning——深度解读一种新的微调范式
 
 ## 参考
 
@@ -280,83 +328,3 @@ https://mp.weixin.qq.com/s/8FtDhpgc-1j3TSL771N-Ng
 https://mp.weixin.qq.com/s/LdfLd2cZCdpvNYLKHUNwuA
 
 简述无监督图像分类发展现状
-
-https://mp.weixin.qq.com/s/qaLQK3uzaeyp68AbL0aOOQ
-
-怎么在视频标注上省钱？这里有一个面向视频推荐的多视图主动学习
-
-https://mp.weixin.qq.com/s/-cXOUw9zJteVUkbpRMIWtQ
-
-何恺明一作，刷新7项检测分割任务，无监督预训练完胜有监督
-
-https://mp.weixin.qq.com/s/wtHrHFoT2E_HLHukPdJUig
-
-OpenAI科学家一文详解自监督学习
-
-https://mp.weixin.qq.com/s/fy1gUElWVWcOVvzv6fGmdg
-
-谷歌大脑推出视觉领域任务自适应基准：VTAB
-
-https://zhuanlan.zhihu.com/p/80815225
-
-Image-Level弱监督图像语义分割汇总简析
-
-https://mp.weixin.qq.com/s/5czWf0xpqva5pmuvJDn5AQ
-
-Google研究院提出FixMatch，简单粗暴却极其有效的半监督学习方法，附14页PDF下载
-
-https://zhuanlan.zhihu.com/p/108088719
-
-SSL:Self-Supervised Learning(自监督学习)
-
-https://zhuanlan.zhihu.com/p/108625273
-
-Self-Supervised Learning入门介绍
-
-https://zhuanlan.zhihu.com/p/108906502
-
-Self-supervised Learning再次入门
-
-https://mp.weixin.qq.com/s/VvUj0S2OTf8BowGRjDuVag
-
-图解自监督学习，人工智能蛋糕中最大的一块
-
-https://mp.weixin.qq.com/s/df51T24mBVycBeI_M7QqOQ
-
-无标记数据学习, 83ppt
-
-https://mp.weixin.qq.com/s/2FxD6ga6b_WOdAni16wd2Q
-
-自监督学习在计算机视觉应用最新概述，108页ppt Self-supervised learning
-
-https://mp.weixin.qq.com/s/3kwLoojFjJoPz4pUuEVA8g
-
-神奇的自监督场景去遮挡
-
-https://mp.weixin.qq.com/s/eROWWPQkUs91bcv4VsQqSA
-
-NLP中的自监督表示学习，全是动图，很过瘾的
-
-https://mp.weixin.qq.com/s/IsLlzDWnUXe8LVp4Y1Jb_A
-
-35亿张图像！Facebook基于弱监督学习刷新ImageNet基准测试记录
-
-https://mp.weixin.qq.com/s/TEk_i4kEjUqmAqF8LgTVjg
-
-FAIR提出用聚类方法结合卷积网络，实现无监督端到端图像分类
-
-https://mp.weixin.qq.com/s/dSncg1pDHpIFOT4mXrFntA
-
-Yan Lecun自监督学习：机器能像人一样学习吗？ 110页PPT
-
-https://mp.weixin.qq.com/s/W4zwKqkVQN4v-IKzGrkudg
-
-通过传递不变性实现自监督视觉表征学习
-
-https://zhuanlan.zhihu.com/p/30265894
-
-自监督学习近期进展
-
-https://mp.weixin.qq.com/s/qyQjKsgktWv9SihotaQX3w
-
-从顶会看自监督学习最新研究进展

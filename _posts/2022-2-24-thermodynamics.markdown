@@ -151,7 +151,7 @@ https://mp.weixin.qq.com/s/Y6zjFQBche_tyOWF9VMtmg
 
 没有空调的夏天，古人到底要怎么熬呀！
 
-# 生物+++
+# 生物++
 
 https://mp.weixin.qq.com/s/VCV9VzwmvAiVrptl8XqSag
 

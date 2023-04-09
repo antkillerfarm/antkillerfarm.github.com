@@ -73,28 +73,6 @@ https://zhuanlan.zhihu.com/p/597586623
 
 通向AGI之路：大型语言模型（LLM）技术精要
 
-## Prompts
-
-不管是ChatGPT还是Stable Diffusion，对普通用户都像是黑箱，你在对话或者提供命令之前，并不能完全预知其结果。
-
-大家在使用同样的基础模型，为什么有人能画出“赛博 Coser”，有人却只能画出“克苏鲁古神”？
-
-prompt和instruction这俩词在LLM领域偶尔会容易被混为一谈，实际上二者虽然形式相近，都是用来解锁模型的能力，但本质思路却是截然相反的。
-
-prompt是让人来适应模型，给模型以提示。
-
-instruction是让模型听人指令，给模型以指令。
-
-由于目前对LLM的认识不足、研究不深，很大程度上需要依靠prompt工程来探索LLM的能力。早期的时候，prompt-tuning火了一阵儿，一度被誉为第四范式，但最近慢慢好像不这样提了，或者说提法慢慢变成了instruction-tuning。原因可能主要就在于思路上的转变，让人工来构建prompt去适应模型属于是个经验活儿、运气活儿，费力不一定讨好，不如反过来，直接从用户数据收集用户指令。
-
-https://www.zhihu.com/question/585294957
-
-ChatGPT爆火带动全新职业提示工程师，提示工程有多重要？未来该职业走向如何？
-
-https://zhuanlan.zhihu.com/p/608495853
-
-ChatGPT火爆，最全prompt工程指南登GitHub热榜
-
 ## GPT-4
 
 2023.3.15 OpenAI推出GPT-4。
@@ -126,6 +104,8 @@ Language Is Not All You Need: Aligning Perception with Language Models
 模型的基础能力强吊打一切，语种只是上层表达。
 
 RLHF论文中的训练数据英文占比99%+，西、法、德语还占了剩下的大部分，中文估计就是0.0x%这个级别，效果大家都体验到了，中文和其他小语种能力的提升同样也非常显著，这很强的证明这种训练方法是让模型学到了跨越语种的隐含信息。
+
+4月7日，阿里云在微信公众号官宣：自研大模型“通义千问”开始邀请用户测试体验。
 
 ---
 
@@ -286,3 +266,47 @@ NLP中各种各样的编码器
 https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
 
 预训练BERT，官方代码发布前他们是这样用TensorFlow解决的
+
+https://mp.weixin.qq.com/s/HOD1Hb70NhTXXCXlopzfng
+
+BERT推理加速实践
+
+https://mp.weixin.qq.com/s/0luHJsw7WWJskJWGThR5qg
+
+使用BERT做文本摘要
+
+https://mp.weixin.qq.com/s/IY8J09LvDAr8owYffKi5Dw
+
+五问BERT：深入理解NLP领域爆红的预训练模型
+
+https://zhuanlan.zhihu.com/p/106901954
+
+BERT, ELMo, & GPT-2: 这些上下文相关的表示到底有多上下文化？
+
+https://mp.weixin.qq.com/s/mkDmn4zy_s87kiiDIkx0VQ
+
+NLP的12种后BERT预训练方法
+
+https://www.zhihu.com/question/327450789
+
+Bert如何解决长文本问题？
+
+https://mp.weixin.qq.com/s/QTELpbr480AJsBINm-FHKQ
+
+代码也能预训练，微软&哈工大最新提出CodeBERT模型，支持自然-编程双语处理
+
+https://mp.weixin.qq.com/s/ZEWCcxTEuEMvQ5__t3gkBg
+
+BERT技术体系综述论文：40项分析探究BERT如何work
+
+https://mp.weixin.qq.com/s/OsfeAA_tbzAddh1eunwx2w
+
+关于BERT，面试官们都怎么问
+
+https://mp.weixin.qq.com/s/e3n_16uB-qGeGSaGwzlBDw
+
+这群工程师，业余将中文NLP推进了一大步（中文预训练模型）
+
+https://mp.weixin.qq.com/s/V4pbjP5na1OYp-TorUik8g
+
+详聊如何用BERT实现关系抽取

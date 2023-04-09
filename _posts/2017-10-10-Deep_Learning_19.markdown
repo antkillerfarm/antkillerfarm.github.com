@@ -7,6 +7,88 @@ category: DL
 * toc
 {:toc}
 
+# 无监督/半监督/自监督深度学习（续）
+
+https://mp.weixin.qq.com/s/qaLQK3uzaeyp68AbL0aOOQ
+
+怎么在视频标注上省钱？这里有一个面向视频推荐的多视图主动学习
+
+https://mp.weixin.qq.com/s/-cXOUw9zJteVUkbpRMIWtQ
+
+何恺明一作，刷新7项检测分割任务，无监督预训练完胜有监督
+
+https://mp.weixin.qq.com/s/wtHrHFoT2E_HLHukPdJUig
+
+OpenAI科学家一文详解自监督学习
+
+https://mp.weixin.qq.com/s/fy1gUElWVWcOVvzv6fGmdg
+
+谷歌大脑推出视觉领域任务自适应基准：VTAB
+
+https://zhuanlan.zhihu.com/p/80815225
+
+Image-Level弱监督图像语义分割汇总简析
+
+https://mp.weixin.qq.com/s/5czWf0xpqva5pmuvJDn5AQ
+
+Google研究院提出FixMatch，简单粗暴却极其有效的半监督学习方法，附14页PDF下载
+
+https://zhuanlan.zhihu.com/p/108088719
+
+SSL:Self-Supervised Learning(自监督学习)
+
+https://zhuanlan.zhihu.com/p/108625273
+
+Self-Supervised Learning入门介绍
+
+https://zhuanlan.zhihu.com/p/108906502
+
+Self-supervised Learning再次入门
+
+https://mp.weixin.qq.com/s/VvUj0S2OTf8BowGRjDuVag
+
+图解自监督学习，人工智能蛋糕中最大的一块
+
+https://mp.weixin.qq.com/s/df51T24mBVycBeI_M7QqOQ
+
+无标记数据学习, 83ppt
+
+https://mp.weixin.qq.com/s/2FxD6ga6b_WOdAni16wd2Q
+
+自监督学习在计算机视觉应用最新概述，108页ppt Self-supervised learning
+
+https://mp.weixin.qq.com/s/3kwLoojFjJoPz4pUuEVA8g
+
+神奇的自监督场景去遮挡
+
+https://mp.weixin.qq.com/s/eROWWPQkUs91bcv4VsQqSA
+
+NLP中的自监督表示学习，全是动图，很过瘾的
+
+https://mp.weixin.qq.com/s/IsLlzDWnUXe8LVp4Y1Jb_A
+
+35亿张图像！Facebook基于弱监督学习刷新ImageNet基准测试记录
+
+https://mp.weixin.qq.com/s/TEk_i4kEjUqmAqF8LgTVjg
+
+FAIR提出用聚类方法结合卷积网络，实现无监督端到端图像分类
+
+https://mp.weixin.qq.com/s/dSncg1pDHpIFOT4mXrFntA
+
+Yan Lecun自监督学习：机器能像人一样学习吗？ 110页PPT
+
+https://mp.weixin.qq.com/s/W4zwKqkVQN4v-IKzGrkudg
+
+通过传递不变性实现自监督视觉表征学习
+
+https://zhuanlan.zhihu.com/p/30265894
+
+自监督学习近期进展
+
+https://mp.weixin.qq.com/s/qyQjKsgktWv9SihotaQX3w
+
+从顶会看自监督学习最新研究进展
+
 # LSTM进阶
 
 ## 《Long short-term memory》
@@ -244,69 +326,3 @@ https://mp.weixin.qq.com/s/3djAWJs6ecDdPSpQMxqmrg
 https://mp.weixin.qq.com/s/__qC6Wzy4jaGNGzWr3eOIg
 
 引入额外门控运算，LSTM稍做修改，性能便堪比Transformer-XL
-
-# 俄乌战争=
-
-https://zhuanlan.zhihu.com/p/592954024
-
-“我们正在书写改变战争的大故事”——乌克兰军队是如何通过程序员来获得战场优势的
-
-https://www.zhihu.com/question/573879232
-
-如何评价当地时间12月22日，据塔斯社报道，俄罗斯库兹涅佐夫号航空母舰发生了火灾，没有人员伤亡?
-
-https://zhuanlan.zhihu.com/p/507119007
-
-乌克兰内阁组成人员简历 看看他们是不是有双重国籍？
-
-https://www.zhihu.com/answer/2837159962
-
-如果你是泽连斯基，你如何避免爆发战争？
-
-https://zhuanlan.zhihu.com/p/598377462
-
-余波——俄乌战争对叙利亚局势的影响
-
-https://zhuanlan.zhihu.com/p/603470366
-
-俄乌战争之情报战：一名乌克兰间谍被神秘杀害的来龙去脉
-
-https://zhuanlan.zhihu.com/p/603690330
-
-耗尽的遗产——俄罗斯坦克在俄乌战争中的改装
-
-https://zhuanlan.zhihu.com/p/609421277
-
-坦克没有过时、无人机主宰天空——俄乌战争的18个经验和教训
-
-https://www.zhihu.com/question/586911709
-
-俄军预警机A50疑似遇袭，大家如何看待此事？
-
-https://zhuanlan.zhihu.com/p/611595424
-
-权力斗争、炮弹短缺——瓦格纳-国防部的较量与俄罗斯的战争潜力
-
-https://zhuanlan.zhihu.com/p/608784859
-
-俄雇佣兵的子弹，没用来打乌军，瓦格纳把俄军大将，画在了靶子上
-
-https://zhuanlan.zhihu.com/p/538532137
-
-为了真正的信仰——战斗在乌克兰的国际军团
-
-https://zhuanlan.zhihu.com/p/615070298
-
-危险的攻势——乌克兰军队可能面临缺乏老兵的困境
-
-https://zhuanlan.zhihu.com/p/615630800
-
-恐惧蔓延——俄罗斯国防部将莫斯科划为防空作战区
-
-https://zhuanlan.zhihu.com/p/616389334
-
-侵略战争的附带伤害：俄罗斯边境城市面临水污染问题
-
-https://zhuanlan.zhihu.com/p/616547047
-
-马里乌波尔的居民开始被赶出普京访问过的房屋

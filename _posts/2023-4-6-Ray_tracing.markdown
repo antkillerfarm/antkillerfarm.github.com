@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Ray Tracing
-category: technology 
+title:  Ray Tracing, 数字成像（二）
+category: resource 
 ---
 
 * toc
@@ -100,3 +100,173 @@ https://www.cnblogs.com/machong8183/p/7543724.html
 https://gamebaby.blog.csdn.net/article/details/80399195
 
 光线追踪渲染（RayTracing Render）核心原理详解
+
+# 数字成像
+
+https://mp.weixin.qq.com/s/Fpy3_kljryrjEqoZz4IlNg
+
+电子后视镜（一）——相关标准汇总
+
+https://mp.weixin.qq.com/s/aUAD-SWJ6PEplrFRb5SHZg
+
+消除摩尔纹的光学方法
+
+https://mp.weixin.qq.com/s/yBd9qcmMHKIGx88voovFgw
+
+有趣的偏振相机
+
+https://mp.weixin.qq.com/s/eVtbmy8rJ6V2j-6XJ0JJCA
+
+夜景拍照之技术创新
+
+https://mp.weixin.qq.com/s/DH3mZgh4YbnceaFGs03kOQ
+
+曹汛：计算摄像学研究
+
+https://mp.weixin.qq.com/s/f2BIrZ8if7_rX__J9hMHog
+
+广色域---iphone X/8 camera的色彩进化
+
+https://mp.weixin.qq.com/s/VjzXYgkzAGloczaaPXni2A
+
+PDAF进化史
+
+https://mp.weixin.qq.com/s/vg64EpcCVsk7gQAoEozSRQ
+
+PDAF进阶
+
+https://mp.weixin.qq.com/s/m7q6jHbdnb7fw4lKIDfVWw
+
+camera接口之MIPI联盟浅谈
+
+https://mp.weixin.qq.com/s/DbDrDhbQAhXOsfxQ8UJVZg
+
+三星S9凝时摄影背后的sensor技术
+
+https://mp.weixin.qq.com/s/gOikxUxWpqdDRr6_KT2jxQ
+
+图像处理，计算机视觉与machine learning的区别与联系
+
+https://mp.weixin.qq.com/s/7fvVmmpPSldwa3TZ3dVb2g
+
+3D LUT--色彩校正的利器
+
+https://mp.weixin.qq.com/s/m_EKOLjWjTyx4RBxsAAAGg
+
+4x4阵列摄/“深感”摄
+
+https://mp.weixin.qq.com/s/dX_thGA2V_-AMjDGTUgWrg
+
+计算摄影技术：身怀绝技的扫地僧
+
+https://mp.weixin.qq.com/s/ZSczU1_J_exb2oreiHtK3g
+
+夜景拍照之sensor篇
+
+https://mp.weixin.qq.com/s/eyIeLaBZ0f_EsxglsUuH8A
+
+深度学习自动构图研究报告
+
+https://mp.weixin.qq.com/s/k2JLF_aM3j68GjEByCZF-g
+
+模拟/数字增益对图像噪声的影响
+
+https://mp.weixin.qq.com/s/QmEQuEk2B_fAleewTuNClg
+
+3D成像技术和CMOS传感器的发展方向简析
+
+https://mp.weixin.qq.com/s/R7wnyHT6M-KF3ZMz0bPrVg
+
+这台相机没镜头！美国教授新发明，一块玻璃可成像，拍照给计算机看
+
+https://mp.weixin.qq.com/s/j970Qp8Cz2fpbImujkS2Xg
+
+自动驾驶应用中的LED flicker问题
+
+https://mp.weixin.qq.com/s/Yy-XEyM0YGTRFUX2uWgNKw
+
+夜景拍照之算法篇
+
+https://mp.weixin.qq.com/s/h7MQhZjnP3lLkLD0cKNixA
+
+高动态范围成像的理论基础
+
+https://mp.weixin.qq.com/s/Wd6LD8Rme8XJwtYWU-ALtQ
+
+动态范围压缩（DRC）的四种方法
+
+https://mp.weixin.qq.com/s/7_mDPCEq3S-843PwUQSwXA
+
+车载相机image sensor选型
+
+https://mp.weixin.qq.com/s/byeQKa7d5FSLS7JrBwP_Zw
+
+什么是多光谱/高光谱成像
+
+https://mp.weixin.qq.com/s/nz9NHdyhRqxdhYopFQ_5Ag
+
+红外热成像与快速发热病患检测
+
+https://mp.weixin.qq.com/s/Htn1Il96fus7s8NkD2_98w
+
+Google Pixel4相机解密(1)夜景
+
+https://mp.weixin.qq.com/s/2uNcJxU-USpb-LZkka__eQ
+
+剖析苹果的激光雷达及参数估计
+
+https://mp.weixin.qq.com/s/DLsmHtUz3gAXMdzNsUTyFA
+
+苹果的DTOF中的SPAD原理和特性
+
+https://mp.weixin.qq.com/s/S8Wda_orUyco43FzV0cEeQ
+
+紫边/紫晕与图像传感器的关系
+
+https://zhuanlan.zhihu.com/p/74085115
+
+深度学习在3-D环境重建中的应用
+
+https://mp.weixin.qq.com/s/k9gff0Ote_V9qtN7HAruBA
+
+工业相机的sensor
+
+https://mp.weixin.qq.com/s/kvINl4pL4_wD71e33jaUSg
+
+下一代cmos image sensor---有机光导薄膜图像传感器
+
+https://mp.weixin.qq.com/s/024h8tPvCPPUyuT53CCPWQ
+
+液态镜头的发展与应用
+
+https://mp.weixin.qq.com/s/0XlH3fFKZBfX3UMq7eTbYw
+
+什么是event camera
+
+https://mp.weixin.qq.com/s/5fQDFlR5NZNW_HS2cOfTzg
+
+高光谱成像技术的介绍
+
+https://mp.weixin.qq.com/s/tSc_VKlohhhpT-3l37Bx0w
+
+激荡二十年——手机相机技术的发展历程
+
+https://mp.weixin.qq.com/s/GYpuj1rPRknWsRX6Av9XsQ
+
+各种有趣的屏下摄像头
+
+https://mp.weixin.qq.com/s/XihwGVU-8QJORfvENhhLnA
+
+图像传感器厂家大盘点（上）
+
+https://mp.weixin.qq.com/s/wSgSZA2c0fP3E8JgHn6yRQ
+
+AI时代的去马赛克算法
+
+https://mp.weixin.qq.com/s/YKL0Cwp1l9_4lAj8knMIqQ
+
+高级AI视觉算法是否还需要ISP?
+
+https://mp.weixin.qq.com/s/x4cz9mW1HOF8rtRv4uqLCQ
+
+门控相机：车载ADAS相机的未来？

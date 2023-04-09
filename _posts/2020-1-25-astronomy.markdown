@@ -155,6 +155,10 @@ https://www.zhihu.com/question/43718718
 
 恒星演化的一般进程是怎样的？
 
+https://www.zhihu.com/question/580797606
+
+恒星爆炸时，为什么反弹力量比跌落力量更大？
+
 ## 流浪地球
 
 https://mp.weixin.qq.com/s/O8tAEBMmZ29N1fr7BGW_UQ

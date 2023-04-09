@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  lex&yacc, 编译原理, Polyhedral Model
+title:  lex&yacc, 编译原理
 category: toolchain 
 ---
 
@@ -204,7 +204,7 @@ https://mp.weixin.qq.com/s/vnaI8FwB4Ot46weAgq18Eg
 
 https://www.zhihu.com/answer/812481811
 
-周志德（Fred Chow)
+周志德（Fred Chow）
 
 ---
 
@@ -244,56 +244,60 @@ https://zhuanlan.zhihu.com/p/94424139
 
 LL, LR文法浅析
 
-# Polyhedral Model
+## PPCG
 
-## 教程
+Polyhedral Parallel Code Generation
 
-Polyhedral Model的内容主要在《编译原理》（龙书）第十一章——并行和局部优化。
+代码：
 
-《多面体编译理论与深度学习实践》 赵捷 李宝亮著
+https://github.com/Meinersbur/ppcg
 
-https://www.cs.colostate.edu/~pouchet/
+## PLUTO
 
-888.11-Polyhedral Compilation Foundations
+An automatic parallelizer and locality optimizer for affine loop nests
 
-https://polyhedral.info/
+官网：
 
-一个Polyhedral方面的社区，有大量资料
+http://pluto-compiler.sourceforge.net/
 
-## 笔记
+参考：
 
-基于多面体模型的编译优化技术代表了程序自动并行化领域众多方向最先进的水平,成为国际上多个编译研发团队的研究热点。
+https://www.zhihu.com/question/329294933
 
-![](/images/img4/Polyhedral.png)
+如何评价PLUTO编译器？
 
-多面体模型(Polyhedral)主要关注的是程序设计中的循环优化，两层循环的循环变量的取值范围可以构成一个平面，三层循环的循环变量可以组成一个长方体，如上图所示，因此得名多面体模型。
+## ANTLR
 
-![](/images/img4/Polyhedral_2.png)
+ANTLR—Another Tool for Language Recognition，其前身是PCCTS，它为包括Java，C++，C#,python在内的语言提供了一个通过语法描述来自动构造自定义语言的识别器（recognizer），编译器（parser）和解释器（translator）的框架。
 
-多面体编译优化关注的是在确保程序执行正确的前提下重组循环的结构，实现性能最佳。上图左边表示的原始的二维迭代空间，蓝色箭头表示数据（黑点）之间存在依赖关系，对角线的绿色表示数据没有依赖关系，经过变基操作之后变为右图的表达式及迭代空间，从形状看像是把多面体进行了变形，形象地体现出多面体优化的过程。
+官网：
 
----
+http://www.antlr.org/
 
-Polyhedral Model在传统的CPU/GPU编译器领域已经有非常多的实践。
+参考：
 
-比如gcc中的Graphite：
+http://yuzhouwan.com/posts/55501/
 
-http://gcc.gnu.org/wiki/Graphite
+Antlr
 
-论文：
+https://www.ibm.com/developerworks/cn/java/j-lo-antlr/index.html
 
-GRAPHITE: Polyhedral Analyses and Optimizations for GCC
+使用Antlr开发领域语言
 
-还有LLVM中的polly：
+## MPS
 
-https://polly.llvm.org/
+MPS是jetbrains推出的用于构建DSL的工具。
 
-LLVM Framework for High-Level Loop and Data-Locality Optimizations
+官网：
 
----
+https://www.jetbrains.com/mps/
 
-计算图优化
+## 参考
 
-算子优化
+x86一开始并没有使用太多的通用寄存器，原因之一（注意，只是之一）是当时的编译器无力进行寄存器分配，让编译器自动决定程序中众多变量哪些应该装入寄存器哪些应该换出、哪些变量应该映射到同一个寄存器上，并不是一件易事，JVM采用堆栈结构的原因之一就是不信任编译器的寄存器分配能力，转而使用堆栈结构，躲开寄存器分配的难题。
 
-指令优化
+到80年代早期，IBM的G. J. Chaitin公开了他们的图染色寄存器分配算法之后，编译器的分配能力获得长足进步，形成了现在这样的编译器主导的寄存器分配格局。
+
+https://www.zhihu.com/question/24551779
+
+为什么ARM和MIPS那么多寄存器，x86那么少？

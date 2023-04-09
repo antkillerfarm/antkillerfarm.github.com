@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  硬盘安装Linux（grub2）
+title:  硬盘安装Linux（grub2）, Linux学习心得（五）
 category: linux 
 ---
 
@@ -102,8 +102,6 @@ https://www.cnblogs.com/gdme1320/p/9166564.html
 grub2引导系统iso镜像
 
 # Linux学习心得
-
-## Linux参考资源
 
 https://www.kernel.org/doc/html/latest/
 

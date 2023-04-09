@@ -7,11 +7,81 @@ category: DL acceleration
 * toc
 {:toc}
 
+# MPI（续）
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/69497154
+
+高性能计算--mpi
+
+https://mpitutorial.com/tutorials/
+
+MPI Tutorials
+
+https://zhuanlan.zhihu.com/p/363710263
+
+集体通信
+
+https://downey.io/notes/omscs/cse6220/distributed-memory-model-mpi-collectives/
+
+distributed memory model and mpi collectives
+
+https://blog.csdn.net/q19149/article/details/102594031
+
+集合通信函数图解
+
+https://zhuanlan.zhihu.com/p/465967735
+
+分布式训练硬核技术——通讯原语
+
+https://zhuanlan.zhihu.com/p/276122469
+
+分布式训练常用技术简介
+
+https://zhuanlan.zhihu.com/p/425830285
+
+最理想的点到点通信库究竟是怎样的？
+
 # 并行 & 框架 & 优化
 
 ## 概述
 
 ![](/images/img4/Deep_Learning_System.png)
+
+并行计算的必要性：
+
+美国Sandia国家实验室一项模拟测试证明：由于存储机制和内存带宽的限制，16核、32核甚至64核处理器对于超级计算机来说，不仅不能带来性能提升，甚至可能导致效率的大幅度下降。必须研究并行计算的算法，才能有效克服这些缺陷。
+
+![](/images/img2/speed.jpg)
+
+最早的并行计算项目是斯坦福大学的BrookGPU：
+
+http://graphics.stanford.edu/projects/brookgpu/
+
+科学家们很早就意识到GPU进行通用数值计算的可行性。然而GPU从创建之初，就主要针对图形渲染，早期的通用计算需要通过很复杂的处理，才能安排到GPU的pipeline中进行运算。BrookGPU的作用就是给通用数值计算提供一个相对简单的接口。
+
+随着GPU厂商逐渐意识到通用数值计算的重要性，并陆续提出了一些新框架。BrookGPU项目也就过时了。
+
+常见并行计算框架
+
+| 名称 | 优点 | 缺点 |
+|:--:|:--:|:--:|
+| CUDA | 生态系统良好，发展成熟。 | 只能NV的卡。 |
+| OpenCL | 跨平台，很容易异构计算。 | 大家都把它当作干儿子，没人认真写它的驱动。 |
+| C++ AMP | 基于Direct compute，易于使用。 | Windows Only。 |
+| OpenMP | 移植改动少 | CPU多线程而已，和GPU无关。 |
+| Metal | for iOS | - |
+
+其他的并行计算框架还有：OpenACC、AMD stream、PGI。
+
+## OpenCL vs CUDA
+
+![](/images/article/opencl_cuda.jpg)
+
+## OpenMp
+
+https://github.com/lapesd/libgomp
 
 ## 教程
 
@@ -243,81 +313,3 @@ https://www.zhihu.com/question/498271491
 https://mp.weixin.qq.com/s/Vb3AkoWHQY7WWBMZaVnf4g
 
 微软发布DeepSpeed开源库，支持1000亿个参数模型的训练
-
-## FSDP
-
-Fully Sharded Data Parallel是Facebook深度借鉴微软ZeRO之后提出的PyTorch DDP升级版本，可以认为是对标微软ZeRO，其本质是parameter sharding。Parameter sharding就是把模型参数等切分到各个GPU之上。
-
-![](/images/img5/FSDP.png)
-
-参考：
-
-https://www.cnblogs.com/rossiXYZ/p/15815013.html
-
-Facebook如何训练超大模型---(1)
-
-https://www.cnblogs.com/rossiXYZ/p/15819817.html
-
-Facebook如何训练超大模型---(2)
-
-https://zhuanlan.zhihu.com/p/485208899
-
-数据并行Deep-dive: 从DP到Fully Sharded Data Parallel（FSDP）完全分片数据并行
-
-## 参考
-
-https://mp.weixin.qq.com/s/ai_XI8ddP5I2m3ChCqnQsA
-
-高效大规模机器学习训练，198页PDF带你概览领域前沿进展
-
-https://openmlsys.github.io
-
-机器学习系统：设计和实现
-
-https://mp.weixin.qq.com/s/RAjusu-Jyqb8K19N8KZ_3w
-
-一份552页《大规模数据系统：Large-scale Data Systems》硬核课程PPT
-
-https://mp.weixin.qq.com/s/AeCQK2hFy60pq6y1tRcs_A
-
-20页pdf，A Survey on Large-scale Machine
-
-https://mp.weixin.qq.com/s/_1Yr_BbFhlNEW7UtYvAaoA
-
-分布式深度学习，93页ppt概述最新DDL技术发展
-
-https://mp.weixin.qq.com/s/jC5v9BKQvlxa2_6cikXV9w
-
-分布式算法与优化，118页pdf
-
-https://zhuanlan.zhihu.com/p/58806183
-
-深度学习的分布和并行处理系统
-
-https://zhuanlan.zhihu.com/p/56991108
-
-一文说清楚Tensorflow分布式训练必备知识
-
-https://zhuanlan.zhihu.com/p/26552293
-
-Dataflow架构和神经网络加速器
-
-https://zhuanlan.zhihu.com/p/28445511
-
-浅析深度学习框架设计中的关键技术
-
-https://mp.weixin.qq.com/s/wu32LBwrkkBIANMdknHlCA
-
-C++并行实战，592页pdf，C++ Concurrency in Action
-
-https://mp.weixin.qq.com/s/heVQ9AIZKxTiCNiAtYKaag
-
-新加坡国立大学最新“大规模深度学习优化”综述论文，带你全面了解最新深度学习准确率和效率的优化方法
-
-https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
-
-IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能
-
-http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
-
-神经网络的分布式训练

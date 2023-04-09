@@ -139,6 +139,10 @@ https://www.zhihu.com/question/593770520
 
 首批因AI失业的人来了，有公司已裁减原画师，导演陆川力赞AI海报高效优质，哪些职位容易被取代？
 
+https://zhuanlan.zhihu.com/p/619730103
+
+AI绘画教程：如何用Stable Diffusion始终画同一个人？
+
 ## 参考
 
 https://mp.weixin.qq.com/s/djkjAfUO_DefTP2drzY_iQ

@@ -253,13 +253,3 @@ https://mp.weixin.qq.com/s/x6MWXZAFgyv2HDaVll9S6A
 https://mp.weixin.qq.com/s/eXRy9kZqDlph96BdWwWwXQ
 
 49页ppt，Edge Computing for Infrastructure
-
-# BERT进阶+
-
-https://zhuanlan.zhihu.com/p/91052495
-
-当BERT遇上知识图谱
-
-https://mp.weixin.qq.com/s/wQW-JT-sGMj60OtXwTssyQ
-
-BERT模型推理加速总结

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  浮点运算和代码优化, 并行计算, 稀疏矩阵的存储, Optimizer软件, Zookeeper
-category: AI 
+title:  浮点运算和代码优化, MPI
+category: DL acceleration 
 ---
 
 * toc
@@ -131,151 +131,165 @@ https://zhuanlan.zhihu.com/p/482979228
 
 看完微软大神写的求平均值代码，我意识到自己还是too young了
 
-# 并行计算
+# MPI
 
-## 概述
+集群可以很好解决单节点计算力不足的问题，但在集群中大规模的数据交换是很耗费时间的，因此需要一种在多节点的情况下能快速进行数据交流的标准，这就是Message passing interface(MPI)。
 
-并行计算的必要性：
+MPI的主流实现主要是：mpich和openmpi。
 
-美国Sandia国家实验室一项模拟测试证明：由于存储机制和内存带宽的限制，16核、32核甚至64核处理器对于超级计算机来说，不仅不能带来性能提升，甚至可能导致效率的大幅度下降。必须研究并行计算的算法，才能有效克服这些缺陷。
+和MPI类似的技术，还有NVIDIA的NCCL，FaceBook的gloo等。
 
-![](/images/img2/speed.jpg)
+MPI官网：
 
-最早的并行计算项目是斯坦福大学的BrookGPU：
+http://www.mpi-forum.org/docs/
 
-http://graphics.stanford.edu/projects/brookgpu/
+1994：MPI-1
 
-科学家们很早就意识到GPU进行通用数值计算的可行性。然而GPU从创建之初，就主要针对图形渲染，早期的通用计算需要通过很复杂的处理，才能安排到GPU的pipeline中进行运算。BrookGPU的作用就是给通用数值计算提供一个相对简单的接口。
+1998：MPI-2
 
-随着GPU厂商逐渐意识到通用数值计算的重要性，并陆续提出了一些新框架。BrookGPU项目也就过时了。
+2012：MPI-3
 
-常见并行计算框架
+2021：MPI-4
 
-| 名称 | 优点 | 缺点 |
-|:--:|:--:|:--:|
-| CUDA | 生态系统良好，发展成熟。 | 只能NV的卡。 |
-| OpenCL | 跨平台，很容易异构计算。 | 大家都把它当作干儿子，没人认真写它的驱动。 |
-| C++ AMP | 基于Direct compute，易于使用。 | Windows Only。 |
-| OpenMP | 移植改动少 | CPU多线程而已，和GPU无关。 |
-| Metal | for iOS | - |
+因为MPI的历史比较久远，深刻影响了后来的分布式并行程序，比如TF等。所以这里简单介绍一下几个关键的术语。
 
-其他的并行计算框架还有：OpenACC、AMD stream、PGI。
+gloo官网：
 
-## OpenCL vs CUDA
+https://github.com/facebookincubator/gloo
 
-![](/images/article/opencl_cuda.jpg)
+## Barrier
 
-## OpenMp
+![](/images/img4/barrier.png)
 
-https://github.com/lapesd/libgomp
+这个方法会构建一个屏障，任何进程都没法跨越屏障，直到所有的进程都到达屏障。
 
-## 教程
+实现屏障的方式有很多，最简单的是令牌环（token ring）。
 
-http://blog.csdn.net/augusdi/article/details/12833235
+第一个进程到达的屏障生成一个token，然后传递给下一个到达屏障的进程。所有的进程都到达屏障之后，token被传递回第一个进程。
 
-这是一篇转帖的CUDA教程，原帖比较分散，不好看。
+`MPI_Barrier`在TF中被称为`AfterAll`。
 
-# 稀疏矩阵的存储
+## Bcast & Scatter
 
-## Dictionary of keys (DOK)
+![](/images/img4/broadcastvsscatter.png)
 
-这种方法是最直观，也最容易想到的：将非零元素用`{(row, column): value}`的形式保存。
+`MPI_Bcast`给每个进程发送的是同样的数据，然而`MPI_Scatter`给每个进程发送的是一个数组的一部分数据。
 
-## List of lists (LIL)
+![](/images/img4/broadcast_tree.png)
 
-一行数据就是一个list，这样每个数据只需要保存column index和value即可。
+在上图的树形算法里，能够利用的网络连接每个阶段都会比前一阶段翻番，直到所有的进程接收到数据为止。
 
-## Coordinate list (COO)
+## Gather & Allgather
 
-这个方法在DOK的基础上，给同一行的元素建立行索引，给同一列的元素建立列索引。显然DOK适用于硬盘存储，而LIL和COO更适合内存存储，因为后者更需要元素访问的便利性。
+![](/images/img4/gather.png)
 
-## Compressed sparse row (CSR, CRS or Yale format)
+`MPI_Gather`跟`MPI_Scatter`是相反的。
 
-```python
-[0 0 0 0
-5 8 0 0
-0 0 3 0
-0 6 0 0]
+![](/images/img4/allgather.png)
 
-A  = [ 5 8 3 6 ]
-JA = [ 0 1 2 1 ]
-IA = [ 0 0 2 3 4 ]
+`MPI_Allgather`相当于一个`MPI_Gather`操作之后跟着一个`MPI_Bcast`操作。
+
+## Reduce & Allreduce
+
+![](/images/img4/mpi_reduce_1.png)
+
+数据归约包括通过函数将一组数字归约为较小的一组数字。例如，假设我们有一个数字列表[1,2,3,4,5]。用sum函数归约此数字列表将产生`sum([1、2、3、4、5]) = 15`。
+
+![](/images/img4/mpi_allreduce_1.png)
+
+`MPI_Allreduce`等效于先执行`MPI_Reduce`，然后执行`MPI_Bcast`。
+
+## Alltoall
+
+![](/images/img4/all-to-all-collective.png)
+
+`MPI_Alltoall`的工作方式是`MPI_Scatter`和`MPI_Gather`的组合。它的用途之一就是上图所示的数据的行列转置,但它比转置要灵活的多。
+
+## groups
+
+以上这些操作都涉及了多个计算节点。执行同一操作的多个节点组成一个group。
+
+group里包含了相关的节点的id，如果group为null，则该操作会在整个计算集群上执行。两个group可以进行交集、并集之类的集合运算，生成新的group。
+
+## 总结
+
+```cpp
+ScatterGather(SrcIDRange,SrcAddr,DstIDRange,DstAddr,UnitSize,TotalSize)
+When there is only one source and UnitSize = TotalSize, it is a Broadcast
+When there is only one source and UnitSize != TotalSize, it is a Scatter
+When there is only one destination and UnitSize = TotalSize, it is a Gather
+When UnitSize = TotalSize and there are multiple sources and destinations, it is a AllGather operation
+When UnitSize != TotalSize and there are multiple sources and destinations, it is a All-to-All operation
 ```
 
-其中，A是非零元素的value，JA是非零元素的column index。
+从上面可以看出，除了Reduce一系的操作之外，其他的都可以总结为Scatter+Gather。
 
-IA是每行的非零元素在A的offset（类似于文件操作中的游标）。比如第一行没有非零元素，因此第一行的offset为0，第二行也为0。但是第二行有两个非零元素，因此第三行的offset需要+2。依此类推。
+Scatter也被称为One-to-all，Gather也被称为All-to-one。
 
-按照这个规则，可以看出A和JA中的元素个数相等，而IA的元素个数=行数+1。由于IA的最后一个元素必然和A中的元素个数相等（矩阵都遍历完了，offset当然到末尾了），因此有时也会把它省略。
+## AllReduce
 
-# Optimizer软件
+AllReduce有多种具体的实现方式。
 
-## 统计类
+Ring AllReduce：
 
-在前ML时代，工业界已经有不少Optimizer软件用于求解凸优化问题，这些软件从原理上基本都属于传统统计学的范畴。
+![](/images/img4/Ring_AllReduce.jpg)
 
-比较知名的Optimizer软件有：CPlex, Gurobi, Mosek, cvx, LINGO。
+Having-Doubling AllReduce：
 
-参考：
+![](/images/img4/Having-Doubling_AllReduce.jpg)
 
-https://mp.weixin.qq.com/s/kdfGUzY6KnI3tpcDg0GX6w
+该算法每次选择节点距离倍增的节点相互通信，每次通信量倍减（或倍增）。
 
-运筹优化问题求解工具Lingo
+该算法的优点是通信步骤较少，只有$$2 * log_2N$$次（其中N表示参与通信的节点数）通信即可完成，所以其有更低的延迟。相比之下Ring算法的通信步骤是$$2 ∗ (N−1)$$次；缺点是每一个步骤相互通信的节点均不相同，链接来回切换会带来额外开销。
 
-https://mp.weixin.qq.com/s/ooYg7-pI9axo8Z_vUwMGzg
+ring all-reduce具有理论上最优的传输带宽，而没有考虑每次传输都包含的延迟（latency）。当数据量V比较大时，延迟项可以忽略。当V特别小，或者设备数p特别大时，带宽就变得不重要了，反而是延迟比较关键。
 
-离散优化求解器大搜罗
+这也是为什么英伟达NCCL里既实现了ring all-reduce，也实现了double-tree all-reduce算法。
 
-https://mp.weixin.qq.com/s/_uGNwcvsIpzQyH6fI_HIPw
+https://www.zhihu.com/question/57799212
 
-MOSEK，一个专注而卓越的优化求解器（一）
+ring allreduce和tree allreduce的具体区别是什么？
 
-https://mp.weixin.qq.com/s/q0x9pXz7p7OciWqBOIV5JQ
+https://andrew.gibiansky.com/blog/machine-learning/baidu-allreduce/
 
-XPROG: 简单实用的鲁棒优化(RO, DRO)编程语言
+Bringing HPC Techniques to Deep Learning
 
-https://mp.weixin.qq.com/s/wJAt-RqmsoyECLGgdlH6RA
+https://zhuanlan.zhihu.com/p/79030485
 
-基于数据的分布式鲁棒优化算法及其应用
+AllReduce算法的前世今生
 
-# Zookeeper
+https://mp.weixin.qq.com/s/4XMVYXnzpYZ4DrIabuTUig
 
-http://zookeeper.apache.org/
+Ring All-reduce: 分布式深度学习的巧妙同步
 
-`bin/zkServer.sh status`
+https://zhuanlan.zhihu.com/p/504957661
 
-http://www.cnblogs.com/lpshou/archive/2013/06/14/3136904.html
+手把手推导Ring All-reduce的数学性质
 
-zookeeper原理
+https://developer.nvidia.com/blog/massively-scale-deep-learning-training-nccl-2-4/
 
-https://mp.weixin.qq.com/s/WPyJC4nyLQGWk-OQylUHHw
+Massively Scale Your Deep Learning Training with NCCL 2.4
 
-Zookeeper简单介绍
+https://zhuanlan.zhihu.com/p/611229620
 
-http://www.ibm.com/developerworks/cn/opensource/os-cn-zookeeper/index.html
+NVIDIA的custom allreduce
 
-分布式服务框架Zookeeper--管理分布式环境中的数据
+## 其他概念
 
-https://mp.weixin.qq.com/s/uMj3JEhgyYw4CaIhP1-GTQ
+这里的有些概念并非MPI的内容，但在分布式计算中，应用的比较广，所以就放在这里了。
 
-阿里巴巴为什么不用ZooKeeper做服务发现？
+rank：进程号，在多进程上下文中，我们通常假定rank 0是第一个进程或者主进程，也被称为coordinator（master）。其余的进程为worker。由Rank0来协调所有Rank的进度。
 
-https://mp.weixin.qq.com/s/KFzJAxL_xvrrjhubd7zH-Q
+node：物理节点，可以是一个容器也可以是一台机器，节点内部可以有多个GPU。
 
-Facebook为何放弃ZooKeeper转用自研配置管理系统？
+local_rank：指在一个node上进程的相对序号，local_rank在node之间相互独立。
 
-https://mp.weixin.qq.com/s/DigeE4YxuT55cSeyb1q1tQ
+![](/images/img4/rank.png)
 
-ZooKeeper源码和实践揭秘
+rank与GPU之间没有必然的对应关系，一个rank可以包含多个GPU；一个GPU也可以为多个rank服务（多进程共享GPU），只是习惯上默认一个rank对应着一个GPU。
 
-https://mp.weixin.qq.com/s/Tb670Jdt4s7CKzGZZQRL_A
+---
 
-用大白话给你解释Zookeeper的选举机制
+stencil计算：
 
-https://mp.weixin.qq.com/s/BejPSfvEe98nSch81WKgAg
-
-Zookeeper九个问题
-
-https://mp.weixin.qq.com/s/03A4LnDqNhNgQ5bSRIgR_Q
-
-一举拿下高可用与分布式协调系统设计
+![](/images/img5/stencil.jpg)

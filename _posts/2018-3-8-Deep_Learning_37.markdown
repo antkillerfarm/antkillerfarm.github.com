@@ -173,76 +173,144 @@ https://mp.weixin.qq.com/s/qgP39JKD3fbVNK8e4Hw4PQ
 
 重邮高新波等最新《少样本目标检测算法》综述论文
 
-# 姿态/行为检测进阶+
+# DRL参考资源+
 
-https://mp.weixin.qq.com/s/6HsL2B7p-XyvGWAb4SwALA
+https://mp.weixin.qq.com/s/W9yhj7_frLYWJocoBR1TMQ
 
-图灵奖得主Geoffrey Hinton最新研究NASA：一种更好地学习三维模型动作的方法
+避免AI错把黑人识别为大猩猩：伯克利大学提出协同反向强化学习
 
-https://zhuanlan.zhihu.com/p/26460437
+https://mp.weixin.qq.com/s/p2hlc2PsLgrvxOF8wBZANg
 
-Video Analysis相关领域解读之Action Recognition(行为识别)
+李飞飞高徒范麟熙解析强化学习在游戏和现实中的应用
 
-https://zhuanlan.zhihu.com/p/26603387
+http://mp.weixin.qq.com/s/EPbKE-TAnAPugJDhXHEyNA
 
-Video Analysis相关领域解读之Temporal Action Detection(时序行为检测)
+DeepMind开源Psychlab平台——搭建AI和认知心理学的桥梁
 
-https://zhuanlan.zhihu.com/p/26730181
+https://mp.weixin.qq.com/s/xJ_g3BvbM-WaIyLthHdhEw
 
-Video Analysis相关领域介绍之Video Captioning(视频to文字描述)
+DeepMind发布通用强化学习新范式，自主机器人可学会任何任务
 
-https://mp.weixin.qq.com/s/-HEYU_El8xysk8atHYx1Mg
+https://mp.weixin.qq.com/s/3HYELsdYwCJeUmXDBXx8NQ
 
-基于3D行人姿态和步态预测的神经网络模型
+这款超火的游戏，AI只用4小时，就秀出了人类花1年才能达到的水平
 
-https://zhuanlan.zhihu.com/p/72561165
+https://mp.weixin.qq.com/s/aEXi3XqcrWpAtdcMkFhBxw
 
-重新思考人体姿态估计 Rethinking Human Pose Estimation
+强化学习中的调参经验与编程技巧（on policy篇）
 
-https://mp.weixin.qq.com/s/8vdTlIe9LV88AVw9kAcVjA
+https://mp.weixin.qq.com/s/VpvgNhktLBl_p9gkanp4Pw
 
-基于空间AdaIN的深度姿态迁移
+2020格斗游戏AI冠军方案：基于强化学习对手建模的滚动时域演化算法
 
-https://zhuanlan.zhihu.com/p/129279351
+https://mp.weixin.qq.com/s/hb7iiJDWnNAXXUJmYKbqaw
 
-X3D Facebook视频理解/行为识别新作
+强化学习帮我通关了超级玛丽！
 
-https://zhuanlan.zhihu.com/p/149429010
+https://mp.weixin.qq.com/s/BoZQ8aMF2Aohj536qhfWPg
 
-TAM: 针对动作识别的时序自适应模块
+Nature重磅：OpenAI科学家提出全新增强学习算法，玩游戏可完胜人类，或推动AI向真正智能学习体进化（Go-Explore）
 
-https://mp.weixin.qq.com/s/skCOaKf9kRABTX7hkdjGXA
+https://mp.weixin.qq.com/s/HBqX6pz4EzO70YpmQ8xtRw
 
-谷歌极速人脸、手、人体姿态分析Blaze算法家族
+世界上最难的“沙雕”游戏被AI攻破了
 
-https://zhuanlan.zhihu.com/p/69042249
+https://mp.weixin.qq.com/s/teBlXXw4JQ8k3olCDOKXyw
 
-2020 Pose Estimation人体骨骼关键点检测综述笔记
+量化金融自动交易的深度强化学习库。哥大开源“FinRL”
 
-https://zhuanlan.zhihu.com/p/164603050
+https://mp.weixin.qq.com/s/8UX65PGZkRokguLTnoGVFA
 
-3D Pose Estimation关键点检测的算法整理（2020）
+强化学习组合优化综述论文
 
-https://mp.weixin.qq.com/s/AW-L_5acaDzGTObUGjTuuw
+https://mp.weixin.qq.com/s/Cfim24MSmClvo2HjW7thTw
 
-用AI“驯服”人类幼崽：这个奶爸找到了硬核带娃的乐趣
+最强原创综述！当强化学习邂逅组合优化
 
-https://mp.weixin.qq.com/s/P4FxL2jAXaJYZ0ZTY8xtzg
+https://mp.weixin.qq.com/s/nNTag_D_qN7WcE7DEMJFaA
 
-深度学习人体姿态估计：2014-2020全面调研
+横扫6个SOTA，吊打强化学习！谷歌最强行为克隆算法登CoRL顶会，机器人干活10倍速
 
-https://zhuanlan.zhihu.com/p/414173365
+https://mp.weixin.qq.com/s/0AM4eASolsPZ7GtPYVBqDQ
 
-记一次坎坷的算法需求实现：轻量级人体姿态估计模型的修炼之路（附MoveNet复现经验）
+伯克利今年大热的DeepMimic开源了~
 
-https://mp.weixin.qq.com/s/zzFb55Yj9j3x_pxeXRlOaw
+https://zhuanlan.zhihu.com/p/35567591
 
-在线试玩，在体感游戏中打败泰森，这位小哥破解了任天堂“拳无虚发”（MoveNet）
+强化学习在关系抽取、QA场景的应用
 
-# 俄乌战争-
+https://mp.weixin.qq.com/s/zWo2iSiJBEBwnFF478xxfQ
 
-之前伪居民虽持有俄罗斯护照，但是开战后不能随意入境，毕竟是主卑有别，公投后万一伪居民逃战乱涌入俄罗斯怎么办？
+DeepMind：探索人类行为中的强化学习机制
 
-https://www.zhihu.com/answer/2722552656
+https://mp.weixin.qq.com/s/oOslkEklaZSbRb8eDDCRBw
 
-普京宣布在顿涅茨克等四地实施战时状态
+天津大学、东京大学等研究：用深度强化学习检测模型缺陷
+
+https://mp.weixin.qq.com/s/DNT9rMynbN4Th0AVDHeY_w
+
+BAIR提出人机合作新范式：教你如何高效安全地在月球着陆
+
+https://mp.weixin.qq.com/s/KqLCTSYk1C0wYpJw-hpc1g
+
+论强化学习和概率推断的等价性：一种全新概率模型
+
+https://mp.weixin.qq.com/s/zRXs3BCEqXUruw746rZusw
+
+牛津大学联合7家单位发布AutoRL综述，还在手动调参吗？你已经落后了
+
+https://mp.weixin.qq.com/s/wPWV6kxkRlYb9dMf6ADWkQ
+
+史上首次，强化学习算法控制核聚变登上Nature：DeepMind让人造太阳向前一大步
+
+https://mp.weixin.qq.com/s/U0K79ELLj4wsOR4sd5G4Vw
+
+Vicarious详解新型图式网络：赋予强化学习泛化能力
+
+https://mp.weixin.qq.com/s/C8hsGkHGtoaS9Vzm6Ub4tw
+
+Berkeley提出“随机搜索”训练线性策略，提高RL的性能
+
+https://mp.weixin.qq.com/s/uppNSwxNrw4_8NGBQv85xw
+
+今日头条首次改进DQN网络，解决推荐中的在线广告投放问题
+
+https://mp.weixin.qq.com/s/JtUuFdTK4Q5YwnVj3BFU2w
+
+全参数化分布，提升强化学习中的收益分布拟合能力
+
+https://mp.weixin.qq.com/s/amXiNKJPEkAnu2m5NAERVw
+
+Top-K Oﬀ-Policy Correction
+
+https://mp.weixin.qq.com/s/kNtzy9-6GbsRhlL-mxksew
+
+基于强化学习的人机对话
+
+https://mp.weixin.qq.com/s/w3SsadgKaL8-tlzYLvMm-A
+
+讲真？一天就学会了自动驾驶——强化学习在自动驾驶的应用
+
+https://mp.weixin.qq.com/s/nnWuIPk_6mI9IAKIUbx6KQ
+
+深度强化学习解决交通控制问题
+
+https://mp.weixin.qq.com/s/RNJonPJL9JY5OH2-1sZMQw
+
+中山大学HCP实验室：基于树状结构策略的渐进强化学习
+
+https://mp.weixin.qq.com/s/G2sFkuvSeYmhkFjjPRGI-Q
+
+强化学习如何用于推荐？新南威尔士首篇《深度强化学习推荐系统》综述论文
+
+https://mp.weixin.qq.com/s/fMjjGCzef-3SVIOlUf2EFA
+
+强化学习如何用于推荐？厦大最新《强化学习推荐系统》综述论文
+
+https://mp.weixin.qq.com/s/8cV3Z_vkC0_cyfO2nVKoSw
+
+华人博士用强化学习回收了SpaceX火箭
+
+https://mp.weixin.qq.com/s/_-WSoeOqXMhR7S0PtyYixQ
+
+深度强化学习探索算法最新综述，近200篇文献揭示挑战和未来方向

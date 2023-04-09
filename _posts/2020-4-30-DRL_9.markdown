@@ -77,6 +77,10 @@ https://mp.weixin.qq.com/s/yU-6r-7l50y5msw8gUWnUQ
 
 # Model Predictive Control
 
+MPC（Model Predictive Control）+WBC (Whole-Body Control)是典型的做腿足类机器人用的算法。
+
+机械臂+灵巧手+移动小车，一般被称为AMR（Autonomous Mobile Robot）。
+
 教程：
 
 http://cse.lab.imtlucca.it/~bemporad/mpc_course.html
@@ -99,7 +103,7 @@ https://mp.weixin.qq.com/s/pMnbVWDDVgIdFpzkfSUd5Q
 
 https://mp.weixin.qq.com/s/UAPbNq_KNWCFd7p8U8HnYQ
 
-模型预测控制（MPC)
+模型预测控制（MPC）
 
 https://zhuanlan.zhihu.com/p/99409532
 

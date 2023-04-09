@@ -65,11 +65,11 @@ CAP理论告诉我们，一个分布式系统不可能同时满足一致性，�
 
 BASE来自于互联网的电子商务领域的实践，它是基于CAP理论逐步演化而来，核心思想是即便不能达到强一致性(Strong consistency)，但可以根据应用特点采用适当的方式来达到最终一致性(Eventual consistency)的效果。BASE是Basically Available、Soft state、Eventually consistent三个词组的简写，是对CAP中C&A的延伸。BASE的含义：
 
-(1)Basically Available：基本可用；
+(1)Basically Available：基本可用；指分布式系统在出现故障时，允许损失部分的可用性来保证核心可用。
 
 (2)Soft-state：软状态/柔性事务，即状态可以有一段时间的不同步；
 
-(3)Eventual consistency：最终一致性；
+(3)Eventual consistency：最终一致性；指分布式系统中的所有副本数据经过一定时间后，最终能够达到一致的状态。
 
 BASE是反ACID的，它完全不同于ACID模型，牺牲强一致性，获得基本可用性和柔性可靠性并要求达到最终一致性。
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（四十）——模型驱动 vs 数据驱动, 特征工程, 维度灾难
+title:  机器学习（四十）——模型驱动 vs 数据驱动, 特征工程, 维度灾难, Metaverse
 category: ML 
 ---
 
@@ -219,6 +219,18 @@ https://mp.weixin.qq.com/s/iWIjwThUiVc1ifvf5-cf7w
 
 什么是维度灾难？
 
+# Metaverse
+
+“元宇宙”这一概念源于美国作家 Neal Stephenson 在1992年出版的科幻小说《雪崩》（Snow Crash）。“ meta ” 意为“超越”“元”，与“ Universe ”（宇宙）相结合，即“元宇宙”。简单来说，元宇宙是一个可以映射现实世界、又独立于现实世界的虚拟空间。然而，关于元宇宙的最令人兴奋的不只是技术层面上的构建，更是改变彼此现有社交方式的巨大潜力。
+
+https://mp.weixin.qq.com/s/KmODAixbwztg7A_jiNrm9g
+
+《元宇宙Metaverse》报告，53页ppt
+
+https://mp.weixin.qq.com/s/QzDKFinw9sXXfKNbG0Rchw
+
+清华大学：2021元宇宙研究报告
+
 # 印度+
 
 https://mp.weixin.qq.com/s/6NrLtMP2VEa1OpAK99BU4w
@@ -268,3 +280,7 @@ https://mp.weixin.qq.com/s/4mn2RqkefkpAD3NsEhqHpQ
 https://zhuanlan.zhihu.com/p/613560508
 
 印度乱伦为何屡禁不止？
+
+https://zhuanlan.zhihu.com/p/619133532
+
+切断这条走廊，印度会分裂么？
