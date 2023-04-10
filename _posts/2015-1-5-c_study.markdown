@@ -327,9 +327,17 @@ struct Derive : public Base{
 };
 ```
 
+当子类中的成员函数和基类同名时，子类中重定义的成员函数将隐藏基类中的版本，即使函数原型不同也是如此。
+
+如果要取消这种隐藏，需要显式使用using。
+
 http://blog.csdn.net/cnsword/article/details/8034947
 
 C++11老关键字的新含义(auto, using，extern)
+
+https://www.cnblogs.com/wishchin/p/9199835.html
+
+C++11：using的各种作用
 
 6.列表初始化
 
@@ -370,39 +378,3 @@ C++11列表初始化-花括号的使用
 宏使用：
 
 `CC_DEPRECATED_ATTRIBUTE static TextureCache * getInstance();`
-
-# 关于引用的一个常见错误
-
-```c
-class Base
-{
-  public:
-    void something(Base& b){}
-};
-
-int main()
-{
-  Base b;
-  b.something(Base());
-  return 0;           
-}
-```
-
-上面的代码在编译时，会出现如下错误信息：
-
-```text
-abc.cpp:12:20: error: no matching function for call to ‘Base::something(Base)’
-abc.cpp:12:20: note: candidate is:
-abc.cpp:6:7: note: void Base::something(Base&)
-abc.cpp:6:7: note: no known conversion for argument 1 from ‘Base’ to ‘Base&’
-```
-
-这是由于`Base()`生成的是临时变量，将之赋值给一个non-const的引用是不行的。
-
-解决方法是
-
-`void something(const Base& b){}`
-
-可以参看下文：
-
-http://stackoverflow.com/questions/20247525/about-c-conversion-no-known-conversion-for-argument-1-from-some-class-to

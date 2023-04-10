@@ -374,29 +374,3 @@ perl的语法和C差别不算太大，好多语法大致上从关键字也可以
 `%name`：哈希数组name。
 
 perl的包管理器叫做cpan。这实际上也是该工具网站的名字。
-
-# C/C++参考资源+
-
-https://www.zhihu.com/question/447592340
-
-C语言的源程序是可以直接运行吗？（C语言的解释执行）
-
-https://zhuanlan.zhihu.com/p/346465585
-
-极大提高你开发效率的C++ tricks
-
-https://www.zhihu.com/question/280665935
-
-为什么C/C++要分为头文件和源文件？
-
-https://www.zhihu.com/question/485183321
-
-一个接口只有一个实现类，写接口的意义是什么？只写类不写接口不是更简单且清晰吗？
-
-https://www.zhihu.com/question/36642771
-
-C++的string为什么不提供split函数？
-
-https://zhuanlan.zhihu.com/p/458947637
-
-C++编程技巧: Pimpl

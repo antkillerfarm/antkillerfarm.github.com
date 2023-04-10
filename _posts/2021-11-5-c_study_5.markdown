@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  C/C++编程心得（五）, C++ Test framework
+title:  C/C++编程心得（五）
 category: language 
 ---
 
@@ -216,6 +216,42 @@ https://www.zhihu.com/question/27000013
 
 什么时候应当依靠返回值优化（RVO）？
 
+# 关于引用的一个常见错误
+
+```c
+class Base
+{
+  public:
+    void something(Base& b){}
+};
+
+int main()
+{
+  Base b;
+  b.something(Base());
+  return 0;           
+}
+```
+
+上面的代码在编译时，会出现如下错误信息：
+
+```text
+abc.cpp:12:20: error: no matching function for call to ‘Base::something(Base)’
+abc.cpp:12:20: note: candidate is:
+abc.cpp:6:7: note: void Base::something(Base&)
+abc.cpp:6:7: note: no known conversion for argument 1 from ‘Base’ to ‘Base&’
+```
+
+这是由于`Base()`生成的是临时变量，将之赋值给一个non-const的引用是不行的。
+
+解决方法是
+
+`void something(const Base& b){}`
+
+可以参看下文：
+
+http://stackoverflow.com/questions/20247525/about-c-conversion-no-known-conversion-for-argument-1-from-some-class-to
+
 ## 参考
 
 `vector<bool>`并不是一个通常意义上的vector容器，这个源自于历史遗留问题。 早在C++98的时候，就有`vector< bool>`这个类型了，但是因为当时为了考虑到节省空间的想法，所以`vector<bool>`里面不是一个Byte一个Byte储存的，它是一个bit一个bit储存的！
@@ -290,110 +326,26 @@ https://zhuanlan.zhihu.com/p/58976871
 
 编程风格之声明式与命令式的区别
 
-# C++ Test framework
+https://www.zhihu.com/question/447592340
 
-## boost.test
+C语言的源程序是可以直接运行吗？（C语言的解释执行）
 
-boost.test是一个C++的单元测试框架。
+https://zhuanlan.zhihu.com/p/346465585
 
-代码示例：
+极大提高你开发效率的C++ tricks
 
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/boost_test
+https://www.zhihu.com/question/280665935
 
-要点：
+为什么C/C++要分为头文件和源文件？
 
-- 测试代码无须main函数。
+https://www.zhihu.com/question/485183321
 
-- 编译：`-DBOOST_TEST_DYN_LINK`
+一个接口只有一个实现类，写接口的意义是什么？只写类不写接口不是更简单且清晰吗？
 
-- 链接：`-lboost_unit_test_framework`
+https://www.zhihu.com/question/36642771
 
-打印所有的log：
+C++的string为什么不提供split函数？
 
-`unit_test --log_level=all`
+https://zhuanlan.zhihu.com/p/458947637
 
-参考：
-
-https://www.ibm.com/developerworks/cn/aix/library/au-ctools1_boost/
-
-了解Boost单元测试框架
-
-https://www.ibm.com/developerworks/cn/aix/library/au-ctools2_cppunit/index.html
-
-了解CppUnit
-
-https://www.ibm.com/developerworks/cn/aix/library/au-ctools3_ccptest/
-
-了解CppTest。上面这3篇算是比较权威的C++单元测试工具的教程了，作者都是Arpan Sen。
-
-https://my.oschina.net/vaero/blog/227528
-
-C++单元测试：boost.test
-
-https://remonstrate.wordpress.com/2011/07/06/boost-%e7%9a%84-unit-test/
-
-boost的unit test
-
-## googletest
-
-安装：
-
-`sudo apt install libgtest-dev`
-
-代码：
-
-https://github.com/google/googletest
-
-`gtest_filter`是一个很有用的选项。
-
-示例：
-
-`./foo_test --gtest_filter=FooTest*.*-FooTest.Bar:FooTest2.Bar`
-
-运行所有“测试案例名称(testcase_name)”为FooTest的案例，但是除了FooTest.Bar和FooTest2.Bar。
-
-`-`表示去除，`:`表示并列。
-
-`TEST(FooTest, DISABLED_DoesAbc) { ... }`
-
-去除测试用例。
-
-参考：
-
-https://www.ibm.com/developerworks/cn/aix/library/au-googletestingframework.html
-
-Google C++ Testing Framework简介
-
-https://www.cnblogs.com/coderzh/archive/2009/04/06/1426755.html
-
-玩转Google开源C++单元测试框架Google Test系列(gtest)
-
-## gmock
-
-gmock是google公司推出的一款开源的白盒测试工具。
-
-测试一个模块的时候，可能涉及到和其他模块交互，可以将模块之间的接口mock起来，模拟交互过程。
-
-比如要测试A模块，必过A模块需要调用B模块的函数。如果B模块还没有实现，此时，就可以用gmock将B模块的某些接口打桩。这样就可以让A模块的测试继续进行下去。
-
-gmock目前是googletest的一部分，一般也与后者配合使用。
-
-https://zhuanlan.zhihu.com/p/101906555
-
-googletest-gmock使用示例
-
-## CTest
-
-CTest是CMake集成的一个测试工具。
-
-参考：
-
-https://www.cnblogs.com/457220157-FTD/p/4139149.html
-
-CTest
-
-## doctest
-
-官网：
-
-https://github.com/onqtam/doctest
+C++编程技巧: Pimpl
