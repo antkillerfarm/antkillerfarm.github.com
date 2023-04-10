@@ -9,6 +9,38 @@ category: Attention
 
 # BERT进阶
 
+https://zhuanlan.zhihu.com/p/106901954
+
+BERT, ELMo, & GPT-2: 这些上下文相关的表示到底有多上下文化？
+
+https://mp.weixin.qq.com/s/mkDmn4zy_s87kiiDIkx0VQ
+
+NLP的12种后BERT预训练方法
+
+https://www.zhihu.com/question/327450789
+
+Bert如何解决长文本问题？
+
+https://mp.weixin.qq.com/s/QTELpbr480AJsBINm-FHKQ
+
+代码也能预训练，微软&哈工大最新提出CodeBERT模型，支持自然-编程双语处理
+
+https://mp.weixin.qq.com/s/ZEWCcxTEuEMvQ5__t3gkBg
+
+BERT技术体系综述论文：40项分析探究BERT如何work
+
+https://mp.weixin.qq.com/s/OsfeAA_tbzAddh1eunwx2w
+
+关于BERT，面试官们都怎么问
+
+https://mp.weixin.qq.com/s/e3n_16uB-qGeGSaGwzlBDw
+
+这群工程师，业余将中文NLP推进了一大步（中文预训练模型）
+
+https://mp.weixin.qq.com/s/V4pbjP5na1OYp-TorUik8g
+
+详聊如何用BERT实现关系抽取
+
 https://mp.weixin.qq.com/s/s5YIG6rBEy6fZkFLh-CzoA
 
 后BERT时代生存指南之VL-BERT篇

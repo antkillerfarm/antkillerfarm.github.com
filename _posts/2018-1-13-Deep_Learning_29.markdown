@@ -360,3 +360,7 @@ https://mp.weixin.qq.com/s/hK_RBjRSkMKQTH-hP6FqRg
 https://www.zhihu.com/question/533876759
 
 尼西亚帝国为什么没能走奥斯曼帝国的崛起之路?
+
+https://www.zhihu.com/question/593909345
+
+如果在欧洲中世纪战场上以一己之力斩杀100名敌国士兵，那么在战后能够得到什么样的封赏？

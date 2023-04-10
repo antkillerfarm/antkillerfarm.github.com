@@ -109,6 +109,10 @@ https://civitai.com/
 
 一个AI艺术的网站
 
+https://space.bilibili.com/12566101
+
+一个AI绘图方面的博主
+
 ---
 
 https://mp.weixin.qq.com/s/H2nqQi2EVQ_EyeDNCRD3Cg

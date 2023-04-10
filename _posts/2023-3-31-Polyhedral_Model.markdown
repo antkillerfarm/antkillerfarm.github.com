@@ -144,9 +144,9 @@ $$F_1i_1+f_1=F_2i_2+f_2$$
 上面3种被称为幺模变换。
 
 - 循环延展（loop scaling）：将循环索引变量和循环步长做等比例缩放。$$S(i)\to (s\times i)$$
-- 循环合并（loop fusion）：将原程序中的多个循环下标映射到同一个循环下标上。$$S1(i)\to (0,i);S2(i)\to (1,i)$$
-- 循环分布（loop distribution/fission）：将不同语句的同一个循环下标映射到不同的循环下标。$$S(i,j)\to (j,i)$$
-- 循环偏移（loop shifting）：将一个动态语句实例偏移固定多个循环迭代。$$S(i,j)\to (j,i)$$
+- 循环合并（loop fusion）：将原程序中的多个循环下标映射到同一个循环下标上。$$S1(i)\to (i, 0);S2(i)\to (i, 1)$$
+- 循环分布（loop distribution/fission）：将不同语句的同一个循环下标映射到不同的循环下标。$$S1(i)\to (0,i);S2(i)\to (1,i)$$
+- 循环偏移（loop shifting）：将一个动态语句实例偏移固定多个循环迭代。$$S(i)\to (i+c)$$
 
 上面7种被称为基础仿射变换。
 

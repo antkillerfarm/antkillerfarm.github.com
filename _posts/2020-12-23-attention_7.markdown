@@ -11,6 +11,14 @@ category: Attention
 
 ## 微软小冰（续）
 
+评价NLP模型的效果，应当从两方面入手：
+
+一方面，是评价模型对自然语言本身的拟合，比如，前后语句连贯、通顺、符合正常人类的叙述习惯，能够理解反问、反讽、情绪、基本世界观的构建和逻辑推断。客观讲，ChatGPT已经做到了极致，它的语言表达水平，比很多人的作文能力都强非常多。
+
+另一方面，是评价模型对知识、事实类信息的拟合，这块能力ChatGPT还无法很好胜任，比如模型会告诉我3+13=23，汪小菲的姐姐是大S，谷歌的CEO是库克，等等，大家也都明白，大量的博客、文章、段子，讨论过很多了，不再赘述。
+
+目前，这些事实、知识，是由知识图谱来解决的。但以笨拙的实体、关系、属性等为基本概念所作的构建，显然是没有前途的。
+
 参考：
 
 https://zhuanlan.zhihu.com/p/158009816
@@ -278,35 +286,3 @@ https://mp.weixin.qq.com/s/0luHJsw7WWJskJWGThR5qg
 https://mp.weixin.qq.com/s/IY8J09LvDAr8owYffKi5Dw
 
 五问BERT：深入理解NLP领域爆红的预训练模型
-
-https://zhuanlan.zhihu.com/p/106901954
-
-BERT, ELMo, & GPT-2: 这些上下文相关的表示到底有多上下文化？
-
-https://mp.weixin.qq.com/s/mkDmn4zy_s87kiiDIkx0VQ
-
-NLP的12种后BERT预训练方法
-
-https://www.zhihu.com/question/327450789
-
-Bert如何解决长文本问题？
-
-https://mp.weixin.qq.com/s/QTELpbr480AJsBINm-FHKQ
-
-代码也能预训练，微软&哈工大最新提出CodeBERT模型，支持自然-编程双语处理
-
-https://mp.weixin.qq.com/s/ZEWCcxTEuEMvQ5__t3gkBg
-
-BERT技术体系综述论文：40项分析探究BERT如何work
-
-https://mp.weixin.qq.com/s/OsfeAA_tbzAddh1eunwx2w
-
-关于BERT，面试官们都怎么问
-
-https://mp.weixin.qq.com/s/e3n_16uB-qGeGSaGwzlBDw
-
-这群工程师，业余将中文NLP推进了一大步（中文预训练模型）
-
-https://mp.weixin.qq.com/s/V4pbjP5na1OYp-TorUik8g
-
-详聊如何用BERT实现关系抽取
