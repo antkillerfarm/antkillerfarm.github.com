@@ -303,6 +303,8 @@ VS Code Server的离线安装过程
 
 ## C/C++ IntelliSense失效
 
+例如没有“转到定义”的菜单。
+
 检查`C_Cpp.IntelliSenseEngine`是否打开。
 
 ## 卸载
