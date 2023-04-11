@@ -165,7 +165,7 @@ ChatGPT火爆，最全prompt工程指南登GitHub热榜
 
 ![](/images/img5/ICL.jpg)
 
-in-context learning是一种特殊的训练模式，通过设计启发式的模板，可以在无需更新模型参数的情况下，获得答案。但是只有超大模型才具有这种启发能力，小模型就算了吧。
+in-context learning是一种特殊的训练模式，通过设计启发式的模板，可以在无需更新模型参数的情况下，获得答案。但是只有超大模型才具有这种启发/涌现能力（emergent abilities），小模型就算了吧。
 
 论文：
 
