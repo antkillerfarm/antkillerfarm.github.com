@@ -99,6 +99,22 @@ https://mp.weixin.qq.com/s/NOs-EPRgcafv3zasR-zXCw
 
 ---
 
+物种的反复迁移其实是很常见的，比如人类曾两次走出非洲，第二批击败了第一批，发展成了现代人。所以元谋人、北京人实际上都不是现代人的祖先。
+
+https://mp.weixin.qq.com/s/VhMrHhL0gMPUob0g8vD_Cw
+
+人类迁徙图鉴
+
+https://mp.weixin.qq.com/s/72eH_vRJMC3IK26eco9JuQ
+
+尼安德特人表示：符合国际ISO标准的绳子，我们四万年前就会编了
+
+https://mp.weixin.qq.com/s/kdL2rLpiHRvsalJIshTH4w
+
+见过1万年前的人类脚印吗？男男女女成群结队的那种
+
+---
+
 https://mp.weixin.qq.com/s/KJyvT_MsD2DZ6QvwXh32ug
 
 假如把地球46亿年历史压缩到一天
@@ -336,29 +352,3 @@ https://mp.weixin.qq.com/s/HhPE8RzIk5_XnMY9mdHB1g
 https://www.zhihu.com/question/413322597
 
 马里亚纳海沟为什么会那么深？
-
-# 生物+
-
-https://mp.weixin.qq.com/s/KuQlVs7UBQVOvqk-FUycDg
-
-真的假的？
-
-https://mp.weixin.qq.com/s/0BhKyUEjAC9IMDc2pg8kwA
-
-看到电影《美人鱼》末尾主角游来游去，我想，这不是水蛛的水泡嘛
-
-https://mp.weixin.qq.com/s/Rxinin1xmZCEgKDiFzuESw
-
-有些小可怜啊，还没准备好就被爹娘赶出了家
-
-https://mp.weixin.qq.com/s/iz0KD_CQE6dPexjktpgPng
-
-我很高，可是我很......（长颈鹿）
-
-https://mp.weixin.qq.com/s/76umxXX-YXyIPJH5n_Z-cQ
-
-科学家上！保护我方新疆棉花！
-
-https://zhuanlan.zhihu.com/p/619830401
-
-这个国家工程，烂尾但没完全烂尾（迪拜的填海计划）

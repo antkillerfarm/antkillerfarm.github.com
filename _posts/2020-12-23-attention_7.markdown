@@ -169,6 +169,8 @@ ChatGPT的出现，为自然语言生成任务找到了商业化的路径。有�
 
 ![](/images/img5/T5.png)
 
+deep encoder+shallow decoder
+
 ---
 
 参考：
@@ -184,6 +186,10 @@ https://mp.weixin.qq.com/s/pe2E69Gpw0nT9sSHvtBGSg
 https://www.zhihu.com/question/588325646
 
 为什么现在的LLM都是Decoder only的架构？
+
+https://www.zhihu.com/question/592545459
+
+大模型都是基于Transformer堆叠，采用Encoder或者Decoder堆叠，有什么区别？
 
 ## UniLM
 

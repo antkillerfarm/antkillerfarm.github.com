@@ -394,3 +394,13 @@ DWARF第一版发布于1992年，主要是为UNIX下的调试器提供必要的�
 https://zhuanlan.zhihu.com/p/419908664
 
 DWARF, 调试信息存储格式
+
+## backtrace
+
+https://zhuanlan.zhihu.com/p/611579770
+
+嵌入式C代码调试利器---backtrace
+
+https://zhuanlan.zhihu.com/p/31630417
+
+拒绝超大coredump-用backtrace和addr2line搞定异常函数栈

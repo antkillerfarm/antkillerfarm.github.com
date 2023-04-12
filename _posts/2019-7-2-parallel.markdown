@@ -137,17 +137,6 @@ https://mp.weixin.qq.com/s/-kizIk3ZXqu7UNqAb3QlQw
 
 C++并发编程（C++11到C++17）
 
-## 并行性发掘
-
-从app角度可以分为：数据级并行和任务级并行。
-
-从实现角度可分为：
-
-- 指令级并行。
-- 单指令多数据并行。
-- 线程级并行。
-- 请求级并行。
-
 ## Parallelism Bubble
 
 ![](/images/img5/bubble.jpg)
