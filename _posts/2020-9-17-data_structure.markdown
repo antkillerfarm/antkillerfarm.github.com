@@ -245,6 +245,14 @@ C++string中find函数是用什么算法实现的？他的时间复杂度如何�
 
 ## 参考
 
+AVL树是一种平衡二叉树，得名于其发明者的名字（Adelson-Velskii以及Landis）。
+
+https://zhuanlan.zhihu.com/p/34899732
+
+详解AVL树（基础篇）
+
+---
+
 https://mp.weixin.qq.com/s/JiYRhcTv2qgLfVyGzI8uHQ
 
 印度小哥用Python和Java实现所有AI算法
