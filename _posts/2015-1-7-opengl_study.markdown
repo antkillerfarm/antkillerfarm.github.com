@@ -278,3 +278,7 @@ https://zhuanlan.zhihu.com/p/529694839
 https://zhuanlan.zhihu.com/p/562570278
 
 像《红警》里的大兵那样找路（上）——全局向量场寻路
+
+https://www.zhihu.com/question/576484859
+
+远距离时游戏模型会退化为简单模型，FPS游戏的远距离狙击是如何判断命中的？

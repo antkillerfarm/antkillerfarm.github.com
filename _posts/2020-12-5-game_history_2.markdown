@@ -230,3 +230,7 @@ https://www.zhihu.com/question/328681136
 https://www.bilibili.com/read/cv2773215
 
 一个错误诞生一个经典，CS最受欢迎地图“Dust II”背后的故事
+
+https://zhuanlan.zhihu.com/p/619204713
+
+风靡网吧的经典！《三国群英传2》为何是系列最受欢迎的一代？
