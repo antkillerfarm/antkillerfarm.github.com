@@ -15,6 +15,16 @@ category: technology
 
 这里会展示所有从网络下载的数据包，至于视频当然是找数据最大的那几个包了。
 
+---
+
+`xxd <key file>`
+
+`openssl aes-128-cbc -d -in 原.ts -out 解密后.ts -nosalt -iv 偏移量 -K key16进制`
+
+https://www.cnblogs.com/String-Lee/p/11391893.html
+
+关于m3u8格式的视频文件ts转mp4下载和key加密问题
+
 ## 自动解析网页的结构化数据
 
 抽取结构树，对比两个网页的dom tree的相似度（卷积核），找出并抽取相似节点。

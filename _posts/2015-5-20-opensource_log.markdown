@@ -97,7 +97,7 @@ svn的开端实际上和git是有区别的。这个项目从2000.3.1开始。但
 
 项目的committer只有9人，其中九成以上的代码出自一个人（Dwayne Richard Hipp）。
 
-这个项目最初使用CVS管理代码，2009.8.12开始该用fossil管理代码。顺便提一句fossil使用sqlite作为对象存储的工具。
+这个项目最初使用CVS管理代码，2009.8.12开始该用fossil管理代码。顺便提一句fossil使用sqlite作为对象存储的工具。它也是Richard Hipp的作品。
 
 Richard Hipp的其他作品还包括：
 
@@ -112,6 +112,18 @@ https://www.sqlite.org/lemon.html
 Althttpd：一个webserver。
 
 https://sqlite.org/althttpd
+
+---
+
+2000年，理查德在通用动力公司就职然后参加了美国海军的外包项目——开发驱逐舰上的导弹火控系统，这种底层武器系统不是汇编就是c了，cpp的性能损耗都要argue的，在战场上1毫秒就意味着生与死。所以sqlite用c开发也是必然的。
+
+原系统是部署是HPUX上面，后端数据库是IBM Informix。Informix数据库对于一个导弹控制系统来说太重型了，而且升级部署容易出问题。特别是爱在关键时刻“lost connection”，这要是在战场上，那不要了一船人的命了？
+
+于是理查德考虑直接把一部分数据缓存在本地，而不是放在数据库，提升系统稳定性的同时还能提升性能。
+
+https://www.zhihu.com/question/591821235
+
+为什么SQLite一定要用C语言来开发？
 
 ## 从git log看emacs的发展史
 

@@ -165,8 +165,6 @@ http://mp.weixin.qq.com/s/6DttXqlXVtLYWpRzN4WS9A
 
 CA出了Total War系列的新作《Total War: THREE KINGDOMS》的预告片，着实让我兴奋了一把，但估计我是没什么时间玩了。
 
->我现在才知道《Rome:Total War》中的背景女声吟唱曲叫做《Divinitus》。
-
 # 2018.2
 
 这两年工作日渐繁忙，最近忙里偷闲玩了一把RimWorld，还是那么给力。版本从2015.8的A11，变成了B18。

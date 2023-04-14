@@ -9,6 +9,102 @@ category: Nature
 
 # 机械
 
+SB2C地狱俯冲者：Son of the Bitch 2nd Class
+
+https://www.zhihu.com/question/359814148
+
+二战时，三大类舰载机能否合并？
+
+---
+
+737机型大致可分为四代，
+
+1967第一代-100，-200:
+
+1984第二代Classic，-300，-400，-500:
+
+1993第三代NG（next generation），-600，-700，-800，-900
+
+2017第四代MAX，7，8，9，10
+
+https://www.zhihu.com/question/286414244
+
+后置发动机的客机为什么现在很少了？
+
+https://www.zhihu.com/question/34470723
+
+公务机超音速有什么难度?
+
+https://www.zhihu.com/question/358262424
+
+波音7*7系列客机是怎么发展的？是按数字顺序发布的吗？
+
+https://www.zhihu.com/question/51633265
+
+一直搞不懂，中国为什么还在使用轰6这种几十年前设计的亚音速轰炸机机型？
+
+https://www.zhihu.com/question/271957617
+
+搭乘三叉戟（Trident）客机是怎样一番体验？
+
+https://www.zhihu.com/answer/1559912123
+
+乘波体加莱特进气道
+
+---
+
+提供同样的推力有俩种方法，1、给大量的空气附加一个小速度；2、给少量空气附加一个大速度。实际中，人们多选择前者，因为降低喷气速度能得到更高的推进效率，也就更省油更省钱啊，这也就是民航客机都是涡扇的原因。
+
+https://www.zhihu.com/question/35267127
+
+涡喷和涡扇发动机的区别？
+
+---
+
+Savery Pump：
+
+![](/images/img4/savery_engine.gif)
+
+Newcomen Atmospheric Engine：
+
+![](/images/img4/Newcomen.gif)
+
+Watt Atmospheric Steam Engine：
+
+![](/images/img4/steam_engine.gif)
+
+Stirling Engine：
+
+![](/images/img4/stirling_engine.gif)
+
+https://zhuanlan.zhihu.com/p/24900853
+
+蒸汽机的进化（上）：从Savery到Newcomen
+
+https://www.egr.msu.edu/~lira/supp/steam/index.htm
+
+Brief History of the Steam Engine
+
+https://www.zhihu.com/question/305046391
+
+为什么英国当年不封锁蒸汽机技术，使得工业革命只发生在英国，形成高于世界任何国家的文明？
+
+---
+
+NOS（氮气加速系统）的工作原理是把N2O（一氧化二氮，俗称"笑气"）形成高压的液态后装入钢瓶中，然后在发动机内与空气一道充当助燃剂与燃料混合燃烧。N2O在高温条件下可分解产生氧气和氮气，其中氧气是关键的助燃气体，而氮气又可协助降温，以此增加燃料燃烧的完整度，提升动力。
+
+在正常的空气中，氧气的占比是21%。NOS系统相当于把空气中氧气的体积占比提升到了33%。
+
+https://www.zhihu.com/question/53028127
+
+在发动机的发展史上，有哪些技术大幅提高了同排量下的功率？
+
+---
+
+![](/images/img4/tank.jpg)
+
+---
+
 米涅步枪采用米涅发明的圆头柱壳铅弹。由于这种子弹比步枪口径略小，所以一举解决了旧式步枪的前装子弹时，由于子弹过大导致塞不进去枪管或堵塞枪管的尴尬情况。米涅弹可以很轻松的用推弹杆推入枪膛．从而大大提高了射速。该弹在弹体周围车以螺纹以配合膛线，螺纹中间以动物油填塞．子弹的底部使用软木材料。射击时，火药气体冲击软木，软木受瞬间冲击后猛然撑大子弹。由于子弹被撑大，所以在发射瞬间就可以依靠枪弹本身完成膛室的密封而不会泄露火药气体导致枪弹的动能丧失。这样就解决了旧式前装枪的膛室密闭问题，大大增强了枪支的射速，射程和安全性。
 
 法国装备的米涅步枪，杀伤距离可达918米，550米内可以保证精确命中。

@@ -302,3 +302,7 @@ https://www.zhihu.com/question/498271491
 https://mp.weixin.qq.com/s/Vb3AkoWHQY7WWBMZaVnf4g
 
 微软发布DeepSpeed开源库，支持1000亿个参数模型的训练
+
+https://zhuanlan.zhihu.com/p/621379646
+
+人手一个ChatGPT！微软DeepSpeed Chat震撼发布，一键RLHF训练千亿级大模型
