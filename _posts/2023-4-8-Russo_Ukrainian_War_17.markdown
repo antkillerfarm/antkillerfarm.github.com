@@ -156,3 +156,29 @@ https://zhuanlan.zhihu.com/p/619510199
 https://zhuanlan.zhihu.com/p/620436462
 
 2023年2月美军泄密资料简要判读分析评论
+
+---
+
+![](/images/img5/Weapons.jpg)
+
+2022.12.6 乌克兰军队节邮票：Weapons of Victory
+
+![](/images/img5/dog.webp)
+
+2022.7.28 包括拖拉机、扫雷、哥萨克武士、荣誉勋章等要素。
+
+![](/images/img5/Ukraine-2022-Invincible-FDC.webp)
+
+2022.8.24 独立日
+
+![](/images/img5/Glory_to_The_Armed_Forces_of_Ukraine.jpg)
+
+乌克兰武装力量
+
+![](/images/img5/Good_Evening.jpg)
+
+![](/images/img5/Victorious.jpg)
+
+这是17岁的Valeria Mikhailova的作品。
+
+![](/images/img5/worker.jpg)

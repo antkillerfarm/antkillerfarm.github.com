@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争（九）——无官不贪（2）
+title:  俄乌战争（九）——无官不贪
 category: Russia 
 ---
 
@@ -178,3 +178,7 @@ https://zhuanlan.zhihu.com/p/600777535
 https://new.qq.com/rain/a/20230117A05QNS00
 
 乌军哭诉“吃不饱饭”，调查发现：30000瓶肉罐头被私吞
+
+https://zhuanlan.zhihu.com/p/621897390
+
+“17格里夫纳”鸡蛋丑闻后，乌克兰军队食品供应价格依然虚高

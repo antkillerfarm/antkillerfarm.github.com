@@ -57,6 +57,14 @@ LibreOffice：6.0
 
 Emacs：25.2
 
+---
+
+由于读取sqlite词库时有大量的IO操作，ibus-pinyin在系统高负载时输入时有卡住的现象。具体表现：输入时，突然键盘像失灵了一样打不出字，过了好一会才慢慢显示出来。
+
+`ibus restart`
+
+`ibus-daemon -r -d -x`
+
 # VNC
 
 ## vino & remmina
