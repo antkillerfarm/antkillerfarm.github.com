@@ -103,6 +103,20 @@ https://www.oryxspioenkop.com/2022/02/attack-on-europe-documenting-equipment.htm
 
 ---
 
+乌克兰卫国战争一周年纪录片《这一年》
+
+记者科马罗夫战前是乌克兰著名的旅游节目主持人，也曾经和泽连斯基一起拍过节目，开战后他奔波在乌克兰全国各地，用镜头记录下战争。
+
+https://weibo.com/7744099666/4879637789809150
+
+第一部分
+
+https://weibo.com/7744099666/4890879490004354
+
+第二部分
+
+---
+
 https://zhuanlan.zhihu.com/p/595934765
 
 镜头回顾——俄乌战争的第一年

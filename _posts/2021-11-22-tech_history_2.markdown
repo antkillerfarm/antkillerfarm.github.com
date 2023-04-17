@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  入行以来涉及的技术简史（二）, 我的AI简史
+title:  入行以来涉及的技术简史（二）, 我的AI & 数码相机简史
 category: my story 
 ---
 

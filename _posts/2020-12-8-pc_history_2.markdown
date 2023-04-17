@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  我的平板 & 手机 & 数码相机简史
+title:  我的平板 & 手机简史
 category: my story 
 ---
 
