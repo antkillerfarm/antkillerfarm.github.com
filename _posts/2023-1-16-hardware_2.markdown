@@ -243,18 +243,6 @@ https://mp.weixin.qq.com/s/Mb7iSXfrOtettVn-Sz8QUA
 
 ## NVLink（续）
 
-官网：
-
-https://www.nvidia.cn/data-center/nvlink/
-
-![](/images/img3/nvlink.png)
-
-Tesla V100中以NVLink连接的GPU至GPU和GPU至CPU通信。
-
-![](/images/img3/nvlink_2.png)
-
-在DGX-1V服务器中，混合立体网络拓扑使用NVLink连接8个Tesla V100加速器。每个GPU有6条nvlink通道，总带宽高达300GB/s。
-
 从上图可以看到，即使每个GPU拥有6条nvlink通道，仍然无法做到“全连接”（即任意两个GPU之间存在双向通道）。这就引出了下一个更加疯狂的技术：nvswitch。
 
 ![](/images/img3/nvswitch.png)

@@ -9,6 +9,50 @@ category: Nature
 
 # 火星探测（续）
 
+格鲁什科和萨格尔耶夫认为，苏联应该放弃失败率居高不下的火星探测，不在这一领域与美国人竞争，而专注于十分成功的金星探测计划。他们及其支持者也被戏称为“金星人”。
+
+当然，远非所有人都支持他们的看法。毕竟，相比于浓云密布、灼热的金星而言，火星看起来更有趣，也能取得更多的科研成果。支持火星探测计划的科学家则被称为“火星人”。
+
+“金星人”和“火星人”关于苏联行星探索方向的争论被时人戏称为“行星间的战争”。
+
+https://mp.weixin.qq.com/s/xWBSzEfKAi2pMUldp0zL9w
+
+先发未能制人，苏联探火为何成果寥寥
+
+---
+
+https://mp.weixin.qq.com/s/SqL5WlQXQgNNiXHACfeN1A
+
+苏萌解读“天问一号”：中国人为什么要探测火星？
+
+https://www.zhihu.com/question/312142122
+
+如何评价NASA宣布机遇号火星车永久失联？
+
+https://mp.weixin.qq.com/s/FT6HTL1AGPddPpxdngvlFA
+
+中国“天问一号”即将发射，2020火星年，围观各国火星探测计划！
+
+https://mp.weixin.qq.com/s/N3rxdJVE3qtFUDbd5g_eJA
+
+“天问一号”发射升空！在火星上，能看到哪些天象奇观？
+
+https://mp.weixin.qq.com/s/HVxnSCfLuz3-RMynleCSSQ
+
+天问一号发射了，回火星的票你买了吗？
+
+https://mp.weixin.qq.com/s/C4-HY5xmV8hHtfHfTJ4jFg
+
+关于火星探测的问号，这篇文章都给你拉直
+
+https://mp.weixin.qq.com/s/iAHpr8ZmChCDWGuFxC9uQQ
+
+发射成功！探测火星八大关卡，“天问一号”到了哪一关？
+
+https://mp.weixin.qq.com/s/Y1xXt9yPYYHCBUtZJddkoQ
+
+核动力优势明显，天问一号为什么还要使用太阳能？
+
 https://mp.weixin.qq.com/s/5F4wORf1k2XDIMKzFZBTDw
 
 古人为了看火星，都是怎么做的？
@@ -268,35 +312,3 @@ https://www.sohu.com/a/569342145_161795
 1958年1月31日，美国第一颗人造卫星探险者一号升空，当升至800千米高空时，星上所载盖革计数器读数突然下降至0。到1958年3月26日探险者三号升空时，又发生了同样的情况。James Van Allen认为，这是因为存在极大量的辐射导致计数器达到饱和而失灵造成的。因此，同年7月26日发射探险者四号时，他在计数器前端加入一小片薄铅以阻挡部分辐射。果然，新的卫星证实了他的猜测。
 
 >James Van Allen，1914～2006，University of Iowa博士（1939）+教授。美国科学院院士。
-
----
-
-https://mp.weixin.qq.com/s/aY4gFbK_aKWcgwvr0Rk5gQ
-
-“波多黎各，波多黎各，世界最大射电望远镜，倒闭了”（Arecibo望远镜）
-
-https://www.zhihu.com/question/432120058
-
-阿雷西博望远镜馈源舱支撑平台塌了，现已决定退役拆除，如何评价它的一生？
-
-https://zhuanlan.zhihu.com/p/330003494
-
-美国天眼塌了
-
----
-
-当我们进入银河系时，会发现由于太阳系的旋转面（黄道平面）与银河系的平面并不一致，大约有60度的夹角。
-
-国际天文学联合会于1959年细化并定义了“银道坐标系（GCS，Galactic coordinate system）”。它它是以太阳为中心的球面坐标系，以银盘平面为赤道面。
-
-https://www.zhihu.com/question/526726624
-
-地球的公转方向是自西向东，这“西”和“东”是相对于谁的？怎么判断？换句话说，在茫茫宇宙中怎么分辨方向？
-
----
-
-在目前的理论下，低于5倍地球质量的行星通常会是岩石行星，超过10倍地球质量的行星则会成为类海王星或气体行星。
-
----
-
-第四宇宙速度（fourth cosmic velocity），是指在地球上发射的物体摆脱银河系引力束缚，飞出银河系所需的最小初始速度。但由于人们尚未知道银河系的准确大小与质量，因此只能粗略估算，其数值在525公里/秒以上。

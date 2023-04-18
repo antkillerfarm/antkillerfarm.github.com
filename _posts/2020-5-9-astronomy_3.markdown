@@ -163,6 +163,20 @@ https://mp.weixin.qq.com/s/MCofTDnwfbz7R9zuqEnX7w
 
 2020.5
 
+![](/images/img3/NASA.png)
+
+![](/images/img3/Canaveral.jpg)
+
+https://mp.weixin.qq.com/s/u5BuBhkrgLkUfuGWHA5ZRg
+
+美国国防先进研究计划局（Defense Advanced Research Projects Agency, DARPA），如何成为美国科技的核心引擎？
+
+https://mp.weixin.qq.com/s/q8qpmoDcHaEYWPpk0kFTFw
+
+Space X龙飞船成功发射，它和NASA到底有什么关系？
+
+---
+
 ![](/images/img4/spaceship.jpg)
 
 https://mp.weixin.qq.com/s/0zAIoiflCgwC2jMEdnJ6WQ
@@ -176,18 +190,6 @@ https://mp.weixin.qq.com/s/-eNzkpxJ_nQOF0RURjuSUg
 https://mp.weixin.qq.com/s/tDdu0-wqtiqBetOuULgeTg
 
 马斯克又实现了一个“梦想”！人类首个商业载人航天飞船发射成功！
-
-https://mp.weixin.qq.com/s/q8qpmoDcHaEYWPpk0kFTFw
-
-Space X龙飞船成功发射，它和NASA到底有什么关系？
-
-![](/images/img3/NASA.png)
-
-![](/images/img3/Canaveral.jpg)
-
-https://mp.weixin.qq.com/s/u5BuBhkrgLkUfuGWHA5ZRg
-
-美国国防先进研究计划局（Defense Advanced Research Projects Agency, DARPA），如何成为美国科技的核心引擎？
 
 https://mp.weixin.qq.com/s/LTE-m0u6469kNk1Dple4Zg
 
@@ -233,6 +235,18 @@ https://www.zhihu.com/question/487093505
 
 SpaceX执行首次全平民任务，送4名普通人进太空旅行3天，有哪些亮点和里程碑意义？
 
+https://sat.huijiwiki.com/wiki/%E6%98%9F%E8%88%B0
+
+星舰Wiki
+
+https://www.zhihu.com/question/595930014
+
+SpaceX“星舰”发射计划因压力阀问题而推迟，“星舰”发射面临哪些技术困难？需要突破哪些技术障碍？
+
+---
+
+湿彩排（wet dress rehearsal），就是排练除点火之外的所有发射环节，包括进行推进剂的装填和卸载、发射倒计时等，这个过程需要在发射工位上进行。这个环节在我国叫做合练。
+
 ---
 
 液氢液氧
@@ -240,6 +254,8 @@ SpaceX执行首次全平民任务，送4名普通人进太空旅行3天，有哪
 液氧煤油
 
 四氧化二氮+偏二甲肼（传说中的毒发）
+
+星舰的发动机是极为罕见的全流量分级燃烧循环发动机，还是甲烷机，单台推力达到240吨以上。
 
 https://www.zhihu.com/question/315485320
 
@@ -264,16 +280,6 @@ https://www.zhihu.com/question/471620540
 ---
 
 卡门线（Kármán line）是一条位于海拔100 km（330,000英尺）处，被大部分认可为外太空与地球大气层的界线的分界线。
-
----
-
-虽然亚里士多德和托勒密的天文学思想有很多区别，地圆却都是其中的核心事实。他们的思想一直影响着西方的天文学，直到由哥白尼引发并由伽利略、开普勒和牛顿等人推动的天文学革命。但在这场革命中，发生改变的主要是地球在宇宙中的位置，而地球的形状并未引起过争议。
-
-但对中国人来说，了解地球是圆的这个事实却花了很长的一段时间。中国自古以来有“天圆地方”的说法，其中的“地方”既指大地是方形，也指大地是平面。中国古代的宇宙观中有两种观念，分别是浑天说和盖天说。这两种说法的区别在于前者认为天地有相交会处，而后者认为天地是平行的，但是二者均没有地圆的观念。
-
-https://mp.weixin.qq.com/s/0lDJiu1nyS0j1aj7C4tT-g
-
-火箭狂人不幸坠亡，生前坚信“地平说”
 
 ---
 
@@ -304,7 +310,3 @@ https://www.zhihu.com/question/473476687
 https://mp.weixin.qq.com/s/RPcbBqUP7wl-4fgfiiUAVg
 
 为什么亿万富翁都想上天？
-
----
-
-2020年4月1日，“带货女王”薇娅在淘宝直播间卖起了火箭，售价4000万元。据了解，当天在火箭链接上架后5分钟内就有800多人拍下定金。最终“长光卫星技术有限公司”与薇娅相关方联系，确定了购买意向。

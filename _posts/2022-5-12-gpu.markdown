@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GPU体系结构, GPU通信技术, Shader
+title: GPU体系结构, GPU通信技术
 category: Chip 
 ---
 
@@ -167,9 +167,15 @@ ARM：Mali
 
 ![](/images/img4/AMD.jpg)
 
+RDNA是GPU架构，Navi是使用它构建的图形处理器的代号。同样，GCN是架构，而Vega和Polaris是代号。
+
 https://www.expreview.com/68888.html
 
 AMD RDNA显卡架构简析
+
+https://zhuanlan.zhihu.com/p/459812380
+
+AMD RDNA与GCN GPU架构之间的差异：AMD如何赶上NVIDIA
 
 ---
 
@@ -297,40 +303,14 @@ SXM是Nvidia的双插槽卡设计，与PCIe卡不同，它不需要连接电源�
 
 ![](/images/img4/PCIE.jpg)
 
-# Shader
+官网：
 
-基于OpenGL的OpenGL Shading Language，简称GLSL;
+https://www.nvidia.cn/data-center/nvlink/
 
-基于DirectX的High Level Shading Language，简称HLSL;
+![](/images/img3/nvlink.png)
 
-NVIDIA公司的C for Graphic，简称Cg。
+Tesla V100中以NVLink连接的GPU至GPU和GPU至CPU通信。
 
-除此之外，一些框架也有自己的SL，例如Unity-Shader。
+![](/images/img3/nvlink_2.png)
 
-https://zhuanlan.zhihu.com/p/47433678
-
-三大Shader编程语言（CG/HLSL/GLSL）
-
-https://zhuanlan.zhihu.com/p/25024372
-
-跨平台shader编译的过去、现在和未来
-
-http://tieba.baidu.com/p/2155772860
-
-GPU和Shader技术的基础知识
-
-http://www.jianshu.com/p/8687a040eb48
-
-GPU处理图像Shader的入门
-
-https://zhuanlan.zhihu.com/p/25595069
-
-卡通渲染（上）：致从没看懂过着色器代码的你
-
-https://zhuanlan.zhihu.com/p/25939794
-
-卡通渲染（下）
-
-https://zhuanlan.zhihu.com/p/544879511
-
-GPU底层机制分析：显存分配开销
+在DGX-1V服务器中，混合立体网络拓扑使用NVLink连接8个Tesla V100加速器。每个GPU有6条nvlink通道，总带宽高达300GB/s。

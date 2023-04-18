@@ -185,9 +185,15 @@ https://mp.weixin.qq.com/s/JENwpBayd59hMh2zyO-PvA
 
 游戏机的CPU在发布第一天就落后当时PC的主流配置。比如，PS1在94年开卖的时候使用了33Mhz CPU，而PC机在1989年就有了33Mhz的80486 CPU。比如PS2在2000年全面发售的时候，使用了300Mhz的CPU，而PC机在1997年就有了300Mhz的CPU。
 
+在产品开发时期，研究者总会想利用最先进的技术来制造最棒的商品。但我以为，想要研发出赚钱的商品，使用最先进的技术，对商品而言不是加分而是扣分。利用已经发展成熟，甚至接近淘汰的技术进行水平思考，将它应用到完全不同的领域上，反而容易制造出畅销商品。-- by 横井军平
+
 https://www.zhihu.com/question/20795678
 
 为什么PS主机从每一代硬件架构差异都很大？
+
+https://mp.weixin.qq.com/s/zc6GUFSUWvSGGvvPeX0wzQ
+
+相机技术在任天堂游戏机中的妙用
 
 ---
 

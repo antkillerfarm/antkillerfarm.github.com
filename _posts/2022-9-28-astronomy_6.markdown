@@ -9,6 +9,38 @@ category: Nature
 
 # 天文杂谈
 
+https://mp.weixin.qq.com/s/aY4gFbK_aKWcgwvr0Rk5gQ
+
+“波多黎各，波多黎各，世界最大射电望远镜，倒闭了”（Arecibo望远镜）
+
+https://www.zhihu.com/question/432120058
+
+阿雷西博望远镜馈源舱支撑平台塌了，现已决定退役拆除，如何评价它的一生？
+
+https://zhuanlan.zhihu.com/p/330003494
+
+美国天眼塌了
+
+---
+
+当我们进入银河系时，会发现由于太阳系的旋转面（黄道平面）与银河系的平面并不一致，大约有60度的夹角。
+
+国际天文学联合会于1959年细化并定义了“银道坐标系（GCS，Galactic coordinate system）”。它它是以太阳为中心的球面坐标系，以银盘平面为赤道面。
+
+https://www.zhihu.com/question/526726624
+
+地球的公转方向是自西向东，这“西”和“东”是相对于谁的？怎么判断？换句话说，在茫茫宇宙中怎么分辨方向？
+
+---
+
+在目前的理论下，低于5倍地球质量的行星通常会是岩石行星，超过10倍地球质量的行星则会成为类海王星或气体行星。
+
+---
+
+第四宇宙速度（fourth cosmic velocity），是指在地球上发射的物体摆脱银河系引力束缚，飞出银河系所需的最小初始速度。但由于人们尚未知道银河系的准确大小与质量，因此只能粗略估算，其数值在525公里/秒以上。
+
+---
+
 1990年发射的哈勃太空望远镜，由于一片镜片边缘磨薄了2.2mm，相机镜头misallignment, 最终导致发射后拍摄图像模糊。
 
 NASA的科学家开始没有意识到是望远镜的镜头质量问题，还在讨论是不是外太空就是模模糊糊的形态……
@@ -270,47 +302,3 @@ https://mp.weixin.qq.com/s/nCSgobpyy4-U9z1ycMXg0g
 https://mp.weixin.qq.com/s/xfJ_EiAoW0i_k_zUWHoQTQ
 
 先磕为敬！你们两颗星星为什么这么浪漫这么甜？（冥王星和卡戎）Charon是冥王的船夫，负责将逝者摆渡过冥河。
-
-https://mp.weixin.qq.com/s/nzoE3EYOhwfg-D7Uz5PyxQ
-
-太阳观测的新窗口
-
-https://mp.weixin.qq.com/s/PrsKjWC9YC2mRE1pI1dFCg
-
-杨利伟被文盲编辑坑了？《地月同辉》考
-
-https://mp.weixin.qq.com/s/MWNhWTTef4L7RGz-340kuQ
-
-人工智能，如何“拯救”不堪重负的天文学家？
-
-https://mp.weixin.qq.com/s/rF42Dmj3_PcGsOj17am7VA
-
-我们的坐标，已经被2000多颗星星熟知
-
-https://mp.weixin.qq.com/s/LnNRNKqecwJyUtrKS1HfkQ
-
-脉冲星研究
-
-https://mp.weixin.qq.com/s/pJQnMZthdNIQEi0jqwliHg
-
-木星持续“发烧”的幕后推手找到了，原来是它！
-
-https://mp.weixin.qq.com/s/LsNhcqXFDg5qTbsQI2a95Q
-
-在不同的世界，我们会看到…
-
-https://mp.weixin.qq.com/s/bwfRBCiLJqNZBxrZDpjcEQ
-
-天文学家与野生动物的爱恨情仇
-
-https://www.zhihu.com/question/25663240
-
-为何说银河系的中央是巨大的黑洞？
-
-https://www.zhihu.com/question/28099598
-
-怎样测量天体的质量?
-
-https://www.zhihu.com/question/555779002
-
-美宇宙飞船成功将小行星撞离原运行轨道，这一任务具有怎样的意义？实现起来技术难度有多大？

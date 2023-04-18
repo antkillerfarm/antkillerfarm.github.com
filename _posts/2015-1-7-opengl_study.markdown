@@ -9,6 +9,10 @@ category: technology
 
 # OpenGL研究
 
+https://www.khronos.org/opengl/wiki/History_of_OpenGL
+
+OpenGL的历史
+
 ## 书籍
 
 我手上其实有几本关于OpenGL的实体书，但是比较了一下之后，发现还是电子版的《OpenGL编程指南》（俗称OpenGL红宝书）写的更好一些。该书目前已经出到第8版，我看的是第7版中文版的电子版。该书的官网是:

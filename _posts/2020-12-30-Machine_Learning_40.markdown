@@ -233,6 +233,34 @@ https://mp.weixin.qq.com/s/QzDKFinw9sXXfKNbG0Rchw
 
 # 印度+
 
+https://mp.weixin.qq.com/s/EktlkRgHykNgd6Oj_SVcQw
+
+印度封杀中国App，它们的出海成绩有多让人“眼红”？
+
+https://zhuanlan.zhihu.com/p/68046339
+
+印度人是如何把外卖做成百年老店的？
+
+https://zhuanlan.zhihu.com/p/257936464
+
+印度，三天打赢一个欧洲国家（葡属果阿）
+
+https://zhuanlan.zhihu.com/p/259753222
+
+安达曼-尼科巴群岛
+
+https://dy.163.com/article/EUPBGE9G053178UH.html
+
+印度打工仔冲入美军海外基地，强奸美国女兵长达3小时
+
+https://zhuanlan.zhihu.com/p/334430392
+
+印度农民进军首都
+
+https://mp.weixin.qq.com/s/Hn2cnotX7dbSJEFD3z2SMQ
+
+微信“死于”印度
+
 https://mp.weixin.qq.com/s/6NrLtMP2VEa1OpAK99BU4w
 
 搞计算机网络最强的其实不是互联网公司，而是印度的电工！

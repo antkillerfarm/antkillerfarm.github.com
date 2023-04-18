@@ -37,6 +37,8 @@ category: Russia
 
 Every man dies, not every man really lives. -- by 《勇敢的心》威廉•华莱士
 
+(今天的战果)已经超出了最盲目乐观的人最不切实际的幻想。-- by 斯普鲁恩斯将军锐评中途岛海战
+
 ---
 
 永远记住：乌克兰在这个敌人出现之前就有，乌克兰将在他之后还会继续存在。

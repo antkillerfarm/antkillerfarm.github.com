@@ -105,6 +105,8 @@ n121 = Identity[T=float, device=NPU:0](n98) @ n119
 
 `[]`内是属性，`()`内是操作数，`@`表示要等到后面的操作数都做完了，才能开始执行。
 
+---
+
 HLO IR一般如下所示：
 
 ```text
@@ -112,6 +114,16 @@ HLO IR一般如下所示：
 ```
 
 `[]`内是shape，`()`内是layout。
+
+---
+
+打印HLO subgraph的输入，在XLA graph中的名字：
+
+```
+  for (int i = 1; i < ctx->num_inputs(); ++i) {
+    LOG(INFO) << "XlaRunOp::Compute input : " << requested_input(i);
+  }
+```
 
 ## HLO pass
 

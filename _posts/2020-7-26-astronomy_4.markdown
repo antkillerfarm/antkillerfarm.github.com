@@ -65,6 +65,16 @@ https://www.zhihu.com/question/592998807
 
 ---
 
+虽然亚里士多德和托勒密的天文学思想有很多区别，地圆却都是其中的核心事实。他们的思想一直影响着西方的天文学，直到由哥白尼引发并由伽利略、开普勒和牛顿等人推动的天文学革命。但在这场革命中，发生改变的主要是地球在宇宙中的位置，而地球的形状并未引起过争议。
+
+但对中国人来说，了解地球是圆的这个事实却花了很长的一段时间。中国自古以来有“天圆地方”的说法，其中的“地方”既指大地是方形，也指大地是平面。中国古代的宇宙观中有两种观念，分别是浑天说和盖天说。这两种说法的区别在于前者认为天地有相交会处，而后者认为天地是平行的，但是二者均没有地圆的观念。
+
+https://mp.weixin.qq.com/s/0lDJiu1nyS0j1aj7C4tT-g
+
+火箭狂人不幸坠亡，生前坚信“地平说”
+
+---
+
 https://mp.weixin.qq.com/s/sPTRKfuhEc0xx7GacomxkA
 
 霍尔效应推进器
@@ -100,6 +110,10 @@ https://news.qq.com/a/20180927/005739.htm
 https://www.zhihu.com/question/295927388
 
 如何看待西航动力研究所张小平离职一事？
+
+---
+
+2020年4月1日，“带货女王”薇娅在淘宝直播间卖起了火箭，售价4000万元。据了解，当天在火箭链接上架后5分钟内就有800多人拍下定金。最终“长光卫星技术有限公司”与薇娅相关方联系，确定了购买意向。
 
 ---
 
@@ -209,14 +223,6 @@ https://mp.weixin.qq.com/s/klSndj6LPENaW53OPq15Yg
 
 ---
 
-《火星叔叔马丁》、《异星战场之火星公主》。
-
-https://mp.weixin.qq.com/s/oHO6TZuFGeGdDbACdOjS9w
-
-马丁叔叔所在的火星，有公主吗？
-
----
-
 F´(F Prime)是一个组件驱动的框架，可以快速开发和部署航天飞行及其他嵌入式软件应用程序。而F´也是火星无人机“机智号”所用的飞行软件框架，它刚由毅力号携带到火星。
 
 https://github.com/nasa/fprime
@@ -231,52 +237,14 @@ https://mp.weixin.qq.com/s/x9Nps_oGoVQd2PW3H2VdyA
 
 ---
 
-格鲁什科和萨格尔耶夫认为，苏联应该放弃失败率居高不下的火星探测，不在这一领域与美国人竞争，而专注于十分成功的金星探测计划。他们及其支持者也被戏称为“金星人”。
+《火星叔叔马丁》、《异星战场之火星公主》。
 
-当然，远非所有人都支持他们的看法。毕竟，相比于浓云密布、灼热的金星而言，火星看起来更有趣，也能取得更多的科研成果。支持火星探测计划的科学家则被称为“火星人”。
+https://mp.weixin.qq.com/s/oHO6TZuFGeGdDbACdOjS9w
 
-“金星人”和“火星人”关于苏联行星探索方向的争论被时人戏称为“行星间的战争”。
-
-https://mp.weixin.qq.com/s/xWBSzEfKAi2pMUldp0zL9w
-
-先发未能制人，苏联探火为何成果寥寥
+马丁叔叔所在的火星，有公主吗？
 
 ---
 
 ![](/images/img4/walle.jpg)
 
 ![](/images/img4/walle_2.jpg)
-
----
-
-https://mp.weixin.qq.com/s/SqL5WlQXQgNNiXHACfeN1A
-
-苏萌解读“天问一号”：中国人为什么要探测火星？
-
-https://www.zhihu.com/question/312142122
-
-如何评价NASA宣布机遇号火星车永久失联？
-
-https://mp.weixin.qq.com/s/FT6HTL1AGPddPpxdngvlFA
-
-中国“天问一号”即将发射，2020火星年，围观各国火星探测计划！
-
-https://mp.weixin.qq.com/s/N3rxdJVE3qtFUDbd5g_eJA
-
-“天问一号”发射升空！在火星上，能看到哪些天象奇观？
-
-https://mp.weixin.qq.com/s/HVxnSCfLuz3-RMynleCSSQ
-
-天问一号发射了，回火星的票你买了吗？
-
-https://mp.weixin.qq.com/s/C4-HY5xmV8hHtfHfTJ4jFg
-
-关于火星探测的问号，这篇文章都给你拉直
-
-https://mp.weixin.qq.com/s/iAHpr8ZmChCDWGuFxC9uQQ
-
-发射成功！探测火星八大关卡，“天问一号”到了哪一关？
-
-https://mp.weixin.qq.com/s/Y1xXt9yPYYHCBUtZJddkoQ
-
-核动力优势明显，天问一号为什么还要使用太阳能？
