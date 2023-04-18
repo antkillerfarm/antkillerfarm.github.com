@@ -95,6 +95,8 @@ We will not forget! We will not forgive! Bucha. Irpin. Hostomel.
 
 2023.4.5 视察华沙。
 
+2023.4.18 视察阿夫迪夫卡前线。
+
 ---
 
 泽圣表现出了可以成为全罗斯沙皇的勇气和演技。
