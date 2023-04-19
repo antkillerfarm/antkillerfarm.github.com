@@ -27,6 +27,10 @@ https://github.com/json-c/json-c
 
 http://goessner.net/articles/JsonPath/
 
+此外，还有一个叫做JSON5的扩展：
+
+https://json5.org/
+
 参考：
 
 https://addons.mozilla.org/zh-CN/firefox/addon/jsonview/
