@@ -292,3 +292,7 @@ https://zhuanlan.zhihu.com/p/621365071
 https://zhuanlan.zhihu.com/p/622183909
 
 特种炮灰——被消耗殆尽的俄罗斯精锐作战单位
+
+https://zhuanlan.zhihu.com/p/623516134
+
+和平下的浩劫——俄罗斯的“部分动员”到底造成了多大的灾难？
