@@ -145,6 +145,10 @@ https://zhuanlan.zhihu.com/p/606942602
 
 ![](/images/img5/Bakhmut.jpg)
 
+<video  id="myvideo" width="50%" height="auto" controls="controls" loop="loop">
+    <source src="/images/img5/Bakhmut.mp4" type='video/mp4' />
+</video>
+
 https://zhuanlan.zhihu.com/p/599338767
 
 冰雨的风暴——乌克兰Day264-Day327战况总结

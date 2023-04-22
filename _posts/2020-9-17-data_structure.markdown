@@ -13,6 +13,12 @@ https://github.com/TheAlgorithms
 
 搜索算法，一触即达：GitHub上有个规模最大的开源算法库
 
+Introduction to Algorithms Third Edition, published by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein.（CLRS）
+
+Computer Systems: A Programmer's Perspective（CSAPP）
+
+Structure and Interpretation of Computer Programs（SICP）
+
 ## TopK
 
 https://zhuanlan.zhihu.com/p/76734219

@@ -315,4 +315,4 @@ HloEvaluator中已经有了一套默认的CPU实现。
 
 `AssignAddVariableOp`: 一般用于给`_Arg`搬运数据。
 
-`IteratorGetNext`: 启动下一个Iterator。
+`IteratorGetNext`: 启动下一个Iterator。主要是给graph准备训练数据和标签。

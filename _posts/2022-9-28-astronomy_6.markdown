@@ -9,6 +9,16 @@ category: Nature
 
 # 天文杂谈
 
+![](/images/img4/Van_Allen_radiation_belts.jpg)
+
+范·艾伦辐射带（Van Allen radiation belts）是地球磁场捕获的太阳宇宙射线和部分银河宇宙射线中的高能带电粒子组成。一般来说，内辐射带里高能质子多，外辐射带里高能电子多。
+
+1958年1月31日，美国第一颗人造卫星探险者一号升空，当升至800千米高空时，星上所载盖革计数器读数突然下降至0。到1958年3月26日探险者三号升空时，又发生了同样的情况。James Van Allen认为，这是因为存在极大量的辐射导致计数器达到饱和而失灵造成的。因此，同年7月26日发射探险者四号时，他在计数器前端加入一小片薄铅以阻挡部分辐射。果然，新的卫星证实了他的猜测。
+
+>James Van Allen，1914～2006，University of Iowa博士（1939）+教授。美国科学院院士。
+
+---
+
 https://mp.weixin.qq.com/s/aY4gFbK_aKWcgwvr0Rk5gQ
 
 “波多黎各，波多黎各，世界最大射电望远镜，倒闭了”（Arecibo望远镜）
@@ -262,43 +272,3 @@ https://mp.weixin.qq.com/s/4x9dfPsrUaXlE8_vxri7jg
 https://mp.weixin.qq.com/s/oP5prD-KuxI8CNVo16arVQ
 
 1994年，木星曾帮地球抗下了21波灭星级打击（苏梅克-列维九号彗星）
-
-https://mp.weixin.qq.com/s/Sija998_IKP2G0GQEYynCw
-
-知否知否，月球种菜可否？
-
-https://mp.weixin.qq.com/s/rvH-gvgbjLITyP8QOuzgKA
-
-我们在新疆发现了一个建天文台的好地方
-
-https://mp.weixin.qq.com/s/03FiFl8hK8Ilbe0Amh278A
-
-发射至今44年，已飞出日球顶层的旅行者1号仍在回传数据！是如何实现的？
-
-https://mp.weixin.qq.com/s/BsAbS1QadPcBDqHYr7eiQA
-
-你绝对没见过的4种天气
-
-https://mp.weixin.qq.com/s/nrjY7LOY_XuytJ2xXk3K1Q
-
-来自星际空间的持续信号
-
-https://zhuanlan.zhihu.com/p/375675282
-
-美国超级工程，核弹炸月球
-
-https://mp.weixin.qq.com/s/I7iLRXWAttIomGp-ra61AA
-
-日冕观测进化史：日食太少，我们就造一个出来
-
-https://mp.weixin.qq.com/s/rBFmWjHDOcdUz3uKQ3HqMA
-
-宇宙的数字
-
-https://mp.weixin.qq.com/s/nCSgobpyy4-U9z1ycMXg0g
-
-在美丽的稻城，我们建了一个漂亮的“天阵”，它的名字叫拉索
-
-https://mp.weixin.qq.com/s/xfJ_EiAoW0i_k_zUWHoQTQ
-
-先磕为敬！你们两颗星星为什么这么浪漫这么甜？（冥王星和卡戎）Charon是冥王的船夫，负责将逝者摆渡过冥河。

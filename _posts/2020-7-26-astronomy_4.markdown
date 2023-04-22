@@ -9,6 +9,14 @@ category: Nature
 
 # SpaceX（续）
 
+湿彩排（wet dress rehearsal），就是排练除点火之外的所有发射环节，包括进行推进剂的装填和卸载、发射倒计时等，这个过程需要在发射工位上进行。这个环节在我国叫做合练。
+
+卡门线（Kármán line）是一条位于海拔100 km（330,000英尺）处，被大部分认可为外太空与地球大气层的界线的分界线。
+
+有个游戏《坎巴拉太空计划》可以模拟火箭设计发射全过程。
+
+---
+
 https://zhuanlan.zhihu.com/p/272628707
 
 超美国95%宽带！Starlink实测网速突破160Mbps
@@ -226,31 +234,3 @@ https://mp.weixin.qq.com/s/klSndj6LPENaW53OPq15Yg
 >Walter Hohmann，1880~1945，德国工程师，亚琛工业大学博士。轨道动力学（orbital dynamics）之父。
 
 ![](/images/img2/Hohmann.gif)
-
----
-
-F´(F Prime)是一个组件驱动的框架，可以快速开发和部署航天飞行及其他嵌入式软件应用程序。而F´也是火星无人机“机智号”所用的飞行软件框架，它刚由毅力号携带到火星。
-
-https://github.com/nasa/fprime
-
-https://mp.weixin.qq.com/s/8Zepha-05GRiC5bGVp0LkQ
-
-Linux登陆火星，占有率再超Windows，NASA还在GitHub发布源码教程
-
-https://mp.weixin.qq.com/s/x9Nps_oGoVQd2PW3H2VdyA
-
-人类刚给火星送去Linux系统，以及一款安卓手机芯片
-
----
-
-《火星叔叔马丁》、《异星战场之火星公主》。
-
-https://mp.weixin.qq.com/s/oHO6TZuFGeGdDbACdOjS9w
-
-马丁叔叔所在的火星，有公主吗？
-
----
-
-![](/images/img4/walle.jpg)
-
-![](/images/img4/walle_2.jpg)

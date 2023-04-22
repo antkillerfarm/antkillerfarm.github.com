@@ -229,6 +229,18 @@ https://blog.csdn.net/gaofeipaopaotang/article/details/80736452
 
 模型优化之分布式执行
 
+https://xieyu.github.io/blog/tensorflow/rendezvous.html
+
+Tensorflow Rendezvous
+
+---
+
+Host to Device：
+
+SameWorkerRecvDone -> CopyTensor::ViaDMA -> CopyHostToDevice -> XlaDeviceContext::CopyCPUTensorToDevice ->
+
+GenericTransferManager::TransferLiteralToDeviceAsync -> TransferManager::TransferBufferToDevice -> Stream::ThenMemcpy
+
 ---
 
 大模型不光模型的训练是分布式的，数据集也是分布式的。
@@ -294,15 +306,3 @@ https://zhuanlan.zhihu.com/p/432813821
 https://zhuanlan.zhihu.com/p/432289008
 
 从分布式训练到大模型训练
-
-https://www.zhihu.com/question/498271491
-
-为什么说大模型训练很难？
-
-https://mp.weixin.qq.com/s/Vb3AkoWHQY7WWBMZaVnf4g
-
-微软发布DeepSpeed开源库，支持1000亿个参数模型的训练
-
-https://zhuanlan.zhihu.com/p/621379646
-
-人手一个ChatGPT！微软DeepSpeed Chat震撼发布，一键RLHF训练千亿级大模型

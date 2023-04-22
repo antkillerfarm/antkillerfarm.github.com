@@ -9,6 +9,34 @@ category: Nature
 
 # 火星探测（续）
 
+F´(F Prime)是一个组件驱动的框架，可以快速开发和部署航天飞行及其他嵌入式软件应用程序。而F´也是火星无人机“机智号”所用的飞行软件框架，它刚由毅力号携带到火星。
+
+https://github.com/nasa/fprime
+
+https://mp.weixin.qq.com/s/8Zepha-05GRiC5bGVp0LkQ
+
+Linux登陆火星，占有率再超Windows，NASA还在GitHub发布源码教程
+
+https://mp.weixin.qq.com/s/x9Nps_oGoVQd2PW3H2VdyA
+
+人类刚给火星送去Linux系统，以及一款安卓手机芯片
+
+---
+
+《火星叔叔马丁》、《异星战场之火星公主》。
+
+https://mp.weixin.qq.com/s/oHO6TZuFGeGdDbACdOjS9w
+
+马丁叔叔所在的火星，有公主吗？
+
+---
+
+![](/images/img4/walle.jpg)
+
+![](/images/img4/walle_2.jpg)
+
+---
+
 格鲁什科和萨格尔耶夫认为，苏联应该放弃失败率居高不下的火星探测，不在这一领域与美国人竞争，而专注于十分成功的金星探测计划。他们及其支持者也被戏称为“金星人”。
 
 当然，远非所有人都支持他们的看法。毕竟，相比于浓云密布、灼热的金星而言，火星看起来更有趣，也能取得更多的科研成果。支持火星探测计划的科学家则被称为“火星人”。
@@ -302,13 +330,3 @@ https://mp.weixin.qq.com/s/BYw9HJehGC528WkX_q4JLw
 https://www.sohu.com/a/569342145_161795
 
 韦伯太空望远镜主镜被太空陨石砸中，受损情况比最初想象要大
-
----
-
-![](/images/img4/Van_Allen_radiation_belts.jpg)
-
-范·艾伦辐射带（Van Allen radiation belts）是地球磁场捕获的太阳宇宙射线和部分银河宇宙射线中的高能带电粒子组成。一般来说，内辐射带里高能质子多，外辐射带里高能电子多。
-
-1958年1月31日，美国第一颗人造卫星探险者一号升空，当升至800千米高空时，星上所载盖革计数器读数突然下降至0。到1958年3月26日探险者三号升空时，又发生了同样的情况。James Van Allen认为，这是因为存在极大量的辐射导致计数器达到饱和而失灵造成的。因此，同年7月26日发射探险者四号时，他在计数器前端加入一小片薄铅以阻挡部分辐射。果然，新的卫星证实了他的猜测。
-
->James Van Allen，1914～2006，University of Iowa博士（1939）+教授。美国科学院院士。
