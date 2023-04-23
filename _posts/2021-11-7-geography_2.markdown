@@ -145,10 +145,6 @@ https://mp.weixin.qq.com/s/FeSKZqe394-8xT4i-BOEog
 
 掉入地下一万米
 
-https://www.zhihu.com/question/285058234
-
-永暑岛怎么会发现淡水资源？（淡水透镜体效应）
-
 https://mp.weixin.qq.com/s/T2ms6xXd14O3CrQb7X1ZOw
 
 人类用了2000年就为画张地图

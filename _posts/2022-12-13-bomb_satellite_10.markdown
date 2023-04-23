@@ -51,6 +51,22 @@ https://www.zhihu.com/question/579333951
 
 ---
 
+上个世纪，我国位于西北的核武器研究院“九院”就对外称“221厂”，其所在的地点“金银滩”在1958-1987年间被完全从地图上抹去。 
+
+![](/images/img4/Oak_Ridge.jpg)
+
+在有关橡树岭的历史照片上，露脸的孩子都只被标出名，而不标出姓，以防止外人从姓名中判断出都有哪些科学家在这里工作。
+
+https://www.sohu.com/a/436691642_260616
+
+伊朗核专家屡次被人“斩首”成功，保密工作有多差？
+
+https://mp.weixin.qq.com/s/GtxS2Y2obtUROnJqyoGqJw
+
+为什么美国要制裁中国核动力工业时，中国只是轻蔑地"呸"了一声!
+
+---
+
 ![](/images/img3/top10.png)
 
 ![](/images/img4/manufact.jpg)
@@ -256,27 +272,3 @@ https://view.inews.qq.com/wxn/20220202A087ZO00
 https://mp.weixin.qq.com/s/fVOd3ARuymsSqPXdz25nnw
 
 控制论与被遗忘的华人科学家（李郁荣）
-
-https://mp.weixin.qq.com/s/dNe-OmF_eTbtApyy13_QLA
-
-管梅谷先生简介
-
-https://www.zhihu.com/question/51700891
-
-如何评价“前三十年的工业化是一堆破铜烂铁＂？
-
-https://mp.weixin.qq.com/s/TLe6qAAxWJZnKUXo6EGp5g
-
-上海滩无线和芯片30年史
-
-https://mp.weixin.qq.com/s/Sq53aEbG3bIBML9qSwPzoA
-
-从奴隶到将军：工控“小华为”的三场战事（汇川技术）
-
-https://view.inews.qq.com/wxn/20221217A05KPO00
-
-90岁顶级大师走了，全国5.5亿用户都要感谢他（“中国光纤之父”赵梓森）
-
-https://mp.weixin.qq.com/s/5E67HQ_TqIdtc8T-bvI7tA
-
-制造宁德时代
