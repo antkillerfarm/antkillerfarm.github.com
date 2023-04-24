@@ -182,19 +182,3 @@ https://www.zhihu.com/question/523414009
 https://people.cs.uchicago.edu/~laci/yz.html
 
 Yulia Zdanovska
-
----
-
-可怜无定河边骨，犹是深闺梦里人。
-
-https://zhuanlan.zhihu.com/p/565625344
-
-一名俄罗斯联邦武装力量士兵的遗物
-
-https://www.163.com/dy/article/H534FI0S05531JS1.html
-
-变态人妻鼓励俄军人老公戴套性侵乌克兰女人，魔鬼人妻遭人肉曝光
-
-https://zhuanlan.zhihu.com/p/506648469
-
-来自前线的回忆：鲁比日内血战纪实
