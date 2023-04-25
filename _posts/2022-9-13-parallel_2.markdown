@@ -9,7 +9,45 @@ category: DL acceleration
 
 # 并行 & 框架 & 优化
 
-## 大模型训练（续）
+## Bucketing
+
+Bucketing是一种训练多个不同但又相似的结构的网络的方法，这些网络共享相同的参数集。
+
+一个典型的应用是循环神经网络（RNNs）。实现RNNs通常会沿时间轴将网络显式地展开。为了处理序列中的所有元素，我们需要将网络展开成最大可能的序列长度。然而这很浪费资源，因为对于较短的序列，大部分计算都浪费在填充的数据的执行上了。
+
+Bucketing不再将网络展开成最大可能长度，而是展开成多个不同长度的实例（比如，长度为5, 10, 20, 30）。在训练过程中，对于不同长度的最小批数据，使用最恰当的展开模型。
+
+https://blog.csdn.net/xuezhisdc/article/details/54927869
+
+how_to——bucketing
+
+## 框架设计
+
+![](/images/img4/mindspore.jpg)
+
+https://zhuanlan.zhihu.com/p/547878945
+
+五谈AI软件栈--无责乱弹AI软件栈研发方法论
+
+## 数据下沉
+
+数据下沉是将数据一次性传输到端侧，减少频繁的Host-Device数据传输来加速的技术。因为数据在Device上通过通道传输，Host侧和Device侧之间每个epoch进行一次数据交互，所以每个epoch只返回一次结果。
+
+https://zhuanlan.zhihu.com/p/397481167
+
+MindSpore的桎梏和破局
+
+## 大模型训练
+
+目前部分深度学习框架，例如Pytorch和Tensorflow，没有办法满足超大规模模型训练的需求，于是微软基于Pytroch开发了DeepSpeed，腾讯基于Pytroch开发了派大星PatricStar，达摩院基于Tensoflow开发的分布式框架Whale。像是华为昇腾的MindSpore、百度的PaddlePaddle，还有国内的一流科技OneFlow等厂商，对超大模型训练进行了深度的跟进与探索，基于原生的AI框架支持超大模型训练。
+
+https://zhuanlan.zhihu.com/p/432813821
+
+大模型的发展与解决的问题
+
+https://zhuanlan.zhihu.com/p/432289008
+
+从分布式训练到大模型训练
 
 https://www.zhihu.com/question/498271491
 
@@ -300,75 +338,3 @@ ElasticDL：同时提升集群利用率和研发效率的分布式深度学习�
 https://mp.weixin.qq.com/s/sn8fMAbJbeT6JUbCpBpN6A
 
 Jeff Dean与David Patterson：不思考体系结构的深度学习研究者不是好工程师
-
-https://mp.weixin.qq.com/s/6zLrWJ4nE0bHFlVe5dMxHw
-
-分布式深度学习新进展：让“分布式”和“深度学习”真正深度融合
-
-https://mp.weixin.qq.com/s/hjC-WTMIpbWWpmXoLBfD2g
-
-腾讯大规模分布式机器学习系统无量是如何进行技术选型的？
-
-https://mp.weixin.qq.com/s/mg-d1W5i9rzaLMNrvq0tSQ
-
-32分钟训练神经机器翻译，速度提升45倍
-
-https://mp.weixin.qq.com/s/iW0k80TUPuWDE9xwHvX91g
-
-为什么你需要Raven：全球首个真正分布式深度学习训练协议
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750181&idx=1&sn=156dac3c5646143fc2577972f1506836
-
-GPU捉襟见肘还想训练大批量模型？谁说不可以
-
-https://mp.weixin.qq.com/s/-CTVyKWtdTK0RIfzzPVyNQ
-
-分布式与高效深度学习，140页ppt详述深度学习压缩与联邦学习训练技术进展
-
-https://mp.weixin.qq.com/s/nTBuYuW7h9wZYuo3w1xGmQ
-
-分布式训练的方案和效率对比
-
-https://mp.weixin.qq.com/s/LOTQfD9KKtAq0zz4rObCGA
-
-EB级系统空中换引擎：阿里调度执行框架如何全面升级？（DAG 2.0）
-
-https://mp.weixin.qq.com/s/uQzwqcGwC9ZveuW64Lzkmg
-
-分布式训练怎么还减速了呢？
-
-https://zhuanlan.zhihu.com/p/294698838
-
-DLPerf—分布式深度学习最佳入门(踩坑)指南
-
-https://zhuanlan.zhihu.com/p/76638962
-
-Pytorch分布式训练
-
-https://zhuanlan.zhihu.com/p/360405558
-
-PyTorch分布式训练
-
-https://mp.weixin.qq.com/s/0aSBHvscloEnPMRLyNjQsg
-
-PyTorch分布式训练简明教程
-
-https://blog.csdn.net/orangerfun/article/details/123887725
-
-torch分布式训练
-
-https://mp.weixin.qq.com/s/r7kt1k7D1wurWs_uxdLCtg
-
-PyTorch源码解读之分布式训练
-
-https://mp.weixin.qq.com/s/_85oWK2plv2QOX5Qfg_-ZA
-
-大规模机器学习优化，195页ppt与视频
-
-https://mp.weixin.qq.com/s/soruo90Dbtzi6d1kA63Akg
-
-阿里提出智能算力引擎DCAF，节省20%GPU算力
-
-https://mp.weixin.qq.com/s/oDak7peTT5ynNYrH7LSWTg
-
-分布式层次GPU参数服务器架构

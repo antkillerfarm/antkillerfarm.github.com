@@ -28,14 +28,6 @@ TensorFlow的图切割模块——Graph Partitioner
 
 tensorflow/core/graph/graph_partition.cc
 
-## StreamExecutor
-
-StreamExecutor是Google内部为并行编程模型开发的库。TensorFlow中的StreamExecutor是StreamExecutor的开源简版。
-
-https://www.cnblogs.com/deep-learning-stacks/p/9386188.html
-
-TensorFlow中的并行执行引擎——StreamExecutor框架
-
 ## backend优先级
 
 `REGISTER_LOCAL_DEVICE_FACTORY(DEVICE_XLA_XXX_NPU, XlaXXXNpuDeviceFactory, 500);`

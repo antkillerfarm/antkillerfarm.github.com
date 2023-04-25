@@ -199,7 +199,7 @@ TensorFlow之分布式变量（该作者写了一系列的TF分布式文章）
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/xla/multi_device_lenet_xla.py
 
----
+## Rendezvous
 
 Rendezvous是一个法语单词，发音也比较特殊，一般直译为“约会、相会、会和”，而在TensorFlow中，Rendezvous是用来完成消息传输的通信组件。
 
@@ -241,7 +241,43 @@ SameWorkerRecvDone -> CopyTensor::ViaDMA -> CopyHostToDevice -> XlaDeviceContext
 
 GenericTransferManager::TransferLiteralToDeviceAsync -> TransferManager::TransferBufferToDevice -> Stream::ThenMemcpy
 
----
+## StreamExecutor
+
+StreamExecutor是Google内部为并行编程模型开发的库。TensorFlow中的StreamExecutor是StreamExecutor的开源简版。
+
+https://www.cnblogs.com/deep-learning-stacks/p/9386188.html
+
+TensorFlow中的并行执行引擎——StreamExecutor框架
+
+TF使用`stream_executor::DeviceMemoryBase`作为设备内存的抽象。用`DeviceMemoryBase::opaque`作为对于不可直接访问的设备地址的指针。
+
+`class GpuExecutor : public internal::StreamExecutorInterface`
+
+所以上面提到的Memcpy的调用路径，还有设备相关的后半部分：
+
+Stream::ThenMemcpy -> StreamExecutor::Memcpy -> GpuExecutor::Memcpy -> GpuDriver::AsynchronousMemcpyH2D -> cuMemcpyHtoDAsync
+
+## TransferManager
+
+`TransferManager`类使后端能够提供特定于平台的机制，用于通过给定的设备内存句柄构造XLA literal data。换言之，它可以帮助封装主机与设备之间的双向数据传输。
+
+`TransferManager`类已经有了一个通用实现：`GenericTransferManager`，设备只需要派生该类，做一些定制化的修改。所以`xxx_transfer_manager.h`是关注的重点。
+
+TPU和GPU的修改主要集中在`TransferLiteralToInfeed`和`TransferLiteralFromOutfeed`两个函数。
+
+这两个函数的GPU实现在`InfeedManager`类中。
+
+`TransferLiteralToInfeed`关键函数调用：
+
+gpu::CopyBufferToDevice -> Stream::ThenMemcpy
+
+如果不对`GenericTransferManager`做修改，则该类会用Host上的mem buffer，虚拟一个`DeviceMemoryBase`来处理Feed。
+
+graphcore的实现没有动`GenericTransferManager`，而是自己单独弄了一套基于`TranslatedFeedInfo`类的cache机制。
+
+tensorflow/compiler/plugin/poplar/driver/poplar_executable_cache.cc
+
+## 分布式数据集
 
 大模型不光模型的训练是分布式的，数据集也是分布式的。
 
@@ -266,43 +302,3 @@ https://blog.csdn.net/OneFlow_Official/article/details/124054450
 https://blog.csdn.net/OneFlow_Official/article/details/124113864
 
 解读谷歌Pathways架构（二）：向前一步是OneFlow
-
-## Bucketing
-
-Bucketing是一种训练多个不同但又相似的结构的网络的方法，这些网络共享相同的参数集。
-
-一个典型的应用是循环神经网络（RNNs）。实现RNNs通常会沿时间轴将网络显式地展开。为了处理序列中的所有元素，我们需要将网络展开成最大可能的序列长度。然而这很浪费资源，因为对于较短的序列，大部分计算都浪费在填充的数据的执行上了。
-
-Bucketing不再将网络展开成最大可能长度，而是展开成多个不同长度的实例（比如，长度为5, 10, 20, 30）。在训练过程中，对于不同长度的最小批数据，使用最恰当的展开模型。
-
-https://blog.csdn.net/xuezhisdc/article/details/54927869
-
-how_to——bucketing
-
-## 框架设计
-
-![](/images/img4/mindspore.jpg)
-
-https://zhuanlan.zhihu.com/p/547878945
-
-五谈AI软件栈--无责乱弹AI软件栈研发方法论
-
-## 数据下沉
-
-数据下沉是将数据一次性传输到端侧，减少频繁的Host-Device数据传输来加速的技术。因为数据在Device上通过通道传输，Host侧和Device侧之间每个epoch进行一次数据交互，所以每个epoch只返回一次结果。
-
-https://zhuanlan.zhihu.com/p/397481167
-
-MindSpore的桎梏和破局
-
-## 大模型训练
-
-目前部分深度学习框架，例如Pytorch和Tensorflow，没有办法满足超大规模模型训练的需求，于是微软基于Pytroch开发了DeepSpeed，腾讯基于Pytroch开发了派大星PatricStar，达摩院基于Tensoflow开发的分布式框架Whale。像是华为昇腾的MindSpore、百度的PaddlePaddle，还有国内的一流科技OneFlow等厂商，对超大模型训练进行了深度的跟进与探索，基于原生的AI框架支持超大模型训练。
-
-https://zhuanlan.zhihu.com/p/432813821
-
-大模型的发展与解决的问题
-
-https://zhuanlan.zhihu.com/p/432289008
-
-从分布式训练到大模型训练

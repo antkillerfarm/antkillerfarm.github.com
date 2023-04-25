@@ -296,3 +296,11 @@ https://zhuanlan.zhihu.com/p/622183909
 https://zhuanlan.zhihu.com/p/623516134
 
 和平下的浩劫——俄罗斯的“部分动员”到底造成了多大的灾难？
+
+https://zhuanlan.zhihu.com/p/624774447
+
+乌萝点将录之帕维尔·帕利萨
+
+https://zhuanlan.zhihu.com/p/624805493
+
+乌萝点将录之帕夫洛·费多先科

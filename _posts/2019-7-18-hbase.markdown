@@ -241,6 +241,10 @@ https://www.zhihu.com/question/24890607
 
 为什么习惯使用i、j、k等作为循环变量?
 
+https://mp.weixin.qq.com/s/S4KDsiwK7FChShUkgjZzjg
+
+仅剩1位73岁开发者苦撑！能求解超复杂物理方程式的计算程序，要没人维护了
+
 ---
 
 对于同样的内存布局，我们只需要颠倒下标就可以进行行/列优先的转换：
