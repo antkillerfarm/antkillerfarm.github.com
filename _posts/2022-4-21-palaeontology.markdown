@@ -356,3 +356,8 @@ https://www.zhihu.com/question/413322597
 https://www.zhihu.com/question/520925509
 
 从地质学上如何解释顿巴斯地区丰富的煤炭资源？
+
+https://zhuanlan.zhihu.com/p/624761945
+
+卡扎菲“世界第八大奇迹”，中道崩殂了（努比亚砂岩含水层系统）
+

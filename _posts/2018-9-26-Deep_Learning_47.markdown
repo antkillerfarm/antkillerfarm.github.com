@@ -297,6 +297,10 @@ https://www.zhihu.com/column/c_1451693094165516288
 
 人体三维重建与虚拟试衣
 
+https://mp.weixin.qq.com/s/LeiaqqqZ4uI0cmUU0rxYhA
+
+一篇文章教你学会使用三维重建知名开源系统
+
 ## NetVLAD
 
 NetVLAD算的上是CNN+传统算子的一个范例。

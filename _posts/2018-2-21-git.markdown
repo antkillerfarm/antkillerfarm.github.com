@@ -217,6 +217,8 @@ git的reset和checkout的区别
 
 `HEAD`表示当前版本，`HEAD^^`表示当前版本之前的两个版本，如果回溯的版本较多也可以写作`HEAD~100`。
 
+`git merge -s ours branch`，在不改变本地内容的情况下，触发merge操作。
+
 ## 如何git下载超大版本库
 
 自从两次git完整的linux kernel，都因为网络问题，而中途失败之后，不甘心的我，继续在网上寻找答案。
@@ -423,19 +425,3 @@ GitLab self-managed是GitLab出品的本地Git Server。
 https://mp.weixin.qq.com/s/aY-QJN2Fkp86ATdvqVvpZQ
 
 Code：美团代码托管平台的演进与实践
-
-## Monorepo
-
-上面提到的多项目管理，一般称为MultiRepo，即每个项目对应一个单独的仓库。与之相对的则是Monorepo，即把多个项目放在一个仓库里面。
-
-![](/images/img4/Monorepo.png)
-
-参考：
-
-https://juejin.cn/post/6944877410827370504
-
-现代前端工程为什么越来越离不开Monorepo?
-
-https://zhuanlan.zhihu.com/p/77577415
-
-Monorepo是什么，为什么大家都在用？

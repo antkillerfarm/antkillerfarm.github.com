@@ -408,3 +408,7 @@ VIO（Visual-Inertial Odometry）：以视觉和IMU融合的方法实现定位�
 https://www.zhihu.com/question/325242594
 
 视觉slam和vio是什么关系？
+
+https://mp.weixin.qq.com/s/tQP6CoROi6pqpr9xLyoMVg
+
+VIO初始化探究：一种旋转平移解耦的高效鲁棒初始化方法

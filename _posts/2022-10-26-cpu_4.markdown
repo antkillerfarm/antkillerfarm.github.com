@@ -11,6 +11,28 @@ category: Chip
 
 ## 国产CPU（续）
 
+龙芯2E/2F：当时是作为中法半导体战略合作协议的一部分，被要求在意法半导体生产，此时龙芯还是计算所的一个项目组。
+
+2010年，龙芯1000系列：65nm，因为意法半导体合作得很好，且龙芯正穷，无法承担更换代工厂的风险，就继续在意法半导体生产。
+
+2012～14年，龙芯1500系列：32nm/28nm，当时境内尚未有成熟的32/28nm工艺，且龙芯仍然很穷，继续在意法半导体生产。
+
+2015年，龙芯2000系列：40nm，龙芯开始盈利，在境内生产。境内28nm工艺生产大芯片比较困难，于是制程退步到40nm，但成品率仍然有点低。
+
+2017年，龙芯3000系列：28nm，在境内和意法半导体都有生产，境内的版本为了拉高成品率，而降低了CPU运行频率。
+
+2019年，龙芯4000系列：28nm，在意法半导体生产（传闻也有境内生产的版本），仍然保持28nm制程，随时可以切换回境内生产。
+
+2020～21年，龙芯5000系列：在境内生产，境内的14/12nm制程成熟，使用14/12nm制程，CPU单核性能达到国内第一，略超华为使用7nm工艺的ARM服务器/桌面CPU，且4核的3A5000性能与国内另一家ARM厂商的最新8核产品相当。
+
+下一代龙芯6000系列：坚持不使用最新工艺，境内能生产什么，龙芯就设计什么，仍然是14/12nm制程，预计单核整数性能提高40%，浮点性能提高60%，与市场主流（中端桌面CPU产品）水平更加接近。
+
+https://mp.weixin.qq.com/s/NPMCtGGM5iN9ZCznnt-OIw
+
+胡伟武：我国手机CPU的自给率是0%
+
+---
+
 海光买了AMD zen-（浮点单元阉割一半）的IP，但是买不到zen2和之后的新核心，因为AMD不卖。
 
 飞腾找台湾世芯代理设计，但因飞腾参与超算建设上了美国黑名单，台湾世芯宁可承受损失也不再继续提供设计服务。
@@ -276,61 +298,3 @@ https://mp.weixin.qq.com/s/eAzdtKvfw7EVz5Ax3nXeZg
 https://mp.weixin.qq.com/s/NfNJVoAC5aW1sgToAmYsGw
 
 3nm芯片终结者
-
-https://mp.weixin.qq.com/s/o8C6n-ZRw3vFS8E-hikXJQ
-
-移动的王者：深入分析ARM最强处理器Cortex A77
-
-https://www.cnblogs.com/f-ck-need-u/p/11141636.html
-
-关于CPU的一些基本知识总结
-
-https://mp.weixin.qq.com/s/vTOGmcahRxQBH8RgkTJ2GA
-
-中文系同学都能听懂的集成电路设计流程
-
-https://mp.weixin.qq.com/s/O-2ecxYVOgEfRuwEoS7gRA
-
-Fab的那些事儿
-
->Fab的全称叫Fabrication，也就是集成电路制造的工厂、车间。
-
-https://mp.weixin.qq.com/s/_NcQ-PxNpEtpYdo450Uukg
-
-半导体材料全球格局
-
-https://mp.weixin.qq.com/s/QwE_VTEUS9kGDDrHlzPYmg
-
-硅片为什么不是方的？
-
-https://zhuanlan.zhihu.com/p/32378843
-
-ARM攒机指南-汽车篇
-
-https://mp.weixin.qq.com/s/Hq9hzkyfGcCQa_FfzSDoRg
-
-5nm工艺节点以后，半导体器件的发展方向
-
-https://zhuanlan.zhihu.com/p/66263349
-
-为什么内存和闪存制程比CPU低？它们现在都在什么节点？
-
-https://zhuanlan.zhihu.com/p/114448236
-
-什么是Win10的“现代待机”？为什么它未来会越来越重要？这篇文章部分解释了我的第一个平板为什么那么耗电。
-
-https://mp.weixin.qq.com/s/J7RlmvU7JY1J8rV-eqjQ2A
-
-浅谈多核心CPU和SoC芯片及其工作原理
-
-https://mp.weixin.qq.com/s/Lnrlv7JcrOSwbnDweYf1Yg
-
-片上系统设计案例分析-Xbox主机
-
-https://zhuanlan.zhihu.com/p/86432216
-
-Microcode是什么？它为什么能修正CPU硬件错误？
-
-https://zhuanlan.zhihu.com/p/152167194
-
-两大FPGA公司的“AI技术路线”

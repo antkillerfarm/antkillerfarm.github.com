@@ -255,6 +255,22 @@ https://mp.weixin.qq.com/s/QbBr7ZQhD8DwzSzf4RRvgQ
 
 # Git+
 
+## Monorepo
+
+上面提到的多项目管理，一般称为MultiRepo，即每个项目对应一个单独的仓库。与之相对的则是Monorepo，即把多个项目放在一个仓库里面。
+
+![](/images/img4/Monorepo.png)
+
+参考：
+
+https://juejin.cn/post/6944877410827370504
+
+现代前端工程为什么越来越离不开Monorepo?
+
+https://zhuanlan.zhihu.com/p/77577415
+
+Monorepo是什么，为什么大家都在用？
+
 ## Git多项目管理
 
 项目越来越大，一些通用的模块我们希望将他抽离出来作为单独的项目，以便其他项目也可以使用，或者使用一些第三方库，可能我们并不想将代码直接拷贝进我们的项目里面，而仅仅只是单纯的引用。
@@ -340,53 +356,3 @@ https://mp.weixin.qq.com/s/GZkGfwrfMTzrMfki8LKbIw
 https://mp.weixin.qq.com/s/KEu6qCl-En6HiKGo2pgEQg
 
 TensorBay：一款易用的像Git一样数据版本管理工具！
-
-# Raspberry Pi+
-
-https://mp.weixin.qq.com/s/1wxA7jnCgmXt5j9DXxH1UA
-
-超有趣！手把手教你使用树莓派实现实时人脸检测
-
-https://mp.weixin.qq.com/s/tW54lcv9aRz9xXC9V-DsWw
-
-Keras+树莓派，130行代码找到圣诞老人
-
-https://mp.weixin.qq.com/s/8zD3GqbQrQnZmuD59OoFuQ
-
-让树莓派记下你的笑颜
-
-https://mp.weixin.qq.com/s?__biz=MzU1OTMyNDcxMQ==&mid=2247484969&idx=1&sn=29d04fbb56a4464b08407eb87d26325e
-
-基于源代码为Raspberry Pi设备构建TensorFlow
-
-https://mp.weixin.qq.com/s/onN61A13xuJzNk9zE0hM-w
-
-你有特斯拉，我有树莓派，纯手工打造车载车牌识别检测系统，家用车秒变智能车
-
-https://mp.weixin.qq.com/s/rqIZSX-zRNQ3uyae3LlnZQ
-
-树莓派也能实时训练agent玩Atari
-
-https://mp.weixin.qq.com/s/pPTaxiCOTL_Y89TuKGHQmg
-
-微软放弃的游戏被他们复活了：Windows经典“三维弹球”现实版，CAD建模、Arduino编程、数控机床打造，硬核致敬童年
-
-https://mp.weixin.qq.com/s/mgdDjjIJX4y1-DXzazDhPA
-
-不会编程的外国小姐姐，3天、850块，徒手用树莓派DIY了个数码相机
-
-https://mp.weixin.qq.com/s/rM3SkUiQIxsGz9MNIg1skQ
-
-用树莓派DIY波士顿机器狗，帮你省下50万：教程开源，人人皆可上手
-
-https://zhuanlan.zhihu.com/p/301860804
-
-如何把树莓派400打造成小霸王游戏机，Retropie包含上万经典老游戏
-
-https://www.zhihu.com/question/339388119
-
-树莓派做网站靠谱不？
-
-https://mp.weixin.qq.com/s/MEiee-2zlamaqFXv2ih4WQ
-
-树莓派相机的自动曝光算法
