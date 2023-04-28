@@ -7,6 +7,27 @@ category: language
 * toc
 {:toc}
 
+# decltype
+
+和auto的用法类似，auto不仅要推导类型，还要定义变量，而decltype则只进行类型推导。
+
+```cpp
+int add(int x,int y){
+    return x+y;
+}
+int main(){
+    double i=0;
+    decltype(i) a; // double
+    decltype(add()) b; //int 注意括号。不带括号就是函数指针了。
+}
+```
+
+参考：
+
+https://www.cnblogs.com/npbool/p/3433360.html
+
+C++11初探：类型推导，auto和decltype
+
 # 类型转换
 
 **static_cast**：基本等同于C语言的强制类型转换，只有很小的差异。
@@ -310,31 +331,6 @@ explicit关键字只能用于类内部的构造函数声明上，而不能用在
 https://zhuanlan.zhihu.com/p/52152355
 
 C++ explicit 关键字
-
-# std::tuple
-
-```cpp
-auto tuple = std::make_tuple(1, 'A', "test");
-std::cout << std::get<0>(tuple) << std::endl;
-std::cout << std::get<1>(tuple) << std::endl;
-std::cout << std::get<2>(tuple) << std::endl;
-```
-
-# std::tie
-
-可用tuple或pair返回多个返回值，然后用tie进行解包。这里的语法非常类似python。
-
-```cpp
-std::pair<int, std::string> fun_tie(int a, std::string str)
-{
-  return std::make_pair(a, str);
-}
-
-int a;
-std::string str;
-std::tie(a , str) = fun_tie(12, std::string("Pony Ma"));
-std::cout << a << "," << str << std::endl;
-```
 
 # 模板实参推导
 

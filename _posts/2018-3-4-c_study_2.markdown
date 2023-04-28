@@ -7,6 +7,34 @@ category: language
 * toc
 {:toc}
 
+# C++ 11/14/17/20的新特性（续）
+
+6.using，extern
+
+```cpp
+//before
+struct Derive : public Base{
+    Derive(int a,char b,double c, std::string d,float f):Base(a,b,c,d,f){}
+};
+
+//after
+struct Derive : public Base{
+    using Base::Base;
+};
+```
+
+当子类中的成员函数和基类同名时，子类中重定义的成员函数将隐藏基类中的版本，即使函数原型不同也是如此。
+
+如果要取消这种隐藏，需要显式使用using。
+
+http://blog.csdn.net/cnsword/article/details/8034947
+
+C++11老关键字的新含义(auto, using，extern)
+
+https://www.cnblogs.com/wishchin/p/9199835.html
+
+C++11：using的各种作用
+
 # 动态链接
 
 这两天实践了一下怎样在linux下创建动态链接。感觉网上的资料虽然翔实，但仍然有疏漏之处。
@@ -263,24 +291,3 @@ shared_ptr的使用和陷阱
 https://blog.csdn.net/qq_38410730/article/details/105903979
 
 weak_ptr弱引用智能指针详解
-
-# decltype
-
-和auto的用法类似，auto不仅要推导类型，还要定义变量，而decltype则只进行类型推导。
-
-```cpp
-int add(int x,int y){
-    return x+y;
-}
-int main(){
-    double i=0;
-    decltype(i) a; // double
-    decltype(add()) b; //int 注意括号。不带括号就是函数指针了。
-}
-```
-
-参考：
-
-https://www.cnblogs.com/npbool/p/3433360.html
-
-C++11初探：类型推导，auto和decltype

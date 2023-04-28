@@ -147,6 +147,10 @@ https://zhuanlan.zhihu.com/p/619730103
 
 AI绘画教程：如何用Stable Diffusion始终画同一个人？
 
+https://zhuanlan.zhihu.com/p/622914660
+
+《Stable Diffusion 倚天剑术》第1卷：在各种设备上把Stable Diffusion玩起来
+
 ## 参考
 
 https://mp.weixin.qq.com/s/djkjAfUO_DefTP2drzY_iQ
@@ -360,11 +364,3 @@ https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748774&idx=4&sn=efb794
 https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
 
 分分钟学会基于深度学习的图像真实风格迁移！
-
-https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247505181&idx=1&sn=2e817ec2ae918fd85c0ebcf85e810997
-
-惊！史上最佳GAN现身，超真实AI假照片，行家们都沸腾了
-
-https://mp.weixin.qq.com/s/MPdGF2-cJbNcvaEx-2BnFg
-
-把2D公路变成3D飞车游戏，MIT、清华打破图像编辑的次元壁

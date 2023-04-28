@@ -67,6 +67,10 @@ https://mp.weixin.qq.com/s/7rz8QXPNda4PVs3KcweQMg
 
 ---
 
+天天鄙视特斯拉没有核心竞争力，但对手稍一降价，立马满地打滚，哭喊撒泼，说什么价格战伤人伤己，不知道的还以为特斯拉拜了崆峒派，学会了七伤拳。
+
+---
+
 ![](/images/img2/ADAS.jpg)
 
 https://mp.weixin.qq.com/s/Okolok3ZLZhgw0TQ_TROKA

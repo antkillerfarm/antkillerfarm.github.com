@@ -177,6 +177,8 @@ gcc还可以用`__attribute__((packed))`
 
 # 宏展开函数的小技巧
 
+## “伪”函数
+
 有的时候，会使用宏展开的方式定义“伪”函数。
 
 这些“伪”函数有以下特征：
@@ -201,6 +203,83 @@ gcc还可以用`__attribute__((packed))`
 ```c
 #define st(x)      do { x } while (__LINE__ == -1)
 ```
+
+## operator '#'
+
+```c
+#define TO_STRING(expr) # expr
+// TO_STRING(hello_world)
+
+#define PRINT_VARIABLE_NAME(var)  printf("%s", TO_STRING(var));
+
+int main() {
+    int number = 10;
+    PRINT_VARIABLE_NAME(number);
+    printf(" = %d\n", number);
+    return 0;
+}
+```
+
+## operator '##'
+
+```c
+#define IMPL_1(str) printf("call impl 1 print:%s\n", str);
+#define IMPL_2(str) printf("call impl 2 print:%s\n", str);
+
+#define IMPL(which, str) IMPL_ ## which(str)
+
+int main() {
+    IMPL(1, "aaaaaa");
+    IMPL(2, "bbbbbb");
+    return 0;
+}
+```
+
+## Macro overload
+
+```c
+#define ADD_2(a, b) ((a) + (b))
+#define ADD_3(a, b, c) ((a) + (b) + (c))
+#define ADD_4(a, b, c, d) ((a) + (b) + (c) + (d))
+
+#define GET_OVERLOAD(_1, _2, _3, _4, MACRO, ...) MACRO
+
+// __VA_ARGS__ since C99
+// ##__VA_ARGS__ to handle empty variadic
+// __VA_OPT__ since C++20
+#define ADD(...) GET_OVERLOAD(__VA_ARGS__, ADD_4, ADD_3, ADD_2)(__VA_ARGS__)
+
+int main() {
+    printf("%d\n", ADD(1, 2));
+    printf("%d\n", ADD(1, 2, 3));
+    printf("%d\n", ADD(1, 2, 3, 4));
+    return 0;
+}
+```
+
+## __FUNCTION__ and __PRETTY_FUNCTION__
+
+```c
+template<typename T>
+T add(T x, T y) {
+    printf("__FUNCTION__ is: %s\n", __FUNCTION__);
+    printf("__PRETTY_FUNCTION__ is: %s\n", __PRETTY_FUNCTION__);
+    return x + y;
+}
+
+int main() {
+    add<int>(1, 2);
+    return 0;
+}
+```
+
+## Boost preprocessor library
+
+虽然这个库很强，但是preprocessor并不是图灵完备的，而C++的模板库/CMake则是图灵完备的。
+
+https://www.boost.org/doc/libs/1_75_0/libs/preprocessor/doc/index.html
+
+The Boost Library Preprocessor Subset for C/C++
 
 # C++ 11/14/17/20的新特性
 
@@ -313,41 +392,15 @@ auto CreateLonglink= +[](const std::string& name,
 };
 ```
 
-5.using，extern
+5.列表初始化
 
 ```cpp
-//before
-struct Derive : public Base{
-    Derive(int a,char b,double c, std::string d,float f):Base(a,b,c,d,f){}
-};
-
-//after
-struct Derive : public Base{
-    using Base::Base;
-};
-```
-
-当子类中的成员函数和基类同名时，子类中重定义的成员函数将隐藏基类中的版本，即使函数原型不同也是如此。
-
-如果要取消这种隐藏，需要显式使用using。
-
-http://blog.csdn.net/cnsword/article/details/8034947
-
-C++11老关键字的新含义(auto, using，extern)
-
-https://www.cnblogs.com/wishchin/p/9199835.html
-
-C++11：using的各种作用
-
-6.列表初始化
-
-```cpp
-struct Studnet
+struct Student
 {
     char* name;
     int age;
 };
-Studnet s={"dablelv",18};
+Student s={"dablelv",18};
 
 std::vector<int> nVec(10, 1); // 包含10个元素，且值为1 
 std::vector<int> nVec{10, 1}; // 包含2个元素，值分别为10,1
@@ -356,25 +409,3 @@ std::vector<int> nVec{10, 1}; // 包含2个元素，值分别为10,1
 https://blog.csdn.net/sevenjoin/article/details/81779221
 
 C++11列表初始化-花括号的使用
-
-# 添加废弃提示
-
-有些类库出于兼容性的考虑，仍然保留了对旧函数的支持。但是继续使用这些函数，显然不是作者的初衷。因此，有必要在编译时，给出废弃的提示。
-
-近日浏览cocos2d-x v3的代码，发现可以这样做：
-
-宏定义：
-
-```c
-#if defined(__GNUC__) && ((__GNUC__ >= 4) || ((__GNUC__ == 3) && (__GNUC_MINOR__ >= 1)))
-#define CC_DEPRECATED_ATTRIBUTE __attribute__((deprecated))
-#elif _MSC_VER >= 1400 //vs 2005 or higher
-#define CC_DEPRECATED_ATTRIBUTE __declspec(deprecated)
-#else
-#define CC_DEPRECATED_ATTRIBUTE
-#endif
-```
-
-宏使用：
-
-`CC_DEPRECATED_ATTRIBUTE static TextureCache * getInstance();`

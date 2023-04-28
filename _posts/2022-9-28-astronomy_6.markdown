@@ -9,6 +9,32 @@ category: Nature
 
 # 天文杂谈
 
+https://view.inews.qq.com/wxn/20211224A03SC600
+
+韦伯望远镜即将发射！梭哈百亿美元上天，是为了看啥？
+
+https://view.inews.qq.com/wxn/20211225A0A9SJ00
+
+韦伯望远镜成功背后：成本约110亿美元，共推迟发射18次
+
+https://view.inews.qq.com/wxn/20211225A08N9G00
+
+“鸽王之王”韦伯终于上天！比哈勃看得更远，烧钱更多
+
+https://mp.weixin.qq.com/s/AIMccIbtB6W5nwu-6yRuJw
+
+“鸽王” 韦伯上天之前，你需要知道这些
+
+https://mp.weixin.qq.com/s/BYw9HJehGC528WkX_q4JLw
+
+情人节将至，韦伯望远镜首次太空“睁眼”！
+
+https://www.sohu.com/a/569342145_161795
+
+韦伯太空望远镜主镜被太空陨石砸中，受损情况比最初想象要大
+
+---
+
 ![](/images/img4/Van_Allen_radiation_belts.jpg)
 
 范·艾伦辐射带（Van Allen radiation belts）是地球磁场捕获的太阳宇宙射线和部分银河宇宙射线中的高能带电粒子组成。一般来说，内辐射带里高能质子多，外辐射带里高能电子多。
@@ -252,23 +278,3 @@ https://mp.weixin.qq.com/s/eO71ulxgc-Fdx8KtMf7CXg
 https://mp.weixin.qq.com/s/vxTJf4pwpB3a2lqtx4fQ6g
 
 万家灯火，有你守护！我是如何拍到这次陆基中段反导试验靶弹发射的？
-
-https://mp.weixin.qq.com/s/wDhmqd2u56xJb3wcQHTW_g
-
-260年前，一个不同寻常的新年（日月同升，五星联珠）
-
-https://mp.weixin.qq.com/s/6syX6eZ3l0qnH47GL8iulg
-
-ASO-S卫星流浪计划：一起揭秘太阳磁场的秘密
-
-https://mp.weixin.qq.com/s/KFO1ar8awQ7Xl2Iam2iLEA
-
-如果没有磁场，太阳将变得枯燥无味
-
-https://mp.weixin.qq.com/s/4x9dfPsrUaXlE8_vxri7jg
-
-火箭发射失利后，一封初中生的信冲上热搜！
-
-https://mp.weixin.qq.com/s/oP5prD-KuxI8CNVo16arVQ
-
-1994年，木星曾帮地球抗下了21波灭星级打击（苏梅克-列维九号彗星）
