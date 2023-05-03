@@ -9,6 +9,14 @@ category: CV
 
 # 图像变换
 
+https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652026913&idx=2&sn=fc38fa94211c277d616f4f37aa6d8b5d
+
+pix2pix 3D版：几笔线条生成超炫猫咪霹雳舞！
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748774&idx=4&sn=efb794e4e418493f17138e7fa7eb84ab
+
+这种两阶段深度着色模型，为黑白照披上了彩衣
+
 https://mp.weixin.qq.com/s/h6sktVd1ywCCncUb9iwyFQ
 
 中科院自动化所：高清真实图像生成领域及GAN研究在人脸识别领域的进展

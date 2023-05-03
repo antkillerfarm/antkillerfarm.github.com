@@ -127,7 +127,9 @@ https://zhuanlan.zhihu.com/p/248356236
 
 https://blog.csdn.net/yimenren/article/details/124773923
 
-github国内镜像https://hub.fastgit.xyz/使用指南
+github国内镜像 https://hub.fastgit.xyz 使用指南
+
+/home/tj/my/opensource/blink-search
 
 ## arxiv下载速度慢
 

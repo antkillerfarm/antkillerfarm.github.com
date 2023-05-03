@@ -147,6 +147,10 @@ https://zhuanlan.zhihu.com/p/619730103
 
 AI绘画教程：如何用Stable Diffusion始终画同一个人？
 
+https://zhuanlan.zhihu.com/p/626335914
+
+AI绘图StableDiffusion最强大模型盘点 - 诸神乱战
+
 ## 参考
 
 https://mp.weixin.qq.com/s/djkjAfUO_DefTP2drzY_iQ
@@ -348,14 +352,6 @@ https://mp.weixin.qq.com/s/l33D8zNtHVcaMjlw4IY05g
 https://mp.weixin.qq.com/s/UySQTv8uuGungjxFNeHbRw
 
 给动漫人物轻松换装、编舞，这家游戏公司用GAN做到了！
-
-https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652026913&idx=2&sn=fc38fa94211c277d616f4f37aa6d8b5d
-
-pix2pix 3D版：几笔线条生成超炫猫咪霹雳舞！
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748774&idx=4&sn=efb794e4e418493f17138e7fa7eb84ab
-
-这种两阶段深度着色模型，为黑白照披上了彩衣
 
 https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
 

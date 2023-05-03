@@ -345,3 +345,11 @@ LLVM基本概念入门
 https://zhuanlan.zhihu.com/p/141265959
 
 有关于TableGen的简单介绍
+
+https://zhuanlan.zhihu.com/p/502828729
+
+LLVM创始人Chris Lattner回顾展望编译器
+
+https://zhuanlan.zhihu.com/p/626085010
+
+使用Flex、Bison和LLVM编写自己的Toy Compiler

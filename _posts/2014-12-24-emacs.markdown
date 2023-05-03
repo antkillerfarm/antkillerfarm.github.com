@@ -143,6 +143,19 @@ C代码相关的内容：
 
 5)csope中的initial directory表示全局的搜索目录。如果在同一个emacs实例中，打开多个工程的代码时，不要设置这个initial directory，否则所有工程代码都将在这个路径下搜索，而不是在各自的路径下搜索了。
 
+## 修改颜色
+
+```lisp
+(set-background-color "#CCE8CF") ;; 使用苹果绿背景
+(set-foreground-color "black") ;; 使用黑色前景
+(set-face-foreground 'region "green")  ;; 区域前景颜色设为绿色
+(set-face-background 'region "blue") ;; 区域背景色设为蓝色
+```
+
+## 设置快捷键
+
+`(global-set-key (kbd "C-x M-s") 'rgrep)`
+
 ## 软件仓库
 
 Emacs自从24.1之后，也开始支持软件仓库的概念。这对于一个有30年历史的老软件来说，实属不易。相关的代码在package.el中。
@@ -281,6 +294,26 @@ https://github.com/myuhe/ess-R-data-view.el
 1.将msys2的bin添加到系统环境变量PATH中。
 
 2.搜索中文时，不要用引号括起来，否则什么都找不到。
+
+## 有用的插件
+
+https://www.emacswiki.org/emacs/DiredSortMenu
+
+https://github.com/manateelazycat/blink-search
+
+https://jblevins.org/projects/markdown-mode/
+
+Anything、Ivy、Helm、Snails
+
+## 参考
+
+https://emacs-china.org/
+
+Emacs中文社区
+
+https://nyk.ma/posts/emacs-write-your-own
+
+Emacs 自力求生指南 ── 来写自己的配置吧
 
 # Lazarus
 

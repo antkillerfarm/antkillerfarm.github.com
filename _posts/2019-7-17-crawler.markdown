@@ -25,6 +25,14 @@ https://www.cnblogs.com/String-Lee/p/11391893.html
 
 关于m3u8格式的视频文件ts转mp4下载和key加密问题
 
+---
+
+HTTP Live Streaming（缩写是HLS）是一个由苹果公司提出的基于HTTP的流媒体网络传输协议。​在Apple的平台上无需任何安装即可打开，Chrome/Firefox需要安装插件才可以播放。
+
+https://blog.csdn.net/aoshilang2249/article/details/82012187
+
+HLS直播协议m3u8详解
+
 ## 自动解析网页的结构化数据
 
 抽取结构树，对比两个网页的dom tree的相似度（卷积核），找出并抽取相似节点。

@@ -233,6 +233,26 @@ https://mp.weixin.qq.com/s/QzDKFinw9sXXfKNbG0Rchw
 
 # 印度+
 
+印度有法律规定，所有外国公司，涉及研发费用的，只要在印度销售，其中研发利润必须给政府一部分。就是比方这个技术美国高通研发一个芯片，卖给中国小米，每台手机收小米200块芯片授权专利费。那么，这个美国专利，必须给印度政府上交一部分。
+
+https://www.zhihu.com/question/530869657
+
+如何看待小米被曝涉嫌非法汇款，遭印度政府扣押约48亿元，小米回应称“将与政府合作澄清误解”？
+
+https://mp.weixin.qq.com/s/YCzHbsmTmXeYFGS1xGFTCw
+
+欧美日韩的企业都逃不过印度的巨额罚款，小米怎么可能例外
+
+---
+
+https://zhuanlan.zhihu.com/p/166127280
+
+航拍印度三大一线城市，新德里孟买加尔各答
+
+https://www.zhihu.com/question/27339934
+
+从1876年算起，中国铁路里程超过印度用了多少年？
+
 https://mp.weixin.qq.com/s/EktlkRgHykNgd6Oj_SVcQw
 
 印度封杀中国App，它们的出海成绩有多让人“眼红”？
