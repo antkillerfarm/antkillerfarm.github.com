@@ -77,6 +77,10 @@ https://mp.weixin.qq.com/s/hW4uTFF-TzBOAzfoupXINg
 
 源码解析：Git的第一个提交是什么样的？
 
+https://www.zhihu.com/question/36974536
+
+git是Linus一个人开发出来的吗？
+
 ## 从git log看svn的发展史
 
 这个标题并没有错。众所周知的，svn查看修改历史是需要远程登录服务器的。而这对于一些历史悠久的版本库来说，简直是是个灾难。因此这里的log实际上是从Apache官方的git服务器上git下来的。

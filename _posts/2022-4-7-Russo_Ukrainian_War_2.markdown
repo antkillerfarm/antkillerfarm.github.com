@@ -21,6 +21,10 @@ Zelensky: The Man With the Iron Balls
 
 基辅，哈尔科夫，乌军主力，俄军一个也没拿下。演员就算是个克格勃间谍，现在也没法让步啊。
 
+扶大厦于将倾，挽狂澜于既倒。
+
+少康以一旅而兴夏，肃宗以匹马而昌唐。
+
 https://user.guancha.cn/main/content?id=702592
 
 乌克兰小姐姐：我为什么选泽连斯基做我们的总统？

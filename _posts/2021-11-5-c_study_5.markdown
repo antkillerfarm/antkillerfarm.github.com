@@ -252,6 +252,53 @@ abc.cpp:6:7: note: no known conversion for argument 1 from ‘Base’ to ‘Base
 
 http://stackoverflow.com/questions/20247525/about-c-conversion-no-known-conversion-for-argument-1-from-some-class-to
 
+# 添加废弃提示
+
+有些类库出于兼容性的考虑，仍然保留了对旧函数的支持。但是继续使用这些函数，显然不是作者的初衷。因此，有必要在编译时，给出废弃的提示。
+
+近日浏览cocos2d-x v3的代码，发现可以这样做：
+
+宏定义：
+
+```c
+#if defined(__GNUC__) && ((__GNUC__ >= 4) || ((__GNUC__ == 3) && (__GNUC_MINOR__ >= 1)))
+#define CC_DEPRECATED_ATTRIBUTE __attribute__((deprecated))
+#elif _MSC_VER >= 1400 //vs 2005 or higher
+#define CC_DEPRECATED_ATTRIBUTE __declspec(deprecated)
+#else
+#define CC_DEPRECATED_ATTRIBUTE
+#endif
+```
+
+宏使用：
+
+`CC_DEPRECATED_ATTRIBUTE static TextureCache * getInstance();`
+
+# std::tuple
+
+```cpp
+auto tuple = std::make_tuple(1, 'A', "test");
+std::cout << std::get<0>(tuple) << std::endl;
+std::cout << std::get<1>(tuple) << std::endl;
+std::cout << std::get<2>(tuple) << std::endl;
+```
+
+# std::tie
+
+可用tuple或pair返回多个返回值，然后用tie进行解包。这里的语法非常类似python。
+
+```cpp
+std::pair<int, std::string> fun_tie(int a, std::string str)
+{
+  return std::make_pair(a, str);
+}
+
+int a;
+std::string str;
+std::tie(a , str) = fun_tie(12, std::string("Pony Ma"));
+std::cout << a << "," << str << std::endl;
+```
+
 ## 参考
 
 `vector<bool>`并不是一个通常意义上的vector容器，这个源自于历史遗留问题。 早在C++98的时候，就有`vector< bool>`这个类型了，但是因为当时为了考虑到节省空间的想法，所以`vector<bool>`里面不是一个Byte一个Byte储存的，它是一个bit一个bit储存的！

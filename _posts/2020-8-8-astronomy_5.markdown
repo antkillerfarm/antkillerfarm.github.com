@@ -7,7 +7,15 @@ category: Nature
 * toc
 {:toc}
 
-# 火星探测（续）
+# 火星探测
+
+在太空动力学，霍曼转移轨道（或译为郝曼转移轨道，Hohmann transfer orbit）是一种变换太空船轨道的方法，途中只需两次引擎推进，相对地节省燃料。此种轨道操纵名称来自Walter Hohmann，他于1925年出版了相关著作。
+
+>Walter Hohmann，1880~1945，德国工程师，亚琛工业大学博士。轨道动力学（orbital dynamics）之父。
+
+![](/images/img2/Hohmann.gif)
+
+---
 
 F´(F Prime)是一个组件驱动的框架，可以快速开发和部署航天飞行及其他嵌入式软件应用程序。而F´也是火星无人机“机智号”所用的飞行软件框架，它刚由毅力号携带到火星。
 
@@ -304,29 +312,3 @@ https://www.zhihu.com/question/405115980
 https://mp.weixin.qq.com/s/vMe5RmD8uBW3AeGDYwbI5A
 
 紫金山天文台的创立（高鲁、余青松）
-
----
-
-https://view.inews.qq.com/wxn/20211224A03SC600
-
-韦伯望远镜即将发射！梭哈百亿美元上天，是为了看啥？
-
-https://view.inews.qq.com/wxn/20211225A0A9SJ00
-
-韦伯望远镜成功背后：成本约110亿美元，共推迟发射18次
-
-https://view.inews.qq.com/wxn/20211225A08N9G00
-
-“鸽王之王”韦伯终于上天！比哈勃看得更远，烧钱更多
-
-https://mp.weixin.qq.com/s/AIMccIbtB6W5nwu-6yRuJw
-
-“鸽王” 韦伯上天之前，你需要知道这些
-
-https://mp.weixin.qq.com/s/BYw9HJehGC528WkX_q4JLw
-
-情人节将至，韦伯望远镜首次太空“睁眼”！
-
-https://www.sohu.com/a/569342145_161795
-
-韦伯太空望远镜主镜被太空陨石砸中，受损情况比最初想象要大
