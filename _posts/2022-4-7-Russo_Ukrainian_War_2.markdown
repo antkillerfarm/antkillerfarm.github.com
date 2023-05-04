@@ -103,6 +103,8 @@ We will not forget! We will not forgive! Bucha. Irpin. Hostomel.
 
 2023.4.19 视察沃伦州边境的白俄前线。
 
+2023.5.3 视察赫尔辛基，大会北欧诸国。贩卖赎罪券。。。囧+4
+
 ---
 
 泽圣表现出了可以成为全罗斯沙皇的勇气和演技。

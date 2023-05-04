@@ -297,6 +297,8 @@ https://segmentfault.com/a/1190000006679917
 
 条件变量（Condition Variable）
 
+condition variable的wait操作会**释放锁**，并挂起当前线程。
+
 # explicit
 
 ```cpp

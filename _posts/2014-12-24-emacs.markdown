@@ -241,6 +241,19 @@ https://github.com/leoliu/ggtags
               (ggtags-mode 1))))
 ```
 
+## 手动安装库
+
+有些库没有收录到melpa中，针对这类库：
+
+1. 首先下载库文件
+
+2.
+
+```lisp
+(add-to-list 'load-path "~/.emacs.d/<lib path>")
+(require 'dired-sort-menu)
+```
+
 ## scratch缓冲区
 
 这是每次启动Emacs时，默认打开的几个缓冲区之一。正如缓冲区最上面的说明所说的，它的目的有两个：

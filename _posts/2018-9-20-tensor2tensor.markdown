@@ -353,3 +353,11 @@ LLVM创始人Chris Lattner回顾展望编译器
 https://zhuanlan.zhihu.com/p/626085010
 
 使用Flex、Bison和LLVM编写自己的Toy Compiler
+
+https://zhuanlan.zhihu.com/p/407854583
+
+使用LLVM实现一个简单编译器（一）
+
+https://zhuanlan.zhihu.com/p/409749393
+
+使用LLVM实现一个简单编译器（二）
