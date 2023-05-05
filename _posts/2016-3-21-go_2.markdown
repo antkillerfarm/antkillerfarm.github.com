@@ -125,6 +125,22 @@ GnuGo是一个著名的开源围棋软件，但是它只有文字界面。一般
 
 # RTS+
 
+## DosBox
+
+DosBox是Linux平台玩DOS老游戏的法宝。
+
+安装：
+
+`sudo apt install dosbox`
+
+启动DosBox之后，需要使用如下命令加载本地文件夹：
+
+`mount c ~/dosprom`
+
+---
+
+DOS下的游戏编程主要是受内存访问范围的限制，实模式直接可以访问的内存才640KB。突破内存的技术有EMS和XMS等。发展到后期，基本上都使用DOS下32位保护模式技术。比如DPMI、DOS4GW。使用Watcom C++ & DOS4GW就能轻松获得平展的4G内存空间。
+
 ## 帝国时代
 
 2011年，受国内网站翔鹰帝国的影响，cysion打算在帝国时代2中添加第19个民族，由此制作了第一个mod战役阿拉里克。他找到一群热爱帝国的朋友，他们一起制作了mod“被遗忘的帝国”。mod一出收到了巨大的反响，翔鹰帝国的网站一度被挤爆，无良盗版厂商宣传帝国时代发行了新的官方资料片，其影响力越来越大。
@@ -194,3 +210,41 @@ https://www.sohu.com/a/299902957_100163351
 https://www.zhihu.com/question/512061573
 
 电竞女主播Miss透露早期经常吃馊米饭，以前的电竞选手真的这么苦吗？
+
+# 我的PC Game+
+
+https://www.zhihu.com/question/39626359
+
+为什么澄海3C没有成为DOTA一样成功的作品？
+
+https://zhuanlan.zhihu.com/p/325972017
+
+STEAM上的科研游戏，真是给正常人玩的？
+
+https://mp.weixin.qq.com/s/NFYlupa0piLjcWrRaP-C-Q
+
+中年失业破产后当雇佣兵、倒卖煎饼果子，游戏里的打工人也这么难？
+
+https://www.zhihu.com/zvideo/1358906505719336960
+
+一个讲述War 3秘密的专栏
+
+http://news.17173.com/content/11112021/094129154.shtml
+
+腾讯、网易搞不定的国产3A，被一个中专生捣鼓出来了，仅售19元？（飞燕群岛）
+
+https://zhuanlan.zhihu.com/p/500967361
+
+街机《三国志》“很黄很暴力”的漫画剧情，刘皇叔靠处子之身起家
+
+https://www.zhihu.com/question/328681136
+
+什么是弹幕射击游戏？
+
+https://www.bilibili.com/read/cv2773215
+
+一个错误诞生一个经典，CS最受欢迎地图“Dust II”背后的故事
+
+https://zhuanlan.zhihu.com/p/619204713
+
+风靡网吧的经典！《三国群英传2》为何是系列最受欢迎的一代？

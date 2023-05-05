@@ -133,6 +133,10 @@ https://mp.weixin.qq.com/s/-h5m0nkbnsUnHzEDedvlMA
 
 起底Apple黑历史！盘点那些年，苹果卖不掉的赔钱货们
 
+https://www.zhihu.com/question/22600107
+
+金唇窃听器的原理是如何的？
+
 # 上古软件开发
 
 https://mp.weixin.qq.com/s/movz5aesYdZZZHle-hHRIw

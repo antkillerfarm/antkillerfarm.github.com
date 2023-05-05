@@ -89,10 +89,6 @@ https://mp.weixin.qq.com/s/9huDW1RH1gjJpMkATEguug
 
 ---
 
-https://mp.weixin.qq.com/s/Jz-VqWCyNc6nUi-2PuB8rg
-
-中美“军用无人机”发展情况及其制造商
-
 https://mp.weixin.qq.com/s/oi5ME4QRTt3U526lzAHTcA
 
 滴滴重磅发布：KDD2018大会187页人工智能+交通教程

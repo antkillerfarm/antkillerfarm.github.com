@@ -105,6 +105,8 @@ We will not forget! We will not forgive! Bucha. Irpin. Hostomel.
 
 2023.5.3 视察赫尔辛基，大会北欧诸国。贩卖赎罪券。。。囧+4
 
+2023.5.4 视察海牙宗教裁判所。
+
 ---
 
 泽圣表现出了可以成为全罗斯沙皇的勇气和演技。

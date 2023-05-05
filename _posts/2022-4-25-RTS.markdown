@@ -73,7 +73,9 @@ Imperivm I : Celtic Kings: Rage of War（2002，有2个势力可选。）
 
 Imperivm II : Celtic Kings: Punic Wars（2004，有4个势力可选。）
 
-Imperivm III: Great Battles of Rome（2005，有7个势力可选。罗马分为共和国和帝国，所以实际上是8个势力。）
+Imperivm III: Great Battles of Rome（2005，有7个势力可选。）
+
+这里的罗马分为共和国和帝国，所以实际上是8个势力。但是两者的兵种、技能重合度超过90%，所以一般的MOD，通常会用自建势力替换其中之一。
 
 2021年，Imperivm III出了HD版本。本次体验的就是这个版本。
 
@@ -236,19 +238,3 @@ Diablo 2的开源复刻版：
 https://github.com/OpenDiablo2/OpenDiablo2
 
 除了单机游戏之外，网游也有开源版本，例如Open Unlight。
-
-## DosBox
-
-DosBox是Linux平台玩DOS老游戏的法宝。
-
-安装：
-
-`sudo apt install dosbox`
-
-启动DosBox之后，需要使用如下命令加载本地文件夹：
-
-`mount c ~/dosprom`
-
----
-
-DOS下的游戏编程主要是受内存访问范围的限制，实模式直接可以访问的内存才640KB。突破内存的技术有EMS和XMS等。发展到后期，基本上都使用DOS下32位保护模式技术。比如DPMI、DOS4GW。使用Watcom C++ & DOS4GW就能轻松获得平展的4G内存空间。

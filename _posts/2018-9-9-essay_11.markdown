@@ -25,7 +25,11 @@ Firefox的界面其实一直以来变化不大，也就是4.0的时候将标签�
 
 ## 插件
 
-DownThemAll：一个下载工具。
+话说火狐扩展开发方式变了好几次了。XUL/XPCOM overlays、bootstrapped extensions 、Add-on SDK，现在推WebExtensions APIs，把之前的都废弃了，说以后都是WebExtensions APIs，是为了和其他浏览器统一，为一个浏览器写扩展，个个浏览器都能用。
+
+DownThemAll：一个下载工具。这本是一个老牌的FF专用插件，但由于新版本改用WebExtensions，目前已经登陆Chrome平台。
+
+https://www.downthemall.org/
 
 # 空难
 
@@ -168,38 +172,6 @@ http://www.aero.cn/2020/0610/99659.html
 西安空难26周年祭
 
 # 世说新语
-
-## 2020.1（续）
-
-https://mp.weixin.qq.com/s/sGoj13NaDbhUDKnwoCQCEQ
-
-叶问的咏春拳到底屌不屌？
-
----
-
-https://iflow.uc.cn/webview/news?aid=8757789876691645445
-
-故宫道歉, 国航撇清关系后, 故宫奔驰女的母校也回应了……
-
-## 2020.2
-
-https://www.zhihu.com/answer/996274808
-
-哪些国家正处于历史上领土（疆域）面积最大的时期？
-
----
-
-中国人崇拜犹太人我很难理解。
-
-一个大流氓去崇拜另一个更大的流氓，我是可以理解的，但是一个大流氓去崇拜另一个大流氓的会计，就很让人费解了。
-
-何况这个会计还从小挨揍挨到大。
-
----
-
-https://mp.weixin.qq.com/s/uix0P9CrjUCBsDjSvPTaUQ
-
-孙杨被禁赛事件：我们最该思考的是什么？
 
 ## 2020.3
 

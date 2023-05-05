@@ -29,6 +29,10 @@ category: resource
 
 在架构领域，有两种常见架构方法RUP和TOGAF。
 
+## GoF
+
+《Design Patterns: Elements of Reusable Object-Oriented Software》，由 Erich Gamma、Richard Helm、Ralph Johnson 和 John Vlissides 合著（Addison-Wesley，1995）。这几位作者常被称为“四人组（Gang of Four）”。
+
 ## AOP
 
 IoC（Inversion of control）：控制反转/反转控制。

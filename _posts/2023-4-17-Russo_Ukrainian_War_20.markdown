@@ -31,6 +31,42 @@ T-55会比T-90更好吗——无所适从的俄罗斯坦克工业
 
 ---
 
+北溪1号：55 BCM
+
+北溪2号：55 BCM
+
+“地中海之气”管道（Gasoducto Medgaz）：10 BCM
+
+马格里布管道（Gasoducto del Magreb）：12.5 BCM
+
+伊伦（Irún）管道：2.1 BCM
+
+拉罗（Larrau）管道：5.3 BCM
+
+规划中的MidCat管道：7.5 BCM
+
+https://www.zhihu.com/question/551675061/
+
+想问下欧洲冬天到底多冷，没俄罗斯天然气就能冻死？
+
+https://zhuanlan.zhihu.com/p/364423447
+
+只差5％，美国开始搞事情（北溪二号）
+
+https://www.zhihu.com/question/555941937
+
+“北溪”管道遭破坏发现3处泄露，泄漏区域发生强烈水下爆炸，这会造成什么影响？哪些信息值得关注？
+
+https://view.inews.qq.com/wxn/20221003A048FO00
+
+27年沉浮，“北溪”背后的历史暗战
+
+https://www.zhihu.com/question/582874371
+
+如何看待美国著名记者发文称“北溪管道系美军炸毁”?
+
+---
+
 https://mp.weixin.qq.com/s/zPO-ScWfgn3_GMsqE3A-4w
 
 俄乌冲突：为什么没看到钢铁洪流和百万大军
@@ -195,10 +231,6 @@ https://zhuanlan.zhihu.com/p/509289102
 
 毁家纾难——俄罗斯是怎样援助顿巴斯分裂武装的？
 
-https://view.inews.qq.com/a/20220528A00YI019
-
-空有优势的俄军，为何拿乌克兰无人机没招？
-
 https://mp.weixin.qq.com/s/A8qiQqTGl-heIOXmVAC3dA
 
 乌克兰战场直播，300美元刷一发火箭弹
@@ -238,10 +270,6 @@ https://zhuanlan.zhihu.com/p/496556274
 https://zhuanlan.zhihu.com/p/588914690
 
 你给我从车顶上下来！”——再评BMP系列随车步兵搭乘方式
-
-https://www.zhihu.com/question/570589126
-
-如何评价俄罗斯萨拉托夫空军基地被不明无人机袭击导致两架图95核战略轰炸机受损和两人受伤？
 
 https://zhuanlan.zhihu.com/p/592954024
 
