@@ -180,3 +180,7 @@ https://bittergrounds.com/2022s-striking-ukrainian-stamps/
 https://bittergrounds.com/ukraine-stamps-begin-another-year/
 
 2023年乌克兰邮票
+
+https://zhuanlan.zhihu.com/p/626641522
+
+俄罗斯又赢了！仅用克里姆林宫大顶就骗取乌克兰发行邮票

@@ -270,6 +270,6 @@ Patching Bazel external dependencies
 由于Bazellisk提供了和Bazel一样的接口，因此通常直接将其命名为bazel：
 
 ```bash
-sudo wget -O /usr/local/bin/bazel https://github.com/bazelbuild/bazelisk/releases/download/v1.10.1/bazelisk-linux-amd64
+sudo wget -O /usr/local/bin/bazel https://github.com/bazelbuild/bazelisk/releases/download/v1.16.0/bazelisk-linux-amd64
 sudo chmod +x /usr/local/bin/bazel
 ```
