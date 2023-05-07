@@ -170,9 +170,43 @@ Makefile中($(KERNELRELEASE),)执行分析
 
 # Ubuntu使用技巧+
 
-## Virtual MIDI Piano Keyboard
+## 电源方案
 
-VMPK是一款MIDI生成工具软件，也就是俗称的“虚拟电子琴”软件。但它本身只生成MIDI输出，需要配合使用MIDI后处理软件，才能发声。常见的MIDI后处理软件有Qsynth、TiMidity。
+最近，儿子乱动我的笔记本电脑，惹出了事端。
+
+具体现象：
+
+开机风扇狂转，软件一测，转速达到5600转，几乎满速。
+
+最开始怀疑，是否是摇松了CPU，导致风扇接触出了问题。但是软件看温度也就70左右，远没有到警戒线（这个一般在90度左右，100+会导致CPU直接关机保护）
+
+最后一查才知道，系统有个叫做电源方案的东西，无论Win，还是Linux都有。
+
+如果选择性能优先，那CPU自然怎么快，怎么来。
+
+如果选择平衡或者节能的话，CPU会自己降频，避免关机保护，或者如本例中的快速升温——在点击应用瞬间，温度从40+飙升到75+。
+
+一般来说，只要峰值温度控制得当，积热其实并不是啥问题。CPU不可能随时都是满负荷，稍微歇一下，积热就散走了。
+
+## Ubuntu字体相关
+
+最近gitk中文显示不正常，明明系统的字体是很多的，但可以设置的却甚少。后来发现这里能够设置的并非系统字体，而只是X11字体。
+
+列出字体：
+
+`xlsfonts`
+
+找到系统字体文件夹，生成`fonts.dir`文件：
+
+`sudo mkfontscale -o fonts.dir .`
+
+加载`fonts.dir`文件：
+
+`xset +fp /usr/share/fonts/X11/misc`
+
+文泉驿字体是最知名的中文免费字体：
+
+`sudo apt install ttf-wqy-microhei ttf-wqy-zenhei`
 
 ## X Desktop Group
 
@@ -185,12 +219,6 @@ Linux实用命令之xdg-open
 https://blog.csdn.net/u014025444/article/details/94029895
 
 linux的XDG基本目录规范
-
-## 打印机
-
-一般使用sane做为扫描仪后端：
-
-`sudo apt-get install sane sane-utils xsane`
 
 ## 便签软件
 

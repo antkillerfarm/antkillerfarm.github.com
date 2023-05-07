@@ -324,31 +324,21 @@ https://www.cnblogs.com/schips/p/10141278.html
 
 使用boot-repair对Windows+Ubuntu双系统引导修复
 
-# Ubuntu字体相关
-
-最近gitk中文显示不正常，明明系统的字体是很多的，但可以设置的却甚少。后来发现这里能够设置的并非系统字体，而只是X11字体。
-
-列出字体：
-
-`xlsfonts`
-
-找到系统字体文件夹，生成`fonts.dir`文件：
-
-`sudo mkfontscale -o fonts.dir .`
-
-加载`fonts.dir`文件：
-
-`xset +fp /usr/share/fonts/X11/misc`
-
-文泉驿字体是最知名的中文免费字体：
-
-`sudo apt install ttf-wqy-microhei ttf-wqy-zenhei`
-
 # 手机上网
 
 最近公司网络有问题，只好使用手机连接互联网，也就是所谓WLAN热点。
 
 除了Wifi之外，现在的手机还有USB网络共享的功能，该功能基于RNDIS（Remote NDIS）技术，实际上就是TCP/IP over USB，就是在USB设备上跑TCP/IP，让USB设备看上去像一块网卡。
+
+# 打印机
+
+一般使用sane做为扫描仪后端：
+
+`sudo apt-get install sane sane-utils xsane`
+
+## Virtual MIDI Piano Keyboard
+
+VMPK是一款MIDI生成工具软件，也就是俗称的“虚拟电子琴”软件。但它本身只生成MIDI输出，需要配合使用MIDI后处理软件，才能发声。常见的MIDI后处理软件有Qsynth、TiMidity。
 
 # Ubuntu 22.04使用手记
 
