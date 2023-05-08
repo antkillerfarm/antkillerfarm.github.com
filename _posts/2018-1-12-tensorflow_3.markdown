@@ -7,15 +7,35 @@ category: DL Framework
 * toc
 {:toc}
 
-# Hama
+# Estimator
 
-TensorFlow实际上是Google开发的第二代DL框架。在它之前，Google内部还有一个叫做DistBelief的框架。这个框架没有开源，但是有论文发表。因此，就有了一个叫做Apache Hama的项目，作为它的开源实现。
+![](/images/img2/tensorflow_programming_environment.png)
 
-官网：
+Estimator是一个非常高级的API，其抽象等级甚至在Keras之上。
 
-https://hama.apache.org/
+Estimator主要包括以下部分：
 
-这个项目采用了一种叫做Bulk Synchronous Parallel的并行计算模型。
+1.初始化。定义网络结构。
+
+2.train。
+
+3.evaluate。
+
+4.predict。
+
+TensorFlow已经包含了一些预置的Estimator。例如：BoostedTreesClassifier、DNNClassifier、LinearClassifier等。具体可参见：
+
+https://tensorflow.google.cn/api_docs/python/tf/estimator
+
+参考：
+
+https://mp.weixin.qq.com/s/a68brFJthczgwiFoUBh30A
+
+TensorFlow数据集和估算器介绍
+
+https://mp.weixin.qq.com/s/zpEVU1E5DfElAnFqHCqHOw
+
+训练效率低？GPU利用率上不去？快来看看别人家的tricks吧～
 
 # 模型文件
 

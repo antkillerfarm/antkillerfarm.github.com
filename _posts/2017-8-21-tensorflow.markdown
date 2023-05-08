@@ -269,6 +269,18 @@ ln -s <tf path>/bazel-bin/tensorflow/libtensorflow_framework.so.2.3.1 libtensorf
 bazel build --config=opt --copt=-g --strip=never //tensorflow/python:pywrap_tensorflow
 ```
 
+上面这个方法，有一个问题：只更新了C++部分。如果修改python的话，就不好使了。
+
+因此，还有方法二：
+
+```python
+sys.path.append("<tf src path>/bazel-bin/tensorflow/tools/pip_package/build_pip_package.runfiles/org_tensorflow")
+sys.path.append("/<tf src path>/bazel-bin/tensorflow/tools/pip_package/build_pip_package.runfiles/org_tensorflow/tensorflow/python")
+import tensorflow as tf
+```
+
+这个方法的缺点是：需要修改app脚本。
+
 # 基本概念
 
 **Variables**：维持计算图执行过程中的状态信息的变量。一般来说，这就是神经网络的参数。
@@ -322,11 +334,3 @@ with tf.Session(graph=g1) as sess1:
 with tf.Session(graph=g2) as sess2:
     print sess2.run(c2)
 ```
-
-Tensorflow对计算图的简化，不仅在于使用默认的Graph。还在于可以只计算部分的Graph。部分Graph，也被称作Sub Graph。
-
-以上面的softmax运算为例，如果`sess.run(add)`的话，后面的ReLU和softmax运算都不会被执行。
-
-反过来，如果只想执行ReLU和softmax的话，则可以`sess.run(softmax, feed_dict={add: add_tensor})`。也就是把Sub Graph的output作为`sess.run`的参数，而把input作为feed_dict的参数。
-
-虽然图计算是Tensorflow的主要使用方式，然而一般性的tensor计算（即非图计算），也是完全可行的。Tensorflow没有提供相关的API，直接使用numpy就可以了。

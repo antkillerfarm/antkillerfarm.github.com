@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  AI Chip（三）
+title:  AI Chip（三）, AMD
 category: Chip 
 ---
 
@@ -256,6 +256,50 @@ https://zhuanlan.zhihu.com/p/557933130
 https://zhuanlan.zhihu.com/p/503371595
 
 AI芯片（下），自动驾驶里的“水浒卡”
+
+# AMD
+
+## Matrix Core
+
+对标英伟达Tensor Core，AMD推出Matrix Core。
+
+## HIP
+
+![](/images/img4/latestGPU.png)
+
+HIP：Heterogeneous Interface for Portability。
+
+HIP是AMD提出的C++接口，号称能兼容CUDA和自家的ROCm。
+
+https://zhuanlan.zhihu.com/p/545296023
+
+写给CUDA开发者AMD ROCm & Intel oneAPI开发贴士
+
+## Composable Kernel
+
+Composable Kernel（CK）库旨在提供一套在AMD GPU上算子融合的后端方案。
+
+https://www.sohu.com/a/603796560_129720
+
+AMD Composable Kernel: 定制化算子融合，大幅提升AI端到端性能
+
+## AITemplate
+
+AITemplate首先在Python层寻找最优的kernel配置，生成Jinja2 template，再生成C++ template：
+
+- NVIDIA GPU：基于CUTLASS的GPU Tensor Core C++ template；
+
+- AMD GPU：基于CK（Composable Kernel）的Matrix Core C++ Template。
+
+官网：
+
+https://github.com/facebookincubator/AITemplate
+
+参考：
+
+https://www.zhihu.com/question/557608132
+
+如何看待Meta发布的全新推理引擎AITemplate？
 
 # CPU+
 

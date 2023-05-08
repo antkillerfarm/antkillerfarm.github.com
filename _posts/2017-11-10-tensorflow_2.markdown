@@ -9,6 +9,14 @@ category: DL Framework
 
 # 图计算（续）
 
+Tensorflow对计算图的简化，不仅在于使用默认的Graph。还在于可以只计算部分的Graph。部分Graph，也被称作Sub Graph。
+
+以上面的softmax运算为例，如果`sess.run(add)`的话，后面的ReLU和softmax运算都不会被执行。
+
+反过来，如果只想执行ReLU和softmax的话，则可以`sess.run(softmax, feed_dict={add: add_tensor})`。也就是把Sub Graph的output作为`sess.run`的参数，而把input作为feed_dict的参数。
+
+虽然图计算是Tensorflow的主要使用方式，然而一般性的tensor计算（即非图计算），也是完全可行的。Tensorflow没有提供相关的API，直接使用numpy就可以了。
+
 下面的动图形象的展示了计算图的前向和后向运算的过程：
 
 ![](/images/article/tensorflow.gif)
@@ -330,32 +338,12 @@ tf-slim-mnist例子中mnist数据不是原始格式的，而是经过了`dataset
 
 该示例执行时也没有控制台的输出信息，一度让我觉得很不方便。后来才发现，原来可以用TensorBoard查看log文件夹。
 
-# Estimator
+# Hama
 
-![](/images/img2/tensorflow_programming_environment.png)
+TensorFlow实际上是Google开发的第二代DL框架。在它之前，Google内部还有一个叫做DistBelief的框架。这个框架没有开源，但是有论文发表。因此，就有了一个叫做Apache Hama的项目，作为它的开源实现。
 
-Estimator是一个非常高级的API，其抽象等级甚至在Keras之上。
+官网：
 
-Estimator主要包括以下部分：
+https://hama.apache.org/
 
-1.初始化。定义网络结构。
-
-2.train。
-
-3.evaluate。
-
-4.predict。
-
-TensorFlow已经包含了一些预置的Estimator。例如：BoostedTreesClassifier、DNNClassifier、LinearClassifier等。具体可参见：
-
-https://tensorflow.google.cn/api_docs/python/tf/estimator
-
-参考：
-
-https://mp.weixin.qq.com/s/a68brFJthczgwiFoUBh30A
-
-TensorFlow数据集和估算器介绍
-
-https://mp.weixin.qq.com/s/zpEVU1E5DfElAnFqHCqHOw
-
-训练效率低？GPU利用率上不去？快来看看别人家的tricks吧～
+这个项目采用了一种叫做Bulk Synchronous Parallel的并行计算模型。
