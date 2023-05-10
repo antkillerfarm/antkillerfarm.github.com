@@ -135,6 +135,18 @@ https://zhuanlan.zhihu.com/p/61467796
 
 ---
 
+现代农历是民国时期开始用的。自古每当王朝更迭，第一件事就是改历法，一方面体现新朝气象，一方面也因为旧历使用多年，已经有了误差。
+
+民国成立时也未能免俗，废除了清朝使用的时宪历，1929年推出了紫金历，也就是现代农历。
+
+紫金历跟公历不同，置闰规则里有实时观测修正的部分，不是一成不变的。比如说2057年农历九月初一应该是哪天就有争议。因为该日的朔时刚好卡在北京时间零点整附近，用不同的天文算法会导致算出来的日期不一样。
+
+https://www.zhihu.com/question/405115980
+
+公历1582年消失了10天，但我国的农历用了这么多年，难道没有误差吗？
+
+---
+
 https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
 
 生的伟大，死的光荣——致敬卡西尼号土星探测器
@@ -250,31 +262,3 @@ https://mp.weixin.qq.com/s/NKzv2VpVDaJ_gSDl_L7FHA
 https://mp.weixin.qq.com/s/lHc8w6wn3Tm6ZD5PPw0TFQ
 
 宇宙7问
-
-https://mp.weixin.qq.com/s/epb4AIyg8_OqjAgGEbB9Ag
-
-31年前的北美大停电 背后的神秘力量是谁？（太阳风暴）
-
-https://mp.weixin.qq.com/s/oTltrhF25ClrImp6KUlagw
-
-他俩曾和鸽子较劲，却歪打正着获得诺奖（阿诺·彭齐亚斯（Arno Penzias）和罗伯特·威尔逊（Robert Wilson）——宇宙微波背景）
-
-https://mp.weixin.qq.com/s/O5L7hvg1WXJpbwKvaY880w
-
-捕手LAMOST与高速星的故事
-
-https://mp.weixin.qq.com/s/oU6KRPwuj9SJOLEYHNmE9A
-
-巨石来自外星球？是你来自外太空！
-
-https://mp.weixin.qq.com/s/5JLSuv54Xyt_Fcg_Ps1Rsg
-
-最古老、最遥远、最明亮...
-
-https://mp.weixin.qq.com/s/eO71ulxgc-Fdx8KtMf7CXg
-
-40多年前美国赠送给我国1克月岩样品，背后有怎样的故事？
-
-https://mp.weixin.qq.com/s/vxTJf4pwpB3a2lqtx4fQ6g
-
-万家灯火，有你守护！我是如何拍到这次陆基中段反导试验靶弹发射的？

@@ -7,6 +7,36 @@ category: DL Framework
 * toc
 {:toc}
 
+# 我的TensorFlow实践
+
+## MNIST+Softmax
+
+代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_mnist.py
+
+## MNIST+CNN
+
+代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_cnn.py
+
+第一个例子中，我对CPU的计算能力还没有切肤之痛，但在这里使用CPU差不多要花半个小时时间。。。
+
+# Broadcast
+
+Broadcast是一种填充元素以使操作数的形状相匹配的操作。例如，对一个[3,2]的张量和一个[3,1]的张量相加在TF中是合法的，TF会使用默认的规则将[3,1]的张量填充为[3,2]的张量，从而使操作能够执行下去。
+
+参考：
+
+https://www.cnblogs.com/yangmang/p/7125458.html
+
+numpy数组广播
+
+https://blog.csdn.net/LoseInVain/article/details/78763303
+
+TensorFlow中的广播Broadcast机制
+
 # TensorFlow Federated
 
 TFF是一个开源框架，用于试验针对分散式数据的机器学习和其他计算。它采用的是一种名为联合学习(FL)的方法，许多参与的客户端能够训练共享的ML模型，同时将数据保存在本地。
@@ -38,15 +68,6 @@ TFRecord的使用
 https://zhuanlan.zhihu.com/p/27481108
 
 TensorFlow直接读取图片和读写TFRecords速度对比
-
-# 内存布局
-
-Tensorflow和Caffe的内存布局存在较大差异，这是两者模型转换时，最常遇到的问题。一般认为，Caffe的内存布局对卷积硬件加速更友好一些。
-
-|  | Tensorflow | Caffe |
-|:--:|:--:|:--:|
-| Tensor | NHWC | NCHW |
-| Weight | HWIO | OIHW |
 
 # TensorSensor
 
@@ -367,31 +388,3 @@ https://mp.weixin.qq.com/s/-5RCRl9ztQ2dQmX00QvfvQ
 https://mp.weixin.qq.com/s/Nyjp0mZxcn04vLKjJXLSaw
 
 如何用TensorFlow在安卓设备上实现深度学习推断
-
-https://mp.weixin.qq.com/s/OVWbxBNc4i0_5jgy06xS1A
-
-基于Tensorflow Estimators的文本分类
-
-https://mp.weixin.qq.com/s/h4Ve_UUajsdlk7PNS6J4QA
-
-TensorFlow Estimator模型从训练到部署
-
-https://mp.weixin.qq.com/s/c_2_9gvOynHaVW6pi4qQjQ
-
-用TensorFlow让机器人唱首歌给你听
-
-https://mp.weixin.qq.com/s/hn-LqyREkusxP2TOWfTJ6g
-
-使用TensorFlow官方Java API调用TensorFlow模型
-
-https://mp.weixin.qq.com/s/kS92vYyeHLc38RGc_4CZbg
-
-如何应用TFGAN快速实践生成对抗网络？
-
-https://mp.weixin.qq.com/s/hquOoKeeHQXqWcHM6Bkvbw
-
-如何训练一个简单的音频识别网络
-
-https://mp.weixin.qq.com/s/aWez5FYXXnRnDbb0zcXFXQ
-
-如何在TensorFlow中训练提升树模型

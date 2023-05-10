@@ -121,6 +121,14 @@ https://www.zhihu.com/question/352476422
 
 地球静止轨道的理论由赫尔曼·波托西尼克在1928年首次提出，而后亚瑟·查理斯·克拉克在他的小说《无线世界》中，提议将通讯卫星放置在地球静止轨道。因此有时静止轨道也被称为克拉克轨道。
 
+https://scienceasdf.gitee.io/programming/2017/04/07/astrodynamics1/
+
+轨道动力学中常用的计算机算法
+
+https://scienceasdf.gitee.io/programming/2017/04/14/astrodynamics2/
+
+轨道动力学中常用的计算机算法（二）
+
 ---
 
 ![](/images/img3/Chicxulub-Crater-Yucatan.jpg)
@@ -234,25 +242,3 @@ Atacama Large Millimeter/submillimeter Array是EHT计划的主力天文台。由
 https://mp.weixin.qq.com/s/NIMcgoXzTeAAumODJfEH_A
 
 在地球上，哪里能看到最澄澈的星空？（冰穹A）
-
-## Katie Bouman
-
-![](/images/img2/Katie_Bouman.jpg)
-
-Katherine Louise Bouman，1990年生，University of Michigan本科（2011）+MIT博士（2017）。EHT计划的成像团队的负责人。
-
-![](/images/img2/Katie_Bouman.png)
-
-上图是Katie和装有黑洞成像数据的半吨重硬盘的合影。
-
-论文：
-
-《Computational Imaging for VLBI Image Reconstruction》
-
-代码：
-
-https://github.com/achael/eht-imaging
-
-个人主页：
-
-https://people.csail.mit.edu/klbouman/

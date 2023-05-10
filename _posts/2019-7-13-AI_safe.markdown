@@ -295,6 +295,54 @@ https://mp.weixin.qq.com/s/QZWBPgpro9RAsczOh-qQnQ
 
 # 安全+
 
+https://mp.weixin.qq.com/s/z5zMETSMUGoTiZYMooKZ-g
+
+内核空间镜像攻击揭秘：ARM硬件特性，竟能开启安卓8终端的上帝模式？
+
+https://mp.weixin.qq.com/s/f6SY7Me9Ls3AZNxK0rHz7g
+
+密码加密时的加盐（salt）是什么
+
+https://mp.weixin.qq.com/s/isNd6ByZKdMjFtFL8LOVGA
+
+什么？用5G需要换SIM卡？！
+
+https://zhuanlan.zhihu.com/p/255171562
+
+椭圆曲线加密与NSA后门考古
+
+https://mp.weixin.qq.com/s/PVtjsprXl_LxAhaalNUqlA
+
+Hook技术解析
+
+https://mp.weixin.qq.com/s/LDO0vGjOqm1ZRc1wXgTNNw
+
+黑客必备二十大神器！
+
+https://mp.weixin.qq.com/s/3RP9m2uI2rA8p0Mw9E8ZQg
+
+每个程序猿都该了解的黑客技术大汇总
+
+https://mp.weixin.qq.com/s/zrLnbYl4awGoo2P9_l7bXQ
+
+中国顶级黑客Top10
+
+https://mp.weixin.qq.com/s/uYJPgFd8kOTvBPa3fgiOzg
+
+什么是堡垒机？为什么需要堡垒机？
+
+https://mp.weixin.qq.com/s/7-GePGOi1R9QFaUUKya3lw
+
+Linux应急响应入门——入侵排查
+
+https://mp.weixin.qq.com/s/1Tsm22nvnrjN-UdojT5mdg
+
+一个小小指针，竟把Linux内核攻陷了！
+
+https://mp.weixin.qq.com/s/c2jxmn7FaQ0ePY_luS2fGQ
+
+实现用户一键登录的方案有哪些？
+
 https://mp.weixin.qq.com/s/E6eYBob3WzuLFEuGJZSNtQ
 
 怎么知道谁动了我的Linux主机?

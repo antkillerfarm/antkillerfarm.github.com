@@ -302,6 +302,18 @@ PyTorch深度学习技术生态
 
 # LLVM+
 
+## tablegen
+
+LLVM tablegen，文件名后缀为`.td`。
+
+https://zhuanlan.zhihu.com/p/447318642
+
+TableGen_Overview
+
+https://zhuanlan.zhihu.com/p/447728683
+
+TableGen Language Reference
+
 ## 参考
 
 所谓的intrinsic function ，是属于编译器开洞魔法的范畴，这些函数的实现是直接写死在编译器的代码生成部分的，在最终得到的二进制里面不会存在这些函数的符号和实现。

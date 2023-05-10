@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 中国航天, 火星探测
+title: 中国航天
 category: Nature 
 ---
 
@@ -8,6 +8,14 @@ category: Nature
 {:toc}
 
 # SpaceX（续）
+
+湿彩排（wet dress rehearsal），就是排练除点火之外的所有发射环节，包括进行推进剂的装填和卸载、发射倒计时等，这个过程需要在发射工位上进行。这个环节在我国叫做合练。
+
+卡门线（Kármán line）是一条位于海拔100 km（330,000英尺）处，被大部分认可为外太空与地球大气层的界线的分界线。
+
+有个游戏《坎巴拉太空计划》可以模拟火箭设计发射全过程。
+
+---
 
 目前最出风头的三家私人航天公司，按技术水平来比较，大致是这样的：
 
@@ -218,27 +226,3 @@ https://www.zhihu.com/question/457042825
 https://mp.weixin.qq.com/s/ZFjtgtjW0TmykjQnynmIFg
 
 “天和”出征！中国空间站开启“下饺子”模式，两年11次密集发射，3次舱段、4次货运、4次载人发射
-
-https://mp.weixin.qq.com/s/JRFlvf4WUvcitv2mrL9mbQ
-
-这次，天和带了“套娃”和“太上老君的炼丹炉”上天
-
-https://www.zhihu.com/answer/1332695787
-
-每个宇航员的航天服都是量身定做的吗？
-
-https://www.zhihu.com/question/288120613
-
-有哪些航空航天上的事实，没有一定航空航天知识的人不会相信？
-
-https://www.zhihu.com/question/31377936
-
-中国现有的技术能够实现载人登月吗？
-
-https://www.zhihu.com/question/465899092
-
-如何看待中国空间站操作界面都是中文？
-
-https://mp.weixin.qq.com/s/klSndj6LPENaW53OPq15Yg
-
-中国在太空用上了机械臂，却被美国人质疑会去抓他们的卫星？

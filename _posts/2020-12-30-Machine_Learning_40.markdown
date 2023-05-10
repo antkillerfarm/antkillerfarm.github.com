@@ -245,6 +245,14 @@ https://mp.weixin.qq.com/s/YCzHbsmTmXeYFGS1xGFTCw
 
 ---
 
+印度只不过是俄罗斯向外出售石油的中转站而已，用卢比从俄罗斯买石油本身就是一次白嫖，拒绝俄罗斯使用卢比等于第二次白嫖，表示俄罗斯可以用卢比购买印度国债等于第三次白嫖。
+
+https://www.zhihu.com/question/599625706
+
+巴基斯坦或使用人民币支付从俄罗斯进口的原油
+
+---
+
 https://zhuanlan.zhihu.com/p/166127280
 
 航拍印度三大一线城市，新德里孟买加尔各答
@@ -332,3 +340,7 @@ https://zhuanlan.zhihu.com/p/613560508
 https://zhuanlan.zhihu.com/p/619133532
 
 切断这条走廊，印度会分裂么？
+
+https://zhuanlan.zhihu.com/p/627661050
+
+印度，填海造第一大城市！（孟买的历史）

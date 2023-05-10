@@ -320,6 +320,14 @@ https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/index.html
 
 https://zhuanlan.zhihu.com/p/446800631
 
+---
+
+LLVM主要专注于后端的代码生成。Chris Lattner还开发了前端项目clang。LLVM早期使用GCC作为前端，目前已经改为clang。
+
+https://zhuanlan.zhihu.com/p/357803433
+
+详解三大编译器：gcc、llvm和clang
+
 ## 常用命令
 
 C源码转换为LLVM IR:
@@ -351,15 +359,3 @@ LLVM架构简介
 https://blog.csdn.net/weixin_46222091/article/details/104501879
 
 llvm常用工具的使用详解
-
-## tablegen
-
-LLVM tablegen，文件名后缀为`.td`。
-
-https://zhuanlan.zhihu.com/p/447318642
-
-TableGen_Overview
-
-https://zhuanlan.zhihu.com/p/447728683
-
-TableGen Language Reference

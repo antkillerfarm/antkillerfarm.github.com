@@ -9,6 +9,34 @@ category: DL Framework
 
 # TensorFlow参考
 
+https://mp.weixin.qq.com/s/OVWbxBNc4i0_5jgy06xS1A
+
+基于Tensorflow Estimators的文本分类
+
+https://mp.weixin.qq.com/s/h4Ve_UUajsdlk7PNS6J4QA
+
+TensorFlow Estimator模型从训练到部署
+
+https://mp.weixin.qq.com/s/c_2_9gvOynHaVW6pi4qQjQ
+
+用TensorFlow让机器人唱首歌给你听
+
+https://mp.weixin.qq.com/s/hn-LqyREkusxP2TOWfTJ6g
+
+使用TensorFlow官方Java API调用TensorFlow模型
+
+https://mp.weixin.qq.com/s/kS92vYyeHLc38RGc_4CZbg
+
+如何应用TFGAN快速实践生成对抗网络？
+
+https://mp.weixin.qq.com/s/hquOoKeeHQXqWcHM6Bkvbw
+
+如何训练一个简单的音频识别网络
+
+https://mp.weixin.qq.com/s/aWez5FYXXnRnDbb0zcXFXQ
+
+如何在TensorFlow中训练提升树模型
+
 https://mp.weixin.qq.com/s/rQ9eZosHOoDOXg9tAg4t6A
 
 tensorflow Object Detection API使用预训练模型mask r-cnn实现对象检测
@@ -376,35 +404,3 @@ https://mp.weixin.qq.com/s/dmNEzrWNX3YWmocjpORpig
 https://mp.weixin.qq.com/s/n_zU7Rg7v6PwjZWEF88fNA
 
 如何使用TensorFlow实现音频分类任务
-
-https://mp.weixin.qq.com/s/UbBJYOmWtUXPFliRMyzDrg
-
-最新TensorFlow专业深度学习实战书籍和代码《Pro Deep Learning with TensorFlow》
-
-https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
-
-Docker Compose+GPU+TensorFlow所产生的奇妙火花
-
-https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
-
-TensorFlow中那些鲜为人知却又极其实用的知识
-
-https://mp.weixin.qq.com/s/gW_KX6eF9XEsSUO1UzJ3WQ
-
-基于LSTM的情感分析
-
-https://mp.weixin.qq.com/s/KZhL477ApHgQfmM2xFrYJw
-
-Tensorlang：基于TensorFlow的可微编程语言
-
-https://mp.weixin.qq.com/s/_9NJ6QLQArUAD1DKb0KRfA
-
-如何使用TensorFlow mobile部署模型到移动设备
-
-https://mp.weixin.qq.com/s/e_TzQxFLAonLMyYAhte6Cg
-
-face-api.js：在浏览器中进行人脸识别的JavaScript接口
-
-https://zhuanlan.zhihu.com/p/347599203
-
-TFRT的开源代码分析

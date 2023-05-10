@@ -181,3 +181,69 @@ https://zhuanlan.zhihu.com/p/270675634
 https://zhuanlan.zhihu.com/p/358895758
 
 统计距离（STATISTICAL DISTANCE）
+
+# TensorFlow参考+
+
+https://mp.weixin.qq.com/s/kEowgNPVS1nAGBPbzkatlQ
+
+如何构建高可读性和高可重用的TensorFlow模型
+
+https://mp.weixin.qq.com/s/O_IN39FBVPeD5fRYBsPuZQ
+
+用TensorFlow开发问答系统
+
+https://mp.weixin.qq.com/s/8Hrq_z8s_5ms6Q_6OOaU-g
+
+如何使用TensorFlow和自编码器模型生成手写数字
+
+https://mp.weixin.qq.com/s/nnjyR4XGVZQ1zXCIPzTNlg
+
+基于TensorFlow的变分自编码器实现
+
+https://mp.weixin.qq.com/s/iMgesGmdb7Jq4muCxb-nFA
+
+Tensorflow实战：Discuz验证码识别
+
+https://mp.weixin.qq.com/s/4aJUGBpPG_6Oc5EqOmM0Iw
+
+作为TensorFlow的底层语言，你会用C++构建深度神经网络吗？
+
+https://github.com/yahoo/TensorFlowOnSpark
+
+TensorFlow On Spark
+
+https://mp.weixin.qq.com/s/7er3wNV_IhxhFDOIwNMpww
+
+深度强化学习入门：用TensorFlow构建你的第一个游戏AI
+
+https://mp.weixin.qq.com/s/UbBJYOmWtUXPFliRMyzDrg
+
+最新TensorFlow专业深度学习实战书籍和代码《Pro Deep Learning with TensorFlow》
+
+https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
+
+Docker Compose+GPU+TensorFlow所产生的奇妙火花
+
+https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
+
+TensorFlow中那些鲜为人知却又极其实用的知识
+
+https://mp.weixin.qq.com/s/gW_KX6eF9XEsSUO1UzJ3WQ
+
+基于LSTM的情感分析
+
+https://mp.weixin.qq.com/s/KZhL477ApHgQfmM2xFrYJw
+
+Tensorlang：基于TensorFlow的可微编程语言
+
+https://mp.weixin.qq.com/s/_9NJ6QLQArUAD1DKb0KRfA
+
+如何使用TensorFlow mobile部署模型到移动设备
+
+https://mp.weixin.qq.com/s/e_TzQxFLAonLMyYAhte6Cg
+
+face-api.js：在浏览器中进行人脸识别的JavaScript接口
+
+https://zhuanlan.zhihu.com/p/347599203
+
+TFRT的开源代码分析

@@ -9,7 +9,29 @@ category: Nature
 
 # 黑洞
 
-## Katie Bouman（续）
+## Katie Bouman
+
+![](/images/img2/Katie_Bouman.jpg)
+
+Katherine Louise Bouman，1990年生，University of Michigan本科（2011）+MIT博士（2017）。EHT计划的成像团队的负责人。
+
+![](/images/img2/Katie_Bouman.png)
+
+上图是Katie和装有黑洞成像数据的半吨重硬盘的合影。
+
+论文：
+
+《Computational Imaging for VLBI Image Reconstruction》
+
+代码：
+
+https://github.com/achael/eht-imaging
+
+个人主页：
+
+https://people.csail.mit.edu/klbouman/
+
+---
 
 Margaret Heafield Hamilton，1936年生，美国计算机科学家。发明了“software engineering”一词。在MIT期间，负责领导了Apollo计划的飞行软件的设计工作。
 
@@ -318,11 +340,3 @@ https://www.zhihu.com/question/471620540
 小布什签署的美国航天发展规划，直接规定了要求NASA退出近地空间，要求他们重新带领美国航天天顶科技。与此同时，美国的商业航天开始全面崛起，后来大名鼎鼎的space-x，bigelow，blue origin大都从此时起步。
 
 奥巴马任期内美国商业航天的崛起就不必说了，经过全面扶植，space-x迅速成长为可以对抗任何一个国家发射市场的公司，在2018年甚至有能力挑战美国之外所有国家的总和。而NASA的焦点则全面转向深空，各种大型空间望远镜、昂贵的火星探测、木星土星探测，都达到人类历史上的巅峰。
-
----
-
-湿彩排（wet dress rehearsal），就是排练除点火之外的所有发射环节，包括进行推进剂的装填和卸载、发射倒计时等，这个过程需要在发射工位上进行。这个环节在我国叫做合练。
-
-卡门线（Kármán line）是一条位于海拔100 km（330,000英尺）处，被大部分认可为外太空与地球大气层的界线的分界线。
-
-有个游戏《坎巴拉太空计划》可以模拟火箭设计发射全过程。

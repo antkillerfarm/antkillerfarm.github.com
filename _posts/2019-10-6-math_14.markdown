@@ -307,6 +307,10 @@ https://mp.weixin.qq.com/s/npprTz_GRgdv3BK7ff2grg
 
 Lanchester战争模型：用可分离变量的微分方程占卜战事
 
+https://scienceasdf.gitee.io/programming/2015/11/02/tank/
+
+红警坦克作战效能模拟平台
+
 # 数学杂谈
 
 ![](/images/article/joke.jpg)

@@ -61,6 +61,10 @@ C++：
 tensorflow::CurrentStackTrace()
 ```
 
+`CurrentStackTrace`的实现，在Win平台调用了`CaptureStackBackTrace`函数，在Linux平台调用了`backtrace`函数。
+
+---
+
 Python：`tf.debugging.disable_traceback_filtering()`
 
 ## Log
@@ -388,32 +392,11 @@ unsupported/Eigen/CXX11/src/Tensor/TensorBase.h: TensorBase::contract()
 
 Tensor contraction是一种Tensor运算，参见《线性代数（一）》中的“张量分析”一节。
 
-# 我的TensorFlow实践
+# 内存布局
 
-## MNIST+Softmax
+Tensorflow和Caffe的内存布局存在较大差异，这是两者模型转换时，最常遇到的问题。一般认为，Caffe的内存布局对卷积硬件加速更友好一些。
 
-代码：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_mnist.py
-
-## MNIST+CNN
-
-代码：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_cnn.py
-
-第一个例子中，我对CPU的计算能力还没有切肤之痛，但在这里使用CPU差不多要花半个小时时间。。。
-
-# Broadcast
-
-Broadcast是一种填充元素以使操作数的形状相匹配的操作。例如，对一个[3,2]的张量和一个[3,1]的张量相加在TF中是合法的，TF会使用默认的规则将[3,1]的张量填充为[3,2]的张量，从而使操作能够执行下去。
-
-参考：
-
-https://www.cnblogs.com/yangmang/p/7125458.html
-
-numpy数组广播
-
-https://blog.csdn.net/LoseInVain/article/details/78763303
-
-TensorFlow中的广播Broadcast机制
+|  | Tensorflow | Caffe |
+|:--:|:--:|:--:|
+| Tensor | NHWC | NCHW |
+| Weight | HWIO | OIHW |
