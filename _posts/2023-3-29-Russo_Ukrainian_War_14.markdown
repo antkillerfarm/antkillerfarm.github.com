@@ -67,13 +67,21 @@ https://news.ifeng.com/c/8MHaL60NjcH
 
 ---
 
-https://zhuanlan.zhihu.com/p/628393295
+https://zhuanlan.zhihu.com/p/628800584
 
-各怀异心 俄罗斯维持会志愿者痛说72旅团在巴赫穆特西南的崩溃
+乌军春夏反攻 - 阿特木方向篇
 
 https://zhuanlan.zhihu.com/p/628211120
 
 巴赫穆特哀歌 俄罗斯72旅团不幸遭乌克兰亚述突击旅团重创
+
+https://zhuanlan.zhihu.com/p/628393295
+
+各怀异心 俄罗斯维持会志愿者痛说72旅团在巴赫穆特西南的崩溃
+
+https://zhuanlan.zhihu.com/p/628706086
+
+溃退600米 俄罗斯第9步兵联队在巴赫穆特北部后撤
 
 ---
 

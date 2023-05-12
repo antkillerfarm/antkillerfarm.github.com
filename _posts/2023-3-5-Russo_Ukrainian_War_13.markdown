@@ -65,6 +65,18 @@ https://zhuanlan.zhihu.com/p/624805493
 
 ---
 
+我是一个乌萝，在鹅服什么役？别说连长了就算是营长，我还是会选择回家。
+
+https://zhuanlan.zhihu.com/p/626295073
+
+乌萝点将录之米哈伊洛·扎布罗茨基
+
+https://zhuanlan.zhihu.com/p/626741739
+
+乌萝的那些人情世故
+
+---
+
 https://mp.weixin.qq.com/s/PUqFEBUN6OaGZjB-ojrMRg
 
 一个乌克兰女性的伤痛与纪念

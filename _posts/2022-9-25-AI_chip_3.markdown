@@ -303,6 +303,30 @@ https://www.zhihu.com/question/557608132
 
 # CPU+
 
+https://mp.weixin.qq.com/s/lz6EoLiLtPtWFMG1FJCuQw
+
+化合物半导体的机遇
+
+https://mp.weixin.qq.com/s/tTtySk3u6m2BGUkDto5Ojw
+
+可重构芯片的方法学原理
+
+https://mp.weixin.qq.com/s/RkRZX_scr__Q_mLPhaaWAA
+
+AMD Zen 2处理器架构为何要如此设计？
+
+https://mp.weixin.qq.com/s/dRv4xWV8laCYBaZ0DwOC3A
+
+如何从零开始设计一颗芯片？
+
+https://mp.weixin.qq.com/s/eAzdtKvfw7EVz5Ax3nXeZg
+
+自己动手设计专用处理器
+
+https://mp.weixin.qq.com/s/NfNJVoAC5aW1sgToAmYsGw
+
+3nm芯片终结者
+
 https://mp.weixin.qq.com/s/o8C6n-ZRw3vFS8E-hikXJQ
 
 移动的王者：深入分析ARM最强处理器Cortex A77

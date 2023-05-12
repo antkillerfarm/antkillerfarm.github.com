@@ -69,6 +69,22 @@ https://www.zhihu.com/question/590849147
 
 紫光集团原董事长赵伟国被移送检察机关
 
+---
+
+OPPO在2019年成立了“造芯”子公司守朴科技（上海）有限公司，2020年7月改名为哲库科技（上海）有限公司（ZEKU）。
+
+2023.5.12 ZEKU解散。
+
+据说ZEKU已经拥有了超过3000人研发人员的团队规模；成为中国第二大规模的芯片公司。
+
+https://www.zhihu.com/question/372637873
+
+如何看待欧珀（OPPO）启动自研片上系统（SoC）？
+
+https://www.zhihu.com/question/600539367
+
+如何看待OPPO将终止哲库（ZEKU）业务？
+
 ## Russia CPU
 
 俄罗斯设计通用CPU的企业主要有两家，一家是莫斯科SPARC技术中心(MCST)，另一家是贝加尔电子公司(Baikal Electronics)。
@@ -274,27 +290,3 @@ RISC-V有何特别之处？
 https://mp.weixin.qq.com/s/26se041cc9aBRw16kvPPjA
 
 芯片制造新模式--像搭积木一样造芯片
-
-https://mp.weixin.qq.com/s/lz6EoLiLtPtWFMG1FJCuQw
-
-化合物半导体的机遇
-
-https://mp.weixin.qq.com/s/tTtySk3u6m2BGUkDto5Ojw
-
-可重构芯片的方法学原理
-
-https://mp.weixin.qq.com/s/RkRZX_scr__Q_mLPhaaWAA
-
-AMD Zen 2处理器架构为何要如此设计？
-
-https://mp.weixin.qq.com/s/dRv4xWV8laCYBaZ0DwOC3A
-
-如何从零开始设计一颗芯片？
-
-https://mp.weixin.qq.com/s/eAzdtKvfw7EVz5Ax3nXeZg
-
-自己动手设计专用处理器
-
-https://mp.weixin.qq.com/s/NfNJVoAC5aW1sgToAmYsGw
-
-3nm芯片终结者
