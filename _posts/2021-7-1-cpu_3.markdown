@@ -9,6 +9,16 @@ category: Chip
 
 # CPU
 
+## Cache Line
+
+高速缓存其实就是一组称之为缓存行(cache line)的固定大小的数据块，其大小是以突发读或者突发写周期的大小为基础的。
+
+每个高速缓存行完全是在一个突发读操作周期中进行填充或者下载的。即使处理器只存取一个字节的存储器，高速缓存控制器也启动整个存取器访问周期并请求整个数据块。缓存行第一个字节的地址总是突发周期尺寸的倍数。缓存行的起始位置总是与突发周期的开头保持一致。
+
+https://zhuanlan.zhihu.com/p/37749443
+
+计算机缓存Cache以及Cache Line详解
+
 ## Bélády's Algorithm
 
 Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。
@@ -226,9 +236,3 @@ https://zhuanlan.zhihu.com/p/530763927
 https://mp.weixin.qq.com/s/KdJ0b-E0ckK6WMG5HDcEUw
 
 互联网巨头基于全球产业链打造ARM CPU
-
----
-
-https://mp.weixin.qq.com/s/SaUr2Mp4W5xmlyTcePrzlQ
-
-目前最全国产芯片公司一览

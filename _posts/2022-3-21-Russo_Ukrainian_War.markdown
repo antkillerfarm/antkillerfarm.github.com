@@ -97,6 +97,14 @@ https://www.oryxspioenkop.com/2022/02/attack-on-europe-documenting-equipment.htm
 
 这是荷兰的一家网站，提供了收集到的所有俄罗斯战损的信息。
 
+https://zhuanlan.zhihu.com/p/599732191
+
+俄乌战争信源个人向简介（上）
+
+https://zhuanlan.zhihu.com/p/600639466
+
+俄乌战争信源个人向简介（下）
+
 ---
 
 泽连斯基打击：

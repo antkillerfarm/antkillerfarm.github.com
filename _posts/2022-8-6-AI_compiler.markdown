@@ -159,6 +159,14 @@ AI编译优化--Dynamic Shape Compiler
 
 ---
 
+图算融合：大算子怎样打开、小算子如何重新融合。
+
+https://zhuanlan.zhihu.com/p/629048218
+
+AI编译器和推理引擎的区别
+
+---
+
 https://mp.weixin.qq.com/s/jjT0x99ht8xtfWmzL-0R1A
 
 深度学习的IR“之争”
