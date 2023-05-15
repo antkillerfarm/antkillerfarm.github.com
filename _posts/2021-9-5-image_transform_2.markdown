@@ -155,6 +155,10 @@ https://zhuanlan.zhihu.com/p/622914660
 
 《Stable Diffusion 倚天剑术》第1卷：在各种设备上把Stable Diffusion玩起来
 
+https://zhuanlan.zhihu.com/p/629348322
+
+StableDiffusion LoRA自训练教程
+
 ## 参考
 
 https://mp.weixin.qq.com/s/djkjAfUO_DefTP2drzY_iQ

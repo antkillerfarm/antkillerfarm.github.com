@@ -111,6 +111,8 @@ https://zhuanlan.zhihu.com/p/617040010
 
 ## 哈尔科夫战役
 
+![](/images/img5/Kharkov.jpg)
+
 https://www.zhihu.com/zvideo/1551802887226732544
 
 乌军士兵在Kharkiv州发动反攻前齐唱国歌。

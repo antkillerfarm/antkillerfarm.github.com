@@ -145,6 +145,8 @@ We will not forget! We will not forgive! Bucha. Irpin. Hostomel.
 
 2023.5.14 视察柏林，获查理大帝之剑Joyeuse。
 
+2023.5.15 视察巴黎。贩卖赎罪券。。。囧+5
+
 ---
 
 泽圣表现出了可以成为全罗斯沙皇的勇气和演技。
