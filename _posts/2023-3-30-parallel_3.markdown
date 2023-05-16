@@ -197,6 +197,10 @@ https://zhuanlan.zhihu.com/p/611325149
 
 大型语言模型(LLM)训练指南
 
+https://zhuanlan.zhihu.com/p/629589593
+
+LLM应用开发全栈指南
+
 # 模型压缩与加速进阶+
 
 https://mp.weixin.qq.com/s/Lv1JuwNohAsIAB1SKT7Lkg

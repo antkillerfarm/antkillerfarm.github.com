@@ -191,6 +191,8 @@ profile_batch参数用于设置在第几个batch进行profile。为0，表示dis
 
 trace可以保存在本地，也可以用grpc输出到远程，并通过`trace_viewer`中的`Capture Profile`按钮来接收。
 
+Profiler需要联网加载Google Chart库，才能完整显示。
+
 ---
 
 Trace Viewer是Google的Chromium项目开发的一个强大的可视化展示和分析工具。TensorBoard中也使用了它。
