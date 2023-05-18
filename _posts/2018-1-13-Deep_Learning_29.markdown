@@ -364,3 +364,7 @@ https://www.zhihu.com/question/533876759
 https://www.zhihu.com/question/593909345
 
 如果在欧洲中世纪战场上以一己之力斩杀100名敌国士兵，那么在战后能够得到什么样的封赏？
+
+https://zhuanlan.zhihu.com/p/250556566
+
+被父亲、丈夫、儿子囚禁，并冠以“疯女”之名（疯女胡安娜）
