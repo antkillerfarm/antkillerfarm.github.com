@@ -296,3 +296,7 @@ https://zhuanlan.zhihu.com/p/625715150
 https://zhuanlan.zhihu.com/p/628834288
 
 强制捐款，俄军工企业和员工难以支撑
+
+https://zhuanlan.zhihu.com/p/630222149
+
+事实核查：普京霸气摧毁爱国者电池

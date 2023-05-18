@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  古希腊/罗马（二）
+title:  古希腊/古罗马（二）
 category: World 
 ---
 
 * toc
 {:toc}
 
-# 古希腊/罗马
+# 古希腊/古罗马
 
 军团中的普通士兵，被称为Caligati，这个词能够联想到罗马人穿的那种军鞋caliga，很多人都知道皇帝卡里古拉
 
@@ -157,6 +157,10 @@ https://zhuanlan.zhihu.com/p/24781429
 https://www.zhihu.com/question/593413129
 
 罗马多神教的战神和希腊多神教的战神有什么区别？
+
+https://www.zhihu.com/question/601392171
+
+古罗马采矿业是怎样的？罗马帝国境内有几处较大的矿场？
 
 # 非洲+
 

@@ -162,3 +162,7 @@ https://zhuanlan.zhihu.com/p/595998197
 https://view.inews.qq.com/k/20230103A06OPP00
 
 俄媒称乌克兰要复产“奥卡”，“奥卡”有多可怕：当年连生产线都要被销毁
+
+https://zhuanlan.zhihu.com/p/476584907
+
+从航母之父到安225设计师：乌克兰有多少技术人才来到了中国？
