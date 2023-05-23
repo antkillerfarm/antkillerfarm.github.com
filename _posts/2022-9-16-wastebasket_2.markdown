@@ -114,3 +114,65 @@ https://www.zhihu.com/question/538443359
 https://www.sohu.com/a/586791116_120146415
 
 复旦硕士骗同龄人为自己打工 获顶尖金融公司录用 受骗者错过校招
+
+# 二战轶事+
+
+希特勒只有一个蛋 / Hitler has only got one ball
+
+戈林有两个，但都非常小 / Goring has two but very small
+
+希姆莱情况很相似 / Himmler has something similar
+
+可怜的老戈培尔则一粒都没有 / Poor Old Goebbel has no balls at all
+
+二战时期英军将士写出来表达自己对希特勒的蔑视的歌曲，使用《波基上校进行曲》的旋律。
+
+https://www.bilibili.com/video/BV1ff4y117y8/
+
+Hitler has only got one ball
+
+---
+
+https://uboat.net/boats/finder.php
+
+一个关于德国U型潜艇的网站。
+
+https://mp.weixin.qq.com/s/0Lyk7Y31ViFOmfCXHaBdBQ
+
+二战南斯拉夫波黑游击队早期领导人姆拉登医学博士
+
+https://mp.weixin.qq.com/s/mD74va6Oy99eePxvGJKmaw
+
+科扎拉战役，二战南斯拉夫游击队初期的挫折
+
+https://mp.weixin.qq.com/s/Ey3siLU4Ti9qy_yKptsLJw
+
+史上最牛火山喷发：团灭美军轰炸机大队，把88架飞机烧成渣渣
+
+https://www.zhihu.com/question/368905319
+
+为什么二战美军钢盔上都有网？
+
+https://mp.weixin.qq.com/s/f_tbl1KT6suEB4HarHJKQQ
+
+荒诞却真实的历史：阿道夫·希特勒与动物保护
+
+https://mp.weixin.qq.com/s/d_Ua9kAvvz-W2YHjRCa_0w
+
+纳粹德国战犯百态：纽伦堡审判庭之外的细节
+
+https://mp.weixin.qq.com/s/kNFx85eGgYC81nz3ElN21Q
+
+俾斯麦家族与二战：铁血宰相后人的沉浮
+
+https://mp.weixin.qq.com/s/WbMHXf1EhUIV7kZSJki-_g
+
+为什么希特勒冒着两线作战的危险，也要坚持1941年入侵苏联？
+
+https://mp.weixin.qq.com/s/ydXEPpyH4S_Zv94aE5yZ9w
+
+F9F单挑苏联6架米格15，性能数量绝对劣势，竟反杀4架全身而退
+
+https://mp.weixin.qq.com/s/_9jOJtGT82qXYwibNbH28Q
+
+改变世界历史的营长：若不是他临场反水，二战将在1944年结束

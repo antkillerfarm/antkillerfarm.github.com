@@ -27,6 +27,20 @@ https://www.zhihu.com/question/583941606
 
 ---
 
+有两个天气预报站A和B，各自独立地进行预测，互相完全不知道对方。
+
+根据历史统计，当A预报第二天下雨时第二天真的下雨的概率是0.9，当B预报第二天下雨时第二天真的下雨的概率是0.8。现在A和B都预报明天下雨，那么明天下雨的概率是多少？
+
+“独立预测”在现实生活中的意思，是说两站根据各自观测到的数据，不参考对方的预测结果而进行预测。这的确可以理解为一种条件独立，但这里的条件是自然界中可以被观测到并用来预测下雨与否的现象，而不是下雨与否这个结果。
+
+两个气象站都不笨，它们的预测都是有根据的，往往会出现“英雄所见略同”的情况，这就不独立了。
+
+https://www.zhihu.com/question/25360634
+
+一道困惑很久的概率问题，这道题是有解还是本身题目就有问题？
+
+---
+
 https://www.sohu.com/a/284210653_161479
 
 日本大学生把数学“玩坏”：为了画好一只乳房，也是拼了！
@@ -318,55 +332,3 @@ https://mp.weixin.qq.com/s/CiAI2ZkM47-G3kiPrNOZtQ
 https://mp.weixin.qq.com/s/Ku42zXI_prpxujhDpuDK_g
 
 深痛哀悼数学家王元院士
-
-https://mp.weixin.qq.com/s/KTcrFSk0PEpnRrHzH_qlYw
-
-3800多条数学公式，都是他在梦里发现的？（Srinivasa Ramanujan）
-
-https://mp.weixin.qq.com/s/fNU7-ivLb373ty0SItP_Ng
-
-普林斯顿大学数学系的崛起：把研究生"扔到河里"，游过去的就成为博士
-
-https://mp.weixin.qq.com/s/pJfzhYNXR0iB_gMKnrMebg
-
-数学女博士奥运会摘金！
-
-https://mp.weixin.qq.com/s/-z6woWKFDvLGqhp1z9qCUA
-
-一个与蛋有关的公式
-
-https://www.zhihu.com/question/264893261
-
-为什么矩形面积等于长乘宽？
-
-https://mp.weixin.qq.com/s/gDO3ZjlBIzb6E6EMQoaufQ
-
-20岁成为欧洲一流数学家，身为富二代却天天盼着破产（拉格朗日）
-
-https://zhuanlan.zhihu.com/p/437864462
-
-如何“破译”清朝的微积分课本？
-
-https://mp.weixin.qq.com/s/7cziogvznmYWax1LKfnPjQ
-
-史上最硬核高中数学题，题目居然不过4行？
-
-https://new.qq.com/omn/20210109/20210109A02KGT00.html
-
-立交桥布局中的迷人曲线
-
-https://mp.weixin.qq.com/s/1sftTzh7OxPmnQ5rH8FIgQ
-
-北大数学“黄金一代”今何在？
-
-https://www.zhihu.com/question/38331955
-
-如果人说他/她集齐了十二个星座的前任，我们应该如何估计他/她前任的数量？
-
-https://www.zhihu.com/question/534292859
-
-33岁远洋船员带15个G数学题出海，报名全球数学竞赛丰富船上时光，数学能给普通人带来哪些乐趣？
-
-https://mp.weixin.qq.com/s/E_EzwLr4JOzR1pk3MOeU_w
-
-复动力系统简介

@@ -145,6 +145,10 @@ https://www.zhihu.com/question/292721850
 
 大疆为什么不做油动无人机？
 
+https://www.zhihu.com/answer/3038289774
+
+大疆的国产化率
+
 ## 参考
 
 ![](/images/img5/auto.jpg)

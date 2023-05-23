@@ -254,6 +254,14 @@ https://mp.weixin.qq.com/s/zPHNtK4wUQnVLkIXcjqd_A
 
 ## 参考
 
+工业机器人市场、安防相机、卫星和医疗用相机。
+
+https://mp.weixin.qq.com/s/vI6Ut35X3awFht-KxWIjzg
+
+2023-2028年相机市场趋势
+
+---
+
 https://mp.weixin.qq.com/s/od9uDZdRU4QaBKPHb0tLag
 
 cmos sensor基础
