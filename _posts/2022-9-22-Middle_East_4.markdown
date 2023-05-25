@@ -151,6 +151,10 @@ https://zhuanlan.zhihu.com/p/617144743
 
 ---
 
+库尔德工人党效忠阿萨德、努斯拉与西北自由军效忠土鸡、阿萨德让土鸡撤离西北、土鸡要求阿萨德消灭库工党、库工党以反伊斯兰国之名得到美国佬保护、库工党一直玩女权主义和马克思主义play获取西方左派和自由派大量同情、库工党指责自由军、努斯拉甚至美国英国资助的白头盔是伊斯兰国，自由军指责库工党勾结阿萨德、伊朗摧毁叙利亚革命，美国人指责库工党绑架女童当兵，脱离基地组织的努斯拉救世政府搞温和转型……
+
+---
+
 https://mp.weixin.qq.com/s/3Frx_ZmmmEC_aj4tLUPleg
 
 苏莱曼尼被斩首后，这篇文章把两伊根本问题说清楚了
@@ -186,42 +190,3 @@ https://zhuanlan.zhihu.com/p/370329132
 https://view.inews.qq.com/wxn/20210725A084BY00
 
 “两个塔利班”的前世与今生（巴基斯坦塔利班和阿富汗塔利班）
-
-https://zhuanlan.zhihu.com/p/395139812
-
-什么是“杀死印度人山脉”？（Hindu kush）
-
-https://mp.weixin.qq.com/s/dw8https://mp.weixin.qq.com/s/i95tMMhW_VoGtmD_RPehlg
-
-趣谈美国在阿富汗的天价军费：最高峰时超过当时中国全部军费
-
-https://zhuanlan.zhihu.com/p/409195354
-
-塔利班秒变人民公仆？市长亲自扫大街，银行行长端着冲锋枪去上班
-
-https://zhuanlan.zhihu.com/p/438002125
-
-全球唯一器官交易合法国家：穷人拿命换钱，富人花钱续命（伊朗器官交易合法化）
-
-https://mp.weixin.qq.com/s/giuTx7hS3HD4GdiD_dyRNg
-
-黎巴嫩央行破产：一个悲情国家的不可承受之重
-
-https://xw.qq.com/cmsid/20200710A0JO9X00
-
-阿勒颇监狱保卫战，堪称现代版斯大林格勒，叙利亚五百勇士死守三年终获胜利
-
-https://baijiahao.baidu.com/s?id=1711492174611034081
-
-19岁沙特公主因私奔遭极刑，男友被斩首，差点造成英国沙特断交
-GRXm9U_YEaiWWQlVO5A
-
-阿富汗之变：被抛弃和被遗忘的命运
-
-https://mp.weixin.qq.com/s/fNGUgM7mM9elHZ4mQqAuhQ
-
-同样是打美国，为啥塔利班能卷土重来，萨达姆政权却被彻底消灭？
-
-https://mp.weixin.qq.com/s/3y7c2c6a2CsilQIDpcpTmA
-
-阿富汗战事以总统跑路告终：美军20年来兵力与军费如何？
