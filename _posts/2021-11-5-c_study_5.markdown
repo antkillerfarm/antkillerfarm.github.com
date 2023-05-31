@@ -7,9 +7,7 @@ category: language
 * toc
 {:toc}
 
-# C/C++参考资源
-
-## spaceship operator
+# spaceship operator
 
 spaceship operator: `<=>`
 
@@ -29,7 +27,7 @@ https://cloud.tencent.com/developer/article/1352324
 
 C++20草案中的宇宙飞船运算符(<=>,spaceship operator)
 
-## 线程安全注解
+# 线程安全注解
 
 线程安全注解是现代C++开发的机制，可以在代码编译阶段检查锁的使用情况，从而发现线程同步的相关问题。该功能目前只有clang编译器支持。
 
@@ -37,7 +35,7 @@ https://blog.csdn.net/qq_32648921/article/details/109114887
 
 线程安全注解
 
-## Implementation-defined、Unspecified、Undefined
+# Implementation-defined、Unspecified、Undefined
 
 Implementation-defined：C标准没有明确规定，但是要求编译器必须对此做出明确规定，并写在编译器的文档中。
 
@@ -49,7 +47,7 @@ https://www.cnblogs.com/MagicLetters/archive/2011/08/03/2126471.html
 
 C语言中关于Implementation-defined、Unspecified和Undefined
 
-## 在构造函数内部调用构造函数
+# 在构造函数内部调用构造函数
 
 ```cpp
 struct CLS
@@ -71,11 +69,11 @@ https://www.cnblogs.com/stemon/p/4834043.html
 
 在构造函数内部调用构造函数
 
-## 基类析构函数为什么是虚函数？
+# 基类析构函数为什么是虚函数？
 
 如果基类析构函数不是虚函数，则当通过父类指针或引用指向子类时，在调用析构函数时只调用父类的析构函数，所以只释放父类在堆区开辟的内存，子类在堆区开辟的内存没有被释放。
 
-## 临时对象的生命周期
+# 临时对象的生命周期
 
 ```cpp
 string test()
@@ -98,7 +96,7 @@ https://blog.csdn.net/stpeace/article/details/46461167
 
 聊聊C++临时对象的析构时间点
 
-## switch...case
+# switch...case
 
 ```c
 switch (reg) {
@@ -116,17 +114,17 @@ https://www.zhihu.com/question/300975864
 
 为什么很多程序员不用 switch，而是大量的 if...else if ...？
 
-## uint8_t
+# uint8_t
 
 对于要求严格位宽的场合，应用程序可以使用uint8_t，uint16_t，uint32_t来获得移植时的一致性。它的头文件是inttypes.h。
 
-## 并发与多线程
+# 并发与多线程
 
 https://blog.csdn.net/qq_38231713/category_10001159.html
 
 一个C++11并发与多线程的专栏
 
-## K&R风格
+# K&R风格
 
 在C语言的函数定义上，我们通常用的函数定义方式为ANSI C的函数定义方式。但是在C语言之父创立C语言之时，函数的定义形式并非现在我们所见到的形式。
 
@@ -140,7 +138,7 @@ http://blog.chinaunix.net/uid-7426920-id-2627743.html
 
 ANSI和K&R两种函数定义风格
 
-## SFINAE
+# SFINAE
 
 SFINAE：Substitution failure is not an error
 
@@ -152,7 +150,7 @@ https://zhuanlan.zhihu.com/p/21314708
 
 C++模板进阶指南：SFINAE
 
-## 打印vector的N种方法
+# 打印vector的N种方法
 
 ```cpp
 auto vec = make_index_vector(std::make_index_sequence<10>());
@@ -165,7 +163,7 @@ std::for_each(std::begin(vec),std::end(vec),[](int n){std::cout<<n<<" ";});
 std::cout << std::endl;
 ```
 
-## malloc与calloc
+# malloc与calloc
 
 两者都是动态分配内存。
 
@@ -188,7 +186,7 @@ https://www.cnblogs.com/cthon/p/10563946.html
 
 内存优化总结:ptmalloc、tcmalloc和jemalloc
 
-## RVO
+# RVO
 
 ```cpp
 std::vector<int> return_vector(void)
@@ -299,7 +297,7 @@ std::tie(a , str) = fun_tie(12, std::string("Pony Ma"));
 std::cout << a << "," << str << std::endl;
 ```
 
-## 参考
+# C/C++参考资源
 
 `vector<bool>`并不是一个通常意义上的vector容器，这个源自于历史遗留问题。 早在C++98的时候，就有`vector< bool>`这个类型了，但是因为当时为了考虑到节省空间的想法，所以`vector<bool>`里面不是一个Byte一个Byte储存的，它是一个bit一个bit储存的！
 
@@ -396,3 +394,7 @@ C++的string为什么不提供split函数？
 https://zhuanlan.zhihu.com/p/458947637
 
 C++编程技巧: Pimpl
+
+https://blog.csdn.net/weixin_42663840/article/details/81188003
+
+深入浅出入侵式容器

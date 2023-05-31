@@ -63,6 +63,10 @@ http://graphics.stanford.edu/projects/brookgpu/
 
 随着GPU厂商逐渐意识到通用数值计算的重要性，并陆续提出了一些新框架。BrookGPU项目也就过时了。
 
+NV的路线是：Brook -> CUDA
+
+AMD的路线是：Brook -> Brook+(后更名Stream/APP) -> OpenCL/DirectML -> ROCm(同时有OpenCL和DirectML支持)。
+
 常见并行计算框架
 
 | 名称 | 优点 | 缺点 |

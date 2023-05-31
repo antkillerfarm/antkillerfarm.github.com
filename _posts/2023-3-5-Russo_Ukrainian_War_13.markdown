@@ -181,6 +181,10 @@ https://zhuanlan.zhihu.com/p/617040010
 
 “我工作，然后我哭泣”：巴赫穆特附近疲惫不堪的乌克兰医务人员为生命而战
 
+https://www.zhihu.com/question/567275817
+
+大家怎么看乌克兰高调给一名台湾雇佣兵举行华丽葬礼？（曾圣光）
+
 ## 哈尔科夫战役
 
 ![](/images/img5/Kharkov.jpg)
