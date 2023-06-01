@@ -135,7 +135,7 @@ https://zhuanlan.zhihu.com/p/482979228
 
 集群可以很好解决单节点计算力不足的问题，但在集群中大规模的数据交换是很耗费时间的，因此需要一种在多节点的情况下能快速进行数据交流的标准，这就是Message passing interface(MPI)。
 
-MPI的主流实现主要是：mpich和openmpi。
+MPI的主流实现主要是：mpich，openmpi，Intel MPI，Microsoft MPI，其中Intel MPI和Microsoft MPI都是基于开源的mpich。
 
 和MPI类似的技术，还有NVIDIA的NCCL，FaceBook的gloo等。
 

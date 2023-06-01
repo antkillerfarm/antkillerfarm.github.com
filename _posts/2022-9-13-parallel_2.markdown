@@ -91,6 +91,12 @@ https://zhuanlan.zhihu.com/p/485208899
 
 ![](/images/img5/Model_Parallel.png)
 
+## 工具
+
+https://zhuanlan.zhihu.com/p/412118353
+
+Kokkos:一个异构并行计算通用平台
+
 ## 参考
 
 https://mp.weixin.qq.com/s/ai_XI8ddP5I2m3ChCqnQsA
@@ -136,6 +142,10 @@ https://zhuanlan.zhihu.com/p/28445511
 https://mp.weixin.qq.com/s/wu32LBwrkkBIANMdknHlCA
 
 C++并行实战，592页pdf，C++ Concurrency in Action
+
+https://zhuanlan.zhihu.com/p/79385727
+
+有限元并行计算简介
 
 https://mp.weixin.qq.com/s/heVQ9AIZKxTiCNiAtYKaag
 

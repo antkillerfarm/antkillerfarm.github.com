@@ -301,6 +301,10 @@ https://mp.weixin.qq.com/s/1Jm00gCel41frG43oT9yyA
 
 他是探月英雄，但没登上过月球（Michael Collins）
 
+https://www.zhihu.com/question/423138570
+
+火星车网速只有34Kb/s，当年老美怎么进行的登月直播呢？
+
 ---
 
 ![](/images/img3/india_moon.jpg)
