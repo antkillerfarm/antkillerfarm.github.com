@@ -205,6 +205,8 @@ We will not forget! We will not forgive! Bucha. Irpin. Hostomel.
 
 2023.5.23 视察Vugledar-Marinka前线。
 
+2023.6.1 视察摩尔多瓦基希讷乌。大会欧洲诸国。
+
 ---
 
 泽圣表现出了可以成为全罗斯沙皇的勇气和演技。
@@ -217,7 +219,7 @@ We will not forget! We will not forgive! Bucha. Irpin. Hostomel.
 
 乌克兰著名演员出席金球奖并发言。
 
-乌克兰总统泽连斯基签署法令，正式将5月8日定为乌克兰的第二次世界大战胜利纪念日，区别于俄罗斯的5月9日。原来5月9日的卫国战争胜利日，则被改为“欧洲日”。 
+乌克兰总统泽连斯基签署法令，正式将5月8日定为乌克兰的第二次世界大战胜利纪念日，区别于俄罗斯的5月9日。原来5月9日的卫国战争胜利日，则被改为“欧洲日”。
 
 https://zhuanlan.zhihu.com/p/593679662
 
