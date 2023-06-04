@@ -161,6 +161,14 @@ https://zhuanlan.zhihu.com/p/619576649
 
 车臣人与乌克兰人对抗俄罗斯：我们等待在巴赫穆特的胜利
 
+---
+
+基辅戴笠：乌克兰国防部情报局局长布达诺夫
+
+https://zhuanlan.zhihu.com/p/634504119
+
+情报沙皇基里尔·布达诺夫
+
 ## 乌东战争
 
 ![](/images/img4/Kyiv.jpg)

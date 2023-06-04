@@ -23,6 +23,18 @@ category: DL
 
 ![](/images/img2/Han.jpg)
 
+---
+
+http://elinguistics.net/
+
+这个网站可用于比较两种语言的亲缘/差异程度。
+
+https://www.zhihu.com/question/526103427
+
+维吾尔语能否和土耳其语互通？如果能的话，能互通多少？
+
+---
+
 参考：
 
 https://mp.weixin.qq.com/s/1cdg635KcPTV6mFdwPo2OQ

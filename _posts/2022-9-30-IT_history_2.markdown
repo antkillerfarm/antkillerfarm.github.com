@@ -137,6 +137,10 @@ https://www.zhihu.com/question/22600107
 
 金唇窃听器的原理是如何的？
 
+https://www.zhihu.com/question/20195292
+
+QWERTY键盘的设计原理是什么？
+
 # 上古软件开发
 
 https://mp.weixin.qq.com/s/movz5aesYdZZZHle-hHRIw

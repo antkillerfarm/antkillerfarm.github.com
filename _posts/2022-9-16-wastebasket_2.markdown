@@ -115,6 +115,10 @@ https://www.sohu.com/a/586791116_120146415
 
 复旦硕士骗同龄人为自己打工 获顶尖金融公司录用 受骗者错过校招
 
+https://www.zhihu.com/question/604343409
+
+如何看待华南理工大学学术妲己事件？（苏艳、顾成）
+
 # 二战轶事+
 
 希特勒只有一个蛋 / Hitler has only got one ball

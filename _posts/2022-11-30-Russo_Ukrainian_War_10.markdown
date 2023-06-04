@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争（十）——无官不贪（2）
+title:  俄乌战争（十）——无官不贪
 category: Russia 
 ---
 
