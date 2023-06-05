@@ -234,11 +234,21 @@ Model Zoo：
 
 https://github.com/Ascend/models
 
+重要的开源项目：
+
+https://gitee.com/ascend/tensorflow
+
+https://gitee.com/mindspore/graphengine
+
 参考：
 
 https://mp.weixin.qq.com/s/P381v0eXrwfzlLE79c8sGg
 
 华为在hotchips详细介绍了达芬奇架构
+
+https://www.hiascend.com/zh/software/cann
+
+CANN（Compute Architecture for Neural Networks）是华为针对AI场景推出的异构计算架构
 
 ## Cerebras
 

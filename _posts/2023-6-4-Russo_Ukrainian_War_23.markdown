@@ -249,14 +249,6 @@ https://www.zhihu.com/question/586911709
 
 俄军预警机A50疑似遇袭，大家如何看待此事？
 
-https://zhuanlan.zhihu.com/p/611595424
-
-权力斗争、炮弹短缺——瓦格纳-国防部的较量与俄罗斯的战争潜力
-
-https://zhuanlan.zhihu.com/p/608784859
-
-俄雇佣兵的子弹，没用来打乌军，瓦格纳把俄军大将，画在了靶子上
-
 https://zhuanlan.zhihu.com/p/538532137
 
 为了真正的信仰——战斗在乌克兰的国际军团

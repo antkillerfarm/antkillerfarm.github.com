@@ -231,116 +231,80 @@ https://mp.weixin.qq.com/s/QzDKFinw9sXXfKNbG0Rchw
 
 清华大学：2021元宇宙研究报告
 
-# 印度+
+# 中东+
 
-印度有法律规定，所有外国公司，涉及研发费用的，只要在印度销售，其中研发利润必须给政府一部分。就是比方这个技术美国高通研发一个芯片，卖给中国小米，每台手机收小米200块芯片授权专利费。那么，这个美国专利，必须给印度政府上交一部分。
+https://zhuanlan.zhihu.com/p/395139812
 
-https://www.zhihu.com/question/530869657
+什么是“杀死印度人山脉”？（Hindu kush）
 
-如何看待小米被曝涉嫌非法汇款，遭印度政府扣押约48亿元，小米回应称“将与政府合作澄清误解”？
+https://mp.weixin.qq.com/s/dw8GRXm9U_YEaiWWQlVO5A
 
-https://mp.weixin.qq.com/s/YCzHbsmTmXeYFGS1xGFTCw
+阿富汗之变：被抛弃和被遗忘的命运
 
-欧美日韩的企业都逃不过印度的巨额罚款，小米怎么可能例外
+https://mp.weixin.qq.com/s/fNGUgM7mM9elHZ4mQqAuhQ
 
----
+同样是打美国，为啥塔利班能卷土重来，萨达姆政权却被彻底消灭？
 
-印度只不过是俄罗斯向外出售石油的中转站而已，用卢比从俄罗斯买石油本身就是一次白嫖，拒绝俄罗斯使用卢比等于第二次白嫖，表示俄罗斯可以用卢比购买印度国债等于第三次白嫖。
+https://mp.weixin.qq.com/s/3y7c2c6a2CsilQIDpcpTmA
 
-https://www.zhihu.com/question/599625706
+阿富汗战事以总统跑路告终：美军20年来兵力与军费如何？
 
-巴基斯坦或使用人民币支付从俄罗斯进口的原油
+https://mp.weixin.qq.com/s/i95tMMhW_VoGtmD_RPehlg
 
----
+趣谈美国在阿富汗的天价军费：最高峰时超过当时中国全部军费
 
-https://zhuanlan.zhihu.com/p/166127280
+https://zhuanlan.zhihu.com/p/409195354
 
-航拍印度三大一线城市，新德里孟买加尔各答
+塔利班秒变人民公仆？市长亲自扫大街，银行行长端着冲锋枪去上班
 
-https://www.zhihu.com/question/27339934
+https://zhuanlan.zhihu.com/p/438002125
 
-从1876年算起，中国铁路里程超过印度用了多少年？
+全球唯一器官交易合法国家：穷人拿命换钱，富人花钱续命（伊朗器官交易合法化）
 
-https://mp.weixin.qq.com/s/EktlkRgHykNgd6Oj_SVcQw
+https://mp.weixin.qq.com/s/giuTx7hS3HD4GdiD_dyRNg
 
-印度封杀中国App，它们的出海成绩有多让人“眼红”？
+黎巴嫩央行破产：一个悲情国家的不可承受之重
 
-https://zhuanlan.zhihu.com/p/68046339
+https://xw.qq.com/cmsid/20200710A0JO9X00
 
-印度人是如何把外卖做成百年老店的？
+阿勒颇监狱保卫战，堪称现代版斯大林格勒，叙利亚五百勇士死守三年终获胜利
 
-https://zhuanlan.zhihu.com/p/257936464
+https://baijiahao.baidu.com/s?id=1711492174611034081
 
-印度，三天打赢一个欧洲国家（葡属果阿）
+19岁沙特公主因私奔遭极刑，男友被斩首，差点造成英国沙特断交
 
-https://zhuanlan.zhihu.com/p/259753222
+https://www.zhihu.com/question/455642975
 
-安达曼-尼科巴群岛
+一战英国都没想过土耳其战略地位吗，为什么要扣土耳其战舰？
 
-https://dy.163.com/article/EUPBGE9G053178UH.html
+https://new.qq.com/omn/20210917/20210917A012II00.html
 
-印度打工仔冲入美军海外基地，强奸美国女兵长达3小时
+美军噩梦幽灵狙击手“朱巴”，曾经狙杀634名美军，他到底是谁？
 
-https://zhuanlan.zhihu.com/p/334430392
+https://mp.weixin.qq.com/s/nfPaPOpIjPrgTEGytCPf0w
 
-印度农民进军首都
+埃及前总统穆巴拉克去世：毁誉参半的一生
 
-https://mp.weixin.qq.com/s/Hn2cnotX7dbSJEFD3z2SMQ
+http://history.people.com.cn/GB/198306/14325368.html
 
-微信“死于”印度
+奴隶？工人？金字塔的建造者竟是一群自由民
 
-https://mp.weixin.qq.com/s/6NrLtMP2VEa1OpAK99BU4w
+https://www.zhihu.com/question/443184252
 
-搞计算机网络最强的其实不是互联网公司，而是印度的电工！
+叙利亚在军事作战中为什么一败涂地？
 
-https://mp.weixin.qq.com/s/n5eLb8WfUqSKHcKxaJDolg
+https://zhuanlan.zhihu.com/p/588730371
 
-他被称为印度“IT大王”，富可敌国，却精打细算如守财奴
+中东传奇女王卡塔尔太后——谢赫.莫扎
 
-https://mp.weixin.qq.com/s/P-iBxEOhDQfoGdMh9jbAFQ
+https://zhuanlan.zhihu.com/p/598834668
 
-印度不仅士兵冻成冰雕，高原还用上了冰冻“水晶机枪”？
+为什么生为奥斯曼帝国的王子不一定是一件好事？
 
-https://mp.weixin.qq.com/s/513ErE8AUiB56KyhYJgo1w
+https://www.zhihu.com/question/603396425
 
-最疯狂的恐怖袭击，恐怖分子在全城乱窜，见人就杀，如同人间炼狱（印度孟买恐怖袭击）
+伊朗边防军与阿富汗塔利班边防士兵在边境地区发生武装冲突，目前双方局势情况如何？
 
-https://zhuanlan.zhihu.com/p/370607296
+https://www.sohu.com/a/648356428_121656712
 
-莫迪，输了？
-
-https://zhuanlan.zhihu.com/p/376479497
-
-什么是孟加拉国？
-
-https://mp.weixin.qq.com/s/Yk6ehjvJ2TTmPE7hZBOoWQ
-
-世界上最贵的豪宅，属于一个印度人
-
-https://mp.weixin.qq.com/s/aC_orJwyQfl2-92_PTQMcw
-
-虽败犹荣：令英国决心离开印度的1946孟买水兵起义
-
-https://www.zhihu.com/answer/2342300354
-
-为什么每次印度阅兵就要叠罗汉表演各种杂技？
-
-https://mp.weixin.qq.com/s/4Adurm5RDMzN3GV1Bah1Ww
-
-巴基斯坦之变：板球队长出身的网红总理被弹劾下台
-
-https://mp.weixin.qq.com/s/4mn2RqkefkpAD3NsEhqHpQ
-
-后疫情时代的印度真的会成为全球产业链的“救世主”吗？
-
-https://zhuanlan.zhihu.com/p/613560508
-
-印度乱伦为何屡禁不止？
-
-https://zhuanlan.zhihu.com/p/619133532
-
-切断这条走廊，印度会分裂么？
-
-https://zhuanlan.zhihu.com/p/627661050
-
-印度，填海造第一大城市！（孟买的历史）
+美军从阿富汗逃跑后，到底留下了多少武器装备？

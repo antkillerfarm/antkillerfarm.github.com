@@ -305,6 +305,10 @@ https://www.zhihu.com/question/557608132
 
 以前的算法比较简单，数据吞吐量小，AMD的短流水线渲染单元数量多所以效率高。到了Ethash这类重IO算法主流的年代其实A卡效率还略有优势，但是没以前那么夸张，所以N卡也被拉出来挖。
 
+---
+
+A卡的新驱动对于老游戏的支持有些差，解决办法：删除游戏目录下的dbghelp.dll文件。
+
 # CPU+
 
 https://mp.weixin.qq.com/s/lz6EoLiLtPtWFMG1FJCuQw
