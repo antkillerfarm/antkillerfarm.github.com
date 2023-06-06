@@ -37,6 +37,10 @@ https://zhuanlan.zhihu.com/p/591256803
 
 乌萝的金星战神们
 
+https://zhuanlan.zhihu.com/p/634657783
+
+乌克兰军功章合集
+
 https://zhuanlan.zhihu.com/p/610281800
 
 当死亡袭来的时刻我依旧选择向前——乌克兰英雄德米特罗-菲纳辛的故事
