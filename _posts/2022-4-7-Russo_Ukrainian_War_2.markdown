@@ -207,6 +207,8 @@ We will not forget! We will not forgive! Bucha. Irpin. Hostomel.
 
 2023.6.1 视察摩尔多瓦基希讷乌。大会欧洲诸国。
 
+2023.6.8 视察赫尔松水灾现场。
+
 ---
 
 泽圣表现出了可以成为全罗斯沙皇的勇气和演技。

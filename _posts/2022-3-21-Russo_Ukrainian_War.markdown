@@ -93,6 +93,8 @@ for me he is nobody, nobody.
 
 2023.5.22 别尔哥罗德人民共和国、库尔斯克人民共和国成立。
 
+2023.6.6 卡霍夫卡水电站大坝遭到破坏。
+
 ---
 
 https://www.understandingwar.org/

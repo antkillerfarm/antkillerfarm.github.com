@@ -274,6 +274,14 @@ https://zhuanlan.zhihu.com/p/19609459
 
 矩阵的秩与行列式的几何意义
 
+## 线性方程组
+
+对应于主元位置的变量称为**基本变量**，其余变量称为**自由变量**。
+
+https://zhuanlan.zhihu.com/p/387925183
+
+齐次线性方程组
+
 ## Krylov subspace
 
 Krylov subspace是一类针对大矩阵的近似计算的方法，由Aleksey Nikolaevich Krylov于1931年提出。

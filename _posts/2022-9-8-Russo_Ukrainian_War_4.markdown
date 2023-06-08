@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争（四）——乌东战争
+title:  俄乌战争（四）——人物（3）
 category: Russia 
 ---
 
@@ -123,6 +123,10 @@ https://zhuanlan.zhihu.com/p/634644722
 
 解救俘虏 别尔哥罗德总督忍辱负重与俄罗斯志愿军谈判
 
+https://zhuanlan.zhihu.com/p/635189526
+
+别尔哥罗德悲剧 俄罗斯普斯科夫联队被乌克兰军团击溃
+
 ---
 
 俄罗斯的胜利并没有阻止车臣争取自由的斗争。车臣人继续与俄罗斯作战，首先是在车臣本土，然后是叙利亚和乌克兰。正是在乌克兰，寻求自由的车臣人与卡德罗夫家族的车臣军队对峙。
@@ -173,44 +177,22 @@ https://zhuanlan.zhihu.com/p/634504119
 
 情报沙皇基里尔·布达诺夫
 
-## 乌东战争
-
-![](/images/img4/Kyiv.jpg)
-
 ---
 
-2010年选举示意图：
+医生来见罗戈津：有一个好消息，一个坏消息，您想听哪个？
 
-![](/images/img4/Ukraine.jpg)
+罗戈津：先听好消息吧？
 
-如果说顿涅茨克是皇俄基地，那卢甘斯克就是共产主义试验区。
+医生：您已脱离生命危险，并且寿命增加了九千岁。
 
-![](/images/img4/Ukraine.png)
+罗戈津：那坏消息呢？
 
-![](/images/img4/Ukraine_3.jpg)
+医生：[惨了！消息称罗戈津将失去生殖器官，已被紧急送往莫斯科手术](https://www.163.com/dy/article/HP9UU66I055389NN.html)
 
-https://zhuanlan.zhihu.com/p/360271391
+https://www.zhihu.com/question/573759567
 
-整兵经武 东乌克兰序列
+俄航天集团前总裁罗戈津遭炮击受伤，炮击使用的是高精度的弹药，目前情况如何？
 
-https://www.zhihu.com/question/518037791
+https://zhuanlan.zhihu.com/p/635432606
 
-乌克兰曾经也是航空防务大国，现在家底却越来越少，你知道乌克兰曾经有哪些家底吗？
-
-https://mp.weixin.qq.com/s/uRnYLzlPkC8vDORbsN8HDQ
-
-浅谈俄罗斯乌克兰的历史和未来
-
-https://www.zhihu.com/question/54885557
-
-有哪些军事实力被高估的国家?
-
----
-
-他们决定高唱着乌克兰国歌《乌克兰仍在人间》，骂着普京死战到底。
-
-2017年，这群悍汉的故事拍摄成电影《机械钢骨：英雄不死(Cyborgs: Heroes Never Die)》。
-
-https://mp.weixin.qq.com/s/ommR-5zMvYvFiGodVZxBLw
-
-顿涅茨克机场守城战：乌克兰版《八佰》
+俄罗斯纳粹点将录

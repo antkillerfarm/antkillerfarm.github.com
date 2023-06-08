@@ -300,3 +300,7 @@ https://zhuanlan.zhihu.com/p/630611485
 https://zhuanlan.zhihu.com/p/630932117
 
 更爱美人 绍伊古女婿与俄罗斯成人女星
+
+https://zhuanlan.zhihu.com/p/635196837
+
+错当豹二坦克 俄罗斯军队霸气炸毁乌克兰联合收割机
