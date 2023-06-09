@@ -129,10 +129,6 @@ https://news.ifeng.com/c/8NK6iq9Smvn
 
 前所未有的财政大危机，俄罗斯准备无条件谈判
 
-https://www.zhihu.com/answer/2387251266
-
-如何评价俄罗斯国防部长绍伊古？
-
 https://mil.sina.cn/sd/2018-12-18/detail-ihmutuee0269859.d.html
 
 俄军唯一航母居然被偷了 大量贵金属失窃价值140万
@@ -296,10 +292,6 @@ https://zhuanlan.zhihu.com/p/630222149
 https://zhuanlan.zhihu.com/p/630611485
 
 乌克兰士兵如何解决生理需求
-
-https://zhuanlan.zhihu.com/p/630932117
-
-更爱美人 绍伊古女婿与俄罗斯成人女星
 
 https://zhuanlan.zhihu.com/p/635196837
 
