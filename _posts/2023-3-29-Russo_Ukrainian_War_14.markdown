@@ -123,6 +123,8 @@ https://www.zhihu.com/zvideo/1551802887226732544
 
 ---
 
+![](/images/img5/Kharkov_2.jpg)
+
 这次战役俄军被俘人员很多，以至于乌军出现″用来捆绑的胶带不够、安置俘虏的地点不够″的报怨。而俄军方面，当乌军为快速赶路，没空收容俘虏时，俄军为了避开随后赶到的″老车臣兵″，追着乌军装甲车要求收容。
 
 https://zhuanlan.zhihu.com/p/587023326
@@ -258,6 +260,10 @@ https://zhuanlan.zhihu.com/p/582714899
 https://www.zhihu.com/question/605052835
 
 赫尔松地区卡霍夫卡水电站遭袭，下游水位上涨2.5米，具体情况如何？
+
+https://www.guancha.cn/internation/2023_06_10_696312.shtml
+
+挪威地震台、美国侦察卫星均监测到卡霍夫卡水电站大坝溃坝时曾发生爆炸
 
 ---
 

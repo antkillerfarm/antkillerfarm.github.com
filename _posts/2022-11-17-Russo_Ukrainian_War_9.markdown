@@ -133,6 +133,8 @@ https://zhuanlan.zhihu.com/p/585213985
 
 ---
 
+![](/images/img5/cross_river.jpg)
+
 https://zhuanlan.zhihu.com/p/513101094
 
 俄军的北顿涅茨河浮桥是怎么被打爆的
@@ -194,6 +196,10 @@ https://www.thepaper.cn/newsDetail_forward_18439240
 佩斯科夫是普京铁杆支持者，好哥们。然而从小在法国住大别野的白富美女儿公开在ins支持反战，狠狠打了她父亲一巴掌。
 
 索洛维约夫尽管在节目上鼓吹对线，号召鹅把自己的儿子送去对线，但是他21岁的儿子只凭着一张病情诊断书就可以继续灯红酒绿。
+
+https://zhuanlan.zhihu.com/p/635818283
+
+未在乌克兰作战 俄罗斯军神绍伊古公子是著名流行歌手
 
 ---
 

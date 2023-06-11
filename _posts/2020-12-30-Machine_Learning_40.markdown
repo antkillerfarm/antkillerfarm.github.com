@@ -308,3 +308,7 @@ https://www.zhihu.com/question/603396425
 https://www.sohu.com/a/648356428_121656712
 
 美军从阿富汗逃跑后，到底留下了多少武器装备？
+
+https://zhuanlan.zhihu.com/p/636102801
+
+叙利亚叛军的山寨肯德基餐厅

@@ -9,6 +9,42 @@ category: DL acceleration
 
 # 并行 & 框架 & 优化
 
+https://mp.weixin.qq.com/s/rX8L63-jDGJT6lCAj04I3Q
+
+独家解读！阿里重磅发布机器学习平台PAI 3.0
+
+https://mp.weixin.qq.com/s/Ye2GVTFIrX3SbU1-4cDLoQ
+
+你天天叫的外卖，你知道这里面深度学习的水有多深吗
+
+https://mp.weixin.qq.com/s/FIWfbCLgckVzeNvfThIl4Q
+
+阿里线下智能方案进化史
+
+https://mp.weixin.qq.com/s/pqxiF6yEZzrw8qXu2hEsaA
+
+单机训练速度提升640倍！独家解读快手商业广告模型GPU训练平台Persia
+
+https://mp.weixin.qq.com/s/Jcz4XWDjMmbhmAiI_zBQXQ
+
+流式计算优化：时效性
+
+https://mp.weixin.qq.com/s/iAHvfgn54zIwfM9K8KFJnw
+
+DLM：微信大规模分布式n-gram语言模型系统
+
+https://mp.weixin.qq.com/s/s7sHzzLANOp8-1LxgXQskA
+
+谷歌开发者大会上，蚂蚁金服开源ElasticDL分布式深度学习系统
+
+https://mp.weixin.qq.com/s/IQMXg6nIJO-9-IG3mJpvRg
+
+ElasticDL：同时提升集群利用率和研发效率的分布式深度学习框架
+
+https://mp.weixin.qq.com/s/sn8fMAbJbeT6JUbCpBpN6A
+
+Jeff Dean与David Patterson：不思考体系结构的深度学习研究者不是好工程师
+
 https://mp.weixin.qq.com/s/6zLrWJ4nE0bHFlVe5dMxHw
 
 分布式深度学习新进展：让“分布式”和“深度学习”真正深度融合

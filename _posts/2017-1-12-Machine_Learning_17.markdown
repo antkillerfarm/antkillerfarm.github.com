@@ -270,3 +270,7 @@ https://zhuanlan.zhihu.com/p/444286151
 https://mp.weixin.qq.com/s/Z_OrKMIDGbcvbdqscCKtSA
 
 韩国“梨泰院事件”：“没人必须承担责任，所以无人负责”
+
+https://zhuanlan.zhihu.com/p/636318375
+
+去朝鲜享受八十年代的生活

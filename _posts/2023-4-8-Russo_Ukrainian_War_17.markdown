@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争（十七）——常识简介（2）
+title:  俄乌战争（十七）——常识简介（1）
 category: Russia 
 ---
 
