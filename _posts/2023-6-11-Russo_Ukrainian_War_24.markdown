@@ -296,3 +296,7 @@ https://zhuanlan.zhihu.com/p/630611485
 https://zhuanlan.zhihu.com/p/635196837
 
 错当豹二坦克 俄罗斯军队霸气炸毁乌克兰联合收割机
+
+https://zhuanlan.zhihu.com/p/629358146
+
+俄乌双方阵亡人员的地域分布
