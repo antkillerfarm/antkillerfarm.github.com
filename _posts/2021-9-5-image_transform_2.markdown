@@ -95,16 +95,6 @@ AlphaTensor（自动搜索高性能的矩阵运算逻辑）
 
 ---
 
-LoRA: Low-Rank Adaptation of Large Language Models是微软研究院引入的一项新技术，主要用于处理大模型微调的问题。
-
-lora模型可以简单理解为在基础模型之上的一个补丁模型，用来训练特定风格、特定人物、特定动作等效果。因为基础模型提供了强大的通用能力，但对于指定人物、或者特定的一种风格掌握的并不精，所以需要lora模型来针对性学习下特定领域的效果。
-
-https://huggingface.co/datasets/HuggingFace-CN-community/translation/blob/main/lora_cn.md
-
-使用LoRA进行Stable Diffusion的高效参数微调
-
----
-
 https://civitai.com/
 
 一个AI艺术的网站

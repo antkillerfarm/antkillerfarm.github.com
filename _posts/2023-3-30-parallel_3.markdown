@@ -9,6 +9,26 @@ category: DL acceleration
 
 # 并行 & 框架 & 优化
 
+https://mp.weixin.qq.com/s/8R7YhcZ_Dt0oFIF3bQovxw
+
+为了提升DL模型性能，阿里工程师打造了流式编程框架
+
+https://mp.weixin.qq.com/s/z6gXp-EeDID1ed8_DsUbOg
+
+90秒训练AlexNet！商汤刷新纪录
+
+https://mp.weixin.qq.com/s/HY2yPZ--Zm5_m3B70baWjQ
+
+谷歌开源效率怪兽GPipe，速度提升25倍，CIFAR-10精度达到99%
+
+https://mp.weixin.qq.com/s/HQW2bPyDY_3ecZWP6NYr-w
+
+大规模机器学习在LinkedIn预测模型中的应用实践
+
+https://mp.weixin.qq.com/s/i1PLA1xr3CefKx1EcVUVIg
+
+谷歌破世界纪录！圆周率计算到小数点后31.4万亿位
+
 https://mp.weixin.qq.com/s/rX8L63-jDGJT6lCAj04I3Q
 
 独家解读！阿里重磅发布机器学习平台PAI 3.0

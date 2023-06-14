@@ -59,6 +59,10 @@ https://www.zhihu.com/question/498271491
 
 ## DeepSpeed
 
+https://www.microsoft.com/en-us/research/blog/zero-deepspeed-new-system-optimizations-enable-training-models-with-over-100-billion-parameters
+
+ZeRO & DeepSpeed
+
 https://mp.weixin.qq.com/s/Vb3AkoWHQY7WWBMZaVnf4g
 
 微软发布DeepSpeed开源库，支持1000亿个参数模型的训练
@@ -70,6 +74,20 @@ https://zhuanlan.zhihu.com/p/621379646
 https://zhuanlan.zhihu.com/p/513571706
 
 DeepSpeed之ZeRO系列：将显存优化进行到底
+
+## LoRA
+
+LoRA: Low-Rank Adaptation of Large Language Models是微软研究院引入的一项新技术，主要用于处理大模型微调的问题。
+
+lora模型可以简单理解为在基础模型之上的一个补丁模型，用来训练特定风格、特定人物、特定动作等效果。因为基础模型提供了强大的通用能力，但对于指定人物、或者特定的一种风格掌握的并不精，所以需要lora模型来针对性学习下特定领域的效果。
+
+https://huggingface.co/datasets/HuggingFace-CN-community/translation/blob/main/lora_cn.md
+
+使用LoRA进行Stable Diffusion的高效参数微调
+
+https://zhuanlan.zhihu.com/p/631411685
+
+微软LoRA：使用万分之一的参数微调你的GPT3模型
 
 ## FSDP
 
@@ -304,23 +322,3 @@ https://mp.weixin.qq.com/s/6h9MeBs89hTtWsYSZ4pZ5g
 https://mp.weixin.qq.com/s/xV5cLbCPb7Nh6i4i7DxJIQ
 
 没人告诉你的大规模部署AI高效流程！
-
-https://mp.weixin.qq.com/s/8R7YhcZ_Dt0oFIF3bQovxw
-
-为了提升DL模型性能，阿里工程师打造了流式编程框架
-
-https://mp.weixin.qq.com/s/z6gXp-EeDID1ed8_DsUbOg
-
-90秒训练AlexNet！商汤刷新纪录
-
-https://mp.weixin.qq.com/s/HY2yPZ--Zm5_m3B70baWjQ
-
-谷歌开源效率怪兽GPipe，速度提升25倍，CIFAR-10精度达到99%
-
-https://mp.weixin.qq.com/s/HQW2bPyDY_3ecZWP6NYr-w
-
-大规模机器学习在LinkedIn预测模型中的应用实践
-
-https://mp.weixin.qq.com/s/i1PLA1xr3CefKx1EcVUVIg
-
-谷歌破世界纪录！圆周率计算到小数点后31.4万亿位
