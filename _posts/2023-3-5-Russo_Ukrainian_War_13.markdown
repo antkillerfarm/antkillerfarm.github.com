@@ -177,6 +177,10 @@ https://www.163.com/dy/article/HLIHQCMG05534NGK.html
 
 英勇女护士一席话怒骂俄军，惨遭公开处决并挂尸
 
+https://www.163.com/dy/article/HJSQ9R6Q0529RP1L.html
+
+拒绝与俄军合作！乌克兰赫尔松戏剧院首席指挥克尔帕滕科被枪杀
+
 ---
 
 ![](/images/img5/Slava_Ukraini.jpg)

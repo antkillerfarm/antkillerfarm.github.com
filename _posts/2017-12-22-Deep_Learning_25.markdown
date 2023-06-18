@@ -181,244 +181,126 @@ https://mp.weixin.qq.com/s/dcv2pqccrAtg2nNaHTTU2Q
 
 一文"看透"多任务学习
 
-# Attention进阶+
+# CPU+
 
-https://mp.weixin.qq.com/s/wrmjMLPuvpLIcF5VQBqZxg
+https://mp.weixin.qq.com/s/JLg6sEwCxTMpo2nyCt50qg
 
-最新“注意力机制Attention”大综述论文，66页pdf
+指令集——CPU芯片江湖中的门派标志
 
-https://mp.weixin.qq.com/s/rrbwItXt-1EaGiqtDEGvog
+https://mp.weixin.qq.com/s/7gXK6Qv9gLMkYtXw9oz9Sg
 
-为节约而生：从标准Attention到稀疏Attention
+一文看懂指令集是什么
 
-https://mp.weixin.qq.com/s/MzHmvbwxFCaFjmMkjfjeSg
+https://mp.weixin.qq.com/s/p7FKgx-sFGDJF0y4IGWvyg
 
-遍地开花的Attention，你真的懂吗？
+CPU指令集架构科普
 
-https://mp.weixin.qq.com/s/e_LEhLf2Rh-1zkEBmqS4nA
+https://mp.weixin.qq.com/s/5uie8Ci5dK_wy54Z70Gklg
 
-NLP这两年：15个预训练模型对比分析与剖析
+RISC-V精简到何种程度？能省的都省了！
 
-https://mp.weixin.qq.com/s/LAInpFPa-3R1rfv6idILnw
+https://mp.weixin.qq.com/s/JNCC3C3Sq0Hzk_5VBcivng
 
-注意力机制发展如何了，如何学习它在各类任务中的应用？
+RISC-V有何特别之处？
 
-https://zhuanlan.zhihu.com/p/40920384
+https://mp.weixin.qq.com/s/26se041cc9aBRw16kvPPjA
 
-真正的完全图解Seq2Seq Attention模型
+芯片制造新模式--像搭积木一样造芯片
 
-https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ
+https://mp.weixin.qq.com/s/lz6EoLiLtPtWFMG1FJCuQw
 
-深度学习注意力机制-Attention in Deep learning-附101页PPT
+化合物半导体的机遇
 
-https://mp.weixin.qq.com/s/FlA1YrR0sLQGJoJZnSXpRw
+https://mp.weixin.qq.com/s/tTtySk3u6m2BGUkDto5Ojw
 
-DeepMind：深度学习注意力与记忆机制，附70页ppt
+可重构芯片的方法学原理
 
-https://mp.weixin.qq.com/s/_mBa-GTdILrvluJtegz8fw
+https://mp.weixin.qq.com/s/RkRZX_scr__Q_mLPhaaWAA
 
-南洋理工大学：注意力神经网络，Attention Neural Networks，78页ppt
+AMD Zen 2处理器架构为何要如此设计？
 
-https://mp.weixin.qq.com/s/pKxqPB9qIGmE_PslPa6EyA
+https://mp.weixin.qq.com/s/dRv4xWV8laCYBaZ0DwOC3A
 
-长文详解Attention的前世今生
+如何从零开始设计一颗芯片？
 
-https://mp.weixin.qq.com/s/2kFZAmb_WnTNYUXT_jVMqg
+https://mp.weixin.qq.com/s/eAzdtKvfw7EVz5Ax3nXeZg
 
-Attention注意力机制的前世今生
+自己动手设计专用处理器
 
-https://mp.weixin.qq.com/s/eq1iTyKguQm5t6Xoc7KUgw
+https://mp.weixin.qq.com/s/NfNJVoAC5aW1sgToAmYsGw
 
-一文搞懂NLP中的Attention机制
+3nm芯片终结者
 
-https://zhuanlan.zhihu.com/p/106662375
+https://mp.weixin.qq.com/s/o8C6n-ZRw3vFS8E-hikXJQ
 
-More About Attention
+移动的王者：深入分析ARM最强处理器Cortex A77
 
-https://mp.weixin.qq.com/s/MFxQSUMFNRXjdLQwzveO4w
+https://www.cnblogs.com/f-ck-need-u/p/11141636.html
 
-深度学习中的注意力机制
+关于CPU的一些基本知识总结
 
-https://mp.weixin.qq.com/s/vkyPwsaxH-SvHqQx09VhVw
+https://mp.weixin.qq.com/s/vTOGmcahRxQBH8RgkTJ2GA
 
-深度学习中的注意力机制（二）
+中文系同学都能听懂的集成电路设计流程
 
-https://mp.weixin.qq.com/s/fbAAA7fO2voP_v-NsavQew
+https://mp.weixin.qq.com/s/O-2ecxYVOgEfRuwEoS7gRA
 
-深度学习中的注意力机制（三）
+Fab的那些事儿
 
-https://mp.weixin.qq.com/s/CftkSOmAx0UTtCixdxj6_A
+>Fab的全称叫Fabrication，也就是集成电路制造的工厂、车间。
 
-深度学习中的注意力机制（完结篇）
+https://mp.weixin.qq.com/s/_NcQ-PxNpEtpYdo450Uukg
 
-https://mp.weixin.qq.com/s/Qs6tm50YvzHaJv2rh60WMw
+半导体材料全球格局
 
-撩一发深度文本分类之RNN via Attention
+https://mp.weixin.qq.com/s/QwE_VTEUS9kGDDrHlzPYmg
 
-https://mp.weixin.qq.com/s/MMIZGHTKM5FrvNE6ucQRYQ
+硅片为什么不是方的？
 
-33页最新《自然语言处理中神经注意力机制综述》论文
+https://zhuanlan.zhihu.com/p/32378843
 
-https://mp.weixin.qq.com/s/Q0Ft5bWTuiZUIQSTk7X6ZQ
+ARM攒机指南-汽车篇
 
-图解神经机器翻译中的注意力机制
+https://mp.weixin.qq.com/s/Hq9hzkyfGcCQa_FfzSDoRg
 
-https://mp.weixin.qq.com/s/D7GQ8DRzss9ppP6pyAs1qA
+5nm工艺节点以后，半导体器件的发展方向
 
-从0到1再读注意力机制
+https://zhuanlan.zhihu.com/p/66263349
 
-https://mp.weixin.qq.com/s/K_VRt0B9-Xw7YJndmb4WZg
+为什么内存和闪存制程比CPU低？它们现在都在什么节点？
 
-Attention！注意力机制模型最新综述
+https://zhuanlan.zhihu.com/p/114448236
 
-https://mp.weixin.qq.com/s/hzwp5oGspdtDyNBmq8sMsw
+什么是Win10的“现代待机”？为什么它未来会越来越重要？这篇文章部分解释了我的第一个平板为什么那么耗电。
 
-HAN：基于双层注意力机制的异质图深度神经网络
+https://mp.weixin.qq.com/s/J7RlmvU7JY1J8rV-eqjQ2A
 
-https://mp.weixin.qq.com/s/SBrLPZjx2RdBwZpPQQ5DXQ
+浅谈多核心CPU和SoC芯片及其工作原理
 
-HAN：异构图注意力网络
+https://mp.weixin.qq.com/s/Lnrlv7JcrOSwbnDweYf1Yg
 
-https://mp.weixin.qq.com/s/0EDN-ILeL_diZ1G11ikwjw
+片上系统设计案例分析-Xbox主机
 
-T5模型：NLP Text-to-Text预训练模型超大规模探索
+https://zhuanlan.zhihu.com/p/86432216
 
-https://zhuanlan.zhihu.com/p/89719631
+Microcode是什么？它为什么能修正CPU硬件错误？
 
-T5: Text-to-Text Transfer Transformer阅读笔记
+https://zhuanlan.zhihu.com/p/152167194
 
-https://mp.weixin.qq.com/s/X1mLXPzJU7k_ANMzvVPxjA
+两大FPGA公司的“AI技术路线”
 
-BERT、RoBERTa、DistilBERT与XLNet，我们到底该如何选择？
+https://www.zhihu.com/question/503287789
 
-https://mp.weixin.qq.com/s/GGRORF5EfJ5xzMLwAsJt5w
+当两个CPU核心要求读写同一内存地址时，其后果是未定义行为吗？
 
-从词袋到Transfomer，NLP十年突破史
+https://mp.weixin.qq.com/s/Kake5sQm79L2j_uDqKfznQ
 
-https://zhuanlan.zhihu.com/p/125145283
+在《我的世界》里从零打造一台计算机有多难？复旦本科生大神花费了一年心血
 
-Rethink深度学习中的Attention机制
+https://www.zhihu.com/question/562917157
 
-https://mp.weixin.qq.com/s/fxEg8UOa3MeJ6qx5SjEHog
+为什么intel的7nm工艺的处理器没有像amd的那样积热那么严重?
 
-NLP领域中各式各样Attention知识系统性的梳理和总结
+https://www.zhihu.com/question/552957041
 
-https://mp.weixin.qq.com/s/_5YaZdYa8bTFiAzHyrMFBg
-
-理解卷积神经网络中的自注意力机制
-
-https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
-
-阿里北大提出新attention建模框架，一个模型预测多种行为
-
-https://mp.weixin.qq.com/s/Yq3S4WrsQRQC06GvRgGjTQ
-
-打入神经网络思维内部
-
-https://mp.weixin.qq.com/s/MJ1578NdTKbjU-j3Uuo9Ww
-
-基于文档级问答任务的新注意力模型
-
-https://mp.weixin.qq.com/s/_3pA8FZwzegSpyz_cK63BQ
-
-Self-Attention GAN中的self-attention机制
-
-https://mp.weixin.qq.com/s/h7sLwVXb_UI8jvJU-oe3Cg
-
-Google AI提出“透明注意力”机制，实现更深层NMT模型
-
-https://mp.weixin.qq.com/s/1LYz5SH5rVnPPJ0tZvRQAA
-
-从各种注意力机制窥探深度学习在NLP中的神威
-
-https://zhuanlan.zhihu.com/p/33078323
-
-数字串识别：基于位置的硬性注意力机制
-
-https://mp.weixin.qq.com/s/-gAISWjSiG6ccPuOPAEg3A
-
-五张动图，看清神经机器翻译里的Attention！
-
-https://mp.weixin.qq.com/s/aixpv9t1PLPRWUP6PvZ0EQ
-
-用自注意力增强卷积：这是新老两代神经网络的对话
-
-https://mp.weixin.qq.com/s/i3Xd_IB7R0-QPztn-pgpng
-
-遍地开花的Attention，你真的懂吗？
-
-https://zhuanlan.zhihu.com/p/151640509
-
-注意力机制在推荐系统中的应用
-
-https://mp.weixin.qq.com/s/-SU5cNbklI31WLmTawZJIQ
-
-自注意模型学不好？这个方法帮你解决！
-
-https://mp.weixin.qq.com/s/K5EbO0djcXHN4K5LQiMh5g
-
-Triplet Attention机制让Channel和Spatial交互更加丰富
-
-https://mp.weixin.qq.com/s/C4f0N_bVWU9YPY34t-HAEA
-
-UNC&Adobe提出模块化注意力模型MAttNet，解决指示表达的理解问题
-
-https://mp.weixin.qq.com/s/V3brXuey7Gear0f_KAdq2A
-
-基于注意力机制的交易上下文感知推荐，悉尼科技大学和电子科技大学最新工作
-
-https://mp.weixin.qq.com/s/2gxp7A38epQWoy7wK8Nl6A
-
-谷歌翻译最新突破，“关注机制”让机器读懂词与词的联系
-
-https://zhuanlan.zhihu.com/p/25928551
-
-用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践
-
-https://mp.weixin.qq.com/s/l4HN0_VzaiO-DwtNp9cLVA
-
-循环注意力区域实现图像多标签分类
-
-https://mp.weixin.qq.com/s/zhZLK4pgJzQXN49YkYnSjA
-
-自适应注意力机制在Image Caption中的应用
-
-https://mp.weixin.qq.com/s/uvr-G5-_lKpyfyn5g7ES0w
-
-基于注意力机制，机器之心带你理解与训练神经机器翻译系统
-
-https://mp.weixin.qq.com/s/ANpBFnsLXTIiW6WHzGrv2g
-
-自注意力机制学习句子embedding
-
-https://mp.weixin.qq.com/s/49fQX8yiOIwDyof3PD01rA
-
-CMU&谷歌大脑提出新型问答模型QANet：仅使用卷积和自注意力，性能大大优于RNN
-
-https://mp.weixin.qq.com/s/c64XucML13OwI26_UE9xDQ
-
-滴滴披露语音识别新进展：基于Attention显著提升中文识别率
-
-https://mp.weixin.qq.com/s/7OYY3L7gL4wVv_EjoosOHA
-
-如何增强Attention Model的推理能力
-
-https://mp.weixin.qq.com/s/9Kt6_DfeYRnhsb10aCSFGw
-
-FAGAN：完全注意力机制（Full Attention）GAN，Self-attention+GAN
-
-https://mp.weixin.qq.com/s/lZOIK5BRXZrmL_Z9crl6sA
-
-机器翻译新突破！“普适注意力”模型：概念简单参数少，性能大增
-
-https://mp.weixin.qq.com/s/jRfOzKO6OlQLokIzipbqUQ
-
-为什么使用自注意力机制？
-
-https://zhuanlan.zhihu.com/p/339123850
-
-关于attention机制的一些细节的思考
-
-https://mp.weixin.qq.com/s/n4mzHSweOT-vDWBGs0XFbw
-
-卷积神经网络中的自我注意
+书上说代码地址总是从0x400000开始，但是查看编译好的elf头起始地址是从0开始的，这是为什么？

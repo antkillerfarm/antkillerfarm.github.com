@@ -83,6 +83,10 @@ https://zhuanlan.zhihu.com/p/597586623
 
 通向AGI之路：大型语言模型（LLM）技术精要
 
+https://mp.weixin.qq.com/s/eV_9Mi2879w_gfoyiSm8Ug
+
+LLM全景图（The Landscape of LLM）
+
 ## GPT-4
 
 2023.3.15 OpenAI推出GPT-4。
@@ -252,55 +256,3 @@ https://www.zhihu.com/question/298203515
 https://mp.weixin.qq.com/s/Fao3i99kZ1a6aa3UhAYKhA
 
 全面超越人类！Google称霸SQuAD，BERT横扫11大NLP测试
-
-https://mp.weixin.qq.com/s/INDOBcpg5p7vtPBChAIjAA
-
-最强预训练模型BERT的Pytorch实现
-
-https://mp.weixin.qq.com/s/SZMYj4rMneR3OWST007H-Q
-
-解读谷歌最强NLP模型BERT：模型、数据和训练
-
-https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
-
-详细解读谷歌新模型BERT为什么嗨翻AI圈
-
-https://zhuanlan.zhihu.com/p/66053631
-
-BERT
-
-https://mp.weixin.qq.com/s/WEbJnO04DOrsxUbzpgL66g
-
-BERT源码分析（PART I）
-
-https://mp.weixin.qq.com/s/iXjE7KoyvFQ8uekLKRK4jw
-
-BERT源码分析（PART II）
-
-https://mp.weixin.qq.com/s/DxBC_x5ZWC6SECfnwDGnVg
-
-BERT源码分析（PART III）
-
-https://mp.weixin.qq.com/s/kI_k_plZbRzmdeXxt2_2WA
-
-从Transformer到BERT模型
-
-https://mp.weixin.qq.com/s/Bnk0nIjBdb58WVJEY8MqnA
-
-NLP中各种各样的编码器
-
-https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
-
-预训练BERT，官方代码发布前他们是这样用TensorFlow解决的
-
-https://mp.weixin.qq.com/s/HOD1Hb70NhTXXCXlopzfng
-
-BERT推理加速实践
-
-https://mp.weixin.qq.com/s/0luHJsw7WWJskJWGThR5qg
-
-使用BERT做文本摘要
-
-https://mp.weixin.qq.com/s/IY8J09LvDAr8owYffKi5Dw
-
-五问BERT：深入理解NLP领域爆红的预训练模型

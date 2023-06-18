@@ -33,13 +33,17 @@ https://mp.weixin.qq.com/s/NPMCtGGM5iN9ZCznnt-OIw
 
 ---
 
-海光买了AMD zen-（浮点单元阉割一半）的IP，但是买不到zen2和之后的新核心，因为AMD不卖。
+多年前，ARM Cortex A57大致与X86阵营吊车尾的VIA nano性能相当，短短数年间，ARM公版架构就接近到X86主流水平。而同期飞腾的Arm CPU的CPU核则进步缓慢，从2014年至2021年，其CPU IPC仅提升了20%左右，即便是以牙膏厂闻名遐迩的英特尔也只能自叹不如。
 
-飞腾找台湾世芯代理设计，但因飞腾参与超算建设上了美国黑名单，台湾世芯宁可承受损失也不再继续提供设计服务。
+倚天710证明了ARM芯片从设计到制造的全球产业链在流程上已经非常成熟，证明了在全球分工的情况下，只要有钱就能设计出高性能ARM CPU。
 
-飞腾的通用CPU单核性能变化像是过山车，因为它的FT-1000和FT-1500是基于SUN开源的UltraSPARC T2核心，2007年时的UltraSPARC T2可与Intel至强一较高下。飞腾在投靠ARM之后，CPU性能反而降低了。
+龙芯首席科学家胡伟武在公开讲座上就表示：“你给我一笔钱，叫我做一个芯片，我可以不用一个技术人员，只要行政助理，然后购买arm imagination的ip，委托第三方设计，然后给代工厂生产做出来......但你要我做一个A76级别的IP，（从零开始迭代演进）我可能要10年才能做出来”。
 
-飞腾多核互联和多路互联的技术较强，只是在ARM推出原生的互联方案之后，飞腾的研究成果也成了鸡肋。
+国内这些ARM CPU如果不能实现自产自销，就只能宣传自主可控，卯足了劲往党政国企采购冲，一旦失去地方政府的支持，就只能关门倒闭，比如华芯通。
+
+https://mp.weixin.qq.com/s/KdJ0b-E0ckK6WMG5HDcEUw
+
+互联网巨头基于全球产业链打造ARM CPU
 
 ---
 
@@ -272,27 +276,3 @@ CPU是怎么调节输入电压的？为什么要这么做？
 https://mp.weixin.qq.com/s/LreWWlXAQL-dqQBCk93soQ
 
 解读两大精简指令集：RISC-V和MIPS
-
-https://mp.weixin.qq.com/s/JLg6sEwCxTMpo2nyCt50qg
-
-指令集——CPU芯片江湖中的门派标志
-
-https://mp.weixin.qq.com/s/7gXK6Qv9gLMkYtXw9oz9Sg
-
-一文看懂指令集是什么
-
-https://mp.weixin.qq.com/s/p7FKgx-sFGDJF0y4IGWvyg
-
-CPU指令集架构科普
-
-https://mp.weixin.qq.com/s/5uie8Ci5dK_wy54Z70Gklg
-
-RISC-V精简到何种程度？能省的都省了！
-
-https://mp.weixin.qq.com/s/JNCC3C3Sq0Hzk_5VBcivng
-
-RISC-V有何特别之处？
-
-https://mp.weixin.qq.com/s/26se041cc9aBRw16kvPPjA
-
-芯片制造新模式--像搭积木一样造芯片

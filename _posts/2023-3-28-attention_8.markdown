@@ -7,7 +7,59 @@ category: Attention
 * toc
 {:toc}
 
-# BERT进阶
+# BERT进阶（续）
+
+https://mp.weixin.qq.com/s/INDOBcpg5p7vtPBChAIjAA
+
+最强预训练模型BERT的Pytorch实现
+
+https://mp.weixin.qq.com/s/SZMYj4rMneR3OWST007H-Q
+
+解读谷歌最强NLP模型BERT：模型、数据和训练
+
+https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
+
+详细解读谷歌新模型BERT为什么嗨翻AI圈
+
+https://zhuanlan.zhihu.com/p/66053631
+
+BERT
+
+https://mp.weixin.qq.com/s/WEbJnO04DOrsxUbzpgL66g
+
+BERT源码分析（PART I）
+
+https://mp.weixin.qq.com/s/iXjE7KoyvFQ8uekLKRK4jw
+
+BERT源码分析（PART II）
+
+https://mp.weixin.qq.com/s/DxBC_x5ZWC6SECfnwDGnVg
+
+BERT源码分析（PART III）
+
+https://mp.weixin.qq.com/s/kI_k_plZbRzmdeXxt2_2WA
+
+从Transformer到BERT模型
+
+https://mp.weixin.qq.com/s/Bnk0nIjBdb58WVJEY8MqnA
+
+NLP中各种各样的编码器
+
+https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
+
+预训练BERT，官方代码发布前他们是这样用TensorFlow解决的
+
+https://mp.weixin.qq.com/s/HOD1Hb70NhTXXCXlopzfng
+
+BERT推理加速实践
+
+https://mp.weixin.qq.com/s/0luHJsw7WWJskJWGThR5qg
+
+使用BERT做文本摘要
+
+https://mp.weixin.qq.com/s/IY8J09LvDAr8owYffKi5Dw
+
+五问BERT：深入理解NLP领域爆红的预训练模型
 
 https://zhuanlan.zhihu.com/p/106901954
 
@@ -360,47 +412,3 @@ BERT相关模型汇总梳理
 https://zhuanlan.zhihu.com/p/348373259
 
 史上最细节的自然语言处理NLP/Transformer/BERT/Attention面试问题与答案
-
-https://mp.weixin.qq.com/s/vFdm-UHns7Nhbmdoiu6jWg
-
-谷歌终于开源BERT代码：3亿参数量，机器之心全面解读
-
-https://zhuanlan.zhihu.com/p/58425003
-
-从Word2Vec到Bert，聊聊词向量的前世今生（一）
-
-https://mp.weixin.qq.com/s/SfMIKfF_B4agFCHN_U_mzQ
-
-BAM！利用知识蒸馏和多任务学习构建的通用语言模型
-
-https://mp.weixin.qq.com/s/6G5Mu7-1omGtQ_9Gt9lUBw
-
-基于预训练自然语言生成的文本摘要方法
-
-https://mp.weixin.qq.com/s/yysnPauB22YgprpOi1ZWSQ
-
-深入理解BERT Transformer，不仅仅是注意力机制
-
-https://mp.weixin.qq.com/s/kFABJJ3fBC48-4DXK8PERQ
-
-10大任务超越BERT，微软提出多任务深度神经网络MT-DNN
-
-https://mp.weixin.qq.com/s/jlGfxkT_o9sgFlUuR_x5Tw
-
-微软开源用于学习通用语言嵌入的MT-DNN模型
-
-https://mp.weixin.qq.com/s/D68YzjYvpc2epGWFBP6rIQ
-
-谷歌实习生新算法提速惊人！BERT训练从三天三夜，缩短到一个小时
-
-https://mp.weixin.qq.com/s/iDGofh_ycWJzfqQriPEXGQ
-
-如何用Python和BERT做中文文本二元分类？
-
-https://zhuanlan.zhihu.com/p/91052495
-
-当BERT遇上知识图谱
-
-https://mp.weixin.qq.com/s/wQW-JT-sGMj60OtXwTssyQ
-
-BERT模型推理加速总结
