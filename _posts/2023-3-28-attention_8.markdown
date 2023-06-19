@@ -9,6 +9,56 @@ category: Attention
 
 # BERT进阶（续）
 
+## UniLM
+
+![](/images/img5/UniLM.jpg)
+
+|  | Encoder注意力 | Decoder注意力 | 是否共享参数 |
+|:--:|:--:|:--:|:--:|
+| GPT | 单向 | 单向 | 是 |
+| UniLM | 双向 | 单向 | 是 |
+| T5 | 双向 | 单向 | 否 |
+
+https://mp.weixin.qq.com/s/m_FU4NmjUsvxusRidDb-Xg
+
+UniLM:一种既能阅读又能自动生成的预训练模型
+
+https://mp.weixin.qq.com/s/yyUPqxpfBwUSRbwM6SSAcQ
+
+UniLM论文阅读笔记
+
+https://mp.weixin.qq.com/s/RjeuHXa8O3MzSpTOuOHMkQ
+
+站在BERT肩膀上的NLP新秀们：XLMs、MASS和UNILM
+
+https://mp.weixin.qq.com/s/UEBKSKEkZTbpR49_Rh50Jg
+
+微软统一预训练语言模型UniLM 2.0解读
+
+## Electra
+
+https://mp.weixin.qq.com/s/dFT7KKMH56unkOEA9H4Kuw
+
+吊打BERT Large的小型预训练模型ELECTRA终于开源！真相却让人...
+
+https://mp.weixin.qq.com/s/6i9eQISKsWU0jawKzWg8nQ
+
+超越bert，最新预训练模型ELECTRA论文阅读笔记
+
+https://mp.weixin.qq.com/s/lkB1xn6G2P5Nivj7DcYg5w
+
+Electra: 判别还是生成，这是一个选择
+
+## 参考
+
+https://www.zhihu.com/question/298203515
+
+如何评价BERT模型？
+
+https://mp.weixin.qq.com/s/Fao3i99kZ1a6aa3UhAYKhA
+
+全面超越人类！Google称霸SQuAD，BERT横扫11大NLP测试
+
 https://mp.weixin.qq.com/s/INDOBcpg5p7vtPBChAIjAA
 
 最强预训练模型BERT的Pytorch实现
@@ -344,71 +394,3 @@ FastBERT：放飞BERT的推理速度
 https://zhuanlan.zhihu.com/p/132361501
 
 BERT是如何分词的
-
-https://mp.weixin.qq.com/s/Tld9V1jdmWs06zNxiJNkZg
-
-BART&MASS自然语言生成任务上的进步
-
-https://mp.weixin.qq.com/s/G995ulqe6Ifxml_AJqapAw
-
-BERT在小米NLP业务中的实战探索
-
-https://www.cnblogs.com/gczr/p/12874409.html
-
-Sentence-BERT: 一种能快速计算句子相似度的孪生网络
-
-https://mp.weixin.qq.com/s/0hUNG6tC-hlfyTJtuzwU5w
-
-NLP中的Mask全解
-
-https://mp.weixin.qq.com/s/cyNcVNImoCOmTrsS0QVq4w
-
-用Siamese和Dual BERT来做多源文本分类
-
-https://mp.weixin.qq.com/s/uv74FKtUNtgjIBQZbsX7Qw
-
-你finetune BERT的姿势可能不对哦？
-
-https://mp.weixin.qq.com/s/BvM5zx-3XrsZj8BQ5WEa4A
-
-一文带你了解MultiBERT
-
-https://mp.weixin.qq.com/s/mFRhp9pJRa9yHwqc98FMbg
-
-BERT在美团搜索核心排序的探索和实践
-
-https://mp.weixin.qq.com/s/MPGF3tkNn3PBA_7S-fo9eg
-
-谷歌新模型突破BERT局限：NLP版“芝麻街”新成员Big Bird长这样
-
-https://zhuanlan.zhihu.com/p/165893466
-
-BERT及其变种
-
-https://mp.weixin.qq.com/s/5HZULHPI3-HJypvAMXEOcQ
-
-MT-BERT在文本检索任务中的实践
-
-https://mp.weixin.qq.com/s/0aZdGzcGW5ZA020rhX0qSQ
-
-BERT4Rec:使用Bert进行序列推荐
-
-https://mp.weixin.qq.com/s/fr-THgOeaTspKsv_hXnU2Q
-
-CogLTX：将BERT应用于长文本
-
-https://www.cnblogs.com/zhouxiaosong/p/11397655.html
-
-使用BERT模型生成token级向量
-
-https://mp.weixin.qq.com/s/JLP4-5IR6HPK4SRQoC9FAQ
-
-BERT预训练实操总结
-
-https://mp.weixin.qq.com/s/FuO8zY3XoIF-s6_8aXAusw
-
-BERT相关模型汇总梳理
-
-https://zhuanlan.zhihu.com/p/348373259
-
-史上最细节的自然语言处理NLP/Transformer/BERT/Attention面试问题与答案

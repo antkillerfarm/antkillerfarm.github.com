@@ -9,6 +9,74 @@ category: Attention
 
 # BERT进阶（续）
 
+https://mp.weixin.qq.com/s/Tld9V1jdmWs06zNxiJNkZg
+
+BART&MASS自然语言生成任务上的进步
+
+https://mp.weixin.qq.com/s/G995ulqe6Ifxml_AJqapAw
+
+BERT在小米NLP业务中的实战探索
+
+https://www.cnblogs.com/gczr/p/12874409.html
+
+Sentence-BERT: 一种能快速计算句子相似度的孪生网络
+
+https://mp.weixin.qq.com/s/0hUNG6tC-hlfyTJtuzwU5w
+
+NLP中的Mask全解
+
+https://mp.weixin.qq.com/s/cyNcVNImoCOmTrsS0QVq4w
+
+用Siamese和Dual BERT来做多源文本分类
+
+https://mp.weixin.qq.com/s/uv74FKtUNtgjIBQZbsX7Qw
+
+你finetune BERT的姿势可能不对哦？
+
+https://mp.weixin.qq.com/s/BvM5zx-3XrsZj8BQ5WEa4A
+
+一文带你了解MultiBERT
+
+https://mp.weixin.qq.com/s/mFRhp9pJRa9yHwqc98FMbg
+
+BERT在美团搜索核心排序的探索和实践
+
+https://mp.weixin.qq.com/s/MPGF3tkNn3PBA_7S-fo9eg
+
+谷歌新模型突破BERT局限：NLP版“芝麻街”新成员Big Bird长这样
+
+https://zhuanlan.zhihu.com/p/165893466
+
+BERT及其变种
+
+https://mp.weixin.qq.com/s/5HZULHPI3-HJypvAMXEOcQ
+
+MT-BERT在文本检索任务中的实践
+
+https://mp.weixin.qq.com/s/0aZdGzcGW5ZA020rhX0qSQ
+
+BERT4Rec:使用Bert进行序列推荐
+
+https://mp.weixin.qq.com/s/fr-THgOeaTspKsv_hXnU2Q
+
+CogLTX：将BERT应用于长文本
+
+https://www.cnblogs.com/zhouxiaosong/p/11397655.html
+
+使用BERT模型生成token级向量
+
+https://mp.weixin.qq.com/s/JLP4-5IR6HPK4SRQoC9FAQ
+
+BERT预训练实操总结
+
+https://mp.weixin.qq.com/s/FuO8zY3XoIF-s6_8aXAusw
+
+BERT相关模型汇总梳理
+
+https://zhuanlan.zhihu.com/p/348373259
+
+史上最细节的自然语言处理NLP/Transformer/BERT/Attention面试问题与答案
+
 https://mp.weixin.qq.com/s/vFdm-UHns7Nhbmdoiu6jWg
 
 谷歌终于开源BERT代码：3亿参数量，机器之心全面解读

@@ -9,6 +9,48 @@ category: Attention
 
 # Attention in CV & RS（续）
 
+## 参考
+
+https://mp.weixin.qq.com/s/PD2YnFb6yleDEMhz3ahFSQ
+
+计算机视觉"新"范式: Transformer
+
+https://mp.weixin.qq.com/s/wAy3VsOIHxR948eOuXghmA
+
+使用Transformers创建计算机视觉模型
+
+https://zhuanlan.zhihu.com/p/288758894
+
+CV注意力机制论文阅读笔记
+
+https://mp.weixin.qq.com/s/bMOLo9FXpPsOrD9j4CNHYg
+
+清华&南开最新“视觉注意力机制Attention”综述论文，带你全面了解六大类注意力机制方法
+
+https://mp.weixin.qq.com/s/VBWak2bREDHidZe1EExKLA
+
+中科院计算所最新“视觉Transformer”综述论文，带你全面了解最新CV分类、检测/分割方法
+
+https://mp.weixin.qq.com/s/M3VRlz8-McbTbp9VcctU0w
+
+如何让BERT拥有视觉感知能力？两种方式将视频信息注入BERT
+
+https://mp.weixin.qq.com/s/-eBL9gFbAGFtmqkLMAoUTw
+
+文本+视觉，多篇Visual/Video BERT论文介绍
+
+http://mp.weixin.qq.com/s/Bt6EMD4opHCnRoHKYitsUA
+
+结合人类视觉注意力进行图像分类
+
+https://mp.weixin.qq.com/s/POYTh4Jf7HttxoLhrHZQhw
+
+基于双向注意力机制视觉问答pyTorch实现
+
+http://blog.csdn.net/leo_xu06/article/details/53491400
+
+视觉注意力的循环神经网络模型
+
 https://mp.weixin.qq.com/s/JoTzaInn_uAA9oZgMcfskw
 
 计算机视觉技术self-attention最新进展
@@ -302,13 +344,3 @@ GPT-3+RL全流程训练开源整理
 ChatGPT的出现打了两种人的脸：一种是对强人工智能保持悲观态度，认为强人工智能很长时间内都不可能出现的；一种是对超大模型持怀疑态度，认为通过超大模型来实现人工智能是错误道路的。
 
 在2022年11月30日之前，市面上有大大小小的互联网或IT企业需要进行文本处理，相应地，也就需要雇佣大量的NLP工程师们来解决相关的问题。
-
-绝大多数的NLP工程师们所做的工程项目，主要是针对某些特定任务提出一个具体的模型，进行有针对性的数据标注，然后再制作模型。简而言之，就是以NLP子任务独立进行研究开发。比如分词、实体识别、文本分类、相似度判别、机器翻译、文摘系统、事件抽取，等等，不一而足。
-
-也就是说，NLP产业界实际上处于一种手工业模式，你干你的，我干我的，针对不同的企业、不同的需求，需要不断地定制模型、定制数据来完成工作。
-
-NLP中，还有一部分内容：知识图谱。知识图谱这个概念专门用来记录现实世界中的客观存在的事务的关联关系，对于 NLP任务也极为重要。更准确地讲，应当叫做领域知识图谱，几乎没有哪个机构可以做出一个通泛的图谱来供应用。
-
-但知识谱图属于有多少人工，就有多少智能的最典型代表。知识图谱做一万年做不到GPT3的水平，就像蒸汽机做的再好也驱动不了登月火箭。
-
-ChatGPT已经完全抹去了传统NLP业态中，需要分不同子任务、分不同领域数据场景的手工业模式，而是直接采用大模型，以对话形式，直接形成了大一统，进入了机器时代。类似于传统的手工纺织女工，完全由机器替代了。很多NLP子领域不再具备独立研究价值。

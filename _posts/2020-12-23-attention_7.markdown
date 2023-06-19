@@ -11,6 +11,18 @@ category: Attention
 
 ## 微软小冰（续）
 
+绝大多数的NLP工程师们所做的工程项目，主要是针对某些特定任务提出一个具体的模型，进行有针对性的数据标注，然后再制作模型。简而言之，就是以NLP子任务独立进行研究开发。比如分词、实体识别、文本分类、相似度判别、机器翻译、文摘系统、事件抽取，等等，不一而足。
+
+也就是说，NLP产业界实际上处于一种手工业模式，你干你的，我干我的，针对不同的企业、不同的需求，需要不断地定制模型、定制数据来完成工作。
+
+NLP中，还有一部分内容：知识图谱。知识图谱这个概念专门用来记录现实世界中的客观存在的事务的关联关系，对于 NLP任务也极为重要。更准确地讲，应当叫做领域知识图谱，几乎没有哪个机构可以做出一个通泛的图谱来供应用。
+
+但知识谱图属于有多少人工，就有多少智能的最典型代表。知识图谱做一万年做不到GPT3的水平，就像蒸汽机做的再好也驱动不了登月火箭。
+
+ChatGPT已经完全抹去了传统NLP业态中，需要分不同子任务、分不同领域数据场景的手工业模式，而是直接采用大模型，以对话形式，直接形成了大一统，进入了机器时代。类似于传统的手工纺织女工，完全由机器替代了。很多NLP子领域不再具备独立研究价值。
+
+---
+
 评价NLP模型的效果，应当从两方面入手：
 
 一方面，是评价模型对自然语言本身的拟合，比如，前后语句连贯、通顺、符合正常人类的叙述习惯，能够理解反问、反讽、情绪、基本世界观的构建和逻辑推断。客观讲，ChatGPT已经做到了极致，它的语言表达水平，比很多人的作文能力都强非常多。
@@ -18,6 +30,8 @@ category: Attention
 另一方面，是评价模型对知识、事实类信息的拟合，这块能力ChatGPT还无法很好胜任，比如模型会告诉我3+13=23，汪小菲的姐姐是大S，谷歌的CEO是库克，等等，大家也都明白，大量的博客、文章、段子，讨论过很多了，不再赘述。
 
 目前，这些事实、知识，是由知识图谱来解决的。但以笨拙的实体、关系、属性等为基本概念所作的构建，显然是没有前途的。
+
+---
 
 参考：
 
@@ -206,53 +220,3 @@ https://www.zhihu.com/question/588325646
 https://www.zhihu.com/question/592545459
 
 大模型都是基于Transformer堆叠，采用Encoder或者Decoder堆叠，有什么区别？
-
-## UniLM
-
-![](/images/img5/UniLM.jpg)
-
-|  | Encoder注意力 | Decoder注意力 | 是否共享参数 |
-|:--:|:--:|:--:|:--:|
-| GPT | 单向 | 单向 | 是 |
-| UniLM | 双向 | 单向 | 是 |
-| T5 | 双向 | 单向 | 否 |
-
-https://mp.weixin.qq.com/s/m_FU4NmjUsvxusRidDb-Xg
-
-UniLM:一种既能阅读又能自动生成的预训练模型
-
-https://mp.weixin.qq.com/s/yyUPqxpfBwUSRbwM6SSAcQ
-
-UniLM论文阅读笔记
-
-https://mp.weixin.qq.com/s/RjeuHXa8O3MzSpTOuOHMkQ
-
-站在BERT肩膀上的NLP新秀们：XLMs、MASS和UNILM
-
-https://mp.weixin.qq.com/s/UEBKSKEkZTbpR49_Rh50Jg
-
-微软统一预训练语言模型UniLM 2.0解读
-
-## Electra
-
-https://mp.weixin.qq.com/s/dFT7KKMH56unkOEA9H4Kuw
-
-吊打BERT Large的小型预训练模型ELECTRA终于开源！真相却让人...
-
-https://mp.weixin.qq.com/s/6i9eQISKsWU0jawKzWg8nQ
-
-超越bert，最新预训练模型ELECTRA论文阅读笔记
-
-https://mp.weixin.qq.com/s/lkB1xn6G2P5Nivj7DcYg5w
-
-Electra: 判别还是生成，这是一个选择
-
-## 参考
-
-https://www.zhihu.com/question/298203515
-
-如何评价BERT模型？
-
-https://mp.weixin.qq.com/s/Fao3i99kZ1a6aa3UhAYKhA
-
-全面超越人类！Google称霸SQuAD，BERT横扫11大NLP测试

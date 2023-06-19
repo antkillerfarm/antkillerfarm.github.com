@@ -319,44 +319,40 @@ https://mp.weixin.qq.com/s/z_ILLmNx3cbJI1B-M028vQ
 
 Swin Transformer重磅升级！Swin V2：向更大容量、更高分辨率的更大模型迈进
 
-## 参考
+## DETR
 
-https://mp.weixin.qq.com/s/PD2YnFb6yleDEMhz3ahFSQ
+https://mp.weixin.qq.com/s/b5Ont9vHPeCPnAjuDGv5Bg
 
-计算机视觉"新"范式: Transformer
+Facebook开源新思路！DETR：用Transformers来进行端到端的目标检测
 
-https://mp.weixin.qq.com/s/wAy3VsOIHxR948eOuXghmA
+https://mp.weixin.qq.com/s/eHZGiyeZG36Dg6JV1boEeA
 
-使用Transformers创建计算机视觉模型
+语言模型“不务正业”做起目标检测，性能还比DETR、Faster R-CNN更好
 
-https://zhuanlan.zhihu.com/p/288758894
+## BEVFormer
 
-CV注意力机制论文阅读笔记
+BEV（Bird's-eye-view）
 
-https://mp.weixin.qq.com/s/bMOLo9FXpPsOrD9j4CNHYg
+Deformable Attention
 
-清华&南开最新“视觉注意力机制Attention”综述论文，带你全面了解六大类注意力机制方法
+GridSample
 
-https://mp.weixin.qq.com/s/VBWak2bREDHidZe1EExKLA
+https://zhuanlan.zhihu.com/p/543335939
 
-中科院计算所最新“视觉Transformer”综述论文，带你全面了解最新CV分类、检测/分割方法
+万字长文理解纯视觉感知算法——BEVFormer
 
-https://mp.weixin.qq.com/s/M3VRlz8-McbTbp9VcctU0w
+https://zhuanlan.zhihu.com/p/538490215
 
-如何让BERT拥有视觉感知能力？两种方式将视频信息注入BERT
+一文读懂BEVFormer论文
 
-https://mp.weixin.qq.com/s/-eBL9gFbAGFtmqkLMAoUTw
+https://zhuanlan.zhihu.com/p/629792598
 
-文本+视觉，多篇Visual/Video BERT论文介绍
+一文看懂BEVFormer技术及其背后价值
 
-http://mp.weixin.qq.com/s/Bt6EMD4opHCnRoHKYitsUA
+https://www.zhihu.com/question/521842610
 
-结合人类视觉注意力进行图像分类
+自动驾驶BEV感知有哪些让人眼前一亮的新方法？
 
-https://mp.weixin.qq.com/s/POYTh4Jf7HttxoLhrHZQhw
+https://zhuanlan.zhihu.com/p/509207308
 
-基于双向注意力机制视觉问答pyTorch实现
-
-http://blog.csdn.net/leo_xu06/article/details/53491400
-
-视觉注意力的循环神经网络模型
+特斯拉AI DAY感知详解

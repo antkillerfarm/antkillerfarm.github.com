@@ -251,14 +251,6 @@ https://zhuanlan.zhihu.com/p/143852458
 
 NLP中更好&更快的Transformer
 
-https://mp.weixin.qq.com/s/b5Ont9vHPeCPnAjuDGv5Bg
-
-Facebook开源新思路！DETR：用Transformers来进行端到端的目标检测
-
-https://mp.weixin.qq.com/s/eHZGiyeZG36Dg6JV1boEeA
-
-语言模型“不务正业”做起目标检测，性能还比DETR、Faster R-CNN更好
-
 https://mp.weixin.qq.com/s/JpBds6NQIBZ0S8GsMo4LEA
 
 这六大方法，如何让Transformer轻松应对高难度长文本序列？

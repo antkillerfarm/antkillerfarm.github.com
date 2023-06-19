@@ -111,6 +111,10 @@ https://www.zhihu.com/question/404967476
 
 3.两张数额为零的工资卡。
 
+在位8年时间，下台的时候还是一贫如洗，财产还是只有自己三室一厅的老房子，和一辆破车。
+
+下台的8年，大部分的时间，内贾德是以一名大学老师的身份出现，教书育人，领取微薄的工资。根据伊朗媒体的报道，即便是这个微薄的工资，内贾德也拿出来救济穷苦百姓。
+
 ---
 
 ![](/images/img4/cover.jpg)
@@ -168,27 +172,3 @@ https://mp.weixin.qq.com/s/Wt56L0Tdj8H1s4zVh43cMw
 https://mp.weixin.qq.com/s/sCiWfFweGzgjPTVGhl3hfw
 
 美国向伊朗的求和，是以斗争求和平的伟大实践！
-
-https://zhuanlan.zhihu.com/p/373781337
-
-巴勒斯坦，其实已经内部分裂了
-
-https://mp.weixin.qq.com/s/cHPdmOJvvQde6DGlWBcHvw
-
-伊拉克化学博士身陷IS占领区，导师为督促其完成论文，派雇佣兵将其救出
-
-https://www.zhihu.com/question/303195046
-
-如何评价阿夫沙尔王朝开创者，猛男纳迪尔沙？
-
-https://www.zhihu.com/answer/790409921
-
-阿富汗历史
-
-https://zhuanlan.zhihu.com/p/370329132
-
-神经病气质的塔利班为何能统一阿富汗？它又是如何极速滑落的？
-
-https://view.inews.qq.com/wxn/20210725A084BY00
-
-“两个塔利班”的前世与今生（巴基斯坦塔利班和阿富汗塔利班）
