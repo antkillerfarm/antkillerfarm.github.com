@@ -151,7 +151,7 @@ tflite模型使用flatbuffers进行序列化，因此也可以使用flatbuffers�
 
 `bazel build //tensorflow/lite/tools:visualize`
 
-这个命令会生成一个schema_py_generated.py文件，也就是所谓的专业版本了。
+这个命令会生成一个`bazel-bin/tensorflow/tools/pip_package/build_pip_package.runfiles/org_tensorflow/tensorflow/lite/python/schema_py_generated.py`文件，也就是所谓的专业版本了。
 
 tflite模型中间结果的导出，不是太方便，原因是相关内存被复用。
 

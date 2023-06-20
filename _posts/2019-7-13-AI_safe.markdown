@@ -311,6 +311,22 @@ https://zhuanlan.zhihu.com/p/255171562
 
 椭圆曲线加密与NSA后门考古
 
+https://zhuanlan.zhihu.com/p/36326221
+
+ECC椭圆曲线加密算法：介绍
+
+https://zhuanlan.zhihu.com/p/44743146
+
+ECC椭圆曲线加密算法：有限域和离散对数
+
+https://zhuanlan.zhihu.com/p/66794410
+
+ECC椭圆曲线加密算法：ECDH和ECDSA
+
+https://zhuanlan.zhihu.com/p/188502565
+
+ECC椭圆曲线加密算法：破解难度及对比RSA
+
 https://mp.weixin.qq.com/s/PVtjsprXl_LxAhaalNUqlA
 
 Hook技术解析
