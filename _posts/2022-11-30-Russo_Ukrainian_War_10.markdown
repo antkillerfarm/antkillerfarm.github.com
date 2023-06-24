@@ -145,11 +145,11 @@ https://zhuanlan.zhihu.com/p/602701816
 
 普京有四艘游艇！
 
-其中包括著名的Graceful, 就是开战前跑了的那艘。
+其中包括著名的Graceful，就是开战前跑了的那艘。
 
 一艘老游艇Olympia，据说是切尔西那位送他的礼物。
 
-公款买的Seagull, 理由是可以用来会见要人。
+公款买的Seagull，理由是可以用来会见要人。
 
 还有一艘比较小的Petrel。
 

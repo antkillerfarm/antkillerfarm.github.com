@@ -95,6 +95,8 @@ for me he is nobody, nobody.
 
 2023.6.6 卡霍夫卡水电站大坝遭到破坏。
 
+2023.6.23 瓦格纳发动叛乱。
+
 ---
 
 https://www.understandingwar.org/
@@ -222,6 +224,10 @@ https://zhuanlan.zhihu.com/p/602892376
 https://www.zhihu.com/question/26061576
 
 俄语中“Владимир”(Vladimir) 这个名字是如何得来的？
+
+https://zhuanlan.zhihu.com/p/638419403
+
+俄罗斯为什么有那么多弗拉基米尔
 
 ---
 

@@ -304,3 +304,7 @@ https://zhuanlan.zhihu.com/p/629358146
 https://zhuanlan.zhihu.com/p/637269164
 
 苟且偷生 俄罗斯士兵向乌克兰无人机投降的的故事
+
+https://zhuanlan.zhihu.com/p/638770221
+
+230名俄罗斯逃兵被关押在地下室
