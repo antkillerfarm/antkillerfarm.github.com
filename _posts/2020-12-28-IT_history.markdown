@@ -91,6 +91,12 @@ CAD四大山头：AutoCAD、UG/NX、PROE、CATIA。
 
 PROE分出来的Solidworks也用的很多。
 
+目前，商用CAD引擎主要包括了ACIS、HOOPS、ParaSolid等。其中使用ACIS引擎的底层产品主要包括了AutoCAD、Inventer、Catia、MicroSolid等；使用ParaSolid引擎的主要包括了UG、Solidworks、SolidEdge等。
+
+开源CAD引擎使用的比较多的是OpenCascade(简称OCC)。OCC平台是由法国Matra Datavision公司开发的CAD/CAE/CAM软件平台。
+
+参考：
+
 https://mp.weixin.qq.com/s/oB5uOfnSyJZ9UlNt1zreUg
 
 CAD四大山头的由来

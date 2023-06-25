@@ -274,6 +274,7 @@ bazel build --config=opt --copt=-g --strip=never //tensorflow/python:pywrap_tens
 因此，还有方法二：
 
 ```python
+import sys
 sys.path.append("<tf src path>/bazel-bin/tensorflow/tools/pip_package/build_pip_package.runfiles/org_tensorflow")
 sys.path.append("<tf src path>/bazel-bin/tensorflow/tools/pip_package/build_pip_package.runfiles/org_tensorflow/tensorflow/python")
 import tensorflow as tf

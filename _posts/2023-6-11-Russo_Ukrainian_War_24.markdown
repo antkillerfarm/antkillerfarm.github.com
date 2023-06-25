@@ -308,3 +308,7 @@ https://zhuanlan.zhihu.com/p/637269164
 https://zhuanlan.zhihu.com/p/638770221
 
 230名俄罗斯逃兵被关押在地下室
+
+https://www.zhihu.com/question/607288866
+
+俄罗斯国防部说开战以来俄军已摧毁了乌军的坦克和装甲车共计1万多辆，这个数据可信吗？俄军真的这么厉害？

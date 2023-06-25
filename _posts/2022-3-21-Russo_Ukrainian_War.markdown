@@ -95,7 +95,7 @@ for me he is nobody, nobody.
 
 2023.6.6 卡霍夫卡水电站大坝遭到破坏。
 
-2023.6.23 瓦格纳发动叛乱。
+2023.6.23～24 瓦格纳发动叛乱。
 
 ---
 
@@ -126,6 +126,10 @@ https://zhuanlan.zhihu.com/p/600639466
 https://www.zhihu.com/zvideo/1533122986995789824
 
 kings & generals是Youtube上的一个战争类频道，知乎博主“近卫掷弹骑兵官”将之搬运，并添加中文字幕。
+
+https://zhuanlan.zhihu.com/p/608091579
+
+乌友信息方案（个人版）
 
 ---
 
@@ -260,13 +264,3 @@ https://zhuanlan.zhihu.com/p/638419403
 https://www.zhihu.com/answer/2496149307
 
 俄罗斯为什么拿不下乌克兰？
-
----
-
-![](/images/img4/Putin.jpg)
-
-**谁才是戏子？**
-
-2023.3.18～19 普京视察克里米亚，马里乌波尔。后者离前线170km。
-
-2023.4.18 普京视察赫尔松、卢甘斯克地区。前者离前线170km。
