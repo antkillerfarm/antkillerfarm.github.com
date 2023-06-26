@@ -169,6 +169,8 @@ https://www.zhihu.com/zvideo/1551802887226732544
 
 ![](/images/img5/Kharkov_2.jpg)
 
+![](/images/img5/izium.webp)
+
 这次战役俄军被俘人员很多，以至于乌军出现″用来捆绑的胶带不够、安置俘虏的地点不够″的报怨。而俄军方面，当乌军为快速赶路，没空收容俘虏时，俄军为了避开随后赶到的″老车臣兵″，追着乌军装甲车要求收容。
 
 https://zhuanlan.zhihu.com/p/587023326

@@ -283,6 +283,10 @@ https://zhuanlan.zhihu.com/p/431722918
 
 没有这个传奇工程师，就没有今天的Windows（David Cutler）
 
+https://www.zhihu.com/question/600905979
+
+曾经风靡一时的ghost系统，为什么销声匿迹了？
+
 # 区块链参考资源+
 
 https://mp.weixin.qq.com/s/m9KwANPIudVesoXjejnOJA
