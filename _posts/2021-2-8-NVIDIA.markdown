@@ -72,7 +72,9 @@ NVIDIA EGX：主打边缘计算的主板级产品。
 
 NVIDIA AGX：主打自动驾驶等AI功能的产品。目前已经有Parker、Xavier、Orin、Atlan、Thor等代产品。
 
-历代GPU架构代号：Tesla → Fermi → Kepler → Maxwell → Pascal → Volta → Turing → Amper → Hopper。
+![](/images/img5/NVIDIA.jpg)
+
+历代GPU架构代号：Currie → Tesla → Fermi → Kepler → Maxwell → Pascal → Volta → Turing → Ampere → Hopper → Ada Lovelace。
 
 V100表示是Volta架构的GPU，A100和H100同理。
 
@@ -349,15 +351,3 @@ https://www.zhihu.com/question/523521515
 https://mp.weixin.qq.com/s/lP7sLiqiGGR2IY-FaorIPw
 
 英伟达：AI芯片还可以这样做
-
-https://mp.weixin.qq.com/s/jGGGMDokN9akzbjRkvUOaA
-
-NVIDIA GPU架构的变迁史
-
-https://jcf94.com/2020/05/24/2020-05-24-nvidia-arch/
-
-NVIDIA GPU架构演进
-
-https://www.zhihu.com/question/603617327
-
-英伟达发布集成256个GH200芯片的DGX GH200超级计算机，有哪些技术亮点？

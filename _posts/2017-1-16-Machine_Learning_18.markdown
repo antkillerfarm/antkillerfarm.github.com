@@ -223,6 +223,10 @@ https://mp.weixin.qq.com/s/MKoDWfoq_h06VsJMIl-39Q
 
 五百年来的白银贸易和全球化
 
+https://www.zhihu.com/question/56864369
+
+为什么白银越来越稀有而价格却这么低？
+
 https://www.zhihu.com/question/23055810
 
 为什么很多创始人要用另一个公司来持股自己的公司呢？

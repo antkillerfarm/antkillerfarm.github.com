@@ -85,6 +85,10 @@ Two-Level Adaptive Branch Predictor
 
 ---
 
+如今的亚马逊AI/ML总经理Kumar Chellapilla是最早吃到GPU螃蟹的学者。2006年，他使用英伟达的GeForce 7800显卡第一次实现了卷积神经网络（CNN），发现比使用CPU要快4倍。这是已知最早将GPU用于深度学习的尝试。
+
+---
+
 参考：
 
 http://www.cnblogs.com/geniusalex/archive/2008/12/26/1941766.html
@@ -152,6 +156,8 @@ https://www.zhihu.com/question/20720436
 然而通用处理对于图形处理的侵蚀，或者说充分运用AI算力，简化图形专用硬件也是一大趋势。
 
 如上图所示，先进图形标准中，崭新的、更加利用计算功能的mesh shader可以取代从vertex shader到geometry shader的着色器，从而在不减功能的前提下，将图形管线节点数大量减少，并移除一些连接节点的专用硬件。性能还可能因为mesh shader拥有的弹性，而有所提升。
+
+![](/images/img5/GPU.png)
 
 # GPU
 

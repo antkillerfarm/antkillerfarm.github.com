@@ -83,7 +83,8 @@ http://www.boutell.com/cgic/
 
 中获得CGIC的代码，这是一个C写的CGI开发库，本文的示例就是在这个库的代码的启示下写出来的。
 
-## 3)Linux下的Apache目录结构
+## 3）Linux下的Apache目录结构
+
 Windows下Apache的各个目录都放在一起，因此使用起来比较方便，而Linux下Apache的各个目录分散在各个地方不是太好找，特记录一下，以作备忘。
 
 conf在/etc/apache2下，但是Linux下的httpd.conf实际上是个空文件，它的内容被分散到该目录下的其他文件中。
