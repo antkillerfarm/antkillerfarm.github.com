@@ -21,6 +21,10 @@ https://www.zhihu.com/question/585799617
 
 ---
 
+波兰总统说了个很意思的话，要那些试图让乌克兰割让土地的国家，把自己领土交给大毛，用来换克里米亚。皆大欢喜的建议啊！
+
+---
+
 https://mp.weixin.qq.com/s/zPO-ScWfgn3_GMsqE3A-4w
 
 俄乌冲突：为什么没看到钢铁洪流和百万大军
