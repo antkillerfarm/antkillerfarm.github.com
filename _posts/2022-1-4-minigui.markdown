@@ -63,7 +63,7 @@ MiniGUI惨淡之后，飞漫公司转战移动APP领域，但从网站上的版�
 
 笔者开发MiniGUI二十多年，知道使用C/C++如何开发界面，多写几行C/C++代码也能做出很多精妙的界面来。但有那么几年，笔者搞了几次Web前端开发，被Web前端技术开发界面的精妙之处所折服。后来再用C/C++语言开发界面，笔者心里也是百般地不情愿。要不是为了钱，都2020年了，谁愿意用C/C++开发GUI？
 
->这差不多也是我的感觉了，回不去的老GUI岁月。。。最近几年我也没有造小工具的兴趣了，偶尔写也是python脚本。。。
+>这差不多也是我的感觉了，回不去的老GUI岁月。。。最近几年我也没有造小工具的兴趣了，偶尔写，也是python脚本。。。
 
 MiniGUI从2017年开始，继续更新，现在已经是v5.0.6（2021.5）了。但从网站和访谈来看，飞漫大概也就定位于工作室了。。。毕竟魏老师真的很老了。。。
 
@@ -75,15 +75,25 @@ MiniGUI从2017年开始，继续更新，现在已经是v5.0.6（2021.5）了。
 
 https://zhuanlan.zhihu.com/p/448126678
 
-各种GUIBuilder体验TouchGFX，AppWizard，GUIX Studio，Embedded Wizard，AWTK，柿饼UI，LVGL，Qt fot MCU等
+各种GUI Builder体验TouchGFX，AppWizard，GUIX Studio，Embedded Wizard，AWTK，柿饼UI，LVGL，Qt fot MCU等
 
 AWTK是李先静加盟周立功之后的作品。相比于魏老师这样的历史成就和包袱都很重的人，年轻一些的李先静明显已经后来居上。他养病阶段就已经转向JS开发，当时我还有点纳闷。看来GUI的JS化是一个趋势，无非有人先知先觉，而我后知后觉罢了。
 
 目前风头最盛的还是LVGL。
 
+官网：
+
+https://lvgl.io/
+
 代码：
 
 https://github.com/lvgl/lvgl
+
+LVGL在桌面领域，一般使用SDL作为后端。
+
+---
+
+emwin是segger开发的闭源软件，由于ST购买了它的版权，所以在ST芯片领域用的比较多。
 
 # RT-Thread
 
