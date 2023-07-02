@@ -49,6 +49,8 @@ https://zhuanlan.zhihu.com/p/639510986
 
 ## 瓦格纳上洛
 
+![](/images/img5/Wagner.png)
+
 与其让国防军布置好了发动长刀之夜，不如我先渡过卢比孔河。
 
 罗马皇帝没有什么天子大义，科举文官，实际就是个军头共主，内部各种四分五裂，哪个军头牙兵、蛮族佣兵一怒之下武装讨薪都很常见，就像五代牙兵哗变闹饷一样常见。
@@ -88,6 +90,10 @@ https://zhuanlan.zhihu.com/p/639498942
 https://mp.weixin.qq.com/s/sgC4qLJkd_ZQKXhfuPuf7Q
 
 浅谈瓦格纳兵谏
+
+https://zhuanlan.zhihu.com/p/640890003
+
+刚刚，瓦格纳最后期限到了！
 
 ---
 
@@ -162,6 +168,8 @@ https://zhuanlan.zhihu.com/p/640011577
 在他们完成项目之前，苏联士兵占领了该地区。在德国人的基础上红军工兵建造了一座单轨铁路桥，但在1945年2月，浮冰撞到桥上，桥倒塌了。第一座刻赤桥持续了四个月。
 
 ![](/images/img5/bridge.jpg)
+
+事发前一天，普京迎来了他的70岁生日，这一行为也被戏称为给普京的“生日礼物”。
 
 https://www.zhihu.com/answer/2706596260
 

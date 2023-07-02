@@ -113,6 +113,24 @@ https://zhuanlan.zhihu.com/p/549196030
 
 甭怂，奣烎，国产通用CPU比俄罗斯勥
 
+## 机柜
+
+机柜、板卡的尺寸规格也有工业标准，以方便不同厂商产品的互联和替换。
+
+OCP：Open Compute Project
+
+OAM：OCP Accelerator Module
+
+UBB：Universal Base Board
+
+https://zhuanlan.zhihu.com/p/339628067
+
+开放计算的源起，对比标准x86服务器开放计算有哪些特点和创新？
+
+https://zhuanlan.zhihu.com/p/571417872
+
+开放整机柜服务器简史
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/34003929

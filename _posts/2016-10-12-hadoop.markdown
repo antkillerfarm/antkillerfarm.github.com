@@ -220,6 +220,8 @@ JDK常用命令行工具
 
 http://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html
 
+map-reduce：把任务map到计算资源上去，得到结果之后reduce。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/Koz2xOnmVgKFeCr2Xqe9VQ

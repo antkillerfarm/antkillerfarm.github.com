@@ -61,6 +61,10 @@ Heroyam Slava：героям слава，glory to the heroes
 
 The fight is here. I need ammunition, not a ride.
 
+The fate of Ukraine depends only on Ukrainians. No one but ourselves will control our lives.
+
+我命由我不由人，乌克兰的命运只能由乌克兰人民抉择。
+
 When you attack us, you will see our faces, not our backs.
 
 Without gas or without you? – The answer is without you. Without electricity or without you? – Without you. Without water or without you? – Without you. Without food or without you? – Without you.
@@ -71,7 +75,17 @@ Without gas or without you? – The answer is without you. Without electricity o
 
 即使没有电，我们对自己的信仰之光也不会被熄灭。
 
-今年是从2月24日开始的，没有序言也没有前奏。我们被告知除了投降别无选择，我们回应说除了胜利别无选择。
+This year began on February 24. Without prefaces and preludes.
+
+今年是从2月24日开始的，没有序言也没有前奏。
+
+On February 24, millions of us made a choice. Not a white flag, but a blue and yellow flag. Not escaping, but meeting. Meeting the enemy. Resisting and fighting.
+
+在2月24日，我们成千上万人做出了选择：不是苍白的降幡，而是蓝黄的战旗；不是掉头逃亡，而是抬头面对——面对着敌人，抵抗并且奋战。
+
+We were told: you have no other option but to surrender. We say: we have no other option than to win.
+
+我们被告知除了投降别无选择，我们回应说除了胜利别无选择。
 
 for me he is nobody, nobody.
 
@@ -80,6 +94,10 @@ for me he is nobody, nobody.
 今天，向20世纪最重要的胜利致敬，我们都在等待和接近一个新的伟大日子--一个新的胜利。我们的胜利。乌克兰的胜利日。
 
 恕我直言，尊者，我们不需要调解人，我们需要公正的和平。战争在乌克兰境内进行，和平计划只能是乌克兰的。
+
+我要重申：我们需要真正的和平，因此，我们需要俄罗斯从我们整个独立领土撤军。
+
+克里姆林宫里的那个人显然非常畏惧，他很可能躲到了什么地方不再露面。我很确定他不再呆在莫斯科了。他跑到了什么地方，要求什么东西……他知道他在畏惧什么，因为这威胁由他自己创造，他自己正是所有邪恶、所有损失、所有仇恨的传播者。
 
 ---
 
@@ -132,6 +150,10 @@ kings & generals是Youtube上的一个战争类频道，知乎博主“近卫掷
 https://zhuanlan.zhihu.com/p/608091579
 
 乌友信息方案（个人版）
+
+https://en.zona.media/
+
+mediazona以蹲坟头著称，专门统计俄军伤亡
 
 ---
 
@@ -215,6 +237,10 @@ https://zhuanlan.zhihu.com/p/602892376
 
 俄乌冲突一年军事简报
 
+https://zhuanlan.zhihu.com/p/593617082
+
+看试手，补天裂——俄乌一周年战记
+
 ## 人物
 
 ![](/images/img4/big3.jpg)
@@ -242,13 +268,3 @@ https://zhuanlan.zhihu.com/p/638419403
 夜漏鹅：Yellow Russian
 
 普京：从普构到普昚再到普裕。晋凉公到普厉侯。当今已无天子。一等强国可为公，二等强国可为侯，俄罗斯原本就是一个以军事见长民生为短的国家，现在却在军事上和乌克兰打得有来有回，所以俄罗斯已不是一等强国，故降级为侯。
-
-《共青团真理报》的记者找到了普京当年上学时候的学生手册，上面清楚地记录着，普京上课时不遵守纪律，不交家庭作业，因而遭到老师的训斥。手册还显示，普京那学期的学习成绩很糟糕，在苏联时代的5分制学习成绩中，他的算术和自然课只得了3分，而绘画更是只拿了2分。
-
-普京的祖父斯皮里东·普京，曾经是列宁和斯大林的私人厨师。
-
-《普京正传：新沙皇的崛起与统治》
-
-普京的班底是所谓的圣彼得堡市长办公室，当年普京在圣彼得堡市长办公室期间，有一帮腐败团队，这些人后来都成为了普京总统的亲密战友、掌握俄罗斯权力和经济命脉。
-
-普京证件编号217590，下面这个编号217591，和普京连号的特工是谁？是尼古拉·彼得罗维奇·托卡列夫，曾经担任俄罗斯国家石油管道运输公司的董事长的职位13年。

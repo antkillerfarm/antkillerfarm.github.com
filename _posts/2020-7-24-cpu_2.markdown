@@ -223,9 +223,23 @@ https://www.zhihu.com/question/521098765
 
 ISA -> PCI -> AGP -> PCI-E
 
+CXL全称是Compute Express Link。是一种开放工业标准用于高带宽低延迟的设备互联。它可以用来连接CPU和Accelerator, Memory Buffer以及Smart NIC等类型的设备。用于AI Machine Learning,高性能计算等场景。
+
+CXL基于PCIe 5.0的物理层。我们已经有了PCIe，为什么还要再搞出一个新的CXL呢？其实主要是因为PCIe不支持cache的一致性。
+
+NIC：Network Interface Card
+
 https://www.sohu.com/a/193807422_588758
 
 PCI，AGP，PCI-E接口啥区别？
+
+https://zhuanlan.zhihu.com/p/383878879
+
+CXL简介
+
+https://zhuanlan.zhihu.com/p/391094717
+
+详解HBA、NIC与CNA的区别
 
 ## 历史
 
