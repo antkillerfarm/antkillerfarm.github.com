@@ -177,6 +177,8 @@ https://mp.weixin.qq.com/s/MXuN1ccza508TMkcYVadvA
 
 片上网络network-on-chip（NoC）是片上系统 system-on-chip（SoC）的一种新的通信方法。它是多核技术的主要组成部分。NoC方法带来了一种全新的片上通信方法，显著优于传统总线式系统（bus）的性能。
 
+Crossbar（XBAR）
+
 https://zhuanlan.zhihu.com/p/63683111
 
 详说片上网络之一：片上多核系统与片上网络的发展
@@ -344,27 +346,3 @@ CPU缓存一致性协议
 https://mp.weixin.qq.com/s/ziJ8OFiLA1it3sQvycN7Mg
 
 翻越缓存的三座大山
-
-https://zhuanlan.zhihu.com/p/63494668
-
-显存为什么不能当内存使？内存、Cache和Cache一致性
-
-https://mp.weixin.qq.com/s/AekR-mv9EOD-4V5SKqI9YQ
-
-一文看懂缓存
-
-https://mp.weixin.qq.com/s/FY8sEX4acEUpCu_6ntArYw
-
-CPU缓存L1/L2/L3工作原理
-
-https://blog.csdn.net/ZoeyyeoZ/article/details/51804647
-
-MESI&MOESI协议
-
-https://mp.weixin.qq.com/s/G4SpTC8DZ-l5kWBRGwSwGQ
-
-Linux内存、Swap、Cache、Buffer详细解析
-
-https://zhuanlan.zhihu.com/p/608663298
-
-一篇论文讲透Cache优化

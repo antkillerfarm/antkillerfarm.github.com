@@ -65,6 +65,14 @@ printf("a\n");
 printf("%ls",L"b\n");
 ```
 
+---
+
+在Linux下，printf输出到控制台经历了app->libc->syscall->console驱动四个阶段。
+
+https://www.zhihu.com/question/456916638
+
+printf是怎么输出到控制台的呢？
+
 # 关于ascii字符集的一些打印控制字符的别名
 
 \b——backspace

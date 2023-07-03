@@ -9,6 +9,32 @@ category: Chip
 
 # CPU
 
+## Cache（续）
+
+https://zhuanlan.zhihu.com/p/63494668
+
+显存为什么不能当内存使？内存、Cache和Cache一致性
+
+https://mp.weixin.qq.com/s/AekR-mv9EOD-4V5SKqI9YQ
+
+一文看懂缓存
+
+https://mp.weixin.qq.com/s/FY8sEX4acEUpCu_6ntArYw
+
+CPU缓存L1/L2/L3工作原理
+
+https://blog.csdn.net/ZoeyyeoZ/article/details/51804647
+
+MESI&MOESI协议
+
+https://mp.weixin.qq.com/s/G4SpTC8DZ-l5kWBRGwSwGQ
+
+Linux内存、Swap、Cache、Buffer详细解析
+
+https://zhuanlan.zhihu.com/p/608663298
+
+一篇论文讲透Cache优化
+
 ## Cache Line
 
 高速缓存其实就是一组称之为缓存行(cache line)的固定大小的数据块，其大小是以突发读或者突发写周期的大小为基础的。
@@ -200,39 +226,3 @@ https://zhuanlan.zhihu.com/p/522755103
 https://zhuanlan.zhihu.com/p/444859995
 
 阿里达摩院最新存算芯片技术解读
-
-## 国产CPU
-
-当年引进“以赛亚”内核的时候，兆芯的性能是优于龙芯的，然而，经过这些年的发展，龙芯通过不断迭代内核大幅提升的CPU性能，CPU性能已经超越兆芯。要知道，当时，兆芯承接核高基01专项，而且还有上海市地方海量资金扶持，而龙芯获得的经费和补贴相对于兆芯少的可怜。龙芯用实践证明了自主研发更具发展后劲，自主研发具有更高的效费比，可以花小钱办大事。
-
-2013年前后，兆芯向威盛支付了一大笔钱购买技术。2020年10月，兆芯又向威盛支付了一大笔钱。这种“买了又买”的事实很容易让人产生疑惑，兆芯到底能不能不再向威盛买技术？能不能真正独立自主发展？
-
-VIA为了让兆芯更加尊重知识、珍惜技术，即使是落后的技术，VIA也会用高昂的价格体现知识的价值。
-
-VIA已经离开主流电脑市场十几年，芯片组技术也至少落后了主流十几年。现在才把相关技术转让给兆芯，可能是为了避免拔苗助长，才敝帚自珍。
-
-这次交易掏空了VIA所剩无几的技术储备，Centaur新设计的CPU核心也没能超过国内自主设计的水平，因此Centaur已经失去了继续存在的价值。
-
-VIA在2021年11月把Centaur的技术团队卖给了Intel，之后又出售厂房和设备，完全放弃了继续研发CPU的能力。
-
-兆芯的传承起至1980年，那一年美国Integrated Device Technology（IDT公司）成立。1988年美国Cyrix公司成立。这两家公司都设计x86架构CPU，以性价比与Intel产品竞争。
-
-威盛（VIA）在1999年6月先后买下Cyrix微处理器设计部门和Centaur（从前的IDT）后，合并为VIA在美国的处理器研发总部，仍然叫作Centaur。这是第一次传承转移，然后VIA把Centaur在x86方面的技术成果全盘出售给兆芯，完成了第二次衣钵传承。
-
-https://mp.weixin.qq.com/s/HDTNCrKYJ7daZieg4rb4VA
-
-英特尔收购威盛X86业务 兆芯何去何从
-
-https://zhuanlan.zhihu.com/p/530763927
-
-兆芯枯木育新枝，前尘入魂续今世
-
----
-
-海光买了AMD zen-（浮点单元阉割一半）的IP，但是买不到zen2和之后的新核心，因为AMD不卖。
-
-飞腾找台湾世芯代理设计，但因飞腾参与超算建设上了美国黑名单，台湾世芯宁可承受损失也不再继续提供设计服务。
-
-飞腾的通用CPU单核性能变化像是过山车，因为它的FT-1000和FT-1500是基于SUN开源的UltraSPARC T2核心，2007年时的UltraSPARC T2可与Intel至强一较高下。飞腾在投靠ARM之后，CPU性能反而降低了。
-
-飞腾多核互联和多路互联的技术较强，只是在ARM推出原生的互联方案之后，飞腾的研究成果也成了鸡肋。
