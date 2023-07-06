@@ -45,6 +45,8 @@ Stream Processor：传统的顶点和像素分离渲染架构，存在着资源�
 
 一个GPU含有若干个GPC（Graphics Processing Clusters），每个GPC含有7~8个TPC（Texture Processing Clusters），每个TPC有2个SM（Streaming Multi-processor）。
 
+EU：Execution Units
+
 ---
 
 https://zhuanlan.zhihu.com/p/266633373
@@ -337,21 +339,3 @@ http://blog.csdn.net/augusdi/article/details/12833235
 光刻是芯片制造过程中最复杂、最昂贵、最关键的环节，其成本约占整个硅片加工成本的1/3甚至更多。计算光刻模拟了光通过光学元件并与光刻胶相互作用时的行为，应用逆物理算法来预测掩膜板上的图案，以便在晶圆上生成最终图案。
 
 “计算光刻是芯片设计和制造领域中最大的计算工作负载，每年消耗数百亿CPU小时。”黄仁勋讲解道，“大型数据中心24x7全天候运行，以便创建用于光刻系统的掩膜板。这些数据中心是芯片制造商每年投资近2000亿美元的资本支出的一部分。”而cuLitho能够将计算光刻的速度提高到原来的40倍。
-
-## 参考
-
-https://mp.weixin.qq.com/s/cGKtvtZzR--sGL4oNSZfAw
-
-深度分析NVIDIA A100显卡架构
-
-https://mp.weixin.qq.com/s/rtO8PxRj08GVimT3bfbplA
-
-我看英伟达H100 GPU
-
-https://www.zhihu.com/question/523521515
-
-如何评价英伟达3月22日发布的全新GPU H100？
-
-https://mp.weixin.qq.com/s/lP7sLiqiGGR2IY-FaorIPw
-
-英伟达：AI芯片还可以这样做

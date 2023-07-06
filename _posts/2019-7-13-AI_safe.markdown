@@ -394,3 +394,7 @@ svchost.exe为什么会占用那么多CPU？
 https://pcedu.pconline.com.cn/softnews/yejie/1012/2311892.html
 
 最大隐私泄露事件QA 金山是如何发现？
+
+https://zhuanlan.zhihu.com/p/384966998
+
+隐私计算技术之可信执行环境（TEE）

@@ -23,6 +23,14 @@ Capsule是深度学习先驱Hinton于2017年提出的概念。
 
 https://github.com/Sarasra/models/tree/master/research/capsules
 
+---
+
+2023.6
+
+经过了6年实践，Capsule和周志华的深度树学习，基本已经被扫进了垃圾堆。。。囧
+
+---
+
 讲述Capsule的blog已经有很多了，但论通俗易懂，还得是苏剑林的这三篇blog：
 
 http://kexue.fm/archives/4819/

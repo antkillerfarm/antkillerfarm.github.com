@@ -193,6 +193,8 @@ HFP8就提出了一种Hybrid的方式：forward的时候用FP-1-4-3，backward�
 
 《8-BIT NUMERICAL FORMATS FOR DEEP NEURAL NETWORKS》
 
+NVIDIA在H100中，添加了FP8的支持，但是去掉了对INT1/INT4的支持。。。看起来后两者还是实用价值偏低了。
+
 ## Posit
 
 ![](/images/img4/Posit.png)
