@@ -328,3 +328,7 @@ https://www.zhihu.com/question/607288866
 https://zhuanlan.zhihu.com/p/637175526
 
 俄乌战争合集——俄罗斯究竟撒了多少谎
+
+https://zhuanlan.zhihu.com/p/641610350
+
+事实核查 俄罗斯士兵遗体被打包成方块吗？

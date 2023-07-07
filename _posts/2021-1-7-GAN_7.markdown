@@ -193,6 +193,10 @@ https://mp.weixin.qq.com/s/imOFQL01RaXUuZwew1izzg
 
 基于GAN来做低光照图像增强，EnlightenGAN论文解读
 
+https://zhuanlan.zhihu.com/p/637705399
+
+VQGAN论文与源码解读：前Diffusion时代的高清图像生成模型
+
 # 印度+
 
 印度有法律规定，所有外国公司，涉及研发费用的，只要在印度销售，其中研发利润必须给政府一部分。就是比方这个技术美国高通研发一个芯片，卖给中国小米，每台手机收小米200块芯片授权专利费。那么，这个美国专利，必须给印度政府上交一部分。

@@ -223,6 +223,10 @@ https://zhuanlan.zhihu.com/p/598557707
 
 Vulkan渲染流程总结
 
+https://zhuanlan.zhihu.com/p/417561163
+
+UE4/UE5的RHI(Vulkan为例)
+
 ## RenderDoc
 
 RenderDoc是一种图形调试器，目前可用于Windows、Linux、Android、Stadia和Nintendo Switch上的Vulkan、D3D11、D3D12、OpenGL和OpenGL ES开发。

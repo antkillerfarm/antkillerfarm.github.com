@@ -11,16 +11,6 @@ category: Chip
 
 ## 光刻（续）
 
-倒也不全是SMEE的锅。毕竟镜子是国望光学做的，光源是科益虹源做的，双工台是华卓精科做的。加工精度达不到，运动控制精度达不到，器件频率达不到。还有很多很多性能指标达不到，整体就别想达到nxt1980型的性能。
-
-中微的5nm应用其实是偷换了一波概念。5nm芯片的刻蚀简单可以说是分成前后段，后段刻的都是大via，刻蚀精度要求不高的，而中微的设备，人家只是为了节省成本用在后段刻蚀上，其实前段的根本没法用，还是差老远。
-
-整个芯片不论前后道制程ICP与CCP一共接近30种刻蚀设备，中微与北方华创无一例外，只能做最容易的那1/4，其中最简单的确实能做到5nm，剩下门坎较高的一律还是LAM、AMAT、TEL所垄断，没有任何例外，而这就是设备商的宣传套路。
-
-几年前SMEE那台号称90nm的ssx600通过验收合格，然后这一大帮人欢欣鼓舞媒体大书特书，紧接着这群人立马订定下一个更先进的目标，直接攻关193nmArF准分子激光浸润式光刻机，02专项继续风风火火大跃进攻关，形势一片大好。
-
-然而事实是那台ssx600把所有utility接上，除了认证那会开机跑了起来，至始至终躺在那，怎认证通过到咱们就不说了，你没跑产线，没有量测，没有上下道的工艺配合，最后芯片合格率、良率到底行不行，全部都没有，这样就验收了？敢情这是能开机就可以验收是吗？
-
 参考：
 
 https://mp.weixin.qq.com/s/NZGNrO_LxNc6qrIdofOIfQ
@@ -51,10 +41,6 @@ https://mp.weixin.qq.com/s/YvzxV5NLz4FkKO71bxpAIA
 
 给孩子讲讲光刻机吧
 
-https://mp.weixin.qq.com/s/6Uod0Ngw4wDIISJZVDQ92A
-
-光刻缘何成为卡脖子技术？
-
 https://mp.weixin.qq.com/s/6BnrAEMpZxJ3ChBHWQ9mWA
 
 台积电缺电！30台EUV光刻机一天耗电90万度
@@ -63,29 +49,9 @@ https://mp.weixin.qq.com/s/AUDDEYETPdJSyIdpMl4hLQ
 
 一文看懂ASML EUV光刻技术
 
-https://mp.weixin.qq.com/s/c_cUbBKVYKNgXrbTdvvfpw
-
-中国“芯痛”终极十问：我们能造原子弹，却造不出一枚小芯片？
-
-https://mp.weixin.qq.com/s/vp-CvAvigztYse2_TI9T6Q
-
-中国有没有必要举全国之力，去造一台光刻机？
-
 https://mp.weixin.qq.com/s/DFU4zoteqehOJkBpVVhXyA
 
 EUV光刻机里的低调王者
-
-https://zhuanlan.zhihu.com/p/435563360
-
-28nm光刻机卡住“02专项”
-
-https://zhuanlan.zhihu.com/p/434563254
-
-国产“28nm光刻机”又跳票？到底卡在了哪里？
-
-https://zhuanlan.zhihu.com/p/591933782
-
-我国光刻机发展怎么样了？
 
 ## 芯片制造
 
@@ -346,3 +312,55 @@ CPU缓存一致性协议
 https://mp.weixin.qq.com/s/ziJ8OFiLA1it3sQvycN7Mg
 
 翻越缓存的三座大山
+
+https://zhuanlan.zhihu.com/p/63494668
+
+显存为什么不能当内存使？内存、Cache和Cache一致性
+
+https://mp.weixin.qq.com/s/AekR-mv9EOD-4V5SKqI9YQ
+
+一文看懂缓存
+
+https://mp.weixin.qq.com/s/FY8sEX4acEUpCu_6ntArYw
+
+CPU缓存L1/L2/L3工作原理
+
+https://blog.csdn.net/ZoeyyeoZ/article/details/51804647
+
+MESI&MOESI协议
+
+https://mp.weixin.qq.com/s/G4SpTC8DZ-l5kWBRGwSwGQ
+
+Linux内存、Swap、Cache、Buffer详细解析
+
+https://zhuanlan.zhihu.com/p/608663298
+
+一篇论文讲透Cache优化
+
+## Cache Line
+
+高速缓存其实就是一组称之为缓存行(cache line)的固定大小的数据块，其大小是以突发读或者突发写周期的大小为基础的。
+
+每个高速缓存行完全是在一个突发读操作周期中进行填充或者下载的。即使处理器只存取一个字节的存储器，高速缓存控制器也启动整个存取器访问周期并请求整个数据块。缓存行第一个字节的地址总是突发周期尺寸的倍数。缓存行的起始位置总是与突发周期的开头保持一致。
+
+https://zhuanlan.zhihu.com/p/37749443
+
+计算机缓存Cache以及Cache Line详解
+
+## Bélády's Algorithm
+
+Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。
+
+>László Bélády，1928年生，匈牙利计算机科学家。Technical University of Budapest本硕。IBM研究员。
+
+LFU: least frequently used
+
+LRU: least recently used
+
+https://mp.weixin.qq.com/s/AdmEd1FHxpZUwSGYy3qggg
+
+利用cpu缓存实现高性能程序
+
+https://zhuanlan.zhihu.com/p/591436083
+
+经典论文解读——Cache替换算法

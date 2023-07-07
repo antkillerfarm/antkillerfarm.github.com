@@ -164,3 +164,7 @@ https://www.zhihu.com/question/567658878
 https://www.zhihu.com/question/599330907
 
 如何看待爱国者防空系统成功拦截俄罗斯超音速导弹？
+
+https://zhuanlan.zhihu.com/p/641486160
+
+中看不中用！乌克兰战场“照妖镜”：法国战车仅用三个月的时间就将几十年积攒的好名声给败了
