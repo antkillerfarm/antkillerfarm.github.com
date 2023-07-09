@@ -139,6 +139,8 @@ MPI的主流实现主要是：mpich，openmpi，Intel MPI，Microsoft MPI，其�
 
 和MPI类似的技术，还有NVIDIA的NCCL，FaceBook的gloo等。
 
+NVIDIA SHARP：Scalable Hierarchical Aggregation and Reduction Protocol
+
 MPI官网：
 
 http://www.mpi-forum.org/docs/
