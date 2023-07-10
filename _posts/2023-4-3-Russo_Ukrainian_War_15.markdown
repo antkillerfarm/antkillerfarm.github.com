@@ -33,6 +33,14 @@ https://zhuanlan.zhihu.com/p/608784859
 
 俄雇佣兵的子弹，没用来打乌军，瓦格纳把俄军大将，画在了靶子上
 
+https://zhuanlan.zhihu.com/p/642515984
+
+损失七成人员 被无情抛弃的俄罗斯风暴大队士兵想抓住乌克兰总统
+
+https://zhuanlan.zhihu.com/p/637922023
+
+俄罗斯军队对乌克兰俘虏进行去势惩罚
+
 ---
 
 https://mp.weixin.qq.com/s/PUqFEBUN6OaGZjB-ojrMRg
@@ -66,10 +74,6 @@ https://zhuanlan.zhihu.com/p/617040010
 https://www.zhihu.com/question/567275817
 
 大家怎么看乌克兰高调给一名台湾雇佣兵举行华丽葬礼？（曾圣光）
-
-https://zhuanlan.zhihu.com/p/637922023
-
-俄罗斯军队对乌克兰俘虏进行去势惩罚
 
 ## 哈尔科夫战役
 
