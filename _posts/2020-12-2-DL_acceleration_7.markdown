@@ -255,6 +255,8 @@ Why GEMM is at the heart of deep learning
 
 ## 内积乘法 vs 外积乘法
 
+做matrix矩阵计算（GEMM）有三种范式，外积、内积、脉动（systolic），nvidia的tensorcore是内积，google TPU和intel的AMX是脉动，外积是相对罕见的微架构。
+
 ![](/images/img4/matmul.png)
 
 内积：优点是每次每个计算单元缓存的并不需要太多，gather时通讯带宽需求也低。缺点是每个计算单元会重复缓存相同行和列，整体上看缓存了很多遍AB矩阵，潜在问题是缓存冲突，访存延迟增加。

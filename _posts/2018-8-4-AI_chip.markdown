@@ -111,7 +111,7 @@ Imagination目前主要的客户是：
 
 这种模式的特点主要有：
 
-- NPU专注NN计算，其实主要是CNN计算。
+- NPU专注NN计算，其实主要是CNN/GEMM计算。
 
 - GPU作为通用计算的兜底，以应付一些不常见的op。GPU支持各种数学计算，单纯从计算的角度是完全可以替代CPU的。GPU的局限主要在于它没有CPU那样的逻辑控制的能力。
 
@@ -169,9 +169,15 @@ https://www.zhihu.com/question/41469046
 
 ## 壁仞
 
+
+
 https://www.zhihu.com/question/547728200
 
 如何评价壁仞科技发布的最大算力GPGPU BR100？
+
+https://zhuanlan.zhihu.com/p/642431341
+
+壁仞的BR100：来自中国的机器学习GPU
 
 ## Habana
 
