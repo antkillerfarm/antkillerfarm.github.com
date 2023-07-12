@@ -224,3 +224,7 @@ https://zhuanlan.zhihu.com/p/636255708
 https://zhuanlan.zhihu.com/p/637846009
 
 在督战队的枪口下 俄罗斯士兵眼中的乌克兰扎波罗热攻势
+
+https://zhuanlan.zhihu.com/p/642942500
+
+俄罗斯中将师团长不幸在别尔江斯克被乌克兰击毙

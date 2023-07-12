@@ -25,6 +25,10 @@ https://www.zhihu.com/question/585799617
 
 ---
 
+将希望寄托在匈牙利和土鸡是不靠谱的，他们只想把京子卖个好价钱。
+
+---
+
 https://mp.weixin.qq.com/s/zPO-ScWfgn3_GMsqE3A-4w
 
 俄乌冲突：为什么没看到钢铁洪流和百万大军

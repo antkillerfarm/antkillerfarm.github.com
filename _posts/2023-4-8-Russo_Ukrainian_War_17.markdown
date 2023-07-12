@@ -83,6 +83,10 @@ https://zhuanlan.zhihu.com/p/639510986
 
 不向俄罗斯维持会投降 乌克兰扎波罗热少年游击队员不幸牺牲
 
+https://www.zhihu.com/zvideo/1662279155210240000
+
+习武报国 乌克兰64岁空手道大师因谋害俄罗斯海军悍将被捕
+
 ## 瓦格纳上洛
 
 ![](/images/img5/Wagner.png)

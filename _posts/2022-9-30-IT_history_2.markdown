@@ -350,3 +350,7 @@ https://mp.weixin.qq.com/s/rlTJVV0PXjII2YJYENlwlw
 https://mp.weixin.qq.com/s/J6yF8fzvhLK-kJcdFXBxJg
 
 马斯克投15亿，价值47000美元的比特币，其实是一群数学家搞出来的……
+
+https://zhuanlan.zhihu.com/p/573114357
+
+中国国产操作系统的历史
