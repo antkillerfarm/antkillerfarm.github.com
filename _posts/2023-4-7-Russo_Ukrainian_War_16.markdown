@@ -211,6 +211,10 @@ https://zhuanlan.zhihu.com/p/626546244
 
 ---
 
+驻扎波罗热的俄罗斯武装部队第58集团军司令伊万·波波夫 (Ivan Popov) 今天（2023.7.13）早些时候被免职。。。
+
+---
+
 ![](/images/img5/Zaporizhia.jpg)
 
 https://www.zhihu.com/question/605592764
@@ -228,3 +232,7 @@ https://zhuanlan.zhihu.com/p/637846009
 https://zhuanlan.zhihu.com/p/642942500
 
 俄罗斯中将师团长不幸在别尔江斯克被乌克兰击毙
+
+https://zhuanlan.zhihu.com/p/642984280
+
+表面兄弟之马库斯与沙拉马加
