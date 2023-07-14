@@ -227,6 +227,18 @@ apt是一套完整的软件包管理方案。除了最常用apt-get之外，还�
 
 `wget -qO - http://deb.opera.com/archive.key | sudo apt-key add -`
 
+更新：
+
+`sudo apt update`
+
+升级：
+
+`sudo apt upgrade -y`
+
+版本升级：
+
+`sudo apt do-release-upgrade`
+
 ## apt vs. apt-get
 
 在ubuntu14.04以后，apt逐渐取代apt-get，称为默认的软件升级工具。基本可以认为apt=apt-get+apt-cache。
