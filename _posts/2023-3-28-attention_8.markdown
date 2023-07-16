@@ -1,13 +1,43 @@
 ---
 layout: post
-title:  Attention（八）——BERT进阶（2）
+title:  Attention（八）——BERT进阶
 category: Attention 
 ---
 
 * toc
 {:toc}
 
-# BERT进阶（续）
+# BERT进阶
+
+## AR vs AE（续）
+
+2023.3
+
+ChatGPT的出现，为自然语言生成任务找到了商业化的路径。有鉴于此，Google也不得不在BERT上对AR模型，做了一些有损逼格的妥协。。。囧
+
+![](/images/img5/T5.png)
+
+deep encoder+shallow decoder
+
+---
+
+参考：
+
+https://mp.weixin.qq.com/s/n6F6MTjrUCmvEoaLiVZpxA
+
+更深的编码器+更浅的解码器=更快的自回归模型
+
+https://mp.weixin.qq.com/s/pe2E69Gpw0nT9sSHvtBGSg
+
+自回归与非自回归模型不可兼得？预训练模型BANG全都要！
+
+https://www.zhihu.com/question/588325646
+
+为什么现在的LLM都是Decoder only的架构？
+
+https://www.zhihu.com/question/592545459
+
+大模型都是基于Transformer堆叠，采用Encoder或者Decoder堆叠，有什么区别？
 
 ## UniLM
 

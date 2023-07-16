@@ -93,9 +93,7 @@ https://blog.csdn.net/Nation_chen/article/details/7066277
 
 ubuntu安装ftp服务器
 
-# Ubuntu使用小技巧
-
-## ape文件的处理
+# ape文件的处理
 
 Monkey's Audio，是一种常见的无损音频压缩编码格式，扩展名为.ape。
 
@@ -235,7 +233,7 @@ apt是一套完整的软件包管理方案。除了最常用apt-get之外，还�
 
 `sudo apt upgrade -y`
 
-版本升级：
+大版本升级：
 
 `sudo apt do-release-upgrade`
 

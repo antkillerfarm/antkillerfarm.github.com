@@ -153,6 +153,10 @@ https://mp.weixin.qq.com/s/DBLMAEbVw6v4xH94-5Zl3w
 
 GAN逆袭归来！清华校友论文引爆AI绘图圈，一秒把大象P转身，Diffusion黯然失色
 
+https://zhuanlan.zhihu.com/p/643872569
+
+AI这样把NB写在脸上，它在玩一种很新的艺术
+
 ## 参考
 
 https://mp.weixin.qq.com/s/djkjAfUO_DefTP2drzY_iQ

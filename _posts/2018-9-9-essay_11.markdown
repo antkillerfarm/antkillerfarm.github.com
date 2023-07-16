@@ -23,6 +23,29 @@ Firefox的界面其实一直以来变化不大，也就是4.0的时候将标签�
 
 这次的Firefox Quantum的确给人耳目一新的感觉。
 
+---
+
+Snap有时比较慢，可用如下方法：
+
+```
+sudo snap remove firefox
+sudo apt remove firefox
+sudo add-apt-repository ppa:mozillateam/ppa
+sudo gedit /etc/apt/preferences.d/mozillateamppa
+```
+
+/etc/apt/preferences.d/mozillateamppa:
+
+```
+Package: firefox*
+Pin: release o=LP-PPA-mozillateam
+Pin-Priority: 501
+```
+
+```
+sudo apt install firefox
+```
+
 ## 插件
 
 话说火狐扩展开发方式变了好几次了。XUL/XPCOM overlays、bootstrapped extensions 、Add-on SDK，现在推WebExtensions APIs，把之前的都废弃了，说以后都是WebExtensions APIs，是为了和其他浏览器统一，为一个浏览器写扩展，个个浏览器都能用。

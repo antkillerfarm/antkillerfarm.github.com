@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（七）——BERT进阶（1）
+title:  Attention（七）——Large Language Model
 category: Attention 
 ---
 
@@ -54,60 +54,6 @@ ChatGPT这么强，会影响NLPer的就业环境吗
 https://www.zhihu.com/question/575391861
 
 ChatGPT印证了模型大一统的可行性，这在未来五年会对NLP从业者带来怎样的冲击？
-
-## Large Language Model
-
-![](/images/img5/huge_model.jpg)
-
-OpenAI的GPT 3的规模为175B，Google的LaMDA规模为137B，PaLM的规模为540B，DeepMind的Gogher规模为280B。
-
-国内也有中文巨型模型，比如清华&智谱GLM规模130B，华为“盘古”规模200B，百度“文心”规模260B，浪潮“源1.0”规模245B。
-
-然而，OpenAI的中小模型（如 6B~13B）的性能已经远超一众超大模型（如130B的GLM和175B的OPT）。由于实力的不对等，OpenAI、Google、DeepMind等LLM头部玩家可能不再会公开最前沿的LLM研究进展（转为挤牙膏模式）。
-
-悟道2.0是一个基于MoE的稀疏模型，总参数量超过万亿，存一个checkpoint 20T。模型是神威上训练的，那玩意没有GPU或者CUDA，是神威自己的一套底层架构，因此适配起来非常困难。这个项目更像是一个国产硬件上训练巨大模型的尝试，项目启动之初就知道不可能投入到产品。
-
-其次，稀疏模型的参数量和普通模型没有太大的可比性。
-
-175B级别的训练的成本非常高。例如2020年GPT-3的单次训练成本约460万美元，总训练成本达1200万美元，如果推算到2023，国内单次训练成本约662-1170万RMB。以2022年为例，OpenAI运行成本为5.44亿美元，其中约有2亿多美元是工资/劳务费。
-
-国内这一堆利润导向的“AI研究”公司，阿里的达摩院甚至还闹出过自负盈亏这种笑话，让这些公司花费大量时间和金钱去做预训练语料库，估计比让恒大还清债务还难。
-
-当初微软为了帮助OpenAI训练，在2020年给OpenAI搭建了一个有285000核CPU和10000个V100 GPU的超算环境。
-
-Q：微软调度了1万张卡给OpenAI做训练，商汤的反馈是我们国内最多也就调动2000张卡，这个技术有难度吗？
-
-A：我目前了解到这一块国内目前没有哪个达到1万张量级的，不可能的，现在没有水平。现在的确从百度视角来看，现在几千张卡在测试就不错了。从技术积累来说，涉及到集群做调度还是有一些协同性的难度。我认为包括商汤、百度，离微软的差距还是短时间内无法追上的。
-
-国内先搞一波小参数的大模型，PR一定要cover机器之心、新智元、量子位，然后宣城自己的130b模型超越了gpt4，并在自己的榜上发布测评结果，成功超越gpt4。最后一堆商业公司来买130b的模型，这就算是创业成功了，毕竟一套价格不菲，几千万。
-
-国内的研究者总是发布达到chatgpt4 106%能力的工作，人家一更换测评数据集就泯然众人矣了。
-
-参考：
-
-https://www.zhihu.com/question/584132646
-
-中国的大语言模型“悟道2.0”参数是GPT-3十倍，是否中国在大语言模型训练技术上已经远远超过美国？
-
-https://zhuanlan.zhihu.com/p/463352552
-
-稀疏性在机器学习中的发展趋势——Sparsity，稀疏激活，高效计算，MoE，稀疏注意力机制
-
-https://zhuanlan.zhihu.com/p/254821426
-
-乘风破浪的PTM：两年来预训练模型的技术进展（2020年之前的主流技术）
-
-https://zhuanlan.zhihu.com/p/597586623
-
-通向AGI之路：大型语言模型（LLM）技术精要
-
-https://mp.weixin.qq.com/s/eV_9Mi2879w_gfoyiSm8Ug
-
-LLM全景图（The Landscape of LLM）
-
-https://www.zhihu.com/question/604592470
-
-前两个月国产类ChatGPT大模型如雨后春笋，为何最近都没声音了?
 
 ## GPT-4
 
@@ -173,6 +119,96 @@ https://www.zhihu.com/question/589941496
 
 百度正式推出“文心一言”，然而港股股价已暴跌近10%，客观来说其能力与ChatGPT相较如何？
 
+# Large Language Model
+
+![](/images/img5/huge_model.jpg)
+
+OpenAI的GPT 3的规模为175B，Google的LaMDA规模为137B，PaLM的规模为540B，DeepMind的Gogher规模为280B。
+
+国内也有中文巨型模型，比如清华&智谱GLM规模130B，华为“盘古”规模200B，百度“文心”规模260B，浪潮“源1.0”规模245B。
+
+然而，OpenAI的中小模型（如 6B~13B）的性能已经远超一众超大模型（如130B的GLM和175B的OPT）。由于实力的不对等，OpenAI、Google、DeepMind等LLM头部玩家可能不再会公开最前沿的LLM研究进展（转为挤牙膏模式）。
+
+悟道2.0是一个基于MoE的稀疏模型，总参数量超过万亿，存一个checkpoint 20T。模型是神威上训练的，那玩意没有GPU或者CUDA，是神威自己的一套底层架构，因此适配起来非常困难。这个项目更像是一个国产硬件上训练巨大模型的尝试，项目启动之初就知道不可能投入到产品。
+
+其次，稀疏模型的参数量和普通模型没有太大的可比性。
+
+175B级别的训练的成本非常高。例如2020年GPT-3的单次训练成本约460万美元，总训练成本达1200万美元，如果推算到2023，国内单次训练成本约662-1170万RMB。以2022年为例，OpenAI运行成本为5.44亿美元，其中约有2亿多美元是工资/劳务费。
+
+国内这一堆利润导向的“AI研究”公司，阿里的达摩院甚至还闹出过自负盈亏这种笑话，让这些公司花费大量时间和金钱去做预训练语料库，估计比让恒大还清债务还难。
+
+当初微软为了帮助OpenAI训练，在2020年给OpenAI搭建了一个有285000核CPU和10000个V100 GPU的超算环境。
+
+Q：微软调度了1万张卡给OpenAI做训练，商汤的反馈是我们国内最多也就调动2000张卡，这个技术有难度吗？
+
+A：我目前了解到这一块国内目前没有哪个达到1万张量级的，不可能的，现在没有水平。现在的确从百度视角来看，现在几千张卡在测试就不错了。从技术积累来说，涉及到集群做调度还是有一些协同性的难度。我认为包括商汤、百度，离微软的差距还是短时间内无法追上的。
+
+国内先搞一波小参数的大模型，PR一定要cover机器之心、新智元、量子位，然后宣城自己的130b模型超越了gpt4，并在自己的榜上发布测评结果，成功超越gpt4。最后一堆商业公司来买130b的模型，这就算是创业成功了，毕竟一套价格不菲，几千万。
+
+国内的研究者总是发布达到chatgpt4 106%能力的工作，人家一更换测评数据集就泯然众人矣了。
+
+参考：
+
+https://www.zhihu.com/question/584132646
+
+中国的大语言模型“悟道2.0”参数是GPT-3十倍，是否中国在大语言模型训练技术上已经远远超过美国？
+
+https://zhuanlan.zhihu.com/p/463352552
+
+稀疏性在机器学习中的发展趋势——Sparsity，稀疏激活，高效计算，MoE，稀疏注意力机制
+
+https://zhuanlan.zhihu.com/p/254821426
+
+乘风破浪的PTM：两年来预训练模型的技术进展（2020年之前的主流技术）
+
+https://zhuanlan.zhihu.com/p/597586623
+
+通向AGI之路：大型语言模型（LLM）技术精要
+
+https://mp.weixin.qq.com/s/eV_9Mi2879w_gfoyiSm8Ug
+
+LLM全景图（The Landscape of LLM）
+
+https://www.zhihu.com/question/604592470
+
+前两个月国产类ChatGPT大模型如雨后春笋，为何最近都没声音了?
+
+https://mp.weixin.qq.com/s/oqhi58NcEVH1oVrW2p4xlQ
+
+大模型参数高效微调技术原理综述（一）-背景、参数高效微调简介
+
+https://mp.weixin.qq.com/s/fUAUr9X3XLndfjga2QIHbA
+
+大模型参数高效微调技术原理综述（二）-BitFit、Prefix Tuning、Prompt Tuning
+
+https://mp.weixin.qq.com/s/f4l04f78F507JRrCawnV8w
+
+大模型参数高效微调技术原理综述（三）-P-Tuning、P-Tuning v2
+
+https://mp.weixin.qq.com/s/nUAcCz6mcgGuUeuTfgqmOQ
+
+大模型参数高效微调技术原理综述（四）-Adapter Tuning及其变体
+
+https://mp.weixin.qq.com/s/N_N6RqKB9pjZ1tozfM5f5A
+
+大模型参数高效微调技术原理综述（五）-LoRA、AdaLoRA、QLoRA
+
+https://mp.weixin.qq.com/s/M2nds_FJBXooi08qDU-4yA
+
+大模型参数高效微调技术原理综述（六）-MAM Adapter、UniPELT
+
+https://mp.weixin.qq.com/s/P_AmTa4s8dOyc_0fZBgNPA
+
+大模型参数高效微调技术原理综述（七）-最佳实践、总结
+
+https://zhuanlan.zhihu.com/p/618695885
+
+LLaMA, Alpaca, ColossalChat系列模型研究
+
+https://zhuanlan.zhihu.com/p/642412124
+
+LLM的推理优化技术纵览
+
 # BERT进阶
 
 ## AR vs AE
@@ -198,33 +234,3 @@ $$p(x)=\prod_{x\in Mask}p(x_t|context)$$
 - 缺点：由于训练中采用了MASK标记，导致预训练与微调阶段不一致的问题。此外对于生成式问题，AE模型也显得捉襟见肘，这也是目前为止，BERT为数不多没有实现大的突破的领域。
 
 - 优点：能够很好的编码上下文语义信息，在自然语言理解(NLU)相关的下游任务上表现突出。
-
----
-
-2023.3
-
-ChatGPT的出现，为自然语言生成任务找到了商业化的路径。有鉴于此，Google也不得不在BERT上对AR模型，做了一些有损逼格的妥协。。。囧
-
-![](/images/img5/T5.png)
-
-deep encoder+shallow decoder
-
----
-
-参考：
-
-https://mp.weixin.qq.com/s/n6F6MTjrUCmvEoaLiVZpxA
-
-更深的编码器+更浅的解码器=更快的自回归模型
-
-https://mp.weixin.qq.com/s/pe2E69Gpw0nT9sSHvtBGSg
-
-自回归与非自回归模型不可兼得？预训练模型BANG全都要！
-
-https://www.zhihu.com/question/588325646
-
-为什么现在的LLM都是Decoder only的架构？
-
-https://www.zhihu.com/question/592545459
-
-大模型都是基于Transformer堆叠，采用Encoder或者Decoder堆叠，有什么区别？

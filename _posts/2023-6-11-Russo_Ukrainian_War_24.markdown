@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争（二十四）——轶事（5）
+title:  俄乌战争（二十四）——轶事（4）
 category: Russia 
 ---
 
@@ -124,10 +124,6 @@ https://news.ifeng.com/c/8Jcv9bjeSPV
 https://news.ifeng.com/c/8KivcEeZ16O
 
 “冬将军”曾击败拿破仑，现在轮到俄罗斯了？
-
-https://news.ifeng.com/c/8Kph5NYlxxB
-
-果然！俄军退出赫尔松，苏罗维金一战封神？
 
 https://news.ifeng.com/c/8McreoQx3df
 

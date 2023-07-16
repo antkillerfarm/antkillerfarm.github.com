@@ -239,6 +239,10 @@ https://mp.weixin.qq.com/s/Mb7iSXfrOtettVn-Sz8QUA
 
 主板上这家伙，要当CPU和内存的中间商！
 
+https://blog.csdn.net/shiwq1127/article/details/127975179
+
+memory interleaving（内存交织）
+
 # GPU通信技术+
 
 ## NVLink（续）

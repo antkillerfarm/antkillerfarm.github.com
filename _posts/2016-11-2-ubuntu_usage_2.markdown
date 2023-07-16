@@ -101,6 +101,8 @@ https://github.com/tualatrix/ubuntu-tweak
 
 `cat /etc/issue`
 
+`lsb_release`
+
 ## 查看内核版本号
 
 `cat /proc/version`

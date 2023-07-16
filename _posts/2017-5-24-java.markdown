@@ -353,6 +353,10 @@ https://mp.weixin.qq.com/s/_r1EU66tpHUrOyuGd9yNdA
 
 ## JVM
 
+HotSpot虚拟机里内置了两个JIT编译器：Client Compiler和Server Compiler，简称为c1编译器和c2编译器。c1编译器将字节码编译为本地代码，进行简单、可靠的优化，如有必要将加入性能监控的逻辑。c2编译会启用一些编译耗时较长的优化，甚至进行一些激进优化。
+
+---
+
 https://mp.weixin.qq.com/s/t1Cx1n6irN1RWG8HQyHU2w
 
 从实际案例聊聊Java应用的GC优化

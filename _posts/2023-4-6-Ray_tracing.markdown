@@ -101,6 +101,16 @@ https://gamebaby.blog.csdn.net/article/details/80399195
 
 光线追踪渲染（RayTracing Render）核心原理详解
 
+# CPU渲染 vs GPU渲染
+
+CPU渲染可以在像素级别操作，而GPU渲染单位是三角形，同时需要有拼接三角形的过程。而拼接三角形可能会存在一些精度问题，可能导致嵌接之后容易出现噪点、不期望的实线等问题。
+
+皮克斯公司、AfterEffect软件使用的是CPU渲染。影视场景主流是CPU渲染。由于GPU渲染比CPU渲染快，所以实时渲染如网页、游戏的场景主流是GPU渲染。
+
+https://zhuanlan.zhihu.com/p/618925299
+
+从两个图形库看CPU与GPU渲染的差异（Cairo与Skia）
+
 # 数字成像
 
 https://mp.weixin.qq.com/s/Fpy3_kljryrjEqoZz4IlNg
