@@ -229,6 +229,13 @@ https://mp.weixin.qq.com/s/20F0ieUjJSZp7yI7ymeJ5Q
 
 python有个叫做`attr`的包，还有一个叫做`attrs`的包，然而`import attr`实际上用的是`attrs`。
 
+二进制码流 -> 十六进制字符串：
+
+```python
+import binascii
+hex_digits = binascii.b2a_hex(bin_stream)
+```
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA

@@ -289,6 +289,10 @@ https://zhuanlan.zhihu.com/p/608176805
 
 如何看懂ChatGPT里的RLHF公式以及相关实现
 
+https://zhuanlan.zhihu.com/p/644680366
+
+LLaMA2 RLHF技术细节
+
 https://mp.weixin.qq.com/s/L8E-dd9988Prbxau5awFtw
 
 ChatGPT怎么突然变得这么强？华人博士万字长文深度拆解GPT-3.5能力起源
