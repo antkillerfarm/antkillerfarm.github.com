@@ -325,6 +325,10 @@ https://mp.weixin.qq.com/s/CvXKbp5Id6_lOWNs6ntWiA
 
 SQL最大竞争对手（QUEL）的简史
 
+https://www.zhihu.com/question/31955622
+
+postgresql也很强大，为何在中国大陆，mysql成为主流，postgresql屈居二线呢？
+
 ---
 
 https://www.cnblogs.com/ahu-lichang/p/10899747.html

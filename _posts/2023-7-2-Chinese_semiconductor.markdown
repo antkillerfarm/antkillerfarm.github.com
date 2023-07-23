@@ -61,6 +61,10 @@ https://mp.weixin.qq.com/s/-h9YE3tlvDlUD6TjT8cjEg
 
 KLA-芯片制程控制之王
 
+https://www.zhihu.com/question/602552291
+
+日本正式出台半导体制造设备出口管制措施，商务部表示严重损害中日经贸合作关系，还有哪些信息值得关注？
+
 ---
 
 >作者吴梓豪，台积电fab3工程师，2001年赴内地发展，Arcotech创始人，国内多个fab建厂小组负责人，前金宏气体电子特气事业部副总，目前为多家企业战略顾问。

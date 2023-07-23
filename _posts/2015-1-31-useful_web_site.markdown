@@ -84,6 +84,10 @@ https://github.com/CyC2018/CS-Notes
 
 一个在校生编写的CS方面的note。star超过42k。
 
+https://btnews.ktlab.io/
+
+睡前消息文稿合集
+
 ## 工具软件及其官网
 
 http://www.box2d.org

@@ -27,7 +27,11 @@ VINS: Visual-inertial SLAM
 
 http://www.cnblogs.com/gaoxiang12/
 
-一个SLAM方面的blog。作者半闲居士，目前在德国慕尼黑工业大学留学，清华本科。
+一个SLAM方面的blog。作者半闲居士，本名高翔，目前在德国慕尼黑工业大学留学，清华本科。
+
+https://www.zhihu.com/question/613243112
+
+如何评价高翔博士（《视觉SLAM十四讲》作者）的新书《自动驾驶与机器人中的SLAM技术》？
 
 https://vision.in.tum.de/research/vslam
 

@@ -141,6 +141,14 @@ https://www.zhihu.com/question/20195292
 
 QWERTY键盘的设计原理是什么？
 
+https://zhuanlan.zhihu.com/p/644207095
+
+Marvell在中国落幕，出来了多少芯片大佬（上）？
+
+https://zhuanlan.zhihu.com/p/644446502
+
+Marvell在中国落幕，出来了多少芯片大佬（下）？
+
 # 上古软件开发
 
 https://mp.weixin.qq.com/s/movz5aesYdZZZHle-hHRIw
@@ -287,6 +295,14 @@ https://www.zhihu.com/question/600905979
 
 曾经风靡一时的ghost系统，为什么销声匿迹了？
 
+https://zhuanlan.zhihu.com/p/573114357
+
+中国国产操作系统的历史
+
+https://mp.weixin.qq.com/s/HcaH1yFtCnhjxb9ShqhFEQ
+
+世界头号黑客去世，从通缉犯到安全顾问，59年传奇人生落幕（Kevin Mitnick）
+
 # 区块链参考资源+
 
 https://mp.weixin.qq.com/s/m9KwANPIudVesoXjejnOJA
@@ -350,7 +366,3 @@ https://mp.weixin.qq.com/s/rlTJVV0PXjII2YJYENlwlw
 https://mp.weixin.qq.com/s/J6yF8fzvhLK-kJcdFXBxJg
 
 马斯克投15亿，价值47000美元的比特币，其实是一群数学家搞出来的……
-
-https://zhuanlan.zhihu.com/p/573114357
-
-中国国产操作系统的历史

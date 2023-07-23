@@ -121,6 +121,10 @@ https://mp.weixin.qq.com/s/80iF3secK_K7uSuuYfUDEw
 
 分布式数据库TiDB是如何结合OLTP和OLAP的？
 
+https://zhuanlan.zhihu.com/p/39896539
+
+白话TiDB原理
+
 https://mp.weixin.qq.com/s/-OfYLqVPVioRP1kkIsCFsA
 
 小米大数据：借助Apache Kylin打造高效、易用的一站式OLAP解决方案

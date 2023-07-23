@@ -209,6 +209,10 @@ https://www.zhihu.com/question/555702554
 
 波兰现多起煤炭诈骗案，有人买到染成黑色的石头，为何会发生此类事件？（煤矸石）
 
+https://www.sohu.com/a/353297608_100189626
+
+比沙林独性强10倍！死神的香水——“诺维乔克”
+
 ## 食品工业
 
 ![](/images/img3/Mulberry_Dyke_Fish_Pond.png)

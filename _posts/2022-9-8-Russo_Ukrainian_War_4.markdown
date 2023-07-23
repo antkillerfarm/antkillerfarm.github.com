@@ -93,6 +93,8 @@ https://zhuanlan.zhihu.com/p/639099448
 
 ---
 
+Igor Girkin，斯科特列夫，斯原莞尔，真名：伊戈尔·弗谢沃洛多维奇·吉尔金（Igor Vsevolodovich Girkin），别名伊戈尔·伊万诺维奇·斯特列尔科夫（Igor Ivanovich Strelkov）。
+
 2014年克里米亚、顿巴斯俄罗斯局势翻盘的总“操盘手”、前线指挥官，后任俄罗斯对外情报局副局长，被中国的俄罗斯研究者称为“俄罗斯岳飞”的斯特列科夫。
 
 斯特列科夫上节目亲自辟谣：克里米亚根本没人支持我们，全靠我带的兵拿枪顶着议员完成公投。
@@ -108,6 +110,10 @@ https://www.zhihu.com/question/557586862
 https://zhuanlan.zhihu.com/p/589762420
 
 斯特列尔科夫“非法”从军记
+
+https://www.zhihu.com/question/613330847
+
+俄罗斯一代名将吉尔金因为直言敢谏被奸臣陷害被捕，他忠君报国的悲剧一生如何评价？
 
 ---
 
