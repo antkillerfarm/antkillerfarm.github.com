@@ -11,6 +11,18 @@ category: Chip
 
 ## 真假自研（续）
 
+威盛（VIA）在1999年6月先后买下Cyrix微处理器设计部门和Centaur（从前的IDT）后，合并为VIA在美国的处理器研发总部，仍然叫作Centaur。这是第一次传承转移，然后VIA把Centaur在x86方面的技术成果全盘出售给兆芯，完成了第二次衣钵传承。
+
+https://mp.weixin.qq.com/s/HDTNCrKYJ7daZieg4rb4VA
+
+英特尔收购威盛X86业务 兆芯何去何从
+
+https://zhuanlan.zhihu.com/p/530763927
+
+兆芯枯木育新枝，前尘入魂续今世
+
+---
+
 海光买了AMD zen-（浮点单元阉割一半）的IP，但是买不到zen2和之后的新核心，因为AMD不卖。
 
 飞腾找台湾世芯代理设计，但因飞腾参与超算建设上了美国黑名单，台湾世芯宁可承受损失也不再继续提供设计服务。
