@@ -9,6 +9,22 @@ category: DL acceleration
 
 # 并行 & 框架 & 优化
 
+https://mp.weixin.qq.com/s/F10UaaoxGPOE4pc59LBCRw
+
+数据并行化对神经网络训练有何影响？谷歌大脑进行了实证研究
+
+https://mp.weixin.qq.com/s/UF7DDenUQJ3bL83IHxOkIw
+
+分布式优化算法及其在多智能体系统与机器学习中的应用
+
+https://mp.weixin.qq.com/s/6h9MeBs89hTtWsYSZ4pZ5g
+
+蚂蚁金服核心技术：百亿特征实时推荐算法揭秘
+
+https://mp.weixin.qq.com/s/xV5cLbCPb7Nh6i4i7DxJIQ
+
+没人告诉你的大规模部署AI高效流程！
+
 https://mp.weixin.qq.com/s/8R7YhcZ_Dt0oFIF3bQovxw
 
 为了提升DL模型性能，阿里工程师打造了流式编程框架

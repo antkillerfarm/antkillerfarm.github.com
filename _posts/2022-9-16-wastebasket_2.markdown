@@ -95,6 +95,10 @@ https://mp.weixin.qq.com/s/eoqrkj6fnCWUiKQpCyDJbw
 
 人人都想成为何同学，但人人都活成了大猛子
 
+https://www.zhihu.com/question/613708002
+
+如何看待抚顺市建筑设计研究院有限公司2023年7月发布的《告全体员工书》？
+
 ---
 
 张雪峰经典语录：
@@ -121,7 +125,7 @@ https://mp.weixin.qq.com/s/eoqrkj6fnCWUiKQpCyDJbw
 
 因为张雪峰的真相只要一个6年周期就够了。
 
-高考一年，投报志愿→大学四年→就业一年。
+高考一年，投报志愿。大学四年。就业一年。
 
 https://www.zhihu.com/question/610084775
 

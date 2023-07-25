@@ -9,6 +9,32 @@ category: DL acceleration
 
 # 并行 & 框架 & 优化
 
+## 分布式数据集
+
+大模型不光模型的训练是分布式的，数据集也是分布式的。
+
+https://www.alanshawn.com/tech/2022/02/27/tensorflow-big-dataset.html
+
+Using Huge, Heterogenous Datasets in TensorFlow
+
+https://tensorflow.google.cn/datasets/beam_datasets?hl=zh-cn
+
+使用Apache Beam生成大型数据集
+
+https://www.tensorflow.org/tutorials/distribute/input?hl=zh-cn
+
+分布式输入
+
+## Pathways
+
+https://blog.csdn.net/OneFlow_Official/article/details/124054450
+
+解读谷歌Pathways架构（一）：Single-controller与Multi-controller
+
+https://blog.csdn.net/OneFlow_Official/article/details/124113864
+
+解读谷歌Pathways架构（二）：向前一步是OneFlow
+
 ## Bucketing
 
 Bucketing是一种训练多个不同但又相似的结构的网络的方法，这些网络共享相同的参数集。
@@ -306,19 +332,3 @@ https://mp.weixin.qq.com/s/UbZtUL6Iveb4S3nTU0liGw
 https://mp.weixin.qq.com/s/kLXJsHbBnRIFC3NLChPhzA
 
 如何高效进行大规模分类？港中文联合商汤提出新方法
-
-https://mp.weixin.qq.com/s/F10UaaoxGPOE4pc59LBCRw
-
-数据并行化对神经网络训练有何影响？谷歌大脑进行了实证研究
-
-https://mp.weixin.qq.com/s/UF7DDenUQJ3bL83IHxOkIw
-
-分布式优化算法及其在多智能体系统与机器学习中的应用
-
-https://mp.weixin.qq.com/s/6h9MeBs89hTtWsYSZ4pZ5g
-
-蚂蚁金服核心技术：百亿特征实时推荐算法揭秘
-
-https://mp.weixin.qq.com/s/xV5cLbCPb7Nh6i4i7DxJIQ
-
-没人告诉你的大规模部署AI高效流程！

@@ -9,6 +9,26 @@ category: DL acceleration
 
 # MPI（续）
 
+## 其他概念
+
+这里的有些概念并非MPI的内容，但在分布式计算中，应用的比较广，所以就放在这里了。
+
+rank：进程号，在多进程上下文中，我们通常假定rank 0是第一个进程或者主进程，也被称为coordinator（master）。其余的进程为worker。由Rank0来协调所有Rank的进度。
+
+node：物理节点，可以是一个容器也可以是一台机器，节点内部可以有多个GPU。
+
+local_rank：指在一个node上进程的相对序号，local_rank在node之间相互独立。
+
+![](/images/img4/rank.png)
+
+rank与GPU之间没有必然的对应关系，一个rank可以包含多个GPU；一个GPU也可以为多个rank服务（多进程共享GPU），只是习惯上默认一个rank对应着一个GPU。
+
+---
+
+stencil计算：
+
+![](/images/img5/stencil.jpg)
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/69497154
@@ -280,29 +300,3 @@ gpu::CopyBufferToDevice -> Stream::ThenMemcpy
 graphcore的实现没有动`GenericTransferManager`，而是自己单独弄了一套基于`TranslatedFeedInfo`类的cache机制。
 
 tensorflow/compiler/plugin/poplar/driver/poplar_executable_cache.cc
-
-## 分布式数据集
-
-大模型不光模型的训练是分布式的，数据集也是分布式的。
-
-https://www.alanshawn.com/tech/2022/02/27/tensorflow-big-dataset.html
-
-Using Huge, Heterogenous Datasets in TensorFlow
-
-https://tensorflow.google.cn/datasets/beam_datasets?hl=zh-cn
-
-使用Apache Beam生成大型数据集
-
-https://www.tensorflow.org/tutorials/distribute/input?hl=zh-cn
-
-分布式输入
-
-## Pathways
-
-https://blog.csdn.net/OneFlow_Official/article/details/124054450
-
-解读谷歌Pathways架构（一）：Single-controller与Multi-controller
-
-https://blog.csdn.net/OneFlow_Official/article/details/124113864
-
-解读谷歌Pathways架构（二）：向前一步是OneFlow

@@ -133,6 +133,10 @@ https://zhuanlan.zhihu.com/p/482979228
 
 # MPI
 
+在《机器学习（三十三）》的Parameter Server一节，我们已经提到了Parameter Server这种参数中心化的分布式计算方案，但Parameter Server主要适用于稀疏矩阵的参数更新。对于多数的DL算法而言，采用**参数去中心化的集合通讯模式**是一种更有效率的做法。
+
+---
+
 集群可以很好解决单节点计算力不足的问题，但在集群中大规模的数据交换是很耗费时间的，因此需要一种在多节点的情况下能快速进行数据交流的标准，这就是Message passing interface(MPI)。
 
 MPI的主流实现主要是：mpich，openmpi，Intel MPI，Microsoft MPI，其中Intel MPI和Microsoft MPI都是基于开源的mpich。
@@ -275,23 +279,3 @@ Massively Scale Your Deep Learning Training with NCCL 2.4
 https://zhuanlan.zhihu.com/p/611229620
 
 NVIDIA的custom allreduce
-
-## 其他概念
-
-这里的有些概念并非MPI的内容，但在分布式计算中，应用的比较广，所以就放在这里了。
-
-rank：进程号，在多进程上下文中，我们通常假定rank 0是第一个进程或者主进程，也被称为coordinator（master）。其余的进程为worker。由Rank0来协调所有Rank的进度。
-
-node：物理节点，可以是一个容器也可以是一台机器，节点内部可以有多个GPU。
-
-local_rank：指在一个node上进程的相对序号，local_rank在node之间相互独立。
-
-![](/images/img4/rank.png)
-
-rank与GPU之间没有必然的对应关系，一个rank可以包含多个GPU；一个GPU也可以为多个rank服务（多进程共享GPU），只是习惯上默认一个rank对应着一个GPU。
-
----
-
-stencil计算：
-
-![](/images/img5/stencil.jpg)

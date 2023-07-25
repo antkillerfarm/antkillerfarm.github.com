@@ -93,6 +93,10 @@ https://rubyinstaller.org/
 
 `sudo gem install jekyll rdiscount webrick`
 
+卸载软件：
+
+`sudo gem uninstall XXX`
+
 5.进入blog的根目录之后,运行
 
 `jekyll serve`
