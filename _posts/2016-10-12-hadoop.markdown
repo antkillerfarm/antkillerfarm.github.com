@@ -124,6 +124,8 @@ Single Node又可分为两种模式：Standalone和Pseudo-Distributed。前者�
 
 http://www.cnblogs.com/serendipity/archive/2011/08/23/2151031.html
 
+hadoop配置含义
+
 ## CDH
 
 Cloudera’s Distribution Including Apache Hadoop，简称CDH，是目前用的比较多的Hadoop版本，相比于Apache官方的Hadoop来说，有以下优点：
@@ -222,6 +224,30 @@ http://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-c
 
 map-reduce：把任务map到计算资源上去，得到结果之后reduce。
 
+## Hadoop生态
+
+Hive可以简单理解为，Hadoop之上添加了自己的SQL解析和优化器，写一段SQL，解析为Java代码，然后去执行MR，底层数据还是在HDFS上。
+
+这看起来挺完美，但问题是程序员发现好慢啊。原因是MR，它需要频繁写读文件。这时基于内存的Spark出现了，Spark是替代MR的，它会为SQL生成有向无环图，加上各种算子和宽窄依赖的优化，使得计算速度达到了新的高度。
+
+快递员每天都只给你派送一件快递，你拿到之后钱货两清。然后突然一天快递员给你送一千件到你楼下，你下楼一件一件搬，快递员还得等你搬完才能回去，这得等到啥时候。聪明的你马上想到了，放快递柜呀，你有时间慢慢搬不就行了，也不占用快递员的时间了。
+
+这就是消息队列，Kafka就是起这样的作用：异步、解耦、消峰。数据一般会抛到kafka或RocketMQ，可以保存一段时间。然后下游程序再去实时拉取消息来计算。
+
+Spark Streaming则是实时数据来一小批，它就处理一小批。所以本质上讲，Spark Streaming 还是批处理，只不过是每一批数据很少，并且处理很及时，从而达到实时计算的目的。
+
+真正世界里的实时数据肯定不是像Spark Streaming 那样一批一批来的，而是一个一个的事件。对此，Flink帮助我们解决了这些问题。
+
+流计算的思路是，如果要达到更实时的更新，我何不在数据流进来的时候就处理了？比如还是词频统计的例子，我的数据流是一个一个的词，我就让他们一边流过，一边开始统计了。流计算很牛逼，基本无延迟，但是它的短处是，不灵活，你想要统计的东西必须预先知道，毕竟数据流过就没了，你没算的东西就无法补算了。因此它是个很好的东西，但是无法替代数据仓库和批处理系统。
+
+KV Store就是说，我有一堆键值，我能很快速滴获取与这个Key绑定的数据。比如我用身份证号，能取到你的身份数据。这个动作用MapReduce也能完成，但是很可能要扫描整个数据集。而KV Store专用来处理这个操作，所有存和取都专门为此优化了。
+
+KV Store的理念是，基本无法处理复杂的计算，大多没法JOIN，也许没法聚合，没有强一致性保证（不同数据分布在不同机器上，你每次读取也许会读到不同的结果，也无法处理类似银行转账那样的强一致性要求的操作）。但是丫就是快。极快。
+
+https://www.zhihu.com/question/27974418
+
+如何用形象的比喻描述大数据的技术生态？Hadoop、Hive、Spark 之间是什么关系？
+
 ## 参考
 
 https://mp.weixin.qq.com/s/Koz2xOnmVgKFeCr2Xqe9VQ
@@ -289,61 +315,3 @@ https://mp.weixin.qq.com/s/L84Ll2PlJLHhQYo134bcFQ
 https://mp.weixin.qq.com/s/zqvKzJkP5LtDriuRXojn7Q
 
 我们为什么从Kafka迁移至Pulsar？
-
-# OpenCV+
-
-https://mp.weixin.qq.com/s/pG5nq1fQ9XHp8WZN1AiLJQ
-
-OpenCV基于Inception模型图像分类
-
-https://mp.weixin.qq.com/s/EqeNS6s72_Qwg6mmDRl6wQ
-
-OpenCV基于DLCO描述子匹配
-
-https://mp.weixin.qq.com/s/JVuxMUmN2_DNfg1Ol5b8cw
-
-OpenCV3新特性-图像无缝克隆函数演示
-
-https://mp.weixin.qq.com/s/O3o8W1KSsZ0rz7aVukDWEg
-
-使用OpenCV测量图像中物体之间的距离
-
-https://mp.weixin.qq.com/s/HmOiQnkaqxcFPOODnOeUkw
-
-使用OpenCV检测坑洼
-
-https://mp.weixin.qq.com/s/BTmozO6Yr-Jsfm4-YXh2Mg
-
-基于OpenCV的图像梯度与边缘检测
-
-https://mp.weixin.qq.com/s/QYnXiAMFC3k_wQIwiaeWQg
-
-三行代码，OpenCV轻松生成19种色彩风格图像
-
-https://mp.weixin.qq.com/s/4LQBY0rMJk0tU8lF3fgHfQ
-
-基于OpenCV的图像阴影去除
-
-https://mp.weixin.qq.com/s/kH6K6L6-BYnYE-g46WhNCg
-
-在OpenCV中使用色彩校正
-
-https://mp.weixin.qq.com/s/K4P8151BuM4DQPSK-KzPFQ
-
-OpenCV图像旋转的原理与技巧
-
-https://mp.weixin.qq.com/s/hGONFisdtwcF5CRSB9IF6g
-
-图像处理基础：颜色空间及其OpenCV实现
-
-https://mp.weixin.qq.com/s/0Z600IIGscgrREgLUqjLuA
-
-手把手教你用Python做一个图像融合demo
-
-https://mp.weixin.qq.com/s/vo1v5dYGLMqzCSUG9gPvag
-
-使用OpenCV进行图像编辑--绘画和素描
-
-https://mp.weixin.qq.com/s/EkxXV7Bizf4JxG15SQb79w
-
-修改OpenCV一行代码，提升14%图像匹配效果（BEBLID(Boosted Efficient Binary Local Image Descriptor)是一个2020年才开发出来的算子）
