@@ -9,6 +9,13 @@ category: Deep Object Detection
 
 # YOLOv4（续）
 
+各部分的改进如下：
+
+- 输入端：这里指的创新主要是训练时对输入端的改进，主要包括Mosaic数据增强、cmBN、SAT自对抗训练。
+- BackBone主干网络：将各种新的方式结合起来，包括：CSPDarknet53、Mish激活函数、Dropblock。
+- Neck：目标检测网络在BackBone和最后的输出层之间往往会插入一些层，比如Yolov4中的SPP模块、FPN+PAN结构。
+- Prediction：输出层的锚框机制和Yolov3相同，主要改进的是训练时的损失函数CIOU_Loss，以及预测框筛选的nms变为DIOU_nms。
+
 参考：
 
 https://zhuanlan.zhihu.com/p/135909702
@@ -391,15 +398,3 @@ https://mp.weixin.qq.com/s/kdD658xzC-JxuWGYqLRtcQ
 https://mp.weixin.qq.com/s?__biz=MzI5MDUyMDIxNA==&mid=2247486104&idx=1&sn=5580a4680f3190adb98638471e9b5982
 
 百度视觉团队斩获 ECCV Google AI 目标检测竞赛冠军，获奖方案全解读
-
-https://zhuanlan.zhihu.com/p/54182158
-
-GHM（解决one-stage样本不平衡问题）目标检测算法论文阅读笔记
-
-https://mp.weixin.qq.com/s/nL9l7hvG3RG7G7LzCzzvug
-
-旷视科技2018 COCO负责人俞刚：如何构建检测与分割的冠军系统
-
-https://mp.weixin.qq.com/s/ZQqcsJenqkXtH1czOe5WnA
-
-阿里巴巴提出Auto-Context R-CNN算法，刷出Faster RCNN目标检测新高度

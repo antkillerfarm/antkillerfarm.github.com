@@ -353,6 +353,14 @@ https://mp.weixin.qq.com/s/W6m2eaysYiK6-3Niz4KeOA
 
 Confluence：物体检测中不依赖IoU的NMS替代算法论文解析
 
+## WBF
+
+加权框融合（WBF）是一种提高目标检测系统性能的强大技术。它是一种将多个边界框或感兴趣区域 (ROI) 的结果组合成一个更准确、更稳定的结果的方法。当使用多个模型或算法来检测图像或视频中的目标并且需要组合结果以提高整体性能时，该技术特别有用。
+
+https://mp.weixin.qq.com/s/fsByXBrTWaWBDR-FjhHwnA
+
+目标检测的后处理：NMS vs WBF
+
 # YOLOv4
 
 YOLO系列(v1-v3)作者Joe Redmon宣布不再继续CV方向的研究，引起学术圈一篇哗然。
@@ -376,10 +384,3 @@ Yolov4的五个基本组件：
 - Res unit：借鉴Resnet网络中的残差结构，让网络可以构建的更深。
 - CSPX：借鉴CSPNet网络结构，由卷积层和X个Res unint模块Concate组成。
 - SPP：采用1×1，5×5，9×9，13×13的最大池化的方式，进行多尺度融合。
-
-各部分的改进如下：
-
-- 输入端：这里指的创新主要是训练时对输入端的改进，主要包括Mosaic数据增强、cmBN、SAT自对抗训练。
-- BackBone主干网络：将各种新的方式结合起来，包括：CSPDarknet53、Mish激活函数、Dropblock。
-- Neck：目标检测网络在BackBone和最后的输出层之间往往会插入一些层，比如Yolov4中的SPP模块、FPN+PAN结构。
-- Prediction：输出层的锚框机制和Yolov3相同，主要改进的是训练时的损失函数CIOU_Loss，以及预测框筛选的nms变为DIOU_nms。

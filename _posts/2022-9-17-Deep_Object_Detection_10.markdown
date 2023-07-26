@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（十）——目标检测进阶（1）
+title:  深度目标检测（十）——目标检测进阶
 category: Deep Object Detection 
 ---
 
@@ -8,6 +8,18 @@ category: Deep Object Detection
 {:toc}
 
 # 目标检测进阶
+
+https://zhuanlan.zhihu.com/p/54182158
+
+GHM（解决one-stage样本不平衡问题）目标检测算法论文阅读笔记
+
+https://mp.weixin.qq.com/s/nL9l7hvG3RG7G7LzCzzvug
+
+旷视科技2018 COCO负责人俞刚：如何构建检测与分割的冠军系统
+
+https://mp.weixin.qq.com/s/ZQqcsJenqkXtH1czOe5WnA
+
+阿里巴巴提出Auto-Context R-CNN算法，刷出Faster RCNN目标检测新高度
 
 https://mp.weixin.qq.com/s/aLYQepnr_BjS27Fb-zoZ_g
 

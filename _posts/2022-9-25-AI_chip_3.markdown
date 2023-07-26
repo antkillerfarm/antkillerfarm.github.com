@@ -293,6 +293,10 @@ https://zhuanlan.zhihu.com/p/639181571
 
 谈一下英伟达帝国的破腚
 
+https://developer.nvidia.com/blog/nvidia-hopper-architecture-in-depth/
+
+NVIDIA Hopper Architecture In-Depth
+
 # AMD
 
 ## Matrix Core

@@ -69,6 +69,12 @@ https://mp.weixin.qq.com/s/ommR-5zMvYvFiGodVZxBLw
 
 顿涅茨克机场守城战：乌克兰版《八佰》
 
+---
+
+https://zhuanlan.zhihu.com/p/615030200
+
+唯一真神亚努科维奇（上）
+
 ## 战前 & 军改
 
 圣彼得问一个刚到天堂的人：你出生在哪里？
