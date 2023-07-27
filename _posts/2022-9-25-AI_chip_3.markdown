@@ -9,6 +9,38 @@ category: Chip
 
 # AI Chip
 
+https://zhuanlan.zhihu.com/p/25382177
+
+AI芯片怎么降功耗？
+
+https://mp.weixin.qq.com/s/2aE5fzGZeyX-oFyWbcbA5A
+
+揭开神经网络加速器的神秘面纱之DianNao
+
+https://mp.weixin.qq.com/s/VAFb0DAZAUyDnjE6SlNcXw
+
+如何对比评价各种深度神经网络硬件？不妨给它们跑个分
+
+https://zhuanlan.zhihu.com/p/26594188
+
+浅析Yann LeCun提到的两款Dataflow Chip
+
+https://zhuanlan.zhihu.com/p/25728988
+
+AI芯片的几种选择，你更看好哪个？
+
+https://zhuanlan.zhihu.com/p/25510056
+
+ISSCC 2017看AI芯片的四大趋势
+
+https://zhuanlan.zhihu.com/p/26404565
+
+AI芯片四大流派论剑，中国能否弯道超车？
+
+https://zhuanlan.zhihu.com/p/27472524
+
+从AI芯片说起，一起来看芯片门类
+
 https://mp.weixin.qq.com/s/Cy_vb0PpcvGTDmlMt1VkSw
 
 从GPU、TPU到FPGA及其它：一文读懂神经网络硬件平台战局
