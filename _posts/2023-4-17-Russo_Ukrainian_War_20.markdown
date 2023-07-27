@@ -37,6 +37,8 @@ FPV（First Person View）无人机是穿越竞速用无人机（Racing Drone）
 
 ![](/images/img5/UAV.jpg)
 
+总理什米哈尔在无人机军队项目周年纪念仪式上发表演讲称，内阁今年已拨款400亿格里夫纳用于无人机生产。
+
 https://www.zhihu.com/answer/2663634611
 
 土耳其的无人机TB2在这次俄乌冲突中表现亮眼，为什么这么久俄罗斯还没找到克制的办法？
