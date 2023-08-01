@@ -77,6 +77,8 @@ Without gas or without you? – The answer is without you. Without electricity o
 
 即使没有电，我们对自己的信仰之光也不会被熄灭。
 
+虽然自由代价很高，但奴隶的代价更高！自由是一代人的代价，奴隶却是一代又一代人的，代价代代相传，我们忍了下来，抵挡了攻击、威胁、核威胁、恐怖和导弹袭击。这个冬天我们也会熬过去，因为我们知道我们为何而战！
+
 This year began on February 24. Without prefaces and preludes.
 
 今年是从2月24日开始的，没有序言也没有前奏。
@@ -262,11 +264,3 @@ https://www.zhihu.com/question/26061576
 https://zhuanlan.zhihu.com/p/638419403
 
 俄罗斯为什么有那么多弗拉基米尔
-
----
-
-鹅鹅鹅，曲颈用刀割，拔毛加漂水，洗洗盖上锅。
-
-夜漏鹅：Yellow Russian
-
-普京：从普构到普昚再到普裕。晋凉公到普厉侯。当今已无天子。一等强国可为公，二等强国可为侯，俄罗斯原本就是一个以军事见长民生为短的国家，现在却在军事上和乌克兰打得有来有回，所以俄罗斯已不是一等强国，故降级为侯。

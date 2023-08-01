@@ -235,6 +235,14 @@ https://mp.weixin.qq.com/s/OgTQ3O_6lvOG07U-tjpTDA
 
 如何让Transformer在GPU上跑得更快？快手：需要GPU底层优化
 
+https://www.zhihu.com/question/611236756
+
+FlashAttention的速度优化原理是怎样的？
+
+https://zhuanlan.zhihu.com/p/638468472
+
+从FlashAttention到PagedAttention, 如何进一步优化Attention性能
+
 # Linformer
 
 https://mp.weixin.qq.com/s/IOc-gxOa6a415Hf1VBmiQw

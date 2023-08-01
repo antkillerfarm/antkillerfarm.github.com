@@ -209,6 +209,10 @@ https://zhuanlan.zhihu.com/p/391094717
 
 详解HBA、NIC与CNA的区别
 
+https://zhuanlan.zhihu.com/p/646829255
+
+PCIe体系结构
+
 ## 历史
 
 NetBurst可以说是Intel历史上最大的战略错误。

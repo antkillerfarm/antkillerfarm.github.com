@@ -79,6 +79,14 @@ https://mp.weixin.qq.com/s/lkB1xn6G2P5Nivj7DcYg5w
 
 Electra: 判别还是生成，这是一个选择
 
+## Embedding
+
+预训练刚兴起时，在语言模型的输出端重用Embedding权重是很常见的操作，比如BERT、第一版的T5、早期的GPT，都使用了这个操作，这是因为当模型主干部分不大且词表很大时，Embedding层的参数量很可观，如果输出端再新增一个独立的同样大小的权重矩阵的话，会导致显存消耗的激增。不过随着模型参数规模的增大，Embedding层的占比相对变小了，加之《Rethinking embedding coupling in pre-trained language models》等研究表明共享Embedding可能会有些负面影响，所以现在共享Embedding的做法已经越来越少了。
+
+https://kexue.fm/archives/9698
+
+语言模型输出端共享Embedding的重新探索
+
 ## 参考
 
 https://www.zhihu.com/question/298203515
@@ -388,39 +396,3 @@ https://mp.weixin.qq.com/s/MgLLPEY3ynJGkuTgnIXndQ
 https://mp.weixin.qq.com/s/nIT3GIU0dUIYyGChxsiOWw
 
 Google BERT应用之《红楼梦》对话人物提取
-
-https://mp.weixin.qq.com/s/dcp_ANYijRmicMYX7OpJmA
-
-如何用最强模型BERT做NLP迁移学习？
-
-https://mp.weixin.qq.com/s/DR4SkgOfUT7KYiaXm5NynQ
-
-跨语言版BERT：Facebook提出跨语言预训练模型XLM
-
-https://mp.weixin.qq.com/s/epjjHmlmMFhWtRO_cCUITA
-
-用BERT进行多标签文本分类
-
-https://mp.weixin.qq.com/s/Wk6gvOS_Qnud6ib1esMFXA
-
-加入Transformer-XL，这个PyTorch包能调用各种NLP预训练模型！
-
-https://mp.weixin.qq.com/s/GqqU3Ixht1BzMnQeRYQEqQ
-
-谷歌NLP深度学习模型BERT特征的可解释性表现怎么样？
-
-https://mp.weixin.qq.com/s/2f91Ksj19rk_emoFpEmPfA
-
-从BERT看大规模数据的无监督利用
-
-https://mp.weixin.qq.com/s/hF4EcKqmaTm_gemxX7Kftg
-
-BERT的嵌入层是如何实现的？
-
-https://mp.weixin.qq.com/s/CdjNQKSNuklVUsXe4InSoA
-
-FastBERT：放飞BERT的推理速度
-
-https://zhuanlan.zhihu.com/p/132361501
-
-BERT是如何分词的

@@ -9,6 +9,42 @@ category: Attention
 
 # BERT进阶（续）
 
+https://mp.weixin.qq.com/s/dcp_ANYijRmicMYX7OpJmA
+
+如何用最强模型BERT做NLP迁移学习？
+
+https://mp.weixin.qq.com/s/DR4SkgOfUT7KYiaXm5NynQ
+
+跨语言版BERT：Facebook提出跨语言预训练模型XLM
+
+https://mp.weixin.qq.com/s/epjjHmlmMFhWtRO_cCUITA
+
+用BERT进行多标签文本分类
+
+https://mp.weixin.qq.com/s/Wk6gvOS_Qnud6ib1esMFXA
+
+加入Transformer-XL，这个PyTorch包能调用各种NLP预训练模型！
+
+https://mp.weixin.qq.com/s/GqqU3Ixht1BzMnQeRYQEqQ
+
+谷歌NLP深度学习模型BERT特征的可解释性表现怎么样？
+
+https://mp.weixin.qq.com/s/2f91Ksj19rk_emoFpEmPfA
+
+从BERT看大规模数据的无监督利用
+
+https://mp.weixin.qq.com/s/hF4EcKqmaTm_gemxX7Kftg
+
+BERT的嵌入层是如何实现的？
+
+https://mp.weixin.qq.com/s/CdjNQKSNuklVUsXe4InSoA
+
+FastBERT：放飞BERT的推理速度
+
+https://zhuanlan.zhihu.com/p/132361501
+
+BERT是如何分词的
+
 https://mp.weixin.qq.com/s/Tld9V1jdmWs06zNxiJNkZg
 
 BART&MASS自然语言生成任务上的进步
