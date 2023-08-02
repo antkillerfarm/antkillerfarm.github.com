@@ -320,3 +320,7 @@ https://zhuanlan.zhihu.com/p/637175526
 https://zhuanlan.zhihu.com/p/641610350
 
 事实核查 俄罗斯士兵遗体被打包成方块吗？
+
+https://zhuanlan.zhihu.com/p/556687737
+
+纠结的二代，纯粹的恶--K.Galeev谈杜金娜之死

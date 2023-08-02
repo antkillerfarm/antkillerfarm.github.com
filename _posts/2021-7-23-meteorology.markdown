@@ -101,7 +101,7 @@ Hadley Cells
 
 2021.7.20
 
-<video  id="myvideo" width="100%" height="auto" controls="controls" loop="loop">
+<video  id="myvideo" width="75%" height="auto" controls="controls" loop="loop">
     <source src="/images/img4/rainstorm.mp4" type='video/mp4' />
 </video>
 
@@ -112,6 +112,8 @@ Hadley Cells
 郑州的多年平均降雨量为632毫米，而今天下午3~6点3小时的降雨量就超过了300毫米。
 
 1975年8月，第3号台风北上深入内地，迎头撞上伏牛山脉后抬升高度，大量水汽冷凝变成中国大陆有气象记录以来的最强暴雨泼洒在豫西山区，创造了中国大陆上从1小时到72小时的全部降雨量纪录。（1小时198.5毫米，河南林州；12小时954.4毫米，河南泌阳；24小时1054.7毫米，河南方城。）
+
+![](/images/img5/rainstorm.png)
 
 https://www.zhihu.com/question/473413447
 
@@ -155,6 +157,16 @@ https://mp.weixin.qq.com/s/dG8G2q72ViVcn-bnDiAbyQ
 
 ---
 
+https://earth.nullschool.net/
+
+这是一个全球实时风场动图的网站，并可查询历史数据。
+
+https://zhuanlan.zhihu.com/p/136817403
+
+这张气象数据——风场可视化地图是怎么做的？Mapbox技术大牛倾囊相授
+
+---
+
 1915年，圣地亚哥政府曾与查尔斯-哈特菲尔德（编者注：当时圣地亚哥小有名气的“造雨者”）签订合同，让其增加降水以补充水库蓄水。查尔斯在水库旁建塔，并释放了23种化学物质的混合剂。几天后，雨倒是来了，但却不走了，持续降水引发洪涝，摧毁桥梁，阻断火车，切断电话线缆，最后大坝决堤，致20多人死亡。
 
 https://mp.weixin.qq.com/s/7YnoVGdP7CL06RJ7zvQKwQ
@@ -190,6 +202,24 @@ https://www.zhihu.com/question/549233580
 https://www.guancha.cn/internation/2022_08_20_654516_s.shtml
 
 欧洲大旱，“饥饿之石”重见天日：“如你看到我，就哭泣吧”
+
+---
+
+2012年7月21日 北京特大暴雨
+
+7·20北京暴雨是指2016年7月19日1时至21日6时，北京市出现强降雨天气，此次降雨持续时间长、总量大、范围广，降雨总量超过了2012年7·21北京特大暴雨。
+
+2023年7月29日20时至8月2日07时，北京出现极端强降雨天气。
+
+历时八年建设，耗资八亿人民币，位于北京门头沟门头沟潭柘寺附近的北京悉昙酒店被毁。
+
+<video  id="myvideo" width="75%" height="auto" controls="controls" loop="loop">
+    <source src="/images/img5/BJ.webm" type='video/mp4' />
+</video>
+
+https://www.zhihu.com/question/614628336
+
+时隔11年，中央气象台发布史上第二个暴雨红色预警，此次暴雨为何如此猛烈？其破坏力有多大？
 
 ---
 
