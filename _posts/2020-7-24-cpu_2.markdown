@@ -213,6 +213,10 @@ https://zhuanlan.zhihu.com/p/646829255
 
 PCIe体系结构
 
+https://zhuanlan.zhihu.com/p/646920500
+
+一些PCIE知识整理——带宽计算
+
 ## 历史
 
 NetBurst可以说是Intel历史上最大的战略错误。
