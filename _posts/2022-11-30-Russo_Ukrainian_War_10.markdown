@@ -133,6 +133,10 @@ https://zhuanlan.zhihu.com/p/583780108
 
 得不偿失的胜利：俄乌马里乌波尔之战回顾
 
+https://zhuanlan.zhihu.com/p/546058462
+
+亚速钢铁厂的80天——马里乌波尔的最后堡垒
+
 https://zhuanlan.zhihu.com/p/583924068
 
 马里乌波尔的空中走廊：乌克兰飞行员Mi-8飞行员关于救援飞行的回忆
