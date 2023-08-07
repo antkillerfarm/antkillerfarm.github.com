@@ -199,6 +199,12 @@ https://mp.weixin.qq.com/s/5ireHbuWFrVY6T9qnvs3rQ
 
 浅谈C++元编程
 
+## Other
+
+Boost.Hana：元编程库，提供异构容器和算法，用于类型和值的计算。
+
+Boost.Reflection：提供一种运行时反射机制。
+
 ## BGL
 
 Boost Graph Library是boost提供的一个和图论相关的工具库，集成了常见的图操作（如BFS和DFS）和图算法（最短路径、拓朴排序）。

@@ -217,6 +217,10 @@ https://zhuanlan.zhihu.com/p/646920500
 
 一些PCIE知识整理——带宽计算
 
+https://mp.weixin.qq.com/s/QyPIXvwJ1yux_XxmeNI3hw
+
+PCIe发展历程及常见插槽速度对比
+
 ## 历史
 
 NetBurst可以说是Intel历史上最大的战略错误。

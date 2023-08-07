@@ -287,6 +287,10 @@ http://www.uinio.com/Web/Electron/
 
 使用Electron打造跨平台桌面应用
 
+https://mp.weixin.qq.com/s/STqlp2eMdeoixedCEhYJgQ
+
+新QQ NT桌面版如何实现内存优化探索？
+
 ## CEF
 
 Chromium Embedded Framework的官网是：
