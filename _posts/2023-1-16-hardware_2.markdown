@@ -53,6 +53,18 @@ https://www.zhihu.com/question/571811693
 
 现在usb口普遍都有过流保护为什么还会烧南桥的例子啊?
 
+## AMBA
+
+AMBA：Advanced Microcontroller Bus Architecture
+
+AXI：Advanced eXtensible Interface
+
+AHB：Advanced High-performance Bus
+
+ASB：Advanced System Bus
+
+APB：Advanced Peripheral Bus
+
 ## Others
 
 SERDES是英文SERializer(串行器)/DESerializer(解串器)的简称。
@@ -78,10 +90,6 @@ https://mp.weixin.qq.com/s/1XmbkoRkXUtmR0pnENhfGA
 https://mp.weixin.qq.com/s/aavlfxII5PW_RrsF6nS99g
 
 模-数转换(A/D)技术
-
-https://mp.weixin.qq.com/s/Coz81Zidz_LaSYkcErJsOQ
-
-NAND Flash与NOR Flash究竟有何不同
 
 http://mp.weixin.qq.com/mp/homepage?__biz=MzUyMTA2OTM1MA==&hid=4&sn=192b1f4e49979e13c7df491725415d06&scene=18
 

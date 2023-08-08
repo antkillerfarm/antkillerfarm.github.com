@@ -213,6 +213,12 @@ https://mp.weixin.qq.com/s/ojpAOOnK5fEW12gG1zocBA
 
 # CMake
 
+示例代码：
+
+https://github.com/ttroy50/cmake-examples
+
+---
+
 添加头文件目录
 
 `include_directories(../../../thirdparty/comm/include)`

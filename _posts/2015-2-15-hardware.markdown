@@ -130,15 +130,29 @@ IAP（In-Application Programming）指MCU可以在系统中获取新代码并对
 
 上拉是对器件输入电流，下拉是输出电流；强弱只是上拉电阻的阻值不同，没有什么严格区分；对于非集电极（或漏极）开路输出型电路（如普通门电路）提供电流和电压的能力是有限的，上拉电阻的功能主要是为集电极开路输出型电路输出电流通道。
 
-# nor flash & nand flash
+# NOR Flash & NAND Flash
 
-flash按照内部存储结构不同，分为两种：nor flash和nand flash。
+Flash按照内部存储结构不同，分为两种：NOR Flash和NAND Flash。
 
-NorFLASH使用方便，易于连接，可以在芯片上直接运行代码（eXecute In Place），稳定性出色，传输速率高，在小容量时有很高的性价比，这使其很适合应于嵌入式系统中作为FLASH ROM。
+NOR Flash使用方便，易于连接，可以在芯片上直接运行代码（eXecute In Place），稳定性出色，传输速率高，在小容量时有很高的性价比，这使其很适合应于嵌入式系统中作为FLASH ROM。
 
-在通信方式上Nor Flash分为两种类型：CFI Flash和SPI Flash。
+在通信方式上NOR Flash分为两种类型：CFI Flash和SPI Flash。
 
-NandFLASH强调更高的性能，更低的成本，更小的体积，更长的使用寿命。这使NandFLASH很擅于存储纯资料或数据等，在嵌入式系统中用来支持文件系统。NandFLASH存在坏块问题。
+NAND Flash强调更高的性能，更低的成本，更小的体积，更长的使用寿命。这使NAND Flash很擅于存储纯资料或数据等，在嵌入式系统中用来支持文件系统。NAND Flash存在坏块问题。
+
+桀冈富士雄（Fujio Masuoka）1980年发明了NOR Flash，1986年又发明了NAND Flash。
+
+三星最早提出Norless的概念，在它的CPU on die ROM中固话了NAND Flash的驱动，会把NAND flash的开始一小段拷贝到内存低端作为bootloader,这样昂贵的NOR Flash就被节省下来了，降低了手机主板成本和复杂度。渐渐NOR Flash在手机中慢慢消失了。
+
+参考：
+
+https://mp.weixin.qq.com/s/Coz81Zidz_LaSYkcErJsOQ
+
+NAND Flash与NOR Flash究竟有何不同
+
+https://zhuanlan.zhihu.com/p/26745577
+
+NOR和NAND Flash
 
 # 硬件调试器
 
@@ -189,22 +203,6 @@ OpenOCD（Open On-Chip Debugger）是一款开源软件，最初是Dominic Rath�
 https://zhuanlan.zhihu.com/p/41517198
 
 跟我一起学OpenOCD
-
-# 海思Hi3531
-
-http://www.ebaina.com/bbs/forum-97-3.html
-
-# AMBA
-
-AMBA：Advanced Microcontroller Bus Architecture
-
-AXI：Advanced eXtensible Interface
-
-AHB：Advanced High-performance Bus
-
-ASB：Advanced System Bus
-
-APB：Advanced Peripheral Bus
 
 # 硬件爬坑记录
 

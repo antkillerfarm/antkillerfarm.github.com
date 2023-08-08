@@ -241,6 +241,20 @@ https://mlir.llvm.org/docs/Dialects/
 
 ---
 
+Transform Dialect：dialect之间的调度变换都可以使用transform dialect中相关的语句来实现了，最终写成一个 transform.sequence。相较于完整的Pipeline，transform.sequence实现的调度变换十分灵活。
+
+官方文档：
+
+https://mlir.llvm.org/docs/Tutorials/transform/
+
+参考：
+
+https://zhuanlan.zhihu.com/p/624827690
+
+transform dialect
+
+---
+
 ONNX MLIR:
 
 http://onnx.ai/onnx-mlir

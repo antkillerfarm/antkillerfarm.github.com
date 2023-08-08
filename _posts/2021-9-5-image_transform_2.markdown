@@ -157,6 +157,10 @@ https://zhuanlan.zhihu.com/p/643872569
 
 AI这样把NB写在脸上，它在玩一种很新的艺术
 
+https://zhuanlan.zhihu.com/p/626004957
+
+利用AI在独立游戏项目中大干快上
+
 ## 参考
 
 https://mp.weixin.qq.com/s/djkjAfUO_DefTP2drzY_iQ

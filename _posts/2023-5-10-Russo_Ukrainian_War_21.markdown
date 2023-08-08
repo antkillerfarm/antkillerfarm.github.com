@@ -145,6 +145,10 @@ https://www.zhihu.com/question/379260866
 
 扎波罗热哥萨克给奥斯曼苏丹的回信是个什么梗?
 
+https://baijiahao.baidu.com/s?id=1727498583143869224
+
+乌克兰的扎波罗热，除了核电站，也曾有过一群剽悍的哥萨克
+
 ---
 
 ![](/images/img4/joke_3.jpg)
