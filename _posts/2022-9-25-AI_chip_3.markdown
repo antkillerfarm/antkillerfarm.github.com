@@ -335,6 +335,14 @@ NVIDIA Hopper Architecture In-Depth
 
 对标英伟达Tensor Core，AMD推出Matrix Core。
 
+## 高速互联
+
+对标NV-Link，AMD推出了：
+
+GMI：Global Memory Interconnect
+
+AMD Infinity Fabric Link
+
 ## HIP
 
 ![](/images/img4/latestGPU.png)
@@ -373,6 +381,30 @@ https://www.zhihu.com/question/557608132
 
 如何看待Meta发布的全新推理引擎AITemplate？
 
+## AI服务器
+
+AMD Instinct系列，大致对标NVIDIA DGX。
+
+官网：
+
+https://www.amd.com/zh-hans/graphics/instinct-server-accelerators
+
+![](/images/img5/AMD.jpg)
+
+https://zhuanlan.zhihu.com/p/434686566
+
+AMD CDNA2架构（MI200）
+
+https://www.zhihu.com/question/606505567
+
+如何看待AMD发布Instinct MI300X GPU芯片？是否在大模型时代威胁Nvidia地位?
+
+## 其他对标术语
+
+| AMD | NVIDIA |
+|:--:|:--:|
+| GCN wavefront(64 threads wide) | CUDA warp(32 threads wide) |
+
 ## 参考
 
 ![](/images/img5/AMD.png)
@@ -381,8 +413,14 @@ https://www.zhihu.com/question/557608132
 
 ---
 
-以前的算法比较简单，数据吞吐量小，AMD的短流水线渲染单元数量多所以效率高。到了Ethash这类重IO算法主流的年代其实A卡效率还略有优势，但是没以前那么夸张，所以N卡也被拉出来挖。
+以前的算法比较简单，数据吞吐量小，AMD的短流水线渲染单元数量多所以效率高。到了Ethash这类重IO算法主流的年代，其实A卡效率还略有优势，但是没以前那么夸张，所以N卡也被拉出来挖。
 
 ---
 
 A卡的新驱动对于老游戏的支持有些差，解决办法：删除游戏目录下的dbghelp.dll文件。
+
+---
+
+https://www.zhihu.com/question/593343983
+
+截至2023年4月，用AMD显卡做机器学习怎么样？

@@ -67,6 +67,8 @@ https://baike.baidu.com/tashuo/browse/content?id=0c64d05cac1e174119d96e5f
 
 扎卢日内在谈及泽连斯基的军事才能时表示，他不需要懂军事，就像他不需要懂医学或桥梁建设一样。而令扎卢日内惊讶的是，泽连斯基似乎同意他的看法。
 
+大女儿Arina Zaluzhny在前线当军医，小女儿Khrystyna目前正在学医。乌克兰的女性没有强制兵役，但是医生除外。
+
 https://zhuanlan.zhihu.com/p/496004672
 
 乌克兰：“喜剧演员”总统背后，站着乌军“冷面导演”铁将军（乌克兰武装部队总参谋长瓦列里·扎卢日内 Valeriy Zaluzhnyy）

@@ -109,6 +109,12 @@ kernel,work_item和workgroup
 
 ---
 
+https://github.com/microsoft/antares
+
+Antares: an automatic engine for multi-platform kernel generation and optimization. Supporting CPU, CUDA, ROCm, DirectX12, GraphCore, SYCL for CPU/GPU, OpenCL for AMD/NVIDIA, Android CPU/GPU backends.
+
+---
+
 参考：
 
 http://blog.csdn.net/leonwei/article/details/8880012

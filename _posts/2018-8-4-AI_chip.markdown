@@ -169,8 +169,6 @@ https://www.zhihu.com/question/41469046
 
 ## 壁仞
 
-
-
 https://www.zhihu.com/question/547728200
 
 如何评价壁仞科技发布的最大算力GPGPU BR100？
@@ -178,6 +176,10 @@ https://www.zhihu.com/question/547728200
 https://zhuanlan.zhihu.com/p/642431341
 
 壁仞的BR100：来自中国的机器学习GPU
+
+## 沐曦
+
+沐曦专注在研发全兼容CUDA及ROCm生态的国产GPU计算卡（面向AIDC和HPC的计算需求），创始团队也是AMD背景。
 
 ## Habana
 

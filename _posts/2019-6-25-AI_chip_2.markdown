@@ -224,6 +224,8 @@ https://www.expedera.com/wp-content/uploads/2021/04/Expedera-Linley-White-Paper.
 
 ![](/images/img5/bandwidth_compute_bound.png)
 
+在过去十年的竞争中，核心竞争指标是算力，现在变成了内存带宽和容量。
+
 https://blog.csdn.net/tugouxp/article/details/126479276
 
 利用roofline模型分析异构系统算力VS带宽

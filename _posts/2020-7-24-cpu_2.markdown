@@ -11,6 +11,20 @@ category: Chip
 
 ## 光刻（续）
 
+目前实现商业量产完成度最高的先进制程光刻机，其一是DUV/EUV光刻机，其二是NIL（Nanoimprint Lithography）光刻机。
+
+DUV/EUV光刻机，主要涉及的企业是荷兰ASML和日本尼康。
+
+1995年，华裔科学家周郁（Stephen Chou）教授首次提出纳米压印概念。
+
+NIL光刻的相关企业：
+
+Nanonex，就是周郁大佬参与的公司，总部在新泽西普林斯顿。
+
+佳能，虽然是日本公司，但是佳能NIL光刻机大部分技术来自收购的Molecular Imprints，这家公司位于德克萨斯，至今佳能NIL光刻机的研发中心也还在德克萨斯奥斯汀。
+
+HP，这个更是不用多说，几乎人人都知道HP是美国企业。
+
 参考：
 
 https://mp.weixin.qq.com/s/NZGNrO_LxNc6qrIdofOIfQ
@@ -358,21 +372,3 @@ https://zhuanlan.zhihu.com/p/608663298
 https://zhuanlan.zhihu.com/p/37749443
 
 计算机缓存Cache以及Cache Line详解
-
-## Bélády's Algorithm
-
-Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。
-
->László Bélády，1928年生，匈牙利计算机科学家。Technical University of Budapest本硕。IBM研究员。
-
-LFU: least frequently used
-
-LRU: least recently used
-
-https://mp.weixin.qq.com/s/AdmEd1FHxpZUwSGYy3qggg
-
-利用cpu缓存实现高性能程序
-
-https://zhuanlan.zhihu.com/p/591436083
-
-经典论文解读——Cache替换算法

@@ -140,6 +140,22 @@ Transpiler是一个经常用来和Compiler比较的术语。它用于将一种�
 
 可以看出transpiler和compiler的区别，主要在于两种语言的抽象层次是否相同。因此，transpiler也被称为source-to-source compiler。
 
+## binary translation
+
+binary translation是跨指令集平台互操作的一种方法。
+
+https://www.zhihu.com/question/29851229
+
+二进制翻译(binary translation)有没有成熟的现实应用？请介绍一下实现方式与性能瓶颈?
+
+https://zhuanlan.zhihu.com/p/546892934
+
+【连载1/2】谈谈BT二进制转译技术 - 跨指令集平台互操作的兼容性和局限性
+
+https://zhuanlan.zhihu.com/p/548318341
+
+【连载2/2】谈谈BT二进制转译技术 - 跨指令集平台互操作的兼容性和局限性
+
 ## DSL
 
 tf实现了神经网络的计算图语义模型，但由于其镶嵌于python中，所以是内部DSL编译器。

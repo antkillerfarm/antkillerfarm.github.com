@@ -75,6 +75,12 @@ SIMT: Single Instruction Multiple Threads.
 
 SIMT最早是Nvidia发明的概念，它也是一种编程模型。
 
+SIMD的编程模型除了SIMT之外，还有subword SIMD、vector SIMD、vector-thread (VT)等。
+
+详见论文：
+
+《Simplified Vector-Thread Architectures for Flexible and Efficient Data-Parallel Accelerators》
+
 https://zhuanlan.zhihu.com/p/562135333
 
 SIMT、SIMD和DSA（1）
@@ -272,35 +278,3 @@ Vector的前世今生（2）：ARM SVE简述
 https://zhuanlan.zhihu.com/p/594532014
 
 一文搞懂Cortex-A77（ARMv8架构）工作原理
-
-# DPU
-
-如同GPU是针对图像显示领域的加速，DPU（Data Processing Unit）则是对于数据传输方面的加速。
-
-![](/images/img4/DPU.png)
-
-![](/images/img4/DPU_2.png)
-
-https://zhuanlan.zhihu.com/p/145142691
-
-什么是DPU？
-
-https://mp.weixin.qq.com/s/bL1PoUjZ_sH2VKcBxI6N5A
-
-Wave公司发布数据流处理架构DPU
-
-https://zhuanlan.zhihu.com/p/409507738
-
-写一下DPU
-
-https://www.zhihu.com/question/471238373
-
-dpu芯片发展前景如何？
-
-https://mp.weixin.qq.com/s/xRvXCpHpDnMqSNjJyIf3XQ
-
-大话DPU
-
-https://mp.weixin.qq.com/s/hN8tZ7xCRttIc-3pXdqElQ
-
-中科院计算所牵头发布《专⽤数据处理器DPU技术白皮书》，94页pdf
