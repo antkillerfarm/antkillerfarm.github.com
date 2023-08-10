@@ -315,15 +315,23 @@ https://www.zhihu.com/question/442964082
 
 ## OpenAI Triton
 
-一个类似于TVMscript的可以通过python语法去写高性能GPU程序的库。
+一个类似于TVMscript的可以通过python语法去写高性能GPU程序的库。注意不要和NVIDIA Triton搞混了。后者是一个AI推理框架。
+
+NVIDIA Triton Inference Server（此前称为TensorRT Inference Server）能够帮助开发人员和IT/DevOps轻松地在云端、本地数据中心或边缘部署高性能推理服务器。
 
 官网：
 
 https://github.com/openai/triton
 
+参考：
+
 https://zhuanlan.zhihu.com/p/394377526
 
 OpenAI开源GPU编程语言Triton，将同时支持N卡和A卡
+
+https://zhuanlan.zhihu.com/p/613244988
+
+谈谈对OpenAI Triton的一些理解
 
 ## NVFuser
 

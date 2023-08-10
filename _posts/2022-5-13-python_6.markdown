@@ -327,6 +327,10 @@ NeoVim是Vim的派生品，以及最有力的竞争者。
 
 ## 参考
 
+https://mp.weixin.qq.com/s/k5zdN0rJtVBSVMK4_6g5Bw
+
+年仅62岁！开源巨擘“Vim之父”因病离世，一生写下Vim传奇
+
 https://mp.weixin.qq.com/s/5694PDHy9BeoL8qy31MaxQ
 
 如何用vim格式化代码

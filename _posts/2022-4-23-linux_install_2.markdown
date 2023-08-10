@@ -103,6 +103,26 @@ grub2引导系统iso镜像
 
 # Linux学习心得
 
+## Systemd
+
+![](/images/img5/Systemd.png)
+
+内核初始化的最后一步就是启动PID为1的init进程。这个进程是系统的第一个进程。它负责产生其他所有的用户进程。
+
+init系统大体上的演进路线为sysvinit -> upstart -> systemd。
+
+2010年，德国程序员Lennart Poettering（同时也是Avahi和PulseAudio的作者）发明了Systemd。
+
+http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html
+
+Systemd入门教程：命令篇
+
+http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html
+
+Systemd入门教程：实战篇
+
+## 参考
+
 https://www.kernel.org/doc/html/latest/
 
 Linux官方文档
@@ -317,10 +337,6 @@ https://zhuanlan.zhihu.com/p/370092684
 
 虚拟内存精粹
 
-http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html
-
-Systemd入门教程：命令篇
-
 https://mp.weixin.qq.com/s/xOqXM5kFi0CzilDg0EXFKg
 
 Linux内核源码规范解析
@@ -388,23 +404,3 @@ https://yanqiyu.info/2021/06/21/huawei-v-qwr/
 https://mp.weixin.qq.com/s/-8L5MFZrgmyatGgYaR1AEA
 
 波兰极客用一张软盘运行Linux系统，用的还是最新内核！
-
-https://mp.weixin.qq.com/s/-hfI4GLkChRJQDqcLcvbGg
-
-嵌入式C编程实现上下文的快速切换（cpost）
-
-https://zhuanlan.zhihu.com/p/400200921
-
-x86 Linux下实现10us误差的高精度延时
-
-https://www.zhihu.com/question/496656138
-
-为什么Windows文件设计成占用无法删除？
-
-https://mp.weixin.qq.com/s/h4LwSRAsDgRqOq3mLt_SCw
-
-浅谈mmap
-
-https://mp.weixin.qq.com/s/djEPqxZSfMp13Uf_h6TSiA
-
-认真分析mmap：是什么 为什么 怎么用

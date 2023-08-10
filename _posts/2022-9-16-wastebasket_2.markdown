@@ -99,6 +99,10 @@ https://www.zhihu.com/question/613708002
 
 如何看待抚顺市建筑设计研究院有限公司2023年7月发布的《告全体员工书》？
 
+https://mp.weixin.qq.com/s/pPMs4FGjxY6FvSVGUtd9Vg
+
+经历欠薪、失业后，一位44岁建筑设计师在深圳坠亡
+
 ---
 
 张雪峰经典语录：

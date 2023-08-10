@@ -344,7 +344,7 @@ https://mp.weixin.qq.com/s/sLyD6z2xBXRxfBZnImTgtQ
 
 40+张最全Linux/C/C++思维导图，收藏！
 
-## 时间的表示方法
+# 时间的表示方法
 
 一般遵循ISO 8601标准：
 
@@ -354,11 +354,11 @@ YYYY-MM-DDThh:mm:ss.sTZD (eg 1997-07-16T19:20:30.45+01:00)
 
 其中的TZD表示time zone designator。
 
-## U盘安装Linux
+# U盘安装Linux
 
 在程序中找到“启动盘创建器”即可。这也是防止变砖的最后一条路，反正BIOS是不可能安装坏的，随便折腾吧。
 
-## wifi配置
+# wifi配置
 
 Linux下的wifi配置主要使用iw系列命令，包括iw、iwconfig、iwlist、iwpriv。参见：
 
@@ -366,7 +366,7 @@ http://blog.csdn.net/liangyamin/article/details/7209761
 
 Linux下的iwpriv（iwlist、iwconfig）的简单应用
 
-## eBPF
+# eBPF
 
 eBPF是一项革命性技术，它能在内核中运行沙箱程序（sandbox programs），而无需修改内核源码或者加载内核模块。
 

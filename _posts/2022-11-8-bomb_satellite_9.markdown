@@ -109,6 +109,8 @@ https://www.zhihu.com/question/564799818
 
 320厂（南昌飞机厂，现洪都集团）。
 
+![](/images/img5/RCS.jpg)
+
 https://www.zhihu.com/question/292721850
 
 为什么要黑沈飞？
