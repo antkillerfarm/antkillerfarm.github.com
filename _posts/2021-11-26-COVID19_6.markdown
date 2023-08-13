@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 新冠肺炎（六）——科研, 国际援助, 瘟疫公司, 武汉病毒所, 钟南山
+title: 新冠肺炎（六）——科研, 国际援助, 武汉病毒所, 钟南山
 category: COVID19 
 ---
 
@@ -8,6 +8,36 @@ category: COVID19
 {:toc}
 
 # 病毒变异（续）
+
+https://www.zhihu.com/question/501576771
+
+新冠B.1.1.529毒株被指“可能比德尔塔还可怕”，是真的吗？有多大危害？
+
+https://www.zhihu.com/question/502139594
+
+以色列禁止所有外国人入境，以防“奥密克戎“变异毒株传播，“奥密克戎”是如何传播的？传播速度有多快？
+
+https://mp.weixin.qq.com/s/w8JlU_vu9VKoH0LvU5qriQ
+
+重组狂潮（Omicron的子孙们）
+
+https://mp.weixin.qq.com/s/kjc1xEDmPvjInBW0FhuPyA
+
+论，持久战
+
+https://mp.weixin.qq.com/s/-_e9Doxkinp2fNTo8-p9_A
+
+Omicron：毒王族谱
+
+https://mp.weixin.qq.com/s/98hO51og5Wt9nkRzlhH-ww
+
+次世代毒王争霸赛已经揭开序幕（BQ.1.1、BA.2.3.20和XBB）
+
+https://mp.weixin.qq.com/s/hQBOitoz1WyAWkFkTkvaYQ
+
+世界名画赏析之《天阶序论》
+
+---
 
 XBB大家族是整个大流行当中第一个以重组株身份拿下全球增速榜首位置的毒株。
 
@@ -199,32 +229,6 @@ We are waves of the same sea, leaves of the same tree, flowers of the same garde
 
 >Giacomo Puccini，1858～1924，意大利歌剧作曲家，代表作有《波希米亚人》、《托斯卡》与《蝴蝶夫人》等。   
 >《Turandot（图兰朵）》是Puccini最后的作品，在他去世时仍未完成。后来，Franco Alfano根据普契尼的草稿将全剧完成。《今夜无人入睡》（Nessun Dorma）是其中最著名的一段咏叹调。
-
-# 瘟疫公司
-
-![](/images/img4/Plague_Inc.jpg)
-
-![](/images/img4/Plague_Inc.png)
-
-https://zhuanlan.zhihu.com/p/103836857
-
-五年前的冠状病毒模组让《瘟疫公司》再度翻红，创作者是预言家？
-
-https://zhuanlan.zhihu.com/p/125727756
-
-《瘟疫公司》做错了吗？最贴近疫情的游戏被下架，被指存在违反国内法律内容
-
-https://zhuanlan.zhihu.com/p/298079109
-
-现在，你可以在《瘟疫公司》里“拯救世界”了
-
-https://zhuanlan.zhihu.com/p/293192687
-
-因为疫情爆火的《瘟疫公司》免费了，还新增了解药模式
-
-https://www.zhihu.com/question/21491731
-
-游戏《瘟疫公司》Plague Inc这款游戏对现实世界有何启示？
 
 # 武汉病毒所
 

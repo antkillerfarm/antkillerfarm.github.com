@@ -149,6 +149,10 @@ https://zhuanlan.zhihu.com/p/644446502
 
 Marvell在中国落幕，出来了多少芯片大佬（下）？
 
+https://www.zhihu.com/question/47312140
+
+BIOS和CMOS究竟是什么关系？
+
 # 上古软件开发
 
 https://mp.weixin.qq.com/s/movz5aesYdZZZHle-hHRIw

@@ -263,7 +263,33 @@ NVSwitch是首款节点交换架构，可支持单个服务器节点中16个全�
 
 https://zhuanlan.zhihu.com/p/35470532
 
-全球最大GPU 背后的秘密：NVSwitch如何实现NVIDIA DGX-2的超强功力？
+全球最大GPU背后的秘密：NVSwitch如何实现NVIDIA DGX-2的超强功力？
+
+---
+
+NVLink和NVSwitch的关系：
+
+NVLink是一种协议。
+
+NVSwitch是NVLink协议的芯片化实现。
+
+GPU core和NVSwitch如果都实现了NVLink协议的话，则它们之间可以通过NVLink协议进行通信。
+
+未来解决带宽问题的两大法宝，一个靠内存厂给提供的牙膏继续叠单GPU芯片的带宽，另一个就是目前这些形态更高密度的通过nvlink组合起来，从而创造一个大的“一个GPU”。
+
+就这个搞一个大的“一个GPU”而言，又有很多种可能的扩展形态
+
+- 双GPU卡
+- 主板堆8卡
+- 垂直堆8个刀片
+- 网络组更多机柜
+
+其实也就对应了nvlink的多种形态
+
+- nvlink c2c
+- nvlink
+- nvlink bridge
+- nvlink network
 
 ---
 
