@@ -232,7 +232,7 @@ Clang-format: 格式化C/C++/Java/Objective-C代码。需要安装Clang-format�
 
 `sudo apt install clang-format`
 
-Compare Folders：文件夹比较。
+Diff Folders：文件夹比较。
 
 ## 调试
 

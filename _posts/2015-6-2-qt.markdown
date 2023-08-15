@@ -158,6 +158,12 @@ https://mp.weixin.qq.com/s/sR1R2DRA2XASx9LJExasfA
 
 15个开源示例手把手带你用PyQt做小型桌面应用
 
+## 参考
+
+https://zhuanlan.zhihu.com/p/35081519
+
+Qt模拟Linux终端Terminal与系统交互(QProcess)
+
 # WebService
 
 WebService经过近二十年的发展，已经有非常多的框架了。知名的有：Axis1、Axis2、Xfire、CXF、JWS等。
