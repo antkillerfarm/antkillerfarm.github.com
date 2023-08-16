@@ -43,6 +43,10 @@ https://zhuanlan.zhihu.com/p/650046532
 
 乌萝点将录之伊霍尔·霍尔迪丘克
 
+https://zhuanlan.zhihu.com/p/650255180
+
+乌萝点将录之谢尔盖·纳耶夫
+
 ---
 
 一位“DPR”的人告诉我们：“我们被占领了8年，现在你会感受到在俄罗斯统治下的感觉。”我甚至和他们交了朋友，给他们带啤酒之类的东西。你明白，他们和我们是同样的人，他们只是被俄罗斯人强行动员起来的。
@@ -112,10 +116,6 @@ https://zhuanlan.zhihu.com/p/637922023
 https://mp.weixin.qq.com/s/PUqFEBUN6OaGZjB-ojrMRg
 
 一个乌克兰女性的伤痛与纪念
-
-https://mp.weixin.qq.com/s/gF8DSc1aifmTCjJSdthpyg
-
-乌克兰一大学教授战壕里上网课？
 
 https://zhuanlan.zhihu.com/p/599209865
 
