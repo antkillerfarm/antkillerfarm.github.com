@@ -121,6 +121,10 @@ https://mp.weixin.qq.com/s/qkvX0rmEe0yQ-BhCmWAXSQ
 
 李沐：AWS开源端到端AI框架编译器NNVM
 
+http://zhengsz.tech/2019/11/05/NNVM-graph-compiler/
+
+TVM/NNVM graph compiler
+
 ## Relay
 
 Relay是TVM中用来替代NNVM的模块，其本身被认为是NNVM第二代。
@@ -152,6 +156,10 @@ Data Flow和Control Flow
 https://zhuanlan.zhihu.com/p/523395133
 
 Relax: TVM的下一代图层级IR
+
+http://zhengsz.tech/2019/11/10/TVM-Relay-graph-compiler/
+
+TVM/Relay graph compiler
 
 ## Pass
 
@@ -426,3 +434,11 @@ https://zhuanlan.zhihu.com/p/428713676
 https://zhuanlan.zhihu.com/p/500041871
 
 TVM及深度学习编译器相关论文
+
+http://zhengsz.tech/2019/03/13/TVM%E4%B8%AD%E5%A6%82%E4%BD%95tune%E5%8D%B7%E7%A7%AF/
+
+TVM中如何tune卷积
+
+http://zhengsz.tech/2019/03/16/%E5%9C%A8TVM%E4%B8%AD%E5%86%99in-place%E8%AE%A1%E7%AE%97/
+
+在TVM中写in-place计算

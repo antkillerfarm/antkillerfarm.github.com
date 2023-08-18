@@ -6,6 +6,20 @@ category: DL Framework
 
 # XLA
 
+## system op
+
+除了运算和控制流的op之外，tf中还存在相当数量的用于执行框架功能的system op。
+
+例如：
+
+`_Arg`: 计算图的输入。
+
+`_Retval`: 计算图的输出。
+
+`AssignAddVariableOp`: 一般用于给`_Arg`搬运数据。
+
+`IteratorGetNext`: 启动下一个Iterator。主要是给graph准备训练数据和标签。
+
 ## 混合backend
 
 XLA支持混合多backend的运行，可用`tf.debugging.set_log_device_placement(True)`查看相关的设备指派信息。
@@ -132,6 +146,15 @@ pipeline.AddPass<XXXPass>();
 
 ConstFolding、AlgebraicSimplifier、HloCSE、HloDCE、TransposeFolding
 
+---
+
+`export XLA_FLAGS="--xla_dump_to=/some/path --xla_dump_hlo_pass_re=.* --xla_dump_hlo_as_html"`
+
+- xla_dump_to: 希望生成的中间表示存放在哪里。
+- xla_dump_hlo_pass_re: 默认xla是不会导出hlo内部pass的，但是使用这个选项后可以导出对应的pass，.*表示所有pass
+
+---
+
 参考：
 
 https://wzzju.github.io/tensorflow/xla/2021/12/23/xla-pass/
@@ -178,6 +201,14 @@ REGISTER_OPTIMIZATION(OptimizationPassRegistry::POST_REWRITE_FOR_EXEC, 10,
 在`PRE_PLACEMENT`和`POST_PLACEMENT`之间会插入`placer.Run()`。在`POST_REWRITE_FOR_EXEC`和`POST_PARTITIONING`之间会插入`PartitionFunctionGraph`。
 
 必须指出的是，这些阶段的划分都是人为的。比如`POST_PLACEMENT`和`POST_REWRITE_FOR_EXEC`之间并无任何其他操作，pass放在哪里，对于结果都没有任何影响。
+
+---
+
+http://zhengsz.tech/2019/10/28/XLA%E6%8E%A2%E7%A9%B6-%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95/
+
+XLA探究：矩阵乘法
+
+上文表示：XLA的图优化很保守，至少难以发掘图上运算模式规约的可能性。其实也就是没有识别出写的graph实际上是一个矩阵乘法。
 
 ## AutoClustering
 
@@ -324,3 +355,11 @@ XLA编译执行原理分析
 https://haosdent.gitbooks.io/tensorflow-document/content/resources/xla_prerelease.html
 
 XLA: The TensorFlow compiler framework
+
+http://zhengsz.tech/2019/10/23/Tensorflow-XLA-%E6%8E%A2%E7%A9%B6/
+
+Tensorflow/XLA探究
+
+https://wzzju.github.io/tensorflow/xla/2021/06/12/xla-overview/
+
+XLA编译执行原理分析

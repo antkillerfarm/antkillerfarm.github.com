@@ -213,6 +213,8 @@ https://github.com/tensorflow/mlir-hlo
 
 https://github.com/openxla/stablehlo
 
+MLIR used in TensorFlow, JAX and Torch-MLIR.
+
 参考：
 
 https://zhuanlan.zhihu.com/p/404706825
@@ -265,6 +267,8 @@ Torch-MLIR
 
 ![](/images/img4/torch_mlir.jpg)
 
+TorchScript-->TorchDialect-->Linalg-on-Tensors
+
 https://blog.csdn.net/HaoBBNuanMM/article/details/124385542
 
 Torch-MLIR技术详解
@@ -312,6 +316,10 @@ https://zhuanlan.zhihu.com/p/513872467
 https://www.zhihu.com/question/442964082
 
 如何评价MLIR项目中Linalg Dialect的设计思想？
+
+https://wzzju.github.io/mlir/jax/xla/2022/09/12/mlir-pass/
+
+浅析MLIR在Pass优化中的应用
 
 ## OpenAI Triton
 

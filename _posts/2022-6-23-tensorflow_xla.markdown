@@ -56,6 +56,12 @@ https://github.com/openxla/xla
 
 https://github.com/openxla/stablehlo
 
+---
+
+https://github.com/dongbeiyewu/xla.git
+
+一个XLA的专栏
+
 ## 应用层
 
 TF目前（v2.4.1）的默认编译选项中已经包含了XLA，但是默认不会启动。
@@ -102,6 +108,8 @@ op的官方定义：
 https://tensorflow.google.cn/xla/operation_semantics?hl=en
 
 HLO和TVM类似，计算图的遍历都是从所谓的root instruction，也就是输出Tensor开始的。但是实际的`HandleXXXX`的调用，却是从输入Tensor开始的，毕竟这个更符合一般人的思考习惯。想要做到这一点，也不难，采用`PostOrderDFS`即可。
+
+graph compile -> hlo graph build -> hlo pass pipelime -> hlo dataflow analysis -> codegen
 
 参考：
 
@@ -150,23 +158,19 @@ HandleConcatenate
 
 XLA支持两种接入模式：
 
+- AOT。compiler/aot/
+
+用于在Tensorflow应用运行前创建集成了模型和运行时的二进制代码，主要适用于手机等移动端的推理性能优化。AOT方式使用XLA，通过tfcompile命令实现。
+
 - JIT。compiler/jit/
 
-- AOT。compiler/aot/
+这是最常用的模式。以JIT的方式将tf2xla/接入TF引擎， 核心是9个优化器和3个tfop，其中XlaCompileOp调用tf2xla的“编译”入口完成功能封装，XlaRunOp调用xla/client完成“运行”功能。
 
 将整个计算图用_XlaCompile & _XlaRun替换。
 
 compiler/tf2xla/ -> compiler/xla/client/ -> compiler/xla/service/
 
 最终的计算由service负责实现。
-
-- `compiler/aot/`
-
-以AOT的方式将tf2xla/接入TF引擎。
-
-- `compiler/jit/`
-
-以JIT的方式将tf2xla/接入TF引擎， 核心是9个优化器和3个tfop，其中XlaCompileOp调用tf2xla的“编译”入口完成功能封装，XlaRunOp调用xla/client完成“运行”功能。
 
 - `compiler/tf2xla/`
 
@@ -302,17 +306,3 @@ if (op_registration->allow_string_type) {
 ```
 
 HloEvaluator中已经有了一套默认的CPU实现。
-
-## system op
-
-除了运算和控制流的op之外，tf中还存在相当数量的用于执行框架功能的system op。
-
-例如：
-
-`_Arg`: 计算图的输入。
-
-`_Retval`: 计算图的输出。
-
-`AssignAddVariableOp`: 一般用于给`_Arg`搬运数据。
-
-`IteratorGetNext`: 启动下一个Iterator。主要是给graph准备训练数据和标签。

@@ -332,3 +332,7 @@ https://www.zhihu.com/answer/3148620201
 https://www.163.com/dy/article/IB3EQLKF055389NN.html
 
 俄罗斯外交官：加强北京-莫斯科-明斯克轴心对俄罗斯极为有利
+
+https://zhuanlan.zhihu.com/p/648499818
+
+前沿战场上的乌军狙击手
