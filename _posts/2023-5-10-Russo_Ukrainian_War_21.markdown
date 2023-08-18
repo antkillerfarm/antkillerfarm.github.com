@@ -51,6 +51,10 @@ https://www.zhihu.com/question/585799617
 
 俄罗斯军队网红布列哥疑似被包围后遭遇炮击，现在情况如何？
 
+https://www.bilibili.com/video/BV1iv4y1q73G
+
+俄罗斯北极雅库特动员兵不列眼镜小哥第一季！
+
 ---
 
 https://www.zhihu.com/question/567658878
