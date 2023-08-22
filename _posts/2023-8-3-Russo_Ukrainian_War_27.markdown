@@ -336,3 +336,7 @@ https://www.163.com/dy/article/IB3EQLKF055389NN.html
 https://zhuanlan.zhihu.com/p/648499818
 
 前沿战场上的乌军狙击手
+
+https://zhuanlan.zhihu.com/p/649194100
+
+北约训练让乌克兰军队对战争准备不足
