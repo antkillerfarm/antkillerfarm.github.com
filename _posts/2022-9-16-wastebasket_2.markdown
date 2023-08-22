@@ -103,6 +103,14 @@ https://mp.weixin.qq.com/s/pPMs4FGjxY6FvSVGUtd9Vg
 
 经历欠薪、失业后，一位44岁建筑设计师在深圳坠亡
 
+https://www.sohu.com/a/712849876_349022
+
+近百人集体辞职！一年后被公司告上法庭
+
+https://www.zhihu.com/question/613012073
+
+如何看待同济2023年高考分数线再次暴跌？
+
 ---
 
 张雪峰经典语录：
