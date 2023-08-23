@@ -209,6 +209,10 @@ https://zhuanlan.zhihu.com/p/642412124
 
 LLM的推理优化技术纵览
 
+https://zhuanlan.zhihu.com/p/638809556
+
+大模型高效微调综述上：Adapter Tuning、AdaMix、PET、Prefix-Tuning、Prompt Tuning、P-tuning、P-tuning v2
+
 # BERT进阶
 
 ## AR vs AE

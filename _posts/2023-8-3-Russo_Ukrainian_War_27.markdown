@@ -340,3 +340,7 @@ https://zhuanlan.zhihu.com/p/648499818
 https://zhuanlan.zhihu.com/p/649194100
 
 北约训练让乌克兰军队对战争准备不足
+
+https://zhuanlan.zhihu.com/p/651937400
+
+投敌叛国谋害战友 俄罗斯飞行员驾驶米8直升机向乌克兰投诚
