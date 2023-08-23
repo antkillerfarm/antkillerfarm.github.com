@@ -299,6 +299,18 @@ https://mp.weixin.qq.com/s/jq4B_4kUOZE8yN5y0u-5yg
 
 万字长文！UCLA蒋陈凡夫12年自我回顾，图形学的终极浪漫
 
+https://zhuanlan.zhihu.com/p/649971173
+
+GPU渲染之路：从图形引擎到内核驱动(一、计算机图形系统概述)
+
+https://zhuanlan.zhihu.com/p/650510512
+
+GPU渲染之路：从图形引擎到内核驱动(二、跨平台引擎层)
+
+https://zhuanlan.zhihu.com/p/651364842
+
+GPU渲染之路：从图形引擎到内核驱动(三、用户态图形驱动层)
+
 ## 术语
 
 Material Point Method（物质点法）

@@ -29,6 +29,10 @@ google-chrome-stable
 
 https://ping.chinaz.com/
 
+## 插件
+
+SwitchyOmega：一个网络代理的插件
+
 # 常用快捷键
 
 Ctrl+Alt+T：启动Terminal
