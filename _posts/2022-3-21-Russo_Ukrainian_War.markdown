@@ -245,6 +245,10 @@ https://zhuanlan.zhihu.com/p/593617082
 
 看试手，补天裂——俄乌一周年战记
 
+https://zhuanlan.zhihu.com/p/651524100
+
+过去半年俄乌战争大事记（2023.2.24 ～ 2023.8.24）
+
 ## 人物
 
 ![](/images/img4/big3.jpg)

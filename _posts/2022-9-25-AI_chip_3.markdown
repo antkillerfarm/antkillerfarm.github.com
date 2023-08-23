@@ -424,3 +424,7 @@ A卡的新驱动对于老游戏的支持有些差，解决办法：删除游戏�
 https://www.zhihu.com/question/593343983
 
 截至2023年4月，用AMD显卡做机器学习怎么样？
+
+https://zhuanlan.zhihu.com/p/651797296
+
+通过“最差实践”实验探索AMD GPU调度细节
