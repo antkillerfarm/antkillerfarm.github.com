@@ -259,7 +259,7 @@ memory interleaving（内存交织）
 
 ![](/images/img3/nvswitch.png)
 
-NVSwitch是首款节点交换架构，可支持单个服务器节点中16个全互联的GPU，并可使全部8个GPU对分别以300GB/s的惊人速度进行同时通信。这16个全互联的GPU还可作为单个大型加速器，拥有0.5 TB统一显存空间和2 PetaFLOPS计算性能。
+NV Switch是首款节点交换架构，可支持单个服务器节点中16个全互联的GPU，并可使全部8个GPU对分别以300GB/s的惊人速度进行同时通信。这16个全互联的GPU还可作为单个大型加速器，拥有0.5 TB统一显存空间和2 PetaFLOPS计算性能。
 
 https://zhuanlan.zhihu.com/p/35470532
 
@@ -267,13 +267,13 @@ https://zhuanlan.zhihu.com/p/35470532
 
 ---
 
-NVLink和NVSwitch的关系：
+NVLink和NV Switch的关系：
 
 NVLink是一种协议。
 
-NVSwitch是NVLink协议的芯片化实现。
+NV Switch是NVLink协议的芯片化实现。
 
-GPU core和NVSwitch如果都实现了NVLink协议的话，则它们之间可以通过NVLink协议进行通信。
+GPU core和NV Switch如果都实现了NVLink协议的话，则它们之间可以通过NVLink协议进行通信。
 
 未来解决带宽问题的两大法宝，一个靠内存厂给提供的牙膏继续叠单GPU芯片的带宽，另一个就是目前这些形态更高密度的通过nvlink组合起来，从而创造一个大的“一个GPU”。
 

@@ -211,6 +211,16 @@ CXL基于PCIe 5.0的物理层。我们已经有了PCIe，为什么还要再搞�
 
 NIC：Network Interface Card
 
+---
+
+和NV Switch类似，PCIe也有PCIe Switch。价格同样不菲。
+
+https://zhuanlan.zhihu.com/p/651836498
+
+这颗博通芯片，涨到14万
+
+---
+
 https://www.sohu.com/a/193807422_588758
 
 PCI，AGP，PCI-E接口啥区别？
