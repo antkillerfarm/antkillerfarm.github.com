@@ -127,6 +127,10 @@ https://zhuanlan.zhihu.com/p/606199170
 
 普京的装甲列车
 
+https://zhuanlan.zhihu.com/p/651765919
+
+媒体轰动！普京怕鱼，大海中在游艇周围巨大网池里游泳
+
 ---
 
 Vladolf Putler，通常被运用于反对普京的口号中，如“普特勒要完了！”（德语：Putler Kaputt!）
