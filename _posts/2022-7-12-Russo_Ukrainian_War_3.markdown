@@ -240,3 +240,7 @@ https://zhuanlan.zhihu.com/p/627798430
 https://zhuanlan.zhihu.com/p/633781402
 
 乌克兰总统发表国际儿童节演讲
+
+https://zhuanlan.zhihu.com/p/652137751
+
+乌克兰2023年独立日演讲

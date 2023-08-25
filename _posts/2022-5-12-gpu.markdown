@@ -87,30 +87,6 @@ Two-Level Adaptive Branch Predictor
 
 如今的亚马逊AI/ML总经理Kumar Chellapilla是最早吃到GPU螃蟹的学者。2006年，他使用英伟达的GeForce 7800显卡第一次实现了卷积神经网络（CNN），发现比使用CPU要快4倍。这是已知最早将GPU用于深度学习的尝试。
 
----
-
-参考：
-
-http://www.cnblogs.com/geniusalex/archive/2008/12/26/1941766.html
-
-CPU GPU设计工作原理
-
-https://mp.weixin.qq.com/s/-Wg1GtVGUxfshJ5d5NDd-Q
-
-聊聊GPU的计算能力上限
-
-https://mp.weixin.qq.com/s/zdr7BfJxVepQL1TCDXQoJA
-
-一文带你了解GPU的前生今世
-
-https://www.zhihu.com/question/22219245
-
-GPU不能完全取代CPU的最大原因是什么？
-
-https://mp.weixin.qq.com/s/tyZXc_hz89SxERjb_c34_w
-
-现代处理器分支预测技术
-
 ## Programming Model vs Hardware Execution Model
 
 - **Programming Model**: how the programmer expresses the code.
@@ -159,7 +135,7 @@ https://www.zhihu.com/question/20720436
 
 ![](/images/img5/GPU.png)
 
-# GPU
+## 参考
 
 AMD：RDNA
 
@@ -260,6 +236,30 @@ Intel四十年显卡坎坷路
 https://zhuanlan.zhihu.com/p/572302589
 
 GPGPU流式多处理器架构之取指译码发射
+
+http://www.cnblogs.com/geniusalex/archive/2008/12/26/1941766.html
+
+CPU GPU设计工作原理
+
+https://mp.weixin.qq.com/s/-Wg1GtVGUxfshJ5d5NDd-Q
+
+聊聊GPU的计算能力上限
+
+https://mp.weixin.qq.com/s/zdr7BfJxVepQL1TCDXQoJA
+
+一文带你了解GPU的前生今世
+
+https://www.zhihu.com/question/22219245
+
+GPU不能完全取代CPU的最大原因是什么？
+
+https://mp.weixin.qq.com/s/tyZXc_hz89SxERjb_c34_w
+
+现代处理器分支预测技术
+
+https://zhuanlan.zhihu.com/p/651179378
+
+GPU内存概念浅析
 
 # GPU通信技术
 

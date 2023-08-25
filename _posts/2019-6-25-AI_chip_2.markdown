@@ -288,6 +288,46 @@ https://www.zhihu.com/question/422438453
 
 NVIDIA为什么在游戏卡上死活不用HBM2显存？
 
+## FPGA
+
+CGRA：Coarse Grained Reconfigurable Array
+
+FPGA：Field Programmable Gate Array
+
+FPGA主要是由以LUT和MUX为基础构成的门级可编程逻辑块构成的。
+
+CGRA是coarse-grained的粗粒度，它是编程重构ALU阵列而非逻辑门阵列，因此很多的运算由硬核实现，不是LUT搭真值表。
+
+https://www.zhihu.com/question/407417134
+
+CGRA和FPGA有什么不同？
+
+---
+
+https://mp.weixin.qq.com/s/Cy_vb0PpcvGTDmlMt1VkSw
+
+从GPU、TPU到FPGA及其它：一文读懂神经网络硬件平台战局
+
+https://mp.weixin.qq.com/s/DnurlGgd5q4Fwjxy3YnIrQ
+
+当数据库遇见FPGA：X-DB异构计算如何实现百万级TPS？
+
+https://mp.weixin.qq.com/s/H_KnHQ6AzCNFqmW8uDj1rA
+
+基于FPGA的深度学习加速器综述：挑战与机遇
+
+https://mp.weixin.qq.com/s/acAbNP_ERnKlL3_9v_mwow
+
+FPGA：AI ASIC的必经之路？
+
+https://mp.weixin.qq.com/s/K_dohaZbCISZlxe1Utu50w
+
+如何用FPGA加速卷积神经网络(CNN)？
+
+https://zhuanlan.zhihu.com/p/152167194
+
+两大FPGA公司的“AI技术路线”
+
 ## 行业信息
 
 https://mp.weixin.qq.com/s/vGoWsyaal-gAzsrhPguvFg
@@ -351,37 +391,3 @@ https://www.thepaper.cn/newsDetail_forward_16268882
 https://www.thepaper.cn/newsDetail_forward_16641034
 
 详解AI加速器（二）：为什么说现在是AI加速器的黄金时代？
-
-https://www.thepaper.cn/newsDetail_forward_16681105
-
-详解AI加速器（三）：架构基础离不开ISA、可重构处理器
-
-https://www.thepaper.cn/newsDetail_forward_16787134
-
-详解AI加速器（四）：GPU、DPU、IPU、TPU…AI加速方案有无限种可能
-
-https://www.thepaper.cn/newsDetail_forward_16869908
-
-详解AI加速器（最终篇）：给想进入赛道的玩家一些建议
-
----
-
-https://zhuanlan.zhihu.com/p/58971347
-
-深度学习的芯片加速器
-
-https://mp.weixin.qq.com/s/S5Kjt4tuf_o6o3Qag8sukQ
-
-Google Jeff Dean独自署名论文：深度学习革命及其对计算机架构和芯片设计的影响，讲述AI芯片发展历程与未来
-
-https://cloud.tencent.com/community/article/244743
-
-深度学习的异构加速技术（一）：AI需要一个多大的“心脏”？
-
-https://cloud.tencent.com/community/article/581797
-
-深度学习的异构加速技术（二）：螺狮壳里做道场
-
-https://cloud.tencent.com/community/article/446425
-
-深度学习的异构加速技术（三）：互联网巨头们“心水”这些AI计算平台

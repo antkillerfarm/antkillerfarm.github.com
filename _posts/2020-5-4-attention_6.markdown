@@ -297,6 +297,10 @@ https://zhuanlan.zhihu.com/p/645068532
 
 大模型RLHF的trick
 
+https://zhuanlan.zhihu.com/p/651780908
+
+大模型中的人工反馈强化学习详解
+
 https://mp.weixin.qq.com/s/L8E-dd9988Prbxau5awFtw
 
 ChatGPT怎么突然变得这么强？华人博士万字长文深度拆解GPT-3.5能力起源

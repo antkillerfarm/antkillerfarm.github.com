@@ -9,6 +9,40 @@ category: Chip
 
 # AI Chip
 
+https://www.thepaper.cn/newsDetail_forward_16681105
+
+详解AI加速器（三）：架构基础离不开ISA、可重构处理器
+
+https://www.thepaper.cn/newsDetail_forward_16787134
+
+详解AI加速器（四）：GPU、DPU、IPU、TPU…AI加速方案有无限种可能
+
+https://www.thepaper.cn/newsDetail_forward_16869908
+
+详解AI加速器（最终篇）：给想进入赛道的玩家一些建议
+
+---
+
+https://zhuanlan.zhihu.com/p/58971347
+
+深度学习的芯片加速器
+
+https://mp.weixin.qq.com/s/S5Kjt4tuf_o6o3Qag8sukQ
+
+Google Jeff Dean独自署名论文：深度学习革命及其对计算机架构和芯片设计的影响，讲述AI芯片发展历程与未来
+
+https://cloud.tencent.com/community/article/244743
+
+深度学习的异构加速技术（一）：AI需要一个多大的“心脏”？
+
+https://cloud.tencent.com/community/article/581797
+
+深度学习的异构加速技术（二）：螺狮壳里做道场
+
+https://cloud.tencent.com/community/article/446425
+
+深度学习的异构加速技术（三）：互联网巨头们“心水”这些AI计算平台
+
 https://zhuanlan.zhihu.com/p/25382177
 
 AI芯片怎么降功耗？
@@ -40,10 +74,6 @@ AI芯片四大流派论剑，中国能否弯道超车？
 https://zhuanlan.zhihu.com/p/27472524
 
 从AI芯片说起，一起来看芯片门类
-
-https://mp.weixin.qq.com/s/Cy_vb0PpcvGTDmlMt1VkSw
-
-从GPU、TPU到FPGA及其它：一文读懂神经网络硬件平台战局
 
 https://mp.weixin.qq.com/s/RKRDBiBzG5u2P2eaqNAFbg
 
@@ -81,10 +111,6 @@ https://zhuanlan.zhihu.com/p/35103140
 
 “传说中”的异步电路能否在AI芯片界异军突起？
 
-https://mp.weixin.qq.com/s/DnurlGgd5q4Fwjxy3YnIrQ
-
-当数据库遇见FPGA：X-DB异构计算如何实现百万级TPS？
-
 https://mp.weixin.qq.com/s/PDe8O5zskxD_mycwH0_3lg
 
 AI是如何影响计算机内存系统的？
@@ -92,10 +118,6 @@ AI是如何影响计算机内存系统的？
 https://blog.csdn.net/lien0906/article/details/78863118
 
 深度学习中GPU和显存分析
-
-https://mp.weixin.qq.com/s/H_KnHQ6AzCNFqmW8uDj1rA
-
-基于FPGA的深度学习加速器综述：挑战与机遇
 
 http://eyeriss.mit.edu/
 
@@ -124,10 +146,6 @@ https://mp.weixin.qq.com/s/oOYGa4Mti6KpkpI4TtpitQ
 https://mp.weixin.qq.com/s/_8lbTU0GFEXQr_4pdQ6XPw
 
 同步SGD等现有分布式训练方式将过时，Yoshua Bengio谈迈向硬件友好的深度学习
-
-https://mp.weixin.qq.com/s/acAbNP_ERnKlL3_9v_mwow
-
-FPGA：AI ASIC的必经之路？
 
 https://mp.weixin.qq.com/s/5MyuZf_TBm2NV47CRAz5Dw
 
@@ -176,10 +194,6 @@ BP表达式与硬件架构：相似性构建更高效的计算单元
 https://mp.weixin.qq.com/s/1r7G84les7FihqPbSiS0Ng
 
 华为首款手机端AI芯片麒麟970
-
-https://mp.weixin.qq.com/s/K_dohaZbCISZlxe1Utu50w
-
-如何用FPGA加速卷积神经网络(CNN)？
 
 https://mp.weixin.qq.com/s/z68hk1yqg60QCjgTyzgG2w
 

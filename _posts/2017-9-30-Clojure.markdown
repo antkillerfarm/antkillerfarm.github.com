@@ -287,6 +287,20 @@ Authentication is needed to run '/home/danny/dev/tools/gdb' as the super user
 
 ---
 
+问题：
+
+客户端更新后连不上远程服务器，一直报错 waiting for server log...
+
+解决：
+
+/home/<user>/.vscode-server/bin/XXX/server.sh
+
+```bash
+$ROOT/node" ${INSPECT:-} "$ROOT/out/server-main.js" --compatibility=1.63 --accept-server-license-terms
+```
+
+---
+
 参考：
 
 https://blog.csdn.net/wyg1997/article/details/101460961
