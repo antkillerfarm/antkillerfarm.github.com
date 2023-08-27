@@ -81,54 +81,6 @@ https://mp.weixin.qq.com/s/3svGvbk0-ek5tQCWJ9ii4A
 
 读懂相对论：从弯曲空间的几何开始
 
-https://mp.weixin.qq.com/s/oCoyEh1VhUmqZnf9okgYnA
-
-科普：十大物理学中最牛逼的思想实验!
-
-https://mp.weixin.qq.com/s/k3v_5vXWfyBag5mmjD78Xw
-
-拓扑物理浅析
-
-https://mp.weixin.qq.com/s/ChZ-cNTSb7Pm_ka9gunm9A
-
-73岁硬核老爷爷，用物理自证车祸无责，葛军：看来又有新题材了
-
-https://mp.weixin.qq.com/s/b22vJHOrm_mOMa71TidN4w
-
-八大数学预言
-
-https://mp.weixin.qq.com/s/-4yzwG_LS1J_svR1CiOcpQ
-
-一道闪电掉进海里，会电死多少鱼？
-
-https://mp.weixin.qq.com/s/0CHFXs8IAxFIwvy7hOcnnw
-
-不加色素做出彩虹色巧克力，科学家浪漫起来也太硬核了
-
-https://mp.weixin.qq.com/s/GuXzR6Xf46ByomcVLzai3Q
-
-干洗店用的一种东西，居然跟生命起源有关系？
-
-https://mp.weixin.qq.com/s/9ym_nblmAzSiiEeIFJ346g
-
-活了九十年十个月零两天的业余科学家，最伟大的显微镜制造者（Antonie Van Leeuwenhoek）
-
-https://www.zhihu.com/question/48411767
-
-节能灯和荧光灯到底有什么区别？
-
-https://www.163.com/dy/article/FOOMUMHN0516DKF5.html
-
-没有照相机之前，画家是怎么修出漂亮的图的？
-
-https://mp.weixin.qq.com/s/Co30MdgI_Nmw_N1vmiBIfg
-
-战略科学家玻尔的人生三部曲
-
-https://mp.weixin.qq.com/s/IWKH55spPZksOgSYtkQ-Lw
-
-我今年89岁，刚刚拿了个物理学博士学位
-
 # 核物理
 
 因为原子仅吸收特定波长的光，所以科学家会确保将激光波长调整为刚好大于静止时原子的吸收波长。这样，根据多普勒效应，当原子向光子移动时，光的波长会被压缩，当光的波长被压缩到恰好等于该原子的吸收波长时，原子就会吸收光子，原子就会从基态跃迁到激发态，原子的运动速度减慢，动能减小；而当原子停止或沿着光子同向运动时，原子就不会吸收光子了。
@@ -234,6 +186,20 @@ https://zhuanlan.zhihu.com/p/109530091
 https://zhuanlan.zhihu.com/p/109530589
 
 走近人类能源的圣杯－－“可控核聚变”（下）
+
+---
+
+石墨堆熔芯后，会有石墨块漂在溶化的金属铀上流动，当溶化的铀流到一个可以掉落的位置时，就会把石墨裹进内部一些，这样石墨就又起到了中子减速剂的作用，会激活链式反应。
+
+不过这种情况下的链式反应不会很强，不会有太高的温度，就是一直有发热而已，不会重新熔化，而只要存在链式反应，那就会一直有强放射性的裂变物产生。
+
+某一种污染物，在某种土壤中会富集在某个深度，是因为地球有重力，导致土壤在不同深度会有不同颗粒细密度和化学成分，不同深度的土壤会对不同的污染物产生不同吸附力，所以污染物从表层下渗后，也不是越渗越深，而是在一个对其吸附力最大的深度大量聚集起来，而这个富集层深度通常不会超过1.5米。
+
+但地表20厘米以内的土质疏松一般不会有不可溶微粒污染物或可溶污染物的富集层，除非是没分解的塑料袋那种大型垃圾，才会地表富集。
+
+https://www.zhihu.com/question/455063533
+
+苏联是怎么处理切尔诺贝利的核废水的？
 
 ---
 

@@ -230,3 +230,25 @@ https://mp.weixin.qq.com/s/oBZzzQAjQNdr3ehnAYnAqA
 https://mp.weixin.qq.com/s/Np8ffiredLID1GLmenPbuw
 
 西村大院，成都的“反向地标”
+
+# 物理=
+
+https://mp.weixin.qq.com/s/9ym_nblmAzSiiEeIFJ346g
+
+活了九十年十个月零两天的业余科学家，最伟大的显微镜制造者（Antonie Van Leeuwenhoek）
+
+https://www.zhihu.com/question/48411767
+
+节能灯和荧光灯到底有什么区别？
+
+https://www.163.com/dy/article/FOOMUMHN0516DKF5.html
+
+没有照相机之前，画家是怎么修出漂亮的图的？
+
+https://mp.weixin.qq.com/s/Co30MdgI_Nmw_N1vmiBIfg
+
+战略科学家玻尔的人生三部曲
+
+https://mp.weixin.qq.com/s/IWKH55spPZksOgSYtkQ-Lw
+
+我今年89岁，刚刚拿了个物理学博士学位

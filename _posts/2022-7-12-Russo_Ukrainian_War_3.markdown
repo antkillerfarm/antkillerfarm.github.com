@@ -241,6 +241,6 @@ https://zhuanlan.zhihu.com/p/633781402
 
 乌克兰总统发表国际儿童节演讲
 
-https://zhuanlan.zhihu.com/p/652137751
+https://zhuanlan.zhihu.com/p/652190990
 
-乌克兰2023年独立日演讲
+“乌克兰人民不会放手”——泽连斯基在乌克兰独立日的两篇演讲

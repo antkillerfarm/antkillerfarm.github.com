@@ -171,14 +171,4 @@ https://zhuanlan.zhihu.com/p/643309609
 
 ---
 
-https://mp.weixin.qq.com/s/3Frx_ZmmmEC_aj4tLUPleg
-
-苏莱曼尼被斩首后，这篇文章把两伊根本问题说清楚了
-
-https://mp.weixin.qq.com/s/Wt56L0Tdj8H1s4zVh43cMw
-
-决战亮马桥！美国、伊朗驻华大使馆于微博隔空斗法
-
-https://mp.weixin.qq.com/s/sCiWfFweGzgjPTVGhl3hfw
-
-美国向伊朗的求和，是以斗争求和平的伟大实践！
+中国穆斯林对礼拜的称呼乃麻子（波斯语Namaz），和中国佛教徒念佛的时候念的“南无”（梵语：Namas意为礼敬），是一对同源词。而且波斯语和梵语的是属于同一个语族的语言。（瞬间感觉有一点点不清真了）
