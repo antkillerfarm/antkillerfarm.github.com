@@ -121,6 +121,8 @@ for me he is nobody, nobody.
 
 2023.6.23～24 瓦格纳上洛。
 
+2023.8.24 普里戈任殒命。
+
 ---
 
 https://www.understandingwar.org/
