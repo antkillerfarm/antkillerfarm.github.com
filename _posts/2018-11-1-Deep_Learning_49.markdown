@@ -215,6 +215,52 @@ https://mp.weixin.qq.com/s/tE_-gUBmt_0h75CnkViUHA
 
 超分辨率技术:Adobe Photoshop与深度神经网络对比
 
+# Attention进阶+
+
+https://mp.weixin.qq.com/s/zhZLK4pgJzQXN49YkYnSjA
+
+自适应注意力机制在Image Caption中的应用
+
+https://mp.weixin.qq.com/s/uvr-G5-_lKpyfyn5g7ES0w
+
+基于注意力机制，机器之心带你理解与训练神经机器翻译系统
+
+https://mp.weixin.qq.com/s/ANpBFnsLXTIiW6WHzGrv2g
+
+自注意力机制学习句子embedding
+
+https://mp.weixin.qq.com/s/49fQX8yiOIwDyof3PD01rA
+
+CMU&谷歌大脑提出新型问答模型QANet：仅使用卷积和自注意力，性能大大优于RNN
+
+https://mp.weixin.qq.com/s/c64XucML13OwI26_UE9xDQ
+
+滴滴披露语音识别新进展：基于Attention显著提升中文识别率
+
+https://mp.weixin.qq.com/s/7OYY3L7gL4wVv_EjoosOHA
+
+如何增强Attention Model的推理能力
+
+https://mp.weixin.qq.com/s/9Kt6_DfeYRnhsb10aCSFGw
+
+FAGAN：完全注意力机制（Full Attention）GAN，Self-attention+GAN
+
+https://mp.weixin.qq.com/s/lZOIK5BRXZrmL_Z9crl6sA
+
+机器翻译新突破！“普适注意力”模型：概念简单参数少，性能大增
+
+https://mp.weixin.qq.com/s/jRfOzKO6OlQLokIzipbqUQ
+
+为什么使用自注意力机制？
+
+https://zhuanlan.zhihu.com/p/339123850
+
+关于attention机制的一些细节的思考
+
+https://mp.weixin.qq.com/s/n4mzHSweOT-vDWBGs0XFbw
+
+卷积神经网络中的自我注意
+
 # Transformer进阶+
 
 https://mp.weixin.qq.com/s/MjCIAlDWyHPLj_sGSPc4rg
@@ -296,35 +342,3 @@ https://mp.weixin.qq.com/s/IWUxVzpdGIX1Oxn4KxjhHA
 https://mp.weixin.qq.com/s/IWUxVzpdGIX1Oxn4KxjhHA
 
 TransGAN：两个Transformer可以构造一个强大的GAN
-
-# 俄乌战争+
-
-跟法鸡打交道是最累的，因为当聊到他们理解不了的问题时他们会说：“你们为什么不投降？”
-
----
-
-乌克兰国防部表示：“在乌克兰的军事战利品展览上，现代俄罗斯军事装备比在莫斯科胜利日阅兵上更容易找到。”
-
-说坦克两项改两年一次，今年停办的时候我就知道，大毛现在凑合一百多台状态还行的t72都难。
-
----
-
-由于乌克兰轰炸的是莫斯科的富人区，很多俄罗斯人都在放烟花庆祝。气的莫斯科电视台主持人破口大骂，“被炸的这些人，也是俄罗斯人啊，你们怎么一点同情心都没有？”
-
----
-
-打无人机要看主人。
-
-派出所民警打的是良民的无人机，机主点头哈腰，不好意思，对不起，再也不敢了。
-
-战场上的无人机都是军爷的，你敢弄军爷的无人机，军爷就敢叫滴滴打炮覆盖你，又或者壮汉们开着装甲车，拎着机枪过来找你讨说法。
-
-https://www.zhihu.com/question/605356056
-
-为什么派出所民警都有反无人机设备能把无人机打下来，而俄乌双方都无法对小型无人机采取有效的反制措施？
-
----
-
-A：现在的主流价值观是社会达尔文主义。
-
-B：大弟这么菜，物竞天择也不能选他吧？

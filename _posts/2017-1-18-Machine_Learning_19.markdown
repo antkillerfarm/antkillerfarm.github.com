@@ -165,6 +165,22 @@ https://www.zhihu.com/question/547317808
 
 ---
 
+百万粉丝网红在菲律宾被绑架，迄今已和家人失联3个月，稍早协助营救的潮汕商会负责人表示，雅典娜（原名孔丽梅）确实被绑架，最后行踪在菲律宾。
+
+https://www.sohu.com/a/658343064_121284943
+
+78人揭露“泰国务工”骗局：有工程师以20万元被转卖至缅北诈骗营
+
+https://mp.weixin.qq.com/s/3gxsiw7OBfA-U9Ix_Y6DlA
+
+“中科院博士被困缅甸”背后，为何解救行动这么难？
+
+https://www.zhihu.com/question/618023908
+
+中泰缅老四国警方启动合作打击赌诈集团专项联合行动，将带来哪些影响？
+
+---
+
 https://zhuanlan.zhihu.com/p/37928659
 
 越南帝国扩张
@@ -216,7 +232,3 @@ https://zhuanlan.zhihu.com/p/627574646
 https://zhuanlan.zhihu.com/p/496058564
 
 缅北旗帜徽章研究——战乱与中国影响
-
-https://www.zhihu.com/question/618023908
-
-中泰缅老四国警方启动合作打击赌诈集团专项联合行动，将带来哪些影响？

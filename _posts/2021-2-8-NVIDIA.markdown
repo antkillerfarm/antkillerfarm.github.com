@@ -340,6 +340,10 @@ http://blog.csdn.net/augusdi/article/details/12833235
 
 这是一篇转帖的CUDA教程，原帖比较分散，不好看。
 
+https://zhuanlan.zhihu.com/p/544864997
+
+cuda中threadIdx、blockIdx、blockDim和gridDim的使用
+
 ## cuLitho
 
 光刻是芯片制造过程中最复杂、最昂贵、最关键的环节，其成本约占整个硅片加工成本的1/3甚至更多。计算光刻模拟了光通过光学元件并与光刻胶相互作用时的行为，应用逆物理算法来预测掩膜板上的图案，以便在晶圆上生成最终图案。

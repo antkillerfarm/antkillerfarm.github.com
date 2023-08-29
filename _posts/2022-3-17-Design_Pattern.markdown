@@ -83,6 +83,30 @@ https://mp.weixin.qq.com/s/H2toewJKEwq1mXme_iMWkA
 
 # 机器人/无人驾驶参考资源+
 
+https://mp.weixin.qq.com/s/ao5hC_3A7fn8_L_PFw399A
+
+轨迹规划技术分享
+
+https://mp.weixin.qq.com/s/mPiAPT5hBlhR5gINIEMnkw
+
+轨迹规划——算法综述
+
+https://mp.weixin.qq.com/s/pEA7mN7AhxrDqLb3ku1CxQ
+
+ADAS以及自动驾驶车辆运动特性
+
+https://mp.weixin.qq.com/s/HSvy_mWcpoS4_-2izgXlzg
+
+第一次有人把V2X讲的这么通俗易懂！
+
+https://mp.weixin.qq.com/s/AekhB7D1W5UhkTmLikvpxA
+
+ADAS系统横纵向控制策略之碰撞时间计算方法
+
+https://mp.weixin.qq.com/s/ZEvNniUUzcsCbU-UpzxtEA
+
+ADAS高级辅助驾驶视觉系统（Advanced Driver Assistant System）
+
 https://zhuanlan.zhihu.com/p/73073753
 
 基于深度学习的多传感器标定

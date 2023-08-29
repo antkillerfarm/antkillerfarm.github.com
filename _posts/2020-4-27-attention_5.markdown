@@ -227,6 +227,10 @@ Fast and Effective！一文速览轻量化Transformer各领域研究进展
 
 轻量化BERT是从计算量/时间/空间的角度出发，对于传统BERT的优化。而快速BERT主要着眼于软件工程角度，如何更好的利用各种硬件加速BERT的计算。典型的有NVIDIA的FasterTransformer和腾讯的TurboTransformer。
 
+![](/images/img5/QKV_cache.png)
+
+例如上图就是生成token的过程中，对于KV进行cache的一种优化方法。
+
 https://mp.weixin.qq.com/s/1R_plHqxTLE-Fw3TjYnlJQ
 
 GPU BERT上线性能不合格，看看微信AI的PPoPP论文

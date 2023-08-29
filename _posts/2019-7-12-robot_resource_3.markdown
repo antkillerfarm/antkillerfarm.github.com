@@ -9,6 +9,24 @@ category: resource
 
 # 机器人/无人驾驶参考资源
 
+## 车道线检测（续）
+
+https://mp.weixin.qq.com/s/HSh029kg2-rOtD688vLq2w
+
+详解车道线检测算法之传统图像处理
+
+https://mp.weixin.qq.com/s/4YUVlSaahIxxWs5gwVLbRw
+
+基于图像处理的车道线检测
+
+https://mp.weixin.qq.com/s/hjHXWewRYh_6j5cd1J2n_w
+
+Transformer又立功了！又快(420 fps)又好的车道线检测算法
+
+https://zhuanlan.zhihu.com/p/157530787
+
+超快的车道线检测
+
 ## 组合导航
 
 https://mp.weixin.qq.com/s/F8aLNue_qDlMyTAznBLC7g
@@ -378,27 +396,3 @@ https://mp.weixin.qq.com/s/HyacYh2FcGPW4-8SOECCtA
 https://mp.weixin.qq.com/s/J2s84TkfHGTw985iXxW0dA
 
 基于兴趣区域投票的多任务车辆检测
-
-https://mp.weixin.qq.com/s/ao5hC_3A7fn8_L_PFw399A
-
-轨迹规划技术分享
-
-https://mp.weixin.qq.com/s/mPiAPT5hBlhR5gINIEMnkw
-
-轨迹规划——算法综述
-
-https://mp.weixin.qq.com/s/pEA7mN7AhxrDqLb3ku1CxQ
-
-ADAS以及自动驾驶车辆运动特性
-
-https://mp.weixin.qq.com/s/HSvy_mWcpoS4_-2izgXlzg
-
-第一次有人把V2X讲的这么通俗易懂！
-
-https://mp.weixin.qq.com/s/AekhB7D1W5UhkTmLikvpxA
-
-ADAS系统横纵向控制策略之碰撞时间计算方法
-
-https://mp.weixin.qq.com/s/ZEvNniUUzcsCbU-UpzxtEA
-
-ADAS高级辅助驾驶视觉系统（Advanced Driver Assistant System）

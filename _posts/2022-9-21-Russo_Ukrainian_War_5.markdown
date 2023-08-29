@@ -97,6 +97,8 @@ https://zhuanlan.zhihu.com/p/646846419
 
 多个“PMC”的出现：瓦格纳、Potok、Veteran、Yenisey、Skif、Tigr、Irbis、Rys' 和战狼。
 
+![](/images/img5/PMC.jpg)
+
 ---
 
 胶合板元帅：绍伊古土木工程毕业，在工地搅拌水泥十几年从未当过一天兵，因为和俄献帝的裙带关系，从建筑公司直接提拔到了国防部长。他妈是乌克兰人，他爸是蒙古（图瓦）人，他在为俄罗斯打仗。

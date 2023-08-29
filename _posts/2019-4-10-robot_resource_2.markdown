@@ -9,7 +9,29 @@ category: resource
 
 # 机器人/无人驾驶参考资源
 
-## 自动驾驶入门课程（续）
+## 课程（续）
+
+http://abcinstitute.baidu.com/pages/index.html#/specialInfo?specialId=4008
+
+百度的自动驾驶课程
+
+https://mp.weixin.qq.com/s/O-xV6fXtSnF0Y8Z2lxKa1g
+
+自主机器人导论:运动学，感知，定位和规划，241页pdf
+
+## 自动驾驶入门课程
+
+https://mp.weixin.qq.com/s/yO_Lc5Fo-8fBC9PwVCQBqA
+
+自动驾驶入门课程第①讲 — 无人驾驶概览
+
+https://mp.weixin.qq.com/s/IVD0aq8V-qZoB0tcLMigYw
+
+自动驾驶入门课程第②讲 — 高精地图
+
+https://mp.weixin.qq.com/s/KJbm4wfsTLxT5LGR7GV_SA
+
+自动驾驶入门课程第③讲 — 定位
 
 https://mp.weixin.qq.com/s/BCNrsuoThJt031jCnbAjAA
 
@@ -434,19 +456,3 @@ SCNN车道线检测--(SCNN)Spatial As Deep: Spatial CNN for Traffic Scene Unders
 https://mp.weixin.qq.com/s/pQUKFZRgG1LNPmE6oHY3GA
 
 CurcveLane-NAS：华为&中大提出一种结合NAS的曲线车道检测算法
-
-https://mp.weixin.qq.com/s/HSh029kg2-rOtD688vLq2w
-
-详解车道线检测算法之传统图像处理
-
-https://mp.weixin.qq.com/s/4YUVlSaahIxxWs5gwVLbRw
-
-基于图像处理的车道线检测
-
-https://mp.weixin.qq.com/s/hjHXWewRYh_6j5cd1J2n_w
-
-Transformer又立功了！又快(420 fps)又好的车道线检测算法
-
-https://zhuanlan.zhihu.com/p/157530787
-
-超快的车道线检测

@@ -170,7 +170,19 @@ Makefile中($(KERNELRELEASE),)执行分析
 
 # Ubuntu使用技巧+
 
+# 打印机
+
+一般使用sane做为扫描仪后端：
+
+`sudo apt-get install sane sane-utils xsane`
+
+## Virtual MIDI Piano Keyboard
+
+VMPK是一款MIDI生成工具软件，也就是俗称的“虚拟电子琴”软件。但它本身只生成MIDI输出，需要配合使用MIDI后处理软件，才能发声。常见的MIDI后处理软件有Qsynth、TiMidity。
+
 ## 电源方案
+
+2023.5
 
 最近，儿子乱动我的笔记本电脑，惹出了事端。
 
@@ -187,6 +199,26 @@ Makefile中($(KERNELRELEASE),)执行分析
 如果选择平衡或者节能的话，CPU会自己降频，避免关机保护，或者如本例中的快速升温——在点击应用瞬间，温度从40+飙升到75+。
 
 一般来说，只要峰值温度控制得当，积热其实并不是啥问题。CPU不可能随时都是满负荷，稍微歇一下，积热就散走了。
+
+## 无线网卡
+
+2023.8
+
+最近，无限网卡突然失灵，上网一查才发现，华硕这几代笔记本由于布局问题，固态硬盘的热量会烧坏附近的网卡芯片。
+
+幸好手里还有一个闲置的USB无线网卡。但是插上网卡，驱动不识别。
+
+经查，该型号网卡的驱动早已集成进内核主线，但是默认并未打开。
+
+解决方法：
+
+`sudo modprobe mt7601u`
+
+当然这个还是不方便，需要每次手动打开。
+
+https://qastack.cn/unix/71064/systemd-automate-modprobe-command-at-boot-time
+
+systemd：在启动时自动执行modprobe命令
 
 ## Ubuntu字体相关
 

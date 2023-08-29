@@ -71,6 +71,12 @@ https://mp.weixin.qq.com/s/7rz8QXPNda4PVs3KcweQMg
 
 ---
 
+某同事的回顾：
+
+我从2010年深圳先进院为起点从事机器人研发接近14年，从2008年开始做导航系统接近16年，这期间有很多机器人公司倒下，也见证了机器人从demo样机到产品成熟推向市场，从一台机器人bom成本接近百万，到bom成本进入万元以内，见证了供应链和行业的逐渐成熟，见证了语音交互从ibm的单词识别到今天的LLM，图像领域从模式识别到深度学习，到多模态大模型识别，导航系统从惯导加二维码到今天SLAM为主的激光、视觉、SINS、GNSS、超声、毫米波雷达、二维码、UWB等等组合导航系统，激光雷达从单线到多线，从国外一家独大到今天的国内百家争鸣，现在的多线激光雷达价格不到10年前国外单线激光雷达的零头，国产卫星导航系统价格更是降了几十倍。
+
+---
+
 ![](/images/img2/ADAS.jpg)
 
 https://mp.weixin.qq.com/s/Okolok3ZLZhgw0TQ_TROKA
@@ -190,25 +196,3 @@ CS 333: Robotics
 https://mp.weixin.qq.com/s/T7wI4cjKbciYC3ZNxKfReA
 
 143页 MIT自动驾驶算法地图推理教程
-
-http://abcinstitute.baidu.com/pages/index.html#/specialInfo?specialId=4008
-
-百度的自动驾驶课程
-
-https://mp.weixin.qq.com/s/O-xV6fXtSnF0Y8Z2lxKa1g
-
-自主机器人导论:运动学，感知，定位和规划，241页pdf
-
-## 自动驾驶入门课程
-
-https://mp.weixin.qq.com/s/yO_Lc5Fo-8fBC9PwVCQBqA
-
-自动驾驶入门课程第①讲 — 无人驾驶概览
-
-https://mp.weixin.qq.com/s/IVD0aq8V-qZoB0tcLMigYw
-
-自动驾驶入门课程第②讲 — 高精地图
-
-https://mp.weixin.qq.com/s/KJbm4wfsTLxT5LGR7GV_SA
-
-自动驾驶入门课程第③讲 — 定位

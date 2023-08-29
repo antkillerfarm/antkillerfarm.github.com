@@ -97,6 +97,10 @@ https://linuxconfig.org/ubuntu-remote-desktop-18-04-bionic-beaver-linux
 
 Ubuntu Remote Desktop - 18.04 Bionic Beaver Linux
 
+https://blog.csdn.net/u012911347/article/details/114106968
+
+RealVNC Server Ubuntu 20.04 无显示器连接 虚拟显示器
+
 ## xfce4
 
 如果非要使用传统的vncserver的话，只能选择其他桌面，例如xfce4。
@@ -171,6 +175,10 @@ export XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
 打开remmina，用+号按钮新建会话，设置分辨率为“使用客户机的分辨率”。
 
 这里得到的是一个新建的虚拟桌面。
+
+---
+
+除了VNC、RDP之外，Xdcmp也是常用的桌面协议。
 
 ## 远程桌面客户端
 
@@ -333,16 +341,6 @@ https://www.cnblogs.com/schips/p/10141278.html
 最近公司网络有问题，只好使用手机连接互联网，也就是所谓WLAN热点。
 
 除了Wifi之外，现在的手机还有USB网络共享的功能，该功能基于RNDIS（Remote NDIS）技术，实际上就是TCP/IP over USB，就是在USB设备上跑TCP/IP，让USB设备看上去像一块网卡。
-
-# 打印机
-
-一般使用sane做为扫描仪后端：
-
-`sudo apt-get install sane sane-utils xsane`
-
-## Virtual MIDI Piano Keyboard
-
-VMPK是一款MIDI生成工具软件，也就是俗称的“虚拟电子琴”软件。但它本身只生成MIDI输出，需要配合使用MIDI后处理软件，才能发声。常见的MIDI后处理软件有Qsynth、TiMidity。
 
 # Ubuntu 22.04使用手记
 
