@@ -63,6 +63,29 @@ python: `pywrap_tfe.TFE_Py_Execute`
 
 C++: `TFE_Py_Execute`
 
+```bazel
+cc_library(
+    name = "xla_ops",
+    srcs = ["xla_ops.cc"],
+    deps = ["//tensorflow/core:framework"],
+    alwayslink = 1,
+)
+
+tf_gen_op_wrapper_py(
+    name = "xla_ops_wrapper_py",
+    out = "xla_ops.py",
+    deps = ["//tensorflow/compiler/jit/ops:xla_ops"],
+)
+```
+
+有两个xla_ops.cc，一个在ops下，另一个在kernels下，前者是声明，后者是实现。
+
+tf_gen_op_wrapper_py之后，会生成xla_ops.py。
+
+`gen_xla_ops.xla_dot_v2()`
+
+这样就可以通过python调用C++。
+
 ## Pytorch XLA
 
 Pytorch官方提供了如下项目支持XLA：

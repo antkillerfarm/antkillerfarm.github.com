@@ -35,7 +35,7 @@ category: Chip
 
 ![](/images/img3/IC_process_2.jpg)
 
-![](/images/img4/CPU.jpg)
+![](/images/img4/CPU.png)
 
 https://mp.weixin.qq.com/s/TmLSHVkeyqfU-9Jgir0czA
 
@@ -175,6 +175,8 @@ https://www.zhihu.com/question/20809971
 
 “我并不需要你帮我省电，而是希望你帮我把更多的电变成更多的钱”
 
+
+
 # CPU
 
 ## 行业
@@ -210,8 +212,11 @@ Synopsys、Cadence、Siemens EDA（原Mentor）三大巨头垄断了全球EDA行
 项目管理中项目进度: WS=>ES=>CS=>MP
 
 WS：Working Sample
+
 ES：Engineering Sample
+
 CS：Commercial Sample
+
 MP：mass product
 
 所以，可以理解为ES是工程样品，CS是出货样品。
@@ -227,6 +232,12 @@ wafer out是指wafer在fab完成了生产，设计的集成电路已经制造在
 https://zhuanlan.zhihu.com/p/342808728
 
 谈谈ARM/MIPS的Archi-license架构许可模式、IP core授权模式，及其商业规则
+
+---
+
+https://zhuanlan.zhihu.com/p/614318358
+
+“双”浅谈14nm+14nm>7nm是否真的可行
 
 ## 3D芯片
 

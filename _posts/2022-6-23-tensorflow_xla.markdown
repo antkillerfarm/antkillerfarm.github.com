@@ -174,21 +174,39 @@ compiler/tf2xla/ -> compiler/xla/client/ -> compiler/xla/service/
 
 - `compiler/tf2xla/`
 
-对上提供xla_compiler.cc:XlaCompiler::CompileFunction()供jit:compile_fn()使用将cluster转化为XlaComputation。核心是利用xla/client提供的接口，实现对XlaOpKernel的“Symbolic Execution”功能。每个XlaOpKernel子类均做的以下工作: **从XlaOpKernelContext中取出XlaExpression或XlaOp，调用xla/client/xla_buidler.h提供的方法完成计算，将计算结果的XlaOp存入XlaKernelContext。**
+xla_compiler.cc: XlaCompiler::CompileFunction()供jit:compile_fn()使用将cluster转化为XlaComputation。核心是利用xla/client提供的接口，实现对XlaOpKernel的“Symbolic Execution”功能。每个XlaOpKernel子类均做的以下工作: **从XlaOpKernelContext中取出XlaExpression或XlaOp，调用xla/client/xla_buidler.h提供的方法完成计算，将计算结果的XlaOp存入XlaKernelContext。**
 
 - `compiler/xla/client/`
 
-对上提供xla_builder.cc:Builder等供CompileFunction()使用，将Graph由Op表达转化为HloModuleProto:HloComputationProto:HloInstructionProto表达并保存在XlaComputation中。
+xla_builder.cc: Builder等供CompileFunction()使用，将Graph由Op表达转化为HloModuleProto:HloComputationProto:HloInstructionProto表达并保存在XlaComputation中。
 
-对上提供local_client.cc:LocalClient::Compile()，作为编译入口供jit：BuildExecutable()使用，将已经得到的XlaComputation交给service并进一步编译为二进制。
+local_client.cc: LocalClient::Compile()，作为编译入口供jit：BuildExecutable()使用，将已经得到的XlaComputation交给service并进一步编译为二进制。
 
-对上提供local_client.cc:LocalExecutable::Run()，作为运行入口供jit/kernels/xla_ops.cc:XlaRunOp使用，通过Key找到相应的二进制交给service层处理。
+local_client.cc: LocalExecutable::Run()，作为运行入口供jit/kernels/xla_ops.cc:XlaRunOp使用，通过Key找到相应的二进制交给service层处理。
 
 - `compiler/xla/service/`
 
-对上提供local_service.cc:LocalService::BuildExecutable()供LocalClient::Compile()使用实现真正的编译，承接XlaComputation封装的HloProto，将其转化为HloModule:HloComputation:HloInstruction表达，对其进行优化之后，使用LLVM后端将其编译为相应Executable后端的二进制代码。
+local_service.cc: LocalService::BuildExecutable()供LocalClient::Compile()使用实现真正的编译，承接XlaComputation封装的HloProto，将其转化为HloModule:HloComputation:HloInstruction表达，对其进行优化之后，使用LLVM后端将其编译为相应Executable后端的二进制代码。
 
-对上提供executable.cc:Executable::ExecuteOnStream()供LocalExecutable::Run()使用实现真正的执行二进制。
+executable.cc: Executable::ExecuteOnStream()供LocalExecutable::Run()使用实现真正的执行二进制。
+
+## StreamExecutor
+
+```cpp
+EagerExecutor::SyncExecute
+Status s = node->Prepare();
+s = node->Run();
+
+EagerExecutor::Run
+ExecuteNode::Run
+EagerKernelExecute
+KernelAndDevice::Run
+XlaCompileOnDemandOp::Compute
+XlaCompileOnDemandOp::Run
+LocalExecutable::Run
+LocalExecutable::RunAsync
+Executable::ExecuteAsyncOnStreamWrapper
+```
 
 ## backward
 
