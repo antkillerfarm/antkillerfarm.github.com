@@ -344,3 +344,7 @@ https://zhuanlan.zhihu.com/p/649194100
 https://zhuanlan.zhihu.com/p/651937400
 
 投敌叛国谋害战友 俄罗斯飞行员驾驶米8直升机向乌克兰投诚
+
+https://zhuanlan.zhihu.com/p/516566732
+
+俄军志愿兵伊久姆参战记
