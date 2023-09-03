@@ -11,6 +11,16 @@ category: Chip
 
 ## 真假自研（续）
 
+VIA为了让兆芯更加尊重知识、珍惜技术，即使是落后的技术，VIA也会用高昂的价格体现知识的价值。
+
+VIA已经离开主流电脑市场十几年，芯片组技术也至少落后了主流十几年。现在才把相关技术转让给兆芯，可能是为了避免拔苗助长，才敝帚自珍。
+
+这次交易掏空了VIA所剩无几的技术储备，Centaur新设计的CPU核心也没能超过国内自主设计的水平，因此Centaur已经失去了继续存在的价值。
+
+VIA在2021年11月把Centaur的技术团队卖给了Intel，之后又出售厂房和设备，完全放弃了继续研发CPU的能力。
+
+兆芯的传承起至1980年，那一年美国Integrated Device Technology（IDT公司）成立。1988年美国Cyrix公司成立。这两家公司都设计x86架构CPU，以性价比与Intel产品竞争。
+
 威盛（VIA）在1999年6月先后买下Cyrix微处理器设计部门和Centaur（从前的IDT）后，合并为VIA在美国的处理器研发总部，仍然叫作Centaur。这是第一次传承转移，然后VIA把Centaur在x86方面的技术成果全盘出售给兆芯，完成了第二次衣钵传承。
 
 https://mp.weixin.qq.com/s/HDTNCrKYJ7daZieg4rb4VA
@@ -148,21 +158,3 @@ https://www.zhihu.com/answer/3083579458
 https://mp.weixin.qq.com/s/SaUr2Mp4W5xmlyTcePrzlQ
 
 目前最全国产芯片公司一览
-
-## Russia CPU
-
-俄罗斯设计通用CPU的企业主要有两家，一家是莫斯科SPARC技术中心(MCST)，另一家是贝加尔电子公司(Baikal Electronics)。
-
-莫斯科SPARC技术中心是俄罗斯自主研发CPU的代表，研发了Elbrus系列产品。
-
-贝加尔电子公司推出的Baikal系列CPU都是外购的CPU核心设计，再自行与其它的外购IP进行集成，与我们的国产手机CPU是相同的路线。
-
-https://mp.weixin.qq.com/s/Ud4f5L2tYNbP1oURVBszag
-
-俄罗斯自研Elbrus CPU参数曝光，CEO年近九旬仍未退休
-
->Boris Babayan，1933年生，俄罗斯科学院院士，Intel院士。俄罗斯CPU之父。Elbrus系列超算和通用CPU的主要研发者，1978年他率领团队研发出世界第一台超标量计算机Elbrus-1，整整领先西方世界十三年。
-
-https://zhuanlan.zhihu.com/p/549196030
-
-甭怂，奣烎，国产通用CPU比俄罗斯勥
