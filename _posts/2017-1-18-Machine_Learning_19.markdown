@@ -167,6 +167,8 @@ https://www.zhihu.com/question/547317808
 
 百万粉丝网红在菲律宾被绑架，迄今已和家人失联3个月，稍早协助营救的潮汕商会负责人表示，雅典娜（原名孔丽梅）确实被绑架，最后行踪在菲律宾。
 
+当地9月3日傍晚，缅甸克伦邦妙瓦底市的一警察局遭到无人机多次投掷炸弹袭击，导致包括警察局长在内的3人死亡，十余人受伤。
+
 https://www.sohu.com/a/658343064_121284943
 
 78人揭露“泰国务工”骗局：有工程师以20万元被转卖至缅北诈骗营
@@ -178,57 +180,3 @@ https://mp.weixin.qq.com/s/3gxsiw7OBfA-U9Ix_Y6DlA
 https://www.zhihu.com/question/618023908
 
 中泰缅老四国警方启动合作打击赌诈集团专项联合行动，将带来哪些影响？
-
----
-
-https://zhuanlan.zhihu.com/p/37928659
-
-越南帝国扩张
-
-https://zhuanlan.zhihu.com/p/303875663
-
-从数据看越南制造对中国的威胁有多大？
-
-https://mp.weixin.qq.com/s/NHkTQmJ3Jq1A3pgKI2DCeg
-
-这是9·11事件后，全世界最严重的恐怖袭击（巴厘岛恐怖袭击）
-
-https://zhuanlan.zhihu.com/p/377325999
-
-改名泰国，激怒中国
-
-https://mp.weixin.qq.com/s/61qqxaLhfcLSzbBi_x1XWw
-
-亚洲第二富国菲律宾，如今却靠出口女佣赚钱
-
-https://www.zhihu.com/question/456075868
-
-南越F4到底是什么来头？
-
-https://mp.weixin.qq.com/s/E-xJ1IGxklGpICFsrZla9Q
-
-西贡铁拳在西贡？南越总崩溃时的照片何止这张被误解
-
-https://www.zhihu.com/question/27700838
-
-越南的军事实力有能力统一中南半岛吗？
-
-https://www.zhihu.com/question/386153966
-
-导致明朝最终放弃安南的主导因素是什么？
-
-https://www.zhihu.com/question/292991962
-
-如何评价越南军队？
-
-https://www.zhihu.com/question/25673808
-
-越南侵略柬埔寨的真实动机是什么？
-
-https://zhuanlan.zhihu.com/p/627574646
-
-考德维尔遇刺案再考
-
-https://zhuanlan.zhihu.com/p/496058564
-
-缅北旗帜徽章研究——战乱与中国影响

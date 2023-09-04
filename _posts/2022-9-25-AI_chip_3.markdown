@@ -369,6 +369,10 @@ https://zhuanlan.zhihu.com/p/545296023
 
 写给CUDA开发者AMD ROCm & Intel oneAPI开发贴士
 
+https://streamhpc.com/blog/2016-04-05/comparing-syntax-cuda-opencl-hip/
+
+Comparing Syntax for CUDA, OpenCL and HiP
+
 ## Composable Kernel
 
 Composable Kernel（CK）库旨在提供一套在AMD GPU上算子融合的后端方案。
