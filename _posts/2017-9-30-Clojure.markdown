@@ -222,6 +222,8 @@ Ubuntu：Ctrl + Shift + I
 
 文件标签栏多行显示: `workbench.editor.wrapTabs`
 
+执行Task：F1 + `.vscode/tasks.json`
+
 ## 插件
 
 filesize：在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间。
