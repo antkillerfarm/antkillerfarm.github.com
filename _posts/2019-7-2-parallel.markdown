@@ -1,13 +1,221 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（一）
+title:  并行 & 框架 & 优化（二）——Parameter Server, MPI
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# MPI（续）
+# Parameter Server
+
+在深度学习概念提出之前，算法工程师手头能用的工具其实并不多，就LR、SVM、感知机等寥寥可数、相对固定的若干个模型和算法；那时候要解决一个实际的问题，算法工程师更多的工作主要是在特征工程方面。而特征工程本身并没有很系统化的指导理论（至少目前没有看到系统介绍特征工程的书籍），所以很多时候特征的构造技法显得光怪陆离，是否有用也取决于问题本身、数据样本、模型以及运气。如果给这种方式起一个名字的话，大概是**简单模型+复杂特征**；
+
+深度学习代表的**简单特征+复杂模型**是解决实际问题的另一种方式。
+
+两种模式孰优孰劣还难有定论，以点击率预测为例，在计算广告领域往往以海量特征+LR为主流，根据VC维理论，LR的表达能力和特征个数成正比，因此海量的feature也完全可以使LR拥有足够的描述能力。
+
+Parameter Server就是处理海量特征计算的一种方法。
+
+>我最初也被某系统号称上亿的特征给吓到了，毕竟自己设计的推荐系统搜肠刮肚也不过500左右的特征。后来才了解到，国内几家大公司在特征构造方面的成功率在后期一般不会超过20%。也就是80%的新构造特征往往并没什么正向提升效果。一个特征随便弄一下（窗口滑动、离散化、归一化、开方、平方、笛卡尔积、多重笛卡尔积）就弄出一堆特征。。。   
+>一些所谓从事数据挖掘工作多年的专家，其实从方法论上也没有多高明。特征工程严重依赖领域知识，理论知识嘛，LR又不是多高深的东西。。。
+
+>2017.5，我曾去某电商面试推荐系统职位。言谈之中发现他们对于DL几乎一无所知，当时就觉得有些古怪。直到接触Parameter Server才明白了他们的玩法。。。非常庆幸他们鄙视了我。后来到了2017.12的时候，他们主动找我，想再次面试，被我婉拒。
+
+这类问题的另一个特征是：特征虽多，但单独的一个样本具有的有效特征相对有限，一般不过数百个。使用样本更新参数时，只考虑这几百个特征即可，这也为相关的分布式运算提供了有利条件。
+
+![](/images/img5/PS.jpg)
+
+如图所示，PS架构将计算节点分为server与worker，其中，worker用于执行网络模型的前向与反向计算。而server则对各个worker发回的梯度进行合并并更新模型参数，对深度学习模型参数中心化管理的方式，非常易于存储超大规模模型参数。
+
+但是随着模型网络越来越复杂，对算力要求越来越高，在数据量不变的情况下，单个GPU的计算时间是有差异的，并且网络带宽之间并不平衡，会存在部分GPU计算得比较快，部分GPU计算得比较慢。这个时候如果使用异步更新网络模型的参数，会导致优化器相关的参数更新出现错乱。而使用同步更新则会出现阻塞等待网络参数同步的问题。
+
+参考：
+
+https://www.zhihu.com/question/26998075
+
+最近比较火的parameter server是什么？
+
+http://blog.csdn.net/cyh_24/article/details/50545780
+
+Parameter Server详解
+
+https://mp.weixin.qq.com/s/yuHavuGTYMH5JDC_1fnjcg
+
+阿里妈妈基于TensorFlow做了哪些深度优化？TensorFlowRS架构解析
+
+https://zhuanlan.zhihu.com/p/29968773
+
+大规模机器学习框架的四重境界
+
+https://mp.weixin.qq.com/s/2RCH2Or_ITUTGrlfYLB8mg
+
+腾讯千亿级参数分布式ML系统无量背后的秘密
+
+https://mp.weixin.qq.com/s/Na2SJkfC9LzgfbTfSCclOw
+
+如何基于Ray使用15行代码实现参数服务器
+
+https://zhuanlan.zhihu.com/p/82116922
+
+一文读懂“Parameter Server”的分布式机器学习训练原理
+
+https://mp.weixin.qq.com/s/5Ae1NyLM-jZnO6TCOPMYkQ
+
+PS Worker分布式性能优化
+
+https://www.cnblogs.com/rossiXYZ/p/15897877.html
+
+NVIDIA HugeCTR，GPU版本参数服务器
+
+# MPI
+
+在《机器学习（三十三）》的Parameter Server一节，我们已经提到了Parameter Server这种参数中心化的分布式计算方案，但Parameter Server主要适用于稀疏矩阵的参数更新。对于多数的DL算法而言，采用**参数去中心化的集合通讯模式**是一种更有效率的做法。
+
+---
+
+集群可以很好解决单节点计算力不足的问题，但在集群中大规模的数据交换是很耗费时间的，因此需要一种在多节点的情况下能快速进行数据交流的标准，这就是Message passing interface(MPI)。
+
+MPI的主流实现主要是：mpich，openmpi，Intel MPI，Microsoft MPI，其中Intel MPI和Microsoft MPI都是基于开源的mpich。
+
+和MPI类似的技术，还有NVIDIA的NCCL，FaceBook的gloo等。
+
+NVIDIA SHARP：Scalable Hierarchical Aggregation and Reduction Protocol
+
+MPI官网：
+
+http://www.mpi-forum.org/docs/
+
+1994：MPI-1
+
+1998：MPI-2
+
+2012：MPI-3
+
+2021：MPI-4
+
+因为MPI的历史比较久远，深刻影响了后来的分布式并行程序，比如TF等。所以这里简单介绍一下几个关键的术语。
+
+gloo官网：
+
+https://github.com/facebookincubator/gloo
+
+## Barrier
+
+![](/images/img4/barrier.png)
+
+这个方法会构建一个屏障，任何进程都没法跨越屏障，直到所有的进程都到达屏障。
+
+实现屏障的方式有很多，最简单的是令牌环（token ring）。
+
+第一个进程到达的屏障生成一个token，然后传递给下一个到达屏障的进程。所有的进程都到达屏障之后，token被传递回第一个进程。
+
+`MPI_Barrier`在TF中被称为`AfterAll`。
+
+## Bcast & Scatter
+
+![](/images/img4/broadcastvsscatter.png)
+
+`MPI_Bcast`给每个进程发送的是同样的数据，然而`MPI_Scatter`给每个进程发送的是一个数组的一部分数据。
+
+![](/images/img4/broadcast_tree.png)
+
+在上图的树形算法里，能够利用的网络连接每个阶段都会比前一阶段翻番，直到所有的进程接收到数据为止。
+
+## Gather & Allgather
+
+![](/images/img4/gather.png)
+
+`MPI_Gather`跟`MPI_Scatter`是相反的。
+
+![](/images/img4/allgather.png)
+
+`MPI_Allgather`相当于一个`MPI_Gather`操作之后跟着一个`MPI_Bcast`操作。
+
+## Reduce & Allreduce
+
+![](/images/img4/mpi_reduce_1.png)
+
+数据归约包括通过函数将一组数字归约为较小的一组数字。例如，假设我们有一个数字列表[1,2,3,4,5]。用sum函数归约此数字列表将产生`sum([1、2、3、4、5]) = 15`。
+
+![](/images/img4/mpi_allreduce_1.png)
+
+`MPI_Allreduce`等效于先执行`MPI_Reduce`，然后执行`MPI_Bcast`。
+
+## Alltoall
+
+![](/images/img4/all-to-all-collective.png)
+
+`MPI_Alltoall`的工作方式是`MPI_Scatter`和`MPI_Gather`的组合。它的用途之一就是上图所示的数据的行列转置,但它比转置要灵活的多。
+
+## groups
+
+以上这些操作都涉及了多个计算节点。执行同一操作的多个节点组成一个group。
+
+group里包含了相关的节点的id，如果group为null，则该操作会在整个计算集群上执行。两个group可以进行交集、并集之类的集合运算，生成新的group。
+
+## 总结
+
+```cpp
+ScatterGather(SrcIDRange,SrcAddr,DstIDRange,DstAddr,UnitSize,TotalSize)
+When there is only one source and UnitSize = TotalSize, it is a Broadcast
+When there is only one source and UnitSize != TotalSize, it is a Scatter
+When there is only one destination and UnitSize = TotalSize, it is a Gather
+When UnitSize = TotalSize and there are multiple sources and destinations, it is a AllGather operation
+When UnitSize != TotalSize and there are multiple sources and destinations, it is a All-to-All operation
+```
+
+从上面可以看出，除了Reduce一系的操作之外，其他的都可以总结为Scatter+Gather。
+
+Scatter也被称为One-to-all，Gather也被称为All-to-one。
+
+## AllReduce
+
+AllReduce有多种具体的实现方式。
+
+Ring AllReduce：
+
+![](/images/img4/Ring_AllReduce.jpg)
+
+Having-Doubling AllReduce：
+
+![](/images/img4/Having-Doubling_AllReduce.jpg)
+
+该算法每次选择节点距离倍增的节点相互通信，每次通信量倍减（或倍增）。
+
+该算法的优点是通信步骤较少，只有$$2 * log_2N$$次（其中N表示参与通信的节点数）通信即可完成，所以其有更低的延迟。相比之下Ring算法的通信步骤是$$2 ∗ (N−1)$$次；缺点是每一个步骤相互通信的节点均不相同，链接来回切换会带来额外开销。
+
+ring all-reduce具有理论上最优的传输带宽，而没有考虑每次传输都包含的延迟（latency）。当数据量V比较大时，延迟项可以忽略。当V特别小，或者设备数p特别大时，带宽就变得不重要了，反而是延迟比较关键。
+
+这也是为什么英伟达NCCL里既实现了ring all-reduce，也实现了double-tree all-reduce算法。
+
+https://www.zhihu.com/question/57799212
+
+ring allreduce和tree allreduce的具体区别是什么？
+
+https://andrew.gibiansky.com/blog/machine-learning/baidu-allreduce/
+
+Bringing HPC Techniques to Deep Learning
+
+https://zhuanlan.zhihu.com/p/79030485
+
+AllReduce算法的前世今生
+
+https://mp.weixin.qq.com/s/4XMVYXnzpYZ4DrIabuTUig
+
+Ring All-reduce: 分布式深度学习的巧妙同步
+
+https://zhuanlan.zhihu.com/p/504957661
+
+手把手推导Ring All-reduce的数学性质
+
+https://developer.nvidia.com/blog/massively-scale-deep-learning-training-nccl-2-4/
+
+Massively Scale Your Deep Learning Training with NCCL 2.4
+
+https://zhuanlan.zhihu.com/p/611229620
+
+NVIDIA的custom allreduce
 
 ## 其他概念
 
@@ -62,241 +270,3 @@ https://zhuanlan.zhihu.com/p/276122469
 https://zhuanlan.zhihu.com/p/425830285
 
 最理想的点到点通信库究竟是怎样的？
-
-# 并行 & 框架 & 优化
-
-## 概述
-
-![](/images/img4/Deep_Learning_System.png)
-
-并行计算的必要性：
-
-美国Sandia国家实验室一项模拟测试证明：由于存储机制和内存带宽的限制，16核、32核甚至64核处理器对于超级计算机来说，不仅不能带来性能提升，甚至可能导致效率的大幅度下降。必须研究并行计算的算法，才能有效克服这些缺陷。
-
-![](/images/img2/speed.jpg)
-
-最早的并行计算项目是斯坦福大学的BrookGPU：
-
-http://graphics.stanford.edu/projects/brookgpu/
-
-科学家们很早就意识到GPU进行通用数值计算的可行性。然而GPU从创建之初，就主要针对图形渲染，早期的通用计算需要通过很复杂的处理，才能安排到GPU的pipeline中进行运算。BrookGPU的作用就是给通用数值计算提供一个相对简单的接口。
-
-随着GPU厂商逐渐意识到通用数值计算的重要性，并陆续提出了一些新框架。BrookGPU项目也就过时了。
-
-NV的路线是：Brook -> CUDA
-
-AMD的路线是：Brook -> Brook+(后更名Stream/APP) -> OpenCL/DirectML -> ROCm(同时有OpenCL和DirectML支持)。
-
-常见并行计算框架
-
-| 名称 | 优点 | 缺点 |
-|:--:|:--:|:--:|
-| CUDA | 生态系统良好，发展成熟。 | 只能NV的卡。 |
-| OpenCL | 跨平台，很容易异构计算。 | 大家都把它当作干儿子，没人认真写它的驱动。 |
-| C++ AMP | 基于Direct compute，易于使用。 | Windows Only。 |
-| OpenMP | 移植改动少 | CPU多线程而已，和GPU无关。 |
-| Metal | for iOS | - |
-
-其他的并行计算框架还有：OpenACC、AMD stream、PGI。
-
-## OpenCL vs CUDA
-
-![](/images/article/opencl_cuda.jpg)
-
-## OpenMp
-
-https://github.com/lapesd/libgomp
-
-## 教程
-
-https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial
-
-Introduction to Parallel Computing Tutorial
-
-https://www.cnblogs.com/Carrawayang/p/14691607.html
-
-上文的中文版
-
-http://www.cs.cmu.edu/~418/
-
-15-418/15-618: Parallel Computer Architecture and Programming
-
-## 论文
-
-《Demystifying Parallel and Distributed Deep Learning: An In-Depth Concurrency Analysis》
-
-《A Survey of Large-Scale Deep Learning Serving System Optimization: Challenges and Opportunities》
-
-## blog
-
-https://zhuanlan.zhihu.com/c_1174996853811335168
-
-一个多核&并行的专栏
-
-https://deeplearningsystems.ai
-
-Deep Learning Systems: Algorithms, Compilers, and Processors for Large-Scale Production
-
-## 并发和并行
-
-并发(concurrency)是指能处理多个同时性活动的能力，并发事件之间不一定要同一时刻发生。
-
-并行(parallelism)是指同时发生的两个并发事件，具有并发的含义，而并发则不一定并行。
-
-来个比喻：并发和并行的区别就是一个人同时吃三个馒头和三个人同时吃三个馒头。
-
-Erlang之父Joe Armstrong曾经以人们使用咖啡机的场景为例描述了这两个术语。
-
-并发：如果多个队列可以交替使用某台咖啡机，则这一行为就是并发的。
-
-并行：如果存在多台咖啡机可以被多个队列交替使用，则就是并行。
-
-参考：
-
-https://mp.weixin.qq.com/s/23QCWf0NOoXlwRGAHfx4oQ
-
-还在疑惑并发和并行？
-
-https://mp.weixin.qq.com/s/-kizIk3ZXqu7UNqAb3QlQw
-
-C++并发编程（C++11到C++17）
-
-## Parallelism Bubble
-
-![](/images/img5/bubble.jpg)
-
-模型经过拆分后的上一个rank的stage需要长期持续处于空闲状态，等待其他rank的stage计算完成，才可以开始计算，这极大降低了设备的平均使用率。这种现象被称为并行空泡（Parallelism Bubble）。
-
-https://zhuanlan.zhihu.com/p/618590870
-
-大模型训练Pipeline Parallel流水并行性能分析
-
-## Distributed Data Parallel
-
-https://mp.weixin.qq.com/s/52Wz4pUI8egKugMFuknWKw
-
-Pytorch中的Distributed Data Parallel与混合精度训练（Apex）
-
-https://mp.weixin.qq.com/s/x1Z4jkMvfo4mD-_rKqvjuw
-
-在PyTorch中使用Distributed Data Parallel进行多GPU分布式模型训练
-
-https://zhuanlan.zhihu.com/p/178402798
-
-DDP系列第一篇：入门教程
-
-https://zhuanlan.zhihu.com/p/187610959
-
-DDP系列第二篇：实现原理与源代码解析
-
-https://zhuanlan.zhihu.com/p/250471767
-
-DDP系列第三篇：实战与技巧
-
-## tf.distribute & MultiDevice
-
-MirroredStrategy：单机多卡训练
-
-MultiWorkerMirroredStrategy：多机训练
-
-CentralStorageStrategy也执行同步训练，但是变量不会被镜像，而是放在CPU上。各操作(operation)在本地GPU之间复制进行。如果只有一个GPU，变量和操作都会放在GPU上。在对CPU上的变量进行更新前，该策略会先将所有 GPU副本的上的变量梯度进行聚合，然后应用到CPU变量更新中。
-
----
-
-当数据量很大时，单个节点需要很长时间才能完成1轮训练，这对于动辄十几轮或几十轮的训练来说是不可忍受的，所以可以将数据进行划分并分配给多个节点，每个节点处理自己的一小部分数据，从而加快整体的训练速度。在TensorFlow中**数据并行**也被称为图间复制(Between-graph Replication)。
-
-模型并行是指将模型切分为多个部分并将各个部分放置到不同的节点进行训练的分布式模式。因为当模型很复杂，参数很多时，由于内存的限制，单个节点无法将整个模型加载并进行训练，所以需要将模型切割为更小的部分，并将各个部分运行在不同的节点上以完成训练。在TensorFlow中**模型并行**也被称为图内复制 (In-graph Replication)。
-
-![](/images/img4/Parallel.png)
-
-![](/images/img4/Parallel_2.png)
-
----
-
-tensorflow::ProcessFunctionLibraryRuntime::RunMultiDevice
-
-https://www.cnblogs.com/rossiXYZ/p/16142677.html
-
-TensorFlow之分布式变量（该作者写了一系列的TF分布式文章）
-
-示例：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/xla/multi_device_lenet_xla.py
-
-## Rendezvous
-
-Rendezvous是一个法语单词，发音也比较特殊，一般直译为“约会、相会、会和”，而在TensorFlow中，Rendezvous是用来完成消息传输的通信组件。
-
-消息传输的唯一标识符——ParsedKey
-
-Send和RecvAsync二者的相对顺序是不能保证先后的，经常出现需求比供给在时间片上先到的情况，总是迟到的一方执行waiter函数。
-
-Send方——将Ready的Tensor挂入本地Table
-
-Recv方——向Send方主动发出请求，触发通信过程
-
-所以，真正的通信过程由Recv方触发，而不是Send方。
-
-TensorFlow已经支持包括gRPC，RDMA（Remote Direct Memroy Access），GDR（GPU Direct）和MPI四种通信协议。
-
-BFC（Best-Fit with Coalescing）是dlmalloc的一个简单实现版本。
-
-https://www.cnblogs.com/deep-learning-stacks/p/10354258.html
-
-TensorFlow中的通信机制——Rendezvous（一）本地传输
-
-https://www.cnblogs.com/deep-learning-stacks/p/10355770.html
-
-TensorFlow中的通信机制——Rendezvous（二）gRPC传输
-
-https://blog.csdn.net/gaofeipaopaotang/article/details/80736452
-
-模型优化之分布式执行
-
-https://xieyu.github.io/blog/tensorflow/rendezvous.html
-
-Tensorflow Rendezvous
-
----
-
-Host to Device：
-
-SameWorkerRecvDone -> CopyTensor::ViaDMA -> CopyHostToDevice -> XlaDeviceContext::CopyCPUTensorToDevice ->
-
-GenericTransferManager::TransferLiteralToDeviceAsync -> TransferManager::TransferBufferToDevice -> Stream::ThenMemcpy
-
-## StreamExecutor
-
-StreamExecutor是Google内部为并行编程模型开发的库。TensorFlow中的StreamExecutor是StreamExecutor的开源简版。
-
-https://www.cnblogs.com/deep-learning-stacks/p/9386188.html
-
-TensorFlow中的并行执行引擎——StreamExecutor框架
-
-TF使用`stream_executor::DeviceMemoryBase`作为设备内存的抽象。用`DeviceMemoryBase::opaque`作为对于不可直接访问的设备地址的指针。
-
-`class GpuExecutor : public internal::StreamExecutorInterface`
-
-所以上面提到的Memcpy的调用路径，还有设备相关的后半部分：
-
-Stream::ThenMemcpy -> StreamExecutor::Memcpy -> GpuExecutor::Memcpy -> GpuDriver::AsynchronousMemcpyH2D -> cuMemcpyHtoDAsync
-
-## TransferManager
-
-`TransferManager`类使后端能够提供特定于平台的机制，用于通过给定的设备内存句柄构造XLA literal data。换言之，它可以帮助封装主机与设备之间的双向数据传输。
-
-`TransferManager`类已经有了一个通用实现：`GenericTransferManager`，设备只需要派生该类，做一些定制化的修改。所以`xxx_transfer_manager.h`是关注的重点。
-
-TPU和GPU的修改主要集中在`TransferLiteralToInfeed`和`TransferLiteralFromOutfeed`两个函数。
-
-这两个函数的GPU实现在`InfeedManager`类中。
-
-`TransferLiteralToInfeed`关键函数调用：
-
-gpu::CopyBufferToDevice -> Stream::ThenMemcpy
-
-如果不对`GenericTransferManager`做修改，则该类会用Host上的mem buffer，虚拟一个`DeviceMemoryBase`来处理Feed。
-
-graphcore的实现没有动`GenericTransferManager`，而是自己单独弄了一套基于`TranslatedFeedInfo`类的cache机制。
-
-tensorflow/compiler/plugin/poplar/driver/poplar_executable_cache.cc

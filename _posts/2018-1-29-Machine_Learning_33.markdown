@@ -202,63 +202,156 @@ http://www.doc88.com/p-7082821463697.html
 
 改进的热传导和物质扩散混合推荐算法
 
-# Parameter Server
+# 并行 & 框架 & 优化+
 
-在深度学习概念提出之前，算法工程师手头能用的工具其实并不多，就LR、SVM、感知机等寥寥可数、相对固定的若干个模型和算法；那时候要解决一个实际的问题，算法工程师更多的工作主要是在特征工程方面。而特征工程本身并没有很系统化的指导理论（至少目前没有看到系统介绍特征工程的书籍），所以很多时候特征的构造技法显得光怪陆离，是否有用也取决于问题本身、数据样本、模型以及运气。如果给这种方式起一个名字的话，大概是**简单模型+复杂特征**；
+https://mp.weixin.qq.com/s/ai_XI8ddP5I2m3ChCqnQsA
 
-深度学习代表的**简单特征+复杂模型**是解决实际问题的另一种方式。
+高效大规模机器学习训练，198页PDF带你概览领域前沿进展
 
-两种模式孰优孰劣还难有定论，以点击率预测为例，在计算广告领域往往以海量特征+LR为主流，根据VC维理论，LR的表达能力和特征个数成正比，因此海量的feature也完全可以使LR拥有足够的描述能力。
+https://openmlsys.github.io
 
-Parameter Server就是处理海量特征计算的一种方法。
+机器学习系统：设计和实现
 
->我最初也被某系统号称上亿的特征给吓到了，毕竟自己设计的推荐系统搜肠刮肚也不过500左右的特征。后来才了解到，国内几家大公司在特征构造方面的成功率在后期一般不会超过20%。也就是80%的新构造特征往往并没什么正向提升效果。一个特征随便弄一下（窗口滑动、离散化、归一化、开方、平方、笛卡尔积、多重笛卡尔积）就弄出一堆特征。。。   
->一些所谓从事数据挖掘工作多年的专家，其实从方法论上也没有多高明。特征工程严重依赖领域知识，理论知识嘛，LR又不是多高深的东西。。。
+https://mp.weixin.qq.com/s/RAjusu-Jyqb8K19N8KZ_3w
 
->2017.5，我曾去某电商面试推荐系统职位。言谈之中发现他们对于DL几乎一无所知，当时就觉得有些古怪。直到接触Parameter Server才明白了他们的玩法。。。非常庆幸他们鄙视了我。后来到了2017.12的时候，他们主动找我，想再次面试，被我婉拒。
+一份552页《大规模数据系统：Large-scale Data Systems》硬核课程PPT
 
-这类问题的另一个特征是：特征虽多，但单独的一个样本具有的有效特征相对有限，一般不过数百个。使用样本更新参数时，只考虑这几百个特征即可，这也为相关的分布式运算提供了有利条件。
+https://mp.weixin.qq.com/s/AeCQK2hFy60pq6y1tRcs_A
 
-![](/images/img5/PS.jpg)
+20页pdf，A Survey on Large-scale Machine
 
-如图所示，PS架构将计算节点分为server与worker，其中，worker用于执行网络模型的前向与反向计算。而server则对各个worker发回的梯度进行合并并更新模型参数，对深度学习模型参数中心化管理的方式，非常易于存储超大规模模型参数。
+https://mp.weixin.qq.com/s/_1Yr_BbFhlNEW7UtYvAaoA
 
-但是随着模型网络越来越复杂，对算力要求越来越高，在数据量不变的情况下，单个GPU的计算时间是有差异的，并且网络带宽之间并不平衡，会存在部分GPU计算得比较快，部分GPU计算得比较慢。这个时候如果使用异步更新网络模型的参数，会导致优化器相关的参数更新出现错乱。而使用同步更新则会出现阻塞等待网络参数同步的问题。
+分布式深度学习，93页ppt概述最新DDL技术发展
 
-参考：
+https://mp.weixin.qq.com/s/jC5v9BKQvlxa2_6cikXV9w
 
-https://www.zhihu.com/question/26998075
+分布式算法与优化，118页pdf
 
-最近比较火的parameter server是什么？
+https://zhuanlan.zhihu.com/p/58806183
 
-http://blog.csdn.net/cyh_24/article/details/50545780
+深度学习的分布和并行处理系统
 
-Parameter Server详解
+https://zhuanlan.zhihu.com/p/56991108
 
-https://mp.weixin.qq.com/s/yuHavuGTYMH5JDC_1fnjcg
+一文说清楚Tensorflow分布式训练必备知识
 
-阿里妈妈基于TensorFlow做了哪些深度优化？TensorFlowRS架构解析
+https://zhuanlan.zhihu.com/p/26552293
 
-https://zhuanlan.zhihu.com/p/29968773
+Dataflow架构和神经网络加速器
 
-大规模机器学习框架的四重境界
+https://zhuanlan.zhihu.com/p/28445511
 
-https://mp.weixin.qq.com/s/2RCH2Or_ITUTGrlfYLB8mg
+浅析深度学习框架设计中的关键技术
 
-腾讯千亿级参数分布式ML系统无量背后的秘密
+https://mp.weixin.qq.com/s/wu32LBwrkkBIANMdknHlCA
 
-https://mp.weixin.qq.com/s/Na2SJkfC9LzgfbTfSCclOw
+C++并行实战，592页pdf，C++ Concurrency in Action
 
-如何基于Ray使用15行代码实现参数服务器
+https://zhuanlan.zhihu.com/p/79385727
 
-https://zhuanlan.zhihu.com/p/82116922
+有限元并行计算简介
 
-一文读懂“Parameter Server”的分布式机器学习训练原理
+https://mp.weixin.qq.com/s/heVQ9AIZKxTiCNiAtYKaag
 
-https://mp.weixin.qq.com/s/5Ae1NyLM-jZnO6TCOPMYkQ
+新加坡国立大学最新“大规模深度学习优化”综述论文，带你全面了解最新深度学习准确率和效率的优化方法
 
-PS Worker分布式性能优化
+https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
 
-https://www.cnblogs.com/rossiXYZ/p/15897877.html
+IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能
 
-NVIDIA HugeCTR，GPU版本参数服务器
+http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
+
+神经网络的分布式训练
+
+https://mp.weixin.qq.com/s/nvuflLfOolidDDXJVe2DZA
+
+美团深度学习系统的工程实践
+
+https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
+
+TensorFlow分布式计算机制解读：以数据并行为重
+
+https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
+
+继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本
+
+https://mp.weixin.qq.com/s/kOCftzSbHe2mvDmlRp-ihA
+
+Jeff Dean：AI对计算机系统设计的影响
+
+https://mp.weixin.qq.com/s/XjNPaL6PC9LHX1PEGn5UZg
+
+微软实时AI系统“脑波计划”有多牛？看完秒懂！
+
+https://mp.weixin.qq.com/s/OkqUulFYHQSdgAbf9Fi9LA
+
+CoCoA：大规模机器学习的分布式优化通用框架
+
+https://mp.weixin.qq.com/s/ToIDncp9dS_qk47PsdZm5A
+
+杜克大学：分布式深度学习训练算法TernGrad
+
+https://mp.weixin.qq.com/s/rhtrN2qDspGkpJYDAVSX7w
+
+UC Berkeley展示全新并行处理方法
+
+https://mp.weixin.qq.com/s/ASqpPSIgW_bcFPBfRYz7Xg
+
+哈佛大学提出在云、边缘与终端设备上的分布式深度神经网络DDNN
+
+http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
+
+《Large Scale Distributed Deep Networks》中译文
+
+https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
+
+Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
+
+https://zhuanlan.zhihu.com/p/529388795
+
+训练千亿参数大模型，离不开四种GPU并行策略
+
+https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
+
+百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
+
+https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
+
+分布式深度学习原理、算法详细介绍
+
+https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
+
+苹果发布Turi Create机器学习框架，5行代码开发图像识别
+
+https://mp.weixin.qq.com/s/jOVUPhrCBI9W9vPvD9eKYg
+
+UC Berkeley提出新型分布式框架Ray：实时动态学习的开端
+
+https://mp.weixin.qq.com/s/r951Iasr4dke6MPHsUO0TA
+
+开源DAWN，Stanford的又一力作
+
+https://mp.weixin.qq.com/s/2jrMDeMcb47zpPfFLEcnIA
+
+深度学习平台技术演进
+
+https://mp.weixin.qq.com/s/L4CMKS53pNyvhhqvQhja0g
+
+5种商业AI产品的技术架构设计
+
+https://mp.weixin.qq.com/s/IqjKdAlGYREqCR9XQB5N1A
+
+伯克利AI分布式框架Ray，兼容TensorFlow、PyTorch与MXNet
+
+https://mp.weixin.qq.com/s/aNX_8UDYI_0u-MwMTYeqdQ
+
+开发易、通用难，深度学习框架何时才能飞入寻常百姓家？
+
+https://mp.weixin.qq.com/s/UbAHB-uEIvqYZCB7xIAJTg
+
+机器学习新框架Propel：使用JavaScript做可微分编程
+
+https://mp.weixin.qq.com/s/Ctl65r4iZNEOBxiiX2I2eQ
+
+Momenta王晋玮：让深度学习更高效运行的两个视角

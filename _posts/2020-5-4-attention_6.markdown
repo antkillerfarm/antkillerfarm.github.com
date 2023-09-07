@@ -213,16 +213,6 @@ Aligning Language Models to Follow Instructions
 
 ![](/images/img5/GPT.jpg)
 
-TAMER（Training an Agent Manually via Evaluative Reinforcement，评估式强化人工训练代理）框架将人类标记者引入到Agents的学习循环中，可以通过人类向Agents提供奖励反馈（即指导Agents进行训练），从而快速达到训练任务目标。
-
-![](/images/img4/TAMER.jpg)
-
-这算得上是一种有监督学习+RL了。
-
-![](/images/img5/RLHF.png)
-
-利用强化学习在大模型中注入人类的经验，所谓的Reinforcement Learning from Human Feedback(RLHF)，Policy Network输出的多样性及Reward的学习是ChatGPT成功的关键。
-
 ---
 
 基座预训练（Base pretrain）
@@ -277,26 +267,6 @@ https://zhuanlan.zhihu.com/p/590655677
 
 ChatGPT特点、原理、技术架构和产业未来
 
-https://zhuanlan.zhihu.com/p/592671478
-
-ChatGPT背后的算法——RLHF
-
-https://zhuanlan.zhihu.com/p/612572103
-
-RLHF的其他优化方向
-
-https://zhuanlan.zhihu.com/p/608176805
-
-如何看懂ChatGPT里的RLHF公式以及相关实现
-
-https://zhuanlan.zhihu.com/p/644680366
-
-LLaMA2 RLHF技术细节
-
-https://zhuanlan.zhihu.com/p/645068532
-
-大模型RLHF的trick
-
 https://zhuanlan.zhihu.com/p/651780908
 
 大模型中的人工反馈强化学习详解
@@ -344,6 +314,54 @@ nanoGPT源码阅读
 https://zhuanlan.zhihu.com/p/608705255
 
 GPT-3+RL全流程训练开源整理
+
+## RLHF
+
+TAMER（Training an Agent Manually via Evaluative Reinforcement，评估式强化人工训练代理）框架将人类标记者引入到Agents的学习循环中，可以通过人类向Agents提供奖励反馈（即指导Agents进行训练），从而快速达到训练任务目标。
+
+![](/images/img4/TAMER.jpg)
+
+这算得上是一种有监督学习+RL了。
+
+![](/images/img5/RLHF.png)
+
+利用强化学习在大模型中注入人类的经验，所谓的Reinforcement Learning from Human Feedback(RLHF)，Policy Network输出的多样性及Reward的学习是ChatGPT成功的关键。
+
+![](/images/img5/RLHF_2.png)
+
+论文：
+
+《DeepSpeed-Chat: Easy, Fast and Affordable RLHF Training of ChatGPT-like Models at All Scales》
+
+参考：
+
+https://zhuanlan.zhihu.com/p/592671478
+
+ChatGPT背后的算法——RLHF
+
+https://zhuanlan.zhihu.com/p/612572103
+
+RLHF的其他优化方向
+
+https://zhuanlan.zhihu.com/p/608176805
+
+如何看懂ChatGPT里的RLHF公式以及相关实现
+
+https://zhuanlan.zhihu.com/p/644680366
+
+LLaMA2 RLHF技术细节
+
+https://zhuanlan.zhihu.com/p/645068532
+
+大模型RLHF的trick
+
+https://zhuanlan.zhihu.com/p/635569455
+
+RLHF实践
+
+https://zhuanlan.zhihu.com/p/621456865
+
+DeepSpeed-Chat开源了
 
 ## 微软小冰
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（三）
+title:  并行 & 框架 & 优化（四）——参考资料
 category: DL acceleration 
 ---
 

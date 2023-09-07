@@ -214,3 +214,31 @@ https://mp.weixin.qq.com/s/QBnvLrD93b8cDEeNeZ5kAw
 https://zhuanlan.zhihu.com/p/553588646
 
 最新的“视觉为中心的BEV感知”综述论文
+
+# 并行 & 框架 & 优化=
+
+https://mp.weixin.qq.com/s/UxN9ZRmKLN30s7uPqMpHPQ
+
+Jeff Dean等提出动态控制流编程模型，大规模机器学习性能提升21%
+
+https://mp.weixin.qq.com/s/fx0Pfu0MOPjSkzi5mL6U_A
+
+清华&斯坦福提出深度梯度压缩DGC，大幅降低分布式训练网络带宽需求
+
+https://mp.weixin.qq.com/s/wIdTDHEPffWqHA3_XWBLyw
+
+没错，纯SQL查询语句可以实现神经网络。
+
+>SQL跑神经网络固然没有太大意义，然而分布式数据库已经有数十年的历史，对于设计分布式深度学习框架亦有重大的启发意义。
+
+https://zhuanlan.zhihu.com/p/33351291
+
+基于忆阻器（ReRAM），Computing-in-Memory的DLA
+
+https://mp.weixin.qq.com/s/UbZtUL6Iveb4S3nTU0liGw
+
+深度神经网络的分布式训练概述：常用方法和技巧全面总结
+
+https://mp.weixin.qq.com/s/kLXJsHbBnRIFC3NLChPhzA
+
+如何高效进行大规模分类？港中文联合商汤提出新方法

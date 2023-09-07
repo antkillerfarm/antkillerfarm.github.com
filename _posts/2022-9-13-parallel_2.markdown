@@ -1,13 +1,111 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（二）
+title:  并行 & 框架 & 优化（三）——tf.distribute & MultiDevice, 其他概念, 大模型训练
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# 并行 & 框架 & 优化
+# tf.distribute & MultiDevice
+
+MirroredStrategy：单机多卡训练
+
+MultiWorkerMirroredStrategy：多机训练
+
+CentralStorageStrategy也执行同步训练，但是变量不会被镜像，而是放在CPU上。各操作(operation)在本地GPU之间复制进行。如果只有一个GPU，变量和操作都会放在GPU上。在对CPU上的变量进行更新前，该策略会先将所有 GPU副本的上的变量梯度进行聚合，然后应用到CPU变量更新中。
+
+---
+
+tensorflow::ProcessFunctionLibraryRuntime::RunMultiDevice
+
+https://www.cnblogs.com/rossiXYZ/p/16142677.html
+
+TensorFlow之分布式变量（该作者写了一系列的TF分布式文章）
+
+示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/xla/multi_device_lenet_xla.py
+
+## Rendezvous
+
+Rendezvous是一个法语单词，发音也比较特殊，一般直译为“约会、相会、会和”，而在TensorFlow中，Rendezvous是用来完成消息传输的通信组件。
+
+消息传输的唯一标识符——ParsedKey
+
+Send和RecvAsync二者的相对顺序是不能保证先后的，经常出现需求比供给在时间片上先到的情况，总是迟到的一方执行waiter函数。
+
+Send方——将Ready的Tensor挂入本地Table
+
+Recv方——向Send方主动发出请求，触发通信过程
+
+所以，真正的通信过程由Recv方触发，而不是Send方。
+
+TensorFlow已经支持包括gRPC，RDMA（Remote Direct Memroy Access），GDR（GPU Direct）和MPI四种通信协议。
+
+BFC（Best-Fit with Coalescing）是dlmalloc的一个简单实现版本。
+
+https://www.cnblogs.com/deep-learning-stacks/p/10354258.html
+
+TensorFlow中的通信机制——Rendezvous（一）本地传输
+
+https://www.cnblogs.com/deep-learning-stacks/p/10355770.html
+
+TensorFlow中的通信机制——Rendezvous（二）gRPC传输
+
+https://blog.csdn.net/gaofeipaopaotang/article/details/80736452
+
+模型优化之分布式执行
+
+https://xieyu.github.io/blog/tensorflow/rendezvous.html
+
+Tensorflow Rendezvous
+
+---
+
+Host to Device：
+
+SameWorkerRecvDone -> CopyTensor::ViaDMA -> CopyHostToDevice -> XlaDeviceContext::CopyCPUTensorToDevice ->
+
+GenericTransferManager::TransferLiteralToDeviceAsync -> TransferManager::TransferBufferToDevice -> Stream::ThenMemcpy
+
+## StreamExecutor
+
+StreamExecutor是Google内部为并行编程模型开发的库。TensorFlow中的StreamExecutor是StreamExecutor的开源简版。
+
+https://www.cnblogs.com/deep-learning-stacks/p/9386188.html
+
+TensorFlow中的并行执行引擎——StreamExecutor框架
+
+TF使用`stream_executor::DeviceMemoryBase`作为设备内存的抽象。用`DeviceMemoryBase::opaque`作为对于不可直接访问的设备地址的指针。
+
+`class GpuExecutor : public internal::StreamExecutorInterface`
+
+所以上面提到的Memcpy的调用路径，还有设备相关的后半部分：
+
+Stream::ThenMemcpy -> StreamExecutor::Memcpy -> GpuExecutor::Memcpy -> GpuDriver::AsynchronousMemcpyH2D -> cuMemcpyHtoDAsync
+
+## TransferManager
+
+`TransferManager`类使后端能够提供特定于平台的机制，用于通过给定的设备内存句柄构造XLA literal data。换言之，它可以帮助封装主机与设备之间的双向数据传输。
+
+`TransferManager`类已经有了一个通用实现：`GenericTransferManager`，设备只需要派生该类，做一些定制化的修改。所以`xxx_transfer_manager.h`是关注的重点。
+
+TPU和GPU的修改主要集中在`TransferLiteralToInfeed`和`TransferLiteralFromOutfeed`两个函数。
+
+这两个函数的GPU实现在`InfeedManager`类中。
+
+`TransferLiteralToInfeed`关键函数调用：
+
+gpu::CopyBufferToDevice -> Stream::ThenMemcpy
+
+如果不对`GenericTransferManager`做修改，则该类会用Host上的mem buffer，虚拟一个`DeviceMemoryBase`来处理Feed。
+
+graphcore的实现没有动`GenericTransferManager`，而是自己单独弄了一套基于`TranslatedFeedInfo`类的cache机制。
+
+tensorflow/compiler/plugin/poplar/driver/poplar_executable_cache.cc
+
+# 其他概念
 
 ## 分布式数据集
 
@@ -67,7 +165,7 @@ https://www.hiascend.com/document/detail/zh/CANNCommunityEdition/63RC2alpha002/t
 
 训练迭代循环下沉
 
-## 大模型训练
+# 大模型训练
 
 目前部分深度学习框架，例如Pytorch和Tensorflow，没有办法满足超大规模模型训练的需求，于是微软基于Pytroch开发了DeepSpeed，腾讯基于Pytroch开发了派大星PatricStar，达摩院基于Tensoflow开发的分布式框架Whale。像是华为昇腾的MindSpore、百度的PaddlePaddle，还有国内的一流科技OneFlow等厂商，对超大模型训练进行了深度的跟进与探索，基于原生的AI框架支持超大模型训练。
 
@@ -83,7 +181,35 @@ https://www.zhihu.com/question/498271491
 
 为什么说大模型训练很难？
 
+## TF-Replicator, GPipe, Mesh-Tensorflow
+
+TF-Replicator主要侧重于Data parallelism的库。
+
+GPipe是一个纯model-parallelism的库。
+
+Mesh-TensorFlow是一个DSL语言，既支持Data parallelism，又支持Model parallelism，但是侵入性很强。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/113233933
+
+谷歌GPipe训练超大规模神经网络
+
+https://zhuanlan.zhihu.com/p/342223356
+
+Mesh-Tensorflow: 广义分布式
+
+https://zhuanlan.zhihu.com/p/63211072
+
+TF-Replicator, GPipe, Mesh-Tensorflow 三个库对比
+
 ## DeepSpeed
+
+代码：
+
+https://github.com/microsoft/DeepSpeed
+
+参考：
 
 https://www.microsoft.com/en-us/research/blog/zero-deepspeed-new-system-optimizations-enable-training-models-with-over-100-billion-parameters
 
@@ -152,183 +278,3 @@ https://zhuanlan.zhihu.com/p/485208899
 https://zhuanlan.zhihu.com/p/412118353
 
 Kokkos:一个异构并行计算通用平台
-
-## 参考
-
-https://mp.weixin.qq.com/s/ai_XI8ddP5I2m3ChCqnQsA
-
-高效大规模机器学习训练，198页PDF带你概览领域前沿进展
-
-https://openmlsys.github.io
-
-机器学习系统：设计和实现
-
-https://mp.weixin.qq.com/s/RAjusu-Jyqb8K19N8KZ_3w
-
-一份552页《大规模数据系统：Large-scale Data Systems》硬核课程PPT
-
-https://mp.weixin.qq.com/s/AeCQK2hFy60pq6y1tRcs_A
-
-20页pdf，A Survey on Large-scale Machine
-
-https://mp.weixin.qq.com/s/_1Yr_BbFhlNEW7UtYvAaoA
-
-分布式深度学习，93页ppt概述最新DDL技术发展
-
-https://mp.weixin.qq.com/s/jC5v9BKQvlxa2_6cikXV9w
-
-分布式算法与优化，118页pdf
-
-https://zhuanlan.zhihu.com/p/58806183
-
-深度学习的分布和并行处理系统
-
-https://zhuanlan.zhihu.com/p/56991108
-
-一文说清楚Tensorflow分布式训练必备知识
-
-https://zhuanlan.zhihu.com/p/26552293
-
-Dataflow架构和神经网络加速器
-
-https://zhuanlan.zhihu.com/p/28445511
-
-浅析深度学习框架设计中的关键技术
-
-https://mp.weixin.qq.com/s/wu32LBwrkkBIANMdknHlCA
-
-C++并行实战，592页pdf，C++ Concurrency in Action
-
-https://zhuanlan.zhihu.com/p/79385727
-
-有限元并行计算简介
-
-https://mp.weixin.qq.com/s/heVQ9AIZKxTiCNiAtYKaag
-
-新加坡国立大学最新“大规模深度学习优化”综述论文，带你全面了解最新深度学习准确率和效率的优化方法
-
-https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
-
-IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能
-
-http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
-
-神经网络的分布式训练
-
-https://mp.weixin.qq.com/s/nvuflLfOolidDDXJVe2DZA
-
-美团深度学习系统的工程实践
-
-https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
-
-TensorFlow分布式计算机制解读：以数据并行为重
-
-https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
-
-继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本
-
-https://mp.weixin.qq.com/s/kOCftzSbHe2mvDmlRp-ihA
-
-Jeff Dean：AI对计算机系统设计的影响
-
-https://mp.weixin.qq.com/s/XjNPaL6PC9LHX1PEGn5UZg
-
-微软实时AI系统“脑波计划”有多牛？看完秒懂！
-
-https://mp.weixin.qq.com/s/OkqUulFYHQSdgAbf9Fi9LA
-
-CoCoA：大规模机器学习的分布式优化通用框架
-
-https://mp.weixin.qq.com/s/ToIDncp9dS_qk47PsdZm5A
-
-杜克大学：分布式深度学习训练算法TernGrad
-
-https://mp.weixin.qq.com/s/rhtrN2qDspGkpJYDAVSX7w
-
-UC Berkeley展示全新并行处理方法
-
-https://mp.weixin.qq.com/s/ASqpPSIgW_bcFPBfRYz7Xg
-
-哈佛大学提出在云、边缘与终端设备上的分布式深度神经网络DDNN
-
-http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
-
-《Large Scale Distributed Deep Networks》中译文
-
-https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
-
-Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
-
-https://zhuanlan.zhihu.com/p/529388795
-
-训练千亿参数大模型，离不开四种GPU并行策略
-
-https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
-
-百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
-
-https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
-
-分布式深度学习原理、算法详细介绍
-
-https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
-
-苹果发布Turi Create机器学习框架，5行代码开发图像识别
-
-https://mp.weixin.qq.com/s/jOVUPhrCBI9W9vPvD9eKYg
-
-UC Berkeley提出新型分布式框架Ray：实时动态学习的开端
-
-https://mp.weixin.qq.com/s/r951Iasr4dke6MPHsUO0TA
-
-开源DAWN，Stanford的又一力作
-
-https://mp.weixin.qq.com/s/2jrMDeMcb47zpPfFLEcnIA
-
-深度学习平台技术演进
-
-https://mp.weixin.qq.com/s/L4CMKS53pNyvhhqvQhja0g
-
-5种商业AI产品的技术架构设计
-
-https://mp.weixin.qq.com/s/IqjKdAlGYREqCR9XQB5N1A
-
-伯克利AI分布式框架Ray，兼容TensorFlow、PyTorch与MXNet
-
-https://mp.weixin.qq.com/s/aNX_8UDYI_0u-MwMTYeqdQ
-
-开发易、通用难，深度学习框架何时才能飞入寻常百姓家？
-
-https://mp.weixin.qq.com/s/UbAHB-uEIvqYZCB7xIAJTg
-
-机器学习新框架Propel：使用JavaScript做可微分编程
-
-https://mp.weixin.qq.com/s/Ctl65r4iZNEOBxiiX2I2eQ
-
-Momenta王晋玮：让深度学习更高效运行的两个视角
-
-https://mp.weixin.qq.com/s/UxN9ZRmKLN30s7uPqMpHPQ
-
-Jeff Dean等提出动态控制流编程模型，大规模机器学习性能提升21%
-
-https://mp.weixin.qq.com/s/fx0Pfu0MOPjSkzi5mL6U_A
-
-清华&斯坦福提出深度梯度压缩DGC，大幅降低分布式训练网络带宽需求
-
-https://mp.weixin.qq.com/s/wIdTDHEPffWqHA3_XWBLyw
-
-没错，纯SQL查询语句可以实现神经网络。
-
->SQL跑神经网络固然没有太大意义，然而分布式数据库已经有数十年的历史，对于设计分布式深度学习框架亦有重大的启发意义。
-
-https://zhuanlan.zhihu.com/p/33351291
-
-基于忆阻器（ReRAM），Computing-in-Memory的DLA
-
-https://mp.weixin.qq.com/s/UbZtUL6Iveb4S3nTU0liGw
-
-深度神经网络的分布式训练概述：常用方法和技巧全面总结
-
-https://mp.weixin.qq.com/s/kLXJsHbBnRIFC3NLChPhzA
-
-如何高效进行大规模分类？港中文联合商汤提出新方法
