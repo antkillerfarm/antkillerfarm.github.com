@@ -123,6 +123,8 @@ tensorflow xla hlo基本概念和pass pipeline
 
 `hlo_computation->root_instruction()`：hlo_computation的root instruction。
 
+`hlo_computation->instructions()`：hlo_computation的所有的instruction。
+
 `hlo_inst->operands()`：hlo_inst的输入tensor，或者说是它的prev。
 
 `hlo_inst`：hlo_inst的输出tensor。
