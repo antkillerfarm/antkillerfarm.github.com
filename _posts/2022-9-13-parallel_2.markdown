@@ -227,6 +227,18 @@ https://zhuanlan.zhihu.com/p/513571706
 
 DeepSpeed之ZeRO系列：将显存优化进行到底
 
+https://zhuanlan.zhihu.com/p/630734624
+
+deepspeed入门教程
+
+https://zhuanlan.zhihu.com/p/576673548
+
+深度学习大模型训练--DeepSpeed源码解读
+
+https://zhuanlan.zhihu.com/p/626420999
+
+deepspeed chat代码解读
+
 ## LoRA
 
 LoRA: Low-Rank Adaptation of Large Language Models是微软研究院引入的一项新技术，主要用于处理大模型微调的问题。
@@ -260,6 +272,12 @@ Facebook如何训练超大模型---(2)
 https://zhuanlan.zhihu.com/p/485208899
 
 数据并行Deep-dive: 从DP到Fully Sharded Data Parallel（FSDP）完全分片数据并行
+
+## activation checkpointing
+
+https://zhuanlan.zhihu.com/p/373662730
+
+亚线性内存优化—activation checkpointing在oneflow中的实现
 
 ## Megatron
 

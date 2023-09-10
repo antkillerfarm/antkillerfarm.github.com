@@ -307,6 +307,10 @@ https://mp.weixin.qq.com/s/HcaH1yFtCnhjxb9ShqhFEQ
 
 世界头号黑客去世，从通缉犯到安全顾问，59年传奇人生落幕（Kevin Mitnick）
 
+https://www.zhihu.com/question/621243697
+
+PowerPoint发明者丹尼斯·奥斯汀去世，享年76岁，如何评价他的一生？
+
 # 区块链参考资源+
 
 https://mp.weixin.qq.com/s/m9KwANPIudVesoXjejnOJA

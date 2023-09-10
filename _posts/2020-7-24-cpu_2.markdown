@@ -221,6 +221,14 @@ https://zhuanlan.zhihu.com/p/651836498
 
 ---
 
+PCIE插上之后，初始通信速率都是PCIE 1.0的，完成握手后，会协商跳入更高速率继续握手。
+
+https://www.zhihu.com/question/618468070
+
+pcie4.0的设备插在3.0的设备上可行吗，如果反过来又会怎样？
+
+---
+
 https://www.sohu.com/a/193807422_588758
 
 PCI，AGP，PCI-E接口啥区别？
