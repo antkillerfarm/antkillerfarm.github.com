@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  俄乌战争（十七）——扎波罗热战役, 游击战
-category: Russia 
+category: Russo Ukrainian War 
 ---
 
 * toc

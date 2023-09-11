@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  俄乌战争（十三）——凡人列传（1）
-category: Russia 
+category: Russo Ukrainian War 
 ---
 
 * toc

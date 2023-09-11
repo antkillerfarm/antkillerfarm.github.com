@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  俄乌战争（七）——战前 & 军改
-category: Russia 
+category: Russo Ukrainian War 
 ---
 
 * toc

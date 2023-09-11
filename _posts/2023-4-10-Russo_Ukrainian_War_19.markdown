@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  俄乌战争（十九）——常识简介（1）
-category: Russia 
+category: Russo Ukrainian War 
 ---
 
 * toc

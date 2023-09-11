@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  俄乌战争（十六）——顿涅斯克战役
-category: Russia 
+category: Russo Ukrainian War 
 ---
 
 * toc

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  俄乌战争（二十四）——轶事（1）
-category: Russia 
+category: Russo Ukrainian War 
 ---
 
 * toc

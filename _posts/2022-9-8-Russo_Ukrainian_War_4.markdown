@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  俄乌战争（四）——人物（3）
-category: Russia 
+category: Russo Ukrainian War 
 ---
 
 * toc

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  俄乌战争（十五）——卢甘斯克战役, 赫尔松战役
-category: Russia 
+category: Russo Ukrainian War 
 ---
 
 * toc

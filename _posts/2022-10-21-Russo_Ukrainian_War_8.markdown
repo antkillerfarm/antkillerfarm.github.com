@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  俄乌战争（八）——基辅战役（1）
-category: Russia 
+category: Russo Ukrainian War 
 ---
 
 * toc

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  俄乌战争（二十一）——无官不贪（2）
-category: Russia 
+category: Russo Ukrainian War 
 ---
 
 * toc

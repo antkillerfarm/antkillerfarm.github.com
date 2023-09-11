@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  俄乌战争（一）——概述
-category: Russia 
+category: Russo Ukrainian War
 ---
 
 * toc
