@@ -69,6 +69,10 @@ https://mp.weixin.qq.com/s/NPMCtGGM5iN9ZCznnt-OIw
 
 胡伟武：我国手机CPU的自给率是0%
 
+https://mp.weixin.qq.com/s/nc5evA4zS5WXL1UHtjQkUA
+
+龙芯麒麟 国芯双娇
+
 ---
 
 多年前，ARM Cortex A57大致与X86阵营吊车尾的VIA nano性能相当，短短数年间，ARM公版架构就接近到X86主流水平。而同期飞腾的Arm CPU的CPU核则进步缓慢，从2014年至2021年，其CPU IPC仅提升了20%左右，即便是以牙膏厂闻名遐迩的英特尔也只能自叹不如。

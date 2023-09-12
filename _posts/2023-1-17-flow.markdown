@@ -171,7 +171,9 @@ Diffusion Model主要通过采样的方法，不断逼近模型的数据分布�
 
 推理的时候，首先生成一组噪声图片，放入Noise Predictor，生成预测的噪声。然后用噪声图片-预测的噪声就得到了生成的图片。这个去噪过程，也可以进行多个Step。显然Step越多，图片质量越高。
 
-使用两种World划分的Stable Diffusion，还要再复杂一些。，但也不多了。
+多个Step其实也是一种变相的加深网络方法。
+
+使用两种World划分的Stable Diffusion，还要再复杂一些，但也不多了。
 
 Image Decoder部分使用传统的AutoEncoder进行训练。
 

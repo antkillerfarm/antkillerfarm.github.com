@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NN中间语言, AI Compiler
+title:  NN中间语言, AI Compiler, MLIR
 category: toolchain 
 ---
 
@@ -191,7 +191,41 @@ https://zhuanlan.zhihu.com/p/600622073
 
 AI编译器之后端优化
 
-## MLIR
+## OpenAI Triton
+
+一个类似于TVMscript的可以通过python语法去写高性能GPU程序的库。注意不要和NVIDIA Triton搞混了。后者是一个AI推理框架。
+
+NVIDIA Triton Inference Server（此前称为TensorRT Inference Server）能够帮助开发人员和IT/DevOps轻松地在云端、本地数据中心或边缘部署高性能推理服务器。
+
+官网：
+
+https://github.com/openai/triton
+
+参考：
+
+https://zhuanlan.zhihu.com/p/394377526
+
+OpenAI开源GPU编程语言Triton，将同时支持N卡和A卡
+
+https://zhuanlan.zhihu.com/p/613244988
+
+谈谈对OpenAI Triton的一些理解
+
+## NVFuser
+
+NVFuser是NV专门为Pytorch设计的自动化的GPU代码生成器。
+
+## AKG
+
+AKG是面向华为昇腾AI处理器的张量编译器。
+
+官网：
+
+https://gitee.com/mindspore/akg/
+
+![](/images/img5/akg-design.png)
+
+# MLIR
 
 Multi-Level IR
 
@@ -227,19 +261,35 @@ elementwise fusion(hlo vs mhlo vs linalg)
 
 ---
 
+![](/images/img4/codegen-dialect-hierarchy.svg)
+
+![](/images/img5/TOSA.png)
+
+![](/images/img5/MLIR.png)
+
 Affine Dialect：这种Dialect使用来自多面体编译的技术使依赖分析和循环转换高效可靠。
 
 GPU Dialect：MLIR中的GPU Dialect模拟了类似于CUDA或OpenCL的通用GPU编程范式。它的目标是提供抽象来模拟GPU特定的操作和属性。它在很大程度上意味着与供应商无关。
 
 Tensor Operator Set Architecture (TOSA) Dialect
 
-![](/images/img4/codegen-dialect-hierarchy.svg)
+Vector Dialect：对SIMD或者SIMT模型的抽象。
 
-![](/images/img5/TOSA.png)
+SCF(Structured Control Flow) Dialect：比控制流图CFG更高层的抽象，比如并行的for和while循环以及条件判断。
+
+Async Dialect：通常用来表示异步操作模型。
+
+Control Flow Graph, CFG
 
 文档：
 
 https://mlir.llvm.org/docs/Dialects/
+
+参考：
+
+https://discourse.llvm.org/t/codegen-dialect-overview/2723
+
+Codegen Dialect Overview
 
 ---
 
@@ -321,39 +371,9 @@ https://wzzju.github.io/mlir/jax/xla/2022/09/12/mlir-pass/
 
 浅析MLIR在Pass优化中的应用
 
-## OpenAI Triton
+https://zhuanlan.zhihu.com/p/446836964
 
-一个类似于TVMscript的可以通过python语法去写高性能GPU程序的库。注意不要和NVIDIA Triton搞混了。后者是一个AI推理框架。
-
-NVIDIA Triton Inference Server（此前称为TensorRT Inference Server）能够帮助开发人员和IT/DevOps轻松地在云端、本地数据中心或边缘部署高性能推理服务器。
-
-官网：
-
-https://github.com/openai/triton
-
-参考：
-
-https://zhuanlan.zhihu.com/p/394377526
-
-OpenAI开源GPU编程语言Triton，将同时支持N卡和A卡
-
-https://zhuanlan.zhihu.com/p/613244988
-
-谈谈对OpenAI Triton的一些理解
-
-## NVFuser
-
-NVFuser是NV专门为Pytorch设计的自动化的GPU代码生成器。
-
-## AKG
-
-AKG是面向华为昇腾AI处理器的张量编译器。
-
-官网：
-
-https://gitee.com/mindspore/akg/
-
-![](/images/img5/akg-design.png)
+MLIR中Dialects分类及关联
 
 # 编译原理+
 

@@ -275,6 +275,10 @@ https://zhuanlan.zhihu.com/p/485208899
 
 ## activation checkpointing
 
+![](/images/img5/activation_checkpointing.png)
+
+在每个mini-batch的前向过程中删除一些暂时用不到的中间激活特征以降低内存占用，并在后向过程中需要时借助额外的前向计算恢复它们。
+
 https://zhuanlan.zhihu.com/p/373662730
 
 亚线性内存优化—activation checkpointing在oneflow中的实现

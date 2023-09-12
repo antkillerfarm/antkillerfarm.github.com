@@ -303,6 +303,12 @@ https://zhuanlan.zhihu.com/p/601072219
 
 Nvidia Grace Hopper超级芯片架构解读（二）
 
+---
+
+https://zhuanlan.zhihu.com/p/623060064
+
+什么是NVLink？
+
 ## NCCL
 
 NCCL是Nvidia Collective multi-GPU Communication Library的简称，它是一个实现多GPU的collective communication通信库，可以在PCIe、Nvlink、InfiniBand上实现较高的通信速度。

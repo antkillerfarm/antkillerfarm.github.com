@@ -90,6 +90,16 @@ https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key
 
 Generating Your SSH Public Key
 
+## 免密登录
+
+1. 本机生成ssh公钥；
+
+2. 复制本机公钥到远程服务器`.ssh/authorized_keys`中，authorized_keys文件不存在则创建；
+
+https://blog.csdn.net/qq_26400953/article/details/105145103
+
+一文读懂authorized_keys和known_hosts
+
 ## X Server
 
 假设客户端的ip是1.1.1.1，而ssh服务器的ip是2.2.2.2。
