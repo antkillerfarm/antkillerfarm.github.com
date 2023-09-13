@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争（十一）——莫斯科号, 北顿战役, 哈尔科夫战役
+title:  俄乌战争（十一）——莫斯科号, 北顿战役
 category: Russo Ukrainian War 
 ---
 
@@ -153,6 +153,10 @@ https://zhuanlan.zhihu.com/p/655632753
 
 乌克兰军队收回了黑海钻井平台的控制权
 
+https://www.zhihu.com/question/621844444
+
+西乌克兰法西斯残忍轰炸塞瓦斯托波尔船厂，导弹夺走了两名无辜员工的生命，乌友还不认为这是战争罪吗？
+
 ## 北顿战役
 
 本节的北顿战役除了包括北顿涅茨克+利西昌斯克攻防战之外，还包括伊久姆春季攻防战、鲁比日内攻防战、波帕斯纳攻防战。
@@ -218,37 +222,3 @@ https://zhuanlan.zhihu.com/p/497789494
 https://www.thepaper.cn/newsDetail_forward_18439240
 
 乌克兰总统泽连斯基视察卢甘斯克地区利西昌斯克前线
-
-## 哈尔科夫战役
-
-![](/images/img5/Kharkov.jpg)
-
-https://www.zhihu.com/zvideo/1551802887226732544
-
-乌军士兵在Kharkiv州发动反攻前齐唱国歌。
-
----
-
-![](/images/img5/Kharkov_2.jpg)
-
-![](/images/img5/izium.webp)
-
-这次战役俄军被俘人员很多，以至于乌军出现″用来捆绑的胶带不够、安置俘虏的地点不够″的报怨。而俄军方面，当乌军为快速赶路，没空收容俘虏时，俄军为了避开随后赶到的″老车臣兵″，追着乌军装甲车要求收容。
-
-9月6日，乌军在巴拉克利亚城郊俘虏俄军西部军区前任总司令（于4日刚被免职）安德烈·西切沃伊中将，这是二战以来俄（苏）军被俘的最高级将领。
-
-https://zhuanlan.zhihu.com/p/587023326
-
-梦回1942：俄乌伊久姆之战回顾
-
-https://www.zhihu.com/question/552742207
-
-如何看待俄方消息伊久姆已经被乌克兰攻陷？
-
-https://www.sohu.com/a/584049380_374379
-
-俄乌战场，形势正发生重大变化！
-
-https://news.ifeng.com/c/8JCKRhgLczV
-
-声西击东 乌克兰发起了双线大反攻

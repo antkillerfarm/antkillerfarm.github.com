@@ -174,13 +174,3 @@ https://baijiahao.baidu.com/s?id=1727498583143869224
 ---
 
 ![](/images/img4/joke_3.jpg)
-
----
-
-https://zhuanlan.zhihu.com/p/622351750
-
-两笔钱花在同一个地方——俄罗斯“布良斯克防线”的惊人贪腐大案
-
-https://www.163.com/dy/article/IDS5513R055650YP.html
-
-俄军腐败内幕曝光:高官奢侈滥用军机运送宠物猫

@@ -348,3 +348,11 @@ https://zhuanlan.zhihu.com/p/651937400
 https://zhuanlan.zhihu.com/p/516566732
 
 俄军志愿兵伊久姆参战记
+
+https://zhuanlan.zhihu.com/p/656014951
+
+莫斯科－德黑兰轴心：俄罗斯和伊朗的合作
+
+https://zhuanlan.zhihu.com/p/652658146
+
+“无法拒绝的死亡陷阱”——俄罗斯是如何征召外国人服役的
