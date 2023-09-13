@@ -117,6 +117,10 @@ https://www.zhihu.com/question/20720436
 
 移动GPU和桌面GPU的差距有哪些？
 
+https://zhuanlan.zhihu.com/p/654389634
+
+GPU帧缓冲内存：了解瓦片渲染TBR(tile-based rendering)
+
 ## GPGPU
 
 通用图形处理器（General-purpose computing on graphics processing units，简称GPGPU），是一种利用处理图形任务的图形处理器来计算原本由中央处理器处理的通用计算任务。**这些通用计算常常与图形处理没有任何关系。**
@@ -298,25 +302,3 @@ https://mp.weixin.qq.com/s/_xcE8RUs0m4gwk3kxpe9jA
 https://www.zhihu.com/column/c_1231181516811390976
 
 一个RDMA方面的专栏
-
-## NVLink
-
-NVLink技术提供比PCIe 3更高的带宽与更多的链路，并可提升多GPU和多GPU/CPU系统配置的可扩展性。
-
-SXM是Nvidia的双插槽卡设计，与PCIe卡不同，它不需要连接电源。
-
----
-
-![](/images/img4/PCIE.jpg)
-
-官网：
-
-https://www.nvidia.cn/data-center/nvlink/
-
-![](/images/img3/nvlink.png)
-
-Tesla V100中以NVLink连接的GPU至GPU和GPU至CPU通信。
-
-![](/images/img3/nvlink_2.png)
-
-在DGX-1V服务器中，混合立体网络拓扑使用NVLink连接8个Tesla V100加速器。每个GPU有6条nvlink通道，总带宽高达300GB/s。
