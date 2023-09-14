@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争（二十五）——轶事（2）
+title:  俄乌战争（二十五）——轶事（1）
 category: Russo Ukrainian War 
 ---
 
