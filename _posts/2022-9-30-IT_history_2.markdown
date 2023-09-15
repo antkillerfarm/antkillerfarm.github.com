@@ -9,6 +9,22 @@ category: resource
 
 # 电子科技史
 
+https://mp.weixin.qq.com/s/tyuz_73p5Vp_RGQB5y60Ow
+
+小时候电视上为啥会有彩条？
+
+https://mp.weixin.qq.com/s/-mlNqAhJ2Zudp4AdTB5gnA
+
+这个行业，居然无一中国公司进入全球前20（赛默飞）
+
+https://mp.weixin.qq.com/s/epI7bBrXq5tPPHDr8QyANQ
+
+1876年，第一场线上婚礼，用电报联结的浪漫
+
+https://mp.weixin.qq.com/s/N44XML7bXRyTU8DM40XDzg
+
+有史以来最贵的计算机bug，是如何让英特尔损失数十亿美元的
+
 https://mp.weixin.qq.com/s/Dk_W-85_u_trzP4WrjZPfw
 
 “机器人界的微软”创始人逝世，从iPhone到汽车都离不开他的创造（发那科创始人稻叶清右卫门）
@@ -310,67 +326,3 @@ https://mp.weixin.qq.com/s/HcaH1yFtCnhjxb9ShqhFEQ
 https://www.zhihu.com/question/621243697
 
 PowerPoint发明者丹尼斯·奥斯汀去世，享年76岁，如何评价他的一生？
-
-# 区块链参考资源+
-
-https://mp.weixin.qq.com/s/m9KwANPIudVesoXjejnOJA
-
-火币袁煜明：区块链的本质、意义与商业体系设计
-
-iele虚拟机, plutus-marlowe智能合约语言，hydra分片，sidechain侧链, ourobros generic共识协议，kemadelia p2p网络
-
-https://mp.weixin.qq.com/s/Z2wz5jb7k4QVf0PNCd0THg
-
-Cocos王哲：讲解COCOS区块链游戏的发展之路！
-
-https://mp.weixin.qq.com/s/iKiU_QF5y4t1KMmr6WMctw
-
-一文看懂DGames（区块链游戏）的技术架构和业务逻辑！
-
-https://mp.weixin.qq.com/s/zyU0ANfBS_JrFLNylnErUw
-
-C# 200行代码实现区块链
-
-https://mp.weixin.qq.com/s/OUfDGYdgw6XKRgaUXmog1w
-
-区块链对供应链管理的五大意义
-
-https://mp.weixin.qq.com/s/k_mYbnchN2UF0kZ_2JD4Wg
-
-教你用C++搭建一条迷你区块链！
-
-https://mp.weixin.qq.com/s/9hhUZyeax206bAsSqks-1w
-
-比特币黑客攻击手段大揭秘
-
-https://mp.weixin.qq.com/s/Xxi50rDBjrqG-7MIloZMDw
-
-浅谈区块链技术与阿里云的探索实践
-
-https://mp.weixin.qq.com/s/cxzI5oFBAUdtV6akre678w
-
-当区块链与人工智能相遇，会有怎样火花？这篇23页《Blockchain for AI》综述论文告诉你
-
-https://mp.weixin.qq.com/s/4lccUIoXrfWn_Za8xJXH-w
-
-基于tendermint实现Hyperledger Fabric的拜占庭容错排序
-
-https://mp.weixin.qq.com/s/TaHiX6uZiGt-K4Na1r7kcA
-
-社科院商法研究室赵磊：证券交易信用机制，从CSD到DLT
-
-https://mp.weixin.qq.com/s/V4PUZF7JkV9N_EkSCtql2w
-
-Facebook发币，AI大牛签署白皮书，Keras之父评价：没用
-
-https://mp.weixin.qq.com/s/DGx3Y3cu00QN-p-AjkNx7g
-
-深入剖析实现比特币减半的十五行代码
-
-https://mp.weixin.qq.com/s/rlTJVV0PXjII2YJYENlwlw
-
-数字人民币官宣内测，双离线支付 “碰一碰”完成 转账！四个城市抢先试点！
-
-https://mp.weixin.qq.com/s/J6yF8fzvhLK-kJcdFXBxJg
-
-马斯克投15亿，价值47000美元的比特币，其实是一群数学家搞出来的……

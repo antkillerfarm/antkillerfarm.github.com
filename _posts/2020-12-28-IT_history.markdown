@@ -45,7 +45,7 @@ HTC为什么衰败？
 
 ---
 
-记得前几年俄罗斯是有一款智能手机为yoga phone，双面屏幕，支持电纸书阅读，但并未流行开来，2019年俄罗斯Yoga Devices公司营运状况不佳，已经宣布破产。
+记得前几年俄罗斯有一款智能手机为yoga phone，双面屏幕，支持电纸书阅读，但并未流行开来，2019年俄罗斯Yoga Devices公司营运状况不佳，已经宣布破产。
 
 ---
 
@@ -132,6 +132,14 @@ https://mp.weixin.qq.com/s/QcNm1x-RxagvgkXIXzhJMw
 https://www.sohu.com/a/416602990_120757238
 
 “当代爱迪生”迪恩·卡门的10大逆天发明
+
+---
+
+1978年12月5日，物理学家赫尔曼·豪泽（Hermann Hauser）和工程师Chris Curry，在英国剑桥创办了CPU公司（Cambridge Processing Unit），主要业务是为当地市场供应电子设备。1979年，CPU公司改名为Acorn公司。
+
+https://mp.weixin.qq.com/s/bdfYwgfu8iDo00Qfbp0tsA
+
+Arm芯片三十五年
 
 ---
 
@@ -239,10 +247,6 @@ https://mp.weixin.qq.com/s/_YTvP1MN0HXzOY0XJ1Ri3Q
 
 1976-2021 45年苹果电脑CPU之变迁
 
-https://mp.weixin.qq.com/s/bdfYwgfu8iDo00Qfbp0tsA
-
-Arm芯片三十五年
-
 http://vga.zol.com.cn/341/3419805.html
 
 末日将至 看天堂里我们能用的显卡品牌
@@ -294,19 +298,3 @@ https://mp.weixin.qq.com/s/Z6qAZEN1PomdLi0iE4BVPg
 https://mp.weixin.qq.com/s/wPpSXps_ZVVCabIgM2YM-A
 
 英特尔第一颗处理器诞生背后的故事
-
-https://mp.weixin.qq.com/s/tyuz_73p5Vp_RGQB5y60Ow
-
-小时候电视上为啥会有彩条？
-
-https://mp.weixin.qq.com/s/-mlNqAhJ2Zudp4AdTB5gnA
-
-这个行业，居然无一中国公司进入全球前20（赛默飞）
-
-https://mp.weixin.qq.com/s/epI7bBrXq5tPPHDr8QyANQ
-
-1876年，第一场线上婚礼，用电报联结的浪漫
-
-https://mp.weixin.qq.com/s/N44XML7bXRyTU8DM40XDzg
-
-有史以来最贵的计算机bug，是如何让英特尔损失数十亿美元的

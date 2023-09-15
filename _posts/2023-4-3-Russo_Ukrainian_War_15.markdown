@@ -211,7 +211,7 @@ https://k.sina.com.cn/article_6427351817_17f199b0900100efyj.html
 
 这首歌作于1875年，1914年改编，一战、内战、二战中的乌克兰民族主义军队都高唱这首歌。由于其中鲜明的反俄内容，整个苏联时期的全乌克兰，2014年后的克里米亚，今年的俄占区都禁唱这首歌。如今这首歌已经在全球传唱，成为乌克兰第二国歌。
 
-Helena Androsova(Eileen)开战后演唱的版本效果不错。
+Helena Androsova(Eileen)在开战后演唱的版本效果不错。
 
 https://zhuanlan.zhihu.com/p/582714899
 
