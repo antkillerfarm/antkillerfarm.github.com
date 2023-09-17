@@ -293,6 +293,10 @@ https://deepreinforcementlearningbook.org/
 
 《深度强化学习：基础、研究与应用（Deep Reinforcement Learning: Foundamentals, Research and Applications）》北京大学董豪博士等著。
 
+https://www.zhihu.com/column/c_1682017381776646144
+
+第四范式出品的RL教程
+
 # 论文
 
 《A Brief Survey of Deep Reinforcement Learning》

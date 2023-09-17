@@ -237,6 +237,10 @@ https://github.com/cjdelisle/libposit
 
 https://github.com/stillwater-sc/universal
 
+## q4f16 & q3f16
+
+q3f16（q3指使用Quantize 3 bit来量化，f16是指核心计算使用fp 16来计算）。
+
 ## Saturate Quantization
 
 上述各种量化方法都是在保证数值表示范围的情况下，尽可能提高fl或者scale。这种方法也叫做Non-saturation Quantization。

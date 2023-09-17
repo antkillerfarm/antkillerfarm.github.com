@@ -9,6 +9,38 @@ category: Attention
 
 # BERT进阶（续）
 
+https://mp.weixin.qq.com/s/kJhOrz0VaYc-k-6XJS02ag
+
+8篇论文梳理BERT相关模型进展与反思
+
+https://mp.weixin.qq.com/s/hI9XAiqKaHLq-Z9JkaWA_A
+
+解决自然语言歧义问题，斯坦福教授、IJCAI卓越研究奖得主提出SenseBERT模型
+
+https://mp.weixin.qq.com/s/55B0ToIKDusiPI5farR19w
+
+NLP这两年：15个预训练模型对比分析与剖析
+
+https://mp.weixin.qq.com/s/SPfa17p3QetZXCC01DwmQA
+
+解密BERT
+
+https://zhuanlan.zhihu.com/p/72805778
+
+BERT的演进和应用
+
+https://mp.weixin.qq.com/s/9YuBY0wLLVQ8ZrT9fiNICA
+
+语音版BERT？滴滴提出无监督预训练模型，中文识别性能提升10%以上
+
+https://mp.weixin.qq.com/s/OXkXjPHhaMXsKw2YevV6sw
+
+邱锡鹏：从Transformer到BERT--自然语言处理中的表示学习进展
+
+https://mp.weixin.qq.com/s/dV4RkxZOC9o2BxNi0GljKQ
+
+谷歌最强NLP模型BERT官方中文版来了！多语言模型支持100种语言
+
 https://zhuanlan.zhihu.com/p/49271699
 
 从Word Embedding到Bert模型—自然语言处理中的预训练技术发展史
@@ -382,31 +414,3 @@ https://mp.weixin.qq.com/s/i3Xd_IB7R0-QPztn-pgpng
 https://zhuanlan.zhihu.com/p/151640509
 
 注意力机制在推荐系统中的应用
-
-https://mp.weixin.qq.com/s/-SU5cNbklI31WLmTawZJIQ
-
-自注意模型学不好？这个方法帮你解决！
-
-https://mp.weixin.qq.com/s/K5EbO0djcXHN4K5LQiMh5g
-
-Triplet Attention机制让Channel和Spatial交互更加丰富
-
-https://mp.weixin.qq.com/s/C4f0N_bVWU9YPY34t-HAEA
-
-UNC&Adobe提出模块化注意力模型MAttNet，解决指示表达的理解问题
-
-https://mp.weixin.qq.com/s/V3brXuey7Gear0f_KAdq2A
-
-基于注意力机制的交易上下文感知推荐，悉尼科技大学和电子科技大学最新工作
-
-https://mp.weixin.qq.com/s/2gxp7A38epQWoy7wK8Nl6A
-
-谷歌翻译最新突破，“关注机制”让机器读懂词与词的联系
-
-https://zhuanlan.zhihu.com/p/25928551
-
-用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践
-
-https://mp.weixin.qq.com/s/l4HN0_VzaiO-DwtNp9cLVA
-
-循环注意力区域实现图像多标签分类

@@ -7,6 +7,36 @@ category: Attention
 * toc
 {:toc}
 
+# Large Language Model（续）
+
+https://mp.weixin.qq.com/s/N_N6RqKB9pjZ1tozfM5f5A
+
+大模型参数高效微调技术原理综述（五）-LoRA、AdaLoRA、QLoRA
+
+https://mp.weixin.qq.com/s/M2nds_FJBXooi08qDU-4yA
+
+大模型参数高效微调技术原理综述（六）-MAM Adapter、UniPELT
+
+https://mp.weixin.qq.com/s/P_AmTa4s8dOyc_0fZBgNPA
+
+大模型参数高效微调技术原理综述（七）-最佳实践、总结
+
+https://zhuanlan.zhihu.com/p/618695885
+
+LLaMA, Alpaca, ColossalChat系列模型研究
+
+https://zhuanlan.zhihu.com/p/642412124
+
+LLM的推理优化技术纵览
+
+https://zhuanlan.zhihu.com/p/638809556
+
+大模型高效微调综述上：Adapter Tuning、AdaMix、PET、Prefix-Tuning、Prompt Tuning、P-tuning、P-tuning v2
+
+https://zhuanlan.zhihu.com/p/651564985
+
+主流大语言模型从预训练到微调的技术原理
+
 # BERT进阶
 
 ## AR vs AE
@@ -332,35 +362,3 @@ Bert改进：如何融入知识
 https://mp.weixin.qq.com/s/in5SDWlQg8ts4E8DTmHxMQ
 
 BERT在推荐系统领域可能会有什么作为？
-
-https://mp.weixin.qq.com/s/kJhOrz0VaYc-k-6XJS02ag
-
-8篇论文梳理BERT相关模型进展与反思
-
-https://mp.weixin.qq.com/s/hI9XAiqKaHLq-Z9JkaWA_A
-
-解决自然语言歧义问题，斯坦福教授、IJCAI卓越研究奖得主提出SenseBERT模型
-
-https://mp.weixin.qq.com/s/55B0ToIKDusiPI5farR19w
-
-NLP这两年：15个预训练模型对比分析与剖析
-
-https://mp.weixin.qq.com/s/SPfa17p3QetZXCC01DwmQA
-
-解密BERT
-
-https://zhuanlan.zhihu.com/p/72805778
-
-BERT的演进和应用
-
-https://mp.weixin.qq.com/s/9YuBY0wLLVQ8ZrT9fiNICA
-
-语音版BERT？滴滴提出无监督预训练模型，中文识别性能提升10%以上
-
-https://mp.weixin.qq.com/s/OXkXjPHhaMXsKw2YevV6sw
-
-邱锡鹏：从Transformer到BERT--自然语言处理中的表示学习进展
-
-https://mp.weixin.qq.com/s/dV4RkxZOC9o2BxNi0GljKQ
-
-谷歌最强NLP模型BERT官方中文版来了！多语言模型支持100种语言

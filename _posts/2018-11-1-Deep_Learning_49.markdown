@@ -217,6 +217,10 @@ https://mp.weixin.qq.com/s/tE_-gUBmt_0h75CnkViUHA
 
 # Attention进阶+
 
+https://mp.weixin.qq.com/s/l4HN0_VzaiO-DwtNp9cLVA
+
+循环注意力区域实现图像多标签分类
+
 https://mp.weixin.qq.com/s/zhZLK4pgJzQXN49YkYnSjA
 
 自适应注意力机制在Image Caption中的应用

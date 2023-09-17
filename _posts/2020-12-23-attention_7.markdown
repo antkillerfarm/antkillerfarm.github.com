@@ -11,6 +11,12 @@ category: Attention
 
 ## 微软小冰（续）
 
+小冰的技术原理，走的是传统NLP原理那一套，已经过时了，没有使用深度学习，基于知识图谱回答，学习的知识非常有限。
+
+ChatGPT的出现打了两种人的脸：一种是对强人工智能保持悲观态度，认为强人工智能很长时间内都不可能出现的；一种是对超大模型持怀疑态度，认为通过超大模型来实现人工智能是错误道路的。
+
+在2022年11月30日之前，市面上有大大小小的互联网或IT企业需要进行文本处理，相应地，也就需要雇佣大量的NLP工程师们来解决相关的问题。
+
 绝大多数的NLP工程师们所做的工程项目，主要是针对某些特定任务提出一个具体的模型，进行有针对性的数据标注，然后再制作模型。简而言之，就是以NLP子任务独立进行研究开发。比如分词、实体识别、文本分类、相似度判别、机器翻译、文摘系统、事件抽取，等等，不一而足。
 
 也就是说，NLP产业界实际上处于一种手工业模式，你干你的，我干我的，针对不同的企业、不同的需求，需要不断地定制模型、定制数据来完成工作。
@@ -204,27 +210,3 @@ https://mp.weixin.qq.com/s/f4l04f78F507JRrCawnV8w
 https://mp.weixin.qq.com/s/nUAcCz6mcgGuUeuTfgqmOQ
 
 大模型参数高效微调技术原理综述（四）-Adapter Tuning及其变体
-
-https://mp.weixin.qq.com/s/N_N6RqKB9pjZ1tozfM5f5A
-
-大模型参数高效微调技术原理综述（五）-LoRA、AdaLoRA、QLoRA
-
-https://mp.weixin.qq.com/s/M2nds_FJBXooi08qDU-4yA
-
-大模型参数高效微调技术原理综述（六）-MAM Adapter、UniPELT
-
-https://mp.weixin.qq.com/s/P_AmTa4s8dOyc_0fZBgNPA
-
-大模型参数高效微调技术原理综述（七）-最佳实践、总结
-
-https://zhuanlan.zhihu.com/p/618695885
-
-LLaMA, Alpaca, ColossalChat系列模型研究
-
-https://zhuanlan.zhihu.com/p/642412124
-
-LLM的推理优化技术纵览
-
-https://zhuanlan.zhihu.com/p/638809556
-
-大模型高效微调综述上：Adapter Tuning、AdaMix、PET、Prefix-Tuning、Prompt Tuning、P-tuning、P-tuning v2

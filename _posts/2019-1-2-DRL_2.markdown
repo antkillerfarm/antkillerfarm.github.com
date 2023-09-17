@@ -89,6 +89,10 @@ https://mp.weixin.qq.com/s/LEqm8Ix67Q-tM-ufwK6a6w
 
 强化学习开源模拟环境大盘点
 
+https://openrl-docs.readthedocs.io/
+
+OpenRL是由第四范式强化学习团队开发的基于PyTorch的强化学习研究框架
+
 # 概述
 
 ![](/images/img2/RL_intro.png)

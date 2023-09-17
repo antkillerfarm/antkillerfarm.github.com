@@ -242,3 +242,7 @@ https://mp.weixin.qq.com/s/UbZtUL6Iveb4S3nTU0liGw
 https://mp.weixin.qq.com/s/kLXJsHbBnRIFC3NLChPhzA
 
 如何高效进行大规模分类？港中文联合商汤提出新方法
+
+https://www.zhihu.com/question/454589636
+
+为什么模型和数据都在gpu上，却打不满GPU的使用率？

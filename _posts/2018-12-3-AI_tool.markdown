@@ -17,6 +17,10 @@ Hugging face起初是一家总部位于纽约的聊天机器人初创服务商�
 
 http://www.huggingface.co
 
+它的国内竞品有：modelscope
+
+参考：
+
 https://zhuanlan.zhihu.com/p/535100411
 
 Huggingface超详细介绍
