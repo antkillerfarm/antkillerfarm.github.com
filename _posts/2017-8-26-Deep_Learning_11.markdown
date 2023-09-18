@@ -15,6 +15,16 @@ category: DL
 >个人主页：   
 >http://www.yf.io/
 
+渣男叫Fisher Yu，原名于夫，前任叫宋舒然，读博期间被老板睡了，跟他分手导致黑化，在ETH任教后年年睡女学生。死者刘伊凡就是受害者，被勾引得离婚+跳槽（连带的学生都不要了），结果一年不到被赶回之前读博任教的澳洲，绝望自杀。
+
+这位宋舒然，显然也是有故事的人。
+
+https://www.zhihu.com/question/621950525
+
+如何看待网传华人助理教授Fisher Yu诱骗PUA阿德莱德女性AP，导致其自杀身亡？
+
+---
+
 和Deconvolution类似，Dilated convolution也可以采用space_to_batch和batch_to_space操作，将之转换为普通卷积。
 
 参考：

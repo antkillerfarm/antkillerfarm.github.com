@@ -63,6 +63,10 @@ https://www.jianshu.com/p/cc612800607e
 
 2023年9月10日以来，地中海飓风“丹尼尔”席卷非洲北部，给利比亚东部带来破纪录的暴雨。
 
+https://zhuanlan.zhihu.com/p/656864127
+
+利比亚，出大事了
+
 ---
 
 https://mp.weixin.qq.com/s/Ld28qHczQ1NfFPGlJQGXKQ
