@@ -9,6 +9,48 @@ category: DL acceleration
 
 # 并行 & 框架 & 优化
 
+## LoRA
+
+LoRA: Low-Rank Adaptation of Large Language Models是微软研究院引入的一项新技术，主要用于处理大模型微调的问题。
+
+lora模型可以简单理解为在基础模型之上的一个补丁模型，用来训练特定风格、特定人物、特定动作等效果。因为基础模型提供了强大的通用能力，但对于指定人物、或者特定的一种风格掌握的并不精，所以需要lora模型来针对性学习下特定领域的效果。
+
+![](/images/img5/LoRA.png)
+
+$$h=xW_0'+xA'B'=W_0x+BAx$$
+
+上图为LoRA的实现原理，其实现流程为：
+
+- 在原始预训练语言模型旁边增加一个旁路，做降维再升维的操作来模拟内在秩；
+
+- 用随机高斯分布初始化A，用零矩阵初始化B，训练时固定预训练模型的参数，只训练矩阵A与矩阵B；
+
+- 推理的时候，只需要更新$$W=W_0+BA$$即可。
+
+由于A和B的数据量极小，有的时候也会只发布A和B。用户将之下载之后，自行更新base model即可。这就相当于是model的patch。
+
+由此还衍生出一种用法，一个base model + 若干针对不同领域/任务的patch，就可以服务于多个不同的领域/任务。
+
+LoRA大幅降低了模型训练时的显存占用，因为并不优化主模型，所以主模型对应的优化器参数不需要存储。**但计算量没有明显变化**——虽然减少了主模型更新权重的计算，但却增加了旁路的正向和反向计算。
+
+参考：
+
+https://huggingface.co/datasets/HuggingFace-CN-community/translation/blob/main/lora_cn.md
+
+使用LoRA进行Stable Diffusion的高效参数微调
+
+https://zhuanlan.zhihu.com/p/631411685
+
+微软LoRA：使用万分之一的参数微调你的GPT3模型
+
+https://zhuanlan.zhihu.com/p/620327907
+
+LoRA:大模型的低秩适配-最近大火的lora到底是什么东西？为啥stable diffusion和开源ChatGPT复现都在用？
+
+https://zhuanlan.zhihu.com/p/639229126
+
+深入浅出解析LoRA完整核心基础知识
+
 ## FSDP
 
 Fully Sharded Data Parallel是Facebook深度借鉴微软ZeRO之后提出的PyTorch DDP升级版本，可以认为是对标微软ZeRO，其本质是parameter sharding。Parameter sharding就是把模型参数等切分到各个GPU之上。

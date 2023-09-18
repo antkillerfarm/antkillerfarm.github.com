@@ -267,10 +267,6 @@ https://zhuanlan.zhihu.com/p/340775090
 
 从Thinker到Evolver：对可演化AI芯片的探索
 
-https://mp.weixin.qq.com/s/kuIsyX0QEIeFHn8tvFE8vw
-
-AI训练的最大障碍不是算力，而是“内存墙”
-
 https://mp.weixin.qq.com/s/MwZ9j1MIwRBrJK4iWKzRqQ
 
 芯故事：和AMD有渊源的那些AI创业公司

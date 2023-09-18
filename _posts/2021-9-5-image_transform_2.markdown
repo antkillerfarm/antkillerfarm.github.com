@@ -105,6 +105,14 @@ https://space.bilibili.com/12566101
 
 ---
 
+在C站，一个南京艺术学院毕业的学美术小姐姐，网名叫娜乌斯嘉，她用自己的照片训练了lora，并分享给全网AI绘画爱好者们使用。
+
+她的B站主页：
+
+https://space.bilibili.com/8095370
+
+---
+
 https://mp.weixin.qq.com/s/H2nqQi2EVQ_EyeDNCRD3Cg
 
 一文回顾AI绘画的成长之路：从简笔画到真实人脸生成

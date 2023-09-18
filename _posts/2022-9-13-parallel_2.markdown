@@ -203,6 +203,14 @@ https://zhuanlan.zhihu.com/p/63211072
 
 TF-Replicator, GPipe, Mesh-Tensorflow 三个库对比
 
+## 内存墙
+
+从GPT-1到GPT-3，两年时间内模型参数0.1B增加到175B，而同期，NVIDIA交出的成绩单是从V100的32GB显存增加A100的80GB，显然，显寸的提升速度远远赶不上模型模型增长的速度，这就是内存墙问题。
+
+https://mp.weixin.qq.com/s/kuIsyX0QEIeFHn8tvFE8vw
+
+AI训练的最大障碍不是算力，而是“内存墙”
+
 ## activation checkpointing
 
 ![](/images/img5/activation_checkpointing.png)
@@ -218,6 +226,8 @@ https://zhuanlan.zhihu.com/p/373662730
 显存内容可分为两类：
 
 - 模型状态（model states）: 模型参数（fp16）、模型梯度（fp16）和Adam状态（fp32的模型参数备份，fp32的momentum和fp32的variance）。假设模型参数量为$$\Phi$$，则共需要$$2\Phi+2\Phi+(4\Phi+4\Phi+4\Phi)=16\Phi$$字节存储，可以看到，Adam状态占比75%。
+
+![](/images/img5/ZeRO_offload.jpg)
 
 - 剩余状态（residual states）: 除了模型状态之外的显存占用，包括激活值（activation）、各种临时缓冲区（buffer）以及无法使用的显存碎片（fragmentation）。
 
@@ -240,6 +250,10 @@ https://github.com/microsoft/DeepSpeed
 https://www.microsoft.com/en-us/research/blog/zero-deepspeed-new-system-optimizations-enable-training-models-with-over-100-billion-parameters
 
 ZeRO & DeepSpeed
+
+https://www.microsoft.com/en-us/research/blog/deepspeed-extreme-scale-model-training-for-everyone/
+
+DeepSpeed: Extreme-scale model training for everyone
 
 https://mp.weixin.qq.com/s/Vb3AkoWHQY7WWBMZaVnf4g
 
@@ -264,17 +278,3 @@ https://zhuanlan.zhihu.com/p/576673548
 https://zhuanlan.zhihu.com/p/626420999
 
 deepspeed chat代码解读
-
-## LoRA
-
-LoRA: Low-Rank Adaptation of Large Language Models是微软研究院引入的一项新技术，主要用于处理大模型微调的问题。
-
-lora模型可以简单理解为在基础模型之上的一个补丁模型，用来训练特定风格、特定人物、特定动作等效果。因为基础模型提供了强大的通用能力，但对于指定人物、或者特定的一种风格掌握的并不精，所以需要lora模型来针对性学习下特定领域的效果。
-
-https://huggingface.co/datasets/HuggingFace-CN-community/translation/blob/main/lora_cn.md
-
-使用LoRA进行Stable Diffusion的高效参数微调
-
-https://zhuanlan.zhihu.com/p/631411685
-
-微软LoRA：使用万分之一的参数微调你的GPT3模型
