@@ -342,3 +342,7 @@ Momenta六年：是好牌打烂，还是又一次踩上时代节点？
 https://mp.weixin.qq.com/s/WhLIDfGMu0QgAbMO__q7ow
 
 充电桩电费翻番涨价，电动车又不香了？
+
+https://www.zhihu.com/question/622471397
+
+老国货品牌“活力 28”直播间火了，一夜爆卖 500 万，三个老头被临时抽调做直播，如何看待此事？

@@ -113,6 +113,10 @@ https://zhuanlan.zhihu.com/p/654324560
 
 浅谈瓦夏9.4巡演
 
+https://zhuanlan.zhihu.com/p/657040639
+
+布达诺夫：我没有心情讨论乌克兰的反攻（9月17日）
+
 ## 游击战
 
 ![](/images/img5/Ukraine.png)

@@ -311,6 +311,10 @@ https://zhuanlan.zhihu.com/p/651364842
 
 GPU渲染之路：从图形引擎到内核驱动(三、用户态图形驱动层)
 
+https://zhuanlan.zhihu.com/p/650597410
+
+图形学八股
+
 ## 术语
 
 Material Point Method（物质点法）
