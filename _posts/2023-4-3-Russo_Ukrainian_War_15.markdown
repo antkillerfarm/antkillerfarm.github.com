@@ -41,6 +41,10 @@ https://zhuanlan.zhihu.com/p/637922023
 
 俄罗斯军队对乌克兰俘虏进行去势惩罚
 
+https://zhuanlan.zhihu.com/p/657242560
+
+精神错乱 俄罗斯士兵在儿童面前扔手榴弹
+
 ---
 
 https://mp.weixin.qq.com/s/PUqFEBUN6OaGZjB-ojrMRg
