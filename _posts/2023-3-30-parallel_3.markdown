@@ -51,6 +51,10 @@ https://zhuanlan.zhihu.com/p/639229126
 
 深入浅出解析LoRA完整核心基础知识
 
+https://mp.weixin.qq.com/s/nhIRulIRD6VrdPInDsaD8A
+
+使用QLoRA对Llama 2进行微调的详细笔记
+
 ## FSDP
 
 Fully Sharded Data Parallel是Facebook深度借鉴微软ZeRO之后提出的PyTorch DDP升级版本，可以认为是对标微软ZeRO，其本质是parameter sharding。Parameter sharding就是把模型参数等切分到各个GPU之上。
