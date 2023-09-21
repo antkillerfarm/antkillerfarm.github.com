@@ -208,3 +208,9 @@ https://mp.weixin.qq.com/s/zc6GUFSUWvSGGvvPeX0wzQ
 https://zhuanlan.zhihu.com/p/586963468
 
 《三国志6》有多经典？曹操叫“变巨”，曾是无数人的电脑启蒙
+
+---
+
+https://fitgirl-repacks.site/
+
+一个俄罗斯妹子办的游戏资源站
