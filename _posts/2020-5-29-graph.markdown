@@ -229,6 +229,10 @@ https://www.doc.ic.ac.uk/~phjk/Publications/DynamicTopoSortAlg-JEA-07.pdf
 
 A Dynamic Topological Sort Algorithm for Directed Acyclic Graphs
 
+https://blog.csdn.net/qinzhaokun/article/details/48541117
+
+拓扑排序的两种实现：Kahn算法和dfs算法
+
 ## 参考
 
 https://mp.weixin.qq.com/s/LqCfwf90bzZKVMLLY5dbXA
