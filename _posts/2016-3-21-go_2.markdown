@@ -125,6 +125,34 @@ GnuGo是一个著名的开源围棋软件，但是它只有文字界面。一般
 
 # RTS+
 
+## OpenTTD
+
+Transport Tycoon Deluxe（运输大亨）的开源复刻版：
+
+https://www.openttd.org/screenshots
+
+Ludde是Ludvig Strigeus的昵称，除了OpenTTD之外，他还是ScummVM、μTorrent等知名开源软件的作者。
+
+因为罕见的肌肉疾病，Ludde不得不一直坐在轮椅上。但这丝毫不能阻止他不断的挑战自己的极限，为这个世界带来更多的进步与贡献。
+
+https://zhuanlan.zhihu.com/p/131228429
+
+开源重制——拯救失落的文化遗产
+
+## OpenMW
+
+The Elder Scrolls III:Morrowind（上古卷轴3：晨风）的开源复刻版：
+
+https://gitlab.com/OpenMW/openmw
+
+## OpenDiablo2
+
+Diablo 2的开源复刻版：
+
+https://github.com/OpenDiablo2/OpenDiablo2
+
+除了单机游戏之外，网游也有开源版本，例如Open Unlight。
+
 ## DosBox
 
 DosBox是Linux平台玩DOS老游戏的法宝。
@@ -210,45 +238,3 @@ https://www.sohu.com/a/299902957_100163351
 https://www.zhihu.com/question/512061573
 
 电竞女主播Miss透露早期经常吃馊米饭，以前的电竞选手真的这么苦吗？
-
-# 我的PC Game+
-
-https://www.zhihu.com/question/39626359
-
-为什么澄海3C没有成为DOTA一样成功的作品？
-
-https://zhuanlan.zhihu.com/p/325972017
-
-STEAM上的科研游戏，真是给正常人玩的？
-
-https://mp.weixin.qq.com/s/NFYlupa0piLjcWrRaP-C-Q
-
-中年失业破产后当雇佣兵、倒卖煎饼果子，游戏里的打工人也这么难？
-
-https://www.zhihu.com/zvideo/1358906505719336960
-
-一个讲述War 3秘密的专栏
-
-http://news.17173.com/content/11112021/094129154.shtml
-
-腾讯、网易搞不定的国产3A，被一个中专生捣鼓出来了，仅售19元？（飞燕群岛）
-
-https://zhuanlan.zhihu.com/p/500967361
-
-街机《三国志》“很黄很暴力”的漫画剧情，刘皇叔靠处子之身起家
-
-https://www.zhihu.com/question/328681136
-
-什么是弹幕射击游戏？
-
-https://www.bilibili.com/read/cv2773215
-
-一个错误诞生一个经典，CS最受欢迎地图“Dust II”背后的故事
-
-https://zhuanlan.zhihu.com/p/619204713
-
-风靡网吧的经典！《三国群英传2》为何是系列最受欢迎的一代？
-
-https://zhuanlan.zhihu.com/p/454876786
-
-《战争游戏红龙》：军事指挥爱好者的近代战争交响曲

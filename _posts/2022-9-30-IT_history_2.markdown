@@ -326,3 +326,45 @@ https://mp.weixin.qq.com/s/HcaH1yFtCnhjxb9ShqhFEQ
 https://www.zhihu.com/question/621243697
 
 PowerPoint发明者丹尼斯·奥斯汀去世，享年76岁，如何评价他的一生？
+
+# 我的PC Game+
+
+https://www.zhihu.com/question/39626359
+
+为什么澄海3C没有成为DOTA一样成功的作品？
+
+https://zhuanlan.zhihu.com/p/325972017
+
+STEAM上的科研游戏，真是给正常人玩的？
+
+https://mp.weixin.qq.com/s/NFYlupa0piLjcWrRaP-C-Q
+
+中年失业破产后当雇佣兵、倒卖煎饼果子，游戏里的打工人也这么难？
+
+https://www.zhihu.com/zvideo/1358906505719336960
+
+一个讲述War 3秘密的专栏
+
+http://news.17173.com/content/11112021/094129154.shtml
+
+腾讯、网易搞不定的国产3A，被一个中专生捣鼓出来了，仅售19元？（飞燕群岛）
+
+https://zhuanlan.zhihu.com/p/500967361
+
+街机《三国志》“很黄很暴力”的漫画剧情，刘皇叔靠处子之身起家
+
+https://www.zhihu.com/question/328681136
+
+什么是弹幕射击游戏？
+
+https://www.bilibili.com/read/cv2773215
+
+一个错误诞生一个经典，CS最受欢迎地图“Dust II”背后的故事
+
+https://zhuanlan.zhihu.com/p/619204713
+
+风靡网吧的经典！《三国群英传2》为何是系列最受欢迎的一代？
+
+https://zhuanlan.zhihu.com/p/454876786
+
+《战争游戏红龙》：军事指挥爱好者的近代战争交响曲

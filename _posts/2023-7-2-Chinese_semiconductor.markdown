@@ -151,20 +151,16 @@ https://www.zhihu.com/question/535626091
 
 ---
 
-- 最开始认为联想电脑是真国产，结果才发现电脑里屏幕、CPU、硬盘、存储芯片都是进口的。
-
-- 后来认为华为手机才是真国产，结果才发现手机里面的SOC、DRAM、NAND Flash、CIS、RF、OLED全部都是进口的。
-
-- 后来认为海思才是真国产，结果发现IP、EDA、代工制造都是进口的，卡脖子的其实是芯片制造。
-
-- 后来认为中芯国际、长江存储、京东方才是真国产，结果发现半导体设备、半导体材料95%都是进口的。
-
-- 后来市场认为北方华创、沪硅产业才是真国产替代，结果发现设备和材料底层的材料，物理、化学、数学的原创理论基础也是欧美的。
-
----
-
 大海思的芯片供华为自己用；小海思的芯片是给产业用，给厂家服务的。
 
 https://mp.weixin.qq.com/s/V0DK1PWLgEhu70lfFiJguA
 
 当华为全面断供，安防缺货已无人接单
+
+---
+
+https://www.wassenaar.org/app/uploads/2021/12/Public-Docs-Vol-II-2021-List-of-DU-Goods-and-Technologies-and-Munitions-List-Dec-2021.pdf
+
+没上这个清单的玩意，就别吹技术先进、中国无法制造了。
+
+因为皇军没认证。

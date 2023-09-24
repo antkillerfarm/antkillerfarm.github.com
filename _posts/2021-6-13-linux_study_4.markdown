@@ -100,6 +100,18 @@ https://blog.csdn.net/qq_26400953/article/details/105145103
 
 一文读懂authorized_keys和known_hosts
 
+## SSH Server
+
+```bash
+sudo apt install openssh-server
+sudo ufw allow ssh
+sudo systemctl status ssh
+```
+
+https://zhuanlan.zhihu.com/p/145763789
+
+如何在Ubuntu 20.04启用SSH
+
 ## X Server
 
 假设客户端的ip是1.1.1.1，而ssh服务器的ip是2.2.2.2。
@@ -111,7 +123,7 @@ xhost +2.2.2.2
 ssh -X root@2.2.2.2
 ```
 
-Server:
+登陆Server之后，在Server中:
 
 ```bash
 export DISPLAY=1.1.1.1:0.0

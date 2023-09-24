@@ -83,7 +83,7 @@ Imperivm III: Great Battles of Rome（2005，有7个势力可选。）
 
 ---
 
-《罗马：全面战争》也出了HD版本。炒冷饭只是原因之一，更主要是维护MOD生态。《中世纪2》以及之前的版本采用旧引擎，修改相对简单。也因为这次的HD沿用了旧引擎的关系，它的画面实际上是不如《罗马2》的。
+《罗马：全面战争》也出了HD版本。炒冷饭只是原因之一，更主要的是维护MOD生态。《中世纪2》以及之前的版本采用旧引擎，修改相对简单。而这次的HD沿用了旧引擎，它的画面实际上是不如《罗马2》的。
 
 全战系列的知名MOD：汉魂（明末）、战国春秋、汉之殇（三国）、风云南北朝。
 
@@ -92,6 +92,26 @@ Imperivm III: Great Battles of Rome（2005，有7个势力可选。）
 http://www.maoxu.com/
 
 http://www.hanhuns.com/
+
+---
+
+2023.9
+
+最近看了一个《三国：全面战争》的主播，忍不住玩了一把。
+
+踩坑记录：
+
+1、禁用独立显卡。
+
+2、设置——语言和区域——国家地区选香港，区域格式选：中文简体，香港特别行政区。
+
+3、再不行的话，兼容模式，win7，就能进游戏了。
+
+这个游戏对于配置的要求其实非常宽泛。
+
+如果是最低画质、最小部队规模的话，2015年左右的电脑就可以胜任，但如果是4K+万人会战的话，即便现在的GPU卡皇，也跑不动。
+
+PS：2005年刚接触《罗马：全面战争》的时候，我的PC跑不动战术界面，当时基本是把他当英雄无敌类的战略游戏来玩。
 
 ## Red Alert
 
@@ -210,31 +230,3 @@ https://github.com/OpenSAGE/OpenSAGE/
 RollerCoaster Tycoon 2（过山车大亨）的开源复刻版：
 
 https://openrct2.org/
-
-## OpenTTD
-
-Transport Tycoon Deluxe（运输大亨）的开源复刻版：
-
-https://www.openttd.org/screenshots
-
-Ludde是Ludvig Strigeus的昵称，除了OpenTTD之外，他还是ScummVM、μTorrent等知名开源软件的作者。
-
-因为罕见的肌肉疾病，Ludde不得不一直坐在轮椅上。但这丝毫不能阻止他不断的挑战自己的极限，为这个世界带来更多的进步与贡献。
-
-https://zhuanlan.zhihu.com/p/131228429
-
-开源重制——拯救失落的文化遗产
-
-## OpenMW
-
-The Elder Scrolls III:Morrowind（上古卷轴3：晨风）的开源复刻版：
-
-https://gitlab.com/OpenMW/openmw
-
-## OpenDiablo2
-
-Diablo 2的开源复刻版：
-
-https://github.com/OpenDiablo2/OpenDiablo2
-
-除了单机游戏之外，网游也有开源版本，例如Open Unlight。

@@ -11,42 +11,6 @@ category: Russo Ukrainian War
 
 ## 凡人列传
 
-为了购买装备，许多人负债累累；国防部的工资卡没有发给一些被动员的人，而另一些人则无法激活工资卡。
-
-https://zhuanlan.zhihu.com/p/579785034
-
-拉平上将化身督战队，用枪指着“祖国叛徒”的头——斯瓦托沃溃兵的故事
-
-https://zhuanlan.zhihu.com/p/577621180
-
-被骗去抵挡乌克兰反攻，一路溃退——俄动员兵上前线的故事
-
-https://zhuanlan.zhihu.com/p/517657283
-
-旅长害怕我们干掉他——俄军士兵采访实录
-
-https://zhuanlan.zhihu.com/p/604241912
-
-不会归来的人——瓦格纳死囚、军事葬礼、疯狂的丧葬行业与特别军事行动的代价
-
-https://zhuanlan.zhihu.com/p/608784859
-
-俄雇佣兵的子弹，没用来打乌军，瓦格纳把俄军大将，画在了靶子上
-
-https://zhuanlan.zhihu.com/p/642515984
-
-损失七成人员 被无情抛弃的俄罗斯风暴大队士兵想抓住乌克兰总统
-
-https://zhuanlan.zhihu.com/p/637922023
-
-俄罗斯军队对乌克兰俘虏进行去势惩罚
-
-https://zhuanlan.zhihu.com/p/657242560
-
-精神错乱 俄罗斯士兵在儿童面前扔手榴弹
-
----
-
 https://mp.weixin.qq.com/s/PUqFEBUN6OaGZjB-ojrMRg
 
 一个乌克兰女性的伤痛与纪念
