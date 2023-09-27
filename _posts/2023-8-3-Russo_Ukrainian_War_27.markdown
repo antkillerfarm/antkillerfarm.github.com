@@ -356,3 +356,11 @@ https://zhuanlan.zhihu.com/p/656014951
 https://zhuanlan.zhihu.com/p/652658146
 
 “无法拒绝的死亡陷阱”——俄罗斯是如何征召外国人服役的
+
+https://zhuanlan.zhihu.com/p/658436776
+
+在俄罗斯的国外劳工遭围捕：送到乌克兰当炮灰
+
+https://zhuanlan.zhihu.com/p/658350757
+
+死后杀人 俄罗斯多名军人不幸被假投降的乌克兰无人机击毙
