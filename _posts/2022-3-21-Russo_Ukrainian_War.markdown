@@ -77,6 +77,8 @@ Without gas or without you? – The answer is without you. Without electricity o
 
 即使没有电，我们对自己的信仰之光也不会被熄灭。
 
+Freedom comes at a high price. But slavery has an even higher price.
+
 虽然自由代价很高，但奴隶的代价更高！自由是一代人的代价，奴隶却是一代又一代人的，代价代代相传，我们忍了下来，抵挡了攻击、威胁、核威胁、恐怖和导弹袭击。这个冬天我们也会熬过去，因为我们知道我们为何而战！
 
 This year began on February 24. Without prefaces and preludes.

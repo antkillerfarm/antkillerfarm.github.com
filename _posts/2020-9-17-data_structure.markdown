@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数据结构 & 普通CS算法, 数值计算
+title:  数据结构 & 普通CS算法
 category: resource 
 ---
 
@@ -207,7 +207,7 @@ https://mp.weixin.qq.com/s/WlHl9xMJ-CZg5REFWSo0YA
 
 ACBM算法是在AC（Aho-Corasick）自动机（UNIX上的fgrep命令使用的就是AC算法）的基础之上，引入了BM（Boyer-Moore）算法的多模扩展，实现的高效的多模匹配。和AC自动机不同的是，ACBM算法不需要扫描目标文本串中的每一个字符，可以利用本次匹配不成功的信息，跳过尽可能多的字符，实现高效匹配。
 
->注： Alfred Vaino Aho，1941年生，加拿大计算机科学家。普林斯顿大学博士，长期供职于贝尔实验室，后为哥伦比亚大学教授。egrep和fgrep的发明人，AWK语言的联合发明人。2003年获IEEE John von Neumann Medal。
+>注：Alfred Vaino Aho，1941年生，加拿大计算机科学家。普林斯顿大学博士，长期供职于贝尔实验室，后为哥伦比亚大学教授。egrep和fgrep的发明人，AWK语言的联合发明人。2003年获IEEE John von Neumann Medal。
 
 >Margaret John Corasick，贝尔实验室研究员。
 
@@ -258,6 +258,10 @@ https://zhuanlan.zhihu.com/p/34899732
 详解AVL树（基础篇）
 
 ---
+
+https://www.zhihu.com/question/623575952
+
+算法复杂度为什么经常不考虑系数?
 
 https://mp.weixin.qq.com/s/JiYRhcTv2qgLfVyGzI8uHQ
 
@@ -390,21 +394,3 @@ https://mp.weixin.qq.com/s/zQJve_w5OoM6u-WcSWArdQ
 https://www.codeproject.com/Articles/69941/Best-Square-Root-Method-Algorithm-Function-Precisi
 
 Best Square Root Method
-
-# 数值计算
-
-两个数值趋近于无穷小且相近的数字相除的结果应该大约为1，但却因为分母接近为0而变成无穷。这时可以直接取对数执行运算，其结果在数值上会较为稳定。
-
----
-
-https://blog.csdn.net/HiWangWenBing/article/details/119772047
-
-数学建模、科学计算、数值计算的关系
-
-https://blog.csdn.net/HiWangWenBing/article/details/119790035
-
-误差的种类、误差传播、误差分析
-
-https://www.zhihu.com/question/444819295
-
-控制周期越短，控制效果是否越好？

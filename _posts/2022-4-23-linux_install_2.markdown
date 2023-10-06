@@ -171,6 +171,12 @@ http://toaruos.org/
 
 ---
 
+https://zhuanlan.zhihu.com/p/659446170
+
+当代大学生Ubuntu系统个人电脑使用现状(资源分享帖)
+
+---
+
 https://mp.weixin.qq.com/s/I7C7cXFgxO7RO0Wpjjj3xQ
 
 一篇文章带你“重新认识”线程上下文切换怎么玩儿

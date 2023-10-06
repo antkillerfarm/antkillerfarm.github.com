@@ -215,6 +215,18 @@ https://www.zhihu.com/question/545358468
 
 ---
 
+![](../images/img5/Japan_Korea.jpg)
+
+---
+
+日本耶稣会还将小西行长的死报告给了罗马教皇克莱芒八世，克莱芒八世对此而叹息，甚至不少罗马城市民都位小西哀悼。据史料记载1607年，即小西死后七年，意大利还上演一部音乐剧，内容是讲小西行长战胜了“邪恶”的德川家康。
+
+https://www.zhihu.com/question/55989329
+
+如何看待小西行长？
+
+---
+
 https://mp.weixin.qq.com/s/08stAzq0zVIxfawKJ1yBnQ
 
 日本凭什么如此“猖狂”盘点一下日本那些知名制造企业
