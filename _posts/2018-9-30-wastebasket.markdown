@@ -278,3 +278,7 @@ https://www.zhihu.com/question/503354095
 https://k.sina.com.cn/article_7517400647_1c0126e4705901sdfc.html
 
 北大博士梅桢再上热搜，被爆高考400分，又一位“外籍”投机者？
+
+https://zhuanlan.zhihu.com/p/659727597
+
+哈佛天才教授为了“4块钱”丢掉了终身教授职位！
