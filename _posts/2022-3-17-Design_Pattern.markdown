@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  设计模式
+title:  设计模式, Autoware
 category: resource 
 ---
 
@@ -80,6 +80,38 @@ http://c.biancheng.net/design_pattern/
 https://mp.weixin.qq.com/s/H2toewJKEwq1mXme_iMWkA
 
 设计模式二三事
+
+# Autoware
+
+Autoware是另一个开源的无人驾驶平台。不像Apollo，没有百度这样的强势公司的介入，社区氛围更浓一些，相对的，功能也要弱一些。
+
+官网：
+
+https://www.autoware.org/
+
+主要由一下组件构成：
+
+- autoware.ai
+
+https://www.autoware.ai/
+
+这个组件基于ROS 1.0，是目前的方案。
+
+- autoware.auto
+
+https://www.autoware.auto/
+
+这个组件基于ROS 2.0，是面向未来的方案。
+
+- autoware.io
+
+https://www.autoware.io/
+
+autoware提供的模拟器。
+
+代码仓库：
+
+https://gitlab.com/autowarefoundation/autoware.ai
 
 # 机器人/无人驾驶参考资源+
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  通信协议, Autoware, 超算
+title:  通信协议, 超算
 category: resource 
 ---
 
@@ -10,6 +10,18 @@ category: resource
 # 通信协议
 
 ## HTTPS
+
+在HTTP时代，网络运营商有多种方式进行嗅探以搜寻用户访问的网站，这是因为HTTP没有进行加密，网络运营商可以轻松劫持HTTP流量并在流量里插入垃圾信息，包括但不限于将用户下载的应用替换为推广应用、在用户访问的任意网站里插入流量套餐或者广告信息。
+
+最近十年HTTP快速向HTTPS过渡，HTTPS对网站内容进行了加密，运营商无法再随意劫持流量，但这并不意味着运营商无法再嗅探用户访问哪些网站。
+
+当我们使用浏览器访问某个地址时，DNS请求也会泄露地址、SNI信息也会暴露域名，于是业界又推出DNS over HTTPS/TLS，用来加密DNS查询请求。
+
+然而SNI问题仍然没有解决，因为SNI信息仍然会暴露给网络运营商。
+
+在CloudFlare托管的网站若启用ECH后，则外部部分使用的是cloudflare-ech.com，这是个共享的SNI，运营商最多只能知道用户访问的网站使用的是CloudFlare和ECH标准，并不知道具体的网站域名。
+
+VSCode在最近添加了万恶的ECH，让运营商看不到明文的域名信息。他看不到你访问的域名，就联想你在访问非法网站，于是就一股脑封了。
 
 https://mp.weixin.qq.com/s/C68icGtwh3IzuUbANaRXEg
 
@@ -328,38 +340,6 @@ http://ruanyifeng.com/blog/2016/04/cors.html
 https://blog.csdn.net/cuixiaogang110/article/details/81948173
 
 前后端分离与跨域的解决方案（CORS的原理）
-
-# Autoware
-
-Autoware是另一个开源的无人驾驶平台。不像Apollo，没有百度这样的强势公司的介入，社区氛围更浓一些，相对的，功能也要弱一些。
-
-官网：
-
-https://www.autoware.org/
-
-主要由一下组件构成：
-
-- autoware.ai
-
-https://www.autoware.ai/
-
-这个组件基于ROS 1.0，是目前的方案。
-
-- autoware.auto
-
-https://www.autoware.auto/
-
-这个组件基于ROS 2.0，是面向未来的方案。
-
-- autoware.io
-
-https://www.autoware.io/
-
-autoware提供的模拟器。
-
-代码仓库：
-
-https://gitlab.com/autowarefoundation/autoware.ai
 
 # 超算
 
