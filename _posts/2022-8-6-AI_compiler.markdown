@@ -315,6 +315,8 @@ http://onnx.ai/onnx-mlir
 
 Torch-MLIR
 
+https://github.com/llvm/torch-mlir
+
 ![](/images/img4/torch_mlir.jpg)
 
 TorchScript-->TorchDialect-->Linalg-on-Tensors
