@@ -301,6 +301,18 @@ Nvidia Grace Hopper超级芯片架构解读（二）
 
 ---
 
+单单从信号线路数量来说，x16的PCIe和x2的NVLink是相同的，都是32对差分线。x2的NVLink 3.0双向带宽是100 GB/s，比PCIe 5.0 x16的126 GB/s要低。
+
+这么高的带宽，数据传输功耗是一个不可忽略的重要因素，NV能做到x18的NVLink，不代表其它厂家可以轻松实现x144的PCIe。
+
+大概在2017年的hotchips上，Intel给出的一份PPT上，PCB上每传输1bit数据的参考功耗是20 pJ（1e-12焦耳），按这个功耗计算，NVLink 3.0 x18的7200 Gbit/s意味着单单是信号传输就要消耗144W功耗，这显然是难以接受的。2019年NV发表过一份1.17 pJ/bit的论文，虽然因为应用环境不同，不能直接对比说NV的技术使得传输功耗不到6%，但还是可以从侧面猜测一下NV的技术水平。
+
+https://www.zhihu.com/question/546809864
+
+为什么NVlink能够实现比PCIe更高的传输带宽？
+
+---
+
 https://zhuanlan.zhihu.com/p/623060064
 
 什么是NVLink？
