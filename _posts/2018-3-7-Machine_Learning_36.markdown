@@ -345,6 +345,8 @@ https://mp.weixin.qq.com/s/o129MwpGzx8tzjUCkz1npw
 
 犹太人拿走了《我的奋斗》。
 
+![](/images/img5/Gaza.jpg)
+
 https://www.zhihu.com/question/624972638
 
 以色列遭数千枚火箭弹袭击，以军宣布“进入战争状态”，目前当地情况如何？哪些信息值得关注？
@@ -352,3 +354,7 @@ https://www.zhihu.com/question/624972638
 https://www.zhihu.com/answer/3242440618
 
 加沙地道战
+
+https://www.zhihu.com/question/626591411
+
+如何评价以色列10月18日凌晨1点轰炸加沙医院，已有800人死亡?
