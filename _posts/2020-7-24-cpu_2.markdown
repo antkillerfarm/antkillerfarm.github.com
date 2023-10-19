@@ -27,6 +27,14 @@ HP，这个更是不用多说，几乎人人都知道HP是美国企业。
 
 EUV光刻机功率达到了100万瓦，是上一代的10倍左右，每天耗电3万度。
 
+---
+
+通常认为，DRAM的天花板是10nm。其原因是在传统1T1C架构下，单位元件面积不断减小，如何保证电容能够存储足够的电荷、防止相邻存储单元之间的耦合，是DRAM推进到10nm以下的无解难题，而EUV是用来做7nm以下的，DRAM目前主流是14纳米。14纳米理论上完全可以用DUV来完成，不需要EUV。
+
+三星电子的1Znm节点DRAM量产结果表明，相比于DUV浸没式光学光刻机，EUV光刻机极大简化了制造流程，不仅可以大幅度提高光刻分辨率和DRAM性能，而且可以减少所使用的掩模数量，从而减少流程步骤的数量，减少缺陷、提高存储密度，并大幅降低DRAM生产成本，缩短生产周期。也就是说，即使EUV掩模费用（达数百万美元）远高于DUV掩模费用，使用EUV光刻机量产DRAM也具有更高的性价比。
+
+---
+
 参考：
 
 https://mp.weixin.qq.com/s/NZGNrO_LxNc6qrIdofOIfQ
@@ -121,6 +129,24 @@ https://mp.weixin.qq.com/s/kzQ-WqozBX-T8ZyS58MPnw
 
 BGA封装，就是那种引脚都在芯片背面的封装。QFP封装，即四侧引脚扁平封装。同样面积情况下，显然占据一个面的引脚数，要超过仅占据四个边的引脚数。
 
+### 先进封装
+
+CoWoS（Chip-on-Wafer-on-Substrate）
+
+TSV（Through Silicon Via）
+
+https://xueqiu.com/8992033978/256442528
+
+一文看懂TSV技术
+
+https://zhuanlan.zhihu.com/p/586478535
+
+台积电芯片封装技术-CoWoS
+
+https://mp.weixin.qq.com/s/FVcmCvimpoGCtCtm4RDtUg
+
+浅谈先进封装技术
+
 ### 参考
 
 https://mp.weixin.qq.com/s/vGONCRzvFGVo6giUFq0uag
@@ -146,10 +172,6 @@ https://mp.weixin.qq.com/s/WBab6k4mIkZNzpvbgSbpVQ
 https://mp.weixin.qq.com/s/S-YGgvE6ey2t9_YmVmKOFg
 
 一份难得的MOS管封装分析报告
-
-https://mp.weixin.qq.com/s/FVcmCvimpoGCtCtm4RDtUg
-
-浅谈先进封装技术
 
 https://mp.weixin.qq.com/s/MXuN1ccza508TMkcYVadvA
 
@@ -224,6 +246,10 @@ https://zhuanlan.zhihu.com/p/651836498
 ---
 
 PCIE插上之后，初始通信速率都是PCIE 1.0的，完成握手后，会协商跳入更高速率继续握手。
+
+PCIe分为控制器（controller）和PHY两部分，控制器是数字电路，PHY包含PCS和PMA两部分，PMA是模拟电路。
+
+从linux上pcie驱动代码上看，博通、高通、海思等公司都是采用的synopsys的pcie控制器。但这些大厂现在有没有自研的pcie ip我就不清楚了。。。
 
 https://www.zhihu.com/question/618468070
 
@@ -342,43 +368,3 @@ https://mp.weixin.qq.com/s/rml_wqePIx8vOk2ZO9_GMA
 https://mp.weixin.qq.com/s/Lydg1TMlNO_98Z-NF5BIBQ
 
 理解CPU Cache
-
-https://mp.weixin.qq.com/s/8g33nTI_-i9Rzmu-5Up-HA
-
-高性能编程：三级缓存（LLC）访问优化
-
-https://mp.weixin.qq.com/s/QidAD9OuVdEXFqxRMPx5lQ
-
-响应速度不给力？解锁正确缓存姿势
-
-https://mp.weixin.qq.com/s/570O2BloWjy3q0_m_mfiZg
-
-CPU缓存一致性协议
-
-https://mp.weixin.qq.com/s/ziJ8OFiLA1it3sQvycN7Mg
-
-翻越缓存的三座大山
-
-https://zhuanlan.zhihu.com/p/63494668
-
-显存为什么不能当内存使？内存、Cache和Cache一致性
-
-https://mp.weixin.qq.com/s/AekR-mv9EOD-4V5SKqI9YQ
-
-一文看懂缓存
-
-https://mp.weixin.qq.com/s/FY8sEX4acEUpCu_6ntArYw
-
-CPU缓存L1/L2/L3工作原理
-
-https://blog.csdn.net/ZoeyyeoZ/article/details/51804647
-
-MESI&MOESI协议
-
-https://mp.weixin.qq.com/s/G4SpTC8DZ-l5kWBRGwSwGQ
-
-Linux内存、Swap、Cache、Buffer详细解析
-
-https://zhuanlan.zhihu.com/p/608663298
-
-一篇论文讲透Cache优化

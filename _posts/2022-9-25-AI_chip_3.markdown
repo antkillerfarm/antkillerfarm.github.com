@@ -353,6 +353,8 @@ GMI：Global Memory Interconnect
 
 AMD Infinity Fabric Link
 
+其实Intel也有一个叫做Xelink的东西。
+
 ## HIP
 
 ![](/images/img4/latestGPU.png)

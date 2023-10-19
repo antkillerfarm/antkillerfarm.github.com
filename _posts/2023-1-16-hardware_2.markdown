@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  硬件杂谈（二）, 硬盘, 内存, CUDA实战
+title:  硬件杂谈（二）, 硬盘, 内存, CUDA实战, DPU
 category: Chip 
 ---
 
@@ -343,26 +343,34 @@ https://zhuanlan.zhihu.com/p/544864997
 
 cuda中threadIdx、blockIdx、blockDim和gridDim的使用
 
-# 俄乌战争+
+# DPU
 
-当欧美限价60美元后，像印度之类阴诈至极的“伙伴”，又趁机再度索要折扣，把油价打压到仅仅维持俄罗斯石油公司成本运作平衡的40多美元。
+如同GPU是针对图像显示领域的加速，DPU（Data Processing Unit）则是对于数据传输方面的加速。
 
----
+![](/images/img4/DPU.png)
 
-2014年7月，瑞典新纳粹分子、前本土防卫军狙击手米尔凯·斯基尔特加入“亚速”营。但他在2015年8月公开宣布：他在乌克兰的经历改变了自己，自己将不再相信纳粹主义，因为他在乌克兰的所见所闻让自己认识到——自己过去的纳粹思想是错误而愚蠢的。
+![](/images/img4/DPU_2.png)
 
-https://mp.weixin.qq.com/s/wp8CBSc2cBJBddSws2ktzw
+https://zhuanlan.zhihu.com/p/145142691
 
-乌克兰正在进一步走向分裂！这次不在东部，而是西部。
+什么是DPU？
 
----
+https://mp.weixin.qq.com/s/bL1PoUjZ_sH2VKcBxI6N5A
 
-126独立旅是去年春天在赫尔松方向损失最严重的俄军部队，虽然俄罗斯官方没有公布任何具体损失的消息，但去年3月份该旅被授予“近卫”称号——这是克里姆林宫安抚伤亡惨重部队的标准流程。
+Wave公司发布数据流处理架构DPU
 
----
+https://zhuanlan.zhihu.com/p/409507738
 
-芬兰模式：相当于直接承认割让领土。
+写一下DPU
 
-https://zhuanlan.zhihu.com/p/619510199
+https://www.zhihu.com/question/471238373
 
-刚刚，芬兰进去了！
+dpu芯片发展前景如何？
+
+https://mp.weixin.qq.com/s/xRvXCpHpDnMqSNjJyIf3XQ
+
+大话DPU
+
+https://mp.weixin.qq.com/s/hN8tZ7xCRttIc-3pXdqElQ
+
+中科院计算所牵头发布《专⽤数据处理器DPU技术白皮书》，94页pdf
