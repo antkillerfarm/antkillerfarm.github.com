@@ -41,7 +41,7 @@ https://news.ifeng.com/c/8Kph5NYlxxB
 
 ## 顿涅斯克战役
 
-本节主要包括巴赫穆特、chasiv yar、马林卡、Soledar、Vuhledar等地的攻防战。
+本节主要包括巴赫穆特、chasiv yar、马林卡、Soledar、Vuhledar、Avdiivka等地的攻防战。
 
 2022.5 俄军攻克波帕斯纳，巴赫穆特成为前线。
 
@@ -234,3 +234,19 @@ https://zhuanlan.zhihu.com/p/645318258
 https://zhuanlan.zhihu.com/p/657029450
 
 恨断安德里夫卡 俄罗斯94联队两天内不幸被乌克兰军队歼灭600人
+
+---
+
+阿夫迪夫卡鏖兵
+
+https://zhuanlan.zhihu.com/p/662482958
+
+乌军10月19日歼灭敌军1380人 创单日纪录
+
+https://zhuanlan.zhihu.com/p/662523285
+
+阿夫迪夫卡激战正烈，但第聂伯河南岸正在发生变化
+
+https://zhuanlan.zhihu.com/p/662610660
+
+俄军契而不舍围攻阿夫迪夫卡

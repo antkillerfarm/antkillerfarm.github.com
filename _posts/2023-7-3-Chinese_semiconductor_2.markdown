@@ -164,3 +164,7 @@ band width：显存带宽。
 https://mp.weixin.qq.com/s/GoPjdvq01N9O2uTtTl6nnA
 
 GPU大缺货，背后的真正原因！
+
+https://www.zhihu.com/question/626583840
+
+美政府拟阻止英伟达等出口高性能AI芯片，英伟达、AMD股价大跌，国内厂商称已提前囤货，有何影响？

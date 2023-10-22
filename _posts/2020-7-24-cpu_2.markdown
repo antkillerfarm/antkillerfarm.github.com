@@ -281,6 +281,10 @@ https://mp.weixin.qq.com/s/QyPIXvwJ1yux_XxmeNI3hw
 
 PCIe发展历程及常见插槽速度对比
 
+https://www.zhihu.com/question/550129239
+
+PCIe传输和DMA传输有什么区别吗？
+
 ## 历史
 
 NetBurst可以说是Intel历史上最大的战略错误。
@@ -352,19 +356,3 @@ Cache分为硬件Cache和软件Cache两种，这里只讨论前者。后者参�
 上图展示了CPU和DRAM之间的速度增长的差异，这个差异通常被称为Memory Gap。1980年代以前的计算机是没有Cache的，但是随着Memory Gap的增大，Cache的级数也不断增多，目前3级片上Cache+1级片外Cache已经是标配了。
 
 必须指出的是，和CPU的速度受限于技术进步不同，RAM的问题主要是性能和价格的折衷。Cache实际上也是一种RAM，最好的L0 Cache和CPU的速度相当，只是价格太高而已。
-
-类似这样的还有PCB的线宽。微米级的线宽技术上完全可行，毕竟芯片都已经是纳米级的线宽了，主要还是价格的问题。
-
-多核CPU多级缓存的一致性，一般由相关的一致性总线协议保证。这些协议包括：MSI、MESI和MOESI。
-
-https://mp.weixin.qq.com/s/cSu-P-aDSXH0CYLN2HNrxw
-
-深入理解Cache（上）
-
-https://mp.weixin.qq.com/s/rml_wqePIx8vOk2ZO9_GMA
-
-深入理解Cache（下）
-
-https://mp.weixin.qq.com/s/Lydg1TMlNO_98Z-NF5BIBQ
-
-理解CPU Cache

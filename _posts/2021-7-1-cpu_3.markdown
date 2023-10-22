@@ -11,6 +11,22 @@ category: Chip
 
 ## Cache（续）
 
+类似这样的还有PCB的线宽。微米级的线宽技术上完全可行，毕竟芯片都已经是纳米级的线宽了，主要还是价格的问题。
+
+多核CPU多级缓存的一致性，一般由相关的一致性总线协议保证。这些协议包括：MSI、MESI和MOESI。
+
+https://mp.weixin.qq.com/s/cSu-P-aDSXH0CYLN2HNrxw
+
+深入理解Cache（上）
+
+https://mp.weixin.qq.com/s/rml_wqePIx8vOk2ZO9_GMA
+
+深入理解Cache（下）
+
+https://mp.weixin.qq.com/s/Lydg1TMlNO_98Z-NF5BIBQ
+
+理解CPU Cache
+
 https://mp.weixin.qq.com/s/8g33nTI_-i9Rzmu-5Up-HA
 
 高性能编程：三级缓存（LLC）访问优化
@@ -292,41 +308,3 @@ https://mp.weixin.qq.com/s/rSGRXfN4z3ElP7iQX1umjQ
 https://www.zhihu.com/question/322451170
 
 为什么amd能胶水做到8die，intel最多胶水2die?
-
----
-
-![](/images/img4/In_Chip_Bus.jpg)
-
-https://zhuanlan.zhihu.com/p/32216294
-
-破茧化蝶，从Ring Bus到Mesh网络，CPU片内总线的进化之路
-
----
-
-Engineering Change Order
-
-https://zhuanlan.zhihu.com/p/20914909
-
-IC科普文：ECO的那些事
-
----
-
-Register Transfer Level
-
-https://blog.csdn.net/hqzl225411/article/details/117819843
-
-RTL概念与常用RTL建模
-
-## 参考
-
-https://mp.weixin.qq.com/s/Cij_95iLbAm0AEtrSb72_A
-
-关于CPU科普，这篇说得最详细
-
-https://zhuanlan.zhihu.com/p/29743431
-
-CPU制造的那些事之一：i7和i5其实是孪生兄弟！？
-
-https://zhuanlan.zhihu.com/p/29767262
-
-CPU制造的那些事之二：Die的大小和良品率

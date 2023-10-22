@@ -281,6 +281,30 @@ https://www.zhihu.com/question/375319488
 
 # 地理+
 
+https://mp.weixin.qq.com/s/28lFYHm_dd9jQdO-MwbmWw
+
+超前的思想，迟到的荣誉（Alfred Lothar Wegener）
+
+https://mp.weixin.qq.com/s/ABYf1naUtycBNllvqW5y6Q
+
+荒漠中发现神秘巨型金属，网友开始光速破案
+
+https://mp.weixin.qq.com/s/mtoEnRf7kad4JRcZ-qY40A
+
+你的人生写照：桥刚修好，河就逃了
+
+https://mp.weixin.qq.com/s/nMhE_397rZX-_7bq0Roq4Q
+
+世界上最没用的桥！他们刚在河上修好一座桥，台风就来了，结果河流被吹到了桥的外面......
+
+https://mp.weixin.qq.com/s/v79QDol1ulEzllqK3niLnw
+
+这个时代，属于海洋！
+
+https://mp.weixin.qq.com/s/6hJ00no0EScCjYHIIauZ7A
+
+让我们也去看看，青藏高原的雪
+
 https://mp.weixin.qq.com/s/V-YrYmDxkxj-yIzd60HjAQ
 
 却忧明月潜生祸，极地甲烷起风波

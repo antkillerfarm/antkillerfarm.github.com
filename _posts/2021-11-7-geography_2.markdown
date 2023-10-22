@@ -107,6 +107,12 @@ https://www.zhihu.com/question/52529145
 
 到了东汉，由于黄河的河道不断下切，导致黄河水位也随之不断降低，原来紧贴着原体的河道就会裸露出来，形成河滩。而这个河滩就让函谷关的天险不复存在。
 
+![](/images/img5/TongGuan.png)
+
+黄河河道，以前很宽，但是，由于泥沙堆积，河道没有以前那样宽了，陆地向北延伸，在以前，汉潼关就位于黄河边，在河滨还有港口，至隋唐时期，汉潼关竟然成为内陆，于是，武则天时期，在新出现的河边，又修建了唐潼关。
+
+唐末黄巢起义，进攻潼关，攻打不下，他派人四处打探，发现汉潼关的通道，此时，汉潼关荒废已久，唐末唐军散乱，并未派兵防守这条通道。黄巢派军，取此道，绕到潼关身后，与关前人马，夹攻潼关，最终攻破，之后，长驱直入，占领长安，唐僖宗逃到西川。
+
 https://www.sohu.com/a/307458694_100251802
 
 为何大名鼎鼎的函谷关会被潼关所取代? 看完就明白了
@@ -200,27 +206,3 @@ https://mp.weixin.qq.com/s/YY7JfNxDzcNuku73HYxE8A
 https://mp.weixin.qq.com/s/5jH_PH5SfsmR_i-SWCavJA
 
 这只猫居然2000多岁了，古代的猫奴这么疯狂的吗？居然用它做那种事……（纳斯卡地画）
-
-https://mp.weixin.qq.com/s/28lFYHm_dd9jQdO-MwbmWw
-
-超前的思想，迟到的荣誉（Alfred Lothar Wegener）
-
-https://mp.weixin.qq.com/s/ABYf1naUtycBNllvqW5y6Q
-
-荒漠中发现神秘巨型金属，网友开始光速破案
-
-https://mp.weixin.qq.com/s/mtoEnRf7kad4JRcZ-qY40A
-
-你的人生写照：桥刚修好，河就逃了
-
-https://mp.weixin.qq.com/s/nMhE_397rZX-_7bq0Roq4Q
-
-世界上最没用的桥！他们刚在河上修好一座桥，台风就来了，结果河流被吹到了桥的外面......
-
-https://mp.weixin.qq.com/s/v79QDol1ulEzllqK3niLnw
-
-这个时代，属于海洋！
-
-https://mp.weixin.qq.com/s/6hJ00no0EScCjYHIIauZ7A
-
-让我们也去看看，青藏高原的雪
