@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争（二十三）——无官不贪（4）
+title:  俄乌战争（二十三）——无官不贪（3）
 category: Russo Ukrainian War 
 ---
 

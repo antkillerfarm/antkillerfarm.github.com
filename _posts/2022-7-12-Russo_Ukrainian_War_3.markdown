@@ -244,27 +244,3 @@ https://zhuanlan.zhihu.com/p/596061706
 https://www.163.com/dy/article/HSIEASEJ0553BD4L.html
 
 泽连斯基变“自由男神”，爱沙尼亚在自由公园内塑造其沙雕像
-
-https://zhuanlan.zhihu.com/p/609235767
-
-光荣属于乌克兰 泽林斯基纪念乌克兰战争一周年演讲
-
-https://zhuanlan.zhihu.com/p/609435468
-
-泽连斯基在开战一周年的演讲（中英对照）
-
-https://zhuanlan.zhihu.com/p/627798430
-
-乌克兰总统发表二战胜利日演讲：我们不会忘记帮助我们的朋友
-
-https://zhuanlan.zhihu.com/p/633781402
-
-乌克兰总统发表国际儿童节演讲
-
-https://zhuanlan.zhihu.com/p/652190990
-
-“乌克兰人民不会放手”——泽连斯基在乌克兰独立日的两篇演讲
-
-https://zhuanlan.zhihu.com/p/657433214
-
-乌克兰总统弗拉基米尔·泽连斯基阁下在联合国大会第78届会议上的讲话（2023年9月19日）

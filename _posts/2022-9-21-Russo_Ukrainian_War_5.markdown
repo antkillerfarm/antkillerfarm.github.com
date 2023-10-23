@@ -11,6 +11,24 @@ category: Russo Ukrainian War
 
 ## 人物（续）
 
+https://zhuanlan.zhihu.com/p/479754619
+
+俄罗斯当代军神斯特列科夫
+
+https://www.zhihu.com/question/557586862
+
+俄国高层为什么把斯特列科夫雪藏?
+
+https://zhuanlan.zhihu.com/p/589762420
+
+斯特列尔科夫“非法”从军记
+
+https://www.zhihu.com/question/613330847
+
+俄罗斯一代名将吉尔金因为直言敢谏被奸臣陷害被捕，他忠君报国的悲剧一生如何评价？
+
+---
+
 Private Military Company / Contractor（PMC），即私营军事公司/承包商，一般合法运营，主要是从政府手中承担一些不愿意干或者不具备能力干的业务，比如大名鼎鼎的黑水公司，就是这样的一家PMC。
 
 德纳尔被俘之后，接受了法国的军事审判。几乎所有人都以为他会因此受到惩罚，然而却并非如此。直到此时，大家这才恍然大悟，原来德纳尔与法国政府的关系并非表面看上去的样子，德纳尔就像是法国在殖民地的影子一样。在德纳尔死的时候，法国悲伤地认为“法国第一雇佣兵死了”。
@@ -160,27 +178,3 @@ I stand with Russia, the Russia of the Russian people, not the Russia of Vladimi
 本来想吞并乌克兰触发“重建沙皇俄国”事件拿成就，没想到拖太久，导致莫斯科公国厌战太高，低稳定爆林登万，触发“俄罗斯自由军团”事件，如果林登万占领别尔哥罗德，可能触发“公投独立”事件，新成立国家自动成为乌克兰附庸。最后没准乌克兰会拿到东斯拉夫地区全部宣称。
 
 白蓝白发言人说，他们是响应别尔哥罗德居民的要求，才在别尔哥罗德进行维和任务。
-
-https://www.zhihu.com/question/602399410
-
-当地时间2023年5月22日俄罗斯自由军攻入俄别尔哥罗德地区，扬言建立别尔哥罗德人民共和国，是侵略吗？
-
-https://www.zhihu.com/question/602439506
-
-俄方称一支乌军部队攻入俄罗斯境内，具体情况如何？将对俄乌局势产生哪些影响？
-
-https://www.163.com/dy/article/HTI55UV40553DFTR.html?spss=adap_pc
-
-我来对抗普京 俄罗斯自由军团在乌克兰
-
-https://zhuanlan.zhihu.com/p/634644722
-
-解救俘虏 别尔哥罗德总督忍辱负重与俄罗斯志愿军谈判
-
-https://zhuanlan.zhihu.com/p/635189526
-
-别尔哥罗德悲剧 俄罗斯普斯科夫联队被乌克兰军团击溃
-
-https://www.zhihu.com/question/605443737
-
-两蹶名将、罗斯震动
