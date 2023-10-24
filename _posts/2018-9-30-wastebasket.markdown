@@ -243,6 +243,18 @@ https://github.com/iiordanov/remote-desktop-clients/issues/39
 
 ---
 
+大约20年前，号称自主研发的麒麟操作系统面世。
+
+有一个叫dancefire的大神，创造性的发明一种办法来分析各种操作系统内核在二进制上相似性。大神的真迹叫《麒麟操作系统内核同其他操作系统内核的相似性分析》。
+
+当时事情闹得挺大，甚至freebsd自己的源代码网站SourceForge都一度被封，但这个事最终不了了之。
+
+https://my.oschina.net/chipo/blog/5161697
+
+麒麟操作系统内核同其他操作系统内核的相似性分析
+
+---
+
 https://mp.weixin.qq.com/s/1dlOCpoJiCkh55WDAajLuw
 
 内卷、找关系、作弊、丑闻-美国富人的名校之梦

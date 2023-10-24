@@ -340,6 +340,16 @@ https://zhuanlan.zhihu.com/p/152314451
 
 hook技术
 
+## Pytorch Dispatcher
+
+https://zhuanlan.zhihu.com/p/376495783
+
+聊聊Pytorch Dispatcher
+
+https://zhuanlan.zhihu.com/p/386876377
+
+Pytorch中dispatch机制及其实现
+
 ## 参考
 
 https://mp.weixin.qq.com/s/zhkaenFdnB5KgaEYb-XDEQ
