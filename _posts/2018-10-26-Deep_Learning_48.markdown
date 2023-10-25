@@ -195,6 +195,18 @@ Facebook’s Faiss
 
 HNSW（Hierarchical Navigable Small World graphs）
 
+---
+
+向量搜索在搜索、推荐、NLP等众多应用领域被广泛的使用，典型的互联网业务，包括电商、出行、点评、地图等都大量使用相关技术。随着ChatGPT带来的AI技术应用新热潮，向量数据库又一次地获得了更多的关注。它可以解决LLM不长记性（Memory，记忆）的问题。
+
+普遍认为 LLM + Vector Search + API pool 会变成复杂AI场景的标准解决方案。
+
+https://www.zhihu.com/question/603117242
+
+为什么各大VC最近都在投向量数据库？
+
+---
+
 https://zhuanlan.zhihu.com/p/78561555
 
 KNN的实现方式有哪些？
@@ -340,23 +352,3 @@ https://mp.weixin.qq.com/s/kS-FPeuz0nMN2YvbwAjbIw
 https://mp.weixin.qq.com/s/4UBehc0eikVqcsFP7xL_Zw
 
 京东电商搜索中的语义检索与商品排序
-
-https://mp.weixin.qq.com/s/8lRzE5nGCNfD6sQ0lDRDyg
-
-信息检索中的神经匹配和重要性学习，163页pdf
-
-https://mp.weixin.qq.com/s/jZCHyjhTW9JHW3xQSTzyYA
-
-深度学习搜索，Deep Learning for Search，327页pdf
-
-https://mp.weixin.qq.com/s/aZsj1FQnzHOr-YBcy_ljpw
-
-DNN在搜索场景中的应用
-
-https://mp.weixin.qq.com/s/1jgdI-Pt0PtN3oAs0Wh4XA
-
-阿里提出电商搜索全局排序方法，淘宝无线主搜GMV提升5%
-
-https://mp.weixin.qq.com/s/9Fcj5lO-JPfFVnRSSM_56w
-
-深度学习在美团搜索广告排序的应用实践

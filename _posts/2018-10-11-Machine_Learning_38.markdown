@@ -241,6 +241,10 @@ https://mp.weixin.qq.com/s/xeRBLkJTUs5wx2hZjyYeeQ
 
 那些年“号称”要超越Adam的优化器
 
+https://zhuanlan.zhihu.com/p/61304430
+
+76分钟训练BERT！谷歌大脑新型优化器LAMB加速大批量训练
+
 # 时间序列分析
 
 https://www.kaggle.com/thebrownviking20/everything-you-can-do-with-a-time-series/notebook
@@ -354,7 +358,3 @@ https://mp.weixin.qq.com/s/OrCWlhfiJuOuc-0GChVWow
 ---
 
 从战前的“合作无上限”，到开战后的“中立”，再到“合作无上限，中国有底线”，然后“不要恶意绑架中俄”，直至“美西方势力和亲俄网络账号是同一类人”。。。
-
----
-
-感觉这是要上演循环了，瓦格纳到监狱的无限循环，先当逃兵进监狱，然后瓦格纳再到监狱招募志愿兵，再当逃兵，瓦格纳再到监狱招募志愿兵.....这是循环了！

@@ -11,6 +11,14 @@ category: Russo Ukrainian War
 
 ## 人物（续）
 
+https://zhuanlan.zhihu.com/p/596061706
+
+泽连斯基的新年祝福（中英对照）
+
+https://www.163.com/dy/article/HSIEASEJ0553BD4L.html
+
+泽连斯基变“自由男神”，爱沙尼亚在自由公园内塑造其沙雕像
+
 https://zhuanlan.zhihu.com/p/609235767
 
 光荣属于乌克兰 泽林斯基纪念乌克兰战争一周年演讲

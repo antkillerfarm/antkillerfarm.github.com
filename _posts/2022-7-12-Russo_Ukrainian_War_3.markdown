@@ -11,6 +11,20 @@ category: Russo Ukrainian War
 
 ## 人物（续）
 
+https://zhuanlan.zhihu.com/p/564591728
+
+泽连斯基，一个演员到总统的“无缝连接”
+
+https://www.bilibili.com/video/BV1Gr4y1672i
+
+钢琴演奏大师泽连斯基
+
+https://www.zhihu.com/question/587586045
+
+一听到枪响就屁滚尿流的小演员（泽连斯基参演影片片段）
+
+---
+
 巴拉斯回忆他第一次见到拿破仑，“那是一个畏畏缩缩拘谨的年轻人，他穿着可笑，头发乱糟糟的，根本不属于上流社会，几乎什么都不懂，什么都要向我请教，巴望着我给他向上爬的机会。”
 
 德拉克勒斯回忆第一次见到希特勒，“他是一个可笑的穷光蛋，几乎一无所有，没什么值得说的地方。”
@@ -236,11 +250,3 @@ https://zhuanlan.zhihu.com/p/593952619
 https://zhuanlan.zhihu.com/p/595906989
 
 泽连斯基的新年致辞全文
-
-https://zhuanlan.zhihu.com/p/596061706
-
-泽连斯基的新年祝福（中英对照）
-
-https://www.163.com/dy/article/HSIEASEJ0553BD4L.html
-
-泽连斯基变“自由男神”，爱沙尼亚在自由公园内塑造其沙雕像

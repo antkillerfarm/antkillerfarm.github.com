@@ -81,6 +81,12 @@ http://www.aptchina.com/zhuanli/3684478/
 
 一般来说，网络协议就是一层层的组帧和解帧的过程。因此比较帧头的差异，无疑是个建立感性认识的好方法。上图就是IPv6和IPv4在帧头方面的区别。
 
+---
+
+192开头的除了192.168其余都是外网。
+
+---
+
 参考：
 
 https://mp.weixin.qq.com/s/_-KrxPywEahojmA7_9ojKw

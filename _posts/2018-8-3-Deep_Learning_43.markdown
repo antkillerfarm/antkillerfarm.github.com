@@ -97,6 +97,26 @@ multiplier改变$$O_c$$，但不改变$$K_o$$，计算量不变，IO增加N倍�
 
 # 深度信息检索+
 
+https://mp.weixin.qq.com/s/8lRzE5nGCNfD6sQ0lDRDyg
+
+信息检索中的神经匹配和重要性学习，163页pdf
+
+https://mp.weixin.qq.com/s/jZCHyjhTW9JHW3xQSTzyYA
+
+深度学习搜索，Deep Learning for Search，327页pdf
+
+https://mp.weixin.qq.com/s/aZsj1FQnzHOr-YBcy_ljpw
+
+DNN在搜索场景中的应用
+
+https://mp.weixin.qq.com/s/1jgdI-Pt0PtN3oAs0Wh4XA
+
+阿里提出电商搜索全局排序方法，淘宝无线主搜GMV提升5%
+
+https://mp.weixin.qq.com/s/9Fcj5lO-JPfFVnRSSM_56w
+
+深度学习在美团搜索广告排序的应用实践
+
 https://mp.weixin.qq.com/s/N3JBHlqneG9dI0I26M3wHQ
 
 如何做好大规模视觉搜索？eBay基于实践总结出了7条建议

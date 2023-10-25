@@ -311,7 +311,7 @@ GPU core和NV Switch如果都实现了NVLink协议的话，则它们之间可以
 其实也就对应了nvlink的多种形态
 
 - nvlink c2c
-- nvlink
+- nvlink switch
 - nvlink bridge
 - nvlink network
 

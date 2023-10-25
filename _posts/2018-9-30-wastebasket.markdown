@@ -39,7 +39,7 @@ https://zhuanlan.zhihu.com/p/37801456
 
 科学家有了钱以后真是挺吓人的！看看DE.Shaw的牛逼人生
 
-# 真垃圾筐
+---
 
 主流发达国家教职体系，PI（Principal Investigator）制：助理教授（Assistant Professor，AP）->副教授（Associate Professor）->教授（Full Professor->讲席教授（Chair Professor）
 
@@ -75,7 +75,11 @@ https://zhuanlan.zhihu.com/p/56874296
 
 我的劝退之总结篇
 
----
+https://www.zhihu.com/question/627499717
+
+中国大陆发第一篇计算机顶会的人都怎么样了？
+
+# 真垃圾筐
 
 科大黄秋原、同济沈海英、交大钱璐璐、复旦李敏、中科大陈璐，由于手段极其高级，所以现在被网友称为“学术圈妲己”。
 
@@ -286,11 +290,3 @@ https://www.zhihu.com/answer/692061772
 https://www.zhihu.com/question/503354095
 
 如何看待复旦大学毕业生最后一科考试被举报作弊，取消学位证、毕业证以及研究生资格，后起诉母校？
-
-https://k.sina.com.cn/article_7517400647_1c0126e4705901sdfc.html
-
-北大博士梅桢再上热搜，被爆高考400分，又一位“外籍”投机者？
-
-https://zhuanlan.zhihu.com/p/659727597
-
-哈佛天才教授为了“4块钱”丢掉了终身教授职位！
