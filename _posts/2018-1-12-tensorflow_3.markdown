@@ -7,6 +7,38 @@ category: DL Framework
 * toc
 {:toc}
 
+# Slim
+
+代码：
+
+tensorflow/contrib/slim
+
+示例：
+
+https://github.com/mnuke/tf-slim-mnist
+
+参见：
+
+http://geek.csdn.net/news/detail/126133
+
+如何用TensorFlow和TF-Slim实现图像分类与分割
+
+实战心得：
+
+tf-slim-mnist例子中mnist数据不是原始格式的，而是经过了`datasets/download_and_convert_mnist.py`的转换。
+
+该示例执行时也没有控制台的输出信息，一度让我觉得很不方便。后来才发现，原来可以用TensorBoard查看log文件夹。
+
+# Hama
+
+TensorFlow实际上是Google开发的第二代DL框架。在它之前，Google内部还有一个叫做DistBelief的框架。这个框架没有开源，但是有论文发表。因此，就有了一个叫做Apache Hama的项目，作为它的开源实现。
+
+官网：
+
+https://hama.apache.org/
+
+这个项目采用了一种叫做Bulk Synchronous Parallel的并行计算模型。
+
 # Estimator
 
 ![](/images/img2/tensorflow_programming_environment.png)
@@ -330,25 +362,3 @@ TensorFlow Serving模型更新毛刺的完全优化实践
 https://mp.weixin.qq.com/s/GoaePWnq3OtU4hNatbIJ5A
 
 丰富TF Serving生态，爱奇艺开源灵活高性能的推理系统XGBoost Serving
-
-# op的C++实现
-
-有的时候为了将Tensorflow的op移植到其他平台，需要找到相应op的cpu实现。比如space_to_batch这个op，它的实现在：
-
-core/kernels/spacetobatch_op.cc
-
-简单的op一般找到这里就可以了，但space_to_batch还要更深一层：
-
-core/kernels/spacetobatch_functor.cc
-
-一般XXX_impl.cc或者XXX_functor.cc才是op实现真正所在的位置。
-
-kernel的注册，一般在：
-
-tensorflow/core/ops
-
-此外，TFlite的实现往往更加简单：
-
-tensorflow/contrib/lite/kernels/internal/reference/reference_ops.h
-
-注册一个tfop分为两部分:Op和OpKernel。其中，Op是tfop的声明部分，类似于函数的声明，主要描述Op静态属性。OpKernel是tfop的实现部分，同样类似于函数的实现，主要描述OpKernel的具体计算逻辑。

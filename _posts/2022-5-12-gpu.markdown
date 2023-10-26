@@ -289,7 +289,7 @@ UCX是一个建立在RDMA等技术之上的用于数据处理和高性能计算�
 
 OpenUCX是UCX的一个开源实现。
 
-![](../images/img5/RDMA.jpg)
+![](/images/img5/RDMA.jpg)
 
 RDMA包含Infiniband（IB），RDMA over Converged Ethernet（RoCE）和internet Wide Area RDMA Protocol（iWARP）。三种协议都符合RDMA标准，使用相同的上层接口，在不同层次上有一些差别。
 

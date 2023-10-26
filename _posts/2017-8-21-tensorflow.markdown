@@ -282,6 +282,22 @@ import tensorflow as tf
 
 这个方法的缺点是：需要修改app脚本。
 
+# 离线编译
+
+如果机器无法联网的话，可以采用离线编译的办法：只需将外网已经成功编译好的环境的bazel cache拷到目标设备上即可。
+
+bazel cache路径：
+
+`~/.cache/bazel/_bazel_<user name>/<hash>/external`
+
+这里的hash每台机器都不同，可根据出错信息确定目标设备的hash。
+
+cache里的符号链接也需要做替换，可参考如下脚本：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/misc/ch_soft_link.py
+
+rules_docker.git是一个特殊的库。由于TF是沙盒编译，虽然同一用户共享bazel cache，但是不同的TF代码实例（比如我们想在同一个设备上编两份TF源码）所用的沙盒是不一样的，可以从旧的好沙盒中复制rules_docker到新的沙盒中。
+
 # 基本概念
 
 **Variables**：维持计算图执行过程中的状态信息的变量。一般来说，这就是神经网络的参数。
@@ -311,27 +327,3 @@ Placeholders在图的执行过程中，需要由真实的tensor填充之：
 流水线有了，还要有被加工的数据。数据在流水线上被加工的执行过程，被称为**Session**。
 
 Graph和Session的关系，类似于类和对象的关系。Session是Graph的动态实例。
-
-图计算的大致步骤如下：（这里以OpenVX函数为例，因为它更接近底层和硬件。）
-
-1.vxCreateGraph。创建计算图。
-
-2.vxProcessGraph。运行计算图。
-
-在大多数Tensorflow示例中，你看不到Graph的身影。但它并不是不存在，而是默认所有新加入的Operation都添加到默认的Graph。
-
-以下是使用多个Graph的示例：
-
-```python
-import tensorflow as tf
-g1 = tf.Graph()
-with g1.as_default():
-    c1 = tf.constant([1.0])
-with tf.Graph().as_default() as g2:
-    c2 = tf.constant([2.0])
-
-with tf.Session(graph=g1) as sess1:
-    print sess1.run(c1)
-with tf.Session(graph=g2) as sess2:
-    print sess2.run(c2)
-```

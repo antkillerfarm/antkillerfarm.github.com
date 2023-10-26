@@ -153,6 +153,10 @@ https://zhuanlan.zhihu.com/p/608495853
 
 ChatGPT火爆，最全prompt工程指南登GitHub热榜
 
+https://zhuanlan.zhihu.com/p/663182483
+
+快速入门Prompt
+
 ---
 
 ![](/images/img5/Prompt-Tuning.png)

@@ -250,3 +250,7 @@ https://zhuanlan.zhihu.com/p/662523285
 https://zhuanlan.zhihu.com/p/662610660
 
 俄军契而不舍围攻阿夫迪夫卡
+
+https://zhuanlan.zhihu.com/p/663373780
+
+鹅の阿夫迪夫卡（矿山）大捷

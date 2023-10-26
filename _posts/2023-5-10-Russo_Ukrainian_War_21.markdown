@@ -152,3 +152,7 @@ https://zhuanlan.zhihu.com/p/641486160
 https://zhuanlan.zhihu.com/p/650515320
 
 浅谈乌萝第十军
+
+https://zhuanlan.zhihu.com/p/661875360
+
+陆战之王变身铁帽子王！坦克炮塔上的铁笼子作用真有那么大吗？为何俄罗斯、以色列的坦克都对其青睐有加

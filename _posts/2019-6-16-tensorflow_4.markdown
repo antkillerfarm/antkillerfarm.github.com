@@ -9,6 +9,28 @@ category: DL Framework
 
 # Debug
 
+# op的C++实现
+
+有的时候为了将Tensorflow的op移植到其他平台，需要找到相应op的cpu实现。比如space_to_batch这个op，它的实现在：
+
+core/kernels/spacetobatch_op.cc
+
+简单的op一般找到这里就可以了，但space_to_batch还要更深一层：
+
+core/kernels/spacetobatch_functor.cc
+
+一般XXX_impl.cc或者XXX_functor.cc才是op实现真正所在的位置。
+
+kernel的注册，一般在：
+
+tensorflow/core/ops
+
+此外，TFlite的实现往往更加简单：
+
+tensorflow/contrib/lite/kernels/internal/reference/reference_ops.h
+
+注册一个tfop分为两部分:Op和OpKernel。其中，Op是tfop的声明部分，类似于函数的声明，主要描述Op静态属性。OpKernel是tfop的实现部分，同样类似于函数的实现，主要描述OpKernel的具体计算逻辑。
+
 ## VS Code + gdb
 
 - 设置python
@@ -297,103 +319,6 @@ https://zhuanlan.zhihu.com/p/357191706
 
 使用Graphcore PopVision分析工具优化AI性能
 
-# op Backprop
-
-## compute_gradients & apply_gradients
-
-由源代码可以知道`optimizer.minimize`实际上包含了两个步骤，即`compute_gradients`和`apply_gradients`，前者用于计算梯度，后者用于使用计算得到的梯度来更新对应的variable。
-
-如果想要部分更新某个Variable的话，可用如下步骤：
-
-1.生成需要更新的元素的mask tensor。1代表要更新，0代表不更新。
-
-2.`compute_gradients`得到grad tensor。
-
-3.`grad = grad * mask`
-
-4.`apply_gradients`。
-
-通常来说，如果一个计算图中没有optimizer，则一般只包含forward运算，而没有backward运算。
-
-## Add
-
-```cpp
-//forward
-REGISTER3(BinaryOp, GPU, "AddV2", functor::add, float, Eigen::half, double);
-tensorflow/core/kernels/cwise_ops_common.h: BinaryOp
-
-//backward
-tensorflow/python/ops/math_grad.py:
-@ops.RegisterGradient("AddV2")
-def _AddGrad(op, grad):
-tensorflow/core/ops/math_grad.cc:
-REGISTER_OP_GRADIENT("AddV2", AddGrad);
-
-//RegisterGradient
-tensorflow/python/framework/ops.py:
-class RegisterGradient(object):
-```
-
-Gradient有两种处理方式：（tensorflow/python/ops/gradients_util.py: _GradientsHelper）
-
-- 有RegisterGradient的op，直接调用注册的函数。
-
-- 没有的，调用SymbolicGradient。
-
-参考：
-
-https://www.zhihu.com/question/56443480
-
-TensorFlow的自动求导具体是在哪部分代码里实现的？
-
-## Conv
-
-```cpp
-tensorflow/cc/gradients/nn_grad.cc:
-REGISTER_GRADIENT_OP("Conv2D", Conv2DGrad);
-
-tensorflow/python/ops/nn_grad.py:
-@ops.RegisterGradient("Conv2DBackpropInput")
-def _Conv2DBackpropInputGrad(op, grad):
-
-@ops.RegisterGradient("Conv2DBackpropFilter")
-def _Conv2DBackpropFilterGrad(op, grad):
-```
-
-Conv2D的Backprop操作可分为两部分：
-
-- Conv2DBackpropInput负责计算上一层的梯度，也就是所谓的in_grad。
-
-- Conv2DBackpropFilter负责计算Kernel的梯度。（似乎没有计算bias梯度）
-
-```cpp
-// BP input
-// tensorflow source code:
-tensorflow/core/kernels/conv_grad_input_ops.cc: LaunchConv2DBackpropInputOp
-tensorflow/core/kernels/conv_grad_input_ops.h: LaunchConv2DBackpropInputOpImpl
-tensorflow/core/kernels/eigen_backward_spatial_convolutions.h: Eigen::SpatialConvolutionBackwardInput
-// eigen source code:
-unsupported/Eigen/CXX11/src/Tensor/TensorBase.h: TensorBase::contract()
-unsupported/Eigen/CXX11/src/Tensor/TensorContraction.h: evalGemmPartial
-unsupported/Eigen/CXX11/src/Tensor/TensorContraction.h: TensorContractionKernel
-Eigen/src/Core/products/GeneralBlockPanelKernel.h: gebp_kernel::operator()
-
-// BP filter
-// tensorflow source code:
-tensorflow/core/kernels/conv_grad_filter_ops.cc: LaunchConv2DBackpropFilterOp
-tensorflow/core/kernels/eigen_backward_spatial_convolutions.h: Eigen::SpatialConvolutionBackwardKernel
-// eigen source code:
-unsupported/Eigen/CXX11/src/Tensor/TensorBase.h: TensorBase::contract()
-```
-
-以上是CPU计算BP的调用路径，要点如下：
-
-- 无论是计算BP input，还是BP filter，最终都会转换成GEMM运算。
-
-- GEMM运算会调用TensorContractionKernel。
-
-Tensor contraction是一种Tensor运算，参见《线性代数（一）》中的“张量分析”一节。
-
 # 内存布局
 
 Tensorflow和Caffe的内存布局存在较大差异，这是两者模型转换时，最常遇到的问题。一般认为，Caffe的内存布局对卷积硬件加速更友好一些。
@@ -402,3 +327,91 @@ Tensorflow和Caffe的内存布局存在较大差异，这是两者模型转换�
 |:--:|:--:|:--:|
 | Tensor | NHWC | NCHW |
 | Weight | HWIO | OIHW |
+
+# 我的TensorFlow实践
+
+## MNIST+Softmax
+
+代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_mnist.py
+
+## MNIST+CNN
+
+代码：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tensorflow/hello_cnn.py
+
+第一个例子中，我对CPU的计算能力还没有切肤之痛，但在这里使用CPU差不多要花半个小时时间。。。
+
+# TensorFlow.js
+
+https://mp.weixin.qq.com/s/dqMS4NjmNYs7IFHm8uFM8w
+
+TensorFlow发布面向JavaScript开发者的机器学习框架TensorFlow.js
+
+https://zhuanlan.zhihu.com/p/35181413
+
+TensorFlow.js人脸识别—玩转吃豆豆小游戏
+
+https://mp.weixin.qq.com/s/ebLHZAG8H78TsZUKSzAtIw
+
+TF官方博客：基于TensorFlow.js框架的浏览器实时姿态估计
+
+https://mp.weixin.qq.com/s/z6p4A4DfCuK8IBGVGwrtLQ
+
+如何利用TensorFlow.js部署简单的AI版“你画我猜”图像识别应用
+
+https://mp.weixin.qq.com/s/NO_XY-JmTpIkoC-fpkZ-qg
+
+在浏览器上也能训练神经网络？TensorFlow.js带你玩游戏~
+
+https://mp.weixin.qq.com/s/vjpMr3TsF3Lui8Q0IstQxw
+
+浏览器上跑：TensorFlow发布实时人物分割模型，秒速25帧，24个部位
+
+https://mp.weixin.qq.com/s/-BblgnvPLuqpYM8PZ7PQCQ
+
+三行代码实时追踪你的手，只要有浏览器就够了
+
+https://mp.weixin.qq.com/s/C7QdVathJ8YTXF-zXPC-Ow
+
+有人分析了7个基于JS语言的DL框架，发现还有很长的路要走
+
+# TensorFlow Probability
+
+TensorFlow Probability是一个概率编程工具包。
+
+官网：
+
+https://tensorflow.google.cn/probability/
+
+参考：
+
+https://mp.weixin.qq.com/s/NPuYanaUnaX4mYbaNbNNSQ
+
+概率编程工具：TensorFlow Probability官方简介
+
+https://mp.weixin.qq.com/s/cV-5W4YWC9f9wsoNX5fIXA
+
+使用TensorFlow Probability对金融模型中的误差进行介绍性分析
+
+https://mp.weixin.qq.com/s/cxC3SarlBBPTwIxQZ4AG_g
+
+快速上手TensorFlow Probability内置概率编程教材
+
+https://mp.weixin.qq.com/s/T0TsS8YwyCbCjt4J-xonOw
+
+使用TensorFlow Probability Layers的变分自编码器
+
+https://mp.weixin.qq.com/s/6l-NS0NbYK44JS0jnRl82w
+
+使用TensorFlow Probability的概率层执行回归
+
+https://mp.weixin.qq.com/s/2cbd7LBPBRqGt-QO1A7SfQ
+
+在TensorFlow Probability中对结构时间序列建模
+
+https://mp.weixin.qq.com/s/7CjLP5SYpQ-hoC1jwxT1vQ
+
+TensorFlow Probability中的联合分布变分推断

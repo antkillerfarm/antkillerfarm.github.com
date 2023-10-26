@@ -141,6 +141,12 @@ https://mp.weixin.qq.com/s/YxfuqVdWsteW7P3rNkhYNQ
 
 追踪溯源发现问题了，原来火箭的发动机是由航天六院负责研发与设计的。。。
 
+中国船舶重工集团公司第七O二研究所水下工程研究开发部职工，蛟龙号载人潜水器首席装配钳工技师。
+
+蛟龙深海载人潜水器十几万个零部件，难度最大就是装配后密封性，能达到丝级精度的只有顾秋亮一人。就这么个人，如果他是在德国，前途辉煌那是必然。
+
+但在这个地方，女儿上学他拿不出学费；听说妻子患癌只能抱头痛哭（幸好误诊）；居住在30平的破烂房里蹉跎半生；行行出状元，这些行业状元干到了头，可人生变美好了吗？
+
 https://news.qq.com/a/20180927/005739.htm
 
 离职能直接影响中国登月的人才，只配待在国企底层？
@@ -214,15 +220,3 @@ https://mp.weixin.qq.com/s/x9GzFnl_y5dei4WFwfxxtA
 https://mp.weixin.qq.com/s/RfcxEo4ox86W1u-MoGXFzQ
 
 “嫦娥” 回来了！一文回顾嫦娥五号探月之旅
-
-https://mp.weixin.qq.com/s/TiSNWwmP3_adWmzc53CaXA
-
-1731克月壤的最全科普
-
-https://www.zhihu.com/question/457042825
-
-中国首个空间站天和核心舱4月29日发射成功，对中国航天有哪些重要意义？
-
-https://mp.weixin.qq.com/s/ZFjtgtjW0TmykjQnynmIFg
-
-“天和”出征！中国空间站开启“下饺子”模式，两年11次密集发射，3次舱段、4次货运、4次载人发射

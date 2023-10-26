@@ -9,6 +9,30 @@ category: DL Framework
 
 # 图计算（续）
 
+图计算的大致步骤如下：（这里以OpenVX函数为例，因为它更接近底层和硬件。）
+
+1.vxCreateGraph。创建计算图。
+
+2.vxProcessGraph。运行计算图。
+
+在大多数Tensorflow示例中，你看不到Graph的身影。但它并不是不存在，而是默认所有新加入的Operation都添加到默认的Graph。
+
+以下是使用多个Graph的示例：
+
+```python
+import tensorflow as tf
+g1 = tf.Graph()
+with g1.as_default():
+    c1 = tf.constant([1.0])
+with tf.Graph().as_default() as g2:
+    c2 = tf.constant([2.0])
+
+with tf.Session(graph=g1) as sess1:
+    print sess1.run(c1)
+with tf.Session(graph=g2) as sess2:
+    print sess2.run(c2)
+```
+
 Tensorflow对计算图的简化，不仅在于使用默认的Graph。还在于可以只计算部分的Graph。部分Graph，也被称作Sub Graph。
 
 以上面的softmax运算为例，如果`sess.run(add)`的话，后面的ReLU和softmax运算都不会被执行。
@@ -315,35 +339,3 @@ https://github.com/deepmind/sonnet
 http://www.infoq.com/cn/articles/introduction-of-tensorflow-part06
 
 深入浅出TensorFlow（六）TensorFlow高层封装
-
-# Slim
-
-代码：
-
-tensorflow/contrib/slim
-
-示例：
-
-https://github.com/mnuke/tf-slim-mnist
-
-参见：
-
-http://geek.csdn.net/news/detail/126133
-
-如何用TensorFlow和TF-Slim实现图像分类与分割
-
-实战心得：
-
-tf-slim-mnist例子中mnist数据不是原始格式的，而是经过了`datasets/download_and_convert_mnist.py`的转换。
-
-该示例执行时也没有控制台的输出信息，一度让我觉得很不方便。后来才发现，原来可以用TensorBoard查看log文件夹。
-
-# Hama
-
-TensorFlow实际上是Google开发的第二代DL框架。在它之前，Google内部还有一个叫做DistBelief的框架。这个框架没有开源，但是有论文发表。因此，就有了一个叫做Apache Hama的项目，作为它的开源实现。
-
-官网：
-
-https://hama.apache.org/
-
-这个项目采用了一种叫做Bulk Synchronous Parallel的并行计算模型。

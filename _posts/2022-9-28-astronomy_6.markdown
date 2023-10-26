@@ -9,6 +9,20 @@ category: Nature
 
 # 天文杂谈
 
+恩克彗星是人们发现的第一颗短周期彗星，至今也还没有找到过周期比它更短的彗星。恩克用6个星期的时间，计算出这颗彗星的轨道，周期为3.3年，并且预言1822年5月24日再回到近日点，果然它准时回来了，成为继哈雷彗星之后，第二颗按预言回归的彗星。
+
+>Johann Franz Encke，1791～1865，德国天文学家。University of Göttingen毕业，导师Gauss。1825年担任柏林天文台台长。Leopold Kronecker的导师。他还发现了土星环的Encke Gap。
+
+---
+
+1929年，余青松接任天文研究所第二任所长后，秉承高鲁的宏愿，费时五载，于公元1935年，建立紫金山天文台。1938年因抗日战争，他主持该台的内迁工作，并在昆明东郊建成了昆明凤凰山天文台。
+
+https://mp.weixin.qq.com/s/vMe5RmD8uBW3AeGDYwbI5A
+
+紫金山天文台的创立（高鲁、余青松）
+
+---
+
 https://view.inews.qq.com/wxn/20211224A03SC600
 
 韦伯望远镜即将发射！梭哈百亿美元上天，是为了看啥？
@@ -242,23 +256,3 @@ https://mp.weixin.qq.com/s/yCmwX5srpmhYrbAkFbC-gQ
 https://mp.weixin.qq.com/s/Qld7bVs9ASJ23vAhE0h7_w
 
 日月星辰如何指引着中国人前行？（中国古代天文学）
-
-https://cooltowel.github.io/2018/04/16/%E5%9B%BD%E9%99%85%E5%A4%A9%E7%90%83%E5%8F%82%E8%80%83%E7%B3%BB%E7%BB%9F%E2%80%94%E2%80%94ICRS%20%E7%AE%80%E4%BB%8B/
-
-国际天球参考系统——ICRS简介
-
-https://mp.weixin.qq.com/s/hBAWo8Zsgjm0svYv_UG1jw
-
-一场历经数百万年的瘦身记
-
-https://mp.weixin.qq.com/s/REzPDwfZbqz-RneOZZmvUQ
-
-青海火球事件——“肇事者”身份调查
-
-https://mp.weixin.qq.com/s/NKzv2VpVDaJ_gSDl_L7FHA
-
-太阳，我们来了！
-
-https://mp.weixin.qq.com/s/lHc8w6wn3Tm6ZD5PPw0TFQ
-
-宇宙7问
