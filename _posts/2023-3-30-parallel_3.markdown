@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（四）——参考资料
+title:  并行 & 框架 & 优化（四）——LoRA, 参考资料
 category: DL acceleration 
 ---
 
@@ -86,6 +86,22 @@ https://zhuanlan.zhihu.com/p/485208899
 ![](/images/img5/Model_Parallel.jpg)
 
 ![](/images/img5/Model_Parallel.png)
+
+## KV Cache
+
+![](/images/img5/KV_Cache.png)
+
+对于每个输入的prompt，在计算第一个token输出的时候，每个token的attention肯定是都要从头计算。但是在后续token的生成中，都需要计算self-attention，也就是输入prompt以及前面输出的token的attention。这是就需要用到前面每一个token的K和V，由于每一层的参数矩阵是不变的，此时只有刚生成的那个token的K和V需要从头计算，输入prompt和之前生成的token的K和V其实是跟上一轮一样的。
+
+我们可以把每一层的K、V矩阵缓存起来，这就是所谓的KV Cache。
+
+https://zhuanlan.zhihu.com/p/630832593
+
+大模型推理性能优化之KV Cache解读
+
+https://zhuanlan.zhihu.com/p/662498827
+
+大模型推理加速：看图学KV Cache
 
 ## 工具
 
@@ -318,43 +334,3 @@ Jeff Dean等提出自动化分层模型，优化CPU、GPU等异构环境，性�
 https://mp.weixin.qq.com/s/q0VENBNgolpeWmDapF5q_g
 
 在有池化层、1步幅的CNN上减少冗余计算，一种广泛适用的架构转换方法
-
-https://mp.weixin.qq.com/s/YusIuUtvTwoskNRV_OV7iw
-
-100万帧数据仅1秒！AI大牛颜水成团队强化学习新作，代码已开源
-
-https://www.zhihu.com/answer/2259890109
-
-资源受限的人工智能
-
-https://zhuanlan.zhihu.com/p/371499074
-
-OneFlow——让每一位算法工程师都有能力训练GPT
-
-https://mp.weixin.qq.com/s/LjdHBEyQhJq3ptMj8XVT-w
-
-TensorFlow在推荐系统中的分布式训练优化实践
-
-https://mp.weixin.qq.com/s/rEHhf32L09KXGJ9bbB2LEA
-
-TensorFlow在美团外卖推荐场景的GPU训练优化实践
-
-https://zhuanlan.zhihu.com/p/522759214
-
-手把手推导分布式矩阵乘的最优并行策略
-
-https://mp.weixin.qq.com/s/_o7fzCOeuZE6qFc5gHb26g
-
-美团视觉GPU推理服务部署架构优化实践
-
-https://zhuanlan.zhihu.com/p/619596323
-
-LLM Inference CookBook
-
-https://zhuanlan.zhihu.com/p/611325149
-
-大型语言模型(LLM)训练指南
-
-https://zhuanlan.zhihu.com/p/629589593
-
-LLM应用开发全栈指南

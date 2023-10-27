@@ -263,3 +263,13 @@ https://mp.weixin.qq.com/s/MdmB4lzSjSYrhc07Gwe8mQ
 https://www.zhihu.com/question/626551461
 
 东方雨虹股价持续走低，今年市值蒸发超200亿，董秘在朋友圈连发十二问，大呼看不懂，如何看待此事？
+
+---
+
+2011年1月，上海交通大学的几个学生在闵行校区D32宿舍组了个团队，自称米哈游工作室。
+
+米哈游以自身15%股份的代价，从斯凯网络CEO宋涛手中拿到了100万元的天使投资，这也成了米哈游唯一的融资记录。
+
+https://mp.weixin.qq.com/s/rvPh6fCjCWIZ7Aw3XBwduw
+
+因经营风险过大，原神公司被拒绝上市

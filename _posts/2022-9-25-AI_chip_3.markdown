@@ -9,6 +9,62 @@ category: Chip
 
 # AI Chip
 
+## 行业信息（续）
+
+https://mp.weixin.qq.com/s/jINnom16KWiEKiug3N-f8g
+
+一文看懂AI芯片：三大门派四大场景146亿美元大蛋糕
+
+https://mp.weixin.qq.com/s/-FwuhibwwG6CFUcZXNBTFA
+
+投资者梳理AI芯片产业，一文秒懂AI芯片生态！
+
+https://zhuanlan.zhihu.com/p/28325678
+
+零基础看懂全球AI芯片：详解“xPU”
+
+https://mp.weixin.qq.com/s/Zng0NTR9P78lnR_vniiM8g
+
+Chris Rowen: 分析全球334家真正的深度学习创业公司，盘点25家AI芯片创业公司
+
+https://zhuanlan.zhihu.com/p/33462550
+
+传统IP Vendor的AI加速器一览
+
+https://mp.weixin.qq.com/s/IaCWZXQI8mYLJQXwDoNQcQ
+
+自动驾驶芯片：GPU的现在和ASIC的未来
+
+https://mp.weixin.qq.com/s/KjQ5BTGd92Y0Mqzk1A5JYg
+
+老兵戴辉讲述海思视频监控芯片从0到1的血泪史！如何一步步成为行业霸主的
+
+https://mp.weixin.qq.com/s/MwZ9j1MIwRBrJK4iWKzRqQ
+
+芯故事：和AMD有渊源的那些AI创业公司
+
+## 参考
+
+![](/images/img3/Wallace_Tree.png)
+
+https://mp.weixin.qq.com/s/_n1FA7H5q4AwXqeBg9tekA
+
+硬件实现快速累加
+
+>Christopher Stewart "Chris" Wallace，1933～2004，澳大利亚计算机科学家和物理学家。University of Sydney博士（1959）。Monash University教授。ACM fellow。在早期计算机的软件/硬件方面皆有重大贡献。
+
+---
+
+几乎每一个概述的AI加速解决方案都是从一个已经有几十年历史的学术思想开始的：脉动阵列起源于1978；VLIW架构起源于1983；数据流编程的概念可以追溯到1975；早期的内存内处理（processing-in-memory）出现在20世纪70年代。
+
+https://www.thepaper.cn/newsDetail_forward_16268882
+
+详解AI加速器（一）：2012年的AlexNet到底做对了什么？
+
+https://www.thepaper.cn/newsDetail_forward_16641034
+
+详解AI加速器（二）：为什么说现在是AI加速器的黄金时代？
+
 https://www.thepaper.cn/newsDetail_forward_16681105
 
 详解AI加速器（三）：架构基础离不开ISA、可重构处理器
@@ -243,58 +299,6 @@ https://mp.weixin.qq.com/s/cBVio3W64np8fXwUQs2wIw
 
 机器学习如何用于芯片系统设计？Jeff Dean推荐Google最新《机器学习系统芯片设计》70页ppt为你讲解
 
-https://zhuanlan.zhihu.com/p/150656419
-
-AI芯片技术发展
-
-https://mp.weixin.qq.com/s/9fBe6MsUOCDhtp4MSfP2jg
-
-AI处理器热潮正在消退
-
-https://mp.weixin.qq.com/s/JYTqJDlGw6Q2gNLaYIGLcQ
-
-特斯拉芯片究竟怎么样？
-
-https://mp.weixin.qq.com/s/cA1AXfpV3ZcMNX9k5XKlww
-
-面向深度神经网络的芯片布图规划问题简介
-
-https://zhuanlan.zhihu.com/p/231302709
-
-聊聊GPU峰值计算能力
-
-https://zhuanlan.zhihu.com/p/340775090
-
-从Thinker到Evolver：对可演化AI芯片的探索
-
-https://mp.weixin.qq.com/s/MwZ9j1MIwRBrJK4iWKzRqQ
-
-芯故事：和AMD有渊源的那些AI创业公司
-
-https://mp.weixin.qq.com/s/S1fVrSfAM_UJh06Q43s8vA
-
-网络芯片架构的新改变
-
-https://zhuanlan.zhihu.com/p/47904879
-
-AI芯片在5G中的机会
-
-https://mp.weixin.qq.com/s/Z_QVN7OCLqeyMrwK3Sc7qA
-
-AI芯片和传统芯片的区别
-
-https://mp.weixin.qq.com/s/mMiAGH2Yz42xes7jicyygA
-
-“超级芯片”或在十年内诞生，摩尔定律再续一命！（自旋电子逻辑器件“MESO器件”）
-
-https://zhuanlan.zhihu.com/p/557933130
-
-从2022新公开的特斯拉机器人Dojo芯片架构信息到存算一体
-
-https://zhuanlan.zhihu.com/p/503371595
-
-AI芯片（下），自动驾驶里的“水浒卡”
-
 # AMD
 
 ## Matrix Core
@@ -303,13 +307,15 @@ AI芯片（下），自动驾驶里的“水浒卡”
 
 ## 高速互联
 
-对标NV-Link，AMD推出了：
+对标NVLink，AMD推出了：
 
 GMI：Global Memory Interconnect
 
 AMD Infinity Fabric Link
 
 其实Intel也有一个叫做Xelink的东西。
+
+IBM BlueLink
 
 ## HIP
 

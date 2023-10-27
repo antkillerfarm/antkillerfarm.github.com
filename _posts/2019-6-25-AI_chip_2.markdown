@@ -13,11 +13,11 @@ category: Chip
 
 ​Tensor Processing Unit(TPU)是Google推出的AI芯片系列。目前已经有3个版本：
 
-TPU v1, deployed 2015, 92 teraops, inference only.
+TPU v1, deployed 2015, 92 teraops, **inference only**.
 
-TPU v2, cloud TPU 2017, pod 2018, 180 teraflops, 64 GB HBM, training and inference, generally available. 11.5 petaflops in a pod.
+TPU v2, cloud TPU 2017, pod 2018, 180 teraflops, 64 GB HBM, **training and inference**, generally available. 11.5 petaflops in a pod.
 
-TPU v3, cloud beta 2018, 420 teraflops, 128 GB HBM, training and inference, beta. >100 petaflops in a pod.
+TPU v3, cloud beta 2018, 420 teraflops, 128 GB HBM, training and inference, beta. >100 petaflops in a **pod**.
 
 论文：
 
@@ -30,6 +30,24 @@ TPU v3, cloud beta 2018, 420 teraflops, 128 GB HBM, training and inference, beta
 ---
 
 ![](/images/img5/TPU.png)
+
+TPUv2的改进：
+
+- TPU v2将上述两个互相独立的缓冲区调整位置后合并为向量存储区（Vector Memory），从而提高可编程性。
+
+- 改进针对的是激活函数管道（Activation Pipeline），TPU v1的管道内包含一组负责非线性激活函数运算的固定功能单元。TPU v2则将其改为可编程性更高的向量单元（Vector Unit），使其对编译器和编程人员而言更易用。
+
+- 将矩阵乘法单元直接与向量存储区连接，如此一来，矩阵乘法单元就成为向量单元的协处理器。这种结构对编译器和编程人员而言更友好。
+
+- TPU v1使用DDR3内存，因为它针对的是推理，只需使用已有的权重，不需要生成权重。针对训练的TPU v2则不一样，训练时既要读取权重，也要写入权重，所以在v2中，我们将原本的DDR3改为与向量存储区相连，这样就既能向其读取数据，又能向其写入数据。
+
+- 将DDR3改为HBM。因为从DDR3读取参数速度太慢，影响性能，而HBM的读写速度快20倍。
+
+- 在HBM和向量存储区之间增加互连（Interconnect），用于TPU之间的连接，组成我们之前提到的Pod超级计算机。
+
+TPUv3在体系结构方面改进不大，主要是堆料：加计算单元，加内存，加主频等等。
+
+
 
 https://www.zhihu.com/answer/2716117809
 
@@ -133,6 +151,10 @@ https://mp.weixin.qq.com/s/e8zOrmiIidy8IoV1yMfdKg
 https://mp.weixin.qq.com/s/uEAlKdpzutOpnPGmg5dOjw
 
 谷歌TPU超算，大模型性能超英伟达，已部署数十台：图灵奖得主新作
+
+https://zhuanlan.zhihu.com/p/656363598
+
+谷歌TPU2机器学习集群的幕后
 
 ## Groq 
 
@@ -337,57 +359,3 @@ https://mp.weixin.qq.com/s/vGoWsyaal-gAzsrhPguvFg
 https://mp.weixin.qq.com/s/8RDHTn6P63otKXUdrHhbjw
 
 一文看懂AI芯片产业生态及竞争格局
-
-https://mp.weixin.qq.com/s/jINnom16KWiEKiug3N-f8g
-
-一文看懂AI芯片：三大门派四大场景146亿美元大蛋糕
-
-https://mp.weixin.qq.com/s/-FwuhibwwG6CFUcZXNBTFA
-
-投资者梳理AI芯片产业，一文秒懂AI芯片生态！
-
-https://zhuanlan.zhihu.com/p/28325678
-
-零基础看懂全球AI芯片：详解“xPU”
-
-https://mp.weixin.qq.com/s/Zng0NTR9P78lnR_vniiM8g
-
-Chris Rowen: 分析全球334家真正的深度学习创业公司，盘点25家AI芯片创业公司
-
-https://zhuanlan.zhihu.com/p/33462550
-
-传统IP Vendor的AI加速器一览
-
-https://mp.weixin.qq.com/s/IaCWZXQI8mYLJQXwDoNQcQ
-
-自动驾驶芯片：GPU的现在和ASIC的未来
-
-https://mp.weixin.qq.com/s/KjQ5BTGd92Y0Mqzk1A5JYg
-
-老兵戴辉讲述海思视频监控芯片从0到1的血泪史！如何一步步成为行业霸主的
-
-https://mp.weixin.qq.com/s/MwZ9j1MIwRBrJK4iWKzRqQ
-
-芯故事：和AMD有渊源的那些AI创业公司
-
-## 参考
-
-![](/images/img3/Wallace_Tree.png)
-
-https://mp.weixin.qq.com/s/_n1FA7H5q4AwXqeBg9tekA
-
-硬件实现快速累加
-
->Christopher Stewart "Chris" Wallace，1933～2004，澳大利亚计算机科学家和物理学家。University of Sydney博士（1959）。Monash University教授。ACM fellow。在早期计算机的软件/硬件方面皆有重大贡献。
-
----
-
-几乎每一个概述的AI加速解决方案都是从一个已经有几十年历史的学术思想开始的：脉动阵列起源于1978；VLIW架构起源于1983；数据流编程的概念可以追溯到1975；早期的内存内处理（processing-in-memory）出现在20世纪70年代。
-
-https://www.thepaper.cn/newsDetail_forward_16268882
-
-详解AI加速器（一）：2012年的AlexNet到底做对了什么？
-
-https://www.thepaper.cn/newsDetail_forward_16641034
-
-详解AI加速器（二）：为什么说现在是AI加速器的黄金时代？
