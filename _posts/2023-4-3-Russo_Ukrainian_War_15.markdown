@@ -9,40 +9,6 @@ category: Russo Ukrainian War
 
 # 俄乌战争
 
-## 凡人列传
-
-https://mp.weixin.qq.com/s/PUqFEBUN6OaGZjB-ojrMRg
-
-一个乌克兰女性的伤痛与纪念
-
-https://zhuanlan.zhihu.com/p/599209865
-
-《华尔街日报》：乌克兰义勇军的勇气和鲁莽
-
-https://zhuanlan.zhihu.com/p/600246599
-
-巴赫穆特：城郊在战斗，城里的生活还在继续
-
-https://zhuanlan.zhihu.com/p/546980660
-
-真正的俄罗斯英雄——你有勇气保护敌国的平民吗？
-
-https://zhuanlan.zhihu.com/p/613419718
-
-荣耀背后的阴影——乌克兰士兵心理问题调查
-
-https://zhuanlan.zhihu.com/p/617040010
-
-“我工作，然后我哭泣”：巴赫穆特附近疲惫不堪的乌克兰医务人员为生命而战
-
-https://www.zhihu.com/question/567275817
-
-大家怎么看乌克兰高调给一名台湾雇佣兵举行华丽葬礼？（曾圣光）
-
-https://zhuanlan.zhihu.com/p/569536994
-
-俄罗斯士兵真的开始卖坦克了
-
 ## 卢甘斯克战役
 
 Krasnyi Liman虽然位于顿涅斯克州，但是仍然属于北线，和东线距离很远，倒是离卢甘斯克很近，且后续发展也在卢甘斯克方向，故归类为卢甘斯克战役。
@@ -163,7 +129,7 @@ https://zhuanlan.zhihu.com/p/582714899
 
 ---
 
-俄联邦在决定从西岸撤军后，也在政治上为撤军进行了准备，例如展开了新闻统制，并除掉了可能反对撤退的当地傀儡政权乌奸头目：傀儡政权伪州长弗拉基米尔.萨尔多在8月份进入俄联邦本土“治病”，虽然辟谣了死讯，但迄今未归；代理萨尔多职务的赫尔松州傀儡政权副州长基里尔.斯特列穆索夫则在11月死于“车祸”，老牌傀儡政客古巴列夫在赫尔松州任职的妻子古巴列娃也在总撤退期间遭到俄军逮捕拘禁。
+俄联邦在决定从西岸撤军后，也在政治上为撤军进行了准备，例如展开了新闻统制，并除掉了可能反对撤退的当地傀儡政权乌奸头目：傀儡政权伪州长弗拉基米尔.萨尔多在8月份进入俄联邦本土“治病”，虽然辟谣了死讯，但迄今未归；代理萨尔多职务的赫尔松州傀儡政权副州长基里尔.斯特列穆索夫则在11月死于“车祸”，老牌傀儡政客古巴列夫在赫尔松州任职的妻子古巴列娃，也在总撤退期间遭到俄军逮捕拘禁。
 
 ---
 
@@ -224,3 +190,61 @@ https://www.zhihu.com/question/617165608
 https://www.zhihu.com/question/617271466
 
 如何看待著名网红俄罗斯联邦武装部队第1822营营长托莫夫少校，弃暗投明为乌克兰效力？
+
+---
+
+https://www.zhihu.com/question/557445334
+
+如何看待赫尔松北岸俄罗斯防线大溃败，俄罗斯还守得住赫尔松吗？
+
+https://www.zhihu.com/question/565653108
+
+俄国防部宣布从赫尔松部分地区撤军至第聂伯河东岸，当地形势如何？
+
+https://zhuanlan.zhihu.com/p/582118157
+
+崩撤卖溜！——赫尔松大反攻V3.0正式版
+
+https://zhuanlan.zhihu.com/p/582824955
+
+鏖战261天：俄乌赫尔松之战回顾
+
+https://www.zhihu.com/answer/2760415200
+
+赫尔松之战 三国版
+
+https://zhuanlan.zhihu.com/p/606942602
+
+解放后的赫尔松的全景生活——俄军的炮击不曾停止
+
+https://news.ifeng.com/c/8Kph5NYlxxB
+
+果然！俄军退出赫尔松，苏罗维金一战封神？
+
+## 顿涅斯克战役
+
+本节主要包括巴赫穆特、chasiv yar、马林卡、Soledar、Vuhledar、Avdiivka等地的攻防战。
+
+2022.5 俄军攻克波帕斯纳，巴赫穆特成为前线。
+
+2022.8 俄军开始在巴赫穆特东郊发起进攻。
+
+2022.10.8 瓦格纳正式在巴赫穆特市区参战。
+
+巴赫穆特防守战役：2022.10.8～2023.5.20 224天
+
+巴赫穆特反攻战役：2023.5.16～
+
+---
+
+![](/images/img4/joke_4.jpg)
+
+![](/images/img5/Bakhmut.jpg)
+
+<video  id="myvideo" width="50%" height="auto" controls="controls" loop="loop">
+    <source src="/images/img5/Bakhmut.mp4" type='video/mp4' />
+</video>
+
+https://zhuanlan.zhihu.com/p/599338767
+
+冰雨的风暴——乌克兰Day264-Day327战况总结
