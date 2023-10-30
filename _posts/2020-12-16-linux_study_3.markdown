@@ -269,6 +269,14 @@ https://www.cnblogs.com/tu13/p/ubuntu_nfs.html
 
 ubuntu18.04搭建NFS服务器
 
+## 访问Windows共享文件夹
+
+```
+sudo apt install cifs-utils
+sudo mkdir /mnt/share
+sudo mount -t cifs -o username=XXX,password=XXX //192.168.0.81/abc /mnt/share
+```
+
 # 动态库
 
 ## 版本设置

@@ -62,6 +62,12 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/mylex
 
 这里使用的是lex/yacc在linux上现代版本——flex/bison。
 
+---
+
+https://zhuanlan.zhihu.com/p/663995549
+
+56行代码用Python实现一个Flex/Lex
+
 # 编译原理
 
 ## 教程
@@ -307,13 +313,3 @@ MPS是jetbrains推出的用于构建DSL的工具。
 官网：
 
 https://www.jetbrains.com/mps/
-
-## 参考
-
-x86一开始并没有使用太多的通用寄存器，原因之一（注意，只是之一）是当时的编译器无力进行寄存器分配，让编译器自动决定程序中众多变量哪些应该装入寄存器哪些应该换出、哪些变量应该映射到同一个寄存器上，并不是一件易事，JVM采用堆栈结构的原因之一就是不信任编译器的寄存器分配能力，转而使用堆栈结构，躲开寄存器分配的难题。
-
-到80年代早期，IBM的G. J. Chaitin公开了他们的图染色寄存器分配算法之后，编译器的分配能力获得长足进步，形成了现在这样的编译器主导的寄存器分配格局。
-
-https://www.zhihu.com/question/24551779
-
-为什么ARM和MIPS那么多寄存器，x86那么少？
