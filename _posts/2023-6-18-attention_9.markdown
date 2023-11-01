@@ -9,6 +9,30 @@ category: Attention
 
 # BERT进阶（续）
 
+https://mp.weixin.qq.com/s/e4dgIdwzDzcLSkdgr1yZpg
+
+LeCun力荐：Facebook推出十亿参数超大容量存储器
+
+https://mp.weixin.qq.com/s/zXXtbuSvyMOkgrWJwB83kg
+
+预训练语言模型的最新探索
+
+https://mp.weixin.qq.com/s/WzGa5XVi2Op4Lz-1uQXfxQ
+
+SpanBERT：提出基于分词的预训练模型，多项任务性能超越现有模型！
+
+https://zhuanlan.zhihu.com/p/76912493
+
+nlp中的预训练语言模型总结(单向模型、BERT系列模型、XLNet)
+
+https://mp.weixin.qq.com/s/pYSs6NhIAB6DuwNnKZhkZQ
+
+Bert改进：如何融入知识
+
+https://mp.weixin.qq.com/s/in5SDWlQg8ts4E8DTmHxMQ
+
+BERT在推荐系统领域可能会有什么作为？
+
 https://mp.weixin.qq.com/s/kJhOrz0VaYc-k-6XJS02ag
 
 8篇论文梳理BERT相关模型进展与反思
@@ -386,31 +410,3 @@ https://mp.weixin.qq.com/s/MJ1578NdTKbjU-j3Uuo9Ww
 https://mp.weixin.qq.com/s/_3pA8FZwzegSpyz_cK63BQ
 
 Self-Attention GAN中的self-attention机制
-
-https://mp.weixin.qq.com/s/h7sLwVXb_UI8jvJU-oe3Cg
-
-Google AI提出“透明注意力”机制，实现更深层NMT模型
-
-https://mp.weixin.qq.com/s/1LYz5SH5rVnPPJ0tZvRQAA
-
-从各种注意力机制窥探深度学习在NLP中的神威
-
-https://zhuanlan.zhihu.com/p/33078323
-
-数字串识别：基于位置的硬性注意力机制
-
-https://mp.weixin.qq.com/s/-gAISWjSiG6ccPuOPAEg3A
-
-五张动图，看清神经机器翻译里的Attention！
-
-https://mp.weixin.qq.com/s/aixpv9t1PLPRWUP6PvZ0EQ
-
-用自注意力增强卷积：这是新老两代神经网络的对话
-
-https://mp.weixin.qq.com/s/i3Xd_IB7R0-QPztn-pgpng
-
-遍地开花的Attention，你真的懂吗？
-
-https://zhuanlan.zhihu.com/p/151640509
-
-注意力机制在推荐系统中的应用

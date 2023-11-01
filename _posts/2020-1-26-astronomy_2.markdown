@@ -33,7 +33,7 @@ category: Nature
 
 ---
 
-此后，人们又发现这两颗 “子星”其实各自都是双星，不过这种双星靠得很近，用望远镜也看不出来，只能从光谱特征上判断出是两颗星，因此叫“分光双星”。离这四颗星稍远的地方，还有一颗暗的“伴星”（Castor C），它本身也是两颗星在围绕质心转动时会相互掩映的系统，称作“食双星”。
+此后，人们又发现这两颗“子星”其实各自都是双星，不过这种双星靠得很近，用望远镜也看不出来，只能从光谱特征上判断出是两颗星，因此叫“分光双星”。离这四颗星稍远的地方，还有一颗暗的“伴星”（Castor C），它本身也是两颗星在围绕质心转动时会相互掩映的系统，称作“食双星”。
 
 还有更变态的七星系统——键闭（天蝎座 ν）。
 
@@ -181,6 +181,30 @@ https://zhuanlan.zhihu.com/p/594394805
 
 争议不断的《三体》动画，外国观众怎么看
 
+---
+
+在太空动力学，霍曼转移轨道（或译为郝曼转移轨道，Hohmann transfer orbit）是一种变换太空船轨道的方法，途中只需两次引擎推进，相对地节省燃料。此种轨道操纵名称来自Walter Hohmann，他于1925年出版了相关著作。
+
+>Walter Hohmann，1880~1945，德国工程师，亚琛工业大学博士。轨道动力学（orbital dynamics）之父。
+
+![](/images/img2/Hohmann.gif)
+
+---
+
+![](/images/img2/Solar_dv.png)
+
+颜刘贞婉（Chen-Wan L. Yan），美国华裔，来自中国台湾。她就读于著名的女子学校“台北州立第一高等女学校，本科是台大物理系。大学毕业后在麻省理工大学攻读物理学博士。颜刘毕业后进入NASA喷气推进实验室（JPL）担任轨道动力学专家。
+
+颜刘通过建立数学模型得出结论，有一种方法不需要携带那么多的能源也能抵达水星，但代价是要花费七年的时间，飞行79亿公里，绕太阳公转15次。
+
+具体操作是：NASA探测器从地球出发后，先绕地球公转轨道一周，追上地球后再次借助地球的引力弹弓前往金星。掠过金星后第一次借助引力弹弓，绕金星轨道一周后，第二次借助金星引力弹弓到水星。然后在水星轨道上掠过水星四次，第四次就能被水星俘获了。
+
+本质上就是利用地球和金星的引力，和它俩的大气层摩擦给探测器减速刹车。
+
+https://www.zhihu.com/question/452059445
+
+为什么水星是最难去的行星?
+
 # 黑洞
 
 ## 黑洞照片
@@ -212,33 +236,3 @@ https://mp.weixin.qq.com/s/GTHiZZ0ox8GsYKseYfDiRw
 https://mp.weixin.qq.com/s/zNs4NikZ912R3V1ZT2DcTg
 
 黑洞---像极了爱情！
-
-## EHT
-
-![](/images/img2/Event_horizon_telescope_logo_2019.png)
-
-如它的logo所示，Event Horizon Telescope是一个多地联合的天文观测组织。和它类似的组织还有（The Global mm-VLBI Array, GMVA）。两个阵营的差别在于GMVA观测波长为3毫米，而EHT在1.3毫米。
-
-![](/images/img2/The_Event_Horizon_Telescope_and_Global_mm-VLBI_Array_on_the_Earth.jpg)
-
-EHT（蓝绿线）与GMVA（黄线）之望远镜阵列分布。其中ALMA和IRAM同时属于两个阵营。
-
-## ALMA
-
-Atacama Large Millimeter/submillimeter Array是EHT计划的主力天文台。由欧洲南方天文台(European Southern Observatory, ESO)和美国国家射电天文台（National Radio Astronomy Observatory, NRAO）共同负责。
-
-1962年10月5日，德国、法国、比利时、荷兰、瑞典五国在巴黎签署了一份协议，决定共同在南半球建立天文台，并命名为欧洲南方天文台。1960年代中期，ESO考察了智利北部的阿塔卡玛沙漠，最终选定这里作为台址。这里是地球上气候最干燥的地区之一，海拔高，非常适合毫米波天文观测。
-
-![](/images/img2/ALMA.jpg)
-
-66座ALMA天线可用不同的配置法排成阵列，天线间的距离变化多样，最短可以是150米，最长可以到16公里。
-
-图中貌似还乱入了红警的基地车。没错，所有的天线都是可移动的。
-
-![](/images/img2/ALMA_2.jpg)
-
-这是基地车的正面图。
-
-https://mp.weixin.qq.com/s/NIMcgoXzTeAAumODJfEH_A
-
-在地球上，哪里能看到最澄澈的星空？（冰穹A）

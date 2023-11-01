@@ -15,9 +15,9 @@ category: Chip
 
 TPU v1, deployed 2015, 92 teraops, **inference only**.
 
-TPU v2, cloud TPU 2017, pod 2018, 180 teraflops, 64 GB HBM, **training and inference**, generally available. 11.5 petaflops in a pod.
+TPU v2, cloud TPU 2017, pod 2018, 180 teraflops, 64 GB HBM, **training and inference**, generally available. 11.5 petaflops in a **pod**.
 
-TPU v3, cloud beta 2018, 420 teraflops, 128 GB HBM, training and inference, beta. >100 petaflops in a **pod**.
+TPU v3, cloud beta 2018, 420 teraflops, 128 GB HBM, training and inference, beta. >100 petaflops in a pod.
 
 论文：
 
@@ -39,15 +39,25 @@ TPUv2的改进：
 
 - 将矩阵乘法单元直接与向量存储区连接，如此一来，矩阵乘法单元就成为向量单元的协处理器。这种结构对编译器和编程人员而言更友好。
 
-- TPU v1使用DDR3内存，因为它针对的是推理，只需使用已有的权重，不需要生成权重。针对训练的TPU v2则不一样，训练时既要读取权重，也要写入权重，所以在v2中，我们将原本的DDR3改为与向量存储区相连，这样就既能向其读取数据，又能向其写入数据。
+- TPU v1使用DDR3内存，因为它针对的是推理，只需使用已有的权重，不需要生成权重。针对训练的TPU v2则不一样，训练时既要读取权重，也要写入权重，所以在v2中，原本的DDR3改为与向量存储区相连，这样就既能向其读取数据，又能向其写入数据。
 
 - 将DDR3改为HBM。因为从DDR3读取参数速度太慢，影响性能，而HBM的读写速度快20倍。
 
-- 在HBM和向量存储区之间增加互连（Interconnect），用于TPU之间的连接，组成我们之前提到的Pod超级计算机。
+- 在HBM和向量存储区之间增加互连（Interconnect），用于TPU之间的连接，组成Pod超级计算机。
 
 TPUv3在体系结构方面改进不大，主要是堆料：加计算单元，加内存，加主频等等。
 
+---
 
+TPUv4是TPU系列时隔4年之后的大升级。它的改进主要是：
+
+- TPU核心间的网络拓扑由2D Tours改为3D Tours。
+
+- 加入Sparse Core专门处理Transformer模型中的Embedding操作。
+
+- 引入Optical Circuit Switching，OCS。光互连是物理距离较远的芯片的首选。隔壁的PCIE系列也类似，PCIE 6将是最后一代使用电线的标准，未来的PCIE 7+也将转向光通信。
+
+---
 
 https://www.zhihu.com/answer/2716117809
 

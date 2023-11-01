@@ -9,6 +9,22 @@ category: Attention
 
 # Large Language Model（续）
 
+https://mp.weixin.qq.com/s/oqhi58NcEVH1oVrW2p4xlQ
+
+大模型参数高效微调技术原理综述（一）-背景、参数高效微调简介
+
+https://mp.weixin.qq.com/s/fUAUr9X3XLndfjga2QIHbA
+
+大模型参数高效微调技术原理综述（二）-BitFit、Prefix Tuning、Prompt Tuning
+
+https://mp.weixin.qq.com/s/f4l04f78F507JRrCawnV8w
+
+大模型参数高效微调技术原理综述（三）-P-Tuning、P-Tuning v2
+
+https://mp.weixin.qq.com/s/nUAcCz6mcgGuUeuTfgqmOQ
+
+大模型参数高效微调技术原理综述（四）-Adapter Tuning及其变体
+
 https://mp.weixin.qq.com/s/N_N6RqKB9pjZ1tozfM5f5A
 
 大模型参数高效微调技术原理综述（五）-LoRA、AdaLoRA、QLoRA
@@ -338,27 +354,3 @@ https://zhuanlan.zhihu.com/p/132554155
 https://mp.weixin.qq.com/s/UJlmjFHWhnlXXJoRv4zkEQ
 
 虽被BERT碾压，但还是有必要谈谈BERT时代与后时代的NLP
-
-https://mp.weixin.qq.com/s/e4dgIdwzDzcLSkdgr1yZpg
-
-LeCun力荐：Facebook推出十亿参数超大容量存储器
-
-https://mp.weixin.qq.com/s/zXXtbuSvyMOkgrWJwB83kg
-
-预训练语言模型的最新探索
-
-https://mp.weixin.qq.com/s/WzGa5XVi2Op4Lz-1uQXfxQ
-
-SpanBERT：提出基于分词的预训练模型，多项任务性能超越现有模型！
-
-https://zhuanlan.zhihu.com/p/76912493
-
-nlp中的预训练语言模型总结(单向模型、BERT系列模型、XLNet)
-
-https://mp.weixin.qq.com/s/pYSs6NhIAB6DuwNnKZhkZQ
-
-Bert改进：如何融入知识
-
-https://mp.weixin.qq.com/s/in5SDWlQg8ts4E8DTmHxMQ
-
-BERT在推荐系统领域可能会有什么作为？

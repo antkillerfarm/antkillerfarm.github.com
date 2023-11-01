@@ -9,11 +9,21 @@ category: Chip
 
 # CPU
 
-![](/images/img4/In_Chip_Bus.jpg)
+![](../images/img4/In_Chip_Bus.jpg)
+
+Crossbar（XBAR）
 
 https://zhuanlan.zhihu.com/p/32216294
 
 破茧化蝶，从Ring Bus到Mesh网络，CPU片内总线的进化之路
+
+https://blog.csdn.net/CodeSavior/article/details/114446140
+
+Spine+Leaf叶脊网络架构
+
+https://zhuanlan.zhihu.com/p/371827494
+
+片内互联中常用的拓扑结构
 
 ---
 
@@ -33,9 +43,17 @@ RTL概念与常用RTL建模
 
 ---
 
-https://mp.weixin.qq.com/s/Cij_95iLbAm0AEtrSb72_A
+同一片晶圆切下来的Die，体质卓越的，是13900KS。
 
-关于CPU科普，这篇说得最详细
+体质优秀的，是13900K。
+
+体质一般的，是13900。
+
+CPU侧体质优秀，但GPU侧一塌糊涂的，是13900KF。
+
+CPU侧体质一般的，GPU还一塌糊涂的，是13900F。
+
+CPU侧体质都一塌糊涂的。剁去一对体质最差的大核和一簇体质最烂的小核，然后降频运行，叫做13700K。
 
 https://zhuanlan.zhihu.com/p/29743431
 
@@ -44,6 +62,12 @@ CPU制造的那些事之一：i7和i5其实是孪生兄弟！？
 https://zhuanlan.zhihu.com/p/29767262
 
 CPU制造的那些事之二：Die的大小和良品率
+
+---
+
+https://mp.weixin.qq.com/s/Cij_95iLbAm0AEtrSb72_A
+
+关于CPU科普，这篇说得最详细
 
 https://zhuanlan.zhihu.com/p/31848803
 

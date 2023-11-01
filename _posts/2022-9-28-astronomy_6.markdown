@@ -1,11 +1,45 @@
 ---
 layout: post
-title: 天文杂谈（二）
+title: 天文杂谈（一）
 category: Nature 
 ---
 
 * toc
 {:toc}
+
+# 阿波罗50年（续）
+
+由于飞行前的制造和测试错误，氧气罐中的电线暴露了出来。在那个致命的夜晚，氧气罐中暴露的电线产生的火花引发了火灾，引爆了氧气罐，将服务舱外的隔热层炸飞。。。
+
+https://mp.weixin.qq.com/s/NmS1dbeIsQomsWYI8-OyZg
+
+阿波罗13号“伟大失败”50周年，NASA发布纪录片追忆奥德赛号逃生往事
+
+---
+
+![](/images/img3/india_moon.jpg)
+
+https://www.zhihu.com/question/344795065/
+
+印度“月船2号”登陆月球失败，失败原因可能是什么？有什么影响和教训？
+
+https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
+
+印度失联的月球探测器依然成功了95%？那些年我们一起追过的月球
+
+---
+
+https://www.zhihu.com/question/618270598
+
+俄罗斯月神25号（Luna-25）轨道调整异常导致其与月球相撞，如何评价俄罗斯目前的航天能力？
+
+https://www.zhihu.com/question/620395383
+
+俄顶尖科学家疑因误食毒蘑菇身亡，具体情况如何？
+
+https://zhuanlan.zhihu.com/p/651231503
+
+气煞老夫 俄罗斯90岁传奇科学家听到登月任务失败后住院
 
 # 天文杂谈
 
@@ -161,6 +195,12 @@ https://www.zhihu.com/question/405115980
 
 ---
 
+![](/images/img2/FYWX.jpg)
+
+![](/images/img3/eclipse.png)
+
+---
+
 https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
 
 生的伟大，死的光荣——致敬卡西尼号土星探测器
@@ -193,8 +233,6 @@ https://mp.weixin.qq.com/s/R2Hco-nE-e0S_gmTSImrAA
 
 它曾“超长待机”俯瞰地球，最终在“回家”路上粉身碎骨
 
-![](/images/img2/FYWX.jpg)
-
 https://mp.weixin.qq.com/s/yD3THPdd1rvx3oqBF1tayQ
 
 那个提出“戴森球”的物理学家去世了（Freeman Dyson）
@@ -206,53 +244,3 @@ https://mp.weixin.qq.com/s/3dByllGuY9fsvUjoy7fPwg
 https://mp.weixin.qq.com/s/5NyYCE1vt99i2O_r-ThAGA
 
 下一次去哪？金星、木卫一，还是海卫一？
-
-https://mp.weixin.qq.com/s/6acgwIaDYC3VjMmdVSYYKQ
-
-未来的望远镜，能带我们看到宇宙大爆炸的边缘吗？（卡塞格林望远镜）
-
-![](/images/img3/eclipse.png)
-
-https://mp.weixin.qq.com/s/UDHAT3vLMS_yo4w0wbcpJQ
-
-十问北斗
-
-https://zhuanlan.zhihu.com/p/29213504
-
-从沙漏和星盘到六分仪和航海钟——恼人的航海定位
-
-https://mp.weixin.qq.com/s/SQPVTNYBU8JIRPYFqsXgtA
-
-神秘力量？上帝使者？彗星的“人设”早就崩塌了
-
-https://mp.weixin.qq.com/s/pAUiirbHyfrEgWUE21x93Q
-
-另一个费曼（Richard Feynman的妹妹Joan Feynman）
-
-https://mp.weixin.qq.com/s/iznVJzjkYA2I5Y-P0NKrdA
-
-美丽天文图片下，有哪些不为人知的“套路”
-
-https://mp.weixin.qq.com/s/hZBYHvYktdJeOrAHTCKTTA
-
-如何肉眼识别夜空中的人造卫星？
-
-https://mp.weixin.qq.com/s/lNh3jxjvRbpZ3zZYSZuOVg
-
-曾为地球“挺身而出”的磁场
-
-https://mp.weixin.qq.com/s/xo9aRt5rAX7bWeK4jwmkXA
-
-月球能承载多少人类生存？
-
-https://mp.weixin.qq.com/s/1L10R2c7wCTYFYcxPKiRtA
-
-彗星怎么拖了个长长的尾巴？
-
-https://mp.weixin.qq.com/s/yCmwX5srpmhYrbAkFbC-gQ
-
-20年，241人，5400000000000米（国际空间站）
-
-https://mp.weixin.qq.com/s/Qld7bVs9ASJ23vAhE0h7_w
-
-日月星辰如何指引着中国人前行？（中国古代天文学）

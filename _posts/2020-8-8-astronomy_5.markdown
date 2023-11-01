@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 火星探测, 阿波罗50年, 天文杂谈（一）
+title: 火星探测, 阿波罗50年
 category: Nature 
 ---
 
@@ -8,6 +8,66 @@ category: Nature
 {:toc}
 
 # 中国航天（续）
+
+1960年2月19日，南汇老港的一片滩涂上，响起了中国航天迈向太空的第一声轰鸣，第一枚液体探空火箭“T-7M”腾空而起，飞上了八千米高空。
+
+美国在2011年正式签订了《沃尔夫条款》，以法令的形式直接禁止了中美两国间的任何航空技术合作。
+
+NASA在2012年更是出台了指引，进一步指出，法令不仅适用于这些企业的一级机构，也包括其旗下的附属公司。
+
+https://www.zhihu.com/answer/136456079
+
+美国拟出台沃尔夫条款永久禁止中国进入国际空间站
+
+https://zhuanlan.zhihu.com/p/385461869
+
+这一次，中国人，笑了
+
+---
+
+![](/images/img4/chang_e.png)
+
+![](/images/img4/chang_e_2.png)
+
+https://www.zhihu.com/question/329267129
+
+中国空间站和国际空间站的区别在哪？
+
+https://www.zhihu.com/question/395220918
+
+为什么中国有四个航天发射场？各有什么优势？
+
+https://mp.weixin.qq.com/s/uVayftwQ-mJU04XGn67QoQ
+
+长征五号复飞成功：史上最重最大，2020月岩采样火星探测都要靠它
+
+https://mp.weixin.qq.com/s/iMr811ClFpmW24khhxkFjg
+
+大神！00后大学生成功发射自制火箭，网友惊了...
+
+https://mp.weixin.qq.com/s/CI5V2LirWMuTUn9riaJPSA
+
+南航大二学生两年手搓火箭成功发射
+
+https://mp.weixin.qq.com/s/QjB7zDCXC82x5O25InGZtA
+
+嫦娥五号开启我国首次地外天体采样返回之旅
+
+https://mp.weixin.qq.com/s/MZrFA6vWEl_hJnRBCFciLw
+
+中国探月工程“三步走”收官：嫦五配胖五，回家之前挖点土
+
+https://mp.weixin.qq.com/s/dZYtp_olAppIB5Av3CKydw
+
+嫦娥五号完成“钻取”采样及封装，正进行“表取”
+
+https://mp.weixin.qq.com/s/x9GzFnl_y5dei4WFwfxxtA
+
+嫦娥五号采回的“土特产”，可以用来研究些什么？
+
+https://mp.weixin.qq.com/s/RfcxEo4ox86W1u-MoGXFzQ
+
+“嫦娥” 回来了！一文回顾嫦娥五号探月之旅
 
 https://mp.weixin.qq.com/s/TiSNWwmP3_adWmzc53CaXA
 
@@ -46,14 +106,6 @@ https://mp.weixin.qq.com/s/klSndj6LPENaW53OPq15Yg
 中国在太空用上了机械臂，却被美国人质疑会去抓他们的卫星？
 
 # 火星探测
-
-在太空动力学，霍曼转移轨道（或译为郝曼转移轨道，Hohmann transfer orbit）是一种变换太空船轨道的方法，途中只需两次引擎推进，相对地节省燃料。此种轨道操纵名称来自Walter Hohmann，他于1925年出版了相关著作。
-
->Walter Hohmann，1880~1945，德国工程师，亚琛工业大学博士。轨道动力学（orbital dynamics）之父。
-
-![](/images/img2/Hohmann.gif)
-
----
 
 F´(F Prime)是一个组件驱动的框架，可以快速开发和部署航天飞行及其他嵌入式软件应用程序。而F´也是火星无人机“机智号”所用的飞行软件框架，它刚由毅力号携带到火星。
 
@@ -303,12 +355,6 @@ https://mp.weixin.qq.com/s/EPMdW1qxQVl0MVUSjhWxyQ
 
 NASA传奇数学家去世，她曾笔算了登月轨道
 
-由于飞行前的制造和测试错误，氧气罐中的电线暴露了出来。在那个致命的夜晚，氧气罐中暴露的电线产生的火花引发了火灾，引爆了氧气罐，将服务舱外的隔热层炸飞。。。
-
-https://mp.weixin.qq.com/s/NmS1dbeIsQomsWYI8-OyZg
-
-阿波罗13号“伟大失败”50周年，NASA发布纪录片追忆奥德赛号逃生往事
-
 https://mp.weixin.qq.com/s/1Jm00gCel41frG43oT9yyA
 
 他是探月英雄，但没登上过月球（Michael Collins）
@@ -316,29 +362,3 @@ https://mp.weixin.qq.com/s/1Jm00gCel41frG43oT9yyA
 https://www.zhihu.com/question/423138570
 
 火星车网速只有34Kb/s，当年老美怎么进行的登月直播呢？
-
----
-
-![](/images/img3/india_moon.jpg)
-
-https://www.zhihu.com/question/344795065/
-
-印度“月船2号”登陆月球失败，失败原因可能是什么？有什么影响和教训？
-
-https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
-
-印度失联的月球探测器依然成功了95%？那些年我们一起追过的月球
-
----
-
-https://www.zhihu.com/question/618270598
-
-俄罗斯月神25号（Luna-25）轨道调整异常导致其与月球相撞，如何评价俄罗斯目前的航天能力？
-
-https://www.zhihu.com/question/620395383
-
-俄顶尖科学家疑因误食毒蘑菇身亡，具体情况如何？
-
-https://zhuanlan.zhihu.com/p/651231503
-
-气煞老夫 俄罗斯90岁传奇科学家听到登月任务失败后住院

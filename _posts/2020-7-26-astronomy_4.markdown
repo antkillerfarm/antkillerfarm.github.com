@@ -9,6 +9,48 @@ category: Nature
 
 # SpaceX（续）
 
+https://zhuanlan.zhihu.com/p/64002399
+
+从“梅林”到“猛禽”：“液氧甲烷”+“全流量分级循环”，星级火箭发动机的终级选择？（下）
+
+https://www.zhihu.com/question/391756708
+
+SpaceX的可回收火箭有什么神奇之处，为何其他航天大国还不能仿造？
+
+https://www.zhihu.com/question/597238433
+
+为什么这么多年直到马斯克出来才想到做可复用火箭？
+
+https://zhuanlan.zhihu.com/p/348707512
+
+运载火箭的性能参数（科普）
+
+---
+
+齐奥尔科夫斯基火箭方程：
+
+$$\Delta V=v_e\ln \frac{m_0}{m_1}$$
+
+其中，$$\Delta V$$是速度增量，$$v_e$$是喷气速度，$$m_0,m_1$$分别是初始质量和终末质量。
+
+---
+
+![](/images/img4/cost.jpg)
+
+星舰发射费用仅为200万美元。运力类似的波音SLS火箭每次发射费用为40亿美元，足足相差了2000倍。
+
+https://www.zhihu.com/question/471620540
+
+马斯克称猎鹰9号回收和翻新过程仅占成本的10%，参考维护成本高昂的航天飞机，此话可信度如何？
+
+---
+
+小布什签署的美国航天发展规划，直接规定了要求NASA退出近地空间，要求他们重新带领美国航天天顶科技。与此同时，美国的商业航天开始全面崛起，后来大名鼎鼎的space-x，bigelow，blue origin大都从此时起步。
+
+奥巴马任期内美国商业航天的崛起就不必说了，经过全面扶植，space-x迅速成长为可以对抗任何一个国家发射市场的公司，在2018年甚至有能力挑战美国之外所有国家的总和。而NASA的焦点则全面转向深空，各种大型空间望远镜、昂贵的火星探测、木星土星探测，都达到人类历史上的巅峰。
+
+---
+
 湿彩排（wet dress rehearsal），就是排练除点火之外的所有发射环节，包括进行推进剂的装填和卸载、发射倒计时等，这个过程需要在发射工位上进行。这个环节在我国叫做合练。
 
 卡门线（Kármán line）是一条位于海拔100 km（330,000英尺）处，被大部分认可为外太空与地球大气层的界线的分界线。
@@ -158,65 +200,3 @@ https://www.zhihu.com/question/295927388
 ---
 
 2020年4月1日，“带货女王”薇娅在淘宝直播间卖起了火箭，售价4000万元。据了解，当天在火箭链接上架后5分钟内就有800多人拍下定金。最终“长光卫星技术有限公司”与薇娅相关方联系，确定了购买意向。
-
----
-
-1960年2月19日，南汇老港的一片滩涂上，响起了中国航天迈向太空的第一声轰鸣，第一枚液体探空火箭“T-7M”腾空而起，飞上了八千米高空。
-
-美国在2011年正式签订了《沃尔夫条款》，以法令的形式直接禁止了中美两国间的任何航空技术合作。
-
-NASA在2012年更是出台了指引，进一步指出，法令不仅适用于这些企业的一级机构，也包括其旗下的附属公司。
-
-https://www.zhihu.com/answer/136456079
-
-美国拟出台沃尔夫条款永久禁止中国进入国际空间站
-
-https://zhuanlan.zhihu.com/p/385461869
-
-这一次，中国人，笑了
-
----
-
-![](/images/img4/chang_e.png)
-
-![](/images/img4/chang_e_2.png)
-
-https://www.zhihu.com/question/329267129
-
-中国空间站和国际空间站的区别在哪？
-
-https://www.zhihu.com/question/395220918
-
-为什么中国有四个航天发射场？各有什么优势？
-
-https://mp.weixin.qq.com/s/uVayftwQ-mJU04XGn67QoQ
-
-长征五号复飞成功：史上最重最大，2020月岩采样火星探测都要靠它
-
-https://mp.weixin.qq.com/s/iMr811ClFpmW24khhxkFjg
-
-大神！00后大学生成功发射自制火箭，网友惊了...
-
-https://mp.weixin.qq.com/s/CI5V2LirWMuTUn9riaJPSA
-
-南航大二学生两年手搓火箭成功发射
-
-https://mp.weixin.qq.com/s/QjB7zDCXC82x5O25InGZtA
-
-嫦娥五号开启我国首次地外天体采样返回之旅
-
-https://mp.weixin.qq.com/s/MZrFA6vWEl_hJnRBCFciLw
-
-中国探月工程“三步走”收官：嫦五配胖五，回家之前挖点土
-
-https://mp.weixin.qq.com/s/dZYtp_olAppIB5Av3CKydw
-
-嫦娥五号完成“钻取”采样及封装，正进行“表取”
-
-https://mp.weixin.qq.com/s/x9GzFnl_y5dei4WFwfxxtA
-
-嫦娥五号采回的“土特产”，可以用来研究些什么？
-
-https://mp.weixin.qq.com/s/RfcxEo4ox86W1u-MoGXFzQ
-
-“嫦娥” 回来了！一文回顾嫦娥五号探月之旅

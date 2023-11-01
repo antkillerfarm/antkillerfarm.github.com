@@ -9,6 +9,36 @@ category: Nature
 
 # 黑洞
 
+## EHT
+
+![](/images/img2/Event_horizon_telescope_logo_2019.png)
+
+如它的logo所示，Event Horizon Telescope是一个多地联合的天文观测组织。和它类似的组织还有（The Global mm-VLBI Array, GMVA）。两个阵营的差别在于GMVA观测波长为3毫米，而EHT在1.3毫米。
+
+![](/images/img2/The_Event_Horizon_Telescope_and_Global_mm-VLBI_Array_on_the_Earth.jpg)
+
+EHT（蓝绿线）与GMVA（黄线）之望远镜阵列分布。其中ALMA和IRAM同时属于两个阵营。
+
+## ALMA
+
+Atacama Large Millimeter/submillimeter Array是EHT计划的主力天文台。由欧洲南方天文台(European Southern Observatory, ESO)和美国国家射电天文台（National Radio Astronomy Observatory, NRAO）共同负责。
+
+1962年10月5日，德国、法国、比利时、荷兰、瑞典五国在巴黎签署了一份协议，决定共同在南半球建立天文台，并命名为欧洲南方天文台。1960年代中期，ESO考察了智利北部的阿塔卡玛沙漠，最终选定这里作为台址。这里是地球上气候最干燥的地区之一，海拔高，非常适合毫米波天文观测。
+
+![](/images/img2/ALMA.jpg)
+
+66座ALMA天线可用不同的配置法排成阵列，天线间的距离变化多样，最短可以是150米，最长可以到16公里。
+
+图中貌似还乱入了红警的基地车。没错，所有的天线都是可移动的。
+
+![](/images/img2/ALMA_2.jpg)
+
+这是基地车的正面图。
+
+https://mp.weixin.qq.com/s/NIMcgoXzTeAAumODJfEH_A
+
+在地球上，哪里能看到最澄澈的星空？（冰穹A）
+
 ## Katie Bouman
 
 ![](/images/img2/Katie_Bouman.jpg)
@@ -300,43 +330,3 @@ https://www.zhihu.com/question/315485320
 https://zhuanlan.zhihu.com/p/63783327
 
 从“梅林”到“猛禽”：“液氧甲烷”+“全流量分级循环”，星际火箭发动机的中级选择？（上）
-
-https://zhuanlan.zhihu.com/p/64002399
-
-从“梅林”到“猛禽”：“液氧甲烷”+“全流量分级循环”，星级火箭发动机的终级选择？（下）
-
-https://www.zhihu.com/question/391756708
-
-SpaceX的可回收火箭有什么神奇之处，为何其他航天大国还不能仿造？
-
-https://www.zhihu.com/question/597238433
-
-为什么这么多年直到马斯克出来才想到做可复用火箭？
-
-https://zhuanlan.zhihu.com/p/348707512
-
-运载火箭的性能参数（科普）
-
----
-
-齐奥尔科夫斯基火箭方程：
-
-$$\Delta V=v_e\ln \frac{m_0}{m_1}$$
-
-其中，$$\Delta V$$是速度增量，$$v_e$$是喷气速度，$$m_0,m_1$$分别是初始质量和终末质量。
-
----
-
-![](/images/img4/cost.jpg)
-
-星舰发射费用仅为200万美元。运力类似的波音SLS火箭每次发射费用为40亿美元，足足相差了2000倍。
-
-https://www.zhihu.com/question/471620540
-
-马斯克称猎鹰9号回收和翻新过程仅占成本的10%，参考维护成本高昂的航天飞机，此话可信度如何？
-
----
-
-小布什签署的美国航天发展规划，直接规定了要求NASA退出近地空间，要求他们重新带领美国航天天顶科技。与此同时，美国的商业航天开始全面崛起，后来大名鼎鼎的space-x，bigelow，blue origin大都从此时起步。
-
-奥巴马任期内美国商业航天的崛起就不必说了，经过全面扶植，space-x迅速成长为可以对抗任何一个国家发射市场的公司，在2018年甚至有能力挑战美国之外所有国家的总和。而NASA的焦点则全面转向深空，各种大型空间望远镜、昂贵的火星探测、木星土星探测，都达到人类历史上的巅峰。

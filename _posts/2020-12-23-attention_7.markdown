@@ -125,6 +125,20 @@ https://www.zhihu.com/question/589941496
 
 百度正式推出“文心一言”，然而港股股价已暴跌近10%，客观来说其能力与ChatGPT相较如何？
 
+## Chinchilla Law
+
+DeepMind研究了在给定算力预算下训练Transformer语言模型的最佳模型大小和tokens数量。
+
+应该使用1,400B (1.4T) tokens来训练参数量大小为70B的LLM最佳。即：每个参数需要大约20个文本token。
+
+https://zhuanlan.zhihu.com/p/627821763
+
+训练LLM需要多少数据？
+
+https://www.zhihu.com/question/628395521
+
+如何看待微软论文声称ChatGPT是20B(200亿)参数量的模型？
+
 # Large Language Model
 
 ![](/images/img5/huge_model.jpg)
@@ -194,19 +208,3 @@ LLM全景图（The Landscape of LLM）
 https://www.zhihu.com/question/604592470
 
 前两个月国产类ChatGPT大模型如雨后春笋，为何最近都没声音了?
-
-https://mp.weixin.qq.com/s/oqhi58NcEVH1oVrW2p4xlQ
-
-大模型参数高效微调技术原理综述（一）-背景、参数高效微调简介
-
-https://mp.weixin.qq.com/s/fUAUr9X3XLndfjga2QIHbA
-
-大模型参数高效微调技术原理综述（二）-BitFit、Prefix Tuning、Prompt Tuning
-
-https://mp.weixin.qq.com/s/f4l04f78F507JRrCawnV8w
-
-大模型参数高效微调技术原理综述（三）-P-Tuning、P-Tuning v2
-
-https://mp.weixin.qq.com/s/nUAcCz6mcgGuUeuTfgqmOQ
-
-大模型参数高效微调技术原理综述（四）-Adapter Tuning及其变体
