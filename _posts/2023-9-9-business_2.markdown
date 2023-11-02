@@ -67,6 +67,8 @@ https://www.zhihu.com/question/470015739
 
 老公做教育培训，老婆在恒大，买了恒大的期房又买了恒大财富。
 
+![](/images/img5/XJY.jpg)
+
 ---
 
 当时一名雇员的失误给IBM公司带来了巨大损失，当大家问IBM创始人Thomas J Watson是否会解雇这名员工时，他略带自嘲的回应道：“No, I just spent $600,000 training him. Why would I want somebody to hire his experience?”

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  开源社区分裂史, SDL, FFmpeg, 中文编码格式问题
+title:  开源社区分裂史, SDL, FFmpeg, 中文编码格式问题, Firefox
 category: technology 
 ---
 
@@ -191,3 +191,50 @@ GB系列按照发布时间的顺序，又包括GB2312、GBK和GB18030三种格�
 https://mp.weixin.qq.com/s/q-VmuWrsKSBMhWxjafPsng
 
 Unicode与UTF-8的区别
+
+# Firefox
+
+2017.11
+
+我的上网史是从1997年的Opera浏览器开始的，然而很快由于Windows升级的缘故换成IE。
+
+早期的IE，有个很不友好的设定——不支持标签页。这样一旦网页开多了，切换起来很不方便。
+
+于是在机缘巧合之下，我开始使用腾讯的Tencent Traveler浏览器（2003年）。本来是用的挺爽的，可惜到了2008年的某个时间，该浏览器浏览网页时老是崩溃，实在不能忍，于是换了Firefox。
+
+究其原因在于：我发现这种崩溃，实际上和TT没有多大关系，所有IE内核的浏览器都有这个问题。
+
+Firefox的界面其实一直以来变化不大，也就是4.0的时候将标签页放到窗口顶部，算是大改。
+
+这次的Firefox Quantum的确给人耳目一新的感觉。
+
+---
+
+Snap有时比较慢，可用如下方法：
+
+```
+sudo snap remove firefox
+sudo apt remove firefox
+sudo add-apt-repository ppa:mozillateam/ppa
+sudo gedit /etc/apt/preferences.d/mozillateamppa
+```
+
+/etc/apt/preferences.d/mozillateamppa:
+
+```
+Package: firefox*
+Pin: release o=LP-PPA-mozillateam
+Pin-Priority: 501
+```
+
+```
+sudo apt install firefox
+```
+
+## 插件
+
+话说火狐扩展开发方式变了好几次了。XUL/XPCOM overlays、bootstrapped extensions 、Add-on SDK，现在推WebExtensions APIs，把之前的都废弃了，说以后都是WebExtensions APIs，是为了和其他浏览器统一，为一个浏览器写扩展，个个浏览器都能用。
+
+DownThemAll：一个下载工具。这本是一个老牌的FF专用插件，但由于新版本改用WebExtensions，目前已经登陆Chrome平台。
+
+https://www.downthemall.org/
