@@ -381,3 +381,6 @@ https://zhuanlan.zhihu.com/p/73711222
 
 巧用torch.backends.cudnn.benchmark减少训练时间
 
+https://zhuanlan.zhihu.com/p/664723980
+
+单机多GPU训练

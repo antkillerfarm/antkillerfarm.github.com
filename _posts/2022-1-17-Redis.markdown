@@ -1,11 +1,55 @@
 ---
 layout: post
-title:  Redis, 图数据库
+title:  12306, Redis, 图数据库
 category: database 
 ---
 
 * toc
 {:toc}
+
+# 12306
+
+12306是铁科院开发的，外援是pivotal，所以12306的数据库是greenplum，缓存是gemfire。pivotal官方甚至有解决12306相关问题的论文。
+
+阿里云在关键的时间点帮助解决了余票查询的技术难点，把12306从业务爆发式增长时的窘境中解救了出来。
+
+https://www.zhihu.com/question/447094648
+
+铁路12306是谁研发的?
+
+---
+
+http://www.csdn.net/article/2015-02-10/2823900
+
+技术揭秘12306改造
+
+https://www.zhihu.com/answer/17575573
+
+超级计算机能不能用于12306？
+
+https://mp.weixin.qq.com/s/3F5lwv5LtOqBa7S0Owf4XQ
+
+虽然难用，但12306面临的业务场景复杂度可能是世界之最
+
+https://mp.weixin.qq.com/s/bF0gq2kIzKzKBP1QaM5ebA
+
+12306系统的秒杀“艺术”：如何抗住100万人同时抢1万张票？
+
+https://mp.weixin.qq.com/s/jWFGod7PqA06c44OkwW7EA
+
+“12306”的架构到底有多牛逼？
+
+## GemFire
+
+GemFire是一个内存数据库。官网：
+
+https://pivotal.io/pivotal-gemfire
+
+参考：
+
+http://soft.zhiding.cn/software_zone/2013/1230/3007113.shtml
+
+12306采用Pivotal GemFire分布式解决方案解决尖峰高流量并发问题
 
 # Redis
 
@@ -308,18 +352,6 @@ https://mp.weixin.qq.com/s/akfjTkRkPraCAoli-VPC9A
 美团图数据库平台建设及业务实践
 
 # 数据库参考资源+
-
-https://mp.weixin.qq.com/s/09BlPee0-kP-At2aDyDbMw
-
-中国数据库40年历史：隐秘的江湖与恩怨
-
-https://mp.weixin.qq.com/s/4lZ7My6cs4-VJQ1qGhQxZg
-
-AliSQL X-Cluste：基于X-Paxos的高性能强一致MySQL数据库
-
-https://mp.weixin.qq.com/s/tPzBlQGxGq1WEnXz5ggpxg
-
-sysbench在美团点评中的应用
 
 https://mp.weixin.qq.com/s/lJfIkLQaZnN4e9DxX163SA
 

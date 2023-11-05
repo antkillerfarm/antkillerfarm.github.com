@@ -222,6 +222,10 @@ Intel推出DPDK开发包的意义是什么？
 
 ---
 
+zfs作为支持一大堆cow特性的高级文件系统，性能比ext4+mdadm高，才是见了鬼吧。
+
+---
+
 https://mp.weixin.qq.com/s/2QAm6F109LV2koC64xIpqA
 
 简直不要太硬了！一文带你彻底理解文件系统

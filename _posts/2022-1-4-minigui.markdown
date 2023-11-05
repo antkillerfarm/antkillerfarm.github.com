@@ -91,6 +91,15 @@ https://github.com/lvgl/lvgl
 
 LVGL在桌面领域，一般使用SDL作为后端。
 
+Demo:
+
+```bash
+git clone --recursive https://github.com/lvgl/lv_port_pc_vscode
+cd lv_port_pc_vscode
+make
+./build/bin/demo
+```
+
 ---
 
 emwin是segger开发的闭源软件，由于ST购买了它的版权，所以在ST芯片领域用的比较多。

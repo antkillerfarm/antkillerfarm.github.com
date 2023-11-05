@@ -327,11 +327,11 @@ std::cout << s << std::endl; // HELLO
 
 std::string有很多实现方式，归纳起来有三类，而每类又有多种变化。
 
-1、无特殊处理（eager copy)，采用类似std::vector的数据结构。现在很少采用这种方式。
+1、无特殊处理（eager copy），采用类似std::vector的数据结构。现在很少采用这种方式。
 
-2、Copy-on-write(COW)，g++的std::string一直采用这种方式，不过慢慢被SSO取代。
+2、Copy-on-write（COW），g++的std::string一直采用这种方式，不过慢慢被SSO取代。
 
-3、短字符串优化（SSO)，利用string对象本身的空间来存储短字符串。VisualC++2010、clang libc、linux gnu5.x之后都采用的这种方式。
+3、短字符串优化（SSO），利用string对象本身的空间来存储短字符串。Visual C++ 2010、clang libc、linux gnu5.x之后都采用的这种方式。
 
 https://www.cnblogs.com/cthon/p/9181979.html
 

@@ -55,6 +55,10 @@ https://zhuanlan.zhihu.com/p/266633373
 
 详解CUDA的Context、Stream、Warp、SM、SP、Kernel、Block、Grid
 
+https://www.zhihu.com/question/35361192
+
+CUDA为什么要分线程块和线程网格？
+
 ## 产品线
 
 Tesla产品专为数据中心与工作站计算应用而设计。

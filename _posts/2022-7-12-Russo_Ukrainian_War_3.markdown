@@ -61,6 +61,10 @@ https://www.bilibili.com/video/BV1Tr4y1a7XW/
 
 ---
 
+不投降运动（乌克兰语：Ні капітуляції!）是发生在乌克兰的一系列示威运动，旨在反对乌克兰总统弗拉基米尔·泽连斯基在乌克兰东部的政策。示威者认为以“施泰因迈尔方式”来执行明斯克协议等同在俄乌战争向俄罗斯投降。
+
+---
+
 2022年4月，基辅战役胜利之后。美国人Les Claypool写了一首歌《Zelensky: The Man With the Iron Balls》。
 
 One person can make a difference/ Be they short, thin, fat, or tall/ That person can live with dignity/ If they stand with some iron balls.
@@ -232,11 +236,3 @@ We will not forget! We will not forgive! Bucha. Irpin. Hostomel.
 >卢布林联合：1569年7月1日由波兰王国和立陶宛大公国在卢布林通过了成立统一的波兰共和国的决议。当然这个所谓的“波兰共和国”其实是一个共主邦联。而伴随着卢布林联合的成立，波兰立陶宛联邦诞生，即波兰-立陶宛王国。立陶宛大公国正式与波兰王国两国合并！
 
 >2018年，乌克兰东正教会，获得东正教名义领袖君士坦丁堡牧首批准，脱离莫斯科宗主教区独立，成立自主教会，终止俄乌东正教会逾300年的从属关系。
-
----
-
-泽圣表现出了可以成为全罗斯沙皇的勇气和演技。
-
-沙皇这个官，德国人当得，格鲁吉亚人当得。泽圣小罗斯人凭什么当不得。
-
-就在前几天，绍伊古也去了前线，还在直升机上观摩了俄军阵地，但是竟然有网友报出了绍伊古的位置。离前线75km左右，海马斯都打不到！！泽圣呢？离前线大约3-5km。
