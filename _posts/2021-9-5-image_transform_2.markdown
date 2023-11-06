@@ -169,6 +169,10 @@ https://zhuanlan.zhihu.com/p/626004957
 
 利用AI在独立游戏项目中大干快上
 
+https://zhuanlan.zhihu.com/p/664461927
+
+一天时间，我用AI做了一个恐龙网站
+
 ## 参考
 
 https://mp.weixin.qq.com/s/djkjAfUO_DefTP2drzY_iQ
