@@ -176,13 +176,3 @@ https://zhuanlan.zhihu.com/p/557996954
 https://zhuanlan.zhihu.com/p/515450547
 
 星链战争——乌军炮兵是如何在战场上超越俄军同行的？
-
----
-
-![](/images/img5/Vilkha.jpg)
-
-乌克兰本土生产的Vilkha地对地导弹，GPS和惯性制导使其最大有效范围>150 Km(90 mi)，圆概率误差(CEP)为10m（约30英尺）。
-
-https://www.zhihu.com/answer/3187117914
-
-从俄乌战争看，坦克受到的全向攻击越来越多，未来坦克设计，把超厚前装甲分散到上下左右是否明智？

@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  lex&yacc, 编译原理
+title:  lex & yacc, 编译原理
 category: toolchain 
 ---
 
 * toc
 {:toc}
 
-# lex&yacc
+# lex & yacc
 
 2014.2
 
@@ -61,6 +61,16 @@ stmt_list:
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/mylex
 
 这里使用的是lex/yacc在linux上现代版本——flex/bison。
+
+---
+
+Recursive Descent Parsing
+
+Operator-Precedence Parsing
+
+https://www.zhihu.com/question/413146859
+
+如何理解Pratt Parser？
 
 ---
 

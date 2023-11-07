@@ -273,6 +273,10 @@ Github进行fork后如何与原仓库同步：
 
 `git push`
 
+解决server certificate verification failed问题：
+
+`git config --global http.sslverify false`
+
 ## gitee
 
 gitee是github的国内山寨产品。

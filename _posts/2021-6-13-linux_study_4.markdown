@@ -7,42 +7,6 @@ category: linux
 * toc
 {:toc}
 
-# 剪贴板
-
-Linux下的GUI程序的剪贴板功能一般是由X11提供的。
-
-X11支持复数个剪贴板，每个剪贴板都有一个名字。一般常见/常用的：
-
-PRIMARY剪贴板（选中的文本内容会被送到这个剪贴板，一般按鼠标中键可以粘贴）
-
-CLIPBOARD剪贴板（更加接近于Windows下的剪贴板的存在，Ctrl-C/V功能一般作用于这个剪贴板）。
-
-此外，X11的剪贴板里的内容似乎是由内容来源的程序来保存的，内容来源程序终止的话剪贴板就会被清空。这时一般需要一个常驻后台的剪贴板管理器（Clipboard Manager）来接管剪贴板的内容。
-
-常用的Clipboard Manager的列表如下：
-
-https://wiki.archlinux.org/title/Clipboard
-
-相关的标准文件：
-
-https://tronche.com/gui/x/icccm/
-
-参考：
-
-https://www.uninformativ.de/blog/postings/2017-04-02/0/POSTING-en.html
-
-X11: How does “the” clipboard work?
-
-https://wiki.archlinux.org/title/Clipboard
-
-https://www.zhihu.com/question/66284095
-
-电脑复制粘贴背后发生了什么？
-
-https://linux.cn/article-7329-1.html
-
-面向Linux的10款最佳剪贴板管理器
-
 # SSH
 
 ## keygen
@@ -391,3 +355,21 @@ http://tldr.sh/
 https://linuxtoy.org/archives/tldr.html
 
 tldr: 简读Manpage
+
+# Systemd
+
+![](/images/img5/Systemd.png)
+
+内核初始化的最后一步就是启动PID为1的init进程。这个进程是系统的第一个进程。它负责产生其他所有的用户进程。
+
+init系统大体上的演进路线为sysvinit -> upstart -> systemd。
+
+2010年，德国程序员Lennart Poettering（同时也是Avahi和PulseAudio的作者）发明了Systemd。
+
+http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html
+
+Systemd入门教程：命令篇
+
+http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html
+
+Systemd入门教程：实战篇

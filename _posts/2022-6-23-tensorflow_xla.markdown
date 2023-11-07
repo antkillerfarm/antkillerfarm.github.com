@@ -153,7 +153,7 @@ tensorflow/compiler/tf2xla/kernels/conv_ops.cc
 REGISTER_XLA_OP(Name("Conv2D"), Conv2DOp);
 ConvOp::Compile
 MakeXlaForwardConvOp
-HandleConcatenate
+HandleConvolution
 ```
 
 ## 底层实现
