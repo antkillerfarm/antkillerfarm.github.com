@@ -356,3 +356,11 @@ https://mp.weixin.qq.com/s/GZkGfwrfMTzrMfki8LKbIw
 https://mp.weixin.qq.com/s/KEu6qCl-En6HiKGo2pgEQg
 
 TensorBay：一款易用的像Git一样数据版本管理工具！
+
+# 二战轶事=
+
+诺曼底登陆的登陆日一共选了5个登陆点，从东到西依次是剑海滩、朱诺海滩、黄金海滩、奥马哈海滩和犹他海滩，其他四个海滩都没有遇到什么抵抗，散着步、抽着烟就上去了，只有奥马哈海滩损失惨重，算是踢到了铁板上。
+
+https://www.zhihu.com/question/273748436
+
+《拯救大兵瑞恩》开头的抢滩登陆真的符合军事学吗？
