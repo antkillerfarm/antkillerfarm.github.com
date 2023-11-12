@@ -183,70 +183,104 @@ https://mp.weixin.qq.com/s/8QrNvb-1zmrTWo5zThpyvg
 
 U²-Net：使用显著性物体检测来生成真实的铅笔肖像画
 
-# 明+
+# Attention进阶+
 
-清军以绝对优势的兵力猛攻了二十天，直到七月十六日金华才被攻破。朱大典带领家属和亲信将校来到火药局，用绳索捆在火药桶上，点燃引线，轰然一声，壮烈成仁。朱大典在明末官场上以贪婪著称，然而当民族危难之时他却破家纾难，体现了威武不能屈的气节。
+https://mp.weixin.qq.com/s/l4HN0_VzaiO-DwtNp9cLVA
 
-朱大典贪婪之名最早是出自东林党人张岱的记述还有东林党人黄宗羲的学生邵廷采所著的《东南纪事》。而朱大典跟东林党又是长期的政敌关系，东林党人所说的朱大典贪婪的可信度有多少，是否真实客观就很值得怀疑了。
+循环注意力区域实现图像多标签分类
 
----
+https://mp.weixin.qq.com/s/zhZLK4pgJzQXN49YkYnSjA
 
-大清兵破浙兵大阵而入，数千人围仲揆于阵前。其亲兵者五人皆出，皆乱刃斩死。劝其降，仲揆勒甲持刀而出，众将皆上前迎战，其竟连杀十七人。众将惶恐退之，引万箭齐发，仲揆被乱箭射死。
+自适应注意力机制在Image Caption中的应用
 
-童仲揆是万历年间的武举人，是金陵卫军户出身，曾在南京、浙江、四川等多地任官，参与过征缅和平定播州杨应龙之乱。去辽东时已经六十多岁了。
+https://mp.weixin.qq.com/s/uvr-G5-_lKpyfyn5g7ES0w
 
-# 清+
+基于注意力机制，机器之心带你理解与训练神经机器翻译系统
 
-自郴州进发长沙，太平军8天时间就跨越600里山路，一路连克4县，平均每日行军75华里，清军惊呼“无一兵一勇与之面者”。
+https://mp.weixin.qq.com/s/ANpBFnsLXTIiW6WHzGrv2g
 
-醴陵之战，太平军9月7日寅时起程，“分由小路”进军，昼夜兼程，一路星驰，先锋曾水源于9月8日子时即一气呵成直下醴陵县城，创造了连续强行军18-20小时，跋涉170华里的军事奇迹。
+自注意力机制学习句子embedding
 
----
+https://mp.weixin.qq.com/s/49fQX8yiOIwDyof3PD01rA
 
-走这条贸易线的人的后台极硬，顺治九年在登州被查的一起走私案中，船上不仅发现了弓箭这样的军事物资，甚至还发现了束发用的网巾，本来按清朝的作风，这得值好几个满门抄斩，结果只把船长打了一顿板子，这件事就过去了。当地官府报告，船上发现的网巾是小孩的玩具，而那个小孩碰巧落水淹死了。如此扯淡的理由都能敷衍清廷，可见跑走私的人后台多硬。
+CMU&谷歌大脑提出新型问答模型QANet：仅使用卷积和自注意力，性能大大优于RNN
 
----
+https://mp.weixin.qq.com/s/c64XucML13OwI26_UE9xDQ
 
-广州将军，武职从一品官。广州将军的官阶与两广总督相同，地位却比其更高，全省绿营兵要受广州将军节制。
+滴滴披露语音识别新进展：基于Attention显著提升中文识别率
 
-广州将军地位高于两广总督（虽然和平时期不如两广总督实惠）。清代很特殊，为了防止汉人造反，驻防将军地位很高且必须由旗人担任，不受地方督抚干扰。广东官员有事集体上奏时，广州将军领衔。
+https://mp.weixin.qq.com/s/7OYY3L7gL4wVv_EjoosOHA
 
-满清更像是一个殖民政权，核心是满洲八旗。广州将军相当于两广地区八旗军队的总指挥官，正儿八经的“皇军”，两广总督节制的都是“伪军”啊。
+如何增强Attention Model的推理能力
 
-https://www.zhihu.com/question/623203807
+https://mp.weixin.qq.com/s/9Kt6_DfeYRnhsb10aCSFGw
 
-电影《武状元苏乞儿》里面的广州将军的级别有多高？
+FAGAN：完全注意力机制（Full Attention）GAN，Self-attention+GAN
 
-# 宋+
+https://mp.weixin.qq.com/s/lZOIK5BRXZrmL_Z9crl6sA
 
-历史上的大理段氏，在五代后晋时期建立大理国，统治了云南地区318年（937年—1254年），随后投降蒙古军，成为蒙古汗国和元帝国的大理总管，又继续统治了今天云南中西部地区128年，于明初洪武十五年（1382年）被明军攻灭，作为我国云南地区统治者一共存在了446年。
+机器翻译新突破！“普适注意力”模型：概念简单参数少，性能大增
 
-https://www.zhihu.com/answer/524642062
+https://mp.weixin.qq.com/s/jRfOzKO6OlQLokIzipbqUQ
 
-为什么金庸先生在《天龙八部》里会把大理段氏写成一个江湖味十足的皇权，难道历史上这个政权真的很江湖么？
+为什么使用自注意力机制？
 
----
+https://zhuanlan.zhihu.com/p/339123850
 
-三百户为谋克，十谋克为猛安。
+关于attention机制的一些细节的思考
 
----
+https://mp.weixin.qq.com/s/n4mzHSweOT-vDWBGs0XFbw
 
-https://www.zhihu.com/question/524124918
+卷积神经网络中的自我注意
 
-北宋拿回了几代人心心念念的幽云十六州，为什么那里的汉人反而日子过得糟糕了？
+https://mp.weixin.qq.com/s/h7sLwVXb_UI8jvJU-oe3Cg
 
-https://www.zhihu.com/question/313988961
+Google AI提出“透明注意力”机制，实现更深层NMT模型
 
-北宋的种家军为何没有杨家将有名？
+https://mp.weixin.qq.com/s/1LYz5SH5rVnPPJ0tZvRQAA
 
-# 秦汉+
+从各种注意力机制窥探深度学习在NLP中的神威
 
-康成文婢：东汉郑玄，博通今古，对经学颇有造诣。家中的奴婢，因耳濡目染多了，也知书达礼，动辄说话便引经文。
+https://zhuanlan.zhihu.com/p/33078323
 
-郑玄家奴婢皆读书。尝使一婢不称旨，将挞之，方自陈说，玄怒，使人曳著泥中。须臾，复有一婢来，问曰：“胡为乎泥中?”答曰：“薄言往诉，逢彼之怒。”
+数字串识别：基于位置的硬性注意力机制
 
-“胡为乎泥中”：出自《诗·邶风·式微》。
+https://mp.weixin.qq.com/s/-gAISWjSiG6ccPuOPAEg3A
 
-“薄言往诉，逢彼之怒”：出自《诗·邶风·柏舟》。
+五张动图，看清神经机器翻译里的Attention！
 
-郑玄家里的奴婢都曾读书。他曾经指使一婢女不称意旨，将要鞭打她，那婢女正在自我辩解，郑玄生了气，让人把她拉到泥水中。过了一会儿，又有一婢女过来，问道：“为什么在泥中?”她回答说：“我急忙地申说，谁知反碰上他发怒。”
+https://mp.weixin.qq.com/s/aixpv9t1PLPRWUP6PvZ0EQ
+
+用自注意力增强卷积：这是新老两代神经网络的对话
+
+https://mp.weixin.qq.com/s/i3Xd_IB7R0-QPztn-pgpng
+
+遍地开花的Attention，你真的懂吗？
+
+https://zhuanlan.zhihu.com/p/151640509
+
+注意力机制在推荐系统中的应用
+
+https://mp.weixin.qq.com/s/-SU5cNbklI31WLmTawZJIQ
+
+自注意模型学不好？这个方法帮你解决！
+
+https://mp.weixin.qq.com/s/K5EbO0djcXHN4K5LQiMh5g
+
+Triplet Attention机制让Channel和Spatial交互更加丰富
+
+https://mp.weixin.qq.com/s/C4f0N_bVWU9YPY34t-HAEA
+
+UNC&Adobe提出模块化注意力模型MAttNet，解决指示表达的理解问题
+
+https://mp.weixin.qq.com/s/V3brXuey7Gear0f_KAdq2A
+
+基于注意力机制的交易上下文感知推荐，悉尼科技大学和电子科技大学最新工作
+
+https://mp.weixin.qq.com/s/2gxp7A38epQWoy7wK8Nl6A
+
+谷歌翻译最新突破，“关注机制”让机器读懂词与词的联系
+
+https://zhuanlan.zhihu.com/p/25928551
+
+用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践

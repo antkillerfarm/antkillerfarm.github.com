@@ -113,6 +113,10 @@ http://www.hanhuns.com/
 
 PS：2005年刚接触《罗马：全面战争》的时候，我的PC跑不动战术界面，当时基本是把他当英雄无敌类的战略游戏来玩。
 
+2023.11
+
+体验了一下《战锤2：全面战争》，确实给人耳目一新的感觉。
+
 ## Red Alert
 
 “龟龟便利店”，是《红色警戒2》中的著名空耳，有的玩家可能听到的是“龟龟的败类带”，那都不重要，因为原文实际为“We will bury them”，是游戏里苏军犀牛坦克下令攻击时所发出台词（尤里的复仇版）。
@@ -224,9 +228,3 @@ Emperor: Battle for Dune
 SAGE引擎的开源版本OpenSAGE：
 
 https://github.com/OpenSAGE/OpenSAGE/
-
-## OpenRCT2
-
-RollerCoaster Tycoon 2（过山车大亨）的开源复刻版：
-
-https://openrct2.org/
