@@ -7,122 +7,9 @@ category: ML
 * toc
 {:toc}
 
-# 关联规则挖掘（续）
+# 关联规则挖掘
 
-## Apriori算法
-
-Apriori算法的思路如下：
-
-1.第一次扫描交易数据库D时，产生1-频繁集。在此基础上经过连接、修剪产生2-频繁集。以此类推，直到无法产生更高阶的频繁集为止。
-
-2.在第k次循环中，也就是产生k-频繁集的时候，首先产生k-候选集，k-候选集中每一个项集都是对两个只有一个项不同的属于k-1频繁集的项集连接产生的。
-
-3.k-候选集经过筛选后产生k-频繁集。
-
-从频繁集的定义，我们可以很容易的推导出如下结论：
-
-**如果项目集X是频繁集，那么它的非空子集都是频繁集。**
-
-如果k-候选集中的项集Y，包含有某个k-1阶子集不属于k-1频繁集，那么Y就不可能是频繁集，应该从候选集中裁剪掉。Apriori算法就是利用了频繁集的这个性质。
-
-参考：
-
-http://zhan.renren.com/dmeryuyang?gid=3602888498023976650
-
-小白学数据分析---->关联分析学习算法篇Apriori
-
-http://blog.csdn.net/lizhengnanhua/article/details/9061755
-
-Apriori算法详解之：一、相关概念和核心步骤
-
-https://mp.weixin.qq.com/s/W1Bu_I3p2DO_sT2Nl0582w
-
-Apriori算法原理总结
-
-http://blog.csdn.net/u013250416/article/details/52701633
-
-关联规则DHP算法详解
-
-https://www.jianshu.com/p/1ccf4d450da0
-
-频繁模式挖掘-DHP算法详解
-
-## FP-growth算法
-
-Aprori算法利用频繁集的两个特性，过滤了很多无关的集合，效率提高不少，但是我们发现Apriori算法是一个候选消除算法，每一次消除都需要扫描一次所有数据记录，造成整个算法在面临大数据集时显得无能为力。
-
-FP-Growth算法是韩家炜等人在2000年提出的关联分析算法。它通过构造一个树结构来压缩数据记录，使得挖掘频繁项集只需要扫描两次数据记录，而且该算法不需要生成候选集合，所以效率会比较高。
-
->注：韩家炜，中国科学技术大学本科（1979）+中科院硕士+威斯康辛大学博士（1985）。美国伊利诺伊大学香槟分校计算机系教授，IEEE和ACM院士。
-
-FpGrowth算法的平均效率远高于Apriori算法，但是它并不能保证高效率，它的效率依赖于数据集，当数据集中的频繁项集的没有公共项时，所有的项集都挂在根结点上，不能实现压缩存储，而且Fptree还需要其他的开销，需要存储空间更大，使用FpGrowth算法前，对数据分析一下，看是否适合用FpGrowth算法。
-
-参考：
-
-http://www.cnblogs.com/fengfenggirl/p/associate_fpgowth.html
-
-数据挖掘系列（2）--关联规则FpGrowth算法
-
-https://mp.weixin.qq.com/s/zD5hwBmMmSxzTj-3YzZKdg
-
-频繁集挖掘FP Tree详解
-
-https://mp.weixin.qq.com/s/ahmVB0ktJ2PG37ErO-vIiQ
-
-FP-growth算法：高效频繁项集挖掘
-
-## 幸存者偏差
-
-二战期间，盟军需要对战斗机进行装甲加厚，以提高生还率，但由于军费有限，只能进行局部升级。那么问题来了，究竟哪个部位最关键，最值得把装甲加厚来抵御敌方炮火呢？人们众口不一，最后一致决定采用统计调查的方式来解决，即：仔细检查每一驾战斗机返回时受到的损伤程度，计算出飞机整体的受弹状况，然后根据大数据分析决定。
-
-不久，统计数据很快出炉：盟军飞机普遍受弹最严重的地方是机翼，有的几乎被打成了筛子；相反，受弹最轻的地方是驾驶舱及尾部发动机，许多飞机的驾驶舱甚至连擦伤都没有。
-
-![](/images/article/Survivorship-bias.png)
-
-正当所有人拿着这份确凿无疑的报告准备给机翼加厚装甲时，统计学家Abraham Wald阻拦了他们，同时提出了一个完全相反的方案：加厚驾驶舱与尾部。理由非常简单：这两个位置中弹的飞机，都没有回来。换言之，它们是一份沉默的数据——“死人不会说话”。
-
-最后，盟军高层纷纷听取了这个建议，加固了驾驶舱与尾部，果然空中战场局势得以好转，驾驶员生还率也大大提高。事实证明，这是一个无比英明的措施。
-
-这个事例也被称作“幸存者偏差”（Survivorship bias）。它是一种典型的由于模型不当，导致的“**数据说谎**”。
-
->注：Abraham Wald，1902～1950，生于奥匈帝国，维也纳大学博士。1938年为躲避纳粹，移民美国，哥伦比亚大学教授。Herman Chernoff的导师。其子Robert M. Wald，为著名理论物理学家，芝加哥大学教授，黑洞理论的提出者之一。
-
->记者在列车上采访：这位乘客，您买到火车票了吗？   
->乘客甲：买到了！旁边这位呢？   
->乘客乙：买到了。   
->记者随机采访了十几个人，高兴地发现大家都买到了回家的火车票。
-
-参考：
-
-https://mp.weixin.qq.com/s/49YCWbmyoMW-0NyK_aK4Tg
-
-大师告诉你，学习数学有什么用
-
-https://mp.weixin.qq.com/s/5WYSbh-CBBhIy7ZnWrTFrA
-
-从数学的角度看，为什么会有这么多渣男？
-
-## 关联规则评价
-
-“数据说谎”的问题很普遍。再看这样一个例子，我们分析一个购物篮数据中购买游戏光碟和购买影片光碟之间的关联关系。交易数据集共有10,000条记录，如表1所示：
-
-| 表1 | 买游戏 | 不买游戏 | 行总计 |
-|:--:|:--|:--:|:--|
-| 买影片 | 4000 | 3500 | 7500 |
-| 不买影片 | 2000 | 500 | 2500 |
-| 列总计 | 6000 | 4000 | 10000 |
-
-假设我们设置得最小支持度为30%，最小自信度为60%。从上面的表中，可以得到：
-
-$$support(买游戏光碟\to 买影片光碟)=4000/10000=40\%$$
-
-$$confidence(买游戏光碟\to 买影片光碟)=4000/6000=66\%$$
-
-这条规则的支持度和自信度都满足要求，因此我们很兴奋，我们找到了一条强规则，于是我们建议超市把影片光碟和游戏光碟放在一起，可以提高销量。
-
-可是我们想想，一个喜欢的玩游戏的人会有时间看影片么，这个规则是不是有问题，事实上这条规则误导了我们。在整个数据集中买影片光碟的概率p(买影片)=7500/10000=75%，而买游戏的人也买影片的概率只有66%，66%<75%恰恰说明了买游戏光碟抑制了影片光碟的购买，也就是说买了游戏光碟的人更倾向于不买影片光碟，这才是符合现实的。
-
-从上面的例子我们看到，支持度和自信度并不总能成功滤掉那些我们不感兴趣的规则，因此我们需要一些新的评价标准，下面介绍几种评价标准：
+## 关联规则评价（续）
 
 ### 相关性系数
 
@@ -220,14 +107,215 @@ https://mp.weixin.qq.com/s/s1Snb4XnIQk1DcK3nESilw
 
 PrefixSpan算法原理详解
 
-# 俄乌战争+
+# Loss function详解
 
-在昨天的联合国安理会会议上，俄罗斯代表涅边贾要求讨论乌克兰使用“昆虫武器”的问题，认为“带病毒或细菌”的鸟类和蚊子会感染俄罗斯士兵。
+![](/images/img2/loss.png)
 
-结果阿尔巴尼亚驻联合国代表霍贾代乌克兰“强势出头”。他大声说道：“我们安理会没事可做了吗？我们不能因为俄罗斯喜欢说话，喜欢陶醉于他们喜欢的言论，歪曲现实，我们就跟着随波逐流。今天我们再次听到这些荒谬的指责，特别是什么所谓的小鸟，还有什么蚊子。”
+## Mean Squared Error(MSE)/Mean Squared Deviation(MSD)
 
-随后，这位阿尔巴尼亚代表“贾”质问那位俄罗斯代表“贾”：“我想知道，这些蚊子是如何区别俄罗斯人和乌克兰人的？”
+$$\operatorname{MSE}=\frac{1}{n}\sum_{i=1}^n(\hat{Y_i} - Y_i)^2$$
 
-https://press.un.org/en/2022/sc15084.doc.htm
+## Symmetric Mean Absolute Percentage Error(SMAPE or sMAPE)
 
-该次会议的纪要
+MSE定义的误差，实际上是向量空间中的欧氏距离，这也可称为绝对误差。而有些情况下，可能相对误差（即百分比误差）更有意义些：
+
+$$\text{SMAPE} = \frac 1 n \sum_{t=1}^n \frac{\left|F_t-A_t\right|}{(A_t+F_t)/2}$$
+
+上式的问题在于$$A_t+F_t\le 0$$时，该值无意义。为了解决该问题，可用如下变种：
+
+$$\text{SMAPE} = \frac{100\%}{n} \sum_{t=1}^n \frac{|F_t-A_t|}{|A_t|+|F_t|}$$
+
+参考：
+
+https://mp.weixin.qq.com/s/TyjA2M_-gKO1Hm1jLRetZg
+
+MAPE与sMAPE的优缺点
+
+## Mean Absolute Error(MAE)
+
+$$\mathrm{MAE} = \frac{1}{n}\sum_{i=1}^n \left| f_i-y_i\right| =\frac{1}{n}\sum_{i=1}^n \left| e_i \right|$$
+
+这个可以看作是MSE的1范数版本。
+
+## Mean Percentage Error(MPE)
+
+$$\text{MPE} = \frac{100\%}{n}\sum_{t=1}^n \frac{a_t-f_t}{a_t}$$
+
+不同的loss函数有不同的用途，比如softmax一般用Cross Entropy作为loss函数。如下图所示：
+
+![](/images/article/cross_vs_mse.png)
+
+## loss function比较
+
+![](/images/article/loss_function.png)
+
+这里m代表了置信度，越靠近右边置信度越高。
+
+其中蓝色的阶跃函数又被称为Gold Standard，黄金标准，因为这是最准确无误的分类器loss function了。分对了loss为0，分错了loss为1，且loss不随到分界面的距离的增加而增加，也就是说这个分类器非常鲁棒。但可惜的是，它不连续，求解这个问题是NP-hard的，所以才有了各种我们熟知的分类器。
+
+其中红色线条就是SVM了，由于它在m=1处有个不可导的转折点，右边都是0，所以分类正确的置信度超过一定的数之后，对分界面的确定就没有一点贡献了。
+
+《机器学习（五）》中提到的SVM软间隔，其所使用的loss function，又被称为Hinge loss函数：
+
+$$l_{hinge}(z)=\max(0,1-z)$$
+
+除此之外，exponential loss函数：
+
+$$l_{exp}(z)=\exp(-z)$$
+
+和logistic loss函数：
+
+$$l_{log}(z)=\log(1+\exp(-z))$$
+
+也是较常用的SVM loss function。
+
+黄色线条是Logistic Regression的损失函数，与SVM不同的是，它非常平滑，但本质跟SVM差别不大。
+
+绿色线条是boost算法使用的损失函数。
+
+黑色线条是ELM（Extreme learning machine）算法的损失函数。它的优点是有解析解，不必使用梯度下降等迭代方法，可直接计算得到最优解。但缺点是随着分类的置信度的增加，loss不降反升，因此，最终准确率有限。此外，解析算法相比迭代算法，对于大数据的适应较差，这也是该方法的局限所在。
+
+参见：
+
+https://www.zhihu.com/question/28810567
+
+Extreme learning machine(ELM)到底怎么样，有没有做的前途？
+
+## Softmax详解
+
+首先给出Softmax function的定义:
+
+$$y_c=\zeta(\textbf{z})_c = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} \text{  for } c=1, \dots, C$$
+
+从中可以很容易的发现，如果$$z_c$$的值过大，朴素的直接计算会上溢出或下溢出。
+
+解决办法：
+
+$$z_c\leftarrow z_c-a,a=\max\{z_1,\dots,z_C\}$$
+
+证明：
+
+$$\zeta(\textbf{z-a})_c = \dfrac{e^{z_c}\cdot e^{-a}}{\sum_{d=1}^C{e^{z_d}\cdot e^{-a}}} = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} = \zeta(\textbf{z})_c$$
+
+Softmax的损失函数是cross entropy loss function：
+
+$$\xi(X, Y) = \sum_{i=1}^n \xi(\textbf{t}_i, \textbf{y}_i) = - \sum_{i=1}^n \sum_{i=c}^C t_{ic} \cdot \log(y_{ic})$$
+
+Softmax + cross entropy loss function的反向传播算法：
+
+$$\begin{align}
+\dfrac{\partial\xi}{\partial z_i} &= - \sum_{j=1}^C \dfrac{\partial t_j \log(y_j)}{\partial z_i} \\
+&= - \sum_{j=1}^C t_j \dfrac{\partial \log(y_j)}{\partial z_i} \\
+&= - \sum_{j=1}^C t_j \dfrac{1}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
+&= - \dfrac{t_i}{y_i} \dfrac{\partial y_i}{\partial z_i} - \sum_{j \neq i}^C \dfrac{t_j}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
+&= - \dfrac{t_i}{y_i} y_i(1-y_i) - \sum_{j \neq i}^{C} \dfrac{t_j}{y_j}(-y_jy_j) \\
+&= -t_i + t_iy_i + \sum_{j \neq i}^{C} t_jy_i \\
+&= -t_i + \sum_{j=1}^C t_jy_i \\
+&= -t_i + y_i \sum_{j=1}^C t_j \\
+&= y_i - t_i
+\end{align}$$
+
+但是遗憾的是，由于Loss中可能存在正则项，直接用这个的机会并不多。
+
+常用的还是Softmax自己的反向传播算法：
+
+$$\nabla e_{(x)} = \nabla e_{(s)} \begin{bmatrix} -s_{1}s_{1} + s_{1} & -s_{1}s_{2} & \cdots & -s_{1}s_{k} \\ -s_{2}s_{1} & -s_{2}s_{2} + s_{2} & \cdots & -s_{2}s_{k} \\ \vdots & \vdots & \ddots & \vdots \\ -s_{k}s_{1} & -s_{k}s_{2} & \cdots & -s_{k}s_{k} + s_{k} \end{bmatrix}$$
+
+参考：
+
+https://mp.weixin.qq.com/s/2xYgaeLlmmUfxiHCbCa8dQ
+
+softmax函数计算时候为什么要减去一个最大值？
+
+http://shuokay.com/2016/07/20/softmax-loss/
+
+Softmax输出及其反向传播推导
+
+https://blog.csdn.net/oBrightLamp/article/details/83959185
+
+softmax函数详解及误差反向传播的梯度求导。这哥们的blog专讲各种op的反向传播。
+
+https://mp.weixin.qq.com/s/HTIgKm8HuZZ_-lIQ3nIFhQ
+
+浅入深出之大话SoftMax
+
+https://mp.weixin.qq.com/s/XBK7T1P7z3rm3o-3BDNeOA
+
+三分钟带你对Softmax划重点
+
+https://mp.weixin.qq.com/s/vhvXsSsEHPVjJGqtCOOwLw
+
+Softmax和交叉熵的深度解析和Python实现
+
+https://mp.weixin.qq.com/s/rw-7-4_07TJ48Mq__HnYEg
+
+用Mixtape代替softmax，CMU提出新方法兼顾表达性和高效性
+
+https://zhuanlan.zhihu.com/p/97475133
+
+从Softmax到AMSoftmax
+
+https://mp.weixin.qq.com/s/fcCS4qDKdGBSKnA_SaYmZA
+
+你不知道的Softmax
+
+https://www.cnblogs.com/geekfx/p/14192158.html
+
+关于Softmax回归的反向传播求导数过程
+
+## Softmax loss
+
+通常我们使用的Softmax loss，实际上是由softmax和交叉熵(cross-entropy loss)loss组合而成，所以全称是softmax with cross-entropy loss。
+
+$$l(y,z)=-\sum_{k=0}^C y_k\log (f(z_k))$$
+
+$$f(z_k)=e^{z_k}/(\sum_j e^{z_j})$$
+
+原始的softmax loss非常优雅，简洁，被广泛用于分类问题。它的特点就是优化类间的距离非常棒，但是优化类内距离时比较弱。
+
+信息论视角：Softmax就是最小化在估计分类概率和“真实”分布之间的交叉熵。
+
+概率论解释：最大似然估计（MLE）。
+
+其实，softmax干的根本就不是max干的活，它并不是找出一个向量中的最大值。它反而和向量版的argmax的作用比较像。
+
+$$\mathrm{argmax} ([2,1,0.1])=[1,0,0]$$
+
+$$\mathrm{softmax} ([2,1,0.1])=[0.7,0.2,0.1]$$
+
+由于softmax不像argmax这样只选择唯一的一个，也就是所谓的one-hot ，因此得了soft的名字。
+
+softmax分类器对于分数是永远不会满意的：正确分类总能得到更高的可能性，错误分类总能得到更低的可能性，损失值总是能够更小。
+
+但SVM只要边界值被满足了就满意了，不会超过限制去细微地操作具体分数。
+
+参考：
+
+https://www.zhihu.com/question/294679135
+
+softmax和cross-entropy是什么关系？
+
+https://mp.weixin.qq.com/s/lEBbuyPJsUx49BzMaSVhHw
+
+Softmax与交叉熵的数学意义
+
+## logits
+
+logits本意是指一个事件发生与该事件不发生的比值的对数。假设一个事件发生的概率为 p，那么该事件的logits为：
+
+$$\text{logits}(p) = \log\frac{p}{1-p}$$
+
+但是在tensorflow中：
+
+```python
+logits = tf.matmul(X, W) + bias
+Y_pred = tf.nn.softmax(logits,name='Y_pred')
+```
+
+可见这里的logits是未进入softmax的概率，也就是**未归一化的概率**，或者说是softmax的输入。
+
+参考：
+
+https://www.zhihu.com/question/60751553
+
+如何理解深度学习源码里经常出现的logits？

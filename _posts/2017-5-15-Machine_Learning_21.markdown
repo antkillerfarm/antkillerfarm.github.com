@@ -7,218 +7,7 @@ category: ML
 * toc
 {:toc}
 
-# Loss function详解
-
-![](/images/img2/loss.png)
-
-## Mean Squared Error(MSE)/Mean Squared Deviation(MSD)
-
-$$\operatorname{MSE}=\frac{1}{n}\sum_{i=1}^n(\hat{Y_i} - Y_i)^2$$
-
-## Symmetric Mean Absolute Percentage Error(SMAPE or sMAPE)
-
-MSE定义的误差，实际上是向量空间中的欧氏距离，这也可称为绝对误差。而有些情况下，可能相对误差（即百分比误差）更有意义些：
-
-$$\text{SMAPE} = \frac 1 n \sum_{t=1}^n \frac{\left|F_t-A_t\right|}{(A_t+F_t)/2}$$
-
-上式的问题在于$$A_t+F_t\le 0$$时，该值无意义。为了解决该问题，可用如下变种：
-
-$$\text{SMAPE} = \frac{100\%}{n} \sum_{t=1}^n \frac{|F_t-A_t|}{|A_t|+|F_t|}$$
-
-参考：
-
-https://mp.weixin.qq.com/s/TyjA2M_-gKO1Hm1jLRetZg
-
-MAPE与sMAPE的优缺点
-
-## Mean Absolute Error(MAE)
-
-$$\mathrm{MAE} = \frac{1}{n}\sum_{i=1}^n \left| f_i-y_i\right| =\frac{1}{n}\sum_{i=1}^n \left| e_i \right|$$
-
-这个可以看作是MSE的1范数版本。
-
-## Mean Percentage Error(MPE)
-
-$$\text{MPE} = \frac{100\%}{n}\sum_{t=1}^n \frac{a_t-f_t}{a_t}$$
-
-不同的loss函数有不同的用途，比如softmax一般用Cross Entropy作为loss函数。如下图所示：
-
-![](/images/article/cross_vs_mse.png)
-
-## loss function比较
-
-![](/images/article/loss_function.png)
-
-这里m代表了置信度，越靠近右边置信度越高。
-
-其中蓝色的阶跃函数又被称为Gold Standard，黄金标准，因为这是最准确无误的分类器loss function了。分对了loss为0，分错了loss为1，且loss不随到分界面的距离的增加而增加，也就是说这个分类器非常鲁棒。但可惜的是，它不连续，求解这个问题是NP-hard的，所以才有了各种我们熟知的分类器。
-
-其中红色线条就是SVM了，由于它在m=1处有个不可导的转折点，右边都是0，所以分类正确的置信度超过一定的数之后，对分界面的确定就没有一点贡献了。
-
-《机器学习（五）》中提到的SVM软间隔，其所使用的loss function，又被称为Hinge loss函数：
-
-$$l_{hinge}(z)=\max(0,1-z)$$
-
-除此之外，exponential loss函数：
-
-$$l_{exp}(z)=\exp(-z)$$
-
-和logistic loss函数：
-
-$$l_{log}(z)=\log(1+\exp(-z))$$
-
-也是较常用的SVM loss function。
-
-黄色线条是Logistic Regression的损失函数，与SVM不同的是，它非常平滑，但本质跟SVM差别不大。
-
-绿色线条是boost算法使用的损失函数。
-
-黑色线条是ELM（Extreme learning machine）算法的损失函数。它的优点是有解析解，不必使用梯度下降等迭代方法，可直接计算得到最优解。但缺点是随着分类的置信度的增加，loss不降反升，因此，最终准确率有限。此外，解析算法相比迭代算法，对于大数据的适应较差，这也是该方法的局限所在。
-
-参见：
-
-https://www.zhihu.com/question/28810567
-
-Extreme learning machine(ELM)到底怎么样，有没有做的前途？
-
-## Softmax详解
-
-首先给出Softmax function的定义:
-
-$$y_c=\zeta(\textbf{z})_c = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} \text{  for } c=1, \dots, C$$
-
-从中可以很容易的发现，如果$$z_c$$的值过大，朴素的直接计算会上溢出或下溢出。
-
-解决办法：
-
-$$z_c\leftarrow z_c-a,a=\max\{z_1,\dots,z_C\}$$
-
-证明：
-
-$$\zeta(\textbf{z-a})_c = \dfrac{e^{z_c}\cdot e^{-a}}{\sum_{d=1}^C{e^{z_d}\cdot e^{-a}}} = \dfrac{e^{z_c}}{\sum_{d=1}^C{e^{z_d}}} = \zeta(\textbf{z})_c$$
-
-Softmax的损失函数是cross entropy loss function：
-
-$$\xi(X, Y) = \sum_{i=1}^n \xi(\textbf{t}_i, \textbf{y}_i) = - \sum_{i=1}^n \sum_{i=c}^C t_{ic} \cdot \log(y_{ic})$$
-
-Softmax + cross entropy loss function的反向传播算法：
-
-$$\begin{align}
-\dfrac{\partial\xi}{\partial z_i} &= - \sum_{j=1}^C \dfrac{\partial t_j \log(y_j)}{\partial z_i} \\
-&= - \sum_{j=1}^C t_j \dfrac{\partial \log(y_j)}{\partial z_i} \\
-&= - \sum_{j=1}^C t_j \dfrac{1}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
-&= - \dfrac{t_i}{y_i} \dfrac{\partial y_i}{\partial z_i} - \sum_{j \neq i}^C \dfrac{t_j}{y_j} \dfrac{\partial y_j}{\partial z_i} \\
-&= - \dfrac{t_i}{y_i} y_i(1-y_i) - \sum_{j \neq i}^{C} \dfrac{t_j}{y_j}(-y_jy_j) \\
-&= -t_i + t_iy_i + \sum_{j \neq i}^{C} t_jy_i \\
-&= -t_i + \sum_{j=1}^C t_jy_i \\
-&= -t_i + y_i \sum_{j=1}^C t_j \\
-&= y_i - t_i
-\end{align}$$
-
-但是遗憾的是，由于Loss中可能存在正则项，直接用这个的机会并不多。
-
-常用的还是Softmax自己的反向传播算法：
-
-$$\nabla e_{(x)} = \nabla e_{(s)} \begin{bmatrix} -s_{1}s_{1} + s_{1} & -s_{1}s_{2} & \cdots & -s_{1}s_{k} \\ -s_{2}s_{1} & -s_{2}s_{2} + s_{2} & \cdots & -s_{2}s_{k} \\ \vdots & \vdots & \ddots & \vdots \\ -s_{k}s_{1} & -s_{k}s_{2} & \cdots & -s_{k}s_{k} + s_{k} \end{bmatrix}$$
-
-参考：
-
-https://mp.weixin.qq.com/s/2xYgaeLlmmUfxiHCbCa8dQ
-
-softmax函数计算时候为什么要减去一个最大值？
-
-http://shuokay.com/2016/07/20/softmax-loss/
-
-Softmax输出及其反向传播推导
-
-https://blog.csdn.net/oBrightLamp/article/details/83959185
-
-softmax函数详解及误差反向传播的梯度求导。这哥们的blog专讲各种op的反向传播。
-
-https://mp.weixin.qq.com/s/HTIgKm8HuZZ_-lIQ3nIFhQ
-
-浅入深出之大话SoftMax
-
-https://mp.weixin.qq.com/s/XBK7T1P7z3rm3o-3BDNeOA
-
-三分钟带你对Softmax划重点
-
-https://mp.weixin.qq.com/s/vhvXsSsEHPVjJGqtCOOwLw
-
-Softmax和交叉熵的深度解析和Python实现
-
-https://mp.weixin.qq.com/s/rw-7-4_07TJ48Mq__HnYEg
-
-用Mixtape代替softmax，CMU提出新方法兼顾表达性和高效性
-
-https://zhuanlan.zhihu.com/p/97475133
-
-从Softmax到AMSoftmax
-
-https://mp.weixin.qq.com/s/fcCS4qDKdGBSKnA_SaYmZA
-
-你不知道的Softmax
-
-https://www.cnblogs.com/geekfx/p/14192158.html
-
-关于Softmax回归的反向传播求导数过程
-
-## Softmax loss
-
-通常我们使用的Softmax loss，实际上是由softmax和交叉熵(cross-entropy loss)loss组合而成，所以全称是softmax with cross-entropy loss。
-
-$$l(y,z)=-\sum_{k=0}^C y_k\log (f(z_k))$$
-
-$$f(z_k)=e^{z_k}/(\sum_j e^{z_j})$$
-
-原始的softmax loss非常优雅，简洁，被广泛用于分类问题。它的特点就是优化类间的距离非常棒，但是优化类内距离时比较弱。
-
-信息论视角：Softmax就是最小化在估计分类概率和“真实”分布之间的交叉熵。
-
-概率论解释：最大似然估计（MLE）。
-
-其实，softmax干的根本就不是max干的活，它并不是找出一个向量中的最大值。它反而和向量版的argmax的作用比较像。
-
-$$\mathrm{argmax} ([2,1,0.1])=[1,0,0]$$
-
-$$\mathrm{softmax} ([2,1,0.1])=[0.7,0.2,0.1]$$
-
-由于softmax不像argmax这样只选择唯一的一个，也就是所谓的one-hot ，因此得了soft的名字。
-
-softmax分类器对于分数是永远不会满意的：正确分类总能得到更高的可能性，错误分类总能得到更低的可能性，损失值总是能够更小。
-
-但SVM只要边界值被满足了就满意了，不会超过限制去细微地操作具体分数。
-
-参考：
-
-https://www.zhihu.com/question/294679135
-
-softmax和cross-entropy是什么关系？
-
-https://mp.weixin.qq.com/s/lEBbuyPJsUx49BzMaSVhHw
-
-Softmax与交叉熵的数学意义
-
-## logits
-
-logits本意是指一个事件发生与该事件不发生的比值的对数。假设一个事件发生的概率为 p，那么该事件的logits为：
-
-$$\text{logits}(p) = \log\frac{p}{1-p}$$
-
-但是在tensorflow中：
-
-```python
-logits = tf.matmul(X, W) + bias
-Y_pred = tf.nn.softmax(logits,name='Y_pred')
-```
-
-可见这里的logits是未进入softmax的概率，也就是**未归一化的概率**，或者说是softmax的输入。
-
-参考：
-
-https://www.zhihu.com/question/60751553
-
-如何理解深度学习源码里经常出现的logits？
+# Loss function详解（续）
 
 ## Weighted softmax loss
 
@@ -273,3 +62,153 @@ triplet loss在深度学习中主要应用在什么地方？有什么明显的�
 https://mp.weixin.qq.com/s/XB9VsW3NRwHua6AdRL3n8w
 
 Lossless Triplet Loss:一种高效的Siamese网络损失函数
+
+## 参考
+
+https://mp.weixin.qq.com/s/CPfhGxig9BMAgimBSOLy3g
+
+用于图像检索的等距离等分布三元组损失函数
+
+https://www.zhihu.com/question/375794498
+
+深度学习的多个loss如何平衡？
+
+https://mp.weixin.qq.com/s/tzY_lG0F9dP5Q-LmwuHLmQ
+
+常见损失函数和评价指标总结
+
+https://mp.weixin.qq.com/s/lw9frtqocqsS-q2KGfzO1Q
+
+深入理解计算机视觉中的损失函数
+
+https://mp.weixin.qq.com/s/_HQ5an_krRCYMVnwEgGJow
+
+深度学习的多个loss如何平衡 & 有哪些“魔改”损失函数，曾经拯救了你的深度学习模型？
+
+https://blog.csdn.net/shanglianlm/article/details/85019768
+
+十九种损失函数
+
+https://mp.weixin.qq.com/s/8oKiVRjtPQIH1D2HltsREQ
+
+图像分割损失函数最全面、最详细总结
+
+https://zhuanlan.zhihu.com/p/158853633
+
+一文理解Ranking Loss/Margin Loss/Triplet Loss
+
+https://zhuanlan.zhihu.com/p/235533342
+
+目标检测：Loss整理
+
+https://zhuanlan.zhihu.com/p/191355122
+
+NLP样本不均衡之常用损失函数对比
+
+https://mp.weixin.qq.com/s/KL_D8pWtcXCJHz7dd70jyw
+
+Face Recognition Loss on Mnist with Pytorch
+
+https://zhuanlan.zhihu.com/p/77686118
+
+机器学习常用损失函数小结
+
+https://zhuanlan.zhihu.com/p/38855840
+
+SphereReID：从人脸到行人，Softmax变种效果显著
+
+https://mp.weixin.qq.com/s/ZoLO6OilivPgle03KdNzCQ
+
+人脸识别中Softmax-based Loss的演化史
+
+https://mp.weixin.qq.com/s/DwtA6GivVCDvL4MXNDBFWg
+
+阿里巴巴提出DR Loss：解决目标检测的样本不平衡问题
+
+https://zhuanlan.zhihu.com/p/145927429
+
+DR Loss
+
+https://mp.weixin.qq.com/s/x0aBo-w669_2FyCGKWJ4iQ
+
+理解计算机视觉中的损失函数
+
+https://mp.weixin.qq.com/s/LOewKsxtWm7dFJS6ioryuw
+
+Siamese网络，Triplet Loss以及Circle Loss的解释
+
+https://zhuanlan.zhihu.com/p/58883095
+
+常见的损失函数(loss function)总结
+
+https://mp.weixin.qq.com/s/UjBCjwNDIxDoAoyQAf8V6A
+
+旷视研究院提出Circle Loss，革新深度特征学习范式
+
+https://mp.weixin.qq.com/s/5RpbXzuHp_tR6C_nBdiXGA
+
+Circle Loss：从统一的相似性对的优化角度进行深度特征学习
+
+https://zhuanlan.zhihu.com/p/304462034
+
+根据标签分布来选择损失函数
+
+https://mp.weixin.qq.com/s/Ywzbn2_QqYd1W8dv8cxupw
+
+Seesaw Loss：一种面向长尾目标检测的平衡损失函数
+
+https://mp.weixin.qq.com/s/qJIlbLuM7--wj3fDLUecYw
+
+Pytorch中的四种经典Loss源码解析
+
+https://mp.weixin.qq.com/s/7Jg-YvS3nvcPJ-zYhK96EA
+
+分享神经网络中设计loss function的一些技巧
+
+https://mp.weixin.qq.com/s/cYcztl8N9JF-XXp9xLJIxg
+
+一文道尽softmax loss及其变种
+
+https://mp.weixin.qq.com/s/MTeuRYutMiCmthEAObyAIg
+
+从最优化的角度看待Softmax损失函数
+
+https://zhuanlan.zhihu.com/p/23340343
+
+Center Loss及其在人脸识别中的应用
+
+https://zhuanlan.zhihu.com/p/34404607
+
+人脸识别的LOSS（上）
+
+https://zhuanlan.zhihu.com/p/34436551
+
+人脸识别的LOSS（下）
+
+https://mp.weixin.qq.com/s/kI22wSoyNT3QXXI8pVwbjA
+
+腾讯AI Lab提出新型损失函数LMCL：可显著增强人脸识别模型的判别能力
+
+https://mp.weixin.qq.com/s/8KM7wUg_lnFBd0fIoczTHQ
+
+用收缩损失(Shrinkage Loss)进行深度回归跟踪
+
+https://mp.weixin.qq.com/s/piYyhPbA6kAXuSE5yHfQ1g
+
+人脸识别损失函数综述
+
+https://zhuanlan.zhihu.com/p/60747096
+
+人脸识别损失函数简介与Pytorch实现：ArcFace、SphereFace、CosFace
+
+https://mp.weixin.qq.com/s/_cVNNZBBJljdWBPU9d38CA
+
+常见的损失函数超全总结
+
+https://mp.weixin.qq.com/s/P6xLYrNP4pNKtHcxAWAOKg
+
+数据竞赛中的各种loss function
+
+https://mp.weixin.qq.com/s/Q4ryiTOSJQaJ2e5clmXjtg
+
+一文看尽深度学习中的15种损失函数

@@ -73,80 +73,117 @@ http://blog.csdn.net/OpenNaive/article/details/7047823
 
 关联规则挖掘（一）：基本概念
 
-# 天文杂谈+
+## Apriori算法
 
-https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
+Apriori算法的思路如下：
 
-生的伟大，死的光荣——致敬卡西尼号土星探测器
+1.第一次扫描交易数据库D时，产生1-频繁集。在此基础上经过连接、修剪产生2-频繁集。以此类推，直到无法产生更高阶的频繁集为止。
 
-https://mp.weixin.qq.com/s/sg24WvUClEZnLxhJio0BuQ
+2.在第k次循环中，也就是产生k-频繁集的时候，首先产生k-候选集，k-候选集中每一个项集都是对两个只有一个项不同的属于k-1频繁集的项集连接产生的。
 
-被磨难环绕的“伽利略号”的一生
+3.k-候选集经过筛选后产生k-频繁集。
 
-https://mp.weixin.qq.com/s/ros-kBOIgTgQF2SaGc99qQ
+从频繁集的定义，我们可以很容易的推导出如下结论：
 
-哈佛名镜的前世今生
+**如果项目集X是频繁集，那么它的非空子集都是频繁集。**
 
-https://mp.weixin.qq.com/s/DKMs8sZtE_JzWaxr8o-DWA
+如果k-候选集中的项集Y，包含有某个k-1阶子集不属于k-1频繁集，那么Y就不可能是频繁集，应该从候选集中裁剪掉。Apriori算法就是利用了频繁集的这个性质。
 
-你好，冥王星
+参考：
 
-https://mp.weixin.qq.com/s/sv6McqKzoqJ3snUeDvFfwg
+http://zhan.renren.com/dmeryuyang?gid=3602888498023976650
 
-这地儿跟中国一个时区，你却从来没听说过？这个blog介绍了西澳大学和它的天文学成就。
+小白学数据分析---->关联分析学习算法篇Apriori
 
-https://mp.weixin.qq.com/s/EZWl8UwhiAkIXWkWE0abUQ
+http://blog.csdn.net/lizhengnanhua/article/details/9061755
 
-半个世纪的角逐：二战后的国际脉冲星搜寻竞赛
+Apriori算法详解之：一、相关概念和核心步骤
 
-https://mp.weixin.qq.com/s/tmSL5NIyjBpivtbGpbdKqQ
+https://mp.weixin.qq.com/s/W1Bu_I3p2DO_sT2Nl0582w
 
-威廉·赫歇尔：我一个德国音乐家，怎么就跑到英国当了天文学家？
+Apriori算法原理总结
 
-https://mp.weixin.qq.com/s/R2Hco-nE-e0S_gmTSImrAA
+http://blog.csdn.net/u013250416/article/details/52701633
 
-它曾“超长待机”俯瞰地球，最终在“回家”路上粉身碎骨
+关联规则DHP算法详解
 
-https://mp.weixin.qq.com/s/yD3THPdd1rvx3oqBF1tayQ
+https://www.jianshu.com/p/1ccf4d450da0
 
-那个提出“戴森球”的物理学家去世了（Freeman Dyson）
+频繁模式挖掘-DHP算法详解
 
-https://mp.weixin.qq.com/s/3dByllGuY9fsvUjoy7fPwg
+## FP-growth算法
 
-戴森传奇
+Aprori算法利用频繁集的两个特性，过滤了很多无关的集合，效率提高不少，但是我们发现Apriori算法是一个候选消除算法，每一次消除都需要扫描一次所有数据记录，造成整个算法在面临大数据集时显得无能为力。
 
-https://mp.weixin.qq.com/s/5NyYCE1vt99i2O_r-ThAGA
+FP-Growth算法是韩家炜等人在2000年提出的关联分析算法。它通过构造一个树结构来压缩数据记录，使得挖掘频繁项集只需要扫描两次数据记录，而且该算法不需要生成候选集合，所以效率会比较高。
 
-下一次去哪？金星、木卫一，还是海卫一？
+>注：韩家炜，中国科学技术大学本科（1979）+中科院硕士+威斯康辛大学博士（1985）。美国伊利诺伊大学香槟分校计算机系教授，IEEE和ACM院士。
 
-https://mp.weixin.qq.com/s/lNh3jxjvRbpZ3zZYSZuOVg
+FpGrowth算法的平均效率远高于Apriori算法，但是它并不能保证高效率，它的效率依赖于数据集，当数据集中的频繁项集的没有公共项时，所有的项集都挂在根结点上，不能实现压缩存储，而且Fptree还需要其他的开销，需要存储空间更大，使用FpGrowth算法前，对数据分析一下，看是否适合用FpGrowth算法。
 
-曾为地球“挺身而出”的磁场
+参考：
 
-https://mp.weixin.qq.com/s/6acgwIaDYC3VjMmdVSYYKQ
+http://www.cnblogs.com/fengfenggirl/p/associate_fpgowth.html
 
-未来的望远镜，能带我们看到宇宙大爆炸的边缘吗？（卡塞格林望远镜）
+数据挖掘系列（2）--关联规则FpGrowth算法
 
-https://mp.weixin.qq.com/s/UDHAT3vLMS_yo4w0wbcpJQ
+https://mp.weixin.qq.com/s/zD5hwBmMmSxzTj-3YzZKdg
 
-十问北斗
+频繁集挖掘FP Tree详解
 
-https://zhuanlan.zhihu.com/p/29213504
+https://mp.weixin.qq.com/s/ahmVB0ktJ2PG37ErO-vIiQ
 
-从沙漏和星盘到六分仪和航海钟——恼人的航海定位
+FP-growth算法：高效频繁项集挖掘
 
-https://mp.weixin.qq.com/s/SQPVTNYBU8JIRPYFqsXgtA
+## 幸存者偏差
 
-神秘力量？上帝使者？彗星的“人设”早就崩塌了
+二战期间，盟军需要对战斗机进行装甲加厚，以提高生还率，但由于军费有限，只能进行局部升级。那么问题来了，究竟哪个部位最关键，最值得把装甲加厚来抵御敌方炮火呢？人们众口不一，最后一致决定采用统计调查的方式来解决，即：仔细检查每一驾战斗机返回时受到的损伤程度，计算出飞机整体的受弹状况，然后根据大数据分析决定。
 
-https://mp.weixin.qq.com/s/pAUiirbHyfrEgWUE21x93Q
+不久，统计数据很快出炉：盟军飞机普遍受弹最严重的地方是机翼，有的几乎被打成了筛子；相反，受弹最轻的地方是驾驶舱及尾部发动机，许多飞机的驾驶舱甚至连擦伤都没有。
 
-另一个费曼（Richard Feynman的妹妹Joan Feynman）
+![](/images/article/Survivorship-bias.png)
 
-https://mp.weixin.qq.com/s/iznVJzjkYA2I5Y-P0NKrdA
+正当所有人拿着这份确凿无疑的报告准备给机翼加厚装甲时，统计学家Abraham Wald阻拦了他们，同时提出了一个完全相反的方案：加厚驾驶舱与尾部。理由非常简单：这两个位置中弹的飞机，都没有回来。换言之，它们是一份沉默的数据——“死人不会说话”。
 
-美丽天文图片下，有哪些不为人知的“套路”
+最后，盟军高层纷纷听取了这个建议，加固了驾驶舱与尾部，果然空中战场局势得以好转，驾驶员生还率也大大提高。事实证明，这是一个无比英明的措施。
 
-https://mp.weixin.qq.com/s/hZBYHvYktdJeOrAHTCKTTA
+这个事例也被称作“幸存者偏差”（Survivorship bias）。它是一种典型的由于模型不当，导致的“**数据说谎**”。
 
-如何肉眼识别夜空中的人造卫星？
+>注：Abraham Wald，1902～1950，生于奥匈帝国，维也纳大学博士。1938年为躲避纳粹，移民美国，哥伦比亚大学教授。Herman Chernoff的导师。其子Robert M. Wald，为著名理论物理学家，芝加哥大学教授，黑洞理论的提出者之一。
+
+>记者在列车上采访：这位乘客，您买到火车票了吗？   
+>乘客甲：买到了！旁边这位呢？   
+>乘客乙：买到了。   
+>记者随机采访了十几个人，高兴地发现大家都买到了回家的火车票。
+
+参考：
+
+https://mp.weixin.qq.com/s/49YCWbmyoMW-0NyK_aK4Tg
+
+大师告诉你，学习数学有什么用
+
+https://mp.weixin.qq.com/s/5WYSbh-CBBhIy7ZnWrTFrA
+
+从数学的角度看，为什么会有这么多渣男？
+
+## 关联规则评价
+
+“数据说谎”的问题很普遍。再看这样一个例子，我们分析一个购物篮数据中购买游戏光碟和购买影片光碟之间的关联关系。交易数据集共有10,000条记录，如表1所示：
+
+| 表1 | 买游戏 | 不买游戏 | 行总计 |
+|:--:|:--|:--:|:--|
+| 买影片 | 4000 | 3500 | 7500 |
+| 不买影片 | 2000 | 500 | 2500 |
+| 列总计 | 6000 | 4000 | 10000 |
+
+假设我们设置得最小支持度为30%，最小自信度为60%。从上面的表中，可以得到：
+
+$$support(买游戏光碟\to 买影片光碟)=4000/10000=40\%$$
+
+$$confidence(买游戏光碟\to 买影片光碟)=4000/6000=66\%$$
+
+这条规则的支持度和自信度都满足要求，因此我们很兴奋，我们找到了一条强规则，于是我们建议超市把影片光碟和游戏光碟放在一起，可以提高销量。
+
+可是我们想想，一个喜欢的玩游戏的人会有时间看影片么，这个规则是不是有问题，事实上这条规则误导了我们。在整个数据集中买影片光碟的概率p(买影片)=7500/10000=75%，而买游戏的人也买影片的概率只有66%，66%<75%恰恰说明了买游戏光碟抑制了影片光碟的购买，也就是说买了游戏光碟的人更倾向于不买影片光碟，这才是符合现实的。
+
+从上面的例子我们看到，支持度和自信度并不总能成功滤掉那些我们不感兴趣的规则，因此我们需要一些新的评价标准，下面介绍几种评价标准：
