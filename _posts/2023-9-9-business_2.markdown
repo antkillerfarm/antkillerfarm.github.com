@@ -185,166 +185,72 @@ https://www.zhihu.com/question/22909771/answer/2699462013
 
 ---
 
-https://mp.weixin.qq.com/s/fov2fS345enPB_M7kEzFpQ
+可口可乐：雪碧、芬达、美汁源、维他命水、冰露
 
-无代码的时代真的来了吗？
+百事可乐：美年达、七喜、激浪、果缤纷、佳得乐、纯果乐、乐事薯片、肯德基、必胜客、小肥羊、黄记煌
 
-https://view.inews.qq.com/wxn/20210405A068ZS00
+宝洁：海飞丝、潘婷、飘柔、沙宣、伊卡璐、威娜、舒肤佳、SK-II、玉兰油、护舒宝、汰渍、佳洁士、吉列
 
-穿越废墟：共享单车剧未终
+强生：强生婴儿、露得清、可伶可俐、娇爽、邦迪、达克宁
 
-https://mp.weixin.qq.com/s/hE17qDqaDjb8HVIyFNN6cw
+联合利华：夏士莲、力士、清扬、多芬、凡士林、和路雪、立顿茶、金纺、奥妙、中华牙膏
 
-P2P平台清零，你损失的钱要回来了吗？
+亿滋国际：奥利奥、太平梳打、闲趣饼干、王子饼干、怡口莲、趣多多、优冠、闲趣、太平、乐之、荷氏、炫迈、妙卡、果珍
 
-https://mp.weixin.qq.com/s/pP2Sh9t0w-liavgI02VmAQ
+玛氏：德芙、士力架、脆香米、瑞士糖、真知棒、彩虹糖、箭牌、益达
 
-携程四君子
+雀巢：美宝莲、薇姿、科颜氏、植村秀、兰蔻、理肤泉、阿玛尼、脆脆鲨、太太乐、美极、豪吉、徐福记、银鹭
 
-https://mp.weixin.qq.com/s/9ceXRMajJr464ZuvdzL_bA
+通用汽车：别克、雪佛兰、凯迪拉克、宝骏、沃克斯
 
-菜贩生意也要抢，互联网巨头的眼光仅此而已？
+上海家化：六神、美加净、佰草集
 
-https://mp.weixin.qq.com/s/1f-XpG9IDoNLXQmVSXO1Lw
+隆力奇集团：郁美净、宝宝金水、青蛙王子
 
-我在拼多多的三年
+https://mp.weixin.qq.com/s/VvBYE7yLJLxYmQ7zcriNpw
 
-https://www.zhihu.com/question/443189567
+你身边的这些中国品牌，其实全是美国的
 
-如何评价乐视视频App将图标更改为“欠122亿”？
+---
 
-https://mp.weixin.qq.com/s/qb0FILKYoIb4effYS7EB1Q
+晋商发明的“顶身股”制度：
 
-上海游戏圈2021人才争夺战：欢迎来到地狱模式
+学徒期间，光管吃住，不给工钱。等三年满徒，掌柜的看着他还算乖巧懂事，才正式收下当个小伙计，上柜练手，并按月发给薪资。慢慢从小伙计升为大伙计，直到管事，起码要熬十年以上，表现勤恳，没出过纰漏，才会由掌柜向东家举荐，并经过各股东认可，可以开始顶股。
 
-https://mp.weixin.qq.com/s/67ZXEMtgaojbzXr7hb_vmA
+先从一、二厘顶起，慢慢增加，当几年后能顶到七八厘，就能被提拔为三掌柜、二掌柜……这就算有了大出息，混出样子来了。
 
-39万人被催债，89人自杀：“套路贷”还是“夺命贷”？
+顶身股的规则是人在股在，人走股灭。员工干一年就有一年的分红，要是辞职或跳槽，你都跑了，还分个屁。
 
-https://mp.weixin.qq.com/s/AUJRb7dap0neW6TZlUZa1A
+如果员工在商号里干了一辈子兢兢业业，病故/辞世后，家属还能根据他生前的股份继续领大概十年的分红，这叫故身股。
 
-女版“乔布斯”覆灭记！硅谷美女CEO被曝百亿美元大骗局
+---
 
-https://mp.weixin.qq.com/s/7qxTcPx_qjq3ySEYk6J5VQ
+2021年，该公司在股价最高点的时候弄了一个员工持股计划。1400多名员工，自掏腰包，筹集了14亿，然后又找金融机构加了一倍杠杆。总共28亿资金，全部用来在二级市场增持了东方雨虹的股票。4900多万股股票，每股增持成本，大约为56块钱。其中，有8个亿，是通过大宗交易的方式，购买了1500万股。而大宗交易的对象，就是东方雨虹的老板——李卫国。也就是说，老板在最高点的时候把股票卖给了自己的员工，成功套现了。
 
-曾经排名第一的安全软件，为啥会变成流氓软件？（瑞星杀毒软件）
+2年后的今天，股票现在价格为24元，腰斩了。显然，员工不傻，股价超过56元成本价显然是不可能了，现在大家要的是3年后，8%的收益率回本。
 
-https://mp.weixin.qq.com/s/zavvvVdAZaTvneP2MikWnQ
+这种情况下，老板能不着急吗？现在不但要还金融机构杠杆贷款利息，还要在3年后给所有员工补偿股票损失，搭上8%的利息。
 
-他晒了一张奶酪照片，被判入狱13年半
+恒大等企业的爆雷，让东方雨虹的坏账创下历史新高，光2022年的坏账计提都达到了3.3个亿。
 
-https://mp.weixin.qq.com/s/07QuqR7ZFbXR6WCDkkD4Lw
+更别说，东方雨虹还一直是碧桂园的优质供应商。
 
-宿迁神苗，淘宝诚信的耻辱
+https://www.zhihu.com/question/626551461
 
-https://mp.weixin.qq.com/s/KXIHG3upGll_ERxqdAOtyw
+东方雨虹股价持续走低，今年市值蒸发超200亿，董秘在朋友圈连发十二问，大呼看不懂，如何看待此事？
 
-货车司机之死、内卷、政策制订中的两难
+---
 
-https://mp.weixin.qq.com/s/OBmq9OZjfhAu7NTgyWX2Mg
+2011年1月，上海交通大学的几个学生在闵行校区D32宿舍组了个团队，自称米哈游工作室。
 
-别人送的第一桶金，一文不值（王健林）
+米哈游以自身15%股份的代价，从斯凯网络CEO宋涛手中拿到了100万元的天使投资，这也成了米哈游唯一的融资记录。
 
-https://www.sohu.com/a/500633989_120146415
+https://mp.weixin.qq.com/s/rvPh6fCjCWIZ7Aw3XBwduw
 
-困在光伏里的老人：失去土地痛骂“败家子” 拿出养老本还贷
+因经营风险过大，原神公司被拒绝上市
 
-https://view.inews.qq.com/wxn/20211118A0COXA00
+---
 
-桑塔纳停产？昔日“天价”豪车如今不到十万，曾是自主之光
+中国线下商业的魔幻之处在于，任何一点产品、供应链、品牌、运营、物流等环节的创新所带来的超额利润，都会被“房东”这个角色以“涨房租”的方式吃掉，绝无机会降价让利给消费者。
 
-https://mp.weixin.qq.com/s/EumGqvsIwgGXsSPX2TbrrA
-
-世界最牛员工每天挣10亿，记录保持23年！宣布退休后波音公司终于松了口气！——空中客车集团的销售总监John Leahy
-
-https://mp.weixin.qq.com/s/qmklQdBBEDnFB2LZcjy-5Q
-
-我还是个孩子，别让我看海南广告
-
-https://money.163.com/20/0102/08/F1SDMA3L00258105.html
-
-拯救老板戈恩:自己装到乐器盒子里 堪称逃亡史经典
-
-https://mp.weixin.qq.com/s/thmsiaJf41PEQktroG2Vlw
-
-看不透的曹德旺
-
-https://mp.weixin.qq.com/s/vxk1_WCvTzBxK0vzuhcrpg
-
-阴阳师，如何席卷东亚？
-
-https://www.zhihu.com/answer/1595636550
-
-为什么许多国外品牌以创始人名字命名我们觉得高大上，而中国品牌以创始人命名却难接受？
-
-https://view.inews.qq.com/wxn/20210303A06LLF00
-
-“货拉拉事件”像素级调查报告：司机是如何把女孩吓得跳车的？
-
-https://zhuanlan.zhihu.com/p/445448341
-
-知乎最强战力七仙女排名
-
-https://mp.weixin.qq.com/s/l106Uz4ZkFRbSAYjTMf3mA
-
-炒鞋风波：为何一双球鞋总是限量发售？
-
-https://www.sohu.com/a/503495366_115479
-
-先教父母英语，再去美国教他们子女中文，新东方这波“赢麻了”
-
-https://mp.weixin.qq.com/s/x9N6rhGJPuyWdcYybD8S1A?
-
-1997-2019年全球最有价值公司变化
-
-https://mp.weixin.qq.com/s/onMWuNF8givGnaXMxPhTzA
-
-慕思床垫的洋老头，骗了中国人12年
-
-https://mp.weixin.qq.com/s/xhkSifv10c5YtxAagcqAKA
-
-房价下跌后，儿媳把婆婆给举报了
-
-https://mp.weixin.qq.com/s/L7BSX6UQ_Patcj4tCaaJCw
-
-宁德时代：万亿电池帝国的裂缝
-
-https://mp.weixin.qq.com/s/078Szf2_ngGXbEYzw0RaFg
-
-“相互宝”关停，大病之后该去哪里寻找帮助？
-
-https://mp.weixin.qq.com/s/jiFzvOuBxbCjcgb_fbPpyg
-
-叮咚买菜大裁员？买菜江湖已翻篇
-
-https://mp.weixin.qq.com/s/VjFX1RII0tP5JlJ3YKSGHg
-
-史上“最贵”春节档，你看了几部电影？
-
-https://mp.weixin.qq.com/s/0LWgprp2rNMjk4lV7wK0tQ
-
-网红茶饮纷纷降价，我们要实现“奶茶自由”了？
-
-https://mp.weixin.qq.com/s/cQ3PaPB6U8FgRfMMdNB56w
-
-万门大学倒闭：失联的教育理想主义者与他的谎言
-
-https://www.zhihu.com/question/397013564
-
-如何看待整条村集体撸网贷不还的现象?
-
-https://www.zhihu.com/question/564456911
-
-国美到12月底前停发员工工资，只上社保，此前黄光裕夫妇已套现10亿港元，哪些信息值得关注？
-
-https://zhuanlan.zhihu.com/p/598228628
-
-Momenta六年：是好牌打烂，还是又一次踩上时代节点？
-
-https://mp.weixin.qq.com/s/WhLIDfGMu0QgAbMO__q7ow
-
-充电桩电费翻番涨价，电动车又不香了？
-
-https://www.zhihu.com/question/622471397
-
-老国货品牌“活力 28”直播间火了，一夜爆卖 500 万，三个老头被临时抽调做直播，如何看待此事？
+预制菜遭受的非议只不过是对这一结论的又一次证明而已。

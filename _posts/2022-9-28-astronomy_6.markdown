@@ -7,7 +7,63 @@ category: Nature
 * toc
 {:toc}
 
-# 阿波罗50年（续）
+# 阿波罗50年
+
+https://mp.weixin.qq.com/s/79e6p2TYpttO-NR1of21jw
+
+月之梦的起源
+
+https://mp.weixin.qq.com/s/QtvKdwbuzUJICjdKbcPIlg
+
+登月究竟是真是假？
+
+https://view.inews.qq.com/a/TEC201907170006770C
+
+别误会，那个经典的月球脚印不是阿姆斯特朗的（巴兹·奥尔德林）
+
+https://mp.weixin.qq.com/s/OdMaaP_gE1rR_rd14LfA9w
+
+战争与登月的渊源
+
+https://mp.weixin.qq.com/s/YRJpHvlEulfBFm8HpBYBZQ
+
+苏联开启的登月序曲
+
+https://mp.weixin.qq.com/s/v3HNhV08vWYPGdeXAZ47ag
+
+月球来到你身边
+
+https://view.inews.qq.com/a/TEC2019072100124408
+
+一文俯瞰从阿波罗1号到17号全舰队
+
+![](/images/img3/Apollo11_AnnotatedHero.jpg)
+
+https://mp.weixin.qq.com/s/Y1hQJHFB5InSZNB2T2KfVw
+
+10万镜子反射月光，组成3.6平方公里巨幅头像，谷歌花式纪念登月50年
+
+https://mp.weixin.qq.com/s/d6nmsH10qchY1pP8CibiBA
+
+跌跌撞撞的美国
+
+https://mp.weixin.qq.com/s/-KHsG9lZknY952U_LTV7qg
+
+天气太热了，我们去太阳系度假吧
+
+https://mp.weixin.qq.com/s/EPMdW1qxQVl0MVUSjhWxyQ
+
+NASA传奇数学家去世，她曾笔算了登月轨道
+
+https://mp.weixin.qq.com/s/1Jm00gCel41frG43oT9yyA
+
+他是探月英雄，但没登上过月球（Michael Collins）
+
+https://www.zhihu.com/question/423138570
+
+火星车网速只有34Kb/s，当年老美怎么进行的登月直播呢？
+
+---
 
 由于飞行前的制造和测试错误，氧气罐中的电线暴露了出来。在那个致命的夜晚，氧气罐中暴露的电线产生的火花引发了火灾，引爆了氧气罐，将服务舱外的隔热层炸飞。。。
 
@@ -201,46 +257,3 @@ https://www.zhihu.com/question/405115980
 
 ---
 
-https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
-
-生的伟大，死的光荣——致敬卡西尼号土星探测器
-
-https://mp.weixin.qq.com/s/sg24WvUClEZnLxhJio0BuQ
-
-被磨难环绕的“伽利略号”的一生
-
-https://mp.weixin.qq.com/s/ros-kBOIgTgQF2SaGc99qQ
-
-哈佛名镜的前世今生
-
-https://mp.weixin.qq.com/s/DKMs8sZtE_JzWaxr8o-DWA
-
-你好，冥王星
-
-https://mp.weixin.qq.com/s/sv6McqKzoqJ3snUeDvFfwg
-
-这地儿跟中国一个时区，你却从来没听说过？这个blog介绍了西澳大学和它的天文学成就。
-
-https://mp.weixin.qq.com/s/EZWl8UwhiAkIXWkWE0abUQ
-
-半个世纪的角逐：二战后的国际脉冲星搜寻竞赛
-
-https://mp.weixin.qq.com/s/tmSL5NIyjBpivtbGpbdKqQ
-
-威廉·赫歇尔：我一个德国音乐家，怎么就跑到英国当了天文学家？
-
-https://mp.weixin.qq.com/s/R2Hco-nE-e0S_gmTSImrAA
-
-它曾“超长待机”俯瞰地球，最终在“回家”路上粉身碎骨
-
-https://mp.weixin.qq.com/s/yD3THPdd1rvx3oqBF1tayQ
-
-那个提出“戴森球”的物理学家去世了（Freeman Dyson）
-
-https://mp.weixin.qq.com/s/3dByllGuY9fsvUjoy7fPwg
-
-戴森传奇
-
-https://mp.weixin.qq.com/s/5NyYCE1vt99i2O_r-ThAGA
-
-下一次去哪？金星、木卫一，还是海卫一？

@@ -73,124 +73,80 @@ http://blog.csdn.net/OpenNaive/article/details/7047823
 
 关联规则挖掘（一）：基本概念
 
-# 中东+
+# 天文杂谈+
 
-https://mp.weixin.qq.com/s/3Frx_ZmmmEC_aj4tLUPleg
+https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
 
-苏莱曼尼被斩首后，这篇文章把两伊根本问题说清楚了
+生的伟大，死的光荣——致敬卡西尼号土星探测器
 
-https://mp.weixin.qq.com/s/Wt56L0Tdj8H1s4zVh43cMw
+https://mp.weixin.qq.com/s/sg24WvUClEZnLxhJio0BuQ
 
-决战亮马桥！美国、伊朗驻华大使馆于微博隔空斗法
+被磨难环绕的“伽利略号”的一生
 
-https://mp.weixin.qq.com/s/sCiWfFweGzgjPTVGhl3hfw
+https://mp.weixin.qq.com/s/ros-kBOIgTgQF2SaGc99qQ
 
-美国向伊朗的求和，是以斗争求和平的伟大实践！
+哈佛名镜的前世今生
 
-https://zhuanlan.zhihu.com/p/373781337
+https://mp.weixin.qq.com/s/DKMs8sZtE_JzWaxr8o-DWA
 
-巴勒斯坦，其实已经内部分裂了
+你好，冥王星
 
-https://mp.weixin.qq.com/s/cHPdmOJvvQde6DGlWBcHvw
+https://mp.weixin.qq.com/s/sv6McqKzoqJ3snUeDvFfwg
 
-伊拉克化学博士身陷IS占领区，导师为督促其完成论文，派雇佣兵将其救出
+这地儿跟中国一个时区，你却从来没听说过？这个blog介绍了西澳大学和它的天文学成就。
 
-https://www.zhihu.com/question/303195046
+https://mp.weixin.qq.com/s/EZWl8UwhiAkIXWkWE0abUQ
 
-如何评价阿夫沙尔王朝开创者，猛男纳迪尔沙？
+半个世纪的角逐：二战后的国际脉冲星搜寻竞赛
 
-https://www.zhihu.com/answer/790409921
+https://mp.weixin.qq.com/s/tmSL5NIyjBpivtbGpbdKqQ
 
-阿富汗历史
+威廉·赫歇尔：我一个德国音乐家，怎么就跑到英国当了天文学家？
 
-https://zhuanlan.zhihu.com/p/370329132
+https://mp.weixin.qq.com/s/R2Hco-nE-e0S_gmTSImrAA
 
-神经病气质的塔利班为何能统一阿富汗？它又是如何极速滑落的？
+它曾“超长待机”俯瞰地球，最终在“回家”路上粉身碎骨
 
-https://view.inews.qq.com/wxn/20210725A084BY00
+https://mp.weixin.qq.com/s/yD3THPdd1rvx3oqBF1tayQ
 
-“两个塔利班”的前世与今生（巴基斯坦塔利班和阿富汗塔利班）
+那个提出“戴森球”的物理学家去世了（Freeman Dyson）
 
-https://zhuanlan.zhihu.com/p/395139812
+https://mp.weixin.qq.com/s/3dByllGuY9fsvUjoy7fPwg
 
-什么是“杀死印度人山脉”？（Hindu kush）
+戴森传奇
 
-https://mp.weixin.qq.com/s/dw8GRXm9U_YEaiWWQlVO5A
+https://mp.weixin.qq.com/s/5NyYCE1vt99i2O_r-ThAGA
 
-阿富汗之变：被抛弃和被遗忘的命运
+下一次去哪？金星、木卫一，还是海卫一？
 
-https://mp.weixin.qq.com/s/fNGUgM7mM9elHZ4mQqAuhQ
+https://mp.weixin.qq.com/s/lNh3jxjvRbpZ3zZYSZuOVg
 
-同样是打美国，为啥塔利班能卷土重来，萨达姆政权却被彻底消灭？
+曾为地球“挺身而出”的磁场
 
-https://mp.weixin.qq.com/s/3y7c2c6a2CsilQIDpcpTmA
+https://mp.weixin.qq.com/s/6acgwIaDYC3VjMmdVSYYKQ
 
-阿富汗战事以总统跑路告终：美军20年来兵力与军费如何？
+未来的望远镜，能带我们看到宇宙大爆炸的边缘吗？（卡塞格林望远镜）
 
-https://mp.weixin.qq.com/s/i95tMMhW_VoGtmD_RPehlg
+https://mp.weixin.qq.com/s/UDHAT3vLMS_yo4w0wbcpJQ
 
-趣谈美国在阿富汗的天价军费：最高峰时超过当时中国全部军费
+十问北斗
 
-https://zhuanlan.zhihu.com/p/409195354
+https://zhuanlan.zhihu.com/p/29213504
 
-塔利班秒变人民公仆？市长亲自扫大街，银行行长端着冲锋枪去上班
+从沙漏和星盘到六分仪和航海钟——恼人的航海定位
 
-https://zhuanlan.zhihu.com/p/438002125
+https://mp.weixin.qq.com/s/SQPVTNYBU8JIRPYFqsXgtA
 
-全球唯一器官交易合法国家：穷人拿命换钱，富人花钱续命（伊朗器官交易合法化）
+神秘力量？上帝使者？彗星的“人设”早就崩塌了
 
-https://mp.weixin.qq.com/s/giuTx7hS3HD4GdiD_dyRNg
+https://mp.weixin.qq.com/s/pAUiirbHyfrEgWUE21x93Q
 
-黎巴嫩央行破产：一个悲情国家的不可承受之重
+另一个费曼（Richard Feynman的妹妹Joan Feynman）
 
-https://xw.qq.com/cmsid/20200710A0JO9X00
+https://mp.weixin.qq.com/s/iznVJzjkYA2I5Y-P0NKrdA
 
-阿勒颇监狱保卫战，堪称现代版斯大林格勒，叙利亚五百勇士死守三年终获胜利
+美丽天文图片下，有哪些不为人知的“套路”
 
-https://baijiahao.baidu.com/s?id=1711492174611034081
+https://mp.weixin.qq.com/s/hZBYHvYktdJeOrAHTCKTTA
 
-19岁沙特公主因私奔遭极刑，男友被斩首，差点造成英国沙特断交
-
-https://www.zhihu.com/question/455642975
-
-一战英国都没想过土耳其战略地位吗，为什么要扣土耳其战舰？
-
-https://new.qq.com/omn/20210917/20210917A012II00.html
-
-美军噩梦幽灵狙击手“朱巴”，曾经狙杀634名美军，他到底是谁？
-
-https://mp.weixin.qq.com/s/nfPaPOpIjPrgTEGytCPf0w
-
-埃及前总统穆巴拉克去世：毁誉参半的一生
-
-http://history.people.com.cn/GB/198306/14325368.html
-
-奴隶？工人？金字塔的建造者竟是一群自由民
-
-https://www.zhihu.com/question/443184252
-
-叙利亚在军事作战中为什么一败涂地？
-
-https://zhuanlan.zhihu.com/p/588730371
-
-中东传奇女王卡塔尔太后——谢赫.莫扎
-
-https://zhuanlan.zhihu.com/p/598834668
-
-为什么生为奥斯曼帝国的王子不一定是一件好事？
-
-https://www.zhihu.com/question/603396425
-
-伊朗边防军与阿富汗塔利班边防士兵在边境地区发生武装冲突，目前双方局势情况如何？
-
-https://www.sohu.com/a/648356428_121656712
-
-美军从阿富汗逃跑后，到底留下了多少武器装备？
-
-https://zhuanlan.zhihu.com/p/636102801
-
-叙利亚叛军的山寨肯德基餐厅
-
-https://zhuanlan.zhihu.com/p/658669798
-
-伊朗在东北修长城，是防着谁？（戈尔甘长城）
+如何肉眼识别夜空中的人造卫星？

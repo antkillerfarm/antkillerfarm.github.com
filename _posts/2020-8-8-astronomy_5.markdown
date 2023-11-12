@@ -9,19 +9,27 @@ category: Nature
 
 # 中国航天（续）
 
-1960年2月19日，南汇老港的一片滩涂上，响起了中国航天迈向太空的第一声轰鸣，第一枚液体探空火箭“T-7M”腾空而起，飞上了八千米高空。
+据《财经》报道，从融资和估值来看，蓝箭航天、零壹空间、星际荣耀已经成为目前众多民营航天企业的第一梯队，备受市场的关注。除此之外，还包括翎客航天、星途探索、九州云箭、灵动飞天、深蓝航天等。
 
-美国在2011年正式签订了《沃尔夫条款》，以法令的形式直接禁止了中美两国间的任何航空技术合作。
+2020年3月16日，我国在文昌航天发射基地组织实施的长征机7号改中型运载火箭首次飞行任务，火箭在飞行三分钟之后出现火球然后坠落，发射任务宣告失败。
 
-NASA在2012年更是出台了指引，进一步指出，法令不仅适用于这些企业的一级机构，也包括其旗下的附属公司。
+2020年4月9日，我国在西昌卫星发射中心发射了长征三号乙运载火箭，在发射开始的时候，因为火箭第3级发动机工作异常，导致火箭三级和卫星坠落在太平洋，发射任务宣告失败。
 
-https://www.zhihu.com/answer/136456079
+追踪溯源发现问题了，原来火箭的发动机是由航天六院负责研发与设计的。。。
 
-美国拟出台沃尔夫条款永久禁止中国进入国际空间站
+中国船舶重工集团公司第七O二研究所水下工程研究开发部职工，蛟龙号载人潜水器首席装配钳工技师。
 
-https://zhuanlan.zhihu.com/p/385461869
+蛟龙深海载人潜水器十几万个零部件，难度最大就是装配后密封性，能达到丝级精度的只有顾秋亮一人。就这么个人，如果他是在德国，前途辉煌那是必然。
 
-这一次，中国人，笑了
+但在这个地方，女儿上学他拿不出学费；听说妻子患癌只能抱头痛哭（幸好误诊）；居住在30平的破烂房里蹉跎半生；行行出状元，这些行业状元干到了头，可人生变美好了吗？
+
+https://news.qq.com/a/20180927/005739.htm
+
+离职能直接影响中国登月的人才，只配待在国企底层？
+
+https://www.zhihu.com/question/295927388
+
+如何看待西航动力研究所张小平离职一事？
 
 ---
 
@@ -306,59 +314,3 @@ https://mp.weixin.qq.com/s/B5h5yZ9unpIAD8dR3KG1yw
 https://mp.weixin.qq.com/s/tqs5JtYBFedVofWlgbJ3kg
 
 “天问一号”即将失联？别担心，一切尽在掌控
-
-# 阿波罗50年
-
-https://mp.weixin.qq.com/s/79e6p2TYpttO-NR1of21jw
-
-月之梦的起源
-
-https://mp.weixin.qq.com/s/QtvKdwbuzUJICjdKbcPIlg
-
-登月究竟是真是假？
-
-https://view.inews.qq.com/a/TEC201907170006770C
-
-别误会，那个经典的月球脚印不是阿姆斯特朗的（巴兹·奥尔德林）
-
-https://mp.weixin.qq.com/s/OdMaaP_gE1rR_rd14LfA9w
-
-战争与登月的渊源
-
-https://mp.weixin.qq.com/s/YRJpHvlEulfBFm8HpBYBZQ
-
-苏联开启的登月序曲
-
-https://mp.weixin.qq.com/s/v3HNhV08vWYPGdeXAZ47ag
-
-月球来到你身边
-
-https://view.inews.qq.com/a/TEC2019072100124408
-
-一文俯瞰从阿波罗1号到17号全舰队
-
-![](/images/img3/Apollo11_AnnotatedHero.jpg)
-
-https://mp.weixin.qq.com/s/Y1hQJHFB5InSZNB2T2KfVw
-
-10万镜子反射月光，组成3.6平方公里巨幅头像，谷歌花式纪念登月50年
-
-https://mp.weixin.qq.com/s/d6nmsH10qchY1pP8CibiBA
-
-跌跌撞撞的美国
-
-https://mp.weixin.qq.com/s/-KHsG9lZknY952U_LTV7qg
-
-天气太热了，我们去太阳系度假吧
-
-https://mp.weixin.qq.com/s/EPMdW1qxQVl0MVUSjhWxyQ
-
-NASA传奇数学家去世，她曾笔算了登月轨道
-
-https://mp.weixin.qq.com/s/1Jm00gCel41frG43oT9yyA
-
-他是探月英雄，但没登上过月球（Michael Collins）
-
-https://www.zhihu.com/question/423138570
-
-火星车网速只有34Kb/s，当年老美怎么进行的登月直播呢？
