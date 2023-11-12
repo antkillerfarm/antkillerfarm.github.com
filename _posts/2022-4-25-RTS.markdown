@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  RTS（1）
+title:  RTS（一）
 category: my story 
 ---
 

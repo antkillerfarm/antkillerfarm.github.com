@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  RTS（2）, 我的电器简史
+title:  RTS（二）, 我的电器简史
 category: my story 
 ---
 
