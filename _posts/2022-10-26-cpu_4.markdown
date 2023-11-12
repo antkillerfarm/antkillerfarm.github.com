@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CPU(四), NVLink
+title: CPU(四)
 category: Chip 
 ---
 
@@ -9,7 +9,7 @@ category: Chip
 
 # CPU
 
-![](../images/img4/In_Chip_Bus.jpg)
+![](/images/img4/In_Chip_Bus.jpg)
 
 Crossbar（XBAR）
 
@@ -280,131 +280,3 @@ https://www.zhihu.com/question/562917157
 https://www.zhihu.com/question/552957041
 
 书上说代码地址总是从0x400000开始，但是查看编译好的elf头起始地址是从0开始的，这是为什么？
-
-# NVLink
-
-NVLink技术提供比PCIe 3更高的带宽与更多的链路，并可提升多GPU和多GPU/CPU系统配置的可扩展性。
-
-SXM是Nvidia的双插槽卡设计，与PCIe卡不同，它不需要连接电源。
-
----
-
-![](/images/img4/PCIE.jpg)
-
-官网：
-
-https://www.nvidia.cn/data-center/nvlink/
-
-![](/images/img3/nvlink.png)
-
-Tesla V100中以NVLink连接的GPU至GPU和GPU至CPU通信。
-
-![](/images/img3/nvlink_2.png)
-
-在DGX-1V服务器中，混合立体网络拓扑使用NVLink连接8个Tesla V100加速器。每个GPU有6条nvlink通道，总带宽高达300GB/s。
-
-从上图可以看到，即使每个GPU拥有6条nvlink通道，仍然无法做到“全连接”（即任意两个GPU之间存在双向通道）。这就引出了下一个更加疯狂的技术：nvswitch。
-
-![](/images/img3/nvswitch.png)
-
-NV Switch是首款节点交换架构，可支持单个服务器节点中16个全互联的GPU，并可使全部8个GPU对分别以300GB/s的惊人速度进行同时通信。这16个全互联的GPU还可作为单个大型加速器，拥有0.5 TB统一显存空间和2 PetaFLOPS计算性能。
-
-https://zhuanlan.zhihu.com/p/35470532
-
-全球最大GPU背后的秘密：NVSwitch如何实现NVIDIA DGX-2的超强功力？
-
----
-
-NVLink和NV Switch的关系：
-
-NVLink是一种协议。
-
-NV Switch是NVLink协议的芯片化实现。
-
-GPU core和NV Switch如果都实现了NVLink协议的话，则它们之间可以通过NVLink协议进行通信。
-
-未来解决带宽问题的两大法宝，一个靠内存厂给提供的牙膏继续叠单GPU芯片的带宽，另一个就是目前这些形态更高密度的通过nvlink组合起来，从而创造一个大的“一个GPU”。
-
-就这个搞一个大的“一个GPU”而言，又有很多种可能的扩展形态
-
-- 双GPU卡
-- 主板堆8卡
-- 垂直堆8个刀片
-- 网络组更多机柜
-
-其实也就对应了nvlink的多种形态
-
-- nvlink c2c
-- nvlink switch
-- nvlink bridge
-- nvlink network
-
----
-
-![](/images/img5/Nvidia_Grace_Hopper.jpg)
-
-https://zhuanlan.zhihu.com/p/600638633
-
-Nvidia Grace Hopper超级芯片架构解读（一）
-
-https://zhuanlan.zhihu.com/p/601072219
-
-Nvidia Grace Hopper超级芯片架构解读（二）
-
----
-
-单单从信号线路数量来说，x16的PCIe和x2的NVLink是相同的，都是32对差分线。x2的NVLink 3.0双向带宽是100 GB/s，比PCIe 5.0 x16的126 GB/s要低。
-
-这么高的带宽，数据传输功耗是一个不可忽略的重要因素，NV能做到x18的NVLink，不代表其它厂家可以轻松实现x144的PCIe。
-
-大概在2017年的hotchips上，Intel给出的一份PPT上，PCB上每传输1bit数据的参考功耗是20 pJ（1e-12焦耳），按这个功耗计算，NVLink 3.0 x18的7200 Gbit/s意味着单单是信号传输就要消耗144W功耗，这显然是难以接受的。2019年NV发表过一份1.17 pJ/bit的论文，虽然因为应用环境不同，不能直接对比说NV的技术使得传输功耗不到6%，但还是可以从侧面猜测一下NV的技术水平。
-
-https://www.zhihu.com/question/546809864
-
-为什么NVlink能够实现比PCIe更高的传输带宽？
-
----
-
-https://zhuanlan.zhihu.com/p/623060064
-
-什么是NVLink？
-
-## NCCL
-
-NCCL是Nvidia Collective multi-GPU Communication Library的简称，它是一个实现多GPU的collective communication通信库，可以在PCIe、Nvlink、InfiniBand上实现较高的通信速度。
-
-官方文档：
-
-https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/index.html
-
-nccl v1：支持单机多卡通信，不支持多机通信。
-
-nccl v2：支持多机通信。
-
-参考：
-
-https://www.zhihu.com/question/63219175
-
-如何理解Nvidia英伟达的Multi-GPU多卡通信框架NCCL？
-
-https://zhuanlan.zhihu.com/p/364816069
-
-NCCL--GPU的collective communication通信技术
-
-https://blog.csdn.net/TH_NUM/article/details/81479317
-
-nvidia-nccl学习笔记
-
-https://developer.nvidia.com/blog/fast-multi-gpu-collectives-nccl/
-
-Fast Multi-GPU collectives with NCCL
-
-## 参考
-
-https://www.infoq.cn/article/3D4MsRVS8ZOtGCj7*krT
-
-GPU通信技术初探
-
-https://zhuanlan.zhihu.com/p/67785062
-
-不止显卡！这些硬件因素也影响着你的深度学习模型性能

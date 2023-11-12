@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 国产半导体（三）——反封锁, 真假自研
+title: 国产半导体（三）——反封锁
 category: Chip 
 ---
 

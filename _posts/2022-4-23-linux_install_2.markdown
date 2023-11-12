@@ -103,24 +103,6 @@ grub2引导系统iso镜像
 
 # Linux学习心得
 
-## Systemd
-
-![](/images/img5/Systemd.png)
-
-内核初始化的最后一步就是启动PID为1的init进程。这个进程是系统的第一个进程。它负责产生其他所有的用户进程。
-
-init系统大体上的演进路线为sysvinit -> upstart -> systemd。
-
-2010年，德国程序员Lennart Poettering（同时也是Avahi和PulseAudio的作者）发明了Systemd。
-
-http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html
-
-Systemd入门教程：命令篇
-
-http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html
-
-Systemd入门教程：实战篇
-
 ## Zero Page
 
 https://www.cnblogs.com/linhaostudy/p/13647189.html

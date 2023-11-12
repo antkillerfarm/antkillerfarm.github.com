@@ -302,6 +302,13 @@ PyTorch深度学习技术生态
 
 # LLVM+
 
+## 编译
+
+```bash
+cmake -S llvm -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug
+ninja -C build check-llvm
+```
+
 ## tablegen
 
 LLVM tablegen，文件名后缀为`.td`。

@@ -374,3 +374,7 @@ https://mp.weixin.qq.com/s/xRvXCpHpDnMqSNjJyIf3XQ
 https://mp.weixin.qq.com/s/hN8tZ7xCRttIc-3pXdqElQ
 
 中科院计算所牵头发布《专⽤数据处理器DPU技术白皮书》，94页pdf
+
+https://zhuanlan.zhihu.com/p/430203049
+
+在IPU/DPU/SmartNIC中P4能成为主流吗？

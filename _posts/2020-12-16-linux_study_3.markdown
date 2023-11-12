@@ -7,36 +7,6 @@ category: linux
 * toc
 {:toc}
 
-# nc
-
-NetCat，在网络工具中有“瑞士军刀”美誉。它短小精悍（1.84版本也不过25k，旧版本或缩减版甚至更小）、功能实用，被设计为一个简单、可靠的网络工具，可通过TCP或UDP协议传输读写数据。同时，它还是一个网络应用Debug分析器，因为它可以根据需要创建各种不同类型的网络连接。
-
-http://blog.csdn.net/wang7dao/article/details/7684998
-
-Linux nc命令详解
-
-# 环境变量
-
-设置环境变量的方法：
-
-1）临时的：使用export命令声明即可，变量在关闭shell时失效。示例如下：
-
-`export PATH=/home/xyz/bin:$PATH;`
-
-2）永久的：需要修改配置文件，变量永久生效。
-
-在/etc/profile文件中添加变量（对所有用户生效）。修改文件后要想马上生效，还要运行`source /etc/profile`，不然只能在下次重进此用户时生效。
-
-在用户目录下的.bash_profile文件中增加变量（对该用户生效）。同样需要source才能马上生效。
-
-重要的环境变量：
-
-PATH：可执行文件路径。
-
-LD_LIBRARY_PATH：动态链接库文件路径。
-
-LD_PRELOAD：优先调用自定义库而非系统库的时候会用到。
-
 # minicom
 
 1.查看串口设备
@@ -429,3 +399,39 @@ swapon --show
 /swapfile swap swap defaults 0 0
 swapoff /swapfile
 ```
+
+# 剪贴板
+
+Linux下的GUI程序的剪贴板功能一般是由X11提供的。
+
+X11支持复数个剪贴板，每个剪贴板都有一个名字。一般常见/常用的：
+
+PRIMARY剪贴板（选中的文本内容会被送到这个剪贴板，一般按鼠标中键可以粘贴）
+
+CLIPBOARD剪贴板（更加接近于Windows下的剪贴板的存在，Ctrl-C/V功能一般作用于这个剪贴板）。
+
+此外，X11的剪贴板里的内容似乎是由内容来源的程序来保存的，内容来源程序终止的话剪贴板就会被清空。这时一般需要一个常驻后台的剪贴板管理器（Clipboard Manager）来接管剪贴板的内容。
+
+常用的Clipboard Manager的列表如下：
+
+https://wiki.archlinux.org/title/Clipboard
+
+相关的标准文件：
+
+https://tronche.com/gui/x/icccm/
+
+参考：
+
+https://www.uninformativ.de/blog/postings/2017-04-02/0/POSTING-en.html
+
+X11: How does “the” clipboard work?
+
+https://wiki.archlinux.org/title/Clipboard
+
+https://www.zhihu.com/question/66284095
+
+电脑复制粘贴背后发生了什么？
+
+https://linux.cn/article-7329-1.html
+
+面向Linux的10款最佳剪贴板管理器
