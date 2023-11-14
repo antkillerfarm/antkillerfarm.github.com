@@ -127,6 +127,12 @@ Borland Graphics Interface，或者Turbo C Graphics，是上世纪八九十年�
 
 它的现代版本主要有：SDL_bgi/libXbgi/WINBGIm等。
 
+https://sdl-bgi.sourceforge.io/
+
+当然还有当时最流行的bgidemo：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/other/bgidemo.c
+
 ---
 
 Afx前缀是微软MFC一个小组的名称简写。
@@ -241,15 +247,3 @@ https://mp.weixin.qq.com/s/Dqe5B0ooayRU79CGulq71g
 https://www.zhihu.com/question/50076174
 
 为什么魂斗罗只有128KB却可以实现那么长的剧情？
-
-https://mp.weixin.qq.com/s/_rybr3Pnmt6Rr3RWxGTCXQ
-
-为什么有32个关卡的超级马里奥兄弟只要64KB？
-
-https://www.w3cschool.cn/article/leijuncode
-
-分享雷军22年前编写的代码
-
-https://mp.weixin.qq.com/s/7AtuIcic3ubzYAHnkDpONA
-
-雷军：穿越人生低谷的感悟

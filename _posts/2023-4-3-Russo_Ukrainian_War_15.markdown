@@ -231,6 +231,10 @@ https://news.ifeng.com/c/8Kph5NYlxxB
 
 果然！俄军退出赫尔松，苏罗维金一战封神？
 
+https://zhuanlan.zhihu.com/p/666716195
+
+善意又来了？浅谈俄军从第聂伯河左岸撤退的前景
+
 ## 顿涅斯克战役
 
 本节主要包括巴赫穆特、chasiv yar、马林卡、Soledar、Vuhledar、Avdiivka等地的攻防战。
