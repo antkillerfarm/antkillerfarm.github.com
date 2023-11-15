@@ -9,6 +9,22 @@ category: Attention
 
 # Large Language Model（续）
 
+https://zhuanlan.zhihu.com/p/254821426
+
+乘风破浪的PTM：两年来预训练模型的技术进展（2020年之前的主流技术）
+
+https://zhuanlan.zhihu.com/p/597586623
+
+通向AGI之路：大型语言模型（LLM）技术精要
+
+https://mp.weixin.qq.com/s/eV_9Mi2879w_gfoyiSm8Ug
+
+LLM全景图（The Landscape of LLM）
+
+https://www.zhihu.com/question/604592470
+
+前两个月国产类ChatGPT大模型如雨后春笋，为何最近都没声音了?
+
 https://mp.weixin.qq.com/s/oqhi58NcEVH1oVrW2p4xlQ
 
 大模型参数高效微调技术原理综述（一）-背景、参数高效微调简介
@@ -334,23 +350,3 @@ Bert时代的创新：Bert在NLP各领域的应用进展
 https://mp.weixin.qq.com/s/l-de0vfx-L24g58IxK-NKQ
 
 Jeff Dean强推：可视化Bert网络，发掘其中的语言、语法树与几何学
-
-https://mp.weixin.qq.com/s/nlFXfgM5KKZXnPdwd97JYg
-
-哈工大讯飞联合实验室发布基于全词覆盖的中文BERT预训练模型
-
-https://zhuanlan.zhihu.com/p/70389596
-
-一批高质量中文BERT预训练模型请查收（上）
-
-https://mp.weixin.qq.com/s/h1VUSY7_UZF3PmjSN0DMSg
-
-从One-hot, Word embedding到Transformer，一步步教你理解Bert
-
-https://zhuanlan.zhihu.com/p/132554155
-
-超细节的BERT/Transformer知识点
-
-https://mp.weixin.qq.com/s/UJlmjFHWhnlXXJoRv4zkEQ
-
-虽被BERT碾压，但还是有必要谈谈BERT时代与后时代的NLP

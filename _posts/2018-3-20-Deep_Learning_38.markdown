@@ -185,6 +185,30 @@ U²-Net：使用显著性物体检测来生成真实的铅笔肖像画
 
 # Attention进阶+
 
+https://mp.weixin.qq.com/s/fxEg8UOa3MeJ6qx5SjEHog
+
+NLP领域中各式各样Attention知识系统性的梳理和总结
+
+https://mp.weixin.qq.com/s/_5YaZdYa8bTFiAzHyrMFBg
+
+理解卷积神经网络中的自注意力机制
+
+https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
+
+阿里北大提出新attention建模框架，一个模型预测多种行为
+
+https://mp.weixin.qq.com/s/Yq3S4WrsQRQC06GvRgGjTQ
+
+打入神经网络思维内部
+
+https://mp.weixin.qq.com/s/MJ1578NdTKbjU-j3Uuo9Ww
+
+基于文档级问答任务的新注意力模型
+
+https://mp.weixin.qq.com/s/_3pA8FZwzegSpyz_cK63BQ
+
+Self-Attention GAN中的self-attention机制
+
 https://mp.weixin.qq.com/s/l4HN0_VzaiO-DwtNp9cLVA
 
 循环注意力区域实现图像多标签分类

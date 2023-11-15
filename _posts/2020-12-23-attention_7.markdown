@@ -111,6 +111,16 @@ http://www.199it.com/archives/1611000.html
 
 ---
 
+如果严格来论，目前国内的自研大模型，不论是零一万物的Yi，还是百川智能的Baichuan，或者阿里旗下的通义千问，架构上和LLaMA都是一致的。
+
+大家遥远的记忆中的Start-Copy Lee又回来了。
+
+https://www.zhihu.com/question/630152920
+
+如何看待李开复零一万物开源Yi大模型被指抄袭LLaMA?
+
+---
+
 参考：
 
 https://www.zhihu.com/question/589639535
@@ -196,19 +206,3 @@ https://www.zhihu.com/question/584132646
 https://zhuanlan.zhihu.com/p/463352552
 
 稀疏性在机器学习中的发展趋势——Sparsity，稀疏激活，高效计算，MoE，稀疏注意力机制
-
-https://zhuanlan.zhihu.com/p/254821426
-
-乘风破浪的PTM：两年来预训练模型的技术进展（2020年之前的主流技术）
-
-https://zhuanlan.zhihu.com/p/597586623
-
-通向AGI之路：大型语言模型（LLM）技术精要
-
-https://mp.weixin.qq.com/s/eV_9Mi2879w_gfoyiSm8Ug
-
-LLM全景图（The Landscape of LLM）
-
-https://www.zhihu.com/question/604592470
-
-前两个月国产类ChatGPT大模型如雨后春笋，为何最近都没声音了?
