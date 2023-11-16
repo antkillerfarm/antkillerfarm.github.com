@@ -323,6 +323,14 @@ https://zhuanlan.zhihu.com/p/608705255
 
 GPT-3+RL全流程训练开源整理
 
+https://zhuanlan.zhihu.com/p/609795142
+
+ChatGPT原理详解+实操(1)----SFT(GPT模型精调)
+
+https://zhuanlan.zhihu.com/p/610147705
+
+ChatGPT原理详解+实操(2)----RM(reward model)
+
 ## RLHF
 
 TAMER（Training an Agent Manually via Evaluative Reinforcement，评估式强化人工训练代理）框架将人类标记者引入到Agents的学习循环中，可以通过人类向Agents提供奖励反馈（即指导Agents进行训练），从而快速达到训练任务目标。
@@ -375,4 +383,4 @@ DeepSpeed-Chat开源了
 
 微软内部之前有个类似ChatGPT的项目，叫微软小冰，几个负责人都是那种技术栈和技术思路非常老旧的老人，在微软内部吸血吸了很多年，微软后来体面的裁掉了这个团队，转头去投了OpenAI 10亿美金。
 
-这个被裁团队出来之后，一阵包装，说是微软为了他们更好的发展，所以让他们独立出来，然后去vc那融了好多钱。就在去年12月份投资人纷纷对比了ChatGPT和小冰的智能化程度。对比效果简直辣眼睛，小冰那也叫智能？
+这个被裁团队出来之后，一阵包装，说是微软为了他们更好的发展，所以让他们独立出来，然后去VC那融了好多钱。就在去年12月份，投资人纷纷对比了ChatGPT和小冰的智能化程度。对比效果简直辣眼睛，小冰那也叫智能？
