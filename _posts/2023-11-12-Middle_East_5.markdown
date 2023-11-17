@@ -87,6 +87,14 @@ https://www.zhihu.com/question/625249932
 
 以色列军队的战斗力为什么下降了这么多？
 
+https://news.ifeng.com/c/8UG2hfjMhCb
+
+又一个惊人反转，以色列军队是一支鱼腩豆腐军？
+
+https://news.ifeng.com/c/8UMOa8HOXlx
+
+防弹求助外贸，军粮靠麦当劳，以色列还是中东小霸王？
+
 ---
 
 https://mp.weixin.qq.com/s/3Frx_ZmmmEC_aj4tLUPleg
