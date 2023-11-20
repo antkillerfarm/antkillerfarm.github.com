@@ -200,3 +200,23 @@ https://mp.weixin.qq.com/s/prz4Dw9YzEcUDJ2CIHTnLw
 https://mp.weixin.qq.com/s/tPX9GMw4hWYmeD9Qblydwg
 
 胡清扬，高压下的魔法师
+
+# 国产半导体=
+
+## Russia CPU
+
+俄罗斯设计通用CPU的企业主要有两家，一家是莫斯科SPARC技术中心(MCST)，另一家是贝加尔电子公司(Baikal Electronics)。
+
+莫斯科SPARC技术中心是俄罗斯自主研发CPU的代表，研发了Elbrus系列产品。
+
+贝加尔电子公司推出的Baikal系列CPU都是外购的CPU核心设计，再自行与其它的外购IP进行集成，与我们的国产手机CPU是相同的路线。
+
+https://mp.weixin.qq.com/s/Ud4f5L2tYNbP1oURVBszag
+
+俄罗斯自研Elbrus CPU参数曝光，CEO年近九旬仍未退休
+
+>Boris Babayan，1933年生，俄罗斯科学院院士，Intel院士。俄罗斯CPU之父。Elbrus系列超算和通用CPU的主要研发者，1978年他率领团队研发出世界第一台超标量计算机Elbrus-1，整整领先西方世界十三年。
+
+https://zhuanlan.zhihu.com/p/549196030
+
+甭怂，奣烎，国产通用CPU比俄罗斯勥

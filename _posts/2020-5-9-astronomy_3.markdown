@@ -299,6 +299,10 @@ https://www.zhihu.com/question/596821956
 
 SpaceX星舰发射失败，是什么原因？还有哪些信息值得关注？（2023.4.20）
 
+https://www.zhihu.com/question/629931897
+
+11月18日SpaceX星舰第二次试飞，发射及分离成功后失联，哪些信息值得关注？
+
 ---
 
 液氢液氧

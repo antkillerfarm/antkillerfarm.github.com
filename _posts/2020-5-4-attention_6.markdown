@@ -375,6 +375,10 @@ https://zhuanlan.zhihu.com/p/635569455
 
 RLHF实践
 
+https://zhuanlan.zhihu.com/p/667152180
+
+一些RLHF的平替汇总（2023.11）
+
 https://zhuanlan.zhihu.com/p/621456865
 
 DeepSpeed-Chat开源了
