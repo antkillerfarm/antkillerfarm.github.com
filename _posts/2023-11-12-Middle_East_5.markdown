@@ -234,3 +234,7 @@ https://zhuanlan.zhihu.com/p/636102801
 https://zhuanlan.zhihu.com/p/658669798
 
 伊朗在东北修长城，是防着谁？（戈尔甘长城）
+
+https://zhuanlan.zhihu.com/p/497104871
+
+中东玩家正经历，被国产垃圾换皮游戏统治的恐惧

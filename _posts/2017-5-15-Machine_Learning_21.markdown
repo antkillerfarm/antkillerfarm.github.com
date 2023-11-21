@@ -240,3 +240,7 @@ https://baijiahao.baidu.com/s?id=1700375314200976098
 ---
 
 ![](/images/img5/Islamism.png)
+
+---
+
+埃兹拉·亚辛（Ezra Yashin），95岁，被哈马斯火箭弹击中装甲车身亡，亚辛成为以色列阵亡年纪最大老兵。
