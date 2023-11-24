@@ -171,6 +171,8 @@ https://www.cnblogs.com/iamnewsea/p/7701464.html
 
 可以用`sudo fdisk -l`查看分区名称，例如SSD分区一般叫做`/dev/nvme0n1p4`。
 
+>sd（机械硬盘）、nvme（多见于用nvme硬盘的新电脑）、mmc（多见于用emmc和sd卡的设备，比如树莓派）、mtdblock（多见于用flash存储的设备，比如路由器）。
+
 或者
 
 `sudo umount -l /cdrom`

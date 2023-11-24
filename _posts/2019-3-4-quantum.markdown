@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  量子计算, 遗传 & 进化 & 模拟退火算法, PaddlePaddle, X-Deep Learning
+title:  量子计算, 遗传 & 进化 & 模拟退火算法, PaddlePaddle
 category: resource 
 ---
 
@@ -12,6 +12,35 @@ category: resource
 ![](/images/img4/Quantum.png)
 
 ![](/images/img4/quant.jpg)
+
+---
+
+>所谓的quantum supremacy，有人翻译为量子优势也有人翻译为量子霸权，一般指的是量子计算在某一个问题上，可以解决经典计算机不能解决的问题或者是比经典计算机有显著的加速(一般是指数加速)。   
+>量子霸权是量子系统对其对应的经典系统的霸权，不是什么国与国，公司和公司上面的霸权。
+
+https://www.zhihu.com/question/346999432
+
+如何评价Google宣称率先实现量子霸权？
+
+https://mp.weixin.qq.com/s/xgF61ageCtk4hZMsQqgpEg
+
+为什么Google的量子霸权纯属忽悠大众
+
+---
+
+NISQ：Noisy Intermediate-Scale Quantum
+
+FTQC：Fault tolerant quantum computation
+
+现有的量子计算机只能实现至多一百以内的量子比特数，都处在NISQ所定义的范畴。量子计算若想能够长时间的运算，这样的客观条件下是无法完成的。极高的错误率以及过短的稳定时间，使得量子计算纠错能力（Quantum Error Correction）迫在眉睫。但是现阶段所有的研究都只能在量子比特数超过1000以上时才能实现相应的量子纠错（QEC）。
+
+中国的大厂呢，又颇具中国特色。一方面高层不敢把量子计算做得太好：做的太好了，美国的制裁来了，自己的主营业务就没了。另一方面又非要向外界展现自己的研发的风采，隔三差五地整个新突破。
+
+https://www.zhihu.com/question/631240448
+
+如何看待2023年各大厂纷纷裁撤量子计算部门，量子寒冬真的到来了吗？
+
+---
 
 https://www.zhihu.com/people/xuan-xing-29/posts
 
@@ -89,20 +118,9 @@ https://mp.weixin.qq.com/s/Pp57gElBjMUuPa65KlzBKg
 
 量子计算机的新对手：随机磁电路，因数分解更厉害
 
-https://www.zhihu.com/question/346999432
-
-如何评价Google宣称率先实现量子霸权？
-
->所谓的quantum supremacy，有人翻译为量子优势也有人翻译为量子霸权，一般指的是量子计算在某一个问题上，可以解决经典计算机不能解决的问题或者是比经典计算机有显著的加速(一般是指数加速)。   
->量子霸权是量子系统对其对应的经典系统的霸权，不是什么国与国，公司和公司上面的霸权。
-
 http://www.iasi.cnr.it/aussois/web/uploads/2019/slides/nannicinig.pdf
 
 An introduction to quantum computing, without the physics
-
-https://mp.weixin.qq.com/s/xgF61ageCtk4hZMsQqgpEg
-
-为什么Google的量子霸权纯属忽悠大众
 
 https://mp.weixin.qq.com/s/GBeTausaAIf0W2cD7wt47Q
 
@@ -343,51 +361,3 @@ https://mp.weixin.qq.com/s/1jtO1efF2UauaUZFDRzQHw
 https://mp.weixin.qq.com/s/gfJKmoeR6n3m89r4F3R_yw
 
 PaddleDetection物体检测统一框架
-
-# X-Deep Learning
-
-TensorFlow、MXNet、PyTorch等框架大都是面向图像、语音等领域的稠密数据设计，对广告、推荐等场景的高维稀疏数据上的深度学习计算考虑不足。
-
-为此，阿里妈妈启动了XDL框架的研发，希望能够在复用已有开源框架对稠密数据的计算能力基础上，重点打造面向工业级应用的分布式规模能力。
-
-![](/images/img2/XDL.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/kdCk_twY_czQo58y3x_yyA
-
-阿里深度学习框架开源了！无缝对接TensorFlow、PyTorch
-
-# Jittor
-
-https://mp.weixin.qq.com/s/ZwP1H-efHK1dp2X2ElEs8g
-
-清华开源Jittor：首个国内高校自研深度学习框架，一键转换PyTorch
-
-# chainer
-
-chainer是一个日本公司Preferred Networks写的基于python的深度学习框架。
-
-官网：
-
-https://chainer.org/
-
-代码：
-
-https://github.com/chainer/chainer
-
-Preferred Networks是日本目前最强的AI创业公司，估值已经超过20亿美元。在工业机器人领域具有很强的实力。
-
-它推出的PaintsChainer是一个给黑白线稿上色的App。
-
-官网：
-
-https://github.com/pfnet/PaintsChainer
-
-# MegEngine
-
-MegEngine是旷视提出的深度学习框架。
-
-官网:
-
-https://megengine.org.cn/

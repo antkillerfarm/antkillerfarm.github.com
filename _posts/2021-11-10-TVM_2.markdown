@@ -204,60 +204,83 @@ https://blog.csdn.net/qwertyu1234/article/details/50163847
 
 SPIR-V研究：编译器基本原理
 
-# 俄乌战争+
+# LLVM+
 
-2021年的时候在政权动荡，内战，经济停滞等积弊冲击下，除了极端民族主义者，乌克兰国民已经没什么人认同乌克兰这玩意儿了，一般乌友心态也是毁灭吧，这破国谁上台都是这吊样。如果京子哥有战略定力，再忍2年，乌克兰的权力中枢就自我崩溃了，到时候京子哥打款整一个亲俄派上台并不难，反对派平台——为了生活就在21年时候，在地方选举赢了不少城市。
+## 编译
 
-戏子本来大概率会是一个历史不会记起的庸才，凭着不知道是愚蠢还是信念的神操作，硬接俄罗斯第一猛男——大弟的全力一击，还他妈的站住了，直接一举封神。
+```bash
+cmake -S llvm -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug
+ninja -C build check-llvm
+```
 
----
+## tablegen
 
-乌克兰奇案：1名俄军士官违规把智能手机带在身上，在乌克兰作战时丢失，然后，他网银账户里的250万卢布被人全部转走了。士官的妻子在俄罗斯，闻讯后打电话给乌克兰当地警方报案，说这是夫妻俩全部积蓄。莫斯科普通人的月工资能到5万卢布就算很不错了，250万卢布，相当于四年工资不吃不喝全攒下来。
+LLVM tablegen，文件名后缀为`.td`。
 
----
+https://zhuanlan.zhihu.com/p/447318642
 
-乌克兰就是一把放干俄罗斯血的利刃，它注定是要被牺牲的，但是打赢了就有回报。当年华盛顿何尝不是拿着路易16的钱冲锋陷阵，你以为你有的选，实际你没得选。我给你钱是看得起你，有本事不要，自己光屁股冲过去和人打。
+TableGen_Overview
 
----
+https://zhuanlan.zhihu.com/p/447728683
 
-普京搁这儿玩绝命时刻呢。
+TableGen Language Reference
 
-什么步兵将军，坦克将军，导弹将军，空天将军，大炮将军，核弹将军都得轮流换一遍。
+## 参考
 
-每换一个媒体还配合介绍下这位将军特殊能力是啥。
+所谓的intrinsic function ，是属于编译器开洞魔法的范畴，这些函数的实现是直接写死在编译器的代码生成部分的，在最终得到的二进制里面不会存在这些函数的符号和实现。
 
-真当玩游戏么是吧。
+https://zhuanlan.zhihu.com/p/348365662
 
-https://www.zhihu.com/question/601562188
+C++标准库开洞史
 
-红色警戒3剧情中，泽连斯基博士是否是斯拉夫人民的历史罪人?
+https://www.zhihu.com/question/569519423
 
----
+C++标准库中是否有需要依赖编译器魔法才能实现的功能？
 
-印度首富阿达尼因为大量购买俄罗斯原油转手出售赚取差价被人恶意做空，一天损失超过200亿美元。
+https://www.zhihu.com/question/582148351
 
----
+C/C++函数“必须声明但禁止定义”才能使用，函数地址也不存在，是什么神奇的操作？
 
-昨天布林肯这个毒舌把我逗乐了。
+https://mp.weixin.qq.com/s/FSlJKnC0y51nsLDp1B3tXg
 
-克里姆林宫经常声称它拥有世界上第二强大的军队，许多人相信了这一点。今天，大家才知道俄罗斯军队原来是乌克兰战场第二强大的军队。
+Swift编译器Crash—Segmentation fault解决方案
 
----
+https://zhuanlan.zhihu.com/p/392381317
 
-俄罗斯72旅团士兵与旅团长矛盾重重，枪杀督战队长跑路。72旅团跑路的时候还遇到拦截的瓦格纳督战队。但72旅团也埋地雷阻挠瓦格纳雇佣军在巴赫穆特跑路。瓦格纳雇佣军一气之下把72旅团长抓起来打一顿。一出又一出，跌宕起伏。
+LLVM IR的第一个Pass：上手官方文档Hello Pass
 
-https://zhuanlan.zhihu.com/p/634695124
+https://csstormq.github.io/
 
-巴赫穆特兵变 瓦格纳雇佣军抓捕俄罗斯72旅团长
+一个LLVM、TVM、NEON的专栏
 
-https://zhuanlan.zhihu.com/p/611595424
+https://www.zhihu.com/question/484069566
 
-权力斗争、炮弹短缺——瓦格纳-国防部的较量与俄罗斯的战争潜力
+LLVM怎么表达硬件相关的特性?
 
-https://zhuanlan.zhihu.com/p/608784859
+https://mp.weixin.qq.com/s/-IjJJG5huL6p3KjhO70s7Q
 
-俄雇佣兵的子弹，没用来打乌军，瓦格纳把俄军大将，画在了靶子上
+编译器中的图论算法
 
----
+https://zhuanlan.zhihu.com/p/140462815
 
-俄罗斯目前正在制造一批新坦克。而生产设备已经换成了美国提供的HAAS(哈斯)牌机床。
+LLVM基本概念入门
+
+https://zhuanlan.zhihu.com/p/141265959
+
+有关于TableGen的简单介绍
+
+https://zhuanlan.zhihu.com/p/502828729
+
+LLVM创始人Chris Lattner回顾展望编译器
+
+https://zhuanlan.zhihu.com/p/626085010
+
+使用Flex、Bison和LLVM编写自己的Toy Compiler
+
+https://zhuanlan.zhihu.com/p/407854583
+
+使用LLVM实现一个简单编译器（一）
+
+https://zhuanlan.zhihu.com/p/409749393
+
+使用LLVM实现一个简单编译器（二）

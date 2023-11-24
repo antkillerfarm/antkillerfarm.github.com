@@ -286,6 +286,26 @@ https://www.ubuntukylin.com/news/1682-cn.html
 
 这是优麒麟社区提供的Wine版本，基本涵盖了腾讯系主要的几款通信软件
 
+---
+
+删除软件快捷方式：
+
+1.首先将`~/.local/share/applications/`下和`~/.local/share/applications/wine/Programs/`下相关文件或目录删除掉。
+
+2.然后再删除`~/.config/menus/applications-merged/`里面相关的文件。
+
+---
+
+腾讯会议目前已经有了官方的Linux版本。
+
+检测到窗口系统采用wayland协议 腾讯会议暂不兼容 程序即将退出：
+
+```bash
+sudo vim /etc/gdm3/custom.conf
+#WaylandEnable=false #uncomment this line
+sudo service gdm3 restart
+```
+
 # 俄乌战争+
 
 54旅的科切夫尼克因为在伊久姆附近缴获了一辆出问题的T72B3(电动炮塔失效，发动机漏油，压缩机坏了)，维修营也对这辆坦克毫无办法。于是他装作鹅向乌拉尔机械制造厂致电，厂长安德烈·阿巴库莫夫让科切夫尼克在WhatsApp里详细的说明问题，并一一给出了解答，还保证他会跟车里雅宾斯克发动机制造厂沟通，科切夫尼克在挂断电话前，告知对方自己是乌萝，并留下了一串笑声。
@@ -301,12 +321,6 @@ https://www.ubuntukylin.com/news/1682-cn.html
 ---
 
 这俄友捡了顾客信用卡，直接刷了五百块钱在WOT氪金被条子抓了，交不起罚款参加俄军结果被乌友活捉。
-
----
-
-噶鹅狂魔米哈伊尔·波普科夫 (Mikhail Popkov)是一名前阿瑟，他因为噶了大约80妇女、女童和一名阿瑟领了无期大礼包。他向瓦格纳申请参加对线遭到厨子的拒绝后，又向战神写信请求给他一个参加对线的机会。
-
-过于变态以至于瓦格纳都觉得变态。。。
 
 ---
 

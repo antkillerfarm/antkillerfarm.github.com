@@ -300,83 +300,50 @@ https://mp.weixin.qq.com/s/gWdeevVYctxjDDw9SOWe_Q
 
 PyTorch深度学习技术生态
 
-# LLVM+
+## Jittor
 
-## 编译
+https://mp.weixin.qq.com/s/ZwP1H-efHK1dp2X2ElEs8g
 
-```bash
-cmake -S llvm -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug
-ninja -C build check-llvm
-```
+清华开源Jittor：首个国内高校自研深度学习框架，一键转换PyTorch
 
-## tablegen
+## chainer
 
-LLVM tablegen，文件名后缀为`.td`。
+chainer是一个日本公司Preferred Networks写的基于python的深度学习框架。
 
-https://zhuanlan.zhihu.com/p/447318642
+官网：
 
-TableGen_Overview
+https://chainer.org/
 
-https://zhuanlan.zhihu.com/p/447728683
+代码：
 
-TableGen Language Reference
+https://github.com/chainer/chainer
 
-## 参考
+Preferred Networks是日本目前最强的AI创业公司，估值已经超过20亿美元。在工业机器人领域具有很强的实力。
 
-所谓的intrinsic function ，是属于编译器开洞魔法的范畴，这些函数的实现是直接写死在编译器的代码生成部分的，在最终得到的二进制里面不会存在这些函数的符号和实现。
+它推出的PaintsChainer是一个给黑白线稿上色的App。
 
-https://zhuanlan.zhihu.com/p/348365662
+官网：
 
-C++标准库开洞史
+https://github.com/pfnet/PaintsChainer
 
-https://www.zhihu.com/question/569519423
+## MegEngine
 
-C++标准库中是否有需要依赖编译器魔法才能实现的功能？
+MegEngine是旷视提出的深度学习框架。
 
-https://www.zhihu.com/question/582148351
+官网:
 
-C/C++函数“必须声明但禁止定义”才能使用，函数地址也不存在，是什么神奇的操作？
+https://megengine.org.cn/
 
-https://mp.weixin.qq.com/s/FSlJKnC0y51nsLDp1B3tXg
+## X-Deep Learning
 
-Swift编译器Crash—Segmentation fault解决方案
+TensorFlow、MXNet、PyTorch等框架大都是面向图像、语音等领域的稠密数据设计，对广告、推荐等场景的高维稀疏数据上的深度学习计算考虑不足。
 
-https://zhuanlan.zhihu.com/p/392381317
+为此，阿里妈妈启动了XDL框架的研发，希望能够在复用已有开源框架对稠密数据的计算能力基础上，重点打造面向工业级应用的分布式规模能力。
 
-LLVM IR的第一个Pass：上手官方文档Hello Pass
+![](/images/img2/XDL.png)
 
-https://csstormq.github.io/
+参考：
 
-一个LLVM、TVM、NEON的专栏
+https://mp.weixin.qq.com/s/kdCk_twY_czQo58y3x_yyA
 
-https://www.zhihu.com/question/484069566
-
-LLVM怎么表达硬件相关的特性?
-
-https://mp.weixin.qq.com/s/-IjJJG5huL6p3KjhO70s7Q
-
-编译器中的图论算法
-
-https://zhuanlan.zhihu.com/p/140462815
-
-LLVM基本概念入门
-
-https://zhuanlan.zhihu.com/p/141265959
-
-有关于TableGen的简单介绍
-
-https://zhuanlan.zhihu.com/p/502828729
-
-LLVM创始人Chris Lattner回顾展望编译器
-
-https://zhuanlan.zhihu.com/p/626085010
-
-使用Flex、Bison和LLVM编写自己的Toy Compiler
-
-https://zhuanlan.zhihu.com/p/407854583
-
-使用LLVM实现一个简单编译器（一）
-
-https://zhuanlan.zhihu.com/p/409749393
-
-使用LLVM实现一个简单编译器（二）
+阿里深度学习框架开源了！无缝对接TensorFlow、PyTorch
