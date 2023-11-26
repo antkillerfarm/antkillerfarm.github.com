@@ -77,6 +77,10 @@ https://zhuanlan.zhihu.com/p/562116675
 
 乌克兰真理报长篇: 二月最长的三天，一场谁都没料到的大战的开端
 
+https://zhuanlan.zhihu.com/p/631336824
+
+乌克兰真理报:那一天，224
+
 https://zhuanlan.zhihu.com/p/620001957
 
 忆苦思甜之基辅大饺子
