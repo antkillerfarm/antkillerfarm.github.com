@@ -242,3 +242,7 @@ https://www.zhihu.com/question/339388119
 https://mp.weixin.qq.com/s/MEiee-2zlamaqFXv2ih4WQ
 
 树莓派相机的自动曝光算法
+
+https://zhuanlan.zhihu.com/p/668807915
+
+Beepy——基于香橙派 Zero 2W 的 DIY 开源掌上电脑配置与优化分享

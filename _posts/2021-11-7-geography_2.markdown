@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  地理
+title:  地理（二）
 category: Nature 
 ---
 
@@ -143,6 +143,12 @@ https://zhuanlan.zhihu.com/p/620097885
 
 ---
 
+![](/images/img5/light_in_sea.jpg)
+
+![](/images/img5/light_in_sea_2.jpg)
+
+---
+
 https://zhuanlan.zhihu.com/p/53237519
 
 一文读懂印尼海啸的真正原因（喀拉喀托之子）
@@ -198,11 +204,3 @@ https://mp.weixin.qq.com/s/5qYXmOvQigvcDDeGQGmkSQ
 https://mp.weixin.qq.com/s/ynyU5YUSHSu839N1pljBHQ
 
 张掖绝美“彩虹山”，为何常常被误解成丹霞地貌？
-
-https://mp.weixin.qq.com/s/YY7JfNxDzcNuku73HYxE8A
-
-有一种地震，对生活是有益的？
-
-https://mp.weixin.qq.com/s/5jH_PH5SfsmR_i-SWCavJA
-
-这只猫居然2000多岁了，古代的猫奴这么疯狂的吗？居然用它做那种事……（纳斯卡地画）

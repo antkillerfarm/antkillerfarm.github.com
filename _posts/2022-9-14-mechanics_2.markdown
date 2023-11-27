@@ -306,3 +306,7 @@ https://www.zhihu.com/question/286135893
 https://www.zhihu.com/question/34831530
 
 T72真的很不堪吗？
+
+https://www.zhihu.com/question/348210162
+
+明朝时期比较著名的火器之一三眼铳能在有效射程内击穿欧洲的板甲吗？

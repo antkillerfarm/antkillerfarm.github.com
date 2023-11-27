@@ -281,6 +281,14 @@ https://www.zhihu.com/question/375319488
 
 # 地理+
 
+https://mp.weixin.qq.com/s/YY7JfNxDzcNuku73HYxE8A
+
+有一种地震，对生活是有益的？
+
+https://mp.weixin.qq.com/s/5jH_PH5SfsmR_i-SWCavJA
+
+这只猫居然2000多岁了，古代的猫奴这么疯狂的吗？居然用它做那种事……（纳斯卡地画）
+
 https://mp.weixin.qq.com/s/28lFYHm_dd9jQdO-MwbmWw
 
 超前的思想，迟到的荣誉（Alfred Lothar Wegener）
@@ -372,27 +380,3 @@ https://mp.weixin.qq.com/s/WJMtsDoSj98FZdHlfj0zuQ
 https://mp.weixin.qq.com/s/HhPE8RzIk5_XnMY9mdHB1g
 
 中国大运河：权力与财富的千年奔流
-
-https://www.zhihu.com/question/413322597
-
-马里亚纳海沟为什么会那么深？
-
-https://www.zhihu.com/question/520925509
-
-从地质学上如何解释顿巴斯地区丰富的煤炭资源？
-
-https://zhuanlan.zhihu.com/p/624761945
-
-卡扎菲“世界第八大奇迹”，中道崩殂了（努比亚砂岩含水层系统）
-
-https://zhuanlan.zhihu.com/p/645393553
-
-中国第一大淡水湖，提前干了！
-
-https://www.zhihu.com/question/614866300
-
-是否存在岛上的内流河?
-
-https://www.zhihu.com/question/397282292
-
-世界上最深的河是哪条河，有多深？

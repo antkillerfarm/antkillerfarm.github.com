@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争（二十三）——无官不贪（3）
+title:  俄乌战争（二十三）——无官不贪（2）
 category: Russo Ukrainian War 
 ---
 
@@ -67,7 +67,7 @@ https://zhuanlan.zhihu.com/p/639969506
 
 八成空天军贪腐问题严重，京子要求新洲际导弹试射以回应4号美军宣布的新一代“哨兵”陆基洲际弹道导弹。结果发现不行，快成烧火棍了。
 
-https://k.sina.com.cn/article_7298329670_1b303ac4602000zogx.html
+https://baijiahao.baidu.com/s?id=1729980408673178478
 
 段子还是事实？俄罗斯逮捕2位将军，贪污数十亿还给美国通风报信
 
