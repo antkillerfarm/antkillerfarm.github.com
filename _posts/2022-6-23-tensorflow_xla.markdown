@@ -4,6 +4,9 @@ title:  TF XLA（一）
 category: DL Framework 
 ---
 
+* toc
+{:toc}
+
 # Fused Graph
 
 Fused Graph是TensorFlow新推出的概念。这里仍以softmax运算为例，讲一下它的基本思想。

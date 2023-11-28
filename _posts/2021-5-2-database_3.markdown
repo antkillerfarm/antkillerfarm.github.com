@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Mysql
+title:  Mysql, LevelDB, 向量数据库
 category: database 
 ---
 
@@ -309,104 +309,18 @@ https://zhuanlan.zhihu.com/p/53299778
 
 既生Redis何生LevelDB？
 
-# 数据库参考资源
+# 向量数据库
 
-![](/images/img4/database.svg)
+向量搜索在搜索、推荐、NLP等众多应用领域被广泛的使用，典型的互联网业务，包括电商、出行、点评、地图等都大量使用相关技术。随着ChatGPT带来的AI技术应用新热潮，向量数据库又一次地获得了更多的关注。它可以解决LLM不长记性（Memory，记忆）的问题。
 
-![](/images/img4/database.jpg)
+普遍认为 LLM + Vector Search + API pool 会变成复杂AI场景的标准解决方案。
 
-https://hpi.de/naumann/projects/rdbms-genealogy.html
+类似Pinecone，Weaviate，Qdrant，Chroma这样的专用向量数据库最初是为了解决 ChatGPT 的记忆能力不足而出现的 Workaround —— 最发布的 ChatGPT 3.5 的上下文窗口只有 4K Token，也就是不到两千个汉字。然而当下 GPT 4 的上下文窗口已经发展到了 128K，扩大了32倍，足够塞进一整篇小说了 —— 而且未来还会更大。这时候，用作临时周转的垫脚石 —— 向量数据库 SaaS 就处在一个尴尬的位置上了。
 
-https://zhuanlan.zhihu.com/p/439807305
+https://www.zhihu.com/question/603117242
 
-为什么说PostgreSQL前途无量？
+为什么各大VC最近都在投向量数据库？
 
-https://mp.weixin.qq.com/s/CvXKbp5Id6_lOWNs6ntWiA
+https://zhuanlan.zhihu.com/p/668509885
 
-SQL最大竞争对手（QUEL）的简史
-
-https://www.zhihu.com/question/31955622
-
-postgresql也很强大，为何在中国大陆，mysql成为主流，postgresql屈居二线呢？
-
----
-
-https://www.cnblogs.com/ahu-lichang/p/10899747.html
-
-数据库三大范式（1NF,2NF,3NF）及ER图
-
-https://mp.weixin.qq.com/s/m_JMXU6iMS4SckzWZYtIUA
-
-腾讯分布式数据库TDSQL金融级能力的架构原理解读
-
-https://mp.weixin.qq.com/s/jdPE9WClBuimIHVxJnwwUw
-
-字节跳动自研强一致在线KV&表格存储实践-上篇
-
-https://mp.weixin.qq.com/s/DvUBnWBqb0XGnicKUb-iqg
-
-字节跳动自研强一致在线KV&表格存储实践-下篇
-
-https://mp.weixin.qq.com/s/PPlrrtcdrtKT3afgWOU8Pg
-
-为什么数据库不应该使用外键
-
-https://mp.weixin.qq.com/s/k1sK-QQjVqdJnpWNCV0pUA
-
-并发环境下，先操作数据库还是先操作缓存？
-
-https://mp.weixin.qq.com/s/I3ca2HAuSTtUJSZyHNe1vA
-
-数据库读写分离要注意哪些细节
-
-https://mp.weixin.qq.com/s/oV5F_K2mmE_kK77uEZSjLg
-
-字节跳动分布式表格存储系统的演进
-
-https://mp.weixin.qq.com/s/ZjnRzI18plggKTv_nPBsEw
-
-字节跳动表格存储中的事务
-
-https://mp.weixin.qq.com/s/thg9xOKI-GWfADF5tXh29A
-
-面试官：了解数据库连接池吗？
-
-https://mp.weixin.qq.com/s/5Qcbz6dT20Sa_OvRfbNXNw
-
-如何给新来的师妹解释什么是数据库的脏读、不可重复读和幻读
-
-https://mp.weixin.qq.com/s/1zarqgOh9-3chlBsB4TsuA
-
-物联网时代数据数据库如何选型？
-
-https://mp.weixin.qq.com/s/AcuFiHgRJg2OcNGtfjRxYA
-
-我们对比了5款数据库，告诉你NewSQL的独到之处
-
-https://mp.weixin.qq.com/s/DaspXFLPASYE7N0WHllcYQ
-
-Cassandra的过去、现在、未来
-
-https://mp.weixin.qq.com/s/cLIrRmcS5sbiDVl0cwDlIw
-
-Cassandra在时空数据上的探索
-
-https://mp.weixin.qq.com/s/ufficZ7cCvRFdEpaAfm8Fg
-
-面试官问：讲讲高并发下的接口幂等性怎么实现？
-
-https://www.jianshu.com/p/0355d9e5ba0e
-
-数据库三大范式
-
-https://mp.weixin.qq.com/s/QbwTY8Tfkv1uUdsL9vk8iw
-
-一文看懂阿里文娱大数据OLAP选型
-
-https://mp.weixin.qq.com/s/mcyljauYnyydePLPeshjhw
-
-程序员硬核“年终大扫除”，清理了数据库70GB空间
-
-https://mp.weixin.qq.com/s/O3A5gVewRQ11Z8RdPcs-9w
-
-一文看懂Pinterest如何构建时间序列数据库系统Goku
+向量数据库凉了吗？

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  MLPerf, 移动端推理框架, DL Backend, DRL实战
-category: AI 
+category: DL Framework 
 ---
 
 * toc

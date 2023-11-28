@@ -182,17 +182,3 @@ MongoDB新功能介绍-Change Streams
 Robomongo是一个开源的MongoDB的前端工具，基于Qt编写。官网：
 
 https://robomongo.org/
-
-# 数据库参考资源+
-
-https://mp.weixin.qq.com/s/09BlPee0-kP-At2aDyDbMw
-
-中国数据库40年历史：隐秘的江湖与恩怨
-
-https://mp.weixin.qq.com/s/4lZ7My6cs4-VJQ1qGhQxZg
-
-AliSQL X-Cluste：基于X-Paxos的高性能强一致MySQL数据库
-
-https://mp.weixin.qq.com/s/tPzBlQGxGq1WEnXz5ggpxg
-
-sysbench在美团点评中的应用

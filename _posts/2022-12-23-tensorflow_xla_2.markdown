@@ -4,6 +4,9 @@ title:  TF XLA（二）
 category: DL Framework 
 ---
 
+* toc
+{:toc}
+
 # XLA
 
 ## system op

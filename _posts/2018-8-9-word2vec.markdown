@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  word2vec, LSTM Speech Recognition实战, 炼丹实录
-category: AI 
+category: DL Framework 
 ---
 
 * toc

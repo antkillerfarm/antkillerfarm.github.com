@@ -364,3 +364,7 @@ https://zhuanlan.zhihu.com/p/658436776
 https://zhuanlan.zhihu.com/p/658350757
 
 死后杀人 俄罗斯多名军人不幸被假投降的乌克兰无人机击毙
+
+https://zhuanlan.zhihu.com/p/669133108
+
+俄乌边境第一线报道：乌克兰小镇的毁灭之路

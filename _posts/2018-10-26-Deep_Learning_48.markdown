@@ -197,16 +197,6 @@ HNSW（Hierarchical Navigable Small World graphs）
 
 ---
 
-向量搜索在搜索、推荐、NLP等众多应用领域被广泛的使用，典型的互联网业务，包括电商、出行、点评、地图等都大量使用相关技术。随着ChatGPT带来的AI技术应用新热潮，向量数据库又一次地获得了更多的关注。它可以解决LLM不长记性（Memory，记忆）的问题。
-
-普遍认为 LLM + Vector Search + API pool 会变成复杂AI场景的标准解决方案。
-
-https://www.zhihu.com/question/603117242
-
-为什么各大VC最近都在投向量数据库？
-
----
-
 https://zhuanlan.zhihu.com/p/78561555
 
 KNN的实现方式有哪些？
