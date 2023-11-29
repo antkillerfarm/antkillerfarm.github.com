@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争（十四）——凡人列传（2）, 卢甘斯克战役
+title:  俄乌战争（十四）——凡人列传（1）, 卢甘斯克战役
 category: Russo Ukrainian War 
 ---
 
