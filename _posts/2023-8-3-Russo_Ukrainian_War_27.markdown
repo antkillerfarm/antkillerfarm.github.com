@@ -109,6 +109,10 @@ https://zhuanlan.zhihu.com/p/669343082
 
 身残志坚 俄罗斯25岁弱智青年参加乌克兰特别军事行动
 
+https://zhuanlan.zhihu.com/p/669553719
+
+血战乌克兰 俄罗斯精忠报国魔人点将录
+
 ---
 
 https://mp.weixin.qq.com/s/PUqFEBUN6OaGZjB-ojrMRg

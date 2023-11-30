@@ -9,6 +9,24 @@ category: Nature
 
 # 黑洞
 
+## 黑洞照片（续）
+
+https://www.zhihu.com/question/319589547
+
+如何评价人类的第一张黑洞照片？
+
+https://blogs.futura-sciences.com/e-luminet/tag/black-hole/
+
+一个关于Black Hole Imaging的系列blog
+
+https://mp.weixin.qq.com/s/GTHiZZ0ox8GsYKseYfDiRw
+
+科学界大事要来，世界首张黑洞照片即将公布！
+
+https://mp.weixin.qq.com/s/zNs4NikZ912R3V1ZT2DcTg
+
+黑洞---像极了爱情！
+
 ## EHT
 
 ![](/images/img2/Event_horizon_telescope_logo_2019.png)
@@ -317,20 +335,5 @@ https://www.zhihu.com/question/629931897
 
 星舰：猛禽（Raptor）发动机。
 
-分级燃烧的提出者，前苏联火箭发动机工程师阿列克谢 · 米哈洛维奇 · 伊萨耶夫（Aleksei Mihailovich Isaev）
+分级燃烧的提出者，前苏联火箭发动机工程师阿列克谢·米哈洛维奇·伊萨耶夫（Aleksei Mihailovich Isaev）
 
-比冲：单位推进剂产生的冲量。
-
-推重比：结构产生的推力大小与结构在地球表面所受到的重力大小之比。
-
-由于火箭的空载质量有时被称为“干重”，火箭的满载质量有时也被称为“湿重”。
-
-干质比：干重/湿重
-
-https://www.zhihu.com/question/315485320
-
-目前常见的“火箭燃料”有哪几种，各类燃料的优劣有哪些？
-
-https://zhuanlan.zhihu.com/p/63783327
-
-从“梅林”到“猛禽”：“液氧甲烷”+“全流量分级循环”，星际火箭发动机的中级选择？（上）

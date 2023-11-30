@@ -139,6 +139,10 @@ https://scienceasdf.gitee.io/programming/2017/04/14/astrodynamics2/
 
 巴林格陨星坑（Barringer Crater），或称亚利桑那陨石坑：美国亚利桑那沙漠中一个直径1.2公里、深180米的巨大陨星坑，是大约5万年前一个陨星撞击地球而形成的。该陨星坑的名字取自矿业工程师丹尼尔·巴林格（Daniel Barringer），是他在20世纪初最先指出它是陨星撞击所造成的，比人们普遍接受这一观点早50多年。
 
+距今20亿年前，一颗直径5~10公里的小行星进入了大气层，在非洲南部撞击了地球。它在地球上留下了自己的痕迹，也就是今天位于南非中北部的弗里德堡陨石坑（Vredefort Dome）。
+
+在撞击作用的影响下，威特沃特斯兰盆地海拔进一步降低，使得其赋存的金元素更不易被风化剥蚀，即使一定程度的剥蚀搬运难免发生，环形山也起到了很好的阻挡作用，其金元素在山脚再次富集。
+
 参见：
 
 https://mp.weixin.qq.com/s/-8WDtspQqL0ztmb7PJtokw
@@ -168,6 +172,10 @@ https://mp.weixin.qq.com/s/nXbjy6v0sgfG42DrRCohcA
 https://zhuanlan.zhihu.com/p/602523053
 
 大冲击！你我都是幸存者的后代
+
+https://zhuanlan.zhihu.com/p/669437324
+
+南非，支柱产业崩塌
 
 ---
 
@@ -220,19 +228,3 @@ https://www.zhihu.com/question/452059445
 ![](/images/img2/BH-illumin3.jpg)
 
 ![](/images/img2/BH-illumin4.jpg)
-
-https://www.zhihu.com/question/319589547
-
-如何评价人类的第一张黑洞照片？
-
-https://blogs.futura-sciences.com/e-luminet/tag/black-hole/
-
-一个关于Black Hole Imaging的系列blog
-
-https://mp.weixin.qq.com/s/GTHiZZ0ox8GsYKseYfDiRw
-
-科学界大事要来，世界首张黑洞照片即将公布！
-
-https://mp.weixin.qq.com/s/zNs4NikZ912R3V1ZT2DcTg
-
-黑洞---像极了爱情！
