@@ -9,6 +9,26 @@ category: DL Framework
 
 # Pytorch
 
+https://mp.weixin.qq.com/s/dzDkpUHo4CKqq8i1pyYO2w
+
+60题PyTorch简易入门指南
+
+https://mp.weixin.qq.com/s/7at6y2NcYaxGGN8syxlccA
+
+PyTorch Cookbook
+
+https://mp.weixin.qq.com/s/RKtyNpIxSxFNfOSyHPOiGw
+
+深度学习PyTorch的教程代码
+
+https://mp.weixin.qq.com/s/i70pT7pQpdoCXXhXq2_MEw
+
+四天速成！香港科技大学PyTorch教程
+
+https://mp.weixin.qq.com/s/7Wr70NFi4pxvSpRr2Q1zsQ
+
+强大的PyTorch：10分钟让你了解深度学习领域新流行的框架
+
 https://mp.weixin.qq.com/s/y5LLraGWuYUbOted9N-GWQ
 
 如何从TensorFlow转入PyTorch

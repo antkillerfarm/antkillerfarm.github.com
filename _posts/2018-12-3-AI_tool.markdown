@@ -19,6 +19,12 @@ http://www.huggingface.co
 
 它的国内竞品有：modelscope
 
+Huggingface提供的工具库中比较知名的有Accelerate和Optimum。Accelerate专注于开箱即用的分布式训练，而Optimum作为Transformer的扩展，通过利用用户目标硬件的最大效率来加速模型训练和推理。
+
+Optimum又是另一开源项目的封装：
+
+https://onnxruntime.ai/docs/performance/transformers-optimization.html
+
 参考：
 
 https://zhuanlan.zhihu.com/p/535100411
@@ -32,6 +38,14 @@ Huggingface简介及BERT代码浅析
 https://mp.weixin.qq.com/s/-fQ9VlaOjssDufcZuCe91w
 
 结合HuggingFace代码浅析Transformer
+
+https://zhuanlan.zhihu.com/p/650438817
+
+GPU分布式训练推理——Accelerate
+
+https://zhuanlan.zhihu.com/p/610800518
+
+Optimum + ONNX Runtime: 更容易、更快地训练你的 Hugging Face 模型
 
 ## 参考
 
@@ -342,31 +356,3 @@ https://mp.weixin.qq.com/s/XdvkgjAgIVDCWapHMnyoqw
 https://mp.weixin.qq.com/s/wZQ57V0d0O_JylOcqAvfzQ
 
 Deepy———基于Numpy深度学习库，小巧优雅简单
-
-https://mp.weixin.qq.com/s/HMLwjLlFXR4WM92_OnKHbA
-
-基于Apache MXNet，亚马逊NMT开源框架Sockeye论文介绍
-
-https://mp.weixin.qq.com/s/109v3rXVf9-0nTQ6Lt9A1Q
-
-Facebook正式开源CrypTen：基于PyTorch的安全机器学习新工具
-
-https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
-
-亚马逊开源神经机器翻译框架Sockeye：基于Apache MXNet的NMT平台
-
-http://www.sohu.com/a/163063280_633698
-
-无监督对话数据清洗利器：Data Purification Framework
-
-https://mp.weixin.qq.com/s/l0pzq54uDdYctSj7R3QNWw
-
-AmpliGraph：知识图谱表示学习工具包
-
-https://mp.weixin.qq.com/s/a3zu7nvy0itOvzvgOlf01Q
-
-搜狗开源机器阅读理解工具箱
-
-https://mp.weixin.qq.com/s/cyTHnDGdMZvhxg7hUmuYZw
-
-训练速度提升超3倍！斯坦福推出全新深度学习并行计算框架FlexFlow

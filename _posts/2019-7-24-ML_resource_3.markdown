@@ -191,6 +191,34 @@ https://mp.weixin.qq.com/s/Mc9vHkt--u3jyh5VZmA56Q
 
 # AI工具+
 
+https://mp.weixin.qq.com/s/HMLwjLlFXR4WM92_OnKHbA
+
+基于Apache MXNet，亚马逊NMT开源框架Sockeye论文介绍
+
+https://mp.weixin.qq.com/s/109v3rXVf9-0nTQ6Lt9A1Q
+
+Facebook正式开源CrypTen：基于PyTorch的安全机器学习新工具
+
+https://mp.weixin.qq.com/s/hkcVhyqiDW--F3QxucgEcA
+
+亚马逊开源神经机器翻译框架Sockeye：基于Apache MXNet的NMT平台
+
+http://www.sohu.com/a/163063280_633698
+
+无监督对话数据清洗利器：Data Purification Framework
+
+https://mp.weixin.qq.com/s/l0pzq54uDdYctSj7R3QNWw
+
+AmpliGraph：知识图谱表示学习工具包
+
+https://mp.weixin.qq.com/s/a3zu7nvy0itOvzvgOlf01Q
+
+搜狗开源机器阅读理解工具箱
+
+https://mp.weixin.qq.com/s/cyTHnDGdMZvhxg7hUmuYZw
+
+训练速度提升超3倍！斯坦福推出全新深度学习并行计算框架FlexFlow
+
 https://mp.weixin.qq.com/s/6q7wy7Xq7GcepdLkQN-1wA
 
 最新中文NLP开源工具箱来了！支持6大任务，面向工业应用
@@ -312,31 +340,3 @@ FAIR发布自监督训练库VISSL
 乌第1独立特种旅军官贝雷佐维茨认为：俄军步炮协同水平有明显提高，或许与俄炮兵不在意炸死自己人有关。
 
 俄军在赫尔松郊区垃圾填埋厂内擅自处理填埋阵亡战友。工作人员称俄军选择孤立场地卸载垃圾并在入口设置检查站并从敞篷卡车上卸下黑色袋子，在现场有烧焦气味，每次集中发生在乌军炮击过后。这解释了俄罗斯国内很多妇女始终等不到丈夫兄弟和儿子，而上报失踪或逃跑可以降低阵亡率和抚恤。
-
----
-
-俄罗斯征兵一直有一个bug：动员令必须由征兵办亲手送到被动员者手里。
-
-如果没有送到手里，被动员者可以视为不知情。毕竟我都没收到动员令，我怎么知道国家要我打仗？那我自然也不能受到逃兵役的惩罚。这么多年没打仗，这个bug也一直没修复。
-
-因为这个bug，这次俄罗斯民众八仙过海各显神通。有钱的跑到国外去。毕竟征兵办主任不能去国外送信。没钱出国的，每隔两三个月搬一次家。只要征兵办主任找不到我。动员令没塞到我手里，我就不算逃兵。还有牛人直接住进原始森林。
-
-俄罗斯最近搞出一个什么数字征兵令，搞红码征兵。就是如果你不去当兵，就给你红码。到时候你是社保领不到，房子没收，找不到工作，存款冻结，驾照作废。。。
-
-反正把你作为人的一切权益全部剥夺。。。
-
-俄罗斯电子征兵红码作废了，仅仅存活了7天。
-
-为什么会作废呢？俄罗斯作为一个传统的特权国家，特权阶级是无所不在的，电子征兵红码无法识别哪些人是特权阶级，要求他们都上战场，这引起了俄罗斯国内特权阶级的强烈反对！
-
-https://www.zhihu.com/question/595107569
-
-俄罗斯将启用电子征兵传票，严打逃避征兵者，如何评价该法案？将带来哪些影响？
-
-https://zhuanlan.zhihu.com/p/624014541
-
-打仗上战场去牺牲的永远都是百姓家的孩子——俄罗斯电子征兵红码仅仅存活了7天
-
-https://zhuanlan.zhihu.com/p/571640385
-
-天网恢恢——俄罗斯使用人脸识别技术抓捕逃脱动员者

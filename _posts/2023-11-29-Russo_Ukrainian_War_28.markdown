@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争（二十八）——轶事（2）
+title:  俄乌战争（二十八）——轶事（1）
 category: Russo Ukrainian War 
 ---
 
@@ -212,14 +212,6 @@ https://zhuanlan.zhihu.com/p/588914690
 https://zhuanlan.zhihu.com/p/592954024
 
 “我们正在书写改变战争的大故事”——乌克兰军队是如何通过程序员来获得战场优势的
-
-https://www.zhihu.com/question/573879232
-
-如何评价当地时间12月22日，据塔斯社报道，俄罗斯库兹涅佐夫号航空母舰发生了火灾，没有人员伤亡?
-
-https://zhuanlan.zhihu.com/p/669378464
-
-烟头又在惹祸！俄罗斯车里雅宾斯克一大型军工厂发生大规模爆炸
 
 https://zhuanlan.zhihu.com/p/507119007
 

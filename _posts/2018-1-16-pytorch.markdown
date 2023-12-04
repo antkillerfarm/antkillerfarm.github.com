@@ -198,6 +198,10 @@ https://zhuanlan.zhihu.com/p/56924766
 
 PyTorch Autograd代码的动态生成
 
+https://fkong.tech/posts/2023-05-24-torch-source/
+
+一点PyTorch源码阅读心得
+
 ## tensorboardX
 
 Pytorch并没有一个比较好的可视化库。所谓的torchvision实际上是一个用于CV领域的工具库，和可视化一点关系都没有。
@@ -280,6 +284,8 @@ https://pytorch.org/docs/2.0/dynamo/index.html
 
 ![](/images/img5/pytorch_compile.jpg)
 
+![](/images/img5/pytorch-2.0.png)
+
 参考：
 
 https://zhuanlan.zhihu.com/p/570989882
@@ -289,6 +295,10 @@ Pytorch编译机制的总结（来自吴芃老师）
 https://blog.csdn.net/qq_39967751/article/details/128372797
 
 PyTorch 2.0之Dynamo: 窥探加速背后的真相
+
+https://fkong.tech/posts/2023-05-20-dynamo/
+
+一文搞懂TorchDynamo原理
 
 ## TorchInductor
 
@@ -350,6 +360,13 @@ https://zhuanlan.zhihu.com/p/386876377
 
 Pytorch中dispatch机制及其实现
 
+##
+
+
+https://pytorch.org/tutorials/intermediate/dist_tuto.html
+
+
+
 ## 参考
 
 https://mp.weixin.qq.com/s/zhkaenFdnB5KgaEYb-XDEQ
@@ -359,23 +376,3 @@ https://mp.weixin.qq.com/s/zhkaenFdnB5KgaEYb-XDEQ
 https://mp.weixin.qq.com/s/AMZFvmzo4pQ1m7QeaRpAdA
 
 PyTorch资源列表：450个NLP/CV/SP、论文实现、教程、示例
-
-https://mp.weixin.qq.com/s/dzDkpUHo4CKqq8i1pyYO2w
-
-60题PyTorch简易入门指南
-
-https://mp.weixin.qq.com/s/7at6y2NcYaxGGN8syxlccA
-
-PyTorch Cookbook
-
-https://mp.weixin.qq.com/s/RKtyNpIxSxFNfOSyHPOiGw
-
-深度学习PyTorch的教程代码
-
-https://mp.weixin.qq.com/s/i70pT7pQpdoCXXhXq2_MEw
-
-四天速成！香港科技大学PyTorch教程
-
-https://mp.weixin.qq.com/s/7Wr70NFi4pxvSpRr2Q1zsQ
-
-强大的PyTorch：10分钟让你了解深度学习领域新流行的框架
