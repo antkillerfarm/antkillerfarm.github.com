@@ -352,6 +352,10 @@ hook技术
 
 ## Pytorch Dispatcher
 
+https://pytorch.org/tutorials/advanced/extend_dispatcher.html
+
+Extending dispatcher for a new backend in C++
+
 https://zhuanlan.zhihu.com/p/376495783
 
 聊聊Pytorch Dispatcher
@@ -360,19 +364,8 @@ https://zhuanlan.zhihu.com/p/386876377
 
 Pytorch中dispatch机制及其实现
 
-##
-
+## 分布式
 
 https://pytorch.org/tutorials/intermediate/dist_tuto.html
 
-
-
-## 参考
-
-https://mp.weixin.qq.com/s/zhkaenFdnB5KgaEYb-XDEQ
-
-从基础概念到实现，小白如何快速入门PyTorch
-
-https://mp.weixin.qq.com/s/AMZFvmzo4pQ1m7QeaRpAdA
-
-PyTorch资源列表：450个NLP/CV/SP、论文实现、教程、示例
+Writing Distributed Applications with PyTorch

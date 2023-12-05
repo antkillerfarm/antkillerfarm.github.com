@@ -317,6 +317,12 @@ AMD Infinity Fabric Link
 
 IBM BlueLink
 
+---
+
+HCCS，即Huawei Cache Coherence System，华为自研，叫“华为Cache一致性总线”。
+
+英伟达的NVLink可以实现8颗芯片互联，而HCCS目前仅支持4路互联。
+
 ## HIP
 
 ![](/images/img4/latestGPU.png)
@@ -368,6 +374,8 @@ AMD Instinct系列，大致对标NVIDIA DGX。
 https://www.amd.com/zh-hans/graphics/instinct-server-accelerators
 
 ![](/images/img5/AMD.jpg)
+
+---
 
 https://zhuanlan.zhihu.com/p/434686566
 

@@ -111,6 +111,26 @@ https://zhuanlan.zhihu.com/p/623060064
 
 什么是NVLink？
 
+## 存储体系
+
+![](/images/img5/GPU_2.png)
+
+Registers -> Caches -> Shared Memory -> Gloabl Memory（Local Memory）
+
+https://blog.csdn.net/qq_41554005/article/details/119765334
+
+GPU存储资源：寄存器，本地内存，共享内存，缓存，显存等存储器细节
+
+---
+
+通信的问题，其本质是数据的共享。因此，质不够量来凑，也是一个不错的方法。
+
+由于没有NVLink这样的杀手锏，AMD的AI方案更倾向于增加单卡内存，来减少卡/机的数量。
+
+比如AMD发布的Instinct MI300X GPU，单卡内存192GB，8卡服务器就是1.5TB HBM3内存。
+
+当然，单纯堆料这种没有技术含量的活，对于老黄没有任何难度。老黄反手推出H200，单卡141GB HBM3e。
+
 ## NCCL
 
 NCCL是Nvidia Collective multi-GPU Communication Library的简称，它是一个实现多GPU的collective communication通信库，可以在PCIe、Nvlink、InfiniBand上实现较高的通信速度。

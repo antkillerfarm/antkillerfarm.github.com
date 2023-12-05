@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  PaddlePaddle
+title:  PaddlePaddle, Pytorch（三）
 category: DL Framework 
 ---
 
@@ -92,3 +92,89 @@ https://mp.weixin.qq.com/s/1jtO1efF2UauaUZFDRzQHw
 https://mp.weixin.qq.com/s/gfJKmoeR6n3m89r4F3R_yw
 
 PaddleDetection物体检测统一框架
+
+# Pytorch
+
+https://zhuanlan.zhihu.com/p/363317178
+
+模型转换：由Pytorch到TFlite
+
+https://mp.weixin.qq.com/s/Mj7xI5rFTxKaXswYi9_mRQ
+
+我的PyTorch模型比内存还大，怎么训练呀？
+
+https://mp.weixin.qq.com/s/TjCUCbXL3oSgJNYoEltgrg
+
+7个提升PyTorch性能的技巧
+
+https://zhuanlan.zhihu.com/p/275755543
+
+一款全平台轻量级pytorch推理框架Msnhnet
+
+https://mp.weixin.qq.com/s/MJgQqwWa4wyNgtKZaX_ADQ
+
+Tensorboard可视化与Hook机制
+
+https://mp.weixin.qq.com/s/jnV_4REXOR-ema1kOC95Nw
+
+跨越重重“障碍”，我从PyTorch转换为了TensorFlow Lite
+
+https://mp.weixin.qq.com/s/Svh27YIG2jYWqXwhhEuoSw
+
+使用Pytorch和BERT进行多标签文本分类
+
+https://mp.weixin.qq.com/s/_3iJCO4gQz7mWcW7G8kimQ
+
+Pytorch实现卷积神经网络训练量化（QAT）
+
+https://mp.weixin.qq.com/s/HQnI8rzPvZN6Q_5c8d1nVQ
+
+唯快不破：基于Apex的混合精度加速
+
+https://mp.weixin.qq.com/s/NupSd4e01cvQ3CRnjy1npw
+
+超原版速度110倍，针对PyTorch的CPU到GPU张量迁移工具开源
+
+https://zhuanlan.zhihu.com/p/87572724
+
+一文看懂align_corners
+
+https://www.zhihu.com/question/303070254
+
+PyTorch中在反向传播前为什么要手动将梯度清零？
+
+https://www.zhihu.com/question/274635237
+
+Pytorch有什么节省内存（显存）的小技巧？
+
+https://mp.weixin.qq.com/s/S1dRfmqpiLzR3tnsocmfvw
+
+Pytorch中的数据增强方式最全解释
+
+https://mp.weixin.qq.com/s/BTFMvV2ppmRBXYg95YlK4w
+
+PyTorch实现L2和L1正则化的方法
+
+https://zhuanlan.zhihu.com/p/272767300
+
+Pytorch转ONNX-理论篇
+
+https://zhuanlan.zhihu.com/p/273566106
+
+Pytorch转ONNX-实战篇1（tracing机制）
+
+https://zhuanlan.zhihu.com/p/286298001
+
+Pytorch转ONNX-实战篇2（实战踩坑总结）
+
+https://mp.weixin.qq.com/s/EXuFXbPBIbzTyi0fUjvvPw
+
+两行代码统计模型参数量与FLOPs，这个PyTorch小工具值得一试
+
+https://zhuanlan.zhihu.com/p/73711222
+
+巧用torch.backends.cudnn.benchmark减少训练时间
+
+https://zhuanlan.zhihu.com/p/664723980
+
+单机多GPU训练

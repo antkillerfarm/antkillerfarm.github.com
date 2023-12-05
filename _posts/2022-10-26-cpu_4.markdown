@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CPU(四)
+title: CPU(四), GPU通信技术
 category: Chip 
 ---
 
@@ -280,3 +280,57 @@ https://www.zhihu.com/question/562917157
 https://www.zhihu.com/question/552957041
 
 书上说代码地址总是从0x400000开始，但是查看编译好的elf头起始地址是从0开始的，这是为什么？
+
+# GPU通信技术
+
+## 共享数据
+
+共享数据很简单，OpenGL时代的persistent map，让驱动去做同步、做数据搬运，从而给开发者营造“数据随时可得”的假象（当然也可能的确就是随时可得），这就已经达到共享数据的要求了。
+
+共享地址的难度则增加了一些，其目标是为了让你在CPU上跑的链表能直接在GPU等地方使用。x64时代到来使得内存地址扩充到48位，而且CPU上已经全面虚拟地址，GPU也要跟着加上地址转换的能力。
+
+共享物理内存则明确表明，实现了上两者的独显（OpenCL的SVM就是前两个要求）也要被排除。那就基本是核显Only（主机的架构也可以看作是核显）。
+
+https://www.zhihu.com/question/430936274
+
+苹果的统一内存和集成显卡与CPU共用内存有什么区别？
+
+## RDMA
+
+RDMA网卡（Remote Direct Memory Access，这是一种硬件的网络技术，它使得计算机访问远程的内存时无需远程机器上CPU的干预）已经可以提供50~100Gbps的网络带宽和微秒级的传输延迟。
+
+目前许多以深度学习为目标应用的GPU机群都部署了这样的网络。
+
+UCX是一个建立在RDMA等技术之上的用于数据处理和高性能计算的通信框架，RDMA是其底层核心之一。
+
+OpenUCX是UCX的一个开源实现。
+
+![](/images/img5/RDMA.jpg)
+
+RDMA包含Infiniband（IB），RDMA over Converged Ethernet（RoCE）和internet Wide Area RDMA Protocol（iWARP）。三种协议都符合RDMA标准，使用相同的上层接口，在不同层次上有一些差别。
+
+InfiniBand（直译为“无限带宽”技术，缩写为IB）是一个用于高性能计算的计算机网络通信标准，它具有极高的吞吐量和极低的延迟，用于计算机与计算机之间的数据互连。相当于是面向HPC的以太网的替代品。
+
+Mellanox Technologies是一家InfiniBand制造商，于2020年被Nvidia收购。
+
+官网：
+
+https://www.openucx.org/
+
+参考：
+
+https://mp.weixin.qq.com/s/_xcE8RUs0m4gwk3kxpe9jA
+
+基于HTM/RDMA的可扩展内存事务处理系统
+
+https://www.zhihu.com/column/c_1231181516811390976
+
+一个RDMA方面的专栏
+
+https://www.zhihu.com/question/422501188
+
+什么是InfiniBand，它和以太网的区别在于什么？
+
+https://www.cnblogs.com/allcloud/p/8945544.html
+
+InfiniBand 与Intel Omni-Path Architecture
