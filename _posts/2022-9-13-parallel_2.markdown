@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（三）——tf.distribute & MultiDevice, 其他概念, 大模型训练
+title:  并行 & 框架 & 优化（三）——tf.distribute & MultiDevice, 其他概念, 大模型训练, Horovod, DeepSpeed
 category: DL acceleration 
 ---
 
@@ -221,7 +221,59 @@ https://zhuanlan.zhihu.com/p/373662730
 
 亚线性内存优化—activation checkpointing在oneflow中的实现
 
-## DeepSpeed
+# Horovod
+
+Horovod是Uber开源的一套分布式深度学习框架。Horovod支持TensorFlow、Keras、PyTorch和Apache MXNet等后端框架。
+
+官网：
+
+https://eng.uber.com/horovod/
+
+代码：
+
+https://github.com/horovod/horovod
+
+Horovod主打Data Parallel。这在前LLM时代用的比较多，但对于LLM而言，单卡根本放不下所有的参数，Data Parallel也就用不起来了。
+
+参考：
+
+https://www.cnblogs.com/rossiXYZ/p/14856464.html
+
+深度学习分布式训练框架Horovod
+
+https://zhuanlan.zhihu.com/p/40578792
+
+Horovod-基于TensorFlow分布式深度学习框架
+
+https://zhuanlan.zhihu.com/p/158375055
+
+PyTorch单机多卡操作(分布式DataParallel，混合精度，Horovod)
+
+https://mp.weixin.qq.com/s/iQIRj7ifsOEnupYZuQsVwQ
+
+是时候放弃TensorFlow集群，拥抱Horovod了
+
+https://mp.weixin.qq.com/s/qOjGrR59Mf0Mzgh4bpDhrA
+
+详解Horovod：Uber开源的TensorFlow分布式深度学习框架
+
+https://mp.weixin.qq.com/s/yNxjJHpGns6utpBpI-0XDA
+
+分布式训练框架Horovod初步学习
+
+https://zhuanlan.zhihu.com/p/374575049
+
+一文看懂Horovod源码
+
+https://mp.weixin.qq.com/s/7c7Q0P3g3IEL_r4BU2ZxRg
+
+Horovod架构剖析——解密最成功的第三方DL分布式训练框架
+
+https://horovod.readthedocs.io/en/stable/xla.html
+
+Horovod with XLA in Tensorflow
+
+# DeepSpeed
 
 显存内容可分为两类：
 
@@ -244,37 +296,3 @@ ZeRO使用分片（partition）方法，即每张卡只存1/N的模型状态量�
 代码：
 
 https://github.com/microsoft/DeepSpeed
-
-参考：
-
-https://www.microsoft.com/en-us/research/blog/zero-deepspeed-new-system-optimizations-enable-training-models-with-over-100-billion-parameters
-
-ZeRO & DeepSpeed
-
-https://www.microsoft.com/en-us/research/blog/deepspeed-extreme-scale-model-training-for-everyone/
-
-DeepSpeed: Extreme-scale model training for everyone
-
-https://mp.weixin.qq.com/s/Vb3AkoWHQY7WWBMZaVnf4g
-
-微软发布DeepSpeed开源库，支持1000亿个参数模型的训练
-
-https://zhuanlan.zhihu.com/p/621379646
-
-人手一个ChatGPT！微软DeepSpeed Chat震撼发布，一键RLHF训练千亿级大模型
-
-https://zhuanlan.zhihu.com/p/513571706
-
-DeepSpeed之ZeRO系列：将显存优化进行到底
-
-https://zhuanlan.zhihu.com/p/630734624
-
-deepspeed入门教程
-
-https://zhuanlan.zhihu.com/p/576673548
-
-深度学习大模型训练--DeepSpeed源码解读
-
-https://zhuanlan.zhihu.com/p/626420999
-
-deepspeed chat代码解读

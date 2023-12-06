@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Tensor2Tensor, MXNet, Horovod, DL框架怀古
+title:  Tensor2Tensor, MXNet, DL框架怀古
 category: DL Framework 
 ---
 
@@ -185,56 +185,6 @@ https://mp.weixin.qq.com/s/hRH7hVsaQBqf0vhD_BqBgg
 https://zhuanlan.zhihu.com/p/42345854
 
 如何基于gluon训练一个强有力的Reid Baseline
-
-# Horovod
-
-Horovod是Uber开源的一套分布式深度学习框架。Horovod支持TensorFlow、Keras、PyTorch和Apache MXNet等后端框架。
-
-官网：
-
-https://eng.uber.com/horovod/
-
-代码：
-
-https://github.com/horovod/horovod
-
-参考：
-
-https://www.cnblogs.com/rossiXYZ/p/14856464.html
-
-深度学习分布式训练框架Horovod
-
-https://zhuanlan.zhihu.com/p/40578792
-
-Horovod-基于TensorFlow分布式深度学习框架
-
-https://zhuanlan.zhihu.com/p/158375055
-
-PyTorch单机多卡操作(分布式DataParallel，混合精度，Horovod)
-
-https://mp.weixin.qq.com/s/iQIRj7ifsOEnupYZuQsVwQ
-
-是时候放弃TensorFlow集群，拥抱Horovod了
-
-https://mp.weixin.qq.com/s/qOjGrR59Mf0Mzgh4bpDhrA
-
-详解Horovod：Uber开源的TensorFlow分布式深度学习框架
-
-https://mp.weixin.qq.com/s/yNxjJHpGns6utpBpI-0XDA
-
-分布式训练框架Horovod初步学习
-
-https://zhuanlan.zhihu.com/p/374575049
-
-一文看懂Horovod源码
-
-https://mp.weixin.qq.com/s/7c7Q0P3g3IEL_r4BU2ZxRg
-
-Horovod架构剖析——解密最成功的第三方DL分布式训练框架
-
-https://horovod.readthedocs.io/en/stable/xla.html
-
-Horovod with XLA in Tensorflow
 
 # DMLC
 
