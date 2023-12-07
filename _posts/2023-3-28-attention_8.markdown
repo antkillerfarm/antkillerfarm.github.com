@@ -173,6 +173,24 @@ https://kexue.fm/archives/9698
 
 语言模型输出端共享Embedding的重新探索
 
+## 外推性
+
+对于Transformer模型来说，其长度的外推性是我们一直在追求的良好性质，它是指我们在短序列上训练的模型，能否不用微调地用到长序列上并依然保持不错的效果。
+
+自从Transform被提出以来，一个基本问题还没有被解决，一个模型如何在推断时对训练期间没有见过的更长序列进行外推。众所周知，Bert支持的最长句子长度是512，那为什么Bert只能支持512的句子长度呢？
+
+我们看一下BertEmbeddings的初始化，我们可以看到position_ids，被初始化成0-511，这个也就是BERT处理文本最大长度是512的原因，这里Bert使用的是绝对位置编码。
+
+参考：
+
+https://spaces.ac.cn/archives/9431
+
+长度外推性与局部注意力
+
+https://zhuanlan.zhihu.com/p/656684326
+
+大模型位置编码-ALiBi位置编码
+
 ## 参考
 
 https://www.zhihu.com/question/298203515
@@ -326,27 +344,3 @@ https://mp.weixin.qq.com/s/7yCnAHk6x0ICtEwBKxXpOw
 https://mp.weixin.qq.com/s/7sIUaSON53hsXUJjq8uVUA
 
 马聪：NLP中的生成式预训练模型
-
-https://mp.weixin.qq.com/s/Jrs8okgVAh0fymIq-jCqgA
-
-模型压缩与蒸馏！BERT的忒修斯船
-
-https://mp.weixin.qq.com/s/UNHu1eVNorWWKbDb0XBJcA
-
-模型压缩与蒸馏！BERT家族的瘦身之路
-
-https://mp.weixin.qq.com/s/oD_Vibp4Ygraix23K_oV2Q
-
-BERT在58搜索的实践
-
-https://mp.weixin.qq.com/s/bqvEeCyX8pqhJQfCUvUkEw
-
-图解BERT：通俗的解释BERT是如何工作的
-
-https://mp.weixin.qq.com/s/yPq1cGnhcbaNLOjadj91pw
-
-Bert时代的创新：Bert在NLP各领域的应用进展
-
-https://mp.weixin.qq.com/s/l-de0vfx-L24g58IxK-NKQ
-
-Jeff Dean强推：可视化Bert网络，发掘其中的语言、语法树与几何学

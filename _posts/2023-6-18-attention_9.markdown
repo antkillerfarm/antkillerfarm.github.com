@@ -9,6 +9,30 @@ category: Attention
 
 # BERT进阶（续）
 
+https://mp.weixin.qq.com/s/Jrs8okgVAh0fymIq-jCqgA
+
+模型压缩与蒸馏！BERT的忒修斯船
+
+https://mp.weixin.qq.com/s/UNHu1eVNorWWKbDb0XBJcA
+
+模型压缩与蒸馏！BERT家族的瘦身之路
+
+https://mp.weixin.qq.com/s/oD_Vibp4Ygraix23K_oV2Q
+
+BERT在58搜索的实践
+
+https://mp.weixin.qq.com/s/bqvEeCyX8pqhJQfCUvUkEw
+
+图解BERT：通俗的解释BERT是如何工作的
+
+https://mp.weixin.qq.com/s/yPq1cGnhcbaNLOjadj91pw
+
+Bert时代的创新：Bert在NLP各领域的应用进展
+
+https://mp.weixin.qq.com/s/l-de0vfx-L24g58IxK-NKQ
+
+Jeff Dean强推：可视化Bert网络，发掘其中的语言、语法树与几何学
+
 https://mp.weixin.qq.com/s/nlFXfgM5KKZXnPdwd97JYg
 
 哈工大讯飞联合实验室发布基于全词覆盖的中文BERT预训练模型
@@ -394,15 +418,3 @@ T5模型：NLP Text-to-Text预训练模型超大规模探索
 https://zhuanlan.zhihu.com/p/89719631
 
 T5: Text-to-Text Transfer Transformer阅读笔记
-
-https://mp.weixin.qq.com/s/X1mLXPzJU7k_ANMzvVPxjA
-
-BERT、RoBERTa、DistilBERT与XLNet，我们到底该如何选择？
-
-https://mp.weixin.qq.com/s/GGRORF5EfJ5xzMLwAsJt5w
-
-从词袋到Transfomer，NLP十年突破史
-
-https://zhuanlan.zhihu.com/p/125145283
-
-Rethink深度学习中的Attention机制

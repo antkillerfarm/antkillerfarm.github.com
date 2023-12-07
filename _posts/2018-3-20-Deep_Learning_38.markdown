@@ -185,6 +185,18 @@ U²-Net：使用显著性物体检测来生成真实的铅笔肖像画
 
 # Attention进阶+
 
+https://mp.weixin.qq.com/s/X1mLXPzJU7k_ANMzvVPxjA
+
+BERT、RoBERTa、DistilBERT与XLNet，我们到底该如何选择？
+
+https://mp.weixin.qq.com/s/GGRORF5EfJ5xzMLwAsJt5w
+
+从词袋到Transfomer，NLP十年突破史
+
+https://zhuanlan.zhihu.com/p/125145283
+
+Rethink深度学习中的Attention机制
+
 https://mp.weixin.qq.com/s/fxEg8UOa3MeJ6qx5SjEHog
 
 NLP领域中各式各样Attention知识系统性的梳理和总结

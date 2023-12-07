@@ -29,6 +29,10 @@ API：`torch.jit.load`
 
 5.基于Pytorch TorchDynamo的接入方案。
 
+昇腾Pytorch插件的代码：
+
+https://gitee.com/ascend/pytorch
+
 https://www.zhihu.com/question/624955377
 
 如何看待pytorch2.1，原生支持华为昇腾NPU？

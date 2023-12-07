@@ -206,3 +206,7 @@ SMBus(System Management Bus,系统管理总线)是1995年由Intel提出的，应
 https://zhuanlan.zhihu.com/p/201075632
 
 什么是I3C总线？它和I2C和SMBus是什么关系？
+
+https://mp.weixin.qq.com/s/7PiFeh7DXPfghMTypFC_bQ
+
+I3C下一代接口技术

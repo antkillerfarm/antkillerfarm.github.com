@@ -260,3 +260,7 @@ https://zhuanlan.zhihu.com/p/593617082
 https://zhuanlan.zhihu.com/p/651524100
 
 过去半年俄乌战争大事记（2023.2.24 ～ 2023.8.24）
+
+https://zhuanlan.zhihu.com/p/670058028
+
+钢铁洪流——俄乌坦克消耗战

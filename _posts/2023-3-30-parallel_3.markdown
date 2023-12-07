@@ -133,6 +133,24 @@ https://github.com/NVIDIA/Megatron-LM
 
 https://github.com/microsoft/Megatron-DeepSpeed
 
+参考：
+
+https://zhuanlan.zhihu.com/p/522198082
+
+Megatron-LM 第三篇Paper总结——Sequence Parallelism & Selective Checkpointing
+
+https://zhuanlan.zhihu.com/p/366906920
+
+Megatron论文和代码详细分析(1)
+
+https://zhuanlan.zhihu.com/p/388830967
+
+Megatron论文和代码详细分析(2)
+
+https://blog.csdn.net/v_JULY_v/article/details/132462452
+
+通俗理解Megatron-DeepSpeed之模型并行与数据并行
+
 # KV Cache
 
 ![](/images/img5/KV_Cache.png)

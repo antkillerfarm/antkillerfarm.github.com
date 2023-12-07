@@ -59,6 +59,14 @@ https://zhuanlan.zhihu.com/p/657040639
 
 布达诺夫：我没有心情讨论乌克兰的反攻（9月17日）
 
+https://zhuanlan.zhihu.com/p/670787768
+
+僵局：乌克兰失败的反攻（第一部分）
+
+https://zhuanlan.zhihu.com/p/670901766
+
+僵局：乌克兰失败的反攻（第二部分）
+
 ## 游击战
 
 ![](/images/img5/Ukraine.png)
@@ -170,6 +178,10 @@ https://www.zhihu.com/question/633105416
 https://baijiahao.baidu.com/s?id=1655529812110383216
 
 苏联铁路旧事：土西铁路拯救了苏联，贝阿铁路拖垮了苏联？
+
+---
+
+2023年12月6日，卢甘斯克人民维持会资深会员奥列格·波波夫（Олег Попов）在乌克兰特工制造的汽车爆炸中丧生。
 
 ---
 

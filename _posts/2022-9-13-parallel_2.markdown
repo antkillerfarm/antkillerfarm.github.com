@@ -205,7 +205,7 @@ TF-Replicator, GPipe, Mesh-Tensorflow 三个库对比
 
 ## 内存墙
 
-从GPT-1到GPT-3，两年时间内模型参数0.1B增加到175B，而同期，NVIDIA交出的成绩单是从V100的32GB显存增加A100的80GB，显然，显寸的提升速度远远赶不上模型模型增长的速度，这就是内存墙问题。
+从GPT-1到GPT-3，两年时间内模型参数0.1B增加到175B，而同期，NVIDIA交出的成绩单是从V100的32GB显存增加A100的80GB，显然，显存的提升速度远远赶不上模型模型增长的速度，这就是内存墙问题。
 
 https://mp.weixin.qq.com/s/kuIsyX0QEIeFHn8tvFE8vw
 
