@@ -296,3 +296,7 @@ ZeRO使用分片（partition）方法，即每张卡只存1/N的模型状态量�
 代码：
 
 https://github.com/microsoft/DeepSpeed
+
+官网：
+
+https://www.deepspeed.ai

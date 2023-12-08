@@ -9,6 +9,16 @@ category: language
 
 # Python
 
+## 音乐
+
+https://web.mit.edu/music21/
+
+music21官网
+
+https://mp.weixin.qq.com/s/ONZD5RGI18rLTYhzIQQbVA
+
+用R包gm生成音乐
+
 ## del
 
 由于python都是引用，而python有GC机制，所以，del语句作用在变量上，而不是数据对象上。
@@ -236,6 +246,14 @@ import binascii
 hex_digits = binascii.b2a_hex(bin_stream)
 ```
 
+---
+
+利用动态语言的特点，在运行时替换指定函数的代码，达到实时更改函数行为的效果，这就叫做“打Moneky Patch”。
+
+https://blog.csdn.net/yushuaigee/article/details/117031190
+
+彻底弄懂Python中的Moneky Patch
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA
@@ -441,31 +459,3 @@ https://mp.weixin.qq.com/s/dmJI2GlzgUJgYllfVOPt4g
 https://mp.weixin.qq.com/s/PkzD1ig_D5AIUTkO5zH8pQ
 
 Python字节码介绍
-
-https://mp.weixin.qq.com/s/-erFsz8NvLZ5mOIXyDosFg
-
-使用PyInstaller将python转成可执行文件exe笔记
-
-https://mp.weixin.qq.com/s/EZh5PAUgXkIDzGbim6wqLQ
-
-用Python带你看白雪飘扬~
-
-https://mp.weixin.qq.com/s/SUyRNz_M7B6bcdV7-YxlZQ
-
-Python制作一款简易音乐播放器
-
-https://mp.weixin.qq.com/s/d2_MTvfbOFZmppej5UOwUw
-
-关于使用Python析构函数的正确姿势
-
-https://mp.weixin.qq.com/s/_PtdgGElw0mvr_rRm5xrCg
-
-Python性能优化的20条招数
-
-https://mp.weixin.qq.com/s/0Rpbuo7LCRo1SnbE8NcH4Q
-
-快速学习Python的全套14张思维导图
-
-https://mp.weixin.qq.com/s/Cujl2nxITCuZL7B72uKVrQ
-
-为什么Python这么慢？

@@ -264,3 +264,7 @@ https://zhuanlan.zhihu.com/p/651524100
 https://zhuanlan.zhihu.com/p/670058028
 
 钢铁洪流——俄乌坦克消耗战
+
+https://zhuanlan.zhihu.com/p/671137761
+
+日益增长的需求和日益稀少的援助

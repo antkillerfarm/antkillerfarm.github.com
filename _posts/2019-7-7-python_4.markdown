@@ -196,6 +196,12 @@ https://github.com/pybind/cmake_example
 - AutoWIG
 - robotpy-build
 
+---
+
+
+
+---
+
 参考：
 
 https://github.com/tensorflow/community/blob/master/rfcs/20190208-pybind11.md
@@ -209,6 +215,10 @@ https://zhuanlan.zhihu.com/p/52619334
 https://zhuanlan.zhihu.com/p/192974017
 
 pybind11的最佳实践
+
+https://zhuanlan.zhihu.com/p/666269440
+
+PyBind11简明教程
 
 ## python调用GTK函数的一般规则
 
@@ -476,13 +486,3 @@ Jupyter Notebooks嵌入Excel并使用Python替代VBA宏
 https://mp.weixin.qq.com/s/ymPHlri3qMmTlvlWiBqsxg
 
 用Python+Excel制作天气预报表
-
-## 音乐
-
-https://web.mit.edu/music21/
-
-music21官网
-
-https://mp.weixin.qq.com/s/ONZD5RGI18rLTYhzIQQbVA
-
-用R包gm生成音乐

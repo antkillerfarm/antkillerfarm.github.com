@@ -9,6 +9,34 @@ category: language
 
 # Python
 
+https://mp.weixin.qq.com/s/-erFsz8NvLZ5mOIXyDosFg
+
+使用PyInstaller将python转成可执行文件exe笔记
+
+https://mp.weixin.qq.com/s/EZh5PAUgXkIDzGbim6wqLQ
+
+用Python带你看白雪飘扬~
+
+https://mp.weixin.qq.com/s/SUyRNz_M7B6bcdV7-YxlZQ
+
+Python制作一款简易音乐播放器
+
+https://mp.weixin.qq.com/s/d2_MTvfbOFZmppej5UOwUw
+
+关于使用Python析构函数的正确姿势
+
+https://mp.weixin.qq.com/s/_PtdgGElw0mvr_rRm5xrCg
+
+Python性能优化的20条招数
+
+https://mp.weixin.qq.com/s/0Rpbuo7LCRo1SnbE8NcH4Q
+
+快速学习Python的全套14张思维导图
+
+https://mp.weixin.qq.com/s/Cujl2nxITCuZL7B72uKVrQ
+
+为什么Python这么慢？
+
 https://mp.weixin.qq.com/s/a3YTmQMfpnviHnidXrhYtg
 
 这17个骚操作你都Ok吗
@@ -354,51 +382,3 @@ Linux vi/vim
 https://zhuanlan.zhihu.com/p/37352209
 
 VimScript五分钟入门
-
-# Latex+
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/508559139
-
-Latex简明速查手册
-
-https://www.zhihu.com/question/40763253
-
-如何在Word和PowerPoint中优雅地插入Latex公式？
-
-https://mp.weixin.qq.com/s/3RtKAT3WE8P2YIZRA2dZ3A
-
-LaTeX的历史：图灵奖得主1977年开启的计划，引发学术圈重大变革
-
-https://mp.weixin.qq.com/s/KMWhz5_EXWoxgmHUek6zBA
-
-不会用latex写公式？看看这个python转latex的库（python2latex）
-
-https://www.zhihu.com/question/65508676
-
-怎么在LaTeX中排版Python代码？
-
-https://mp.weixin.qq.com/s/LumDQL9VKTHWK3RkOhKFcg
-
-1行代码搞定Latex公式编写，这个4.6M的Python小插件，堪称论文必备神器（handcalcs）
-
-https://zhuanlan.zhihu.com/p/268332132
-
-知乎公式编辑器的高级“玩法”
-
-https://mp.weixin.qq.com/s/E4EECj0QQ90ElfPqOL80eg
-
-Python编辑公式竟可以如此简单（latexify_py）
-
-https://zhuanlan.zhihu.com/p/38178015
-
-使用VSCode编写LaTeX
-
-https://zhuanlan.zhihu.com/p/194831235
-
-Knuth-Plass换行算法
-
-https://mp.weixin.qq.com/s/kGVLsqstajyrZ_cfkFegrA
-
-Latex数学排版简洁指南

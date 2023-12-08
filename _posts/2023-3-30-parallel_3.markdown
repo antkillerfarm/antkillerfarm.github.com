@@ -169,7 +169,11 @@ https://zhuanlan.zhihu.com/p/662498827
 
 # 实战经验
 
+https://pytorch.org/blog/high-performance-llama-2/
 
+https://huggingface.co/blog/zh/bloom-inference-optimization
+
+https://huggingface.co/blog/zh/bloom-megatron-deepspeed
 
 # 工具
 
