@@ -271,6 +271,10 @@ https://mp.weixin.qq.com/s/mFqkCfzmWi7pxelC1vMJBQ
 
 nlp中的Attention注意力机制+Transformer详解
 
+https://zhuanlan.zhihu.com/p/648127076
+
+三万字最全解析！从零实现Transformer
+
 # 预训练语言模型进化史
 
 ![](/images/img3/Sesame_Street.jpg)

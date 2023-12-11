@@ -299,6 +299,12 @@ std::tie(a , str) = fun_tie(12, std::string("Pony Ma"));
 std::cout << a << "," << str << std::endl;
 ```
 
+# 有价值的C/C++库
+
+https://github.com/gabime/spdlog
+
+一个C++的log库
+
 # C/C++参考资源
 
 `vector<bool>`并不是一个通常意义上的vector容器，这个源自于历史遗留问题。 早在C++98的时候，就有`vector< bool>`这个类型了，但是因为当时为了考虑到节省空间的想法，所以`vector<bool>`里面不是一个Byte一个Byte储存的，它是一个bit一个bit储存的！
@@ -376,27 +382,3 @@ https://zhuanlan.zhihu.com/p/58976871
 https://www.zhihu.com/question/447592340
 
 C语言的源程序是可以直接运行吗？（C语言的解释执行）
-
-https://zhuanlan.zhihu.com/p/346465585
-
-极大提高你开发效率的C++ tricks
-
-https://www.zhihu.com/question/280665935
-
-为什么C/C++要分为头文件和源文件？
-
-https://www.zhihu.com/question/485183321
-
-一个接口只有一个实现类，写接口的意义是什么？只写类不写接口不是更简单且清晰吗？
-
-https://www.zhihu.com/question/36642771
-
-C++的string为什么不提供split函数？
-
-https://zhuanlan.zhihu.com/p/458947637
-
-C++编程技巧: Pimpl
-
-https://blog.csdn.net/weixin_42663840/article/details/81188003
-
-深入浅出入侵式容器

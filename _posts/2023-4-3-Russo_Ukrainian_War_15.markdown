@@ -123,7 +123,7 @@ https://zhuanlan.zhihu.com/p/666716195
 
 ## 顿涅斯克战役
 
-本节主要包括巴赫穆特、chasiv yar、马林卡、Soledar、Vuhledar、Avdiivka等地的攻防战。
+本节主要包括巴赫穆特、chasiv yar、Marinka、Soledar、Vuhledar、Avdiivka等地的攻防战。
 
 2022.5 俄军攻克波帕斯纳，巴赫穆特成为前线。
 
