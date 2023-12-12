@@ -9,6 +9,20 @@ category: language
 
 # Python
 
+## word & excel（续）
+
+https://mp.weixin.qq.com/s/KhtVET6AAhYWWefBnvis2Q
+
+Word自动化排版画图
+
+https://mp.weixin.qq.com/s/RLJAHQAheqrf8i-c8QtDtw
+
+Jupyter Notebooks嵌入Excel并使用Python替代VBA宏
+
+https://mp.weixin.qq.com/s/ymPHlri3qMmTlvlWiBqsxg
+
+用Python+Excel制作天气预报表
+
 ## 音乐
 
 https://web.mit.edu/music21/
@@ -447,15 +461,3 @@ Python程序员最常犯的10个错误，你中招了吗？
 https://mp.weixin.qq.com/s/W1j4G_QQqlzDYru231dZFA
 
 Python：编写条件分支代码的技巧
-
-https://mp.weixin.qq.com/s/ST7TQ5Wkn_owv5bpTiTKVA
-
-2018年最好用的5个python网站开发框架
-
-https://mp.weixin.qq.com/s/dmJI2GlzgUJgYllfVOPt4g
-
-两句话轻松掌握Python最难知识点
-
-https://mp.weixin.qq.com/s/PkzD1ig_D5AIUTkO5zH8pQ
-
-Python字节码介绍

@@ -72,6 +72,23 @@ https://zhuanlan.zhihu.com/p/44068797
 
 Windows装TensorFlow+MXNet+PyTorch
 
+## 编译
+
+```bash
+conda install cmake ninja
+pip install -r requirements.txt
+conda install mkl mkl-include
+
+git clone --recursive https://github.com/pytorch/pytorch
+cd pytorch
+# if you are updating an existing checkout
+git submodule sync
+git submodule update --init --recursive
+
+export USE_CUDA=0
+python setup.py develop
+```
+
 ## 示例
 
 Lenet+MNIST+GPU：
@@ -349,23 +366,3 @@ pytorch的hook机制之register_forward_hook
 https://zhuanlan.zhihu.com/p/152314451
 
 hook技术
-
-## Pytorch Dispatcher
-
-https://pytorch.org/tutorials/advanced/extend_dispatcher.html
-
-Extending dispatcher for a new backend in C++
-
-https://zhuanlan.zhihu.com/p/376495783
-
-聊聊Pytorch Dispatcher
-
-https://zhuanlan.zhihu.com/p/386876377
-
-Pytorch中dispatch机制及其实现
-
-## 分布式
-
-https://pytorch.org/tutorials/intermediate/dist_tuto.html
-
-Writing Distributed Applications with PyTorch

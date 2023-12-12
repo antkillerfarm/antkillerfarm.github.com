@@ -149,6 +149,10 @@ https://zhuanlan.zhihu.com/p/669553719
 
 血战乌克兰 俄罗斯精忠报国魔人点将录
 
+https://zhuanlan.zhihu.com/p/671680600
+
+俄罗斯女记者抱怨军事医院人满为患
+
 ---
 
 https://mp.weixin.qq.com/s/PUqFEBUN6OaGZjB-ojrMRg

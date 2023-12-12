@@ -198,11 +198,13 @@ https://github.com/pybind/cmake_example
 
 ---
 
-有时候conda环境里使用的gcc版本，和本地的gcc版本有差异，会导致编译产生的py库，有一些问题。
+有时候conda环境里使用的gcc版本，和本地的gcc版本有差异，会导致编译产生的py库，有一些问题：
 
 https://blog.csdn.net/weixin_39379635/article/details/129159713
 
 如何解决version `GLIBCXX_3.4.29‘ not found的问题
+
+类似的，还有库找不到的问题，一般用LD_LIBRARY_PATH解决之。
 
 ---
 
@@ -478,15 +480,3 @@ Python操作Excel之二
 https://mp.weixin.qq.com/s/m5mrlx3V3bBblqHdBZKa6w
 
 Python操作Word
-
-https://mp.weixin.qq.com/s/KhtVET6AAhYWWefBnvis2Q
-
-Word自动化排版画图
-
-https://mp.weixin.qq.com/s/RLJAHQAheqrf8i-c8QtDtw
-
-Jupyter Notebooks嵌入Excel并使用Python替代VBA宏
-
-https://mp.weixin.qq.com/s/ymPHlri3qMmTlvlWiBqsxg
-
-用Python+Excel制作天气预报表

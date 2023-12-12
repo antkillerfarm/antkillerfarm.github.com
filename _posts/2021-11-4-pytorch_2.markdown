@@ -9,6 +9,26 @@ category: DL Framework
 
 # Pytorch
 
+## Pytorch Dispatcher
+
+https://pytorch.org/tutorials/advanced/extend_dispatcher.html
+
+Extending dispatcher for a new backend in C++
+
+https://zhuanlan.zhihu.com/p/376495783
+
+聊聊Pytorch Dispatcher
+
+https://zhuanlan.zhihu.com/p/386876377
+
+Pytorch中dispatch机制及其实现
+
+## 分布式
+
+https://pytorch.org/tutorials/intermediate/dist_tuto.html
+
+Writing Distributed Applications with PyTorch
+
 ## Backend
 
 PyTorch带着左右护法Deepspeed，Megatron在研究领域，大模型领域，硬把Tensorflow干成了others。金主爸爸们，各种大模型训练和推理的客户，都拿着PyTorch + Megatron + Deepspeed的组合让我们适配。
@@ -350,27 +370,3 @@ https://mp.weixin.qq.com/s/yS9PAw926Y7AsGRW0eHG0Q
 https://github.com/CVBox/PyTorchCV
 
 一个基于pytorch的CV框架
-
-https://mp.weixin.qq.com/s/w09hcJof80m2VGwn7SgKmQ
-
-TorchSeg—基于PyTorch的快速模块化语义分割开源库
-
-https://mp.weixin.qq.com/s/TsR-jgO2c2-dbqnk1mEj8w
-
-想读读PyTorch底层代码？这份内核机制简介送给你
-
-https://mp.weixin.qq.com/s/Lzt3LbO6lBbOebNV1d2pLQ
-
-迁移学习不好懂？这里有一个PyTorch项目帮你理解
-
-https://mp.weixin.qq.com/s/7fK6GNyzYTP0fQy7F01fZw
-
-PyTorch深度学习模型训练加速指南2021
-
-https://mp.weixin.qq.com/s/SReuVBN8WIXFlnwho3wqgQ
-
-最详细的Pytorch底层算子扩展总结
-
-https://mp.weixin.qq.com/s/14_pt0_skKYNw2sAK5Zptw
-
-Pytorch底层算子扩展最详细的总结

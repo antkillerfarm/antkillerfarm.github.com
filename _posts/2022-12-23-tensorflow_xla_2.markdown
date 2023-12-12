@@ -107,6 +107,10 @@ https://pytorch.org/xla/master/
 
 PyTorch on XLA Devices
 
+示例：
+
+https://github.com/pytorch/xla/blob/master/test/test_train_mp_mnist.py
+
 参考：
 
 https://pytorch.org/blog/pytorch-2.0-xla/

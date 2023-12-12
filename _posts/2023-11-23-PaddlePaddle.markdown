@@ -95,6 +95,30 @@ PaddleDetection物体检测统一框架
 
 # Pytorch
 
+https://mp.weixin.qq.com/s/w09hcJof80m2VGwn7SgKmQ
+
+TorchSeg—基于PyTorch的快速模块化语义分割开源库
+
+https://mp.weixin.qq.com/s/TsR-jgO2c2-dbqnk1mEj8w
+
+想读读PyTorch底层代码？这份内核机制简介送给你
+
+https://mp.weixin.qq.com/s/Lzt3LbO6lBbOebNV1d2pLQ
+
+迁移学习不好懂？这里有一个PyTorch项目帮你理解
+
+https://mp.weixin.qq.com/s/7fK6GNyzYTP0fQy7F01fZw
+
+PyTorch深度学习模型训练加速指南2021
+
+https://mp.weixin.qq.com/s/SReuVBN8WIXFlnwho3wqgQ
+
+最详细的Pytorch底层算子扩展总结
+
+https://mp.weixin.qq.com/s/14_pt0_skKYNw2sAK5Zptw
+
+Pytorch底层算子扩展最详细的总结
+
 https://zhuanlan.zhihu.com/p/363317178
 
 模型转换：由Pytorch到TFlite
