@@ -155,6 +155,18 @@ https://zhuanlan.zhihu.com/p/495453408
 
 ---
 
+![](/images/img5/Flintlock.webp)
+
+<video  id="myvideo" width="100%" height="auto" controls="controls" loop="loop">
+    <source src="/images/img5/Matchlock.mp4" type='video/mp4' />
+</video>
+
+https://www.zhihu.com/question/459658757
+
+从火绳枪发展到燧发枪，提升的仅仅是击发方式吗?
+
+---
+
 https://mp.weixin.qq.com/s/KuIf0oIkLjMTKp2FgAnpyA
 
 一口气做出12只同款雪糕，强迫症都被食物加工流水线治好了

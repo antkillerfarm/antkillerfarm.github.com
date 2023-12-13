@@ -67,6 +67,10 @@ https://zhuanlan.zhihu.com/p/608730174
 
 每天100w次登陆请求，8G内存该如何设置JVM参数？
 
+https://zhuanlan.zhihu.com/p/149626566
+
+JVM系列之数据类型
+
 ## 动态代理
 
 动态代理可以动态的创建代理类并处理对”实际对象”的调用。
