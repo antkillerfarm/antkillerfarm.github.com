@@ -133,6 +133,16 @@ UEFI要求硬盘分区必须是GPT方式的，因此也被称作UEFI+GPT，与�
 
 UEFI的竞争对手主要有：MinPlatform、CoreBoot和LinuxBoot。
 
+---
+
+因为保护模式支持大内存，但是BIOS模式加载操作系统时，又必须从实模式开始，所以进BIOS的时候是保护模式，加载操作系统的时候再切回去。但是又因为实模式不能运行所有驱动（内存太小），需要支持不同硬件时，需要切回保护模式换驱动。
+
+https://www.zhihu.com/question/610490718
+
+为什么厂商都想推UEFI而不想让用户用BIOS呢？
+
+---
+
 参考：
 
 https://zhuanlan.zhihu.com/p/81960137
@@ -232,11 +242,3 @@ https://mirrors.tuna.tsinghua.edu.cn/ubuntu/
 https://github.com/tomaspinho/rtl8821ce
 
 安装驱动之前，需要进UEFI，关闭Secure Boot选项。这个选项会拒绝未验证的系统或驱动。Ubuntu官方的镜像经过了MS的认证，可以正常安装。但是UbuntuKylin不行，第三方驱动显然也不行。
-
-## 内核版本回退
-
-最近（2021.1）遇到了高版本内核和驱动不匹配的问题，特将历程记录如下：
-
-1.现象：Wifi找不到了。
-
-首先排查设置和Secure Boot，发现没有问题。然后想起来，上次开机更新了系统内核。重启，进入上个版本的内核，一切正常，看来原因的确和内核版本有关。

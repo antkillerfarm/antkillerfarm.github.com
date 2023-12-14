@@ -165,6 +165,10 @@ https://www.zhihu.com/question/459658757
 
 从火绳枪发展到燧发枪，提升的仅仅是击发方式吗?
 
+https://www.zhihu.com/question/459659751
+
+在古代，为了解决火绳枪雨天的劣势，都做了什么样的针对方案?
+
 ---
 
 https://mp.weixin.qq.com/s/KuIf0oIkLjMTKp2FgAnpyA
