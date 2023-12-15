@@ -440,3 +440,7 @@ https://www.zhihu.com/question/34619258
 https://zhuanlan.zhihu.com/p/474324656
 
 我对深度学习编译器和框架的认识
+
+https://sunfishcode.github.io/blog/2018/10/22/Canonicalization.html
+
+Canonicalization

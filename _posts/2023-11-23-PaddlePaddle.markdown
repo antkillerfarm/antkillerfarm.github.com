@@ -202,3 +202,47 @@ https://zhuanlan.zhihu.com/p/73711222
 https://zhuanlan.zhihu.com/p/664723980
 
 单机多GPU训练
+
+# XLA+
+
+## 参考
+
+https://mp.weixin.qq.com/s/RO3FrPxhK2GEoDCGE9DXrw
+
+利用XLA将GPU性能推向极限
+
+https://mp.weixin.qq.com/s/MPI9KERDS-Al4DTBDRV04w
+
+TensorFlow XLA工作原理简介
+
+https://sketch2sky.com/
+
+一个XLA方面的blog
+
+https://tensorflow.juejin.im/performance/xla/jit.html
+
+使用即时编译
+
+https://blog.slinuxer.com/2019/06/tensorflow-xla
+
+TensorFlow XLA初步接触
+
+https://github.com/horance-liu/tensorflow-internals
+
+电子书《TensorFlow Internals》
+
+https://wzzju.github.io/tensorflow/xla/2021/06/12/xla-overview/
+
+XLA编译执行原理分析
+
+https://haosdent.gitbooks.io/tensorflow-document/content/resources/xla_prerelease.html
+
+XLA: The TensorFlow compiler framework
+
+http://zhengsz.tech/2019/10/23/Tensorflow-XLA-%E6%8E%A2%E7%A9%B6/
+
+Tensorflow/XLA探究
+
+https://wzzju.github.io/tensorflow/xla/2021/06/12/xla-overview/
+
+XLA编译执行原理分析

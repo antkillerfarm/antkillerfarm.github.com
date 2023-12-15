@@ -49,18 +49,6 @@ TFE: Tensorflow Eager
 
 ---
 
-2022.10 Google又创建了一个新的OpenXLA项目，旨在将XLA从TF中解耦。
-
-官网：
-
-https://github.com/openxla/xla
-
-该项目还有一个叫做stablehlo的工程：
-
-https://github.com/openxla/stablehlo
-
----
-
 https://github.com/dongbeiyewu/xla.git
 
 一个XLA的专栏

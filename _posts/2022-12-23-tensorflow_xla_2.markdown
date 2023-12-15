@@ -111,11 +111,42 @@ PyTorch on XLA Devices
 
 https://github.com/pytorch/xla/blob/master/test/test_train_mp_mnist.py
 
+编译：
+
+```bash
+git clone --recursive https://github.com/pytorch/xla.git
+cd xla
+
+# modify bazel/dependencies.bzl to config pytorch:
+# PYTORCH_LOCAL_DIR = "../pytorch"
+
+# modify WORKSPACE to config openxla:
+# by commenting out the http_archive above and uncommenting the following:
+# local_repository(
+#    name = "xla",
+#    path = "/path/to/openxla",
+# )
+
+export XLA_CUDA=0
+export BUNDLE_LIBTPU=0
+python setup.py install
+```
+
 参考：
 
 https://pytorch.org/blog/pytorch-2.0-xla/
 
 PyTorch 2.0 & XLA—The Latest Cutting Edge Features
+
+https://huggingface.co/blog/pytorch-xla
+
+## OpenXLA
+
+2022.10 Google又创建了一个新的OpenXLA项目，旨在将XLA从TF中解耦。
+
+官网：
+
+https://github.com/openxla/xla
 
 ## XRT & PJRT
 
@@ -351,45 +382,3 @@ https://zhuanlan.zhihu.com/p/532504225
 https://zhuanlan.zhihu.com/p/544216783
 
 面向PyTorch用户的JAX简易教程(2): 如何训练一个神经网络
-
-## 参考
-
-https://mp.weixin.qq.com/s/RO3FrPxhK2GEoDCGE9DXrw
-
-利用XLA将GPU性能推向极限
-
-https://mp.weixin.qq.com/s/MPI9KERDS-Al4DTBDRV04w
-
-TensorFlow XLA工作原理简介
-
-https://sketch2sky.com/
-
-一个XLA方面的blog
-
-https://tensorflow.juejin.im/performance/xla/jit.html
-
-使用即时编译
-
-https://blog.slinuxer.com/2019/06/tensorflow-xla
-
-TensorFlow XLA初步接触
-
-https://github.com/horance-liu/tensorflow-internals
-
-电子书《TensorFlow Internals》
-
-https://wzzju.github.io/tensorflow/xla/2021/06/12/xla-overview/
-
-XLA编译执行原理分析
-
-https://haosdent.gitbooks.io/tensorflow-document/content/resources/xla_prerelease.html
-
-XLA: The TensorFlow compiler framework
-
-http://zhengsz.tech/2019/10/23/Tensorflow-XLA-%E6%8E%A2%E7%A9%B6/
-
-Tensorflow/XLA探究
-
-https://wzzju.github.io/tensorflow/xla/2021/06/12/xla-overview/
-
-XLA编译执行原理分析

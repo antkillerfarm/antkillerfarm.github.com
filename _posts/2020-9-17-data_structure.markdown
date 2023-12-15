@@ -249,6 +249,34 @@ https://www.zhihu.com/question/392846851
 
 C++string中find函数是用什么算法实现的？他的时间复杂度如何？实际比手写KMP效率相比如何？
 
+## Hash Map
+
+std::map用二叉树实现，相当于Java中的TreeMap，而std::unordered_map用hash表实现，相当于Java中的HashMap。
+
+C++11之前的一些非标准STL还实现了一种叫做hash_map的容器，原理上也是使用hash表，C++11标准为了不与之前的非标实现冲突，换了个名字而已。
+
+如果使用复杂类型当key的话，unordered_map需要提供该复杂类型的hash函数。
+
+![](/images/img5/unordered_map.webp)
+
+std::unordered_map内存布局
+
+![](/images/img5/flat_hash_map.webp)
+
+absl::flat_hash_map内存布局
+
+absl::flat_hash_map采用开放寻址法(open addressing)解决hash碰撞，并使用二次探测(quadratic probing)方式。absl::flat_hash_map改进了内存布局，将所有pair放在一段连续内存中，将hash值相同的多个pair放在相邻位置。
+
+![](/images/img5/node_hash_map.webp)
+
+absl::node_hash_map内存布局
+
+超过最大负载因子后，表大小会增加一倍。这就是所谓的rehash操作。absl::node_hash_map在rehash时，pair本身无需移动。
+
+https://zhuanlan.zhihu.com/p/614105687
+
+C++中的HashTable性能优化
+
 ## 参考
 
 AVL树是一种平衡二叉树，得名于其发明者的名字（Adelson-Velskii以及Landis）。
@@ -350,51 +378,3 @@ https://mp.weixin.qq.com/s/8gDVqlywLBl-MZa6XrtXug
 https://mp.weixin.qq.com/s/M5syxE9Ln4UDLThPh5iuJg
 
 各种字符串Hash函数比较
-
-https://blog.csdn.net/wo541075754/article/details/54632929
-
-Merkle Tree（默克尔树）算法解析（Merkle Tree，通常也被称作Hash Tree，顾名思义，就是存储hash值的一棵树。）
-
-https://mp.weixin.qq.com/s/M8U9B7UA2AdfnJi5EpTv-g
-
-算法面试中经常问的“字符串”问题
-
-https://mp.weixin.qq.com/s/QHounf4el7nmXnpMSJHjvg
-
-这个问题不简单：寻找缺失元素
-
-https://blog.csdn.net/changtao381/article/details/8936765
-
-Splay Tree（一种二叉排序树）
-
-https://mp.weixin.qq.com/s/p4tddWB4kjFufkv3x2SYpw
-
-图解6种树，你心中有数吗
-
-https://mp.weixin.qq.com/s/fAYjIcFlHoXK2E38JJSFpA
-
-C++优先队列priority_queue
-
-https://mp.weixin.qq.com/s/KZq5SjPESQnQaNU1Mn5a-A
-
-一文把三个经典求和问题吃的透透滴
-
-https://www.zhihu.com/question/20298134
-
-即时战略游戏中实用的寻路算法都有哪些，比较如何？
-
-http://blog.codinglabs.org/articles/algorithms-for-cardinality-estimation-part-i.html
-
-解读Cardinality Estimation算法
-
-https://mp.weixin.qq.com/s/zQJve_w5OoM6u-WcSWArdQ
-
-神速Hash
-
-https://www.codeproject.com/Articles/69941/Best-Square-Root-Method-Algorithm-Function-Precisi
-
-Best Square Root Method
-
-https://zhuanlan.zhihu.com/p/332996578
-
-陈丹琦分治算法

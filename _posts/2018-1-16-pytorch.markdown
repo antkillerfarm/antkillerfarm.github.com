@@ -86,6 +86,7 @@ git submodule sync
 git submodule update --init --recursive
 
 export USE_CUDA=0
+export _GLIBCXX_USE_CXX11_ABI=1
 python setup.py develop
 ```
 

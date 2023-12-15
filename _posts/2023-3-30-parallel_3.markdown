@@ -151,6 +151,10 @@ https://blog.csdn.net/v_JULY_v/article/details/132462452
 
 通俗理解Megatron-DeepSpeed之模型并行与数据并行
 
+https://mp.weixin.qq.com/s/bvF50XRaA9cO2O4oB31kbg
+
+大语言模型分布式训练的量化分析与最佳实践,以GPT-175B为例
+
 # KV Cache
 
 ![](/images/img5/KV_Cache.png)
