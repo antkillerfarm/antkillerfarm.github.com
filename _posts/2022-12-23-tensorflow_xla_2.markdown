@@ -140,6 +140,8 @@ PyTorch 2.0 & XLA—The Latest Cutting Edge Features
 
 https://huggingface.co/blog/pytorch-xla
 
+Hugging Face on PyTorch / XLA TPUs: Faster and cheaper training
+
 ## OpenXLA
 
 2022.10 Google又创建了一个新的OpenXLA项目，旨在将XLA从TF中解耦。
