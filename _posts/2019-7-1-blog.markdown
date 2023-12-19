@@ -223,7 +223,7 @@ https://zh.moegirl.org.cn/%E8%BD%A9%E8%BE%95%E5%89%91%E7%B3%BB%E5%88%97
 
 仙三，轩辕4是北软的技术人员自主研发的gamebox引擎。
 
-仙四，仙五，轩辕5是Renderware引擎。
+仙四，仙五，轩辕5是Renderware引擎。该引擎由Criterion software开发。除了大宇之外，也被R星用于开发GTA3、罪恶都市、圣安地列斯等作品。
 
 仙六，轩辕6是Unity3D引擎。
 
