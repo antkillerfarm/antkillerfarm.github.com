@@ -205,6 +205,28 @@ https://zhuanlan.zhihu.com/p/664723980
 
 # XLA+
 
+## JAX（续）
+
+https://mp.weixin.qq.com/s/eaYwiV2LZNRwzPEeOA1XFg
+
+新星JAX ：双挑TensorFlow和PyTorch！有望担纲Google主要科学计算库和神经网络库
+
+https://mp.weixin.qq.com/s/NhMbr_niHjSaqh2azuSaog
+
+只知道TF和PyTorch还不够，快来看看怎么从PyTorch转向自动微分神器JAX
+
+https://wzzju.github.io/jax/xla/2022/02/17/jax-cpp/
+
+JAX程序转HLO执行
+
+https://zhuanlan.zhihu.com/p/532504225
+
+面向PyTorch用户的JAX简易教程(1): JAX介绍
+
+https://zhuanlan.zhihu.com/p/544216783
+
+面向PyTorch用户的JAX简易教程(2): 如何训练一个神经网络
+
 ## 参考
 
 https://mp.weixin.qq.com/s/RO3FrPxhK2GEoDCGE9DXrw

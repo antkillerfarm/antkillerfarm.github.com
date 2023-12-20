@@ -132,6 +132,20 @@ export BUNDLE_LIBTPU=0
 python setup.py install
 ```
 
+---
+
+Backend的参考实现：
+
+Intel XPU:
+
+https://github.com/intel/intel-extension-for-openxla
+
+IREE:
+
+https://github.com/openxla/openxla-pjrt-plugin
+
+---
+
 参考：
 
 https://pytorch.org/blog/pytorch-2.0-xla/
@@ -149,6 +163,8 @@ Hugging Face on PyTorch / XLA TPUs: Faster and cheaper training
 官网：
 
 https://github.com/openxla/xla
+
+![](/images/img5/TPU_XLA.png)
 
 ## XRT & PJRT
 
@@ -364,23 +380,3 @@ https://mp.weixin.qq.com/s/IMMdbF33ZHEz7N_XwgIhHA
 https://mp.weixin.qq.com/s/tZ3yWQ9--l9e81UqoUoWIQ
 
 要替代TensorFlow？谷歌开源机器学习库JAX
-
-https://mp.weixin.qq.com/s/eaYwiV2LZNRwzPEeOA1XFg
-
-新星JAX ：双挑TensorFlow和PyTorch！有望担纲Google主要科学计算库和神经网络库
-
-https://mp.weixin.qq.com/s/NhMbr_niHjSaqh2azuSaog
-
-只知道TF和PyTorch还不够，快来看看怎么从PyTorch转向自动微分神器JAX
-
-https://wzzju.github.io/jax/xla/2022/02/17/jax-cpp/
-
-JAX程序转HLO执行
-
-https://zhuanlan.zhihu.com/p/532504225
-
-面向PyTorch用户的JAX简易教程(1): JAX介绍
-
-https://zhuanlan.zhihu.com/p/544216783
-
-面向PyTorch用户的JAX简易教程(2): 如何训练一个神经网络

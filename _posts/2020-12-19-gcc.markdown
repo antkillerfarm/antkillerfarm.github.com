@@ -252,6 +252,16 @@ https://www.zhihu.com/question/441129390
 
 假如有某种力量使得世界上所有编译器都被删除了，人类是否需要从打孔卡开始写第一个编译器?
 
+---
+
+C4：4个函数实现的C语言编译器
+
+https://github.com/rswier/c4
+
+https://zhuanlan.zhihu.com/p/672720180
+
+用4个函数528行代码写了个能自举的C编译器！
+
 ## glibc
 
 查看glibc版本：

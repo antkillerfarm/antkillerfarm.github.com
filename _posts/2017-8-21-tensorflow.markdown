@@ -111,7 +111,7 @@ http://blog.csdn.net/u012436149
 
 **Step 1**：安装Bazel。
 
-参见[这里](/toolchain/2017/11/07/makefile.html#Bazel)
+参见[这里](/toolchain/2021/11/10/TVM_2.html#bazel)
 
 **Step 2**：编译TensorFlow。
 

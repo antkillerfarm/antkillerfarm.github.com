@@ -125,8 +125,6 @@ Augmented Reality Navigation，增强现实导航
 
 High Beam Assist，远近光灯辅助系统
 
-BEV：Birds Eye Views，鸟瞰图
-
 三电技术：电池、电机和电控。
 
 参考：

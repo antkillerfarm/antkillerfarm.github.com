@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  makefile, Autotools, premake, Bazel
+title:  makefile, Autotools, premake
 category: toolchain 
 ---
 
@@ -162,114 +162,83 @@ http://premake.github.io/
 
 premake的缺点在于，它基本上是个人作品，全职开发人员太少，导致功能有限，目前尚无特大项目使用该系统，其功能性和可靠性受到质疑。
 
-<a name="Bazel"/>
+# LLVM+
 
-# Bazel 
-
-安装：
+## 编译
 
 ```bash
-echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
-curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
-sudo apt update && sudo apt install bazel
+cmake -S llvm -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug
+ninja -C build check-llvm
 ```
 
-官网：
+## tablegen
 
-https://bazel.build/
+LLVM tablegen，文件名后缀为`.td`。
 
-文档：
+https://zhuanlan.zhihu.com/p/447318642
 
-https://docs.bazel.build/versions/master/bazel-overview.html
+TableGen_Overview
 
-下载：
+https://zhuanlan.zhihu.com/p/447728683
 
-https://github.com/bazelbuild/bazel/releases
+TableGen Language Reference
 
-安装：
+## 参考
 
-`chmod +x bazel-<version>-installer-linux-x86_64.sh`
+所谓的intrinsic function ，是属于编译器开洞魔法的范畴，这些函数的实现是直接写死在编译器的代码生成部分的，在最终得到的二进制里面不会存在这些函数的符号和实现。
 
-`./bazel-<version>-installer-linux-x86_64.sh --user`
+https://zhuanlan.zhihu.com/p/348365662
 
->需要注意的是，即使这种安装也只是部分安装，安装后仍然需要联网下载依赖，并不能达到离线安装的效果。这也是Bazel的安装文件体积越来越小的根本原因。只有早期100M+的安装包，才是能离线安装的。
+C++标准库开洞史
 
-bazel使用Starlark语言编写扩展，后者的语法主要源自python，但并不是通用语言，也没有python那么强的功能。
+https://www.zhihu.com/question/569519423
 
-Starlark官网：
+C++标准库中是否有需要依赖编译器魔法才能实现的功能？
 
-https://docs.bazel.build/versions/master/skylark/language.html
+https://www.zhihu.com/question/582148351
 
-使用示例：
+C/C++函数“必须声明但禁止定义”才能使用，函数地址也不存在，是什么神奇的操作？
 
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/bazel
+https://mp.weixin.qq.com/s/FSlJKnC0y51nsLDp1B3tXg
 
-- 每个项目的根目录必须有一个WORKSPACE文件。
+Swift编译器Crash—Segmentation fault解决方案
 
-- 其他源代码目录下有一个BUILD文件。
+https://zhuanlan.zhihu.com/p/392381317
 
-编译：
+LLVM IR的第一个Pass：上手官方文档Hello Pass
 
-`bazel build <target>`
+https://csstormq.github.io/
 
-这里的target在上例中就是cc_binary中的`name = "test"`：
+一个LLVM、TVM、NEON的专栏
 
-`bazel build test`
+https://www.zhihu.com/question/484069566
 
-bazel还可以从网上下载依赖文件：`http_archive`
+LLVM怎么表达硬件相关的特性?
 
-清理：
+https://mp.weixin.qq.com/s/-IjJJG5huL6p3KjhO70s7Q
 
-`bazel clean --expunge`
+编译器中的图论算法
 
----
+https://zhuanlan.zhihu.com/p/140462815
 
-可以通过在工作区中运行`bazel info output_base`来查找该工作区的输出库。但请注意，有一个包含最后一个命令输出的`command.log`文件，而`bazel info`本身是一个命令，因此这将覆盖`command.log`。
+LLVM基本概念入门
 
----
+https://zhuanlan.zhihu.com/p/141265959
 
-参考：
+有关于TableGen的简单介绍
 
-http://www.cnblogs.com/Jack47/p/bazel-faq.html
+https://zhuanlan.zhihu.com/p/502828729
 
-Google软件构建工具Bazel FAQ
+LLVM创始人Chris Lattner回顾展望编译器
 
-https://zhuanlan.zhihu.com/p/47397799
+https://zhuanlan.zhihu.com/p/626085010
 
-bazel项目添加automake/autoconf项目解决办法
+使用Flex、Bison和LLVM编写自己的Toy Compiler
 
-https://www.cnblogs.com/puyangsky/p/7596282.html
+https://zhuanlan.zhihu.com/p/407854583
 
-bazel的使用
+使用LLVM实现一个简单编译器（一）
 
-https://zhuanlan.zhihu.com/p/421489117
+https://zhuanlan.zhihu.com/p/409749393
 
-创建宏与规则
-
-## 引用第三方库
-
-```text
-git_repository(
-    name = "XXX",
-    remote = "https://github.com/XXX/XXX.git",
-    tag = "v1.1",
-    patches = ["xxx.patch"],
-    patch_args = ["-p1"],
-    verbose = True,
-)
-```
-
-https://brentley.dev/patching-bazel-external-dependencies/
-
-Patching Bazel external dependencies
-
-# Bazelisk
-
-这是基于Go语言编写的Bazel启动器，它会为你的工作区下载最适合的Bazel，并且透明的将命令转发给该Bazel。
-
-由于Bazellisk提供了和Bazel一样的接口，因此通常直接将其命名为bazel：
-
-```bash
-sudo wget -O /usr/local/bin/bazel https://github.com/bazelbuild/bazelisk/releases/download/v1.16.0/bazelisk-linux-amd64
-sudo chmod +x /usr/local/bin/bazel
-```
+使用LLVM实现一个简单编译器（二）
