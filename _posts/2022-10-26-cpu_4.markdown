@@ -334,3 +334,7 @@ https://www.zhihu.com/question/422501188
 https://www.cnblogs.com/allcloud/p/8945544.html
 
 InfiniBand 与Intel Omni-Path Architecture
+
+https://zhuanlan.zhihu.com/p/580035183
+
+RoCE vs Infiniband vs TCP/IP

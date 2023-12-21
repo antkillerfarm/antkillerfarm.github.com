@@ -1,13 +1,39 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（四）——LoRA, Megatron-LM, KV Cache
+title:  并行 & 框架 & 优化（四）——DeepSpeed, LoRA, Megatron-LM, KV Cache
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# DeepSpeed（续）
+# DeepSpeed
+
+显存内容可分为两类：
+
+- 模型状态（model states）: 模型参数（fp16）、模型梯度（fp16）和Adam状态（fp32的模型参数备份，fp32的momentum和fp32的variance）。假设模型参数量为$$\Phi$$，则共需要$$2\Phi+2\Phi+(4\Phi+4\Phi+4\Phi)=16\Phi$$字节存储，可以看到，Adam状态占比75%。
+
+![](/images/img5/ZeRO_offload.jpg)
+
+- 剩余状态（residual states）: 除了模型状态之外的显存占用，包括激活值（activation）、各种临时缓冲区（buffer）以及无法使用的显存碎片（fragmentation）。
+
+![](/images/img5/ZeRO.png)
+
+ZeRO使用分片（partition）方法，即每张卡只存1/N的模型状态量。
+
+![](/images/img5/ZeRO_2.png)
+
+除了模型参数必须广播到各节点之外，模型梯度可以由各节点自己生成，然后再将之Reduce到保存数据的节点（即上图中的GPU 3）中。
+
+只有模型梯度，由于来自不同的Data，需要各节点的同步，其他的Adam状态数据均与Data无关，由各节点自行计算更新即可。
+
+代码：
+
+https://github.com/microsoft/DeepSpeed
+
+官网：
+
+https://www.deepspeed.ai
 
 参考：
 
