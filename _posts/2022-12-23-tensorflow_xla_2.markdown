@@ -156,6 +156,10 @@ https://huggingface.co/blog/pytorch-xla
 
 Hugging Face on PyTorch / XLA TPUs: Faster and cheaper training
 
+https://pytorch.org/tutorials/recipes/intel_extension_for_pytorch.html
+
+INTEL EXTENSION FOR PYTORCH
+
 ## OpenXLA
 
 2022.10 Google又创建了一个新的OpenXLA项目，旨在将XLA从TF中解耦。

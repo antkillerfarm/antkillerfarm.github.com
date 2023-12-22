@@ -111,6 +111,10 @@ https://www.zhihu.com/question/567275817
 
 大家怎么看乌克兰高调给一名台湾雇佣兵举行华丽葬礼？（曾圣光）
 
+https://zhuanlan.zhihu.com/p/673506762
+
+永远留在顿巴斯的老乡（赵睿）
+
 https://zhuanlan.zhihu.com/p/661990126
 
 乌克兰的日与夜（上）：台湾兵的前线烽火余生录
