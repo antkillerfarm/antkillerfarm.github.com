@@ -146,6 +146,20 @@ https://github.com/openxla/openxla-pjrt-plugin
 
 ---
 
+Mesh API：
+
+![](/images/img5/Mesh_API.png)
+
+https://pytorch.org/blog/pytorch-xla-spmd
+
+PyTorch/XLA SPMD: Scale Up Model Training and Serving with Automatic Parallelization
+
+https://www.openteams.com/large-scale-training-of-hugging-face-transformers-on-tpus-with-pytorch-xla-fsdp
+
+Large Scale Training of Hugging Face Transformers on TPUs With PyTorch/XLA FSDP
+
+---
+
 参考：
 
 https://pytorch.org/blog/pytorch-2.0-xla/

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（四）——DeepSpeed, LoRA, Megatron-LM, KV Cache
+title:  并行 & 框架 & 优化（四）——DeepSpeed, LoRA, Megatron-LM, FSDP, KV Cache
 category: DL acceleration 
 ---
 
@@ -121,6 +121,10 @@ Fully Sharded Data Parallel是Facebook深度借鉴微软ZeRO之后提出的PyTor
 
 ![](/images/img5/FSDP.png)
 
+![](/images/img5/fsdp_sharding.png)
+
+![](/images/img5/fsdp_workflow.png)
+
 参考：
 
 https://www.cnblogs.com/rossiXYZ/p/15815013.html
@@ -134,6 +138,10 @@ Facebook如何训练超大模型---(2)
 https://zhuanlan.zhihu.com/p/485208899
 
 数据并行Deep-dive: 从DP到Fully Sharded Data Parallel（FSDP）完全分片数据并行
+
+https://pytorch.org/tutorials/intermediate/FSDP_tutorial.html
+
+GETTING STARTED WITH FULLY SHARDED DATA PARALLEL(FSDP)
 
 # Megatron-LM
 
@@ -210,6 +218,12 @@ https://huggingface.co/blog/zh/bloom-megatron-deepspeed
 https://zhuanlan.zhihu.com/p/412118353
 
 Kokkos:一个异构并行计算通用平台
+
+# vLLM
+
+https://docs.vllm.ai/en/latest/
+
+Easy, fast, and cheap LLM serving for everyone
 
 # 参考
 

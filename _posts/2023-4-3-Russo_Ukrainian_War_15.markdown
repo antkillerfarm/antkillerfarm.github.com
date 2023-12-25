@@ -89,6 +89,12 @@ https://zhuanlan.zhihu.com/p/666436023
 
 ---
 
+https://zhuanlan.zhihu.com/p/673645137
+
+赫尔松2023年反攻
+
+---
+
 https://www.zhihu.com/question/557445334
 
 如何看待赫尔松北岸俄罗斯防线大溃败，俄罗斯还守得住赫尔松吗？
