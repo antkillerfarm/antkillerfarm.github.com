@@ -185,6 +185,46 @@ U²-Net：使用显著性物体检测来生成真实的铅笔肖像画
 
 # Attention进阶+
 
+https://mp.weixin.qq.com/s/CftkSOmAx0UTtCixdxj6_A
+
+深度学习中的注意力机制（完结篇）
+
+https://mp.weixin.qq.com/s/Qs6tm50YvzHaJv2rh60WMw
+
+撩一发深度文本分类之RNN via Attention
+
+https://mp.weixin.qq.com/s/MMIZGHTKM5FrvNE6ucQRYQ
+
+33页最新《自然语言处理中神经注意力机制综述》论文
+
+https://mp.weixin.qq.com/s/Q0Ft5bWTuiZUIQSTk7X6ZQ
+
+图解神经机器翻译中的注意力机制
+
+https://mp.weixin.qq.com/s/D7GQ8DRzss9ppP6pyAs1qA
+
+从0到1再读注意力机制
+
+https://mp.weixin.qq.com/s/K_VRt0B9-Xw7YJndmb4WZg
+
+Attention！注意力机制模型最新综述
+
+https://mp.weixin.qq.com/s/hzwp5oGspdtDyNBmq8sMsw
+
+HAN：基于双层注意力机制的异质图深度神经网络
+
+https://mp.weixin.qq.com/s/SBrLPZjx2RdBwZpPQQ5DXQ
+
+HAN：异构图注意力网络
+
+https://mp.weixin.qq.com/s/0EDN-ILeL_diZ1G11ikwjw
+
+T5模型：NLP Text-to-Text预训练模型超大规模探索
+
+https://zhuanlan.zhihu.com/p/89719631
+
+T5: Text-to-Text Transfer Transformer阅读笔记
+
 https://mp.weixin.qq.com/s/X1mLXPzJU7k_ANMzvVPxjA
 
 BERT、RoBERTa、DistilBERT与XLNet，我们到底该如何选择？

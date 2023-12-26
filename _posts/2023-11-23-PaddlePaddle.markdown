@@ -95,6 +95,30 @@ PaddleDetection物体检测统一框架
 
 # Pytorch
 
+https://zhuanlan.zhihu.com/p/363319763
+
+PyTorch vs LibTorch：网络推理速度谁更快？
+
+https://mp.weixin.qq.com/s/RBclQdtaA8prvSoUUdhrEQ
+
+机器学习的Pytorch实现资源集合
+
+https://mp.weixin.qq.com/s/zPv-3fMy1rZwAwPqjs7oAA
+
+Pytorch图像分类从模型自定义到测试
+
+https://zhuanlan.zhihu.com/p/46636027
+
+1张图学会PyTorch+TensorFlow+MXNet+TF Eager
+
+https://mp.weixin.qq.com/s/yS9PAw926Y7AsGRW0eHG0Q
+
+基于PyTorch的GAN框架TorchGAN：用架构级API轻松定制GAN项目
+
+https://github.com/CVBox/PyTorchCV
+
+一个基于pytorch的CV框架
+
 https://mp.weixin.qq.com/s/w09hcJof80m2VGwn7SgKmQ
 
 TorchSeg—基于PyTorch的快速模块化语义分割开源库

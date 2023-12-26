@@ -9,6 +9,20 @@ category: Attention
 
 # Large Language Model（续）
 
+![](/images/img5/LLM_pipeline.jpg)
+
+---
+
+参考：
+
+https://www.zhihu.com/question/584132646
+
+中国的大语言模型“悟道2.0”参数是GPT-3十倍，是否中国在大语言模型训练技术上已经远远超过美国？
+
+https://zhuanlan.zhihu.com/p/463352552
+
+稀疏性在机器学习中的发展趋势——Sparsity，稀疏激活，高效计算，MoE，稀疏注意力机制
+
 https://zhuanlan.zhihu.com/p/254821426
 
 乘风破浪的PTM：两年来预训练模型的技术进展（2020年之前的主流技术）
@@ -324,23 +338,3 @@ BERT烹饪之法：fintune的艺术
 https://mp.weixin.qq.com/s/nVM2Kxc_Mn7BAC6-Pig2Uw
 
 BERT模型的标准调优和花式调优
-
-https://mp.weixin.qq.com/s/FwmEIZ3ugeZBbLIGHmH-_g
-
-BERT之后，GLUE基准升级为SuperGLUE：难度更大
-
-https://mp.weixin.qq.com/s/SDVxn3Ra1dKmr-XgKNg5IA
-
-罗玲：From Word Representation to BERT
-
-https://mp.weixin.qq.com/s/-bh8BL4LxnevS8xnW5U9ZA
-
-中科院自动化所提出BIFT模型：面向自然语言生成，同步双向推断
-
-https://mp.weixin.qq.com/s/7yCnAHk6x0ICtEwBKxXpOw
-
-序列到序列自然语言生成任务超越BERT、GPT！微软提出通用预训练模型MASS
-
-https://mp.weixin.qq.com/s/7sIUaSON53hsXUJjq8uVUA
-
-马聪：NLP中的生成式预训练模型

@@ -9,6 +9,8 @@ category: Chip
 
 # AI Chip
 
+![](/images/img5/hw_ai.jpg)
+
 ![](/images/img2/AI_Chips.png)
 
 https://basicmi.github.io/AI-Chip/

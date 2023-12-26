@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争（二十七）——凡人列传（4）
+title:  俄乌战争（二十七）——凡人列传（3）
 category: Russo Ukrainian War 
 ---
 

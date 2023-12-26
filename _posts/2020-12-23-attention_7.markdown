@@ -204,15 +204,3 @@ https://www.zhihu.com/question/608763410
 https://mp.weixin.qq.com/s/vfsB5t3r5dBACKQx6FshVw
 
 选择你的道路：LLM 时代指南
-
----
-
-参考：
-
-https://www.zhihu.com/question/584132646
-
-中国的大语言模型“悟道2.0”参数是GPT-3十倍，是否中国在大语言模型训练技术上已经远远超过美国？
-
-https://zhuanlan.zhihu.com/p/463352552
-
-稀疏性在机器学习中的发展趋势——Sparsity，稀疏激活，高效计算，MoE，稀疏注意力机制
