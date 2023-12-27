@@ -305,6 +305,10 @@ https://github.com/gabime/spdlog
 
 一个C++的log库
 
+https://zhuanlan.zhihu.com/p/674073158
+
+超详细！spdlog源码解析
+
 # C/C++参考资源
 
 `vector<bool>`并不是一个通常意义上的vector容器，这个源自于历史遗留问题。 早在C++98的时候，就有`vector< bool>`这个类型了，但是因为当时为了考虑到节省空间的想法，所以`vector<bool>`里面不是一个Byte一个Byte储存的，它是一个bit一个bit储存的！

@@ -165,6 +165,12 @@ AMD RDNA与GCN GPU架构之间的差异：AMD如何赶上NVIDIA
 
 ---
 
+UMD，User Mode Driver。GPU的用户态驱动程序，例如CUDA的UMD是libcuda.so。
+
+KMD，Kernel Mode Driver。GPU的PCIe驱动，例如英伟达GPU的KMD是nvidia.ko。
+
+---
+
 http://tieba.baidu.com/p/2250616047
 
 史上最全桌面显卡天梯图
@@ -264,3 +270,7 @@ https://mp.weixin.qq.com/s/tyZXc_hz89SxERjb_c34_w
 https://zhuanlan.zhihu.com/p/651179378
 
 GPU内存概念浅析
+
+https://zhuanlan.zhihu.com/p/377073683
+
+GPU虚拟化，算力隔离，和qGPU

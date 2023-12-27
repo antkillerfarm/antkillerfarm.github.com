@@ -198,6 +198,10 @@ XRT & PJRT的作用是：为其他框架如Pytorch/JAX提供生成XLA IR，并�
 
 PJRT是XRT的升级版。
 
+参考：
+
+https://github.com/openxla/xla/blob/main/xla/pjrt/c/docs/pjrt_integration_guide.md
+
 ## IR
 
 XLA IR一般如下所示：
