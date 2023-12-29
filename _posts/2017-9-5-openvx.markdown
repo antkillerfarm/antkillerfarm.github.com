@@ -273,6 +273,12 @@ Glamor是一个统一的接口，用于GPU加速2D/3D应用。
 
 SPIR-V是一种用于GPU通用计算和图形学的中间语言。
 
+![](/images/img5/SPIRV_2.png)
+
+![](/images/img5/SPIRV.png)
+
+SPIR-V的二进制的，编组方式类似汇编语言。上图是一个简单的示例。
+
 https://blog.csdn.net/qwertyu1234/article/details/50163847
 
 SPIR-V研究：编译器基本原理

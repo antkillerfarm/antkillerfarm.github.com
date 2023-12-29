@@ -183,6 +183,18 @@ https://zhuanlan.zhihu.com/p/447728683
 
 TableGen Language Reference
 
+## FileCheck
+
+FileCheck用于校验输出结果中是否包含期望的信息。
+
+https://blog.csdn.net/weixin_46222091/article/details/104527715
+
+LLVM中FileCheck开发者工具 1--命令介绍
+
+https://blog.csdn.net/weixin_46222091/article/details/104528256
+
+LLVM中FileCheck开发者工具 2--入门教程
+
 ## 参考
 
 所谓的intrinsic function ，是属于编译器开洞魔法的范畴，这些函数的实现是直接写死在编译器的代码生成部分的，在最终得到的二进制里面不会存在这些函数的符号和实现。
