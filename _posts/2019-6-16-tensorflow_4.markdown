@@ -75,6 +75,16 @@ Example debugging mixed Python C++ in VS Code
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/vscode/launch.json
 
+---
+
+https://zhuanlan.zhihu.com/p/620708213
+
+vscode python调试 (torchpack attach调试)
+
+https://zhuanlan.zhihu.com/p/664239908
+
+VSCode Python：解决Timeout waiting for launcher to connect
+
 ## 打印stack trace
 
 C++：
