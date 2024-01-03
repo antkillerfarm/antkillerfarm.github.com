@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenVX, 运算加速库
+title:  OpenVX
 category: AI 
 ---
 
@@ -279,76 +279,10 @@ SPIR-V是一种用于GPU通用计算和图形学的中间语言。
 
 SPIR-V的二进制的，编组方式类似汇编语言。上图是一个简单的示例。
 
+当然SPIR-V从本质上说，还只是IR，并不是机器码。上例是一个int类型的声明，体现了一切皆ID，就连类型声明也是ID的设计哲学。
+
+而C语言，只有编译阶段有类型的概念，真到链接的时候，就已经只剩下符号表了。机器码就更不可能有类型，这种高级语言才有的特性。
+
 https://blog.csdn.net/qwertyu1234/article/details/50163847
 
 SPIR-V研究：编译器基本原理
-
-# 运算加速库
-
-## Neon
-
-Neon是个大路货的名字，在数值计算领域ARM和Intel都有叫Neon的硬件或技术。
-
-ARM的Neon是适用于ARM Cortex-A系列处理器的一种128位SIMD扩展结构。它主要聚焦于矩阵运算，当然也可用于DL领域。
-
-官网：
-
-https://developer.arm.com/technologies/neon
-
-Intel的Neon专为DL设计。
-
-官网：
-
-https://ai.intel.com/neon/
-
-## GSL
-
-GNU scientific library是一个C/C++写的数值计算库。
-
-官网：
-
-https://www.gnu.org/software/gsl/
-
-## OpenACC
-
-官网：
-
-https://www.openacc.org/
-
-## PGI
-
-PGI是由The Portland Group开发的并行计算库，但后者已于2013年被NVIDIA收购。
-
-官网：
-
-https://www.pgroup.com/
-
-## HSA
-
-HSA(Heterogeneous System Architecture)是AMD推出的异构系统架构。
-
-官网：
-
-http://www.amd.com/zh-cn/innovations/software-technologies/hsa
-
-## NetLib
-
-NetLib是一个数学方面的网站，收集了大量的数学软件和论文。官网：
-
-http://www.netlib.org/
-
-知名软件LAPACK（Linear Algebra PACKage）和BLAS (Basic Linear Algebra Subprograms)的官网就在NetLib：
-
-http://www.netlib.org/lapack/index.html
-
-http://www.netlib.org/blas/index.html
-
-LAPACK和BLAS的历史非常悠久，是用Fortran语言编写的。
-
-## GMP
-
-GMP是一个C/C++的大整数计算库。
-
-官网：
-
-https://gmplib.org/
