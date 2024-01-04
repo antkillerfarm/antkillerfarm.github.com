@@ -91,6 +91,10 @@ https://zhuanlan.zhihu.com/p/671137761
 
 日益增长的需求和日益稀少的援助
 
+https://zhuanlan.zhihu.com/p/673777418
+
+凛冬的寒风——乌克兰战场（2024年）新年展望
+
 ## 人物
 
 ![](/images/img4/big3.jpg)

@@ -75,6 +75,10 @@ https://www.zhihu.com/answer/2935707250
 
 瓦格纳简史
 
+https://zhuanlan.zhihu.com/p/647634719
+
+《纽约客》——起底瓦格纳
+
 https://zhuanlan.zhihu.com/p/632833942
 
 《华邮》翻译：普里戈津说俄乌战争适得其反，警告俄国可能爆发大吃鸡
