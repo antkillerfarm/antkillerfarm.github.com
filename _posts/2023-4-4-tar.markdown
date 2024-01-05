@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  各种压缩包的压缩和解压方法, awk&sed&grep, Linux学习心得（六）
+title:  各种压缩包的压缩和解压方法, awk&sed&grep, 性能分析工具, Linux学习心得（六）
 category: linux 
 ---
 
@@ -234,6 +234,168 @@ https://mp.weixin.qq.com/s/o1vuL3RrWz9tyUPguZeSWA
 
 简单快捷的数据处理，数据科学需要注意的命令行
 
+# 性能分析工具
+
+linux常用的调试工具：
+
+vmstat、iostat、mpstat、netstat、sar、top：查看系统、程序信息等。
+
+gprof、perf、perf top：定位到具体函数、调用等。
+
+strace、ltrace：系统调用、函数调用、库函数调用等。
+
+pstack、ptree、pmap：堆栈信息。
+
+dmesg：系统log信息。
+
+mallinfo：获得内存分配信息。
+
+`sudo systemctl status xrdp -n50`：打印xrdp服务的log，显示最新的50行。
+
+linux-tools-perf：Android中的perf。
+
+Simpleperf: Android上的Native CPU剖析分析工具。
+
+Android Stuido CPU Profiler：Android Studio提供的CPU剖析工具，本质上就是基于Simpleperf和systrace进行剖析。
+
+GPU Profiler: GPU剖析工具。
+
+heapprofd：Android进程本地内存分析工具。
+
+Perfetto:针对Linux/Android/Chrome平台和用户空间应用性能检测和跟踪工具。基于ftrace，atrace和heapprofd。
+
+Profilo: Facebook开发Android性能剖析库，用于在线收集应用程序的性能跟踪数据。
+
+---
+
+打印文件/proc/{pid}/maps查看内存地址和文件的映射关系，可以得到函数在哪个文件里。
+
+---
+
+https://blog.csdn.net/anualday/article/details/51483993
+
+流量测试三个工具(iperf/netperf/Flowgrind)
+
+## 黑盒测试
+
+Linux上主要有perf、gprof和valgrind三个性能分析工具。
+
+参考：
+
+https://cloud.tencent.com/developer/article/1063652
+
+Linux性能分析工具与图形化方法
+
+https://mp.weixin.qq.com/s/HvADkICPYflS2VTuSB16rg
+
+Linux入门必看：如何60秒内分析Linux性能
+
+https://www.zhihu.com/question/63946754
+
+C++怎么检测内存泄露，怎么定位内存泄露？
+
+https://mp.weixin.qq.com/s/FMYimnxcAya6bhvdGD5LUw
+
+惊魂48小时，阿里工程师如何紧急定位线上内存泄露？
+
+https://blog.csdn.net/xiaowei_cqu/article/details/104238289
+
+性能分析工具：开篇
+
+## valgrind
+
+Valgrind是一个用于构建动态分析工具的工具框架。
+
+官网：
+
+https://valgrind.org/
+
+它包含了一系列的工具：
+
+https://valgrind.org/info/tools.html
+
+它还有一个叫做QCacheGrind(KCacheGrind)的图形化性能分析工具。
+
+`sudo apt install valgrind kcachegrind`
+
+参考：
+
+https://zhuanlan.zhihu.com/p/111556601
+
+valgrind排查内存泄露
+
+https://developer.mantidproject.org/ProfilingWithValgrind.html
+
+Profiling with Valgrind
+
+## 白盒测试
+
+上面提到的主要是黑盒测试工具。
+
+白盒测试工具主要是Linux Test Project和Gcov。
+
+官网：
+
+http://linux-test-project.github.io/
+
+代码：
+
+https://github.com/linux-test-project/ltp
+
+参考：
+
+https://mp.weixin.qq.com/s/Od17bQhpd3FYE2GQd-kvaQ
+
+iOS代码染色原理及技术实践（gcov，gcno，gcda）
+
+https://www.sohu.com/a/329177032_120104204
+
+一文详解C/C++代码覆盖率--gcov/lcov/gcovr
+
+## 代码检查
+
+clang-format：可以格式化排版多种不同语言的代码。
+
+clang-tidy：一个基于clang的静态代码分析框架。
+
+KLEE：一款开源的自动软件测试工具，基于LLVM编译底层基础，能够自动生成测试样例检测软件缺陷。
+
+官网：
+
+http://klee.github.io/
+
+参考：
+
+https://blog.csdn.net/weixin_43721070/article/details/122638851
+
+C++代码自动检测工具clang-format和clang-tidy
+
+## pahole
+
+pahole可用来检查结构体中的内存漏洞，可作为内存优化的一个工具。
+
+代码：
+
+https://git.kernel.org/pub/scm/devel/pahole/pahole.git
+
+## DWARF
+
+DWARF第一版发布于1992年，主要是为UNIX下的调试器提供必要的调试信息。
+
+https://zhuanlan.zhihu.com/p/419908664
+
+DWARF, 调试信息存储格式
+
+## backtrace
+
+https://zhuanlan.zhihu.com/p/611579770
+
+嵌入式C代码调试利器---backtrace
+
+https://zhuanlan.zhihu.com/p/31630417
+
+拒绝超大coredump-用backtrace和addr2line搞定异常函数栈
+
 # Linux学习心得
 
 https://mp.weixin.qq.com/s/-hfI4GLkChRJQDqcLcvbGg
@@ -323,55 +485,3 @@ https://mp.weixin.qq.com/s/LLlzPB2emr9Hqr7gql0B4Q
 https://mp.weixin.qq.com/s/fzLcAkYwKhj-9hgoVkTzaw
 
 CPU飙高，系统性能问题如何排查？
-
-https://zhuanlan.zhihu.com/p/583413166
-
-Linux I/O 神器之 io_uring
-
-http://www.cppblog.com/elva/archive/2008/09/10/61544.html
-
-关于SIGPIPE导致的程序退出
-
-https://www.zhihu.com/question/475730584
-
-为什么linux在x86上不需要设备树，在aarch64上需要设备树？
-
-https://zhuanlan.zhihu.com/p/641619701
-
-发现谁用kill -9关闭程序就开除！
-
-https://zhuanlan.zhihu.com/p/659658036
-
-Linux6.1中为什么用Radix树替换位图（bitmap）来管理进程pid
-
-https://zhuanlan.zhihu.com/p/662590546
-
-深入理解Linux内核进程的创建、调度和终止
-
-https://zhuanlan.zhihu.com/p/662681938
-
-为什么linux不是实时操作系统？
-
-https://zhuanlan.zhihu.com/p/669604193
-
-Kernel怎么跳转到Android：linux与安卓的交界
-
-# 俄乌战争=
-
-俄军说击毁很多海玛斯，乌克兰和美军笑而不语。其实俄军打掉的很多“海玛斯”只是乌军制作的木头模型，花几千美元做的，却引诱俄军往这上面丢价值几十万美元甚至几百万美元一发的精确导弹，搞得俄军现在很缺乏精确导弹了。
-
-乌军制作的假“凯撒”，只是几根钢管搭接起来的，当然车是真卡车，能载着钢管到处跑，迷惑天上的俄罗斯侦察无人机，远看根本看不出破绽。
-
-消息人士透露，乌军在战场上大量使用这类假目标，他们出动这辆假“凯撒”，后方几公里就是乌军真正的“凯撒”卡车炮，在成功吸引俄军炮兵开火后，“凯撒”随即根据反炮兵雷达获得的信息，利用其快速反应能力对俄军进行反炮兵作战，这也是俄军炮兵最近在乌军反炮兵作战下损失惨重的原因之一。
-
-戏耍普京 捷克为乌克兰制造橡胶海马斯诱骗俄罗斯军队。
-
-https://zhuanlan.zhihu.com/p/566523323
-
-俄乌战况（9月20日）
-
----
-
-普京集团可以收买威胁上层的官僚和寡头，可如果他们没办法向人民解释游艇和停发养老金的区别，穷苦人贱命换拉达和佩斯科夫儿子不听召的区别，那动员到人民这一层，是无论如何做不到甘洒热血写春秋的。
-
-新政权发动土地改革，恢复了自耕农从军传统，给军属足够的经济补偿；八路军和解放军重建了“良家子弟从军”的共识，把士兵变成一个荣耀的职业，绝对不允许犯罪分子混入军队，这才扭转了中国上百年衰弱的趋势。从20世纪30年代到50年代，新型军队先是逐渐扩大抗日根据地，然后打败抓壮丁的国民党军队，最终能在朝鲜正面对抗美国军队。
