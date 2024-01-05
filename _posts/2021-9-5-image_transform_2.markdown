@@ -69,6 +69,12 @@ https://zhuanlan.zhihu.com/p/567654308
 
 ## AIGC
 
+![](/images/img5/AIGC.png)
+
+![](/images/img5/Web3.png)
+
+---
+
 《A Comprehensive Survey of AI-Generated Content (AIGC): A History of Generative AI from GAN to ChatGPT》
 
 《ChatGPT is not all you need. A State of the Art Review of large Generative AI models》

@@ -158,6 +158,18 @@ https://mc.ai/difference-between-local-response-normalization-and-batch-normaliz
 
 Difference between Local Response Normalization and Batch Normalization
 
+## RMS Normalization
+
+与LayerNorm相比，RMS Norm的主要区别在于去掉了减去均值的部分，计算公式为：
+
+$$\bar{a_i} = \frac{a_i}{\text{RMS}(\mathbf{a})} g_i, \text{where}~ \text{RMS}(\mathbf{a}) = \sqrt{\frac{1}{n} \sum_{i=1}^{n} a_i^2}.$$
+
+作者认为这种模式在简化了Layer Norm的同时，可以在各个模型上减少约7%∼64%的计算时间。
+
+https://zhuanlan.zhihu.com/p/620297938
+
+Layer Norm、RMS Norm、Deep Norm
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/69659844

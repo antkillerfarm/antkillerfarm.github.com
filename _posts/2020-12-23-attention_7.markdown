@@ -155,6 +155,16 @@ https://www.zhihu.com/question/628395521
 
 # Large Language Model
 
+![](/images/img5/LLM_Tree.png)
+
+![](/images/img5/LLM.png)
+
+https://arthurchiao.art/blog/llm-practical-guide-zh/
+
+大语言模型（LLM）综述与实用指南（Amazon，2023）
+
+---
+
 ![](/images/img5/huge_model.jpg)
 
 OpenAI的GPT 3的规模为175B，Google的LaMDA规模为137B，PaLM的规模为540B，DeepMind的Gogher规模为280B。

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十三）——机器学习的算法体系&相关术语表, ACBM算法, 高斯过程回归, Parameter Server
+title:  机器学习（三十三）——机器学习的算法体系&相关术语表, ACBM算法, 高斯过程回归
 category: ML 
 ---
 

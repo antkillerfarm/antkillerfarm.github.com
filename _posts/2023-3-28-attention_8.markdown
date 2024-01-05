@@ -205,6 +205,16 @@ https://zhuanlan.zhihu.com/p/656684326
 
 大模型位置编码-ALiBi位置编码
 
+## RoPE
+
+Rotary Position Embedding是苏剑林的作品，并被后来流行的LLAMA等大模型所采用。
+
+参考：
+
+https://spaces.ac.cn/archives/8265
+
+博采众长的旋转式位置编码
+
 ## 参考
 
 https://www.zhihu.com/question/298203515

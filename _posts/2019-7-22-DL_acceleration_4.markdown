@@ -187,13 +187,31 @@ Intel在早期的8087芯片上引入了一种80bit的浮点格式：1 Sign + 15 
 
 对于training来说，遇到的挑战进一步增大，weight/gradients/activation的范围相差更大，没有办法选择一个合适的格式来满足所有数值的要求。
 
-HFP8就提出了一种Hybrid的方式：forward的时候用FP-1-4-3，backward的时候用 FP-1-5-2。forward的时候，更关注精度，backward的时候更注重范围。这样的话，HFP8就能够在训练的过程中获得接近FP32的表现。
+HFP8就提出了一种Hybrid的方式：forward的时候用FP-1-4-3，backward的时候用FP-1-5-2。forward的时候，更关注精度，backward的时候更注重范围。这样的话，HFP8就能够在训练的过程中获得接近FP32的表现。
 
 在工业界Tesla DoJo提出了一种可配置的CFloat，exponent和mantissa的位数可以动态的调整，只要满足总共的bit数就可以了。这样，由软件来选择合适的浮点类型CFormat，来最大化的利用硬件的性能。
 
 《8-BIT NUMERICAL FORMATS FOR DEEP NEURAL NETWORKS》
 
 NVIDIA在H100中，添加了FP8的支持，但是去掉了对INT1/INT4的支持。。。看起来后两者还是实用价值偏低了。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/521631165
+
+Nvidia H100 中的FP8
+
+## W4A16
+
+![](/images/img5/W4.png)
+
+这种量化方式只对Weight使用4bit量化，而其他Tensor仍然使用16bit量化。A是Activation的意思。
+
+W4A16主要有GPTQ和AWQ等实现。
+
+## q4f16 & q3f16
+
+q3f16（q3指使用Quantize 3 bit来量化，f16是指核心计算使用fp 16来计算）。
 
 ## Posit
 
@@ -236,10 +254,6 @@ Posit: A Potential Replacement for IEEE 754
 https://github.com/cjdelisle/libposit
 
 https://github.com/stillwater-sc/universal
-
-## q4f16 & q3f16
-
-q3f16（q3指使用Quantize 3 bit来量化，f16是指核心计算使用fp 16来计算）。
 
 ## Saturate Quantization
 

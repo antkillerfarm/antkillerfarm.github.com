@@ -338,3 +338,7 @@ https://mp.weixin.qq.com/s/HcaH1yFtCnhjxb9ShqhFEQ
 https://www.zhihu.com/question/621243697
 
 PowerPoint发明者丹尼斯·奥斯汀去世，享年76岁，如何评价他的一生？
+
+https://mp.weixin.qq.com/s/yx9QcDHbuXJ4xvCvbJQmyA
+
+Pascal之父去世！图灵奖得主、编程语言泰斗Niklaus Wirth享年89岁

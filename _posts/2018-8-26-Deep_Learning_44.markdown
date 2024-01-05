@@ -125,6 +125,8 @@ https://mp.weixin.qq.com/s/IhPavQZmXIxxUzNSnnFCKg
 
 ## CLIP
 
+![](/images/img5/CLIP.png)
+
 https://zhuanlan.zhihu.com/p/493489688
 
 神器CLIP：连接文本和图像，打造可迁移的视觉模型

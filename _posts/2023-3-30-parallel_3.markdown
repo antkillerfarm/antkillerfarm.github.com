@@ -205,6 +205,14 @@ https://zhuanlan.zhihu.com/p/662498827
 
 大模型推理加速：看图学KV Cache
 
+# TensorRT-LLM
+
+TensorRT-LLM是NVIDIA推出的基于TensorRT的LLM推理工具。
+
+代码：
+
+https://github.com/NVIDIA/TensorRT-LLM/
+
 # 实战经验
 
 https://pytorch.org/blog/high-performance-llama-2/
