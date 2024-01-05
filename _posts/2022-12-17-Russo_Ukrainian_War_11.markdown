@@ -97,6 +97,14 @@ https://zhuanlan.zhihu.com/p/508508558
 
 踏入地狱——一位俄军空降兵的自述
 
+https://news.ifeng.com/c/8DvbK0qr12P
+
+俄军三面围攻直指基辅，开战首日的战场什么样？
+
+https://news.ifeng.com/c/8E5Jo3VmMd2
+
+俄罗斯发动总攻？最详实揭秘俄军部署
+
 https://zhuanlan.zhihu.com/p/557550632
 
 基辅之战 华邮深度系列报道
