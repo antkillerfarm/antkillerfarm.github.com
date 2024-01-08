@@ -307,10 +307,6 @@ https://zhuanlan.zhihu.com/p/140926754
 
 低光图像处理方案
 
-https://mp.weixin.qq.com/s/uT4eln61NNCdHYWLeTNsbQ
-
-对数字屏幕拍照时的摩尔纹怎么去除？
-
 https://zhuanlan.zhihu.com/p/161806533
 
 论文阅读：神经形态视觉传感器（事件相机）的研究进展及应用综述

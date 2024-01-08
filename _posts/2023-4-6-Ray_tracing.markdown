@@ -113,13 +113,33 @@ https://zhuanlan.zhihu.com/p/618925299
 
 # 数字成像
 
+https://mp.weixin.qq.com/s/cxsdBLnguAFJcFP65_cC0A
+
+3D摄像头产业链解析
+
+https://mp.weixin.qq.com/s/Kp1CLCz0eG38r1HplQ02Ew
+
+即将兴起的汽车内视相机
+
+https://mp.weixin.qq.com/s/jmvcuiRu82zVC2kq91uS0g
+
+谷歌AI用“深度”学习来虚化背景，单摄手机可用，Jeff Dean表示优秀
+
+https://mp.weixin.qq.com/s/tg1Rjl-8t93IVIh1PHTuWg
+
+什么是‘log灰’
+
+https://mp.weixin.qq.com/s/al1rP_LQLe1xIGuwK2Gr2A
+
+AI camera时代对成像带来了哪些影响
+
+https://mp.weixin.qq.com/s/YW3anc5S9_BDrXiyVro5fQ
+
+从光学成像到计算光学成像
+
 https://mp.weixin.qq.com/s/Fpy3_kljryrjEqoZz4IlNg
 
 电子后视镜（一）——相关标准汇总
-
-https://mp.weixin.qq.com/s/aUAD-SWJ6PEplrFRb5SHZg
-
-消除摩尔纹的光学方法
 
 https://mp.weixin.qq.com/s/yBd9qcmMHKIGx88voovFgw
 
@@ -302,19 +322,3 @@ https://www.zhihu.com/question/612650535
 ---
 
 我看最近不管是微博还是鹅站都有人在吹京子是个伟大的统帅，我寻思不表演一个以弱胜强就算了，恃强凌弱被弄的战报战线K线一个都支棱不起来你们是怎么好意思噶吹的？
-
----
-
-乌萝东部团队发言人说，鹅在索莱达的这次进攻有一部分瓦格纳，穿着乌萝的衣服，绑着乌萝的识别胶带浑水摸鱼。
-
-当鹅宣自信的发了一段鹅英勇绕后拿下一个乌萝阵地的视频，却被人问道那两名乌萝为什么在喊自己人后，鹅宣选择删除了视频。
-
----
-
-白鹅版瓦格纳GardService可能作为志愿者加入对线。
-
----
-
-近日，俄罗斯帝国驻美国大使馆强调说，“美国要向乌克兰提供贫铀弹的决定是不人道的，会让子孙后代付出沉重代价。”
-
-此前，俄罗斯国家通讯社—塔斯社狡辩称“俄罗斯军队使用贫铀弹不违反国际条约。”

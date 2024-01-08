@@ -252,6 +252,22 @@ https://mp.weixin.qq.com/s/zPHNtK4wUQnVLkIXcjqd_A
 
 相比2d降噪，3d降噪效果更好，且不会造成边缘的模糊，但存在的主要问题是：画面不会是完全静止的，如果对不属于同一物体的两个点进行降噪处理会造成错误。因此该方法需要运动估计，其效果好坏也与运动估计相关。而运动估计计算量大，耗时长，是制约3d降噪的主要瓶颈。
 
+## 摩尔纹
+
+在物理学中，Moire pattern指的是两列或两列以上的波在空间中重叠时发生叠加，从而形成新波形的现象。在图形图像领域，当光栅化像素阵列的空间频率低于信号本身的频率时，就会发生频谱混叠，图像上的表现就是出现摩尔纹。
+
+https://www.zhihu.com/question/624348562
+
+为什么$$sin(x^2＋y^2)＝0.5$$的图像这么丑陋?
+
+https://mp.weixin.qq.com/s/uT4eln61NNCdHYWLeTNsbQ
+
+对数字屏幕拍照时的摩尔纹怎么去除？
+
+https://mp.weixin.qq.com/s/aUAD-SWJ6PEplrFRb5SHZg
+
+消除摩尔纹的光学方法
+
 ## 参考
 
 工业机器人市场、安防相机、卫星和医疗用相机。
@@ -333,27 +349,3 @@ https://mp.weixin.qq.com/s/ofoh7xH9MB0ifORi-ZQbcA
 https://mp.weixin.qq.com/s/24ipxnkh6TNiqRrakgw6ew
 
 Google Pixel3拍照为什么那么牛？
-
-https://mp.weixin.qq.com/s/cxsdBLnguAFJcFP65_cC0A
-
-3D摄像头产业链解析
-
-https://mp.weixin.qq.com/s/Kp1CLCz0eG38r1HplQ02Ew
-
-即将兴起的汽车内视相机
-
-https://mp.weixin.qq.com/s/jmvcuiRu82zVC2kq91uS0g
-
-谷歌AI用“深度”学习来虚化背景，单摄手机可用，Jeff Dean表示优秀
-
-https://mp.weixin.qq.com/s/tg1Rjl-8t93IVIh1PHTuWg
-
-什么是‘log灰’
-
-https://mp.weixin.qq.com/s/al1rP_LQLe1xIGuwK2Gr2A
-
-AI camera时代对成像带来了哪些影响
-
-https://mp.weixin.qq.com/s/YW3anc5S9_BDrXiyVro5fQ
-
-从光学成像到计算光学成像

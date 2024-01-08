@@ -37,15 +37,27 @@ R语言的书籍主要有三本。
 
 3.《R in a Nutshell》。篇幅近600页，堪称R语言最权威书籍，兼顾语言和应用两方面。
 
+---
+
+http://yihui.name/
+
+谢益辉，Iowa State University博士，目前就职于RStudio。中国R语言会议、COS社区创办者。
+
+2022年7月，Rstudio改名为Posit，标志着Rstudio正式从专注于为R语言提供工具和支持，转向为面向数据科学的一系列语言提供工具和资源。
+
+Posit后来推出的Quarto，支持多种语言，明显有逐步取代Rmarkdown的趋势。
+
+https://www.zhihu.com/question/637962833
+
+如何看待“谢益辉”被Posit/RStudio公司解雇，并已于2024年1月1日离职？
+
+---
+
 参考：
 
 http://cos.name/
 
 统计之都（Capital of Statistics，简称COS）成立于2006年5月，是一个旨在推广与应用统计学知识的网站和社区。
-
-http://yihui.name/
-
-谢益辉，Iowa State University博士，目前就职于RStudio。中国R语言会议、COS社区创办者。
 
 http://www.r-user.com/
 

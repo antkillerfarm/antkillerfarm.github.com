@@ -353,6 +353,10 @@ https://github.com/seungjaeryanlee/awesome-rl-competitions
 
 深度强化学习赛事汇总
 
+https://screeps.com/
+
+这个网站提供了一个用类似JS的脚本驱动的RTS游戏环境，用于AI之间的对战。
+
 # 工具/框架
 
 https://www.zhihu.com/question/377263715
