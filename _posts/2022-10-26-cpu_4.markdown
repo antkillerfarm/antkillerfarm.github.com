@@ -129,6 +129,10 @@ https://zhuanlan.zhihu.com/p/34223088
 
 如何进入BIOS？
 
+https://www.zhihu.com/question/638180886
+
+电脑启动时的BIOS程序，多核CPU是怎么决定将哪个核心分配给它的？
+
 https://zhuanlan.zhihu.com/p/30565679
 
 人工智能技术热潮中，是否存在破解苹果A11处理器的可能？
