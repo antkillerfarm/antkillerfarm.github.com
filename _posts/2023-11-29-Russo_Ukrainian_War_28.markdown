@@ -157,6 +157,10 @@ https://www.zhihu.com/question/635935024
 
 如何看待加入俄军的中国籍男子赵睿阵亡于乌东战场?
 
+https://zhuanlan.zhihu.com/p/676796099
+
+事实核查：关于黄种反法西斯勇士的不雅玩笑
+
 https://www.zhihu.com/question/637546096
 
 如何评价俄罗斯雇佣兵孙汭琦（定河道人）含泪求助大使馆想回国？

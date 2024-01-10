@@ -327,78 +327,20 @@ https://mp.weixin.qq.com/s/E65x4kNNZ4ctc12e5v095w
 
 # 两弹一星+
 
-https://new.qq.com/omn/20210518/20210518A020HP00.html
+在闵嗣鹤的努力下，北京大学数论方向的人才培养卓有成效，其中潘承洞、潘承彪先生受益于闵嗣鹤的教育，而后他们又培养出张益唐、刘建亚等数论方向的杰出学者。
 
-杭州钱江大桥，面对日军步步逼近，不得不炸毁的经历
+1969年，闵嗣鹤参加研制当时急需的海上勘探设备——海洋重力仪，这是北京大学数学力学系与北京地质仪器厂的合作科研项目。由于西方禁运，资料缺乏，工作困难很大。设计该设备的理论关键是滤波问题，要在理论上保证所设计的重力仪能成功地从五万倍强噪声背景中提取出有用的微弱信号。他先是完成了“数字滤波的若干分析问题”等研究，最后提出了“契贝谢夫权系数的数字滤波方法”，从理论上解决了设计中的关键问题。由此设计制造出的仪器定名为ZY－I型海洋重力仪，历经5年海上实验于1975年通过国家鉴定，其性能远远优于日本依据3次平均法设计制造的“东京a－1号”，成为我国大面积海洋普查的先进工具。
 
-https://mp.weixin.qq.com/s/wEqbmkJuIGjqmshE96woAQ
+https://www.zhihu.com/question/564799818
 
-林巧稚诞辰120周年：终身未婚的“万婴之母”
+数学家张益唐攻克Landau-Siegel零点猜想相关论文发布，如何评价这一研究的成果及意义？
 
-https://mp.weixin.qq.com/s/TQPcOAXvjo3MXFeWN4OvhA
+---
 
-治学报国：民国时期的统计留学生
+王之去美国最著名的西点军校学习军事学。在这个学校读书的时候，有一次刚刚出完操后，有个同学提出要听王之唱中华民国国歌，这时许多同学都在一旁围观。
 
-https://mp.weixin.qq.com/s/Ar-67u7UbPz5z2odN1YeQQ
+此时，王之郑重地提出：我愿意唱，但所有听唱的人必须衣冠整齐，正身肃立，以示对中国的尊敬。此项要求当时就遭到一些人的哄笑与戏谑，盛怒之下，王之冲上去与这些哄笑的同学打了一架……
 
-从被列强剥削，到成为发达国家“粉碎机”：中国付出了多少代价？
+结果是可想而知的，王之当然是被爆打了一顿，还受到了处分……
 
-https://zhuanlan.zhihu.com/p/352959565
-
-参与加勒万冲突保障，民企员工受到表彰，该公司堪称军工界大疆
-
-https://www.zhihu.com/question/425270883
-
-非五常国家的军事实力究竟有多弱？
-
-https://mp.weixin.qq.com/s/-iv72YL5jm5OyHPuNzEzmg
-
-破晓时分，加州教授团访华记
-
-https://mp.weixin.qq.com/s/_0SN18UFx_GGlHebUaar9A
-
-兵器试验中心数字弹道的传奇。陆载德的故事——从一位左腿残疾的清华学子成长为90年代共和国军队中唯一的独腿将军。
-
-https://mp.weixin.qq.com/s/tg5ovnXBV0aqM51DGj-mUQ
-
-中国计算数学和最优化事业的创始人之一、原南京大学教授何旭初
-
-https://mp.weixin.qq.com/s/fJeYJt42nQcnugqEHUGrTw
-
-捐出200万元的中国工程院院士！一生都在做“吃螃蟹的人”……（徐寿波）
-
-https://view.inews.qq.com/wxn/20220202A087ZO00
-
-这位院士一个决定，让救命药仅售290元（王振义）
-
-https://mp.weixin.qq.com/s/fVOd3ARuymsSqPXdz25nnw
-
-控制论与被遗忘的华人科学家（李郁荣）
-
-https://mp.weixin.qq.com/s/dNe-OmF_eTbtApyy13_QLA
-
-管梅谷先生简介
-
-https://www.zhihu.com/question/51700891
-
-如何评价“前三十年的工业化是一堆破铜烂铁＂？
-
-https://mp.weixin.qq.com/s/TLe6qAAxWJZnKUXo6EGp5g
-
-上海滩无线和芯片30年史
-
-https://mp.weixin.qq.com/s/Sq53aEbG3bIBML9qSwPzoA
-
-从奴隶到将军：工控“小华为”的三场战事（汇川技术）
-
-https://view.inews.qq.com/wxn/20221217A05KPO00
-
-90岁顶级大师走了，全国5.5亿用户都要感谢他（“中国光纤之父”赵梓森）
-
-https://mp.weixin.qq.com/s/5E67HQ_TqIdtc8T-bvI7tA
-
-制造宁德时代
-
-https://mp.weixin.qq.com/s/WYgdy03_j_7-nG00gXjjHg
-
-华科大校友、“中国龙芯之母”黄令仪逝世
+他的这件事在我们留学生中广泛传颂，他也因此受到了同学们的敬重，甚至美国的一些学生也对王之肃然起敬。

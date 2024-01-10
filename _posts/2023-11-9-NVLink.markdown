@@ -111,6 +111,10 @@ https://zhuanlan.zhihu.com/p/623060064
 
 什么是NVLink？
 
+https://zhuanlan.zhihu.com/p/672749098
+
+Nvidia GPU互联技术全景图
+
 ## 存储体系
 
 ![](/images/img5/GPU_2.png)

@@ -171,174 +171,113 @@ BIOS和CMOS究竟是什么关系？
 
 # 上古软件开发
 
-https://mp.weixin.qq.com/s/_rybr3Pnmt6Rr3RWxGTCXQ
+1991年，鲍比·柯提科和一群投资人收购了经营不善的Mediagenic，这间公司成为了动视的前身。为了帮助公司摆脱债务，柯提科对公司进行了重组，改名为动视（Activision），并将总部迁至加州。1997年，当公司终于重回盈利之后，动视走上了收购之路，在之后的十年里收购了约25个独立游戏工作室，以拓宽公司的产品矩阵。《托尼·霍克的滑板》、《使命召唤》和《吉他英雄》等知名游戏系列均在这一时期形成。
 
-为什么有32个关卡的超级马里奥兄弟只要64KB？
+1991年，麦可·莫怀米、艾伦·阿德汗和弗兰克·皮尔斯这三名加州大学洛杉矶分校的毕业生为了自己的游戏理想，创办了一家名叫硅与神经键的公司，公司于1994年改名为暴雪娱乐。
 
-https://www.w3cschool.cn/article/leijuncode
+https://view.inews.qq.com/wxn/20220119A03BL400
 
-分享雷军22年前编写的代码
+687亿美元！微软买下80后、90后的青春
 
-https://mp.weixin.qq.com/s/7AtuIcic3ubzYAHnkDpONA
+https://mp.weixin.qq.com/s/ggu2IMSzOTmHtthQhepX2g
 
-雷军：穿越人生低谷的感悟
+暴雪国服正式停服，与网易14年合作结束！数百万玩家纷纷祭奠，再见青春
 
-https://mp.weixin.qq.com/s/movz5aesYdZZZHle-hHRIw
+---
 
-诞生于穿孔纸带时期的语言，ALGOL 60今年60岁了
+Ken Thompson在贝尔实验室的时候，他总是能在一台装了Unix的服务器上黑进他人的账户，不管他人怎么修改账户密码都没有用，当时贝尔实验室里面聚集的都是智商爆表、专业知识过硬的科学家，Ken的行为无疑让他们非常不爽。
 
-https://mp.weixin.qq.com/s/aYGcJaLwbuXzjI5z1Crsrw
+有个人分析了Unix的代码之后，找到了后门，重新编译部署了Uinx，但是让他们崩溃的事情再次发生，Ken还是能黑进他们的账户，这个事情让他们百思不得其解。
 
-LeCun自曝使用C语言23年之久，2年前才上手Python，还曾短暂尝试Lua
+一直到1983年，Ken获得图灵奖，在大会上解开了这个秘密，原来这个密码后门是通过他写的一个C编译器植入的，而当时那台Unix的机器必须通过这个C编译器编译之后才能运行，所以不管unix怎么修改都没有用，毕竟是要编译的。
 
-https://mp.weixin.qq.com/s/vBFOQjJr27AeRsqCej85iA
+---
 
-70年前，在苏联第一家AI LAB从事AI研究是种什么体验？
+最开始的C++编译器是CFront，由C++之父Bjarne在1982年春到1983年夏完成，而直到1988年6月前，几乎所有的C++编译器都是CFront的移植版本。很多人认为Borland C++与VC++算真正意义的首先非CFront的C++编译器实现，而Bjarne在他书写的C++历史中，认为Zortech才算。
 
-https://mp.weixin.qq.com/s/7cf14CEDa-LHFvO8gyedzg
+四大高手：Borland C++, Microsoft C++, Watcom C++， Symantec C++。
 
-为什么老编辑器Vim这么难用，却很受欢迎？
+Portable C Compiler，一种早期的C语言编译器，由Stephen C. Johnson于1970年代中期，在贝尔实验室写作。
 
-https://mp.weixin.qq.com/s/b-34Y230B_I56Epf64hYDQ
+虽然现在PCC已经式微了，但80年代初C编译器家族们可都是要么基于PCC，要么大量参考了PCC的设计的。
 
-宇宙第一IDE到底是谁？
+除了PCC之外，Stephen C. Johnson还是YACC的作者。
 
-https://mp.weixin.qq.com/s/gSW5lxCoo9JkH1JRp6hfzA
+SGI的MIPSPro -> Pro64 -> Open64 -> PathScale这条线。Fred Chow（周志德）是Open64项目的主导者。
 
-30年前未曾发行的任天堂红白机游戏，被这个团队从21张软盘中重新恢复了，还是3D的
+https://www.zhihu.com/question/39661628
 
-https://mp.weixin.qq.com/s/E3_UrGoN1uSmD_4NYG-YWw
+历史上出现过的主流C/C++编译器都有哪些？
 
-来看看比尔盖茨当年写的BASIC解释器源代码吧，你就知道泰勒级数有什么用了
+---
 
-https://mp.weixin.qq.com/s/RzrQpJ8M4SoY6YXhUQNWHg
+Borland Graphics Interface，或者Turbo C Graphics，是上世纪八九十年代Borland公司出品的Turbo C/Turbo C++/Borland C++等C语言产品中自带的绘图库。因为其简单易用而广受欢迎。
 
-你上世纪写的代码现在还work吗？挑战者：我需要一个读磁带的机器
+它的现代版本主要有：SDL_bgi/libXbgi/WINBGIm等。
 
-https://www.zhihu.com/question/420656795
+https://sdl-bgi.sourceforge.io/
 
-有哪个高手可以解读“世界黑客编程大赛第一名的作品（97年Mekka ’97 4K Intro）”?
+当然还有当时最流行的bgidemo：
 
-https://mp.weixin.qq.com/s/21eCFfRZYyTstnw777-Fhg
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/other/bgidemo.c
 
-Java的战争（Oracle vs Google）
+---
 
-https://mp.weixin.qq.com/s/af_MzLovqnt5JemXBQGdxg
+Afx前缀是微软MFC一个小组的名称简写。
 
-Java的战争(后续)
+---
 
-https://mp.weixin.qq.com/s/oeusDoCSYiwwX61H_6wQHw
+DISKMAN由国人李大海编写。
 
-浏览器（内核）发展史
+https://www.zhihu.com/question/47503655
 
-https://www.zhihu.com/question/19553117
+如何评价DiskGenius这款软件？
 
-为什么所有主流浏览器的User-Agent都是Mozilla/x.0开头？
+---
 
-https://www.zhihu.com/question/439434803/answer/1679210108
+中国第一批互联网创业者有不少来自惠多网，马化腾是深圳的DE站站长，金山的求伯君也是一个站长，好像丁磊也玩。
 
-如何评价大连车务段现在车系统瘫痪，“全力攻关一昼夜”恢复Flash运行?
+当时中国的互联网出口有两个，一个是中科院的网络，一个是教育科研网。教育网的国际出口在清华大学，清华到中科院也就三四公里的路，但清华的电脑要连上曙光站，得从国际出口去美国兜一圈回来，既慢又不稳定。
 
-https://mp.weixin.qq.com/s/YOcKv4InA1G7sdERanGZSA
+清华的学生一直熬到1995年8月，有个网名ACE的用户，一怒之下在自己实验室的386电脑上装了套台湾的BBS软件，把站点起名“水木清华”。水木清华BBS是中国大陆第一个同时在线超过100人的“大型”网站。
 
-《是男人就下100层》真的有隐藏剧情！
 
-https://mp.weixin.qq.com/s/popvQv-CM7--5ByTMpeaxA
+https://www.zhihu.com/question/19848288
 
-编程语言考古：曾经影响一代人的BASIC，原来还有前身
+中国最早的论坛（BBS）是哪个？
 
-https://mp.weixin.qq.com/s/K-KIA18cCj6ANM4Sb7fEvw
+---
 
-50年长盛不衰，SQL为什么如此成功？
+2021年，美国前总统特朗普团队使用了Mastodon的源代码，开发了他们的新社交媒体平台，即所谓的Truth Social。
 
-https://mp.weixin.qq.com/s/3ZszI7PupWsuTvy69BwPnw
+https://mp.weixin.qq.com/s/EG65kmRlKAdTzn8kPmU0BA
 
-“C语言之父”40年前搞的操作系统复活！Linux、Windows都借鉴过它（Plan 9）
+反Twitter平台用户激增250万，这名29岁程序员如何凭一己之力扛住超8倍流量增长？
 
-https://mp.weixin.qq.com/s/ywTkMMP6ysBfByIXW3_xeQ
+---
 
-全世界下载量超100亿，curl怎样成为影响世界的开源项目？
+从Sun走出的著名人物：
 
-https://mp.weixin.qq.com/s/lqGCGj1EuwRvg6S9Dt3yEg
+Whitfield Diffie：图灵奖获得者，公钥密码体系先驱
 
-PDF之父、Adobe联合创始人离世，乔布斯收购未果给了他第一桶金
+James Duncan Davidson：Tomcat作者
 
-https://mp.weixin.qq.com/s/x-N7n7RkrvcCXT4C7UxPSQ
+Marc Fleury：JBoss作者
 
-Linux之父：财务自由以后，我失眠了！
+Bob Scheifler：X-Windows领导者
 
-https://mp.weixin.qq.com/s/wIIQQibtFR3cecOpmNenvQ
+Paul Buchheit：GMail发明人
 
-YouTube博主实测病毒之王“熊猫烧香”，当年是它太强还是杀毒软件太弱？
+Joshua Bloch：Java大牛，Effective Java作者
 
-https://zhuanlan.zhihu.com/p/38973085
+Brendan Gregg：DTRace作者
 
-史上最烂的开发项目长啥样：苦撑12年，600多万行代码...
+Lars Bak：Java HotSpot作者，V8作者
 
-https://zhuanlan.zhihu.com/p/53623636
+---
 
-我的电子邮件发不到500英里以外！
+在1999年至2015年期间，共有超700名邮局分局负责人因Horizon审计软件的bug而遭到起诉，之后富士通又陆续提出多项并不属实的财务问题。数百人因此被监禁或破产，期间至少四人因此选择自杀。
 
-https://mp.weixin.qq.com/s/hgoZuG0Kp5PIU7pVajjX-Q
+https://www.36kr.com/p/2598433889188741
 
-西祠胡同被一元钱拍卖：别了，青春里的BBS时代
-
-https://www.zhihu.com/question/20722310
-
-计算机底层是如何访问显卡的？
-
-https://mp.weixin.qq.com/s/bELFDhgmhzSPEmdIQqTvDA
-
-《QQ堂》停运冲上热搜：90后的青春落幕
-
-https://www.zhihu.com/question/545441391
-
-如何看待微信安装包11年膨胀575倍？为什么现在的应用安装包越来越大了？
-
-https://zhuanlan.zhihu.com/p/357105224
-
-打开游戏要运行19.8亿次if语句？黑客嘲讽RockStar游戏代码太烂了
-
-https://www.zhihu.com/question/28504752
-
-既然可以用拼音打字，当初为什么推广五笔？
-
-https://mp.weixin.qq.com/s/Bi4CFs9pNvvuv7Qb-KSyKQ
-
-58岁PDF发明人离世
-
-https://mp.weixin.qq.com/s/2IwITN2jwayREJMZRobGZw
-
-中国广告引擎简史
-
-https://mp.weixin.qq.com/s/Me5y9NGYcyKjG4Mi-K6P9w
-
-中国黑客关系图
-
-https://zhuanlan.zhihu.com/p/599318774
-
-旧版红旗Linux桌面系统收集
-
-https://zhuanlan.zhihu.com/p/431722918
-
-没有这个传奇工程师，就没有今天的Windows（David Cutler）
-
-https://www.zhihu.com/question/600905979
-
-曾经风靡一时的ghost系统，为什么销声匿迹了？
-
-https://zhuanlan.zhihu.com/p/573114357
-
-中国国产操作系统的历史
-
-https://mp.weixin.qq.com/s/HcaH1yFtCnhjxb9ShqhFEQ
-
-世界头号黑客去世，从通缉犯到安全顾问，59年传奇人生落幕（Kevin Mitnick）
-
-https://www.zhihu.com/question/621243697
-
-PowerPoint发明者丹尼斯·奥斯汀去世，享年76岁，如何评价他的一生？
-
-https://mp.weixin.qq.com/s/yx9QcDHbuXJ4xvCvbJQmyA
-
-Pascal之父去世！图灵奖得主、编程语言泰斗Niklaus Wirth享年89岁
+系统bug致百人入狱，砸了2.8亿元仍上云失败，二十年了，这家大企业被日本软件坑惨了
