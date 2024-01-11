@@ -85,6 +85,10 @@ https://github.com/lhotse-speech/lhotse
 
 https://github.com/k2-fsa/k2
 
+官网：
+
+https://k2-fsa.github.io/k2/
+
 - Icefall：示例脚本集合。
 
 # 编译

@@ -9,362 +9,142 @@ category: Russo Ukrainian War
 
 # 俄乌战争
 
-波兰总统说了个很意思的话，要那些试图让乌克兰割让土地的国家，把自己领土交给大毛，用来换克里米亚。皆大欢喜的建议啊！
+鹅兵不是全员疯子，而是素质参差不齐，礼貌的鹅敲门重了都道歉，差的鹅看见女人就恨不得脱裤子，整个一梦回二战苏军。
+
+连车臣大胡子对居民都是口嗨威胁，不过反过来轮流了一个莫斯科来的女记者……这个，车臣大胡子果然知道谁才是敌人。
 
 ---
 
-将希望寄托在匈牙利和土鸡是不靠谱的，他们只想把京子卖个好价钱。
+前一段时间我上传过一段视频，俄军抢夺自己受伤战友财物的；今天再上一个视频，是俄军驱车四处收捡阵亡战友细软的，人家有车也不把自己人拉走下葬。
 
 ---
 
-https://mp.weixin.qq.com/s/zPO-ScWfgn3_GMsqE3A-4w
+当俄罗斯军队咒骂他们的物资短缺时，乌克兰军队穿着加拿大和北欧国家提供的隔热迷彩服，睡在带炉灶的帐篷和睡袋。
 
-俄乌冲突：为什么没看到钢铁洪流和百万大军
+---
 
-https://www.zhihu.com/question/518738516
+开战第一天，还以为俄军至少也有比当年德三国防军更高的水平。
 
-媒体称泽连斯基告诉欧盟国家领导人“这可能是你们最后一次看到我活着”，释放了哪些信号？
+开战第一周，觉得俄军至少也有比二战时期本子的军队更高的水平。
 
-https://mp.weixin.qq.com/s/u7C1THhjnWLRLR4z7casbQ
+开战半个月，难不成俄军连萨达姆的共和国卫队都不如？
 
-在乌克兰，日常生活与国家的分裂
+开战一个月，就算俄军再怎么拉胯，那也应该比卡扎菲的军队强吧？
 
-https://www.zhihu.com/question/523693204
+开战到今天，什么德三国防军、本子、萨达姆、卡扎菲？俄军也配？俄军就是马保国的水平。
 
-普京表示向欧洲国家供应天然气将用卢布进行结算，将产生哪些影响？
+---
 
-https://www.163.com/dy/article/H27B36J005453NII.html
+![](/images/img5/Weapons.jpg)
 
-对乌战争并非易事！俄国总参退役上校2月初的惊人预言
+2022.12.6 乌克兰军队节邮票：Weapons of Victory
 
-https://baijiahao.baidu.com/s?id=1720008637085855507
+![](/images/img5/dog.webp)
 
-一种几乎改变战争进程的武器：莫洛托夫鸡尾酒
+2022.7.28 包括拖拉机、扫雷、哥萨克武士、荣誉勋章等要素。
 
-https://news.ifeng.com/c/8ESc2rP54Dv
+![](/images/img5/Ukraine-2022-Invincible-FDC.webp)
 
-要停火了？俄军调兵情况说明一切
+2022.8.24 独立日
 
-https://news.ifeng.com/c/8EXj93OufHt
+![](/images/img5/Glory_to_The_Armed_Forces_of_Ukraine.jpg)
 
-全军出击！普京压上了俄军全部力量
+乌克兰武装力量
 
-https://news.ifeng.com/c/8EeAtgpJ0Ob
+![](/images/img5/Good_Evening.jpg)
 
-惊人反转，乌克兰兵力已是俄罗斯2倍
+![](/images/img5/Victorious.jpg)
 
-https://news.ifeng.com/c/8Emu7czkfWy
+这是17岁的Valeria Mikhailova的作品。
 
-俄罗斯宣布从基辅方向撤军，要停战了？
+![](/images/img5/worker.jpg)
 
-https://news.ifeng.com/c/8ErWfeGuVev
+![](/images/img5/Fighers_Evil.webp)
 
-将军阵亡率15%？俄军在乌克兰遭遇了什么
+![](/images/img5/2023-Weapons.jpg)
 
-https://news.ifeng.com/c/8F4v75koosu
+![](/images/img5/iron-man-block.webp)
 
-4月顿巴斯分胜负决生死，重演二战战役
+铁路工人——从赫尔松到利沃夫
 
-https://news.ifeng.com/c/8FB20CHoBDN
+https://bittergrounds.com/2022s-striking-ukrainian-stamps/
 
-统帅部最高机密——普京为何做出错误决断
+2022年乌克兰邮票
 
-https://news.ifeng.com/c/8FEyCcwsVG6
+https://bittergrounds.com/ukraine-stamps-begin-another-year/
 
-两只“大老虎”，坏了普京的大事
+2023年乌克兰邮票
 
-https://news.ifeng.com/c/8FMpNxpSHjc
+https://zhuanlan.zhihu.com/p/626641522
 
-二战时苏军两度折戟之地，俄乌或将在此决胜负
+俄罗斯又赢了！仅用克里姆林宫大顶就骗取乌克兰发行邮票
 
-https://news.ifeng.com/c/8Fsc6DZP5g5
+---
 
-俄罗斯乌克兰的大决战终于打响了
+2022年圣诞节，许多乌克兰人一改东正教传统，改在12月25日庆祝圣诞节，以示“与俄罗斯及其文化和宗教的决裂”。
 
-https://news.ifeng.com/c/8G653CGmggn
+虽然都信奉基督，但东正教和天主教的圣诞日不同，东正教是1月7日。至于原因嘛。当然是教皇格里高利改历法，变没了13天。你教皇的玩法，我牧首必然不认。
 
-双线在决战，这两点决定俄乌战场输赢
+改良儒略历是1923年君士坦丁堡会议提出的历法。米兰科维奇在1923年5月23日向大会介绍了历法改革方案：格里高利历的基础上，对被900除余200或600的年份置闰，即900年闰28天。他作为天文学家向在场的教士发表了一个演讲，指出如果单纯删掉10天而不修改历法将导致东正教会在未来的历法辩论上永远处于下风。反之，改革儒略历是当时整个基督教世界最科学，最精确的历法。采用改革儒略历不是向天主教投降，而是比天主教优越。
 
-https://news.ifeng.com/c/8GKljOt9z6z
+>Milutin Milankovitch，1879~1958，塞尔维亚土木工程师、地球物理学家。他提出了地球长期气候变化和地球轨道的周期性变化关系，也就是今日的米兰科维奇循环。
 
-俄军只用“一只手”打乌克兰，自信还是动不了？
+乌克兰正教分两大派，一派是独立的乌克兰正教会、一派是原莫斯科牧首区下属的乌克兰教区，现在这两派都改名叫乌克兰正教会了。
 
-https://news.ifeng.com/c/8GRIdyw3Bn2
+不过虽然中文都翻译成乌克兰正教会，但是实际上写法不一样。
 
-5月决战初步战果，乌克兰陷入绝境？
+联盟解体后独立的那派叫Православна церква України简称ПЦУ。
 
-https://news.ifeng.com/c/8GdA8irm4wu
+战争前隶属于莫斯科牧首区的那派叫Українська Православна Церква，以前还会在后面加上莫斯科牧首区两个词，现在去掉了，简称УПЦ。
 
-俄乌战争啥时候结束？美欧想法高度一致
+https://zhuanlan.zhihu.com/p/642372528
 
-https://news.ifeng.com/c/8JWGnIAc1x8
+争夺东正教正统 乌克兰总统与拜占庭大主教会面
 
-俄乌交战200天 俄军曾有4次机会取胜
+https://zhuanlan.zhihu.com/p/642457457
 
-https://news.ifeng.com/c/8JY3zMpfAVx
+不忘过去 乌克兰和波兰总统悼念沃伦事件遇难者
 
-俄军火炮猛射2个月，炮弹库存还能撑多久？
+https://zhuanlan.zhihu.com/p/620599800
 
-https://news.ifeng.com/c/8Jcv9bjeSPV
+驱魔人泽连斯基：对俄罗斯领导的乌克兰东正教的关闭行动
 
-为什么乌克兰要过上三月才能反攻？
+---
 
-https://news.ifeng.com/c/8KivcEeZ16O
+如果乌萝海军掌握着黑海海底地形数据，那他们完全可以直接采用地形匹配制导，让无人潜航器自己开到目标海域，自主索敌或者上浮接收控制中心信号。海底地形是会变化的，要持续监测，所以和平时期科考船和水文测量船比战斗舰艇敏感很多，驱离的优先级极高。
 
-“冬将军”曾击败拿破仑，现在轮到俄罗斯了？
+---
 
-https://news.ifeng.com/c/8McreoQx3df
+泽连斯基现场学习了捷克援助的F-16模拟器的基本操作，在教官的指导下在模拟器里噶了一架图-95。飞行员们给他奖励了一个签名头盔，泽连斯基道谢并承诺自己会尽最大努力给他们搞来真正的F-16。
 
-打不赢就闹革命，俄罗斯又要陷入这个历史循环？
+---
 
-https://news.ifeng.com/c/8Mwi4IFyf1B
+俄军作战部队将领第一学历几乎全部来自两所初级军官学校——喀山坦克学校和梁赞空降兵学校。
 
-“普京名言”的真正主人，给俄罗斯挖了多大坑？
+俄（苏）军传统上只重视坦克兵和空降兵 ，最后累积下来晋升将官的全是坦克兵和空降兵出身的军官。坦克兵军官就不用说了，空降兵军官当陆军师长军长也是常态。
 
-https://news.ifeng.com/c/8N1kCsAAdaa
+喀山坦校和梁赞空校的垄断，进而会继续强化本兵种的裙带团体利益 ，乃至形成了喀山的“坦克兵世家”（比如格拉西莫夫家族）和梁赞、普斯科夫的“空降兵世家”子弟们。
 
-为了“500年终极梦想”，俄国付出了什么代价？
+https://news.ifeng.com/c/8LxOaO8H7eb
 
-https://news.ifeng.com/c/8NK6iq9Smvn
+开战300天俄军为何难取胜？细节都在这一篇
 
-前所未有的财政大危机，俄罗斯准备无条件谈判
+---
 
-https://mil.sina.cn/sd/2018-12-18/detail-ihmutuee0269859.d.html
+在西方，它有时直译成《孙子兵法》，但更多的时候，它有另一个更传奇的书名——《战争的艺术》。
 
-俄军唯一航母居然被偷了 大量贵金属失窃价值140万
+https://www.sohu.com/a/548858845_374379
 
-https://mp.weixin.qq.com/s/kwRY-he_wcMp7b2VuQoDOQ
+乌军掩体里的这个发现，与中国软实力有关！
 
-都打了一个多月了，俄军在打什么东西
+https://www.zhihu.com/question/533626266
 
-https://mp.weixin.qq.com/s/yI6P2bRpJC-VG39SLikLng
+俄方在亚速钢铁厂内发现乌军遗留的《孙子兵法》，这本书有哪些军事价值？它为何能够留存至今仍被人追捧？
 
-2022年俄乌战争——乌克兰主要参战部队的历史（1）
+---
 
-https://mp.weixin.qq.com/s/jlUZvp3XmF5TBUHZGS-piw
+塔曼师有几个团的动员兵原本预计三天后送往前线，结果运输部门把他们给忘了，让他们在火车站睡了几天地板。
 
-2022年俄乌战争——乌克兰主要参战部队的历史（2）
+---
 
-https://mp.weixin.qq.com/s/0KyzvO3MJ1iEadRqtOQo3A
-
-俄罗斯军队虚弱的本质终于暴露无遗
-
-https://www.zhihu.com/question/530996641
-
-如何看待在乌军发动的炮击中俄军总参谋长格拉西莫夫陆军大将负伤，电子战部队副司令西蒙诺夫陆军少将阵亡?
-
-https://mp.weixin.qq.com/s/zoL1ZPt8rBm2eerZSR6xzA
-
-芬兰瑞典申请加入北约，北欧中立国模式宣告终结了吗？
-
-https://www.zhihu.com/question/49927644
-
-都有非常相似的历史，为什么乌克兰人反俄，而白罗斯人却亲俄？
-
-https://zhuanlan.zhihu.com/p/519481132
-
-俄罗斯还有多少辆坦克？
-
-https://zhuanlan.zhihu.com/p/509289102
-
-毁家纾难——俄罗斯是怎样援助顿巴斯分裂武装的？
-
-https://mp.weixin.qq.com/s/A8qiQqTGl-heIOXmVAC3dA
-
-乌克兰战场直播，300美元刷一发火箭弹
-
-https://www.zhihu.com/question/544946847
-
-普京是现代的希特勒吗？
-
-https://zhuanlan.zhihu.com/p/566841960
-
-统计——乌克兰目前接受的军援
-
-https://www.zhihu.com/question/555976713
-
-顿涅茨克等四地入俄公投结果公布，将对俄乌局势产生什么影响？
-
-https://mp.weixin.qq.com/s/n4EMEdHNJuhrHwsCUE6m4A
-
-被欧洲人买爆的中国电热毯，真有那么火吗？
-
-https://www.zhihu.com/question/557681794
-
-如果你来设计《使命召唤：俄乌战争》的剧情，会是怎样的？
-
-https://zhuanlan.zhihu.com/p/579537323
-
-垮塌的大厦——俄罗斯坦克工业现状和梅德韦杰夫无法完成的任务
-
-https://zhuanlan.zhihu.com/p/582340201
-
-俄媒：三百年的荣耀被普京这个生物20年败光了
-
-https://zhuanlan.zhihu.com/p/496556274
-
-大毛的航模
-
-https://zhuanlan.zhihu.com/p/588914690
-
-你给我从车顶上下来！”——再评BMP系列随车步兵搭乘方式
-
-https://zhuanlan.zhihu.com/p/592954024
-
-“我们正在书写改变战争的大故事”——乌克兰军队是如何通过程序员来获得战场优势的
-
-https://zhuanlan.zhihu.com/p/507119007
-
-乌克兰内阁组成人员简历 看看他们是不是有双重国籍？
-
-https://www.zhihu.com/answer/2837159962
-
-如果你是泽连斯基，你如何避免爆发战争？
-
-https://zhuanlan.zhihu.com/p/598377462
-
-余波——俄乌战争对叙利亚局势的影响
-
-https://zhuanlan.zhihu.com/p/603470366
-
-俄乌战争之情报战：一名乌克兰间谍被神秘杀害的来龙去脉
-
-https://zhuanlan.zhihu.com/p/603690330
-
-耗尽的遗产——俄罗斯坦克在俄乌战争中的改装
-
-https://zhuanlan.zhihu.com/p/609421277
-
-坦克没有过时、无人机主宰天空——俄乌战争的18个经验和教训
-
-https://www.zhihu.com/question/586911709
-
-俄军预警机A50疑似遇袭，大家如何看待此事？
-
-https://zhuanlan.zhihu.com/p/538532137
-
-为了真正的信仰——战斗在乌克兰的国际军团
-
-https://zhuanlan.zhihu.com/p/615070298
-
-危险的攻势——乌克兰军队可能面临缺乏老兵的困境
-
-https://zhuanlan.zhihu.com/p/615630800
-
-恐惧蔓延——俄罗斯国防部将莫斯科划为防空作战区
-
-https://zhuanlan.zhihu.com/p/616389334
-
-侵略战争的附带伤害：俄罗斯边境城市面临水污染问题
-
-https://zhuanlan.zhihu.com/p/616547047
-
-马里乌波尔的居民开始被赶出普京访问过的房屋
-
-https://zhuanlan.zhihu.com/p/621365071
-
-不在任何一份名单上——俄乌战争俄军失踪士兵调查报告
-
-https://zhuanlan.zhihu.com/p/622183909
-
-特种炮灰——被消耗殆尽的俄罗斯精锐作战单位
-
-https://zhuanlan.zhihu.com/p/623516134
-
-和平下的浩劫——俄罗斯的“部分动员”到底造成了多大的灾难？
-
-https://zhuanlan.zhihu.com/p/625715150
-
-生与死的舞蹈——巴赫穆特前线医疗点的故事
-
-https://zhuanlan.zhihu.com/p/628834288
-
-强制捐款，俄军工企业和员工难以支撑
-
-https://zhuanlan.zhihu.com/p/630222149
-
-事实核查：普京霸气摧毁爱国者电池
-
-https://zhuanlan.zhihu.com/p/630611485
-
-乌克兰士兵如何解决生理需求
-
-https://zhuanlan.zhihu.com/p/635196837
-
-错当豹二坦克 俄罗斯军队霸气炸毁乌克兰联合收割机
-
-https://zhuanlan.zhihu.com/p/629358146
-
-俄乌双方阵亡人员的地域分布
-
-https://zhuanlan.zhihu.com/p/637269164
-
-苟且偷生 俄罗斯士兵向乌克兰无人机投降的的故事
-
-https://zhuanlan.zhihu.com/p/638770221
-
-230名俄罗斯逃兵被关押在地下室
-
-https://www.zhihu.com/question/607288866
-
-俄罗斯国防部说开战以来俄军已摧毁了乌军的坦克和装甲车共计1万多辆，这个数据可信吗？俄军真的这么厉害？
-
-https://zhuanlan.zhihu.com/p/637175526
-
-俄乌战争合集——俄罗斯究竟撒了多少谎
-
-https://zhuanlan.zhihu.com/p/641610350
-
-事实核查 俄罗斯士兵遗体被打包成方块吗？
-
-https://zhuanlan.zhihu.com/p/556687737
-
-纠结的二代，纯粹的恶--K.Galeev谈杜金娜之死
-
-https://www.zhihu.com/answer/3148620201
-
-你见过哪些令人难绷的抄袭行为？
-
-https://www.163.com/dy/article/IB3EQLKF055389NN.html
-
-俄罗斯外交官：加强北京-莫斯科-明斯克轴心对俄罗斯极为有利
-
-https://zhuanlan.zhihu.com/p/648499818
-
-前沿战场上的乌军狙击手
-
-https://zhuanlan.zhihu.com/p/649194100
-
-北约训练让乌克兰军队对战争准备不足
-
-https://zhuanlan.zhihu.com/p/651937400
-
-投敌叛国谋害战友 俄罗斯飞行员驾驶米8直升机向乌克兰投诚
-
-https://zhuanlan.zhihu.com/p/516566732
-
-俄军志愿兵伊久姆参战记
-
-https://zhuanlan.zhihu.com/p/656014951
-
-莫斯科－德黑兰轴心：俄罗斯和伊朗的合作
-
-https://zhuanlan.zhihu.com/p/652658146
-
-“无法拒绝的死亡陷阱”——俄罗斯是如何征召外国人服役的
-
-https://zhuanlan.zhihu.com/p/658436776
-
-在俄罗斯的国外劳工遭围捕：送到乌克兰当炮灰
-
-https://zhuanlan.zhihu.com/p/658350757
-
-死后杀人 俄罗斯多名军人不幸被假投降的乌克兰无人机击毙
-
-https://zhuanlan.zhihu.com/p/669133108
-
-俄乌边境第一线报道：乌克兰小镇的毁灭之路
-
-https://zhuanlan.zhihu.com/p/673891186
-
-普京霸气阻止女记者竞选俄罗斯总统
+今天那个乌友缴获stsh81盔的视频，那里面那个stsh81不是真货，是某个淘宝商家做的复刻版。不知道怎么就返销俄罗斯了，然后被上前线的俄人买去用，还被乌人缴获了。
