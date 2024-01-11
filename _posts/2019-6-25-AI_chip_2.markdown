@@ -357,13 +357,3 @@ https://mp.weixin.qq.com/s/K_dohaZbCISZlxe1Utu50w
 https://zhuanlan.zhihu.com/p/152167194
 
 两大FPGA公司的“AI技术路线”
-
-## 行业信息
-
-https://mp.weixin.qq.com/s/vGoWsyaal-gAzsrhPguvFg
-
-深度解读：华为麒麟芯片是如何炼成的！
-
-https://mp.weixin.qq.com/s/8RDHTn6P63otKXUdrHhbjw
-
-一文看懂AI芯片产业生态及竞争格局

@@ -229,7 +229,33 @@ https://zhuanlan.zhihu.com/p/664723980
 
 # XLA+
 
-## JAX（续）
+## JAX
+
+一款由谷歌团队打造（非官方发布），用于从纯Python和Numpy机器学习程序中生成高性能加速器（accelerator）代码，且特定于域的跟踪JIT编译器。
+
+代码：
+
+https://github.com/google/jax
+
+文档：
+
+https://jax.readthedocs.io/en/latest/
+
+JAX的底层也是基于XLA的。
+
+JAX并不是TF的替代品，它缺失了一些数据准备和调度的功能。这些功能一般可用haiku/flax提供。
+
+RLax：这是一个基于Jax的强化学习库。
+
+参考：
+
+https://mp.weixin.qq.com/s/IMMdbF33ZHEz7N_XwgIhHA
+
+试试谷歌这个新工具：说不定比TensorFlow还好用！
+
+https://mp.weixin.qq.com/s/tZ3yWQ9--l9e81UqoUoWIQ
+
+要替代TensorFlow？谷歌开源机器学习库JAX
 
 https://mp.weixin.qq.com/s/eaYwiV2LZNRwzPEeOA1XFg
 

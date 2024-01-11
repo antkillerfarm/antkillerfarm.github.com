@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  AI Chip（三）, AMD
+title:  AI Chip（三）
 category: Chip 
 ---
 
@@ -9,7 +9,47 @@ category: Chip
 
 # AI Chip
 
-## 行业信息（续）
+## 寒武纪
+
+官网：
+
+https://www.cambricon.com
+
+文档：
+
+https://developer.cambricon.com/index/document
+
+![](/images/img5/cambricon.jpg)
+
+寒武纪的AI芯片，被称为MLU。
+
+寒武纪7nm训练芯片思元290：这款产品应该训练推理都支持的，int的算力都披露了，但是浮点算力没拿出来show。
+
+估计浮点算力很鸡肋，大概率这是一个标注训练推理芯片的推理芯片吧！
+
+参考：
+
+https://www.zhihu.com/question/41469046
+
+寒武纪神经网络处理器效能如何？
+
+https://zhuanlan.zhihu.com/p/647727663
+
+寒武纪显卡的使用和测试
+
+https://zhuanlan.zhihu.com/p/591827529
+
+寒武纪芯片学习和使用心得汇总
+
+## 行业信息
+
+https://mp.weixin.qq.com/s/vGoWsyaal-gAzsrhPguvFg
+
+深度解读：华为麒麟芯片是如何炼成的！
+
+https://mp.weixin.qq.com/s/8RDHTn6P63otKXUdrHhbjw
+
+一文看懂AI芯片产业生态及竞争格局
 
 https://mp.weixin.qq.com/s/jINnom16KWiEKiug3N-f8g
 
@@ -299,118 +339,58 @@ https://mp.weixin.qq.com/s/cBVio3W64np8fXwUQs2wIw
 
 机器学习如何用于芯片系统设计？Jeff Dean推荐Google最新《机器学习系统芯片设计》70页ppt为你讲解
 
-# AMD
+https://zhuanlan.zhihu.com/p/150656419
 
-## Matrix Core
+AI芯片技术发展
 
-对标英伟达Tensor Core，AMD推出Matrix Core。
+https://mp.weixin.qq.com/s/9fBe6MsUOCDhtp4MSfP2jg
 
-## 高速互联
+AI处理器热潮正在消退
 
-对标NVLink，AMD推出了：
+https://mp.weixin.qq.com/s/JYTqJDlGw6Q2gNLaYIGLcQ
 
-GMI：Global Memory Interconnect
+特斯拉芯片究竟怎么样？
 
-AMD Infinity Fabric Link
+https://mp.weixin.qq.com/s/cA1AXfpV3ZcMNX9k5XKlww
 
-其实Intel也有一个叫做Xelink的东西。
+面向深度神经网络的芯片布图规划问题简介
 
-IBM BlueLink
+https://zhuanlan.zhihu.com/p/231302709
 
----
+聊聊GPU峰值计算能力
 
-HCCS，即Huawei Cache Coherence System，华为自研，叫“华为Cache一致性总线”。
+https://zhuanlan.zhihu.com/p/340775090
 
-英伟达的NVLink可以实现8颗芯片互联，而HCCS目前仅支持4路互联。
+从Thinker到Evolver：对可演化AI芯片的探索
 
-## HIP
+https://mp.weixin.qq.com/s/MwZ9j1MIwRBrJK4iWKzRqQ
 
-![](/images/img4/latestGPU.png)
+芯故事：和AMD有渊源的那些AI创业公司
 
-HIP：Heterogeneous Interface for Portability。
+https://mp.weixin.qq.com/s/S1fVrSfAM_UJh06Q43s8vA
 
-HIP是AMD提出的C++接口，号称能兼容CUDA和自家的ROCm。
+网络芯片架构的新改变
 
-https://zhuanlan.zhihu.com/p/545296023
+https://zhuanlan.zhihu.com/p/47904879
 
-写给CUDA开发者AMD ROCm & Intel oneAPI开发贴士
+AI芯片在5G中的机会
 
-https://streamhpc.com/blog/2016-04-05/comparing-syntax-cuda-opencl-hip/
+https://mp.weixin.qq.com/s/Z_QVN7OCLqeyMrwK3Sc7qA
 
-Comparing Syntax for CUDA, OpenCL and HiP
+AI芯片和传统芯片的区别
 
-## Composable Kernel
+https://mp.weixin.qq.com/s/mMiAGH2Yz42xes7jicyygA
 
-Composable Kernel（CK）库旨在提供一套在AMD GPU上算子融合的后端方案。
+“超级芯片”或在十年内诞生，摩尔定律再续一命！（自旋电子逻辑器件“MESO器件”）
 
-https://www.sohu.com/a/603796560_129720
+https://zhuanlan.zhihu.com/p/557933130
 
-AMD Composable Kernel: 定制化算子融合，大幅提升AI端到端性能
+从2022新公开的特斯拉机器人Dojo芯片架构信息到存算一体
 
-## AITemplate
+https://zhuanlan.zhihu.com/p/503371595
 
-AITemplate首先在Python层寻找最优的kernel配置，生成Jinja2 template，再生成C++ template：
+AI芯片（下），自动驾驶里的“水浒卡”
 
-- NVIDIA GPU：基于CUTLASS的GPU Tensor Core C++ template；
+https://mp.weixin.qq.com/s/Vt23nK5zC7Wwv7iiFAFvrQ
 
-- AMD GPU：基于CK（Composable Kernel）的Matrix Core C++ Template。
-
-官网：
-
-https://github.com/facebookincubator/AITemplate
-
-参考：
-
-https://www.zhihu.com/question/557608132
-
-如何看待Meta发布的全新推理引擎AITemplate？
-
-## AI服务器
-
-AMD Instinct系列，大致对标NVIDIA DGX。
-
-官网：
-
-https://www.amd.com/zh-hans/graphics/instinct-server-accelerators
-
-![](/images/img5/AMD.jpg)
-
----
-
-https://zhuanlan.zhihu.com/p/434686566
-
-AMD CDNA2架构（MI200）
-
-https://www.zhihu.com/question/606505567
-
-如何看待AMD发布Instinct MI300X GPU芯片？是否在大模型时代威胁Nvidia地位?
-
-## 其他对标术语
-
-| AMD | NVIDIA |
-|:--:|:--:|
-| GCN wavefront(64 threads wide) | CUDA warp(32 threads wide) |
-
-## 参考
-
-![](/images/img5/AMD.png)
-
-罗家是台南水仙宫一带的世家。
-
----
-
-以前的算法比较简单，数据吞吐量小，AMD的短流水线渲染单元数量多所以效率高。到了Ethash这类重IO算法主流的年代，其实A卡效率还略有优势，但是没以前那么夸张，所以N卡也被拉出来挖。
-
----
-
-A卡的新驱动对于老游戏的支持有些差，解决办法：删除游戏目录下的dbghelp.dll文件。
-
----
-
-https://www.zhihu.com/question/593343983
-
-截至2023年4月，用AMD显卡做机器学习怎么样？
-
-https://zhuanlan.zhihu.com/p/651797296
-
-通过“最差实践”实验探索AMD GPU调度细节
+高通，玩转DSP和NPU

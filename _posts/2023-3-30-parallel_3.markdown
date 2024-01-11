@@ -35,6 +35,10 @@ https://github.com/microsoft/DeepSpeed
 
 https://www.deepspeed.ai
 
+DeepSpeed提供了PDSH、OpenMPI、MVAPICH三种方式在多机多卡模式下运行模型。
+
+PDSH：Parallel Distributed Shell
+
 参考：
 
 https://www.microsoft.com/en-us/research/blog/zero-deepspeed-new-system-optimizations-enable-training-models-with-over-100-billion-parameters

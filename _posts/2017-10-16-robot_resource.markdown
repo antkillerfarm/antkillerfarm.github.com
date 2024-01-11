@@ -77,6 +77,10 @@ https://mp.weixin.qq.com/s/7rz8QXPNda4PVs3KcweQMg
 
 ---
 
+智驾F4：地大华魔（地平线、大疆、华为、Momenta）
+
+---
+
 ![](/images/img2/ADAS.jpg)
 
 https://mp.weixin.qq.com/s/Okolok3ZLZhgw0TQ_TROKA

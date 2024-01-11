@@ -161,7 +161,7 @@ https://www.zhihu.com/question/561705498
 
 规划中的MidCat管道：7.5 BCM
 
-https://www.zhihu.com/question/551675061/
+https://www.zhihu.com/question/551675061
 
 想问下欧洲冬天到底多冷，没俄罗斯天然气就能冻死？
 
@@ -180,6 +180,10 @@ https://view.inews.qq.com/wxn/20221003A048FO00
 https://www.zhihu.com/question/582874371
 
 如何看待美国著名记者发文称“北溪管道系美军炸毁”?
+
+https://zhuanlan.zhihu.com/p/676950487
+
+俄罗斯威胁要冻结欧洲，但现在却冻结了自己（2024年1月10日）
 
 ---
 
