@@ -253,7 +253,23 @@ https://zhuanlan.zhihu.com/p/40805178
 
 ---
 
-PCSX2（PS2模拟器）
+PCSX2：PS2模拟器
+
+WinKawaks：街机模拟器
+
+MAME：老牌的多平台开源模拟器。但是使用不是很方便，我捣鼓半天也没弄好。
+
+Mednafen：新近流行的多平台开源模拟器。
+
+官网：
+
+https://mednafen.github.io
+
+但是这个软件是基于命令行的，所以一般需要使用mednaffe作为它的GUI前端。
+
+mednaffe官网：
+
+https://github.com/AmatCoder/mednaffe
 
 ## Other
 

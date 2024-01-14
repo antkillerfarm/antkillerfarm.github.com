@@ -151,6 +151,12 @@ ML编译器核心问题主要有三部分：auto-tensorize、auto-tiling和auto-
 
 ---
 
+High-level IR（图层IR），如XLA的HLO，TVM的Relay IR以及MindSpore的MindIR等，重点关注非循环相关的优化。除了传统编译器中常见的常量折叠、代数化简、公共子表达式等优化外，还会完成Layout转换，算子融合等优化，通过分析和优化现有网络计算图逻辑，对原有计算逻辑进行拆分、重组、融合等操作，以减少算子执行间隙的开销并且提升设备计算资源利用率，从而实现网络整体执行时间的优化。
+
+Low-level IR，如TVM的TIR，HalideIR，以及isl schedule tree等。针对Low-level IR主要有循环变换、循环切分等调度相关的优化，与硬件intrinsic映射、内存分配等后端pass优化。其中，当前的自动调度优化主要包含了基于搜索的自动调度优化（如ansor）和基于polyhedral编译技术的自动调度优化（如TC和MindAKG）。
+
+---
+
 ![](/images/img5/Dynamic_Shape_Compiler.jpg)
 
 https://zhuanlan.zhihu.com/p/305546437
@@ -386,61 +392,3 @@ x86一开始并没有使用太多的通用寄存器，原因之一（注意，�
 https://www.zhihu.com/question/24551779
 
 为什么ARM和MIPS那么多寄存器，x86那么少？
-
----
-
-https://mp.weixin.qq.com/s/MqfteZBSWbnBpHbFYw8Eqw
-
-如何编写一个简单的Python编译器
-
-https://zhuanlan.zhihu.com/p/28637279
-
-使用LLVM+PLY实现一个C语言子集的玩具编译器
-
-https://mp.weixin.qq.com/s/7wmBsJgPnOtPXcYaoQd1qA
-
-基于LLVM的源码级依赖分析方案的设计与实现
-
-https://mp.weixin.qq.com/s/vOJPxzH_1SUyXzNeE85zHQ
-
-编译器入门：没有siri的那些年，我们如何实现人机对话？
-
-https://zhuanlan.zhihu.com/p/66793637
-
-A Tour to LLVM IR（上）
-
-https://zhuanlan.zhihu.com/p/66909226
-
-A Tour to LLVM IR（下）
-
-https://mp.weixin.qq.com/s/4FJzxPyCmakjIU-9xlQmJQ
-
-阁下可知文言编程之精妙？CMU本科生开源文言文编程语言，数天2K星
-
-https://mp.weixin.qq.com/s/7PH8o1tbjLsM4-nOnjbwLw
-
-Java即时编译器原理解析及实践
-
-https://mp.weixin.qq.com/s/s2W_VVlS-UC8PaaVYJlNgw
-
-浅谈编译过程
-
-https://mp.weixin.qq.com/s/j8_8QwFnyOr66m9aekor1g
-
-用JS解释JS！详解AST及其应用
-
-https://zhuanlan.zhihu.com/p/471250907
-
-从零开始，写个编译器！
-
-https://www.zhihu.com/question/34619258
-
-现代c++编译器对临时对象做了怎样的优化？
-
-https://zhuanlan.zhihu.com/p/474324656
-
-我对深度学习编译器和框架的认识
-
-https://sunfishcode.github.io/blog/2018/10/22/Canonicalization.html
-
-Canonicalization

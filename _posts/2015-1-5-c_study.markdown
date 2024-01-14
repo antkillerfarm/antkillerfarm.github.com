@@ -281,6 +281,10 @@ https://www.boost.org/doc/libs/1_75_0/libs/preprocessor/doc/index.html
 
 The Boost Library Preprocessor Subset for C/C++
 
+# strtok
+
+strtok函数多用于分割字符串，但它会改变被分割字符串的值。因此，如果该字符串以后还有用的话，需要首先复制该字符串，然后对复制的字符串执行strtok函数。
+
 # C++ 11/14/17/20的新特性
 
 我是在2003年左右学习C++的，后来直到2009年以前，C++都是我的主要工作语言。但由于本人先学的C语言，所以编程的思想一直是函数式的。完成一项任务，无论用C、C++、Java、C#，还是Matlab、Python，风格都是差不多的。这也是后来我对GTK情有独钟的一个重要的原因。
@@ -370,26 +374,9 @@ C#
 `Func<int, int, int> towParams = (x, y) => x * y`
 
 ```cpp
-// before 
-int8_t (*CreateLonglink)(const std::string& name, const std::string& host,
- const std::vector<uint16_t> ports, const std::string& debugip)
- = +[](const std::string& name,
-                         const std::string& host,
-                         const std::vector<uint16_t> ports,
-                         const std::string& debugip)->int8_t{
-   
-    ...
-    return 0;
-};
-// after
-auto CreateLonglink= +[](const std::string& name,
-                         const std::string& host,
-                         const std::vector<uint16_t> ports,
-                         const std::string& debugip)->int8_t{
-   
-    ...
-    return 0;
-};
+// plus sign before lambda
+auto lambda = +[] (int a, int b) { return a + b; };
+// +[] means func pointer: int (func*)(int a, int b);
 ```
 
 5.列表初始化
