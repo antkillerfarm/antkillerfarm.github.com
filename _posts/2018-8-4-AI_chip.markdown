@@ -45,9 +45,7 @@ NN计算问题的瓶颈主要包括两类：
 
 http://www.deephi.com/
 
-它最近出了一套深度学习SDK：
-
-http://www.deephi.com/zh-cn/dnndk.html
+姚颂，1992年出生，2015年毕业于清华大学电子工程系。曾任深鉴科技创始人&CEO，现担任东方空间联合创始人&联席CEO。
 
 ---
 
