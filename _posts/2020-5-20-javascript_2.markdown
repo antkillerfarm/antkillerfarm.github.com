@@ -233,36 +233,6 @@ React中的Canvas动画
 
 对于同时支持HTTPS和HTTP的资源，引用的时候要把引用资源的URL里的协议头去掉，例如：//www.example.com/scirpt.js，这样相当于相对路径，即浏览器会自动根据当前是HTTPS还是HTTP来给资源URL补上协议头的，可以达到无缝切换。
 
-# JS引擎
-
-目前主要有Chrome使用的V8引擎和Safari使用的JavaScriptCore引擎。
-
-https://www.cnblogs.com/meituantech/p/9528285.html
-
-深入理解JSCore
-
-https://zhuanlan.zhihu.com/p/55479666
-
-JavaScriptCore全面解析
-
-# JS特效资料
-
-https://github.com/wagerfield/flat-surface-shader
-
-这个网站提供一种浮动的多边形表面的特效，适合作为登录页的背景。
-
-https://mp.weixin.qq.com/s/p8ll1R9aXc5aELtL3MAEcA
-
-用H5打造用户专属的3D机房（WebGL）
-
-https://github.com/hustcc/canvas-nest.js
-
-动态线条特效
-
-https://mp.weixin.qq.com/s/0dJeYLuXkmJpqvuNHx7L8A
-
-爆红Github！20多个练手前端小型项目的集合，随你造！
-
 # 小程序
 
 BOM（Browser Object Model）是指浏览器对象模型，它使JavaScript有能力与浏览器进行“对话”。例如查询浏览器的名称和浏览历史等。
@@ -280,6 +250,16 @@ DOM（Document Object Model）是指文档对象模型，通过它，可以访�
 各家的小程序虽然原理大同小异，但是写法有所不同，因此就产生了小程序的跨平台需求。
 
 主流的跨平台小程序框架有：Taro和uni-app。
+
+---
+
+PWA（Progressive Web Apps）：从Google 2015年推出这一技术标准以来，已经有不少应用服务推出了PWA版本应用，来让更多可以运行web网页的设备也能获得类似原生应用的使用体验。PWA可以看作是浏览器版本的小程序。
+
+https://zhuanlan.zhihu.com/p/362663779
+
+全平台的轻量体验：PWA使用指南及应用推荐
+
+---
 
 参考：
 
@@ -302,3 +282,15 @@ https://zhuanlan.zhihu.com/p/66113575
 https://zhuanlan.zhihu.com/p/55903320
 
 Taro vs uni-app选型对比
+
+https://mp.weixin.qq.com/s/rPZsFyJkoYjqwxjcMnivOQ
+
+微信小程序开发
+
+https://mp.weixin.qq.com/s/23YB5JyULJ1l08OJ7LeaGg
+
+微信小程序30分钟从陌生到熟悉（上）
+
+https://mp.weixin.qq.com/s/sYm-5jo-batq1fwv_tCmQw
+
+微信小程序30分钟从陌生到熟悉（下）

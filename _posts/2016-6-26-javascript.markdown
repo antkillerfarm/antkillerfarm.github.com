@@ -363,7 +363,7 @@ https://mp.weixin.qq.com/s/bgxkqnr-MPwsKDBicJIpgA
 
 2019.9
 
-最近心血来潮，翻出了本科时代的作业。其中有一个交通仿真的小demo，最早是用Java Applet写的。岂料，现在别说浏览器了，就连专门看这个的AppletViewer在新版SDK中，都不见踪影了。。。
+最近心血来潮，翻出了本科时代的作业。其中有一个交通仿真的小demo，最早是用Java Applet写的。岂料，现在别说浏览器了，就连专门看这个的AppletViewer在新版的JDK中，都不见踪影了。。。
 
 于是，只好做现代化移植。本来首选JavaFX的，不料刚开始写，就发现JavaFX对于多线程渲染做的很差，而这个Demo正是个多线程的版本。
 

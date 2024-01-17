@@ -89,6 +89,36 @@ http://maxima.sourceforge.net/
 
 # Javascript
 
+## JS引擎
+
+目前主要有Chrome使用的V8引擎和Safari使用的JavaScriptCore引擎。
+
+https://www.cnblogs.com/meituantech/p/9528285.html
+
+深入理解JSCore
+
+https://zhuanlan.zhihu.com/p/55479666
+
+JavaScriptCore全面解析
+
+## JS特效资料
+
+https://github.com/wagerfield/flat-surface-shader
+
+这个网站提供一种浮动的多边形表面的特效，适合作为登录页的背景。
+
+https://mp.weixin.qq.com/s/p8ll1R9aXc5aELtL3MAEcA
+
+用H5打造用户专属的3D机房（WebGL）
+
+https://github.com/hustcc/canvas-nest.js
+
+动态线条特效
+
+https://mp.weixin.qq.com/s/0dJeYLuXkmJpqvuNHx7L8A
+
+爆红Github！20多个练手前端小型项目的集合，随你造！
+
 ## WebAssembly
 
 WebAssembly，简称Wasm，是一种能在浏览器上执行的二进制虚拟机字节码。

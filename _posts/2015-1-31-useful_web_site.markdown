@@ -330,21 +330,9 @@ https://mp.weixin.qq.com/s/m15ZrDHeHjU6E_pTcRrdlg
 
 先过滤后解析：斯坦福开源数据解析引擎Sparser，解析提速22倍
 
-https://mp.weixin.qq.com/s/23YB5JyULJ1l08OJ7LeaGg
-
-微信小程序30分钟从陌生到熟悉（上）
-
-https://mp.weixin.qq.com/s/sYm-5jo-batq1fwv_tCmQw
-
-微信小程序30分钟从陌生到熟悉（下）
-
 https://mp.weixin.qq.com/s/6AfmiLRSUP819J43EwJBqA
 
 ORACLE ERP的前世今生
-
-https://mp.weixin.qq.com/s/rPZsFyJkoYjqwxjcMnivOQ
-
-微信小程序开发
 
 https://mp.weixin.qq.com/s/0QnH0F8JZQBsECoJeGqpsg
 

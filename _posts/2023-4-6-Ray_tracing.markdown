@@ -301,6 +301,10 @@ https://mp.weixin.qq.com/s/x4cz9mW1HOF8rtRv4uqLCQ
 
 门控相机：车载ADAS相机的未来？
 
+https://mp.weixin.qq.com/s/qtBGRvwr0-ykaZhn6nWsfA
+
+自动对焦技术的新发展
+
 # 俄乌战争+
 
 送前夫去前线，他被杀，孩子就有抚养费，这是公平的——俄罗斯妇女向征兵办举报前夫脱逃动员的故事
