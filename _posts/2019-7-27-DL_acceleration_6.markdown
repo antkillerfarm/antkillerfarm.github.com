@@ -9,7 +9,17 @@ category: DL acceleration
 
 # 模型压缩与加速
 
-## 权值稀疏化实战（续）
+## 权值稀疏化实战
+
+这里讲一下韩松论文提到的裁剪方法中，最简单的一种——“权值稀疏化“的工程实现细节。以darknet框架为例。
+
+1.在src/parser.c中找到save_XXX_weights函数。判断权值是否接近0，如果是，则强制设为0。
+
+2.使用修改后的weights进行re-train。训练好之后，重复第1、2步。
+
+3.反复多次之后，进入最终prune阶段。修改src/network.c:update_network，令其不更新0权值。
+
+>re-train时的learning rate一般不宜太大。如果出现re-train的效果，还不如直接prune的好，则多半是learning rate设置的问题。
 
 一般采用稀疏化率来描述权值的稀疏化程度。每层的稀疏化率可以相同，也可以不同。前者被称作Magnitude Pruner，而后者被称作Sensitivity Pruner。
 
@@ -272,35 +282,3 @@ https://zhuanlan.zhihu.com/p/51563760
 https://zhuanlan.zhihu.com/p/53864403
 
 知识蒸馏（Knowledge Distillation）最新进展（二）
-
-https://zhuanlan.zhihu.com/p/81467832
-
-知识蒸馏（Knowledge Distillation）简述（一）
-
-https://mp.weixin.qq.com/s/pXoENwz4Z-eok9y3P9rQvg
-
-知识蒸馏（Knowledge Distillation）简述（二）
-
-https://zhuanlan.zhihu.com/p/102038521
-
-知识蒸馏(Knowledge Distillation) 经典之作
-
-https://zhuanlan.zhihu.com/p/92166184
-
-知识蒸馏简述（一）
-
-https://zhuanlan.zhihu.com/p/92269636
-
-知识蒸馏简述（二）
-
-http://coderskychen.cn/2019/02/23/distilling/
-
-知识蒸馏三部曲：从模型蒸馏、数据蒸馏到任务蒸馏
-
-https://mp.weixin.qq.com/s/5_qgj33tyVTHivpXkU4LDw
-
-一个知识蒸馏的简单介绍
-
-https://zhuanlan.zhihu.com/p/93287223
-
-从入门到放弃：深度学习中的模型蒸馏技术

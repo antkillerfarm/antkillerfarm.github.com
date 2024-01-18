@@ -284,15 +284,3 @@ int8量化和tvm实现
 经过观察，在正态分布下，绝对值很大的参数的比例会很少，所以一起归一会使得大多数参数变得很小，从而使得量化过程中的一些数字范围对应的int8没有被充分利用，导致更多的信息丢失。
 
 把参数划分为了小Block，在进行量化的时候，按照block内绝对值最大的数对这个block进行归一化，使得所有参数都落在 [-1, 1] 这个范围，这就是Block-wise Quantization。
-
-## Trainning Quantization
-
-除了上面这些无条件Quantization之外，训练中的Quantization也是一大类算法。
-
-比如下面提到的PACT量化，不仅对weight进行量化，还通过不断训练，限制每一层tensor的数值范围。
-
-参考：
-
-https://mp.weixin.qq.com/s/7rMnzbvp1hjDLuw_oifbng
-
-我们是这样改进PACT量化算法的

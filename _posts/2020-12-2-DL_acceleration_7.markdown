@@ -9,6 +9,38 @@ category: DL acceleration
 
 # 知识蒸馏（续）
 
+https://zhuanlan.zhihu.com/p/81467832
+
+知识蒸馏（Knowledge Distillation）简述（一）
+
+https://mp.weixin.qq.com/s/pXoENwz4Z-eok9y3P9rQvg
+
+知识蒸馏（Knowledge Distillation）简述（二）
+
+https://zhuanlan.zhihu.com/p/102038521
+
+知识蒸馏(Knowledge Distillation) 经典之作
+
+https://zhuanlan.zhihu.com/p/92166184
+
+知识蒸馏简述（一）
+
+https://zhuanlan.zhihu.com/p/92269636
+
+知识蒸馏简述（二）
+
+http://coderskychen.cn/2019/02/23/distilling/
+
+知识蒸馏三部曲：从模型蒸馏、数据蒸馏到任务蒸馏
+
+https://mp.weixin.qq.com/s/5_qgj33tyVTHivpXkU4LDw
+
+一个知识蒸馏的简单介绍
+
+https://zhuanlan.zhihu.com/p/93287223
+
+从入门到放弃：深度学习中的模型蒸馏技术
+
 https://zhuanlan.zhihu.com/p/113549023
 
 浅谈知识蒸馏方法研究综述
@@ -312,85 +344,3 @@ TensorFlow模型优化工具包—训练时量化
 https://mp.weixin.qq.com/s/fa5S3o1somvdAAJF1FGqvA
 
 TensorFlow模型优化工具包正式推出
-
-# 模型压缩与加速进阶
-
-https://zhuanlan.zhihu.com/p/138059904
-
-一文看懂深度学习模型压缩和加速
-
-https://zhuanlan.zhihu.com/p/179945324
-
-一文深入深度学习模型压缩和加速
-
-https://mp.weixin.qq.com/s/QSGgvhkMUj3cXVlQwlzTFQ
-
-深度神经网络加速和压缩新进展年度报告
-
-https://zhuanlan.zhihu.com/p/37074222
-
-CVPR 2018 高效小网络探密（上）
-
-https://zhuanlan.zhihu.com/p/37919669
-
-CVPR 2018 高效小网络探密（下）
-
-https://zhuanlan.zhihu.com/p/38046989
-
-从ISCA论文看AI硬件加速的新技巧
-
-https://mp.weixin.qq.com/s/s6Z8P8bUkyoKU2mW3z-rNQ
-
-轻量级网络/检测/分割综述
-
-https://mp.weixin.qq.com/s/-V6hlZAKp1vuARSibZDBQQ
-
-深度学习高效计算与处理器设计
-
-https://mp.weixin.qq.com/s/ccFccLb2UTyFyMwFPjsDaA
-
-让CNN跑得更快，腾讯优图提出全局和动态过滤器剪枝
-
-https://mp.weixin.qq.com/s/cSYCT1I1asaSCIc5Hgu0Jw
-
-计算成本降低35倍！谷歌发布手机端自动设计神经网络MnasNet
-
-https://zhuanlan.zhihu.com/p/42474017
-
-MnasNet：终端轻量化模型新思路
-
-https://mp.weixin.qq.com/s/p_qdKcQwQ8y_JUw3gQUEnA
-
-谷歌大脑用强化学习为移动设备量身定做最好最快的CNN模型
-
-https://mp.weixin.qq.com/s/OyEIcS5o6kWUu2UzuWZi3g
-
-这么Deep且又轻量的Network，实时目标检测
-
-https://mp.weixin.qq.com/s/8NDOf_8qxMMpcuXIZGJCGg
-
-Google又发大招：高效实时实现视频目标检测
-
-https://mp.weixin.qq.com/s/IxVMMu_7UL5zFsDCcYfzYA
-
-AutoML自动模型压缩再升级，MIT韩松团队利用强化学习全面超越手工调参
-
-https://mp.weixin.qq.com/s/BMsvhXytSy2nWIsGOSOSBQ
-
-自动生成高效DNN，适用于边缘设备的生成合成工具FermiNets
-
-https://mp.weixin.qq.com/s/nEMvoiqImd0RxrskIH7c9A
-
-仅17KB、一万个权重的微型风格迁移网络！
-
-https://mp.weixin.qq.com/s/pc8fJx5StxnX9it2AVU5NA
-
-基于手机系统的实时目标检测
-
-https://mp.weixin.qq.com/s/6wzmyhIvUVeAN4Xjfhb1Yw
-
-论文解读：Channel pruning for Accelerating Very Deep Neural Networks
-
-https://mp.weixin.qq.com/s/-X7NYTzOzljzOaQL7_jOkw
-
-惊呆了！速度高达15000fps的人脸检测算法！

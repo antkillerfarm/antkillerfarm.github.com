@@ -9,6 +9,28 @@ category: DL acceleration
 
 # NN Quantization（续）
 
+## Trainning Quantization
+
+除了上面这些无条件Quantization之外，训练中的Quantization也是一大类算法。
+
+比如下面提到的PACT量化，不仅对weight进行量化，还通过不断训练，限制每一层tensor的数值范围。
+
+参考：
+
+https://mp.weixin.qq.com/s/7rMnzbvp1hjDLuw_oifbng
+
+我们是这样改进PACT量化算法的
+
+## 双重量化
+
+过去的量化算法每一层额外附带两个参数，现在的量化算法一般采用了分组量化的方式。例如，取128个参数作为一组，每一组都会额外增加两个参数。
+
+量化参数（最小值、缩放比例）本身还能再进行量化，称为双重量化。QLoRA采用了这种方式。
+
+https://zhuanlan.zhihu.com/p/665601576
+
+用bitsandbytes、4比特量化和QLoRA打造亲民的LLM
+
 ## 量化技巧
 
 1.设计模型时，需要对输入进行归一化，缩小输入值的值域范围，以减小量化带来的精度损失。
@@ -308,15 +330,3 @@ https://www.zhihu.com/question/62068158
 https://mp.weixin.qq.com/s/wOaCjSifZqkndaGbst1-aw
 
 一文带你了解NeurlPS2020的模型剪枝研究
-
-## 权值稀疏化实战
-
-这里讲一下韩松论文提到的裁剪方法中，最简单的一种——“权值稀疏化“的工程实现细节。以darknet框架为例。
-
-1.在src/parser.c中找到save_XXX_weights函数。判断权值是否接近0，如果是，则强制设为0。
-
-2.使用修改后的weights进行re-train。训练好之后，重复第1、2步。
-
-3.反复多次之后，进入最终prune阶段。修改src/network.c:update_network，令其不更新0权值。
-
->re-train时的learning rate一般不宜太大。如果出现re-train的效果，还不如直接prune的好，则多半是learning rate设置的问题。
