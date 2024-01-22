@@ -251,24 +251,6 @@ https://zhuanlan.zhihu.com/p/602458131
 
 ---
 
-国内某牛的山寨版本：
-
-https://zhuanlan.zhihu.com/p/605425639
-
-RWKV 14B对比GLM 130B和NeoX 20B，展示RWKV的性能
-
-代码：
-
-https://github.com/BlinkDL/ChatRWKV
-
-RWKV没有使用attention，而是号称100% RNN。
-
-RNN-based没有attention之类机制的模型是怎么获得long memory的能力的啊？
-
-这个形式就是Transformers are RNNs的形式，只不过把Q换成了positional invariant的time weighting。最近很多work都显示Attention里的Q其实没啥用，换成一个跟着相对位置exponential decay的term就行了。
-
----
-
 参考：
 
 https://zhuanlan.zhihu.com/p/590655677
@@ -388,3 +370,5 @@ DeepSpeed-Chat开源了
 微软内部之前有个类似ChatGPT的项目，叫微软小冰，几个负责人都是那种技术栈和技术思路非常老旧的老人，在微软内部吸血吸了很多年，微软后来体面的裁掉了这个团队，转头去投了OpenAI 10亿美金。
 
 这个被裁团队出来之后，一阵包装，说是微软为了他们更好的发展，所以让他们独立出来，然后去VC那融了好多钱。就在去年12月份，投资人纷纷对比了ChatGPT和小冰的智能化程度。对比效果简直辣眼睛，小冰那也叫智能？
+
+小冰的技术原理，走的是传统NLP原理那一套，已经过时了，没有使用深度学习，基于知识图谱回答，学习的知识非常有限。

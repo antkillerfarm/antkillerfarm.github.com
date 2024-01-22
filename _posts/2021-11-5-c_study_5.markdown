@@ -301,6 +301,10 @@ std::cout << a << "," << str << std::endl;
 
 # 有价值的C/C++库
 
+https://github.com/fffaraz/awesome-cpp
+
+一个专门收集各种C/C++库的网页
+
 https://github.com/gabime/spdlog
 
 一个C++的log库

@@ -173,6 +173,8 @@ https://zhuanlan.zhihu.com/p/545979187
 
 ---
 
+2014.5.26～2015.1.20 顿涅茨克机场保卫战。
+
 他们决定高唱着乌克兰国歌《乌克兰仍在人间》，骂着普京死战到底。
 
 2017年，这群悍汉的故事拍摄成电影《机械钢骨：英雄不死(Cyborgs: Heroes Never Die)》。
@@ -180,6 +182,10 @@ https://zhuanlan.zhihu.com/p/545979187
 https://mp.weixin.qq.com/s/ommR-5zMvYvFiGodVZxBLw
 
 顿涅茨克机场守城战：乌克兰版《八佰》
+
+https://zhuanlan.zhihu.com/p/540822861
+
+决战顿涅茨克机场：攻坚现代建筑经典之战，乌军战斗惨状触动国民
 
 ---
 

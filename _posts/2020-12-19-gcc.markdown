@@ -214,6 +214,10 @@ https://mp.weixin.qq.com/s/y3c07Hk7g3P-rd0oDzszlA
 
 GDB底层实现原理
 
+https://zhuanlan.zhihu.com/p/678879367
+
+GDB高级技巧：Linux多线程调试没那么难，可别再用printf了
+
 ## rr
 
 逆向调试，不是逆向工程的逆向，而是在debug的时候，需要退回到过去，比如还想再看看这个函数是如何计算的，但是又不想重新启动程序，或者重新复现。这里的退回到过去，就是逆向。

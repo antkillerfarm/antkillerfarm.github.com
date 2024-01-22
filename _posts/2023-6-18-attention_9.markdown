@@ -9,6 +9,42 @@ category: Attention
 
 # BERT进阶（续）
 
+https://zhuanlan.zhihu.com/p/113326366
+
+如何训练并使用Bert
+
+https://mp.weixin.qq.com/s/dmHxEkmVFXcCGhv8eH91Tw
+
+从Word2Vec到BERT:上下文嵌入(Contextual Embedding)最新综述论文
+
+https://mp.weixin.qq.com/s/g6-NjoFMPpxjsh38X-wTFQ
+
+BERT，GPT-2这些顶尖工具到底该怎么用到我的模型里?
+
+https://mp.weixin.qq.com/s/N6xBFZ82dkSGCbj6vC5nLQ
+
+上下文预训练模型最全整理：原理、应用、开源代码、数据分享
+
+https://mp.weixin.qq.com/s/-6XpuO7_ve_EdSPCMeWE7g
+
+Attention isn’t all you need！BERT的力量之源远不止注意力
+
+https://mp.weixin.qq.com/s/Y2bs2QegRadSR7lbiFFnWg
+
+BERT一作Jacob Devlin斯坦福演讲PPT：BERT介绍与答疑
+
+https://zhuanlan.zhihu.com/p/62308732
+
+浅谈Bert：语言理解中的预训练编码器
+
+https://mp.weixin.qq.com/s/1Cz6js4kYdvc8g4oKjVPeA
+
+BERT烹饪之法：fintune的艺术
+
+https://mp.weixin.qq.com/s/nVM2Kxc_Mn7BAC6-Pig2Uw
+
+BERT模型的标准调优和花式调优
+
 https://mp.weixin.qq.com/s/FwmEIZ3ugeZBbLIGHmH-_g
 
 BERT之后，GLUE基准升级为SuperGLUE：难度更大
@@ -366,35 +402,3 @@ https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ
 https://mp.weixin.qq.com/s/FlA1YrR0sLQGJoJZnSXpRw
 
 DeepMind：深度学习注意力与记忆机制，附70页ppt
-
-https://mp.weixin.qq.com/s/_mBa-GTdILrvluJtegz8fw
-
-南洋理工大学：注意力神经网络，Attention Neural Networks，78页ppt
-
-https://mp.weixin.qq.com/s/pKxqPB9qIGmE_PslPa6EyA
-
-长文详解Attention的前世今生
-
-https://mp.weixin.qq.com/s/2kFZAmb_WnTNYUXT_jVMqg
-
-Attention注意力机制的前世今生
-
-https://mp.weixin.qq.com/s/eq1iTyKguQm5t6Xoc7KUgw
-
-一文搞懂NLP中的Attention机制
-
-https://zhuanlan.zhihu.com/p/106662375
-
-More About Attention
-
-https://mp.weixin.qq.com/s/MFxQSUMFNRXjdLQwzveO4w
-
-深度学习中的注意力机制
-
-https://mp.weixin.qq.com/s/vkyPwsaxH-SvHqQx09VhVw
-
-深度学习中的注意力机制（二）
-
-https://mp.weixin.qq.com/s/fbAAA7fO2voP_v-NsavQew
-
-深度学习中的注意力机制（三）

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（八）——BERT进阶
+title:  Attention（八）——Beyond Transformer, BERT进阶
 category: Attention 
 ---
 
@@ -82,6 +82,28 @@ https://zhuanlan.zhihu.com/p/638809556
 https://zhuanlan.zhihu.com/p/651564985
 
 主流大语言模型从预训练到微调的技术原理
+
+# Beyond Transformer
+
+https://zhuanlan.zhihu.com/p/605425639
+
+RWKV 14B对比GLM 130B和NeoX 20B，展示RWKV的性能
+
+代码：
+
+https://github.com/BlinkDL/ChatRWKV
+
+RWKV没有使用attention，而是号称100% RNN。
+
+RNN-based没有attention之类机制的模型是怎么获得long memory的能力的啊？
+
+这个形式就是Transformers are RNNs的形式，只不过把Q换成了positional invariant的time weighting。最近很多work都显示Attention里的Q其实没啥用，换成一个跟着相对位置exponential decay的term就行了。
+
+---
+
+https://blog.csdn.net/v_JULY_v/article/details/134923301
+
+一文通透想颠覆Transformer的Mamba：从SSM、S4到mamba、线性transformer(含RWKV解析)
 
 # BERT进阶
 
@@ -312,39 +334,3 @@ https://mp.weixin.qq.com/s/V4pbjP5na1OYp-TorUik8g
 https://mp.weixin.qq.com/s/s5YIG6rBEy6fZkFLh-CzoA
 
 后BERT时代生存指南之VL-BERT篇
-
-https://zhuanlan.zhihu.com/p/113326366
-
-如何训练并使用Bert
-
-https://mp.weixin.qq.com/s/dmHxEkmVFXcCGhv8eH91Tw
-
-从Word2Vec到BERT:上下文嵌入(Contextual Embedding)最新综述论文
-
-https://mp.weixin.qq.com/s/g6-NjoFMPpxjsh38X-wTFQ
-
-BERT，GPT-2这些顶尖工具到底该怎么用到我的模型里?
-
-https://mp.weixin.qq.com/s/N6xBFZ82dkSGCbj6vC5nLQ
-
-上下文预训练模型最全整理：原理、应用、开源代码、数据分享
-
-https://mp.weixin.qq.com/s/-6XpuO7_ve_EdSPCMeWE7g
-
-Attention isn’t all you need！BERT的力量之源远不止注意力
-
-https://mp.weixin.qq.com/s/Y2bs2QegRadSR7lbiFFnWg
-
-BERT一作Jacob Devlin斯坦福演讲PPT：BERT介绍与答疑
-
-https://zhuanlan.zhihu.com/p/62308732
-
-浅谈Bert：语言理解中的预训练编码器
-
-https://mp.weixin.qq.com/s/1Cz6js4kYdvc8g4oKjVPeA
-
-BERT烹饪之法：fintune的艺术
-
-https://mp.weixin.qq.com/s/nVM2Kxc_Mn7BAC6-Pig2Uw
-
-BERT模型的标准调优和花式调优

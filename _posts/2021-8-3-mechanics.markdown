@@ -27,6 +27,8 @@ VT引信的工作原理如下：
     <source src="/images/img4/gun.mp4" type='video/mp4' />
 </video>
 
+![](/images/img5/gun.webp)
+
 ![](/images/img4/AK47.jpg)
 
 92式重机枪：于1932年开始列装，而那一年是日本神武历2592年。99式步枪、96式轻机枪也是按照这种规则命名的。

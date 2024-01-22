@@ -169,6 +169,14 @@ Multisample anti-aliasing, MSAA
 
 计算机系统架构模拟器gem5。
 
+https://zhuanlan.zhihu.com/p/487737252
+
+gem5模拟器入门
+
+https://zhuanlan.zhihu.com/p/678502885
+
+从零开始实现GameBoy模拟器
+
 ## 多核
 
 SMP(Symmetric Multiprocessing)架构：即多处理器架构，是目前最常见的多处理器计算机架构。

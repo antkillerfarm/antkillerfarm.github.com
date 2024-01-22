@@ -77,6 +77,10 @@ https://mp.weixin.qq.com/s/7rz8QXPNda4PVs3KcweQMg
 
 ---
 
+Tier 1：博世，大陆，采埃孚，博格华纳。
+
+---
+
 智驾F4：地大华魔（地平线、大疆、华为、Momenta）
 
 ---

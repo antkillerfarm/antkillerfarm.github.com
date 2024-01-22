@@ -185,6 +185,38 @@ U²-Net：使用显著性物体检测来生成真实的铅笔肖像画
 
 # Attention进阶+
 
+https://mp.weixin.qq.com/s/_mBa-GTdILrvluJtegz8fw
+
+南洋理工大学：注意力神经网络，Attention Neural Networks，78页ppt
+
+https://mp.weixin.qq.com/s/pKxqPB9qIGmE_PslPa6EyA
+
+长文详解Attention的前世今生
+
+https://mp.weixin.qq.com/s/2kFZAmb_WnTNYUXT_jVMqg
+
+Attention注意力机制的前世今生
+
+https://mp.weixin.qq.com/s/eq1iTyKguQm5t6Xoc7KUgw
+
+一文搞懂NLP中的Attention机制
+
+https://zhuanlan.zhihu.com/p/106662375
+
+More About Attention
+
+https://mp.weixin.qq.com/s/MFxQSUMFNRXjdLQwzveO4w
+
+深度学习中的注意力机制
+
+https://mp.weixin.qq.com/s/vkyPwsaxH-SvHqQx09VhVw
+
+深度学习中的注意力机制（二）
+
+https://mp.weixin.qq.com/s/fbAAA7fO2voP_v-NsavQew
+
+深度学习中的注意力机制（三）
+
 https://mp.weixin.qq.com/s/CftkSOmAx0UTtCixdxj6_A
 
 深度学习中的注意力机制（完结篇）
