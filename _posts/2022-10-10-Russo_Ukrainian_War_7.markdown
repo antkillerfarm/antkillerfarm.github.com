@@ -135,6 +135,14 @@ https://zhuanlan.zhihu.com/p/479483317
 
 魔鬼的奴仆：战争将乌克兰的亲俄派推到悬崖边上
 
+---
+
+Mariana Bezuhla，女，乌克兰国家安全、国防和情报委员会的副主席。
+
+https://zhuanlan.zhihu.com/p/679034693
+
+Babel有关贝祖赫拉的报道
+
 ## 顿巴斯战争
 
 ![](/images/img4/Kyiv.jpg)
