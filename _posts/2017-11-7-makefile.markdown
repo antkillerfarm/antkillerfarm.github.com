@@ -164,6 +164,38 @@ premake的缺点在于，它基本上是个人作品，全职开发人员太少�
 
 # LLVM+
 
+## 常用命令
+
+C源码转换为LLVM IR:
+
+`clang -emit-llvm -S test.c -o test.ll`
+
+LLVM IR转换为LLVM字节码：
+
+`llvm-as test.ll -o test.bc`
+
+链接LLVM字节码文件：
+
+`llvm-link test1.bc test2.bc -o output.bc`
+
+LLVM字节码转换为机器汇编码：
+
+`llc test.bc -o test.s`
+
+优化器opt，优化LLVM IR：
+
+`opt --passname input.ll -o output.ll`
+
+.c --frontend--> AST --frontend--> LLVM IR --LLVM opt--> LLVM IR --LLVM llc--> .s Assembly --OS Assembler--> .o --OS Linker--> executable
+
+https://zhuanlan.zhihu.com/p/161626997
+
+LLVM架构简介
+
+https://blog.csdn.net/weixin_46222091/article/details/104501879
+
+llvm常用工具的使用详解
+
 ## 编译
 
 ```bash

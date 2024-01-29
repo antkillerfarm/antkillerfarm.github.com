@@ -108,6 +108,24 @@ https://zhuanlan.zhihu.com/p/145263213
 
 有的时候会遇到`-Werror=XXXX`这样的编译错误，如果确实不想改代码的话，可以用`-Wno-error=XXXX`或者`-Wno-XXXX`来回避之。
 
+## 编译优化
+
+查看当前版本gcc编译器开了哪些编译优化，使用命令：
+
+`gcc/g++ -Q -O2 --help=optimizers`
+
+查看向量优化信息：
+
+`g++ -fopt-info-vec-optimized main.cpp -O3`
+
+优化选项开关：
+
+以`-ftree-loop-vectorize`为例，`-f`表示打开某选项，改成`-fno-`前缀就是关闭。
+
+https://mp.weixin.qq.com/s/asjPNb_SXF5guNIcdduHmQ
+
+从一个crash问题展开，探索gcc编译优化
+
 ## nm和readelf
 
 这两个命令都可以查看可执行文件的符号表。
@@ -341,35 +359,3 @@ LLVM主要专注于后端的代码生成。Chris Lattner还开发了前端项目
 https://zhuanlan.zhihu.com/p/357803433
 
 详解三大编译器：gcc、llvm和clang
-
-## 常用命令
-
-C源码转换为LLVM IR:
-
-`clang -emit-llvm -S test.c -o test.ll`
-
-LLVM IR转换为LLVM字节码：
-
-`llvm-as test.ll -o test.bc`
-
-链接LLVM字节码文件：
-
-`llvm-link test1.bc test2.bc -o output.bc`
-
-LLVM字节码转换为机器汇编码：
-
-`llc test.bc -o test.s`
-
-优化器opt，优化LLVM IR：
-
-`opt --passname input.ll -o output.ll`
-
-.c --frontend--> AST --frontend--> LLVM IR --LLVM opt--> LLVM IR --LLVM llc--> .s Assembly --OS Assembler--> .o --OS Linker--> executable
-
-https://zhuanlan.zhihu.com/p/161626997
-
-LLVM架构简介
-
-https://blog.csdn.net/weixin_46222091/article/details/104501879
-
-llvm常用工具的使用详解
