@@ -209,6 +209,10 @@ https://mp.weixin.qq.com/s/J11lDgGsYXLgT7jXmRQtAA
 
 地球上最先进的麦克风，居是苍蝇耳朵
 
+https://zhuanlan.zhihu.com/p/678715752
+
+音频算法之音频预处理
+
 # Video
 
 ## WebRTC
