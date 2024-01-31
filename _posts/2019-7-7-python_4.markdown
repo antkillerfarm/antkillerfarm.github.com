@@ -198,16 +198,6 @@ https://github.com/pybind/cmake_example
 
 ---
 
-有时候conda环境里使用的gcc版本，和本地的gcc版本有差异，会导致编译产生的py库，有一些问题：
-
-https://blog.csdn.net/weixin_39379635/article/details/129159713
-
-如何解决version `GLIBCXX_3.4.29‘ not found的问题
-
-类似的，还有库找不到的问题，一般用LD_LIBRARY_PATH解决之。
-
----
-
 参考：
 
 https://github.com/tensorflow/community/blob/master/rfcs/20190208-pybind11.md

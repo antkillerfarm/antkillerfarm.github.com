@@ -174,6 +174,43 @@ Large Scale Training of Hugging Face Transformers on TPUs With PyTorch/XLA FSDP
 
 ---
 
+有时候conda环境里使用的gcc版本，和本地的gcc版本有差异，会导致编译产生的py库，有一些问题：
+
+https://blog.csdn.net/weixin_39379635/article/details/129159713
+
+如何解决version `GLIBCXX_3.4.29‘ not found的问题
+
+类似的，还有库找不到的问题，一般用LD_LIBRARY_PATH解决之。
+
+---
+
+https://blog.csdn.net/qq_40329272/article/details/111801695
+
+undefined symbol:_ZN5torchXXXX
+
+---
+
+打印网络信息：
+
+torch_xla/torch_xla/core/dynamo_bridge.py:
+
+`def extract_compiled_graph(xla_model: torch.fx.GraphModule, xla_args):`
+
+To print a tabular representation of the graph, use:
+
+`xla_model.graph.print_tabular()`
+
+To get a SVG visualization of the graph, use:
+
+```python
+from torch.fx.passes.graph_drawer import FxGraphDrawer
+drawer = FxGraphDrawer(xla_model, "model_name")
+with open(f"svg/save/dir/{drawer._name}.svg", mode="wb") as f:
+    f.write(drawer.get_dot_graph().create_svg())
+```
+
+---
+
 参考：
 
 https://pytorch.org/blog/pytorch-2.0-xla/
@@ -360,31 +397,3 @@ MarkForCompilationPass
 https://blog.csdn.net/weixin_41644391/article/details/120949032
 
 EncapsulateSubgraphsPass
-
-## Grappler
-
-Grappler是TensorFlow运行时中的默认计算图优化系统。
-
-Grappler生成的计算图，会做为XLA的输入。
-
-https://www.tensorflow.org/guide/graph_optimization
-
-使用Grappler优化TensorFlow计算图
-
-https://blog.csdn.net/gaofeipaopaotang/article/details/80621902
-
-模型优化之Grappler
-
-## 代码生成
-
-如果是CPU/GPU的话，一般会用LLVM生成代码。
-
-xla.cpu.IrEmitter，将xla.HloModule中的每个xla.HloComputation转化为llvm IR表示，并创建对应的llvm.Module。
-
-如果是DSA的话，一般采用直接代理HLO IR的模式。
-
-xla.DfsHloVisitorBase会遍历整个Cluster。
-
-## Other
-
-XLA在内的主流深度学习框架，都是基于Static Shape语义的编译器框架。即，just-in-time运行的编译器，会在运行时捕捉待编译子图的实际输入shape组合，并且为每一个输入shape组合生成一份编译结果。
