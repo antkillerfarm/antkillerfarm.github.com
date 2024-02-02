@@ -108,6 +108,10 @@ Anaconda同时也支持多个Python版本的并存和切换。它的底层用到
 
 >也可能是`~/.conda/envs`
 
+删除env：
+
+`conda remove -n python2 --all`
+
 显示env：
 
 `conda env list`
@@ -164,6 +168,24 @@ Anaconda多环境多版本python配置指导
 https://mp.weixin.qq.com/s/i4oUKZXAUMLGaRpJVmT1ZQ
 
 一行命令装下所有“炼丹”工具及依赖项，就靠这个免费软件源了
+
+## mamba
+
+Anaconda和Miniconda是一个公司的产品，商用是付费的，个人暂时免费；而Miniforge是由社区主导，用GitHub托管，完全免费。
+
+代码：
+
+https://github.com/conda-forge/miniforge
+
+文档：
+
+https://mamba.readthedocs.io/en/latest/
+
+参考：
+
+https://zhuanlan.zhihu.com/p/518926990
+
+一文解释 conda,pip,anaconda,miniconda,miniforge
 
 ## virtualenv
 
@@ -407,57 +429,3 @@ SciPy稀疏矩阵
 https://mp.weixin.qq.com/s/5g1WgWEOkA-38MXbkKUtWg
 
 Scipy使用大全
-
-## sklearn
-
-Scikit-learn提供了常见的机器学习算法的实现。
-
-安装：
-
-`pip install scikit-learn`
-
->注：`sklearn`似乎是另外的包。
-
-官网：
-
-http://scikit-learn.org/stable/index.html
-
-教程：
-
-http://scikit-learn.org/stable/user_guide.html
-
-API参考：
-
-http://scikit-learn.org/stable/tutorial/index.html
-
-http://scikit-learn.org/stable/modules/classes.html
-
-中文文档：
-
-http://sklearn.apachecn.org
-
-参考：
-
-https://mp.weixin.qq.com/s/OHfQtJWq0wkF6BLkRWOAyw
-
-sklearn与分类算法
-
-https://mp.weixin.qq.com/s/OxNj9fWaEMh8SuQiK52HWg
-
-sklearn中PCA库讲解与实战
-
-https://mp.weixin.qq.com/s/JjJcyAccRc84U8C_qllf_Q
-
-如何用sklearn创建机器学习分类器？
-
-https://mp.weixin.qq.com/s/JkyJMKyDAaiX2M58PnWXaA
-
-如何使用sklearn优雅地进行数据挖掘？
-
-https://mp.weixin.qq.com/s/G5P0M-WGV_rMmHJE8lz6WQ
-
-Scikit-Learn决策树算法类库使用小结
-
-https://mp.weixin.qq.com/s/O1wPvi_aKK73yJcUpDf6EQ
-
-开源sk-dist，超参数调优仅需3.4秒，sk-learn训练速度提升100倍

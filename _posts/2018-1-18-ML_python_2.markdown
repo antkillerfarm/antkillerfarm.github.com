@@ -9,6 +9,60 @@ category: AI
 
 # Machine Learning之Python篇
 
+## sklearn
+
+Scikit-learn提供了常见的机器学习算法的实现。
+
+安装：
+
+`pip install scikit-learn`
+
+>注：`sklearn`似乎是另外的包。
+
+官网：
+
+http://scikit-learn.org/stable/index.html
+
+教程：
+
+http://scikit-learn.org/stable/user_guide.html
+
+API参考：
+
+http://scikit-learn.org/stable/tutorial/index.html
+
+http://scikit-learn.org/stable/modules/classes.html
+
+中文文档：
+
+http://sklearn.apachecn.org
+
+参考：
+
+https://mp.weixin.qq.com/s/OHfQtJWq0wkF6BLkRWOAyw
+
+sklearn与分类算法
+
+https://mp.weixin.qq.com/s/OxNj9fWaEMh8SuQiK52HWg
+
+sklearn中PCA库讲解与实战
+
+https://mp.weixin.qq.com/s/JjJcyAccRc84U8C_qllf_Q
+
+如何用sklearn创建机器学习分类器？
+
+https://mp.weixin.qq.com/s/JkyJMKyDAaiX2M58PnWXaA
+
+如何使用sklearn优雅地进行数据挖掘？
+
+https://mp.weixin.qq.com/s/G5P0M-WGV_rMmHJE8lz6WQ
+
+Scikit-Learn决策树算法类库使用小结
+
+https://mp.weixin.qq.com/s/O1wPvi_aKK73yJcUpDf6EQ
+
+开源sk-dist，超参数调优仅需3.4秒，sk-learn训练速度提升100倍
+
 ## Matplotlib
 
 Matplotlib是一个高阶的图形库，主要提供生成图表等数据可视化方面的功能。
@@ -383,32 +437,6 @@ https://www.zhihu.com/answer/2526455583
 
 为什么很多人宁愿excel贼6，也不愿意去用python？
 
-## Super Pandas
-
-https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw
-
-如何用一行代码在多CPU环境下高效并行Pandas（pandarallel）
-
-https://mp.weixin.qq.com/s/XIQ5EpQcYLxmRBuaTCZFzg
-
-一行代码，Pandas秒变分布式，快速处理TB级数据（Pandas on Ray）
-
-https://mp.weixin.qq.com/s/Jkx1K7d1ufD2S6s2cOA7Hw
-
-如何只用一行代码让Pandas加速四倍？（Modin）
-
-https://mp.weixin.qq.com/s/UJ7P6nrBijidW3U2ApMGEQ
-
-Vaex：突破pandas，快速分析100GB大数据集
-
-https://mp.weixin.qq.com/s/CurxDz9DcJhyj-kbnuhXJA
-
-0.052秒打开100GB数据，这个Python开源库火爆了！
-
-https://mp.weixin.qq.com/s/iBCYfvSJeRyKLmnKgwnTRg
-
-有比Pandas更好的替代吗?对比Vaex, Dask, PySpark, Modin和Julia
-
 ## datatable
 
 datatable相当于高级版的Pandas。
@@ -428,25 +456,3 @@ https://datatable.readthedocs.io/en/latest/
 https://mp.weixin.qq.com/s/oVHxYRMzJtD5t79uJ5jgWw
 
 媲美Pandas？一文入门Python的Datatable操作
-
-## DASK
-
-Dask是一款用于分析计算的灵活并行计算库。
-
-官网：
-
-https://dask.org/
-
-## mysql
-
-http://www.runoob.com/python/python-mysql.html
-
-python操作mysql数据库
-
-## TuShare
-
-TuShare是一个免费、开源的python财经数据接口包。主要实现对股票等金融数据从数据采集、清洗加工到数据存储的过程，能够为金融分析人员提供快速、整洁、和多样的便于分析的数据，为他们在数据获取方面极大地减轻工作量，使他们更加专注于策略和模型的研究与实现上。
-
-官网：
-
-http://tushare.org/

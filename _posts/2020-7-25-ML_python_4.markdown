@@ -67,6 +67,58 @@ https://mp.weixin.qq.com/s/_ZkiHnHEXs93Bz_ugt4FMg
 
 浪漫的形式有100种，单身的就1种！
 
+## DASK
+
+Dask是一款用于分析计算的灵活并行计算库。
+
+官网：
+
+https://dask.org/
+
+## mysql
+
+http://www.runoob.com/python/python-mysql.html
+
+python操作mysql数据库
+
+## TuShare
+
+TuShare是一个免费、开源的python财经数据接口包。主要实现对股票等金融数据从数据采集、清洗加工到数据存储的过程，能够为金融分析人员提供快速、整洁、和多样的便于分析的数据，为他们在数据获取方面极大地减轻工作量，使他们更加专注于策略和模型的研究与实现上。
+
+官网：
+
+http://tushare.org/
+
+## Autograd
+
+一个基于numpy的自动求导库。它是由Harvard Intelligent Probabilistic Systems Group开发的。
+
+官网：
+
+https://github.com/HIPS/autograd
+
+## Face Recognition
+
+这是一个人脸识别的软件包。
+
+代码：
+
+https://github.com/ageitgey/face_recognition
+
+参考：
+
+https://mp.weixin.qq.com/s/QcMsSsZY7TcNQ3G57p8eyQ
+
+3行Python代码完成人脸识别
+
+## Luminoth
+
+Luminoth是一个开源的计算机视觉工具包，目前支持目标探测和图像分类，但以后会有更多的扩展。该工具包在TensorFlow和Sonnet上用Python搭建而成。
+
+代码：
+
+https://github.com/tryolabs/luminoth
+
 ## 参考
 
 https://mp.weixin.qq.com/s/S7gnAdekPFcyd4ni1m9phg
@@ -368,47 +420,3 @@ Python代码和贝叶斯理论告诉你，谁是最好的棒球选手
 https://mp.weixin.qq.com/s/NIOLuK8-ctvncglmpIOEhQ
 
 用Python入门不明觉厉的马尔可夫链蒙特卡罗
-
-https://mp.weixin.qq.com/s/Ljo36772QTUDKuRrxIRmmw
-
-100多个Jupyter精选资源，有人整理在一个GitHub项目里！
-
-https://mp.weixin.qq.com/s/8XDXgIm-Zcb3dL-2h9eSjA
-
-用Python构建NLP Pipeline，从思路到具体代码，这篇文章一次性都讲到了
-
-https://mp.weixin.qq.com/s/8H8GrAe7wMaLGWKjKUVp2Q
-
-用文本分类模型轻松搞定复杂语义分析
-
-https://mp.weixin.qq.com/s/ss9UlDU9lYokS-EDrPnOxQ
-
-如何在Python中使用LightFM构建可扩展的电子商务推荐系统？
-
-https://mp.weixin.qq.com/s/tzyj0LaJ2Ccv730UhJBdig
-
-拿起Python，防御特朗普的Twitter！
-
-https://mp.weixin.qq.com/s/tARJdv_ybTmVigTXPoeuYw
-
-还在用Matplotlib? 又一可视化神器Altair登场
-
-https://mp.weixin.qq.com/s/wwhjwQyM2r0F-hOIWV35pg
-
-Python数据科学手册专题：线性回归
-
-https://mp.weixin.qq.com/s/VZlrWwbU0nJIlSVa9PgMBQ
-
-在Python中简洁使用CSV、JSON、XML
-
-https://mp.weixin.qq.com/s/wD1BwpcVbzAJQqiWr1JueQ
-
-用Scikit-Learn构建K-近邻算法，分类MNIST数据集
-
-https://mp.weixin.qq.com/s/fb9LyEdMsfUBR6ctc1gdXA
-
-Python模拟太阳-地球-月亮运动模型
-
-https://mp.weixin.qq.com/s/VmLphhs8rGabdNXtvllgdQ
-
-教你用Python实现简单监督学习算法

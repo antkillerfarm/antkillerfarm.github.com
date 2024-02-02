@@ -121,6 +121,14 @@ https://mp.weixin.qq.com/s/GD_erks-XLw8w8_SUp2E5Q
 
 ---
 
+按照王院士的理解，牛顿创造万有引力模型的物质条件大清当时都具备了，有笔，有纸，有苹果树。
+
+https://www.zhihu.com/answer/2900566815
+
+中国工程院院士王坚称“我国已具备支撑 ChatGPT 发展的算力基础”，技术积累如何最终实现爆发？
+
+---
+
 https://zhuanlan.zhihu.com/p/669767324
 
 半导体设备巨头应用材料被美国司法部调查意味着什么？

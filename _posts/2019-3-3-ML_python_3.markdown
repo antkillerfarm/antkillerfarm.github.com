@@ -9,6 +9,32 @@ category: AI
 
 # Machine Learning之Python篇
 
+## Super Pandas
+
+https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw
+
+如何用一行代码在多CPU环境下高效并行Pandas（pandarallel）
+
+https://mp.weixin.qq.com/s/XIQ5EpQcYLxmRBuaTCZFzg
+
+一行代码，Pandas秒变分布式，快速处理TB级数据（Pandas on Ray）
+
+https://mp.weixin.qq.com/s/Jkx1K7d1ufD2S6s2cOA7Hw
+
+如何只用一行代码让Pandas加速四倍？（Modin）
+
+https://mp.weixin.qq.com/s/UJ7P6nrBijidW3U2ApMGEQ
+
+Vaex：突破pandas，快速分析100GB大数据集
+
+https://mp.weixin.qq.com/s/CurxDz9DcJhyj-kbnuhXJA
+
+0.052秒打开100GB数据，这个Python开源库火爆了！
+
+https://mp.weixin.qq.com/s/iBCYfvSJeRyKLmnKgwnTRg
+
+有比Pandas更好的替代吗?对比Vaex, Dask, PySpark, Modin和Julia
+
 ## skimage
 
 skimage相当于python版本的OpenCV。
@@ -112,36 +138,6 @@ https://mp.weixin.qq.com/s/fkqnnQ3hqakPATRETahLPw
 https://mp.weixin.qq.com/s/OHO3ePD3Ih3AtKv3qn2IEw
 
 9个可以提高Jupyter Notebook开发效率的魔术命令
-
-## Autograd
-
-一个基于numpy的自动求导库。它是由Harvard Intelligent Probabilistic Systems Group开发的。
-
-官网：
-
-https://github.com/HIPS/autograd
-
-## Face Recognition
-
-这是一个人脸识别的软件包。
-
-代码：
-
-https://github.com/ageitgey/face_recognition
-
-参考：
-
-https://mp.weixin.qq.com/s/QcMsSsZY7TcNQ3G57p8eyQ
-
-3行Python代码完成人脸识别
-
-## Luminoth
-
-Luminoth是一个开源的计算机视觉工具包，目前支持目标探测和图像分类，但以后会有更多的扩展。该工具包在TensorFlow和Sonnet上用Python搭建而成。
-
-代码：
-
-https://github.com/tryolabs/luminoth
 
 ## PIL
 

@@ -85,6 +85,12 @@ https://zhuanlan.zhihu.com/p/517699916
 
 Pytorch Mac GPU训练与测评
 
+## dataset
+
+`model = torch.hub.load('pytorch/vision:v0.10.0', 'resnet50', pretrained=True)`
+
+下载的model位于`~/.cache/torch/hub`
+
 ## 参考
 
 https://mp.weixin.qq.com/s/zhkaenFdnB5KgaEYb-XDEQ

@@ -9,7 +9,19 @@ category: Chip
 
 # CPU
 
-## Cache（续）
+## Cache
+
+Cache本质上是一块小而快的存储设备和另一块大而慢的存储设备之间的协作关系。
+
+Cache分为硬件Cache和软件Cache两种，这里只讨论前者。后者参见《数据库（一）》。
+
+![](/images/img4/cache.jpg)
+
+![](/images/img4/Mem_Gap.png)
+
+上图展示了CPU和DRAM之间的速度增长的差异，这个差异通常被称为Memory Gap。1980年代以前的计算机是没有Cache的，但是随着Memory Gap的增大，Cache的级数也不断增多，目前3级片上Cache+1级片外Cache已经是标配了。
+
+必须指出的是，和CPU的速度受限于技术进步不同，RAM的问题主要是性能和价格的折衷。Cache实际上也是一种RAM，最好的L0 Cache和CPU的速度相当，只是价格太高而已。
 
 类似这样的还有PCB的线宽。微米级的线宽技术上完全可行，毕竟芯片都已经是纳米级的线宽了，主要还是价格的问题。
 
@@ -280,25 +292,3 @@ https://zhuanlan.zhihu.com/p/422848235
 https://www.cl.cam.ac.uk/~pes20/weakmemory/
 
 Relaxed-Memory Concurrency
-
-## 机柜
-
-机柜、板卡的尺寸规格也有工业标准，以方便不同厂商产品的互联和替换。
-
-OCP：Open Compute Project
-
-OAM：OCP Accelerator Module
-
-UBB：Universal Base Board
-
-https://zhuanlan.zhihu.com/p/339628067
-
-开放计算的源起，对比标准x86服务器开放计算有哪些特点和创新？
-
-https://zhuanlan.zhihu.com/p/571417872
-
-开放整机柜服务器简史
-
-## 参考
-
-超线程其实就是两个线程共享一个计算单元和内存控制单元，但有自身独立的一些硬件，目的是两个都不是全负荷工作的线程可以轮流使用计算单元来实现比较好的throughput。但只要有一个很忙，那就可能饿死另一个。

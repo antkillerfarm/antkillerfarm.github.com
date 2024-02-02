@@ -275,30 +275,10 @@ https://zhuanlan.zhihu.com/p/260425739
 
 FinFET的继任者：详解GAA晶体管
 
-## 光刻
-
-缩短波长的方法除了增加频率之外，其实还有更换介质（比如水），这就是浸润式微影。不同工作波长，液体也不同。需要考虑液体的吸收作用。
-
-![](/images/img2/ASML.jpg)
-
-![](/images/img4/photoengraving.png)
-
-Rayleigh criterion（瑞利判据）：
-
-$$CD = K_1 \frac{\lambda}{NA}$$
-
-$$K_1$$是一个常数，取决于与芯片制造工艺有关的许多因素。按照ASML的说法，其物理极限值是0.25。$$\lambda$$则代表光刻机使用光源的波长；NA则是光学器件的数值孔径，描述了它们能够收集光的角度范围；CD代表线宽，即可实现的最小特征尺寸。
-
-DUV是深紫外线（Deep Ultraviolet Lithography），EUV是极深紫外线（Extreme Ultraviolet Lithography）。
-
 ---
 
-ASML光刻机分为四大等级:
+nanosheet所需的highly-selective etch比EUVL推出还要晚，连ASML的EUVL都被纳入出口管制，就更别提LRCX和TEL的selective etch了，买不到设备怎么做nanosheet？
 
-A、EUV7nm及以下。
+https://www.zhihu.com/question/620014852
 
-B、DUV湿法先进制程16-7nm。
-
-C、DUV湿法成熟制程45-28nm。
-
-D、DUV干法110-65nm。
+DUV光刻机可以做GAA吗？
