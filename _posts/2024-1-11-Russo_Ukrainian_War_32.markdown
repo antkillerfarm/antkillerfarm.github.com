@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争（三十二）——轶事（4）
+title:  俄乌战争（三十二）——轶事（3）
 category: Russo Ukrainian War 
 ---
 
@@ -372,3 +372,7 @@ https://zhuanlan.zhihu.com/p/673891186
 https://zhuanlan.zhihu.com/p/678300355
 
 乌军向前线空投俄军总司令妻子裸照
+
+https://zhuanlan.zhihu.com/p/681208691
+
+俄罗斯海关扣押中国出口乌克兰的军装

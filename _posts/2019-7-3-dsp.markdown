@@ -25,6 +25,12 @@ https://zhuanlan.zhihu.com/p/100616192
 
 ---
 
+无线电干扰一般分为同频率干扰、邻频道干扰、带外干扰、互调干扰和阻塞干扰等。
+
+
+
+---
+
 https://mp.weixin.qq.com/s/zDcbrZeK4tlO0jA3-s_lYg
 
 雷达方面的术语
