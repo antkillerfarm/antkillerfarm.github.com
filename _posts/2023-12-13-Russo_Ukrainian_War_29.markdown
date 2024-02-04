@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争（二十九）——轶事（1）
+title:  俄乌战争（二十九）——凡人列传（4）
 category: Russo Ukrainian War 
 ---
 

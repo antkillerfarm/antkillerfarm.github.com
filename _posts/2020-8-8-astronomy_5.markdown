@@ -1,13 +1,67 @@
 ---
 layout: post
-title: 火星探测, 阿波罗50年
+title: 中国航天, 火星探测
 category: Nature 
 ---
 
 * toc
 {:toc}
 
-# 中国航天（续）
+# Starlink（续）
+
+Starlink用户终端，最高发射功率为2.44瓦。
+
+https://finance.sina.com.cn/tech/2021-06-13/doc-ikqciyzi9362614.shtml
+
+SpaceX申请运营第二代Starlink终端 天线输出功率减半
+
+---
+
+https://zhuanlan.zhihu.com/p/272628707
+
+超美国95%宽带！Starlink实测网速突破160Mbps
+
+https://www.zhihu.com/question/508552825
+
+如何看待美SpaceX星链卫星两次接近中国空间站，我方为确保在轨航天员安全实施紧急避碰？
+
+# 中国航天
+
+![](/images/img4/CZ.jpg)
+
+![](/images/img4/CZ_2.jpg)
+
+![](/images/img4/CZ_3.jpg)
+
+![](/images/img4/CZ_4.jpg)
+
+![](/images/img4/CZ_5.jpg)
+
+https://mp.weixin.qq.com/s/YxfuqVdWsteW7P3rNkhYNQ
+
+中国航天日，一文带你看长征火箭发展史
+
+---
+
+2020年4月1日，“带货女王”薇娅在淘宝直播间卖起了火箭，售价4000万元。据了解，当天在火箭链接上架后5分钟内就有800多人拍下定金。最终“长光卫星技术有限公司”与薇娅相关方联系，确定了购买意向。
+
+---
+
+1960年2月19日，南汇老港的一片滩涂上，响起了中国航天迈向太空的第一声轰鸣，第一枚液体探空火箭“T-7M”腾空而起，飞上了八千米高空。
+
+美国在2011年正式签订了《沃尔夫条款》，以法令的形式直接禁止了中美两国间的任何航空技术合作。
+
+NASA在2012年更是出台了指引，进一步指出，法令不仅适用于这些企业的一级机构，也包括其旗下的附属公司。
+
+https://www.zhihu.com/answer/136456079
+
+美国拟出台沃尔夫条款永久禁止中国进入国际空间站
+
+https://zhuanlan.zhihu.com/p/385461869
+
+这一次，中国人，笑了
+
+---
 
 据《财经》报道，从融资和估值来看，蓝箭航天、零壹空间、星际荣耀已经成为目前众多民营航天企业的第一梯队，备受市场的关注。除此之外，还包括翎客航天、星途探索、九州云箭、灵动飞天、深蓝航天等。
 
@@ -266,55 +320,3 @@ https://mp.weixin.qq.com/s/LNq09_wUKF6dfMrrcSgV-Q
 https://mp.weixin.qq.com/s/1W4JcHcO9ZuJnolv05Crvg
 
 中国火神踏上火星！祝融号火星车着陆火星十大问题详解
-
-https://mp.weixin.qq.com/s/DdQoBUgl6kdtrM70FgVGrw
-
-天问一号成功着陆！它是如何到达火星的?
-
-https://mp.weixin.qq.com/s/hSY4rBhCkJDoLlo8Nzmm9Q
-
-天问一号成功着陆！
-
-https://mp.weixin.qq.com/s/mpeHNXktuH9aMxz1Eu6gCw
-
-生活不只眼前的“北上广”，还有诗和火星
-
-https://mp.weixin.qq.com/s/uvSeg8KnPTj_4au_B3WXBw
-
-一文拆解中国火星车着陆全程
-
-https://mp.weixin.qq.com/s/_s7XcEz6Ft6eGXxZOUeSVg
-
-火星上存在真菌吗？
-
-https://mp.weixin.qq.com/s/nPL84Xydqdm4UGYK6AeCvA
-
-“祝融号”登陆火星：人类为何非要去那里？
-
-https://mp.weixin.qq.com/s/5Hg1nSRPSrm0-ZBphX2ToA
-
-明明地球资源无限，中国天问一号为什么要登陆火星
-
-https://mp.weixin.qq.com/s/jtPCA4sgLSY07Cqh7K_aIg
-
-国家航天局发布天问一号着陆过程 两器分离和落火影像
-
-https://mp.weixin.qq.com/s/9b618Vc_Y5EgkCYFmfUYFA
-
-这几天，祝融号到底在忙啥呢？
-
-https://mp.weixin.qq.com/s/w0EyZwI7lF3ztNXFx5MtTQ
-
-听说火星上风很大，那祝融号可以用风力发电吗？
-
-https://www.zhihu.com/question/464412564
-
-国家航天局发布火星探测任务首批科学影像图，照片中有哪些信息可以关注？
-
-https://mp.weixin.qq.com/s/B5h5yZ9unpIAD8dR3KG1yw
-
-来自火星的声音！天问一号系列实拍影像发布
-
-https://mp.weixin.qq.com/s/tqs5JtYBFedVofWlgbJ3kg
-
-“天问一号”即将失联？别担心，一切尽在掌控

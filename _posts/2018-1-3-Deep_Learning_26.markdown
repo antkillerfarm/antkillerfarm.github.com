@@ -15,6 +15,10 @@ category: DL
 
 与之类似的还有手写文本识别（Handwritten Text Recognition, HTR）。
 
+https://pearocr.com/
+
+一个免费的在线OCR网站
+
 华中科大白翔教授的实验室算是目前国内OCR做的比较好的了。
 
 白翔的个人主页：
