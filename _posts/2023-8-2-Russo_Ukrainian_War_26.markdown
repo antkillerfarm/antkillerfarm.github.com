@@ -154,3 +154,9 @@ https://www.sohu.com/a/653469225_121425542
 https://en.interfax.com.ua/news/general/931867.html
 
 Kuleba tells about work of 31 fighters, which made it possible to liberate Robotyne
+
+---
+
+“俄罗斯的职业军人？”克里沃诺斯嗤之以鼻。“你这是拿香肠吓唬小狗。我们以前打败过他们，现在也会打败他们。看看阿富汗吧：塔利班没有什么可打的，但他们最终迫使美国撤军。**最重要的不是军事装备，而是训练有素、积极进取的人民。世界上任何一支军队都无法战胜积极进取的人民。**”
+
+谢尔希·克里沃诺斯（Serhiy Kryvonos）曾在顿巴斯战争期间担任乌克兰特种部队参谋长，后来又担任泽连斯基的副国家安全顾问。
