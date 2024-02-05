@@ -9,7 +9,7 @@ category: Bombs & Satellite
 
 # 两弹一星
 
-https://view.inews.qq.com/a/20171125A0E3WT00
+http://news.eeworld.com.cn/mp/EEWorld/a20170.jspx
 
 我国机载雷达为何一下就从极端落后跨越到世界领先？
 

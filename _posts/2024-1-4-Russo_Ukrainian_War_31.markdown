@@ -69,6 +69,8 @@ category: Russo Ukrainian War
 
 ![](/images/img5/worker.jpg)
 
+![](/images/img5/Warriors-of-light-Ukraine-2023-maxi.webp)
+
 ![](/images/img5/Fighers_Evil.webp)
 
 ![](/images/img5/2023-Weapons.jpg)
