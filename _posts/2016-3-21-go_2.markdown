@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  写在AlphaGo与李世石的人机大战之后（二）
+title:  写在AlphaGo与李世石的人机大战之后（二）, LLVM
 category: essay 
 ---
 
@@ -135,50 +135,173 @@ GnuGo是一个著名的开源围棋软件，但是它只有文字界面。一般
 
 `sudo apt install quarry`
 
-# 俄乌战争+
+# LLVM
 
-中东最大的航空航天展览会----“2023年迪拜航展“汇集了全球领先的民用和军用飞机制造商。在欧美订单纷至沓来时，俄罗斯的国防出口公司却以惨败告终。俄罗斯生意人报报道称，11月13日至17日在迪拜举行的这次航空展会，作为俄罗斯武器出口供应垄断者的Rostec控股公司，没有与合作伙伴签署哪怕一份合同。
+## 概述
+
+LLVM最初设计时，主要做优化方面的研究，所以当时的全称叫Low Level Virtual Machine。后来因为成为了编译器，官方放弃了这个称呼，但保留了LLVM的简称。
+
+官网：
+
+http://llvm.org/
+
+代码：
+
+https://github.com/llvm/llvm-project
+
+LLVM的主要作者是Chris Lattner。
+
+他的个人主页：
+
+http://nondot.org/sabre/
+
+>Chris Lattner，1978年生，美国人。University of Portland本科（2000）+UIUC博士（2005）。LLVM、Swift、MLIR的作者。先后任职于Apple、Tesla、Google、SiFive。
+
+架构设计：
+
+http://www.aosabook.org/en/llvm.html
+
+>顺便提一下，这个网站本身就是个宝库。
+
+官方教程：
+
+https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/index.html
+
+教程代码在：
+
+llvm/examples/Kaleidoscope
+
+中文版：
+
+https://zhuanlan.zhihu.com/p/446800631
 
 ---
 
-许多乌克兰私人公司搁置了常规业务，加入翻新武器的队伍。他们的资金通常来自捐赠，普里图拉基金会是最大的众筹购买军事装备的组织之一，如今已在这个秘密设施上投入20万英镑。
+LLVM主要专注于后端的代码生成。Chris Lattner还开发了前端项目clang。LLVM早期使用GCC作为前端，目前已经改为clang。
 
-如今，这个工厂里有30到50名员工，每周7天在汽缸、拆卸的发动机和成堆的轮胎和履带之间不停歇地工作。迄今为止，他们已经成功让7辆坦克、1辆指挥车、1个飓风火箭系统、1个多管火箭系统、1辆步兵运输车和许多装甲车重返战场。
+https://zhuanlan.zhihu.com/p/357803433
 
----
+详解三大编译器：gcc、llvm和clang
 
-7月9日，俄军放出了一段视频，视频显示俄军正在使用OTR-21，即圆点-U弹道导弹打击乌军目标。视频存活的时间非常短，不到数分钟就被俄罗斯人撤下，因为他们突然想起来，自己在几个月前否认了还有圆点-U这一导弹的库存！如果大家忘记了，我想提醒各位的是，4月8日，俄军使用圆点-U攻击了乌占区的克拉玛托尔斯克火车站（关于乌占区很好例证，因为这地方是乌军纵深现在还在乌克兰手里），造成了大量平民伤亡。事后发现自己的所作所为过于反人类之后，俄军立刻“官宣”自己早已淘汰了所有的圆点-U，这导弹是乌克兰人打的！
+## 常用命令
 
----
+C源码转换为LLVM IR:
 
-芬兰模式：相当于直接承认割让领土。
+`clang -emit-llvm -S test.c -o test.ll`
 
-https://zhuanlan.zhihu.com/p/619510199
+LLVM IR转换为LLVM字节码：
 
-刚刚，芬兰进去了！
+`llvm-as test.ll -o test.bc`
 
----
+链接LLVM字节码文件：
 
-去年有个俄军讲述他的经历，他本来是个义务兵修车的，差3个月退役，被忽悠说签合同去乌克兰每个月给20万卢布，合同3个月一签，工作还是在后方修车不用上战场。他一寻思反正差3个月退役，签3个月合同白捡60万卢布啊，就签了。结果就被送上前线填战壕了，他拼命解释自己是修车的都没有用，好不容易熬了3个月想走人的时候被告知合同3个月自动续签，想解除合同必须本人亲自去国防部某部门办手续，但是前线的兵没有军令不得离开前线。他这时候才知道被骗了，而且说好的20万卢布一个月的工资，一分钱都没见到。
+`llvm-link test1.bc test2.bc -o output.bc`
 
----
+LLVM字节码转换为机器汇编码：
 
-打得过就是1h22min速通，买办军队毫无战斗力，乌军不知为何而战。
+`llc test.bc -o test.s`
 
-打不过怎么办，总不能夸买办军队吧，只能说北约天兵天将了。
+优化器opt，优化LLVM IR：
 
----
+`opt --passname input.ll -o output.ll`
 
-这大半年，这帮人从觉着俄罗斯能牛逼，到希望俄罗斯能牛逼，现在只敢期盼俄罗斯的对手是傻逼，心态也是有比较强烈的变化的。
+.c --frontend--> AST --frontend--> LLVM IR --LLVM opt--> LLVM IR --LLVM llc--> .s Assembly --OS Assembler--> .o --OS Linker--> executable
 
----
+https://zhuanlan.zhihu.com/p/161626997
 
-当认为自己军事实力占据绝对优势的时候，表现出凶残的一面更多，不屑于解释也不屑于谈判，一副毁灭你与你何干的样子，正如2月份刚发动特别军事行动时一样。
+LLVM架构简介
 
-当发现自己军事实力并不占据绝对优势时，如果新占领土俄罗斯族较多，就打民族牌，推动独立公投加入俄罗斯；如果俄罗斯族不多，就打历史牌，比如说苏联解体是错误，整个乌克兰根本不应该存在啊，去纳粹化啊之类的，突出一个灵活运用。
+https://blog.csdn.net/weixin_46222091/article/details/104501879
 
-俄帝国从来不惧怕民族自决，只不过要等它把主体民族替换为俄罗斯族以后才开始民族自决而已。
+llvm常用工具的使用详解
 
-https://zhuanlan.zhihu.com/p/593057969
+## 编译
 
-喜迎王师的结果——总结俄罗斯人巩固新领土的一些方法
+```bash
+cmake -S llvm -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug
+ninja -C build check-llvm
+```
+
+## tablegen
+
+LLVM tablegen，文件名后缀为`.td`。
+
+https://zhuanlan.zhihu.com/p/447318642
+
+TableGen_Overview
+
+https://zhuanlan.zhihu.com/p/447728683
+
+TableGen Language Reference
+
+## FileCheck
+
+FileCheck用于校验输出结果中是否包含期望的信息。
+
+https://blog.csdn.net/weixin_46222091/article/details/104527715
+
+LLVM中FileCheck开发者工具 1--命令介绍
+
+https://blog.csdn.net/weixin_46222091/article/details/104528256
+
+LLVM中FileCheck开发者工具 2--入门教程
+
+## 参考
+
+所谓的intrinsic function ，是属于编译器开洞魔法的范畴，这些函数的实现是直接写死在编译器的代码生成部分的，在最终得到的二进制里面不会存在这些函数的符号和实现。
+
+https://zhuanlan.zhihu.com/p/348365662
+
+C++标准库开洞史
+
+https://www.zhihu.com/question/569519423
+
+C++标准库中是否有需要依赖编译器魔法才能实现的功能？
+
+https://www.zhihu.com/question/582148351
+
+C/C++函数“必须声明但禁止定义”才能使用，函数地址也不存在，是什么神奇的操作？
+
+https://mp.weixin.qq.com/s/FSlJKnC0y51nsLDp1B3tXg
+
+Swift编译器Crash—Segmentation fault解决方案
+
+https://zhuanlan.zhihu.com/p/392381317
+
+LLVM IR的第一个Pass：上手官方文档Hello Pass
+
+https://csstormq.github.io/
+
+一个LLVM、TVM、NEON的专栏
+
+https://www.zhihu.com/question/484069566
+
+LLVM怎么表达硬件相关的特性?
+
+https://mp.weixin.qq.com/s/-IjJJG5huL6p3KjhO70s7Q
+
+编译器中的图论算法
+
+https://zhuanlan.zhihu.com/p/140462815
+
+LLVM基本概念入门
+
+https://zhuanlan.zhihu.com/p/141265959
+
+有关于TableGen的简单介绍
+
+https://zhuanlan.zhihu.com/p/502828729
+
+LLVM创始人Chris Lattner回顾展望编译器
+
+https://zhuanlan.zhihu.com/p/626085010
+
+使用Flex、Bison和LLVM编写自己的Toy Compiler
+
+https://zhuanlan.zhihu.com/p/407854583
+
+使用LLVM实现一个简单编译器（一）
+
+https://zhuanlan.zhihu.com/p/409749393
+
+使用LLVM实现一个简单编译器（二）
