@@ -31,6 +31,10 @@ ZeRO使用分片（partition）方法，即每张卡只存1/N的模型状态量�
 
 https://github.com/microsoft/DeepSpeed
 
+stage 1 & 2的代码在：
+
+deepspeed/runtime/zero/stage_1_and_2.py
+
 官网：
 
 https://www.deepspeed.ai
@@ -96,6 +100,14 @@ $$h=xW_0'+xA'B'=W_0x+BAx$$
 由此还衍生出一种用法，一个base model + 若干针对不同领域/任务的patch，就可以服务于多个不同的领域/任务。
 
 LoRA大幅降低了模型训练时的显存占用，因为并不优化主模型，所以主模型对应的优化器参数不需要存储。**但计算量没有明显变化**——虽然减少了主模型更新权重的计算，但却增加了旁路的正向和反向计算。
+
+代码：
+
+https://github.com/microsoft/LoRA
+
+fine tune的示例：
+
+examples/NLG/src/gpt2_ft.py
 
 参考：
 
@@ -322,19 +334,3 @@ https://mp.weixin.qq.com/s/hjC-WTMIpbWWpmXoLBfD2g
 https://mp.weixin.qq.com/s/mg-d1W5i9rzaLMNrvq0tSQ
 
 32分钟训练神经机器翻译，速度提升45倍
-
-https://mp.weixin.qq.com/s/iW0k80TUPuWDE9xwHvX91g
-
-为什么你需要Raven：全球首个真正分布式深度学习训练协议
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750181&idx=1&sn=156dac3c5646143fc2577972f1506836
-
-GPU捉襟见肘还想训练大批量模型？谁说不可以
-
-https://mp.weixin.qq.com/s/-CTVyKWtdTK0RIfzzPVyNQ
-
-分布式与高效深度学习，140页ppt详述深度学习压缩与联邦学习训练技术进展
-
-https://mp.weixin.qq.com/s/nTBuYuW7h9wZYuo3w1xGmQ
-
-分布式训练的方案和效率对比

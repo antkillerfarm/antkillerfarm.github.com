@@ -163,6 +163,10 @@ http://www.aosabook.org/en/llvm.html
 
 >顺便提一下，这个网站本身就是个宝库。
 
+架构设计中文版：
+
+https://zhuanlan.zhihu.com/p/446800631
+
 官方教程：
 
 https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/index.html
@@ -171,9 +175,9 @@ https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/index.html
 
 llvm/examples/Kaleidoscope
 
-中文版：
+教程中文版+MLIR的专栏：
 
-https://zhuanlan.zhihu.com/p/446800631
+https://www.zhihu.com/column/c_1416415517393981440
 
 ---
 
@@ -182,6 +186,13 @@ LLVM主要专注于后端的代码生成。Chris Lattner还开发了前端项目
 https://zhuanlan.zhihu.com/p/357803433
 
 详解三大编译器：gcc、llvm和clang
+
+## 源代码编译
+
+```bash
+cmake -S llvm -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
+ninja -C build check-llvm
+```
 
 ## 常用命令
 
@@ -204,6 +215,14 @@ LLVM字节码转换为机器汇编码：
 优化器opt，优化LLVM IR：
 
 `opt --passname input.ll -o output.ll`
+
+JIT执行字节码：
+
+`lli hello.bc`
+
+反汇编：
+
+`llvm-dis < hello.bc`
 
 .c --frontend--> AST --frontend--> LLVM IR --LLVM opt--> LLVM IR --LLVM llc--> .s Assembly --OS Assembler--> .o --OS Linker--> executable
 
