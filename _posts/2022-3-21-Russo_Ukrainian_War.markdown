@@ -183,6 +183,10 @@ https://en.zona.media/
 
 mediazona以蹲坟头著称，专门统计俄军伤亡
 
+https://ualosses.org/
+
+乌军伤亡统计网站
+
 https://zhuanlan.zhihu.com/p/671916805
 
 乌萝点将录

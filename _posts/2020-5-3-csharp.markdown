@@ -232,7 +232,7 @@ PC上搭建Objective-C（以下简称OC）开发环境，主要借助GNUstep开�
 
 `GNUSTEP_MAKEFILES=/usr/share/GNUstep/Makefiles`
 
-# 俄乌战争=
+# 俄乌战争+
 
 当欧美限价60美元后，像印度之类阴诈至极的“伙伴”，又趁机再度索要折扣，把油价打压到仅仅维持俄罗斯石油公司成本运作平衡的40多美元。
 
