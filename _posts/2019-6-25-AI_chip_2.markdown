@@ -276,7 +276,7 @@ HBM：High Bandwidth Memory是一款新型的CPU/GPU内存芯片（即“RAM”�
 
 这是HBM和GDDR5的对比图。
 
-从上面两图可以看出，HBM的集成程度在die一级，介于PCB和chip之间，这也就是近来比较火的Chiplet技术。
+从上面两图可以看出，HBM的集成程度在chip一级，介于PCB和die之间，这也就是近来比较火的Chiplet技术。
 
 HBM带宽是传统内存（DRAM）的4.5倍，因此更适合处理AI应用程序所需的大量数据。这种性能的提升是如此之大，以至于许多客户更愿意支付专用内存所需的更高价格(每GB大约25美元，标准内存大约8美元)。
 
@@ -318,42 +318,14 @@ https://www.zhihu.com/question/422438453
 
 NVIDIA为什么在游戏卡上死活不用HBM2显存？
 
-## FPGA
+https://zhuanlan.zhihu.com/p/681519240
 
-CGRA：Coarse Grained Reconfigurable Array
-
-FPGA：Field Programmable Gate Array
-
-FPGA主要是由以LUT和MUX为基础构成的门级可编程逻辑块构成的。
-
-CGRA是coarse-grained的粗粒度，它是编程重构ALU阵列而非逻辑门阵列，因此很多的运算由硬核实现，不是LUT搭真值表。
-
-https://www.zhihu.com/question/407417134
-
-CGRA和FPGA有什么不同？
+HBM发展概述
 
 ---
 
-https://mp.weixin.qq.com/s/Cy_vb0PpcvGTDmlMt1VkSw
+传统nn主要就是权重，剩下的内存需求基本都是计算产生的中间结果，通过存算一体搞个weight station，再用数据流极致减少相邻层之间中间结果的暂态尺寸，最后再靠dsa疯狂叠算力把吞吐拉爆，这当然是个美好的故事。
 
-从GPU、TPU到FPGA及其它：一文读懂神经网络硬件平台战局
+今天infra层面是反过来的，我的机器有多大内存，权重占用是固定的先刨掉，7B模型就7GB，70B模型就70GB，稍微留微乎其微的一点点给inference的层间中间数据消耗（这部分才是数据流狂吹的优化空间，可惜根本不重要），剩下的几十到几百GB的内存几乎就全放kv-cache了，根据剩下的容量倒推能做多大的上下文长度，以及并发度做多高，很多情况下要把并发度降低到1来保证长上下文指标，如果还是满足不了，只能诉诸于各种压缩了。
 
-https://mp.weixin.qq.com/s/DnurlGgd5q4Fwjxy3YnIrQ
-
-当数据库遇见FPGA：X-DB异构计算如何实现百万级TPS？
-
-https://mp.weixin.qq.com/s/H_KnHQ6AzCNFqmW8uDj1rA
-
-基于FPGA的深度学习加速器综述：挑战与机遇
-
-https://mp.weixin.qq.com/s/acAbNP_ERnKlL3_9v_mwow
-
-FPGA：AI ASIC的必经之路？
-
-https://mp.weixin.qq.com/s/K_dohaZbCISZlxe1Utu50w
-
-如何用FPGA加速卷积神经网络(CNN)？
-
-https://zhuanlan.zhihu.com/p/152167194
-
-两大FPGA公司的“AI技术路线”
+SRAM6T物理结构实在是shrink不下去的；相较1T1C（1晶体管+1电容） DRAM的单位面积/成本是相当昂贵的，相校垂直堆叠走线的HBM也要至少昂贵2X-3X；虽然SRAM的速度相较HBM3更快数倍。

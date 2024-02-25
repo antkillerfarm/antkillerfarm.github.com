@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争（三十二）——轶事（3）
+title:  俄乌战争（三十二）——轶事（2）
 category: Russo Ukrainian War 
 ---
 
@@ -237,10 +237,6 @@ https://zhuanlan.zhihu.com/p/609421277
 
 坦克没有过时、无人机主宰天空——俄乌战争的18个经验和教训
 
-https://www.zhihu.com/question/586911709
-
-俄军预警机A50疑似遇袭，大家如何看待此事？
-
 https://zhuanlan.zhihu.com/p/538532137
 
 为了真正的信仰——战斗在乌克兰的国际军团
@@ -376,3 +372,15 @@ https://zhuanlan.zhihu.com/p/678300355
 https://zhuanlan.zhihu.com/p/681208691
 
 俄罗斯海关扣押中国出口乌克兰的军装
+
+https://zhuanlan.zhihu.com/p/681956585
+
+“鸡蛋不喜欢被运得太远太久。” 经济学家解释了为什么进口鸡蛋未出现在俄罗斯货架上
+
+https://zhuanlan.zhihu.com/p/682864346
+
+炮弹竞赛——欧盟的难处，基辅的困境
+
+https://zhuanlan.zhihu.com/p/683258678
+
+俄罗斯一网络博主因为“真实”报道阿夫迪夫卡俄军伤亡惨重而被逼死

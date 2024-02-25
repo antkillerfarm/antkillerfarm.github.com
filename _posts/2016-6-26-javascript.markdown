@@ -165,6 +165,14 @@ https://npm.taobao.org
 
 >虽然淘宝镜像号称5分钟同步一次，然而有些时候某些包由于比较大，可能存在只有部分更新的情况。这时可以考虑使用老一点的版本。
 
+查询当前镜像
+
+`npm get registry`
+
+设置为淘宝镜像
+
+`npm config set registry https://registry.npmmirror.com`
+
 npm有两种安装方式：
 
 1.本地安装。
@@ -184,6 +192,21 @@ npm有两种安装方式：
 这样做的优点在于，A和B可以使用C的不同版本，且互不影响，缺点是占用的空间过大。所以，又有arborist项目，用于处理版本共存问题，毕竟多数情况下，大多数的库是不挑版本的。
 
 然而也不用太过担心空间问题，npm有cache功能。下载的npm包放在~/.npm下，且每个包只有一份。所以暂时不用的工程，把node_modules删掉就行了。再次安装时，由于不用下载文件，速度还是非常快的。
+
+---
+
+升级node：
+
+```bash
+npm install n -g
+n stable
+```
+
+升级npm：
+
+```bash
+npm install npm -g
+```
 
 ## yarn
 
@@ -241,7 +264,7 @@ https://www.electronjs.org/
 
 教程：
 
-https://www.sdk.cn/news/732
+https://github.com/electron/electron-quick-start
 
 Electron与NW.js差异主要是：
 

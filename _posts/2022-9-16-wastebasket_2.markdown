@@ -161,6 +161,26 @@ https://www.zhihu.com/question/610084775
 
 # 真垃圾筐
 
+https://www.zhihu.com/question/471268212
+
+如何看待上海财经大学一女博士拿不到学位，学院称“论文不符要求”？是否与此前多次举报教授论文抄袭有关？
+
+https://www.zhihu.com/question/365900362
+
+如何看待中文核心期刊《冰川冻土》上某论文全程在夸作者导师、师母，为何这样的论文也能发表？
+
+https://mp.weixin.qq.com/s/qQIUj87iMUn7RsPKABignA
+
+华中科技大学教授涉嫌性骚扰女研究生
+
+https://www.zhihu.com/answer/692061772
+
+学术圈修仙记
+
+https://www.zhihu.com/question/503354095
+
+如何看待复旦大学毕业生最后一科考试被举报作弊，取消学位证、毕业证以及研究生资格，后起诉母校？
+
 https://k.sina.com.cn/article_7517400647_1c0126e4705901sdfc.html
 
 北大博士梅桢再上热搜，被爆高考400分，又一位“外籍”投机者？

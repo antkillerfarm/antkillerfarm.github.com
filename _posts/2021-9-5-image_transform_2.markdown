@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  图像变换（二）
+title:  图像变换（二）, AIGC
 category: CV 
 ---
 
@@ -66,118 +66,6 @@ https://zhuanlan.zhihu.com/p/386589821
 https://zhuanlan.zhihu.com/p/567654308
 
 神经渲染的进展综述
-
-## AIGC
-
-![](/images/img5/AIGC.png)
-
-![](/images/img5/Web3.png)
-
----
-
-《A Comprehensive Survey of AI-Generated Content (AIGC): A History of Generative AI from GAN to ChatGPT》
-
-《ChatGPT is not all you need. A State of the Art Review of large Generative AI models》
-
----
-
-ChatGPT（文本到文本的对话模型）
-
-DALL-E-2（文本到图像的生成模型）
-
-Codex（文本到代码的生成模型）
-
-Dreamfusion （文本到3D图像）
-
-Flamingo（图像到文本）
-
-Phenaki（文本到视频）
-
-AudioLM（文本到音频）
-
-Galactica（文本到科学文本）
-
-AlphaTensor（自动搜索高性能的矩阵运算逻辑）
-
----
-
-https://civitai.com/
-
-一个AI艺术的网站
-
-https://space.bilibili.com/12566101
-
-一个AI绘图方面的博主
-
----
-
-在C站，一个南京艺术学院毕业的学美术小姐姐，网名叫娜乌斯嘉，她用自己的照片训练了lora，并分享给全网AI绘画爱好者们使用。
-
-她的B站主页：
-
-https://space.bilibili.com/8095370
-
----
-
-https://mp.weixin.qq.com/s/H2nqQi2EVQ_EyeDNCRD3Cg
-
-一文回顾AI绘画的成长之路：从简笔画到真实人脸生成
-
-https://www.zhihu.com/question/583294094
-
-Ai绘画半年了，到目前为止，AI绘画让多少画师失业了？未来又会有多少?
-
-https://www.zhihu.com/question/584139316
-
-AI绘画引入ControlNet，将会带来哪些影响？
-
-https://www.zhihu.com/question/584053473
-
-如何评价2023年2月AI绘画的最新水平？
-
-https://mp.weixin.qq.com/s/HpziNAqHY9Oetsgk2AVxEg
-
-ControlNet组合拳效果惊人，颠覆AI绘画游戏规则
-
-https://zhuanlan.zhihu.com/p/615522634
-
-AIGC的一些记录
-
-https://www.zhihu.com/question/593770520
-
-首批因AI失业的人来了，有公司已裁减原画师，导演陆川力赞AI海报高效优质，哪些职位容易被取代？
-
-https://zhuanlan.zhihu.com/p/619730103
-
-AI绘画教程：如何用Stable Diffusion始终画同一个人？
-
-https://zhuanlan.zhihu.com/p/626335914
-
-AI绘图StableDiffusion最强大模型盘点 - 诸神乱战
-
-https://zhuanlan.zhihu.com/p/622914660
-
-《Stable Diffusion 倚天剑术》第1卷：在各种设备上把Stable Diffusion玩起来
-
-https://zhuanlan.zhihu.com/p/629348322
-
-StableDiffusion LoRA自训练教程
-
-https://mp.weixin.qq.com/s/DBLMAEbVw6v4xH94-5Zl3w
-
-GAN逆袭归来！清华校友论文引爆AI绘图圈，一秒把大象P转身，Diffusion黯然失色
-
-https://zhuanlan.zhihu.com/p/643872569
-
-AI这样把NB写在脸上，它在玩一种很新的艺术
-
-https://zhuanlan.zhihu.com/p/626004957
-
-利用AI在独立游戏项目中大干快上
-
-https://zhuanlan.zhihu.com/p/664461927
-
-一天时间，我用AI做了一个恐龙网站
 
 ## 参考
 
@@ -384,3 +272,125 @@ https://mp.weixin.qq.com/s/UySQTv8uuGungjxFNeHbRw
 https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
 
 分分钟学会基于深度学习的图像真实风格迁移！
+
+# AIGC
+
+![](/images/img5/AIGC.png)
+
+![](/images/img5/Web3.png)
+
+---
+
+《A Comprehensive Survey of AI-Generated Content (AIGC): A History of Generative AI from GAN to ChatGPT》
+
+《ChatGPT is not all you need. A State of the Art Review of large Generative AI models》
+
+---
+
+ChatGPT（文本到文本的对话模型）
+
+DALL-E-2（文本到图像的生成模型）
+
+Codex（文本到代码的生成模型）
+
+Dreamfusion （文本到3D图像）
+
+Flamingo（图像到文本）
+
+Phenaki（文本到视频）
+
+AudioLM（文本到音频）
+
+Galactica（文本到科学文本）
+
+AlphaTensor（自动搜索高性能的矩阵运算逻辑）
+
+---
+
+https://civitai.com/
+
+一个AI艺术的网站
+
+https://space.bilibili.com/12566101
+
+一个AI绘图方面的博主
+
+---
+
+在C站，一个南京艺术学院毕业的学美术小姐姐，网名叫娜乌斯嘉，她用自己的照片训练了lora，并分享给全网AI绘画爱好者们使用。
+
+她的B站主页：
+
+https://space.bilibili.com/8095370
+
+---
+
+https://mp.weixin.qq.com/s/H2nqQi2EVQ_EyeDNCRD3Cg
+
+一文回顾AI绘画的成长之路：从简笔画到真实人脸生成
+
+https://www.zhihu.com/question/583294094
+
+Ai绘画半年了，到目前为止，AI绘画让多少画师失业了？未来又会有多少?
+
+https://www.zhihu.com/question/584139316
+
+AI绘画引入ControlNet，将会带来哪些影响？
+
+https://www.zhihu.com/question/584053473
+
+如何评价2023年2月AI绘画的最新水平？
+
+https://mp.weixin.qq.com/s/HpziNAqHY9Oetsgk2AVxEg
+
+ControlNet组合拳效果惊人，颠覆AI绘画游戏规则
+
+https://zhuanlan.zhihu.com/p/615522634
+
+AIGC的一些记录
+
+https://www.zhihu.com/question/593770520
+
+首批因AI失业的人来了，有公司已裁减原画师，导演陆川力赞AI海报高效优质，哪些职位容易被取代？
+
+https://zhuanlan.zhihu.com/p/619730103
+
+AI绘画教程：如何用Stable Diffusion始终画同一个人？
+
+https://zhuanlan.zhihu.com/p/626335914
+
+AI绘图StableDiffusion最强大模型盘点 - 诸神乱战
+
+https://zhuanlan.zhihu.com/p/622914660
+
+《Stable Diffusion 倚天剑术》第1卷：在各种设备上把Stable Diffusion玩起来
+
+https://zhuanlan.zhihu.com/p/629348322
+
+StableDiffusion LoRA自训练教程
+
+https://mp.weixin.qq.com/s/DBLMAEbVw6v4xH94-5Zl3w
+
+GAN逆袭归来！清华校友论文引爆AI绘图圈，一秒把大象P转身，Diffusion黯然失色
+
+https://zhuanlan.zhihu.com/p/643872569
+
+AI这样把NB写在脸上，它在玩一种很新的艺术
+
+https://zhuanlan.zhihu.com/p/626004957
+
+利用AI在独立游戏项目中大干快上
+
+https://zhuanlan.zhihu.com/p/664461927
+
+一天时间，我用AI做了一个恐龙网站
+
+## SORA
+
+https://openai.com/research/video-generation-models-as-world-simulators
+
+官方技术报告
+
+https://zhuanlan.zhihu.com/p/683231546
+
+Sora大模型技术精要——原理、关键技术、模型架构与未来趋势

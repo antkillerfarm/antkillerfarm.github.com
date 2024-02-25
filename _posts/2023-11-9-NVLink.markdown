@@ -175,6 +175,10 @@ https://zhuanlan.zhihu.com/p/67785062
 
 不止显卡！这些硬件因素也影响着你的深度学习模型性能
 
+https://zhuanlan.zhihu.com/p/680702927
+
+NVLink发展概述
+
 # AMD
 
 ## Matrix Core

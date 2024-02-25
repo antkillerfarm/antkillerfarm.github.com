@@ -187,7 +187,7 @@ sudo chmod a+x OpenRA-Red-Alert-x86_64.AppImage
 ./OpenRA-Red-Alert-x86_64.AppImage
 ```
 
-值得注意的是该项目是从2007年开始的，并非基于EA于2020年开源的那份代码。
+值得注意的是该项目是从2007年开始的，并非基于EA在2020年开源的那份代码。
 
 有的PC的mesa驱动和游戏不兼容，解决办法：`export GALLIUM_THREAD=0`
 
@@ -216,6 +216,14 @@ OpenRA支持的游戏还包括RA 2、C&C 2、KKND等。
 ---
 
 OpenRA提供了Debug模式，相当于内置了作弊器。。。
+
+---
+
+参考：
+
+https://zhuanlan.zhihu.com/p/682233241
+
+开源跨平台实时战略游戏引擎OpenRA
 
 ## OpenSAGE
 

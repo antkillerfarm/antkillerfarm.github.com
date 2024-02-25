@@ -145,17 +145,21 @@ for me he is nobody, nobody.
 
 2023.8.24 普里戈任殒命。
 
+2024.2.8 扎卢日内被解职，西尔斯基被任命为乌克兰武装部队总司令。
+
+2024.2.16 俄罗斯反对派领导人纳瓦尔尼死在监狱中。
+
 ---
 
-https://www.understandingwar.org/
+https://www.understandingwar.org
 
 ISW（The Institute for the Study of War）
 
-https://liveuamap.com/
+https://liveuamap.com
 
 另一个消息来源
 
-https://militaryland.net/
+https://militaryland.net
 
 另一个消息来源
 
@@ -179,11 +183,11 @@ https://zhuanlan.zhihu.com/p/608091579
 
 乌友信息方案（个人版）
 
-https://en.zona.media/
+https://en.zona.media
 
 mediazona以蹲坟头著称，专门统计俄军伤亡
 
-https://ualosses.org/
+https://ualosses.org
 
 乌军伤亡统计网站
 

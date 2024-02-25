@@ -178,3 +178,7 @@ https://mp.weixin.qq.com/s/ompl4oFSNhrplAbxkgRSXw
 https://zhuanlan.zhihu.com/p/44862021
 
 他们的“九一八”：邦媛妹妹，祝你可爱的前途光明……
+
+https://zhuanlan.zhihu.com/p/428349665
+
+1938年，陈怀民驾机与敌相撞同归于尽，一句承诺，其女友（浙大女生王璐璐）投江殉情

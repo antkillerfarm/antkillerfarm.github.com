@@ -279,6 +279,10 @@ https://www.zhihu.com/answer/3389837693
 
 现在ssd都可以用堆叠技术了，为什么CPU不能多堆几层呢，这样性能不就提升了吗？
 
+https://www.zhihu.com/answer/3284871191
+
+FinFET详解
+
 ---
 
 nanosheet所需的highly-selective etch比EUVL推出还要晚，连ASML的EUVL都被纳入出口管制，就更别提LRCX和TEL的selective etch了，买不到设备怎么做nanosheet？

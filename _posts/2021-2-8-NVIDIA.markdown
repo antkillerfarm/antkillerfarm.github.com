@@ -194,13 +194,21 @@ https://github.com/NVIDIA/dali
 
 ## Tensor Core
 
-Tensor Core是Nvidia GPU里的AI计算单元。
+Tensor Core是Nvidia GPU里专门为深度学习矩阵运算设计的计算单元。
 
 WMMA（warp matrix multiply-accumulate）
 
 https://mp.weixin.qq.com/s/pPjPLqgXZ8iCPS42vXJpuQ
 
 NVIDIA Tensor Core深度学习核心解析
+
+https://mp.weixin.qq.com/s/Qfbc2iQnXacOqOGIrpRQRw
+
+Tensor Core究竟有多快？全面对比英伟达Tesla V100/P100的RNN加速能力
+
+https://www.zhihu.com/question/451127498
+
+英伟达GPU的tensor core和cuda core是什么区别？
 
 ## PTX
 
@@ -317,3 +325,19 @@ https://zhuanlan.zhihu.com/p/639181571
 https://developer.nvidia.com/blog/nvidia-hopper-architecture-in-depth/
 
 NVIDIA Hopper Architecture In-Depth
+
+https://zhuanlan.zhihu.com/p/679525399
+
+NVIDIA GPGPU（一）总览
+
+https://zhuanlan.zhihu.com/p/680098446
+
+NVIDIA GPGPU（二）逐步走向通用
+
+https://zhuanlan.zhihu.com/p/680195269
+
+NVIDIA GPGPU（三）新时代
+
+https://zhuanlan.zhihu.com/p/680262016
+
+NVIDIA GPGPU（四）通信架构

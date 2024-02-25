@@ -71,11 +71,15 @@ SPMD和MPMD都是编程模型的概念。
 
 **编程模型就是对编程共性的抽象。而体系结构是对于硬件的抽象。**
 
-SIMT: Single Instruction Multiple Threads.
+---
+
+SIMT: Single Instruction Multiple Threads，多个thread运行同一指令，但各自处理的数据可以不同（一般每个线程的数据，尤其是寄存器是独立的）。
 
 SIMT最早是Nvidia发明的概念，它也是一种编程模型。
 
 SIMD的编程模型除了SIMT之外，还有subword SIMD、vector SIMD、vector-thread (VT)等。
+
+SMT（Simultaneously multithreading），指多个thread中并行运行不同的指令。
 
 详见论文：
 

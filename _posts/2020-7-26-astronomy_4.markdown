@@ -51,6 +51,12 @@ $$\Delta V=v_e\ln \frac{m_0}{m_1}$$
 
 ---
 
+https://openrocket.info/
+
+一个开源的火箭设计软件
+
+---
+
 ![](/images/img4/cost.jpg)
 
 星舰发射费用仅为200万美元。运力类似的波音SLS火箭每次发射费用为40亿美元，足足相差了2000倍。
