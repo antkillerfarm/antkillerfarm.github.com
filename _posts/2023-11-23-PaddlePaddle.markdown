@@ -95,6 +95,26 @@ PaddleDetection物体检测统一框架
 
 # Pytorch
 
+https://mp.weixin.qq.com/s/maOnO_o5y19X2D-ZnLjsJA
+
+PyTorch中的In-place操作是什么？为什么要避免使用这种操作？
+
+https://zhuanlan.zhihu.com/p/299736532
+
+使用PyTorch 1.6 for Android
+
+https://mp.weixin.qq.com/s/1ugk6uI6lfWEEUvtKIfYNA
+
+9个让PyTorch模型训练提速的技巧！
+
+https://mp.weixin.qq.com/s/kZvdgWqk1KLi790rly3YYQ
+
+Pytorch中的分布式神经网络训练
+
+https://mp.weixin.qq.com/s/biHcUt55-9RfqYJ_Dg_7Tg
+
+TorchMetrics：PyTorch的指标度量库
+
 https://zhuanlan.zhihu.com/p/363319763
 
 PyTorch vs LibTorch：网络推理速度谁更快？
@@ -346,3 +366,13 @@ Tensorflow/XLA探究
 https://wzzju.github.io/tensorflow/xla/2021/06/12/xla-overview/
 
 XLA编译执行原理分析
+
+# 编译原理+
+
+x86一开始并没有使用太多的通用寄存器，原因之一（注意，只是之一）是当时的编译器无力进行寄存器分配，让编译器自动决定程序中众多变量，哪些应该装入寄存器，哪些应该换出，哪些变量应该映射到同一个寄存器上，并不是一件易事，JVM采用堆栈结构的原因之一，就是不信任编译器的寄存器分配能力，转而使用堆栈结构，躲开寄存器分配的难题。
+
+到80年代早期，IBM的G. J. Chaitin公开了他们的图染色寄存器分配算法之后，编译器的分配能力获得长足进步，形成了现在这样的编译器主导的寄存器分配格局。
+
+https://www.zhihu.com/question/24551779
+
+为什么ARM和MIPS那么多寄存器，x86那么少？

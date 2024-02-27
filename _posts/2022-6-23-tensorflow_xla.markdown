@@ -104,18 +104,6 @@ graph compile -> hlo graph build -> hlo pass pipelime -> hlo dataflow analysis -
 
 ---
 
-LHLO："late"-HLO，经过buffer assignment后的HLO。HLO和LHLO的区别在于HLO注重的是tensor的表达，不考虑到内存的分配。
-
-MHLO："meta"-HLO dialect，是HLO风格的MLIR dialect， 并且在IR上扩展支持了dynamic shape。XLA HLO 的shape是静态不可变的，不同shape需要重新编译；MHLO支持动态shape，IR本身有能力表达shape计算和动态shape信息的传递。
-
-LMHLO："late"-"meta"-HLO dialect。是LHLO风格的MLIR dialect。
-
-https://zhuanlan.zhihu.com/p/622562160
-
-XLA IR：HLO、LHLO、MHLO和LMHLO
-
----
-
 参考：
 
 https://zhuanlan.zhihu.com/p/71980945

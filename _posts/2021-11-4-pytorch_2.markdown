@@ -354,23 +354,3 @@ Pytorch有什么节省内存（显存）的小技巧？
 https://mp.weixin.qq.com/s/xe5zmJklT2sqn_zffmyrLg
 
 Sharded:在相同显存的情况下使pytorch模型的参数大小加倍
-
-https://mp.weixin.qq.com/s/maOnO_o5y19X2D-ZnLjsJA
-
-PyTorch中的In-place操作是什么？为什么要避免使用这种操作？
-
-https://zhuanlan.zhihu.com/p/299736532
-
-使用PyTorch 1.6 for Android
-
-https://mp.weixin.qq.com/s/1ugk6uI6lfWEEUvtKIfYNA
-
-9个让PyTorch模型训练提速的技巧！
-
-https://mp.weixin.qq.com/s/kZvdgWqk1KLi790rly3YYQ
-
-Pytorch中的分布式神经网络训练
-
-https://mp.weixin.qq.com/s/biHcUt55-9RfqYJ_Dg_7Tg
-
-TorchMetrics：PyTorch的指标度量库

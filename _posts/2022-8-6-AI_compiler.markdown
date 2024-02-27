@@ -239,13 +239,17 @@ Multi-Level IR
 
 tensorflow/compiler/mlir
 
-三种到XLA的IR dialect：
+几种到XLA的IR dialect：
 
-chlo：client HLO dialect，上层前端的IR。
+DHLO：Dynamic HLO。
 
-mhlo：支持动态shape的IR。
+CHLO：client HLO dialect，上层前端的IR。
 
-lmhlo：内存分配之后的IR，也就是无动态shape的IR。
+LHLO："late"-HLO，经过buffer assignment后的HLO。HLO和LHLO的区别在于HLO注重的是tensor的表达，不考虑到内存的分配。
+
+MHLO："meta"-HLO dialect，是HLO风格的MLIR dialect， 并且在IR上扩展支持了dynamic shape。XLA HLO的shape是静态不可变的，不同shape需要重新编译；MHLO支持动态shape，IR本身有能力表达shape计算和动态shape信息的传递。
+
+LMHLO："late"-"meta"-HLO dialect。是LHLO风格的MLIR dialect。即内存分配之后的IR，也就是无动态shape的IR。
 
 开源项目：
 
@@ -264,6 +268,14 @@ mlir-hlo cpu jit
 https://zhuanlan.zhihu.com/p/470439442
 
 elementwise fusion(hlo vs mhlo vs linalg)
+
+https://zhuanlan.zhihu.com/p/622562160
+
+XLA IR：HLO、LHLO、MHLO和LMHLO
+
+https://zhuanlan.zhihu.com/p/609386195
+
+hlo --> linalg
 
 ---
 
@@ -333,6 +345,28 @@ Torch-MLIR技术详解
 
 ---
 
+```
+#map = affine_map<(m, n, k) -> (m, k)>
+#map1 = affine_map<(m, n, k) -> (k, n)>
+#map2 = affine_map<(m, n, k) -> (m, n)>
+module {
+  func.func @main(%arg0: tensor<10x64xf32>, %arg1: tensor<64x16xf32>) -> tensor<10x16xf32> {
+    %0 = tensor.empty() : tensor<10x16xf32>
+    %1 = linalg.generic {indexing_maps = [#map, #map1, #map2], iterator_types = ["parallel", "parallel", "reduction"]} ins(%arg0, %arg1 : tensor<10x64xf32>, tensor<64x16xf32>) outs(%0 : tensor<10x16xf32>) {
+    ^bb0(%in: f32, %in_0: f32, %out: f32):
+      %2 = arith.mulf %in, %in_0 : f32
+      %3 = arith.addf %out, %2 : f32
+      linalg.yield %3 : f32
+    } -> tensor<10x16xf32>
+    return %1 : tensor<10x16xf32>
+  }
+}
+```
+
+上例是一个matmul算子的MLIR，`linalg.generic`表示了该指令属于linalg dialect。
+
+---
+
 参考：
 
 https://mp.weixin.qq.com/s/fal6vz9gaZMbR41QMGE3AQ
@@ -382,13 +416,3 @@ https://wzzju.github.io/mlir/jax/xla/2022/09/12/mlir-pass/
 https://zhuanlan.zhihu.com/p/446836964
 
 MLIR中Dialects分类及关联
-
-# 编译原理+
-
-x86一开始并没有使用太多的通用寄存器，原因之一（注意，只是之一）是当时的编译器无力进行寄存器分配，让编译器自动决定程序中众多变量，哪些应该装入寄存器，哪些应该换出，哪些变量应该映射到同一个寄存器上，并不是一件易事，JVM采用堆栈结构的原因之一，就是不信任编译器的寄存器分配能力，转而使用堆栈结构，躲开寄存器分配的难题。
-
-到80年代早期，IBM的G. J. Chaitin公开了他们的图染色寄存器分配算法之后，编译器的分配能力获得长足进步，形成了现在这样的编译器主导的寄存器分配格局。
-
-https://www.zhihu.com/question/24551779
-
-为什么ARM和MIPS那么多寄存器，x86那么少？
