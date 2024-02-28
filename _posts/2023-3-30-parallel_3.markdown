@@ -237,6 +237,16 @@ https://huggingface.co/blog/zh/bloom-inference-optimization
 
 https://huggingface.co/blog/zh/bloom-megatron-deepspeed
 
+## LLAMA
+
+代码：
+
+https://github.com/facebookresearch/llama
+
+量化的LLAMA模型：
+
+https://huggingface.co/TheBloke/Llama-2-7B-Chat-GPTQ
+
 # 工具
 
 https://zhuanlan.zhihu.com/p/412118353

@@ -25,6 +25,16 @@ Optimum又是另一开源项目的封装：
 
 https://onnxruntime.ai/docs/performance/transformers-optimization.html
 
+---
+
+Huggingface的transformers项目，为该网站HUB下的模型提供了支撑，成为了目前最流行的transformers专用框架。
+
+代码：
+
+https://github.com/huggingface/transformers
+
+---
+
 参考：
 
 https://zhuanlan.zhihu.com/p/535100411

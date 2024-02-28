@@ -101,6 +101,10 @@ https://pytorch.org/tutorials/prototype/pt2e_quant_x86_inductor.html
 
 PyTorch 2 Export Quantization with X86 Backend through Inductor
 
+https://mlir.llvm.org/docs/Quantization/
+
+Quantization
+
 ## 参考
 
 https://mp.weixin.qq.com/s/zhkaenFdnB5KgaEYb-XDEQ
