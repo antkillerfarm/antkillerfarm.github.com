@@ -35,6 +35,10 @@ https://zhuanlan.zhihu.com/p/665375124
 
 俄军一发入魂，乌军128旅炮兵指挥系统被团灭
 
+https://zhuanlan.zhihu.com/p/684545499
+
+俄罗斯英雄在颁奖集会时被乌克兰海马斯袭击
+
 ---
 
 

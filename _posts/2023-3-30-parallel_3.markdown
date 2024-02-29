@@ -109,6 +109,16 @@ fine tune的示例：
 
 examples/NLG/src/gpt2_ft.py
 
+---
+
+![](/images/img5/LLM_Adapter.png)
+
+类似LORA这种，用较少参数量的fine-tuning，取代全参数量fine-tuning的方法，被称为Adapter，或者parameter-efficient fine-tuning (PEFT)。
+
+论文：《LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models》
+
+---
+
 参考：
 
 https://huggingface.co/datasets/HuggingFace-CN-community/translation/blob/main/lora_cn.md

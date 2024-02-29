@@ -79,6 +79,10 @@ https://www.geogebra.org/
 
 GeoGebra官网包含了很多网友分享的几何绘图，所以常用图形就不要自己画了，找个现成的改改更合适。
 
+安装包下载：
+
+https://download.geogebra.org/installers/6.0
+
 ## Maxima
 
 微积分的数值解很多软件都能计算，但解析解就不行了。Maxima就是这样一款Computer Algebra System的软件。
