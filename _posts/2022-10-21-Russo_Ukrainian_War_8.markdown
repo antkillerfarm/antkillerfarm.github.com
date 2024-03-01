@@ -9,7 +9,7 @@ category: Russo Ukrainian War
 
 # 俄乌战争
 
-## 人物（续）
+## 群雄（续）
 
 该党党产哪儿来的？
 

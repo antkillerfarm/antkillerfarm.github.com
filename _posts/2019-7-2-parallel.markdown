@@ -254,19 +254,3 @@ https://zhuanlan.zhihu.com/p/363710263
 https://downey.io/notes/omscs/cse6220/distributed-memory-model-mpi-collectives/
 
 distributed memory model and mpi collectives
-
-https://blog.csdn.net/q19149/article/details/102594031
-
-集合通信函数图解
-
-https://zhuanlan.zhihu.com/p/465967735
-
-分布式训练硬核技术——通讯原语
-
-https://zhuanlan.zhihu.com/p/276122469
-
-分布式训练常用技术简介
-
-https://zhuanlan.zhihu.com/p/425830285
-
-最理想的点到点通信库究竟是怎样的？

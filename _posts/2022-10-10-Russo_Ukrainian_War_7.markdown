@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争（七）——人物（6）
+title:  俄乌战争（七）——群雄（3）
 category: Russo Ukrainian War 
 ---
 
@@ -9,7 +9,7 @@ category: Russo Ukrainian War
 
 # 俄乌战争
 
-## 人物（续）
+## 群雄（续）
 
 基瓦在乌克兰最高拉达开会时打飞机，被人抓住，还是两次，这么搞笑的的人才，全世界估计也是独一份。
 

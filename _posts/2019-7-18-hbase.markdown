@@ -319,3 +319,11 @@ ensmallen是一个基于Armadillo的数学优化方面的C++库。
 官网：
 
 https://ensmallen.org/
+
+## highway
+
+Google推出的一个CPU SIMD的计算库。
+
+官网：
+
+https://github.com/google/highway

@@ -231,7 +231,17 @@ https://zhuanlan.zhihu.com/p/662498827
 
 大模型推理加速：看图学KV Cache
 
-# TensorRT-LLM
+# LLM Inference
+
+https://zhuanlan.zhihu.com/p/653352979
+
+LLM七种推理服务框架总结
+
+https://zhuanlan.zhihu.com/p/671347964
+
+大模型(LLM)推理框架汇总
+
+## TensorRT-LLM
 
 TensorRT-LLM是NVIDIA推出的基于TensorRT的LLM推理工具。
 
@@ -239,7 +249,13 @@ TensorRT-LLM是NVIDIA推出的基于TensorRT的LLM推理工具。
 
 https://github.com/NVIDIA/TensorRT-LLM/
 
-# 实战经验
+## vLLM
+
+https://docs.vllm.ai/en/latest/
+
+Easy, fast, and cheap LLM serving for everyone
+
+# LLM实战经验
 
 https://pytorch.org/blog/high-performance-llama-2/
 
@@ -257,17 +273,17 @@ https://github.com/facebookresearch/llama
 
 https://huggingface.co/TheBloke/Llama-2-7B-Chat-GPTQ
 
+## GEMMA
+
+官网：
+
+https://www.kaggle.com/models/google/gemma
+
 # 工具
 
 https://zhuanlan.zhihu.com/p/412118353
 
 Kokkos:一个异构并行计算通用平台
-
-# vLLM
-
-https://docs.vllm.ai/en/latest/
-
-Easy, fast, and cheap LLM serving for everyone
 
 # 参考
 
@@ -338,19 +354,3 @@ https://mp.weixin.qq.com/s/s7sHzzLANOp8-1LxgXQskA
 https://mp.weixin.qq.com/s/IQMXg6nIJO-9-IG3mJpvRg
 
 ElasticDL：同时提升集群利用率和研发效率的分布式深度学习框架
-
-https://mp.weixin.qq.com/s/sn8fMAbJbeT6JUbCpBpN6A
-
-Jeff Dean与David Patterson：不思考体系结构的深度学习研究者不是好工程师
-
-https://mp.weixin.qq.com/s/6zLrWJ4nE0bHFlVe5dMxHw
-
-分布式深度学习新进展：让“分布式”和“深度学习”真正深度融合
-
-https://mp.weixin.qq.com/s/hjC-WTMIpbWWpmXoLBfD2g
-
-腾讯大规模分布式机器学习系统无量是如何进行技术选型的？
-
-https://mp.weixin.qq.com/s/mg-d1W5i9rzaLMNrvq0tSQ
-
-32分钟训练神经机器翻译，速度提升45倍
