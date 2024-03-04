@@ -15,6 +15,10 @@ https://finance.sina.com.cn/tech/2021-06-13/doc-ikqciyzi9362614.shtml
 
 SpaceX申请运营第二代Starlink终端 天线输出功率减半
 
+https://zhuanlan.zhihu.com/p/669146560
+
+​星链终端所用芯片梳理及商业机遇
+
 ---
 
 https://zhuanlan.zhihu.com/p/272628707

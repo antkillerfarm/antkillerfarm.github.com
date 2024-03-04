@@ -151,6 +151,14 @@ hipSYCL：
 
 https://github.com/illuhad/hipSYCL
 
+## PoCL
+
+Portable Computing Language是另一个知名的OpenCL实现。
+
+官网：
+
+http://portablecl.org/
+
 ## OpenVG
 
 OpenVG是针对诸如Flash和SVG的矢量图形算法库提供底层硬件加速界面的免授权费、跨平台应用程序接口API。

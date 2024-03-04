@@ -272,3 +272,7 @@ https://zhuanlan.zhihu.com/p/663655155
 https://zhuanlan.zhihu.com/p/666956540
 
 悲壮的乌克兰爱情故事
+
+https://zhuanlan.zhihu.com/p/684832394
+
+一个斯拉夫人的半辈子，根据我寒假期间在利沃夫和一个俄族乌克兰人的线下&TG的交流整理而成。

@@ -380,3 +380,7 @@ https://zhuanlan.zhihu.com/p/683258678
 https://zhuanlan.zhihu.com/p/684145132
 
 普军在中央军区“军官之家”举行性派对，引发俄民众愤怒：亵渎！
+
+https://zhuanlan.zhihu.com/p/685046754
+
+“他在胡说八道什么？”——波兰外长在联合国安理会驳斥俄罗斯

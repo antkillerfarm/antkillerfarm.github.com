@@ -211,6 +211,34 @@ with open(f"svg/save/dir/{drawer._name}.svg", mode="wb") as f:
 
 ---
 
+custom op:
+
+```cpp
+XlaDeviceType hw_type = static_cast<XlaDeviceType>(GetCurrentDevice().type());
+if (hw_type == XlaDeviceType::TPU)
+{
+  resized =xla::CustomCall(...);
+}
+```
+
+---
+
+动态注册plugin：
+
+torch_xla/experimental/plugins.py
+
+```python
+    npu_plugin = NpuPlugin()
+    xp.use_dynamic_plugins()
+    xp.register_plugin("npu", npu_plugin)
+    xr.set_device_type("npu")
+
+    device_type = xr.device_type()
+    assert device_type == "npu"
+```
+
+---
+
 参考：
 
 https://pytorch.org/blog/pytorch-2.0-xla/
@@ -377,23 +405,3 @@ XLA探究：矩阵乘法
 https://zhuanlan.zhihu.com/p/427444916
 
 Tensorflow编译加速器XLA源码深入解读
-
-https://sketch2sky.com/2019/09/24/tensorflow-jit-%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3/
-
-Tensorflow JIT技术详解
-
-https://blog.csdn.net/gaofeipaopaotang/article/details/80679100
-
-模型优化之XLA（上）
-
-https://blog.csdn.net/gaofeipaopaotang/article/details/80703367
-
-模型优化之XLA（下）
-
-https://blog.csdn.net/weixin_41644391/article/details/120948964
-
-MarkForCompilationPass
-
-https://blog.csdn.net/weixin_41644391/article/details/120949032
-
-EncapsulateSubgraphsPass

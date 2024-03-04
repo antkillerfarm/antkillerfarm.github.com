@@ -416,3 +416,7 @@ https://wzzju.github.io/mlir/jax/xla/2022/09/12/mlir-pass/
 https://zhuanlan.zhihu.com/p/446836964
 
 MLIR中Dialects分类及关联
+
+https://zhuanlan.zhihu.com/p/541263478
+
+机器学习编译器代码生成相关 MLIR Dialect

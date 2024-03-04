@@ -140,3 +140,21 @@ https://zhuanlan.zhihu.com/p/675530409
 https://zhuanlan.zhihu.com/p/683770252
 
 泽连斯基在俄乌战争爆发两周年纪念日上发表讲话
+
+# 群雄
+
+Mariana Bezuhla，女，乌克兰国家安全、国防和情报委员会的副主席。
+
+https://zhuanlan.zhihu.com/p/679034693
+
+Babel有关贝祖赫拉的报道
+
+---
+
+纳瓦尔尼葬礼上，一个俄罗斯妇女将普京和纳瓦尔尼做比较：
+
+一个人牺牲自己保护国家，另一个人牺牲国家保护自己。
+
+https://zhuanlan.zhihu.com/p/684853841
+
+慈悲为怀 普京总统霸气允许俄罗斯人向纳瓦尔尼坟墓告别

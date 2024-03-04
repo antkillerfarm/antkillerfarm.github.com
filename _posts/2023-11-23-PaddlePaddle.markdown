@@ -249,6 +249,28 @@ https://zhuanlan.zhihu.com/p/664723980
 
 # XLA+
 
+## AutoClustering（续）
+
+https://sketch2sky.com/2019/09/24/tensorflow-jit-%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3/
+
+Tensorflow JIT技术详解
+
+https://blog.csdn.net/gaofeipaopaotang/article/details/80679100
+
+模型优化之XLA（上）
+
+https://blog.csdn.net/gaofeipaopaotang/article/details/80703367
+
+模型优化之XLA（下）
+
+https://blog.csdn.net/weixin_41644391/article/details/120948964
+
+MarkForCompilationPass
+
+https://blog.csdn.net/weixin_41644391/article/details/120949032
+
+EncapsulateSubgraphsPass
+
 ## Grappler
 
 Grappler是TensorFlow运行时中的默认计算图优化系统。
@@ -366,13 +388,3 @@ Tensorflow/XLA探究
 https://wzzju.github.io/tensorflow/xla/2021/06/12/xla-overview/
 
 XLA编译执行原理分析
-
-# 编译原理+
-
-x86一开始并没有使用太多的通用寄存器，原因之一（注意，只是之一）是当时的编译器无力进行寄存器分配，让编译器自动决定程序中众多变量，哪些应该装入寄存器，哪些应该换出，哪些变量应该映射到同一个寄存器上，并不是一件易事，JVM采用堆栈结构的原因之一，就是不信任编译器的寄存器分配能力，转而使用堆栈结构，躲开寄存器分配的难题。
-
-到80年代早期，IBM的G. J. Chaitin公开了他们的图染色寄存器分配算法之后，编译器的分配能力获得长足进步，形成了现在这样的编译器主导的寄存器分配格局。
-
-https://www.zhihu.com/question/24551779
-
-为什么ARM和MIPS那么多寄存器，x86那么少？
