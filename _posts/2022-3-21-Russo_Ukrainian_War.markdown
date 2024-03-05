@@ -266,3 +266,7 @@ https://zhuanlan.zhihu.com/p/673777418
 https://zhuanlan.zhihu.com/p/653596030
 
 烽火燃不息，征战无已时——俄乌二周年战记
+
+https://zhuanlan.zhihu.com/p/685232548
+
+战略意图与军事能力——详析2024年的俄乌战争前景

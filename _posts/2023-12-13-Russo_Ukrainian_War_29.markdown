@@ -151,38 +151,6 @@ https://zhuanlan.zhihu.com/p/648161118
 
 他的名字是Vladyslav Molodyh。
 
-## 冬将军
+---
 
-北溪1号：55 BCM
-
-北溪2号：55 BCM
-
-“地中海之气”管道（Gasoducto Medgaz）：10 BCM
-
-马格里布管道（Gasoducto del Magreb）：12.5 BCM
-
-伊伦（Irún）管道：2.1 BCM
-
-拉罗（Larrau）管道：5.3 BCM
-
-规划中的MidCat管道：7.5 BCM
-
-https://www.zhihu.com/question/551675061
-
-想问下欧洲冬天到底多冷，没俄罗斯天然气就能冻死？
-
-https://zhuanlan.zhihu.com/p/364423447
-
-只差5％，美国开始搞事情（北溪二号）
-
-https://www.zhihu.com/question/555941937
-
-“北溪”管道遭破坏发现3处泄露，泄漏区域发生强烈水下爆炸，这会造成什么影响？哪些信息值得关注？
-
-https://view.inews.qq.com/wxn/20221003A048FO00
-
-27年沉浮，“北溪”背后的历史暗战
-
-https://www.zhihu.com/question/582874371
-
-如何看待美国著名记者发文称“北溪管道系美军炸毁”?
+十年前，乌萝海军第10航空旅在旅长伊霍尔·贝德扎伊上校的指挥下不顾鹅的挽留和封锁采取无线电静默的方式从克里米亚的萨科机场起飞返回本土。2022年5月7日，身为海航副司令的他替换下了一位刚有孩子不到3个月的年轻父亲执行去多瑙河口搜救的任务，在执行任务中他驾驶的MI-14被SU-30击落。5月11日被追授金星勋章。
