@@ -137,6 +137,12 @@ https://mp.weixin.qq.com/s/Disa8tS398J1mjwXkz5jrg
 
 Advanced Methods for Neural End-to-End Speech Processing
 
+# whisper
+
+https://zhuanlan.zhihu.com/p/678406937
+
+openai开源的语音识别whisper部署教程
+
 # 语音合成
 
 语音合成（Speech synthesis），有时也叫做text-to-speech (TTS)。
