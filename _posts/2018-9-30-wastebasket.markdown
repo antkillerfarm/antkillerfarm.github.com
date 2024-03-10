@@ -272,17 +272,3 @@ https://my.oschina.net/chipo/blog/5161697
 最讨厌的是郎朗这种有才华没钱的，去考试，肯定能考上，占用老师名额，还不给钱，这老师巴不得郎朗放弃直接走掉，可是郎朗听了半年责骂都没放弃，最后这老师忍不住了，只能直接明说，把郎朗扫地出门了。
 
 央音选了5个孩子去德国，郎朗没选上，后来郎朗自费去比赛，得了冠军，最后留在国外了。
-
----
-
-https://mp.weixin.qq.com/s/1dlOCpoJiCkh55WDAajLuw
-
-内卷、找关系、作弊、丑闻-美国富人的名校之梦
-
-https://mp.weixin.qq.com/s/eI-u_RsabtuyRajDYnnZDg
-
-殷极物理竞赛作弊事件
-
-https://www.aiweinews.com/archives/27796.html
-
-知乎：清华学霸情侣马艺妮宋思睿约北大妹子3P被拒挂朋友圈

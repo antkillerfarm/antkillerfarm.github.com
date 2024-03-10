@@ -144,7 +144,17 @@ peephole optimization
 
 https://blog.csdn.net/liumf2005/article/details/8690377
 
-说说静态单赋值（SSA,Static Single-Assignment)
+说说静态单赋值（SSA,Static Single-Assignment）
+
+---
+
+https://juejin.cn/post/7218564871831748664
+
+C++ Standard Library ABI是什么？
+
+https://zhuanlan.zhihu.com/p/125197727
+
+_GLIBCXX_USE_CXX11_ABI
 
 ## Transpiler
 

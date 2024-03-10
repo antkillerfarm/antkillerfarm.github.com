@@ -161,6 +161,18 @@ https://www.zhihu.com/question/610084775
 
 # 真垃圾筐
 
+https://mp.weixin.qq.com/s/1dlOCpoJiCkh55WDAajLuw
+
+内卷、找关系、作弊、丑闻-美国富人的名校之梦
+
+https://mp.weixin.qq.com/s/eI-u_RsabtuyRajDYnnZDg
+
+殷极物理竞赛作弊事件
+
+https://www.aiweinews.com/archives/27796.html
+
+知乎：清华学霸情侣马艺妮宋思睿约北大妹子3P被拒挂朋友圈
+
 https://www.zhihu.com/question/471268212
 
 如何看待上海财经大学一女博士拿不到学位，学院称“论文不符要求”？是否与此前多次举报教授论文抄袭有关？

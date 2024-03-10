@@ -384,3 +384,7 @@ https://zhuanlan.zhihu.com/p/684145132
 https://zhuanlan.zhihu.com/p/685046754
 
 “他在胡说八道什么？”——波兰外长在联合国安理会驳斥俄罗斯
+
+https://www.zhihu.com/question/647244533
+
+如何看待海马斯被伊斯坎德尔摧毁？
