@@ -280,7 +280,3 @@ https://mednafen.github.io
 mednaffe官网：
 
 https://github.com/AmatCoder/mednaffe
-
-darkstation：PS模拟器。支持CHD格式的ROM，CHD格式是一种可以替代ISO的压缩格式。
-
-RetroArch：一个多平台模拟器。

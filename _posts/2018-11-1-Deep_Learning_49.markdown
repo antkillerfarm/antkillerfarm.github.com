@@ -296,3 +296,21 @@ https://mp.weixin.qq.com/s/IWUxVzpdGIX1Oxn4KxjhHA
 https://mp.weixin.qq.com/s/IWUxVzpdGIX1Oxn4KxjhHA
 
 TransGAN：两个Transformer可以构造一个强大的GAN
+
+# 并行 & 框架 & 优化+
+
+https://zhuanlan.zhihu.com/p/33351291
+
+基于忆阻器（ReRAM），Computing-in-Memory的DLA
+
+https://mp.weixin.qq.com/s/UbZtUL6Iveb4S3nTU0liGw
+
+深度神经网络的分布式训练概述：常用方法和技巧全面总结
+
+https://mp.weixin.qq.com/s/kLXJsHbBnRIFC3NLChPhzA
+
+如何高效进行大规模分类？港中文联合商汤提出新方法
+
+https://www.zhihu.com/question/454589636
+
+为什么模型和数据都在gpu上，却打不满GPU的使用率？

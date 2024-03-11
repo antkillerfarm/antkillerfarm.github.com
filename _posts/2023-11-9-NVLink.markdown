@@ -309,6 +309,10 @@ https://www.zhihu.com/question/430936274
 
 苹果的统一内存和集成显卡与CPU共用内存有什么区别？
 
+https://www.zhihu.com/question/22233341
+
+CPU与GPU之间是如何通信的？
+
 ## RDMA
 
 RDMA网卡（Remote Direct Memory Access，这是一种硬件的网络技术，它使得计算机访问远程的内存时无需远程机器上CPU的干预）已经可以提供50~100Gbps的网络带宽和微秒级的传输延迟。

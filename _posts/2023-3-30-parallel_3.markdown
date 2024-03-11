@@ -273,6 +273,12 @@ https://github.com/facebookresearch/llama
 
 https://huggingface.co/TheBloke/Llama-2-7B-Chat-GPTQ
 
+参考：
+
+https://github.com/jacoblee93/fully-local-pdf-chatbot
+
+一个本地版本的阅读PDF的chatbot
+
 ## GEMMA
 
 官网：
@@ -342,15 +348,3 @@ https://mp.weixin.qq.com/s/pqxiF6yEZzrw8qXu2hEsaA
 https://mp.weixin.qq.com/s/Jcz4XWDjMmbhmAiI_zBQXQ
 
 流式计算优化：时效性
-
-https://mp.weixin.qq.com/s/iAHvfgn54zIwfM9K8KFJnw
-
-DLM：微信大规模分布式n-gram语言模型系统
-
-https://mp.weixin.qq.com/s/s7sHzzLANOp8-1LxgXQskA
-
-谷歌开发者大会上，蚂蚁金服开源ElasticDL分布式深度学习系统
-
-https://mp.weixin.qq.com/s/IQMXg6nIJO-9-IG3mJpvRg
-
-ElasticDL：同时提升集群利用率和研发效率的分布式深度学习框架

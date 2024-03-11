@@ -175,6 +175,8 @@ https://www.bilibili.com/video/BV1GC4y1D7Vp
 
 本片喜提豆瓣网最高级别认可：删除条目。除此之外，豆瓣还将“20 Days in Mariupol”乃至“马里乌波尔”设置为贴文锁定触发词。
 
+《马里乌波尔的20天》获得了奥斯卡最佳纪录片奖。（2024年）
+
 https://mp.weixin.qq.com/s/XjiFqQX7iuKMOuyYlTxN1Q
 
 纪录片《马里乌波尔的20天》

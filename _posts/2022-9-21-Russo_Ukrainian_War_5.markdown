@@ -152,3 +152,11 @@ https://www.zhihu.com/question/643669788
 https://zhuanlan.zhihu.com/p/682807623
 
 推翻偶像：为什么“铁将军”扎卢日内不再是总司令
+
+https://zhuanlan.zhihu.com/p/680553822
+
+未解之谜之贝小姐的重拳出击
+
+https://zhuanlan.zhihu.com/p/686108735
+
+摘下面具：扎卢日内为什么不是铁将军

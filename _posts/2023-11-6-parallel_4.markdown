@@ -9,6 +9,18 @@ category: DL acceleration
 
 # 并行 & 框架 & 优化
 
+https://mp.weixin.qq.com/s/iAHvfgn54zIwfM9K8KFJnw
+
+DLM：微信大规模分布式n-gram语言模型系统
+
+https://mp.weixin.qq.com/s/s7sHzzLANOp8-1LxgXQskA
+
+谷歌开发者大会上，蚂蚁金服开源ElasticDL分布式深度学习系统
+
+https://mp.weixin.qq.com/s/IQMXg6nIJO-9-IG3mJpvRg
+
+ElasticDL：同时提升集群利用率和研发效率的分布式深度学习框架
+
 https://mp.weixin.qq.com/s/sn8fMAbJbeT6JUbCpBpN6A
 
 Jeff Dean与David Patterson：不思考体系结构的深度学习研究者不是好工程师
@@ -370,19 +382,3 @@ https://mp.weixin.qq.com/s/wIdTDHEPffWqHA3_XWBLyw
 没错，纯SQL查询语句可以实现神经网络。
 
 >SQL跑神经网络固然没有太大意义，然而分布式数据库已经有数十年的历史，对于设计分布式深度学习框架亦有重大的启发意义。
-
-https://zhuanlan.zhihu.com/p/33351291
-
-基于忆阻器（ReRAM），Computing-in-Memory的DLA
-
-https://mp.weixin.qq.com/s/UbZtUL6Iveb4S3nTU0liGw
-
-深度神经网络的分布式训练概述：常用方法和技巧全面总结
-
-https://mp.weixin.qq.com/s/kLXJsHbBnRIFC3NLChPhzA
-
-如何高效进行大规模分类？港中文联合商汤提出新方法
-
-https://www.zhihu.com/question/454589636
-
-为什么模型和数据都在gpu上，却打不满GPU的使用率？

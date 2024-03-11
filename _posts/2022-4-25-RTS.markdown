@@ -117,6 +117,8 @@ http://www.hanhuns.com/
 
 PS：2005年刚接触《罗马：全面战争》的时候，我的PC跑不动战术界面，当时基本是把他当英雄无敌类的战略游戏来玩。
 
+---
+
 2023.11
 
 体验了一下《战锤2：全面战争》，确实给人耳目一新的感觉。
@@ -224,27 +226,3 @@ OpenRA提供了Debug模式，相当于内置了作弊器。。。
 https://zhuanlan.zhihu.com/p/682233241
 
 开源跨平台实时战略游戏引擎OpenRA
-
-## OpenSAGE
-
-W3D -> SAGE -> RNA
-
-使用W3D引擎的游戏：
-
-Emperor: Battle for Dune
-
-使用SAGE引擎的游戏：
-
-命令与征服：将军
-
-命令与征服3
-
-使用RNA引擎的游戏：
-
-红色警戒3
-
-命令与征服4
-
-SAGE引擎的开源版本OpenSAGE：
-
-https://github.com/OpenSAGE/OpenSAGE/
