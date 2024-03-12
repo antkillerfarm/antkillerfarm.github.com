@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NN中间语言, AI Compiler, MLIR
+title:  NN中间语言, AI Compiler
 category: toolchain 
 ---
 
@@ -177,10 +177,6 @@ https://mp.weixin.qq.com/s/jjT0x99ht8xtfWmzL-0R1A
 
 深度学习的IR“之争”
 
-https://mp.weixin.qq.com/s/hEt4BSPMP1WWuHFMEbICqw
-
-机器学习编译器：MLIR Dialect体系
-
 https://mp.weixin.qq.com/s/G36IllLOTXXbc4LagbNH9Q
 
 编译器与IR的思考: LLVM IR，SPIR-V到MLIR
@@ -231,192 +227,166 @@ https://gitee.com/mindspore/akg/
 
 ![](/images/img5/akg-design.png)
 
-# MLIR
+# XLA+
 
-Multi-Level IR
+## AutoClustering（续）
+
+https://sketch2sky.com/2019/09/24/tensorflow-jit-%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3/
+
+Tensorflow JIT技术详解
+
+https://blog.csdn.net/gaofeipaopaotang/article/details/80679100
+
+模型优化之XLA（上）
+
+https://blog.csdn.net/gaofeipaopaotang/article/details/80703367
+
+模型优化之XLA（下）
+
+https://blog.csdn.net/weixin_41644391/article/details/120948964
+
+MarkForCompilationPass
+
+https://blog.csdn.net/weixin_41644391/article/details/120949032
+
+EncapsulateSubgraphsPass
+
+## Grappler
+
+Grappler是TensorFlow运行时中的默认计算图优化系统。
+
+Grappler生成的计算图，会做为XLA的输入。
+
+https://www.tensorflow.org/guide/graph_optimization
+
+使用Grappler优化TensorFlow计算图
+
+https://blog.csdn.net/gaofeipaopaotang/article/details/80621902
+
+模型优化之Grappler
+
+## 代码生成
+
+如果是CPU/GPU的话，一般会用LLVM生成代码。
+
+xla.cpu.IrEmitter，将xla.HloModule中的每个xla.HloComputation转化为llvm IR表示，并创建对应的llvm.Module。
+
+如果是DSA的话，一般采用直接代理HLO IR的模式。
+
+xla.DfsHloVisitorBase会遍历整个Cluster。
+
+## FSDP for torch_xla
+
+FSDP的基本概念，参见《并行 & 框架 & 优化（四）》。
+
+分布式，包括FSDP的测试用例主要在：
+
+- test/test_train_mp_mnist.py
+- test/test_train_mp_mnist_zero1.py
+- test/test_train_mp_mnist_fsdp_with_ckpt.py
+
+XlaFullyShardedDataParallel
+
+参考：
+
+https://pytorch.org/blog/scaling-pytorch-models-on-cloud-tpus-with-fsdp/
+
+Scaling PyTorch models on Cloud TPUs with FSDP
+
+---
+
+FSDP的计算图会随时根据需要，创建/删除weight，如果不加特殊处理的话，后续优化环节的subexpression elimination (CSE) ，会将这些操作优化掉，所以XLA引入了OptimizationBarrier算子来阻止这个优化。
+
+## Other
+
+XLA在内的主流深度学习框架，都是基于Static Shape语义的编译器框架。即，just-in-time运行的编译器，会在运行时捕捉待编译子图的实际输入shape组合，并且为每一个输入shape组合生成一份编译结果。
+
+## JAX
+
+一款由谷歌团队打造（非官方发布），用于从纯Python和Numpy机器学习程序中生成高性能加速器（accelerator）代码，且特定于域的跟踪JIT编译器。
 
 代码：
 
-tensorflow/compiler/mlir
-
-几种到XLA的IR dialect：
-
-DHLO：Dynamic HLO。
-
-CHLO：client HLO dialect，上层前端的IR。
-
-LHLO："late"-HLO，经过buffer assignment后的HLO。HLO和LHLO的区别在于HLO注重的是tensor的表达，不考虑到内存的分配。
-
-MHLO："meta"-HLO dialect，是HLO风格的MLIR dialect， 并且在IR上扩展支持了dynamic shape。XLA HLO的shape是静态不可变的，不同shape需要重新编译；MHLO支持动态shape，IR本身有能力表达shape计算和动态shape信息的传递。
-
-LMHLO："late"-"meta"-HLO dialect。是LHLO风格的MLIR dialect。即内存分配之后的IR，也就是无动态shape的IR。
-
-开源项目：
-
-https://github.com/tensorflow/mlir-hlo
-
-https://github.com/openxla/stablehlo
-
-MLIR used in TensorFlow, JAX and Torch-MLIR.
-
-参考：
-
-https://zhuanlan.zhihu.com/p/404706825
-
-mlir-hlo cpu jit
-
-https://zhuanlan.zhihu.com/p/470439442
-
-elementwise fusion(hlo vs mhlo vs linalg)
-
-https://zhuanlan.zhihu.com/p/622562160
-
-XLA IR：HLO、LHLO、MHLO和LMHLO
-
-https://zhuanlan.zhihu.com/p/609386195
-
-hlo --> linalg
-
----
-
-![](/images/img4/codegen-dialect-hierarchy.svg)
-
-![](/images/img5/TOSA.png)
-
-![](/images/img5/MLIR.png)
-
-Affine Dialect：这种Dialect使用来自多面体编译的技术使依赖分析和循环转换高效可靠。
-
-GPU Dialect：MLIR中的GPU Dialect模拟了类似于CUDA或OpenCL的通用GPU编程范式。它的目标是提供抽象来模拟GPU特定的操作和属性。它在很大程度上意味着与供应商无关。
-
-Tensor Operator Set Architecture (TOSA) Dialect
-
-Vector Dialect：对SIMD或者SIMT模型的抽象。
-
-SCF(Structured Control Flow) Dialect：比控制流图CFG更高层的抽象，比如并行的for和while循环以及条件判断。
-
-Async Dialect：通常用来表示异步操作模型。
-
-Control Flow Graph, CFG
+https://github.com/google/jax
 
 文档：
 
-https://mlir.llvm.org/docs/Dialects/
+https://jax.readthedocs.io/en/latest/
+
+JAX的底层也是基于XLA的。
+
+JAX并不是TF的替代品，它缺失了一些数据准备和调度的功能。这些功能一般可用haiku/flax提供。
+
+RLax：这是一个基于Jax的强化学习库。
 
 参考：
 
-https://discourse.llvm.org/t/codegen-dialect-overview/2723
+https://mp.weixin.qq.com/s/IMMdbF33ZHEz7N_XwgIhHA
 
-Codegen Dialect Overview
+试试谷歌这个新工具：说不定比TensorFlow还好用！
 
----
+https://mp.weixin.qq.com/s/tZ3yWQ9--l9e81UqoUoWIQ
 
-Transform Dialect：dialect之间的调度变换都可以使用transform dialect中相关的语句来实现了，最终写成一个 transform.sequence。相较于完整的Pipeline，transform.sequence实现的调度变换十分灵活。
+要替代TensorFlow？谷歌开源机器学习库JAX
 
-官方文档：
+https://mp.weixin.qq.com/s/eaYwiV2LZNRwzPEeOA1XFg
 
-https://mlir.llvm.org/docs/Tutorials/transform/
+新星JAX ：双挑TensorFlow和PyTorch！有望担纲Google主要科学计算库和神经网络库
 
-参考：
+https://mp.weixin.qq.com/s/NhMbr_niHjSaqh2azuSaog
 
-https://zhuanlan.zhihu.com/p/624827690
+只知道TF和PyTorch还不够，快来看看怎么从PyTorch转向自动微分神器JAX
 
-transform dialect
+https://wzzju.github.io/jax/xla/2022/02/17/jax-cpp/
 
----
+JAX程序转HLO执行
 
-ONNX MLIR:
+https://zhuanlan.zhihu.com/p/532504225
 
-http://onnx.ai/onnx-mlir
+面向PyTorch用户的JAX简易教程(1): JAX介绍
 
----
+https://zhuanlan.zhihu.com/p/544216783
 
-Torch-MLIR
+面向PyTorch用户的JAX简易教程(2): 如何训练一个神经网络
 
-https://github.com/llvm/torch-mlir
+## 参考
 
-![](/images/img4/torch_mlir.jpg)
+https://mp.weixin.qq.com/s/RO3FrPxhK2GEoDCGE9DXrw
 
-TorchScript-->TorchDialect-->Linalg-on-Tensors
+利用XLA将GPU性能推向极限
 
-https://blog.csdn.net/HaoBBNuanMM/article/details/124385542
+https://mp.weixin.qq.com/s/MPI9KERDS-Al4DTBDRV04w
 
-Torch-MLIR技术详解
+TensorFlow XLA工作原理简介
 
----
+https://sketch2sky.com/
 
-```
-#map = affine_map<(m, n, k) -> (m, k)>
-#map1 = affine_map<(m, n, k) -> (k, n)>
-#map2 = affine_map<(m, n, k) -> (m, n)>
-module {
-  func.func @main(%arg0: tensor<10x64xf32>, %arg1: tensor<64x16xf32>) -> tensor<10x16xf32> {
-    %0 = tensor.empty() : tensor<10x16xf32>
-    %1 = linalg.generic {indexing_maps = [#map, #map1, #map2], iterator_types = ["parallel", "parallel", "reduction"]} ins(%arg0, %arg1 : tensor<10x64xf32>, tensor<64x16xf32>) outs(%0 : tensor<10x16xf32>) {
-    ^bb0(%in: f32, %in_0: f32, %out: f32):
-      %2 = arith.mulf %in, %in_0 : f32
-      %3 = arith.addf %out, %2 : f32
-      linalg.yield %3 : f32
-    } -> tensor<10x16xf32>
-    return %1 : tensor<10x16xf32>
-  }
-}
-```
+一个XLA方面的blog
 
-上例是一个matmul算子的MLIR，`linalg.generic`表示了该指令属于linalg dialect。
+https://tensorflow.juejin.im/performance/xla/jit.html
 
----
+使用即时编译
 
-参考：
+https://blog.slinuxer.com/2019/06/tensorflow-xla
 
-https://mp.weixin.qq.com/s/fal6vz9gaZMbR41QMGE3AQ
+TensorFlow XLA初步接触
 
-MLIR发布：全新的中介码与编译器框架
+https://github.com/horance-liu/tensorflow-internals
 
-https://zhuanlan.zhihu.com/p/361448250
+电子书《TensorFlow Internals》
 
-MLIR Toy Tutorials
+https://wzzju.github.io/tensorflow/xla/2021/06/12/xla-overview/
 
-https://zhuanlan.zhihu.com/p/141256429
+XLA编译执行原理分析
 
-MLIR文章视频汇总
+https://haosdent.gitbooks.io/tensorflow-document/content/resources/xla_prerelease.html
 
-https://zhuanlan.zhihu.com/p/379063169
+XLA: The TensorFlow compiler framework
 
-MLIR: 编译器基础架构重定义
+http://zhengsz.tech/2019/10/23/Tensorflow-XLA-%E6%8E%A2%E7%A9%B6/
 
-https://zhuanlan.zhihu.com/p/508345356
+Tensorflow/XLA探究
 
-AI编译器的概览、挑战和实践
+https://wzzju.github.io/tensorflow/xla/2021/06/12/xla-overview/
 
-https://blog.csdn.net/just_sort/article/details/123624966
-
-基于MLIR的矩阵乘法高性能GPU代码生成：一些早期结果
-
-https://zhuanlan.zhihu.com/p/442140282
-
-MLIR: A Brief Survey
-
-https://zhuanlan.zhihu.com/p/545672504
-
-MLIR原理与应用技术杂谈
-
-https://zhuanlan.zhihu.com/p/513872467
-
-面向ASIC设备的编译器框架：TVM or MLIR？
-
-https://www.zhihu.com/question/442964082
-
-如何评价MLIR项目中Linalg Dialect的设计思想？
-
-https://wzzju.github.io/mlir/jax/xla/2022/09/12/mlir-pass/
-
-浅析MLIR在Pass优化中的应用
-
-https://zhuanlan.zhihu.com/p/446836964
-
-MLIR中Dialects分类及关联
-
-https://zhuanlan.zhihu.com/p/541263478
-
-机器学习编译器代码生成相关 MLIR Dialect
+XLA编译执行原理分析

@@ -316,6 +316,18 @@ https://pytorch.org/docs/2.0/dynamo/index.html
 
 ![](/images/img5/pytorch-2.0.png)
 
+---
+
+自动求导：
+
+`from torch._dynamo.backends.common import aot_autograd`
+
+切图：
+
+`from torch.fx.passes.infra.partitioner import CapabilityBasedPartitioner`
+
+---
+
 参考：
 
 https://zhuanlan.zhihu.com/p/570989882
@@ -347,35 +359,3 @@ TorchInductor: a PyTorch-native Compiler with Define-by-Run IR and Symbolic Shap
 https://zhuanlan.zhihu.com/p/595996564
 
 聊聊PyTorch 2.0(Inductor)
-
-## TorchServe
-
-TorchServe是由AWS和Facebook合作开发的PyTorch模型服务库。
-
-代码：
-
-https://github.com/pytorch/serve
-
-参考：
-
-https://mp.weixin.qq.com/s/AtuSS5paEZ_0RvpyLEJk2g
-
-Facebook联合AWS推出PyTorch模型服务框架：可让模型快速投入生产
-
-## Hook
-
-https://zhuanlan.zhihu.com/p/362985275
-
-Pytorch获取中间层输出的几种方法
-
-https://zhuanlan.zhihu.com/p/267800207
-
-PyTorch中Hook的简单使用
-
-https://zhuanlan.zhihu.com/p/87853615
-
-pytorch的hook机制之register_forward_hook
-
-https://zhuanlan.zhihu.com/p/152314451
-
-hook技术

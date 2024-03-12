@@ -59,8 +59,10 @@ from contextlib import contextmanager
 
 @contextmanager
 def tag(name):
+    # __enter__
     print("<%s>" % name)
     yield
+    # __exit__
     print("</%s>" % name)
 
 with tag("h1"):
@@ -77,7 +79,7 @@ world
 </h1>
 ```
 
-with语句首先执行yield之前的语句，因此打印出<h1>；yield调用会执行with语句内部的所有语句，因此打印出hello和world；最后执行yield之后的语句，打印出</h1>。
+with语句首先执行yield之前的语句，因此打印出`<h1>`；yield调用会执行with语句内部的所有语句，因此打印出hello和world；最后执行yield之后的语句，打印出`</h1>`。
 
 参考：
 

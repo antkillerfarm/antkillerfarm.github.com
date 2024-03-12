@@ -95,6 +95,58 @@ PaddleDetection物体检测统一框架
 
 # Pytorch
 
+https://mp.weixin.qq.com/s/uUxwMFGF9nJiraVQsIqu2Q
+
+PyTorch重大更新：将支持自动混合精度训练！
+
+https://zhuanlan.zhihu.com/p/145427849
+
+PyTorch Parallel Training（单机多卡并行、混合精度、同步BN训练指南文档）
+
+https://mp.weixin.qq.com/s/Y6sJhnmjRwN2uopHgr7nFA
+
+让PyTorch更轻便，这款深度学习框架你值得拥有！
+
+https://zhuanlan.zhihu.com/p/104019160
+
+PyTorch常用代码段
+
+https://mp.weixin.qq.com/s/5Nq3y8hwhQG1UV9lHuBQvA
+
+13个你一定要知道的PyTorch特性
+
+https://mp.weixin.qq.com/s/cKvkvWgVPuq9y1A5q1OPEQ
+
+跟着指南学PyTorch—迁移学习教程
+
+https://mp.weixin.qq.com/s/gJgxh4l0CXTlaJaQ_FS3YQ
+
+PyTorch的数据增强与数据标准化
+
+https://mp.weixin.qq.com/s/Mo7XhRcPkgurmQPJ3Zu1ug
+
+基于PyTorch的计算机视觉框架
+
+https://mp.weixin.qq.com/s/PWABh72t92pUOJufcmzvag
+
+用PyTorch做深度学习实验！Facebook新框架Ax和BoTorch双双开源
+
+https://mp.weixin.qq.com/s/LcwlCai7PMYOBwsLXPS5HA
+
+PyTorch语义分割开源库semseg
+
+https://mp.weixin.qq.com/s/oDYMTb9NWxVsW07FLQKA_Q
+
+万字综述，核心开发者全面解读PyTorch内部机制
+
+https://www.zhihu.com/question/274635237
+
+Pytorch有什么节省内存（显存）的小技巧？
+
+https://mp.weixin.qq.com/s/xe5zmJklT2sqn_zffmyrLg
+
+Sharded:在相同显存的情况下使pytorch模型的参数大小加倍
+
 https://mp.weixin.qq.com/s/maOnO_o5y19X2D-ZnLjsJA
 
 PyTorch中的In-place操作是什么？为什么要避免使用这种操作？
@@ -246,145 +298,3 @@ https://zhuanlan.zhihu.com/p/73711222
 https://zhuanlan.zhihu.com/p/664723980
 
 单机多GPU训练
-
-# XLA+
-
-## AutoClustering（续）
-
-https://sketch2sky.com/2019/09/24/tensorflow-jit-%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3/
-
-Tensorflow JIT技术详解
-
-https://blog.csdn.net/gaofeipaopaotang/article/details/80679100
-
-模型优化之XLA（上）
-
-https://blog.csdn.net/gaofeipaopaotang/article/details/80703367
-
-模型优化之XLA（下）
-
-https://blog.csdn.net/weixin_41644391/article/details/120948964
-
-MarkForCompilationPass
-
-https://blog.csdn.net/weixin_41644391/article/details/120949032
-
-EncapsulateSubgraphsPass
-
-## Grappler
-
-Grappler是TensorFlow运行时中的默认计算图优化系统。
-
-Grappler生成的计算图，会做为XLA的输入。
-
-https://www.tensorflow.org/guide/graph_optimization
-
-使用Grappler优化TensorFlow计算图
-
-https://blog.csdn.net/gaofeipaopaotang/article/details/80621902
-
-模型优化之Grappler
-
-## 代码生成
-
-如果是CPU/GPU的话，一般会用LLVM生成代码。
-
-xla.cpu.IrEmitter，将xla.HloModule中的每个xla.HloComputation转化为llvm IR表示，并创建对应的llvm.Module。
-
-如果是DSA的话，一般采用直接代理HLO IR的模式。
-
-xla.DfsHloVisitorBase会遍历整个Cluster。
-
-## Other
-
-XLA在内的主流深度学习框架，都是基于Static Shape语义的编译器框架。即，just-in-time运行的编译器，会在运行时捕捉待编译子图的实际输入shape组合，并且为每一个输入shape组合生成一份编译结果。
-
-## JAX
-
-一款由谷歌团队打造（非官方发布），用于从纯Python和Numpy机器学习程序中生成高性能加速器（accelerator）代码，且特定于域的跟踪JIT编译器。
-
-代码：
-
-https://github.com/google/jax
-
-文档：
-
-https://jax.readthedocs.io/en/latest/
-
-JAX的底层也是基于XLA的。
-
-JAX并不是TF的替代品，它缺失了一些数据准备和调度的功能。这些功能一般可用haiku/flax提供。
-
-RLax：这是一个基于Jax的强化学习库。
-
-参考：
-
-https://mp.weixin.qq.com/s/IMMdbF33ZHEz7N_XwgIhHA
-
-试试谷歌这个新工具：说不定比TensorFlow还好用！
-
-https://mp.weixin.qq.com/s/tZ3yWQ9--l9e81UqoUoWIQ
-
-要替代TensorFlow？谷歌开源机器学习库JAX
-
-https://mp.weixin.qq.com/s/eaYwiV2LZNRwzPEeOA1XFg
-
-新星JAX ：双挑TensorFlow和PyTorch！有望担纲Google主要科学计算库和神经网络库
-
-https://mp.weixin.qq.com/s/NhMbr_niHjSaqh2azuSaog
-
-只知道TF和PyTorch还不够，快来看看怎么从PyTorch转向自动微分神器JAX
-
-https://wzzju.github.io/jax/xla/2022/02/17/jax-cpp/
-
-JAX程序转HLO执行
-
-https://zhuanlan.zhihu.com/p/532504225
-
-面向PyTorch用户的JAX简易教程(1): JAX介绍
-
-https://zhuanlan.zhihu.com/p/544216783
-
-面向PyTorch用户的JAX简易教程(2): 如何训练一个神经网络
-
-## 参考
-
-https://mp.weixin.qq.com/s/RO3FrPxhK2GEoDCGE9DXrw
-
-利用XLA将GPU性能推向极限
-
-https://mp.weixin.qq.com/s/MPI9KERDS-Al4DTBDRV04w
-
-TensorFlow XLA工作原理简介
-
-https://sketch2sky.com/
-
-一个XLA方面的blog
-
-https://tensorflow.juejin.im/performance/xla/jit.html
-
-使用即时编译
-
-https://blog.slinuxer.com/2019/06/tensorflow-xla
-
-TensorFlow XLA初步接触
-
-https://github.com/horance-liu/tensorflow-internals
-
-电子书《TensorFlow Internals》
-
-https://wzzju.github.io/tensorflow/xla/2021/06/12/xla-overview/
-
-XLA编译执行原理分析
-
-https://haosdent.gitbooks.io/tensorflow-document/content/resources/xla_prerelease.html
-
-XLA: The TensorFlow compiler framework
-
-http://zhengsz.tech/2019/10/23/Tensorflow-XLA-%E6%8E%A2%E7%A9%B6/
-
-Tensorflow/XLA探究
-
-https://wzzju.github.io/tensorflow/xla/2021/06/12/xla-overview/
-
-XLA编译执行原理分析

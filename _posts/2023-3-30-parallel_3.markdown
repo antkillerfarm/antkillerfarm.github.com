@@ -223,6 +223,10 @@ https://mp.weixin.qq.com/s/bvF50XRaA9cO2O4oB31kbg
 
 我们可以把每一层的K、V矩阵缓存起来，这就是所谓的KV Cache。
 
+![](/images/img5/QKV_cache.png)
+
+![](/images/img5/KV_Cache_2.png)
+
 https://zhuanlan.zhihu.com/p/630832593
 
 大模型推理性能优化之KV Cache解读
@@ -230,6 +234,22 @@ https://zhuanlan.zhihu.com/p/630832593
 https://zhuanlan.zhihu.com/p/662498827
 
 大模型推理加速：看图学KV Cache
+
+# GSPMD
+
+GSPMD是在GShard基础上发展而来的并行算法。
+
+《GSPMD:General and Scalable Parallelization for ML Computation Graphs》
+
+# Sequence Parallel
+
+通用性较强的Ulysses，在小规模或长序列上表现更好。
+
+《DeepSpeed Ulysses: System Optimizations for Enabling Training of Extreme Long Sequence Transformer Models》
+
+FastSeq，它能将qkv projection的计算和all-gather通信重叠，只需多占用一点内存就可更进一步提升训练效率。
+
+《FastSeq: Make Sequence Generation Faster》
 
 # LLM Inference
 
@@ -287,6 +307,10 @@ https://www.kaggle.com/models/google/gemma
 
 # 工具
 
+FairScale是由Facebook Research开发的PyTorch扩展库。FSDP就是首发于这个库。
+
+---
+
 https://zhuanlan.zhihu.com/p/412118353
 
 Kokkos:一个异构并行计算通用平台
@@ -320,31 +344,3 @@ https://mp.weixin.qq.com/s/z6gXp-EeDID1ed8_DsUbOg
 https://mp.weixin.qq.com/s/HY2yPZ--Zm5_m3B70baWjQ
 
 谷歌开源效率怪兽GPipe，速度提升25倍，CIFAR-10精度达到99%
-
-https://mp.weixin.qq.com/s/HQW2bPyDY_3ecZWP6NYr-w
-
-大规模机器学习在LinkedIn预测模型中的应用实践
-
-https://mp.weixin.qq.com/s/i1PLA1xr3CefKx1EcVUVIg
-
-谷歌破世界纪录！圆周率计算到小数点后31.4万亿位
-
-https://mp.weixin.qq.com/s/rX8L63-jDGJT6lCAj04I3Q
-
-独家解读！阿里重磅发布机器学习平台PAI 3.0
-
-https://mp.weixin.qq.com/s/Ye2GVTFIrX3SbU1-4cDLoQ
-
-你天天叫的外卖，你知道这里面深度学习的水有多深吗
-
-https://mp.weixin.qq.com/s/FIWfbCLgckVzeNvfThIl4Q
-
-阿里线下智能方案进化史
-
-https://mp.weixin.qq.com/s/pqxiF6yEZzrw8qXu2hEsaA
-
-单机训练速度提升640倍！独家解读快手商业广告模型GPU训练平台Persia
-
-https://mp.weixin.qq.com/s/Jcz4XWDjMmbhmAiI_zBQXQ
-
-流式计算优化：时效性

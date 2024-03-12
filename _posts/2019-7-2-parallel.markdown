@@ -231,6 +231,8 @@ local_rank：指在一个node上进程的相对序号，local_rank在node之间�
 
 rank与GPU之间没有必然的对应关系，一个rank可以包含多个GPU；一个GPU也可以为多个rank服务（多进程共享GPU），只是习惯上默认一个rank对应着一个GPU。
 
+world_size：所有机器进程的和。world_size = gpus_per_node * nnodes
+
 ---
 
 stencil计算：

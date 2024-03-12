@@ -207,14 +207,6 @@ https://mp.weixin.qq.com/s/sNv9UirZJ6xT3zf8XhJaRg
 
 FastFormers：实现Transformers在CPU上223倍的推理加速
 
-https://mp.weixin.qq.com/s/XQSEg2_8_1lFqWdHVG6TVA
-
-Switch Transformer: 高效稀疏的万亿参数Transformer
-
-https://zhuanlan.zhihu.com/p/362525526
-
-深入解读首个万亿级语言模型Switch Transformer
-
 https://mp.weixin.qq.com/s/6RUvMR-fjzB5PkZBQ4YFNQ
 
 BERT模型压缩：量化、剪枝和蒸馏
@@ -226,10 +218,6 @@ Fast and Effective！一文速览轻量化Transformer各领域研究进展
 # 快速BERT
 
 轻量化BERT是从计算量/时间/空间的角度出发，对于传统BERT的优化。而快速BERT主要着眼于软件工程角度，如何更好的利用各种硬件加速BERT的计算。典型的有NVIDIA的FasterTransformer和腾讯的TurboTransformer。
-
-![](/images/img5/QKV_cache.png)
-
-例如上图就是生成token的过程中，对于KV进行cache的一种优化方法。
 
 https://mp.weixin.qq.com/s/1R_plHqxTLE-Fw3TjYnlJQ
 
@@ -258,6 +246,20 @@ https://mp.weixin.qq.com/s/cDQW5992hTaeGoA7zL7Vzg
 Linformer: 线性复杂度的Attention
 
 Self-Attention 加速方法一览：ISSA、CCNet、CGNL、Linformer
+
+# Switch Transformer
+
+Mixture of Experts (MoE)
+
+![](/images/img5/MoE.png)
+
+https://mp.weixin.qq.com/s/XQSEg2_8_1lFqWdHVG6TVA
+
+Switch Transformer: 高效稀疏的万亿参数Transformer
+
+https://zhuanlan.zhihu.com/p/362525526
+
+深入解读首个万亿级语言模型Switch Transformer
 
 # Attention in CV & RS
 

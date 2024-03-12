@@ -327,6 +327,8 @@ TAMER（Training an Agent Manually via Evaluative Reinforcement，评估式强�
 
 ![](/images/img5/RLHF_2.png)
 
+![](/images/img5/rlhf.jpg)
+
 论文：
 
 《DeepSpeed-Chat: Easy, Fast and Affordable RLHF Training of ChatGPT-like Models at All Scales》
@@ -364,6 +366,10 @@ https://zhuanlan.zhihu.com/p/667152180
 https://zhuanlan.zhihu.com/p/621456865
 
 DeepSpeed-Chat开源了
+
+https://brightliao.com/2023/05/25/chatgpt-rlhf/
+
+ChatGPT的自动优化
 
 ## 微软小冰
 

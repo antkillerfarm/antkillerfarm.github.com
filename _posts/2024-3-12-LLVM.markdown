@@ -1,0 +1,448 @@
+---
+layout: post
+title:  LLVM, MLIR
+category: toolchain 
+---
+
+* toc
+{:toc}
+
+# LLVM
+
+## 概述
+
+LLVM最初设计时，主要做优化方面的研究，所以当时的全称叫Low Level Virtual Machine。后来因为成为了编译器，官方放弃了这个称呼，但保留了LLVM的简称。
+
+官网：
+
+http://llvm.org/
+
+代码：
+
+https://github.com/llvm/llvm-project
+
+LLVM的主要作者是Chris Lattner。
+
+他的个人主页：
+
+http://nondot.org/sabre/
+
+>Chris Lattner，1978年生，美国人。University of Portland本科（2000）+UIUC博士（2005）。LLVM、Swift、MLIR的作者。先后任职于Apple、Tesla、Google、SiFive。
+
+架构设计：
+
+http://www.aosabook.org/en/llvm.html
+
+>顺便提一下，这个网站本身就是个宝库。
+
+架构设计中文版：
+
+https://zhuanlan.zhihu.com/p/446800631
+
+官方教程：
+
+https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/index.html
+
+教程代码在：
+
+llvm/examples/Kaleidoscope
+
+教程中文版+MLIR的专栏：
+
+https://www.zhihu.com/column/c_1416415517393981440
+
+---
+
+LLVM主要专注于后端的代码生成。Chris Lattner还开发了前端项目clang。LLVM早期使用GCC作为前端，目前已经改为clang。
+
+https://zhuanlan.zhihu.com/p/357803433
+
+详解三大编译器：gcc、llvm和clang
+
+## 源代码编译
+
+```bash
+cmake -S llvm -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
+ninja -C build check-llvm
+```
+
+## 常用命令
+
+C源码转换为LLVM IR:
+
+`clang -emit-llvm -S test.c -o test.ll`
+
+LLVM IR转换为LLVM字节码：
+
+`llvm-as test.ll -o test.bc`
+
+链接LLVM字节码文件：
+
+`llvm-link test1.bc test2.bc -o output.bc`
+
+LLVM字节码转换为机器汇编码：
+
+`llc test.bc -o test.s`
+
+优化器opt，优化LLVM IR：
+
+`opt --passname input.ll -o output.ll`
+
+JIT执行字节码：
+
+`lli hello.bc`
+
+反汇编：
+
+`llvm-dis < hello.bc`
+
+.c --frontend--> AST --frontend--> LLVM IR --LLVM opt--> LLVM IR --LLVM llc--> .s Assembly --OS Assembler--> .o --OS Linker--> executable
+
+https://zhuanlan.zhihu.com/p/161626997
+
+LLVM架构简介
+
+https://blog.csdn.net/weixin_46222091/article/details/104501879
+
+llvm常用工具的使用详解
+
+## 编译
+
+```bash
+cmake -S llvm -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug
+ninja -C build check-llvm
+```
+
+## tablegen
+
+LLVM tablegen，文件名后缀为`.td`。
+
+https://zhuanlan.zhihu.com/p/447318642
+
+TableGen_Overview
+
+https://zhuanlan.zhihu.com/p/447728683
+
+TableGen Language Reference
+
+https://blog.llvm.org/posts/2023-12-07-tools-for-learning-llvm-tablegen/
+
+Tools for Learning LLVM TableGen
+
+https://zhuanlan.zhihu.com/p/141265959
+
+有关于TableGen的简单介绍
+
+## FileCheck
+
+FileCheck用于校验输出结果中是否包含期望的信息。
+
+https://blog.csdn.net/weixin_46222091/article/details/104527715
+
+LLVM中FileCheck开发者工具 1--命令介绍
+
+https://blog.csdn.net/weixin_46222091/article/details/104528256
+
+LLVM中FileCheck开发者工具 2--入门教程
+
+## 参考
+
+所谓的intrinsic function ，是属于编译器开洞魔法的范畴，这些函数的实现是直接写死在编译器的代码生成部分的，在最终得到的二进制里面不会存在这些函数的符号和实现。
+
+https://zhuanlan.zhihu.com/p/348365662
+
+C++标准库开洞史
+
+https://www.zhihu.com/question/569519423
+
+C++标准库中是否有需要依赖编译器魔法才能实现的功能？
+
+https://www.zhihu.com/question/582148351
+
+C/C++函数“必须声明但禁止定义”才能使用，函数地址也不存在，是什么神奇的操作？
+
+https://mp.weixin.qq.com/s/FSlJKnC0y51nsLDp1B3tXg
+
+Swift编译器Crash—Segmentation fault解决方案
+
+https://zhuanlan.zhihu.com/p/392381317
+
+LLVM IR的第一个Pass：上手官方文档Hello Pass
+
+https://csstormq.github.io/
+
+一个LLVM、TVM、NEON的专栏
+
+https://www.zhihu.com/question/484069566
+
+LLVM怎么表达硬件相关的特性?
+
+https://mp.weixin.qq.com/s/-IjJJG5huL6p3KjhO70s7Q
+
+编译器中的图论算法
+
+https://zhuanlan.zhihu.com/p/140462815
+
+LLVM基本概念入门
+
+https://zhuanlan.zhihu.com/p/502828729
+
+LLVM创始人Chris Lattner回顾展望编译器
+
+https://zhuanlan.zhihu.com/p/626085010
+
+使用Flex、Bison和LLVM编写自己的Toy Compiler
+
+https://zhuanlan.zhihu.com/p/407854583
+
+使用LLVM实现一个简单编译器（一）
+
+https://zhuanlan.zhihu.com/p/409749393
+
+使用LLVM实现一个简单编译器（二）
+
+# MLIR
+
+Multi-Level IR
+
+代码：
+
+tensorflow/compiler/mlir
+
+几种到XLA的IR dialect：
+
+DHLO：Dynamic HLO。
+
+CHLO：client HLO dialect，上层前端的IR。
+
+LHLO："late"-HLO，经过buffer assignment后的HLO。HLO和LHLO的区别在于HLO注重的是tensor的表达，不考虑到内存的分配。
+
+MHLO："meta"-HLO dialect，是HLO风格的MLIR dialect， 并且在IR上扩展支持了dynamic shape。XLA HLO的shape是静态不可变的，不同shape需要重新编译；MHLO支持动态shape，IR本身有能力表达shape计算和动态shape信息的传递。
+
+LMHLO："late"-"meta"-HLO dialect。是LHLO风格的MLIR dialect。即内存分配之后的IR，也就是无动态shape的IR。
+
+开源项目：
+
+https://github.com/tensorflow/mlir-hlo
+
+https://github.com/openxla/stablehlo
+
+MLIR used in TensorFlow, JAX and Torch-MLIR.
+
+参考：
+
+https://zhuanlan.zhihu.com/p/404706825
+
+mlir-hlo cpu jit
+
+https://zhuanlan.zhihu.com/p/470439442
+
+elementwise fusion(hlo vs mhlo vs linalg)
+
+https://zhuanlan.zhihu.com/p/622562160
+
+XLA IR：HLO、LHLO、MHLO和LMHLO
+
+https://zhuanlan.zhihu.com/p/609386195
+
+hlo --> linalg
+
+---
+
+![](/images/img4/codegen-dialect-hierarchy.svg)
+
+![](/images/img5/TOSA.png)
+
+![](/images/img5/MLIR.png)
+
+Affine Dialect：这种Dialect使用来自多面体编译的技术使依赖分析和循环转换高效可靠。
+
+GPU Dialect：MLIR中的GPU Dialect模拟了类似于CUDA或OpenCL的通用GPU编程范式。它的目标是提供抽象来模拟GPU特定的操作和属性。它在很大程度上意味着与供应商无关。
+
+Tensor Operator Set Architecture (TOSA) Dialect
+
+Vector Dialect：对SIMD或者SIMT模型的抽象。
+
+SCF(Structured Control Flow) Dialect：比控制流图CFG更高层的抽象，比如并行的for和while循环以及条件判断。
+
+Async Dialect：通常用来表示异步操作模型。
+
+Control Flow Graph, CFG
+
+文档：
+
+https://mlir.llvm.org/docs/Dialects/
+
+参考：
+
+https://discourse.llvm.org/t/codegen-dialect-overview/2723
+
+Codegen Dialect Overview
+
+---
+
+Transform Dialect：dialect之间的调度变换都可以使用transform dialect中相关的语句来实现了，最终写成一个 transform.sequence。相较于完整的Pipeline，transform.sequence实现的调度变换十分灵活。
+
+官方文档：
+
+https://mlir.llvm.org/docs/Tutorials/transform/
+
+参考：
+
+https://zhuanlan.zhihu.com/p/624827690
+
+transform dialect
+
+---
+
+ONNX MLIR:
+
+http://onnx.ai/onnx-mlir
+
+---
+
+Torch-MLIR
+
+https://github.com/llvm/torch-mlir
+
+![](/images/img4/torch_mlir.jpg)
+
+TorchScript-->TorchDialect-->Linalg-on-Tensors
+
+https://blog.csdn.net/HaoBBNuanMM/article/details/124385542
+
+Torch-MLIR技术详解
+
+---
+
+```
+#map = affine_map<(m, n, k) -> (m, k)>
+#map1 = affine_map<(m, n, k) -> (k, n)>
+#map2 = affine_map<(m, n, k) -> (m, n)>
+module {
+  func.func @main(%arg0: tensor<10x64xf32>, %arg1: tensor<64x16xf32>) -> tensor<10x16xf32> {
+    %0 = tensor.empty() : tensor<10x16xf32>
+    %1 = linalg.generic {indexing_maps = [#map, #map1, #map2], iterator_types = ["parallel", "parallel", "reduction"]} ins(%arg0, %arg1 : tensor<10x64xf32>, tensor<64x16xf32>) outs(%0 : tensor<10x16xf32>) {
+    ^bb0(%in: f32, %in_0: f32, %out: f32):
+      %2 = arith.mulf %in, %in_0 : f32
+      %3 = arith.addf %out, %2 : f32
+      linalg.yield %3 : f32
+    } -> tensor<10x16xf32>
+    return %1 : tensor<10x16xf32>
+  }
+}
+```
+
+上例是一个matmul算子的MLIR，`linalg.generic`表示了该指令属于linalg dialect。
+
+---
+
+使用LLDB调试：
+
+https://mlir.llvm.org/getting_started/Debugging/
+
+插件：
+
+https://github.com/llvm/llvm-project/blob/main/llvm/utils/lldbDataFormatters.py
+
+https://github.com/llvm/llvm-project/blob/main/mlir/utils/lldb-scripts/mlirDataFormatters.py
+
+---
+
+`./mlir-opt --pass-pipeline="builtin.module(func.func(tosa-to-linalg-named, tosa-to-linalg, tosa-to-arith{include-apply-rescale=1}, tosa-to-tensor),one-shot-bufferize,...)" a.mlir`
+
+---
+
+TPP (Tensor Processing Primitives)
+
+《Tensor Processing Primitives: A Programming Abstraction for Efficiency and Portability in Deep Learning & HPC Workloads》
+
+TCP (Tensor Compute Primitives)
+
+https://discourse.llvm.org/t/rfc-tile-dialect-and-or-dialect-reshuffle/71252
+
+Tile Dialect and-or Dialect Reshuffle
+
+---
+
+模式匹配：
+
+Pattern Descriptor Language
+
+https://mlir.llvm.org/docs/PDLL/
+
+在PDL之前，还有一个Tablegen DRR：
+
+https://mlir.llvm.org/docs/DeclarativeRewrites/
+
+Table-driven Declarative Rewrite Rule
+
+`./mlir-pdll -x=mlir rewrite.pdll`
+
+---
+
+参考：
+
+https://mp.weixin.qq.com/s/fal6vz9gaZMbR41QMGE3AQ
+
+MLIR发布：全新的中介码与编译器框架
+
+https://zhuanlan.zhihu.com/p/361448250
+
+MLIR Toy Tutorials
+
+https://zhuanlan.zhihu.com/p/141256429
+
+MLIR文章视频汇总
+
+https://zhuanlan.zhihu.com/p/379063169
+
+MLIR: 编译器基础架构重定义
+
+https://zhuanlan.zhihu.com/p/508345356
+
+AI编译器的概览、挑战和实践
+
+https://blog.csdn.net/just_sort/article/details/123624966
+
+基于MLIR的矩阵乘法高性能GPU代码生成：一些早期结果
+
+https://zhuanlan.zhihu.com/p/442140282
+
+MLIR: A Brief Survey
+
+https://zhuanlan.zhihu.com/p/545672504
+
+MLIR原理与应用技术杂谈
+
+https://zhuanlan.zhihu.com/p/513872467
+
+面向ASIC设备的编译器框架：TVM or MLIR？
+
+https://www.zhihu.com/question/442964082
+
+如何评价MLIR项目中Linalg Dialect的设计思想？
+
+https://wzzju.github.io/mlir/jax/xla/2022/09/12/mlir-pass/
+
+浅析MLIR在Pass优化中的应用
+
+https://zhuanlan.zhihu.com/p/446836964
+
+MLIR中Dialects分类及关联
+
+https://www.lei.chat/zh/posts/mlir-codegen-dialects-for-machine-learning-compilers/
+
+机器学习编译器代码生成相关MLIR Dialect
+
+https://www.lei.chat/zh/posts/mlir-vector-dialect-and-patterns/
+
+MLIR Vector Dialect以及Patterns
+
+https://www.lei.chat/zh/posts/mlir-linalg-dialect-and-patterns/
+
+MLIR Linalg Dialect以及Patterns
+
+https://www.jeremykun.com/2023/08/10/mlir-running-and-testing-a-lowering/
+
+MLIR — Running and Testing a Lowering

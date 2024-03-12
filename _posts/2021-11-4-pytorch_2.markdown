@@ -9,6 +9,38 @@ category: DL Framework
 
 # Pytorch
 
+## TorchServe
+
+TorchServe是由AWS和Facebook合作开发的PyTorch模型服务库。
+
+代码：
+
+https://github.com/pytorch/serve
+
+参考：
+
+https://mp.weixin.qq.com/s/AtuSS5paEZ_0RvpyLEJk2g
+
+Facebook联合AWS推出PyTorch模型服务框架：可让模型快速投入生产
+
+## Hook
+
+https://zhuanlan.zhihu.com/p/362985275
+
+Pytorch获取中间层输出的几种方法
+
+https://zhuanlan.zhihu.com/p/267800207
+
+PyTorch中Hook的简单使用
+
+https://zhuanlan.zhihu.com/p/87853615
+
+pytorch的hook机制之register_forward_hook
+
+https://zhuanlan.zhihu.com/p/152314451
+
+hook技术
+
 ## Pytorch IR
 
 ![](/images/img5/pytorch_ir.webp)
@@ -40,6 +72,30 @@ Pytorch中dispatch机制及其实现
 https://pytorch.org/tutorials/intermediate/dist_tuto.html
 
 Writing Distributed Applications with PyTorch
+
+![](/images/img5/pytorch_nccl.png)
+
+pytorch可以直接调用NCCL Lib APIs，或者对起进行一层封装：
+
+- torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp --> 直接调用NCCL LIB
+- orch/csrc/distributed/c10d/NCCLUtils.hpp --> 对NCCL LIB中的struct ncclComm_t封装成class NCCLComm
+- torch/csrc/cuda/nccl.h --> 较为通用的nccl封装，不仅仅用来做分布式训练
+
+![](/images/img5/pytorch_nccl_2.png)
+
+![](/images/img5/pytorch_nccl_3.png)
+
+---
+
+`torchrun --nnodes 2 --nproc-per-node=4 --rdzv_backend=c10d --rdzv_endpoint=$MASTER_ADDR a.py`
+
+https://zhuanlan.zhihu.com/p/675464874
+
+一文读懂分布式训练启动方式
+
+https://zhuanlan.zhihu.com/p/486130584
+
+Pytorch-多机多卡极简实现
 
 ## Backend
 
@@ -306,55 +362,3 @@ pytorch多gpu并行训练
 https://mp.weixin.qq.com/s/KP4etDrGlJmRAMQmR1mTJA
 
 基于C++的PyTorch模型部署
-
-https://mp.weixin.qq.com/s/uUxwMFGF9nJiraVQsIqu2Q
-
-PyTorch重大更新：将支持自动混合精度训练！
-
-https://zhuanlan.zhihu.com/p/145427849
-
-PyTorch Parallel Training（单机多卡并行、混合精度、同步BN训练指南文档）
-
-https://mp.weixin.qq.com/s/Y6sJhnmjRwN2uopHgr7nFA
-
-让PyTorch更轻便，这款深度学习框架你值得拥有！
-
-https://zhuanlan.zhihu.com/p/104019160
-
-PyTorch常用代码段
-
-https://mp.weixin.qq.com/s/5Nq3y8hwhQG1UV9lHuBQvA
-
-13个你一定要知道的PyTorch特性
-
-https://mp.weixin.qq.com/s/cKvkvWgVPuq9y1A5q1OPEQ
-
-跟着指南学PyTorch—迁移学习教程
-
-https://mp.weixin.qq.com/s/gJgxh4l0CXTlaJaQ_FS3YQ
-
-PyTorch的数据增强与数据标准化
-
-https://mp.weixin.qq.com/s/Mo7XhRcPkgurmQPJ3Zu1ug
-
-基于PyTorch的计算机视觉框架
-
-https://mp.weixin.qq.com/s/PWABh72t92pUOJufcmzvag
-
-用PyTorch做深度学习实验！Facebook新框架Ax和BoTorch双双开源
-
-https://mp.weixin.qq.com/s/LcwlCai7PMYOBwsLXPS5HA
-
-PyTorch语义分割开源库semseg
-
-https://mp.weixin.qq.com/s/oDYMTb9NWxVsW07FLQKA_Q
-
-万字综述，核心开发者全面解读PyTorch内部机制
-
-https://www.zhihu.com/question/274635237
-
-Pytorch有什么节省内存（显存）的小技巧？
-
-https://mp.weixin.qq.com/s/xe5zmJklT2sqn_zffmyrLg
-
-Sharded:在相同显存的情况下使pytorch模型的参数大小加倍

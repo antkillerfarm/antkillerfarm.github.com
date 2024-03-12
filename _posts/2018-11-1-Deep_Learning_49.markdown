@@ -299,6 +299,34 @@ TransGAN：两个Transformer可以构造一个强大的GAN
 
 # 并行 & 框架 & 优化+
 
+https://mp.weixin.qq.com/s/HQW2bPyDY_3ecZWP6NYr-w
+
+大规模机器学习在LinkedIn预测模型中的应用实践
+
+https://mp.weixin.qq.com/s/i1PLA1xr3CefKx1EcVUVIg
+
+谷歌破世界纪录！圆周率计算到小数点后31.4万亿位
+
+https://mp.weixin.qq.com/s/rX8L63-jDGJT6lCAj04I3Q
+
+独家解读！阿里重磅发布机器学习平台PAI 3.0
+
+https://mp.weixin.qq.com/s/Ye2GVTFIrX3SbU1-4cDLoQ
+
+你天天叫的外卖，你知道这里面深度学习的水有多深吗
+
+https://mp.weixin.qq.com/s/FIWfbCLgckVzeNvfThIl4Q
+
+阿里线下智能方案进化史
+
+https://mp.weixin.qq.com/s/pqxiF6yEZzrw8qXu2hEsaA
+
+单机训练速度提升640倍！独家解读快手商业广告模型GPU训练平台Persia
+
+https://mp.weixin.qq.com/s/Jcz4XWDjMmbhmAiI_zBQXQ
+
+流式计算优化：时效性
+
 https://zhuanlan.zhihu.com/p/33351291
 
 基于忆阻器（ReRAM），Computing-in-Memory的DLA
