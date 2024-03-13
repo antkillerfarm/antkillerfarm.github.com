@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  GAN（六）——GAN参考资源（2）
-category: GAN & VAE 
+category: Generative Model
 ---
 
 * toc

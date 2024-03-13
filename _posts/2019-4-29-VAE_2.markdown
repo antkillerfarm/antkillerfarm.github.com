@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  VAE（二）——Vanilla VAE（2）
-category: GAN & VAE 
+category: Generative Model
 ---
 
 * toc

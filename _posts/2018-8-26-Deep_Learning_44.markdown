@@ -123,30 +123,6 @@ https://mp.weixin.qq.com/s/IhPavQZmXIxxUzNSnnFCKg
 
 # 多模态学习
 
-## CLIP
-
-![](/images/img5/CLIP.png)
-
-https://zhuanlan.zhihu.com/p/493489688
-
-神器CLIP：连接文本和图像，打造可迁移的视觉模型
-
-https://zhuanlan.zhihu.com/p/589170132
-
-FLIP：通过图像掩码加速CLIP训练
-
-https://www.zhihu.com/question/593888697
-
-如何评价Meta/FAIR 最新工作Segment Anything？
-
-https://zhuanlan.zhihu.com/p/620271321
-
-最强Zero-Shot视觉应用：Grounding DINO + Segment Anything + Stable Diffusion
-
-https://www.zhihu.com/question/593914819
-
-Meta发布图像分割论文Segment Anything，将给CV研究带来什么影响？
-
 ## 参考
 
 https://github.com/HuaizhengZhang/Awsome-Deep-Learning-for-Video-Analysis

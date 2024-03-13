@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  GAN（二）——GAN进阶
-category: GAN & VAE 
+category: Generative Model
 ---
 
 * toc

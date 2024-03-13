@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（四）——DeepSpeed, LoRA, Megatron-LM, FSDP, KV Cache
+title:  并行 & 框架 & 优化（四）——DeepSpeed, LoRA, FSDP, Megatron-LM, KV Cache
 category: DL acceleration 
 ---
 

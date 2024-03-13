@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  GAN（三）——GAN的评估指标, DCGAN, WGAN-GP, CGAN, BEGAN & EBGAN
-category: GAN & VAE 
+category: Generative Model
 ---
 
 * toc

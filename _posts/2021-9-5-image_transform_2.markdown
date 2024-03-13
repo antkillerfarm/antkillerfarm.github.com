@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  图像变换（二）, AIGC
+title:  图像变换（二）
 category: CV 
 ---
 
@@ -273,124 +273,90 @@ https://mp.weixin.qq.com/s/BWBrso7O1O3Rfxa4QWZH4g
 
 分分钟学会基于深度学习的图像真实风格迁移！
 
-# AIGC
+https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652026913&idx=2&sn=fc38fa94211c277d616f4f37aa6d8b5d
 
-![](/images/img5/AIGC.png)
+pix2pix 3D版：几笔线条生成超炫猫咪霹雳舞！
 
-![](/images/img5/Web3.png)
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650748774&idx=4&sn=efb794e4e418493f17138e7fa7eb84ab
 
----
+这种两阶段深度着色模型，为黑白照披上了彩衣
 
-《A Comprehensive Survey of AI-Generated Content (AIGC): A History of Generative AI from GAN to ChatGPT》
+https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247505181&idx=1&sn=2e817ec2ae918fd85c0ebcf85e810997
 
-《ChatGPT is not all you need. A State of the Art Review of large Generative AI models》
+惊！史上最佳GAN现身，超真实AI假照片，行家们都沸腾了
 
----
+https://mp.weixin.qq.com/s/MPdGF2-cJbNcvaEx-2BnFg
 
-ChatGPT（文本到文本的对话模型）
+把2D公路变成3D飞车游戏，MIT、清华打破图像编辑的次元壁
 
-DALL-E-2（文本到图像的生成模型）
+https://mp.weixin.qq.com/s/h6sktVd1ywCCncUb9iwyFQ
 
-Codex（文本到代码的生成模型）
+中科院自动化所：高清真实图像生成领域及GAN研究在人脸识别领域的进展
 
-Dreamfusion （文本到3D图像）
+https://mp.weixin.qq.com/s/9LvP3AH1PJhjrokTGg3blA
 
-Flamingo（图像到文本）
+心中无码：这是一个能自动脑补漫画空缺部分的AI项目
 
-Phenaki（文本到视频）
+https://mp.weixin.qq.com/s/cBTnX1lNHJhCMDX926aujA
 
-AudioLM（文本到音频）
+想怎么GAN就怎么GAN，一键拯救发际线
 
-Galactica（文本到科学文本）
+https://mp.weixin.qq.com/s/HinUtoYNq_e8HYBqPKozsQ
 
-AlphaTensor（自动搜索高性能的矩阵运算逻辑）
+GAN：艺术家眼里生成作品的创作利器
 
----
+https://mp.weixin.qq.com/s/Cyy4FgVZyVN-4KvG-9pHMA
 
-https://civitai.com/
+品质超高！超火的漫画线稿上色AI最新版来了
 
-一个AI艺术的网站
+https://mp.weixin.qq.com/s/lp769k6wsyh-991ACf5upw
 
-https://space.bilibili.com/12566101
+计算机也会ps图片：TL-GAN
 
-一个AI绘图方面的博主
+https://mp.weixin.qq.com/s/OmSb1dl9smyZt_uASOcofQ
 
----
+人人都是画家：朱俊彦&周博磊等人的GAN画笔帮你开启艺术生涯
 
-在C站，一个南京艺术学院毕业的学美术小姐姐，网名叫娜乌斯嘉，她用自己的照片训练了lora，并分享给全网AI绘画爱好者们使用。
+https://mp.weixin.qq.com/s/7xGtUHfk_FNpDTksLxKaHw
 
-她的B站主页：
+杨超越的声音+高晓松的脸~如此酸爽的技术，你值得拥有！
 
-https://space.bilibili.com/8095370
+https://mp.weixin.qq.com/s/y9h6xkK9Keq4UrdpGJS-4Q
 
----
+这些假脸实在太逼真了！英伟达造出新一代GAN，生成壁纸级高清大图毫无破绽
 
-https://mp.weixin.qq.com/s/H2nqQi2EVQ_EyeDNCRD3Cg
+https://mp.weixin.qq.com/s/V4PN0L42iisRxQ6y4Hc8fw
 
-一文回顾AI绘画的成长之路：从简笔画到真实人脸生成
+英伟达“AI假脸王”开源：新一代GAN攻破几乎所有人脸识别系统
 
-https://www.zhihu.com/question/583294094
+https://mp.weixin.qq.com/s/-3e5xhbz01FerZp8DcRV5g
 
-Ai绘画半年了，到目前为止，AI绘画让多少画师失业了？未来又会有多少?
+谷歌小姐姐搞出魔法画板：你随便画，补不齐算AI输
 
-https://www.zhihu.com/question/584139316
+https://mp.weixin.qq.com/s/M9r8m--Sd9kHxZrOEHbY7A
 
-AI绘画引入ControlNet，将会带来哪些影响？
+视频直接变漫画！GAN又有了新玩法
 
-https://www.zhihu.com/question/584053473
+https://mp.weixin.qq.com/s/CbdERPAHhmLB2hVVl2Dgkg
 
-如何评价2023年2月AI绘画的最新水平？
+裤子换裙子，就问你GAN的这波操作秀不秀
 
-https://mp.weixin.qq.com/s/HpziNAqHY9Oetsgk2AVxEg
+https://mp.weixin.qq.com/s/Ug0jyloNkeL6uuCqv9K0SA
 
-ControlNet组合拳效果惊人，颠覆AI绘画游戏规则
+图像/人脸补全问题的前世今生
 
-https://zhuanlan.zhihu.com/p/615522634
+https://mp.weixin.qq.com/s/xdFxQfgj61pgB-aCq31rLA
 
-AIGC的一些记录
+旷视等提出GIF2Video：首个深度学习GIF质量提升方法
 
-https://www.zhihu.com/question/593770520
+https://mp.weixin.qq.com/s/4hKIh77UfsuJCSKwtvpq3Q
 
-首批因AI失业的人来了，有公司已裁减原画师，导演陆川力赞AI海报高效优质，哪些职位容易被取代？
+最强GAN修图魔术师：美颜生发摘眼镜、草绘秒变真人脸
 
-https://zhuanlan.zhihu.com/p/619730103
+https://mp.weixin.qq.com/s/zvEIUJpgrjSM9-TLSzr3sQ
 
-AI绘画教程：如何用Stable Diffusion始终画同一个人？
+为什么说GAN很快就要替代现有摄影技术了？
 
-https://zhuanlan.zhihu.com/p/626335914
+https://mp.weixin.qq.com/s/C2ymfvnOohDutdY4-4aDkQ
 
-AI绘图StableDiffusion最强大模型盘点 - 诸神乱战
-
-https://zhuanlan.zhihu.com/p/622914660
-
-《Stable Diffusion 倚天剑术》第1卷：在各种设备上把Stable Diffusion玩起来
-
-https://zhuanlan.zhihu.com/p/629348322
-
-StableDiffusion LoRA自训练教程
-
-https://mp.weixin.qq.com/s/DBLMAEbVw6v4xH94-5Zl3w
-
-GAN逆袭归来！清华校友论文引爆AI绘图圈，一秒把大象P转身，Diffusion黯然失色
-
-https://zhuanlan.zhihu.com/p/643872569
-
-AI这样把NB写在脸上，它在玩一种很新的艺术
-
-https://zhuanlan.zhihu.com/p/626004957
-
-利用AI在独立游戏项目中大干快上
-
-https://zhuanlan.zhihu.com/p/664461927
-
-一天时间，我用AI做了一个恐龙网站
-
-## SORA
-
-https://openai.com/research/video-generation-models-as-world-simulators
-
-官方技术报告
-
-https://zhuanlan.zhihu.com/p/683231546
-
-Sora大模型技术精要——原理、关键技术、模型架构与未来趋势
+用GAN也可以P图，效果还不输PS

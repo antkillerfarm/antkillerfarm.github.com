@@ -209,6 +209,14 @@ Multi-Level IR
 
 tensorflow/compiler/mlir
 
+llvm/mlir
+
+教程：
+
+llvm/mlir/docs/Tutorials/Toy
+
+---
+
 几种到XLA的IR dialect：
 
 DHLO：Dynamic HLO。

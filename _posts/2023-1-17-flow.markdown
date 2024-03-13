@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Flow-based Model, Diffusion Model, Autoregressive Model
-category: GAN & VAE 
+category: Generative Model
 ---
 
 * toc

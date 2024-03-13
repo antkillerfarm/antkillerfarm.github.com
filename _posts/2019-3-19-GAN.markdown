@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  GAN（一）——Vanilla GAN
-category: GAN & VAE 
+category: Generative Model
 ---
 
 * toc

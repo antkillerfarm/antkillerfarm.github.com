@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  VAE（一）——Variational Inference, Vanilla VAE（1）
-category: GAN & VAE 
+category: Generative Model
 ---
 
 * toc

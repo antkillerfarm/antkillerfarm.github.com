@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  GAN（五）——InfoGAN, ProGAN, GAN参考资源（1）
-category: GAN & VAE 
+category: Generative Model
 ---
 
 * toc

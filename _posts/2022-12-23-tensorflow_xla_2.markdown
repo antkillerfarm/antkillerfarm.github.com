@@ -103,184 +103,6 @@ tf_gen_op_wrapper_py之后，会生成xla_ops.py。
 
 这样就可以通过python调用C++。
 
-## Pytorch XLA
-
-Pytorch官方提供了如下项目支持XLA：
-
-https://github.com/pytorch/xla
-
-这个项目实际上是Google来维护的。
-
-粗看了一下，都是些上层的代码，底层直接调用TF的实现。所以如果目标硬件已经接入TF XLA接口的话，理论上不需要修改就可以跑pytorch。
-
-![](/images/img5/pytorch_xla.png)
-
-文档：
-
-https://pytorch.org/xla/master/
-
-PyTorch on XLA Devices
-
-示例：
-
-https://github.com/pytorch/xla/blob/master/test/test_train_mp_mnist.py
-
-编译：
-
-```bash
-git clone --recursive https://github.com/pytorch/xla.git
-cd xla
-
-# modify bazel/dependencies.bzl to config pytorch:
-# PYTORCH_LOCAL_DIR = "../pytorch"
-
-# modify WORKSPACE to config openxla:
-# by commenting out the http_archive above and uncommenting the following:
-# local_repository(
-#    name = "xla",
-#    path = "/path/to/openxla",
-# )
-
-export XLA_CUDA=0
-export BUNDLE_LIBTPU=0
-python setup.py install
-```
-
----
-
-Backend的参考实现：
-
-Intel XPU:
-
-https://github.com/intel/intel-extension-for-openxla
-
-IREE:
-
-https://github.com/openxla/openxla-pjrt-plugin
-
----
-
-Mesh API：
-
-![](/images/img5/Mesh_API.png)
-
-https://pytorch.org/blog/pytorch-xla-spmd
-
-PyTorch/XLA SPMD: Scale Up Model Training and Serving with Automatic Parallelization
-
-https://www.openteams.com/large-scale-training-of-hugging-face-transformers-on-tpus-with-pytorch-xla-fsdp
-
-Large Scale Training of Hugging Face Transformers on TPUs With PyTorch/XLA FSDP
-
----
-
-有时候conda环境里使用的gcc版本，和本地的gcc版本有差异，会导致编译产生的py库，有一些问题：
-
-https://blog.csdn.net/weixin_39379635/article/details/129159713
-
-如何解决version `GLIBCXX_3.4.29‘ not found的问题
-
-类似的，还有库找不到的问题，一般用LD_LIBRARY_PATH解决之。
-
----
-
-https://blog.csdn.net/qq_40329272/article/details/111801695
-
-undefined symbol:_ZN5torchXXXX
-
----
-
-打印网络信息：
-
-torch_xla/torch_xla/core/dynamo_bridge.py:
-
-`def extract_compiled_graph(xla_model: torch.fx.GraphModule, xla_args):`
-
-To print a tabular representation of the graph, use:
-
-`xla_model.graph.print_tabular()`
-
-To get a SVG visualization of the graph, use:
-
-```python
-from torch.fx.passes.graph_drawer import FxGraphDrawer
-drawer = FxGraphDrawer(xla_model, "model_name")
-with open(f"svg/save/dir/{drawer._name}.svg", mode="wb") as f:
-    f.write(drawer.get_dot_graph().create_svg())
-```
-
----
-
-custom op:
-
-```cpp
-XlaDeviceType hw_type = static_cast<XlaDeviceType>(GetCurrentDevice().type());
-if (hw_type == XlaDeviceType::TPU)
-{
-  resized =xla::CustomCall(...);
-}
-```
-
----
-
-动态注册plugin：
-
-torch_xla/experimental/plugins.py
-
-```python
-    npu_plugin = NpuPlugin()
-    xp.use_dynamic_plugins()
-    xp.register_plugin("npu", npu_plugin)
-    xr.set_device_type("npu")
-
-    device_type = xr.device_type()
-    assert device_type == "npu"
-```
-
----
-
-参考：
-
-https://pytorch.org/blog/pytorch-2.0-xla/
-
-PyTorch 2.0 & XLA—The Latest Cutting Edge Features
-
-https://huggingface.co/blog/pytorch-xla
-
-Hugging Face on PyTorch / XLA TPUs: Faster and cheaper training
-
-https://pytorch.org/tutorials/recipes/intel_extension_for_pytorch.html
-
-INTEL EXTENSION FOR PYTORCH
-
-## OpenXLA
-
-2022.10 Google又创建了一个新的OpenXLA项目，旨在将XLA从TF中解耦。
-
-官网：
-
-https://github.com/openxla/xla
-
-![](/images/img5/TPU_XLA.png)
-
-## XRT & PJRT
-
-PJRT：Pretty much Just another RunTime
-
-TF的代码中有如下两个文件夹：
-
-tensorflow/compiler/xla/xrt
-
-tensorflow/compiler/xla/pjrt
-
-XRT & PJRT的作用是：为其他框架如Pytorch/JAX提供生成XLA IR，并执行的能力。
-
-PJRT是XRT的升级版。
-
-参考：
-
-https://github.com/openxla/xla/blob/main/xla/pjrt/c/docs/pjrt_integration_guide.md
-
 ## IR
 
 XLA IR一般如下所示：
@@ -405,3 +227,93 @@ XLA探究：矩阵乘法
 https://zhuanlan.zhihu.com/p/427444916
 
 Tensorflow编译加速器XLA源码深入解读
+
+https://sketch2sky.com/2019/09/24/tensorflow-jit-%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3/
+
+Tensorflow JIT技术详解
+
+https://blog.csdn.net/gaofeipaopaotang/article/details/80679100
+
+模型优化之XLA（上）
+
+https://blog.csdn.net/gaofeipaopaotang/article/details/80703367
+
+模型优化之XLA（下）
+
+https://blog.csdn.net/weixin_41644391/article/details/120948964
+
+MarkForCompilationPass
+
+https://blog.csdn.net/weixin_41644391/article/details/120949032
+
+EncapsulateSubgraphsPass
+
+## Grappler
+
+Grappler是TensorFlow运行时中的默认计算图优化系统。
+
+Grappler生成的计算图，会做为XLA的输入。
+
+https://www.tensorflow.org/guide/graph_optimization
+
+使用Grappler优化TensorFlow计算图
+
+https://blog.csdn.net/gaofeipaopaotang/article/details/80621902
+
+模型优化之Grappler
+
+## 代码生成
+
+如果是CPU/GPU的话，一般会用LLVM生成代码。
+
+xla.cpu.IrEmitter，将xla.HloModule中的每个xla.HloComputation转化为llvm IR表示，并创建对应的llvm.Module。
+
+如果是DSA的话，一般采用直接代理HLO IR的模式。
+
+xla.DfsHloVisitorBase会遍历整个Cluster。
+
+## Other
+
+XLA在内的主流深度学习框架，都是基于Static Shape语义的编译器框架。即，just-in-time运行的编译器，会在运行时捕捉待编译子图的实际输入shape组合，并且为每一个输入shape组合生成一份编译结果。
+
+## 参考
+
+https://mp.weixin.qq.com/s/RO3FrPxhK2GEoDCGE9DXrw
+
+利用XLA将GPU性能推向极限
+
+https://mp.weixin.qq.com/s/MPI9KERDS-Al4DTBDRV04w
+
+TensorFlow XLA工作原理简介
+
+https://sketch2sky.com/
+
+一个XLA方面的blog
+
+https://tensorflow.juejin.im/performance/xla/jit.html
+
+使用即时编译
+
+https://blog.slinuxer.com/2019/06/tensorflow-xla
+
+TensorFlow XLA初步接触
+
+https://github.com/horance-liu/tensorflow-internals
+
+电子书《TensorFlow Internals》
+
+https://wzzju.github.io/tensorflow/xla/2021/06/12/xla-overview/
+
+XLA编译执行原理分析
+
+https://haosdent.gitbooks.io/tensorflow-document/content/resources/xla_prerelease.html
+
+XLA: The TensorFlow compiler framework
+
+http://zhengsz.tech/2019/10/23/Tensorflow-XLA-%E6%8E%A2%E7%A9%B6/
+
+Tensorflow/XLA探究
+
+https://wzzju.github.io/tensorflow/xla/2021/06/12/xla-overview/
+
+XLA编译执行原理分析

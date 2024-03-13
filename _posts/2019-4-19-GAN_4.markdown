@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  GAN（四）——Stack GAN, GAN Ensemble, Pix2Pix, CycleGAN, StarGAN
-category: GAN & VAE 
+category: Generative Model
 ---
 
 * toc
