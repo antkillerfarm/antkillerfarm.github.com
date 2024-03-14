@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  俄乌战争：主线篇（十二）——瓦格纳上洛
-category: Russo Ukrainian War Main
+title:  俄乌战争：苍天篇（十二）——瓦格纳上洛
+category: Russo Ukrainian War Sky
 ---
 
 * toc

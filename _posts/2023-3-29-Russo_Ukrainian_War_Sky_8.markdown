@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  俄乌战争：主线篇（八）——北顿战役, 哈尔科夫战役, 卢甘斯克战役
-category: Russo Ukrainian War Main
+title:  俄乌战争：苍天篇（八）——北顿战役, 哈尔科夫战役, 卢甘斯克战役
+category: Russo Ukrainian War Sky
 ---
 
 * toc

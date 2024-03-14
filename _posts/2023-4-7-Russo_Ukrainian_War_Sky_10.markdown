@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  俄乌战争：主线篇（十）——顿涅斯克战役, 扎波罗热战役
-category: Russo Ukrainian War Main
+title:  俄乌战争：苍天篇（十）——顿涅斯克战役, 扎波罗热战役
+category: Russo Ukrainian War Sky
 ---
 
 * toc

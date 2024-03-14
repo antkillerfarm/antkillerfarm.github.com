@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  俄乌战争：主线篇（六）——马里乌波尔战役
-category: Russo Ukrainian War Main
+title:  俄乌战争：苍天篇（六）——马里乌波尔战役
+category: Russo Ukrainian War Sky
 ---
 
 * toc

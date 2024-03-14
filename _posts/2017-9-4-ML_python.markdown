@@ -151,6 +151,15 @@ conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/
 ```
 
+卸载conda：
+
+```bash
+conda install anaconda-clean
+anaconda-clean --yes
+conda activate
+conda init --reverse --all
+```
+
 参考：
 
 http://www.cnblogs.com/zhusleep/p/5616099.html
@@ -176,6 +185,10 @@ Anaconda和Miniconda是一个公司的产品，商用是付费的，个人暂时
 代码：
 
 https://github.com/conda-forge/miniforge
+
+安装：
+
+https://conda-forge.org/miniforge/
 
 文档：
 

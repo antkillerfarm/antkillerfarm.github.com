@@ -9,6 +9,67 @@ category: language
 
 # Python
 
+## 多线程 & 同步 & 异步
+
+python异步并发模块concurrent.futures，主要用来实现多线程和多进程的异步并发。
+
+代码示例：
+
+```python
+from concurrent import futures
+
+def test(num):
+    import time
+    return time.ctime(),num
+
+with futures.ThreadPoolExecutor(max_workers=1) as executor:
+    future = executor.submit(test,1)
+    print future.result()
+
+>>>
+('Tue Jan 17 15:23:10 2017', 1)
+```
+
+如果是多进程的话，可使用ProcessPoolExecutor。由于python是解释语言的关系，多线程设计基本就是残废状态，因此，通常情况下，**不要使用多线程，请使用多进程**
+
+参考：
+
+http://lovesoo.org/analysis-of-asynchronous-concurrent-python-module-concurrent-futures.html
+
+python异步并发模块concurrent.futures简析
+
+https://mp.weixin.qq.com/s/QIfxxY6z7y77RDE_8gDEIg
+
+并行运算Process Pools
+
+http://www.cnblogs.com/Python666/p/7506546.html
+
+Python单例模式
+
+https://mp.weixin.qq.com/s/tJsdM-4q_RC-5AhTw3y49w
+
+schedule使用进阶
+
+https://mp.weixin.qq.com/s/fwa3cbDI0fIjjztA60XuUQ
+
+同步与异步Python有何不同？
+
+https://mp.weixin.qq.com/s/0tLI_UNhpD-UPa9o206xFA
+
+为什么Python多线程无法利用多核
+
+https://mp.weixin.qq.com/s/6zVU6i75hZ3ZXZAmW0G5Mw
+
+非常适合小白的Asyncio教程
+
+https://mp.weixin.qq.com/s/nHIQ5uwxZM-9DbSu_jL6DQ
+
+异步Python比同步Python快在哪里？
+
+https://mp.weixin.qq.com/s/0MMUTp_-JF97inzeJd4j1g
+
+详解如何用Multiprocessing进行并行计算
+
 ## mypy
 
 mypy是一个针对python语言的静态类型检查工具。
@@ -422,51 +483,3 @@ https://mp.weixin.qq.com/s/FmdbdAWenXWuY9s7ykVORQ
 https://mp.weixin.qq.com/s/UVKOU11dfWwP9Uyw9E400Q
 
 如何使用python提取pdf表格及文本，并保存到excel
-
-## word & excel
-
-安装：
-
-`pip install python-docx`
-
-文档：
-
-https://python-docx.readthedocs.io/en/latest/
-
-参考：
-
-https://mp.weixin.qq.com/s/lEtE3ejBLzmm9_eo-_8NBg
-
-处理大型Excel文件，用Python就对了！
-
-https://mp.weixin.qq.com/s/GjG1Rc-HtLRkrNXY1pcp2Q
-
-xlwings，让excel飞起来！
-
-https://mp.weixin.qq.com/s/6M7aiXgcne9cbHffqpm_Lw
-
-n种方式教你用python读写excel等数据文件
-
-https://mp.weixin.qq.com/s/rBR4d_wyU8TKy1K9az4C-Q
-
-从VBA到Python，Excel工作效率如何提高？
-
-https://mp.weixin.qq.com/s/3nr8uHnRoSgs-Zu6QxGiqw
-
-Python实现数据库一键导出为Excel表格！大大的增加了工作效率！
-
-https://mp.weixin.qq.com/s/ZI7KDxH9z_UR2p3umBCNsA
-
-一套代码批量编辑Word和Excel，告别工具人
-
-https://mp.weixin.qq.com/s/4q6poyFBLgwZJPzJNX3y0g
-
-Python操作Excel之一
-
-https://mp.weixin.qq.com/s/NiDZfQCblcfw4XnPzBYIaQ
-
-Python操作Excel之二
-
-https://mp.weixin.qq.com/s/m5mrlx3V3bBblqHdBZKa6w
-
-Python操作Word

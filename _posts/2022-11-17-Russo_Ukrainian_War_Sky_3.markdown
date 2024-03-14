@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  俄乌战争：主线篇（三）——战前 & 军改
-category: Russo Ukrainian War Main
+title:  俄乌战争：苍天篇（三）——战前 & 军改
+category: Russo Ukrainian War Sky
 ---
 
 * toc

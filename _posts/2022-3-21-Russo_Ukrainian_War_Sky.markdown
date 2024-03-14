@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  俄乌战争：主线篇（一）——概述
-category: Russo Ukrainian War Main
+title:  俄乌战争：苍天篇（一）——概述
+category: Russo Ukrainian War Sky
 ---
 
 * toc
@@ -9,9 +9,9 @@ category: Russo Ukrainian War Main
 
 # 俄乌战争
 
-由于俄乌战争已经成为长期战争，原有的章节划分已经不再适合现实，特分为《主线篇》、《疾风篇》和《流云篇》。
+由于俄乌战争已经成为长期战争，原有的章节划分已经不再适合现实，特分为《苍天篇》、《疾风篇》和《流云篇》。
 
-主线篇包含所有军事行动的章节。
+苍天篇包含所有军事行动的章节。
 
 ## 概述
 

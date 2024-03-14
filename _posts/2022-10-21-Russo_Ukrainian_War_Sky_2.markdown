@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  俄乌战争：主线篇（二）——顿巴斯战争
-category: Russo Ukrainian War Main
+title:  俄乌战争：苍天篇（二）——顿巴斯战争
+category: Russo Ukrainian War Sky
 ---
 
 * toc

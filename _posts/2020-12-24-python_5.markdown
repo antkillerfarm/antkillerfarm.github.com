@@ -9,7 +9,53 @@ category: language
 
 # Python
 
-## word & excel（续）
+## word & excel
+
+安装：
+
+`pip install python-docx`
+
+文档：
+
+https://python-docx.readthedocs.io/en/latest/
+
+参考：
+
+https://mp.weixin.qq.com/s/lEtE3ejBLzmm9_eo-_8NBg
+
+处理大型Excel文件，用Python就对了！
+
+https://mp.weixin.qq.com/s/GjG1Rc-HtLRkrNXY1pcp2Q
+
+xlwings，让excel飞起来！
+
+https://mp.weixin.qq.com/s/6M7aiXgcne9cbHffqpm_Lw
+
+n种方式教你用python读写excel等数据文件
+
+https://mp.weixin.qq.com/s/rBR4d_wyU8TKy1K9az4C-Q
+
+从VBA到Python，Excel工作效率如何提高？
+
+https://mp.weixin.qq.com/s/3nr8uHnRoSgs-Zu6QxGiqw
+
+Python实现数据库一键导出为Excel表格！大大的增加了工作效率！
+
+https://mp.weixin.qq.com/s/ZI7KDxH9z_UR2p3umBCNsA
+
+一套代码批量编辑Word和Excel，告别工具人
+
+https://mp.weixin.qq.com/s/4q6poyFBLgwZJPzJNX3y0g
+
+Python操作Excel之一
+
+https://mp.weixin.qq.com/s/NiDZfQCblcfw4XnPzBYIaQ
+
+Python操作Excel之二
+
+https://mp.weixin.qq.com/s/m5mrlx3V3bBblqHdBZKa6w
+
+Python操作Word
 
 https://mp.weixin.qq.com/s/KhtVET6AAhYWWefBnvis2Q
 
@@ -413,51 +459,3 @@ Python趣味打怪：60秒学会一个例子，147段简单代码助你从入门
 https://mp.weixin.qq.com/s/zIHJsyankFEf_ig4Xnb0Uw
 
 工具推荐！我是如何使用Python脚本分析CPU使用情况的？
-
-https://mp.weixin.qq.com/s/v-N5jUTVFBb-wV0a_RAg5A
-
-Python实现代码雨效果
-
-https://mp.weixin.qq.com/s/0wJRlGS2QXpEL2XaU_Ke-g
-
-Python实现烟花特效
-
-https://mp.weixin.qq.com/s/8Fgzb8JiAoNSJqUanSi85Q
-
-鼠年做只奔跑的猫呗，卖萌式监控系统资源~（QSystemTrayIcon）
-
-https://mp.weixin.qq.com/s/2RRJDStTL7l2Ra3SnNEEYg
-
-发布自己的python库到pypi
-
-https://mp.weixin.qq.com/s/PBaDdLcYxDso2V4aZcFXpA
-
-盘一盘Python错误类型
-
-https://mp.weixin.qq.com/s/8uxc2t53N_j_mRPYbiG0sA
-
-5个案例让Python输出漂亮的命令行表格！
-
-https://mp.weixin.qq.com/s/3pGw9QdAZVE3OKZ-zGyb4g
-
-使用Python远程登陆服务器的最佳实践
-
-https://mp.weixin.qq.com/s/Bllw4rSkxd378LLUCh6oJA
-
-Python炫技操作：合并字典的七种方法
-
-https://mp.weixin.qq.com/s/KrdXyYMtyElUGuPH5eNYvg
-
-Python的深浅拷贝讲解
-
-https://mp.weixin.qq.com/s/DMK3gwMKbpsfOrWMxjb5lg
-
-不到20行代码，用Python做一个智能聊天机器人
-
-https://mp.weixin.qq.com/s/wIXCIMzZmh75SV-qJIKbCw
-
-Python程序员最常犯的10个错误，你中招了吗？
-
-https://mp.weixin.qq.com/s/W1j4G_QQqlzDYru231dZFA
-
-Python：编写条件分支代码的技巧

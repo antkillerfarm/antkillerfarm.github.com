@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  俄乌战争：主线篇（四）——基辅战役（1）
-category: Russo Ukrainian War Main
+title:  俄乌战争：苍天篇（四）——基辅战役（1）
+category: Russo Ukrainian War Sky
 ---
 
 * toc

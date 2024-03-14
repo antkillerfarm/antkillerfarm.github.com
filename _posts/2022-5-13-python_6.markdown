@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Python（六）, IDE, Vim
+title:  Python（六）, IDE
 category: language 
 ---
 
@@ -8,6 +8,54 @@ category: language
 {:toc}
 
 # Python
+
+https://mp.weixin.qq.com/s/v-N5jUTVFBb-wV0a_RAg5A
+
+Python实现代码雨效果
+
+https://mp.weixin.qq.com/s/0wJRlGS2QXpEL2XaU_Ke-g
+
+Python实现烟花特效
+
+https://mp.weixin.qq.com/s/8Fgzb8JiAoNSJqUanSi85Q
+
+鼠年做只奔跑的猫呗，卖萌式监控系统资源~（QSystemTrayIcon）
+
+https://mp.weixin.qq.com/s/2RRJDStTL7l2Ra3SnNEEYg
+
+发布自己的python库到pypi
+
+https://mp.weixin.qq.com/s/PBaDdLcYxDso2V4aZcFXpA
+
+盘一盘Python错误类型
+
+https://mp.weixin.qq.com/s/8uxc2t53N_j_mRPYbiG0sA
+
+5个案例让Python输出漂亮的命令行表格！
+
+https://mp.weixin.qq.com/s/3pGw9QdAZVE3OKZ-zGyb4g
+
+使用Python远程登陆服务器的最佳实践
+
+https://mp.weixin.qq.com/s/Bllw4rSkxd378LLUCh6oJA
+
+Python炫技操作：合并字典的七种方法
+
+https://mp.weixin.qq.com/s/KrdXyYMtyElUGuPH5eNYvg
+
+Python的深浅拷贝讲解
+
+https://mp.weixin.qq.com/s/DMK3gwMKbpsfOrWMxjb5lg
+
+不到20行代码，用Python做一个智能聊天机器人
+
+https://mp.weixin.qq.com/s/wIXCIMzZmh75SV-qJIKbCw
+
+Python程序员最常犯的10个错误，你中招了吗？
+
+https://mp.weixin.qq.com/s/W1j4G_QQqlzDYru231dZFA
+
+Python：编写条件分支代码的技巧
 
 https://mp.weixin.qq.com/s/ST7TQ5Wkn_owv5bpTiTKVA
 
@@ -301,96 +349,28 @@ https://zhuanlan.zhihu.com/p/59119723
 
 Linux上最好的十六进制编辑器
 
-# Vim
+# 俄乌战争+
 
-## 模式
+当欧美限价60美元后，像印度之类阴诈至极的“伙伴”，又趁机再度索要折扣，把油价打压到仅仅维持俄罗斯石油公司成本运作平衡的40多美元。
 
-普通模式：使用vim打开一个文件时默认模式，也叫命令模式，允许用户通过各种命令浏览代码、滚屏等操作。
+---
 
-插入模式：也可以叫做编辑模式，在普通模式下敲击 i 、a 或 o 就进入插入模式，允许用户通过键盘输入、编辑。
+2014年7月，瑞典新纳粹分子、前本土防卫军狙击手米尔凯·斯基尔特加入“亚速”营。但他在2015年8月公开宣布：他在乌克兰的经历改变了自己，自己将不再相信纳粹主义，因为他在乌克兰的所见所闻让自己认识到——自己过去的纳粹思想是错误而愚蠢的。
 
-命令行模式：在普通模式下，先输入冒号:，接着输入命令，就可以通过配置命令对vim进行配置了，如改变颜色主题、显示行号等，这些配置命令也可以保存到/etc/vim/vimrc配置文件中，每次打开默认配置执行。
+https://mp.weixin.qq.com/s/wp8CBSc2cBJBddSws2ktzw
 
-可视化模式：在普通模式下敲击前盘上的 v 键，就进入可视化模式，然后移动光标就可以选中一块文本，常用来完成文本的复制、粘贴、删除等操作。
+乌克兰正在进一步走向分裂！这次不在东部，而是西部。
 
-替换模式：如果我们想修改某个字符，不需要先进入插入模式，删除，然后再输入新的字符，直接在普通模式下，敲击R键就可以直接替换。
+---
 
-EX模式：类似于命令行模式，可以一次运行多个命令。
+Sudoplatov是俄军比较精锐的无人机部队，最近几个月发布了大量使用无人机打击乌军军械的视频。据多个鹅宣报道，Sudoplatov为了扩充，对俄军、志愿者进行了无人机培训和考试。然而正当它们集中在一起考试时，遭到了乌军海马斯的打击。据称有20多名参加考试的鹅鹅飞手被嘎。
 
-用户统一使用ESC键返回到普通模式。
+---
 
-## 常用操作
+卢甘斯克的负责人称：俄罗斯计划在被占领州的教育机构中引入无人机技术课程。俄统区的孩子们将学习技术、设计特点，并培养组装无人机及其军事用途的技能。
 
-`dd`: 删除整行
+以上信息直白地说就是，俄罗斯将在无人机血汗工厂中以教育的名义无偿免费使用童工！
 
-`/`是向下查找，而`?`是向上查找，n是继续查找。
+---
 
-`u`——撤销上一个编辑操作
-
-`:set nu`: 显示行号
-
-`:行号`: 跳转到行号
-
-`yy`: 复制整行
-
-`p`: 粘贴
-
-## 分栏显示
-
-`vim -on file1 file2 ...`：上下分屏。n为分屏个数。
-
-`vim -On file1 file2 ...`：左右分屏。
-
-`:new`——创建一个空白分栏界面，和原文件窗口上下排列。
-
-`:split`——将当前文件分成上下两栏显示。
-
-`:vnew`和`:vsplit`——功能相同，不同的是新窗口是左右排列的。
-
-`:only`——取消分屏。
-
-按下ctrl+w之后再利用方向键或者h,j,k,l可以选择当前激活的窗口。
-
-把光标移动到下一个的屏：ctrl+w w
-
-把光标移动到上一个的屏：ctrl+w p
-
-关闭其他窗口：Ctrl + w, o
-
-关闭当前屏：Ctrl+w，c
-
-`:vertical diffsplit file2`——垂直对比两个文档。
-
-## NeoVim
-
-NeoVim是Vim的派生品，以及最有力的竞争者。
-
-## 参考
-
-https://mp.weixin.qq.com/s/k5zdN0rJtVBSVMK4_6g5Bw
-
-年仅62岁！开源巨擘“Vim之父”因病离世，一生写下Vim传奇
-
-https://mp.weixin.qq.com/s/5694PDHy9BeoL8qy31MaxQ
-
-如何用vim格式化代码
-
-https://mp.weixin.qq.com/s/QpJWyLY5AyrXGF-j7LYTGg
-
-1700页数学笔记火了！全程敲代码，速度飞快易搜索，硬核小哥教你上手LaTeX+Vim
-
-https://mp.weixin.qq.com/s/tvn2SKXyrZZRGDF6-Myx3A
-
-Vim激荡30年发展史
-
-https://mp.weixin.qq.com/s/c9KAOJ6Z_5zjwI7C3OMq4w
-
-5分钟学会Vim分屏操作方方面面
-
-https://www.runoob.com/linux/linux-vim.html
-
-Linux vi/vim
-
-https://zhuanlan.zhihu.com/p/37352209
-
-VimScript五分钟入门
+近期一名俄罗斯指挥官带领其团队向乌克兰人投降，这名叫罗伯特的指挥官自称生于1970年，也就是54岁，但经过战争的摧残看上去得有70多岁的样子。他说：“这是一场毫无意义的战争，与我们无关，让普京自己来处理好了”。罗伯特自称是负责疏散部门的指挥官，结果把俄罗斯士兵都疏散到乌克兰来了。

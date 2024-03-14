@@ -9,6 +9,45 @@ category: language
 
 # Python
 
+## pass语句
+
+```python
+def iplaypython():
+       pass
+```
+
+定义一个函数iplaypython，但函数体部分暂时还没有完成，又不能空着不写内容，因此可以用pass来替代占个位置。
+
+## 对象的属性
+
+`__dict__`：对象的可变属性。
+
+`__slots__`：对象的不可变属性，一旦创建就不可修改。
+
+不是所有的对象都有`__dict__`属性，但多数对象有。
+
+`dir(Foo())`：列出Foo()创建的对象的所有属性（不仅包括`__dict__`和`__slots__`，还包括其他的属性）。
+
+参考：
+
+http://www.cnblogs.com/ifantastic/p/3768415.html
+
+dir()与`__dict__`，`__slots__`的区别
+
+## Typer
+
+一个命令行选项的快速处理的库。
+
+官网：
+
+https://typer.tiangolo.com/
+
+它的设计参考了FastAPI，后者是一个Web版本的API接口库，用于提供restful风格的API。
+
+官网：
+
+https://fastapi.tiangolo.com/
+
 ## yield
 
 yield就是return返回一个值，并且记住这个返回的位置，下次迭代就从这个位置后(下一行)开始。
@@ -365,58 +404,3 @@ https://mp.weixin.qq.com/s/Wsk6H3Z6HwGPKTRNYc2cLw
 https://mp.weixin.qq.com/s/qYKNGqItnSXq0-Zq2kMCKA
 
 聊一聊Python中的闭包
-
-## @classmethod和@staticmethod
-
-```python
-class A(object):
-    def foo(self, x):
-        print("executing foo(%s,%s)" % (self, x))
-        print('self:', self)
-    @classmethod
-    def class_foo(cls, x):
-        print("executing class_foo(%s,%s)" % (cls, x))
-        print('cls:', cls)
-    @staticmethod
-    def static_foo(x):
-        print("executing static_foo(%s)" % x)
-```
-
-@classmethod类似于C++中的static，无须实例化就可以调用。@staticmethod则是普通成员函数的简写。python一般用cls表示类，而用self表示类的实例。当然，这只是编程规范的约束，而非编译器约束，使用其他名字也是可以的。
-
-参考：
-
-https://www.cnblogs.com/elie/p/5876210.html
-
-python中@classmethod @staticmethod区别
-
-## class的另类用法
-
-由于python是动态脚本语言，它的class的用法也非常灵活。你甚至无须事先定义类的成员变量，而只需要运行时添加即可。
-
-示例：
-
-```python
-class A():
-    pass
-
-a=A()
-a.name = "Job"
-a.age = 10
-```
-
-## 命令行参数
-
-`-v`: 打印运行信息。
-
-`-u`: stdout立即输出，无缓冲。
-
-## deep copy
-
-https://blog.csdn.net/qq_32907349/article/details/52190796
-
-Python的进阶：copy()与deepcopy()区别
-
-https://mp.weixin.qq.com/s/bgk375-KxF-is5dIgV_p4g
-
-5张图彻底理解Python中的浅拷贝与深拷贝

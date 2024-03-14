@@ -9,6 +9,61 @@ category: language
 
 # Python
 
+## @classmethod和@staticmethod
+
+```python
+class A(object):
+    def foo(self, x):
+        print("executing foo(%s,%s)" % (self, x))
+        print('self:', self)
+    @classmethod
+    def class_foo(cls, x):
+        print("executing class_foo(%s,%s)" % (cls, x))
+        print('cls:', cls)
+    @staticmethod
+    def static_foo(x):
+        print("executing static_foo(%s)" % x)
+```
+
+@classmethod类似于C++中的static，无须实例化就可以调用。@staticmethod则是普通成员函数的简写。python一般用cls表示类，而用self表示类的实例。当然，这只是编程规范的约束，而非编译器约束，使用其他名字也是可以的。
+
+参考：
+
+https://www.cnblogs.com/elie/p/5876210.html
+
+python中@classmethod @staticmethod区别
+
+## class的另类用法
+
+由于python是动态脚本语言，它的class的用法也非常灵活。你甚至无须事先定义类的成员变量，而只需要运行时添加即可。
+
+示例：
+
+```python
+class A():
+    pass
+
+a=A()
+a.name = "Job"
+a.age = 10
+```
+
+## 命令行参数
+
+`-v`: 打印运行信息。
+
+`-u`: stdout立即输出，无缓冲。
+
+## deep copy
+
+https://blog.csdn.net/qq_32907349/article/details/52190796
+
+Python的进阶：copy()与deepcopy()区别
+
+https://mp.weixin.qq.com/s/bgk375-KxF-is5dIgV_p4g
+
+5张图彻底理解Python中的浅拷贝与深拷贝
+
 ## six
 
 six是一个专门用来兼容Python 2和Python 3的库。它解决了诸如urllib的部分方法不兼容，str和bytes类型不兼容等“知名”问题。2x3=6？这难道就是得名的原因？
@@ -394,64 +449,3 @@ http://gunicorn.org/
 http://www.cnblogs.com/ArtsCrafts/p/gunicorn.html
 
 Gunicorn快速入门
-
-## 多线程 & 同步 & 异步
-
-python异步并发模块concurrent.futures，主要用来实现多线程和多进程的异步并发。
-
-代码示例：
-
-```python
-from concurrent import futures
-
-def test(num):
-    import time
-    return time.ctime(),num
-
-with futures.ThreadPoolExecutor(max_workers=1) as executor:
-    future = executor.submit(test,1)
-    print future.result()
-
->>>
-('Tue Jan 17 15:23:10 2017', 1)
-```
-
-如果是多进程的话，可使用ProcessPoolExecutor。由于python是解释语言的关系，多线程设计基本就是残废状态，因此，通常情况下，**不要使用多线程，请使用多进程**
-
-参考：
-
-http://lovesoo.org/analysis-of-asynchronous-concurrent-python-module-concurrent-futures.html
-
-python异步并发模块concurrent.futures简析
-
-https://mp.weixin.qq.com/s/QIfxxY6z7y77RDE_8gDEIg
-
-并行运算Process Pools
-
-http://www.cnblogs.com/Python666/p/7506546.html
-
-Python单例模式
-
-https://mp.weixin.qq.com/s/tJsdM-4q_RC-5AhTw3y49w
-
-schedule使用进阶
-
-https://mp.weixin.qq.com/s/fwa3cbDI0fIjjztA60XuUQ
-
-同步与异步Python有何不同？
-
-https://mp.weixin.qq.com/s/0tLI_UNhpD-UPa9o206xFA
-
-为什么Python多线程无法利用多核
-
-https://mp.weixin.qq.com/s/6zVU6i75hZ3ZXZAmW0G5Mw
-
-非常适合小白的Asyncio教程
-
-https://mp.weixin.qq.com/s/nHIQ5uwxZM-9DbSu_jL6DQ
-
-异步Python比同步Python快在哪里？
-
-https://mp.weixin.qq.com/s/0MMUTp_-JF97inzeJd4j1g
-
-详解如何用Multiprocessing进行并行计算

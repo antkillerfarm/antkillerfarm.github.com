@@ -393,47 +393,27 @@ http://blog.csdn.net/yzj99848873/article/details/48025593
 
 Python星号（ * ）操作符的用法
 
+## 运算符重载
+
+```python
+class Poke:
+    def __init__(self):
+        self.number = 0
+    def __call__(self, *args, **kwargs):
+        print("zzm")
+    def __getitem__(self, item): # item就是[]内的值
+        return self.number
+    def __setitem__(self, key, value): # key是[]内的值，value是 = 后的值
+        self.number = value
+
+poke = Poke() # 创建对象poke
+poke() # 调用__call__函数
+print(poke[0]) # 调用__getitem__函数
+poke[0] = 3 # 调用__setitem__函数
+```
+
 ## 类型建议符
 
 `def twoSum(num1: int, num2: int=100) -> int:`
 
 值得注意的是，类型建议符并非强制规定和检查，也就是说即使传入的实际参数与建议参数不符，也不会报错。
-
-## pass语句
-
-```python
-def iplaypython():
-       pass
-```
-
-定义一个函数iplaypython，但函数体部分暂时还没有完成，又不能空着不写内容，因此可以用pass来替代占个位置。
-
-## 对象的属性
-
-`__dict__`：对象的可变属性。
-
-`__slots__`：对象的不可变属性，一旦创建就不可修改。
-
-不是所有的对象都有`__dict__`属性，但多数对象有。
-
-`dir(Foo())`：列出Foo()创建的对象的所有属性（不仅包括`__dict__`和`__slots__`，还包括其他的属性）。
-
-参考：
-
-http://www.cnblogs.com/ifantastic/p/3768415.html
-
-dir()与`__dict__`，`__slots__`的区别
-
-## Typer
-
-一个命令行选项的快速处理的库。
-
-官网：
-
-https://typer.tiangolo.com/
-
-它的设计参考了FastAPI，后者是一个Web版本的API接口库，用于提供restful风格的API。
-
-官网：
-
-https://fastapi.tiangolo.com/
