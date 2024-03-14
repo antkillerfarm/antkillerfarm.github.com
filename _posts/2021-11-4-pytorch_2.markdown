@@ -89,6 +89,14 @@ pytorch可以直接调用NCCL Lib APIs，或者对起进行一层封装：
 
 `torchrun --nnodes 2 --nproc-per-node=4 --rdzv_backend=c10d --rdzv_endpoint=$MASTER_ADDR a.py`
 
+官方文档：
+
+https://pytorch.org/docs/stable/elastic/run.html
+
+https://pytorch.org/docs/stable/elastic/quickstart.html
+
+参考：
+
 https://zhuanlan.zhihu.com/p/675464874
 
 一文读懂分布式训练启动方式

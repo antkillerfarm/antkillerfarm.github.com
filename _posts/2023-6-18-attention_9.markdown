@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（九）——Attention进阶
+title:  Attention（九）——BERT进阶（2）
 category: Attention 
 ---
 
@@ -8,6 +8,78 @@ category: Attention
 {:toc}
 
 # BERT进阶（续）
+
+https://mp.weixin.qq.com/s/WEbJnO04DOrsxUbzpgL66g
+
+BERT源码分析（PART I）
+
+https://mp.weixin.qq.com/s/iXjE7KoyvFQ8uekLKRK4jw
+
+BERT源码分析（PART II）
+
+https://mp.weixin.qq.com/s/DxBC_x5ZWC6SECfnwDGnVg
+
+BERT源码分析（PART III）
+
+https://mp.weixin.qq.com/s/kI_k_plZbRzmdeXxt2_2WA
+
+从Transformer到BERT模型
+
+https://mp.weixin.qq.com/s/Bnk0nIjBdb58WVJEY8MqnA
+
+NLP中各种各样的编码器
+
+https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
+
+预训练BERT，官方代码发布前他们是这样用TensorFlow解决的
+
+https://mp.weixin.qq.com/s/HOD1Hb70NhTXXCXlopzfng
+
+BERT推理加速实践
+
+https://mp.weixin.qq.com/s/0luHJsw7WWJskJWGThR5qg
+
+使用BERT做文本摘要
+
+https://mp.weixin.qq.com/s/IY8J09LvDAr8owYffKi5Dw
+
+五问BERT：深入理解NLP领域爆红的预训练模型
+
+https://zhuanlan.zhihu.com/p/106901954
+
+BERT, ELMo, & GPT-2: 这些上下文相关的表示到底有多上下文化？
+
+https://mp.weixin.qq.com/s/mkDmn4zy_s87kiiDIkx0VQ
+
+NLP的12种后BERT预训练方法
+
+https://www.zhihu.com/question/327450789
+
+Bert如何解决长文本问题？
+
+https://mp.weixin.qq.com/s/QTELpbr480AJsBINm-FHKQ
+
+代码也能预训练，微软&哈工大最新提出CodeBERT模型，支持自然-编程双语处理
+
+https://mp.weixin.qq.com/s/ZEWCcxTEuEMvQ5__t3gkBg
+
+BERT技术体系综述论文：40项分析探究BERT如何work
+
+https://mp.weixin.qq.com/s/OsfeAA_tbzAddh1eunwx2w
+
+关于BERT，面试官们都怎么问
+
+https://mp.weixin.qq.com/s/e3n_16uB-qGeGSaGwzlBDw
+
+这群工程师，业余将中文NLP推进了一大步（中文预训练模型）
+
+https://mp.weixin.qq.com/s/V4pbjP5na1OYp-TorUik8g
+
+详聊如何用BERT实现关系抽取
+
+https://mp.weixin.qq.com/s/s5YIG6rBEy6fZkFLh-CzoA
+
+后BERT时代生存指南之VL-BERT篇
 
 https://zhuanlan.zhihu.com/p/113326366
 
@@ -336,69 +408,3 @@ https://zhuanlan.zhihu.com/p/58425003
 https://mp.weixin.qq.com/s/SfMIKfF_B4agFCHN_U_mzQ
 
 BAM！利用知识蒸馏和多任务学习构建的通用语言模型
-
-https://mp.weixin.qq.com/s/6G5Mu7-1omGtQ_9Gt9lUBw
-
-基于预训练自然语言生成的文本摘要方法
-
-https://mp.weixin.qq.com/s/yysnPauB22YgprpOi1ZWSQ
-
-深入理解BERT Transformer，不仅仅是注意力机制
-
-https://mp.weixin.qq.com/s/kFABJJ3fBC48-4DXK8PERQ
-
-10大任务超越BERT，微软提出多任务深度神经网络MT-DNN
-
-https://mp.weixin.qq.com/s/jlGfxkT_o9sgFlUuR_x5Tw
-
-微软开源用于学习通用语言嵌入的MT-DNN模型
-
-https://mp.weixin.qq.com/s/D68YzjYvpc2epGWFBP6rIQ
-
-谷歌实习生新算法提速惊人！BERT训练从三天三夜，缩短到一个小时
-
-https://mp.weixin.qq.com/s/iDGofh_ycWJzfqQriPEXGQ
-
-如何用Python和BERT做中文文本二元分类？
-
-https://zhuanlan.zhihu.com/p/91052495
-
-当BERT遇上知识图谱
-
-https://mp.weixin.qq.com/s/wQW-JT-sGMj60OtXwTssyQ
-
-BERT模型推理加速总结
-
-# Attention进阶
-
-https://mp.weixin.qq.com/s/wrmjMLPuvpLIcF5VQBqZxg
-
-最新“注意力机制Attention”大综述论文，66页pdf
-
-https://mp.weixin.qq.com/s/rrbwItXt-1EaGiqtDEGvog
-
-为节约而生：从标准Attention到稀疏Attention
-
-https://mp.weixin.qq.com/s/MzHmvbwxFCaFjmMkjfjeSg
-
-遍地开花的Attention，你真的懂吗？
-
-https://mp.weixin.qq.com/s/e_LEhLf2Rh-1zkEBmqS4nA
-
-NLP这两年：15个预训练模型对比分析与剖析
-
-https://mp.weixin.qq.com/s/LAInpFPa-3R1rfv6idILnw
-
-注意力机制发展如何了，如何学习它在各类任务中的应用？
-
-https://zhuanlan.zhihu.com/p/40920384
-
-真正的完全图解Seq2Seq Attention模型
-
-https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ
-
-深度学习注意力机制-Attention in Deep learning-附101页PPT
-
-https://mp.weixin.qq.com/s/FlA1YrR0sLQGJoJZnSXpRw
-
-DeepMind：深度学习注意力与记忆机制，附70页ppt

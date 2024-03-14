@@ -207,8 +207,6 @@ Multi-Level IR
 
 代码：
 
-tensorflow/compiler/mlir
-
 llvm/mlir
 
 教程：

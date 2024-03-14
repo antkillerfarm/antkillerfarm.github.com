@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（八）——Beyond Transformer, BERT进阶
+title:  Attention（八）——Beyond Transformer, BERT进阶（1）
 category: Attention 
 ---
 
@@ -10,6 +10,18 @@ category: Attention
 # Large Language Model（续）
 
 ![](/images/img5/LLM_pipeline.jpg)
+
+---
+
+大模型开源有几个等级，开源程度从低到高：
+
+- 仅模型开源（技术报告只列举了Evaluation）。主要利好做应用的公司（继续训练和微调）和普通用户（直接部署）技术报告开源训练过程。
+- 比较详尽的描述了模型训练的关键细节。利好算法研究。训练代码开源/技术报告开源全部细节。
+- 包含了数据配比的核心关键信息。这些信息价值连城，是原本需要耗费很多GPU资源才能得到的Know-how。
+- 全量训练数据开源。其他有算力资源的团队可以基于训练数据和代码完全复现该模型。训练数据可以说是大模型团队最核心的资产。数据清洗框架和流程开源。
+- 从源头的原始数据（比如 CC 网页、PDF 电子书 等）到 可训练的数据的清洗过程也开源， 其他团队不仅可以基于此清洗框架复现数据预处理过程，还可以通过搜集更多的源（比如基于搜索引擎抓取的全量网页）来扩展自己的数据规模，得到比原始模型更强的基座模型。
+
+实际上大部分的模型开源诸如LLaMa2、Mistral、Qwen等，只做到Level-1， 像DeepSeek这样的可以做到Level-2。 而Level-4及以上的开源一个都没有。
 
 ---
 
@@ -262,75 +274,3 @@ https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
 https://zhuanlan.zhihu.com/p/66053631
 
 BERT
-
-https://mp.weixin.qq.com/s/WEbJnO04DOrsxUbzpgL66g
-
-BERT源码分析（PART I）
-
-https://mp.weixin.qq.com/s/iXjE7KoyvFQ8uekLKRK4jw
-
-BERT源码分析（PART II）
-
-https://mp.weixin.qq.com/s/DxBC_x5ZWC6SECfnwDGnVg
-
-BERT源码分析（PART III）
-
-https://mp.weixin.qq.com/s/kI_k_plZbRzmdeXxt2_2WA
-
-从Transformer到BERT模型
-
-https://mp.weixin.qq.com/s/Bnk0nIjBdb58WVJEY8MqnA
-
-NLP中各种各样的编码器
-
-https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
-
-预训练BERT，官方代码发布前他们是这样用TensorFlow解决的
-
-https://mp.weixin.qq.com/s/HOD1Hb70NhTXXCXlopzfng
-
-BERT推理加速实践
-
-https://mp.weixin.qq.com/s/0luHJsw7WWJskJWGThR5qg
-
-使用BERT做文本摘要
-
-https://mp.weixin.qq.com/s/IY8J09LvDAr8owYffKi5Dw
-
-五问BERT：深入理解NLP领域爆红的预训练模型
-
-https://zhuanlan.zhihu.com/p/106901954
-
-BERT, ELMo, & GPT-2: 这些上下文相关的表示到底有多上下文化？
-
-https://mp.weixin.qq.com/s/mkDmn4zy_s87kiiDIkx0VQ
-
-NLP的12种后BERT预训练方法
-
-https://www.zhihu.com/question/327450789
-
-Bert如何解决长文本问题？
-
-https://mp.weixin.qq.com/s/QTELpbr480AJsBINm-FHKQ
-
-代码也能预训练，微软&哈工大最新提出CodeBERT模型，支持自然-编程双语处理
-
-https://mp.weixin.qq.com/s/ZEWCcxTEuEMvQ5__t3gkBg
-
-BERT技术体系综述论文：40项分析探究BERT如何work
-
-https://mp.weixin.qq.com/s/OsfeAA_tbzAddh1eunwx2w
-
-关于BERT，面试官们都怎么问
-
-https://mp.weixin.qq.com/s/e3n_16uB-qGeGSaGwzlBDw
-
-这群工程师，业余将中文NLP推进了一大步（中文预训练模型）
-
-https://mp.weixin.qq.com/s/V4pbjP5na1OYp-TorUik8g
-
-详聊如何用BERT实现关系抽取
-
-https://mp.weixin.qq.com/s/s5YIG6rBEy6fZkFLh-CzoA
-
-后BERT时代生存指南之VL-BERT篇
