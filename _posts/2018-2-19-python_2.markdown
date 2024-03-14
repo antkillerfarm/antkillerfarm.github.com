@@ -9,6 +9,14 @@ category: language
 
 # Python
 
+## 类型建议符
+
+`def twoSum(num1: int, num2: int=100) -> int:`
+
+值得注意的是，类型建议符并非强制规定和检查，也就是说即使传入的实际参数与建议参数不符，也不会报错。
+
+类似的，`typing.cast`并不是用来转换数据类型的，它是用来在类型提示中进行类型断言的。
+
 ## pass语句
 
 ```python

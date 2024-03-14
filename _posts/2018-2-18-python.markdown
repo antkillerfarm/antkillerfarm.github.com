@@ -411,9 +411,3 @@ poke() # 调用__call__函数
 print(poke[0]) # 调用__getitem__函数
 poke[0] = 3 # 调用__setitem__函数
 ```
-
-## 类型建议符
-
-`def twoSum(num1: int, num2: int=100) -> int:`
-
-值得注意的是，类型建议符并非强制规定和检查，也就是说即使传入的实际参数与建议参数不符，也不会报错。

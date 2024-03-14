@@ -190,6 +190,10 @@ https://pytorch.org/tutorials/recipes/intel_extension_for_pytorch.html
 
 INTEL EXTENSION FOR PYTORCH
 
+https://pytorch.org/blog/path-achieve-low-inference-latency/
+
+The Path to Achieve Ultra-Low Inference Latency With LLaMA 65B on PyTorch/XLA
+
 ## Quantization
 
 pytorch的Quantization主要使用PT2E（PyTorch 2 Export）接口。
