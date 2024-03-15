@@ -151,6 +151,10 @@ Fully Sharded Data Parallel是Facebook深度借鉴微软ZeRO之后提出的PyTor
 
 ![](/images/img5/fsdp_workflow.png)
 
+代码：
+
+https://github.com/facebookresearch/fairscale/blob/main/fairscale/nn/data_parallel/fully_sharded_data_parallel.py
+
 参考：
 
 https://www.cnblogs.com/rossiXYZ/p/15815013.html
