@@ -155,6 +155,10 @@ Fully Sharded Data Parallel是Facebook深度借鉴微软ZeRO之后提出的PyTor
 
 https://github.com/facebookresearch/fairscale/blob/main/fairscale/nn/data_parallel/fully_sharded_data_parallel.py
 
+pytorch里已经集成了该代码：
+
+torch/distributed/fsdp/fully_sharded_data_parallel.py
+
 参考：
 
 https://www.cnblogs.com/rossiXYZ/p/15815013.html
@@ -239,6 +243,22 @@ https://zhuanlan.zhihu.com/p/662498827
 
 大模型推理加速：看图学KV Cache
 
+# MQA & GQA
+
+![](/images/img5/GQA.jpg)
+
+首先是原始的 MHA(Multi-Head Attention)，QKV 三部分有相同数量的头，且一一对应。每次做Attention，head1的QKV就做好自己运算就可以，输出时各个头加起来就行。
+
+而MQA则是，让Q仍然保持原来的头数，但K和V只有一个头，相当于所有的Q头共享一组K和V头，所以叫做Multi-Query了。
+
+实现改变了会不会影响效果呢？确实会影响，但相对它30%-40%的吞吐收益，性能的些微降低是可以接受的。
+
+而GQA呢，是MHA和MQA的折衷方案，既不想损失性能太多，又想获得MQA带来的推理加速好处。
+
+https://zhuanlan.zhihu.com/p/647130255
+
+为什么现在大家都在用MQA和GQA？
+
 # GSPMD
 
 GSPMD是在GShard基础上发展而来的并行算法。
@@ -278,73 +298,3 @@ https://github.com/NVIDIA/TensorRT-LLM/
 https://docs.vllm.ai/en/latest/
 
 Easy, fast, and cheap LLM serving for everyone
-
-# LLM实战经验
-
-https://pytorch.org/blog/high-performance-llama-2/
-
-https://huggingface.co/blog/zh/bloom-inference-optimization
-
-https://huggingface.co/blog/zh/bloom-megatron-deepspeed
-
-## LLAMA
-
-代码：
-
-https://github.com/facebookresearch/llama
-
-量化的LLAMA模型：
-
-https://huggingface.co/TheBloke/Llama-2-7B-Chat-GPTQ
-
-参考：
-
-https://github.com/jacoblee93/fully-local-pdf-chatbot
-
-一个本地版本的阅读PDF的chatbot
-
-## GEMMA
-
-官网：
-
-https://www.kaggle.com/models/google/gemma
-
-# 工具
-
-FairScale是由Facebook Research开发的PyTorch扩展库。FSDP就是首发于这个库。
-
----
-
-https://zhuanlan.zhihu.com/p/412118353
-
-Kokkos:一个异构并行计算通用平台
-
-# 参考
-
-https://mp.weixin.qq.com/s/F10UaaoxGPOE4pc59LBCRw
-
-数据并行化对神经网络训练有何影响？谷歌大脑进行了实证研究
-
-https://mp.weixin.qq.com/s/UF7DDenUQJ3bL83IHxOkIw
-
-分布式优化算法及其在多智能体系统与机器学习中的应用
-
-https://mp.weixin.qq.com/s/6h9MeBs89hTtWsYSZ4pZ5g
-
-蚂蚁金服核心技术：百亿特征实时推荐算法揭秘
-
-https://mp.weixin.qq.com/s/xV5cLbCPb7Nh6i4i7DxJIQ
-
-没人告诉你的大规模部署AI高效流程！
-
-https://mp.weixin.qq.com/s/8R7YhcZ_Dt0oFIF3bQovxw
-
-为了提升DL模型性能，阿里工程师打造了流式编程框架
-
-https://mp.weixin.qq.com/s/z6gXp-EeDID1ed8_DsUbOg
-
-90秒训练AlexNet！商汤刷新纪录
-
-https://mp.weixin.qq.com/s/HY2yPZ--Zm5_m3B70baWjQ
-
-谷歌开源效率怪兽GPipe，速度提升25倍，CIFAR-10精度达到99%

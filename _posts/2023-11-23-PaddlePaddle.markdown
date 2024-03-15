@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  PaddlePaddle, Pytorch（三）
+title:  PaddlePaddle, Huggingface, Pytorch（三）
 category: DL Framework 
 ---
 
@@ -92,6 +92,76 @@ https://mp.weixin.qq.com/s/1jtO1efF2UauaUZFDRzQHw
 https://mp.weixin.qq.com/s/gfJKmoeR6n3m89r4F3R_yw
 
 PaddleDetection物体检测统一框架
+
+# Huggingface
+
+Hugging face起初是一家总部位于纽约的聊天机器人初创服务商，他们本来打算创业做聊天机器人，然后在github上开源了一个Transformers库，虽然聊天机器人业务没搞起来，但是他们的这个库在机器学习社区迅速大火起来。目前已经共享了超100,000个预训练模型，10,000个数据集，变成了机器学习界的github。
+
+官网：
+
+http://www.huggingface.co
+
+它的国内竞品有：modelscope
+
+Huggingface提供的工具库中比较知名的有Accelerate和Optimum。Accelerate专注于开箱即用的分布式训练，而Optimum作为Transformer的扩展，通过利用用户目标硬件的最大效率来加速模型训练和推理。
+
+Optimum又是另一开源项目的封装：
+
+https://onnxruntime.ai/docs/performance/transformers-optimization.html
+
+---
+
+Huggingface的transformers项目，为该网站HUB下的模型提供了支撑，成为了目前最流行的transformers专用框架。
+
+代码：
+
+https://github.com/huggingface/transformers
+
+---
+
+Safetensors是Huggingface提出的一种模型格式，旨在解决ONNX格式的不足。
+
+代码：
+
+https://github.com/huggingface/safetensors
+
+---
+
+tokenizers的含义参见《依存分析》。
+
+代码：
+
+https://github.com/huggingface/tokenizers
+
+参考：
+
+https://zhuanlan.zhihu.com/p/591335566
+
+Huggingface详细教程之Tokenizer库
+
+---
+
+参考：
+
+https://zhuanlan.zhihu.com/p/535100411
+
+Huggingface超详细介绍
+
+https://mp.weixin.qq.com/s/yRn1AELGK3jgfOaaxIo67Q
+
+Huggingface简介及BERT代码浅析
+
+https://mp.weixin.qq.com/s/-fQ9VlaOjssDufcZuCe91w
+
+结合HuggingFace代码浅析Transformer
+
+https://zhuanlan.zhihu.com/p/650438817
+
+GPU分布式训练推理——Accelerate
+
+https://zhuanlan.zhihu.com/p/610800518
+
+Optimum + ONNX Runtime: 更容易、更快地训练你的Hugging Face模型
 
 # Pytorch
 

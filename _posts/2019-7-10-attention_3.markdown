@@ -298,7 +298,7 @@ Sesame Street（芝麻街）是是美国公共广播协会（PBS）制作播出�
 - Bert训练用更多的数据、训练步数、更大的批次，mask机制变为动态的，诞生了RoBERTa。
 - ERNIE的基础上，用大量数据和先验知识，进行多任务的持续学习，诞生了ERNIE2.0。
 - BERT-wwm增加了训练数据集、训练步数，诞生了BERT-wwm-ext。
-- BERT的其他改进模型基本考增加参数和训练数据，考虑轻量化之后，诞生了ALBERT。
+- BERT的其他改进模型基本靠增加参数和训练数据，考虑轻量化之后，诞生了ALBERT。
 
 https://mp.weixin.qq.com/s/kwKZfNSYTzc-PGKxTxm8-w
 

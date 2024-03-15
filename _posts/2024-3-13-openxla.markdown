@@ -210,6 +210,11 @@ pytorch IR -> XLA IR -> stablehlo IR，其中的第二步存在一些问题。
 
 `XLA_STABLEHLO_COMPILE`
 
+```text
+  %custom-call.101 = f32[1,3,224,224]{3,2,1,0} custom-call(f32[1,3,224,224]{3,2,1,0} %p12.100), custom_call_target="stablehlo.uniform_quantize", api_version=API_VERSION_TYPED_FFI, backend_config={scale=[0.00391965],zero_point=[-128],storage_type=si8,expressed_type=f32,storage_min=-128,storage_max=127}
+  %custom-call.102 = f32[1,3,224,224]{3,2,1,0} custom-call(f32[1,3,224,224]{3,2,1,0} %custom-call.101), custom_call_target="stablehlo.uniform_dequantize", api_version=API_VERSION_TYPED_FFI, backend_config={scale=[0.00391965],zero_point=[-128],storage_type=si8,expressed_type=f32,storage_min=-128,storage_max=127}
+```
+
 参考：
 
 https://pytorch.org/tutorials/prototype/pt2e_quant_ptq.html
@@ -244,7 +249,18 @@ FSDP的基本概念，参见《并行 & 框架 & 优化（四）》。
 - test/test_train_mp_mnist_zero1.py
 - test/test_train_mp_mnist_fsdp_with_ckpt.py
 
+Min Num Params: FSDP默认自动包装的最小参数量。
+Offload Params: 是否将参数和梯度卸载到CPU。
+
+```python
 XlaFullyShardedDataParallel
+self._shard_parameters_(params_to_shard)
+torch_xla._XLAC._replace_xla_tensor(p, p.new_zeros(1))
+shard_data = self._get_shard(p)
+_flatten_and_pad_to_world_size
+self._fsdp_wrapped_module: nn.Module = XlaFlattenParamsWrapper
+```
+
 
 参考：
 

@@ -261,6 +261,8 @@ Byte Pair Encoding(BPE)本来是一种数据压缩算法，后来被用于分词
 
 https://github.com/rsennrich/subword-nmt
 
+![](/images/img5/Tokenizer.webp)
+
 参考：
 
 https://www.cnblogs.com/huangyc/p/10223075.html
