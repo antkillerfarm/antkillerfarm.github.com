@@ -9,6 +9,46 @@ category: Nature
 
 # 天文杂谈
 
+1990年发射的哈勃太空望远镜，由于一片镜片边缘磨薄了2.2mm，相机镜头misallignment, 最终导致发射后拍摄图像模糊。
+
+NASA的科学家开始没有意识到是望远镜的镜头质量问题，还在讨论是不是外太空就是模模糊糊的形态……
+
+后来相机工程师发现了是由于一个镜片零件生产误差造成的问题，花了3年时间在太空修复了这个问题，避免了重新发射，为NASA节省了47亿美元。科学家终于能拍到清晰的太空图像了。
+
+另一个已于2020年退役的太空红外望远镜斯皮策空间望远镜（Spitzer Space Telescope）覆盖波长为3-180微米，但其镜面直径仅为0.85米，观测能力有限。
+
+20年代三大空间巡天望远镜——载人空间站工程巡天空间望远镜（Chinese Survey Space Telescope, 简称CSST，亦被称为Chinese Space Station Telescope）、欧洲航天局的欧几里得（Euclid）和美国航天局的罗曼太空望远镜（Roman Space Telescope）。
+
+https://mp.weixin.qq.com/s/Wcd_bv_bt-xv42UD40dDww
+
+深度传感进化史
+
+https://mp.weixin.qq.com/s/8vRFfFLdLWSPpTzHjUKegQ
+
+哈勃太空望远镜30岁生日快乐！我们看到的宇宙因你而不同
+
+https://www.zhihu.com/question/452589619
+
+中国空间站工程巡天望远镜和哈勃相比有什么优势和劣势？
+
+https://www.zhihu.com/question/363427886
+
+很多人说哈勃望远镜是锁眼卫星的民用版，那么锁眼调转过去观测宇宙能够达到哈勃的效果吗？
+
+https://zhuanlan.zhihu.com/p/36125534
+
+哈勃28周岁，但大家知道锁眼么？
+
+https://mp.weixin.qq.com/s/DFUMQ08Efr5iJJJlRthsOA
+
+这将是中国有史以来最昂贵、也最先进的望远镜（巡天空间望远镜）
+
+https://mp.weixin.qq.com/s/k1v-sDi0x1pRDZsHcDRTpA
+
+雄心勃勃，中国建造首个大型太空光学望远镜
+
+---
+
 1928年10月25日，一位旅美求学的中国青年在美国叶凯士天文台发现一颗小行星（临时编号为1928 UF），这是第一颗由中国人发现的小行星。这位青年学子感怀祖国，随即将其命名为中华星（1125 China）。
 
 不久，青年回国效力，成为中国现代天文学的拓荒者之一，但却再也没找到这颗小行星的踪迹。直到1957年10月30日，青年在紫金山天文台发现了一颗轨道酷似1125的小行星。
@@ -24,14 +64,6 @@ https://mp.weixin.qq.com/s/0zlHeZsr_gVNoaufr_--Hw
 https://zhuanlan.zhihu.com/p/61467796
 
 抗日时期，中国人完成哪些不可能做到的壮举？
-
----
-
-![](/images/img5/ISS.jpg)
-
-https://mp.weixin.qq.com/s/yCmwX5srpmhYrbAkFbC-gQ
-
-20年，241人，5400000000000米（国际空间站）
 
 ---
 
@@ -274,45 +306,3 @@ https://mp.weixin.qq.com/s/iznVJzjkYA2I5Y-P0NKrdA
 https://mp.weixin.qq.com/s/hZBYHvYktdJeOrAHTCKTTA
 
 如何肉眼识别夜空中的人造卫星？
-
-# 建筑+
-
-https://mp.weixin.qq.com/s/aMiIg0V2avxxRSkds_WDCg
-
-石家庄市区里那些比较“老”的建筑
-
-https://mp.weixin.qq.com/s/G0G7ZosZfzREsvixNUE3cw
-
-今天开始，他把凯旋门包了起来
-
-https://mp.weixin.qq.com/s/I2jBgNgHBNKH7DLci4pVTA
-
-古建筑入门：如何判断一座建筑的年代？
-
-https://mp.weixin.qq.com/s/hh7IJVfNifiMt7KBo0-HBw
-
-暴雨后，谁来为破损的山西古建“撑伞”？
-
-https://zhuanlan.zhihu.com/p/430539779
-
-台湾海峡通道最晚什么时候动工？
-
-https://www.zhihu.com/question/23746900
-
-为何对巴西利亚城市规划会出现两种极端的评价？
-
-https://mp.weixin.qq.com/s/jD5O3EuK4QRpTmHC7ZBmIQ
-
-140年后，圣家族大教堂竣工终于指日可待？
-
-https://mp.weixin.qq.com/s/7pdQ8UMNwAw-YZb90sR-ng
-
-“132万红砖房”改造风波后，房子总要归于生活
-
-https://www.zhihu.com/question/545480673
-
-沙特阿拉伯计划建长近120公里的大楼，将用到哪些技术？对当地人的生活将带来哪些影响？
-
-https://mp.weixin.qq.com/s/2HNEJVZHcsDkpC87sTHwDw
-
-沙特要花1万亿美元建世界最大建筑，造型看着像长城

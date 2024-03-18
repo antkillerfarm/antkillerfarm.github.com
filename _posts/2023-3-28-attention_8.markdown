@@ -9,6 +9,44 @@ category: Attention
 
 # Large Language Model（续）
 
+国内这一堆利润导向的“AI研究”公司，阿里的达摩院甚至还闹出过自负盈亏这种笑话，让这些公司花费大量时间和金钱去做预训练语料库，估计比让恒大还清债务还难。
+
+当初微软为了帮助OpenAI训练，在2020年给OpenAI搭建了一个有285000核CPU和10000个V100 GPU的超算环境。
+
+Q：微软调度了1万张卡给OpenAI做训练，商汤的反馈是我们国内最多也就调动2000张卡，这个技术有难度吗？
+
+A：我目前了解到这一块国内目前没有哪个达到1万张量级的，不可能的，现在没有这水平。现在的确从百度视角来看，现在几千张卡在测试就不错了。从技术积累来说，涉及到集群做调度还是有一些协同性的难度。我认为包括商汤、百度，离微软的差距还是短时间内无法追上的。
+
+国内先搞一波小参数的大模型，PR一定要cover机器之心、新智元、量子位，然后宣称自己的130b模型超越了gpt4，并在自己的榜上发布测评结果，成功超越gpt4。最后一堆商业公司来买130b的模型，这就算是创业成功了，毕竟一套价格不菲，几千万。
+
+国内的研究者总是发布达到chatgpt4 106%能力的工作，人家一更换测评数据集就泯然众人矣了。
+
+4月份业界就有传闻说字节想花上百万美金从OpenAI挖人，结果面试官被OpenAI反挖走了。
+
+百度的数据团队也非常强，数据采集、数据清洗都是相当专业的。单是数据增强，一个月就花几千万的OpenAI API调用费用。
+
+在初创公司已经发布的大模型中，只有Moonshot的模型水平超过了GPT-3.5。并没有直接照抄LLaMA的架构，而是做了很多工程上的优化。
+
+![](/images/img5/LLM.webp)
+
+https://www.zhihu.com/question/608763410
+
+国内AI大模型已近80个，哪个最有前途？
+
+---
+
+很多中间任务本身是为了服务下游高级任务，被拆解出来的，结果ChatGPT直接解决高级任务，中间任务自然也就不需要了。过去那一套，POS、句法树、依存都不用做了，现在都没看太多人提了，甚至乔姆斯基体系最近又被喷了。
+
+中间层还不光是中间任务，还包括LLM中间训练部分的，比如模型结构、损失函数、优化器啊。
+
+有段时间，各种魔改Transformer、优化器、损失函数。但到现在常用模型结构和Attention Is All Your Need中也没差太多，小改了LN、activation，而优化器则主要就修复了Adam实现的bug，成了AdamW. 结构方面出于推理效率考量的用一用MQA和GQA。
+
+https://mp.weixin.qq.com/s/vfsB5t3r5dBACKQx6FshVw
+
+选择你的道路：LLM 时代指南
+
+---
+
 ![](/images/img5/LLM_pipeline.jpg)
 
 ---
@@ -118,60 +156,6 @@ https://blog.csdn.net/v_JULY_v/article/details/134923301
 一文通透想颠覆Transformer的Mamba：从SSM、S4到mamba、线性transformer(含RWKV解析)
 
 # BERT进阶
-
-## AR vs AE
-
-自回归模型，是统计上一种处理时间序列的方法，用同一变数例如x的之前各期，亦即$$x_1$$至$$x_{t-1}$$来预测本期$$x_t$$的表现，并假设它们为一线性关系。因为这是从回归分析中的线性回归发展而来，只是不用x预测y，而是用x预测x自己，所以叫做自回归。
-
----
-
-**AR**: Autoregressive Lanuage Modeling，又叫自回归语言模型。它指的是，依据前面(或后面)出现的tokens来预测当前时刻的token，代表模型有ELMO、GTP等。
-
-$$\text{forward:}p(x)=\prod_{t=1}^Tp(x_t|x_{<t})$$
-
-$$\text{backward:}p(x)=\prod_{t=T}^1p(x_t|x_{>t})$$
-
-- 缺点：它只能利用单向语义而不能同时利用上下文信息。ELMO通过双向都做AR模型，然后进行拼接，但从结果来看，效果并不是太好。
-
-- 优点：对自然语言生成任务(NLG)友好，天然符合生成式任务的生成过程。这也是为什么GPT能够编故事的原因。
-
-**AE**:Autoencoding Language Modeling，又叫自编码语言模型。通过上下文信息来预测当前被mask的token，代表有BERT，Word2Vec(CBOW)。
-
-$$p(x)=\prod_{x\in Mask}p(x_t|context)$$
-
-- 缺点：由于训练中采用了MASK标记，导致预训练与微调阶段不一致的问题。此外对于生成式问题，AE模型也显得捉襟见肘，这也是目前为止，BERT为数不多没有实现大的突破的领域。
-
-- 优点：能够很好的编码上下文语义信息，在自然语言理解(NLU)相关的下游任务上表现突出。
-
----
-
-2023.3
-
-ChatGPT的出现，为自然语言生成任务找到了商业化的路径。有鉴于此，Google也不得不在BERT上对AR模型，做了一些有损逼格的妥协。。。囧
-
-![](/images/img5/T5.png)
-
-deep encoder+shallow decoder
-
----
-
-参考：
-
-https://mp.weixin.qq.com/s/n6F6MTjrUCmvEoaLiVZpxA
-
-更深的编码器+更浅的解码器=更快的自回归模型
-
-https://mp.weixin.qq.com/s/pe2E69Gpw0nT9sSHvtBGSg
-
-自回归与非自回归模型不可兼得？预训练模型BANG全都要！
-
-https://www.zhihu.com/question/588325646
-
-为什么现在的LLM都是Decoder only的架构？
-
-https://www.zhihu.com/question/592545459
-
-大模型都是基于Transformer堆叠，采用Encoder或者Decoder堆叠，有什么区别？
 
 ## UniLM
 

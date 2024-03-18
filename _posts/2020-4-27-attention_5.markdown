@@ -261,6 +261,10 @@ https://zhuanlan.zhihu.com/p/362525526
 
 深入解读首个万亿级语言模型Switch Transformer
 
+https://huggingface.co/blog/zh/moe
+
+混合专家模型(MoE)详解
+
 # Attention in CV & RS
 
 《Attention Mechanisms in Computer Vision: A Survey》

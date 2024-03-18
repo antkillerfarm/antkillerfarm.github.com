@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 中国航天, 火星探测
+title: Starlink, 中国航天, 火星探测
 category: Nature 
 ---
 
@@ -8,6 +8,22 @@ category: Nature
 {:toc}
 
 # Starlink（续）
+
+由于星链卫星位于340千米～1300千米之间的地球低轨道上，这就要求反卫星导弹的最大飞行高度可达1300千米。
+
+要知道如今防空导弹的飞行高度才几十千米，可是差得太远了，这就需要研发专用的反卫星导弹。
+
+目前来看，反卫星导弹主要有“美国的海基标准-3，空基ASM-135”，“俄罗斯的陆基努多尔”。
+
+由于反卫星导弹的价格昂贵，比如标准-3反导拦截弹的价格就高达2000万美元一枚。而星链中的一颗卫星的价格仅不到50万美元，要用反卫星导弹将所有的星链卫星都摧毁，那代价实在是太高了，就连美国都难以承受。
+
+美俄两国都有激光武器，俄罗斯的主要就是“佩列斯韦特”战略激光反卫星武器。不过，各国现役的激光武器都无法对太空中的卫星造成有效的伤害。主要就是其功率不够大，导致射程有限，基本上也就几千米的距离，根本无力杀伤数百千米高空中的卫星。
+
+https://k.sina.com.cn/article_5501440086_147e9505600101icab.html
+
+怎么样才能破除美国的星链威胁？
+
+---
 
 Starlink用户终端，最高发射功率为2.44瓦。
 
@@ -280,47 +296,3 @@ https://mp.weixin.qq.com/s/cht7uCrbhAttO1cmXRvcPw
 https://mp.weixin.qq.com/s/LVVCA_WTd5PoAn_wHzlJjw
 
 耗资27亿美元，美国又一辆核动力火星车成功着陆，还带了一架直升机
-
-https://mp.weixin.qq.com/s/eNG-zbHfrji3frbRbQI-Xw
-
-听！火星的声音！又一辆核动力火星车刚刚着陆，寻找远古火星生命
-
-https://mp.weixin.qq.com/s/0gArlvImgT6V7xEg9SCLTQ
-
-毅力号睁开几双“眼睛”，360度全景展示它的火星新家
-
-https://mp.weixin.qq.com/s/jkK0Xf3Hx0vJ0VpkEljMzw
-
-高清火星影像来了，天问一号拍的！
-
-https://mp.weixin.qq.com/s/kfCLMYvvw5NmaOdkN65Yxw
-
-火星的两极也是冰雪世界吗？
-
-https://mp.weixin.qq.com/s/WGHGXWghWhwcA0tux9bz0g
-
-想去火星旅游，记得看看天气预报
-
-https://mp.weixin.qq.com/s/xqBhOAMIs8dONwhgIHZOgQ
-
-火星探测成功率不足50%，人类何时能圆梦？
-
-https://mp.weixin.qq.com/s/25BnV608F7DhIdRWGURBvQ
-
-机智号火星首飞成功！30秒惊险悬停，创造“莱特星球时刻”
-
-https://mp.weixin.qq.com/s/uZofW1nPuu5MNhe9i-CRhA
-
-火星有了第一个机场！人类首架火星无人机试飞成功，场地命名“莱特兄弟机场”
-
-https://mp.weixin.qq.com/s/2nJP3oxgb_AK1P09MCWkTQ
-
-移居火星前，人类需要关注哪些健康风险？
-
-https://mp.weixin.qq.com/s/LNq09_wUKF6dfMrrcSgV-Q
-
-中国火星车即将着陆火星乌托邦平原！
-
-https://mp.weixin.qq.com/s/1W4JcHcO9ZuJnolv05Crvg
-
-中国火神踏上火星！祝融号火星车着陆火星十大问题详解

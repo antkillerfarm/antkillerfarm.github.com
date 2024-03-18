@@ -35,6 +35,10 @@ https://clay-atlas.com/blog/2023/09/21/huggingface-transformers-streaming/
 
 使用HuggingFace Transformer中的TextStreamer和TextIteratorStreamer來實現串流式（stream）輸出生成token
 
+各类开源LLM打榜：
+
+https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard
+
 ---
 
 参考：
@@ -52,6 +56,14 @@ https://s-tm.cn/2023/06/10/SaveModelSharding/
 官网：
 
 https://www.kaggle.com/models/google/gemma
+
+## Mixtral
+
+![](/images/img5/Mixtral.png)
+
+https://zhuanlan.zhihu.com/p/676010571
+
+欢迎 Mixtral-当前Hugging Face上最先进的MoE模型
 
 ## 工具
 
