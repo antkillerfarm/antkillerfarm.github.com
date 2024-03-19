@@ -1,189 +1,161 @@
 ---
 layout: post
-title:  机器学习（三十六）——XGBoost, LightGBM, CatBoost
+title:  机器学习（三十六）——LightGBM, CatBoost
 category: ML 
 ---
 
 * toc
 {:toc}
 
-# XGBoost
+# Kalman filters（续）
 
-XGBoost是陈天奇于2014年提出的一套并行boost算法的工具库。
+https://zhuanlan.zhihu.com/p/40413223
 
->注：陈天奇，华盛顿大学计算机系博士（2019），研究方向为大规模机器学习。上海交通大学本科（2006～2010）和硕士（2010～2013）。CMU助理教授。   
->https://tqchen.com/
+卡尔曼滤波器实现详解
 
-![](/images/img2/XGBoost.png)
+https://mp.weixin.qq.com/s/kBGhHCxq6idOOSGoLX5Kaw
 
-论文：
+手把手教你写卡尔曼滤波器
 
-《XGBoost: A Scalable Tree Boosting System》
+https://mp.weixin.qq.com/s/x0twRIdONCp3-qjhFJuCEQ
 
-参考文献中的部分结论非常精彩，摘录如下。
+手把手教你写扩展卡尔曼滤波器
 
-从算法实现的角度，把握一个机器学习算法的关键点有两个，一个是loss function的理解(包括对特征X/标签Y配对的建模，以及基于X/Y配对建模的loss function的设计，前者应用于inference，后者应用于training，而前者又是后者的组成部分)，另一个是对求解过程的把握。这两个点串接在一起构成了算法实现的主框架。
+https://mp.weixin.qq.com/s/Nta9ksUkAVoX8arBGm7qqg
 
-GBDT的求解算法，具体到每颗树来说，其实就是不断地寻找分割点(split point)，将样本集进行分割，初始情况下，所有样本都处于一个结点（即根结点），随着树的分裂过程的展开，样本会分配到分裂开的子结点上。分割点的选择通过枚举训练样本集上的特征值来完成，分割点的选择依据则是减少Loss。
+手把手教你实现多传感器融合技术
 
-XGBoost的步骤：
+https://zhuanlan.zhihu.com/p/41767489
 
-I. 对loss function进行二阶Taylor Expansion，展开以后的形式里，当前待学习的Tree是变量，需要进行优化求解。
+概率机器人——扩展卡尔曼滤波、无迹卡尔曼滤波
 
-II. Tree的优化过程，包括两个环节：
+https://mp.weixin.qq.com/s/J27fVvYMRdoAgQtfXsywxg
 
-I). 枚举每个叶结点上的特征潜在的分裂点
+OpenCV卡尔曼滤波介绍与代码演示
 
-II). 对每个潜在的分裂点，计算如果以这个分裂点对叶结点进行分割以后，分割前和分割后的loss function的变化情况。
+https://zhuanlan.zhihu.com/p/64007212
 
-因为Loss Function满足累积性(对MLE取log的好处)，并且每个叶结点对应的weight的求取是独立于其他叶结点的（只跟落在这个叶结点上的样本有关），所以，不同叶结点上的loss function满足单调累加性，只要保证每个叶结点上的样本累积loss function最小化，整体样本集的loss function也就最小化了。
+卡尔曼滤波家族
 
-**可见，XGBoost算法之所以能够并行，其要害在于其中枚举分裂点的计算，是能够分布式并行计算的。**
+https://zhuanlan.zhihu.com/p/66646519
 
-官网：
+IKF(IEKF)推导
 
-https://xgboost.readthedocs.io/en/latest/
+https://blog.csdn.net/baidu_21807307/article/details/51843079
 
-GitHub：
+浅谈卡尔曼滤波（Kalman Filter）
 
-https://github.com/dmlc/xgboost
+https://mp.weixin.qq.com/s/ZlyF1GcmpwZoT-3o4T567A
 
-中文文档：
+卡尔曼滤波算法及其应用
 
-http://xgboost.apachecn.org/cn/latest/
+https://zhuanlan.zhihu.com/p/77327349
 
-编译：
+如何理解那个能造导弹军舰还把嫦娥送上天的卡尔曼滤波算法Kalman filter?
 
-```bash
-git clone --recursive https://github.com/dmlc/xgboost
-cd xgboost; make -j4
-```
+https://mp.weixin.qq.com/s/vAm0QDp_i2ec5pZbTmdHNA
 
-python安装：
+傻瓜也能懂的卡尔曼滤波器
 
-`cd python-package; sudo python setup.py install`
+https://mp.weixin.qq.com/s/na0vVhECfBppTb7BmhRyzA
 
-XGBoost提供了两种接口：普通接口和sklearn接口。后者的示例如下：
+从限价订单薄中推导预测因子：卡尔曼滤波来搞定！
 
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/hello/decision_tree.py
+https://mp.weixin.qq.com/s/v460ql4RnJGbzbV0iZH4kA
 
-## 参考
+深度解读卡尔曼滤波原理
 
-https://www.zhihu.com/question/41354392
+https://mp.weixin.qq.com/s/Jlux3pZ4keVzkwWzgoPrEQ
 
-机器学习算法中GBDT和XGBOOST的区别有哪些？
+深入浅出讲解卡尔曼滤波
 
-http://blog.csdn.net/sb19931201/article/details/52577592
+https://mp.weixin.qq.com/s/BeIEjASATt3Qpef_Ag-cSw
 
-xgboost入门与实战
+卡尔曼滤波系列——经典卡尔曼滤波推导
 
-https://mp.weixin.qq.com/s/x06axCC1ZTgezqEYjjNIsw
+https://mp.weixin.qq.com/s/t4GIPMB-6Vq7i8Q5PN6L-w
 
-Xgboost初见面
+追狗，从入门到精通
 
-https://mp.weixin.qq.com/s/f3QVbJiC6gLEptKwFZ-7ZQ
+https://mp.weixin.qq.com/s/EZ4JQM2vynTevUjFpW1h_w
 
-竞赛大杀器XGBoost，你还可以这样玩
+追狗，从入门到精通2.0
 
-http://blog.csdn.net/u013709270/article/details/78156207
+https://zhuanlan.zhihu.com/p/128520715
 
-Python机器学习实战之手撕XGBoost
+自动驾驶定位技术-马尔科夫定位
 
-https://mp.weixin.qq.com/s/xHVkc1NP2oodU7Hb0Xb_jA
+https://zhuanlan.zhihu.com/p/138684962
 
-为什么XGBoost在机器学习竞赛中表现如此卓越？
+自动驾驶感知融合-卡尔曼及扩展卡尔曼滤波(Lidar&Radar)
 
-https://mp.weixin.qq.com/s/pn_qn6uRz2-9DmAK4sp35g
+https://zhuanlan.zhihu.com/p/141059329
 
-史上最详细的XGBoost实战（上）
+自动驾驶感知融合-无迹卡尔曼滤波(Lidar&Radar)
 
-https://mp.weixin.qq.com/s/xzZvIX0QaCPNSyGfHT3beQ
+https://zhuanlan.zhihu.com/p/134595781
 
-史上最详细的XGBoost实战（下）
+卡尔曼滤波(Kalman filter)含详细数学推导
 
-https://mp.weixin.qq.com/s/T3NgIuGZIvmPSMNFyQeeGw
+https://zhuanlan.zhihu.com/p/166342719
 
-XGBoost原理解析
+卡尔曼滤波器详解——从零开始(1)
 
-https://mp.weixin.qq.com/s/JYPnzgzBMSGx09ltBtfwqg
+https://zhuanlan.zhihu.com/p/179480833
 
-理解XGBoost机器学习模型的决策过程
+卡尔曼滤波器详解——从零开始(2)
 
-http://www.cnblogs.com/qcloud1001/p/7542128.html
+https://mp.weixin.qq.com/s/3K9qdH9FXnYABpJoJkFcqw
 
-小巧玲珑：机器学习届快刀XGBoost的介绍和使用
+使用卡尔曼滤波平滑时间序列，提高时序预测的准确率
 
-https://mp.weixin.qq.com/s/__ESveAdBS9KJf26R3EMVA
+https://zhuanlan.zhihu.com/p/35978617
 
-对比TensorFlow提升树与XGBoost：我们该使用怎样的梯度提升方法
+线性动态系统与卡尔曼滤波
 
-https://mp.weixin.qq.com/s/_uscpKaRXZbwfMiWGoY0Uw
+https://mp.weixin.qq.com/s/2rX6iRTYBk47V29fSTAMQQ
 
-多GPU加速学习，这是一份崭新的XGBoost库
+图解卡尔曼滤波(Kalman Filter)
 
-https://mp.weixin.qq.com/s/pwuOFj_rT5Z_XY9siZosKQ
+https://mp.weixin.qq.com/s/PuvTkDhwbYv8TK8t-Zhcug
 
-线性模型已退场，XGBoost时代早已来
+基于卡尔曼滤波的注意力机制—广告点击率预估中的用户行为建模   
 
-https://mp.weixin.qq.com/s/hYuBHHfAGLO3Y0l5t6y94Q
+https://longaspire.github.io/blog/%E5%8D%A1%E5%B0%94%E6%9B%BC%E6%BB%A4%E6%B3%A2/
 
-XGBoost缺失值引发的问题及其深度分析
+卡尔曼滤波器
 
-https://mp.weixin.qq.com/s/Il_S6y4UkN5nim91mwVcVw
+https://zhuanlan.zhihu.com/p/36745755
 
-缺失值处理
+卡尔曼滤波：从入门到精通
 
-https://mp.weixin.qq.com/s/wgiNutl3FhJSAtfJNd5B5g
+https://zhuanlan.zhihu.com/p/338269917
 
-Xgboost
+从全状态观测器到卡尔曼滤波器
 
-https://mp.weixin.qq.com/s/jZ3vcCcZTfTmJNl-9QXelw
+https://mp.weixin.qq.com/s/gb7CX8mbQNkMFVe3DIDT6Q
 
-XGBoost超详细推导，终于有人讲明白了！
+卡尔曼滤波最完整公式推导
 
-https://mp.weixin.qq.com/s/HcWoDmrp4taRGREvV7x4vA
+https://mp.weixin.qq.com/s/vChWpG_2m53n8Bz-yfCohg
 
-斯坦福吴恩达团队提出NGBoost：用于概率预测的自然梯度提升
+实操教程：用一维卡尔曼滤波器来估计运动物体的位置和速度
 
-https://mp.weixin.qq.com/s/X4K6UFZPxL05v2uolId7Lw
+https://zhuanlan.zhihu.com/p/408783183
 
-XGBoost在携程搜索排序中的应用
+卡尔曼滤波的基本原理（也许是我写过最详细的推导）
 
-https://mp.weixin.qq.com/s/5zSLod4oyL4m6LADI6KC0Q
+https://www.zhihu.com/column/c_1303778703026126848
 
-深入理解XGBoost，优缺点分析，原理推导及工程实现
+一个多传感器信息融合的专栏
 
-https://mp.weixin.qq.com/s/uvUN4JiqSb-bS4HAVCDTIQ
+https://www.zhihu.com/question/41823401
 
-集成模型Xgboost！机器学习最热研究方向入门，附学习路线图
+有什么将卡尔曼滤波讲得透彻的书籍或资料？
 
-https://mp.weixin.qq.com/s/-aRRORqBnTMmBDXuW749_w
+https://www.zhihu.com/question/588969519
 
-在没有技术术语的情况下介绍Adaptive、GBDT、XGboosting等提升算法的原理简介
-
-https://mp.weixin.qq.com/s/umGzRySCnJo25e5_0nO7cw
-
-如何用XGBoost做时间序列预测？
-
-https://mp.weixin.qq.com/s/QYMPBWMVTQf3LACGGWGX7A
-
-样本不平衡处理：xgboost几种权重设置方法比较
-
-https://mp.weixin.qq.com/s/d6sVDAKnaU97mAeDs_Gedg
-
-从零解读Xgboost(原理+代码)
-
-https://mp.weixin.qq.com/s/YunDfYPLywc0tMJF72YIAQ
-
-数据分析利器：XGBoost算法最佳解析
-
-https://mp.weixin.qq.com/s/QAu0nM72E2gVhbRXmtCMcw
-
-XGBoost和时间序列
-
-https://www.zhihu.com/question/359567100
-
-XGBoost为什么若模型决策树的叶子节点值越大，越容易过拟合呢？
+组合导航和卡尔曼滤波，一个美国七十年代提出的理论，一个已经成熟的技术，研究生现在研究还有希望毕业吗？
 
 # LightGBM
 

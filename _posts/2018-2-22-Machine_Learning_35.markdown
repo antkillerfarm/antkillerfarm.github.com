@@ -1,11 +1,139 @@
 ---
 layout: post
-title:  机器学习（三十五）——Probabilistic Robotics, Kalman filters
+title:  机器学习（三十五）——PID算法, Probabilistic Robotics, Kalman filters
 category: ML 
 ---
 
 * toc
 {:toc}
+
+# PID算法
+
+PID算法是自动控制领域最基础应用也最广泛的算法。它是三个单词proportional（P，比例）、integral（I，积分）和differential（D，微分）的缩写。
+
+PID算法的流程如下图所示：
+
+| 图1 |
+|:--:|
+| ![](/images/article/PID.png) |
+
+以下我们以水箱水龙头为例，解释一下PID算法的各个要素。
+
+**场景1**：假设我们面对的系统是一个简单的水箱的液位，要从空箱开始注水直到达到某个高度，而你能控制的变量是注水龙头的开关大小。
+
+图1中的$$r(t)$$表示期待的设定值，在这个场景中，就是水箱的液位。$$y(t)$$表示当前的液位。$$e(t)=r(t)-y(t)$$表示误差值。
+
+针对这个场景，我们可以设计如下算法：
+
+水箱液位离预定高度远的时候开关开大点，离的近的时候开关就开小点，随着液位逐步接近预定高度逐渐关掉水龙头。用数学表示就是：
+
+$$u(t) = K_\text{p} e(t)\tag{1}$$
+
+上式中的$$u(t)$$表示需要控制的量，在这里就是水龙头的开合度。$$K_\text{p}$$被称为比例系数。
+
+**场景2**：假设这个水箱不仅仅是装水的容器了，还需要持续稳定的给用户供水。
+
+以下用c表示给用户供水的量($$c\ge 0$$)。显然如果使用公式1，则系统稳定时，$$u(t)-c=0$$，即$$K_\text{p} e(t)=c$$。
+
+由于c和$$K_\text{p}$$都不为0，因此$$e(t)$$也不为0，这就导致始终无法加注到指定水位。这种稳态误差被称为**静差**。
+
+为了平衡c，我们修改算法为：
+
+$$u(t) = K_\text{p} e(t) + K_\text{i} \int_0^t e(\tau) \,d\tau\tag{2}$$
+
+$$K_\text{i}$$被称为积分系数。积分环节的意义就相当于你增加了一个水龙头，这个水龙头的开关规则是水位比预定高度低就一直往大了拧，比预定高度高就往小了拧。如果漏水速度不变，那么总有一天这个水龙头出水的速度恰好跟漏水的速度相等了，系统就和第一小节的那个一样了。那时，静差就没有了。这就是所谓的**积分环节可以消除系统静差**。
+
+**场景3**：假设用户的用水量是变化的，即$$c(t)$$。
+
+这时，如果仍采用公式2，则由于$$c(t)$$的变化，导致$$e(t)$$不恒为0。为了减小$$c(t)$$的变化，对$$e(t)$$的影响，我们继续修改算法：
+
+$$u(t) = K_\text{p} e(t) + K_\text{i} \int_0^t e(\tau) \,d\tau + K_\text{d} \frac{de(t)}{dt}\tag{3}$$
+
+$$K_\text{d}$$被称为微分系数。由于$$c(t)$$的变化不可能事先得知，因此，微分环节只能减小$$c(t)$$的变化所造成的影响，而不能消除。
+
+公式3在Laplace域可写做：
+
+$$L(s) = K_\text{p} + K_\text{i}/s + K_\text{d} s\tag{4}$$
+
+从公式4可以看出，PID controller的数学原理和锁相环（Phase-locked loop）非常类似，它们实际上都是Feedback Control系统。
+
+![](/images/article/PLL.png)
+
+---
+
+反馈控制最重要的就是两点：
+
+一是反馈；
+
+二是测量的大方向。
+
+只要有反馈的结构在，只要测量的反馈值正负号不搞错，那其他的都只是细枝末节的问题了。
+
+https://www.zhihu.com/question/47755808
+
+常用控制算法（包括PID和卡尔曼滤波等）各有什么天然的局限乃至缺陷？
+
+## 串级PID控制
+
+实际使用中，为了改善PID控制的效果，一般还会用到串级PID控制。
+
+参考：
+
+https://blog.csdn.net/qq_25005909/article/details/77941243
+
+串级PID控制四轴飞行状态-分析
+
+https://blog.csdn.net/nemol1990/article/details/45131603
+
+四轴PID讲解
+
+https://www.zhihu.com/question/293450508
+
+飞控算法中双环串级PID如何理解?
+
+## 参考
+
+https://en.wikipedia.org/wiki/PID_controller
+
+《Feedback Control of Dynamic Systems》，Gene F. Franklin，J David Powell，Abbas Emami-Naeini著。
+
+>注：Gene F. Franklin，1927~2012，美国控制论学家。哥伦比亚大学博士，斯坦福大学教授。
+
+>J David Powell，美国航空航天学家。斯坦福大学博士和教授。
+
+>Abbas Emami-Naeini，斯坦福大学博士和讲师，SC Solutions公司总监。
+
+https://www.zhihu.com/answer/23942834
+
+如何通俗地解释PID参数整定？
+
+https://zhuanlan.zhihu.com/p/35473808
+
+PID控制器的贝叶斯理解
+
+https://zhuanlan.zhihu.com/p/139244173
+
+广告出价--如何使用PID控制广告投放成本
+
+https://zhuanlan.zhihu.com/p/39573490
+
+PID控制算法原理
+
+https://mp.weixin.qq.com/s/4iX1hB_f8zQYrG0EQ2u3wA
+
+PID算法在广告成本控制领域的应用
+
+https://mp.weixin.qq.com/s/__xvATWhggYXLy92dz9L5Q
+
+广告成本控制-PID算法
+
+https://mp.weixin.qq.com/s/fswZL2qhgErccYB1GuXZ8g
+
+PID微分器与滤波器的爱恨情仇
+
+https://mp.weixin.qq.com/s/vsyEM7z7-tKrXwRPjE5-EA
+
+浅谈PID控制对无人车/船的自动驾驶影响及水信无人船PID调试结果展示
 
 # Probabilistic Robotics
 
@@ -158,151 +286,3 @@ https://zhuanlan.zhihu.com/ClassicControl
 https://blog.csdn.net/tiandijun/article/details/72469471
 
 通俗理解卡尔曼滤波及其算法实现
-
-https://zhuanlan.zhihu.com/p/40413223
-
-卡尔曼滤波器实现详解
-
-https://mp.weixin.qq.com/s/kBGhHCxq6idOOSGoLX5Kaw
-
-手把手教你写卡尔曼滤波器
-
-https://mp.weixin.qq.com/s/x0twRIdONCp3-qjhFJuCEQ
-
-手把手教你写扩展卡尔曼滤波器
-
-https://mp.weixin.qq.com/s/Nta9ksUkAVoX8arBGm7qqg
-
-手把手教你实现多传感器融合技术
-
-https://zhuanlan.zhihu.com/p/41767489
-
-概率机器人——扩展卡尔曼滤波、无迹卡尔曼滤波
-
-https://mp.weixin.qq.com/s/J27fVvYMRdoAgQtfXsywxg
-
-OpenCV卡尔曼滤波介绍与代码演示
-
-https://zhuanlan.zhihu.com/p/64007212
-
-卡尔曼滤波家族
-
-https://zhuanlan.zhihu.com/p/66646519
-
-IKF(IEKF)推导
-
-https://blog.csdn.net/baidu_21807307/article/details/51843079
-
-浅谈卡尔曼滤波（Kalman Filter）
-
-https://mp.weixin.qq.com/s/ZlyF1GcmpwZoT-3o4T567A
-
-卡尔曼滤波算法及其应用
-
-https://zhuanlan.zhihu.com/p/77327349
-
-如何理解那个能造导弹军舰还把嫦娥送上天的卡尔曼滤波算法Kalman filter?
-
-https://mp.weixin.qq.com/s/vAm0QDp_i2ec5pZbTmdHNA
-
-傻瓜也能懂的卡尔曼滤波器
-
-https://mp.weixin.qq.com/s/na0vVhECfBppTb7BmhRyzA
-
-从限价订单薄中推导预测因子：卡尔曼滤波来搞定！
-
-https://mp.weixin.qq.com/s/v460ql4RnJGbzbV0iZH4kA
-
-深度解读卡尔曼滤波原理
-
-https://mp.weixin.qq.com/s/Jlux3pZ4keVzkwWzgoPrEQ
-
-深入浅出讲解卡尔曼滤波
-
-https://mp.weixin.qq.com/s/BeIEjASATt3Qpef_Ag-cSw
-
-卡尔曼滤波系列——经典卡尔曼滤波推导
-
-https://mp.weixin.qq.com/s/t4GIPMB-6Vq7i8Q5PN6L-w
-
-追狗，从入门到精通
-
-https://mp.weixin.qq.com/s/EZ4JQM2vynTevUjFpW1h_w
-
-追狗，从入门到精通2.0
-
-https://zhuanlan.zhihu.com/p/128520715
-
-自动驾驶定位技术-马尔科夫定位
-
-https://zhuanlan.zhihu.com/p/138684962
-
-自动驾驶感知融合-卡尔曼及扩展卡尔曼滤波(Lidar&Radar)
-
-https://zhuanlan.zhihu.com/p/141059329
-
-自动驾驶感知融合-无迹卡尔曼滤波(Lidar&Radar)
-
-https://zhuanlan.zhihu.com/p/134595781
-
-卡尔曼滤波(Kalman filter)含详细数学推导
-
-https://zhuanlan.zhihu.com/p/166342719
-
-卡尔曼滤波器详解——从零开始(1)
-
-https://zhuanlan.zhihu.com/p/179480833
-
-卡尔曼滤波器详解——从零开始(2)
-
-https://mp.weixin.qq.com/s/3K9qdH9FXnYABpJoJkFcqw
-
-使用卡尔曼滤波平滑时间序列，提高时序预测的准确率
-
-https://zhuanlan.zhihu.com/p/35978617
-
-线性动态系统与卡尔曼滤波
-
-https://mp.weixin.qq.com/s/2rX6iRTYBk47V29fSTAMQQ
-
-图解卡尔曼滤波(Kalman Filter)
-
-https://mp.weixin.qq.com/s/PuvTkDhwbYv8TK8t-Zhcug
-
-基于卡尔曼滤波的注意力机制—广告点击率预估中的用户行为建模   
-
-https://longaspire.github.io/blog/%E5%8D%A1%E5%B0%94%E6%9B%BC%E6%BB%A4%E6%B3%A2/
-
-卡尔曼滤波器
-
-https://zhuanlan.zhihu.com/p/36745755
-
-卡尔曼滤波：从入门到精通
-
-https://zhuanlan.zhihu.com/p/338269917
-
-从全状态观测器到卡尔曼滤波器
-
-https://mp.weixin.qq.com/s/gb7CX8mbQNkMFVe3DIDT6Q
-
-卡尔曼滤波最完整公式推导
-
-https://mp.weixin.qq.com/s/vChWpG_2m53n8Bz-yfCohg
-
-实操教程：用一维卡尔曼滤波器来估计运动物体的位置和速度
-
-https://zhuanlan.zhihu.com/p/408783183
-
-卡尔曼滤波的基本原理（也许是我写过最详细的推导）
-
-https://www.zhihu.com/column/c_1303778703026126848
-
-一个多传感器信息融合的专栏
-
-https://www.zhihu.com/question/41823401
-
-有什么将卡尔曼滤波讲得透彻的书籍或资料？
-
-https://www.zhihu.com/question/588969519
-
-组合导航和卡尔曼滤波，一个美国七十年代提出的理论，一个已经成熟的技术，研究生现在研究还有希望毕业吗？

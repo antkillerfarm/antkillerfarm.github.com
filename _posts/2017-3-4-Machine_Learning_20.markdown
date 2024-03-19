@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十）——关联规则挖掘（2）
+title:  机器学习（二十）——Loss function详解
 category: ML 
 ---
 
@@ -11,22 +11,6 @@ category: ML
 
 ## 关联规则评价（续）
 
-### 相关性系数
-
-相关性系数的英文名是Lift，这就是一个单词，而不是缩写。
-
-$$\mathrm{lift}(X\Rightarrow Y) = \frac{ \mathrm{supp}(X \cup Y)}{ \mathrm{supp}(X) \times \mathrm{supp}(Y) }$$
-
-$$\mathrm{lift}(X\Rightarrow Y)\begin{cases}
->1, & 正相关 \\
-=1, & 独立 \\
-<1, & 负相关 \\
-\end{cases}$$
-
-实际运用中，正相关和负相关都是我们需要关注的，而独立往往是我们不需要的。显然：
-
-$$\mathrm{lift}(X\Rightarrow Y)=\mathrm{lift}(Y\Rightarrow X)$$
-
 ### 确信度
 
 Conviction的定义如下：
@@ -34,30 +18,6 @@ Conviction的定义如下：
 $$\mathrm{conv}(X\Rightarrow Y) =\frac{ 1 - \mathrm{supp}(Y) }{ 1 - \mathrm{conf}(X\Rightarrow Y)}$$
 
 它的值越大，表明X、Y的独立性越小。
-
-### 卡方系数
-
-卡方系数是与卡方分布有关的一个指标。参见：
-
-https://en.wikipedia.org/wiki/Chi-squared_distribution
-
-$$\chi^2 = \sum_{i=1}^n \frac{(O_i - E_i)^2}{E_i}$$
-
->注：上式最早是Pearson给出的。
-
-公式中的$$O_i$$表示数据的实际值，$$E_i$$表示期望值，不理解没关系，我们看一个例子就明白了。
-
-| 表2 | 买游戏 | 不买游戏 | 行总计 |
-|:--:|:--|:--:|:--|
-| 买影片 | 4000(4500) | 3500(3000) | 7500 |
-| 不买影片 | 2000(1500) | 500(1000) | 2500 |
-| 列总计 | 6000 | 4000 | 10000 |
-
-表2的括号中表示的是期望值。以第1行第1列的4500为例，其计算方法为：7500×6000/10000。
-
-经计算可得表2的卡方系数为555.6。基于置信水平和自由度$$(r-1)*(c-1)=(行数-1)*(列数-1)=1$$，查表得到自信度为(1-0.001)的值为6.63。
-
-555.6>6.63，因此拒绝A、B独立的假设，即认为A、B是相关的，而$$E(买影片，买游戏)=4500>4000$$,因此认为A、B呈负相关。
 
 ### 全自信度
 
@@ -319,3 +279,23 @@ Y_pred = tf.nn.softmax(logits,name='Y_pred')
 https://www.zhihu.com/question/60751553
 
 如何理解深度学习源码里经常出现的logits？
+
+## Weighted softmax loss
+
+假如有一个二分类问题，两类的样本数目差距非常之大。比如图像任务中的边缘检测问题，它可以看作是一个逐像素的分类问题。此时两类的样本数目差距非常之大，明显边缘像素的重要性是比非边缘像素大的，此时可以针对性的对样本进行加权。
+
+$$l(y,z)=-\sum_{k=0}^C w_ky_k\log (f(z_k))$$
+
+## Triplet Loss
+
+Triplet loss通常是在个体级别的细粒度识别上使用，传统的分类是花鸟狗的大类别的识别，但是有些需求是要精确到个体级别，比如精确到哪个人的人脸识别，所以triplet loss的最主要应用也就是face identification，person re-identification，vehicle re-identification的各种identification识别问题上。
+
+当然你可以把每个人当做一个类别来进行分类训练，但是往往最后会造成softmax的维数远大于feature的维数。
+
+论文：
+
+《Deep feature learning with relative distance comparison for person re-identification》
+
+![](/images/img2/Triplet_Loss.png)
+
+如上图所示，triplet是一个三元组，这个三元组是这样构成的：从训练数据集中随机选一个样本，该样本称为Anchor，然后再随机选取一个和Anchor(记为$$x^a$$)属于同一类的样本和不同类的样本,这两个样本对应的称为Positive(记为$$x^p$$)和Negative(记为$$x^n$$)，由此构成一个（Anchor，Positive，Negative）三元组。

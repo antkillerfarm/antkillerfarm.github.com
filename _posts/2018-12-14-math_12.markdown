@@ -7,120 +7,6 @@ category: math
 * toc
 {:toc}
 
-# PID算法（续）
-
-针对这个场景，我们可以设计如下算法：
-
-水箱液位离预定高度远的时候开关开大点，离的近的时候开关就开小点，随着液位逐步接近预定高度逐渐关掉水龙头。用数学表示就是：
-
-$$u(t) = K_\text{p} e(t)\tag{1}$$
-
-上式中的$$u(t)$$表示需要控制的量，在这里就是水龙头的开合度。$$K_\text{p}$$被称为比例系数。
-
-**场景2**：假设这个水箱不仅仅是装水的容器了，还需要持续稳定的给用户供水。
-
-以下用c表示给用户供水的量($$c\ge 0$$)。显然如果使用公式1，则系统稳定时，$$u(t)-c=0$$，即$$K_\text{p} e(t)=c$$。
-
-由于c和$$K_\text{p}$$都不为0，因此$$e(t)$$也不为0，这就导致始终无法加注到指定水位。这种稳态误差被称为**静差**。
-
-为了平衡c，我们修改算法为：
-
-$$u(t) = K_\text{p} e(t) + K_\text{i} \int_0^t e(\tau) \,d\tau\tag{2}$$
-
-$$K_\text{i}$$被称为积分系数。积分环节的意义就相当于你增加了一个水龙头，这个水龙头的开关规则是水位比预定高度低就一直往大了拧，比预定高度高就往小了拧。如果漏水速度不变，那么总有一天这个水龙头出水的速度恰好跟漏水的速度相等了，系统就和第一小节的那个一样了。那时，静差就没有了。这就是所谓的**积分环节可以消除系统静差**。
-
-**场景3**：假设用户的用水量是变化的，即$$c(t)$$。
-
-这时，如果仍采用公式2，则由于$$c(t)$$的变化，导致$$e(t)$$不恒为0。为了减小$$c(t)$$的变化，对$$e(t)$$的影响，我们继续修改算法：
-
-$$u(t) = K_\text{p} e(t) + K_\text{i} \int_0^t e(\tau) \,d\tau + K_\text{d} \frac{de(t)}{dt}\tag{3}$$
-
-$$K_\text{d}$$被称为微分系数。由于$$c(t)$$的变化不可能事先得知，因此，微分环节只能减小$$c(t)$$的变化所造成的影响，而不能消除。
-
-公式3在Laplace域可写做：
-
-$$L(s) = K_\text{p} + K_\text{i}/s + K_\text{d} s\tag{4}$$
-
-从公式4可以看出，PID controller的数学原理和锁相环（Phase-locked loop）非常类似，它们实际上都是Feedback Control系统。
-
-![](/images/article/PLL.png)
-
----
-
-反馈控制最重要的就是两点：
-
-一是反馈；
-
-二是测量的大方向。
-
-只要有反馈的结构在，只要测量的反馈值正负号不搞错，那其他的都只是细枝末节的问题了。
-
-https://www.zhihu.com/question/47755808
-
-常用控制算法（包括PID和卡尔曼滤波等）各有什么天然的局限乃至缺陷？
-
-## 串级PID控制
-
-实际使用中，为了改善PID控制的效果，一般还会用到串级PID控制。
-
-参考：
-
-https://blog.csdn.net/qq_25005909/article/details/77941243
-
-串级PID控制四轴飞行状态-分析
-
-https://blog.csdn.net/nemol1990/article/details/45131603
-
-四轴PID讲解
-
-https://www.zhihu.com/question/293450508
-
-飞控算法中双环串级PID如何理解?
-
-## 参考
-
-https://en.wikipedia.org/wiki/PID_controller
-
-《Feedback Control of Dynamic Systems》，Gene F. Franklin，J David Powell，Abbas Emami-Naeini著。
-
->注：Gene F. Franklin，1927~2012，美国控制论学家。哥伦比亚大学博士，斯坦福大学教授。
-
->J David Powell，美国航空航天学家。斯坦福大学博士和教授。
-
->Abbas Emami-Naeini，斯坦福大学博士和讲师，SC Solutions公司总监。
-
-https://www.zhihu.com/answer/23942834
-
-如何通俗地解释PID参数整定？
-
-https://zhuanlan.zhihu.com/p/35473808
-
-PID控制器的贝叶斯理解
-
-https://zhuanlan.zhihu.com/p/139244173
-
-广告出价--如何使用PID控制广告投放成本
-
-https://zhuanlan.zhihu.com/p/39573490
-
-PID控制算法原理
-
-https://mp.weixin.qq.com/s/4iX1hB_f8zQYrG0EQ2u3wA
-
-PID算法在广告成本控制领域的应用
-
-https://mp.weixin.qq.com/s/__xvATWhggYXLy92dz9L5Q
-
-广告成本控制-PID算法
-
-https://mp.weixin.qq.com/s/fswZL2qhgErccYB1GuXZ8g
-
-PID微分器与滤波器的爱恨情仇
-
-https://mp.weixin.qq.com/s/vsyEM7z7-tKrXwRPjE5-EA
-
-浅谈PID控制对无人车/船的自动驾驶影响及水信无人船PID调试结果展示
-
 # 数学杂谈
 
 https://mathworld.wolfram.com/
@@ -244,3 +130,35 @@ https://mp.weixin.qq.com/s/tfEcWGp0BjIid-b2EqvrkA
 https://mp.weixin.qq.com/s/tmkqSxkk4mGjkJIKwtov7g
 
 内曼（Jerzy Neyman）
+
+---
+
+June Huh是一位“半路出家”的数学家。少年时期数学成绩不理想，自认为没有数学天赋，他最爱文学，写过诗歌、小说，梦想成为一名诗人。但在首尔大学读书时，发现诗人身份不能谋生，便打算做一名科学记者，主修天文学和物理学。
+
+https://zhuanlan.zhihu.com/p/537898439
+
+2022年“菲尔兹奖”授予这4位年轻人！
+
+---
+
+无理数的无理数次方是可以为整数的：
+
+$$\sqrt{2}^{log_2{9}}=3$$
+
+https://www.zhihu.com/question/583941606
+
+对指数塔π^π^π^π^……，有没有可能叠到某一层数的时候值为整数？
+
+---
+
+有两个天气预报站A和B，各自独立地进行预测，互相完全不知道对方。
+
+根据历史统计，当A预报第二天下雨时第二天真的下雨的概率是0.9，当B预报第二天下雨时第二天真的下雨的概率是0.8。现在A和B都预报明天下雨，那么明天下雨的概率是多少？
+
+“独立预测”在现实生活中的意思，是说两站根据各自观测到的数据，不参考对方的预测结果而进行预测。这的确可以理解为一种条件独立，但这里的条件是自然界中可以被观测到并用来预测下雨与否的现象，而不是下雨与否这个结果。
+
+两个气象站都不笨，它们的预测都是有根据的，往往会出现“英雄所见略同”的情况，这就不独立了。
+
+https://www.zhihu.com/question/25360634
+
+一道困惑很久的概率问题，这道题是有解还是本身题目就有问题？

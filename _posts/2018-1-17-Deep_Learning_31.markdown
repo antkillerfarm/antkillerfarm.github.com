@@ -7,56 +7,6 @@ category: DL
 * toc
 {:toc}
 
-# NLP历史
-
-![](/images/img2/text.jpg)
-
-![](/images/img2/NLP_history.png)
-
-第一代技术（1950s）：符号主义，用计算机的符号操作来模拟人的认知过程。
-
-第二代技术（1970s）：语法规则，依赖于专家人工制定的语法规则和本体设计（ontological design）。
-
-第三代技术（1990s）：统计学习，即让计算机阅读大量文章。
-
-第四代技术（2010s）：深度学习，用一个复杂的模型像人脑神经网络一样运作。
-
-![](/images/img2/Han.jpg)
-
----
-
-http://elinguistics.net/
-
-这个网站可用于比较两种语言的亲缘/差异程度。
-
-https://www.zhihu.com/question/526103427
-
-维吾尔语能否和土耳其语互通？如果能的话，能互通多少？
-
----
-
-参考：
-
-https://mp.weixin.qq.com/s/1cdg635KcPTV6mFdwPo2OQ
-
-达观数据：文字的起源与文本挖掘的前世今生
-
-https://mp.weixin.qq.com/s/krW1eUFu7iz9YyYFGbFVeQ
-
-香侬科技提出中文字型的深度学习模型Glyce，横扫13项中文NLP记录
-
-https://mp.weixin.qq.com/s/VtEM6paUPH28GFrwVNmz4w
-
-自然语言处理起源：马尔科夫和香农的语言建模实验
-
-https://mp.weixin.qq.com/s/qlKGgWq_FTYonMXEkhRwpw
-
-中国境内语言概览
-
-https://www.zhihu.com/question/30873035
-
-Unicode字符集中有哪些神奇的字符？
-
 # 依存分析
 
 ## 概况
@@ -212,66 +162,6 @@ https://github.com/largelymfs/topical_word_embeddings
 https://zmlarry.github.io
 
 张檬，清华本科（2013）+博士（2018）。
-
-## Subword
-
-对于英文来说，文字的粒度从细到粗依次是character, subword, word。character和word都很好理解，分别是字母和单词。而subword相当于英文中的词根、前缀、后缀等。
-
-之前的Neural Machine Translation基本上都是基于word单词作为基本单位的，但是其缺点是不能很好的解决out-of-vocabulary即单词不在词汇库里的情况，且对于单词的一些词法上的修饰(morphology)处理的也不是很好。一个自然的想法就是能够利用比word更基本的组成来建立模型，以更好的解决这些问题。
-
-参考：
-
-https://plmsmile.github.io/2017/10/19/subword-units/
-
-subword-units
-
-https://zhuanlan.zhihu.com/p/69414965
-
-Subword模型
-
-https://zhuanlan.zhihu.com/p/86965595
-
-深入理解NLP Subword算法：BPE、WordPiece、ULM
-
-https://mp.weixin.qq.com/s/la3nZNFDviRcSFNVso29oQ
-
-NLP三大Subword模型详解：BPE、WordPiece、ULM
-
-https://mp.weixin.qq.com/s/TPRqDyGpkVuJcgomTu774A
-
-子词技巧：The Tricks of Subword
-
-https://mp.weixin.qq.com/s/fe7-wimFCAtp3ohB3TVywg
-
-通俗讲解Subword Models
-
-https://mp.weixin.qq.com/s/5z3CMmIR0U9-p2BwJnsYKg
-
-神经机器翻译的Subword技术
-
-## BPE
-
-Byte Pair Encoding(BPE)本来是一种数据压缩算法，后来被用于分词。它从命名实体、同根词、外来语、组合词（罕见词有相当大比例是上述几种）的翻译策略中得到启发，认为把这些罕见词拆分为“子词单元”(subword units)的组合，可以有效的缓解NMT的OOV和罕见词翻译的问题。BPE对英文、德文、俄文等表音文字效果较好，但不太适用于中文。
-
-论文：
-
-《Neural Machine Translation of Rare Words with Subword Units》
-
-代码：
-
-https://github.com/rsennrich/subword-nmt
-
-![](/images/img5/Tokenizer.webp)
-
-参考：
-
-https://www.cnblogs.com/huangyc/p/10223075.html
-
-一文读懂BERT中的WordPiece
-
-https://mp.weixin.qq.com/s/OGBk_ZptFzbjKdnv2RVZFA
-
-机器如何认识文本？NLP中的Tokenization方法总结
 
 # ESN
 

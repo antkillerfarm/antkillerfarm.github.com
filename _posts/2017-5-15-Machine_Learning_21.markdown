@@ -1,33 +1,15 @@
 ---
 layout: post
-title:  机器学习（二十一）——Loss function详解
+title:  机器学习（二十一）——NLP历史, NLP常用评价度量, Tokenization
 category: ML 
 ---
 
 * toc
 {:toc}
 
-# Loss function详解（续）
+# Loss function详解
 
-## Weighted softmax loss
-
-假如有一个二分类问题，两类的样本数目差距非常之大。比如图像任务中的边缘检测问题，它可以看作是一个逐像素的分类问题。此时两类的样本数目差距非常之大，明显边缘像素的重要性是比非边缘像素大的，此时可以针对性的对样本进行加权。
-
-$$l(y,z)=-\sum_{k=0}^C w_ky_k\log (f(z_k))$$
-
-## Triplet Loss
-
-Triplet loss通常是在个体级别的细粒度识别上使用，传统的分类是花鸟狗的大类别的识别，但是有些需求是要精确到个体级别，比如精确到哪个人的人脸识别，所以triplet loss的最主要应用也就是face identification，person re-identification，vehicle re-identification的各种identification识别问题上。
-
-当然你可以把每个人当做一个类别来进行分类训练，但是往往最后会造成softmax的维数远大于feature的维数。
-
-论文：
-
-《Deep feature learning with relative distance comparison for person re-identification》
-
-![](/images/img2/Triplet_Loss.png)
-
-如上图所示，triplet是一个三元组，这个三元组是这样构成的：从训练数据集中随机选一个样本，该样本称为Anchor，然后再随机选取一个和Anchor(记为$$x^a$$)属于同一类的样本和不同类的样本,这两个样本对应的称为Positive(记为$$x^p$$)和Negative(记为$$x^n$$)，由此构成一个（Anchor，Positive，Negative）三元组。
+## Triplet Loss（续）
 
 针对每个样本$$x_i$$，训练一个参数共享或者不共享的网络，得到三个元素的特征表达，分别记为：$$f(x_i^a), f(x_i^p), f(x_i^n)$$。
 
@@ -212,3 +194,171 @@ https://mp.weixin.qq.com/s/P6xLYrNP4pNKtHcxAWAOKg
 https://mp.weixin.qq.com/s/Q4ryiTOSJQaJ2e5clmXjtg
 
 一文看尽深度学习中的15种损失函数
+
+# NLP历史
+
+![](/images/img2/text.jpg)
+
+![](/images/img2/NLP_history.png)
+
+第一代技术（1950s）：符号主义，用计算机的符号操作来模拟人的认知过程。
+
+第二代技术（1970s）：语法规则，依赖于专家人工制定的语法规则和本体设计（ontological design）。
+
+第三代技术（1990s）：统计学习，即让计算机阅读大量文章。
+
+第四代技术（2010s）：深度学习，用一个复杂的模型像人脑神经网络一样运作。
+
+![](/images/img2/Han.jpg)
+
+---
+
+http://elinguistics.net/
+
+这个网站可用于比较两种语言的亲缘/差异程度。
+
+https://www.zhihu.com/question/526103427
+
+维吾尔语能否和土耳其语互通？如果能的话，能互通多少？
+
+---
+
+参考：
+
+https://mp.weixin.qq.com/s/1cdg635KcPTV6mFdwPo2OQ
+
+达观数据：文字的起源与文本挖掘的前世今生
+
+https://mp.weixin.qq.com/s/krW1eUFu7iz9YyYFGbFVeQ
+
+香侬科技提出中文字型的深度学习模型Glyce，横扫13项中文NLP记录
+
+https://mp.weixin.qq.com/s/VtEM6paUPH28GFrwVNmz4w
+
+自然语言处理起源：马尔科夫和香农的语言建模实验
+
+https://mp.weixin.qq.com/s/qlKGgWq_FTYonMXEkhRwpw
+
+中国境内语言概览
+
+https://www.zhihu.com/question/30873035
+
+Unicode字符集中有哪些神奇的字符？
+
+# NLP常用评价度量
+
+机器翻译的评价指标主要有：BLEU、NIST、Rouge、METEOR等。
+
+参考：
+
+http://blog.csdn.net/joshuaxx316/article/details/58696552
+
+BLEU，ROUGE，METEOR，ROUGE-浅述自然语言处理机器翻译常用评价度量
+
+http://blog.csdn.net/guolindonggld/article/details/56966200
+
+机器翻译评价指标之BLEU
+
+https://mp.weixin.qq.com/s/niVOM-lnzI2-Tgxn8Qterw
+
+NLP中评价文本输出都有哪些方法？为什么要小心使用BLEU？
+
+http://blog.csdn.net/han_xiaoyang/article/details/10118517
+
+机器翻译评估标准介绍和计算方法
+
+http://blog.csdn.net/lcj369387335/article/details/69845385
+
+自动文档摘要评价方法---Edmundson和ROUGE
+
+https://mp.weixin.qq.com/s/XiZ6Uc5cHZjczn-qoupQnA
+
+对话系统评价方法综述
+
+https://zhuanlan.zhihu.com/p/33088748
+
+数据集和评价指标介绍
+
+https://mp.weixin.qq.com/s/9hoM_yF96XxSbQHEP6oasw
+
+怎样生成语言才能更自然，斯坦福提出超越Perplexity的评估新方法
+
+https://mp.weixin.qq.com/s/TnAZUjFSn7ATtRmBexJlXw
+
+文本生成评价方法BLEU ROUGE CIDEr SPICE Perplexity METEOR
+
+https://mp.weixin.qq.com/s/n4OnRGkrn5DYuZUmmrmzpg
+
+NLG任务评价指标BLEU与ROUGE
+
+## LLM评估
+
+https://zhuanlan.zhihu.com/p/677583745
+
+评估大模型快速入门：用MMLU评估 GPT-3
+
+https://zhuanlan.zhihu.com/p/656260901
+
+TruthfulQA: Measuring How Models Mimic Human Falsehoods - 事实性评估
+
+# Tokenization
+
+## Subword
+
+对于英文来说，文字的粒度从细到粗依次是character, subword, word。character和word都很好理解，分别是字母和单词。而subword相当于英文中的词根、前缀、后缀等。
+
+之前的Neural Machine Translation基本上都是基于word单词作为基本单位的，但是其缺点是不能很好的解决out-of-vocabulary即单词不在词汇库里的情况，且对于单词的一些词法上的修饰(morphology)处理的也不是很好。一个自然的想法就是能够利用比word更基本的组成来建立模型，以更好的解决这些问题。
+
+参考：
+
+https://plmsmile.github.io/2017/10/19/subword-units/
+
+subword-units
+
+https://zhuanlan.zhihu.com/p/69414965
+
+Subword模型
+
+https://zhuanlan.zhihu.com/p/86965595
+
+深入理解NLP Subword算法：BPE、WordPiece、ULM
+
+https://mp.weixin.qq.com/s/la3nZNFDviRcSFNVso29oQ
+
+NLP三大Subword模型详解：BPE、WordPiece、ULM
+
+https://mp.weixin.qq.com/s/TPRqDyGpkVuJcgomTu774A
+
+子词技巧：The Tricks of Subword
+
+https://mp.weixin.qq.com/s/fe7-wimFCAtp3ohB3TVywg
+
+通俗讲解Subword Models
+
+https://mp.weixin.qq.com/s/5z3CMmIR0U9-p2BwJnsYKg
+
+神经机器翻译的Subword技术
+
+## BPE
+
+Byte Pair Encoding(BPE)本来是一种数据压缩算法，后来被用于分词。它从命名实体、同根词、外来语、组合词（罕见词有相当大比例是上述几种）的翻译策略中得到启发，认为把这些罕见词拆分为“子词单元”(subword units)的组合，可以有效的缓解NMT的OOV和罕见词翻译的问题。BPE对英文、德文、俄文等表音文字效果较好，但不太适用于中文。
+
+论文：
+
+《Neural Machine Translation of Rare Words with Subword Units》
+
+代码：
+
+https://github.com/rsennrich/subword-nmt
+
+![](/images/img5/Tokenizer.webp)
+
+参考：
+
+https://www.cnblogs.com/huangyc/p/10223075.html
+
+一文读懂BERT中的WordPiece
+
+https://mp.weixin.qq.com/s/OGBk_ZptFzbjKdnv2RVZFA
+
+机器如何认识文本？NLP中的Tokenization方法总结

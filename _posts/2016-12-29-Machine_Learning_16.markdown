@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（十六）——Adaboost, EMD
+title:  机器学习（十六）——Adaboost, XGBoost, EMD
 category: ML 
 ---
 
@@ -87,6 +87,184 @@ https://mp.weixin.qq.com/s/Jnh7yIOmzbTvWk77zh2-lA
 
 周志华：Boosting学习理论的探索——一个跨越30年的故事
 
+# XGBoost
+
+XGBoost是陈天奇于2014年提出的一套并行boost算法的工具库。
+
+>注：陈天奇，华盛顿大学计算机系博士（2019），研究方向为大规模机器学习。上海交通大学本科（2006～2010）和硕士（2010～2013）。CMU助理教授。   
+>https://tqchen.com/
+
+![](/images/img2/XGBoost.png)
+
+论文：
+
+《XGBoost: A Scalable Tree Boosting System》
+
+参考文献中的部分结论非常精彩，摘录如下。
+
+从算法实现的角度，把握一个机器学习算法的关键点有两个，一个是loss function的理解(包括对特征X/标签Y配对的建模，以及基于X/Y配对建模的loss function的设计，前者应用于inference，后者应用于training，而前者又是后者的组成部分)，另一个是对求解过程的把握。这两个点串接在一起构成了算法实现的主框架。
+
+GBDT的求解算法，具体到每颗树来说，其实就是不断地寻找分割点(split point)，将样本集进行分割，初始情况下，所有样本都处于一个结点（即根结点），随着树的分裂过程的展开，样本会分配到分裂开的子结点上。分割点的选择通过枚举训练样本集上的特征值来完成，分割点的选择依据则是减少Loss。
+
+XGBoost的步骤：
+
+I. 对loss function进行二阶Taylor Expansion，展开以后的形式里，当前待学习的Tree是变量，需要进行优化求解。
+
+II. Tree的优化过程，包括两个环节：
+
+I). 枚举每个叶结点上的特征潜在的分裂点
+
+II). 对每个潜在的分裂点，计算如果以这个分裂点对叶结点进行分割以后，分割前和分割后的loss function的变化情况。
+
+因为Loss Function满足累积性(对MLE取log的好处)，并且每个叶结点对应的weight的求取是独立于其他叶结点的（只跟落在这个叶结点上的样本有关），所以，不同叶结点上的loss function满足单调累加性，只要保证每个叶结点上的样本累积loss function最小化，整体样本集的loss function也就最小化了。
+
+**可见，XGBoost算法之所以能够并行，其要害在于其中枚举分裂点的计算，是能够分布式并行计算的。**
+
+官网：
+
+https://xgboost.readthedocs.io/en/latest/
+
+GitHub：
+
+https://github.com/dmlc/xgboost
+
+中文文档：
+
+http://xgboost.apachecn.org/cn/latest/
+
+编译：
+
+```bash
+git clone --recursive https://github.com/dmlc/xgboost
+cd xgboost; make -j4
+```
+
+python安装：
+
+`cd python-package; sudo python setup.py install`
+
+XGBoost提供了两种接口：普通接口和sklearn接口。后者的示例如下：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/ml/hello/decision_tree.py
+
+## 参考
+
+https://www.zhihu.com/question/41354392
+
+机器学习算法中GBDT和XGBOOST的区别有哪些？
+
+http://blog.csdn.net/sb19931201/article/details/52577592
+
+xgboost入门与实战
+
+https://mp.weixin.qq.com/s/x06axCC1ZTgezqEYjjNIsw
+
+Xgboost初见面
+
+https://mp.weixin.qq.com/s/f3QVbJiC6gLEptKwFZ-7ZQ
+
+竞赛大杀器XGBoost，你还可以这样玩
+
+http://blog.csdn.net/u013709270/article/details/78156207
+
+Python机器学习实战之手撕XGBoost
+
+https://mp.weixin.qq.com/s/xHVkc1NP2oodU7Hb0Xb_jA
+
+为什么XGBoost在机器学习竞赛中表现如此卓越？
+
+https://mp.weixin.qq.com/s/pn_qn6uRz2-9DmAK4sp35g
+
+史上最详细的XGBoost实战（上）
+
+https://mp.weixin.qq.com/s/xzZvIX0QaCPNSyGfHT3beQ
+
+史上最详细的XGBoost实战（下）
+
+https://mp.weixin.qq.com/s/T3NgIuGZIvmPSMNFyQeeGw
+
+XGBoost原理解析
+
+https://mp.weixin.qq.com/s/JYPnzgzBMSGx09ltBtfwqg
+
+理解XGBoost机器学习模型的决策过程
+
+http://www.cnblogs.com/qcloud1001/p/7542128.html
+
+小巧玲珑：机器学习届快刀XGBoost的介绍和使用
+
+https://mp.weixin.qq.com/s/__ESveAdBS9KJf26R3EMVA
+
+对比TensorFlow提升树与XGBoost：我们该使用怎样的梯度提升方法
+
+https://mp.weixin.qq.com/s/_uscpKaRXZbwfMiWGoY0Uw
+
+多GPU加速学习，这是一份崭新的XGBoost库
+
+https://mp.weixin.qq.com/s/pwuOFj_rT5Z_XY9siZosKQ
+
+线性模型已退场，XGBoost时代早已来
+
+https://mp.weixin.qq.com/s/hYuBHHfAGLO3Y0l5t6y94Q
+
+XGBoost缺失值引发的问题及其深度分析
+
+https://mp.weixin.qq.com/s/Il_S6y4UkN5nim91mwVcVw
+
+缺失值处理
+
+https://mp.weixin.qq.com/s/wgiNutl3FhJSAtfJNd5B5g
+
+Xgboost
+
+https://mp.weixin.qq.com/s/jZ3vcCcZTfTmJNl-9QXelw
+
+XGBoost超详细推导，终于有人讲明白了！
+
+https://mp.weixin.qq.com/s/HcWoDmrp4taRGREvV7x4vA
+
+斯坦福吴恩达团队提出NGBoost：用于概率预测的自然梯度提升
+
+https://mp.weixin.qq.com/s/X4K6UFZPxL05v2uolId7Lw
+
+XGBoost在携程搜索排序中的应用
+
+https://mp.weixin.qq.com/s/5zSLod4oyL4m6LADI6KC0Q
+
+深入理解XGBoost，优缺点分析，原理推导及工程实现
+
+https://mp.weixin.qq.com/s/uvUN4JiqSb-bS4HAVCDTIQ
+
+集成模型Xgboost！机器学习最热研究方向入门，附学习路线图
+
+https://mp.weixin.qq.com/s/-aRRORqBnTMmBDXuW749_w
+
+在没有技术术语的情况下介绍Adaptive、GBDT、XGboosting等提升算法的原理简介
+
+https://mp.weixin.qq.com/s/umGzRySCnJo25e5_0nO7cw
+
+如何用XGBoost做时间序列预测？
+
+https://mp.weixin.qq.com/s/QYMPBWMVTQf3LACGGWGX7A
+
+样本不平衡处理：xgboost几种权重设置方法比较
+
+https://mp.weixin.qq.com/s/d6sVDAKnaU97mAeDs_Gedg
+
+从零解读Xgboost(原理+代码)
+
+https://mp.weixin.qq.com/s/YunDfYPLywc0tMJF72YIAQ
+
+数据分析利器：XGBoost算法最佳解析
+
+https://mp.weixin.qq.com/s/QAu0nM72E2gVhbRXmtCMcw
+
+XGBoost和时间序列
+
+https://www.zhihu.com/question/359567100
+
+XGBoost为什么若模型决策树的叶子节点值越大，越容易过拟合呢？
+
 # EMD
 
 推土机距离（Earth mover's distance）是两个概率分布之间的距离度量的一种方式。如果将区间D的概率分布比作沙堆P，那么$$P_r$$和$$P_\theta$$之间的EMD距离，就是推土机将$$P_r$$改造为$$P_\theta$$所需要的工作量。
@@ -108,170 +286,3 @@ $$EMD(P_r,P_\theta) = \frac{\sum_{i=1}^m \sum_{j=1}^n f_{i,j}d_{i,j}}{\sum_{i=1}
 这个问题实际是线性规划中的运输问题，可以用匈牙利算法迭代求解。最终求得的最小值就是EMD。
 
 最优方案也被称为“最优传输”，相关的研究被称作“最优传输理论”。法国数学家蒙日最早研究过该类问题。
-
->Gaspard Monge, Comte de Péluse，1746～1818，法国数学家。微分几何之父，巴黎综合理工大学（École Polytechnique）创始人、校长。海军部长。   
->革命形势在1794年已经开始恶化，蒙日的好友、化学家拉瓦锡就是在那时被声称“革命不需要科学”的群众，送上了断头台。
-两年后的现在，50岁的蒙日又被革命群众认定为“不够激进”。他不得不从巴黎逃离，路途中还担心自己的安危——狂热的革命群众随时可能把他抓回去，并送上断头台。   
->一封意外的来信打消了蒙日的恐惧。写信人是法兰西共和国意大利方面军总司令拿破仑，27岁的总司令在信中表示，除了乐意向蒙日“伸出感激和友谊之手”，还想向他致谢。原来在4年前，他们见过面。当时蒙日担任法国海军部长，拿破仑尚是“不得宠的年轻炮兵军官”。在部长那里，拿破仑受到了“热诚的欢迎”。尽管蒙日根本记不起这件事，拿破仑则依旧“珍藏着这段记忆”。
-
-EMD可以是多维分布之间的距离。一维的EMD也被称为Match distance。
-
-EMD有时也称作Wasserstein距离。
-
->Leonid Vaseršteĭn，俄罗斯数学家，Moscow State University硕博，现居美国，Penn State University教授。Wasserstein是他名字的德文拼法，并为英文文献所沿用。他在去美国之前，曾在德国住过一段时间。
-
-由于最优传输问题的计算比较复杂，因此在DL时代，我们通常使用神经网络来计算EMD距离，例如WGAN。
-
-在文本处理中，有一个和EMD类似的编辑距离（Edit distance），也叫做Levenshtein distance。它是指两个字串之间，由一个转成另一个所需的最少编辑操作次数。许可的编辑操作包括将一个字符替换成另一个字符，插入一个字符，删除一个字符。一般来说，编辑距离越小，两个串的相似度越大。
-
->注：严格来说，Edit distance是一系列字符串相似距离的统称。除了Levenshtein distance之外，还包括Hamming distance等。
-
->Vladimir Levenshtein，1935年生，俄罗斯数学家，毕业于莫斯科州立大学。2006年获得IEEE Richard W. Hamming Medal。
-
-参考：
-
-https://vincentherrmann.github.io/blog/wasserstein/
-
-Wasserstein GAN and the Kantorovich-Rubinstein Duality
-
-http://chaofan.io/archives/earth-movers-distance-%e6%8e%a8%e5%9c%9f%e6%9c%ba%e8%b7%9d%e7%a6%bb
-
-Earth Mover's Distance——推土机距离
-
-https://mp.weixin.qq.com/s/rvPLYa1NFg_LRvb8Y8-aCQ
-
-Wasserstein距离在生成模型中的应用
-
-https://mp.weixin.qq.com/s/2xOrSyyWSbp8rBVbFoNrxQ
-
-Wasserstein is all you need：构建无监督表示的统一框架
-
-https://mp.weixin.qq.com/s/g4F50zLNs_aC1WUuCMNdXg
-
-一文详解Wasserstein距离
-
-https://mp.weixin.qq.com/s/NXDJ4uCpdX-YcWiKAsjJLQ
-
-传说中的推土机距离基础，最优传输理论了解一下
-
-https://mp.weixin.qq.com/s/5sNXmQbINIWMGjX5TYAPYw
-
-最优传输理论你理解了，传说中的推土机距离重新了解一下
-
-https://mp.weixin.qq.com/s/iwZrWYbppwStJlXESUufZQ
-
-想要算一算Wasserstein距离？这里有一份PyTorch实战
-
-https://mp.weixin.qq.com/s/itQNrNsdjAgPl5R48V-HtQ
-
-计算最优传输（Computational Optimal Transport）
-
-https://zhuanlan.zhihu.com/p/72803739
-
-Word Mover's Distance-文档距离优化方案
-
-https://mp.weixin.qq.com/s/Zi9v_sbxPkHWUWwNhMMMAg
-
-编辑距离
-
-https://zhuanlan.zhihu.com/p/270675634
-
-点云距离度量：完全解析EMD距离(Earth Mover's Distance)
-
-https://zhuanlan.zhihu.com/p/358895758
-
-统计距离（STATISTICAL DISTANCE）
-
-# TensorFlow参考+
-
-https://mp.weixin.qq.com/s/eX3LWYiSH-KObH_7F_3QCA
-
-TensorFlow 1.11.0发布，一键多GPU
-
-https://mp.weixin.qq.com/s/316VVXLQfeIsKNk4ld-VRw
-
-TensorFlow语义分割套件开源了ECCV18旷视科技BiSeNet实时分割算法
-
-https://mp.weixin.qq.com/s/XI1J4ardEWKP4UQ4IXZGTQ
-
-TensorFlow Hub,给您带来全新的Web体验
-
-http://www.jianshu.com/p/1da012a83b74
-
-利用TensorFlow实现排序和搜索算法
-
-https://mp.weixin.qq.com/s/oEqMjOTj8xpd3sg60ZUhqA
-
-TensorFlow的c++实践及各种坑
-
-https://mp.weixin.qq.com/s/-5RCRl9ztQ2dQmX00QvfvQ
-
-在Python和TensorFlow上构建Word2Vec词嵌入模型
-
-https://mp.weixin.qq.com/s/Nyjp0mZxcn04vLKjJXLSaw
-
-如何用TensorFlow在安卓设备上实现深度学习推断
-
-https://mp.weixin.qq.com/s/kEowgNPVS1nAGBPbzkatlQ
-
-如何构建高可读性和高可重用的TensorFlow模型
-
-https://mp.weixin.qq.com/s/O_IN39FBVPeD5fRYBsPuZQ
-
-用TensorFlow开发问答系统
-
-https://mp.weixin.qq.com/s/8Hrq_z8s_5ms6Q_6OOaU-g
-
-如何使用TensorFlow和自编码器模型生成手写数字
-
-https://mp.weixin.qq.com/s/nnjyR4XGVZQ1zXCIPzTNlg
-
-基于TensorFlow的变分自编码器实现
-
-https://mp.weixin.qq.com/s/iMgesGmdb7Jq4muCxb-nFA
-
-Tensorflow实战：Discuz验证码识别
-
-https://mp.weixin.qq.com/s/4aJUGBpPG_6Oc5EqOmM0Iw
-
-作为TensorFlow的底层语言，你会用C++构建深度神经网络吗？
-
-https://github.com/yahoo/TensorFlowOnSpark
-
-TensorFlow On Spark
-
-https://mp.weixin.qq.com/s/7er3wNV_IhxhFDOIwNMpww
-
-深度强化学习入门：用TensorFlow构建你的第一个游戏AI
-
-https://mp.weixin.qq.com/s/UbBJYOmWtUXPFliRMyzDrg
-
-最新TensorFlow专业深度学习实战书籍和代码《Pro Deep Learning with TensorFlow》
-
-https://mp.weixin.qq.com/s/zeZs48XbYJGhvOoIysZ8QA
-
-Docker Compose+GPU+TensorFlow所产生的奇妙火花
-
-https://mp.weixin.qq.com/s/sOggiB57D-ekWOsbL6TY_A
-
-TensorFlow中那些鲜为人知却又极其实用的知识
-
-https://mp.weixin.qq.com/s/gW_KX6eF9XEsSUO1UzJ3WQ
-
-基于LSTM的情感分析
-
-https://mp.weixin.qq.com/s/KZhL477ApHgQfmM2xFrYJw
-
-Tensorlang：基于TensorFlow的可微编程语言
-
-https://mp.weixin.qq.com/s/_9NJ6QLQArUAD1DKb0KRfA
-
-如何使用TensorFlow mobile部署模型到移动设备
-
-https://mp.weixin.qq.com/s/e_TzQxFLAonLMyYAhte6Cg
-
-face-api.js：在浏览器中进行人脸识别的JavaScript接口
-
-https://zhuanlan.zhihu.com/p/347599203
-
-TFRT的开源代码分析

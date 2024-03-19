@@ -7,6 +7,81 @@ category: ML
 * toc
 {:toc}
 
+# EMD（续）
+
+>Gaspard Monge, Comte de Péluse，1746～1818，法国数学家。微分几何之父，巴黎综合理工大学（École Polytechnique）创始人、校长。海军部长。   
+>革命形势在1794年已经开始恶化，蒙日的好友、化学家拉瓦锡就是在那时被声称“革命不需要科学”的群众，送上了断头台。
+两年后的现在，50岁的蒙日又被革命群众认定为“不够激进”。他不得不从巴黎逃离，路途中还担心自己的安危——狂热的革命群众随时可能把他抓回去，并送上断头台。   
+>一封意外的来信打消了蒙日的恐惧。写信人是法兰西共和国意大利方面军总司令拿破仑，27岁的总司令在信中表示，除了乐意向蒙日“伸出感激和友谊之手”，还想向他致谢。原来在4年前，他们见过面。当时蒙日担任法国海军部长，拿破仑尚是“不得宠的年轻炮兵军官”。在部长那里，拿破仑受到了“热诚的欢迎”。尽管蒙日根本记不起这件事，拿破仑则依旧“珍藏着这段记忆”。
+
+EMD可以是多维分布之间的距离。一维的EMD也被称为Match distance。
+
+EMD有时也称作Wasserstein距离。
+
+>Leonid Vaseršteĭn，俄罗斯数学家，Moscow State University硕博，现居美国，Penn State University教授。Wasserstein是他名字的德文拼法，并为英文文献所沿用。他在去美国之前，曾在德国住过一段时间。
+
+由于最优传输问题的计算比较复杂，因此在DL时代，我们通常使用神经网络来计算EMD距离，例如WGAN。
+
+在文本处理中，有一个和EMD类似的编辑距离（Edit distance），也叫做Levenshtein distance。它是指两个字串之间，由一个转成另一个所需的最少编辑操作次数。许可的编辑操作包括将一个字符替换成另一个字符，插入一个字符，删除一个字符。一般来说，编辑距离越小，两个串的相似度越大。
+
+>注：严格来说，Edit distance是一系列字符串相似距离的统称。除了Levenshtein distance之外，还包括Hamming distance等。
+
+>Vladimir Levenshtein，1935年生，俄罗斯数学家，毕业于莫斯科州立大学。2006年获得IEEE Richard W. Hamming Medal。
+
+参考：
+
+https://vincentherrmann.github.io/blog/wasserstein/
+
+Wasserstein GAN and the Kantorovich-Rubinstein Duality
+
+http://chaofan.io/archives/earth-movers-distance-%e6%8e%a8%e5%9c%9f%e6%9c%ba%e8%b7%9d%e7%a6%bb
+
+Earth Mover's Distance——推土机距离
+
+https://mp.weixin.qq.com/s/rvPLYa1NFg_LRvb8Y8-aCQ
+
+Wasserstein距离在生成模型中的应用
+
+https://mp.weixin.qq.com/s/2xOrSyyWSbp8rBVbFoNrxQ
+
+Wasserstein is all you need：构建无监督表示的统一框架
+
+https://mp.weixin.qq.com/s/g4F50zLNs_aC1WUuCMNdXg
+
+一文详解Wasserstein距离
+
+https://mp.weixin.qq.com/s/NXDJ4uCpdX-YcWiKAsjJLQ
+
+传说中的推土机距离基础，最优传输理论了解一下
+
+https://mp.weixin.qq.com/s/5sNXmQbINIWMGjX5TYAPYw
+
+最优传输理论你理解了，传说中的推土机距离重新了解一下
+
+https://mp.weixin.qq.com/s/iwZrWYbppwStJlXESUufZQ
+
+想要算一算Wasserstein距离？这里有一份PyTorch实战
+
+https://mp.weixin.qq.com/s/itQNrNsdjAgPl5R48V-HtQ
+
+计算最优传输（Computational Optimal Transport）
+
+https://zhuanlan.zhihu.com/p/72803739
+
+Word Mover's Distance-文档距离优化方案
+
+https://mp.weixin.qq.com/s/Zi9v_sbxPkHWUWwNhMMMAg
+
+编辑距离
+
+https://zhuanlan.zhihu.com/p/270675634
+
+点云距离度量：完全解析EMD距离(Earth Mover's Distance)
+
+https://zhuanlan.zhihu.com/p/358895758
+
+统计距离（STATISTICAL DISTANCE）
+
 <a name="PCA"/>
 
 # 主成分分析
@@ -168,71 +243,3 @@ $$X_{n\times m}\approx U_{n\times k}Y_{k\times m}$$
 ## PCA和特征选择的区别
 
 两者虽然都是降维算法，但特征选择是在原有的n个特征中选择k个特征，而PCA是重建k个新的特征。
-
-## Other
-
-常见的降维算法还有：
-
-https://www.cnblogs.com/lochan/p/6627511.html
-
-数据降维之多维缩放MDS（Multiple Dimensional Scaling）
-
-https://mp.weixin.qq.com/s/cfeILnMsWlMC_T6lcSEW7A
-
-图像降维之MDS特征抽取方法
-
-https://mp.weixin.qq.com/s/C-tZRvHKcpO5jQArZi_GQA
-
-数据降维算法-从PCA到LargeVis
-
-https://mp.weixin.qq.com/s/HGBB1RLr5eux9xLtXJpokg
-
-哈工大硕士生用Python实现了11种经典数据降维算法，源代码库已开放
-
-PCA还可用于升维：
-
-https://www.cnblogs.com/lochan/p/7011831.html
-
-核化主成分分析（Kernel PCA）应用及调参
-
-https://zhuanlan.zhihu.com/p/59644996
-
-Kernel Principal Component Analysis(KPCA核主成分分析)
-
-## 参考
-
-https://mp.weixin.qq.com/s/tJ_FbL2nFQfkvKqpQJ8kmg
-
-从特征分解到协方差矩阵：详细剖析和实现PCA算法
-
-https://mp.weixin.qq.com/s/dDdyaA7Nxqa8tBE_qQ80Dw
-
-典型相关性分析(CCA)详解
-
-https://mp.weixin.qq.com/s/JDWgw3OOdBurDAShrPHJ7Q
-
-从最大方差来看主成分分析PCA
-
-https://mp.weixin.qq.com/s/ZDipXGPOxKhxtAx2Dc9RjA
-
-主成分分析（PCA）以及在图像上的应用
-
-https://mp.weixin.qq.com/s/9-nNNhhDWSYWy46u0hTazQ
-
-降维：PCA真的能改善分类结果吗？
-
-https://mp.weixin.qq.com/s/vkBSextwFQv8-DUwAxgVyA
-
-图像降维之Isomap特征抽取方法
-
-https://zhuanlan.zhihu.com/p/78193297
-
-PCA和SVD的联系和区别？
-
-https://mp.weixin.qq.com/s/Uj9AFbyFRO6jIBoC3Gy8nA
-
-小孩都看得懂的主成分分析
-
-https://mp.weixin.qq.com/s/N-JtuayRYRrZ-_P67u7rvA
-
-如何使用PCA去除数据集中的多重共线性

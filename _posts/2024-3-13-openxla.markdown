@@ -233,11 +233,15 @@ C++层面：
 
 python层面：
 
-使用`torch_xla.debug.profiler`类
+使用`torch_xla.debug.profiler`类。
 
 demo:
 
-test/pjrt/test_profiler.py
+torch_xla/test/pjrt/test_profiler.py
+
+torch_xla/test/test_profile_mp_mnist.py
+
+两个示例展示了两种不同的tracer用法。
 
 ## FSDP for torch_xla
 
@@ -245,9 +249,9 @@ FSDP的基本概念，参见《并行 & 框架 & 优化（四）》。
 
 分布式，包括FSDP的测试用例主要在：
 
-- test/test_train_mp_mnist.py
-- test/test_train_mp_mnist_zero1.py
-- test/test_train_mp_mnist_fsdp_with_ckpt.py
+- torch_xla/test/test_train_mp_mnist.py
+- torch_xla/test/test_train_mp_mnist_zero1.py
+- torch_xla/test/test_train_mp_mnist_fsdp_with_ckpt.py
 
 Min Num Params: FSDP默认自动包装的最小参数量。
 Offload Params: 是否将参数和梯度卸载到CPU。

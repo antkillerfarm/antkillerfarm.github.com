@@ -105,6 +105,12 @@ https://zhuanlan.zhihu.com/p/486130584
 
 Pytorch-多机多卡极简实现
 
+---
+
+https://pytorch.org/tutorials/intermediate/model_parallel_tutorial.html
+
+Single-Machine Model Parallel Best Practices
+
 ## Backend
 
 PyTorch带着左右护法Deepspeed，Megatron在研究领域，大模型领域，硬把Tensorflow干成了others。金主爸爸们，各种大模型训练和推理的客户，都拿着PyTorch + Megatron + Deepspeed的组合让我们适配。
@@ -330,43 +336,3 @@ https://mp.weixin.qq.com/s/1_fm6F1c_ldQNyb042NQRg
 https://mp.weixin.qq.com/s/mThkHpcq1ThnfONiSKmOKA
 
 如何捕获一只彩色卓别林？黑白照片AI上色教程很友好
-
-https://mp.weixin.qq.com/s/tD4Inrr0l1oBnLhUD81FCA
-
-用PyTorch进行RNN语言建模 - Packed Batching和Tied Weight
-
-https://mp.weixin.qq.com/s/HQJxbnIHXF-GFLIoNTOxGg
-
-手把手教你用torchtext处理文本数据
-
-https://mp.weixin.qq.com/s/KNaFelqk9UO6JYjbPTQohA
-
-显存不足？PyTorch显存使用分析与优化
-
-https://mp.weixin.qq.com/s/7p26q8Mu3IlK39DG7u41ZA
-
-PyTorch之迁移学习实战
-
-https://mp.weixin.qq.com/s/yGtDUbvO2APT88MwcSh8IA
-
-GAN如此简单的PyTorch实现，一张脸生成72种表情
-
-https://mp.weixin.qq.com/s/u9GEDCmR-PT0--0Xf4vKDA
-
-Pytorch的tensorboard食谱帮你可视化误差结果
-
-https://mp.weixin.qq.com/s/HginBrMOfEEWsZKq67u6EA
-
-在Pytorch中构建流数据集
-
-https://zhuanlan.zhihu.com/p/98535650
-
-研究生应当掌握的并行训练方法（单机多卡）
-
-https://zhuanlan.zhihu.com/p/86441879
-
-pytorch多gpu并行训练
-
-https://mp.weixin.qq.com/s/KP4etDrGlJmRAMQmR1mTJA
-
-基于C++的PyTorch模型部署

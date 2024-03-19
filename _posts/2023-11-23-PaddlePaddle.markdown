@@ -101,6 +101,10 @@ Hugging face起初是一家总部位于纽约的聊天机器人初创服务商�
 
 http://www.huggingface.co
 
+国内镜像：
+
+https://hf-mirror.com
+
 它的国内竞品有：modelscope
 
 Huggingface提供的工具库中比较知名的有Accelerate和Optimum。Accelerate专注于开箱即用的分布式训练，而Optimum作为Transformer的扩展，通过利用用户目标硬件的最大效率来加速模型训练和推理。
@@ -127,7 +131,7 @@ https://github.com/huggingface/safetensors
 
 ---
 
-tokenizers的含义参见《依存分析》。
+tokenizers的含义参见《Tokenization》一节。
 
 代码：
 
@@ -178,6 +182,30 @@ https://zhuanlan.zhihu.com/p/610800518
 Optimum + ONNX Runtime: 更容易、更快地训练你的Hugging Face模型
 
 # Pytorch
+
+https://mp.weixin.qq.com/s/yGtDUbvO2APT88MwcSh8IA
+
+GAN如此简单的PyTorch实现，一张脸生成72种表情
+
+https://mp.weixin.qq.com/s/u9GEDCmR-PT0--0Xf4vKDA
+
+Pytorch的tensorboard食谱帮你可视化误差结果
+
+https://mp.weixin.qq.com/s/HginBrMOfEEWsZKq67u6EA
+
+在Pytorch中构建流数据集
+
+https://zhuanlan.zhihu.com/p/98535650
+
+研究生应当掌握的并行训练方法（单机多卡）
+
+https://zhuanlan.zhihu.com/p/86441879
+
+pytorch多gpu并行训练
+
+https://mp.weixin.qq.com/s/KP4etDrGlJmRAMQmR1mTJA
+
+基于C++的PyTorch模型部署
 
 https://mp.weixin.qq.com/s/uUxwMFGF9nJiraVQsIqu2Q
 
@@ -342,43 +370,3 @@ https://mp.weixin.qq.com/s/NupSd4e01cvQ3CRnjy1npw
 https://zhuanlan.zhihu.com/p/87572724
 
 一文看懂align_corners
-
-https://www.zhihu.com/question/303070254
-
-PyTorch中在反向传播前为什么要手动将梯度清零？
-
-https://www.zhihu.com/question/274635237
-
-Pytorch有什么节省内存（显存）的小技巧？
-
-https://mp.weixin.qq.com/s/S1dRfmqpiLzR3tnsocmfvw
-
-Pytorch中的数据增强方式最全解释
-
-https://mp.weixin.qq.com/s/BTFMvV2ppmRBXYg95YlK4w
-
-PyTorch实现L2和L1正则化的方法
-
-https://zhuanlan.zhihu.com/p/272767300
-
-Pytorch转ONNX-理论篇
-
-https://zhuanlan.zhihu.com/p/273566106
-
-Pytorch转ONNX-实战篇1（tracing机制）
-
-https://zhuanlan.zhihu.com/p/286298001
-
-Pytorch转ONNX-实战篇2（实战踩坑总结）
-
-https://mp.weixin.qq.com/s/EXuFXbPBIbzTyi0fUjvvPw
-
-两行代码统计模型参数量与FLOPs，这个PyTorch小工具值得一试
-
-https://zhuanlan.zhihu.com/p/73711222
-
-巧用torch.backends.cudnn.benchmark减少训练时间
-
-https://zhuanlan.zhihu.com/p/664723980
-
-单机多GPU训练

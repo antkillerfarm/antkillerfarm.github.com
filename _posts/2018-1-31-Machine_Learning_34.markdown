@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（三十四）——机器学习语录, Linear Discriminant Analysis, NLP机器翻译常用评价度量
+title:  机器学习（三十四）——机器学习语录, Linear Discriminant Analysis
 category: ML 
 ---
 
@@ -184,49 +184,3 @@ https://mp.weixin.qq.com/s/AeLwfmM0N-b1dfxt3v4C-A
 https://zhuanlan.zhihu.com/p/84660707
 
 线性判别分析
-
-# NLP机器翻译常用评价度量
-
-机器翻译的评价指标主要有：BLEU、NIST、Rouge、METEOR等。
-
-参考：
-
-http://blog.csdn.net/joshuaxx316/article/details/58696552
-
-BLEU，ROUGE，METEOR，ROUGE-浅述自然语言处理机器翻译常用评价度量
-
-http://blog.csdn.net/guolindonggld/article/details/56966200
-
-机器翻译评价指标之BLEU
-
-https://mp.weixin.qq.com/s/niVOM-lnzI2-Tgxn8Qterw
-
-NLP中评价文本输出都有哪些方法？为什么要小心使用BLEU？
-
-http://blog.csdn.net/han_xiaoyang/article/details/10118517
-
-机器翻译评估标准介绍和计算方法
-
-http://blog.csdn.net/lcj369387335/article/details/69845385
-
-自动文档摘要评价方法---Edmundson和ROUGE
-
-https://mp.weixin.qq.com/s/XiZ6Uc5cHZjczn-qoupQnA
-
-对话系统评价方法综述
-
-https://zhuanlan.zhihu.com/p/33088748
-
-数据集和评价指标介绍
-
-https://mp.weixin.qq.com/s/9hoM_yF96XxSbQHEP6oasw
-
-怎样生成语言才能更自然，斯坦福提出超越Perplexity的评估新方法
-
-https://mp.weixin.qq.com/s/TnAZUjFSn7ATtRmBexJlXw
-
-文本生成评价方法 BLEU ROUGE CIDEr SPICE Perplexity METEOR
-
-https://mp.weixin.qq.com/s/n4OnRGkrn5DYuZUmmrmzpg
-
-NLG任务评价指标BLEU与ROUGE

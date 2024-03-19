@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十一）——平稳离散时间随机过程, 功率谱, 高阶统计, PID算法
+title:  数学狂想曲（十一）——平稳离散时间随机过程, 功率谱, 高阶统计
 category: math 
 ---
 
@@ -251,19 +251,3 @@ https://wenku.baidu.com/view/136b666c561252d380eb6e8c.html
 https://mp.weixin.qq.com/s/SOpBf0fAoqau0ac5kXlQIQ
 
 数学好吃吗？好吃！
-
-# PID算法
-
-PID算法是自动控制领域最基础应用也最广泛的算法。它是三个单词proportional（P，比例）、integral（I，积分）和differential（D，微分）的缩写。
-
-PID算法的流程如下图所示：
-
-| 图1 |
-|:--:|
-| ![](/images/article/PID.png) |
-
-以下我们以水箱水龙头为例，解释一下PID算法的各个要素。
-
-**场景1**：假设我们面对的系统是一个简单的水箱的液位，要从空箱开始注水直到达到某个高度，而你能控制的变量是注水龙头的开关大小。
-
-图1中的$$r(t)$$表示期待的设定值，在这个场景中，就是水箱的液位。$$y(t)$$表示当前的液位。$$e(t)=r(t)-y(t)$$表示误差值。

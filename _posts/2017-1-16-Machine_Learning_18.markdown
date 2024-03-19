@@ -7,6 +7,76 @@ category: ML
 * toc
 {:toc}
 
+# 主成分分析（续）
+
+## Other
+
+常见的降维算法还有：
+
+https://www.cnblogs.com/lochan/p/6627511.html
+
+数据降维之多维缩放MDS（Multiple Dimensional Scaling）
+
+https://mp.weixin.qq.com/s/cfeILnMsWlMC_T6lcSEW7A
+
+图像降维之MDS特征抽取方法
+
+https://mp.weixin.qq.com/s/C-tZRvHKcpO5jQArZi_GQA
+
+数据降维算法-从PCA到LargeVis
+
+https://mp.weixin.qq.com/s/HGBB1RLr5eux9xLtXJpokg
+
+哈工大硕士生用Python实现了11种经典数据降维算法，源代码库已开放
+
+PCA还可用于升维：
+
+https://www.cnblogs.com/lochan/p/7011831.html
+
+核化主成分分析（Kernel PCA）应用及调参
+
+https://zhuanlan.zhihu.com/p/59644996
+
+Kernel Principal Component Analysis(KPCA核主成分分析)
+
+## 参考
+
+https://mp.weixin.qq.com/s/tJ_FbL2nFQfkvKqpQJ8kmg
+
+从特征分解到协方差矩阵：详细剖析和实现PCA算法
+
+https://mp.weixin.qq.com/s/dDdyaA7Nxqa8tBE_qQ80Dw
+
+典型相关性分析(CCA)详解
+
+https://mp.weixin.qq.com/s/JDWgw3OOdBurDAShrPHJ7Q
+
+从最大方差来看主成分分析PCA
+
+https://mp.weixin.qq.com/s/ZDipXGPOxKhxtAx2Dc9RjA
+
+主成分分析（PCA）以及在图像上的应用
+
+https://mp.weixin.qq.com/s/9-nNNhhDWSYWy46u0hTazQ
+
+降维：PCA真的能改善分类结果吗？
+
+https://mp.weixin.qq.com/s/vkBSextwFQv8-DUwAxgVyA
+
+图像降维之Isomap特征抽取方法
+
+https://zhuanlan.zhihu.com/p/78193297
+
+PCA和SVD的联系和区别？
+
+https://mp.weixin.qq.com/s/Uj9AFbyFRO6jIBoC3Gy8nA
+
+小孩都看得懂的主成分分析
+
+https://mp.weixin.qq.com/s/N-JtuayRYRrZ-_P67u7rvA
+
+如何使用PCA去除数据集中的多重共线性
+
 # 独立成分分析
 
 这一节我们将讲述独立成分分析（Independent Components Analysis，ICA）算法。
@@ -166,3 +236,27 @@ Robust PCA学习笔记
 http://patternrecognition.cn/~jin/gs/seminar/20140515_jinzhong.ppt
 
 Robust PCA-模式识别
+
+# 关联规则挖掘
+
+## 基本概念
+
+关联规则挖掘（Association rule mining）是机器学习的一个子领域。它最早的案例就是以下的**尿布和啤酒**的故事：
+
+>沃尔玛曾今对数据仓库中一年多的原始交易数据进行了详细的分析，发现与尿布一起被购买最多的商品竟然是啤酒。   
+>借助数据仓库和关联规则，发现了这个隐藏在背后的事实：**美国妇女经常会嘱咐丈夫下班后为孩子买尿布，而30%~40%的丈夫在买完尿布之后又要顺便购买自己爱喝的啤酒。**   
+>根据这个发现，沃尔玛调整了货架的位置，把尿布和啤酒放在一起销售，大大增加了销量。
+
+这里借用一个引例来介绍关联规则挖掘的基本概念。
+
+| 交易号TID | 顾客购买的商品 | 交易号TID | 顾客购买的商品 |
+|:--:|:--|:--:|:--|
+| T1 | bread, cream, milk, tea | T6 | bread, tea |
+| T2 | bread, cream, milk | T7 | beer, milk, tea |
+| T3 | cake, milk | T8 | bread, tea |
+| T4 | milk, tea | T9 | bread, cream, milk, tea |
+| T5 | bread, cake, milk | T10 | bread, milk, tea |
+
+**定义一**：设$$I=\{i_1,i_2,\dots,i_m\}$$，是m个不同的项目的集合，每个$$i_k$$称为一个**项目**。项目的集合I称为**项集**。其元素的个数称为项集的长度，长度为k的项集称为k-项集。引例中每个商品就是一个项目，项集为$$I=\{bread, beer, cake,cream, milk, tea\}$$，I的长度为6。
+
+**定义二**：每笔**交易T**是项集I的一个子集。对应每一个交易有一个唯一标识交易号，记作TID。交易全体构成了**交易数据库D**，$$\mid D\mid$$等于D中交易的个数。引例中包含10笔交易，因此$$\mid D\mid=10$$。

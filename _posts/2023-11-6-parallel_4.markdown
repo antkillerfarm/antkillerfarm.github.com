@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（五）——参考资料
+title:  并行 & 框架 & 优化（五）——LLAMA
 category: DL acceleration 
 ---
 
@@ -63,7 +63,7 @@ https://www.kaggle.com/models/google/gemma
 
 https://zhuanlan.zhihu.com/p/676010571
 
-欢迎 Mixtral-当前Hugging Face上最先进的MoE模型
+欢迎Mixtral-当前Hugging Face上最先进的MoE模型
 
 ## 工具
 
