@@ -1,97 +1,13 @@
 ---
 layout: post
-title:  深度学习（十八）——无监督/半监督/自监督深度学习（1）
+title:  深度学习（十八）——Prompt Learning, 无监督/半监督/自监督深度学习（1）
 category: DL 
 ---
 
 * toc
 {:toc}
 
-# 无监督/半监督/自监督深度学习
-
-自监督学习是一种特殊目的的无监督学习。不同于传统的AutoEncoder等方法，仅仅以重构输入为目的，而是希望通过surrogate task学习到和高层语义信息相关联的特征。
-
-## 对比学习
-
-![](/images/img4/SimCLR.jpg)
-
-https://mp.weixin.qq.com/s/r1uXn2jGsHZcZ8Nk7GnGFA
-
-语义表征的无监督对比学习：一个新理论框架
-
-https://zhuanlan.zhihu.com/p/346686467
-
-对比学习（Contrastive Learning）综述
-
-https://mp.weixin.qq.com/s/SOaA9XNnymLgGgJ5JNSdBg
-
-对比学习（Contrastive Learning）相关进展梳理
-
-https://mp.weixin.qq.com/s/U0pTQkW55evm94iQORwGeA
-
-图解SimCLR框架，用对比学习得到一个好的视觉预训练模型
-
-https://mp.weixin.qq.com/s/1RJ4bbfDC5LiN2PNIxdzew
-
-SimCLR框架的理解和代码实现以及代码讲解
-
-https://mp.weixin.qq.com/s/-Vtl_8nND7WCPLdL5bNlMw
-
-探索孪生神经网络：请停止你的梯度传递
-
-https://zhuanlan.zhihu.com/p/321642265
-
-《探索简单孪生网络表示学习》阅读笔记
-
-https://mp.weixin.qq.com/s/6qqFAQBaOFuXtaeRSmQgsQ
-
-一文梳理2020年大热的对比学习模型
-
-https://mp.weixin.qq.com/s/SeAZERYdfqDbtqTLnuWfGg
-
-盘点近期大热对比学习模型：MoCo/SimCLR/BYOL/SimSiam
-
-https://mp.weixin.qq.com/s/jHVg-BMRRVNjAf6ZFEoPxQ
-
-自监督学习的SimCLRv2框架
-
-https://mp.weixin.qq.com/s/7iBC_n6EARW3V8bNuKUqQA
-
-Hinton团队力作：SimCLR系列
-
-https://mp.weixin.qq.com/s/sH-G4g0EyQLu2l91Xvdefw
-
-Neighbor2Neighbor：无需干净图像的自监督图像降噪
-
-https://mp.weixin.qq.com/s/xYlCAUIue_z14Or4oyaCCg
-
-对比学习研究进展精要
-
-https://mp.weixin.qq.com/s/VlSoMmAGDblQ2UYhLD96gA
-
-什么是contrastive learning？
-
-https://mp.weixin.qq.com/s/qnG0YLf0yjs4aT9URRMDyw
-
-有监督对比学习的一个简单的例子
-
-https://mp.weixin.qq.com/s/h8loG3enT5U-5F2a2UflJg
-
-对比学习小综述
-
-https://mp.weixin.qq.com/s/v5p9QA3vDl-WTF3-7shp4g
-
-对比学习简述
-
-https://mp.weixin.qq.com/s/CeqoXqHjfa6UTWa8mmo_Ww
-
-Paper和陈丹琦撞车是一种怎样的体验（ConSERT vs. SimCSE）
-
-https://mp.weixin.qq.com/s/C4KaIXO9Lp8tlqhS3b0VCw
-
-美团提出基于对比学习的文本表示模型（ConSERT）
-
-## Prompt Learning
+# Prompt Learning
 
 在BERT和Word2Vec相关章节中，我们已经看到了，如何采用类似完形填空的方式，来利用大量的无标签语料，对模型进行预训练。这里的完形填空就是一种Prompt Learning。
 
@@ -198,6 +114,94 @@ Fine-tune之后的NLP新范式：Prompt越来越火，CMU华人博士后出了�
 https://wjn1996.blog.csdn.net/article/details/120607050
 
 Prompt-Tuning——深度解读一种新的微调范式
+
+https://zhuanlan.zhihu.com/p/615277009
+
+总结开源可用的Instruct/Prompt Tuning数据
+
+# 无监督/半监督/自监督深度学习
+
+自监督学习是一种特殊目的的无监督学习。不同于传统的AutoEncoder等方法，仅仅以重构输入为目的，而是希望通过surrogate task学习到和高层语义信息相关联的特征。
+
+## 对比学习
+
+![](/images/img4/SimCLR.jpg)
+
+https://mp.weixin.qq.com/s/r1uXn2jGsHZcZ8Nk7GnGFA
+
+语义表征的无监督对比学习：一个新理论框架
+
+https://zhuanlan.zhihu.com/p/346686467
+
+对比学习（Contrastive Learning）综述
+
+https://mp.weixin.qq.com/s/SOaA9XNnymLgGgJ5JNSdBg
+
+对比学习（Contrastive Learning）相关进展梳理
+
+https://mp.weixin.qq.com/s/U0pTQkW55evm94iQORwGeA
+
+图解SimCLR框架，用对比学习得到一个好的视觉预训练模型
+
+https://mp.weixin.qq.com/s/1RJ4bbfDC5LiN2PNIxdzew
+
+SimCLR框架的理解和代码实现以及代码讲解
+
+https://mp.weixin.qq.com/s/-Vtl_8nND7WCPLdL5bNlMw
+
+探索孪生神经网络：请停止你的梯度传递
+
+https://zhuanlan.zhihu.com/p/321642265
+
+《探索简单孪生网络表示学习》阅读笔记
+
+https://mp.weixin.qq.com/s/6qqFAQBaOFuXtaeRSmQgsQ
+
+一文梳理2020年大热的对比学习模型
+
+https://mp.weixin.qq.com/s/SeAZERYdfqDbtqTLnuWfGg
+
+盘点近期大热对比学习模型：MoCo/SimCLR/BYOL/SimSiam
+
+https://mp.weixin.qq.com/s/jHVg-BMRRVNjAf6ZFEoPxQ
+
+自监督学习的SimCLRv2框架
+
+https://mp.weixin.qq.com/s/7iBC_n6EARW3V8bNuKUqQA
+
+Hinton团队力作：SimCLR系列
+
+https://mp.weixin.qq.com/s/sH-G4g0EyQLu2l91Xvdefw
+
+Neighbor2Neighbor：无需干净图像的自监督图像降噪
+
+https://mp.weixin.qq.com/s/xYlCAUIue_z14Or4oyaCCg
+
+对比学习研究进展精要
+
+https://mp.weixin.qq.com/s/VlSoMmAGDblQ2UYhLD96gA
+
+什么是contrastive learning？
+
+https://mp.weixin.qq.com/s/qnG0YLf0yjs4aT9URRMDyw
+
+有监督对比学习的一个简单的例子
+
+https://mp.weixin.qq.com/s/h8loG3enT5U-5F2a2UflJg
+
+对比学习小综述
+
+https://mp.weixin.qq.com/s/v5p9QA3vDl-WTF3-7shp4g
+
+对比学习简述
+
+https://mp.weixin.qq.com/s/CeqoXqHjfa6UTWa8mmo_Ww
+
+Paper和陈丹琦撞车是一种怎样的体验（ConSERT vs. SimCSE）
+
+https://mp.weixin.qq.com/s/C4KaIXO9Lp8tlqhS3b0VCw
+
+美团提出基于对比学习的文本表示模型（ConSERT）
 
 ## 参考
 

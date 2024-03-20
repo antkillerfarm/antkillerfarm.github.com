@@ -176,6 +176,12 @@ torch_xla/experimental/plugins.py
 
 ---
 
+XLA_USE_32BIT_LONG
+
+squash_64bit_types
+
+---
+
 参考：
 
 https://pytorch.org/blog/pytorch-2.0-xla/
@@ -253,7 +259,7 @@ FSDP的基本概念，参见《并行 & 框架 & 优化（四）》。
 - torch_xla/test/test_train_mp_mnist_zero1.py
 - torch_xla/test/test_train_mp_mnist_fsdp_with_ckpt.py
 
-Min Num Params: FSDP默认自动包装的最小参数量。
+min_num_params: FSDP默认自动包装的最小参数量。
 Offload Params: 是否将参数和梯度卸载到CPU。
 
 ```python
@@ -271,6 +277,10 @@ self._fsdp_wrapped_module: nn.Module = XlaFlattenParamsWrapper
 https://pytorch.org/blog/scaling-pytorch-models-on-cloud-tpus-with-fsdp/
 
 Scaling PyTorch models on Cloud TPUs with FSDP
+
+https://zhuanlan.zhihu.com/p/616858352
+
+一些LLMs的省内存方法
 
 ---
 

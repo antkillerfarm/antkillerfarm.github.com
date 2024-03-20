@@ -63,6 +63,14 @@ https://mp.weixin.qq.com/s/vfsB5t3r5dBACKQx6FshVw
 
 ---
 
+数据泄露（data contamination）在大模型时代可以说是极难避免的。随着大模型训练数据规模的扩大，保证训练数据与常用benchmark之间没有重叠变得几乎不可能。
+
+https://zhuanlan.zhihu.com/p/665426752
+
+大模型是如何在评测中“作弊”的？
+
+---
+
 参考：
 
 https://www.zhihu.com/question/584132646

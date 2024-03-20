@@ -291,6 +291,10 @@ https://mp.weixin.qq.com/s/n4OnRGkrn5DYuZUmmrmzpg
 
 NLG任务评价指标BLEU与ROUGE
 
+https://zhuanlan.zhihu.com/p/445450292
+
+为什么bleu不是一个完美的文本生成评测指标
+
 ## LLM评估
 
 https://zhuanlan.zhihu.com/p/677583745
