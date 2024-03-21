@@ -1,23 +1,53 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（五）——LLAMA
+title:  并行 & 框架 & 优化（五）——LLM Inference, LLAMA
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# 并行 & 框架 & 优化
+# MQA & GQA
 
-## LLM实战经验
+![](/images/img5/GQA.jpg)
 
-https://pytorch.org/blog/high-performance-llama-2/
+首先是原始的 MHA(Multi-Head Attention)，QKV 三部分有相同数量的头，且一一对应。每次做Attention，head1的QKV就做好自己运算就可以，输出时各个头加起来就行。
 
-https://huggingface.co/blog/zh/bloom-inference-optimization
+而MQA则是，让Q仍然保持原来的头数，但K和V只有一个头，相当于所有的Q头共享一组K和V头，所以叫做Multi-Query了。
 
-https://huggingface.co/blog/zh/bloom-megatron-deepspeed
+实现改变了会不会影响效果呢？确实会影响，但相对它30%-40%的吞吐收益，性能的些微降低是可以接受的。
 
-## LLAMA
+而GQA呢，是MHA和MQA的折衷方案，既不想损失性能太多，又想获得MQA带来的推理加速好处。
+
+https://zhuanlan.zhihu.com/p/647130255
+
+为什么现在大家都在用MQA和GQA？
+
+# LLM Inference
+
+https://zhuanlan.zhihu.com/p/653352979
+
+LLM七种推理服务框架总结
+
+https://zhuanlan.zhihu.com/p/671347964
+
+大模型(LLM)推理框架汇总
+
+## TensorRT-LLM
+
+TensorRT-LLM是NVIDIA推出的基于TensorRT的LLM推理工具。
+
+代码：
+
+https://github.com/NVIDIA/TensorRT-LLM/
+
+## vLLM
+
+https://docs.vllm.ai/en/latest/
+
+Easy, fast, and cheap LLM serving for everyone
+
+# LLAMA
 
 代码：
 
@@ -65,7 +95,7 @@ https://zhuanlan.zhihu.com/p/676010571
 
 欢迎Mixtral-当前Hugging Face上最先进的MoE模型
 
-## 工具
+# 工具
 
 FairScale是由Facebook Research开发的PyTorch扩展库。FSDP就是首发于这个库。
 
@@ -75,7 +105,7 @@ https://zhuanlan.zhihu.com/p/412118353
 
 Kokkos:一个异构并行计算通用平台
 
-## 参考
+# 参考
 
 https://mp.weixin.qq.com/s/iAHvfgn54zIwfM9K8KFJnw
 

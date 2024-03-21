@@ -1,11 +1,71 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（四）——DeepSpeed, LoRA, FSDP, Megatron-LM, KV Cache
+title:  并行 & 框架 & 优化（四）——Horovod, DeepSpeed, LoRA, FSDP, Megatron-LM, KV Cache
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
+
+# 大模型训练（续）
+
+## bucket
+
+在训练各个部分耗时中，backward(BWD)反向传播部分，通常占比比较大，相比之下，参数更新的部分（OPT）则通常是耗时比重小的部分。
+
+所以为了能够overlap通讯的耗时，Pytorch DDP选择在backward的时候进行梯度更新，并且为此引入bucket的概念。一个bucket里通常有不超过一定大小的几个layer的参数组成（默认是25MB），当一个bucket内部的梯度准备好了之后，则这个bucket就可以开始进行ring-all-reduce取平均操作，而不需要等到计算完整个模型的反向传播过后才进行一次统一的ring-all-reduce操作，相当与把多卡通讯的时间隐藏在了backward计算的耗时中，大大提升了资源利用效率。
+
+# Horovod
+
+Horovod是Uber开源的一套分布式深度学习框架。Horovod支持TensorFlow、Keras、PyTorch和Apache MXNet等后端框架。
+
+官网：
+
+https://eng.uber.com/horovod/
+
+代码：
+
+https://github.com/horovod/horovod
+
+Horovod主打Data Parallel。这在前LLM时代用的比较多，但对于LLM而言，单卡根本放不下所有的参数，Data Parallel也就用不起来了。
+
+参考：
+
+https://www.cnblogs.com/rossiXYZ/p/14856464.html
+
+深度学习分布式训练框架Horovod
+
+https://zhuanlan.zhihu.com/p/40578792
+
+Horovod-基于TensorFlow分布式深度学习框架
+
+https://zhuanlan.zhihu.com/p/158375055
+
+PyTorch单机多卡操作(分布式DataParallel，混合精度，Horovod)
+
+https://mp.weixin.qq.com/s/iQIRj7ifsOEnupYZuQsVwQ
+
+是时候放弃TensorFlow集群，拥抱Horovod了
+
+https://mp.weixin.qq.com/s/qOjGrR59Mf0Mzgh4bpDhrA
+
+详解Horovod：Uber开源的TensorFlow分布式深度学习框架
+
+https://mp.weixin.qq.com/s/yNxjJHpGns6utpBpI-0XDA
+
+分布式训练框架Horovod初步学习
+
+https://zhuanlan.zhihu.com/p/374575049
+
+一文看懂Horovod源码
+
+https://mp.weixin.qq.com/s/7c7Q0P3g3IEL_r4BU2ZxRg
+
+Horovod架构剖析——解密最成功的第三方DL分布式训练框架
+
+https://horovod.readthedocs.io/en/stable/xla.html
+
+Horovod with XLA in Tensorflow
 
 # DeepSpeed
 
@@ -76,6 +136,22 @@ https://zhuanlan.zhihu.com/p/576673548
 https://zhuanlan.zhihu.com/p/626420999
 
 deepspeed chat代码解读
+
+## GSPMD
+
+GSPMD是在GShard基础上发展而来的并行算法。
+
+《GSPMD:General and Scalable Parallelization for ML Computation Graphs》
+
+## Sequence Parallel
+
+通用性较强的Ulysses，在小规模或长序列上表现更好。
+
+《DeepSpeed Ulysses: System Optimizations for Enabling Training of Extreme Long Sequence Transformer Models》
+
+FastSeq，它能将qkv projection的计算和all-gather通信重叠，只需多占用一点内存就可更进一步提升训练效率。
+
+《FastSeq: Make Sequence Generation Faster》
 
 # LoRA
 
@@ -242,59 +318,3 @@ https://zhuanlan.zhihu.com/p/630832593
 https://zhuanlan.zhihu.com/p/662498827
 
 大模型推理加速：看图学KV Cache
-
-# MQA & GQA
-
-![](/images/img5/GQA.jpg)
-
-首先是原始的 MHA(Multi-Head Attention)，QKV 三部分有相同数量的头，且一一对应。每次做Attention，head1的QKV就做好自己运算就可以，输出时各个头加起来就行。
-
-而MQA则是，让Q仍然保持原来的头数，但K和V只有一个头，相当于所有的Q头共享一组K和V头，所以叫做Multi-Query了。
-
-实现改变了会不会影响效果呢？确实会影响，但相对它30%-40%的吞吐收益，性能的些微降低是可以接受的。
-
-而GQA呢，是MHA和MQA的折衷方案，既不想损失性能太多，又想获得MQA带来的推理加速好处。
-
-https://zhuanlan.zhihu.com/p/647130255
-
-为什么现在大家都在用MQA和GQA？
-
-# GSPMD
-
-GSPMD是在GShard基础上发展而来的并行算法。
-
-《GSPMD:General and Scalable Parallelization for ML Computation Graphs》
-
-# Sequence Parallel
-
-通用性较强的Ulysses，在小规模或长序列上表现更好。
-
-《DeepSpeed Ulysses: System Optimizations for Enabling Training of Extreme Long Sequence Transformer Models》
-
-FastSeq，它能将qkv projection的计算和all-gather通信重叠，只需多占用一点内存就可更进一步提升训练效率。
-
-《FastSeq: Make Sequence Generation Faster》
-
-# LLM Inference
-
-https://zhuanlan.zhihu.com/p/653352979
-
-LLM七种推理服务框架总结
-
-https://zhuanlan.zhihu.com/p/671347964
-
-大模型(LLM)推理框架汇总
-
-## TensorRT-LLM
-
-TensorRT-LLM是NVIDIA推出的基于TensorRT的LLM推理工具。
-
-代码：
-
-https://github.com/NVIDIA/TensorRT-LLM/
-
-## vLLM
-
-https://docs.vllm.ai/en/latest/
-
-Easy, fast, and cheap LLM serving for everyone

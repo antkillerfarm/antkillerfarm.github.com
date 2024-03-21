@@ -260,7 +260,7 @@ FSDP的基本概念，参见《并行 & 框架 & 优化（四）》。
 - torch_xla/test/test_train_mp_mnist_fsdp_with_ckpt.py
 
 min_num_params: FSDP默认自动包装的最小参数量。
-Offload Params: 是否将参数和梯度卸载到CPU。
+cpu_offload: 是否将参数和梯度卸载到CPU。
 
 ```python
 XlaFullyShardedDataParallel

@@ -229,6 +229,66 @@ https://gitee.com/mindspore/akg/
 
 # Pytorch+
 
+https://mp.weixin.qq.com/s/BsMwZC3IoXA58OybZ3aYcg
+
+pytorch中如何处理RNN输入变长序列padding
+
+https://mp.weixin.qq.com/s/abd62HNlen9sepH3CrmpGg
+
+PyTorch为何如此高效好用？来探寻深度学习框架的内部架构
+
+https://mp.weixin.qq.com/s/OMjfck4jlMneGZ1NJxbjKQ
+
+PyTorch有哪些坑/bug？
+
+https://mp.weixin.qq.com/s/UykIKAeKB-0eqk6UqvXwXA
+
+对抗自编码器PyTorch手把手实战系列——PyTorch实现对抗自编码器
+
+https://mp.weixin.qq.com/s/E8RMSXVZucSGQJxFdtMgkg
+
+PyTorch实例：用ResNet进行交通标志分类
+
+https://mp.weixin.qq.com/s/_hbuk9nZaLoNSZ5AnDnELg
+
+使用PyTorch从零开始构建Elman循环神经网络
+
+https://mp.weixin.qq.com/s/FQxSYjyR1U3TIinSShnOfg
+
+从头开始了解PyTorch的简单实现
+
+https://mp.weixin.qq.com/s/wz1YdHYom6y-gOB58R86OQ
+
+对抗自编码器PyTorch手把手实战系列——对抗自编码器学习笔迹风格
+
+https://mp.weixin.qq.com/s/3mnV8gz1AsYQ2ElK--Ihrg
+
+从零开始PyTorch项目：YOLO v3目标检测实现
+
+https://mp.weixin.qq.com/s/88klahIOAfBcA5Rdv70JNg
+
+PyTorch的动态计算图深入浅出
+
+https://mp.weixin.qq.com/s/Mcj9SwC6GZEjXxi55vfsaw
+
+minibatching，数据加载和模型构建
+
+https://mp.weixin.qq.com/s/EweQNoP5BlB9e1eVJsCFvg
+
+GANs很难？这篇文章教你50行代码搞定
+
+https://mp.weixin.qq.com/s/1KAbFAWC3jgJTE-zp5Qu6g
+
+如何直观地理解条件随机场，并通过PyTorch简单地实现
+
+https://mp.weixin.qq.com/s/1_fm6F1c_ldQNyb042NQRg
+
+还在自己写训练过程么？你需要一个训练引擎
+
+https://mp.weixin.qq.com/s/mThkHpcq1ThnfONiSKmOKA
+
+如何捕获一只彩色卓别林？黑白照片AI上色教程很友好
+
 https://mp.weixin.qq.com/s/tD4Inrr0l1oBnLhUD81FCA
 
 用PyTorch进行RNN语言建模 - Packed Batching和Tied Weight

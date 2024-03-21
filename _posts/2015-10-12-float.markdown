@@ -259,16 +259,6 @@ https://zhuanlan.zhihu.com/p/381978470
 
 Sequence Parallel：Transformer模型由于是处理一个序列，那么按照Sequence维度切分，也就是一件自然的事情了。
 
-## Parallelism Bubble
-
-![](/images/img5/bubble.jpg)
-
-模型经过拆分后的上一个rank的stage需要长期持续处于空闲状态，等待其他rank的stage计算完成，才可以开始计算，这极大降低了设备的平均使用率。这种现象被称为并行空泡（Parallelism Bubble）。
-
-https://zhuanlan.zhihu.com/p/618590870
-
-大模型训练Pipeline Parallel流水并行性能分析
-
 ## Distributed Data Parallel
 
 https://mp.weixin.qq.com/s/52Wz4pUI8egKugMFuknWKw

@@ -9,6 +9,54 @@ category: DL Framework
 
 # Pytorch
 
+## TorchDynamo（续）
+
+自动求导：
+
+`from torch._dynamo.backends.common import aot_autograd`
+
+切图：
+
+`from torch.fx.passes.infra.partitioner import CapabilityBasedPartitioner`
+
+---
+
+参考：
+
+https://zhuanlan.zhihu.com/p/570989882
+
+Pytorch编译机制的总结（来自吴芃老师）
+
+https://blog.csdn.net/qq_39967751/article/details/128372797
+
+PyTorch 2.0之Dynamo: 窥探加速背后的真相
+
+https://fkong.tech/posts/2023-05-20-dynamo/
+
+一文搞懂TorchDynamo原理
+
+https://www.zhihu.com/answer/3395318281
+
+colossalai团队成员讲解PyTorch
+
+## TorchInductor
+
+![](/images/img5/pytorch_compile.png)
+
+TorchDynamo偏重于Graph的捕获，而TorchInductor偏重于算子级的优化。
+
+经过TorchInductor之后的计算图将是PSC(Pure-and-Statically composed)的，更利于编译优化。
+
+参考：
+
+https://dev-discuss.pytorch.org/t/torchinductor-a-pytorch-native-compiler-with-define-by-run-ir-and-symbolic-shapes/747
+
+TorchInductor: a PyTorch-native Compiler with Define-by-Run IR and Symbolic Shapes
+
+https://zhuanlan.zhihu.com/p/595996564
+
+聊聊PyTorch 2.0(Inductor)
+
 ## TorchServe
 
 TorchServe是由AWS和Facebook合作开发的PyTorch模型服务库。
@@ -276,63 +324,3 @@ PyTorch实例：用ResNet进行交通标志分类
 https://mp.weixin.qq.com/s/zN3k51g9gjQvc43AH-ypGA
 
 如何通过PyTorch上手Tensor Comprehensions？
-
-https://mp.weixin.qq.com/s/BsMwZC3IoXA58OybZ3aYcg
-
-pytorch中如何处理RNN输入变长序列padding
-
-https://mp.weixin.qq.com/s/abd62HNlen9sepH3CrmpGg
-
-PyTorch为何如此高效好用？来探寻深度学习框架的内部架构
-
-https://mp.weixin.qq.com/s/OMjfck4jlMneGZ1NJxbjKQ
-
-PyTorch有哪些坑/bug？
-
-https://mp.weixin.qq.com/s/UykIKAeKB-0eqk6UqvXwXA
-
-对抗自编码器PyTorch手把手实战系列——PyTorch实现对抗自编码器
-
-https://mp.weixin.qq.com/s/E8RMSXVZucSGQJxFdtMgkg
-
-PyTorch实例：用ResNet进行交通标志分类
-
-https://mp.weixin.qq.com/s/_hbuk9nZaLoNSZ5AnDnELg
-
-使用PyTorch从零开始构建Elman循环神经网络
-
-https://mp.weixin.qq.com/s/FQxSYjyR1U3TIinSShnOfg
-
-从头开始了解PyTorch的简单实现
-
-https://mp.weixin.qq.com/s/wz1YdHYom6y-gOB58R86OQ
-
-对抗自编码器PyTorch手把手实战系列——对抗自编码器学习笔迹风格
-
-https://mp.weixin.qq.com/s/3mnV8gz1AsYQ2ElK--Ihrg
-
-从零开始PyTorch项目：YOLO v3目标检测实现
-
-https://mp.weixin.qq.com/s/88klahIOAfBcA5Rdv70JNg
-
-PyTorch的动态计算图深入浅出
-
-https://mp.weixin.qq.com/s/Mcj9SwC6GZEjXxi55vfsaw
-
-minibatching，数据加载和模型构建
-
-https://mp.weixin.qq.com/s/EweQNoP5BlB9e1eVJsCFvg
-
-GANs很难？这篇文章教你50行代码搞定
-
-https://mp.weixin.qq.com/s/1KAbFAWC3jgJTE-zp5Qu6g
-
-如何直观地理解条件随机场，并通过PyTorch简单地实现
-
-https://mp.weixin.qq.com/s/1_fm6F1c_ldQNyb042NQRg
-
-还在自己写训练过程么？你需要一个训练引擎
-
-https://mp.weixin.qq.com/s/mThkHpcq1ThnfONiSKmOKA
-
-如何捕获一只彩色卓别林？黑白照片AI上色教程很友好

@@ -249,7 +249,7 @@ Self-Attention 加速方法一览：ISSA、CCNet、CGNL、Linformer
 
 # Switch Transformer
 
-Mixture of Experts (MoE)
+Mixture of Experts(MoE)
 
 ![](/images/img5/MoE.png)
 
@@ -264,6 +264,10 @@ https://zhuanlan.zhihu.com/p/362525526
 https://huggingface.co/blog/zh/moe
 
 混合专家模型(MoE)详解
+
+https://zhuanlan.zhihu.com/p/662518387
+
+MOE并行
 
 # Attention in CV & RS
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（三）——tf.distribute & MultiDevice, 其他概念, 大模型训练, Horovod
+title:  并行 & 框架 & 优化（三）——tf.distribute & MultiDevice, Pipeline Parallel, 其他概念, 大模型训练
 category: DL acceleration 
 ---
 
@@ -123,6 +123,40 @@ graphcore的实现没有动`GenericTransferManager`，而是自己单独弄了�
 
 tensorflow/compiler/plugin/poplar/driver/poplar_executable_cache.cc
 
+# Pipeline Parallel
+
+![](/images/img5/PP.png)
+
+右上图一般称为朴素流水线并行，该方案在任意给定时刻，除了一个GPU之外的其他所有GPU都是空闲的。
+
+所以就有了Micro-batch Pipeline Parallel。将Batch数据分成N份，每次算完1份，就将输出交给下一个GPU，同时开始处理下1个Micro-batch的数据。
+
+注：模型经过拆分后的上一个rank的stage需要长期持续处于空闲状态，等待其他rank的stage计算完成，才可以开始计算，这极大降低了设备的平均使用率。这种现象被称为并行空泡（Parallelism Bubble）。
+
+![](/images/img5/bubble.jpg)
+
+上图这种最简单的Mini-batch Pipeline Parallel，一般称为F-then-B模式，先进行前向计算，再进行反向计算。
+
+1F1B（One Forward pass followed by One Backward pass）模式，一种前向计算和反向计算交叉进行的方式。在1F1B模式下，前向计算和反向计算交叉进行，可以及时释放不必要的中间变量。
+
+![](/images/img5/1F1B.png)
+
+使用1F1B策略时，存在两种调度模式：非交错调度和交错式调度。
+
+![](/images/img5/1F1B_2.png)
+
+所谓交错式调度，就是在第一个batch（上图中包含4个mini-batch）的F和B还没有完成的情况下，就开始计算第二个batch的mini-batch了。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/618590870
+
+大模型训练Pipeline Parallel流水并行性能分析
+
+https://zhuanlan.zhihu.com/p/653860567
+
+流水线并行
+
 # 其他概念
 
 ## 分布式数据集
@@ -199,6 +233,14 @@ https://www.zhihu.com/question/498271491
 
 为什么说大模型训练很难？
 
+## 实战经验
+
+https://pytorch.org/blog/high-performance-llama-2/
+
+https://huggingface.co/blog/zh/bloom-inference-optimization
+
+https://huggingface.co/blog/zh/bloom-megatron-deepspeed
+
 ## TF-Replicator, GPipe, Mesh-Tensorflow
 
 TF-Replicator主要侧重于Data parallelism的库。
@@ -238,61 +280,3 @@ AI训练的最大障碍不是算力，而是“内存墙”
 https://zhuanlan.zhihu.com/p/373662730
 
 亚线性内存优化—activation checkpointing在oneflow中的实现
-
-## bucket
-
-在训练各个部分耗时中，backward(BWD)反向传播部分，通常占比比较大，相比之下，参数更新的部分（OPT）则通常是耗时比重小的部分。
-
-所以为了能够overlap通讯的耗时，Pytorch DDP选择在backward的时候进行梯度更新，并且为此引入bucket的概念。一个bucket里通常有不超过一定大小的几个layer的参数组成（默认是25MB），当一个bucket内部的梯度准备好了之后，则这个bucket就可以开始进行ring-all-reduce取平均操作，而不需要等到计算完整个模型的反向传播过后才进行一次统一的ring-all-reduce操作，相当与把多卡通讯的时间隐藏在了backward计算的耗时中，大大提升了资源利用效率。
-
-# Horovod
-
-Horovod是Uber开源的一套分布式深度学习框架。Horovod支持TensorFlow、Keras、PyTorch和Apache MXNet等后端框架。
-
-官网：
-
-https://eng.uber.com/horovod/
-
-代码：
-
-https://github.com/horovod/horovod
-
-Horovod主打Data Parallel。这在前LLM时代用的比较多，但对于LLM而言，单卡根本放不下所有的参数，Data Parallel也就用不起来了。
-
-参考：
-
-https://www.cnblogs.com/rossiXYZ/p/14856464.html
-
-深度学习分布式训练框架Horovod
-
-https://zhuanlan.zhihu.com/p/40578792
-
-Horovod-基于TensorFlow分布式深度学习框架
-
-https://zhuanlan.zhihu.com/p/158375055
-
-PyTorch单机多卡操作(分布式DataParallel，混合精度，Horovod)
-
-https://mp.weixin.qq.com/s/iQIRj7ifsOEnupYZuQsVwQ
-
-是时候放弃TensorFlow集群，拥抱Horovod了
-
-https://mp.weixin.qq.com/s/qOjGrR59Mf0Mzgh4bpDhrA
-
-详解Horovod：Uber开源的TensorFlow分布式深度学习框架
-
-https://mp.weixin.qq.com/s/yNxjJHpGns6utpBpI-0XDA
-
-分布式训练框架Horovod初步学习
-
-https://zhuanlan.zhihu.com/p/374575049
-
-一文看懂Horovod源码
-
-https://mp.weixin.qq.com/s/7c7Q0P3g3IEL_r4BU2ZxRg
-
-Horovod架构剖析——解密最成功的第三方DL分布式训练框架
-
-https://horovod.readthedocs.io/en/stable/xla.html
-
-Horovod with XLA in Tensorflow

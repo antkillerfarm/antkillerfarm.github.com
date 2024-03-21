@@ -318,44 +318,20 @@ https://pytorch.org/docs/2.0/dynamo/index.html
 
 ---
 
-自动求导：
+torch.fx参用symbolic tracer技术，通过对Python代码的符号化执行，记录计算图。
 
-`from torch._dynamo.backends.common import aot_autograd`
+缺点：
 
-切图：
+- 无法捕获dynamic control flow函数。control flow指的是while、if这种，会随着条件而导致代码走向不同分支的语句。symbolic trace只会根据当前的输入捕获相应的分支到计算图中，如果后面输入发生改变就会报错，除非重新进行捕获。
 
-`from torch.fx.passes.infra.partitioner import CapabilityBasedPartitioner`
+- 无法追踪Non-torch Functions。
+
+dynamo的设计非常巧妙，一言以蔽之：能捕获的我就捕获，捕获不了的，直接保留。
 
 ---
 
-参考：
+为什么要做模型初始化呢？因为模型规模增大，单个机器无法放下，但是又需要访问模型才能制定切分策略。制定切分策略之前，我们又需要知道这个模型有多大。这就是一个先有鸡，还是先有蛋的问题了。
 
-https://zhuanlan.zhihu.com/p/570989882
+FakeTensor应运而生，正如其名，FakeTensor什么都是Fake，它的backend是假的，dispatch是假的，storage也是假的。与之相对的，则是Meta Tensor。
 
-Pytorch编译机制的总结（来自吴芃老师）
-
-https://blog.csdn.net/qq_39967751/article/details/128372797
-
-PyTorch 2.0之Dynamo: 窥探加速背后的真相
-
-https://fkong.tech/posts/2023-05-20-dynamo/
-
-一文搞懂TorchDynamo原理
-
-## TorchInductor
-
-![](/images/img5/pytorch_compile.png)
-
-TorchDynamo偏重于Graph的捕获，而TorchInductor偏重于算子级的优化。
-
-经过TorchInductor之后的计算图将是PSC(Pure-and-Statically composed)的，更利于编译优化。
-
-参考：
-
-https://dev-discuss.pytorch.org/t/torchinductor-a-pytorch-native-compiler-with-define-by-run-ir-and-symbolic-shapes/747
-
-TorchInductor: a PyTorch-native Compiler with Define-by-Run IR and Symbolic Shapes
-
-https://zhuanlan.zhihu.com/p/595996564
-
-聊聊PyTorch 2.0(Inductor)
+DTensor：DistributedTensor
