@@ -157,6 +157,52 @@ https://zhuanlan.zhihu.com/p/653860567
 
 流水线并行
 
+## TF-Replicator, GPipe, Mesh-Tensorflow
+
+TF-Replicator主要侧重于Data parallelism的库。
+
+GPipe是一个纯model-parallelism的库。
+
+Mesh-TensorFlow是一个DSL语言，既支持Data parallelism，又支持Model parallelism，但是侵入性很强。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/113233933
+
+谷歌GPipe训练超大规模神经网络
+
+https://zhuanlan.zhihu.com/p/342223356
+
+Mesh-Tensorflow: 广义分布式
+
+https://zhuanlan.zhihu.com/p/63211072
+
+TF-Replicator, GPipe, Mesh-Tensorflow三个库对比
+
+https://mp.weixin.qq.com/s/9k6PDusoDHjmz58HAZxZcw
+
+GPipe: 小批量流水线带来的大模型训练
+
+https://mp.weixin.qq.com/s/HY2yPZ--Zm5_m3B70baWjQ
+
+谷歌开源效率怪兽GPipe，速度提升25倍，CIFAR-10精度达到99%
+
+## pytorch
+
+因为GPipe是基于TensorFlow的库，所以kakaobrain的一些工程师就用PyTorch来实现了GPipe，并且开源出来，这就是torchgpipe。
+
+代码：
+
+https://github.com/kakaobrain/torchgpipe
+
+`fairscale.nn.pipe`fork自torchgpipe，并最终进入`torch.distributed.pipeline`。
+
+参考：
+
+https://www.cnblogs.com/rossiXYZ/p/15318574.html
+
+PyTorch流水线并行实现 (1)--基础知识
+
 # 其他概念
 
 ## 分布式数据集
@@ -240,28 +286,6 @@ https://pytorch.org/blog/high-performance-llama-2/
 https://huggingface.co/blog/zh/bloom-inference-optimization
 
 https://huggingface.co/blog/zh/bloom-megatron-deepspeed
-
-## TF-Replicator, GPipe, Mesh-Tensorflow
-
-TF-Replicator主要侧重于Data parallelism的库。
-
-GPipe是一个纯model-parallelism的库。
-
-Mesh-TensorFlow是一个DSL语言，既支持Data parallelism，又支持Model parallelism，但是侵入性很强。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/113233933
-
-谷歌GPipe训练超大规模神经网络
-
-https://zhuanlan.zhihu.com/p/342223356
-
-Mesh-Tensorflow: 广义分布式
-
-https://zhuanlan.zhihu.com/p/63211072
-
-TF-Replicator, GPipe, Mesh-Tensorflow 三个库对比
 
 ## 内存墙
 
