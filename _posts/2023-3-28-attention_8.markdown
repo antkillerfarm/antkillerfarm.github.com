@@ -1,268 +1,332 @@
 ---
 layout: post
-title:  Attention（八）——Beyond Transformer, BERT进阶（1）
+title:  Attention（八）——Attention进阶, Transformer进阶
 category: Attention 
 ---
 
 * toc
 {:toc}
 
-# Large Language Model（续）
+# Attention进阶
 
-国内这一堆利润导向的“AI研究”公司，阿里的达摩院甚至还闹出过自负盈亏这种笑话，让这些公司花费大量时间和金钱去做预训练语料库，估计比让恒大还清债务还难。
+https://mp.weixin.qq.com/s/wrmjMLPuvpLIcF5VQBqZxg
 
-当初微软为了帮助OpenAI训练，在2020年给OpenAI搭建了一个有285000核CPU和10000个V100 GPU的超算环境。
+最新“注意力机制Attention”大综述论文，66页pdf
 
-Q：微软调度了1万张卡给OpenAI做训练，商汤的反馈是我们国内最多也就调动2000张卡，这个技术有难度吗？
+https://mp.weixin.qq.com/s/rrbwItXt-1EaGiqtDEGvog
 
-A：我目前了解到这一块国内目前没有哪个达到1万张量级的，不可能的，现在没有这水平。现在的确从百度视角来看，现在几千张卡在测试就不错了。从技术积累来说，涉及到集群做调度还是有一些协同性的难度。我认为包括商汤、百度，离微软的差距还是短时间内无法追上的。
+为节约而生：从标准Attention到稀疏Attention
 
-国内先搞一波小参数的大模型，PR一定要cover机器之心、新智元、量子位，然后宣称自己的130b模型超越了gpt4，并在自己的榜上发布测评结果，成功超越gpt4。最后一堆商业公司来买130b的模型，这就算是创业成功了，毕竟一套价格不菲，几千万。
+https://mp.weixin.qq.com/s/MzHmvbwxFCaFjmMkjfjeSg
 
-国内的研究者总是发布达到chatgpt4 106%能力的工作，人家一更换测评数据集就泯然众人矣了。
+遍地开花的Attention，你真的懂吗？
 
-4月份业界就有传闻说字节想花上百万美金从OpenAI挖人，结果面试官被OpenAI反挖走了。
+https://mp.weixin.qq.com/s/e_LEhLf2Rh-1zkEBmqS4nA
 
-百度的数据团队也非常强，数据采集、数据清洗都是相当专业的。单是数据增强，一个月就花几千万的OpenAI API调用费用。
+NLP这两年：15个预训练模型对比分析与剖析
 
-在初创公司已经发布的大模型中，只有Moonshot的模型水平超过了GPT-3.5。并没有直接照抄LLaMA的架构，而是做了很多工程上的优化。
+https://mp.weixin.qq.com/s/LAInpFPa-3R1rfv6idILnw
 
-![](/images/img5/LLM.webp)
+注意力机制发展如何了，如何学习它在各类任务中的应用？
 
-https://www.zhihu.com/question/608763410
+https://zhuanlan.zhihu.com/p/40920384
 
-国内AI大模型已近80个，哪个最有前途？
+真正的完全图解Seq2Seq Attention模型
 
----
+https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ
 
-很多中间任务本身是为了服务下游高级任务，被拆解出来的，结果ChatGPT直接解决高级任务，中间任务自然也就不需要了。过去那一套，POS、句法树、依存都不用做了，现在都没看太多人提了，甚至乔姆斯基体系最近又被喷了。
+深度学习注意力机制-Attention in Deep learning-附101页PPT
 
-中间层还不光是中间任务，还包括LLM中间训练部分的，比如模型结构、损失函数、优化器啊。
+https://mp.weixin.qq.com/s/FlA1YrR0sLQGJoJZnSXpRw
 
-有段时间，各种魔改Transformer、优化器、损失函数。但到现在常用模型结构和Attention Is All Your Need中也没差太多，小改了LN、activation，而优化器则主要就修复了Adam实现的bug，成了AdamW. 结构方面出于推理效率考量的用一用MQA和GQA。
+DeepMind：深度学习注意力与记忆机制，附70页ppt
 
-https://mp.weixin.qq.com/s/vfsB5t3r5dBACKQx6FshVw
+https://mp.weixin.qq.com/s/_mBa-GTdILrvluJtegz8fw
 
-选择你的道路：LLM 时代指南
+南洋理工大学：注意力神经网络，Attention Neural Networks，78页ppt
 
----
+https://mp.weixin.qq.com/s/pKxqPB9qIGmE_PslPa6EyA
 
-![](/images/img5/LLM_pipeline.jpg)
+长文详解Attention的前世今生
 
----
+https://mp.weixin.qq.com/s/2kFZAmb_WnTNYUXT_jVMqg
 
-大模型开源有几个等级，开源程度从低到高：
+Attention注意力机制的前世今生
 
-- 仅模型开源（技术报告只列举了Evaluation）。主要利好做应用的公司（继续训练和微调）和普通用户（直接部署）技术报告开源训练过程。
-- 比较详尽的描述了模型训练的关键细节。利好算法研究。训练代码开源/技术报告开源全部细节。
-- 包含了数据配比的核心关键信息。这些信息价值连城，是原本需要耗费很多GPU资源才能得到的Know-how。
-- 全量训练数据开源。其他有算力资源的团队可以基于训练数据和代码完全复现该模型。训练数据可以说是大模型团队最核心的资产。数据清洗框架和流程开源。
-- 从源头的原始数据（比如 CC 网页、PDF 电子书 等）到 可训练的数据的清洗过程也开源， 其他团队不仅可以基于此清洗框架复现数据预处理过程，还可以通过搜集更多的源（比如基于搜索引擎抓取的全量网页）来扩展自己的数据规模，得到比原始模型更强的基座模型。
+https://mp.weixin.qq.com/s/eq1iTyKguQm5t6Xoc7KUgw
 
-实际上大部分的模型开源诸如LLaMa2、Mistral、Qwen等，只做到Level-1， 像DeepSeek这样的可以做到Level-2。 而Level-4及以上的开源一个都没有。
+一文搞懂NLP中的Attention机制
 
----
+https://zhuanlan.zhihu.com/p/106662375
 
-数据泄露（data contamination）在大模型时代可以说是极难避免的。随着大模型训练数据规模的扩大，保证训练数据与常用benchmark之间没有重叠变得几乎不可能。
+More About Attention
 
-https://zhuanlan.zhihu.com/p/665426752
+https://mp.weixin.qq.com/s/MFxQSUMFNRXjdLQwzveO4w
 
-大模型是如何在评测中“作弊”的？
+深度学习中的注意力机制
 
----
+https://mp.weixin.qq.com/s/vkyPwsaxH-SvHqQx09VhVw
 
-参考：
+深度学习中的注意力机制（二）
 
-https://www.zhihu.com/question/584132646
+https://mp.weixin.qq.com/s/fbAAA7fO2voP_v-NsavQew
 
-中国的大语言模型“悟道2.0”参数是GPT-3十倍，是否中国在大语言模型训练技术上已经远远超过美国？
+深度学习中的注意力机制（三）
 
-https://zhuanlan.zhihu.com/p/463352552
+https://mp.weixin.qq.com/s/CftkSOmAx0UTtCixdxj6_A
 
-稀疏性在机器学习中的发展趋势——Sparsity，稀疏激活，高效计算，MoE，稀疏注意力机制
+深度学习中的注意力机制（完结篇）
 
-https://zhuanlan.zhihu.com/p/254821426
+https://mp.weixin.qq.com/s/Qs6tm50YvzHaJv2rh60WMw
 
-乘风破浪的PTM：两年来预训练模型的技术进展（2020年之前的主流技术）
+撩一发深度文本分类之RNN via Attention
 
-https://zhuanlan.zhihu.com/p/597586623
+https://mp.weixin.qq.com/s/MMIZGHTKM5FrvNE6ucQRYQ
 
-通向AGI之路：大型语言模型（LLM）技术精要
+33页最新《自然语言处理中神经注意力机制综述》论文
 
-https://mp.weixin.qq.com/s/eV_9Mi2879w_gfoyiSm8Ug
+https://mp.weixin.qq.com/s/Q0Ft5bWTuiZUIQSTk7X6ZQ
 
-LLM全景图（The Landscape of LLM）
+图解神经机器翻译中的注意力机制
 
-https://www.zhihu.com/question/604592470
+https://mp.weixin.qq.com/s/D7GQ8DRzss9ppP6pyAs1qA
 
-前两个月国产类ChatGPT大模型如雨后春笋，为何最近都没声音了?
+从0到1再读注意力机制
 
-https://mp.weixin.qq.com/s/oqhi58NcEVH1oVrW2p4xlQ
+https://mp.weixin.qq.com/s/K_VRt0B9-Xw7YJndmb4WZg
 
-大模型参数高效微调技术原理综述（一）-背景、参数高效微调简介
+Attention！注意力机制模型最新综述
 
-https://mp.weixin.qq.com/s/fUAUr9X3XLndfjga2QIHbA
+https://mp.weixin.qq.com/s/hzwp5oGspdtDyNBmq8sMsw
 
-大模型参数高效微调技术原理综述（二）-BitFit、Prefix Tuning、Prompt Tuning
+HAN：基于双层注意力机制的异质图深度神经网络
 
-https://mp.weixin.qq.com/s/f4l04f78F507JRrCawnV8w
+https://mp.weixin.qq.com/s/SBrLPZjx2RdBwZpPQQ5DXQ
 
-大模型参数高效微调技术原理综述（三）-P-Tuning、P-Tuning v2
+HAN：异构图注意力网络
 
-https://mp.weixin.qq.com/s/nUAcCz6mcgGuUeuTfgqmOQ
+https://mp.weixin.qq.com/s/0EDN-ILeL_diZ1G11ikwjw
 
-大模型参数高效微调技术原理综述（四）-Adapter Tuning及其变体
+T5模型：NLP Text-to-Text预训练模型超大规模探索
 
-https://mp.weixin.qq.com/s/N_N6RqKB9pjZ1tozfM5f5A
+https://zhuanlan.zhihu.com/p/89719631
 
-大模型参数高效微调技术原理综述（五）-LoRA、AdaLoRA、QLoRA
+T5: Text-to-Text Transfer Transformer阅读笔记
 
-https://mp.weixin.qq.com/s/M2nds_FJBXooi08qDU-4yA
+https://mp.weixin.qq.com/s/X1mLXPzJU7k_ANMzvVPxjA
 
-大模型参数高效微调技术原理综述（六）-MAM Adapter、UniPELT
+BERT、RoBERTa、DistilBERT与XLNet，我们到底该如何选择？
 
-https://mp.weixin.qq.com/s/P_AmTa4s8dOyc_0fZBgNPA
+https://mp.weixin.qq.com/s/GGRORF5EfJ5xzMLwAsJt5w
 
-大模型参数高效微调技术原理综述（七）-最佳实践、总结
+从词袋到Transfomer，NLP十年突破史
 
-https://zhuanlan.zhihu.com/p/618695885
+https://zhuanlan.zhihu.com/p/125145283
 
-LLaMA, Alpaca, ColossalChat系列模型研究
+Rethink深度学习中的Attention机制
 
-https://zhuanlan.zhihu.com/p/642412124
+https://mp.weixin.qq.com/s/fxEg8UOa3MeJ6qx5SjEHog
 
-LLM的推理优化技术纵览
+NLP领域中各式各样Attention知识系统性的梳理和总结
 
-https://zhuanlan.zhihu.com/p/638809556
+https://mp.weixin.qq.com/s/_5YaZdYa8bTFiAzHyrMFBg
 
-大模型高效微调综述上：Adapter Tuning、AdaMix、PET、Prefix-Tuning、Prompt Tuning、P-tuning、P-tuning v2
+理解卷积神经网络中的自注意力机制
 
-https://zhuanlan.zhihu.com/p/651564985
+https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
 
-主流大语言模型从预训练到微调的技术原理
+阿里北大提出新attention建模框架，一个模型预测多种行为
 
-# Beyond Transformer
+https://mp.weixin.qq.com/s/Yq3S4WrsQRQC06GvRgGjTQ
 
-https://zhuanlan.zhihu.com/p/605425639
+打入神经网络思维内部
 
-RWKV 14B对比GLM 130B和NeoX 20B，展示RWKV的性能
+https://mp.weixin.qq.com/s/MJ1578NdTKbjU-j3Uuo9Ww
 
-代码：
+基于文档级问答任务的新注意力模型
 
-https://github.com/BlinkDL/ChatRWKV
+https://mp.weixin.qq.com/s/_3pA8FZwzegSpyz_cK63BQ
 
-RWKV没有使用attention，而是号称100% RNN。
+Self-Attention GAN中的self-attention机制
 
-RNN-based没有attention之类机制的模型是怎么获得long memory的能力的啊？
+https://mp.weixin.qq.com/s/l4HN0_VzaiO-DwtNp9cLVA
 
-这个形式就是Transformers are RNNs的形式，只不过把Q换成了positional invariant的time weighting。最近很多work都显示Attention里的Q其实没啥用，换成一个跟着相对位置exponential decay的term就行了。
+循环注意力区域实现图像多标签分类
 
----
+https://mp.weixin.qq.com/s/zhZLK4pgJzQXN49YkYnSjA
 
-https://blog.csdn.net/v_JULY_v/article/details/134923301
+自适应注意力机制在Image Caption中的应用
 
-一文通透想颠覆Transformer的Mamba：从SSM、S4到mamba、线性transformer(含RWKV解析)
+https://mp.weixin.qq.com/s/uvr-G5-_lKpyfyn5g7ES0w
 
-# BERT进阶
+基于注意力机制，机器之心带你理解与训练神经机器翻译系统
 
-## UniLM
+https://mp.weixin.qq.com/s/ANpBFnsLXTIiW6WHzGrv2g
 
-![](/images/img5/UniLM.jpg)
+自注意力机制学习句子embedding
 
-|  | Encoder注意力 | Decoder注意力 | 是否共享参数 |
-|:--:|:--:|:--:|:--:|
-| GPT | 单向 | 单向 | 是 |
-| UniLM | 双向 | 单向 | 是 |
-| T5 | 双向 | 单向 | 否 |
+https://mp.weixin.qq.com/s/49fQX8yiOIwDyof3PD01rA
 
-https://mp.weixin.qq.com/s/m_FU4NmjUsvxusRidDb-Xg
+CMU&谷歌大脑提出新型问答模型QANet：仅使用卷积和自注意力，性能大大优于RNN
 
-UniLM:一种既能阅读又能自动生成的预训练模型
+https://mp.weixin.qq.com/s/c64XucML13OwI26_UE9xDQ
 
-https://mp.weixin.qq.com/s/yyUPqxpfBwUSRbwM6SSAcQ
+滴滴披露语音识别新进展：基于Attention显著提升中文识别率
 
-UniLM论文阅读笔记
+https://mp.weixin.qq.com/s/7OYY3L7gL4wVv_EjoosOHA
 
-https://mp.weixin.qq.com/s/RjeuHXa8O3MzSpTOuOHMkQ
+如何增强Attention Model的推理能力
 
-站在BERT肩膀上的NLP新秀们：XLMs、MASS和UNILM
+https://mp.weixin.qq.com/s/9Kt6_DfeYRnhsb10aCSFGw
 
-https://mp.weixin.qq.com/s/UEBKSKEkZTbpR49_Rh50Jg
+FAGAN：完全注意力机制（Full Attention）GAN，Self-attention+GAN
 
-微软统一预训练语言模型UniLM 2.0解读
+https://mp.weixin.qq.com/s/lZOIK5BRXZrmL_Z9crl6sA
 
-## Electra
+机器翻译新突破！“普适注意力”模型：概念简单参数少，性能大增
 
-https://mp.weixin.qq.com/s/dFT7KKMH56unkOEA9H4Kuw
+https://mp.weixin.qq.com/s/jRfOzKO6OlQLokIzipbqUQ
 
-吊打BERT Large的小型预训练模型ELECTRA终于开源！真相却让人...
+为什么使用自注意力机制？
 
-https://mp.weixin.qq.com/s/6i9eQISKsWU0jawKzWg8nQ
+https://zhuanlan.zhihu.com/p/339123850
 
-超越bert，最新预训练模型ELECTRA论文阅读笔记
+关于attention机制的一些细节的思考
 
-https://mp.weixin.qq.com/s/lkB1xn6G2P5Nivj7DcYg5w
+https://mp.weixin.qq.com/s/n4mzHSweOT-vDWBGs0XFbw
 
-Electra: 判别还是生成，这是一个选择
+卷积神经网络中的自我注意
 
-## Embedding
+https://mp.weixin.qq.com/s/h7sLwVXb_UI8jvJU-oe3Cg
 
-预训练刚兴起时，在语言模型的输出端重用Embedding权重是很常见的操作，比如BERT、第一版的T5、早期的GPT，都使用了这个操作，这是因为当模型主干部分不大且词表很大时，Embedding层的参数量很可观，如果输出端再新增一个独立的同样大小的权重矩阵的话，会导致显存消耗的激增。不过随着模型参数规模的增大，Embedding层的占比相对变小了，加之《Rethinking embedding coupling in pre-trained language models》等研究表明共享Embedding可能会有些负面影响，所以现在共享Embedding的做法已经越来越少了。
+Google AI提出“透明注意力”机制，实现更深层NMT模型
 
-https://kexue.fm/archives/9698
+https://mp.weixin.qq.com/s/1LYz5SH5rVnPPJ0tZvRQAA
 
-语言模型输出端共享Embedding的重新探索
+从各种注意力机制窥探深度学习在NLP中的神威
 
-## 外推性
+https://zhuanlan.zhihu.com/p/33078323
 
-对于Transformer模型来说，其长度的外推性是我们一直在追求的良好性质，它是指我们在短序列上训练的模型，能否不用微调地用到长序列上并依然保持不错的效果。
+数字串识别：基于位置的硬性注意力机制
 
-自从Transform被提出以来，一个基本问题还没有被解决，一个模型如何在推断时对训练期间没有见过的更长序列进行外推。众所周知，Bert支持的最长句子长度是512，那为什么Bert只能支持512的句子长度呢？
+https://mp.weixin.qq.com/s/-gAISWjSiG6ccPuOPAEg3A
 
-我们看一下BertEmbeddings的初始化，我们可以看到position_ids，被初始化成0-511，这个也就是BERT处理文本最大长度是512的原因，这里Bert使用的是绝对位置编码。
+五张动图，看清神经机器翻译里的Attention！
 
-参考：
+https://mp.weixin.qq.com/s/aixpv9t1PLPRWUP6PvZ0EQ
 
-https://spaces.ac.cn/archives/9431
+用自注意力增强卷积：这是新老两代神经网络的对话
 
-长度外推性与局部注意力
+https://mp.weixin.qq.com/s/i3Xd_IB7R0-QPztn-pgpng
 
-https://zhuanlan.zhihu.com/p/656684326
+遍地开花的Attention，你真的懂吗？
 
-大模型位置编码-ALiBi位置编码
+https://zhuanlan.zhihu.com/p/151640509
 
-## RoPE
+注意力机制在推荐系统中的应用
 
-Rotary Position Embedding是苏剑林的作品，并被后来流行的LLAMA等大模型所采用。
+https://mp.weixin.qq.com/s/-SU5cNbklI31WLmTawZJIQ
 
-参考：
+自注意模型学不好？这个方法帮你解决！
 
-https://spaces.ac.cn/archives/8265
+https://mp.weixin.qq.com/s/K5EbO0djcXHN4K5LQiMh5g
 
-博采众长的旋转式位置编码
+Triplet Attention机制让Channel和Spatial交互更加丰富
 
-## 参考
+https://mp.weixin.qq.com/s/C4f0N_bVWU9YPY34t-HAEA
 
-https://www.zhihu.com/question/298203515
+UNC&Adobe提出模块化注意力模型MAttNet，解决指示表达的理解问题
 
-如何评价BERT模型？
+https://mp.weixin.qq.com/s/V3brXuey7Gear0f_KAdq2A
 
-https://mp.weixin.qq.com/s/Fao3i99kZ1a6aa3UhAYKhA
+基于注意力机制的交易上下文感知推荐，悉尼科技大学和电子科技大学最新工作
 
-全面超越人类！Google称霸SQuAD，BERT横扫11大NLP测试
+https://mp.weixin.qq.com/s/2gxp7A38epQWoy7wK8Nl6A
 
-https://mp.weixin.qq.com/s/INDOBcpg5p7vtPBChAIjAA
+谷歌翻译最新突破，“关注机制”让机器读懂词与词的联系
 
-最强预训练模型BERT的Pytorch实现
+https://zhuanlan.zhihu.com/p/25928551
 
-https://mp.weixin.qq.com/s/SZMYj4rMneR3OWST007H-Q
+用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践
 
-解读谷歌最强NLP模型BERT：模型、数据和训练
+# Transformer进阶
 
-https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
+https://mp.weixin.qq.com/s/MjCIAlDWyHPLj_sGSPc4rg
 
-详细解读谷歌新模型BERT为什么嗨翻AI圈
+复旦邱锡鹏组最新综述：A Survey of Transformers
 
-https://zhuanlan.zhihu.com/p/66053631
+https://mp.weixin.qq.com/s/-Y7Qy-5aJNJ5bx8QJf3k2w
 
-BERT
+Transformer及其变种
+
+https://mp.weixin.qq.com/s/nSokDcIkOSSrRnhHCuu4Mg
+
+Transformer家族简史（PART I）
+
+https://mp.weixin.qq.com/s/p919Kfv-1GSDM6u6FpnBsA
+
+Transformer家族简史（PART II）
+
+https://mp.weixin.qq.com/s/M0zLw9hA5xzontKB7Zj23Q
+
+Memory Transformer，一种简单明了的Transformer改造方案
+
+https://mp.weixin.qq.com/s/FJeZ8X9gtyciqCTs9zvlLA
+
+Transformer是CNN是GNN是RNN，Attention is all you need！
+
+https://mp.weixin.qq.com/s/d1qqRw7sWyLdoyfnqMBdJQ
+
+深度自适应Transformer
+
+https://mp.weixin.qq.com/s/UowNtBm_hqnes-Lz3POXGQ
+
+Transformers中的Beam Search高效实现
+
+https://mp.weixin.qq.com/s/KdKbOrjeeo7Db095V7mSFA
+
+Transformer之自适应宽度注意力
+
+https://mp.weixin.qq.com/s/EuCCeWz_rkktwLuFJ75BXA
+
+Transformer+AutoML: 遗传搜索在序列式任务上的应用
+
+https://mp.weixin.qq.com/s/OEpLpWzkdfFUQf4cKNuG4w
+
+Performer:基于正交随机特征的快速注意力计算
+
+https://mp.weixin.qq.com/s/eWQLkiJ_XIo7LpTUE9c0qA
+
+Transformer中的相对位置编码
+
+https://mp.weixin.qq.com/s/mZBHjuHJG9Ffd0nSoJ2ISQ
+
+什么是Transformer位置编码？
+
+https://mp.weixin.qq.com/s/V0NAOgluyZN9P8iuhMKRwQ
+
+Transformer为啥在NER上表现不好
+
+https://mp.weixin.qq.com/s/ANFSNW1-mcjPqjcroNHeZQ
+
+RealFormer：Real简单，Real有效
+
+https://mp.weixin.qq.com/s/u-Twg6Cj6VfL6m4K0seBlw
+
+谷歌研究院出品：高效Transformer模型最新综述
+
+https://mp.weixin.qq.com/s/2S_2Z5-ioCNxH1kqFcUuQA
+
+竞赛中的Transformer家族
+
+https://mp.weixin.qq.com/s/mc6M2vEcPG6oMfKe3_apzQ
+
+Transformer变体层出不穷，它们都长什么样？
+
+https://mp.weixin.qq.com/s/IWUxVzpdGIX1Oxn4KxjhHA
+
+一个Transformer，很强；两个，更强？（TransGAN）
+
+https://mp.weixin.qq.com/s/IWUxVzpdGIX1Oxn4KxjhHA
+
+TransGAN：两个Transformer可以构造一个强大的GAN

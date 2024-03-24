@@ -1,11 +1,31 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（五）——LLM Inference, LLAMA
+title:  并行 & 框架 & 优化（五）——KV Cache, LLM Inference
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
+
+# KV Cache
+
+![](/images/img5/KV_Cache.png)
+
+对于每个输入的prompt，在计算第一个token输出的时候，每个token的attention肯定是都要从头计算。但是在后续token的生成中，都需要计算self-attention，也就是输入prompt以及前面输出的token的attention。这是就需要用到前面每一个token的K和V，由于每一层的参数矩阵是不变的，此时只有刚生成的那个token的K和V需要从头计算，输入prompt和之前生成的token的K和V其实是跟上一轮一样的。
+
+我们可以把每一层的K、V矩阵缓存起来，这就是所谓的KV Cache。
+
+![](/images/img5/QKV_cache.png)
+
+![](/images/img5/KV_Cache_2.png)
+
+https://zhuanlan.zhihu.com/p/630832593
+
+大模型推理性能优化之KV Cache解读
+
+https://zhuanlan.zhihu.com/p/662498827
+
+大模型推理加速：看图学KV Cache
 
 # MQA & GQA
 
@@ -33,6 +53,10 @@ https://zhuanlan.zhihu.com/p/671347964
 
 大模型(LLM)推理框架汇总
 
+https://zhuanlan.zhihu.com/p/642412124
+
+LLM的推理优化技术纵览
+
 ## TensorRT-LLM
 
 TensorRT-LLM是NVIDIA推出的基于TensorRT的LLM推理工具。
@@ -46,54 +70,6 @@ https://github.com/NVIDIA/TensorRT-LLM/
 https://docs.vllm.ai/en/latest/
 
 Easy, fast, and cheap LLM serving for everyone
-
-# LLAMA
-
-代码：
-
-https://github.com/facebookresearch/llama
-
-有用的LLAMA模型：
-
-https://huggingface.co/TheBloke/Llama-2-7B-Chat-GPTQ
-
-https://huggingface.co/Trelis/Llama-2-7b-chat-hf-sharded-bf16
-
-Inference：
-
-https://clay-atlas.com/blog/2023/09/21/huggingface-transformers-streaming/
-
-使用HuggingFace Transformer中的TextStreamer和TextIteratorStreamer來實現串流式（stream）輸出生成token
-
-各类开源LLM打榜：
-
-https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard
-
----
-
-参考：
-
-https://github.com/jacoblee93/fully-local-pdf-chatbot
-
-一个本地版本的阅读PDF的chatbot
-
-https://s-tm.cn/2023/06/10/SaveModelSharding/
-
-使用HuggingFace transformers进行模型分片存储
-
-## GEMMA
-
-官网：
-
-https://www.kaggle.com/models/google/gemma
-
-## Mixtral
-
-![](/images/img5/Mixtral.png)
-
-https://zhuanlan.zhihu.com/p/676010571
-
-欢迎Mixtral-当前Hugging Face上最先进的MoE模型
 
 # 工具
 
@@ -354,51 +330,3 @@ https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
 https://mp.weixin.qq.com/s/kOCftzSbHe2mvDmlRp-ihA
 
 Jeff Dean：AI对计算机系统设计的影响
-
-https://mp.weixin.qq.com/s/XjNPaL6PC9LHX1PEGn5UZg
-
-微软实时AI系统“脑波计划”有多牛？看完秒懂！
-
-https://mp.weixin.qq.com/s/OkqUulFYHQSdgAbf9Fi9LA
-
-CoCoA：大规模机器学习的分布式优化通用框架
-
-https://mp.weixin.qq.com/s/ToIDncp9dS_qk47PsdZm5A
-
-杜克大学：分布式深度学习训练算法TernGrad
-
-https://mp.weixin.qq.com/s/rhtrN2qDspGkpJYDAVSX7w
-
-UC Berkeley展示全新并行处理方法
-
-https://mp.weixin.qq.com/s/ASqpPSIgW_bcFPBfRYz7Xg
-
-哈佛大学提出在云、边缘与终端设备上的分布式深度神经网络DDNN
-
-http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
-
-《Large Scale Distributed Deep Networks》中译文
-
-https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
-
-Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
-
-https://zhuanlan.zhihu.com/p/529388795
-
-训练千亿参数大模型，离不开四种GPU并行策略
-
-https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
-
-百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
-
-https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
-
-分布式深度学习原理、算法详细介绍
-
-https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
-
-苹果发布Turi Create机器学习框架，5行代码开发图像识别
-
-https://mp.weixin.qq.com/s/jOVUPhrCBI9W9vPvD9eKYg
-
-UC Berkeley提出新型分布式框架Ray：实时动态学习的开端

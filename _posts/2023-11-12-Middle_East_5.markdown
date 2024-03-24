@@ -236,3 +236,7 @@ https://zhuanlan.zhihu.com/p/497104871
 https://www.zhihu.com/question/645492429
 
 “红海变死海”伤及埃及经济，埃及总统称苏伊士运河收入减少近半，这意味着什么？此事还将带来哪些外溢影响？
+
+https://zhuanlan.zhihu.com/p/143959496
+
+迪拜相框（Dubai Frame）

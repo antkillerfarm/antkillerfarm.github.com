@@ -211,6 +211,10 @@ Flink和Iceberg如何解决数据入湖面临的挑战
 
 ## LSM (Log Structured Merge)
 
+数据库的存储格式，有用无序的Heap表，堆表。也有用有序表。堆表吗，数据来了随便一放，没有顺序、没有规律，想怎么放就怎么放，乱七八糟，估称堆表。有序表，比如Skiplist算法等。数据以Key为准排个序，码放的整整齐齐。进入存储系统时，还可以再去个重什么的，也就是SSTable。
+
+---
+
 十年前，谷歌发表了 “BigTable” 的论文，论文中很多很酷的方面，其中之一就是它所使用的文件组织方式，这个方法更一般的名字叫Log Structured-Merge Tree。其核心思想就是放弃部分读能力，换取写入的最大化能力。
 
 http://www.open-open.com/lib/view/open1424916275249.html
@@ -302,17 +306,3 @@ https://zhuanlan.zhihu.com/p/32924680
 https://www.zhihu.com/question/20120283
 
 为什么说MySQL Cluster是shared-nothing架构的？如何理解shared-nothing？
-
-## 参考
-
-https://mp.weixin.qq.com/s/ActS6PxbtZGqPb0jOn0iFg
-
-不懂数据库索引的底层原理？那是因为你心里没点b树
-
-http://www.ruanyifeng.com/blog/2014/07/database_implementation.html
-
-数据库的最简单实现
-
-https://blog.csdn.net/zhengzhb/article/details/8590390
-
-SQL查找删除重复行

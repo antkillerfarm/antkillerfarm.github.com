@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NVLink, AMD, GPU通信技术
+title: NVLink, GPU通信技术
 category: Chip 
 ---
 
@@ -135,6 +135,14 @@ GPU存储资源：寄存器，本地内存，共享内存，缓存，显存等�
 
 当然，单纯堆料这种没有技术含量的活，对于老黄没有任何难度。老黄反手推出H200，单卡141GB HBM3e。
 
+| 板卡 | 内存 |
+|:--:|:--:|
+| H100 | 80GB HBM2 |
+| 升腾910B | 94GB HBM2 |
+| MI300X | 192GB HBM3 |
+| H200 | 144GB（24GBx6） HBM3e |
+| GB200 | 192GB（24GBx8） HBM3e |
+
 ## NCCL
 
 NCCL是Nvidia Collective multi-GPU Communication Library的简称，它是一个实现多GPU的collective communication通信库，可以在PCIe、Nvlink、InfiniBand上实现较高的通信速度。
@@ -178,122 +186,6 @@ https://zhuanlan.zhihu.com/p/67785062
 https://zhuanlan.zhihu.com/p/680702927
 
 NVLink发展概述
-
-# AMD
-
-## Matrix Core
-
-对标英伟达Tensor Core，AMD推出Matrix Core。
-
-## 高速互联
-
-对标NVLink，AMD推出了：
-
-GMI：Global Memory Interconnect
-
-AMD Infinity Fabric Link
-
-其实Intel也有一个叫做Xelink的东西。
-
-IBM BlueLink
-
----
-
-HCCS，即Huawei Cache Coherence System，华为自研，叫“华为Cache一致性总线”。
-
-英伟达的NVLink可以实现8颗芯片互联，而HCCS目前仅支持4路互联。
-
-## HIP
-
-![](/images/img4/latestGPU.png)
-
-HIP：Heterogeneous Interface for Portability。
-
-HIP是AMD提出的C++接口，号称能兼容CUDA和自家的ROCm。
-
-https://zhuanlan.zhihu.com/p/545296023
-
-写给CUDA开发者AMD ROCm & Intel oneAPI开发贴士
-
-https://streamhpc.com/blog/2016-04-05/comparing-syntax-cuda-opencl-hip/
-
-Comparing Syntax for CUDA, OpenCL and HiP
-
-## Composable Kernel
-
-Composable Kernel（CK）库旨在提供一套在AMD GPU上算子融合的后端方案。
-
-https://www.sohu.com/a/603796560_129720
-
-AMD Composable Kernel: 定制化算子融合，大幅提升AI端到端性能
-
-## AITemplate
-
-AITemplate首先在Python层寻找最优的kernel配置，生成Jinja2 template，再生成C++ template：
-
-- NVIDIA GPU：基于CUTLASS的GPU Tensor Core C++ template；
-
-- AMD GPU：基于CK（Composable Kernel）的Matrix Core C++ Template。
-
-官网：
-
-https://github.com/facebookincubator/AITemplate
-
-参考：
-
-https://www.zhihu.com/question/557608132
-
-如何看待Meta发布的全新推理引擎AITemplate？
-
-## AI服务器
-
-AMD Instinct系列，大致对标NVIDIA DGX。
-
-官网：
-
-https://www.amd.com/zh-hans/graphics/instinct-server-accelerators
-
-![](/images/img5/AMD.jpg)
-
----
-
-https://zhuanlan.zhihu.com/p/434686566
-
-AMD CDNA2架构（MI200）
-
-https://www.zhihu.com/question/606505567
-
-如何看待AMD发布Instinct MI300X GPU芯片？是否在大模型时代威胁Nvidia地位?
-
-## 其他对标术语
-
-| AMD | NVIDIA |
-|:--:|:--:|
-| GCN wavefront(64 threads wide) | CUDA warp(32 threads wide) |
-
-## 参考
-
-![](/images/img5/AMD.png)
-
-罗家是台南水仙宫一带的世家。
-
----
-
-以前的算法比较简单，数据吞吐量小，AMD的短流水线渲染单元数量多所以效率高。到了Ethash这类重IO算法主流的年代，其实A卡效率还略有优势，但是没以前那么夸张，所以N卡也被拉出来挖。
-
----
-
-A卡的新驱动对于老游戏的支持有些差，解决办法：删除游戏目录下的dbghelp.dll文件。
-
----
-
-https://www.zhihu.com/question/593343983
-
-截至2023年4月，用AMD显卡做机器学习怎么样？
-
-https://zhuanlan.zhihu.com/p/651797296
-
-通过“最差实践”实验探索AMD GPU调度细节
 
 # GPU通信技术
 
@@ -356,3 +248,29 @@ InfiniBand 与Intel Omni-Path Architecture
 https://zhuanlan.zhihu.com/p/580035183
 
 RoCE vs Infiniband vs TCP/IP
+
+# 国产半导体+
+
+飞腾找台湾世芯代理设计，但因飞腾参与超算建设上了美国黑名单，台湾世芯宁可承受损失也不再继续提供设计服务。
+
+飞腾的通用CPU单核性能变化像是过山车，因为它的FT-1000和FT-1500是基于SUN开源的UltraSPARC T2核心，2007年时的UltraSPARC T2可与Intel至强一较高下。飞腾在投靠ARM之后，CPU性能反而降低了。
+
+飞腾多核互联和多路互联的技术较强，只是在ARM推出原生的互联方案之后，飞腾的研究成果也成了鸡肋。
+
+## Russia CPU
+
+俄罗斯设计通用CPU的企业主要有两家，一家是莫斯科SPARC技术中心(MCST)，另一家是贝加尔电子公司(Baikal Electronics)。
+
+莫斯科SPARC技术中心是俄罗斯自主研发CPU的代表，研发了Elbrus系列产品。
+
+贝加尔电子公司推出的Baikal系列CPU都是外购的CPU核心设计，再自行与其它的外购IP进行集成，与我们的国产手机CPU是相同的路线。
+
+https://mp.weixin.qq.com/s/Ud4f5L2tYNbP1oURVBszag
+
+俄罗斯自研Elbrus CPU参数曝光，CEO年近九旬仍未退休
+
+>Boris Babayan，1933年生，俄罗斯科学院院士，Intel院士。俄罗斯CPU之父。Elbrus系列超算和通用CPU的主要研发者，1978年他率领团队研发出世界第一台超标量计算机Elbrus-1，整整领先西方世界十三年。
+
+https://zhuanlan.zhihu.com/p/549196030
+
+甭怂，奣烎，国产通用CPU比俄罗斯勥

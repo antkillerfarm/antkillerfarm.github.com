@@ -185,6 +185,54 @@ U²-Net：使用显著性物体检测来生成真实的铅笔肖像画
 
 # 并行 & 框架 & 优化+
 
+https://mp.weixin.qq.com/s/XjNPaL6PC9LHX1PEGn5UZg
+
+微软实时AI系统“脑波计划”有多牛？看完秒懂！
+
+https://mp.weixin.qq.com/s/OkqUulFYHQSdgAbf9Fi9LA
+
+CoCoA：大规模机器学习的分布式优化通用框架
+
+https://mp.weixin.qq.com/s/ToIDncp9dS_qk47PsdZm5A
+
+杜克大学：分布式深度学习训练算法TernGrad
+
+https://mp.weixin.qq.com/s/rhtrN2qDspGkpJYDAVSX7w
+
+UC Berkeley展示全新并行处理方法
+
+https://mp.weixin.qq.com/s/ASqpPSIgW_bcFPBfRYz7Xg
+
+哈佛大学提出在云、边缘与终端设备上的分布式深度神经网络DDNN
+
+http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
+
+《Large Scale Distributed Deep Networks》中译文
+
+https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
+
+Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
+
+https://zhuanlan.zhihu.com/p/529388795
+
+训练千亿参数大模型，离不开四种GPU并行策略
+
+https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
+
+百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
+
+https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
+
+分布式深度学习原理、算法详细介绍
+
+https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
+
+苹果发布Turi Create机器学习框架，5行代码开发图像识别
+
+https://mp.weixin.qq.com/s/jOVUPhrCBI9W9vPvD9eKYg
+
+UC Berkeley提出新型分布式框架Ray：实时动态学习的开端
+
 https://mp.weixin.qq.com/s/r951Iasr4dke6MPHsUO0TA
 
 开源DAWN，Stanford的又一力作
@@ -232,14 +280,6 @@ https://zhuanlan.zhihu.com/p/522759214
 https://mp.weixin.qq.com/s/_o7fzCOeuZE6qFc5gHb26g
 
 美团视觉GPU推理服务部署架构优化实践
-
-https://zhuanlan.zhihu.com/p/611325149
-
-大型语言模型(LLM)训练指南
-
-https://zhuanlan.zhihu.com/p/629589593
-
-LLM应用开发全栈指南
 
 https://mp.weixin.qq.com/s/UxN9ZRmKLN30s7uPqMpHPQ
 

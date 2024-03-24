@@ -183,7 +183,7 @@ https://www.cnblogs.com/Carrawayang/p/14691607.html
 
 上文的中文版
 
-http://www.cs.cmu.edu/~418/
+http://15418.courses.cs.cmu.edu/spring2013/
 
 15-418/15-618: Parallel Computer Architecture and Programming
 

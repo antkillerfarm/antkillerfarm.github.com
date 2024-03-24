@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度语音识别（四）——语音合成参考资源
+title:  深度语音识别（四）——语音合成参考资源, AMD
 category: speech 
 ---
 
@@ -243,22 +243,118 @@ https://mp.weixin.qq.com/s/FYjXOl7dk3uQriGBuny8DA
 
 志玲姐姐的导航声音是如何产生的？？
 
-# 国产半导体+
+# AMD
 
-## Russia CPU
+## Matrix Core
 
-俄罗斯设计通用CPU的企业主要有两家，一家是莫斯科SPARC技术中心(MCST)，另一家是贝加尔电子公司(Baikal Electronics)。
+对标英伟达Tensor Core，AMD推出Matrix Core。
 
-莫斯科SPARC技术中心是俄罗斯自主研发CPU的代表，研发了Elbrus系列产品。
+## 高速互联
 
-贝加尔电子公司推出的Baikal系列CPU都是外购的CPU核心设计，再自行与其它的外购IP进行集成，与我们的国产手机CPU是相同的路线。
+对标NVLink，AMD推出了：
 
-https://mp.weixin.qq.com/s/Ud4f5L2tYNbP1oURVBszag
+GMI：Global Memory Interconnect
 
-俄罗斯自研Elbrus CPU参数曝光，CEO年近九旬仍未退休
+AMD Infinity Fabric Link
 
->Boris Babayan，1933年生，俄罗斯科学院院士，Intel院士。俄罗斯CPU之父。Elbrus系列超算和通用CPU的主要研发者，1978年他率领团队研发出世界第一台超标量计算机Elbrus-1，整整领先西方世界十三年。
+其实Intel也有一个叫做Xelink的东西。
 
-https://zhuanlan.zhihu.com/p/549196030
+IBM BlueLink
 
-甭怂，奣烎，国产通用CPU比俄罗斯勥
+---
+
+HCCS，即Huawei Cache Coherence System，华为自研，叫“华为Cache一致性总线”。
+
+英伟达的NVLink可以实现8颗芯片互联，而HCCS目前仅支持4路互联。
+
+## HIP
+
+![](/images/img4/latestGPU.png)
+
+HIP：Heterogeneous Interface for Portability。
+
+HIP是AMD提出的C++接口，号称能兼容CUDA和自家的ROCm。
+
+https://zhuanlan.zhihu.com/p/545296023
+
+写给CUDA开发者AMD ROCm & Intel oneAPI开发贴士
+
+https://streamhpc.com/blog/2016-04-05/comparing-syntax-cuda-opencl-hip/
+
+Comparing Syntax for CUDA, OpenCL and HiP
+
+## Composable Kernel
+
+Composable Kernel（CK）库旨在提供一套在AMD GPU上算子融合的后端方案。
+
+https://www.sohu.com/a/603796560_129720
+
+AMD Composable Kernel: 定制化算子融合，大幅提升AI端到端性能
+
+## AITemplate
+
+AITemplate首先在Python层寻找最优的kernel配置，生成Jinja2 template，再生成C++ template：
+
+- NVIDIA GPU：基于CUTLASS的GPU Tensor Core C++ template；
+
+- AMD GPU：基于CK（Composable Kernel）的Matrix Core C++ Template。
+
+官网：
+
+https://github.com/facebookincubator/AITemplate
+
+参考：
+
+https://www.zhihu.com/question/557608132
+
+如何看待Meta发布的全新推理引擎AITemplate？
+
+## AI服务器
+
+AMD Instinct系列，大致对标NVIDIA DGX。
+
+官网：
+
+https://www.amd.com/zh-hans/graphics/instinct-server-accelerators
+
+![](/images/img5/AMD.jpg)
+
+---
+
+https://zhuanlan.zhihu.com/p/434686566
+
+AMD CDNA2架构（MI200）
+
+https://www.zhihu.com/question/606505567
+
+如何看待AMD发布Instinct MI300X GPU芯片？是否在大模型时代威胁Nvidia地位?
+
+## 其他对标术语
+
+| AMD | NVIDIA |
+|:--:|:--:|
+| GCN wavefront(64 threads wide) | CUDA warp(32 threads wide) |
+
+## 参考
+
+![](/images/img5/AMD.png)
+
+罗家是台南水仙宫一带的世家。
+
+---
+
+以前的算法比较简单，数据吞吐量小，AMD的短流水线渲染单元数量多所以效率高。到了Ethash这类重IO算法主流的年代，其实A卡效率还略有优势，但是没以前那么夸张，所以N卡也被拉出来挖。
+
+---
+
+A卡的新驱动对于老游戏的支持有些差，解决办法：删除游戏目录下的dbghelp.dll文件。
+
+---
+
+https://www.zhihu.com/question/593343983
+
+截至2023年4月，用AMD显卡做机器学习怎么样？
+
+https://zhuanlan.zhihu.com/p/651797296
+
+通过“最差实践”实验探索AMD GPU调度细节

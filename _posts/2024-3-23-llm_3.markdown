@@ -1,0 +1,124 @@
+---
+layout: post
+title:  Large Language Model（三）——LLAMA, Chinchilla Law
+category: Attention 
+---
+
+* toc
+{:toc}
+
+# LLM大乱战（续）
+
+https://mp.weixin.qq.com/s/oqhi58NcEVH1oVrW2p4xlQ
+
+大模型参数高效微调技术原理综述（一）-背景、参数高效微调简介
+
+https://mp.weixin.qq.com/s/fUAUr9X3XLndfjga2QIHbA
+
+大模型参数高效微调技术原理综述（二）-BitFit、Prefix Tuning、Prompt Tuning
+
+https://mp.weixin.qq.com/s/f4l04f78F507JRrCawnV8w
+
+大模型参数高效微调技术原理综述（三）-P-Tuning、P-Tuning v2
+
+https://mp.weixin.qq.com/s/nUAcCz6mcgGuUeuTfgqmOQ
+
+大模型参数高效微调技术原理综述（四）-Adapter Tuning及其变体
+
+https://mp.weixin.qq.com/s/N_N6RqKB9pjZ1tozfM5f5A
+
+大模型参数高效微调技术原理综述（五）-LoRA、AdaLoRA、QLoRA
+
+https://mp.weixin.qq.com/s/M2nds_FJBXooi08qDU-4yA
+
+大模型参数高效微调技术原理综述（六）-MAM Adapter、UniPELT
+
+https://mp.weixin.qq.com/s/P_AmTa4s8dOyc_0fZBgNPA
+
+大模型参数高效微调技术原理综述（七）-最佳实践、总结
+
+https://zhuanlan.zhihu.com/p/618695885
+
+LLaMA, Alpaca, ColossalChat系列模型研究
+
+https://zhuanlan.zhihu.com/p/638809556
+
+大模型高效微调综述上：Adapter Tuning、AdaMix、PET、Prefix-Tuning、Prompt Tuning、P-tuning、P-tuning v2
+
+https://zhuanlan.zhihu.com/p/651564985
+
+主流大语言模型从预训练到微调的技术原理
+
+# LLAMA
+
+代码：
+
+https://github.com/facebookresearch/llama
+
+有用的LLAMA模型：
+
+https://huggingface.co/TheBloke/Llama-2-7B-Chat-GPTQ
+
+https://huggingface.co/Trelis/Llama-2-7b-chat-hf-sharded-bf16
+
+Inference：
+
+https://clay-atlas.com/blog/2023/09/21/huggingface-transformers-streaming/
+
+使用HuggingFace Transformer中的TextStreamer和TextIteratorStreamer來實現串流式（stream）輸出生成token
+
+各类开源LLM打榜：
+
+https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard
+
+---
+
+参考：
+
+https://github.com/jacoblee93/fully-local-pdf-chatbot
+
+一个本地版本的阅读PDF的chatbot
+
+https://s-tm.cn/2023/06/10/SaveModelSharding/
+
+使用HuggingFace transformers进行模型分片存储
+
+## GEMMA
+
+官网：
+
+https://www.kaggle.com/models/google/gemma
+
+## Mixtral
+
+![](/images/img5/Mixtral.png)
+
+https://zhuanlan.zhihu.com/p/676010571
+
+欢迎Mixtral-当前Hugging Face上最先进的MoE模型
+
+# Chinchilla Law
+
+DeepMind研究了在给定算力预算下训练Transformer语言模型的最佳模型大小和tokens数量。
+
+在LLaMA-1预训练时候，从各种开源数据集，凑够了1.4T的tokens。按照Chinchilla Law，应该使用1,400B (1.4T) tokens来训练参数量大小为70B的LLM最佳。即：每个参数需要大约20个文本token。
+
+https://zhuanlan.zhihu.com/p/627821763
+
+训练LLM需要多少数据？
+
+https://www.zhihu.com/question/628395521
+
+如何看待微软论文声称ChatGPT是20B(200亿)参数量的模型？
+
+---
+
+6B模型可以在在12/16/24G显存的消费级显卡部署和训练。如果一个公司的模型不打算在消费级显卡部署，通常不会训6B这个规模。而且通常还会有一个1.4b或者2.8b，这个是比较适合在手机、车载端量化部署的尺寸。
+
+13B模型按照4k长度组织数据，数据并行=2，刚好占满一个8卡机，并且可以量化部署在A10甚至4090。
+
+下一档也不是130B，目前更大模型有16B、34B、52B、56B、65B、70B、100B、130B、170B、220B这几个规模，基本都是刚好占满某种规格的算力，要么是训练要么是推理。如果需要加快训练速度，只需要倍增卡数即可。比如我们训7B模型以8卡为单位，8x8卡训，70B模型以80卡为单位，80x6卡训。
+
+https://www.zhihu.com/question/627258986
+
+现在LLM的大小为什都设计成6/7B、13B和130B几个档次？

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（六）——ChatGPT
+title:  Attention（六）——Beyond Transformer, BERT进阶（1）
 category: Attention 
 ---
 
@@ -195,186 +195,160 @@ https://github.com/NVIDIA-Merlin/Transformers4Rec
 
 NVIDIA推出的RS库
 
-# ChatGPT
+# Beyond Transformer
 
-官网：
+https://zhuanlan.zhihu.com/p/605425639
 
-https://chat.openai.com/chat
+RWKV 14B对比GLM 130B和NeoX 20B，展示RWKV的性能
 
-ChatGPT本身并没有论文，大部分是基于InstructGPT这篇论文：
+代码：
 
-https://openai.com/blog/instruction-following/
+https://github.com/BlinkDL/ChatRWKV
 
-Aligning Language Models to Follow Instructions
+RWKV没有使用attention，而是号称100% RNN。
 
-![](/images/img4/ChatGPT.jpg)
+RNN-based没有attention之类机制的模型是怎么获得long memory的能力的啊？
 
-![](/images/img4/ChatGPT_2.jpg)
-
-![](/images/img5/GPT.jpg)
+这个形式就是Transformers are RNNs的形式，只不过把Q换成了positional invariant的time weighting。最近很多work都显示Attention里的Q其实没啥用，换成一个跟着相对位置exponential decay的term就行了。
 
 ---
 
-基座预训练（Base pretrain）
+https://blog.csdn.net/v_JULY_v/article/details/134923301
 
-SFT微调（Supervised Fine-Tuning）
+一文通透想颠覆Transformer的Mamba：从SSM、S4到mamba、线性transformer(含RWKV解析)
 
-奖励函数训练（Reward Modeling, RM），最常用的是基于排序的奖励函数建模（Ranking-Based Reward Modeling，RBRM）
+# BERT进阶
 
-基于人类反馈的强化学习（RLHF，基于RM/RBRM进行PPO强化学习训练）
+## UniLM
 
-与人类对齐（Align AI with human values）
+![](/images/img5/UniLM.jpg)
 
-思维链 (Chain-of-thought，CoT) 是指令示范的一种特殊情况，它通过引发对话代理的逐步推理来生成输出。简单的说就是Let’s think step by step，指令示范不仅可以是QA对，也可以是一段连续的对话。
+|  | Encoder注意力 | Decoder注意力 | 是否共享参数 |
+|:--:|:--:|:--:|:--:|
+| GPT | 单向 | 单向 | 是 |
+| UniLM | 双向 | 单向 | 是 |
+| T5 | 双向 | 单向 | 否 |
 
-指令微调 (Instruction Fine-Tuning，IFT)
+https://mp.weixin.qq.com/s/m_FU4NmjUsvxusRidDb-Xg
 
-![](/images/img5/IFT.png)
+UniLM:一种既能阅读又能自动生成的预训练模型
 
-红蓝对抗 (red-teaming)：红队测试在过去指用于测试安全漏洞的系统对抗攻击。随着LLM的兴起，该术语已经超越了传统的网络安全范围，并在日常使用中演变为描述AI系统的多种探测、测试和攻击。
+https://mp.weixin.qq.com/s/yyUPqxpfBwUSRbwM6SSAcQ
 
-https://zhuanlan.zhihu.com/p/602458131
+UniLM论文阅读笔记
 
-解读ChatGPT背后的技术重点：RLHF、IFT、CoT、红蓝对抗
+https://mp.weixin.qq.com/s/RjeuHXa8O3MzSpTOuOHMkQ
 
----
+站在BERT肩膀上的NLP新秀们：XLMs、MASS和UNILM
 
-模型数据集可分为六类，分别是：维基百科、书籍、期刊、Reddit链接、Common Crawl和其他数据集。
+https://mp.weixin.qq.com/s/UEBKSKEkZTbpR49_Rh50Jg
 
-![](/images/img5/huge_data.jpg)
+微软统一预训练语言模型UniLM 2.0解读
 
-上图展示了各大模型所使用的数据来源。
+## Electra
 
-数据语言: 主要是英语~46%, 俄, 德, 日与中文都是~5%左右。
+https://mp.weixin.qq.com/s/dFT7KKMH56unkOEA9H4Kuw
 
-除了文本之外，ChatGPT还利用了github的代码进行训练。有一些研究者认为ChatGPT展现出了初级推理能力，要归功于其使用代码作为语言数据训练，这些进化出的初级逻辑思维链，在中文上也有体现。
+吊打BERT Large的小型预训练模型ELECTRA终于开源！真相却让人...
 
----
+https://mp.weixin.qq.com/s/6i9eQISKsWU0jawKzWg8nQ
+
+超越bert，最新预训练模型ELECTRA论文阅读笔记
+
+https://mp.weixin.qq.com/s/lkB1xn6G2P5Nivj7DcYg5w
+
+Electra: 判别还是生成，这是一个选择
+
+## Embedding
+
+预训练刚兴起时，在语言模型的输出端重用Embedding权重是很常见的操作，比如BERT、第一版的T5、早期的GPT，都使用了这个操作，这是因为当模型主干部分不大且词表很大时，Embedding层的参数量很可观，如果输出端再新增一个独立的同样大小的权重矩阵的话，会导致显存消耗的激增。不过随着模型参数规模的增大，Embedding层的占比相对变小了，加之《Rethinking embedding coupling in pre-trained language models》等研究表明共享Embedding可能会有些负面影响，所以现在共享Embedding的做法已经越来越少了。
+
+https://kexue.fm/archives/9698
+
+语言模型输出端共享Embedding的重新探索
+
+## 外推性
+
+对于Transformer模型来说，其长度的外推性是我们一直在追求的良好性质，它是指我们在短序列上训练的模型，能否不用微调地用到长序列上并依然保持不错的效果。
+
+自从Transform被提出以来，一个基本问题还没有被解决，一个模型如何在推断时对训练期间没有见过的更长序列进行外推。众所周知，Bert支持的最长句子长度是512，那为什么Bert只能支持512的句子长度呢？
+
+我们看一下BertEmbeddings的初始化，我们可以看到position_ids，被初始化成0-511，这个也就是BERT处理文本最大长度是512的原因，这里Bert使用的是绝对位置编码。
 
 参考：
 
-https://zhuanlan.zhihu.com/p/590655677
+https://spaces.ac.cn/archives/9431
 
-ChatGPT特点、原理、技术架构和产业未来
+长度外推性与局部注意力
 
-https://zhuanlan.zhihu.com/p/651780908
+https://zhuanlan.zhihu.com/p/656684326
 
-大模型中的人工反馈强化学习详解
+大模型位置编码-ALiBi位置编码
 
-https://mp.weixin.qq.com/s/L8E-dd9988Prbxau5awFtw
+## RoPE
 
-ChatGPT怎么突然变得这么强？华人博士万字长文深度拆解GPT-3.5能力起源
-
-https://mp.weixin.qq.com/s/FPws8Gk18pW-TRcorlTczg
-
-ChatGPT研究框架
-
-https://www.zhihu.com/question/575481512
-
-为什么chatgpt的上下文连续对话能力得到了大幅度提升？
-
-https://www.zhihu.com/question/560134313
-
-为什么强化学习里很少有预训练模型（Pretrained Model）？
-
-https://www.zhihu.com/question/570431477
-
-ChatGPT的训练集来自哪里？
-
-https://www.zhihu.com/question/570189639
-
-如何评价OpenAI的超级对话模型ChatGPT？
-
-https://mp.weixin.qq.com/s/_ipboVExouPNtGhvKnJX_g
-
-ChatGPT的技术体系总结
-
-https://mp.weixin.qq.com/s/1fSxWdgfyAaFPBXMGhBV2Q
-
-且看Chat GPT如何应对职场PUA
-
-https://zhuanlan.zhihu.com/p/607847588
-
-复现ChatGPT的难点与平替
-
-https://zhuanlan.zhihu.com/p/601044938
-
-nanoGPT源码阅读
-
-https://zhuanlan.zhihu.com/p/608705255
-
-GPT-3+RL全流程训练开源整理
-
-https://zhuanlan.zhihu.com/p/609795142
-
-ChatGPT原理详解+实操(1)----SFT(GPT模型精调)
-
-https://zhuanlan.zhihu.com/p/610147705
-
-ChatGPT原理详解+实操(2)----RM(reward model)
-
-## RLHF
-
-TAMER（Training an Agent Manually via Evaluative Reinforcement，评估式强化人工训练代理）框架将人类标记者引入到Agents的学习循环中，可以通过人类向Agents提供奖励反馈（即指导Agents进行训练），从而快速达到训练任务目标。
-
-![](/images/img4/TAMER.jpg)
-
-这算得上是一种有监督学习+RL了。
-
-![](/images/img5/RLHF.png)
-
-利用强化学习在大模型中注入人类的经验，所谓的Reinforcement Learning from Human Feedback(RLHF)，Policy Network输出的多样性及Reward的学习是ChatGPT成功的关键。
-
-![](/images/img5/RLHF_2.png)
-
-![](/images/img5/rlhf.jpg)
-
-论文：
-
-《DeepSpeed-Chat: Easy, Fast and Affordable RLHF Training of ChatGPT-like Models at All Scales》
+Rotary Position Embedding是苏剑林的作品，并被后来流行的LLAMA等大模型所采用。
 
 参考：
 
-https://zhuanlan.zhihu.com/p/592671478
+https://spaces.ac.cn/archives/8265
 
-ChatGPT背后的算法——RLHF
+博采众长的旋转式位置编码
 
-https://zhuanlan.zhihu.com/p/612572103
+## 参考
 
-RLHF的其他优化方向
+https://www.zhihu.com/question/298203515
 
-https://zhuanlan.zhihu.com/p/608176805
+如何评价BERT模型？
 
-如何看懂ChatGPT里的RLHF公式以及相关实现
+https://mp.weixin.qq.com/s/Fao3i99kZ1a6aa3UhAYKhA
 
-https://zhuanlan.zhihu.com/p/644680366
+全面超越人类！Google称霸SQuAD，BERT横扫11大NLP测试
 
-LLaMA2 RLHF技术细节
+https://mp.weixin.qq.com/s/INDOBcpg5p7vtPBChAIjAA
 
-https://zhuanlan.zhihu.com/p/645068532
+最强预训练模型BERT的Pytorch实现
 
-大模型RLHF的trick
+https://mp.weixin.qq.com/s/SZMYj4rMneR3OWST007H-Q
 
-https://zhuanlan.zhihu.com/p/635569455
+解读谷歌最强NLP模型BERT：模型、数据和训练
 
-RLHF实践
+https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
 
-https://zhuanlan.zhihu.com/p/667152180
+详细解读谷歌新模型BERT为什么嗨翻AI圈
 
-一些RLHF的平替汇总（2023.11）
+https://zhuanlan.zhihu.com/p/66053631
 
-https://zhuanlan.zhihu.com/p/621456865
+BERT
 
-DeepSpeed-Chat开源了
+https://mp.weixin.qq.com/s/WEbJnO04DOrsxUbzpgL66g
 
-https://brightliao.com/2023/05/25/chatgpt-rlhf/
+BERT源码分析（PART I）
 
-ChatGPT的自动优化
+https://mp.weixin.qq.com/s/iXjE7KoyvFQ8uekLKRK4jw
 
-## 微软小冰
+BERT源码分析（PART II）
 
-微软内部之前有个类似ChatGPT的项目，叫微软小冰，几个负责人都是那种技术栈和技术思路非常老旧的老人，在微软内部吸血吸了很多年，微软后来体面的裁掉了这个团队，转头去投了OpenAI 10亿美金。
+https://mp.weixin.qq.com/s/DxBC_x5ZWC6SECfnwDGnVg
 
-这个被裁团队出来之后，一阵包装，说是微软为了他们更好的发展，所以让他们独立出来，然后去VC那融了好多钱。就在去年12月份，投资人纷纷对比了ChatGPT和小冰的智能化程度。对比效果简直辣眼睛，小冰那也叫智能？
+BERT源码分析（PART III）
 
-小冰的技术原理，走的是传统NLP原理那一套，已经过时了，没有使用深度学习，基于知识图谱回答，学习的知识非常有限。
+https://mp.weixin.qq.com/s/kI_k_plZbRzmdeXxt2_2WA
+
+从Transformer到BERT模型
+
+https://mp.weixin.qq.com/s/Bnk0nIjBdb58WVJEY8MqnA
+
+NLP中各种各样的编码器
+
+https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
+
+预训练BERT，官方代码发布前他们是这样用TensorFlow解决的
+
+https://mp.weixin.qq.com/s/HOD1Hb70NhTXXCXlopzfng
+
+BERT推理加速实践
+
+https://mp.weixin.qq.com/s/0luHJsw7WWJskJWGThR5qg
+
+使用BERT做文本摘要

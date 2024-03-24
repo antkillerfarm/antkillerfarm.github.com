@@ -171,6 +171,8 @@ VS Code（Visual Studio Code）是由微软研发的一款免费、开源的跨�
 
 https://code.visualstudio.com/
 
+注：VS Code本身包含了部分闭源代码，社区开源版本叫做VSCodium。这点和Chrome与Chromium比较像。
+
 安装：
 
 `umake ide visual-studio-code`
