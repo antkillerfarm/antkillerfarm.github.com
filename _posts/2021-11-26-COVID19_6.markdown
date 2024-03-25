@@ -53,6 +53,12 @@ https://www.zhihu.com/question/583759294
 
 为什么新冠在中国大面积的感染没有产生新的主流变异株？
 
+---
+
+![](/images/img5/COVID19.jpg)
+
+BA.5.2 -> XBB -> EG5 -> JN.1
+
 # 科研
 
 抗病毒药一般以vir结尾，例如Remdesivir。所以药品的中文名一般就是XXX韦。

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度加速（六）——知识蒸馏
+title:  深度加速（六）——模型压缩与加速, 知识蒸馏
 category: DL acceleration 
 ---
 
@@ -8,6 +8,38 @@ category: DL acceleration
 {:toc}
 
 # 模型压缩与加速
+
+## Network Pruning（续）
+
+Weight Pruning需要相关硬件支持跳零操作才能真正加速运算，而Filter/Layer Pruning则无需特殊硬件支持。
+
+虽然这些参数、结点和层相对不重要，但是去掉之后，仍然会对准确度有所影响。这时可以对精简之后的模型，用训练样本进行re-train，通过残差对模型进行一定程度的修正，以提高准确度。
+
+![](/images/img4/Pruning.png)
+
+此外还有Stripe-Wise Pruning：
+
+https://mp.weixin.qq.com/s/HohsD57cQtTR5SvuykEDuA
+
+优图NeurIPS 2020论文，刷新滤波器剪枝的SOTA效果
+
+还可以看看图森科技的论文：
+
+https://www.zhihu.com/question/62068158
+
+如何评价图森科技连发的三篇关于深度模型压缩的文章？
+
+图森的思路比较有意思。其中的方法之一，是利用L1规则化会导致结果的稀疏化的特性，制造出一批接近0的参数。从而达到去除不重要的参数的目的。
+
+除此之外，矩阵量化、Kronecker内积、霍夫曼编码、模型剪枝等也是常见的模型压缩方法。
+
+---
+
+彩票假说（ICLR2019会议的best paper）：随机初始化的密集神经网络包含一个初始化的子网，当经过隔离训练时，它可以匹配训练后最多相同迭代次数的原始网络的测试精度。
+
+https://mp.weixin.qq.com/s/wOaCjSifZqkndaGbst1-aw
+
+一文带你了解NeurlPS2020的模型剪枝研究
 
 ## 权值稀疏化实战
 
@@ -232,53 +264,3 @@ https://mp.weixin.qq.com/s/XR8OlGv5Ciglq03Ul_jpvQ
 https://mp.weixin.qq.com/s/HdG3_CaSdZP3lCp8J_VRQA
 
 只需一个损失函数、一个超参数即可压缩BERT，MSRA提出模型压缩新方法
-
-## 参考
-
-https://github.com/dkozlov/awesome-knowledge-distillation
-
-知识蒸馏从入门到精通
-
-https://zhuanlan.zhihu.com/p/24894102
-
-《Distilling the Knowledge in a Neural Network》阅读笔记
-
-https://luofanghao.github.io/blog/2016/07/20/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%20%E3%80%8ADistilling%20the%20Knowledge%20in%20a%20Neural%20Network%E3%80%8B/
-
-论文笔记《Distilling the Knowledge in a Neural Network》
-
-http://blog.csdn.net/zhongshaoyy/article/details/53582048
-
-蒸馏神经网络
-
-https://mp.weixin.qq.com/s/QZ7PGvi27LiDOJaxici7Pw
-
-数据蒸馏Dataset Distillation
-
-https://mp.weixin.qq.com/s/vGTqHif48O2GZhuxWFhOLw
-
-知识蒸馏总结、应用与扩展（2015-2019）
-
-https://zhuanlan.zhihu.com/p/24337627
-
-深度压缩之蒸馏模型
-
-https://mp.weixin.qq.com/s/xcd9CHgE2_vEXrQ4MK019Q
-
-知识蒸馏方法的演进历史综述
-
-https://zhuanlan.zhihu.com/p/265906295
-
-知识蒸馏：如何用一个神经网络训练另一个神经网络
-
-https://mp.weixin.qq.com/s/qE1makMUIaFNrWk4nqOxDw
-
-最新《知识蒸馏》2020综述论文，30页pdf，悉尼大学
-
-https://zhuanlan.zhihu.com/p/51563760
-
-知识蒸馏（Knowledge Distillation）最新进展（一）
-
-https://zhuanlan.zhihu.com/p/53864403
-
-知识蒸馏（Knowledge Distillation）最新进展（二）

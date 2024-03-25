@@ -179,6 +179,20 @@ Intel在早期的8087芯片上引入了一种80bit的浮点格式：1 Sign + 15 
 
 这个格式设计不知道是否启发了BF16，因为它采用了和IEEE 754中128bit相同的Exponent，正如BF16使用FP32的Exponent一样，都是高一个档次的Exponent搭配低档次的Significand。
 
+## FP8
+
+![](/images/img3/FP8.png)
+
+FP8包括两种常见的变种：E4M3(4位指数和3位尾数)和E5M2(5位指数和2位尾数)。
+
+NVIDIA在H100中，添加了FP8的支持，但是去掉了对INT1/INT4的支持。。。看起来后两者还是实用价值偏低了。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/521631165
+
+Nvidia H100 中的FP8
+
 ## BF8 and Tesla CFloat
 
 当我们将浮点的继续降低到8-bit的时候，BF8遇到的挑战越来越大。
@@ -193,14 +207,6 @@ HFP8就提出了一种Hybrid的方式：forward的时候用FP-1-4-3，backward�
 
 《8-BIT NUMERICAL FORMATS FOR DEEP NEURAL NETWORKS》
 
-NVIDIA在H100中，添加了FP8的支持，但是去掉了对INT1/INT4的支持。。。看起来后两者还是实用价值偏低了。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/521631165
-
-Nvidia H100 中的FP8
-
 ## W4A16
 
 ![](/images/img5/W4.png)
@@ -212,6 +218,27 @@ W4A16主要有GPTQ和AWQ等实现。
 ## q4f16 & q3f16
 
 q3f16（q3指使用Quantize 3 bit来量化，f16是指核心计算使用fp 16来计算）。
+
+## FP4
+
+![](/images/img3/FP4.png)
+
+IEEE版本的FP4(E2M1)如上图所示，但由于过于粗糙，一般使用更多的是所谓的NormalFloat的NF4。
+
+NF4只能表示[-1, 1]之间的浮点数。由于在神经网络中，预训练的权重通常具有零中心的正态分布。所以根据正态分布的累积分布函数来量化，比均匀量化，效果要好一些。
+
+所有可能的NF4值为:
+
+```
+[-1.0, -0.6961928009986877, -0.5250730514526367, -0.39491748809814453,
+  -0.28444138169288635, -0.18477343022823334, -0.09105003625154495, 0.0,
+  0.07958029955625534, 0.16093020141124725, 0.24611230194568634, 0.33791524171829224,
+  0.44070982933044434, 0.5626170039176941, 0.7229568362236023, 1.0]
+```
+
+注意：0左侧和右侧的量化是非对称的，因为[-1, 0]之间有8个值，而[0, 1]之间有9个值。
+
+NF4是QLoRA引入的，而FP4目前只有NV的GPU支持。
 
 ## Posit
 
@@ -254,33 +281,3 @@ Posit: A Potential Replacement for IEEE 754
 https://github.com/cjdelisle/libposit
 
 https://github.com/stillwater-sc/universal
-
-## Saturate Quantization
-
-上述各种量化方法都是在保证数值表示范围的情况下，尽可能提高fl或者scale。这种方法也叫做Non-saturation Quantization。
-
-NVIDIA在如下文章中提出了一种新方法：
-
-http://on-demand.gputechconf.com/gtc/2017/presentation/s7310-8-bit-inference-with-tensorrt.pdf
-
-8-bit Inference with TensorRT
-
-![](/images/img2/INT8_3.png)
-
-Saturate Quantization的做法是：将超出上限或下限的值，设置为上限值或下限值。
-
-如何设置合理的Saturate threshold呢？
-
-可以设置一组门限，然后计算每个门限的分布和原分布的相似度，即KL散度，选择最相似分布的门限即可。
-
-参考：
-
-https://blog.csdn.net/u013010889/article/details/90295078
-
-int8量化和tvm实现
-
-## Block-wise Quantization
-
-经过观察，在正态分布下，绝对值很大的参数的比例会很少，所以一起归一会使得大多数参数变得很小，从而使得量化过程中的一些数字范围对应的int8没有被充分利用，导致更多的信息丢失。
-
-把参数划分为了小Block，在进行量化的时候，按照block内绝对值最大的数对这个block进行归一化，使得所有参数都落在 [-1, 1] 这个范围，这就是Block-wise Quantization。

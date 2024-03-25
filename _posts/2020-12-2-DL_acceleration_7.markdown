@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度加速（七）——硬件加速技巧, 模型优化工具, 模型压缩与加速进阶（1）
+title:  深度加速（七）——硬件加速技巧
 category: DL acceleration 
 ---
 
@@ -8,6 +8,56 @@ category: DL acceleration
 {:toc}
 
 # 知识蒸馏（续）
+
+## 参考
+
+https://github.com/dkozlov/awesome-knowledge-distillation
+
+知识蒸馏从入门到精通
+
+https://zhuanlan.zhihu.com/p/24894102
+
+《Distilling the Knowledge in a Neural Network》阅读笔记
+
+https://luofanghao.github.io/blog/2016/07/20/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%20%E3%80%8ADistilling%20the%20Knowledge%20in%20a%20Neural%20Network%E3%80%8B/
+
+论文笔记《Distilling the Knowledge in a Neural Network》
+
+http://blog.csdn.net/zhongshaoyy/article/details/53582048
+
+蒸馏神经网络
+
+https://mp.weixin.qq.com/s/QZ7PGvi27LiDOJaxici7Pw
+
+数据蒸馏Dataset Distillation
+
+https://mp.weixin.qq.com/s/vGTqHif48O2GZhuxWFhOLw
+
+知识蒸馏总结、应用与扩展（2015-2019）
+
+https://zhuanlan.zhihu.com/p/24337627
+
+深度压缩之蒸馏模型
+
+https://mp.weixin.qq.com/s/xcd9CHgE2_vEXrQ4MK019Q
+
+知识蒸馏方法的演进历史综述
+
+https://zhuanlan.zhihu.com/p/265906295
+
+知识蒸馏：如何用一个神经网络训练另一个神经网络
+
+https://mp.weixin.qq.com/s/qE1makMUIaFNrWk4nqOxDw
+
+最新《知识蒸馏》2020综述论文，30页pdf，悉尼大学
+
+https://zhuanlan.zhihu.com/p/51563760
+
+知识蒸馏（Knowledge Distillation）最新进展（一）
+
+https://zhuanlan.zhihu.com/p/53864403
+
+知识蒸馏（Knowledge Distillation）最新进展（二）
 
 https://zhuanlan.zhihu.com/p/81467832
 
@@ -318,29 +368,3 @@ https://mp.weixin.qq.com/s/PMOrY5ZElyPGOVxZgXFVzw
 https://mp.weixin.qq.com/s/Fes8FHngKnL8jklB7DhNCQ
 
 图计算加速架构综述
-
-# 模型优化工具
-
-## Amazon SageMaker Neo
-
-官网：
-
-https://aws.amazon.com/cn/sagemaker/neo/
-
-## 参考
-
-https://mp.weixin.qq.com/s/T9AUFnLjNDUaE9zKmOhbEw
-
-将GEMM的性能提升200倍!AutoKernel算子优化工具正式开源
-
-https://mp.weixin.qq.com/s/L9kYXFXYmKadghAhd-51pA
-
-TensorFlow模型优化工具包—剪枝API
-
-https://mp.weixin.qq.com/s/asPSPeBaRF_4eXcRXU-Zfw
-
-TensorFlow模型优化工具包—训练时量化
-
-https://mp.weixin.qq.com/s/fa5S3o1somvdAAJF1FGqvA
-
-TensorFlow模型优化工具包正式推出

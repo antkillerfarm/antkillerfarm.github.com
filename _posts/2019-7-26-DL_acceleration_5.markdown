@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度加速（五）——模型压缩与加速
+title:  深度加速（五）——NN Quantization（3）
 category: DL acceleration 
 ---
 
@@ -8,6 +8,36 @@ category: DL acceleration
 {:toc}
 
 # NN Quantization（续）
+
+## Saturate Quantization
+
+上述各种量化方法都是在保证数值表示范围的情况下，尽可能提高fl或者scale。这种方法也叫做Non-saturation Quantization。
+
+NVIDIA在如下文章中提出了一种新方法：
+
+http://on-demand.gputechconf.com/gtc/2017/presentation/s7310-8-bit-inference-with-tensorrt.pdf
+
+8-bit Inference with TensorRT
+
+![](/images/img2/INT8_3.png)
+
+Saturate Quantization的做法是：将超出上限或下限的值，设置为上限值或下限值。
+
+如何设置合理的Saturate threshold呢？
+
+可以设置一组门限，然后计算每个门限的分布和原分布的相似度，即KL散度，选择最相似分布的门限即可。
+
+参考：
+
+https://blog.csdn.net/u013010889/article/details/90295078
+
+int8量化和tvm实现
+
+## Block-wise Quantization
+
+经过观察，在正态分布下，绝对值很大的参数的比例会很少，所以一起归一会使得大多数参数变得很小，从而使得量化过程中的一些数字范围对应的int8没有被充分利用，导致更多的信息丢失。
+
+把参数划分为了小Block，在进行量化的时候，按照block内绝对值最大的数对这个block进行归一化，使得所有参数都落在 [-1, 1] 这个范围，这就是Block-wise Quantization。
 
 ## Trainning Quantization
 
@@ -300,33 +330,3 @@ https://zhuanlan.zhihu.com/p/31575074
 结点和层的选择，相对麻烦一些，需要通过算法得到不重要的层。删除结点一般被称为Filter Pruning，而删除层则相应的被称作Layer Pruning。
 
 比如可以逐个将每一层50%的参数置零，查看模型性能。对性能影响不大的层就是不重要的。
-
-Weight Pruning需要相关硬件支持跳零操作才能真正加速运算，而Filter/Layer Pruning则无需特殊硬件支持。
-
-虽然这些参数、结点和层相对不重要，但是去掉之后，仍然会对准确度有所影响。这时可以对精简之后的模型，用训练样本进行re-train，通过残差对模型进行一定程度的修正，以提高准确度。
-
-![](/images/img4/Pruning.png)
-
-此外还有Stripe-Wise Pruning：
-
-https://mp.weixin.qq.com/s/HohsD57cQtTR5SvuykEDuA
-
-优图NeurIPS 2020论文，刷新滤波器剪枝的SOTA效果
-
-还可以看看图森科技的论文：
-
-https://www.zhihu.com/question/62068158
-
-如何评价图森科技连发的三篇关于深度模型压缩的文章？
-
-图森的思路比较有意思。其中的方法之一，是利用L1规则化会导致结果的稀疏化的特性，制造出一批接近0的参数。从而达到去除不重要的参数的目的。
-
-除此之外，矩阵量化、Kronecker内积、霍夫曼编码、模型剪枝等也是常见的模型压缩方法。
-
----
-
-彩票假说（ICLR2019会议的best paper）：随机初始化的密集神经网络包含一个初始化的子网，当经过隔离训练时，它可以匹配训练后最多相同迭代次数的原始网络的测试精度。
-
-https://mp.weixin.qq.com/s/wOaCjSifZqkndaGbst1-aw
-
-一文带你了解NeurlPS2020的模型剪枝研究
