@@ -7,6 +7,9 @@ category: linux
 * toc
 {:toc}
 
+
+思科曾有个巨大的失误，就是其终端路由器WRT54G错误地选用了Linux，因GPL协议的原因被迫公布了源代码，这导致所有公司一下子都会做普通路由器了。如果思科当时像苹果MacOS那样，选FreeBSD，恐怕还能多赚很多钱。
+
 # OpenWrt编译
 
 1.下载代码
@@ -322,35 +325,3 @@ OpenWrt编译系统由一系列makefile脚本组成。除了分散于各个文�
 ## 下载处理
 
 主要脚本在scripts/download.pl中，其中对几个重要的下载站点做了预置和优化，包括SF、GNU、KERNEL、GNOME等。
-
-# OpenWrt网络配置
-
-这里主要参考以下文档：
-
-http://ju.outofmemory.cn/entry/176659
-
-为防遗失，摘录如下：
-
-![](/images/article/openwrt_network.png)
-
-上图为OpenWrt的网络接口图。
-
-有线网络配置文件：/etc/config/network
-
-无线网络配置文件：/etc/config/wireless
-
-pppoe-wan：虚拟设备，拨号上网接口。
-
-lo：虚拟设备，自身的回环网设备。
-
-ra0 rai0：无线设备，它们各自对应一个SSID，分别是2.4G和5G。
-
-# iptables设置
-
-iptables是Openwrt的防火墙软件命令，可参见：
-
-http://wiki.openwrt.org/doc/howto/netfilter
-
-这里将主要用法示例如下：
-
-`iptables -I zone_wan_input 4 -p tcp --dport 22 -j ACCEPT # allow SCP on WAN port`

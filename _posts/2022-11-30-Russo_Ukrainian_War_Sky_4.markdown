@@ -9,6 +9,20 @@ category: Russo Ukrainian War Sky
 
 # 俄乌战争
 
+## 战前 & 军改（续）
+
+https://mp.weixin.qq.com/s/u8rbgwjt-WOsHaFSj-JeMw
+
+从2014到2022：俄乌之间，发生了什么？
+
+https://zhuanlan.zhihu.com/p/208368695
+
+失败国家的典范：乌克兰为何沦落为欧洲最穷国
+
+https://zhuanlan.zhihu.com/p/621495404
+
+未解之谜之乌萝团队是怎样被毁的
+
 ## 基辅战役
 
 本节包括2022年4月之前，北线部分的战役，比如基辅战役、哈尔科夫春季战役、苏梅、切尔尼戈夫攻防战。

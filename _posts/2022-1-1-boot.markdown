@@ -211,6 +211,38 @@ https://www.ibm.com/developerworks/cn/linux/l-yocto-linux/index.html
 
 # OpenWrt
 
+## OpenWrt网络配置
+
+这里主要参考以下文档：
+
+http://ju.outofmemory.cn/entry/176659
+
+为防遗失，摘录如下：
+
+![](/images/article/openwrt_network.png)
+
+上图为OpenWrt的网络接口图。
+
+有线网络配置文件：/etc/config/network
+
+无线网络配置文件：/etc/config/wireless
+
+pppoe-wan：虚拟设备，拨号上网接口。
+
+lo：虚拟设备，自身的回环网设备。
+
+ra0 rai0：无线设备，它们各自对应一个SSID，分别是2.4G和5G。
+
+## iptables设置
+
+iptables是Openwrt的防火墙软件命令，可参见：
+
+http://wiki.openwrt.org/doc/howto/netfilter
+
+这里将主要用法示例如下：
+
+`iptables -I zone_wan_input 4 -p tcp --dport 22 -j ACCEPT # allow SCP on WAN port`
+
 ## 扩展包
 
 大多数情况下，我们并不需要亲手编写OpenWrt模块，因为日常使用中的绝大部分功能，OpenWrt项目都提供了相应的扩展包。因此，如何寻找、安装扩展包，就成为一个经常性的问题。

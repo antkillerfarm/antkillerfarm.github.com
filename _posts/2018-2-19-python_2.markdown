@@ -17,6 +17,14 @@ category: language
 
 类似的，`typing.cast`并不是用来转换数据类型的，它是用来在类型提示中进行类型断言的。
 
+---
+
+此外，还有pyi文件用于辅助类型检测。
+
+https://blog.csdn.net/weixin_40908748/article/details/106252884
+
+什么是.pyi文件？
+
 ## pass语句
 
 ```python
