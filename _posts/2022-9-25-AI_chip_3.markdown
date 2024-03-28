@@ -21,6 +21,10 @@ https://www.zhihu.com/question/645010090
 
 Groq公司推出的全球最快的大模型推理服务达到每秒输出500个token，如何看待这一技术？
 
+https://zhuanlan.zhihu.com/p/683873553
+
+TSP: LPU(Language Processor Unit) 成名绝技
+
 ## FPGA
 
 CGRA：Coarse Grained Reconfigurable Array

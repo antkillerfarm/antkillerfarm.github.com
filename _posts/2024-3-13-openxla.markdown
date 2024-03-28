@@ -182,6 +182,28 @@ squash_64bit_types
 
 ---
 
+options的传递链：
+
+```cpp
+// torch_xla
+torch_xla::runtime::GetComputationClient()
+client = std::make_unique<PjRtComputationClient>();
+options.allowed_devices = allowed_devices;
+client_ = std::move(xla::GetStreamExecutorGpuClient(options).value());
+
+// openxla
+GetGpuXlaClient(options.platform_name, options.allowed_devices)
+LocalClientOptions options;
+ClientLibrary::GetOrCreateLocalClient(options);
+ServiceOptions service_options;
+LocalService::NewService(service_options)
+BackendOptions backend_options;
+Backend::CreateBackend(backend_options)
+PlatformUtil::GetStreamExecutors(platform, options.allowed_devices())
+```
+
+---
+
 参考：
 
 https://pytorch.org/blog/pytorch-2.0-xla/

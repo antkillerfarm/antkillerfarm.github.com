@@ -239,6 +239,12 @@ three-bodies problem（×）
 
 ---
 
+inflight字面意思就是“飞行中”。你想想“飞行中”是啥状态？已经起飞了、但是还没落地。
+
+在请求中，就可以理解为**客户端已经发出了，但是还没收到服务端响应**的那些请求。
+
+---
+
 https://www.zhihu.com/question/20974910
 
 为什么“Oxford”“Cambridge”会翻译成“牛津”“剑桥”？
