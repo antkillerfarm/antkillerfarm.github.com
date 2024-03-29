@@ -201,11 +201,23 @@ https://github.com/kakaobrain/torchgpipe
 
 `fairscale.nn.pipe`fork自torchgpipe，并最终进入`torch.distributed.pipeline`。
 
+代码：
+
+benchmarks/distributed/pipeline/pipe.py
+
+另一个Pipeline Parallelism的库。
+
+https://github.com/pytorch/PiPPy
+
 参考：
 
 https://www.cnblogs.com/rossiXYZ/p/15318574.html
 
 PyTorch流水线并行实现 (1)--基础知识
+
+https://pytorch.org/docs/stable/pipeline.html
+
+Pipeline Parallelism
 
 # 其他概念
 

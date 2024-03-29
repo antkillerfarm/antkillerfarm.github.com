@@ -73,6 +73,12 @@ Kuleba tells about work of 31 fighters, which made it possible to liberate Robot
 
 ---
 
+https://github.com/wasm3/wasm3
+
+一个因为俄乌战争而进入维护状态的开源项目
+
+---
+
 为了购买装备，许多人负债累累；国防部的工资卡没有发给一些被动员的人，而另一些人则无法激活工资卡。
 
 https://zhuanlan.zhihu.com/p/579785034
