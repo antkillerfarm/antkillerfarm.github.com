@@ -96,6 +96,16 @@ H100一般搭配X86的CPU，如果搭配NV自研的基于ARM架构的Grace CPU�
 
 ---
 
+David Harold Blackwell，1919～2010，美国统计学家，伊利诺伊大学博士（1941年）。拉奥-布莱克韦尔定理的提出者之一。他是美国国家科学院的首位黑人院士，和加州大学伯克利分校的首位黑人终身教员。当然他是黑人混血，不是传统意义的黑人。
+
+当Blackwell的名字被列入普林斯顿大学的访问学者名单时，该校校长大发雷霆。他声称该学院滥用了大学的好客，录取了一名黑人。
+
+https://zhuanlan.zhihu.com/p/476820418
+
+最伟大的黑人数学家——布莱克威尔，统计学领域的天才
+
+---
+
 H100/A100和RTX 4090最大的区别就在通信和内存上，算力差距不大。至于A40之类的芯片虽然内存大，但是带宽甚至不如RTX同档的产品，导致实际效果也是远远不如后者。
 
 https://zhuanlan.zhihu.com/p/655402388
@@ -269,26 +279,6 @@ https://github.com/rapidsai
 https://blog.csdn.net/sinat_26917383/article/details/104503795
 
 NVIDIA的python-GPU算法生态
-
-## cuLitho
-
-光刻是芯片制造过程中最复杂、最昂贵、最关键的环节，其成本约占整个硅片加工成本的1/3甚至更多。计算光刻模拟了光通过光学元件并与光刻胶相互作用时的行为，应用逆物理算法来预测掩膜板上的图案，以便在晶圆上生成最终图案。
-
-“计算光刻是芯片设计和制造领域中最大的计算工作负载，每年消耗数百亿CPU小时。”黄仁勋讲解道，“大型数据中心24x7全天候运行，以便创建用于光刻系统的掩膜板。这些数据中心是芯片制造商每年投资近2000亿美元的资本支出的一部分。”而cuLitho能够将计算光刻的速度提高到原来的40倍。
-
-## profile
-
-NVIDIA System Management Interface (NSMI): 即nvidia-smi。
-
-NVIDIA Nsight Systems (NSYS)
-
-NVIDIA Data Center GPU Manager (DCGM)
-
-NVIDIA Management Library (NVML): NVML为GPU硬件数据提供了编程接口，开发者可以通过编程的方式访问GPU的各项数据，其中就包含GPU利用率，nvidia-smi和DCGM的背后就是NVML，推荐高级开发者使用。
-
-https://fkong.tech/posts/2023-11-19-torch-gpu-util/
-
-如何把PyTorch的GPU利用率提升到100%?
 
 ## 参考
 

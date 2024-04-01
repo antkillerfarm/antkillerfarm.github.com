@@ -249,28 +249,30 @@ https://zhuanlan.zhihu.com/p/580035183
 
 RoCE vs Infiniband vs TCP/IP
 
-# 国产半导体+
+# NVIDIA+
 
-飞腾找台湾世芯代理设计，但因飞腾参与超算建设上了美国黑名单，台湾世芯宁可承受损失也不再继续提供设计服务。
+## cuLitho
 
-飞腾的通用CPU单核性能变化像是过山车，因为它的FT-1000和FT-1500是基于SUN开源的UltraSPARC T2核心，2007年时的UltraSPARC T2可与Intel至强一较高下。飞腾在投靠ARM之后，CPU性能反而降低了。
+光刻是芯片制造过程中最复杂、最昂贵、最关键的环节，其成本约占整个硅片加工成本的1/3甚至更多。计算光刻模拟了光通过光学元件并与光刻胶相互作用时的行为，应用逆物理算法来预测掩膜板上的图案，以便在晶圆上生成最终图案。
 
-飞腾多核互联和多路互联的技术较强，只是在ARM推出原生的互联方案之后，飞腾的研究成果也成了鸡肋。
+“计算光刻是芯片设计和制造领域中最大的计算工作负载，每年消耗数百亿CPU小时。”黄仁勋讲解道，“大型数据中心24x7全天候运行，以便创建用于光刻系统的掩膜板。这些数据中心是芯片制造商每年投资近2000亿美元的资本支出的一部分。”而cuLitho能够将计算光刻的速度提高到原来的40倍。
 
-## Russia CPU
+---
 
-俄罗斯设计通用CPU的企业主要有两家，一家是莫斯科SPARC技术中心(MCST)，另一家是贝加尔电子公司(Baikal Electronics)。
+![](/images/img5/RL_EDA.png)
 
-莫斯科SPARC技术中心是俄罗斯自主研发CPU的代表，研发了Elbrus系列产品。
+NV的EDA辅助设计
 
-贝加尔电子公司推出的Baikal系列CPU都是外购的CPU核心设计，再自行与其它的外购IP进行集成，与我们的国产手机CPU是相同的路线。
+## profile
 
-https://mp.weixin.qq.com/s/Ud4f5L2tYNbP1oURVBszag
+NVIDIA System Management Interface (NSMI): 即nvidia-smi。
 
-俄罗斯自研Elbrus CPU参数曝光，CEO年近九旬仍未退休
+NVIDIA Nsight Systems (NSYS)
 
->Boris Babayan，1933年生，俄罗斯科学院院士，Intel院士。俄罗斯CPU之父。Elbrus系列超算和通用CPU的主要研发者，1978年他率领团队研发出世界第一台超标量计算机Elbrus-1，整整领先西方世界十三年。
+NVIDIA Data Center GPU Manager (DCGM)
 
-https://zhuanlan.zhihu.com/p/549196030
+NVIDIA Management Library (NVML): NVML为GPU硬件数据提供了编程接口，开发者可以通过编程的方式访问GPU的各项数据，其中就包含GPU利用率，nvidia-smi和DCGM的背后就是NVML，推荐高级开发者使用。
 
-甭怂，奣烎，国产通用CPU比俄罗斯勥
+https://fkong.tech/posts/2023-11-19-torch-gpu-util/
+
+如何把PyTorch的GPU利用率提升到100%?

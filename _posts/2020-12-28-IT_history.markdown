@@ -143,158 +143,30 @@ Arm芯片三十五年
 
 ---
 
-https://mp.weixin.qq.com/s/YdoIVBpn1dFUEzDEF5pYJw
+1980年代，欧洲（当时还叫欧共体）为了扶持半导体产业，搞了尤里卡计划。这个计划里面有一部分就是存储器的生产，其中飞利浦选择了SRAM路线，在1984年和ASM合资成立了ASML。结果被日本的DRAM打得满地找牙，亏的妈都不认识了，急需一个冤大头接盘。
 
-被迫离开工作近20年的公司，半导体老兵上演逆袭。林孝平，一个小儿麻痹患者。
+1987年飞利浦和台湾当局签订了协议。台湾省政府出资一亿美元和飞利浦共同成立一家公司，这家公司叫——台积电。
 
-https://mp.weixin.qq.com/s/hIWvLLKWksNlO2eaVKcbAA
+是的，台积电本身的诞生，就是飞利浦为了甩包袱才成立的，然后台积电和asml这对难兄难弟在飞利浦的旗下艰难求生。
 
-那个延续摩尔定律的人的传奇人生。Mark Bohr，UIUC硕士（1978），美国工程院院士。
+80年代日本半导体把美国半导体杀的血流成河，三大光刻机厂商全部倒闭。90年代美国已经没有自己的光刻机企业了，然后美国为了对抗日本，在90年代末成立了EUV LLC联盟。尴尬的发现找不到光刻机企业，这才相中了asml，把asml拉入了EUV LLC。
 
-https://mp.weixin.qq.com/s?__biz=MzI1NTA0MDUyMA==&mid=2456660188&idx=1&sn=b9dafaa60e10130442aac48f165800f7
+---
 
-芯片春秋·ARM传
+ASCII码，有两点冷知识：
 
-https://mp.weixin.qq.com/s/bggtiz_a-Io8e9UQohxv1A
+首先是它不是一个8bit编码，而是一个7bit编码。
 
-紫光芯片王国是怎样建成的
+其次就是，它的出现同样早于计算机，它最早用于电报业。它之所以能替代摩尔斯码，主要是那个年代电报公司已经基本不再用人工按出滴答了，已经是按键盘上的字母，然后机器自动转换为滴答编码发送，所以定长（便于机器处理）且能容纳更多字符的编码自然就更受欢迎。
 
-https://mp.weixin.qq.com/s/KOjA94ODbWBEOGS-DWCNyw
+---
 
-美国本土的晶圆厂大盘点
+四通打字机，实际上本质就是带有硬件汉字卡的PC，使用自行汉化的DOS操作系统（早期MS2401是DOS 3.1），早期的MS2401显示屏太窄只能显示三行汉字，后期的MS2406显示屏相当于EGA（VGA的前身）分辨率，能显示20多行汉字。
 
-https://mp.weixin.qq.com/s/zzlJ1VjgR70jZQrBsUBLMA
+这个东西性能比当时的国产软汉字系统CCDOS等要好，价格也比当时的PC便宜，至于国外产品对比，这东西当时就没有外国人研制，微软官方的中文DOS 6.22进入中国是1994年，此时国内早已全面改用新一代软汉字系统（例如UCDOS）的PC，MS2401、MS2406等早已被淘汰。
 
-日本元器件三龙头的成功秘籍
+硬件汉字卡（汉卡）也不止一种原理，有的汉卡本身就是显示卡，例如早期严援朝在搞出CCDOS之后又研制出的长城汉卡，联想的CEGA/CVGA卡（所以还真不要小看早期的联想），四通MS-2401/MS-2406的硬件汉字卡也是这种，这种汉卡有直接通过硬件将汉字图形点阵映射到显示器上的能力，等于说内部储存了汉字库，是一个汉字字符图形点阵发生器，在当时CPU性能低下的年代，能做到很不错的汉字显示速度，远强于软汉字系统。
 
-https://mp.weixin.qq.com/s/p7T-xcyWHDYueEE3V42dfg
+有些汉卡只不过是汉字库（汉字图形点阵）附加存储器，实际还是用软件从汉卡中读取汉字图形点阵显示到屏幕上的，由于硬件存储汉字库，读取速度较快，显示汉字的速度比纯软件汉字系统还是快些，但比能直接作为显示卡的汉卡还是慢得多，这种汉卡更接近一种软汉字系统的加密卡，没了汉卡软汉字系统不能运行，金山汉卡属于这一种。所以金山汉字系统（SPDOS）是可以用附加软件代替金山汉卡提供汉字库的，这就是当年解密DOS下WPS并提供纯软件盗版金山汉字系统和WPS的原理，实际上金山公司的原版SPDOS和WPS for DOS都是需要金山汉卡支持的，只有DOS最末期版本WPS NT 1.2是纯软件汉字系统。
 
-德州仪器往事
-
-https://m.uczzd.cn/webview/news?aid=7934419892823166898
-
-仅300员工却垄断全球，7亿一台供不应求，买一台都成了巨头（Canon Tokki）
-
-https://mp.weixin.qq.com/s/z4Aik3NgB6XE64YCZolM4w
-
-仙童兴亡史
-
-https://mp.weixin.qq.com/s/GuO87_b9g6jFAepIWxDw5g
-
-闪存技术的52年发展史
-
-https://mp.weixin.qq.com/s/TlCtyF2HG_5l4STgoMJ05w
-
-日本电子产业大败局
-
-https://mp.weixin.qq.com/s/TlhhDjKlLYslif0RtpNotw
-
-世界三大电子展(CES、MWC、IFA)的前世今生
-
-https://zhuanlan.zhihu.com/p/54493905
-
-PC和BIOS的故事
-
-https://mp.weixin.qq.com/s/iod5Jok3Zfcn4yrGByZQQQ
-
-索尼的古董
-
-https://mp.weixin.qq.com/s/CxTr4MFVoRFxyCn-x_z8dQ
-
-奇梦达的前世今生
-
-https://mp.weixin.qq.com/s/TZcVR0wW2LM_bCvB0a88pA
-
-中国芯片完整发展历程
-
-https://mp.weixin.qq.com/s?__biz=MzAxOTIxNTg0Mg==&mid=2651001664&idx=1&sn=d7fe10c74feb5eb84c45a0381372c1d3
-
-国产芯片·大阅兵
-
-https://mp.weixin.qq.com/s/MzQyu5uqqIEYn-DwxNU50Q
-
-珠海芯片公司江湖
-
-https://mp.weixin.qq.com/s/O4hARQmcBDolt3THeoSwkg
-
-昙花一现的“图文电视”
-
-https://mp.weixin.qq.com/s/OTGy5a-hfxxp19TeJWyIyQ
-
-爬取6271家死亡公司数据，看十年创业公司消亡史
-
-https://mp.weixin.qq.com/s/HLfCV1EZaj7Bwfex8fajow
-
-Arm传奇
-
-https://mp.weixin.qq.com/s/QZOPuMlmW47EsrvcYgla7Q
-
-Arm服务器芯片编年史
-
-https://mp.weixin.qq.com/s/EsrXYg3Il8R96MJmqsx6fQ
-
-盘点半导体制造业60年最重要的发明
-
-https://mp.weixin.qq.com/s/kns2pGuqU8ifcNz7CpZoEg
-
-影响半导体发展进程的六个华人
-
-https://mp.weixin.qq.com/s/aLkbYlLvVWyYdK8iiL45Pw
-
-芯片设计的起源（Lynn Conway）
-
-https://mp.weixin.qq.com/s/_YTvP1MN0HXzOY0XJ1Ri3Q
-
-1976-2021 45年苹果电脑CPU之变迁
-
-http://vga.zol.com.cn/341/3419805.html
-
-末日将至 看天堂里我们能用的显卡品牌
-
-https://view.inews.qq.com/a/TEC201904280033680A
-
-手机基带芯片往事：欧洲退出竞争，全球只剩五名玩家
-
-https://mp.weixin.qq.com/s/L6VeZb79-8EU0NywtKd83w
-
-日韩科技战争简史：究竟谁是芯片、半导体、屏幕之王？
-
-https://mp.weixin.qq.com/s/5DA6XFowp0uqdzb52dEGag
-
-台湾处理器拾遗：超级抠门的Centaur造就了威盛x86
-
-https://mp.weixin.qq.com/s/p53CYTdKO-s0Zx-ljeMryA
-
-台湾处理器拾遗（下）：唯偏执狂得以幸存，但却不会带来成功
-
-https://mp.weixin.qq.com/s/KPMhTztucDyGTa4Dl74lUA
-
-谁发明了物联网？
-
-https://mp.weixin.qq.com/s/iMsfYla9UCaU4iYkIgpd9A
-
-从再版游戏机看半导体发展的三十年
-
-https://mp.weixin.qq.com/s/0_8a_kRBntbav4HPSqFLiA
-
-ASML的“三兄弟”往事
-
-https://mp.weixin.qq.com/s/AvDIxGUgrB88HOFaIkqWaw
-
-台积电等三巨头投资ASML的真相
-
-https://mp.weixin.qq.com/s/nQJV-dcNf3YYlC-6Jvv9SQ
-
-从孤芳自赏到流芳百世，充满传奇对后世影响深远的Alpha处理器
-
-https://mp.weixin.qq.com/s/wFw03-uf7qCz7TNkFWqaBw
-
-硬核还原：显微镜手撸晶体管，逆向工程还原经典计算器
-
-https://mp.weixin.qq.com/s/Z6qAZEN1PomdLi0iE4BVPg
-
-一窥Intel第一款X86处理器的内部构造
-
-https://mp.weixin.qq.com/s/wPpSXps_ZVVCabIgM2YM-A
-
-英特尔第一颗处理器诞生背后的故事
+当年都是字符屏幕，标准是80列25行。汉字需要14—16条线才能显示清晰，最低（能看）也要12—13条线，而当时的CGA显卡垂直方向只有200条线，EGA是350条线，自然对西文25行字符显示的软件支持不好。到了VGA就彻底没有这个问题了，VGA垂直方向有480条线，显示30行16*16汉字都没问题。

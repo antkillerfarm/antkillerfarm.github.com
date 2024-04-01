@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 电子科技史（二）, 上古软件开发（二）
+title: 电子科技史（二）
 category: resource 
 ---
 
@@ -8,6 +8,162 @@ category: resource
 {:toc}
 
 # 电子科技史
+
+https://mp.weixin.qq.com/s/YdoIVBpn1dFUEzDEF5pYJw
+
+被迫离开工作近20年的公司，半导体老兵上演逆袭。林孝平，一个小儿麻痹患者。
+
+https://mp.weixin.qq.com/s/hIWvLLKWksNlO2eaVKcbAA
+
+那个延续摩尔定律的人的传奇人生。Mark Bohr，UIUC硕士（1978），美国工程院院士。
+
+https://mp.weixin.qq.com/s?__biz=MzI1NTA0MDUyMA==&mid=2456660188&idx=1&sn=b9dafaa60e10130442aac48f165800f7
+
+芯片春秋·ARM传
+
+https://mp.weixin.qq.com/s/bggtiz_a-Io8e9UQohxv1A
+
+紫光芯片王国是怎样建成的
+
+https://mp.weixin.qq.com/s/KOjA94ODbWBEOGS-DWCNyw
+
+美国本土的晶圆厂大盘点
+
+https://mp.weixin.qq.com/s/zzlJ1VjgR70jZQrBsUBLMA
+
+日本元器件三龙头的成功秘籍
+
+https://mp.weixin.qq.com/s/p7T-xcyWHDYueEE3V42dfg
+
+德州仪器往事
+
+https://m.uczzd.cn/webview/news?aid=7934419892823166898
+
+仅300员工却垄断全球，7亿一台供不应求，买一台都成了巨头（Canon Tokki）
+
+https://mp.weixin.qq.com/s/z4Aik3NgB6XE64YCZolM4w
+
+仙童兴亡史
+
+https://mp.weixin.qq.com/s/GuO87_b9g6jFAepIWxDw5g
+
+闪存技术的52年发展史
+
+https://mp.weixin.qq.com/s/TlCtyF2HG_5l4STgoMJ05w
+
+日本电子产业大败局
+
+https://mp.weixin.qq.com/s/TlhhDjKlLYslif0RtpNotw
+
+世界三大电子展(CES、MWC、IFA)的前世今生
+
+https://zhuanlan.zhihu.com/p/54493905
+
+PC和BIOS的故事
+
+https://mp.weixin.qq.com/s/iod5Jok3Zfcn4yrGByZQQQ
+
+索尼的古董
+
+https://mp.weixin.qq.com/s/CxTr4MFVoRFxyCn-x_z8dQ
+
+奇梦达的前世今生
+
+https://mp.weixin.qq.com/s/TZcVR0wW2LM_bCvB0a88pA
+
+中国芯片完整发展历程
+
+https://mp.weixin.qq.com/s?__biz=MzAxOTIxNTg0Mg==&mid=2651001664&idx=1&sn=d7fe10c74feb5eb84c45a0381372c1d3
+
+国产芯片·大阅兵
+
+https://mp.weixin.qq.com/s/MzQyu5uqqIEYn-DwxNU50Q
+
+珠海芯片公司江湖
+
+https://mp.weixin.qq.com/s/O4hARQmcBDolt3THeoSwkg
+
+昙花一现的“图文电视”
+
+https://mp.weixin.qq.com/s/OTGy5a-hfxxp19TeJWyIyQ
+
+爬取6271家死亡公司数据，看十年创业公司消亡史
+
+https://mp.weixin.qq.com/s/HLfCV1EZaj7Bwfex8fajow
+
+Arm传奇
+
+https://mp.weixin.qq.com/s/QZOPuMlmW47EsrvcYgla7Q
+
+Arm服务器芯片编年史
+
+https://mp.weixin.qq.com/s/EsrXYg3Il8R96MJmqsx6fQ
+
+盘点半导体制造业60年最重要的发明
+
+https://mp.weixin.qq.com/s/kns2pGuqU8ifcNz7CpZoEg
+
+影响半导体发展进程的六个华人
+
+https://mp.weixin.qq.com/s/aLkbYlLvVWyYdK8iiL45Pw
+
+芯片设计的起源（Lynn Conway）
+
+https://mp.weixin.qq.com/s/_YTvP1MN0HXzOY0XJ1Ri3Q
+
+1976-2021 45年苹果电脑CPU之变迁
+
+http://vga.zol.com.cn/341/3419805.html
+
+末日将至 看天堂里我们能用的显卡品牌
+
+https://view.inews.qq.com/a/TEC201904280033680A
+
+手机基带芯片往事：欧洲退出竞争，全球只剩五名玩家
+
+https://mp.weixin.qq.com/s/L6VeZb79-8EU0NywtKd83w
+
+日韩科技战争简史：究竟谁是芯片、半导体、屏幕之王？
+
+https://mp.weixin.qq.com/s/5DA6XFowp0uqdzb52dEGag
+
+台湾处理器拾遗：超级抠门的Centaur造就了威盛x86
+
+https://mp.weixin.qq.com/s/p53CYTdKO-s0Zx-ljeMryA
+
+台湾处理器拾遗（下）：唯偏执狂得以幸存，但却不会带来成功
+
+https://mp.weixin.qq.com/s/KPMhTztucDyGTa4Dl74lUA
+
+谁发明了物联网？
+
+https://mp.weixin.qq.com/s/iMsfYla9UCaU4iYkIgpd9A
+
+从再版游戏机看半导体发展的三十年
+
+https://mp.weixin.qq.com/s/0_8a_kRBntbav4HPSqFLiA
+
+ASML的“三兄弟”往事
+
+https://mp.weixin.qq.com/s/AvDIxGUgrB88HOFaIkqWaw
+
+台积电等三巨头投资ASML的真相
+
+https://mp.weixin.qq.com/s/nQJV-dcNf3YYlC-6Jvv9SQ
+
+从孤芳自赏到流芳百世，充满传奇对后世影响深远的Alpha处理器
+
+https://mp.weixin.qq.com/s/wFw03-uf7qCz7TNkFWqaBw
+
+硬核还原：显微镜手撸晶体管，逆向工程还原经典计算器
+
+https://mp.weixin.qq.com/s/Z6qAZEN1PomdLi0iE4BVPg
+
+一窥Intel第一款X86处理器的内部构造
+
+https://mp.weixin.qq.com/s/wPpSXps_ZVVCabIgM2YM-A
+
+英特尔第一颗处理器诞生背后的故事
 
 https://mp.weixin.qq.com/s/tyuz_73p5Vp_RGQB5y60Ow
 
@@ -168,116 +324,3 @@ Marvell在中国落幕，出来了多少芯片大佬（下）？
 https://www.zhihu.com/question/47312140
 
 BIOS和CMOS究竟是什么关系？
-
-# 上古软件开发
-
-1991年，鲍比·柯提科和一群投资人收购了经营不善的Mediagenic，这间公司成为了动视的前身。为了帮助公司摆脱债务，柯提科对公司进行了重组，改名为动视（Activision），并将总部迁至加州。1997年，当公司终于重回盈利之后，动视走上了收购之路，在之后的十年里收购了约25个独立游戏工作室，以拓宽公司的产品矩阵。《托尼·霍克的滑板》、《使命召唤》和《吉他英雄》等知名游戏系列均在这一时期形成。
-
-1991年，麦可·莫怀米、艾伦·阿德汗和弗兰克·皮尔斯这三名加州大学洛杉矶分校的毕业生为了自己的游戏理想，创办了一家名叫硅与神经键的公司，公司于1994年改名为暴雪娱乐。
-
-https://view.inews.qq.com/wxn/20220119A03BL400
-
-687亿美元！微软买下80后、90后的青春
-
-https://mp.weixin.qq.com/s/ggu2IMSzOTmHtthQhepX2g
-
-暴雪国服正式停服，与网易14年合作结束！数百万玩家纷纷祭奠，再见青春
-
----
-
-Ken Thompson在贝尔实验室的时候，他总是能在一台装了Unix的服务器上黑进他人的账户，不管他人怎么修改账户密码都没有用，当时贝尔实验室里面聚集的都是智商爆表、专业知识过硬的科学家，Ken的行为无疑让他们非常不爽。
-
-有个人分析了Unix的代码之后，找到了后门，重新编译部署了Uinx，但是让他们崩溃的事情再次发生，Ken还是能黑进他们的账户，这个事情让他们百思不得其解。
-
-一直到1983年，Ken获得图灵奖，在大会上解开了这个秘密，原来这个密码后门是通过他写的一个C编译器植入的，而当时那台Unix的机器必须通过这个C编译器编译之后才能运行，所以不管unix怎么修改都没有用，毕竟是要编译的。
-
----
-
-最开始的C++编译器是CFront，由C++之父Bjarne在1982年春到1983年夏完成，而直到1988年6月前，几乎所有的C++编译器都是CFront的移植版本。很多人认为Borland C++与VC++算真正意义的首先非CFront的C++编译器实现，而Bjarne在他书写的C++历史中，认为Zortech才算。
-
-四大高手：Borland C++, Microsoft C++, Watcom C++， Symantec C++。
-
-Portable C Compiler，一种早期的C语言编译器，由Stephen C. Johnson于1970年代中期，在贝尔实验室写作。
-
-虽然现在PCC已经式微了，但80年代初C编译器家族们可都是要么基于PCC，要么大量参考了PCC的设计的。
-
-除了PCC之外，Stephen C. Johnson还是YACC的作者。
-
-SGI的MIPSPro -> Pro64 -> Open64 -> PathScale这条线。Fred Chow（周志德）是Open64项目的主导者。
-
-https://www.zhihu.com/question/39661628
-
-历史上出现过的主流C/C++编译器都有哪些？
-
----
-
-Borland Graphics Interface，或者Turbo C Graphics，是上世纪八九十年代Borland公司出品的Turbo C/Turbo C++/Borland C++等C语言产品中自带的绘图库。因为其简单易用而广受欢迎。
-
-它的现代版本主要有：SDL_bgi/libXbgi/WINBGIm等。
-
-https://sdl-bgi.sourceforge.io/
-
-当然还有当时最流行的bgidemo：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/other/bgidemo.c
-
----
-
-Afx前缀是微软MFC一个小组的名称简写。
-
----
-
-DISKMAN由国人李大海编写。
-
-https://www.zhihu.com/question/47503655
-
-如何评价DiskGenius这款软件？
-
----
-
-中国第一批互联网创业者有不少来自惠多网，马化腾是深圳的DE站站长，金山的求伯君也是一个站长，好像丁磊也玩。
-
-当时中国的互联网出口有两个，一个是中科院的网络，一个是教育科研网。教育网的国际出口在清华大学，清华到中科院也就三四公里的路，但清华的电脑要连上曙光站，得从国际出口去美国兜一圈回来，既慢又不稳定。
-
-清华的学生一直熬到1995年8月，有个网名ACE的用户，一怒之下在自己实验室的386电脑上装了套台湾的BBS软件，把站点起名“水木清华”。水木清华BBS是中国大陆第一个同时在线超过100人的“大型”网站。
-
-
-https://www.zhihu.com/question/19848288
-
-中国最早的论坛（BBS）是哪个？
-
----
-
-2021年，美国前总统特朗普团队使用了Mastodon的源代码，开发了他们的新社交媒体平台，即所谓的Truth Social。
-
-https://mp.weixin.qq.com/s/EG65kmRlKAdTzn8kPmU0BA
-
-反Twitter平台用户激增250万，这名29岁程序员如何凭一己之力扛住超8倍流量增长？
-
----
-
-从Sun走出的著名人物：
-
-Whitfield Diffie：图灵奖获得者，公钥密码体系先驱
-
-James Duncan Davidson：Tomcat作者
-
-Marc Fleury：JBoss作者
-
-Bob Scheifler：X-Windows领导者
-
-Paul Buchheit：GMail发明人
-
-Joshua Bloch：Java大牛，Effective Java作者
-
-Brendan Gregg：DTRace作者
-
-Lars Bak：Java HotSpot作者，V8作者
-
----
-
-在1999年至2015年期间，共有超700名邮局分局负责人因Horizon审计软件的bug而遭到起诉，之后富士通又陆续提出多项并不属实的财务问题。数百人因此被监禁或破产，期间至少四人因此选择自杀。
-
-https://www.36kr.com/p/2598433889188741
-
-系统bug致百人入狱，砸了2.8亿元仍上云失败，二十年了，这家大企业被日本软件坑惨了

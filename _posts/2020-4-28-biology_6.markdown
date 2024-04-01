@@ -87,6 +87,8 @@ RhD抗原阴性，俗称熊猫血。若RhC、Rhc、RhE、Rhe均为阴性（RhNUL
 
 一种是顺势AB型，就是AB两个抗原的基因在同一条染色体上；第二种是夫妻都是Hh杂合子，孩子是hh，罕见的孟买血型，因为合成AB抗原都需要H抗原，hh无法合成h抗原，所以无法合成AB抗原，表现为O型血。这两种情况都是万亿分之一的罕见现象。
 
+**输血相关移植物抗宿主病**：在输入全血的时候，会连带把血液中的免疫细胞输入进去，在双方没有血缘关系时，自身可以识别出外来免疫细胞，然后进行消灭，但是近亲输血因为基因相似，可能无法识别，导致输入进来的免疫细胞攻击自身。
+
 ---
 
 https://mp.weixin.qq.com/s/8QEmodonoo_rc1m85kmMOQ
@@ -166,34 +168,6 @@ https://www.zhihu.com/answer/101506245
 有哪些改变了中国历史知识体系的考古发现？
 
 # 生物
-
-https://mp.weixin.qq.com/s/6-Sh6BG-3lRQ4lktguGc_w
-
-实验室小鼠的祖先在中国？
-
-https://mp.weixin.qq.com/s/5LHT2SZF7VMiliDMBWhsPA
-
-屎无前例的立方体
-
-https://mp.weixin.qq.com/s/LMv5HM3Ru0R6FkcJ6oOEyA
-
-送你一朵大红花，开在其他植物的枝桠
-
-https://mp.weixin.qq.com/s/AobSCJhXK83zDgdzfiOQ4Q
-
-中国牛，哪里牛？
-
-https://mp.weixin.qq.com/s/LAUUrZdXRjtwOvyJZlRxgg
-
-16世纪的沉船，诉说着500年前西非大象的生活
-
-https://mp.weixin.qq.com/s/dzfAZxFyWy_3ullCzgcpJQ
-
-同样是遭遇核辐射，为什么植物不会死于癌症？
-
-https://mp.weixin.qq.com/s/zz92naARYTqLoKKEr08R9w
-
-为什么会有蚊子这么烦人的生物存在？
 
 https://mp.weixin.qq.com/s/-NzHFNhGUwUCQZQxpgt4zQ
 
