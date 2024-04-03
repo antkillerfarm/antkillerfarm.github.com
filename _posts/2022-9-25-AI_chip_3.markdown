@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  AI Chip（三）
+title:  AI Chip（三）——群雄
 category: Chip 
 ---
 
@@ -9,61 +9,215 @@ category: Chip
 
 # AI Chip
 
-## HBM（续）
+## Imagination
 
-常规AI芯片最大的带宽压力（HBM带宽问题），在Groq这种架构上都转换到了内部的SRAM上，但是因为集群内的芯片级联以及计算效率提升，groq就无需再访问HBM。
+Imagination Technologies公司前身是一家名为Video Logic的公司，VideoLogic成立于1985年，主营业务是图形与音频加速等方面。后来选择了与ARM的类似盈利模式——授权IP核，并在1999年更名为Imagination Technologies。
 
-Groq这颗芯片相当于放弃了传统的主显存，而是用更大的L3/L4 cache作为替代，容量/带宽比极高，指令发射密度可以拉得很高，且可能通过2D Systolic Array补偿大吞吐流水线，弥补容量局限。但是与片外主存交互的load/offload cycle仍会慢下来，同时搬运效率也受限于这一段的bandwidth。
+在移动GPU市场上，Imagination的PowerVR GPU一度占有非常高的市场份额。苹果公司设计的各种供苹果手机使用的AP，比如A8、A9、A10等处理器都搭载了Imagination Technologies公司的PowerVR图像处理技术。
 
-大家一致认为目前的HBM看起来不是一个最好的solution，应该会被hybird bonding stacking dram或CXL memory取代，一个替换HBM近程，一个替换远程。
+但在2017年4月，苹果宣布将不再使用其技术后，Imagination股价当天暴跌60%。后于2017年9月，被有中资背景的Canyon Bridge收购。
 
-https://www.zhihu.com/question/645010090
+其AI Chip主要是：PowerVR Series2NX NNA和PowerVR Series3NX NNA。
 
-Groq公司推出的全球最快的大模型推理服务达到每秒输出500个token，如何看待这一技术？
+Imagination目前主要的客户是：
 
-https://zhuanlan.zhihu.com/p/683873553
+- 汽车电子：Renesas
 
-TSP: LPU(Language Processor Unit) 成名绝技
+- 手机：MTK、紫光展锐
 
-## FPGA
+除此之外，由于Imagination已经全国资化了，因此很多研究所也对它的产品感兴趣。
 
-CGRA：Coarse Grained Reconfigurable Array
+从方案来看，Imagination采用的是GPU+NPU的模式。
 
-FPGA：Field Programmable Gate Array
+这种模式的特点主要有：
 
-FPGA主要是由以LUT和MUX为基础构成的门级可编程逻辑块构成的。
+- NPU专注NN计算，其实主要是CNN/GEMM计算。
 
-CGRA是coarse-grained的粗粒度，它是编程重构ALU阵列而非逻辑门阵列，因此很多的运算由硬核实现，不是LUT搭真值表。
+- GPU作为通用计算的兜底，以应付一些不常见的op。GPU支持各种数学计算，单纯从计算的角度是完全可以替代CPU的。GPU的局限主要在于它没有CPU那样的逻辑控制的能力。
 
-https://www.zhihu.com/question/407417134
+- GPU的主频一般低于CPU，因此如果算法的并行性很差的话，效果并没有CPU好。但这种情况并不多见。
 
-CGRA和FPGA有什么不同？
+- 最近高通和华为CPU的超大核设计，应该对于提升串行运算性能很有帮助。毕竟CPU核再多，还能有GPU/NPU的核多吗？如果碰到就需要单挑能力的场合该怎么办呢？
+
+综上，GPU+NPU的模式可以将NN运算基本承接过来，这样CPU的负载相对就比较小了。
+
+从商业的角度讲，Imagination的核心产品还是GPU，NPU只是一个添头而已。它的目的应该还是利用NPU，来多卖一些GPU。
+
+摩尔线程的GPU是基于Imagination的IMG BXT-32-1024 MC4。
+
+官网：
+
+https://www.imgtec.com/vision-ai/
+
+参考：
+
+https://mp.weixin.qq.com/s/W7GNhEq-em18V0YjCZ7MBw
+
+被苹果抛弃的芯片供应商，现状如何？
+
+https://zhuanlan.zhihu.com/p/436515863
+
+PowerVR系列GPU架构的演进（一）
+
+https://zhuanlan.zhihu.com/p/491131559
+
+PowerVR系列GPU架构的演进（二）
+
+https://zhuanlan.zhihu.com/p/492651331
+
+PowerVR系列GPU架构的演进（三）
+
+https://zhuanlan.zhihu.com/p/493240867
+
+PowerVR系列GPU架构的演进（四）
 
 ---
 
-https://mp.weixin.qq.com/s/Cy_vb0PpcvGTDmlMt1VkSw
+2020.1
 
-从GPU、TPU到FPGA及其它：一文读懂神经网络硬件平台战局
+苹果自己研发受阻，重新延续imagination授权。
 
-https://mp.weixin.qq.com/s/DnurlGgd5q4Fwjxy3YnIrQ
+https://zhuanlan.zhihu.com/p/103597189
 
-当数据库遇见FPGA：X-DB异构计算如何实现百万级TPS？
+挣扎两年苹果重新向Imagination低头：自研GPU究竟难在何处？
 
-https://mp.weixin.qq.com/s/H_KnHQ6AzCNFqmW8uDj1rA
+## Qualcomm
 
-基于FPGA的深度学习加速器综述：挑战与机遇
+![](/images/img4/Snapdragon_835.png)
 
-https://mp.weixin.qq.com/s/acAbNP_ERnKlL3_9v_mwow
+SnapDragon = Kryo CPU + Adreno GPU + Hexagon DSP(include Hexagon Tensor Accelerator, HTA & Hexagon Vector eXtensions, HVX)
 
-FPGA：AI ASIC的必经之路？
+参考：
 
-https://mp.weixin.qq.com/s/K_dohaZbCISZlxe1Utu50w
+https://zhuanlan.zhihu.com/p/51727365
 
-如何用FPGA加速卷积神经网络(CNN)？
+骁龙855细节曝光：引入张量加速器最亮眼
 
-https://zhuanlan.zhihu.com/p/152167194
+https://zhuanlan.zhihu.com/p/341328310
 
-两大FPGA公司的“AI技术路线”
+聊聊芯片技术趋势
+
+## 壁仞
+
+https://www.zhihu.com/question/547728200
+
+如何评价壁仞科技发布的最大算力GPGPU BR100？
+
+https://zhuanlan.zhihu.com/p/642431341
+
+壁仞的BR100：来自中国的机器学习GPU
+
+## Cerebras
+
+现在，计算芯片是越做越大，在早先的PC中，最大的芯片无疑是CPU了。但现在高端显卡芯片的面积已经超越CPU了。
+
+Cerebras在这方面更为极端，它的芯片采用了一整张300mm晶圆，将40万个内核，1.2万亿个晶体管，46,225平方毫米的硅和18GB的片上存储器，全部集成在一个与整个晶圆一样大的芯片中，大到令人难以置信。
+
+其实Nvidia的芯片也有越来越大的趋势：
+
+![](/images/img3/nvidia_roadmap.png)
+
+超大芯片主要有两个问题：
+
+- 良品率问题。这个问题可以通过冗余设计来解决。比如Intel的i5、i7实际上都是同一批生产出来的。如果所有核都OK，那就是i7；否则的话，屏蔽不好的核，这就是i5，因此i5常有6核这样的奇怪数字出现。
+
+- 散热问题。
+
+参考：
+
+https://mp.weixin.qq.com/s/Zsmvsy8I_qKZWrONj9Juuw
+
+史上最大芯片正式推出世界最快AI计算机：1/30体积、1/5功耗、3倍性能！谷歌TPU V3在它面前就是“渣”
+
+https://mp.weixin.qq.com/s/nGzDVR9dlF-jL4ZIkss0Ow
+
+这家用一整块硅片做AI芯片的公司成功了？
+
+## Groq 
+
+Groq是Google TPU团队的部分成员创立的AI芯片公司。
+
+官网：
+
+https://groq.com/
+
+参考：
+
+https://zhuanlan.zhihu.com/p/102357412
+
+Groq，“软件定义硬件”概念的背后
+
+https://www.zhihu.com/question/510527941
+
+DSA AI芯片，相对GPGPU，能效上有多大优势？是从哪些方面提升了能效？
+
+## Graphcore
+
+Graphcore是一家英国芯片设计企业，成立于2012年。它的产品被称为IPU，主打数据中心的AI训练和推理。
+
+官网：
+
+https://www.graphcore.ai/
+
+文档：
+
+https://docs.graphcore.ai
+
+这里必须表扬一下Graphcore的文档，写的非常好。
+
+---
+
+![](/images/img5/Tensorflow_Poplar.png)
+
+Graphcore的Tensorflow支持，使用了XLA接口。
+
+![](/images/img5/pytorch-software-stack.png)
+
+而Pytorch支持，则采用了自研的PopTorch和PopART库。
+
+PopTorch作为pytorch的平替，在建模型的同时，将模型导出为onnx格式。
+
+PopART负责导入onnx格式的模型，并调度硬件执行。
+
+---
+
+参考：
+
+https://zhuanlan.zhihu.com/p/103963276
+
+深度剖析AI芯片初创公司Graphcore的IPU
+
+https://mp.weixin.qq.com/s/WZQDmyjGgkGMpLjVP5jKlw
+
+Graphcore
+
+https://zhuanlan.zhihu.com/p/31782874
+
+Graphcore AI芯片：更多分析
+
+https://mp.weixin.qq.com/s/7vxJTh4IHeqUsc7IsLFLSA
+
+解密哈萨比斯投资的IPU，他们要分英伟达一杯羹
+
+https://www.cnblogs.com/zuyunfei/p/16349835.html
+
+AI芯片：编程模型和硬件抽象（Nvidia CUDA vs Graphcore Poplar）
+
+## Expedera
+
+官网：
+
+https://www.expedera.com
+
+![](/images/img5/Expedera.png)
+
+其中的partial summation (PSUM)也是近年来针对大模型的一种常见的优化方法。原理有点类似MapReduce，PSUM相当于Reducer，对数据进行初步的收集，再最终汇总到一起。这样效率上要比全局只有一个单元进行summation要高的多。
+
+参考：
+
+https://www.expedera.com/wp-content/uploads/2023/02/Architectural-Considerations-for-Compute-in-Memory-in-AI-Inference-final.pdf
+
+https://www.expedera.com/wp-content/uploads/2021/04/Expedera-Linley-White-Paper.pdf
 
 ## 寒武纪
 
@@ -180,205 +334,3 @@ https://www.thepaper.cn/newsDetail_forward_16787134
 https://www.thepaper.cn/newsDetail_forward_16869908
 
 详解AI加速器（最终篇）：给想进入赛道的玩家一些建议
-
----
-
-https://zhuanlan.zhihu.com/p/58971347
-
-深度学习的芯片加速器
-
-https://mp.weixin.qq.com/s/S5Kjt4tuf_o6o3Qag8sukQ
-
-Google Jeff Dean独自署名论文：深度学习革命及其对计算机架构和芯片设计的影响，讲述AI芯片发展历程与未来
-
-https://cloud.tencent.com/community/article/244743
-
-深度学习的异构加速技术（一）：AI需要一个多大的“心脏”？
-
-https://cloud.tencent.com/community/article/581797
-
-深度学习的异构加速技术（二）：螺狮壳里做道场
-
-https://cloud.tencent.com/community/article/446425
-
-深度学习的异构加速技术（三）：互联网巨头们“心水”这些AI计算平台
-
-https://zhuanlan.zhihu.com/p/25382177
-
-AI芯片怎么降功耗？
-
-https://mp.weixin.qq.com/s/2aE5fzGZeyX-oFyWbcbA5A
-
-揭开神经网络加速器的神秘面纱之DianNao
-
-https://mp.weixin.qq.com/s/VAFb0DAZAUyDnjE6SlNcXw
-
-如何对比评价各种深度神经网络硬件？不妨给它们跑个分
-
-https://zhuanlan.zhihu.com/p/26594188
-
-浅析Yann LeCun提到的两款Dataflow Chip
-
-https://zhuanlan.zhihu.com/p/25728988
-
-AI芯片的几种选择，你更看好哪个？
-
-https://zhuanlan.zhihu.com/p/25510056
-
-ISSCC 2017看AI芯片的四大趋势
-
-https://zhuanlan.zhihu.com/p/26404565
-
-AI芯片四大流派论剑，中国能否弯道超车？
-
-https://zhuanlan.zhihu.com/p/27472524
-
-从AI芯片说起，一起来看芯片门类
-
-https://mp.weixin.qq.com/s/RKRDBiBzG5u2P2eaqNAFbg
-
-机器学习的处理器列表
-
-https://mp.weixin.qq.com/s/uzeeZiaAFdA0C_zAcX756w
-
-深度学习架构之争
-
-https://mp.weixin.qq.com/s/VM-KiIJHA2gXLVu0WRIzwA
-
-王中风教授：如何满足不同应用场景下深度神经网络模型算力和能效需求
-
-https://mp.weixin.qq.com/s/f5mQkWxPYc77t2we1Y306Q
-
-深度学习引领AI芯片大战
-
-https://mp.weixin.qq.com/s/6ksL9p1Gmnrd2HahU3KniQ
-
-ARM攒机指南——AI篇：5大千万级设备市场技术拆解
-
-https://zhuanlan.zhihu.com/p/32953957
-
-浅析图像视频类AI芯片的灵活度
-
-https://mp.weixin.qq.com/s/cfqnLYZSxJhtsgtrydx02A
-
-语音及文本类AI芯片的需求分析
-
-https://mp.weixin.qq.com/s/31SBgTXfIcwkmIzujBLxOA
-
-深度学习引擎的终极形态是什么?
-
-https://zhuanlan.zhihu.com/p/35103140
-
-“传说中”的异步电路能否在AI芯片界异军突起？
-
-https://mp.weixin.qq.com/s/PDe8O5zskxD_mycwH0_3lg
-
-AI是如何影响计算机内存系统的？
-
-https://blog.csdn.net/lien0906/article/details/78863118
-
-深度学习中GPU和显存分析
-
-http://eyeriss.mit.edu/
-
-Eyeriss是MIT设计的一款NN加速器。
-
-https://zhuanlan.zhihu.com/p/37520172
-
-一窥ARM的AI处理器
-
-https://mp.weixin.qq.com/s/UpnkYfhaEsYhze8GdpZ8Dg
-
-Arm的NPU究竟什么水平？
-
-https://mp.weixin.qq.com/s/QPuOmv7-agrcgnchgs3Hkg
-
-清华大学提出AI计算芯片的存储优化新方法
-
-https://mp.weixin.qq.com/s/eyzzeYOKdah-9WGUrhbAkg
-
-非冯诺依曼新架构：IBM100万忆阻器大规模神经网络加速AI
-
-https://mp.weixin.qq.com/s/oOYGa4Mti6KpkpI4TtpitQ
-
-地平线杨铭：从无形视觉到有形芯片
-
-https://mp.weixin.qq.com/s/_8lbTU0GFEXQr_4pdQ6XPw
-
-同步SGD等现有分布式训练方式将过时，Yoshua Bengio谈迈向硬件友好的深度学习
-
-https://mp.weixin.qq.com/s/5MyuZf_TBm2NV47CRAz5Dw
-
-2017图灵奖得主：通用芯片每年仅提升3%，神经专用架构才是未来
-
-https://zhuanlan.zhihu.com/p/57808378
-
-AI芯片0.5与2.0
-
-https://mp.weixin.qq.com/s/XDwTI-gnnFMLjVBbOGKL9w
-
-清华大学团队研制高能效通用神经网络处理器芯片STICKER-T
-
-https://mp.weixin.qq.com/s/xbHP1RFn7F7BbimxgWaKqg
-
-Facebook把服务27亿人的AI硬件系统开源了
-
-https://mp.weixin.qq.com/s/BD-HAILp3TPvBFlIy6QC4w
-
-一文看懂机器视觉芯片
-
-https://mp.weixin.qq.com/s/PMnNay4CRgVghA4fU9oLqg
-
-牛津大学研发类脑光子芯片，运算速度超人脑1000倍
-
-https://mp.weixin.qq.com/s/e333KjLavEvvpNIL3u1Y4Q
-
-NovuMind异构智能核心技术引领智联网
-
-https://mp.weixin.qq.com/s/fSSyOs4-NXbPTbDjpfJBNQ
-
-Google IPU：互联网巨头纷纷进军芯片行业是为何？
-
-https://mp.weixin.qq.com/s/S1y4NEx4_Mgwf68S2pexqA
-
-拿着锤子找钉子，数字芯片领导者比特大陆进军人工智能
-
-https://mp.weixin.qq.com/s/gtgPYf939uYRzxAab_LZLQ
-
-谢源：计算存储一体化，在存储里做深度学习，架构创新实现下一代AI芯片
-
-https://mp.weixin.qq.com/s/s-fYxv4z5kkJUFueU2IR7w
-
-BP表达式与硬件架构：相似性构建更高效的计算单元
-
-https://mp.weixin.qq.com/s/1r7G84les7FihqPbSiS0Ng
-
-华为首款手机端AI芯片麒麟970
-
-https://mp.weixin.qq.com/s/z68hk1yqg60QCjgTyzgG2w
-
-GPU深度学习的“加速神器”
-
-https://mp.weixin.qq.com/s/O-NDsFs6AOwl43LyevXtzg
-
-OpenAI发布“块稀疏”GPU内核：实现文本情感分析与图像生成建模当前最优水平
-
-https://mp.weixin.qq.com/s/XXef4F9HEZizoWRYXwHitw
-
-如何配置一台深度学习工作站?
-
-https://mp.weixin.qq.com/s/_xFRRkVyN9qevLeek7bFxQ
-
-深度学习中GPU和显存分析
-
-https://mp.weixin.qq.com/s/k5Xx-nnaf-yfWqGLIY3LEg
-
-特斯拉的芯片究竟多强
-
-https://zhuanlan.zhihu.com/p/88927564
-
-窥探神经网络加速器的数据复用（一）
-
-https://mp.weixin.qq.com/s/YARcCzQXqnJmWRtV2zd_FQ
-
-国内外AI芯片发展现状

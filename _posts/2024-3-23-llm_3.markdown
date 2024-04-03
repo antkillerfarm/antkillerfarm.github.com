@@ -122,3 +122,31 @@ https://www.zhihu.com/question/628395521
 https://www.zhihu.com/question/627258986
 
 现在LLM的大小为什都设计成6/7B、13B和130B几个档次？
+
+# NVIDIA+
+
+## cuLitho
+
+光刻是芯片制造过程中最复杂、最昂贵、最关键的环节，其成本约占整个硅片加工成本的1/3甚至更多。计算光刻模拟了光通过光学元件并与光刻胶相互作用时的行为，应用逆物理算法来预测掩膜板上的图案，以便在晶圆上生成最终图案。
+
+“计算光刻是芯片设计和制造领域中最大的计算工作负载，每年消耗数百亿CPU小时。”黄仁勋讲解道，“大型数据中心24x7全天候运行，以便创建用于光刻系统的掩膜板。这些数据中心是芯片制造商每年投资近2000亿美元的资本支出的一部分。”而cuLitho能够将计算光刻的速度提高到原来的40倍。
+
+---
+
+![](/images/img5/RL_EDA.png)
+
+NV的EDA辅助设计
+
+## profile
+
+NVIDIA System Management Interface (NSMI): 即nvidia-smi。
+
+NVIDIA Nsight Systems (NSYS)
+
+NVIDIA Data Center GPU Manager (DCGM)
+
+NVIDIA Management Library (NVML): NVML为GPU硬件数据提供了编程接口，开发者可以通过编程的方式访问GPU的各项数据，其中就包含GPU利用率，nvidia-smi和DCGM的背后就是NVML，推荐高级开发者使用。
+
+https://fkong.tech/posts/2023-11-19-torch-gpu-util/
+
+如何把PyTorch的GPU利用率提升到100%?

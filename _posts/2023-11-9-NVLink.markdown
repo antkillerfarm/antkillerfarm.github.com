@@ -143,6 +143,22 @@ GPU存储资源：寄存器，本地内存，共享内存，缓存，显存等�
 | H200 | 144GB（24GBx6） HBM3e |
 | GB200 | 192GB（24GBx8） HBM3e |
 
+## 紧耦合 vs 松耦合
+
+网线连接上万台机器的分布式计算，早已经被广泛用于数据中心。然而网线和内存的带宽差异巨大。一般将这种低带宽分布式计算称为**松耦合**，与之相对的是**紧耦合**。
+
+显然，互联带宽没有显著高于内存带宽时，任何网络拓扑都没法扩展到非常多节点的紧耦合。
+
+分布式节点太多一定会造成带宽问题。NVidia创造的紧耦合系统目前主流的尺度是单机8卡，当然也做过16卡的形态。大力出奇迹的规格是256卡的GH200，但是对应的全局带宽堆得相当夸张，否则就只是个松耦合系统。
+
+紧耦合的AI集群被称为AI Factory，而松耦合的AI集群则被称为AI Cloud。前者偏重于极致的性能，而后者则主打多样性业务、低成本。
+
+Scale Out是指Application可以在水平方向上扩展。一般对数据中心的应用而言，Scale out指的是当添加更多的机器时，应用仍然可以很好的利用这些机器的资源来提升自己的效率从而达到很好的扩展性。
+
+Scale Up是指Application可以在垂直方向上扩展。一般对单台机器而言，Scale Up值得是当某个计算节点（机器）添加更多的CPU Cores，存储设备，使用更大的内存时，应用可以很充分的利用这些资源来提升自己的效率从而达到很好的扩展性。
+
+从Scale层面来看，紧耦合是在单卡性能受到工艺/面积限制的情况下的Scale Up，而松耦合更多的是Scale Out。
+
 ## NCCL
 
 NCCL是Nvidia Collective multi-GPU Communication Library的简称，它是一个实现多GPU的collective communication通信库，可以在PCIe、Nvlink、InfiniBand上实现较高的通信速度。
@@ -248,31 +264,3 @@ InfiniBand 与Intel Omni-Path Architecture
 https://zhuanlan.zhihu.com/p/580035183
 
 RoCE vs Infiniband vs TCP/IP
-
-# NVIDIA+
-
-## cuLitho
-
-光刻是芯片制造过程中最复杂、最昂贵、最关键的环节，其成本约占整个硅片加工成本的1/3甚至更多。计算光刻模拟了光通过光学元件并与光刻胶相互作用时的行为，应用逆物理算法来预测掩膜板上的图案，以便在晶圆上生成最终图案。
-
-“计算光刻是芯片设计和制造领域中最大的计算工作负载，每年消耗数百亿CPU小时。”黄仁勋讲解道，“大型数据中心24x7全天候运行，以便创建用于光刻系统的掩膜板。这些数据中心是芯片制造商每年投资近2000亿美元的资本支出的一部分。”而cuLitho能够将计算光刻的速度提高到原来的40倍。
-
----
-
-![](/images/img5/RL_EDA.png)
-
-NV的EDA辅助设计
-
-## profile
-
-NVIDIA System Management Interface (NSMI): 即nvidia-smi。
-
-NVIDIA Nsight Systems (NSYS)
-
-NVIDIA Data Center GPU Manager (DCGM)
-
-NVIDIA Management Library (NVML): NVML为GPU硬件数据提供了编程接口，开发者可以通过编程的方式访问GPU的各项数据，其中就包含GPU利用率，nvidia-smi和DCGM的背后就是NVML，推荐高级开发者使用。
-
-https://fkong.tech/posts/2023-11-19-torch-gpu-util/
-
-如何把PyTorch的GPU利用率提升到100%?

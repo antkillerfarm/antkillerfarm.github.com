@@ -53,6 +53,24 @@ ONNX--跨框架的模型中间表达框架
 
 https://github.com/saurabh-shandilya/onnx-utils
 
+---
+
+ONNX模型除了可以由其他框架生成之外，也可借助ONNX官方的helper API构建。
+
+https://onnx.ai/onnx/api/helper.html
+
+由于这种方法比较繁琐，MS又发明了ONNX Script：
+
+https://github.com/microsoft/onnxscript
+
+参考：
+
+https://cloudblogs.microsoft.com/opensource/2023/08/01/introducing-onnx-script-authoring-onnx-with-the-ease-of-python/
+
+Introducing ONNX Script: Authoring ONNX with the ease of Python
+
+---
+
 参考：
 
 https://mp.weixin.qq.com/s/etSrI8Z3-NWbrqNWIbfzjw

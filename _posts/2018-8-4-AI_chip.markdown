@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  AI Chip（一）
+title:  AI Chip（一）——TPU, HBM
 category: Chip 
 ---
 
@@ -33,247 +33,269 @@ NN计算问题的瓶颈主要包括两类：
 
 2.IO问题，也称带宽问题。早期的NN由于算子有限，基本只有FC、Conv、Pooling、Activation等少数几种算子。但现在的NN模型算子可就多了，且有相当部分算子属于非计算类的搬运数据算子，比如permute等。针对这类运算，一般采用被称作Tensor Processor的硬件单元进行加速。
 
-## DEEPHi
+## TPU
 
-2018.8
+​Tensor Processing Unit(TPU)是Google推出的AI芯片系列。目前已经有3个版本：
 
-深鉴科技是一家AI Chip公司。成立于2016年3月，2018年7月被Xilinx收购。
+TPU v1, deployed 2015, 92 teraops, **inference only**.
 
-深鉴科技与云天励飞、寒武纪和地平线共同被称为“天寒地鉴”的中国AI芯片四小龙。
+TPU v2, cloud TPU 2017, pod 2018, 180 teraflops, 64 GB HBM, **training and inference**, generally available. 11.5 petaflops in a **pod**.
 
-官网：
+TPU v3, cloud beta 2018, 420 teraflops, 128 GB HBM, training and inference, beta. >100 petaflops in a pod.
 
-http://www.deephi.com/
+论文：
 
-姚颂，1992年出生，2015年毕业于清华大学电子工程系。曾任深鉴科技创始人&CEO，现担任东方空间联合创始人&联席CEO。
+《In-Datacenter Performance Analysis of a Tensor Processing Unit​》
 
----
+《TPU v4: An Optically Reconfigurable Supercomputer for Machine Learning with Hardware Support for Embeddings》
 
-如果说2017年以前的AI Chip领域，主要解决的是芯片有无的问题的话，那么2018年的重点就聚焦在如何更好的使用上了。
-
-性能方面各家各有千秋，即使不考虑功耗、面积等约束，也没有哪家在所有运算上，都比别人快，因此产品只要不是全面落伍，就还有的混。但易用性方面差距就比较大了。
-
-1.CPU+NN混合编程。深鉴这方面做的还不错，似乎一套工具链就可以搞定，就是不知道自动化程度如何。有的友商连这一步都没做好，两套工具链+手动链接，把应用工程师折腾惨了。
-
-2.模型压缩。Pruning方面由于有韩神的加持，确然做的很好，比我司强。Quantization方面，INT8量化算是最基本的量化了，不知道UINT8/INT16，他们做的如何。
-
-3.Tensor Processor。深鉴这方面似乎是空白，这导致的一个结果就是AI Chip支持的运算非常有限，CPU负载过高，而AI Chip的负载相对就不行了。
-
-4.模型导入。这方面深鉴只能说还不入流。虽然表面看来，它支持了Caffe和Tensorflow。然而它的支持方案是修改源代码。。。众所周知，pb文件的易用性是建立在通信双方使用同一套协议的基础之上。但目前AI领域魔改成风，跑个开源模型，还必须要下载作者魔改版的Caffe。。。可以想见深鉴这方面的自动化程度一定不咋样，肯定有很多手工活要做。
-
-那么正确的做法是什么呢？参见ONNX。我司的方案比ONNX略早，但思路基本一致。
-
-5.Model Zoo。这个比较寒碜了，只有三个模型，而且还都是最简单的分类模型。不过从支持Inception v1来看，应该是掌握了加速分支网络的技巧。其他的Face Detection等只有视频，没有模型，似乎还处于实验室阶段，可能易用性还有待提升。
-
-无耻的谈一下我司的Model Zoo。包含40+的模型，涵盖图像分类、目标检测、图像分割、人脸识别、超分辨率、OCR等。目前，主要往RNN、Attention方面发展。这里会遇到循环结构的问题，还没有做的太好。
-
-目前的AI Chip战争，入局的玩家基本都解决了芯片有无的问题。体系结构的红利也吃的差不多了，在未来几年不大可能再保持目前的算力增速。因此，未来争夺的焦点将转向软件方面。实际上，今年以来，已经有客户拿友商产品性能来压我们。然而也就是压一下而已，让他弃用他肯定不干。原因无他，我司80%的功能都已经自动化，没人会和好用过不去。
+![](/images/img4/TPU.png)
 
 ---
 
-2021.11
+![](/images/img5/TPU.png)
 
-最近国内比较火的AI芯片初创公司已经换成了：
+TPUv2的改进：
 
-- 壁仞科技
-- 摩尔线程
-- 沐曦集成
-- 燧原科技
-- 瀚博半导体
-- 登临科技
-- 天数智芯
+- TPU v2将上述两个互相独立的缓冲区调整位置后合并为向量存储区（Vector Memory），从而提高可编程性。
 
----
+- 改进针对的是激活函数管道（Activation Pipeline），TPU v1的管道内包含一组负责非线性激活函数运算的固定功能单元。TPU v2则将其改为可编程性更高的向量单元（Vector Unit），使其对编译器和编程人员而言更易用。
 
-某牛点评：
+- 将矩阵乘法单元直接与向量存储区连接，如此一来，矩阵乘法单元就成为向量单元的协处理器。这种结构对编译器和编程人员而言更友好。
 
-做一个ASIC其实目前真没有什么大的门槛，不然你以为上海那么多家的ASIC公司是怎么来的，随便拉几个人都敢成立ASIC公司，还不是门槛不高，你让他就那几个人搞个CPU和GPU试试。但是要做一个好的ASIC，适配模型和场景丰富的ASIC，是非常不容易的。而且一旦模型场景丰富，你就不仅仅是在硬件领域所谓的PPA各种挣扎，你还需要在指令级别，或者说通用和性能做妥协，甚至架构上的一些妥协改变。
+- TPU v1使用DDR3内存，因为它针对的是推理，只需使用已有的权重，不需要生成权重。针对训练的TPU v2则不一样，训练时既要读取权重，也要写入权重，所以在v2中，原本的DDR3改为与向量存储区相连，这样就既能向其读取数据，又能向其写入数据。
 
-## Imagination
+- 将DDR3改为HBM。因为从DDR3读取参数速度太慢，影响性能，而HBM的读写速度快20倍。
 
-Imagination Technologies公司前身是一家名为Video Logic的公司，VideoLogic成立于1985年，主营业务是图形与音频加速等方面。后来选择了与ARM的类似盈利模式——授权IP核，并在1999年更名为Imagination Technologies。
+- 在HBM和向量存储区之间增加互连（Interconnect），用于TPU之间的连接，组成Pod超级计算机。
 
-在移动GPU市场上，Imagination的PowerVR GPU一度占有非常高的市场份额。苹果公司设计的各种供苹果手机使用的AP，比如A8、A9、A10等处理器都搭载了Imagination Technologies公司的PowerVR图像处理技术。
-
-但在2017年4月，苹果宣布将不再使用其技术后，Imagination股价当天暴跌60%。后于2017年9月，被有中资背景的Canyon Bridge收购。
-
-其AI Chip主要是：PowerVR Series2NX NNA和PowerVR Series3NX NNA。
-
-Imagination目前主要的客户是：
-
-- 汽车电子：Renesas
-
-- 手机：MTK、紫光展锐
-
-除此之外，由于Imagination已经全国资化了，因此很多研究所也对它的产品感兴趣。
-
-从方案来看，Imagination采用的是GPU+NPU的模式。
-
-这种模式的特点主要有：
-
-- NPU专注NN计算，其实主要是CNN/GEMM计算。
-
-- GPU作为通用计算的兜底，以应付一些不常见的op。GPU支持各种数学计算，单纯从计算的角度是完全可以替代CPU的。GPU的局限主要在于它没有CPU那样的逻辑控制的能力。
-
-- GPU的主频一般低于CPU，因此如果算法的并行性很差的话，效果并没有CPU好。但这种情况并不多见。
-
-- 最近高通和华为CPU的超大核设计，应该对于提升串行运算性能很有帮助。毕竟CPU核再多，还能有GPU/NPU的核多吗？如果碰到就需要单挑能力的场合该怎么办呢？
-
-综上，GPU+NPU的模式可以将NN运算基本承接过来，这样CPU的负载相对就比较小了。
-
-从商业的角度讲，Imagination的核心产品还是GPU，NPU只是一个添头而已。它的目的应该还是利用NPU，来多卖一些GPU。
-
-摩尔线程的GPU是基于Imagination的IMG BXT-32-1024 MC4。
-
-官网：
-
-https://www.imgtec.com/vision-ai/
-
-参考：
-
-https://mp.weixin.qq.com/s/W7GNhEq-em18V0YjCZ7MBw
-
-被苹果抛弃的芯片供应商，现状如何？
-
-https://zhuanlan.zhihu.com/p/436515863
-
-PowerVR系列GPU架构的演进（一）
-
-https://zhuanlan.zhihu.com/p/491131559
-
-PowerVR系列GPU架构的演进（二）
-
-https://zhuanlan.zhihu.com/p/492651331
-
-PowerVR系列GPU架构的演进（三）
-
-https://zhuanlan.zhihu.com/p/493240867
-
-PowerVR系列GPU架构的演进（四）
+TPUv3在体系结构方面改进不大，主要是堆料：加计算单元，加内存，加主频等等。
 
 ---
 
-2020.1
+TPUv4是TPU系列时隔4年（2021）之后的大升级。它的改进主要是：
 
-苹果自己研发受阻，重新延续imagination授权。
+- TPU核心间的网络拓扑由2D Tours改为3D Tours。
 
-https://zhuanlan.zhihu.com/p/103597189
+- 加入Sparse Core专门处理Transformer模型中的Embedding操作。
 
-挣扎两年苹果重新向Imagination低头：自研GPU究竟难在何处？
+- 引入Optical Circuit Switching，OCS。光互连是物理距离较远的芯片的首选。隔壁的PCIE系列也类似，PCIE 6将是最后一代使用电线的标准，未来的PCIE 7+也将转向光通信。
 
-## 壁仞
+OCS是谷歌自研的数据中心光交换机。通常数据中心内数据交换是光电混合网络，设备之间的主要互联通过光缆/铜缆/光电转换器件、以及交换机ASIC/Serdes/PCIE/NVLink等链路实现。与过去在网络层之间多次将信号“从电转换为光，再到电”不同，OCS是一种全光学的连接方案，通过MEMS阵列结合光环路器、波分复用光模块实现光路的灵活切换、以达到直接通过光信号组建交换网络的目的。
 
-https://www.zhihu.com/question/547728200
+---
 
-如何评价壁仞科技发布的最大算力GPGPU BR100？
+TPU v5e是2023年发布的。
 
-https://zhuanlan.zhihu.com/p/642431341
+https://zhuanlan.zhihu.com/p/653993836
 
-壁仞的BR100：来自中国的机器学习GPU
+面向大模型的最强DSA——TPU v5e架构分析
 
-## 沐曦
+https://zhuanlan.zhihu.com/p/626412573
 
-沐曦专注在研发全兼容CUDA及ROCm生态的国产GPU计算卡（面向AIDC和HPC的计算需求），创始团队也是AMD背景。
+谈谈Google TPUv4处理器的硬件结构、计算范式与SuperPod互连拓扑－－部分细节对比Nvidia
 
-## Habana
+---
 
-Habana Labs是一家位于以色列特拉维夫和加州圣何塞的无晶圆厂半导体公司，创立于2016年。
+https://www.zhihu.com/answer/2716117809
 
-Habana的产品线主要有：
+David Patterson在UCB的演讲，分享了Google TPU近十年的发展历程以及心得体会
 
-- 用于Train的Gaudi系列芯片。
+## Coral Dev Board
 
-- 用于Inference的Goya系列芯片。这是一个基于PCI接口的板卡，所以还是数据中心的范畴，暂不能用于终端设备。
-
-据说国内的数据中心相关的企业，对它的产品很感兴趣。
-
-官网：
-
-https://habana.ai
-
->2019.12 Habana被Intel收购。稍后，就传出Intel解散Nervana团队的事情。后者是2016年被Intel收购的一家AI芯片公司。
-
-国外类似的企业还有：
-
-- HAILO
-- blaize
+Coral Dev Board是Google于2019年3月推出的一款搭载TPU的嵌入式开发板。
 
 参考：
 
-https://mp.weixin.qq.com/s/cnHQSmM89Sp92gke_F9T2Q
+http://linuxgizmos.com/google-launches-i-mx8m-dev-board-with-edge-tpu-ai-chip/
 
-一窥Habana的推理和训练神经处理器
+Google launches i.MX8M dev board with Edge TPU AI chip
 
-https://zhuanlan.zhihu.com/p/84562992
+## 脉动阵列
 
-Goya from Habana Labs芯片与软件栈分析
+**AI=矩阵乘+非线性**
 
-## Qualcomm
+由于非线性只有可怜的O(N)的计算量，矩阵乘的O(N^3)的计算量才是AI中的绝对计算瓶颈。
 
-![](/images/img4/Snapdragon_835.png)
+---
 
-SnapDragon = Kryo CPU + Adreno GPU + Hexagon DSP(include Hexagon Tensor Accelerator, HTA & Hexagon Vector eXtensions, HVX)
+Systolic array是孔祥重和他的博士生Charles Leiserson于1978年发明的。
 
-参考：
+论文：
 
-https://zhuanlan.zhihu.com/p/51727365
+《Why systolic architectures?》
 
-骁龙855细节曝光：引入张量加速器最亮眼
+![](/images/img4/Systolic_array.gif)
 
-https://zhuanlan.zhihu.com/p/341328310
-
-聊聊芯片技术趋势
-
-## Huawei
-
-Huawei的AI芯片项目大约启动于2016年底，算是布局比较晚的了，所以初期它们和寒武纪有不少合作。
-
-官网：
-
-https://ascend.huawei.com/home
-
-Model Zoo：
-
-https://github.com/Ascend/models
-
-重要的开源项目：
-
-https://gitee.com/ascend/tensorflow
-
-https://gitee.com/mindspore/graphengine
+>孔祥重（H. T. Kung/Kung, Hsiang-Tsung），1945年生。台湾国立清华大学本科（1968）+CMU博士（1974）。CMU、Harvard教授。台湾中央研究院院士、美国工程院院士。除了Systolic array之外，数据库领域的Optimistic concurrency control（乐观并发控制）也是他的贡献。   
+>除了Charles Eric Leiserson之外，他的博士生还有Robert Tappan Morris，也就是著名的Morris Worm的作者。
 
 参考：
 
-https://mp.weixin.qq.com/s/P381v0eXrwfzlLE79c8sGg
+http://web.cecs.pdx.edu/~mperkows/temp/May22/0020.Matrix-multiplication-systolic.pdf
 
-华为在hotchips详细介绍了达芬奇架构
+矩阵乘法器原理
 
-https://www.hiascend.com/zh/software/cann
+http://www.eecs.harvard.edu/~htk/publication/1980-introduction-to-vlsi-systems-kung-leiserson.pdf
 
-CANN（Compute Architecture for Neural Networks）是华为针对AI场景推出的异构计算架构
+Algorithms for VLSI Processor Arrays
 
-## Cerebras
+https://zhuanlan.zhihu.com/p/26522315
 
-现在，计算芯片是越做越大，在早先的PC中，最大的芯片无疑是CPU了。但现在高端显卡芯片的面积已经超越CPU了。
+脉动阵列-因Google TPU获得新生
 
-Cerebras在这方面更为极端，它的芯片采用了一整张300mm晶圆，将40万个内核，1.2万亿个晶体管，46,225平方毫米的硅和18GB的片上存储器，全部集成在一个与整个晶圆一样大的芯片中，大到令人难以置信。
+http://www.sohu.com/a/142237570_505803
 
-其实Nvidia的芯片也有越来越大的趋势：
+我们应该拥抱“脉动阵列”吗？
 
-![](/images/img3/nvidia_roadmap.png)
+https://zhuanlan.zhihu.com/p/26882794
 
-超大芯片主要有两个问题：
+Google深度揭秘TPU
 
-- 良品率问题。这个问题可以通过冗余设计来解决。比如Intel的i5、i7实际上都是同一批生产出来的。如果所有核都OK，那就是i7；否则的话，屏蔽不好的核，这就是i5，因此i5常有6核这样的奇怪数字出现。
-
-- 散热问题。
+---
 
 参考：
 
-https://mp.weixin.qq.com/s/Zsmvsy8I_qKZWrONj9Juuw
+https://mp.weixin.qq.com/s/1X9xiZkmVPI-j-aipr-ocg
 
-史上最大芯片正式推出世界最快AI计算机：1/30体积、1/5功耗、3倍性能！谷歌TPU V3在它面前就是“渣”
+AlphaGo Master最新架构和算法，谷歌云与TPU拆解
 
-https://mp.weixin.qq.com/s/nGzDVR9dlF-jL4ZIkss0Ow
+https://mp.weixin.qq.com/s/Yo0uKd1Mzy4mmS4r0mxfVw
 
-这家用一整块硅片做AI芯片的公司成功了？
+有图有真相：深度拆解谷歌TPU3.0，新一代AI协同处理器
+
+https://mp.weixin.qq.com/s/kPrZ0PuevXEJjVB7RXs70g
+
+谷歌TPU率队，颠覆3350亿美元的半导体行业
+
+https://mp.weixin.qq.com/s/wunqEHC6c-yUVXTl4yTG4w
+
+仅需1/5成本：TPU是如何超越GPU，成为深度学习首选处理器的
+
+https://mp.weixin.qq.com/s/vncPcczTyqglndeZAgjWfw
+
+一文读懂：谷歌千元级Edge TPU为何如此之快？
+
+https://www.nextplatform.com/2018/05/10/tearing-apart-googles-tpu-3-0-ai-coprocessor/
+
+Tearing Apart Google’s TPU 3.0 AI Coprocessor
+
+https://mp.weixin.qq.com/s/3DubSQ1D59Z-PCovjHiidQ
+
+TPU(灵魂三问 WHAT? WHY? HOW?)
+
+https://mp.weixin.qq.com/s/j053qtpdz21IdgS22uGwAw
+
+深入剖析卷积乘累加的硬件加速技术
+
+https://mp.weixin.qq.com/s/XXO4hkjJkcZ5sTVVKWghEw
+
+TPU的起源，Jeff Dean综述后摩尔定律时代的ML硬件与算法
+
+https://mp.weixin.qq.com/s/e8zOrmiIidy8IoV1yMfdKg
+
+谷歌长文总结四代TPU打造经验：里程碑式的TPUv4是怎样炼成的？
+
+https://mp.weixin.qq.com/s/uEAlKdpzutOpnPGmg5dOjw
+
+谷歌TPU超算，大模型性能超英伟达，已部署数十台：图灵奖得主新作
+
+https://zhuanlan.zhihu.com/p/656363598
+
+谷歌TPU2机器学习集群的幕后
+
+## HBM
+
+HBM：High Bandwidth Memory是一款新型的CPU/GPU内存芯片（即“RAM”），其实就是将很多个DDR芯片堆叠在一起后和GPU封装在一起，实现大容量，高位宽的DDR组合阵列。
+
+![](/images/img2/HBM.jpg)
+
+这是HBM的结构图。
+
+![](/images/img2/HBM_2.jpg)
+
+这是HBM和GDDR5的对比图。
+
+从上面两图可以看出，HBM的集成程度在chip一级，介于PCB和die之间，这也就是近来比较火的Chiplet技术。
+
+HBM带宽是传统内存（DRAM）的4.5倍，因此更适合处理AI应用程序所需的大量数据。这种性能的提升是如此之大，以至于许多客户更愿意支付专用内存所需的更高价格(每GB大约25美元，标准内存大约8美元)。
+
+LPDDR和HBM卷成本，如果考虑的是$/GB，那LPDDR确实有优势，但如果考虑的是$/GBps，HBM还是最具性价比的选择。而LLM虽然对内存容量有比较大的需求，但对于内存带宽同样有巨大的需求。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/33990592
+
+HBM火了，它到底是什么？
+
+https://zhuanlan.zhihu.com/p/34164501
+
+HBM技术之显卡应用
+
+https://mp.weixin.qq.com/s/5JrsQnwL6u1fZNIpKq_hQA
+
+DRAM的架构历史和未来
+
+https://mp.weixin.qq.com/s/PzD1lCe5h3VkMrhFb7CfQg
+
+后SoC时代或将迎来Chiplet拐点
+
+https://mp.weixin.qq.com/s/oMA9RSaq0nuSNgKDRwHavQ
+
+Chiplet最强科普
+
+https://zhuanlan.zhihu.com/p/356505099
+
+Chiplet与异构集成技术研究
+
+https://www.zhihu.com/question/565166250
+
+AMD的chiplets芯片出了这么多年了，为什么Intel和NVIDIA还不跟进？
+
+https://www.zhihu.com/question/318057718
+
+hbm2显存和gddr6显存,如果单从相同显存比较性能哪个好？
+
+https://www.zhihu.com/question/422438453
+
+NVIDIA为什么在游戏卡上死活不用HBM2显存？
+
+https://zhuanlan.zhihu.com/p/681519240
+
+HBM发展概述
+
+## 存算一体
+
+![](/images/img4/bottleneck.png)
+
+传统架构存在上图所示的“存储墙”问题。
+
+目前存算技术主要有几个方向：
+
+查存计算（Processing With Memory）：GPU中对于复杂函数就采用了这种计算方法，是早已落地多年的技术。存储芯片内部的存储单元完成查表计算操作，存储单元和计算单元完全融合，没有一个独立的计算单元。
+
+近存计算（Computing Near Memory）：典型代表包括AMD的Zen系列CPU。计算操作由位于存储区域外部的独立计算芯片/模块完成。这种架构设计的代际设计成本较低，适合传统架构芯片转入。
+
+存内计算（Computing In Memory）：典型代表是Mythic、闪忆、知存、九天睿芯。计算操作由位于存储芯片/区域内部的独立计算单元完成，存储和计算可以是模拟的也可以是数字的。这种路线适合算法固定的场景算法计算，目前主要用于语音等轻算力场景。
+
+![](/images/img5/Computing_In_Memory.webp)
+
+https://mp.weixin.qq.com/s/kq5F47N3LS43ZKdwe9-CUQ
+
+端侧智能存算一体芯片的需求、现状与挑战
+
+https://zhuanlan.zhihu.com/p/480612865
+
+存算一体技术是什么？发展史、优势、应用方向、主要介质
+
+https://zhuanlan.zhihu.com/p/522755103
+
+存算一体芯片设计与编译器开发
+
+https://zhuanlan.zhihu.com/p/444859995
+
+阿里达摩院最新存算芯片技术解读
+
+https://www.zhihu.com/question/623317319
+
+存算一体芯片的技术壁垒是什么？

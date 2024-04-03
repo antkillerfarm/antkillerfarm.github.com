@@ -239,42 +239,6 @@ CPU的核心设计会影响提高频率的难度，通常IPC越高，频率就�
 
 龙芯认为在CPU核心逻辑设计水平接近同期的主流产品之前，没有必要过于注重工艺和频率。因此龙芯在中科院计算所时，每一代设计都在大幅度修改CPU核心的逻辑设计。
 
-## 存算一体
-
-![](/images/img4/bottleneck.png)
-
-传统架构存在上图所示的“存储墙”问题。
-
-目前存算技术主要有几个方向：
-
-查存计算（Processing With Memory）：GPU中对于复杂函数就采用了这种计算方法，是早已落地多年的技术。存储芯片内部的存储单元完成查表计算操作，存储单元和计算单元完全融合，没有一个独立的计算单元。
-
-近存计算（Computing Near Memory）：典型代表包括AMD的Zen系列CPU。计算操作由位于存储区域外部的独立计算芯片/模块完成。这种架构设计的代际设计成本较低，适合传统架构芯片转入。
-
-存内计算（Computing In Memory）：典型代表是Mythic、闪忆、知存、九天睿芯。计算操作由位于存储芯片/区域内部的独立计算单元完成，存储和计算可以是模拟的也可以是数字的。这种路线适合算法固定的场景算法计算，目前主要用于语音等轻算力场景。
-
-![](/images/img5/Computing_In_Memory.webp)
-
-https://mp.weixin.qq.com/s/kq5F47N3LS43ZKdwe9-CUQ
-
-端侧智能存算一体芯片的需求、现状与挑战
-
-https://zhuanlan.zhihu.com/p/480612865
-
-存算一体技术是什么？发展史、优势、应用方向、主要介质
-
-https://zhuanlan.zhihu.com/p/522755103
-
-存算一体芯片设计与编译器开发
-
-https://zhuanlan.zhihu.com/p/444859995
-
-阿里达摩院最新存算芯片技术解读
-
-https://www.zhihu.com/question/623317319
-
-存算一体芯片的技术壁垒是什么？
-
 ## 内存一致性
 
 x86使用的TSO和ARM的Relaxed模型相比，通过更复杂的硬件设计保证了更强的一致性，对软件的要求更松；ARM因为Relaxed模型比较宽松（几乎成了个分布式系统），原本x86靠硬件保证的东西就需要软件通过额外插入barrier来保证。
@@ -292,3 +256,21 @@ https://zhuanlan.zhihu.com/p/422848235
 https://www.cl.cam.ac.uk/~pes20/weakmemory/
 
 Relaxed-Memory Concurrency
+
+## 机柜
+
+机柜、板卡的尺寸规格也有工业标准，以方便不同厂商产品的互联和替换。
+
+OCP：Open Compute Project
+
+OAM：OCP Accelerator Module
+
+UBB：Universal Base Board
+
+https://zhuanlan.zhihu.com/p/339628067
+
+开放计算的源起，对比标准x86服务器开放计算有哪些特点和创新？
+
+https://zhuanlan.zhihu.com/p/571417872
+
+开放整机柜服务器简史
