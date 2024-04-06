@@ -17,6 +17,10 @@ Intel制订的游戏规则就是它自己的产品CPU作为“中央”处理器
 
 NVidia基本2年一代产品，性能提升3~5倍，挑战者如果能每代相比自己上一代提升10~20倍，和NVidia的性能优势越拉越大。这才是NVidia当年挑战Intel时所作的壮举。
 
+https://zhuanlan.zhihu.com/p/672689713
+
+芯片生态的竞争逻辑
+
 ---
 
 https://zhuanlan.zhihu.com/p/58971347

@@ -27,6 +27,20 @@ Cache分为硬件Cache和软件Cache两种，这里只讨论前者。后者参�
 
 多核CPU多级缓存的一致性，一般由相关的一致性总线协议保证。这些协议包括：MSI、MESI和MOESI。
 
+---
+
+![](/images/img5/time.png)
+
+https://www.cs.cornell.edu/projects/ladis2009/talks/dean-keynote-ladis2009.pdf
+
+参考：
+
+https://zhuanlan.zhihu.com/p/296808047
+
+每个程序员都应该知道的延迟数字
+
+---
+
 https://mp.weixin.qq.com/s/cSu-P-aDSXH0CYLN2HNrxw
 
 深入理解Cache（上）
