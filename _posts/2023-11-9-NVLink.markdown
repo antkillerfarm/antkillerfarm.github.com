@@ -15,9 +15,13 @@ category: Chip
 
 在过去十年的竞争中，核心竞争指标是算力，现在变成了内存带宽和容量。
 
-https://blog.csdn.net/tugouxp/article/details/126479276
+![](/images/img5/bandwidth_compute_bound_2.png)
 
-利用roofline模型分析异构系统算力VS带宽
+对于算力 vs 带宽的理论分析，一般使用如上图所示的Roofline Model。
+
+https://zhuanlan.zhihu.com/p/34204282
+
+Roofline Model与深度学习模型的性能分析
 
 https://mp.weixin.qq.com/s/y9dVg9YtfWxu6NcW-fxi6Q
 

@@ -23,6 +23,18 @@ https://polyhedral.info/
 
 一个Polyhedral方面的社区，有大量资料
 
+---
+
+Integer Set Library（ISL）：一个用于操作由线性约束条件约束的整数点的集合和关系的库。主要作为实现Polyhedral Compilation的数学工具库。
+
+官网：
+
+https://libisl.sourceforge.io/
+
+ISL的python接口库：
+
+https://documen.tician.de/islpy/index.html
+
 ## 笔记
 
 基于多面体模型的编译优化技术代表了程序自动并行化领域众多方向最先进的水平,成为国际上多个编译研发团队的研究热点。

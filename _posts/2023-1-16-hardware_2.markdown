@@ -343,6 +343,10 @@ https://zhuanlan.zhihu.com/p/544864997
 
 cuda中threadIdx、blockIdx、blockDim和gridDim的使用
 
+https://zhuanlan.zhihu.com/p/690717002
+
+一文读懂cuda代码编译流程
+
 # DPU
 
 如同GPU是针对图像显示领域的加速，DPU（Data Processing Unit）则是对于数据传输方面的加速。

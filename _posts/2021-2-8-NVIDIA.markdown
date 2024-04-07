@@ -210,9 +210,11 @@ https://github.com/NVIDIA/dali
 
 ## Tensor Core
 
-Tensor Core是Nvidia GPU里专门为深度学习矩阵运算设计的计算单元。
+Tensor Core是Nvidia GPU自Volta架构开始，专门为深度学习矩阵运算设计的计算单元。
 
 WMMA（warp matrix multiply-accumulate）
+
+类似的东西还有Arm的SME、Intel的AMX等。
 
 https://mp.weixin.qq.com/s/pPjPLqgXZ8iCPS42vXJpuQ
 

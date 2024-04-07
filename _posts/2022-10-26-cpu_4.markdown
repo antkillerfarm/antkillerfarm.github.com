@@ -9,6 +9,28 @@ category: Chip
 
 # CPU
 
+## RISC-V
+
+https://mp.weixin.qq.com/s/LreWWlXAQL-dqQBCk93soQ
+
+解读两大精简指令集：RISC-V和MIPS
+
+https://mp.weixin.qq.com/s/5uie8Ci5dK_wy54Z70Gklg
+
+RISC-V精简到何种程度？能省的都省了！
+
+https://mp.weixin.qq.com/s/JNCC3C3Sq0Hzk_5VBcivng
+
+RISC-V有何特别之处？
+
+---
+
+尽管Verilog曾经极大地推动了工程师设计能力的以指数级提升，但是在当下，随着芯片规模尤其是AI芯片规模的急剧增大，Verilog低效的描述方式已经被广为诟病。U.C. Berkeley在设计RISC-V的时候引入Chisel语言。
+
+https://zhuanlan.zhihu.com/p/98097268
+
+初学Chisel语言，看这篇就够了：最方便简洁的入门资料整理
+
 ## 参考
 
 超线程其实就是两个线程共享一个计算单元和内存控制单元，但有自身独立的一些硬件，目的是两个都不是全负荷工作的线程可以轮流使用计算单元来实现比较好的throughput。但只要有一个很忙，那就可能饿死另一个。
@@ -217,10 +239,6 @@ https://zhuanlan.zhihu.com/p/56864499
 
 CPU是怎么调节输入电压的？为什么要这么做？
 
-https://mp.weixin.qq.com/s/LreWWlXAQL-dqQBCk93soQ
-
-解读两大精简指令集：RISC-V和MIPS
-
 https://mp.weixin.qq.com/s/JLg6sEwCxTMpo2nyCt50qg
 
 指令集——CPU芯片江湖中的门派标志
@@ -232,14 +250,6 @@ https://mp.weixin.qq.com/s/7gXK6Qv9gLMkYtXw9oz9Sg
 https://mp.weixin.qq.com/s/p7FKgx-sFGDJF0y4IGWvyg
 
 CPU指令集架构科普
-
-https://mp.weixin.qq.com/s/5uie8Ci5dK_wy54Z70Gklg
-
-RISC-V精简到何种程度？能省的都省了！
-
-https://mp.weixin.qq.com/s/JNCC3C3Sq0Hzk_5VBcivng
-
-RISC-V有何特别之处？
 
 https://mp.weixin.qq.com/s/26se041cc9aBRw16kvPPjA
 

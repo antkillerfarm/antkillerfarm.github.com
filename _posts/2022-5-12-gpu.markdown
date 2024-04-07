@@ -274,3 +274,55 @@ GPU内存概念浅析
 https://zhuanlan.zhihu.com/p/377073683
 
 GPU虚拟化，算力隔离，和qGPU
+
+# 计算机体系结构+
+
+## VLIW & superscalar
+
+超长指令字(VLIW:Very long instruction word)和超标量（superscalar）都在同一个CPU中，集成了数套运算单元。
+
+超标量用硬件来决定哪些指令可以并行执行，而VLIW采用软件来决定哪些指令并行，通过把指令调度的复杂度交给编译器来降低硬件复杂度。
+
+VLIW的代表是Intel的Itanium处理器。当处理器的执行宽度(execution width)，指令执行延迟时间，执行单元个数(function unit)改变时，VLIW需要重新编译程序来适应。但是Superscalar却不需要。
+
+因此，VLIW在GPU中用的比较多。GPU程序并不直接生成GPU指令，而是通过厂商提供的DX/OpenGL库操作GPU。因此这些重新编译程序的任务已经由厂商完成，对于使用者透明。
+
+https://mp.weixin.qq.com/s/OQ3KUAi6HMyOS8k3J_1e6g
+
+关于超长指令集VLIW的一些讨论
+
+https://www.zhihu.com/question/430177243
+
+CPU长指令(VLIW)失败的主要原因是什么，VLIW真的无药可救吗？
+
+## 参考
+
+https://blog.csdn.net/do2jiang/article/details/4545889
+
+流水线、超流水线、超标量技术对比
+
+https://blog.csdn.net/edonlii/article/details/8755205
+
+单发射与多发射
+
+https://mp.weixin.qq.com/s/FJX9eeRkxS5nJ4XIhRVwkg
+
+从ServerSwitch到SONiC Chassis：数据中心交换机技术的十年探索历程
+
+![](/images/img4/apple.png)
+
+https://mp.weixin.qq.com/s/MCYocOY2pHHqiLhcE4SXyg
+
+为什么苹果M1芯片这么快？
+
+https://zhuanlan.zhihu.com/p/358167791
+
+Vector的前世今生（1）：从辉煌到低谷
+
+https://zhuanlan.zhihu.com/p/368640768
+
+Vector的前世今生（2）：ARM SVE简述
+
+https://zhuanlan.zhihu.com/p/594532014
+
+一文搞懂Cortex-A77（ARMv8架构）工作原理

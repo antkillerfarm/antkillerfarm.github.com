@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NN中间语言, AI Compiler
+title:  NN中间语言, AI Compiler（一）
 category: toolchain 
 ---
 
@@ -191,174 +191,34 @@ AI编译器和推理引擎的区别
 
 ---
 
-https://mp.weixin.qq.com/s/jjT0x99ht8xtfWmzL-0R1A
+编译器不是万能的。一定程度上很多架构师都喜欢画大饼，用一个编译器衔接上下各种碎片化的前端和后端，似乎这样整个架构图就一切都舒爽了，啥都能自由支持，而且自动优化。但实际上编译器的能力是非常有限的。且不说AI编译器这种才几年探索的新兴事物，HPC领域卷了几十年了，要是编译器优化能力可以依赖，那还有blas库啥事呢？
 
-深度学习的IR“之争”
+AI的软件栈基本可以简单分类为两类。
 
-https://mp.weixin.qq.com/s/G36IllLOTXXbc4LagbNH9Q
+**一类**是希望找一个稳定的中间层IR，这个IR可以是硬件层面的virtual ISA，可以是library层面的一层稳定的API，也可以是一个算子库，甚至是深度学习框架。希望在剧烈变化的前端和后端之间找到一个稳定不变的层来解耦合。
 
-编译器与IR的思考: LLVM IR，SPIR-V到MLIR
+ONNX坚持到今天，算子集合短短几年已经更新了十几代了，而且至今没能做到两个主流框架pytorch和tensorflow的全覆盖，可以说是一个标准的“试图用一个大一统的框架统一现在的n个框架，最后导致出现了n+1个框架”的典范了。
 
-https://www.zhihu.com/question/391811802
+虽然chris在编译器黄金时代的演讲中讲了很多解决碎片化的问题，尤其提到了要从O(前端x后端)变成O(前端+后端)的工程量，但MLIR实际解决的是编译器基础设施的模块化和复用，而不是IR的复用，没有改变O(前端x后端)，只是让这个大O的常数变小了一些。碎片化还是存在，只是换了个形式，变成MLIR dialect的碎片化。
 
-如何评价TensorFlow开源的新运行时TFRT？
+MLIR一定程度上放弃了这种完备性的追求，转而躺平让大家随意在不同层之间打洞写conversion。
 
-https://zhuanlan.zhihu.com/p/347599203
+MLIR本身更接近一个库的定位而非生态。大多数参与者贡献的dialect和conversion都是在自己的闭环内，甚至tf团队自己的iree也是如此，大多算子基本bypass了所有core dialect。那么此时新的使用者其实很难复用其他人的闭环dialect，你的大多数dialect往往也只有你自己用，无法带来用的人越多大家都爽的优点。而大家建立自己闭环不是不配合建生态，毕竟high-level的dialect没有完备性，大家的需求也不一样，导致了大家都有对自己更有利的dialect设计和取舍。
 
-TFRT的开源代码分析
+**另一类**是尝试做算子编译器，负责自动算子生成。
 
-https://zhuanlan.zhihu.com/p/600622073
+Halide这一类核心在于解耦计算和调度，然后定义了一系列调度原语把调度优化的空间给建模出来，然后计算写一遍，调度可以手工tune或者通过一些算法来搜索。然而调度不仅和硬件强相关，也和计算的形式强相关，因此写调度的时候还是要针对特定计算和特定后端硬件来写调度，仍然是一个O(前端*后端)的碎片化状况。
 
-AI编译器之后端优化
+现在大大小小的AI编译器团队非常多，其实真正搞编译器算法的人非常少也非常难招，而写算子的门槛则相对低很多，招人相对容易得多，很多团队围绕TVM进行工具链开发建设，可以招大量写算子的人来覆盖碎片化的工程量，从产业实践上来讲也算是一条不错的路径。MLIR其实也是类似的路径，不过是从写调度换成写lower通路的各种pass，都比较容易堆人力，本质上还是尝试用人力战胜复杂性。
 
-## OpenAI Triton
+https://zhuanlan.zhihu.com/p/394102530
 
-一个类似于TVMscript的可以通过python语法去写高性能GPU程序的库。注意不要和NVIDIA Triton搞混了。后者是一个AI推理框架。
+专用架构与AI软件栈（2）
 
-NVIDIA Triton Inference Server（此前称为TensorRT Inference Server）能够帮助开发人员和IT/DevOps轻松地在云端、本地数据中心或边缘部署高性能推理服务器。
+---
 
-官网：
+做深度学习编译器的人，可能是主要写算子库的，可能是主要做循环优化算法的，可能是主要做计算图优化的，也可能是主要做分布式调度的。
 
-https://github.com/openai/triton
+term rewrite，匹配程序IR中的某种特征，并按照预设的模板进行替换，从而达到对程序进行变形的目的。有了这种机制我们就可以通过增加term rewrite rule来不断覆盖各种手工变换代码的经验。这种方法扩展性很好，遇到各种corner case很容易添加rule来workaround。当然这种方式在变换空间较大的时候会变得很低效，可能需要无穷无尽的rule才能覆盖。
 
-参考：
-
-https://zhuanlan.zhihu.com/p/394377526
-
-OpenAI开源GPU编程语言Triton，将同时支持N卡和A卡
-
-https://zhuanlan.zhihu.com/p/613244988
-
-谈谈对OpenAI Triton的一些理解
-
-## NVFuser
-
-NVFuser是NV专门为Pytorch设计的自动化的GPU代码生成器。
-
-## AKG
-
-AKG是面向华为昇腾AI处理器的张量编译器。
-
-官网：
-
-https://gitee.com/mindspore/akg/
-
-![](/images/img5/akg-design.png)
-
-# Pytorch+
-
-https://mp.weixin.qq.com/s/BsMwZC3IoXA58OybZ3aYcg
-
-pytorch中如何处理RNN输入变长序列padding
-
-https://mp.weixin.qq.com/s/abd62HNlen9sepH3CrmpGg
-
-PyTorch为何如此高效好用？来探寻深度学习框架的内部架构
-
-https://mp.weixin.qq.com/s/OMjfck4jlMneGZ1NJxbjKQ
-
-PyTorch有哪些坑/bug？
-
-https://mp.weixin.qq.com/s/UykIKAeKB-0eqk6UqvXwXA
-
-对抗自编码器PyTorch手把手实战系列——PyTorch实现对抗自编码器
-
-https://mp.weixin.qq.com/s/E8RMSXVZucSGQJxFdtMgkg
-
-PyTorch实例：用ResNet进行交通标志分类
-
-https://mp.weixin.qq.com/s/_hbuk9nZaLoNSZ5AnDnELg
-
-使用PyTorch从零开始构建Elman循环神经网络
-
-https://mp.weixin.qq.com/s/FQxSYjyR1U3TIinSShnOfg
-
-从头开始了解PyTorch的简单实现
-
-https://mp.weixin.qq.com/s/wz1YdHYom6y-gOB58R86OQ
-
-对抗自编码器PyTorch手把手实战系列——对抗自编码器学习笔迹风格
-
-https://mp.weixin.qq.com/s/3mnV8gz1AsYQ2ElK--Ihrg
-
-从零开始PyTorch项目：YOLO v3目标检测实现
-
-https://mp.weixin.qq.com/s/88klahIOAfBcA5Rdv70JNg
-
-PyTorch的动态计算图深入浅出
-
-https://mp.weixin.qq.com/s/Mcj9SwC6GZEjXxi55vfsaw
-
-minibatching，数据加载和模型构建
-
-https://mp.weixin.qq.com/s/EweQNoP5BlB9e1eVJsCFvg
-
-GANs很难？这篇文章教你50行代码搞定
-
-https://mp.weixin.qq.com/s/1KAbFAWC3jgJTE-zp5Qu6g
-
-如何直观地理解条件随机场，并通过PyTorch简单地实现
-
-https://mp.weixin.qq.com/s/1_fm6F1c_ldQNyb042NQRg
-
-还在自己写训练过程么？你需要一个训练引擎
-
-https://mp.weixin.qq.com/s/mThkHpcq1ThnfONiSKmOKA
-
-如何捕获一只彩色卓别林？黑白照片AI上色教程很友好
-
-https://mp.weixin.qq.com/s/tD4Inrr0l1oBnLhUD81FCA
-
-用PyTorch进行RNN语言建模 - Packed Batching和Tied Weight
-
-https://mp.weixin.qq.com/s/HQJxbnIHXF-GFLIoNTOxGg
-
-手把手教你用torchtext处理文本数据
-
-https://mp.weixin.qq.com/s/KNaFelqk9UO6JYjbPTQohA
-
-显存不足？PyTorch显存使用分析与优化
-
-https://mp.weixin.qq.com/s/7p26q8Mu3IlK39DG7u41ZA
-
-PyTorch之迁移学习实战
-
-https://www.zhihu.com/question/303070254
-
-PyTorch中在反向传播前为什么要手动将梯度清零？
-
-https://www.zhihu.com/question/274635237
-
-Pytorch有什么节省内存（显存）的小技巧？
-
-https://mp.weixin.qq.com/s/S1dRfmqpiLzR3tnsocmfvw
-
-Pytorch中的数据增强方式最全解释
-
-https://mp.weixin.qq.com/s/BTFMvV2ppmRBXYg95YlK4w
-
-PyTorch实现L2和L1正则化的方法
-
-https://zhuanlan.zhihu.com/p/272767300
-
-Pytorch转ONNX-理论篇
-
-https://zhuanlan.zhihu.com/p/273566106
-
-Pytorch转ONNX-实战篇1（tracing机制）
-
-https://zhuanlan.zhihu.com/p/286298001
-
-Pytorch转ONNX-实战篇2（实战踩坑总结）
-
-https://mp.weixin.qq.com/s/EXuFXbPBIbzTyi0fUjvvPw
-
-两行代码统计模型参数量与FLOPs，这个PyTorch小工具值得一试
-
-https://zhuanlan.zhihu.com/p/73711222
-
-巧用torch.backends.cudnn.benchmark减少训练时间
-
-https://zhuanlan.zhihu.com/p/664723980
-
-单机多GPU训练
+从完备性的角度来看，越底层的表示越完备，越上层的完备性越差，因为上层表示的基本要素一定是底层表示的某种粗粒度的结构，比如for循环和if-else分支，到底层都是jump指令，jump按照某种结构去组织就形成了for循环和if-else分支，但在底层要重建上层这种结构的语义就会比较困难，因为lower下来再进行一定的等价变换进行优化，上层的结构就很难重新发掘出来了。所以大家一直在讲lowering很容易，rising或者叫lifting很难。

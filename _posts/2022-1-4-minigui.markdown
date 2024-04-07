@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  MiniGUI, RT-Thread, Dubbo, Spring
+title:  MiniGUI, RT-Thread, Spring
 category: technology 
 ---
 
@@ -116,41 +116,13 @@ https://www.rt-thread.org/
 
 RT-Thread提出的柿饼UI，是一款专注于嵌入式领域、JS脚本化开发的GUI解决方案。可谓和魏老师、李先静，英雄所见略同了。
 
-# Dubbo
+## NuttX
 
-Dubbo是一个分布式服务框架，致力于提供高性能和透明化的RPC远程服务调用方案，是阿里巴巴SOA服务化治理方案的核心框架，每天为2,000+个服务提供3,000,000,000+次访问量支持，并被广泛应用于阿里巴巴集团的各成员站点。
-
->阿里巴巴算是国内开源较多的IT企业了。但是早期仅仅满足于开源本身，对于开源项目的维护没有章法。Dubbo就是典型一例，开源之后的数年，没有任何官方升级和维护。社区由于官方的缺位，也没有大的动静。直到2016年，才纳入正轨。
+NuttX是一个实时操作系统，于07年由Gregory Nutt开源，2016年被三星选为TizenRT操作系统的内核，2019年在小米的推动下正式进入Apache基金会。Fitbit最近两代的手环产品和索尼多款消费级产品都是基于NuttX开发的。
 
 官网：
 
-http://dubbo.io/
-
-官网的用户指南写的不错，非常值得一看。
-
-https://mp.weixin.qq.com/s/bcwIMIir2RHPbQQr8HgTOQ
-
-如何快速开发一个Dubbo应用？
-
-https://mp.weixin.qq.com/s/fnrGjiywiySA8iAZh_cF0Q
-
-阿里巴巴新开源项目Nacos发布第一个版本，助力构建Dubbo生态
-
-https://mp.weixin.qq.com/s/AAcQRHZPvW11jvlbrLfRJA
-
-携程的Dubbo之路
-
-https://mp.weixin.qq.com/s/ZW4tO01gC65kZgOUappL9Q
-
-漫话：什么是RPC
-
-https://blog.csdn.net/m0_38110132/article/details/81481454
-
-直观讲解--RPC调用和HTTP调用的区别
-
-https://juejin.cn/post/6963642641506369566
-
-为什么说Dubbo不适合传输文件？
+https://nuttx.apache.org/
 
 # Spring
 

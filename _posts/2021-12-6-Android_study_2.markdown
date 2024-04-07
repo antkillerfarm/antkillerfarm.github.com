@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Android研究（二）, MSYS2, WSL, 线程池
+title:  Android研究（二）, MSYS2, WSL, 线程池, Dubbo
 category: technology 
 ---
 
@@ -253,106 +253,38 @@ https://mp.weixin.qq.com/s/QbBr7ZQhD8DwzSzf4RRvgQ
 
 聊一聊携程的Apollo
 
-# Git+
+# Dubbo
 
-## Monorepo
+Dubbo是一个分布式服务框架，致力于提供高性能和透明化的RPC远程服务调用方案，是阿里巴巴SOA服务化治理方案的核心框架，每天为2,000+个服务提供3,000,000,000+次访问量支持，并被广泛应用于阿里巴巴集团的各成员站点。
 
-上面提到的多项目管理，一般称为MultiRepo，即每个项目对应一个单独的仓库。与之相对的则是Monorepo，即把多个项目放在一个仓库里面。
-
-![](/images/img4/Monorepo.png)
-
-参考：
-
-https://juejin.cn/post/6944877410827370504
-
-现代前端工程为什么越来越离不开Monorepo?
-
-https://zhuanlan.zhihu.com/p/77577415
-
-Monorepo是什么，为什么大家都在用？
-
-## Git多项目管理
-
-项目越来越大，一些通用的模块我们希望将他抽离出来作为单独的项目，以便其他项目也可以使用，或者使用一些第三方库，可能我们并不想将代码直接拷贝进我们的项目里面，而仅仅只是单纯的引用。
-
-基于Git有多种方式来解决这个问题：
-
-- Git Submodule。
-
-- Git Subtree。这两个已经集成到git中。
-
-- GitSlave。一个git插件，需要额外安装。
-
-- Google Repo。基于git的python脚本。Android项目的官方工具。
-
-`git submodule update --init --remote --rebase`
-
-单独更新子module AAA：
-
-`git submodule update AAA`
-
-参考：
-
-https://www.jianshu.com/p/284ded3d191b
-
-Git多项目管理
-
-## OpenGrok
-
-OpenGrok是一个阅读源码的Web系统。
+>阿里巴巴算是国内开源较多的IT企业了。但是早期仅仅满足于开源本身，对于开源项目的维护没有章法。Dubbo就是典型一例，开源之后的数年，没有任何官方升级和维护。社区由于官方的缺位，也没有大的动静。直到2016年，才纳入正轨。
 
 官网：
 
-http://oracle.github.io/opengrok/
+http://dubbo.io/
 
-代码：
+官网的用户指南写的不错，非常值得一看。
 
-https://github.com/oracle/opengrok
+https://mp.weixin.qq.com/s/bcwIMIir2RHPbQQr8HgTOQ
 
-参考：
+如何快速开发一个Dubbo应用？
 
-http://mazhuang.org/2016/12/14/rtfsc-with-opengrok/
+https://mp.weixin.qq.com/s/fnrGjiywiySA8iAZh_cF0Q
 
-搭建大型源码阅读环境——使用OpenGrok
+阿里巴巴新开源项目Nacos发布第一个版本，助力构建Dubbo生态
 
-## 参考
+https://mp.weixin.qq.com/s/AAcQRHZPvW11jvlbrLfRJA
 
-https://mp.weixin.qq.com/s/z_zFveiiLu9vLvWuBcsaIg
+携程的Dubbo之路
 
-Git从入门到进阶
+https://mp.weixin.qq.com/s/ZW4tO01gC65kZgOUappL9Q
 
-https://mp.weixin.qq.com/s/0Cv968LpSSYKJpAbW1MlMA
+漫话：什么是RPC
 
-手把手教你git全操作
+https://blog.csdn.net/m0_38110132/article/details/81481454
 
-https://mp.weixin.qq.com/s/DbvRbaH7BJKeTCT4LVXUoA
+直观讲解--RPC调用和HTTP调用的区别
 
-Git的4个阶段的撤销更改
+https://juejin.cn/post/6963642641506369566
 
-https://mp.weixin.qq.com/s/nUqvSnnPjYqk2O8u0tQEtQ
-
-Git内部原理揭秘
-
-https://mp.weixin.qq.com/s/nmi1HYkKD8QX0phbvOko2Q
-
-Git居然还有这么高级用法，你一定需要
-
-https://mp.weixin.qq.com/s/PUUL913fig6cFfqy4OKcGA
-
-工作流一目了然，看小姐姐用动图展示10大Git命令
-
-https://blog.csdn.net/mocoe/article/details/84344411
-
-修改git commit的author信息
-
-https://mp.weixin.qq.com/s/9Ey04P5Xv4W95N2FEioZ1g
-
-如何选择Git分支模式？
-
-https://mp.weixin.qq.com/s/GZkGfwrfMTzrMfki8LKbIw
-
-腾讯广告3000+万行大代码库主干开发实战
-
-https://mp.weixin.qq.com/s/KEu6qCl-En6HiKGo2pgEQg
-
-TensorBay：一款易用的像Git一样数据版本管理工具！
+为什么说Dubbo不适合传输文件？

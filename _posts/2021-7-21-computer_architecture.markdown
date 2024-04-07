@@ -85,13 +85,31 @@ SMT（Simultaneously multithreading），指多个thread中并行运行不同的
 
 《Simplified Vector-Thread Architectures for Flexible and Efficient Data-Parallel Accelerators》
 
+https://zhuanlan.zhihu.com/p/113360369
+
+从现代GPU编程角度看SIMD与SIMT
+
+---
+
+SIMT相比SIMD在可编程性上最根本性的优势在于硬件解决了大部分流水编排的问题。
+
+程序执行最大的瓶颈是访存和控制流，针对这种问题能做的优化其实主要就两种：
+
+- 一种是充分利用cache或软件可见的片上sram，减少这种大延迟的ddr访问。把一部分数据捞进来放到片上存储中，然后尽可能复用，或者把一些临时数据放到片上，避免和ddr的交互。这类思路可以统称为切块（tiling）。
+
+- 另一种是让访存和计算并行起来，因为硬件上访存和计算单元肯定是两个模块，同时跑起来利用率肯定更高。这种并行其实也有两个纬度，一个是计算的不同阶段如果没有依赖关系，可以在做前一个阶段的计算同时做下一个阶段的数据读取，也可以是对同一个阶段的向量进行切分，计算上一部分的时候读取下一步的数据，也就是通常所讲的double buffer，这一类思路可以统称为流水编排。
+
+在cuda编程模型中，每一个thread block内部需要有很多并行线程，隐式分成了若干个组（warp），每一组都会包含大量串行交错的访存和计算。GPU通过warp scheduler动态交错执行，一组线程的流水阻塞了就切下一组，隐式通过并行度掩盖各种流水阻塞。
+
+当然，这也是有代价的，GPU上要放置大量sram来保存线程上下文，避免为了掩盖ddr延迟进行上下文切换又引入新的ddr访问。因此在GPU上register file的规模往往和L2差不多量级。
+
 https://zhuanlan.zhihu.com/p/562135333
 
 SIMT、SIMD和DSA（1）
 
-https://zhuanlan.zhihu.com/p/113360369
+https://zhuanlan.zhihu.com/p/564623647
 
-从现代GPU编程角度看SIMD与SIMT
+SIMT、SIMD和DSA（2）
 
 ## RISC vs. CISC
 
@@ -231,24 +249,6 @@ https://zhuanlan.zhihu.com/p/476411477
 
 NUMA架构详解
 
-## VLIW & superscalar
-
-超长指令字(VLIW:Very long instruction word)和超标量（superscalar）都在同一个CPU中，集成了数套运算单元。
-
-超标量用硬件来决定哪些指令可以并行执行，而VLIW采用软件来决定哪些指令并行，通过把指令调度的复杂度交给编译器来降低硬件复杂度。
-
-VLIW的代表是Intel的Itanium处理器。当处理器的执行宽度(execution width)，指令执行延迟时间，执行单元个数(function unit)改变时，VLIW需要重新编译程序来适应。但是Superscalar却不需要。
-
-因此，VLIW在GPU中用的比较多。GPU程序并不直接生成GPU指令，而是通过厂商提供的DX/OpenGL库操作GPU。因此这些重新编译程序的任务已经由厂商完成，对于使用者透明。
-
-https://mp.weixin.qq.com/s/OQ3KUAi6HMyOS8k3J_1e6g
-
-关于超长指令集VLIW的一些讨论
-
-https://www.zhihu.com/question/430177243
-
-CPU长指令(VLIW)失败的主要原因是什么，VLIW真的无药可救吗？
-
 ## DSM
 
 Distributed Shared Memory是分布式系统的所有节点（处理器）共享的虚拟地址空间。程序访问DSM中的数据的方式与访问传统计算机虚拟内存中的数据的方式非常相似。
@@ -258,35 +258,3 @@ Distributed Shared Memory是分布式系统的所有节点（处理器）共享�
 https://blog.csdn.net/JiangTao2333/article/details/124530699
 
 分布式共享内存（DSM - Distributed Shared Memory）
-
-## 参考
-
-https://blog.csdn.net/do2jiang/article/details/4545889
-
-流水线、超流水线、超标量技术对比
-
-https://blog.csdn.net/edonlii/article/details/8755205
-
-单发射与多发射
-
-https://mp.weixin.qq.com/s/FJX9eeRkxS5nJ4XIhRVwkg
-
-从ServerSwitch到SONiC Chassis：数据中心交换机技术的十年探索历程
-
-![](/images/img4/apple.png)
-
-https://mp.weixin.qq.com/s/MCYocOY2pHHqiLhcE4SXyg
-
-为什么苹果M1芯片这么快？
-
-https://zhuanlan.zhihu.com/p/358167791
-
-Vector的前世今生（1）：从辉煌到低谷
-
-https://zhuanlan.zhihu.com/p/368640768
-
-Vector的前世今生（2）：ARM SVE简述
-
-https://zhuanlan.zhihu.com/p/594532014
-
-一文搞懂Cortex-A77（ARMv8架构）工作原理
