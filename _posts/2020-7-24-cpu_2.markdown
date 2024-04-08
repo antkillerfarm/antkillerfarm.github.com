@@ -207,7 +207,7 @@ https://mp.weixin.qq.com/s/MXuN1ccza508TMkcYVadvA
 
 ## 片上网络
 
-片上网络network-on-chip（NoC）是片上系统 system-on-chip（SoC）的一种新的通信方法。它是多核技术的主要组成部分。NoC方法带来了一种全新的片上通信方法，显著优于传统总线式系统（bus）的性能。
+片上网络network-on-chip（NoC）是片上系统system-on-chip（SoC）的一种新的通信方法。它是多核技术的主要组成部分。NoC方法带来了一种全新的片上通信方法，显著优于传统总线式系统（bus）的性能。
 
 https://zhuanlan.zhihu.com/p/63683111
 

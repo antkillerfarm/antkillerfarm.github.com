@@ -207,6 +207,8 @@ https://mp.weixin.qq.com/s/vfsB5t3r5dBACKQx6FshVw
 
 实际上大部分的模型开源诸如LLaMa2、Mistral、Qwen等，只做到Level-1， 像DeepSeek这样的可以做到Level-2。 而Level-4及以上的开源一个都没有。
 
+LLM时代的典型特征：学习速度跟不上知识的更新速度（下载速度跟不上模型的开源速度）。
+
 ---
 
 数据泄露（data contamination）在大模型时代可以说是极难避免的。随着大模型训练数据规模的扩大，保证训练数据与常用benchmark之间没有重叠变得几乎不可能。

@@ -163,9 +163,9 @@ Adam自动调整学习率，大幅提高了训练速度，但是有相当多的�
 
 参考：
 
-https://mp.weixin.qq.com/s/TVJIC7IEUeWypN8Z1NGKaA
+https://zhuanlan.zhihu.com/p/63982470
 
-都9102年了，别再用Adam + L2 Loss了
+都9102年了，别再用Adam + L2 regularization了
 
 ## Nadam
 
@@ -176,6 +176,16 @@ ncorporating Nesterov Momentum into Adam
 ## AdaSecant
 
 《ADASECANT: Robust Adaptive Secant Method for Stochastic Gradient》
+
+## Lion & Tiger
+
+https://kexue.fm/archives/9473
+
+Google新搜出的优化器Lion：效率与效果兼得的“训练狮”
+
+https://kexue.fm/archives/9512
+
+Tiger：一个“抠”到极致的优化器
 
 ## cycle参数
 

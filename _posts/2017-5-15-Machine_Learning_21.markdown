@@ -305,6 +305,10 @@ https://zhuanlan.zhihu.com/p/656260901
 
 TruthfulQA: Measuring How Models Mimic Human Falsehoods - 事实性评估
 
+https://github.com/CLUEbenchmark/SuperCLUE
+
+中文通用大模型综合性基准
+
 # Tokenization
 
 ## Subword

@@ -247,18 +247,6 @@ https://blog.csdn.net/OneFlow_Official/article/details/124113864
 
 解读谷歌Pathways架构（二）：向前一步是OneFlow
 
-## Bucketing
-
-Bucketing是一种训练多个不同但又相似的结构的网络的方法，这些网络共享相同的参数集。
-
-一个典型的应用是循环神经网络（RNNs）。实现RNNs通常会沿时间轴将网络显式地展开。为了处理序列中的所有元素，我们需要将网络展开成最大可能的序列长度。然而这很浪费资源，因为对于较短的序列，大部分计算都浪费在填充的数据的执行上了。
-
-Bucketing不再将网络展开成最大可能长度，而是展开成多个不同长度的实例（比如，长度为5, 10, 20, 30）。在训练过程中，对于不同长度的最小批数据，使用最恰当的展开模型。
-
-https://blog.csdn.net/xuezhisdc/article/details/54927869
-
-how_to——bucketing
-
 ## 框架设计
 
 ![](/images/img4/mindspore.jpg)
@@ -310,3 +298,21 @@ https://pytorch.org/blog/high-performance-llama-2/
 https://huggingface.co/blog/zh/bloom-inference-optimization
 
 https://huggingface.co/blog/zh/bloom-megatron-deepspeed
+
+## 内存墙
+
+从GPT-1到GPT-3，两年时间内模型参数0.1B增加到175B，而同期，NVIDIA交出的成绩单是从V100的32GB显存增加A100的80GB，显然，显存的提升速度远远赶不上模型模型增长的速度，这就是内存墙问题。
+
+https://mp.weixin.qq.com/s/kuIsyX0QEIeFHn8tvFE8vw
+
+AI训练的最大障碍不是算力，而是“内存墙”
+
+## activation checkpointing
+
+![](/images/img5/activation_checkpointing.png)
+
+在每个mini-batch的前向过程中删除一些暂时用不到的中间激活特征以降低内存占用，并在后向过程中需要时借助额外的前向计算恢复它们。
+
+https://zhuanlan.zhihu.com/p/373662730
+
+亚线性内存优化—activation checkpointing在oneflow中的实现
