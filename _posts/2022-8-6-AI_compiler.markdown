@@ -71,6 +71,24 @@ Introducing ONNX Script: Authoring ONNX with the ease of Python
 
 ---
 
+Onnx Optimizer、ONNX Simplifier被誉为onnx的优化利器，其中ONNX Simplifier可以优化常量，Onnx Optimizer可以对节点进行fuse。
+
+ONNX Simplifier：
+
+https://github.com/daquexian/onnx-simplifier
+
+Onnx Optimizer：
+
+https://github.com/onnx/optimizer
+
+参考：
+
+https://zhuanlan.zhihu.com/p/350702340
+
+onnx simplifier和optimizer
+
+---
+
 参考：
 
 https://mp.weixin.qq.com/s/etSrI8Z3-NWbrqNWIbfzjw
@@ -92,10 +110,6 @@ ONNX初探
 https://mp.weixin.qq.com/s/_iNhfZNR5-swXLhHKjYRkQ
 
 ONNX再探
-
-https://zhuanlan.zhihu.com/p/350702340
-
-onnx simplifier和optimizer
 
 https://mp.weixin.qq.com/s/naJwpmXm7Yl3pxEFYiGf-g
 
@@ -220,11 +234,3 @@ term rewrite，匹配程序IR中的某种特征，并按照预设的模板进行
 从完备性的角度来看，越底层的表示越完备，越上层的完备性越差，因为上层表示的基本要素一定是底层表示的某种粗粒度的结构，比如for循环和if-else分支，到底层都是jump指令，jump按照某种结构去组织就形成了for循环和if-else分支，但在底层要重建上层这种结构的语义就会比较困难，因为lower下来再进行一定的等价变换进行优化，上层的结构就很难重新发掘出来了。所以大家一直在讲lowering很容易，rising或者叫lifting很难。
 
 这种粗粒度的表达通常是缺乏完备性的，两组不同的粗粒度算子集可能不一定能轻松实现相互转换。所以这个问题并不是软件在山顶，硬件指令在半山腰，而是硬件指令在另一座山的半山腰。
-
-ML编译器核心问题主要有三部分：auto-tensorize、auto-tiling和auto-schedule。
-
-auto-schedule的问题被polyhedral model部分解决，而auto-tiling的问题形式化后往往会变得极其非线性，所以一直以来都是老大难问题。
-
-过去编译器关注的都是通用处理器上的代码优化问题，合法调度在解空间里非常稠密，只要解决依赖性分析的问题，搜索空间里基本都是合法调度，关键在于调度后程序的性能。而DSA指令的引入，其实将搜索空间中的合法解变得稀疏化了。此时找到合法解本身就是一件很难的事情，合法解集合随着DSA指令的粒度变大而变小。算是在新的历史阶段引入的新问题，即auto-tensorize的问题。
-
-寻找可行解的开放问题，实际上就是标准的SAT问题。

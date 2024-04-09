@@ -7,6 +7,30 @@ category: DL acceleration
 * toc
 {:toc}
 
+# Megatron-LM（续）
+
+参考：
+
+https://zhuanlan.zhihu.com/p/522198082
+
+Megatron-LM 第三篇Paper总结——Sequence Parallelism & Selective Checkpointing
+
+https://zhuanlan.zhihu.com/p/366906920
+
+Megatron论文和代码详细分析(1)
+
+https://zhuanlan.zhihu.com/p/388830967
+
+Megatron论文和代码详细分析(2)
+
+https://blog.csdn.net/v_JULY_v/article/details/132462452
+
+通俗理解Megatron-DeepSpeed之模型并行与数据并行
+
+https://mp.weixin.qq.com/s/bvF50XRaA9cO2O4oB31kbg
+
+大语言模型分布式训练的量化分析与最佳实践,以GPT-175B为例
+
 # KV Cache
 
 ![](/images/img5/KV_Cache.png)
@@ -314,31 +338,3 @@ C++并行实战，592页pdf，C++ Concurrency in Action
 https://zhuanlan.zhihu.com/p/79385727
 
 有限元并行计算简介
-
-https://mp.weixin.qq.com/s/heVQ9AIZKxTiCNiAtYKaag
-
-新加坡国立大学最新“大规模深度学习优化”综述论文，带你全面了解最新深度学习准确率和效率的优化方法
-
-https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
-
-IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能
-
-http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
-
-神经网络的分布式训练
-
-https://mp.weixin.qq.com/s/nvuflLfOolidDDXJVe2DZA
-
-美团深度学习系统的工程实践
-
-https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
-
-TensorFlow分布式计算机制解读：以数据并行为重
-
-https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
-
-继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本
-
-https://mp.weixin.qq.com/s/kOCftzSbHe2mvDmlRp-ihA
-
-Jeff Dean：AI对计算机系统设计的影响

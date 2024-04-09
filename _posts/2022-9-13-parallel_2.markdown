@@ -219,6 +219,15 @@ https://pytorch.org/docs/stable/pipeline.html
 
 Pipeline Parallelism
 
+---
+
+`torch.distributed.pipeline`关键代码：
+
+```
+torch/distributed/pipeline/sync/pipeline.py: _clock_cycles
+torch/distributed/pipeline/sync/pipe.py: _split_module
+```
+
 # 其他概念
 
 ## 分布式数据集
@@ -306,13 +315,3 @@ https://huggingface.co/blog/zh/bloom-megatron-deepspeed
 https://mp.weixin.qq.com/s/kuIsyX0QEIeFHn8tvFE8vw
 
 AI训练的最大障碍不是算力，而是“内存墙”
-
-## activation checkpointing
-
-![](/images/img5/activation_checkpointing.png)
-
-在每个mini-batch的前向过程中删除一些暂时用不到的中间激活特征以降低内存占用，并在后向过程中需要时借助额外的前向计算恢复它们。
-
-https://zhuanlan.zhihu.com/p/373662730
-
-亚线性内存优化—activation checkpointing在oneflow中的实现

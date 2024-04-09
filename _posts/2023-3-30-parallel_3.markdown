@@ -9,6 +9,16 @@ category: DL acceleration
 
 # 大模型训练（续）
 
+## activation checkpointing
+
+![](/images/img5/activation_checkpointing.png)
+
+在每个mini-batch的前向过程中删除一些暂时用不到的中间激活特征以降低内存占用，并在后向过程中需要时借助额外的前向计算恢复它们。
+
+https://zhuanlan.zhihu.com/p/373662730
+
+亚线性内存优化—activation checkpointing在oneflow中的实现
+
 ## bucket
 
 Bucketing是一种训练多个不同但又相似的结构的网络的方法，这些网络共享相同的参数集。
@@ -102,6 +112,10 @@ ZeRO使用分片（partition）方法，即每张卡只存1/N的模型状态量�
 代码：
 
 https://github.com/microsoft/DeepSpeed
+
+示例：
+
+https://github.com/microsoft/DeepSpeedExamples
 
 stage 1 & 2的代码在：
 
@@ -288,25 +302,3 @@ https://github.com/NVIDIA/Megatron-LM
 微软还有一个项目将DeepSpeed和Megatron-LM结合了起来：
 
 https://github.com/microsoft/Megatron-DeepSpeed
-
-参考：
-
-https://zhuanlan.zhihu.com/p/522198082
-
-Megatron-LM 第三篇Paper总结——Sequence Parallelism & Selective Checkpointing
-
-https://zhuanlan.zhihu.com/p/366906920
-
-Megatron论文和代码详细分析(1)
-
-https://zhuanlan.zhihu.com/p/388830967
-
-Megatron论文和代码详细分析(2)
-
-https://blog.csdn.net/v_JULY_v/article/details/132462452
-
-通俗理解Megatron-DeepSpeed之模型并行与数据并行
-
-https://mp.weixin.qq.com/s/bvF50XRaA9cO2O4oB31kbg
-
-大语言模型分布式训练的量化分析与最佳实践,以GPT-175B为例
