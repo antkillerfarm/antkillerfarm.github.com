@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（四）——Horovod, DeepSpeed, LoRA, FSDP, Megatron-LM
+title:  并行 & 框架 & 优化（四）——Horovod, DeepSpeed, LoRA, FSDP
 category: DL acceleration 
 ---
 
@@ -8,6 +8,14 @@ category: DL acceleration
 {:toc}
 
 # 大模型训练（续）
+
+## 内存墙
+
+从GPT-1到GPT-3，两年时间内模型参数0.1B增加到175B，而同期，NVIDIA交出的成绩单是从V100的32GB显存增加A100的80GB，显然，显存的提升速度远远赶不上模型模型增长的速度，这就是内存墙问题。
+
+https://mp.weixin.qq.com/s/kuIsyX0QEIeFHn8tvFE8vw
+
+AI训练的最大障碍不是算力，而是“内存墙”
 
 ## activation checkpointing
 
@@ -245,13 +253,21 @@ https://mp.weixin.qq.com/s/nhIRulIRD6VrdPInDsaD8A
 
 # FSDP
 
-Fully Sharded Data Parallel是Facebook深度借鉴微软ZeRO之后提出的PyTorch DDP升级版本，可以认为是对标微软ZeRO，其本质是parameter sharding。Parameter sharding就是把模型参数等切分到各个GPU之上。
+Fully Sharded Data Parallel是Facebook深度借鉴微软ZeRO之后提出的PyTorch DDP升级版本，可以认为是对标微软ZeRO，其本质是parameter sharding。Parameter sharding就是把模型参数切分到各个GPU之上。
 
 ![](/images/img5/FSDP.png)
 
+![](/images/img5/fsdp_workflow.png)
+
+上面的操作之所以能够成立，其实是利用了以下公式：
+
 ![](/images/img5/fsdp_sharding.png)
 
-![](/images/img5/fsdp_workflow.png)
+FSDP本身并不能减少数据的通信量，更不可能减少计算量（所有的分布式算法都无法减少理论计算量），甚至还会增加数据的通信量。但是可以通过重叠IO和计算的时间，来提升系统的利用效率。显然与其等待全部计算完成，再All-Reduce，还不如算一部分，通信一部分来的快。
+
+![](/images/img5/HSDP.png)
+
+受到FSDP的启发，Facebook又发明了HSDP，进一步用小步快跑的IO策略，提升系统的利用效率。
 
 代码：
 
@@ -278,27 +294,3 @@ https://zhuanlan.zhihu.com/p/485208899
 https://pytorch.org/tutorials/intermediate/FSDP_tutorial.html
 
 GETTING STARTED WITH FULLY SHARDED DATA PARALLEL(FSDP)
-
-# Megatron-LM
-
-Megatron是NVIDIA的研究小组。目前已经推出了三篇论文：
-
-《Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism》
-
-《Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM》
-
-《Reducing Activation Recomputation in Large Transformer Models》
-
-目前训练超大规模语言模型主要有两条技术路线：TPU + XLA + TensorFlow/JAX和GPU + PyTorch + Megatron-LM + DeepSpeed。前者由Google主导，后者背后则有NVIDIA、Meta、MS大厂加持。
-
-![](/images/img5/Model_Parallel.jpg)
-
-![](/images/img5/Model_Parallel.png)
-
-代码：
-
-https://github.com/NVIDIA/Megatron-LM
-
-微软还有一个项目将DeepSpeed和Megatron-LM结合了起来：
-
-https://github.com/microsoft/Megatron-DeepSpeed

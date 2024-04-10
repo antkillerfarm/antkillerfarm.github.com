@@ -129,7 +129,7 @@ tensorflow/compiler/plugin/poplar/driver/poplar_executable_cache.cc
 
 右上图一般称为朴素流水线并行，该方案在任意给定时刻，除了一个GPU之外的其他所有GPU都是空闲的。
 
-所以就有了Micro-batch Pipeline Parallel。将Batch数据分成N份，每次算完1份，就将输出交给下一个GPU，同时开始处理下1个Micro-batch的数据。
+所以就有了Micro-batch Pipeline Parallel。将Batch数据分成N份，每次算完1份，就将输出交给下一个GPU，同时开始处理下1个Micro-batch的数据。这里的N一般被称为chunks。
 
 注：模型经过拆分后的上一个rank的stage需要长期持续处于空闲状态，等待其他rank的stage计算完成，才可以开始计算，这极大降低了设备的平均使用率。这种现象被称为并行空泡（Parallelism Bubble）。
 
@@ -219,6 +219,14 @@ https://pytorch.org/docs/stable/pipeline.html
 
 Pipeline Parallelism
 
+https://pytorch.org/tutorials/intermediate/pipeline_tutorial.html
+
+Training Transformer models using Pipeline Parallelism
+
+https://pytorch.org/tutorials/advanced/ddp_pipeline.html
+
+Training Transformer models using Distributed Data Parallel and Pipeline Parallelism
+
 ---
 
 `torch.distributed.pipeline`关键代码：
@@ -307,11 +315,3 @@ https://pytorch.org/blog/high-performance-llama-2/
 https://huggingface.co/blog/zh/bloom-inference-optimization
 
 https://huggingface.co/blog/zh/bloom-megatron-deepspeed
-
-## 内存墙
-
-从GPT-1到GPT-3，两年时间内模型参数0.1B增加到175B，而同期，NVIDIA交出的成绩单是从V100的32GB显存增加A100的80GB，显然，显存的提升速度远远赶不上模型模型增长的速度，这就是内存墙问题。
-
-https://mp.weixin.qq.com/s/kuIsyX0QEIeFHn8tvFE8vw
-
-AI训练的最大障碍不是算力，而是“内存墙”

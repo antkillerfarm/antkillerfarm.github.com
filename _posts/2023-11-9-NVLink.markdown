@@ -119,6 +119,8 @@ https://zhuanlan.zhihu.com/p/672749098
 
 Nvidia GPU互联技术全景图
 
+https://en.wikichip.org/wiki/nvidia/nvlink
+
 ## 存储体系
 
 ![](/images/img5/GPU_2.png)
@@ -142,7 +144,7 @@ GPU存储资源：寄存器，本地内存，共享内存，缓存，显存等�
 | 板卡 | 内存 |
 |:--:|:--:|
 | H100 | 80GB HBM2 |
-| 升腾910B | 94GB HBM2 |
+| 昇腾910B | 94GB HBM2 |
 | MI300X | 192GB HBM3 |
 | H200 | 144GB（24GBx6） HBM3e |
 | GB200 | 192GB（24GBx8） HBM3e |

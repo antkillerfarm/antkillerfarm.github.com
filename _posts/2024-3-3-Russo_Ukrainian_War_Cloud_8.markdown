@@ -154,3 +154,7 @@ https://www.zhihu.com/question/591978586
 https://mp.weixin.qq.com/s/wp8CBSc2cBJBddSws2ktzw
 
 乌克兰正在进一步走向分裂！这次不在东部，而是西部。
+
+---
+
+印度总理莫迪宣布，印度决定向乌提供155mm增程炮弹，并且认为那些不提俄罗斯退出乌克兰全部被占领土，却谈和平谈判的是缺乏正义和不够严谨的

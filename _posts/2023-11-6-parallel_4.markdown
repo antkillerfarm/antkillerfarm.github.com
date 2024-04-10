@@ -1,13 +1,35 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（五）——KV Cache, LLM Inference
+title:  并行 & 框架 & 优化（五）——Megatron-LM, KV Cache, LLM Inference
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# Megatron-LM（续）
+# Megatron-LM
+
+Megatron是NVIDIA的研究小组。目前已经推出了三篇论文：
+
+《Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism》
+
+《Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM》
+
+《Reducing Activation Recomputation in Large Transformer Models》
+
+目前训练超大规模语言模型主要有两条技术路线：TPU + XLA + TensorFlow/JAX和GPU + PyTorch + Megatron-LM + DeepSpeed。前者由Google主导，后者背后则有NVIDIA、Meta、MS大厂加持。
+
+![](/images/img5/Model_Parallel.jpg)
+
+![](/images/img5/Model_Parallel.png)
+
+代码：
+
+https://github.com/NVIDIA/Megatron-LM
+
+微软还有一个项目将DeepSpeed和Megatron-LM结合了起来：
+
+https://github.com/microsoft/Megatron-DeepSpeed
 
 参考：
 
@@ -88,6 +110,18 @@ LLM的推理优化技术纵览
 prefill（用户输入）和decode（模型输出）的token量在不同场景下也是不一样的。如果是简单对话场景，通常模型的decode输出会更多一些，而如果是超长上下文场景，用户先上传一本几十万字的书再进行问答，这本书的prefill会直接起飞。在Agent场景下，大量预设的prompt也会占据非常多的prefill，不过prompt的prefill有不少机会可以提前算好KV而无需每个用户请求单独重复计算。
 
 当整个推理系统服务几千万用户时，一个batch的几十个用户请求支持开胃菜。每个用户会不间断地和大模型进行交互，发出大量请求，但这些请求的间隔时间短则几秒，长则几分钟几小时。考虑人机交互的频率，一个用户请求结束后，对应的KV-cache继续常驻在高速内存中实际意义不大。
+
+---
+
+![](/images/img5/llm.png)
+
+https://www.zhihu.com/tardis/zm/art/647813179
+
+大模型文本生成——解码策略（Top-k & Top-p & Temperature）
+
+https://b23.tv/OfdfBnz
+
+如何设置大模型推理参数，top_k，top_p, temperature, num_beams
 
 ## TensorRT-LLM
 
@@ -294,47 +328,3 @@ https://www.zhihu.com/answer/2259890109
 https://mp.weixin.qq.com/s/ai_XI8ddP5I2m3ChCqnQsA
 
 高效大规模机器学习训练，198页PDF带你概览领域前沿进展
-
-https://openmlsys.github.io
-
-机器学习系统：设计和实现
-
-https://mp.weixin.qq.com/s/RAjusu-Jyqb8K19N8KZ_3w
-
-一份552页《大规模数据系统：Large-scale Data Systems》硬核课程PPT
-
-https://mp.weixin.qq.com/s/AeCQK2hFy60pq6y1tRcs_A
-
-20页pdf，A Survey on Large-scale Machine
-
-https://mp.weixin.qq.com/s/_1Yr_BbFhlNEW7UtYvAaoA
-
-分布式深度学习，93页ppt概述最新DDL技术发展
-
-https://mp.weixin.qq.com/s/jC5v9BKQvlxa2_6cikXV9w
-
-分布式算法与优化，118页pdf
-
-https://zhuanlan.zhihu.com/p/58806183
-
-深度学习的分布和并行处理系统
-
-https://zhuanlan.zhihu.com/p/56991108
-
-一文说清楚Tensorflow分布式训练必备知识
-
-https://zhuanlan.zhihu.com/p/26552293
-
-Dataflow架构和神经网络加速器
-
-https://zhuanlan.zhihu.com/p/28445511
-
-浅析深度学习框架设计中的关键技术
-
-https://mp.weixin.qq.com/s/wu32LBwrkkBIANMdknHlCA
-
-C++并行实战，592页pdf，C++ Concurrency in Action
-
-https://zhuanlan.zhihu.com/p/79385727
-
-有限元并行计算简介

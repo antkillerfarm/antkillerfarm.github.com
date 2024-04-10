@@ -9,6 +9,46 @@ category: DL acceleration
 
 # 并行 & 框架 & 优化
 
+https://mp.weixin.qq.com/s/RAjusu-Jyqb8K19N8KZ_3w
+
+一份552页《大规模数据系统：Large-scale Data Systems》硬核课程PPT
+
+https://mp.weixin.qq.com/s/AeCQK2hFy60pq6y1tRcs_A
+
+20页pdf，A Survey on Large-scale Machine
+
+https://mp.weixin.qq.com/s/_1Yr_BbFhlNEW7UtYvAaoA
+
+分布式深度学习，93页ppt概述最新DDL技术发展
+
+https://mp.weixin.qq.com/s/jC5v9BKQvlxa2_6cikXV9w
+
+分布式算法与优化，118页pdf
+
+https://zhuanlan.zhihu.com/p/58806183
+
+深度学习的分布和并行处理系统
+
+https://zhuanlan.zhihu.com/p/56991108
+
+一文说清楚Tensorflow分布式训练必备知识
+
+https://zhuanlan.zhihu.com/p/26552293
+
+Dataflow架构和神经网络加速器
+
+https://zhuanlan.zhihu.com/p/28445511
+
+浅析深度学习框架设计中的关键技术
+
+https://mp.weixin.qq.com/s/wu32LBwrkkBIANMdknHlCA
+
+C++并行实战，592页pdf，C++ Concurrency in Action
+
+https://zhuanlan.zhihu.com/p/79385727
+
+有限元并行计算简介
+
 https://mp.weixin.qq.com/s/heVQ9AIZKxTiCNiAtYKaag
 
 新加坡国立大学最新“大规模深度学习优化”综述论文，带你全面了解最新深度学习准确率和效率的优化方法

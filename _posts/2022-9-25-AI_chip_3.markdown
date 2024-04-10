@@ -9,6 +9,62 @@ category: Chip
 
 # AI Chip
 
+## Huawei
+
+Huawei的AI芯片项目大约启动于2016年底，算是布局比较晚的了，所以初期它们和寒武纪有不少合作。
+
+官网：
+
+https://ascend.huawei.com/home
+
+Model Zoo：
+
+https://github.com/Ascend/models
+
+重要的开源项目：
+
+https://gitee.com/ascend/tensorflow
+
+https://gitee.com/mindspore/graphengine
+
+---
+
+Ascend(昇腾)芯片主要包括端侧的310系列和用于数据中心的910系列。
+
+![](/images/img5/DaVinci.jpg)
+
+MTE(Memory Transfer Engine) 
+
+三种计算单元支持的典型操作：
+
+![](/images/img5/ascend_op.png)
+
+![](/images/img5/Ascend_Cluster.jpg)
+
+HCCS，即Huawei Cache Coherence System（华为Cache一致性总线）。
+
+英伟达的NVLink可以实现8颗芯片互联，而HCCS目前仅支持4路互联，提供30GB/S带宽。两个组使用PCI-E总线相互通信，提供32GB/S带宽。
+
+这实际上就是NV在DGX1+P100时代，采用过的hybrid cube-mesh结构。
+
+参考：
+
+https://www.zhihu.com/answer/3459186418
+
+华为昇腾芯片跟英伟达的芯片相比，差在哪里？
+
+---
+
+参考：
+
+https://www.jiqizhixin.com/articles/2019-08-20-4
+
+华为在hotchips详细介绍了达芬奇架构
+
+https://www.hiascend.com/zh/software/cann
+
+CANN（Compute Architecture for Neural Networks）是华为针对AI场景推出的异构计算架构
+
 ## Imagination
 
 Imagination Technologies公司前身是一家名为Video Logic的公司，VideoLogic成立于1985年，主营业务是图形与音频加速等方面。后来选择了与ARM的类似盈利模式——授权IP核，并在1999年更名为Imagination Technologies。
@@ -202,22 +258,6 @@ https://mp.weixin.qq.com/s/7vxJTh4IHeqUsc7IsLFLSA
 https://www.cnblogs.com/zuyunfei/p/16349835.html
 
 AI芯片：编程模型和硬件抽象（Nvidia CUDA vs Graphcore Poplar）
-
-## Expedera
-
-官网：
-
-https://www.expedera.com
-
-![](/images/img5/Expedera.png)
-
-其中的partial summation (PSUM)也是近年来针对大模型的一种常见的优化方法。原理有点类似MapReduce，PSUM相当于Reducer，对数据进行初步的收集，再最终汇总到一起。这样效率上要比全局只有一个单元进行summation要高的多。
-
-参考：
-
-https://www.expedera.com/wp-content/uploads/2023/02/Architectural-Considerations-for-Compute-in-Memory-in-AI-Inference-final.pdf
-
-https://www.expedera.com/wp-content/uploads/2021/04/Expedera-Linley-White-Paper.pdf
 
 ## 寒武纪
 

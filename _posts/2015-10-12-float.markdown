@@ -207,6 +207,10 @@ https://chenzomi12.github.io/
 
 AI系统 & 深度学习系统
 
+https://openmlsys.github.io
+
+机器学习系统：设计和实现
+
 ## 并发和并行
 
 并发(concurrency)是指能处理多个同时性活动的能力，并发事件之间不一定要同一时刻发生。

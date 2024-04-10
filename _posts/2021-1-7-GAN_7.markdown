@@ -239,6 +239,10 @@ https://space.bilibili.com/12566101
 
 一个AI绘图方面的博主（秋葉aaaki）
 
+https://microsoft.github.io/generative-ai-for-beginners
+
+Generative AI for Beginners
+
 ---
 
 在C站，一个南京艺术学院毕业的学美术小姐姐，网名叫娜乌斯嘉，她用自己的照片训练了lora，并分享给全网AI绘画爱好者们使用。

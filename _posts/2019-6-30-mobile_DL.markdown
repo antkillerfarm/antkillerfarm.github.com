@@ -275,6 +275,14 @@ GetPartitionedClusters：根据支持列表分割计算图
 
 AppendClusterToSubGraph：将切割好的图打包发给backend。
 
+---
+
+ORT model format是ONNX Runtime提出的一种压缩模型格式。
+
+https://onnxruntime.ai/docs/performance/model-optimizations/ort-format-models.html
+
+ORT model format
+
 ### DirectML
 
 基于DirectX 12提出的加速方案。

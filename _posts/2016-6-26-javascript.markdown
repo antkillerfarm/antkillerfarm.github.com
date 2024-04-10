@@ -43,6 +43,8 @@ http://libs.baidu.com/jquery/1.9.1/jquery.min.js
 
 http://libs.useso.com/js/jquery/1.9.1/jquery.min.js
 
+http://cdn.bytedance.com
+
 这里是百度CDN库的说明：
 
 http://developer.baidu.com/wiki/index.php?title=docs/cplat/libs
