@@ -370,6 +370,19 @@ selector {property1: value1; property2: value2; ... propertyN: valueN}
 
 name没有快捷的选择方法，但可以采用属性的方式进行选择，例如：`input[name="you"]`
 
+---
+
+点击改变当前对象的css属性：
+
+```javascript
+$(document).ready(function () {
+  $("img").bind("click", function () {
+      event.currentTarget.style.maxWidth = "100%";
+      event.currentTarget.style.maxHeight = "100%";
+  })
+});
+```
+
 ## 参考
 
 https://www.zhihu.com/question/21775016
@@ -383,23 +396,3 @@ https://mp.weixin.qq.com/s/DUOfYS-0k-F1p1-_YO9udA
 https://mp.weixin.qq.com/s/bgxkqnr-MPwsKDBicJIpgA
 
 如何只使用CSS提升页面渲染速度
-
-# Traffic Demo
-
-2019.9
-
-最近心血来潮，翻出了本科时代的作业。其中有一个交通仿真的小demo，最早是用Java Applet写的。岂料，现在别说浏览器了，就连专门看这个的AppletViewer在新版的JDK中，都不见踪影了。。。
-
-于是，只好做现代化移植。本来首选JavaFX的，不料刚开始写，就发现JavaFX对于多线程渲染做的很差，而这个Demo正是个多线程的版本。
-
-反正都要大改，还不如直接移植到js上，连编译都省了。
-
-原始版本：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/java/trafic
-
-新版本：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/nodejs/js/traffic
-
-众所周知，js是单线程的，所以这个版本也是单线程的，逻辑稍微复杂了一些。

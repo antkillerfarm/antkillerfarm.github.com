@@ -131,6 +131,58 @@ https://gitee.com/mindspore/akg/
 
 ![](/images/img5/akg-design.png)
 
+## Halide
+
+Halide也是一个高性能的图形DSL+编译器的项目。它影响了后来的TVM、Taichi等计算引擎项目。
+
+如果你想用普通的CPU做加速，又不想去优化算法，那么halide将是非常优秀的选择。唯一要做的，就是把算法用halide重写一遍即可。
+
+Halide采用的计算和调度分离的方案，为后来的Taichi和TVM所采用。
+
+官网：
+
+https://halide-lang.org/
+
+参考：
+
+https://www.zhihu.com/question/294625837
+
+如何评价Halide？
+
+https://zhuanlan.zhihu.com/p/122217135
+
+halide编程技术指南
+
+https://www.zhihu.com/question/479548933
+
+如何学习halide?
+
+## Tiramisu
+
+官网：
+
+http://tiramisu-compiler.org/
+
+参考：
+
+https://zhuanlan.zhihu.com/p/363516429
+
+Tiramisu：一种基于Polyheral的深度学习模型编译器
+
+## Lift
+
+Lift也是一种并行编程及优化的语言。
+
+官网：
+
+http://www.lift-project.org/
+
+参考：
+
+https://www.zhihu.com/question/313697268
+
+如何评价lift编程语言?
+
 # Git+
 
 ## Monorepo

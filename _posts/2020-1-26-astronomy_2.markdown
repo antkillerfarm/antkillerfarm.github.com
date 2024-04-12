@@ -199,7 +199,7 @@ https://zhuanlan.zhihu.com/p/594394805
 
 ---
 
-![](/images/img2/Solar_dv.png)
+![](/images/img5/Solar_dv.png)
 
 颜刘贞婉（Chen-Wan L. Yan），美国华裔，来自中国台湾。她就读于著名的女子学校“台北州立第一高等女学校，本科是台大物理系。大学毕业后在麻省理工大学攻读物理学博士。颜刘毕业后进入NASA喷气推进实验室（JPL）担任轨道动力学专家。
 

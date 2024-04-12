@@ -77,10 +77,6 @@ https://mp.weixin.qq.com/s/gzwa6ZZeNvm1MyIM93sC5Q
 
 全新缺失图像数据插补框架—CollaGAN
 
-https://mp.weixin.qq.com/s/3bi5Timesxi1YbFdzBs8AA
-
-DeepMind论文：深度压缩感知，新框架提升GAN性能
-
 https://zhuanlan.zhihu.com/p/67532362
 
 生成对抗网络系列——CVPR2019中的图像转化GAN

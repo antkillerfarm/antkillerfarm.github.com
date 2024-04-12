@@ -213,9 +213,36 @@ https://blog.csdn.net/xiny520/article/details/51460148
 
 ## 教程
 
-Fundamentals Of Computer Graphics。中文常称为“虎书”。
+《Fundamentals Of Computer Graphics》，Steve Marschner著，中文常称为“虎书”。
 
-Physically Based Rendering: From Theory to Implemention
+《Real–time Rendering》，Tomas Akenine-Moller等著。
+
+GPU精粹三部曲：
+
+- GPU Gems 1 （2004）
+- GPU Gems 2 （2005）
+- GPU Gems 3 （2006）
+- GPU Pro 1 （2010）
+- GPU Pro 2 （2011）
+- GPU Pro 3 （2012）
+- GPU Pro 4 （2013）
+- GPU Pro 5 （2014）
+- GPU Pro 6 （2015）
+- GPU Pro 7 （2016）
+- GPU Zen （2017）
+- GPU Zen 2 （2019）
+
+GPU Gems列的主编是Randima Fernando。
+
+GPU Pro和GPU Zen系列的主编是Wolfgang Engel。他还有如下系列作品：
+
+- ShaderX 1 （2002）
+- ShaderX 2 （2003）
+- ShaderX 3 （2004）
+- ShaderX 4 （2006）
+- ShaderX 5 （2006）
+- ShaderX 6 （2008）
+- ShaderX 7 （2009）
 
 ## 历史
 
@@ -224,6 +251,18 @@ Ivan Edward Sutherland，1938年生。计算机图形学之父。图灵奖获得
 https://zhuanlan.zhihu.com/p/121868664
 
 科学，艺术，天才，一篇计算科学的史诗，一场兑现的资本盛宴
+
+## PBR
+
+Physically Based Rendering: From Theory to Implemention
+
+https://zhuanlan.zhihu.com/p/161950497
+
+10分钟了解PBR流程-PBR基本原理和概念
+
+https://mp.weixin.qq.com/s/h-vgHkzLjh9AAa6Z0lZqlg
+
+基于物理渲染(PBR)的车漆技术
 
 ## 参考
 
@@ -258,10 +297,6 @@ https://github.com/KrisYu/computer-graphics-from-scratch-Notes
 https://www.zhihu.com/column/c_1635772272538648576
 
 现代图形引擎入门指南
-
-https://mp.weixin.qq.com/s/h-vgHkzLjh9AAa6Z0lZqlg
-
-基于物理渲染(PBR)的车漆技术
 
 https://zhuanlan.zhihu.com/p/32095589
 
@@ -374,58 +409,6 @@ Taichi NeRF（上）：不写CUDA也能开发、部署Instant NGP
 https://zhuanlan.zhihu.com/p/613679756
 
 Taichi NeRF (下): 关于3D AIGC的务实探讨
-
-## Halide
-
-Halide也是一个高性能的图形DSL+编译器的项目。它影响了后来的TVM、Taichi等计算引擎项目。
-
-如果你想用普通的CPU做加速，又不想去优化算法，那么halide将是非常优秀的选择。唯一要做的，就是把算法用halide重写一遍即可。
-
-Halide采用的计算和调度分离的方案，为后来的Taichi和TVM所采用。
-
-官网：
-
-https://halide-lang.org/
-
-参考：
-
-https://www.zhihu.com/question/294625837
-
-如何评价Halide？
-
-https://zhuanlan.zhihu.com/p/122217135
-
-halide编程技术指南
-
-https://www.zhihu.com/question/479548933
-
-如何学习halide?
-
-## Tiramisu
-
-官网：
-
-http://tiramisu-compiler.org/
-
-参考：
-
-https://zhuanlan.zhihu.com/p/363516429
-
-Tiramisu：一种基于Polyheral的深度学习模型编译器
-
-## Lift
-
-Lift也是一种并行编程及优化的语言。
-
-官网：
-
-http://www.lift-project.org/
-
-参考：
-
-https://www.zhihu.com/question/313697268
-
-如何评价lift编程语言?
 
 ## ZENO
 

@@ -1,350 +1,366 @@
 ---
 layout: post
-title:  深度学习（三十六）——手势识别, 深度图像压缩, 深度树学习
+title:  深度学习（三十六）——视频处理（1）
 category: DL 
 ---
 
 * toc
 {:toc}
 
-# 手势识别
+# 视频处理
 
-https://zhuanlan.zhihu.com/p/26630215
+## 视频目标分割
 
-浅谈手势识别在直播中的运用
+视频目标分割任务和语义分割有两个基本区别：
 
-https://zhuanlan.zhihu.com/p/30561160
+1.视频目标分割任务分割的是一般的、非语义的目标；
 
-2017-最全手势识别/跟踪相关资源大列表分享
+2.视频目标分割添加了一个时序模块：它的任务是在视频的每一连续帧中寻找感兴趣目标的对应像素。
 
-http://www.sohu.com/a/203306961_465975
+![](/images/article/Segmentation.png)
 
-浙江大学CSPS最佳论文：使用卷积神经网络的多普勒雷达手势识别
+上图是Segmentation的细分，其中的每一个叶子都有一个示例数据集。
 
-https://www.zhihu.com/question/20131478
+基于视频任务的特性，我们可以将问题分成两个子类：
 
-我打算只根据手的形状来识别手势。用哪种机器学习算法比较好？
+无监督（亦称作视频显著性检测）：寻找并分割视频中的主要目标。这意味着算法需要自行决定哪个物体才是“主要的”。
 
-https://www.leiphone.com/news/201502/QM7LdSN874dWXFLo.html
+半监督：在输入中（只）给出视频第一帧的正确分割掩膜，然后在之后的每一连续帧中分割标注的目标。
 
-带你了解世界最先进的手势识别技术
+## 视频理解
 
-https://mp.weixin.qq.com/s/DbvH6jM1VV47xKylbW-pug
+视频理解中的三大基础领域:动作识别(Action Recognition)、时序动作定位(Temporal Action Localization)和视频 Embedding。
 
-掌纹识别近十年进展综述
+https://mp.weixin.qq.com/s/ATKmdw50V50_gczEVfIZSw
 
-https://mp.weixin.qq.com/s/mnPh8w3VuG9apprOkugbLA
+视频理解综述：动作识别、时序动作定位、视频Embedding
 
-中科大提出新型连续手语识别框架LS-HAN，帮助“听”懂听障人士
+## 参考
 
-https://mp.weixin.qq.com/s/pUciYFjOKL3ea91fLCy0Yw
+http://mp.weixin.qq.com/s/pGrzmq5aGoLb2uiJRYAXVw
 
-基于OpenCV与tensorflow实现实时手势识别
+一文概览视频目标分割
 
-https://mp.weixin.qq.com/s/xtTmPtjCk4FQuQ3RnPZxEg
+https://www.zhihu.com/question/52185576
 
-UC伯克利黑科技：用语音数据预测说话人手势
+视频中的目标检测与图像中的目标检测具体有什么区别？
 
-https://blog.csdn.net/wangyaninglm/article/details/87296595
+https://mp.weixin.qq.com/s/0NpTiwNRpd92mFCtXw1oQw
 
-指纹的对比分析系统概述
+CVPR 2019视频描述（video caption）相关论文总结
 
-https://mp.weixin.qq.com/s/oybz1DsC8lO5fmgA-3gEfQ
+https://mp.weixin.qq.com/s/nZVIVJ9z0AWA8VFouNpafg
 
-指纹识别不灵敏怎么办？
+深度学习之视频摘要简述
 
-https://mp.weixin.qq.com/s/ji8sEzJXp1UNgBHVOui0ng
+https://mp.weixin.qq.com/s/z1APyCxlOEPHn48OeJAHkQ
 
-谷歌开源手势识别器，手机能用，还有现成的App，但是被我们玩坏了
+基于深度学习的视频内容识别
 
-# 深度图像压缩
+https://mp.weixin.qq.com/s/XFlcGZRrxmmUDZXg-ijFDA
 
-Tiny Network Graphics是图鸭科技推出一种基于深度学习的图片压缩技术。由于商业因素，这里没有论文，技术细节也不详，但是下图应该还是有些用的。
+视频识别SOTA模型都在这了—PySlowFast! Facebook AI Research开源视频理解前沿算法代码库
 
-![](/images/img2/TNG.png)
+https://mp.weixin.qq.com/s/ovjoHCcR1xYb9N6kyFJUTg
 
-还有视频压缩：
+视频广告段落检测——从一个偏门说计算机视觉的发展历史
 
-论文：
+https://mp.weixin.qq.com/s/iqLHjbmLOmvfEeEUB_SqSA
 
-《Deep Learning-Based Video Coding: A Review and A Case Study》
+计算机视觉视频理解领域的经典方法和最新成果
 
-参考：
+https://mp.weixin.qq.com/s/lBu1q5Pyw9dZIxSYXUp2pw
 
-https://mp.weixin.qq.com/s/YBJwLqqL7aVUTG0LaUbwxw
+视频语义分割介绍
 
-深度学习助力数据压缩，一文读懂相关理论
+https://mp.weixin.qq.com/s/qtRV9Sb54o8TnDEhLlB69Q
 
-https://mp.weixin.qq.com/s/WYsxFX4LyM562bZD8rO95w
+基于视频的目标检测的发展
 
-图鸭发布图片压缩TNG，节省55%带宽
+https://zhuanlan.zhihu.com/p/59915784
 
-https://mp.weixin.qq.com/s/meK8UBnVHzA9YspQ2RFp6Q
+Video Action Recognition的近期进展
 
-体积减半画质翻倍，他用TensorFlow实现了这个图像极度压缩模型
+https://mp.weixin.qq.com/s/k4Ilj11wbuj5oIXLHo-5ew
 
-https://mp.weixin.qq.com/s/_5tyt7pU0gIXbkmTOVEtDw
+《视频目标分割与跟踪》最新39页综述论文
 
-嫌图片太大？！卷积神经网络轻松实现无损压缩到20%！
+https://mp.weixin.qq.com/s/GCCqIm4Q7UfUhhiqFbBS3g
 
-https://mp.weixin.qq.com/s/a4oU8UK_hLMrKXNRQizAag
+Pytorch视频分类教程
 
-图鸭科技获CVPR 2018图像压缩挑战赛单项冠军，技术解读端到端图像压缩框架
+https://mp.weixin.qq.com/s/ua8V2g2uZAditKui-IcoKw
 
-https://mp.weixin.qq.com/s/VDyPjzXdwMGEsoXQmhrp9g
+物体检测算法在视频中的应用
 
-图鸭科技斩获CVPR图像压缩挑战赛冠军，TNGcnn4p技术全解读
+https://mp.weixin.qq.com/s/pfAVyS_JQLqsXLYdX2m8IQ
 
-https://mp.weixin.qq.com/s/B7reSwa9sCZqbkYVM5-VOA
+基于深度学习的视频目标检测综述
 
-图像压缩哪家强？请看这份超详细对比
+https://mp.weixin.qq.com/s/NcA178JxgZLrAE1efBG2dA
 
-https://mp.weixin.qq.com/s/K17wlC3tueNBfHkYBUFcQg
+深度神经网络在视频编码中的应用
 
-基于深度学习的HEVC复杂度优化。这是篇视频压缩的blog。
+https://mp.weixin.qq.com/s?__biz=MzU2OTA0NzE2NA==&mid=2247515277&idx=1&sn=e6466ace50c46b66824747c79ea4d6f1
 
-https://mp.weixin.qq.com/s/exUYS2v5VyRaMdFylWlobw
+视频摘要最新综述文章
 
-用循环神经网络进行文件无损压缩：斯坦福大学提出DeepZip
+https://blog.csdn.net/sinat_35177634/article/details/89601950
 
-https://mp.weixin.qq.com/s/GEMOfh04XR5IyWWlvZeeng
+CVPR 2019视频描述（video caption）相关论文总结
 
-CLIC图像压缩挑战赛冠军方案解读
+https://zhuanlan.zhihu.com/p/91986833
 
-https://zhuanlan.zhihu.com/p/78050429
+视频综合理解：行为识别、场景识别以及视频综述
 
-基于深度学习的视频压缩方案介绍
+https://mp.weixin.qq.com/s/noljXreGfoMfiZb_n90R3w
 
-https://mp.weixin.qq.com/s/gNtxBI0Alk70cEujxQmSFQ
+模仿人类的印象机制，商汤提出精确实时的视频目标检测方法
 
-如何将图像压缩10倍？阿里工程师有个大胆的想法！这是一篇传统算法的blog。
+http://mp.weixin.qq.com/s/-Av3-ZNi6UGlKNv_jduAeQ
 
-https://mp.weixin.qq.com/s/OkywKX4XygM8VqkL8A1fcA
+微软新论文：如何利用深度特征流提高视频识别准确率？
 
-TIP 2019开源论文：基于深度学习的HEVC多帧环路滤波方法
+https://mp.weixin.qq.com/s/WMakTEN68KPi7X9kMQetiw
 
-https://mp.weixin.qq.com/s/Qod-SHNa-El48_n-w5PCLQ
+OpenAI:3段视频演示无人驾驶目标检测强大的对抗性样本！
 
-超越H.265，中科大使用多帧数据改进视频压缩新方法
+https://mp.weixin.qq.com/s/j5YPHYEPioLiEIDc6lK3kA
 
-https://zhuanlan.zhihu.com/p/150340687
+在线视频衣物精确检索技术，开启刷剧败明星同款时代
 
-可逆图像缩放：完美恢复降采样后的高清图片
+https://mp.weixin.qq.com/s/CXKuSMi0Vd43BGDf5BgoqA
 
-https://mp.weixin.qq.com/s/jFT6jULJXypFryLB5VEjpw
+弱监督视频物体识别新方法：香港科技大学联合CMU提出TD-Graph LSTM
 
-基于深度学习的图像与视频压缩
+https://mp.weixin.qq.com/s/7ccEaDRngVo42OSU6FBlVg
 
-https://mp.weixin.qq.com/s/sBdAj6tS_FJQ-uxqrMRuOQ
+从视频到语句，优必选获TRECVID 2017子任务冠军
 
-大话实时视频编码中的人工智能（上）
+https://mp.weixin.qq.com/s/XorPkuIdhRNI1zGLwg-55A
 
-https://mp.weixin.qq.com/s/9_ZHrgWwGwX0pyafgCvCsg
+斯坦福新深度学习系统NoScope：视频对象检测快1000倍
 
-大话实时视频编码中的人工智能（下）
+https://mp.weixin.qq.com/s/7w5nYWfZO-YOJ4cA47kQXg
 
-# 深度树学习
+无监督视频物体分割新思路：实例嵌入迁移
 
-决策树是传统ML领域的王者，对于如何将之深度化，一般有两个方向：
+https://mp.weixin.qq.com/s/PhMPa-e4sbzqWKmFzRZE4Q
 
-- 树结构的深度化。代表：gcForest。
+实时替换视频背景：谷歌展示全新移动端分割技术
 
-- 树+DL。一般被称为深度树学习。
+https://mp.weixin.qq.com/s/0JgwBizaCwvPP9TfLKTang
 
-## gcForest
+密歇根大学&谷歌提出TAL-Net：将Faster R-CNN泛化至视频动作定位中
 
-http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
+http://mp.weixin.qq.com/s/LAgDobWyK0SOH08GCLXG7A
 
-周志华教授gcForest（多粒度级联森林）算法预测股指期货涨跌
+减少30%流量，增加清晰度：MIT提出人工智能视频缓存新算法
 
-https://mp.weixin.qq.com/s/GU9-rH0gFan620Jhc1HTDg
+https://mp.weixin.qq.com/s/_ZmbwM-lmS0o2DjAAc_TWQ
 
-周志华提出的gcForest能否取代深度神经网络？
+美图云+中科院AAAI2018：视频语义理解的类脑智能NOASSOM
 
-https://mp.weixin.qq.com/s/dEmox_pi6KGXwFoevbv14Q
+https://mp.weixin.qq.com/s/LzKsD_vFlA1n-TYOGJkDZg
 
-周志华：首个基于森林的自编码器，性能优于DNN
+商汤科技开源DAVIS2017视频目标分割冠军代码
 
-http://mp.weixin.qq.com/s/IfEgSOIkIPA-YtC9NQW1ng
+https://mp.weixin.qq.com/s/FiAju9F_MWexstP7FrIquw
 
-非神经网络的深度模型gcForest
+凭一张照片找到视频中你所有的镜头，包括背影
 
-https://mp.weixin.qq.com/s/N80l9PZQposbIOKXbv8ayw
+https://mp.weixin.qq.com/s/3H0ZJjnPsh1BzALmG0W7og
 
-周志华：最新实验表明gcForest已经是最好的非深度神经网络方法
+DAVIS2017视频目标分割冠军代码开源了
 
-https://mp.weixin.qq.com/s/8QP5X9Hxi_6qyfxP4O0Gwg
+https://mp.weixin.qq.com/s/ZqnfSL6U5E9NzE15QMdxtg
 
-周志华团队和蚂蚁金服合作：用分布式深度森林算法检测套现欺诈
+腾讯AI Lab提出视频再定位任务，准确定位相关视频内容
 
-https://mp.weixin.qq.com/s/bE9BZQ6wCICvrgomdySDuw
+https://mp.weixin.qq.com/s/6MXLtUDi_idMYqbHARkbcg
 
-周志华组提出可做表征学习的多层梯度提升决策树
+港中文林达华团队提出计算机视觉新方向：电影情节分析
 
-https://mp.weixin.qq.com/s/AwvSTF8j0AinS-EgmPFJTA
+https://mp.weixin.qq.com/s/Np4xyvPrncd7MJ9q1WShBA
 
-周志华团队：深度森林挑战多标签学习，9大数据集超越传统方法
+Python视频深度学习：计算任意影片中所有演员出镜时间
 
-## 深度树学习
+https://mp.weixin.qq.com/s/Nt4QLX_lbHhszb8fFlmOLA
 
-https://mp.weixin.qq.com/s/GO7bXBY0cVfGIEEAtp0sKg
+DeepVS：基于深度学习的视频显著性方法
 
-什么时候以及为什么基于树的模型可以超过神经网络模型？
+https://mp.weixin.qq.com/s/NgsSQS6opjOsusTIr9Vx-w
 
-https://mp.weixin.qq.com/s/bjOVQu0FZyTWQRlwEn8IVA
+腾讯AI Lab、MIT等机构提出TVNet：可端到端学习视频的运动表征
 
-基于深度树学习的Zero-shot人脸检测识别
+https://mp.weixin.qq.com/s/26OZ5sLK3floF8I1SNIKuA
 
-https://mp.weixin.qq.com/s/pWcFuOecG-dZHZ365clDjg
+时空建模新文解读：用于高效视频理解的TSM 
 
-阿里妈妈新突破！深度树匹配如何扛住千万级推荐系统压力
+https://mp.weixin.qq.com/s/TzNqZNEPBewR7neU7Or9nQ
 
-https://mp.weixin.qq.com/s/sw16_sUsyYuzpqqy39RsdQ
+更侧重工业的应用：PRCV2018美图短视频实时分类挑战赛冠军技术方案
 
-阿里妈妈深度树检索技术（TDM）及应用框架的探索实践
+https://mp.weixin.qq.com/s/MzVPesFK0vJ1UuQPPSSN2w
 
-https://mp.weixin.qq.com/s/EFDmHH8oUmJk-rG5PNnsAg
+百度、MIT等提出StNet：局部+全局的视频时空联合建模
 
-阿里妈妈深度树匹配技术演进：TDM->JTM->BSAT
+https://mp.weixin.qq.com/s/UeQc3orm2ooZ5zlvrSLzOw
 
-https://mp.weixin.qq.com/s/6r8y7tMqo53lnACWG1K4xA
+视频内容理解在Hulu的应用与实践
 
-深度树学习用于Zero-shot人脸的反欺诈
+https://mp.weixin.qq.com/s/syZObdxjPv6jq3B_mgP9Sw
 
-https://mp.weixin.qq.com/s/NBVPlFGO12PhMTF0dUL2hw
+拒绝“不可描述”！爱奇艺短视频软色情识别技术解析
 
-DeepGBM:使用树蒸馏提升在线预测任务下深度模型效果
+https://mp.weixin.qq.com/s/8YpyfdhDypSZOP3dQegQdQ
 
-# 视频处理+
+谷歌大脑提出基于流的视频预测模型，可产生高质量随机预测结果
 
-https://mp.weixin.qq.com/s/cuejj8atJsbSDae9xnhsxA
+https://mp.weixin.qq.com/s/-FF3tuEB2V8RlQCjQhu5Bg
 
-锁定视频中的目标：港大提出运动注意力检测方法
+人大ML研究组提出新的视频测谎算法
 
-https://mp.weixin.qq.com/s/AUfaghIcRwwzgZzhOqHVZg
+https://mp.weixin.qq.com/s/T-Rg9xLfdYmV8bJESK0h8g
 
-对标GLUE、ImageNet，谷歌推出视觉任务适应性基准VTAB
+快速端到端嵌入学习用于视频中的目标分割
 
-https://mp.weixin.qq.com/s/sc3ROchBFK9pAb-FCKNwLg
+https://mp.weixin.qq.com/s/pKSrokV_j8Repa-JMloUHg
 
-你说我导！微软玩转标题描述生成视频
+Google又发大招：高效实时实现视频目标检测
 
-https://mp.weixin.qq.com/s/jUPhF6OHtVrmTbg29sQV2Q
+https://mp.weixin.qq.com/s/ySAfdII8291hvTxUBtE5qA
 
-谷歌提出TVN视频架构：单CPU处理1s视频仅需37ms、GPU仅需10ms
+详解爱奇艺ZoomAI视频增强技术的应用
 
-https://mp.weixin.qq.com/s/wwHUjME5vR1uF3ad_wlMzw
+https://mp.weixin.qq.com/s/l6WMJnrGNNK4A1cTD2drcg
 
-更准确的弱监督视频动作定位，从生成注意力模型出发
+视频跟踪新思路，完全无需手工标注。这是一篇Visual Tracking和Optical Flow Estimation相互结合的论文
 
-https://mp.weixin.qq.com/s/18KzXb4hHrWvt3QK2UUm3w
+https://mp.weixin.qq.com/s/NQSJvlcjOAoIZjI2cgjhkw
 
-使用深度学习从视频中估计车辆的速度
+谷歌AI：根据视频生成深度图，效果堪比激光雷达
 
-https://mp.weixin.qq.com/s/vuhoK4cVaHDn6oTuGqX_Eg
+https://mp.weixin.qq.com/s/fxKHMVRYCR9CycifjEnArQ
 
-你写脚本，AI自动剪视频：13分钟完成剪辑师7小时创作，清华北航联手打造
+视频显著性目标检测
 
-https://mp.weixin.qq.com/s/IZs9Ctktmvzi_SAU9kD7Gg
+https://mp.weixin.qq.com/s/oSoCIAEF78iKIxLxj2H1mA
 
-多模态人物识别技术及其在爱奇艺视频场景中的应用
+基于光流的视频目标检测系列文章解读
 
-https://mp.weixin.qq.com/s/_OTvNrUtbYaFvKlMxFXoDg
+https://mp.weixin.qq.com/s/1tcoGGbJnnWARu-2wefWdQ
 
-时间可以是二维的吗？基于二维时间图的视频内容片段检测
+不同视角构造cycle-consistency，降低视频标注成本
 
-https://mp.weixin.qq.com/s/8N09Argm9sNJRYipq3Mipw
+https://mp.weixin.qq.com/s/pDMBnX3CeQbv8hr-79Mvvg
 
-淘宝如何拥抱短视频时代？视频推荐算法实战
+商汤EDVR算法获NTIRE 2019视频恢复比赛全部四项冠军
 
-https://mp.weixin.qq.com/s/1h9QvZirPa7EZIpOcC_aiw
+https://mp.weixin.qq.com/s/BtIYc7SSi0E6mT3muV6NhQ
 
-超清还不够，商汤插帧算法让视频顺滑如丝
+视频编辑利器，不喜欢就框除！开源视频物体移除软件video object removal
 
-https://mp.weixin.qq.com/s/adUW9QuXaJ9uIb7Co5j_gw
+https://mp.weixin.qq.com/s/YwZijgTbhd2ILiVxug1dWg
 
-视频物体分割算法：如何提升复杂场景的分割精度？
+框一下就能从视频隐身，这是现实版的“隐身衣”？
 
-https://mp.weixin.qq.com/s/mASzImKwlpX7BJZFux3Adw
+https://zhuanlan.zhihu.com/p/73599727
 
-视频预测领域有哪些最新研究进展？
+基于深度学习的视频帧内插技术
 
-https://mp.weixin.qq.com/s/f2fYwaPNty72CFUIZZPBoA
+https://mp.weixin.qq.com/s/PnDjXF_ZPYPJ3cgZ_w6v-g
 
-让电影动漫统统变丝滑，480帧也毫无卡顿，交大博士生开源插帧软件DAIN
+视频分类/行为识别网络和数据集上新
 
-https://mp.weixin.qq.com/s/8EQNRIIKQnyoPhUG8ben6A
+https://mp.weixin.qq.com/s/cNvQy4MW9vHTbUPsrqnUdA
 
-基于耦合知识蒸馏，速度提升200倍，一款视频显著区域检测新算法
+视频PS神器！人物隐身、水印去除，简直像重拍了一遍，这项登上CVPR的研究刚刚开源了
 
-https://mp.weixin.qq.com/s/MjkdwozIXoCJbooQHype7w
+https://mp.weixin.qq.com/s/umLqkfSDCBUGaEa0yygAIw
 
-视频异常检测：预测未来帧Future Frame Prediction的3个缺陷
+有了这款DVD-GAN，DeepMind就生成了逼真视频
 
-https://mp.weixin.qq.com/s/ZVWxpZPCoUvzZH6F0YkjNg
+https://mp.weixin.qq.com/s/7ygF4zxZxp0Iz7KRDdWebg
 
-图像视频深度异常检测简明综述论文
+R-C3D视频活动检测
 
-https://zhuanlan.zhihu.com/p/114672282
+https://mp.weixin.qq.com/s/N6nL9D1wjsBNzxedXX3qNQ
 
-漫谈视频目标跟踪与分割
+Hulu在视频内容理解上的应用和最佳实践
 
-https://mp.weixin.qq.com/s/oY51Rk6qD7fxeSRIf7HAFg
+https://mp.weixin.qq.com/s/0z6jrEYTdIUSOYzW3gA9FQ
 
-图像生成玩腻了？视频生成技术何不来了解一下
+ActivityNet 挑战赛冠军方案—时序动作提名，边界匹配网络详解
 
-https://mp.weixin.qq.com/s/sfdhG7Wv3s2XW6yYA1ELQA
+https://mp.weixin.qq.com/s/r47N4HVAydNeBOTtP-iruQ
 
-基于记忆增强的全局-局部整合网络：更准确的视频物体检测方法
+阿里文娱资深算法专家：视频物体分割算法的三个方向与最新应用
 
-https://mp.weixin.qq.com/s/B5XrN3rxHsu4VrJLgL3bvg
+https://zhuanlan.zhihu.com/p/75444151
 
-视频分类与行为识别有哪些核心技术，对其进行长期深入学习
+时序动作提名：边界匹配网络详解
 
-https://mp.weixin.qq.com/s/x-fBo5pFD6UlKLh7p68H2A
+https://mp.weixin.qq.com/s/8x1ne425aRb2aqP8dSrClg
 
-用机器学习打造计数君，谷歌RepNet可自动计数视频重复片段
+玩王者荣耀用不好英雄？两阶段算法帮你精准推荐精彩视频
 
-https://mp.weixin.qq.com/s/BSaacpLOVhrm94ufaSPtWA
+https://mp.weixin.qq.com/s/YL08krIuf0WOz8KsoBYhew
 
-RepNet：对视频中的重复周期进行计数
+25个视频神同步，还能给视频声音移花接木，谷歌开源最新自监督算法
 
-https://mp.weixin.qq.com/s/9Vt41Ygn767SnpjoXgnEEg
+https://mp.weixin.qq.com/s/THUjd-wXI6_57mdw4XfYUQ
 
-基于语义流的快速而准确的场景解析
+商汤-港中文MMLab开源图像视频超分辨率工具箱MMSR
 
-https://mp.weixin.qq.com/s/V6UQ8r43p4ULmm4QgjmHSA
+https://zhuanlan.zhihu.com/p/209133135
 
-OpenCV实现视频稳流
+基于深度学习的视频超分辨率技术：全面调研（2015-2020）
 
-https://mp.weixin.qq.com/s/Wn5k0VoscaiIHHC36_Jm2g
+https://mp.weixin.qq.com/s/9YSO1RW8mgyihrZWbEe20w
 
-视频目标检测大盘点
+视频超分辨率研究方法
 
-https://mp.weixin.qq.com/s/1DA5KoqDskD-tk2Co8n0nQ
+https://mp.weixin.qq.com/s/XZ-fn_Xd7vVoLiVr6Esb3g
 
-阿里-优酷视频增强和超分辨率挑战赛冠军方案：VESR-Net
+Ranking Attention-适用于视频分割的全新Attention机制
 
-https://zhuanlan.zhihu.com/p/340568861
+https://zhuanlan.zhihu.com/p/79719747
 
-预测未来--随机视频生成
+Super SloMo,基于光流和U-Net的视频插值
 
-https://mp.weixin.qq.com/s/ZIFEom7wpQll_DgE8bUxtA
+https://mp.weixin.qq.com/s/8uxeOqcUvnZcKHv7qXwWJQ
 
-不同的AI视频推理场景下，如何构建通用高效的抽帧工具？
+如何在视频里任意抠图？阿里工程师做到了！
 
-https://zhuanlan.zhihu.com/p/347705276
+https://mp.weixin.qq.com/s/HHS888HA0slvjkkkI8HU8w
 
-MMAction2: 新一代视频理解工具箱
+字节实习生开发的AI，实现4K60帧视频实时抠图
 
-https://zhuanlan.zhihu.com/p/363872795
+https://zhuanlan.zhihu.com/p/83604007
 
-无监督/自监督的视觉目标跟踪方法
+Deep Burst Denoising/RFCN
 
-https://mp.weixin.qq.com/s/IuhOLVRgqnoOuxZ2boUGuw
+https://mp.weixin.qq.com/s/dl8kbhKUCHzwJ-5lSv6VMw
 
-管中窥“视频”，“理解”一斑——视频理解概览
+高清彩色开国典礼将上映：技术加持之下，历史不会褪色
 
-https://mp.weixin.qq.com/s/4fL-6VSpBFgicJ2MAY7twA
+https://mp.weixin.qq.com/s/-lNM3bVxK8YtmPWdXpSf5A
 
-视频异常行为检测算法MPN，在多个数据库上达到SOTA
+UC信息流视频标签识别技术
+
+https://mp.weixin.qq.com/s?__biz=MzI0ODcxODk5OA==&mid=2247508659&idx=1&sn=77bd5db94ffc7737d937e9b2cbda84cf
+
+快手王华彦：端上视觉技术的极致效率及其短视频应用实践
+
+https://mp.weixin.qq.com/s/JahD1ON5ym0_ldc7MiJz7A
+
+让视频里的你完全消失，Adobe最新SOTA模型实现无痕修图，无需先验知识
+
+https://mp.weixin.qq.com/s/xocs_UI5HzgFZtTPWABRKw
+
+使用时间循环一致性学习(TCC)理解视频内容
+
+https://mp.weixin.qq.com/s/xjQtVE-i-n1N9a0AsR6BWw
+
+网络运行时间提高100倍，Google使用的AI视频理解架构有多强？

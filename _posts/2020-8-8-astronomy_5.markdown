@@ -25,7 +25,11 @@ https://k.sina.com.cn/article_5501440086_147e9505600101icab.html
 
 ---
 
+![](/images/img5/StarLink.jpg)
+
 Starlink用户终端，最高发射功率为2.44瓦。
+
+2020年FCC发出的报告，光美国就有1830万人口没有宽带网络覆盖。
 
 https://finance.sina.com.cn/tech/2021-06-13/doc-ikqciyzi9362614.shtml
 
@@ -34,6 +38,10 @@ SpaceX申请运营第二代Starlink终端 天线输出功率减半
 https://zhuanlan.zhihu.com/p/669146560
 
 ​星链终端所用芯片梳理及商业机遇
+
+https://zhuanlan.zhihu.com/p/691577460
+
+基于2023年卫星通信行业运营情况浅谈一下Starlink竞争优势
 
 ---
 
@@ -191,6 +199,10 @@ https://mp.weixin.qq.com/s/klSndj6LPENaW53OPq15Yg
 
 中国在太空用上了机械臂，却被美国人质疑会去抓他们的卫星？
 
+https://www.zhihu.com/question/638739576
+
+我国成功发射爱因斯坦探针卫星，该卫星有哪些技术亮点和用途？
+
 # 火星探测
 
 F´(F Prime)是一个组件驱动的框架，可以快速开发和部署航天飞行及其他嵌入式软件应用程序。而F´也是火星无人机“机智号”所用的飞行软件框架，它刚由毅力号携带到火星。
@@ -280,19 +292,3 @@ https://mp.weixin.qq.com/s/rv2ayzNS4OpFHFKyW0Papw
 https://mp.weixin.qq.com/s/rLcrrCQnB9gy6gMbFXTAkg
 
 火星上曾有过河流吗？
-
-https://mp.weixin.qq.com/s/5KR2vlOq5HuFLIJNl3Q3pw
-
-从“中国第一张火星近照”中猜到的：这张照片怎么拍的？
-
-https://mp.weixin.qq.com/s/5YK6qK-aUQ-_RuQVzaSH8w
-
-指南针在火星上能用吗？
-
-https://mp.weixin.qq.com/s/cht7uCrbhAttO1cmXRvcPw
-
-为什么“天问一号”必须进入环绕火星大椭圆轨道？
-
-https://mp.weixin.qq.com/s/LVVCA_WTd5PoAn_wHzlJjw
-
-耗资27亿美元，美国又一辆核动力火星车成功着陆，还带了一架直升机

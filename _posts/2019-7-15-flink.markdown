@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Flink, Beam, Parquet, ORC, Apache Arrow, Ceph, 5G
+title:  Flink, Beam, Parquet, ORC, Apache Arrow, Ceph
 category: AI 
 ---
 
@@ -326,49 +326,3 @@ Clickhouse是俄罗斯yandex公司于2016年开源的一个列式数据库管理
 https://mp.weixin.qq.com/s/5ws-sT-AYswdx3xQuqmPqQ
 
 Clickhouse的实践之路
-
-# 5G
-
-O-RAN是中国移动发起的，中国三大运营商都是成员。
-
-诺基亚和爱立信意识到大势不可阻挡，后来也先后加入了O-RAN。双方的博弈在于运营商要求兼容O-RAN，但是在政治影响下大干快上时也许顾不上。
-
-唯一拒绝O-RAN的是华为。三十多年辉煌的版图扩张使自己颠覆自己的决定太难了。
-
-https://mp.weixin.qq.com/s/F3KRfVyvbtc5x2LZ7wgXuQ
-
-媒体口中的5G和真实的5G区别有多大？
-
----
-
-在5G上，中国一直压宝sub-6，而美国和欧洲都压宝毫米波。一方面确实是sub-6技术难点低，成本低，普及快（但传输速度真的和4G没太大差别，正如其他答主所说的，只是一个4.5G的技术，把很多LTE后期技术打包成5G的样子，但后来没想到，为了对比5G的高速，运营商会想出4G降速的方法，真是高）。但另一方面，一旦没了先发优势，欧美开始在毫米波发力，传输能力基本上就吊打sub-6了（当时宣传的5G低延迟高带宽都是基于的毫米波技术）。
-
----
-
-https://mp.weixin.qq.com/s/oN-drJHFU34XanBzOKzrUQ
-
-有史以来最强的5G入门科普！
-
-https://www.iyiou.com/p/93766.html
-
-5G将是一个彻底的失败通信技术
-
-https://mp.weixin.qq.com/s/yIJT9D1YXa4rhf-RMBVPLw
-
-1G到5G之争：一部30年惊心动魄的移动通信史
-
-https://mp.weixin.qq.com/s/1un50xpUf0JGIG03M93gZQ
-
-解析5G背后的核心技术：波束成形
-
-https://mp.weixin.qq.com/s/uxuWmcplTmS8cJObd8cfVw
-
-第一次有人把5G核心网讲得如此通俗易懂！
-
-https://mp.weixin.qq.com/s/uYnu7v3w0evrJhTBYjbI_g
-
-啥叫5G超级上行？
-
-https://mp.weixin.qq.com/s/5v1uknmAPfqFR_5meie9GQ
-
-5G基站功耗到底有多可怕？网友惊呼：国家电网或是5G最大赢家！

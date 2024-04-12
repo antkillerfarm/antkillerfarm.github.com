@@ -35,6 +35,10 @@ category: Russo Ukrainian War Wind
 
 ---
 
+德国图片报副主编保罗·朗兹海默在哈尔科夫防御工事里采访泽连斯基，他原本预计会看到一个沮丧的总统，但是泽连斯基还是会微笑。而且他不喜欢黑暗的房间或者地窖，尽管有警报，还是问记者能不能把采访转移到外面。
+
+---
+
 https://baike.baidu.com/tashuo/browse/content?id=0c64d05cac1e174119d96e5f
 
 泽连斯基：风云人物这一年

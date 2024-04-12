@@ -9,6 +9,22 @@ category: Nature
 
 # 火星探测（续）
 
+https://mp.weixin.qq.com/s/5KR2vlOq5HuFLIJNl3Q3pw
+
+从“中国第一张火星近照”中猜到的：这张照片怎么拍的？
+
+https://mp.weixin.qq.com/s/5YK6qK-aUQ-_RuQVzaSH8w
+
+指南针在火星上能用吗？
+
+https://mp.weixin.qq.com/s/cht7uCrbhAttO1cmXRvcPw
+
+为什么“天问一号”必须进入环绕火星大椭圆轨道？
+
+https://mp.weixin.qq.com/s/LVVCA_WTd5PoAn_wHzlJjw
+
+耗资27亿美元，美国又一辆核动力火星车成功着陆，还带了一架直升机
+
 https://mp.weixin.qq.com/s/eNG-zbHfrji3frbRbQI-Xw
 
 听！火星的声音！又一辆核动力火星车刚刚着陆，寻找远古火星生命
@@ -272,10 +288,6 @@ https://www.zhihu.com/question/526726624
 ---
 
 在目前的理论下，低于5倍地球质量的行星通常会是岩石行星，超过10倍地球质量的行星则会成为类海王星或气体行星。
-
----
-
-第四宇宙速度（fourth cosmic velocity），是指在地球上发射的物体摆脱银河系引力束缚，飞出银河系所需的最小初始速度。但由于人们尚未知道银河系的准确大小与质量，因此只能粗略估算，其数值在525公里/秒以上。
 
 ---
 

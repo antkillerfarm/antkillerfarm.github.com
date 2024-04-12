@@ -229,10 +229,6 @@ https://mp.weixin.qq.com/s/XfYV7pPd54a3gunjznVwdw
 
 诺奖评委、工业 4.0 教父沃夫冈解读AI研究大趋势
 
-https://mp.weixin.qq.com/s/wzUbYyrBOxU-2bY-EJm4KA
-
-极端图像压缩的生成对抗网络，可生成低码率的高质量图像
-
 https://mp.weixin.qq.com/s/G3Uy78fEwEAUtIjlTWJoqw
 
 “尬聊”被拉黑后，这个浙大学生开发了一个深度学习模型

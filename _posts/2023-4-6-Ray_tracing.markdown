@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Ray Tracing, 数字成像（二）
+title:  Ray Tracing, Shader, 数字成像（二）
 category: resource 
 ---
 
@@ -110,6 +110,44 @@ CPU渲染可以在像素级别操作，而GPU渲染单位是三角形，同时�
 https://zhuanlan.zhihu.com/p/618925299
 
 从两个图形库看CPU与GPU渲染的差异（Cairo与Skia）
+
+# Shader
+
+基于OpenGL的OpenGL Shading Language，简称GLSL;
+
+基于DirectX的High Level Shading Language，简称HLSL;
+
+NVIDIA公司的C for Graphic，简称Cg。
+
+除此之外，一些框架也有自己的SL，例如Unity-Shader。
+
+https://zhuanlan.zhihu.com/p/47433678
+
+三大Shader编程语言（CG/HLSL/GLSL）
+
+https://zhuanlan.zhihu.com/p/25024372
+
+跨平台shader编译的过去、现在和未来
+
+http://tieba.baidu.com/p/2155772860
+
+GPU和Shader技术的基础知识
+
+http://www.jianshu.com/p/8687a040eb48
+
+GPU处理图像Shader的入门
+
+https://zhuanlan.zhihu.com/p/25595069
+
+卡通渲染（上）：致从没看懂过着色器代码的你
+
+https://zhuanlan.zhihu.com/p/25939794
+
+卡通渲染（下）
+
+https://zhuanlan.zhihu.com/p/544879511
+
+GPU底层机制分析：显存分配开销
 
 # 数字成像
 

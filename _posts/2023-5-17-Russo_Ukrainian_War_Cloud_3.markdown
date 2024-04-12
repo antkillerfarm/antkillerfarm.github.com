@@ -163,3 +163,7 @@ https://zhuanlan.zhihu.com/p/650515320
 https://zhuanlan.zhihu.com/p/661875360
 
 陆战之王变身铁帽子王！坦克炮塔上的铁笼子作用真有那么大吗？为何俄罗斯、以色列的坦克都对其青睐有加
+
+https://zhuanlan.zhihu.com/p/691570190
+
+老炮聊聊乌克兰的炮战

@@ -311,7 +311,7 @@ https://github.com/OlafenwaMoses/ImageAI
 
 ## Pyecharts
 
-py是一个用于生成Echarts图表的类库。Echarts是百度开源的一个数据可视化JS库。
+Pyecharts是一个用于生成Echarts图表的类库。Echarts是百度开源的一个数据可视化JS库。
 
 官网：
 

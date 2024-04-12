@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  雷达 & 信号处理, Shader
+title:  雷达 & 信号处理, 5G
 category: resource 
 ---
 
@@ -319,104 +319,52 @@ https://zhuanlan.zhihu.com/p/549588865
 
 推荐一个非常实用的峰值查找算法（peak detection）
 
-# Shader
+# 5G
 
-基于OpenGL的OpenGL Shading Language，简称GLSL;
+O-RAN是中国移动发起的，中国三大运营商都是成员。
 
-基于DirectX的High Level Shading Language，简称HLSL;
+诺基亚和爱立信意识到大势不可阻挡，后来也先后加入了O-RAN。双方的博弈在于运营商要求兼容O-RAN，但是在政治影响下大干快上时，也许顾不上。
 
-NVIDIA公司的C for Graphic，简称Cg。
+唯一拒绝O-RAN的是华为。三十多年辉煌的版图扩张使自己颠覆自己的决定太难了。
 
-除此之外，一些框架也有自己的SL，例如Unity-Shader。
+https://mp.weixin.qq.com/s/F3KRfVyvbtc5x2LZ7wgXuQ
 
-https://zhuanlan.zhihu.com/p/47433678
+媒体口中的5G和真实的5G区别有多大？
 
-三大Shader编程语言（CG/HLSL/GLSL）
+---
 
-https://zhuanlan.zhihu.com/p/25024372
+在5G上，中国一直压宝sub-6，而美国和欧洲都压宝毫米波。一方面确实是sub-6技术难点低，成本低，普及快（但传输速度真的和4G没太大差别，正如其他答主所说的，只是一个4.5G的技术，把很多LTE后期技术打包成5G的样子，但后来没想到，为了对比5G的高速，运营商会想出4G降速的方法，真是高）。但另一方面，一旦没了先发优势，欧美开始在毫米波发力，传输能力基本上就吊打sub-6了（当时宣传的5G低延迟高带宽都是基于的毫米波技术）。
 
-跨平台shader编译的过去、现在和未来
+---
 
-http://tieba.baidu.com/p/2155772860
+所谓5G Home，采用5G固定无线接入（FWA）技术，即在居民住宅附近（比如电线杆上）架设5G基站，5G天线发射毫米波波束连接家庭里的CPE终端，为家庭提供无线宽带服务，并面向未来智慧家庭，以代替FTTH光纤入户最后一里。
 
-GPU和Shader技术的基础知识
+---
 
-http://www.jianshu.com/p/8687a040eb48
+https://mp.weixin.qq.com/s/oN-drJHFU34XanBzOKzrUQ
 
-GPU处理图像Shader的入门
+有史以来最强的5G入门科普！
 
-https://zhuanlan.zhihu.com/p/25595069
+https://www.iyiou.com/p/93766.html
 
-卡通渲染（上）：致从没看懂过着色器代码的你
+5G将是一个彻底的失败通信技术
 
-https://zhuanlan.zhihu.com/p/25939794
+https://mp.weixin.qq.com/s/yIJT9D1YXa4rhf-RMBVPLw
 
-卡通渲染（下）
+1G到5G之争：一部30年惊心动魄的移动通信史
 
-https://zhuanlan.zhihu.com/p/544879511
+https://mp.weixin.qq.com/s/1un50xpUf0JGIG03M93gZQ
 
-GPU底层机制分析：显存分配开销
+解析5G背后的核心技术：波束成形
 
-# 区块链参考资源+
+https://mp.weixin.qq.com/s/uxuWmcplTmS8cJObd8cfVw
 
-https://mp.weixin.qq.com/s/m9KwANPIudVesoXjejnOJA
+第一次有人把5G核心网讲得如此通俗易懂！
 
-火币袁煜明：区块链的本质、意义与商业体系设计
+https://mp.weixin.qq.com/s/uYnu7v3w0evrJhTBYjbI_g
 
-iele虚拟机, plutus-marlowe智能合约语言，hydra分片，sidechain侧链, ourobros generic共识协议，kemadelia p2p网络
+啥叫5G超级上行？
 
-https://mp.weixin.qq.com/s/Z2wz5jb7k4QVf0PNCd0THg
+https://mp.weixin.qq.com/s/5v1uknmAPfqFR_5meie9GQ
 
-Cocos王哲：讲解COCOS区块链游戏的发展之路！
-
-https://mp.weixin.qq.com/s/iKiU_QF5y4t1KMmr6WMctw
-
-一文看懂DGames（区块链游戏）的技术架构和业务逻辑！
-
-https://mp.weixin.qq.com/s/zyU0ANfBS_JrFLNylnErUw
-
-C# 200行代码实现区块链
-
-https://mp.weixin.qq.com/s/OUfDGYdgw6XKRgaUXmog1w
-
-区块链对供应链管理的五大意义
-
-https://mp.weixin.qq.com/s/k_mYbnchN2UF0kZ_2JD4Wg
-
-教你用C++搭建一条迷你区块链！
-
-https://mp.weixin.qq.com/s/9hhUZyeax206bAsSqks-1w
-
-比特币黑客攻击手段大揭秘
-
-https://mp.weixin.qq.com/s/Xxi50rDBjrqG-7MIloZMDw
-
-浅谈区块链技术与阿里云的探索实践
-
-https://mp.weixin.qq.com/s/cxzI5oFBAUdtV6akre678w
-
-当区块链与人工智能相遇，会有怎样火花？这篇23页《Blockchain for AI》综述论文告诉你
-
-https://mp.weixin.qq.com/s/4lccUIoXrfWn_Za8xJXH-w
-
-基于tendermint实现Hyperledger Fabric的拜占庭容错排序
-
-https://mp.weixin.qq.com/s/TaHiX6uZiGt-K4Na1r7kcA
-
-社科院商法研究室赵磊：证券交易信用机制，从CSD到DLT
-
-https://mp.weixin.qq.com/s/V4PUZF7JkV9N_EkSCtql2w
-
-Facebook发币，AI大牛签署白皮书，Keras之父评价：没用
-
-https://mp.weixin.qq.com/s/DGx3Y3cu00QN-p-AjkNx7g
-
-深入剖析实现比特币减半的十五行代码
-
-https://mp.weixin.qq.com/s/rlTJVV0PXjII2YJYENlwlw
-
-数字人民币官宣内测，双离线支付 “碰一碰”完成 转账！四个城市抢先试点！
-
-https://mp.weixin.qq.com/s/J6yF8fzvhLK-kJcdFXBxJg
-
-马斯克投15亿，价值47000美元的比特币，其实是一群数学家搞出来的……
+5G基站功耗到底有多可怕？网友惊呼：国家电网或是5G最大赢家！
