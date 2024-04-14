@@ -146,3 +146,7 @@ https://www.zhihu.com/answer/3415851448
 https://www.zhihu.com/answer/2542912308
 
 俄罗斯的工业体系真的灰飞烟灭了么？
+
+https://zhuanlan.zhihu.com/p/692209522
+
+暴论：俄军坦克库存还能撑多久？

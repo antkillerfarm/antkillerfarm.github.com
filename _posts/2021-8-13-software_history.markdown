@@ -314,3 +314,7 @@ PowerPoint发明者丹尼斯·奥斯汀去世，享年76岁，如何评价他的
 https://mp.weixin.qq.com/s/yx9QcDHbuXJ4xvCvbJQmyA
 
 Pascal之父去世！图灵奖得主、编程语言泰斗Niklaus Wirth享年89岁
+
+https://mp.weixin.qq.com/s/1aAxnjWfvuBj5iU9wvyGsg
+
+致敬数据库大师，有28岁英年早逝，有80岁还重新创业

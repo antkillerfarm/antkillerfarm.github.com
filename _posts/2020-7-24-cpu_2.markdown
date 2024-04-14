@@ -57,6 +57,18 @@ EUV光刻机功率达到了100万瓦，是上一代的10倍左右，每天耗电
 
 ---
 
+EUV和DUV确实不是唯一的图形化技术。各路大神们经常提及的还有两种: 纳米压印和电子束曝光。
+
+纳米压印的图形化良率太低。现如今一个芯片上有百亿个晶体管，纳米压印无法保证每个都正常。所以纳米压印只能用在容错率比较高的存储领域。没有任何一家的先进逻辑芯片是用纳米压印做的。
+
+电子束曝光的分辨率可以高于EUV，这个是没错的。但是问题在于曝光的效率太低。和EUV先比，一个是请人抄书，一个是印刷厂印刷书。电子束写一个12寸片，是按天计时的，而EUV是按分钟计的。差了几万倍。所以电子束曝光一般只用于科研和加工光刻板。即使考虑很多个电子束的头同时写，也有本质上的问题：电子之间相互排斥，很多个一起写的话，每个头都写不准。
+
+我们还是别老想着弯道超车了，毕竟有弯道的时候拐弯才能超车。
+
+大家都走直道的时候你拐弯，那不会超车，只会翻车。
+
+---
+
 通常认为，DRAM的天花板是10nm。其原因是在传统1T1C架构下，单位元件面积不断减小，如何保证电容能够存储足够的电荷、防止相邻存储单元之间的耦合，是DRAM推进到10nm以下的无解难题，而EUV是用来做7nm以下的，DRAM目前主流是14纳米。14纳米理论上完全可以用DUV来完成，不需要EUV。
 
 三星电子的1Znm节点DRAM量产结果表明，相比于DUV浸没式光学光刻机，EUV光刻机极大简化了制造流程，不仅可以大幅度提高光刻分辨率和DRAM性能，而且可以减少所使用的掩模数量，从而减少流程步骤的数量，减少缺陷、提高存储密度，并大幅降低DRAM生产成本，缩短生产周期。也就是说，即使EUV掩模费用（达数百万美元）远高于DUV掩模费用，使用EUV光刻机量产DRAM也具有更高的性价比。
@@ -107,6 +119,10 @@ EUV光刻机里的低调王者
 
 ## 芯片制造
 
+![](/images/img5/Fab.jpg)
+
+---
+
 ![](/images/img4/Wafer_size.png)
 
 https://mp.weixin.qq.com/s/jGzdfEJaulPRjt89eLST4Q
@@ -150,60 +166,6 @@ https://mp.weixin.qq.com/s/v3wauOfWw6TLlxTH4QKR6w
 https://mp.weixin.qq.com/s/kzQ-WqozBX-T8ZyS58MPnw
 
 一张图了解芯片到底是如何设计的
-
-## 封装
-
-### BGA & QFP
-
-BGA封装，就是那种引脚都在芯片背面的封装。QFP封装，即四侧引脚扁平封装。同样面积情况下，显然占据一个面的引脚数，要超过仅占据四个边的引脚数。
-
-### 先进封装
-
-CoWoS（Chip-on-Wafer-on-Substrate）
-
-TSV（Through Silicon Via）
-
-https://xueqiu.com/8992033978/256442528
-
-一文看懂TSV技术
-
-https://zhuanlan.zhihu.com/p/586478535
-
-台积电芯片封装技术-CoWoS
-
-https://mp.weixin.qq.com/s/FVcmCvimpoGCtCtm4RDtUg
-
-浅谈先进封装技术
-
-### 参考
-
-https://mp.weixin.qq.com/s/vGONCRzvFGVo6giUFq0uag
-
-芯片封装类型总结
-
-https://mp.weixin.qq.com/s/RtSmbwguM7dbsXkWqAPuCQ
-
-英特尔3D封装技术深度解读
-
-https://zhuanlan.zhihu.com/p/54685671
-
-PCB板上的黑色的物体是什么？
-
-https://mp.weixin.qq.com/s/MQHZ-yLhZRIfOL9kN4XFKw
-
-一文看懂3D封装技术及发展趋势
-
-https://mp.weixin.qq.com/s/WBab6k4mIkZNzpvbgSbpVQ
-
-一文看懂SiP封装技术
-
-https://mp.weixin.qq.com/s/S-YGgvE6ey2t9_YmVmKOFg
-
-一份难得的MOS管封装分析报告
-
-https://mp.weixin.qq.com/s/MXuN1ccza508TMkcYVadvA
-
-芯片封装简史
 
 ## 片上网络
 

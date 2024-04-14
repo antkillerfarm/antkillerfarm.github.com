@@ -219,28 +219,8 @@ https://zhuanlan.zhihu.com/p/665426752
 
 ---
 
-参考：
+当年华为自己没有靠谱的团队，外包给别人训练了盘古。
 
-https://www.zhihu.com/question/584132646
+现在当年训练盘古的人出来做自己的模型，这个模型就是KIMI。
 
-中国的大语言模型“悟道2.0”参数是GPT-3十倍，是否中国在大语言模型训练技术上已经远远超过美国？
-
-https://zhuanlan.zhihu.com/p/463352552
-
-稀疏性在机器学习中的发展趋势——Sparsity，稀疏激活，高效计算，MoE，稀疏注意力机制
-
-https://zhuanlan.zhihu.com/p/254821426
-
-乘风破浪的PTM：两年来预训练模型的技术进展（2020年之前的主流技术）
-
-https://zhuanlan.zhihu.com/p/597586623
-
-通向AGI之路：大型语言模型（LLM）技术精要
-
-https://mp.weixin.qq.com/s/eV_9Mi2879w_gfoyiSm8Ug
-
-LLM全景图（The Landscape of LLM）
-
-https://www.zhihu.com/question/604592470
-
-前两个月国产类ChatGPT大模型如雨后春笋，为何最近都没声音了?
+去查下循环智能就知道了，盘古算是华为委托他们做的，ChatGPT火了之后，杨植麟把循环智能的人拉出来成立的moonshot。

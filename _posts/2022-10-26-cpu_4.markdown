@@ -79,6 +79,10 @@ Dragonfly的拓扑结构分为三层：Switch层，Group层，System层。
 - Group层（灰色椭圆）：包含a个Switch层，这a个Switch层的a个交换机是全连接(All-to-all)的，换言之，每个交换机都有a-1条链路连接分别连接到其他的a-1台交换机。
 - System层：包含g个Group层，这g个Group层也是全连接的。
 
+![](/images/img5/Spine_Leaf.jpg)
+
+上图为Spine+Leaf结构。
+
 https://zhuanlan.zhihu.com/p/32216294
 
 破茧化蝶，从Ring Bus到Mesh网络，CPU片内总线的进化之路

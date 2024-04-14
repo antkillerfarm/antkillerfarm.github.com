@@ -9,6 +9,60 @@ category: Chip
 
 # CPU
 
+## 封装
+
+### BGA & QFP
+
+BGA封装，就是那种引脚都在芯片背面的封装。QFP封装，即四侧引脚扁平封装。同样面积情况下，显然占据一个面的引脚数，要超过仅占据四个边的引脚数。
+
+### 先进封装
+
+CoWoS（Chip-on-Wafer-on-Substrate）
+
+TSV（Through Silicon Via）
+
+https://xueqiu.com/8992033978/256442528
+
+一文看懂TSV技术
+
+https://zhuanlan.zhihu.com/p/586478535
+
+台积电芯片封装技术-CoWoS
+
+https://mp.weixin.qq.com/s/FVcmCvimpoGCtCtm4RDtUg
+
+浅谈先进封装技术
+
+### 参考
+
+https://mp.weixin.qq.com/s/vGONCRzvFGVo6giUFq0uag
+
+芯片封装类型总结
+
+https://mp.weixin.qq.com/s/RtSmbwguM7dbsXkWqAPuCQ
+
+英特尔3D封装技术深度解读
+
+https://zhuanlan.zhihu.com/p/54685671
+
+PCB板上的黑色的物体是什么？
+
+https://mp.weixin.qq.com/s/MQHZ-yLhZRIfOL9kN4XFKw
+
+一文看懂3D封装技术及发展趋势
+
+https://mp.weixin.qq.com/s/WBab6k4mIkZNzpvbgSbpVQ
+
+一文看懂SiP封装技术
+
+https://mp.weixin.qq.com/s/S-YGgvE6ey2t9_YmVmKOFg
+
+一份难得的MOS管封装分析报告
+
+https://mp.weixin.qq.com/s/MXuN1ccza508TMkcYVadvA
+
+芯片封装简史
+
 ## Cache
 
 Cache本质上是一块小而快的存储设备和另一块大而慢的存储设备之间的协作关系。

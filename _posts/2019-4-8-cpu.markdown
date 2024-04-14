@@ -285,8 +285,14 @@ FinFET详解
 
 ---
 
+![](/images/img5/IC_road_map.jpg)
+
 nanosheet所需的highly-selective etch比EUVL推出还要晚，连ASML的EUVL都被纳入出口管制，就更别提LRCX和TEL的selective etch了，买不到设备怎么做nanosheet？
 
 https://www.zhihu.com/question/620014852
 
 DUV光刻机可以做GAA吗？
+
+https://zhuanlan.zhihu.com/p/677687329
+
+半导体制造红宝书 - 关键词100个（合集）
