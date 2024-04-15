@@ -9,172 +9,6 @@ category: Chip
 
 # CPU
 
-## 封装
-
-### BGA & QFP
-
-BGA封装，就是那种引脚都在芯片背面的封装。QFP封装，即四侧引脚扁平封装。同样面积情况下，显然占据一个面的引脚数，要超过仅占据四个边的引脚数。
-
-### 先进封装
-
-CoWoS（Chip-on-Wafer-on-Substrate）
-
-TSV（Through Silicon Via）
-
-https://xueqiu.com/8992033978/256442528
-
-一文看懂TSV技术
-
-https://zhuanlan.zhihu.com/p/586478535
-
-台积电芯片封装技术-CoWoS
-
-https://mp.weixin.qq.com/s/FVcmCvimpoGCtCtm4RDtUg
-
-浅谈先进封装技术
-
-### 参考
-
-https://mp.weixin.qq.com/s/vGONCRzvFGVo6giUFq0uag
-
-芯片封装类型总结
-
-https://mp.weixin.qq.com/s/RtSmbwguM7dbsXkWqAPuCQ
-
-英特尔3D封装技术深度解读
-
-https://zhuanlan.zhihu.com/p/54685671
-
-PCB板上的黑色的物体是什么？
-
-https://mp.weixin.qq.com/s/MQHZ-yLhZRIfOL9kN4XFKw
-
-一文看懂3D封装技术及发展趋势
-
-https://mp.weixin.qq.com/s/WBab6k4mIkZNzpvbgSbpVQ
-
-一文看懂SiP封装技术
-
-https://mp.weixin.qq.com/s/S-YGgvE6ey2t9_YmVmKOFg
-
-一份难得的MOS管封装分析报告
-
-https://mp.weixin.qq.com/s/MXuN1ccza508TMkcYVadvA
-
-芯片封装简史
-
-## Cache
-
-Cache本质上是一块小而快的存储设备和另一块大而慢的存储设备之间的协作关系。
-
-Cache分为硬件Cache和软件Cache两种，这里只讨论前者。后者参见《数据库（一）》。
-
-![](/images/img4/cache.jpg)
-
-![](/images/img4/Mem_Gap.png)
-
-上图展示了CPU和DRAM之间的速度增长的差异，这个差异通常被称为Memory Gap。1980年代以前的计算机是没有Cache的，但是随着Memory Gap的增大，Cache的级数也不断增多，目前3级片上Cache+1级片外Cache已经是标配了。
-
-必须指出的是，和CPU的速度受限于技术进步不同，RAM的问题主要是性能和价格的折衷。Cache实际上也是一种RAM，最好的L0 Cache和CPU的速度相当，只是价格太高而已。
-
-类似这样的还有PCB的线宽。微米级的线宽技术上完全可行，毕竟芯片都已经是纳米级的线宽了，主要还是价格的问题。
-
-多核CPU多级缓存的一致性，一般由相关的一致性总线协议保证。这些协议包括：MSI、MESI和MOESI。
-
----
-
-![](/images/img5/time.png)
-
-https://www.cs.cornell.edu/projects/ladis2009/talks/dean-keynote-ladis2009.pdf
-
-参考：
-
-https://zhuanlan.zhihu.com/p/296808047
-
-每个程序员都应该知道的延迟数字
-
----
-
-https://mp.weixin.qq.com/s/cSu-P-aDSXH0CYLN2HNrxw
-
-深入理解Cache（上）
-
-https://mp.weixin.qq.com/s/rml_wqePIx8vOk2ZO9_GMA
-
-深入理解Cache（下）
-
-https://mp.weixin.qq.com/s/Lydg1TMlNO_98Z-NF5BIBQ
-
-理解CPU Cache
-
-https://mp.weixin.qq.com/s/8g33nTI_-i9Rzmu-5Up-HA
-
-高性能编程：三级缓存（LLC）访问优化
-
-https://mp.weixin.qq.com/s/QidAD9OuVdEXFqxRMPx5lQ
-
-响应速度不给力？解锁正确缓存姿势
-
-https://mp.weixin.qq.com/s/570O2BloWjy3q0_m_mfiZg
-
-CPU缓存一致性协议
-
-https://mp.weixin.qq.com/s/ziJ8OFiLA1it3sQvycN7Mg
-
-翻越缓存的三座大山
-
-https://zhuanlan.zhihu.com/p/63494668
-
-显存为什么不能当内存使？内存、Cache和Cache一致性
-
-https://mp.weixin.qq.com/s/AekR-mv9EOD-4V5SKqI9YQ
-
-一文看懂缓存
-
-https://mp.weixin.qq.com/s/FY8sEX4acEUpCu_6ntArYw
-
-CPU缓存L1/L2/L3工作原理
-
-https://blog.csdn.net/ZoeyyeoZ/article/details/51804647
-
-MESI&MOESI协议
-
-https://mp.weixin.qq.com/s/G4SpTC8DZ-l5kWBRGwSwGQ
-
-Linux内存、Swap、Cache、Buffer详细解析
-
-https://zhuanlan.zhihu.com/p/608663298
-
-一篇论文讲透Cache优化
-
-## Cache Line
-
-高速缓存其实就是一组称之为缓存行(cache line)的固定大小的数据块，其大小是以突发读或者突发写周期的大小为基础的。
-
-每个高速缓存行完全是在一个突发读操作周期中进行填充或者下载的。即使处理器只存取一个字节的存储器，高速缓存控制器也启动整个存取器访问周期并请求整个数据块。缓存行第一个字节的地址总是突发周期尺寸的倍数。缓存行的起始位置总是与突发周期的开头保持一致。
-
-https://zhuanlan.zhihu.com/p/37749443
-
-计算机缓存Cache以及Cache Line详解
-
-## Bélády's Algorithm
-
-Bélády认为最好的缓存算法是：丢弃那些在将来最长时间不被使用的数据。显然这是一个理想化的算法，因为我们没有办法预测未来。但它可以作为衡量缓存算法优越度的一个理论上限。
-
->László Bélády，1928年生，匈牙利计算机科学家。Technical University of Budapest本硕。IBM研究员。
-
-LFU: least frequently used
-
-LRU: least recently used
-
-https://mp.weixin.qq.com/s/AdmEd1FHxpZUwSGYy3qggg
-
-利用cpu缓存实现高性能程序
-
-https://zhuanlan.zhihu.com/p/591436083
-
-经典论文解读——Cache替换算法
-
 ## Scratchpad Memory
 
 除了Cache之外，Scratchpad memory(SPRAM)也是一种常见的内存缓冲硬件。
@@ -342,3 +176,61 @@ https://zhuanlan.zhihu.com/p/339628067
 https://zhuanlan.zhihu.com/p/571417872
 
 开放整机柜服务器简史
+
+## RISC-V
+
+https://mp.weixin.qq.com/s/LreWWlXAQL-dqQBCk93soQ
+
+解读两大精简指令集：RISC-V和MIPS
+
+https://mp.weixin.qq.com/s/5uie8Ci5dK_wy54Z70Gklg
+
+RISC-V精简到何种程度？能省的都省了！
+
+https://mp.weixin.qq.com/s/JNCC3C3Sq0Hzk_5VBcivng
+
+RISC-V有何特别之处？
+
+---
+
+尽管Verilog曾经极大地推动了工程师设计能力的以指数级提升，但是在当下，随着芯片规模尤其是AI芯片规模的急剧增大，Verilog低效的描述方式已经被广为诟病。U.C. Berkeley在设计RISC-V的时候引入Chisel语言。
+
+https://zhuanlan.zhihu.com/p/98097268
+
+初学Chisel语言，看这篇就够了：最方便简洁的入门资料整理
+
+## 多核拓扑
+
+![](/images/img4/In_Chip_Bus.jpg)
+
+Crossbar（XBAR）
+
+各种拓扑结构：ring、torus、fat-tree、dragonfly。
+
+![](/images/img5/Dragonfly.png)
+
+Dragonfly的拓扑结构分为三层：Switch层，Group层，System层。
+
+- Switch层：包括一个交换机（橙色方块），及其相连的p个计算节点（粉色圆圈）。
+- Group层（灰色椭圆）：包含a个Switch层，这a个Switch层的a个交换机是全连接(All-to-all)的，换言之，每个交换机都有a-1条链路连接分别连接到其他的a-1台交换机。
+- System层：包含g个Group层，这g个Group层也是全连接的。
+
+![](/images/img5/Spine_Leaf.jpg)
+
+上图为Spine+Leaf结构。
+
+https://zhuanlan.zhihu.com/p/32216294
+
+破茧化蝶，从Ring Bus到Mesh网络，CPU片内总线的进化之路
+
+https://blog.csdn.net/CodeSavior/article/details/114446140
+
+Spine+Leaf叶脊网络架构
+
+https://zhuanlan.zhihu.com/p/371827494
+
+片内互联中常用的拓扑结构
+
+https://www.modb.pro/db/650884
+
+一文读懂Dragonfly网络拓扑

@@ -1,251 +1,13 @@
 ---
 layout: post
-title:  摩尔定律的瓶颈, CPU(一)
+title:  CPU(一)
 category: Chip 
 ---
 
 * toc
 {:toc}
 
-# 摩尔定律的瓶颈
-
-上世纪60年代，摩尔发现半导体晶体管制程发展的速度对于一个半导体厂商至关重要。
-
-随着制程的进化，同样的芯片的制造成本会更低，因为单位面积晶体管数量提升导致相同的芯片所需要的面积缩小。所以制程发展速度如果过慢，则意味着芯片制作成本居高不下，导致利润无法扩大。
-
-另一方面，如果孤注一掷把所有的资本都用来发展新制程，则风险太大，一旦研发失败公司就完蛋了。
-
-摩尔发现当时市场上成功的半导体厂商的制程进化速度大约是每年半导体芯片上集成的晶体管数量翻倍，于是写了著名的论文告诉大家这个发展速度是成本与风险之间一个良好的折中，半导体业以后发展可以按照这个速度来。（Moore’s Law）
-
-芯片的成本包括NRE成本（Non-Recurring Engineering，指芯片设计和掩膜制作成本，对于一块芯片而言这些成本是一次性的）和制造成本（即每块芯片制造的成本）。
-
-在先进工艺制程，由于工艺的复杂性，NRE成本非常高。例如FinFET工艺往往需要使用double patterning技术，而且金属层数可达15层之多，导致掩膜制作非常昂贵。另外，复杂工艺的设计规则也非常复杂，工程师需要许多时间去学习，这也增加了NRE成本。
-
-对于由先进制程制造的芯片，每块芯片的毛利率较使用落后制程制造的芯片要高，但是高昂的NRE成本意味着由先进制程制作的芯片需要更多的销量才能实现真正盈利。这使得芯片设计和制造所需要的资本越来越高，而无力负担先进工艺制程的中小厂商则不得不继续使用较旧的工艺。这也部分地打破了摩尔定律“投资发展制程-芯片生产成本降低-用部分利润继续投资发展制程”的逻辑。
-
-![](/images/article/moore.jpg)
-
-![](/images/img4/line_width.png)
-
-从上图可以看出：2008年以前，先进制程有一个明显的爬坡阶段，但是如今更像是百花齐放了。
-
-**Andy gives, Bill takes away.**
-
-![](/images/img3/IC_process.jpg)
-
-![](/images/img3/IC_process_2.jpg)
-
-![](/images/img4/CPU.png)
-
-https://mp.weixin.qq.com/s/TmLSHVkeyqfU-9Jgir0czA
-
-摩尔定律究竟死没死
-
----
-
-对设计公司来说，28nm节点上的开发需要投入5310万美元，16nm需要1亿美元，而到了7nm，则需要将近3亿美元。在这之中，仅仅流片一项付出的成本，就从14nm的300万美元跃升至7nm的3000万美元。所以7nm就算降价，还是贵。
-
----
-
-![](/images/img4/CPU_2.jpg)
-
-![](/images/img4/CPU_3.jpg)
-
-除了fin width（鳍的宽度）和gate length（栅极长度）这俩数据还相对接近我们所说的10nm/7nm这个工艺名称，其他各部分pitch/尺寸都没有达到或接近10nm/7nm的。
-
-以前（在 190nm 以前），我们听到的这个工艺数字特指的就是gate length...，但在190nm以后工艺名称的数字增长，和实际gate length的缩减就已经不同步了。在7nm尤其是5nm以后，变得越来越没有关系...
-
----
-
-1971年：10微米
-
-1974年：6微米
-
-1978年：3微米
-
-1982年：1.5微米
-
-1989年：1微米
-
-1993年：0.8微米
-
-1994年：0.6微米
-
-1995年：0.35微米
-
-1997年：0.25微米
-
-1999年：0.18微米
-
-2001年：0.13微米
-
-2004年：90纳米
-
-2006年：65纳米
-
-2008年：45纳米
-
-2010年：32纳米
-
-2012年：22纳米
-
-2015年：14纳米
-
-2019年：7纳米
-
-https://www.sohu.com/a/483240732_121124379
-
-回顾CPU制程工艺发展
-
----
-
-![](/images/img3/IC_process_3.jpg)
-
-https://www.zhihu.com/question/290382241
-
-为什么memory制程比CPU的制程低？
-
----
-
-![](/images/img2/Makimoto-Wave.jpg)
-
-Makimoto’s Waves
-
->Tsugio Makimoto（牧本次生），IEEE Robert N. Noyce Medal（2018）。曾任索尼CTO。半导体工业从NMOS到CMOS演进的先驱。
-
----
-
-MOSFET device scaling principles，又称为Dennard缩放比例定律（Dennard scaling, 1974）表明，随着晶体管变得越来越小，它们的功率密度保持不变，因此功率的使用与面积成比例；电压和电流的规模与长度成比例。
-
-Dennard scaling是Moore’s Law的物理基础，而后者仅仅是个行业规律而已。
-
-https://mp.weixin.qq.com/s/7kRePPUk_Xat8-7PsAO5XQ
-
-晶体管逐渐变小，Dennard定律比摩尔定律更值得关注，散热和功耗推动芯片专业化
-
-PPA（Power-Performance-Area）
-
->Robert H. Dennard，1932年生，Southern Methodist University本科（1954）+硕士（1956）+CMU博士（1958）。IBM研究员，DRAM发明者。美国工程院院士，IEEE Fellow。
-
-https://www.yicai.com/news/100419064.html
-
-科技创新里程碑：IBM科学家Robert H. Dennard与改变世界的芯片
-
-![](/images/img4/Chip.jpg)
-
-最后两行就说的是固定功耗能达到的最大速度，和固定速度需要的功耗；面积的比较是在上面，不同macro微缩的比例是不一致的。
-
-https://www.zhihu.com/question/512906953
-
-22nm芯片能做到7nm一样的性能吗？
-
-https://zhuanlan.zhihu.com/p/614318358
-
-“双”浅谈14nm+14nm>7nm是否真的可行
-
----
-
-![](/images/img4/bell_law.png)
-
-Bell's law of computer classes（1972）：计算机每10年产生新一代，其设备或用户数增加10倍。
-
->C. Gordon Bell，1934年生，MIT本科（1956）+硕士（1957）。DEC公司的技术灵魂人物（1958～1983），DEC创始人Kenneth Olsen的学弟和创业团队成员。
-
-https://www.zhihu.com/question/20809971
-
-多核之后，CPU的发展方向是什么？
-
----
-
-摩尔定律的黄金时代，靠着工艺进步，软件工程师可以近乎无感地快速享受到硬件性能的红利。随着单核性能提升放缓，软件工程师需要关注更多多核的编程细节，来释放硬件的性能红利。随着单芯片能放的核数也日趋瓶颈，DSA架构、封装技术的演化、甚至System-on-Wafer的技术都涌现出来，期望能够进一步压榨晶体管的性能，也相应地对软件栈提出了更高的要求。
-
----
-
-![](/images/img4/Amdahl_law.jpg)
-
-系统中对某一部件采用更快执行方式所能获得的系统性能改进程度，取决于这种执行方式被使用的频率，或所占总执行时间的比例。
-
----
-
-![](/images/img4/value.jpg)
-
-产业价值链最底层的生产制造领域，即微笑曲线的中间。很多学理工科的人都有这个幻觉，觉得自己做技术做的价值曲线最左端的研发，有着光明的前途。但实际上99%的（对口就业）理工科学生最后都去了生产制造。对于新加坡的芯片行业，其实真正的研发是0，技术全部都是依靠欧美转移。
-
-什么算真正最左侧的研发。还是以芯片光刻胶为例，国外光刻胶阻抗可以做到$$10^{15}$$，国内只能做到$$10^{10}$$，阻抗越高纯度越高，这中间是十万倍的差距。
-
----
-
-微软对Arm服务器的评价：
-
-“我并不需要你帮我省电，而是希望你帮我把更多的电变成更多的钱”
-
 # CPU
-
-## 行业
-
-IC行业的公司一般分为全流程的（IDM），著名公司如德州仪器，英特尔，三星，意法半导体，只做设计自己没有晶圆厂的（Fabless），比如英伟达，AMD，只负责制造的（Foundry），比如台积电。
-
----
-
-台湾三大科学园区为竹科（新竹科学工业园）、中科（中部科学工业园）、南科（南部科学工业园）。台积电研发主要在竹科、量产在中科及南科。
-
----
-
-那时行政院成立“台积电”与“联电”，分别交给张忠谋与曹兴诚。这两位在工研院就闹得不可开交，只好开两家公司给他们管。
-
-台积电是很敢给工程师，联电是很敢给股东。后来就是优秀的工程师都往台积电跑，联电股票涨完几波就后继无力。
-
----
-
-https://xueqiu.com/4081695675/165884010
-
-梁梦松离职的四个点评
-
-https://mp.weixin.qq.com/s/p2f59OngEOKFuELHEIl-hw
-
-科普：芯片行业所说的IP是个什么东西？
-
----
-
-![](/images/img4/xeon-scalable-processor-numbers.png)
-
----
-
-![](/images/img5/EDA.jpg)
-
-Synopsys、Cadence、Siemens EDA（原Mentor）三大巨头垄断了全球EDA行业接近70%左右的市场份额。
-
----
-
-项目管理中项目进度: WS=>ES=>CS=>MP
-
-WS：Working Sample
-
-ES：Engineering Sample
-
-CS：Commercial Sample
-
-MP：mass product
-
-所以，可以理解为ES是工程样品，CS是出货样品。
-
----
-
-Tape out是指芯片完成了设计，将设计数据交给fab开始生产，很多年前，完成的设计数据都是写到磁带里传给fab，设计团队将数据写入磁带叫tape in，fab读取磁带的数据叫tape out，现在科技发展了已经不用磁带了，但这个词还是沿用了下来。
-
-wafer out是指wafer在fab完成了生产，设计的集成电路已经制造在硅基上了，开始要封装测试了。
-
----
-
-全世界芯片行业目前的薪酬排名（仅对普通工程师而言）：
-
-美国西部硅谷附近 > 洛杉矶附近 > 上海和深圳 > 美国东部 > 欧洲，欧洲约等于日韩台湾 > 印度 > 东南亚
-
----
-
-https://zhuanlan.zhihu.com/p/342808728
-
-谈谈ARM/MIPS的Archi-license架构许可模式、IP core授权模式，及其商业规则
 
 ## 3D芯片
 
@@ -296,3 +58,161 @@ DUV光刻机可以做GAA吗？
 https://zhuanlan.zhihu.com/p/677687329
 
 半导体制造红宝书 - 关键词100个（合集）
+
+## 光刻
+
+缩短波长的方法除了增加频率之外，其实还有更换介质（比如水），这就是浸润式微影。不同工作波长，液体也不同。需要考虑液体的吸收作用。
+
+![](/images/img2/ASML.jpg)
+
+![](/images/img4/photoengraving.png)
+
+Rayleigh criterion（瑞利判据）：
+
+$$CD = K_1 \frac{\lambda}{NA}$$
+
+$$K_1$$是一个常数，取决于与芯片制造工艺有关的许多因素。按照ASML的说法，其物理极限值是0.25。$$\lambda$$则代表光刻机使用光源的波长；NA则是光学器件的数值孔径，描述了它们能够收集光的角度范围；CD代表线宽，即可实现的最小特征尺寸。
+
+DUV是深紫外线（Deep Ultraviolet Lithography），EUV是极深紫外线（Extreme Ultraviolet Lithography）。
+
+---
+
+ASML光刻机分为四大等级:
+
+A、EUV7nm及以下。
+
+B、DUV湿法先进制程16-7nm。
+
+C、DUV湿法成熟制程45-28nm。
+
+D、DUV干法110-65nm。
+
+---
+
+目前实现商业量产完成度最高的先进制程光刻机，其一是DUV/EUV光刻机，其二是NIL（Nanoimprint Lithography）光刻机。
+
+DUV/EUV光刻机，主要涉及的企业是荷兰ASML和日本尼康。
+
+1995年，华裔科学家周郁（Stephen Chou）教授首次提出纳米压印概念。
+
+NIL光刻的相关企业：
+
+Nanonex，就是周郁大佬参与的公司，总部在新泽西普林斯顿。
+
+佳能，虽然是日本公司，但是佳能NIL光刻机大部分技术来自收购的Molecular Imprints，这家公司位于德克萨斯，至今佳能NIL光刻机的研发中心也还在德克萨斯奥斯汀。
+
+HP，这个更是不用多说，几乎人人都知道HP是美国企业。
+
+EUV光刻机功率达到了100万瓦，是上一代的10倍左右，每天耗电3万度。
+
+---
+
+EUV和DUV确实不是唯一的图形化技术。各路大神们经常提及的还有两种: 纳米压印和电子束曝光。
+
+纳米压印的图形化良率太低。现如今一个芯片上有百亿个晶体管，纳米压印无法保证每个都正常。所以纳米压印只能用在容错率比较高的存储领域。没有任何一家的先进逻辑芯片是用纳米压印做的。
+
+电子束曝光的分辨率可以高于EUV，这个是没错的。但是问题在于曝光的效率太低。和EUV先比，一个是请人抄书，一个是印刷厂印刷书。电子束写一个12寸片，是按天计时的，而EUV是按分钟计的。差了几万倍。所以电子束曝光一般只用于科研和加工光刻板。即使考虑很多个电子束的头同时写，也有本质上的问题：电子之间相互排斥，很多个一起写的话，每个头都写不准。
+
+我们还是别老想着弯道超车了，毕竟有弯道的时候拐弯才能超车。
+
+大家都走直道的时候你拐弯，那不会超车，只会翻车。
+
+---
+
+通常认为，DRAM的天花板是10nm。其原因是在传统1T1C架构下，单位元件面积不断减小，如何保证电容能够存储足够的电荷、防止相邻存储单元之间的耦合，是DRAM推进到10nm以下的无解难题，而EUV是用来做7nm以下的，DRAM目前主流是14纳米。14纳米理论上完全可以用DUV来完成，不需要EUV。
+
+三星电子的1Znm节点DRAM量产结果表明，相比于DUV浸没式光学光刻机，EUV光刻机极大简化了制造流程，不仅可以大幅度提高光刻分辨率和DRAM性能，而且可以减少所使用的掩模数量，从而减少流程步骤的数量，减少缺陷、提高存储密度，并大幅降低DRAM生产成本，缩短生产周期。也就是说，即使EUV掩模费用（达数百万美元）远高于DUV掩模费用，使用EUV光刻机量产DRAM也具有更高的性价比。
+
+---
+
+参考：
+
+https://mp.weixin.qq.com/s/NZGNrO_LxNc6qrIdofOIfQ
+
+假如没有他（林本坚），就没有今天的台积电
+
+https://mp.weixin.qq.com/s/-cudXRIo0t4gNpEqVJ7vKw
+
+芯片光刻的流程详解
+
+https://mp.weixin.qq.com/s/V2AY7VcUEFCMAdMPJ54ZiA
+
+一文看懂光刻机
+
+https://mp.weixin.qq.com/s/VY0WeBfZ2vN8OaupcsEvxw
+
+光刻胶发展历史
+
+https://mp.weixin.qq.com/s/odDzhxRsGuZYOdYtbrHV8Q
+
+一文看懂光刻胶
+
+https://mp.weixin.qq.com/s/jqP52LFcmd5oGRLBfE2J_A
+
+光刻机编年史（1959-1969）
+
+https://mp.weixin.qq.com/s/YvzxV5NLz4FkKO71bxpAIA
+
+给孩子讲讲光刻机吧
+
+https://mp.weixin.qq.com/s/6BnrAEMpZxJ3ChBHWQ9mWA
+
+台积电缺电！30台EUV光刻机一天耗电90万度
+
+https://mp.weixin.qq.com/s/AUDDEYETPdJSyIdpMl4hLQ
+
+一文看懂ASML EUV光刻技术
+
+https://mp.weixin.qq.com/s/DFU4zoteqehOJkBpVVhXyA
+
+EUV光刻机里的低调王者
+
+## 芯片制造
+
+![](/images/img5/Fab.jpg)
+
+---
+
+![](/images/img4/Wafer_size.png)
+
+https://mp.weixin.qq.com/s/jGzdfEJaulPRjt89eLST4Q
+
+8英寸晶圆30年
+
+---
+
+半导体产业发展至今经历了三个阶段，第一代半导体材料以硅为代表；第二代半导体材料砷化镓也已经广泛应用；而以氮化镓和碳化硅、氧化锌、氧化铝、金刚石等宽禁带为代表的第三代半导体材料。
+
+---
+
+https://mp.weixin.qq.com/s/QF9Nsh_YyX9LZQ_D-4hP-A
+
+芯片是怎么制造的？央视最强科普！
+
+https://mp.weixin.qq.com/s/bKgYpZdXxAexlEtmPQ9oGw
+
+科普：芯片是怎么从沙子中一步步炼成的！
+
+https://mp.weixin.qq.com/s/9y5HFTQr2QP12iR858BFtg
+
+图解intel芯片生产全过程！
+
+https://mp.weixin.qq.com/s/aSCcdTHUoogP7TOK5MIsVw
+
+一颗芯片的全球之旅
+
+https://mp.weixin.qq.com/s/LcnyAhOofWyGHikYwfIlIA
+
+芯片的诞生
+
+https://mp.weixin.qq.com/s/lD2bkDIX6ey-VHchSdbW7g
+
+漫画芯片
+
+https://mp.weixin.qq.com/s/v3wauOfWw6TLlxTH4QKR6w
+
+一文详解MOS管
+
+https://mp.weixin.qq.com/s/kzQ-WqozBX-T8ZyS58MPnw
+
+一张图了解芯片到底是如何设计的

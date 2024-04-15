@@ -9,28 +9,6 @@ category: Chip
 
 # CPU
 
-## RISC-V
-
-https://mp.weixin.qq.com/s/LreWWlXAQL-dqQBCk93soQ
-
-解读两大精简指令集：RISC-V和MIPS
-
-https://mp.weixin.qq.com/s/5uie8Ci5dK_wy54Z70Gklg
-
-RISC-V精简到何种程度？能省的都省了！
-
-https://mp.weixin.qq.com/s/JNCC3C3Sq0Hzk_5VBcivng
-
-RISC-V有何特别之处？
-
----
-
-尽管Verilog曾经极大地推动了工程师设计能力的以指数级提升，但是在当下，随着芯片规模尤其是AI芯片规模的急剧增大，Verilog低效的描述方式已经被广为诟病。U.C. Berkeley在设计RISC-V的时候引入Chisel语言。
-
-https://zhuanlan.zhihu.com/p/98097268
-
-初学Chisel语言，看这篇就够了：最方便简洁的入门资料整理
-
 ## 参考
 
 超线程其实就是两个线程共享一个计算单元和内存控制单元，但有自身独立的一些硬件，目的是两个都不是全负荷工作的线程可以轮流使用计算单元来实现比较好的throughput。但只要有一个很忙，那就可能饿死另一个。
@@ -62,42 +40,6 @@ https://mp.weixin.qq.com/s/rSGRXfN4z3ElP7iQX1umjQ
 https://www.zhihu.com/question/322451170
 
 为什么amd能胶水做到8die，intel最多胶水2die?
-
----
-
-![](/images/img4/In_Chip_Bus.jpg)
-
-Crossbar（XBAR）
-
-各种拓扑结构：ring、torus、fat-tree、dragonfly。
-
-![](/images/img5/Dragonfly.png)
-
-Dragonfly的拓扑结构分为三层：Switch层，Group层，System层。
-
-- Switch层：包括一个交换机（橙色方块），及其相连的p个计算节点（粉色圆圈）。
-- Group层（灰色椭圆）：包含a个Switch层，这a个Switch层的a个交换机是全连接(All-to-all)的，换言之，每个交换机都有a-1条链路连接分别连接到其他的a-1台交换机。
-- System层：包含g个Group层，这g个Group层也是全连接的。
-
-![](/images/img5/Spine_Leaf.jpg)
-
-上图为Spine+Leaf结构。
-
-https://zhuanlan.zhihu.com/p/32216294
-
-破茧化蝶，从Ring Bus到Mesh网络，CPU片内总线的进化之路
-
-https://blog.csdn.net/CodeSavior/article/details/114446140
-
-Spine+Leaf叶脊网络架构
-
-https://zhuanlan.zhihu.com/p/371827494
-
-片内互联中常用的拓扑结构
-
-https://www.modb.pro/db/650884
-
-一文读懂Dragonfly网络拓扑
 
 ---
 
@@ -229,7 +171,7 @@ https://mp.weixin.qq.com/s/pFBhnjtXi8uNMGjYFeSfow
 
 https://mp.weixin.qq.com/s/nDWJS4rfWsqeVgJQbAYQ6w
 
-一文看懂IGBT(绝缘栅双极型晶体管）
+一文看懂IGBT（绝缘栅双极型晶体管）
 
 https://mp.weixin.qq.com/s/4_eGNtXULAdK9UzsP1mwKA
 

@@ -90,6 +90,8 @@ export _GLIBCXX_USE_CXX11_ABI=1
 python setup.py develop
 ```
 
+`python setup.py develop`会在python环境中建立指向源代码build路径的符号链接，这样修改代码也无需重新安装wheel包了，如果想体验完整流程可以使用`python setup.py install`。
+
 ## 示例
 
 Lenet+MNIST+GPU：
