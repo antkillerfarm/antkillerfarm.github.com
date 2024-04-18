@@ -189,6 +189,16 @@ ring all-reduce具有理论上最优的传输带宽，而没有考虑每次传�
 
 这也是为什么英伟达NCCL里既实现了ring all-reduce，也实现了double-tree all-reduce算法。
 
+AllReduce的实现方式不仅和原理相关，也和真实的物理连接方式有关：
+
+![](/images/img5/ring_CC.png)
+
+实际情况要更加复杂，用户可能指定某几块GPU进行通信，这个时候树或者环的结构就不好找了。
+
+例如，在图C中，我们有一个双NVLink连接的骨干环。但是如果我要在GPU 0/1/2/7之间进行allreduce，可怎么办呢？7和0/1/2离得太远了，对算法效率有很大影响。事实上，即使对于成熟的集合通信库，例如nccl，当GPU数目是3或者5的时候效果表现也不好。最好的办法还是学习理解这些拓扑结构，不要出现这样的情况，尽量同时使用拓扑上靠近的GPU。
+
+参考：
+
 https://www.zhihu.com/question/57799212
 
 ring allreduce和tree allreduce的具体区别是什么？
@@ -217,46 +227,6 @@ https://zhuanlan.zhihu.com/p/611229620
 
 NVIDIA的custom allreduce
 
-## 其他概念
+https://zhuanlan.zhihu.com/p/692947173
 
-这里的有些概念并非MPI的内容，但在分布式计算中，应用的比较广，所以就放在这里了。
-
-rank：进程号，在多进程上下文中，我们通常假定rank 0是第一个进程或者主进程，也被称为coordinator（master）。其余的进程为worker。由Rank0来协调所有Rank的进度。
-
-node：物理节点，可以是一个容器也可以是一台机器，节点内部可以有多个GPU。
-
-local_rank：指在一个node上进程的相对序号，local_rank在node之间相互独立。
-
-![](/images/img4/rank.png)
-
-rank与GPU之间没有必然的对应关系，一个rank可以包含多个GPU；一个GPU也可以为多个rank服务（多进程共享GPU），只是习惯上默认一个rank对应着一个GPU。
-
-local_world_size：本地worker数量nproc_per_node。
-
-world_size：所有机器进程的和。world_size = nproc_per_node * nnodes
-
-举例说明：假如有2台机器，每台机器有4块GPU，那么，RANK为[0, 7]；每台机器上的LOCAL_RANK的取值为[0, 3]；world_size的值为8；
-
----
-
-stencil计算：
-
-![](/images/img5/stencil.jpg)
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/69497154
-
-高性能计算--mpi
-
-https://mpitutorial.com/tutorials/
-
-MPI Tutorials
-
-https://zhuanlan.zhihu.com/p/363710263
-
-集体通信
-
-https://downey.io/notes/omscs/cse6220/distributed-memory-model-mpi-collectives/
-
-distributed memory model and mpi collectives
+一文读懂nvidia-smi topo的输出

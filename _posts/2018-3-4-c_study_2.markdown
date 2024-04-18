@@ -266,7 +266,7 @@ f(p.get()); // OK
 
 ---
 
-多线程的weak_ptr需要使用enable_shared_from_this来持有shared_ptr。使用时，用weak_ptr的`lock`函数返回shared_ptr，如果shared_ptr为null，则表明该对象已经被析构了。
+多线程的weak_ptr需要使用enable_shared_from_this机制来把this从类内部传递出来，来持有shared_ptr。使用时，用weak_ptr的`lock`函数返回shared_ptr，如果shared_ptr为null，则表明该对象已经被析构了。
 
 ---
 

@@ -273,7 +273,7 @@ torch_xla/test/test_profile_mp_mnist.py
 
 ## FSDP for torch_xla
 
-FSDP的基本概念，参见《并行 & 框架 & 优化（四）》。
+FSDP的基本概念，参见《并行 & 框架 & 优化（五）》。
 
 分布式，包括FSDP的测试用例主要在：
 

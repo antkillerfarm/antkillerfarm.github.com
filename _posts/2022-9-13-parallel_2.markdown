@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（三）——tf.distribute & MultiDevice, Pipeline Parallel, 其他概念, 大模型训练
+title:  并行 & 框架 & 优化（三）——tf.distribute & MultiDevice, Pipeline Parallel, 其他概念
 category: DL acceleration 
 ---
 
@@ -8,6 +8,50 @@ category: DL acceleration
 {:toc}
 
 # MPI（续）
+
+## 其他概念
+
+这里的有些概念并非MPI的内容，但在分布式计算中，应用的比较广，所以就放在这里了。
+
+rank：进程号，在多进程上下文中，我们通常假定rank 0是第一个进程或者主进程，也被称为coordinator（master）。其余的进程为worker。由Rank0来协调所有Rank的进度。
+
+node：物理节点，可以是一个容器也可以是一台机器，节点内部可以有多个GPU。
+
+local_rank：指在一个node上进程的相对序号，local_rank在node之间相互独立。
+
+![](/images/img4/rank.png)
+
+rank与GPU之间没有必然的对应关系，一个rank可以包含多个GPU；一个GPU也可以为多个rank服务（多进程共享GPU），只是习惯上默认一个rank对应着一个GPU。
+
+local_world_size：本地worker数量nproc_per_node。
+
+world_size：所有机器进程的和。world_size = nproc_per_node * nnodes
+
+举例说明：假如有2台机器，每台机器有4块GPU，那么，RANK为[0, 7]；每台机器上的LOCAL_RANK的取值为[0, 3]；world_size的值为8；
+
+---
+
+stencil计算：
+
+![](/images/img5/stencil.jpg)
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/69497154
+
+高性能计算--mpi
+
+https://mpitutorial.com/tutorials/
+
+MPI Tutorials
+
+https://zhuanlan.zhihu.com/p/363710263
+
+集体通信
+
+https://downey.io/notes/omscs/cse6220/distributed-memory-model-mpi-collectives/
+
+distributed memory model and mpi collectives
 
 https://blog.csdn.net/q19149/article/details/102594031
 
@@ -283,35 +327,3 @@ MindSpore的桎梏和破局
 https://www.hiascend.com/document/detail/zh/CANNCommunityEdition/63RC2alpha002/tfmoddevg/tfmigr1/atlasmprtg_13_9048.html
 
 训练迭代循环下沉
-
-# 大模型训练
-
-目前部分深度学习框架，例如Pytorch和Tensorflow，没有办法满足超大规模模型训练的需求，于是微软基于Pytroch开发了DeepSpeed，腾讯基于Pytroch开发了派大星PatricStar，达摩院基于Tensoflow开发的分布式框架Whale。像是华为昇腾的MindSpore、百度的PaddlePaddle，还有国内的一流科技OneFlow等厂商，对超大模型训练进行了深度的跟进与探索，基于原生的AI框架支持超大模型训练。
-
-https://zhuanlan.zhihu.com/p/432813821
-
-大模型的发展与解决的问题
-
-https://zhuanlan.zhihu.com/p/432289008
-
-从分布式训练到大模型训练
-
-https://www.zhihu.com/question/498271491
-
-为什么说大模型训练很难？
-
-https://zhuanlan.zhihu.com/p/611325149
-
-大型语言模型(LLM)训练指南
-
-https://zhuanlan.zhihu.com/p/629589593
-
-LLM应用开发全栈指南
-
-## 实战经验
-
-https://pytorch.org/blog/high-performance-llama-2/
-
-https://huggingface.co/blog/zh/bloom-inference-optimization
-
-https://huggingface.co/blog/zh/bloom-megatron-deepspeed
