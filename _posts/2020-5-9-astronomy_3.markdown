@@ -1,15 +1,43 @@
 ---
 layout: post
-title: SpaceX（1）
+title: 黑洞
 category: Nature 
 ---
 
 * toc
 {:toc}
 
+# 轨道学（续）
+
+![](/images/img5/Solar_dv.png)
+
+颜刘贞婉（Chen-Wan L. Yan），美国华裔，来自中国台湾。她就读于著名的女子学校“台北州立第一高等女学校，本科是台大物理系。大学毕业后在麻省理工大学攻读物理学博士。颜刘毕业后进入NASA喷气推进实验室（JPL）担任轨道动力学专家。
+
+颜刘通过建立数学模型得出结论，有一种方法不需要携带那么多的能源也能抵达水星，但代价是要花费七年的时间，飞行79亿公里，绕太阳公转15次。
+
+具体操作是：NASA探测器从地球出发后，先绕地球公转轨道一周，追上地球后再次借助地球的引力弹弓前往金星。掠过金星后第一次借助引力弹弓，绕金星轨道一周后，第二次借助金星引力弹弓到水星。然后在水星轨道上掠过水星四次，第四次就能被水星俘获了。
+
+本质上就是利用地球和金星的引力，和它俩的大气层摩擦给探测器减速刹车。
+
+https://www.zhihu.com/question/452059445
+
+为什么水星是最难去的行星?
+
 # 黑洞
 
-## 黑洞照片（续）
+## 黑洞照片
+
+![](/images/img2/Black_hole_-_Messier_87.jpg)
+
+2019.4.10，EHT发布了人类第一张黑洞照片。拍摄日期：2017.4.11。拍摄对象：Messier 87星系的超大质量黑洞（$$3.5\times 10^9 M_{\odot} \sim 6.6 \times 10^9 M_{\odot}$$）
+
+![](/images/img2/BH-illum1.jpg)
+
+![](/images/img2/BH-illumin2.jpg)
+
+![](/images/img2/BH-illumin3.jpg)
+
+![](/images/img2/BH-illumin4.jpg)
 
 https://www.zhihu.com/question/319589547
 
@@ -280,53 +308,3 @@ https://mp.weixin.qq.com/s/bwUZEzgAzANPgaWTFa3GHA
 https://mp.weixin.qq.com/s/J3bk8C-yp3O_PBxn_I9Ywg
 
 马斯克的星际飞船首次起飞测试成功！起跳150米后平稳着陆，“火星在望”
-
-https://www.zhihu.com/question/430470879
-
-如何看待SpaceX首次正式发射载人飞船，送四名宇航员进空间站，商业载人航天将进入怎样的新纪元？
-
-https://mp.weixin.qq.com/s/v56_d3UVm7ItmdHXYt1JjA
-
-马斯克只高兴了8分钟：星舰10号历史性成功着陆，却突然原地爆炸
-
-https://mp.weixin.qq.com/s/odjANeqbHuZAX4t_OhFwjw
-
-终于不再爆炸了！马斯克的星舰原型SN15挑战10千米高度，稳稳着陆
-
-https://mp.weixin.qq.com/s/Bvk-jZ4tbi3jXfDkYwiMlQ
-
-首次成功着陆：SpaceX星舰试飞实现突破
-
-https://mp.weixin.qq.com/s/ed93ZOHB62XKIREnOwIJIQ
-
-马斯克的火箭，这次没！爆！炸！
-
-https://www.zhihu.com/question/487093505
-
-SpaceX执行首次全平民任务，送4名普通人进太空旅行3天，有哪些亮点和里程碑意义？
-
----
-
-星舰这个运力的火箭，能够把单次发射成本压低到5000万美元，意味着只需要200美元一千克。
-
-一个人55千克，加上额外45千克的毛重的话，进入太空的成本只要2万美元！
-
-https://sat.huijiwiki.com/wiki/%E6%98%9F%E8%88%B0
-
-星舰Wiki
-
-https://www.zhihu.com/question/595930014
-
-SpaceX“星舰”发射计划因压力阀问题而推迟，“星舰”发射面临哪些技术困难？需要突破哪些技术障碍？
-
-https://www.zhihu.com/question/596821956
-
-SpaceX星舰发射失败，是什么原因？还有哪些信息值得关注？（2023.4.20）
-
-https://www.zhihu.com/question/629931897
-
-11月18日SpaceX星舰第二次试飞，发射及分离成功后失联，哪些信息值得关注？
-
-https://www.zhihu.com/question/648580491
-
-SpaceX星舰第三次试飞，达到环绕速度，重返大气层过程中失去信号，任务提前结束，有哪些看点？（2024.3.14）

@@ -309,6 +309,10 @@ https://zhuanlan.zhihu.com/p/53299778
 
 既生Redis何生LevelDB？
 
+https://cloud.tencent.com/developer/article/1602204
+
+LevelDB从入门到原理详解
+
 # 向量数据库
 
 向量搜索在搜索、推荐、NLP等众多应用领域被广泛的使用，典型的互联网业务，包括电商、出行、点评、地图等都大量使用相关技术。随着ChatGPT带来的AI技术应用新热潮，向量数据库又一次地获得了更多的关注。它可以解决LLM不长记性（Memory，记忆）的问题。

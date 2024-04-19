@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SpaceX（2）
+title: SpaceX
 category: Nature 
 ---
 
@@ -8,6 +8,58 @@ category: Nature
 {:toc}
 
 # SpaceX（续）
+
+https://www.zhihu.com/question/430470879
+
+如何看待SpaceX首次正式发射载人飞船，送四名宇航员进空间站，商业载人航天将进入怎样的新纪元？
+
+https://mp.weixin.qq.com/s/v56_d3UVm7ItmdHXYt1JjA
+
+马斯克只高兴了8分钟：星舰10号历史性成功着陆，却突然原地爆炸
+
+https://mp.weixin.qq.com/s/odjANeqbHuZAX4t_OhFwjw
+
+终于不再爆炸了！马斯克的星舰原型SN15挑战10千米高度，稳稳着陆
+
+https://mp.weixin.qq.com/s/Bvk-jZ4tbi3jXfDkYwiMlQ
+
+首次成功着陆：SpaceX星舰试飞实现突破
+
+https://mp.weixin.qq.com/s/ed93ZOHB62XKIREnOwIJIQ
+
+马斯克的火箭，这次没！爆！炸！
+
+https://www.zhihu.com/question/487093505
+
+SpaceX执行首次全平民任务，送4名普通人进太空旅行3天，有哪些亮点和里程碑意义？
+
+---
+
+星舰这个运力的火箭，能够把单次发射成本压低到5000万美元，意味着只需要200美元一千克。
+
+一个人55千克，加上额外45千克的毛重的话，进入太空的成本只要2万美元！
+
+https://sat.huijiwiki.com/wiki/%E6%98%9F%E8%88%B0
+
+星舰Wiki
+
+https://www.zhihu.com/question/595930014
+
+SpaceX“星舰”发射计划因压力阀问题而推迟，“星舰”发射面临哪些技术困难？需要突破哪些技术障碍？
+
+https://www.zhihu.com/question/596821956
+
+SpaceX星舰发射失败，是什么原因？还有哪些信息值得关注？（2023.4.20）
+
+https://www.zhihu.com/question/629931897
+
+11月18日SpaceX星舰第二次试飞，发射及分离成功后失联，哪些信息值得关注？
+
+https://www.zhihu.com/question/648580491
+
+SpaceX星舰第三次试飞，达到环绕速度，重返大气层过程中失去信号，任务提前结束，有哪些看点？（2024.3.14）
+
+---
 
 液氢液氧
 
@@ -170,33 +222,3 @@ https://zhuanlan.zhihu.com/p/666038056
 https://www.zhihu.com/question/592998807
 
 维珍轨道宣布将裁掉几乎全部员工，并停止运营，从商业角度如何看待企业此举？
-
----
-
-虽然亚里士多德和托勒密的天文学思想有很多区别，地圆却都是其中的核心事实。他们的思想一直影响着西方的天文学，直到由哥白尼引发并由伽利略、开普勒和牛顿等人推动的天文学革命。但在这场革命中，发生改变的主要是地球在宇宙中的位置，而地球的形状并未引起过争议。
-
-但对中国人来说，了解地球是圆的这个事实却花了很长的一段时间。中国自古以来有“天圆地方”的说法，其中的“地方”既指大地是方形，也指大地是平面。中国古代的宇宙观中有两种观念，分别是浑天说和盖天说。这两种说法的区别在于前者认为天地有相交会处，而后者认为天地是平行的，但是二者均没有地圆的观念。
-
-https://mp.weixin.qq.com/s/0lDJiu1nyS0j1aj7C4tT-g
-
-火箭狂人不幸坠亡，生前坚信“地平说”
-
----
-
-https://mp.weixin.qq.com/s/sPTRKfuhEc0xx7GacomxkA
-
-霍尔效应推进器
-
-https://www.zhihu.com/question/425823778
-
-重力多大的星球无法发射化学火箭？
-
-# Starlink
-
-SpaceX的Starlink卫星是大规模量产卫星的代表，因为沿用了特斯拉的GIGA工厂的思维建造产线，每颗制造成本低于25万美元，如果计算上猎鹰九号的发射成本，平摊到每颗卫星上成本也不超过65万美元，而一枚反卫星导弹的成本大约1000-2000万美元左右，所以俄罗斯反卫星实验不可能针对Starlink卫星。
-
-大家知道当60颗Starlink卫星准备发射前夕完成堆叠后发现其中几颗有问题会如何？答案是继续发射，因为成本极低并且马斯克的Starlink不是直送低轨，先送到一定高度由每颗Starlink卫星自己的霍尔推进器工作爬到指定的工作高度，因此质量有问题的Starlink卫星释放后不会爬升，而是快速进入大气层自毁不会成为太空垃圾。
-
-https://www.zhihu.com/question/558699932
-
-俄媒表示，俄军方宣布针对外国卫星展开反卫星武器试验，有哪些信息值得关注？

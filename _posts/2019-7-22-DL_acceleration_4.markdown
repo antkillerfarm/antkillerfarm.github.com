@@ -181,7 +181,7 @@ Intel在早期的8087芯片上引入了一种80bit的浮点格式：1 Sign + 15 
 
 ## FP8
 
-![](/images/img3/FP8.png)
+![](/images/img5/FP8.png)
 
 FP8包括两种常见的变种：E4M3(4位指数和3位尾数)和E5M2(5位指数和2位尾数)。
 
@@ -211,7 +211,7 @@ HFP8就提出了一种Hybrid的方式：forward的时候用FP-1-4-3，backward�
 
 ![](/images/img5/W4.png)
 
-这种量化方式只对Weight使用4bit量化，而其他Tensor仍然使用16bit量化。A是Activation的意思。
+这种量化方式只对Weight使用4bit量化，而其他Tensor仍然使用16bit的浮点数。A是Activation的意思。
 
 W4A16主要有GPTQ和AWQ等实现。
 
@@ -221,7 +221,7 @@ q3f16（q3指使用Quantize 3 bit来量化，f16是指核心计算使用fp 16来
 
 ## FP4
 
-![](/images/img3/FP4.png)
+![](/images/img5/FP4.png)
 
 IEEE版本的FP4(E2M1)如上图所示，但由于过于粗糙，一般使用更多的是所谓的NormalFloat的NF4。
 

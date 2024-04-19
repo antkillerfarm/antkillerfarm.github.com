@@ -7,7 +7,37 @@ category: Nature
 * toc
 {:toc}
 
-# Starlink（续）
+# SpaceX（续）
+
+虽然亚里士多德和托勒密的天文学思想有很多区别，地圆却都是其中的核心事实。他们的思想一直影响着西方的天文学，直到由哥白尼引发并由伽利略、开普勒和牛顿等人推动的天文学革命。但在这场革命中，发生改变的主要是地球在宇宙中的位置，而地球的形状并未引起过争议。
+
+但对中国人来说，了解地球是圆的这个事实却花了很长的一段时间。中国自古以来有“天圆地方”的说法，其中的“地方”既指大地是方形，也指大地是平面。中国古代的宇宙观中有两种观念，分别是浑天说和盖天说。这两种说法的区别在于前者认为天地有相交会处，而后者认为天地是平行的，但是二者均没有地圆的观念。
+
+https://mp.weixin.qq.com/s/0lDJiu1nyS0j1aj7C4tT-g
+
+火箭狂人不幸坠亡，生前坚信“地平说”
+
+---
+
+https://mp.weixin.qq.com/s/sPTRKfuhEc0xx7GacomxkA
+
+霍尔效应推进器
+
+https://www.zhihu.com/question/425823778
+
+重力多大的星球无法发射化学火箭？
+
+# Starlink
+
+SpaceX的Starlink卫星是大规模量产卫星的代表，因为沿用了特斯拉的GIGA工厂的思维建造产线，每颗制造成本低于25万美元，如果计算上猎鹰九号的发射成本，平摊到每颗卫星上成本也不超过65万美元，而一枚反卫星导弹的成本大约1000-2000万美元左右，所以俄罗斯反卫星实验不可能针对Starlink卫星。
+
+大家知道当60颗Starlink卫星准备发射前夕完成堆叠后发现其中几颗有问题会如何？答案是继续发射，因为成本极低并且马斯克的Starlink不是直送低轨，先送到一定高度由每颗Starlink卫星自己的霍尔推进器工作爬到指定的工作高度，因此质量有问题的Starlink卫星释放后不会爬升，而是快速进入大气层自毁不会成为太空垃圾。
+
+https://www.zhihu.com/question/558699932
+
+俄媒表示，俄军方宣布针对外国卫星展开反卫星武器试验，有哪些信息值得关注？
+
+---
 
 由于星链卫星位于340千米～1300千米之间的地球低轨道上，这就要求反卫星导弹的最大飞行高度可达1300千米。
 
@@ -230,65 +260,3 @@ https://mp.weixin.qq.com/s/oHO6TZuFGeGdDbACdOjS9w
 ![](/images/img4/walle.jpg)
 
 ![](/images/img4/walle_2.jpg)
-
----
-
-格鲁什科和萨格尔耶夫认为，苏联应该放弃失败率居高不下的火星探测，不在这一领域与美国人竞争，而专注于十分成功的金星探测计划。他们及其支持者也被戏称为“金星人”。
-
-当然，远非所有人都支持他们的看法。毕竟，相比于浓云密布、灼热的金星而言，火星看起来更有趣，也能取得更多的科研成果。支持火星探测计划的科学家则被称为“火星人”。
-
-“金星人”和“火星人”关于苏联行星探索方向的争论被时人戏称为“行星间的战争”。
-
-https://mp.weixin.qq.com/s/xWBSzEfKAi2pMUldp0zL9w
-
-先发未能制人，苏联探火为何成果寥寥
-
----
-
-https://mp.weixin.qq.com/s/SqL5WlQXQgNNiXHACfeN1A
-
-苏萌解读“天问一号”：中国人为什么要探测火星？
-
-https://www.zhihu.com/question/312142122
-
-如何评价NASA宣布机遇号火星车永久失联？
-
-https://mp.weixin.qq.com/s/FT6HTL1AGPddPpxdngvlFA
-
-中国“天问一号”即将发射，2020火星年，围观各国火星探测计划！
-
-https://mp.weixin.qq.com/s/N3rxdJVE3qtFUDbd5g_eJA
-
-“天问一号”发射升空！在火星上，能看到哪些天象奇观？
-
-https://mp.weixin.qq.com/s/HVxnSCfLuz3-RMynleCSSQ
-
-天问一号发射了，回火星的票你买了吗？
-
-https://mp.weixin.qq.com/s/C4-HY5xmV8hHtfHfTJ4jFg
-
-关于火星探测的问号，这篇文章都给你拉直
-
-https://mp.weixin.qq.com/s/iAHpr8ZmChCDWGuFxC9uQQ
-
-发射成功！探测火星八大关卡，“天问一号”到了哪一关？
-
-https://mp.weixin.qq.com/s/Y1xXt9yPYYHCBUtZJddkoQ
-
-核动力优势明显，天问一号为什么还要使用太阳能？
-
-https://mp.weixin.qq.com/s/5F4wORf1k2XDIMKzFZBTDw
-
-古人为了看火星，都是怎么做的？
-
-https://mp.weixin.qq.com/s/VMfL5iF3BJg9Xnu5zI3RAA
-
-NASA毅力号直播攻略来了！万字长文详解火星任务：直升机飞行测试、寻找生命迹象、开启往返火星第一步
-
-https://mp.weixin.qq.com/s/rv2ayzNS4OpFHFKyW0Papw
-
-火星陨石的地球“流浪记”
-
-https://mp.weixin.qq.com/s/rLcrrCQnB9gy6gMbFXTAkg
-
-火星上曾有过河流吗？
