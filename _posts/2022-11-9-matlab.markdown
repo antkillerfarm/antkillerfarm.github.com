@@ -316,3 +316,7 @@ C++编程技巧: Pimpl
 https://blog.csdn.net/weixin_42663840/article/details/81188003
 
 深入浅出入侵式容器
+
+https://blog.csdn.net/codears/article/details/111405309
+
+C语言获取超大文件（超过2G）大小的功能
