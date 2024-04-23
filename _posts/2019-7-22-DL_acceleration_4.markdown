@@ -207,6 +207,8 @@ HFP8就提出了一种Hybrid的方式：forward的时候用FP-1-4-3，backward�
 
 《8-BIT NUMERICAL FORMATS FOR DEEP NEURAL NETWORKS》
 
+CFormat这种动态调整exponent和mantissa位数的量化方式，又被称为Dynamic Fixed Point Quantization。
+
 ## W4A16
 
 ![](/images/img5/W4.png)

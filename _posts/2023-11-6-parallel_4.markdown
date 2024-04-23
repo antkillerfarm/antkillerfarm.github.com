@@ -121,7 +121,7 @@ https://zhuanlan.zhihu.com/p/662498827
 
 ![](/images/img5/GQA.jpg)
 
-首先是原始的 MHA(Multi-Head Attention)，QKV 三部分有相同数量的头，且一一对应。每次做Attention，head1的QKV就做好自己运算就可以，输出时各个头加起来就行。
+首先是原始的MHA(Multi-Head Attention)，QKV 三部分有相同数量的头，且一一对应。每次做Attention，head1的QKV就做好自己运算就可以，输出时各个头加起来就行。
 
 而MQA则是，让Q仍然保持原来的头数，但K和V只有一个头，相当于所有的Q头共享一组K和V头，所以叫做Multi-Query了。
 

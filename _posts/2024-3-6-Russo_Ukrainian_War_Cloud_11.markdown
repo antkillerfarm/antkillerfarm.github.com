@@ -400,3 +400,7 @@ https://www.zhihu.com/answer/2400893131
 https://zhuanlan.zhihu.com/p/691321169
 
 乌克兰最近防御工事总览
+
+https://zhuanlan.zhihu.com/p/693962901
+
+拉夫罗夫：俄乌战争，俄罗斯获胜不符合中国利益

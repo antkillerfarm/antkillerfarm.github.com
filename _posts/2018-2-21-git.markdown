@@ -219,6 +219,8 @@ git的reset和checkout的区别
 
 `git merge -s ours branch`，在不改变本地内容的情况下，触发merge操作。
 
+`git log --graph`，字符式的图形化展示分支历史。
+
 ## 如何git下载超大版本库
 
 自从两次git完整的linux kernel，都因为网络问题，而中途失败之后，不甘心的我，继续在网上寻找答案。

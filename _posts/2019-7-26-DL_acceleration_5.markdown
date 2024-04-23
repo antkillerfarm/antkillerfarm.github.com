@@ -273,6 +273,10 @@ https://mp.weixin.qq.com/s/TXWdx3bbBNfaG3yp2G56ew
 
 提速还能不掉点！深度解析MegEngine 4 bits量化开源实现
 
+https://www.zhihu.com/question/627484732
+
+目前针对大模型进行量化的方法有哪些？
+
 # 模型压缩与加速
 
 对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。

@@ -118,6 +118,10 @@ stackless：这是一个新兴的实现方案。本质上其实就是一个状�
 
 参考：
 
+https://www.chiark.greenend.org.uk/~sgtatham/coroutines.html
+
+Coroutines in C
+
 https://www.zhihu.com/question/23955356
 
 协程和纤程的区别？
