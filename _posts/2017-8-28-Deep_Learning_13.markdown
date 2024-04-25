@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  深度学习（十三）——姿态/行为检测, 花式池化
+title:  深度学习（十三）——Non-local Networks, 姿态/行为检测, 花式池化
 category: DL 
 ---
 
 * toc
 {:toc}
 
-# Non-local
+# Non-local Networks
 
 https://zhuanlan.zhihu.com/p/33345791
 

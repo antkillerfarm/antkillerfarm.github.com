@@ -214,3 +214,33 @@ DRN：用于单图像超分辨率的对偶回归网络
 https://mp.weixin.qq.com/s/tE_-gUBmt_0h75CnkViUHA
 
 超分辨率技术:Adobe Photoshop与深度神经网络对比
+
+# 无监督/半监督/自监督深度学习+
+
+https://mp.weixin.qq.com/s/9kMz-eNRwC51Fi0-7BfKzA
+
+Active Learning: 一个降低深度学习时间，空间，经济成本的解决方案
+
+https://mp.weixin.qq.com/s/ZvTm9omnIRqPXcLFbZtoeg
+
+深度学习的关键：无监督深度学习简介
+
+https://mp.weixin.qq.com/s/GHjmiB6F2W3Zo8gVllTyyQ
+
+重现“世界模型”实验，无监督方式快速训练
+
+https://mp.weixin.qq.com/s/3_VtdZNKBwNtMEMf2xc7qw
+
+CVPR智慧城市挑战赛：无监督交通异常检测，冠军团队技术分享
+
+https://mp.weixin.qq.com/s/3aAaM1DWsnCWEEbP7dOZEg
+
+伯克利等提出无监督特征学习新方法，代码已开源
+
+https://mp.weixin.qq.com/s/kNTRpDbKQIalzJi_rx0noQ
+
+无标签表示学习，222页ppt，DeepMind
+
+https://mp.weixin.qq.com/s/ZDPPWH570Vc6e1irwP1b1Q
+
+精细识别现实世界图像：李飞飞团队提出半监督适应性模型

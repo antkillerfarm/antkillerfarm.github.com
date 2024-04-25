@@ -9,6 +9,30 @@ category: DL
 
 # Style Transfer（续）
 
+## 其他
+
+原版的neural style是用Gram矩阵来进行匹配风格，但是也有用其他的。例如：
+
+MRF loss（ombining markov random fields and convolutional neural networks for image synthesis.）
+
+Adversarial loss(C. Li and M. Wand. Precomputed real-time texture synthesis with markovian generative adversarial networks. In ECCV,2016)
+
+梯度直方图（P. Wilmot, E. Risser, and C. Barnes. Stable and controllable neural texture synthesis and style transfer using histogram losses. arXiv preprint arXiv:1701.08893 , 2017）
+
+## ResNet + Style transfer
+
+Style transfer的CNN bone也是有讲究的，除了AlexNet之外，还可以使用VGG，但是它在ResNet上效果不佳。直到最近的论文才对这一现象有所解释。
+
+参考：
+
+https://mp.weixin.qq.com/s/Pub83W6nMM02lEIrsBe49Q
+
+谁说只有VGG才能做风格迁移，ResNet也可以！
+
+## Style transfer的其他用法
+
+使用VGG抽取的所谓纹理信息，也可以用于图像增强领域。具体的做法是将纹理信息作为Loss的一部分。（注意不是Loss的全部，否则就只是Style transfer了）。
+
 ## 文本风格迁移
 
 不光图像、语音有风格迁移，文本也有。
@@ -293,39 +317,3 @@ PyTorch的自动求导机制详细解析，PyTorch的核心魔法
 https://zhuanlan.zhihu.com/p/29904755
 
 Autograd:PyTorch中的梯度计算
-
-https://zhuanlan.zhihu.com/p/69294347
-
-PyTorch的Autograd
-
-https://zhuanlan.zhihu.com/p/83172023
-
-Pytorch autograd,backward详解
-
-https://mp.weixin.qq.com/s/PELBuCvu-7KQ33XBtlYfYQ
-
-深度学习中的微分
-
-https://zhuanlan.zhihu.com/p/24709748
-
-矩阵求导术（上）
-
-https://zhuanlan.zhihu.com/p/24863977
-
-矩阵求导术（下）
-
-https://mp.weixin.qq.com/s/2hu6a0wScJedwk3a5aKbIw
-
-自动微分到底是什么？这里有一份自我简述
-
-https://zhuanlan.zhihu.com/p/347385418
-
-AI框架基础技术之自动求导机制 (Autograd)
-
-https://www.zhihu.com/question/497827630
-
-Pytorch的自动微分机制是自动创建一个可以记录所有数据操作的计算图（有向无环图(DAG)）吗？
-
-https://www.cnblogs.com/royhoo/p/Autodiff.html
-
-自动微分（Autodiff）

@@ -9,6 +9,32 @@ category: Attention
 
 # ERNIE（续）
 
+![](/images/img3/ERNIE_4.png)
+
+上图是ERNIE 2.0的多任务训练的结构图。可以认为ERNIE 2.0就是多任务版的ERNIE。
+
+![](/images/img3/ERNIE_5.png)
+
+为了适应多任务版本的要求，ERNIE 2.0还提出了Task Embedding。
+
+参考：
+
+https://mp.weixin.qq.com/s/xoQhz6ljbsbzKRBJlTQQuQ
+
+百度提出ERNIE，多项中文NLP任务表现出色
+
+https://mp.weixin.qq.com/s/rQ8ISipvV3Irrjd3MI-Idw
+
+百度ERNIE，中文任务全面超越BERT
+
+https://mp.weixin.qq.com/s/_ZBvq7gXvbiP2IQve9tcKg
+
+清华等提出ERNIE：知识图谱结合BERT才是“有文化”的语言模型
+
+https://mp.weixin.qq.com/s/QVEYQfEQV0CsklI9S4vOiA
+
+ERNIE真有官方说的那么好？亲测告诉你答案！
+
 https://mp.weixin.qq.com/s/FoX2bXCJlFYjb9U6JcZCqg
 
 超详细中文预训练模型ERNIE使用指南
@@ -340,45 +366,3 @@ CV+Transformer之Swin Transformer
 https://mp.weixin.qq.com/s/z_ILLmNx3cbJI1B-M028vQ
 
 Swin Transformer重磅升级！Swin V2：向更大容量、更高分辨率的更大模型迈进
-
-## DETR
-
-https://mp.weixin.qq.com/s/b5Ont9vHPeCPnAjuDGv5Bg
-
-Facebook开源新思路！DETR：用Transformers来进行端到端的目标检测
-
-https://mp.weixin.qq.com/s/eHZGiyeZG36Dg6JV1boEeA
-
-语言模型“不务正业”做起目标检测，性能还比DETR、Faster R-CNN更好
-
-## BEVFormer
-
-BEV（Bird's-eye-view）
-
-Deformable Attention
-
-GridSample
-
-https://zhuanlan.zhihu.com/p/543335939
-
-万字长文理解纯视觉感知算法——BEVFormer
-
-https://zhuanlan.zhihu.com/p/538490215
-
-一文读懂BEVFormer论文
-
-https://zhuanlan.zhihu.com/p/629792598
-
-一文看懂BEVFormer技术及其背后价值
-
-https://www.zhihu.com/question/521842610
-
-自动驾驶BEV感知有哪些让人眼前一亮的新方法？
-
-https://zhuanlan.zhihu.com/p/509207308
-
-特斯拉AI DAY感知详解
-
-https://zhuanlan.zhihu.com/p/633483313
-
-BEV系列一：BEV介绍和常用BEV算法简介

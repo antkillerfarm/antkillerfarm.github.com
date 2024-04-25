@@ -311,6 +311,16 @@ https://github.com/CLUEbenchmark/SuperCLUE
 
 # Tokenization
 
+## Tokenization vs. embedding
+
+Tokenization是给文本矢量化的一种基本形式。它们并不能捕捉到token之间任何更深层次的关系或模式。
+
+Embedding是词块的高级向量表示。它们试图捕捉词块之间最细微的差别、联系和语义。
+
+https://mp.weixin.qq.com/s/vf3XKV1cg2H2MxS_6czfFQ
+
+关于LLM：揭秘token与embedding的机制
+
 ## Subword
 
 对于英文来说，文字的粒度从细到粗依次是character, subword, word。character和word都很好理解，分别是字母和单词。而subword相当于英文中的词根、前缀、后缀等。

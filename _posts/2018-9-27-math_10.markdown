@@ -1,13 +1,65 @@
 ---
 layout: post
-title:  数学狂想曲（十）——复变函数
+title:  数学狂想曲（十）——熵
 category: math 
 ---
 
 * toc
 {:toc}
 
-# 熵（续）
+# 熵
+
+## 经典热力学定义（续）
+
+由Carnot's theorem可以容易的得到如下结论：
+
+1.冷热温度是热机效率的关键因素。但是低温热源降温是件很麻烦的事，需要设计基于Carnot逆循环的热机。这实际上就是现代空调的原理。
+
+2.提高高温热源温度。比如内燃机就比蒸汽机热效高。
+
+3.Carnot逆循环还表明，没有外界做功，低温热源不可能降温。这实际上揭示了热的不可逆特性，也就是热力学第二定律。
+
+>必须指出的是，Carnot时代，科学界主流的理论还是热质说。虽然当今课本介绍Carnot's theorem时，一般基于热力学第二定律进行讲解，但后者的发现实际上是30年之后的事了。
+
+到了1850年代，Rudolf Clausius深入研究Carnot cycle之后，发现如果用负号表示放热的话，公式9可改写为：
+
+$$\frac{Q_1}{T_1}+\frac{Q_2}{T_2}=0\tag{11}$$
+
+这表明Carnot cycle中的路径积分：
+
+$$\oint \frac{Q}{T} = 0$$
+
+然而Carnot cycle是理想状况，真实热机不可能达到。因此：
+
+$$W<\left(1-\frac{T_C}{T_H}\right)Q_H\tag{12}$$
+
+$$Q_H-Q_C<\left(1-\frac{T_C}{T_H}\right)Q_H$$
+
+即：
+
+$$Q_C>\frac{T_C}{T_H}Q_H$$
+
+也就是：
+
+$$\oint \frac{Q}{T} \le 0\tag{13}$$
+
+Clausius意识到
+
+$$dS = \frac{Q}{T}\tag{14}$$
+
+是一个很重要的物理量，于是将之命名为Entropy。En表示energy，tropy是希腊文中transformation的意思。当这个颇有来历的名称被1923年到南京讲学的普朗克介绍给中国物理学家时，胡刚复教授在翻译时灵机一动，创造了一个新词汇“熵”。
+
+>Rudolf Julius Emanuel Clausius，1822～1888，德国物理学家和数学家。University of Halle博士（1847）+ETH Zürich教授。经典热力学的集大成者。普法战争期间，上战场获得了一枚铁十字勋章。
+
+>胡刚复，1892～1966，物理学家。哈佛大学博士（1918），历任南京大学、上海交通大学、浙江大学、南开大学教授。他和兄弟姐妹胡敦复、胡明复、胡范若、胡芷华等创办了上海大同大学，是上海乃至全国私立大学中的翘楚，素有“北有南开、南有大同”之说。
+
+从公式13可以看出，如果没有外界能量注入，热机是无法完成循环的，但由热力学第一定律可知，系统的能量总量是不变的，因此这意味着系统的一部分能量成为了无法利用的能量，而这部分能量正好可以用Entropy进行度量。
+
+参考：
+
+http://galileo.phys.virginia.edu/classes/152.mf1i.spring02/CarnotEngine.htm
+
+Heat Engines: the Carnot Cycle
 
 ## 统计热力学定义
 
@@ -161,127 +213,28 @@ https://www.zhihu.com/question/26163433
 
 为什么不能将乏汽直接送入锅炉，而要经过冷却后再送入锅炉？效率不是下降了吗？
 
-# 复变函数
+# 数学杂谈
 
-1.复球面表示。
+《素数之恋》这本书不错，黎曼猜想的最佳科普读本。
 
-2.条件严格性。
+Sir Michael Francis Atiyah，1929年生，英国籍黎巴嫩裔数学家。剑桥大学博士（1955），英国皇家学会会长（1990～1995），获得过Fields Medal(1966)和Abel Prize(2004)。
 
-点域：连续<可导（可微）<可解析
+Atiyah的高中在埃及读的（1941～1945），当时欧洲很多人为了躲避战乱，逃到了那里。
 
-区域：连续<可导（可微）=可解析
-
-由于复平面的存在，极限$$z\to z_0$$中，趋向于点$$z_0$$的路径有无穷多种，必须所有路径的极限都存在且一致，才可以说极限$$z\to z_0$$存在。
-
-3.函数可微的充要条件：**Cauchy-Riemann Equations**
-
-若$$f(x + iy) = u(x,y) + iv(x,y)$$可导，则：
-
-1）$$u(x,y)$$和$$v(x,y)$$在点$$(x,y)$$可导。
-
-2）
-
-$$\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y},\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$$
-
-4.复数在场论描述中的应用。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/74528525
-
-一个复变函数的专栏
-
-## 复数求导
-
-信号处理领域，很多需要求导的函数往往是不解析的。比如一系列的二乘loss：MSE、LS、WLS等。这些函数都包含$$\mid e(k)\mid^2=zz^*$$的成分。然而，这个函数是不可导的。
-
-$$zz^*=x^2+y^2$$
-
-所以
-
-$$\frac{\partial u}{\partial x}=2x,\frac{\partial v}{\partial x}=0$$
-
-上式显然不满足Cauchy-Riemann Equations，因此函数不可导。
-
-上述结论我们也可以另一个角度观察。
-
-假设$$f(z)$$解析，则$$f(z)$$可展开为z的Taylor级数。而这个展开式不包含$$z^*$$。即一个解析的复变函数只和z有关，而和$$z^*$$无关。
-
-因为实函数必须同时依赖z和$$z^*$$，否则虚部无法被消掉。因此，**实函数$$f(z)$$都是不解析的**。
-
-所以，Cauchy-Riemann Equations也可以写成$$f(z^*)=0$$。
-
-参考：
-
-https://mp.weixin.qq.com/s/SUWUAMQjSuB5Gs06SPliTQ
-
-复数求导在信号处理中的应用
-
-## Hermite矩阵
-
-复数矩阵通常不能直接转置，而必须进行共轭转置。共轭转置（Conjugate transpose）也叫做Hermite转置，用$$A^H$$表示。
-
-如果$$A=A^H$$，则A被称为Hermite矩阵。
-
->Charles Hermite，1822～1901，19世纪下半叶法国最著名的数学家，代数学领域的宗师级人物。Henri Poincaré的导师。他首先证明了e是超越数。以他的名字命名的数学术语竟达10项之多。   
->Hermite虽然不是如某些地摊文学所言，一遇考试就跪。但是的确不太擅长考试，大学（他考的大学类似国内的清北的地位）入学成绩排在第68位，完全没有学神的风范。相比之下，Poincaré的入学成绩可是排第一位的。尽管就成就而言，Hermite绝不逊于Poincaré。
-
-参考：
-
-https://mp.weixin.qq.com/s/MXHCVFW2mMw7PqMuHB_5Tw
-
-他擅长解决数学难题，却视考试成为终生噩梦
-
-## 复变积分
-
-**反常积分（Improper Integral）又叫广义积分**，是对普通定积分的推广，指含有无穷上限/下限，或者被积函数含有瑕点的积分，前者称为**无穷限广义积分（简称无穷积分）**，后者称为**瑕积分（Singular Integral，又称无界函数的反常积分）**。两者兼有的则被称为**混合广义积分**。
-
-如果存在正数$$\theta$$，使得任意$$\theta>\delta>0$$，都有函数$$f(x)$$在$$x_0$$的左领域$$(x_0-\delta,x_0)$$内无界或函数$$f(x)$$在$$x_0$$的右邻域$$(x_0,x_0+\delta)$$内无界，则称点$$x_0$$为$$f(x)$$的一个**瑕点（Singular Point）**。
-
-无穷积分定义：
-
-$$\int_{-\infty}^{+\infty}f(x)\mathrm{d}x=\lim_{N\to +\infty,M\to -\infty}\int_{M}^{N}f(x)\mathrm{d}x$$
-
-对应的**Cauchy Principal Value**的定义为：
-
-$$\int_{-\infty}^{+\infty}f(x)\mathrm{d}x=\lim_{M\to +\infty}\int_{-M}^{M}f(x)\mathrm{d}x$$
-
-类似的，瑕积分的Cauchy Principal Value定义为：
-
-$$\int_{a}^{b}f(x)\mathrm{d}x=\lim_{\delta\to 0+}\left(\int_{a}^{c-\delta}f(x)\mathrm{d}x+\int_{c+\delta}^{b}f(x)\mathrm{d}x\right)$$
-
-其中，c为瑕点。
-
-Cauchy Principal Value有什么用呢？
-
-以$$f(x)=\sin(x)$$为例，无穷积分
-
-$$\lim_{N\to +\infty,M\to -\infty}\int_{M}^{N}\sin(x)\mathrm{d}x$$
-
-发散。
-
-而Cauchy Principal Value：
-
-$$\lim_{M\to +\infty}\int_{-M}^{M}\sin(x)\mathrm{d}x=0$$
-
-参考：
-
-https://www.zhihu.com/question/419790453s
-
-一道积分题
-
-https://blog.csdn.net/qq_45011547/article/details/90147363
-
-反常积分的性质与收敛判别
-
-https://mp.weixin.qq.com/s/JGhAp4FPmEjwOpI4EsXe0A
-
-留数定理与积分
+>2019.1.11 Atiyah去世。
 
 ---
 
-![](/images/img5/Biot-Savart_Law.jpg)
+有种素数叫做“工业级素数（Industrial-grade primes）”，定义是没有经过严格数学证明、但是通过了“可能素数判定法”（比如米勒-拉宾判定法）的整数。用这种方法判定大整数是否是素数不是完全准确，但速度非常快，而且不会漏掉任何素数。RSA加密法所需的大素数生成方式就很明显了：随机生成大整数，如果判断这个数可能是素数，再用精确但速度慢的素数判定法来判断这个数是否真的是素数。
 
-https://www.zhihu.com/question/593230446
+https://www.zhihu.com/question/54779059
 
-留数定理能和安培环路定理联系起来吗？
+RSA生成公私钥时质数是怎么选的？
+
+---
+
+https://mp.weixin.qq.com/s/zozViMoimcL6nJvyBnTQtQ
+
+八岁小孩眼里的欧拉公式
+
+这里讲的是拓扑学中的欧拉公式：V−E+R=2，然而成年人的世界里没有Easy这个词，V−E+R会不会等于其他数呢？于是就有了Euler characteristic。

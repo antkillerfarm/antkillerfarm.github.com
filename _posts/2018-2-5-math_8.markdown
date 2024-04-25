@@ -1,13 +1,39 @@
 ---
 layout: post
-title:  数学狂想曲（八）——莱洛三角形, 核弹当量问题, 随机过程
+title:  数学狂想曲（八）——莱洛三角形, 核弹当量问题
 category: math 
 ---
 
 * toc
 {:toc}
 
-# 函数连续性（续）
+# 函数连续性
+
+## Weierstrass Function（续）
+
+![](/images/article/WeierstrassFunction.png)
+
+上图是Weierstrass Function图像。它是一类处处连续而处处不可导的实值函数，其表达式为：
+
+$$f(x)=\sum_{n=0} ^\infty a^n \cos(b^n \pi x)$$
+
+其中，$$0<a<1$$，b是奇数，且$$ab > 1+\frac{3}{2} \pi$$。最小的满足该条件的值是$$b=7$$。
+
+一般人会直觉上认为连续的函数必然是近乎可导的。即使不可导，所谓不可导的点也必然只占整体的一小部分。根据Weierstrass在他的论文中所描述，早期的许多数学家，包括高斯，都曾经假定连续函数不可导的部分是有限或可数的。这可能是因为直观上想象一个连续但在不可数个点上不可导的函数是很困难的事。
+
+Weierstrass Function的出现（1872年）说明了所谓的“病态”函数的存在性，改变了当时数学家对连续函数的看法。
+
+Weierstrass Function也被视为第一个分形函数（尽管分形（Fractal）的概念出现的相当晚（1973年），差不多过了整整一个世纪。）：将Weierstrass Function在任一点放大，所得到的局部图都和整体图形相似。因此，无论如何放大，函数图像都不会显得更加光滑，也不存在单调的区间。
+
+参考：
+
+https://wenku.baidu.com/view/21877fea551810a6f524868c.html
+
+一个反例处处连续处处不可导的函数
+
+https://mp.weixin.qq.com/s/ZwrWOZOlSibmM2vlfz1g6g
+
+z = z^2 + c
 
 ## 函数连续性和神经网络
 
@@ -232,55 +258,3 @@ https://www.zhihu.com/question/36188584
 https://baijiahao.baidu.com/s?id=1672436291069334638
 
 纳粹德国为什么没有造出原子弹？就因为这个醉汉（醉汉回家问题）
-
-# 随机过程
-
-## 随机变量序列的收敛性
-
-弱收敛：$$F_n(x)\xrightarrow{W}F(x)$$
-
-依分布收敛：$$X_n\xrightarrow{L}X$$
-
-依概率收敛：$$X_n\xrightarrow{P}X$$
-
-r阶收敛：$$X_n\xrightarrow{r}X$$
-
-几乎处处收敛（almost everywhere convergent）：$$X_n\xrightarrow{a.e.}X$$ or $$X_n\xrightarrow{a.s.}X$$
-
-一致收敛（uniform convergence）：$$X_n\xrightarrow{u.c.}X$$
-
-以上概念实际上都是测度论的内容。具体到这里，弱收敛针对分布函数F，而其他收敛针对随机变量X。
-
-收敛严格性：
-
-$$X_n\xrightarrow{P}X \supseteq X_n\xrightarrow{L}X$$
-
-$$X_n\xrightarrow{r}X \supseteq X_n\xrightarrow{P}X$$
-
-$$X_n\xrightarrow{a.s.}X \supseteq X_n\xrightarrow{P}X$$
-
-大数定律：
-
-依概率收敛->弱大数定律
-
-几乎处处收敛->强大数定律
-
-## 随机过程常用公式或符号
-
-| 名称 | 公式或符号 |
-|:--:|:--:|
-| 期望 | $$EX=\int_{-\infty}^{+\infty}x\mathrm{d}F(x)$$，若存在密度函数则$$EX=\int_{-\infty}^{+\infty}xf(x)\mathrm{d}x$$ |
-| 方差 | $$DX=Var(X)=E(X-EX)^2$$ |
-| 协方差 | $$Cov(X,Y)=E\{\overline{[X-E(X)]}[Y-E(Y)]\}$$ |
-| 相关系数 | $$\rho_{XY}=\frac{Cov(X,Y)}{\sqrt{D(X)}\sqrt{D(Y)}}$$ |
-| 协方差矩阵 | $$\left[\begin{array}{ccc} Cov(X_1,X_1)&Cov(X_1,X_2)&\cdots&Cov(X_1,X_n)\\Cov(X_2,X_1)&Cov(X_2,X_2)&\cdots&Cov(X_2,X_n)\\ \vdots&\vdots&&\vdots \\Cov(X_n,X_1)&Cov(X_n,X_2)&\cdots&Cov(X_n,X_n)\end{array}\right]$$ |
-| 相关函数 | $$R(X,Y)=E[\overline{X}Y]$$ |
-| 均方极限 | $${l.i.m}_{n \to +\infty}X$$ |
-
-https://mp.weixin.qq.com/s/46NrpIako2lJ2ZitAQs8Sw
-
-划重点！通俗解释协方差与相关系数
-
-http://pinkyjie.com/2010/08/31/covariance/
-
-浅谈协方差矩阵

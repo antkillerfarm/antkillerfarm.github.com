@@ -1,13 +1,17 @@
 ---
 layout: post
-title:  数学狂想曲（五）——肺炎版《黄冈密卷》, 玻尔兹曼分布
+title:  数学狂想曲（五）——抛物线, 肺炎版《黄冈密卷》, 玻尔兹曼分布
 category: math 
 ---
 
 * toc
 {:toc}
 
-# 抛物线（续）
+# 抛物线
+
+![](/images/img2/conic_section.jpg)
+
+我们都知道抛物线只有一个焦点，而椭圆、双曲线有两个焦点，但是对于真正天体的运行来说，其实只有一个焦点是有意义的，就是中心恒星的位置；另一个焦点没有实在的意义。这两个焦点中任取一个就可以构成这条圆锥曲线，而取哪一个作为恒星位置都是一样的。因为对于椭圆、双曲线来说，这两个焦点是对称的。
 
 那么抛物线呢？实际上抛物线是椭圆和双曲线的临界状态，它的另一个焦点在无穷远的地方。对于绕恒星的抛物线轨道来说，取的是那个通常说的焦点位置作为恒星位置；对于地面上的斜抛运动来说，取的是无穷远处的那个焦点位置作为恒星位置。
 
@@ -260,25 +264,3 @@ $$\beta=\frac{1}{kT}\tag{12}$$
 $$N_i=\frac{Ng_ie^{-E_i/kT}}{\sum_{i=1}^{n}g_ie^{-E_i/kT}}$$
 
 上式就是Boltzmann distribution的PDF。
-
-## 参考
-
-http://wenku.baidu.com/view/ccb7956db84ae45c3b358ca7.html
-
-波尔兹曼统计分布律的推导的新方法
-
-http://www.cnblogs.com/tianchi/archive/2013/03/14/2959716.html
-
-Boltzmann machine
-
-https://mp.weixin.qq.com/s/Z1_ujG7iP_AFUD0gVO8HXQ
-
-信息熵、交叉熵和相对熵
-
-https://mp.weixin.qq.com/s/2_ZkKrwPhaS31JnyYXyfrQ
-
-简单的交叉熵损失函数，你真的懂了吗？
-
-http://blog.csdn.net/shijing_0214/article/details/51116046
-
-理解最大熵模型

@@ -151,6 +151,62 @@ https://mp.weixin.qq.com/s/4fL-6VSpBFgicJ2MAY7twA
 
 # 无监督/半监督/自监督深度学习
 
+https://mp.weixin.qq.com/s/X1Alcl7rVfTtZGZ40iXjXw
+
+Spotlight 论文：非参数化方法实现的极端无监督特征学习
+
+https://mp.weixin.qq.com/s/kxEfoSjCF8n2jxlDfMaNDA
+
+半监督学习在图像分类上的基本工作方式
+
+https://mp.weixin.qq.com/s/uUMPUdG2TI10W5RumPaXkA
+
+DeepMind无监督表示学习重大突破：语音、图像、文本、强化学习全能冠军！
+
+https://mp.weixin.qq.com/s/_VC6PGdCjlhcsndpunIteg
+
+何恺明等人提出新型半监督实例分割方法：学习分割Every Thing
+
+https://mp.weixin.qq.com/s/qaxzSSDuuscwL5tt0QCQ0Q
+
+破解人类识别文字之谜：对图像中的字母进行无监督学习
+
+https://mp.weixin.qq.com/s/VnOfYuHQQf_q92VHVE3mrQ
+
+谷歌新发布的半监督学习算法降低4倍错误率
+
+https://mp.weixin.qq.com/s/rOj_J1zNYf-Vj9tqLG5KOQ
+
+超强半监督学习MixMatch
+
+https://zhuanlan.zhihu.com/p/66389797
+
+虚拟对抗训练（VAT）：一种新颖的半监督学习正则化方法
+
+https://mp.weixin.qq.com/s/DAtHXSfCpqCAZ0iVsfWkDA
+
+半监督学习理论及其研究进展概述
+
+https://mp.weixin.qq.com/s/eHzNIO-RSY-uf-K-OwtWfw
+
+集多种半监督学习范式为一体，谷歌新研究提出新型半监督方法MixMatch
+
+https://mp.weixin.qq.com/s/3el7bPAeJrTQGfWW29ewuA
+
+新技术“红”不过十年，半监督学习为什么是个例外？
+
+https://mp.weixin.qq.com/s/alnji5kgTxc34O7k78uGiA
+
+无监督学习中的目标检测
+
+https://mp.weixin.qq.com/s/8FtDhpgc-1j3TSL771N-Ng
+
+无标注数据是鸡肋还是宝藏？阿里工程师这样用它
+
+https://mp.weixin.qq.com/s/LdfLd2cZCdpvNYLKHUNwuA
+
+简述无监督图像分类发展现状
+
 https://mp.weixin.qq.com/s/cTlXMxcpzc7_5NVsTm1jcA
 
 学习一帧，为整段黑白视频上色：谷歌提出自监督视觉追踪模型

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（九）——Bi-directional RNN, CNN进化史
+title:  深度学习（九）——CNN进化史
 category: DL 
 ---
 
@@ -8,6 +8,52 @@ category: DL
 {:toc}
 
 # ResNet（续）
+
+参考：
+
+https://zhuanlan.zhihu.com/p/22447440
+
+深度残差网络
+
+https://www.leiphone.com/news/201608/vhqwt5eWmUsLBcnv.html
+
+何恺明的深度残差网络PPT
+
+https://mp.weixin.qq.com/s/kcTQVesjUIPNcz2YTxVUBQ
+
+ResNet 6大变体：何恺明,孙剑,颜水成引领计算机视觉这两年
+
+https://mp.weixin.qq.com/s/5M3QiUVoA8QDIZsHjX5hRw
+
+一文弄懂ResNet有多大威力？最近又有了哪些变体？
+
+http://www.jianshu.com/p/b724411571ab
+
+ResNet到底深不深？
+
+https://mp.weixin.qq.com/s/Kgwwq5XOt88WW6KL8gADmQ
+
+你必须要知道CNN模型：ResNet
+
+https://mp.weixin.qq.com/s/7fWh2dovmfbsF8afaX9UOg
+
+一文简述ResNet及其多种变体
+
+https://mp.weixin.qq.com/s/fxq-H2_ZyXVd_kJx6rwEcQ
+
+何恺明CVPR2018关于视觉深度表示学习教程
+
+https://mp.weixin.qq.com/s/xTJr-jWMjk73TCZ8gBT4Ww
+
+一个神经元统治一切：ResNet强大的理论证明
+
+https://mp.weixin.qq.com/s/-SmmtqHWJjq2A4pu5KqYfQ
+
+resnet中的残差连接，你确定真的看懂了？
+
+https://mp.weixin.qq.com/s/AyJ_ZtNFTjkWVH3_Kw7wJg
+
+ResNet架构可逆！多大等提出性能优越的可逆残差网络
 
 https://mp.weixin.qq.com/s/2JwgiCuBoluBNYesYp4zAA
 
@@ -32,38 +78,6 @@ https://mp.weixin.qq.com/s/scFnuqx0zOtBvFh0JYA0UA
 https://mp.weixin.qq.com/s/W4IqXMRZJbQ-7fGEF43-sA
 
 真正的最强ResNet改进，高性能“即插即用”金字塔卷积
-
-# Bi-directional RNN
-
-众所周知，RNN在处理长距离依赖关系时会出现问题。LSTM虽然改进了一些，但也只能缓解问题，而不能解决该问题。
-
-研究人员发现将原文倒序（将其倒序输入编码器）产生了显著改善的结果，因为从解码器到编码器对应部分的路径被缩短了。同样，两次输入同一个序列似乎也有助于网络更好地记忆。
-
-基于这样的实验结果，1997年Mike Schuster提出了Bi-directional RNN模型。
-
->注：Mike Schuster，杜伊斯堡大学硕士（1993）+奈良科技大学博士。语音识别专家，尤其是日语、韩语方面。Google研究员。
-
-论文：
-
-《Bidirectional Recurrent Neural Networks》
-
-下图是Bi-directional RNN的结构示意图：
-
-![](/images/article/Bi_directional_RNN.png)
-
-从图中可以看出，Bi-directional RNN有两个隐层，分别处理前向和后向的时序信息。
-
-除了原始的Bi-directional RNN之外，后来还出现了Deep Bi-directional RNN。
-
-![](/images/article/Deep_Bi_RNN.png)
-
-上图是包含3个隐层的Deep Bi-directional RNN。
-
-参见：
-
-https://mp.weixin.qq.com/s/_CENjzEK1kjsFpvX0H5gpQ
-
-结合堆叠与深度转换的新型神经翻译架构：爱丁堡大学提出BiDeep RNN
 
 # CNN进化史
 

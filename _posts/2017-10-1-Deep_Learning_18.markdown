@@ -1,11 +1,81 @@
 ---
 layout: post
-title:  深度学习（十八）——Prompt Learning, 无监督/半监督/自监督深度学习（1）
+title:  深度学习（十八）——Bi-directional RNN, Prompt Learning, 无监督/半监督/自监督深度学习（1）
 category: DL 
 ---
 
 * toc
 {:toc}
+
+# 自动求导（续）
+
+https://zhuanlan.zhihu.com/p/69294347
+
+PyTorch的Autograd
+
+https://zhuanlan.zhihu.com/p/83172023
+
+Pytorch autograd,backward详解
+
+https://mp.weixin.qq.com/s/PELBuCvu-7KQ33XBtlYfYQ
+
+深度学习中的微分
+
+https://zhuanlan.zhihu.com/p/24709748
+
+矩阵求导术（上）
+
+https://zhuanlan.zhihu.com/p/24863977
+
+矩阵求导术（下）
+
+https://mp.weixin.qq.com/s/2hu6a0wScJedwk3a5aKbIw
+
+自动微分到底是什么？这里有一份自我简述
+
+https://zhuanlan.zhihu.com/p/347385418
+
+AI框架基础技术之自动求导机制 (Autograd)
+
+https://www.zhihu.com/question/497827630
+
+Pytorch的自动微分机制是自动创建一个可以记录所有数据操作的计算图（有向无环图(DAG)）吗？
+
+https://www.cnblogs.com/royhoo/p/Autodiff.html
+
+自动微分（Autodiff）
+
+# Bi-directional RNN
+
+众所周知，RNN在处理长距离依赖关系时会出现问题。LSTM虽然改进了一些，但也只能缓解问题，而不能解决该问题。
+
+研究人员发现将原文倒序（将其倒序输入编码器）产生了显著改善的结果，因为从解码器到编码器对应部分的路径被缩短了。同样，两次输入同一个序列似乎也有助于网络更好地记忆。
+
+基于这样的实验结果，1997年Mike Schuster提出了Bi-directional RNN模型。
+
+>注：Mike Schuster，杜伊斯堡大学硕士（1993）+奈良科技大学博士。语音识别专家，尤其是日语、韩语方面。Google研究员。
+
+论文：
+
+《Bidirectional Recurrent Neural Networks》
+
+下图是Bi-directional RNN的结构示意图：
+
+![](/images/article/Bi_directional_RNN.png)
+
+从图中可以看出，Bi-directional RNN有两个隐层，分别处理前向和后向的时序信息。
+
+除了原始的Bi-directional RNN之外，后来还出现了Deep Bi-directional RNN。
+
+![](/images/article/Deep_Bi_RNN.png)
+
+上图是包含3个隐层的Deep Bi-directional RNN。
+
+参见：
+
+https://mp.weixin.qq.com/s/_CENjzEK1kjsFpvX0H5gpQ
+
+结合堆叠与深度转换的新型神经翻译架构：爱丁堡大学提出BiDeep RNN
 
 # Prompt Learning
 
@@ -252,87 +322,3 @@ https://mp.weixin.qq.com/s/_3DqXBpZhstVv6BkBR4oag
 https://mp.weixin.qq.com/s/aCWAU2RXk9fTzfFqOyjqUw
 
 能自主学习的人工突触，为无监督学习开辟新的路径
-
-https://mp.weixin.qq.com/s/9kMz-eNRwC51Fi0-7BfKzA
-
-Active Learning: 一个降低深度学习时间，空间，经济成本的解决方案
-
-https://mp.weixin.qq.com/s/ZvTm9omnIRqPXcLFbZtoeg
-
-深度学习的关键：无监督深度学习简介
-
-https://mp.weixin.qq.com/s/GHjmiB6F2W3Zo8gVllTyyQ
-
-重现“世界模型”实验，无监督方式快速训练
-
-https://mp.weixin.qq.com/s/3_VtdZNKBwNtMEMf2xc7qw
-
-CVPR智慧城市挑战赛：无监督交通异常检测，冠军团队技术分享
-
-https://mp.weixin.qq.com/s/3aAaM1DWsnCWEEbP7dOZEg
-
-伯克利等提出无监督特征学习新方法，代码已开源
-
-https://mp.weixin.qq.com/s/kNTRpDbKQIalzJi_rx0noQ
-
-无标签表示学习，222页ppt，DeepMind
-
-https://mp.weixin.qq.com/s/ZDPPWH570Vc6e1irwP1b1Q
-
-精细识别现实世界图像：李飞飞团队提出半监督适应性模型
-
-https://mp.weixin.qq.com/s/X1Alcl7rVfTtZGZ40iXjXw
-
-Spotlight 论文：非参数化方法实现的极端无监督特征学习
-
-https://mp.weixin.qq.com/s/kxEfoSjCF8n2jxlDfMaNDA
-
-半监督学习在图像分类上的基本工作方式
-
-https://mp.weixin.qq.com/s/uUMPUdG2TI10W5RumPaXkA
-
-DeepMind无监督表示学习重大突破：语音、图像、文本、强化学习全能冠军！
-
-https://mp.weixin.qq.com/s/_VC6PGdCjlhcsndpunIteg
-
-何恺明等人提出新型半监督实例分割方法：学习分割Every Thing
-
-https://mp.weixin.qq.com/s/qaxzSSDuuscwL5tt0QCQ0Q
-
-破解人类识别文字之谜：对图像中的字母进行无监督学习
-
-https://mp.weixin.qq.com/s/VnOfYuHQQf_q92VHVE3mrQ
-
-谷歌新发布的半监督学习算法降低4倍错误率
-
-https://mp.weixin.qq.com/s/rOj_J1zNYf-Vj9tqLG5KOQ
-
-超强半监督学习MixMatch
-
-https://zhuanlan.zhihu.com/p/66389797
-
-虚拟对抗训练（VAT）：一种新颖的半监督学习正则化方法
-
-https://mp.weixin.qq.com/s/DAtHXSfCpqCAZ0iVsfWkDA
-
-半监督学习理论及其研究进展概述
-
-https://mp.weixin.qq.com/s/eHzNIO-RSY-uf-K-OwtWfw
-
-集多种半监督学习范式为一体，谷歌新研究提出新型半监督方法MixMatch
-
-https://mp.weixin.qq.com/s/3el7bPAeJrTQGfWW29ewuA
-
-新技术“红”不过十年，半监督学习为什么是个例外？
-
-https://mp.weixin.qq.com/s/alnji5kgTxc34O7k78uGiA
-
-无监督学习中的目标检测
-
-https://mp.weixin.qq.com/s/8FtDhpgc-1j3TSL771N-Ng
-
-无标注数据是鸡肋还是宝藏？阿里工程师这样用它
-
-https://mp.weixin.qq.com/s/LdfLd2cZCdpvNYLKHUNwuA
-
-简述无监督图像分类发展现状

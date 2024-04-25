@@ -9,6 +9,16 @@ category: DL
 
 # Style Transfer
 
+## CNN的纹理特征
+
+在进行神经风格迁移之前，我们先来从可视化的角度看一下卷积神经网络每一层到底是什么样子？它们各自学习了哪些东西。
+
+遍历所有训练样本，找出让该层激活函数输出最大的9块图像区域；然后再找出该层的其它单元（不同的滤波器通道）激活函数输出最大的9块图像区域；最后共找9次，得到$$9 \times 9$$的图像如下所示，其中每个$$3 \times 3$$区域表示一个运算单元。
+
+![](/images/img2/style_transfer_2.png)
+
+可以看出随着层数的增加，CNN捕捉的区域更大，特征更加复杂，从边缘到纹理再到具体物体。
+
 ## Deep Visualization
 
 上述的CNN可视化的方法一般被称作Deep Visualization。
@@ -250,27 +260,3 @@ https://blog.csdn.net/Hungryof/article/details/61195783
 https://zhuanlan.zhihu.com/p/35798776
 
 快速风格迁移（fast-style-transfer）
-
-## 其他
-
-原版的neural style是用Gram矩阵来进行匹配风格，但是也有用其他的。例如：
-
-MRF loss（ombining markov random fields and convolutional neural networks for image synthesis.）
-
-Adversarial loss(C. Li and M. Wand. Precomputed real-time texture synthesis with markovian generative adversarial networks. In ECCV,2016)
-
-梯度直方图（P. Wilmot, E. Risser, and C. Barnes. Stable and controllable neural texture synthesis and style transfer using histogram losses. arXiv preprint arXiv:1701.08893 , 2017）
-
-## ResNet + Style transfer
-
-Style transfer的CNN bone也是有讲究的，除了AlexNet之外，还可以使用VGG，但是它在ResNet上效果不佳。直到最近的论文才对这一现象有所解释。
-
-参考：
-
-https://mp.weixin.qq.com/s/Pub83W6nMM02lEIrsBe49Q
-
-谁说只有VGG才能做风格迁移，ResNet也可以！
-
-## Style transfer的其他用法
-
-使用VGG抽取的所谓纹理信息，也可以用于图像增强领域。具体的做法是将纹理信息作为Loss的一部分。（注意不是Loss的全部，否则就只是Style transfer了）。

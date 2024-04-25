@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  硬件杂谈（二）, 硬盘, 内存, CUDA实战, DPU
+title:  硬件杂谈（二）, 硬盘, 内存, CUDA实战
 category: Chip 
 ---
 
@@ -257,6 +257,12 @@ memory interleaving（内存交织）
 
 http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
 
+---
+
+`${CUDA_HOME}/targets/x86_64-linux/lib/stubs/`文件夹下有常见的libcuda.so、libcublas.so等动态链接库，但是里面只有函数名，没有函数实现。所以文件大小很小。当我们的代码在一台没有GPU的机器上编译时，可以动态链接到这些stubs库，这样就能够正常编译。编译结束得到的二进制文件可以部署到其它有GPU的机器，在运行时它们就会链接到正确的动态链接库。
+
+---
+
 参考：
 
 http://ishare.iask.sina.com.cn/f/17211495.html
@@ -351,38 +357,6 @@ https://zhuanlan.zhihu.com/p/690880124
 
 并不太短的CUDA入门（The Not So Short Introduction to CUDA）
 
-# DPU
+https://zhuanlan.zhihu.com/p/693690123
 
-如同GPU是针对图像显示领域的加速，DPU（Data Processing Unit）则是对于数据传输方面的加速。
-
-![](/images/img4/DPU.png)
-
-![](/images/img4/DPU_2.png)
-
-https://zhuanlan.zhihu.com/p/145142691
-
-什么是DPU？
-
-https://mp.weixin.qq.com/s/bL1PoUjZ_sH2VKcBxI6N5A
-
-Wave公司发布数据流处理架构DPU
-
-https://zhuanlan.zhihu.com/p/409507738
-
-写一下DPU
-
-https://www.zhihu.com/question/471238373
-
-dpu芯片发展前景如何？
-
-https://mp.weixin.qq.com/s/xRvXCpHpDnMqSNjJyIf3XQ
-
-大话DPU
-
-https://mp.weixin.qq.com/s/hN8tZ7xCRttIc-3pXdqElQ
-
-中科院计算所牵头发布《专⽤数据处理器DPU技术白皮书》，94页pdf
-
-https://zhuanlan.zhihu.com/p/430203049
-
-在IPU/DPU/SmartNIC中P4能成为主流吗？
+一文读懂nvidia-smi背后的nvml库

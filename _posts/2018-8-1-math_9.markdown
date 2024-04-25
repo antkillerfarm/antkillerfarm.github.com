@@ -1,13 +1,63 @@
 ---
 layout: post
-title:  数学狂想曲（九）——Bézier curve, 熵
+title:  数学狂想曲（九）——随机过程, Bézier curve
 category: math 
 ---
 
 * toc
 {:toc}
 
-# 随机过程（续）
+# 随机过程
+
+## 随机变量序列的收敛性
+
+弱收敛：$$F_n(x)\xrightarrow{W}F(x)$$
+
+依分布收敛：$$X_n\xrightarrow{L}X$$
+
+依概率收敛：$$X_n\xrightarrow{P}X$$
+
+r阶收敛：$$X_n\xrightarrow{r}X$$
+
+几乎处处收敛（almost everywhere convergent）：$$X_n\xrightarrow{a.e.}X$$ or $$X_n\xrightarrow{a.s.}X$$
+
+一致收敛（uniform convergence）：$$X_n\xrightarrow{u.c.}X$$
+
+以上概念实际上都是测度论的内容。具体到这里，弱收敛针对分布函数F，而其他收敛针对随机变量X。
+
+收敛严格性：
+
+$$X_n\xrightarrow{P}X \supseteq X_n\xrightarrow{L}X$$
+
+$$X_n\xrightarrow{r}X \supseteq X_n\xrightarrow{P}X$$
+
+$$X_n\xrightarrow{a.s.}X \supseteq X_n\xrightarrow{P}X$$
+
+大数定律：
+
+依概率收敛->弱大数定律
+
+几乎处处收敛->强大数定律
+
+## 随机过程常用公式或符号
+
+| 名称 | 公式或符号 |
+|:--:|:--:|
+| 期望 | $$EX=\int_{-\infty}^{+\infty}x\mathrm{d}F(x)$$，若存在密度函数则$$EX=\int_{-\infty}^{+\infty}xf(x)\mathrm{d}x$$ |
+| 方差 | $$DX=Var(X)=E(X-EX)^2$$ |
+| 协方差 | $$Cov(X,Y)=E\{\overline{[X-E(X)]}[Y-E(Y)]\}$$ |
+| 相关系数 | $$\rho_{XY}=\frac{Cov(X,Y)}{\sqrt{D(X)}\sqrt{D(Y)}}$$ |
+| 协方差矩阵 | $$\left[\begin{array}{ccc} Cov(X_1,X_1)&Cov(X_1,X_2)&\cdots&Cov(X_1,X_n)\\Cov(X_2,X_1)&Cov(X_2,X_2)&\cdots&Cov(X_2,X_n)\\ \vdots&\vdots&&\vdots \\Cov(X_n,X_1)&Cov(X_n,X_2)&\cdots&Cov(X_n,X_n)\end{array}\right]$$ |
+| 相关函数 | $$R(X,Y)=E[\overline{X}Y]$$ |
+| 均方极限 | $${l.i.m}_{n \to +\infty}X$$ |
+
+https://mp.weixin.qq.com/s/46NrpIako2lJ2ZitAQs8Sw
+
+划重点！通俗解释协方差与相关系数
+
+http://pinkyjie.com/2010/08/31/covariance/
+
+浅谈协方差矩阵
 
 ## 平稳过程
 
@@ -193,53 +243,3 @@ $$\frac{Q_1}{T_1}=\frac{Q_2}{T_2}\tag{9}$$
 $$\eta=\frac{W}{Q_1}=\frac{Q_1-Q_2}{Q_1}=1-\frac{Q_2}{Q_1}=1-\frac{T_2}{T_1}\tag{10}$$
 
 公式10就是所谓Carnot's theorem。Carnot发现所有热机的效率都不可能高于$$\eta$$。
-
-由Carnot's theorem可以容易的得到如下结论：
-
-1.冷热温度是热机效率的关键因素。但是低温热源降温是件很麻烦的事，需要设计基于Carnot逆循环的热机。这实际上就是现代空调的原理。
-
-2.提高高温热源温度。比如内燃机就比蒸汽机热效高。
-
-3.Carnot逆循环还表明，没有外界做功，低温热源不可能降温。这实际上揭示了热的不可逆特性，也就是热力学第二定律。
-
->必须指出的是，Carnot时代，科学界主流的理论还是热质说。虽然当今课本介绍Carnot's theorem时，一般基于热力学第二定律进行讲解，但后者的发现实际上是30年之后的事了。
-
-到了1850年代，Rudolf Clausius深入研究Carnot cycle之后，发现如果用负号表示放热的话，公式9可改写为：
-
-$$\frac{Q_1}{T_1}+\frac{Q_2}{T_2}=0\tag{11}$$
-
-这表明Carnot cycle中的路径积分：
-
-$$\oint \frac{Q}{T} = 0$$
-
-然而Carnot cycle是理想状况，真实热机不可能达到。因此：
-
-$$W<\left(1-\frac{T_C}{T_H}\right)Q_H\tag{12}$$
-
-$$Q_H-Q_C<\left(1-\frac{T_C}{T_H}\right)Q_H$$
-
-即：
-
-$$Q_C>\frac{T_C}{T_H}Q_H$$
-
-也就是：
-
-$$\oint \frac{Q}{T} \le 0\tag{13}$$
-
-Clausius意识到
-
-$$dS = \frac{Q}{T}\tag{14}$$
-
-是一个很重要的物理量，于是将之命名为Entropy。En表示energy，tropy是希腊文中transformation的意思。当这个颇有来历的名称被1923年到南京讲学的普朗克介绍给中国物理学家时，胡刚复教授在翻译时灵机一动，创造了一个新词汇“熵”。
-
->Rudolf Julius Emanuel Clausius，1822～1888，德国物理学家和数学家。University of Halle博士（1847）+ETH Zürich教授。经典热力学的集大成者。普法战争期间，上战场获得了一枚铁十字勋章。
-
->胡刚复，1892～1966，物理学家。哈佛大学博士（1918），历任南京大学、上海交通大学、浙江大学、南开大学教授。他和兄弟姐妹胡敦复、胡明复、胡范若、胡芷华等创办了上海大同大学，是上海乃至全国私立大学中的翘楚，素有“北有南开、南有大同”之说。
-
-从公式13可以看出，如果没有外界能量注入，热机是无法完成循环的，但由热力学第一定律可知，系统的能量总量是不变的，因此这意味着系统的一部分能量成为了无法利用的能量，而这部分能量正好可以用Entropy进行度量。
-
-参考：
-
-http://galileo.phys.virginia.edu/classes/152.mf1i.spring02/CarnotEngine.htm
-
-Heat Engines: the Carnot Cycle

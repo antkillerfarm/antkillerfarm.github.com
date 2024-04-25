@@ -9,6 +9,30 @@ category: Attention
 
 # 预训练语言模型进化史（续）
 
+https://zhuanlan.zhihu.com/p/69290203
+
+Transformer结构及其应用详解--GPT、BERT、MT-DNN、GPT-2
+
+https://mp.weixin.qq.com/s/Jf0uKIjwaBbzNCB7IiTjpA
+
+预训练模型专辑（一）
+
+https://mp.weixin.qq.com/s/pl27hVrphiFHYqZU85KGFw
+
+预训练模型专辑（二）
+
+https://zhuanlan.zhihu.com/p/145701656
+
+预训练语言模型们(上)
+
+https://zhuanlan.zhihu.com/p/146193549
+
+预训练语言模型们(下)
+
+https://mp.weixin.qq.com/s/BhcnTmSje983MYT_alEiiw
+
+一文盘点预训练神经语言模型
+
 https://mp.weixin.qq.com/s/RKA_RxTQkIeJX3_VIKJiRQ
 
 周明：预训练模型在多语言、多模态任务的进展
@@ -328,29 +352,3 @@ https://github.com/PaddlePaddle/ERNIE/
 还有如上图所示的语义嵌入。
 
 BERT已经证明了预训练模型对于多种NLP任务的有效性，因此使用多任务学习就成为一个很自然的想法。
-
-![](/images/img3/ERNIE_4.png)
-
-上图是ERNIE 2.0的多任务训练的结构图。可以认为ERNIE 2.0就是多任务版的ERNIE。
-
-![](/images/img3/ERNIE_5.png)
-
-为了适应多任务版本的要求，ERNIE 2.0还提出了Task Embedding。
-
-参考：
-
-https://mp.weixin.qq.com/s/xoQhz6ljbsbzKRBJlTQQuQ
-
-百度提出ERNIE，多项中文NLP任务表现出色
-
-https://mp.weixin.qq.com/s/rQ8ISipvV3Irrjd3MI-Idw
-
-百度ERNIE，中文任务全面超越BERT
-
-https://mp.weixin.qq.com/s/_ZBvq7gXvbiP2IQve9tcKg
-
-清华等提出ERNIE：知识图谱结合BERT才是“有文化”的语言模型
-
-https://mp.weixin.qq.com/s/QVEYQfEQV0CsklI9S4vOiA
-
-ERNIE真有官方说的那么好？亲测告诉你答案！

@@ -11,6 +11,20 @@ category: math
 
 ## KS检验（续）
 
+>由于Nobel Prizes没有数学奖，因此数学界的最高奖一般有三个：   
+>1.**Fields Medal**。获奖难度最高，因为有40岁的年龄限制。在国内比较知名的丘成桐、陶哲轩都是该奖的获奖者。   
+>不过他们还不是最屌的。Grigori Perelman（Poincaré conjecture（庞加莱猜想）的证明者）直接拒绝了Fields Medal。除此之外，他还拒绝了EMS Prize和Millennium Prize，其中后者奖金高达100万美元，而且还不知道下一个获奖者什么时候诞生（该奖不是年度奖，而是数学难题奖，数学难题的解决周期，你懂的）。   
+>Perelman犹如一个特立独行的隐士，谁的账都不买，包括名利。他将他的伟大证明随手扔进arXiv这样一个非正规网站，但却被《Science》评为年度科学突破。数学界已经很多年没有这样的荣誉了。   
+>补充一下，Perelman就读的中学是Kolmogorov创建的。   
+>2.**Abel Prize**。和Nobel Prizes的规则相同，由于不限年龄，水平是最高的。缺点是这个奖是2001年才创建的，影响力略差。   
+>3.**Wolf Prize**。在Abel Prize创建之前，被誉为数学界的Nobel Prizes。
+
+https://mp.weixin.qq.com/s/IVLsVR831pXki6QZ0BntpQ
+
+百年未解的谜题：庞加莱猜想
+
+---
+
 ![](/images/article/KS.png)
 
 上图的红线是某随机变量假设分布的CDF，而蓝线是该随机变量样本的累积分布曲线，即ECDF（Empirical Distribution Function）。
@@ -195,27 +209,3 @@ $$f(b)\ge f(a)+\nabla f(a)^{\top}(b-a)+\frac{\lambda}{2}\|b-a\|_2^2$$
 事实上，本文中使用的$$\varepsilon - \delta$$定义，就是Weierstrass的成果。Weierstrass首次采用数学的方式定义极限，取代了之前Newton的物理或几何式的极限定义。
 
 物理或几何式的极限定义有着直观的优势，但不够严格，Weierstrass Function就是最好的反例。
-
-![](/images/article/WeierstrassFunction.png)
-
-上图是Weierstrass Function图像。它是一类处处连续而处处不可导的实值函数，其表达式为：
-
-$$f(x)=\sum_{n=0} ^\infty a^n \cos(b^n \pi x)$$
-
-其中，$$0<a<1$$，b是奇数，且$$ab > 1+\frac{3}{2} \pi$$。最小的满足该条件的值是$$b=7$$。
-
-一般人会直觉上认为连续的函数必然是近乎可导的。即使不可导，所谓不可导的点也必然只占整体的一小部分。根据Weierstrass在他的论文中所描述，早期的许多数学家，包括高斯，都曾经假定连续函数不可导的部分是有限或可数的。这可能是因为直观上想象一个连续但在不可数个点上不可导的函数是很困难的事。
-
-Weierstrass Function的出现（1872年）说明了所谓的“病态”函数的存在性，改变了当时数学家对连续函数的看法。
-
-Weierstrass Function也被视为第一个分形函数（尽管分形（Fractal）的概念出现的相当晚（1973年），差不多过了整整一个世纪。）：将Weierstrass Function在任一点放大，所得到的局部图都和整体图形相似。因此，无论如何放大，函数图像都不会显得更加光滑，也不存在单调的区间。
-
-参考：
-
-https://wenku.baidu.com/view/21877fea551810a6f524868c.html
-
-一个反例处处连续处处不可导的函数
-
-https://mp.weixin.qq.com/s/ZwrWOZOlSibmM2vlfz1g6g
-
-z = z^2 + c

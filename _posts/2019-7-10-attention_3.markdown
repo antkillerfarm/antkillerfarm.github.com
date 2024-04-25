@@ -17,10 +17,6 @@ https://github.com/Kyubyong/transformer
 
 ![](/images/img2/Transformer.png)
 
-上图中的Feed Forward的公式为：
-
-$$FFN(x) = \max(0,xW_1 + b_1)W_2 + b_2$$
-
 Transformer的讲解首推：
 
 http://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/
@@ -38,6 +34,30 @@ The Illustrated Transformer
 2.encoder可以并行执行，一次性算完。而decoder的输入不仅包含encoder的输出，还包含了decoder上次的输出，因此还是一个循环结构，并不能完全并行。
 
 3.为了解决循环结构的次序问题，论文提出了上图所示的Masked Multi-Head Attention。
+
+## FFN
+
+上图中的Feed Forward的公式为：
+
+$$\text{FFN}(x) = \max(0,xW_1 + b_1)W_2 + b_2$$
+
+这实际上就是：
+
+$$\text{FFN}(x) = \text{ReLU}(xW_1)W_2$$
+
+这里的ReLU也可以换成其他的激活函数。
+
+![](/images/img5/FFN.png)
+
+它本质上是一个升维又降维的过程。
+
+https://zhuanlan.zhihu.com/p/685943779
+
+聊一聊Transformer中的FFN
+
+https://www.zhihu.com/question/646160485
+
+为什么transformer里面的自注意力总是被魔改，但里面的FFN却始终不变？
 
 ## Reformer
 
@@ -335,27 +355,3 @@ https://mp.weixin.qq.com/s/UVeWDavdHxmziUWW39jrkA
 https://mp.weixin.qq.com/s/JSWw5RBgQoW-PrfIhbMtjQ
 
 原理篇二：从ELMo到ALBERT
-
-https://zhuanlan.zhihu.com/p/69290203
-
-Transformer结构及其应用详解--GPT、BERT、MT-DNN、GPT-2
-
-https://mp.weixin.qq.com/s/Jf0uKIjwaBbzNCB7IiTjpA
-
-预训练模型专辑（一）
-
-https://mp.weixin.qq.com/s/pl27hVrphiFHYqZU85KGFw
-
-预训练模型专辑（二）
-
-https://zhuanlan.zhihu.com/p/145701656
-
-预训练语言模型们(上)
-
-https://zhuanlan.zhihu.com/p/146193549
-
-预训练语言模型们(下)
-
-https://mp.weixin.qq.com/s/BhcnTmSje983MYT_alEiiw
-
-一文盘点预训练神经语言模型

@@ -113,6 +113,10 @@ https://www.zhihu.com/question/653373334
 
 如何看待Meta发布Llama3，并将推出400B+版本？
 
+https://mp.weixin.qq.com/s/VU_qUQEjqUNHd0UK6RLM9g
+
+一文带你了解LLAMA（羊驼）系列
+
 ## GEMMA
 
 官网：

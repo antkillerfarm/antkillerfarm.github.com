@@ -9,6 +9,48 @@ category: Attention
 
 # Attention in CV & RS（续）
 
+## DETR
+
+https://mp.weixin.qq.com/s/b5Ont9vHPeCPnAjuDGv5Bg
+
+Facebook开源新思路！DETR：用Transformers来进行端到端的目标检测
+
+https://mp.weixin.qq.com/s/eHZGiyeZG36Dg6JV1boEeA
+
+语言模型“不务正业”做起目标检测，性能还比DETR、Faster R-CNN更好
+
+## BEVFormer
+
+BEV（Bird's-eye-view）
+
+Deformable Attention
+
+GridSample
+
+https://zhuanlan.zhihu.com/p/543335939
+
+万字长文理解纯视觉感知算法——BEVFormer
+
+https://zhuanlan.zhihu.com/p/538490215
+
+一文读懂BEVFormer论文
+
+https://zhuanlan.zhihu.com/p/629792598
+
+一文看懂BEVFormer技术及其背后价值
+
+https://www.zhihu.com/question/521842610
+
+自动驾驶BEV感知有哪些让人眼前一亮的新方法？
+
+https://zhuanlan.zhihu.com/p/509207308
+
+特斯拉AI DAY感知详解
+
+https://zhuanlan.zhihu.com/p/633483313
+
+BEV系列一：BEV介绍和常用BEV算法简介
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PD2YnFb6yleDEMhz3ahFSQ
@@ -312,43 +354,3 @@ https://mp.weixin.qq.com/s/INDOBcpg5p7vtPBChAIjAA
 https://mp.weixin.qq.com/s/SZMYj4rMneR3OWST007H-Q
 
 解读谷歌最强NLP模型BERT：模型、数据和训练
-
-https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
-
-详细解读谷歌新模型BERT为什么嗨翻AI圈
-
-https://zhuanlan.zhihu.com/p/66053631
-
-BERT
-
-https://mp.weixin.qq.com/s/WEbJnO04DOrsxUbzpgL66g
-
-BERT源码分析（PART I）
-
-https://mp.weixin.qq.com/s/iXjE7KoyvFQ8uekLKRK4jw
-
-BERT源码分析（PART II）
-
-https://mp.weixin.qq.com/s/DxBC_x5ZWC6SECfnwDGnVg
-
-BERT源码分析（PART III）
-
-https://mp.weixin.qq.com/s/kI_k_plZbRzmdeXxt2_2WA
-
-从Transformer到BERT模型
-
-https://mp.weixin.qq.com/s/Bnk0nIjBdb58WVJEY8MqnA
-
-NLP中各种各样的编码器
-
-https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
-
-预训练BERT，官方代码发布前他们是这样用TensorFlow解决的
-
-https://mp.weixin.qq.com/s/HOD1Hb70NhTXXCXlopzfng
-
-BERT推理加速实践
-
-https://mp.weixin.qq.com/s/0luHJsw7WWJskJWGThR5qg
-
-使用BERT做文本摘要

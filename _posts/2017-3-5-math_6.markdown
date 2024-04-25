@@ -9,6 +9,28 @@ category: math
 
 # 玻尔兹曼分布（续）
 
+## 参考
+
+http://wenku.baidu.com/view/ccb7956db84ae45c3b358ca7.html
+
+波尔兹曼统计分布律的推导的新方法
+
+http://www.cnblogs.com/tianchi/archive/2013/03/14/2959716.html
+
+Boltzmann machine
+
+https://mp.weixin.qq.com/s/Z1_ujG7iP_AFUD0gVO8HXQ
+
+信息熵、交叉熵和相对熵
+
+https://mp.weixin.qq.com/s/2_ZkKrwPhaS31JnyYXyfrQ
+
+简单的交叉熵损失函数，你真的懂了吗？
+
+http://blog.csdn.net/shijing_0214/article/details/51116046
+
+理解最大熵模型
+
 https://mp.weixin.qq.com/s/yUJDMSU1Fmf36vN2Q2y1TA
 
 最大熵模型原理小结
@@ -218,20 +240,6 @@ https://mp.weixin.qq.com/s/uJKXvp-qtMH-PNNLieUdTg
 现代概率论之父：柯尔莫哥洛夫的“随机”人生
 
 >Nikolai Vasilyevich Smirnov，1900～1966，俄国数学家。莫斯科大学博士，斯塔克罗夫数学研究所研究员。
-
----
-
->由于Nobel Prizes没有数学奖，因此数学界的最高奖一般有三个：   
->1.**Fields Medal**。获奖难度最高，因为有40岁的年龄限制。在国内比较知名的丘成桐、陶哲轩都是该奖的获奖者。   
->不过他们还不是最屌的。Grigori Perelman（Poincaré conjecture（庞加莱猜想）的证明者）直接拒绝了Fields Medal。除此之外，他还拒绝了EMS Prize和Millennium Prize，其中后者奖金高达100万美元，而且还不知道下一个获奖者什么时候诞生（该奖不是年度奖，而是数学难题奖，数学难题的解决周期，你懂的）。   
->Perelman犹如一个特立独行的隐士，谁的账都不买，包括名利。他将他的伟大证明随手扔进arXiv这样一个非正规网站，但却被《Science》评为年度科学突破。数学界已经很多年没有这样的荣誉了。   
->补充一下，Perelman就读的中学是Kolmogorov创建的。   
->2.**Abel Prize**。和Nobel Prizes的规则相同，由于不限年龄，水平是最高的。缺点是这个奖是2001年才创建的，影响力略差。   
->3.**Wolf Prize**。在Abel Prize创建之前，被誉为数学界的Nobel Prizes。
-
-https://mp.weixin.qq.com/s/IVLsVR831pXki6QZ0BntpQ
-
-百年未解的谜题：庞加莱猜想
 
 ---
 

@@ -101,9 +101,9 @@ $$erf(x)=\frac{2}{\sqrt{ \pi}}\int_0^{x}e^{-t^2}dt$$
 
 这个积分无法用初等函数表示，所以通常使用以下的近似泰勒展开式：
 
-$$x\Phi(x)\approx x\sigma(1.702 x)$$
+$$\text{GELU}(x)=x\Phi(x)\approx x\sigma(1.702 x)$$
 
-$$x\Phi(x)\approx \frac{1}{2} x \left[1 + \tanh\left(\sqrt{\frac{2}{\pi}}\left(x + 0.044715 x^3\right)\right)\right]$$
+$$\text{GELU}(x)=x\Phi(x)\approx \frac{1}{2} x \left[1 + \tanh\left(\sqrt{\frac{2}{\pi}}\left(x + 0.044715 x^3\right)\right)\right]$$
 
 参考：
 
@@ -131,7 +131,9 @@ https://www.cnblogs.com/htj10/p/8621771.html
 
 Swish是Google大脑团队提出的一个新的激活函数：
 
-$$\text{swish}(x)=x\cdot\sigma(x)=\frac{x}{1+e^{-x}}$$
+$$\text{Swish}(x, \beta)=x\cdot \text{sigmoid}(\beta x)$$
+
+其中，当$$\beta =1$$时，又被称为SiLU（Sigmoid Linear Unit）函数。
 
 它的图像如下图中的橙色曲线所示：
 
@@ -162,6 +164,12 @@ https://mp.weixin.qq.com/s/JticD0itOWH7Aq7ye1yzvg
 http://kexue.fm/archives/4647/
 
 浅谈神经网络中激活函数的设计
+
+## SwiGLU
+
+SwiGLU是2019年提出的，它结合了SWISH和GLU两种者的特点。
+
+$$\text{SwiGLU}(x,W,V,b,c)=\text{Swish}(\boldsymbol{W}\boldsymbol{x}+\boldsymbol{b})\otimes \sigma(\boldsymbol{V}\boldsymbol{x}+\boldsymbol{c})$$
 
 ## 其他激活函数
 
@@ -346,49 +354,3 @@ DRN的实现依赖于下图所示的res block：
 一般认为，Post-Norm在残差之后做归一化，对参数正则化的效果更强，进而模型的收敛性也会更好；而Pre-Norm有一部分参数直接加在了后面，没有对这部分参数进行正则化，可以在反向时防止梯度爆炸或者梯度消失，大模型的训练难度大，因而使用Pre-Norm较多。
 
 ![](/images/img4/Resnet.jpg)
-
-参考：
-
-https://zhuanlan.zhihu.com/p/22447440
-
-深度残差网络
-
-https://www.leiphone.com/news/201608/vhqwt5eWmUsLBcnv.html
-
-何恺明的深度残差网络PPT
-
-https://mp.weixin.qq.com/s/kcTQVesjUIPNcz2YTxVUBQ
-
-ResNet 6大变体：何恺明,孙剑,颜水成引领计算机视觉这两年
-
-https://mp.weixin.qq.com/s/5M3QiUVoA8QDIZsHjX5hRw
-
-一文弄懂ResNet有多大威力？最近又有了哪些变体？
-
-http://www.jianshu.com/p/b724411571ab
-
-ResNet到底深不深？
-
-https://mp.weixin.qq.com/s/Kgwwq5XOt88WW6KL8gADmQ
-
-你必须要知道CNN模型：ResNet
-
-https://mp.weixin.qq.com/s/7fWh2dovmfbsF8afaX9UOg
-
-一文简述ResNet及其多种变体
-
-https://mp.weixin.qq.com/s/fxq-H2_ZyXVd_kJx6rwEcQ
-
-何恺明CVPR2018关于视觉深度表示学习教程
-
-https://mp.weixin.qq.com/s/xTJr-jWMjk73TCZ8gBT4Ww
-
-一个神经元统治一切：ResNet强大的理论证明
-
-https://mp.weixin.qq.com/s/-SmmtqHWJjq2A4pu5KqYfQ
-
-resnet中的残差连接，你确定真的看懂了？
-
-https://mp.weixin.qq.com/s/AyJ_ZtNFTjkWVH3_Kw7wJg
-
-ResNet架构可逆！多大等提出性能优越的可逆残差网络
