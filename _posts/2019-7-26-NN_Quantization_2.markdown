@@ -1,0 +1,273 @@
+---
+layout: post
+title:  NN Quantization（二）——TF32, FP8, Posit, 量化策略, 二值神经网络
+category: DL acceleration 
+---
+
+* toc
+{:toc}
+
+# TF32（续）
+
+参考：
+
+https://zhuanlan.zhihu.com/p/143499632
+
+NVIDIA A100 GPU中的TF32将AI训练与HPC速度提升20倍
+
+https://www.cnblogs.com/zhouronghua/p/15170247.html
+
+AI中各种浮点精度概念集合：fp16，fp32，bf16，tf32，fp24，pxr24，ef32
+
+https://zhuanlan.zhihu.com/p/449857213
+
+那些年，AI芯片里的浮点(FloatPoint)格式
+
+# x86 Extended Precision Format
+
+Intel在早期的8087芯片上引入了一种80bit的浮点格式：1 Sign + 15 Exponent + 80 Significand
+
+这个格式设计不知道是否启发了BF16，因为它采用了和IEEE 754中128bit相同的Exponent，正如BF16使用FP32的Exponent一样，都是高一个档次的Exponent搭配低档次的Significand。
+
+# FP8
+
+![](/images/img5/FP8.png)
+
+FP8包括两种常见的变种：E4M3(4位指数和3位尾数)和E5M2(5位指数和2位尾数)。
+
+NVIDIA在H100中，添加了FP8的支持，但是去掉了对INT1/INT4的支持。。。看起来后两者还是实用价值偏低了。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/521631165
+
+Nvidia H100 中的FP8
+
+# BF8 and Tesla CFloat
+
+当我们将浮点的继续降低到8-bit的时候，BF8遇到的挑战越来越大。
+
+在论文HFP8中，模型inference的时候，FP8(1-4-3)在mobilenet和transformer任务上明显的精度降低。
+
+对于training来说，遇到的挑战进一步增大，weight/gradients/activation的范围相差更大，没有办法选择一个合适的格式来满足所有数值的要求。
+
+HFP8就提出了一种Hybrid的方式：forward的时候用FP-1-4-3，backward的时候用FP-1-5-2。forward的时候，更关注精度，backward的时候更注重范围。这样的话，HFP8就能够在训练的过程中获得接近FP32的表现。
+
+在工业界Tesla DoJo提出了一种可配置的CFloat，exponent和mantissa的位数可以动态的调整，只要满足总共的bit数就可以了。这样，由软件来选择合适的浮点类型CFormat，来最大化的利用硬件的性能。
+
+《8-BIT NUMERICAL FORMATS FOR DEEP NEURAL NETWORKS》
+
+CFormat这种动态调整exponent和mantissa位数的量化方式，又被称为Dynamic Fixed Point Quantization。
+
+# W4A16
+
+![](/images/img5/W4.png)
+
+这种量化方式只对Weight使用4bit量化，而其他Tensor仍然使用16bit的浮点数。A是Activation的意思。
+
+W4A16主要有GPTQ和AWQ等实现。
+
+![](/images/img5/QuaRot.png)
+
+上图是QuaRot提出的一种W4A16在LLM领域的实践方法，其中还包含了KV Cache的4bit量化。
+
+# q4f16 & q3f16
+
+q3f16（q3指使用Quantize 3 bit来量化，f16是指核心计算使用fp 16来计算）。
+
+# FP4
+
+![](/images/img5/FP4.png)
+
+IEEE版本的FP4(E2M1)如上图所示，但由于过于粗糙，一般使用更多的是所谓的NormalFloat的NF4。
+
+NF4只能表示[-1, 1]之间的浮点数。由于在神经网络中，预训练的权重通常具有零中心的正态分布。所以根据正态分布的累积分布函数来量化，比均匀量化，效果要好一些。
+
+所有可能的NF4值为:
+
+```
+[-1.0, -0.6961928009986877, -0.5250730514526367, -0.39491748809814453,
+  -0.28444138169288635, -0.18477343022823334, -0.09105003625154495, 0.0,
+  0.07958029955625534, 0.16093020141124725, 0.24611230194568634, 0.33791524171829224,
+  0.44070982933044434, 0.5626170039176941, 0.7229568362236023, 1.0]
+```
+
+注意：0左侧和右侧的量化是非对称的，因为[-1, 0]之间有8个值，而[0, 1]之间有9个值。
+
+NF4是QLoRA引入的，而FP4目前只有NV的GPU支持。
+
+# Posit
+
+![](/images/img4/Posit.png)
+
+上图是Posit格式的示意图，除了符号位、指数和底数之外，它还包括了regime bits。
+
+regime bits不知道怎么翻译，这里不妨意译为**超指数**。它的公式是：
+
+$$useed^k$$
+
+其中，
+
+$$useed=2^{2^{es}}$$
+
+es表示指数位的宽度，这里是3，所以$$useed=2^{2^{3}}=2^8=256$$
+
+k的表示没有采用补码，而是一种特殊的方法：
+
+![](/images/img4/Posit_2.png)
+
+k=从左面开始数0或者1的个数。
+
+需要注意的是，同样总位宽的Posit格式，其每个部分（符号位除外，固定占1位）的宽度是不定的。除了regime bits是必须有的（但宽度不定）之外，指数和底数都是可选项。
+
+Posit的设计思路其实是很自然的：
+
+- 底数增加1位，Dynamic Range增加2倍。
+
+- 指数增加1位，Dynamic Range增加$$2^2$$倍。
+
+- 如果还想增加Dynamic Range，自然就需要引入超指数了。
+
+https://www.sigarch.org/posit-a-potential-replacement-for-ieee-754
+
+Posit: A Potential Replacement for IEEE 754
+
+常见的软件实现：
+
+https://github.com/cjdelisle/libposit
+
+https://github.com/stillwater-sc/universal
+
+# 量化策略
+
+上面主要讲了量化格式，这里再讲一下量化相关的策略问题。
+
+## Saturate Quantization
+
+上述各种量化方法都是在保证数值表示范围的情况下，尽可能提高fl或者scale。这种方法也叫做Non-saturation Quantization。
+
+NVIDIA在如下文章中提出了一种新方法：
+
+http://on-demand.gputechconf.com/gtc/2017/presentation/s7310-8-bit-inference-with-tensorrt.pdf
+
+8-bit Inference with TensorRT
+
+![](/images/img2/INT8_3.png)
+
+Saturate Quantization的做法是：将超出上限或下限的值，设置为上限值或下限值。
+
+如何设置合理的Saturate threshold呢？
+
+可以设置一组门限，然后计算每个门限的分布和原分布的相似度，即KL散度，选择最相似分布的门限即可。
+
+参考：
+
+https://blog.csdn.net/u013010889/article/details/90295078
+
+int8量化和tvm实现
+
+## Trainning Quantization
+
+除了上面这些无条件Quantization之外，训练中的Quantization也是一大类算法。
+
+比如下面提到的PACT量化，不仅对weight进行量化，还通过不断训练，限制每一层tensor的数值范围。
+
+参考：
+
+https://mp.weixin.qq.com/s/7rMnzbvp1hjDLuw_oifbng
+
+我们是这样改进PACT量化算法的
+
+## 双重量化
+
+过去的量化算法每一层额外附带两个参数，现在的量化算法一般采用了分组量化的方式。例如，取128个参数作为一组，每一组都会额外增加两个参数。
+
+量化参数（最小值、缩放比例）本身还能再进行量化，称为双重量化。QLoRA采用了这种方式。
+
+https://zhuanlan.zhihu.com/p/665601576
+
+用bitsandbytes、4比特量化和QLoRA打造亲民的LLM
+
+## per-channel & per-group
+
+一般情况下，一个Tensor共享同一个Scale。有的时候为了提升精度，也可以一个channel共享同一个Scale，这也被称为per-channel quantization。如果不共享Scale，则退化为普通的浮点数表示。
+
+经过观察，在正态分布下，绝对值很大的参数的比例会很少，所以一起归一会使得大多数参数变得很小，从而使得量化过程中的一些数字范围对应的int8没有被充分利用，导致更多的信息丢失。
+
+把参数划分为了小Block，在进行量化的时候，按照block内绝对值最大的数对这个block进行归一化，使得所有参数都落在 [-1, 1] 这个范围，这就是Block-wise Quantization。Block的值如果在内存中连续，则这种quantization也叫做per-group quantization。
+
+## Activation Quantization
+
+早期的Quantization一般是W和A采用相同量化格式，然而由于LLM的特殊性（层数深，迭代次数多），Activation的量化一直是一个大问题。W4A16就是目前传统方法所能达到的最好水平了。
+
+>seq2seq对于数值精度要求高，这在早期的LSTM时代，就已经很突出了。当时CNN普遍已经8bit量化，但在LSTM中，起码要16bit才能达到可接受的效果。
+
+![](/images/img5/quant.png)
+
+研究表明，有些Token的异常值会显著高于其他Token，有了之前Weight上的per-channel & per-group的策略，Activation上自然也可以使用per-token的策略。
+
+然而Activation Quantization的这些高阶策略，和输入的内容密切相关，因此并不能进行离线量化，同时量化参数由于是运行时才确定的，相当于是动态图，这给后端的AI硬件的调度带来了一定的挑战。
+
+相关算法：SmoothQuant、ZeroQuant、SpQR。
+
+## 量化技巧
+
+1.设计模型时，需要对输入进行归一化，缩小输入值的值域范围，以减小量化带来的精度损失。
+
+2.tensor中各分量的值域范围最好相近。这个的原理和第1条一致。比如YOLO的结果中，同时包含分类和bbox，而且分类的值域范围远大于bbox，导致量化效果不佳。
+
+3.最好不要使用ReluN这样的激活函数，死的神经元太多。神经元一旦“死亡”，相应的权值就不再更新，而这些值往往不在正常范围内。
+
+4.对于sigmoid、tanh这样的S形函数，其输入在$$\mid x \mid > \sigma$$范围的值，最终的结果都在sigmoid、tanh的上下限附近。因此，可以直接将这些x值量化为$$\sigma$$。这里的$$\sigma$$的取值，对于sigmoid来说是6，而对于tanh来说是3。
+
+## NN硬件的指标术语
+
+MACC：multiply-accumulate，乘法累加。
+
+FLOPS：Floating-point Operations Per Second，每秒所执行的浮点运算次数。
+
+显然NN的INT8计算主要以MACC为单位。
+
+## gemmlowp
+
+gemmlowp是Google提出的一个支持低精度数据的GEMM（General Matrix Multiply）库。
+
+代码：
+
+https://github.com/google/gemmlowp
+
+## 论文
+
+《Quantizing deep convolutional networks for efficient inference: A whitepaper》
+
+# 二值神经网络
+
+二值神经网络的主要缺点在于，它们无法实现与完全精度的深层网络一样高的精度。但这一直在缓慢地变化，已经有了很多进步。
+
+http://blog.csdn.net/tangwei2014/article/details/55077172
+
+二值化神经网络介绍
+
+https://mp.weixin.qq.com/s/0twiT2mrVdnwyS-mqgrjVA
+
+低比特量化之XNOR-Net
+
+https://mp.weixin.qq.com/s/oumf8l28ijYLxc9fge0FMQ
+
+嵌入式深度学习之神经网络二值化（1）
+
+https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
+
+嵌入式深度学习之神经网络二值化（2）
+
+https://mp.weixin.qq.com/s/RsZCTqCKwpnjATUFC8da7g
+
+嵌入式深度学习之神经网络二值化（3）
+
+https://blog.csdn.net/stdcoutzyx/article/details/50926174
+
+二值神经网络（Binary Neural Network，BNN）
+
+https://mp.weixin.qq.com/s/Q54AdQmqa5JD0v9CEeFtSQ
+
+二值化神经网络(BNN)综述

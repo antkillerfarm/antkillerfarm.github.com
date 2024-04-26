@@ -1,15 +1,141 @@
 ---
 layout: post
-title:  深度加速（四）——NN Quantization（2）
+title:  NN Quantization（一）——概述, IEEE 754, INT量化, UINT量化, BF16
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# NN Quantization（续）
+# 概述
 
-## UINT量化
+![](/images/img3/NN_Quantization.jpg)
+
+NN的量化计算是近来NN计算优化的方向之一。相比于传统的浮点计算，整数计算无疑速度更快，而NN由于自身特性，对单点计算的精确度要求不高，且损失的精度还可以通过retrain的方式恢复大部分，因此通常的科学计算的硬件（没错就是指的GPU）并不太适合NN运算，尤其是NN Inference。
+
+>传统的GPU并不适合NN运算，因此Nvidia也好，还是其他GPU厂商也好，通常都在GPU中又集成了NN加速的硬件，因此虽然商品名还是叫做GPU，但是工作原理已经有别于传统的GPU了。
+
+这方面的文章以Xilinx的白皮书较为经典：
+
+https://china.xilinx.com/support/documentation/white_papers/c_wp486-deep-learning-int8.pdf
+
+利用Xilinx器件的INT8优化开展深度学习
+
+# IEEE 754
+
+在开始进一步介绍之前，我们首先回顾一下浮点数在硬件上的表示方法。其中最重要的就是IEEE 754标准。
+
+|  | Sign | Exponent | Significand |
+|:--:|:--:|:--:|:--:|
+| FP16 | 1 | 5 | 10 |
+| FP32 | 1 | 8 | 23 |
+| FP64 | 1 | 11 | 52 |
+| FP128 | 1 | 15 | 113 |
+| FP256 | 1 | 19 | 237 |
+
+![](/images/img3/float.jpg)
+
+目前，clang编译器已经原生支持FP16，但gcc还不行，不过可以用以下项目支持之：
+
+http://half.sourceforge.net/
+
+half - IEEE 754-based half-precision floating point library
+
+显然，Significand的位数决定Accuracy，而Exponent的位数决定Dynamic Range。
+
+上溢：超出所能表示的最大数（$$\to \infty$$）。
+
+下溢：超出所能表示的最小数（$$\to 0$$）。
+
+除了IEEE 754之外，还有IBM hexadecimal floating point。相比于IEEE 754，IBM格式的Significand位数多一些，而Exponent的位数少一些。
+
+参考：
+
+https://en.wikipedia.org/wiki/IEEE_754
+
+http://blog.codinglabs.org/articles/trouble-of-x86-64-platform.html
+
+x86-64体系下一个奇怪问题的定位
+
+## Microsoft Binary Format
+
+MS早期的Basic产品中使用了一种特殊的浮点表示方法，被称作Microsoft Binary Format（1975年）。与后来的浮点标准主要由硬件厂商主导不同，这时的浮点运算还是以软件的形式运行在定点运算单元上。
+
+# 浮点数取整
+
+浮点数取整的方法一般有：
+
+- 截断取整。
+
+- 向上/向下取整。
+
+- 四舍五入。
+
+- 四舍六入五成双，也称为向偶数取整。例子：3.5->4, 4.5->4.
+
+一般来说，后两种用的较多，尤其是最后一种。
+
+# Distiller
+
+https://nervanasystems.github.io/distiller/index.html
+
+Intel AI Lab推出的Distiller是一个关于模型压缩、量化的工具包。这里是它的文档，总结了业界主要使用的各种方法。
+
+参考：
+
+https://mp.weixin.qq.com/s/A5ka8evElmcuHdowof7kww
+
+Intel发布神经网络压缩库Distiller：快速利用前沿算法压缩PyTorch模型
+
+# Conservative vs. Aggressive
+
+Quantization主要分为两大类：
+
+1."Conservative" Quantization。这里主要指不低于INT8精度的量化。
+
+实践表明，由于NN训练时采用的凸优化算法，其最终结果一般仅是局部最优。因此，即便是两次训练（数据集、模型完全相同，样本训练顺序、参数初始值随机）之间的差异，通常也远大于FP64的精度。所以，一般而言，FP32对于模型训练已经完全够用了。
+
+FP16相对于FP32，通常会有不到1%的精度损失。即使是不re-train的INT8，通常也只有3%～15%的精度损失。因此这类量化被归为"Conservative" Quantization。其特点是完全采用FP32的参数进行量化，或者在此基础上进行re-train。
+
+1."Aggressive" Quantization。这里指的是INT4或更低精度的量化。
+
+这种量化由于过于激进，re-train也没啥大用，因此必须从头训练。而且由于INT4表达能力有限，模型结构也要进行一定的修改，比如增加每一层的filter的数量。
+
+# INT量化
+
+论文：
+
+《On the efficient representation and execution of deep acoustic models》
+
+![](/images/img2/INT8.png)
+
+一个浮点数包括底数和指数两部分。将两者分开，就得到了一般的INT量化。
+
+量化的过程一般如下：
+
+1.使用一批样本进行推断，记录下每个layer的数值范围。
+
+2.根据该范围进行量化。
+
+量化的方法又分为两种：
+
+1）直接使用浮点数表示中的指数。也就是所谓的fractional length，相当于2的整数幂。
+
+2）使用更一般的scale来表示。这种方式的精度较高，但运算量稍大。
+
+量化误差过大，一般可用以下方法减小：
+
+1.按照每个channel的数值范围，分别量化。
+
+2.分析weight、bias，找到异常值，并消除之。这些异常值通常是由于死去的神经元所导致的误差无法更新造成的。
+
+如何确定每个layer的数值范围，实际上也有多种方法：
+
+1.取整批样本在该layer的数值范围的并集，也就是所有最大（小）值的极值。
+
+2.取所有最大（小）值的平均值。
+
+# UINT量化
 
 论文：
 
@@ -22,8 +148,6 @@ UINT量化使用bias将数据搬移到均值为0的区间。
 $$r=S(q-Z)$$
 
 r为fp32表示；q则是low-bit(如int8)表示；S是自low-bit（int8）到fp32的scale；Z为零点shift，用于使q的某数值对应于r中的0.0。
-
-一般情况下，一个Tensor共享同一个S。有的时候为了提升精度，也可以一个channel共享同一个S，这也被称为per channel quantization。如果不共享S，则退化为普通的浮点数表示。
 
 对于矩阵乘法来说：
 
@@ -45,7 +169,7 @@ $$S_3(q_3^{(i,k)}-Z_3)=\sum_{j=1}^N S_1(q_1^{(i,j)}-Z_1)S_2(q_2^{(j,k)}-Z_2)$$
 
 Fake quant之所以叫伪量化，是因为虽然可量化weights/activations，但不是真正意义上的量化，即变量类型还是floating point，而不是integer。
 
-## bfloat16
+# bfloat16
 
 bfloat16是Google针对AI领域的特殊情况提出的浮点格式。目前已有Intel的AI processors和Google的TPU，提供对该格式的原生支持。
 
@@ -85,7 +209,7 @@ https://zhuanlan.zhihu.com/p/441591808
 
 混合精度训练原理
 
-## Flexpoint
+# Flexpoint
 
 Flexpoint是Nervana的作品。
 
@@ -145,7 +269,7 @@ https://mp.weixin.qq.com/s/z4OEPrAAtaNmBQoyvEd7Nw
 
 从春秋到战国—论Nervana的倒掉
 
-## TF32
+# TF32
 
 ![](/images/img3/tf32.png)
 
@@ -158,128 +282,3 @@ https://mp.weixin.qq.com/s/z4OEPrAAtaNmBQoyvEd7Nw
 BF16和TF32的先例一开，各种格式如火山爆发一般涌现。例如AMD的fp24，Pixar的pxr24，Enflame的ef32。
 
 壁仞原创定义了TF32+，相较于TF32，在满足同样动态表示范围的前提下，增加了5位尾数。实际上就是pxr24。。。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/143499632
-
-NVIDIA A100 GPU中的TF32将AI训练与HPC速度提升20倍
-
-https://www.cnblogs.com/zhouronghua/p/15170247.html
-
-AI中各种浮点精度概念集合：fp16，fp32，bf16，tf32，fp24，pxr24，ef32
-
-https://zhuanlan.zhihu.com/p/449857213
-
-那些年，AI芯片里的浮点(FloatPoint)格式
-
-## x86 Extended Precision Format
-
-Intel在早期的8087芯片上引入了一种80bit的浮点格式：1 Sign + 15 Exponent + 80 Significand
-
-这个格式设计不知道是否启发了BF16，因为它采用了和IEEE 754中128bit相同的Exponent，正如BF16使用FP32的Exponent一样，都是高一个档次的Exponent搭配低档次的Significand。
-
-## FP8
-
-![](/images/img5/FP8.png)
-
-FP8包括两种常见的变种：E4M3(4位指数和3位尾数)和E5M2(5位指数和2位尾数)。
-
-NVIDIA在H100中，添加了FP8的支持，但是去掉了对INT1/INT4的支持。。。看起来后两者还是实用价值偏低了。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/521631165
-
-Nvidia H100 中的FP8
-
-## BF8 and Tesla CFloat
-
-当我们将浮点的继续降低到8-bit的时候，BF8遇到的挑战越来越大。
-
-在论文HFP8中，模型inference的时候，FP8(1-4-3)在mobilenet和transformer任务上明显的精度降低。
-
-对于training来说，遇到的挑战进一步增大，weight/gradients/activation的范围相差更大，没有办法选择一个合适的格式来满足所有数值的要求。
-
-HFP8就提出了一种Hybrid的方式：forward的时候用FP-1-4-3，backward的时候用FP-1-5-2。forward的时候，更关注精度，backward的时候更注重范围。这样的话，HFP8就能够在训练的过程中获得接近FP32的表现。
-
-在工业界Tesla DoJo提出了一种可配置的CFloat，exponent和mantissa的位数可以动态的调整，只要满足总共的bit数就可以了。这样，由软件来选择合适的浮点类型CFormat，来最大化的利用硬件的性能。
-
-《8-BIT NUMERICAL FORMATS FOR DEEP NEURAL NETWORKS》
-
-CFormat这种动态调整exponent和mantissa位数的量化方式，又被称为Dynamic Fixed Point Quantization。
-
-## W4A16
-
-![](/images/img5/W4.png)
-
-这种量化方式只对Weight使用4bit量化，而其他Tensor仍然使用16bit的浮点数。A是Activation的意思。
-
-W4A16主要有GPTQ和AWQ等实现。
-
-## q4f16 & q3f16
-
-q3f16（q3指使用Quantize 3 bit来量化，f16是指核心计算使用fp 16来计算）。
-
-## FP4
-
-![](/images/img5/FP4.png)
-
-IEEE版本的FP4(E2M1)如上图所示，但由于过于粗糙，一般使用更多的是所谓的NormalFloat的NF4。
-
-NF4只能表示[-1, 1]之间的浮点数。由于在神经网络中，预训练的权重通常具有零中心的正态分布。所以根据正态分布的累积分布函数来量化，比均匀量化，效果要好一些。
-
-所有可能的NF4值为:
-
-```
-[-1.0, -0.6961928009986877, -0.5250730514526367, -0.39491748809814453,
-  -0.28444138169288635, -0.18477343022823334, -0.09105003625154495, 0.0,
-  0.07958029955625534, 0.16093020141124725, 0.24611230194568634, 0.33791524171829224,
-  0.44070982933044434, 0.5626170039176941, 0.7229568362236023, 1.0]
-```
-
-注意：0左侧和右侧的量化是非对称的，因为[-1, 0]之间有8个值，而[0, 1]之间有9个值。
-
-NF4是QLoRA引入的，而FP4目前只有NV的GPU支持。
-
-## Posit
-
-![](/images/img4/Posit.png)
-
-上图是Posit格式的示意图，除了符号位、指数和底数之外，它还包括了regime bits。
-
-regime bits不知道怎么翻译，这里不妨意译为**超指数**。它的公式是：
-
-$$useed^k$$
-
-其中，
-
-$$useed=2^{2^{es}}$$
-
-es表示指数位的宽度，这里是3，所以$$useed=2^{2^{3}}=2^8=256$$
-
-k的表示没有采用补码，而是一种特殊的方法：
-
-![](/images/img4/Posit_2.png)
-
-k=从左面开始数0或者1的个数。
-
-需要注意的是，同样总位宽的Posit格式，其每个部分（符号位除外，固定占1位）的宽度是不定的。除了regime bits是必须有的（但宽度不定）之外，指数和底数都是可选项。
-
-Posit的设计思路其实是很自然的：
-
-- 底数增加1位，Dynamic Range增加2倍。
-
-- 指数增加1位，Dynamic Range增加$$2^2$$倍。
-
-- 如果还想增加Dynamic Range，自然就需要引入超指数了。
-
-https://www.sigarch.org/posit-a-potential-replacement-for-ieee-754
-
-Posit: A Potential Replacement for IEEE 754
-
-常见的软件实现：
-
-https://github.com/cjdelisle/libposit
-
-https://github.com/stillwater-sc/universal

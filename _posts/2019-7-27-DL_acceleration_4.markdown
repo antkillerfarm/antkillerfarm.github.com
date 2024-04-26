@@ -1,71 +1,13 @@
 ---
 layout: post
-title:  深度加速（六）——模型压缩与加速, 知识蒸馏
+title:  深度加速（四）——知识蒸馏
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# 模型压缩与加速
-
-## Network Pruning（续）
-
-Weight Pruning需要相关硬件支持跳零操作才能真正加速运算，而Filter/Layer Pruning则无需特殊硬件支持。
-
-虽然这些参数、结点和层相对不重要，但是去掉之后，仍然会对准确度有所影响。这时可以对精简之后的模型，用训练样本进行re-train，通过残差对模型进行一定程度的修正，以提高准确度。
-
-![](/images/img4/Pruning.png)
-
-此外还有Stripe-Wise Pruning：
-
-https://mp.weixin.qq.com/s/HohsD57cQtTR5SvuykEDuA
-
-优图NeurIPS 2020论文，刷新滤波器剪枝的SOTA效果
-
-还可以看看图森科技的论文：
-
-https://www.zhihu.com/question/62068158
-
-如何评价图森科技连发的三篇关于深度模型压缩的文章？
-
-图森的思路比较有意思。其中的方法之一，是利用L1规则化会导致结果的稀疏化的特性，制造出一批接近0的参数。从而达到去除不重要的参数的目的。
-
-除此之外，矩阵量化、Kronecker内积、霍夫曼编码、模型剪枝等也是常见的模型压缩方法。
-
----
-
-彩票假说（ICLR2019会议的best paper）：随机初始化的密集神经网络包含一个初始化的子网，当经过隔离训练时，它可以匹配训练后最多相同迭代次数的原始网络的测试精度。
-
-https://mp.weixin.qq.com/s/wOaCjSifZqkndaGbst1-aw
-
-一文带你了解NeurlPS2020的模型剪枝研究
-
-## 权值稀疏化实战
-
-这里讲一下韩松论文提到的裁剪方法中，最简单的一种——“权值稀疏化“的工程实现细节。以darknet框架为例。
-
-1.在src/parser.c中找到save_XXX_weights函数。判断权值是否接近0，如果是，则强制设为0。
-
-2.使用修改后的weights进行re-train。训练好之后，重复第1、2步。
-
-3.反复多次之后，进入最终prune阶段。修改src/network.c:update_network，令其不更新0权值。
-
->re-train时的learning rate一般不宜太大。如果出现re-train的效果，还不如直接prune的好，则多半是learning rate设置的问题。
-
-一般采用稀疏化率来描述权值的稀疏化程度。每层的稀疏化率可以相同，也可以不同。前者被称作Magnitude Pruner，而后者被称作Sensitivity Pruner。
-
-权值稀疏化的设置也和网络结构有关。比如分类网络，由于输入图片是高维数据，而分类结果是低维数据，因此在稀疏化处理的时候，**越靠近输出结果的Layer，其稀疏化程度就可以越高。**而最初的几层，即使只加少量稀疏化，也会导致精度的大幅下降，这时往往就不做或者少做稀疏化处理了。
-
-上述方法的问题在于，分类网络的计算量主要集中在最初几层，所以这种triangle prune mode对于压缩计算量的效果一般。
-
-除了训练后的权值稀疏化之外，权值稀疏化训练也是一种方法。
-
-论文：
-
-《FLOPs as a Direct Optimization Objective for Learning Sparse Neural Networks》
-
-这篇论文，将计算量也就是FLOPs作为Loss function设计的一部分，由于稀疏化的权值没有运算量，因此，采用这种Loss训练出的网络，天生就是稀疏化的。
+# 模型压缩与加速（续）
 
 ## AutoML
 
@@ -264,3 +206,125 @@ https://mp.weixin.qq.com/s/XR8OlGv5Ciglq03Ul_jpvQ
 https://mp.weixin.qq.com/s/HdG3_CaSdZP3lCp8J_VRQA
 
 只需一个损失函数、一个超参数即可压缩BERT，MSRA提出模型压缩新方法
+
+## 参考
+
+https://github.com/dkozlov/awesome-knowledge-distillation
+
+知识蒸馏从入门到精通
+
+https://zhuanlan.zhihu.com/p/24894102
+
+《Distilling the Knowledge in a Neural Network》阅读笔记
+
+https://luofanghao.github.io/blog/2016/07/20/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%20%E3%80%8ADistilling%20the%20Knowledge%20in%20a%20Neural%20Network%E3%80%8B/
+
+论文笔记《Distilling the Knowledge in a Neural Network》
+
+http://blog.csdn.net/zhongshaoyy/article/details/53582048
+
+蒸馏神经网络
+
+https://mp.weixin.qq.com/s/QZ7PGvi27LiDOJaxici7Pw
+
+数据蒸馏Dataset Distillation
+
+https://mp.weixin.qq.com/s/vGTqHif48O2GZhuxWFhOLw
+
+知识蒸馏总结、应用与扩展（2015-2019）
+
+https://zhuanlan.zhihu.com/p/24337627
+
+深度压缩之蒸馏模型
+
+https://mp.weixin.qq.com/s/xcd9CHgE2_vEXrQ4MK019Q
+
+知识蒸馏方法的演进历史综述
+
+https://zhuanlan.zhihu.com/p/265906295
+
+知识蒸馏：如何用一个神经网络训练另一个神经网络
+
+https://mp.weixin.qq.com/s/qE1makMUIaFNrWk4nqOxDw
+
+最新《知识蒸馏》2020综述论文，30页pdf，悉尼大学
+
+https://zhuanlan.zhihu.com/p/51563760
+
+知识蒸馏（Knowledge Distillation）最新进展（一）
+
+https://zhuanlan.zhihu.com/p/53864403
+
+知识蒸馏（Knowledge Distillation）最新进展（二）
+
+https://zhuanlan.zhihu.com/p/81467832
+
+知识蒸馏（Knowledge Distillation）简述（一）
+
+https://mp.weixin.qq.com/s/pXoENwz4Z-eok9y3P9rQvg
+
+知识蒸馏（Knowledge Distillation）简述（二）
+
+https://zhuanlan.zhihu.com/p/102038521
+
+知识蒸馏(Knowledge Distillation) 经典之作
+
+https://zhuanlan.zhihu.com/p/92166184
+
+知识蒸馏简述（一）
+
+https://zhuanlan.zhihu.com/p/92269636
+
+知识蒸馏简述（二）
+
+http://coderskychen.cn/2019/02/23/distilling/
+
+知识蒸馏三部曲：从模型蒸馏、数据蒸馏到任务蒸馏
+
+https://mp.weixin.qq.com/s/5_qgj33tyVTHivpXkU4LDw
+
+一个知识蒸馏的简单介绍
+
+https://zhuanlan.zhihu.com/p/93287223
+
+从入门到放弃：深度学习中的模型蒸馏技术
+
+https://zhuanlan.zhihu.com/p/113549023
+
+浅谈知识蒸馏方法研究综述
+
+https://mp.weixin.qq.com/s/mFuxCl0Mzv5hmDFewWZkrw
+
+FAIR&MIT提出知识蒸馏新方法：数据集蒸馏
+
+https://mp.weixin.qq.com/s/MDgqSwVEClNqNpaWuGTEpg
+
+微软亚研院提出用于语义分割的结构化知识蒸馏
+
+https://blog.csdn.net/xbinworld/article/details/83063726
+
+知识蒸馏（Distilling the Knowledge in a Neural Network），在线蒸馏
+
+https://mp.weixin.qq.com/s/ekKg46bQlWrlg9Hon01M5g
+
+Hinton胶囊网络后最新研究：用“在线蒸馏”训练大规模分布式神经网络
+
+https://mp.weixin.qq.com/s/SqxooZqSeD3wA4EFK5D3Kg
+
+再生神经网络：利用知识蒸馏收敛到更优的模型
+
+https://mp.weixin.qq.com/s/Nkxy0SUdbwIjp5swU6tS9g
+
+深度互学习-Deep Mutual Learning：三人行必有我师
+
+https://mp.weixin.qq.com/s/I08kMmUohWWbYVpPDgTJsw
+
+Startdt AI提出：使用生成对抗网络用于One-Stage目标检测的知识蒸馏方法
+
+https://mp.weixin.qq.com/s/yFyM5OVp1YLKQBlgXeAzhw
+
+华为诺亚方舟实验室提出无需数据网络压缩技术
+
+https://mp.weixin.qq.com/s/0f0aToVaAsU7yWK4xz-HzQ
+
+剪枝量化初完结，蒸馏学习又上线

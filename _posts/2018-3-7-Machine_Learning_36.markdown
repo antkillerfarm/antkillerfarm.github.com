@@ -251,6 +251,10 @@ https://mp.weixin.qq.com/s/M0W6-bLZcsdMsKBUAeKDnw
 
 树模型奠基性论文解读——GBM: Gradient Boosting Machine
 
+https://zhuanlan.zhihu.com/p/672584013
+
+lleaves：使用LLVM编译梯度提升决策树将预测速度提升10+倍
+
 # CatBoost
 
 这是Yandex推出的Boost工具包。

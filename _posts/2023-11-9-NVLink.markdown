@@ -17,7 +17,7 @@ category: Chip
 
 ![](/images/img5/bandwidth_compute_bound_2.png)
 
-对于算力 vs 带宽的理论分析，一般使用如上图所示的Roofline Model。
+对于算力 vs 带宽的理论分析，一般使用如上图所示的Roofline Model。Roofline本意是“车顶线”。
 
 https://zhuanlan.zhihu.com/p/34204282
 
@@ -26,6 +26,10 @@ Roofline Model与深度学习模型的性能分析
 https://mp.weixin.qq.com/s/y9dVg9YtfWxu6NcW-fxi6Q
 
 内存带宽与计算能力，谁才是决定深度学习执行性能的关键？
+
+http://llm-viewer.com/
+
+一个分析LLM Model的Roofline的可视化工具
 
 ## NVLink
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度加速（三）——Winograd（3）, NN Quantization（1）
+title:  深度加速（三）——Winograd（3）, 模型压缩与加速
 category: DL acceleration 
 ---
 
@@ -181,132 +181,116 @@ https://zhuanlan.zhihu.com/p/102351953
 
 详解Winograd变换矩阵生成原理
 
-# NN Quantization
+# 模型压缩与加速
 
-![](/images/img3/NN_Quantization.jpg)
+对于AI应用端而言，由于设备普遍没有模型训练端的性能那么给力，因此如何压缩模型，节省计算的时间和空间就成为一个重要的课题。
 
-## 概述
+此外，对于一些较大的模型（如VGG），即使机器再给力，单位时间内能处理的图像数量，往往也无法达到实际应用的要求。这点在自动驾驶和视频处理领域显得尤为突出。
 
-NN的量化计算是近来NN计算优化的方向之一。相比于传统的浮点计算，整数计算无疑速度更快，而NN由于自身特性，对单点计算的精确度要求不高，且损失的精度还可以通过retrain的方式恢复大部分，因此通常的科学计算的硬件（没错就是指的GPU）并不太适合NN运算，尤其是NN Inference。
+## 课程
 
->传统的GPU并不适合NN运算，因此Nvidia也好，还是其他GPU厂商也好，通常都在GPU中又集成了NN加速的硬件，因此虽然商品名还是叫做GPU，但是工作原理已经有别于传统的GPU了。
+https://cs217.github.io/
 
-这方面的文章以Xilinx的白皮书较为经典：
+CS 217: Hardware Accelerators for Machine
 
-https://china.xilinx.com/support/documentation/white_papers/c_wp486-deep-learning-int8.pdf
+https://mp.weixin.qq.com/s/RcEPWRxQXv6B4wqLHGyQHg
 
-利用Xilinx器件的INT8优化开展深度学习
+深度神经网络的高效处理:从算法到硬件架构，140页ppt
 
-## IEEE 754
+https://mp.weixin.qq.com/s/yp5gExPzpDiXaGk9oXEMVA
 
-在开始进一步介绍之前，我们首先回顾一下浮点数在硬件上的表示方法。其中最重要的就是IEEE 754标准。
+最新综述：模型压缩与加速
 
-|  | Sign | Exponent | Significand |
-|:--:|:--:|:--:|:--:|
-| FP16 | 1 | 5 | 10 |
-| FP32 | 1 | 8 | 23 |
-| FP64 | 1 | 11 | 52 |
-| FP128 | 1 | 15 | 113 |
-| FP256 | 1 | 19 | 237 |
+https://mp.weixin.qq.com/s/PraNMo4skR-VjEYIIqt1Cw
 
-![](/images/img3/float.jpg)
+深度学习模型压缩与加速综述
 
-目前，clang编译器已经原生支持FP16，但gcc还不行，不过可以用以下项目支持之：
+https://mp.weixin.qq.com/s/Xqc4UgcfCUWYOeGhjNpidA
 
-http://half.sourceforge.net/
+CNN模型压缩与加速算法综述
 
-half - IEEE 754-based half-precision floating point library
+## 复杂度分析
 
-显然，Significand的位数决定Accuracy，而Exponent的位数决定Dynamic Range。
+https://zhuanlan.zhihu.com/p/31575074
 
-上溢：超出所能表示的最大数（$$\to \infty$$）。
+卷积神经网络的复杂度分析
 
-下溢：超出所能表示的最小数（$$\to 0$$）。
+## Network Pruning
 
-除了IEEE 754之外，还有IBM hexadecimal floating point。相比于IEEE 754，IBM格式的Significand位数多一些，而Exponent的位数少一些。
+首先是韩松的两篇论文：
 
-参考：
+《Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding》
 
-https://en.wikipedia.org/wiki/IEEE_754
+《Learning both Weights and Connections for Efficient Neural Networks》
 
-http://blog.codinglabs.org/articles/trouble-of-x86-64-platform.html
+>韩松，清华本科（2012）+Stanford博士（2017）。MIT AP（from 2018）。   
+>个人主页：   
+>https://stanford.edu/~songhan/
 
-x86-64体系下一个奇怪问题的定位
+韩松也是SqueezeNet的二作。
 
-## Microsoft Binary Format
+![](/images/article/nn_compression.png)
 
-MS早期的Basic产品中使用了一种特殊的浮点表示方法，被称作Microsoft Binary Format（1975年）。与后来的浮点标准主要由硬件厂商主导不同，这时的浮点运算还是以软件的形式运行在定点运算单元上。
+韩松论文的中心思想如上图所示。简单来说，就是去掉原有模型的一些不重要的参数、结点和层。
 
-## 浮点数取整
+参数的选择，相对比较简单。参数的绝对值越接近零，它对结果的贡献就越小。这一点和稀疏矩阵有些类似。这种方法一般被称为Weight Pruning。
 
-浮点数取整的方法一般有：
+结点和层的选择，相对麻烦一些，需要通过算法得到不重要的层。删除结点一般被称为Filter Pruning，而删除层则相应的被称作Layer Pruning。
 
-- 截断取整。
+比如可以逐个将每一层50%的参数置零，查看模型性能。对性能影响不大的层就是不重要的。
 
-- 向上/向下取整。
+Weight Pruning需要相关硬件支持跳零操作才能真正加速运算，而Filter/Layer Pruning则无需特殊硬件支持。
 
-- 四舍五入。
+虽然这些参数、结点和层相对不重要，但是去掉之后，仍然会对准确度有所影响。这时可以对精简之后的模型，用训练样本进行re-train，通过残差对模型进行一定程度的修正，以提高准确度。
 
-- 四舍六入五成双，也称为向偶数取整。例子：3.5->4, 4.5->4.
+![](/images/img4/Pruning.png)
 
-一般来说，后两种用的较多，尤其是最后一种。
+此外还有Stripe-Wise Pruning：
 
-## Distiller
+https://mp.weixin.qq.com/s/HohsD57cQtTR5SvuykEDuA
 
-https://nervanasystems.github.io/distiller/index.html
+优图NeurIPS 2020论文，刷新滤波器剪枝的SOTA效果
 
-Intel AI Lab推出的Distiller是一个关于模型压缩、量化的工具包。这里是它的文档，总结了业界主要使用的各种方法。
+还可以看看图森科技的论文：
 
-参考：
+https://www.zhihu.com/question/62068158
 
-https://mp.weixin.qq.com/s/A5ka8evElmcuHdowof7kww
+如何评价图森科技连发的三篇关于深度模型压缩的文章？
 
-Intel发布神经网络压缩库Distiller：快速利用前沿算法压缩PyTorch模型
+图森的思路比较有意思。其中的方法之一，是利用L1规则化会导致结果的稀疏化的特性，制造出一批接近0的参数。从而达到去除不重要的参数的目的。
 
-## Conservative vs. Aggressive
+除此之外，矩阵量化、Kronecker内积、霍夫曼编码、模型剪枝等也是常见的模型压缩方法。
 
-Quantization主要分为两大类：
+---
 
-1."Conservative" Quantization。这里主要指不低于INT8精度的量化。
+彩票假说（ICLR2019会议的best paper）：随机初始化的密集神经网络包含一个初始化的子网，当经过隔离训练时，它可以匹配训练后最多相同迭代次数的原始网络的测试精度。
 
-实践表明，由于NN训练时采用的凸优化算法，其最终结果一般仅是局部最优。因此，即便是两次训练（数据集、模型完全相同，样本训练顺序、参数初始值随机）之间的差异，通常也远大于FP64的精度。所以，一般而言，FP32对于模型训练已经完全够用了。
+https://mp.weixin.qq.com/s/wOaCjSifZqkndaGbst1-aw
 
-FP16相对于FP32，通常会有不到1%的精度损失。即使是不re-train的INT8，通常也只有3%～15%的精度损失。因此这类量化被归为"Conservative" Quantization。其特点是完全采用FP32的参数进行量化，或者在此基础上进行re-train。
+一文带你了解NeurlPS2020的模型剪枝研究
 
-1."Aggressive" Quantization。这里指的是INT4或更低精度的量化。
+## 权值稀疏化实战
 
-这种量化由于过于激进，re-train也没啥大用，因此必须从头训练。而且由于INT4表达能力有限，模型结构也要进行一定的修改，比如增加每一层的filter的数量。
+这里讲一下韩松论文提到的裁剪方法中，最简单的一种——“权值稀疏化“的工程实现细节。以darknet框架为例。
 
-## INT量化
+1.在src/parser.c中找到save_XXX_weights函数。判断权值是否接近0，如果是，则强制设为0。
+
+2.使用修改后的weights进行re-train。训练好之后，重复第1、2步。
+
+3.反复多次之后，进入最终prune阶段。修改src/network.c:update_network，令其不更新0权值。
+
+>re-train时的learning rate一般不宜太大。如果出现re-train的效果，还不如直接prune的好，则多半是learning rate设置的问题。
+
+一般采用稀疏化率来描述权值的稀疏化程度。每层的稀疏化率可以相同，也可以不同。前者被称作Magnitude Pruner，而后者被称作Sensitivity Pruner。
+
+权值稀疏化的设置也和网络结构有关。比如分类网络，由于输入图片是高维数据，而分类结果是低维数据，因此在稀疏化处理的时候，**越靠近输出结果的Layer，其稀疏化程度就可以越高。**而最初的几层，即使只加少量稀疏化，也会导致精度的大幅下降，这时往往就不做或者少做稀疏化处理了。
+
+上述方法的问题在于，分类网络的计算量主要集中在最初几层，所以这种triangle prune mode对于压缩计算量的效果一般。
+
+除了训练后的权值稀疏化之外，权值稀疏化训练也是一种方法。
 
 论文：
 
-《On the efficient representation and execution of deep acoustic models》
+《FLOPs as a Direct Optimization Objective for Learning Sparse Neural Networks》
 
-![](/images/img2/INT8.png)
-
-一个浮点数包括底数和指数两部分。将两者分开，就得到了一般的INT量化。
-
-量化的过程一般如下：
-
-1.使用一批样本进行推断，记录下每个layer的数值范围。
-
-2.根据该范围进行量化。
-
-量化的方法又分为两种：
-
-1）直接使用浮点数表示中的指数。也就是所谓的fractional length，相当于2的整数幂。
-
-2）使用更一般的scale来表示。这种方式的精度较高，但运算量稍大。
-
-量化误差过大，一般可用以下方法减小：
-
-1.按照每个channel的数值范围，分别量化。
-
-2.分析weight、bias，找到异常值，并消除之。这些异常值通常是由于死去的神经元所导致的误差无法更新造成的。
-
-如何确定每个layer的数值范围，实际上也有多种方法：
-
-1.取整批样本在该layer的数值范围的并集，也就是所有最大（小）值的极值。
-
-2.取所有最大（小）值的平均值。
+这篇论文，将计算量也就是FLOPs作为Loss function设计的一部分，由于稀疏化的权值没有运算量，因此，采用这种Loss训练出的网络，天生就是稀疏化的。

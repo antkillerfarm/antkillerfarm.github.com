@@ -51,6 +51,18 @@ $$\text{FFN}(x) = \text{ReLU}(xW_1)W_2$$
 
 它本质上是一个升维又降维的过程。
 
+---
+
+这是LLAMA时代的FFN结构图：
+
+![](/images/img5/FFN_2.png)
+
+在这里，Batch Norm被换成了速度更快的RMS Norm，ReLU被换成了GLU或者它的变种。GLU参见[这里](/dl/2017/06/23/Deep_Learning_8.html#glu)。
+
+---
+
+参考：
+
 https://zhuanlan.zhihu.com/p/685943779
 
 聊一聊Transformer中的FFN

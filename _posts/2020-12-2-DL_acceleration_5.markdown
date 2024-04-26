@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度加速（七）——硬件加速技巧
+title:  深度加速（五）——硬件加速技巧, 模型优化工具
 category: DL acceleration 
 ---
 
@@ -8,128 +8,6 @@ category: DL acceleration
 {:toc}
 
 # 知识蒸馏（续）
-
-## 参考
-
-https://github.com/dkozlov/awesome-knowledge-distillation
-
-知识蒸馏从入门到精通
-
-https://zhuanlan.zhihu.com/p/24894102
-
-《Distilling the Knowledge in a Neural Network》阅读笔记
-
-https://luofanghao.github.io/blog/2016/07/20/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%20%E3%80%8ADistilling%20the%20Knowledge%20in%20a%20Neural%20Network%E3%80%8B/
-
-论文笔记《Distilling the Knowledge in a Neural Network》
-
-http://blog.csdn.net/zhongshaoyy/article/details/53582048
-
-蒸馏神经网络
-
-https://mp.weixin.qq.com/s/QZ7PGvi27LiDOJaxici7Pw
-
-数据蒸馏Dataset Distillation
-
-https://mp.weixin.qq.com/s/vGTqHif48O2GZhuxWFhOLw
-
-知识蒸馏总结、应用与扩展（2015-2019）
-
-https://zhuanlan.zhihu.com/p/24337627
-
-深度压缩之蒸馏模型
-
-https://mp.weixin.qq.com/s/xcd9CHgE2_vEXrQ4MK019Q
-
-知识蒸馏方法的演进历史综述
-
-https://zhuanlan.zhihu.com/p/265906295
-
-知识蒸馏：如何用一个神经网络训练另一个神经网络
-
-https://mp.weixin.qq.com/s/qE1makMUIaFNrWk4nqOxDw
-
-最新《知识蒸馏》2020综述论文，30页pdf，悉尼大学
-
-https://zhuanlan.zhihu.com/p/51563760
-
-知识蒸馏（Knowledge Distillation）最新进展（一）
-
-https://zhuanlan.zhihu.com/p/53864403
-
-知识蒸馏（Knowledge Distillation）最新进展（二）
-
-https://zhuanlan.zhihu.com/p/81467832
-
-知识蒸馏（Knowledge Distillation）简述（一）
-
-https://mp.weixin.qq.com/s/pXoENwz4Z-eok9y3P9rQvg
-
-知识蒸馏（Knowledge Distillation）简述（二）
-
-https://zhuanlan.zhihu.com/p/102038521
-
-知识蒸馏(Knowledge Distillation) 经典之作
-
-https://zhuanlan.zhihu.com/p/92166184
-
-知识蒸馏简述（一）
-
-https://zhuanlan.zhihu.com/p/92269636
-
-知识蒸馏简述（二）
-
-http://coderskychen.cn/2019/02/23/distilling/
-
-知识蒸馏三部曲：从模型蒸馏、数据蒸馏到任务蒸馏
-
-https://mp.weixin.qq.com/s/5_qgj33tyVTHivpXkU4LDw
-
-一个知识蒸馏的简单介绍
-
-https://zhuanlan.zhihu.com/p/93287223
-
-从入门到放弃：深度学习中的模型蒸馏技术
-
-https://zhuanlan.zhihu.com/p/113549023
-
-浅谈知识蒸馏方法研究综述
-
-https://mp.weixin.qq.com/s/mFuxCl0Mzv5hmDFewWZkrw
-
-FAIR&MIT提出知识蒸馏新方法：数据集蒸馏
-
-https://mp.weixin.qq.com/s/MDgqSwVEClNqNpaWuGTEpg
-
-微软亚研院提出用于语义分割的结构化知识蒸馏
-
-https://blog.csdn.net/xbinworld/article/details/83063726
-
-知识蒸馏（Distilling the Knowledge in a Neural Network），在线蒸馏
-
-https://mp.weixin.qq.com/s/ekKg46bQlWrlg9Hon01M5g
-
-Hinton胶囊网络后最新研究：用“在线蒸馏”训练大规模分布式神经网络
-
-https://mp.weixin.qq.com/s/SqxooZqSeD3wA4EFK5D3Kg
-
-再生神经网络：利用知识蒸馏收敛到更优的模型
-
-https://mp.weixin.qq.com/s/Nkxy0SUdbwIjp5swU6tS9g
-
-深度互学习-Deep Mutual Learning：三人行必有我师
-
-https://mp.weixin.qq.com/s/I08kMmUohWWbYVpPDgTJsw
-
-Startdt AI提出：使用生成对抗网络用于One-Stage目标检测的知识蒸馏方法
-
-https://mp.weixin.qq.com/s/yFyM5OVp1YLKQBlgXeAzhw
-
-华为诺亚方舟实验室提出无需数据网络压缩技术
-
-https://mp.weixin.qq.com/s/0f0aToVaAsU7yWK4xz-HzQ
-
-剪枝量化初完结，蒸馏学习又上线
 
 https://github.com/patrickwaters1000/DistillingNeuralNets
 
@@ -368,3 +246,139 @@ https://mp.weixin.qq.com/s/PMOrY5ZElyPGOVxZgXFVzw
 https://mp.weixin.qq.com/s/Fes8FHngKnL8jklB7DhNCQ
 
 图计算加速架构综述
+
+# 模型优化工具
+
+## Amazon SageMaker Neo
+
+官网：
+
+https://aws.amazon.com/cn/sagemaker/neo/
+
+## 参考
+
+https://mp.weixin.qq.com/s/T9AUFnLjNDUaE9zKmOhbEw
+
+将GEMM的性能提升200倍!AutoKernel算子优化工具正式开源
+
+https://mp.weixin.qq.com/s/L9kYXFXYmKadghAhd-51pA
+
+TensorFlow模型优化工具包—剪枝API
+
+https://mp.weixin.qq.com/s/asPSPeBaRF_4eXcRXU-Zfw
+
+TensorFlow模型优化工具包—训练时量化
+
+https://mp.weixin.qq.com/s/fa5S3o1somvdAAJF1FGqvA
+
+TensorFlow模型优化工具包正式推出
+
+# 模型压缩与加速进阶
+
+https://zhuanlan.zhihu.com/p/138059904
+
+一文看懂深度学习模型压缩和加速
+
+https://zhuanlan.zhihu.com/p/179945324
+
+一文深入深度学习模型压缩和加速
+
+https://mp.weixin.qq.com/s/QSGgvhkMUj3cXVlQwlzTFQ
+
+深度神经网络加速和压缩新进展年度报告
+
+https://zhuanlan.zhihu.com/p/37074222
+
+CVPR 2018 高效小网络探密（上）
+
+https://zhuanlan.zhihu.com/p/37919669
+
+CVPR 2018 高效小网络探密（下）
+
+https://zhuanlan.zhihu.com/p/38046989
+
+从ISCA论文看AI硬件加速的新技巧
+
+https://mp.weixin.qq.com/s/s6Z8P8bUkyoKU2mW3z-rNQ
+
+轻量级网络/检测/分割综述
+
+https://mp.weixin.qq.com/s/-V6hlZAKp1vuARSibZDBQQ
+
+深度学习高效计算与处理器设计
+
+https://mp.weixin.qq.com/s/ccFccLb2UTyFyMwFPjsDaA
+
+让CNN跑得更快，腾讯优图提出全局和动态过滤器剪枝
+
+https://mp.weixin.qq.com/s/cSYCT1I1asaSCIc5Hgu0Jw
+
+计算成本降低35倍！谷歌发布手机端自动设计神经网络MnasNet
+
+https://zhuanlan.zhihu.com/p/42474017
+
+MnasNet：终端轻量化模型新思路
+
+https://mp.weixin.qq.com/s/p_qdKcQwQ8y_JUw3gQUEnA
+
+谷歌大脑用强化学习为移动设备量身定做最好最快的CNN模型
+
+https://mp.weixin.qq.com/s/OyEIcS5o6kWUu2UzuWZi3g
+
+这么Deep且又轻量的Network，实时目标检测
+
+https://mp.weixin.qq.com/s/8NDOf_8qxMMpcuXIZGJCGg
+
+Google又发大招：高效实时实现视频目标检测
+
+https://mp.weixin.qq.com/s/IxVMMu_7UL5zFsDCcYfzYA
+
+AutoML自动模型压缩再升级，MIT韩松团队利用强化学习全面超越手工调参
+
+https://mp.weixin.qq.com/s/BMsvhXytSy2nWIsGOSOSBQ
+
+自动生成高效DNN，适用于边缘设备的生成合成工具FermiNets
+
+https://mp.weixin.qq.com/s/nEMvoiqImd0RxrskIH7c9A
+
+仅17KB、一万个权重的微型风格迁移网络！
+
+https://mp.weixin.qq.com/s/pc8fJx5StxnX9it2AVU5NA
+
+基于手机系统的实时目标检测
+
+https://mp.weixin.qq.com/s/6wzmyhIvUVeAN4Xjfhb1Yw
+
+论文解读：Channel pruning for Accelerating Very Deep Neural Networks
+
+https://mp.weixin.qq.com/s/-X7NYTzOzljzOaQL7_jOkw
+
+惊呆了！速度高达15000fps的人脸检测算法！
+
+https://mp.weixin.qq.com/s/Faej1LKqurtwEIreUVJ0cw
+
+普林斯顿新算法自动生成高性能神经网络，同时超高效压缩
+
+https://mp.weixin.qq.com/s/uK-HasmiavM3jv6hNRY11A
+
+深度梯度压缩：降低分布式训练的通信带宽
+
+https://mp.weixin.qq.com/s/_MDbbGzDOGHk5TBgbu_-oA
+
+中大商汤等提出深度网络加速新方法，具有强大兼容能力
+
+https://mp.weixin.qq.com/s/gbOmpP7XO1Hz_ld4iSEsrw
+
+三星提出移动端神经网络模型加速框架DeepRebirth
+
+https://mp.weixin.qq.com/s/rTFLiZ7DCo6vzD5O64UnMQ
+
+阿里提出新神经网络算法，压缩掉最后一个比特
+
+https://mp.weixin.qq.com/s/m9I5TM9uJcgZvMusO667OA
+
+5MB的神经网络也高效，Facebook新压缩算法造福嵌入式设备
+
+https://mp.weixin.qq.com/s/FFs0-ROvbXSAIOspW_rMbw
+
+超越MobileNetV3！谷歌大脑提出MixNet轻量级网络
