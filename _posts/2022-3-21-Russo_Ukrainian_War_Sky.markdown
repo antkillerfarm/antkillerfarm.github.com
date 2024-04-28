@@ -276,3 +276,11 @@ https://zhuanlan.zhihu.com/p/653596030
 https://zhuanlan.zhihu.com/p/685232548
 
 战略意图与军事能力——详析2024年的俄乌战争前景
+
+https://zhuanlan.zhihu.com/p/603456303
+
+乌克兰人力分析（2023年2月）
+
+https://zhuanlan.zhihu.com/p/694875148
+
+乌克兰人力分析--2024年4月27日版

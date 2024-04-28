@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度语音识别（四）——语音合成参考资源, AMD
+title:  深度语音识别（四）——语音合成参考资源, AMD, ARM
 category: speech 
 ---
 
@@ -352,3 +352,21 @@ https://www.zhihu.com/question/593343983
 https://zhuanlan.zhihu.com/p/651797296
 
 通过“最差实践”实验探索AMD GPU调度细节
+
+# ARM
+
+ARM的CPU主要有以下系列：
+
+- Neoverse：主打服务器领域。
+- Cortex R：实时系统。
+- Cortex-M：嵌入式微控制器。
+- Cortex-A：主流领域。
+- Cortex-X：自从ARM在Cortex A77发布后，ARM就再也无法在保持PPA均衡的基础上继续显著的年化性能提升。因此，ARM从那个时候就开辟了一条全新的Cortex X产品线，依靠牺牲一部分成本和功耗，换取性能提升的余地，并朝着苹果的A系列追逐。
+
+https://www.zhihu.com/tardis/zm/art/537029274
+
+ARM次世代核心Cortex X3/A715/A510简评：降本增效，问题依旧
+
+https://zhuanlan.zhihu.com/p/694560307
+
+麒麟9010微架构评测：轻舟已过万重山
