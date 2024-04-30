@@ -9,6 +9,24 @@ category: Russo Ukrainian War Sky
 
 # 俄乌战争
 
+## 基辅战役（续）
+
+https://zhuanlan.zhihu.com/p/562116675
+
+乌克兰真理报长篇: 二月最长的三天，一场谁都没料到的大战的开端
+
+https://zhuanlan.zhihu.com/p/631336824
+
+乌克兰真理报:那一天，224
+
+https://zhuanlan.zhihu.com/p/620001957
+
+忆苦思甜之基辅大饺子
+
+https://zhuanlan.zhihu.com/p/681298950
+
+生于基辅，死于基辅
+
 ## 马里乌波尔战役
 
 本节包括马里乌波尔战役以及亚速营的故事。
