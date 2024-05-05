@@ -245,6 +245,10 @@ https://mp.weixin.qq.com/s/fzadP8NwPTxuhEB0O4GU8g
 
 # VQ-VAE
 
+![](/images/img5/VQ_VAE.avif)
+
+VQ-VAE提出的codebook机制，相对于原始VAE，仅有均值方差作为描述分布的属性而言，无疑是丰富了一大截，AIGC的表现力也因此上升了一大截。该机制也为后来的Stable Diffusion等所采纳。
+
 https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
 
 面向无监督任务：DeepMind提出神经离散表示学习生成模型VQ-VAE
@@ -256,6 +260,10 @@ https://mp.weixin.qq.com/s/GJr-YtV84eV1KbkyVSkcBA
 https://zhuanlan.zhihu.com/p/91434658
 
 VQ-VAE解读
+
+https://zhuanlan.zhihu.com/p/633744455
+
+轻松理解VQ-VAE：首个提出codebook机制的生成模型
 
 # VAE参考资源
 
@@ -326,35 +334,3 @@ https://mp.weixin.qq.com/s/CSx7dnqPjVDAvM6ena-FTw
 https://mp.weixin.qq.com/s/XMLYjw_wN-M8jluczkbcyw
 
 一种考虑缓和KL消失的简单VAE训练方法
-
-https://mp.weixin.qq.com/s/0coPJFrW7anW7QuqjPBt3g
-
-深度生成模型在信号处理领域的应用
-
-https://mp.weixin.qq.com/s/3ZHlWlO0FdnQTnskcrz2IA
-
-生成式模型入门：训练似然模型的技巧
-
-https://mp.weixin.qq.com/s/KtKYk08xEqwA43Phxw2-_w
-
-基于自编码器的通用性文本表征
-
-https://mp.weixin.qq.com/s/hwb3eRWbwa9weCWz1ypOxw
-
-VAE系解纠缠：从VAE到βVAE，再到β-TCVAE
-
-https://mp.weixin.qq.com/s/yB7tq2vcBpVBnM-j9PgRsw
-
-人脸合成效果媲美StyleGAN，而它是个自编码器
-
-https://mp.weixin.qq.com/s/J59d1K5WX-wnzhws3k60AQ
-
-万字长文带你了解变分自编码器VAEs
-
-https://mp.weixin.qq.com/s/g-OPU4vp66HWcpqjdD2bBg
-
-使用PyTorch从理论到实践理解变分自编码器VAE
-
-https://mp.weixin.qq.com/s/8zi0JrloxuRdHcRm1dzCEQ
-
-利用VAE和LSTM生成时间序列

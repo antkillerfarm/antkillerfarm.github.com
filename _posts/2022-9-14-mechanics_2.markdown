@@ -193,6 +193,20 @@ https://zhuanlan.zhihu.com/p/64458139
 
 ---
 
+T字型剃须刀的发明人吉列。
+
+往复式剃须刀是博朗发明的，半个世纪之前，博朗史无前例地将震动刀具和超薄坚韧的钢膜组合在一起。
+
+---
+
+![](/images/img5/power.jpg)
+
+https://www.zhihu.com/question/511712117
+
+储能水电站的效率据说能达到80%，即抽水用电1度，用水的势能发电能有0.8度，真有这么高的效率吗？
+
+---
+
 https://mp.weixin.qq.com/s/KuIf0oIkLjMTKp2FgAnpyA
 
 一口气做出12只同款雪糕，强迫症都被食物加工流水线治好了
@@ -276,27 +290,3 @@ https://mp.weixin.qq.com/s/mCczfjhbGj6u177fxQH6Yg
 https://mp.weixin.qq.com/s/yLfcBRWodQTjk1AvHuZONw
 
 外形妖孽的MTs-3运动手枪，因为性能太好被国际射联禁用
-
-https://mp.weixin.qq.com/s/mOdJm812AbRDA0M-8odW3w
-
-跑步机原型竟然是十九世纪的刑具！来扒一扒跑步机的黑历史…
-
-https://www.zhihu.com/question/56689494
-
-如何正确评价美军二战时的谢尔曼坦克？
-
-https://zhuanlan.zhihu.com/p/451794381
-
-二战中敌我双方都给予很高评价的追猎者坦克歼击车
-
-https://mp.weixin.qq.com/s/QjuQgjChunKm8O8N86GZGQ
-
-让机器帮人砌堵墙怎么那么难？这是人类的百年奋斗史
-
-https://mp.weixin.qq.com/s/010SPkEVV4e7f5MIoiL6xA
-
-《狙击手》预告不相信重机枪能打狙击？中国人要自信！
-
-https://www.zhihu.com/zvideo/1449458713610919936
-
-坦克的工作原理是这样的

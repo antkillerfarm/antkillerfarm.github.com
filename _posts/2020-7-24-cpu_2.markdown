@@ -181,6 +181,8 @@ BGA封装，就是那种引脚都在芯片背面的封装。QFP封装，即四�
 
 ### 先进封装
 
+盛合是华为合作体系的厂商，完成华为昇腾和鲲鹏芯片的先进封装；通富微曾经也是长电/中芯的合作工厂，但如今是华为主导。两家都从事Chiplet封装，兼顾包括前道interposer的生产。
+
 CoWoS（Chip-on-Wafer-on-Substrate）
 
 TSV（Through Silicon Via）
@@ -196,6 +198,10 @@ https://zhuanlan.zhihu.com/p/586478535
 https://mp.weixin.qq.com/s/FVcmCvimpoGCtCtm4RDtUg
 
 浅谈先进封装技术
+
+https://www.zhihu.com/question/652833460
+
+中国可以自主实现CoWoS封装吗？国产CoWoS先进封装工艺发展到哪一步了？
 
 ### 参考
 

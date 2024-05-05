@@ -136,7 +136,7 @@ ul.category span {
   width: 65em;
   margin: 3em auto 2em auto;
   line-height: 1.5em;
-  margin-left: 15em;
+  /* margin-left: 15em; */
 }
 
 .title {
@@ -207,6 +207,10 @@ pre {
   border: 2px solid #ddd;
   background-color: #000;
   padding: 0 .4em;
+}
+
+#post{
+  margin-left: 15em;
 }
 
 #post ul,
@@ -330,7 +334,7 @@ img {
   position: fixed;
   overflow: auto;
   z-index: 1;
-  top: 0;
+  top: 5em;
   left: 0;
   word-wrap: break-word;
   text-align: left;

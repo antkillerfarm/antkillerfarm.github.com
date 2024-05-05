@@ -151,6 +151,10 @@ https://zhuanlan.zhihu.com/p/692209522
 
 暴论：俄军坦克库存还能撑多久？
 
+https://zhuanlan.zhihu.com/p/690903957
+
+俄乌战场坦克型号识别速通小课
+
 ---
 
 APC-Armored personnel carriers--装甲人员输送车

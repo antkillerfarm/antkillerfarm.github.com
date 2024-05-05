@@ -295,6 +295,19 @@ https://mp.weixin.qq.com/s/pPl-anyQnFNFkmBlVsrBpA
 
 ---
 
+Tomohiko Sakamoto算法：
+
+```c
+int dayofweek(int y, int m, int d) /* 0 = Sunday */
+{
+    int t[]= {0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4};
+    y -= m < 3;
+    return (y + y/4 - y/100 + y/400 + t[m-1] + d) % 7;
+}
+```
+
+---
+
 https://www.zhihu.com/question/623575952
 
 算法复杂度为什么经常不考虑系数?
@@ -366,23 +379,3 @@ https://blog.csdn.net/simpsonk/article/details/72832959
 https://mp.weixin.qq.com/s/SIsNagNKudVUFPKyCaUYCw
 
 Treap——堆和二叉树的完美结合，性价比极值的搜索树
-
-https://blog.csdn.net/yishizuofei/article/details/81660841
-
-多路查找树：2-3树、2-3-4树、B树、B+树、B*树、R树
-
-https://mp.weixin.qq.com/s/D9kdAPws1XXZUyd0IKUzyw
-
-理解B+树
-
-https://mp.weixin.qq.com/s/l08OYNlTxDKGEQnULjPV6g
-
-你管这破玩意叫B+树?
-
-https://mp.weixin.qq.com/s/8gDVqlywLBl-MZa6XrtXug
-
-为什么磁盘存储引擎用b+树来作为索引结构？
-
-https://mp.weixin.qq.com/s/M5syxE9Ln4UDLThPh5iuJg
-
-各种字符串Hash函数比较
