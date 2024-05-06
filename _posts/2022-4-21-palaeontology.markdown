@@ -279,6 +279,22 @@ https://www.zhihu.com/question/375319488
 
 为什么史前会下几百万年的大雨?（卡尼期洪积事件）
 
+https://mp.weixin.qq.com/s/ObXei6tym0fygokKErXdqA
+
+居然在冰箱里发现了蟑螂……于是我研究了蟑螂的祖宗十八代
+
+https://zhuanlan.zhihu.com/p/43472599
+
+为什么现在的动物不如恐龙那样巨大？
+
+https://zhuanlan.zhihu.com/p/44327021
+
+狗比狮子大，熊赛两层楼，百万年前看地球——可怕！
+
+https://mp.weixin.qq.com/s/mPVQB9N58wxuOHxT-GWNlg
+
+猛犸象：吃便便，要从娃娃抓起
+
 # 机械+
 
 https://mp.weixin.qq.com/s/mOdJm812AbRDA0M-8odW3w

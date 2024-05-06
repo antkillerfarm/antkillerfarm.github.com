@@ -35,6 +35,12 @@ https://www.cnblogs.com/wishchin/p/9199835.html
 
 C++11：using的各种作用
 
+---
+
+https://zhuanlan.zhihu.com/p/672646425
+
+`[[fallthrough]]`, `[[nodiscard]]`, `[[maybe_unused]]`, 和 `[[deprecated]]` 新属性的使用
+
 # 动态链接
 
 这两天实践了一下怎样在linux下创建动态链接。感觉网上的资料虽然翔实，但仍然有疏漏之处。

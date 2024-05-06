@@ -327,3 +327,13 @@ Google推出的一个CPU SIMD的计算库。
 官网：
 
 https://github.com/google/highway
+
+## HSL Mathematical Software Library
+
+HSL是最古老的数学计算库，始于1963年。
+
+官网：
+
+https://www.hsl.rl.ac.uk/catalogue/index.html
+
+由于历史悠久，该项目基本是用fortran编写的。

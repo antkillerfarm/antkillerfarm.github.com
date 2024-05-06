@@ -190,6 +190,14 @@ IA是每行的非零元素在A的offset（类似于文件操作中的游标）�
 
 比较知名的Optimizer软件有：CPlex, Gurobi, Mosek, cvx, LINGO。
 
+GLPK（GNU Linear Programming Kit）:
+
+https://www.gnu.org/software/glpk/
+
+Ipopt（Interior Point OPTimizer）：
+
+https://coin-or.github.io/Ipopt/
+
 参考：
 
 https://mp.weixin.qq.com/s/kdfGUzY6KnI3tpcDg0GX6w
@@ -211,6 +219,10 @@ XPROG: 简单实用的鲁棒优化(RO, DRO)编程语言
 https://mp.weixin.qq.com/s/wJAt-RqmsoyECLGgdlH6RA
 
 基于数据的分布式鲁棒优化算法及其应用
+
+https://zhuanlan.zhihu.com/p/480729614
+
+优化模型建模语言Pyomo入门教程
 
 # Zookeeper
 

@@ -7,6 +7,28 @@ category: math
 * toc
 {:toc}
 
+# 核弹当量问题（续）
+
+https://futureoflife.org/background/us-nuclear-targets/
+
+美国核弹目标清单（1959年）
+
+https://nuclearsecrecy.com/nukemap/
+
+一个核弹效果的评估网站
+
+https://nuclearsecrecy.com/missilemap/
+
+上述网站还有一个评估导弹的网页
+
+https://www.zhihu.com/question/36188584
+
+“大伊万”到底有多强？
+
+https://baijiahao.baidu.com/s?id=1672436291069334638
+
+纳粹德国为什么没有造出原子弹？就因为这个醉汉（醉汉回家问题）
+
 # 随机过程
 
 ## 随机变量序列的收敛性

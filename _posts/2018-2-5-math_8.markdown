@@ -50,6 +50,26 @@ z = z^2 + c
 | +strong convexity | $$\frac{1}{k}$$ | $$\frac{1}{k}$$ |
 | +smoothness and strong convexity | $$\exp^{-k}$$ | $$\exp^{-k}$$ |
 
+## KAN
+
+Kolmogorov-Arnold representation theorem：
+
+$$f(x) = f(x_1,...,x_n)=\sum_{q=1}^{2n+1}\Phi_q(\sum_{p=1}^n \phi_{q,p}(x_p))$$
+
+KART是另一类函数逼近的方法。
+
+![](/images/img5/KAN.png)
+
+>Vladimir Igorevich Arnold，1937～2010，俄国数学家。莫斯科大学博士（1963），导师Kolmogorov。俄罗斯科学院院士，斯塔克罗夫数学研究所研究员。
+
+https://www.zhihu.com/question/654782153
+
+如何看待新网络架构KAN，它是否能取代MLP？
+
+https://zhuanlan.zhihu.com/p/33570218
+
+阿诺德：从“低能儿”到“奇异数学家”
+
 ## 参考
 
 https://www.zhihu.com/question/32201415
@@ -238,23 +258,3 @@ https://mp.weixin.qq.com/s/V5gymAXJBMmN0Nqbwte2hQ
 ![](/images/img4/w88.jpg)
 
 原子弹称为“一相弹”，只有铀235，氢弹“双相弹”，核裂变加核聚变，威力更大，三相弹就是氢弹外面再包一层铀238，这玩意便宜，在氢弹爆炸产生的极端环境下可以裂变，还产生大量核污染。
-
-https://futureoflife.org/background/us-nuclear-targets/
-
-美国核弹目标清单（1959年）
-
-https://nuclearsecrecy.com/nukemap/
-
-一个核弹效果的评估网站
-
-https://nuclearsecrecy.com/missilemap/
-
-上述网站还有一个评估导弹的网页
-
-https://www.zhihu.com/question/36188584
-
-“大伊万”到底有多强？
-
-https://baijiahao.baidu.com/s?id=1672436291069334638
-
-纳粹德国为什么没有造出原子弹？就因为这个醉汉（醉汉回家问题）

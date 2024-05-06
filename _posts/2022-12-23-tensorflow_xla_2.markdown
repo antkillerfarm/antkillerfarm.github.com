@@ -272,6 +272,22 @@ xla.cpu.IrEmitter，将xla.HloModule中的每个xla.HloComputation转化为llvm 
 
 xla.DfsHloVisitorBase会遍历整个Cluster。
 
+## Binary Cache
+
+NV的Binary被保存为.ptx文件，其调用的stack大致如下：
+
+```cpp
+Service::BuildExecutable
+GpuCompiler::RunBackend
+GpuCompiler::CompileToBackendResult
+GpuCompiler::CompileModuleToLlvmIr
+GpuCompiler::CompileToTargetBinary
+GpuCompiler::CompileSingleModule
+NVPTXCompiler::CompileTargetBinary
+```
+
+保存文件的名字，使用xla::FilenameFor函数获得，其实就是hlo module的ID。
+
 ## Other
 
 XLA在内的主流深度学习框架，都是基于Static Shape语义的编译器框架。即，just-in-time运行的编译器，会在运行时捕捉待编译子图的实际输入shape组合，并且为每一个输入shape组合生成一份编译结果。

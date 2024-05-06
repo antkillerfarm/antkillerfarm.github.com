@@ -115,7 +115,7 @@ ul.category {
 
 ul.category li {
   line-height: 1.75em;
-} 
+}
 
 ul.category span {
   color: #aaa;
@@ -209,8 +209,10 @@ pre {
   padding: 0 .4em;
 }
 
-#post{
-  margin-left: 15em;
+#post {
+  @media (max-width: 100em) {
+    margin-left: 15em;
+  }
 }
 
 #post ul,
@@ -329,7 +331,7 @@ img {
 }
 
 #markdown-toc {
-  height: 100%;
+  height: 80%;
   width: 10em;
   position: fixed;
   overflow: auto;
