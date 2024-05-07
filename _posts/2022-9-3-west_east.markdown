@@ -230,3 +230,7 @@ https://mp.weixin.qq.com/s/57YtRUOxB0BShJSvDbNgzg
 https://mp.weixin.qq.com/s/kLNY1CWqSgt_VyC7SQZRlw
 
 42所双一流大学校长情况简介（2019年）
+
+https://www.zhihu.com/question/654810677
+
+如何看待河南大学大礼堂火灾？

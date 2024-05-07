@@ -205,6 +205,10 @@ https://www.cnblogs.com/duguguiyu/archive/2007/11/14/959178.html
 
 GC in C++
 
+https://www.mmtk.io
+
+一个给各种语言提供内存管理的库。
+
 # 各类ptr
 
 **auto_ptr**：它允许程序员创建一个指向某种资源的指针对象，当该对象离开它的作用域时，它所指向的资源也会被自动释放。

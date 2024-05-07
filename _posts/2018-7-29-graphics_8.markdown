@@ -7,6 +7,48 @@ category: graphics
 * toc
 {:toc}
 
+# LBP（续）
+
+## 参考
+
+http://blog.csdn.net/smartempire/article/details/23249517
+
+LBP方法
+
+http://blog.csdn.net/dujian996099665/article/details/8886576
+
+LBP算法的研究及其实现
+
+https://mp.weixin.qq.com/s/iFlnZ8z5baUdWCZxIGkq5g
+
+机器学习实战——LBP特征提取
+
+https://mp.weixin.qq.com/s/Kj1enaH_O-vVu3APDDX8sQ
+
+如何在较暗环境进行人脸检测？
+
+# Fisherface
+
+Fisherface由Peter N. Belhumeur, Joao P. Hespanha和David J. Kriegman于1997年提出。
+
+>Peter N. Belhumeur，Brown University本科（1985）+Harvard University博士（1993）,Yale University和Columbia University教授。
+
+>Joao P. Hespanha，Instituto Superior Técnico, Lisbon, Portugal本硕（1991,1993）+ Yale University博士。UCSB教授。
+
+>David J. Kriegman，Princeton University本科（1983）+Stanford University硕博（1984,1989）。UCSD教授。
+
+论文：
+
+《Eigenfaces vs. Fisherfaces: Recognition Using Class Specific Linear Projection》
+
+Eigenfaces的主要原理基于PCA，而Fisherface的主要原理基于LDA（参见《机器学习（三十一）》）。这里不再赘述。
+
+参考：
+
+http://blog.csdn.net/smartempire/article/details/23377385
+
+Fisherface（LDA）
+
 # Viola-Jones
 
 Viola-Jones方法由Paul Viola和Michael Jones于2001年提出。
@@ -244,28 +286,3 @@ $$S_h\left ( x \right )=\left ( y\mid \left ( y-x \right )\left ( y-x \right )^T
 ![](/images/img2/meanshift.png)
 
 首先，在空间中任选一点x（上图中蓝色的圈），以x为圆心，h为半径做一个高维球（上图中蓝色的圆）。计算得到质心（上图中黄色的圈）。移动x到质心，并重复之前的步骤。最终x会收敛到最密集区域的质心。
-
-基本的Mean Shift形式存在一个问题：在$$S_h$$的区域内，每一个点对x的贡献是一样的。而实际上，这种贡献与x到每一个点之间的距离是相关的。同时，对于每一个样本，其重要程度也是不一样的。
-
-到了1995年，Yizong Cheng（现为University of Cincinnati副教授）对基本的Mean Shift算法在以下两个方面做了推广。
-
-首先，定义了一族核函数,使得随着样本与被偏移点的距离不同,其偏移量对均值偏移向量的贡献也不同。
-
-其次，还设定了一个权重系数,使得不同的样本点重要性不一样,这大大扩大了Mean Shift的适用范围。
-
-基于以上的考虑，可对基本的Mean Shift向量形式中增加核函数和样本权重，得到如下的改进的Mean Shift向量形式：
-
-$$M_h\left ( x \right )=\frac{\sum_{i=1}^{n}G_H\left ( x_i-x \right )w\left ( x_i \right )\left ( x_i-x \right )}{\sum_{i=1}^{n}G_H\left ( x_i-x \right )w\left ( x_i \right )}$$
-
-其中：
-
-$$G_H\left ( x_i-x \right )=\left | H \right |^{-\frac{1}{2}}G\left ( H^{-\frac{1}{2}}\left ( x_i-x \right ) \right )$$
-
-G(x)是一个单位的核函数。H是一个正定的对称d×d矩阵，称为带宽矩阵，其是一个对角阵。$$w\left ( x_i \right )\geqslant 0$$是每一个样本的权重。对角阵H的形式为：
-
-$$H=\begin{bmatrix}
-h_1^2 & 0 & \cdots & 0\\ 
-0 & h_2^2 & \cdots & 0\\ 
-\vdots  & \vdots  &  & \vdots \\ 
-0 & 0 & \cdots & h_d^2
-\end{bmatrix}_{d\times d}$$

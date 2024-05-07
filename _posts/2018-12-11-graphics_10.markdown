@@ -1,13 +1,53 @@
 ---
 layout: post
-title:  图像处理理论（十）——Optical flow, Particle filter, 从BOW到SPM, Superpixel
+title:  图像处理理论（十）——Optical flow, Particle filter
 category: graphics 
 ---
 
 * toc
 {:toc}
 
-# Harris（续）
+# Harris
+
+## Harris Corner Detector（续）
+
+其中：
+
+$$M(x,y)=\sum_w \begin{bmatrix}I_x(x,y)^2&I_x(x,y)I_y(x,y) \\ I_x(x,y)I_y(x,y)&I_y(x,y)^2\end{bmatrix} = \begin{bmatrix}\sum_w I_x(x,y)^2&\sum_w I_x(x,y)I_y(x,y) \\\sum_w I_x(x,y)I_y(x,y)&\sum_w I_y(x,y)^2\end{bmatrix}=\begin{bmatrix}A&C\\C&B\end{bmatrix}$$
+
+即：
+
+$$c(x,y;\Delta x,\Delta y)\approx A\Delta x^2+2C\Delta x\Delta y+B\Delta y^2$$
+
+其中：
+
+$$A=\sum_w I_x^2, B=\sum_w I_y^2,C=\sum_w I_x I_y$$
+
+二次项函数本质上就是一个椭圆函数。椭圆的扁率和尺寸是由M(x,y)的特征值$$\lambda_1, \lambda_2$$决定的，轴向是由M(x,y)的特征矢量决定的，如下图所示，椭圆方程为：
+
+$$[\Delta x,\Delta y]M(x,y)\begin{bmatrix}\Delta x \\ \Delta y\end{bmatrix} = 1$$
+
+![](/images/img2/harris_2.png)
+
+椭圆函数特征值与图像中的角点、直线（边缘）和平面之间的关系如下图所示。共可分为三种情况：
+
+**图像中的直线**。一个特征值大，另一个特征值小，$$\lambda_1\gg \lambda_2$$或$$\lambda_2\gg \lambda_1$$。自相关函数值在某一方向上大，在其他方向上小。
+
+**图像中的平面**。两个特征值都小，且近似相等；自相关函数数值在各个方向上都小。
+
+**图像中的角点**。两个特征值都大，且近似相等，自相关函数在所有方向都增大。
+
+![](/images/img2/harris_3.png)
+
+根据二次项函数特征值的计算公式，我们可以求M(x,y)矩阵的特征值。但是Harris给出的角点差别方法并不需要计算具体的特征值，而是计算一个角点响应值R来判断角点。R的计算公式为：
+
+$$R=det \boldsymbol{M} - \alpha(trace\boldsymbol{M})^2$$
+
+式中，$$det\boldsymbol{M}$$为矩阵$$\boldsymbol{M}=\begin{bmatrix}A&B\\B&C\end{bmatrix}$$的行列式；$$trace\boldsymbol{M}$$为矩阵M的直迹；$$\alpha$$为经验常数，取值范围为0.04~0.06。事实上，特征是隐含在$$det\boldsymbol{M}$$和$$trace\boldsymbol{M}$$中，因为，
+
+$$det\boldsymbol{M} = \lambda_1\lambda_2=AC-B^2$$
+
+$$trace\boldsymbol{M}=\lambda_2+\lambda_2=A+C$$
 
 ## Harris角点的性质
 
@@ -132,50 +172,6 @@ https://mp.weixin.qq.com/s?__biz=MzA4MDExMDEyMw==&mid=2247487121&idx=1&sn=c9ac18
 
 OpenCV4中DIS光流算法与应用
 
-# Particle filter
-
-参考：
-
-http://www.cvvision.cn/6002.html
-
-基于粒子滤波器的目标跟踪算法及实现
-
-http://www.cnblogs.com/zjb0823/p/3806333.html
-
-运动目标跟踪算法综述
-
-https://wenku.baidu.com/view/6554ba7402768e9951e73864.html
-
-基于粒子滤波的视频目标追踪
-
-http://www.cnblogs.com/feisky/archive/2009/11/10/1600086.html
-
-粒子滤波概述
-
-http://www.cnblogs.com/yangyangcv/archive/2010/05/23/1742263.html
-
-基于粒子滤波的物体跟踪
-
-https://www.zhihu.com/question/25371476
-
-怎样从实际场景上理解粒子滤波（Particle Filter）？
-
-http://freemind.pluskid.org/machine-learning/hmm-kalman-particle-filtering
-
-漫谈HMM：Kalman/Particle Filtering
-
-https://zhuanlan.zhihu.com/p/26783371
-
-视频跟踪算法之粒子滤波
-
-https://mp.weixin.qq.com/s/NaXpPZBwmmRSANBGIYQgXQ
-
-手把手教你用粒子滤波实现无人车定位
-
-https://zhuanlan.zhihu.com/p/197620177
-
-粒子滤波(Particle Filter, PF)
-
 # TLD
 
 http://blog.csdn.net/zouxy09/article/details/7893011
@@ -225,33 +221,3 @@ http://www.cnblogs.com/dwdxdy/p/3527891.html
 https://www.cnblogs.com/ywsoftware/p/4434074.html
 
 运动目标检测ViBe算法
-
-# 从BOW到SPM
-
-## BOW
-
-Bag-of-words模型是信息检索领域常用的文档表示方法。在信息检索中，BOW模型假定对于一个文档，忽略它的单词顺序和语法、句法等要素，将其仅仅看作是若干个词汇的集合，文档中每个单词的出现都是独立的，不依赖于其它单词是否出现。
-
-为了表示一幅图像，我们可以将图像看作文档，即若干个“视觉词汇”的集合，同样的，视觉词汇相互之间没有顺序。
-
-![](/images/article/cv_bow.jpg)
-
-由于图像中的词汇不像文本文档中的那样是现成的，我们需要首先从图像中提取出相互独立的视觉词汇，这通常需要经过三个步骤：
-
-（1）特征检测。
-
-（2）特征表示。
-
-（3）单词本的生成。
-
-而SIFT算法是提取图像中局部不变特征的应用最广泛的算法，因此我们可以用SIFT算法从图像中提取不变特征点，作为视觉词汇，并构造单词表，用单词表中的单词表示一幅图像。
-
-参考：
-
-http://blog.csdn.net/v_JULY_v/article/details/6555899
-
-SIFT算法的应用--目标识别之Bag-of-words模型
-
-https://zhuanlan.zhihu.com/p/25999669
-
-BOW算法，被CNN打爆之前的王者

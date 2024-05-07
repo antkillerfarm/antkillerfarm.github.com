@@ -11,6 +11,31 @@ category: graphics
 
 ## Meanshift聚类（续）
 
+基本的Mean Shift形式存在一个问题：在$$S_h$$的区域内，每一个点对x的贡献是一样的。而实际上，这种贡献与x到每一个点之间的距离是相关的。同时，对于每一个样本，其重要程度也是不一样的。
+
+到了1995年，Yizong Cheng（现为University of Cincinnati副教授）对基本的Mean Shift算法在以下两个方面做了推广。
+
+首先，定义了一族核函数,使得随着样本与被偏移点的距离不同,其偏移量对均值偏移向量的贡献也不同。
+
+其次，还设定了一个权重系数,使得不同的样本点重要性不一样,这大大扩大了Mean Shift的适用范围。
+
+基于以上的考虑，可对基本的Mean Shift向量形式中增加核函数和样本权重，得到如下的改进的Mean Shift向量形式：
+
+$$M_h\left ( x \right )=\frac{\sum_{i=1}^{n}G_H\left ( x_i-x \right )w\left ( x_i \right )\left ( x_i-x \right )}{\sum_{i=1}^{n}G_H\left ( x_i-x \right )w\left ( x_i \right )}$$
+
+其中：
+
+$$G_H\left ( x_i-x \right )=\left | H \right |^{-\frac{1}{2}}G\left ( H^{-\frac{1}{2}}\left ( x_i-x \right ) \right )$$
+
+G(x)是一个单位的核函数。H是一个正定的对称d×d矩阵，称为带宽矩阵，其是一个对角阵。$$w\left ( x_i \right )\geqslant 0$$是每一个样本的权重。对角阵H的形式为：
+
+$$H=\begin{bmatrix}
+h_1^2 & 0 & \cdots & 0\\ 
+0 & h_2^2 & \cdots & 0\\ 
+\vdots  & \vdots  &  & \vdots \\ 
+0 & 0 & \cdots & h_d^2
+\end{bmatrix}_{d\times d}$$
+
 因此，上述Mean Shift向量也可以改写成：
 
 $$M_h\left ( x \right )=\frac{\sum_{i=1}^{n}G\left ( \frac{x_i-x}{h_i} \right )w\left ( x_i \right )\left ( x_i-x \right )}{\sum_{i=1}^{n}G\left ( \frac{x_i-x}{h_i} \right )w\left ( x_i \right )}$$
@@ -212,41 +237,3 @@ $$I(u+\Delta x,v+\Delta y) = I(u,v)+I_x(u,v)\Delta x+I_y(u,v)\Delta y+O(\Delta x
 其中，$$I_x,I_y$$是图像$$I(x,y)$$的偏导数，则自相关函数可简化为：
 
 $$c(x,y;\Delta x,\Delta y)\approx \sum_w (I_x(u,v)\Delta x+I_y(u,v)\Delta y)^2=[\Delta x,\Delta y]M(x,y)\begin{bmatrix}\Delta x \\ \Delta y\end{bmatrix}$$
-
-其中：
-
-$$M(x,y)=\sum_w \begin{bmatrix}I_x(x,y)^2&I_x(x,y)I_y(x,y) \\ I_x(x,y)I_y(x,y)&I_y(x,y)^2\end{bmatrix} = \begin{bmatrix}\sum_w I_x(x,y)^2&\sum_w I_x(x,y)I_y(x,y) \\\sum_w I_x(x,y)I_y(x,y)&\sum_w I_y(x,y)^2\end{bmatrix}=\begin{bmatrix}A&C\\C&B\end{bmatrix}$$
-
-即：
-
-$$c(x,y;\Delta x,\Delta y)\approx A\Delta x^2+2C\Delta x\Delta y+B\Delta y^2$$
-
-其中：
-
-$$A=\sum_w I_x^2, B=\sum_w I_y^2,C=\sum_w I_x I_y$$
-
-二次项函数本质上就是一个椭圆函数。椭圆的扁率和尺寸是由M(x,y)的特征值$$\lambda_1, \lambda_2$$决定的，轴向是由M(x,y)的特征矢量决定的，如下图所示，椭圆方程为：
-
-$$[\Delta x,\Delta y]M(x,y)\begin{bmatrix}\Delta x \\ \Delta y\end{bmatrix} = 1$$
-
-![](/images/img2/harris_2.png)
-
-椭圆函数特征值与图像中的角点、直线（边缘）和平面之间的关系如下图所示。共可分为三种情况：
-
-**图像中的直线**。一个特征值大，另一个特征值小，$$\lambda_1\gg \lambda_2$$或$$\lambda_2\gg \lambda_1$$。自相关函数值在某一方向上大，在其他方向上小。
-
-**图像中的平面**。两个特征值都小，且近似相等；自相关函数数值在各个方向上都小。
-
-**图像中的角点**。两个特征值都大，且近似相等，自相关函数在所有方向都增大。
-
-![](/images/img2/harris_3.png)
-
-根据二次项函数特征值的计算公式，我们可以求M(x,y)矩阵的特征值。但是Harris给出的角点差别方法并不需要计算具体的特征值，而是计算一个角点响应值R来判断角点。R的计算公式为：
-
-$$R=det \boldsymbol{M} - \alpha(trace\boldsymbol{M})^2$$
-
-式中，$$det\boldsymbol{M}$$为矩阵$$\boldsymbol{M}=\begin{bmatrix}A&B\\B&C\end{bmatrix}$$的行列式；$$trace\boldsymbol{M}$$为矩阵M的直迹；$$\alpha$$为经验常数，取值范围为0.04~0.06。事实上，特征是隐含在$$det\boldsymbol{M}$$和$$trace\boldsymbol{M}$$中，因为，
-
-$$det\boldsymbol{M} = \lambda_1\lambda_2=AC-B^2$$
-
-$$trace\boldsymbol{M}=\lambda_2+\lambda_2=A+C$$

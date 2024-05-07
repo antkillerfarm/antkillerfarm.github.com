@@ -404,3 +404,7 @@ https://zhuanlan.zhihu.com/p/691321169
 https://zhuanlan.zhihu.com/p/693962901
 
 拉夫罗夫：俄乌战争，俄罗斯获胜不符合中国利益
+
+https://zhuanlan.zhihu.com/p/695716136
+
+俄罗斯人从侵略战争中获得了什么？

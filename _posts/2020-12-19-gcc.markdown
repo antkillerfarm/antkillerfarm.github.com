@@ -240,7 +240,7 @@ GDB高级技巧：Linux多线程调试没那么难，可别再用printf了
 
 逆向调试，不是逆向工程的逆向，而是在debug的时候，需要退回到过去，比如还想再看看这个函数是如何计算的，但是又不想重新启动程序，或者重新复现。这里的退回到过去，就是逆向。
 
-gdb提供的reverse debugging比较原始，需要长时间使用才能熟练。rr: record, Replay就是一大杀器，它由 Mozilla开发。
+gdb提供的reverse debugging比较原始，需要长时间使用才能熟练。rr: record, Replay就是一大杀器，它由Mozilla开发。
 
 官网：
 
@@ -311,6 +311,12 @@ https://zhuanlan.zhihu.com/p/37594930
 编译器是如何做测试的
 
 ## 参考
+
+https://github.com/Bill-Haku/kawaii-gcc/
+
+一个修改gcc编译出错信息文本的项目
+
+---
 
 https://zhuanlan.zhihu.com/p/372526494
 

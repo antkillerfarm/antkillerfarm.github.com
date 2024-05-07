@@ -286,6 +286,10 @@ GpuCompiler::CompileSingleModule
 NVPTXCompiler::CompileTargetBinary
 ```
 
+加载：
+
+
+
 保存文件的名字，使用xla::FilenameFor函数获得，其实就是hlo module的ID。
 
 ## Other

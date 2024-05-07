@@ -323,6 +323,18 @@ c++中为什么不提倡使用`vector<bool>`？
 
 ---
 
+```c
+struct Test {
+  int a;
+  int b;
+  char c[0];
+};
+```
+
+Zero-length array不占用结构体的空间，但可以由编译器计算offset，例如上例中指向c的指针，实际上指向了整个结构体的尾部（不含结构体本身）。
+
+---
+
 https://zhuanlan.zhihu.com/p/23016264
 
 这么多款STL，总有一款适合你

@@ -1,15 +1,67 @@
 ---
 layout: post
-title:  图像处理理论（七）——LBP, Fisherface
+title:  图像处理理论（七）——Eigenface, LBP, Fisherface
 category: graphics 
 ---
 
 * toc
 {:toc}
 
+# 霍夫变换（续）
+
+参考：
+
+http://www.cs.jhu.edu/~misha/Fall04/GHT1.pdf
+
+Hough Transform
+
+http://blog.csdn.net/poem_qianmo/article/details/26977557
+
+OpenCV霍夫变换：霍夫线变换，霍夫圆变换合辑
+
+http://blog.csdn.net/tianwaifeimao/article/details/17678669
+
+基于LSD的直线提取算法
+
+https://mp.weixin.qq.com/s/WV78mvRn-cYm11cL4l2ScA
+
+开源、快速、高精度的椭圆检测—你值得拥有！
+
+https://mp.weixin.qq.com/s/QEX46FBulPeGEwdlp469hg
+
+基于霍夫变换进行线检测
+
+https://mp.weixin.qq.com/s/pG-7p74-VGT9JpN-cS3i_Q
+
+南开大学提出深度霍夫变换：语义线检测新方法
+
 # Eigenface
 
-## 计算Eigenface（续）
+Eigenface是M. Turk和A. Pentland于1991年提出的人脸识别算法。
+
+>Matthew A. Turk，Virginia Tech本科（1982）+CMU硕士（1984）+MIT博士（1991）。UCSB教授。
+
+>Alex Paul "Sandy" Pentland，1952年生，MIT博士（1982）。MIT教授。
+
+论文：
+
+《Face recognition using eigenfaces》
+
+## 计算Eigenface
+
+**Step 1**：假设有M张训练照片$$I_1,\dots,I_M$$，每张照片的尺寸为NxN，将照片$$I_i$$转换成1维vector $$\Gamma_i$$。显然，$$\Gamma_i$$的大小是$$N^2$$。
+
+**Step 2**：计算均值vector $$\Psi$$（也就是常说的平均脸（average face/mean face））：
+
+$$\Psi=\frac{1}{M}\sum_{i=1}^M\Gamma_i$$
+
+**Step 3**：计算图片与均值的差：
+
+$$\Phi_i=\Gamma_i-\Psi$$
+
+**Step 4**：计算协方差矩阵：
+
+$$C=\frac{1}{M}\sum_{n=1}^M\Phi_n \Phi_n^T=AA^T(N^2\times N^2 \text{matrix})$$
 
 **Step 5**：计算的$$AA^T$$特征向量$$u_i$$。然而，$$AA^T$$太大了，我们只能退而求其次计算$$A^TA(M\times M \text{matrix})$$的特征向量$$v_i$$。
 
@@ -186,43 +238,3 @@ I的计算方法如下图所示：
 $$\chi_w^2(S,M)=\sum_{i,j}w_j\frac{(S_{i,j}-M_{i,j})^2}{S_{i,j}+M_{i,j}}$$
 
 其中，i为图像的某块小区域，j为小区域内直方图的某一列的值。$$w_j$$是每块小区域的权重，比如在人脸区域中，眼睛、嘴巴等区域包含的信息量更为丰富，那么这些区域的权重就可以设置的大一些。
-
-## 参考
-
-http://blog.csdn.net/smartempire/article/details/23249517
-
-LBP方法
-
-http://blog.csdn.net/dujian996099665/article/details/8886576
-
-LBP算法的研究及其实现
-
-https://mp.weixin.qq.com/s/iFlnZ8z5baUdWCZxIGkq5g
-
-机器学习实战——LBP特征提取
-
-https://mp.weixin.qq.com/s/Kj1enaH_O-vVu3APDDX8sQ
-
-如何在较暗环境进行人脸检测？
-
-# Fisherface
-
-Fisherface由Peter N. Belhumeur, Joao P. Hespanha和David J. Kriegman于1997年提出。
-
->Peter N. Belhumeur，Brown University本科（1985）+Harvard University博士（1993）,Yale University和Columbia University教授。
-
->Joao P. Hespanha，Instituto Superior Técnico, Lisbon, Portugal本硕（1991,1993）+ Yale University博士。UCSB教授。
-
->David J. Kriegman，Princeton University本科（1983）+Stanford University硕博（1984,1989）。UCSD教授。
-
-论文：
-
-《Eigenfaces vs. Fisherfaces: Recognition Using Class Specific Linear Projection》
-
-Eigenfaces的主要原理基于PCA，而Fisherface的主要原理基于LDA（参见《机器学习（三十一）》）。这里不再赘述。
-
-参考：
-
-http://blog.csdn.net/smartempire/article/details/23377385
-
-Fisherface（LDA）

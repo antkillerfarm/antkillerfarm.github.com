@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Hbase, 多维数组的行优先和列优先, 线性代数库
+title:  Hbase, 多维数组的行优先和列优先
 category: AI 
 ---
 
@@ -267,73 +267,3 @@ https://mp.weixin.qq.com/s/S4KDsiwK7FChShUkgjZzjg
 例如：
 
 `f32[8,100,100,4]{3,0,2,1}`，其中`[8,100,100,4]`表示logical dimensions，`{3,0,2,1}`表示minor_to_major。则the most minor index为3，也就是the most minor physical dimension为4。
-
-# 线性代数库
-
-## ATLAS（Automatically Tuned Linear Algebra Soft）
-
-代码：
-
-https://sourceforge.net/projects/math-atlas/
-
-安装：
-
-`sudo apt install libatlas-base-dev`
-
-## OpenBLAS
-
-官网：
-
-http://www.openblas.net/
-
-代码：
-
-https://github.com/xianyi/OpenBLAS
-
->作者：张先轶，北京理工大学本硕（2005年、2007年）+中科院博士（2014年）。PerfXLab（澎峰科技）创始人。   
->个人主页：   
->http://xianyi.github.io/index_cn.htm
-
-OpenBLAS需要gfortran参与编译：
-
-`sudo apt install gfortran`
-
-需要注意gcc的版本和gfortran的版本必须一致。例如，某台机器为了项目需要，没有使用ubuntu默认的gcc版本，这样即使安装了gfortran，也还是不行。最后，安装匹配的gfortran才解决了该问题。
-
----
-
-OpenBLAS前身是日本人后藤和茂（Goto Kazushige）写的GotoBLAS2。这是一个真正的业界传奇。GotoBLAS2已经不再维护，而后继的OpenBLAS，主要还是项目维护而已。
-
-## Armadillo
-
-Armadillo是一个线性代数和科学计算的C++库。
-
-官网：
-
-http://arma.sourceforge.net/
-
-## ensmallen
-
-ensmallen是一个基于Armadillo的数学优化方面的C++库。
-
-官网：
-
-https://ensmallen.org/
-
-## highway
-
-Google推出的一个CPU SIMD的计算库。
-
-官网：
-
-https://github.com/google/highway
-
-## HSL Mathematical Software Library
-
-HSL是最古老的数学计算库，始于1963年。
-
-官网：
-
-https://www.hsl.rl.ac.uk/catalogue/index.html
-
-由于历史悠久，该项目基本是用fortran编写的。

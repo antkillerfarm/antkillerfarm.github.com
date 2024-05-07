@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  图像处理理论（六）——颜色空间, 霍夫变换, Eigenface
+title:  图像处理理论（六）——颜色空间, 霍夫变换
 category: graphics 
 ---
 
@@ -175,7 +175,51 @@ https://mp.weixin.qq.com/s/w2d1lRdQoKCrupJD2S4fDQ
 
 # 颜色空间
 
-## YUV & YCbCr & RGB
+## RGB & CMYK
+
+![](/images/img5/color.jpg)
+
+印刷色和发光色的混合模式是不一样的。
+
+发光色是发射光，可以做加法。如RGB模式。
+
+印刷色是反射光，不能做加法，而要做减法。
+
+印刷业多采用CMYK模式，并使用减色法配色。
+
+人类的视觉基于红绿蓝三种视锥细胞的刺激值。
+
+不同的细胞有不同的刺激函数，长这样：
+
+![](/images/img5/color_2.jpg)
+
+细胞对入射光光谱和自己刺激函数做内积，就得到了刺激值。一个光被三种视锥细胞分别做内积，就得到了XYZ三个刺激值。
+
+我们可以将RGB色系和XYZ色系对应起来得到一个非齐次方程组。
+
+$$
+\begin{align}
+& K_{11}R+K_{12}G+K_{13}B＝X \\
+& K_{21}R+K_{22}G+K_{23}B＝Y \\
+& K_{31}R+K_{32}G+K_{33}B＝Z
+\end{align}
+$$
+
+对于任意XYZ，理论上RGB方程都是有解的，但是，这个解可能是**负数**。
+
+而负的RGB值，意味着像素需要发出能量为负的光。
+
+这是不可能的。所以，RGB只能表示上图三角形内部的颜色，对外部无能为力。
+
+https://www.zhihu.com/question/31212945
+
+世界上(整个自然界)所有颜色都能用RGB组合而成吗？
+
+https://www.zhihu.com/question/624732945
+
+为什么古代紫色稀有？明明蓝红可以调出来?
+
+## YUV & YCbCr
 
 在RGB颜色空间中，红，绿，蓝是基本元素。RGB格式是显示器通常使用的格式。
 
@@ -272,57 +316,3 @@ $$r= x\cos\theta + y\sin\theta$$
 $$(x_{center},y_{center},r)$$
 
 高维parameter space的积分，由于运算量比较大，因此又有霍夫梯度法之类的改进算法。
-
-参考：
-
-http://www.cs.jhu.edu/~misha/Fall04/GHT1.pdf
-
-Hough Transform
-
-http://blog.csdn.net/poem_qianmo/article/details/26977557
-
-OpenCV霍夫变换：霍夫线变换，霍夫圆变换合辑
-
-http://blog.csdn.net/tianwaifeimao/article/details/17678669
-
-基于LSD的直线提取算法
-
-https://mp.weixin.qq.com/s/WV78mvRn-cYm11cL4l2ScA
-
-开源、快速、高精度的椭圆检测—你值得拥有！
-
-https://mp.weixin.qq.com/s/QEX46FBulPeGEwdlp469hg
-
-基于霍夫变换进行线检测
-
-https://mp.weixin.qq.com/s/pG-7p74-VGT9JpN-cS3i_Q
-
-南开大学提出深度霍夫变换：语义线检测新方法
-
-# Eigenface
-
-Eigenface是M. Turk和A. Pentland于1991年提出的人脸识别算法。
-
->Matthew A. Turk，Virginia Tech本科（1982）+CMU硕士（1984）+MIT博士（1991）。UCSB教授。
-
->Alex Paul "Sandy" Pentland，1952年生，MIT博士（1982）。MIT教授。
-
-论文：
-
-《Face recognition using eigenfaces》
-
-## 计算Eigenface
-
-**Step 1**：假设有M张训练照片$$I_1,\dots,I_M$$，每张照片的尺寸为NxN，将照片$$I_i$$转换成1维vector $$\Gamma_i$$。显然，$$\Gamma_i$$的大小是$$N^2$$。
-
-**Step 2**：计算均值vector $$\Psi$$（也就是常说的平均脸（average face/mean face））：
-
-$$\Psi=\frac{1}{M}\sum_{i=1}^M\Gamma_i$$
-
-**Step 3**：计算图片与均值的差：
-
-$$\Phi_i=\Gamma_i-\Psi$$
-
-**Step 4**：计算协方差矩阵：
-
-$$C=\frac{1}{M}\sum_{n=1}^M\Phi_n \Phi_n^T=AA^T(N^2\times N^2 \text{matrix})$$

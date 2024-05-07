@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十八）——RNN进阶, 显著性检测
+title:  深度学习（三十八）——RNN进阶, 显著性检测, 计算机图形学
 category: DL 
 ---
 
@@ -183,52 +183,213 @@ https://mp.weixin.qq.com/s/8QrNvb-1zmrTWo5zThpyvg
 
 U²-Net：使用显著性物体检测来生成真实的铅笔肖像画
 
-# 两弹一星+
+# 计算机图形学
 
-在闵嗣鹤的努力下，北京大学数论方向的人才培养卓有成效，其中潘承洞、潘承彪先生受益于闵嗣鹤的教育，而后他们又培养出张益唐、刘建亚等数论方向的杰出学者。
+## 教程
 
-1969年，闵嗣鹤参加研制当时急需的海上勘探设备——海洋重力仪，这是北京大学数学力学系与北京地质仪器厂的合作科研项目。由于西方禁运，资料缺乏，工作困难很大。设计该设备的理论关键是滤波问题，要在理论上保证所设计的重力仪能成功地从五万倍强噪声背景中提取出有用的微弱信号。他先是完成了“数字滤波的若干分析问题”等研究，最后提出了“契贝谢夫权系数的数字滤波方法”，从理论上解决了设计中的关键问题。由此设计制造出的仪器定名为ZY－I型海洋重力仪，历经5年海上实验于1975年通过国家鉴定，其性能远远优于日本依据3次平均法设计制造的“东京a－1号”，成为我国大面积海洋普查的先进工具。
+《Fundamentals Of Computer Graphics》，Steve Marschner著，中文常称为“虎书”。
 
-https://www.zhihu.com/question/564799818
+《Real–time Rendering》，Tomas Akenine-Moller等著。
 
-数学家张益唐攻克Landau-Siegel零点猜想相关论文发布，如何评价这一研究的成果及意义？
+GPU精粹三部曲：
 
----
+- GPU Gems 1 （2004）
+- GPU Gems 2 （2005）
+- GPU Gems 3 （2006）
+- GPU Pro 1 （2010）
+- GPU Pro 2 （2011）
+- GPU Pro 3 （2012）
+- GPU Pro 4 （2013）
+- GPU Pro 5 （2014）
+- GPU Pro 6 （2015）
+- GPU Pro 7 （2016）
+- GPU Zen （2017）
+- GPU Zen 2 （2019）
 
-武钢说的百亿矿山是在2012两会上吹牛用的，要么入了点股，如澳大利亚威拉拉铁矿只是入了10%的股，要么是小矿山，如拿大魁北克省的Bloom lake矿，全部投产完成只有年千万吨产量。要么是一毛不拔之地，如澳大利亚的艾尔半岛铁矿，加拿大的Lac Otelnuk矿区、Rainy Lake矿区和Hayot Lake矿区都还在前期可行性研究和资源勘探工作。
+GPU Gems列的主编是Randima Fernando。
 
-一直到2010年才拿下利比里亚邦矿65%股权。储量13亿吨，但是品味低，仅有35%，投了巨额资金下去，到2014年才采出第一批矿，但是铁矿石在2013年底开始暴跌，又无心弄二期了，远没有购买澳大利亚高品质的矿来的合算。
+GPU Pro和GPU Zen系列的主编是Wolfgang Engel。他还有如下系列作品：
 
-就算拿到高品质矿也可能底裤赔光，中信泰富的2006年3月底购买的两个澳大利亚铁矿，品质是高，但是在一毛不拔之地，造了公路造管道，造了管道造港口，造了港口造发电厂，造了发电厂又造海水淡化厂，生生造了一座城出来。又加上中冶这个坑货，预算投资42亿美元，最后弄的超百亿美元。废了九牛二虎之力好不容易出矿了，铁矿石暴跌，赔大发了，真是继续开采巨亏，不开采前提投资又打水漂。
+- ShaderX 1 （2002）
+- ShaderX 2 （2003）
+- ShaderX 3 （2004）
+- ShaderX 4 （2006）
+- ShaderX 5 （2006）
+- ShaderX 6 （2008）
+- ShaderX 7 （2009）
 
-中冶2008年收购的澳大利亚兰伯特角铁矿资源19.15亿吨，花了249亿，发现是个磁铁矿，不具备开采价值。鞍钢投资的卡拉拉铁矿也是个磁铁矿。都是眼睛都不长的。
+## 历史
 
-中铝也是坑货，2008次贷危机，必和必拓欠下340亿美元债务，眼看要倒闭了，中铝打着入股名义借给它160亿，必和必拓拿到钱后还了外债，熬过寒冬马上翻脸不认人，不让入股了，中铝仅拿到1亿违约金。
+Ivan Edward Sutherland，1938年生。计算机图形学之父。图灵奖获得者（1988）。
 
-中铝收购必和必拓时合同约定违约金为合同金额的百分之一，如此优惠条件外国人不违约都不好意思，最后一句“交学费”就皆大欢喜啦。
+https://zhuanlan.zhihu.com/p/121868664
 
-宝钢也是一样，2009年度铁矿石议价，由商务部指定中钢协统一谈判，关键时候宝钢来个背刺，跳过中钢协与三大矿达成涨价65%协议，此后价格联盟全线雪崩。
+科学，艺术，天才，一篇计算科学的史诗，一场兑现的资本盛宴
 
-央企对外投资十投九亏，反正糟蹋的不是自己的钱，中饱私囊，澳洲华人亿万富翁倒是暴涨了。
+## PBR
 
-相反，地方和民企对外投资做的更好。
+Physically Based Rendering: From Theory to Implemention
 
-湖南华菱在中铝与FMG谈判失败后，自动找到FMG谈判，最后入股成为第二大股东。此后FMG迅速成长，成为全球第四大铁矿企业，几乎全部的铁矿石都出口中国，华菱不仅获得稳定的铁矿石来源，也获得几十倍的投资回报。
+https://zhuanlan.zhihu.com/p/161950497
 
-青山几乎垄断印尼镍矿开采，开设了4大工业园区，带着几十小弟进入印尼开采各种矿产。
+10分钟了解PBR流程-PBR基本原理和概念
 
----
+https://mp.weixin.qq.com/s/h-vgHkzLjh9AAa6Z0lZqlg
 
-Kyligence CEO韩卿：
+基于物理渲染(PBR)的车漆技术
 
-我毕业后加入的第一家公司叫做：浙大中控（中控集团），一家提供自动化与信息化技术和产品的高科技公司。自动化，非常抽象，说的简单点，化工厂，啤酒厂，水泥厂等流程行业，各个环节的控制不可能靠人工去监控和调节各种参数、温度等，必须有一整套的自动化系统来管理和控制，确保稳定的工艺，及更重要的安全性等。然而，这样一套系统，以前都是被霍尼韦尔等国外巨头垄断，每个化工厂都需要购买，且没有谈判价格的余地。今天，依然记得很清楚，入职培训的时候，负责技术的金总讲过的那些故事。中控在那个年代，做出的第一代产品推销极难，只能在浙江的小厂不断实验和验证，不断的获取客户的信任，不断改进产品和技术。艰苦的几年后终于获得了行业的认可，当有能力做到领先水平的时候，国外巨头却不断降价来封杀来竞争。不过竞争的结果，中控在国内今天是自动化控制行业的龙头，承担863计划，有博士后工作站，不得不说，如果没有中控，作为基础行业的化工等行业在这块的技术极大可能还将被垄断在国外巨头手中。
+## 参考
 
-![](/images/img2/China_USA.jpg)
+https://mp.weixin.qq.com/s/hI9Z3l2eVJxkPbL8zG5uGA
 
----
+图形学基础，427页pdf
 
-纵观我国仿制的国外武器装备，大部分都是在获得部分技术资料的情况下完成的，米格21、苏27、SA-2都是如此，但CH47却只有样品，没有技术资料，甚至连装配图纸都没有，波音也只是邀请中方人员了解B234的技术特性而已。事实上，我国在没有技术资料的情况下仿制成功的美式装备只有仿MK46的鱼7，AlM9B空空导弹还是苏联先行仿制，我国又在其指导下进行的二次仿制。
+https://zhuanlan.zhihu.com/p/430541328
 
-https://www.zhihu.com/question/606852721
+图形学基础篇
 
-支奴干直升机大名鼎鼎，在我国停了48年，为何无法成功仿制呢？
+http://15462.courses.cs.cmu.edu/fall2020/courseinfo
+
+Computer Graphics
+
+https://www.tomlooman.com/stanford-cs193u/
+
+Stanford CS193u: Video Game Development in C++ and Unreal Engine
+
+https://mp.weixin.qq.com/s/oFcqOPQriTgWMvcUGXHlRQ
+
+计算机图形学入门总结
+
+https://www.zhihu.com/column/graphicon
+
+一个图形学方面的专栏
+
+https://github.com/KrisYu/computer-graphics-from-scratch-Notes
+
+一个图形学方面的专栏
+
+https://www.zhihu.com/column/c_1635772272538648576
+
+现代图形引擎入门指南
+
+https://zhuanlan.zhihu.com/p/32095589
+
+在《硬影像》与罗登老师/导演聊渲染技术
+
+https://blog.csdn.net/jaccen2012/article/details/80328043
+
+跨平台渲染引擎简介
+
+https://zhuanlan.zhihu.com/p/163305630
+
+如何判断点在三角形内部
+
+https://www.zhihu.com/column/c_1165601616035618816
+
+一个图形学方面的专栏
+
+https://mp.weixin.qq.com/s/MhGrLydVsbvkhZ5U820zTQ
+
+哈佛小哥这个github仓库从零开始教你计算机图形学
+
+https://mp.weixin.qq.com/s/7SurDN5gvLCEDbxe2gR58w
+
+面向工程师的图像处理，438页pdf
+
+https://www.zhihu.com/question/49812837
+
+256字节3D程序是如何实现3D引擎的呢？
+
+https://zhuanlan.zhihu.com/p/22337544
+
+不只是噪音（Perlin噪音）
+
+https://mp.weixin.qq.com/s/jq4B_4kUOZE8yN5y0u-5yg
+
+万字长文！UCLA蒋陈凡夫12年自我回顾，图形学的终极浪漫
+
+https://zhuanlan.zhihu.com/p/649971173
+
+GPU渲染之路：从图形引擎到内核驱动(一、计算机图形系统概述)
+
+https://zhuanlan.zhihu.com/p/650510512
+
+GPU渲染之路：从图形引擎到内核驱动(二、跨平台引擎层)
+
+https://zhuanlan.zhihu.com/p/651364842
+
+GPU渲染之路：从图形引擎到内核驱动(三、用户态图形驱动层)
+
+https://zhuanlan.zhihu.com/p/650597410
+
+图形学八股
+
+## 术语
+
+Material Point Method（物质点法）
+
+## Taichi
+
+Taichi是胡渊鸣开发的一套计算机图形库。它拥有一套特有的DSL，并可将之编译为能在不同backend硬件上运行程序。
+
+>胡渊鸣，清华本科（2017）+MIT博士（2021）。
+
+官网：
+
+https://taichi.graphics/
+
+代码：
+
+https://github.com/taichi-dev/taichi
+
+胡渊鸣还开发了一个物理模拟方面的自动微分器——DiffTaichi：
+
+https://github.com/yuanming-hu/difftaichi
+
+一个卡门涡街的demo：
+
+https://github.com/hietwll/LBM_Taichi
+
+参考：
+
+https://www.bilibili.com/video/BV1aL4y1a7pv
+
+B站的太极图形课
+
+https://zhuanlan.zhihu.com/p/97700605
+
+99行代码的《冰雪奇缘》
+
+https://mp.weixin.qq.com/s/zPvvf1VptQ1M7iVEcxN-AQ
+
+计算机图形也能自动可微：MIT学神的微分太极框架开源
+
+https://zhuanlan.zhihu.com/p/507362284
+
+99行代码能干啥？造个体素小世界！
+
+https://www.zhihu.com/question/535601383
+
+Taichi和PyTorch有哪些相似和不同？
+
+https://zhuanlan.zhihu.com/p/573894977
+
+用Taichi实现GPU图像处理：从入门到入魔
+
+https://zhuanlan.zhihu.com/p/612102573
+
+Taichi NeRF（上）：不写CUDA也能开发、部署Instant NGP
+
+https://zhuanlan.zhihu.com/p/613679756
+
+Taichi NeRF (下): 关于3D AIGC的务实探讨
+
+## ZENO
+
+https://mp.weixin.qq.com/s/6qtCwJpJ5zu65Wr15e08Lg
+
+皮克斯华人CG老鸟深圳创业！低代码实现好莱坞大片特效
+
+https://zhuanlan.zhihu.com/p/390717137
+
+ZENO：一份不详细的使用说明
