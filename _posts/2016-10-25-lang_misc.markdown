@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  小众语言集中营, boost, C++ Test framework
+title:  小众语言集中营, boost
 category: language 
 ---
 
@@ -205,6 +205,8 @@ Boost.Hana：元编程库，提供异构容器和算法，用于类型和值的�
 
 Boost.Reflection：提供一种运行时反射机制。
 
+Boost.GIL：通用图像库。
+
 ## BGL
 
 Boost Graph Library是boost提供的一个和图论相关的工具库，集成了常见的图操作（如BFS和DFS）和图算法（最短路径、拓朴排序）。
@@ -270,111 +272,3 @@ POCO也是一个C++的网络库。（2004年）
 官网：
 
 https://pocoproject.org/
-
-# C++ Test framework
-
-## boost.test
-
-boost.test是一个C++的单元测试框架。
-
-代码示例：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/cpp/boost_test
-
-要点：
-
-- 测试代码无须main函数。
-
-- 编译：`-DBOOST_TEST_DYN_LINK`
-
-- 链接：`-lboost_unit_test_framework`
-
-打印所有的log：
-
-`unit_test --log_level=all`
-
-参考：
-
-https://www.ibm.com/developerworks/cn/aix/library/au-ctools1_boost/
-
-了解Boost单元测试框架
-
-https://www.ibm.com/developerworks/cn/aix/library/au-ctools2_cppunit/index.html
-
-了解CppUnit
-
-https://www.ibm.com/developerworks/cn/aix/library/au-ctools3_ccptest/
-
-了解CppTest。上面这3篇算是比较权威的C++单元测试工具的教程了，作者都是Arpan Sen。
-
-https://my.oschina.net/vaero/blog/227528
-
-C++单元测试：boost.test
-
-https://remonstrate.wordpress.com/2011/07/06/boost-%e7%9a%84-unit-test/
-
-boost的unit test
-
-## googletest
-
-安装：
-
-`sudo apt install libgtest-dev`
-
-代码：
-
-https://github.com/google/googletest
-
-`gtest_filter`是一个很有用的选项。
-
-示例：
-
-`./foo_test --gtest_filter=FooTest*.*-FooTest.Bar:FooTest2.Bar`
-
-运行所有“测试案例名称(testcase_name)”为FooTest的案例，但是除了FooTest.Bar和FooTest2.Bar。
-
-`-`表示去除，`:`表示并列。
-
-`TEST(FooTest, DISABLED_DoesAbc) { ... }`
-
-去除测试用例。
-
-参考：
-
-https://www.ibm.com/developerworks/cn/aix/library/au-googletestingframework.html
-
-Google C++ Testing Framework简介
-
-https://www.cnblogs.com/coderzh/archive/2009/04/06/1426755.html
-
-玩转Google开源C++单元测试框架Google Test系列(gtest)
-
-## gmock
-
-gmock是google公司推出的一款开源的白盒测试工具。
-
-测试一个模块的时候，可能涉及到和其他模块交互，可以将模块之间的接口mock起来，模拟交互过程。
-
-比如要测试A模块，必过A模块需要调用B模块的函数。如果B模块还没有实现，此时，就可以用gmock将B模块的某些接口打桩。这样就可以让A模块的测试继续进行下去。
-
-gmock目前是googletest的一部分，一般也与后者配合使用。
-
-https://zhuanlan.zhihu.com/p/101906555
-
-googletest-gmock使用示例
-
-## CTest
-
-CTest是CMake集成的一个测试工具。
-
-参考：
-
-https://www.cnblogs.com/457220157-FTD/p/4139149.html
-
-CTest
-
-## doctest
-
-官网：
-
-https://github.com/onqtam/doctest
