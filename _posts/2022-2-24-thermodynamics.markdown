@@ -184,3 +184,7 @@ https://www.zhihu.com/question/490686282
 https://mp.weixin.qq.com/s/TSGqmKKrWsMGT9BeIhoLBw
 
 小国骨气！一生就想要一张毛主席签名照的他，是如何被美国暗杀的？（奥马尔·托里霍斯）
+
+https://www.zhihu.com/answer/3363368237
+
+哥斯达黎加
