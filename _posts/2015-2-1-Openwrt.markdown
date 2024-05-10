@@ -7,9 +7,6 @@ category: linux
 * toc
 {:toc}
 
-
-思科曾有个巨大的失误，就是其终端路由器WRT54G错误地选用了Linux，因GPL协议的原因被迫公布了源代码，这导致所有公司一下子都会做普通路由器了。如果思科当时像苹果MacOS那样，选FreeBSD，恐怕还能多赚很多钱。
-
 # OpenWrt编译
 
 1.下载代码
@@ -254,21 +251,25 @@ lua脚本的根目录。
 
 4.luci.dispatcher.httpdispatch
 
-可参考一下文献:
+---
+
+LuCI2是LuCI的替代品，它主要使用JS替换了lua。
+
+---
+
+参考:
 
 http://www.cnblogs.com/zmkeil/archive/2013/05/14/3078774.html
 
-这篇文章对LuCI的流程有详细的描述。
+Luci实现框架（这篇文章对LuCI的流程有详细的描述。）
 
 http://wiki.openwrt.org/doc/uci
 
 这个是官方的文档。
 
-参考文献
-
 http://www.cnblogs.com/zmkeil/archive/2013/04/17/3027385.html
 
-这篇文章的内容和我写的差不多，可惜没有早看到。。。多走了弯路。
+OpenWRT平台搭建及简单应用（这篇文章的内容和我写的差不多，可惜没有早看到。。。多走了弯路。）
 
 # OpenWrt目录结构粗解
 

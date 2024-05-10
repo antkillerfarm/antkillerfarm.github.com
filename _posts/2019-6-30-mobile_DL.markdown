@@ -69,7 +69,7 @@ https://github.com/Tencent/ncnn
 
 ## TNN
 
-TNN是腾讯新近（2020.6）推出的作品。
+TNN是腾讯2020.6推出的作品。
 
 代码：
 
@@ -92,6 +92,14 @@ MACE是小米的作品。
 代码：
 
 https://github.com/XiaoMi/mace
+
+## XNNPACK
+
+XNNPACK是Google开发的一个高性能、低级别的深度学习推理库，专注于手机和嵌入式设备上的神经网络运算。它充分利用了现代移动处理器的向量指令集，如ARM NEON和Intel AVX。
+
+代码：
+
+https://github.com/google/XNNPACK
 
 ## 百度系
 

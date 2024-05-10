@@ -155,6 +155,10 @@ https://zhuanlan.zhihu.com/p/680647257
 
 ![](/images/img4/t_5.jpg)
 
+https://www.zhihu.com/question/654462871
+
+俄军向民众展示缴获的乌军坦克，此举背后的用意有哪些？
+
 ---
 
 https://zhuanlan.zhihu.com/p/502798862

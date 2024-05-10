@@ -243,6 +243,8 @@ http://wiki.openwrt.org/doc/howto/netfilter
 
 `iptables -I zone_wan_input 4 -p tcp --dport 22 -j ACCEPT # allow SCP on WAN port`
 
+类似的东西还有nftables和一些基于eBPF技术的软件包。
+
 ## 扩展包
 
 大多数情况下，我们并不需要亲手编写OpenWrt模块，因为日常使用中的绝大部分功能，OpenWrt项目都提供了相应的扩展包。因此，如何寻找、安装扩展包，就成为一个经常性的问题。
@@ -277,6 +279,18 @@ TARGET_CFLAGS:= -O0 $(TARGET0_CFLAGS) -ggdb3
 1.filter-out是make提供的过滤函数，可去除字符串A中包含的特定字符串B。
 
 2.定义TARGET0_CFLAGS的原因在于：make不支持变量的递归定义，需要中间变量暂存之。
+
+## 发行版
+
+思科曾有个巨大的失误，就是其终端路由器WRT54G错误地选用了Linux，因GPL协议的原因被迫公布了源代码，这导致所有公司一下子都会做普通路由器了。如果思科当时像苹果MacOS那样，选FreeBSD，恐怕还能多赚很多钱。
+
+---
+
+ImmortalWrt和Lean's LEDE是两个国内比较流行的OpenWRT的发行版。
+
+https://www.zhihu.com/question/635802944
+
+为什么简体中文社交网络上大家更推荐Lean's LEDE而不是官方的OpenWrt主线？
 
 # diff&patch
 

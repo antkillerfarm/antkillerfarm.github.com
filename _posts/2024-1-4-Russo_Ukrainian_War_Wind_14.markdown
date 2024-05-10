@@ -165,6 +165,10 @@ https://zhuanlan.zhihu.com/p/671680600
 
 俄罗斯女记者抱怨军事医院人满为患
 
+https://zhuanlan.zhihu.com/p/674708205
+
+没有300万卢布 俄罗斯伤兵拿到两桶胡萝卜和一袋洋葱补偿
+
 ---
 
 https://mp.weixin.qq.com/s/PUqFEBUN6OaGZjB-ojrMRg

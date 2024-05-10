@@ -352,7 +352,17 @@ Linux下的iwpriv（iwlist、iwconfig）的简单应用
 
 # eBPF
 
-eBPF是一项革命性技术，它能在内核中运行沙箱程序（sandbox programs），而无需修改内核源码或者加载内核模块。
+BPF（Berkely Packet Filter）提供了一种当内核或应用特定事件发生时候，执行一段代码的能力。
+
+这种能力最初被用于TCP包的过滤，正如名字所示，后来也被广泛用于profile领域。
+
+BPF采用了虚拟机指令规范，所以也可以看成是一种虚拟机实现，使我们可以在不修改内核源码和重新编译的情况下，扩展内核的能力。
+
+既然有虚拟机和bytecode，那么也需要相应的编译器了：
+
+官网：
+
+https://github.com/iovisor/bcc
 
 参考：
 
@@ -367,6 +377,18 @@ https://www.ebpf.top/
 https://zhuanlan.zhihu.com/p/659240633
 
 再次实现了一个Lua性能分析器
+
+https://zhuanlan.zhihu.com/p/590881470
+
+万字长文让你深入了解BPF字节码
+
+https://zhuanlan.zhihu.com/p/484788508
+
+一文看懂eBPF：eBPF实现原理
+
+https://zhuanlan.zhihu.com/p/393199226
+
+BPF内部原理
 
 # DTrace
 
