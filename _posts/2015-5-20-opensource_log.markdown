@@ -105,17 +105,17 @@ svn的开端实际上和git是有区别的。这个项目从2000.3.1开始。但
 
 Richard Hipp的其他作品还包括：
 
-Fossil：一个版本控制系统。
-
 https://fossil-scm.org/
 
-Lemon：一个语法解析器。
+Fossil：一个版本控制系统。
 
 https://www.sqlite.org/lemon.html
 
-Althttpd：一个webserver。
+Lemon：一个语法解析器。
 
 https://sqlite.org/althttpd
+
+Althttpd：一个webserver。
 
 ---
 
@@ -124,6 +124,8 @@ https://sqlite.org/althttpd
 原系统是部署是HPUX上面，后端数据库是IBM Informix。Informix数据库对于一个导弹控制系统来说太重型了，而且升级部署容易出问题。特别是爱在关键时刻“lost connection”，这要是在战场上，那不要了一船人的命了？
 
 于是理查德考虑直接把一部分数据缓存在本地，而不是放在数据库，提升系统稳定性的同时还能提升性能。
+
+SQLite源码有15多万行，但测试代码和脚本竟有九千多万行。
 
 https://www.zhihu.com/question/591821235
 
@@ -161,7 +163,9 @@ https://github.com/merico-dev/build
 
 ![](/images/img4/webkit.png)
 
-WebKit的代码可以从它的官网www.webkit.org下获得。
+官网：
+
+https://www.webkit.org/
 
 在以下网页可以获得webkit向各种GUI移植的相关信息。
 

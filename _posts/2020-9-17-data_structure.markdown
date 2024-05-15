@@ -135,11 +135,25 @@ https://mp.weixin.qq.com/s/FAp10hI05qLLZi5BypondA
 
 早期最好的排序算法是QuickSort，比如C语言库自带的qsort函数，使用的就是该算法。然而它对于倒序数组这种最坏情况的复杂度居然是$$O(n^2)$$。
 
-当然，Timsort也非完美，比如它的空间复杂度就比QuickSort高
+当然，Timsort也非完美，比如它的空间复杂度就比QuickSort高。
 
 https://mp.weixin.qq.com/s/gBHmBLGILd6rZ-6cuelw0Q
 
 这可能是你听说过最快的稳定排序算法（Timsort）
+
+https://zhuanlan.zhihu.com/p/695042849
+
+图解世界上最快的排序算法：Timsort
+
+---
+
+Introsort是由David Musser在1997年设计的排序算法。这个排序算法首先从快速排序开始，当递归深度超过一定深度（深度为排序元素数量的对数值）后转为堆排序。采用这个方法，内省排序既能在常规数据集上实现快速排序的高性能，又能在最坏情况下仍保持$$O(n \log(n))$$的时间复杂度。
+
+Glidesort巧妙地结合了Timsort风格的归并排序在预排序数据上的最佳性能和pattern-defeating quicksort在重复元素较多的数据集上的优势。
+
+https://blog.csdn.net/gitblog_00088/article/details/138788294
+
+探秘Glidesort：一种创新的稳定排序算法
 
 ## Bloom Filter
 
@@ -339,43 +353,3 @@ https://mp.weixin.qq.com/s/t7Q0slX3q8Qlhg8F8pXrZQ
 https://mp.weixin.qq.com/s/d9yNsUVFg9UZN62xuOdxow
 
 为什么MySQL数据库要用B+树存储索引？
-
-https://mp.weixin.qq.com/s/o0JFTpGa4MLtDKHf4B2Ing
-
-快速理解为啥这个查询使用索引，那个查询不使用索引
-
-https://mp.weixin.qq.com/s/CtPywscoA_FvF2d9NLEenw
-
-如何从100亿URL中找出相同的URL？
-
-https://mp.weixin.qq.com/s/bdZ5e8CaiPuI8TpLNRrFUQ
-
-大数据近似最近邻搜索哈希方法综述（上）
-
-https://mp.weixin.qq.com/s/jiZw-x6EMhUIySIObm5XjA
-
-大数据近似最近邻搜索哈希方法综述（下）
-
-https://mp.weixin.qq.com/s/jeQawOIomUAjIp7GhuBk3A
-
-一致性哈希算法及其在分布式系统中的应用
-
-https://blog.csdn.net/cywosp/article/details/23397179
-
-五分钟理解一致性哈希算法(consistent hashing)
-
-https://mp.weixin.qq.com/s/jxr2titD0BXBUEmAwkOi7A
-
-一致性哈希
-
-https://www.cnblogs.com/BCOI/p/9072444.html
-
-TREAP
-
-https://blog.csdn.net/simpsonk/article/details/72832959
-
-史上最强图解Treap总结
-
-https://mp.weixin.qq.com/s/SIsNagNKudVUFPKyCaUYCw
-
-Treap——堆和二叉树的完美结合，性价比极值的搜索树
