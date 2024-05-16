@@ -207,6 +207,10 @@ https://mp.weixin.qq.com/s/fGsdDiOOHhXeUMZg4zj8pA
 
 ---
 
+哈工大前身是为中东铁路的培养铁路技工的学校，所以确实可以说是沙俄侵华产物。
+
+---
+
 https://mp.weixin.qq.com/s/X0rFmiGFL0A_WY72Fy-Ebg
 
 这个偏僻的小山村竟出了12位博士28位硕士，高产“学霸”背后原因曝光......

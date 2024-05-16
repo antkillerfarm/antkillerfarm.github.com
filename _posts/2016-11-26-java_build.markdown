@@ -320,15 +320,23 @@ MSBuild入门
 
 ## OkBuck
 
-OkBuck是Uber推出的构建工具。
+OkBuck是Uber推出的构建工具。它的底层使用Buck构建系统。
 
 官网：
 
 https://github.com/uber/okbuck
 
+## Buck2
+
+Buck2是Buck的升级版，两者都是Meta开发的。Buck2目前支持C++, Python, Rust, Erlang, OCaml等语言的项目构建。
+
+官网：
+
+https://buck2.build
+
 ## WAF
 
-WAF是一个python写的构建工具。
+WAF是一个python写的C/C++构建工具。
 
 官网：
 
@@ -341,3 +349,17 @@ https://waf.io
 官网：
 
 https://github.com/Microsoft/vcpkg
+
+## pyproject.toml
+
+pyproject.toml是python官方提出的构建方案。
+
+一般使用build工具来构建基于pyproject.toml的项目：
+
+https://build.pypa.io/en/stable/
+
+参考：
+
+https://zhuanlan.zhihu.com/p/666166082
+
+Python新规范pyproject.toml完全解析

@@ -49,6 +49,20 @@ pitch指字模一行所占的字节数，在ft_render_mode_normal模式（即256
 
 并不是所有的矢量字库都包含小字体的，例如微软的宋体就不支持小于20*20的字模，所以，使用小尺寸字体时，必须仔细选择字库。
 
+## 字体文件格式
+
+TTF（TrueType Font）是由美国苹果公司和微软公司共同开发的一种电脑轮廓字体（曲线描边字）类型标准。
+
+OTF（OpenType Font）是Adobe和Microsoft联合开发的跨平台字体文件格式，也叫Type 2字体。
+
+WOFF（Web Open Font Format）是一种网页所采用的字体格式标准。此字体格式发展于2009年，现在正由万维网联盟的Web字体工作小组标准化。
+
+WOFF 2在WOFF的基础上，进一步优化了体积压缩，带宽需求更少，同时可以在移动设备上快速解压。
+
+https://zhuanlan.zhihu.com/p/463273013
+
+TTF、TOF、WOFF和WOFF2的相关概念
+
 # 图像处理软件
 
 ## GIMP

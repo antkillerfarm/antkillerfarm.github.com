@@ -145,6 +145,12 @@ https://www.thepaper.cn/newsDetail_forward_18439240
 
 ## 哈尔科夫战役
 
+2022年秋季战役：2022.9.6～2022.9.16
+
+2024年春季战役：2024.5.10～
+
+---
+
 ![](/images/img5/Kharkov.jpg)
 
 https://www.zhihu.com/zvideo/1551802887226732544
@@ -176,6 +182,12 @@ https://www.sohu.com/a/584049380_374379
 https://news.ifeng.com/c/8JCKRhgLczV
 
 声西击东 乌克兰发起了双线大反攻
+
+---
+
+https://www.zhihu.com/question/655569797
+
+俄军在哈尔科夫再次发动大规模进攻，如何看待俄军此轮攻势，能否达到预定目标？
 
 ## 卢甘斯克战役
 
