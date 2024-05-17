@@ -9,6 +9,22 @@ category: Nature
 
 # 地理
 
+太行八陉：军都陉、蒲阴陉、飞狐陉、井陉、滏口陉、白陉、太行陉、轵关陉。
+
+---
+
+蜀八道：
+
+北部（关中-汉中）从东到西五条蜀道分别是：子午道、傥骆道、褒斜道、陈仓道、祁山道。此外，还有一条连通了陈仓道和褒斜道的短程栈道，名叫连云道。
+
+南部（汉中-川渝）从东到西三条蜀道分别是：荔枝道、米仓道、金牛道。此外，在四川到甘肃方向还有条阴平道，曹魏灭蜀就是走的这条路线。
+
+https://www.sohu.com/a/372819755_99908975
+
+千年蜀道话秦岭，八条古道通川陕
+
+---
+
 1991菲律宾皮纳图博火山爆发，这次爆发影响了两年的全球气候，导致了全球平均气温降低0.5℃，并且该火山爆发时经过菲律宾的热带气旋云雅被火山爆发形成的干热火山灰和强风切直接搞毙。皮纳图博火山爆发喷出5km3致密岩石当量（dense-rock equivalent, DRE）的火山灰和碎屑熔岩流，爆发的能量相当于6亿2千万吨TNT炸药或者48000枚广岛原子弹的威力，造成1200多人死亡，20多万人逃离家园。她向平流层喷射了2千万吨二氧化硫，减少了地球上10%的阳光，导致地球进入两年的“火山冬天”。
 
 ![](/images/img4/Volcan.jpg)
@@ -180,27 +196,3 @@ https://mp.weixin.qq.com/s/_DlXbYZ6JmqarUf6egD2fw
 https://mp.weixin.qq.com/s/GDV1Wp8Ij9VpyDFXmkwN5A
 
 一场大规模的火山爆发，终结了罗马共和国？（公元前43年发生在阿拉斯加的奧克莫克火山爆发）
-
-https://mp.weixin.qq.com/s/63d-A5knRit6T13cgGtJrg
-
-带来毁灭，又给予重生。火山如何记录完整地球故事？
-
-https://www.zhihu.com/answer/513535282
-
-皮内尔湖灾难（Lake Peigneur Disaster）
-
-https://mp.weixin.qq.com/s/xvJqlHz__N43Z8SYH6pB8Q
-
-打赢抗洪战争，究竟有多难？
-
-https://mp.weixin.qq.com/s/Hz3kFgqmAG-SVxiel8Fj7w
-
-她绘制的地图，革新了我们对海底的认知（Marie Tharp）
-
-https://mp.weixin.qq.com/s/5qYXmOvQigvcDDeGQGmkSQ
-
-河水能把地壳冲掉吗？
-
-https://mp.weixin.qq.com/s/ynyU5YUSHSu839N1pljBHQ
-
-张掖绝美“彩虹山”，为何常常被误解成丹霞地貌？

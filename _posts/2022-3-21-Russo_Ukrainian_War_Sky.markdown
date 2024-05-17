@@ -83,6 +83,8 @@ Those who stand for nothing fall for anything.（那些不知为何而战的人�
 
 2024.2.16 俄罗斯反对派领导人纳瓦尔尼死在监狱中。
 
+2024.5.12 绍伊古被解职。
+
 ---
 
 https://www.understandingwar.org
@@ -128,6 +130,10 @@ https://ualosses.org
 https://zhuanlan.zhihu.com/p/671916805
 
 乌萝点将录
+
+https://zhuanlan.zhihu.com/p/697669474
+
+乌萝星座录
 
 ---
 
