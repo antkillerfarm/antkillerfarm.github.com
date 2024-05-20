@@ -77,11 +77,9 @@ https://www.zhihu.com/question/482003599
 
 ---
 
-在PC开始出现的初期，IBM的Lotus 1-2-3是PC的杀手应用，它被认为是PC所以成功的因素之一。Lotus 1-2-3纪元（epoch）从1900年开始，所以第一天是1900年1月1日，其后所有的日期都是在它上面加一个Delta差值，这也是为什么我们上面1900年2月28日的年份表示是00的原因。Lotus从诞生起就有个bug，它认为1900年是闰年！
+https://www.zhihu.com/people/suntrise/posts
 
-微软因为Lotus的大卖而自己研发表格系统Multiplan，它和它的继任者Excel为了能够与Lotus兼容，不但要做到外观十分相似，而且为了能够读取Lotus的文件而故意引入了一样的bug。
-
----
+一个研究计算机历史的专栏
 
 https://github.com/chrislgarry/Apollo-11
 
@@ -318,3 +316,11 @@ Pascal之父去世！图灵奖得主、编程语言泰斗Niklaus Wirth享年89�
 https://mp.weixin.qq.com/s/1aAxnjWfvuBj5iU9wvyGsg
 
 致敬数据库大师，有28岁英年早逝，有80岁还重新创业
+
+https://zhuanlan.zhihu.com/p/80629637
+
+Windows对决OS/2（上）
+
+https://zhuanlan.zhihu.com/p/80631718
+
+Windows对决OS/2（下）
