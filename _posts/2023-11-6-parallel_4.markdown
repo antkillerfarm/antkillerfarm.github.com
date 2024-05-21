@@ -179,6 +179,10 @@ https://b23.tv/OfdfBnz
 
 如何设置大模型推理参数，top_k，top_p, temperature, num_beams
 
+https://zhuanlan.zhihu.com/p/651359908
+
+大模型推理妙招—投机采样（Speculative Decoding）
+
 ## TensorRT-LLM
 
 TensorRT-LLM是NVIDIA推出的基于TensorRT的LLM推理工具。

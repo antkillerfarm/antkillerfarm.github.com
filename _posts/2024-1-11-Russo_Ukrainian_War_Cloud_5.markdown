@@ -81,6 +81,8 @@ category: Russo Ukrainian War Cloud
 
 铁路工人——从赫尔松到利沃夫
 
+![](/images/img5/ukraine_weapon.jpg)
+
 https://bittergrounds.com/2022s-striking-ukrainian-stamps
 
 2022年乌克兰邮票

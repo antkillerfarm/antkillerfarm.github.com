@@ -129,7 +129,7 @@ $$f * K = f * (V * H) = f * V * H$$
 
 这样就将一个k x k的卷积运算，转换成1 x k + k x 1的卷积运算，从而大大节省了参数和计算量。
 
-显然，不是所有的卷积核都满足可分离条件。但是不要紧，NN有自动学习并逼近函数的能力。经过训练之后：$$K \approx V * H$$
+虽然，并不是所有的卷积核都满足可分离条件。但是深度网络本来也不需要每一层都能精确表示。
 
 ## 1x1卷积
 
@@ -155,7 +155,9 @@ https://www.zhihu.com/question/56024942
 
 然而Xception指出：跨通道的相关性和空间相关性是完全可分离的，最好不要联合映射它们。
 
->Xception是Francois Chollet于2016年提出的。
+Xception是Francois Chollet于2016年提出的。
+
+>Francois Chollet，法国人。现为Google研究员。Keras的作者。
 
 ![](/images/article/Xception.png)
 
@@ -177,8 +179,6 @@ https://www.zhihu.com/question/56024942
 
 https://github.com/fchollet/keras/blob/master/keras/applications/xception.py
 
->Francois Chollet，法国人。现为Google研究员。Keras的作者。
-
 参考：
 
 http://blog.csdn.net/mao_xiao_feng/article/details/78003476
@@ -196,6 +196,10 @@ Depthwise卷积与Pointwise卷积
 https://mp.weixin.qq.com/s/KEWEC6s0wYQhYpyh6dKvQQ
 
 MixConv：来自Google Brain的混合Depthwise卷积核
+
+https://www.cnblogs.com/itmorn/p/11250371.html
+
+depthwise_conv
 
 ## 感受野
 
