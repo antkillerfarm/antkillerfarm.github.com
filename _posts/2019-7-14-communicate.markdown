@@ -343,6 +343,14 @@ https://blog.csdn.net/cuixiaogang110/article/details/81948173
 
 # 超算
 
+Seymour Cray，1925～1996。1957年，克雷和其它几位ERA的同事辞职后，创办了CDC(Control Data Corporation)。1972年，克雷自立门户，创立了克雷研究公司。
+
+https://blog.csdn.net/programmer_editor/article/details/1305826
+
+西摩•克雷(Seymour Cray)――隐居丛林的超级计算机之父
+
+---
+
 Massively Parallel Processor
 
 ![](/images/img3/power.aug.gif)

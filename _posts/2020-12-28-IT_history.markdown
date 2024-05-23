@@ -137,6 +137,10 @@ https://www.sohu.com/a/416602990_120757238
 
 1978年12月5日，物理学家赫尔曼·豪泽（Hermann Hauser）和工程师Chris Curry，在英国剑桥创办了CPU公司（Cambridge Processing Unit），主要业务是为当地市场供应电子设备。1979年，CPU公司改名为Acorn公司。
 
+https://zhuanlan.zhihu.com/p/20498012
+
+追寻ARM的起源——Acorn电脑简史
+
 https://mp.weixin.qq.com/s/bdfYwgfu8iDo00Qfbp0tsA
 
 Arm芯片三十五年

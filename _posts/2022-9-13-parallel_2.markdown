@@ -1,13 +1,49 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（三）——tf.distribute & MultiDevice, Pipeline Parallel, 其他概念
+title:  并行 & 框架 & 优化（三）——tf.distribute & MultiDevice, Pipeline Parallel
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# MPI（续）
+# MPI
+
+## AllReduce（续）
+
+参考：
+
+https://www.zhihu.com/question/57799212
+
+ring allreduce和tree allreduce的具体区别是什么？
+
+https://andrew.gibiansky.com/blog/machine-learning/baidu-allreduce/
+
+Bringing HPC Techniques to Deep Learning
+
+https://zhuanlan.zhihu.com/p/79030485
+
+AllReduce算法的前世今生
+
+https://mp.weixin.qq.com/s/4XMVYXnzpYZ4DrIabuTUig
+
+Ring All-reduce: 分布式深度学习的巧妙同步
+
+https://zhuanlan.zhihu.com/p/504957661
+
+手把手推导Ring All-reduce的数学性质
+
+https://developer.nvidia.com/blog/massively-scale-deep-learning-training-nccl-2-4/
+
+Massively Scale Your Deep Learning Training with NCCL 2.4
+
+https://zhuanlan.zhihu.com/p/611229620
+
+NVIDIA的custom allreduce
+
+https://zhuanlan.zhihu.com/p/692947173
+
+一文读懂nvidia-smi topo的输出
 
 ## 其他概念
 
@@ -279,51 +315,3 @@ Training Transformer models using Distributed Data Parallel and Pipeline Paralle
 torch/distributed/pipeline/sync/pipeline.py: _clock_cycles
 torch/distributed/pipeline/sync/pipe.py: _split_module
 ```
-
-# 其他概念
-
-## 分布式数据集
-
-大模型不光模型的训练是分布式的，数据集也是分布式的。
-
-https://www.alanshawn.com/tech/2022/02/27/tensorflow-big-dataset.html
-
-Using Huge, Heterogenous Datasets in TensorFlow
-
-https://tensorflow.google.cn/datasets/beam_datasets?hl=zh-cn
-
-使用Apache Beam生成大型数据集
-
-https://www.tensorflow.org/tutorials/distribute/input?hl=zh-cn
-
-分布式输入
-
-## Pathways
-
-https://blog.csdn.net/OneFlow_Official/article/details/124054450
-
-解读谷歌Pathways架构（一）：Single-controller与Multi-controller
-
-https://blog.csdn.net/OneFlow_Official/article/details/124113864
-
-解读谷歌Pathways架构（二）：向前一步是OneFlow
-
-## 框架设计
-
-![](/images/img4/mindspore.jpg)
-
-https://zhuanlan.zhihu.com/p/547878945
-
-五谈AI软件栈--无责乱弹AI软件栈研发方法论
-
-## 数据下沉
-
-数据下沉是将数据一次性传输到端侧，减少频繁的Host-Device数据传输来加速的技术。因为数据在Device上通过通道传输，Host侧和Device侧之间每个epoch进行一次数据交互，所以每个epoch只返回一次结果。
-
-https://zhuanlan.zhihu.com/p/397481167
-
-MindSpore的桎梏和破局
-
-https://www.hiascend.com/document/detail/zh/CANNCommunityEdition/63RC2alpha002/tfmoddevg/tfmigr1/atlasmprtg_13_9048.html
-
-训练迭代循环下沉

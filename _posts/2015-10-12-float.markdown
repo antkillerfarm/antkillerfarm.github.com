@@ -133,6 +133,8 @@ https://zhuanlan.zhihu.com/p/482979228
 
 # 概述
 
+George S. Almasi和Allan Gottlieb于1989年将并行计算机定义为：“并行计算机是一些处理单元的集合，它们通过通信和协作快速解决一个大的问题”。
+
 ![](/images/img4/Deep_Learning_System.png)
 
 并行计算的必要性：
@@ -215,7 +217,7 @@ https://openmlsys.github.io
 
 并发(concurrency)是指能处理多个同时性活动的能力，并发事件之间不一定要同一时刻发生。
 
-并行(parallelism)是指同时发生的两个并发事件，具有并发的含义，而并发则不一定并行。
+并行(parallelism)是指同时发生的两个并发事件。并行编程必须是并发的，而并发编程不一定并行，也可以串行。
 
 来个比喻：并发和并行的区别就是一个人同时吃三个馒头和三个人同时吃三个馒头。
 
@@ -234,6 +236,24 @@ https://mp.weixin.qq.com/s/23QCWf0NOoXlwRGAHfx4oQ
 https://mp.weixin.qq.com/s/-kizIk3ZXqu7UNqAb3QlQw
 
 C++并发编程（C++11到C++17）
+
+## 并行性的粒度
+
+细粒度并行：
+
+- 计算量不要过大，这样每个线程都有足够的工作可做。
+
+- 尽可能减少在数据同步上的开销，这样每个线程能够独立的完成自己的任务。
+
+- 负载的划分也很重要，因为有大量的独立任务需要并行执行，设计良好的任务调度器都能灵活控制负载，并保证在多任务运行的同时，让线程上的达到均衡。
+
+粗粒度并行：
+
+- 计算量肯定要高于细粒度并行时的计算量，因为不会像细粒度并行那样，有很多线程同时执行。
+
+- 编程者使用粗粒度编程时，需要了解应用的整体结构，让粗粒度中的每个线程作为任务，服务于应用。
+
+通常来说，上层App（当同步和通讯的开销大于计算）一般采用粗粒度并行，而底层算子（比如CUDA/OpenCL）采用细粒度并行。
 
 ## 并行的层级
 
@@ -254,37 +274,3 @@ https://zhuanlan.zhihu.com/p/381978470
 ![](/images/img4/Parallel_2.png)
 
 模型并行又可以按照是否对算子进行切分而分为两类，即上图中的b和c。其中c又被称为**pipeline并行**。
-
----
-
-并行的精髓在于切分：
-
-切分Batch：数据并行
-
-切分Layer：pipeline并行
-
-切分其他维度：模型并行
-
-Sequence Parallel：Transformer模型由于是处理一个序列，那么按照Sequence维度切分，也就是一件自然的事情了。
-
-## Distributed Data Parallel
-
-https://mp.weixin.qq.com/s/52Wz4pUI8egKugMFuknWKw
-
-Pytorch中的Distributed Data Parallel与混合精度训练（Apex）
-
-https://mp.weixin.qq.com/s/x1Z4jkMvfo4mD-_rKqvjuw
-
-在PyTorch中使用Distributed Data Parallel进行多GPU分布式模型训练
-
-https://zhuanlan.zhihu.com/p/178402798
-
-DDP系列第一篇：入门教程
-
-https://zhuanlan.zhihu.com/p/187610959
-
-DDP系列第二篇：实现原理与源代码解析
-
-https://zhuanlan.zhihu.com/p/250471767
-
-DDP系列第三篇：实战与技巧

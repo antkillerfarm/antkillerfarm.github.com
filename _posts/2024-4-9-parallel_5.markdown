@@ -9,6 +9,46 @@ category: DL acceleration
 
 # 并行 & 框架 & 优化
 
+https://mp.weixin.qq.com/s/uQzwqcGwC9ZveuW64Lzkmg
+
+分布式训练怎么还减速了呢？
+
+https://zhuanlan.zhihu.com/p/294698838
+
+DLPerf—分布式深度学习最佳入门(踩坑)指南
+
+https://zhuanlan.zhihu.com/p/76638962
+
+Pytorch分布式训练
+
+https://zhuanlan.zhihu.com/p/360405558
+
+PyTorch分布式训练
+
+https://mp.weixin.qq.com/s/0aSBHvscloEnPMRLyNjQsg
+
+PyTorch分布式训练简明教程
+
+https://blog.csdn.net/orangerfun/article/details/123887725
+
+torch分布式训练
+
+https://mp.weixin.qq.com/s/r7kt1k7D1wurWs_uxdLCtg
+
+PyTorch源码解读之分布式训练
+
+https://mp.weixin.qq.com/s/_85oWK2plv2QOX5Qfg_-ZA
+
+大规模机器学习优化，195页ppt与视频
+
+https://mp.weixin.qq.com/s/soruo90Dbtzi6d1kA63Akg
+
+阿里提出智能算力引擎DCAF，节省20%GPU算力
+
+https://mp.weixin.qq.com/s/oDak7peTT5ynNYrH7LSWTg
+
+分布式层次GPU参数服务器架构
+
 https://zhuanlan.zhihu.com/p/28226956
 
 浮点峰值那些事儿

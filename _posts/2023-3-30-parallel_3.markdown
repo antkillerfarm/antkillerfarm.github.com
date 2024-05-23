@@ -1,11 +1,59 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（四）——大模型训练, Horovod, DeepSpeed, LoRA, FSDP
+title:  并行 & 框架 & 优化（四）——大模型训练, Horovod, DeepSpeed
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
+
+# 其他概念
+
+## 分布式数据集
+
+大模型不光模型的训练是分布式的，数据集也是分布式的。
+
+https://www.alanshawn.com/tech/2022/02/27/tensorflow-big-dataset.html
+
+Using Huge, Heterogenous Datasets in TensorFlow
+
+https://tensorflow.google.cn/datasets/beam_datasets?hl=zh-cn
+
+使用Apache Beam生成大型数据集
+
+https://www.tensorflow.org/tutorials/distribute/input?hl=zh-cn
+
+分布式输入
+
+## Pathways
+
+https://blog.csdn.net/OneFlow_Official/article/details/124054450
+
+解读谷歌Pathways架构（一）：Single-controller与Multi-controller
+
+https://blog.csdn.net/OneFlow_Official/article/details/124113864
+
+解读谷歌Pathways架构（二）：向前一步是OneFlow
+
+## 框架设计
+
+![](/images/img4/mindspore.jpg)
+
+https://zhuanlan.zhihu.com/p/547878945
+
+五谈AI软件栈--无责乱弹AI软件栈研发方法论
+
+## 数据下沉
+
+数据下沉是将数据一次性传输到端侧，减少频繁的Host-Device数据传输来加速的技术。因为数据在Device上通过通道传输，Host侧和Device侧之间每个epoch进行一次数据交互，所以每个epoch只返回一次结果。
+
+https://zhuanlan.zhihu.com/p/397481167
+
+MindSpore的桎梏和破局
+
+https://www.hiascend.com/document/detail/zh/CANNCommunityEdition/63RC2alpha002/tfmoddevg/tfmigr1/atlasmprtg_13_9048.html
+
+训练迭代循环下沉
 
 # 大模型训练
 
@@ -240,43 +288,3 @@ $$h=xW_0'+xA'B'=W_0x+BAx$$
 由此还衍生出一种用法，一个base model + 若干针对不同领域/任务的patch，就可以服务于多个不同的领域/任务。
 
 LoRA大幅降低了模型训练时的显存占用，因为并不优化主模型，所以主模型对应的优化器参数不需要存储。**但计算量没有明显变化**——虽然减少了主模型更新权重的计算，但却增加了旁路的正向和反向计算。
-
-代码：
-
-https://github.com/microsoft/LoRA
-
-fine tune的示例：
-
-examples/NLG/src/gpt2_ft.py
-
----
-
-![](/images/img5/LLM_Adapter.png)
-
-类似LORA这种，用较少参数量的fine-tuning，取代全参数量fine-tuning的方法，被称为Adapter，或者parameter-efficient fine-tuning (PEFT)。
-
-论文：《LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models》
-
----
-
-参考：
-
-https://huggingface.co/datasets/HuggingFace-CN-community/translation/blob/main/lora_cn.md
-
-使用LoRA进行Stable Diffusion的高效参数微调
-
-https://zhuanlan.zhihu.com/p/631411685
-
-微软LoRA：使用万分之一的参数微调你的GPT3模型
-
-https://zhuanlan.zhihu.com/p/620327907
-
-LoRA:大模型的低秩适配-最近大火的lora到底是什么东西？为啥stable diffusion和开源ChatGPT复现都在用？
-
-https://zhuanlan.zhihu.com/p/639229126
-
-深入浅出解析LoRA完整核心基础知识
-
-https://mp.weixin.qq.com/s/nhIRulIRD6VrdPInDsaD8A
-
-使用QLoRA对Llama 2进行微调的详细笔记

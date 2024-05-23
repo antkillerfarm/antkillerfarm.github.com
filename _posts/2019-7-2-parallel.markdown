@@ -7,6 +7,43 @@ category: DL acceleration
 * toc
 {:toc}
 
+# 概述
+
+## 数据并行 & 模型并行（续）
+
+并行的精髓在于切分：
+
+切分Batch：数据并行
+
+切分Layer：pipeline并行
+
+切分其他维度：模型并行
+
+Sequence Parallel：Transformer模型由于是处理一个序列，那么按照Sequence维度切分，也就是一件自然的事情了。
+
+## Distributed Data Parallel
+
+https://mp.weixin.qq.com/s/52Wz4pUI8egKugMFuknWKw
+
+Pytorch中的Distributed Data Parallel与混合精度训练（Apex）
+
+https://mp.weixin.qq.com/s/x1Z4jkMvfo4mD-_rKqvjuw
+
+在PyTorch中使用Distributed Data Parallel进行多GPU分布式模型训练
+
+https://zhuanlan.zhihu.com/p/178402798
+
+DDP系列第一篇：入门教程
+
+https://zhuanlan.zhihu.com/p/187610959
+
+DDP系列第二篇：实现原理与源代码解析
+
+https://zhuanlan.zhihu.com/p/250471767
+
+DDP系列第三篇：实战与技巧
+
+
 # Parameter Server
 
 在深度学习概念提出之前，算法工程师手头能用的工具其实并不多，就LR、SVM、感知机等寥寥可数、相对固定的若干个模型和算法；那时候要解决一个实际的问题，算法工程师更多的工作主要是在特征工程方面。而特征工程本身并没有很系统化的指导理论（至少目前没有看到系统介绍特征工程的书籍），所以很多时候特征的构造技法显得光怪陆离，是否有用也取决于问题本身、数据样本、模型以及运气。如果给这种方式起一个名字的话，大概是**简单模型+复杂特征**；
@@ -196,37 +233,3 @@ AllReduce的实现方式不仅和原理相关，也和真实的物理连接方�
 实际情况要更加复杂，用户可能指定某几块GPU进行通信，这个时候树或者环的结构就不好找了。
 
 例如，在图C中，我们有一个双NVLink连接的骨干环。但是如果我要在GPU 0/1/2/7之间进行allreduce，可怎么办呢？7和0/1/2离得太远了，对算法效率有很大影响。事实上，即使对于成熟的集合通信库，例如nccl，当GPU数目是3或者5的时候效果表现也不好。最好的办法还是学习理解这些拓扑结构，不要出现这样的情况，尽量同时使用拓扑上靠近的GPU。
-
-参考：
-
-https://www.zhihu.com/question/57799212
-
-ring allreduce和tree allreduce的具体区别是什么？
-
-https://andrew.gibiansky.com/blog/machine-learning/baidu-allreduce/
-
-Bringing HPC Techniques to Deep Learning
-
-https://zhuanlan.zhihu.com/p/79030485
-
-AllReduce算法的前世今生
-
-https://mp.weixin.qq.com/s/4XMVYXnzpYZ4DrIabuTUig
-
-Ring All-reduce: 分布式深度学习的巧妙同步
-
-https://zhuanlan.zhihu.com/p/504957661
-
-手把手推导Ring All-reduce的数学性质
-
-https://developer.nvidia.com/blog/massively-scale-deep-learning-training-nccl-2-4/
-
-Massively Scale Your Deep Learning Training with NCCL 2.4
-
-https://zhuanlan.zhihu.com/p/611229620
-
-NVIDIA的custom allreduce
-
-https://zhuanlan.zhihu.com/p/692947173
-
-一文读懂nvidia-smi topo的输出
