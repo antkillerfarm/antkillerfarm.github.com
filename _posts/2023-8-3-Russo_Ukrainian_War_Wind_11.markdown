@@ -174,6 +174,3 @@ https://www.163.com/dy/article/HJSQ9R6Q0529RP1L.html
 ---
 
 Viktoriia Honcharuk，日托米尔人，2016年拿UGS奖学金的留学生，2022年在纽约入职摩根士利丹。对线开始之后，放弃60万美金的年薪，毅然回国加入乌萝医疗团队。
-
----
-
