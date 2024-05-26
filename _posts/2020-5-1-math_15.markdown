@@ -71,6 +71,12 @@ http://wuli.wiki//online/
 
 小时物理百科
 
+---
+
+https://zhuanlan.zhihu.com/p/699224923
+
+交圆公式
+
 # 勾股定理
 
 勾股定理在西方被称为Pythagorean theorem。它的命题本身并不复杂，也就是初中几何的内容，但是内涵非常丰富。即使大学数学也未必能穷尽其中的奥妙。这里仅罗列一二。

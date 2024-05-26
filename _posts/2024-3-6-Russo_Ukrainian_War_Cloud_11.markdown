@@ -17,18 +17,6 @@ https://www.zhihu.com/question/518738516
 
 媒体称泽连斯基告诉欧盟国家领导人“这可能是你们最后一次看到我活着”，释放了哪些信号？
 
-https://mp.weixin.qq.com/s/u7C1THhjnWLRLR4z7casbQ
-
-在乌克兰，日常生活与国家的分裂
-
-https://www.zhihu.com/question/523693204
-
-普京表示向欧洲国家供应天然气将用卢布进行结算，将产生哪些影响？
-
-https://www.163.com/dy/article/H27B36J005453NII.html
-
-对乌战争并非易事！俄国总参退役上校2月初的惊人预言
-
 https://baijiahao.baidu.com/s?id=1720008637085855507
 
 一种几乎改变战争进程的武器：莫洛托夫鸡尾酒
@@ -408,3 +396,11 @@ https://zhuanlan.zhihu.com/p/693962901
 https://zhuanlan.zhihu.com/p/695716136
 
 俄罗斯人从侵略战争中获得了什么？
+
+https://zhuanlan.zhihu.com/p/694252895
+
+投靠俄罗斯的下场——各种不得好死
+
+https://zhuanlan.zhihu.com/p/699454976
+
+纪律、现实主义和苏维埃主义：军事专家分析西尔斯基担任武装部队总司令的头100天的行动

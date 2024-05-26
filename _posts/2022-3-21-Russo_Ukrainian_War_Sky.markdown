@@ -57,6 +57,8 @@ In the year of our Lord 1314, patriots of Scotland, starving and outnumbered, ch
 
 Those who stand for nothing fall for anything.（那些不知为何而战的人一触即溃） -- by 亚历山大·汉密尔顿
 
+纳粹在一种天真的幻觉中进入了战争——他们可以炸别人，而别人不可以炸他们。-- by 阿瑟·特拉弗斯·哈里斯，英国皇家空军元帅
+
 ---
 
 2013.11.21 迈丹运动开始。

@@ -215,6 +215,14 @@ NVLink发展概述
 
 # GPU通信技术
 
+## Die To Die
+
+Universal Chiplet Interconnect Express (UCIE)是一种开放的行业标准互连，可在芯粒（Chiplet）之间提供高带宽、低延迟、节能且具有成本效益的封装连接。由英特尔、AMD、Arm、台积电和三星等众多行业巨头推动。
+
+UCIe从PCIe扩展而来，是个分层协议，协议层支持PCIe 6.0及CXL 2.0/3.0的生态。
+
+Blackwell采用的是一种叫做NV-HBI（High Bandwitdth Interface）的技术，带宽高达10TB/s。
+
 ## 共享数据
 
 共享数据很简单，OpenGL时代的persistent map，让驱动去做同步、做数据搬运，从而给开发者营造“数据随时可得”的假象（当然也可能的确就是随时可得），这就已经达到共享数据的要求了。
