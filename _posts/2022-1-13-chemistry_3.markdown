@@ -85,9 +85,33 @@ https://www.zhihu.com/question/623664747
 
 这次偶然的发现，造就了世界上第一种合成染料苯胺紫。它不仅廉价，而且不易褪色。
 
-
+https://www.thepaper.cn/newsDetail_forward_27225319
 
 巴黎奥运会将采用紫色跑道，人类实现“紫色自由”有多难？
+
+https://mp.weixin.qq.com/s/5Ua1tXJ0Eytdh6gzVxXpeg
+
+上万只海螺才提取出一克，价比黄金的染料是什么颜色？
+
+---
+
+海昏侯墓的这批金饼，纯度异常的高，达到了惊人的99.2%。
+
+一般来说天然的砂金未经提纯的，纯度大概在50%左右。除了金以外还含有银、铜等其他金属杂质。而提炼的方式，称为火炼法。
+
+但是大家都知道一个问题——金的熔点1064°C，这个温度对于古代工匠来说也是不容易达到的。所以初步提纯需要在熔炉中加入熔剂。
+
+一般就是加入铅或者汞等低熔点金属，让熔化的铅液把固体的金银给溶化了，形成混合金属液，而铁和铜等金属比重比金和铅轻且在铅液中的溶解度很低，于是就会浮起在金液表面，然后因为金属液表面张力的原因，在炉内鼓风的作用下从金属液顶部滑到底部结成炉渣。这样就能在较低的温度下（500度以下）有效除去金属内含有的铜和铁等贱金属杂质。
+
+用这种精炼法可以反复多次操作，一般可以获得75%-85%纯度的黄金。但是这个初步精炼只能除去金内的贱金属，但是无法去除金内的银，而作为溶剂的铅也会成为新的杂质。
+
+对于黄金内含有的汞和铅，方法就只有通过1100度以上的温度反复多次的熔炼并鼓风，使得铅和汞与空气接触氧化，剩下的就是稳定性极强的金和银了。
+
+而对于熔点960℃而且性质也极其稳定的银，无法通过多次鼓风的方式除去，就需要在冶炼时加入硫磺粉，使银与硫反应之后形成黑色的硫化银析出。
+
+https://www.zhihu.com/question/51979085
+
+为什么海昏侯墓出土的金饼大部分铸造工艺都非常的差？
 
 ---
 
@@ -186,74 +210,6 @@ https://mp.weixin.qq.com/s/pry9NlLCql74XhdvRADBiQ
 https://www.zhihu.com/question/411561262
 
 现代制造的刀放到古代算不算名刀？
-
-https://mp.weixin.qq.com/s/HSpZsD7E3S0TAhk_VwUDUg
-
-诺贝尔化学奖历史上的遗珠之憾
-
-https://mp.weixin.qq.com/s/V0Jh1Qv-RXoSK63Z5C092g
-
-一滴水里最少有几个水分子？5个还是6个？
-
-https://mp.weixin.qq.com/s/tGYqdbrYUkXaIEa_ycAzUQ
-
-幸运的化学，悲催的奠基人（Antoine-Laurent de Lavoisier）
-
-https://mp.weixin.qq.com/s/cUuw9CflfLrxXuSmNbra_A
-
-中学的元素周期表还藏着4000多种……（同位素）
-
-https://zhuanlan.zhihu.com/p/23284525
-
-靠谱地，咱聊聊田中耕一
-
-https://mp.weixin.qq.com/s/BXew6QoQgHAxOnCKpPp64Q
-
-获得诺贝尔奖的底层小职员
-
-https://mp.weixin.qq.com/s/irMd_sRRwZhbTuIXo3na6Q
-
-今天，说一下人工钻石（钻石半导体）
-
-https://mp.weixin.qq.com/s/9yVgUXorOHB8VGmchgJgGQ
-
-1,000,000,000,000,000,000次雷击！（活性磷）
-
-https://zhuanlan.zhihu.com/p/67180750
-
-40个金属之最，搞了一辈子机械知道不会超过10个。。。
-
-https://mp.weixin.qq.com/s/5Ua1tXJ0Eytdh6gzVxXpeg
-
-上万只海螺才提取出一克，价比黄金的染料是什么颜色？
-
-https://mp.weixin.qq.com/s/uLt6v5s964BV6OJidBHMRA
-
-周立波吸冰毒被实锤，史上最滑稽的自杀式验毒
-
-https://mp.weixin.qq.com/s/ySR1dyDqMJ90VcrxFDjPgw
-
-不用洗的衣服来了！但这面料干净吗？
-
-https://mp.weixin.qq.com/s/6d_bXugI6ncB7s60swR4Kw
-
-最白的白，最黑的黑，可能是最粉的份，以及从未见过的蓝
-
-https://www.zhihu.com/question/471598267
-
-一网友曝自己的手臂被浓度为55％的氢氟酸淋到，目前情况如何？氢氟酸真的有那么恐怖吗？
-
-https://mp.weixin.qq.com/s/-WCeEWXAJAbxXVJxgpFKbQ
-
-风电：对不起，我会产生不可回收垃圾
-
-https://www.zhihu.com/question/37709367
-
-谁能从结构上解释一下铁、钴、镍为什么可以被磁化，别的金属不可以？
-
-https://mp.weixin.qq.com/s/0JKE9eJJryRr_DZS8_bUxw
-
-纪念化学家理查德·勒纳：进化力量的驾驭者
 
 ## 食品工业
 

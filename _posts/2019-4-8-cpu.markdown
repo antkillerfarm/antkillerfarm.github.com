@@ -245,6 +245,10 @@ superscalar采用了如上图所示乱序执行的方案来并行执行。而且
 
 ## 硬件多线程
 
+在处理器中多开辟几份线程状态，当线程发生切换时，处理器切换到对应的线程状态执行，这种方式叫做硬件多线程（Hardware Multithreading）。
+
+这里的线程不是软件概念，而是指的指令流水线，也就是下图中Instruction stream。
+
 有两种方式实现硬件多线程：
 
 - 并发多线程(SMT)
@@ -260,6 +264,8 @@ SMT相当于是多线程版本的Out-of-Order Execution。
 ![](/images/img5/HT_2.png)
 
 时域多线程，又称Hyper-Threading，实际上就是多级流水线。
+
+硬件多线程和Cache一样，都是隐藏指令延迟的常用手段。
 
 ## 参考
 

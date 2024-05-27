@@ -245,6 +245,10 @@ https://mp.weixin.qq.com/s/FYjXOl7dk3uQriGBuny8DA
 
 # AMD
 
+## CPU
+
+Bulldozer (推土机) -> Piledriver (打桩机) -> Streamroller (压路机) -> Excavator (挖土机) -> Zen -> Zen+ -> Zen 2 -> Zen 3
+
 ## Matrix Core
 
 对标英伟达Tensor Core，AMD推出Matrix Core。

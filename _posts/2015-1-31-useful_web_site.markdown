@@ -258,10 +258,6 @@ https://mp.weixin.qq.com/s/sCJFFZm-soWAt8kDyYulPQ
 
 99%留学生都不知道的Paper写作神器，Google从此是路人
 
-https://mp.weixin.qq.com/s/oddiCH7TCUBn8CkIYdaNZA
-
-08年江泽民就提出：机器学习会有所做为，加大GPU技术研究，SaaS是软件转型机遇
-
 https://mp.weixin.qq.com/s/JeqjD5NYGyG17o5csfzp7w
 
 镜像/容器/仓库/数据卷基本命令
