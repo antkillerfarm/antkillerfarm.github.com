@@ -81,6 +81,10 @@ https://mp.weixin.qq.com/s/H2toewJKEwq1mXme_iMWkA
 
 设计模式二三事
 
+https://refactoringguru.cn/design-patterns
+
+一个设计模式的教学站
+
 # Autoware
 
 Autoware是另一个开源的无人驾驶平台。不像Apollo，没有百度这样的强势公司的介入，社区氛围更浓一些，相对的，功能也要弱一些。

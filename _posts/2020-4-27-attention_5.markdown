@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（五）——XLNet, 轻量化BERT, Attention in CV & RS
+title:  Attention（五）——XLNet, 轻量化Transformer, Attention in CV & RS
 category: Attention 
 ---
 
@@ -117,7 +117,7 @@ https://mp.weixin.qq.com/s/LurjTAjq4bVxDxIefSxcwg
 
 XLNET：换一个思路做预训练，效果杠杠滴
 
-# 轻量化BERT
+# 轻量化Transformer
 
 | Paper | Prune | Factor | Distill | W. Sharing | Quant. | Pre-train | Downstream |
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
@@ -240,26 +240,6 @@ BERT模型压缩：量化、剪枝和蒸馏
 https://zhuanlan.zhihu.com/p/576495529
 
 Fast and Effective！一文速览轻量化Transformer各领域研究进展
-
-# 快速BERT
-
-轻量化BERT是从计算量/时间/空间的角度出发，对于传统BERT的优化。而快速BERT主要着眼于软件工程角度，如何更好的利用各种硬件加速BERT的计算。典型的有NVIDIA的FasterTransformer和腾讯的TurboTransformer。
-
-https://mp.weixin.qq.com/s/1R_plHqxTLE-Fw3TjYnlJQ
-
-GPU BERT上线性能不合格，看看微信AI的PPoPP论文
-
-https://mp.weixin.qq.com/s/OgTQ3O_6lvOG07U-tjpTDA
-
-如何让Transformer在GPU上跑得更快？快手：需要GPU底层优化
-
-https://www.zhihu.com/question/611236756
-
-FlashAttention的速度优化原理是怎样的？
-
-https://zhuanlan.zhihu.com/p/638468472
-
-从FlashAttention到PagedAttention, 如何进一步优化Attention性能
 
 # Linformer
 

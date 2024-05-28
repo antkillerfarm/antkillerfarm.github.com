@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（五）——LoRA, FSDP, Megatron-LM, KV Cache, LLM Inference
+title:  并行 & 框架 & 优化（五）——LoRA, FSDP, Megatron-LM, KV Cache, 快速Transformer, LLM Inference
 category: DL acceleration 
 ---
 
@@ -151,6 +151,8 @@ https://mp.weixin.qq.com/s/bvF50XRaA9cO2O4oB31kbg
 
 ![](/images/img5/KV_Cache_2.png)
 
+上图中的Prompt Phase又称为Prefill Phase，Token generation Phase又称为Decoding Phase。
+
 ---
 
 ![](/images/img5/sharing_wide.jpg)
@@ -182,6 +184,51 @@ https://zhuanlan.zhihu.com/p/662498827
 https://zhuanlan.zhihu.com/p/647130255
 
 为什么现在大家都在用MQA和GQA？
+
+# 快速Transformer
+
+轻量化Transformer是从计算量/时间/空间的角度出发，对于传统Transformer的优化。而快速Transformer主要着眼于软件工程角度，如何更好的利用各种硬件加速Transformer的计算。典型的有NVIDIA的FasterTransformer和腾讯的TurboTransformer。
+
+## FasterTransformer
+
+
+
+## EffectiveTransformer/ByteTransformer
+
+https://zhuanlan.zhihu.com/p/139255930
+
+使用EffectiveTransformer加速BERT
+
+https://www.thepaper.cn/newsDetail_forward_23343189
+
+大幅优化推理过程，字节高性能Transformer推理库获IPDPS 2023最佳论文奖
+
+## FlashAttention
+
+
+https://www.zhihu.com/question/611236756
+
+FlashAttention的速度优化原理是怎样的？
+
+## PagedAttention
+
+https://blog.vllm.ai/2023/06/20/vllm.html
+
+vLLM: Easy, Fast, and Cheap LLM Serving with PagedAttention
+
+## 参考
+
+https://mp.weixin.qq.com/s/1R_plHqxTLE-Fw3TjYnlJQ
+
+GPU BERT上线性能不合格，看看微信AI的PPoPP论文
+
+https://mp.weixin.qq.com/s/OgTQ3O_6lvOG07U-tjpTDA
+
+如何让Transformer在GPU上跑得更快？快手：需要GPU底层优化
+
+https://zhuanlan.zhihu.com/p/638468472
+
+从FlashAttention到PagedAttention, 如何进一步优化Attention性能
 
 # LLM Inference
 
@@ -259,7 +306,7 @@ https://zhuanlan.zhihu.com/p/487588274
 
 # 数据流并行
 
-数据流并行是Pipeline并行的高阶版本。广义的数据流希望通过图编译找到全局最优策略，本质上是一种把编译器当万金油的惰性做法，深度学习框架在系统调度这种比较粗放的尺度围绕数据流做了这么多年的自动并行化，最后业界主流实际上的并行策略还是预设的这些Pipeline、Tensor并行的组合，而不是编译器搜出来的自动化的并行策略。
+数据流并行是Pipeline并行的高阶版本。广义的数据流希望通过图编译找到全局最优策略，本质上是一种把编译器当万金油的惰性做法，深度学习框架在系统调度这种比较粗放的尺度，围绕数据流做了这么多年的自动并行化，最后业界主流实际上的并行策略还是预设的这些Pipeline、Tensor并行的组合，而不是编译器搜出来的自动化的并行策略。
 
 # 参考
 

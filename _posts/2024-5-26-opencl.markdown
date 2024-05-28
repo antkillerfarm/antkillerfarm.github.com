@@ -1,0 +1,273 @@
+---
+layout: post
+title:  OpenCL, CUDA实战
+category: AI 
+---
+
+* toc
+{:toc}
+
+# OpenCL
+
+## 概述
+
+官网：
+
+https://www.khronos.org/opencl/
+
+OpenCL是一个硬件中立标准，原则上和计算机的体系结构无关。当然现实中，我们主要使用GPU进行运算加速。
+
+和OpenGL、OpenVX的专用性不同，OpenCL主要定位于通用数学运算。OpenGL年代久远也就罢了。对于像OpenVX这样的新标准，有的时候其内部实现也有可能依赖于OpenCL。毕竟无论哪个领域的专用计算，最终都可以分解为基本的数学运算。
+
+简单来说，**OpenVX的封装粒度在Layer一级，而OpenCL最多只提供到矩阵运算一级的API**。
+
+---
+
+https://chenxiaowei.gitbook.io/heterogeneous-computing-with-opencl2-0
+
+OpenCL 2.0 异构计算 第三版 (中文)
+
+---
+
+Reference Guide：
+
+https://www.khronos.org/files/opencl-quick-reference-card.pdf
+
+https://www.khronos.org/files/opencl20-quick-reference-card.pdf
+
+https://www.khronos.org/files/opencl-1-2-quick-reference-card.pdf
+
+## OpenCL vs CUDA
+
+|Term|CUDA|HIP|HC|C++AMP|OpenCL|
+|---|---|---|---|---|---|
+|Device|`int deviceId`|`int deviceId`|`hc::accelerator`|`concurrency::`<br>`accelerator`|`cl_device`
+|Queue|`cudaStream_t`|`hipStream_t`|`hc::`<br>`accelerator_view`|`concurrency::`<br>`accelerator_view`|`cl_command_queue`
+|Event|`cudaEvent_t`|`hipEvent_t`|`hc::`<br>`completion_future`|`concurrency::`<br>`completion_future`|`cl_event`
+|Memory|`void *`|`void *`|`void *`; `hc::array`; `hc::array_view`|`concurrency::array`;<br>`concurrency::array_view`|`cl_mem`
+|||||
+| |grid|grid|extent|extent|NDRange
+| |block|block|tile|tile|work-group
+| |thread|thread|thread|thread|work-item
+| |warp|warp|wavefront|N/A|sub-group
+|||||
+|Thread-<br>index | threadIdx.x | hipThreadIdx_x | t_idx.local[0] | t_idx.local[0] | get_local_id(0) |
+|Block-<br>index  | blockIdx.x  | hipBlockIdx_x  | t_idx.tile[0]  | t_idx.tile[0]  | get_group_id(0) |
+|Block-<br>dim    | blockDim.x  | hipBlockDim_x  | t_ext.tile_dim[0]| t_idx.tile_dim0 | get_local_size(0) |
+|Grid-dim     | gridDim.x   | hipGridDim_x   | t_ext[0]| t_ext[0] | get_global_size(0) |
+|||||
+|Device Kernel|`__global__`|`__global__`|lambda inside `hc::`<br>`parallel_for_each` or [[hc]]|`restrict(amp)`|`__kernel`
+|Device Function|`__device__`|`__device__`|`[[hc]]` (detected automatically in many case)|`restrict(amp)`|Implied in device compilation
+|Host Function|`__host_` (default)|`__host_` (default)|`[[cpu]]`  (default)|`restrict(cpu)` (default)|Implied in host compilation.
+|Host + Device Function|`__host__` `__device__`|`__host__` `__device__`|  `[[hc]]` `[[cpu]]`|`restrict(amp,cpu)`|No equivalent
+|Kernel Launch|`<<< >>>`|`hipLaunchKernel`|`hc::`<br>`parallel_for_each`|`concurrency::`<br>`parallel_for_each`|`clEnqueueNDRangeKernel`
+||||||
+|Global Memory|`__global__`|`__global__`|Unnecessary / Implied|Unnecessary / Implied|`__global`
+|Group Memory|`__shared__`|`__shared__`|`tile_static`|`tile_static`|`__local`
+|Constant|`__constant__`|`__constant__`|Unnecessary / Implied|Unnecessary / Implied|`__constant`
+||||||
+||`__syncthreads`|`__syncthreads`|`tile_static.barrier()`|`t_idx.barrier()`|`barrier(CLK_LOCAL_MEMFENCE)`
+|Atomic Builtins|`atomicAdd`|`atomicAdd`|`hc::atomic_fetch_add`|`concurrency::`<br>`atomic_fetch_add`|`atomic_add`
+|Precise Math|`cos(f)`|`cos(f)`|`hc::`<br>`precise_math::cos(f)`|`concurrency::`<br>`precise_math::cos(f)`|`cos(f)`
+|Fast Math|`__cos(f)`|`__cos(f)`|`hc::`<br>`fast_math::cos(f)`|`concurrency::`<br>`fast_math::cos(f)`|`native_cos(f)`
+|Vector|`float4`|`float4`|`hc::`<br>`short_vector::float4`|`concurrency::`<br>`graphics::float_4`|`float4`
+
+![](/images/article/opencl_cuda.jpg)
+
+https://streamhpc.com/blog/2016-04-05/comparing-syntax-cuda-opencl-hip/
+
+Comparing Syntax for CUDA, OpenCL and HiP
+
+## 术语
+
+kernel：内核就是在不同的异构设备上并行处理数据的单位。
+
+平台模型：指定一个host处理器，用于任务的调度。以及一个或多个device处理器，用于执行OpenCL任务(OpenCL C Kernel)。这里将硬件抽象成了对应的设备(host或device)。
+
+执行模型：定义了OpenCL在host上运行的环境应该如何配置，以及host如何指定设备执行某项工作。这里就包括host运行的环境，host-device交互的机制，以及配置内核时使用到的并发模型。并发模型定义了如何将算法分解成OpenCL工作项和工作组。
+
+内核编程模型：定义了并发模型如何映射到实际物理硬件。
+
+内存模型：定义了内存对象的类型，并且抽象了内存层次，这样内核就不用了解其使用内存的实际架构。
+
+通常情况下，OpenCL实现的执行平台包括一个x86 CPU主处理器，和一个GPU设备作为加速器。主处理器会将内核放置在GPU上运行，并且发出指令让GPU按照某个特定的并行方式进行执行。内核使用到的内存数据都由编程者依据层级内存模型分配或开辟。运行时和驱动层会将抽象的内存区域映射到物理内存层面。最后，由GPU开辟硬件线程来对内核进行执行，并且将每个线程映射到对应的硬件单元上。
+
+![](/images/img5/OpenCL_device.png)
+
+一个device可以被划分成一个或多个Compute Unit，这些CU在之后能被分成一个或多个Processing Elements。
+
+执行内核的各个实例称为work-item。若干个同类的work-item组成一个work-group。
+
+https://www.cnblogs.com/biglucky/p/3755189.html
+
+kernel,work_item和workgroup
+
+## 参考
+
+https://github.com/microsoft/antares
+
+Antares: an automatic engine for multi-platform kernel generation and optimization. Supporting CPU, CUDA, ROCm, DirectX12, GraphCore, SYCL for CPU/GPU, OpenCL for AMD/NVIDIA, Android CPU/GPU backends.
+
+---
+
+纹理坐标命名为s、t、r和q(与顶点坐标x、y、z和w类似)。
+
+---
+
+http://blog.csdn.net/leonwei/article/details/8880012
+
+从零开始学习OpenCL开发（一）架构
+
+## SYCL
+
+SYCL是Khronos提供的基于OpenCL的C++接口层。近来有向通用HPC发展的趋势，后端已不再限于OpenCL，开始包括OpenMP/CUDA等。
+
+官网：
+
+https://www.khronos.org/sycl
+
+## ComputeCpp
+
+ComputeCpp是Codeplay公司提供的SYCL接口的实现。它除了支持OpenCL之外，还支持CUDA和C++AMP。
+
+官网：
+
+https://www.codeplay.com/products/computesuite/computecpp
+
+## 其他实现
+
+triSYCL：
+
+https://github.com/triSYCL/triSYCL
+
+DPC++：
+
+https://github.com/intel/llvm/tree/sycl
+
+hipSYCL：
+
+https://github.com/illuhad/hipSYCL
+
+前面几个是backend，以下是frontend：
+
+libclc：
+
+https://libclc.llvm.org/
+
+## PoCL
+
+Portable Computing Language是另一个知名的OpenCL实现。
+
+官网：
+
+http://portablecl.org/
+
+# CUDA实战
+
+安装：
+
+http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
+
+---
+
+`${CUDA_HOME}/targets/x86_64-linux/lib/stubs/`文件夹下有常见的libcuda.so、libcublas.so等动态链接库，但是里面只有函数名，没有函数实现。所以文件大小很小。当我们的代码在一台没有GPU的机器上编译时，可以动态链接到这些stubs库，这样就能够正常编译。编译结束得到的二进制文件可以部署到其它有GPU的机器，在运行时它们就会链接到正确的动态链接库。
+
+---
+
+参考：
+
+http://ishare.iask.sina.com.cn/f/17211495.html
+
+深入浅出谈CUDA技术
+
+http://blog.csdn.net/xsc_c/article/category/2186063
+
+某人的并行计算专栏
+
+https://mp.weixin.qq.com/s/9D7uda3CV7volenhl-jchg
+
+推荐几个不错的CUDA入门教程
+
+https://mp.weixin.qq.com/s/bvNnzkOzGYYYewc3G9DOIw
+
+GPU是如何优化运行机器学习算法的？
+
+https://mp.weixin.qq.com/s/nAwxtOUi6HpIjVOREgEfaA
+
+CUDA编程入门极简教程
+
+https://mp.weixin.qq.com/s/-zdIWkuRZXhsLJmOZljOBw
+
+《基于GPU-多核-集群等并行化编程》
+
+https://mp.weixin.qq.com/s/bCb5VsH58JII886lpg9lvg
+
+如何在CUDA中为Transformer编写一个PyTorch自定义层
+
+https://mp.weixin.qq.com/s/OYSzol-vufiKPuU9YxtbuA
+
+矩阵相乘在GPU上的终极优化：深度解析Maxas汇编器工作原理
+
+https://zhuanlan.zhihu.com/p/358220419
+
+PyTorch自定义CUDA算子教程与运行时间分析
+
+https://zhuanlan.zhihu.com/p/358778742
+
+详解PyTorch编译并调用自定义CUDA算子的三种方式
+
+https://zhuanlan.zhihu.com/p/360441891
+
+熬了几个通宵，我写了份CUDA新手入门代码
+
+https://mp.weixin.qq.com/s/EZxO8IIBDJ4c7eQhUffc2w
+
+怎样节省2/3的GPU？爱奇艺vGPU的探索与实践
+
+https://mp.weixin.qq.com/s/3VjGpyXZSkJhy6sFPUsZzw
+
+GPU虚拟化，算力隔离，和qGPU
+
+https://zhuanlan.zhihu.com/p/383115932
+
+大佬是怎么优雅实现矩阵乘法的？
+
+https://zhuanlan.zhihu.com/p/410278370
+
+CUDA矩阵乘法终极优化指南
+
+https://www.zhihu.com/column/c_1437330196193640448
+
+深入浅出GPU优化
+
+https://www.zhihu.com/question/41060378
+
+自己写的CUDA矩阵乘法能优化到多快？
+
+https://zhuanlan.zhihu.com/p/559957579
+
+简单谈谈CUDA的访存合并
+
+https://zhuanlan.zhihu.com/p/565897763
+
+GPGPU编程模型之CUDA
+
+http://blog.csdn.net/augusdi/article/details/12833235
+
+这是一篇转帖的CUDA教程，原帖比较分散，不好看。
+
+https://zhuanlan.zhihu.com/p/544864997
+
+cuda中threadIdx、blockIdx、blockDim和gridDim的使用
+
+https://zhuanlan.zhihu.com/p/690717002
+
+一文读懂cuda代码编译流程
+
+https://zhuanlan.zhihu.com/p/690880124
+
+并不太短的CUDA入门（The Not So Short Introduction to CUDA）
+
+https://zhuanlan.zhihu.com/p/693690123
+
+一文读懂nvidia-smi背后的nvml库

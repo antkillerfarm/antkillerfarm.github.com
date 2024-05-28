@@ -167,10 +167,6 @@ AMD的路线是：Brook -> Brook+(后更名Stream/APP) -> OpenCL/DirectML -> ROC
 
 其他的并行计算框架还有：OpenACC、AMD stream、PGI。
 
-## OpenCL vs CUDA
-
-![](/images/article/opencl_cuda.jpg)
-
 ## OpenMp
 
 https://github.com/lapesd/libgomp

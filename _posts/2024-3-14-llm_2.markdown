@@ -91,7 +91,7 @@ $$p(x)=\prod_{x\in Mask}p(x_t|context)$$
 
 ---
 
-针对AR和AE的不同特点，又将前者称为Causal LM，后者称为Masked LM。
+针对AR和AE的不同特点，又将前者称为Causal LM，后者称为Masked LM或者Prefix LM。
 
 Causal：每个token只能看到在它之前的token信息，而看不到在它之后的token。
 
@@ -189,7 +189,7 @@ https://www.zhihu.com/question/608763410
 
 https://mp.weixin.qq.com/s/vfsB5t3r5dBACKQx6FshVw
 
-选择你的道路：LLM 时代指南
+选择你的道路：LLM时代指南
 
 ---
 

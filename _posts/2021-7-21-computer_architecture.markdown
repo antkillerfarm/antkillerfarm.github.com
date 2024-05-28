@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 计算机体系结构
+title: 计算机体系结构（一）
 category: Chip 
 ---
 
