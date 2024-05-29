@@ -1,13 +1,129 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（六）——参考资源
+title:  并行 & 框架 & 优化（六）——LLM Inference, 参考资源
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# 并行 & 框架 & 优化
+# 快速Transformer
+
+## PagedAttention（续）
+
+https://blog.vllm.ai/2023/06/20/vllm.html
+
+vLLM: Easy, Fast, and Cheap LLM Serving with PagedAttention
+
+https://zhuanlan.zhihu.com/p/691038809
+
+vLLM核心技术PagedAttention原理
+
+## 参考
+
+https://mp.weixin.qq.com/s/1R_plHqxTLE-Fw3TjYnlJQ
+
+GPU BERT上线性能不合格，看看微信AI的PPoPP论文
+
+https://mp.weixin.qq.com/s/OgTQ3O_6lvOG07U-tjpTDA
+
+如何让Transformer在GPU上跑得更快？快手：需要GPU底层优化
+
+https://zhuanlan.zhihu.com/p/638468472
+
+从FlashAttention到PagedAttention, 如何进一步优化Attention性能
+
+# LLM Inference
+
+https://zhuanlan.zhihu.com/p/653352979
+
+LLM七种推理服务框架总结
+
+https://zhuanlan.zhihu.com/p/671347964
+
+大模型(LLM)推理框架汇总
+
+https://zhuanlan.zhihu.com/p/642412124
+
+LLM的推理优化技术纵览
+
+https://github.com/DefTruth/Awesome-LLM-Inference
+
+Awesome LLM Inference
+
+---
+
+一次用户请求，实际上既包含prefill，也包含decode。一个是计算密集型，一个是访存密集型。
+
+prefill（用户输入）和decode（模型输出）的token量在不同场景下也是不一样的。如果是简单对话场景，通常模型的decode输出会更多一些，而如果是超长上下文场景，用户先上传一本几十万字的书再进行问答，这本书的prefill会直接起飞。在Agent场景下，大量预设的prompt也会占据非常多的prefill，不过prompt的prefill有不少机会可以提前算好KV而无需每个用户请求单独重复计算。
+
+当整个推理系统服务几千万用户时，一个batch的几十个用户请求支持开胃菜。每个用户会不间断地和大模型进行交互，发出大量请求，但这些请求的间隔时间短则几秒，长则几分钟几小时。考虑人机交互的频率，一个用户请求结束后，对应的KV-cache继续常驻在高速内存中实际意义不大。
+
+---
+
+![](/images/img5/llm.png)
+
+https://www.zhihu.com/tardis/zm/art/647813179
+
+大模型文本生成——解码策略（Top-k & Top-p & Temperature）
+
+https://b23.tv/OfdfBnz
+
+如何设置大模型推理参数，top_k，top_p, temperature, num_beams
+
+---
+
+投机采样使用两个模型：一个是原始目标模型，另一个是比原始模型小得多的近似模型。近似模型用于进行自回归串行采样，而大型模型则用于评估采样结果。
+
+https://zhuanlan.zhihu.com/p/651359908
+
+大模型推理妙招—投机采样（Speculative Decoding）
+
+## TensorRT-LLM
+
+TensorRT-LLM是NVIDIA推出的基于TensorRT的LLM推理工具。
+
+代码：
+
+https://github.com/NVIDIA/TensorRT-LLM/
+
+## vLLM
+
+https://docs.vllm.ai/en/latest/
+
+Easy, fast, and cheap LLM serving for everyone
+
+# 工具
+
+FairScale是由Facebook Research开发的PyTorch扩展库。FSDP就是首发于这个库。
+
+---
+
+https://zhuanlan.zhihu.com/p/412118353
+
+Kokkos:一个异构并行计算通用平台
+
+https://zhuanlan.zhihu.com/p/487588274
+
+用ILP和DP自动探索DL分布式策略——Alpa
+
+# 数据流并行
+
+数据流并行是Pipeline并行的高阶版本。广义的数据流希望通过图编译找到全局最优策略，本质上是一种把编译器当万金油的惰性做法，深度学习框架在系统调度这种比较粗放的尺度，围绕数据流做了这么多年的自动并行化，最后业界主流实际上的并行策略还是预设的这些Pipeline、Tensor并行的组合，而不是编译器搜出来的自动化的并行策略。
+
+# 参考
+
+https://mp.weixin.qq.com/s/iAHvfgn54zIwfM9K8KFJnw
+
+DLM：微信大规模分布式n-gram语言模型系统
+
+https://mp.weixin.qq.com/s/s7sHzzLANOp8-1LxgXQskA
+
+谷歌开发者大会上，蚂蚁金服开源ElasticDL分布式深度学习系统
+
+https://mp.weixin.qq.com/s/IQMXg6nIJO-9-IG3mJpvRg
+
+ElasticDL：同时提升集群利用率和研发效率的分布式深度学习框架
 
 https://mp.weixin.qq.com/s/uQzwqcGwC9ZveuW64Lzkmg
 
@@ -252,133 +368,3 @@ https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
 https://mp.weixin.qq.com/s/jOVUPhrCBI9W9vPvD9eKYg
 
 UC Berkeley提出新型分布式框架Ray：实时动态学习的开端
-
-https://mp.weixin.qq.com/s/r951Iasr4dke6MPHsUO0TA
-
-开源DAWN，Stanford的又一力作
-
-https://mp.weixin.qq.com/s/2jrMDeMcb47zpPfFLEcnIA
-
-深度学习平台技术演进
-
-https://mp.weixin.qq.com/s/L4CMKS53pNyvhhqvQhja0g
-
-5种商业AI产品的技术架构设计
-
-https://mp.weixin.qq.com/s/IqjKdAlGYREqCR9XQB5N1A
-
-伯克利AI分布式框架Ray，兼容TensorFlow、PyTorch与MXNet
-
-https://mp.weixin.qq.com/s/aNX_8UDYI_0u-MwMTYeqdQ
-
-开发易、通用难，深度学习框架何时才能飞入寻常百姓家？
-
-https://mp.weixin.qq.com/s/UbAHB-uEIvqYZCB7xIAJTg
-
-机器学习新框架Propel：使用JavaScript做可微分编程
-
-https://mp.weixin.qq.com/s/Ctl65r4iZNEOBxiiX2I2eQ
-
-Momenta王晋玮：让深度学习更高效运行的两个视角
-
-https://zhuanlan.zhihu.com/p/371499074
-
-OneFlow——让每一位算法工程师都有能力训练GPT
-
-https://mp.weixin.qq.com/s/LjdHBEyQhJq3ptMj8XVT-w
-
-TensorFlow在推荐系统中的分布式训练优化实践
-
-https://mp.weixin.qq.com/s/rEHhf32L09KXGJ9bbB2LEA
-
-TensorFlow在美团外卖推荐场景的GPU训练优化实践
-
-https://zhuanlan.zhihu.com/p/522759214
-
-手把手推导分布式矩阵乘的最优并行策略
-
-https://mp.weixin.qq.com/s/_o7fzCOeuZE6qFc5gHb26g
-
-美团视觉GPU推理服务部署架构优化实践
-
-https://mp.weixin.qq.com/s/UxN9ZRmKLN30s7uPqMpHPQ
-
-Jeff Dean等提出动态控制流编程模型，大规模机器学习性能提升21%
-
-https://mp.weixin.qq.com/s/fx0Pfu0MOPjSkzi5mL6U_A
-
-清华&斯坦福提出深度梯度压缩DGC，大幅降低分布式训练网络带宽需求
-
-https://mp.weixin.qq.com/s/wIdTDHEPffWqHA3_XWBLyw
-
-没错，纯SQL查询语句可以实现神经网络。
-
->SQL跑神经网络固然没有太大意义，然而分布式数据库已经有数十年的历史，对于设计分布式深度学习框架亦有重大的启发意义。
-
-https://mp.weixin.qq.com/s/F10UaaoxGPOE4pc59LBCRw
-
-数据并行化对神经网络训练有何影响？谷歌大脑进行了实证研究
-
-https://mp.weixin.qq.com/s/UF7DDenUQJ3bL83IHxOkIw
-
-分布式优化算法及其在多智能体系统与机器学习中的应用
-
-https://mp.weixin.qq.com/s/6h9MeBs89hTtWsYSZ4pZ5g
-
-蚂蚁金服核心技术：百亿特征实时推荐算法揭秘
-
-https://mp.weixin.qq.com/s/xV5cLbCPb7Nh6i4i7DxJIQ
-
-没人告诉你的大规模部署AI高效流程！
-
-https://mp.weixin.qq.com/s/8R7YhcZ_Dt0oFIF3bQovxw
-
-为了提升DL模型性能，阿里工程师打造了流式编程框架
-
-https://mp.weixin.qq.com/s/z6gXp-EeDID1ed8_DsUbOg
-
-90秒训练AlexNet！商汤刷新纪录
-
-https://mp.weixin.qq.com/s/HQW2bPyDY_3ecZWP6NYr-w
-
-大规模机器学习在LinkedIn预测模型中的应用实践
-
-https://mp.weixin.qq.com/s/i1PLA1xr3CefKx1EcVUVIg
-
-谷歌破世界纪录！圆周率计算到小数点后31.4万亿位
-
-https://mp.weixin.qq.com/s/rX8L63-jDGJT6lCAj04I3Q
-
-独家解读！阿里重磅发布机器学习平台PAI 3.0
-
-https://mp.weixin.qq.com/s/Ye2GVTFIrX3SbU1-4cDLoQ
-
-你天天叫的外卖，你知道这里面深度学习的水有多深吗
-
-https://mp.weixin.qq.com/s/FIWfbCLgckVzeNvfThIl4Q
-
-阿里线下智能方案进化史
-
-https://mp.weixin.qq.com/s/pqxiF6yEZzrw8qXu2hEsaA
-
-单机训练速度提升640倍！独家解读快手商业广告模型GPU训练平台Persia
-
-https://mp.weixin.qq.com/s/Jcz4XWDjMmbhmAiI_zBQXQ
-
-流式计算优化：时效性
-
-https://zhuanlan.zhihu.com/p/33351291
-
-基于忆阻器（ReRAM），Computing-in-Memory的DLA
-
-https://mp.weixin.qq.com/s/UbZtUL6Iveb4S3nTU0liGw
-
-深度神经网络的分布式训练概述：常用方法和技巧全面总结
-
-https://mp.weixin.qq.com/s/kLXJsHbBnRIFC3NLChPhzA
-
-如何高效进行大规模分类？港中文联合商汤提出新方法
-
-https://www.zhihu.com/question/454589636
-
-为什么模型和数据都在gpu上，却打不满GPU的使用率？

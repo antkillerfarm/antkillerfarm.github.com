@@ -1,0 +1,340 @@
+---
+layout: post
+title:  Diffusion Model, CLIP, SORA, AIGC
+category: Generative Model
+---
+
+* toc
+{:toc}
+
+# Diffusion Model
+
+Diffusion Model也是一类生成模型方法。
+
+![](/images/img4/flow.png)
+
+Diffusion Model主要通过采样的方法，不断逼近模型的数据分布，从而生成数据。基本原理和VAE一样仍然是Markov Chain Monte Carlo。
+
+以下以Stable Diffusion模型为例，介绍一下Diffusion Model的套路。
+
+![](/images/img5/stable-diffusion.png)
+
+我们首先来看一下Stable Diffusion的流水线：
+
+1.输入是一段文字，或者是一段文字+一张背景图片，输出是一张生成的图片。
+
+2.Text Encoder用于NLP。
+
+3.Image Decoder用于生成图片。
+
+4.上述这些部分都是很常规的，中间的Image Information Creator才是Stable Diffusion的关键。
+
+![](/images/img5/stable-diffusion-latent-space-pixel-space.png)
+
+如上图所示，Image Information Creator的输入是一个随机的噪声，而输出是一个information tensor。无论是噪声，还是information tensor都属于Information World，而最后生成的图片属于Visual World。
+
+早期的原始Diffusion Model并没有这种World的划分，而是直接由噪声得到图片，所以很不Stable。
+
+![](/images/img5/stable-diffusion-denoising-steps-latents.png)
+
+从上图可以看出：Diffusion Model由于天生就是渐变的迭代过程，因此在流程的可控性上很有优势。
+
+当时间宽裕时可以通过高轮次的迭代获得高质量的合成样本，同时较低轮次的快速合成也可以得到没有明显瑕疵的合成样本。（仍以上图为例，实际上Step 4的图片就已经相当OK了。）而高低轮次迭代之间完全不需要重新训练模型，只用手动调整一些轮次相关的参数。
+
+因此，很自然的又有了Cascaded Diffusion Models。
+
+论文：
+
+《Cascaded Diffusion Models for High Fidelity Image Generation》
+
+回到Stable Diffusion本身，我们先看一下没有两种World划分的Diffusion Model是怎么训练的。
+
+![](/images/img5/stable-diffusion-forward-diffusion-training-example.png)
+
+首先我们生成一堆的随机噪声，然后随机选择其中一种噪声，添加到图片上。这样就得到了一组数据集：
+
+![](/images/img5/stable-diffusion-u-net-noise-training-examples-2.png)
+
+我们的目标就是训练一个噪声预测模型。
+
+![](/images/img5/stable-diffusion-u-net-noise-training-step.png)
+
+用预测的噪声和原始生成的噪声做对比，计算loss。
+
+![](/images/img5/stable-diffusion-image-generation-v2.png)
+
+推理的时候，首先生成一组噪声图片，放入Noise Predictor，生成预测的噪声。然后用噪声图片-预测的噪声就得到了生成的图片。这个去噪过程，也可以进行多个Step。显然Step越多，图片质量越高。
+
+多个Step其实也是一种变相的加深网络方法。
+
+使用两种World划分的Stable Diffusion，还要再复杂一些，但也不多了。
+
+Image Decoder部分使用传统的AutoEncoder进行训练。
+
+这样Diffusion过程就可以在Information World中进行了。
+
+![](/images/img5/stable-diffusion-forward-and-reverse-process-v2.png)
+
+参考：
+
+https://jalammar.github.io/illustrated-stable-diffusion/
+
+The Illustrated Stable Diffusion
+
+https://lilianweng.github.io/lil-log/2021/07/11/diffusion-models.html
+
+What are Diffusion Models?
+
+https://zhuanlan.zhihu.com/p/366004028
+
+另辟蹊径—Denoising Diffusion Probabilistic一种从噪音中剥离出图像/音频的模型
+
+https://zhuanlan.zhihu.com/p/384144179
+
+Denoising Diffusion Probabilistic Model(DDPM)
+
+https://speech.ee.ntu.edu.tw/~hylee/ml/ml2023-course-data/DDPM%20(v7)
+
+李宏毅：DDPM讲解
+
+https://zhuanlan.zhihu.com/p/637815071
+
+DDPM（模型架构篇）
+
+https://zhuanlan.zhihu.com/p/650394311
+
+DDPM（数学原理篇）
+
+https://zhuanlan.zhihu.com/p/377603135
+
+Diffusion Probabilistic Model
+
+https://yang-song.github.io/blog/2021/score/
+
+Generative Modeling by Estimating Gradients of the Data Distribution
+
+https://www.zhihu.com/question/536012286
+
+diffusion model最近在图像生成领域大红大紫，如何看待它的风头开始超过GAN？
+
+https://www.zhihu.com/question/558475081
+
+AI绘画过去也一直有研究，为什么会在最近几个月突然爆发？
+
+https://mp.weixin.qq.com/s/G50p0SDQLSghTnMAOK6BMA
+
+Diffusion Model
+
+https://zhuanlan.zhihu.com/p/549623622
+
+Diffusion Models：生成扩散模型
+
+https://www.zhihu.com/question/549222340
+
+国内有没有类似于Disco Diffusion的AI绘画工具？
+
+https://zhuanlan.zhihu.com/p/617905470
+
+Stable Diffussion显存不够用的拯救者插件
+
+https://www.zhihu.com/question/577079491
+
+stable diffusion的技术原理是什么？
+
+https://zhuanlan.zhihu.com/p/617134893
+
+文生图模型之Stable Diffusion
+
+https://www.zhihu.com/question/649097976
+
+为什么vae效果不好，但vae+diffusion效果就好了？
+
+## Diffusion Transformer(DiT)
+
+DiT使用Transformer替换了U-Net架构，算是2023年度Diffusion Model的一大改进。
+
+《Scalable Diffusion Models with Transformers》
+
+# CLIP
+
+![](/images/img5/CLIP.png)
+
+https://zhuanlan.zhihu.com/p/493489688
+
+神器CLIP：连接文本和图像，打造可迁移的视觉模型
+
+https://zhuanlan.zhihu.com/p/589170132
+
+FLIP：通过图像掩码加速CLIP训练
+
+https://www.zhihu.com/question/593888697
+
+如何评价Meta/FAIR 最新工作Segment Anything？
+
+https://zhuanlan.zhihu.com/p/620271321
+
+最强Zero-Shot视觉应用：Grounding DINO + Segment Anything + Stable Diffusion
+
+https://www.zhihu.com/question/593914819
+
+Meta发布图像分割论文Segment Anything，将给CV研究带来什么影响？
+
+# SORA
+
+https://openai.com/research/video-generation-models-as-world-simulators
+
+官方技术报告
+
+MS解读SORA的论文：
+
+《Sora: A Review on Background, Technology, Limitations, and Opportunities of Large Vision Models》
+
+---
+
+SORA的使用方法：
+
+![](/images/img5/SORA.png)
+
+SORA的基本框架：
+
+![](/images/img5/SORA_2.png)
+
+---
+
+![](/images/img5/SORA_3.png)
+
+训练时可以采用Masked Diffusion Transformer (MDT)的方法增强学习效果。
+
+---
+
+![](/images/img5/NaViT.png)
+
+NaViT（Native Resolution ViT）没有采用传统的将图像调整至固定大小的做法，而通过特定的架构来实现对任意分辨率和宽高比图像的灵活处理。打包支持保持宽高比的可变分辨率图像，减少了训练时间，提高了性能，并增加了灵活性。
+
+---
+
+参考：
+
+https://zhuanlan.zhihu.com/p/683231546
+
+Sora大模型技术精要——原理、关键技术、模型架构与未来趋势
+
+https://fisherdaddy.com/posts/sora-reading-list/
+
+"Road to Sora" 论文阅读清单
+
+# AIGC
+
+![](/images/img5/AIGC.png)
+
+![](/images/img5/Web3.png)
+
+---
+
+《A Comprehensive Survey of AI-Generated Content (AIGC): A History of Generative AI from GAN to ChatGPT》
+
+《ChatGPT is not all you need. A State of the Art Review of large Generative AI models》
+
+---
+
+ChatGPT（文本到文本的对话模型）
+
+DALL-E-2（文本到图像的生成模型）
+
+Codex（文本到代码的生成模型）
+
+Dreamfusion （文本到3D图像）
+
+Flamingo（图像到文本）
+
+Phenaki（文本到视频）
+
+AudioLM（文本到音频）
+
+Galactica（文本到科学文本）
+
+AlphaTensor（自动搜索高性能的矩阵运算逻辑）
+
+---
+
+https://civitai.com/
+
+一个AI艺术的网站
+
+https://space.bilibili.com/12566101
+
+一个AI绘图方面的博主（秋葉aaaki）
+
+https://microsoft.github.io/generative-ai-for-beginners
+
+Generative AI for Beginners
+
+---
+
+在C站，一个南京艺术学院毕业的学美术小姐姐，网名叫娜乌斯嘉，她用自己的照片训练了lora，并分享给全网AI绘画爱好者们使用。
+
+她的B站主页：
+
+https://space.bilibili.com/8095370
+
+---
+
+https://mp.weixin.qq.com/s/H2nqQi2EVQ_EyeDNCRD3Cg
+
+一文回顾AI绘画的成长之路：从简笔画到真实人脸生成
+
+https://www.zhihu.com/question/583294094
+
+Ai绘画半年了，到目前为止，AI绘画让多少画师失业了？未来又会有多少?
+
+https://www.zhihu.com/question/584139316
+
+AI绘画引入ControlNet，将会带来哪些影响？
+
+https://www.zhihu.com/question/584053473
+
+如何评价2023年2月AI绘画的最新水平？
+
+https://mp.weixin.qq.com/s/HpziNAqHY9Oetsgk2AVxEg
+
+ControlNet组合拳效果惊人，颠覆AI绘画游戏规则
+
+https://zhuanlan.zhihu.com/p/615522634
+
+AIGC的一些记录
+
+https://www.zhihu.com/question/593770520
+
+首批因AI失业的人来了，有公司已裁减原画师，导演陆川力赞AI海报高效优质，哪些职位容易被取代？
+
+https://zhuanlan.zhihu.com/p/619730103
+
+AI绘画教程：如何用Stable Diffusion始终画同一个人？
+
+https://zhuanlan.zhihu.com/p/626335914
+
+AI绘图StableDiffusion最强大模型盘点 - 诸神乱战
+
+https://zhuanlan.zhihu.com/p/622914660
+
+《Stable Diffusion 倚天剑术》第1卷：在各种设备上把Stable Diffusion玩起来
+
+https://zhuanlan.zhihu.com/p/629348322
+
+StableDiffusion LoRA自训练教程
+
+https://mp.weixin.qq.com/s/DBLMAEbVw6v4xH94-5Zl3w
+
+GAN逆袭归来！清华校友论文引爆AI绘图圈，一秒把大象P转身，Diffusion黯然失色
+
+https://zhuanlan.zhihu.com/p/643872569
+
+AI这样把NB写在脸上，它在玩一种很新的艺术
+
+https://zhuanlan.zhihu.com/p/626004957
+
+利用AI在独立游戏项目中大干快上
+
+https://zhuanlan.zhihu.com/p/664461927
+
+一天时间，我用AI做了一个恐龙网站

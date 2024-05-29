@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenVX, OpenCL
+title:  OpenVX
 category: AI 
 ---
 
