@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（六）——LLM Inference, 参考资源
+title:  并行 & 框架 & 优化（六）——LLM Inference, Alpa
 category: DL acceleration 
 ---
 
@@ -93,6 +93,99 @@ https://docs.vllm.ai/en/latest/
 
 Easy, fast, and cheap LLM serving for everyone
 
+# Alpa
+
+Alpa是一个自动探索分布式策略的工具。
+
+论文：
+
+《Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning》
+
+代码：
+
+https://github.com/openxla/xla/tree/main/xla/hlo/experimental/auto_sharding
+
+文档：
+
+https://alpa.ai/index.html
+
+---
+
+在介绍Alpa之前，先介绍一下Google的optimization库：
+
+https://github.com/google/or-tools
+
+文档：
+
+https://developers.google.com/optimization
+
+ILP可以分为下列几种类型：
+
+（1）纯整数线性规划(Pure integer linear programming)：指全部决策变量都必须取整数值的整数线性规划。有时，也称为全整数规划。
+
+（2）混合整数线性规划(Mimed integer linear programming)：指决策变量中有一部分必须取整数值，另一部分可以不取整数值的整数线性规划。
+
+（3）0-1型整数线性规划(Zero-one integer linear programming)：指决策变量只能了取值0或1的整数线性规划。
+
+---
+
+为了评估不同Sharding策略的好坏，我们需要对Sharding策略建立cost model。
+
+这里的cost主要包括：
+
+- Communication cost
+- Computation cost
+- Memory cost
+- Resharding cost
+
+其中，Memory cost为该ILP问题的约束条件，其他几个为决策变量的影响因子。
+
+Resharding cost是不同sharding之间切换产生的开销：
+
+![](/images/img5/resharding.svg)
+
+---
+
+MLIR中有mesh dialect用于描述Sharding Spec：
+
+```mlir
+module @sharding_test {
+  mesh.mesh @mesh_2d(shape = 4x8)
+
+  func.func @matmul_on_operand_shard_batch_and_k(%arg0: tensor<32x1000x4096xf32>, %arg1: tensor<32x4096x8192xf32>) -> tensor<32x1000x8192xf32> {
+    %sharding_annotated = mesh.shard %arg0 to <@mesh_2d, [[0], [], [1]]> annotate_for_users : tensor<32x1000x4096xf32>
+    %sharding_annotated_0 = mesh.shard %arg1 to <@mesh_2d, [[0], [1]]> annotate_for_users : tensor<32x4096x8192xf32>
+    %0 = tosa.matmul %sharding_annotated, %sharding_annotated_0 : (tensor<32x1000x4096xf32>, tensor<32x4096x8192xf32>) -> tensor<32x1000x8192xf32>
+    %sharding_annotated_1 = mesh.shard %0 to <@mesh_2d, [[0]], partial = sum[1]> : tensor<32x1000x8192xf32>
+    return %sharding_annotated_1 : tensor<32x1000x8192xf32>
+  }
+}
+```
+
+---
+
+如何用数学语言表示一个二维的one-hot：
+
+$$
+\begin{aligned}
+
+\forall (v,u) \in E, \
+& \forall i \in [0, k_v), & \sum_{j \in [0, k_u)}\mathbf{e}_{vu} [i,j] \leq \mathbf{s}_v[i] \\
+& \forall j \in [0, k_u), & \sum_{i \in [0, k_v)}\mathbf{e}_{vu} [i,j] \leq \mathbf{s}_u[j] \\
+
+\end{aligned}
+$$
+
+![](/images/img5/one_hot_decision_vector.svg)
+
+---
+
+参考：
+
+https://zhuanlan.zhihu.com/p/487588274
+
+用ILP和DP自动探索DL分布式策略——Alpa
+
 # 工具
 
 FairScale是由Facebook Research开发的PyTorch扩展库。FSDP就是首发于这个库。
@@ -102,10 +195,6 @@ FairScale是由Facebook Research开发的PyTorch扩展库。FSDP就是首发于�
 https://zhuanlan.zhihu.com/p/412118353
 
 Kokkos:一个异构并行计算通用平台
-
-https://zhuanlan.zhihu.com/p/487588274
-
-用ILP和DP自动探索DL分布式策略——Alpa
 
 # 数据流并行
 
@@ -276,95 +365,3 @@ https://zhuanlan.zhihu.com/p/58806183
 https://zhuanlan.zhihu.com/p/56991108
 
 一文说清楚Tensorflow分布式训练必备知识
-
-https://zhuanlan.zhihu.com/p/26552293
-
-Dataflow架构和神经网络加速器
-
-https://zhuanlan.zhihu.com/p/28445511
-
-浅析深度学习框架设计中的关键技术
-
-https://mp.weixin.qq.com/s/wu32LBwrkkBIANMdknHlCA
-
-C++并行实战，592页pdf，C++ Concurrency in Action
-
-https://zhuanlan.zhihu.com/p/79385727
-
-有限元并行计算简介
-
-https://mp.weixin.qq.com/s/heVQ9AIZKxTiCNiAtYKaag
-
-新加坡国立大学最新“大规模深度学习优化”综述论文，带你全面了解最新深度学习准确率和效率的优化方法
-
-https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
-
-IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能
-
-http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
-
-神经网络的分布式训练
-
-https://mp.weixin.qq.com/s/nvuflLfOolidDDXJVe2DZA
-
-美团深度学习系统的工程实践
-
-https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
-
-TensorFlow分布式计算机制解读：以数据并行为重
-
-https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
-
-继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本
-
-https://mp.weixin.qq.com/s/kOCftzSbHe2mvDmlRp-ihA
-
-Jeff Dean：AI对计算机系统设计的影响
-
-https://mp.weixin.qq.com/s/XjNPaL6PC9LHX1PEGn5UZg
-
-微软实时AI系统“脑波计划”有多牛？看完秒懂！
-
-https://mp.weixin.qq.com/s/OkqUulFYHQSdgAbf9Fi9LA
-
-CoCoA：大规模机器学习的分布式优化通用框架
-
-https://mp.weixin.qq.com/s/ToIDncp9dS_qk47PsdZm5A
-
-杜克大学：分布式深度学习训练算法TernGrad
-
-https://mp.weixin.qq.com/s/rhtrN2qDspGkpJYDAVSX7w
-
-UC Berkeley展示全新并行处理方法
-
-https://mp.weixin.qq.com/s/ASqpPSIgW_bcFPBfRYz7Xg
-
-哈佛大学提出在云、边缘与终端设备上的分布式深度神经网络DDNN
-
-http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
-
-《Large Scale Distributed Deep Networks》中译文
-
-https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
-
-Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
-
-https://zhuanlan.zhihu.com/p/529388795
-
-训练千亿参数大模型，离不开四种GPU并行策略
-
-https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
-
-百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
-
-https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
-
-分布式深度学习原理、算法详细介绍
-
-https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
-
-苹果发布Turi Create机器学习框架，5行代码开发图像识别
-
-https://mp.weixin.qq.com/s/jOVUPhrCBI9W9vPvD9eKYg
-
-UC Berkeley提出新型分布式框架Ray：实时动态学习的开端

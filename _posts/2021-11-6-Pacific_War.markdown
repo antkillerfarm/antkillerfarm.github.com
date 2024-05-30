@@ -218,3 +218,7 @@ https://mb.yidianzixun.com/article/0JpuhkXG
 https://www.zhihu.com/question/283912809
 
 战列舰船员这么多，船员睡觉的环境怎么样？
+
+https://www.zhihu.com/question/30007655
+
+二战海战中舰船沉没为什么少有人员生还？

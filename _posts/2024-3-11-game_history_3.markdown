@@ -163,6 +163,14 @@ https://www.zhihu.com/question/636420745
 
 ---
 
+在泰和南征时能吊打南宋的完颜承裕和胡沙虎，却在泰和南征结束5年后的野狐岭之战中连跟蒙古军交战的勇气都没有。
+
+https://www.zhihu.com/question/558738377/answer/3512592711
+
+为什么金国会毫无悬念的败给蒙古？而且那么快？
+
+---
+
 https://www.zhihu.com/question/521014875
 
 中俄管道为什么不经过蒙古?

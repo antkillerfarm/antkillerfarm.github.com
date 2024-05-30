@@ -294,3 +294,7 @@ https://zhuanlan.zhihu.com/p/603456303
 https://zhuanlan.zhihu.com/p/694875148
 
 乌克兰人力分析--2024年4月27日版
+
+https://zhuanlan.zhihu.com/p/700352080
+
+乌克兰经济分析

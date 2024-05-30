@@ -176,3 +176,7 @@ https://www.zhihu.com/question/523693204
 https://www.163.com/dy/article/H27B36J005453NII.html
 
 对乌战争并非易事！俄国总参退役上校2月初的惊人预言
+
+https://zhuanlan.zhihu.com/p/688569938
+
+一人战斗，四人工作。泽连斯基正在准备动员的经济保留措施
