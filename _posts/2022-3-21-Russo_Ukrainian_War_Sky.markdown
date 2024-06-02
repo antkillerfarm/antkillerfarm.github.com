@@ -199,6 +199,8 @@ https://mp.weixin.qq.com/s/XjiFqQX7iuKMOuyYlTxN1Q
 
 《我们的敌人终将消失》（Our Enemies Will Vanish） Yaroslav Trofimov著。
 
+该书讲述了俄乌战争第一年的故事。
+
 PS：这个书名是乌克兰国歌《乌克兰仍在人间》的其中一段。
 
 https://www.zhihu.com/column/c_1733294561626185728

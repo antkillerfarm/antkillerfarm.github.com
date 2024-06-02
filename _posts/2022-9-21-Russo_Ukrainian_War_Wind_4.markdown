@@ -39,6 +39,10 @@ category: Russo Ukrainian War Wind
 
 ---
 
+泽连斯基证明了反抗是可能的，胜利是有望的。那么一直以来将大帝奉为神明的人的驯服就是不必要的，毫无价值的。
+
+---
+
 https://baike.baidu.com/tashuo/browse/content?id=0c64d05cac1e174119d96e5f
 
 泽连斯基：风云人物这一年
