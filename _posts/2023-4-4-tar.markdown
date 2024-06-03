@@ -485,3 +485,7 @@ https://mp.weixin.qq.com/s/LLlzPB2emr9Hqr7gql0B4Q
 https://mp.weixin.qq.com/s/fzLcAkYwKhj-9hgoVkTzaw
 
 CPU飙高，系统性能问题如何排查？
+
+https://www.zhihu.com/question/456916638
+
+printf是怎么输出到控制台的呢？（app->libc->syscall->console）

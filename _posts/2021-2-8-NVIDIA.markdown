@@ -84,7 +84,7 @@ NVIDIA AGX：主打自动驾驶等AI功能的产品。目前已经有Parker、Xa
 
 ![](/images/img5/NVIDIA.jpg)
 
-历代GPU架构代号：Currie -> Tesla -> Fermi -> Kepler -> Maxwell -> Pascal -> Volta -> Turing -> Ampere -> Hopper -> Ada Lovelace -> Blackwell。
+历代GPU架构代号：Currie -> Tesla -> Fermi -> Kepler -> Maxwell -> Pascal -> Volta -> Turing -> Ampere -> Hopper -> Ada Lovelace -> Blackwell -> Vera (CPU) Rubin (GPU) 。
 
 V100表示是Volta架构的GPU，A100和H100同理。
 
@@ -103,6 +103,12 @@ David Harold Blackwell，1919～2010，美国统计学家，伊利诺伊大学�
 https://zhuanlan.zhihu.com/p/476820418
 
 最伟大的黑人数学家——布莱克威尔，统计学领域的天才
+
+---
+
+Vera Florence Cooper Rubin，1928～2016，女，美国天文学家，美国国家科学院院士。她是研究星系自转速率的先驱，她通过研究星系旋转曲线，发现了预测的星系角运动与观测到的星系角运动之间的差异。通过确定星系自转问题，她的工作为暗物质的存在提供了证据。这些结果在随后的几十年里得到了证实。
+
+2019年，Large Synoptic Survey Telescope被命名为Rubin天文台。
 
 ---
 

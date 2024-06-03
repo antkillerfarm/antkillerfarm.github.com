@@ -222,6 +222,8 @@ HBM带宽是传统内存（DRAM）的4.5倍，因此更适合处理AI应用程�
 
 LPDDR和HBM卷成本，如果考虑的是$/GB，那LPDDR确实有优势，但如果考虑的是$/GBps，HBM还是最具性价比的选择。而LLM虽然对内存容量有比较大的需求，但对于内存带宽同样有巨大的需求。
 
+NVIDIA是GDDR协议几乎实际的掌控者，每一代GDDR出来，Nvidia都会来个GDDR-X，这个-X，实际上是下一代GDDR的beta特性，即其他人用GDDR6的时候，Nvidia有GDDR6-X定制（并且独享供货），而这玩意儿实际上是GDDR7-beta。
+
 参考：
 
 https://zhuanlan.zhihu.com/p/33990592

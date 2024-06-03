@@ -167,9 +167,39 @@ AMD的路线是：Brook -> Brook+(后更名Stream/APP) -> OpenCL/DirectML -> ROC
 
 其他的并行计算框架还有：OpenACC、AMD stream、PGI。
 
-## OpenMp
+## OpenMP
+
+Hello World示例：
+
+```cpp
+#include <omp.h>
+#include <stdio.h>
+#define NT 4
+#define thrd_no omp_get_thread_num
+int main(){
+  #pragma omp parallel num_threads(NT)
+  {
+  int no = thrd_no();
+  if (no%2) { printf("thrd no %d is Odd \n",no);}
+  else { printf("thrd no %d is Even\n",no);}
+
+  #pragma omp for
+  for(int i=0; i<NT; i++) printf("thrd no %d\n",thrd_no());
+  }
+}
+```
+
+OpenMP使用directive的方式表示并行，后来又推出的属性表示法。
+
+很多编译器都原生支持OpenMP，比如gcc使用`-fopenmp`编译。
 
 https://github.com/lapesd/libgomp
+
+一个OpenMp的扩展库
+
+https://www.cnblogs.com/lfri/p/10111315.html
+
+OpenMP入门教程
 
 ## 教程
 

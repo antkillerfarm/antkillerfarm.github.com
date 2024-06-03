@@ -95,6 +95,8 @@ PROE分出来的Solidworks也用的很多。
 
 开源CAD引擎使用的比较多的是OpenCascade(简称OCC)。OCC平台是由法国Matra Datavision公司开发的CAD/CAE/CAM软件平台。
 
+CAE领域，美国更是拥有绝对的垄断性（ANSYS，MSC.Nastran，LS-NYDA）。
+
 参考：
 
 https://mp.weixin.qq.com/s/oB5uOfnSyJZ9UlNt1zreUg
