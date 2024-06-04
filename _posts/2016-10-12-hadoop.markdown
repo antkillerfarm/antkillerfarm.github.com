@@ -218,11 +218,13 @@ JDK常用命令行工具
 
 ## MapReduce编程
 
+map-reduce：把任务map到计算资源上去，得到结果之后reduce。
+
 教程：
 
-http://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html
+https://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html
 
-map-reduce：把任务map到计算资源上去，得到结果之后reduce。
+MapReduce Tutorial
 
 ## Hadoop生态
 

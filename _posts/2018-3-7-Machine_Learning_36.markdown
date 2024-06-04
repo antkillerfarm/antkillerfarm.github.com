@@ -341,3 +341,11 @@ https://mp.weixin.qq.com/s/o129MwpGzx8tzjUCkz1npw
 了。
 
 如果直译为“古拉希”，中国读者不知是何物，而在后面加上括号注解又嫌太长。有几个记者知道这个词，也吃过这道菜，说不过是土豆烧牛肉罢了。
+
+---
+
+九评苏共中央的公开信
+
+https://www.marxists.org/chinese/reference-books/sino-soviet-debate/index.htm
+
+中苏论战资料

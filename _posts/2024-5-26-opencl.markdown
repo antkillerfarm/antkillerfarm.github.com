@@ -98,6 +98,20 @@ kernel：内核就是在不同的异构设备上并行处理数据的单位。
 
 执行内核的各个实例称为work-item。若干个同类的work-item组成一个work-group。
 
+当要执行一个内核时，编程者需要指定每个维度上工作项的数量(NDRange)。一个NDRange可以是一维、二维、三维的，其不同维度上的工作项ID映射的是相应的输入或输出数据。
+
+与工作项类似，工作组也需要从三个维度上指定，每个维度上的工作项有多少个。在同一个工作组中的工作项具有一些特殊的关系：一个工作组中的工作项可以进行同步，并且他们可以访问同一块共享内存。为了保证硬件工作效率，工作组的大小通常都是固定的。OpenCL也允许编程者不去分配工作组的尺寸，其会在实现中进行自动的划分。
+
+内存对象与Context进行关联，而非某个设备。
+
+与数组不同，图像数组数据不能直接访问。因为相邻的数据并不保证在内存上连续存储。使用图像的目的就是为了发挥硬件空间局部性的优势，并且可以利用设备硬件加速的能力。
+
+管道内存对象就是一个数据元素(被称为packets)队列，其和其他队列一样，遵循FIFO(先进先出)的方式。为了支持“生产者-消费者”设计模式，一个内核与写入末尾点连接(生产者)，同时另一个内核与读取末尾点连接(消费者)。
+
+![](/images/img5/OpenCL_Mem.png)
+
+Kernel中，不同区域对应有不同的关键字，关键字用来指定变量使用哪种内存进行创建：`__global`、`__constant`、`__local`。通用地址空间支持指向私有、局部和全局地址指针的互相转换。
+
 https://www.cnblogs.com/biglucky/p/3755189.html
 
 kernel,work_item和workgroup
@@ -117,6 +131,10 @@ Antares: an automatic engine for multi-platform kernel generation and optimizati
 http://blog.csdn.net/leonwei/article/details/8880012
 
 从零开始学习OpenCL开发（一）架构
+
+https://programmerclick.com/article/47811146604/
+
+Tutorial: Simple start with OpenCL and C++
 
 ## SYCL
 
