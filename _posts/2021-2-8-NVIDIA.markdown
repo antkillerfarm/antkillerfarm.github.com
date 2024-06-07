@@ -84,15 +84,19 @@ NVIDIA AGX：主打自动驾驶等AI功能的产品。目前已经有Parker、Xa
 
 ![](/images/img5/NVIDIA.jpg)
 
-历代GPU架构代号：Currie -> Tesla -> Fermi -> Kepler -> Maxwell -> Pascal -> Volta -> Turing -> Ampere -> Hopper -> Ada Lovelace -> Blackwell -> Vera (CPU) Rubin (GPU) 。
+历代GPU架构代号：Currie -> Tesla -> Fermi -> Kepler -> Maxwell -> Pascal -> Volta -> Turing -> Ampere -> Grace (CPU) Hopper (GPU)-> Ada Lovelace -> Blackwell -> Vera (CPU) Rubin (GPU) 。
 
 V100表示是Volta架构的GPU，A100和H100同理。
 
 A40是A100的简配版，用于数据中心的AI推理。
 
-H100一般搭配X86的CPU，如果搭配NV自研的基于ARM架构的Grace CPU的话，就是GH200了。
+H100搭配的是X86的CPU，如果搭配NV自研的基于ARM架构的Grace CPU的话，就是GH200了。
 
 ![](/images/img5/NVIDIA.png)
+
+---
+
+Grace Hopper，1906～1992，女，美国计算机科学家。耶鲁大学博士（1934）。Cobol语言之母。
 
 ---
 

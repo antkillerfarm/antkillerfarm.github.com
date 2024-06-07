@@ -169,7 +169,7 @@ https://zhuanlan.zhihu.com/p/662498827
 
 大模型推理加速：看图学KV Cache
 
-# MQA & GQA
+## MQA & GQA
 
 ![](/images/img5/GQA.jpg)
 
@@ -184,6 +184,24 @@ https://zhuanlan.zhihu.com/p/662498827
 https://zhuanlan.zhihu.com/p/647130255
 
 为什么现在大家都在用MQA和GQA？
+
+## MLA
+
+MLA是幻方量化投资的DeepSeek公司的DeepSeek-V2模型发明的。该模型1元/百万输入Tokens的价格，只有GPT4价格的1/100。
+
+MLA的创新点，其实不是低秩分解，因为如果你想的话，GQA也可以重写成低秩分解的形式。
+
+MLA的关键是低秩分解后面的事情，GQA是split and repeat，MLA则一般化为dense projection，从而实现了同样的低秩分解下更好的效果，或者同样效果下更低的秩，后者就是它能比GQA更进一步压缩KV Cache的根本原因。
+
+推理时，MLA需要利用恒等变换才能实现低秩的KV Cache，但代价是每个头的Q/K的head_size变大了不小，所以理论上MLA推理的计算量是增加的。它最后之所以还能提高效率，是充分结合了LLM推理主要瓶颈还是访存而不是计算这一特性。
+
+https://kexue.fm/archives/10091
+
+缓存与效果的极限拉扯：从MHA、MQA、GQA到MLA
+
+https://www.zhihu.com/question/655172528
+
+如何看待DeepSeek发布的MoE大模型DeepSeek-V2？
 
 # 快速Transformer
 

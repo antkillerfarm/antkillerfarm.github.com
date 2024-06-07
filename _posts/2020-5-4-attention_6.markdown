@@ -329,7 +329,7 @@ https://zhuanlan.zhihu.com/p/656684326
 
 ## RoPE
 
-Rotary Position Embedding是苏剑林的作品，并被后来流行的LLAMA等大模型所采用。
+Rotary Position Embedding是苏剑林的作品，并被后来流行的LLAMA等大模型所采用。DeepSeek的实验显示ALiBi明显不如RoPE。
 
 参考：
 

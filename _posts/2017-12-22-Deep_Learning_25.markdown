@@ -289,7 +289,7 @@ https://mp.weixin.qq.com/s/JtUuFdTK4Q5YwnVj3BFU2w
 
 https://mp.weixin.qq.com/s/amXiNKJPEkAnu2m5NAERVw
 
-Top-K Oﬀ-Policy Correction
+Top-K Off-Policy Correction
 
 https://mp.weixin.qq.com/s/kNtzy9-6GbsRhlL-mxksew
 

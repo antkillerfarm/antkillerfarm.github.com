@@ -85,6 +85,12 @@ python3 ./torch_xla_lenet.py
 
 ---
 
+debug env:
+
+`export PT_XLA_DEBUG=1`
+
+---
+
 Backend的参考实现：
 
 Intel XPU:
@@ -204,6 +210,17 @@ PlatformUtil::GetStreamExecutors(platform, options.allowed_devices())
 
 ---
 
+op的传递链：
+
+```cpp
+at::_ops::linear::call
+at::_ops::addmm::call
+at::_ops::addmm::redispatch
+torch_xla::XLANativeFunctions::addmm
+```
+
+---
+
 参考：
 
 https://pytorch.org/blog/pytorch-2.0-xla/
@@ -236,7 +253,7 @@ https://github.com/pytorch/xla/issues/6567
 
 pytorch IR -> XLA IR -> stablehlo IR，其中的第二步存在一些问题。
 
-`XLA_STABLEHLO_COMPILE`
+`XLA_STABLEHLO_COMPILE`: 这个env用于打开stablehlo的编译。
 
 ```text
   %custom-call.101 = f32[1,3,224,224]{3,2,1,0} custom-call(f32[1,3,224,224]{3,2,1,0} %p12.100), custom_call_target="stablehlo.uniform_quantize", api_version=API_VERSION_TYPED_FFI, backend_config={scale=[0.00391965],zero_point=[-128],storage_type=si8,expressed_type=f32,storage_min=-128,storage_max=127}

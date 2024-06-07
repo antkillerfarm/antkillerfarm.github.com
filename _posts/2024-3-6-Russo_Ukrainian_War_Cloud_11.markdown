@@ -404,3 +404,7 @@ https://zhuanlan.zhihu.com/p/694252895
 https://zhuanlan.zhihu.com/p/699454976
 
 纪律、现实主义和苏维埃主义：军事专家分析西尔斯基担任武装部队总司令的头100天的行动
+
+https://zhuanlan.zhihu.com/p/701534126
+
+俄罗斯打仗差钱，全民加税就能够解决问题吗？
