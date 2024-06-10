@@ -59,6 +59,8 @@ Those who stand for nothing fall for anything.（那些不知为何而战的人�
 
 纳粹在一种天真的幻觉中进入了战争——他们可以炸别人，而别人不可以炸他们。-- by 阿瑟·特拉弗斯·哈里斯，英国皇家空军元帅
 
+Every country has its own mafia. In Russia, the mafia has its own country. -- by Gary Kasparov
+
 ---
 
 2013.11.21 迈丹运动开始。

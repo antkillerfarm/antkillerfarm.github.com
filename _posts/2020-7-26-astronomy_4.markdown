@@ -59,6 +59,10 @@ https://www.zhihu.com/question/648580491
 
 SpaceX星舰第三次试飞，达到环绕速度，重返大气层过程中失去信号，任务提前结束，有哪些看点？（2024.3.14）
 
+https://www.zhihu.com/question/657852759
+
+星舰第四次试飞取得成功，本体在印度洋溅落，本次试飞有哪些突破？（2024.6.6）
+
 ---
 
 液氢液氧
@@ -106,6 +110,10 @@ https://www.zhihu.com/question/597238433
 https://zhuanlan.zhihu.com/p/348707512
 
 运载火箭的性能参数（科普）
+
+https://www.zhihu.com/question/406813026
+
+为什么spacex的星舰要用不锈钢？
 
 ---
 

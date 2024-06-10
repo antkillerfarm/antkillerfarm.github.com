@@ -349,3 +349,11 @@ https://mp.weixin.qq.com/s/o129MwpGzx8tzjUCkz1npw
 https://www.marxists.org/chinese/reference-books/sino-soviet-debate/index.htm
 
 中苏论战资料
+
+---
+
+苏联政权同希特勒德国不同。它不是按照固定的计划行事的，它不会冒不必要的风险。它对理智的逻辑（logic of reason）无动于衷，但对力量的逻辑（logic of force）高度敏感。由于这个缘故，当它在任何一点上遇到强大的阻力时，都可以轻易地退却，而且它经常这样做。因此，如果对手拥有足够的力量（force）和表明准备使用它，那么几乎用不着这样做。如果正确地处理形势，那么就不必进行有损威望的摊牌。 -- by 乔治·凯南
+
+https://www.zhihu.com/answer/3523222426
+
+如何评价丘吉尔的铁幕演说？

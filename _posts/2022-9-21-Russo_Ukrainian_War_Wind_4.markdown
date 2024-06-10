@@ -43,6 +43,32 @@ category: Russo Ukrainian War Wind
 
 ---
 
+当加拿大总理特鲁多向泽连斯基介绍一位坐在轮椅上的二战老兵（99岁的Melvin Hurwitz）的时候，老兵握着泽连斯基的手，突然要亲吻他的手。
+
+泽连斯基反应极快，连忙说“使不得，使不得”，马上蹲下来，搂住了老兵。
+
+西方吻手礼是信徒对牧师、平民对贵族、卑对尊的礼节，所以Zelensky这里有个明显的收手的动作，而那个拥抱则是儿子对父亲的礼节。
+
+MH: Oh, you’re the savior of the people, you bring tears to my eyes.
+
+Zelensky: No no, you saved Europe.
+
+MH: My hero.
+
+Zelensky: No, you are our hero.
+
+MH: I pray for you.
+
+Zelensky: Thank you so much.
+
+据美国退伍军人组织称，现年102岁的美国海军老兵罗伯特·佩尔希蒂在前往法国纪念诺曼底登陆80周年的途中，经德国停留期间病倒去世。
+
+https://www.bilibili.com/video/BV16E421P7pd
+
+泽连斯基在诺曼底登陆纪念活动上会见二战老兵
+
+---
+
 https://baike.baidu.com/tashuo/browse/content?id=0c64d05cac1e174119d96e5f
 
 泽连斯基：风云人物这一年
@@ -50,6 +76,10 @@ https://baike.baidu.com/tashuo/browse/content?id=0c64d05cac1e174119d96e5f
 https://zhuanlan.zhihu.com/p/685676929
 
 功亏一篑 俄罗斯导弹在敖德萨霸气袭击乌克兰总统
+
+https://zhuanlan.zhihu.com/p/702401827
+
+瓦夏的小手枪
 
 ## 群雄
 

@@ -187,6 +187,10 @@ CoWoS（Chip-on-Wafer-on-Substrate）
 
 TSV（Through Silicon Via）
 
+CoWoS良率虽然要达到85甚至95%并不难，但这个良率数字跟前段那种50%70%的良率，意义上完全不同，后段CoWoS良率差1%都严重影响成本，因为前段处理的晶圆不值钱，但interposer上的GPU&CPU die还有大量的HBM却很值钱。
+
+TSMC目前良率在99%以上，国内的盛H也就80%+的良率。
+
 https://xueqiu.com/8992033978/256442528
 
 一文看懂TSV技术
@@ -202,6 +206,10 @@ https://mp.weixin.qq.com/s/FVcmCvimpoGCtCtm4RDtUg
 https://www.zhihu.com/question/652833460
 
 中国可以自主实现CoWoS封装吗？国产CoWoS先进封装工艺发展到哪一步了？
+
+https://zhuanlan.zhihu.com/p/699977071
+
+CoWoS先进封装门槛到底是什么? 为何只有台积电独领风骚?
 
 ### 参考
 
