@@ -107,7 +107,7 @@ OpenVG和OpenGL 3D的差异：
 
 上图是OpenVG的pipeline。
 
-一般将主打OpenVG API的显卡称为2.5D GPU。它包含了2D GPU绘制矩形、线条的功能，同时也有一定的纹理处理的能力，后者一般是3D GPU的配置。
+一般将主打OpenVG API的显卡称为2.5D GPU。它既包含了2D GPU绘制矩形、线条的功能，同时也有一定的纹理处理的能力，而后者一般是3D GPU的配置。
 
 ## Vulkan
 

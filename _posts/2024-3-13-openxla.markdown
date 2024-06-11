@@ -87,7 +87,11 @@ python3 ./torch_xla_lenet.py
 
 debug env:
 
-`export PT_XLA_DEBUG=1`
+```bash
+export PT_XLA_DEBUG=1
+export XLA_SAVE_TENSORS_FILE=123.txt
+export XLA_SAVE_TENSORS_FMT=hlo
+```
 
 ---
 
@@ -163,6 +167,8 @@ if (hw_type == XlaDeviceType::TPU)
   resized =xla::CustomCall(...);
 }
 ```
+
+openxla/docs/custom_call.md
 
 ---
 
