@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（六）——LLM Inference, Alpa
+title:  并行 & 框架 & 优化（六）——LLM Inference, LLM System, Alpa
 category: DL acceleration 
 ---
 
@@ -92,6 +92,36 @@ https://github.com/NVIDIA/TensorRT-LLM/
 https://docs.vllm.ai/en/latest/
 
 Easy, fast, and cheap LLM serving for everyone
+
+# LLM System
+
+## RAG
+
+![](/images/img5/RAG.jpg)
+
+Retrieval Augmented Generation（检索增强生成）：通过检索获取相关的知识并将其融入Prompt，让大模型能够参考相应的知识从而给出合理回答。因此，可以将RAG的核心理解为“检索+生成”，前者主要是利用向量数据库的高效存储和检索能力，召回目标知识；后者则是利用大模型和Prompt工程，将召回的知识合理利用，生成目标答案。
+
+https://zhuanlan.zhihu.com/p/668082024
+
+一文搞懂大模型RAG应用
+
+## 向量数据库
+
+向量搜索在搜索、推荐、NLP等众多应用领域被广泛的使用，典型的互联网业务，包括电商、出行、点评、地图等都大量使用相关技术。随着ChatGPT带来的AI技术应用新热潮，向量数据库又一次地获得了更多的关注。它可以解决LLM不长记性（Memory，记忆）的问题。
+
+普遍认为 LLM + Vector Search + API pool 会变成复杂AI场景的标准解决方案。
+
+类似Pinecone，Weaviate，Qdrant，Chroma这样的专用向量数据库最初是为了解决ChatGPT的记忆能力不足而出现的Workaround。
+
+最发布的ChatGPT 3.5的上下文窗口只有4K Token，也就是不到两千个汉字。然而当下GPT 4的上下文窗口已经发展到了128K，扩大了32倍，足够塞进一整篇小说了。而且未来还会更大。这时候，用作临时周转的垫脚石——向量数据库SaaS就处在一个尴尬的位置上了。
+
+https://www.zhihu.com/question/603117242
+
+为什么各大VC最近都在投向量数据库？
+
+https://zhuanlan.zhihu.com/p/668509885
+
+向量数据库凉了吗？
 
 # Alpa
 
@@ -293,75 +323,3 @@ vivo AI计算平台弹性分布式训练的探索和实践
 https://mp.weixin.qq.com/s/IzLtn1SR-aFuxXM3GNZbFw
 
 蘑菇街自研服务框架如何提升在线推理效率？
-
-https://mp.weixin.qq.com/s/GheEA0Ag0vbhZeyzqpTl0A
-
-分布式优化：在大数据时代应运而生
-
-https://mp.weixin.qq.com/s/3uu50NWFJqA_MTb8wSxIKA
-
-如何优雅地训练大型模型？
-
-https://mp.weixin.qq.com/s/RMDEvy-3-L-Rag1OrZLYhg
-
-深度学习模型的训练时内存次线性优化
-
-https://mp.weixin.qq.com/s/8PUIJykzoNe-fYht5ozrcQ
-
-新一代CTR预测服务的GPU优化实践
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771181&idx=1&sn=30b2a5abc7261b4f2ea122e8e96fdabf
-
-世界第一超算跑深度学习模型，2.76万块V100 GPU将分布式训练扩展到极致
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771231&idx=2&sn=6907d6d7a98eab353a076ed48352aadc
-
-15分钟完成Kinetics视频识别训练，除了超级计算机你还需要TSM
-
-https://www.zhihu.com/question/404721763
-
-如何评价Google的GShard论文？
-
-https://mp.weixin.qq.com/s/eTwSo3GnxSnK-BwwZeWmKA
-
-Jeff Dean等提出自动化分层模型，优化CPU、GPU等异构环境，性能提升超60%
-
-https://mp.weixin.qq.com/s/q0VENBNgolpeWmDapF5q_g
-
-在有池化层、1步幅的CNN上减少冗余计算，一种广泛适用的架构转换方法
-
-https://mp.weixin.qq.com/s/YusIuUtvTwoskNRV_OV7iw
-
-100万帧数据仅1秒！AI大牛颜水成团队强化学习新作，代码已开源
-
-https://www.zhihu.com/answer/2259890109
-
-资源受限的人工智能
-
-https://mp.weixin.qq.com/s/ai_XI8ddP5I2m3ChCqnQsA
-
-高效大规模机器学习训练，198页PDF带你概览领域前沿进展
-
-https://mp.weixin.qq.com/s/RAjusu-Jyqb8K19N8KZ_3w
-
-一份552页《大规模数据系统：Large-scale Data Systems》硬核课程PPT
-
-https://mp.weixin.qq.com/s/AeCQK2hFy60pq6y1tRcs_A
-
-20页pdf，A Survey on Large-scale Machine
-
-https://mp.weixin.qq.com/s/_1Yr_BbFhlNEW7UtYvAaoA
-
-分布式深度学习，93页ppt概述最新DDL技术发展
-
-https://mp.weixin.qq.com/s/jC5v9BKQvlxa2_6cikXV9w
-
-分布式算法与优化，118页pdf
-
-https://zhuanlan.zhihu.com/p/58806183
-
-深度学习的分布和并行处理系统
-
-https://zhuanlan.zhihu.com/p/56991108
-
-一文说清楚Tensorflow分布式训练必备知识

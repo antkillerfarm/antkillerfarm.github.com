@@ -230,3 +230,77 @@ https://mp.weixin.qq.com/s/g-OPU4vp66HWcpqjdD2bBg
 https://mp.weixin.qq.com/s/8zi0JrloxuRdHcRm1dzCEQ
 
 利用VAE和LSTM生成时间序列
+
+# 并行 & 框架 & 优化+
+
+https://mp.weixin.qq.com/s/GheEA0Ag0vbhZeyzqpTl0A
+
+分布式优化：在大数据时代应运而生
+
+https://mp.weixin.qq.com/s/3uu50NWFJqA_MTb8wSxIKA
+
+如何优雅地训练大型模型？
+
+https://mp.weixin.qq.com/s/RMDEvy-3-L-Rag1OrZLYhg
+
+深度学习模型的训练时内存次线性优化
+
+https://mp.weixin.qq.com/s/8PUIJykzoNe-fYht5ozrcQ
+
+新一代CTR预测服务的GPU优化实践
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771181&idx=1&sn=30b2a5abc7261b4f2ea122e8e96fdabf
+
+世界第一超算跑深度学习模型，2.76万块V100 GPU将分布式训练扩展到极致
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771231&idx=2&sn=6907d6d7a98eab353a076ed48352aadc
+
+15分钟完成Kinetics视频识别训练，除了超级计算机你还需要TSM
+
+https://www.zhihu.com/question/404721763
+
+如何评价Google的GShard论文？
+
+https://mp.weixin.qq.com/s/eTwSo3GnxSnK-BwwZeWmKA
+
+Jeff Dean等提出自动化分层模型，优化CPU、GPU等异构环境，性能提升超60%
+
+https://mp.weixin.qq.com/s/q0VENBNgolpeWmDapF5q_g
+
+在有池化层、1步幅的CNN上减少冗余计算，一种广泛适用的架构转换方法
+
+https://mp.weixin.qq.com/s/YusIuUtvTwoskNRV_OV7iw
+
+100万帧数据仅1秒！AI大牛颜水成团队强化学习新作，代码已开源
+
+https://www.zhihu.com/answer/2259890109
+
+资源受限的人工智能
+
+https://mp.weixin.qq.com/s/ai_XI8ddP5I2m3ChCqnQsA
+
+高效大规模机器学习训练，198页PDF带你概览领域前沿进展
+
+https://mp.weixin.qq.com/s/RAjusu-Jyqb8K19N8KZ_3w
+
+一份552页《大规模数据系统：Large-scale Data Systems》硬核课程PPT
+
+https://mp.weixin.qq.com/s/AeCQK2hFy60pq6y1tRcs_A
+
+20页pdf，A Survey on Large-scale Machine
+
+https://mp.weixin.qq.com/s/_1Yr_BbFhlNEW7UtYvAaoA
+
+分布式深度学习，93页ppt概述最新DDL技术发展
+
+https://mp.weixin.qq.com/s/jC5v9BKQvlxa2_6cikXV9w
+
+分布式算法与优化，118页pdf
+
+https://zhuanlan.zhihu.com/p/58806183
+
+深度学习的分布和并行处理系统
+
+https://zhuanlan.zhihu.com/p/56991108
+
+一文说清楚Tensorflow分布式训练必备知识

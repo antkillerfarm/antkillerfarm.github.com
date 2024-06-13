@@ -91,7 +91,29 @@ debug env:
 export PT_XLA_DEBUG=1
 export XLA_SAVE_TENSORS_FILE=123.txt
 export XLA_SAVE_TENSORS_FMT=hlo
+export XLA_HLO_DEBUG=1
+export XLA_IR_DEBUG=1
 ```
+
+---
+
+tensor/op被统一为XlaNode。所以整个graph的执行流程被分为两个阶段：
+
+1）MakeNode阶段。建立input tensor和op，并缓存起来。
+
+2）SyncTensorsGraph阶段。app对于model的output tensor的计算请求，会触发Make output node的动作，这时就会进入SyncTensorsGraph阶段。
+
+这种lazy tensor模式，无需app显式调用compile&run的操作。但对于解读程序的StackTrace带来了极大的挑战，因为几乎所有的调用的起点都是`at::_ops::to_dtype_layout::call`这样的基础操作，然而后续的行为却差了十万八千里。
+
+此外，两阶段对于同一个tensor/op都会进行XLA指令的build，最终执行以SyncTensorsGraph阶段的为准。两阶段的XLABuilder的name是不同的，后一阶段以SyncTensorsGraph作为名字的前缀。
+
+XLATensor从LazyTensor中派生，然而LazyTensor并不是at::Tensor的派生，而是一个引用计数的对象，由于LazyTensor到at::Tensor的映射有些复杂，所以XLATensor使用Base()指向对应的at::Tensor。
+
+---
+
+Tensor相关的python到C++的接口需要实现VariableHooksInterface。
+
+XLANode到HLO的变换由XlaBuilder负责，然而除了XLA::Shape之外的信息，几乎全部丢失。
 
 ---
 
@@ -223,6 +245,16 @@ at::_ops::linear::call
 at::_ops::addmm::call
 at::_ops::addmm::redispatch
 torch_xla::XLANativeFunctions::addmm
+```
+
+---
+
+mata_data:
+
+```cpp
+XLATensor::SetNodeUserMetadata
+hlo->set_metadata_op_name
+XlaBuilder::SetOpMetadata/SetOneShotOpMetadata
 ```
 
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（六）——Beyond Transformer, BERT进阶（1）
+title:  Attention（六）——State Space Model, BERT进阶（1）
 category: Attention 
 ---
 
@@ -237,7 +237,24 @@ https://github.com/NVIDIA-Merlin/Transformers4Rec
 
 NVIDIA推出的RS库
 
-# Beyond Transformer
+# State Space Model
+
+RNN的状态变量：$$h_{t}=tanh \left(W h_{t-1}+U x_{t}\right)$$，其中的`tanh`不是线性计算，导致无法采用“矩阵运算结合律”进行并行优化。
+
+于是有了SSM（S3）：
+
+![](/images/img5/SSM.png)
+
+Structured State Space Model（S4）在S3的基础上做了一些改进之后发现，这个公式实际上就是一个Kalman Filter，而后者使用卷积加速已经是很成熟的套路了。
+
+![](/images/img5/SSM_3.png)
+
+因此可以将SSM的训练改为CNN的并行模式：
+
+![](/images/img5/SSM_2.png)
+
+
+---
 
 https://zhuanlan.zhihu.com/p/605425639
 
@@ -255,9 +272,17 @@ RNN-based没有attention之类机制的模型是怎么获得long memory的能力
 
 ---
 
+https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mamba-and-state
+
+A Visual Guide to Mamba and State Space Models
+
 https://blog.csdn.net/v_JULY_v/article/details/134923301
 
 一文通透想颠覆Transformer的Mamba：从SSM、S4到mamba、线性transformer(含RWKV解析)
+
+https://www.cnblogs.com/tuyuge/p/17407771.html
+
+Attention free transformer
 
 # BERT进阶
 

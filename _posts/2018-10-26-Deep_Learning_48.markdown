@@ -253,16 +253,6 @@ https://mp.weixin.qq.com/s/JS4Th2lzqJMFqHlRzeE38g
 
 基于Milvus的向量搜索实践（三）
 
-## RAG
-
-![](/images/img5/RAG.jpg)
-
-Retrieval Augmented Generation（检索增强生成）：通过检索获取相关的知识并将其融入Prompt，让大模型能够参考相应的知识从而给出合理回答。因此，可以将RAG的核心理解为“检索+生成”，前者主要是利用向量数据库的高效存储和检索能力，召回目标知识；后者则是利用大模型和Prompt工程，将召回的知识合理利用，生成目标答案。
-
-https://zhuanlan.zhihu.com/p/668082024
-
-一文搞懂大模型RAG应用
-
 ## 参考
 
 https://github.com/harpribot/awesome-information-retrieval

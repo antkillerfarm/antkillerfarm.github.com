@@ -61,6 +61,16 @@ $$\text{FFN}(x) = \text{ReLU}(xW_1)W_2$$
 
 ---
 
+attention是线性运算的还是非线性运算的？
+
+全局来看，对于x来说是非线性运算。因为仔细看一下Attention的计算公式，其中确实有一个针对q和k的softmax的非线性运算。
+
+但是对于value来说，并没有任何的非线性变换。所以每一次Attention的计算相当于是对value代表的向量进行了加权平均，虽然权重是非线性的权重。
+
+这就是FFN必须要存在的原因，或者说更本质的原因是因为FFN提供了最简单的非线性变换。
+
+---
+
 参考：
 
 https://zhuanlan.zhihu.com/p/685943779
@@ -70,6 +80,10 @@ https://zhuanlan.zhihu.com/p/685943779
 https://www.zhihu.com/question/646160485
 
 为什么transformer里面的自注意力总是被魔改，但里面的FFN却始终不变？
+
+https://www.zhihu.com/question/622085869
+
+如何理解Transformers中FFNs的作用？
 
 ## Reformer
 

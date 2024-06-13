@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Mysql, LevelDB, 向量数据库
+title:  Mysql, LevelDB
 category: database 
 ---
 
@@ -312,19 +312,3 @@ https://zhuanlan.zhihu.com/p/53299778
 https://cloud.tencent.com/developer/article/1602204
 
 LevelDB从入门到原理详解
-
-# 向量数据库
-
-向量搜索在搜索、推荐、NLP等众多应用领域被广泛的使用，典型的互联网业务，包括电商、出行、点评、地图等都大量使用相关技术。随着ChatGPT带来的AI技术应用新热潮，向量数据库又一次地获得了更多的关注。它可以解决LLM不长记性（Memory，记忆）的问题。
-
-普遍认为 LLM + Vector Search + API pool 会变成复杂AI场景的标准解决方案。
-
-类似Pinecone，Weaviate，Qdrant，Chroma这样的专用向量数据库最初是为了解决 ChatGPT 的记忆能力不足而出现的 Workaround —— 最发布的 ChatGPT 3.5 的上下文窗口只有 4K Token，也就是不到两千个汉字。然而当下 GPT 4 的上下文窗口已经发展到了 128K，扩大了32倍，足够塞进一整篇小说了 —— 而且未来还会更大。这时候，用作临时周转的垫脚石 —— 向量数据库 SaaS 就处在一个尴尬的位置上了。
-
-https://www.zhihu.com/question/603117242
-
-为什么各大VC最近都在投向量数据库？
-
-https://zhuanlan.zhihu.com/p/668509885
-
-向量数据库凉了吗？

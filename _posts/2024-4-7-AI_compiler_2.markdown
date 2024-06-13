@@ -105,7 +105,23 @@ NVIDIA Triton Inference Server（此前称为TensorRT Inference Server）能够�
 
 官网：
 
+https://triton-lang.org/main/index.html
+
+代码：
+
 https://github.com/openai/triton
+
+Triton Dialect：
+
+https://triton-lang.org/main/dialects/TritonDialect.html
+
+---
+
+![](/images/img5/triton.png)
+
+CUDA在线程的细粒度上进行编程，Triton是在分块的细粒度上进行编程。
+
+---
 
 参考：
 
@@ -116,6 +132,14 @@ OpenAI开源GPU编程语言Triton，将同时支持N卡和A卡
 https://zhuanlan.zhihu.com/p/613244988
 
 谈谈对OpenAI Triton的一些理解
+
+https://blog.csdn.net/kebijuelun/article/details/136343258
+
+OpenAI Triton 入门教程
+
+https://superjomn.github.io/posts/triton-mlir-publish/
+
+OpenAI/Triton MLIR 迁移工作简介
 
 ## NVFuser
 
