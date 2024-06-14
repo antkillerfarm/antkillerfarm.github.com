@@ -9,6 +9,74 @@ category: Attention
 
 # BERT进阶（续）
 
+## Electra
+
+https://mp.weixin.qq.com/s/dFT7KKMH56unkOEA9H4Kuw
+
+吊打BERT Large的小型预训练模型ELECTRA终于开源！真相却让人...
+
+https://mp.weixin.qq.com/s/6i9eQISKsWU0jawKzWg8nQ
+
+超越bert，最新预训练模型ELECTRA论文阅读笔记
+
+https://mp.weixin.qq.com/s/lkB1xn6G2P5Nivj7DcYg5w
+
+Electra: 判别还是生成，这是一个选择
+
+## Embedding
+
+预训练刚兴起时，在语言模型的输出端重用Embedding权重是很常见的操作，比如BERT、第一版的T5、早期的GPT，都使用了这个操作，这是因为当模型主干部分不大且词表很大时，Embedding层的参数量很可观，如果输出端再新增一个独立的同样大小的权重矩阵的话，会导致显存消耗的激增。不过随着模型参数规模的增大，Embedding层的占比相对变小了，加之《Rethinking embedding coupling in pre-trained language models》等研究表明共享Embedding可能会有些负面影响，所以现在共享Embedding的做法已经越来越少了。
+
+https://kexue.fm/archives/9698
+
+语言模型输出端共享Embedding的重新探索
+
+## 外推性
+
+对于Transformer模型来说，其长度的外推性是我们一直在追求的良好性质，它是指我们在短序列上训练的模型，能否不用微调地用到长序列上并依然保持不错的效果。
+
+自从Transform被提出以来，一个基本问题还没有被解决，一个模型如何在推断时对训练期间没有见过的更长序列进行外推。众所周知，Bert支持的最长句子长度是512，那为什么Bert只能支持512的句子长度呢？
+
+我们看一下BertEmbeddings的初始化，我们可以看到position_ids，被初始化成0-511，这个也就是BERT处理文本最大长度是512的原因，这里Bert使用的是绝对位置编码。
+
+参考：
+
+https://spaces.ac.cn/archives/9431
+
+长度外推性与局部注意力
+
+https://zhuanlan.zhihu.com/p/656684326
+
+大模型位置编码-ALiBi位置编码
+
+## RoPE
+
+Rotary Position Embedding是苏剑林的作品，并被后来流行的LLAMA等大模型所采用。DeepSeek的实验显示ALiBi明显不如RoPE。
+
+参考：
+
+https://spaces.ac.cn/archives/8265
+
+博采众长的旋转式位置编码
+
+## 参考
+
+https://www.zhihu.com/question/298203515
+
+如何评价BERT模型？
+
+https://mp.weixin.qq.com/s/Fao3i99kZ1a6aa3UhAYKhA
+
+全面超越人类！Google称霸SQuAD，BERT横扫11大NLP测试
+
+https://mp.weixin.qq.com/s/INDOBcpg5p7vtPBChAIjAA
+
+最强预训练模型BERT的Pytorch实现
+
+https://mp.weixin.qq.com/s/SZMYj4rMneR3OWST007H-Q
+
+解读谷歌最强NLP模型BERT：模型、数据和训练
+
 https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
 
 详细解读谷歌新模型BERT为什么嗨翻AI圈
@@ -308,87 +376,3 @@ https://mp.weixin.qq.com/s/dcp_ANYijRmicMYX7OpJmA
 https://mp.weixin.qq.com/s/DR4SkgOfUT7KYiaXm5NynQ
 
 跨语言版BERT：Facebook提出跨语言预训练模型XLM
-
-https://mp.weixin.qq.com/s/epjjHmlmMFhWtRO_cCUITA
-
-用BERT进行多标签文本分类
-
-https://mp.weixin.qq.com/s/Wk6gvOS_Qnud6ib1esMFXA
-
-加入Transformer-XL，这个PyTorch包能调用各种NLP预训练模型！
-
-https://mp.weixin.qq.com/s/GqqU3Ixht1BzMnQeRYQEqQ
-
-谷歌NLP深度学习模型BERT特征的可解释性表现怎么样？
-
-https://mp.weixin.qq.com/s/2f91Ksj19rk_emoFpEmPfA
-
-从BERT看大规模数据的无监督利用
-
-https://mp.weixin.qq.com/s/hF4EcKqmaTm_gemxX7Kftg
-
-BERT的嵌入层是如何实现的？
-
-https://mp.weixin.qq.com/s/CdjNQKSNuklVUsXe4InSoA
-
-FastBERT：放飞BERT的推理速度
-
-https://zhuanlan.zhihu.com/p/132361501
-
-BERT是如何分词的
-
-https://mp.weixin.qq.com/s/Tld9V1jdmWs06zNxiJNkZg
-
-BART&MASS自然语言生成任务上的进步
-
-https://mp.weixin.qq.com/s/G995ulqe6Ifxml_AJqapAw
-
-BERT在小米NLP业务中的实战探索
-
-https://www.cnblogs.com/gczr/p/12874409.html
-
-Sentence-BERT: 一种能快速计算句子相似度的孪生网络
-
-https://mp.weixin.qq.com/s/0hUNG6tC-hlfyTJtuzwU5w
-
-NLP中的Mask全解
-
-https://mp.weixin.qq.com/s/cyNcVNImoCOmTrsS0QVq4w
-
-用Siamese和Dual BERT来做多源文本分类
-
-https://mp.weixin.qq.com/s/uv74FKtUNtgjIBQZbsX7Qw
-
-你finetune BERT的姿势可能不对哦？
-
-https://mp.weixin.qq.com/s/BvM5zx-3XrsZj8BQ5WEa4A
-
-一文带你了解MultiBERT
-
-https://mp.weixin.qq.com/s/mFRhp9pJRa9yHwqc98FMbg
-
-BERT在美团搜索核心排序的探索和实践
-
-https://mp.weixin.qq.com/s/MPGF3tkNn3PBA_7S-fo9eg
-
-谷歌新模型突破BERT局限：NLP版“芝麻街”新成员Big Bird长这样
-
-https://zhuanlan.zhihu.com/p/165893466
-
-BERT及其变种
-
-https://mp.weixin.qq.com/s/5HZULHPI3-HJypvAMXEOcQ
-
-MT-BERT在文本检索任务中的实践
-
-https://mp.weixin.qq.com/s/0aZdGzcGW5ZA020rhX0qSQ
-
-BERT4Rec:使用Bert进行序列推荐
-
-https://mp.weixin.qq.com/s/fr-THgOeaTspKsv_hXnU2Q
-
-CogLTX：将BERT应用于长文本
-
-https://www.cnblogs.com/zhouxiaosong/p/11397655.html
-
-使用BERT模型生成token级向量

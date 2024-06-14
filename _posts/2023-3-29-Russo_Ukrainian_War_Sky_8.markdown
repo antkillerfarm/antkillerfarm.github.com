@@ -189,7 +189,7 @@ https://www.zhihu.com/zvideo/1551802887226732544
 
 ---
 
-![](/images/img5/Kharkov_2.jpg)
+![](/images/img5/2022_Kharkiv_Counteroffensive.png)
 
 ![](/images/img5/izium.webp)
 

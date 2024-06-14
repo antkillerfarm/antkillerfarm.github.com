@@ -209,6 +209,12 @@ https://mp.weixin.qq.com/s/dTJ7NvVs7qjF2FRoAZ_WlQ
 
 MuZero算法过程详解
 
+# GnuGo
+
+GnuGo是一个DRL时代之前的老牌开源围棋软件，但是它只有文字界面。一般使用Quarry作为它的GUI。
+
+`sudo apt install quarry`
+
 ## Leela Zero
 
 Leela Zero是比利时人Gian-Carlo Pascutto开源的围棋AI。它的算法与AlphaGo Zero相同。而训练采用GTP协议，集合全球算力，进行分布式训练。
@@ -224,6 +230,8 @@ https://github.com/gcp/leela-zero
 ## GTP
 
 Go Text Protocol，其目的是建立一个比GMP（Go Modem Protocol）协议的ascii接口更合适于双机通信、更简单、更有效、更灵活的接口。
+
+GTP将围棋软件分成了前后端，前端软件提供GUI，而后端软件负责对弈。
 
 官网：
 

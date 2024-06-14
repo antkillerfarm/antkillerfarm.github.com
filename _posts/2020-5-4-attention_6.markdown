@@ -239,6 +239,8 @@ NVIDIA推出的RS库
 
 # State Space Model
 
+## S3 & S4
+
 RNN的状态变量：$$h_{t}=tanh \left(W h_{t-1}+U x_{t}\right)$$，其中的`tanh`不是线性计算，导致无法采用“矩阵运算结合律”进行并行优化。
 
 于是有了SSM（S3）：
@@ -253,8 +255,62 @@ Structured State Space Model（S4）在S3的基础上做了一些改进之后发
 
 ![](/images/img5/SSM_2.png)
 
+序列模型的效率与效果的权衡点在于它们对状态的压缩程度：
 
----
+- 高效的模型必须有一个小的状态(比如RNN或S4)
+- 而有效的模型必须有一个包含来自上下文的所有必要信息的状态(比如transformer)
+
+S5：Simplified State Space Layers for Sequence Modeling
+
+## Mamba
+
+Linear-Time Sequence Modeling with Selective State Spaces
+
+SSM的问题在于其中的矩阵A、B、C不随输入不同而不同，即无法针对不同的输入针对性的推理。
+
+连续卷积的离散采样，包含了采样步长（step size）的参数。一般情况下，我们使用固定的step size进行采样，然而这个其实也是可变，或者说可学习的。
+
+较小的步长会忽略当前输入，而更多地使用先前的上文，而较大的步长会更多地关注当前输入。这也就是所谓的Selective State Spaces。
+
+然而这种非线性，又会破坏之前线性计算转换为卷积运算的前提。
+
+因此Mamba参考FlashAttention，设计了分块增量的卷积算法应对这个问题，也就是所谓的parallel scan。
+
+![](/images/img5/Mamba.png)
+
+上图是parallel scan的示意图，虽然计算N时刻的B，需要依赖N-1时刻的B，但是上文部分和本文部分的计算可以是并行的，两部分都做完之后，综合之，即可得到最终结果。
+
+![](/images/img5/Mamba_2.png)
+
+最终的Mamba Block如上图所示。其中的H3(Hungry Hungry Hippos)是之前提出的一种SSM架构。
+
+transformer中的FFN+GLU，被Conv取代，位置也有调整。
+
+![](/images/img5/Mamba_3.png)
+
+https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mamba-and-state
+
+A Visual Guide to Mamba and State Space Models
+
+https://blog.csdn.net/v_JULY_v/article/details/134923301
+
+一文通透想颠覆Transformer的Mamba：从SSM、HiPPO、S4到Mamba
+
+# RWKV
+
+## Linear Transformer
+
+![](/images/img5/Linear_Transformer.png)
+
+Linear Transformer将QKV的左乘变成右乘，从⽽将理论计算复杂度降为线性。在一般的NLP任务中，一个Head d的特征维度总是比输入序列长度N小得多的。
+
+Linear Transformer对于softmax的处理比较复杂，大体思路和FlashAttention差不多，也是局部求和的模式。
+
+https://www.cnblogs.com/tuyuge/p/17407771.html
+
+Attention free transformer
+
+## RWKV
 
 https://zhuanlan.zhihu.com/p/605425639
 
@@ -264,25 +320,15 @@ RWKV 14B对比GLM 130B和NeoX 20B，展示RWKV的性能
 
 https://github.com/BlinkDL/ChatRWKV
 
-RWKV没有使用attention，而是号称100% RNN。
+RWKV没有使用attention，而是号称100%RNN。
 
 RNN-based没有attention之类机制的模型是怎么获得long memory的能力的啊？
 
 这个形式就是Transformers are RNNs的形式，只不过把Q换成了positional invariant的time weighting。最近很多work都显示Attention里的Q其实没啥用，换成一个跟着相对位置exponential decay的term就行了。
 
----
+https://blog.csdn.net/v_JULY_v/article/details/132178447
 
-https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mamba-and-state
-
-A Visual Guide to Mamba and State Space Models
-
-https://blog.csdn.net/v_JULY_v/article/details/134923301
-
-一文通透想颠覆Transformer的Mamba：从SSM、S4到mamba、线性transformer(含RWKV解析)
-
-https://www.cnblogs.com/tuyuge/p/17407771.html
-
-Attention free transformer
+RWKV讲解
 
 # BERT进阶
 
@@ -311,71 +357,3 @@ https://mp.weixin.qq.com/s/RjeuHXa8O3MzSpTOuOHMkQ
 https://mp.weixin.qq.com/s/UEBKSKEkZTbpR49_Rh50Jg
 
 微软统一预训练语言模型UniLM 2.0解读
-
-## Electra
-
-https://mp.weixin.qq.com/s/dFT7KKMH56unkOEA9H4Kuw
-
-吊打BERT Large的小型预训练模型ELECTRA终于开源！真相却让人...
-
-https://mp.weixin.qq.com/s/6i9eQISKsWU0jawKzWg8nQ
-
-超越bert，最新预训练模型ELECTRA论文阅读笔记
-
-https://mp.weixin.qq.com/s/lkB1xn6G2P5Nivj7DcYg5w
-
-Electra: 判别还是生成，这是一个选择
-
-## Embedding
-
-预训练刚兴起时，在语言模型的输出端重用Embedding权重是很常见的操作，比如BERT、第一版的T5、早期的GPT，都使用了这个操作，这是因为当模型主干部分不大且词表很大时，Embedding层的参数量很可观，如果输出端再新增一个独立的同样大小的权重矩阵的话，会导致显存消耗的激增。不过随着模型参数规模的增大，Embedding层的占比相对变小了，加之《Rethinking embedding coupling in pre-trained language models》等研究表明共享Embedding可能会有些负面影响，所以现在共享Embedding的做法已经越来越少了。
-
-https://kexue.fm/archives/9698
-
-语言模型输出端共享Embedding的重新探索
-
-## 外推性
-
-对于Transformer模型来说，其长度的外推性是我们一直在追求的良好性质，它是指我们在短序列上训练的模型，能否不用微调地用到长序列上并依然保持不错的效果。
-
-自从Transform被提出以来，一个基本问题还没有被解决，一个模型如何在推断时对训练期间没有见过的更长序列进行外推。众所周知，Bert支持的最长句子长度是512，那为什么Bert只能支持512的句子长度呢？
-
-我们看一下BertEmbeddings的初始化，我们可以看到position_ids，被初始化成0-511，这个也就是BERT处理文本最大长度是512的原因，这里Bert使用的是绝对位置编码。
-
-参考：
-
-https://spaces.ac.cn/archives/9431
-
-长度外推性与局部注意力
-
-https://zhuanlan.zhihu.com/p/656684326
-
-大模型位置编码-ALiBi位置编码
-
-## RoPE
-
-Rotary Position Embedding是苏剑林的作品，并被后来流行的LLAMA等大模型所采用。DeepSeek的实验显示ALiBi明显不如RoPE。
-
-参考：
-
-https://spaces.ac.cn/archives/8265
-
-博采众长的旋转式位置编码
-
-## 参考
-
-https://www.zhihu.com/question/298203515
-
-如何评价BERT模型？
-
-https://mp.weixin.qq.com/s/Fao3i99kZ1a6aa3UhAYKhA
-
-全面超越人类！Google称霸SQuAD，BERT横扫11大NLP测试
-
-https://mp.weixin.qq.com/s/INDOBcpg5p7vtPBChAIjAA
-
-最强预训练模型BERT的Pytorch实现
-
-https://mp.weixin.qq.com/s/SZMYj4rMneR3OWST007H-Q
-
-解读谷歌最强NLP模型BERT：模型、数据和训练

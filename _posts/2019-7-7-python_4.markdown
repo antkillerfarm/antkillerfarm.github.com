@@ -444,6 +444,16 @@ BeautifulSoup的使用
 
 ## PDF
 
+ChatPaper中提及了SciPDF Parser以及ChatPaper项目自身实现的ChatPaper Parser。
+
+代码：
+
+https://github.com/kaixindelele/ChatPaper
+
+其他工具还有nougat、ScienceBeam。
+
+---
+
 https://mp.weixin.qq.com/s/fBz__E2Xu4GC7w1Uqx5NAA
 
 手把手教你如何用Python从PDF文件中导出数据

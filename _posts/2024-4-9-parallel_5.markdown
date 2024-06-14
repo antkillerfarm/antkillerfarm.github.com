@@ -123,6 +123,16 @@ https://zhuanlan.zhihu.com/p/668509885
 
 向量数据库凉了吗？
 
+## 实战
+
+https://blog.csdn.net/v_JULY_v/article/details/132178447
+
+七月论文审稿GPT第1版：通过3万多篇paper和10多万的review数据微调RWKV
+
+https://blog.csdn.net/v_JULY_v/article/details/134183799
+
+七月论文审稿GPT第2版：用一万多条paper-review数据微调LLaMA2 7B最终反超GPT4
+
 # Alpa
 
 Alpa是一个自动探索分布式策略的工具。

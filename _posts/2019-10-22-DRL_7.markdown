@@ -11,13 +11,19 @@ category: DRL
 
 ## KataGo
 
-KataGo是2019年以后发起的一个新项目，主要解决了Leela Zero和ELF OpenGo耗费算力过多的问题。它不仅训练更快，推理也有极大改进，即使家用显卡PC也可在合理的时间算出结果。支持更多的规则（如日本规则），改善了AlphaGo胜势下缓手的缺陷。
+KataGo是2019年以后发起的一个新项目，主要解决了Leela Zero和ELF OpenGo耗费算力过多的问题。它不仅训练更快，推理也有极大改进，即使家用显卡PC也可在合理的时间算出结果。支持更多的规则（如日本规则、自由调整贴目、还棋头等），改善了AlphaGo胜势下缓手的缺陷。
 
 目前，KataGo的棋力已经超越了Leela Zero和ELF OpenGo。
 
 官网：
 
 https://katagotraining.org/
+
+## Lizzie
+
+Lizzie诞生于2018年初，是程序员Annie Wagner设计的一款可加载围棋AI的图形界面程序，最初是为了实现Leela Zero的棋局实时分析功能。此后增加了对KataGo及一些其他开源围棋AI引擎的支持，可以使各种围棋AI运行在图形化界面下，方便使用者进行棋局分析。
+
+
 
 ## 参考
 

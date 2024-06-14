@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（八）——Attention进阶, Transformer进阶
+title:  Attention（八）——Attention进阶
 category: Attention 
 ---
 
@@ -8,6 +8,90 @@ category: Attention
 {:toc}
 
 # BERT进阶（续）
+
+https://mp.weixin.qq.com/s/epjjHmlmMFhWtRO_cCUITA
+
+用BERT进行多标签文本分类
+
+https://mp.weixin.qq.com/s/Wk6gvOS_Qnud6ib1esMFXA
+
+加入Transformer-XL，这个PyTorch包能调用各种NLP预训练模型！
+
+https://mp.weixin.qq.com/s/GqqU3Ixht1BzMnQeRYQEqQ
+
+谷歌NLP深度学习模型BERT特征的可解释性表现怎么样？
+
+https://mp.weixin.qq.com/s/2f91Ksj19rk_emoFpEmPfA
+
+从BERT看大规模数据的无监督利用
+
+https://mp.weixin.qq.com/s/hF4EcKqmaTm_gemxX7Kftg
+
+BERT的嵌入层是如何实现的？
+
+https://mp.weixin.qq.com/s/CdjNQKSNuklVUsXe4InSoA
+
+FastBERT：放飞BERT的推理速度
+
+https://zhuanlan.zhihu.com/p/132361501
+
+BERT是如何分词的
+
+https://mp.weixin.qq.com/s/Tld9V1jdmWs06zNxiJNkZg
+
+BART&MASS自然语言生成任务上的进步
+
+https://mp.weixin.qq.com/s/G995ulqe6Ifxml_AJqapAw
+
+BERT在小米NLP业务中的实战探索
+
+https://www.cnblogs.com/gczr/p/12874409.html
+
+Sentence-BERT: 一种能快速计算句子相似度的孪生网络
+
+https://mp.weixin.qq.com/s/0hUNG6tC-hlfyTJtuzwU5w
+
+NLP中的Mask全解
+
+https://mp.weixin.qq.com/s/cyNcVNImoCOmTrsS0QVq4w
+
+用Siamese和Dual BERT来做多源文本分类
+
+https://mp.weixin.qq.com/s/uv74FKtUNtgjIBQZbsX7Qw
+
+你finetune BERT的姿势可能不对哦？
+
+https://mp.weixin.qq.com/s/BvM5zx-3XrsZj8BQ5WEa4A
+
+一文带你了解MultiBERT
+
+https://mp.weixin.qq.com/s/mFRhp9pJRa9yHwqc98FMbg
+
+BERT在美团搜索核心排序的探索和实践
+
+https://mp.weixin.qq.com/s/MPGF3tkNn3PBA_7S-fo9eg
+
+谷歌新模型突破BERT局限：NLP版“芝麻街”新成员Big Bird长这样
+
+https://zhuanlan.zhihu.com/p/165893466
+
+BERT及其变种
+
+https://mp.weixin.qq.com/s/5HZULHPI3-HJypvAMXEOcQ
+
+MT-BERT在文本检索任务中的实践
+
+https://mp.weixin.qq.com/s/0aZdGzcGW5ZA020rhX0qSQ
+
+BERT4Rec:使用Bert进行序列推荐
+
+https://mp.weixin.qq.com/s/fr-THgOeaTspKsv_hXnU2Q
+
+CogLTX：将BERT应用于长文本
+
+https://www.cnblogs.com/zhouxiaosong/p/11397655.html
+
+使用BERT模型生成token级向量
 
 https://mp.weixin.qq.com/s/JLP4-5IR6HPK4SRQoC9FAQ
 
@@ -306,85 +390,3 @@ https://mp.weixin.qq.com/s/2gxp7A38epQWoy7wK8Nl6A
 https://zhuanlan.zhihu.com/p/25928551
 
 用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践
-
-# Transformer进阶
-
-https://mp.weixin.qq.com/s/MjCIAlDWyHPLj_sGSPc4rg
-
-复旦邱锡鹏组最新综述：A Survey of Transformers
-
-https://mp.weixin.qq.com/s/-Y7Qy-5aJNJ5bx8QJf3k2w
-
-Transformer及其变种
-
-https://mp.weixin.qq.com/s/nSokDcIkOSSrRnhHCuu4Mg
-
-Transformer家族简史（PART I）
-
-https://mp.weixin.qq.com/s/p919Kfv-1GSDM6u6FpnBsA
-
-Transformer家族简史（PART II）
-
-https://mp.weixin.qq.com/s/M0zLw9hA5xzontKB7Zj23Q
-
-Memory Transformer，一种简单明了的Transformer改造方案
-
-https://mp.weixin.qq.com/s/FJeZ8X9gtyciqCTs9zvlLA
-
-Transformer是CNN是GNN是RNN，Attention is all you need！
-
-https://mp.weixin.qq.com/s/d1qqRw7sWyLdoyfnqMBdJQ
-
-深度自适应Transformer
-
-https://mp.weixin.qq.com/s/UowNtBm_hqnes-Lz3POXGQ
-
-Transformers中的Beam Search高效实现
-
-https://mp.weixin.qq.com/s/KdKbOrjeeo7Db095V7mSFA
-
-Transformer之自适应宽度注意力
-
-https://mp.weixin.qq.com/s/EuCCeWz_rkktwLuFJ75BXA
-
-Transformer+AutoML: 遗传搜索在序列式任务上的应用
-
-https://mp.weixin.qq.com/s/OEpLpWzkdfFUQf4cKNuG4w
-
-Performer:基于正交随机特征的快速注意力计算
-
-https://mp.weixin.qq.com/s/eWQLkiJ_XIo7LpTUE9c0qA
-
-Transformer中的相对位置编码
-
-https://mp.weixin.qq.com/s/mZBHjuHJG9Ffd0nSoJ2ISQ
-
-什么是Transformer位置编码？
-
-https://mp.weixin.qq.com/s/V0NAOgluyZN9P8iuhMKRwQ
-
-Transformer为啥在NER上表现不好
-
-https://mp.weixin.qq.com/s/ANFSNW1-mcjPqjcroNHeZQ
-
-RealFormer：Real简单，Real有效
-
-https://mp.weixin.qq.com/s/u-Twg6Cj6VfL6m4K0seBlw
-
-谷歌研究院出品：高效Transformer模型最新综述
-
-https://mp.weixin.qq.com/s/2S_2Z5-ioCNxH1kqFcUuQA
-
-竞赛中的Transformer家族
-
-https://mp.weixin.qq.com/s/mc6M2vEcPG6oMfKe3_apzQ
-
-Transformer变体层出不穷，它们都长什么样？
-
-https://mp.weixin.qq.com/s/IWUxVzpdGIX1Oxn4KxjhHA
-
-一个Transformer，很强；两个，更强？（TransGAN）
-
-https://mp.weixin.qq.com/s/IWUxVzpdGIX1Oxn4KxjhHA
-
-TransGAN：两个Transformer可以构造一个强大的GAN
