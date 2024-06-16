@@ -225,10 +225,6 @@ https://mp.weixin.qq.com/s/9dphMMCaTRtJ-HtbygOP7w
 
 从青年欧拉对巴塞尔问题的解法说起
 
-https://mp.weixin.qq.com/s/68K3L_pD7xfobr_jA1QgWA
-
-陈景润究竟为证明哥德巴赫猜想做出了哪些贡献？
-
 https://mp.weixin.qq.com/s/HKe_rY9OgwFFc3JH8luokw
 
 数学编年史：数学的起源与发展历程

@@ -357,3 +357,21 @@ https://www.marxists.org/chinese/reference-books/sino-soviet-debate/index.htm
 https://www.zhihu.com/answer/3523222426
 
 如何评价丘吉尔的铁幕演说？
+
+---
+
+布达佩斯签订前一年的1993年，俄罗斯自由派为缓解国内矛盾和勒索乌克兰，煽动克里米亚独立，乌东退休煤炭工人绝食，在拿到黑海舰队70多艘舰船后，又把克里米亚和乌东俄族人给卖了，叶利钦签订了布达佩斯协议。
+
+---
+
+2016年，俄罗斯反兴奋剂机构(RUSADA)主席西涅夫（Vyacheslav Sinev）和反兴奋剂中心前执行主任卡马耶夫（Nikita Kamayev）先后死亡，且没有公布死因。
+
+两个领导的死直接促成莫斯科反兴奋剂中心前负责人罗琴科夫叛变，捅出索契冬奥会俄罗斯运动员系统性服用兴奋剂的事情。
+
+https://www.zhihu.com/question/55462424
+
+普京当政期间都暗杀过哪些人？
+
+https://zhuanlan.zhihu.com/p/682713763
+
+空难，下毒，枪杀，坠楼，暴毙。。。盘点俄罗斯反对派人物的花式死法

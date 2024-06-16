@@ -306,11 +306,21 @@ Linear Transformer将QKV的左乘变成右乘，从⽽将理论计算复杂度�
 
 Linear Transformer对于softmax的处理比较复杂，大体思路和FlashAttention差不多，也是局部求和的模式。
 
+## Attention free transformer
+
+![](/images/img5/AFT.jpg)
+
 https://www.cnblogs.com/tuyuge/p/17407771.html
 
 Attention free transformer
 
 ## RWKV
+
+![](/images/img5/RWKV.png)
+
+RWKV训练的时候用主图的CNN形式，而推理的时候用左下角的RNN形式。
+
+RNN的weight不随输入序列的不同而不同，而RWKV会根据输入序列，计算得到weight，这个weight随输入序列的变化而变化的特性，正好是attention的特性。
 
 https://zhuanlan.zhihu.com/p/605425639
 
@@ -325,10 +335,6 @@ RWKV没有使用attention，而是号称100%RNN。
 RNN-based没有attention之类机制的模型是怎么获得long memory的能力的啊？
 
 这个形式就是Transformers are RNNs的形式，只不过把Q换成了positional invariant的time weighting。最近很多work都显示Attention里的Q其实没啥用，换成一个跟着相对位置exponential decay的term就行了。
-
-https://blog.csdn.net/v_JULY_v/article/details/132178447
-
-RWKV讲解
 
 # BERT进阶
 

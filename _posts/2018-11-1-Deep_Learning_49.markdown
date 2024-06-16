@@ -244,3 +244,9 @@ https://mp.weixin.qq.com/s/kNTRpDbKQIalzJi_rx0noQ
 https://mp.weixin.qq.com/s/ZDPPWH570Vc6e1irwP1b1Q
 
 精细识别现实世界图像：李飞飞团队提出半监督适应性模型
+
+# 苏俄=
+
+19世纪俄罗斯外交大臣戈尔恰科夫曾经说过这样一句话：
+
+无论什么国际会议，都必须有俄国的外交官在场，因为我们无法预料到那里会发生什么
