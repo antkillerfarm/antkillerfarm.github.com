@@ -67,6 +67,8 @@ Diffusion Model主要通过采样的方法，不断逼近模型的数据分布�
 
 多个Step其实也是一种变相的加深网络方法。
 
+这种把**预测图片改进为预测噪声**的思路，一般被称为DDPM（Denoising Diffusion Probabilistic Model）。
+
 使用两种World划分的Stable Diffusion，还要再复杂一些，但也不多了。
 
 Image Decoder部分使用传统的AutoEncoder进行训练。
@@ -148,6 +150,10 @@ https://zhuanlan.zhihu.com/p/617134893
 https://www.zhihu.com/question/649097976
 
 为什么vae效果不好，但vae+diffusion效果就好了？
+
+https://blog.csdn.net/v_JULY_v/article/details/130361959
+
+图像生成发展起源：从VAE、VQ-VAE、扩散模型DDPM、DETR到ViT、Swin transformer
 
 ## Diffusion Transformer(DiT)
 

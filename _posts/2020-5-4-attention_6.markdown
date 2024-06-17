@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（六）——State Space Model, BERT进阶（1）
+title:  Attention（六）——State Space Model
 category: Attention 
 ---
 

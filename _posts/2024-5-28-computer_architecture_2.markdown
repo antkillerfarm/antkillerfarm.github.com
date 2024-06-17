@@ -121,7 +121,7 @@ https://zhuanlan.zhihu.com/p/594532014
 
 一文搞懂Cortex-A77（ARMv8架构）工作原理
 
-# 并行 & 框架 & 优化+
+# 并行 & 框架 & 优化=
 
 https://mp.weixin.qq.com/s/r951Iasr4dke6MPHsUO0TA
 

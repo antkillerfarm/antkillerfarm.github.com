@@ -7,9 +7,43 @@ category: DL acceleration
 * toc
 {:toc}
 
-# 快速Transformer
+# 快速Transformer（续）
 
-## PagedAttention（续）
+## FlashDecoding
+
+FlashDecoding是FlashAttention项目的一部分，但由于优化方向有所不同，特别单列出来。
+
+![](/images/img5/FlashDecoding.gif)
+
+Prefill阶段在Q的seqlen维度以及batch_size维度做并行。
+
+![](/images/img5/FlashDecoding.webp)
+
+但是在Decoding阶段，是逐token生成，在利用KV Cache的情况下，每次推理实际的queries token数为1，已经无法通过queries进行并行了。
+
+既然，Q和BS无法进一步并行了，那么对K,V进行并行是不是就可以了呢？
+
+- 首先，将K/V切分成更小的块，比如5块；
+- 然后在这些K/V块上，使用标准FlashAttention进行计算，得到所有小块的局部结果。
+- 最后，使用一个额外的kernel做全局的reduce，得到正确输出。
+
+FlashDecoding有时也被称为FlashAttention。
+
+## PagedAttention
+
+PagedAttention是UC Berkeley的作品。
+
+![](/images/img5/PagedAttention.gif)
+
+PagedAttention使用分页管理的方式管理KV Cache，将每个序列的KV Cache划分为块，每个块包含固定数量token的K/V。
+
+![](/images/img5/PagedAttention_2.gif)
+
+Parallel Sampling：我给模型发送一个请求，希望它对prompt做续写，并给出三种不同的回答。我们管这个场景叫parallel sampling。
+
+显然这里的prompt部分的KV cache是完全重复。这时可以使用如上图所示的进阶版本，通过类似MMU的逻辑地址和物理地址的映射，来解决存储问题。
+
+这个方法也可以推广到Beam Search、Shared prefix等场景。
 
 https://blog.vllm.ai/2023/06/20/vllm.html
 
@@ -99,11 +133,25 @@ Easy, fast, and cheap LLM serving for everyone
 
 ![](/images/img5/RAG.jpg)
 
+![](/images/img5/RAG.png)
+
 Retrieval Augmented Generation（检索增强生成）：通过检索获取相关的知识并将其融入Prompt，让大模型能够参考相应的知识从而给出合理回答。因此，可以将RAG的核心理解为“检索+生成”，前者主要是利用向量数据库的高效存储和检索能力，召回目标知识；后者则是利用大模型和Prompt工程，将召回的知识合理利用，生成目标答案。
 
 https://zhuanlan.zhihu.com/p/668082024
 
 一文搞懂大模型RAG应用
+
+https://blog.csdn.net/v_JULY_v/article/details/137711599
+
+RAG进阶之通用文档处理：从RAGFlow、TextMonkey到mPLUG-DocOwl 1.5
+
+---
+
+假设有一个10w的外部数据，我们的原始输入Prompt长度为100，长度限制为4k，通过查询-检索的方式，我们能将最有效的信息提取集中在这4k的长度中，与Prompt一起送给大模型，从而让大模型得到更多的信息。此外，还能通过多轮对话的方式不断提纯外部数据，达到在有限的输入长度限制下，传达更多的信息给大模型。
+
+https://blog.csdn.net/qq_40491305/article/details/130898052
+
+一文看懂LlamaIndex用法，为LLMs学习私有知识
 
 ## 向量数据库
 
@@ -132,6 +180,10 @@ https://blog.csdn.net/v_JULY_v/article/details/132178447
 https://blog.csdn.net/v_JULY_v/article/details/134183799
 
 七月论文审稿GPT第2版：用一万多条paper-review数据微调LLaMA2 7B最终反超GPT4
+
+https://blog.csdn.net/v_JULY_v/article/details/131552592
+
+基于LangChain+LLM的本地知识库问答：从企业单文档问答到批量文档问答
 
 # Alpa
 
@@ -239,97 +291,3 @@ Kokkos:一个异构并行计算通用平台
 # 数据流并行
 
 数据流并行是Pipeline并行的高阶版本。广义的数据流希望通过图编译找到全局最优策略，本质上是一种把编译器当万金油的惰性做法，深度学习框架在系统调度这种比较粗放的尺度，围绕数据流做了这么多年的自动并行化，最后业界主流实际上的并行策略还是预设的这些Pipeline、Tensor并行的组合，而不是编译器搜出来的自动化的并行策略。
-
-# 参考
-
-https://mp.weixin.qq.com/s/iAHvfgn54zIwfM9K8KFJnw
-
-DLM：微信大规模分布式n-gram语言模型系统
-
-https://mp.weixin.qq.com/s/s7sHzzLANOp8-1LxgXQskA
-
-谷歌开发者大会上，蚂蚁金服开源ElasticDL分布式深度学习系统
-
-https://mp.weixin.qq.com/s/IQMXg6nIJO-9-IG3mJpvRg
-
-ElasticDL：同时提升集群利用率和研发效率的分布式深度学习框架
-
-https://mp.weixin.qq.com/s/uQzwqcGwC9ZveuW64Lzkmg
-
-分布式训练怎么还减速了呢？
-
-https://zhuanlan.zhihu.com/p/294698838
-
-DLPerf—分布式深度学习最佳入门(踩坑)指南
-
-https://zhuanlan.zhihu.com/p/76638962
-
-Pytorch分布式训练
-
-https://zhuanlan.zhihu.com/p/360405558
-
-PyTorch分布式训练
-
-https://mp.weixin.qq.com/s/0aSBHvscloEnPMRLyNjQsg
-
-PyTorch分布式训练简明教程
-
-https://blog.csdn.net/orangerfun/article/details/123887725
-
-torch分布式训练
-
-https://mp.weixin.qq.com/s/r7kt1k7D1wurWs_uxdLCtg
-
-PyTorch源码解读之分布式训练
-
-https://mp.weixin.qq.com/s/_85oWK2plv2QOX5Qfg_-ZA
-
-大规模机器学习优化，195页ppt与视频
-
-https://mp.weixin.qq.com/s/soruo90Dbtzi6d1kA63Akg
-
-阿里提出智能算力引擎DCAF，节省20%GPU算力
-
-https://mp.weixin.qq.com/s/oDak7peTT5ynNYrH7LSWTg
-
-分布式层次GPU参数服务器架构
-
-https://zhuanlan.zhihu.com/p/28226956
-
-浮点峰值那些事儿
-
-https://zhuanlan.zhihu.com/p/285994980
-
-针对深度学习的GPU共享
-
-https://mp.weixin.qq.com/s/Np4w7RC2JFlB7ZGIduu71w
-
-爱奇艺机器学习平台的建设实践
-
-https://mp.weixin.qq.com/s/DwjvEn04lGzKU8mDu-5q4g
-
-大幅提升训练性能，字节跳动与清华提出新型分布式DNN训练架构
-
-https://mp.weixin.qq.com/s/dJa5zOXgJJQOM5uWog3JZA
-
-Local Parallesim：一种新并行训练方法
-
-https://zhuanlan.zhihu.com/p/335116835
-
-推荐系统Serving架构分析
-
-https://mp.weixin.qq.com/s/DdsJ-ZB_cX9UhbQNK6dCag
-
-分布式深度学习训练网络综述
-
-https://mp.weixin.qq.com/s/qpwBGlTtTLEAhYAUpPyXTQ
-
-CMU：分布式机器学习原理与策略 AAAI2021教程，附221页ppt
-
-https://mp.weixin.qq.com/s/nK-9ck5S6noIETOb8b2dJw
-
-vivo AI计算平台弹性分布式训练的探索和实践
-
-https://mp.weixin.qq.com/s/IzLtn1SR-aFuxXM3GNZbFw
-
-蘑菇街自研服务框架如何提升在线推理效率？

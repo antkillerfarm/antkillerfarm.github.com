@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（八）——Attention进阶
+title:  Attention（八）——BERT进阶（2）, Attention进阶
 category: Attention 
 ---
 
@@ -8,6 +8,86 @@ category: Attention
 {:toc}
 
 # BERT进阶（续）
+
+https://zhuanlan.zhihu.com/p/72805778
+
+BERT的演进和应用
+
+https://mp.weixin.qq.com/s/9YuBY0wLLVQ8ZrT9fiNICA
+
+语音版BERT？滴滴提出无监督预训练模型，中文识别性能提升10%以上
+
+https://mp.weixin.qq.com/s/OXkXjPHhaMXsKw2YevV6sw
+
+邱锡鹏：从Transformer到BERT--自然语言处理中的表示学习进展
+
+https://mp.weixin.qq.com/s/dV4RkxZOC9o2BxNi0GljKQ
+
+谷歌最强NLP模型BERT官方中文版来了！多语言模型支持100种语言
+
+https://zhuanlan.zhihu.com/p/49271699
+
+从Word Embedding到Bert模型—自然语言处理中的预训练技术发展史
+
+https://mp.weixin.qq.com/s/k_33UK1RkMyHn6TSudU6Kg
+
+详解谷歌最强NLP模型BERT
+
+https://mp.weixin.qq.com/s/d2MZQbamdo0EC_MVtf-HZA
+
+BERT详解：开创性自然语言处理框架的全面指南
+
+https://mp.weixin.qq.com/s/pD4it8vQ-aE474uSMQG0YQ
+
+两行代码玩转Google BERT句向量词向量
+
+https://mp.weixin.qq.com/s/osmUZxAAX3x-oTHYJbzemA
+
+谷歌BERT模型fine-tune终极实践教程
+
+https://mp.weixin.qq.com/s/XmeDjHSFI0UsQmKeOgwnyA
+
+小数据福音！BERT在极小数据下带来显著提升的开源实现
+
+https://mp.weixin.qq.com/s/HXYDO5PM8UIoXgEPGe8p-w
+
+图解当前最强语言模型BERT：NLP是如何攻克迁移学习的？
+
+https://mp.weixin.qq.com/s/zz3j9HEuzw5e92MQXxSQsA
+
+遗珠之作？谷歌Quoc Le这篇NLP预训练模型论文值得一看
+
+https://mp.weixin.qq.com/s/IN4YfoZnlBozwEFdhSvLZg
+
+用可视化解构BERT，我们从上亿参数中提取出了6种直观模式
+
+https://mp.weixin.qq.com/s/s1bQFdA6gtoHeeQMJKQ8UQ
+
+Bert时代的创新：Bert应用模式比较及其它
+
+https://mp.weixin.qq.com/s/zqlWx3e4LOJ3_Zy2DEbCjw
+
+从语言模型看Bert的善变与GPT的坚守
+
+https://mp.weixin.qq.com/s/LngE10Hnqe9bgFzpNfUwLQ
+
+NLP中的词向量对比：word2vec/glove/fastText/elmo/GPT/bert
+
+https://mp.weixin.qq.com/s/MgLLPEY3ynJGkuTgnIXndQ
+
+站在BERT肩膀上的NLP新秀们（PART I）
+
+https://mp.weixin.qq.com/s/nIT3GIU0dUIYyGChxsiOWw
+
+Google BERT应用之《红楼梦》对话人物提取
+
+https://mp.weixin.qq.com/s/dcp_ANYijRmicMYX7OpJmA
+
+如何用最强模型BERT做NLP迁移学习？
+
+https://mp.weixin.qq.com/s/DR4SkgOfUT7KYiaXm5NynQ
+
+跨语言版BERT：Facebook提出跨语言预训练模型XLM
 
 https://mp.weixin.qq.com/s/epjjHmlmMFhWtRO_cCUITA
 
@@ -330,63 +410,3 @@ https://mp.weixin.qq.com/s/lZOIK5BRXZrmL_Z9crl6sA
 https://mp.weixin.qq.com/s/jRfOzKO6OlQLokIzipbqUQ
 
 为什么使用自注意力机制？
-
-https://zhuanlan.zhihu.com/p/339123850
-
-关于attention机制的一些细节的思考
-
-https://mp.weixin.qq.com/s/n4mzHSweOT-vDWBGs0XFbw
-
-卷积神经网络中的自我注意
-
-https://mp.weixin.qq.com/s/h7sLwVXb_UI8jvJU-oe3Cg
-
-Google AI提出“透明注意力”机制，实现更深层NMT模型
-
-https://mp.weixin.qq.com/s/1LYz5SH5rVnPPJ0tZvRQAA
-
-从各种注意力机制窥探深度学习在NLP中的神威
-
-https://zhuanlan.zhihu.com/p/33078323
-
-数字串识别：基于位置的硬性注意力机制
-
-https://mp.weixin.qq.com/s/-gAISWjSiG6ccPuOPAEg3A
-
-五张动图，看清神经机器翻译里的Attention！
-
-https://mp.weixin.qq.com/s/aixpv9t1PLPRWUP6PvZ0EQ
-
-用自注意力增强卷积：这是新老两代神经网络的对话
-
-https://mp.weixin.qq.com/s/i3Xd_IB7R0-QPztn-pgpng
-
-遍地开花的Attention，你真的懂吗？
-
-https://zhuanlan.zhihu.com/p/151640509
-
-注意力机制在推荐系统中的应用
-
-https://mp.weixin.qq.com/s/-SU5cNbklI31WLmTawZJIQ
-
-自注意模型学不好？这个方法帮你解决！
-
-https://mp.weixin.qq.com/s/K5EbO0djcXHN4K5LQiMh5g
-
-Triplet Attention机制让Channel和Spatial交互更加丰富
-
-https://mp.weixin.qq.com/s/C4f0N_bVWU9YPY34t-HAEA
-
-UNC&Adobe提出模块化注意力模型MAttNet，解决指示表达的理解问题
-
-https://mp.weixin.qq.com/s/V3brXuey7Gear0f_KAdq2A
-
-基于注意力机制的交易上下文感知推荐，悉尼科技大学和电子科技大学最新工作
-
-https://mp.weixin.qq.com/s/2gxp7A38epQWoy7wK8Nl6A
-
-谷歌翻译最新突破，“关注机制”让机器读懂词与词的联系
-
-https://zhuanlan.zhihu.com/p/25928551
-
-用深度学习（CNN RNN Attention）解决大规模文本分类问题-综述和实践

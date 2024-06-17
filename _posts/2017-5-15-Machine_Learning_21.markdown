@@ -371,6 +371,10 @@ https://github.com/rsennrich/subword-nmt
 
 ![](/images/img5/Tokenizer.webp)
 
+BPE算法的各种实现中，以OpenAI开源的tiktoken库较快：
+
+https://github.com/openai/tiktoken
+
 参考：
 
 https://www.cnblogs.com/huangyc/p/10223075.html

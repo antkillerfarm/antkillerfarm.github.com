@@ -82,7 +82,11 @@ $$\left\{\begin{aligned}&PE_{2i}(p)=\sin\Big(p/10000^{2i/{d_{pos}}}\Big)\\
 &PE_{2i+1}(p)=\cos\Big(p/10000^{2i/{d_{pos}}}\Big) 
 \end{aligned}\right.$$
 
+其中，pos表示位置，i表示位置向量的下标。
+
 由于我们有$$\sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta$$以及$$\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta$$，这表明位置p+k的向量可以表示成位置p的向量的线性变换，这提供了表达相对位置信息的可能性。
+
+在实际的实现中，由于幂函数的指数比较小，数值稳定性较差，常采用指数+对数的方式进行计算。
 
 参考：
 
