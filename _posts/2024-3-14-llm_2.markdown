@@ -69,6 +69,10 @@ https://www.zhihu.com/question/651021172
 
 为什么需要RLHF？SFT不够吗？
 
+https://blog.csdn.net/v_JULY_v/article/details/132939877
+
+从零实现带RLHF的类ChatGPT：逐行解析微软DeepSpeed Chat的源码
+
 # AR vs AE
 
 自回归模型，是统计上一种处理时间序列的方法，用同一变数例如x的之前各期，亦即$$x_1$$至$$x_{t-1}$$来预测本期$$x_t$$的表现，并假设它们为一线性关系。因为这是从回归分析中的线性回归发展而来，只是不用x预测y，而是用x预测x自己，所以叫做自回归。

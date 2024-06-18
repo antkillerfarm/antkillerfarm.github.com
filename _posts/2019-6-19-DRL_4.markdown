@@ -185,6 +185,12 @@ https://zhuanlan.zhihu.com/p/27699682
 
 # PPO（Proximal Policy Optimization）
 
+TRPO（Trust Region Policy Opimization，2015）：考虑到连续动作空间无法每一个动作都搜索一遍，因此大部分情况下只能靠猜。如果要猜，就最好在信任域内部去猜。而TRPO将每一次对策略的更新都限制了信任域内，从而极大地增强了训练的稳定性。
+
+TRPO引入KL散度评估信任域，这被后来的PPO算法吸收并改进。
+
+---
+
 PPO是2017年由OpenAI提出的一种基于随机策略的DRL算法，也是当前OpenAI的默认算法。
 
 PPO是一种Actor-Critic算法。它的主要改进在它的Actor部分。
@@ -208,6 +214,8 @@ $$J^{\theta^k}_{PPO}(\theta)=J^{\theta^k}(\theta)-\beta KL(\theta, \theta^k)$$
 除了KL惩罚项之外，还可以使用clip来限制Gradient的大小，这就是PPO2的做法。
 
 和A3C类似，PPO也有一个分布式版本，叫做DPPO（Distributed Proximal Policy Optimization）。
+
+---
 
 参考：
 
