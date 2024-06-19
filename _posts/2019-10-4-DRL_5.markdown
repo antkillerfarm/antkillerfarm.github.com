@@ -7,6 +7,34 @@ category: DRL
 * toc
 {:toc}
 
+# IMPALA（续）
+
+![](/images/img3/IMPALA_2.png)
+
+上图展示了这种差异，A2C采样了一个Batch之后，所有的actor都要停下来计算梯度，而IMPALA中的actor可以一直采样，从而大大提高了采样效率。
+
+上图中的Batched A2C(sync step)和Batched A2C(sync traj)的区别在于：前者每次采样之后都要同步，这对于采样时间差异较大的例子，显然效率是很低下的。而后者是采样一批之后，再同步。
+
+不过这种操作和学习的解耦也导致actor的策略落后于learner。为了弥补这样的差距，IMPALA还引入了V-trace技术。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/56043646
+
+AlphaStar之IMPALA
+
+https://mp.weixin.qq.com/s/1zJyw67B6DqsHEJ3avbsfQ
+
+DeepMind推出分布式深度强化学习架构IMPALA，让一个Agent学会多种技能
+
+https://mp.weixin.qq.com/s/nfsm1v7MuI6mSpRb-rGBBQ
+
+谷歌推出分布式强化学习框架SEED，性能“完爆”IMPALA，可扩展数千台机器，还很便宜
+
+https://mp.weixin.qq.com/s/FQ7h0vixcztBUu70iFeYXw
+
+Google发布"强化学习"框架"SEED RL"
+
 # Hierarchical RL
 
 ![](/images/img3/Montezuma.png)
@@ -302,25 +330,3 @@ AlphaGo的Value Network是一个和Policy Network几乎一样的深度卷积网�
 - 走棋网络的运行速度是比较慢的（3毫秒），而快速走子能做到几微秒级别，差了1000倍。
 
 - 快速走子可以用来评估盘面。由于天文数字般的可能局面数，围棋的搜索是毫无希望走到底的，搜索到一定程度就要对现有局面做个估分。在没有估值网络的时候，不像国象可以通过算棋子的分数来对盘面做比较精确的估值，围棋盘面的估计得要通过模拟走子来进行，从当前盘面一路走到底，不考虑岔路地算出胜负，然后把胜负值作为当前盘面价值的一个估计。显然，如果一步棋在快速走子之后，生成的N个结果中的胜率较大的话，那它本身是步好棋的概率也较大。
-
-为了速度快，Fast rollout没有使用神经网络，而是使用传统的局部特征匹配（local pattern matching）加线性回归（logistic regression）的方法。
-
-这种方法虽然没有NN这么强，但还是比更为传统的基于规则的方案适应性好。毕竟规则是死的，而传统的机器学习，再怎么说也是可以自动学习规则的。当然，这更比随机走子的效率高了。
-
-DarkForestGo的走子基于规则模板，且没有快速走子，个人以为这才是它棋力差的主要原因。
-
-由于Fast rollout既可以提供策略，又有一定的价值评估的手段，因此单独使用它，比单独使用Policy Network或者Value Network都要好。相当于是一个劣化版本的AlphaGo。
-
-### MCTS
-
-AlphaGo的MCTS使用的是传统的UCT算法，没太多好讲的。一个细节是Game Tree的结点并不是立即展开，而是要等到路过该结点的次数超过一定阈值，才进行展开，从而大大减小了搜索空间。
-
-### 其他关键点
-
-![](/images/img3/AlphaGo_2.png)
-
-AlphaGo不是一个纯粹的DRL，它还是使用了人类棋谱的先验数据。
-
-- 首先，从人类棋谱中学习rollout策略，并初始化Policy Network。
-
-- 然后，使用自我博弈的方式，训练Policy Network和Value Network。

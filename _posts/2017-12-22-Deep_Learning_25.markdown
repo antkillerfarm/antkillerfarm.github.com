@@ -183,6 +183,78 @@ https://mp.weixin.qq.com/s/dcv2pqccrAtg2nNaHTTU2Q
 
 # DRL参考资源+
 
+https://mp.weixin.qq.com/s/CCQOHRCAolsorm8FEPdjoQ
+
+什么时候强化学习未必好用？
+
+https://mp.weixin.qq.com/s/Ctn1Wr68lph1UK_wjfCY1Q
+
+策略梯度搜索：不使用搜索树的在线规划和专家迭代
+
+https://mp.weixin.qq.com/s/78ir-Z4ch8_aVpjC6aCPGg
+
+DeepMind综述深度强化学习中的快与慢，智能体应该像人一样学习
+
+https://mp.weixin.qq.com/s?__biz=MzU1NTMyOTI4Mw==&mid=2247494226&idx=1&sn=a96ea0ad8961ec3698301cf0c4514843
+
+以YouTube论文学习如何在推荐场景应用强化学习
+
+https://mp.weixin.qq.com/s/SpCorsAiTWGYGiohT_gZtg
+
+如何训练智能体Agent玩毁灭战士ViZDoom？
+
+https://mp.weixin.qq.com/s/ewC2_8O29Gg0blxK7mHsYA
+
+比TD、MC、MCTS指数级快，性能超越A3C、DDQN等模型，这篇RL算法论文在Reddit上火了
+
+https://mp.weixin.qq.com/s/Q9QzXo_M3jYKjBWSsLYwgQ
+
+强化学习+树搜索：一种新型程序合成方法
+
+https://mp.weixin.qq.com/s/l46yJdRaftMlwr6odiSiHg
+
+Yoshua Bengio团队基于深度强化学习打造聊天机器人MILABOT
+
+https://mp.weixin.qq.com/s/6_cW22DCzSw3DpUDrLXLcA
+
+OpenAI提出强化学习近端策略优化，可替代策略梯度法
+
+http://mp.weixin.qq.com/s/S4jhpNKYZP5YQWaiiOQGFA
+
+DeepMind：“预测地图”海马体催生强化学习新算法
+
+https://mp.weixin.qq.com/s/KZHidOi5KYgg393R_JspBA
+
+DeepMind都拿不下的游戏，刚刚被OpenAI玩出历史最高分
+
+https://mp.weixin.qq.com/s/aVWHlwOmNIqOlu3025_RXQ
+
+DeepMind提出多任务强化学习新方法Distral
+
+https://mp.weixin.qq.com/s/gFHbLF-q91sddMAX1CRbEQ
+
+俞扬：“审时度势”的高效强化学习
+
+https://mp.weixin.qq.com/s/lstCIiNs_qA6k7GCYUBv2w
+
+阿尔伯塔大学提出新型多步强化学习方法，结合已有TD算法实现更好性能
+
+https://mp.weixin.qq.com/s/ybyZpaHr-JJg7CCdXGOl5A
+
+Seq2seq强化学习实战
+
+https://mp.weixin.qq.com/s/vYDb1rTdPxO1sIS38VX5xA
+
+DeepMind的AI学会了画画，利用强化学习完全不需人教：SPIRAL
+
+https://mp.weixin.qq.com/s/rpPN2rgru6krRz2fr1RhsQ
+
+模拟世界的模型：谷歌大脑与Jürgen Schmidhuber提出“人工智能梦境”
+
+https://mp.weixin.qq.com/s/AelAD57G4GOh7qm-_rvYsg
+
+伯克利提出DeepMimic：使用强化学习练就18般武艺
+
 https://mp.weixin.qq.com/s/W9yhj7_frLYWJocoBR1TMQ
 
 避免AI错把黑人识别为大猩猩：伯克利大学提出协同反向强化学习
@@ -322,9 +394,3 @@ https://mp.weixin.qq.com/s/8cV3Z_vkC0_cyfO2nVKoSw
 https://mp.weixin.qq.com/s/_-WSoeOqXMhR7S0PtyYixQ
 
 深度强化学习探索算法最新综述，近200篇文献揭示挑战和未来方向
-
-# 真垃圾筐+
-
-大概2005年的时候，BBC在国内拍了一部三集电视纪录片《替代疗法：针灸》，讲得便是上海某医院做心脏手术不用麻药，只在内关、合谷、云门三个穴位扎六根针就行的故事。BBC的摄影记者全程记录，从手术准备到病人出院为止，全程不停，力求客观真实。为了证明病人在术中是清醒的，麻醉师用手指碰了碰病人的额头，几秒钟后，病人睁开眼对着摄像机示意，BBC的记者大感震惊，手术果然没有使用麻药。手术结束后，病人接受采访表示：“整个手术中除了人有点迷迷糊糊外，一点也不觉得痛”。
-
-不过回国之后，，英国的专家感觉到不对，病人表示手术中一直是迷迷糊糊的，这似乎不是针灸的功效，而像是麻醉剂的效果。仔细分析之后，专家们发现医生在进行针刺麻醉前，给病人输入了强效阵痛药物芬太尼，强效镇静药物氟哌利多和外科手术中常用的诱导睡眠药物咪达唑仑，病人感到迷糊，其实是咪达唑仑造成的。同时，医生在手术处注射了大量的局部麻醉剂，三种强效阵痛、镇静药物再加上局部麻醉剂，患者当然不疼了。

@@ -162,6 +162,12 @@ CS 294：IRL
 
 # 模仿学习
 
+虽然RL理论上虽不需要大量标注数据，但实际上它所需求的reward会存在缺陷：
+
+比如游戏AI中，reward的制定非常困难，可能要制定成百上千条游戏规则，这并不比标注大量数据来得容易，又比如自动驾驶的多步决策（sequential decision）场景中，学习器很难频繁地获得reward，容易累计误差导致一些严重的事故.
+
+![](/images/img5/IL.png)
+
 https://zhuanlan.zhihu.com/p/27935902
 
 机器人学习Robot Learning之模仿学习Imitation Learning的发展
@@ -197,6 +203,10 @@ https://mp.weixin.qq.com/s/b1hXMbDKP_QZcBlmY7VtKQ
 https://mp.weixin.qq.com/s/5_UGxPYRXuuWkwchEUSc9w
 
 最新“模仿学习Imitation Learning”综述论文，21页概述进展与分类
+
+https://blog.csdn.net/v_JULY_v/article/details/135429156
+
+模仿学习的集中爆发：从Dobb·E、Gello到斯坦福Mobile ALOHA、UMI、DexCap、伯克利FMB
 
 # RL与神经科学
 

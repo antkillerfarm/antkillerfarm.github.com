@@ -23,7 +23,51 @@ https://katagotraining.org/
 
 Lizzie诞生于2018年初，是程序员Annie Wagner设计的一款可加载围棋AI的图形界面程序，最初是为了实现Leela Zero的棋局实时分析功能。此后增加了对KataGo及一些其他开源围棋AI引擎的支持，可以使各种围棋AI运行在图形化界面下，方便使用者进行棋局分析。
 
+目前最常用的是如下的Lizzie修改版：
 
+https://github.com/yzyray/lizzieyzy
+
+## AI作弊/对抗
+
+十多年前，当我还是一个中二青年的时候，就幻想有朝一日能够拿围棋世界冠军。当然，就算再中二，我自己也明白靠实力那是不可能的，当时做梦的法宝是制造一个AI，然后碾压一下所谓的国手。
+
+按照当时(2000年前后)人们的预计，这个AI在2030年之前，都不可能造出来，然而，最终的结果实际上只花了一半左右的时间。
+
+再之后，随着AI围棋的平民化，我的中二梦终于也有人将之付诸实现了：
+
+https://mp.weixin.qq.com/s/npt2zZrKwPnNdY-hsa2RjQ
+
+AI再乱围棋圈：“食言之战”柯洁落败；首例素人作弊引风波
+
+这次作弊风波所使用的AI就是Leela Zero，可见目前（2018.5）它的棋力已经超过了顶尖棋手。
+
+---
+
+![](/images/img5/Go.png)
+
+论文：
+
+《Adversarial Policies Beat Superhuman Go AIs》
+
+官网：
+
+https://goattack.far.ai/
+
+参考：
+
+https://www.zhihu.com/question/569568604
+
+如何看待katago被找到致命缺陷？
+
+https://www.zhihu.com/question/584836681
+
+如何看待美国业余围棋爱好者战胜顶级围棋AI，15局胜14局？
+
+---
+
+https://www.zhihu.com/question/554569740
+
+国际象棋比赛疑用智能肛珠作弊，比赛作弊是如何靠人工智能和肛珠实现的？
 
 ## 参考
 
@@ -302,48 +346,3 @@ MARL的结构一般如下图所示。
 **阶段博弈**：stage game，是随机博弈的组成成分，状态s是固定的，相当于一个状态固定的静态博弈，随机博弈中的Q值函数就是该阶段博弈的奖励函数。若干状态的阶段博弈组成一个随机博弈。
 
 **重复博弈**：智能体重复访问同一个状态的阶段博弈，并且在访问同一个状态的阶段博弈的过程中收集其他智能体的信息与奖励值，并学习更好的Q值函数与策略。
-
----
-
-MARL的目标是找到每一个状态的纳什均衡策略，然后将这些策略联合起来。
-
-<div style="text-align: center;">
-<table>
-  <tr>
-    <td colspan="2" rowspan="2"></td>
-    <td colspan="3">Game setting</td>
-  </tr>
-  <tr>
-    <td>Stateless Games</td>
-    <td>Team Markov Games</td>
-    <td>General Markov Games</td>
-  </tr>
-  <tr>
-    <td rowspan="2">Information<br/>Requirement</td>
-    <td>Independent Learners</td>
-    <td>Stateless Q-learning<br/>Learning Automata<br/>IGA<br/>FMQ<br/>Commitment Sequences<br/>Lenient Q-learners</td>
-    <td>Policy Search<br/>Policy Gradient</td>
-    <td>MG-ILA<br/>(WoLF-)PG<br/>Learning of Coordination<br/>Independent RL<br/>CQ-learning</td>
-  </tr>
-  <tr>
-    <td>Joint Action Learners</td>
-    <td></td>
-    <td>Distributed- Q<br/>Sparse Tabular Q<br/>Utile Coordination</td>
-    <td>Nash-Q<br/>Friend-or-Foe Q<br/>Asymmetric Q<br/>Joint Action Learning<br/>Correlated-Q</td>
-  </tr>
-</table>
-</div>
-
-参考：
-
-https://zhuanlan.zhihu.com/c_1061939147282915328
-
-一个MARL方面的专栏
-
-https://www.zhihu.com/people/yao-xing-hu/posts
-
-一个MARL方面的专栏
-
-https://github.com/LantaoYu/MARL-Papers
-
-Paper list of multi-agent reinforcement learning (MARL)
