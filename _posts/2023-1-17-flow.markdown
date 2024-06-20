@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Flow-based Model, Autoregressive Model
+title:  Flow-based Model, Diffusion Model
 category: Generative Model
 ---
 
@@ -113,152 +113,156 @@ https://lilianweng.github.io/posts/2018-10-13-flow-models/
 
 Flow-based Deep Generative Models
 
-# Autoregressive Model
+# Diffusion Model
 
-AR vs AE的相关内容在《Attention（七）》中已有描述，这里不再赘述。
+Diffusion Model也是一类生成模型方法。
 
-Autoregressive Model实际上是最古老的生成模型，比GAN/VAE/Flow/Diffusion都要古老。
+![](/images/img4/flow.png)
 
-![](/images/img4/gen.jpg)
+Diffusion Model主要通过采样的方法，不断逼近模型的数据分布，从而生成数据。基本原理和VAE一样仍然是Markov Chain Monte Carlo。
 
-这里以PixelCNN为例介绍一下AR Model的原理。
+以下以Stable Diffusion模型为例，介绍一下Diffusion Model的套路。
 
-![](/images/img5/PixelCNN.png)
+![](/images/img5/stable-diffusion.png)
 
-PixelCNN简单来说就是按照从左到右，从上到下的顺序依次生成图片。表面上和Diffusion Model差不多，也是若干step的生成过程。
+我们首先来看一下Stable Diffusion的流水线：
 
-但是有个问题就是中间步骤不能省略。比如一张28x28的图片，如果一次出1个点的话，一共就要28x28个step。少了其中的某一步，图片就不完整了。而且显然一次出1个点的模型一定和一次出2个点的模型是不一样的。
+1.输入是一段文字，或者是一段文字+一张背景图片，输出是一张生成的图片。
 
-但Diffusion Model就无所谓了，少了某一步，无非少了一种Noise Predictor而已，不会对结果有什么根本性的影响。
+2.Text Encoder用于NLP。
 
-PixelCNN训练和过程和Autoencoder差不多，也是最终生成的图片和训练图片做比较。但是为了表示没有偷看后面的数据，训练时需要用MASK遮住还未生成的那部分。
+3.Image Decoder用于生成图片。
 
-此外，PixelCNN还要给图片打分，用以表明生成的图片是那一类的。比如MNIST数据集的手写数字的10分类。
+4.上述这些部分都是很常规的，中间的Image Information Creator才是Stable Diffusion的关键。
 
-这样最终训练好之后，只要给出分类信息和seed，就可以生成图片了。
+![](/images/img5/stable-diffusion-latent-space-pixel-space.png)
+
+如上图所示，Image Information Creator的输入是一个随机的噪声，而输出是一个information tensor。无论是噪声，还是information tensor都属于Information World，而最后生成的图片属于Visual World。
+
+早期的原始Diffusion Model并没有这种World的划分，而是直接由噪声得到图片，所以很不Stable。
+
+![](/images/img5/stable-diffusion-denoising-steps-latents.png)
+
+从上图可以看出：Diffusion Model由于天生就是渐变的迭代过程，因此在流程的可控性上很有优势。
+
+当时间宽裕时可以通过高轮次的迭代获得高质量的合成样本，同时较低轮次的快速合成也可以得到没有明显瑕疵的合成样本。（仍以上图为例，实际上Step 4的图片就已经相当OK了。）而高低轮次迭代之间完全不需要重新训练模型，只用手动调整一些轮次相关的参数。
+
+因此，很自然的又有了Cascaded Diffusion Models。
+
+论文：
+
+《Cascaded Diffusion Models for High Fidelity Image Generation》
+
+回到Stable Diffusion本身，我们先看一下没有两种World划分的Diffusion Model是怎么训练的。
+
+![](/images/img5/stable-diffusion-forward-diffusion-training-example.png)
+
+首先我们生成一堆的随机噪声，然后随机选择其中一种噪声，添加到图片上。这样就得到了一组数据集：
+
+![](/images/img5/stable-diffusion-u-net-noise-training-examples-2.png)
+
+我们的目标就是训练一个噪声预测模型。
+
+![](/images/img5/stable-diffusion-u-net-noise-training-step.png)
+
+用预测的噪声和原始生成的噪声做对比，计算loss。
+
+![](/images/img5/stable-diffusion-image-generation-v2.png)
+
+推理的时候，首先生成一组噪声图片，放入Noise Predictor，生成预测的噪声。然后用噪声图片-预测的噪声就得到了生成的图片。这个去噪过程，也可以进行多个Step。显然Step越多，图片质量越高。
+
+多个Step其实也是一种变相的加深网络方法。
+
+这种把**预测图片改进为预测噪声**的思路，一般被称为DDPM（Denoising Diffusion Probabilistic Model）。
+
+使用两种World划分的Stable Diffusion，还要再复杂一些，但也不多了。
+
+Image Decoder部分使用传统的AutoEncoder进行训练。
+
+这样Diffusion过程就可以在Information World中进行了。
+
+![](/images/img5/stable-diffusion-forward-and-reverse-process-v2.png)
 
 参考：
 
-https://zhuanlan.zhihu.com/p/591881660
+https://jalammar.github.io/illustrated-stable-diffusion/
 
-通俗形象地分析比较生成模型（GAN/VAE/Flow/Diffusion/AR）
+The Illustrated Stable Diffusion
 
-https://mp.weixin.qq.com/s/YZcw5pnHzuACSvEmGZHnEQ
+https://lilianweng.github.io/lil-log/2021/07/11/diffusion-models.html
 
-自回归模型:PixelCNN
+What are Diffusion Models?
 
-https://www.microsoft.com/en-us/research/uploads/prod/2022/12/Generative-Models-for-TTS.pdf
+https://zhuanlan.zhihu.com/p/366004028
 
-Generative Models for TTS
+另辟蹊径—Denoising Diffusion Probabilistic一种从噪音中剥离出图像/音频的模型
 
-# 苏俄笑话+
+https://zhuanlan.zhihu.com/p/384144179
 
-一个苏联人在大街上骂道：“勃列日涅夫是蠢猪！”
+Denoising Diffusion Probabilistic Model(DDPM)
 
-法院判这个人有期徒刑十年零一个月：其中一个月刑期是因为辱骂领袖，十年刑期是因为泄露国家机密。
+https://speech.ee.ntu.edu.tw/~hylee/ml/ml2023-course-data/DDPM%20(v7)
 
----
+李宏毅：DDPM讲解
 
-美国人：我敢在白宫外骂总统，你能吗？
+https://zhuanlan.zhihu.com/p/637815071
 
-苏联人：我也敢在白宫外骂美国总统。
+DDPM（模型架构篇）
 
----
+https://zhuanlan.zhihu.com/p/650394311
 
-一个文化宣传部的局长要退休了，退休之前想提拔两个人，以后有什么事好有关系，但思考了几天不知道提拔谁。
+DDPM（数学原理篇）
 
-这时妻子看到老公这几天愁眉苦脸的，问他怎么了？局长就把自己的问题，给妻子讲了一遍。
+https://zhuanlan.zhihu.com/p/377603135
 
-妻子出主意就说：你就说你被双规，我通知他们来商量对策，看看谁在困难的时候选择过来给你分忧，他就是自己人。
+Diffusion Probabilistic Model
 
-妻子分别发短信给四名心腹，两天过后，别说登门的，连一个电话都没有。
+https://yang-song.github.io/blog/2021/score/
 
-局长正在痛心，就在这时终于有人来敲门了，开门后没想到竟然是两位纪检人员，他们说:“你被双规了”。
+Generative Modeling by Estimating Gradients of the Data Distribution
 
-局长两眼一瞪:“开什么玩笑，我老婆那短信是假的。”
+https://www.zhihu.com/question/536012286
 
-纪检人员说:“就因为那条假短信，你的四名部下把你的材料交到我们这里了。”
+diffusion model最近在图像生成领域大红大紫，如何看待它的风头开始超过GAN？
 
----
+https://www.zhihu.com/question/558475081
 
-普京这一仗打得让世界吃惊：打废了乌克兰，打傻了日本，打残了北约，打蒙了美国，打醒了欧盟，把台独分子打怂了，打出了病毒的来源，把中俄关系给打牢了，把联合国打得不敢说话了。他打黄了股市，打长了物价，打出了真理，打出了威风，打出了水平，打出了一个真正的硬汉。
+AI绘画过去也一直有研究，为什么会在最近几个月突然爆发？
 
----
+https://mp.weixin.qq.com/s/G50p0SDQLSghTnMAOK6BMA
 
-一天晚上，埃里希·昂纳克（东德领导人）和情人在豪华寝室里说着枕边悄悄话。
+Diffusion Model
 
-他心情舒畅，慷慨地许诺她一个礼物，要什么都行。
+https://zhuanlan.zhihu.com/p/549623622
 
-她想了一会，回答说：“哦，埃里希，如果让你一定要为我做一件事的话，我希望是：开放柏林墙，一天就够了。”
+Diffusion Models：生成扩散模型
 
-昂纳克说：“当然没问题，亲爱的。”
+https://www.zhihu.com/question/549222340
 
-不过他对她这样的请求有些不解，就问，“为什么要我做这样一件事呢？”
+国内有没有类似于Disco Diffusion的AI绘画工具？
 
-情人回答说：“我只想和你单独享受二人世界。”
+https://zhuanlan.zhihu.com/p/617905470
 
----
+Stable Diffussion显存不够用的拯救者插件
 
-美术馆里有一幅描写亚当和夏娃的画。
+https://www.zhihu.com/question/577079491
 
-一个英国人看了，说：“他们一定是英国人，男士有好吃的东西就和女士分享。”
+stable diffusion的技术原理是什么？
 
-一个法国人看了，说：“他们一定是法国人，情侣裸体散步，追求浪漫。”
+https://zhuanlan.zhihu.com/p/617134893
 
-一个苏联人看了，说：“他们一定是苏联人，他们没有衣服穿，吃得东西少得可怜，却还以为自己生活在天堂里！”
+文生图模型之Stable Diffusion
 
----
+https://www.zhihu.com/question/649097976
 
-普京在地狱碰见傻大木。
+为什么vae效果不好，但vae+diffusion效果就好了？
 
-傻大木：老弟，你咋也下来了，也是荡秋千来的啊。
+https://blog.csdn.net/v_JULY_v/article/details/130361959
 
-普京：是啊，那玩意真疼，扑腾了老半天。
+图像生成发展起源：从VAE、VQ-VAE、扩散模型DDPM、DETR到ViT、Swin transformer
 
-傻：你也跟美国人干仗了？
+## Diffusion Transformer(DiT)
 
-普：我跟乌克兰打仗，对抗整个北约！
+DiT使用Transformer替换了U-Net架构，算是2023年度Diffusion Model的一大改进。
 
-傻：乌克兰加入北约了？
-
-普：……没有……
-
-傻：北约派兵去乌克兰了？
-
-普：……没有……
-
-傻：那你是怎么对抗北约的？
-
-普：就是北约给了乌克兰点钱，和一些军火。
-
-傻：确实，欧美军火确实厉害，当年F15、F16、F18、F117打的我找不着北。
-
-普：这些都没给……
-
-傻：那A10，阿帕奇，狂风呢？
-
-普：也没有。
-
-傻：那都给了点啥？
-
-普：海马斯，M1A1，豹2，挑战者2这些……
-
-傻：这些也都挺厉害，给了好几千台吧？
-
-普：每种三四十台，挑战者十几台……
-
-傻：那你打了多久?
-
-普：两三年。
-
-傻：打死多少北约士兵?
-
-普：一个也没有……
-
-傻：老弟，你这不行呀，我这当年扛的可是英法几十万联军，我也不敢说我扛北约，你连个乌克兰都打不过，这么吹牛逼，也不怕风大闪了舌头。
-
-普：本来我也是不相信的，只是有人天天说俄罗斯扛住了北约，说的我都信了。
-
-傻：你说的那帮人我知道，当年我本来慌得一批准备跑路，结果听有人说我根本不慌，踏马我只能装作不慌的样子，到最后跑都没处跑了。
-
-普：不怕神一样的对手，就怕猪一样的队友，拿着三鹿奶粉，奶谁死谁！
+《Scalable Diffusion Models with Transformers》

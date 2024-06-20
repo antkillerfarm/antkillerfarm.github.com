@@ -103,13 +103,23 @@ RLHF于2017年6月由OpenAI联合Google DeepMind推出。
 
 Actor/Critic Model在RLHF阶段是需要训练的；而Reward/Reference Model是参数冻结的。
 
-Reference Model（以下简称Ref模型）一般用SFT阶段得到的SFT模型做初始化，在训练过程中，它的参数是冻结的。Ref模型的主要作用是防止Actor”训歪”。
+Reference Model一般用SFT阶段得到的SFT模型做初始化，在训练过程中，它的参数是冻结的。Reference模型的主要作用是防止Actor”训歪”。
 
 Critic Model一般用Reward Model初始化，Reward模型由于已经包含了人类提供的事实数据，因此它在这里是无需训练的。
 
 ![](/images/img5/RLHF_2.png)
 
 ![](/images/img5/rlhf.jpg)
+
+---
+
+ReMax认为，我们可以丢掉Critic（教练），Actor不再需要受到Critic的指导，而是直接去对齐Reference Model。
+
+Group Relative Policy Optimization(GRPO)
+
+这类方法效果一般，通常用于没有计算资源的时候Fine-Tuning之用。
+
+---
 
 参考：
 
@@ -165,9 +175,25 @@ https://blog.csdn.net/v_JULY_v/article/details/128579457
 
 ChatGPT技术原理解析：从RL之PPO算法、RLHF到GPT4、instructGPT
 
+https://blog.csdn.net/v_JULY_v/article/details/129996493
+
+详解带RLHF的类ChatGPT：从TRL、ChatLLaMA到ColossalChat、DSC
+
 ## DPO
 
+Direct Preference Optimization是一类不训练reward model而直接更新LM的方法。
 
+![](/images/img5/DPO.png)
+
+对于同一个propmt，给定一个好的回答和一个不好的回答，通过降低不好回答被采样的概率，提升好回答的概率，从而进行模型训练。
+
+---
+
+Token-level Direct Preference Optimization（TDPO）
+
+Monolithic Preference Optimization without Reference Model（ORPO）
+
+---
 
 https://blog.csdn.net/v_JULY_v/article/details/134242910
 
