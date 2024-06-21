@@ -11,6 +11,14 @@ category: Attention
 
 ## DETR
 
+![](/images/img5/DETR.png)
+
+![](/images/img5/DETR_2.png)
+
+上图中的Object queries是训练数据集中的物体类别的Embedding，其本身也是需要训练的。
+
+训练之后的推理阶段，根据每个Object query，生成一个class+bound box。显然和NLP任务不同，这里没有先后依赖，是一个可以并行的过程。
+
 https://mp.weixin.qq.com/s/b5Ont9vHPeCPnAjuDGv5Bg
 
 Facebook开源新思路！DETR：用Transformers来进行端到端的目标检测

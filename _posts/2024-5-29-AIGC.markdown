@@ -161,6 +161,28 @@ https://blog.csdn.net/v_JULY_v/article/details/131205615
 
 AI绘画原理解析：从CLIP、BLIP到DALLE、DALLE 2、DALLE 3、Stable Diffusion
 
+# BLIP
+
+![](/images/img5/BLIP.png)
+
+Image-Text Contrastive Loss目标是对齐视觉和文本的特征空间。
+
+Image-Text Matching Loss调整视觉和语言之间的细粒度对齐。
+
+Language Modeling Loss使模型能够将视觉信息转换为连贯的字幕。
+
+![](/images/img5/BLIP_2.png)
+
+BLIP的视觉侧和文本侧分别使用预训练的CLIP ViT-G/14模型和FLAN-T5模型，仅中间的起桥接作用的Q-Former参与训练，训练需要的成本和数据量进一步降低，BLIP-2的训练数据量仅129M，16卡A100训练9天。
+
+此后这类桥接预训练的大模型（无论是CV还是NLP）的工作逐渐成为了主流，从头开始训练的，渐趋式微。
+
+# DALLE
+
+![](/images/img5/DALLE.png)
+
+
+
 # SORA
 
 https://openai.com/research/video-generation-models-as-world-simulators
