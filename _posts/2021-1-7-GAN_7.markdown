@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GAN（七）——GAN参考资源（3）
+title:  GAN（七）——GAN参考资源（3）, Autoregressive Model
 category: Generative Model
 ---
 
@@ -231,76 +231,40 @@ https://mp.weixin.qq.com/s/8zi0JrloxuRdHcRm1dzCEQ
 
 利用VAE和LSTM生成时间序列
 
-# 并行 & 框架 & 优化+
+# Autoregressive Model
 
-https://mp.weixin.qq.com/s/GheEA0Ag0vbhZeyzqpTl0A
+AR vs AE的相关内容在《Large Language Model（二）》中已有描述，这里不再赘述。
 
-分布式优化：在大数据时代应运而生
+Autoregressive Model实际上是最古老的生成模型，比GAN/VAE/Flow/Diffusion都要古老。
 
-https://mp.weixin.qq.com/s/3uu50NWFJqA_MTb8wSxIKA
+![](/images/img4/gen.jpg)
 
-如何优雅地训练大型模型？
+这里以PixelCNN为例介绍一下AR Model的原理。
 
-https://mp.weixin.qq.com/s/RMDEvy-3-L-Rag1OrZLYhg
+![](/images/img5/PixelCNN.png)
 
-深度学习模型的训练时内存次线性优化
+PixelCNN简单来说就是按照从左到右，从上到下的顺序依次生成图片。表面上和Diffusion Model差不多，也是若干step的生成过程。
 
-https://mp.weixin.qq.com/s/8PUIJykzoNe-fYht5ozrcQ
+但是有个问题就是中间步骤不能省略。比如一张28x28的图片，如果一次出1个点的话，一共就要28x28个step。少了其中的某一步，图片就不完整了。而且显然一次出1个点的模型一定和一次出2个点的模型是不一样的。
 
-新一代CTR预测服务的GPU优化实践
+但Diffusion Model就无所谓了，少了某一步，无非少了一种Noise Predictor而已，不会对结果有什么根本性的影响。
 
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771181&idx=1&sn=30b2a5abc7261b4f2ea122e8e96fdabf
+PixelCNN训练和过程和Autoencoder差不多，也是最终生成的图片和训练图片做比较。但是为了表示没有偷看后面的数据，训练时需要用MASK遮住还未生成的那部分。
 
-世界第一超算跑深度学习模型，2.76万块V100 GPU将分布式训练扩展到极致
+此外，PixelCNN还要给图片打分，用以表明生成的图片是那一类的。比如MNIST数据集的手写数字的10分类。
 
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771231&idx=2&sn=6907d6d7a98eab353a076ed48352aadc
+这样最终训练好之后，只要给出分类信息和seed，就可以生成图片了。
 
-15分钟完成Kinetics视频识别训练，除了超级计算机你还需要TSM
+参考：
 
-https://www.zhihu.com/question/404721763
+https://zhuanlan.zhihu.com/p/591881660
 
-如何评价Google的GShard论文？
+通俗形象地分析比较生成模型（GAN/VAE/Flow/Diffusion/AR）
 
-https://mp.weixin.qq.com/s/eTwSo3GnxSnK-BwwZeWmKA
+https://mp.weixin.qq.com/s/YZcw5pnHzuACSvEmGZHnEQ
 
-Jeff Dean等提出自动化分层模型，优化CPU、GPU等异构环境，性能提升超60%
+自回归模型:PixelCNN
 
-https://mp.weixin.qq.com/s/q0VENBNgolpeWmDapF5q_g
+https://www.microsoft.com/en-us/research/uploads/prod/2022/12/Generative-Models-for-TTS.pdf
 
-在有池化层、1步幅的CNN上减少冗余计算，一种广泛适用的架构转换方法
-
-https://mp.weixin.qq.com/s/YusIuUtvTwoskNRV_OV7iw
-
-100万帧数据仅1秒！AI大牛颜水成团队强化学习新作，代码已开源
-
-https://www.zhihu.com/answer/2259890109
-
-资源受限的人工智能
-
-https://mp.weixin.qq.com/s/ai_XI8ddP5I2m3ChCqnQsA
-
-高效大规模机器学习训练，198页PDF带你概览领域前沿进展
-
-https://mp.weixin.qq.com/s/RAjusu-Jyqb8K19N8KZ_3w
-
-一份552页《大规模数据系统：Large-scale Data Systems》硬核课程PPT
-
-https://mp.weixin.qq.com/s/AeCQK2hFy60pq6y1tRcs_A
-
-20页pdf，A Survey on Large-scale Machine
-
-https://mp.weixin.qq.com/s/_1Yr_BbFhlNEW7UtYvAaoA
-
-分布式深度学习，93页ppt概述最新DDL技术发展
-
-https://mp.weixin.qq.com/s/jC5v9BKQvlxa2_6cikXV9w
-
-分布式算法与优化，118页pdf
-
-https://zhuanlan.zhihu.com/p/58806183
-
-深度学习的分布和并行处理系统
-
-https://zhuanlan.zhihu.com/p/56991108
-
-一文说清楚Tensorflow分布式训练必备知识
+Generative Models for TTS

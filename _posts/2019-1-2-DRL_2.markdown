@@ -93,6 +93,10 @@ https://openrl-docs.readthedocs.io/
 
 OpenRL是由第四范式强化学习团队开发的基于PyTorch的强化学习研究框架
 
+https://github.com/DLR-RM/stable-baselines3/
+
+一个基于pytorch的DRL算法库
+
 # 概述
 
 ![](/images/img2/RL_intro.png)

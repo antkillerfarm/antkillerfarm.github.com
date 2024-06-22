@@ -77,6 +77,10 @@ https://mp.weixin.qq.com/s/AjmaX0B7xaCwEWi8sDOJyA
 
 ## 参考
 
+https://blog.csdn.net/v_JULY_v/article/details/135311471
+
+一文通透Text Embedding模型：从text2vec、openai-text embedding到m3e、bge
+
 http://kexue.fm/archives/4667/
 
 更别致的词向量模型(一)：simpler glove

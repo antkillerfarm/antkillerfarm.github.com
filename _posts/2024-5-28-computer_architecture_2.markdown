@@ -123,6 +123,22 @@ https://zhuanlan.zhihu.com/p/594532014
 
 # 并行 & 框架 & 优化+
 
+https://mp.weixin.qq.com/s/_1Yr_BbFhlNEW7UtYvAaoA
+
+分布式深度学习，93页ppt概述最新DDL技术发展
+
+https://mp.weixin.qq.com/s/jC5v9BKQvlxa2_6cikXV9w
+
+分布式算法与优化，118页pdf
+
+https://zhuanlan.zhihu.com/p/58806183
+
+深度学习的分布和并行处理系统
+
+https://zhuanlan.zhihu.com/p/56991108
+
+一文说清楚Tensorflow分布式训练必备知识
+
 https://mp.weixin.qq.com/s/r951Iasr4dke6MPHsUO0TA
 
 开源DAWN，Stanford的又一力作

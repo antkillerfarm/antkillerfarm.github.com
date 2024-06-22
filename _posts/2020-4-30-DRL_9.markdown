@@ -1,13 +1,39 @@
 ---
 layout: post
-title:  深度强化学习（九）——DRL参考资源（1）
+title:  深度强化学习（九）——王者荣耀, RLHF
 category: DRL 
 ---
 
 * toc
 {:toc}
 
-# 王者荣耀（续）
+# 王者荣耀
+
+腾讯绝悟也是DRL在MOBA游戏上的尝试。
+
+https://mp.weixin.qq.com/s/ptgHNil1gqrH2p-x3UZoFw
+
+紧急更新下降难度，《王者荣耀》绝悟AI难倒一片玩家
+
+https://mp.weixin.qq.com/s/kAuzmc70NYAr9HmyioD5xA
+
+腾讯绝悟AI完全体研究登上国际顶会与顶刊
+
+https://mp.weixin.qq.com/s/8jkJy8ZarvpodmBccAc74A
+
+中国AI足球队勇夺世界冠军，腾讯出品
+
+https://mp.weixin.qq.com/s/ma2SgFuNYu50oexnfBYYLw
+
+用AI打王者荣耀？认真谈谈强化学习的价值
+
+https://mp.weixin.qq.com/s/IFGUXI3YXVsjIVuJ717uaw
+
+用人工智能打王者荣耀：匹茨堡大学&腾讯AI Lab为游戏AI引入MCTS方法
+
+https://mp.weixin.qq.com/s/Q3WWqEnUaIvnLwoFHY5lfQ
+
+腾讯王者荣耀AI论文首次曝光：五AI王者局开黑与人类战队打成平手
 
 https://mp.weixin.qq.com/s/Mdq9fL10Zcjs_z3PeqtN9Q
 
@@ -20,6 +46,158 @@ https://mp.weixin.qq.com/s/_Ze8C8UQV9UZXnSX6qq2GA
 https://mp.weixin.qq.com/s/mj8PG-wRqSbEIR38fongHA
 
 用自己训练的AI玩王者荣耀是什么体验？
+
+# RLHF
+
+## reward modeling
+
+![](/images/img2/reward_modeling.jpg)
+
+训练一个奖励模型，其中包含来自用户的反馈，从而捕捉他们的意图。与此同时，我们通过强化学习训练一个策略，使奖励模型的奖励最大化。换句话说，我们把学习做什么(奖励模型)和学习怎么做(策略)区分开来。
+
+参考：
+
+https://mp.weixin.qq.com/s/4yGQtHtMqWlaB7MAsr8T_g
+
+DeepMind重磅论文：通过奖励模型，让AI按照人类意图行事
+
+https://mp.weixin.qq.com/s/TIWnnCmVZnFQNH9Fig5aTw
+
+DeepMind发布新奖励机制：让智能体不再“碰瓷”
+
+https://zhuanlan.zhihu.com/p/337759337
+
+BeBold：一种新的强化学习探索准则
+
+## RLHF in ChatGPT
+
+TAMER（Training an Agent Manually via Evaluative Reinforcement，评估式强化人工训练代理）框架将人类标记者引入到Agents的学习循环中，可以通过人类向Agents提供奖励反馈（即指导Agents进行训练），从而快速达到训练任务目标。
+
+![](/images/img4/TAMER.jpg)
+
+这算得上是一种有监督学习+RL了。
+
+![](/images/img5/RLHF.png)
+
+利用强化学习在大模型中注入人类的经验，所谓的Reinforcement Learning from Human Feedback(RLHF)，Policy Network输出的多样性及Reward的学习是ChatGPT成功的关键。
+
+## RLHF
+
+RLHF于2017年6月由OpenAI联合Google DeepMind推出。
+
+论文：
+
+《DeepSpeed-Chat: Easy, Fast and Affordable RLHF Training of ChatGPT-like Models at All Scales》
+
+![](/images/img5/RLHF_3.png)
+
+- Step 1
+
+将所有语料进行无监督训练，得到Pretrained Model，然后使用标注数据（如QA pair）进行Supervised Fine-Tuning，得到SFT Model。
+
+- Step 2
+
+编写QA pair毕竟比较费力，打分得到好/坏信息相对简单一些，同样也对Pretrained Model进行微调，得到Reward Model。
+
+- Step 3
+
+Actor/Critic Model在RLHF阶段是需要训练的；而Reward/Reference Model是参数冻结的。
+
+Reference Model一般用SFT阶段得到的SFT模型做初始化，在训练过程中，它的参数是冻结的。Reference模型的主要作用是防止Actor”训歪”。
+
+Critic Model一般用Reward Model初始化，Reward模型由于已经包含了人类提供的事实数据，因此它在这里是无需训练的。
+
+![](/images/img5/RLHF_2.png)
+
+![](/images/img5/rlhf.jpg)
+
+---
+
+ReMax认为，我们可以丢掉Critic（教练），Actor不再需要受到Critic的指导，而是直接去对齐Reference Model。
+
+Group Relative Policy Optimization(GRPO)
+
+这类方法效果一般，通常用于没有计算资源的时候Fine-Tuning之用。
+
+---
+
+参考：
+
+https://zhuanlan.zhihu.com/p/592671478
+
+ChatGPT背后的算法——RLHF
+
+https://zhuanlan.zhihu.com/p/612572103
+
+RLHF的其他优化方向
+
+https://zhuanlan.zhihu.com/p/608176805
+
+如何看懂ChatGPT里的RLHF公式以及相关实现
+
+https://zhuanlan.zhihu.com/p/644680366
+
+LLaMA2 RLHF技术细节
+
+https://zhuanlan.zhihu.com/p/645068532
+
+大模型RLHF的trick
+
+https://zhuanlan.zhihu.com/p/635569455
+
+RLHF实践
+
+https://zhuanlan.zhihu.com/p/667152180
+
+一些RLHF的平替汇总（2023.11）
+
+https://zhuanlan.zhihu.com/p/621456865
+
+DeepSpeed-Chat开源了
+
+https://brightliao.com/2023/05/25/chatgpt-rlhf/
+
+ChatGPT的自动优化
+
+https://www.zhihu.com/question/651021172
+
+为什么需要RLHF？SFT不够吗？
+
+https://blog.csdn.net/v_JULY_v/article/details/132939877
+
+从零实现带RLHF的类ChatGPT：逐行解析微软DeepSpeed Chat的源码
+
+https://blog.csdn.net/sinat_37574187/article/details/138200789
+
+图解大模型RLHF系列之：人人都能看懂的PPO原理与源码解读
+
+https://blog.csdn.net/v_JULY_v/article/details/128579457
+
+ChatGPT技术原理解析：从RL之PPO算法、RLHF到GPT4、instructGPT
+
+https://blog.csdn.net/v_JULY_v/article/details/129996493
+
+详解带RLHF的类ChatGPT：从TRL、ChatLLaMA到ColossalChat、DSC
+
+## DPO
+
+Direct Preference Optimization是一类不训练reward model而直接更新LM的方法。
+
+![](/images/img5/DPO.png)
+
+对于同一个propmt，给定一个好的回答和一个不好的回答，通过降低不好回答被采样的概率，提升好回答的概率，从而进行模型训练。
+
+---
+
+Token-level Direct Preference Optimization（TDPO）
+
+Monolithic Preference Optimization without Reference Model（ORPO）
+
+---
+
+https://blog.csdn.net/v_JULY_v/article/details/134242910
+
+RLHF的替代之DPO原理解析：从RLHF、Claude的RAILF到DPO、Zephyr
 
 # 常见问题建模方法
 
@@ -210,179 +388,3 @@ https://mp.weixin.qq.com/s/4w3wIyy4H0UGeqOGhNcIbA
 https://mp.weixin.qq.com/s/F_GsfAJRFJ_o8PETqUL35g
 
 谷歌大脑AI飞速解锁雅达利，训练不用两小时：预测能力“前所未有”
-
-https://mp.weixin.qq.com/s/6wPtb9Qdhr9FiMk15xrUsQ
-
-强化跨模态匹配和自监督模仿学习
-
-https://mp.weixin.qq.com/s/lU3_ONAIGDUv_AVv2Xn14w
-
-仅需2小时学习，基于模型的强化学习方法可以在Atari上实现人类水平
-
-https://mp.weixin.qq.com/s/w0_g5FlC6vx2MRAhADPq2g
-
-深度强化学习在智能对话上的应用
-
-https://mp.weixin.qq.com/s/4SZ1NN5hUUcO_dSe4Bv0NQ
-
-利用鲁棒控制实现深度强化学习驾驶策略的迁移
-
-https://mp.weixin.qq.com/s/rwqtw5b2Nap5UPU9DWBXqg
-
-强化学习与文本生成
-
-https://mp.weixin.qq.com/s/VPCtsv2Q73qVcNAa4Xufag
-
-从虚拟到现实，北大等提出基于强化学习的端到端主动目标跟踪方法
-
-https://mp.weixin.qq.com/s/6Sj2QIELQvI28Rpp7A39Fg
-
-如何通过结构化智能体完成物理构造任务？
-
-https://mp.weixin.qq.com/s/lR6BSa_pJzcinkSaSWsM2A
-
-伯克利提出强化学习新方法，可让智能体同时学习多个解决方案
-
-https://mp.weixin.qq.com/s/P-iSI80IVmb5s-Q15Re2HQ
-
-All In!我学会了用强化学习打德州扑克
-
-https://zhuanlan.zhihu.com/p/36322095
-
-最前沿：从虚拟到现实，DRL让小狗机器人跑起来了！
-
-https://mp.weixin.qq.com/s/xr-2cNoSYpCftLI3dV6zEw
-
-如何使用深度强化学习帮助自动驾驶汽车通过交叉路口？
-
-https://mp.weixin.qq.com/s/R_pfTXDMaLHmiCaSV2t_YA
-
-英特尔Nervana发布强化学习库Coach：支持多种价值与策略优化算法
-
-https://mp.weixin.qq.com/s/AyW7oOC7yxVtmswaMT1DGQ
-
-腾讯AI Lab获得计算机视觉权威赛事MSCOCO Captions冠军
-
-https://mp.weixin.qq.com/s/4aENmxUMEEPVPnexLKrg7Q
-
-新型强化学习算法ACKTR
-
-https://mp.weixin.qq.com/s/5PzTiPoXPC1gH3xszzT2dQ
-
-邓力等人提出BBQ网络：将深度强化学习用于对话系统
-
-https://mp.weixin.qq.com/s/pM8oykHmtu5O5jYJBZjO_w
-
-伯克利研究人员使用内在激励，教AI学会好奇
-
-https://mp.weixin.qq.com/s/3WI3QgfHXcrCPbvmHWOEkg
-
-强化学习在生成对抗网络文本生成中的作用
-
-https://mp.weixin.qq.com/s/IvR0O6dpz2GJCG7UQb5kUQ
-
-清华大学冯珺：基于强化学习的关系抽取和文本分类
-
-https://zhuanlan.zhihu.com/p/31579144
-
-让我们从零开始做一个机械手臂(强化学习)
-
-https://mp.weixin.qq.com/s/FiR_GRYqJYpJRO-2p44-Cg
-
-伯克利强化学习新研究：机器人只用几分钟随机数据就能学会轨迹跟踪
-
-https://mp.weixin.qq.com/s/_dHjZQ_7_7H34PHhV_lC3w
-
-全新强化学习算法详解，看贝叶斯神经网络如何进行策略搜索
-
-https://mp.weixin.qq.com/s/YCPXkFzYdC1gMfnprZsVXg
-
-如何让机器人多技能？通过最大熵强化学习
-
-https://mp.weixin.qq.com/s/dbtdNsT3nvLt4UKsrNsn_Q
-
-量化深度强化学习算法的泛化能力
-
-https://mp.weixin.qq.com/s/K-z_dX2-NepkEHbr45QlvQ
-
-微软研究院开源项目TextWorld：可用于强化学习训练的文本游戏
-
-https://mp.weixin.qq.com/s/K2DW_ntSWrlySpxgorF9dA
-
-Python强化学习实战，Anaconda公司的高级数据科学家讲解
-
-https://zhuanlan.zhihu.com/p/32089849
-
-概要：NIPS 2017 Deep Learning for Robotics Keynote
-
-https://mp.weixin.qq.com/s/CCQOHRCAolsorm8FEPdjoQ
-
-什么时候强化学习未必好用？
-
-https://mp.weixin.qq.com/s/Ctn1Wr68lph1UK_wjfCY1Q
-
-策略梯度搜索：不使用搜索树的在线规划和专家迭代
-
-https://mp.weixin.qq.com/s/78ir-Z4ch8_aVpjC6aCPGg
-
-DeepMind综述深度强化学习中的快与慢，智能体应该像人一样学习
-
-https://mp.weixin.qq.com/s?__biz=MzU1NTMyOTI4Mw==&mid=2247494226&idx=1&sn=a96ea0ad8961ec3698301cf0c4514843
-
-以YouTube论文学习如何在推荐场景应用强化学习
-
-https://mp.weixin.qq.com/s/SpCorsAiTWGYGiohT_gZtg
-
-如何训练智能体Agent玩毁灭战士ViZDoom？
-
-https://mp.weixin.qq.com/s/ewC2_8O29Gg0blxK7mHsYA
-
-比TD、MC、MCTS指数级快，性能超越A3C、DDQN等模型，这篇RL算法论文在Reddit上火了
-
-https://mp.weixin.qq.com/s/Q9QzXo_M3jYKjBWSsLYwgQ
-
-强化学习+树搜索：一种新型程序合成方法
-
-https://mp.weixin.qq.com/s/l46yJdRaftMlwr6odiSiHg
-
-Yoshua Bengio团队基于深度强化学习打造聊天机器人MILABOT
-
-https://mp.weixin.qq.com/s/6_cW22DCzSw3DpUDrLXLcA
-
-OpenAI提出强化学习近端策略优化，可替代策略梯度法
-
-http://mp.weixin.qq.com/s/S4jhpNKYZP5YQWaiiOQGFA
-
-DeepMind：“预测地图”海马体催生强化学习新算法
-
-https://mp.weixin.qq.com/s/KZHidOi5KYgg393R_JspBA
-
-DeepMind都拿不下的游戏，刚刚被OpenAI玩出历史最高分
-
-https://mp.weixin.qq.com/s/aVWHlwOmNIqOlu3025_RXQ
-
-DeepMind提出多任务强化学习新方法Distral
-
-https://mp.weixin.qq.com/s/gFHbLF-q91sddMAX1CRbEQ
-
-俞扬：“审时度势”的高效强化学习
-
-https://mp.weixin.qq.com/s/lstCIiNs_qA6k7GCYUBv2w
-
-阿尔伯塔大学提出新型多步强化学习方法，结合已有TD算法实现更好性能
-
-https://mp.weixin.qq.com/s/ybyZpaHr-JJg7CCdXGOl5A
-
-Seq2seq强化学习实战
-
-https://mp.weixin.qq.com/s/vYDb1rTdPxO1sIS38VX5xA
-
-DeepMind的AI学会了画画，利用强化学习完全不需人教：SPIRAL
-
-https://mp.weixin.qq.com/s/rpPN2rgru6krRz2fr1RhsQ
-
-模拟世界的模型：谷歌大脑与Jürgen Schmidhuber提出“人工智能梦境”
-
-https://mp.weixin.qq.com/s/AelAD57G4GOh7qm-_rvYsg
-
-伯克利提出DeepMimic：使用强化学习练就18般武艺

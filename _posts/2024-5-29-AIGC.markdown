@@ -1,227 +1,11 @@
 ---
 layout: post
-title:  Diffusion Model, CLIP, SORA, AIGC
+title:  AIGC, CLIP, SORA
 category: Generative Model
 ---
 
 * toc
 {:toc}
-
-# Diffusion Model
-
-Diffusion Model也是一类生成模型方法。
-
-![](/images/img4/flow.png)
-
-Diffusion Model主要通过采样的方法，不断逼近模型的数据分布，从而生成数据。基本原理和VAE一样仍然是Markov Chain Monte Carlo。
-
-以下以Stable Diffusion模型为例，介绍一下Diffusion Model的套路。
-
-![](/images/img5/stable-diffusion.png)
-
-我们首先来看一下Stable Diffusion的流水线：
-
-1.输入是一段文字，或者是一段文字+一张背景图片，输出是一张生成的图片。
-
-2.Text Encoder用于NLP。
-
-3.Image Decoder用于生成图片。
-
-4.上述这些部分都是很常规的，中间的Image Information Creator才是Stable Diffusion的关键。
-
-![](/images/img5/stable-diffusion-latent-space-pixel-space.png)
-
-如上图所示，Image Information Creator的输入是一个随机的噪声，而输出是一个information tensor。无论是噪声，还是information tensor都属于Information World，而最后生成的图片属于Visual World。
-
-早期的原始Diffusion Model并没有这种World的划分，而是直接由噪声得到图片，所以很不Stable。
-
-![](/images/img5/stable-diffusion-denoising-steps-latents.png)
-
-从上图可以看出：Diffusion Model由于天生就是渐变的迭代过程，因此在流程的可控性上很有优势。
-
-当时间宽裕时可以通过高轮次的迭代获得高质量的合成样本，同时较低轮次的快速合成也可以得到没有明显瑕疵的合成样本。（仍以上图为例，实际上Step 4的图片就已经相当OK了。）而高低轮次迭代之间完全不需要重新训练模型，只用手动调整一些轮次相关的参数。
-
-因此，很自然的又有了Cascaded Diffusion Models。
-
-论文：
-
-《Cascaded Diffusion Models for High Fidelity Image Generation》
-
-回到Stable Diffusion本身，我们先看一下没有两种World划分的Diffusion Model是怎么训练的。
-
-![](/images/img5/stable-diffusion-forward-diffusion-training-example.png)
-
-首先我们生成一堆的随机噪声，然后随机选择其中一种噪声，添加到图片上。这样就得到了一组数据集：
-
-![](/images/img5/stable-diffusion-u-net-noise-training-examples-2.png)
-
-我们的目标就是训练一个噪声预测模型。
-
-![](/images/img5/stable-diffusion-u-net-noise-training-step.png)
-
-用预测的噪声和原始生成的噪声做对比，计算loss。
-
-![](/images/img5/stable-diffusion-image-generation-v2.png)
-
-推理的时候，首先生成一组噪声图片，放入Noise Predictor，生成预测的噪声。然后用噪声图片-预测的噪声就得到了生成的图片。这个去噪过程，也可以进行多个Step。显然Step越多，图片质量越高。
-
-多个Step其实也是一种变相的加深网络方法。
-
-使用两种World划分的Stable Diffusion，还要再复杂一些，但也不多了。
-
-Image Decoder部分使用传统的AutoEncoder进行训练。
-
-这样Diffusion过程就可以在Information World中进行了。
-
-![](/images/img5/stable-diffusion-forward-and-reverse-process-v2.png)
-
-参考：
-
-https://jalammar.github.io/illustrated-stable-diffusion/
-
-The Illustrated Stable Diffusion
-
-https://lilianweng.github.io/lil-log/2021/07/11/diffusion-models.html
-
-What are Diffusion Models?
-
-https://zhuanlan.zhihu.com/p/366004028
-
-另辟蹊径—Denoising Diffusion Probabilistic一种从噪音中剥离出图像/音频的模型
-
-https://zhuanlan.zhihu.com/p/384144179
-
-Denoising Diffusion Probabilistic Model(DDPM)
-
-https://speech.ee.ntu.edu.tw/~hylee/ml/ml2023-course-data/DDPM%20(v7)
-
-李宏毅：DDPM讲解
-
-https://zhuanlan.zhihu.com/p/637815071
-
-DDPM（模型架构篇）
-
-https://zhuanlan.zhihu.com/p/650394311
-
-DDPM（数学原理篇）
-
-https://zhuanlan.zhihu.com/p/377603135
-
-Diffusion Probabilistic Model
-
-https://yang-song.github.io/blog/2021/score/
-
-Generative Modeling by Estimating Gradients of the Data Distribution
-
-https://www.zhihu.com/question/536012286
-
-diffusion model最近在图像生成领域大红大紫，如何看待它的风头开始超过GAN？
-
-https://www.zhihu.com/question/558475081
-
-AI绘画过去也一直有研究，为什么会在最近几个月突然爆发？
-
-https://mp.weixin.qq.com/s/G50p0SDQLSghTnMAOK6BMA
-
-Diffusion Model
-
-https://zhuanlan.zhihu.com/p/549623622
-
-Diffusion Models：生成扩散模型
-
-https://www.zhihu.com/question/549222340
-
-国内有没有类似于Disco Diffusion的AI绘画工具？
-
-https://zhuanlan.zhihu.com/p/617905470
-
-Stable Diffussion显存不够用的拯救者插件
-
-https://www.zhihu.com/question/577079491
-
-stable diffusion的技术原理是什么？
-
-https://zhuanlan.zhihu.com/p/617134893
-
-文生图模型之Stable Diffusion
-
-https://www.zhihu.com/question/649097976
-
-为什么vae效果不好，但vae+diffusion效果就好了？
-
-## Diffusion Transformer(DiT)
-
-DiT使用Transformer替换了U-Net架构，算是2023年度Diffusion Model的一大改进。
-
-《Scalable Diffusion Models with Transformers》
-
-# CLIP
-
-![](/images/img5/CLIP.png)
-
-https://zhuanlan.zhihu.com/p/493489688
-
-神器CLIP：连接文本和图像，打造可迁移的视觉模型
-
-https://zhuanlan.zhihu.com/p/589170132
-
-FLIP：通过图像掩码加速CLIP训练
-
-https://www.zhihu.com/question/593888697
-
-如何评价Meta/FAIR 最新工作Segment Anything？
-
-https://zhuanlan.zhihu.com/p/620271321
-
-最强Zero-Shot视觉应用：Grounding DINO + Segment Anything + Stable Diffusion
-
-https://www.zhihu.com/question/593914819
-
-Meta发布图像分割论文Segment Anything，将给CV研究带来什么影响？
-
-# SORA
-
-https://openai.com/research/video-generation-models-as-world-simulators
-
-官方技术报告
-
-MS解读SORA的论文：
-
-《Sora: A Review on Background, Technology, Limitations, and Opportunities of Large Vision Models》
-
----
-
-SORA的使用方法：
-
-![](/images/img5/SORA.png)
-
-SORA的基本框架：
-
-![](/images/img5/SORA_2.png)
-
----
-
-![](/images/img5/SORA_3.png)
-
-训练时可以采用Masked Diffusion Transformer (MDT)的方法增强学习效果。
-
----
-
-![](/images/img5/NaViT.png)
-
-NaViT（Native Resolution ViT）没有采用传统的将图像调整至固定大小的做法，而通过特定的架构来实现对任意分辨率和宽高比图像的灵活处理。打包支持保持宽高比的可变分辨率图像，减少了训练时间，提高了性能，并增加了灵活性。
-
----
-
-参考：
-
-https://zhuanlan.zhihu.com/p/683231546
-
-Sora大模型技术精要——原理、关键技术、模型架构与未来趋势
-
-https://fisherdaddy.com/posts/sora-reading-list/
-
-"Road to Sora" 论文阅读清单
 
 # AIGC
 
@@ -338,3 +122,107 @@ https://zhuanlan.zhihu.com/p/626004957
 https://zhuanlan.zhihu.com/p/664461927
 
 一天时间，我用AI做了一个恐龙网站
+
+# CLIP
+
+CLIP由OpenAI在2021年1月发布。
+
+CLIP模型在不使用ImageNet数据集的任何一张图片（zero-shot）进行训练的的情况下，最终模型精度能跟一个有监督的训练好的ResNet-50打成平手（在ImageNet上zero-shot精度为76.2%，这在之前一度被认为是不可能的）。
+
+为了训练CLIP，OpenAI从互联网收集了共4个亿的文本-图像对，论文称之为WIT(Web Image Text，WIT质量很高，而且清理的非常好，其规模相当于JFT-300M，这也是CLIP如此强大的原因之一，后续在WIT上还孕育出了DALL-E模型)
+
+![](/images/img5/CLIP.png)
+
+Text Encoder可以采用NLP中常用的text transformer模型。而Image Encoder可以采用常用CNN模型或者vision transformer等模型，相似度是计算文本特征和图像特征的余弦相似性cosine similarity。
+
+CLIP建立了“文字潜在空间”到“图片潜在空间”的对应关系。上面提到的在ImageNet上的测试，属于“图生文”，配合Diffusion Model即可“文生图”。这类模型也被称为VLP（Vision-Language Pre-training）模型。
+
+https://zhuanlan.zhihu.com/p/493489688
+
+神器CLIP：连接文本和图像，打造可迁移的视觉模型
+
+https://zhuanlan.zhihu.com/p/589170132
+
+FLIP：通过图像掩码加速CLIP训练
+
+https://www.zhihu.com/question/593888697
+
+如何评价Meta/FAIR 最新工作Segment Anything？
+
+https://zhuanlan.zhihu.com/p/620271321
+
+最强Zero-Shot视觉应用：Grounding DINO + Segment Anything + Stable Diffusion
+
+https://www.zhihu.com/question/593914819
+
+Meta发布图像分割论文Segment Anything，将给CV研究带来什么影响？
+
+https://blog.csdn.net/v_JULY_v/article/details/131205615
+
+AI绘画原理解析：从CLIP、BLIP到DALLE、DALLE 2、DALLE 3、Stable Diffusion
+
+# BLIP
+
+![](/images/img5/BLIP.png)
+
+Image-Text Contrastive Loss目标是对齐视觉和文本的特征空间。
+
+Image-Text Matching Loss调整视觉和语言之间的细粒度对齐。
+
+Language Modeling Loss使模型能够将视觉信息转换为连贯的字幕。
+
+![](/images/img5/BLIP_2.png)
+
+BLIP的视觉侧和文本侧分别使用预训练的CLIP ViT-G/14模型和FLAN-T5模型，仅中间的起桥接作用的Q-Former参与训练，训练需要的成本和数据量进一步降低，BLIP-2的训练数据量仅129M，16卡A100训练9天。
+
+此后这类桥接预训练的大模型（无论是CV还是NLP）的工作逐渐成为了主流，从头开始训练的，渐趋式微。
+
+# DALLE
+
+![](/images/img5/DALLE.png)
+
+
+
+# SORA
+
+https://openai.com/research/video-generation-models-as-world-simulators
+
+官方技术报告
+
+MS解读SORA的论文：
+
+《Sora: A Review on Background, Technology, Limitations, and Opportunities of Large Vision Models》
+
+---
+
+SORA的使用方法：
+
+![](/images/img5/SORA.png)
+
+SORA的基本框架：
+
+![](/images/img5/SORA_2.png)
+
+---
+
+![](/images/img5/SORA_3.png)
+
+训练时可以采用Masked Diffusion Transformer (MDT)的方法增强学习效果。
+
+---
+
+![](/images/img5/NaViT.png)
+
+NaViT（Native Resolution ViT）没有采用传统的将图像调整至固定大小的做法，而通过特定的架构来实现对任意分辨率和宽高比图像的灵活处理。打包支持保持宽高比的可变分辨率图像，减少了训练时间，提高了性能，并增加了灵活性。
+
+---
+
+参考：
+
+https://zhuanlan.zhihu.com/p/683231546
+
+Sora大模型技术精要——原理、关键技术、模型架构与未来趋势
+
+https://fisherdaddy.com/posts/sora-reading-list/
+
+"Road to Sora" 论文阅读清单

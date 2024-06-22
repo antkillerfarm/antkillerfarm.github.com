@@ -49,6 +49,10 @@ https://mp.weixin.qq.com/s/nhIRulIRD6VrdPInDsaD8A
 
 使用QLoRA对Llama 2进行微调的详细笔记
 
+https://blog.csdn.net/v_JULY_v/article/details/135375799
+
+从LongLoRA到LongQLoRA(含源码剖析)：超长上下文大模型的高效微调方法
+
 # FSDP
 
 Fully Sharded Data Parallel是Facebook深度借鉴微软ZeRO之后提出的PyTorch DDP升级版本，可以认为是对标微软ZeRO，其本质是parameter sharding。Parameter sharding就是把模型参数切分到各个GPU之上。
@@ -245,6 +249,8 @@ https://github.com/Dao-AILab/flash-attention
 
 ![](/images/img5/FlashAttention.png)
 
+对于self-attention块，除了两个大矩阵乘法是计算受限的，其他都是内存受限的逐点运算。
+
 FlashAttention主要使用分块矩阵的思想，对矩阵乘法进行优化。
 
 分块之后，参与运算的小块可以放入速度更快的存储单元，例如原来的运算需要反复读取HBM，而现在只需要读取一次HBM，然后就可以在SRAM或者Cache中完成所有的运算。
@@ -263,36 +269,6 @@ https://www.zhihu.com/question/611236756
 
 FlashAttention的速度优化原理是怎样的？
 
-## FlashDecoding
+https://blog.csdn.net/v_JULY_v/article/details/133619540
 
-FlashDecoding是FlashAttention项目的一部分，但由于优化方向有所不同，特别单列出来。
-
-![](/images/img5/FlashDecoding.gif)
-
-Prefill阶段在Q的seqlen维度以及batch_size维度做并行。
-
-![](/images/img5/FlashDecoding.webp)
-
-但是在Decoding阶段，是逐token生成，在利用KV Cache的情况下，每次推理实际的queries token数为1，已经无法通过queries进行并行了。
-
-既然，Q和BS无法进一步并行了，那么对K,V进行并行是不是就可以了呢？
-
-- 首先，将K/V切分成更小的块，比如5块；
-- 然后在这些K/V块上，使用标准FlashAttention进行计算，得到所有小块的局部结果。
-- 最后，使用一个额外的kernel做全局的reduce，得到正确输出。
-
-## PagedAttention
-
-PagedAttention是UC Berkeley的作品。
-
-![](/images/img5/PagedAttention.gif)
-
-PagedAttention使用分页管理的方式管理KV Cache，将每个序列的KV Cache划分为块，每个块包含固定数量token的K/V。
-
-![](/images/img5/PagedAttention_2.gif)
-
-Parallel Sampling：我给模型发送一个请求，希望它对prompt做续写，并给出三种不同的回答。我们管这个场景叫parallel sampling。
-
-显然这里的prompt部分的KV cache是完全重复。这时可以使用如上图所示的进阶版本，通过类似MMU的逻辑地址和物理地址的映射，来解决存储问题。
-
-这个方法也可以推广到Beam Search、Shared prefix等场景。
+通透理解FlashAttention与FlashAttention2：全面降低显存读写、加快计算速度

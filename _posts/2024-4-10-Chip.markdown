@@ -47,6 +47,12 @@ https://mp.weixin.qq.com/s/TmLSHVkeyqfU-9Jgir0czA
 
 ---
 
+芯片内部有多种单元，有高密度晶体管，也有低密度晶体管，也不是处处都有110 MTr/mm2这样的高密度，由于SRAM结构和对Vt和Isad的敏感特性，导致SRAM区域的面积就已经出现了停滞不前的现象。
+
+![](/images/img5/sram.webp)
+
+---
+
 ![](/images/img4/CPU_2.jpg)
 
 ![](/images/img4/CPU_3.jpg)

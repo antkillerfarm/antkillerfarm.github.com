@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度强化学习（八）——StarCraft & AI, AlphaStar, Dota 2
+title:  深度强化学习（八）——StarCraft, AlphaStar, Dota 2
 category: DRL 
 ---
 
@@ -8,6 +8,49 @@ category: DRL
 {:toc}
 
 # MARL（续）
+
+MARL的目标是找到每一个状态的纳什均衡策略，然后将这些策略联合起来。
+
+<div style="text-align: center;">
+<table>
+  <tr>
+    <td colspan="2" rowspan="2"></td>
+    <td colspan="3">Game setting</td>
+  </tr>
+  <tr>
+    <td>Stateless Games</td>
+    <td>Team Markov Games</td>
+    <td>General Markov Games</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Information<br/>Requirement</td>
+    <td>Independent Learners</td>
+    <td>Stateless Q-learning<br/>Learning Automata<br/>IGA<br/>FMQ<br/>Commitment Sequences<br/>Lenient Q-learners</td>
+    <td>Policy Search<br/>Policy Gradient</td>
+    <td>MG-ILA<br/>(WoLF-)PG<br/>Learning of Coordination<br/>Independent RL<br/>CQ-learning</td>
+  </tr>
+  <tr>
+    <td>Joint Action Learners</td>
+    <td></td>
+    <td>Distributed- Q<br/>Sparse Tabular Q<br/>Utile Coordination</td>
+    <td>Nash-Q<br/>Friend-or-Foe Q<br/>Asymmetric Q<br/>Joint Action Learning<br/>Correlated-Q</td>
+  </tr>
+</table>
+</div>
+
+参考：
+
+https://zhuanlan.zhihu.com/c_1061939147282915328
+
+一个MARL方面的专栏
+
+https://www.zhihu.com/people/yao-xing-hu/posts
+
+一个MARL方面的专栏
+
+https://github.com/LantaoYu/MARL-Papers
+
+Paper list of multi-agent reinforcement learning (MARL)
 
 https://mp.weixin.qq.com/s/5I8-_4Xsj8wzJwmDOQpkWQ
 
@@ -129,7 +172,7 @@ https://mp.weixin.qq.com/s/aVDcwkcDkbU23MN4Wcf0mg
 
 多智能体深度强化学习：综述
 
-# StarCraft & AI
+# StarCraft
 
 AIIDE（Artificial Intelligence and Interactive Digital Entertainment）
 
@@ -356,31 +399,3 @@ https://mp.weixin.qq.com/s/xsoS3tvOh78rkbI0UUIkPQ
 https://mp.weixin.qq.com/s/X73jL5T_uZ87F3iE-uTnpw
 
 Dota2冠军OG如何被AI碾压？OpenAI累积三年的完整论文终于放出
-
-# 王者荣耀
-
-腾讯绝悟也是DRL在MOBA游戏上的尝试。
-
-https://mp.weixin.qq.com/s/ptgHNil1gqrH2p-x3UZoFw
-
-紧急更新下降难度，《王者荣耀》绝悟AI难倒一片玩家
-
-https://mp.weixin.qq.com/s/kAuzmc70NYAr9HmyioD5xA
-
-腾讯绝悟AI完全体研究登上国际顶会与顶刊
-
-https://mp.weixin.qq.com/s/8jkJy8ZarvpodmBccAc74A
-
-中国AI足球队勇夺世界冠军，腾讯出品
-
-https://mp.weixin.qq.com/s/ma2SgFuNYu50oexnfBYYLw
-
-用AI打王者荣耀？认真谈谈强化学习的价值
-
-https://mp.weixin.qq.com/s/IFGUXI3YXVsjIVuJ717uaw
-
-用人工智能打王者荣耀：匹茨堡大学&腾讯AI Lab为游戏AI引入MCTS方法
-
-https://mp.weixin.qq.com/s/Q3WWqEnUaIvnLwoFHY5lfQ
-
-腾讯王者荣耀AI论文首次曝光：五AI王者局开黑与人类战队打成平手

@@ -225,7 +225,7 @@ https://blog.csdn.net/qwertyu1234/article/details/50163847
 
 SPIR-V研究：编译器基本原理
 
-# 并行 & 框架 & 优化=
+# 并行 & 框架 & 优化+
 
 https://zhuanlan.zhihu.com/p/26552293
 

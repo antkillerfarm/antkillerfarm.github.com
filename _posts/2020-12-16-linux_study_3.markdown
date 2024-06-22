@@ -63,9 +63,11 @@ tmux也有一些高端功能，比如分屏等。
 
 `Ctrl+b z`: 最大化/恢复原状。
 
-`ctrl+b d`: 不销毁进程退出（detach）。
+`Ctrl+b d`: 不销毁进程退出（detach）。
 
-`ctrl+d`: 销毁进程退出。
+`Ctrl+b x`：关闭当前窗格。
+
+`Ctrl+d`: 销毁进程退出。
 
 `tmux ls`: 查看会话。
 

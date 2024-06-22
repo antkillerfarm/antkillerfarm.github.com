@@ -247,7 +247,9 @@ https://mp.weixin.qq.com/s/fzadP8NwPTxuhEB0O4GU8g
 
 ![](/images/img5/VQ_VAE.avif)
 
-VQ-VAE提出的codebook机制，相对于原始VAE，仅有均值方差作为描述分布的属性而言，无疑是丰富了一大截，AIGC的表现力也因此上升了一大截。该机制也为后来的Stable Diffusion等所采纳。
+VQ-VAE提出的codebook机制，相对于原始VAE，仅有均值方差作为描述分布的属性而言，无疑是丰富了一大截，AIGC的表现力也因此上升了一大截。
+
+该机制也为后来的Stable Diffusion等所采纳，即后者的latent space。
 
 https://mp.weixin.qq.com/s/t4YYIl4o_TAPG7737ZfiaA
 

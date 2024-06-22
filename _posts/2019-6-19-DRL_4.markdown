@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度强化学习（四）——DDPG, PPO, IMPALA
+title:  深度强化学习（四）——DDPG, TD3, PPO, IMPALA
 category: DRL 
 ---
 
@@ -131,6 +131,8 @@ Deepmind在2016年提出了DDPG（Deep Deterministic Policy Gradient）。从通
 
 ![](/images/img3/DDPG.jpg)
 
+![](/images/img5/DDPG.png)
+
 DDPG还有一个分布式版本。
 
 论文：
@@ -183,7 +185,37 @@ https://zhuanlan.zhihu.com/p/27699682
 
 荐译一篇通俗易懂的策略梯度（Policy Gradient）方法讲解
 
+# TD3
+
+TD3：Twin Delayed Deep Deterministic Policy Gradient
+
+![](/images/img5/TD3.png)
+
+TD3 = DDPG + DDQN
+
+- Twin
+
+TD3在DDPG的基础上，借鉴DDQN的思想，把Critic分成了两个网络，表示不同的Q值，通过选取最小的那个作为我们更新的目标（Target Q Value），抑制持续地过高估计。
+
+过估计是指估计的值函数比真实的值函数大。因为DQN是一种off-policy的方法，每次学习时，不是使用下一次交互的真实动作，而是使用当前认为价值最大的动作来更新目标值函数，所以会出现对Q值的过高估计。（处于学习阶段的Q值，显然不是真正最优的Q值）
+
+- Delayed
+
+Critic更新多次后，Actor再进行更新。即让critic更加确定，actor再行动。
+
+参考：
+
+https://blog.csdn.net/weixin_45492196/article/details/107866309
+
+TD3算法：DDPG的进化
+
 # PPO（Proximal Policy Optimization）
+
+TRPO（Trust Region Policy Opimization，2015）：考虑到连续动作空间无法每一个动作都搜索一遍，因此大部分情况下只能靠猜。如果要猜，就最好在信任域内部去猜。而TRPO将每一次对策略的更新都限制了信任域内，从而极大地增强了训练的稳定性。
+
+TRPO引入KL散度评估信任域，这被后来的PPO算法吸收并改进。
+
+---
 
 PPO是2017年由OpenAI提出的一种基于随机策略的DRL算法，也是当前OpenAI的默认算法。
 
@@ -208,6 +240,8 @@ $$J^{\theta^k}_{PPO}(\theta)=J^{\theta^k}(\theta)-\beta KL(\theta, \theta^k)$$
 除了KL惩罚项之外，还可以使用clip来限制Gradient的大小，这就是PPO2的做法。
 
 和A3C类似，PPO也有一个分布式版本，叫做DPPO（Distributed Proximal Policy Optimization）。
+
+---
 
 参考：
 
@@ -264,49 +298,3 @@ IMPALA的灵感来自于热门的A3C架构（上图左），后者使用多个�
 由于actor只用于环境采样，而这个任务通常是一个仿真环境（例如游戏模拟器），因此它和learner在计算侧重点上有很大差异（例如在游戏领域，actor更侧重于仿真、渲染。），所以actor和learner的软硬件可以是异构的。
 
 其次，由于Actor无须计算梯度，因此就可以一直采样，而无须等待策略的更新，这也是它和Batched A2C的最大区别。
-
-![](/images/img3/IMPALA_2.png)
-
-上图展示了这种差异，A2C采样了一个Batch之后，所有的actor都要停下来计算梯度，而IMPALA中的actor可以一直采样，从而大大提高了采样效率。
-
-上图中的Batched A2C(sync step)和Batched A2C(sync traj)的区别在于：前者每次采样之后都要同步，这对于采样时间差异较大的例子，显然效率是很低下的。而后者是采样一批之后，再同步。
-
-不过这种操作和学习的解耦也导致actor的策略落后于learner。为了弥补这样的差距，IMPALA还引入了V-trace技术。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/56043646
-
-AlphaStar之IMPALA
-
-https://mp.weixin.qq.com/s/1zJyw67B6DqsHEJ3avbsfQ
-
-DeepMind推出分布式深度强化学习架构IMPALA，让一个Agent学会多种技能
-
-https://mp.weixin.qq.com/s/nfsm1v7MuI6mSpRb-rGBBQ
-
-谷歌推出分布式强化学习框架SEED，性能“完爆”IMPALA，可扩展数千台机器，还很便宜
-
-https://mp.weixin.qq.com/s/FQ7h0vixcztBUu70iFeYXw
-
-Google发布"强化学习"框架"SEED RL"
-
-# reward modeling
-
-![](/images/img2/reward_modeling.jpg)
-
-训练一个奖励模型，其中包含来自用户的反馈，从而捕捉他们的意图。与此同时，我们通过强化学习训练一个策略，使奖励模型的奖励最大化。换句话说，我们把学习做什么(奖励模型)和学习怎么做(策略)区分开来。
-
-参考：
-
-https://mp.weixin.qq.com/s/4yGQtHtMqWlaB7MAsr8T_g
-
-DeepMind重磅论文：通过奖励模型，让AI按照人类意图行事
-
-https://mp.weixin.qq.com/s/TIWnnCmVZnFQNH9Fig5aTw
-
-DeepMind发布新奖励机制：让智能体不再“碰瓷”
-
-https://zhuanlan.zhihu.com/p/337759337
-
-BeBold：一种新的强化学习探索准则

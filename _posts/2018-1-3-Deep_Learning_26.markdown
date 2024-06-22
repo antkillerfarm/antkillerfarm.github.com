@@ -57,6 +57,14 @@ linux下可以使用tesseract作为OCR工具。当然这个工具目前使用的
 
 `tesseract ./111.png 1 -l chi_sim+eng`
 
+## RapidOCR
+
+RapidOCR是目前已知运行速度最快、支持最广，完全开源免费并支持离线快速部署的多平台多语言OCR。
+
+官网：
+
+https://rapidai.github.io/RapidOCRDocs/
+
 ## 车牌识别
 
 2010年的时候车牌检测用AdaBoost，铺天盖地的Boosting/SVM，以及各种魔改。

@@ -416,3 +416,7 @@ https://www.zhihu.com/question/658481319
 https://www.zhihu.com/question/658750190
 
 2024年金砖国家运动会怎么突然进入了消息真空？
+
+https://www.zhihu.com/question/650991634
+
+如何评价《俄罗斯的老百姓从没活得这么爽过》这篇文章？

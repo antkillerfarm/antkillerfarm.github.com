@@ -227,7 +227,7 @@ https://mp.weixin.qq.com/s/_kzPi1QgwqvT4glRI-FCzg
 
 # RCNN
 
-《深度学习（八）》中提到的AlexNet、VGG、GoogleNet主要用于图片分类。而这里介绍的RCNN(Regions with CNN)主要用于目标检测。
+《深度学习（九）》中提到的AlexNet、VGG、GoogleNet主要用于图片分类。而这里介绍的RCNN(Regions with CNN)主要用于目标检测。
 
 ## 车牌识别的另一种思路
 

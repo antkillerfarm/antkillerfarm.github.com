@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  强化学习（十二）——Integrating Learning and Planning（2）
+title:  强化学习（十二）——Integrating Learning and Planning（3）
 category: RL 
 ---
 

@@ -89,6 +89,8 @@ Every country has its own mafia. In Russia, the mafia has its own country. -- by
 
 2024.5.12 绍伊古被解职。
 
+2024.6.15～16 瑞士和平峰会。
+
 ---
 
 https://www.understandingwar.org

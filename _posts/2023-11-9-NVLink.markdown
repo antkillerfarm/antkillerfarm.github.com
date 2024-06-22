@@ -63,6 +63,10 @@ https://zhuanlan.zhihu.com/p/35470532
 
 全球最大GPU背后的秘密：NVSwitch如何实现NVIDIA DGX-2的超强功力？
 
+https://mp.weixin.qq.com/s/3w2wbwaKb9nI2K13-gQXeg
+
+NV Switch深度解析与性能剖析
+
 ---
 
 NVLink和NV Switch的关系：
