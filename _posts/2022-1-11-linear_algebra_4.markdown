@@ -309,3 +309,11 @@ https://www.zhihu.com/question/23309010
 https://mp.weixin.qq.com/s/68K3L_pD7xfobr_jA1QgWA
 
 陈景润究竟为证明哥德巴赫猜想做出了哪些贡献？
+
+---
+
+李萨如曲线（Lissajous Curve）：两个沿着互相垂直方向的正弦振动合成的轨迹。
+
+https://mp.weixin.qq.com/s/RwG8HaK02-Fa0t26UboD7w
+
+用数学方式打开Facebook新Logo，真的和视频号Logo来自同一方程

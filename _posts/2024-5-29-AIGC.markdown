@@ -161,7 +161,7 @@ https://blog.csdn.net/v_JULY_v/article/details/131205615
 
 AI绘画原理解析：从CLIP、BLIP到DALLE、DALLE 2、DALLE 3、Stable Diffusion
 
-# BLIP
+## BLIP
 
 ![](/images/img5/BLIP.png)
 
@@ -173,15 +173,27 @@ Language Modeling Loss使模型能够将视觉信息转换为连贯的字幕。
 
 ![](/images/img5/BLIP_2.png)
 
-BLIP的视觉侧和文本侧分别使用预训练的CLIP ViT-G/14模型和FLAN-T5模型，仅中间的起桥接作用的Q-Former参与训练，训练需要的成本和数据量进一步降低，BLIP-2的训练数据量仅129M，16卡A100训练9天。
+BLIP-2的视觉侧和文本侧分别使用预训练的CLIP ViT-G/14模型和FLAN-T5模型，仅中间的起桥接作用的Q-Former参与训练，训练需要的成本和数据量进一步降低，BLIP-2的训练数据量仅129M，16卡A100训练9天。
 
 此后这类桥接预训练的大模型（无论是CV还是NLP）的工作逐渐成为了主流，从头开始训练的，渐趋式微。
 
-# DALLE
+## DALLE 2
 
 ![](/images/img5/DALLE.png)
 
+DALLE由于是前CLIP时代的东西，已经有些过时了。这里直接介绍DALLE 2。
 
+prior的训练：根据文本特征(即CLIP text encoder编码后得到的文本特征)，预测图像特征(CLIP image encoder编码后得到的图片特征)
+
+decoder生成图：常规的扩散模型解码器，解码生成图像。这里的decoder就是升级版的GLIDE(GLIDE基于扩散模型)。
+
+## DALLE 3
+
+对于稍微复杂的文本，目前的文生图模型生成的图像往往会容易忽略部分文本描述，甚至无法生成文本所描述的图像。这个问题主要还是由于训练数据集本身所造成的，更具体的是说是图像caption不够准确。
+
+图像常规的文本描述往往过于简单(比如COCO数据集)，它们大部分只描述图像中的主体而忽略图像中其它的很多信息，比如背景，物体的位置和数量，图像中的文字等。
+
+DALLE 3 = 原始caption和合成长caption混合训练 + T5 + latent decoder
 
 # SORA
 
@@ -226,3 +238,15 @@ Sora大模型技术精要——原理、关键技术、模型架构与未来趋�
 https://fisherdaddy.com/posts/sora-reading-list/
 
 "Road to Sora" 论文阅读清单
+
+https://blog.csdn.net/v_JULY_v/article/details/134655535
+
+Sora之前的视频生成发展史：从Gen2、Emu Video到PixelDance、SVD、Pika 1.0
+
+https://blog.csdn.net/v_JULY_v/article/details/136845242
+
+视频生成Sora的从零复现：从Latte、Open-Sora(含1.0及其升级版)到StreamingT2V
+
+https://zhouyifan.net/2024/06/05/20240405-SVD/
+
+Stable Video Diffusion结构浅析与论文速览

@@ -81,7 +81,15 @@ category: Russo Ukrainian War Cloud
 
 铁路工人——从赫尔松到利沃夫
 
+![](/images/img5/Chernihiv.jpg)
+
+Chernihiv围城战（2022.2.24～2022.4.3）
+
 ![](/images/img5/ukraine_weapon.jpg)
+
+![](/images/img5/Ukrposhta.jpg)
+
+邮递员
 
 https://bittergrounds.com/2022s-striking-ukrainian-stamps
 
