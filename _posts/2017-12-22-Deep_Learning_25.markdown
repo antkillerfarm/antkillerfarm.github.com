@@ -181,216 +181,96 @@ https://mp.weixin.qq.com/s/dcv2pqccrAtg2nNaHTTU2Q
 
 一文"看透"多任务学习
 
-# DRL参考资源+
+# 欧洲+
 
-https://mp.weixin.qq.com/s/CCQOHRCAolsorm8FEPdjoQ
+罗马时代，地中海之外的欧洲，被分为三个“蛮族”——日耳曼、斯拉夫、凯尔特。
 
-什么时候强化学习未必好用？
+---
 
-https://mp.weixin.qq.com/s/Ctn1Wr68lph1UK_wjfCY1Q
+两德的边境不是自然形成的，也不是根据二战结束时的军事分界线划分的，而是根据1944年《伦敦议定书》划分的。实际上，西方和苏联完全平分了德国，苏占区和英美占区在人口、土地和经济规模上基本是相当的。
 
-策略梯度搜索：不使用搜索树的在线规划和专家迭代
+当时苏联的计划是先将苏占德国工业和财富搬空，留下一个完全田园化的德国，最后将这个包袱丢给西方阵营，就像他们在奥地利和东北做的那样。所以苏联才做出了从东德拆走了大量的机械，将西里西亚和普鲁士划给了波兰，逼迫当地的德裔居民向西迁徙等等操作。
 
-https://mp.weixin.qq.com/s/78ir-Z4ch8_aVpjC6aCPGg
+40年代末期，随着东西方阵营冲突的加剧，苏联才有了长期控制一部分德国的念头。
 
-DeepMind综述深度强化学习中的快与慢，智能体应该像人一样学习
+从来就不是只有东德人去西德。1954年，7.8万西德人迁居东德，其中包括德国总理默克尔一家人。
 
-https://mp.weixin.qq.com/s?__biz=MzU1NTMyOTI4Mw==&mid=2247494226&idx=1&sn=a96ea0ad8961ec3698301cf0c4514843
+https://www.zhihu.com/question/22212707
 
-以YouTube论文学习如何在推荐场景应用强化学习
+二战前，东德经济比西德差吗?
 
-https://mp.weixin.qq.com/s/SpCorsAiTWGYGiohT_gZtg
+---
 
-如何训练智能体Agent玩毁灭战士ViZDoom？
+女王的另外两个儿媳约克公爵夫人莎拉和威塞克斯伯爵夫人苏菲也是平民出身，没有娘家王冠。但是为了表示王室的诚意，对于她们二人女王是各赠送了一顶婚礼王冠，但是谁能想到后来莎拉和安德鲁离婚带走了价值不菲的王冠，再之后的王室成员结婚，女王就不再赠送王冠了。
 
-https://mp.weixin.qq.com/s/ewC2_8O29Gg0blxK7mHsYA
+别说外国王室，就是本国的贵族们也不愿意放弃自由而奢华的生活去追求规矩繁多的王室生活。所以其实查尔斯那一代结婚的时候选择其实就挺少的，到了威廉这一代那就更少了。不是女王愿意让王室接纳平民成员，而是根本选不到合适的贵族。
 
-比TD、MC、MCTS指数级快，性能超越A3C、DDQN等模型，这篇RL算法论文在Reddit上火了
+---
 
-https://mp.weixin.qq.com/s/Q9QzXo_M3jYKjBWSsLYwgQ
+土耳其人海战并不强，很多近在咫尺的岛屿都拿不下。
 
-强化学习+树搜索：一种新型程序合成方法
+小亚细亚附近的罗德岛直到1522年才被攻破。
 
-https://mp.weixin.qq.com/s/l46yJdRaftMlwr6odiSiHg
+希腊南部的克里特岛更是在君堡沦陷两百年后的1669年才沦陷。
 
-Yoshua Bengio团队基于深度强化学习打造聊天机器人MILABOT
+而希腊北部的爱奥尼亚群岛则一直被威尼斯统治，和土耳其人从来就没有关系。
 
-https://mp.weixin.qq.com/s/6_cW22DCzSw3DpUDrLXLcA
+---
 
-OpenAI提出强化学习近端策略优化，可替代策略梯度法
+当你发现一只蟑螂，可能全屋都是。。。
 
-http://mp.weixin.qq.com/s/S4jhpNKYZP5YQWaiiOQGFA
+苏纳克是英国首相，英国内政大臣布雷弗曼是印度裔（此人是苏纳克铁杆），气候变化事务高级官员和北爱尔兰事务官都是印度裔，前内政大臣帕特尔也是印度裔。
 
-DeepMind：“预测地图”海马体催生强化学习新算法
+https://www.zhihu.com/question/563621763
 
-https://mp.weixin.qq.com/s/KZHidOi5KYgg393R_JspBA
+为什么苏纳克仅仅从政七年就能成为英国首相?
 
-DeepMind都拿不下的游戏，刚刚被OpenAI玩出历史最高分
+---
 
-https://mp.weixin.qq.com/s/aVWHlwOmNIqOlu3025_RXQ
+市长选举大部分由穆斯林取胜。
 
-DeepMind提出多任务强化学习新方法Distral
+伦敦市长：穆斯林。
 
-https://mp.weixin.qq.com/s/gFHbLF-q91sddMAX1CRbEQ
+​伯明翰市长：穆斯林。
 
-俞扬：“审时度势”的高效强化学习
+​利兹市长：穆斯林。
 
-https://mp.weixin.qq.com/s/lstCIiNs_qA6k7GCYUBv2w
+​布莱克本市长：穆斯林。
 
-阿尔伯塔大学提出新型多步强化学习方法，结合已有TD算法实现更好性能
+​谢菲尔德市市长：穆斯林。
 
-https://mp.weixin.qq.com/s/ybyZpaHr-JJg7CCdXGOl5A
+​牛津市长：穆斯林。
 
-Seq2seq强化学习实战
+---
 
-https://mp.weixin.qq.com/s/vYDb1rTdPxO1sIS38VX5xA
+维京人的社会体系包括三个阶层：
 
-DeepMind的AI学会了画画，利用强化学习完全不需人教：SPIRAL
+Jarl：王侯，多为大领主(lord)，世袭的贵族；
 
-https://mp.weixin.qq.com/s/rpPN2rgru6krRz2fr1RhsQ
+Karl：自由人，军队的主力，武士阶层；部落首领实行统治的基本工具，是依靠个人财力豢养的心腹亲兵，称huscarl。
 
-模拟世界的模型：谷歌大脑与Jürgen Schmidhuber提出“人工智能梦境”
+Thralls：最底层的奴隶。
 
-https://mp.weixin.qq.com/s/AelAD57G4GOh7qm-_rvYsg
+https://www.zhihu.com/question/467481944
 
-伯克利提出DeepMimic：使用强化学习练就18般武艺
+为什么维京人以战死为荣耀，而以老死为屈辱，他们怎么想的，如果为了显得能打，难道不是活最久的最能打？
 
-https://mp.weixin.qq.com/s/W9yhj7_frLYWJocoBR1TMQ
+---
 
-避免AI错把黑人识别为大猩猩：伯克利大学提出协同反向强化学习
+拿破仑当时已经有了个名叫宰纳卜的埃及女人，不过显然他还是喜欢法国风味，又得知了约瑟芬出轨。于是随即计上心来，把富雷斯中尉派往马耳他，执行危险的跨海任务——不过有一说一，拿破仑还是给富雷斯发了三千法郎的活动经费，也算是变相补偿吧。
 
-https://mp.weixin.qq.com/s/p2hlc2PsLgrvxOF8wBZANg
+富雷斯走后，拿破仑随后便和波利娜双宿双飞，整个东方军团都知道波利娜成了拿破仑的“克娄巴特拉”。
 
-李飞飞高徒范麟熙解析强化学习在游戏和现实中的应用
+拿破仑1799年回国后，波利娜又成为其继任者让-巴蒂斯特·克莱贝尔将军的情人，可见这个绰号还真的有那么一点准。
 
-http://mp.weixin.qq.com/s/EPbKE-TAnAPugJDhXHEyNA
+---
 
-DeepMind开源Psychlab平台——搭建AI和认知心理学的桥梁
+马费奥·巴贝里尼（Maffeo Barberini）曾是伽利略的密友，他也就是后来的教皇乌尔班八世。他对伽利略的研究充满崇敬。但是，当伽利略于1632年完成他的经典著作《关于两大世界体系的对话》(Dialogo sopra i due massimi sistemi del mondo)，两人相互恭维的关系最终以仇恨收场。
 
-https://mp.weixin.qq.com/s/xJ_g3BvbM-WaIyLthHdhEw
+书中叙述了关于地心说体系与地动说体系的假想辩论。地心说由书中“辛普利邱(Simplicio)”这个角色进行论证，这个角色被塑造十分愚蠢。乌尔班从辛普利邱的论述中看出了自己的观点。
 
-DeepMind发布通用强化学习新范式，自主机器人可学会任何任务
+因此，乌尔班对他密友看似背叛的行径感到愤怒，并且在其他裁决人员都对此不以为然的情况下，对伽利略发起审判。
 
-https://mp.weixin.qq.com/s/3HYELsdYwCJeUmXDBXx8NQ
+https://www.zhihu.com/question/658493526
 
-这款超火的游戏，AI只用4小时，就秀出了人类花1年才能达到的水平
-
-https://mp.weixin.qq.com/s/aEXi3XqcrWpAtdcMkFhBxw
-
-强化学习中的调参经验与编程技巧（on policy篇）
-
-https://mp.weixin.qq.com/s/VpvgNhktLBl_p9gkanp4Pw
-
-2020格斗游戏AI冠军方案：基于强化学习对手建模的滚动时域演化算法
-
-https://mp.weixin.qq.com/s/hb7iiJDWnNAXXUJmYKbqaw
-
-强化学习帮我通关了超级玛丽！
-
-https://mp.weixin.qq.com/s/BoZQ8aMF2Aohj536qhfWPg
-
-Nature重磅：OpenAI科学家提出全新增强学习算法，玩游戏可完胜人类，或推动AI向真正智能学习体进化（Go-Explore）
-
-https://mp.weixin.qq.com/s/HBqX6pz4EzO70YpmQ8xtRw
-
-世界上最难的“沙雕”游戏被AI攻破了
-
-https://mp.weixin.qq.com/s/teBlXXw4JQ8k3olCDOKXyw
-
-量化金融自动交易的深度强化学习库。哥大开源“FinRL”
-
-https://mp.weixin.qq.com/s/8UX65PGZkRokguLTnoGVFA
-
-强化学习组合优化综述论文
-
-https://mp.weixin.qq.com/s/Cfim24MSmClvo2HjW7thTw
-
-最强原创综述！当强化学习邂逅组合优化
-
-https://mp.weixin.qq.com/s/nNTag_D_qN7WcE7DEMJFaA
-
-横扫6个SOTA，吊打强化学习！谷歌最强行为克隆算法登CoRL顶会，机器人干活10倍速
-
-https://mp.weixin.qq.com/s/0AM4eASolsPZ7GtPYVBqDQ
-
-伯克利今年大热的DeepMimic开源了~
-
-https://zhuanlan.zhihu.com/p/35567591
-
-强化学习在关系抽取、QA场景的应用
-
-https://mp.weixin.qq.com/s/zWo2iSiJBEBwnFF478xxfQ
-
-DeepMind：探索人类行为中的强化学习机制
-
-https://mp.weixin.qq.com/s/oOslkEklaZSbRb8eDDCRBw
-
-天津大学、东京大学等研究：用深度强化学习检测模型缺陷
-
-https://mp.weixin.qq.com/s/DNT9rMynbN4Th0AVDHeY_w
-
-BAIR提出人机合作新范式：教你如何高效安全地在月球着陆
-
-https://mp.weixin.qq.com/s/KqLCTSYk1C0wYpJw-hpc1g
-
-论强化学习和概率推断的等价性：一种全新概率模型
-
-https://mp.weixin.qq.com/s/zRXs3BCEqXUruw746rZusw
-
-牛津大学联合7家单位发布AutoRL综述，还在手动调参吗？你已经落后了
-
-https://mp.weixin.qq.com/s/wPWV6kxkRlYb9dMf6ADWkQ
-
-史上首次，强化学习算法控制核聚变登上Nature：DeepMind让人造太阳向前一大步
-
-https://mp.weixin.qq.com/s/U0K79ELLj4wsOR4sd5G4Vw
-
-Vicarious详解新型图式网络：赋予强化学习泛化能力
-
-https://mp.weixin.qq.com/s/C8hsGkHGtoaS9Vzm6Ub4tw
-
-Berkeley提出“随机搜索”训练线性策略，提高RL的性能
-
-https://mp.weixin.qq.com/s/uppNSwxNrw4_8NGBQv85xw
-
-今日头条首次改进DQN网络，解决推荐中的在线广告投放问题
-
-https://mp.weixin.qq.com/s/JtUuFdTK4Q5YwnVj3BFU2w
-
-全参数化分布，提升强化学习中的收益分布拟合能力
-
-https://mp.weixin.qq.com/s/amXiNKJPEkAnu2m5NAERVw
-
-Top-K Off-Policy Correction
-
-https://mp.weixin.qq.com/s/kNtzy9-6GbsRhlL-mxksew
-
-基于强化学习的人机对话
-
-https://mp.weixin.qq.com/s/w3SsadgKaL8-tlzYLvMm-A
-
-讲真？一天就学会了自动驾驶——强化学习在自动驾驶的应用
-
-https://mp.weixin.qq.com/s/nnWuIPk_6mI9IAKIUbx6KQ
-
-深度强化学习解决交通控制问题
-
-https://mp.weixin.qq.com/s/RNJonPJL9JY5OH2-1sZMQw
-
-中山大学HCP实验室：基于树状结构策略的渐进强化学习
-
-https://mp.weixin.qq.com/s/G2sFkuvSeYmhkFjjPRGI-Q
-
-强化学习如何用于推荐？新南威尔士首篇《深度强化学习推荐系统》综述论文
-
-https://mp.weixin.qq.com/s/fMjjGCzef-3SVIOlUf2EFA
-
-强化学习如何用于推荐？厦大最新《强化学习推荐系统》综述论文
-
-https://mp.weixin.qq.com/s/8cV3Z_vkC0_cyfO2nVKoSw
-
-华人博士用强化学习回收了SpaceX火箭
-
-https://mp.weixin.qq.com/s/_-WSoeOqXMhR7S0PtyYixQ
-
-深度强化学习探索算法最新综述，近200篇文献揭示挑战和未来方向
+伽利略为什么不和教皇说：太阳是绕着地球转的，只是别的行星绕着太阳转？

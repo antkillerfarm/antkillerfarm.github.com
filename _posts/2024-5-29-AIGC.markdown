@@ -229,6 +229,24 @@ NaViT（Native Resolution ViT）没有采用传统的将图像调整至固定大
 
 ---
 
+VDT：综合“ViViT的时空编码”与“DiT的扩散Transformer”
+
+---
+
+Open Sora是新加坡国立大学团队的作品。
+
+官网：
+
+https://hpcaitech.github.io/Open-Sora/
+
+代码：
+
+https://github.com/hpcaitech/Open-Sora
+
+![](/images/img5/Open_Sora.png)
+
+---
+
 参考：
 
 https://zhuanlan.zhihu.com/p/683231546
@@ -238,6 +256,10 @@ Sora大模型技术精要——原理、关键技术、模型架构与未来趋�
 https://fisherdaddy.com/posts/sora-reading-list/
 
 "Road to Sora" 论文阅读清单
+
+https://blog.csdn.net/v_JULY_v/article/details/136143475
+
+视频生成Sora的全面解析：从AI绘画、ViT到ViViT、TECO、DiT、VDT、NaViT等
 
 https://blog.csdn.net/v_JULY_v/article/details/134655535
 

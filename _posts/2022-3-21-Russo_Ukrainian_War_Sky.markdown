@@ -61,6 +61,8 @@ Those who stand for nothing fall for anything.（那些不知为何而战的人�
 
 Every country has its own mafia. In Russia, the mafia has its own country. -- by Gary Kasparov
 
+一个可怜巴巴的笨蛋，在这世上没有一样自己能为之感到骄傲的东西，那他就只能出此最后一招：为自己所属的民族而骄傲了。由此他获得了补偿。所以，他充满着感激之情，准备不惜以“牙齿和指甲”去捍卫自己民族所特有的一切缺点和愚蠢。 -- by 叔本华
+
 ---
 
 2013.11.21 迈丹运动开始。

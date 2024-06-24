@@ -165,6 +165,12 @@ https://zhuanlan.zhihu.com/p/667489780
 
 解析大模型中的Scaling Law
 
+# VLM
+
+https://zhuanlan.zhihu.com/p/702811733
+
+Vision-Language Models (VLMs)多模态大模型一年多的进展与思考-2406
+
 # NVIDIA+
 
 ## cuLitho

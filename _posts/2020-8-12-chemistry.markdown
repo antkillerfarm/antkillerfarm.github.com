@@ -174,3 +174,11 @@ https://mp.weixin.qq.com/s/F0ONga94HeMbHfcPIMHfrg
 https://www.zhihu.com/question/359213795
 
 大陆为何改“矽”为“硅”？
+
+---
+
+这个化学试剂叫考马斯亮蓝，是和蛋白质（汗液就可以）结合显蓝紫色，反应非常灵敏快速，亲测想清水洗掉是没戏的。
+
+https://www.zhihu.com/question/447167970
+
+猪肉章盖在人的皮肤上可以洗掉吗？

@@ -301,6 +301,16 @@ https://github.com/MenghaoGuo/Awesome-Vision-Attentions
 
 ViT借鉴了NLP的一些做法，将图片分成若干小块，每一块就是一个词向量。这样就把一个CV问题变成了NLP问题。
 
+--
+
+ViViT在ViT的基础上增加时间维度以处理视频。
+
+---
+
+![](/images/img5/U-ViT.png)
+
+U-ViT = U-Net + ViT
+
 ## Masked Autoencoders
 
 ![](/images/img4/MAE.png)
