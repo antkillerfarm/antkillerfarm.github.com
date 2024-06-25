@@ -207,7 +207,7 @@ https://www.zhihu.com/question/401154532
 
 二战时空战被击落而坠海但幸存的士兵会怎么样？
 
-http://blog.sina.com.cn/s/blog_672807b40102xh4m.html
+https://www.panhistory.org/2020/02/blog-post_27.html
 
 二战美军在前线打仗时，美国总统的儿子躲在哪里？
 

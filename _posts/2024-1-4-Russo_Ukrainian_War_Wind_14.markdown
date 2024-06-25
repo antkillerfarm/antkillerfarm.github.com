@@ -169,6 +169,10 @@ https://zhuanlan.zhihu.com/p/674708205
 
 没有300万卢布 俄罗斯伤兵拿到两桶胡萝卜和一袋洋葱补偿
 
+https://zhuanlan.zhihu.com/p/705217427
+
+没有眼睛没有腿 普京痛心得知上百名俄罗斯残疾军人被关在猪圈里
+
 ---
 
 https://mp.weixin.qq.com/s/PUqFEBUN6OaGZjB-ojrMRg

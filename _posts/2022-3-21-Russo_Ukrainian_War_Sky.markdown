@@ -91,7 +91,7 @@ Every country has its own mafia. In Russia, the mafia has its own country. -- by
 
 2024.5.12 绍伊古被解职。
 
-2024.6.15～16 瑞士和平峰会。
+2024.6.15～16 瑞士和平峰会。（美洲国家组织、安提瓜和巴布达、赞比亚、巴巴多斯、马绍尔群岛、马拉维等会后签署公报）
 
 ---
 
