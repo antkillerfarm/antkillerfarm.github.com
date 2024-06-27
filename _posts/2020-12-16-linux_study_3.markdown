@@ -209,46 +209,6 @@ http://os.51cto.com/art/201605/511423.htm
 
 Linux用户宝典：用于下载的十大命令行工具
 
-# NFS
-
-## 客户端
-
-`mount -t nfs 192.168.0.1:/tmp /mnt/nfs`
-
-挂载NFS。挂载点（即上例中的/mnt/nfs）必须事先创建。
-
-`mount: /bak: bad option; for several filesystems (e.g. nfs, cifs) you might need a /sbin/mount.<type> helper program`
-
-出现上面的问题，需要：
-
-`sudo apt install nfs-common libnfs-utils`
-
-## 服务器端
-
-```bash
-sudo apt install nfs-server
-cd /
-sudo mkdir nfs-server
-sudo chmod 777 nfs-server
-sudo chmod 666 /etc/exports
-echo "/nfs-server *(rw,sync,no_root_squash)">>/etc/exports
-sudo service nfs-server restart
-```
-
-参考：
-
-https://www.cnblogs.com/tu13/p/ubuntu_nfs.html
-
-ubuntu18.04搭建NFS服务器
-
-## 访问Windows共享文件夹
-
-```
-sudo apt install cifs-utils
-sudo mkdir /mnt/share
-sudo mount -t cifs -o username=XXX,password=XXX //192.168.0.81/abc /mnt/share
-```
-
 # 动态库
 
 ## 版本设置
@@ -340,6 +300,40 @@ YYYY-MM-DDThh:mm:ss.sTZD (eg 1997-07-16T19:20:30.45+01:00)
 
 其中的TZD表示time zone designator。
 
+# 启动脚本
+
+Linux启动时，运行一个叫做init的程序，然后由它来启动后面的任务，包括多用户环境，网络等。
+
+那么，到底什么是运行级呢？简单的说，运行级就是操作系统当前正在运行的功能级别。这个级别从1到6，具有不同的功能。这些级别在/etc/inittab文件里指定。这个文件是init程序寻找的主要文件，最先运行的服务是那些放在/etc/rc.d目录下的文件。
+
+大多数的Linux发行版本中，启动的是/etc/rc.d/init.d。这些脚本被ln命令来连接到/etc/rc.d/rcn.d目录。(这里的n就是运行级0-6)
+
+例如/etc/rc.d/rc2.d下面的S10network就是连接到/etc/rc.d/init.d下的network脚本的。
+
+因此，我们可以知道，rc2.d下面的文件就是和运行级2有关的。
+
+文件开头的S代表start就是启动服务的意思，后面的数字10就是启动的顺序。例如，在同一个目录下，你还可以看到 S80postfix这个文件，80就是顺序在10以后，因为没有启动网络的情况下，启动postfix是没有任何作用的。
+
+再看一下/etc/rc.d/rc3.d，可以看到文件S60nfslock，但是这个文件不存在于/etc/rc.d/rc2.d 目录下。NFS要用到这个文件，一般用在多用户环境下，所以放在rc3.d目录下。
+
+另外，在/etc/rc.d/rc2.d还可以看到那些K开头的文件，例如
+
+/etc/rc.d/rc2.d/K45named，K代表kill。
+
+标准的Linux运行级为3或者5，如果是3的话，系统就在多用户状态。如果是5的话，则是运行着X Window系统。如果目前正在3或5，而你把运行级降低到2的话，init就会执行K45named脚本。
+
+不同的运行级定义如下：
+
+```text
+0 - 停机（千万不要把initdefault设置为0）
+1 - 单用户模式
+2 - 多用户，但是没有NFS
+3 - 完全多用户模式
+4 - 没有用到
+5 - X11
+6 - 重新启动（千万不要把initdefault设置为6）
+```
+
 # U盘安装Linux
 
 在程序中找到“启动盘创建器”即可。这也是防止变砖的最后一条路，反正BIOS是不可能安装坏的，随便折腾吧。
@@ -351,46 +345,6 @@ Linux下的wifi配置主要使用iw系列命令，包括iw、iwconfig、iwlist�
 http://blog.csdn.net/liangyamin/article/details/7209761
 
 Linux下的iwpriv（iwlist、iwconfig）的简单应用
-
-# eBPF
-
-BPF（Berkely Packet Filter）提供了一种当内核或应用特定事件发生时候，执行一段代码的能力。
-
-这种能力最初被用于TCP包的过滤，正如名字所示，后来也被广泛用于profile领域。
-
-BPF采用了虚拟机指令规范，所以也可以看成是一种虚拟机实现，使我们可以在不修改内核源码和重新编译的情况下，扩展内核的能力。
-
-既然有虚拟机和bytecode，那么也需要相应的编译器了：
-
-官网：
-
-https://github.com/iovisor/bcc
-
-参考：
-
-https://ebpf.io/zh-cn/
-
-一个eBPF的专栏
-
-https://www.ebpf.top/
-
-一个eBPF的专栏
-
-https://zhuanlan.zhihu.com/p/659240633
-
-再次实现了一个Lua性能分析器
-
-https://zhuanlan.zhihu.com/p/590881470
-
-万字长文让你深入了解BPF字节码
-
-https://zhuanlan.zhihu.com/p/484788508
-
-一文看懂eBPF：eBPF实现原理
-
-https://zhuanlan.zhihu.com/p/393199226
-
-BPF内部原理
 
 # DTrace
 

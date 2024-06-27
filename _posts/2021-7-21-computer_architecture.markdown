@@ -199,6 +199,12 @@ https://zhuanlan.zhihu.com/p/678502885
 
 从零开始实现GameBoy模拟器
 
+---
+
+内存模拟器Ramulator：
+
+https://github.com/CMU-SAFARI/ramulator2
+
 ## 多核
 
 SMP(Symmetric Multiprocessing)架构：即多处理器架构，是目前最常见的多处理器计算机架构。

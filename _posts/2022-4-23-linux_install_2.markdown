@@ -369,10 +369,6 @@ https://mp.weixin.qq.com/s/RHAoM8zhFvQl9R8V0ePxNQ
 
 看腾讯这道多线程面试题
 
-https://mp.weixin.qq.com/s/QshDG-nbmBcF1OBZbBFwjg
-
-操作系统与存储：解析Linux内核全新异步IO引擎io_uring设计与实现
-
 https://mp.weixin.qq.com/s/qWXcL90ZAkc7rrhsbuB_Bw
 
 只有170字节，最小的64位Hello World程序这样写成

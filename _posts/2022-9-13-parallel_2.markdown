@@ -45,6 +45,14 @@ https://zhuanlan.zhihu.com/p/692947173
 
 一文读懂nvidia-smi topo的输出
 
+https://zhuanlan.zhihu.com/p/653968730
+
+一文搞懂MPI通信接口的特点及原理
+
+https://zhuanlan.zhihu.com/p/652690336
+
+消息传递接口MPI诞生记
+
 ## 其他概念
 
 这里的有些概念并非MPI的内容，但在分布式计算中，应用的比较广，所以就放在这里了。

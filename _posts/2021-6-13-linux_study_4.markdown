@@ -7,6 +7,46 @@ category: linux
 * toc
 {:toc}
 
+# NFS
+
+## 客户端
+
+`mount -t nfs 192.168.0.1:/tmp /mnt/nfs`
+
+挂载NFS。挂载点（即上例中的/mnt/nfs）必须事先创建。
+
+`mount: /bak: bad option; for several filesystems (e.g. nfs, cifs) you might need a /sbin/mount.<type> helper program`
+
+出现上面的问题，需要：
+
+`sudo apt install nfs-common libnfs-utils`
+
+## 服务器端
+
+```bash
+sudo apt install nfs-server
+cd /
+sudo mkdir nfs-server
+sudo chmod 777 nfs-server
+sudo chmod 666 /etc/exports
+echo "/nfs-server *(rw,sync,no_root_squash)">>/etc/exports
+sudo service nfs-server restart
+```
+
+参考：
+
+https://www.cnblogs.com/tu13/p/ubuntu_nfs.html
+
+ubuntu18.04搭建NFS服务器
+
+## 访问Windows共享文件夹
+
+```
+sudo apt install cifs-utils
+sudo mkdir /mnt/share
+sudo mount -t cifs -o username=XXX,password=XXX //192.168.0.81/abc /mnt/share
+```
+
 # SSH
 
 ## keygen

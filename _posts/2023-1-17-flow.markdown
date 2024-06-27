@@ -191,13 +191,19 @@ Stable Diffusion的完整架构图如下：
 
 ---
 
+![](/images/img5/eval-models-2.png)
+
+不同类型的文生图模型的考虑因素/优缺点
+
+---
+
 参考：
 
 https://jalammar.github.io/illustrated-stable-diffusion/
 
 The Illustrated Stable Diffusion
 
-https://lilianweng.github.io/lil-log/2021/07/11/diffusion-models.html
+https://lilianweng.github.io/posts/2021-07-11-diffusion-models/
 
 What are Diffusion Models?
 

@@ -194,6 +194,83 @@ https://zhuanlan.zhihu.com/p/384098769
 
 从内核看epoll的实现（基于5.9.9）
 
+# eBPF
+
+BPF（Berkely Packet Filter）提供了一种当内核或应用特定事件发生时候，执行一段代码的能力。
+
+这种能力最初被用于TCP包的过滤，正如名字所示，后来也被广泛用于profile领域。
+
+BPF采用了虚拟机指令规范，所以也可以看成是一种虚拟机实现，使我们可以在不修改内核源码和重新编译的情况下，扩展内核的能力。
+
+既然有虚拟机和bytecode，那么也需要相应的编译器了：
+
+官网：
+
+https://github.com/iovisor/bcc
+
+参考：
+
+https://ebpf.io/zh-cn/
+
+一个eBPF的专栏
+
+https://www.ebpf.top/
+
+一个eBPF的专栏
+
+https://zhuanlan.zhihu.com/p/659240633
+
+再次实现了一个Lua性能分析器
+
+https://zhuanlan.zhihu.com/p/590881470
+
+万字长文让你深入了解BPF字节码
+
+https://zhuanlan.zhihu.com/p/484788508
+
+一文看懂eBPF：eBPF实现原理
+
+https://zhuanlan.zhihu.com/p/393199226
+
+BPF内部原理
+
+## io_uring
+
+epoll只支持network sockets和pipes，甚至连storage files都不支持。
+
+eBPF也算是异步框架（事件驱动），但与io_uring没有本质联系，二者属于不同子系统， 并且在模型上有一个本质区别：
+
+- eBPF对用户是透明的，只需升级内核（到合适的版本），应用程序无需任何改造；
+- io_uring提供了新的系统调用和用户空间API，因此需要应用程序做改造。
+
+随着设备越来越快，中断驱动（interrupt-driven）模式效率已经低于轮询模式 （polling for completions），这也是高性能领域最常见的主题之一。
+
+![](/images/img5/io_uring.png)
+
+提交队列：submission queue (SQ)
+
+完成队列：completion queue (CQ)
+
+o_uring实例可工作在三种模式：
+
+- 中断驱动模式（interrupt driven）
+- 轮询模式（polled）
+- 内核轮询模式（kernel polled）
+
+参考：
+
+https://arthurchiao.art/blog/intro-to-io-uring-zh
+
+Linux异步I/O框架io_uring：基本原理、程序示例与性能压测
+
+https://mp.weixin.qq.com/s/QshDG-nbmBcF1OBZbBFwjg
+
+操作系统与存储：解析Linux内核全新异步IO引擎io_uring设计与实现
+
+https://zhuanlan.zhihu.com/p/583413166
+
+Linux I/O神器之io_uring
+
 ## 惊群
 
 对于高性能的服务器而言，为了利用多CPU核的优势，大多采用多个进程(线程)同时在一个listen socket上进行accept请求。当这个fd(socket)的事件发生的时候，这些睡眠的进程(线程)就会被同时唤醒，多个进程(线程)从阻塞的系统调用上返回，这就是"惊群"现象。
@@ -273,37 +350,3 @@ https://mp.weixin.qq.com/s/zIhCDj_0OSOmrevuqxJCBw
 https://mp.weixin.qq.com/s/9YXsJo_u2zVNqvABoGqfqg
 
 五种IO模型分析
-
-# 启动脚本
-
-Linux启动时，运行一个叫做init的程序，然后由它来启动后面的任务，包括多用户环境，网络等。
-
-那么，到底什么是运行级呢？简单的说，运行级就是操作系统当前正在运行的功能级别。这个级别从1到6，具有不同的功能。这些级别在/etc/inittab文件里指定。这个文件是init程序寻找的主要文件，最先运行的服务是那些放在/etc/rc.d目录下的文件。
-
-大多数的Linux发行版本中，启动的是/etc/rc.d/init.d。这些脚本被ln命令来连接到/etc/rc.d/rcn.d目录。(这里的n就是运行级0-6)
-
-例如/etc/rc.d/rc2.d下面的S10network就是连接到/etc/rc.d/init.d下的network脚本的。
-
-因此，我们可以知道，rc2.d下面的文件就是和运行级2有关的。
-
-文件开头的S代表start就是启动服务的意思，后面的数字10就是启动的顺序。例如，在同一个目录下，你还可以看到 S80postfix这个文件，80就是顺序在10以后，因为没有启动网络的情况下，启动postfix是没有任何作用的。
-
-再看一下/etc/rc.d/rc3.d，可以看到文件S60nfslock，但是这个文件不存在于/etc/rc.d/rc2.d 目录下。NFS要用到这个文件，一般用在多用户环境下，所以放在rc3.d目录下。
-
-另外，在/etc/rc.d/rc2.d还可以看到那些K开头的文件，例如
-
-/etc/rc.d/rc2.d/K45named，K代表kill。
-
-标准的Linux运行级为3或者5，如果是3的话，系统就在多用户状态。如果是5的话，则是运行着X Window系统。如果目前正在3或5，而你把运行级降低到2的话，init就会执行K45named脚本。
-
-不同的运行级定义如下：
-
-```text
-0 - 停机（千万不要把initdefault设置为0）
-1 - 单用户模式
-2 - 多用户，但是没有NFS
-3 - 完全多用户模式
-4 - 没有用到
-5 - X11
-6 - 重新启动（千万不要把initdefault设置为6）
-```

@@ -18,6 +18,16 @@ https://www.zhihu.com/question/406922677
 
 ---
 
+照相排版机最有趣和最意想不到的结果是Unix标准错误文件（stderr）的诞生！排版之后，你必须取下一个又长又宽的纸带，然后小心翼翼地将其送入一个气味难闻又黏糊糊的机器，过一会（几分钟之后）这个机器把纸带吐出时，上面的字就清晰可见了。
+
+某个下午，我们几个人又在重复相同的过程——对一些东西进行排版，将纸带送入处理机器，最终的显影成像非常漂亮，但只有一行内容：”cannot open file foobar”。大家忍不住对此大发牢骚——但抱怨是否管用，要看聆听你抱怨的是否是正确的人。几天之后，标准错误文件（stderr）就诞生了。。。
+
+https://arthurchiao.art/blog/birth-of-standard-error-zh
+
+标准错误stderr的诞生
+
+---
+
 https://mp.weixin.qq.com/s/YdoIVBpn1dFUEzDEF5pYJw
 
 被迫离开工作近20年的公司，半导体老兵上演逆袭。林孝平，一个小儿麻痹患者。
@@ -333,6 +343,10 @@ Marvell在中国落幕，出来了多少芯片大佬（下）？
 https://www.zhihu.com/question/47312140
 
 BIOS和CMOS究竟是什么关系？
+
+https://arthurchiao.art/blog/tty-demystified-zh
+
+TTY的前世今生
 
 # 非洲=
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（六）——LLM Inference, LLM System, Alpa
+title:  并行 & 框架 & 优化（六）——LLM Inference, LLM System
 category: DL acceleration 
 ---
 
@@ -8,6 +8,38 @@ category: DL acceleration
 {:toc}
 
 # 快速Transformer（续）
+
+## FlashAttention
+
+代码：
+
+https://github.com/Dao-AILab/flash-attention
+
+![](/images/img5/FlashAttention.png)
+
+对于self-attention块，除了两个大矩阵乘法是计算受限的，其他都是内存受限的逐点运算。
+
+FlashAttention主要使用分块矩阵的思想，对矩阵乘法进行优化。
+
+分块之后，参与运算的小块可以放入速度更快的存储单元，例如原来的运算需要反复读取HBM，而现在只需要读取一次HBM，然后就可以在SRAM或者Cache中完成所有的运算。
+
+但Self-Attention中有softmax计算，而softmax的分母包含了所有元素相关的求和项，所以对Self-Attention进行分块计算的真正难点在于对softmax的分块计算。
+
+FlashAttention提出了一种叫做Online Softmax的增量算法：我们首先计算一个分块的局部softmax值，然后存储起来。当处理完下一个分块时，可以根据此时的新的全局最大值和全局EXP求和项来更新旧的softmax值。接着再处理下一个分块，然后再更新。当处理完所有分块后，此时的所有分块的softmax值都是“全局的”。具体计算公式略。
+
+其他优化点：
+
+- softmax recomputing。前向通过保存logsumexp结果，反向利用logsumexp重新计算softmax。
+
+- Dropout，前向阶段只保存dropout seed与offset，反向宁愿再算一遍dropout，放弃保存dropout mask。
+
+https://www.zhihu.com/question/611236756
+
+FlashAttention的速度优化原理是怎样的？
+
+https://blog.csdn.net/v_JULY_v/article/details/133619540
+
+通透理解FlashAttention与FlashAttention2：全面降低显存读写、加快计算速度
 
 ## FlashDecoding
 
@@ -27,7 +59,7 @@ Prefill阶段在Q的seqlen维度以及batch_size维度做并行。
 - 然后在这些K/V块上，使用标准FlashAttention进行计算，得到所有小块的局部结果。
 - 最后，使用一个额外的kernel做全局的reduce，得到正确输出。
 
-FlashDecoding有时也被称为FlashAttention。
+FlashDecoding有时也被称为FlashAttention V2。
 
 ## PagedAttention
 
@@ -235,59 +267,3 @@ ILP可以分为下列几种类型：
 Resharding cost是不同sharding之间切换产生的开销：
 
 ![](/images/img5/resharding.svg)
-
----
-
-MLIR中有mesh dialect用于描述Sharding Spec：
-
-```mlir
-module @sharding_test {
-  mesh.mesh @mesh_2d(shape = 4x8)
-
-  func.func @matmul_on_operand_shard_batch_and_k(%arg0: tensor<32x1000x4096xf32>, %arg1: tensor<32x4096x8192xf32>) -> tensor<32x1000x8192xf32> {
-    %sharding_annotated = mesh.shard %arg0 to <@mesh_2d, [[0], [], [1]]> annotate_for_users : tensor<32x1000x4096xf32>
-    %sharding_annotated_0 = mesh.shard %arg1 to <@mesh_2d, [[0], [1]]> annotate_for_users : tensor<32x4096x8192xf32>
-    %0 = tosa.matmul %sharding_annotated, %sharding_annotated_0 : (tensor<32x1000x4096xf32>, tensor<32x4096x8192xf32>) -> tensor<32x1000x8192xf32>
-    %sharding_annotated_1 = mesh.shard %0 to <@mesh_2d, [[0]], partial = sum[1]> : tensor<32x1000x8192xf32>
-    return %sharding_annotated_1 : tensor<32x1000x8192xf32>
-  }
-}
-```
-
----
-
-如何用数学语言表示一个二维的one-hot：
-
-$$
-\begin{aligned}
-
-\forall (v,u) \in E, \
-& \forall i \in [0, k_v), & \sum_{j \in [0, k_u)}\mathbf{e}_{vu} [i,j] \leq \mathbf{s}_v[i] \\
-& \forall j \in [0, k_u), & \sum_{i \in [0, k_v)}\mathbf{e}_{vu} [i,j] \leq \mathbf{s}_u[j] \\
-
-\end{aligned}
-$$
-
-![](/images/img5/one_hot_decision_vector.svg)
-
----
-
-参考：
-
-https://zhuanlan.zhihu.com/p/487588274
-
-用ILP和DP自动探索DL分布式策略——Alpa
-
-# 工具
-
-FairScale是由Facebook Research开发的PyTorch扩展库。FSDP就是首发于这个库。
-
----
-
-https://zhuanlan.zhihu.com/p/412118353
-
-Kokkos:一个异构并行计算通用平台
-
-# 数据流并行
-
-数据流并行是Pipeline并行的高阶版本。广义的数据流希望通过图编译找到全局最优策略，本质上是一种把编译器当万金油的惰性做法，深度学习框架在系统调度这种比较粗放的尺度，围绕数据流做了这么多年的自动并行化，最后业界主流实际上的并行策略还是预设的这些Pipeline、Tensor并行的组合，而不是编译器搜出来的自动化的并行策略。

@@ -59,6 +59,10 @@ HFP8就提出了一种Hybrid的方式：forward的时候用FP-1-4-3，backward�
 
 CFormat这种动态调整exponent和mantissa位数的量化方式，又被称为Dynamic Fixed Point Quantization。
 
+NV推出了一个叫做TransformerEngine的库，专门用于Hopper GPU上的FP8加速。
+
+https://github.com/NVIDIA/TransformerEngine
+
 # W4A16
 
 ![](/images/img5/W4.png)

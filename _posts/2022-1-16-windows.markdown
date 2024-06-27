@@ -224,3 +224,7 @@ https://zhuanlan.zhihu.com/p/30119950
 https://zhuanlan.zhihu.com/p/64445886
 
 数据中心网络架构浅谈（四）
+
+https://blog.csdn.net/lonely_geek/article/details/104016887
+
+OpenvSwitch（OVS）全面解读

@@ -169,6 +169,8 @@ https://github.com/facebookincubator/gloo
 
 `MPI_Allgather`相当于一个`MPI_Gather`操作之后跟着一个`MPI_Bcast`操作。
 
+allgather操作常见的有两种实现方式：Recursive Doubling和Bruck算法。
+
 ## Reduce & Allreduce
 
 ![](/images/img4/mpi_reduce_1.png)
@@ -178,6 +180,14 @@ https://github.com/facebookincubator/gloo
 ![](/images/img4/mpi_allreduce_1.png)
 
 `MPI_Allreduce`等效于先执行`MPI_Reduce`，然后执行`MPI_Bcast`。
+
+## ReduceScatter
+
+![](/images/img5/ReduceScatter.jpg)
+
+它的作用相当于分布式AllReduce+Shard操作。它的对偶操作是：Allgather。
+
+ReduceScatter操作有两种实现方式：Recursive Halving和Pairwise Exchange。
 
 ## Alltoall
 
@@ -210,17 +220,23 @@ Scatter也被称为One-to-all，Gather也被称为All-to-one。
 
 AllReduce有多种具体的实现方式。
 
-Ring AllReduce：
+- Ring AllReduce：
 
 ![](/images/img4/Ring_AllReduce.jpg)
 
-Having-Doubling AllReduce：
+- Having-Doubling AllReduce：
 
 ![](/images/img4/Having-Doubling_AllReduce.jpg)
 
 该算法每次选择节点距离倍增的节点相互通信，每次通信量倍减（或倍增）。
 
 该算法的优点是通信步骤较少，只有$$2 * log_2N$$次（其中N表示参与通信的节点数）通信即可完成，所以其有更低的延迟。相比之下Ring算法的通信步骤是$$2 ∗ (N−1)$$次；缺点是每一个步骤相互通信的节点均不相同，链接来回切换会带来额外开销。
+
+- Recursive Doubling算法
+
+- Rabenseifner算法
+
+- Binary blocks算法
 
 ring all-reduce具有理论上最优的传输带宽，而没有考虑每次传输都包含的延迟（latency）。当数据量V比较大时，延迟项可以忽略。当V特别小，或者设备数p特别大时，带宽就变得不重要了，反而是延迟比较关键。
 
