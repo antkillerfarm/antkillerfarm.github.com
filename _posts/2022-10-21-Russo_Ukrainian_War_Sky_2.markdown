@@ -19,6 +19,10 @@ category: Russo Ukrainian War Sky
 
 ![](/images/img4/Ukraine_3.jpg)
 
+https://www.zhihu.com/question/583799210
+
+西乌克兰无论在文化上和政治上都和乌克兰民族关系更远，为什么没像乌东地区有那么强的分裂倾向?
+
 ---
 
 2010年选举示意图：

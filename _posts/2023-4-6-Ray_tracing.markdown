@@ -311,6 +311,10 @@ https://mp.weixin.qq.com/s/0XlH3fFKZBfX3UMq7eTbYw
 
 什么是event camera
 
+https://mp.weixin.qq.com/s/cGyzVl2w9y3MEyYGkrTQgg
+
+Event camera登上Nature
+
 https://mp.weixin.qq.com/s/5fQDFlR5NZNW_HS2cOfTzg
 
 高光谱成像技术的介绍
