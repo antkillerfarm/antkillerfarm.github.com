@@ -207,6 +207,16 @@ https://zhuanlan.zhihu.com/p/378639081
 
 ---
 
+带宽翻倍原理很简单，DDR内部一次操作预测n倍数据，连续读写是完全能命中的，而随机读写的n-1部分是完全命中不了的。
+
+DRAM颗粒核心频率不变，仅仅提升I/O口频率，这也导致了从DDR1到DDR6内存随机访问延迟没什么变化。
+
+https://www.zhihu.com/question/649546709
+
+内存的起源是哪里？DDR1到DDR6的区别分别是什么？
+
+---
+
 https://mp.weixin.qq.com/s/HOhBNZfOf5xQIFLYQ5ntCw
 
 内存的故事
