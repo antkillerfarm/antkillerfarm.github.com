@@ -184,7 +184,13 @@ git的reset和checkout的区别
 
 当发生冲突，需要放弃修改，强制更新的时候，可以：
 
-`git reset --hard origin/master`
+本地版本：
+
+`git reset --hard`
+
+远程版本：
+
+`git reset --hard origin/<branch name>`
 
 ### 保存密码
 

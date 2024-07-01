@@ -1,13 +1,71 @@
 ---
 layout: post
-title: 阿波罗50年, 天文杂谈（一）
+title: 天文（六）——火星探测, 阿波罗50年
 category: Nature 
 ---
 
 * toc
 {:toc}
 
-# 火星探测（续）
+# 中国航天（续）
+
+https://mp.weixin.qq.com/s/JRFlvf4WUvcitv2mrL9mbQ
+
+这次，天和带了“套娃”和“太上老君的炼丹炉”上天
+
+https://www.zhihu.com/answer/1332695787
+
+每个宇航员的航天服都是量身定做的吗？
+
+https://www.zhihu.com/question/288120613
+
+有哪些航空航天上的事实，没有一定航空航天知识的人不会相信？
+
+https://www.zhihu.com/question/31377936
+
+中国现有的技术能够实现载人登月吗？
+
+https://www.zhihu.com/question/465899092
+
+如何看待中国空间站操作界面都是中文？
+
+https://mp.weixin.qq.com/s/klSndj6LPENaW53OPq15Yg
+
+中国在太空用上了机械臂，却被美国人质疑会去抓他们的卫星？
+
+https://www.zhihu.com/question/638739576
+
+我国成功发射爱因斯坦探针卫星，该卫星有哪些技术亮点和用途？
+
+# 火星探测
+
+F´(F Prime)是一个组件驱动的框架，可以快速开发和部署航天飞行及其他嵌入式软件应用程序。而F´也是火星无人机“机智号”所用的飞行软件框架，它刚由毅力号携带到火星。
+
+https://github.com/nasa/fprime
+
+https://mp.weixin.qq.com/s/8Zepha-05GRiC5bGVp0LkQ
+
+Linux登陆火星，占有率再超Windows，NASA还在GitHub发布源码教程
+
+https://mp.weixin.qq.com/s/x9Nps_oGoVQd2PW3H2VdyA
+
+人类刚给火星送去Linux系统，以及一款安卓手机芯片
+
+---
+
+《火星叔叔马丁》、《异星战场之火星公主》。
+
+https://mp.weixin.qq.com/s/oHO6TZuFGeGdDbACdOjS9w
+
+马丁叔叔所在的火星，有公主吗？
+
+---
+
+![](/images/img4/walle.jpg)
+
+![](/images/img4/walle_2.jpg)
+
+---
 
 格鲁什科和萨格尔耶夫认为，苏联应该放弃失败率居高不下的火星探测，不在这一领域与美国人竞争，而专注于十分成功的金星探测计划。他们及其支持者也被戏称为“金星人”。
 
@@ -284,39 +342,3 @@ https://zhuanlan.zhihu.com/p/651231503
 https://mp.weixin.qq.com/s/vMe5RmD8uBW3AeGDYwbI5A
 
 紫金山天文台的创立（高鲁、余青松）
-
----
-
-https://view.inews.qq.com/wxn/20211224A03SC600
-
-韦伯望远镜即将发射！梭哈百亿美元上天，是为了看啥？
-
-https://view.inews.qq.com/wxn/20211225A0A9SJ00
-
-韦伯望远镜成功背后：成本约110亿美元，共推迟发射18次
-
-https://view.inews.qq.com/wxn/20211225A08N9G00
-
-“鸽王之王”韦伯终于上天！比哈勃看得更远，烧钱更多
-
-https://mp.weixin.qq.com/s/AIMccIbtB6W5nwu-6yRuJw
-
-“鸽王” 韦伯上天之前，你需要知道这些
-
-https://mp.weixin.qq.com/s/BYw9HJehGC528WkX_q4JLw
-
-情人节将至，韦伯望远镜首次太空“睁眼”！
-
-https://www.sohu.com/a/569342145_161795
-
-韦伯太空望远镜主镜被太空陨石砸中，受损情况比最初想象要大
-
----
-
-![](/images/img4/Van_Allen_radiation_belts.jpg)
-
-范·艾伦辐射带（Van Allen radiation belts）是地球磁场捕获的太阳宇宙射线和部分银河宇宙射线中的高能带电粒子组成。一般来说，内辐射带里高能质子多，外辐射带里高能电子多。
-
-1958年1月31日，美国第一颗人造卫星探险者一号升空，当升至800千米高空时，星上所载盖革计数器读数突然下降至0。到1958年3月26日探险者三号升空时，又发生了同样的情况。James Van Allen认为，这是因为存在极大量的辐射导致计数器达到饱和而失灵造成的。因此，同年7月26日发射探险者四号时，他在计数器前端加入一小片薄铅以阻挡部分辐射。果然，新的卫星证实了他的猜测。
-
->James Van Allen，1914～2006，University of Iowa博士（1939）+教授。美国科学院院士。

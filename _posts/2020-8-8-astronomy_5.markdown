@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Starlink, 中国航天, 火星探测
+title: 天文（五）——Starlink, 中国航天
 category: Nature 
 ---
 
@@ -125,8 +125,6 @@ https://zhuanlan.zhihu.com/p/385461869
 
 ---
 
-据《财经》报道，从融资和估值来看，蓝箭航天、零壹空间、星际荣耀已经成为目前众多民营航天企业的第一梯队，备受市场的关注。除此之外，还包括翎客航天、星途探索、九州云箭、灵动飞天、深蓝航天等。
-
 2020年3月16日，我国在文昌航天发射基地组织实施的长征机7号改中型运载火箭首次飞行任务，火箭在飞行三分钟之后出现火球然后坠落，发射任务宣告失败。
 
 2020年4月9日，我国在西昌卫星发射中心发射了长征三号乙运载火箭，在发射开始的时候，因为火箭第3级发动机工作异常，导致火箭三级和卫星坠落在太平洋，发射任务宣告失败。
@@ -147,9 +145,35 @@ https://www.zhihu.com/question/295927388
 
 如何看待西航动力研究所张小平离职一事？
 
+---
+
+据《财经》报道，从融资和估值来看，蓝箭航天、零壹空间、星际荣耀已经成为目前众多民营航天企业的第一梯队，备受市场的关注。除此之外，还包括翎客航天、星途探索、九州云箭、灵动飞天、深蓝航天等。
+
+T1：天兵、蓝箭。
+
+T2：星河、东方空间。
+
+T3：箭元、星际、深蓝航天。
+
+康永来，天兵科技创始人兼火箭总师，前蓝箭CTO。
+
 https://www.zhihu.com/question/611680931
 
 如何看待7月12日蓝箭朱雀二号甲烷火箭发射任务获得圆满成功，甲烷火箭的未来如何？
+
+https://www.zhihu.com/question/606460612
+
+中国的民营火箭怎么样了?
+
+---
+
+好消息：火箭上升过程中姿态稳定，9台发动机工作一致性好，发动机和箭体结构没有问题。是比较优秀的火箭。
+
+坏消息：这是静态点火实验，但它飞起来了。
+
+https://www.zhihu.com/question/660354330
+
+如何看待2024年6月30日天兵科技天龙三号火箭静态点火测试出现的事故？
 
 ---
 
@@ -212,59 +236,3 @@ https://www.zhihu.com/question/457042825
 https://mp.weixin.qq.com/s/ZFjtgtjW0TmykjQnynmIFg
 
 “天和”出征！中国空间站开启“下饺子”模式，两年11次密集发射，3次舱段、4次货运、4次载人发射
-
-https://mp.weixin.qq.com/s/JRFlvf4WUvcitv2mrL9mbQ
-
-这次，天和带了“套娃”和“太上老君的炼丹炉”上天
-
-https://www.zhihu.com/answer/1332695787
-
-每个宇航员的航天服都是量身定做的吗？
-
-https://www.zhihu.com/question/288120613
-
-有哪些航空航天上的事实，没有一定航空航天知识的人不会相信？
-
-https://www.zhihu.com/question/31377936
-
-中国现有的技术能够实现载人登月吗？
-
-https://www.zhihu.com/question/465899092
-
-如何看待中国空间站操作界面都是中文？
-
-https://mp.weixin.qq.com/s/klSndj6LPENaW53OPq15Yg
-
-中国在太空用上了机械臂，却被美国人质疑会去抓他们的卫星？
-
-https://www.zhihu.com/question/638739576
-
-我国成功发射爱因斯坦探针卫星，该卫星有哪些技术亮点和用途？
-
-# 火星探测
-
-F´(F Prime)是一个组件驱动的框架，可以快速开发和部署航天飞行及其他嵌入式软件应用程序。而F´也是火星无人机“机智号”所用的飞行软件框架，它刚由毅力号携带到火星。
-
-https://github.com/nasa/fprime
-
-https://mp.weixin.qq.com/s/8Zepha-05GRiC5bGVp0LkQ
-
-Linux登陆火星，占有率再超Windows，NASA还在GitHub发布源码教程
-
-https://mp.weixin.qq.com/s/x9Nps_oGoVQd2PW3H2VdyA
-
-人类刚给火星送去Linux系统，以及一款安卓手机芯片
-
----
-
-《火星叔叔马丁》、《异星战场之火星公主》。
-
-https://mp.weixin.qq.com/s/oHO6TZuFGeGdDbACdOjS9w
-
-马丁叔叔所在的火星，有公主吗？
-
----
-
-![](/images/img4/walle.jpg)
-
-![](/images/img4/walle_2.jpg)

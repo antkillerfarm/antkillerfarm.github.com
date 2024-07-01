@@ -192,3 +192,7 @@ https://www.zhihu.com/answer/3363368237
 https://zhuanlan.zhihu.com/p/704022818
 
 嘲笑原始部落沉迷黄色，反而显得我们很没见识
+
+https://www.zhihu.com/question/24246919
+
+为什么印第安人没有进化出更先进的文明，而还停留在原始社会？

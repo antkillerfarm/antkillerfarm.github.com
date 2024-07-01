@@ -75,6 +75,16 @@ W4A16主要有GPTQ和AWQ等实现。
 
 上图是QuaRot提出的一种W4A16在LLM领域的实践方法，其中还包含了KV Cache的4bit量化。
 
+参考：
+
+https://zhuanlan.zhihu.com/p/681578090
+
+大模型量化技术原理-AWQ、AutoAWQ
+
+https://zhuanlan.zhihu.com/p/680212402
+
+大模型量化技术原理-LLM.int8()、GPTQ
+
 # q4f16 & q3f16
 
 q3f16（q3指使用Quantize 3 bit来量化，f16是指核心计算使用fp 16来计算）。

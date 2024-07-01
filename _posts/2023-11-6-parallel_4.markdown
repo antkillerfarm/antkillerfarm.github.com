@@ -187,6 +187,12 @@ KV Cache的使用方式一般如上图所示。其中蓝色表示输入里可以
 
 ---
 
+某些非Dense Attention的KV cache的例子。
+
+![](/images/img5/StreamingLLM.png)
+
+---
+
 https://zhuanlan.zhihu.com/p/630832593
 
 大模型推理性能优化之KV Cache解读
@@ -194,6 +200,10 @@ https://zhuanlan.zhihu.com/p/630832593
 https://zhuanlan.zhihu.com/p/662498827
 
 大模型推理加速：看图学KV Cache
+
+https://zhuanlan.zhihu.com/p/700197845
+
+大模型推理优化技术-KV Cache
 
 ## MQA & GQA
 
