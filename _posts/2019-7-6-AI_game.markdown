@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  AI游戏, 英雄无敌
+title:  AI游戏
 category: DRL 
 ---
 
@@ -244,34 +244,6 @@ https://mp.weixin.qq.com/s/DXIGBypPQd1FkZ70aBG_9g
 https://zhuanlan.zhihu.com/p/475557186
 
 如何下出最菜的五子棋？“反五子棋”玩法简介与AI研究
-
-# 英雄无敌
-
-1、2代：New Word Computing
-
-3、4代：3DO旗下的New Word Computing
-
-5代以后，发行商均为育碧。
-
-5代：Nival Interactive
-
-6代：Black Hole Entertainment
-
-7代：Limbic Entertainment
-
-http://heroworld.gamerhome.com/
-
-这是目前网上最全面的英雄无敌系列的资料站。
-
----
-
-英雄无敌算是毛子的国民游戏，在3DO破产之后。毛子用爱发电制作了两套风格迥异的续作。
-
-一套是Horn of the Abyss深渊号角。在原版的基础上增加了一个Cove海盗族，整体风格保持原汁原味，没有花里胡哨的功能.
-
-另一条路线就是沿着神之觉醒In the Wake of Gods的路子下来的，这一派走的是做加法的路线，不断加入新功能、新兵种、新技能、新种族……更像一锅乱炖，平衡性什么就别考虑了，但是乱炖自有乱炖的风味。
-
-![](/images/img5/hero3.jpg)
 
 # 棋坛纵横+
 
