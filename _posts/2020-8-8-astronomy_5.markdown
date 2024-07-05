@@ -155,7 +155,7 @@ T2：星河、东方空间。
 
 T3：箭元、星际、深蓝航天。
 
-康永来，天兵科技创始人兼火箭总师，前蓝箭CTO。
+康永来，天兵科技创始人兼火箭总师，前蓝箭CTO。天龙系列火箭使用天火系列引擎。
 
 https://www.zhihu.com/question/611680931
 
@@ -170,6 +170,10 @@ https://www.zhihu.com/question/606460612
 好消息：火箭上升过程中姿态稳定，9台发动机工作一致性好，发动机和箭体结构没有问题。是比较优秀的火箭。
 
 坏消息：这是静态点火实验，但它飞起来了。
+
+第一个幸运因素是火箭底部被扯坏后氦气大量泄露引起火箭自旋稳定因此火箭没有乱飞，同时火箭提前熄火从而降低了被吹走距离。
+
+第二个幸运因素是风没把火箭往只有1公里外的城里吹，如果风向不一样、没把火箭往山里吹，就会造成重大损失。
 
 https://www.zhihu.com/question/660354330
 
@@ -220,35 +224,3 @@ https://mp.weixin.qq.com/s/iMr811ClFpmW24khhxkFjg
 https://mp.weixin.qq.com/s/CI5V2LirWMuTUn9riaJPSA
 
 南航大二学生两年手搓火箭成功发射
-
-https://mp.weixin.qq.com/s/QjB7zDCXC82x5O25InGZtA
-
-嫦娥五号开启我国首次地外天体采样返回之旅
-
-https://mp.weixin.qq.com/s/MZrFA6vWEl_hJnRBCFciLw
-
-中国探月工程“三步走”收官：嫦五配胖五，回家之前挖点土
-
-https://mp.weixin.qq.com/s/dZYtp_olAppIB5Av3CKydw
-
-嫦娥五号完成“钻取”采样及封装，正进行“表取”
-
-https://mp.weixin.qq.com/s/x9GzFnl_y5dei4WFwfxxtA
-
-嫦娥五号采回的“土特产”，可以用来研究些什么？
-
-https://mp.weixin.qq.com/s/RfcxEo4ox86W1u-MoGXFzQ
-
-“嫦娥” 回来了！一文回顾嫦娥五号探月之旅
-
-https://mp.weixin.qq.com/s/TiSNWwmP3_adWmzc53CaXA
-
-1731克月壤的最全科普
-
-https://www.zhihu.com/question/457042825
-
-中国首个空间站天和核心舱4月29日发射成功，对中国航天有哪些重要意义？
-
-https://mp.weixin.qq.com/s/ZFjtgtjW0TmykjQnynmIFg
-
-“天和”出征！中国空间站开启“下饺子”模式，两年11次密集发射，3次舱段、4次货运、4次载人发射

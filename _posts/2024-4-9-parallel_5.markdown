@@ -177,6 +177,10 @@ https://blog.csdn.net/v_JULY_v/article/details/137711599
 
 RAG进阶之通用文档处理：从RAGFlow、TextMonkey到mPLUG-DocOwl 1.5
 
+https://zhuanlan.zhihu.com/p/695299235
+
+RAG路线图： Reliable, Adaptable, and Attributable Language Models with Retrieval
+
 ---
 
 假设有一个10w的外部数据，我们的原始输入Prompt长度为100，长度限制为4k，通过查询-检索的方式，我们能将最有效的信息提取集中在这4k的长度中，与Prompt一起送给大模型，从而让大模型得到更多的信息。此外，还能通过多轮对话的方式不断提纯外部数据，达到在有限的输入长度限制下，传达更多的信息给大模型。

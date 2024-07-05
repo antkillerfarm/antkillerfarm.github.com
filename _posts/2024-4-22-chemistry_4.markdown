@@ -179,6 +179,22 @@ https://zhuanlan.zhihu.com/p/648432848
 
 ## 参考
 
+https://mp.weixin.qq.com/s/ZJWx-7byW9dDrC58Q6f_hw
+
+从冰淇淋到洗衣粉，它们靠“香”行走江湖
+
+https://mp.weixin.qq.com/s/pry9NlLCql74XhdvRADBiQ
+
+它是“地球保护伞”，也可能是危险的隐形反派
+
+https://www.zhihu.com/question/411561262
+
+现代制造的刀放到古代算不算名刀？
+
+https://www.zhihu.com/question/359273461
+
+如下图所示的“桥苯环萘”分子应该如何合成？
+
 https://mp.weixin.qq.com/s/HSpZsD7E3S0TAhk_VwUDUg
 
 诺贝尔化学奖历史上的遗珠之憾

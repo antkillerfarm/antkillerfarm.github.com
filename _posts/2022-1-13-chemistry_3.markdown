@@ -9,14 +9,6 @@ category: Nature
 
 # 化学
 
-黄铁矿主要由“不值钱”的二硫化亚铁（FeS2）组成。从外表上看，黄铁矿也泛着淡黄色的金光，由于这种迷惑性，它也常常被称为“愚人金”。
-
-https://mp.weixin.qq.com/s/dnSkSIf3pqroSZWgTi0MiA
-
-那里头，又发现金！
-
----
-
 撑杆跳高的纪录是随着撑杆材料的演变而不断提升的。撑杆材料发展大致经历了木质杆、竹质杆、金属杆和复合材料杆（包括玻璃纤维GFRP，碳纤维CFRP，Kevlar纤维KFRP等）4个阶段。世界纪录也从实心木杆的3.3米，提升到空心竹竿的4.77米，空心金属撑杆的4.8米，玻璃纤维及碳纤维撑杆的6.18米。
 
 https://mp.weixin.qq.com/s/dm2V9oIP-SflRwGvMmQuLg
@@ -198,18 +190,6 @@ https://mp.weixin.qq.com/s/ge3FBSKFPvZgpWWbCAvm3A
 https://mp.weixin.qq.com/s/u_Xg4naj0UetFs8tROHK8A
 
 从“垃圾元素”到“爱情金属”，它是怎么咸鱼翻身的？（铂）
-
-https://mp.weixin.qq.com/s/ZJWx-7byW9dDrC58Q6f_hw
-
-从冰淇淋到洗衣粉，它们靠“香”行走江湖
-
-https://mp.weixin.qq.com/s/pry9NlLCql74XhdvRADBiQ
-
-它是“地球保护伞”，也可能是危险的隐形反派
-
-https://www.zhihu.com/question/411561262
-
-现代制造的刀放到古代算不算名刀？
 
 ## 食品工业
 

@@ -162,3 +162,11 @@ https://www.zhihu.com/question/543112928
 https://mp.weixin.qq.com/s/lawAIa_gZx04ZxWZv2G61A
 
 怎么看待张小泉菜刀拍蒜断裂？
+
+---
+
+黄铁矿主要由“不值钱”的二硫化亚铁（FeS2）组成。从外表上看，黄铁矿也泛着淡黄色的金光，由于这种迷惑性，它也常常被称为“愚人金”。
+
+https://mp.weixin.qq.com/s/dnSkSIf3pqroSZWgTi0MiA
+
+那里头，又发现金！
