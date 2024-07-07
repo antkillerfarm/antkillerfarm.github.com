@@ -353,6 +353,10 @@ https://zhuanlan.zhihu.com/p/500163005
 
 时间序列异常检测（一）——算法综述
 
+https://blog.csdn.net/zhoucoolqi/article/details/105497572
+
+RANSAC算法
+
 # 因果推理
 
 https://mp.weixin.qq.com/s/doi26r9AVIMbpkZ01wsCZA

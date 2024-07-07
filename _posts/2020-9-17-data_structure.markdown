@@ -35,6 +35,8 @@ topK算法问题
 
 ## 正则表达式
 
+C++可用的regex性能最高的是Hyperscan，Google的re2有很多著名的工业级项目背书，是最优选择。
+
 https://mp.weixin.qq.com/s/OtVRL37CNt_d5yEJPzzBzg
 
 一个由正则表达式引发的血案

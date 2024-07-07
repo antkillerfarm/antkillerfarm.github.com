@@ -117,6 +117,14 @@ https://mp.weixin.qq.com/s/GD_erks-XLw8w8_SUp2E5Q
 
 天价H100流向黑市
 
+https://zhuanlan.zhihu.com/p/707136256
+
+英伟达H20获得的大陆订单几乎是某为昇腾两倍，为何昇腾不敌H20？
+
+https://zhuanlan.zhihu.com/p/706897852
+
+百度、阿里、腾讯、字节疯抢英伟达阉割版H20
+
 ---
 
 我记得2017年那会Micron和JH的案子，本来不算是个大案，这种商业级别的泄密案照以往惯例来看，走完流程大概率也就类似TSMC诉SMIC那样，JH赔点钱和股份，甚至还有“转正”的可能性。
