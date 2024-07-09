@@ -9,7 +9,33 @@ category: Russo Ukrainian War Sky
 
 # 俄乌战争
 
-## 顿涅斯克战役（续）
+## 顿涅斯克战役
+
+本节主要包括巴赫穆特、chasiv yar、Marinka、Soledar、Vuhledar、Avdiivka等地的攻防战。
+
+2022.5 俄军攻克波帕斯纳，巴赫穆特成为前线。
+
+2022.8 俄军开始在巴赫穆特东郊发起进攻。
+
+2022.10.8 瓦格纳正式在巴赫穆特市区参战。
+
+巴赫穆特防守战役：2022.10.8～2023.5.20 224天
+
+---
+
+![](/images/img4/joke_4.jpg)
+
+![](/images/img5/Bakhmut.jpg)
+
+<video  id="myvideo" width="50%" height="auto" controls="controls" loop="loop">
+    <source src="/images/img5/Bakhmut.mp4" type='video/mp4' />
+</video>
+
+https://zhuanlan.zhihu.com/p/599338767
+
+冰雨的风暴——乌克兰Day264-Day327战况总结
+
+---
 
 瓦格纳就是一路转进的过程，一开始攻索莱达尔，攻不进去就南下打巴赫穆特，又攻不进去就南下去打巴赫穆特东部，又攻不进去就绕去南边打optyne，optyne又攻不进去就又南下去打这几个定居点，要是又攻不进去就没得打了，要打进鹅控区了。。。
 

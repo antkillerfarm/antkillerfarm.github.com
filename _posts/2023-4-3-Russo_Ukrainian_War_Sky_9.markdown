@@ -9,7 +9,35 @@ category: Russo Ukrainian War Sky
 
 # 俄乌战争
 
-## 赫尔松战役（续）
+## 赫尔松战役
+
+本节包括所有赫尔松地区的战役，即赫尔松春季战役、赫尔松秋季战役、卡霍夫卡大坝事件、第聂伯河攻防战等。
+
+---
+
+俄军2-3月份在赫尔松左岸-扎波罗热的攻势。
+
+https://zhuanlan.zhihu.com/p/586516245
+
+赫尔松左岸-扎波罗热战役回顾
+
+https://zhuanlan.zhihu.com/p/657717849
+
+南线快速崩溃之谜
+
+---
+
+我寻思巴普洛夫的狗训练几次也都形成条件反射了，俄军是连狗都不如吗？还在同一个地方送。。。
+
+俄罗斯的军官们，不再敢用无线电通信了。他们的对话都会被破译。从而成为乌克兰军的情报。
+
+所以，现在俄罗斯的军官们开始用最原始的“见面谈”的方法，聚集在一起开会。开完会再分散行动。执行计划。这样军官扎堆开会。给了乌克兰部队有乘之机。
+
+https://www.zhihu.com/question/523504445
+
+乌克兰为何能屡次袭击赫尔松机场？
+
+---
 
 每次过节，俄罗斯都要给个大惊喜。中秋伊久姆，十一红利曼。现在双十一也没落下，那么下一次“善意撤退”是双十二还是元旦呢？
 
@@ -192,29 +220,3 @@ https://news.ifeng.com/c/8Kph5NYlxxB
 https://zhuanlan.zhihu.com/p/666716195
 
 善意又来了？浅谈俄军从第聂伯河左岸撤退的前景
-
-## 顿涅斯克战役
-
-本节主要包括巴赫穆特、chasiv yar、Marinka、Soledar、Vuhledar、Avdiivka等地的攻防战。
-
-2022.5 俄军攻克波帕斯纳，巴赫穆特成为前线。
-
-2022.8 俄军开始在巴赫穆特东郊发起进攻。
-
-2022.10.8 瓦格纳正式在巴赫穆特市区参战。
-
-巴赫穆特防守战役：2022.10.8～2023.5.20 224天
-
----
-
-![](/images/img4/joke_4.jpg)
-
-![](/images/img5/Bakhmut.jpg)
-
-<video  id="myvideo" width="50%" height="auto" controls="controls" loop="loop">
-    <source src="/images/img5/Bakhmut.mp4" type='video/mp4' />
-</video>
-
-https://zhuanlan.zhihu.com/p/599338767
-
-冰雨的风暴——乌克兰Day264-Day327战况总结
