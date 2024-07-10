@@ -193,6 +193,10 @@ KV Cache的使用方式一般如上图所示。其中蓝色表示输入里可以
 
 ---
 
+![](/images/img5/KV_Cache_3.png)
+
+---
+
 https://zhuanlan.zhihu.com/p/630832593
 
 大模型推理性能优化之KV Cache解读

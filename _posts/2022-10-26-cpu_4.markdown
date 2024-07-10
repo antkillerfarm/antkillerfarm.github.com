@@ -9,80 +9,6 @@ category: Chip
 
 # CPU
 
-## 参考
-
-https://zhuanlan.zhihu.com/p/34003929
-
-调试程序时，设置断点的原理是什么？
-
->Visual Studio有个有趣的特性是debug编译后，会把0xcc（INT 3）填入代码的空隙，这样一旦程序越界就会被VS捕捉而容易发现错误。而0xCCCC在中国的GBK编码是“烫”。有中国程序员翻看内存到代码段会发现很多"烫烫烫"，不明所以，以为发生了什么神奇的事情。
-
----
-
-![](/images/img3/Memristor.png)
-
-https://mp.weixin.qq.com/s/k0u7pVzf7tjVF4UjZ3ai7A
-
-忆阻器的前世今生
-
-https://mp.weixin.qq.com/s/rSGRXfN4z3ElP7iQX1umjQ
-
-基于新型忆阻器的存内计算原理、研究和挑战
-
----
-
-是因为AMD做不出（或者说基于成本不愿意做）单个N核心（N>8）的Die，单个Die是由两个CCX组成的Zeppelin模块，12nm制程单个Die面积213mm^2，为了堆核心只能用胶水把4个Die封装在一起。Intel是一个Die就28核心，14nm制程的CSL(Cascade Lake)架构单个Die面积就694mm^2，Xeon 9282的胶水双核已经够大了。
-
-https://www.zhihu.com/question/322451170
-
-为什么amd能胶水做到8die，intel最多胶水2die?
-
----
-
-带宽收敛是指数据报文的流量收敛，是指数据报文在网络转发过程中由于架构、设备等非故障原因而不能实现线速无丢包转发。在流量收敛时，网络设备会有部分端口拥塞，进而丢弃部分报文。
-
-带宽收敛比：若4台服务器分别通过千兆链路连接接入交换机，接入交换机通过1条千兆链路连接核心交换机。即接入交换机的下行带宽为4Gbps，接入交换机的上行带宽为1Gbps，为非对称链路，下上行链路收敛比为下行带宽（4Gbps）÷上行带宽（1Gbps）=4:1。带宽收敛比实际上就是带宽**超卖**的比例。
-
----
-
-Engineering Change Order
-
-https://zhuanlan.zhihu.com/p/20914909
-
-IC科普文：ECO的那些事
-
----
-
-Register Transfer Level
-
-https://blog.csdn.net/hqzl225411/article/details/117819843
-
-RTL概念与常用RTL建模
-
----
-
-同一片晶圆切下来的Die，体质卓越的，是13900KS。
-
-体质优秀的，是13900K。
-
-体质一般的，是13900。
-
-CPU侧体质优秀，但GPU侧一塌糊涂的，是13900KF。
-
-CPU侧体质一般的，GPU还一塌糊涂的，是13900F。
-
-CPU侧体质都一塌糊涂的。剁去一对体质最差的大核和一簇体质最烂的小核，然后降频运行，叫做13700K。
-
-https://zhuanlan.zhihu.com/p/29743431
-
-CPU制造的那些事之一：i7和i5其实是孪生兄弟！？
-
-https://zhuanlan.zhihu.com/p/29767262
-
-CPU制造的那些事之二：Die的大小和良品率
-
----
-
 https://mp.weixin.qq.com/s/Cij_95iLbAm0AEtrSb72_A
 
 关于CPU科普，这篇说得最详细
@@ -334,3 +260,57 @@ https://mp.weixin.qq.com/s/hN8tZ7xCRttIc-3pXdqElQ
 https://zhuanlan.zhihu.com/p/430203049
 
 在IPU/DPU/SmartNIC中P4能成为主流吗？
+
+# 国产半导体+
+
+多年前，ARM Cortex A57大致与X86阵营吊车尾的VIA nano性能相当，短短数年间，ARM公版架构就接近到X86主流水平。而同期飞腾的Arm CPU的CPU核则进步缓慢，从2014年至2021年，其CPU IPC仅提升了20%左右，即便是以牙膏厂闻名遐迩的英特尔也只能自叹不如。
+
+倚天710证明了ARM芯片从设计到制造的全球产业链在流程上已经非常成熟，证明了在全球分工的情况下，只要有钱就能设计出高性能ARM CPU。
+
+龙芯首席科学家胡伟武在公开讲座上就表示：“你给我一笔钱，叫我做一个芯片，我可以不用一个技术人员，只要行政助理，然后购买arm imagination的ip，委托第三方设计，然后给代工厂生产做出来......但你要我做一个A76级别的IP，（从零开始迭代演进）我可能要10年才能做出来”。
+
+国内这些ARM CPU如果不能实现自产自销，就只能宣传自主可控，卯足了劲往党政国企采购冲，一旦失去地方政府的支持，就只能关门倒闭，比如华芯通。
+
+https://mp.weixin.qq.com/s/KdJ0b-E0ckK6WMG5HDcEUw
+
+互联网巨头基于全球产业链打造ARM CPU
+
+---
+
+大家都知道Flink是阿里研发的，上云后就是阿里云的流计算。
+
+可是吧，这玩意是德国团队开发的哇，人家还在Apache基金会开源了。
+
+阿里借助程序员多，钱多，在Apache上贡献代码比较多，就说自己是开发的Flink，说到底，这玩意就是阿里优化而已。为了圆这个梦，还花了钱把人家创始团队给买了，技术归阿里了。
+
+Data Artisans是由开源数据流处理技术Apache Fink的几位开发者于2014年创办的数据处理创业公司。2019年1月被阿里巴巴收购。
+
+https://www.zhihu.com/question/435517345
+
+如何看待阿里奇点编码器可以把视频压缩上千倍而画质影响不大？
+
+---
+
+飞腾找台湾世芯代理设计，但因飞腾参与超算建设上了美国黑名单，台湾世芯宁可承受损失也不再继续提供设计服务。
+
+飞腾的通用CPU单核性能变化像是过山车，因为它的FT-1000和FT-1500是基于SUN开源的UltraSPARC T2核心，2007年时的UltraSPARC T2可与Intel至强一较高下。飞腾在投靠ARM之后，CPU性能反而降低了。
+
+飞腾多核互联和多路互联的技术较强，只是在ARM推出原生的互联方案之后，飞腾的研究成果也成了鸡肋。
+
+## Russia CPU
+
+俄罗斯设计通用CPU的企业主要有两家，一家是莫斯科SPARC技术中心(MCST)，另一家是贝加尔电子公司(Baikal Electronics)。
+
+莫斯科SPARC技术中心是俄罗斯自主研发CPU的代表，研发了Elbrus系列产品。
+
+贝加尔电子公司推出的Baikal系列CPU都是外购的CPU核心设计，再自行与其它的外购IP进行集成，与我们的国产手机CPU是相同的路线。
+
+https://mp.weixin.qq.com/s/Ud4f5L2tYNbP1oURVBszag
+
+俄罗斯自研Elbrus CPU参数曝光，CEO年近九旬仍未退休
+
+>Boris Babayan，1933年生，俄罗斯科学院院士，Intel院士。俄罗斯CPU之父。Elbrus系列超算和通用CPU的主要研发者，1978年他率领团队研发出世界第一台超标量计算机Elbrus-1，整整领先西方世界十三年。
+
+https://zhuanlan.zhihu.com/p/549196030
+
+甭怂，奣烎，国产通用CPU比俄罗斯勥

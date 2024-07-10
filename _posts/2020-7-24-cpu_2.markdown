@@ -9,112 +9,6 @@ category: Chip
 
 # CPU
 
-## 片上网络
-
-片上网络network-on-chip（NoC）是片上系统system-on-chip（SoC）的一种新的通信方法。它是多核技术的主要组成部分。NoC方法带来了一种全新的片上通信方法，显著优于传统总线式系统（bus）的性能。
-
-https://zhuanlan.zhihu.com/p/63683111
-
-详说片上网络之一：片上多核系统与片上网络的发展
-
-https://zhuanlan.zhihu.com/p/65501500
-
-详说片上网络之二：片上多核系统的互联需求
-
-https://zhuanlan.zhihu.com/p/68393867
-
-详说片上网络之三：片上互联的需求与片上网络的研究意义
-
-https://zhuanlan.zhihu.com/p/69012724
-
-详说片上网络之四：片上网络研究的难与易
-
-https://zhuanlan.zhihu.com/p/71775965
-
-详说片上网络之五：网络分层模型在片上网络上的实现（上）
-
-https://zhuanlan.zhihu.com/p/78672250
-
-详说片上网络之六：网络分层模型在片上网络上的实现（下）
-
-https://mp.weixin.qq.com/s/AW08yhPzBZqfys8CbOjrYg
-
-详说片上网路（NoC）技术
-
-https://www.zhihu.com/question/31049944
-
-片上网络NoC为何还没有得到实际应用？
-
-https://www.zhihu.com/question/521098765
-
-用算力强大的SOC来控制汽车是不是能够大幅减少MCU的使用数量？
-
-## 南北桥
-
-北桥芯片则是整个主板的数据交换中枢，整合有内存控制器以及AGP/PCI-E控制器等重要的控制功能，CPU、GPU与内存之间的数据交换都要通过北桥芯片进行；
-
-南桥芯片则用于扩展外围I/O接口，例如SATA和USB接口等。
-
-## 总线
-
-ISA -> PCI -> AGP -> PCI-E
-
-CXL全称是Compute Express Link。是一种开放工业标准用于高带宽低延迟的设备互联。它可以用来连接CPU和Accelerator, Memory Buffer以及Smart NIC等类型的设备。用于AI Machine Learning,高性能计算等场景。
-
-CXL基于PCIe 5.0的物理层。我们已经有了PCIe，为什么还要再搞出一个新的CXL呢？其实主要是因为PCIe不支持cache的一致性。
-
-NIC：Network Interface Card
-
----
-
-和NV Switch类似，PCIe也有PCIe Switch。价格同样不菲。
-
-https://zhuanlan.zhihu.com/p/651836498
-
-这颗博通芯片，涨到14万
-
----
-
-PCIE插上之后，初始通信速率都是PCIE 1.0的，完成握手后，会协商跳入更高速率继续握手。
-
-PCIe分为控制器（controller）和PHY两部分，控制器是数字电路，PHY包含PCS和PMA两部分，PMA是模拟电路。
-
-从linux上pcie驱动代码上看，博通、高通、海思等公司都是采用的synopsys的pcie控制器。但这些大厂现在有没有自研的pcie ip我就不清楚了。。。
-
-https://www.zhihu.com/question/618468070
-
-pcie4.0的设备插在3.0的设备上可行吗，如果反过来又会怎样？
-
----
-
-https://www.sohu.com/a/193807422_588758
-
-PCI，AGP，PCI-E接口啥区别？
-
-https://zhuanlan.zhihu.com/p/383878879
-
-CXL简介
-
-https://zhuanlan.zhihu.com/p/391094717
-
-详解HBA、NIC与CNA的区别
-
-https://zhuanlan.zhihu.com/p/646829255
-
-PCIe体系结构
-
-https://zhuanlan.zhihu.com/p/646920500
-
-一些PCIE知识整理——带宽计算
-
-https://mp.weixin.qq.com/s/QyPIXvwJ1yux_XxmeNI3hw
-
-PCIe发展历程及常见插槽速度对比
-
-https://www.zhihu.com/question/550129239
-
-PCIe传输和DMA传输有什么区别吗？
-
 ## 历史
 
 NetBurst可以说是Intel历史上最大的战略错误。
@@ -352,3 +246,109 @@ https://mp.weixin.qq.com/s/AdmEd1FHxpZUwSGYy3qggg
 https://zhuanlan.zhihu.com/p/591436083
 
 经典论文解读——Cache替换算法
+
+## Scratchpad Memory
+
+除了Cache之外，Scratchpad memory(SPRAM)也是一种常见的内存缓冲硬件。
+
+两者的区别是：
+
+- Cache通过硬件来管理每个位置上存放的数据；SPM没有硬件管理的替换策略，由程序员来管理数据的存放位置。因此，spm的控制逻辑比较简单，能耗也比较低。
+
+- 当访存行为不规则时，cache中的硬件管理机制可以有效的管理数据。但当程序中的访存行为可以很容易的描述出来时，程序员可以根据程序的访存行为设计spm的数据存取方式，从而提高访存效率。
+
+https://blog.csdn.net/weixin_48304306/article/details/125799814
+
+Cache与Scratch-pad-memory（spm）的区别
+
+## Jim Keller
+
+<table style="text-align:center" width="85%">
+  <tbody>
+    <tr>
+      <td colspan="5">Jim Keller: Work Experience</td>
+    </tr>
+    <tr>
+      <td colspan="2" rowspan="1"></td>
+      <td>Company</td>
+      <td>Title</td>
+      <td>Important<br />
+      Product</td>
+    </tr>
+    <tr>
+      <td><strong>1980s</strong></td>
+      <td><strong>1998</strong></td>
+      <td>DEC</td>
+      <td>Architect</td>
+      <td>Alpha</td>
+    </tr>
+    <tr>
+      <td><strong>1998</strong></td>
+      <td><strong>1999</strong></td>
+      <td>AMD</td>
+      <td>Lead Architect</td>
+      <td>K7, K8v1<br />
+      HyperTransport</td>
+    </tr>
+    <tr>
+      <td><strong>1999</strong></td>
+      <td><strong>2000</strong></td>
+      <td>SiByte</td>
+      <td>Chief Architect</td>
+      <td>MIPS Networking</td>
+    </tr>
+    <tr>
+      <td><strong>2000</strong></td>
+      <td><strong>2004</strong></td>
+      <td>Broadcom</td>
+      <td>Chief Architect</td>
+      <td>MIPS Networking</td>
+    </tr>
+    <tr>
+      <td><strong>2004</strong></td>
+      <td><strong>2008</strong></td>
+      <td>P.A. Semi</td>
+      <td>VP Engineering</td>
+      <td>Low Power Mobile</td>
+    </tr>
+    <tr>
+      <td><strong>2008</strong></td>
+      <td><strong>2012</strong></td>
+      <td>Apple</td>
+      <td>VP Engineering</td>
+      <td>A4 / A5 Mobile</td>
+    </tr>
+    <tr>
+      <td><strong>8/2012</strong></td>
+      <td><strong>9/2015</strong></td>
+      <td>AMD</td>
+      <td>Corp VP and<br />
+      Chief Cores Architect</td>
+      <td>Skybridge / K12<br />
+      (+ Zen)</td>
+    </tr>
+    <tr>
+      <td><strong>1/2016</strong></td>
+      <td><strong>4/2018</strong></td>
+      <td>Tesla</td>
+      <td>VP Autopilot<br />
+      Hardware Engineering</td>
+      <td>Fully Self-Driving<br />
+      (FSD) Chip</td>
+    </tr>
+    <tr>
+      <td><strong>4/2018</strong></td>
+      <td><strong>6/2020</strong></td>
+      <td>Intel</td>
+      <td>Senior VP<br />
+      Silicon Engineering</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td colspan="2" rowspan="1"><strong>2021</strong></td>
+      <td>Tenstorrent</td>
+      <td>President and CTO</td>
+      <td>TBD</td>
+    </tr>
+  </tbody>
+</table>
