@@ -9,6 +9,40 @@ category: Chip
 
 # AI Chip
 
+![](/images/img3/Wallace_Tree.png)
+
+https://mp.weixin.qq.com/s/_n1FA7H5q4AwXqeBg9tekA
+
+硬件实现快速累加
+
+>Christopher Stewart "Chris" Wallace，1933～2004，澳大利亚计算机科学家和物理学家。University of Sydney博士（1959）。Monash University教授。ACM fellow。在早期计算机的软件/硬件方面皆有重大贡献。
+
+---
+
+几乎每一个概述的AI加速解决方案都是从一个已经有几十年历史的学术思想开始的：脉动阵列起源于1978；VLIW架构起源于1983；数据流编程的概念可以追溯到1975；早期的内存内处理（processing-in-memory）出现在20世纪70年代。
+
+https://www.thepaper.cn/newsDetail_forward_16268882
+
+详解AI加速器（一）：2012年的AlexNet到底做对了什么？
+
+https://www.thepaper.cn/newsDetail_forward_16641034
+
+详解AI加速器（二）：为什么说现在是AI加速器的黄金时代？
+
+https://www.thepaper.cn/newsDetail_forward_16681105
+
+详解AI加速器（三）：架构基础离不开ISA、可重构处理器
+
+https://www.thepaper.cn/newsDetail_forward_16787134
+
+详解AI加速器（四）：GPU、DPU、IPU、TPU…AI加速方案有无限种可能
+
+https://www.thepaper.cn/newsDetail_forward_16869908
+
+详解AI加速器（最终篇）：给想进入赛道的玩家一些建议
+
+---
+
 Intel制订的游戏规则就是它自己的产品CPU作为“中央”处理器，通过PCIe扩展的形式，让围绕CPU的整个计算机系统变得非常具有可扩展性，可以围绕CPU打造各行各业的解决方案。而这套游戏规则的残酷之处在于，一旦一种PCIe设备的需求变得稳定，Intel就在CPU里增加一些专用指令，于是这种PCIe设备就从历史长河中抹去了，这种方式消失的各类PCIe扩展卡不计其数，显卡在这套游戏规则下也并不例外。
 
 老黄当时意识到这个问题后，提出了Intel的摩尔定律是十八个月翻一番，NVidia要做到六个月翻一番。用更快的性能提升曲线快速拉高需求，让Intel的集显变成落后的产品。
@@ -276,39 +310,3 @@ https://mp.weixin.qq.com/s/JYTqJDlGw6Q2gNLaYIGLcQ
 https://mp.weixin.qq.com/s/cA1AXfpV3ZcMNX9k5XKlww
 
 面向深度神经网络的芯片布图规划问题简介
-
-https://zhuanlan.zhihu.com/p/231302709
-
-聊聊GPU峰值计算能力
-
-https://zhuanlan.zhihu.com/p/340775090
-
-从Thinker到Evolver：对可演化AI芯片的探索
-
-https://mp.weixin.qq.com/s/MwZ9j1MIwRBrJK4iWKzRqQ
-
-芯故事：和AMD有渊源的那些AI创业公司
-
-https://mp.weixin.qq.com/s/S1fVrSfAM_UJh06Q43s8vA
-
-网络芯片架构的新改变
-
-https://zhuanlan.zhihu.com/p/47904879
-
-AI芯片在5G中的机会
-
-https://mp.weixin.qq.com/s/Z_QVN7OCLqeyMrwK3Sc7qA
-
-AI芯片和传统芯片的区别
-
-https://mp.weixin.qq.com/s/mMiAGH2Yz42xes7jicyygA
-
-“超级芯片”或在十年内诞生，摩尔定律再续一命！（自旋电子逻辑器件“MESO器件”）
-
-https://zhuanlan.zhihu.com/p/503371595
-
-AI芯片（下），自动驾驶里的“水浒卡”
-
-https://mp.weixin.qq.com/s/Vt23nK5zC7Wwv7iiFAFvrQ
-
-高通，玩转DSP和NPU

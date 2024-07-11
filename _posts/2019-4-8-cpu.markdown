@@ -19,6 +19,8 @@ category: Chip
 
 ![](/images/img4/FET.png)
 
+单靠结构的改变，差别不大的线宽(20nm~16nm)却能推进至少6个世代，这也是为什么线宽早不像平面结构时的每两年缩小一倍，但是单位晶体管数量却能一直跟住摩尔定律的重要原因。
+
 参考：
 
 http://www.sohu.com/a/108777952_467791
@@ -166,56 +168,6 @@ https://mp.weixin.qq.com/s/AUDDEYETPdJSyIdpMl4hLQ
 https://mp.weixin.qq.com/s/DFU4zoteqehOJkBpVVhXyA
 
 EUV光刻机里的低调王者
-
-## 芯片制造
-
-![](/images/img5/Fab.jpg)
-
----
-
-![](/images/img4/Wafer_size.png)
-
-https://mp.weixin.qq.com/s/jGzdfEJaulPRjt89eLST4Q
-
-8英寸晶圆30年
-
----
-
-半导体产业发展至今经历了三个阶段，第一代半导体材料以硅为代表；第二代半导体材料砷化镓也已经广泛应用；而以氮化镓和碳化硅、氧化锌、氧化铝、金刚石等宽禁带为代表的第三代半导体材料。
-
----
-
-https://mp.weixin.qq.com/s/QF9Nsh_YyX9LZQ_D-4hP-A
-
-芯片是怎么制造的？央视最强科普！
-
-https://mp.weixin.qq.com/s/bKgYpZdXxAexlEtmPQ9oGw
-
-科普：芯片是怎么从沙子中一步步炼成的！
-
-https://mp.weixin.qq.com/s/9y5HFTQr2QP12iR858BFtg
-
-图解intel芯片生产全过程！
-
-https://mp.weixin.qq.com/s/aSCcdTHUoogP7TOK5MIsVw
-
-一颗芯片的全球之旅
-
-https://mp.weixin.qq.com/s/LcnyAhOofWyGHikYwfIlIA
-
-芯片的诞生
-
-https://mp.weixin.qq.com/s/lD2bkDIX6ey-VHchSdbW7g
-
-漫画芯片
-
-https://mp.weixin.qq.com/s/v3wauOfWw6TLlxTH4QKR6w
-
-一文详解MOS管
-
-https://mp.weixin.qq.com/s/kzQ-WqozBX-T8ZyS58MPnw
-
-一张图了解芯片到底是如何设计的
 
 ## 片上网络
 

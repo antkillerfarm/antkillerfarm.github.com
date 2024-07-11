@@ -9,7 +9,43 @@ category: Chip
 
 # AI Chip
 
-## 存算一体（续）
+## 存算一体
+
+![](/images/img4/bottleneck.png)
+
+传统架构存在上图所示的“存储墙”问题。
+
+目前存算技术主要有几个方向：
+
+查存计算（Processing With Memory）：GPU中对于复杂函数就采用了这种计算方法，是早已落地多年的技术。存储芯片内部的存储单元完成查表计算操作，存储单元和计算单元完全融合，没有一个独立的计算单元。
+
+近存计算（Computing Near Memory）：典型代表包括AMD的Zen系列CPU。计算操作由位于存储区域外部的独立计算芯片/模块完成。这种架构设计的代际设计成本较低，适合传统架构芯片转入。
+
+存内计算（Computing In Memory）：典型代表是Mythic、闪忆、知存、九天睿芯。计算操作由位于存储芯片/区域内部的独立计算单元完成，存储和计算可以是模拟的也可以是数字的。这种路线适合算法固定的场景算法计算，目前主要用于语音等轻算力场景。
+
+![](/images/img5/Computing_In_Memory.webp)
+
+https://mp.weixin.qq.com/s/kq5F47N3LS43ZKdwe9-CUQ
+
+端侧智能存算一体芯片的需求、现状与挑战
+
+https://zhuanlan.zhihu.com/p/480612865
+
+存算一体技术是什么？发展史、优势、应用方向、主要介质
+
+https://zhuanlan.zhihu.com/p/522755103
+
+存算一体芯片设计与编译器开发
+
+https://zhuanlan.zhihu.com/p/444859995
+
+阿里达摩院最新存算芯片技术解读
+
+https://www.zhihu.com/question/623317319
+
+存算一体芯片的技术壁垒是什么？
+
+---
 
 llm对内存的极致需求并不是只因为权重更大了，所以你不能简单理解成芯片也scaling到一个很夸张的规格就又能体现架构的优势了。
 
@@ -150,56 +186,3 @@ http://www.deephi.com/
 某牛点评：
 
 做一个ASIC其实目前真没有什么大的门槛，不然你以为上海那么多家的ASIC公司是怎么来的，随便拉几个人都敢成立ASIC公司，还不是门槛不高，你让他就那几个人搞个CPU和GPU试试。但是要做一个好的ASIC，适配模型和场景丰富的ASIC，是非常不容易的。而且一旦模型场景丰富，你就不仅仅是在硬件领域所谓的PPA各种挣扎，你还需要在指令级别，或者说通用和性能做妥协，甚至架构上的一些妥协改变。
-
-## Habana
-
-Habana Labs是一家位于以色列特拉维夫和加州圣何塞的无晶圆厂半导体公司，创立于2016年。
-
-Habana的产品线主要有：
-
-- 用于Train的Gaudi系列芯片。
-
-- 用于Inference的Goya系列芯片。这是一个基于PCI接口的板卡，所以还是数据中心的范畴，暂不能用于终端设备。
-
-据说国内的数据中心相关的企业，对它的产品很感兴趣。
-
-官网：
-
-https://habana.ai
-
->2019.12 Habana被Intel收购。稍后，就传出Intel解散Nervana团队的事情。后者是2016年被Intel收购的一家AI芯片公司。
-
-国外类似的企业还有：
-
-- HAILO
-- blaize
-
-参考：
-
-https://mp.weixin.qq.com/s/cnHQSmM89Sp92gke_F9T2Q
-
-一窥Habana的推理和训练神经处理器
-
-https://zhuanlan.zhihu.com/p/84562992
-
-Goya from Habana Labs芯片与软件栈分析
-
-## 沐曦
-
-沐曦专注在研发全兼容CUDA及ROCm生态的国产GPU计算卡（面向AIDC和HPC的计算需求），创始团队也是AMD背景。
-
-## Expedera
-
-官网：
-
-https://www.expedera.com
-
-![](/images/img5/Expedera.png)
-
-其中的partial summation (PSUM)也是近年来针对大模型的一种常见的优化方法。原理有点类似MapReduce，PSUM相当于Reducer，对数据进行初步的收集，再最终汇总到一起。这样效率上要比全局只有一个单元进行summation要高的多。
-
-参考：
-
-https://www.expedera.com/wp-content/uploads/2023/02/Architectural-Considerations-for-Compute-in-Memory-in-AI-Inference-final.pdf
-
-https://www.expedera.com/wp-content/uploads/2021/04/Expedera-Linley-White-Paper.pdf

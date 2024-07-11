@@ -304,3 +304,61 @@ https://mp.weixin.qq.com/s/pQ9_0d8sl5Sr5O360Risnw
 https://mp.weixin.qq.com/s/o129MwpGzx8tzjUCkz1npw
 
 使用CatBoost和NODE建模表格数据对比测试
+
+# 天文杂谈=
+
+恩克彗星是人们发现的第一颗短周期彗星，至今也还没有找到过周期比它更短的彗星。恩克用6个星期的时间，计算出这颗彗星的轨道，周期为3.3年，并且预言1822年5月24日再回到近日点，果然它准时回来了，成为继哈雷彗星之后，第二颗按预言回归的彗星。
+
+>Johann Franz Encke，1791～1865，德国天文学家。University of Göttingen毕业，导师Gauss。1825年担任柏林天文台台长。Leopold Kronecker的导师。他还发现了土星环的Encke Gap。
+
+---
+
+1929年，余青松接任天文研究所第二任所长后，秉承高鲁的宏愿，费时五载，于公元1935年，建立紫金山天文台。1938年因抗日战争，他主持该台的内迁工作，并在昆明东郊建成了昆明凤凰山天文台。
+
+https://mp.weixin.qq.com/s/vMe5RmD8uBW3AeGDYwbI5A
+
+紫金山天文台的创立（高鲁、余青松）
+
+---
+
+https://view.inews.qq.com/wxn/20211224A03SC600
+
+韦伯望远镜即将发射！梭哈百亿美元上天，是为了看啥？
+
+https://view.inews.qq.com/wxn/20211225A0A9SJ00
+
+韦伯望远镜成功背后：成本约110亿美元，共推迟发射18次
+
+https://view.inews.qq.com/wxn/20211225A08N9G00
+
+“鸽王之王”韦伯终于上天！比哈勃看得更远，烧钱更多
+
+https://mp.weixin.qq.com/s/AIMccIbtB6W5nwu-6yRuJw
+
+“鸽王” 韦伯上天之前，你需要知道这些
+
+https://mp.weixin.qq.com/s/BYw9HJehGC528WkX_q4JLw
+
+情人节将至，韦伯望远镜首次太空“睁眼”！
+
+https://www.sohu.com/a/569342145_161795
+
+韦伯太空望远镜主镜被太空陨石砸中，受损情况比最初想象要大
+
+---
+
+第四宇宙速度（fourth cosmic velocity），是指在地球上发射的物体摆脱银河系引力束缚，飞出银河系所需的最小初始速度。但由于人们尚未知道银河系的准确大小与质量，因此只能粗略估算，其数值在525公里/秒以上。
+
+---
+
+https://mp.weixin.qq.com/s/aY4gFbK_aKWcgwvr0Rk5gQ
+
+“波多黎各，波多黎各，世界最大射电望远镜，倒闭了”（Arecibo望远镜）
+
+https://www.zhihu.com/question/432120058
+
+阿雷西博望远镜馈源舱支撑平台塌了，现已决定退役拆除，如何评价它的一生？
+
+https://zhuanlan.zhihu.com/p/330003494
+
+美国天眼塌了

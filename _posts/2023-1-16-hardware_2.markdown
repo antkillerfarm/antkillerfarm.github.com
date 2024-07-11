@@ -217,6 +217,12 @@ https://www.zhihu.com/question/649546709
 
 ---
 
+"4F2"在DRAM Cell Structure中指的是一种存储单元的面积，其中"F"代表晶体管的特征尺寸（Feature size）。在DRAM技术发展中，4F2意味着存储单元的尺寸是特征尺寸的四倍平方。
+
+与传统的8F2和6F2单元相比，4F2 DRAM cell可以分别提高约60%和30%的产量。
+
+---
+
 https://mp.weixin.qq.com/s/HOhBNZfOf5xQIFLYQ5ntCw
 
 内存的故事

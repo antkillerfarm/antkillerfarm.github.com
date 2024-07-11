@@ -224,6 +224,18 @@ LPDDR和HBM卷成本，如果考虑的是$/GB，那LPDDR确实有优势，但如
 
 NVIDIA是GDDR协议几乎实际的掌控者，每一代GDDR出来，Nvidia都会来个GDDR-X，这个-X，实际上是下一代GDDR的beta特性，即其他人用GDDR6的时候，Nvidia有GDDR6-X定制（并且独享供货），而这玩意儿实际上是GDDR7-beta。
 
+---
+
+HBM是将DRAM透过先进封装技术堆栈而成，利用硅穿孔（TSV）技术，再填充导电物质连接金属球以达通电效果。
+
+HBM堆栈层数愈多，DRAM就必须做得更薄，因此必须导入更先进的DRAM制程。
+
+普通DRAM颗粒，透过TSV垂直方向钻孔、TCB热压键合的封装技术，可以堆栈出规格不算高的HBM装置救急。
+
+HBM的生产卡点主要在前段Dram，目前由于国内无法取得西方先进设备，工艺被限制在18nm也就是1y水平的Dram，但同样是利用DUVi + MP以及结构的优化去推进到接近1a的水平，进而生产HBM所需要的DDR5以上颗粒。
+
+---
+
 参考：
 
 https://zhuanlan.zhihu.com/p/33990592
@@ -265,39 +277,3 @@ NVIDIA为什么在游戏卡上死活不用HBM2显存？
 https://zhuanlan.zhihu.com/p/681519240
 
 HBM发展概述
-
-## 存算一体
-
-![](/images/img4/bottleneck.png)
-
-传统架构存在上图所示的“存储墙”问题。
-
-目前存算技术主要有几个方向：
-
-查存计算（Processing With Memory）：GPU中对于复杂函数就采用了这种计算方法，是早已落地多年的技术。存储芯片内部的存储单元完成查表计算操作，存储单元和计算单元完全融合，没有一个独立的计算单元。
-
-近存计算（Computing Near Memory）：典型代表包括AMD的Zen系列CPU。计算操作由位于存储区域外部的独立计算芯片/模块完成。这种架构设计的代际设计成本较低，适合传统架构芯片转入。
-
-存内计算（Computing In Memory）：典型代表是Mythic、闪忆、知存、九天睿芯。计算操作由位于存储芯片/区域内部的独立计算单元完成，存储和计算可以是模拟的也可以是数字的。这种路线适合算法固定的场景算法计算，目前主要用于语音等轻算力场景。
-
-![](/images/img5/Computing_In_Memory.webp)
-
-https://mp.weixin.qq.com/s/kq5F47N3LS43ZKdwe9-CUQ
-
-端侧智能存算一体芯片的需求、现状与挑战
-
-https://zhuanlan.zhihu.com/p/480612865
-
-存算一体技术是什么？发展史、优势、应用方向、主要介质
-
-https://zhuanlan.zhihu.com/p/522755103
-
-存算一体芯片设计与编译器开发
-
-https://zhuanlan.zhihu.com/p/444859995
-
-阿里达摩院最新存算芯片技术解读
-
-https://www.zhihu.com/question/623317319
-
-存算一体芯片的技术壁垒是什么？
