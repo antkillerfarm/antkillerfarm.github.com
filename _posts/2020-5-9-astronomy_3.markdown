@@ -249,6 +249,18 @@ https://www.zhihu.com/question/54009933
 
 ![](/images/img2/Elon_Musk.jpg)
 
+马斯克出生和成长在南非，他的自传记录自己儿时一直被霸凌，亲身经历了南非种族变化的历史。
+
+直到他17岁去到加拿大，才知道原来睡觉的时候不用担心莫名其妙的挨打，也不用把财物贴身藏在身体下面。这些都在他的自传里面写过。
+
+马斯克的大儿子在2022年变性了，马斯克自此后就是共和党的铁杆，跟支持LGBTQ的民主党势不两立。
+
+马斯克是将钱捐给了一个“中间人”，这个中间人在美国最早叫做PAC，现在叫做super PAC，也就是超级政治政治行动委员会。
+
+他们与之前的PAC相比能够接受更大范围的个人、企业、组织的捐款，来源和额度都没有限制，而最早的PAC无论是捐款来源还是额度都是受到限制的。
+
+共和党或者是民主党的候选人后面都有一个或者数个超级PAC，比如特朗普后面有一个叫做America PAC和一个很具有懂王特色的America first action的PAC；而拜登后面有一个叫做Future forward（未来前进）的PAC，而民主党最著名的PAC叫做Priorities USA（美国优先）。
+
 https://mp.weixin.qq.com/s/dQXL6L7Ct08QaczC9rdgqA
 
 专访梅耶·马斯克：硅谷钢铁侠是怎样被炼成的？
@@ -284,27 +296,3 @@ https://mp.weixin.qq.com/s/0zAIoiflCgwC2jMEdnJ6WQ
 https://mp.weixin.qq.com/s/-eNzkpxJ_nQOF0RURjuSUg
 
 96秒4.25亿！马斯克疯狂炸毁载人火箭猎鹰9，最贵烟花锤炼逃生系统
-
-https://mp.weixin.qq.com/s/tDdu0-wqtiqBetOuULgeTg
-
-马斯克又实现了一个“梦想”！人类首个商业载人航天飞船发射成功！
-
-https://mp.weixin.qq.com/s/LTE-m0u6469kNk1Dple4Zg
-
-史上最全SpaceX火箭数据开源，核心、组员舱、起落架、发射信息全都有！
-
-https://www.zhihu.com/question/396878847
-
-SpaceX龙飞船中的新触控交互操作系统，意味着什么？
-
-https://mp.weixin.qq.com/s/m6UgJjvsNjQkMm_20tz5sQ
-
-成本相差5384倍，编程用C++和Python！马斯克如何搞翻航天圈（SpaceX的系统冗余设计）
-
-https://mp.weixin.qq.com/s/bwUZEzgAzANPgaWTFa3GHA
-
-马斯克是如何给NASA省钱的？
-
-https://mp.weixin.qq.com/s/J3bk8C-yp3O_PBxn_I9Ywg
-
-马斯克的星际飞船首次起飞测试成功！起跳150米后平稳着陆，“火星在望”

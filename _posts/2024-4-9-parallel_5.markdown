@@ -61,6 +61,14 @@ Prefill阶段在Q的seqlen维度以及batch_size维度做并行。
 
 FlashDecoding有时也被称为FlashAttention V2。
 
+---
+
+New hardware features on Hopper GPUs - WGMMA, TMA, FP8
+
+https://www.zhihu.com/question/661395457
+
+FlashAttention-3发布！有什么新优化点？
+
 ## PagedAttention
 
 PagedAttention是UC Berkeley的作品。

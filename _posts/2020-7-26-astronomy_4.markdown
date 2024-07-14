@@ -9,6 +9,30 @@ category: Nature
 
 # SpaceX（续）
 
+https://mp.weixin.qq.com/s/tDdu0-wqtiqBetOuULgeTg
+
+马斯克又实现了一个“梦想”！人类首个商业载人航天飞船发射成功！
+
+https://mp.weixin.qq.com/s/LTE-m0u6469kNk1Dple4Zg
+
+史上最全SpaceX火箭数据开源，核心、组员舱、起落架、发射信息全都有！
+
+https://www.zhihu.com/question/396878847
+
+SpaceX龙飞船中的新触控交互操作系统，意味着什么？
+
+https://mp.weixin.qq.com/s/m6UgJjvsNjQkMm_20tz5sQ
+
+成本相差5384倍，编程用C++和Python！马斯克如何搞翻航天圈（SpaceX的系统冗余设计）
+
+https://mp.weixin.qq.com/s/bwUZEzgAzANPgaWTFa3GHA
+
+马斯克是如何给NASA省钱的？
+
+https://mp.weixin.qq.com/s/J3bk8C-yp3O_PBxn_I9Ywg
+
+马斯克的星际飞船首次起飞测试成功！起跳150米后平稳着陆，“火星在望”
+
 https://www.zhihu.com/question/430470879
 
 如何看待SpaceX首次正式发射载人飞船，送四名宇航员进空间站，商业载人航天将进入怎样的新纪元？
@@ -216,16 +240,6 @@ Gerald Vincent Bull博士受到美国和加拿大的资助在巴巴多斯(Barbad
 https://www.zhihu.com/question/342491181
 
 造个超大巨炮发射卫星可以吗？
-
----
-
-制造业上有一个“白痴指数”，其是指某个制成品的成本比其基本材料的成本高多少。如果⼀个产品的“白痴指数”很高，那么⼀定可以通过规划设计出更有效的制造技术来大幅降低它的成本。2002年，马斯克算过火箭的“白痴指数”居然有50，也就是说成品成本比材料成本高50倍，所以他当时就让自己的工程师做开发替代。有一次一个零件供应商报价12万美元，然后马斯克喊工程师以每个5000美元的成本就做出来了。
-
-2000年3月18日， 铱星正式宣布破产，留下了一段悲壮的传奇故事。而同时期创建的其他两大LEO通信星座Globalstar（全球星）和Orbcomm（轨道通信）也宣布破产。
-
-https://zhuanlan.zhihu.com/p/666038056
-
-我对于卫星通信行业的一些看法
 
 ---
 

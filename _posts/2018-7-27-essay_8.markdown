@@ -217,12 +217,6 @@ https://zhuanlan.zhihu.com/p/57149916
 
 ---
 
-![](/images/img3/Trump.jpg)
-
-![](/images/img3/Trump_2.jpg)
-
----
-
 AIS：自动识别系统，可以看到其他船舶的信息，名字，航向等等。
 
 CPA：最小会遇距离，两船继续按当前航向航速行驶，最近的时候距离多少，如果是0，那么一会就会发生碰撞。

@@ -37,6 +37,14 @@ https://www.runoob.com/docker/docker-tutorial.html
 
 https://download.docker.com/linux/static/stable/x86_64/
 
+---
+
+如果这些新特性在Ubuntu 22.04所使用的内核版本中并不支持，那么即使容器中运行的是Ubuntu 24.04，这些特性也是无法使用的。
+
+https://www.zhihu.com/question/659225649
+
+宿主机是ubuntu22，容器是ubuntu24，容器是否可正常使用ubuntu24特有的一些新功能？
+
 ## VM的分类
 
 ![](/images/img4/VM.png)

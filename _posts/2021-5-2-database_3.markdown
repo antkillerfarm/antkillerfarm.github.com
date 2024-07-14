@@ -338,3 +338,17 @@ https://www.zhihu.com/answer/3471993377
 https://www.zhihu.com/question/332120833
 
 海伦凯勒故事是真的吗?
+
+---
+
+![](/images/img3/Trump.jpg)
+
+![](/images/img3/Trump_2.jpg)
+
+拜登射王耳，礼崩乐坏。
+
+![](/images/img5/Trump.jpg)
+
+![](/images/img5/peuple.jpg)
+
+羽大怒，伏弩射中汉王。汉王伤胸，乃扪足曰：“虏中吾指。”汉王病创卧，张良强请汉王起行劳军，以安士卒。
