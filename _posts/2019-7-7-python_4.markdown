@@ -9,6 +9,20 @@ category: language
 
 # Python
 
+## Gunicorn
+
+Gunicorn是一个高效的Python WSGI Server，地位相当于Java中的Tomcat。
+
+官网：
+
+http://gunicorn.org/
+
+参考：
+
+http://www.cnblogs.com/ArtsCrafts/p/gunicorn.html
+
+Gunicorn快速入门
+
 ## 多线程 & 同步 & 异步
 
 python异步并发模块concurrent.futures，主要用来实现多线程和多进程的异步并发。
@@ -465,31 +479,3 @@ https://mp.weixin.qq.com/s/xCKC3cz7jUvrwl4uvMNKTA
 https://mp.weixin.qq.com/s/IznKbG3cEF6uxP0Fe_0oaQ
 
 印度小哥“神剑”：PDF提取表格so easy！
-
-https://mp.weixin.qq.com/s/J-H638ZzhB-GOXMeAQ9aww
-
-Camelot: 三行代码提取PDF表格数据
-
-https://mp.weixin.qq.com/s/c0hszsSDS-u4z-83Y7km8Q
-
-pdf文档解析之pdfminer
-
-https://mp.weixin.qq.com/s/1BoBHbXXOGPZ4HK437lH4Q
-
-6款Python特殊文本格式处理库推荐
-
-https://mp.weixin.qq.com/s/bz7rCy0YyF1HrrHrWt9Mpw
-
-聊聊Python操作PDF的几种方法
-
-https://mp.weixin.qq.com/s/jzjumS2oJfFO-4SBa0qooQ
-
-利用Python将PDF文档转为MP3音频
-
-https://mp.weixin.qq.com/s/FmdbdAWenXWuY9s7ykVORQ
-
-三种方法，Python轻松提取PDF中全部图片
-
-https://mp.weixin.qq.com/s/UVKOU11dfWwP9Uyw9E400Q
-
-如何使用python提取pdf表格及文本，并保存到excel

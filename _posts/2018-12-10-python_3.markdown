@@ -48,6 +48,71 @@ a.name = "Job"
 a.age = 10
 ```
 
+## 多继承 & 多重继承
+
+```python
+class Displayer():
+    def display(self, message):
+        print(message)
+
+
+class LoggerMixin():
+    def log(self, message, filename='logfile.txt'):
+        with open(filename, 'a') as fh:
+            fh.write(message)
+
+    def display(self, message):
+        super().display(message)
+        self.log(message)
+
+
+class MySubClass(LoggerMixin, Displayer):
+    def log(self, message):
+        super().log(message, filename='subclasslog.txt')
+
+
+subclass = MySubClass()
+subclass.display("This string will be shown and logged in subclasslog.txt")
+```
+
+python支持多重继承和多继承，且有自己独特的特性。
+
+MRO全称方法解析顺序（Method Resolution Order），在多重继承和多继承存在的时候，寻找属性及方法的顺序。
+
+上例中，MySubClass继承了两个父类LoggerMixin和Displayer。
+
+Mixin是一种设计模式，Mixin类不能单独存在，上例中的`super().display(message)`，如果没有MySubClass提供的Displayer类，则无法执行。
+
+---
+
+这两个父类如果存在同名函数的话，将按照参数表**从左到右**的优先级顺序确定执行的函数。
+
+PS：C++遇到这种情况则必须显式指定使用哪个父类的函数。
+
+<div class="mermaid">graph TB
+D(D) --&gt;B(B)
+D(D) --&gt;C(C)
+B(B) --&gt;A(A)
+C(C) --&gt;A(A)
+</div>
+
+上例如果使用深度优先的算法，C重载了D的一个方法，会导致搜索不到C的重载，只会用到D。
+
+<div class="mermaid">graph TB
+D(D) --&gt;B(B)
+E(E) --&gt;C(C)
+B(B) --&gt;A(A)
+C(C) --&gt;A(A)
+</div>
+
+上例C和D有同名方法，正常应该使用D的方法(D，B应为一个整体，B的优先级比C高)，但是如果广度优先就会使用到C的方法。
+
+python3的mro使用c3 linearization算法来解决上述问题。
+
+https://www.cnblogs.com/Hellowshuo/p/16111678.html
+
+c3 linearization详解
+
 ## 命令行参数
 
 `-v`: 打印运行信息。
@@ -342,48 +407,6 @@ https://mp.weixin.qq.com/s/nGOCderiyOXsHkMZwIgpoA
 
 酷炫的Python进度条开源库：alive-progress
 
-## Captcha
-
-Captcha是一个Python验证码库，能够生成音频和图片验证码。
-
->CAPTCHA是Completely Automated Public Turing Test to Tell Computers and Humans Apart (全自动区分计算机和人类的图灵测试)的简称. CAPTCHA的目的是区分计算机和人类的一种程序算法，是一种区分用户是计算机和人的计算程序，这种程序必须能生成并评价人类能很容易通过但计算机却通不过的测试。
-
-代码：
-
-https://github.com/lepture/captcha
-
-这个库可用于生成大量有标签的验证码，是DL入门的必备工具。
-
-参考：
-
-https://mp.weixin.qq.com/s/m4rNUFV4VGUBI7aWv5fgbw
-
-中文项目：快速识别验证码，CNN也能为爬虫保驾护航
-
-https://zhuanlan.zhihu.com/p/26078299
-
-使用深度学习来破解captcha验证码
-
-https://mp.weixin.qq.com/s/NsaMcgufLYO3i6eG1WO_VA
-
-我不是机器人：谷歌最新版验证码系统ReCaptcha破解已开源
-
-https://mp.weixin.qq.com/s/fun7k1fDrB3BYG2DK-Z7wA
-
-如何证明你是“人”还是“机器”？ 揭秘验证码技术
-
-其他类似项目还包括：
-
-| 语言 | 名称 | 网址 |
-|:--:|:--:|:--:|
-| Java | JCaptcha | http://jcaptcha.sourceforge.net/ |
-| Java | SimpleCaptcha | http://simplecaptcha.sourceforge.net/ |
-| Java | kcaptcha | http://captcha.ru/en/kcaptcha/ |
-| Java | patchca | https://github.com/pusuo/patchca |
-| Java | SkewPassImage | http://skewpassim.sourceforge.net/ |
-| Java | Internet Captcha | http://www.icaptcha.com/ |
-| Java | Cage | http://akiraly.github.io/cage/ |
-
 ## 如何通过需认证的代理获取HTTP网页
 
 Python内置的urllib和urllib2模块都可用于获取HTTP网页，但使用范围是不同的。urllib只支持HTTP 0.9和HTTP 1.0，所以如果只是使用代理可以使用urllib.FancyURLopener类，如果该代理还需要认证的话urllib就不行了。因为代理认证是HTTP 1.1中引入的。
@@ -435,17 +458,3 @@ https://zhuanlan.zhihu.com/p/22304455
 https://mp.weixin.qq.com/s/jdYiqJ98PztD7Ueu_o3Z4Q
 
 任务队列神器：Celery入门到进阶指南
-
-## Gunicorn
-
-Gunicorn是一个高效的Python WSGI Server，地位相当于Java中的Tomcat。
-
-官网：
-
-http://gunicorn.org/
-
-参考：
-
-http://www.cnblogs.com/ArtsCrafts/p/gunicorn.html
-
-Gunicorn快速入门

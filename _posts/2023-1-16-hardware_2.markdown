@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  硬件杂谈（二）, 硬盘, 内存
+title:  硬件杂谈（二）, 芯片杂烩, 硬盘, 内存, NAND
 category: Chip 
 ---
 
@@ -9,49 +9,11 @@ category: Chip
 
 # 硬件杂谈
 
-## USB
+## 上拉电阻和下拉电阻
 
-![](/images/img4/lightning.webp)
+上拉就是将不确定的信号通过一个电阻钳位在高电平，电阻同时起限流作用。下拉同理，也是将不确定的信号通过一个电阻钳位在低电平。
 
-Lightning的8针接口只有一条用于电流输送，最大电流也不会超过3.3A，4条数据传输线最高也只能实现480Mbps的传输速度，这些设计上的缺陷都不是后期优化可以解决的。
-
-![](/images/img4/usb.webp)
-
-过流保护有个前提条件，可以说是防君子不防小人的。不知道大家注意没有，被保护的只有VBUS，没有保护数据信号D+/D-。What if攻击的是数据信号呢？
-
-USB Killer利用VBUS为电容充电到200V，然后反向将它们释放在数据信号上，瞬间击穿了PCH南桥芯片，造成永久的损坏。
-
-https://mp.weixin.qq.com/s/pL_98GmL2qkvt71hw6A-DA
-
-终结混乱，USB族谱终极整理！
-
-https://mp.weixin.qq.com/s/EDv1ArAG5s8al33FoBfmfQ
-
-USB的前世今生
-
-https://zhuanlan.zhihu.com/p/65478149
-
-为什么USB Type C电缆正反插都可以？它是怎么做到的？
-
-https://mp.weixin.qq.com/s/dk_sl3OvPwvnRWPpPJ4D_Q
-
-USB3.1 Type-C高速接口设计指南
-
-https://zhuanlan.zhihu.com/p/153254485
-
-为什么短路的USB设备不会烧掉你的主板？著名的USB Killer又是怎么干掉主板的？
-
-https://view.inews.qq.com/wxn/20220608A0D8H200
-
-Type-C成为通用接口，苹果告别“躺赚时代”？
-
-https://www.zhihu.com/question/31304026
-
-为什么两台电脑不能直接连接USB传输文件？
-
-https://www.zhihu.com/question/571811693
-
-现在usb口普遍都有过流保护为什么还会烧南桥的例子啊?
+上拉是对器件输入电流，下拉是输出电流；强弱只是上拉电阻的阻值不同，没有什么严格区分；对于非集电极（或漏极）开路输出型电路（如普通门电路）提供电流和电压的能力是有限的，上拉电阻的功能主要是为集电极开路输出型电路输出电流通道。
 
 ## AMBA
 
@@ -127,6 +89,98 @@ https://www.zhihu.com/question/514589190
 
 为什么嘉立创打PCB不要钱？
 
+# 芯片杂烩
+
+我接触到的芯片分门别类罗列如下：
+
+<table>
+  <tr>
+    <th>类别</th>
+    <th>名称</th>
+    <th>厂家</th>
+  </tr>
+  <tr>
+    <td>Low MCU（追求低价）</td>
+    <td>LPC4088</td>
+    <td>NXP</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Hi MCU（追求性能）</td>
+    <td>ASAP1826T</td>
+    <td>alphascale</td>
+  </tr>
+  <tr>
+    <td>MDM9215M</td>
+    <td>Qualcomm</td>
+  </tr>
+  <tr>
+    <td rowspan="3">Wifi Low Power SOC</td>
+    <td>QCA4002</td>
+    <td>Qualcomm Atheros</td>
+  </tr>
+  <tr>
+    <td>RTL8711AF</td>
+    <td>Realtek</td>
+  </tr>
+  <tr>
+    <td>ESP8266</td>
+    <td>Espressif(乐鑫)</td>
+  </tr>
+  <tr>
+    <td>BLE SOC</td>
+    <td>QN9021</td>
+    <td>NXP</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Wifi SOC</td>
+    <td>RTL8881AB</td>
+    <td>Realtek</td>
+  </tr>
+  <tr>
+    <td>MT7620A</td>
+    <td>MTK</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Nand Flash</td>
+    <td>MT29F4G08ABBEAH4</td>
+    <td>Micron Technology</td>
+  </tr>
+  <tr>
+    <td>HY27UF081G2A</td>
+    <td>Hynix</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Wifi Audio</td>
+    <td>RTL8871AM</td>
+    <td>Realtek</td>
+  </tr>
+  <tr>
+    <td>RT5350F</td>
+    <td>Ralink</td>
+  </tr>
+  <tr>
+    <td>AR9331</td>
+    <td>Qualcomm Atheros</td>
+  </tr>
+  <tr>
+    <td>ATV3603</td>
+    <td>炬力</td>
+  </tr>
+  <tr>
+    <td rowspan="3">Audio Codec</td>
+    <td>WM8728</td>
+    <td>Wolfson</td>
+  </tr>
+  <tr>
+    <td>TAS5731M</td>
+    <td>Texas Instruments</td>
+  </tr>
+  <tr>
+    <td>MAX5556</td>
+    <td>MAXIM</td>
+  </tr>
+</table>
+
 # 硬盘
 
 早期，磁带和硬盘驱动器的面密度相似。但由于的市场规模和硬盘销售收入的增加，为更大规模的研发工作提供了资金，这使得他们的制造商能够更积极地扩大存储密度。因此，大容量硬盘驱动器的当前面密度约为最新磁带驱动器的100倍。
@@ -141,23 +195,9 @@ https://mp.weixin.qq.com/s/Fzu5YmWYxEohDJjmcGGjhQ
 
 ---
 
-随着硬件设备存储介质的改变和性能不断的提升，存储设备处理IO的能力越来越快，传统的旋转设备HDD单个IO需要几毫秒到十几毫秒不等，而如今的高性能的NVMe SSD已经降低到了微秒级别。
-
-因此也有了一些专门针对SSD硬盘的存储软件框架。
-
-https://mp.weixin.qq.com/s/d8aoAFi_lpFoZZCZsPij_g
-
-SPDK概览
-
----
-
 千年盘，是美国Millenniata的公司将推出新型磁盘存储技术，这种光盘新技术可以将数据在室温下存储1000年，使用这种技术的特殊光盘叫Millennial Disc。
 
 ---
-
-https://zhuanlan.zhihu.com/p/34858149
-
-128G的固态硬盘为什么有的标120G，有的标100G？固态硬盘容量背后的秘密
 
 https://zhuanlan.zhihu.com/p/38847308
 
@@ -166,18 +206,6 @@ https://zhuanlan.zhihu.com/p/38847308
 https://www.zhihu.com/answer/470917953
 
 Windows等操作系统是如何做到复制几G文件不出错的？
-
-https://zhuanlan.zhihu.com/p/53547723
-
-一篇文章告诉你SLC、MLC、TLC和QLC究竟有啥区别?
-
-https://zhuanlan.zhihu.com/p/92712620
-
-SLC、MLC、TLC、QLC究竟有什么不同
-
-https://zhuanlan.zhihu.com/p/71267390
-
-固态硬盘和u盘的区别
 
 https://mp.weixin.qq.com/s/7athL-OWrFSxMwxqvR73TA
 
@@ -196,6 +224,10 @@ https://zhuanlan.zhihu.com/p/378639081
 给大家科普下什么是叠瓦盘？顺便告诉你叠瓦盘为什么不能买？
 
 # 内存
+
+![](/images/img5/DRAM.jpg)
+
+---
 
 2008年，金融危机爆发，DRAM价格再次雪崩，从2.25美元狂跌至0.31美元。
 
@@ -267,46 +299,68 @@ https://blog.csdn.net/shiwq1127/article/details/127975179
 
 memory interleaving（内存交织）
 
-# 常凯申+
+# NAND
 
-王以哲丢了第67军两个师的军队，直罗镇一战又损失了57军109师，张学良核心的八个师被吃掉了三个，损失的核心武力达到了四成左右。偏偏他的委员长大哥还扣着不给编制，要取消这三个师的部队。
+## NOR Flash & NAND Flash
 
-https://zhuanlan.zhihu.com/p/586085417
+Flash按照内部存储结构不同，分为两种：NOR Flash和NAND Flash。
 
-直罗镇战役东北军明明只损失了一个师 为何他们的反应那么大
+NOR Flash使用方便，易于连接，可以在芯片上直接运行代码（eXecute In Place），稳定性出色，传输速率高，在小容量时有很高的性价比，这使其很适合应于嵌入式系统中作为FLASH ROM。
 
----
+在通信方式上NOR Flash分为两种类型：CFI Flash和SPI Flash。
 
-西安事变中捉蒋抗日的三剑客是应德田、苗剑秋、孙铭九。
+NAND Flash强调更高的性能，更低的成本，更小的体积，更长的使用寿命。这使NAND Flash很擅于存储纯资料或数据等，在嵌入式系统中用来支持文件系统。NAND Flash存在坏块问题。
 
-应德田投奔汪伪政府，任伪河南省教育厅厅长，建国后未受到追究，1980年于北京去世。
+桀冈富士雄（Fujio Masuoka）1980年发明了NOR Flash，1986年又发明了NAND Flash。
 
-孙铭九投靠日寇，任伪山东保安司令，建国后任上海市政府参事、第六届全国政协委员等职，2000年病逝。
+三星最早提出Norless的概念，在它的CPU on die ROM中固话了NAND Flash的驱动，会把NAND flash的开始一小段拷贝到内存低端作为bootloader,这样昂贵的NOR Flash就被节省下来了，降低了手机主板成本和复杂度。渐渐NOR Flash在手机中慢慢消失了。
 
-1937年，苗剑秋移民日本，1972年，苗剑秋移居台湾，80年代末病逝于台北市立仁爱医院。
+参考：
 
-东北军是出汉奸最多的派系之一，除了上文说的于芷山和张海鹏外，著名人物还有张作霖的结拜兄弟张景惠。全面抗战爆发后，东北军又出了原司令长官公署参谋长荣臻，原东北陆军讲武堂教育长鲍文樾等一批汉奸。甚至连在西安事变中撺掇张学良杀蒋的应德田、孙铭九后来都跑去投日了，如果东北军真有极强的抗日意志，东北也不至于三个月沦陷。
+https://mp.weixin.qq.com/s/Coz81Zidz_LaSYkcErJsOQ
 
-https://www.zhihu.com/question/656639924
+NAND Flash与NOR Flash究竟有何不同
 
-张学良为何拥重兵还是实行不抵抗但是为什么又发动了西安事变?
+https://zhuanlan.zhihu.com/p/26745577
 
----
+NOR和NAND Flash
 
-所有牌子和款式的车，在台湾的卖价是大陆的翻倍起。但是台湾人的实际收入比起中国大陆并未翻倍这么多，比如台北的工薪阶层收入和上海差不多，所以“台独大本营”的PTT论坛里，一谈起车价，连深绿都想统一...
+## SSD
 
----
+SLC(1Bits/cell) < MLC(2Bits/cell) < TLC(3Bits/cell) < QLC(4Bits/cell) < PLC(5Bits/cell) < HLC(7Bits/cell)
 
-晋中战役之后，阎锡山在一次高级军事会议上说：“延安真把事情做绝了，放回被俘军官，使你用不能用，杀不能杀，又不能不管。”他又解释说：“被俘过的人，象失过节的女人，到困难的时候，又容易失节。”
+https://zhuanlan.zhihu.com/p/53547723
 
-https://baijiahao.baidu.com/s?id=1697733227732654867
+一篇文章告诉你SLC、MLC、TLC和QLC究竟有啥区别?
 
-活埋、暗杀、身上刺字，阎锡山这样对待“被俘返回”的官兵
+https://zhuanlan.zhihu.com/p/92712620
 
----
-
-在中美贸易战开始到现在，对台湾的凤梨、带鱼、山竹、红虾等农产品进行了多轮制裁，导致台湾的人均GDP“跌至”世界第七，亚洲第一，第一次超过日韩水平。人均年收入在2015年后持续升高，从马英九时代的11900美元升到2022年的15700美元。
+SLC、MLC、TLC、QLC究竟有什么不同
 
 ---
 
-重庆号上只有管武器的枪炮长是共产党，说是起义其实就是武装夺取。舰长实际没多少想法，只是投的比较快罢了。
+随着硬件设备存储介质的改变和性能不断的提升，存储设备处理IO的能力越来越快，传统的旋转设备HDD单个IO需要几毫秒到十几毫秒不等，而如今的高性能的NVMe SSD已经降低到了微秒级别。
+
+因此也有了一些专门针对SSD硬盘的存储软件框架。
+
+https://mp.weixin.qq.com/s/d8aoAFi_lpFoZZCZsPij_g
+
+SPDK概览
+
+---
+
+黑片（Black Die/Wafer）是指在生产过程中发现了某些缺陷的NAND闪存芯片，这些缺陷可能影响其性能、耐用性或可靠性。
+
+---
+
+https://zhuanlan.zhihu.com/p/34858149
+
+128G的固态硬盘为什么有的标120G，有的标100G？固态硬盘容量背后的秘密
+
+https://zhuanlan.zhihu.com/p/71267390
+
+固态硬盘和u盘的区别
+
+https://www.zhihu.com/question/401733153
+
+长江存储的Xtacking技术与英特尔的3D Xpoint技术、SK的4DNAND技术有什么异同点？

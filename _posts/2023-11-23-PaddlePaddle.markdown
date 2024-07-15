@@ -159,6 +159,12 @@ nn.Sequential里面的模块按照顺序进行排列的，所以必须确保前�
 
 ---
 
+```python
+class GenerationMixin
+```
+
+---
+
 参考：
 
 https://zhuanlan.zhihu.com/p/535100411

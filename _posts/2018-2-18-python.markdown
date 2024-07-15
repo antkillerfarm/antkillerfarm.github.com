@@ -393,6 +393,14 @@ http://blog.csdn.net/yzj99848873/article/details/48025593
 
 Python星号（ * ）操作符的用法
 
+https://mp.weixin.qq.com/s/toh59s2-UlqiZfkE5ThxZw
+
+谈一谈python中的魔法变量*args和**kwargs
+
+https://mp.weixin.qq.com/s/s7PFVE_wcAMZaRUds2MJDQ
+
+Python中的*args和**kwargs是什么？该如何使用？
+
 ## 运算符重载
 
 ```python

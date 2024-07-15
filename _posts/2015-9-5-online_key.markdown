@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  在线激活流程研究, 芯片杂烩, Actor model, Restful, 微服务
+title:  在线激活流程研究, Actor model, Restful, 微服务
 category: technology 
 ---
 
@@ -54,98 +54,6 @@ F表示相关的算法。只有符合F算法的P和U，才能通过程序的验�
 ## 帝王时代
 
 道和魔的斗争永无止境。但是随着软件免费，服务收费模式的兴起。越来越多的软件开始放弃使用反盗版措施。所以或许这个帝王时代也就是故事的终点了。
-
-# 芯片杂烩
-
-我接触到的芯片分门别类罗列如下：
-
-<table>
-  <tr>
-    <th>类别</th>
-    <th>名称</th>
-    <th>厂家</th>
-  </tr>
-  <tr>
-    <td>Low MCU（追求低价）</td>
-    <td>LPC4088</td>
-    <td>NXP</td>
-  </tr>
-  <tr>
-    <td rowspan="2">Hi MCU（追求性能）</td>
-    <td>ASAP1826T</td>
-    <td>alphascale</td>
-  </tr>
-  <tr>
-    <td>MDM9215M</td>
-    <td>Qualcomm</td>
-  </tr>
-  <tr>
-    <td rowspan="3">Wifi Low Power SOC</td>
-    <td>QCA4002</td>
-    <td>Qualcomm Atheros</td>
-  </tr>
-  <tr>
-    <td>RTL8711AF</td>
-    <td>Realtek</td>
-  </tr>
-  <tr>
-    <td>ESP8266</td>
-    <td>Espressif(乐鑫)</td>
-  </tr>
-  <tr>
-    <td>BLE SOC</td>
-    <td>QN9021</td>
-    <td>NXP</td>
-  </tr>
-  <tr>
-    <td rowspan="2">Wifi SOC</td>
-    <td>RTL8881AB</td>
-    <td>Realtek</td>
-  </tr>
-  <tr>
-    <td>MT7620A</td>
-    <td>MTK</td>
-  </tr>
-  <tr>
-    <td rowspan="2">Nand Flash</td>
-    <td>MT29F4G08ABBEAH4</td>
-    <td>Micron Technology</td>
-  </tr>
-  <tr>
-    <td>HY27UF081G2A</td>
-    <td>Hynix</td>
-  </tr>
-  <tr>
-    <td rowspan="4">Wifi Audio</td>
-    <td>RTL8871AM</td>
-    <td>Realtek</td>
-  </tr>
-  <tr>
-    <td>RT5350F</td>
-    <td>Ralink</td>
-  </tr>
-  <tr>
-    <td>AR9331</td>
-    <td>Qualcomm Atheros</td>
-  </tr>
-  <tr>
-    <td>ATV3603</td>
-    <td>炬力</td>
-  </tr>
-  <tr>
-    <td rowspan="3">Audio Codec</td>
-    <td>WM8728</td>
-    <td>Wolfson</td>
-  </tr>
-  <tr>
-    <td>TAS5731M</td>
-    <td>Texas Instruments</td>
-  </tr>
-  <tr>
-    <td>MAX5556</td>
-    <td>MAXIM</td>
-  </tr>
-</table>
 
 # Restful
 

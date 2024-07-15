@@ -124,36 +124,6 @@ IAP（In-Application Programming）指MCU可以在系统中获取新代码并对
 
 与ISP、IAP相对应的是早期单片机所使用的存储器烧写器，该方式需要从电路板取下存储芯片，安装到烧写器上烧写之后，再放回原电路板。这种传统的方式目前已经用的非常少了。
 
-# 上拉电阻和下拉电阻
-
-上拉就是将不确定的信号通过一个电阻钳位在高电平，电阻同时起限流作用。下拉同理，也是将不确定的信号通过一个电阻钳位在低电平。
-
-上拉是对器件输入电流，下拉是输出电流；强弱只是上拉电阻的阻值不同，没有什么严格区分；对于非集电极（或漏极）开路输出型电路（如普通门电路）提供电流和电压的能力是有限的，上拉电阻的功能主要是为集电极开路输出型电路输出电流通道。
-
-# NOR Flash & NAND Flash
-
-Flash按照内部存储结构不同，分为两种：NOR Flash和NAND Flash。
-
-NOR Flash使用方便，易于连接，可以在芯片上直接运行代码（eXecute In Place），稳定性出色，传输速率高，在小容量时有很高的性价比，这使其很适合应于嵌入式系统中作为FLASH ROM。
-
-在通信方式上NOR Flash分为两种类型：CFI Flash和SPI Flash。
-
-NAND Flash强调更高的性能，更低的成本，更小的体积，更长的使用寿命。这使NAND Flash很擅于存储纯资料或数据等，在嵌入式系统中用来支持文件系统。NAND Flash存在坏块问题。
-
-桀冈富士雄（Fujio Masuoka）1980年发明了NOR Flash，1986年又发明了NAND Flash。
-
-三星最早提出Norless的概念，在它的CPU on die ROM中固话了NAND Flash的驱动，会把NAND flash的开始一小段拷贝到内存低端作为bootloader,这样昂贵的NOR Flash就被节省下来了，降低了手机主板成本和复杂度。渐渐NOR Flash在手机中慢慢消失了。
-
-参考：
-
-https://mp.weixin.qq.com/s/Coz81Zidz_LaSYkcErJsOQ
-
-NAND Flash与NOR Flash究竟有何不同
-
-https://zhuanlan.zhihu.com/p/26745577
-
-NOR和NAND Flash
-
 # 硬件调试器
 
 ## Lauterbach TRACE32
@@ -215,3 +185,47 @@ https://zhuanlan.zhihu.com/p/41517198
 ---
 
 某芯片，外接4GB内存，运行正常。外接8GB内存，发生hung。最后发现，8GB内存需要更大的电流才能启动。因此，在此期间，芯片应该避免执行耗电的操作。
+
+# USB
+
+![](/images/img4/lightning.webp)
+
+Lightning的8针接口只有一条用于电流输送，最大电流也不会超过3.3A，4条数据传输线最高也只能实现480Mbps的传输速度，这些设计上的缺陷都不是后期优化可以解决的。
+
+![](/images/img4/usb.webp)
+
+过流保护有个前提条件，可以说是防君子不防小人的。不知道大家注意没有，被保护的只有VBUS，没有保护数据信号D+/D-。What if攻击的是数据信号呢？
+
+USB Killer利用VBUS为电容充电到200V，然后反向将它们释放在数据信号上，瞬间击穿了PCH南桥芯片，造成永久的损坏。
+
+https://mp.weixin.qq.com/s/pL_98GmL2qkvt71hw6A-DA
+
+终结混乱，USB族谱终极整理！
+
+https://mp.weixin.qq.com/s/EDv1ArAG5s8al33FoBfmfQ
+
+USB的前世今生
+
+https://zhuanlan.zhihu.com/p/65478149
+
+为什么USB Type C电缆正反插都可以？它是怎么做到的？
+
+https://mp.weixin.qq.com/s/dk_sl3OvPwvnRWPpPJ4D_Q
+
+USB3.1 Type-C高速接口设计指南
+
+https://zhuanlan.zhihu.com/p/153254485
+
+为什么短路的USB设备不会烧掉你的主板？著名的USB Killer又是怎么干掉主板的？
+
+https://view.inews.qq.com/wxn/20220608A0D8H200
+
+Type-C成为通用接口，苹果告别“躺赚时代”？
+
+https://www.zhihu.com/question/31304026
+
+为什么两台电脑不能直接连接USB传输文件？
+
+https://www.zhihu.com/question/571811693
+
+现在usb口普遍都有过流保护为什么还会烧南桥的例子啊?

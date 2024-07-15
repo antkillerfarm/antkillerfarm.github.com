@@ -9,6 +9,36 @@ category: language
 
 # Python
 
+## PDF（续）
+
+https://mp.weixin.qq.com/s/J-H638ZzhB-GOXMeAQ9aww
+
+Camelot: 三行代码提取PDF表格数据
+
+https://mp.weixin.qq.com/s/c0hszsSDS-u4z-83Y7km8Q
+
+pdf文档解析之pdfminer
+
+https://mp.weixin.qq.com/s/1BoBHbXXOGPZ4HK437lH4Q
+
+6款Python特殊文本格式处理库推荐
+
+https://mp.weixin.qq.com/s/bz7rCy0YyF1HrrHrWt9Mpw
+
+聊聊Python操作PDF的几种方法
+
+https://mp.weixin.qq.com/s/jzjumS2oJfFO-4SBa0qooQ
+
+利用Python将PDF文档转为MP3音频
+
+https://mp.weixin.qq.com/s/FmdbdAWenXWuY9s7ykVORQ
+
+三种方法，Python轻松提取PDF中全部图片
+
+https://mp.weixin.qq.com/s/UVKOU11dfWwP9Uyw9E400Q
+
+如何使用python提取pdf表格及文本，并保存到excel
+
 ## word & excel
 
 安装：
@@ -295,6 +325,48 @@ https://mp.weixin.qq.com/s/20F0ieUjJSZp7yI7ymeJ5Q
 
 试试在终端模拟下雪的效果呗？
 
+## Captcha
+
+Captcha是一个Python验证码库，能够生成音频和图片验证码。
+
+>CAPTCHA是Completely Automated Public Turing Test to Tell Computers and Humans Apart (全自动区分计算机和人类的图灵测试)的简称. CAPTCHA的目的是区分计算机和人类的一种程序算法，是一种区分用户是计算机和人的计算程序，这种程序必须能生成并评价人类能很容易通过但计算机却通不过的测试。
+
+代码：
+
+https://github.com/lepture/captcha
+
+这个库可用于生成大量有标签的验证码，是DL入门的必备工具。
+
+参考：
+
+https://mp.weixin.qq.com/s/m4rNUFV4VGUBI7aWv5fgbw
+
+中文项目：快速识别验证码，CNN也能为爬虫保驾护航
+
+https://zhuanlan.zhihu.com/p/26078299
+
+使用深度学习来破解captcha验证码
+
+https://mp.weixin.qq.com/s/NsaMcgufLYO3i6eG1WO_VA
+
+我不是机器人：谷歌最新版验证码系统ReCaptcha破解已开源
+
+https://mp.weixin.qq.com/s/fun7k1fDrB3BYG2DK-Z7wA
+
+如何证明你是“人”还是“机器”？ 揭秘验证码技术
+
+其他类似项目还包括：
+
+| 语言 | 名称 | 网址 |
+|:--:|:--:|:--:|
+| Java | JCaptcha | http://jcaptcha.sourceforge.net/ |
+| Java | SimpleCaptcha | http://simplecaptcha.sourceforge.net/ |
+| Java | kcaptcha | http://captcha.ru/en/kcaptcha/ |
+| Java | patchca | https://github.com/pusuo/patchca |
+| Java | SkewPassImage | http://skewpassim.sourceforge.net/ |
+| Java | Internet Captcha | http://www.icaptcha.com/ |
+| Java | Cage | http://akiraly.github.io/cage/ |
+
 ## 细节
 
 python有个叫做`attr`的包，还有一个叫做`attrs`的包，然而`import attr`实际上用的是`attrs`。
@@ -387,75 +459,3 @@ https://mp.weixin.qq.com/s/kt5isheTBnpwKUhJAuXnYw
 https://mp.weixin.qq.com/s/5YWAgp8LKi5q_NDrNUtyGQ
 
 在GitHub上收获6519颗Star的Python面试题资料
-
-https://mp.weixin.qq.com/s/toh59s2-UlqiZfkE5ThxZw
-
-谈一谈python中的魔法变量*args和**kwargs
-
-https://mp.weixin.qq.com/s/s7PFVE_wcAMZaRUds2MJDQ
-
-Python中的*args和**kwargs是什么？该如何使用？
-
-https://mp.weixin.qq.com/s/8y7IIQWxXx3bCD8cK8Z3XQ
-
-这17个骚操作你都Ok吗
-
-https://mp.weixin.qq.com/s/rE5OEFwwFxJNb_Omwmqvzw
-
-符合语言习惯的Python优雅编程技巧
-
-https://blog.csdn.net/longerzone/article/details/17889969
-
-Python下调用Linux的Shell命令
-
-https://mp.weixin.qq.com/s/zLTEzMczlrHrX9by0ccp5w
-
-史上最全Python Re模块讲解
-
-https://mp.weixin.qq.com/s/GEn6rmbSfob5W7syf9cnJw
-
-Python实现Word文档操作
-
-https://mp.weixin.qq.com/s/QatY21HxcYHqV2WZ8gc0_g
-
-Python中的异常处理
-
-https://mp.weixin.qq.com/s/i_xLlknJbap3Z9ci0gwuNQ
-
-如何用Python编写一个Lisp解释器
-
-https://mp.weixin.qq.com/s/mP7M4z2mzj_1KPrEx0oqwg
-
-迭代列表不要For循环，这是Python列表推导式最基本的概念
-
-https://mp.weixin.qq.com/s/mcHYTjIDnVBA58-1h8BLdA
-
-手把手教学：提取PDF各种表格文本数据
-
-https://mp.weixin.qq.com/s/bV7g9ugGmFjojGDMIc_kpQ
-
-Python中的元编程：一个关于修饰器和元类的简单教程
-
-https://mp.weixin.qq.com/s/WZDuxH-SYZlD6DED539J6Q
-
-从Python代码到APP，你只需要一个小工具
-
-https://mp.weixin.qq.com/s/hplHCF1e4arlXCRAel0mcw
-
-Python十大装腔语法
-
-https://mp.weixin.qq.com/s/Oo-U4Bq7g1wmQgXJ7Y-rjw
-
-万字长文详解如何用Python玩转OpenGL
-
-https://mp.weixin.qq.com/s/ctlb3nwCEu3qP__xeTUlQQ
-
-GitHub上有个沙雕开发者，做了款斗图工具后火了...
-
-https://mp.weixin.qq.com/s/G5qx3-1Wq4gcRSuRfrczuw
-
-Python趣味打怪：60秒学会一个例子，147段简单代码助你从入门到大师
-
-https://mp.weixin.qq.com/s/zIHJsyankFEf_ig4Xnb0Uw
-
-工具推荐！我是如何使用Python脚本分析CPU使用情况的？
