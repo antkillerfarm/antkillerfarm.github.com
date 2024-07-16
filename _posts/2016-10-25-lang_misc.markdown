@@ -272,3 +272,57 @@ POCO也是一个C++的网络库。（2004年）
 官网：
 
 https://pocoproject.org/
+
+# C/C++参考资源+
+
+https://www.zhihu.com/question/24301047
+
+如何理解C++11的六种memory order？
+
+https://mp.weixin.qq.com/s/en9T7WfQDvFan9tu1q8oRA
+
+c++11与内存模型
+
+https://mp.weixin.qq.com/s/2Lq93xPffOVZB8WvbkhCDg
+
+函数调用的三种约定，你都清楚吗
+
+https://mp.weixin.qq.com/s/m-dLZGAvY5BdVRfVWSpS2g
+
+C++11的异步操作不只是thread
+
+https://zhuanlan.zhihu.com/p/58976871
+
+编程风格之声明式与命令式的区别
+
+https://www.zhihu.com/question/447592340
+
+C语言的源程序是可以直接运行吗？（C语言的解释执行）
+
+https://zhuanlan.zhihu.com/p/346465585
+
+极大提高你开发效率的C++ tricks
+
+https://www.zhihu.com/question/280665935
+
+为什么C/C++要分为头文件和源文件？
+
+https://www.zhihu.com/question/485183321
+
+一个接口只有一个实现类，写接口的意义是什么？只写类不写接口不是更简单且清晰吗？
+
+https://www.zhihu.com/question/36642771
+
+C++的string为什么不提供split函数？
+
+https://zhuanlan.zhihu.com/p/458947637
+
+C++编程技巧: Pimpl
+
+https://blog.csdn.net/weixin_42663840/article/details/81188003
+
+深入浅出入侵式容器
+
+https://blog.csdn.net/codears/article/details/111405309
+
+C语言获取超大文件（超过2G）大小的功能

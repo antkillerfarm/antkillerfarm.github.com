@@ -235,6 +235,14 @@ int main() {
 }
 ```
 
+## operator keyword
+
+```cpp
+operator A(){...}
+```
+
+`operator`关键字除了用于运算符重载之外，还可用于类型转换。上例是将某类型转换成A类型，由于类型转换的结果是确定的，所以该函数的声明中，不需要声明返回值的类型。
+
 ## Macro overload
 
 ```c

@@ -147,10 +147,6 @@ https://zhuanlan.zhihu.com/p/635745172
 
 从未战场杀敌 俄罗斯军神绍伊古如何成为勋章大王
 
-https://zhuanlan.zhihu.com/p/635818283
-
-未在乌克兰作战 俄罗斯军神绍伊古公子是著名流行歌手
-
 https://www.zhihu.com/question/655837656
 
 如何看待俄罗斯前国防部长绍伊古被任命为俄安全会议秘书？

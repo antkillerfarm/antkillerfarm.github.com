@@ -7,6 +7,22 @@ category: language
 * toc
 {:toc}
 
+# const
+
+```cpp
+class A
+{
+   void function() const; //常成员函数, 它不改变对象的成员变量,
+                        //也不能调用类中任何非const的成员函数。
+} 
+```
+
+const：在编译期保证在C的“源代码”里面，没有对其修饰的变量进行修改的地方（如有则报错，编译不通过），而运行期该变量的值是否被改变，则不受const的限制。
+
+volatile：“请不要做自以为是的优化，这个值可能变掉的”，而并非“你可以修改这个值”。
+
+const volatile：变量在程序编译期不能被修改且不能被优化；在程序运行期，变量值可修改，但每次用到该变量的值都要从内存中读取，以防止意外错误。
+
 # 虚函数
 
 ```cpp
@@ -365,20 +381,6 @@ static struct resource pxa27x_resource_ohci[] = {
 ```
 
 这些方法虽然不知道是C的哪个标准引入的，但是见到有代码这样用。
-
-# sanitizers
-
-sanitizers是Google推出的调试工具。已集成到各主流编译器之中，无需安装。
-
-代码：
-
-https://github.com/google/sanitizers
-
-参考：
-
-https://zhuanlan.zhihu.com/p/257939964
-
-编译器自带的调试神器sanitizers
 
 # 常用libc实现
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Matlab, Javascript（二）
+title:  Matlab, Javascript（三）
 category: language 
 ---
 
@@ -93,7 +93,7 @@ http://maxima.sourceforge.net/
 
 # Javascript
 
-# Traffic Demo
+## Traffic Demo
 
 2019.9
 
@@ -291,32 +291,32 @@ PDF.js由Mozilla提供支持。目标是创建一个通用的、基于Web标准�
 
 https://mozilla.github.io/pdf.js/
 
-# C/C++参考资源+
+# Javascript参考资源
 
-https://zhuanlan.zhihu.com/p/346465585
+https://mp.weixin.qq.com/s/OlnIqu5JvO2WjIA5re9KIg
 
-极大提高你开发效率的C++ tricks
+JavaScript引擎深入剖析(一)：JSValue的内部实现
 
-https://www.zhihu.com/question/280665935
+https://mp.weixin.qq.com/s/sqW3HlCTV5Yivwi_B1Rzww
 
-为什么C/C++要分为头文件和源文件？
+这个文件下载问题难住了我至少三位同事
 
-https://www.zhihu.com/question/485183321
+https://mp.weixin.qq.com/s/SdtEmzTwdrW_g14QBEgcrQ
 
-一个接口只有一个实现类，写接口的意义是什么？只写类不写接口不是更简单且清晰吗？
+JavaScript中哪一种循环最快呢？
 
-https://www.zhihu.com/question/36642771
+https://mp.weixin.qq.com/s/7CD_F0hEZtYRK0fvBWb_gQ
 
-C++的string为什么不提供split函数？
+从0到1实现浏览器端沙盒运行环境
 
-https://zhuanlan.zhihu.com/p/458947637
+https://hllvm-group.iteye.com/group/topic/37596
 
-C++编程技巧: Pimpl
+各JavaScript引擎的简介，及相关资料/博客收集帖
 
-https://blog.csdn.net/weixin_42663840/article/details/81188003
+https://mp.weixin.qq.com/s/rDAAfeQmUhxaHkrt_zVCCg
 
-深入浅出入侵式容器
+如何避免JS内存泄漏？
 
-https://blog.csdn.net/codears/article/details/111405309
+https://zhuanlan.zhihu.com/p/438734215
 
-C语言获取超大文件（超过2G）大小的功能
+揭秘Chromium渲染引擎（一）：RenderingNG

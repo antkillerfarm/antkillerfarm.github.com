@@ -49,6 +49,35 @@ half - IEEE 754-based half-precision floating point library
 
 除了IEEE 754之外，还有IBM hexadecimal floating point。相比于IEEE 754，IBM格式的Significand位数多一些，而Exponent的位数少一些。
 
+---
+
+C++17以后有了更多的浮点数表示方法：
+
+```text
+Literal         Printed value
+58.             58
+4e2             400
+123.456e-67     1.23456e-65
+123.456e-67f    0
+.1E4f           1000
+0x10.1p0        16.0625
+0x1p5           32
+0x1e5           485
+3.14'15'92      3.14159
+1.18e-4932l     1.18e-4932
+3.4028234e38f   340282346638528859811704183484516925440
+3.4028234e38    340282339999999992395853996843190976512
+3.4028234e38l   340282339999999999995912555211526242304
+```
+
+C++23添加了`std::float16_t`、`std::float32_t`、`std::float64_t`、`std::float128_t`、`std::bfloat16_t`等类型。
+
+google的ml_dtypes库，提供了`float8_e5m2`、`float8_e4m3fn`、`int4`等类型的支持。
+
+https://github.com/jax-ml/ml_dtypes
+
+---
+
 参考：
 
 https://en.wikipedia.org/wiki/IEEE_754
@@ -268,17 +297,3 @@ Flexpoint——利用一种自适应的数据类型加速神经网络训练
 https://mp.weixin.qq.com/s/z4OEPrAAtaNmBQoyvEd7Nw
 
 从春秋到战国—论Nervana的倒掉
-
-# TF32
-
-![](/images/img3/tf32.png)
-
-这是Nvidia推出的格式，相当于把FP32的指数和FP16的底数拼到了一起。有BF16珠玉在前，这个的设计只能说中规中矩了。
-
-优点：底数精度虽然不如Dynamic Range重要，但对于运算结果还是有一定的影响的。这点在CNN中不太显著，但在RNN/Transformer中还是有所体现的。
-
-缺点：毕竟不是16位，运算速度只有FP16/BF16的一半，但比FP32快一些。
-
-BF16和TF32的先例一开，各种格式如火山爆发一般涌现。例如AMD的fp24，Pixar的pxr24，Enflame的ef32。
-
-壁仞原创定义了TF32+，相较于TF32，在满足同样动态表示范围的前提下，增加了5位尾数。实际上就是pxr24。。。

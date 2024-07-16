@@ -149,6 +149,14 @@ https://b23.tv/OfdfBnz
 
 如何设置大模型推理参数，top_k，top_p, temperature, num_beams
 
+https://blog.csdn.net/HUSTHY/article/details/125990877
+
+Contrastive Search Decoding——一种对比搜索解码文本生成算法
+
+https://zhuanlan.zhihu.com/p/656707466
+
+DoLa：层对比解码改善LLM的真实性
+
 ---
 
 投机采样使用两个模型：一个是原始目标模型，另一个是比原始模型小得多的近似模型。近似模型用于进行自回归串行采样，而大型模型则用于评估采样结果。

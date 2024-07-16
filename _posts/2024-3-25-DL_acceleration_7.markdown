@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度加速（七）——模型压缩与加速进阶（2）
+title:  深度加速（七）——模型压缩与加速进阶（2）,  NN Quantization（三）
 category: DL acceleration 
 ---
 
@@ -69,9 +69,39 @@ https://mp.weixin.qq.com/s/ie2O5BPT-QxTRhK3S0Oa0Q
 
 剪枝需有的放矢，快手&罗切斯特大学提出基于能耗建模的模型压缩
 
-# NN Quantization+
+# NN Quantization
 
-## 二值神经网络（续）
+## 二值神经网络
+
+二值神经网络的主要缺点在于，它们无法实现与完全精度的深层网络一样高的精度。但这一直在缓慢地变化，已经有了很多进步。
+
+http://blog.csdn.net/tangwei2014/article/details/55077172
+
+二值化神经网络介绍
+
+https://mp.weixin.qq.com/s/0twiT2mrVdnwyS-mqgrjVA
+
+低比特量化之XNOR-Net
+
+https://mp.weixin.qq.com/s/oumf8l28ijYLxc9fge0FMQ
+
+嵌入式深度学习之神经网络二值化（1）
+
+https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
+
+嵌入式深度学习之神经网络二值化（2）
+
+https://mp.weixin.qq.com/s/RsZCTqCKwpnjATUFC8da7g
+
+嵌入式深度学习之神经网络二值化（3）
+
+https://blog.csdn.net/stdcoutzyx/article/details/50926174
+
+二值神经网络（Binary Neural Network，BNN）
+
+https://mp.weixin.qq.com/s/Q54AdQmqa5JD0v9CEeFtSQ
+
+二值化神经网络(BNN)综述
 
 https://zhuanlan.zhihu.com/p/431680710
 

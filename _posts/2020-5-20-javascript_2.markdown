@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Javascript（三）
+title:  Javascript（二）
 category: language 
 ---
 

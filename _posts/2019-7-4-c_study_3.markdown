@@ -407,13 +407,3 @@ public:
 https://www.ibm.com/developerworks/cn/aix/library/1212_lufang_c11new/index.html
 
 C++11标准新特性：Defaulted和Deleted函数
-
-# const
-
-```cpp
-class A
-{
-   void function() const; //常成员函数, 它不改变对象的成员变量,
-                        //也不能调用类中任何非const的成员函数。
-} 
-```

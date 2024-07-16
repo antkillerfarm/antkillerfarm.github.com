@@ -206,3 +206,7 @@ https://zhuanlan.zhihu.com/p/684853841
 https://www.zhihu.com/question/653944068
 
 俄罗斯国防部副部长涉嫌受贿被拘留，或面临15年监禁，如何看待此事？
+
+---
+
+罗刹国防部长Andrey Belousov的侄女Natalia Vertinskaya要求她叔叔立刻停战！并提醒他，他弟弟现在就住在可能被导弹砸到的基辅。

@@ -244,3 +244,7 @@ https://www.zhihu.com/question/604343409
 https://zhuanlan.zhihu.com/p/692048896
 
 令人疑惑：那位北邮导师，为何让学生长期代买32个包子和20个鸡蛋？
+
+https://www.zhihu.com/question/660705618
+
+假冒“辽宁理工大学”教授的魏新河被抓，具体情况如何？他假冒教授的目的是什么？

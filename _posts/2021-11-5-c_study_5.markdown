@@ -7,6 +7,20 @@ category: language
 * toc
 {:toc}
 
+# sanitizers
+
+sanitizers是Google推出的调试工具。已集成到各主流编译器之中，无需安装。
+
+代码：
+
+https://github.com/google/sanitizers
+
+参考：
+
+https://zhuanlan.zhihu.com/p/257939964
+
+编译器自带的调试神器sanitizers
+
 # spaceship operator
 
 spaceship operator: `<=>`
@@ -378,27 +392,3 @@ UNREFERENCED_PARAMETER的作用
 https://mp.weixin.qq.com/s/1ELGzBkIdO1xa6LZV80raQ
 
 C++中Future和Promise的一种简单实现
-
-https://www.zhihu.com/question/24301047
-
-如何理解C++11的六种memory order？
-
-https://mp.weixin.qq.com/s/en9T7WfQDvFan9tu1q8oRA
-
-c++11与内存模型
-
-https://mp.weixin.qq.com/s/2Lq93xPffOVZB8WvbkhCDg
-
-函数调用的三种约定，你都清楚吗
-
-https://mp.weixin.qq.com/s/m-dLZGAvY5BdVRfVWSpS2g
-
-C++11的异步操作不只是thread
-
-https://zhuanlan.zhihu.com/p/58976871
-
-编程风格之声明式与命令式的区别
-
-https://www.zhihu.com/question/447592340
-
-C语言的源程序是可以直接运行吗？（C语言的解释执行）

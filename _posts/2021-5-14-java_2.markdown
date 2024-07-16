@@ -11,6 +11,26 @@ category: language
 
 ## JVM（续）
 
+https://mp.weixin.qq.com/s/9xGsz5TpTSN0LxeOdNV8zA
+
+一文看懂JVM内存布局及GC原理
+
+https://mp.weixin.qq.com/s/CH9D-E7fxuu462Q2S3t0AA
+
+Java字节码增强探秘
+
+https://mp.weixin.qq.com/s/RKqmy8dw7B7WtQc6Xy2CLA
+
+JVM CPU Profiler技术原理及源码深度解析
+
+https://mp.weixin.qq.com/s/bU-MYGcbas6y7JY-oRrNdA
+
+JVM面试大法
+
+https://mp.weixin.qq.com/s/bF6tHfA4lXApv5x9h97cqA
+
+浅谈JVM内存结构
+
 https://mp.weixin.qq.com/s/MxMcpJlqSEZRO0CssQglOg
 
 Android兼容Java 8语法特性的原理分析
@@ -418,31 +438,3 @@ https://mp.weixin.qq.com/s/4YXoSrYueQFWOC8sZH8LvQ
 https://zhuanlan.zhihu.com/p/373271928
 
 浏览器性能优化实战
-
-https://mp.weixin.qq.com/s/OlnIqu5JvO2WjIA5re9KIg
-
-JavaScript引擎深入剖析(一)：JSValue的内部实现
-
-https://mp.weixin.qq.com/s/sqW3HlCTV5Yivwi_B1Rzww
-
-这个文件下载问题难住了我至少三位同事
-
-https://mp.weixin.qq.com/s/SdtEmzTwdrW_g14QBEgcrQ
-
-JavaScript中哪一种循环最快呢？
-
-https://mp.weixin.qq.com/s/7CD_F0hEZtYRK0fvBWb_gQ
-
-从0到1实现浏览器端沙盒运行环境
-
-https://hllvm-group.iteye.com/group/topic/37596
-
-各JavaScript引擎的简介，及相关资料/博客收集帖
-
-https://mp.weixin.qq.com/s/rDAAfeQmUhxaHkrt_zVCCg
-
-如何避免JS内存泄漏？
-
-https://zhuanlan.zhihu.com/p/438734215
-
-揭秘Chromium渲染引擎（一）：RenderingNG

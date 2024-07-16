@@ -1,13 +1,25 @@
 ---
 layout: post
-title:  NN Quantization（二）——TF32, FP8, Posit, 量化策略, 二值神经网络
+title:  NN Quantization（二）——TF32, FP8, W4A16, FP4, Posit, 量化策略
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# TF32（续）
+# TF32
+
+![](/images/img3/tf32.png)
+
+这是Nvidia推出的格式，相当于把FP32的指数和FP16的底数拼到了一起。有BF16珠玉在前，这个的设计只能说中规中矩了。
+
+优点：底数精度虽然不如Dynamic Range重要，但对于运算结果还是有一定的影响的。这点在CNN中不太显著，但在RNN/Transformer中还是有所体现的。
+
+缺点：毕竟不是16位，运算速度只有FP16/BF16的一半，但比FP32快一些。
+
+BF16和TF32的先例一开，各种格式如火山爆发一般涌现。例如AMD的fp24，Pixar的pxr24，Enflame的ef32。
+
+壁仞原创定义了TF32+，相较于TF32，在满足同样动态表示范围的前提下，增加了5位尾数。实际上就是pxr24。。。
 
 参考：
 
@@ -253,35 +265,3 @@ https://github.com/google/gemmlowp
 ## 论文
 
 《Quantizing deep convolutional networks for efficient inference: A whitepaper》
-
-# 二值神经网络
-
-二值神经网络的主要缺点在于，它们无法实现与完全精度的深层网络一样高的精度。但这一直在缓慢地变化，已经有了很多进步。
-
-http://blog.csdn.net/tangwei2014/article/details/55077172
-
-二值化神经网络介绍
-
-https://mp.weixin.qq.com/s/0twiT2mrVdnwyS-mqgrjVA
-
-低比特量化之XNOR-Net
-
-https://mp.weixin.qq.com/s/oumf8l28ijYLxc9fge0FMQ
-
-嵌入式深度学习之神经网络二值化（1）
-
-https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
-
-嵌入式深度学习之神经网络二值化（2）
-
-https://mp.weixin.qq.com/s/RsZCTqCKwpnjATUFC8da7g
-
-嵌入式深度学习之神经网络二值化（3）
-
-https://blog.csdn.net/stdcoutzyx/article/details/50926174
-
-二值神经网络（Binary Neural Network，BNN）
-
-https://mp.weixin.qq.com/s/Q54AdQmqa5JD0v9CEeFtSQ
-
-二值化神经网络(BNN)综述

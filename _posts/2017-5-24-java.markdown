@@ -364,23 +364,3 @@ https://mp.weixin.qq.com/s/t1Cx1n6irN1RWG8HQyHU2w
 https://mp.weixin.qq.com/s/feJKRqYJTVEIxl6jvjevAg
 
 咱们从头到尾说一次Java的垃圾回收
-
-https://mp.weixin.qq.com/s/9xGsz5TpTSN0LxeOdNV8zA
-
-一文看懂JVM内存布局及GC原理
-
-https://mp.weixin.qq.com/s/CH9D-E7fxuu462Q2S3t0AA
-
-Java字节码增强探秘
-
-https://mp.weixin.qq.com/s/RKqmy8dw7B7WtQc6Xy2CLA
-
-JVM CPU Profiler技术原理及源码深度解析
-
-https://mp.weixin.qq.com/s/bU-MYGcbas6y7JY-oRrNdA
-
-JVM面试大法
-
-https://mp.weixin.qq.com/s/bF6tHfA4lXApv5x9h97cqA
-
-浅谈JVM内存结构

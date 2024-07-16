@@ -137,6 +137,10 @@ https://fitgirl-repacks.site/
 
 一个俄罗斯妹子办的游戏资源站
 
+https://www.zhihu.com/question/557628789
+
+如何评价游戏《白日升》（Rise of the White Sun）？
+
 # 英雄无敌
 
 1、2代：New Word Computing
