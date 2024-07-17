@@ -11,6 +11,38 @@ category: Russo Ukrainian War Sky
 
 ## 基辅战役（续）
 
+https://zhuanlan.zhihu.com/p/502798862
+
+闪击覆灭——复盘霍斯托梅尔机场之战
+
+https://zhuanlan.zhihu.com/p/508508558
+
+踏入地狱——一位俄军空降兵的自述
+
+https://news.ifeng.com/c/8DvbK0qr12P
+
+俄军三面围攻直指基辅，开战首日的战场什么样？
+
+https://news.ifeng.com/c/8E5Jo3VmMd2
+
+俄罗斯发动总攻？最详实揭秘俄军部署
+
+https://zhuanlan.zhihu.com/p/557550632
+
+基辅之战 华邮深度系列报道
+
+https://zhuanlan.zhihu.com/p/583278813
+
+击碎闪电：俄乌基辅之战回顾
+
+https://zhuanlan.zhihu.com/p/609245220
+
+外媒解开了入侵之初俄军的超长车队形成和消失之谜
+
+https://zhuanlan.zhihu.com/p/627508504
+
+基辅的最后一道防线——霍斯托梅尔公路24/1号公寓的故事
+
 https://zhuanlan.zhihu.com/p/562116675
 
 乌克兰真理报长篇: 二月最长的三天，一场谁都没料到的大战的开端
@@ -170,17 +202,3 @@ https://www.zhihu.com/question/619108977
 https://zhuanlan.zhihu.com/p/503009790
 
 是魔鬼？还是勇士？—亚速营（团）简史
-
----
-
-3月16日早晨，俄国人在剧院投下了一枚重磅炸弹，造成大楼内外近600人死亡。剧院房顶上写着“儿童”的字样，但是俄军飞行员还是轰炸了那里。
-
-周小平
-
-https://zhuanlan.zhihu.com/p/614947725
-
-马里乌波尔剧院爆炸纪实，俄罗斯犯战争罪的一个实例
-
-https://www.zhihu.com/question/621007019
-
-如何看待王芳在马里乌波尔大剧院的废墟上演唱《卡秋莎》？

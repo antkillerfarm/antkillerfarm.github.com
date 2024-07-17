@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Transifex与GTK文档翻译, 外设接口杂谈
+title:  Transifex与GTK文档翻译, Raspberry Pi（一）
 category: technology 
 ---
 
@@ -141,124 +141,122 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/helloworld/glib
 
 需要注意的是，此例中Server端采用的是阻塞式操作，因此会将main loop阻塞住。如果main loop需要处理其他事件的话，这里可使用GThreadedSocketService启动单独的线程，处理之。
 
-# 外设接口杂谈
+# Raspberry Pi
 
-## USB_IN和USB_OUT
+## 概述
 
-粗看这个也觉得奇怪，USB总线是双向传输的，怎么还有IN和OUT的区别。后来才知道这是相对于USB HUB而言的。靠近根节点的那边是IN，靠近设备的那边是OUT。这里之所以用“靠近”这个词，是因为USB是树状结构的，USB HUB相当于是这个树中，层与层之间的连接器。
+树莓派（Raspberry Pi）在极客领域可谓大名鼎鼎，它的官网是：
 
-USB HUB的典型实例是用的比较广的1路转2路或者1路转4路的USB扩展器。
+https://www.raspberrypi.org/
 
-## UART
+从型号来看，它可以分为三大类型：
 
-UART的硬件形态分为TTL、RS232和RS485等，其中最常用的是RS232，也就是有的PC主板上提供的那种9针的接口。
+1）B型。面向开发者和学生。
 
-从原理来讲，RS485和USB类似都采用了双绞线和差分编码。
+2）A型和Zero型。面向批量制造类的客户。
 
-## 各种外设接口物理层对比
+从技术角度来说，树莓派虽然优秀，然而有实力制作这样开发板的公司，没有一千，也有几百。但世界范围内，只有Raspberry Pi和Arduino这两款开发板取得了成功。
 
-这里不打算罗列各种外设接口的规格参数，也不打算给出一个表格对比各个方面。我的目的是在对比各种外设接口的过程中，总结设计外设接口所需要注意的地方。
+Arduino是一款微控制器，主要用于电子工程领域，比如工业设备、传感器控制等。程序设计偏单片机风格，价格低廉，计算能力有限。它的官网：
 
-### 1.数据线
+https://www.arduino.cc/
 
-外设接口的目的是传输数据，因此数据线是必不可少的。由于一根数据线无法同时处于两种状态，因此，必须有两根独立的数据线，才能实现真正的全双工。否则，至多是半双工。
+而Raspberry Pi的定位是一个廉价的PC。其计算能力和目前的智能手机相当，但操作系统却和普通的桌面系统类似，因此，普通的PC应用可以很方便的移植过来。
 
-### 2.时钟线
+Raspberry Pi官方OS是Raspbian，这是一个基于Debian的Linux发行版。
 
-时钟用于划分数据位，起到标尺的作用，否则通信双方是无法理解一段高电平表示的是多少个“1”。（这里假设高电平表示“1”）
+除此之外，还有几个Ubuntu定制版：
 
-时钟有三种形式：
+http://ubuntu-mate.org/raspberry-pi/
 
-1.约定式。通信双方约定一个时钟频率进行通信。最典型的是UART接口。这种方式的好处是无需时钟线。但由于两侧时钟是异步时钟，时间长了之后就会出现同步错误，因此这种方式只适合慢速接口。一个改进的方法是通过在数据中加入停止位，来纠正累积的时钟同步误差。
+甚至微软也为此专门推出了Windows 10 IOT，其地址为：
 
-2.时钟线。这种方式通常设计为主从式，即主设备提供时钟信号，而从设备利用该信号同步自己的时钟。比较典型的是I2C、I2S、SPI。
+https://developer.microsoft.com/en-us/windows/iot
 
-3.时钟线和数据线混合式。典型如USB所采用的差分编码，虽然是两根数据线D+和D-，但从信息量来说，相当于其他接口的数据线+时钟线。也可以换句话来说，由于时钟和数据是信息中相互独立的分量，因此，无论采用何种编码方式，都不能以少于2根线的方式提供完整的数据线+时钟线的功能。
+这一点是很有象征意义的，这表明Raspberry Pi及其社区的影响力，已经到了MS这样的巨头也不能无视的地步了。
 
-正因为如此，USB 2.0虽然有两根数据线，但它实际上只是个半双工接口。而USB 3.0在USB 2.0的基础上，又添加了两根数据线，才成为了真正的全双工设备。
+## Raspberry Pi的成功之道
 
-### 3.数据有效
+嵌入式开发板这种东西，在国内已经有十多年的历史。我至今仍然记得，2007年的时候，公司的一套类智能手机的开发板，居然要3000元。所以宝贝的不得了，不相干的人根本没机会把玩。
 
-分为电平式和边沿式两种。前者如I2C，只允许数据在时钟信号为低电平时改变，后者如SPI，规定数据在时钟信号的边沿有效。
+从知名度来说，友善之臂和周立功，算是国内开发板卖的比较好的了，但前者日子过得一般，后者的主要业务也转向工控领域。
 
-### 参考
+那么Raspberry Pi的成功之道是什么呢？我个人总结起来，有以下几点：
 
-https://www.zhihu.com/question/308406342
+- **把握住了市场对于廉价计算的需求**
 
-SPI总线协议如何理解？
+单片机讲究价格便宜，性能够用就好，而PC追求功能强大。因此，在单片机和PC之间，存在一个巨大的细分市场。这个市场既需要强大的计算能力，也需要便宜的价格。Raspberry Pi很好的满足了这一点。
 
-## I2C
+- **通用的计算平台**
 
-![](/images/article/i2c.png)
+很多手机开发板的计算能力和Raspberry Pi类似，但为什么Raspberry Pi取得了成功呢？因为，手机OS主要面向普通用户，对于程序开发不太友好，而Raspberry Pi则更多强调它是一个功能完整的PC。
 
-I2C的读写时序一般如上图所示。从中可以看出I2C的数据由从机地址、读写标志位、寄存器地址和普通数据位组成。其中后面的三部分在其他的外设接口中也能见到，意义大致相同，这里就不赘述了。这里重点谈谈从机地址。
+它使用了普通的桌面Linux，集成了完整的开发环境，对于小程序，甚至可以直接在Raspberry Pi上编译执行，就和在PC上一样。
 
-I2C相比于UART和SPI，其优点在于一个接口可以外接多个设备（多个从设备的情况较多）。从机地址就是用于区分这些设备的。以7位从机地址为例，高4位一般由设备厂家分配设定，低3位由用户设定。因此一个I2C总线上可以挂接多个同类设备，只要用户设定好它们的地址就可以了。与SPI的片选不同，I2C的用户设定位采用连接上下拉电阻的方式设定，而不用连接到主设备上。
+一般的服务器应用，如Apache等，也可以像在PC上那样安装运行。这些都使得它的应用场景较手机平台有了极大的扩展。
 
-在Linux内核中，使用I2C_BOARD_INFO宏设置从机地址。
+而国内的开发板，很多仍然停留在手机开发板的阶段，对于通用计算，理解支持都不到位。
 
-## SMBus
+- **开放的态度**
 
-SMBus(System Management Bus,系统管理总线)是1995年由Intel提出的，应用于移动PC和桌面PC系统中的低速率通讯总线。由于它大部分基于I2C总线规范，因此在Linux内核中，被归类为I2C总线。
+Pi的开放不仅体现在它使用了很多开源软件，更在于它的软硬件都是开源的
+
+这样，也就给了极客群体扩展使用它的机会，反过来又促进了Raspberry Pi的发展。Raspberry Pi和极客群体之间的互动，使得它突破了产品或平台的限制，而构成了一个有机的生态系统。
+
+反观国内的开发板生产商，或曰“解决方案提供商”，实际上陷入了一个怪圈。它们为了推销自己的硬件或者软件，而有意对某些部分闭源。但实际上，生态那么差，你就算免费我都懒得用。因为，嵌入式平台都是专有平台，需要程序员投入额外的精力，去理解一些离开该平台就用不到的知识，而这是需要成本的。
+
+Raspberry Pi成立之初的非营利性质，反而帮助它们赚到了这个细分市场中最多的钱，这对于国内众解决方案提供商，真是一个莫大的讽刺。
+
+- **完善的服务**
+
+很多国内厂商提供的所谓服务，无非也就是建个网站，让人下载一些资料而已。这样的等级实在太低了。
+
+Raspberry Pi建有专门的软件仓库，安装软件就和PC上的Ubuntu一样方便。
+
+这里，我们可以拿友善之臂的Nano PC作为一个对比。
+
+两者的设计风格和外设接口，基本一致。Nano PC T2的硬件略好于Raspberry Pi 3B，好得不多，价钱也基本相当。
+
+但是，资料、软件、生态，完全没得玩啊。你就算再便宜50块钱，我也会选择Raspberry Pi。新手绝对不推荐Nano PC！
+
+唯一值得欣慰的是，友善之臂也开始在Github上创建自己的代码仓库，并借助了Debian的软件仓库，这在一定程度上，挽回了一些劣势。
+
+## 卡片PC
+
+常见的卡片PC，除了Raspberry Pi之外，还有Intel的NUC。但是后者除了体积小之外，售价和普通PC相当，不适合当玩具。
+
+## Raspberry Pi的成功案例（不定期更新）
+
+http://dcaoyuan.github.io/papers/rpi_cluster/component.html
+
+这是一个Raspberry Pi的集群。
+
+## Raspberry Pi 3B初体验
+
+采购的Raspberry Pi 3B，今天（2016.5.10）终于到货了，比想象中要小巧一些。这里需要注意的是，35美元（或者类似价钱的RMB），除了板子之外，什么都没有。你必须自己准备电源和TF卡，好在这些东西都是标准件，并不难找。
+
+### 安装OS
+
+官方推荐使用NOOBS，但其实直接烧镜像更简单快捷。这里我使用的是Raspbian OS。
+
+安装步骤：
+
+1.列出设备。
+
+`lsblk`
+
+2.烧写。
+
+`unzip -p 2018-11-13-raspbian-stretch.zip | sudo dd of=/dev/sdX bs=4M status=progress conv=fsync`
+
+上述命令中的`progress`用于展示进度条。
+
+官方步骤：
+
+https://www.raspberrypi.org/documentation/installation/installing-images/linux.md
 
 参考：
 
-https://zhuanlan.zhihu.com/p/201075632
+https://zhuanlan.zhihu.com/p/33030757
 
-什么是I3C总线？它和I2C和SMBus是什么关系？
-
-https://mp.weixin.qq.com/s/7PiFeh7DXPfghMTypFC_bQ
-
-I3C下一代接口技术
-
-## 网线
-
-![](/images/img5/TS568.jpg)
-
-# Latex+
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/508559139
-
-Latex简明速查手册
-
-https://www.zhihu.com/question/40763253
-
-如何在Word和PowerPoint中优雅地插入Latex公式？
-
-https://mp.weixin.qq.com/s/3RtKAT3WE8P2YIZRA2dZ3A
-
-LaTeX的历史：图灵奖得主1977年开启的计划，引发学术圈重大变革
-
-https://mp.weixin.qq.com/s/KMWhz5_EXWoxgmHUek6zBA
-
-不会用latex写公式？看看这个python转latex的库（python2latex）
-
-https://www.zhihu.com/question/65508676
-
-怎么在LaTeX中排版Python代码？
-
-https://mp.weixin.qq.com/s/LumDQL9VKTHWK3RkOhKFcg
-
-1行代码搞定Latex公式编写，这个4.6M的Python小插件，堪称论文必备神器（handcalcs）
-
-https://zhuanlan.zhihu.com/p/268332132
-
-知乎公式编辑器的高级“玩法”
-
-https://mp.weixin.qq.com/s/E4EECj0QQ90ElfPqOL80eg
-
-Python编辑公式竟可以如此简单（latexify_py）
-
-https://zhuanlan.zhihu.com/p/38178015
-
-使用VSCode编写LaTeX
-
-https://zhuanlan.zhihu.com/p/194831235
-
-Knuth-Plass换行算法
-
-https://mp.weixin.qq.com/s/kGVLsqstajyrZ_cfkFegrA
-
-Latex数学排版简洁指南
+为树莓派装上CentOS 7系统

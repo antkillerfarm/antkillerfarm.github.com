@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争：苍天篇（九）——赫尔松战役
+title:  俄乌战争：苍天篇（九）——卢甘斯克战役, 赫尔松战役
 category: Russo Ukrainian War Sky
 ---
 
@@ -8,6 +8,38 @@ category: Russo Ukrainian War Sky
 {:toc}
 
 # 俄乌战争
+
+## 卢甘斯克战役
+
+Krasnyi Liman虽然位于顿涅斯克州，但是仍然属于北线，和东线距离很远，倒是离卢甘斯克很近，且后续发展也在卢甘斯克方向，故归类为卢甘斯克战役。
+
+本节还包括克里米纳秋季攻防战、斯瓦托夫攻防战等。
+
+利曼春季战役：2022.5.23～2022.5.27
+
+利曼秋季战役：2022.9.16～2022.10.2
+
+---
+
+红利曼上虎贲垮，千里驰援有五八，非我见死不相救，奈何乌军有海马！
+
+利曼于9月30日“加入”俄联邦，10月1日即回归乌克兰，有人戏称这是“俄联邦一日游”。
+
+https://zhuanlan.zhihu.com/p/568997474
+
+饺子——红利曼攻防战V2.0
+
+https://www.zhihu.com/question/555976710
+
+俄军还守得住莱曼/利曼吗？
+
+https://zhuanlan.zhihu.com/p/570377558
+
+漫长的防线——克里明纳-斯瓦特沃的防御
+
+https://m.sohu.com/a/552397480_767131
+
+红利曼还是利曼，俄军乌军称呼为何不一样？被抹去历史的战略重镇
 
 ## 赫尔松战役
 
@@ -180,43 +212,3 @@ https://www.zhihu.com/question/617271466
 https://zhuanlan.zhihu.com/p/666436023
 
 每一天都可能是我生命中的最后一天——赫尔松解放一周年特别专题
-
----
-
-https://zhuanlan.zhihu.com/p/673645137
-
-赫尔松2023年反攻
-
----
-
-https://www.zhihu.com/question/557445334
-
-如何看待赫尔松北岸俄罗斯防线大溃败，俄罗斯还守得住赫尔松吗？
-
-https://www.zhihu.com/question/565653108
-
-俄国防部宣布从赫尔松部分地区撤军至第聂伯河东岸，当地形势如何？
-
-https://zhuanlan.zhihu.com/p/582118157
-
-崩撤卖溜！——赫尔松大反攻V3.0正式版
-
-https://zhuanlan.zhihu.com/p/582824955
-
-鏖战261天：俄乌赫尔松之战回顾
-
-https://www.zhihu.com/answer/2760415200
-
-赫尔松之战 三国版
-
-https://zhuanlan.zhihu.com/p/606942602
-
-解放后的赫尔松的全景生活——俄军的炮击不曾停止
-
-https://news.ifeng.com/c/8Kph5NYlxxB
-
-果然！俄军退出赫尔松，苏罗维金一战封神？
-
-https://zhuanlan.zhihu.com/p/666716195
-
-善意又来了？浅谈俄军从第聂伯河左岸撤退的前景

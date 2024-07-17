@@ -207,7 +207,7 @@ https://www.zhihu.com/question/313697268
 
 如何评价lift编程语言?
 
-# Git+
+# Git
 
 ## Monorepo
 

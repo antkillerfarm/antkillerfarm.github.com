@@ -91,7 +91,7 @@ Every country has its own mafia. In Russia, the mafia has its own country. -- by
 
 2024.5.12 绍伊古被解职。
 
-2024.6.15～16 瑞士和平峰会。（美洲国家组织、安提瓜和巴布达、赞比亚、巴巴多斯、马绍尔群岛、马拉维等会后签署公报）
+2024.6.15～16 瑞士和平峰会。（美洲国家组织、安提瓜和巴布达、赞比亚、巴巴多斯、马绍尔群岛、马拉维等12个国家和地区组织会后签署公报）
 
 ---
 
@@ -292,23 +292,3 @@ https://zhuanlan.zhihu.com/p/673777418
 https://zhuanlan.zhihu.com/p/653596030
 
 烽火燃不息，征战无已时——俄乌二周年战记
-
-https://zhuanlan.zhihu.com/p/685232548
-
-战略意图与军事能力——详析2024年的俄乌战争前景
-
-https://zhuanlan.zhihu.com/p/603456303
-
-乌克兰人力分析（2023年2月）
-
-https://zhuanlan.zhihu.com/p/694875148
-
-乌克兰人力分析--2024年4月27日版
-
-https://zhuanlan.zhihu.com/p/700352080
-
-乌克兰经济分析
-
-https://www.zhihu.com/question/661116734
-
-如何看待7月9日俄罗斯用kh-101巡航导弹轰炸基辅儿童医院，导致多名儿童伤亡?

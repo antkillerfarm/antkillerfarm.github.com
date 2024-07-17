@@ -1,0 +1,198 @@
+---
+layout: post
+title:  内存, NAND
+category: Chip 
+---
+
+* toc
+{:toc}
+
+# 内存
+
+![](/images/img5/DRAM.jpg)
+
+---
+
+2008年，金融危机爆发，DRAM价格再次雪崩，从2.25美元狂跌至0.31美元。
+
+众厂商哀鸿遍野时，已经羽翼丰满的三星，又一次祭出了逆周期投资的看家法宝，将三星电子上一年的总利润的118%，全部用于扩大产能，故意扩大行业的亏损！
+
+2009年，行业排名第三的德国巨头奇梦达资金链断裂，欧洲仅存的内存厂商就此成为历史。
+
+2012年，在日本人苦苦挣扎数年后，尔必达支撑不住，宣布破产。
+
+---
+
+带宽翻倍原理很简单，DDR内部一次操作预测n倍数据，连续读写是完全能命中的，而随机读写的n-1部分是完全命中不了的。
+
+DRAM颗粒核心频率不变，仅仅提升I/O口频率，这也导致了从DDR1到DDR6内存随机访问延迟没什么变化。
+
+https://www.zhihu.com/question/649546709
+
+内存的起源是哪里？DDR1到DDR6的区别分别是什么？
+
+---
+
+"4F2"在DRAM Cell Structure中指的是一种存储单元的面积，其中"F"代表晶体管的特征尺寸（Feature size）。在DRAM技术发展中，4F2意味着存储单元的尺寸是特征尺寸的四倍平方。
+
+与传统的8F2和6F2单元相比，4F2 DRAM cell可以分别提高约60%和30%的产量。
+
+---
+
+https://mp.weixin.qq.com/s/HOhBNZfOf5xQIFLYQ5ntCw
+
+内存的故事
+
+https://mp.weixin.qq.com/s/qhR0St3CLWEYqV_kl_oXAw
+
+Rambus之战
+
+https://mp.weixin.qq.com/s/gh9cL0BPzCQ2JFOoXdtqyg
+
+内存的技术发展
+
+https://mp.weixin.qq.com/s/kHPTZlDtjqtr0Vi-5OWycQ
+
+金士顿的传说
+
+https://zhuanlan.zhihu.com/p/57780996
+
+内存延迟：因与果
+
+https://mp.weixin.qq.com/s/XcC18tulYdnwqlusg2QrxA
+
+嵌入式内存STT-MRAM趋势分析
+
+https://zhuanlan.zhihu.com/p/62234511
+
+DDR3 vs DDR4?为什么说内存是个很傻的设备？DDR5在哪里？
+
+https://zhuanlan.zhihu.com/p/40601422
+
+双通道、四通道内存对游戏重要吗？
+
+https://mp.weixin.qq.com/s/9skWM6yirEupLj2wdpgqkA
+
+带你深入理解内存对齐最底层原理
+
+https://mp.weixin.qq.com/s/Mb7iSXfrOtettVn-Sz8QUA
+
+主板上这家伙，要当CPU和内存的中间商！
+
+https://blog.csdn.net/shiwq1127/article/details/127975179
+
+memory interleaving（内存交织）
+
+# NAND
+
+## NOR Flash & NAND Flash
+
+Flash按照内部存储结构不同，分为两种：NOR Flash和NAND Flash。
+
+NOR Flash使用方便，易于连接，可以在芯片上直接运行代码（eXecute In Place），稳定性出色，传输速率高，在小容量时有很高的性价比，这使其很适合应于嵌入式系统中作为FLASH ROM。
+
+在通信方式上NOR Flash分为两种类型：CFI Flash和SPI Flash。
+
+NAND Flash强调更高的性能，更低的成本，更小的体积，更长的使用寿命。这使NAND Flash很擅于存储纯资料或数据等，在嵌入式系统中用来支持文件系统。NAND Flash存在坏块问题。
+
+桀冈富士雄（Fujio Masuoka）1980年发明了NOR Flash，1986年又发明了NAND Flash。
+
+三星最早提出Norless的概念，在它的CPU on die ROM中固话了NAND Flash的驱动，会把NAND flash的开始一小段拷贝到内存低端作为bootloader,这样昂贵的NOR Flash就被节省下来了，降低了手机主板成本和复杂度。渐渐NOR Flash在手机中慢慢消失了。
+
+参考：
+
+https://mp.weixin.qq.com/s/Coz81Zidz_LaSYkcErJsOQ
+
+NAND Flash与NOR Flash究竟有何不同
+
+https://zhuanlan.zhihu.com/p/26745577
+
+NOR和NAND Flash
+
+## SSD
+
+SLC(1Bits/cell) < MLC(2Bits/cell) < TLC(3Bits/cell) < QLC(4Bits/cell) < PLC(5Bits/cell) < HLC(7Bits/cell)
+
+https://zhuanlan.zhihu.com/p/53547723
+
+一篇文章告诉你SLC、MLC、TLC和QLC究竟有啥区别?
+
+https://zhuanlan.zhihu.com/p/92712620
+
+SLC、MLC、TLC、QLC究竟有什么不同
+
+---
+
+随着硬件设备存储介质的改变和性能不断的提升，存储设备处理IO的能力越来越快，传统的旋转设备HDD单个IO需要几毫秒到十几毫秒不等，而如今的高性能的NVMe SSD已经降低到了微秒级别。
+
+因此也有了一些专门针对SSD硬盘的存储软件框架。
+
+https://mp.weixin.qq.com/s/d8aoAFi_lpFoZZCZsPij_g
+
+SPDK概览
+
+---
+
+黑片（Black Die/Wafer）是指在生产过程中发现了某些缺陷的NAND闪存芯片，这些缺陷可能影响其性能、耐用性或可靠性。
+
+---
+
+https://zhuanlan.zhihu.com/p/34858149
+
+128G的固态硬盘为什么有的标120G，有的标100G？固态硬盘容量背后的秘密
+
+https://zhuanlan.zhihu.com/p/71267390
+
+固态硬盘和u盘的区别
+
+https://www.zhihu.com/question/401733153
+
+长江存储的Xtacking技术与英特尔的3D Xpoint技术、SK的4DNAND技术有什么异同点？
+
+# Latex+
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/508559139
+
+Latex简明速查手册
+
+https://www.zhihu.com/question/40763253
+
+如何在Word和PowerPoint中优雅地插入Latex公式？
+
+https://mp.weixin.qq.com/s/3RtKAT3WE8P2YIZRA2dZ3A
+
+LaTeX的历史：图灵奖得主1977年开启的计划，引发学术圈重大变革
+
+https://mp.weixin.qq.com/s/KMWhz5_EXWoxgmHUek6zBA
+
+不会用latex写公式？看看这个python转latex的库（python2latex）
+
+https://www.zhihu.com/question/65508676
+
+怎么在LaTeX中排版Python代码？
+
+https://mp.weixin.qq.com/s/LumDQL9VKTHWK3RkOhKFcg
+
+1行代码搞定Latex公式编写，这个4.6M的Python小插件，堪称论文必备神器（handcalcs）
+
+https://zhuanlan.zhihu.com/p/268332132
+
+知乎公式编辑器的高级“玩法”
+
+https://mp.weixin.qq.com/s/E4EECj0QQ90ElfPqOL80eg
+
+Python编辑公式竟可以如此简单（latexify_py）
+
+https://zhuanlan.zhihu.com/p/38178015
+
+使用VSCode编写LaTeX
+
+https://zhuanlan.zhihu.com/p/194831235
+
+Knuth-Plass换行算法
+
+https://mp.weixin.qq.com/s/kGVLsqstajyrZ_cfkFegrA
+
+Latex数学排版简洁指南

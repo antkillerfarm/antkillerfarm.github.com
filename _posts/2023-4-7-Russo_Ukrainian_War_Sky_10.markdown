@@ -9,6 +9,46 @@ category: Russo Ukrainian War Sky
 
 # 俄乌战争
 
+## 赫尔松战役（续）
+
+https://zhuanlan.zhihu.com/p/673645137
+
+赫尔松2023年反攻
+
+---
+
+https://www.zhihu.com/question/557445334
+
+如何看待赫尔松北岸俄罗斯防线大溃败，俄罗斯还守得住赫尔松吗？
+
+https://www.zhihu.com/question/565653108
+
+俄国防部宣布从赫尔松部分地区撤军至第聂伯河东岸，当地形势如何？
+
+https://zhuanlan.zhihu.com/p/582118157
+
+崩撤卖溜！——赫尔松大反攻V3.0正式版
+
+https://zhuanlan.zhihu.com/p/582824955
+
+鏖战261天：俄乌赫尔松之战回顾
+
+https://www.zhihu.com/answer/2760415200
+
+赫尔松之战 三国版
+
+https://zhuanlan.zhihu.com/p/606942602
+
+解放后的赫尔松的全景生活——俄军的炮击不曾停止
+
+https://news.ifeng.com/c/8Kph5NYlxxB
+
+果然！俄军退出赫尔松，苏罗维金一战封神？
+
+https://zhuanlan.zhihu.com/p/666716195
+
+善意又来了？浅谈俄军从第聂伯河左岸撤退的前景
+
 ## 顿涅斯克战役
 
 本节主要包括巴赫穆特、chasiv yar、Marinka、Soledar、Vuhledar、Avdiivka等地的攻防战。
@@ -244,13 +284,3 @@ https://zhuanlan.zhihu.com/p/683754811
 https://zhuanlan.zhihu.com/p/685054072
 
 乌克兰在阿夫迪夫卡的最后一刻及其“死亡之路”
-
----
-
-第115独立机械化旅从奥切列季涅地区撤离后，由于指挥不力，后来被调往利曼方向的“奇迹森林”。
-
-邻军对该旅的表现完全满意，而国民警卫队第1旅布雷维的战友则指出：“他们没有问题，能稳固地守住阵地。他们的火炮还可以执行邻军的火力任务，所有在阿夫迪夫卡的失误都留在那里了。”
-
-https://www.zhihu.com/question/653765546
-
-如何看待俄军突入顿涅茨克州奥切列季涅村？

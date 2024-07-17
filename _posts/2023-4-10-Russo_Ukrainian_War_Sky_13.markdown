@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争：苍天篇（十三）——克里米亚战役
+title:  俄乌战争：苍天篇（十三）——瓦格纳上洛, 克里米亚战役
 category: Russo Ukrainian War Sky
 ---
 
@@ -9,7 +9,29 @@ category: Russo Ukrainian War Sky
 
 # 俄乌战争
 
-## 瓦格纳上洛（续）
+## 瓦格纳上洛
+
+Шойгу! Герасимов! Где сука боеприпасы?
+
+绍伊古，格拉西莫夫，草泥马～我的炮弹在哪里？
+
+---
+
+俄罗斯72旅团士兵与旅团长矛盾重重，枪杀督战队长跑路。72旅团跑路的时候还遇到拦截的瓦格纳督战队。但72旅团也埋地雷阻挠瓦格纳雇佣军在巴赫穆特跑路。瓦格纳雇佣军一气之下把72旅团长抓起来打一顿。一出又一出，跌宕起伏。
+
+https://zhuanlan.zhihu.com/p/634695124
+
+巴赫穆特兵变 瓦格纳雇佣军抓捕俄罗斯72旅团长
+
+https://zhuanlan.zhihu.com/p/611595424
+
+权力斗争、炮弹短缺——瓦格纳-国防部的较量与俄罗斯的战争潜力
+
+https://zhuanlan.zhihu.com/p/608784859
+
+俄雇佣兵的子弹，没用来打乌军，瓦格纳把俄军大将，画在了靶子上
+
+---
 
 ![](/images/img5/Wagner.png)
 
@@ -208,23 +230,3 @@ http://www.xinhuanet.com/book/20211011/8ad6e1e3980c4a3e88e505443ee6ae72/c.html
 https://zhuanlan.zhihu.com/p/571491896
 
 真特种作战——切断刻赤海峡大桥
-
-https://www.zhihu.com/question/558277344
-
-克里米亚大桥的损坏程度中国工业能力多久能修好？对我国桥梁建设有哪些启示？
-
-https://news.ifeng.com/c/8JyVWA1fc1p
-
-车主现身！克里米亚大桥不是司机炸的？
-
-https://www.163.com/dy/article/HJ7LVN26055269G4.html
-
-乌克兰发行邮票庆祝克里米亚桥梁着火，网友：伤害不大侮辱性极强
-
----
-
-**第二次炸桥（2023.7.17）**
-
-https://www.zhihu.com/question/612492873
-
-乌克兰再度轰炸克里米亚大桥，破坏基础设施，两名俄罗斯游客丧生

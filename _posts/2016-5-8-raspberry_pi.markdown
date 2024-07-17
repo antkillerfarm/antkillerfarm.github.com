@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Raspberry Pi
+title:  Raspberry Pi（二）, 运维工具集
 category: technology 
 ---
 
@@ -8,124 +8,6 @@ category: technology
 {:toc}
 
 # Raspberry Pi
-
-## 概述
-
-树莓派（Raspberry Pi）在极客领域可谓大名鼎鼎，它的官网是：
-
-https://www.raspberrypi.org/
-
-从型号来看，它可以分为三大类型：
-
-1）B型。面向开发者和学生。
-
-2）A型和Zero型。面向批量制造类的客户。
-
-从技术角度来说，树莓派虽然优秀，然而有实力制作这样开发板的公司，没有一千，也有几百。但世界范围内，只有Raspberry Pi和Arduino这两款开发板取得了成功。
-
-Arduino是一款微控制器，主要用于电子工程领域，比如工业设备、传感器控制等。程序设计偏单片机风格，价格低廉，计算能力有限。它的官网：
-
-https://www.arduino.cc/
-
-而Raspberry Pi的定位是一个廉价的PC。其计算能力和目前的智能手机相当，但操作系统却和普通的桌面系统类似，因此，普通的PC应用可以很方便的移植过来。
-
-Raspberry Pi官方OS是Raspbian，这是一个基于Debian的Linux发行版。
-
-除此之外，还有几个Ubuntu定制版：
-
-http://ubuntu-mate.org/raspberry-pi/
-
-甚至微软也为此专门推出了Windows 10 IOT，其地址为：
-
-https://developer.microsoft.com/en-us/windows/iot
-
-这一点是很有象征意义的，这表明Raspberry Pi及其社区的影响力，已经到了MS这样的巨头也不能无视的地步了。
-
-## Raspberry Pi的成功之道
-
-嵌入式开发板这种东西，在国内已经有十多年的历史。我至今仍然记得，2007年的时候，公司的一套类智能手机的开发板，居然要3000元。所以宝贝的不得了，不相干的人根本没机会把玩。
-
-从知名度来说，友善之臂和周立功，算是国内开发板卖的比较好的了，但前者日子过得一般，后者的主要业务也转向工控领域。
-
-那么Raspberry Pi的成功之道是什么呢？我个人总结起来，有以下几点：
-
-- **把握住了市场对于廉价计算的需求**
-
-单片机讲究价格便宜，性能够用就好，而PC追求功能强大。因此，在单片机和PC之间，存在一个巨大的细分市场。这个市场既需要强大的计算能力，也需要便宜的价格。Raspberry Pi很好的满足了这一点。
-
-- **通用的计算平台**
-
-很多手机开发板的计算能力和Raspberry Pi类似，但为什么Raspberry Pi取得了成功呢？因为，手机OS主要面向普通用户，对于程序开发不太友好，而Raspberry Pi则更多强调它是一个功能完整的PC。
-
-它使用了普通的桌面Linux，集成了完整的开发环境，对于小程序，甚至可以直接在Raspberry Pi上编译执行，就和在PC上一样。
-
-一般的服务器应用，如Apache等，也可以像在PC上那样安装运行。这些都使得它的应用场景较手机平台有了极大的扩展。
-
-而国内的开发板，很多仍然停留在手机开发板的阶段，对于通用计算，理解支持都不到位。
-
-- **开放的态度**
-
-Pi的开放不仅体现在它使用了很多开源软件，更在于它的软硬件都是开源的
-
-这样，也就给了极客群体扩展使用它的机会，反过来又促进了Raspberry Pi的发展。Raspberry Pi和极客群体之间的互动，使得它突破了产品或平台的限制，而构成了一个有机的生态系统。
-
-反观国内的开发板生产商，或曰“解决方案提供商”，实际上陷入了一个怪圈。它们为了推销自己的硬件或者软件，而有意对某些部分闭源。但实际上，生态那么差，你就算免费我都懒得用。因为，嵌入式平台都是专有平台，需要程序员投入额外的精力，去理解一些离开该平台就用不到的知识，而这是需要成本的。
-
-Raspberry Pi成立之初的非营利性质，反而帮助它们赚到了这个细分市场中最多的钱，这对于国内众解决方案提供商，真是一个莫大的讽刺。
-
-- **完善的服务**
-
-很多国内厂商提供的所谓服务，无非也就是建个网站，让人下载一些资料而已。这样的等级实在太低了。
-
-Raspberry Pi建有专门的软件仓库，安装软件就和PC上的Ubuntu一样方便。
-
-这里，我们可以拿友善之臂的Nano PC作为一个对比。
-
-两者的设计风格和外设接口，基本一致。Nano PC T2的硬件略好于Raspberry Pi 3B，好得不多，价钱也基本相当。
-
-但是，资料、软件、生态，完全没得玩啊。你就算再便宜50块钱，我也会选择Raspberry Pi。新手绝对不推荐Nano PC！
-
-唯一值得欣慰的是，友善之臂也开始在Github上创建自己的代码仓库，并借助了Debian的软件仓库，这在一定程度上，挽回了一些劣势。
-
-## 卡片PC
-
-常见的卡片PC，除了Raspberry Pi之外，还有Intel的NUC。但是后者除了体积小之外，售价和普通PC相当，不适合当玩具。
-
-## Raspberry Pi的成功案例（不定期更新）
-
-http://dcaoyuan.github.io/papers/rpi_cluster/component.html
-
-这是一个Raspberry Pi的集群。
-
-## Raspberry Pi 3B初体验
-
-采购的Raspberry Pi 3B，今天（2016.5.10）终于到货了，比想象中要小巧一些。这里需要注意的是，35美元（或者类似价钱的RMB），除了板子之外，什么都没有。你必须自己准备电源和TF卡，好在这些东西都是标准件，并不难找。
-
-### 安装OS
-
-官方推荐使用NOOBS，但其实直接烧镜像更简单快捷。这里我使用的是Raspbian OS。
-
-安装步骤：
-
-1.列出设备。
-
-`lsblk`
-
-2.烧写。
-
-`unzip -p 2018-11-13-raspbian-stretch.zip | sudo dd of=/dev/sdX bs=4M status=progress conv=fsync`
-
-上述命令中的`progress`用于展示进度条。
-
-官方步骤：
-
-https://www.raspberrypi.org/documentation/installation/installing-images/linux.md
-
-参考：
-
-https://zhuanlan.zhihu.com/p/33030757
-
-为树莓派装上CentOS 7系统
 
 ### 登录Raspberry Pi
 
@@ -289,3 +171,187 @@ https://mp.weixin.qq.com/s/YeoBILcLy2LNzDAnxygKAg
 https://mp.weixin.qq.com/s/CLwGEVgkGk7Zm7Acp8NAmg
 
 树莓派上利用Tensorflow实现小车的自动驾驶
+
+https://mp.weixin.qq.com/s/1wxA7jnCgmXt5j9DXxH1UA
+
+超有趣！手把手教你使用树莓派实现实时人脸检测
+
+https://mp.weixin.qq.com/s/tW54lcv9aRz9xXC9V-DsWw
+
+Keras+树莓派，130行代码找到圣诞老人
+
+https://mp.weixin.qq.com/s/8zD3GqbQrQnZmuD59OoFuQ
+
+让树莓派记下你的笑颜
+
+https://mp.weixin.qq.com/s?__biz=MzU1OTMyNDcxMQ==&mid=2247484969&idx=1&sn=29d04fbb56a4464b08407eb87d26325e
+
+基于源代码为Raspberry Pi设备构建TensorFlow
+
+https://mp.weixin.qq.com/s/onN61A13xuJzNk9zE0hM-w
+
+你有特斯拉，我有树莓派，纯手工打造车载车牌识别检测系统，家用车秒变智能车
+
+https://mp.weixin.qq.com/s/rqIZSX-zRNQ3uyae3LlnZQ
+
+树莓派也能实时训练agent玩Atari
+
+https://mp.weixin.qq.com/s/pPTaxiCOTL_Y89TuKGHQmg
+
+微软放弃的游戏被他们复活了：Windows经典“三维弹球”现实版，CAD建模、Arduino编程、数控机床打造，硬核致敬童年
+
+https://mp.weixin.qq.com/s/mgdDjjIJX4y1-DXzazDhPA
+
+不会编程的外国小姐姐，3天、850块，徒手用树莓派DIY了个数码相机
+
+https://mp.weixin.qq.com/s/rM3SkUiQIxsGz9MNIg1skQ
+
+用树莓派DIY波士顿机器狗，帮你省下50万：教程开源，人人皆可上手
+
+https://zhuanlan.zhihu.com/p/301860804
+
+如何把树莓派400打造成小霸王游戏机，Retropie包含上万经典老游戏
+
+https://www.zhihu.com/question/339388119
+
+树莓派做网站靠谱不？
+
+https://mp.weixin.qq.com/s/MEiee-2zlamaqFXv2ih4WQ
+
+树莓派相机的自动曝光算法
+
+https://zhuanlan.zhihu.com/p/668807915
+
+Beepy——基于香橙派 Zero 2W 的 DIY 开源掌上电脑配置与优化分享
+
+# 运维工具集
+
+## Zabbix
+
+zabbix是一个基于WEB界面的提供分布式系统监视以及网络监视功能的企业级的开源解决方案。
+
+http://www.zabbix.com/
+
+参考：
+
+https://mp.weixin.qq.com/s/donTVjZFrkUFleswiJr-Bg
+
+监控系统选型解析
+
+## Cacti
+
+Cacti是一套基于PHP,MySQL,SNMP及RRDTool开发的网络流量监测图形分析工具。
+
+http://cacti.net/
+
+## Nagios
+
+Nagios是一款开源的免费网络监视工具，能有效监控Windows、Linux和Unix的主机状态，交换机路由器等网络设备，打印机等。
+
+https://www.nagios.org/
+
+## Ganglia
+
+Ganglia是伯克利开发的一个集群监控软件。可以监视和显示集群中的节点的各种状态信息，比如如：cpu 、mem、硬盘利用率， I/O负载、网络流量情况等，同时可以将历史数据以曲线方式通过php页面呈现。
+
+官网：
+
+http://ganglia.sourceforge.net/
+
+## Jenkins
+
+Continuous Integration（CI）：持续集成
+
+Continuous Delivery（CD）：持续交付
+
+Continuous Deployment（CD）：持续部署
+
+Jenkins是一个开源软件项目，旨在提供一个开放易用的软件平台，使软件的持续集成变成可能。
+
+https://jenkins.io/index.html
+
+自动化部署的其中一种方案：
+
+gitlab管理代码版本，触发jenkins自动构建+测试，然后走迭代或者发布，全部环境都在docker内。
+
+和Jenkins同类型的工具还有Travis、Codeship、Strider等。
+
+参考：
+
+https://mp.weixin.qq.com/s/jcpynCa6CToITUGD9hRylw
+
+推荐10款最佳Jenkins插件
+
+www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html
+
+持续集成服务Travis CI教程
+
+https://mp.weixin.qq.com/s/wmpbdj2GMb10xRtjRUpesw
+
+携程旅行App iOS工程编译优化实践
+
+https://mp.weixin.qq.com/s/Tvmcwg8g85pompnyI3rPtg
+
+用GitLab做CI/CD是什么感觉，太强了
+
+https://mp.weixin.qq.com/s/2Yt1YS3QcVb_pxYqaKrxKA
+
+蚂蚁构建服务演进史
+
+## Walle
+
+Walle一个web部署系统工具，配置简单、功能完善、界面流畅、开箱即用！支持git、svn版本管理，支持各种web代码发布，PHP，Python，JAVA等代码的发布、回滚，可以通过web来一键完成。
+
+https://walle-web.io/
+
+## JMeter
+
+Apache JMeter是Apache组织开发的基于Java的压力测试工具。用于对软件做压力测试，它最初被设计用于Web应用测试，但后来扩展到其他测试领域。 它可以用于测试静态和动态资源，例如静态文件、Java 小服务程序、CGI 脚本、Java 对象、数据库、FTP 服务器， 等等。JMeter 可以用于对服务器、网络或对象模拟巨大的负载，来自不同压力类别下测试它们的强度和分析整体性能。
+
+http://jmeter.apache.org/
+
+## H5ai
+
+H5ai是一款功能强大php文件目录列表程序，由德国开发者Lars Jung主导开发，它提供多种文件目录列表呈现方式。
+
+官网：
+
+https://larsjung.de/h5ai/
+
+参考：
+
+https://www.tok9.com/archives/374/
+
+H5ai完整安装及使用教程
+
+## Sikuli
+
+Sikuli是一种新颖的图形脚本语言，或者说是一种另类的自动化测试技术。它采用图像识别的方式进行自动检测。
+
+参考：
+
+https://mp.weixin.qq.com/s/MYA6l9V4BYIZO8Jgtds6GA
+
+图像识别在测试中的应用
+
+http://www.cnblogs.com/fnng/archive/2012/12/15/2819367.html
+
+图形脚本语言sikuli
+
+## Ansible
+
+Ansible is Simple IT Automation——简单的自动化IT工具。这个工具的目标有这么几项：让我们自动化部署APP；自动化管理配置项；自动化的持续交付；自动化的（AWS）云服务管理。简单的说就是：**批量的在远程服务器上执行命令。**
+
+官网：
+
+https://www.ansible.com/
+
+参考：
+
+http://www.ansible.com.cn/
+
+Ansible中文权威指南
+
+https://mp.weixin.qq.com/s/ojpAOOnK5fEW12gG1zocBA
+
+干货：一文详解Ansible的自动化运维

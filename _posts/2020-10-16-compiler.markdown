@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  lex & yacc, 编译原理
+title:  lex & yacc, 编译原理（一）
 category: toolchain 
 ---
 
@@ -136,6 +136,20 @@ API：Application Programming Interface
 
 SSA：static single assignment form
 
+```cpp
+// Non SSA form
+a = 1;
+a = 2;
+b = a + 1;
+
+// SSA form
+a1 = 1;
+a2 = 2;
+b1 = a2 + 1;
+```
+
+SSA只要求每个变量的赋值程序点只能有一个，这个程序点可以出现在循环内部（这意味着执行过程中这个程序点会被多次执行）。
+
 CSE：Common subexpression elimination
 
 DCE：Dead code elimination
@@ -148,9 +162,7 @@ LHS：Left-Hand-Side
 
 RHS：Right-Hand-Side
 
-https://blog.csdn.net/liumf2005/article/details/8690377
-
-说说静态单赋值（SSA,Static Single-Assignment）
+SCC：strongly connected component，即强连接分量。一般通过SCC pass获得DAG图。
 
 ---
 
@@ -223,6 +235,14 @@ https://xz.aliyun.com/t/7257
 http://llvm.org/docs/WritingAnLLVMPass.html
 
 Writing an LLVM Pass
+
+https://www.cnblogs.com/BobHuang/p/17640378.html
+
+从零开始教你写一个LLVM Pass
+
+https://zhuanlan.zhihu.com/p/290946850
+
+LLVM中的pass及其管理机制
 
 ## Python Language Services
 
@@ -313,24 +333,6 @@ http://pluto-compiler.sourceforge.net/
 https://www.zhihu.com/question/329294933
 
 如何评价PLUTO编译器？
-
-## ANTLR
-
-ANTLR—Another Tool for Language Recognition，其前身是PCCTS，它为包括Java，C++，C#,python在内的语言提供了一个通过语法描述来自动构造自定义语言的识别器（recognizer），编译器（parser）和解释器（translator）的框架。
-
-官网：
-
-http://www.antlr.org/
-
-参考：
-
-http://yuzhouwan.com/posts/55501/
-
-Antlr
-
-https://www.ibm.com/developerworks/cn/java/j-lo-antlr/index.html
-
-使用Antlr开发领域语言
 
 ## MPS
 
