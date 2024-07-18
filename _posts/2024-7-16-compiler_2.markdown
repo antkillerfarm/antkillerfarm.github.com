@@ -207,6 +207,14 @@ Torch-MLIR技术详解
 
 ---
 
+MLIR是树形结构，每个节点是Operation，Op可以组成Block，Block组成Region，而Region又可以嵌套在Op内部。
+
+Operation指单个运算，运算内可以嵌套Region。
+
+Block指基本块，基本块包含一个或多个Operation。
+
+Region指区域，类似于循环体或函数体，包含若干Block。Region类似于C语言的作用域，Region内可定义局部变量。
+
 ```
 #map = affine_map<(m, n, k) -> (m, k)>
 #map1 = affine_map<(m, n, k) -> (k, n)>
@@ -226,6 +234,8 @@ module {
 ```
 
 上例是一个matmul算子的MLIR，`linalg.generic`表示了该指令属于linalg dialect。
+
+Basic block指的是没有分支的代码序列，它使用`^`作为开头。
 
 ---
 

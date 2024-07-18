@@ -63,9 +63,7 @@ TCP远程播放的优点是数据传输较快，但缺点是无法控制接收�
 
 参考文档：
 
-https://gstreamer.freedesktop.org/documentation/rtp.html
-
-https://cgit.freedesktop.org/gstreamer/gst-plugins-good/tree/gst/rtp/README
+https://gstreamer.freedesktop.org/documentation/additional/rtp.html
 
 1.首先打开播放端软件。（Server端）
 
@@ -116,6 +114,8 @@ ptpd：http://ptpd.sourceforge.net/
 参考：
 
 http://www.tinylab.org/gstreamer-sdk-a-cross-platform-multimedia-framework/
+
+GStreamer多媒体开发
 
 这篇文档提到queue可通过设置缓存大小，来达到延迟播放的效果，但实际上，并没有这个效果，原因不详。
 
@@ -221,8 +221,6 @@ GstPlayer也提供了GstPlayerMediaInfo、GstPlayerStreamInfo、GstPlayerAudioIn
 
 http://blog.csdn.net/sakulafly/article/details/22216775
 
-http://docs.gstreamer.com/display/GstSDK/Basic+tutorial+9%3A+Media+information+gathering
-
 ### 媒体信息的设置
 
 Sender:
@@ -265,11 +263,11 @@ LDFLAGS = `pkg-config --libs gstreamer-0.10`
 
 官方开发指南参见：
 
-http://gstreamer.freedesktop.org/data/doc/gstreamer/head/manual/html/index.html
+https://gstreamer.freedesktop.org/documentation/application-development
 
 这是应用开发指南。
 
-http://gstreamer.freedesktop.org/data/doc/gstreamer/head/pwg/html/index.html
+https://gstreamer.freedesktop.org/documentation/plugin-development
 
 这是插件开发指南。
 
@@ -277,10 +275,8 @@ http://gstreamer.freedesktop.org/data/doc/gstreamer/head/pwg/html/index.html
 
 官方入门代码教程参见：
 
-http://docs.gstreamer.com/display/GstSDK/Tutorials
+https://gstreamer.freedesktop.org/documentation/tutorials/index.html
 
 其他参考示例：
 
 https://github.com/rubenrua/GstreamerCodeSnippets
-
-

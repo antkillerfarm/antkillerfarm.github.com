@@ -257,7 +257,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/python-g
 
 1）self.uri存放用于播放的媒体文件的URI，注意这里是URI，而不是普通的路径，如果要指定本地文件的话，需要使用`file://`。
 
-2)出错的时候，先用`gst-inspect`检查一下，相应的插件是否安装好了。
+2）出错的时候，先用`gst-inspect`检查一下，相应的插件是否安装好了。
 
 ### Step 1
 

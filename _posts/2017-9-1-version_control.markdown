@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  版本管理工具的前世今生, OA办公软件, CMake, Ninja
+title:  版本管理工具的前世今生, OA办公软件, CMake, Ninja, Git（一）
 category: toolchain 
 ---
 
@@ -190,3 +190,143 @@ xmake：一个Lua编写的构建工具。
 https://blog.codingnow.com/2021/05/make_to_ninja.html
 
 构建工具从Make到Ninja
+
+# Git
+
+## 教程
+
+https://learngitbranching.js.org
+
+这个网站提供了一个可视化的交互式git教程。非常不错。
+
+## git实现原理
+
+![](/images/img3/git.jpg)
+
+git采用如上图所示的树状结构，因此分支的速度很快。
+
+svn本身不支持分支功能，所谓分支无非是创建一个新的副本文件夹，而这是一个代价很高的操作，而git就简单多了，增加一个指向新分支的指针即可。
+
+https://zhuanlan.zhihu.com/p/142289703
+
+一文讲透Git底层数据结构和原理
+
+## 如何git下载超大版本库
+
+自从两次git完整的linux kernel，都因为网络问题，而中途失败之后，不甘心的我，继续在网上寻找答案。
+
+目前已知的答案是git不支持断点续传，也不支持object原子下载。网上所谓的git fetch能断点续传一说，纯属误会。那只不过是重新下载的命令，即使成功，那也是由于第二次的网络环境变好导致的。
+
+其他的办法包括git bundle，但是这个需要服务器支持才行，而多数站点都没有这个功能。Android代码的网站就采用了这种方法。
+
+其实对付超大版本库，git已经提供了相应的办法：
+
+`git pull --depth=N`
+
+N表示深度，具体的含义我也不太清楚。基本上，N=1就是只下载当前的版本，N>1的话，还会下载以前的历史版本。这样我们可以通过不断增加N的方式，将完整的版本库下载到本地。
+
+N增加到多大，才能把整个版本库下载完呢？
+
+使用命令行的话，如果增加N，没有继续下载，就说明版本库已经完全下载到本地了。
+
+如果使用TortoiseGit的话，下载完全之后，再git pull的话，就没有depth选项了。
+
+下载失败，会在本地留下一堆无用的临时文件，可用`git prune`清除之。
+
+日常使用中，git版本库更新次数越多，碎小文件越多。这时可用`git gc`将之打包成几个大文件。
+
+参考文章：
+
+http://blogs.atlassian.com/2014/05/handle-big-repositories-git/
+
+How to handle big repositories with Git
+
+## gitee
+
+gitee是github的国内山寨产品。
+
+官网：
+
+https://gitee.com
+
+近来，github的国内访问速度很慢，可以使用gitee的导入功能，将代码下载到国内，然后再下载之。
+
+## Git Extensions
+
+除了Tortoisegit之外，Git Extensions也是一个常用的GUI shell。
+
+官网：
+
+https://gitextensions.github.io/
+
+## Git Server
+
+### Bonobo Git Server
+
+一个基于IIS的Git服务器。操作简单，但是没有提供文件夹一级的权限管理。
+
+官网：
+
+https://bonobogitserver.com/
+
+### Gerrit
+
+Gerrit，一种免费、开放源代码的代码审查软件，它使用Git作为底层版本控制系统。
+
+官网：
+
+https://www.gerritcodereview.com/
+
+### GitLab self-managed
+
+GitLab self-managed是GitLab出品的本地Git Server。
+
+---
+
+研发人员太多的时候，还需要分布式的代码托管平台。基于GitLab生态开源组件二次开发，是其中的一种选择。
+
+https://mp.weixin.qq.com/s/aY-QJN2Fkp86ATdvqVvpZQ
+
+Code：美团代码托管平台的演进与实践
+
+## Monorepo
+
+上面提到的多项目管理，一般称为MultiRepo，即每个项目对应一个单独的仓库。与之相对的则是Monorepo，即把多个项目放在一个仓库里面。
+
+![](/images/img4/Monorepo.png)
+
+参考：
+
+https://juejin.cn/post/6944877410827370504
+
+现代前端工程为什么越来越离不开Monorepo?
+
+https://zhuanlan.zhihu.com/p/77577415
+
+Monorepo是什么，为什么大家都在用？
+
+## Git多项目管理
+
+项目越来越大，一些通用的模块我们希望将他抽离出来作为单独的项目，以便其他项目也可以使用，或者使用一些第三方库，可能我们并不想将代码直接拷贝进我们的项目里面，而仅仅只是单纯的引用。
+
+基于Git有多种方式来解决这个问题：
+
+- Git Submodule。
+
+- Git Subtree。这两个已经集成到git中。
+
+- GitSlave。一个git插件，需要额外安装。
+
+- Google Repo。基于git的python脚本。Android项目的官方工具。
+
+`git submodule update --init --remote --rebase`
+
+单独更新子module AAA：
+
+`git submodule update AAA`
+
+参考：
+
+https://www.jianshu.com/p/284ded3d191b
+
+Git多项目管理

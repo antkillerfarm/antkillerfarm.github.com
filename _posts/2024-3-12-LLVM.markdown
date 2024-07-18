@@ -68,8 +68,15 @@ https://zhuanlan.zhihu.com/p/357803433
 ## 源代码编译
 
 ```bash
-cmake -S llvm -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
-ninja -C build check-llvm
+mkdir build && cd build
+cmake -G Ninja ../llvm \
+  -DCMAKE_INSTALL_PREFIX=/mlir-tutorial/install \
+  -DLLVM_ENABLE_PROJECTS=mlir \
+  -DLLVM_BUILD_EXAMPLES=ON \
+  -DLLVM_TARGETS_TO_BUILD="Native;NVPTX;AMDGPU" \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DLLVM_ENABLE_ASSERTIONS=ON
+ninja -j 0
 ```
 
 https://inside-compiler.github.io/2023/12/14/Build-LLVM/
@@ -127,6 +134,8 @@ ADT-概述
 ## tablegen
 
 LLVM tablegen，文件名后缀为`.td`。
+
+``(`reset` $reset^)?``，其中`(...)?`表示分组，`^`表示判断依据。只有对应的`Optional`或`UnitAttr`存在的时候，才会输出这个分组。
 
 https://zhuanlan.zhihu.com/p/447318642
 
