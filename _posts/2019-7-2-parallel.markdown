@@ -19,8 +19,6 @@ category: DL acceleration
 
 切分其他维度：模型并行
 
-Sequence Parallel：Transformer模型由于是处理一个序列，那么按照Sequence维度切分，也就是一件自然的事情了。
-
 ## Distributed Data Parallel
 
 https://mp.weixin.qq.com/s/52Wz4pUI8egKugMFuknWKw

@@ -216,6 +216,10 @@ squash_64bit_types
 
 ---
 
+`xm.mark_step()`用于分割之前和之后的torch语句所组建的计算图。
+
+---
+
 options的传递链：
 
 ```cpp

@@ -63,6 +63,10 @@ http://www.r-user.com/
 
 一个中文的R语言网站
 
+https://rdrr.io/
+
+一个R库的搜索引擎+online runner
+
 http://blog.fens.me/series-r/
 
 R的极客理想系列文章。作者张丹，R语言资深用户，系统架构师。

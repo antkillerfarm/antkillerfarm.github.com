@@ -9,6 +9,28 @@ category: DL acceleration
 
 # 快速Transformer（续）
 
+## EffectiveTransformer/ByteTransformer
+
+EffectiveTransformer/ByteTransformer都是ByteDance的作品，基于FasterTransformer的进一步优化。
+
+![](/images/img5/EffectiveTransformer.png)
+
+![](/images/img5/EffectiveTransformer_2.png)
+
+Transformer模型运算中，padding部分带来了的无效计算。比如Bert一个输入Batch的固定句长是64，但平均句长只有40，那么EffectiveTransformer在FasterTransformer的基础上还可以再多获得约1.5倍的加速。
+
+具体的方法就是：对mask矩阵求前缀和，然后根据前缀和矩阵搬运内存，实现删除和恢复padding。
+
+ByteTransformer在此基础上对self attention部分的padding做了优化。
+
+https://zhuanlan.zhihu.com/p/139255930
+
+使用EffectiveTransformer加速BERT
+
+https://www.thepaper.cn/newsDetail_forward_23343189
+
+大幅优化推理过程，字节高性能Transformer推理库获IPDPS 2023最佳论文奖
+
 ## FlashAttention
 
 代码：
@@ -240,54 +262,3 @@ https://blog.csdn.net/v_JULY_v/article/details/134183799
 https://blog.csdn.net/v_JULY_v/article/details/131552592
 
 基于LangChain+LLM的本地知识库问答：从企业单文档问答到批量文档问答
-
-# Alpa
-
-Alpa是一个自动探索分布式策略的工具。
-
-论文：
-
-《Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning》
-
-代码：
-
-https://github.com/openxla/xla/tree/main/xla/hlo/experimental/auto_sharding
-
-文档：
-
-https://alpa.ai/index.html
-
----
-
-在介绍Alpa之前，先介绍一下Google的optimization库：
-
-https://github.com/google/or-tools
-
-文档：
-
-https://developers.google.com/optimization
-
-ILP可以分为下列几种类型：
-
-（1）纯整数线性规划(Pure integer linear programming)：指全部决策变量都必须取整数值的整数线性规划。有时，也称为全整数规划。
-
-（2）混合整数线性规划(Mimed integer linear programming)：指决策变量中有一部分必须取整数值，另一部分可以不取整数值的整数线性规划。
-
-（3）0-1型整数线性规划(Zero-one integer linear programming)：指决策变量只能了取值0或1的整数线性规划。
-
----
-
-为了评估不同Sharding策略的好坏，我们需要对Sharding策略建立cost model。
-
-这里的cost主要包括：
-
-- Communication cost
-- Computation cost
-- Memory cost
-- Resharding cost
-
-其中，Memory cost为该ILP问题的约束条件，其他几个为决策变量的影响因子。
-
-Resharding cost是不同sharding之间切换产生的开销：
-
-![](/images/img5/resharding.svg)

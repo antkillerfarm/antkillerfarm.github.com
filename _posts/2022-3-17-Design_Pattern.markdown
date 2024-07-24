@@ -9,6 +9,10 @@ category: resource
 
 # 设计模式
 
+Better Code, Better Doc, Empowering teams, Modern Code, Better Architecture
+
+---
+
 面向对象的设计模式有七大基本原则：
 
 **开闭原则（Open Closed Principle，OCP）**：由勃兰特·梅耶（Bertrand Meyer）提出，他在1988年的著作《面向对象软件构造》（Object Oriented Software Construction）中提出：软件实体应当对扩展开放，对修改关闭（Software entities should be open for extension，but closed for modification）。

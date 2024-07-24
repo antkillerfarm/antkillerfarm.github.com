@@ -39,6 +39,18 @@ https://www.zhihu.com/question/649546709
 
 ---
 
+DIMM：Dual In-Line Memory Module
+
+RDIMM：Register DIMM
+
+LRDIMM：Load Reduced DIMM
+
+https://zhuanlan.zhihu.com/p/91835185
+
+什么是RDIMM和LRDIMM？
+
+---
+
 https://mp.weixin.qq.com/s/HOhBNZfOf5xQIFLYQ5ntCw
 
 内存的故事

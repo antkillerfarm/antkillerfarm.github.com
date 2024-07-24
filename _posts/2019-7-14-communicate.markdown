@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  通信协议
+title:  通信协议, WebSocket, CoAP & MQTT
 category: resource 
 ---
 
@@ -340,3 +340,72 @@ http://ruanyifeng.com/blog/2016/04/cors.html
 https://blog.csdn.net/cuixiaogang110/article/details/81948173
 
 前后端分离与跨域的解决方案（CORS的原理）
+
+# WebSocket
+
+在浏览器中通过http仅能实现单向的通信。AJAX通过轮询方式，达到全双工通信，但效率不高。
+
+面对这种状况，HTML5定义了WebSocket协议（基于TCP），能更好的节省服务器资源和带宽并达到实时通讯。
+
+浏览器请求
+
+```text
+GET /webfin/websocket/ HTTP/1.1
+　　Host: localhost
+　　Upgrade: websocket
+　Connection: Upgrade
+　　Sec-WebSocket-Key: xqBt3ImNzJbYqRINxEFlkg==
+　　Origin: http://www.sohu.com
+　　Sec-WebSocket-Version: 13
+```
+
+服务器回应
+
+```text
+HTTP/1.1 101 Switching Protocols
+　　Upgrade: websocket
+　　Connection: Upgrade
+　　Sec-WebSocket-Accept: K7DJLdLooIwIG/MOpvWFB3y3FE8=
+```
+
+---
+
+websocket是老东西了，自从HTTP/2推出了Server Sent Events这种新功能。。。
+
+https://www.zhihu.com/question/417163973
+
+为什么当今Web应用不都采用WebSocket形式进行数据交互？
+
+# CoAP & MQTT
+
+CoAP（Constrained Application Protocol）协议，是IETF针对物联网提出的应用层协议。
+
+参考：
+
+http://blog.csdn.net/xukai871105/article/details/17734163
+
+CoAP协议学习——CoAP基础
+
+MQTT（MQ Telemetry Transport）是一个轻量级的machine-to-machine通信协议。适合于低带宽、不可靠连接、CPU内存资源紧张的嵌入式设备，它有可能成为物联网的重要协议。
+
+官网：
+
+http://mqtt.org/
+
+参考：
+
+https://mp.weixin.qq.com/s/i1WziUgG9TcLvvX1-2Nizw
+
+初识MQTT协议
+
+https://mp.weixin.qq.com/s/ZaBkqlmWboOT7SEpQOln_Q
+
+MQTT协议之连接
+
+https://mp.weixin.qq.com/s/1sq630gHR_z1NeSRILMMpw
+
+MQTT协议之发布订阅
+
+https://www.zhihu.com/question/21816631
+
+MQTT和Websocket的区别是什么？

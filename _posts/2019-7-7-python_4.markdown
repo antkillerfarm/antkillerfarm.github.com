@@ -273,6 +273,28 @@ https://github.com/pybind/cmake_example
 
 ---
 
+示例：
+
+```cpp
+class CivilNet {
+    public:
+        CivilNet(const std::string &name) : name_(name) { }
+        void setName(const std::string &name) { name_ = name; }
+        const std::string &getName() const { return name_; }
+    private:
+        std::string name_;
+};
+
+PYBIND11_MODULE(my_bind_module, m) {
+    pybind11::class_<CivilNet>(m, "CivilNet")
+        .def(pybind11::init<const std::string &>())
+        .def("setName", &CivilNet::setName)
+        .def("getName", &CivilNet::getName);
+}
+```
+
+---
+
 参考：
 
 https://github.com/tensorflow/community/blob/master/rfcs/20190208-pybind11.md

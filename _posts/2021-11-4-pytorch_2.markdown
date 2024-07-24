@@ -115,6 +115,10 @@ https://zhuanlan.zhihu.com/p/386876377
 
 Pytorch中dispatch机制及其实现
 
+https://blog.csdn.net/gzq0723/article/details/115410050
+
+Pytorch底层算子扩展最详细的总结
+
 ## 分布式
 
 https://pytorch.org/tutorials/intermediate/dist_tuto.html

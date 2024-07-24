@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Machine Learning之Java篇, 稀疏矩阵的存储, Optimizer软件, Zookeeper, 运算加速库
+title:  Machine Learning之Java篇, 稀疏矩阵的存储, Optimizer软件, 运算加速库
 category: AI 
 ---
 
@@ -223,48 +223,6 @@ https://mp.weixin.qq.com/s/wJAt-RqmsoyECLGgdlH6RA
 https://zhuanlan.zhihu.com/p/480729614
 
 优化模型建模语言Pyomo入门教程
-
-# Zookeeper
-
-http://zookeeper.apache.org/
-
-`bin/zkServer.sh status`
-
-http://www.cnblogs.com/lpshou/archive/2013/06/14/3136904.html
-
-zookeeper原理
-
-https://mp.weixin.qq.com/s/WPyJC4nyLQGWk-OQylUHHw
-
-Zookeeper简单介绍
-
-http://www.ibm.com/developerworks/cn/opensource/os-cn-zookeeper/index.html
-
-分布式服务框架Zookeeper--管理分布式环境中的数据
-
-https://mp.weixin.qq.com/s/uMj3JEhgyYw4CaIhP1-GTQ
-
-阿里巴巴为什么不用ZooKeeper做服务发现？
-
-https://mp.weixin.qq.com/s/KFzJAxL_xvrrjhubd7zH-Q
-
-Facebook为何放弃ZooKeeper转用自研配置管理系统？
-
-https://mp.weixin.qq.com/s/DigeE4YxuT55cSeyb1q1tQ
-
-ZooKeeper源码和实践揭秘
-
-https://mp.weixin.qq.com/s/Tb670Jdt4s7CKzGZZQRL_A
-
-用大白话给你解释Zookeeper的选举机制
-
-https://mp.weixin.qq.com/s/BejPSfvEe98nSch81WKgAg
-
-Zookeeper九个问题
-
-https://mp.weixin.qq.com/s/03A4LnDqNhNgQ5bSRIgR_Q
-
-一举拿下高可用与分布式协调系统设计
 
 # 运算加速库
 

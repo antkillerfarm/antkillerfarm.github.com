@@ -151,7 +151,23 @@ Cache分为硬件Cache和软件Cache两种，这里只讨论前者。后者参�
 
 类似这样的还有PCB的线宽。微米级的线宽技术上完全可行，毕竟芯片都已经是纳米级的线宽了，主要还是价格的问题。
 
+---
+
+在一个多处理器系统中，Cache们和内存池可能对同一份数据有多份副本，如何保证这些副本的一致性（Coherency）是个必须严肃对待的问题。
+
 多核CPU多级缓存的一致性，一般由相关的一致性总线协议保证。这些协议包括：MSI、MESI和MOESI。
+
+https://mp.weixin.qq.com/s/570O2BloWjy3q0_m_mfiZg
+
+CPU缓存一致性协议
+
+https://zhuanlan.zhihu.com/p/63494668
+
+显存为什么不能当内存使？内存、Cache和Cache一致性
+
+https://blog.csdn.net/ZoeyyeoZ/article/details/51804647
+
+MESI&MOESI协议
 
 ---
 
@@ -187,17 +203,9 @@ https://mp.weixin.qq.com/s/QidAD9OuVdEXFqxRMPx5lQ
 
 响应速度不给力？解锁正确缓存姿势
 
-https://mp.weixin.qq.com/s/570O2BloWjy3q0_m_mfiZg
-
-CPU缓存一致性协议
-
 https://mp.weixin.qq.com/s/ziJ8OFiLA1it3sQvycN7Mg
 
 翻越缓存的三座大山
-
-https://zhuanlan.zhihu.com/p/63494668
-
-显存为什么不能当内存使？内存、Cache和Cache一致性
 
 https://mp.weixin.qq.com/s/AekR-mv9EOD-4V5SKqI9YQ
 
@@ -206,10 +214,6 @@ https://mp.weixin.qq.com/s/AekR-mv9EOD-4V5SKqI9YQ
 https://mp.weixin.qq.com/s/FY8sEX4acEUpCu_6ntArYw
 
 CPU缓存L1/L2/L3工作原理
-
-https://blog.csdn.net/ZoeyyeoZ/article/details/51804647
-
-MESI&MOESI协议
 
 https://mp.weixin.qq.com/s/G4SpTC8DZ-l5kWBRGwSwGQ
 

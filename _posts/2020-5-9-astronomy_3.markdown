@@ -269,6 +269,10 @@ https://mp.weixin.qq.com/s/MCofTDnwfbz7R9zuqEnX7w
 
 梅耶·马斯克：英雄的母亲，也成为他们的英雄
 
+https://mp.weixin.qq.com/s/f9Eg3KkAjkvPdmH9_IlX8g
+
+宁可亏大钱，马斯克都要灭了LGBT思想
+
 ---
 
 2020.5

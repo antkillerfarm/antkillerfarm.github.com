@@ -105,6 +105,14 @@ https://mp.weixin.qq.com/s/cd08Lk4LcxV-qAVLq7-Kjg
 
 整数规划经典方法--割平面法（Cutting Plane Method）
 
+https://mp.weixin.qq.com/s/4sfWR-BTtIYipUZQD5kyyg
+
+整数规划求解方法大全
+
+https://mp.weixin.qq.com/s/6Oyp5Tt1t8xKapw2NqCdFQ
+
+整数规划分解方法：Benders Decomposition简介
+
 https://mp.weixin.qq.com/s/xhfRPedQ6pLQYrVsK2rgLA
 
 浅谈排队论

@@ -302,3 +302,13 @@ https://zhuanlan.zhihu.com/p/703669087
 FastSeq，它能将qkv projection的计算和all-gather通信重叠，只需多占用一点内存就可更进一步提升训练效率。
 
 《FastSeq: Make Sequence Generation Faster》
+
+## context parallel
+
+SP只针对Layernorm和Dropout输出的activation在sequence维度上进行切分，CP则是对所有的input输入和所有的输出activation在sequence维度上进行切分，可以看成是增强版的SP。
+
+![](/images/img5/CP.png)
+
+https://blog.csdn.net/qinduohao333/article/details/139250852
+
+Context Parallel

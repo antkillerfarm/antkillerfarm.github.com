@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  天池大赛
+title:  天池大赛, Petuum
 category: AI 
 ---
 
@@ -232,3 +232,17 @@ IJCAI获奖团队答辩干货独家放送
 https://mp.weixin.qq.com/s/3cER2nr7oiF0IrqDem3bkQ
 
 时间序列异常检测—节假日效应的应对之道
+
+# Petuum
+
+Petuum是一个机器学习专用分布式计算框架，是CMU的Eric Xing教授带头的开源项目。
+
+官网：
+
+http://www.petuum.com
+
+参考：
+
+http://liweithu.com/petuum
+
+面向机器学习的分布式计算框架:Petuum

@@ -123,6 +123,38 @@ https://mp.weixin.qq.com/s/naDk0mmxd08dNl9LawLUnw
 
 不使用先验知识与复杂训练策略，从头训练二值神经网络！
 
+## Optimizer Quantization
+
+![](/images/img5/DTQ.png)
+
+某些特别大或特别小的异常值，对量化会产生较大的精度影响。动态树量化（dynamic tree quantization）就是一种以较低的量化精度损失处理这种情况的方法。
+
+- 首位是符号位
+
+- 符号位后连续的0的数量表示指数大小
+
+- 再之后的第一个值为1的是指示位
+
+- 线性量化区域
+
+指示位是可以动态移动的，通过移动指示位可以灵活选择更大的范围，还是更高的精度。
+
+论文：
+
+8-BIT OPTIMIZERS VIA BLOCK-WISE QUANTIZATION
+
+论文作者为此开发了bitsandbytes库：
+
+https://github.com/bitsandbytes-foundation/bitsandbytes
+
+因为经常使用`import bitsandbytes as bnb`导入，所以该库又被称为bnb。
+
+参考：
+
+https://www.cnblogs.com/chentiao/p/17388568.html
+
+bitsandbytes--Facebook 推出 8 比特优化器大大减少显存
+
 ## 参考
 
 https://mp.weixin.qq.com/s/Xvlxs-Os2meduHrEQFc7vg
@@ -256,3 +288,41 @@ https://mp.weixin.qq.com/s/TXWdx3bbBNfaG3yp2G56ew
 https://www.zhihu.com/question/627484732
 
 目前针对大模型进行量化的方法有哪些？
+
+# 并行 & 框架 & 优化=
+
+https://mp.weixin.qq.com/s/rhtrN2qDspGkpJYDAVSX7w
+
+UC Berkeley展示全新并行处理方法
+
+https://mp.weixin.qq.com/s/ASqpPSIgW_bcFPBfRYz7Xg
+
+哈佛大学提出在云、边缘与终端设备上的分布式深度神经网络DDNN
+
+http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
+
+《Large Scale Distributed Deep Networks》中译文
+
+https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
+
+Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
+
+https://zhuanlan.zhihu.com/p/529388795
+
+训练千亿参数大模型，离不开四种GPU并行策略
+
+https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
+
+百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
+
+https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
+
+分布式深度学习原理、算法详细介绍
+
+https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
+
+苹果发布Turi Create机器学习框架，5行代码开发图像识别
+
+https://mp.weixin.qq.com/s/jOVUPhrCBI9W9vPvD9eKYg
+
+UC Berkeley提出新型分布式框架Ray：实时动态学习的开端

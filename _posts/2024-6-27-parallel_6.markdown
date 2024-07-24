@@ -7,7 +7,58 @@ category: DL acceleration
 * toc
 {:toc}
 
-# Alpa（续）
+# Alpa
+
+Alpa是一个自动探索分布式策略的工具。
+
+论文：
+
+《Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning》
+
+代码：
+
+https://github.com/openxla/xla/tree/main/xla/hlo/experimental/auto_sharding
+
+文档：
+
+https://alpa.ai/index.html
+
+---
+
+在介绍Alpa之前，先介绍一下Google的optimization库：
+
+https://github.com/google/or-tools
+
+文档：
+
+https://developers.google.com/optimization
+
+ILP可以分为下列几种类型：
+
+（1）纯整数线性规划(Pure integer linear programming)：指全部决策变量都必须取整数值的整数线性规划。有时，也称为全整数规划。
+
+（2）混合整数线性规划(Mimed integer linear programming)：指决策变量中有一部分必须取整数值，另一部分可以不取整数值的整数线性规划。
+
+（3）0-1型整数线性规划(Zero-one integer linear programming)：指决策变量只能了取值0或1的整数线性规划。
+
+---
+
+为了评估不同Sharding策略的好坏，我们需要对Sharding策略建立cost model。
+
+这里的cost主要包括：
+
+- Communication cost
+- Computation cost
+- Memory cost
+- Resharding cost
+
+其中，Memory cost为该ILP问题的约束条件，其他几个为决策变量的影响因子。
+
+Resharding cost是不同sharding之间切换产生的开销：
+
+![](/images/img5/resharding.svg)
+
+---
 
 MLIR中有mesh dialect用于描述Sharding Spec：
 
@@ -302,39 +353,3 @@ CoCoA：大规模机器学习的分布式优化通用框架
 https://mp.weixin.qq.com/s/ToIDncp9dS_qk47PsdZm5A
 
 杜克大学：分布式深度学习训练算法TernGrad
-
-https://mp.weixin.qq.com/s/rhtrN2qDspGkpJYDAVSX7w
-
-UC Berkeley展示全新并行处理方法
-
-https://mp.weixin.qq.com/s/ASqpPSIgW_bcFPBfRYz7Xg
-
-哈佛大学提出在云、边缘与终端设备上的分布式深度神经网络DDNN
-
-http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
-
-《Large Scale Distributed Deep Networks》中译文
-
-https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
-
-Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
-
-https://zhuanlan.zhihu.com/p/529388795
-
-训练千亿参数大模型，离不开四种GPU并行策略
-
-https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
-
-百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
-
-https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
-
-分布式深度学习原理、算法详细介绍
-
-https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
-
-苹果发布Turi Create机器学习框架，5行代码开发图像识别
-
-https://mp.weixin.qq.com/s/jOVUPhrCBI9W9vPvD9eKYg
-
-UC Berkeley提出新型分布式框架Ray：实时动态学习的开端

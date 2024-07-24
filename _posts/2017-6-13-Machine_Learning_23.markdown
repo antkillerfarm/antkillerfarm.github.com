@@ -125,6 +125,10 @@ $$\theta_{t+1} = \theta_{t} - \dfrac{\eta}{\sqrt{E[g^2]_t + \epsilon}} g_{t}$$
 
 上边的公式，就是Hinton在同一年提出的**RMSprop算法**。其中的$$\gamma E[g^2]_{t-1}$$即可看作是前w个状态的滤波值，也可看作是Momentum算法中动量值。
 
+![](/images/img5/RMSProp.png)
+
+其中红色对应SGD，蓝色对应RMSProp。可以看出通过RMSProp，有效消除了梯度差异导致的抖动。
+
 Adadelta在RMSprop的基础上更进一步：
 
 $$RMS[g]_{t}=\sqrt{E[g^{2}]_{t}+\epsilon }$$

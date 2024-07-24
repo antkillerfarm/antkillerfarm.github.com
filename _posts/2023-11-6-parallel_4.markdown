@@ -75,6 +75,28 @@ https://blog.csdn.net/v_JULY_v/article/details/135375799
 
 从LongLoRA到LongQLoRA(含源码剖析)：超长上下文大模型的高效微调方法
 
+## GaLore
+
+GaLore的思路和LoRA，也是采用低秩分解，来减少参数的内存占用。方法如下：
+
+```python
+for weight in model.parameters():
+    grad = weight.grad
+    # original space -> compact space
+    lor grad = project(grad)
+    # update by Adam, Adafactor, etc.
+    lor update = update(lor grad)
+    # compact space -> original space
+    update = project back(lor update)
+    weight.data += update
+```
+
+与传统的优化器在反向传播后同时更新所有层的方法不同，GaLore在反向传播期间实现逐层更新。这种方法进一步减少了整个训练过程中的内存占用。
+
+代码：
+
+https://github.com/jiaweizzhao/GaLore
+
 # FSDP
 
 Fully Sharded Data Parallel是Facebook深度借鉴微软ZeRO之后提出的PyTorch DDP升级版本，可以认为是对标微软ZeRO，其本质是parameter sharding。Parameter sharding就是把模型参数切分到各个GPU之上。
@@ -91,7 +113,13 @@ FSDP本身并不能减少数据的通信量，更不可能减少计算量（所�
 
 ![](/images/img5/HSDP.png)
 
-受到FSDP的启发，Facebook又发明了HSDP，进一步用小步快跑的IO策略，提升系统的利用效率。
+受到FSDP的启发，Facebook又发明了HSDP（hybrid sharding data parallel），进一步用小步快跑的IO策略，提升系统的利用效率。
+
+pytorch roadmap：
+
+- 3DParallel = FSDP2 + ASync SP + PP
+- 4DParallel = FSDP2 + ASync SP + CP + PP
+- 5DParallel = HSDP2 + Async SP + CP + PP
 
 代码：
 
@@ -172,6 +200,16 @@ https://mp.weixin.qq.com/s/bvF50XRaA9cO2O4oB31kbg
 对于每个输入的prompt，在计算第一个token输出的时候，每个token的attention肯定是都要从头计算。但是在后续token的生成中，都需要计算self-attention，也就是输入prompt以及前面输出的token的attention。这是就需要用到前面每一个token的K和V，由于每一层的参数矩阵是不变的，此时只有刚生成的那个token的K和V需要从头计算，输入prompt和之前生成的token的K和V其实是跟上一轮一样的。
 
 我们可以把每一层的K、V矩阵缓存起来，这就是所谓的KV Cache。
+
+---
+
+上图中，由于每次只有一个Q进行计算，所以并没有Q cache.
+
+https://www.zhihu.com/question/653658936
+
+为什么加速LLM推断有KV Cache而没有Q Cache？
+
+---
 
 ![](/images/img5/QKV_cache.png)
 
@@ -258,25 +296,3 @@ https://www.zhihu.com/question/655172528
 FasterTransformer作为这一流派的开山鼻祖，其使用的手段，以现在的眼光来看，已经过于平常了。但从工程的角度，它首次揭示了FLOP少，不等于快。
 
 上图是其中的一处优化点，NV将所有非矩阵乘法的运算，都合成一个算子，从而大大减少了算子的数量，以及相应的调度时间。
-
-## EffectiveTransformer/ByteTransformer
-
-EffectiveTransformer/ByteTransformer都是ByteDance的作品，基于FasterTransformer的进一步优化。
-
-![](/images/img5/EffectiveTransformer.png)
-
-![](/images/img5/EffectiveTransformer_2.png)
-
-Transformer模型运算中，padding部分带来了的无效计算。比如Bert一个输入Batch的固定句长是64，但平均句长只有40，那么EffectiveTransformer在FasterTransformer的基础上还可以再多获得约1.5倍的加速。
-
-具体的方法就是：对mask矩阵求前缀和，然后根据前缀和矩阵搬运内存，实现删除和恢复padding。
-
-ByteTransformer在此基础上对self attention部分的padding做了优化。
-
-https://zhuanlan.zhihu.com/p/139255930
-
-使用EffectiveTransformer加速BERT
-
-https://www.thepaper.cn/newsDetail_forward_23343189
-
-大幅优化推理过程，字节高性能Transformer推理库获IPDPS 2023最佳论文奖
