@@ -9,20 +9,6 @@ category: DL Framework
 
 # XLA
 
-## op register & filter（续）
-
-上述OpFilter开关一旦打开，则所有计算无论计算量的大小，都会被派发到NPU上，然而有些计算图实在过于微小，在CPU上的计算时间，甚至小于调度到NPU上的时间。
-
-针对这个问题，在graphcore的tf实现中，有LiteralEvaluateForScalarElementwiseGraph函数，用于回退到CPU上。其关键点在于：
-
-```cpp
-  HloEvaluator hlo_evaluator(1);
-  TF_ASSIGN_OR_RETURN(Literal literal_evaluate,
-                      hlo_evaluator.Evaluate(*comp, arg_literals));
-```
-
-HloEvaluator中已经有了一套默认的CPU实现。
-
 ## system op
 
 除了运算和控制流的op之外，tf中还存在相当数量的用于执行框架功能的system op。
@@ -298,6 +284,18 @@ MaybeLoadPtxFromFile
 
 XLA在内的主流深度学习框架，都是基于Static Shape语义的编译器框架。即，just-in-time运行的编译器，会在运行时捕捉待编译子图的实际输入shape组合，并且为每一个输入shape组合生成一份编译结果。
 
+---
+
+Reduce算子的定义实际上是一个递归定义，对于输入`[10, 11, 12, 13]`，它的计算公式为：
+
+`f(10, f(11, f(12, f(init_value, 13)))`
+
+所以你会发现`f`的定义一般是这样的：
+
+`(x: pred[], y: pred[]) -> pred[]`
+
+参数和返回值都是同一类型，而且都是单个元素，而非整个tensor。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/RO3FrPxhK2GEoDCGE9DXrw
@@ -339,3 +337,51 @@ Tensorflow/XLA探究
 https://wzzju.github.io/tensorflow/xla/2021/06/12/xla-overview/
 
 XLA编译执行原理分析
+
+## JAX
+
+一款由谷歌团队打造（非官方发布），用于从纯Python和Numpy机器学习程序中生成高性能加速器（accelerator）代码，且特定于域的跟踪JIT编译器。
+
+代码：
+
+https://github.com/google/jax
+
+文档：
+
+https://jax.readthedocs.io/en/latest/
+
+JAX的底层也是基于XLA的。
+
+JAX并不是TF的替代品，它缺失了一些数据准备和调度的功能。这些功能一般可用haiku/flax提供。
+
+RLax：这是一个基于Jax的强化学习库。
+
+参考：
+
+https://mp.weixin.qq.com/s/IMMdbF33ZHEz7N_XwgIhHA
+
+试试谷歌这个新工具：说不定比TensorFlow还好用！
+
+https://mp.weixin.qq.com/s/tZ3yWQ9--l9e81UqoUoWIQ
+
+要替代TensorFlow？谷歌开源机器学习库JAX
+
+https://mp.weixin.qq.com/s/eaYwiV2LZNRwzPEeOA1XFg
+
+新星JAX ：双挑TensorFlow和PyTorch！有望担纲Google主要科学计算库和神经网络库
+
+https://mp.weixin.qq.com/s/NhMbr_niHjSaqh2azuSaog
+
+只知道TF和PyTorch还不够，快来看看怎么从PyTorch转向自动微分神器JAX
+
+https://wzzju.github.io/jax/xla/2022/02/17/jax-cpp/
+
+JAX程序转HLO执行
+
+https://zhuanlan.zhihu.com/p/532504225
+
+面向PyTorch用户的JAX简易教程(1): JAX介绍
+
+https://zhuanlan.zhihu.com/p/544216783
+
+面向PyTorch用户的JAX简易教程(2): 如何训练一个神经网络

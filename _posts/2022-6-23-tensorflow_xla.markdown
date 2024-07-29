@@ -305,3 +305,15 @@ if (op_registration->allow_string_type) {
 这个技巧是有实际意义的，比如某个数据类型如果只用在个别op上的话，给大多数op做减法，就不如给这几个个别的op做加法了。
 
 在`REGISTER_XLA_BACKEND`之外，还有诸如`REGISTER_XLA_DEVICE_KERNELS`之类的宏，他们使用类型集合的**全集**就好。只有`REGISTER_XLA_BACKEND`需要做加法，也只有这个宏会影响Placer的行为，其他宏都和Placer无关。
+
+上述OpFilter开关一旦打开，则所有计算无论计算量的大小，都会被派发到NPU上，然而有些计算图实在过于微小，在CPU上的计算时间，甚至小于调度到NPU上的时间。
+
+针对这个问题，在graphcore的tf实现中，有LiteralEvaluateForScalarElementwiseGraph函数，用于回退到CPU上。其关键点在于：
+
+```cpp
+  HloEvaluator hlo_evaluator(1);
+  TF_ASSIGN_OR_RETURN(Literal literal_evaluate,
+                      hlo_evaluator.Evaluate(*comp, arg_literals));
+```
+
+HloEvaluator中已经有了一套默认的CPU实现。
