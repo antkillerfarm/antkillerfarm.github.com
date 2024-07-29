@@ -283,6 +283,10 @@ https://www.lto.org/
 | LTO 8 | 12TB | 360MB/s |
 | LTO 9 | 18TB | 400MB/s |
 
+以上类型只向下兼容两代，两代中最近的一代为读写兼容，之后为只读兼容，速度仍然按照各个类型的速度，例如LTO4可以读写LTO3速度为80M/s，可以只读LTO2的磁带速度为35M/s。
+
+LTO磁带机的价格非常昂贵，LTO 9目前需要5万元，即使是被淘汰的LTO 5也需要800元。所以如果数据规模小于10块千元主流硬盘的话，磁带存储没有任何价格优势。
+
 参考：
 
 https://mp.weixin.qq.com/s/Fzu5YmWYxEohDJjmcGGjhQ

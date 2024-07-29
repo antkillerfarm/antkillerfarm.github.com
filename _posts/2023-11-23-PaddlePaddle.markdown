@@ -161,6 +161,8 @@ nn.Sequential里面的模块按照顺序进行排列的，所以必须确保前�
 
 ```python
 class LlamaForCausalLM(LlamaPreTrainedModel)
+class LlamaModel(LlamaPreTrainedModel)
+class LlamaDecoderLayer(nn.Module)
 class LlamaPreTrainedModel(PreTrainedModel)
 class PreTrainedModel(nn.Module, ModuleUtilsMixin, GenerationMixin, PushToHubMixin, PeftAdapterMixin)
 class GenerationMixin
