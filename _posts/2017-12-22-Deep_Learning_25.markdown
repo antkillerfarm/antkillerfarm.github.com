@@ -288,3 +288,7 @@ https://www.zhihu.com/question/658493526
 https://www.zhihu.com/question/494724565
 
 西班牙和法国比差哪了?
+
+---
+
+据说当时港口收停泊费都是根据甲板面积。于是荷兰人就造了这种甲板小，肚子大的船型——Flute（笛形船）。

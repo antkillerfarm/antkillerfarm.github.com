@@ -326,6 +326,14 @@ https://www.zhihu.com/question/25369412
 
 如何从GitHub上下载单个文件夹？
 
+## 自动补全
+
+git项目下有个`git-completion.bash`文件，提供了tab自动补全的功能。
+
+https://www.cnblogs.com/wang_yb/p/5969451.html
+
+命令行自动补全原理
+
 ## 缺点
 
 git对于大的二进制文件不太友好，对于文件/历史的部分导出也支持的不太好。所以对于大公司的项目来说，并不太好用。
