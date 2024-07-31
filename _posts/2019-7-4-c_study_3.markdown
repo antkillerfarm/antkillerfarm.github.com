@@ -261,6 +261,13 @@ if (std::is_same<float, T>::value) {
 }
 ```
 
+# Range-based for loop
+
+```cpp
+for (auto i : v) // access by value, the type of i is int
+    std::cout << i << ' ';
+```
+
 # C++ thread
 
 长期以来，C/C++的线程编程主要依赖pthread库，但是这个情况在C++ 11之后有所改观，因为C++ 11的标准库已经支持thread了。

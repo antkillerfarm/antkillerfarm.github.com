@@ -287,6 +287,20 @@ DeepMind通天了！AI中期天气预报吊打全球顶级气象台：1台TPU1�
 
 # PageRank算法+
 
+## 参考
+
+http://www.cnblogs.com/rubinorth/p/5799848.html
+
+PageRank算法--从原理到实现
+
+http://blog.csdn.net/hguisu/article/details/7996185
+
+PageRank算法
+
+http://www.docin.com/p-1231683333.html
+
+有限不可约马尔可夫链的非周期状态
+
 http://www.docin.com/p-630952720.html
 
 马尔科夫链
