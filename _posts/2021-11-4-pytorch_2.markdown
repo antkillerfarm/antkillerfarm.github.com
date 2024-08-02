@@ -11,6 +11,14 @@ category: DL Framework
 
 ## TorchDynamo（续）
 
+为什么要做模型切分呢？因为模型规模增大，单个机器无法放下，但是又需要访问模型才能制定切分策略。制定切分策略之前，我们又需要知道这个模型有多大。这就是一个先有鸡，还是先有蛋的问题了。
+
+FakeTensor应运而生，正如其名，FakeTensor什么都是Fake，它的backend是假的，dispatch是假的，storage也是假的。与之相对的，则是Meta Tensor。
+
+DTensor：DistributedTensor
+
+---
+
 自动求导：
 
 `from torch._dynamo.backends.common import aot_autograd`
@@ -119,6 +127,16 @@ https://blog.csdn.net/gzq0723/article/details/115410050
 
 Pytorch底层算子扩展最详细的总结
 
+## Grad Mode
+
+`torch.no_grad` vs `torch.inference_mode`
+
+| Mode | Excludes operations from being recorded in backward graph | Skips additional autograd tracking overhead | Tensors created while the mode is enabled can be used in grad-mode later |
+|:--:|:--:|:--:|:--:|
+| default (grad mode) |  |  | ✓ |
+| no-grad | ✓ |  | ✓ |
+| inference | ✓ | ✓ |  |
+
 ## 分布式
 
 https://pytorch.org/tutorials/intermediate/dist_tuto.html
@@ -183,9 +201,18 @@ API：`torch.jit.load`
 
 5.基于Pytorch TorchDynamo的接入方案。
 
-昇腾Pytorch插件的代码：
+---
+
+昇腾Pytorch backend的代码：
 
 https://gitee.com/ascend/pytorch
+
+
+Intel Pytorch backend的代码：
+
+https://github.com/intel/intel-extension-for-pytorch
+
+---
 
 https://www.zhihu.com/question/624955377
 

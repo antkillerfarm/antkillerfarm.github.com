@@ -126,6 +126,14 @@ https://zhuanlan.zhihu.com/p/669880751
 
 谈谈RTX4090 GPU改装为AIDC加速卡的可行性－－PCB板级改造的工艺缺陷和风险
 
+---
+
+https://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/
+
+Matching CUDA arch and CUDA gencode for various NVIDIA architectures
+
+这篇文章虽然讲的是NVCC的sm选项的含义，但同样可以看作是NV GPU架构的历代记。
+
 ## 驱动安装
 
 查看显卡硬件型号：
@@ -271,26 +279,6 @@ CUDA-X AI是软件加速库的集合，这些库建立在CUDA之上，提供对�
 官网：
 
 https://www.nvidia.cn/technologies/cuda-x/
-
-## RAPIDS
-
-RAPIDS，全称Real-time Acceleration Platform for Integrated Data Science，是NVIDIA针对数据科学和机器学习推出的一套开源GPU加速库，基于CUDA-X AI打造。
-
-官网：
-
-https://rapids.ai/
-
-代码：
-
-https://github.com/rapidsai
-
-![](/images/img4/RAPIDS.png)
-
-参考：
-
-https://blog.csdn.net/sinat_26917383/article/details/104503795
-
-NVIDIA的python-GPU算法生态
 
 ## 参考
 

@@ -173,6 +173,26 @@ Vision-Language Models (VLMs)多模态大模型一年多的进展与思考-2406
 
 # NVIDIA+
 
+## RAPIDS
+
+RAPIDS，全称Real-time Acceleration Platform for Integrated Data Science，是NVIDIA针对数据科学和机器学习推出的一套开源GPU加速库，基于CUDA-X AI打造。
+
+官网：
+
+https://rapids.ai/
+
+代码：
+
+https://github.com/rapidsai
+
+![](/images/img4/RAPIDS.png)
+
+参考：
+
+https://blog.csdn.net/sinat_26917383/article/details/104503795
+
+NVIDIA的python-GPU算法生态
+
 ## cuLitho
 
 光刻是芯片制造过程中最复杂、最昂贵、最关键的环节，其成本约占整个硅片加工成本的1/3甚至更多。计算光刻模拟了光通过光学元件并与光刻胶相互作用时的行为，应用逆物理算法来预测掩膜板上的图案，以便在晶圆上生成最终图案。

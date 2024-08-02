@@ -83,7 +83,13 @@ XMPP和SIP的特点如下表所示：
   </tr>
 </table>
 
-参考文献：
+---
+
+2009年经济危机时代，我曾经去一家start up面试，当时它们的业务就是SIP开发。可惜才从那里出来，就接到了某外企的offer，所以也就没有下文了。
+
+---
+
+参考：
 
 http://my.oschina.net/linuxhunter/blog/35370
 

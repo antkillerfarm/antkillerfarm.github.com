@@ -39,6 +39,24 @@ https://www.zhihu.com/question/24551779
 
 为什么ARM和MIPS那么多寄存器，x86那么少？
 
+---
+
+stdcall每次调用节省3字节，函数体本身只会存在于一处，而函数调用会存在很多处，所以总的来说生成的二进制产物体积会减小很多。缺点是不支持可变参数函数。
+
+C/C++默认使用cdecl。早期的X86 CPU并没有RET指令，也就没有stdcall。
+
+类似的还有regcall、regparm、fastcall、sseregparm。
+
+这些call的优化点都是：参数尽可能通过寄存器传递，减少堆栈操作，堆栈仅用于实在放不下的参数。
+
+sseregparm甚至把算盘打到了SSE寄存器上。
+
+https://www.zhihu.com/question/662928381
+
+为什么win32 API要采用stdcall？
+
+---
+
 https://mp.weixin.qq.com/s/MqfteZBSWbnBpHbFYw8Eqw
 
 如何编写一个简单的Python编译器

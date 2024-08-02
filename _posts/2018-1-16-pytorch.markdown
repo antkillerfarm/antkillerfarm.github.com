@@ -170,11 +170,11 @@ pytorch拆分已定义的网络结构（slicing network）
 
 ## 代码解读
 
-PyTorch的的代码主要由C10、ATen、torch三大部分组成的。其中：
+PyTorch的代码主要由C10、ATen、torch三大部分组成。其中：
 
-- C10，来自于Caffe Tensor Library的缩写。这里存放的都是最基础的Tensor库的代码，可以运行在服务端和移动端。PyTorch目前正在将代码从ATen/core目录下迁移到C10中。C10的代码有一些特殊性，体现在这里的代码除了服务端外，还要运行在移动端，因此编译后的二进制文件大小也很关键，因此C10目前存放的都是最核心、精简的、基础的Tensor函数和接口。
+- C10，Caffe Tensor Library的缩写。这里存放的都是最基础的Tensor库的代码，可以运行在服务端和移动端。PyTorch目前正在将代码从ATen/core目录下迁移到C10中。C10的代码有一些特殊性，体现在这里的代码除了服务端外，还要运行在移动端，因此编译后的二进制文件大小也很关键。
 
-- ATen，来自于A TENsor library for C++11的缩写；PyTorch的C++ tensor library。ATen部分有大量的代码是来声明和定义Tensor运算相关的逻辑的，除此之外，PyTorch还使用了aten/src/ATen/gen.py来动态生成一些ATen相关的代码。
+- ATen，A TENsor library for C++11的缩写；PyTorch的C++ tensor library。ATen部分有大量的代码是来声明和定义Tensor运算相关的逻辑的，除此之外，PyTorch还使用了aten/src/ATen/gen.py来动态生成一些ATen相关的代码。
 
 - Torch，部分代码仍然在使用以前的快要进入历史博物馆的Torch开源项目。
 
@@ -221,6 +221,14 @@ PyTorch Autograd代码的动态生成
 https://fkong.tech/posts/2023-05-24-torch-source/
 
 一点PyTorch源码阅读心得
+
+https://pytorch.org/blog/a-tour-of-pytorch-internals-1/
+
+A Tour of PyTorch Internals (Part I)
+
+https://pytorch.org/blog/a-tour-of-pytorch-internals-2/
+
+PyTorch Internals Part II - The Build System
 
 ## tensorboardX
 
@@ -329,11 +337,3 @@ torch.fx参用symbolic tracer技术，通过对Python代码的符号化执行，
 - 无法追踪Non-torch Functions。
 
 dynamo的设计非常巧妙，一言以蔽之：能捕获的我就捕获，捕获不了的，直接保留。
-
----
-
-为什么要做模型初始化呢？因为模型规模增大，单个机器无法放下，但是又需要访问模型才能制定切分策略。制定切分策略之前，我们又需要知道这个模型有多大。这就是一个先有鸡，还是先有蛋的问题了。
-
-FakeTensor应运而生，正如其名，FakeTensor什么都是Fake，它的backend是假的，dispatch是假的，storage也是假的。与之相对的，则是Meta Tensor。
-
-DTensor：DistributedTensor
