@@ -7,6 +7,22 @@ category: DL acceleration
 * toc
 {:toc}
 
+# LLM System（续）
+
+## 实战
+
+https://blog.csdn.net/v_JULY_v/article/details/132178447
+
+七月论文审稿GPT第1版：通过3万多篇paper和10多万的review数据微调RWKV
+
+https://blog.csdn.net/v_JULY_v/article/details/134183799
+
+七月论文审稿GPT第2版：用一万多条paper-review数据微调LLaMA2 7B最终反超GPT4
+
+https://blog.csdn.net/v_JULY_v/article/details/131552592
+
+基于LangChain+LLM的本地知识库问答：从企业单文档问答到批量文档问答
+
 # Alpa
 
 Alpa是一个自动探索分布式策略的工具。

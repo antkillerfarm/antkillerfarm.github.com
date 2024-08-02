@@ -11,6 +11,14 @@ category: DL acceleration
 
 ## AllReduce（续）
 
+AllReduce的实现方式不仅和原理相关，也和真实的物理连接方式有关：
+
+![](/images/img5/ring_CC.png)
+
+实际情况要更加复杂，用户可能指定某几块GPU进行通信，这个时候树或者环的结构就不好找了。
+
+例如，在图C中，我们有一个双NVLink连接的骨干环。但是如果我要在GPU 0/1/2/7之间进行allreduce，可怎么办呢？7和0/1/2离得太远了，对算法效率有很大影响。事实上，即使对于成熟的集合通信库，例如nccl，当GPU数目是3或者5的时候效果表现也不好。最好的办法还是学习理解这些拓扑结构，不要出现这样的情况，尽量同时使用拓扑上靠近的GPU。
+
 参考：
 
 https://www.zhihu.com/question/57799212
@@ -314,12 +322,3 @@ Training Transformer models using Pipeline Parallelism
 https://pytorch.org/tutorials/advanced/ddp_pipeline.html
 
 Training Transformer models using Distributed Data Parallel and Pipeline Parallelism
-
----
-
-`torch.distributed.pipeline`关键代码：
-
-```
-torch/distributed/pipeline/sync/pipeline.py: _clock_cycles
-torch/distributed/pipeline/sync/pipe.py: _split_module
-```

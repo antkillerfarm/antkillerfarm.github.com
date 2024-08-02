@@ -95,42 +95,6 @@ https://zhuanlan.zhihu.com/p/98097268
 
 初学Chisel语言，看这篇就够了：最方便简洁的入门资料整理
 
-## 多核拓扑
-
-![](/images/img4/In_Chip_Bus.jpg)
-
-Crossbar（XBAR）
-
-各种拓扑结构：ring、torus、fat-tree、dragonfly。
-
-![](/images/img5/Dragonfly.png)
-
-Dragonfly的拓扑结构分为三层：Switch层，Group层，System层。
-
-- Switch层：包括一个交换机（橙色方块），及其相连的p个计算节点（粉色圆圈）。
-- Group层（灰色椭圆）：包含a个Switch层，这a个Switch层的a个交换机是全连接(All-to-all)的，换言之，每个交换机都有a-1条链路连接分别连接到其他的a-1台交换机。
-- System层：包含g个Group层，这g个Group层也是全连接的。
-
-![](/images/img5/Spine_Leaf.jpg)
-
-上图为Spine+Leaf结构。
-
-https://zhuanlan.zhihu.com/p/32216294
-
-破茧化蝶，从Ring Bus到Mesh网络，CPU片内总线的进化之路
-
-https://blog.csdn.net/CodeSavior/article/details/114446140
-
-Spine+Leaf叶脊网络架构
-
-https://zhuanlan.zhihu.com/p/371827494
-
-片内互联中常用的拓扑结构
-
-https://www.modb.pro/db/650884
-
-一文读懂Dragonfly网络拓扑
-
 ## 芯片制造
 
 ![](/images/img5/Fab.jpg)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  内存, NAND
+title:  内存, NAND, GPU通信技术
 category: Chip 
 ---
 
@@ -161,50 +161,120 @@ https://www.zhihu.com/question/401733153
 
 长江存储的Xtacking技术与英特尔的3D Xpoint技术、SK的4DNAND技术有什么异同点？
 
-# Latex+
+# GPU通信技术
 
-## 参考
+## Die To Die
 
-https://zhuanlan.zhihu.com/p/508559139
+Universal Chiplet Interconnect Express (UCIE)是一种开放的行业标准互连，可在芯粒（Chiplet）之间提供高带宽、低延迟、节能且具有成本效益的封装连接。由英特尔、AMD、Arm、台积电和三星等众多行业巨头推动。
 
-Latex简明速查手册
+UCIe从PCIe扩展而来，是个分层协议，协议层支持PCIe 6.0及CXL 2.0/3.0的生态。
 
-https://www.zhihu.com/question/40763253
+Blackwell采用的是一种叫做NV-HBI（High Bandwitdth Interface）的技术，带宽高达10TB/s。
 
-如何在Word和PowerPoint中优雅地插入Latex公式？
+## 共享数据
 
-https://mp.weixin.qq.com/s/3RtKAT3WE8P2YIZRA2dZ3A
+共享数据很简单，OpenGL时代的persistent map，让驱动去做同步、做数据搬运，从而给开发者营造“数据随时可得”的假象（当然也可能的确就是随时可得），这就已经达到共享数据的要求了。
 
-LaTeX的历史：图灵奖得主1977年开启的计划，引发学术圈重大变革
+共享地址的难度则增加了一些，其目标是为了让你在CPU上跑的链表能直接在GPU等地方使用。x64时代到来使得内存地址扩充到48位，而且CPU上已经全面虚拟地址，GPU也要跟着加上地址转换的能力。
 
-https://mp.weixin.qq.com/s/KMWhz5_EXWoxgmHUek6zBA
+共享物理内存则明确表明，实现了上两者的独显（OpenCL的SVM就是前两个要求）也要被排除。那就基本是核显Only（主机的架构也可以看作是核显）。
 
-不会用latex写公式？看看这个python转latex的库（python2latex）
+https://www.zhihu.com/question/430936274
 
-https://www.zhihu.com/question/65508676
+苹果的统一内存和集成显卡与CPU共用内存有什么区别？
 
-怎么在LaTeX中排版Python代码？
+https://www.zhihu.com/question/22233341
 
-https://mp.weixin.qq.com/s/LumDQL9VKTHWK3RkOhKFcg
+CPU与GPU之间是如何通信的？
 
-1行代码搞定Latex公式编写，这个4.6M的Python小插件，堪称论文必备神器（handcalcs）
+## RDMA
 
-https://zhuanlan.zhihu.com/p/268332132
+RDMA网卡（Remote Direct Memory Access，这是一种硬件的网络技术，它使得计算机访问远程的内存时无需远程机器上CPU的干预）已经可以提供50~100Gbps的网络带宽和微秒级的传输延迟。
 
-知乎公式编辑器的高级“玩法”
+目前许多以深度学习为目标应用的GPU机群都部署了这样的网络。
 
-https://mp.weixin.qq.com/s/E4EECj0QQ90ElfPqOL80eg
+UCX是一个建立在RDMA等技术之上的用于数据处理和高性能计算的通信框架，RDMA是其底层核心之一。
 
-Python编辑公式竟可以如此简单（latexify_py）
+OpenUCX是UCX的一个开源实现。
 
-https://zhuanlan.zhihu.com/p/38178015
+![](/images/img5/RDMA.jpg)
 
-使用VSCode编写LaTeX
+RDMA包含Infiniband（IB），RDMA over Converged Ethernet（RoCE）和internet Wide Area RDMA Protocol（iWARP）。三种协议都符合RDMA标准，使用相同的上层接口，在不同层次上有一些差别。
 
-https://zhuanlan.zhihu.com/p/194831235
+InfiniBand（直译为“无限带宽”技术，缩写为IB）是一个用于高性能计算的计算机网络通信标准，它具有极高的吞吐量和极低的延迟，用于计算机与计算机之间的数据互连。相当于是面向HPC的以太网的替代品。
 
-Knuth-Plass换行算法
+Mellanox Technologies是一家InfiniBand制造商，于2020年被Nvidia收购。
 
-https://mp.weixin.qq.com/s/kGVLsqstajyrZ_cfkFegrA
+官网：
 
-Latex数学排版简洁指南
+https://www.openucx.org/
+
+参考：
+
+https://mp.weixin.qq.com/s/_xcE8RUs0m4gwk3kxpe9jA
+
+基于HTM/RDMA的可扩展内存事务处理系统
+
+https://www.zhihu.com/column/c_1231181516811390976
+
+一个RDMA方面的专栏
+
+https://www.zhihu.com/question/422501188
+
+什么是InfiniBand，它和以太网的区别在于什么？
+
+https://www.cnblogs.com/allcloud/p/8945544.html
+
+InfiniBand 与Intel Omni-Path Architecture
+
+https://zhuanlan.zhihu.com/p/580035183
+
+RoCE vs Infiniband vs TCP/IP
+
+# NVIDIA+
+
+## RAPIDS
+
+RAPIDS，全称Real-time Acceleration Platform for Integrated Data Science，是NVIDIA针对数据科学和机器学习推出的一套开源GPU加速库，基于CUDA-X AI打造。
+
+官网：
+
+https://rapids.ai/
+
+代码：
+
+https://github.com/rapidsai
+
+![](/images/img4/RAPIDS.png)
+
+参考：
+
+https://blog.csdn.net/sinat_26917383/article/details/104503795
+
+NVIDIA的python-GPU算法生态
+
+## cuLitho
+
+光刻是芯片制造过程中最复杂、最昂贵、最关键的环节，其成本约占整个硅片加工成本的1/3甚至更多。计算光刻模拟了光通过光学元件并与光刻胶相互作用时的行为，应用逆物理算法来预测掩膜板上的图案，以便在晶圆上生成最终图案。
+
+“计算光刻是芯片设计和制造领域中最大的计算工作负载，每年消耗数百亿CPU小时。”黄仁勋讲解道，“大型数据中心24x7全天候运行，以便创建用于光刻系统的掩膜板。这些数据中心是芯片制造商每年投资近2000亿美元的资本支出的一部分。”而cuLitho能够将计算光刻的速度提高到原来的40倍。
+
+---
+
+![](/images/img5/RL_EDA.png)
+
+NV的EDA辅助设计
+
+## profile
+
+NVIDIA System Management Interface (NSMI): 即nvidia-smi。
+
+NVIDIA Nsight Systems (NSYS)
+
+NVIDIA Data Center GPU Manager (DCGM)
+
+NVIDIA Management Library (NVML): NVML为GPU硬件数据提供了编程接口，开发者可以通过编程的方式访问GPU的各项数据，其中就包含GPU利用率，nvidia-smi和DCGM的背后就是NVML，推荐高级开发者使用。
+
+https://fkong.tech/posts/2023-11-19-torch-gpu-util/
+
+如何把PyTorch的GPU利用率提升到100%?

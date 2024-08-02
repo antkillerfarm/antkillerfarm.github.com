@@ -131,6 +131,16 @@ https://zhuanlan.zhihu.com/p/676010571
 
 欢迎Mixtral-当前Hugging Face上最先进的MoE模型
 
+## llama 3
+
+llama 3是Meta于2024年发布的LLM。
+
+论文：
+
+《The Llama 3 Herd of Models》
+
+![](/images/img5/LLAMA3.png)
+
 # Chinchilla Law
 
 DeepMind研究了在给定算力预算下训练Transformer语言模型的最佳模型大小和tokens数量。
@@ -171,50 +181,50 @@ https://zhuanlan.zhihu.com/p/702811733
 
 Vision-Language Models (VLMs)多模态大模型一年多的进展与思考-2406
 
-# NVIDIA+
+# Latex+
 
-## RAPIDS
+## 参考
 
-RAPIDS，全称Real-time Acceleration Platform for Integrated Data Science，是NVIDIA针对数据科学和机器学习推出的一套开源GPU加速库，基于CUDA-X AI打造。
+https://zhuanlan.zhihu.com/p/508559139
 
-官网：
+Latex简明速查手册
 
-https://rapids.ai/
+https://www.zhihu.com/question/40763253
 
-代码：
+如何在Word和PowerPoint中优雅地插入Latex公式？
 
-https://github.com/rapidsai
+https://mp.weixin.qq.com/s/3RtKAT3WE8P2YIZRA2dZ3A
 
-![](/images/img4/RAPIDS.png)
+LaTeX的历史：图灵奖得主1977年开启的计划，引发学术圈重大变革
 
-参考：
+https://mp.weixin.qq.com/s/KMWhz5_EXWoxgmHUek6zBA
 
-https://blog.csdn.net/sinat_26917383/article/details/104503795
+不会用latex写公式？看看这个python转latex的库（python2latex）
 
-NVIDIA的python-GPU算法生态
+https://www.zhihu.com/question/65508676
 
-## cuLitho
+怎么在LaTeX中排版Python代码？
 
-光刻是芯片制造过程中最复杂、最昂贵、最关键的环节，其成本约占整个硅片加工成本的1/3甚至更多。计算光刻模拟了光通过光学元件并与光刻胶相互作用时的行为，应用逆物理算法来预测掩膜板上的图案，以便在晶圆上生成最终图案。
+https://mp.weixin.qq.com/s/LumDQL9VKTHWK3RkOhKFcg
 
-“计算光刻是芯片设计和制造领域中最大的计算工作负载，每年消耗数百亿CPU小时。”黄仁勋讲解道，“大型数据中心24x7全天候运行，以便创建用于光刻系统的掩膜板。这些数据中心是芯片制造商每年投资近2000亿美元的资本支出的一部分。”而cuLitho能够将计算光刻的速度提高到原来的40倍。
+1行代码搞定Latex公式编写，这个4.6M的Python小插件，堪称论文必备神器（handcalcs）
 
----
+https://zhuanlan.zhihu.com/p/268332132
 
-![](/images/img5/RL_EDA.png)
+知乎公式编辑器的高级“玩法”
 
-NV的EDA辅助设计
+https://mp.weixin.qq.com/s/E4EECj0QQ90ElfPqOL80eg
 
-## profile
+Python编辑公式竟可以如此简单（latexify_py）
 
-NVIDIA System Management Interface (NSMI): 即nvidia-smi。
+https://zhuanlan.zhihu.com/p/38178015
 
-NVIDIA Nsight Systems (NSYS)
+使用VSCode编写LaTeX
 
-NVIDIA Data Center GPU Manager (DCGM)
+https://zhuanlan.zhihu.com/p/194831235
 
-NVIDIA Management Library (NVML): NVML为GPU硬件数据提供了编程接口，开发者可以通过编程的方式访问GPU的各项数据，其中就包含GPU利用率，nvidia-smi和DCGM的背后就是NVML，推荐高级开发者使用。
+Knuth-Plass换行算法
 
-https://fkong.tech/posts/2023-11-19-torch-gpu-util/
+https://mp.weixin.qq.com/s/kGVLsqstajyrZ_cfkFegrA
 
-如何把PyTorch的GPU利用率提升到100%?
+Latex数学排版简洁指南

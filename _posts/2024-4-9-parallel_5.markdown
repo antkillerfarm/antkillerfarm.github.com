@@ -1,13 +1,23 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（六）——LLM Inference, LLM System
+title:  并行 & 框架 & 优化（六）——快速Transformer, LLM Inference, LLM System
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# 快速Transformer（续）
+# 快速Transformer
+
+轻量化Transformer是从计算量/时间/空间的角度出发，对于传统Transformer的优化。而快速Transformer主要着眼于软件工程角度，如何更好的利用各种硬件加速Transformer的计算。典型的有NVIDIA的FasterTransformer和腾讯的TurboTransformer。
+
+## FasterTransformer
+
+![](/images/img5/FasterTransformer.png)
+
+FasterTransformer作为这一流派的开山鼻祖，其使用的手段，以现在的眼光来看，已经过于平常了。但从工程的角度，它首次揭示了FLOP少，不等于快。
+
+上图是其中的一处优化点，NV将所有非矩阵乘法的运算，都合成一个算子，从而大大减少了算子的数量，以及相应的调度时间。
 
 ## EffectiveTransformer/ByteTransformer
 
@@ -248,17 +258,3 @@ https://www.zhihu.com/question/603117242
 https://zhuanlan.zhihu.com/p/668509885
 
 向量数据库凉了吗？
-
-## 实战
-
-https://blog.csdn.net/v_JULY_v/article/details/132178447
-
-七月论文审稿GPT第1版：通过3万多篇paper和10多万的review数据微调RWKV
-
-https://blog.csdn.net/v_JULY_v/article/details/134183799
-
-七月论文审稿GPT第2版：用一万多条paper-review数据微调LLaMA2 7B最终反超GPT4
-
-https://blog.csdn.net/v_JULY_v/article/details/131552592
-
-基于LangChain+LLM的本地知识库问答：从企业单文档问答到批量文档问答

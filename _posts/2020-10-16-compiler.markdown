@@ -64,9 +64,19 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/mylex
 
 ---
 
-Recursive Descent Parsing
+Recursive Descent Parsing：负责解析语句。
 
-Operator-Precedence Parsing
+>Robert M. McClure于1961年编写的TMG(TransMoGrifier)，最早使用了该算法。
+
+Operator-Precedence Parsing：负责解析具有优先级特性的运算表达式。
+
+Polish notation由波兰逻辑学家Jan Łukasiewicz（1878～1956）于1931年提出。共有三种形式：（以`3 + 4`为例）
+
+- 前缀表示法，即狭义的Polish notation：`+ 3 4`。这种表示法被LISP等语言所采用。
+
+- 中缀表示法：`3 + 4`
+
+- 后缀表示法，即reverse Polish notation：`3 4 +`。这种表示法由于和指令顺序相同（先load操作数，再进行运算），而被广泛应用于编译器领域。
 
 https://www.zhihu.com/question/413146859
 

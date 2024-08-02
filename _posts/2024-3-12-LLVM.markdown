@@ -39,18 +39,6 @@ http://www.aosabook.org/en/llvm.html
 
 https://zhuanlan.zhihu.com/p/446800631
 
-官方教程：
-
-https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/index.html
-
-教程代码在：
-
-llvm/examples/Kaleidoscope
-
-教程中文版+MLIR的专栏：
-
-https://www.zhihu.com/column/c_1416415517393981440
-
 ---
 
 https://getting-started-with-llvm-core-libraries-zh-cn.readthedocs.io/zh-cn/latest/index.html
@@ -82,6 +70,41 @@ ninja -j 0
 https://inside-compiler.github.io/2023/12/14/Build-LLVM/
 
 Build LLVM
+
+## 教程
+
+官方教程：
+
+https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/index.html
+
+教程代码在：
+
+llvm/examples/Kaleidoscope
+
+教程中文版+MLIR的专栏：
+
+https://www.zhihu.com/column/c_1416415517393981440
+
+---
+
+Kaleidoscope示例的可执行文件路径：
+
+build/examples/Kaleidoscope
+
+
+
+---
+
+参考：
+
+https://zhuanlan.zhihu.com/p/407854583
+
+使用LLVM实现一个简单编译器（一）
+
+https://zhuanlan.zhihu.com/p/409749393
+
+使用LLVM实现一个简单编译器（二）
+
 
 ## 常用命令
 
@@ -212,14 +235,6 @@ LLVM创始人Chris Lattner回顾展望编译器
 https://zhuanlan.zhihu.com/p/626085010
 
 使用Flex、Bison和LLVM编写自己的Toy Compiler
-
-https://zhuanlan.zhihu.com/p/407854583
-
-使用LLVM实现一个简单编译器（一）
-
-https://zhuanlan.zhihu.com/p/409749393
-
-使用LLVM实现一个简单编译器（二）
 
 https://zhuanlan.zhihu.com/p/66793637
 

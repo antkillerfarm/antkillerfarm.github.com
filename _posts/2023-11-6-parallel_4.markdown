@@ -1,11 +1,21 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（五）——LoRA, FSDP, Megatron-LM, KV Cache, 快速Transformer
+title:  并行 & 框架 & 优化（五）——Context Parallel, LoRA, FSDP, Megatron-LM, KV Cache
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
+
+# Context Parallel
+
+SP只针对Layernorm和Dropout输出的activation在sequence维度上进行切分，CP则是对所有的input输入和所有的输出activation在sequence维度上进行切分，可以看成是增强版的SP。
+
+![](/images/img5/CP.png)
+
+https://blog.csdn.net/qinduohao333/article/details/139250852
+
+Context Parallel
 
 # LoRA
 
@@ -284,15 +294,3 @@ https://kexue.fm/archives/10091
 https://www.zhihu.com/question/655172528
 
 如何看待DeepSeek发布的MoE大模型DeepSeek-V2？
-
-# 快速Transformer
-
-轻量化Transformer是从计算量/时间/空间的角度出发，对于传统Transformer的优化。而快速Transformer主要着眼于软件工程角度，如何更好的利用各种硬件加速Transformer的计算。典型的有NVIDIA的FasterTransformer和腾讯的TurboTransformer。
-
-## FasterTransformer
-
-![](/images/img5/FasterTransformer.png)
-
-FasterTransformer作为这一流派的开山鼻祖，其使用的手段，以现在的眼光来看，已经过于平常了。但从工程的角度，它首次揭示了FLOP少，不等于快。
-
-上图是其中的一处优化点，NV将所有非矩阵乘法的运算，都合成一个算子，从而大大减少了算子的数量，以及相应的调度时间。

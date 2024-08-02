@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度加速（七）——模型压缩与加速进阶（2）,  NN Quantization（三）
+title:  深度加速（七）——模型压缩与加速进阶（2）, NN Quantization（三）
 category: DL acceleration 
 ---
 

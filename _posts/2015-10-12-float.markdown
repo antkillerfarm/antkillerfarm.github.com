@@ -221,6 +221,8 @@ http://15418.courses.cs.cmu.edu/spring2013/
 
 《A Survey of Large-Scale Deep Learning Serving System Optimization: Challenges and Opportunities》
 
+《Efficient Training of Large Language Models on Distributed Infrastructures: A Survey》
+
 ## blog
 
 https://zhuanlan.zhihu.com/c_1174996853811335168
@@ -292,11 +294,3 @@ https://zhuanlan.zhihu.com/p/381978470
 ## 数据并行 & 模型并行
 
 当数据量很大时，单个节点需要很长时间才能完成1轮训练，这对于动辄十几轮或几十轮的训练来说是不可忍受的，所以可以将数据进行划分并分配给多个节点，每个节点处理自己的一小部分数据，从而加快整体的训练速度。在TensorFlow中**数据并行**也被称为图间复制(Between-graph Replication)。
-
-模型并行是指将模型切分为多个部分并将各个部分放置到不同的节点进行训练的分布式模式。因为当模型很复杂，参数很多时，由于内存的限制，单个节点无法将整个模型加载并进行训练，所以需要将模型切割为更小的部分，并将各个部分运行在不同的节点上以完成训练。在TensorFlow中**模型并行**也被称为图内复制 (In-graph Replication)。
-
-![](/images/img4/Parallel.png)
-
-![](/images/img4/Parallel_2.png)
-
-模型并行又可以按照是否对算子进行切分而分为两类，即上图中的b和c。其中c又被称为**pipeline并行**。
