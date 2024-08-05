@@ -59,7 +59,11 @@ Relaxed-Memory Concurrency
 
 机柜、板卡的尺寸规格也有工业标准，以方便不同厂商产品的互联和替换。
 
-OCP：Open Compute Project
+OCP（Open Compute Project）组织负责定义数据中心相关的工业标准。
+
+官网：
+
+https://www.opencompute.org
 
 OAM：OCP Accelerator Module
 

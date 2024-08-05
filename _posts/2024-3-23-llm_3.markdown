@@ -131,13 +131,15 @@ https://zhuanlan.zhihu.com/p/676010571
 
 欢迎Mixtral-当前Hugging Face上最先进的MoE模型
 
-## llama 3
+## Llama 3
 
 llama 3是Meta于2024年发布的LLM。
 
 论文：
 
 《The Llama 3 Herd of Models》
+
+本论文发布于2024.7，它实际上是Llama 3.1的技术报告。
 
 ![](/images/img5/LLAMA3.png)
 

@@ -207,9 +207,19 @@ https://github.com/CMU-SAFARI/ramulator2
 
 ## 多核
 
-SMP(Symmetric Multiprocessing)架构：即多处理器架构，是目前最常见的多处理器计算机架构。
+从架构上区分：
 
-AMP(Asymmetric Multiprocessing)架构：即非对称多处理器架构，则是与SMP架构相对的概念。
+- 同构（homogeneous）多核架构：系统中的处理器在架构上是相同的。
+
+- 异构（heterogeneous）多核架构：系统中的处理器在架构上是不同的。
+
+从运行模式上区分：
+
+SMP（Symmetric Multiprocessing）：多个核心运行一个操作系统，该操作系统同等的管理多个内核，这种运行模式就是简单提高运行性能。
+
+AMP（Asymmetric Multiprocessing）：多个核相对独立的运行不同的任务，每个核之间相互隔离，可以运行不同的操作系统或裸机程序。
+
+BMP（Bound Multiprocessing）：与SMP类似，同样也是一个OS管理所有的核心，但开发者可以指定将某个任务仅在某个指定内核上执行。
 
 https://zhuanlan.zhihu.com/p/53596593
 
@@ -240,27 +250,3 @@ UMA(Uniform Memory Access)均匀内存访问架构则是与NUMA架构相反，�
 https://zhuanlan.zhihu.com/p/387117470
 
 十年后数据库还是不敢拥抱NUMA？
-
-参考：
-
-https://software.intel.com/en-us/articles/optimizing-applications-for-numa
-
-Optimizing Applications for NUMA
-
-https://mp.weixin.qq.com/s/uH0XRjDNfVQe5r1aes0zDw
-
-性能之殇：从冯·诺依曼瓶颈谈起
-
-https://zhuanlan.zhihu.com/p/476411477
-
-NUMA架构详解
-
-## DSM
-
-Distributed Shared Memory是分布式系统的所有节点（处理器）共享的虚拟地址空间。程序访问DSM中的数据的方式与访问传统计算机虚拟内存中的数据的方式非常相似。
-
-分布式共享内存（DSM）在10几年前是OS领域的研究热点，不过因为网络传输的性能太差了，所以凉了。而基于消息传递模型的分布式计算发展了起来。其中数据以消息的形式从处理器传递到处理器。RPC实际上也是相同的模型。
-
-https://blog.csdn.net/JiangTao2333/article/details/124530699
-
-分布式共享内存（DSM - Distributed Shared Memory）

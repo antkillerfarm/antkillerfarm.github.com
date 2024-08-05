@@ -9,6 +9,32 @@ category: Chip
 
 # 计算机体系结构
 
+## NUMA（续）
+
+参考：
+
+https://software.intel.com/en-us/articles/optimizing-applications-for-numa
+
+Optimizing Applications for NUMA
+
+https://mp.weixin.qq.com/s/uH0XRjDNfVQe5r1aes0zDw
+
+性能之殇：从冯·诺依曼瓶颈谈起
+
+https://zhuanlan.zhihu.com/p/476411477
+
+NUMA架构详解
+
+## DSM
+
+Distributed Shared Memory是分布式系统的所有节点（处理器）共享的虚拟地址空间。程序访问DSM中的数据的方式与访问传统计算机虚拟内存中的数据的方式非常相似。
+
+分布式共享内存（DSM）在10几年前是OS领域的研究热点，不过因为网络传输的性能太差了，所以凉了。而基于消息传递模型的分布式计算发展了起来。其中数据以消息的形式从处理器传递到处理器。RPC实际上也是相同的模型。
+
+https://blog.csdn.net/JiangTao2333/article/details/124530699
+
+分布式共享内存（DSM - Distributed Shared Memory）
+
 ## VLIW & superscalar
 
 超长指令字(VLIW:Very long instruction word)和超标量（superscalar）都在同一个CPU中，集成了数套运算单元。
