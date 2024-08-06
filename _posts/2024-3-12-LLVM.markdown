@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  LLVM
+title:  LLVM, MLIR（一）
 category: toolchain 
 ---
 
@@ -243,3 +243,103 @@ A Tour to LLVM IR（上）
 https://zhuanlan.zhihu.com/p/66909226
 
 A Tour to LLVM IR（下）
+
+# MLIR
+
+Multi-Level IR
+
+代码：
+
+llvm/mlir
+
+教程：
+
+llvm/mlir/docs/Tutorials/Toy
+
+---
+
+几种到XLA的IR dialect：
+
+DHLO：Dynamic HLO。
+
+CHLO：client HLO dialect，上层前端的IR。
+
+LHLO："late"-HLO，经过buffer assignment后的HLO。HLO和LHLO的区别在于HLO注重的是tensor的表达，不考虑到内存的分配。
+
+MHLO："meta"-HLO dialect，是HLO风格的MLIR dialect， 并且在IR上扩展支持了dynamic shape。XLA HLO的shape是静态不可变的，不同shape需要重新编译；MHLO支持动态shape，IR本身有能力表达shape计算和动态shape信息的传递。
+
+LMHLO："late"-"meta"-HLO dialect。是LHLO风格的MLIR dialect。即内存分配之后的IR，也就是无动态shape的IR。
+
+开源项目：
+
+https://github.com/tensorflow/mlir-hlo
+
+https://github.com/openxla/stablehlo
+
+MLIR used in TensorFlow, JAX and Torch-MLIR.
+
+参考：
+
+https://zhuanlan.zhihu.com/p/404706825
+
+mlir-hlo cpu jit
+
+https://zhuanlan.zhihu.com/p/470439442
+
+elementwise fusion(hlo vs mhlo vs linalg)
+
+https://zhuanlan.zhihu.com/p/622562160
+
+XLA IR：HLO、LHLO、MHLO和LMHLO
+
+https://zhuanlan.zhihu.com/p/609386195
+
+hlo --> linalg
+
+---
+
+![](/images/img4/codegen-dialect-hierarchy.svg)
+
+![](/images/img5/TOSA.png)
+
+![](/images/img5/MLIR.png)
+
+Affine Dialect：这种Dialect使用来自多面体编译的技术使依赖分析和循环转换高效可靠。
+
+GPU Dialect：MLIR中的GPU Dialect模拟了类似于CUDA或OpenCL的通用GPU编程范式。它的目标是提供抽象来模拟GPU特定的操作和属性。它在很大程度上意味着与供应商无关。
+
+Tensor Operator Set Architecture (TOSA) Dialect
+
+Vector Dialect：对SIMD或者SIMT模型的抽象。
+
+SCF(Structured Control Flow) Dialect：比控制流图CFG更高层的抽象，比如并行的for和while循环以及条件判断。
+
+Async Dialect：通常用来表示异步操作模型。
+
+Control Flow Graph, CFG
+
+Operation Definition Specification, ODS
+
+文档：
+
+https://mlir.llvm.org/docs/Dialects/
+
+参考：
+
+https://discourse.llvm.org/t/codegen-dialect-overview/2723
+
+Codegen Dialect Overview
+
+---
+
+Transform Dialect：dialect之间的调度变换都可以使用transform dialect中相关的语句来实现了，最终写成一个transform.sequence。相较于完整的Pipeline，transform.sequence实现的调度变换十分灵活。
+
+官方文档：
+
+https://mlir.llvm.org/docs/Tutorials/transform/
+
+参考：
+
+https://zhuanlan.zhihu.com/p/624827690
+
+transform dialect
