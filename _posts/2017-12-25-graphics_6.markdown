@@ -219,6 +219,14 @@ https://www.zhihu.com/question/624732945
 
 为什么古代紫色稀有？明明蓝红可以调出来?
 
+---
+
+1931年，法国巴黎，国际照明委员会CIE决定开会讨论照明的颜色标准化问题。
+
+https://mp.weixin.qq.com/s/a1Bq2HkQav0_z8_q6IulLg
+
+颜色科学进化史（1）
+
 ## YUV & YCbCr
 
 在RGB颜色空间中，红，绿，蓝是基本元素。RGB格式是显示器通常使用的格式。

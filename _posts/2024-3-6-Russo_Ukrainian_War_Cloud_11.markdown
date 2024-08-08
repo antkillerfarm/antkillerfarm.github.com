@@ -150,3 +150,9 @@ https://news.ifeng.com/c/8ErWfeGuVev
 https://en.interfax.com.ua/news/general/931867.html
 
 Kuleba tells about work of 31 fighters, which made it possible to liberate Robotyne
+
+---
+
+2024.8.6 乌克兰切尔诺夫策市副市长德米特罗·西尔曼在库皮扬斯克方向保卫乌克兰国土时牺牲。
+
+自俄罗斯全面入侵乌克兰的第一天起，西尔曼就拿起武器保卫乌克兰。他本来会在10月1日迎来60岁生日。

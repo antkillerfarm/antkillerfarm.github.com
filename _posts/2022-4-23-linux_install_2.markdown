@@ -165,6 +165,14 @@ https://zhuanlan.zhihu.com/p/659446170
 
 ---
 
+生产环境在维护的时候重启之后所有数据几乎全部丢失。后来发现在投入生产环境这半年里，这台服务器一直运行在Ubuntu LiveCD环境下。
+
+https://www.v2ex.com/t/974678
+
+亲手造成的运维事故：在Live CD环境下部署并运行了8个月
+
+---
+
 https://mp.weixin.qq.com/s/I7C7cXFgxO7RO0Wpjjj3xQ
 
 一篇文章带你“重新认识”线程上下文切换怎么玩儿

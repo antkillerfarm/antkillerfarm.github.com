@@ -195,6 +195,8 @@ https://www.thepaper.cn/newsDetail_forward_18439240
 
 2024年春季战役：2024.5.10～2024.5.24
 
+2024年夏季库尔斯克战役：2024.8.6～
+
 ---
 
 ![](/images/img5/Kharkov.jpg)
@@ -238,3 +240,9 @@ https://www.zhihu.com/question/655569797
 https://www.zhihu.com/question/657263155
 
 如何看待乌军成功反攻北沃夫昌斯克并收复部分失地？
+
+---
+
+https://www.zhihu.com/question/663673519
+
+如何看待乌军再度发起库尔斯克特别军事行动？
