@@ -35,6 +35,14 @@ https://mp.weixin.qq.com/s/CI5V2LirWMuTUn9riaJPSA
 
 ---
 
+长六甲总共打了七发，二级碎了四次，咱也不知道为什么这么爱归零的部门这时候就不归零了。打以前那种载荷，二级碎了也就碎了，但是您这次是打卫星组星座，打组网卫星的火箭再碎两次，自己的轨道就特么没了，这位置的碎片污染轨道的时间能比您的星座的寿命长。头一次见自己给自己轨道面布雷的。
+
+https://www.zhihu.com/question/663598673
+
+“千帆星座”首批组网卫星发射仪式将在太原举行，“千帆星座”的发射对中国航天事业意味着什么？
+
+---
+
 https://mp.weixin.qq.com/s/QjB7zDCXC82x5O25InGZtA
 
 嫦娥五号开启我国首次地外天体采样返回之旅
@@ -352,23 +360,3 @@ https://mp.weixin.qq.com/s/1Jm00gCel41frG43oT9yyA
 https://www.zhihu.com/question/423138570
 
 火星车网速只有34Kb/s，当年老美怎么进行的登月直播呢？
-
----
-
-由于飞行前的制造和测试错误，氧气罐中的电线暴露了出来。在那个致命的夜晚，氧气罐中暴露的电线产生的火花引发了火灾，引爆了氧气罐，将服务舱外的隔热层炸飞。。。
-
-https://mp.weixin.qq.com/s/NmS1dbeIsQomsWYI8-OyZg
-
-阿波罗13号“伟大失败”50周年，NASA发布纪录片追忆奥德赛号逃生往事
-
----
-
-![](/images/img3/india_moon.jpg)
-
-https://www.zhihu.com/question/344795065/
-
-印度“月船2号”登陆月球失败，失败原因可能是什么？有什么影响和教训？
-
-https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
-
-印度失联的月球探测器依然成功了95%？那些年我们一起追过的月球

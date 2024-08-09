@@ -202,6 +202,8 @@ Linux中的pushd和popd
 
 历史命令搜索：Ctrl+r
 
+输入EOF：Ctrl+D
+
 ## 彩色字符
 
 https://mp.weixin.qq.com/s/DQzlfQXt4dV9PYwoVdomaw

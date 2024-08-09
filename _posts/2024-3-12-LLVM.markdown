@@ -91,8 +91,6 @@ Kaleidoscope示例的可执行文件路径：
 
 build/examples/Kaleidoscope
 
-
-
 ---
 
 参考：
@@ -104,7 +102,6 @@ https://zhuanlan.zhihu.com/p/407854583
 https://zhuanlan.zhihu.com/p/409749393
 
 使用LLVM实现一个简单编译器（二）
-
 
 ## 常用命令
 
@@ -188,6 +185,10 @@ https://blog.csdn.net/weixin_46222091/article/details/104528256
 
 LLVM中FileCheck开发者工具 2--入门教程
 
+## 细节
+
+
+
 ## 参考
 
 所谓的intrinsic function ，是属于编译器开洞魔法的范畴，这些函数的实现是直接写死在编译器的代码生成部分的，在最终得到的二进制里面不会存在这些函数的符号和实现。
@@ -203,6 +204,16 @@ C++标准库中是否有需要依赖编译器魔法才能实现的功能？
 https://www.zhihu.com/question/582148351
 
 C/C++函数“必须声明但禁止定义”才能使用，函数地址也不存在，是什么神奇的操作？
+
+---
+
+llvm IR能跨ISA，但不能跨OS。
+
+https://www.zhihu.com/question/663199568
+
+为什么llvm的字节码没作为一种跨平台手段流行起来？
+
+---
 
 https://mp.weixin.qq.com/s/FSlJKnC0y51nsLDp1B3tXg
 

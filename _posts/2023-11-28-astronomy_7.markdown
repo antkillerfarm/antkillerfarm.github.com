@@ -9,6 +9,26 @@ category: Nature
 
 # 阿波罗50年（续）
 
+由于飞行前的制造和测试错误，氧气罐中的电线暴露了出来。在那个致命的夜晚，氧气罐中暴露的电线产生的火花引发了火灾，引爆了氧气罐，将服务舱外的隔热层炸飞。。。
+
+https://mp.weixin.qq.com/s/NmS1dbeIsQomsWYI8-OyZg
+
+阿波罗13号“伟大失败”50周年，NASA发布纪录片追忆奥德赛号逃生往事
+
+---
+
+![](/images/img3/india_moon.jpg)
+
+https://www.zhihu.com/question/344795065/
+
+印度“月船2号”登陆月球失败，失败原因可能是什么？有什么影响和教训？
+
+https://mp.weixin.qq.com/s/scAkK8yhnEZKUuTrwHmK4w
+
+印度失联的月球探测器依然成功了95%？那些年我们一起追过的月球
+
+---
+
 https://www.zhihu.com/question/618270598
 
 俄罗斯月神25号（Luna-25）轨道调整异常导致其与月球相撞，如何评价俄罗斯目前的航天能力？
@@ -23,43 +43,19 @@ https://zhuanlan.zhihu.com/p/651231503
 
 # 天文杂谈
 
-1990年发射的哈勃太空望远镜，由于一片镜片边缘磨薄了2.2mm，相机镜头misallignment, 最终导致发射后拍摄图像模糊。
+![](/images/img4/Van_Allen_radiation_belts.jpg)
 
-NASA的科学家开始没有意识到是望远镜的镜头质量问题，还在讨论是不是外太空就是模模糊糊的形态……
+范·艾伦辐射带（Van Allen radiation belts）是地球磁场捕获的太阳宇宙射线和部分银河宇宙射线中的高能带电粒子组成。一般来说，内辐射带里高能质子多，外辐射带里高能电子多。
 
-后来相机工程师发现了是由于一个镜片零件生产误差造成的问题，花了3年时间在太空修复了这个问题，避免了重新发射，为NASA节省了47亿美元。科学家终于能拍到清晰的太空图像了。
+1958年1月31日，美国第一颗人造卫星探险者一号升空，当升至800千米高空时，星上所载盖革计数器读数突然下降至0。到1958年3月26日探险者三号升空时，又发生了同样的情况。James Van Allen认为，这是因为存在极大量的辐射导致计数器达到饱和而失灵造成的。因此，同年7月26日发射探险者四号时，他在计数器前端加入一小片薄铅以阻挡部分辐射。果然，新的卫星证实了他的猜测。
 
-另一个已于2020年退役的太空红外望远镜斯皮策空间望远镜（Spitzer Space Telescope）覆盖波长为3-180微米，但其镜面直径仅为0.85米，观测能力有限。
+>James Van Allen，1914～2006，University of Iowa博士（1939）+教授。美国科学院院士。
 
-20年代三大空间巡天望远镜——载人空间站工程巡天空间望远镜（Chinese Survey Space Telescope, 简称CSST，亦被称为Chinese Space Station Telescope）、欧洲航天局的欧几里得（Euclid）和美国航天局的罗曼太空望远镜（Roman Space Telescope）。
+---
 
-https://mp.weixin.qq.com/s/Wcd_bv_bt-xv42UD40dDww
+恩克彗星是人们发现的第一颗短周期彗星，至今也还没有找到过周期比它更短的彗星。恩克用6个星期的时间，计算出这颗彗星的轨道，周期为3.3年，并且预言1822年5月24日再回到近日点，果然它准时回来了，成为继哈雷彗星之后，第二颗按预言回归的彗星。
 
-深度传感进化史
-
-https://mp.weixin.qq.com/s/8vRFfFLdLWSPpTzHjUKegQ
-
-哈勃太空望远镜30岁生日快乐！我们看到的宇宙因你而不同
-
-https://www.zhihu.com/question/452589619
-
-中国空间站工程巡天望远镜和哈勃相比有什么优势和劣势？
-
-https://www.zhihu.com/question/363427886
-
-很多人说哈勃望远镜是锁眼卫星的民用版，那么锁眼调转过去观测宇宙能够达到哈勃的效果吗？
-
-https://zhuanlan.zhihu.com/p/36125534
-
-哈勃28周岁，但大家知道锁眼么？
-
-https://mp.weixin.qq.com/s/DFUMQ08Efr5iJJJlRthsOA
-
-这将是中国有史以来最昂贵、也最先进的望远镜（巡天空间望远镜）
-
-https://mp.weixin.qq.com/s/k1v-sDi0x1pRDZsHcDRTpA
-
-雄心勃勃，中国建造首个大型太空光学望远镜
+>Johann Franz Encke，1791～1865，德国天文学家。University of Göttingen毕业，导师Gauss。1825年担任柏林天文台台长。Leopold Kronecker的导师。他还发现了土星环的Encke Gap。
 
 ---
 

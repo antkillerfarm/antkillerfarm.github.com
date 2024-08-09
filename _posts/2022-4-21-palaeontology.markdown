@@ -297,74 +297,40 @@ https://mp.weixin.qq.com/s/mPVQB9N58wxuOHxT-GWNlg
 
 # 机械+
 
-https://mp.weixin.qq.com/s/mOdJm812AbRDA0M-8odW3w
+![](/images/img5/turbine.webp)
 
-跑步机原型竟然是十九世纪的刑具！来扒一扒跑步机的黑历史…
+进气口有压气机将空气压缩进来，也就是吸入比自然流入的更多的空气；而要推动压气机工作，就要在喷口处有一个涡轮，从高速喷出的气体中获得一点能量，然后用轴传递到前端的压气机。这类发动机叫涡喷发动机。
 
-https://www.zhihu.com/question/56689494
+![](/images/img5/turbofan.webp)
 
-如何正确评价美军二战时的谢尔曼坦克？
+后来，工程师发现，如果前端压气机的叶片长一点，长出发动机口径，变成风扇，直接拉动空气，整机效率要比普通的涡轮喷气发动机高，于是就搞出来涡轮风扇发动机，简称涡扇。
 
-https://zhuanlan.zhihu.com/p/451794381
+我们看到，从进气口进来的空气并没有全部进入发动机燃烧室，而是有一部分从燃烧室外侧走了。于是就有了内外涵道的问题，就有了内外涵道比，也就是从外涵道直接走掉的空气大约占多少。
 
-二战中敌我双方都给予很高评价的追猎者坦克歼击车
+一般来说，涵道比越大，发动机效率越高，飞机越省油。所以民航用的都是大涵比的发动机。但是大涵比带来的问题是，发动机适应的速度范围比较窄，尤其是高速飞行时，过大的风扇不会带来拉力，反而带来了空气阻力。战斗机的速度是有时快有时慢的，而且经常要突然加速。所以军机都不用大涵比，而是小涵比。一般战斗机的发动机，涵道比在0.25~0.5。
 
-https://mp.weixin.qq.com/s/QjuQgjChunKm8O8N86GZGQ
+能否像变后掠翼一样，做涵道比可调的发动机呢？美国正在研制中，这称之为变循环发动机。
 
-让机器帮人砌堵墙怎么那么难？这是人类的百年奋斗史
+---
 
-https://mp.weixin.qq.com/s/010SPkEVV4e7f5MIoiL6xA
+![](/images/img5/Flintlock.webp)
 
-《狙击手》预告不相信重机枪能打狙击？中国人要自信！
+<video  id="myvideo" width="100%" height="auto" controls="controls" loop="loop">
+    <source src="/images/img5/Matchlock.mp4" type='video/mp4' />
+</video>
 
-https://www.zhihu.com/zvideo/1449458713610919936
+https://www.zhihu.com/question/459658757
 
-坦克的工作原理是这样的
+从火绳枪发展到燧发枪，提升的仅仅是击发方式吗?
 
-https://mp.weixin.qq.com/s/NBXndV2DnGFoRZUyMDWw3Q
+https://www.zhihu.com/question/459659751
 
-从61式到10式：日本战后坦克发展(上)
+在古代，为了解决火绳枪雨天的劣势，都做了什么样的针对方案?
 
-https://mp.weixin.qq.com/s/a6cJvb45Cx5YPXI3FFBJJA
+https://www.zhihu.com/question/286135893
 
-从61式到10式：日本战后坦克发展(下)
+为何清军迟迟不装备燧发枪？
 
-https://mp.weixin.qq.com/s/tBDQ1Ko7UbX5lfzV42qmrQ
+https://www.zhihu.com/question/574819489
 
-人类科技工程发展图鉴：哪个是你心中的硬核担当？
-
-https://www.zhihu.com/question/24810449
-
-纯电动车是否有变速箱？
-
-https://mp.weixin.qq.com/s/5uF_QiFlSmaCn3YUMr6p8w
-
-大和级战列舰有克星？蒙大拿：不好意思！在座的各位都是垃圾
-
-https://www.zhihu.com/question/551426461
-
-要是我穿上最结实的板甲、举着最结实的盾牌，能在50米内硬接一发一磅加农炮合口弹还死不了吗？
-
-https://page.om.qq.com/page/ORDr8jUJJAlXS1E83tUk5K6A0
-
-穿甲弹、破甲弹、碎甲弹分不清，一炮轰上去效果差远了
-
-https://www.zhihu.com/question/543186991
-
-bmp系列步兵战车各有什么优点、缺点?
-
-https://zhuanlan.zhihu.com/p/595696179
-
-乌克兰国产Triton装甲运兵车
-
-https://www.zhihu.com/question/34831530
-
-T72真的很不堪吗？
-
-https://www.zhihu.com/question/348210162
-
-明朝时期比较著名的火器之一三眼铳能在有效射程内击穿欧洲的板甲吗？
-
-https://www.zhihu.com/question/449782036
-
-十八世纪帆船横渡大西洋大约要多久？
+燧发枪时代士兵身上装多少发子弹?
