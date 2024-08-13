@@ -185,13 +185,39 @@ https://blog.csdn.net/weixin_46222091/article/details/104528256
 
 LLVM中FileCheck开发者工具 2--入门教程
 
-## 细节
+## Pass
 
+与其他系统不同，LLVM并不坚持一种错误的观念，即一套优化适用于所有语言和所有情况。LLVM允许编译器实现者完全决定使用哪些优化、以何种顺序以及在什么情况下使用。
 
+https://llvm.org/docs/Passes.html
+
+常用pass列表
+
+---
+
+Pass主要分为三类：
+
+Transform Pass：用于变换IR。
+
+Analysis Pass：分析IR给Transform Pass使用。
+
+Utility Pass：辅助调试的Pass，例如打印CFG。
+
+---
+
+Pass的管理由相应的PassManager负责，例如FunctionPassManager。
+
+PassBuilder用于注册Transform Passes所使用的Analysis Pass：
+
+```cpp
+TheMAM = std::make_unique<ModuleAnalysisManager>();
+PassBuilder PB;
+PB.registerModuleAnalyses(*TheMAM);
+```
 
 ## 参考
 
-所谓的intrinsic function ，是属于编译器开洞魔法的范畴，这些函数的实现是直接写死在编译器的代码生成部分的，在最终得到的二进制里面不会存在这些函数的符号和实现。
+所谓的intrinsic function，是属于编译器开洞魔法的范畴，这些函数的实现是直接写死在编译器的代码生成部分的，在最终得到的二进制里面不会存在这些函数的符号和实现。
 
 https://zhuanlan.zhihu.com/p/348365662
 

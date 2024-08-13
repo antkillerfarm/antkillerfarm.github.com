@@ -57,6 +57,8 @@ https://mp.weixin.qq.com/s/TmLSHVkeyqfU-9Jgir0czA
 
 ![](/images/img4/CPU_3.jpg)
 
+![](/images/img5/Pitch.webp)
+
 除了fin width（鳍的宽度）和gate length（栅极长度）这俩数据还相对接近我们所说的10nm/7nm这个工艺名称，其他各部分pitch/尺寸都没有达到或接近10nm/7nm的。
 
 以前（在190nm以前），我们听到的这个工艺数字特指的就是gate length...，但在190nm以后工艺名称的数字增长，和实际gate length的缩减就已经不同步了。在7nm尤其是5nm以后，变得越来越没有关系...
