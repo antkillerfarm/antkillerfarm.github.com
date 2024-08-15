@@ -97,6 +97,20 @@ export XLA_IR_DEBUG=1
 
 ---
 
+打印IR的source_line的call stack：
+
+```cpp
+const torch::lazy::MetaData& nmeta = node->metadata();
+std::vector<SourceLocation> frame_info;
+meta.frame_info = torch::lazy::GetPythonFramesFunction()();
+GetPythonFrames
+PyFrame_GetLineNumber
+```
+
+`PyFrame_GetLineNumber`是python语言的标准C API函数。可参见python手册的Frame Objects章节。
+
+---
+
 tensor/op被统一为XlaNode。所以整个graph的执行流程被分为两个阶段：
 
 1）MakeNode阶段。建立input tensor和op，并缓存起来。
