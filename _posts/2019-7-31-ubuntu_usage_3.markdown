@@ -344,7 +344,7 @@ https://www.cnblogs.com/schips/p/10141278.html
 
 # Ubuntu 22.04使用手记
 
-Ubuntu 20.04是2022.4.21发布的。
+Ubuntu 22.04是2022.4.21发布的。
 
 内核：5.15
 

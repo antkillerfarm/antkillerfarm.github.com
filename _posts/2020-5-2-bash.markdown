@@ -350,3 +350,15 @@ linux shell不同进制数据转换（二进制，八进制，十六进制，bas
 https://www.freecodecamp.org/news/command-line-commands-cli-tutorial/
 
 Command Line Commands – CLI Tutorial（powershell）
+
+# Ubuntu 24.04使用手记
+
+内核：6.8
+
+LibreOffice：24.2
+
+---
+
+发布的第一时间，我想使用apt更新，然而这种更新通常会安排到当年10月进行。
+
+所以直到2024.8换了新电脑之后，我才有机会体验新版本。
