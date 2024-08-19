@@ -242,21 +242,3 @@ https://zhuanlan.zhihu.com/p/714164455
 https://www.zhihu.com/pin/1806673041855479809
 
 纽约时报报道
-
----
-
-https://www.zhihu.com/pin/1806680039632297984
-
-第一周战况分析
-
-https://zhuanlan.zhihu.com/p/714364160
-
-简单聊聊机械化装备补充和库尔斯克攻势
-
-https://zhuanlan.zhihu.com/p/714722158
-
-乌克兰的库尔斯克2024行动有效削弱了俄罗斯近前线的地面补给线
-
-https://zhuanlan.zhihu.com/p/714684490
-
-由于乌克兰控制了库尔斯克南部，俄罗斯与白俄罗斯南部铁路中断

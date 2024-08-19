@@ -218,3 +218,7 @@ https://zhuanlan.zhihu.com/p/613419718
 https://zhuanlan.zhihu.com/p/617040010
 
 “我工作，然后我哭泣”：巴赫穆特附近疲惫不堪的乌克兰医务人员为生命而战
+
+https://www.163.com/dy/article/J9EDCF4C0552BNOQ.html
+
+乌克兰奥运会冠军将拍卖自己的金牌为乌军筹款
