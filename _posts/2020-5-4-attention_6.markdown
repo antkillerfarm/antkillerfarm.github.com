@@ -304,6 +304,10 @@ https://blog.csdn.net/v_JULY_v/article/details/134923301
 
 一文通透想颠覆Transformer的Mamba：从SSM、HiPPO、S4到Mamba
 
+https://blog.csdn.net/v_JULY_v/article/details/140131413
+
+一文通透mamba2：力证Transformer are SSM——从SSM、半可分矩阵、SSD到mamba2
+
 # RWKV
 
 ## Linear Transformer

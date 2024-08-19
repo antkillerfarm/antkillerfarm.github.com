@@ -255,13 +255,22 @@ BN的特点：
 
 ## Layer Normalization
 
-Layer Normalization的计算比较简单，直接使用公式1即可。由于它是针对x的，因此对每个样本都要统计它的均值和方差，这对于inference来说，计算量是偏大的。
+$$
+\begin{aligned}
+\text{LN}(x) = \gamma \left(\frac{x - \mu_B}{\sigma_B}\right) + \beta, \\
+\text{where} \\
+\mu_B = \frac{1}{M} \sum_{i=1}^{M} x_i, \\
+\sigma_B = \sqrt{\frac{1}{M} \sum_{i=1}^{M} (x_i - \mu_B)^2 + \epsilon},
+\end{aligned}
+$$
+
+和BN一样，$$\beta,\gamma$$由训练得到。
+
+由于它是针对x的，因此对每个样本都要统计它的均值和方差，这对于inference来说，计算量是偏大的。
 
 LN的特点：
 
 不依赖于batch size的大小，即使对于batch size为1的在线学习，也可以完美适应；
-
-训练阶段和推理阶段的计算过程完全一样。
 
 适用于RNN或LSTM，而在CNN上表现一般。
 
