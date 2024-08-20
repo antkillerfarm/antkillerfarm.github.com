@@ -109,14 +109,6 @@ https://www.163.com/dy/article/J1ECB0R405536EZT.html
 
 ---
 
-我还坚持战斗在这里，因为我想回家。我在第聂伯河对岸的家还被俄国人占领着，我正在为乌克兰和我们的领土而战，以尽快解放我的家园。我在赫尔松的战斗中受了重伤，我接受了四次手术就是为了返回部队，直到战争结束以前我都不会退出。
-
-https://zhuanlan.zhihu.com/p/655142678
-
-制造死亡，寻找死亡——两条前线上不容犯错的责任
-
----
-
 为了购买装备，许多人负债累累；国防部的工资卡没有发给一些被动员的人，而另一些人则无法激活工资卡。
 
 https://zhuanlan.zhihu.com/p/579785034
@@ -222,3 +214,23 @@ https://zhuanlan.zhihu.com/p/617040010
 https://www.163.com/dy/article/J9EDCF4C0552BNOQ.html
 
 乌克兰奥运会冠军将拍卖自己的金牌为乌军筹款
+
+https://www.zhihu.com/question/567275817
+
+大家怎么看乌克兰高调给一名台湾雇佣兵举行华丽葬礼？（曾圣光）
+
+https://zhuanlan.zhihu.com/p/661990126
+
+乌克兰的日与夜（上）：台湾兵的前线烽火余生录
+
+https://zhuanlan.zhihu.com/p/663655155
+
+乌克兰的日与夜（下）：“要死，就我在你旁边”战场台湾手足
+
+https://zhuanlan.zhihu.com/p/666956540
+
+悲壮的乌克兰爱情故事
+
+https://zhuanlan.zhihu.com/p/684832394
+
+一个斯拉夫人的半辈子，根据我寒假期间在利沃夫和一个俄族乌克兰人的线下&TG的交流整理而成。

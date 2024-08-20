@@ -193,6 +193,20 @@ https://zhuanlan.zhihu.com/p/615277009
 
 自监督学习是一种特殊目的的无监督学习。不同于传统的AutoEncoder等方法，仅仅以重构输入为目的，而是希望通过surrogate task学习到和高层语义信息相关联的特征。
 
+## MoCo
+
+https://mp.weixin.qq.com/s/9zaTjwwGPHHzSv1ZmHf8_g
+
+不妨试试MoCo，来替换ImageNet上pretrain模型！
+
+https://mp.weixin.qq.com/s/GC6PGlweneYtYo7_SUr0Zw
+
+MoCo V3：我并不是你想的那样！
+
+https://mp.weixin.qq.com/s/sAYh3l2eab2r2KpbdxN30A
+
+MoCo三部曲
+
 ## 对比学习
 
 ![](/images/img4/SimCLR.jpg)

@@ -316,3 +316,13 @@ UE4：从入门到入坟
 https://www.cnblogs.com/timlly/
 
 一个UE的专栏
+
+# 其他开源引擎
+
+Ogre：
+
+https://www.ogre3d.org/
+
+Irrlicht：
+
+https://irrlicht.sourceforge.io/
