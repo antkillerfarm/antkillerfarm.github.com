@@ -79,6 +79,10 @@ https://www.zhihu.com/question/589761499
 
 COLONY SIM游戏列表
 
+## 2024.8
+
+《黑神话：悟空》似乎不错，可惜手残，对硬核ACT感觉一般。
+
 ## NES
 
 本来NES是不能归类于PC Game的，但毕竟也是本人的童年记忆，就写一下了。
@@ -170,6 +174,8 @@ https://mp.weixin.qq.com/s/s58zFVWTp-Mo1pyfoUKo6Q
 “恶意版”俄罗斯方块游戏火了，永远给你不想要的方块，世界纪录才消掉31行
 
 ## PS
+
+![](/images/img5/game.jpg)
 
 PS我只玩过模拟器。主要有：铁拳3、射雕英雄传。
 
@@ -268,27 +274,3 @@ https://www.zhihu.com/question/451164963
 https://zhuanlan.zhihu.com/p/40805178
 
 给外甥的暑假礼物——复古掌机Retro Game
-
----
-
-2024.1
-
-雷电无线手柄到位，开始寻找模拟器。
-
-PCSX2：PS2模拟器
-
-WinKawaks：街机模拟器
-
-MAME：老牌的多平台开源模拟器。但是使用不是很方便，我捣鼓半天也没弄好。
-
-Mednafen：新近流行的多平台开源模拟器。
-
-官网：
-
-https://mednafen.github.io
-
-但是这个软件是基于命令行的，所以一般需要使用mednaffe作为它的GUI前端。
-
-mednaffe官网：
-
-https://github.com/AmatCoder/mednaffe

@@ -7,6 +7,32 @@ category: Attention
 * toc
 {:toc}
 
+# 花式Attention（续）
+
+https://mp.weixin.qq.com/s/s8sKoTzqyf-_-N0TSLnPow
+
+不用看数学公式！图解谷歌神经机器翻译核心部分：注意力机制
+
+https://mp.weixin.qq.com/s/TM5poGwSGi5C9szO13GYxg
+
+一文解读NLP中的注意力机制
+
+https://zhuanlan.zhihu.com/p/59698165
+
+NLP中的Attention机制
+
+https://mp.weixin.qq.com/s/JVkhX_v2fCaICawk-P-fzw
+
+通俗易懂：8大步骤图解注意力机制
+
+https://juejin.im/post/5e57d69b6fb9a07c8a5a1aa2
+
+啥是Attention?
+
+https://mp.weixin.qq.com/s/PF02OwP0CHDf6l4BHHDqow
+
+一文读懂Attention机制
+
 # Transformer
 
 之前的文章已经介绍了Attention和《Attention is All You Need》。但实际上，《Attention is All You Need》不仅提出了两种Attention模块，而且还提出了如下图所示的Transformer模型。该模型主要用于NMT领域，由于Attention不依赖上一刻的数据，同时精度也不弱于LSTM，因此有很好并行计算特性，在工业界得到了广泛应用。阿里巴巴和搜狗目前的NMT方案都是基于Transformer模型的。
@@ -345,39 +371,3 @@ Sesame Street（芝麻街）是是美国公共广播协会（PBS）制作播出�
 - ERNIE的基础上，用大量数据和先验知识，进行多任务的持续学习，诞生了ERNIE2.0。
 - BERT-wwm增加了训练数据集、训练步数，诞生了BERT-wwm-ext。
 - BERT的其他改进模型基本靠增加参数和训练数据，考虑轻量化之后，诞生了ALBERT。
-
-https://mp.weixin.qq.com/s/kwKZfNSYTzc-PGKxTxm8-w
-
-复旦大学：最新《预训练语言模型》2020综述论文
-
-https://zhuanlan.zhihu.com/p/115014536
-
-全面总结！PTMs：NLP预训练模型
-
-https://mp.weixin.qq.com/s/WNsJ9WZdYxvT1UTYwjLTyg
-
-按照时间线帮你梳理10种预训练模型
-
-https://mp.weixin.qq.com/s/WDXGCC_MPK_sBCj4Bx6EDw
-
-从静态到动态，词表征近几十年发展回顾
-
-https://mp.weixin.qq.com/s/vW8jglstKsR7OSbyjexKrQ
-
-自然语言处理嵌入：语义向量表示理论与进展，从Word2Vec到BERT，163页pdf
-
-https://mp.weixin.qq.com/s/tokxh7Conb-hajj8pnr2fA
-
-Google BERT作者Jacob斯坦福亲授《上下文词向量与预训练语言模型: BERT到T5》43页ppt
-
-https://mp.weixin.qq.com/s/FRfjOSbnquQeFSBDI1FWwg
-
-6个你应该用用看的用于文本分类的最新开源预训练模型
-
-https://mp.weixin.qq.com/s/UVeWDavdHxmziUWW39jrkA
-
-原理篇一：从one-hot到Word2vec
-
-https://mp.weixin.qq.com/s/JSWw5RBgQoW-PrfIhbMtjQ
-
-原理篇二：从ELMo到ALBERT

@@ -414,3 +414,11 @@ public:
 https://www.ibm.com/developerworks/cn/aix/library/1212_lufang_c11new/index.html
 
 C++11标准新特性：Defaulted和Deleted函数
+
+# assert
+
+```cpp
+assert(ExprSymbol && "Function not found");
+```
+
+这个用法挺有意思的。

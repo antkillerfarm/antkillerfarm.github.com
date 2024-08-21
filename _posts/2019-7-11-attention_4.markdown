@@ -9,6 +9,42 @@ category: Attention
 
 # 预训练语言模型进化史（续）
 
+https://mp.weixin.qq.com/s/kwKZfNSYTzc-PGKxTxm8-w
+
+复旦大学：最新《预训练语言模型》2020综述论文
+
+https://zhuanlan.zhihu.com/p/115014536
+
+全面总结！PTMs：NLP预训练模型
+
+https://mp.weixin.qq.com/s/WNsJ9WZdYxvT1UTYwjLTyg
+
+按照时间线帮你梳理10种预训练模型
+
+https://mp.weixin.qq.com/s/WDXGCC_MPK_sBCj4Bx6EDw
+
+从静态到动态，词表征近几十年发展回顾
+
+https://mp.weixin.qq.com/s/vW8jglstKsR7OSbyjexKrQ
+
+自然语言处理嵌入：语义向量表示理论与进展，从Word2Vec到BERT，163页pdf
+
+https://mp.weixin.qq.com/s/tokxh7Conb-hajj8pnr2fA
+
+Google BERT作者Jacob斯坦福亲授《上下文词向量与预训练语言模型: BERT到T5》43页ppt
+
+https://mp.weixin.qq.com/s/FRfjOSbnquQeFSBDI1FWwg
+
+6个你应该用用看的用于文本分类的最新开源预训练模型
+
+https://mp.weixin.qq.com/s/UVeWDavdHxmziUWW39jrkA
+
+原理篇一：从one-hot到Word2vec
+
+https://mp.weixin.qq.com/s/JSWw5RBgQoW-PrfIhbMtjQ
+
+原理篇二：从ELMo到ALBERT
+
 https://zhuanlan.zhihu.com/p/69290203
 
 Transformer结构及其应用详解--GPT、BERT、MT-DNN、GPT-2
@@ -340,19 +376,3 @@ https://github.com/PaddlePaddle/ERNIE/
 除此之外，清华也有一篇叫ERNIE的论文：
 
 《ERNIE: Enhanced Language Representation with Informative Entities》
-
-这几篇论文主要讨论了，如何将语义信息融入BERT。篇幅原因，这里只关注百度的两篇论文的做法。
-
-![](/images/img3/ERNIE.png)
-
-相较于BERT学习原始语言信号，ERNIE模型通过对词、实体等语义单元的掩码，使得模型学习完整概念的语义表示。上例中，BERT通过“哈”与“滨”的局部共现，即可判断出“尔”字，但它没有学习到与“哈尔滨”相关的知识。而ERNIE通过学习词与实体的表达，使模型能够建模出“哈尔滨”与“黑龙江”的关系，学到“哈尔滨”是“黑龙江”的省会以及“哈尔滨”是个冰雪城市。
-
-![](/images/img3/ERNIE_2.png)
-
-为了学习相关语义，ERNIE提出了如上图所示的不同级别的mask方法。
-
-![](/images/img3/ERNIE_3.png)
-
-还有如上图所示的语义嵌入。
-
-BERT已经证明了预训练模型对于多种NLP任务的有效性，因此使用多任务学习就成为一个很自然的想法。

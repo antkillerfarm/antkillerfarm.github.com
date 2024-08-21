@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十五）——多任务学习
+title:  深度学习（二十五）——多任务学习, DLSS
 category: DL 
 ---
 
@@ -194,6 +194,8 @@ DLSS 1～2本质上是超分辨率技术（Super Resolution）。
 DLSS 3本质上是插帧技术（Frame Generation）。现实中，大多数玩家对分辨率更敏感，对帧率没那么敏感的。
 
 DLSS 3.5本质上是光线重构技术（Ray Reconstruction），只有在光追的时候才能开启。
+
+以上技术名称都叫DLSS，本质上不是同一项技术，甚至是相互独立的。唯一共同点就是都和深度学习相关。
 
 https://zhuanlan.zhihu.com/p/123642175
 

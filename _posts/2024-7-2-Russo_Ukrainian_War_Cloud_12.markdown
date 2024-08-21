@@ -392,3 +392,7 @@ https://www.zhihu.com/question/650991634
 https://zhuanlan.zhihu.com/p/704143990
 
 俄罗斯与朝鲜合作是个好消息，因为捅了中国眼睛
+
+https://zhuanlan.zhihu.com/p/715611217
+
+连烧三天 普京痛心得知41名消防员在罗斯托夫油库大火中受伤

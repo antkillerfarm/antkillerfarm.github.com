@@ -11,6 +11,28 @@ category: my story
 
 ## 小霸王 & 模拟器（续）
 
+2024.1
+
+雷电无线手柄到位，开始寻找模拟器。
+
+PCSX2：PS2模拟器
+
+WinKawaks：街机模拟器
+
+MAME：老牌的多平台开源模拟器。但是使用不是很方便，我捣鼓半天也没弄好。
+
+Mednafen：新近流行的多平台开源模拟器。
+
+官网：
+
+https://mednafen.github.io
+
+但是这个软件是基于命令行的，所以一般需要使用mednaffe作为它的GUI前端。
+
+mednaffe官网：
+
+https://github.com/AmatCoder/mednaffe
+
 darkstation：PS模拟器。支持CHD格式的ROM，CHD格式是一种可以替代ISO的压缩格式。
 
 RetroArch：一个多平台模拟器。
@@ -26,6 +48,54 @@ Yuzu：一个任天堂NS的模拟器。NS由于性能过于低下，成为本世
 Cheat Engine是一个开源工具，它结合了内存扫描、十六进制编辑器和动态调试功能，常用于游戏修改：
 
 https://www.cheatengine.org/
+
+上述是通用修改工具，用途也不局限于修改游戏。
+
+现在还有一些针对特定游戏的修改器：
+
+https://flingtrainer.com/
+
+风灵月影
+
+该网站收集并制作了2000+游戏的修改器。
+
+## DosBox
+
+DosBox是Linux平台玩DOS老游戏的法宝。
+
+安装：
+
+`sudo apt install dosbox`
+
+启动DosBox之后，需要使用如下命令加载本地文件夹：
+
+`mount c ~/dosprom`
+
+---
+
+DOS下的游戏编程主要是受内存访问范围的限制，实模式直接可以访问的内存才640KB。突破内存的技术有EMS和XMS等。发展到后期，基本上都使用DOS下32位保护模式技术。比如DPMI、DOS4GW。使用Watcom C++ & DOS4GW就能轻松获得平展的4G内存空间。
+
+## 藏宝屋
+
+https://github.com/rwv/chinese-dos-games
+
+中文DOS游戏
+
+https://github.com/skywind3000/preserve-cd
+
+绝版游戏保护工程
+
+https://zhuanlan.zhihu.com/p/671410997
+
+魔兽世界单机版服务端编译和运行指南（TrinityCore）
+
+https://zhuanlan.zhihu.com/p/672284712
+
+魔兽世界单机版服务端编译和运行指南（AzerothCore）
+
+https://zhuanlan.zhihu.com/p/673951143
+
+魔兽世界(AzerothCore)机器人队友单机版服务端编译说明
 
 ## 轶事
 

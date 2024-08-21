@@ -21,7 +21,7 @@ $$head_i = Attention(\boldsymbol{Q}\boldsymbol{W}_i^Q,\boldsymbol{K}\boldsymbol{
 
 https://www.zhihu.com/question/446385446
 
-BERT中，multi-head 768 * 64 * 12与直接使用768 * 768矩阵统一计算，有什么区别？
+BERT中，multi-head 768 x 64 x 12与直接使用768 x 768矩阵统一计算，有什么区别？
 
 ## Self Attention
 
@@ -259,27 +259,3 @@ Attention模型方法综述
 https://mp.weixin.qq.com/s/MZ8qSQzXqZQPQa97BKitHA
 
 深入理解注意力机制
-
-https://mp.weixin.qq.com/s/s8sKoTzqyf-_-N0TSLnPow
-
-不用看数学公式！图解谷歌神经机器翻译核心部分：注意力机制
-
-https://mp.weixin.qq.com/s/TM5poGwSGi5C9szO13GYxg
-
-一文解读NLP中的注意力机制
-
-https://zhuanlan.zhihu.com/p/59698165
-
-NLP中的Attention机制
-
-https://mp.weixin.qq.com/s/JVkhX_v2fCaICawk-P-fzw
-
-通俗易懂：8大步骤图解注意力机制
-
-https://juejin.im/post/5e57d69b6fb9a07c8a5a1aa2
-
-啥是Attention?
-
-https://mp.weixin.qq.com/s/PF02OwP0CHDf6l4BHHDqow
-
-一文读懂Attention机制

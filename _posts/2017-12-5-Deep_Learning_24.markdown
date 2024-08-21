@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十四）——深度目标跟踪, DLSS
+title:  深度学习（二十四）——深度目标跟踪
 category: DL 
 ---
 
