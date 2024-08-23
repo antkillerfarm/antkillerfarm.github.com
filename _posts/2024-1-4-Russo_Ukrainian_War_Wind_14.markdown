@@ -234,3 +234,7 @@ https://zhuanlan.zhihu.com/p/666956540
 https://zhuanlan.zhihu.com/p/684832394
 
 一个斯拉夫人的半辈子，根据我寒假期间在利沃夫和一个俄族乌克兰人的线下&TG的交流整理而成。
+
+https://zhuanlan.zhihu.com/p/715986568
+
+虎胆龙威 普京哀痛得知俄罗斯硬汉演员不幸被乌克兰侵略者击毙

@@ -144,22 +144,6 @@ API：Application Programming Interface
 
 比如，`int register_netdevice(struct net_device *dev)`这个内核函数，原型基本上是不会变的，所以保持这个API稳定是很简单的，但它的ABI就未必了，就算是这个函数定义本身没变，即API没变，而struct net_device的定义变了，里面多了或者少了某一个字段，它的ABI就变了，你之前编译好的二进制模块就很可能会出错了，必须重新编译才行。
 
-SSA：static single assignment form
-
-```cpp
-// Non SSA form
-a = 1;
-a = 2;
-b = a + 1;
-
-// SSA form
-a1 = 1;
-a2 = 2;
-b1 = a2 + 1;
-```
-
-SSA只要求每个变量的赋值程序点只能有一个，这个程序点可以出现在循环内部（这意味着执行过程中这个程序点会被多次执行）。
-
 CSE：Common subexpression elimination
 
 DCE：Dead code elimination
@@ -313,3 +297,15 @@ https://www.zhihu.com/question/484961291
 https://juejin.im/post/5d70fb2ce51d4557ca7fddaa
 
 Android CPU, Compilers, D8 & R8
+
+## 文法
+
+LL(k)：这里的"k"表示解析器可以向前看k个符号来做出决策。
+
+https://blog.csdn.net/huihuisd/article/details/103777331
+
+乔姆斯基4型文法
+
+https://zhuanlan.zhihu.com/p/94424139
+
+LL, LR文法浅析

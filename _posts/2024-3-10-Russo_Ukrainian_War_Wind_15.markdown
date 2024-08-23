@@ -17,6 +17,8 @@ Slava Ukraini：荣耀归于乌克兰，Слава Україні
 
 Heroyam Slava：героям слава，glory to the heroes
 
+我在这里。我们没有放下武器。我们将保卫我们的国家。
+
 The fight is here. I need ammunition, not a ride.
 
 The fate of Ukraine depends only on Ukrainians. No one but ourselves will control our lives.

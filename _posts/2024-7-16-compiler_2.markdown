@@ -9,17 +9,58 @@ category: toolchain
 
 # 编译原理
 
-## 文法
+## SSA
 
-LL(k)：这里的"k"表示解析器可以向前看k个符号来做出决策。
+SSA：static single assignment form
 
-https://blog.csdn.net/huihuisd/article/details/103777331
+```cpp
+// Non SSA form
+a = 1;
+a = 2;
+b = a + 1;
 
-乔姆斯基4型文法
+// SSA form
+a1 = 1;
+a2 = 2;
+b1 = a2 + 1;
+```
 
-https://zhuanlan.zhihu.com/p/94424139
+SSA只要求每个变量的赋值程序点只能有一个，这个程序点可以出现在循环内部（这意味着执行过程中这个程序点会被多次执行）。
 
-LL, LR文法浅析
+Phi function：
+
+```cpp
+if (cond) {
+  x = 1;
+} else {
+  x = 2;
+}
+y = x;
+```
+
+这个转成SSA是：
+
+```cpp
+if (cond) {
+  x1 = 1;
+} else {
+  x2 = 2;
+}
+y = x?;
+```
+
+最后一行x的下标是由条件决定是x1，还是x2。为了解决这种无法确定下标的情况，我们引入了Phi function：
+
+```cpp
+if (cond) {
+  x1 = 1;
+} else {
+  x2 = 2;
+}
+y = phi(x1, x2);
+```
+
+所以一个分支语句实际上包含了3个block，除了明处的then和else之外，还有Phi function所在的merge block。
 
 ## PPCG
 

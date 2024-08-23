@@ -396,3 +396,7 @@ https://zhuanlan.zhihu.com/p/704143990
 https://zhuanlan.zhihu.com/p/715611217
 
 连烧三天 普京痛心得知41名消防员在罗斯托夫油库大火中受伤
+
+https://zhuanlan.zhihu.com/p/715677560
+
+乌克兰无人机引燃罗斯托夫油库连烧3天，2亿美元柴油付之一炬

@@ -240,6 +240,12 @@ https://mp.weixin.qq.com/s/h-vgHkzLjh9AAa6Z0lZqlg
 
 ## 参考
 
+实时(Realtime)光照：在运行时的每一帧进行光照计算。并且可以自由地修改物体和光源的位置和属性。
+
+烘焙(Baked)光照：Editor提前在场景中进行光照计算，生成对应的光照数据，这个过程叫烘焙，后续在游戏运行时，不会再对该类型的光照进行计算，而是直接从光照贴图中获取数据。适用于场景中静态的光照和物体。
+
+---
+
 https://mp.weixin.qq.com/s/hI9Z3l2eVJxkPbL8zG5uGA
 
 图形学基础，427页pdf

@@ -221,6 +221,8 @@ SPIR-V的二进制的，编组方式类似汇编语言。上图是一个简单�
 
 而C语言，只有编译阶段有类型的概念，真到链接的时候，就已经只剩下符号表了。机器码就更不可能有类型，这种高级语言才有的特性。
 
+DirectX也有类似的东西：DXIL（DirectX Intermediate Language）。
+
 https://blog.csdn.net/qwertyu1234/article/details/50163847
 
 SPIR-V研究：编译器基本原理

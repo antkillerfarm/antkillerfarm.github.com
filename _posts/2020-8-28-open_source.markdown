@@ -115,7 +115,7 @@ http://dranger.com/ffmpeg/
 
 1.转换视频格式
 
-`ffmpeg -i src.avi des.mp4`
+`ffmpeg -i src.avi -vf scale=iw/2:ih/2 des.mp4`
 
 2.转换视频的尺寸
 
