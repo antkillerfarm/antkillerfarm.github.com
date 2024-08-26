@@ -13,6 +13,12 @@ https://www.khronos.org/opengl/wiki/History_of_OpenGL
 
 OpenGL的历史
 
+RISC/UNIX图形工作站，运行X Window System，提供Motif库，运行CDE桌面环境，通过PEX接口（有OpenGL，就有GLX，同理有PHIGS就有PEX。），调用PHIGS库，实现三维CAD应用。
+
+Motif有一个竞争对手叫OPEN LOOK。两者之间的竞争史堪比今天的gtk与Qt。
+
+后来SGI在自家的图形工作站上，开发出了IrisGL。IrisGL标准化后，称为OpenGL。
+
 ## 书籍
 
 我手上其实有几本关于OpenGL的实体书，但是比较了一下之后，发现还是电子版的《OpenGL编程指南》（俗称OpenGL红宝书）写的更好一些。该书目前已经出到第8版，我看的是第7版中文版的电子版。该书的官网是:
@@ -92,6 +98,10 @@ https://opentk.net/
 以gles2为代表的漫长的手游时代。
 
 近几年metal与vulkan崛起的AAA手游时代。
+
+---
+
+通常显卡的功能可以在不同的API之间映射，比如OpenGL 2.x对应DX9，OpenGL 3.x对应DX10，OpenGL 4.x对应DX11，Vulkan对应DX12。
 
 ## 概述
 

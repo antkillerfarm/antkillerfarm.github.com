@@ -33,7 +33,7 @@ IMG定义的光线追踪6个等级：
 
 用专门的fix-funciton硬件来做光线的求交测试，将极大的释放GPU ALU的算力。以最简单的形式来说，这是实现实时光线追踪的基础。IMG称之为Level 2。
 
-- Level 3：硬件实现BVH遍历。
+- Level 3：硬件实现BVH（Bounding Volume Hierarchy，包围体层次结构）遍历。
 
 在Level 2中，除了Ray-box和Ray-Triangle求交测试有专门的硬件做，其他的还是由软件做。level 3就是进一步扩展光线追踪硬件，每条射线的BVH遍历完全由专用逻辑处理，除了从ALU上卸载更多负载外，还增加了缓存和数据流从而实现更广泛的并行效率。
 

@@ -296,3 +296,19 @@ TensorFlow、MXNet、PyTorch等框架大都是面向图像、语音等领域的�
 https://mp.weixin.qq.com/s/kdCk_twY_czQo58y3x_yyA
 
 阿里深度学习框架开源了！无缝对接TensorFlow、PyTorch
+
+# 安全=
+
+Vigenère密码是一种多字母替换密码，由16世纪的法国外交官Blaise de Vigenère发明，它提供了比简单的凯撒密码更高的安全性。
+
+破解恩格玛机的第一次突破并不是来自英国人，而是波兰人雷耶夫斯基（Marian Rejewski）。
+
+在密文中猜测出几个单词的明文并不困难，因为循规蹈矩的德国人在信息正文中喜欢用固定的词组，比如Keine besonderen Ereignisse（无特殊情况），Heil Hitler（希特勒万岁）等。
+
+在早上6点钟截获的电文开头中肯定包含wetter（天气）这个词。
+
+很多德军发报员在被要求随机选择三个字母作为信息密钥的时候，为了省事就在键盘上上随便敲下ABC或者XYZ这样简单的组合。
+
+https://www.zhihu.com/question/28397034
+
+《模仿游戏》中艾伦·图灵是如何破译英格玛的？

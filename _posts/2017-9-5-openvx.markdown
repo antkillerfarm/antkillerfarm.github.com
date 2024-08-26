@@ -175,6 +175,8 @@ UE4/UE5的RHI(Vulkan为例)
 
 RenderDoc是一种图形调试器，目前可用于Windows、Linux、Android、Stadia和Nintendo Switch上的Vulkan、D3D11、D3D12、OpenGL和OpenGL ES开发。
 
+它可以分析图形的执行流程，也逆向提取游戏里的Shader、模型、贴图等信息。
+
 官网：
 
 https://renderdoc.org/
