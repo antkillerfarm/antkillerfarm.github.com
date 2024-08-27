@@ -73,7 +73,19 @@ https://mp.weixin.qq.com/s/ie2O5BPT-QxTRhK3S0Oa0Q
 
 ## 二值神经网络
 
-二值神经网络的主要缺点在于，它们无法实现与完全精度的深层网络一样高的精度。但这一直在缓慢地变化，已经有了很多进步。
+二值神经网络的主要缺点在于：它们无法实现与完全精度的深层网络一样高的精度。但这一直在缓慢地变化，已经有了很多进步。
+
+综述：
+
+《BiBench: Benchmarking and Analyzing Network Binarization》
+
+![](/images/img5/BNN.png)
+
+BNN,DoReFA,Bi-Real,ReActNet一脉相承。
+
+XNOR,XNOR++,ReCU为另一个流派。
+
+参考：
 
 http://blog.csdn.net/tangwei2014/article/details/55077172
 

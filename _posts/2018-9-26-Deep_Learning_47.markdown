@@ -301,6 +301,10 @@ https://mp.weixin.qq.com/s/LeiaqqqZ4uI0cmUU0rxYhA
 
 一篇文章教你学会使用三维重建知名开源系统
 
+https://mp.weixin.qq.com/s/BmlICavHIKV72rt1aBU3pg
+
+一文了解3DGS在CV应用领域的SOTA进展
+
 ## NetVLAD
 
 NetVLAD算的上是CNN+传统算子的一个范例。

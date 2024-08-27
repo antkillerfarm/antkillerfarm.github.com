@@ -187,6 +187,17 @@ https://github.com/Zehaos/MobileNet
 
 ![](/images/article/dwl_pwl.png)
 
+上述结构根据通道数的变化，又可以分为两种：
+
+Bottleneck：
+
+![](/images/img5/BottleNeck.png)
+
+Inverted Bottleneck
+
+![](/images/img5/Inverted_Bottleneck.png)
+
+
 参考：
 
 https://mp.weixin.qq.com/s/f3bmtbCY5BfA4v3movwLVg

@@ -29,6 +29,8 @@ https://mp.weixin.qq.com/s/eHZGiyeZG36Dg6JV1boEeA
 
 ## BEVFormer
 
+![](/images/img5/BEVFormer.png)
+
 BEV（Bird's-eye-view）
 
 Deformable Attention

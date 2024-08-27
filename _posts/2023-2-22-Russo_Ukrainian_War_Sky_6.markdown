@@ -11,6 +11,10 @@ category: Russo Ukrainian War Sky
 
 ## 基辅战役（续）
 
+2024.8.24 乌第40战术航空旅被授予“基辅幽灵”称号。
+
+---
+
 https://zhuanlan.zhihu.com/p/502798862
 
 闪击覆灭——复盘霍斯托梅尔机场之战

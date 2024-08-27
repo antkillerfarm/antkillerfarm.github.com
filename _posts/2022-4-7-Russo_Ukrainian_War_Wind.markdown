@@ -211,6 +211,6 @@ https://www.52csw.com/card/t513377.html
 
 古兰京可真是越打越富了。
 
-https://www.zhihu.com/question/665063489
+https://www.zhihu.com/answer/3605638917
 
 如何看待车臣领导人卡德罗夫授予俄罗斯总统普京“车臣荣誉公民”称号？

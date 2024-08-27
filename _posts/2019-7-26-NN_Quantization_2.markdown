@@ -89,6 +89,12 @@ W4A16主要有GPTQ和AWQ等实现。
 
 上图是QuaRot提出的一种W4A16在LLM领域的实践方法，其中还包含了KV Cache的4bit量化。
 
+这是韩松团队的另一篇类似的论文：
+
+《QServe: W4A8KV4 Quantization and System Co-design for Efficient LLM Serving》
+
+![](/images/img5/W4A8KV4.png)
+
 参考：
 
 https://zhuanlan.zhihu.com/p/681578090

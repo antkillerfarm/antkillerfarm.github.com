@@ -57,6 +57,18 @@ https://mp.weixin.qq.com/s/Jklyqt55-8NfKJ5oUXCmHw
 
 EfficientDet框架详解
 
+## 2:4 Sparsity
+
+NV从硬件角度提出的稀疏化方案：
+
+![](/images/img5/2_4_Sparsity.png)
+
+对于一个R×C的矩阵，首先按行以4个元素为一组，每一组中按两个数保留，其余值置0的方式稀疏化成R×C/2的矩阵，为了保留原来的数值位置，根据原来的索引构造一个尺寸为R×C/2的2bit索引矩阵，以上图为例，索引矩阵的第一行的值为：`[[0, 3], [1, 2]]`。这种稀疏方式叫做Structured-sparse。
+
+![](/images/img5/2_4_Sparsity_2.png)
+
+这是稀疏化的权值进行GEMM运算的图示。
+
 ## 参考
 
 https://github.com/memoiry/Awesome-model-compression-and-acceleration

@@ -261,6 +261,24 @@ https://blog.csdn.net/qq_40716944/article/details/128609569
 
 详细解读YOLOv8的改进模块
 
+# YOLOv9
+
+YOLOv9是Ultralytics（YOLOv7团队）2024年的作品。
+
+YOLOv9的改进：
+
+- 可编程梯度信息(PGI)
+- 广义高效层聚合网络(GELAN)
+
+# YOLOv10
+
+YOLOv10是Ultralytics（YOLOv8团队）2024年的作品。
+
+YOLOv10的改进：
+
+- PAN（路径聚合网络）层
+- 无需NMS
+
 # 目标检测进阶
 
 https://mp.weixin.qq.com/s/1nlOJ7X9ogBHTl1j2adqyg

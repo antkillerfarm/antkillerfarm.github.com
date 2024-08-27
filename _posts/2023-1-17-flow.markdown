@@ -300,3 +300,7 @@ GANs可以作为独立的单步模型进行文本到图像合成的训练，且�
 Stable Diffusion XL = SD + GAN
 
 ![](/images/img5/SDXL.png)
+
+## Hyper-SD
+
+采用Trajectory Segmented Consistency Distillation技术，达到One-step生成的目的。
