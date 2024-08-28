@@ -95,6 +95,8 @@ VIA在2021年11月把Centaur的技术团队卖给了Intel，之后又出售厂�
 
 威盛（VIA）在1999年6月先后买下Cyrix微处理器设计部门和Centaur（从前的IDT）后，合并为VIA在美国的处理器研发总部，仍然叫作Centaur。这是第一次传承转移，然后VIA把Centaur在x86方面的技术成果全盘出售给兆芯，完成了第二次衣钵传承。
 
+Cyrix并没有和Intel达成任何协议, 而是通过净室逆向工程生产兼容Intel引脚的CPU。它对AMD后来的低功耗产品产生了重大影响。这是因为国家半导体卖掉Cyrix后保留MediaGX设计，并将其改名为Geode，终在2003年时卖给AMD。
+
 https://mp.weixin.qq.com/s/HDTNCrKYJ7daZieg4rb4VA
 
 英特尔收购威盛X86业务 兆芯何去何从

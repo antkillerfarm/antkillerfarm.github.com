@@ -289,6 +289,20 @@ Authentication is needed to run '/home/danny/dev/tools/gdb' as the super user
 
 `sudo sysctl -w kernel.yama.ptrace_scope=0`
 
+gdb通过调用ptrace，可以向机器码中插入INT 3指令，从而实现断点。
+
+yama是内核里的安全模块，专门用于管理ptrace的权限。
+
+x86在硬件层面提供了一个特殊的处理器模式：单步调试模式，开启后，CPU接下来执行的每条指令都会触发1号中断。
+
+x86还提供了断点地址寄存器（Debug Address Registers）、调试状态寄存器（Debug Status Register）、调试控制寄存器（Debug Control Register）。
+
+ARM也有类似的东西叫Data Watchpoint and Trace(DWT)。
+
+https://www.zhihu.com/question/578172542
+
+Linux下常用的程序调试器gdb是什么原理？
+
 ---
 
 问题：
