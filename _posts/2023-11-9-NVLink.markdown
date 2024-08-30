@@ -39,6 +39,24 @@ Crossbar（XBAR）
 
 各种拓扑结构：ring、torus、fat-tree、dragonfly。
 
+CLOS Networking：
+
+![](/images/img5/CLOS.png)
+
+Charles Clos曾经是贝尔实验室的研究员。他在1953年发表了一篇名为 “A Study of Non-blocking Switching Networks” 的文章。文章里介绍了一种用多级设备来实现无阻塞电话交换 的方法，这是CLOS网络的起源。
+
+将CLOS Networking对折一下，就得到了Spine+Leaf结构：
+
+![](/images/img5/Spine_Leaf.jpg)
+
+Fat-Tree（胖树）架构是另一种特殊的CLOS网络。这种网络拓扑由Charles Leiserson在1985年提出。
+
+![](/images/img5/fat_tree.png)
+
+在向上连接到更高层级时“变粗”（使用更多的交换机），每一层之间的总带宽保持不变，从而避免瓶颈问题。
+
+高层级无需使用更高成本的高性能交换机，使用更多数量的低端交换机，成本更低。
+
 ![](/images/img5/Dragonfly.png)
 
 Dragonfly的拓扑结构分为三层：Switch层，Group层，System层。
@@ -46,10 +64,6 @@ Dragonfly的拓扑结构分为三层：Switch层，Group层，System层。
 - Switch层：包括一个交换机（橙色方块），及其相连的p个计算节点（粉色圆圈）。
 - Group层（灰色椭圆）：包含a个Switch层，这a个Switch层的a个交换机是全连接(All-to-all)的，换言之，每个交换机都有a-1条链路连接分别连接到其他的a-1台交换机。
 - System层：包含g个Group层，这g个Group层也是全连接的。
-
-![](/images/img5/Spine_Leaf.jpg)
-
-上图为Spine+Leaf结构。
 
 ![](/images/img5/Topo.png)
 
@@ -70,6 +84,10 @@ https://zhuanlan.zhihu.com/p/371827494
 https://www.modb.pro/db/650884
 
 一文读懂Dragonfly网络拓扑
+
+https://www.cnblogs.com/jmilkfan-fanguiju/p/11825042.html
+
+数据中心网络架构的问题与演进 — CLOS网络与Fat-Tree、Spine-Leaf架构
 
 ## NVLink
 
@@ -266,3 +284,39 @@ https://zhuanlan.zhihu.com/p/67785062
 https://zhuanlan.zhihu.com/p/680702927
 
 NVLink发展概述
+
+# NVIDIA+
+
+## RAPIDS
+
+RAPIDS，全称Real-time Acceleration Platform for Integrated Data Science，是NVIDIA针对数据科学和机器学习推出的一套开源GPU加速库，基于CUDA-X AI打造。
+
+官网：
+
+https://rapids.ai/
+
+代码：
+
+https://github.com/rapidsai
+
+![](/images/img4/RAPIDS.png)
+
+参考：
+
+https://blog.csdn.net/sinat_26917383/article/details/104503795
+
+NVIDIA的python-GPU算法生态
+
+## profile
+
+NVIDIA System Management Interface (NSMI): 即nvidia-smi。
+
+NVIDIA Nsight Systems (NSYS)
+
+NVIDIA Data Center GPU Manager (DCGM)
+
+NVIDIA Management Library (NVML): NVML为GPU硬件数据提供了编程接口，开发者可以通过编程的方式访问GPU的各项数据，其中就包含GPU利用率，nvidia-smi和DCGM的背后就是NVML，推荐高级开发者使用。
+
+https://fkong.tech/posts/2023-11-19-torch-gpu-util/
+
+如何把PyTorch的GPU利用率提升到100%?

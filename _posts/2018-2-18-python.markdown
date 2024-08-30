@@ -217,6 +217,22 @@ https://mp.weixin.qq.com/s/w6ln1VCtOye-f21BShCNqg
 
 花了两天，终于把Python的setup.py给整明白了
 
+### Nuitka
+
+Nuitka是一个Python程序的静态编译器，它可以将Python代码转换成优化的C++代码，并最终生成可执行文件。
+
+早前还有一个叫pyintaller的工具也能完成类似功能，但打包体积和性能都不太好。
+
+官网：
+
+https://nuitka.net/
+
+参考：
+
+https://www.cnblogs.com/cfld/p/16355904.html
+
+python的打包神器——Nuitka
+
 ## PyGObject
 
 谈起Python调用GTK+的话题，在GTK+ 2的时代可以使用PyGTK库。它的官网是：

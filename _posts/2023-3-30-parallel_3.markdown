@@ -98,6 +98,18 @@ https://huggingface.co/blog/zh/bloom-inference-optimization
 
 https://huggingface.co/blog/zh/bloom-megatron-deepspeed
 
+---
+
+![](/images/img5/Spike.webp)
+
+训练过程中，损失偶尔会出现毛刺的情况。针对这种情况，Falcon作者会恢复到上一个最新的 Checkpoint，并跳过1B Token数据继续训练。作者训练Falcon-180B时出现了9次毛刺。
+
+Google训练PaLM模型遇到了同样的问题。针对此种情况，作者会重启训练，并从毛刺之前的100个step开始，跳过200-500个Batch的数据。作者也做了消融实验，发现并不是单个数据的问题，而可能是这连续的一系列Batch数据引起的。
+
+https://mp.weixin.qq.com/s/rLJlaqI2RL7TGUEQyx-QaA
+
+万卡GPU集群实战：探索LLM预训练的挑战
+
 ## 内存墙
 
 从GPT-1到GPT-3，两年时间内模型参数0.1B增加到175B，而同期，NVIDIA交出的成绩单是从V100的32GB显存增加A100的80GB，显然，显存的提升速度远远赶不上模型模型增长的速度，这就是内存墙问题。

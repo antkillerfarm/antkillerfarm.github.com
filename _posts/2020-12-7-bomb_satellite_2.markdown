@@ -145,6 +145,10 @@ https://mp.weixin.qq.com/s/oddiCH7TCUBn8CkIYdaNZA
 
 08年江泽民就提出：机器学习会有所做为，加大GPU技术研究，SaaS是软件转型机遇
 
+https://mp.weixin.qq.com/s/a9M9_poxJnXlTdD4JqIZKg
+
+面对党报批评，江同志“吃相难看”
+
 ---
 
 几十年前，长春一汽曾经有个比较年轻的高知领导。

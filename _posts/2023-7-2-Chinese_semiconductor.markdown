@@ -63,10 +63,6 @@ https://mp.weixin.qq.com/s/gEO5eoggN85OOSRtP_FQWA
 
 卡脖子三强(AMAT,KLA,LAM)的继承人们
 
-https://zhuanlan.zhihu.com/p/527363951
-
-光通信、光芯片产业链
-
 ---
 
 >作者吴梓豪，台积电fab3工程师，2001年赴内地发展，Arcotech创始人，国内多个fab建厂小组负责人，前金宏气体电子特气事业部副总，目前为多家企业战略顾问。

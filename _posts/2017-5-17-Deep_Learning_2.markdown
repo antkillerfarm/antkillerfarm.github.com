@@ -23,6 +23,20 @@ category: DL
 
 上图是多层MLP的正反向运算关系图。z表示每层的feature map，w表示weight，g表示gradients。上图上半部分展示了正向运算，而下半部分，左侧展示了gradients的更新，右侧展示了weight的更新。
 
+正向计算：
+
+$$\begin{align}& z_{i+1} = z_{i} \cdot w_{i+1},
+\\&z_{i} \in R^{M \times K}, w_{i+1}  \in R^{K \times N}, z_{i+1} \in R^{M \times N}\end{align}$$
+
+Backprop Filter：
+
+$$\begin{align}&\Delta w_{i+1} = z_{i}^T \cdot g_{i+1},
+\\& g_{i+1} \text{ is as the same shape as } z_{i+1}\end{align}$$
+
+Backprop Input：
+
+$$g_{i} = g_{i+1} \cdot w_{i+1}^T$$
+
 除了基于梯度下降的BP算法之外，还有基于GA（genetic algorithm）的BP算法，但基本只有学术界还在尝试。
 
 参考：

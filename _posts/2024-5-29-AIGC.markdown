@@ -272,3 +272,7 @@ https://blog.csdn.net/v_JULY_v/article/details/136845242
 https://zhouyifan.net/2024/06/05/20240405-SVD/
 
 Stable Video Diffusion结构浅析与论文速览
+
+https://mp.weixin.qq.com/s/FYIC3F5po7_v0VP89pEORQ
+
+追本溯源：OpenAI Sora技术报告解读

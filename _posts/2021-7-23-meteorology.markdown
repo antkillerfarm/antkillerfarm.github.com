@@ -205,38 +205,6 @@ https://www.sohu.com/a/579966753_120146415
 
 ---
 
-在罗马尼亚海港和河港里，还滞留着约200艘德国海岸防御船、运输船及卫生船，这些船上载有德国平民、士兵、伤员、难民和来自德国各修船厂的工人。
-
-在这个危急关头，主管黑海海军船厂和装备工厂工作的齐布海军少将决定担任这批船只的指挥官，并立即率领它们向多瑙河上游进发。
-
-https://www.zhihu.com/question/549233580
-
-如何看待纳粹德国舰队因河流干旱“重现天日”，数十艘露出水面，载有大量弹药？
-
-https://www.guancha.cn/internation/2022_08_20_654516_s.shtml
-
-欧洲大旱，“饥饿之石”重见天日：“如你看到我，就哭泣吧”
-
----
-
-2012年7月21日 北京特大暴雨
-
-7·20北京暴雨是指2016年7月19日1时至21日6时，北京市出现强降雨天气，此次降雨持续时间长、总量大、范围广，降雨总量超过了2012年7·21北京特大暴雨。
-
-2023年7月29日20时至8月2日07时，北京出现极端强降雨天气。
-
-历时八年建设，耗资八亿人民币，位于北京门头沟门头沟潭柘寺附近的北京悉昙酒店被毁。
-
-<video  id="myvideo" width="75%" height="auto" controls="controls" loop="loop">
-    <source src="/images/img5/BJ.webm" type='video/mp4' />
-</video>
-
-https://www.zhihu.com/question/614628336
-
-时隔11年，中央气象台发布史上第二个暴雨红色预警，此次暴雨为何如此猛烈？其破坏力有多大？
-
----
-
 https://mp.weixin.qq.com/s/0ZQvZNHOmiMZ1dr_-VXR6Q
 
 谁奠定了气候变化的基础？（John Tyndall）
@@ -296,3 +264,39 @@ https://mp.weixin.qq.com/s/g3_njGlo3dC696wo0wplVQ
 https://mp.weixin.qq.com/s/WiG3C1mBFiQUpy4rRwxFuA
 
 《后天》真的会发生吗？
+
+https://mp.weixin.qq.com/s/xHTwl4cruR_AmpbW1p6rWg
+
+东京奥运遭遇高温，热浪频发带给人类的影响有多大？
+
+https://mp.weixin.qq.com/s/L22Y2sZdEh07At-CWGYZeA
+
+象群北迁，降雨线北移，大陆国家的盛世来了
+
+https://mp.weixin.qq.com/s/JU8TdMg95T-DFxZh09AWBA
+
+美国厉害了，开始骂欧洲人吃肉破坏自然环境
+
+https://mp.weixin.qq.com/s/vSLGvcII2z8DBKBrV6JLOA
+
+为什么市场上大西北的水果越来越多
+
+https://mp.weixin.qq.com/s/VIMKnqcoNw4VGigZJiDoYg
+
+泾渭分明：中国北方的气候变迁史
+
+https://www.zhihu.com/question/574478135
+
+极寒“炸弹气旋”影响全美超2亿人，已致至少17人死亡，它是如何形成的？
+
+https://zhuanlan.zhihu.com/p/628549585
+
+这六个省份，下雨下疯了
+
+https://www.zhihu.com/question/657744249
+
+印度面临50℃+极端高温，为何印度会出现极端高温？
+
+https://www.zhihu.com/question/665322345
+
+为什么加拿大远比澳大利亚寒冷，但是人口却是澳大利亚的1.5倍？

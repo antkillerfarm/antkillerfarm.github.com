@@ -31,6 +31,10 @@ https://www.zhihu.com/question/661116734
 
 如何看待7月9日俄罗斯用kh-101巡航导弹轰炸基辅儿童医院，导致多名儿童伤亡?
 
+https://zhuanlan.zhihu.com/p/717271668
+
+一位乌克兰士兵对战局走向的分析和展望
+
 ## 顿巴斯战争
 
 ![](/images/img4/Kyiv.jpg)
