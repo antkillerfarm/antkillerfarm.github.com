@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  编译原理（二）, MLIR（二）
+title:  编译原理（二）, MLIR（二）, StableHLO
 category: toolchain 
 ---
 
@@ -190,70 +190,6 @@ Canonicalization
 
 # MLIR
 
-ONNX MLIR:
-
-http://onnx.ai/onnx-mlir
-
----
-
-Torch-MLIR
-
-https://github.com/llvm/torch-mlir
-
-![](/images/img4/torch_mlir.jpg)
-
-TorchScript-->TorchDialect-->Linalg-on-Tensors
-
-https://blog.csdn.net/HaoBBNuanMM/article/details/124385542
-
-Torch-MLIR技术详解
-
----
-
-MLIR是树形结构，每个节点是Operation，Op可以组成Block，Block组成Region，而Region又可以嵌套在Op内部。
-
-Operation指单个运算，运算内可以嵌套Region。
-
-Block指基本块，基本块包含一个或多个Operation。
-
-Region指区域，类似于循环体或函数体，包含若干Block。Region类似于C语言的作用域，Region内可定义局部变量。
-
-```
-#map = affine_map<(m, n, k) -> (m, k)>
-#map1 = affine_map<(m, n, k) -> (k, n)>
-#map2 = affine_map<(m, n, k) -> (m, n)>
-module {
-  func.func @main(%arg0: tensor<10x64xf32>, %arg1: tensor<64x16xf32>) -> tensor<10x16xf32> {
-    %0 = tensor.empty() : tensor<10x16xf32>
-    %1 = linalg.generic {indexing_maps = [#map, #map1, #map2], iterator_types = ["parallel", "parallel", "reduction"]} ins(%arg0, %arg1 : tensor<10x64xf32>, tensor<64x16xf32>) outs(%0 : tensor<10x16xf32>) {
-    ^bb0(%in: f32, %in_0: f32, %out: f32):
-      %2 = arith.mulf %in, %in_0 : f32
-      %3 = arith.addf %out, %2 : f32
-      linalg.yield %3 : f32
-    } -> tensor<10x16xf32>
-    return %1 : tensor<10x16xf32>
-  }
-}
-```
-
-上例是一个matmul算子的MLIR，`linalg.generic`表示了该指令属于linalg dialect。
-
-Basic block指的是没有分支的代码序列，它使用`^`作为开头。
-
----
-
-使用LLDB调试：
-
-https://mlir.llvm.org/getting_started/Debugging/
-
-插件：
-
-https://github.com/llvm/llvm-project/blob/main/llvm/utils/lldbDataFormatters.py
-
-https://github.com/llvm/llvm-project/blob/main/mlir/utils/lldb-scripts/mlirDataFormatters.py
-
----
-
 `./mlir-opt --pass-pipeline="builtin.module(func.func(tosa-to-linalg-named, tosa-to-linalg, tosa-to-arith{include-apply-rescale=1}, tosa-to-tensor),one-shot-bufferize,...)" a.mlir -o b.mlir`
 
 `mlir-opt`是一个命令行工具，用于组建Pass pipeline，将一个mlir文件变成另一个mlir文件。
@@ -361,3 +297,49 @@ Hands-On Practical MLIR Tutorial
 https://www.cnblogs.com/BobHuang/p/18249482
 
 从零开始教你写一个MLIR Pass
+
+# StableHLO
+
+stablehlo是OpenXLA项目在MLIR基础上的扩展。
+
+官网：
+
+https://github.com/openxla/stablehlo
+
+算子spec：
+
+https://openxla.org/stablehlo/spec
+
+和`mlir-opt`类似，stablehlo也提供了`stablehlo-opt`的命令行工具，用于执行pass，进行IR之间的转换。
+
+---
+
+几种到XLA的IR dialect：
+
+DHLO：Dynamic HLO。
+
+CHLO：client HLO dialect，上层前端的IR。
+
+LHLO："late"-HLO，经过buffer assignment后的HLO。HLO和LHLO的区别在于HLO注重的是tensor的表达，不考虑到内存的分配。
+
+MHLO："meta"-HLO dialect，是HLO风格的MLIR dialect， 并且在IR上扩展支持了dynamic shape。XLA HLO的shape是静态不可变的，不同shape需要重新编译；MHLO支持动态shape，IR本身有能力表达shape计算和动态shape信息的传递。
+
+LMHLO："late"-"meta"-HLO dialect。是LHLO风格的MLIR dialect。即内存分配之后的IR，也就是无动态shape的IR。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/404706825
+
+mlir-hlo cpu jit
+
+https://zhuanlan.zhihu.com/p/470439442
+
+elementwise fusion(hlo vs mhlo vs linalg)
+
+https://zhuanlan.zhihu.com/p/622562160
+
+XLA IR：HLO、LHLO、MHLO和LMHLO
+
+https://zhuanlan.zhihu.com/p/609386195
+
+hlo --> linalg

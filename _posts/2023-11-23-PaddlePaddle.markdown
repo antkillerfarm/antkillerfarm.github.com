@@ -172,6 +172,14 @@ result = self._assisted_decoding
 
 ---
 
+Hugging face推出的diffusion models的框架。
+
+代码：
+
+https://github.com/huggingface/diffusers
+
+---
+
 参考：
 
 https://zhuanlan.zhihu.com/p/535100411

@@ -374,3 +374,61 @@ https://mp.weixin.qq.com/s/oseEmzgb8iCoOf9lTbAssg
 https://mp.weixin.qq.com/s/Z-_iZl_CTixqK0vl0_CHfQ
 
 基于深度学习的视觉多目标跟踪算法综述
+
+# 语义分割进阶+
+
+https://mp.weixin.qq.com/s/WuWZS25aAWDLpVZQKuP2Tw
+
+美团无人配送CVPR2020论文CenterMask解读
+
+https://zhuanlan.zhihu.com/p/134111177
+
+实例分割新思路: Deep Snake
+
+https://mp.weixin.qq.com/s/81yI3xrDJJzy3MTGyqtUvw
+
+基于深度卷积神经网络的小样本分割算法综述
+
+https://mp.weixin.qq.com/s/1Z8EN9lWy5r0JIu8u61Rig
+
+从注意力机制出发，上海交大提出实时语义分割新网络LRNNet
+
+https://mp.weixin.qq.com/s/Zy9mCZOL8AneNjbvFpR3jg
+
+即插即用！将双边超分辨率用于语义分割网络，提升图像分辨率的有效策略
+
+https://mp.weixin.qq.com/s/V6ldPntqboIMIefQQtj4mw
+
+CondInst：沈春华团队新作，将条件卷积引入实例分割
+
+https://mp.weixin.qq.com/s/x8i6RbHy70zIQNeqHdOutQ
+
+CondInst：性能和速度均超越Mask RCNN的实例分割模型
+
+https://mp.weixin.qq.com/s/xk8OdEWNuydxEtyQNOgCaQ
+
+语义分割的落地应用-故障检测与异常检测
+
+https://mp.weixin.qq.com/s/gn3ETYW2TCsgV31Jz3Wxqw
+
+OCRNet化解语义分割上下文信息缺失难题
+
+https://mp.weixin.qq.com/s/mSz2LGPMgDPqlLPhKfOmFA
+
+实例分割新思路之SOLO v1&v2深度解析
+
+https://mp.weixin.qq.com/s/tMTtjrJLM-YgZy_K6T1deA
+
+实时性语义分割算法大盘点
+
+https://mp.weixin.qq.com/s/KdKbRy3fZVy0B5KeQCs6Mw
+
+DCT-Mask用离散余弦变换Mask提升实例分割性能
+
+https://mp.weixin.qq.com/s/Lj0hn0SH1uRqbuO8R9RaGA
+
+用双注意力模块来做语义分割
+
+https://mp.weixin.qq.com/s/BXSxJDsLxhHNtoYcbULmSw
+
+使用图像分割来做缺陷检测的一个例子

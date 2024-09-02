@@ -21,6 +21,8 @@ https://www.docker.com/
 
 https://www.runoob.com/docker/docker-tutorial.html
 
+https://dockertips.readthedocs.io/en/latest/index.html
+
 下图显示了Docker和VM之间的差别：
 
 ![](/images/article/docker_vs_vm.png)
@@ -72,6 +74,8 @@ Type II: 依赖于宿主操作系统，在其上构建出多个隔离的操作�
 ![](/images/img4/VM_3.png)
 
 VMware是独立的第三方软件，而**KVM**作为一项虚拟化技术已经集成到Linux内核之中。KVM技术常常搭配QEMU一起使用，称为**KVM-QEMU**架构。
+
+![](/images/img5/Kvm_qemu.png)
 
 不同于虚拟化技术要完整虚拟化一台计算机，**容器技术**更像是操作系统层面的虚拟化，它只需要虚拟出一个操作系统环境。
 
@@ -190,6 +194,12 @@ Ctrl+p Ctrl+q：退出后，容器仍然运行。
 https://www.cnblogs.com/dyh004/p/9122639.html
 
 docker容器与宿主交互数据
+
+## Dockerfile
+
+官方文档：
+
+https://docs.docker.com/reference/dockerfile/
 
 ## 参考
 

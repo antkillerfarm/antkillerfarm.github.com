@@ -227,6 +227,22 @@ else:
     print(i, '我是else')
 ```
 
+## dataclasses
+
+dataclasses是python3.7引入的标准库模块。
+
+```python
+from dataclasses import dataclass
+
+@dataclass
+class Point:
+    x: float
+    y: float
+
+# 创建对象
+point = Point(x=1.0, y=2.5)
+```
+
 ## 三元表达式
 
 `print('y是一个负数' if y < 0 else 'y是一个非负数')`
@@ -368,6 +384,8 @@ signal.signal(signal.SIGALRM, handler)
 (filepath,tempfilename) = os.path.split(filename)
 (shotname,extension) = os.path.splitext(tempfilename)
 ```
+
+python3.4+还可以使用标准库的pathlib模块。
 
 ## tqdm
 

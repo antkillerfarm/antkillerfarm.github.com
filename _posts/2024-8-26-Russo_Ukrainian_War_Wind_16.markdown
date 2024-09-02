@@ -97,6 +97,8 @@ for me he is nobody, nobody.
 
 团结起来，我们就能赢。2月24日已经证明了这一点。2022年和2023年也证明了这一点。今年也证明了这一点。
 
+The gratitude – of all our people, of our entire state – to every warrior and to all fallen Ukrainian heroes who return home on their shields.
+
 ---
 
 乌克兰著名演员出席金球奖并发言。

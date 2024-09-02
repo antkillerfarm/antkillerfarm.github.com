@@ -189,6 +189,8 @@ Stable Diffusion的完整架构图如下：
 
 ![](/images/img5/Stable_Diffusion.png)
 
+常见的应用包括：TEXT2IMAGE、IMAGE2IMAGE、INPAINT。
+
 ---
 
 ![](/images/img5/eval-models-2.png)

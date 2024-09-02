@@ -276,3 +276,29 @@ https://news.sohu.com/00/82/news210138200.shtml
 ---
 
 哈马斯驻卡塔尔的联络办公室是卡塔尔应美国政府的请求设立的。
+
+---
+
+Adam在基督教里翻译为“亚当”，在伊斯兰教里翻译为“阿丹”，亚当在圣经旧约（3教的共同经文）里是上帝创造的第一个人类男性，3教教徒叫这个名字也是很正常的。
+
+穆斯林的名字跟犹太教和基督教是通用的，比如：
+
+Alexander（亚历山大）— Iskandar（伊斯干达）
+
+Eva（夏娃） — Hawa（哈娃）
+
+Joseph（约瑟夫）— Yusof（尤索夫）
+
+Abraham（亚伯拉罕）— Ibrahim（伊布拉欣）
+
+David（大卫）— Daud（达乌德）
+
+Isaac（以撒）— Ishaq（伊萨克）
+
+Jacob（雅阁）— Yakub（亚库布）
+
+John（约翰）— Yahya（叶哈雅）
+
+Moses（摩西）—Musa（穆萨）
+
+Solomon（所罗门）— Sulaiman（苏莱曼）

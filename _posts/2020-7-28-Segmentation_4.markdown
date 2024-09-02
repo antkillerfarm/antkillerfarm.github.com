@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  语义分割（四）——语义分割进阶
+title:  语义分割（四）——SAM, 语义分割进阶
 category: Segmentation 
 ---
 
@@ -124,6 +124,38 @@ https://mp.weixin.qq.com/s/d1mf-8c-mX5hRfH_FLlJIQ
 https://mp.weixin.qq.com/s/w4EivVcZEA5JCdxYYAUOfA
 
 Transformer-Unet：如何用Transformer一步一步改进Unet
+
+# SAM
+
+SAM(Segment Anything Model)是Meta 2023年4月的作品。
+
+![](/images/img5/SAM.png)
+
+从网络结构来说，SAM除了引入了目前流行的LLM之外，其他部分只能算中规中矩。唯一厉害的地方是它的数据集。
+
+Segment Anything 10 Billion Mask (SA-1B) 数据集是迄今为止最大的有标注分割数据集。它专为高级分割模型的开发和评估而设计。
+
+2024年，Meta又推出了SAM2，用于视频的语义分割任务。
+
+![](/images/img5/SAM2.png)
+
+SAM2首先在SA-1B上进行预训练，然后在SA-V（SA-1B的一个子集，占SA-1B 10%的数据），以及DAVIS,YouTube，MOSE数据集上进行完全的训练。
+
+还采用了视频数据（多帧）和静态图像（单帧）交替训练的策略。
+
+参考：
+
+https://blog.csdn.net/GarryWang1248/article/details/135122569
+
+一文了解视觉分割新SOTA: SAM (Segment Anything Model)
+
+https://blog.csdn.net/qq_36104364/article/details/133101952
+
+Segment Anything Model（SAM）分割一切大模型相关论文和项目介绍
+
+https://blog.csdn.net/qq_41234663/article/details/140796308
+
+SAM 2：Segment Anything in Images and Videos
 
 # 语义分割进阶
 
@@ -382,59 +414,3 @@ https://mp.weixin.qq.com/s/aSHhpMtgzV4_6NTElTvPIA
 https://mp.weixin.qq.com/s/6EOkYdiVm0Lvkc24WiRbFg
 
 基于自适应显着性的图像分割
-
-https://mp.weixin.qq.com/s/WuWZS25aAWDLpVZQKuP2Tw
-
-美团无人配送CVPR2020论文CenterMask解读
-
-https://zhuanlan.zhihu.com/p/134111177
-
-实例分割新思路: Deep Snake
-
-https://mp.weixin.qq.com/s/81yI3xrDJJzy3MTGyqtUvw
-
-基于深度卷积神经网络的小样本分割算法综述
-
-https://mp.weixin.qq.com/s/1Z8EN9lWy5r0JIu8u61Rig
-
-从注意力机制出发，上海交大提出实时语义分割新网络LRNNet
-
-https://mp.weixin.qq.com/s/Zy9mCZOL8AneNjbvFpR3jg
-
-即插即用！将双边超分辨率用于语义分割网络，提升图像分辨率的有效策略
-
-https://mp.weixin.qq.com/s/V6ldPntqboIMIefQQtj4mw
-
-CondInst：沈春华团队新作，将条件卷积引入实例分割
-
-https://mp.weixin.qq.com/s/x8i6RbHy70zIQNeqHdOutQ
-
-CondInst：性能和速度均超越Mask RCNN的实例分割模型
-
-https://mp.weixin.qq.com/s/xk8OdEWNuydxEtyQNOgCaQ
-
-语义分割的落地应用-故障检测与异常检测
-
-https://mp.weixin.qq.com/s/gn3ETYW2TCsgV31Jz3Wxqw
-
-OCRNet化解语义分割上下文信息缺失难题
-
-https://mp.weixin.qq.com/s/mSz2LGPMgDPqlLPhKfOmFA
-
-实例分割新思路之SOLO v1&v2深度解析
-
-https://mp.weixin.qq.com/s/tMTtjrJLM-YgZy_K6T1deA
-
-实时性语义分割算法大盘点
-
-https://mp.weixin.qq.com/s/KdKbRy3fZVy0B5KeQCs6Mw
-
-DCT-Mask用离散余弦变换Mask提升实例分割性能
-
-https://mp.weixin.qq.com/s/Lj0hn0SH1uRqbuO8R9RaGA
-
-用双注意力模块来做语义分割
-
-https://mp.weixin.qq.com/s/BXSxJDsLxhHNtoYcbULmSw
-
-使用图像分割来做缺陷检测的一个例子

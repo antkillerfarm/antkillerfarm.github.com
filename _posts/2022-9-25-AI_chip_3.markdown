@@ -348,6 +348,12 @@ https://www.zhihu.com/answer/3395444932
 
 寒武纪AI芯片
 
+## FuriosaAI
+
+FuriosaAI是韩国的一家AI芯片公司。
+
+![](/images/img5/FuriosaAI.png)
+
 ## 行业信息
 
 https://mp.weixin.qq.com/s/vGoWsyaal-gAzsrhPguvFg

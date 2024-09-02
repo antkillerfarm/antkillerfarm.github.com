@@ -49,6 +49,10 @@ https://mp.weixin.qq.com/s/UExKPAMbA9EfRW35P3WnFA
 
 RISC-V其实是反潮流，但是……
 
+https://zhuanlan.zhihu.com/p/717140323
+
+利用SIMD技术实现高性能的纯CPU渲染器
+
 ## SPMD和MPMD
 
 Single Program Multiple Data (SPMD)：

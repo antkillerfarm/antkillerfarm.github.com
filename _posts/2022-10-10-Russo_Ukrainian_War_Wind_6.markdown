@@ -173,6 +173,8 @@ https://zhuanlan.zhihu.com/p/702509908
 
 Mariana Bezuhla，女，乌克兰国家安全、国防和情报委员会的副主席。
 
+她开战之初跑到波兰要坦克，波兰一开始犹豫不决，她宣布绝食给波兰方面施压，最终波兰敲定了援助协议。
+
 https://zhuanlan.zhihu.com/p/679034693
 
 Babel有关贝祖赫拉的报道

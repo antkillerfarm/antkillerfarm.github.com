@@ -96,7 +96,7 @@ XLA用HLO(High Level Optimizer)这种中间表示形式，表示正在被优化�
 
 op的官方定义：
 
-https://tensorflow.google.cn/xla/operation_semantics?hl=en
+https://openxla.org/xla/operation_semantics?hl=en
 
 HLO和TVM类似，计算图的遍历都是从所谓的root instruction，也就是输出Tensor开始的。但是实际的`HandleXXXX`的调用，却是从输入Tensor开始的，毕竟这个更符合一般人的思考习惯。想要做到这一点，也不难，采用`PostOrderDFS`即可。
 

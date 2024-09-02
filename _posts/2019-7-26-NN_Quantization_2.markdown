@@ -57,6 +57,10 @@ https://zhuanlan.zhihu.com/p/521631165
 
 Nvidia H100 中的FP8
 
+https://zhuanlan.zhihu.com/p/714933476
+
+大模型量化技术原理：FP8
+
 # BF8 and Tesla CFloat
 
 当我们将浮点的继续降低到8-bit的时候，BF8遇到的挑战越来越大。
