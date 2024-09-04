@@ -222,9 +222,15 @@ Table-driven Declarative Rewrite Rule
 
 `./mlir-pdll -x=mlir rewrite.pdll`
 
----
+## model-explorer
 
-参考：
+model-explorer是google推出的可视化工具，支持对于MLIR的可视化。
+
+官网：
+
+https://github.com/google-ai-edge/model-explorer
+
+## 参考
 
 https://mp.weixin.qq.com/s/fal6vz9gaZMbR41QMGE3AQ
 

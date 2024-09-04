@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Python（六）, IDE
+title:  Python（六）
 category: language 
 ---
 
@@ -8,6 +8,18 @@ category: language
 {:toc}
 
 # Python
+
+https://mp.weixin.qq.com/s/fTs_r7DLbLWoos4uRM3KYA
+
+10个Python常见面试题，这些弄不明白不要说学过Python！
+
+https://mp.weixin.qq.com/s/kt5isheTBnpwKUhJAuXnYw
+
+视频剪辑什么鬼？Python带你高效创作短视频
+
+https://mp.weixin.qq.com/s/5YWAgp8LKi5q_NDrNUtyGQ
+
+在GitHub上收获6519颗Star的Python面试题资料
 
 https://mp.weixin.qq.com/s/8y7IIQWxXx3bCD8cK8Z3XQ
 
@@ -319,96 +331,6 @@ https://mp.weixin.qq.com/s/xamO4TZS90FtZMcn398stQ
 
 推荐3个Python文本终端GUI框架
 
-# IDE
+https://blog.csdn.net/qq_43954124/article/details/112772262
 
-http://pypl.github.io/IDE.html
-
-这个网站提供了常用IDE的流行排名
-
-## Scintilla
-
-Scintilla是Neil Hodgson出于对Richedit控件的失望，所开发的替代品（1990）。它是Notepad++等编辑器的基础控件。
-
-官网：
-
-https://www.scintilla.org
-
-Scintilla官方还推出了一个名叫SciTE的编辑器，用于展示Scintilla的新功能。
-
-## tree-sitter
-
-tree-sitter是一个多语言的语法分析器。
-
-官网：
-
-https://tree-sitter.github.io/
-
-参考：
-
-https://blog.csdn.net/weixin_43646592/article/details/119895482
-
-tree-sitter-编程语言解析工具包
-
-## LSP
-
-language server protocol是一种跨编辑器的语言支持实现规范。它由微软提出，目前vscode、vim、atom都已经支持了这个规范。
-
-在过去，每个IDE遇到一门全新的语言，往往都需要重新实现一次基本功能：对于流行的语言来说还好，因为IDE厂商有动力提供支持。但对于一门全新的语言，往往需要语言的发明人自己实现各种IDE的语言支持。由于各个IDE的接口不同，需要将语言支持在各个IDE中重新移植一遍。
-
-有了LSP规范后，语言支持插件开发者只需要编写一次，就可以很快地在IDE之间移植代码了。
-
-官网：
-
-https://microsoft.github.io/language-server-protocol/
-
-这里有一个社区维护的LSP Server列表：
-
-https://langserver.org/
-
-类似的还有DAP(Debug Adapter Protocol)，用于IDE与具体调试器通信。
-
-BSP(Build Server Protocol)，处于IDE和构建工具之间，用于统一构建功能的通信协议。
-
-它们都是通过协议去统一相同功能在不同工具之间的差异性。
-
-参考：
-
-https://blog.csdn.net/weixin_38358700/article/details/121919353
-
-DAP调试适配协议
-
-https://blog.csdn.net/weixin_38358700/article/details/121919581
-
-BSP构建服务协议
-
-## Source Insight
-
-Shift+F8：高亮选中的字
-
-http://www.cnblogs.com/bluestorm/archive/2012/10/28/2743792.html
-
-Source Insight常用设置和快捷键大全
-
-## Eclipse
-
-### 分栏显示
-
-1.拖住一个文件不放，直到鼠标图案发生改变。
-
-2.如果需要左右显示两个文件，向左右移动鼠标，如果需要上下显示两个文件，上下移动。这里的移动需要移出编辑窗口范围。
-
-## Other
-
-http://dcloud.io/index.html
-
-HBuilder，一个html编辑的IDE。
-
-## 十六进制编辑器
-
-https://mp.weixin.qq.com/s/Bq6p3DUePBAUlw1kek86QA
-
-开源十六进制编辑器登顶GitHub热榜（ImHex）
-
-https://zhuanlan.zhihu.com/p/59119723
-
-Linux上最好的十六进制编辑器
+python之Rich库使用入门(打印彩色字体，表单，进度条与状态动画，高级数据类型)

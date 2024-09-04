@@ -201,6 +201,27 @@ http://www.cnblogs.com/zhangjing0502/archive/2012/05/16/2503880.html
 
 Python的range和xrange
 
+## enum
+
+```python
+class QuantType(Enum):
+    FP16 = auto()
+```
+
+auto函数用于自动分配枚举成员的值。
+
+```python
+>>>member = Color.RED
+>>>member.name
+'RED'
+>>>member.value
+1
+>>>Color['RED']
+1
+```
+
+Enum默认有name和value两个属性。
+
 ## enumerate
 
 普通Iterator：
@@ -462,17 +483,3 @@ Python Requests库使用指南
 https://mp.weixin.qq.com/s/cyG_TpPA9eyzG70VT2m2Ww
 
 Requests的基本用法
-
-## Celery
-
-Celery是一个专注于实时处理和任务调度的分布式任务队列，可用于执行定时任务。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/22304455
-
-使用Celery
-
-https://mp.weixin.qq.com/s/jdYiqJ98PztD7Ueu_o3Z4Q
-
-任务队列神器：Celery入门到进阶指南

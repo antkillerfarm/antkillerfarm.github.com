@@ -1,11 +1,43 @@
 ---
 layout: post
-title:  AIGC, CLIP, SORA
+title:  Diffusion Model（二）, AIGC, CLIP, SORA
 category: Generative Model
 ---
 
 * toc
 {:toc}
+
+# Diffusion Model（续）
+
+## Diffusion Transformer(DiT)
+
+DiT使用Transformer替换了U-Net架构，算是2023年度Diffusion Model的一大改进。
+
+《Scalable Diffusion Models with Transformers》
+
+## Consistency Models
+
+扩散模型广泛应用于DALLE、stable diffusion等文生图的模型中，但一直以来扩散模型的一个缺点就是采样速度较慢，通常需要100-1000的评估步骤才能抽取一个不错的样本。
+
+23年5月，OpenAI的Yang Song等人提出了Consistency Models，相比扩散模型，其使用1个步骤就能获得不错的样本，整体效率至少提升100倍，同时也极大地降低了算力成本。
+
+https://blog.csdn.net/v_JULY_v/article/details/136318383
+
+文生图的最新进展：从一致性模型CMs、LCM、SDXL到Stable Diffusion3、SDXL-Lightning
+
+## SDXL
+
+Stable Diffusion XL引入了一种名为对抗扩散蒸馏(Adversarial Diffusion Distillation，ADD)的技术。
+
+GANs可以作为独立的单步模型进行文本到图像合成的训练，且采样速度不错。
+
+Stable Diffusion XL = SD + GAN
+
+![](/images/img5/SDXL.png)
+
+## Hyper-SD
+
+采用Trajectory Segmented Consistency Distillation技术，达到One-step生成的目的。
 
 # AIGC
 

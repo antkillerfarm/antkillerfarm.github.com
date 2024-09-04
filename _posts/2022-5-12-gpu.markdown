@@ -263,10 +263,6 @@ https://www.zhihu.com/question/22219245
 
 GPU不能完全取代CPU的最大原因是什么？
 
-https://mp.weixin.qq.com/s/tyZXc_hz89SxERjb_c34_w
-
-现代处理器分支预测技术
-
 https://zhuanlan.zhihu.com/p/651179378
 
 GPU内存概念浅析

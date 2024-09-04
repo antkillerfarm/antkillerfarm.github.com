@@ -65,6 +65,18 @@ VLIW和superscalar的设计差异，实际上是Brainiac和Speed-Demon两种路�
 
 superscalar采用了如上图所示乱序执行的方案来并行执行。而且这个能力是硬件提供的，串行的代码不需要做任何修改，就能比原来执行的速度快很多。
 
+## 分支预测
+
+BTB：Branch Target Buffer，分支目标缓冲。
+
+https://mp.weixin.qq.com/s/tyZXc_hz89SxERjb_c34_w
+
+现代处理器分支预测技术
+
+https://www.zhihu.com/question/645121724
+
+现代中央处理器（CPU）的分支目标缓冲（BTB）是怎么设计的？
+
 ## 硬件多线程
 
 在处理器中多开辟几份线程状态，当线程发生切换时，处理器切换到对应的线程状态执行，这种方式叫做硬件多线程（Hardware Multithreading）。

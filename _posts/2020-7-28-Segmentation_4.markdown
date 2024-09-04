@@ -13,7 +13,7 @@ category: Segmentation
 
 这方面的数据集主要有：
 
-***CCMixter：***
+- CCMixter：
 
 https://members.loria.fr/ALiutkus/kam/
 
@@ -25,7 +25,7 @@ source-02.wav：人声。
 
 mix.wav：混合后的声音。
 
-***MUSDB18：***
+- MUSDB18：
 
 https://sigsep.github.io/datasets/musdb.html
 
@@ -156,6 +156,10 @@ Segment Anything Model（SAM）分割一切大模型相关论文和项目介绍
 https://blog.csdn.net/qq_41234663/article/details/140796308
 
 SAM 2：Segment Anything in Images and Videos
+
+https://blog.csdn.net/v_JULY_v/article/details/131503971
+
+图像分割的大变革：从SAM(分割一切)、FastSAM、MobileSAM到SAM2
 
 # 语义分割进阶
 

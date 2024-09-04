@@ -367,6 +367,20 @@ https://mp.weixin.qq.com/s/fun7k1fDrB3BYG2DK-Z7wA
 | Java | Internet Captcha | http://www.icaptcha.com/ |
 | Java | Cage | http://akiraly.github.io/cage/ |
 
+## Celery
+
+Celery是一个专注于实时处理和任务调度的分布式任务队列，可用于执行定时任务。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/22304455
+
+使用Celery
+
+https://mp.weixin.qq.com/s/jdYiqJ98PztD7Ueu_o3Z4Q
+
+任务队列神器：Celery入门到进阶指南
+
 ## 细节
 
 python有个叫做`attr`的包，还有一个叫做`attrs`的包，然而`import attr`实际上用的是`attrs`。
@@ -447,15 +461,3 @@ https://mp.weixin.qq.com/s/KCiR6ZE1EpYVfySaCG097A
 https://mp.weixin.qq.com/s/0dw2LHsIKFv8B_JaIMoekg
 
 python字符编码处理总结
-
-https://mp.weixin.qq.com/s/fTs_r7DLbLWoos4uRM3KYA
-
-10个Python常见面试题，这些弄不明白不要说学过Python！
-
-https://mp.weixin.qq.com/s/kt5isheTBnpwKUhJAuXnYw
-
-视频剪辑什么鬼？Python带你高效创作短视频
-
-https://mp.weixin.qq.com/s/5YWAgp8LKi5q_NDrNUtyGQ
-
-在GitHub上收获6519颗Star的Python面试题资料

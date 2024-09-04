@@ -71,6 +71,8 @@ DosBox是Linux平台玩DOS老游戏的法宝。
 
 `mount c ~/dosprom`
 
+类似的软件还有86Box和PCem。
+
 ---
 
 DOS下的游戏编程主要是受内存访问范围的限制，实模式直接可以访问的内存才640KB。突破内存的技术有EMS和XMS等。发展到后期，基本上都使用DOS下32位保护模式技术。比如DPMI、DOS4GW。使用Watcom C++ & DOS4GW就能轻松获得平展的4G内存空间。

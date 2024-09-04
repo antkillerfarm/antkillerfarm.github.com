@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Flow-based Model, Diffusion Model
+title:  Flow-based Model, Diffusion Model（一）
 category: Generative Model
 ---
 
@@ -173,6 +173,8 @@ Diffusion Model主要通过采样的方法，不断逼近模型的数据分布�
 
 多个Step其实也是一种变相的加深网络方法。
 
+![](/images/img6/SD_2.png)
+
 这种把**预测图片改进为预测噪声**的思路，一般被称为DDPM（Denoising Diffusion Probabilistic Model）。
 
 使用两种World划分的Stable Diffusion，还要再复杂一些，但也不多了。
@@ -190,6 +192,16 @@ Stable Diffusion的完整架构图如下：
 ![](/images/img5/Stable_Diffusion.png)
 
 常见的应用包括：TEXT2IMAGE、IMAGE2IMAGE、INPAINT。
+
+Stable Diffusion的推理过程：
+
+![](/images/img6/SD.png)
+
+![](/images/img6/SD_3.png)
+
+![](/images/img6/SD_4.png)
+
+上图中的CLIP和AutoencoderKL均已在大数据集上进行了预训练。
 
 ---
 
@@ -277,32 +289,10 @@ https://blog.csdn.net/v_JULY_v/article/details/130361959
 
 图像生成发展起源：从VAE、VQ-VAE、扩散模型DDPM、DETR到ViT、Swin transformer
 
-## Diffusion Transformer(DiT)
+https://zhuanlan.zhihu.com/p/613337342
 
-DiT使用Transformer替换了U-Net架构，算是2023年度Diffusion Model的一大改进。
+Stable Diffusion原理介绍与源码分析（一）
 
-《Scalable Diffusion Models with Transformers》
+https://zhuanlan.zhihu.com/p/615310965
 
-## Consistency Models
-
-扩散模型广泛应用于DALLE、stable diffusion等文生图的模型中，但一直以来扩散模型的一个缺点就是采样速度较慢，通常需要100-1000的评估步骤才能抽取一个不错的样本。
-
-23年5月，OpenAI的Yang Song等人提出了Consistency Models，相比扩散模型，其使用1个步骤就能获得不错的样本，整体效率至少提升100倍，同时也极大地降低了算力成本。
-
-https://blog.csdn.net/v_JULY_v/article/details/136318383
-
-文生图的最新进展：从一致性模型CMs、LCM、SDXL到Stable Diffusion3、SDXL-Lightning
-
-## SDXL
-
-Stable Diffusion XL引入了一种名为对抗扩散蒸馏(Adversarial Diffusion Distillation，ADD)的技术。
-
-GANs可以作为独立的单步模型进行文本到图像合成的训练，且采样速度不错。
-
-Stable Diffusion XL = SD + GAN
-
-![](/images/img5/SDXL.png)
-
-## Hyper-SD
-
-采用Trajectory Segmented Consistency Distillation技术，达到One-step生成的目的。
+Stable Diffusion原理介绍与源码分析（二、DDPM、DDIM、PLMS）

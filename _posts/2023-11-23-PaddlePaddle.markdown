@@ -123,7 +123,7 @@ https://github.com/huggingface/transformers
 
 ---
 
-Safetensors是Huggingface提出的一种模型格式，旨在解决ONNX格式的不足。
+Safetensors是Huggingface提出的一种模型格式，旨在解决ONNX格式的不足，特别关注模型安全性、隐私保护和快速加载。
 
 代码：
 
