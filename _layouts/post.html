@@ -13,7 +13,16 @@ layout: default
 
 
 <div id="related">
-  <h2>Recent Posts</h2>
+  <h2>Recent Posts in {{ page.category }}</h2>
+  <ul class="posts">
+    {% for post in site.categories[page.category] limit:5 %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div id="related">
+  <h2>Recent Posts in All Blogs</h2>
   <ul class="posts">
     {% for post in site.related_posts limit:5 %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>

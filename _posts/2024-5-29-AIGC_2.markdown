@@ -1,0 +1,294 @@
+---
+layout: post
+title:  AIGC（二）——SORA, Autoregressive Model
+category: Generative Model
+---
+
+* toc
+{:toc}
+
+# Diffusion Model（续）
+
+Stable Diffusion的完整架构图如下：
+
+![](/images/img5/Stable_Diffusion.png)
+
+常见的应用包括：TEXT2IMAGE、IMAGE2IMAGE、INPAINT。
+
+Stable Diffusion的推理过程：
+
+![](/images/img6/SD.png)
+
+![](/images/img6/SD_3.png)
+
+![](/images/img6/SD_4.png)
+
+上图中的CLIP和AutoencoderKL均已在大数据集上进行了预训练。
+
+CLIPEmbedder文本编码器对Prompt提示词进行编码，生成大小为`[B, K, E]`的embedding表示（即context），其中K表示文本最大编码长度max length, E表示embedding的大小。
+
+![](/images/img6/SD_5.png)
+
+![](/images/img6/SD_6.png)
+
+由于Cross Attention的output的序列长度和Q一致，所以变长的Prompt只能作为KV存在。
+
+![](/images/img6/SD_7.png)
+
+---
+
+![](/images/img5/eval-models-2.png)
+
+不同类型的文生图模型的考虑因素/优缺点
+
+---
+
+参考：
+
+https://jalammar.github.io/illustrated-stable-diffusion/
+
+The Illustrated Stable Diffusion
+
+https://lilianweng.github.io/posts/2021-07-11-diffusion-models/
+
+What are Diffusion Models?
+
+https://zhuanlan.zhihu.com/p/366004028
+
+另辟蹊径—Denoising Diffusion Probabilistic一种从噪音中剥离出图像/音频的模型
+
+https://zhuanlan.zhihu.com/p/384144179
+
+Denoising Diffusion Probabilistic Model(DDPM)
+
+https://speech.ee.ntu.edu.tw/~hylee/ml/ml2023-course-data/DDPM%20(v7)
+
+李宏毅：DDPM讲解
+
+https://zhuanlan.zhihu.com/p/637815071
+
+DDPM（模型架构篇）
+
+https://zhuanlan.zhihu.com/p/650394311
+
+DDPM（数学原理篇）
+
+https://zhuanlan.zhihu.com/p/377603135
+
+Diffusion Probabilistic Model
+
+https://yang-song.github.io/blog/2021/score/
+
+Generative Modeling by Estimating Gradients of the Data Distribution
+
+https://www.zhihu.com/question/536012286
+
+diffusion model最近在图像生成领域大红大紫，如何看待它的风头开始超过GAN？
+
+https://www.zhihu.com/question/558475081
+
+AI绘画过去也一直有研究，为什么会在最近几个月突然爆发？
+
+https://mp.weixin.qq.com/s/G50p0SDQLSghTnMAOK6BMA
+
+Diffusion Model
+
+https://zhuanlan.zhihu.com/p/549623622
+
+Diffusion Models：生成扩散模型
+
+https://www.zhihu.com/question/549222340
+
+国内有没有类似于Disco Diffusion的AI绘画工具？
+
+https://zhuanlan.zhihu.com/p/617905470
+
+Stable Diffussion显存不够用的拯救者插件
+
+https://www.zhihu.com/question/577079491
+
+stable diffusion的技术原理是什么？
+
+https://zhuanlan.zhihu.com/p/617134893
+
+文生图模型之Stable Diffusion
+
+https://www.zhihu.com/question/649097976
+
+为什么vae效果不好，但vae+diffusion效果就好了？
+
+https://blog.csdn.net/v_JULY_v/article/details/130361959
+
+图像生成发展起源：从VAE、VQ-VAE、扩散模型DDPM、DETR到ViT、Swin transformer
+
+https://zhuanlan.zhihu.com/p/613337342
+
+Stable Diffusion原理介绍与源码分析（一）
+
+https://zhuanlan.zhihu.com/p/615310965
+
+Stable Diffusion原理介绍与源码分析（二、DDPM、DDIM、PLMS）
+
+## Diffusion Transformer(DiT)
+
+DiT使用Transformer替换了U-Net架构，算是2023年度Diffusion Model的一大改进。
+
+《Scalable Diffusion Models with Transformers》
+
+## Consistency Models
+
+扩散模型广泛应用于DALLE、stable diffusion等文生图的模型中，但一直以来扩散模型的一个缺点就是采样速度较慢，通常需要100-1000的评估步骤才能抽取一个不错的样本。
+
+23年5月，OpenAI的Yang Song等人提出了Consistency Models，相比扩散模型，其使用1个步骤就能获得不错的样本，整体效率至少提升100倍，同时也极大地降低了算力成本。
+
+https://blog.csdn.net/v_JULY_v/article/details/136318383
+
+文生图的最新进展：从一致性模型CMs、LCM、SDXL到Stable Diffusion3、SDXL-Lightning
+
+## SDXL
+
+Stable Diffusion XL引入了一种名为对抗扩散蒸馏(Adversarial Diffusion Distillation，ADD)的技术。
+
+GANs可以作为独立的单步模型进行文本到图像合成的训练，且采样速度不错。
+
+Stable Diffusion XL = SD + GAN
+
+![](/images/img5/SDXL.png)
+
+## Hyper-SD
+
+采用Trajectory Segmented Consistency Distillation技术，达到One-step生成的目的。
+
+# SORA
+
+https://openai.com/research/video-generation-models-as-world-simulators
+
+官方技术报告
+
+MS解读SORA的论文：
+
+《Sora: A Review on Background, Technology, Limitations, and Opportunities of Large Vision Models》
+
+---
+
+SORA的使用方法：
+
+![](/images/img5/SORA.png)
+
+SORA的基本框架：
+
+![](/images/img5/SORA_2.png)
+
+---
+
+![](/images/img5/SORA_3.png)
+
+训练时可以采用Masked Diffusion Transformer (MDT)的方法增强学习效果。
+
+---
+
+![](/images/img5/NaViT.png)
+
+NaViT（Native Resolution ViT）没有采用传统的将图像调整至固定大小的做法，而通过特定的架构来实现对任意分辨率和宽高比图像的灵活处理。打包支持保持宽高比的可变分辨率图像，减少了训练时间，提高了性能，并增加了灵活性。
+
+---
+
+VDT：综合“ViViT的时空编码”与“DiT的扩散Transformer”
+
+---
+
+Open Sora是新加坡国立大学团队的作品。
+
+官网：
+
+https://hpcaitech.github.io/Open-Sora/
+
+代码：
+
+https://github.com/hpcaitech/Open-Sora
+
+![](/images/img5/Open_Sora.png)
+
+---
+
+参考：
+
+https://zhuanlan.zhihu.com/p/683231546
+
+Sora大模型技术精要——原理、关键技术、模型架构与未来趋势
+
+https://fisherdaddy.com/posts/sora-reading-list/
+
+"Road to Sora" 论文阅读清单
+
+https://blog.csdn.net/v_JULY_v/article/details/136143475
+
+视频生成Sora的全面解析：从AI绘画、ViT到ViViT、TECO、DiT、VDT、NaViT等
+
+https://blog.csdn.net/v_JULY_v/article/details/134655535
+
+Sora之前的视频生成发展史：从Gen2、Emu Video到PixelDance、SVD、Pika 1.0
+
+https://blog.csdn.net/v_JULY_v/article/details/136845242
+
+视频生成Sora的从零复现：从Latte、Open-Sora(含1.0及其升级版)到StreamingT2V
+
+https://zhouyifan.net/2024/06/05/20240405-SVD/
+
+Stable Video Diffusion结构浅析与论文速览
+
+https://mp.weixin.qq.com/s/FYIC3F5po7_v0VP89pEORQ
+
+追本溯源：OpenAI Sora技术报告解读
+
+# Autoregressive Model
+
+AR vs AE的相关内容在《Large Language Model（二）》中已有描述，这里不再赘述。
+
+Autoregressive Model实际上是最古老的生成模型，比GAN/VAE/Flow/Diffusion都要古老。
+
+![](/images/img4/gen.jpg)
+
+这里以PixelCNN为例介绍一下AR Model的原理。
+
+![](/images/img5/PixelCNN.png)
+
+PixelCNN简单来说就是按照从左到右，从上到下的顺序依次生成图片。表面上和Diffusion Model差不多，也是若干step的生成过程。
+
+但是有个问题就是中间步骤不能省略。比如一张28x28的图片，如果一次出1个点的话，一共就要28x28个step。少了其中的某一步，图片就不完整了。而且显然一次出1个点的模型一定和一次出2个点的模型是不一样的。
+
+但Diffusion Model就无所谓了，少了某一步，无非少了一种Noise Predictor而已，不会对结果有什么根本性的影响。
+
+PixelCNN训练和过程和Autoencoder差不多，也是最终生成的图片和训练图片做比较。但是为了表示没有偷看后面的数据，训练时需要用MASK遮住还未生成的那部分。
+
+此外，PixelCNN还要给图片打分，用以表明生成的图片是那一类的。比如MNIST数据集的手写数字的10分类。
+
+这样最终训练好之后，只要给出分类信息和seed，就可以生成图片了。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/591881660
+
+通俗形象地分析比较生成模型（GAN/VAE/Flow/Diffusion/AR）
+
+https://mp.weixin.qq.com/s/YZcw5pnHzuACSvEmGZHnEQ
+
+自回归模型:PixelCNN
+
+https://www.microsoft.com/en-us/research/uploads/prod/2022/12/Generative-Models-for-TTS.pdf
+
+Generative Models for TTS
+
+## VAR
+
+![](/images/img5/VAR.png)
+
+Visual Auto Regressive认为传统AR模型自上而下、逐行扫描的光栅顺序（或称raster-scan顺序）是不符合认知的。
+
+![](/images/img5/VAR_2.png)
+
+而上图的从整体到细节的多尺度顺序逐渐生成，才更符合逻辑。
+
+VAR的另一个显著优势是大幅提高了生成速度：在自回归的每一步（每一个尺度内部），所有图像token是一次性并行生成的；跨尺度则是自回归的。这使得在模型参数和图片尺寸相当的情况下，VAR能比传统AR快数十倍。
+
+VAR也是首个效果和性能达到Diffusion模型水平的AR模型。

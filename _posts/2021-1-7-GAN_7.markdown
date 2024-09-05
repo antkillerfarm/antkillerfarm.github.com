@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GAN（七）——GAN参考资源（3）, Autoregressive Model
+title:  GAN（七）——GAN参考资源（3）, Flow-based Model
 category: Generative Model
 ---
 
@@ -231,54 +231,108 @@ https://mp.weixin.qq.com/s/8zi0JrloxuRdHcRm1dzCEQ
 
 利用VAE和LSTM生成时间序列
 
-# Autoregressive Model
+# Flow-based Model
 
-AR vs AE的相关内容在《Large Language Model（二）》中已有描述，这里不再赘述。
+![](/images/img4/flow.png)
 
-Autoregressive Model实际上是最古老的生成模型，比GAN/VAE/Flow/Diffusion都要古老。
+Flow-based Model是GAN和VAE之外的另一大类生成模型方法。
 
-![](/images/img4/gen.jpg)
+从表面来看，Flow-based Model和VAE非常类似，无非把Encoder和Decoder换成了Flow和它的Inverse，但是实际上两者不仅数学原理不同，具体的训练方法也有极大差异。上图说是照骗也不为过。
 
-这里以PixelCNN为例介绍一下AR Model的原理。
+以下内容主要参考了李宏毅老师的课件：
 
-![](/images/img5/PixelCNN.png)
+http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2019/Lecture/FLOW%20(v7).pdf
 
-PixelCNN简单来说就是按照从左到右，从上到下的顺序依次生成图片。表面上和Diffusion Model差不多，也是若干step的生成过程。
+还有以下笔记：
 
-但是有个问题就是中间步骤不能省略。比如一张28x28的图片，如果一次出1个点的话，一共就要28x28个step。少了其中的某一步，图片就不完整了。而且显然一次出1个点的模型一定和一次出2个点的模型是不一样的。
+http://www.seeprettyface.com/pdf/Note_Flow.pdf
 
-但Diffusion Model就无所谓了，少了某一步，无非少了一种Noise Predictor而已，不会对结果有什么根本性的影响。
+![](/images/img4/flow_2.png)
 
-PixelCNN训练和过程和Autoencoder差不多，也是最终生成的图片和训练图片做比较。但是为了表示没有偷看后面的数据，训练时需要用MASK遮住还未生成的那部分。
+Flow-based Model的训练过程是用图片x通过网络$$f(x)$$生成随机数z。由于这个经过巧妙构造的$$f(x)$$具有可直接得到的可逆函数$$f^{-1}(z)$$，所以在推理阶段，无需任何额外处理，即可直接由$$f^{-1}(z)$$，从随机数z得到图片x。
 
-此外，PixelCNN还要给图片打分，用以表明生成的图片是那一类的。比如MNIST数据集的手写数字的10分类。
+随机数z可以是任意分布，但通常为了理论推导的简单，而使用正态分布，即所谓的Normalizing Flow。
 
-这样最终训练好之后，只要给出分类信息和seed，就可以生成图片了。
+Flow-based Model的理论不算复杂，难点主要在于如何构造可逆的函数G。目前已经有了一些成熟的构造方法，但相对于网络结构的千变万化，构造方法的种类就少的太多了。主流的大概也就是NICE、RealNVP和GLOW。
+
+最初的NICE实现了从A分布到高斯分布的可逆求解；后来RealNVP实现了从A分布到条件非高斯分布的可逆求解；而最新的GLOW，实现了从A分布到B分布的可逆求解，其中B分布可以是与A分布同样复杂的分布，这意味着给定两堆图片，GLOW能够实现这两堆图片间的任意转换。
+
+我们以NICE为例，介绍一下Flow-based Model的基本套路。
+
+首先，$$G^{-1}$$必须是存在的且能被算出，这意味着G的输入和输出的维度必须是一致的并且G的行列式不能为0。因此，z和x的形状必须完全一致。
+
+作为一个生成模型自然希望自己产生的数据的概率越高越好。因此这里的优化目标就是：
+
+$$G^*=\arg \max_{G} \sum_{i=1}^m\log p_{G}(x^i)$$
+
+这里不加证明的给出结论：
+
+$$\log p_{G}(x^i)=\log \pi(G^{-1}(x^i))+\log |det(J_{G^{-1}})|$$
+
+这里的第一项实际上就是$$\log \pi(z^i)$$。显然，当z为0时，正态分布的概率最大。
+
+然而这会导致$$det(J_{G^{-1}})=0$$，也就是第二项为$$-\infty$$。
+
+所以z必须在两项之间平衡，才能得到最大值。这个平衡点就是我们的优化目标。
+
+NICE采用了一种称为耦合层（Coupling Layer）的设计，如下图所示：
+
+![](/images/img5/flow.png)
+
+z和x都会被拆分成两个部分，分别是前1~d维和后d+1~D维。
+
+z的1~d维直接复制（copy）给x的1~d维；z的d+1~D维分别通过F和H两个神经网络，通过仿射计算（affine）传递给x。
+
+由于F和H的结果仅仅是系数，求偏导数的时候，会被当成常数，所以对于从$$G^{-1}$$构建G没有什么影响。
+
+![](/images/img5/flow_2.png)
+
+如果一层变换的表现力不足的话，我们也可以多做几层变换。需要注意的是，z的1~d维直接复制（copy）给x的1~d维的方式中的copy操作，对于生成模型的表现力会有影响。（总不可能生成图片的一部分还是随机噪声吧。）所以多层变换的话，需要使用交错的方式，组合copy操作和affine操作。
+
+![](/images/img4/MAF-vs-IAF.png)
+
+Masked Autoregressive Flow
+
+Inverse Autoregressive Flow
 
 参考：
 
-https://zhuanlan.zhihu.com/p/591881660
+https://zhuanlan.zhihu.com/p/44304684
 
-通俗形象地分析比较生成模型（GAN/VAE/Flow/Diffusion/AR）
+Normalizing Flow小结
 
-https://mp.weixin.qq.com/s/YZcw5pnHzuACSvEmGZHnEQ
+https://www.jianshu.com/p/66393cebe8ba
 
-自回归模型:PixelCNN
+标准化流(Normalizing Flow)教程（一）
 
-https://www.microsoft.com/en-us/research/uploads/prod/2022/12/Generative-Models-for-TTS.pdf
+https://www.jianshu.com/p/db72c38233f3
 
-Generative Models for TTS
+标准化流(Normalizing Flow)（二）：现代标准化流技术
 
-## VAR
+https://mp.weixin.qq.com/s/oUQuHvy0lYco4HsocqvH3Q
 
-![](/images/img5/VAR.png)
+Normalizing Flows入门(上)
 
-Visual Auto Regressive认为传统AR模型自上而下、逐行扫描的光栅顺序（或称raster-scan顺序）是不符合认知的。
+https://mp.weixin.qq.com/s/XtlK3m-EHgFRKrtcwJHZCw
 
-![](/images/img5/VAR_2.png)
+Normalizing Flows入门(中)
 
-而上图的从整体到细节的多尺度顺序逐渐生成，才更符合逻辑。
+https://mp.weixin.qq.com/s/TRgTFBz_NmBJygQjOYwdqw
 
-VAR的另一个显著优势是大幅提高了生成速度：在自回归的每一步（每一个尺度内部），所有图像token是一次性并行生成的；跨尺度则是自回归的。这使得在模型参数和图片尺寸相当的情况下，VAR能比传统AR快数十倍。
+GAN/VAE地位难保？Flow在零样本识别任务上大显身手
 
-VAR也是首个效果和性能达到Diffusion模型水平的AR模型。
+https://mp.weixin.qq.com/s/xMO9jhzQH6P5NEA_D-uyIA
+
+这个模型的脑补能力比GAN更强，ETH提出新型超分辨率模型SRFlow
+
+https://zhuanlan.zhihu.com/p/351479696
+
+基于流的生成模型-Flow based generative models
+
+https://mp.weixin.qq.com/s/KrvW16GAxSGAPOCYYKbGUg
+
+生成模型：标准化流（Normalized Flow）
+
+https://lilianweng.github.io/posts/2018-10-13-flow-models/
+
+Flow-based Deep Generative Models

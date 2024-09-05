@@ -197,6 +197,19 @@ https://zhuanlan.zhihu.com/p/651359908
 
 大模型推理妙招—投机采样（Speculative Decoding）
 
+---
+
+LLM Inference的性能评估主要有以下几个方面：
+
+- Time To First Token (TTFT)
+- Time Per Output Token (TPOT)
+- Latency：模型为用户生成完整响应所需的总时间。latency = (TTFT) + (TPOT) * (the number of tokens to be generated)
+- Throughput：一个推理服务器每秒可以为所有用户和请求生成的输出令牌数量。
+
+https://www.databricks.com/blog/llm-inference-performance-engineering-best-practices
+
+LLM Inference Performance Engineering: Best Practices
+
 ## TensorRT-LLM
 
 TensorRT-LLM是NVIDIA推出的基于TensorRT的LLM推理工具。
@@ -248,13 +261,3 @@ https://blog.csdn.net/qq_40491305/article/details/130898052
 普遍认为 LLM + Vector Search + API pool 会变成复杂AI场景的标准解决方案。
 
 类似Pinecone，Weaviate，Qdrant，Chroma这样的专用向量数据库最初是为了解决ChatGPT的记忆能力不足而出现的Workaround。
-
-最发布的ChatGPT 3.5的上下文窗口只有4K Token，也就是不到两千个汉字。然而当下GPT 4的上下文窗口已经发展到了128K，扩大了32倍，足够塞进一整篇小说了。而且未来还会更大。这时候，用作临时周转的垫脚石——向量数据库SaaS就处在一个尴尬的位置上了。
-
-https://www.zhihu.com/question/603117242
-
-为什么各大VC最近都在投向量数据库？
-
-https://zhuanlan.zhihu.com/p/668509885
-
-向量数据库凉了吗？

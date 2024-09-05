@@ -7,7 +7,19 @@ category: DL acceleration
 * toc
 {:toc}
 
-# LLM System（续）
+# LLM System
+
+## 向量数据库（续）
+
+最发布的ChatGPT 3.5的上下文窗口只有4K Token，也就是不到两千个汉字。然而当下GPT 4的上下文窗口已经发展到了128K，扩大了32倍，足够塞进一整篇小说了。而且未来还会更大。这时候，用作临时周转的垫脚石——向量数据库SaaS就处在一个尴尬的位置上了。
+
+https://www.zhihu.com/question/603117242
+
+为什么各大VC最近都在投向量数据库？
+
+https://zhuanlan.zhihu.com/p/668509885
+
+向量数据库凉了吗？
 
 ## 实战
 
@@ -337,35 +349,3 @@ https://mp.weixin.qq.com/s/heVQ9AIZKxTiCNiAtYKaag
 https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
 
 IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能
-
-http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
-
-神经网络的分布式训练
-
-https://mp.weixin.qq.com/s/nvuflLfOolidDDXJVe2DZA
-
-美团深度学习系统的工程实践
-
-https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
-
-TensorFlow分布式计算机制解读：以数据并行为重
-
-https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
-
-继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本
-
-https://mp.weixin.qq.com/s/kOCftzSbHe2mvDmlRp-ihA
-
-Jeff Dean：AI对计算机系统设计的影响
-
-https://mp.weixin.qq.com/s/XjNPaL6PC9LHX1PEGn5UZg
-
-微软实时AI系统“脑波计划”有多牛？看完秒懂！
-
-https://mp.weixin.qq.com/s/OkqUulFYHQSdgAbf9Fi9LA
-
-CoCoA：大规模机器学习的分布式优化通用框架
-
-https://mp.weixin.qq.com/s/ToIDncp9dS_qk47PsdZm5A
-
-杜克大学：分布式深度学习训练算法TernGrad

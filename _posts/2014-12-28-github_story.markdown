@@ -103,6 +103,18 @@ https://rubyinstaller.org/
 
 `jekyll serve`
 
+---
+
+jekyll官网：
+
+https://jekyllrb.com/
+
+Liquid是一门开源的模板语言，被jekyll所采用。官网：
+
+https://liquid.bootcss.com/
+
+---
+
 参考：
 
 http://jekyllthemes.org/

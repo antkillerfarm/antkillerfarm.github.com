@@ -1,45 +1,13 @@
 ---
 layout: post
-title:  Diffusion Model（二）, AIGC, CLIP, SORA
+title:  AIGC（一）——概述, CLIP, Cross Attention, Diffusion Model
 category: Generative Model
 ---
 
 * toc
 {:toc}
 
-# Diffusion Model（续）
-
-## Diffusion Transformer(DiT)
-
-DiT使用Transformer替换了U-Net架构，算是2023年度Diffusion Model的一大改进。
-
-《Scalable Diffusion Models with Transformers》
-
-## Consistency Models
-
-扩散模型广泛应用于DALLE、stable diffusion等文生图的模型中，但一直以来扩散模型的一个缺点就是采样速度较慢，通常需要100-1000的评估步骤才能抽取一个不错的样本。
-
-23年5月，OpenAI的Yang Song等人提出了Consistency Models，相比扩散模型，其使用1个步骤就能获得不错的样本，整体效率至少提升100倍，同时也极大地降低了算力成本。
-
-https://blog.csdn.net/v_JULY_v/article/details/136318383
-
-文生图的最新进展：从一致性模型CMs、LCM、SDXL到Stable Diffusion3、SDXL-Lightning
-
-## SDXL
-
-Stable Diffusion XL引入了一种名为对抗扩散蒸馏(Adversarial Diffusion Distillation，ADD)的技术。
-
-GANs可以作为独立的单步模型进行文本到图像合成的训练，且采样速度不错。
-
-Stable Diffusion XL = SD + GAN
-
-![](/images/img5/SDXL.png)
-
-## Hyper-SD
-
-采用Trajectory Segmented Consistency Distillation技术，达到One-step生成的目的。
-
-# AIGC
+# 概述
 
 ![](/images/img5/AIGC.png)
 
@@ -193,6 +161,13 @@ https://blog.csdn.net/v_JULY_v/article/details/131205615
 
 AI绘画原理解析：从CLIP、BLIP到DALLE、DALLE 2、DALLE 3、Stable Diffusion
 
+---
+
+CLIPTextModel的基类是BaseModelOutputWithPooling，它有两个输出;
+
+- last_hidden_state：模型最后一层输出的完整隐藏状态，通常是一个三维张量，形状为`[batch_size, sequence_length, hidden_size]`。
+- pooler_output：对最后一层的隐藏状态进行某种形式的池化操作得到的。形状为`[batch_size, hidden_size]`。
+
 ## BLIP
 
 ![](/images/img5/BLIP.png)
@@ -227,84 +202,93 @@ decoder生成图：常规的扩散模型解码器，解码生成图像。这里�
 
 DALLE 3 = 原始caption和合成长caption混合训练 + T5 + latent decoder
 
-# SORA
+# Cross Attention
 
-https://openai.com/research/video-generation-models-as-world-simulators
+Cross Attention是另一种常见的多模态信息融合的手段。
 
-官方技术报告
+![](/images/img6/CrossAttention.png)
 
-MS解读SORA的论文：
+![](/images/img6/CrossAttention_2.png)
 
-《Sora: A Review on Background, Technology, Limitations, and Opportunities of Large Vision Models》
+- 拥有两个序列S1、S2。
+- 计算S1的K（$$[B,M,d_k​]$$）、V（$$[B,M,d_v​]$$）。
+- 计算S2的Q（$$[B,N,d_k​]$$）。
+- 根据K和Q，计算注意力矩阵。
+- 将V应用于注意力矩阵。
+- 输出的序列长度与S2一致（$$[B,N,d_v​]$$）。
 
----
+https://vaclavkosar.com/ml/cross-attention-in-transformer-architecture
 
-SORA的使用方法：
+Cross-Attention in Transformer Architecture
 
-![](/images/img5/SORA.png)
+# Diffusion Model
 
-SORA的基本框架：
+Diffusion Model也是一类生成模型方法。
 
-![](/images/img5/SORA_2.png)
+![](/images/img4/flow.png)
 
----
+Diffusion Model主要通过采样的方法，不断逼近模型的数据分布，从而生成数据。基本原理和VAE一样仍然是Markov Chain Monte Carlo。
 
-![](/images/img5/SORA_3.png)
+以下以Stable Diffusion模型为例，介绍一下Diffusion Model的套路。
 
-训练时可以采用Masked Diffusion Transformer (MDT)的方法增强学习效果。
+![](/images/img5/stable-diffusion.png)
 
----
+我们首先来看一下Stable Diffusion的流水线：
 
-![](/images/img5/NaViT.png)
+1.输入是一段文字，或者是一段文字+一张背景图片，输出是一张生成的图片。
 
-NaViT（Native Resolution ViT）没有采用传统的将图像调整至固定大小的做法，而通过特定的架构来实现对任意分辨率和宽高比图像的灵活处理。打包支持保持宽高比的可变分辨率图像，减少了训练时间，提高了性能，并增加了灵活性。
+2.Text Encoder用于NLP。
 
----
+3.Image Decoder用于生成图片。
 
-VDT：综合“ViViT的时空编码”与“DiT的扩散Transformer”
+4.上述这些部分都是很常规的，中间的Image Information Creator才是Stable Diffusion的关键。
 
----
+![](/images/img5/stable-diffusion-latent-space-pixel-space.png)
 
-Open Sora是新加坡国立大学团队的作品。
+如上图所示，Image Information Creator的输入是一个随机的噪声，而输出是一个information tensor。无论是噪声，还是information tensor都属于Information World，而最后生成的图片属于Visual World。
 
-官网：
+早期的原始Diffusion Model并没有这种World的划分，而是直接由噪声得到图片，所以很不Stable。
 
-https://hpcaitech.github.io/Open-Sora/
+![](/images/img5/stable-diffusion-denoising-steps-latents.png)
 
-代码：
+从上图可以看出：Diffusion Model由于天生就是渐变的迭代过程，因此在流程的可控性上很有优势。
 
-https://github.com/hpcaitech/Open-Sora
+当时间宽裕时可以通过高轮次的迭代获得高质量的合成样本，同时较低轮次的快速合成也可以得到没有明显瑕疵的合成样本。（仍以上图为例，实际上Step 4的图片就已经相当OK了。）而高低轮次迭代之间完全不需要重新训练模型，只用手动调整一些轮次相关的参数。
 
-![](/images/img5/Open_Sora.png)
+因此，很自然的又有了Cascaded Diffusion Models。
 
----
+论文：
 
-参考：
+《Cascaded Diffusion Models for High Fidelity Image Generation》
 
-https://zhuanlan.zhihu.com/p/683231546
+回到Stable Diffusion本身，我们先看一下没有两种World划分的Diffusion Model是怎么训练的。
 
-Sora大模型技术精要——原理、关键技术、模型架构与未来趋势
+![](/images/img5/stable-diffusion-forward-diffusion-training-example.png)
 
-https://fisherdaddy.com/posts/sora-reading-list/
+首先我们生成一堆的随机噪声，然后随机选择其中一种噪声，添加到图片上。这样就得到了一组数据集：
 
-"Road to Sora" 论文阅读清单
+![](/images/img5/stable-diffusion-u-net-noise-training-examples-2.png)
 
-https://blog.csdn.net/v_JULY_v/article/details/136143475
+我们的目标就是训练一个噪声预测模型。
 
-视频生成Sora的全面解析：从AI绘画、ViT到ViViT、TECO、DiT、VDT、NaViT等
+![](/images/img5/stable-diffusion-u-net-noise-training-step.png)
 
-https://blog.csdn.net/v_JULY_v/article/details/134655535
+用预测的噪声和原始生成的噪声做对比，计算loss。
 
-Sora之前的视频生成发展史：从Gen2、Emu Video到PixelDance、SVD、Pika 1.0
+![](/images/img5/stable-diffusion-image-generation-v2.png)
 
-https://blog.csdn.net/v_JULY_v/article/details/136845242
+推理的时候，首先生成一组噪声图片，放入Noise Predictor，生成预测的噪声。然后用噪声图片-预测的噪声就得到了生成的图片。这个去噪过程，也可以进行多个Step。显然Step越多，图片质量越高。
 
-视频生成Sora的从零复现：从Latte、Open-Sora(含1.0及其升级版)到StreamingT2V
+多个Step其实也是一种变相的加深网络方法。
 
-https://zhouyifan.net/2024/06/05/20240405-SVD/
+![](/images/img6/SD_2.png)
 
-Stable Video Diffusion结构浅析与论文速览
+这种把**预测图片改进为预测噪声**的思路，一般被称为DDPM（Denoising Diffusion Probabilistic Model）。
 
-https://mp.weixin.qq.com/s/FYIC3F5po7_v0VP89pEORQ
+使用两种World划分的Stable Diffusion，还要再复杂一些，但也不多了。
 
-追本溯源：OpenAI Sora技术报告解读
+Image Decoder部分使用传统的AutoEncoder进行训练。
+
+这样Diffusion过程就可以在Information World中进行了。
+
+![](/images/img5/stable-diffusion-forward-and-reverse-process-v2.png)

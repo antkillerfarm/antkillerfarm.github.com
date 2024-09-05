@@ -303,6 +303,38 @@ https://www.zhihu.com/question/627484732
 
 # 并行 & 框架 & 优化=
 
+http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
+
+神经网络的分布式训练
+
+https://mp.weixin.qq.com/s/nvuflLfOolidDDXJVe2DZA
+
+美团深度学习系统的工程实践
+
+https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
+
+TensorFlow分布式计算机制解读：以数据并行为重
+
+https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
+
+继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本
+
+https://mp.weixin.qq.com/s/kOCftzSbHe2mvDmlRp-ihA
+
+Jeff Dean：AI对计算机系统设计的影响
+
+https://mp.weixin.qq.com/s/XjNPaL6PC9LHX1PEGn5UZg
+
+微软实时AI系统“脑波计划”有多牛？看完秒懂！
+
+https://mp.weixin.qq.com/s/OkqUulFYHQSdgAbf9Fi9LA
+
+CoCoA：大规模机器学习的分布式优化通用框架
+
+https://mp.weixin.qq.com/s/ToIDncp9dS_qk47PsdZm5A
+
+杜克大学：分布式深度学习训练算法TernGrad
+
 https://mp.weixin.qq.com/s/rhtrN2qDspGkpJYDAVSX7w
 
 UC Berkeley展示全新并行处理方法

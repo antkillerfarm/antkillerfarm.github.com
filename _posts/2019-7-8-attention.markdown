@@ -169,7 +169,7 @@ $$Attention(\boldsymbol{Q},\boldsymbol{K},\boldsymbol{V}) = softmax\left(\frac{\
 
 $$Attention(\boldsymbol{q}_t,\boldsymbol{K},\boldsymbol{V}) = \sum_{s=1}^m \frac{1}{Z}\exp\left(\frac{\langle\boldsymbol{q}_t, \boldsymbol{k}_s\rangle}{\sqrt{d_k}}\right)\boldsymbol{v}_s$$
 
-其中Z是归一化因子。事实上q,k,v分别是query,key,value的简写，K,V是一一对应的，它们就像是key-value的关系，那么上式的意思就是$$q_t$$这个query，通过与各个$$k_s$$内积的并softmax的方式，来得到$$q_t$$与各个$$v_s$$的相似度，然后加权求和，得到一个$$d_v$$维的向量。其中因子$$\sqrt{d_k}$$起到调节作用，使得内积不至于太大（太大的话softmax后就非0即1了，不够“soft”了）。
+其中Z是归一化因子。事实上q,k,v分别是query,key,value的简写，K,V是一一对应的，它们就像是key-value的关系，那么上式的意思就是$$q_t$$这个query，通过与各个$$k_s$$内积的并softmax的方式，来得到$$q_t$$与各个$$v_s$$的相似度，然后加权求和，得到一个$$d_v$$维的向量。其中因子$$\sqrt{d_k}$$起到调节作用，使得内积不至于太大（太大的话softmax后就非0即1了，不够“soft”了），这也就是上图中的Scale。
 
 概括的说就是：**比较Q和K的相似度，以得到合适的V。**
 
