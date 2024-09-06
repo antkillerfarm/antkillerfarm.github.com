@@ -286,3 +286,7 @@ https://zhuanlan.zhihu.com/p/683754811
 https://zhuanlan.zhihu.com/p/685054072
 
 乌克兰在阿夫迪夫卡的最后一刻及其“死亡之路”
+
+https://zhuanlan.zhihu.com/p/683071921
+
+俄罗斯人如何看待阿夫迪夫卡的战斗

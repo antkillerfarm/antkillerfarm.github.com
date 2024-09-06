@@ -411,6 +411,15 @@ https://mp.weixin.qq.com/s/Wsk6H3Z6HwGPKTRNYc2cLw
 
 一个已经存在10年，却被严重低估的库（decorator）
 
+## importlib
+
+使用importlib动态导入库和类的示例：
+
+```python
+m = importlib.import_module(library_name)
+model_cls = getattr(m, class_name)
+```
+
 ## 闭包
 
 在一些语言中，在函数中可以（嵌套）定义另一个函数时，如果内部的函数引用了外部的函数的变量，则可能产生闭包。闭包可以用来在一个函数与一组“私有”变量之间创建关联关系。在给定函数被多次调用的过程中，这些私有变量能够保持其持久性。

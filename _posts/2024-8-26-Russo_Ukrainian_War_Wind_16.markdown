@@ -99,6 +99,8 @@ for me he is nobody, nobody.
 
 The gratitude – of all our people, of our entire state – to every warrior and to all fallen Ukrainian heroes who return home on their shields.
 
+我们唯一需要的是坚定的决心，以及世界上所有影响全球局势的人的决心。莫斯科无权决定我们人民的未来。
+
 ---
 
 乌克兰著名演员出席金球奖并发言。

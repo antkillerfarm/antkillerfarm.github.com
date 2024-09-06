@@ -49,6 +49,10 @@ https://zhuanlan.zhihu.com/p/687975769
 
 乌克兰陆军军衔详解
 
+https://zhuanlan.zhihu.com/p/718402127
+
+未解之谜之乌萝的指挥体系
+
 ---
 
 鹅35集可以说是整个战争中，哪怕在俄军那边，也可以算得上是比较臭名昭著的部队了。其原本是驻扎在远东地区（我国黑龙江对岸的伯力市）的常备军，在去年开战之初，该集团军被调往白俄罗斯参与了基辅战役。
@@ -148,26 +152,6 @@ https://zhuanlan.zhihu.com/p/679668856
 https://zhuanlan.zhihu.com/p/680647257
 
 没有黑鹰的黑鹰坠落
-
----
-
-买家秀 VS 卖家秀
-
-![](/images/img4/t.jpg)
-
-![](/images/img4/t_2.jpg)
-
-![](/images/img4/t_3.jpg)
-
-![](/images/img4/t_4.jpg)
-
-![](/images/img4/t_5.jpg)
-
-![](/images/img5/weapon_2.jpg)
-
-https://www.zhihu.com/question/654462871
-
-俄军向民众展示缴获的乌军坦克，此举背后的用意有哪些？
 
 ---
 

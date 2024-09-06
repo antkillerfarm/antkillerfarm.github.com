@@ -15,6 +15,26 @@ category: Russo Ukrainian War Sky
 
 ---
 
+买家秀 VS 卖家秀
+
+![](/images/img4/t.jpg)
+
+![](/images/img4/t_2.jpg)
+
+![](/images/img4/t_3.jpg)
+
+![](/images/img4/t_4.jpg)
+
+![](/images/img4/t_5.jpg)
+
+![](/images/img5/weapon_2.jpg)
+
+https://www.zhihu.com/question/654462871
+
+俄军向民众展示缴获的乌军坦克，此举背后的用意有哪些？
+
+---
+
 https://zhuanlan.zhihu.com/p/502798862
 
 闪击覆灭——复盘霍斯托梅尔机场之战
@@ -180,31 +200,3 @@ Denys Prokopenko，1991年出生，大学外语专业，毕业后作为一个普
 我觉得吧，考虑季节，那几位本来就是搭伙去香港玩的（因为还走了一圈东南亚），看到有街头活动就心痒难搔凑个热闹，自拍一下，社媒上秀一把，吹吹牛，仅此而已。
 
 但要说他们就能“乱港”，也太高看他们了。
-
-https://www.sohu.com/a/539108852_116237
-
-亚速钢铁厂到底有多难打？六层地下堡垒易守难攻，成马里乌波尔的决战之地
-
-https://mp.weixin.qq.com/s/sinqouToEWsGaxk6hM6Nmg
-
-钢铁厂变身血肉磨坊 21世纪最惨烈攻城战将落幕
-
-https://zhuanlan.zhihu.com/p/620213895
-
-从亚速营到亚速旅——乌克兰亚速部队盘点
-
-https://zhuanlan.zhihu.com/p/627513377
-
-怎么证明乌克兰亚速旗不是纳粹标志
-
-https://www.zhihu.com/answer/3022254816
-
-第三独立突击旅的历史
-
-https://www.zhihu.com/question/619108977
-
-为什么乌贼从来不提亚速营乱港？
-
-https://zhuanlan.zhihu.com/p/503009790
-
-是魔鬼？还是勇士？—亚速营（团）简史
