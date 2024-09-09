@@ -400,3 +400,7 @@ https://zhuanlan.zhihu.com/p/715611217
 https://zhuanlan.zhihu.com/p/715677560
 
 乌克兰无人机引燃罗斯托夫油库连烧3天，2亿美元柴油付之一炬
+
+https://zhuanlan.zhihu.com/p/718568803
+
+乌克兰工会在战争中的艰难处境

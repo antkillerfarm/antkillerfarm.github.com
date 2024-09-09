@@ -332,3 +332,7 @@ Windows对决OS/2（上）
 https://zhuanlan.zhihu.com/p/80631718
 
 Windows对决OS/2（下）
+
+https://zhuanlan.zhihu.com/p/715264418
+
+欢迎来到没有WWW的世界：体验KA9Q（上）

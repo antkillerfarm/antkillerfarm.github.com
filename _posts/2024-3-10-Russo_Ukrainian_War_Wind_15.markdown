@@ -234,3 +234,5 @@ The fate of Ukraine depends only on Ukrainians. No one but ourselves will contro
 When you attack us, you will see our faces, not our backs.
 
 Without gas or without you? – The answer is without you. Without electricity or without you? – Without you. Without water or without you? – Without you. Without food or without you? – Without you.
+
+他们告诉你我们是纳粹。但一个牺牲了超过八百万条生命来消灭纳粹的民族怎么能被称为纳粹呢？我的祖父作为苏联步兵活过了整场战争，在一个独立的乌克兰作为上校死去，我怎么会是纳粹呢？

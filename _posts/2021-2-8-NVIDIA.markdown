@@ -154,52 +154,6 @@ https://zhuanlan.zhihu.com/p/59618999
 
 Ubuntu 18.04安装NVIDIA显卡驱动
 
-## CUDA
-
-CUDA是NVIDIA最早推出的通用数学运算库。除了基本的数学运算之外，还提供了一些工具包：
-
-cuBLAS：线性计算库。
-
-NVBLAS：多GPU版的cuBLAS。
-
-cuFFT：FFT计算库。
-
-nvGRAPH：图计算库。（这里的图是数学图论中的图，和DL框架中的计算图是两回事。）
-
-cuRAND：随机数生成库。
-
-cuSPARSE；稀疏矩阵计算库。
-
-cuSOLVER：解线性方程的计算库。包括解稠密方程的cuSolverDN、解稀疏方程的cuSolverSP和矩阵分解的cuSolverRF。
-
-CUTLASS：另一个线性计算库。功能比cuBLAS更多。
-
-## Deep Learning SDK
-
-cuDNN：DL计算库。
-
-TensorRT：嵌入式设备上专用于DL inference的计算库。
-
-NVIDIA DIGITS：一款web应用工具，可在网页上对Caffe进行图形化操作和可视化。
-
-TensorRT还有个云端的集群版本：
-
-https://github.com/NVIDIA/tensorrt-inference-server
-
-参考：
-
-https://mp.weixin.qq.com/s/v8-JHd5tWm41WLqR-h6eKA
-
-使用TensorRT集成加速TensorFlow推理
-
-https://mp.weixin.qq.com/s/rMvhsi2vXxVC65C5Z4IXIw
-
-AI视频处理加速引擎TensorRT及Deepstream介绍
-
-https://zhuanlan.zhihu.com/p/35657027
-
-高性能深度学习支持引擎实战——TensorRT
-
 ## NVDLA
 
 NVIDIA Deep Learning Accelerator是一个开源的用于inference的芯片方案。官网：
@@ -218,67 +172,51 @@ https://zhuanlan.zhihu.com/p/561018305
 
 NVDLA硬件架构之卷积核心
 
-## NVIDIA DALI
+## RAPIDS
 
-NVIDIA DALI是一个GPU加速的数据增强和图像加载库，为优化深度学习框架数据pipeline而设计，而其中的NVIDIA nvJPEG是用于JPEG解码的高性能GPU加速库。
+RAPIDS，全称Real-time Acceleration Platform for Integrated Data Science，是NVIDIA针对数据科学和机器学习推出的一套开源GPU加速库，基于CUDA-X AI打造。
+
+官网：
+
+https://rapids.ai/
 
 代码：
 
-https://github.com/NVIDIA/dali
+https://github.com/rapidsai
 
-## Tensor Core
+![](/images/img4/RAPIDS.png)
 
-Tensor Core是Nvidia GPU自Volta架构开始，专门为深度学习矩阵运算设计的计算单元。
+参考：
 
-WMMA（warp matrix multiply-accumulate）
+https://blog.csdn.net/sinat_26917383/article/details/104503795
 
-类似的东西还有Arm的SME、Intel的AMX等。
+NVIDIA的python-GPU算法生态
 
-https://mp.weixin.qq.com/s/pPjPLqgXZ8iCPS42vXJpuQ
+## profile
 
-NVIDIA Tensor Core深度学习核心解析
+NVIDIA System Management Interface (NSMI): 即nvidia-smi。
 
-https://mp.weixin.qq.com/s/Qfbc2iQnXacOqOGIrpRQRw
+NVIDIA Nsight Systems (NSYS)
 
-Tensor Core究竟有多快？全面对比英伟达Tesla V100/P100的RNN加速能力
+NVIDIA Data Center GPU Manager (DCGM)
 
-https://www.zhihu.com/question/451127498
+NVIDIA Management Library (NVML): NVML为GPU硬件数据提供了编程接口，开发者可以通过编程的方式访问GPU的各项数据，其中就包含GPU利用率，nvidia-smi和DCGM的背后就是NVML，推荐高级开发者使用。
 
-英伟达GPU的tensor core和cuda core是什么区别？
+https://fkong.tech/posts/2023-11-19-torch-gpu-util/
 
-## PTX
+如何把PyTorch的GPU利用率提升到100%?
 
-PTX (Parallel Thread Execution) 是NVIDIA GPU的伪指令集，之所以加个伪字，主要是因为这个指令集并不是真的硬件指令集，而仅仅是个抽象指令集。
+## cuLitho
 
-该抽象指令集可以屏蔽不同架构显卡之间的指令差异。
+光刻是芯片制造过程中最复杂、最昂贵、最关键的环节，其成本约占整个硅片加工成本的1/3甚至更多。计算光刻模拟了光通过光学元件并与光刻胶相互作用时的行为，应用逆物理算法来预测掩膜板上的图案，以便在晶圆上生成最终图案。
 
-nvvm ir->PTX->SASS->runtime/jit->片上调度。
-
-官网：
-
-https://docs.nvidia.com/cuda/parallel-thread-execution/index.html
-
-gcc和llvm都有特定的pass可以生成PTX代码。
+“计算光刻是芯片设计和制造领域中最大的计算工作负载，每年消耗数百亿CPU小时。”黄仁勋讲解道，“大型数据中心24x7全天候运行，以便创建用于光刻系统的掩膜板。这些数据中心是芯片制造商每年投资近2000亿美元的资本支出的一部分。”而cuLitho能够将计算光刻的速度提高到原来的40倍。
 
 ---
 
-NVIDIA GPU真正的指令集，被称作SASS。
+![](/images/img5/RL_EDA.png)
 
-https://zhuanlan.zhihu.com/p/161624982
-
-SASS指令集概述
-
-https://www.zhihu.com/question/639210103
-
-为什么没人去做CUDA逆向和反编译？
-
-## CUDA-X AI
-
-CUDA-X AI是软件加速库的集合，这些库建立在CUDA之上，提供对于深度学习、机器学习和高性能计算必不可少的优化功能。这些库包括cuDNN（用于加速深度学习基元）、cuML（用于加速数据科学工作流程和机器学习算法）、TensorRT（用于优化受训模型的推理性能）、cuDF（用于访问 pandas 之类的数据科学 API）、cuGraph（用于在图形上执行高性能分析），以及超过13个的其他库。
-
-官网：
-
-https://www.nvidia.cn/technologies/cuda-x/
+NV的EDA辅助设计
 
 ## 参考
 

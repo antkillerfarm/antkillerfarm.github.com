@@ -11,8 +11,6 @@ category: Russo Ukrainian War Wind
 
 ## 泽连斯基语录（续）
 
-他们告诉你我们是纳粹。但一个牺牲了超过八百万条生命来消灭纳粹的民族怎么能被称为纳粹呢？我的祖父作为苏联步兵活过了整场战争，在一个独立的乌克兰作为上校死去，我怎么会是纳粹呢？
-
 当我竞选总统时，我说我们每个人都是总统。因为我们都对我们的国家负责。为了我们美丽的乌克兰。现在事实证明，我们每个人都是一名战士。战士在他或她自己的地方。我相信我们每个人都会获胜。
 
 我希望能有光，但情况非常困难，现在有时有光，有时没有光。最重要的是（心）里面要有光。
@@ -100,6 +98,8 @@ for me he is nobody, nobody.
 The gratitude – of all our people, of our entire state – to every warrior and to all fallen Ukrainian heroes who return home on their shields.
 
 我们唯一需要的是坚定的决心，以及世界上所有影响全球局势的人的决心。莫斯科无权决定我们人民的未来。
+
+我们已经开发了自己的新型无人机和导弹——我们正在逐步将这场战争带回俄罗斯。
 
 ---
 

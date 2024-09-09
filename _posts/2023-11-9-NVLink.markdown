@@ -284,39 +284,3 @@ https://zhuanlan.zhihu.com/p/67785062
 https://zhuanlan.zhihu.com/p/680702927
 
 NVLink发展概述
-
-# NVIDIA+
-
-## RAPIDS
-
-RAPIDS，全称Real-time Acceleration Platform for Integrated Data Science，是NVIDIA针对数据科学和机器学习推出的一套开源GPU加速库，基于CUDA-X AI打造。
-
-官网：
-
-https://rapids.ai/
-
-代码：
-
-https://github.com/rapidsai
-
-![](/images/img4/RAPIDS.png)
-
-参考：
-
-https://blog.csdn.net/sinat_26917383/article/details/104503795
-
-NVIDIA的python-GPU算法生态
-
-## profile
-
-NVIDIA System Management Interface (NSMI): 即nvidia-smi。
-
-NVIDIA Nsight Systems (NSYS)
-
-NVIDIA Data Center GPU Manager (DCGM)
-
-NVIDIA Management Library (NVML): NVML为GPU硬件数据提供了编程接口，开发者可以通过编程的方式访问GPU的各项数据，其中就包含GPU利用率，nvidia-smi和DCGM的背后就是NVML，推荐高级开发者使用。
-
-https://fkong.tech/posts/2023-11-19-torch-gpu-util/
-
-如何把PyTorch的GPU利用率提升到100%?

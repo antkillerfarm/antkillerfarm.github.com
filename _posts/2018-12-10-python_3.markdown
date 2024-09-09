@@ -262,7 +262,17 @@ class Point:
 
 # 创建对象
 point = Point(x=1.0, y=2.5)
+
+@dataclass
+class FCConfig:
+    min_k: int = 512
+
+@dataclass
+class BlockConfig:
+    fc_config: FCConfig = field(default_factory=FCConfig)
 ```
+
+上例中展示了dataclass的基本用法，以及dataclass嵌套的情况下，如何使用默认值，而不是参数，初始化对象。
 
 ## 三元表达式
 
@@ -407,44 +417,6 @@ signal.signal(signal.SIGALRM, handler)
 ```
 
 python3.4+还可以使用标准库的pathlib模块。
-
-## tqdm
-
-tqdm是一个快速，可扩展的进度条。
-
-代码：
-
-https://github.com/tqdm/tqdm
-
-示例：
-
-```python
-from tqdm import tqdm
-for i in tqdm(range(9)):
-    ...
-```
-
-其实还有一个更简单的办法：
-
-`print("\r" + "xxx", end="")`：这样的话会先把console里面当前的行清除掉、再输出xxx。
-
-参考：
-
-https://mp.weixin.qq.com/s/1YZ7-i3X8Cb2LYEuWtd1KA
-
-给Python代码加上酷炫进度条的几种姿势
-
-https://mp.weixin.qq.com/s/OVb4g1KzIsxgMKjJk_hG6A
-
-在Python中妥善使用进度条
-
-https://mp.weixin.qq.com/s/_rCg_uFD07eZw4QLtD-fzA
-
-Python竟然能做这样的进度条
-
-https://mp.weixin.qq.com/s/nGOCderiyOXsHkMZwIgpoA
-
-酷炫的Python进度条开源库：alive-progress
 
 ## 如何通过需认证的代理获取HTTP网页
 

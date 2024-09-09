@@ -9,6 +9,68 @@ category: language
 
 # Python
 
+## 参考
+
+https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA
+
+Python学习思维导图
+
+https://mp.weixin.qq.com/s/Hy1ZPFSRfVIMYEYFCOcKPQ
+
+1000+常用Python库一览
+
+https://mp.weixin.qq.com/s/_OmRvwFmvuuOpBf7DQG8IA
+
+Python30个编程技巧
+
+https://mp.weixin.qq.com/s/jG9RYSn5Gia7E9GyYx1IqQ
+
+30段极简Python代码
+
+https://mp.weixin.qq.com/s/Y3ZV3phzkPGxHIvoT8Ez7Q
+
+53个Python经典面试题详解
+
+https://github.com/leisurelicht/wtfpython-cn
+
+《What the f*ck Python!》中文版
+
+https://mp.weixin.qq.com/s/FbMvWgVf1rYtWH4cwYarIg
+
+140种Python标准库、第三方库和外部工具都有了
+
+https://mp.weixin.qq.com/s/O5okcuVKuf339BZzhmxiew
+
+13个Python GUI库
+
+https://mp.weixin.qq.com/s/hIMwss4h5k10oLanCYYS1g
+
+49个Python学习资源
+
+https://mp.weixin.qq.com/s/2tS7g4QxZ0r3wEt2nsSvLg
+
+这个库堪称Python编程的瑞士军刀！（funcy）
+
+https://mp.weixin.qq.com/s/cgSVy0zGPcKREo62tbiYnA
+
+7个学习Python编程的最佳开源库
+
+https://mp.weixin.qq.com/s/06-iOG5TkRkHb4RZl1bXNQ
+
+史上最全Python迭代器与生成器
+
+https://mp.weixin.qq.com/s/lv_sjvXx8vWf6TsVoYoxFw
+
+Python处理文件系统的10种方法
+
+https://mp.weixin.qq.com/s/KCiR6ZE1EpYVfySaCG097A
+
+上半年最常见的Python面试题
+
+https://mp.weixin.qq.com/s/0dw2LHsIKFv8B_JaIMoekg
+
+python字符编码处理总结
+
 https://mp.weixin.qq.com/s/fTs_r7DLbLWoos4uRM3KYA
 
 10个Python常见面试题，这些弄不明白不要说学过Python！

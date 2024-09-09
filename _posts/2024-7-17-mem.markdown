@@ -99,6 +99,14 @@ https://blog.csdn.net/shiwq1127/article/details/127975179
 
 memory interleaving（内存交织）
 
+https://zhuanlan.zhihu.com/p/675766394
+
+DDR5内存的“组织架构”
+
+https://zhuanlan.zhihu.com/p/675768122
+
+DDR5内存全家照
+
 # NAND
 
 ## NOR Flash & NAND Flash

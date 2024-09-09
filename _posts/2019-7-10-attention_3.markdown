@@ -61,6 +61,8 @@ The Illustrated Transformer
 
 3.为了解决循环结构的次序问题，论文提出了上图所示的Masked Multi-Head Attention。
 
+![](/images/img6/Transformer_block.png)
+
 ## FFN
 
 上图中的Feed Forward的公式为：

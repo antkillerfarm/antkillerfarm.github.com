@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  通信协议, WebSocket, CoAP & MQTT
+title:  通信协议, WebSocket
 category: resource 
 ---
 
@@ -170,6 +170,16 @@ Quic相比现在广泛应用的http2+tcp+tls协议有如下优势：
 4.连接迁移。
 
 5.前向冗余纠错。
+
+---
+
+传统TCP太老了。当年考虑的是如何在最多16KB的内存空间下批量传输64KB的包。现在的网络栈动不动分配单元就是16MB。
+
+https://www.zhihu.com/question/609087404
+
+为什么基于UDP设计的可靠传输协议普遍比传统TCP快？
+
+---
 
 参考：
 
@@ -375,37 +385,3 @@ websocket是老东西了，自从HTTP/2推出了Server Sent Events这种新功�
 https://www.zhihu.com/question/417163973
 
 为什么当今Web应用不都采用WebSocket形式进行数据交互？
-
-# CoAP & MQTT
-
-CoAP（Constrained Application Protocol）协议，是IETF针对物联网提出的应用层协议。
-
-参考：
-
-http://blog.csdn.net/xukai871105/article/details/17734163
-
-CoAP协议学习——CoAP基础
-
-MQTT（MQ Telemetry Transport）是一个轻量级的machine-to-machine通信协议。适合于低带宽、不可靠连接、CPU内存资源紧张的嵌入式设备，它有可能成为物联网的重要协议。
-
-官网：
-
-http://mqtt.org/
-
-参考：
-
-https://mp.weixin.qq.com/s/i1WziUgG9TcLvvX1-2Nizw
-
-初识MQTT协议
-
-https://mp.weixin.qq.com/s/ZaBkqlmWboOT7SEpQOln_Q
-
-MQTT协议之连接
-
-https://mp.weixin.qq.com/s/1sq630gHR_z1NeSRILMMpw
-
-MQTT协议之发布订阅
-
-https://www.zhihu.com/question/21816631
-
-MQTT和Websocket的区别是什么？

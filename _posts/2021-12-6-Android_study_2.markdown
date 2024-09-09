@@ -147,6 +147,10 @@ https://mp.weixin.qq.com/s/QC0QDPwBU5OLjtZNqDzSrg
 
 鸿蒙之迷思
 
+https://zhuanlan.zhihu.com/p/718796888
+
+Binder：安卓最常用的进程通信
+
 # MSYS2
 
 2015.11
