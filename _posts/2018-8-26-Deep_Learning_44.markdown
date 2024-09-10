@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十四）——多标签学习, 多模态学习
+title:  深度学习（四十四）——多标签学习, 多模态学习, 深度贝叶斯学习
 category: DL 
 ---
 
@@ -225,105 +225,97 @@ https://mp.weixin.qq.com/s/TFHS5lZYFwcjP_SC1dAckA
 
 多模态信息如何嵌入推荐系统？RecSys2021《多模态推荐系统》教程
 
-# Capsule+
+# 深度贝叶斯学习
 
-https://jhui.github.io/2017/11/14/Matrix-Capsules-with-EM-routing-Capsule-Network/
+https://mp.weixin.qq.com/s/4sDNUZiOiS6VH_oRSnW6HQ
 
-“Understanding Matrix capsules with EM Routing (Based on Hinton's Capsule Networks)”
+牛津大学YARIN GAL《贝叶斯深度学习》入门教程，336页ppt
 
-https://zhuanlan.zhihu.com/p/42864711
+https://mp.weixin.qq.com/s/w_phnVwm13P8dU0Ks-b-YA
 
-胶囊网络到底是什么东东？
+《贝叶斯深度学习: DL与Bayesian原理 》NeurIPS2019硬核教程
 
-https://zhuanlan.zhihu.com/p/32106577
+https://mp.weixin.qq.com/s/J_sbJb8i-O8CwhHvVyPv1w
 
-酉变换与递归神经网络
+《深度贝叶斯数据挖掘》，附257页PPT下载
 
-https://github.com/freefuiiismyname/capsule-mrc
+https://mp.weixin.qq.com/s/cDqxmRVQCIqdM5oiUh82YQ
 
-基于capsule的观点型阅读理解模型
+Yee Whye Teh：《贝叶斯深度学习与深度贝叶斯学习》
 
-https://mp.weixin.qq.com/s/cskdgsysD7R_FKChAKmlDg
+https://mp.weixin.qq.com/s/JZVl0kygVawdW8qflPps6g
 
-利用Capsule重构过程，Hinton等人实现对抗样本的自动检测
+《神经贝叶斯信息处理》教程，220页ppt，国立交通大学
 
-https://mp.weixin.qq.com/s/7fBXMvT4eyZrKhPKQTAIZQ
+https://mp.weixin.qq.com/s/Zk2YG-IJNhJxTBU8THSM-g
 
-你听说过胶囊网络吗？
+让DL可解释？这一份66页贝叶斯深度学习教程告诉你
 
-https://www.cnblogs.com/CZiFan/p/9803067.html
+https://mp.weixin.qq.com/s/-izo9VUdxN33pwVFGV_tjw
 
-CapsNet胶囊网络
+299页PPT带你回顾深度贝叶斯学习最新发展脉络
 
-https://mp.weixin.qq.com/s/F9SGZPZj6gup_nOVuDel6A
+https://mp.weixin.qq.com/s/UiLyQKhIe2rDYiwPcqyqaw
 
-与胶囊网络异曲同工：Bengio等提出四元数循环神经网络
+可跟踪概率模型，209页最新教程
 
-https://mp.weixin.qq.com/s/4o9XHGwx5lYsJ7YfUNHSoQ
+https://mp.weixin.qq.com/s/pHAbxeYBI2q6pUHNrAt1og
 
-百年老图难倒谷歌AI，网友：是鸭是兔？连我都不能确定
+贝叶斯学习与未来人工智能
 
-https://mp.weixin.qq.com/s/dN1p7nuv6xtnIsSuY73CcA
+https://mp.weixin.qq.com/s/Zd4rFU7Lebr4zmzxThNyVw
 
-基于GNN，强于GNN：胶囊图神经网络的PyTorch实现
+详解珠算：清华大学开源的贝叶斯深度学习库
 
-https://mp.weixin.qq.com/s/lcJcaiMtYXGVOwa_sVsVfA
+https://mp.weixin.qq.com/s/RpaOrngeXTKycLb3iCygZw
 
-Hinton老爷子CapsNet再升级，结合无监督，接近当前最佳效果
+利用贝叶斯神经网络进行随机动力系统中的学习与策略搜索
 
-https://mp.weixin.qq.com/s/A0m3lkIBCTFf5bzTQlYbgQ
+https://github.com/bayesgroup/deepbayes-2018
 
-基于胶囊网络的计算机视觉应用
+Seminars DeepBayes Summer School 2018
 
-https://mp.weixin.qq.com/s/BqsFIUrVEVz5kOFh3W93gQ
+https://mp.weixin.qq.com/s/WCRYppBLdl_M4etUChnfgw
 
-胶囊网络升级新版本，推特2000+赞
+PyMC3和Theano代码构建贝叶斯深度网络
 
-https://zhuanlan.zhihu.com/p/106330900
+https://mp.weixin.qq.com/s/7mwJpQFWWXJ3dvTAwDFI7Q
 
-解读－Stacked Capsule AutoEncoder－堆叠的胶囊自编码器
+贝叶斯卷积神经网络：架起深度学习与统计学的桥梁
 
-https://mp.weixin.qq.com/s/ubi1L1Zlh4yZqCjZnpD58w
+https://mp.weixin.qq.com/s/2LkpuchuHs82Sxs5rD8bWA
 
-Capsule Network深度解读
+《深度贝叶斯与序列学习》，279页PPT带你知晓深度贝叶斯序列模型在NLP最新进展
+
+https://zhuanlan.zhihu.com/p/74573041
+
+针对推荐系统的深度贝叶斯多目标学习
+
+https://mp.weixin.qq.com/s/b041h_hbHQYiXCiDHGaD5w
+
+深度贝叶斯自然语言处理，304页ppt带你了解最新研究进展
+
+https://zhuanlan.zhihu.com/p/77140176
+
+构建贝叶斯深度学习分类器
+
+https://mp.weixin.qq.com/s/0e4GHNRCF9xKFELAZ4zRFA
+
+A simple tutorial for Bayesian neural network
+
+https://mp.weixin.qq.com/s/NkRemHPRnEcEwbs5b-Mz9w
+
+贝叶斯编程，378页pdf，Bayesian Programming
+
+https://mp.weixin.qq.com/s/DDg4HTp-APwEIul1ZaFFPQ
+
+最新《贝叶斯推断》教程，125页ppt与视频，DeepMind Shakir Mohamed博士
+
+https://zhuanlan.zhihu.com/p/283633149
+
+Bayesian Deep Learning最新研究总结
 
 # 姿态/行为检测进阶+
-
-https://mp.weixin.qq.com/s/6HsL2B7p-XyvGWAb4SwALA
-
-图灵奖得主Geoffrey Hinton最新研究NASA：一种更好地学习三维模型动作的方法
-
-https://zhuanlan.zhihu.com/p/26460437
-
-Video Analysis相关领域解读之Action Recognition(行为识别)
-
-https://zhuanlan.zhihu.com/p/26603387
-
-Video Analysis相关领域解读之Temporal Action Detection(时序行为检测)
-
-https://zhuanlan.zhihu.com/p/26730181
-
-Video Analysis相关领域介绍之Video Captioning(视频to文字描述)
-
-https://mp.weixin.qq.com/s/-HEYU_El8xysk8atHYx1Mg
-
-基于3D行人姿态和步态预测的神经网络模型
-
-https://zhuanlan.zhihu.com/p/72561165
-
-重新思考人体姿态估计 Rethinking Human Pose Estimation
-
-https://mp.weixin.qq.com/s/8vdTlIe9LV88AVw9kAcVjA
-
-基于空间AdaIN的深度姿态迁移
-
-https://zhuanlan.zhihu.com/p/129279351
-
-X3D Facebook视频理解/行为识别新作
-
-https://zhuanlan.zhihu.com/p/149429010
-
-TAM: 针对动作识别的时序自适应模块
 
 https://mp.weixin.qq.com/s/skCOaKf9kRABTX7hkdjGXA
 

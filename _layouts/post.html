@@ -2,21 +2,28 @@
 layout: default
 ---
 <div id="post">
-<h1 class="titlex"><a href='{{page.url}}'>{{page.title}}</a></h1>
-<span class='date'>{{page.date | date: "%Y-%m-%d"}}</span>
-<div class='body'>{{ content }}</div>
-<div align="center" class="donate"><p><img src="/images/donate.png" alt="" /></p>
-<p>您的打赏，是对我的鼓励</p>
-<p>请访问<a target="_blank" href="https://github.com/antkillerfarm/antkillerfarm.github.com/issues">这里</a>提交评论</p>
-</div>
+  <h1 class="titlex"><a href='{{page.url}}'>{{page.title}}</a></h1>
+  <span class='date'>{{page.date | date: "%Y-%m-%d"}}</span>
+  <div class='body'>{{ content }}</div>
+  <div align="center" class="donate">
+    <p><img src="/images/donate.png" alt="" /></p>
+    <p>您的打赏，是对我的鼓励</p>
+  </div>
 </div>
 
+<script src="https://utteranc.es/client.js"
+        repo="antkillerfarm/antkillerfarm.github.com"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
 
 <div id="related">
   <h2>Recent Posts in {{ page.category }}</h2>
   <ul class="posts">
     {% for post in site.categories[page.category] limit:5 %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 </div>
@@ -25,7 +32,7 @@ layout: default
   <h2>Recent Posts in All Blogs</h2>
   <ul class="posts">
     {% for post in site.related_posts limit:5 %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 </div>
