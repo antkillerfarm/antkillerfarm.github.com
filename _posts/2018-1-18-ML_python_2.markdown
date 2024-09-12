@@ -17,7 +17,7 @@ Scikit-learn提供了常见的机器学习算法的实现。
 
 `pip install scikit-learn`
 
->注：`sklearn`似乎是另外的包。
+>`sklearn`似乎是另外的包。
 
 官网：
 

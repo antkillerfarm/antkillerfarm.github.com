@@ -273,7 +273,7 @@ Camera和Display颜色评测色空间简介
 
 Hough Transform最早是Paul V.C. Hough于1962年在一篇专利中提出的。1972年，Richard O. Duda和Peter E. Hart对其进行了扩展，并发表论文《Use of the Hough Transformation to Detect Lines and Curves in Pictures》。但是直到1981年，Dana H. Ballard发表《Generalizing the Hough transform to detect arbitrary shapes》之后，它才被人广泛使用。
 
->注：Paul V.C. Hough，生平不详。只知道是个物理学家，曾在Brookhaven National Laboratory工作过。
+>Paul V.C. Hough，生平不详。只知道是个物理学家，曾在Brookhaven National Laboratory工作过。
 
 >Richard O. Duda，MIT博士，圣何塞州立大学教授。曾供职于SRI International。
 

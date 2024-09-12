@@ -71,7 +71,7 @@ $$v_t = \gamma v_{t-1} + \eta \nabla_\theta J( \theta - \gamma v_{t-1})$$
 
 $$\theta = \theta - v_t$$
 
->注：Yurii Nesterov，莫斯科大学应用数学系本科（1977年），凸优化理论专家。法国鲁汶天主教大学教授。2009年获John von Neumann Theory Prize。
+>Yurii Nesterov，莫斯科大学应用数学系本科（1977年），凸优化理论专家。法国鲁汶天主教大学教授。2009年获John von Neumann Theory Prize。
 
 参考：
 
@@ -111,7 +111,7 @@ Adagrad的缺点在于：训练越往后，G越大，从而学习率越小。如
 
 为了克服Adagrad的缺点，Matthew D. Zeiler于2012年提出了Adadelta算法。
 
->注：Matthew D. Zeiler，多伦多大学本科（2009）+纽约大学博士（2013）。Clarifai创始人和CEO。读书期间，他还创立了一家给大学生卖习题册的公司。   
+>Matthew D. Zeiler，多伦多大学本科（2009）+纽约大学博士（2013）。Clarifai创始人和CEO。读书期间，他还创立了一家给大学生卖习题册的公司。   
 >个人主页：   
 >http://www.matthewzeiler.com/
 

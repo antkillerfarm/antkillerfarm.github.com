@@ -109,7 +109,7 @@ https://mp.weixin.qq.com/s/_wuE3-7nWyz7VDWdDPJSeQ
 
 支持向量机（SVM，Support Vector Machines）是目前最好的监督学习算法。它由Vladimir Naumovich Vapnik与Alexey Ya. Chervonenkis于1963年提出。
 
->注：Vladimir Naumovich Vapnik，1936年生，乌兹别克国立大学学士，莫斯科控制科学学院博士，后成为该学院计算机科学研究部门负责人。1990年代末移民美国，先后供职于AT&T Bell、NEC、Facebook，伦敦大学和哥伦比亚大学教授。
+>Vladimir Naumovich Vapnik，1936年生，乌兹别克国立大学学士，莫斯科控制科学学院博士，后成为该学院计算机科学研究部门负责人。1990年代末移民美国，先后供职于AT&T Bell、NEC、Facebook，伦敦大学和哥伦比亚大学教授。
 
 >Alexey Yakovlevich Chervonenkis，1938～2014，俄罗斯数学家。俄罗斯科学院院士，伦敦大学教授。
 
@@ -170,7 +170,7 @@ $$\begin{align}
 & & & \|w\|=1
 \end{align}$$
 
->注：上式中的$$\operatorname{s.t.}$$是subject to的缩写，表示极值问题的约束条件。
+>上式中的$$\operatorname{s.t.}$$是subject to的缩写，表示极值问题的约束条件。
 
 这个问题等价于:
 

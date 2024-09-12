@@ -83,7 +83,7 @@ $$J(\theta)=\frac{1}{2}\sum_{i=0}^m(h_{\theta}(x^{(i)})-y^{(i)})^2 \tag{2}$$
 
 其中，m表示训练集的个数（从0算起），$$x^{(i)}$$表示第i个训练样本。
 
->注：cost function，有的文章也称作loss function。
+>cost function，有的文章也称作loss function。
 
 代价函数的表达式，实际上就是正态分布的方差计算公式，它体现了拟合后的函数曲线与样本集之间的偏差程度。显然，代价函数的值越小，预测准确度越高。
 
@@ -105,7 +105,7 @@ $$J(A)=\frac{\mathrm{d}f}{\mathrm{d}x}=
 \end{bmatrix}
 $$
 
->注：Carl Gustav Jacob Jacobi，1804～1851，德国数学家，柏林大学博士。
+>Carl Gustav Jacob Jacobi，1804～1851，德国数学家，柏林大学博士。
 
 当$$m=1$$时，该矩阵又被称为梯度向量：
 
@@ -126,7 +126,7 @@ $$H(A)=
 \end{bmatrix}
 $$
 
->注：Ludwig Otto Hesse，1811～1874，德国数学家，毕业于柯尼斯堡大学，Jacobi的学生。
+>Ludwig Otto Hesse，1811～1874，德国数学家，毕业于柯尼斯堡大学，Jacobi的学生。
 
 因为$$\frac{\partial^2 f}{\partial x_i\partial x_j}=\frac{\partial^2 f}{\partial x_j\partial x_i}$$(克莱罗定理，Clairaut’s theorem)，所以Hessian矩阵通常是一个对称矩阵。
 

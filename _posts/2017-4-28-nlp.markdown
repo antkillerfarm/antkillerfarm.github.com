@@ -119,7 +119,7 @@ http://ccl.pku.edu.cn/alcourse/nlp/LectureNotes/Natural%20Language%20Processing%
 
 《Natural Language Processing with Python》，Steven Bird、Ewan Klein、Edward Loper著。这本书的作者们创建了著名的NLTK工具库。
 
->注：Steven Bird，爱丁堡大学博士，墨尔本大学副教授。   
+>Steven Bird，爱丁堡大学博士，墨尔本大学副教授。   
 >http://www.stevenbird.net/about.html
 
 >Ewan Klein，苏格兰人，哥伦比亚大学博士（1978年），爱丁堡大学教授。
@@ -390,7 +390,7 @@ https://github.com/hankcs/HanLP/
 
 4.HanLP在主页上提供了相关算法的blog，便于初学者快速掌握相关概念。其词典是明文发布，便于用户修改。HanLP执行时，会将明文词典以特定结构缓存，以提高执行效率。
 
->注：不要以为中文有分词问题，就比别的语言复杂，英文还有词根问题呢。。。每种语言都不简单。
+>不要以为中文有分词问题，就比别的语言复杂，英文还有词根问题呢。。。每种语言都不简单。
 
 参考：
 

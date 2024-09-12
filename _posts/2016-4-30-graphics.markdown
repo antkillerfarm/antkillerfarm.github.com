@@ -11,13 +11,13 @@ category: graphics
 
 《Digital Image Processing》，Rafael C. Gonzalez、Richard E. Woods著。
 
->注：Rafael C. Gonzalez，佛罗里达大学博士，田纳西大学教授。
+>Rafael C. Gonzalez，佛罗里达大学博士，田纳西大学教授。
 
 >Richard E. Woods，田纳西大学博士和教授。
 
 《Image Processing, Analysis and Machine Vision》，Milan Sonka、Vaclav Hlavac、Roger Boyle著。
 
->注：Milan Sonka，艾奥瓦大学教授。
+>Milan Sonka，艾奥瓦大学教授。
 
 >Vaclav Hlavac，捷克科技大学博士和教授。
 
@@ -252,7 +252,7 @@ $$
 
 该算法是一种动态阈值分割算法。它的主要思想是按照灰度特性将图像划分为背景和目标2部分（这里我们将$$f\le t$$的部分称为背景，其他部分称为目标。），选取门限值，使得背景和目标之间的方差最大。
 
->注：Nobuyuki Otsu（大津展之），东京大学博士，先后在筑波大学和东京大学担任教授。
+>Nobuyuki Otsu（大津展之），东京大学博士，先后在筑波大学和东京大学担任教授。
 
 其步骤如下：
 

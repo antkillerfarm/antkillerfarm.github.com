@@ -121,9 +121,21 @@ http://jekyllthemes.org/
 
 jekyll的官方主题站点
 
+https://github.com/cotes2020/jekyll-theme-chirpy
+
+一个不错的jekyll主题
+
 https://mp.weixin.qq.com/s/ih0jurQ4OzvLh3lmhGGxTA
 
 Ruby 3编程: 从小白到专家，598页pdf
+
+## RVM
+
+RVM是一个命令行工具，可以提供一个便捷的多版本Ruby环境的管理和切换。
+
+参考：
+
+https://ruby-china.org/wiki/rvm-guide
 
 ## GitHub下载速度慢
 

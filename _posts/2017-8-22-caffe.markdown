@@ -11,7 +11,7 @@ category: DL Framework
 
 Convolutional Architecture for Fast Feature Embedding是贾扬清写的一个深度学习框架。
 
->注：贾扬清，清华的本硕（2009）+UCB的博士（2014）。先后在Google和Facebook任研究员。知乎名人。   
+>贾扬清，清华的本硕（2009）+UCB的博士（2014）。先后在Google和Facebook任研究员。知乎名人。   
 >个人主页：   
 >http://daggerfs.com/
 
@@ -196,7 +196,7 @@ Caffe中用于数据操作和交换的数据结构。简单来说，就是一个
 | OpenCV | height,width,channel | BGR |  |
 | PIL | height,width,channel | RGB |  |
 
->注：在API层面，Caffe和OpenVX顺序完全相反，但是由于OpenVX是列优先存储，因此在内存存储方面，两者的格式正好完全一致。详见《多维数组的行优先和列优先》一节。
+>在API层面，Caffe和OpenVX顺序完全相反，但是由于OpenVX是列优先存储，因此在内存存储方面，两者的格式正好完全一致。详见《多维数组的行优先和列优先》一节。
 
 ### lr_mult
 

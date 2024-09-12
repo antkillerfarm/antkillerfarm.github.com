@@ -146,7 +146,7 @@ $$\begin{align}\mathbf{u} \otimes \mathbf{v} = \mathbf{u} \mathbf{v}^\mathrm{T}
 
 张量积推广到矩阵，即所谓Kronecker product。
 
->注：Leopold Kronecker，1823～1891，德国数学家。柏林大学博士和教授。导师Dirichlet。他最牛逼的地方是，当Riemann去世的时候，拒绝了哥廷根大学的offer。而这个位置的前任分别是：Carl Gauss、Dirichlet、Riemann。
+>Leopold Kronecker，1823～1891，德国数学家。柏林大学博士和教授。导师Dirichlet。他最牛逼的地方是，当Riemann去世的时候，拒绝了哥廷根大学的offer。而这个位置的前任分别是：Carl Gauss、Dirichlet、Riemann。
 
 $$\mathbf{A}\otimes\mathbf{B} = \begin{bmatrix} a_{11} \mathbf{B} & \cdots & a_{1n}\mathbf{B} \\ \vdots & \ddots & \vdots \\ a_{m1} \mathbf{B} & \cdots & a_{mn} \mathbf{B} \end{bmatrix}$$
 
@@ -154,7 +154,7 @@ $$\mathbf{A}\otimes\mathbf{B} = \begin{bmatrix} a_{11} \mathbf{B} & \cdots & a_{
 
 又叫Schur product或entrywise product。
 
->注：Jacques Salomon Hadamard，1865～1963，法国数学家。巴黎高等师范学校博士，波尔多大学教授。他曾于1936年访华，执教于清华大学。中国偏微分方程研究事业的主要创始人之一——吴新谋教授，就是他的学生。
+>Jacques Salomon Hadamard，1865～1963，法国数学家。巴黎高等师范学校博士，波尔多大学教授。他曾于1936年访华，执教于清华大学。中国偏微分方程研究事业的主要创始人之一——吴新谋教授，就是他的学生。
 
 $$\left(\begin{array}{ccc}
     \mathrm{a}_{11} & \mathrm{a}_{12} & \mathrm{a}_{13}\\
@@ -188,7 +188,7 @@ https://mp.weixin.qq.com/s/Mup0XmbGhunlkYl6Y95kiQ
 
 《张量分析》，黄克智著。
 
->注：黄克智，1927年生，固体力学家。江西中正大学本科+清华硕士+莫斯科大学博士（因应召回国，放弃博士学位）。清华大学工程力学系教授、工程力学研究所所长，中国科学院院士。断裂力学领域权威。
+>黄克智，1927年生，固体力学家。江西中正大学本科+清华硕士+莫斯科大学博士（因应召回国，放弃博士学位）。清华大学工程力学系教授、工程力学研究所所长，中国科学院院士。断裂力学领域权威。
 
 参考：
 
@@ -280,7 +280,7 @@ $$A^{-1}=(LU)^{-1}=U^{-1}L^{-1}$$
 
 LU分解有若干种算法，常见的包括Doolittle、Cholesky、Crout算法。
 
->注：Myrick Hascall Doolittlee，1830~1913。
+>Myrick Hascall Doolittlee，1830~1913。
 
 >Andr´e-Louis Cholesky，1875~1918，法国数学家、工程师、军官。死于一战战场。Cholesky分解法又称平方根法，是当A为实对称正定矩阵时，LU三角分解法的变形。
 

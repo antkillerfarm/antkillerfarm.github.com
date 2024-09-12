@@ -117,7 +117,7 @@ $$AD\cdot BE\cdot CF=BD\cdot CE\cdot AF$$
 
 >Menelaus of Alexandria，公元70～140年，古希腊数学家、天文学家。青年时期求学于Alexandria，后定居于Rome。他第一个认识到曲面上的测地线（geodesics）可以类比于平面上的直线。   
 
->注：不要和荷马史诗中，美女Helen的前老公，那个也叫Menelaus的国王搞混了。
+>不要和荷马史诗中，美女Helen的前老公，那个也叫Menelaus的国王搞混了。
 
 上图是这个定理的平面几何版本，相关的证明过程，网上已经很多了，这里不再赘述。
 

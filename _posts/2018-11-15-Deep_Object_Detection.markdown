@@ -255,7 +255,7 @@ https://mp.weixin.qq.com/s/_kzPi1QgwqvT4glRI-FCzg
 
 RCNN是Ross Girshick于2014年提出的深度模型。
 
->注：Ross Girshick（网名：rbg），芝加哥大学博士（2012），Facebook研究员。他和何恺明被誉为CV界深度学习的**双子新星**。   
+>Ross Girshick（网名：rbg），芝加哥大学博士（2012），Facebook研究员。他和何恺明被誉为CV界深度学习的**双子新星**。   
 >个人主页：   
 >http://www.rossgirshick.info/
 

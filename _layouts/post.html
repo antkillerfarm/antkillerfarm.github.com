@@ -2,7 +2,7 @@
 layout: default
 ---
 <div id="post">
-  <h1 class="titlex"><a href='{{page.url}}'>{{page.title}}</a></h1>
+  <h1 class="titlex"><a href="/#{{page.category}}">{{page.category}}</a> &raquo; <a href='{{page.url}}'>{{page.title}}</a></h1>
   <span class='date'>{{page.date | date: "%Y-%m-%d"}}</span>
   <div class='body'>{{ content }}</div>
   <div align="center" class="donate">
@@ -20,7 +20,7 @@ layout: default
 </script>
 
 <div id="related">
-  <h2>Recent Posts in {{ page.category }}</h2>
+  <h2>Recent Posts in <a href="/#{{page.category}}">{{ page.category }}</a></h2>
   <ul class="posts">
     {% for post in site.categories[page.category] limit:5 %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
@@ -29,7 +29,7 @@ layout: default
 </div>
 
 <div id="related">
-  <h2>Recent Posts in All Blogs</h2>
+  <h2>Recent Posts in <a href="/">All Blogs</a></h2>
   <ul class="posts">
     {% for post in site.related_posts limit:5 %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>

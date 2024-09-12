@@ -15,11 +15,11 @@ Github：
 
 https://github.com/tmikolov/word2vec
 
->注：Tomas Mikolov，捷克布尔诺科技大学博士。先后在Google、Facebook担任研究员。
+>Tomas Mikolov，捷克布尔诺科技大学博士。先后在Google、Facebook担任研究员。
 
 word2vec包中还有一个word2phrase的程序，这个程序可以根据统计信息由单词生成短语。考虑到中文的字和词之间的关系，实际上也可以用它来进行无先验数据的分词。
 
->注：NLP中的先验数据，最出名的当属分词词典。除此之外，还包括HMM的转移矩阵表等。
+>NLP中的先验数据，最出名的当属分词词典。除此之外，还包括HMM的转移矩阵表等。
 
 其一般方法为：
 

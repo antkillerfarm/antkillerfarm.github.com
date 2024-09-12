@@ -75,7 +75,7 @@ $$\phi_i=\frac{e^{\eta_i}}{\sum_{j=1}^ke^{\eta_j}}=\frac{e^{\theta_i^Tx}}{\sum_{
 
 这种从$$\eta$$映射到$$\phi$$的函数，被称作softmax函数。
 
->注：由于softmax函数给出的是分类结果的概率，因此对于某些分类结果中，所有类别概率都很低的情况，我们有理由认为遇到了未知的类别。softmax函数的这种概率可解释性，是它优于其他函数的地方。
+>由于softmax函数给出的是分类结果的概率，因此对于某些分类结果中，所有类别概率都很低的情况，我们有理由认为遇到了未知的类别。softmax函数的这种概率可解释性，是它优于其他函数的地方。
 
 $$h_\theta(x)=E[T(y)\mid x;\theta]=\begin{bmatrix} \phi_1 \\ \phi_2 \\ \vdots \\ \phi_{k-1} \end{bmatrix}
 =\begin{bmatrix} \frac{\exp(\theta_1^Tx)}{\sum_{j=1}^k\exp(\theta_j^Tx)} \\ \frac{\exp(\theta_2^Tx)}{\sum_{j=1}^k\exp(\theta_j^Tx)} \\ \vdots \\ \frac{\exp(\theta_{k-1}^Tx)}{\sum_{j=1}^k\exp(\theta_j^Tx)} \end{bmatrix}$$
@@ -110,7 +110,7 @@ $$p(y\mid x)=\frac{p(x\mid y)p(y)}{p(x\mid y=1)p(y=1)+p(x\mid y=0)p(y=0)}=\frac{
 
 其中，$$p(x\mid y)$$称为后验概率，$$p(y)$$称为先验概率。
 
->注：Thomas Bayes，1701~1761，英国统计学家。
+>Thomas Bayes，1701~1761，英国统计学家。
 
 由于我们关注的是y的离散值结果中哪个概率大（比如山羊概率和绵羊概率哪个大），而并不是关心具体的概率，因此公式6可改写为：
 
@@ -184,7 +184,7 @@ $$\varepsilon_{a_1 a_2 a_3 \ldots a_n} =
 0 & \text{otherwise}
 \end{cases}$$
 
->注：Tullio Levi-Civita，1873~1941，意大利数学家。他在张量微积分领域的贡献，帮助了相对论的确立。
+>Tullio Levi-Civita，1873~1941，意大利数学家。他在张量微积分领域的贡献，帮助了相对论的确立。
 
 莱布尼茨公式：
 
@@ -200,7 +200,7 @@ $$x\mid y=0\sim N(\mu_0,\Sigma)$$
 
 $$x\mid y=1\sim N(\mu_1,\Sigma)$$
 
->注：这里只讨论y有两种分类的情况，且假设两种分类的$$\Sigma$$相同。
+>这里只讨论y有两种分类的情况，且假设两种分类的$$\Sigma$$相同。
 
 相应的概率密度函数为：
 

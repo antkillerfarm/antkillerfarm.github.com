@@ -208,6 +208,18 @@ https://blog.csdn.net/titilima/article/details/1679846
 
 不用担心邮件丢失，本地删除之后，Outlook会自动从服务器重新下载的。
 
+# Xbox
+
+Xbox one有3个Windows OS运行在主机上, 分别是：
+
+- HostOS, SystemOS, EraOSHostOS：一个Hyper-V的宿主系统，只有系统启动、更新、变砖界面可以看到它。
+- SystemOS/Shared OS/SraOS：主面板、商店和其他UWP、UWP架构的游戏、Edge浏览器等功能在该系统上运行。
+- EraOS/GameOS/Exclusive OS/TitleOS：XDK/GDK游戏运行的环境，Xbox One游戏（XDK）使用了非常精简的Windows8系统修改版，而后面的GDK可能是Windows10的修改版。
+
+https://www.zhihu.com/question/666734911
+
+如何评价Xbox One兼容层（模拟器）XWine1？
+
 # WxWidget
 
 WxWidget在windows平台的安装包是个奇葩的东西，它并不是可执行文件的安装包，而是个源代码安装包。因此安装之后，还需要编译，才能使用。
@@ -231,6 +243,10 @@ wxPython：Python首选的GUI库
 WebGL可以看作是JavaScript + OpenGL ES，它为Web开发者使用显卡创建3D应用提供了方案。
 
 类似的还有WebGPU = JS + Vulkan。
+
+---
+
+VRML：Virtual Reality Modeling Language，最初在1994年被设计出来。当年本科时，我还修了计算机视觉交互这门课，满满的回忆啊。。。
 
 ## 教程
 

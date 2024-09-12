@@ -64,7 +64,7 @@ http://www3.nd.edu/~zxu2/acms40390F11/Alg-LU-Crout.pdf
 
 QR分解也有若干种算法，常见的包括Gram–Schmidt、Householder和Givens算法。
 
->注：Jørgen Pedersen Gram，1850～1916，丹麦数学家，在矩阵、数论、泛函等领域皆有贡献。他居然是被自行车撞死的...
+>Jørgen Pedersen Gram，1850～1916，丹麦数学家，在矩阵、数论、泛函等领域皆有贡献。他居然是被自行车撞死的...
 
 >Erhard Schmidt，1876～1959，德国数学家，哥廷根大学博士，柏林大学教授。David Hilbert的学生。20世纪数学界的几位超级大神之一。1933年前的哥廷根大学数学系，秒杀其他所有学校。所谓“一流的学生去哥廷根，智商欠费才去藤校”。
 
@@ -210,7 +210,7 @@ $$\lim_{k\to\infty}A_k=\begin{bmatrix}
 
 QR算法于1961年，由John G.F. Francis和Vera Nikolaevna Kublanovskaya发现。
 
->注：John G.F. Francis，1934年生，英国计算机科学家，剑桥大学肄业生。   
+>John G.F. Francis，1934年生，英国计算机科学家，剑桥大学肄业生。   
 >2000年，QR算法被IEEE计算机学会评为20世纪的top 10算法之一。然而直到那时，计算机界的数学家们竟然都没有见过Francis本尊，连这位大神是活着还是死了都不知道，仿佛他在发表完这篇惊世之作后就消失了一般。   
 >2007年，学界的两位大牛：Gene Howard Golub（SVD算法发明人之一，后文会提到。）和Frank Detlev Uhlig（1972年获加州理工学院博士，Auburn University数学系教授），经过不懈努力和人肉搜索终于联系上了他。   
 >他一点都不知道自己N年前的研究被引用膜拜了无数次，得知自己的QR算法是二十世纪最NB的十大算法还有点小吃惊。这位神秘大牛竟然连TeX和Matlab都不知道。现在这位大牛73岁了，活到老学到老，还在远程教育大学Open University里补修当年没有修到的学位。   

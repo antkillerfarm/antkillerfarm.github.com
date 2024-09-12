@@ -139,7 +139,7 @@ https://mp.weixin.qq.com/s/MXuN1ccza508TMkcYVadvA
 
 Cache本质上是一块小而快的存储设备和另一块大而慢的存储设备之间的协作关系。
 
-Cache分为硬件Cache和软件Cache两种，这里只讨论前者。后者参见《数据库（一）》。
+Cache分为硬件Cache和软件Cache两种，这里只讨论前者。后者参见《数据库（二）》。
 
 ![](/images/img4/cache.jpg)
 
@@ -180,6 +180,16 @@ https://www.cs.cornell.edu/projects/ladis2009/talks/dean-keynote-ladis2009.pdf
 https://zhuanlan.zhihu.com/p/296808047
 
 每个程序员都应该知道的延迟数字
+
+---
+
+L1 Cache分为ICache（指令缓存）和DCache（数据缓存）。
+
+TLB：Translation Lookaside Buffer是一种缓存机制，存储了最近使用过的地址转换信息，以减少访问内存时的延迟。
+
+https://zhuanlan.zhihu.com/p/31875174
+
+细说Cache-L1/L2/L3/TLB
 
 ---
 

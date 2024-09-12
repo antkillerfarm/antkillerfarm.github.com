@@ -46,7 +46,7 @@ CNN的开山之作是Yann LeCun的论文：
 
 《Gradient-Based Learning Applied to Document Recognition》
 
->注：科学界的许多重要成果的开山之作，其名称往往和成果的最终名称有一定的差距。比如LeCun的这篇文章的名称中，就没有CNN。类似的还有Vapnik的SVM，最早被称为Support Vector Network。
+>科学界的许多重要成果的开山之作，其名称往往和成果的最终名称有一定的差距。比如LeCun的这篇文章的名称中，就没有CNN。类似的还有Vapnik的SVM，最早被称为Support Vector Network。
 
 英文不好的，推荐以下文章：
 

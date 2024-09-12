@@ -136,8 +136,6 @@ https://zhuanlan.zhihu.com/c_1250484713606819840
 
 AST：abstract syntax tree
 
-FFI：Foreign Function Interface
-
 ABI：Application Binary Interface
 
 API：Application Programming Interface
@@ -169,6 +167,20 @@ C++ Standard Library ABI是什么？
 https://zhuanlan.zhihu.com/p/125197727
 
 _GLIBCXX_USE_CXX11_ABI
+
+---
+
+FFI：Foreign Function Interface
+
+libffi提供了一种在运行时调用函数的方式，它允许一个程序动态地调用另一个程序中定义的函数，即使这些函数是用不同的编程语言编写的。
+
+https://blog.ihomura.cn/2021/07/30/%E6%8A%8A%E9%97%AD%E5%8C%85%E5%8F%98%E6%88%90%E5%87%BD%E6%95%B0%E6%8C%87%E9%92%88%E2%80%94%E2%80%94libffi-%E9%97%AD%E5%8C%85%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90
+
+把闭包变成函数指针——libffi闭包原理解析
+
+https://rootjhon.github.io/posts/Lua-FFI/
+
+Lua FFI
 
 ## Transpiler
 
@@ -297,15 +309,3 @@ https://www.zhihu.com/question/484961291
 https://juejin.im/post/5d70fb2ce51d4557ca7fddaa
 
 Android CPU, Compilers, D8 & R8
-
-## 文法
-
-LL(k)：这里的"k"表示解析器可以向前看k个符号来做出决策。
-
-https://blog.csdn.net/huihuisd/article/details/103777331
-
-乔姆斯基4型文法
-
-https://zhuanlan.zhihu.com/p/94424139
-
-LL, LR文法浅析

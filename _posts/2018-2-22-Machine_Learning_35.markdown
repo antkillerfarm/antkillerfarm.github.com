@@ -97,7 +97,7 @@ https://en.wikipedia.org/wiki/PID_controller
 
 《Feedback Control of Dynamic Systems》，Gene F. Franklin，J David Powell，Abbas Emami-Naeini著。
 
->注：Gene F. Franklin，1927~2012，美国控制论学家。哥伦比亚大学博士，斯坦福大学教授。
+>Gene F. Franklin，1927~2012，美国控制论学家。哥伦比亚大学博士，斯坦福大学教授。
 
 >J David Powell，美国航空航天学家。斯坦福大学博士和教授。
 
@@ -139,7 +139,7 @@ https://mp.weixin.qq.com/s/vsyEM7z7-tKrXwRPjE5-EA
 
 这篇心得主要根据Sebastian Thrun的Probabilistic Robotics课程的ppt来写。
 
->注：Sebastian Thrun，德国波恩大学博士（1995年）。先后执教于CMU和Stanford。
+>Sebastian Thrun，德国波恩大学博士（1995年）。先后执教于CMU和Stanford。
 
 网址：
 
@@ -160,7 +160,7 @@ P(x\mid z_1,\dots,z_n)=\frac{P(z_n\mid x)P(x\mid z_1,\dots,z_{n-1})}{P(z_n\mid z
 \end{array}
 $$
 
->注：以下的推导过程注释中，如无特别说明。均以Bayes指代Bayes' theorem，以Markov指代Markov assumption。
+>以下的推导过程注释中，如无特别说明。均以Bayes指代Bayes' theorem，以Markov指代Markov assumption。
 
 上式中的$$\eta$$表示概率的归一化系数。
 
@@ -236,7 +236,7 @@ John Doyle举过一个很直观的例子: 把一根杆立在手上，保持不�
 
 # Kalman filters
 
->注：Rudolf (Rudi) Emil Kálmán，1930～2016，匈牙利出生的美国科学家。哥伦比亚大学博士（1957），先后执教于斯坦福大学和佛罗里达大学。现代控制理论的里程碑人物，美国科学院院士。   
+>Rudolf (Rudi) Emil Kálmán，1930～2016，匈牙利出生的美国科学家。哥伦比亚大学博士（1957），先后执教于斯坦福大学和佛罗里达大学。现代控制理论的里程碑人物，美国科学院院士。   
 >卡尔曼滤波从纯数学的角度讲，并没有多大意义。因此，主流数学家们在很长一段时间内，并不承认Kálmán是数学家。只是由于卡尔曼滤波在工程界的巨大影响力，才不得不于2012年，授予其美国数学协会院士。
 
 | 名称 | 使用场景 |
@@ -257,7 +257,7 @@ http://www.cs.unc.edu/~welch/media/pdf/kalman_intro.pdf
 
 Gregory Francis Welch写的卡尔曼滤波科普文。
 
->注：Gregory Francis Welch，北卡罗莱娜大学博士（1997）。中佛罗里达大学教授。
+>Gregory Francis Welch，北卡罗莱娜大学博士（1997）。中佛罗里达大学教授。
 
 http://www.cs.unc.edu/~welch/kalman/media/misc/kalman_intro_chinese.zip
 
@@ -273,7 +273,7 @@ http://www.docin.com/p-976961701.html
 
 《自适应动态导航定位》，杨元喜著。
 
->注：杨元喜，1956年生，大地测量学家。中国科学院院士。
+>杨元喜，1956年生，大地测量学家。中国科学院院士。
 
 https://zhuanlan.zhihu.com/c_1131936304564453376
 

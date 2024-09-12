@@ -48,7 +48,7 @@ es  hard    nofile    65536
 
 `ulimit -n 65536`
 
->注：ulimit增加的资源数，不能超过limits.conf中的数量，否则会报错。
+>ulimit增加的资源数，不能超过limits.conf中的数量，否则会报错。
 
 >max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
 

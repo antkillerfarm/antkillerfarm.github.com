@@ -302,7 +302,7 @@ http://had.co.nz/ggplot2/
 
 《ggplot2：数据分析与图形艺术》，Hadley Wickham著。
 
->注：Hadley Wickham，ggplot2的作者，Rstudio的首席科学家。
+>Hadley Wickham，ggplot2的作者，Rstudio的首席科学家。
 
 ## R Markdown
 

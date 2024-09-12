@@ -15,7 +15,7 @@ category: Recommender System
 
 Factorization Machines是Steffen Rendle于2010年提出的算法。
 
->注：Steffen Rendle，弗赖堡大学博士，现为Google研究员。libFM的作者，被誉为推荐系统的新星。
+>Steffen Rendle，弗赖堡大学博士，现为Google研究员。libFM的作者，被誉为推荐系统的新星。
 
 FM算法实际上是一大类与矩阵分解有关的算法的广义模型。由于没有DL那么吃算力和数据，非常适合搭建baseline之用。
 

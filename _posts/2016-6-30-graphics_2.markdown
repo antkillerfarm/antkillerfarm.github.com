@@ -17,7 +17,7 @@ $$R=\{r_1,r_2,\dots,r_n\},Q=\{q_1,q_2,\dots,q_n\}$$
 
 $$D(Q,R)=\sum_{k=1}^{n}q_k log_2\frac{q_k}{r_k}$$
 
->注：严格来说，这里定义的是相对熵(relative entropy)，又称为KL散度（Kullback-Leibler divergence）或KL距离，是两个随机分布间距离的度量。从公式可以看出，KL距离和经典概率论中的二项分布有很密切的关系。
+>严格来说，这里定义的是相对熵(relative entropy)，又称为KL散度（Kullback-Leibler divergence）或KL距离，是两个随机分布间距离的度量。从公式可以看出，KL距离和经典概率论中的二项分布有很密切的关系。
 
 交叉熵的严格定义参见：
 

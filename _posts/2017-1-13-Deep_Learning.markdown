@@ -224,7 +224,7 @@ https://mp.weixin.qq.com/s/TfwA4x8dU_rMhC0fuE-xYw
 
 误差逆传播（error BackPropagation）算法最早由Paul J. Werbos于1974年提出，然而此时正值ANN的低谷，未得到人们的重视。因此到了1986年时，由David Everett Rumelhart重新发明了该算法。
 
->注：Paul J. Werbos，1947年生，哈佛大学博士。
+>Paul J. Werbos，1947年生，哈佛大学博士。
 
 >David Everett Rumelhart，1942~2011，美国心理学家。斯坦福大学博士，先后执教于UCSD和斯坦福。美国科学院院士。
 

@@ -9,6 +9,18 @@ category: toolchain
 
 # 编译原理
 
+## 文法
+
+LL(k)：这里的"k"表示解析器可以向前看k个符号来做出决策。
+
+https://blog.csdn.net/huihuisd/article/details/103777331
+
+乔姆斯基4型文法
+
+https://zhuanlan.zhihu.com/p/94424139
+
+LL, LR文法浅析
+
 ## SSA
 
 SSA：static single assignment form
@@ -308,6 +320,8 @@ https://www.cnblogs.com/BobHuang/p/18249482
 
 stablehlo是OpenXLA项目在MLIR基础上的扩展。
 
+>注意：XLA HLO IR是google自定义的IR，而StableHLO IR是MLIR的一个dialect。
+
 官网：
 
 https://github.com/openxla/stablehlo
@@ -331,6 +345,20 @@ LHLO："late"-HLO，经过buffer assignment后的HLO。HLO和LHLO的区别在于
 MHLO："meta"-HLO dialect，是HLO风格的MLIR dialect， 并且在IR上扩展支持了dynamic shape。XLA HLO的shape是静态不可变的，不同shape需要重新编译；MHLO支持动态shape，IR本身有能力表达shape计算和动态shape信息的传递。
 
 LMHLO："late"-"meta"-HLO dialect。是LHLO风格的MLIR dialect。即内存分配之后的IR，也就是无动态shape的IR。
+
+---
+
+pytorch模型导出stablehlo IR。
+
+```python
+model_exported = torch.export.export(torch_model, inputs)
+stablehlo_gm = torch_xla.stablehlo.exported_program_to_stablehlo(
+    model_exported,
+    options
+)
+```
+
+---
 
 参考：
 

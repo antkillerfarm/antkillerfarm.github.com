@@ -191,7 +191,7 @@ $$\frac{\hat b-b}{\hat \sigma}\sqrt{S_{xx}}\sim t(n-2)$$
 
 对于非参数检验或者非正态样本检验，其他的检验方法还有Wilcoxon signed-rank test、Kruskal–Wallis test、Friedman test等。
 
->注：Frank Wilcoxon，1892～1965，美国化学家。康奈尔大学博士。先后供职于几家美国化工企业的研究机构。
+>Frank Wilcoxon，1892～1965，美国化学家。康奈尔大学博士。先后供职于几家美国化工企业的研究机构。
 
 >William Henry ("Bill") Kruskal，1919～2005，美国数学家。哥伦比亚大学博士，芝加哥大学教授。
 

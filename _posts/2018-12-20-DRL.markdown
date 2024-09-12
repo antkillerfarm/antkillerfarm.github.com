@@ -13,7 +13,7 @@ http://incompleteideas.net/sutton/book/the-book-2nd.html
 
 《Reinforcement Learning: An Introduction》，Richard S. Sutton和Andrew G. Barto著。
 
->注：Richard S. Sutton，加拿大计算机科学家，麻省大学阿姆赫斯特分校博士（1984年），阿尔伯塔大学教授。强化学习之父，研究该领域长达三十余年。
+>Richard S. Sutton，加拿大计算机科学家，麻省大学阿姆赫斯特分校博士（1984年），阿尔伯塔大学教授。强化学习之父，研究该领域长达三十余年。
 
 >Andrew G. Barto，麻省大学阿姆赫斯特分校教授。Richard S. Sutton的导师。
 
@@ -21,7 +21,7 @@ http://incompleteideas.net/sutton/609%20dropbox/slides%20(pdf%20and%20keynote)/
 
 Sutton的pdf和keynote
 
->注：资料中的.key文件即为keynote文件。这种格式是苹果设备上的专用ppt格式，在其他系统中查看不了。
+>资料中的.key文件即为keynote文件。这种格式是苹果设备上的专用ppt格式，在其他系统中查看不了。
 
 http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html
 

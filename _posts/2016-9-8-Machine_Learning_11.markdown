@@ -73,7 +73,7 @@ Jensen不等式表述如下:
 
 Jensen不等式应用于凹函数时，不等号方向反向，也就是$$E[f(X)]\le f(EX)$$
 
->注：Johan Ludwig William Valdemar Jensen，1859～1925，丹麦人。主业工程师，副业数学家。
+>Johan Ludwig William Valdemar Jensen，1859～1925，丹麦人。主业工程师，副业数学家。
 
 ## EM算法的一般形式
 

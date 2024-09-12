@@ -119,13 +119,19 @@ https://www.cnblogs.com/libin-1/p/7127481.html
 
 # 动画
 
-HTML动画一般有三种实现方式：
+HTML动画一般有几种实现方式：
 
 1.JS。JS脚本通过动态改变HTML、CSS的内容来实现动画效果。这种方式功能全面，且可在旧版本浏览器中执行。
 
 2.CSS3。CSS3引入了一些动画属性，它由浏览器直接解释执行，执行效率很高（可利用硬件加速），但需要浏览器本身支持CSS3。并且，有些复杂的动画，可能会超出CSS3的能力范围，这时不可避免的还是会用到JS。
 
 3.Web Animation API。为了解决CSS3的问题，2014年Google又提出了Web Animation API。这套API让JS拥有了不逊于CSS3的性能。
+
+4.SVG动画。
+
+https://zhuanlan.zhihu.com/p/596435952
+
+SVG动画指南(SMIL)
 
 ## Animate.css
 

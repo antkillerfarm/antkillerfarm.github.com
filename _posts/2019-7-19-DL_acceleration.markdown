@@ -144,7 +144,7 @@ $$(x^2+2x+2)(3x+2)=3x^3+{\color{red}{(2\times 3+1\times 2)}}x^2+10x+4$$
 
 $$(f * g)[n]=\sum_{m=-M}^M f[n-m]g[m]$$
 
->注：这里的Convolution和DL领域的Convolution的定义略有不同，后者实际上是数学上的Cross-correlation运算，但稍加变化，就可以变为前者。
+>这里的Convolution和DL领域的Convolution的定义略有不同，后者实际上是数学上的Cross-correlation运算，但稍加变化，就可以变为前者。
 
 由多项式乘法的规则和Convolution定义可得：（这里以2x2的Convolution为例）
 

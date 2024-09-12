@@ -53,7 +53,7 @@ https://www.cnblogs.com/royhoo/p/Autodiff.html
 
 基于这样的实验结果，1997年Mike Schuster提出了Bi-directional RNN模型。
 
->注：Mike Schuster，杜伊斯堡大学硕士（1993）+奈良科技大学博士。语音识别专家，尤其是日语、韩语方面。Google研究员。
+>Mike Schuster，杜伊斯堡大学硕士（1993）+奈良科技大学博士。语音识别专家，尤其是日语、韩语方面。Google研究员。
 
 论文：
 

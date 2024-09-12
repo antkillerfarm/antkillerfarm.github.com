@@ -187,7 +187,7 @@ $$NewEstimate \leftarrow OldEstimate + StepSize [Target - OldEstimate]$$
 
 如果每个摇臂的吐币概率和数量随时间**缓慢变化**的话，则称之为Non-stationary Problem。
 
->注：快速变化的系统，不光RL无能，其他方法估计也没什么好效果。所以系统保持一定的惯性，对于研究问题是很重要的。
+>快速变化的系统，不光RL无能，其他方法估计也没什么好效果。所以系统保持一定的惯性，对于研究问题是很重要的。
 
 这时一般采用如下公式滤波：
 

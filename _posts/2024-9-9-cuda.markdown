@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenCL
+title:  CUDA
 category: AI 
 ---
 

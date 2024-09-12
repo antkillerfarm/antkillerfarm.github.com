@@ -24,7 +24,7 @@ EMD有时也称作Wasserstein距离。
 
 在文本处理中，有一个和EMD类似的编辑距离（Edit distance），也叫做Levenshtein distance。它是指两个字串之间，由一个转成另一个所需的最少编辑操作次数。许可的编辑操作包括将一个字符替换成另一个字符，插入一个字符，删除一个字符。一般来说，编辑距离越小，两个串的相似度越大。
 
->注：严格来说，Edit distance是一系列字符串相似距离的统称。除了Levenshtein distance之外，还包括Hamming distance等。
+>严格来说，Edit distance是一系列字符串相似距离的统称。除了Levenshtein distance之外，还包括Hamming distance等。
 
 >Vladimir Levenshtein，1935年生，俄罗斯数学家，毕业于莫斯科州立大学。2006年获得IEEE Richard W. Hamming Medal。
 
@@ -155,7 +155,7 @@ $$\nabla_u\mathcal{L}(u)=\Sigma u-\lambda u$$
 
 令导数为0可得，当$$\lambda$$为$$\Sigma$$的特征值的时候，该代价函数得到最优解。
 
->注：这里的推导过程，求解的是1维的PCA，但结论对于k维的PCA也是成立的。
+>这里的推导过程，求解的是1维的PCA，但结论对于k维的PCA也是成立的。
 
 一个n阶矩阵有n个特征值，这些特征值可按绝对值大小排序，绝对值越大的，越重要。其中最大的k个特征值，被称作k principal components，这就是主成分分析（Principal components analysis，PCA）算法的命名来历。
 

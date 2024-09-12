@@ -164,7 +164,7 @@ Absolute continuity不仅要求整个函数满足Uniform continuity，而且任�
 
 $$\forall x_1,x_2 \in I ;\mid f(x_1) - f(x_2)\mid  \le K \mid x_1 - x_2\mid , K>0\text{ is const}$$
 
->注：Rudolf Otto Sigismund Lipschitz，1832～1903，德国数学家，先后就读于柯尼斯堡大学和柏林大学，导师Dirichlet。波恩大学教授。
+>Rudolf Otto Sigismund Lipschitz，1832～1903，德国数学家，先后就读于柯尼斯堡大学和柏林大学，导师Dirichlet。波恩大学教授。
 
 ![](/images/article/Lipschitz_continuity.png)
 

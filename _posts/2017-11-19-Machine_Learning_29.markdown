@@ -46,7 +46,7 @@ $$\theta:=\begin{cases}
 
 这个定理是Henry David Block和Albert B. J. Novikoff于1962年提出的。
 
->注：Henry David Block，1920～1978，美国数学家。   
+>Henry David Block，1920～1978，美国数学家。   
 >这个人的经历有点非典型。20岁本科毕业，由于专业是文学和心理学，结果找不到工作。只好回炉，又读了个土木工程的本科。   
 >二战期间在Goodyear的飞机工厂（没错，就是那个卖轮胎的Goodyear）担任测试工程师。在那里碰到一个当医生的英国妹子，搞定之。   
 >1946年，他老婆在Iowa State University获得了一个职位，于是他也跟着搬了过去。估计是无所事事，他经常到大学里蹭课，然后就发现自己对数学很感兴趣。   
