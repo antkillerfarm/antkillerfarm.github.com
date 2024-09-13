@@ -162,3 +162,15 @@ https://news.ifeng.com/c/8Emu7czkfWy
 https://news.ifeng.com/c/8ErWfeGuVev
 
 将军阵亡率15%？俄军在乌克兰遭遇了什么
+
+## 凡人列传+
+
+赫尔松州斯卡多夫斯克镇（Skadovsk）56岁的身障儿童护士穆德莲科因为多次公开怒呛侵略占据赫尔松的俄军，包括大声咆哮当地只属于乌克兰等，而在2022年10月和她丈夫阿纳托利在自家花园被俄军绑架，后被俄军公开绞刑处决，遗体还被挂起示众。
+
+https://www.163.com/dy/article/HLIHQCMG05534NGK.html
+
+英勇女护士一席话怒骂俄军，惨遭公开处决并挂尸
+
+https://www.163.com/dy/article/HJSQ9R6Q0529RP1L.html
+
+拒绝与俄军合作！乌克兰赫尔松戏剧院首席指挥克尔帕滕科被枪杀

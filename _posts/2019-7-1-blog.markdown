@@ -13,15 +13,19 @@ blog的体例介于日记和文章之间。倘以日记来弄，时间长了，�
 
 ---
 
+2024.9.13 添加字数统计和blockquote的前置Emoji。
+
 2024.9.11 给文章标题添加category的导航条。
 
-2024.9.10 添加Utterances评论系统，虽然都是基于Github Issue的评论系统，但这个解决了自动根据文章生成Issue的能力，不用所有的评论都挤在一个issue下，也不用手动生成issue。
+2024.9.10 添加Utterances评论系统，虽然和之前用的几个都是基于Github Issue的评论系统，但这个解决了自动根据文章生成Issue的能力，不用所有的评论都挤在一个issue下，也不用手动生成issue。
 
 参考：
 
 https://roife.github.io/posts/use-utterances-for-blog-comment/
 
 使用Utterances为静态博客添加评论
+
+类似的还有giscus，和Utterances的区别在于，前者使用的是github repo的Discussions功能，该功能虽然可以点赞之类的，但相对Issue提升有限，而且还不是repo的默认配置。
 
 2024.9.4 添加img6。blog底部添加同一类别的最新blog的展示。
 

@@ -3,7 +3,7 @@ layout: default
 ---
 <div id="post">
   <h1 class="titlex"><a href="/#{{page.category}}">{{page.category}}</a> &raquo; <a href='{{page.url}}'>{{page.title}}</a></h1>
-  <span class='date'>{{page.date | date: "%Y-%m-%d"}}</span>
+  <span class='date'>{{page.date | date: "%Y-%m-%d"}} :: {{ content | strip_html | strip_newlines | size }} Words</span>
   <div class='body'>{{ content }}</div>
   <div align="center" class="donate">
     <p><img src="/images/donate.png" alt="" /></p>

@@ -40,7 +40,7 @@ https://blog.csdn.net/machh/article/details/52109231
 
 https://www.cnblogs.com/vamei
 
-也是一个去世的博士：
+也是一个去世的博士
 
 https://www.sohu.com/a/299731374_463994
 
@@ -246,10 +246,6 @@ https://zhuanlan.zhihu.com/p/27925292
 
 潜伏、破局与变革：人脸识别技术国内机场发展简史
 
-https://mp.weixin.qq.com/s/2_zdY4NoOPXq75H1A15R8w
-
-VMM的功能和分类
-
 https://mp.weixin.qq.com/s/B486kp-GNshNVIi756lL9Q
 
 块存储、文件存储、对象存储本质差别
@@ -257,10 +253,6 @@ https://mp.weixin.qq.com/s/B486kp-GNshNVIi756lL9Q
 https://mp.weixin.qq.com/s/sCJFFZm-soWAt8kDyYulPQ
 
 99%留学生都不知道的Paper写作神器，Google从此是路人
-
-https://mp.weixin.qq.com/s/JeqjD5NYGyG17o5csfzp7w
-
-镜像/容器/仓库/数据卷基本命令
 
 https://mp.weixin.qq.com/s/INlW41lJWWjfAHJAnnfB8A
 
@@ -374,10 +366,6 @@ https://mp.weixin.qq.com/s/LqkR4fhdxdMVGUn21mb76Q
 
 如果把中国历史浓缩成一天，会是什么样子？
 
-http://sports.sina.com.cn/z/CFFixtures/
-
-国足历史战绩
-
 ## 科研人生
 
 ![](/images/img4/dunning-kruger-effect-curve.png)
@@ -439,18 +427,6 @@ Uber AI Labs
 https://deepmind.com/research/
 
 Deepmind
-
-## 有用的blog
-
-http://www.tinylab.org/learn-x86-language-courses-on-the-ubuntu-qemu-cs630/
-
-Linux下通过Qemu学习X86 AT&T汇编语言
-
-http://www.tinylab.org/using-qemu-simulation-inserts-the-type-system-to-produce-the-whole-process/
-
-利用qemu模拟嵌入式系统制作全过程
-
-这两篇文章讲述如何使用qemu运行各种汇编程序和微内核
 
 ## 几个开源软件代码下载地址（国内可访问）
 

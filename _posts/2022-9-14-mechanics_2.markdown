@@ -9,104 +9,6 @@ category: Nature
 
 # 机械
 
-SB2C地狱俯冲者：Son of the Bitch 2nd Class
-
-https://www.zhihu.com/question/359814148
-
-二战时，三大类舰载机能否合并？
-
----
-
-737机型大致可分为四代，
-
-1967第一代-100，-200:
-
-1984第二代Classic，-300，-400，-500:
-
-1993第三代NG（next generation），-600，-700，-800，-900
-
-2017第四代MAX，7，8，9，10
-
-https://www.zhihu.com/question/286414244
-
-后置发动机的客机为什么现在很少了？
-
-https://www.zhihu.com/question/34470723
-
-公务机超音速有什么难度?
-
-https://www.zhihu.com/question/358262424
-
-波音7*7系列客机是怎么发展的？是按数字顺序发布的吗？
-
-https://www.zhihu.com/question/51633265
-
-一直搞不懂，中国为什么还在使用轰6这种几十年前设计的亚音速轰炸机机型？
-
-https://www.zhihu.com/question/271957617
-
-搭乘三叉戟（Trident）客机是怎样一番体验？
-
-https://www.zhihu.com/answer/1559912123
-
-乘波体加莱特进气道
-
----
-
-787有不输767的航程，但是对于乘客的舒适性和对于航司的经济性全部碾压767，使得诸如南京飞休斯顿这样的航线得以真正的获得市场可行性。也是自787面世后，世界航空市场逐渐从中枢模式转变为点对点。
-
-美国很多货机选择直接挂掉油漆，这样每架飞机减重几百公斤。。。
-
----
-
-提供同样的推力有俩种方法，1、给大量的空气附加一个小速度；2、给少量空气附加一个大速度。实际中，人们多选择前者，因为降低喷气速度能得到更高的推进效率，也就更省油更省钱啊，这也就是民航客机都是涡扇的原因。
-
-https://www.zhihu.com/question/35267127
-
-涡喷和涡扇发动机的区别？
-
----
-
-Savery Pump：
-
-![](/images/img4/savery_engine.gif)
-
-Newcomen Atmospheric Engine：
-
-![](/images/img4/Newcomen.gif)
-
-Watt Atmospheric Steam Engine：
-
-![](/images/img4/steam_engine.gif)
-
-Stirling Engine：
-
-![](/images/img4/stirling_engine.gif)
-
-https://zhuanlan.zhihu.com/p/24900853
-
-蒸汽机的进化（上）：从Savery到Newcomen
-
-https://www.egr.msu.edu/~lira/supp/steam/index.htm
-
-Brief History of the Steam Engine
-
-https://www.zhihu.com/question/305046391
-
-为什么英国当年不封锁蒸汽机技术，使得工业革命只发生在英国，形成高于世界任何国家的文明？
-
----
-
-NOS（氮气加速系统）的工作原理是把N2O（一氧化二氮，俗称"笑气"）形成高压的液态后装入钢瓶中，然后在发动机内与空气一道充当助燃剂与燃料混合燃烧。N2O在高温条件下可分解产生氧气和氮气，其中氧气是关键的助燃气体，而氮气又可协助降温，以此增加燃料燃烧的完整度，提升动力。
-
-在正常的空气中，氧气的占比是21%。NOS系统相当于把空气中氧气的体积占比提升到了33%。
-
-https://www.zhihu.com/question/53028127
-
-在发动机的发展史上，有哪些技术大幅提高了同排量下的功率？
-
----
-
 ![](/images/img4/tank.jpg)
 
 ---
@@ -172,6 +74,36 @@ https://www.zhihu.com/question/511712117
 模块化装药分为“全等式”和“不全等式”两种。美军的模块化装药为“不全等式”，被称之为M231/232 MACS。
 
 MACS分为两种装药——小号低威力的绿色M231和大号的白色M232。
+
+---
+
+肌肉车（Muscle car）是一种由后轮驱动，装备大马力V8发动机的强力汽车。它们简化了车身装饰和内饰，连电子系统都弱化了，就为了提供在直道上更快、更凌厉的加速。
+
+小马车（Pony car）保持了肌肉车的后驱动形式，略微降低了发动机性能和车重，也降低了造价和油耗。
+
+---
+
+![](/images/img5/Flintlock.webp)
+
+<video  id="myvideo" width="100%" height="auto" controls="controls" loop="loop">
+    <source src="/images/img5/Matchlock.mp4" type='video/mp4' />
+</video>
+
+https://www.zhihu.com/question/459658757
+
+从火绳枪发展到燧发枪，提升的仅仅是击发方式吗?
+
+https://www.zhihu.com/question/459659751
+
+在古代，为了解决火绳枪雨天的劣势，都做了什么样的针对方案?
+
+https://www.zhihu.com/question/286135893
+
+为何清军迟迟不装备燧发枪？
+
+https://www.zhihu.com/question/574819489
+
+燧发枪时代士兵身上装多少发子弹?
 
 ---
 
@@ -326,10 +258,6 @@ T72真的很不堪吗？
 https://www.zhihu.com/question/348210162
 
 明朝时期比较著名的火器之一三眼铳能在有效射程内击穿欧洲的板甲吗？
-
-https://www.zhihu.com/question/449782036
-
-十八世纪帆船横渡大西洋大约要多久？
 
 https://www.zhihu.com/question/547700331
 

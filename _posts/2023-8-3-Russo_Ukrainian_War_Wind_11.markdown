@@ -139,6 +139,36 @@ https://zhuanlan.zhihu.com/p/650031465
 
 zn.ua继揭露国防部高价采购鸡蛋后，又揭露一起冬装案
 
+---
+
+https://zhuanlan.zhihu.com/p/622351750
+
+两笔钱花在同一个地方——俄罗斯“布良斯克防线”的惊人贪腐大案
+
+https://www.163.com/dy/article/IDS5513R055650YP.html
+
+俄军腐败内幕曝光:高官奢侈滥用军机运送宠物猫
+
+https://baijiahao.baidu.com/s?id=1742860565759087136
+
+西方援乌装备爆雷：防弹衣被击穿，止血带没用，乌军叫天不应
+
+https://mil.sina.cn/sd/2018-12-18/detail-ihmutuee0269859.d.html
+
+俄军唯一航母居然被偷了 大量贵金属失窃价值140万
+
+https://www.guancha.cn/internation/2021_01_12_577634.shtml
+
+俄军退役现代级驱逐舰13吨重螺旋桨遭窃，前舰长涉嫌参与
+
+https://new.qq.com/rain/a/20201208A0HDYO00
+
+俄罗斯“末日飞机”竟然遭窃贼光顾：无线电设备被偷
+
+https://zhuanlan.zhihu.com/p/639969506
+
+我的连长是花15万卢布买来的，当时还算便宜的——真实的俄罗斯军队是什么样的？
+
 ## 凡人列传
 
 我是一个乌萝，在鹅服什么役？别说连长了就算是营长，我还是会选择回家。

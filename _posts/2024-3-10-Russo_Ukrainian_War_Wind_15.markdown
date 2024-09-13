@@ -69,18 +69,6 @@ https://zhuanlan.zhihu.com/p/655142678
 
 ---
 
-赫尔松州斯卡多夫斯克镇（Skadovsk）56岁的身障儿童护士穆德莲科因为多次公开怒呛侵略占据赫尔松的俄军，包括大声咆哮当地只属于乌克兰等，而在2022年10月和她丈夫阿纳托利在自家花园被俄军绑架，后被俄军公开绞刑处决，遗体还被挂起示众。
-
-https://www.163.com/dy/article/HLIHQCMG05534NGK.html
-
-英勇女护士一席话怒骂俄军，惨遭公开处决并挂尸
-
-https://www.163.com/dy/article/HJSQ9R6Q0529RP1L.html
-
-拒绝与俄军合作！乌克兰赫尔松戏剧院首席指挥克尔帕滕科被枪杀
-
----
-
 为了购买装备，许多人负债累累；国防部的工资卡没有发给一些被动员的人，而另一些人则无法激活工资卡。
 
 https://zhuanlan.zhihu.com/p/579785034
@@ -236,3 +224,9 @@ When you attack us, you will see our faces, not our backs.
 Without gas or without you? – The answer is without you. Without electricity or without you? – Without you. Without water or without you? – Without you. Without food or without you? – Without you.
 
 他们告诉你我们是纳粹。但一个牺牲了超过八百万条生命来消灭纳粹的民族怎么能被称为纳粹呢？我的祖父作为苏联步兵活过了整场战争，在一个独立的乌克兰作为上校死去，我怎么会是纳粹呢？
+
+当我竞选总统时，我说我们每个人都是总统。因为我们都对我们的国家负责。为了我们美丽的乌克兰。现在事实证明，我们每个人都是一名战士。战士在他或她自己的地方。我相信我们每个人都会获胜。
+
+我希望能有光，但情况非常困难，现在有时有光，有时没有光。最重要的是（心）里面要有光。
+
+即使没有电，我们对自己的信仰之光也不会被熄灭。

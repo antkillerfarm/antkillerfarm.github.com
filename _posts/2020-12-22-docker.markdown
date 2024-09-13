@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Docker, 虚拟机比较
+title:  Docker
 category: technology 
 ---
 
@@ -338,23 +338,3 @@ Docker
 https://mp.weixin.qq.com/s/JiimSmuD3S5lSS9MmH2GJw
 
 Docker环境配置指南
-
-# 虚拟机比较
-
-早期如Bochs之类的没用过，现在估计也没什么人用了吧。
-
-现在主要是以下三个选择：
-
-1.VMware。商业收费软件。有免费版本的VMware Player，但该版本不可创建虚拟机，只可使用别人已经建好的虚拟机。
-
-2.VirtualBox。开源免费软件。
-
-3.Qemu。Qemu的易用性不佳，作为使用的话，能不用就不用了。但其不仅开源，而且支持的架构也很多，有的时候往往是唯一之选。作为研究学习来说，这个是首选。
-
-这里主要讨论前两者的选择。
-
-VMware由于是收费软件之故，因此用户的软件升级是个大问题。（土豪除外，有钱的话，这个就不是事了。）而旧的软件，往往对新的Linux发行版的支持较差。很多情况下，VMware Tool因为这个原因总是无法完美运行。严重影响了软件的易用性。
-
-反之，VirtualBox就没有这些问题。虽然比较同期的VMware来说，VirtualBox的性能略逊。但是一般来说，科技行业里领先半年就已经是巨大的优势了。我相信现在的VirtualBox，无论如何也不会弱于两年前的VMware。
-
-因此与其守着过时的VMware 8.0，还不如换用VirtualBox，这就是我的选择。

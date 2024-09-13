@@ -31,6 +31,20 @@ Microsoft and GitHub Workers Support 996.ICU
 
 ---
 
+2019.7
+
+在欧洲，Software as a science（软件即科学）
+
+在美国，Software as a business（软件即商业）
+
+在印度，Software as a service（软件即服务）
+
+在日本，Software as a production（软件即制造）
+
+在中国，Software as a 996（囧）
+
+---
+
 很多中企在海外还是死性不改，下场大多不好，常见的有：
 
 1.企业被本地员工集体拉入黑名单，比如字节跳动在英国要求加班导致本地领导和员工集体辞职。
