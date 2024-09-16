@@ -53,6 +53,10 @@ FinFET详解
 
 nanosheet所需的highly-selective etch比EUVL推出还要晚，连ASML的EUVL都被纳入出口管制，就更别提LRCX和TEL的selective etch了，买不到设备怎么做nanosheet？
 
+理论上什么节点都可以用GAA，但是成熟制程用传统平面工艺快速又高效，所以也不会有人犯傻将之用于低制程。
+
+GAA用于7nm成本很高，良率会更低，但对于被限制的我国来说，这是必然的技术发展路线。
+
 https://www.zhihu.com/question/620014852
 
 DUV光刻机可以做GAA吗？
