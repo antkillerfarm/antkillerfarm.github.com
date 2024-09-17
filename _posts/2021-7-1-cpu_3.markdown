@@ -125,28 +125,6 @@ https://mp.weixin.qq.com/s/jGzdfEJaulPRjt89eLST4Q
 
 ---
 
-光刻机的套刻精度(Overlay)，它决定了芯片上下层的对准精度，进而决定了多重曝光的良率。
-
-提高套刻精度的办法之一，就是拿到更高精度的设备，比如2100i DUV光刻机。目前能把多台套刻精度（MMO）做到无限接近单台套刻精度（DCO），全世界仅台积电一家。
-
-台积电用MMO:2.5nm的1980ci光刻机+四重曝光良率超过80%，而大陆厂用MMO:1.5nm的2050i+四重曝光，经过2年的不断努力，良率接近50%。
-
-多曝光对于套刻精度是苛刻的，每多一次砍一半。
-
----
-
-多重曝光的手艺是当年intel投入重金搞的，有LELE，LFLE和SADP/SAQP三种。
-
-- LELE，Litho-Etch-Litho-Etch，光刻-刻蚀-光刻-刻蚀。把原来一层光刻图形，划分到两个或多个掩膜上，搞了一次图像叠加。这个好想象。
-- LFLE，Ltiho-Freeze-Ltiho-Etch，光刻-固化-光刻-刻蚀。和LELE本质差不多，省一道刻蚀工序，降低成本。
-- SADP，Self Aligned Double Patterning，自对准双重图形化以及SAQP四重曝光技术。
-
-结果突然EUV来了，Intel大呼上当。我在练射箭手艺，你给台积电造了一把冲锋枪。
-
-多曝搞先进制程没有经济价值，甚至于对于当前的中国，连工艺研发和产业价值都有限。
-
----
-
 https://mp.weixin.qq.com/s/QF9Nsh_YyX9LZQ_D-4hP-A
 
 芯片是怎么制造的？央视最强科普！
