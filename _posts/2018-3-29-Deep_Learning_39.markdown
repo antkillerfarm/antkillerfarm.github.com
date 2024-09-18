@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（三十九）——手势识别, 深度压缩感知, 深度树学习
+title:  深度学习（三十九）——手势识别, 深度压缩感知, SNN, BNN
 category: DL 
 ---
 
@@ -161,174 +161,181 @@ https://mp.weixin.qq.com/s/3bi5Timesxi1YbFdzBs8AA
 
 DeepMind论文：深度压缩感知，新框架提升GAN性能
 
-# 深度树学习
+# Spiking Neural Network
 
-决策树是传统ML领域的王者，对于如何将之深度化，一般有两个方向：
+除了基于BP算法的NN之外，Spiking Neural Network也是一大类NN。Spiking NN和人脑结构更相似，功耗也更小，但是相关训练和数据量化的算法尚不成熟，属于潜力股。
 
-- 树结构的深度化。代表：gcForest。
+![](/images/img6/SNN.jpg)
 
-- 树+DL。一般被称为深度树学习。
+SNN使用脉冲——这是一种发生在时间点上的离散事件——而非常见的连续值。每个峰值由代表生物过程的微分方程表示出来，其中最重要的是神经元的膜电位。本质上，一旦神经元达到了某一电位，脉冲就会出现，随后达到电位的神经元会被重置。对此，最常见的模型是 Leaky Integrate-And-Fire (LIF) 模型。
 
-## gcForest
+SNN的训练方法主要有：
 
-http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
+- Spike timing dependent plasticity (STDP) ：一种无监督学习方法
+- Spatio-temporal backpropagation (STBP)：一种反向传播算法。
 
-周志华教授gcForest（多粒度级联森林）算法预测股指期货涨跌
+在ANN中，计算开销主要由FC的MAC运算决定。
 
-https://mp.weixin.qq.com/s/GU9-rH0gFan620Jhc1HTDg
+而在SNN中，主要的计算成本来自脉冲输入的积分过程，实际上就是统计Spike事件的次数，是个纯加法运算。
 
-周志华提出的gcForest能否取代深度神经网络？
+![](/images/img2/BrainChip_Fig2.gif)
 
-https://mp.weixin.qq.com/s/dEmox_pi6KGXwFoevbv14Q
+![](/images/img3/Tianjic.png)
 
-周志华：首个基于森林的自编码器，性能优于DNN
+参考：
 
-http://mp.weixin.qq.com/s/IfEgSOIkIPA-YtC9NQW1ng
+https://homepages.cwi.nl/~sbohte/publication/paugam_moisy_bohte_SNNChapter.pdf
 
-非神经网络的深度模型gcForest
+Computing with Spiking Neuron Networks
 
-https://mp.weixin.qq.com/s/N80l9PZQposbIOKXbv8ayw
+https://blog.csdn.net/Extremevision/article/details/123853471
 
-周志华：最新实验表明gcForest已经是最好的非深度神经网络方法
+详解脉冲神经网络的架构原理、数据集和训练方法
 
-https://mp.weixin.qq.com/s/8QP5X9Hxi_6qyfxP4O0Gwg
+https://blog.csdn.net/weixin_37864449/article/details/126772830
 
-周志华团队和蚂蚁金服合作：用分布式深度森林算法检测套现欺诈
+脉冲神经网络(SNN)·第三代神经网络
 
-https://mp.weixin.qq.com/s/bE9BZQ6wCICvrgomdySDuw
+https://mp.weixin.qq.com/s/6dpKSaLFVo-ge4gtbG8GQg
 
-周志华组提出可做表征学习的多层梯度提升决策树
+简述脉冲神经网络SNN：下一代神经网络
 
-https://mp.weixin.qq.com/s/AwvSTF8j0AinS-EgmPFJTA
+https://mp.weixin.qq.com/s/0n50YO1jIv_mxqe0EeS6kw
 
-周志华团队：深度森林挑战多标签学习，9大数据集超越传统方法
+综述AI未来：神经科学启发的类脑计算
 
-## 深度树学习
+https://mp.weixin.qq.com/s/5KA7jtlRmnXxijGQhU1k4A
 
-https://mp.weixin.qq.com/s/GO7bXBY0cVfGIEEAtp0sKg
+DeepMind哈萨比斯狂推的神经科学，入门需要看什么书？
 
-什么时候以及为什么基于树的模型可以超过神经网络模型？
+https://mp.weixin.qq.com/s/TWdeHVCgEf54STvdA1QUPg
 
-https://mp.weixin.qq.com/s/bjOVQu0FZyTWQRlwEn8IVA
+DeepMind哈萨比斯长文：伟大的AI离不开神经科学
 
-基于深度树学习的Zero-shot人脸检测识别
+https://mp.weixin.qq.com/s/8ibcyvyBLYArAMhQElqRzg
 
-https://mp.weixin.qq.com/s/pWcFuOecG-dZHZ365clDjg
+Cell研究揭示生物神经元强大新特性，是时候设计更复杂的神经网络了！
 
-阿里妈妈新突破！深度树匹配如何扛住千万级推荐系统压力
+https://mp.weixin.qq.com/s/cb6JBlb11xW0Xw0RWI4vFA
 
-https://mp.weixin.qq.com/s/sw16_sUsyYuzpqqy39RsdQ
+浙大&川大提出脉冲版ResNet：继承ResNet优势，实现当前最佳
 
-阿里妈妈深度树检索技术（TDM）及应用框架的探索实践
+https://mp.weixin.qq.com/s/yaAuVpuhSGabOswKnv9q5Q
 
-https://mp.weixin.qq.com/s/EFDmHH8oUmJk-rG5PNnsAg
+脉冲神经网络与小样本学习
 
-阿里妈妈深度树匹配技术演进：TDM->JTM->BSAT
+https://mp.weixin.qq.com/s/m7UHX3XL5sC3oBdu3KoyOg
 
-https://mp.weixin.qq.com/s/6r8y7tMqo53lnACWG1K4xA
+脉冲神经网络（SNN）概述
 
-深度树学习用于Zero-shot人脸的反欺诈
+https://mp.weixin.qq.com/s/vwZfmyIEdEdpqJWKOSKYYw
 
-https://mp.weixin.qq.com/s/NBVPlFGO12PhMTF0dUL2hw
+清华天机AI芯片登Nature封面：全球首款异构融合类脑芯片，实现自行车无人驾驶
 
-DeepGBM:使用树蒸馏提升在线预测任务下深度模型效果
+https://mp.weixin.qq.com/s/skA3NZIAzTrsnSsNCxCYSA
 
-# OpenCV+
+类脑计算背后的计算神经科学框架
 
-https://mp.weixin.qq.com/s/pG5nq1fQ9XHp8WZN1AiLJQ
+https://mp.weixin.qq.com/s/ku78_exDM-OUwWPBCNahCg
 
-OpenCV基于Inception模型图像分类
+Spiking-YOLO：前沿性研究，脉冲神经网络在目标检测的首次尝试
 
-https://mp.weixin.qq.com/s/EqeNS6s72_Qwg6mmDRl6wQ
+https://blog.csdn.net/u011853479/article/details/61414913
 
-OpenCV基于DLCO描述子匹配
+脉冲神经网络的五脏六腑
 
-https://mp.weixin.qq.com/s/JVuxMUmN2_DNfg1Ol5b8cw
+https://blog.csdn.net/Yannan_Strath/article/details/105761023
 
-OpenCV3新特性-图像无缝克隆函数演示
+脉冲神经网络（Spiking Neural Network）叙述
 
-https://mp.weixin.qq.com/s/O3o8W1KSsZ0rz7aVukDWEg
+https://blog.csdn.net/Yannan_Strath/article/details/108190281
 
-使用OpenCV测量图像中物体之间的距离
+脉冲神经网络（Spiking Neural Network）发展现状
 
-https://mp.weixin.qq.com/s/HmOiQnkaqxcFPOODnOeUkw
+# Binary Neural Network
 
-使用OpenCV检测坑洼
+二值神经网络的主要缺点在于：它们无法实现与完全精度的深层网络一样高的精度。但这一直在缓慢地变化，已经有了很多进步。
 
-https://mp.weixin.qq.com/s/BTmozO6Yr-Jsfm4-YXh2Mg
+综述：
 
-基于OpenCV的图像梯度与边缘检测
+《BiBench: Benchmarking and Analyzing Network Binarization》
 
-https://mp.weixin.qq.com/s/QYnXiAMFC3k_wQIwiaeWQg
+![](/images/img5/BNN.png)
 
-三行代码，OpenCV轻松生成19种色彩风格图像
+BNN,DoReFA,Bi-Real,ReActNet一脉相承。
 
-https://mp.weixin.qq.com/s/4LQBY0rMJk0tU8lF3fgHfQ
+XNOR,XNOR++,ReCU为另一个流派。
 
-基于OpenCV的图像阴影去除
+参考：
 
-https://mp.weixin.qq.com/s/kH6K6L6-BYnYE-g46WhNCg
+http://blog.csdn.net/tangwei2014/article/details/55077172
 
-在OpenCV中使用色彩校正
+二值化神经网络介绍
 
-https://mp.weixin.qq.com/s/K4P8151BuM4DQPSK-KzPFQ
+https://mp.weixin.qq.com/s/0twiT2mrVdnwyS-mqgrjVA
 
-OpenCV图像旋转的原理与技巧
+低比特量化之XNOR-Net
 
-https://mp.weixin.qq.com/s/hGONFisdtwcF5CRSB9IF6g
+https://mp.weixin.qq.com/s/oumf8l28ijYLxc9fge0FMQ
 
-图像处理基础：颜色空间及其OpenCV实现
+嵌入式深度学习之神经网络二值化（1）
 
-https://mp.weixin.qq.com/s/0Z600IIGscgrREgLUqjLuA
+https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
 
-手把手教你用Python做一个图像融合demo
+嵌入式深度学习之神经网络二值化（2）
 
-https://mp.weixin.qq.com/s/vo1v5dYGLMqzCSUG9gPvag
+https://mp.weixin.qq.com/s/RsZCTqCKwpnjATUFC8da7g
 
-使用OpenCV进行图像编辑--绘画和素描
+嵌入式深度学习之神经网络二值化（3）
 
-https://mp.weixin.qq.com/s/EkxXV7Bizf4JxG15SQb79w
+https://blog.csdn.net/stdcoutzyx/article/details/50926174
 
-修改OpenCV一行代码，提升14%图像匹配效果（BEBLID(Boosted Efficient Binary Local Image Descriptor)是一个2020年才开发出来的算子）
+二值神经网络（Binary Neural Network，BNN）
 
-# 两弹一星=
+https://mp.weixin.qq.com/s/Q54AdQmqa5JD0v9CEeFtSQ
 
-解放卡车，歼-7战机、五六冲锋枪情况也类似，由于缺少苏联的技术指导和关键零件，产量、质量长期一般，到了70年代才真正吃透了苏联的技术。这也是军方大量保留歼-7和59式的原因，因为这些装备的设计虽然很古老，但是从生产时间来看，大部分都是80年代的产品，改改也能接着用。
+二值化神经网络(BNN)综述
 
----
+https://zhuanlan.zhihu.com/p/431680710
 
-在Su-27座椅后侧，有一个拳头大的陶瓷环，特别容易损坏。
+谈谈BNN二值化神经网络的设计，以及几代学界工作的演进 -（1）架构与原理
 
-我们制造J-11B的时候，特地把这个换成钢制的，试飞过程中，再也没有损坏过。
+https://zhuanlan.zhihu.com/p/433429767
 
-但是，这个陶瓷环，是用于降落伞打开的一道程序，换成钢制的，伞，打不开。。。
+谈谈BNN二值化神经网络的设计，以及几代学界工作的演进 -（2）二值训练
 
-https://www.zhihu.com/question/52938388
+https://zhuanlan.zhihu.com/p/435285316
 
-中国是否真的吃透了苏-27的全部设计？
+谈谈BNN二值化神经网络的设计，以及几代学界工作的演进 -（3）二值化设计法则、推理框架与发展潜力
 
----
+https://mp.weixin.qq.com/s/lVja7woyFWpmr9sH0CitAA
 
-给客户做款在深低温下用的长轴电机，电机轴伸只有100mm，只需20W的额定功率，效率85%就行，结果买不到。轴伸末端需要一款转速到15000rpm，耐温到-270℃的轴承，结果也愣是买不到。
+BMXNet：基于MXNet的开源二值神经网络实现
 
-316L不锈钢，牌号应该是022Cr17Ni12Mo2，可以耐到-271℃。其实轴承的主要问题在润滑上，陶瓷自润滑的到不了那么高的转速，石墨的还在探索。
+https://mp.weixin.qq.com/s/naDk0mmxd08dNl9LawLUnw
 
-我们发现买不到液氮温区的精密温度计，液氮温区真不算很低，跟我之前回答里的液氦温区差老远了。国产做到±0.1℃精度的厂家多如牛毛，但到±0.01℃就全部哑火了。就仅仅是小数点后两位，精确到百分之一，愣是做不了。竟然还有好多厂家拿重复性来当精确度忽悠人。什么叫大而不强？美国人不卡你的生活日用，他卡你的实验室。
+不使用先验知识与复杂训练策略，从头训练二值神经网络！
 
-你如果单看温度计的话，市场确实不大，全球估计也就两三亿美元的市场。但这东西的利润高呀，他几百块钱的成本，卖我们七八千，恨不得十倍的利润。他那些研发成本早被美国军方给填平了，现在就是躺在功劳簿上赚钱。而且，光有温度计也不行呀，你还需要读数，得再买一个跟它配套的信号采集仪，这信号采集仪三万一个。
+https://mp.weixin.qq.com/s/Xvlxs-Os2meduHrEQFc7vg
 
-如果我们总是怕竞争，不去跟他们抢这种高附加值的产业，那永远是他们吃肉，我们喝汤。
+第一次胜过MobileNet的二值神经网络，-1与+1的三年艰苦跋涉
 
-耐低温轴承，现在直接禁售了，买个-200℃的次等货都得托关系，价格更是死贵。至于高速耐低温主轴，还是等国内材料学突破吧，目前看不到一点希望。把这几个拼起来做成一套电机设备，成本2万美元左右，现在对外的报价是14万美元。什么叫高利润，这就叫高利润。
+https://mp.weixin.qq.com/s/Ak9Yh_MBDR6i7J2rDR99eQ
 
----
+低成本的二值神经网络介绍以及它能代替全精度网络吗?
 
-中国当然能生产类似gore tex的面料，但那只是gore公司50年前的产品。
+https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
 
-gore公司医疗器械，随便一个就是卖几万块。他们还制作航天光缆电缆衬套、空气净化器和净水器滤芯、航空航天密封件和密封舱。
+异或神经网络
 
-钛合金刀片电动剃须刀的那个德国博朗，其实有钛合金血管产品。
+https://mp.weixin.qq.com/s/XzLJzfvpP93cDYplf6-LXA
 
-https://www.zhihu.com/question/509861898
+港科腾讯等提出Bi-Real net：超XNOR-net 10%的ImageNet分类精度
 
-中国为什么不生产类似gore-tex的面料？
+https://mp.weixin.qq.com/s/wCx7rQFwC2mW45FMR77tGQ
+
+二值网络，围绕STE的那些事儿
+
+https://mp.weixin.qq.com/s/7L26ghhDqdMU6LRV0iD6vQ
+
+模型量化从1bit到8bit，二值到三值

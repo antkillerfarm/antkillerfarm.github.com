@@ -251,9 +251,9 @@ https://mp.weixin.qq.com/s/b19SLduKoiOIeE5CA3ZOjg
 
 Python标准库之LRU缓存实现学习
 
-https://zhuanlan.zhihu.com/p/149240769
+https://segmentfault.com/a/1190000044454725
 
-Python自动化测试——必会模块 Unittest
+精通Python单元测试：掌握unittest模块的终极指南
 
 https://mp.weixin.qq.com/s/zABXQksUX6le8zWJeWUQXw
 

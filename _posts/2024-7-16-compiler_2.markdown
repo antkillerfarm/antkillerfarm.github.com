@@ -332,6 +332,10 @@ https://openxla.org/stablehlo/spec
 
 和`mlir-opt`类似，stablehlo也提供了`stablehlo-opt`的命令行工具，用于执行pass，进行IR之间的转换。
 
+`stablehlo-opt --vhlo-to-version="target=1.7.0" --vhlo-legalize-to-stablehlo ./a.mlirbc -o ./a.mlir`
+
+`mlirbc`是StableHLO的byte code，而`mlir`则是普通可供人阅读的IR。
+
 ---
 
 几种到XLA的IR dialect：

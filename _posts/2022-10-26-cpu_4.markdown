@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CPU(四), DPU
+title: CPU(四), DPU, AMD, ARM
 category: Chip 
 ---
 
@@ -8,166 +8,6 @@ category: Chip
 {:toc}
 
 # CPU
-
-https://mp.weixin.qq.com/s/Cij_95iLbAm0AEtrSb72_A
-
-关于CPU科普，这篇说得最详细
-
-https://zhuanlan.zhihu.com/p/31848803
-
-为什么CPU越来越多地采用硅脂而不是焊锡散热？
-
-https://zhuanlan.zhihu.com/p/27624654
-
-CPU风扇停转后会发生什么？CPU凭什么烧不坏
-
-https://zhuanlan.zhihu.com/p/30409360
-
-为什么CPU的频率止步于4G?我们触到频率天花板了吗？
-
-https://zhuanlan.zhihu.com/p/33145828
-
-什么是Speculative Execution？为什么要有它？
-
-http://mp.weixin.qq.com/s/sshhUppVPP6qM7LH1V3nSQ
-
-四位计算机的原理及其实现
-
-https://zhuanlan.zhihu.com/p/33579054
-
-Reset重启后发生了什么？它和关机后再开机有什么区别？
-
-https://zhuanlan.zhihu.com/p/34091597
-
-ARM攒机指南-网络篇
-
-https://zhuanlan.zhihu.com/p/34223088
-
-如何进入BIOS？
-
-https://www.zhihu.com/question/638180886
-
-电脑启动时的BIOS程序，多核CPU是怎么决定将哪个核心分配给它的？
-
-https://zhuanlan.zhihu.com/p/30565679
-
-人工智能技术热潮中，是否存在破解苹果A11处理器的可能？
-
-https://mp.weixin.qq.com/s/UWpp2r0_yDxNyJk-cldVyA
-
-处理器高危漏洞无人幸免？树莓派：我们不受影响
-
->最近的Meltdown和Spectre漏洞被炒的沸沸扬扬，然而能用python语言讲述复杂的CPU计算原理，这是该文的一大创见。
-
-https://mp.weixin.qq.com/s/v_BsfSFp-LwiCOFKaMIS_g
-
-后摩尔时代，如何给你的CPU减负？
-
-https://mp.weixin.qq.com/s/gpfMOW7gzVa2HhYOlDy2nQ
-
-从Intel和ARM争霸战，看看做芯片有多难
-
-https://zhuanlan.zhihu.com/p/43626576
-
-关于芯片，这篇说得最详细！
-
-https://zhuanlan.zhihu.com/p/43768401
-
-如何像搭积木一样构建CPU？Intel和AMD都是怎么做的？
-
-https://zhuanlan.zhihu.com/p/48593932
-
-CPU底部的小块是干什么用的？为什么CPU这么多电源引脚？
-
-https://zhuanlan.zhihu.com/p/51145563
-
-TDP是CPU的功耗吗？TDP是固定不变的吗？
-
-https://mp.weixin.qq.com/s/gzE46SzANLaYaXdLVEBRaA
-
-专家揭秘“低功耗芯片设计”真相
-
-https://mp.weixin.qq.com/s/pFBhnjtXi8uNMGjYFeSfow
-
-芯片行业都难在哪儿？这篇说得最详细！
-
-https://mp.weixin.qq.com/s/nDWJS4rfWsqeVgJQbAYQ6w
-
-一文看懂IGBT（绝缘栅双极型晶体管）
-
-https://mp.weixin.qq.com/s/4_eGNtXULAdK9UzsP1mwKA
-
-IGBT的现状与发展
-
-https://mp.weixin.qq.com/s/TG6C4P-DvhRTJ2FoU8PFtw
-
-IGBT基础与运用知识
-
-https://zhuanlan.zhihu.com/p/56864499
-
-CPU是怎么调节输入电压的？为什么要这么做？
-
-https://mp.weixin.qq.com/s/JLg6sEwCxTMpo2nyCt50qg
-
-指令集——CPU芯片江湖中的门派标志
-
-https://mp.weixin.qq.com/s/7gXK6Qv9gLMkYtXw9oz9Sg
-
-一文看懂指令集是什么
-
-https://mp.weixin.qq.com/s/p7FKgx-sFGDJF0y4IGWvyg
-
-CPU指令集架构科普
-
-https://mp.weixin.qq.com/s/26se041cc9aBRw16kvPPjA
-
-芯片制造新模式--像搭积木一样造芯片
-
-https://mp.weixin.qq.com/s/lz6EoLiLtPtWFMG1FJCuQw
-
-化合物半导体的机遇
-
-https://mp.weixin.qq.com/s/tTtySk3u6m2BGUkDto5Ojw
-
-可重构芯片的方法学原理
-
-https://mp.weixin.qq.com/s/RkRZX_scr__Q_mLPhaaWAA
-
-AMD Zen 2处理器架构为何要如此设计？
-
-https://en.wikichip.org/wiki/amd/microarchitectures/zen_2
-
-Zen 2 - Microarchitectures - AMD
-
-https://mp.weixin.qq.com/s/dRv4xWV8laCYBaZ0DwOC3A
-
-如何从零开始设计一颗芯片？
-
-https://mp.weixin.qq.com/s/eAzdtKvfw7EVz5Ax3nXeZg
-
-自己动手设计专用处理器
-
-https://mp.weixin.qq.com/s/NfNJVoAC5aW1sgToAmYsGw
-
-3nm芯片终结者
-
-https://mp.weixin.qq.com/s/o8C6n-ZRw3vFS8E-hikXJQ
-
-移动的王者：深入分析ARM最强处理器Cortex A77
-
-https://www.cnblogs.com/f-ck-need-u/p/11141636.html
-
-关于CPU的一些基本知识总结
-
-https://mp.weixin.qq.com/s/vTOGmcahRxQBH8RgkTJ2GA
-
-中文系同学都能听懂的集成电路设计流程
-
-https://mp.weixin.qq.com/s/O-2ecxYVOgEfRuwEoS7gRA
-
-Fab的那些事儿
-
->Fab的全称叫Fabrication，也就是集成电路制造的工厂、车间。
 
 https://mp.weixin.qq.com/s/_NcQ-PxNpEtpYdo450Uukg
 
@@ -265,16 +105,172 @@ https://zhuanlan.zhihu.com/p/430203049
 
 在IPU/DPU/SmartNIC中P4能成为主流吗？
 
-# 光刻+
+# AMD
 
-绝大多数人不知道的是，目前ASML光刻机里的光学模组(透镜组)也是蔡司提供的。而EUV光刻机的光学模组更是只有蔡司能够加工。
+## CPU
 
-因为EUV光刻机使用13.5nm波长的光线，这种光线波长太短，短到不能用透镜来控制光线传播。因为透镜会对短波长的光线造成衰减，所以EUV光刻机只能通过反射的方式来形成光路。
+Bulldozer (推土机) -> Piledriver (打桩机) -> Streamroller (压路机) -> Excavator (挖土机) -> Zen -> Zen+ -> Zen 2 -> Zen 3
 
-要控制这种光线，需要几十层钼和硅层层叠叠摞起来，还要在镜片上镀膜才能完成，每一层膜都只有纳米级别的厚度，每层误差不能超过0.01纳米。
+## Matrix Core
 
-这样的镜面究竟有多平整？要求是起伏度要低于在地球表面大小的平面上放一根头发丝。
+对标英伟达Tensor Core，AMD推出Matrix Core。
 
-而目前拥有这样加工技术的公司只有蔡司。
+## 高速互联
 
-奥林巴斯的电子和光学显微镜都不如徕卡，徕卡造了德国潜艇的潜望镜。
+对标NVLink，AMD推出了：
+
+GMI：Global Memory Interconnect
+
+AMD Infinity Fabric Link
+
+其实Intel也有一个叫做Xelink的东西。
+
+IBM BlueLink
+
+## HIP
+
+![](/images/img4/latestGPU.png)
+
+HIP：Heterogeneous Interface for Portability。
+
+HIP是AMD提出的C++接口，号称能兼容CUDA和自家的ROCm。
+
+https://zhuanlan.zhihu.com/p/545296023
+
+写给CUDA开发者AMD ROCm & Intel oneAPI开发贴士
+
+## Composable Kernel
+
+Composable Kernel（CK）库旨在提供一套在AMD GPU上算子融合的后端方案。
+
+https://www.sohu.com/a/603796560_129720
+
+AMD Composable Kernel: 定制化算子融合，大幅提升AI端到端性能
+
+## AITemplate
+
+AITemplate首先在Python层寻找最优的kernel配置，生成Jinja2 template，再生成C++ template：
+
+- NVIDIA GPU：基于CUTLASS的GPU Tensor Core C++ template；
+
+- AMD GPU：基于CK（Composable Kernel）的Matrix Core C++ Template。
+
+官网：
+
+https://github.com/facebookincubator/AITemplate
+
+参考：
+
+https://www.zhihu.com/question/557608132
+
+如何看待Meta发布的全新推理引擎AITemplate？
+
+## AI服务器
+
+AMD Instinct系列，大致对标NVIDIA DGX。
+
+官网：
+
+https://www.amd.com/zh-hans/graphics/instinct-server-accelerators
+
+![](/images/img5/AMD.jpg)
+
+---
+
+https://zhuanlan.zhihu.com/p/434686566
+
+AMD CDNA2架构（MI200）
+
+https://www.zhihu.com/question/606505567
+
+如何看待AMD发布Instinct MI300X GPU芯片？是否在大模型时代威胁Nvidia地位?
+
+## 其他对标术语
+
+| AMD | NVIDIA |
+|:--:|:--:|
+| GCN wavefront(64 threads wide) | CUDA warp(32 threads wide) |
+
+## 参考
+
+![](/images/img5/AMD.png)
+
+罗家是台南水仙宫一带的世家。
+
+---
+
+以前的算法比较简单，数据吞吐量小，AMD的短流水线渲染单元数量多所以效率高。到了Ethash这类重IO算法主流的年代，其实A卡效率还略有优势，但是没以前那么夸张，所以N卡也被拉出来挖。
+
+---
+
+A卡的新驱动对于老游戏的支持有些差，解决办法：删除游戏目录下的dbghelp.dll文件。
+
+---
+
+https://www.zhihu.com/question/593343983
+
+截至2023年4月，用AMD显卡做机器学习怎么样？
+
+https://zhuanlan.zhihu.com/p/651797296
+
+通过“最差实践”实验探索AMD GPU调度细节
+
+# ARM
+
+ARM的CPU主要有以下系列：
+
+- Neoverse：主打服务器领域。
+- Cortex R：实时系统。
+- Cortex-M：嵌入式微控制器。
+- Cortex-A：主流领域。
+- Cortex-X：自从ARM在Cortex A77发布后，ARM就再也无法在保持PPA均衡的基础上继续显著的年化性能提升。因此，ARM从那个时候就开辟了一条全新的Cortex X产品线，依靠牺牲一部分成本和功耗，换取性能提升的余地，并朝着苹果的A系列追逐。
+
+https://www.zhihu.com/tardis/zm/art/537029274
+
+ARM次世代核心Cortex X3/A715/A510简评：降本增效，问题依旧
+
+https://zhuanlan.zhihu.com/p/694560307
+
+麒麟9010微架构评测：轻舟已过万重山
+
+# 两弹一星=
+
+解放卡车，歼-7战机、五六冲锋枪情况也类似，由于缺少苏联的技术指导和关键零件，产量、质量长期一般，到了70年代才真正吃透了苏联的技术。这也是军方大量保留歼-7和59式的原因，因为这些装备的设计虽然很古老，但是从生产时间来看，大部分都是80年代的产品，改改也能接着用。
+
+---
+
+在Su-27座椅后侧，有一个拳头大的陶瓷环，特别容易损坏。
+
+我们制造J-11B的时候，特地把这个换成钢制的，试飞过程中，再也没有损坏过。
+
+但是，这个陶瓷环，是用于降落伞打开的一道程序，换成钢制的，伞，打不开。。。
+
+https://www.zhihu.com/question/52938388
+
+中国是否真的吃透了苏-27的全部设计？
+
+---
+
+给客户做款在深低温下用的长轴电机，电机轴伸只有100mm，只需20W的额定功率，效率85%就行，结果买不到。轴伸末端需要一款转速到15000rpm，耐温到-270℃的轴承，结果也愣是买不到。
+
+316L不锈钢，牌号应该是022Cr17Ni12Mo2，可以耐到-271℃。其实轴承的主要问题在润滑上，陶瓷自润滑的到不了那么高的转速，石墨的还在探索。
+
+我们发现买不到液氮温区的精密温度计，液氮温区真不算很低，跟我之前回答里的液氦温区差老远了。国产做到±0.1℃精度的厂家多如牛毛，但到±0.01℃就全部哑火了。就仅仅是小数点后两位，精确到百分之一，愣是做不了。竟然还有好多厂家拿重复性来当精确度忽悠人。什么叫大而不强？美国人不卡你的生活日用，他卡你的实验室。
+
+你如果单看温度计的话，市场确实不大，全球估计也就两三亿美元的市场。但这东西的利润高呀，他几百块钱的成本，卖我们七八千，恨不得十倍的利润。他那些研发成本早被美国军方给填平了，现在就是躺在功劳簿上赚钱。而且，光有温度计也不行呀，你还需要读数，得再买一个跟它配套的信号采集仪，这信号采集仪三万一个。
+
+如果我们总是怕竞争，不去跟他们抢这种高附加值的产业，那永远是他们吃肉，我们喝汤。
+
+耐低温轴承，现在直接禁售了，买个-200℃的次等货都得托关系，价格更是死贵。至于高速耐低温主轴，还是等国内材料学突破吧，目前看不到一点希望。把这几个拼起来做成一套电机设备，成本2万美元左右，现在对外的报价是14万美元。什么叫高利润，这就叫高利润。
+
+---
+
+中国当然能生产类似gore tex的面料，但那只是gore公司50年前的产品。
+
+gore公司医疗器械，随便一个就是卖几万块。他们还制作航天光缆电缆衬套、空气净化器和净水器滤芯、航空航天密封件和密封舱。
+
+钛合金刀片电动剃须刀的那个德国博朗，其实有钛合金血管产品。
+
+https://www.zhihu.com/question/509861898
+
+中国为什么不生产类似gore-tex的面料？

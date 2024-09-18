@@ -198,6 +198,12 @@ https://zhuanlan.zhihu.com/p/604571955
 
 ---
 
+![](/images/img6/stationary.png)
+
+weight stationary (WS), output stationary (OS), input stationary (IS), Weight Stationary - Local Output Stationary (WS-LOS), Output Stationary - Local Weight Stationary (OS-LWS).
+
+---
+
 http://www.jos.org.cn/jos/ch/reader/create_pdf.aspx?file_no=5563
 
 基于多面体模型的编译“黑魔法”

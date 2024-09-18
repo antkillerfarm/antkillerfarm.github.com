@@ -9,6 +9,34 @@ category: resource
 
 # 大数据平台参考资源
 
+https://mp.weixin.qq.com/s/Db6Am-bAyufg3m67Ta5GBQ
+
+当你和天猫精灵对话时，它在想什么？阿里智能对话技术深度解读
+
+https://mp.weixin.qq.com/s/EM9EVZYeqd5eJ3YbvgiyEw
+
+亿级Web系统的容错性实践
+
+https://mp.weixin.qq.com/s/AhNIvlKNba8ls9loM1CZ-w
+
+阿里再开源！基于JAVA的模块化开发框架JarsLink
+
+https://mp.weixin.qq.com/s/BL5wV_-Glte4Xno6GKwyYg
+
+外卖也智能！美团骑手智能助手的技术与实践
+
+https://mp.weixin.qq.com/s/wQPvJs6D0026Fv7kMntESg
+
+美团配送资金安全治理之对账体系建设
+
+https://mp.weixin.qq.com/s/x49kdBKtkSyYF8DyGmrK-Q
+
+DataMan：美团旅行数据质量监管平台实践
+
+https://mp.weixin.qq.com/s/iCJ9IeAPnaqatEWzgXONfg
+
+每天数百亿用户行为数据，美团点评怎么实现秒级转化分析？
+
 https://mp.weixin.qq.com/s/AJt-Ky1o7OIh7n2KMShS-w
 
 手把手教你从0到1写一个简单的缓存框架
@@ -160,14 +188,6 @@ https://mp.weixin.qq.com/s/qeMhUNDXoYkx06mHnIEUCA
 https://mp.weixin.qq.com/s/sUWy60vL-pEt5fE5PGGrww
 
 数据中心日均CPU利用率45%？！阿里规模化混部技术揭秘
-
-https://mp.weixin.qq.com/s/LXcWMwxgk3SXDI1cI_Kg8w
-
-携程数据库高可用和容灾架构演进
-
-https://mp.weixin.qq.com/s/ty5GltO9M648OXSWgLe_Sg
-
-多中心容灾实践：如何实现真正的异地多活？
 
 https://mp.weixin.qq.com/s/Y4MtwJsbGWx3XqajGV3ZpA
 

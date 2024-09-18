@@ -9,179 +9,7 @@ category: Chip
 
 # CPU
 
-## 历史
-
-NetBurst可以说是Intel历史上最大的战略错误。
-
-https://www.zhihu.com/answer/137624368
-
-历史上有哪些“大力出悲剧”的产品？
-
----
-
-https://mp.weixin.qq.com/s/-2kGkJzjay2WJzIpMs2Adw
-
-IEEE盘点27款震撼世界的芯片
-
-https://mp.weixin.qq.com/s/KhY-PPdvZ26Uy8xEgi70DA
-
-纪念晶体管诞生71周年——改变世界30款芯片大阅兵！
-
-http://m.uczzd.cn/webview/news?aid=15020380163392206798
-
-你所不知道的经典科技发展史: 以前CPU是如何设计出来的
-
-https://mp.weixin.qq.com/s/Lnolh9y0rf86wOGa-F1xmw
-
-计算机的诞生史
-
-https://mp.weixin.qq.com/s/f_rk-NPKNzYpbHOr5bgluw
-
-一文了解半导体的过去、现在和未来
-
-https://mp.weixin.qq.com/s/A6tc00Azj9AM-FApt5CkTQ
-
-AMD YES！背后不为人知的故事
-
-https://mp.weixin.qq.com/s/EfjhstpXsl6sG9q_-qQjXQ
-
-世界半导体集成电路发展史
-
-https://mp.weixin.qq.com/s/pSKQ3lRYV13qU_5DaOw2HQ
-
-晶体管发展历程回顾
-
-## AVX
-
-MMX直接使用了80bit的FPU寄存器中的64bit，对CPU整个流水线几乎没有影响；SSE的128bit相比80bit增加了48bit宽度还算可以接受。AVX的256bit，整个CPU的数据通道比80bit增加了三倍多，需要消耗三倍的晶体管，功率也增加了三倍。因此在严格限定功耗的场景如笔记本或者服务器中，CPU运行AVX应用时需要降低频率从而降低功耗。
-
-为了适应DL领域的应用，AVX还添加了一个VNNI的扩展指令集（Vector Neural Network Instructions）。
-
-参考：
-
-https://www.zhihu.com/question/406517759
-
-如何看待Linus Torvalds对AVX512的评价？
-
-https://zhuanlan.zhihu.com/p/449878214
-
-向量化引擎初探（一）
-
-## 封装
-
-### BGA & QFP
-
-BGA封装，就是那种引脚都在芯片背面的封装。QFP封装，即四侧引脚扁平封装。同样面积情况下，显然占据一个面的引脚数，要超过仅占据四个边的引脚数。
-
-### 先进封装
-
-盛合是华为合作体系的厂商，完成华为昇腾和鲲鹏芯片的先进封装；通富微曾经也是长电/中芯的合作工厂，但如今是华为主导。两家都从事Chiplet封装，兼顾包括前道interposer的生产。
-
-CoWoS（Chip-on-Wafer-on-Substrate）
-
-TSV（Through Silicon Via）
-
-CoWoS良率虽然要达到85甚至95%并不难，但这个良率数字跟前段那种50%70%的良率，意义上完全不同，后段CoWoS良率差1%都严重影响成本，因为前段处理的晶圆不值钱，但interposer上的GPU&CPU die还有大量的HBM却很值钱。
-
-TSMC目前良率在99%以上，国内的盛H也就80%+的良率。
-
-https://xueqiu.com/8992033978/256442528
-
-一文看懂TSV技术
-
-https://zhuanlan.zhihu.com/p/586478535
-
-台积电芯片封装技术-CoWoS
-
-https://mp.weixin.qq.com/s/FVcmCvimpoGCtCtm4RDtUg
-
-浅谈先进封装技术
-
-https://www.zhihu.com/question/652833460
-
-中国可以自主实现CoWoS封装吗？国产CoWoS先进封装工艺发展到哪一步了？
-
-https://zhuanlan.zhihu.com/p/699977071
-
-CoWoS先进封装门槛到底是什么? 为何只有台积电独领风骚?
-
-### 参考
-
-https://mp.weixin.qq.com/s/vGONCRzvFGVo6giUFq0uag
-
-芯片封装类型总结
-
-https://mp.weixin.qq.com/s/RtSmbwguM7dbsXkWqAPuCQ
-
-英特尔3D封装技术深度解读
-
-https://zhuanlan.zhihu.com/p/54685671
-
-PCB板上的黑色的物体是什么？
-
-https://mp.weixin.qq.com/s/MQHZ-yLhZRIfOL9kN4XFKw
-
-一文看懂3D封装技术及发展趋势
-
-https://mp.weixin.qq.com/s/WBab6k4mIkZNzpvbgSbpVQ
-
-一文看懂SiP封装技术
-
-https://mp.weixin.qq.com/s/S-YGgvE6ey2t9_YmVmKOFg
-
-一份难得的MOS管封装分析报告
-
-https://mp.weixin.qq.com/s/MXuN1ccza508TMkcYVadvA
-
-芯片封装简史
-
-## Cache
-
-Cache本质上是一块小而快的存储设备和另一块大而慢的存储设备之间的协作关系。
-
-Cache分为硬件Cache和软件Cache两种，这里只讨论前者。后者参见《数据库（二）》。
-
-![](/images/img4/cache.jpg)
-
-![](/images/img4/Mem_Gap.png)
-
-上图展示了CPU和DRAM之间的速度增长的差异，这个差异通常被称为Memory Gap。1980年代以前的计算机是没有Cache的，但是随着Memory Gap的增大，Cache的级数也不断增多，目前3级片上Cache+1级片外Cache已经是标配了。
-
-必须指出的是，和CPU的速度受限于技术进步不同，RAM的问题主要是性能和价格的折衷。Cache实际上也是一种RAM，最好的L0 Cache和CPU的速度相当，只是价格太高而已。
-
-类似这样的还有PCB的线宽。微米级的线宽技术上完全可行，毕竟芯片都已经是纳米级的线宽了，主要还是价格的问题。
-
----
-
-在一个多处理器系统中，Cache们和内存池可能对同一份数据有多份副本，如何保证这些副本的一致性（Coherency）是个必须严肃对待的问题。
-
-多核CPU多级缓存的一致性，一般由相关的一致性总线协议保证。这些协议包括：MSI、MESI和MOESI。
-
-https://mp.weixin.qq.com/s/570O2BloWjy3q0_m_mfiZg
-
-CPU缓存一致性协议
-
-https://zhuanlan.zhihu.com/p/63494668
-
-显存为什么不能当内存使？内存、Cache和Cache一致性
-
-https://blog.csdn.net/ZoeyyeoZ/article/details/51804647
-
-MESI&MOESI协议
-
----
-
-![](/images/img5/time.png)
-
-https://www.cs.cornell.edu/projects/ladis2009/talks/dean-keynote-ladis2009.pdf
-
-参考：
-
-https://zhuanlan.zhihu.com/p/296808047
-
-每个程序员都应该知道的延迟数字
-
----
+## Cache（续）
 
 L1 Cache分为ICache（指令缓存）和DCache（数据缓存）。
 
@@ -366,3 +194,93 @@ Cache与Scratch-pad-memory（spm）的区别
     </tr>
   </tbody>
 </table>
+
+## C Model
+
+在芯片的架构设计阶段需要对芯片进行建模（modeling），建模的主要目的是在大规模投入人力之前先用低成本的计算机软件实现目标芯片的主要功能，评估芯片的工作效果，验证设计思想，并作为后续开发活动的标准和依据。由于这里的软件开发一般使用C语言，所以也叫做C Model。
+
+一般而言，C Model的功能定位可能会有以下几种：
+
+1. 作为算法模型的C版本，定义模块输入输出行为的标准，实现数据的bit-match；
+
+2. 在1的基础上，定义模块的内部结构和资源约束；
+
+3. 在2的基础上，精确定义模块的输入输出时序，实现cycle-accurate；
+
+https://zhuanlan.zhihu.com/p/263012865
+
+ASIC Design and C Model
+
+## IPC
+
+IPC就是每个时钟周期(1Hz)执行指令的数量，但对于现代CPU，IPC这个参数已经不适用。因此现在是把使用测试程序得到的CPU单核成绩换算到1GHz，把每GHz的成绩称为IPC或PPC。奔腾4的频率与现代CPU差不多，但因PPC/IPC不到Intel 11代酷睿的1/5，所以在频率相同的时候，奔腾4的单核性能就不到11代酷睿的1/5。
+
+CPU的IPC比频率更加重要，因为IPC代表了CPU核心的设计水平，频率则只要使用更新的工艺，就几乎一定能得到提升。
+
+CPU的核心设计会影响提高频率的难度，通常IPC越高，频率就越难提高，但也不是决定性的因素。因为Intel的CPU不但IPC比国产CPU都高，频率还能超过5.0GHz。
+
+龙芯认为在CPU核心逻辑设计水平接近同期的主流产品之前，没有必要过于注重工艺和频率。因此龙芯在中科院计算所时，每一代设计都在大幅度修改CPU核心的逻辑设计。
+
+## 内存一致性
+
+具有共享内存的系统中，所有的处理器都能访问到同一地址空间(比如：能看到同一个全局变量)。在这样的系统中，多个线程如何去更新全局变量，底层硬件和编程者要达成共识，并遵守相关的访问协议。这些协议被称为“内存一致性模型”。
+
+x86使用的TSO和ARM的Relaxed模型相比，通过更复杂的硬件设计保证了更强的一致性，对软件的要求更松；ARM因为Relaxed模型比较宽松（几乎成了个分布式系统），原本x86靠硬件保证的东西就需要软件通过额外插入barrier来保证。
+
+插barrier不管怎么样都是多了指令，对icache/uop cache有压力，访存后端也一般假设barrier出现得比正常访存少得多因此不会花大力气优化。
+
+https://www.zhihu.com/question/350284825
+
+既然x86的cpu是把cisc翻译成RISC再执行的，为什么arm模拟x86那么困难，性能差那么多呢？
+
+https://zhuanlan.zhihu.com/p/422848235
+
+内存一致性(Memory Consistency)
+
+https://www.cl.cam.ac.uk/~pes20/weakmemory/
+
+Relaxed-Memory Concurrency
+
+## 机柜
+
+机柜、板卡的尺寸规格也有工业标准，以方便不同厂商产品的互联和替换。
+
+OCP（Open Compute Project）组织负责定义数据中心相关的工业标准。
+
+官网：
+
+https://www.opencompute.org
+
+OAM：OCP Accelerator Module
+
+UBB：Universal Base Board
+
+https://zhuanlan.zhihu.com/p/339628067
+
+开放计算的源起，对比标准x86服务器开放计算有哪些特点和创新？
+
+https://zhuanlan.zhihu.com/p/571417872
+
+开放整机柜服务器简史
+
+## RISC-V
+
+https://mp.weixin.qq.com/s/LreWWlXAQL-dqQBCk93soQ
+
+解读两大精简指令集：RISC-V和MIPS
+
+https://mp.weixin.qq.com/s/5uie8Ci5dK_wy54Z70Gklg
+
+RISC-V精简到何种程度？能省的都省了！
+
+https://mp.weixin.qq.com/s/JNCC3C3Sq0Hzk_5VBcivng
+
+RISC-V有何特别之处？
+
+---
+
+尽管Verilog曾经极大地推动了工程师设计能力的以指数级提升，但是在当下，随着芯片规模尤其是AI芯片规模的急剧增大，Verilog低效的描述方式已经被广为诟病。U.C. Berkeley在设计RISC-V的时候引入Chisel语言。
+
+https://zhuanlan.zhihu.com/p/98097268
+
+初学Chisel语言，看这篇就够了：最方便简洁的入门资料整理

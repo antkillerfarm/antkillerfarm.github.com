@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（四十二）——深度ISP, Spiking Neural Network
+title:  深度学习（四十二）——深度ISP, 深度树学习
 category: DL 
 ---
 
@@ -327,72 +327,74 @@ https://mp.weixin.qq.com/s/BczYuj1xaG097gq3t8XLkQ
 
 深度解析爱芯元智AI ISP技术
 
-# Spiking Neural Network
+# 深度树学习
 
-除了基于BP算法的NN之外，Spiking Neural Network也是一大类NN。Spiking NN和人脑结构更相似，功耗也更小，但是相关训练和数据量化的算法尚不成熟，属于潜力股。
+决策树是传统ML领域的王者，对于如何将之深度化，一般有两个方向：
 
-![](/images/img2/BrainChip_Fig2.gif)
+- 树结构的深度化。代表：gcForest。
 
-![](/images/img3/Tianjic.png)
+- 树+DL。一般被称为深度树学习。
 
-参考：
+## gcForest
 
-https://homepages.cwi.nl/~sbohte/publication/paugam_moisy_bohte_SNNChapter.pdf
+http://mp.weixin.qq.com/s/aDKLcITA6TBZDyNmuAU4Bw
 
-Computing with Spiking Neuron Networks
+周志华教授gcForest（多粒度级联森林）算法预测股指期货涨跌
 
-https://mp.weixin.qq.com/s/6dpKSaLFVo-ge4gtbG8GQg
+https://mp.weixin.qq.com/s/GU9-rH0gFan620Jhc1HTDg
 
-简述脉冲神经网络SNN：下一代神经网络
+周志华提出的gcForest能否取代深度神经网络？
 
-https://mp.weixin.qq.com/s/0n50YO1jIv_mxqe0EeS6kw
+https://mp.weixin.qq.com/s/dEmox_pi6KGXwFoevbv14Q
 
-综述AI未来：神经科学启发的类脑计算
+周志华：首个基于森林的自编码器，性能优于DNN
 
-https://mp.weixin.qq.com/s/5KA7jtlRmnXxijGQhU1k4A
+http://mp.weixin.qq.com/s/IfEgSOIkIPA-YtC9NQW1ng
 
-DeepMind哈萨比斯狂推的神经科学，入门需要看什么书？
+非神经网络的深度模型gcForest
 
-https://mp.weixin.qq.com/s/TWdeHVCgEf54STvdA1QUPg
+https://mp.weixin.qq.com/s/N80l9PZQposbIOKXbv8ayw
 
-DeepMind哈萨比斯长文：伟大的AI离不开神经科学
+周志华：最新实验表明gcForest已经是最好的非深度神经网络方法
 
-https://mp.weixin.qq.com/s/8ibcyvyBLYArAMhQElqRzg
+https://mp.weixin.qq.com/s/8QP5X9Hxi_6qyfxP4O0Gwg
 
-Cell研究揭示生物神经元强大新特性，是时候设计更复杂的神经网络了！
+周志华团队和蚂蚁金服合作：用分布式深度森林算法检测套现欺诈
 
-https://mp.weixin.qq.com/s/cb6JBlb11xW0Xw0RWI4vFA
+https://mp.weixin.qq.com/s/bE9BZQ6wCICvrgomdySDuw
 
-浙大&川大提出脉冲版ResNet：继承ResNet优势，实现当前最佳
+周志华组提出可做表征学习的多层梯度提升决策树
 
-https://mp.weixin.qq.com/s/yaAuVpuhSGabOswKnv9q5Q
+https://mp.weixin.qq.com/s/AwvSTF8j0AinS-EgmPFJTA
 
-脉冲神经网络与小样本学习
+周志华团队：深度森林挑战多标签学习，9大数据集超越传统方法
 
-https://mp.weixin.qq.com/s/m7UHX3XL5sC3oBdu3KoyOg
+## 深度树学习
 
-脉冲神经网络（SNN）概述
+https://mp.weixin.qq.com/s/GO7bXBY0cVfGIEEAtp0sKg
 
-https://mp.weixin.qq.com/s/vwZfmyIEdEdpqJWKOSKYYw
+什么时候以及为什么基于树的模型可以超过神经网络模型？
 
-清华天机AI芯片登Nature封面：全球首款异构融合类脑芯片，实现自行车无人驾驶
+https://mp.weixin.qq.com/s/bjOVQu0FZyTWQRlwEn8IVA
 
-https://mp.weixin.qq.com/s/skA3NZIAzTrsnSsNCxCYSA
+基于深度树学习的Zero-shot人脸检测识别
 
-类脑计算背后的计算神经科学框架
+https://mp.weixin.qq.com/s/pWcFuOecG-dZHZ365clDjg
 
-https://mp.weixin.qq.com/s/ku78_exDM-OUwWPBCNahCg
+阿里妈妈新突破！深度树匹配如何扛住千万级推荐系统压力
 
-Spiking-YOLO：前沿性研究，脉冲神经网络在目标检测的首次尝试
+https://mp.weixin.qq.com/s/sw16_sUsyYuzpqqy39RsdQ
 
-https://blog.csdn.net/u011853479/article/details/61414913
+阿里妈妈深度树检索技术（TDM）及应用框架的探索实践
 
-脉冲神经网络的五脏六腑
+https://mp.weixin.qq.com/s/EFDmHH8oUmJk-rG5PNnsAg
 
-https://blog.csdn.net/Yannan_Strath/article/details/105761023
+阿里妈妈深度树匹配技术演进：TDM->JTM->BSAT
 
-脉冲神经网络（Spiking Neural Network）叙述
+https://mp.weixin.qq.com/s/6r8y7tMqo53lnACWG1K4xA
 
-https://blog.csdn.net/Yannan_Strath/article/details/108190281
+深度树学习用于Zero-shot人脸的反欺诈
 
-脉冲神经网络（Spiking Neural Network）发展现状
+https://mp.weixin.qq.com/s/NBVPlFGO12PhMTF0dUL2hw
+
+DeepGBM:使用树蒸馏提升在线预测任务下深度模型效果

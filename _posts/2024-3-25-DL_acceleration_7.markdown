@@ -71,70 +71,6 @@ https://mp.weixin.qq.com/s/ie2O5BPT-QxTRhK3S0Oa0Q
 
 # NN Quantization
 
-## 二值神经网络
-
-二值神经网络的主要缺点在于：它们无法实现与完全精度的深层网络一样高的精度。但这一直在缓慢地变化，已经有了很多进步。
-
-综述：
-
-《BiBench: Benchmarking and Analyzing Network Binarization》
-
-![](/images/img5/BNN.png)
-
-BNN,DoReFA,Bi-Real,ReActNet一脉相承。
-
-XNOR,XNOR++,ReCU为另一个流派。
-
-参考：
-
-http://blog.csdn.net/tangwei2014/article/details/55077172
-
-二值化神经网络介绍
-
-https://mp.weixin.qq.com/s/0twiT2mrVdnwyS-mqgrjVA
-
-低比特量化之XNOR-Net
-
-https://mp.weixin.qq.com/s/oumf8l28ijYLxc9fge0FMQ
-
-嵌入式深度学习之神经网络二值化（1）
-
-https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
-
-嵌入式深度学习之神经网络二值化（2）
-
-https://mp.weixin.qq.com/s/RsZCTqCKwpnjATUFC8da7g
-
-嵌入式深度学习之神经网络二值化（3）
-
-https://blog.csdn.net/stdcoutzyx/article/details/50926174
-
-二值神经网络（Binary Neural Network，BNN）
-
-https://mp.weixin.qq.com/s/Q54AdQmqa5JD0v9CEeFtSQ
-
-二值化神经网络(BNN)综述
-
-https://zhuanlan.zhihu.com/p/431680710
-
-谈谈BNN二值化神经网络的设计，以及几代学界工作的演进 -（1）架构与原理
-
-https://zhuanlan.zhihu.com/p/433429767
-
-谈谈BNN二值化神经网络的设计，以及几代学界工作的演进 -（2）二值训练
-
-https://zhuanlan.zhihu.com/p/435285316
-
-谈谈BNN二值化神经网络的设计，以及几代学界工作的演进 -（3）二值化设计法则、推理框架与发展潜力
-
-https://mp.weixin.qq.com/s/lVja7woyFWpmr9sH0CitAA
-
-BMXNet：基于MXNet的开源二值神经网络实现
-
-https://mp.weixin.qq.com/s/naDk0mmxd08dNl9LawLUnw
-
-不使用先验知识与复杂训练策略，从头训练二值神经网络！
-
 ## Optimizer Quantization
 
 ![](/images/img5/DTQ.png)
@@ -165,33 +101,9 @@ https://github.com/bitsandbytes-foundation/bitsandbytes
 
 https://www.cnblogs.com/chentiao/p/17388568.html
 
-bitsandbytes--Facebook 推出 8 比特优化器大大减少显存
+bitsandbytes--Facebook推出8比特优化器大大减少显存
 
 ## 参考
-
-https://mp.weixin.qq.com/s/Xvlxs-Os2meduHrEQFc7vg
-
-第一次胜过MobileNet的二值神经网络，-1与+1的三年艰苦跋涉
-
-https://mp.weixin.qq.com/s/Ak9Yh_MBDR6i7J2rDR99eQ
-
-低成本的二值神经网络介绍以及它能代替全精度网络吗?
-
-https://mp.weixin.qq.com/s/tbRj5Wd69n9gvSzW4oKStg
-
-异或神经网络
-
-https://mp.weixin.qq.com/s/XzLJzfvpP93cDYplf6-LXA
-
-港科腾讯等提出Bi-Real net：超XNOR-net 10%的ImageNet分类精度
-
-https://mp.weixin.qq.com/s/wCx7rQFwC2mW45FMR77tGQ
-
-二值网络，围绕STE的那些事儿
-
-https://mp.weixin.qq.com/s/7L26ghhDqdMU6LRV0iD6vQ
-
-模型量化从1bit到8bit，二值到三值
 
 https://mp.weixin.qq.com/s/M79xGWWtJUB6wBVlHXw8ig
 
