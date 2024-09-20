@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争：疾风篇（十四）——凡人列传（4）
+title:  俄乌战争：疾风篇（十四）——凡人列传（3）
 category: Russo Ukrainian War Wind
 ---
 

@@ -35,6 +35,12 @@ https://blog.csdn.net/v_JULY_v/article/details/131552592
 
 基于LangChain+LLM的本地知识库问答：从企业单文档问答到批量文档问答
 
+## 参考
+
+https://mp.weixin.qq.com/s/39MYrsB3gXpfzTTOgQjDwg
+
+幻方AI DeepSeek模型背后的万卡集群建设
+
 # Alpa
 
 Alpa是一个自动探索分布式策略的工具。
