@@ -307,21 +307,3 @@ https://blog.csdn.net/qinduohao333/article/details/131629428
 ![](/images/img5/DS-Ulysses.png)
 
 图中N表示序列长度，d表示`hidden_size=(hc * hs)，hc = head_cnt，hs=head_size`，P表示GPU数目（图中 P=4）。红色虚线表示通信，黑色虚线表示计算。
-
-DS-Ulysses 对Q、K、V沿着N维度切分成P份，三个分布式矩阵通过All2All变成沿d维度切分了。All2All等价于一个分布式转置操作。之后就是正常的$$softmax(QK^T)V$$计算，可以用 FlashAttention加速，得到结果再通过All2All转置回来。
-
-![](/images/img5/SP.jpg)
-
-https://zhuanlan.zhihu.com/p/689067888
-
-大模型训练之序列并行双雄：DeepSpeed Ulysses和Ring-Attention
-
-https://zhuanlan.zhihu.com/p/703669087
-
-我爱DeepSpeed-Ulysses：重新审视大模型序列并行技术
-
----
-
-FastSeq，它能将qkv projection的计算和all-gather通信重叠，只需多占用一点内存就可更进一步提升训练效率。
-
-《FastSeq: Make Sequence Generation Faster》

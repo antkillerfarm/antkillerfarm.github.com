@@ -99,218 +99,116 @@ https://mp.weixin.qq.com/s/MCAR8M2DoV30-McdsjTxDw
 
 >秦大河，1947年生，地理学家，中国科学院院士，第三世界科学院院士。曾任中国气象局局长、中国科学技术协会副主席等
 
-https://mp.weixin.qq.com/s/3aLHfKF5grL6hunO7r_TAQ
+---
 
-中国第一个发《Nature》的竟然是清朝人！被皇帝夸天下第一，他却觉得羞耻。。。（徐寿、华蘅芳、徐建寅）
+大定航空发动机制造厂留下来的大部分技术职工去了成都，成为成都地区飞机工厂的基础技术力量，而少部分则调往贵阳，并在当时创建了贵州有名的地方工企业--贵阳矿山机械厂。
 
-https://mp.weixin.qq.com/s/J1mAwHQUkuHrmvmyK_w5BQ
+吴大观，1916～2009，1942年毕业于西南联大，后到美国莱康明发动机厂和普惠公司学习深造。1947年3月，他拒绝了美国有关单位的高薪聘请，毅然回来报效祖国。1949年11月，他任新中国重工业部航空筹备组组长，参与了新中国航空工业的筹建。中国航空发动机之父。
 
-中国首台蒸汽机竟由一位清代数学家设计！他与诺贝尔同年出生，为研制火药险些殒命。。。（华蘅芳）
+虞光裕，1918～1970，航空发动机专家，我国第一个航空发动机设计研究机构的创建人之一，50年代领导自行设计试制成功我国第一台喷气发动机。
 
-https://mp.weixin.qq.com/s/OO2OPmxjZJTCNiy_S2p-Aw
+https://www.163.com/dy/article/GH4IHE7B05439FWW.html
 
-中国第一个登上Nature的女科学家，居然出生在清朝？只活了29岁（王贞仪）
+民国就有航空发动机制造厂？国府投资350万美元，仅生产36台
 
-https://mp.weixin.qq.com/s/CTpwRV9BJ6JW2BOtVC7uMg
+---
 
-她是清华第一位女教授，被称为中国的“居里夫人”，却在62岁高龄被打入大牢...（王明贞）
+2005年雪亮军刀与联合光子还在为2030年中国GDP能不能超过日本激烈论战，天涯网友们盖楼上万层，多少天涯“精英”群嘲军刀，结果才2009年~2010年，日本就被中国超了。
 
-https://mp.weixin.qq.com/s/ajfoQAH-WSZ_OYIRK8uGAQ
+https://zhuanlan.zhihu.com/p/385667788
 
-被遗忘的中国生命科学之父（林可胜）
+站在2021，缅怀雪亮军刀
 
-https://mp.weixin.qq.com/s/E8F4E-9LXJezfMY7hB-vWg
+---
 
-高考成绩接近满分，却被清华北大拒绝，被称“中国最帅科学家”（中国油田分层开采和化学驱油技术的奠基人——王德民）
+当时辐射病很严重，二机部的治辐射病的医院在衡阳，占了衡阳小半个城区。就是现在的南华大学附属医院，现在也是核辐射的权威医院。
 
-https://mp.weixin.qq.com/s/wcDiuHjtGgWjWdLRtJTpTg
+2007年，湖南籍的矿工和农民，利用土法炼铀，共炼制了纯度高达56%的铀，样品经检验是铀235和铀238。
 
-凤毛麟角：中国早期留美的数理同门女双杰（1912-1949年间，有14名中国女性赴英美留学，后来均成为杰出的物理学家，本文主人公王明贞和王承书就是其中的两位。）
+黄饼而已，早年阿里巴巴上还能买钙铀和化学试剂的时候我自个儿都能做，试剂质量好再花点心思设计提纯把纯度做到95%+没问题。
 
-https://mp.weixin.qq.com/s/IQPiGqqad4YajaCu9bQhJw
+多花点钱买设备，到二氧化铀为止也能干出来。不怕死继续加钱上M400反应釜再多叫几个人搭手，四氟化铀也能做。甚至抱定必死的决心，六氟化铀也不是不能尝试。
 
-美国一再拒绝两个中国人的回国申请，有人道破天机：你们是重大威胁（王承书、张文裕）
+但就到此为止了。同位素分离不是一般人能干得了的。况且买沥青铀矿或者大量钙铀不被查水表才是最难的……
 
-https://mp.weixin.qq.com/s/CTpwRV9BJ6JW2BOtVC7uMg
+现代的分离法主要还是离心为主，能耗比其实可以接受，单位产量能耗大概也就淘汰产能的电解铝厂三千倍而已，考虑到显然任何时候都没人需要年产千吨U235，其实一个年产200kg左右的分离厂能耗比在工业上还在可接受范围内。
 
-她是清华第一位女教授，被称为中国的“居里夫人”，却在62岁高龄被打入大牢...（王明贞）
+但这玩意没法小规模搞，离心机一开就是上万台。耗电总量平摊到全年不算啥，但无论是从建设规模还是对电网的负载来看都太显眼了。高速离心机也不是地里的萝卜，随便找个厂就买的到的。
 
-https://mp.weixin.qq.com/s/ajfoQAH-WSZ_OYIRK8uGAQ
+铀浓缩的离心机和你想象中有极大区别，同位素那点质量差太小了，离心机和常见离心机根本就不是同一个种族的，铀浓缩的离心机被特意设置成一个长长的圆柱形，半径小，高度大，铀以气态氟化物形式通入离心机，托半径小的福，离心机转速可以做得极其变态，为了提高效率，这玩意儿还是一大捆一大捆的装一起串联并联各种联连续生产，这玩意儿特征太明显了，保证你在公开市场上买不到。
 
-被遗忘的中国生命科学之父（林可胜）
+https://www.sohu.com/a/400686493_120672687
 
-https://mp.weixin.qq.com/s/Z2xRTxgRRHWWY2VICT4lQg
+新疆730铀矿，中国最早铀矿之一，职工土法炼铀，如今成废墟
 
-中国有哪些领跑全球的技术
+https://m.thepaper.cn/baijiahao_15009995
 
-https://mp.weixin.qq.com/s/NQ4OiPgguAVkRPBn1uEYjg
+亲历者回忆江西土法炼铀支援首颗原子弹试验
 
-他奉密令去美国长期潜伏，周总理亲自送行长谈（吴大琨）
+https://news.sohu.com/20061123/n246574873.shtml
 
-https://mp.weixin.qq.com/s/z0FdqtVOmhv1mbVRJ42UFA
+土法炼铀 广东铀矿成就中国第一颗原子弹
 
-“奋斗者”号再探万米深海，制造一个深潜器到底有多难？
+https://epaper.oeeee.com/epaper/A/html/2020-07/10/content_19980.htm
 
-https://mp.weixin.qq.com/s/toX25yTvQWnwid26oOXROA
+曾自创原子弹原料铀提炼法 完成任务后隐姓埋名30多年
 
-深潜海底10909
+---
 
-https://www.zhihu.com/answer/378935681
+中国是农业大国，作为植物生长的三大营养元素之一的钾肥，中国此前一直严重缺乏，一度70%以上依赖进口。如果植物缺少钾元素，就容易得“软骨病”，易倒伏，将严重影响农作物的产量和品质。
 
-谁能告诉我一些关于肯尼亚蒙内铁路的故事？
+这事关13亿中国人的“米袋子”和“菜蓝子”的钾肥生命线，此前一直被国外大公司牢牢控制。
 
-https://mp.weixin.qq.com/s/EWU26Xp8Xx4rQDiLnNPLQw
+电影《生死罗布泊》讲述了上世纪七十年代，科学家们在罗布泊寻找卤水的艰难之路。
 
-中国人是什么时候知道计算机的?
+![](/images/img4/Luobupo.jpg)
 
-https://mp.weixin.qq.com/s/gJ315Byg0EtZVldxFp-q3A
+十多年过去了，在一望无际的茫茫盐壳上，一座现代化工厂巍然矗立。罗钾的办公生活地也从帐篷到地窝子，再到盐块房，最后变成了现代化的大楼。
 
-“最牛上下铺”！他们竟是舍友（歼-20总设计师杨伟、运-20总设计师唐长红）
+国投新疆罗布泊钾盐有限责任公司（下称“国投罗钾”或“罗钾”）目前已发展成为世界最大的硫酸钾肥制造商。
 
-https://mp.weixin.qq.com/s/aX0aqG6h_0V0jMnQvJxfLQ
+https://www.zhihu.com/question/281126264
 
-袁隆平逝世：播下改变中国的种子
+罗布泊里这个是什么？
 
-https://mp.weixin.qq.com/s/ro1xdxRqfQo0S7qxMyHZSg
+https://zhuanlan.zhihu.com/p/35490042
 
-这一次，外媒集体为袁隆平刷屏
+生死罗布泊
 
-http://news.sina.com.cn/o/2018-06-25/doc-iheirxyf5801793.shtml
+https://zhuanlan.zhihu.com/p/131622164
 
-儿子智力残疾、妻女精神分裂…77岁核弹老人魏世杰的故事，让无数观众为之动容
+有哪些关于罗布泊的冷知识？
 
-https://mp.weixin.qq.com/s/vuNGjU3lPvw_k0-96v3Q6g
+https://www.zhihu.com/question/303289679
 
-和袁隆平是同学！这位91岁院士把一切献给“吃瓜群众”...（吴明珠）
+罗布泊为什么会干涸？是地质原因吗？
 
-https://mp.weixin.qq.com/s/ey3uNb3SAUR70A86-E1klg
+---
 
-中国制造高精度机床的困难在哪里？
+1970年，由上海708船舶钻研所设计，马尾造船厂开始制造了造一艘3000吨的水泥货轮。经过3年努力，1973年3月22日，中国第一艘3000吨钢丝网沿海水泥货轮成功下水。它，就是“古田”号。
 
-https://mp.weixin.qq.com/s/QSS7dIe1MeIOBu6tko9maQ
+钢丝网水泥船具备颐养便当、水密性强、船身稳等长处，但具备不耐碰撞、船身重等弱点，因此没有推广。
 
-美国人万万没想到，这个不起眼的留学生，将会成为中国雷达之父（毕德显）
+---
 
-https://zhuanlan.zhihu.com/p/109751703
+中国船舶，从2018年到现在都是盈利的，而韩国造船厂都在吐血亏钱。
 
-为了研究，他骨折14处（吴天一）
+三星重工已经连续亏损好几年了，今年继续亏。
 
-https://mp.weixin.qq.com/s/_FKBOk6IrxTixo2YrowLQw
+大宇造船今年上半年亏损11亿美元，是十几年里最大亏损。
 
-这块来自月球的小石头，撞出了他的“月球梦”（欧阳自远）
+最好的现代重工造船业务部门KSOE，刚刚从二季度的6亿美元亏损恢复到三季度盈利1.2亿美元，但今年估计还是亏损。
 
-https://www.zhihu.com/answer/1950534833
+韩国造船业国产零部件只占40%，大部分零部件需要进口。中国造船业零部件基本是国产，只有极少数零部件需要进口。这就决定了中国造船是盈利的，韩国造船亏损，靠政府补贴死撑。
 
-民国工业成就
+LNG船韩国是付给法国授权费生产，利润主要给了法国，韩国是赔本赚吆喝。LNG船核心材料殷瓦钢，只有中法能够生产。
 
-https://mp.weixin.qq.com/s/LzMaq9LDADzUxc-8VrOcsA
+中韩造船主要竞争的是民用船舶，利润丰厚的邮轮是欧洲人自己造。中国可以独立制造各型军舰，潜艇，天鲸号喷沙船，打捞韩国世越号沉船的打捞船，大型海上石油平台。韩国只是在法国授权下生产LNG船占优，而中国已经开始追赶。
 
-她们从安娜堡走来：巴伯奖学金和中国女留学生先驱
+韩国LNG船的竞争力在于一是强行压低成本，二是蒸发率低，而这个蒸发率低，靠的是韩国培养了一批牛逼的液货舱焊接工人，属于高级技工范畴，与科学技术无关，靠的是手艺，而中国和日本近两年先后研发出了专门焊接液货舱的自动焊接机器人，这才是科学技术。
 
-https://www.163.com/dy/article/GIGUJPNF0534A4RZ.html
+中国不但制造全球一半的船只，还设计一半的船只，还制造一半以上的船舶零部件，下游还有更大的船运公司，更多的外贸运输量，拥有相应的金融服务，卫星通信等等。韩国人以其较小的整体经济规模，在造船业上只能在少数几个环节跟我们拼规模效应，但是我们可以在更多环节发挥产业集群优势。
 
-原子弹核心部件操刀人原公浦最后的日子：癌痛时他唱《东方红》
+https://www.zhihu.com/question/624976973
 
-https://zhuanlan.zhihu.com/p/397501035
-
-《逐梦蓝天》：他是将门虎子，23岁毛主席为他题词，享年90岁（叶正大）
-
-https://mp.weixin.qq.com/s/mkUxG7UMTPyeXnFzPFhNRw
-
-追怀郑哲敏：一生波折，留些话给后人
-
-https://mp.weixin.qq.com/s/-9Q5U50IwtEiv6MX5Z7NuA
-
-一张老照片：九十年前的中国女留学生
-
-https://www.zhihu.com/question/48422826
-
-茅以升晚年，10年失两爱妻，六子女怨恨责备，临终只有幼女陪伴
-
-http://www.zjgrrb.com/zjzgol/system/2017/08/28/030351671.shtml
-
-80年前， 钱塘江建桥克服三重难关
-
-https://new.qq.com/omn/20210518/20210518A020HP00.html
-
-杭州钱江大桥，面对日军步步逼近，不得不炸毁的经历
-
-https://mp.weixin.qq.com/s/wEqbmkJuIGjqmshE96woAQ
-
-林巧稚诞辰120周年：终身未婚的“万婴之母”
-
-https://mp.weixin.qq.com/s/TQPcOAXvjo3MXFeWN4OvhA
-
-治学报国：民国时期的统计留学生
-
-https://zhuanlan.zhihu.com/p/352959565
-
-参与加勒万冲突保障，民企员工受到表彰，该公司堪称军工界大疆
-
-https://www.zhihu.com/question/425270883
-
-非五常国家的军事实力究竟有多弱？
-
-https://mp.weixin.qq.com/s/-iv72YL5jm5OyHPuNzEzmg
-
-破晓时分，加州教授团访华记
-
-https://mp.weixin.qq.com/s/_0SN18UFx_GGlHebUaar9A
-
-兵器试验中心数字弹道的传奇。陆载德的故事——从一位左腿残疾的清华学子成长为90年代共和国军队中唯一的独腿将军。
-
-https://mp.weixin.qq.com/s/tg5ovnXBV0aqM51DGj-mUQ
-
-中国计算数学和最优化事业的创始人之一、原南京大学教授何旭初
-
-https://mp.weixin.qq.com/s/fJeYJt42nQcnugqEHUGrTw
-
-捐出200万元的中国工程院院士！一生都在做“吃螃蟹的人”……（徐寿波）
-
-https://view.inews.qq.com/wxn/20220202A087ZO00
-
-这位院士一个决定，让救命药仅售290元（王振义）
-
-https://mp.weixin.qq.com/s/fVOd3ARuymsSqPXdz25nnw
-
-控制论与被遗忘的华人科学家（李郁荣）
-
-https://mp.weixin.qq.com/s/dNe-OmF_eTbtApyy13_QLA
-
-管梅谷先生简介
-
-https://www.zhihu.com/question/51700891
-
-如何评价“前三十年的工业化是一堆破铜烂铁＂？
-
-https://mp.weixin.qq.com/s/TLe6qAAxWJZnKUXo6EGp5g
-
-上海滩无线和芯片30年史
-
-https://mp.weixin.qq.com/s/Sq53aEbG3bIBML9qSwPzoA
-
-从奴隶到将军：工控“小华为”的三场战事（汇川技术）
-
-https://view.inews.qq.com/wxn/20221217A05KPO00
-
-90岁顶级大师走了，全国5.5亿用户都要感谢他（“中国光纤之父”赵梓森）
-
-https://mp.weixin.qq.com/s/5E67HQ_TqIdtc8T-bvI7tA
-
-制造宁德时代
-
-https://mp.weixin.qq.com/s/WYgdy03_j_7-nG00gXjjHg
-
-华科大校友、“中国龙芯之母”黄令仪逝世
-
-https://zhuanlan.zhihu.com/p/685019610
-
-中国瓷器，是如何被西方摁在地上摩擦的？
-
-https://zhuanlan.zhihu.com/p/632524144
-
-（2003--2022）中央企业名录变化历程（1）
-
-https://zhuanlan.zhihu.com/p/632868330
-
-（2003--2022）中央企业名录变化历程（2）
+中国9月造船接单量远超韩国，占比分别为82%∶ 6%，为何订单数量差距不断被拉大？

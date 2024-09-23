@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（七）——Alpa
+title:  并行 & 框架 & 优化（七）——LLM System, Alpa
 category: DL acceleration 
 ---
 
@@ -9,7 +9,21 @@ category: DL acceleration
 
 # LLM System
 
-## 向量数据库（续）
+## RAG（续）
+
+假设有一个10w的外部数据，我们的原始输入Prompt长度为100，长度限制为4k，通过查询-检索的方式，我们能将最有效的信息提取集中在这4k的长度中，与Prompt一起送给大模型，从而让大模型得到更多的信息。此外，还能通过多轮对话的方式不断提纯外部数据，达到在有限的输入长度限制下，传达更多的信息给大模型。
+
+https://blog.csdn.net/qq_40491305/article/details/130898052
+
+一文看懂LlamaIndex用法，为LLMs学习私有知识
+
+## 向量数据库
+
+向量搜索在搜索、推荐、NLP等众多应用领域被广泛的使用，典型的互联网业务，包括电商、出行、点评、地图等都大量使用相关技术。随着ChatGPT带来的AI技术应用新热潮，向量数据库又一次地获得了更多的关注。它可以解决LLM不长记性（Memory，记忆）的问题。
+
+普遍认为 LLM + Vector Search + API pool 会变成复杂AI场景的标准解决方案。
+
+类似Pinecone，Weaviate，Qdrant，Chroma这样的专用向量数据库最初是为了解决ChatGPT的记忆能力不足而出现的Workaround。
 
 最发布的ChatGPT 3.5的上下文窗口只有4K Token，也就是不到两千个汉字。然而当下GPT 4的上下文窗口已经发展到了128K，扩大了32倍，足够塞进一整篇小说了。而且未来还会更大。这时候，用作临时周转的垫脚石——向量数据库SaaS就处在一个尴尬的位置上了。
 
@@ -133,6 +147,10 @@ $$
 https://zhuanlan.zhihu.com/p/487588274
 
 用ILP和DP自动探索DL分布式策略——Alpa
+
+https://zhuanlan.zhihu.com/p/571836701
+
+Alpa论文解读
 
 # 工具
 
@@ -311,47 +329,3 @@ https://mp.weixin.qq.com/s/hjC-WTMIpbWWpmXoLBfD2g
 https://mp.weixin.qq.com/s/mg-d1W5i9rzaLMNrvq0tSQ
 
 32分钟训练神经机器翻译，速度提升45倍
-
-https://mp.weixin.qq.com/s/iW0k80TUPuWDE9xwHvX91g
-
-为什么你需要Raven：全球首个真正分布式深度学习训练协议
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750181&idx=1&sn=156dac3c5646143fc2577972f1506836
-
-GPU捉襟见肘还想训练大批量模型？谁说不可以
-
-https://mp.weixin.qq.com/s/-CTVyKWtdTK0RIfzzPVyNQ
-
-分布式与高效深度学习，140页ppt详述深度学习压缩与联邦学习训练技术进展
-
-https://mp.weixin.qq.com/s/nTBuYuW7h9wZYuo3w1xGmQ
-
-分布式训练的方案和效率对比
-
-https://mp.weixin.qq.com/s/LOTQfD9KKtAq0zz4rObCGA
-
-EB级系统空中换引擎：阿里调度执行框架如何全面升级？（DAG 2.0）
-
-https://zhuanlan.zhihu.com/p/26552293
-
-Dataflow架构和神经网络加速器
-
-https://zhuanlan.zhihu.com/p/28445511
-
-浅析深度学习框架设计中的关键技术
-
-https://mp.weixin.qq.com/s/wu32LBwrkkBIANMdknHlCA
-
-C++并行实战，592页pdf，C++ Concurrency in Action
-
-https://zhuanlan.zhihu.com/p/79385727
-
-有限元并行计算简介
-
-https://mp.weixin.qq.com/s/heVQ9AIZKxTiCNiAtYKaag
-
-新加坡国立大学最新“大规模深度学习优化”综述论文，带你全面了解最新深度学习准确率和效率的优化方法
-
-https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
-
-IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能

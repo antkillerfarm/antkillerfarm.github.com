@@ -123,6 +123,12 @@ CUDA在线程的细粒度上进行编程，Triton是在分块的细粒度上进�
 
 ---
 
+Triton的目标是只考虑在CUDA生态下的优化，直接考虑要解决的问题就是Pre Fetching，访存合并，Shared Memory的分配与同步，完全放弃了硬件中立。
+
+然而大家发现，Triton的编程模型，反而好像是各种硬件的公约数，如何划分数据块，load到片上，再store回去，在各种硬件架构下都是难搞的问题。
+
+---
+
 参考：
 
 https://zhuanlan.zhihu.com/p/394377526

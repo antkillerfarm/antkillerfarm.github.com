@@ -215,6 +215,50 @@ https://www.zhihu.com/question/627484732
 
 # 并行 & 框架 & 优化=
 
+https://mp.weixin.qq.com/s/iW0k80TUPuWDE9xwHvX91g
+
+为什么你需要Raven：全球首个真正分布式深度学习训练协议
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750181&idx=1&sn=156dac3c5646143fc2577972f1506836
+
+GPU捉襟见肘还想训练大批量模型？谁说不可以
+
+https://mp.weixin.qq.com/s/-CTVyKWtdTK0RIfzzPVyNQ
+
+分布式与高效深度学习，140页ppt详述深度学习压缩与联邦学习训练技术进展
+
+https://mp.weixin.qq.com/s/nTBuYuW7h9wZYuo3w1xGmQ
+
+分布式训练的方案和效率对比
+
+https://mp.weixin.qq.com/s/LOTQfD9KKtAq0zz4rObCGA
+
+EB级系统空中换引擎：阿里调度执行框架如何全面升级？（DAG 2.0）
+
+https://zhuanlan.zhihu.com/p/26552293
+
+Dataflow架构和神经网络加速器
+
+https://zhuanlan.zhihu.com/p/28445511
+
+浅析深度学习框架设计中的关键技术
+
+https://mp.weixin.qq.com/s/wu32LBwrkkBIANMdknHlCA
+
+C++并行实战，592页pdf，C++ Concurrency in Action
+
+https://zhuanlan.zhihu.com/p/79385727
+
+有限元并行计算简介
+
+https://mp.weixin.qq.com/s/heVQ9AIZKxTiCNiAtYKaag
+
+新加坡国立大学最新“大规模深度学习优化”综述论文，带你全面了解最新深度学习准确率和效率的优化方法
+
+https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
+
+IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能
+
 http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
 
 神经网络的分布式训练

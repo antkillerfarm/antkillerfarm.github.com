@@ -1,11 +1,35 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（六）——快速Transformer, LLM Inference, LLM System
+title:  并行 & 框架 & 优化（六）——快速Transformer, LLM Inference
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
+
+# KV Cache（续）
+
+## MLA
+
+MLA是幻方量化投资的DeepSeek公司的DeepSeek-V2模型发明的。该模型1元/百万输入Tokens的价格，只有GPT4价格的1/100。
+
+![](/images/img5/MLA_2.png)
+
+![](/images/img5/MLA.png)
+
+MLA的创新点，其实不是低秩分解，因为如果你想的话，GQA也可以重写成低秩分解的形式。
+
+MLA的关键是低秩分解后面的事情，GQA是split and repeat，MLA则一般化为dense projection，从而实现了同样的低秩分解下更好的效果，或者同样效果下更低的秩，后者就是它能比GQA更进一步压缩KV Cache的根本原因。
+
+推理时，MLA需要利用恒等变换才能实现低秩的KV Cache，但代价是每个头的Q/K的head_size变大了不小，所以理论上MLA推理的计算量是增加的。它最后之所以还能提高效率，是充分结合了LLM推理主要瓶颈还是访存而不是计算这一特性。
+
+https://kexue.fm/archives/10091
+
+缓存与效果的极限拉扯：从MHA、MQA、GQA到MLA
+
+https://www.zhihu.com/question/655172528
+
+如何看待DeepSeek发布的MoE大模型DeepSeek-V2？
 
 # 快速Transformer
 
@@ -245,19 +269,3 @@ RAG进阶之通用文档处理：从RAGFlow、TextMonkey到mPLUG-DocOwl 1.5
 https://zhuanlan.zhihu.com/p/695299235
 
 RAG路线图： Reliable, Adaptable, and Attributable Language Models with Retrieval
-
----
-
-假设有一个10w的外部数据，我们的原始输入Prompt长度为100，长度限制为4k，通过查询-检索的方式，我们能将最有效的信息提取集中在这4k的长度中，与Prompt一起送给大模型，从而让大模型得到更多的信息。此外，还能通过多轮对话的方式不断提纯外部数据，达到在有限的输入长度限制下，传达更多的信息给大模型。
-
-https://blog.csdn.net/qq_40491305/article/details/130898052
-
-一文看懂LlamaIndex用法，为LLMs学习私有知识
-
-## 向量数据库
-
-向量搜索在搜索、推荐、NLP等众多应用领域被广泛的使用，典型的互联网业务，包括电商、出行、点评、地图等都大量使用相关技术。随着ChatGPT带来的AI技术应用新热潮，向量数据库又一次地获得了更多的关注。它可以解决LLM不长记性（Memory，记忆）的问题。
-
-普遍认为 LLM + Vector Search + API pool 会变成复杂AI场景的标准解决方案。
-
-类似Pinecone，Weaviate，Qdrant，Chroma这样的专用向量数据库最初是为了解决ChatGPT的记忆能力不足而出现的Workaround。

@@ -197,6 +197,8 @@ https://zhuanlan.zhihu.com/p/630219636
 
 ![](/images/img5/Marinka.avif)
 
+![](/images/img6/battle_city.jpg)
+
 https://www.zhihu.com/answer/2831950888
 
 乌克兰失去马林卡意味着什么?
