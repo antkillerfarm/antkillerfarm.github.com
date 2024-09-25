@@ -207,6 +207,14 @@ PDF.js由Mozilla提供支持。目标是创建一个通用的、基于Web标准�
 
 https://mozilla.github.io/pdf.js/
 
+## Deeplink
+
+“Deeplink”又名“深度链接”，是一种能将用户直接从网页带到App指定页面的技术。
+
+https://zhuanlan.zhihu.com/p/394363004
+
+深度链接(Deeplink)的实现与使用
+
 # Javascript参考资源
 
 https://mp.weixin.qq.com/s/OlnIqu5JvO2WjIA5re9KIg

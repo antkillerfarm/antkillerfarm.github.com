@@ -172,3 +172,7 @@ https://www.zhihu.com/question/599625706
 https://zhuanlan.zhihu.com/p/694565708
 
 俄系武器被打回原形！三哥：苏联的废旧金属，不再满足印度需求！
+
+https://zhuanlan.zhihu.com/p/721550975
+
+厉害莫迪：左手进口俄罗斯低价石油，右手经欧盟向乌克兰提供弹药

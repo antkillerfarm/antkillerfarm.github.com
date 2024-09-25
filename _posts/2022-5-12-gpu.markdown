@@ -105,6 +105,16 @@ SPMD model implemented by a SIMD processor (a GPU)
 
 GPU虽然是一个SIMD机器，但是并没有采用SSE、AVX之类的SIMD编程模型，而是SPMD模型。
 
+---
+
+GPU的缓存策略和CPU不同，没有时间局部性，但有空间局部性：也就是上次操作的数据，后续可能完全没用，倒是本次操作的数据之间，物理上很大可能是连续的。
+
+GPU的线程切换不同于CPU，在CPU上切换线程需要保存现场，将所有寄存器都存到主存中，而一个SM中有高达64k个4 bytes寄存器。而每个Thread最高使用的寄存器数量为255。
+
+也就是说每个线程把寄存器用到爆，也才用了一半的寄存器，那多出来的这些寄存器是干啥的？
+
+其实，GPU的线程切换只是切换了寄存器组，延迟超级低，几乎没有成本。考虑到通常线程并不会使用高达255个寄存器，实际上一个CUDA Core可以随时在八个线程之间反复横跳，那个线程数据准备好了就执行哪个。
+
 ## 移动GPU
 
 移动GPU和桌面GPU最核心的差别在于渲染流程不同。目前主流的移动GPU，无论ARM、高通还是Imagination，其GPU都是TBR（Tile Based Rendering）。而桌面GPU，无论NVIDIA、AMD还是Intel，都是Immediate Rendering。

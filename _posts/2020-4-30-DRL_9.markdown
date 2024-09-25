@@ -119,6 +119,12 @@ Group Relative Policy Optimization(GRPO)
 
 这类方法效果一般，通常用于没有计算资源的时候Fine-Tuning之用。
 
+![](/images/img6/GRPO.png)
+
+https://blog.csdn.net/v_JULY_v/article/details/141535986
+
+一文通透DeepSeek-V2(改造Transformer的中文模型)：详解MoE、GRPO、MLA
+
 ---
 
 参考：
