@@ -163,11 +163,15 @@ DeepMind论文：深度压缩感知，新框架提升GAN性能
 
 # Spiking Neural Network
 
-除了基于BP算法的NN之外，Spiking Neural Network也是一大类NN。Spiking NN和人脑结构更相似，功耗也更小，但是相关训练和数据量化的算法尚不成熟，属于潜力股。
+除了基于BP算法的NN之外，Spiking Neural Network也是一大类NN。
+
+Spiking NN和人脑结构更相似，功耗也更小，但是相关训练和数据量化的算法尚不成熟，属于潜力股。
+
+目前上市的SNN芯片主要有：BrainScaleS、SpiNNaker、TrueNorth、Loihi等。
 
 ![](/images/img6/SNN.jpg)
 
-SNN使用脉冲——这是一种发生在时间点上的离散事件——而非常见的连续值。每个峰值由代表生物过程的微分方程表示出来，其中最重要的是神经元的膜电位。本质上，一旦神经元达到了某一电位，脉冲就会出现，随后达到电位的神经元会被重置。对此，最常见的模型是 Leaky Integrate-And-Fire (LIF) 模型。
+SNN使用脉冲——这是一种发生在时间点上的离散事件——而非常见的连续值。每个峰值由代表生物过程的微分方程表示出来，其中最重要的是神经元的膜电位。本质上，一旦神经元达到了某一电位，脉冲就会出现，随后达到电位的神经元会被重置。对此，最常见的模型是Leaky Integrate-And-Fire (LIF) 模型。
 
 SNN的训练方法主要有：
 
@@ -265,6 +269,16 @@ https://blog.csdn.net/Yannan_Strath/article/details/108190281
 BNN,DoReFA,Bi-Real,ReActNet一脉相承。
 
 XNOR,XNOR++,ReCU为另一个流派。
+
+---
+
+![](/images/img6/BNN.png)
+
+下图是常见的BNN的block：
+
+![](/images/img6/BNN_2.png)
+
+---
 
 参考：
 

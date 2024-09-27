@@ -147,6 +147,12 @@ https://mp.weixin.qq.com/s/KPT4P5SQ4E4ofPdjhhjRvA
 
 和GEMM类似的还有GEMV（General Matrix Vector multiplication）。
 
+GEMM的公式是：
+
+$$D= \alpha \times A \times B + \beta \times C$$
+
+其中的A、B、C为矩阵，$$\alpha, \beta$$为系数。但一般我们只关心其中的矩阵乘法。
+
 ---
 
 Multiply Accumulate, MAC
@@ -215,7 +221,7 @@ Why GEMM is at the heart of deep learning
 
 ## 内积乘法 vs 外积乘法
 
-做matrix矩阵计算（GEMM）有三种范式，外积、内积、脉动（systolic），nvidia的tensorcore是内积，google TPU和intel的AMX是脉动，外积是相对罕见的微架构。
+做matrix矩阵计算（GEMM）有三种范式，外积、内积、脉动（systolic）。
 
 ![](/images/img4/matmul.png)
 

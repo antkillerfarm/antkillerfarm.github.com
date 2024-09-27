@@ -330,6 +330,10 @@ OpenBLAS前身是日本人后藤和茂（Goto Kazushige）写的GotoBLAS2。这�
 
 ---
 
+- BLAS Level 1：vector-vector operations
+- BLAS Level 2：matrix-vector operations
+- BLAS Level 3：matrix-matrix operations
+
 https://www.zhihu.com/question/654319407
 
 cpp26线性代数为什么要基于BLAS标准?

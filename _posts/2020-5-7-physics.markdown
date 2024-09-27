@@ -159,6 +159,10 @@ https://mp.weixin.qq.com/s/o78XzwFUdfhiZEI6siJdjA
 
 中国这门失传已久的武林绝学，竟让研究它的老外拿了诺贝尔奖
 
+https://www.zhihu.com/question/667767934
+
+为什么拉屎溅起的水花高度可以比屎的初始高度还高？（沃辛顿射流）
+
 # 物理
 
 I don't need a girl friend, physics fucks me everyday.

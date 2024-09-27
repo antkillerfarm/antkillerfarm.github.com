@@ -128,6 +128,10 @@ Systolic array是孔祥重和他的博士生Charles Leiserson于1978年发明的
 >孔祥重（H. T. Kung/Kung, Hsiang-Tsung），1945年生。台湾国立清华大学本科（1968）+CMU博士（1974）。CMU、Harvard教授。台湾中央研究院院士、美国工程院院士。除了Systolic array之外，数据库领域的Optimistic concurrency control（乐观并发控制）也是他的贡献。   
 >除了Charles Eric Leiserson之外，他的博士生还有Robert Tappan Morris，也就是著名的Morris Worm的作者。
 
+上图中，矩阵A和B都是脉动式的进入计算单元，这种情况，一般被称为全脉动阵列。
+
+如果A和B，其中之一保持不变，只有另一个脉动式的进入计算单元，则为半脉动阵列。
+
 参考：
 
 http://web.cecs.pdx.edu/~mperkows/temp/May22/0020.Matrix-multiplication-systolic.pdf

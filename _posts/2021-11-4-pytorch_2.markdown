@@ -175,7 +175,25 @@ https://zhuanlan.zhihu.com/p/486130584
 
 Pytorch-多机多卡极简实现
 
----
+https://zhuanlan.zhihu.com/p/76638962
+
+Pytorch分布式训练
+
+https://zhuanlan.zhihu.com/p/360405558
+
+PyTorch分布式训练
+
+https://mp.weixin.qq.com/s/0aSBHvscloEnPMRLyNjQsg
+
+PyTorch分布式训练简明教程
+
+https://blog.csdn.net/orangerfun/article/details/123887725
+
+torch分布式训练
+
+https://mp.weixin.qq.com/s/r7kt1k7D1wurWs_uxdLCtg
+
+PyTorch源码解读之分布式训练
 
 https://pytorch.org/tutorials/intermediate/model_parallel_tutorial.html
 

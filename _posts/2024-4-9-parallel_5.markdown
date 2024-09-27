@@ -195,6 +195,20 @@ prefill（用户输入）和decode（模型输出）的token量在不同场景�
 
 ---
 
+![](/images/img6/static-batching.png)
+
+上图是一个通常的多batch的LLM的Inference过程。其中黄色表示用户的prompt，蓝色表示LLM生成的文本，红色表示结束符号。
+
+![](/images/img6/continuous-batching.png)
+
+这是改进后的continuous batching的示意图。
+
+https://www.anyscale.com/blog/continuous-batching-llm-inference
+
+How continuous batching enables 23x throughput in LLM inference while reducing p50 latency
+
+---
+
 ![](/images/img5/llm.png)
 
 https://www.zhihu.com/tardis/zm/art/647813179
@@ -247,25 +261,3 @@ https://github.com/NVIDIA/TensorRT-LLM/
 https://docs.vllm.ai/en/latest/
 
 Easy, fast, and cheap LLM serving for everyone
-
-# LLM System
-
-## RAG
-
-![](/images/img5/RAG.jpg)
-
-![](/images/img5/RAG.png)
-
-Retrieval Augmented Generation（检索增强生成）：通过检索获取相关的知识并将其融入Prompt，让大模型能够参考相应的知识从而给出合理回答。因此，可以将RAG的核心理解为“检索+生成”，前者主要是利用向量数据库的高效存储和检索能力，召回目标知识；后者则是利用大模型和Prompt工程，将召回的知识合理利用，生成目标答案。
-
-https://zhuanlan.zhihu.com/p/668082024
-
-一文搞懂大模型RAG应用
-
-https://blog.csdn.net/v_JULY_v/article/details/137711599
-
-RAG进阶之通用文档处理：从RAGFlow、TextMonkey到mPLUG-DocOwl 1.5
-
-https://zhuanlan.zhihu.com/p/695299235
-
-RAG路线图： Reliable, Adaptable, and Attributable Language Models with Retrieval

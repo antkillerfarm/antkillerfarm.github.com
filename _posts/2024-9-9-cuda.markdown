@@ -13,6 +13,8 @@ CUDA是NVIDIA最早推出的通用数学运算库。除了基本的数学运算�
 
 cuBLAS：线性计算库。
 
+cuBLASLt：cuBLAS Light。
+
 NVBLAS：多GPU版的cuBLAS。
 
 cuFFT：FFT计算库。
@@ -24,8 +26,6 @@ cuRAND：随机数生成库。
 cuSPARSE；稀疏矩阵计算库。
 
 cuSOLVER：解线性方程的计算库。包括解稠密方程的cuSolverDN、解稀疏方程的cuSolverSP和矩阵分解的cuSolverRF。
-
-CUTLASS：另一个线性计算库。功能比cuBLAS更多。
 
 ## Deep Learning SDK
 
@@ -65,9 +65,34 @@ https://github.com/NVIDIA/dali
 
 Tensor Core是Nvidia GPU自Volta架构开始，专门为深度学习矩阵运算设计的计算单元。
 
-WMMA（warp matrix multiply-accumulate）
+CUTLASS：另一个线性计算库，专为Tensor Core设计。
+
+![](/images/img6/CUTLASS.png)
 
 类似的东西还有Arm的SME、Intel的AMX等。
+
+---
+
+![](/images/img6/CUTLASS_2.png)
+
+CUTLASS主要基于以下指令：
+
+- MMA（Matrix Multiply-Accumulate）
+- WMMA（Warp Matrix Multiply-Accumulate）
+- WGMMA（Warp Group Matrix Multiply-Accumulate）
+- TMA（Tensor Memory Accelerator）：用于在global memory和shared memory之间搬运数据。
+
+---
+
+CuTe就是CUDA Tensor。更准确地说，是nvidia在CUTLASS 3.0项目中开发并提供的一组C++ CUDA Template抽象工具，它主要用于定义和操作在CUDA中的有多维分层layout的线程和数据。
+
+https://dingfen.github.io/2024/08/18/2024-8-18-cute/
+
+深入CUTLASS之CuTe详解
+
+---
+
+参考：
 
 https://mp.weixin.qq.com/s/pPjPLqgXZ8iCPS42vXJpuQ
 
@@ -80,6 +105,10 @@ Tensor Core究竟有多快？全面对比英伟达Tesla V100/P100的RNN加速能
 https://www.zhihu.com/question/451127498
 
 英伟达GPU的tensor core和cuda core是什么区别？
+
+https://developer.nvidia.com/blog/cutlass-linear-algebra-cuda/
+
+CUTLASS: Fast Linear Algebra in CUDA C++
 
 ## PTX
 

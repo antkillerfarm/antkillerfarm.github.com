@@ -9,7 +9,27 @@ category: DL acceleration
 
 # LLM System
 
-## RAG（续）
+## RAG
+
+![](/images/img5/RAG.jpg)
+
+![](/images/img5/RAG.png)
+
+Retrieval Augmented Generation（检索增强生成）：通过检索获取相关的知识并将其融入Prompt，让大模型能够参考相应的知识从而给出合理回答。因此，可以将RAG的核心理解为“检索+生成”，前者主要是利用向量数据库的高效存储和检索能力，召回目标知识；后者则是利用大模型和Prompt工程，将召回的知识合理利用，生成目标答案。
+
+https://zhuanlan.zhihu.com/p/668082024
+
+一文搞懂大模型RAG应用
+
+https://blog.csdn.net/v_JULY_v/article/details/137711599
+
+RAG进阶之通用文档处理：从RAGFlow、TextMonkey到mPLUG-DocOwl 1.5
+
+https://zhuanlan.zhihu.com/p/695299235
+
+RAG路线图： Reliable, Adaptable, and Attributable Language Models with Retrieval
+
+---
 
 假设有一个10w的外部数据，我们的原始输入Prompt长度为100，长度限制为4k，通过查询-检索的方式，我们能将最有效的信息提取集中在这4k的长度中，与Prompt一起送给大模型，从而让大模型得到更多的信息。此外，还能通过多轮对话的方式不断提纯外部数据，达到在有限的输入长度限制下，传达更多的信息给大模型。
 
@@ -289,43 +309,3 @@ https://mp.weixin.qq.com/s/Ye2GVTFIrX3SbU1-4cDLoQ
 https://mp.weixin.qq.com/s/FIWfbCLgckVzeNvfThIl4Q
 
 阿里线下智能方案进化史
-
-https://mp.weixin.qq.com/s/pqxiF6yEZzrw8qXu2hEsaA
-
-单机训练速度提升640倍！独家解读快手商业广告模型GPU训练平台Persia
-
-https://mp.weixin.qq.com/s/Jcz4XWDjMmbhmAiI_zBQXQ
-
-流式计算优化：时效性
-
-https://zhuanlan.zhihu.com/p/33351291
-
-基于忆阻器（ReRAM），Computing-in-Memory的DLA
-
-https://mp.weixin.qq.com/s/UbZtUL6Iveb4S3nTU0liGw
-
-深度神经网络的分布式训练概述：常用方法和技巧全面总结
-
-https://mp.weixin.qq.com/s/kLXJsHbBnRIFC3NLChPhzA
-
-如何高效进行大规模分类？港中文联合商汤提出新方法
-
-https://www.zhihu.com/question/454589636
-
-为什么模型和数据都在gpu上，却打不满GPU的使用率？
-
-https://mp.weixin.qq.com/s/sn8fMAbJbeT6JUbCpBpN6A
-
-Jeff Dean与David Patterson：不思考体系结构的深度学习研究者不是好工程师
-
-https://mp.weixin.qq.com/s/6zLrWJ4nE0bHFlVe5dMxHw
-
-分布式深度学习新进展：让“分布式”和“深度学习”真正深度融合
-
-https://mp.weixin.qq.com/s/hjC-WTMIpbWWpmXoLBfD2g
-
-腾讯大规模分布式机器学习系统无量是如何进行技术选型的？
-
-https://mp.weixin.qq.com/s/mg-d1W5i9rzaLMNrvq0tSQ
-
-32分钟训练神经机器翻译，速度提升45倍
