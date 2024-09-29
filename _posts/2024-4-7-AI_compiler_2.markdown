@@ -147,6 +147,10 @@ https://superjomn.github.io/posts/triton-mlir-publish/
 
 OpenAI/Triton MLIR 迁移工作简介
 
+https://pytorch.org/blog/cuda-free-inference-for-llms/
+
+CUDA-Free Inference for LLMs
+
 ## NVFuser
 
 NVFuser是NV专门为Pytorch设计的自动化的GPU代码生成器。

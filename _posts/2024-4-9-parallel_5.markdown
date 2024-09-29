@@ -242,7 +242,7 @@ LLM Inference的性能评估主要有以下几个方面：
 - Time To First Token (TTFT)
 - Time Per Output Token (TPOT)
 - Latency：模型为用户生成完整响应所需的总时间。latency = (TTFT) + (TPOT) * (the number of tokens to be generated)
-- Throughput：一个推理服务器每秒可以为所有用户和请求生成的输出令牌数量。
+- Throughput：一个推理服务器每秒可以为所有用户和请求生成的输出token数量。
 
 https://www.databricks.com/blog/llm-inference-performance-engineering-best-practices
 

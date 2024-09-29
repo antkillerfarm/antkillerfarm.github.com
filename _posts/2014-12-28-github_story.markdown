@@ -169,64 +169,6 @@ http://cn.arxiv.org/
 
 最著名的论文网站arxiv.org的中国镜像网站。arxiv.org中的论文都有编号。比如1608.06993v4，1608表示这是2016年8月的文章，v4表示这是第4版。
 
-## Git LFS
-
-Git LFS（Large File Storage）是Github开发的一个Git的扩展，用于实现Git对大文件的支持。
-
-Git LFS可以把音乐、图片、视频等指定的任意文件存在Git仓库之外，而在Git仓库中用一个占用空间1KB不到的文本指针来代替文件的存在。
-
-通过把大文件存储在Git仓库之外，可以减小Git仓库本身的体积，使克隆Git仓库的速度加快，也使得Git不会因为仓库中充满大文件而损失性能。
-
-官网：
-
-https://git-lfs.github.com
-
-中文简介：
-
-https://gitee.com/help/articles/4235
-
-安装：
-
-```bash
-curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
-sudo apt install git-lfs
-git lfs install
-```
-
-没有带宽问题的话，可以直接`git lfs fetch --all`。但是考虑到国内的访问速度，最好还是指定单个文件，逐个下载比较好。
-
-白名单：
-
-`git config lfs.fetchinclude '<file path>'`
-
-黑名单：
-
-`git config lfs.fetchexclude '<file path>'`
-
-然后：
-
-`git lfs fetch --recent`
-
->gitee由于将LFS当作收费功能，竟然丧心病狂的将黑名单设为`*`，导致fetch不到任何东西。。。
-
-最后：
-
-`git lfs checkout`
-
-使用中遇到问题，可以查询设置：
-
-`git lfs env`
-
-列出repo里所有lfs文件：
-
-`git lfs ls-files`
-
-参考：
-
-https://mp.weixin.qq.com/s/yoSeUTy13LoKyS1UFKaUbA
-
-如何存储Git大文件？
-
 # Markdown
 
 自从我在github建立blog以来，一直都在使用markdown语言。这里仅针对我使用过程中遇到的问题做一个笔记。
