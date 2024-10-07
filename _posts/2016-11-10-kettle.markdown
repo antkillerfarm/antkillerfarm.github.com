@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Kettle, 任务调度工具, Solr
+title:  Kettle, Solr
 category: AI 
 ---
 
@@ -121,26 +121,6 @@ Hbase插件中比较费解的是Mapping name这个名词。
 参见：
 
 http://forums.pentaho.com/archive/index.php/t-94392
-
-# 任务调度工具
-
-## 定时任务
-
-最简单的任务调度莫过于定时任务。定时执行的任务可用crontab命令设置。
-
-参考：
-
-http://www.cnblogs.com/peida/archive/2013/01/08/2850483.html
-
-crontab命令
-
-## 调度工具
-
-一个完整的数据分析系统通常都是由大量任务单元组成：shell脚本程序，java程序，mapreduce程序、hive脚本等。各任务单元之间存在时间先后及前后依赖关系。为了很好地组织起这样的复杂执行计划，需要一个工作流调度系统来调度执行。
-
-常见的调度工具有：AirFlow，Oozie，Azkaban，Cascading，Hamake，DolphinScheduler等。
-
-这些工具的角色大致相当于Kettle中的Job。
 
 # Solr
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 天文（六）——火星探测, 阿波罗50年
+title: 天文（六）——火星探测
 category: Nature 
 ---
 
@@ -8,6 +8,26 @@ category: Nature
 {:toc}
 
 # 中国航天（续）
+
+因为梅里迪斯热推力效应，火箭在海平面静推力大于全部发动机海平面推力和。
+
+梅里迪斯效应效应冷却器通过绝热压缩增加截面积、定压加热缩小截面积、绝热膨胀增加截面积三个阶段对流经梅里迪斯效应冷却器的空气做功增加空气排气速度产生额外推力。
+
+早在20世纪20年代，美民间航空爱好者Eugene Michael Gluhareff制作了一种简易的三级燃烧室梅里迪斯效应效应小型无转子喷气发动机。
+
+https://www.zhihu.com/answer/3547416540
+
+梅里迪斯效应
+
+https://www.zhihu.com/question/52796057
+
+什么是梅里迪斯效应？
+
+---
+
+现在长征五号火箭里面用的我国第一款拥有自主知识产权的yf-100液氧煤油火箭发动机，是根据80年代末90年代初从前苏联引进的rd-120煤油火箭发动机上逆向研发改进而来。自己算一算花了多长时间才使用的？
+
+---
 
 ![](/images/img4/chang_e.png)
 
@@ -304,59 +324,3 @@ https://mp.weixin.qq.com/s/B5h5yZ9unpIAD8dR3KG1yw
 https://mp.weixin.qq.com/s/tqs5JtYBFedVofWlgbJ3kg
 
 “天问一号”即将失联？别担心，一切尽在掌控
-
-# 阿波罗50年
-
-https://mp.weixin.qq.com/s/79e6p2TYpttO-NR1of21jw
-
-月之梦的起源
-
-https://mp.weixin.qq.com/s/QtvKdwbuzUJICjdKbcPIlg
-
-登月究竟是真是假？
-
-https://view.inews.qq.com/a/TEC201907170006770C
-
-别误会，那个经典的月球脚印不是阿姆斯特朗的（巴兹·奥尔德林）
-
-https://mp.weixin.qq.com/s/OdMaaP_gE1rR_rd14LfA9w
-
-战争与登月的渊源
-
-https://mp.weixin.qq.com/s/YRJpHvlEulfBFm8HpBYBZQ
-
-苏联开启的登月序曲
-
-https://mp.weixin.qq.com/s/v3HNhV08vWYPGdeXAZ47ag
-
-月球来到你身边
-
-https://view.inews.qq.com/a/TEC2019072100124408
-
-一文俯瞰从阿波罗1号到17号全舰队
-
-![](/images/img3/Apollo11_AnnotatedHero.jpg)
-
-https://mp.weixin.qq.com/s/Y1hQJHFB5InSZNB2T2KfVw
-
-10万镜子反射月光，组成3.6平方公里巨幅头像，谷歌花式纪念登月50年
-
-https://mp.weixin.qq.com/s/d6nmsH10qchY1pP8CibiBA
-
-跌跌撞撞的美国
-
-https://mp.weixin.qq.com/s/-KHsG9lZknY952U_LTV7qg
-
-天气太热了，我们去太阳系度假吧
-
-https://mp.weixin.qq.com/s/EPMdW1qxQVl0MVUSjhWxyQ
-
-NASA传奇数学家去世，她曾笔算了登月轨道
-
-https://mp.weixin.qq.com/s/1Jm00gCel41frG43oT9yyA
-
-他是探月英雄，但没登上过月球（Michael Collins）
-
-https://www.zhihu.com/question/423138570
-
-火星车网速只有34Kb/s，当年老美怎么进行的登月直播呢？

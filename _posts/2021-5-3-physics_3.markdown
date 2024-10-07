@@ -51,15 +51,6 @@ https://space.bilibili.com/500730982/
 
 ---
 
-
-大约在公元前 600 年左右，来自米利都（Miletus）的古希腊哲学家泰勒斯（Thales，没错，就是那个用大金字塔影子的长度测算了塔高的泰勒斯）记录了一种被他称为 “Lodestone” 的矿石。在希腊时代，这种矿石主要分布在麦格尼西亚（Magnesia）。这个地名，日后成为了西方语言中“磁铁”（magnet）一词的词源。
-
-https://mp.weixin.qq.com/s/t_LW5fpxI4pnCMA3TrNBHQ
-
-新物理的魅影？
-
----
-
 光速不变的历史要点：
 
 1.莫雷-迈克尔孙干涉实验表明光速不变。
@@ -113,6 +104,37 @@ https://zhuanlan.zhihu.com/p/29377221
 https://www.zhihu.com/answer/1742334537
 
 人造钻石和天然钻石几乎没有差别，可以量产，为何钻石价格没有降？
+
+---
+
+conservation of étendue（埃蒂杜定律）：
+
+$$A_{in}\Omega_{in}=A_{out}\Omega_{out}​$$
+
+其中：
+
+- $$A_{in}​$$是输入区域面积。
+- $$\Omega_{in}$$是输入角度。
+- $$A_{out}​$$​是输出区域面积。
+- $$\Omega_{out}$$是输出角度。
+
+热力学第二定律：不能将能量从一个较冷的源传递到一个较热的目标而不做功。
+
+光通过透镜也好，镜子也好，这些都是不做功的。根据热力学第二定律，不能利用镜子或者透镜让被照射物体的温度高于光源本身。
+
+根本不需要思考来源、途径、组成等等，思考光色就行，反正只要是包含了可见光，那它追根到底的来源就一定够热。
+
+黑体辐射温度与黑体的峰值辐射波长是对应的。
+
+![](/images/img6/light.jpg)
+
+https://www.zhihu.com/question/655968995
+
+用放大镜可以利用月光来点燃一张纸吗？
+
+---
+
+阿贝（Ernst Abbe）是光学领域尤其是光学显微领域的奠基人和集大成者之一。数值孔径、衍射极限的概念都是他提出的。当显微镜涉及的NA越来越大，我们发现近轴光学不再适用。他提出的阿贝正弦条件（Abbe Sine Condition ）则揭示了成像系统，尤其是离轴大角度系统的一般规律。
 
 ---
 
@@ -211,19 +233,3 @@ https://mp.weixin.qq.com/s/NE20FomTJCFd_HSfXTHyjg
 https://mp.weixin.qq.com/s/Rd-rOSV14sNYg0ZXsPdzuQ
 
 60年前构想的未来世界，我们已经实现了50%（《小灵通漫游未来》）
-
-https://mp.weixin.qq.com/s/wkc7TRfyEzm2dyT0ZzAydw
-
-百年难题：冰为什么这么滑？
-
-https://mp.weixin.qq.com/s/DyZbm_thoVZOwt-enssJyA
-
-出圈的相对论，你真的能理解吗？
-
-https://mp.weixin.qq.com/s/CM97zGUG1aUNCoQYTFWk3w
-
-秒
-
-https://mp.weixin.qq.com/s/t4xwQUoQ8FAWetvft7RnqQ
-
-首次在室温条件下，制造出自然界中最坚硬的物质（蓝丝黛尔石）
