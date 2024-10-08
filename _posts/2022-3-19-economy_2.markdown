@@ -11,6 +11,32 @@ category: money
 
 ## 做空（续）
 
+1、游戏驿站股价暴涨的原因是这只股票被机构做空了140％，凭什么可以多40％？要不是华尔街机构天天利用散户不能用的工具，怎么可能多40％而被散户抓到空子？
+
+2、论坛上的研究水平，很多都和对冲基金的研究水平相当，凭什么散户不能根据这些研究来买卖？
+
+3、华尔街上的量化基金，根本就不看基本面来买卖，凭什么他们不看基本面就可以不受到指责，而散户不看基本面就要被指责？
+
+4、从特斯拉股价的历史来看，所有的对冲基金都错，所有的散户都对，凭什么对冲基金就一定要比散户对？
+
+5、对冲基金只开放给大户投资而不开放给散户，现在散户赚钱了就不满了要限制散户，凭什么？
+
+6、如果说市场有问题，那也应该在事前完善市场规则，而不是在事后指责市场参与者。
+
+![](/images/img4/GME.png)
+
+![](/images/img4/GME_2.png)
+
+https://www.zhihu.com/answer/1703798744
+
+如何看待美国散户打爆华尔街大空头后被围攻，群聊被封，交易受限，媒体抨击，监管关注？
+
+https://mp.weixin.qq.com/s/RG5SwHBnPSBxYdbWNQgcTw
+
+99%的反抗-聊聊“占领国会山”与“美国散户造反”
+
+---
+
 不管股价是多少，那些做空的基金需要去市场上购买10.4%的股票来还给券商，而市场上只有5.8%的股票。你猜会发生什么？
 
 https://zhuanlan.zhihu.com/p/145059853
@@ -119,70 +145,6 @@ https://finance.sina.com.cn/tech/2021-09-22/doc-iktzqtyt7335408.shtml
 https://zhuanlan.zhihu.com/p/260365163
 
 大闸蟹的水有多深？一只蟹都没养，拿几张纸就能骗钱
-
----
-
-![](/images/img4/trap.jpg)
-
-2020年世界上人口超过2000万的国家中人均GNP的分布情况。
-
-人均GNP在1.25-3万美元的区域，就是所谓的“沙漠地带”——中等收入陷阱。
-
-如果你以为，这就是2020年所特有的现象，那就又错了：
-
-1980年，4000-1万美元是沙漠地带；
-
-1990年，8000-1.6万美元是沙漠地带；
-
-2000年，8000-2万美元是沙漠地带；
-
-2010年，1.5万-3万美元是沙漠地带。
-
----
-
-以香港为界，“南”代表港股，“北”代表A股。
-
-北上资金是指进入A股的香港资本和国际资本。南下资金是指进入港股的中国内地资本。
-
-由于陆港通对内地的个人投资者参与港股通设置了资产限制，所以普通股民对南下资金不怎么关注，对北上资金的动向关注较多。
-
-https://xueqiu.com/8082119199/112705955
-
-南下资金、北上资金，傻傻分不清楚？
-
----
-
-EXW：EX works
-
-FCA：Free Carrier
-
-FAS：Free Alongside Ship
-
-FOB：Free on Board
-
-CFR：Cost and Freight
-
-CIF：Cost Insurance and Freight
-
-CPT：carriage paid to
-
-CIP：carriage and insurance paid to
-
-DAF：Delivered At Frontier
-
-DES：Delivered ex ship
-
-DEQ：Delivered EX Quay
-
-DDU：delivered duty unpaid
-
-DDP：Delivered duty paid
-
-![](/images/img5/Intercoms-defined-by-Cosmo-Sourcing.png)
-
-https://www.weibo.com/ttarticle/p/show?id=2309404623762896322891
-
-终于有人把FOB/CIF/DDP等13种贸易术语讲清楚了
 
 ---
 

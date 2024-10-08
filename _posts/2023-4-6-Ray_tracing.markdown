@@ -149,6 +149,10 @@ https://zhuanlan.zhihu.com/p/544879511
 
 GPU底层机制分析：显存分配开销
 
+https://zhuanlan.zhihu.com/p/689964338
+
+世界上最伟大的shader
+
 # 数字成像
 
 https://mp.weixin.qq.com/s/cxsdBLnguAFJcFP65_cC0A

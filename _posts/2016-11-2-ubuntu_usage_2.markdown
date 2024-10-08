@@ -334,6 +334,10 @@ Ubuntu Make前身是Ubuntu Developer Tools Center。可在Ubuntu平台上快速�
 
 putty在ubuntu平台的复制粘贴，依赖于鼠标中键。
 
+# LibreOffice
+
+固定某几行或列，在滚动拖动时固定不动的操作，叫做冻结窗体。
+
 # 思维导图
 
 ## XMind
