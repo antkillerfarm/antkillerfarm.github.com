@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Machine Learning之Java篇, 稀疏矩阵的存储, Optimizer软件, 运算加速库
+title:  Machine Learning之Java篇, 稀疏矩阵的存储, Optimizer软件, 运算加速库, 任务调度工具
 category: AI 
 ---
 
@@ -371,6 +371,26 @@ HSL是最古老的数学计算库，始于1963年。
 https://www.hsl.rl.ac.uk/catalogue/index.html
 
 由于历史悠久，该项目基本是用fortran编写的。
+
+# 任务调度工具
+
+## 定时任务
+
+最简单的任务调度莫过于定时任务。定时执行的任务可用crontab命令设置。
+
+参考：
+
+http://www.cnblogs.com/peida/archive/2013/01/08/2850483.html
+
+crontab命令
+
+## 调度工具
+
+一个完整的数据分析系统通常都是由大量任务单元组成：shell脚本程序，java程序，mapreduce程序、hive脚本等。各任务单元之间存在时间先后及前后依赖关系。为了很好地组织起这样的复杂执行计划，需要一个工作流调度系统来调度执行。
+
+常见的调度工具有：AirFlow，Oozie，Azkaban，Cascading，Hamake，DolphinScheduler等。
+
+这些工具的角色大致相当于Kettle中的Job。
 
 # 朝鲜+
 

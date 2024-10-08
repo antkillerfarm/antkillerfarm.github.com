@@ -67,6 +67,22 @@ WebAssembly，简称Wasm，是一种能在浏览器上执行的二进制虚拟�
 
 https://webassembly.org/
 
+---
+
+WebAssembly的两个前身，Google的pNaCL和Mozilla的asm.js。
+
+NaCl（Native Client），是Google于2011年为Chrome浏览器发明的一种沙盒环境，可以让浏览器运行大型程序。
+
+NaCl实际上是经过验证的x86机器码，并不是跨架构的技术，Google因此推出了pNaCL，portable NaCL，转而使用LLVM IR作为分发格式，浏览器拿到IR之后负责编译到机器码，这样就跨架构了。
+
+Mozilla的asm.js则是试图将C/C++直接编译到一种特殊语法的Javascript，直接在浏览器上运行，如果可以识别这种特殊语法，就使用单独的JIT编译管线。在WASI之前，WebAssembly长期主流的工具链是原本给asm.js开发的Emscripten。
+
+https://www.zhihu.com/question/392809314
+
+为什么创造WASM，而不用现成的JVM？
+
+---
+
 参考：
 
 https://www.ibm.com/developerworks/cn/web/wa-lo-webassembly-status-and-reality/index.html
@@ -217,6 +233,12 @@ https://zhuanlan.zhihu.com/p/394363004
 
 # Javascript参考资源
 
+https://www.zhihu.com/question/53686737
+
+如何看待哔哩哔哩的flv.js作者月薪不到5000元？
+
+---
+
 https://mp.weixin.qq.com/s/OlnIqu5JvO2WjIA5re9KIg
 
 JavaScript引擎深入剖析(一)：JSValue的内部实现
@@ -312,35 +334,3 @@ https://www.jianshu.com/p/c8b86b09daf0
 https://mp.weixin.qq.com/s/vEbTP1SDP3GW20XAP825jw
 
 一种字体，变成千姿百态艺术字，可尖可圆可开花，隔壁设计师馋哭了
-
-https://mp.weixin.qq.com/s/0pI0F6c-BSLiGdLetQ5qNQ
-
-彻底弄懂浏览器缓存策略
-
-https://mp.weixin.qq.com/s/fEAfuVzfOwKjnTB-mdS5UA
-
-用JS写一个同Excel表现的智能填充算法
-
-https://mp.weixin.qq.com/s/D-XvKCSUCzMGcEz_xWTwqg
-
-现代CSS进化史
-
-https://mp.weixin.qq.com/s/IIWgNvqp0jxcD-J_CikV8w
-
-代码变油画，精细到毛发，这个前端小姐姐只用HTML+CSS，让美术设计也惊叹
-
-https://www.cnblogs.com/zzd0916/p/11977995.html
-
-浏览器工作原理与实践
-
-https://mp.weixin.qq.com/s/MwWC0doO_sp_eRkInbE0hw
-
-今天网站都变成灰色了，这其中是怎么实现的？
-
-https://mp.weixin.qq.com/s/VTULhAjEUNfAph-xkkUTsg
-
-手写一个解析器
-
-https://mp.weixin.qq.com/s/3sYrI9kxgAYLiNT-xavRLw
-
-“秒开”浏览器实现起来有多难？

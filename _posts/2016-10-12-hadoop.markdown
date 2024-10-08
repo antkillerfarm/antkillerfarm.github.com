@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Hadoop, Pulsar
+title:  Hadoop
 category: AI 
 ---
 
@@ -252,6 +252,10 @@ https://www.zhihu.com/question/27974418
 
 ## 参考
 
+hadoop那个年代，网络和io设备性能很差，分布式系统的架构比具体用什么语言实现更重要，用Java实现hadoop也可以理解。现在这些硬件都大幅更新了，瓶颈会逐步转移到内存和计算，cpp会重新占领基础设施。
+
+---
+
 https://mp.weixin.qq.com/s/Koz2xOnmVgKFeCr2Xqe9VQ
 
 YARN，母系社会的运行架构
@@ -283,37 +287,3 @@ https://mp.weixin.qq.com/s/_AumiAx9wbpOZCGMdf0Arw
 https://www.zhihu.com/question/303101438
 
 mapreduce为什么被淘汰了？
-
-# Pulsar
-
-https://mp.weixin.qq.com/s/O8pj4pChyw8PK-G_4A3DWg
-
-发布订阅消息系统Apache Pulsar简介
-
-https://mp.weixin.qq.com/s/ToJJTBWJXlpj3LkDj5YYvw
-
-为什么要选择Apache Pulsar
-
-https://mp.weixin.qq.com/s/B9zo0zThARAi11hRuJ-AqA
-
-开源实时数据处理系统Pulsar：一套搞定Kafka+Flink+DB
-
-https://mp.weixin.qq.com/s/v4A--nGiDTt58pZyIzepeg
-
-比拼Kafka，大数据分析新秀Pulsar到底好在哪
-
-https://mp.weixin.qq.com/s/x4GW5zvjD5Fyc-NrXDqpmA
-
-Kafka不够好，智联招聘基于Pulsar打造企业级事件中心
-
-https://mp.weixin.qq.com/s/sWrUlwEe4CBPQklzFWNE3A
-
-选择Pulsar而不是Kafka的7大理由
-
-https://mp.weixin.qq.com/s/L84Ll2PlJLHhQYo134bcFQ
-
-如何基于Apache Pulsar和Spark进行批流一体的弹性数据处理？
-
-https://mp.weixin.qq.com/s/zqvKzJkP5LtDriuRXojn7Q
-
-我们为什么从Kafka迁移至Pulsar？

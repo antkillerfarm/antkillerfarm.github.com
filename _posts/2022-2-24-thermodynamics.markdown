@@ -190,3 +190,11 @@ https://mp.weixin.qq.com/s/CnAgNBFpiTXukR7daDugkw
 https://mp.weixin.qq.com/s/Y6zjFQBche_tyOWF9VMtmg
 
 没有空调的夏天，古人到底要怎么熬呀！
+
+# 物理+
+
+大约在公元前600年左右，来自米利都（Miletus）的古希腊哲学家泰勒斯（Thales，没错，就是那个用大金字塔影子的长度测算了塔高的泰勒斯）记录了一种被他称为“Lodestone”的矿石。在希腊时代，这种矿石主要分布在麦格尼西亚（Magnesia）。这个地名，日后成为了西方语言中“磁铁”（magnet）一词的词源。
+
+https://mp.weixin.qq.com/s/t_LW5fpxI4pnCMA3TrNBHQ
+
+新物理的魅影？
