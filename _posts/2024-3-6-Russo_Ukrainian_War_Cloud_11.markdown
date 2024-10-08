@@ -129,18 +129,6 @@ https://zhuanlan.zhihu.com/p/342844011
 
 ---
 
-2024年9月，乌克兰军事反情报安全局在敖德萨消灭了一群格鲁乌特工。
-
-敌方特工本应在战争的头几天，组织强行夺取敖德萨的行政大楼，为此他们被许诺在占领当局中任职。
-
-在俄罗斯人意识到不可能占领敖德萨后，特工小组进入了休眠模式。
-
----
-
-中东最大的航空航天展览会----“2023年迪拜航展“汇集了全球领先的民用和军用飞机制造商。在欧美订单纷至沓来时，俄罗斯的国防出口公司却以惨败告终。俄罗斯生意人报报道称，11月13日至17日在迪拜举行的这次航空展会，作为俄罗斯武器出口供应垄断者的Rostec控股公司，没有与合作伙伴签署哪怕一份合同。
-
----
-
 https://mp.weixin.qq.com/s/u7C1THhjnWLRLR4z7casbQ
 
 在乌克兰，日常生活与国家的分裂
@@ -188,3 +176,23 @@ https://news.ifeng.com/c/8Emu7czkfWy
 https://news.ifeng.com/c/8ErWfeGuVev
 
 将军阵亡率15%？俄军在乌克兰遭遇了什么
+
+https://news.ifeng.com/c/8F4v75koosu
+
+4月顿巴斯分胜负决生死，重演二战战役
+
+https://news.ifeng.com/c/8FB20CHoBDN
+
+统帅部最高机密——普京为何做出错误决断
+
+https://news.ifeng.com/c/8FEyCcwsVG6
+
+两只“大老虎”，坏了普京的大事
+
+https://news.ifeng.com/c/8FMpNxpSHjc
+
+二战时苏军两度折戟之地，俄乌或将在此决胜负
+
+https://news.ifeng.com/c/8Fsc6DZP5g5
+
+俄罗斯乌克兰的大决战终于打响了

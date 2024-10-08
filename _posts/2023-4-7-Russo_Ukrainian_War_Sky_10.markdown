@@ -133,6 +133,8 @@ https://zhuanlan.zhihu.com/p/598593328
 
 ---
 
+2022.5.16–2024.10.1 Vuhledar战役。
+
 ![](/images/img5/Vuhledar.jpg)
 
 进攻Vuhledar的俄军损失30多辆装甲车，外加阵亡400多俄兵。
@@ -166,6 +168,10 @@ https://zhuanlan.zhihu.com/p/606514371
 https://zhuanlan.zhihu.com/p/611185265
 
 血与钢铁——乌克兰是如何打赢佛勒达装甲战的
+
+https://zhuanlan.zhihu.com/p/793325995
+
+Vuhledar入土为安
 
 ---
 

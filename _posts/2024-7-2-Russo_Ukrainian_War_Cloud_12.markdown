@@ -9,26 +9,6 @@ category: Russo Ukrainian War Cloud
 
 # 俄乌战争
 
-https://news.ifeng.com/c/8F4v75koosu
-
-4月顿巴斯分胜负决生死，重演二战战役
-
-https://news.ifeng.com/c/8FB20CHoBDN
-
-统帅部最高机密——普京为何做出错误决断
-
-https://news.ifeng.com/c/8FEyCcwsVG6
-
-两只“大老虎”，坏了普京的大事
-
-https://news.ifeng.com/c/8FMpNxpSHjc
-
-二战时苏军两度折戟之地，俄乌或将在此决胜负
-
-https://news.ifeng.com/c/8Fsc6DZP5g5
-
-俄罗斯乌克兰的大决战终于打响了
-
 https://news.ifeng.com/c/8G653CGmggn
 
 双线在决战，这两点决定俄乌战场输赢
@@ -408,3 +388,7 @@ https://zhuanlan.zhihu.com/p/718568803
 https://zhuanlan.zhihu.com/p/721478210
 
 长见识之南线反攻的信息补充
+
+https://zhuanlan.zhihu.com/p/718966456
+
+俄罗斯空天军为何在乌克兰的表现远低于战前预期

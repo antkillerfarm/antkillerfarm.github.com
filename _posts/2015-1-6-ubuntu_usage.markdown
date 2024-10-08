@@ -239,7 +239,7 @@ apt是一套完整的软件包管理方案。除了最常用apt-get之外，还�
 
 大版本升级：
 
-`sudo apt do-release-upgrade`
+`sudo do-release-upgrade`
 
 ## apt vs. apt-get
 
