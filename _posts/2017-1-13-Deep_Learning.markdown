@@ -102,6 +102,8 @@ Deep Learning圈子的主要人物：
 
 >2019.3.27 三巨头被共同授予2018年度图灵奖。
 
+>2024.10.8 Hinton被授予诺贝尔物理学奖。
+
 ![](/images/article/author_network.png)
 
 上图是一个更大的DL牛人关系图。
@@ -239,19 +241,3 @@ BP算法的核心思路：
 3.将残差梯度传递回第$$n-1,n-2,\dots,2$$层，并修正各层参数。（即所谓的误差逆传播）
 
 BP算法的推导过程教材已经写的很好了，这里只对要点做一个摘录。
-
-## 链式法则
-
-Chain Rules本来是微积分中，用于求一个复合函数导数的常用法则。这里用来进行残差梯度的逆传播。
-
-由《机器学习（一）》的公式3可得：
-
-$$\Delta w_{hj}=-\eta\frac{\partial E_k}{\partial w_{hj}}$$
-
-$$w_{hj}$$先影响$$\beta_j$$，再影响$$\hat y_j^k$$，然后影响误差$$E_k$$，因此有：
-
-$$\frac{\partial E_k}{\partial w_{hj}}=\frac{\partial E_k}{\partial \hat y_j^k}\cdot \frac{\partial \hat y_j^k}{\partial \beta_j}\cdot \frac{\partial \beta_j}{\partial w_{hj}}\tag{1}$$
-
-![](/images/article/chain_rule.png)
-
-![](/images/img4/chain_rule.png)

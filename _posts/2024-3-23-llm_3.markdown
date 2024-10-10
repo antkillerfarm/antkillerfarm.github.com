@@ -181,6 +181,18 @@ https://zhuanlan.zhihu.com/p/667489780
 
 解析大模型中的Scaling Law
 
+---
+
+当batch size较小时，更新方向（即对真实梯度的近似）会具有很高的方差，导致的梯度更新主要是噪声。
+
+当batch size非常大时，我们从训练数据中抽样的任何两组数据都会非常相似（因为它们几乎完全匹配真实梯度）。
+
+所以就有了Gradient Noise Scale Law。
+
+https://zhuanlan.zhihu.com/p/666997679
+
+大Batch训练LLM探索
+
 # VLM
 
 https://zhuanlan.zhihu.com/p/702811733

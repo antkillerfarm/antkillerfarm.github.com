@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（七）——LSTM, 神经元激活函数进阶
+title:  深度学习（七）——RNN, LSTM
 category: DL 
 ---
 
@@ -9,7 +9,70 @@ category: DL
 
 # RNN
 
-## RNN的历史（续）
+## RNN的基本结构
+
+RNN是Recurrent Neural Network和Recursive Neural Network的简称。前者主要用于处理和时序相关的输入，而后者目前已经没落。本文只讨论前者。
+
+![](/images/article/RNN.png)
+
+上图是RNN的结构图。其中，展开箭头左边是RNN的静态结构图。不同于之前的神经网络表示，这里的圆形不是单个神经元，而是一层神经元。权值也不是单个权值，而是权值向量。
+
+从静态结构图可以看出RNN实际上和3层MLP的结构，是基本类似的。差别在于RNN的隐藏层多了一个指向自己的环状结构。
+
+上图的展开箭头右边是RNN的时序展开结构图。从纵向来看，它只是一个3层的浅层神经网络，然而从横向来看，它却是一个深层的神经网络。可见神经网络深浅与否，不仅和模型本身的层数有关，也与神经元之间的连接方式密切相关。
+
+虽然理论上，我们可以给每一时刻赋予不同的$$U,V,W$$，然而出于简化计算和稀疏度的考量，RNN所有时刻的$$U,V,W$$都是相同的。
+
+RNN的误差反向传播算法，被称作**Backpropagation Through Time（BPTT）**。其主要公式如下：
+
+$$
+\begin{array}\\
+\nabla U=\frac{\partial E}{\partial U}=\sum_t\frac{\partial e_t}{\partial U} \\
+\nabla V=\frac{\partial E}{\partial V}=\sum_t\frac{\partial e_t}{\partial V} \\
+\nabla W=\frac{\partial E}{\partial W}=\sum_t\frac{\partial e_t}{\partial W}
+\end{array}
+$$
+
+从上式可以看出，三个误差梯度实际上都是**时域的积分**。
+
+正因为RNN的状态和过去、现在都有关系，因此，RNN也被看作是一种拥有“记忆性”的神经网络。
+
+## RNN的训练困难
+
+理论上，RNN可以支持无限长的时间序列，然而实际情况却没这么简单。
+
+Yoshua Bengio在论文《On the difficulty of training recurrent neural networks》（http://proceedings.mlr.press/v28/pascanu13.pdf）中，给出了如下公式：
+
+$$\left\|\prod_{k<i\le t} \frac{\partial h_{i}}{\partial h_{i-1}}\right\| \le \eta^{t-k}$$
+
+并指出当$$\eta < 1$$时，RNN会Gradient Vanish，而当$$\eta > 1$$时，RNN会Gradient Explode。
+
+这里显然不考虑$$\eta > 1$$的情况，因为Gradient Explode，直接会导致训练无法收敛，从而没有实用价值。
+
+因此有实用价值的，只剩下$$\eta < 1$$了，但是Gradient Vanish又注定了RNN所谓的“记忆性”维持不了多久，一般也就5～7层左右。
+
+上述内容只是一般性的讨论，实际训练还是有很多trick的。
+
+比如，针对$$\eta > 1$$的情况，可以采用Gradient Clipping技术，通过设置梯度的上限，来避免Gradient Explode。
+
+还可使用正交初始化技术，在训练之初就将$$\eta$$调整到1附近。
+
+## RNN的历史
+
+上面研究的RNN结构，又被称为Elman RNN。最早是Jeffrey Elman于1990年发明的。
+
+$$\begin{align}
+h_t &= \sigma_h(W_{h} x_t + U_{h} h_{t-1} + b_h) \\
+y_t &= \sigma_y(W_{y} h_t + b_y)
+\end{align}$$
+
+论文：
+
+《Finding Structure in Time》
+
+>Jeffrey Locke Elman，1948年生，Harvard College本科（1969年）+University of Texas博士（1977年）。University of California, San Diego教授，American Academy of Arts and Sciences院士（2015年）。 美国心理学会会员。  
+>个人主页：   
+>https://tatar.ucsd.edu/jeffelman/
 
 >Harvard College是Harvard University最古老的本部，目前一般提供本科教育。它和其他许多研究生院以及相关部门，共同组成了Harvard University。类似的还有Yale College和Yale University。
 
@@ -221,85 +284,3 @@ LSTM、GRU与神经图灵机：详解深度学习最热门的循环神经网络
 https://mp.weixin.qq.com/s/0bBTVjkfAK2EzQiaFcUjBA
 
 LSTM入门必读：从基础知识到工作方式详解
-
-https://mp.weixin.qq.com/s/jcS4IX7LKCt1E2FVzLWzDw
-
-LSTM入门详解
-
-https://mp.weixin.qq.com/s/MQR7c57NL4b5i4MRA2JgWA
-
-用Python实现CNN长短期记忆网络！
-
-http://mp.weixin.qq.com/s/V2-grLPdZ66FOiC2duc-EA
-
-如何判断LSTM模型中的过拟合与欠拟合
-
-http://blog.csdn.net/malefactor/article/details/51183989
-
-深度学习计算模型中“门函数（Gating Function）”的作用
-
-https://mp.weixin.qq.com/s/ORLpqqV8pOv-pIagi8yS1A
-
-在调用API之前，你需要理解的LSTM工作原理
-
-https://mp.weixin.qq.com/s/BzlFbweHEJ3z7dSIGmd-QA
-
-深度学习基础之LSTM
-
-https://mp.weixin.qq.com/s/lbHTDdzPbYn2Ln4aihGujQ
-
-人人都能看懂的LSTM
-
-https://mp.weixin.qq.com/s/LI6TsPjzIaa8DxDu3UaV1A
-
-门控循环单元（GRU）的基本概念与原理
-
-https://mp.weixin.qq.com/s/LcdmXgAFpiIoHMIIXECC9g
-
-人人都能看懂的GRU
-
-https://mp.weixin.qq.com/s/m_cOjUHwvW496Gv9_aYgpA
-
-LSTM和循环神经网络基础教程
-
-https://blog.csdn.net/taoqick/article/details/79475350
-
-学会区分RNN的output和state
-
-# 神经元激活函数进阶
-
-在《深度学习（二）》中，我们探讨了ReLU相对于sigmoid函数的改进，以及一些保证深度神经网络能够训练的措施。然而即便如此，深度神经网络的训练仍然是一件非常困难的事情，还需要更多的技巧和方法。
-
-![](/images/img4/activation.png)
-
-## 激活函数的作用
-
-神经网络中激活函数的主要作用是提供网络的**非线性建模能力**，如不特别说明，激活函数一般而言是非线性函数。
-
-假设一个神经网络中仅包含线性卷积和全连接运算，那么该网络仅能够表达线性映射，即便增加网络的深度也依旧还是线性映射，难以有效建模实际环境中非线性分布的数据。
-
-加入非线性激活函数之后，深度神经网络才具备了分层的非线性映射学习能力。因此，激活函数是深度神经网络中不可或缺的部分。
-
->注意：其实也有采用线性激活函数的神经网络，亦被称为linear neurons。但是这些神经网络，基本只有学术价值而无实际意义。
-
-理论上来说，只要是非线性函数，都有做激活函数的可能性。然而不同的激活函数其训练成本是不同的。
-
-虽然OpenAI的探索表明，连浮点误差都可以做激活函数，但是由于这个操作的不可微分性，因此他们使用了“进化策略”来训练模型，所谓“进化策略”，是诸如遗传算法之类的耗时耗力的算法。
-
-参考：
-
-https://mp.weixin.qq.com/s/d9XmDCahK6UBlYWhI0D5jQ
-
-深度线性神经网络也能做非线性计算，OpenAI使用进化策略新发现
-
-https://mp.weixin.qq.com/s/PNe2aKVMYjV_Nd7qZwGuOw
-
-理解激活函数作用，看这篇文章就够了！
-
-## ReLU的缺点
-
-深度神经网络的训练问题，最早是2006年Hinton使用**分层无监督预训练**的方法解决的，然而该方法使用起来很不方便。
-
-而深度网络的**直接监督式训练**的最终突破，最主要的原因是采用了新型激活函数ReLU。
-
-但是ReLU并不完美。它在x<0时硬饱和，而当x>0时，导数为1。所以，ReLU能够在x>0时保持梯度不衰减，从而缓解梯度消失问题。但随着训练的推进，部分输入会落入硬饱和区，导致对应权重无法更新。这种现象被称为**神经元死亡**。

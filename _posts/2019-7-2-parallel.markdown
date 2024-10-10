@@ -9,7 +9,9 @@ category: DL acceleration
 
 # 概述
 
-## 数据并行 & 模型并行（续）
+## 数据并行 & 模型并行
+
+当数据量很大时，单个节点需要很长时间才能完成1轮训练，这对于动辄十几轮或几十轮的训练来说是不可忍受的，所以可以将数据进行划分并分配给多个节点，每个节点处理自己的一小部分数据，从而加快整体的训练速度。在TensorFlow中**数据并行**也被称为图间复制(Between-graph Replication)。
 
 模型并行是指将模型切分为多个部分并将各个部分放置到不同的节点进行训练的分布式模式。因为当模型很复杂，参数很多时，由于内存的限制，单个节点无法将整个模型加载并进行训练，所以需要将模型切割为更小的部分，并将各个部分运行在不同的节点上以完成训练。在TensorFlow中**模型并行**也被称为图内复制 (In-graph Replication)。
 
@@ -26,6 +28,10 @@ category: DL acceleration
 切分Layer：pipeline并行
 
 切分其他维度：模型并行
+
+---
+
+多GPU的数据并行和单GPU不完全等价，主要是batch norm不等价。每张卡单独计算均值和分差，和单卡算出来的不一样。必须进行相应的同步操作，才能得到等价的结果。
 
 ## Distributed Data Parallel
 
@@ -48,7 +54,6 @@ DDP系列第二篇：实现原理与源代码解析
 https://zhuanlan.zhihu.com/p/250471767
 
 DDP系列第三篇：实战与技巧
-
 
 # Parameter Server
 
@@ -229,21 +234,3 @@ AllReduce有多种具体的实现方式。
 - Ring AllReduce：
 
 ![](/images/img4/Ring_AllReduce.jpg)
-
-- Having-Doubling AllReduce：
-
-![](/images/img4/Having-Doubling_AllReduce.jpg)
-
-该算法每次选择节点距离倍增的节点相互通信，每次通信量倍减（或倍增）。
-
-该算法的优点是通信步骤较少，只有$$2 * log_2N$$次（其中N表示参与通信的节点数）通信即可完成，所以其有更低的延迟。相比之下Ring算法的通信步骤是$$2 ∗ (N−1)$$次；缺点是每一个步骤相互通信的节点均不相同，链接来回切换会带来额外开销。
-
-- Recursive Doubling算法
-
-- Rabenseifner算法
-
-- Binary blocks算法
-
-ring all-reduce具有理论上最优的传输带宽，而没有考虑每次传输都包含的延迟（latency）。当数据量V比较大时，延迟项可以忽略。当V特别小，或者设备数p特别大时，带宽就变得不重要了，反而是延迟比较关键。
-
-这也是为什么英伟达NCCL里既实现了ring all-reduce，也实现了double-tree all-reduce算法。

@@ -1,13 +1,69 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（五）——Context Parallel, LoRA, FSDP, Megatron-LM, KV Cache
+title:  并行 & 框架 & 优化（五）——Sequence Parallel, Context Parallel, LoRA, FSDP, Megatron-LM
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# Sequence Parallel（续）
+# DeepSpeed（续）
+
+https://mp.weixin.qq.com/s/Vb3AkoWHQY7WWBMZaVnf4g
+
+微软发布DeepSpeed开源库，支持1000亿个参数模型的训练
+
+https://zhuanlan.zhihu.com/p/621379646
+
+人手一个ChatGPT！微软DeepSpeed Chat震撼发布，一键RLHF训练千亿级大模型
+
+https://zhuanlan.zhihu.com/p/513571706
+
+DeepSpeed之ZeRO系列：将显存优化进行到底
+
+https://zhuanlan.zhihu.com/p/630734624
+
+deepspeed入门教程
+
+https://zhuanlan.zhihu.com/p/576673548
+
+深度学习大模型训练--DeepSpeed源码解读
+
+https://zhuanlan.zhihu.com/p/626420999
+
+deepspeed chat代码解读
+
+## GSPMD
+
+GSPMD是在GShard基础上发展而来的并行算法。
+
+《GSPMD:General and Scalable Parallelization for ML Computation Graphs》
+
+# Sequence Parallel
+
+![](/images/img5/TP_SP.png)
+
+MegatronLM提出的Sequence Parallel算法，由于TP和SP交替进行，又被称为TP-SP算法。
+
+对于Attention+MLP采用TP，对于其他部分采用SP。
+
+推理阶段由于weight固定，所以每次生成token的时候，之前的计算大部分可以复用，只需要计算新token引入的那部分计算即可。
+
+然而训练阶段，由于weight可变，即使是input+已生成token不变，也需要重新参与前后向计算。这时就需要SP了。
+
+https://blog.csdn.net/qinduohao333/article/details/131629428
+
+详解MegatronLM序列模型并行训练(Sequence Parallel)
+
+---
+
+通用性较强的Ulysses，在小规模或长序列上表现更好。
+
+《DeepSpeed Ulysses: System Optimizations for Enabling Training of Extreme Long Sequence Transformer Models》
+
+![](/images/img5/DS-Ulysses.png)
+
+图中N表示序列长度，d表示`hidden_size=(hc * hs)，hc = head_cnt，hs=head_size`，P表示GPU数目（图中 P=4）。红色虚线表示通信，黑色虚线表示计算。
 
 DS-Ulysses 对Q、K、V沿着N维度切分成P份，三个分布式矩阵通过All2All变成沿d维度切分了。All2All等价于一个分布式转置操作。之后就是正常的$$softmax(QK^T)V$$计算，可以用 FlashAttention加速，得到结果再通过All2All转置回来。
 
@@ -234,73 +290,3 @@ https://blog.csdn.net/v_JULY_v/article/details/132462452
 https://mp.weixin.qq.com/s/bvF50XRaA9cO2O4oB31kbg
 
 大语言模型分布式训练的量化分析与最佳实践,以GPT-175B为例
-
-# KV Cache
-
-![](/images/img5/KV_Cache.png)
-
-对于每个输入的prompt，在计算第一个token输出的时候，每个token的attention肯定是都要从头计算。但是在后续token的生成中，都需要计算self-attention，也就是输入prompt以及前面输出的token的attention。这是就需要用到前面每一个token的K和V，由于每一层的参数矩阵是不变的，此时只有刚生成的那个token的K和V需要从头计算，输入prompt和之前生成的token的K和V其实是跟上一轮一样的。
-
-我们可以把每一层的K、V矩阵缓存起来，这就是所谓的KV Cache。
-
----
-
-上图中，由于每次只有一个Q进行计算，所以并没有Q cache.
-
-https://www.zhihu.com/question/653658936
-
-为什么加速LLM推断有KV Cache而没有Q Cache？
-
----
-
-![](/images/img5/QKV_cache.png)
-
-![](/images/img5/KV_Cache_2.png)
-
-上图中的Prompt Phase又称为Prefill Phase，Token generation Phase又称为Decoding Phase。
-
----
-
-![](/images/img5/sharing_wide.jpg)
-
-KV Cache的使用方式一般如上图所示。其中蓝色表示输入里可以share的部分，绿色表示输入里不可以share的部分，黄色表示输出。
-
----
-
-某些非Dense Attention的KV cache的例子。
-
-![](/images/img5/StreamingLLM.png)
-
----
-
-![](/images/img5/KV_Cache_3.png)
-
----
-
-https://zhuanlan.zhihu.com/p/630832593
-
-大模型推理性能优化之KV Cache解读
-
-https://zhuanlan.zhihu.com/p/662498827
-
-大模型推理加速：看图学KV Cache
-
-https://zhuanlan.zhihu.com/p/700197845
-
-大模型推理优化技术-KV Cache
-
-## MQA & GQA
-
-![](/images/img5/GQA.jpg)
-
-首先是原始的MHA(Multi-Head Attention)，QKV 三部分有相同数量的头，且一一对应。每次做Attention，head1的QKV就做好自己运算就可以，输出时各个头加起来就行。
-
-而MQA则是，让Q仍然保持原来的头数，但K和V只有一个头，相当于所有的Q头共享一组K和V头，所以叫做Multi-Query了。
-
-实现改变了会不会影响效果呢？确实会影响，但相对它30%-40%的吞吐收益，性能的些微降低是可以接受的。
-
-而GQA呢，是MHA和MQA的折衷方案，既不想损失性能太多，又想获得MQA带来的推理加速好处。
-
-https://zhuanlan.zhihu.com/p/647130255
-
-为什么现在大家都在用MQA和GQA？

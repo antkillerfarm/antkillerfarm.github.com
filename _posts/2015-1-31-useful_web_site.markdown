@@ -441,3 +441,33 @@ http://ftp.gnome.org/pub/GNOME/sources/
 ## 杂项
 
 向后兼容处理的是一个以较早版本编译的程序集是否可以在较新版本上执行的问题。向前兼容处理的是一个以较新版本编译的程序集是否可以在较老版本上执行的问题。
+
+# AI医疗+
+
+https://mp.weixin.qq.com/s/L1c30sTN1CSth_KdORzpVw
+
+用于医学图像分割的主动轮廓线学习模型
+
+https://mp.weixin.qq.com/s/Uh0EI-pTaXK46Zb08_cs0g
+
+智能医疗综述，48页论文详述医学AI最新进展
+
+https://mp.weixin.qq.com/s/9dcq4rTcSvo5kQJ3GjwdTg
+
+医学图像分割专栏之前列腺分割
+
+https://mp.weixin.qq.com/s/UHlY_-mYBLT383TP6Y7Oew
+
+生物数据挖掘中的深度学习综述论文，36页pdf
+
+https://mp.weixin.qq.com/s/w_5-3ViQyBpRVyVe0sHFLw
+
+深度学习生命科学：基因组学、药物发现，238页pdf
+
+https://mp.weixin.qq.com/s/5MbMdMhMvPLCEu32r5l59Q
+
+MedMNIST：上海交大发布医学影像领域的MNIST
+
+https://mp.weixin.qq.com/s/clPpAveascHt7xwPr83HvA
+
+Pair，医学图像标注神器

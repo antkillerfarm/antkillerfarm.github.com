@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（四）——BERT, ELMo, GPT, ERNIE
+title:  Attention（四）——BERT, ELMo, GPT
 category: Attention 
 ---
 
@@ -307,7 +307,13 @@ Jay Alammar的教程：
 
 https://jalammar.github.io/illustrated-gpt2/
 
+---
 
+PadMasking：在处理不等长的序列时，通常需要用特定的填充符号（如0）将它们填充到相同的长度。该掩码有助于模型识别哪些部分是填充，从而在训练和推理过程中忽略这些部分。
+
+FutureMasking：该掩码用于确保在预测每个位置的输出时，模型只能使用该位置之前的输入（即避免使用未来的信息）。
+
+---
 
 参考：
 
@@ -358,21 +364,3 @@ https://mp.weixin.qq.com/s/aPA0PEqVn509u3xbgmhIwQ
 https://mp.weixin.qq.com/s/FOCR-9X5LVtjxVMWoAtw4g
 
 GPT的野望
-
-# ERNIE
-
-ERNIE是百度2019年提出的。
-
-论文：
-
-《ERNIE: Enhanced Representation through Knowledge Integration》
-
-《ERNIE 2.0: A continual pre-training framework for language understanding》
-
-代码：
-
-https://github.com/PaddlePaddle/ERNIE/
-
-除此之外，清华也有一篇叫ERNIE的论文：
-
-《ERNIE: Enhanced Language Representation with Informative Entities》

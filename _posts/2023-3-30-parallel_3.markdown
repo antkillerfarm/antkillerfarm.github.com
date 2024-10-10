@@ -1,15 +1,81 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（四）——大模型训练, Horovod, DeepSpeed, Sequence Parallel
+title:  并行 & 框架 & 优化（四）——大模型训练, Horovod, DeepSpeed
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# Pipeline Parallel
+# Pipeline Parallel（续）
 
-## pytorch（续）
+## TF-Replicator, GPipe, Mesh-Tensorflow
+
+TF-Replicator主要侧重于Data parallelism的库。
+
+GPipe是一个纯model-parallelism的库。
+
+Mesh-TensorFlow是一个DSL语言，既支持Data parallelism，又支持Model parallelism，但是侵入性很强。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/113233933
+
+谷歌GPipe训练超大规模神经网络
+
+https://zhuanlan.zhihu.com/p/342223356
+
+Mesh-Tensorflow: 广义分布式
+
+https://zhuanlan.zhihu.com/p/63211072
+
+TF-Replicator, GPipe, Mesh-Tensorflow三个库对比
+
+https://mp.weixin.qq.com/s/9k6PDusoDHjmz58HAZxZcw
+
+GPipe: 小批量流水线带来的大模型训练
+
+https://mp.weixin.qq.com/s/HY2yPZ--Zm5_m3B70baWjQ
+
+谷歌开源效率怪兽GPipe，速度提升25倍，CIFAR-10精度达到99%
+
+## pytorch
+
+因为GPipe是基于TensorFlow的库，所以kakaobrain的一些工程师就用PyTorch来实现了GPipe，并且开源出来，这就是torchgpipe。
+
+代码：
+
+https://github.com/kakaobrain/torchgpipe
+
+`fairscale.nn.pipe`fork自torchgpipe，并最终进入`torch.distributed.pipeline`。
+
+代码：
+
+benchmarks/distributed/pipeline/pipe.py
+
+另一个Pipeline Parallelism的库。
+
+https://github.com/pytorch/PiPPy
+
+参考：
+
+https://www.cnblogs.com/rossiXYZ/p/15318574.html
+
+PyTorch流水线并行实现 (1)--基础知识
+
+https://pytorch.org/docs/stable/pipeline.html
+
+Pipeline Parallelism
+
+https://pytorch.org/tutorials/intermediate/pipeline_tutorial.html
+
+Training Transformer models using Pipeline Parallelism
+
+https://pytorch.org/tutorials/advanced/ddp_pipeline.html
+
+Training Transformer models using Distributed Data Parallel and Pipeline Parallelism
+
+---
 
 `torch.distributed.pipeline`关键代码：
 
@@ -251,59 +317,3 @@ ZeRO & DeepSpeed
 https://www.microsoft.com/en-us/research/blog/deepspeed-extreme-scale-model-training-for-everyone/
 
 DeepSpeed: Extreme-scale model training for everyone
-
-https://mp.weixin.qq.com/s/Vb3AkoWHQY7WWBMZaVnf4g
-
-微软发布DeepSpeed开源库，支持1000亿个参数模型的训练
-
-https://zhuanlan.zhihu.com/p/621379646
-
-人手一个ChatGPT！微软DeepSpeed Chat震撼发布，一键RLHF训练千亿级大模型
-
-https://zhuanlan.zhihu.com/p/513571706
-
-DeepSpeed之ZeRO系列：将显存优化进行到底
-
-https://zhuanlan.zhihu.com/p/630734624
-
-deepspeed入门教程
-
-https://zhuanlan.zhihu.com/p/576673548
-
-深度学习大模型训练--DeepSpeed源码解读
-
-https://zhuanlan.zhihu.com/p/626420999
-
-deepspeed chat代码解读
-
-## GSPMD
-
-GSPMD是在GShard基础上发展而来的并行算法。
-
-《GSPMD:General and Scalable Parallelization for ML Computation Graphs》
-
-# Sequence Parallel
-
-![](/images/img5/TP_SP.png)
-
-MegatronLM提出的Sequence Parallel算法，由于TP和SP交替进行，又被称为TP-SP算法。
-
-对于Attention+MLP采用TP，对于其他部分采用SP。
-
-推理阶段由于weight固定，所以每次生成token的时候，之前的计算大部分可以复用，只需要计算新token引入的那部分计算即可。
-
-然而训练阶段，由于weight可变，即使是input+已生成token不变，也需要重新参与前后向计算。这时就需要SP了。
-
-https://blog.csdn.net/qinduohao333/article/details/131629428
-
-详解MegatronLM序列模型并行训练(Sequence Parallel)
-
----
-
-通用性较强的Ulysses，在小规模或长序列上表现更好。
-
-《DeepSpeed Ulysses: System Optimizations for Enabling Training of Extreme Long Sequence Transformer Models》
-
-![](/images/img5/DS-Ulysses.png)
-
-图中N表示序列长度，d表示`hidden_size=(hc * hs)，hc = head_cnt，hs=head_size`，P表示GPU数目（图中 P=4）。红色虚线表示通信，黑色虚线表示计算。

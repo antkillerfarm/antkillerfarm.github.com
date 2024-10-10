@@ -11,6 +11,26 @@ category: DL acceleration
 
 ## AllReduce（续）
 
+- Having-Doubling AllReduce：
+
+![](/images/img4/Having-Doubling_AllReduce.jpg)
+
+该算法每次选择节点距离倍增的节点相互通信，每次通信量倍减（或倍增）。
+
+该算法的优点是通信步骤较少，只有$$2 * log_2N$$次（其中N表示参与通信的节点数）通信即可完成，所以其有更低的延迟。相比之下Ring算法的通信步骤是$$2 ∗ (N−1)$$次；缺点是每一个步骤相互通信的节点均不相同，链接来回切换会带来额外开销。
+
+- Recursive Doubling算法
+
+- Rabenseifner算法
+
+- Binary blocks算法
+
+ring all-reduce具有理论上最优的传输带宽，而没有考虑每次传输都包含的延迟（latency）。当数据量V比较大时，延迟项可以忽略。当V特别小，或者设备数p特别大时，带宽就变得不重要了，反而是延迟比较关键。
+
+这也是为什么英伟达NCCL里既实现了ring all-reduce，也实现了double-tree all-reduce算法。
+
+---
+
 AllReduce的实现方式不仅和原理相关，也和真实的物理连接方式有关：
 
 ![](/images/img5/ring_CC.png)
@@ -18,6 +38,8 @@ AllReduce的实现方式不仅和原理相关，也和真实的物理连接方�
 实际情况要更加复杂，用户可能指定某几块GPU进行通信，这个时候树或者环的结构就不好找了。
 
 例如，在图C中，我们有一个双NVLink连接的骨干环。但是如果我要在GPU 0/1/2/7之间进行allreduce，可怎么办呢？7和0/1/2离得太远了，对算法效率有很大影响。事实上，即使对于成熟的集合通信库，例如nccl，当GPU数目是3或者5的时候效果表现也不好。最好的办法还是学习理解这些拓扑结构，不要出现这样的情况，尽量同时使用拓扑上靠近的GPU。
+
+---
 
 参考：
 
@@ -256,69 +278,3 @@ https://zhuanlan.zhihu.com/p/653860567
 https://www.cnblogs.com/rossiXYZ/p/15318574.html
 
 PyTorch流水线并行实现
-
-## TF-Replicator, GPipe, Mesh-Tensorflow
-
-TF-Replicator主要侧重于Data parallelism的库。
-
-GPipe是一个纯model-parallelism的库。
-
-Mesh-TensorFlow是一个DSL语言，既支持Data parallelism，又支持Model parallelism，但是侵入性很强。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/113233933
-
-谷歌GPipe训练超大规模神经网络
-
-https://zhuanlan.zhihu.com/p/342223356
-
-Mesh-Tensorflow: 广义分布式
-
-https://zhuanlan.zhihu.com/p/63211072
-
-TF-Replicator, GPipe, Mesh-Tensorflow三个库对比
-
-https://mp.weixin.qq.com/s/9k6PDusoDHjmz58HAZxZcw
-
-GPipe: 小批量流水线带来的大模型训练
-
-https://mp.weixin.qq.com/s/HY2yPZ--Zm5_m3B70baWjQ
-
-谷歌开源效率怪兽GPipe，速度提升25倍，CIFAR-10精度达到99%
-
-## pytorch
-
-因为GPipe是基于TensorFlow的库，所以kakaobrain的一些工程师就用PyTorch来实现了GPipe，并且开源出来，这就是torchgpipe。
-
-代码：
-
-https://github.com/kakaobrain/torchgpipe
-
-`fairscale.nn.pipe`fork自torchgpipe，并最终进入`torch.distributed.pipeline`。
-
-代码：
-
-benchmarks/distributed/pipeline/pipe.py
-
-另一个Pipeline Parallelism的库。
-
-https://github.com/pytorch/PiPPy
-
-参考：
-
-https://www.cnblogs.com/rossiXYZ/p/15318574.html
-
-PyTorch流水线并行实现 (1)--基础知识
-
-https://pytorch.org/docs/stable/pipeline.html
-
-Pipeline Parallelism
-
-https://pytorch.org/tutorials/intermediate/pipeline_tutorial.html
-
-Training Transformer models using Pipeline Parallelism
-
-https://pytorch.org/tutorials/advanced/ddp_pipeline.html
-
-Training Transformer models using Distributed Data Parallel and Pipeline Parallelism

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二）——神经元激活函数, Dropout
+title:  深度学习（二）——神经元激活函数
 category: DL 
 ---
 
@@ -9,7 +9,21 @@ category: DL
 
 # BP算法
 
-## 链式法则（续）
+## 链式法则
+
+Chain Rules本来是微积分中，用于求一个复合函数导数的常用法则。这里用来进行残差梯度的逆传播。
+
+由《机器学习（一）》的公式3可得：
+
+$$\Delta w_{hj}=-\eta\frac{\partial E_k}{\partial w_{hj}}$$
+
+$$w_{hj}$$先影响$$\beta_j$$，再影响$$\hat y_j^k$$，然后影响误差$$E_k$$，因此有：
+
+$$\frac{\partial E_k}{\partial w_{hj}}=\frac{\partial E_k}{\partial \hat y_j^k}\cdot \frac{\partial \hat y_j^k}{\partial \beta_j}\cdot \frac{\partial \beta_j}{\partial w_{hj}}\tag{1}$$
+
+![](/images/article/chain_rule.png)
+
+![](/images/img4/chain_rule.png)
 
 值得注意的是残差梯度实际上包括两部分：$$\Delta x$$和$$\Delta w$$。如下图所示：
 
@@ -263,27 +277,3 @@ $$f(x) = \max(0, x)$$
 $$f(x) = \ln(1 + e^x)$$
 
 除此之外，ReLU函数族还包括Leaky ReLU、PReLU、RReLU、ELU等。
-
-# Dropout
-
-## Dropout训练阶段
-
-Dropout是神经网络中解决过拟合问题的一种常见方法。
-
-它的具体做法是：
-
-![](/images/article/DropOut.png)
-
-1.每次训练时，随机隐藏部分隐层神经元。
-
-2.根据样本值，修改未隐藏的神经元的参数。隐藏的神经元的参数保持不变。
-
-3.下次训练时，重新随机选择需要隐藏的神经元。
-
-由于神经网络的非线性，Dropout的理论证明尚属空白，这里只有一些直观解释。
-
-1.dropout掉不同的隐藏神经元就类似在训练不同的网络，整个dropout过程就相当于对很多个不同的神经网络取平均。而不同的网络产生不同的过拟合，一些互为“反向”的拟合相互抵消就可以达到整体上减少过拟合。这实际上就是bagging的思想。
-
-2.因为dropout程序导致两个神经元不一定每次都在一个dropout网络中出现。这会迫使网络去学习更加鲁棒的特征。换句话说，假如我们的神经网络是在做出某种预测，它不应该对一些特定的线索片段太过敏感，即使丢失特定的线索，它也应该可以从众多其它线索中学习一些共同的模式（鲁棒性）。
-
-Dropout还有若干变种，如Annealed dropout（Dropout rate decreases by epochs）、Standout（Each neural has different dropout rate）。

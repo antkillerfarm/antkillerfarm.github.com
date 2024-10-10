@@ -11,6 +11,18 @@ category: AI
 
 ## 可视化（续）
 
+https://mp.weixin.qq.com/s/7M_xbmDQIlSEB1TKN3fbQw
+
+4种更快更简单实现Python数据可视化的方法
+
+https://mp.weixin.qq.com/s/wsa-HxJRCzhBF8E6yrLCQg
+
+如何用Python画一个中国地图？
+
+https://mp.weixin.qq.com/s/c7Sry6FaGv3ZgkKLekxc2g
+
+用Python画中国地图（下）
+
 https://mp.weixin.qq.com/s/ty5xy6s0z3rvMYZptdTdBQ
 
 Python热图进阶
@@ -408,15 +420,3 @@ Python自动生成表情包
 https://mp.weixin.qq.com/s/NJed2PbqBU8utLq8HQxctQ
 
 一个Python自动提取内容摘要的实践
-
-https://mp.weixin.qq.com/s/yBmpdtYJ0B5iq00dKvIprw
-
-一文教你构建图书推荐系统
-
-https://mp.weixin.qq.com/s/9kHXBJAXsvEi58WwqrjvBg
-
-Python代码和贝叶斯理论告诉你，谁是最好的棒球选手
-
-https://mp.weixin.qq.com/s/NIOLuK8-ctvncglmpIOEhQ
-
-用Python入门不明觉厉的马尔可夫链蒙特卡罗

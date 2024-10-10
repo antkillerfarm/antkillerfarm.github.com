@@ -1,13 +1,81 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（六）——快速Transformer, LLM Inference
+title:  并行 & 框架 & 优化（六）——KV Cache, 快速Transformer, LLM Inference
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# KV Cache（续）
+# KV Cache
+
+![](/images/img5/KV_Cache.png)
+
+对于每个输入的prompt，在计算第一个token输出的时候，每个token的attention肯定是都要从头计算。但是在后续token的生成中，都需要计算self-attention，也就是输入prompt以及前面输出的token的attention。这是就需要用到前面每一个token的K和V，由于每一层的参数矩阵是不变的，此时只有刚生成的那个token的K和V需要从头计算，输入prompt和之前生成的token的K和V其实是跟上一轮一样的。
+
+我们可以把每一层的K、V矩阵缓存起来，这就是所谓的KV Cache。
+
+---
+
+上图中，由于每次只有一个Q进行计算，所以并没有Q cache.
+
+https://www.zhihu.com/question/653658936
+
+为什么加速LLM推断有KV Cache而没有Q Cache？
+
+---
+
+![](/images/img5/QKV_cache.png)
+
+![](/images/img5/KV_Cache_2.png)
+
+上图中的Prompt Phase又称为Prefill Phase，Token generation Phase又称为Decoding Phase。
+
+---
+
+![](/images/img5/sharing_wide.jpg)
+
+KV Cache的使用方式一般如上图所示。其中蓝色表示输入里可以share的部分，绿色表示输入里不可以share的部分，黄色表示输出。
+
+---
+
+某些非Dense Attention的KV cache的例子。
+
+![](/images/img5/StreamingLLM.png)
+
+---
+
+![](/images/img5/KV_Cache_3.png)
+
+---
+
+https://zhuanlan.zhihu.com/p/630832593
+
+大模型推理性能优化之KV Cache解读
+
+https://zhuanlan.zhihu.com/p/662498827
+
+大模型推理加速：看图学KV Cache
+
+https://zhuanlan.zhihu.com/p/700197845
+
+大模型推理优化技术-KV Cache
+
+## MQA & GQA
+
+![](/images/img5/GQA.jpg)
+
+首先是原始的MHA(Multi-Head Attention)，QKV 三部分有相同数量的头，且一一对应。每次做Attention，head1的QKV就做好自己运算就可以，输出时各个头加起来就行。
+
+而MQA则是，让Q仍然保持原来的头数，但K和V只有一个头，相当于所有的Q头共享一组K和V头，所以叫做Multi-Query了。
+
+实现改变了会不会影响效果呢？确实会影响，但相对它30%-40%的吞吐收益，性能的些微降低是可以接受的。
+
+而GQA呢，是MHA和MQA的折衷方案，既不想损失性能太多，又想获得MQA带来的推理加速好处。
+
+https://zhuanlan.zhihu.com/p/647130255
+
+为什么现在大家都在用MQA和GQA？
 
 ## MLA
 
@@ -192,72 +260,3 @@ Awesome LLM Inference
 prefill（用户输入）和decode（模型输出）的token量在不同场景下也是不一样的。如果是简单对话场景，通常模型的decode输出会更多一些，而如果是超长上下文场景，用户先上传一本几十万字的书再进行问答，这本书的prefill会直接起飞。在Agent场景下，大量预设的prompt也会占据非常多的prefill，不过prompt的prefill有不少机会可以提前算好KV而无需每个用户请求单独重复计算。
 
 当整个推理系统服务几千万用户时，一个batch的几十个用户请求支持开胃菜。每个用户会不间断地和大模型进行交互，发出大量请求，但这些请求的间隔时间短则几秒，长则几分钟几小时。考虑人机交互的频率，一个用户请求结束后，对应的KV-cache继续常驻在高速内存中实际意义不大。
-
----
-
-![](/images/img6/static-batching.png)
-
-上图是一个通常的多batch的LLM的Inference过程。其中黄色表示用户的prompt，蓝色表示LLM生成的文本，红色表示结束符号。
-
-![](/images/img6/continuous-batching.png)
-
-这是改进后的continuous batching的示意图。
-
-https://www.anyscale.com/blog/continuous-batching-llm-inference
-
-How continuous batching enables 23x throughput in LLM inference while reducing p50 latency
-
----
-
-![](/images/img5/llm.png)
-
-https://www.zhihu.com/tardis/zm/art/647813179
-
-大模型文本生成——解码策略（Top-k & Top-p & Temperature）
-
-https://b23.tv/OfdfBnz
-
-如何设置大模型推理参数，top_k，top_p, temperature, num_beams
-
-https://blog.csdn.net/HUSTHY/article/details/125990877
-
-Contrastive Search Decoding——一种对比搜索解码文本生成算法
-
-https://zhuanlan.zhihu.com/p/656707466
-
-DoLa：层对比解码改善LLM的真实性
-
----
-
-投机采样使用两个模型：一个是原始目标模型，另一个是比原始模型小得多的近似模型。近似模型用于进行自回归串行采样，而大型模型则用于评估采样结果。
-
-https://zhuanlan.zhihu.com/p/651359908
-
-大模型推理妙招—投机采样（Speculative Decoding）
-
----
-
-LLM Inference的性能评估主要有以下几个方面：
-
-- Time To First Token (TTFT)
-- Time Per Output Token (TPOT)
-- Latency：模型为用户生成完整响应所需的总时间。latency = (TTFT) + (TPOT) * (the number of tokens to be generated)
-- Throughput：一个推理服务器每秒可以为所有用户和请求生成的输出token数量。
-
-https://www.databricks.com/blog/llm-inference-performance-engineering-best-practices
-
-LLM Inference Performance Engineering: Best Practices
-
-## TensorRT-LLM
-
-TensorRT-LLM是NVIDIA推出的基于TensorRT的LLM推理工具。
-
-代码：
-
-https://github.com/NVIDIA/TensorRT-LLM/
-
-## vLLM
-
-https://docs.vllm.ai/en/latest/
-
-Easy, fast, and cheap LLM serving for everyone

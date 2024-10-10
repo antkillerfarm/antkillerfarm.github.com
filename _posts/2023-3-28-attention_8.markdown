@@ -9,6 +9,46 @@ category: Attention
 
 # BERT进阶（续）
 
+https://mp.weixin.qq.com/s/e4dgIdwzDzcLSkdgr1yZpg
+
+LeCun力荐：Facebook推出十亿参数超大容量存储器
+
+https://mp.weixin.qq.com/s/zXXtbuSvyMOkgrWJwB83kg
+
+预训练语言模型的最新探索
+
+https://mp.weixin.qq.com/s/WzGa5XVi2Op4Lz-1uQXfxQ
+
+SpanBERT：提出基于分词的预训练模型，多项任务性能超越现有模型！
+
+https://zhuanlan.zhihu.com/p/76912493
+
+nlp中的预训练语言模型总结(单向模型、BERT系列模型、XLNet)
+
+https://mp.weixin.qq.com/s/pYSs6NhIAB6DuwNnKZhkZQ
+
+Bert改进：如何融入知识
+
+https://mp.weixin.qq.com/s/in5SDWlQg8ts4E8DTmHxMQ
+
+BERT在推荐系统领域可能会有什么作为？
+
+https://mp.weixin.qq.com/s/kJhOrz0VaYc-k-6XJS02ag
+
+8篇论文梳理BERT相关模型进展与反思
+
+https://mp.weixin.qq.com/s/hI9XAiqKaHLq-Z9JkaWA_A
+
+解决自然语言歧义问题，斯坦福教授、IJCAI卓越研究奖得主提出SenseBERT模型
+
+https://mp.weixin.qq.com/s/55B0ToIKDusiPI5farR19w
+
+NLP这两年：15个预训练模型对比分析与剖析
+
+https://mp.weixin.qq.com/s/SPfa17p3QetZXCC01DwmQA
+
+解密BERT
+
 https://zhuanlan.zhihu.com/p/72805778
 
 BERT的演进和应用
@@ -370,43 +410,3 @@ https://mp.weixin.qq.com/s/MJ1578NdTKbjU-j3Uuo9Ww
 https://mp.weixin.qq.com/s/_3pA8FZwzegSpyz_cK63BQ
 
 Self-Attention GAN中的self-attention机制
-
-https://mp.weixin.qq.com/s/l4HN0_VzaiO-DwtNp9cLVA
-
-循环注意力区域实现图像多标签分类
-
-https://mp.weixin.qq.com/s/zhZLK4pgJzQXN49YkYnSjA
-
-自适应注意力机制在Image Caption中的应用
-
-https://mp.weixin.qq.com/s/uvr-G5-_lKpyfyn5g7ES0w
-
-基于注意力机制，机器之心带你理解与训练神经机器翻译系统
-
-https://mp.weixin.qq.com/s/ANpBFnsLXTIiW6WHzGrv2g
-
-自注意力机制学习句子embedding
-
-https://mp.weixin.qq.com/s/49fQX8yiOIwDyof3PD01rA
-
-CMU&谷歌大脑提出新型问答模型QANet：仅使用卷积和自注意力，性能大大优于RNN
-
-https://mp.weixin.qq.com/s/c64XucML13OwI26_UE9xDQ
-
-滴滴披露语音识别新进展：基于Attention显著提升中文识别率
-
-https://mp.weixin.qq.com/s/7OYY3L7gL4wVv_EjoosOHA
-
-如何增强Attention Model的推理能力
-
-https://mp.weixin.qq.com/s/9Kt6_DfeYRnhsb10aCSFGw
-
-FAGAN：完全注意力机制（Full Attention）GAN，Self-attention+GAN
-
-https://mp.weixin.qq.com/s/lZOIK5BRXZrmL_Z9crl6sA
-
-机器翻译新突破！“普适注意力”模型：概念简单参数少，性能大增
-
-https://mp.weixin.qq.com/s/jRfOzKO6OlQLokIzipbqUQ
-
-为什么使用自注意力机制？

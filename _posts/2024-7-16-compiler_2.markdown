@@ -242,6 +242,13 @@ model-explorer是google推出的可视化工具，支持对于MLIR的可视化�
 
 https://github.com/google-ai-edge/model-explorer
 
+安装&运行：
+
+```bash
+pip install ai-edge-model-explorer
+model-explorer
+```
+
 ## 参考
 
 https://mp.weixin.qq.com/s/fal6vz9gaZMbR41QMGE3AQ

@@ -73,7 +73,7 @@ Python高性能计算库——Numba
 
 ## iPython
 
-ipython是一个python的交互式 shell，比默认的python shell 好用得多，支持变量自动补全，自动缩进，支持 bash shell 命令，内置了许多很有用的功能和函数。
+ipython是一个python的交互式shell，比默认的python shell 好用得多，支持变量自动补全，自动缩进，支持bash shell命令，内置了许多很有用的功能和函数。
 
 在较新的ipython版本中，添加了ipython notebook的功能，弥补了ipython shell下代码不易保存等缺点，并且在使用--pylab inline选项后，可以在代码执行后立即显示运行结果（包括图片，数据表格等），因此在数据分析中运用十分广泛。
 
@@ -100,6 +100,10 @@ https://jupyter.org/
 运行：
 
 `jupyter notebook`
+
+![](/images/img6/jupyter-architecture.png)
+
+前端和内核之间的通信，通过一个基于ZeroMQ的消息总线完成。用户在前端编写的代码被发送到后端内核执行，内核将执行结果再发送回前端显示。
 
 参见：
 
@@ -464,15 +468,3 @@ https://github.com/minimaxir/stylecloud
 https://mp.weixin.qq.com/s/tHNd6y2v7GXN2mSIv0qXlg
 
 手把手：一张图看清编程语言发展史，你也能用Python画出来！
-
-https://mp.weixin.qq.com/s/7M_xbmDQIlSEB1TKN3fbQw
-
-4种更快更简单实现Python数据可视化的方法
-
-https://mp.weixin.qq.com/s/wsa-HxJRCzhBF8E6yrLCQg
-
-如何用Python画一个中国地图？
-
-https://mp.weixin.qq.com/s/c7Sry6FaGv3ZgkKLekxc2g
-
-用Python画中国地图（下）

@@ -1,13 +1,81 @@
 ---
 layout: post
-title:  深度学习（九）——CNN进化史
+title:  深度学习（九）——ResNet
 category: DL 
 ---
 
 * toc
 {:toc}
 
-# ResNet（续）
+# 神经元激活函数进阶（续）
+
+https://mp.weixin.qq.com/s/YVi9ke3VSidBvzfLPjMkZg
+
+激活函数-从人工设计到自动搜索
+
+https://mp.weixin.qq.com/s/XttlCNKGvGZrD7OQZOQGnw
+
+如何发现“将死”的ReLu？
+
+https://mp.weixin.qq.com/s/_qeqicHWnJ50BfiQpLWVVA
+
+Dynamic ReLU：微软推出提点神器，可能是最好的ReLU改进
+
+https://mp.weixin.qq.com/s/jMLarSpq3Wg0OIrRIW26dA
+
+从Binary到Swish——激活函数深度详解
+
+https://mp.weixin.qq.com/s/IuZsTKGesgTw1ATXx4OBEA
+
+深度学习最常用的10个激活函数
+
+https://blog.csdn.net/shuzfan/article/details/77807550
+
+CReLU激活函数
+
+# ResNet
+
+无论采用何种方法，可训练的神经网络的层数都不可能无限深。有的时候，即使没有梯度消失，也存在训练退化（即深层网络的效果还不如浅层网络）的问题。
+
+最终2015年，微软亚洲研究院的何恺明等人，使用残差网络ResNet参加了当年的ILSVRC，在图像分类、目标检测等任务中的表现大幅超越前一年的比赛的性能水准，并最终取得冠军。
+
+论文：
+
+《Deep Residual Learning for Image Recognition》
+
+代码：
+
+https://github.com/KaimingHe/deep-residual-networks
+
+残差网络的明显特征是有着相当深的深度，从32层到152层，其深度远远超过了之前提出的深度网络结构，而后又针对小数据设计了1001层的网络结构。
+
+其简化版的结构图如下所示：
+
+![](/images/article/drn.png)
+
+简单的说，就是把前面的层跨几层直接接到后面去，以使误差梯度能够传的更远一些。
+
+DRN的基本思想倒不是什么新东西了，在2003年Bengio提出的词向量模型中，就已经采用了这样的思路。
+
+DRN的实现依赖于下图所示的res block：
+
+![](/images/article/res_block.png)
+
+从中可以看出，所谓残差跨层传递，其实就是将本层ternsor $$\mathcal{F}(x)$$和跨层tensor x加在一起而已。
+
+如果在网络中每个层只有少量的隐藏单元对不同的输入改变它们的激活值，而大部分隐藏单元对不同的输入都是相同的反应，此时整个权重矩阵的秩不高。并且随着网络层数的增加，连乘后使得整个秩变的更低，这就是我们常说的网络退化问题。
+
+虽然权重矩阵是一个很高维的矩阵，但是大部分维度却没有信息，使得网络的表达能力没有看起来那么强大。这样的情况一定程度上来自于网络的对称性，而残差连接打破了网络的对称性。
+
+![](/images/img3/ResNet.png)
+
+随着ResNet的应用越来越广泛，其设计也有一定的微调。上图左边是原始的ResNet结构，而右边是新的结构。
+
+![](/images/img5/Norm.webp)
+
+一般认为，Post-Norm在残差之后做归一化，对参数正则化的效果更强，进而模型的收敛性也会更好；而Pre-Norm有一部分参数直接加在了后面，没有对这部分参数进行正则化，可以在反向时防止梯度爆炸或者梯度消失，大模型的训练难度大，因而使用Pre-Norm较多。
+
+![](/images/img4/Resnet.jpg)
 
 参考：
 
@@ -242,99 +310,3 @@ GoogLeNet中的inception结构，你看懂了吗
 http://www.cnblogs.com/Allen-rg/p/5833919.html
 
 GoogLeNet学习心得
-
-## SqueezeNet
-
-GoogleNet之后，最有名的CNN模型当属何恺明的Deep Residual Network。DRN在《深度学习（六）》中已有提及，这里不再赘述。
-
-DRN之后，学界的研究重点，由如何提升精度，转变为如何用更少的参数和计算量来达到同样的精度。SqueezeNet就是其中的代表。
-
-论文：
-
-《SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size》
-
-代码：
-
-https://github.com/DeepScale/SqueezeNet
-
-Caffe版本
-
-https://github.com/vonclites/squeezenet
-
-TensorFlow版本
-
-![](/images/article/SqueezeNet_2.png)
-
-上图是SqueezeNet的网络结构图，其最大的创新点在于使用Fire Module替换大尺寸的卷积层。
-
-![](/images/article/SqueezeNet.png)
-
-上图是Fire Module的结构示意图。它采用squeeze层+expand层两个小卷积层，替换了AlexNet的大尺寸卷积层。其中，$$N_{squeeze}<N_{expand}$$，N表示每层的卷积个数。
-
-这里需要特别指出的是：expand层采用了2种不同尺寸的卷积，这也是当前设计的一个趋势。
-
-这个趋势在GoogleNet中已经有所体现，在ResNet中也间接隐含。
-
-![](/images/article/expand_ResNet.png)
-
-上图是ResNet的展开图，可见展开之后的ResNet，实际上等效于一个多尺寸交错混编的复杂卷积网。其思路和GoogleNet实际上是一致的。
-
-参见：
-
-http://blog.csdn.net/xbinworld/article/details/50897870
-
-最新SqueezeNet模型详解，CNN模型参数降低50倍，压缩461倍！
-
-http://www.jianshu.com/p/8e269451795d
-
-神经网络瘦身：SqueezeNet
-
-http://blog.csdn.net/shenxiaolu1984/article/details/51444525
-
-超轻量级网络SqueezeNet算法详解
-
-https://mp.weixin.qq.com/s/euppu_2rhujlWz1z5S5nYA
-
-纵览轻量化卷积神经网络：SqueezeNet、MobileNet、ShuffleNet、Xception
-
-https://mp.weixin.qq.com/s/rkTL1cj7tG5FaLP9cYRb4A
-
-CNN模型之SqueezeNet
-
-https://mp.weixin.qq.com/s/kE2WW3EaLsEoYTQdzL30RA
-
-SqueezeNet/SqueezeNext简述
-
-## 其他知名CNN
-
-### Network In Network
-
-Network In Network是颜水成团队于2013年提出的。
-
-论文：
-
-《Network In Network》
-
-![](/images/article/nin.png)
-
->颜水成，北京大学博士，新加坡国立大学副教授。奇虎360AI研究院院长。
-
-Network In Network最重要的贡献是使用Global Average Pooling替换了Full Connection。这直接促进了之后Fully Convolutional Networks的发展。
-
-参考：
-
-http://blog.csdn.net/sheng_ai/article/details/41313883
-
-Network In Network(精读)
-
-http://blog.csdn.net/zhufenghao/article/details/52526611
-
-Network In Network
-
-http://www.cnblogs.com/dmzhuo/p/5868346.html
-
-读论文“Network in Network”——ICLR 2014
-
-https://mp.weixin.qq.com/s/H_KY_JbqiZ1q7VLwAf2EDA
-
-致敬Network in Network，华为诺亚提出Transformer-in-Transformer

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十）——花式卷积（1）
+title:  深度学习（十）——CNN进化史
 category: DL 
 ---
 
@@ -8,6 +8,102 @@ category: DL
 {:toc}
 
 # CNN进化史（续）
+
+## SqueezeNet
+
+GoogleNet之后，最有名的CNN模型当属何恺明的Deep Residual Network。DRN在《深度学习（六）》中已有提及，这里不再赘述。
+
+DRN之后，学界的研究重点，由如何提升精度，转变为如何用更少的参数和计算量来达到同样的精度。SqueezeNet就是其中的代表。
+
+论文：
+
+《SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size》
+
+代码：
+
+https://github.com/DeepScale/SqueezeNet
+
+Caffe版本
+
+https://github.com/vonclites/squeezenet
+
+TensorFlow版本
+
+![](/images/article/SqueezeNet_2.png)
+
+上图是SqueezeNet的网络结构图，其最大的创新点在于使用Fire Module替换大尺寸的卷积层。
+
+![](/images/article/SqueezeNet.png)
+
+上图是Fire Module的结构示意图。它采用squeeze层+expand层两个小卷积层，替换了AlexNet的大尺寸卷积层。其中，$$N_{squeeze}<N_{expand}$$，N表示每层的卷积个数。
+
+这里需要特别指出的是：expand层采用了2种不同尺寸的卷积，这也是当前设计的一个趋势。
+
+这个趋势在GoogleNet中已经有所体现，在ResNet中也间接隐含。
+
+![](/images/article/expand_ResNet.png)
+
+上图是ResNet的展开图，可见展开之后的ResNet，实际上等效于一个多尺寸交错混编的复杂卷积网。其思路和GoogleNet实际上是一致的。
+
+参见：
+
+http://blog.csdn.net/xbinworld/article/details/50897870
+
+最新SqueezeNet模型详解，CNN模型参数降低50倍，压缩461倍！
+
+http://www.jianshu.com/p/8e269451795d
+
+神经网络瘦身：SqueezeNet
+
+http://blog.csdn.net/shenxiaolu1984/article/details/51444525
+
+超轻量级网络SqueezeNet算法详解
+
+https://mp.weixin.qq.com/s/euppu_2rhujlWz1z5S5nYA
+
+纵览轻量化卷积神经网络：SqueezeNet、MobileNet、ShuffleNet、Xception
+
+https://mp.weixin.qq.com/s/rkTL1cj7tG5FaLP9cYRb4A
+
+CNN模型之SqueezeNet
+
+https://mp.weixin.qq.com/s/kE2WW3EaLsEoYTQdzL30RA
+
+SqueezeNet/SqueezeNext简述
+
+## 其他知名CNN
+
+### Network In Network
+
+Network In Network是颜水成团队于2013年提出的。
+
+论文：
+
+《Network In Network》
+
+![](/images/article/nin.png)
+
+>颜水成，北京大学博士，新加坡国立大学副教授。奇虎360AI研究院院长。
+
+Network In Network最重要的贡献是使用Global Average Pooling替换了Full Connection。这直接促进了之后Fully Convolutional Networks的发展。
+
+参考：
+
+http://blog.csdn.net/sheng_ai/article/details/41313883
+
+Network In Network(精读)
+
+http://blog.csdn.net/zhufenghao/article/details/52526611
+
+Network In Network
+
+http://www.cnblogs.com/dmzhuo/p/5868346.html
+
+读论文“Network in Network”——ICLR 2014
+
+https://mp.weixin.qq.com/s/H_KY_JbqiZ1q7VLwAf2EDA
+
+致敬Network in Network，华为诺亚提出Transformer-in-Transformer
 
 ### ZF Net
 
@@ -162,83 +258,3 @@ CNN系列模型发展简述
 https://zhuanlan.zhihu.com/p/68411179
 
 CNN网络结构的发展
-
-# 花式卷积
-
-在DL中，卷积实际上是一大类计算的总称。除了原始的卷积、反卷积（Deconvolution）之外，还有各种各样的花式卷积。
-
-## 卷积在CNN和数学领域中的概念差异
-
-首先需要明确一点，CNN中的卷积和反卷积，实际上和数学意义上的卷积、反卷积是有差异的。
-
-数学上的**卷积**主要用于傅立叶变换，在计算的过程中，有一个时域上的反向操作，并不是简单的向量内积运算。在信号处理领域，卷积主要用作**信号的采样**。
-
-数学上的**反卷积**主要作为卷积的逆运算，相当于**信号的重建**，或者解微分方程。因此，它的难度远远大于卷积运算，常见的有Wiener deconvolution、Richardson–Lucy deconvolution等。
-
-CNN的反卷积就简单多了，它只是误差的反向算法而已。因此，也有人用back convolution, transpose convolution, Fractionally Strided Convolution这样更精确的说法，来描述CNN的误差反向算法。
-
-## Deconvolution
-
-在《深度学习（三）》中，我们已经给出了Deconvolution的推导公式，但是并不直观。这里补充说明一下。
-
-![](/images/article/no_padding_strides_transposed.gif)
-
-上图是transpose convolution的操作。或者也可以看下图：
-
-![](/images/img2/deconv.png)
-
-上面的图主要是直观理解。实际计算中，除了使用GEMM之外，更常见的方法不是input padding，而是采用下图的办法：
-
-![](/images/img2/deconv.jpg)
-
-这个方法的步骤如下：
-
-1.kernel padding。把[2, 2, Input, Output]的kernel，pad成[1, 1, Input, Output x 4]。
-
-2.正常的conv运算，得到[W， H， Output x 4]大小的output tensor。
-
-3.使用depth_to_space操作，将output tensor的大小变为[W x 2， H x 2， Output]。
-
-显然，kernel padding只用算一次，且可预计算，因此计算效率上比input padding高得多。
-
-## Deconvolution & Image Resize
-
-Deconvolution提供了比普通的Image Resize更丰富的上采样方式。因此，常规的Image Resize操作，实际上都可用Deconvolution来做。这在某些拥有NN硬件加速的设备上是很有用的。
-
-参考：
-
-https://cv-tricks.com/image-segmentation/transpose-convolution-in-tensorflow/
-
-Image Segmentation using deconvolution layer in Tensorflow
-
-https://zhuanlan.zhihu.com/p/32414293
-
-双线性插值的两种实现方法
-
-http://warmspringwinds.github.io/tensorflow/tf-slim/2016/11/22/upsampling-and-image-segmentation-with-tensorflow-and-tf-slim/
-
-Upsampling and Image Segmentation with Tensorflow and TF-Slim
-
-## Dilated convolution
-
-![](/images/article/dilation.gif)
-
-上图是Dilated convolution的操作。又叫做多孔卷积(atrous convolution)。
-
-可以看出，它和Deconvolution的差别在于，前者是kernel上有洞，而后者是Input上有洞。
-
-和池化相比，Dilated convolution实际上也是一种下采样，只不过采样的位置是固定的，因而能够更好的保持空间结构信息。
-
-Dilated convolution在CNN方面的应用主要是Fisher Yu的贡献。
-
-论文：
-
-《Multi-Scale Context Aggregation by Dilated Convolutions》
-
-《Dilated Residual Networks》
-
-代码：
-
-https://github.com/fyu/dilation
-
-https://github.com/fyu/drn

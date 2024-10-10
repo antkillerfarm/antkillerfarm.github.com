@@ -1,12 +1,61 @@
 ---
 layout: post
-title:  深度学习（四）——Neural Network Zoo, CNN, AutoEncoder
+title:  深度学习（四）——Neural Network Zoo, CNN
 category: DL 
 ---
 
 * toc
 {:toc}
 
+# 深度学习常用术语解释
+
+## 鞍点（续）
+
+长期以来，人们一直认为非凸优化的难点在于容易陷入局部最小，例如下图所示的Ackley函数。
+
+![](/images/article/Ackley.png)
+
+然而，LeCun和Bengio的研究表明，在high-D(高维)的情况下，局部最小会随着维度的增加，指数型的减少，在深度学习中，一个点是局部最小的概率非常小，同时鞍点无处不在。
+
+![](/images/img2/Saddle.gif)
+
+这是各种优化方法逃离鞍点的动画。
+
+参考：
+
+https://mp.weixin.qq.com/s/Cava8C_s4JikR0BTHx__KQ
+
+神经网络逃离鞍点
+
+## 欠拟合和过拟合
+
+在DL领域，欠拟合意味着神经网络没有学到该学习的特征，而过拟合则意味着神经网络学习到了不该学习的特征。
+
+在之前的描述中，我们一直强调过拟合的风险，然而实际上，欠拟合才是DL最大的敌人。
+
+过拟合至少在训练集上表现出色，可以想象如果预测样本恰好和训练集样本近似的话，则模型是能够正确预测的。而欠拟合基本什么也做不了。
+
+比如下面的场景：
+
+1.对同一训练样本集$$T_1$$，进行两次训练，分别得到模型$$M_1,M_2$$。
+
+2.使用$$M_1,M_2$$对同一测试样本集$$T_2$$进行预测，得到预测结果集$$P_1,P_2$$。
+
+3.如果$$P_1,P_2$$的结论基本相反的话，则说明发生了欠拟合现象。而过拟合则并没有这么夸张的效果。
+
+参考：
+
+https://mp.weixin.qq.com/s/zv8Mtch5Klm-qSgyBxI9QQ
+
+六步走，时刻小心过拟合
+
+https://zhuanlan.zhihu.com/p/74553341
+
+过参数化、剪枝和网络结构搜索
+
+## 模型容量
+
+如果你切换到工业级数据集，上亿条数据的时候，你会发现有些模型会随着数据量的增大，效果持续变好，而其他模型，一开始随着数据增加上升很快，但慢慢就会进入一个瓶颈期，再怎么增加数据都无法提高了。我们一般认为这是模型容量导致的。
 
 # Neural Network Zoo
 
@@ -265,65 +314,3 @@ https://mp.weixin.qq.com/s/x-H6h4sRqTrZlOXKStnhPw
 https://mp.weixin.qq.com/s/qIdjHqurqvdahEd0dXYIqA
 
 徒手实现CNN：综述论文详解卷积网络的数学本质
-
-https://mp.weixin.qq.com/s/D6ok6dQqyx6cCJKc2M8YpA
-
-从AlexNet剖析-卷积网络CNN的一般结构
-
-https://mp.weixin.qq.com/s/XZeZX8zTtNom0az_ralp4A
-
-ImageNet冠军带你入门计算机视觉：卷积神经网络
-
-https://mp.weixin.qq.com/s/t8jg_bpEcQiJmgIqKarefQ
-
-卷积神经网络CNN学习笔记
-
-https://mp.weixin.qq.com/s/buRuerMHkRMSSVlvmlDdtw
-
-人人都能读懂卷积神经网络：Convolutional Networks for everyone
-
-https://mp.weixin.qq.com/s/3pIybS_GsuN6XobP_4bLrg
-
-深度学习以及卷积基础
-
-https://mp.weixin.qq.com/s/VcjivPhJuCk7NPQ1FNQULw
-
-一文让你入门CNN
-
-https://mp.weixin.qq.com/s/zvPNuP_LT7pWIgoxzfeUWw
-
-综述卷积神经网络：从基础技术到研究前景
-
-# AutoEncoder
-
-## Basic AE
-
-Bengio在2003年的《A neural probabilistic language model》中指出，维度过高，会导致每次学习，都会强制改变大部分参数。
-
-由此发生蝴蝶效应，本来很好的参数，可能就因为一个小小传播误差，就改的乱七八糟。
-
-因此，数据降维是数据预处理中，非常重要的一环。常用的降维算法，除了线性的PCA算法之外，还有非线性的Autoencoder。
-
-![](/images/article/Autoencoder.png)
-
-Autoencoder的结构如上图所示。它的特殊之处在于：
-
-1.输入样本就是输出样本。
-
-2.隐藏层的神经元数量小于样本的维度。
-
-粗看起来，这类恒等变换没有太大意义。然而这类恒等变换之所以能够成立，最根本的地方在于，隐藏层的神经元具有表达输出样本的能力，也就是用低维表达高维的能力。反过来，我们就可以利用这一点，实现数据的降维操作。
-
-但是，不是所有的数据都能够降维，而这种情况通常会导致Autoencoder的训练失败。
-
-类似的，如果隐藏层的神经元数量大于样本的维度，则该AE可用于升维。这样的AE又叫做Sparse autoencoders。
-
-![](/images/img3/sae.png)
-
-总体来看，AE是个Encoder/Decoder结构。我们上面提到的降维/升维，主要是利用了Encoder部分。而Decoder部分也是很有意义的，它表明我们能够从tensor生成样本，这实际上就是一种**生成模型**。
-
-和Autoencoder类似的神经网络还有：Denoising Autoencoder（DAE）。
-
-![](/images/img3/dae.png)
-
-黄色的三角表明输入数据中被加入了噪声。当然了DAE的输出要和无噪声样本做比较，这样才能体现去噪的效果。

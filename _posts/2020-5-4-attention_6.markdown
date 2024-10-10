@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（六）——State Space Model
+title:  Attention（六）——State Space Model, RWKV
 category: Attention 
 ---
 
@@ -8,6 +8,34 @@ category: Attention
 {:toc}
 
 # Attention in CV & RS（续）
+
+## Swin Transformer
+
+![](/images/img5/Swin_Transformer.png)
+
+Swin Transformer的改进：
+
+1.考虑了不同的分辨率。
+
+2.除了分类之外，还可以接入目标检测等后续任务。
+
+3.对MSA（multi-head self attention）进行了改进。提出了W-MSA和SW-MSA，也就是Window版本的MSA和滑动Window版的MSA。
+
+https://mp.weixin.qq.com/s/t_J0MODtWzfnJse0aNGyWg
+
+Swin Transformer对CNN的降维打击
+
+https://mp.weixin.qq.com/s/8x1pgRLWaMkFSjT7zjhTgQ
+
+图解swin transformer
+
+https://zhuanlan.zhihu.com/p/361366090
+
+CV+Transformer之Swin Transformer
+
+https://mp.weixin.qq.com/s/z_ILLmNx3cbJI1B-M028vQ
+
+Swin Transformer重磅升级！Swin V2：向更大容量、更高分辨率的更大模型迈进
 
 ## DETR
 
@@ -341,41 +369,3 @@ RWKV训练的时候用主图的CNN形式，而推理的时候用左下角的RNN�
 RNN的weight不随输入序列的不同而不同，而RWKV会根据输入序列，计算得到weight，这个weight随输入序列的变化而变化的特性，正好是attention的特性。
 
 RWKV没有使用attention，而是号称100%RNN。
-
-Q：RNN-based没有attention之类机制的模型是怎么获得long memory的能力的啊？
-
-A：这个形式就是Transformers are RNNs的形式，只不过把Q换成了positional invariant的time weighting。最近很多work都显示Attention里的Q其实没啥用，换成一个跟着相对位置exponential decay的term就行了。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/605425639
-
-RWKV 14B对比GLM 130B和NeoX 20B，展示RWKV的性能
-
-# BERT进阶
-
-## UniLM
-
-![](/images/img5/UniLM.jpg)
-
-|  | Encoder注意力 | Decoder注意力 | 是否共享参数 |
-|:--:|:--:|:--:|:--:|
-| GPT | 单向 | 单向 | 是 |
-| UniLM | 双向 | 单向 | 是 |
-| T5 | 双向 | 单向 | 否 |
-
-https://mp.weixin.qq.com/s/m_FU4NmjUsvxusRidDb-Xg
-
-UniLM:一种既能阅读又能自动生成的预训练模型
-
-https://mp.weixin.qq.com/s/yyUPqxpfBwUSRbwM6SSAcQ
-
-UniLM论文阅读笔记
-
-https://mp.weixin.qq.com/s/RjeuHXa8O3MzSpTOuOHMkQ
-
-站在BERT肩膀上的NLP新秀们：XLMs、MASS和UNILM
-
-https://mp.weixin.qq.com/s/UEBKSKEkZTbpR49_Rh50Jg
-
-微软统一预训练语言模型UniLM 2.0解读

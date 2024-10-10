@@ -1,13 +1,29 @@
 ---
 layout: post
-title:  Attention（五）——XLNet, 轻量化Transformer, Attention in CV & RS
+title:  Attention（五）——ERNIE, XLNet, 轻量化Transformer, Attention in CV & RS
 category: Attention 
 ---
 
 * toc
 {:toc}
 
-# ERNIE（续）
+# ERNIE
+
+ERNIE是百度2019年提出的。
+
+论文：
+
+《ERNIE: Enhanced Representation through Knowledge Integration》
+
+《ERNIE 2.0: A continual pre-training framework for language understanding》
+
+代码：
+
+https://github.com/PaddlePaddle/ERNIE/
+
+除此之外，清华也有一篇叫ERNIE的论文：
+
+《ERNIE: Enhanced Language Representation with Informative Entities》
 
 这几篇论文主要讨论了，如何将语义信息融入BERT。篇幅原因，这里只关注百度的两篇论文的做法。
 
@@ -344,31 +360,3 @@ https://www.zhihu.com/question/498364155
 https://mp.weixin.qq.com/s/CxEvEZ9AiEfB1TFFjev0aA
 
 NLP和CV的双子星，注入Mask的预训练模型BERT和MAE
-
-## Swin Transformer
-
-![](/images/img5/Swin_Transformer.png)
-
-Swin Transformer的改进：
-
-1.考虑了不同的分辨率。
-
-2.除了分类之外，还可以接入目标检测等后续任务。
-
-3.对MSA（multi-head self attention）进行了改进。提出了W-MSA和SW-MSA，也就是Window版本的MSA和滑动Window版的MSA。
-
-https://mp.weixin.qq.com/s/t_J0MODtWzfnJse0aNGyWg
-
-Swin Transformer对CNN的降维打击
-
-https://mp.weixin.qq.com/s/8x1pgRLWaMkFSjT7zjhTgQ
-
-图解swin transformer
-
-https://zhuanlan.zhihu.com/p/361366090
-
-CV+Transformer之Swin Transformer
-
-https://mp.weixin.qq.com/s/z_ILLmNx3cbJI1B-M028vQ
-
-Swin Transformer重磅升级！Swin V2：向更大容量、更高分辨率的更大模型迈进

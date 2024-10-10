@@ -1,15 +1,95 @@
 ---
 layout: post
-title:  深度学习（八）——ResNet
+title:  深度学习（八）——神经元激活函数进阶
 category: DL 
 ---
 
 * toc
 {:toc}
 
+# LSTM（续）
+
+https://mp.weixin.qq.com/s/jcS4IX7LKCt1E2FVzLWzDw
+
+LSTM入门详解
+
+https://mp.weixin.qq.com/s/MQR7c57NL4b5i4MRA2JgWA
+
+用Python实现CNN长短期记忆网络！
+
+http://mp.weixin.qq.com/s/V2-grLPdZ66FOiC2duc-EA
+
+如何判断LSTM模型中的过拟合与欠拟合
+
+http://blog.csdn.net/malefactor/article/details/51183989
+
+深度学习计算模型中“门函数（Gating Function）”的作用
+
+https://mp.weixin.qq.com/s/ORLpqqV8pOv-pIagi8yS1A
+
+在调用API之前，你需要理解的LSTM工作原理
+
+https://mp.weixin.qq.com/s/BzlFbweHEJ3z7dSIGmd-QA
+
+深度学习基础之LSTM
+
+https://mp.weixin.qq.com/s/lbHTDdzPbYn2Ln4aihGujQ
+
+人人都能看懂的LSTM
+
+https://mp.weixin.qq.com/s/LI6TsPjzIaa8DxDu3UaV1A
+
+门控循环单元（GRU）的基本概念与原理
+
+https://mp.weixin.qq.com/s/LcdmXgAFpiIoHMIIXECC9g
+
+人人都能看懂的GRU
+
+https://mp.weixin.qq.com/s/m_cOjUHwvW496Gv9_aYgpA
+
+LSTM和循环神经网络基础教程
+
+https://blog.csdn.net/taoqick/article/details/79475350
+
+学会区分RNN的output和state
+
 # 神经元激活函数进阶
 
-## ReLU的缺点（续）
+在《深度学习（二）》中，我们探讨了ReLU相对于sigmoid函数的改进，以及一些保证深度神经网络能够训练的措施。然而即便如此，深度神经网络的训练仍然是一件非常困难的事情，还需要更多的技巧和方法。
+
+![](/images/img4/activation.png)
+
+## 激活函数的作用
+
+神经网络中激活函数的主要作用是提供网络的**非线性建模能力**，如不特别说明，激活函数一般而言是非线性函数。
+
+假设一个神经网络中仅包含线性卷积和全连接运算，那么该网络仅能够表达线性映射，即便增加网络的深度也依旧还是线性映射，难以有效建模实际环境中非线性分布的数据。
+
+加入非线性激活函数之后，深度神经网络才具备了分层的非线性映射学习能力。因此，激活函数是深度神经网络中不可或缺的部分。
+
+>注意：其实也有采用线性激活函数的神经网络，亦被称为linear neurons。但是这些神经网络，基本只有学术价值而无实际意义。
+
+理论上来说，只要是非线性函数，都有做激活函数的可能性。然而不同的激活函数其训练成本是不同的。
+
+虽然OpenAI的探索表明，连浮点误差都可以做激活函数，但是由于这个操作的不可微分性，因此他们使用了“进化策略”来训练模型，所谓“进化策略”，是诸如遗传算法之类的耗时耗力的算法。
+
+参考：
+
+https://mp.weixin.qq.com/s/d9XmDCahK6UBlYWhI0D5jQ
+
+深度线性神经网络也能做非线性计算，OpenAI使用进化策略新发现
+
+https://mp.weixin.qq.com/s/PNe2aKVMYjV_Nd7qZwGuOw
+
+理解激活函数作用，看这篇文章就够了！
+
+## ReLU的缺点
+
+深度神经网络的训练问题，最早是2006年Hinton使用**分层无监督预训练**的方法解决的，然而该方法使用起来很不方便。
+
+而深度网络的**直接监督式训练**的最终突破，最主要的原因是采用了新型激活函数ReLU。
+
+但是ReLU并不完美。它在x<0时硬饱和，而当x>0时，导数为1。所以，ReLU能够在x>0时保持梯度不衰减，从而缓解梯度消失问题。但随着训练的推进，部分输入会落入硬饱和区，导致对应权重无法更新。这种现象被称为**神经元死亡**。
 
 ReLU还经常被“诟病”的另一个问题是输出具有**偏移现象**，即输出均值恒大于零。偏移现象和神经元死亡会共同影响网络的收敛性。实验表明，如果不采用Batch Normalization，即使用MSRA初始化30层以上的ReLU网络，最终也难以收敛。
 
@@ -286,71 +366,3 @@ https://mp.weixin.qq.com/s/VSRtjIH1tvAVhGAByEH0bg
 https://www.cnblogs.com/makefile/p/activation-function.html
 
 激活函数(ReLU, Swish, Maxout)
-
-https://mp.weixin.qq.com/s/YVi9ke3VSidBvzfLPjMkZg
-
-激活函数-从人工设计到自动搜索
-
-https://mp.weixin.qq.com/s/XttlCNKGvGZrD7OQZOQGnw
-
-如何发现“将死”的ReLu？
-
-https://mp.weixin.qq.com/s/_qeqicHWnJ50BfiQpLWVVA
-
-Dynamic ReLU：微软推出提点神器，可能是最好的ReLU改进
-
-https://mp.weixin.qq.com/s/jMLarSpq3Wg0OIrRIW26dA
-
-从Binary到Swish——激活函数深度详解
-
-https://mp.weixin.qq.com/s/IuZsTKGesgTw1ATXx4OBEA
-
-深度学习最常用的10个激活函数
-
-https://blog.csdn.net/shuzfan/article/details/77807550
-
-CReLU激活函数
-
-# ResNet
-
-无论采用何种方法，可训练的神经网络的层数都不可能无限深。有的时候，即使没有梯度消失，也存在训练退化（即深层网络的效果还不如浅层网络）的问题。
-
-最终2015年，微软亚洲研究院的何恺明等人，使用残差网络ResNet参加了当年的ILSVRC，在图像分类、目标检测等任务中的表现大幅超越前一年的比赛的性能水准，并最终取得冠军。
-
-论文：
-
-《Deep Residual Learning for Image Recognition》
-
-代码：
-
-https://github.com/KaimingHe/deep-residual-networks
-
-残差网络的明显特征是有着相当深的深度，从32层到152层，其深度远远超过了之前提出的深度网络结构，而后又针对小数据设计了1001层的网络结构。
-
-其简化版的结构图如下所示：
-
-![](/images/article/drn.png)
-
-简单的说，就是把前面的层跨几层直接接到后面去，以使误差梯度能够传的更远一些。
-
-DRN的基本思想倒不是什么新东西了，在2003年Bengio提出的词向量模型中，就已经采用了这样的思路。
-
-DRN的实现依赖于下图所示的res block：
-
-![](/images/article/res_block.png)
-
-从中可以看出，所谓残差跨层传递，其实就是将本层ternsor $$\mathcal{F}(x)$$和跨层tensor x加在一起而已。
-
-如果在网络中每个层只有少量的隐藏单元对不同的输入改变它们的激活值，而大部分隐藏单元对不同的输入都是相同的反应，此时整个权重矩阵的秩不高。并且随着网络层数的增加，连乘后使得整个秩变的更低，这就是我们常说的网络退化问题。
-
-虽然权重矩阵是一个很高维的矩阵，但是大部分维度却没有信息，使得网络的表达能力没有看起来那么强大。这样的情况一定程度上来自于网络的对称性，而残差连接打破了网络的对称性。
-
-![](/images/img3/ResNet.png)
-
-随着ResNet的应用越来越广泛，其设计也有一定的微调。上图左边是原始的ResNet结构，而右边是新的结构。
-
-![](/images/img5/Norm.webp)
-
-一般认为，Post-Norm在残差之后做归一化，对参数正则化的效果更强，进而模型的收敛性也会更好；而Pre-Norm有一部分参数直接加在了后面，没有对这部分参数进行正则化，可以在反向时防止梯度爆炸或者梯度消失，大模型的训练难度大，因而使用Pre-Norm较多。
-
-![](/images/img4/Resnet.jpg)

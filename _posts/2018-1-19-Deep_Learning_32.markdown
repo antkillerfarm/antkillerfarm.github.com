@@ -7,6 +7,26 @@ category: DL
 * toc
 {:toc}
 
+# SENet（续）
+
+参考：
+
+https://mp.weixin.qq.com/s/tLqsWWhzUU6TkDbhnxxZow
+
+Momenta详解ImageNet 2017夺冠架构SENet
+
+http://blog.csdn.net/u014380165/article/details/78006626
+
+SENet（Squeeze-and-Excitation Networks）算法笔记
+
+https://mp.weixin.qq.com/s/ao7gOfMYDJDPsNMVV9-Dlg
+
+后ResNet时代：SENet与SKNet
+
+https://mp.weixin.qq.com/s/_7Iir2DZ_lROyR-BxScbnA
+
+SANet：视觉注意力SE模块的改进，并用于语义分割
+
 # 点云
 
 ## 概述

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（六）——RNN
+title:  深度学习（六）——词向量（2）
 category: DL 
 ---
 
@@ -8,6 +8,72 @@ category: DL
 {:toc}
 
 # 词向量
+
+## word2vec（续）
+
+### Hierarchical Softmax
+
+word2vec的输出层有两种模型：Hierarchical Softmax和Negative Sampling。
+
+Softmax是DL中常用的输出层结构，它表征**多分类中的每一个分类所对应的概率**。
+
+然而在这里，每个分类表示一个单词，即：分类的个数=词汇表的单词个数。如此众多的分类直接映射到隐层，显然并不容易训练出有效特征。
+
+Hierarchical Softmax是Softmax的一个变种。这时的输出层不再是一个扁平的多分类层，而变成了一个层次化的二分类层。
+
+Hierarchical Softmax一般基于Huffman编码构建。在本例中，我们首先统计词频，以获得每个词所对应的Huffman编码，然后输出层会利用Huffman编码所对应的层次二叉树的路径来计算每个词的概率，并逆传播到隐藏层。
+
+由Huffman编码的特性可知，Hierarchical Softmax的计算量要小于一般的Softmax。
+
+参考：
+
+https://mp.weixin.qq.com/s/N1Yt_GK57-FXU-brfu6o8A
+
+GPU上的高效softmax近似
+
+### Negative Sampling
+
+在CBOW模型中，已知w的上下文Context(w)需要预测w，则w就是正样本，而其他词是负样本。
+
+负样本那么多，该如何选取呢？Negative Sampling就是一种对负样本采样的方法。
+
+![](/images/article/Negative_Sampling.png)
+
+上图是Negative Sampling的原理图。L轴表示的是词频分布，很明显这是一个非等距剖分。而M轴是一个等距剖分。
+
+每次生成一个M轴上的随机数，将之映射到L轴上的一个单词。映射方法如上图中的虚线所示。
+
+除了word2vec之外，类似的Word Embedding方案还有SENNA、RNN-LM、Glove等。但影响力仍以word2vec最大。
+
+Skip-Gram Negative Sampling，又被简称为SGNS。
+
+## doc2vec
+
+我们知道，word是sentence的基本组成单位。一个最简单也是最直接得到sentence embedding的方法是将组成sentence的所有word的embedding向量全部加起来。
+
+显然，这种简单粗暴的方法会丢失很多信息。
+
+doc2vec是Mikolov在word2vec的基础上提出的一种生成句子向量的方法。
+
+论文：
+
+《Distributed Representations of Sentences and Documents》
+
+http://cs.stanford.edu/~quocle/paragraph_vector.pdf
+
+![](/images/article/doc2vec.png)
+
+上图是doc2vec的框架图，可以看出doc2vec的原理与word2vec基本一致，区别仅在于前者多出来一个Paragraph Vector参与CBOW或Skip-gram的训练。
+
+Paragraph Vector可以和Word Vector一起生成，也可以单独生成，也就是训练时，采用预训练的Word Vector，并只改变Paragraph Vector的值。
+
+https://www.zhihu.com/question/33952003
+
+如何通过词向量技术来计算2个文档的相似度?
+
+https://mp.weixin.qq.com/s/x_y_yygV0L5FdqfKM9xzig
+
+Doc2vec原理解析及代码实践
 
 ## FastText
 
@@ -232,70 +298,3 @@ https://mp.weixin.qq.com/s/zDneR1BU6xvt8cndEF4_Xw
 https://mp.weixin.qq.com/s/CQ9FdFcWuW0Ku3UtbGmmgg
 
 Word Vectors
-
-# RNN
-
-## RNN的基本结构
-
-RNN是Recurrent Neural Network和Recursive Neural Network的简称。前者主要用于处理和时序相关的输入，而后者目前已经没落。本文只讨论前者。
-
-![](/images/article/RNN.png)
-
-上图是RNN的结构图。其中，展开箭头左边是RNN的静态结构图。不同于之前的神经网络表示，这里的圆形不是单个神经元，而是一层神经元。权值也不是单个权值，而是权值向量。
-
-从静态结构图可以看出RNN实际上和3层MLP的结构，是基本类似的。差别在于RNN的隐藏层多了一个指向自己的环状结构。
-
-上图的展开箭头右边是RNN的时序展开结构图。从纵向来看，它只是一个3层的浅层神经网络，然而从横向来看，它却是一个深层的神经网络。可见神经网络深浅与否，不仅和模型本身的层数有关，也与神经元之间的连接方式密切相关。
-
-虽然理论上，我们可以给每一时刻赋予不同的$$U,V,W$$，然而出于简化计算和稀疏度的考量，RNN所有时刻的$$U,V,W$$都是相同的。
-
-RNN的误差反向传播算法，被称作**Backpropagation Through Time（BPTT）**。其主要公式如下：
-
-$$
-\begin{array}\\
-\nabla U=\frac{\partial E}{\partial U}=\sum_t\frac{\partial e_t}{\partial U} \\
-\nabla V=\frac{\partial E}{\partial V}=\sum_t\frac{\partial e_t}{\partial V} \\
-\nabla W=\frac{\partial E}{\partial W}=\sum_t\frac{\partial e_t}{\partial W}
-\end{array}
-$$
-
-从上式可以看出，三个误差梯度实际上都是**时域的积分**。
-
-正因为RNN的状态和过去、现在都有关系，因此，RNN也被看作是一种拥有“记忆性”的神经网络。
-
-## RNN的训练困难
-
-理论上，RNN可以支持无限长的时间序列，然而实际情况却没这么简单。
-
-Yoshua Bengio在论文《On the difficulty of training recurrent neural networks》（http://proceedings.mlr.press/v28/pascanu13.pdf）中，给出了如下公式：
-
-$$\left\|\prod_{k<i\le t} \frac{\partial h_{i}}{\partial h_{i-1}}\right\| \le \eta^{t-k}$$
-
-并指出当$$\eta < 1$$时，RNN会Gradient Vanish，而当$$\eta > 1$$时，RNN会Gradient Explode。
-
-这里显然不考虑$$\eta > 1$$的情况，因为Gradient Explode，直接会导致训练无法收敛，从而没有实用价值。
-
-因此有实用价值的，只剩下$$\eta < 1$$了，但是Gradient Vanish又注定了RNN所谓的“记忆性”维持不了多久，一般也就5～7层左右。
-
-上述内容只是一般性的讨论，实际训练还是有很多trick的。
-
-比如，针对$$\eta > 1$$的情况，可以采用Gradient Clipping技术，通过设置梯度的上限，来避免Gradient Explode。
-
-还可使用正交初始化技术，在训练之初就将$$\eta$$调整到1附近。
-
-## RNN的历史
-
-上面研究的RNN结构，又被称为Elman RNN。最早是Jeffrey Elman于1990年发明的。
-
-$$\begin{align}
-h_t &= \sigma_h(W_{h} x_t + U_{h} h_{t-1} + b_h) \\
-y_t &= \sigma_y(W_{y} h_t + b_y)
-\end{align}$$
-
-论文：
-
-《Finding Structure in Time》
-
->Jeffrey Locke Elman，1948年生，Harvard College本科（1969年）+University of Texas博士（1977年）。University of California, San Diego教授，American Academy of Arts and Sciences院士（2015年）。 美国心理学会会员。  
->个人主页：   
->https://tatar.ucsd.edu/jeffelman/

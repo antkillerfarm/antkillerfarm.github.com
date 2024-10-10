@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（十二）——Siamese network, SENet
+title:  深度学习（十二）——MobileNet
 category: DL 
 ---
 
@@ -8,6 +8,122 @@ category: DL
 {:toc}
 
 # 花式卷积
+
+## depthwise separable convolution（续）
+
+参考：
+
+http://blog.csdn.net/mao_xiao_feng/article/details/78003476
+
+tf.nn.depthwise_conv2d如何实现深度卷积?
+
+http://blog.csdn.net/mao_xiao_feng/article/details/78002811
+
+tf.nn.separable_conv2d如何实现深度可分卷积?
+
+https://blog.csdn.net/tintinetmilou/article/details/81607721
+
+Depthwise卷积与Pointwise卷积
+
+https://mp.weixin.qq.com/s/KEWEC6s0wYQhYpyh6dKvQQ
+
+MixConv：来自Google Brain的混合Depthwise卷积核
+
+https://www.cnblogs.com/itmorn/p/11250371.html
+
+depthwise_conv
+
+## 感受野
+
+Receptive Field本来是神经科学领域的概念，后来才被推广到DL（尤其是CNN）领域。
+
+Receptive Field的大小实际上就是采样范围的大小，例如一个kernel为9x9，stride为1的普通卷积，其采样范围为13x13。（即kernel size+pad size, 9+4=13）
+
+其他卷积的情况，可以依此类推。
+
+对于多层神经网络的感受野，一般用Layer N上的一个点，在Input中的采样范围表示。所以层数越多，感受野越大。
+
+需要注意的是，感受野中心的点，由于几乎每层卷积计算都会被采样到，因此它们的采样率是大于边缘点的。换句话说，就是对结果有更大的影响。因此，这又引入了**有效感受野**的概念。从实践角度来看，有效感受野的半径通常为感受野半径的1/3～1/5。
+
+参考：
+
+https://mp.weixin.qq.com/s/R8rEngNI31w0DQwjjeS6kw
+
+关于感受野的总结
+
+https://zhuanlan.zhihu.com/p/44106492
+
+卷积神经网络的感受野
+
+## 可变形卷积核
+
+MSRA于2017年提出了可变形卷积核的概念。
+
+论文：
+
+《Deformable Convolutional Networks》
+
+![](/images/article/Deformable_convolution.png)
+
+(a)所示的正常卷积规律的采样9个点（绿点），(b)(c)(d)为可变形卷积，在正常的采样坐标上加上一个位移量（蓝色箭头），其中(c)(d)作为(b)的特殊情况，展示了可变形卷积可以作为尺度变换，比例变换和旋转变换的特殊情况。
+
+![](/images/img2/Deformable_convolution.png)
+
+如上图所示，位移量也成为了网络中待学习的参数。
+
+参考：
+
+https://mp.weixin.qq.com/s/okI3MT3E2o2PKCeokE7Niw
+
+MSRA视觉组最新研究：可变形卷积网络
+
+http://mp.weixin.qq.com/s/dvuX3Ih_DZrv0kgqFn8-lg
+
+卷积神经网络结构变化——可变形卷积网络deformable convolutional networks
+
+https://mp.weixin.qq.com/s/iN2LDAQ2ee-rQnlD3N1yaw
+
+变形卷积核、可分离卷积？CNN中十大拍案叫绝的操作！
+
+http://www.msra.cn/zh-cn/news/features/deformable-convolutional-networks-20170609
+
+可变形卷积网络：计算机新“视”界
+
+https://www.jianshu.com/p/940d21c79aa3
+
+Deformable Convolution Networks
+
+https://mp.weixin.qq.com/s/aLvlLi97JTd_cCfCZfraIg
+
+“不正经”的卷积神经网络
+
+https://mp.weixin.qq.com/s/gsoVFiG3tKhHAU7OCGfLPg
+
+如何评价MSRA视觉组最新提出的Deformable ConvNets V2？
+
+https://mp.weixin.qq.com/s/VmcxU7ZgNJbNUy-Feiz3ig
+
+目标检测：Deformable ConvNets v2算法笔记
+
+https://mp.weixin.qq.com/s/sIeQ9VpQae-eWpkcx3S7Mw
+
+可变形卷积系列(一) 打破常规，MSRA提出DCNv1
+
+https://mp.weixin.qq.com/s/PGXyuKMj4FV3Kk53l7sfQw
+
+可变形卷积系列(二) MSRA提出升级版DCNv2，变形能力更强
+
+https://mp.weixin.qq.com/s/aezywo9xtqpiV7SEXBMdmA
+
+可变形卷积系列(三) 可变形卷积核，大开眼界
+
+https://mp.weixin.qq.com/s/w43wfF1dKMu65as6lAlrsg
+
+可变形卷积在视频学习中的应用:如何利用带有稀疏标记数据的视频帧
+
+https://mp.weixin.qq.com/s/PKSrgy7KdtVUv4EXVDyiOw
+
+再思考可变形卷积
 
 ## 3D卷积
 
@@ -193,134 +309,58 @@ https://zhuanlan.zhihu.com/p/540426043
 
 51x51的kernelsize暴力美学：SLaK论文解读
 
-# Siamese network
-
-Siamese和Chinese有点像。Siam是古时候泰国的称呼，中文译作暹罗。Siamese也就是“暹罗”人或“泰国”人。Siamese在英语中是“孪生”、“连体”的意思，这是为什么呢？
-
->十九世纪泰国出生了一对连体婴儿，当时的医学技术无法使两人分离出来，于是两人顽强地生活了一生，1829年被英国商人发现，进入马戏团，在全世界各地表演，1839年他们访问美国北卡罗莱那州，后来成为“玲玲马戏团” 的台柱，最后成为美国公民。1843年4月13日跟英国一对姐妹结婚，恩生了10个小孩，昌生了12个，姐妹吵架时，兄弟就要轮流到每个老婆家住三天。1874年恩因肺病去世，另一位不久也去世，两人均于63岁离开人间。两人的肝至今仍保存在费城的马特博物馆内。从此之后“暹罗双胞胎”（Siamese twins）就成了连体人的代名词，也因为这对双胞胎让全世界都重视到这项特殊疾病。
-
-![](/images/img3/Siamese_network.jpg)
-
-上图摘自LeCun 1993年的论文：
-
-《Signature Verification using a ‘Siamese’ Time Delay Neural Network》
-
-Siamese network有两个输入（Input1 and Input2）,将两个输入feed进入两个神经网络（Network1 and Network2），这两个神经网络分别将输入映射到新的空间，形成输入在新的空间中的表示。通过Loss的计算，评价两个输入的相似度。
-
-在上图中，两个输入分别是支票上的签名与银行预留签名。我们可以使用Siamese network来验证两者是否一致。
-
-Siamese network也可进一步细分：
-
-- 如果Network1和Network2的结构和参数都相同，则称为Siamese network。
-
-- 如果两个网络不共享参数，则称为pseudo-siamese network。对于pseudo-siamese network，两边可以是不同的神经网络（如一个是lstm，一个是cnn），也可以是相同类型的神经网络。
-
-除了Siamese network之外，类似的还有三胞胎连体——Triplet network。
-
-![](/images/img3/Triplet_network.jpg)
-
-输入是三个，一个正例+两个负例，或者一个负例+两个正例，训练的目标是让相同类别间的距离尽可能的小，让不同类别间的距离尽可能的大。
-
-Siamese network由于输入是一对样本，因此它更能理解样本间的差异，使得数据量相对较小的数据集也能用深度网络训练出不错的效果。
-
-对Siamese network的进一步发展，引出了2020年比较火的对比学习。
-
-参考：
-
-https://blog.csdn.net/shenziheng1/article/details/81213668
-
-Siamese Network（原理篇）
-
-https://www.jianshu.com/p/92d7f6eaacf5
-
-Siamese network孪生神经网络--一个简单神奇的结构
-
-https://blog.csdn.net/sxf1061926959/article/details/54836696
-
-Siamese Network理解
-
-https://vra.github.io/2016/12/13/siamese-caffe/
-
-Caffe中的Siamese网络
-
-https://mp.weixin.qq.com/s/rPC542OcO8B4bjxn7JRFrw
-
-深度学习网络只能有一个输入吗
-
-https://mp.weixin.qq.com/s/GlS2VJdX7Y_nfBOEnUt2NQ
-
-使用Siamese神经网络进行人脸识别
-
-https://mp.weixin.qq.com/s/lDlijjIUGmzNzcP89IzJnw
-
-张志鹏:基于siamese网络的单目标跟踪
-
-https://mp.weixin.qq.com/s/WYL43CEhVmsvjZDY7afMrA
-
-孪生网络：使用双头神经网络进行元学习
-
-https://mp.weixin.qq.com/s/bgZbIi4BvAFmVoAakciYGQ
-
-如何训练孪生神经网络
-
-# SENet
-
-无论是在Inception、DenseNet或者ShuffleNet里面，我们对所有通道产生的特征都是不分权重直接结合的，那为什么要认为所有通道的特征对模型的作用就是相等的呢？这是一个好问题，于是，ImageNet2017冠军SEnet就出来了。
+# MobileNet
 
 论文：
 
-《Squeeze-and-Excitation Networks》
+《MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications》
 
 代码：
 
-https://github.com/hujie-frank/SENet
+https://github.com/Zehaos/MobileNet
 
-Sequeeze-and-Excitation(SE) block并不是一个完整的网络结构，而是一个子结构，可以嵌到其他分类或检测模型中。
+![](/images/article/dwl_pwl.png)
 
-![](/images/img2/SENet.png)
+上述结构根据通道数的变化，又可以分为两种：
 
-上图就是SE block的示意图。其步骤如下：
+Bottleneck：
 
-1.转换操作$$F_{tr}$$。这一步就是普通的卷积操作，将输入tensor的shape由$$W'\times H'\times C'$$变为$$W\times H\times C$$。
+![](/images/img5/BottleNeck.png)
 
-2.Squeeze操作。
+Inverted Bottleneck
 
-$$z_c = F_{sq}(u_c) = \frac{1}{H\times W}\sum_{i=1}^H \sum_{j=1}^W u_c(i,j)$$
-
-这实际上就是一个global average pooling。
-
-3.Excitation操作。
-
-$$s=F_{ex}(z,W) = \sigma(g(z,W)) = \sigma(W_2 \sigma(W_1 z))$$
-
-其中，$$W_1$$的维度是$$C/r \times C$$，这个r是一个缩放参数，在文中取的是16，这个参数的目的是为了减少channel个数从而降低计算量。
-
-$$W_2$$的维度是$$C \times C/r$$，这样s的维度就恢复到$$1 \times 1 \times C$$，正好和z一致。
-
-4.channel-wise multiplication。
-
-$$\tilde{x_c} = F_{scale}(u_c, s_c)=s_c \cdot u_c$$
-
-![](/images/img2/SENet_2.png)
-
-![](/images/img2/SENet_3.png)
-
-上面两图演示了如何将SE block嵌入网络的办法。
+![](/images/img5/Inverted_Bottleneck.png)
 
 参考：
 
-https://mp.weixin.qq.com/s/tLqsWWhzUU6TkDbhnxxZow
+https://mp.weixin.qq.com/s/f3bmtbCY5BfA4v3movwLVg
 
-Momenta详解ImageNet 2017夺冠架构SENet
+向手机端神经网络进发：MobileNet压缩指南
 
-http://blog.csdn.net/u014380165/article/details/78006626
+https://mp.weixin.qq.com/s/mcK8M6pnHiZZRAkYVdaYGQ
 
-SENet（Squeeze-and-Excitation Networks）算法笔记
+MobileNet在手机端上的速度评测：iPhone 8 Plus竟不如iPhone 7 Plus
 
-https://mp.weixin.qq.com/s/ao7gOfMYDJDPsNMVV9-Dlg
+https://mp.weixin.qq.com/s/2XqBeq3N4mvu05S1Jo2UwA
 
-后ResNet时代：SENet与SKNet
+CNN模型之MobileNet
 
-https://mp.weixin.qq.com/s/_7Iir2DZ_lROyR-BxScbnA
+https://mp.weixin.qq.com/s/fdgaDoYm2sfjqO2esv7jyA
 
-SANet：视觉注意力SE模块的改进，并用于语义分割
+Google论文解读：轻量化卷积神经网络MobileNetV2
+
+https://mp.weixin.qq.com/s/7vFxmvRZuM2DqSYN7C88SA
+
+谷歌发布MobileNetV2：可做语义分割的下一代移动端计算机视觉架构
+
+https://mp.weixin.qq.com/s/lu0GHCpWCmogkmHRKnJ8zQ
+
+浅析两代MobileNet
+
+https://mp.weixin.qq.com/s/T6S1_cFXPEuhRAkJo2m8Ig
+
+轻量级CNN网络之MobileNetv2
+
+https://mp.weixin.qq.com/s/RRu3r_dokORhpSq3eyrPDQ
+
+为什么MobileNet及其变体如此之快？
