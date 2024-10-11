@@ -27,7 +27,7 @@ http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html
 
 UCL Course on RL
 
->David Silver，剑桥大学本科（1997年）+阿尔伯塔大学博士（2011年）。伦敦大学学院讲师。现为DeepMind研究员。AlphaGo之父。
+>David Silver，剑桥大学本科（1997年）+阿尔伯塔大学博士（2011年）。伦敦大学学院讲师。现为DeepMind研究员。AlphaGo之父。英国皇家学会院士。
 
 Silver的名声直追他的导师Sutton，这个教程也流传很广。后续介绍的教程中，多有对它的抄袭。
 
