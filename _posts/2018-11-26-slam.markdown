@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  SLAM
-category: resource 
+category: robot 
 ---
 
 * toc

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  开源社区分裂史, SDL, FFmpeg, 中文编码格式问题, Firefox
+title:  开源社区分裂史, SDL, FFmpeg, 中文编码格式, Firefox
 category: technology 
 ---
 
@@ -87,9 +87,27 @@ Fabrice Bellard是我崇拜的一位高人。他除了发明ffmpeg之外，还�
 
 2012年，Fabrice Bellard和Frank Spinelli一起创立了软件公司Amarisoft，这家公司专注在电信领域，致力于为4G/5G社区提供高质量的解决方案。
 
+Bellard's formula：
+
+$$
+\begin{align}
+\pi = \frac1{2^6} \sum_{n=0}^\infty \frac{(-1)^n}{2^{10n}} \, \left(-\frac{2^5}{4n+1} \right. & {} - \frac1{4n+3} + \frac{2^8}{10n+1} - \frac{2^6}{10n+3} \left. {} - \frac{2^2}{10n+5} - \frac{2^2}{10n+7} + \frac1{10n+9} \right)
+\end{align}
+$$
+
 https://www.zhihu.com/question/28388113
 
 Fabrice Bellard是个什么水平的程序员？
+
+---
+
+2013年以后，一个叫y-cruncher的程序，夺得了圆周率计算记录，并保持至今（2024）。
+
+官网的算法文档：
+
+http://www.numberworld.org/y-cruncher/internals/formulas.html
+
+y-cruncher不仅能计算$$\pi$$，还能计算其他一些数学常数。
 
 ---
 
@@ -176,7 +194,7 @@ https://baijiahao.baidu.com/s?id=1660308952680999991
 
 电影片源命名格式大扫盲，看懂WEB-DL/BDRip/BluRay/REMUX/4K区别
 
-# 中文编码格式问题
+# 中文编码格式
 
 常用的中文编码格式，主要包括大陆的GB系列和台湾的BIG5系列。
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  机器人/无人驾驶参考资源（三）
-category: resource 
+title:  机器人/无人驾驶（三）——组合导航, 软件仿真, Apollo, Autoware, AI agent
+category: robot 
 ---
 
 * toc
 {:toc}
 
-# 机器人/无人驾驶参考资源
+# 机器人/无人驾驶
 
 ## 车道线检测（续）
 
@@ -167,232 +167,170 @@ https://www.zhihu.com/answer/3038289774
 
 大疆的国产化率
 
-## 参考
+## Apollo
 
-![](/images/img5/auto.jpg)
+Apollo是百度开源的无人驾驶平台，也是目前已开源的平台中最专业的。
 
-1967年，英国哲学家菲利帕·福特提出过电车难题：一个疯子把五个无辜的人绑在电车轨道上。一辆失控的电车朝他们驶来，并且片刻后就要碾压到他们。幸运的是，你可以拉一个拉杆，让电车开到另一条轨道上。但是还有一个问题，那个疯子在那另一条轨道上也绑了一个人。考虑以上状况，你应该拉拉杆吗？
+官网：
 
----
+http://apollo.auto/
 
-https://www.zhihu.com/question/404870865
+代码：
 
-自动驾驶什么时候才会凉凉，估计还要多久？
+https://github.com/ApolloAuto/apollo
 
-https://zhuanlan.zhihu.com/p/26988866
+参考：
 
-机器人学习Robot Learning的发展
+https://github.com/TeamStuQ/skill-map/blob/master/data/map-Apollo.md
 
-https://mp.weixin.qq.com/s/YLhECwwig9f21zk1-PNiTw
+Apollo自动驾驶工程师技能图谱
 
-25篇车辆检测与分类DL文章读懂自动驾驶
+https://mp.weixin.qq.com/s/qtoHF4Mnj_aeGBJbkjJUMA
 
-https://mp.weixin.qq.com/s/cqzk7iHD8sJGLnIhkTgN3w
+Apollo小度车载系统
 
-一文读懂全球自动驾驶研究现状
+https://mp.weixin.qq.com/s/rWhnazEC35U7nsVpsxhFEg
 
-https://zhuanlan.zhihu.com/p/87416772
+Apollo 2.0软硬件框架初探（一）
 
-自动驾驶中深度学习-综述
+https://mp.weixin.qq.com/s/GccST3xJ1QRIVM7cFgsn3A
 
-https://mp.weixin.qq.com/s/W5f08aPQr0omAsJoXnbJIA
+Apollo 2.0软硬件框架初探（二）
 
-最新《深度学习自动驾驶》技术综述论文，28页pdf
+https://mp.weixin.qq.com/s/UHQXF2Ju8erw9thm0Jjt2A
 
-https://mp.weixin.qq.com/s/Z6j3YA_WPxRTRWS7-avE6w
+Apollo 2.0框架及源码分析(三)
 
-自动驾驶汽车的计算机视觉全面综述论文：问题、数据集和现状
+https://mp.weixin.qq.com/s/3i8mJn4OPjt-KV1fp8bZQQ
 
-https://mp.weixin.qq.com/s/lgqSCAE6wh_L4d6VT12fKA
+Apollo Planning模块源代码分析（上）
 
-面向机器人的机器学习，63页ppt
+https://mp.weixin.qq.com/s/DfdMDOQMncTau-9zGq9CYw
 
-https://mp.weixin.qq.com/s/3lgOxQm07nFpxWauT8b2ow
+Apollo Planning模块源代码分析（下）
 
-值得收藏，自动驾驶技术与实例最全解析！
+https://mp.weixin.qq.com/s/bH6khM8gO3JE4YT9i8hSlQ
 
-http://mp.weixin.qq.com/s/KcHlWmIdKpjledwWFdNbCw
+Apollo 2.0自动驾驶平台技术解析与应用
 
-自动驾驶汽车到底涉及了哪些技术？
+https://mp.weixin.qq.com/s/EgsdlDhd8lIXU3bnTYJh0w
 
-https://mp.weixin.qq.com/s/qyZS6ufN6f4dQRdG9diP0A
+Apollo高精地图解析
 
-自动驾驶传感器，感知，地图定位和规划控制发展现状及热点研究
+https://mp.weixin.qq.com/s/027QogNXtW2NPIDVcGQGzw
 
-https://mp.weixin.qq.com/s/9Oghiqbuz4sUFisylTEzng
+Apollo“云+端”研发迭代新模式实战
 
-雷洪钧：汽车自动驾驶技术与实例的研究（上）
+https://mp.weixin.qq.com/s/Pjfhs-03HxFeyeKo1BmAPw
 
-https://mp.weixin.qq.com/s/7gBl3ckqk7gQJ0FGMmv_jg
+Apollo小度车载系统打造更舒心的出行
 
-雷洪钧：汽车自动驾驶技术与实例的研究（下）
+https://mp.weixin.qq.com/s/j4faPastB3nFmgH_nhVW6g
 
-https://mp.weixin.qq.com/s/pPPq3b1yj92RaGgIpTAhqQ
+Apollo仿真平台如何Hold住99.9999%的复杂场景？
 
-一文看透汽车无人驾驶技术、产品和市场
+https://mp.weixin.qq.com/s/PFCCRBGWmaTQkeyOlG1qng
 
-https://zhuanlan.zhihu.com/p/79391139
+Apollo 2.0多传感器融合定位模块
 
-MIT Cheetah完整开源代码与论文简介
+https://mp.weixin.qq.com/s/KEdXmwUGHysy_LZAfdkmlw
 
-https://rsu.data61.csiro.au/people/jalvarez/research_bbdd.php
+Apollo的分布式可扩展计算平台探索
 
-这个网站提供了一系列用于汽车自动驾驶的视频标注的工具。
+https://mp.weixin.qq.com/s/MfTsH9mowuWFA54z7vs5fA
 
->Jose M. Alvarez，西班牙巴塞罗那自治大学博士（2010年）。现为澳大利亚CSIRO研究员。CSIRO是澳大利亚最大的国家级科研机构。
+Apollo Control模块源码解析
 
-https://zhuanlan.zhihu.com/p/41460767
+https://mp.weixin.qq.com/s/bIjnm74cJcHP8Zab4kt5zA
 
-无人驾驶与视觉感知导读
+Apollo 2.5实时相对地图的分享
 
-https://zhuanlan.zhihu.com/p/43285246
+https://mp.weixin.qq.com/s/hU8__GPgxaCStSgv4FyLIw
 
-自动驾驶决策控制技术-A Survey
+无人驾驶行业及Apollo的Overview
 
-https://zhuanlan.zhihu.com/p/57028341
+https://mp.weixin.qq.com/s/48DcWP1kAoze0Lv8jHY3Ow
 
-自动驾驶系统的传感器标定方法
+Apollo 2.5预测系统介绍
 
-https://mp.weixin.qq.com/s/qrvcvYzSwxSR1-tkvZLUaQ
+https://mp.weixin.qq.com/s/7ftd941pycD7h_R10cDecg
 
-使用自动编码器从自然驾驶数据中估计测试场景的独特性
+Apollo 2.5自动驾驶规划控制
 
-https://mp.weixin.qq.com/s/Gqffn_1kgP34MwthcCKH0Q
+https://mp.weixin.qq.com/s/y_mOKpgLEvDjoO-UdMBcyw
 
-基于机动LSTM的周围车辆多模态轨迹预测
+Apollo AdaperManager和Routing模块源代码分析
 
-https://mp.weixin.qq.com/s/WbTtBjeUmBeS3OQgaFG4eA
+https://mp.weixin.qq.com/s/k5GNHhxEE6mIOnxXlCpKXg
 
-Apollo控制算法之LQR
+Apollo 3.5软件架构
 
-https://mp.weixin.qq.com/s/G3Plo1Ogcx3s6nz_rdeKtA
+https://mp.weixin.qq.com/s/Xhy1w87l_b47_hS3zzCgaA
 
-Apollo控制算法之汽车动力学模型
+3D障碍物感知
 
-https://zhuanlan.zhihu.com/p/59089908
+https://mp.weixin.qq.com/s?__biz=MzI1NjkxOTMyNQ==&mid=2247488270&idx=1&sn=25b6e9b4fbe02ef6c84f3171c4bd2e2a
 
-自动驾驶中的规划控制概述
+Apollo决策技术分享
 
-https://mp.weixin.qq.com/s/eOxle3q_QgejlX10kc30Rg
+https://mp.weixin.qq.com/s/E65x4kNNZ4ctc12e5v095w
 
-Apollo无人车自定位技术入门
+自动驾驶专用计算框架探索和实践
 
-https://zhuanlan.zhihu.com/p/59890550
+## Autoware
 
-自动驾驶中的目标跟踪方法
+Autoware是另一个开源的无人驾驶平台。不像Apollo，没有百度这样的强势公司的介入，社区氛围更浓一些，相对的，功能也要弱一些。
 
-https://mp.weixin.qq.com/s/kqIAXs7A1GuXPUwSMLw7ZQ
+官网：
 
-LKA系列（一）：LKA系统简介
+https://www.autoware.org/
 
-https://mp.weixin.qq.com/s/LzHFxqfyw3JSrTObpCLmzQ
+主要由一下组件构成：
 
-LKA系列（二）：LKA控制原理
+- autoware.ai
 
-https://mp.weixin.qq.com/s/vFyifSgGLImUrTwcw9bPsg
+https://www.autoware.ai/
 
-自动驾驶感知训练指南：不许你歧视车道线，那也是路面的一部分
+这个组件基于ROS 1.0，是目前的方案。
 
-https://mp.weixin.qq.com/s/aXck7MLpHojuIkvVP1iHKg
+- autoware.auto
 
-北航机器人研究所名誉所长王田苗：人工智能与机器人的发展趋势
+https://www.autoware.auto/
 
-https://blog.csdn.net/qq_35723367/article/details/79721503
+这个组件基于ROS 2.0，是面向未来的方案。
 
-四轴飞行器基本组成及其飞行原理详解
+- autoware.io
 
-https://zhuanlan.zhihu.com/p/35319354
+https://www.autoware.io/
 
-最前沿：视觉导航（Visual Navigation），让人惊讶的进展
+autoware提供的模拟器。
 
-https://mp.weixin.qq.com/s/enUyu6nJI5olRUQehmu6UA
+代码仓库：
 
-谷歌ChauffeurNet:训练能够鲁棒地驾驶实车的网络
+https://gitlab.com/autowarefoundation/autoware.ai
 
-https://zhuanlan.zhihu.com/p/61153328
+## AI agent
 
-自动驾驶系统中的交通信号检测和识别
+AI agent本质上是一个构建在LLM(大模型)之上的智能应用，也就是说AI agent是大模型的上层应用。如果说把AI比做一个人，那么大模型就是这个人的大脑，虽然它拥有了智能，但其却没有能够真正做事的实体。而AI agent就相当于人的手脚眼睛和嘴巴，以及各种人类能够利用的工具。
 
-https://mp.weixin.qq.com/s/uy16CGG01o3BfYB7Qtvzcg
+![](/images/img5/AI_agent.png)
 
-详细解读斯坦福大学最新成果——自动驾驶的神经网络模型
+https://blog.csdn.net/qq_33453797/article/details/138324548
 
-https://mp.weixin.qq.com/s/NH09Pvh8vKtOGrS6Lwq3Tw
+爆火的AI Agent到底是什么？有了大模型为什么还需要AI Agent？
 
-自动驾驶中行为预测的一些根本问题和最新方法
+https://blog.csdn.net/v_JULY_v/article/details/135868163
 
-https://zhuanlan.zhihu.com/p/93828943
+智能体AI Agent的极速入门：从ReAct、AutoGPT到AutoGen、QwenAgent、XAgent、MetaGPT
 
-仿人双足机器人步态规划——零力矩点（ZMP）
+https://blog.csdn.net/v_JULY_v/article/details/142796658
 
-https://mp.weixin.qq.com/s/0EsgWDCFGbjLv8Rn_OBG1g
+OmniH2O——通用灵巧且可全身远程操作并学习的人形机器人
 
-路径的速度解耦规划需要几步？2个“规划”带你了解轨迹生成
+https://blog.csdn.net/v_JULY_v/article/details/142854390
 
-https://mp.weixin.qq.com/s/dQd-2gGyLQURfK4SO9kjPA
+从MDM到RobotMDM——人体运动扩散模型：赋能机器人的训练
 
-智能体张量融合，一种保持空间结构信息的轨迹预测方法
+https://blog.csdn.net/v_JULY_v/article/details/142769965
 
-https://mp.weixin.qq.com/s/GDQSxVxwx7z-YW0QkCeVBQ
-
-马斯克刚骂了激光雷达，这篇用纯视觉代替激光雷达的名校论文“力挺”了他
-
-https://mp.weixin.qq.com/s/7mu-n13H2YxbCFrVJ0fD1A
-
-如何基于深度神经网络设计一个端到端的自动驾驶模型？如何设计一个基于增强学习的自动驾驶决策系统？
-
-https://mp.weixin.qq.com/s/b4cnjOByE2j0gIljF7IXCw
-
-F-APA车位搜索及障碍物识别控制原理
-
-https://mp.weixin.qq.com/s/ZRbEwUlqtp8f5987j9-McQ
-
-自动驾驶计算机视觉研究综述：难题、数据集与前沿成果
-
-https://mp.weixin.qq.com/s/g8Y83vhw-OORm0CJElwPEA
-
-感知算法
-
-https://mp.weixin.qq.com/s/3yKqwQxwjlu_X-dkJHdhtA
-
-L4自动驾驶中感知系统遇到的挑战及解决方案
-
-https://mp.weixin.qq.com/s/flbCQIaHhYmrgd5Czhnw4g
-
-博世：用于自动驾驶的具备超快速板载以太网的高性能车载芯片研究
-
-https://mp.weixin.qq.com/s/SljxjcrjnG22tscpjlWCLw
-
-无人驾驶中用到的八大坐标系
-
-https://mp.weixin.qq.com/s/e2pC39pfs-v9o1H2d1TS6A
-
-LaserNet：一种高效的自动驾驶概率三维目标探测器
-
-https://mp.weixin.qq.com/s/GnJRfbc6_smyeWjCKzsc7g
-
-通过视觉信号预测驾驶员意图
-
-https://zhuanlan.zhihu.com/p/68127887
-
-驾驶员监控DMS
-
-https://mp.weixin.qq.com/s/AlYTOetU43VDaSlotRDUDg
-
-秒杀高精地图？MIT&丰田称仅靠简单地图和视觉就可让无人车适应新环境
-
-https://mp.weixin.qq.com/s/vbzcF9Z_M08DDq3cTVcBfQ
-
-行为克隆：自动驾驶汽车的端到端学习
-
-https://mp.weixin.qq.com/s/_4P_eEZzxj87sv5MALDM-A
-
-规划技术详解——Basic Motion Planning and Overview
-
-https://mp.weixin.qq.com/s/HyacYh2FcGPW4-8SOECCtA
-
-规划技术详解——Motion Planning with Autonomous Driving
-
-https://mp.weixin.qq.com/s/J2s84TkfHGTw985iXxW0dA
-
-基于兴趣区域投票的多任务车辆检测
+VLM驱动机器狗——从UMI on Legs到Helpful DoggyBot：分别把机械臂装到机器狗背上、夹爪装到机器狗嘴里

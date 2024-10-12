@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  机器人/无人驾驶参考资源（二）
-category: resource 
+title:  机器人/无人驾驶（二）——术语, ROS, CAN
+category: robot 
 ---
 
 * toc
 {:toc}
 
-# 机器人/无人驾驶参考资源
+# 机器人/无人驾驶
 
 ## 课程（续）
 
