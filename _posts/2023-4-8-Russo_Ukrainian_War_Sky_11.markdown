@@ -11,6 +11,112 @@ category: Russo Ukrainian War Sky
 
 ## 顿涅斯克战役（续）
 
+赫鲁晓夫的第一份工作是在顿涅茨克，他在回忆录里提到顿涅茨克城外有一个叫做马林卡的“富裕的小镇”，现在这里已经被彻底炸平了。。。
+
+![](/images/img5/Marinka.jpg)
+
+2023.2的Marinka：
+
+![](/images/img5/Marinka.avif)
+
+![](/images/img6/battle_city.jpg)
+
+https://www.zhihu.com/answer/2831950888
+
+乌克兰失去马林卡意味着什么?
+
+https://www.zhihu.com/answer/2843123591
+
+如何看待北京时间2023年1月11日，俄军占领苏勒达尔？
+
+---
+
+![](/images/img5/khromove.jpg)
+
+赫罗莫夫的卫星照片，鹅为了突破这里，够下血本的。这214突击营是真的猛，这么挨炸在那顶了这么久。
+
+---
+
+巴赫穆特围城，集束弹洗地，封锁黑海。几个月前谁能想到主语变成了乌克兰呢？乌萝终于有点辣脆的样子了。
+
+https://zhuanlan.zhihu.com/p/628800584
+
+乌军春夏反攻 - 阿特木方向篇
+
+https://zhuanlan.zhihu.com/p/628211120
+
+巴赫穆特哀歌 俄罗斯72旅团不幸遭乌克兰亚述突击旅团重创
+
+https://zhuanlan.zhihu.com/p/628393295
+
+各怀异心 俄罗斯维持会志愿者痛说72旅团在巴赫穆特西南的崩溃
+
+https://zhuanlan.zhihu.com/p/628706086
+
+溃退600米 俄罗斯第9步兵联队在巴赫穆特北部后撤
+
+https://zhuanlan.zhihu.com/p/629270882
+
+俄罗斯第四旅团总部不幸在巴赫穆特被乌克兰国防军团灭
+
+https://zhuanlan.zhihu.com/p/632662713
+
+巴赫穆特绞肉机：巴赫穆特战役回顾和损失总结
+
+https://zhuanlan.zhihu.com/p/645318258
+
+“每100米的代价都是4-5人”：乌军在顿涅茨克州的血腥反攻
+
+https://zhuanlan.zhihu.com/p/657029450
+
+恨断安德里夫卡 俄罗斯94联队两天内不幸被乌克兰军队歼灭600人
+
+---
+
+2023.10.11～2024.2.17 阿夫迪夫卡战役。
+
+自10月11日至今，俄军在该地区已经损失了上百辆坦克和装甲车，约2个机械化旅的重装备已经彻底报销。
+
+阿夫迪夫卡郊外的焦化厂曾经是欧洲产能最大的焦化厂。
+
+https://zhuanlan.zhihu.com/p/662482958
+
+乌军10月19日歼灭敌军1380人 创单日纪录
+
+https://zhuanlan.zhihu.com/p/662523285
+
+阿夫迪夫卡激战正烈，但第聂伯河南岸正在发生变化
+
+https://zhuanlan.zhihu.com/p/662610660
+
+俄军契而不舍围攻阿夫迪夫卡
+
+https://zhuanlan.zhihu.com/p/663373780
+
+鹅の阿夫迪夫卡（矿山）大捷
+
+https://www.zhihu.com/question/605828223
+
+如何评价顿巴斯地区阿夫迪夫卡的形势?
+
+https://www.zhihu.com/question/612977906
+
+如何评价俄军和乌军在阿夫迪夫卡的战斗?
+
+https://zhuanlan.zhihu.com/p/683754811
+
+乌克兰真理报复盘阿夫迪夫卡战役：乌克兰军队撤退的原因
+
+https://zhuanlan.zhihu.com/p/685054072
+
+乌克兰在阿夫迪夫卡的最后一刻及其“死亡之路”
+
+https://zhuanlan.zhihu.com/p/683071921
+
+俄罗斯人如何看待阿夫迪夫卡的战斗
+
+---
+
 第115独立机械化旅从奥切列季涅地区撤离后，由于指挥不力，后来被调往利曼方向的“奇迹森林”。
 
 邻军对该旅的表现完全满意，而国民警卫队第1旅布雷维的战友则指出：“他们没有问题，能稳固地守住阵地。他们的火炮还可以执行邻军的火力任务，所有在阿夫迪夫卡的失误都留在那里了。”
@@ -134,52 +240,3 @@ https://zhuanlan.zhihu.com/p/665375124
 https://zhuanlan.zhihu.com/p/684545499
 
 俄罗斯英雄在颁奖集会时被乌克兰海马斯袭击
-
----
-
-
-![](/images/img5/Zaporizhia.jpg)
-
-https://www.zhihu.com/question/605592764
-
-如何评价乌克兰豹二坦克在6月8日的会战中被俄军击毁？
-
-https://zhuanlan.zhihu.com/p/636255708
-
-冲向俄罗斯的铜墙铁壁 乌克兰军队激战扎波罗热
-
-https://zhuanlan.zhihu.com/p/637846009
-
-在督战队的枪口下 俄罗斯士兵眼中的乌克兰扎波罗热攻势
-
-https://zhuanlan.zhihu.com/p/642942500
-
-俄罗斯中将师团长不幸在别尔江斯克被乌克兰击毙
-
-https://zhuanlan.zhihu.com/p/642984280
-
-表面兄弟之马库斯与沙拉马加
-
-https://zhuanlan.zhihu.com/p/645393380
-
-黄纸影响深远？浅析乌军北约旅上场情况
-
-https://zhuanlan.zhihu.com/p/651783572
-
-扎波罗热人喜迎王师，莫斯科人彻夜未眠
-
-https://zhuanlan.zhihu.com/p/654324560
-
-浅谈瓦夏9.4巡演
-
-https://zhuanlan.zhihu.com/p/657040639
-
-布达诺夫：我没有心情讨论乌克兰的反攻（9月17日）
-
-https://zhuanlan.zhihu.com/p/670787768
-
-僵局：乌克兰失败的反攻（第一部分）
-
-https://zhuanlan.zhihu.com/p/670901766
-
-僵局：乌克兰失败的反攻（第二部分）

@@ -9,6 +9,54 @@ category: Russo Ukrainian War Sky
 
 # 俄乌战争
 
+## 扎波罗热战役（续）
+
+![](/images/img5/Zaporizhia.jpg)
+
+https://www.zhihu.com/question/605592764
+
+如何评价乌克兰豹二坦克在6月8日的会战中被俄军击毁？
+
+https://zhuanlan.zhihu.com/p/636255708
+
+冲向俄罗斯的铜墙铁壁 乌克兰军队激战扎波罗热
+
+https://zhuanlan.zhihu.com/p/637846009
+
+在督战队的枪口下 俄罗斯士兵眼中的乌克兰扎波罗热攻势
+
+https://zhuanlan.zhihu.com/p/642942500
+
+俄罗斯中将师团长不幸在别尔江斯克被乌克兰击毙
+
+https://zhuanlan.zhihu.com/p/642984280
+
+表面兄弟之马库斯与沙拉马加
+
+https://zhuanlan.zhihu.com/p/645393380
+
+黄纸影响深远？浅析乌军北约旅上场情况
+
+https://zhuanlan.zhihu.com/p/651783572
+
+扎波罗热人喜迎王师，莫斯科人彻夜未眠
+
+https://zhuanlan.zhihu.com/p/654324560
+
+浅谈瓦夏9.4巡演
+
+https://zhuanlan.zhihu.com/p/657040639
+
+布达诺夫：我没有心情讨论乌克兰的反攻（9月17日）
+
+https://zhuanlan.zhihu.com/p/670787768
+
+僵局：乌克兰失败的反攻（第一部分）
+
+https://zhuanlan.zhihu.com/p/670901766
+
+僵局：乌克兰失败的反攻（第二部分）
+
 ## 游击战
 
 ![](/images/img5/Ukraine.png)

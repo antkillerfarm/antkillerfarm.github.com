@@ -66,6 +66,8 @@ https://mp.weixin.qq.com/s/hnmKM-_zgb5m80NTd_b8gw
 >John Joseph Hopfield，1933年生，美国科学家。Cornell University博士（1958），先后执教于UCB、Princeton和Caltech。美国艺术科学院、美国科学院院士。   
 >他爸也叫John Joseph Hopfield，波兰物理学家。
 
+>2024.10.9 Hopfield被授予诺贝尔物理学奖。
+
 http://txshi-mt.com/2018/02/10/UTNN-12-Restricted-Boltzmann-Machines/
 
 受限玻尔兹曼机

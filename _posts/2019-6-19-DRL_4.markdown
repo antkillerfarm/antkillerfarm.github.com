@@ -1,13 +1,59 @@
 ---
 layout: post
-title:  深度强化学习（四）——DDPG, TD3, PPO, IMPALA
+title:  深度强化学习（四）——A2C & A3C, DDPG, TD3, PPO
 category: DRL 
 ---
 
 * toc
 {:toc}
 
-# A2C & A3C（续）
+# A2C & A3C
+
+Actor-Critic一般简称AC算法。针对它的一般用法参见《强化学习（八）》。
+
+AC算法也可用于DRL领域，具体的做法和DQN类似：
+
+- 一个Actor网络，用来近似V值。
+
+- 一个Critic网络，用来近似Q值。
+
+这里有个小技巧：
+
+Actor网络和Critic网络可以共享网络参数，两者仅最后几层使用不同结构和参数。（参见下图A3C的图）
+
+针对AC的改进，衍生出了A2C和A3C。
+
+Advantage Actor-Critic（A2C）：advantage function + AC
+
+Asynchronous Advantage Actor-Critic（A3C）：Async + A2C
+
+advantage function的含义参见[《强化学习（八）》](/rl/2019/10/01/RL_8.html#advantage_function)，这里谈谈A3C。
+
+## A3C
+
+论文：
+
+《Asynchronous Methods for Deep Reinforcement Learning》
+
+在《强化学习（七）》的Experience Replay一节，我们指出训练数据间的相关性会影响算法收敛到最优解。
+
+除了Experience Replay之外，异步更新也是一种有效的消除训练数据间相关性的方法。
+
+![](/images/img3/A3C.jpg)
+
+上图是A3C的网络结构图。它实际上就是将A2C放在了多个线程中进行同步训练。可以想象成几个人同时在玩一样的游戏，而他们玩游戏的经验都会同步上传到一个中央大脑。然后他们又从中央大脑中获取最新的玩游戏方法。
+
+A3C的原始论文运行在CPU上，这里还有一个GPU版本：
+
+《GA3C: Reinforcement Learning through Asynchronous Advantage Actor-Critic on a GPU》
+
+代码：
+
+https://github.com/NVlabs/GA3C
+
+![](/images/img3/GA3C.png)
+
+这是GA3C的网络结构图。
 
 ## AC vs. GAN
 
@@ -272,29 +318,3 @@ https://mp.weixin.qq.com/s/3uzx54YtqPeG6EDCVTE0YA
 https://mp.weixin.qq.com/s/sbE44zbyRpFyfQKYByBXzA
 
 深度强化学习之：PPO训练红白机1942
-
-# IMPALA
-
-论文：
-
-《IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures》
-
-代码：
-
-https://github.com/deepmind/lab/tree/master/game_scripts/levels/contributed/dmlab30
-
-IMPALA是DeepMind于2018年提出的。
-
-![](/images/img3/IMPALA.png)
-
-![](/images/img3/IMPALA.jpg)
-
-IMPALA的灵感来自于热门的A3C架构（上图左），后者使用多个分布式actor来学习agent的参数。在类似这样的模型中，每个actor都使用策略参数的一个副本，在环境中操作。actor会周期性地暂停探索，将它们已经计算得出的梯度信息分享至中央参数服务器，而后者会对此进行更新。
-
-与此不同，IMPALA（上图中）中的actor不会被用来计算梯度信息。它们只是收集经验，并将这些经验传递至位于中心的learner。learner会计算梯度。因此在这样的模型中，actor和learner是完全独立的。
-
-为了利用当代计算系统的规模优势，IMPALA在配置中可支持单个learner机器，也可支持多个相互之间同步的learner机器（上图右）。
-
-由于actor只用于环境采样，而这个任务通常是一个仿真环境（例如游戏模拟器），因此它和learner在计算侧重点上有很大差异（例如在游戏领域，actor更侧重于仿真、渲染。），所以actor和learner的软硬件可以是异构的。
-
-其次，由于Actor无须计算梯度，因此就可以一直采样，而无须等待策略的更新，这也是它和Batched A2C的最大区别。

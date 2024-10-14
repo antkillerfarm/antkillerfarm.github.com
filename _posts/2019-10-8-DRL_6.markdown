@@ -9,7 +9,41 @@ category: DRL
 
 # AlphaGo
 
-### Fast rollout（续）
+## AlphaGo（续）
+
+### Policy Network
+
+![](/images/img3/AlphaGo.png)
+
+上图是AlphaGo的Policy Network的网络结构图。
+
+从结构来看，它与DarkForestGo是十分类似的：
+
+1. 都是1层5x5的conv+k层3x3的conv。
+
+2. 两者的input plane都是手工构建的特征。
+
+3. 由于棋子的精确位置很重要，这些CNN中都没有pooling。
+
+它们的差异在于：
+
+1. DarkForestGo训练时，会预测三步而非一步，提高了策略输出的质量。
+
+Policy Network摆脱了之前的基于规则的围棋软件，长于局部，但大局较差的弱点，它的大局观非常强，不会陷入局部战斗中。例如，DarkForestGo的走棋网络直接放上KGS就有3d的水平。
+
+它的缺点是：会不顾大小无谓争劫，会无谓脱先，不顾局部死活，对杀出错，等等。有点像高手不经认真思考的随手棋——只有“棋感”，而没有计算。（其实更类似于计算力衰退的老棋手，比如聂棋圣。）
+
+### Value Network
+
+AlphaGo的Value Network是一个和Policy Network几乎一样的深度卷积网络。
+
+### Fast rollout
+
+有了走棋网络，为什么还要做快速走子呢？
+
+- 走棋网络的运行速度是比较慢的（3毫秒），而快速走子能做到几微秒级别，差了1000倍。
+
+- 快速走子可以用来评估盘面。由于天文数字般的可能局面数，围棋的搜索是毫无希望走到底的，搜索到一定程度就要对现有局面做个估分。在没有估值网络的时候，不像国象可以通过算棋子的分数来对盘面做比较精确的估值，围棋盘面的估计得要通过模拟走子来进行，从当前盘面一路走到底，不考虑岔路地算出胜负，然后把胜负值作为当前盘面价值的一个估计。显然，如果一步棋在快速走子之后，生成的N个结果中的胜率较大的话，那它本身是步好棋的概率也较大。
 
 为了速度快，Fast rollout没有使用神经网络，而是使用传统的局部特征匹配（local pattern matching）加线性回归（logistic regression）的方法。
 
@@ -214,95 +248,3 @@ https://www.zhihu.com/question/356976342
 https://zhuanlan.zhihu.com/p/31344949
 
 联合模型的强化学习算法（三）
-
-https://mp.weixin.qq.com/s/IcaxjdDLjihCK-nKBlJVWg
-
-从α到μ：DeepMind棋盘游戏AI进化史
-
-https://mp.weixin.qq.com/s/BWWCqAoSRkNAWXMiTOFhAA
-
-DeepMind推出Agent57，在所有雅达利游戏上超越人类玩家
-
-https://mp.weixin.qq.com/s/CvkIFuLTBDW0L8A9rJL7Ng
-
-新算法MuZero登顶Nature，AI离人类规划又近了一步
-
-https://mp.weixin.qq.com/s/dTJ7NvVs7qjF2FRoAZ_WlQ
-
-MuZero算法过程详解
-
-# GnuGo
-
-GnuGo是一个DRL时代之前的老牌开源围棋软件，但是它只有文字界面。一般使用Quarry作为它的GUI。
-
-`sudo apt install quarry`
-
-## Leela Zero
-
-Leela Zero是比利时人Gian-Carlo Pascutto开源的围棋AI。它的算法与AlphaGo Zero相同。而训练采用GTP协议，集合全球算力，进行分布式训练。
-
-官网：
-
-http://zero.sjeng.org/
-
-代码：
-
-https://github.com/gcp/leela-zero
-
-## GTP
-
-Go Text Protocol，其目的是建立一个比GMP（Go Modem Protocol）协议的ascii接口更合适于双机通信、更简单、更有效、更灵活的接口。
-
-GTP将围棋软件分成了前后端，前端软件提供GUI，而后端软件负责对弈。
-
-官网：
-
-http://www.lysator.liu.se/~gunnar/gtp/
-
-参考：
-
-https://www.tianqiweiqi.com/go-gtp.html
-
-围棋引擎的GTP协议
-
-## minigo
-
-Google员工Andrew Jackson作品。但tf官方一再强调这并非TensorFlow项目的一环，也不是DeepMind的AlphaGo官方版本，而是由独立的团队依照AlphaGo Zero的论文而实做出的版本。
-
-官网：
-
-https://github.com/tensorflow/minigo
-
-参考：
-
-https://zhuanlan.zhihu.com/p/352536850
-
-AlphaGo Zero中的强化学习算法和google开源工程实现——从原理到代码实现
-
-## ELF OpenGo
-
-ELF OpenGo是Facebook开源的围棋AI，它是FB的AI游戏框架ELF的一部分。
-
-官网：
-
-https://github.com/pytorch/ELF
-
-参考：
-
-https://mp.weixin.qq.com/s/lOAx3suLIS-pEWyi8xZl6Q
-
-“全民体验”AlphaZero：FAIR田渊栋首次开源超级围棋AI
-
-## PhoenixGo
-
-PhoenixGo是腾讯微信团队的AlphaGo Zero复刻版。
-
-官网：
-
-https://github.com/Tencent/PhoenixGo
-
-参考：
-
-https://mp.weixin.qq.com/s/tJDmxsuS1QigYS75ZIdzRA
-
-微信团队开源围棋AI技术PhoenixGo，复现AlphaGo Zero论文

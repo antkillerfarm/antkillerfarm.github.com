@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度强化学习（一）——教程, 工具/框架
+title:  深度强化学习（一）——教程
 category: DRL 
 ---
 
@@ -27,7 +27,7 @@ http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html
 
 UCL Course on RL
 
->David Silver，剑桥大学本科（1997年）+阿尔伯塔大学博士（2011年）。伦敦大学学院讲师。现为DeepMind研究员。AlphaGo之父。英国皇家学会院士。
+>David Silver，1976年生，剑桥大学本科（1997年）+阿尔伯塔大学博士（2011年）。伦敦大学学院讲师。现为DeepMind研究员。AlphaGo之父。英国皇家学会院士。
 
 Silver的名声直追他的导师Sutton，这个教程也流传很广。后续介绍的教程中，多有对它的抄袭。
 
@@ -356,29 +356,3 @@ https://github.com/seungjaeryanlee/awesome-rl-competitions
 https://screeps.com/
 
 这个网站提供了一个用类似JS的脚本驱动的RTS游戏环境，用于AI之间的对战。
-
-# 工具/框架
-
-https://www.zhihu.com/question/377263715
-
-目前最好用的大规模强化学习算法训练库是什么？
-
-https://mp.weixin.qq.com/s/5ScRIl2MHNGaUyIEJJKnKw
-
-DeepMind开源强化学习研究环境Control Suite
-
-https://mp.weixin.qq.com/s/GTjNToprM2OO7uzSRQXkHw
-
-DeepMind开源强化学习库TRFL，关键算法可编写RL智能体
-
-https://mp.weixin.qq.com/s/PLFxehTAXcehzIrIMRfVpA
-
-强化学习的基石：DeepMind开源框架TRFL
-
-https://mp.weixin.qq.com/s/ew7vmvskp_q4aM7cJM-CXg
-
-夺魁NeurIPS 2018强化学习大赛，百度正式发布RL模型库和算法框架PARL
-
-https://github.com/danaugrs/huskarl
-
-基于TF2.0的深度强化学习平台：Huskarl

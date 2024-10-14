@@ -1,13 +1,37 @@
 ---
 layout: post
-title:  深度强化学习（五）——Hierarchical RL, OpenAI, AlphaGo（1）
+title:  深度强化学习（五）——IMPALA, Hierarchical RL, OpenAI, AlphaGo（1）
 category: DRL 
 ---
 
 * toc
 {:toc}
 
-# IMPALA（续）
+# IMPALA
+
+论文：
+
+《IMPALA: Scalable Distributed Deep-RL with Importance Weighted Actor-Learner Architectures》
+
+代码：
+
+https://github.com/deepmind/lab/tree/master/game_scripts/levels/contributed/dmlab30
+
+IMPALA是DeepMind于2018年提出的。
+
+![](/images/img3/IMPALA.png)
+
+![](/images/img3/IMPALA.jpg)
+
+IMPALA的灵感来自于热门的A3C架构（上图左），后者使用多个分布式actor来学习agent的参数。在类似这样的模型中，每个actor都使用策略参数的一个副本，在环境中操作。actor会周期性地暂停探索，将它们已经计算得出的梯度信息分享至中央参数服务器，而后者会对此进行更新。
+
+与此不同，IMPALA（上图中）中的actor不会被用来计算梯度信息。它们只是收集经验，并将这些经验传递至位于中心的learner。learner会计算梯度。因此在这样的模型中，actor和learner是完全独立的。
+
+为了利用当代计算系统的规模优势，IMPALA在配置中可支持单个learner机器，也可支持多个相互之间同步的learner机器（上图右）。
+
+由于actor只用于环境采样，而这个任务通常是一个仿真环境（例如游戏模拟器），因此它和learner在计算侧重点上有很大差异（例如在游戏领域，actor更侧重于仿真、渲染。），所以actor和learner的软硬件可以是异构的。
+
+其次，由于Actor无须计算梯度，因此就可以一直采样，而无须等待策略的更新，这也是它和Batched A2C的最大区别。
 
 ![](/images/img3/IMPALA_2.png)
 
@@ -296,37 +320,3 @@ AlphaGo主要由几个部分组成：
 4. 蒙特卡罗树搜索（Monte Carlo Tree Search，MCTS)，把以上这三个部分连起来，形成一个完整的系统。
 
 以下是详细的解说。
-
-### Policy Network
-
-![](/images/img3/AlphaGo.png)
-
-上图是AlphaGo的Policy Network的网络结构图。
-
-从结构来看，它与DarkForestGo是十分类似的：
-
-1. 都是1层5x5的conv+k层3x3的conv。
-
-2. 两者的input plane都是手工构建的特征。
-
-3. 由于棋子的精确位置很重要，这些CNN中都没有pooling。
-
-它们的差异在于：
-
-1. DarkForestGo训练时，会预测三步而非一步，提高了策略输出的质量。
-
-Policy Network摆脱了之前的基于规则的围棋软件，长于局部，但大局较差的弱点，它的大局观非常强，不会陷入局部战斗中。例如，DarkForestGo的走棋网络直接放上KGS就有3d的水平。
-
-它的缺点是：会不顾大小无谓争劫，会无谓脱先，不顾局部死活，对杀出错，等等。有点像高手不经认真思考的随手棋——只有“棋感”，而没有计算。（其实更类似于计算力衰退的老棋手，比如聂棋圣。）
-
-### Value Network
-
-AlphaGo的Value Network是一个和Policy Network几乎一样的深度卷积网络。
-
-### Fast rollout
-
-有了走棋网络，为什么还要做快速走子呢？
-
-- 走棋网络的运行速度是比较慢的（3毫秒），而快速走子能做到几微秒级别，差了1000倍。
-
-- 快速走子可以用来评估盘面。由于天文数字般的可能局面数，围棋的搜索是毫无希望走到底的，搜索到一定程度就要对现有局面做个估分。在没有估值网络的时候，不像国象可以通过算棋子的分数来对盘面做比较精确的估值，围棋盘面的估计得要通过模拟走子来进行，从当前盘面一路走到底，不考虑岔路地算出胜负，然后把胜负值作为当前盘面价值的一个估计。显然，如果一步棋在快速走子之后，生成的N个结果中的胜率较大的话，那它本身是步好棋的概率也较大。

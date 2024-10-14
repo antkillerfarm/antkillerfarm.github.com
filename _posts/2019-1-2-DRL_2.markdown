@@ -1,13 +1,37 @@
 ---
 layout: post
-title:  深度强化学习（二）——概述, Deep Q-learning Network
+title:  深度强化学习（二）——工具/框架, 概述, Deep Q-learning Network
 category: DRL 
 ---
 
 * toc
 {:toc}
 
-# 工具/框架（续）
+# 工具/框架
+
+https://www.zhihu.com/question/377263715
+
+目前最好用的大规模强化学习算法训练库是什么？
+
+https://mp.weixin.qq.com/s/5ScRIl2MHNGaUyIEJJKnKw
+
+DeepMind开源强化学习研究环境Control Suite
+
+https://mp.weixin.qq.com/s/GTjNToprM2OO7uzSRQXkHw
+
+DeepMind开源强化学习库TRFL，关键算法可编写RL智能体
+
+https://mp.weixin.qq.com/s/PLFxehTAXcehzIrIMRfVpA
+
+强化学习的基石：DeepMind开源框架TRFL
+
+https://mp.weixin.qq.com/s/ew7vmvskp_q4aM7cJM-CXg
+
+夺魁NeurIPS 2018强化学习大赛，百度正式发布RL模型库和算法框架PARL
+
+https://github.com/danaugrs/huskarl
+
+基于TF2.0的深度强化学习平台：Huskarl
 
 https://mp.weixin.qq.com/s/ApP0zNuG5OP_-HzJC1v95Q
 
@@ -243,21 +267,3 @@ $$L=E[({\color{blue}{r+\gamma \max_{a'}Q(s',a',w)}}-Q(s,a,w))^2]$$
 DQN虽然是model-free的，但是也有难点，那就是Reward的定义。好在在Atari游戏的例子里，这个问题比较简单，直接采用游戏得分即可。但得分奖励过于肤浅，在动作类游戏中或许没啥问题，但对于《Montezuma's Revenge》这样的解谜游戏，就不太好使了。
 
 此外，Deepmind在Atari游戏中，采用了连续4帧图像作为DQN的输入。这样的行为也被称作状态的表示。状态的表示会严重影响学习的效果，然而目前来说，它还是一门艺术，而非科学。例如，AlphaGo采用了过去八手棋局作为状态的表示。
-
-## Nature DQN
-
-DQN最早发表于NIPS 2013，该版本的DQN，也被称为NIPS DQN。NIPS DQN除了提出DQN的基本概念之外，还使用了《强化学习（六）》中提到的Experience Replay技术。
-
-2015年初，Deepmind在Nature上提出了改进版本，是为Nature DQN。它改进了Loss函数：
-
-$$L=({\color{blue}{r+\gamma \max_{a'}Q(s',a',w^-)}}-Q(s,a,w))^2$$
-
-上式中，计算目标Q值的网络使用的参数是$$w^-$$，而不是w。也就是说，原来NIPS DQN的target Q网络是动态变化的，跟着Q网络的更新而变化，这样不利于计算目标Q值，导致目标Q值和当前的Q值相关性较大。
-
-因此，Deepmind提出可以单独使用一个目标Q网络。那么目标Q网络的参数如何来呢？还是从Q网络中来，只不过是延迟更新。也就是每次等训练了一段时间再将当前Q网络的参数值复制给目标Q网络。
-
-个人理解这里的机制类似于进化算法。**变异既可以是进化，也可以是退化，只有进化的Q网络才值得保留下来。**
-
-这在下文介绍的Leela Zero项目的训练过程中体现的很明显：一开始我们只训练一个简单的AI，然后逐渐加深加大网络，淘汰废物AI，得到更优秀的AI。
-
-为了使进化生效，在一段时间内保持目标Q网络不变就是很显然的了——你过不了我这关，就没资格继续下去了。
