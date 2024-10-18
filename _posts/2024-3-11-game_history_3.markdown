@@ -215,7 +215,7 @@ https://www.zhihu.com/question/557628789
 
 # 英雄无敌
 
-1、2代：New Word Computing
+1、2代：New Word Computing，主设计师：Jon Van Caneghem。
 
 3、4代：3DO旗下的New Word Computing
 
@@ -240,3 +240,9 @@ http://heroworld.gamerhome.com/
 另一条路线就是沿着神之觉醒In the Wake of Gods的路子下来的，这一派走的是做加法的路线，不断加入新功能、新兵种、新技能、新种族……更像一锅乱炖，平衡性什么就别考虑了，但是乱炖自有乱炖的风味。
 
 ![](/images/img5/hero3.jpg)
+
+---
+
+《国王的恩赐》系列最早也是JVC设计的，时间比英雄无敌还早几年。战斗部分和后者完全相同，但没有城堡建设，只有英雄游历。领导力取代了城镇生物产量，成为了制约部队数量的约束条件。
+
+现在的《国王的恩赐》系列，主要由1C Entertainment（现名Fulqrum Games）发行，制作者主要是东欧的俄罗斯人/波兰人。

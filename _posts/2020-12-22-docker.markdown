@@ -201,6 +201,12 @@ docker容器与宿主交互数据
 
 https://docs.docker.com/reference/dockerfile/
 
+---
+
+构建Docker镜像时处理'Configuring tzdata'交互输入：
+
+`DEBIAN_FRONTEND=noninteractive`
+
 ## 参考
 
 http://blog.csdn.net/colorant/article/details/20608157

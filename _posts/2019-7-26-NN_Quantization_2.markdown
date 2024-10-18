@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NN Quantization（二）——TF32, FP8, W4A16, FP4, Posit, 量化策略
+title:  NN Quantization（二）——TF32, FP8, W4A16, FP4, OCP Formats, Posit, 量化策略
 category: DL acceleration 
 ---
 
@@ -134,6 +134,24 @@ NF4只能表示[-1, 1]之间的浮点数。由于在神经网络中，预训练�
 
 NF4是QLoRA引入的，而FP4目前只有NV的GPU支持。
 
+# OCP Formats
+
+Open Compute Project提出了一种有别于IEEE标准的浮点数格式。
+
+f6E3M2FNU：
+
+- f6：6bit浮点数。
+- E3：3bit指数。
+- M2：2bit底数。
+- FN：没有infinity/NaN。
+- U：没有0/负数。
+
+官方文档：
+
+https://www.opencompute.org/documents/ocp-microscaling-formats-mx-v1-0-spec-final-pdf
+
+OCP Microscaling Formats (MX) Specification
+
 # Posit
 
 ![](/images/img4/Posit.png)
@@ -257,23 +275,3 @@ https://zhuanlan.zhihu.com/p/665601576
 3.最好不要使用ReluN这样的激活函数，死的神经元太多。神经元一旦“死亡”，相应的权值就不再更新，而这些值往往不在正常范围内。
 
 4.对于sigmoid、tanh这样的S形函数，其输入在$$\mid x \mid > \sigma$$范围的值，最终的结果都在sigmoid、tanh的上下限附近。因此，可以直接将这些x值量化为$$\sigma$$。这里的$$\sigma$$的取值，对于sigmoid来说是6，而对于tanh来说是3。
-
-## NN硬件的指标术语
-
-MACC：multiply-accumulate，乘法累加。
-
-FLOPS：Floating-point Operations Per Second，每秒所执行的浮点运算次数。
-
-显然NN的INT8计算主要以MACC为单位。
-
-## gemmlowp
-
-gemmlowp是Google提出的一个支持低精度数据的GEMM（General Matrix Multiply）库。
-
-代码：
-
-https://github.com/google/gemmlowp
-
-## 论文
-
-《Quantizing deep convolutional networks for efficient inference: A whitepaper》

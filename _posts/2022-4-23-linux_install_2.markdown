@@ -109,6 +109,40 @@ grub2引导系统iso镜像
 
 # Linux学习心得
 
+## tldr
+
+tldr是一个采用示例说明的简化版的man。
+
+官网：
+
+http://tldr.sh/
+
+该项目原生支持node.js，但也提供了其他多种语言的支持。
+
+参考：
+
+https://linuxtoy.org/archives/tldr.html
+
+tldr: 简读Manpage
+
+## Systemd
+
+![](/images/img5/Systemd.png)
+
+内核初始化的最后一步就是启动PID为1的init进程。这个进程是系统的第一个进程。它负责产生其他所有的用户进程。
+
+init系统大体上的演进路线为sysvinit -> upstart -> systemd。
+
+2010年，德国程序员Lennart Poettering（同时也是Avahi和PulseAudio的作者）发明了Systemd。
+
+http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html
+
+Systemd入门教程：命令篇
+
+http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html
+
+Systemd入门教程：实战篇
+
 ## Zero Page
 
 https://www.cnblogs.com/linhaostudy/p/13647189.html
@@ -364,51 +398,3 @@ https://www.zhihu.com/answer/460715569
 https://mp.weixin.qq.com/s/QsgoONKwI7ds8Hnx2Wer6A
 
 Linux从程序到进程
-
-https://mp.weixin.qq.com/s/v9XlJjIQkuVpSudhQIS70A
-
-神秘！申请内存时底层发生了什么？
-
-https://mp.weixin.qq.com/s/V-XT6QuDG522P0bP2e3ULg
-
-咋办，死锁了
-
-https://mp.weixin.qq.com/s/RHAoM8zhFvQl9R8V0ePxNQ
-
-看腾讯这道多线程面试题
-
-https://mp.weixin.qq.com/s/qWXcL90ZAkc7rrhsbuB_Bw
-
-只有170字节，最小的64位Hello World程序这样写成
-
-https://mp.weixin.qq.com/s/5iyWeSeDzuA2cY7YBMhk7w
-
-MMU那些事儿
-
-https://mp.weixin.qq.com/s/0OeeYUgBBVVMtxscvzgJHw
-
-i++是线程安全的吗？
-
-https://mp.weixin.qq.com/s/U0qr1oZYXBBmZnC5vsKYLQ
-
-浅谈linux IO
-
-https://mp.weixin.qq.com/s/3kgwoyYI90XHm1QPqFJAiQ
-
-内存分页不就够了？为什么还要分段？
-
-https://mp.weixin.qq.com/s/VSbzTh3xEbVdB4IgGJzQ3A
-
-25张图，一万字，拆解Linux网络包发送过程
-
-https://mp.weixin.qq.com/s/2dbr4-dxRCJ_SLCQnrt8ag
-
-Linux内核调度器源码分析
-
-https://yanqiyu.info/2021/06/21/huawei-v-qwr/
-
-某不知名网友怒斥华为，究竟发生了什么
-
-https://mp.weixin.qq.com/s/-8L5MFZrgmyatGgYaR1AEA
-
-波兰极客用一张软盘运行Linux系统，用的还是最新内核！

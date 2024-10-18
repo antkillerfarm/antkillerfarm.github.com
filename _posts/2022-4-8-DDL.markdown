@@ -11,6 +11,8 @@ category: technology
 
 DDL（Data Description Language）早年间基本就是XML的同义词。20年前上大学的时候，甚至还学过一门XML相关的选修课程。不过这些都是老古董了，从2010年以来，JSON基本取代了XML的地位。
 
+>其他的格式在对人友好和对机器友好至少要占一样，而XML是一种罕见的对人对机器都不友好的格式。-- by Linus Torvalds
+
 ## JSON
 
 JSON(JavaScript Object Notation)是一种轻量级的数据交换格式。易于人阅读和编写。同时也易于机器解析和生成。它基于JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999的一个子集。

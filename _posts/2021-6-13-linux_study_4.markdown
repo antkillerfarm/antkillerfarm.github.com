@@ -85,6 +85,15 @@ Host s136
     User user
     ProxyCommand ssh -Y -q -W %h:%p bridge
 ```
+---
+
+问题：
+
+`Unable to negotiate with x.x.x.x port 2222: no matching host key type found. Their offer: ssh-rsa`
+
+解决方案：
+
+`ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedKeyTypes=+ssh-rsa user@host -p 2222`
 
 ---
 
@@ -383,37 +392,3 @@ Hubot的简单用法
 https://blog.csdn.net/weixin_38472804/article/details/109361682
 
 linux系统格式化硬盘
-
-# tldr
-
-tldr是一个采用示例说明的简化版的man。
-
-官网：
-
-http://tldr.sh/
-
-该项目原生支持node.js，但也提供了其他多种语言的支持。
-
-参考：
-
-https://linuxtoy.org/archives/tldr.html
-
-tldr: 简读Manpage
-
-# Systemd
-
-![](/images/img5/Systemd.png)
-
-内核初始化的最后一步就是启动PID为1的init进程。这个进程是系统的第一个进程。它负责产生其他所有的用户进程。
-
-init系统大体上的演进路线为sysvinit -> upstart -> systemd。
-
-2010年，德国程序员Lennart Poettering（同时也是Avahi和PulseAudio的作者）发明了Systemd。
-
-http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html
-
-Systemd入门教程：命令篇
-
-http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html
-
-Systemd入门教程：实战篇

@@ -184,6 +184,8 @@ ILP可以分为下列几种类型：
 
 （3）0-1型整数线性规划(Zero-one integer linear programming)：指决策变量只能了取值0或1的整数线性规划。
 
+ILP相关的库还有pyomo、cyipopt等。
+
 ---
 
 为了评估不同Sharding策略的好坏，我们需要对Sharding策略建立cost model。
