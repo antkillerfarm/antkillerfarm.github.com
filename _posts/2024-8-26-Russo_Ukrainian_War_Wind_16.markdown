@@ -222,31 +222,3 @@ https://zhuanlan.zhihu.com/p/715986568
 https://zhuanlan.zhihu.com/p/716077048
 
 俄罗斯逃兵“一周前我还在家看动漫，现在我却要被派到前线”
-
-## 泽连斯基语录
-
-永远记住：乌克兰在这个敌人出现之前就有，乌克兰将在他之后还会继续存在。
-
-Slava Ukraini：荣耀归于乌克兰，Слава Україні
-
-Heroyam Slava：героям слава，glory to the heroes
-
-我在这里。我们没有放下武器。我们将保卫我们的国家。
-
-The fight is here. I need ammunition, not a ride.
-
-The fate of Ukraine depends only on Ukrainians. No one but ourselves will control our lives.
-
-我命由我不由人，乌克兰的命运只能由乌克兰人民抉择。
-
-When you attack us, you will see our faces, not our backs.
-
-Without gas or without you? – The answer is without you. Without electricity or without you? – Without you. Without water or without you? – Without you. Without food or without you? – Without you.
-
-他们告诉你我们是纳粹。但一个牺牲了超过八百万条生命来消灭纳粹的民族怎么能被称为纳粹呢？我的祖父作为苏联步兵活过了整场战争，在一个独立的乌克兰作为上校死去，我怎么会是纳粹呢？
-
-当我竞选总统时，我说我们每个人都是总统。因为我们都对我们的国家负责。为了我们美丽的乌克兰。现在事实证明，我们每个人都是一名战士。战士在他或她自己的地方。我相信我们每个人都会获胜。
-
-我希望能有光，但情况非常困难，现在有时有光，有时没有光。最重要的是（心）里面要有光。
-
-即使没有电，我们对自己的信仰之光也不会被熄灭。

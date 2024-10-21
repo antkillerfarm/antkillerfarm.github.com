@@ -9,7 +9,33 @@ category: Russo Ukrainian War Wind
 
 # 俄乌战争
 
-## 泽连斯基语录（续）
+## 泽连斯基语录
+
+永远记住：乌克兰在这个敌人出现之前就有，乌克兰将在他之后还会继续存在。
+
+Slava Ukraini：荣耀归于乌克兰，Слава Україні
+
+Heroyam Slava：героям слава，glory to the heroes
+
+我在这里。我们没有放下武器。我们将保卫我们的国家。
+
+The fight is here. I need ammunition, not a ride.
+
+The fate of Ukraine depends only on Ukrainians. No one but ourselves will control our lives.
+
+我命由我不由人，乌克兰的命运只能由乌克兰人民抉择。
+
+When you attack us, you will see our faces, not our backs.
+
+Without gas or without you? – The answer is without you. Without electricity or without you? – Without you. Without water or without you? – Without you. Without food or without you? – Without you.
+
+他们告诉你我们是纳粹。但一个牺牲了超过八百万条生命来消灭纳粹的民族怎么能被称为纳粹呢？我的祖父作为苏联步兵活过了整场战争，在一个独立的乌克兰作为上校死去，我怎么会是纳粹呢？
+
+当我竞选总统时，我说我们每个人都是总统。因为我们都对我们的国家负责。为了我们美丽的乌克兰。现在事实证明，我们每个人都是一名战士。战士在他或她自己的地方。我相信我们每个人都会获胜。
+
+我希望能有光，但情况非常困难，现在有时有光，有时没有光。最重要的是（心）里面要有光。
+
+即使没有电，我们对自己的信仰之光也不会被熄灭。
 
 Freedom comes at a high price. But slavery has an even higher price.
 
@@ -96,77 +122,3 @@ The gratitude – of all our people, of our entire state – to every warrior an
 我们已经开发了自己的新型无人机和导弹——我们正在逐步将这场战争带回俄罗斯。
 
 当我们的战士将黑海从俄罗斯的军事存在中解放出来时，我们向全世界证明了没有无所不能的侵略者。
-
----
-
-乌克兰著名演员出席金球奖并发言。
-
-乌克兰总统泽连斯基签署法令，正式将5月8日定为乌克兰的第二次世界大战胜利纪念日，区别于俄罗斯的5月9日。原来5月9日的卫国战争胜利日，则被改为“欧洲日”。
-
-https://zhuanlan.zhihu.com/p/593679662
-
-我们站着、我们战斗、我们会赢，因为我们团结一致———泽连斯基在美国国会的讲话
-
-https://zhuanlan.zhihu.com/p/593952619
-
-“乌克兰人也将有尊严地和成功地完成我们的独立和自由战争”——泽连斯基演讲全文和军援简评
-
-https://zhuanlan.zhihu.com/p/595906989
-
-泽连斯基的新年致辞全文
-
-https://zhuanlan.zhihu.com/p/596061706
-
-泽连斯基的新年祝福（中英对照）
-
-https://www.163.com/dy/article/HSIEASEJ0553BD4L.html
-
-泽连斯基变“自由男神”，爱沙尼亚在自由公园内塑造其沙雕像
-
-https://zhuanlan.zhihu.com/p/609235767
-
-光荣属于乌克兰 泽林斯基纪念乌克兰战争一周年演讲
-
-https://zhuanlan.zhihu.com/p/609435468
-
-泽连斯基在开战一周年的演讲（中英对照）
-
-https://zhuanlan.zhihu.com/p/627798430
-
-乌克兰总统发表二战胜利日演讲：我们不会忘记帮助我们的朋友
-
-https://zhuanlan.zhihu.com/p/633781402
-
-乌克兰总统发表国际儿童节演讲
-
-https://zhuanlan.zhihu.com/p/652190990
-
-“乌克兰人民不会放手”——泽连斯基在乌克兰独立日的两篇演讲
-
-https://zhuanlan.zhihu.com/p/657433214
-
-乌克兰总统弗拉基米尔·泽连斯基阁下在联合国大会第78届会议上的讲话（2023年9月19日）
-
-https://zhuanlan.zhihu.com/p/675530409
-
-泽连斯基2024新年致辞
-
-https://zhuanlan.zhihu.com/p/683770252
-
-泽连斯基在俄乌战争爆发两周年纪念日上发表讲话
-
-https://zhuanlan.zhihu.com/p/701650513
-
-泽连斯基在香格里拉对话会上的演讲
-
-https://zhuanlan.zhihu.com/p/702313362
-
-泽连斯基总统在法国国民议会的讲话（2024年6月7日）全文
-
-https://zhuanlan.zhihu.com/p/702910188
-
-为和平、欧洲和生命而奋斗是我们领导的方向，也是乌克兰人民的意志——泽连斯基总统在德国联邦议院发表讲话
-
-https://zhuanlan.zhihu.com/p/716342662
-
-泽连斯基独立日演讲：战争已重返俄罗斯，红场衰弱老人终究受海牙审判

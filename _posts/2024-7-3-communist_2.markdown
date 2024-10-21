@@ -156,3 +156,9 @@ https://mp.weixin.qq.com/s/6OOlmKh7jkoOJj527tGoyA
 https://minguowang.com/character/rw-xh/7883/
 
 儒将钱大钧“姐妹共夫” 两位夫人从不争风吃醋
+
+---
+
+赖清德说台湾人平均薪资是4万8千元新台币，
+
+台湾那边有人反驳，你蔡英文与赖清德平均下来有一个睾丸，有什么用？

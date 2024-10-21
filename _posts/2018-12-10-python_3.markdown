@@ -325,6 +325,18 @@ https://blog.csdn.net/sinat_29552923/article/details/70833455
 
 Python pickle模块学习
 
+---
+
+pickle的反序列化存在安全漏洞：
+
+https://www.zhihu.com/question/1296528119
+
+字节跳动大模型训练被实习生恶意注入破坏代码，涉事者已被辞退，攻击带来的影响有多大？
+
+https://zhuanlan.zhihu.com/p/89132768
+
+从零开始python反序列化攻击：pickle原理解析 & 不用reduce的RCE姿势
+
 ## dill
 
 dill是pickle的威力加强版。

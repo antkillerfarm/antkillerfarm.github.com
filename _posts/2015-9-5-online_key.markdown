@@ -180,3 +180,13 @@ https://github.com/jasonish/jetty-springmvc-jsp-template
 https://mp.weixin.qq.com/s/KqrEb_RSOTTVfj90Fo0rQA
 
 Tomcat架构原理解析到架构设计借鉴
+
+# USA+
+
+为什么绝大多数来自国外的宣传，似乎只提到了海伦·凯勒的人生前20年？从1880年出生到1968年逝世，享年88岁高龄的海伦·凯勒，人生后60年究竟发生了什么？
+
+这个问题的答案非常简单，长达60多年的后半生之所以被美国为首的西方国家隐瞒，是因为海伦·凯勒成为了一名坚定的社会主义者。
+
+https://www.zhihu.com/question/332120833
+
+海伦凯勒故事是真的吗?

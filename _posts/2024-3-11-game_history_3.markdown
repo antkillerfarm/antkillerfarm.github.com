@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  我的PC Game（三）, 英雄无敌
+title:  我的PC Game（三）
 category: my story 
 ---
 
@@ -98,6 +98,20 @@ https://zhuanlan.zhihu.com/p/672284712
 https://zhuanlan.zhihu.com/p/673951143
 
 魔兽世界(AzerothCore)机器人队友单机版服务端编译说明
+
+## 2024.8
+
+《黑神话：悟空》似乎不错，可惜手残，对硬核ACT感觉一般。
+
+游戏科学的创始人冯骥，早年是腾讯量子工作室的员工，曾担任《斗战神》主策划。
+
+## 2024.10
+
+换了新电脑之后，把原来收藏的老游戏，又拿出来晒了晒。1/3直接能跑，1/2在网上搜解决办法，也能跑起来。
+
+只有剩下的1/6，需要从网上重新下载。尤其是一些光盘版安装的游戏，光盘里只有安装文件，还需要安装解压缩，才能进行后续的补丁，然而安装程序本身在新系统上跑不起来了。。。囧
+
+Win11虽然集成了虚拟光驱，但只支持iso格式，mdf/mds格式还是需要daemon tool才行。
 
 ## 轶事
 
@@ -212,37 +226,3 @@ https://fitgirl-repacks.site/
 https://www.zhihu.com/question/557628789
 
 如何评价游戏《白日升》（Rise of the White Sun）？
-
-# 英雄无敌
-
-1、2代：New Word Computing，主设计师：Jon Van Caneghem。
-
-3、4代：3DO旗下的New Word Computing
-
-5代以后，发行商均为育碧。
-
-5代：Nival Interactive
-
-6代：Black Hole Entertainment
-
-7代：Limbic Entertainment
-
-http://heroworld.gamerhome.com/
-
-这是目前网上最全面的英雄无敌系列的资料站。
-
----
-
-英雄无敌算是毛子的国民游戏，在3DO破产之后。毛子用爱发电制作了两套风格迥异的续作。
-
-一套是Horn of the Abyss深渊号角。在原版的基础上增加了一个Cove海盗族，整体风格保持原汁原味，没有花里胡哨的功能.
-
-另一条路线就是沿着神之觉醒In the Wake of Gods的路子下来的，这一派走的是做加法的路线，不断加入新功能、新兵种、新技能、新种族……更像一锅乱炖，平衡性什么就别考虑了，但是乱炖自有乱炖的风味。
-
-![](/images/img5/hero3.jpg)
-
----
-
-《国王的恩赐》系列最早也是JVC设计的，时间比英雄无敌还早几年。战斗部分和后者完全相同，但没有城堡建设，只有英雄游历。领导力取代了城镇生物产量，成为了制约部队数量的约束条件。
-
-现在的《国王的恩赐》系列，主要由1C Entertainment（现名Fulqrum Games）发行，制作者主要是东欧的俄罗斯人/波兰人。
