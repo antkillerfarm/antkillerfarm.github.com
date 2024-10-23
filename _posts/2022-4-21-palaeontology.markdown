@@ -115,6 +115,10 @@ https://mp.weixin.qq.com/s/kdL2rLpiHRvsalJIshTH4w
 
 ---
 
+![](/images/img6/USA.jpg)
+
+---
+
 https://mp.weixin.qq.com/s/KJyvT_MsD2DZ6QvwXh32ug
 
 假如把地球46亿年历史压缩到一天

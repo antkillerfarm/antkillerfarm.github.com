@@ -209,6 +209,18 @@ https://docs.docker.com/reference/dockerfile/
 
 ## 参考
 
+问题：
+
+`Couldn’t create temporary file /tmp/apt.conf.R6cSTc for passing config to apt-key`
+
+解决：
+
+`chmod 777 /tmp`
+
+注意这个是在docker里运行，而不是在host上运行。
+
+---
+
 http://blog.csdn.net/colorant/article/details/20608157
 
 快速理解Docker

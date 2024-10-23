@@ -62,14 +62,6 @@ https://www.databricks.com/blog/llm-inference-performance-engineering-best-pract
 
 LLM Inference Performance Engineering: Best Practices
 
-## TensorRT-LLM
-
-TensorRT-LLM是NVIDIA推出的基于TensorRT的LLM推理工具。
-
-代码：
-
-https://github.com/NVIDIA/TensorRT-LLM/
-
 ## vLLM
 
 https://docs.vllm.ai/en/latest/
