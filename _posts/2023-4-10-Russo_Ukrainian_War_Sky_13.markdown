@@ -57,6 +57,10 @@ category: Russo Ukrainian War Sky
 
 2024年8月25日，乌克兰武装分子成功闯入辛菲罗波尔附近的俄军临时营房，刺死18名士兵。
 
+2024年10月4日，俄罗斯任命的扎波罗热核电站物理安全负责人Andriy Korotkyi被炸死。
+
+2024年10月18日，俄少校德米特里·佩尔武哈在乌克兰东部卢甘斯克市中心驾车时被炸弹炸死。
+
 ---
 
 俄罗斯联邦安全部队出动了一大票人去一个房间里堵两个谭雅。。。不，两个乌克兰女子。最终的结果居然是被对方反杀3.5人，而且还驾车逃跑了。。。
@@ -162,33 +166,3 @@ https://www.zhihu.com/question/608372285
 https://zhuanlan.zhihu.com/p/605825707
 
 受到控制的权力斗争——瓦格纳创始人普里戈津在俄罗斯的政治斗争中失败了吗？
-
----
-
-https://zhuanlan.zhihu.com/p/639233679
-
-观鹅整活有感（一）
-
-https://zhuanlan.zhihu.com/p/639228653
-
-刚刚，俄罗斯出大事了！
-
-https://zhuanlan.zhihu.com/p/639498942
-
-俄罗斯，就只能这么干了！
-
-https://mp.weixin.qq.com/s/sgC4qLJkd_ZQKXhfuPuf7Q
-
-浅谈瓦格纳兵谏
-
-https://zhuanlan.zhihu.com/p/640890003
-
-刚刚，瓦格纳最后期限到了！
-
-https://news.ifeng.com/c/8QsK5TSqK33
-
-瓦格纳“进军莫斯科”，普里戈任为何前线倒戈？
-
-https://news.ifeng.com/c/8QxrIfKEcwh
-
-瓦格纳叛乱平息得太快？这才是俄罗斯人的正常方式

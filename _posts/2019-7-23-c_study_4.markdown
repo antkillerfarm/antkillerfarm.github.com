@@ -7,6 +7,37 @@ category: language
 * toc
 {:toc}
 
+# Defaulted & Deleted（续）
+
+由于已经有了`X(int i)`，编译器就不会生成默认的`X()`了，因此`X x;`会出错。解决办法是`X()=default;`。
+
+如果想禁用默认函数的话，可以使用`=delete`。上例中，就是禁用默认的拷贝构造函数的示例。
+
+default仅用于类的特殊成员函数，且该特殊成员函数没有默认参数。
+
+```cpp
+class X {
+public:
+    int f() = default: //错误，f()非特殊成员函数
+    X(int) = default; //错误，非默认构造函数
+    X(int i = 1) = default; // 错误，含有默认参数
+}
+```
+
+参考：
+
+https://www.ibm.com/developerworks/cn/aix/library/1212_lufang_c11new/index.html
+
+C++11标准新特性：Defaulted和Deleted函数
+
+# assert
+
+```cpp
+assert(ExprSymbol && "Function not found");
+```
+
+这个用法挺有意思的。
+
 # const
 
 ```cpp
@@ -346,41 +377,6 @@ std::string有很多实现方式，归纳起来有三类，而每类又有多种
 https://www.cnblogs.com/cthon/p/9181979.html
 
 c++再探string之eager-copy、COW和SSO方案
-
-# 数组定义时的赋值方法
-
-```c
-struct mtd_partition {
-	const char *name;		/* identifier string */
-	uint64_t size;			/* partition size */
-	uint64_t offset;		/* offset within the master MTD space */
-};
-
-static struct mtd_partition parts[] = {
-      {name: "boot", offset: 0,           size:0x500000,},
-      {name: "setting", offset: 0x500000, size:0x300000,},
-      {name: "linux", offset: 0x800000,   size:0x500000,}, 
-      {name: "config", offset: 0xd00000,   size:0x100000,},	
-      {name: "rootfs", offset: 0xe00000,  size:0x3200000,},
-      {name: "app", offset: 0x4e00000, size:0x800000,},
-
-};
-
-static struct resource pxa27x_resource_ohci[] = {
-	[0] = {
-		.start  = 0x4C000000,
-		.end    = 0x4C00ff6f,
-		.flags  = IORESOURCE_MEM,
-	},
-	[1] = {
-		.start  = IRQ_USBH1,
-		.end    = IRQ_USBH1,
-		.flags  = IORESOURCE_IRQ,
-	},
-};
-```
-
-这些方法虽然不知道是C的哪个标准引入的，但是见到有代码这样用。
 
 # 常用libc实现
 

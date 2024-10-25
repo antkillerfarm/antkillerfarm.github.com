@@ -179,14 +179,6 @@ https://zhuanlan.zhihu.com/p/690903957
 
 俄乌战场坦克型号识别速通小课
 
----
+https://zhuanlan.zhihu.com/p/2802965238
 
-APC-Armored personnel carriers--装甲人员输送车
-
-IFV-Infantry fighting vehicle--步兵战车
-
-APC动力弱，装甲薄，火力弱，便宜。负责把步兵快速投放到战场，自身不参与战斗。
-
-IFV动力强，装甲厚，火力强，贵。不止运送步兵，在放下步兵后，自身充当火力支援以及移动掩体的角色。
-
-当然，现在也有往APC上加装甲，加武器站当IFV用的做法。
+俄罗斯会在2026年面临军事崩溃吗？乌克兰的战略评估内幕（10月24日）

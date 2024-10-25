@@ -61,6 +61,16 @@ https://www.fluentcpp.com/
 
 一个教你cpp技巧的网站
 
+---
+
+https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md
+
+Bjarne Stroustrup编写的C++编程规范
+
+https://github.com/microsoft/GSL
+
+配合上述规范使用的库，能够发现不合规的代码
+
 # 历史
 
 https://mp.weixin.qq.com/s/cfBT0wsqzZRwedMO7Qz_vA
@@ -386,21 +396,3 @@ C#
 auto lambda = +[] (int a, int b) { return a + b; };
 // +[] means func pointer: int (func*)(int a, int b);
 ```
-
-5.列表初始化
-
-```cpp
-struct Student
-{
-    char* name;
-    int age;
-};
-Student s={"dablelv",18};
-
-std::vector<int> nVec(10, 1); // 包含10个元素，且值为1 
-std::vector<int> nVec{10, 1}; // 包含2个元素，值分别为10,1
-```
-
-https://blog.csdn.net/sevenjoin/article/details/81779221
-
-C++11列表初始化-花括号的使用

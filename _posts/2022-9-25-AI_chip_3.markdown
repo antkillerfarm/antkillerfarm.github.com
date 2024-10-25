@@ -328,6 +328,12 @@ FuriosaAI是韩国的一家AI芯片公司。
 
 ![](/images/img5/FuriosaAI.png)
 
+## 地平线
+
+![](/images/img6/DPX.webp)
+
+地平线主要做智能驾驶领域的AI芯片，和它类似生态位的还有黑芝麻智能。前者于2024.10上市，而后者是2024.8。
+
 ## 行业信息
 
 https://mp.weixin.qq.com/s/vGoWsyaal-gAzsrhPguvFg

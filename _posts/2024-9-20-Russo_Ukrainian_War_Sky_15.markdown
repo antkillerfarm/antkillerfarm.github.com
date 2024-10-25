@@ -11,6 +11,42 @@ category: Russo Ukrainian War Sky
 
 ## 库尔斯克战役（续）
 
+https://www.zhihu.com/pin/1806680039632297984
+
+第一周战况分析
+
+https://zhuanlan.zhihu.com/p/714364160
+
+简单聊聊机械化装备补充和库尔斯克攻势
+
+https://zhuanlan.zhihu.com/p/714722158
+
+乌克兰的库尔斯克2024行动有效削弱了俄罗斯近前线的地面补给线
+
+https://zhuanlan.zhihu.com/p/714684490
+
+由于乌克兰控制了库尔斯克南部，俄罗斯与白俄罗斯南部铁路中断
+
+https://zhuanlan.zhihu.com/p/714967784
+
+普京震怒 俄罗斯名将吉尔金成功预言乌克兰军队将入侵库尔斯克
+
+https://zhuanlan.zhihu.com/p/714945151
+
+关于此次乌军库尔斯克攻势的俘虏问题
+
+https://zhuanlan.zhihu.com/p/715149484
+
+乌克兰进攻俄罗斯的背后：保密、速度和电子干扰
+
+https://news.ifeng.com/c/8cAX3swzkVL
+
+俄乌两条战线各打各的，哪一方会先撑不住？
+
+https://zhuanlan.zhihu.com/p/715979552
+
+“我们将在库尔斯克遭遇最大的抵抗”——库尔斯克行动三名士兵的视角
+
 https://zhuanlan.zhihu.com/p/715986438
 
 俄乌边境史：17世纪的盖特曼·马泽帕购地之处如今战火纷飞

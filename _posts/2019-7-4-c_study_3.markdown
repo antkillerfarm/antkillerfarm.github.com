@@ -7,6 +7,30 @@ category: language
 * toc
 {:toc}
 
+# 各类ptr（续）
+
+多线程的weak_ptr需要使用enable_shared_from_this机制来把this从类内部传递出来，来持有shared_ptr。使用时，用weak_ptr的`lock`函数返回shared_ptr，如果shared_ptr为null，则表明该对象已经被析构了。
+
+---
+
+参考：
+
+https://mp.weixin.qq.com/s/32aeGOPaySjTmyKcjFKgYA
+
+窥见C++11智能指针
+
+https://www.cnblogs.com/wangkeqin/p/9351191.html
+
+C++内存管理之shared_ptr
+
+https://blog.csdn.net/River_Lethe/article/details/78734879
+
+shared_ptr的使用和陷阱
+
+https://blog.csdn.net/qq_38410730/article/details/105903979
+
+weak_ptr弱引用智能指针详解
+
 # decltype
 
 和auto的用法类似，auto不仅要推导类型，还要定义变量，而decltype则只进行类型推导。
@@ -393,32 +417,3 @@ private:
 
 X x;
 ```
-
-由于已经有了`X(int i)`，编译器就不会生成默认的`X()`了，因此`X x;`会出错。解决办法是`X()=default;`。
-
-如果想禁用默认函数的话，可以使用`=delete`。上例中，就是禁用默认的拷贝构造函数的示例。
-
-default仅用于类的特殊成员函数，且该特殊成员函数没有默认参数。
-
-```cpp
-class X {
-public:
-    int f() = default: //错误，f()非特殊成员函数
-    X(int) = default; //错误，非默认构造函数
-    X(int i = 1) = default; // 错误，含有默认参数
-}
-```
-
-参考：
-
-https://www.ibm.com/developerworks/cn/aix/library/1212_lufang_c11new/index.html
-
-C++11标准新特性：Defaulted和Deleted函数
-
-# assert
-
-```cpp
-assert(ExprSymbol && "Function not found");
-```
-
-这个用法挺有意思的。

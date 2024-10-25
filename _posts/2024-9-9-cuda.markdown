@@ -176,7 +176,23 @@ NCU侧重于内核级别的性能分析，例如显示不同block size内核函�
 
 ---
 
+"stall"（停滞）是指warp在执行过程中因为各种原因暂时无法继续执行下一步操作，需要等待某个条件满足后才能继续执行的现象。
+
+CTA：Cooperative Thread Array，即协作线程数组。它是由一组线程组成的集合，这些线程可以执行相同的程序，并且能够相互通信。CTA是CUDA中线程组织的基本单元，通常被称为线程块（Thread Block）。
+
+CTA提供了同步点，允许开发者在需要时对CTA内的所有线程进行同步，例如使用__syncthreads()函数。
+
+---
+
+`vectorAdd<<<4096,256>>>`表示内核函数vectorAdd将在GPU上以4096个块执行，每个块包含256个线程，总共有4096x256个线程。
+
+---
+
 参考：
+
+https://developer.nvidia.com/blog/even-easier-introduction-cuda/
+
+An Even Easier Introduction to CUDA
 
 http://ishare.iask.sina.com.cn/f/17211495.html
 

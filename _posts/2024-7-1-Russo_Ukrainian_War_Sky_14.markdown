@@ -11,6 +11,36 @@ category: Russo Ukrainian War Sky
 
 ## 瓦格纳上洛（续）
 
+https://zhuanlan.zhihu.com/p/639233679
+
+观鹅整活有感（一）
+
+https://zhuanlan.zhihu.com/p/639228653
+
+刚刚，俄罗斯出大事了！
+
+https://zhuanlan.zhihu.com/p/639498942
+
+俄罗斯，就只能这么干了！
+
+https://mp.weixin.qq.com/s/sgC4qLJkd_ZQKXhfuPuf7Q
+
+浅谈瓦格纳兵谏
+
+https://zhuanlan.zhihu.com/p/640890003
+
+刚刚，瓦格纳最后期限到了！
+
+https://news.ifeng.com/c/8QsK5TSqK33
+
+瓦格纳“进军莫斯科”，普里戈任为何前线倒戈？
+
+https://news.ifeng.com/c/8QxrIfKEcwh
+
+瓦格纳叛乱平息得太快？这才是俄罗斯人的正常方式
+
+---
+
 瓦格纳集团一天从罗斯托夫一路横穿三个州，公路突进1200公里，进入莫斯科州，进军速度之快堪称世界军事历史新纪录，远超过91年海湾战争沙漠风暴行动进军速度。
 
 甚至就连瓦格纳集团首领普里戈津，都夸奖了向莫斯科前进的突击队队长乌特金。
@@ -178,41 +208,3 @@ Z-WAR的管理员对库尔斯克的居民相当不满，他说如果库尔斯克
 ---
 
 7月1日，13旅的一个车队打上白三角战术标记，堂而皇之的沿着与白鹅交界的公路溜达了一圈，我认为这是库尔斯克行动前期战术欺骗的一部分，这让鹅误以为白三角标记是边境守卫部队，也潜意识的认为往苏梅机动的部队是为了增强边境的防御。
-
----
-
-https://www.zhihu.com/pin/1806680039632297984
-
-第一周战况分析
-
-https://zhuanlan.zhihu.com/p/714364160
-
-简单聊聊机械化装备补充和库尔斯克攻势
-
-https://zhuanlan.zhihu.com/p/714722158
-
-乌克兰的库尔斯克2024行动有效削弱了俄罗斯近前线的地面补给线
-
-https://zhuanlan.zhihu.com/p/714684490
-
-由于乌克兰控制了库尔斯克南部，俄罗斯与白俄罗斯南部铁路中断
-
-https://zhuanlan.zhihu.com/p/714967784
-
-普京震怒 俄罗斯名将吉尔金成功预言乌克兰军队将入侵库尔斯克
-
-https://zhuanlan.zhihu.com/p/714945151
-
-关于此次乌军库尔斯克攻势的俘虏问题
-
-https://zhuanlan.zhihu.com/p/715149484
-
-乌克兰进攻俄罗斯的背后：保密、速度和电子干扰
-
-https://news.ifeng.com/c/8cAX3swzkVL
-
-俄乌两条战线各打各的，哪一方会先撑不住？
-
-https://zhuanlan.zhihu.com/p/715979552
-
-“我们将在库尔斯克遭遇最大的抵抗”——库尔斯克行动三名士兵的视角
