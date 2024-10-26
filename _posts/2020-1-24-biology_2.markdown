@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 生物（二）, Gilead Sciences
-category: Nature 
+category: Biology
 ---
 
 * toc

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DNA
-category: Nature 
+category: Biology
 ---
 
 * toc

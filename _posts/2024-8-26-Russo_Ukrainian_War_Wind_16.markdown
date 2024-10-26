@@ -222,3 +222,7 @@ https://zhuanlan.zhihu.com/p/715986568
 https://zhuanlan.zhihu.com/p/716077048
 
 俄罗斯逃兵“一周前我还在家看动漫，现在我却要被派到前线”
+
+https://zhuanlan.zhihu.com/p/3185323114
+
+一名乌克兰士兵讲述他在马里乌波尔被俘后的遭遇（10月25日）

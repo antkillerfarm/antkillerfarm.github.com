@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 大陆漂移与古生物
-category: Nature 
+category: Biology
 ---
 
 * toc

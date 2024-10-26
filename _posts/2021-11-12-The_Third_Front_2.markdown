@@ -141,6 +141,10 @@ https://mp.weixin.qq.com/s/qgp97solB7pZauOnlH62wg
 
 云南知青大返城事件
 
+https://www.zhihu.com/question/27567966
+
+中国二汽总部当初为什么选择在十堰？有什么不为人知的原因？
+
 # 两弹一星=
 
 Kyligence CEO韩卿：

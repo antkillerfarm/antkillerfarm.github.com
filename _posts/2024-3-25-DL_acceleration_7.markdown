@@ -71,6 +71,18 @@ https://mp.weixin.qq.com/s/ie2O5BPT-QxTRhK3S0Oa0Q
 
 # NN Quantization
 
+## 量化策略（续）
+
+### 量化技巧
+
+1.设计模型时，需要对输入进行归一化，缩小输入值的值域范围，以减小量化带来的精度损失。
+
+2.tensor中各分量的值域范围最好相近。这个的原理和第1条一致。比如YOLO的结果中，同时包含分类和bbox，而且分类的值域范围远大于bbox，导致量化效果不佳。
+
+3.最好不要使用ReluN这样的激活函数，死的神经元太多。神经元一旦“死亡”，相应的权值就不再更新，而这些值往往不在正常范围内。
+
+4.对于sigmoid、tanh这样的S形函数，其输入在$$\mid x \mid > \sigma$$范围的值，最终的结果都在sigmoid、tanh的上下限附近。因此，可以直接将这些x值量化为$$\sigma$$。这里的$$\sigma$$的取值，对于sigmoid来说是6，而对于tanh来说是3。
+
 ## NN硬件的指标术语
 
 MACC：multiply-accumulate，乘法累加。

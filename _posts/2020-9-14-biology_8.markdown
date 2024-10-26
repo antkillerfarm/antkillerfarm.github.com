@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 仿生学, 医学
-category: Nature 
+category: Biology
 ---
 
 * toc

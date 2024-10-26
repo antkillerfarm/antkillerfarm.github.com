@@ -191,9 +191,19 @@ https://martinfowler.com/eaaDev/uiArchs.html
 
 ---
 
+Model-View-Controller：
+
+![](/images/img6/MVC.webp)
+
+除了Model不需要了解Controller与View的细节，相对独立之外，V和C都需要知道对方以及M的细节，耦合较大。
+
 MVVM最早由微软提出来，它借鉴了桌面应用程序的MVC思想，在前端页面中，把Model用纯JavaScript对象表示，View负责显示，两者做到了最大限度的分离。
 
 把Model和View关联起来的就是ViewModel。ViewModel负责把Model的数据同步到View显示出来，还负责把View的修改同步回Model。
+
+![](/images/img6/MVVM.webp)
+
+View不需要了解ViewModel的实现细节，但是会声明自己所需要的数据类型。ViewModel和Model紧耦合。
 
 ---
 

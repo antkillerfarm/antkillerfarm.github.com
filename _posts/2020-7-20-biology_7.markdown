@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 生物（三）
-category: Nature 
+category: Biology
 ---
 
 * toc

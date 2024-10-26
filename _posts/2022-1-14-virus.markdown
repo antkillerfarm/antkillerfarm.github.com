@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  病毒（一）
-category: Nature 
+category: Biology
 ---
 
 * toc
