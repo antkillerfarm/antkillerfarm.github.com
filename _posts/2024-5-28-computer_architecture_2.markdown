@@ -53,7 +53,7 @@ https://blog.csdn.net/JiangTao2333/article/details/124530699
 
 超长指令字(VLIW:Very long instruction word)和超标量（superscalar）都在同一个CPU中，集成了数套运算单元。
 
-超标量**用硬件来决定**哪些指令可以并行执行，而VLIW采**用软件来决定**哪些指令并行，通过把指令调度的复杂度交给编译器来降低硬件复杂度。
+超标量**用硬件来决定**哪些指令可以并行执行，而VLIW采**用软件来决定**哪些指令并行，通过把指令调度的复杂度交给编译器来降低硬件复杂度。超标量CPU，有时也称为宽架构CPU。
 
 VLIW的代表是Intel的Itanium处理器。当处理器的执行宽度(execution width)，指令执行延迟时间，执行单元个数(function unit)改变时，VLIW需要重新编译程序来适应。但是Superscalar却不需要。
 
@@ -149,13 +149,19 @@ https://www.zhihu.com/question/641481229
 
 加长流水线既然不行，加宽流水线就成为了必然，超标量、GPU都是这方面的尝试。
 
+---
+
+苹果过去强，主要是工艺领先一步，设计上敢加宽架构，现在都用宽架构了，都用台积电新工艺了，差距就不大了。
+
+---
+
 https://www.zhihu.com/question/26289306
 
 处理器（CPU）流水线长度是否存在理论极限?
 
 https://www.starduster.me/2020/11/05/modern-microprocessors-a-90-minute-guide
 
-现代微处理器架构 90 分钟指南
+现代微处理器架构90分钟指南
 
 ## 参考
 
