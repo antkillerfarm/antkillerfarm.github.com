@@ -102,7 +102,7 @@ https://blog.csdn.net/qq_40491305/article/details/130898052
 
 向量搜索在搜索、推荐、NLP等众多应用领域被广泛的使用，典型的互联网业务，包括电商、出行、点评、地图等都大量使用相关技术。随着ChatGPT带来的AI技术应用新热潮，向量数据库又一次地获得了更多的关注。它可以解决LLM不长记性（Memory，记忆）的问题。
 
-普遍认为 LLM + Vector Search + API pool 会变成复杂AI场景的标准解决方案。
+普遍认为LLM+Vector Search+API pool会变成复杂AI场景的标准解决方案。
 
 类似Pinecone，Weaviate，Qdrant，Chroma这样的专用向量数据库最初是为了解决ChatGPT的记忆能力不足而出现的Workaround。
 

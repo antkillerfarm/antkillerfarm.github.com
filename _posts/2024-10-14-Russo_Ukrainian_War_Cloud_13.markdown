@@ -392,3 +392,7 @@ https://zhuanlan.zhihu.com/p/721478210
 https://zhuanlan.zhihu.com/p/718966456
 
 俄罗斯空天军为何在乌克兰的表现远低于战前预期
+
+https://zhuanlan.zhihu.com/p/3987956837
+
+无人机一周内袭击7家酒厂，乌克兰要帮助俄罗斯士兵戒酒吗？

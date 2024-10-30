@@ -35,7 +35,7 @@ https://www.zhihu.com/question/653658936
 
 ![](/images/img5/sharing_wide.jpg)
 
-KV Cache的使用方式一般如上图所示。其中蓝色表示输入里可以share的部分，绿色表示输入里不可以share的部分，黄色表示输出。
+KV Cache的使用方式一般如上图所示。其中蓝色表示输入里可以share的部分（即KV Cache），绿色表示输入里不可以share的部分，黄色表示输出。
 
 ---
 

@@ -15,6 +15,8 @@ category: Russo Ukrainian War Sky
 
 ![](/images/img4/stamp.png)
 
+![](/images/img6/the-russian-navy-to-the-bottom-souvenir-sheet.jpg)
+
 https://zhuanlan.zhihu.com/p/524856209
 
 谁说非洲人民不支持乌克兰的？看看非洲的邮票就清楚了

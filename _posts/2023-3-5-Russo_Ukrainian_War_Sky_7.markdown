@@ -69,6 +69,12 @@ https://www.zhihu.com/question/621007019
 
 ---
 
+![](/images/img6/Free-to-choose-sheet-of-stamps.jpg)
+
+亚速10周年纪念邮票（2024.5.23）
+
+---
+
 https://zhuanlan.zhihu.com/p/583780108
 
 得不偿失的胜利：俄乌马里乌波尔之战回顾
