@@ -260,6 +260,14 @@ Pytorch Mac GPU训练与测评
 
 ## quantization
 
+torchao：用于自定义数据类型和优化的PyTorch库，提供量化、稀疏权重、梯度、优化器和激活等方面的优化。
+
+代码：
+
+https://github.com/pytorch/ao
+
+---
+
 https://pytorch.org/tutorials/prototype/quantization_in_pytorch_2_0_export_tutorial.html
 
 Quantization in PyTorch 2.0 Export Tutorial

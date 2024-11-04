@@ -99,6 +99,14 @@ gemmlowp是Google提出的一个支持低精度数据的GEMM（General Matrix Mu
 
 https://github.com/google/gemmlowp
 
+## FBGEMM
+
+FBGEMM（Facebook General Matrix Multiplication）是一个专为服务器端推理设计的低精度、高效率的矩阵乘法和卷积库。它提供了小批量大小的高效低精度矩阵乘法，并支持行向量量化和异常感知量化等减少精度损失的技术，以实现极致的计算性能。
+
+代码：
+
+https://github.com/pytorch/FBGEMM
+
 ## 论文
 
 《Quantizing deep convolutional networks for efficient inference: A whitepaper》

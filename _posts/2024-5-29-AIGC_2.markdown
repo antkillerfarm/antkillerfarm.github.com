@@ -159,6 +159,14 @@ Stable Diffusion XL = SD + GAN
 
 采用Trajectory Segmented Consistency Distillation技术，达到One-step生成的目的。
 
+## Human Motion Diffusion Model
+
+Diffusion Model不仅可用于文生图，还可以用于机器人领域，实现文本到动作的转换。
+
+https://blog.csdn.net/v_JULY_v/article/details/142854390
+
+从MDM、RobotMDM到UCSD的Exbody——人体运动扩散模型：赋能机器人的训练
+
 # SORA
 
 https://openai.com/research/video-generation-models-as-world-simulators
@@ -292,3 +300,22 @@ Visual Auto Regressive认为传统AR模型自上而下、逐行扫描的光栅�
 VAR的另一个显著优势是大幅提高了生成速度：在自回归的每一步（每一个尺度内部），所有图像token是一次性并行生成的；跨尺度则是自回归的。这使得在模型参数和图片尺寸相当的情况下，VAR能比传统AR快数十倍。
 
 VAR也是首个效果和性能达到Diffusion模型水平的AR模型。
+
+---
+
+VAR的一作田柯宇，后来干了一票大事：
+
+https://www.zhihu.com/question/1296528119
+
+字节跳动大模型训练被实习生恶意注入破坏代码，涉事者已被辞退，攻击带来的影响有多大？
+
+# LLaVA
+
+LLaVA（Large Language and Vision Assistant）是一个大型的多模态模型，它的能力包括：
+
+- 理解视频/图片的内容。
+- 根据用户指令生成视频/图片。
+
+https://zhuanlan.zhihu.com/p/692398098
+
+LLaVA系列多模态大模型总结

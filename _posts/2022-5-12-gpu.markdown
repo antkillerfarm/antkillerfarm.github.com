@@ -245,6 +245,10 @@ https://zhuanlan.zhihu.com/p/463629676
 
 从AI系统角度回顾GPU架构变迁--从Fermi到Ampere
 
+https://zhuanlan.zhihu.com/p/4610879668
+
+Nvidia GPU架构精读系列——Ampere
+
 https://zhuanlan.zhihu.com/p/446830540
 
 GPU架构（上）—AI芯片设计入门

@@ -59,6 +59,8 @@ https://blog.csdn.net/taoqick/article/details/79475350
 
 ![](/images/img4/activation.png)
 
+![](/images/img6/activation.png)
+
 ## 激活函数的作用
 
 神经网络中激活函数的主要作用是提供网络的**非线性建模能力**，如不特别说明，激活函数一般而言是非线性函数。

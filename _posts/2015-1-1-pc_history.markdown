@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  我的PC简史
+title:  我的PC简史（一）
 category: my story 
 ---
 

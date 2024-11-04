@@ -190,6 +190,8 @@ AI训练的最大障碍不是算力，而是“内存墙”
 
 在每个mini-batch的前向过程中删除一些暂时用不到的中间激活特征以降低内存占用，并在后向过程中需要时借助额外的前向计算恢复它们。
 
+>在PyTorch中，save_for_backward函数用于在自定义的autograd.Function实现中保存中间变量，以便在后续的反向传播过程中使用。
+
 https://zhuanlan.zhihu.com/p/373662730
 
 亚线性内存优化—activation checkpointing在oneflow中的实现

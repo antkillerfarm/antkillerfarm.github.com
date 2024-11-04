@@ -89,6 +89,10 @@ https://www.zhihu.com/question/611317976
 
 ---
 
+举世闻名的《钟声颂歌》的乌克兰作曲家尼古拉·莱昂托维奇于1921年被契卡杀害。随着俄国法西斯再次入侵，波克罗夫斯克市纪念他的雕像不得不拆除搬迁。
+
+---
+
 https://mp.weixin.qq.com/s/u7C1THhjnWLRLR4z7casbQ
 
 在乌克兰，日常生活与国家的分裂

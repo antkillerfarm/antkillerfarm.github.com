@@ -69,6 +69,12 @@ DS-Ulysses 对Q、K、V沿着N维度切分成P份，三个分布式矩阵通过A
 
 ![](/images/img5/SP.jpg)
 
+和DeepSpeed Ulysses同期的SP方案还有Ring-Attention：
+
+![](/images/img6/Ring-Attention.png)
+
+图中的P2P是point to point的意思，Ring-Attention不需要集合通信，取而代之的是相邻结点的P2P通信。
+
 https://zhuanlan.zhihu.com/p/689067888
 
 大模型训练之序列并行双雄：DeepSpeed Ulysses和Ring-Attention

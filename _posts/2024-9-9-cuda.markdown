@@ -55,10 +55,11 @@ CUTLASS主要基于以下指令：
 - WMMA（Warp Matrix Multiply-Accumulate）
 - WGMMA（Warp Group Matrix Multiply-Accumulate）
 - TMA（Tensor Memory Accelerator）：用于在global memory和shared memory之间搬运数据。
+- BMMA（Binary Matrix Multiply-Accumulate）：提供按位操作的矩阵乘法。
 
 ---
 
-CuTe就是CUDA Tensor。更准确地说，是nvidia在CUTLASS 3.0项目中开发并提供的一组C++ CUDA Template抽象工具，它主要用于定义和操作在CUDA中的有多维分层layout的线程和数据。
+CuTe，全称为"collection of C++ CUDA template abstractions for defining and operating on hierarchically multidimensional layouts of threads and data"，是一个处理嵌套layout的模板抽象的集合，其并不提供**现成算子**支持，而是给出数据结构，使得复杂的线性代数计算得以加速。
 
 https://dingfen.github.io/2024/08/18/2024-8-18-cute/
 
@@ -83,6 +84,18 @@ https://www.zhihu.com/question/451127498
 https://developer.nvidia.com/blog/cutlass-linear-algebra-cuda/
 
 CUTLASS: Fast Linear Algebra in CUDA C++
+
+https://zhuanlan.zhihu.com/p/663092747
+
+cute之MMA抽象
+
+https://zhuanlan.zhihu.com/p/712451053
+
+cutlass GEMM流水线——single-stage、pipelined、multi-stage
+
+https://research.colfax-intl.com/cutlass-tutorial-wgmma-hopper/
+
+CUTLASS Tutorial: Fast Matrix-Multiplication with WGMMA on NVIDIA® Hopper™ GPUs
 
 ## PTX
 
@@ -156,6 +169,24 @@ Transformer Engine（TE）是一种专门用于加速Transformer模型在NVIDIA 
 
 https://github.com/NVIDIA/TransformerEngine
 
+## Thrust
+
+Thrust是一个C++库，它提供了对GPU加速并行算法的便捷访问。
+
+它对标的是STL和TBB（Threading Building Blocks），后者是Intel开源的并行计算的C++模板库。
+
+## 访存
+
+从Ampere架构开始，引入了异步访存指令。
+
+同步版本的流水线访存就是ld.global到regsiters，然后 st.shared写入到共享内存，它们都会阻塞计算指令，但是warp scheduler会通过warp切换，让其他已经eligible的warp继续执行（本质上还是ILP），因此，一般同步版本最多开双流水（double-buffer），因为需要额外的寄存器进行prefetch，占用率不会太高，计算没法更好地掩盖访存的延迟。
+
+异步版本是硬件层面的异步指令（cp/store.async），本身计算和访存单元就是可以独立运行的，有了异步层级的指令支持后，可以充分发挥这一特点，指令不会阻塞计算指令，但是需要fence/barrier等同步手段，因此，warp可以继续执行下去（如果条件允许），此外，这些指令需要消耗额外的寄存器进行预取，直接 global->shared 或者 shared -> global，一般可以开2-4条流水。
+
+https://zhuanlan.zhihu.com/p/709750258
+
+Tensor Memory Access（TMA）
+
 ## CUDA实战
 
 安装：
@@ -181,6 +212,8 @@ NCU侧重于内核级别的性能分析，例如显示不同block size内核函�
 CTA：Cooperative Thread Array，即协作线程数组。它是由一组线程组成的集合，这些线程可以执行相同的程序，并且能够相互通信。CTA是CUDA中线程组织的基本单元，通常被称为线程块（Thread Block）。
 
 CTA提供了同步点，允许开发者在需要时对CTA内的所有线程进行同步，例如使用__syncthreads()函数。
+
+和Thread Block密切相关的概念还有Data Block，用于规划数据的访存。
 
 ---
 

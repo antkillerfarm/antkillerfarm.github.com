@@ -327,10 +327,6 @@ https://blog.csdn.net/v_JULY_v/article/details/142796658
 
 OmniH2O——通用灵巧且可全身远程操作并学习的人形机器人
 
-https://blog.csdn.net/v_JULY_v/article/details/142854390
-
-从MDM到RobotMDM——人体运动扩散模型：赋能机器人的训练
-
 https://blog.csdn.net/v_JULY_v/article/details/142769965
 
 VLM驱动机器狗——从UMI on Legs到Helpful DoggyBot：分别把机械臂装到机器狗背上、夹爪装到机器狗嘴里
