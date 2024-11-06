@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  设计模式
+title:  设计模式, 数据结构 & 普通CS算法（二）
 category: resource 
 ---
 
@@ -89,20 +89,222 @@ https://refactoringguru.cn/design-patterns
 
 一个设计模式的教学站
 
-# 常凯申+
+# 数据结构 & 普通CS算法
 
-在中美贸易战开始到现在，对台湾的凤梨、带鱼、山竹、红虾等农产品进行了多轮制裁，导致台湾的人均GDP“跌至”世界第七，亚洲第一，第一次超过日韩水平。人均年收入在2015年后持续升高，从马英九时代的11900美元升到2022年的15700美元。
+https://mp.weixin.qq.com/s/o0JFTpGa4MLtDKHf4B2Ing
+
+快速理解为啥这个查询使用索引，那个查询不使用索引
+
+https://mp.weixin.qq.com/s/CtPywscoA_FvF2d9NLEenw
+
+如何从100亿URL中找出相同的URL？
+
+https://mp.weixin.qq.com/s/bdZ5e8CaiPuI8TpLNRrFUQ
+
+大数据近似最近邻搜索哈希方法综述（上）
+
+https://mp.weixin.qq.com/s/jiZw-x6EMhUIySIObm5XjA
+
+大数据近似最近邻搜索哈希方法综述（下）
+
+https://mp.weixin.qq.com/s/jeQawOIomUAjIp7GhuBk3A
+
+一致性哈希算法及其在分布式系统中的应用
+
+https://blog.csdn.net/cywosp/article/details/23397179
+
+五分钟理解一致性哈希算法(consistent hashing)
+
+https://mp.weixin.qq.com/s/jxr2titD0BXBUEmAwkOi7A
+
+一致性哈希
+
+https://www.cnblogs.com/BCOI/p/9072444.html
+
+TREAP
+
+https://blog.csdn.net/simpsonk/article/details/72832959
+
+史上最强图解Treap总结
+
+https://mp.weixin.qq.com/s/SIsNagNKudVUFPKyCaUYCw
+
+Treap——堆和二叉树的完美结合，性价比极值的搜索树
+
+https://blog.csdn.net/yishizuofei/article/details/81660841
+
+多路查找树：2-3树、2-3-4树、B树、B+树、B*树、R树
+
+https://mp.weixin.qq.com/s/D9kdAPws1XXZUyd0IKUzyw
+
+理解B+树
+
+https://mp.weixin.qq.com/s/l08OYNlTxDKGEQnULjPV6g
+
+你管这破玩意叫B+树?
+
+https://mp.weixin.qq.com/s/8gDVqlywLBl-MZa6XrtXug
+
+为什么磁盘存储引擎用b+树来作为索引结构？
+
+https://mp.weixin.qq.com/s/M5syxE9Ln4UDLThPh5iuJg
+
+各种字符串Hash函数比较
+
+https://blog.csdn.net/wo541075754/article/details/54632929
+
+Merkle Tree（默克尔树）算法解析（Merkle Tree，通常也被称作Hash Tree，顾名思义，就是存储hash值的一棵树。）
+
+https://mp.weixin.qq.com/s/M8U9B7UA2AdfnJi5EpTv-g
+
+算法面试中经常问的“字符串”问题
+
+https://mp.weixin.qq.com/s/QHounf4el7nmXnpMSJHjvg
+
+这个问题不简单：寻找缺失元素
+
+https://blog.csdn.net/changtao381/article/details/8936765
+
+Splay Tree（一种二叉排序树）
+
+https://mp.weixin.qq.com/s/p4tddWB4kjFufkv3x2SYpw
+
+图解6种树，你心中有数吗
+
+https://mp.weixin.qq.com/s/fAYjIcFlHoXK2E38JJSFpA
+
+C++优先队列priority_queue
+
+https://mp.weixin.qq.com/s/KZq5SjPESQnQaNU1Mn5a-A
+
+一文把三个经典求和问题吃的透透滴
+
+https://www.zhihu.com/question/20298134
+
+即时战略游戏中实用的寻路算法都有哪些，比较如何？
+
+http://blog.codinglabs.org/articles/algorithms-for-cardinality-estimation-part-i.html
+
+解读Cardinality Estimation算法
+
+https://mp.weixin.qq.com/s/zQJve_w5OoM6u-WcSWArdQ
+
+神速Hash
+
+https://www.codeproject.com/Articles/69941/Best-Square-Root-Method-Algorithm-Function-Precisi
+
+Best Square Root Method
+
+https://zhuanlan.zhihu.com/p/332996578
+
+陈丹琦分治算法
+
+# 安全+
+
+现在所谓的安卓模拟器实际上不是真正的模拟器，而是安装在win上的x86版安卓虚拟机（是x86版安卓虚拟机而不是ARM版），这些游戏会检测你用的是x86库还是arm库。所以你用小米平板2之类英特尔处理器的安卓平板玩一样会被封号，这些游戏只会检查你的安卓是x86版还是arm版，分不清你是物理机还是虚拟机。
 
 ---
 
-重庆号上只有管武器的枪炮长是共产党，说是起义其实就是武装夺取。舰长实际没多少想法，只是投的比较快罢了。
+https://mp.weixin.qq.com/s/YNMw8u7O6u7Bc4-mnrwRXg
 
----
+老听别人说加密算法，现在给你个机会深入了解下
 
-张发奎，918事变后不久的1931年11月便宣布抗日，宣称要率军北上黑龙江，支援在黑龙江反正的马占山；南京政府听闻之后非常高兴，但是考虑到张发奎的部队在广西，北上黑龙江的路途过于遥远，不如直接率军前往上海，日军正准备进攻上海，在上海一样能抗日，但是你猜最后怎么着？
+http://www.xfyun.cn/share/?p=2626
 
-张发奎不愿意去上海，张发奎在后来在写回忆录时非常诚实的表示，第四军北上黑龙江是不现实的，所谓的抗日只是他的烟雾弹而已。他宣布抗日仅仅是因为与桂系不和，担心第四军被桂系吞掉，所以要找个高大上的借口离开广西。
+开发者常犯的十大加密错误
 
-1933年2月，日军进攻热河，东北军不战自退，随后爆发了长城抗战，长城抗日期间，冯玉祥始终未有任何动作，1933年5月19日，古北口战役结束，长城抗战基本结束，5月25日，中日双方宣布停火，同时进行停战谈判。
+https://mp.weixin.qq.com/s/nWoo-Pr50341WJNwtSZq1w
 
-就在双方宣布挺火的第二天，也就是1933年5月26日，冯玉祥蹦出来宣布抗日了，在张家口发动政变，组建抗日政府，时任察哈尔省主席宋元哲正在北平指挥抗日，冯玉祥是他的老上司，虽然不赞成这一举动，但是也不便与老上司争执，所以只得让出了省主席的职务。
+工程师的灵魂拷问：你的密钥安全吗？
+
+https://mp.weixin.qq.com/s/z5zMETSMUGoTiZYMooKZ-g
+
+内核空间镜像攻击揭秘：ARM硬件特性，竟能开启安卓8终端的上帝模式？
+
+https://mp.weixin.qq.com/s/f6SY7Me9Ls3AZNxK0rHz7g
+
+密码加密时的加盐（salt）是什么
+
+https://mp.weixin.qq.com/s/isNd6ByZKdMjFtFL8LOVGA
+
+什么？用5G需要换SIM卡？！
+
+https://zhuanlan.zhihu.com/p/255171562
+
+椭圆曲线加密与NSA后门考古
+
+https://zhuanlan.zhihu.com/p/36326221
+
+ECC椭圆曲线加密算法：介绍
+
+https://zhuanlan.zhihu.com/p/44743146
+
+ECC椭圆曲线加密算法：有限域和离散对数
+
+https://zhuanlan.zhihu.com/p/66794410
+
+ECC椭圆曲线加密算法：ECDH和ECDSA
+
+https://zhuanlan.zhihu.com/p/188502565
+
+ECC椭圆曲线加密算法：破解难度及对比RSA
+
+https://mp.weixin.qq.com/s/PVtjsprXl_LxAhaalNUqlA
+
+Hook技术解析
+
+https://mp.weixin.qq.com/s/LDO0vGjOqm1ZRc1wXgTNNw
+
+黑客必备二十大神器！
+
+https://mp.weixin.qq.com/s/3RP9m2uI2rA8p0Mw9E8ZQg
+
+每个程序猿都该了解的黑客技术大汇总
+
+https://mp.weixin.qq.com/s/zrLnbYl4awGoo2P9_l7bXQ
+
+中国顶级黑客Top10
+
+https://mp.weixin.qq.com/s/uYJPgFd8kOTvBPa3fgiOzg
+
+什么是堡垒机？为什么需要堡垒机？
+
+https://mp.weixin.qq.com/s/7-GePGOi1R9QFaUUKya3lw
+
+Linux应急响应入门——入侵排查
+
+https://mp.weixin.qq.com/s/1Tsm22nvnrjN-UdojT5mdg
+
+一个小小指针，竟把Linux内核攻陷了！
+
+https://mp.weixin.qq.com/s/c2jxmn7FaQ0ePY_luS2fGQ
+
+实现用户一键登录的方案有哪些？
+
+https://mp.weixin.qq.com/s/E6eYBob3WzuLFEuGJZSNtQ
+
+怎么知道谁动了我的Linux主机?
+
+https://mp.weixin.qq.com/s/0NvbRK41BT4yinFUuVxa3A
+
+发现一个木马，竟然偷传我珍藏几十G的视频！
+
+https://j00ru.vexillium.org/syscalls/nt/64/
+
+Windows X86-64 System Call Table
+
+https://www.zhihu.com/question/356008082
+
+电脑软件（例如 Adobe、Autodesk）为什么那么容易被破解？
+
+https://mp.weixin.qq.com/s/yCB2R8QPWNp2lJrQD4l_hw
+
+聊聊移动端安全加固
+
+https://zhuanlan.zhihu.com/p/28528257
+
+美国人写了一个只靠U盘传播的病毒，毁了伊朗的核计划
+
+https://www.sohu.com/a/250882983_355019
+
+一个42KB的文件，解压完其实是个4.5PB的“炸弹”

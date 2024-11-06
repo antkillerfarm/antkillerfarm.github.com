@@ -143,6 +143,10 @@ https://mp.weixin.qq.com/s/myAUMq4hknEcZ7X2Xx455g
 
 万字长文回顾智能驾驶进化史
 
+https://mp.weixin.qq.com/s/iqiKeMgGIsCuvoNtyi-yaw
+
+伯克利具身智能图谱：深度强化学习浪尖上的中国90后们
+
 ## 课程
 
 http://selfdrivingcars.mit.edu/
@@ -188,19 +192,3 @@ CptS 483: Introduction to Robotics
 http://www.eecs.wsu.edu/~taylorm/2011_cs420/index.html
 
 CS 420：Artificial Intelligence
-
-http://ctms.engin.umich.edu/CTMS/index.php
-
-这个网页提供了很多机械的控制算法——从系统、控制到仿真的全过程的教程。
-
-https://github.com/Microsoft/AutonomousDrivingCookbook/tree/master/AirSimE2EDeepLearning
-
-这是微软提供的自动驾驶课程
-
-https://www.doc.ic.ac.uk/~ajd/Robotics/index.html
-
-CS 333: Robotics
-
-https://mp.weixin.qq.com/s/T7wI4cjKbciYC3ZNxKfReA
-
-143页 MIT自动驾驶算法地图推理教程

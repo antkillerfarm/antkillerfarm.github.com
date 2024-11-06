@@ -202,6 +202,14 @@ https://zhuanlan.zhihu.com/p/610800518
 
 Optimum + ONNX Runtime: 更容易、更快地训练你的Hugging Face模型
 
+# xFormers
+
+xFormers是Meta推出的基于PyTorch的深度学习库，专注于Transformer架构的优化和应用。
+
+代码：
+
+https://github.com/facebookresearch/xformers
+
 # Pytorch
 
 https://mp.weixin.qq.com/s/yGtDUbvO2APT88MwcSh8IA

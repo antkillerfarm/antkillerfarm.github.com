@@ -191,10 +191,6 @@ https://www.zhihu.com/question/513865370
 
 ---
 
-现在所谓的安卓模拟器实际上不是真正的模拟器，而是安装在win上的x86版安卓虚拟机（是x86版安卓虚拟机而不是ARM版），这些游戏会检测你用的是x86库还是arm库。所以你用小米平板2之类英特尔处理器的安卓平板玩一样会被封号，这些游戏只会检查你的安卓是x86版还是arm版，分不清你是物理机还是虚拟机。
-
----
-
 阿拉伯之春的时候，埃及就有黑客使用tor，但是因为发布帖子和住宅的流量分析一致，因此被抓。
 
 ---
@@ -203,44 +199,18 @@ https://www.zhihu.com/question/513865370
 
 一般人看到密码错误，都会以为自己不小心摁错了，所以会再输一遍一样的。但暴力破解的就会不再试这个密码了。暴力破解跑字典效率本来就低，每个密码重复n次，整体效率直接降到n分之一，再考虑到有些登录是有多次密码错误再次尝试的时间限制的，实际上暴力破解几乎不可能采用同一个密码重复输的策略。
 
-## 参考
+---
 
-https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
+Vigenère密码是一种多字母替换密码，由16世纪的法国外交官Blaise de Vigenère发明，它提供了比简单的凯撒密码更高的安全性。
 
-前端安全系列之一：如何防止XSS攻击？
+破解恩格玛机的第一次突破并不是来自英国人，而是波兰人雷耶夫斯基（Marian Rejewski）。
 
-http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
+在密文中猜测出几个单词的明文并不困难，因为循规蹈矩的德国人在信息正文中喜欢用固定的词组，比如Keine besonderen Ereignisse（无特殊情况），Heil Hitler（希特勒万岁）等。
 
-理解OAuth 2.0
+在早上6点钟截获的电文开头中肯定包含wetter（天气）这个词。
 
-https://my.oschina.net/u/4231722/blog/3154805
+很多德军发报员在被要求随机选择三个字母作为信息密钥的时候，为了省事就在键盘上上随便敲下ABC或者XYZ这样简单的组合。
 
-IM的扫码登录功能如何实现？一文搞懂主流的扫码登录技术原理
+https://www.zhihu.com/question/28397034
 
-https://mp.weixin.qq.com/s/QsKceFcxELbUDSbehs8QpQ
-
-解读https的正确姿势
-
-https://www.cnblogs.com/linianhui/category/929878.html
-
-一个认证授权方面的专栏
-
-https://mp.weixin.qq.com/s/OLg_wocXJz7VGDabTtxdWQ
-
-Web登录很简单？开玩笑！
-
-https://mp.weixin.qq.com/s/agS2-wu6HGO__QfbIt7Esw
-
-数字签名是什么？
-
-https://mp.weixin.qq.com/s/YNMw8u7O6u7Bc4-mnrwRXg
-
-老听别人说加密算法，现在给你个机会深入了解下
-
-http://www.xfyun.cn/share/?p=2626
-
-开发者常犯的十大加密错误
-
-https://mp.weixin.qq.com/s/nWoo-Pr50341WJNwtSZq1w
-
-工程师的灵魂拷问：你的密钥安全吗？
+《模仿游戏》中艾伦·图灵是如何破译英格玛的？

@@ -11,6 +11,22 @@ category: robot
 
 ## 课程（续）
 
+http://ctms.engin.umich.edu/CTMS/index.php
+
+这个网页提供了很多机械的控制算法——从系统、控制到仿真的全过程的教程。
+
+https://github.com/Microsoft/AutonomousDrivingCookbook/tree/master/AirSimE2EDeepLearning
+
+这是微软提供的自动驾驶课程
+
+https://www.doc.ic.ac.uk/~ajd/Robotics/index.html
+
+CS 333: Robotics
+
+https://mp.weixin.qq.com/s/T7wI4cjKbciYC3ZNxKfReA
+
+143页 MIT自动驾驶算法地图推理教程
+
 http://abcinstitute.baidu.com/pages/index.html#/specialInfo?specialId=4008
 
 百度的自动驾驶课程
@@ -426,31 +442,3 @@ https://mp.weixin.qq.com/s/ANKdDuCxMZAWHEfQbN54MA
 https://mp.weixin.qq.com/s/K5MJTYmuJ4Vv0sKT-VpDvg
 
 一种基于ACP理论的平行车道线检测方法，能有效解决目前车道线检测的困境
-
-https://mp.weixin.qq.com/s/heh6B71IQ5NjmaTo6BaXdA
-
-无人驾驶图像识别-车道线检测
-
-https://mp.weixin.qq.com/s/aaqd0crHdk2WyKO4J9hmDg
-
-自动驾驶中的车道线跟踪技术
-
-https://mp.weixin.qq.com/s/NvVh3GO9iOGsftYgOlRb3Q
-
-300+FPS！浙大提出一种超快速车道线检测方法
-
-https://mp.weixin.qq.com/s/ekN9AvS4V0dcDdBlGCs3Bg
-
-车道线检测：SCNN
-
-https://mp.weixin.qq.com/s/xXdbWpegLdxFMuHldMGKVA
-
-车道线Dark SCNN算法简述及车道线后处理代码细节简述
-
-https://www.cnblogs.com/guoyaohua/p/8940871.html
-
-SCNN车道线检测--(SCNN)Spatial As Deep: Spatial CNN for Traffic Scene Understanding（论文解读）
-
-https://mp.weixin.qq.com/s/pQUKFZRgG1LNPmE6oHY3GA
-
-CurcveLane-NAS：华为&中大提出一种结合NAS的曲线车道检测算法

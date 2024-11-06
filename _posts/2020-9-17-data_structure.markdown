@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数据结构 & 普通CS算法
+title:  数据结构 & 普通CS算法（一）
 category: resource 
 ---
 

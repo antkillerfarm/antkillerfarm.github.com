@@ -207,6 +207,13 @@ https://blog.csdn.net/qq_41554005/article/details/119765334
 
 GPU存储资源：寄存器，本地内存，共享内存，缓存，显存等存储器细节
 
+| Hardware Level | Parallel Agent | Data Locale | Capacity @ Bandwidth |
+|:--:|:--:|:--:|:--:|
+| Chip | Grid | Global memory | 80 GiB @ 3.35 TB/s |
+| GPC | Threadblock Clusters | L2 | 50 MiB @ 12 TB/s |
+| SM | Threadblock (CTA) | Shared Memory | 228 KiB per SM, 31TB/s per GPU |
+| Thread | Thread | Registers Files | 256 KiB per SM |
+
 ---
 
 通信的问题，其本质是数据的共享。因此，质不够量来凑，也是一个不错的方法。

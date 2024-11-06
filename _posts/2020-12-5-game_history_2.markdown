@@ -11,6 +11,14 @@ category: my story
 
 ## 2021.2（续）
 
+- 抗日陆战。
+
+平津前线日军也就10个师左右，伪满以民兵为主，战斗力更差。
+
+转折点在光复奉天前后，鬼子第二波还会有12个师（登陆8个师+朝鲜4个师）左右。所以南线始终要保持20个师左右，其他地区派少量部队扫荡即可，都是些无聊的追击战而已。
+
+这里我犯了个错，南线只有15个师，且好多部队经过作战，组织度不满，差点被反推。
+
 - 目前已经把鬼子推下海，但海战还没头续。
 
 海战单位建造周期较长，需要提前布局。主要是航母和运输船。
@@ -244,57 +252,3 @@ fc开发商很有创意的把游戏卡做成了一个单板机，这就导致fc�
 国产开源主机爆发的开端是一名叫司徒（Steward Fu）的台湾程序员大神，将某名不见经传的闭源mp4设备（全志芯片+全志开发的Melis OS），刷入另外一个开源掌机系统（OpenDingux）。至此周、张、谢等人才有机会将国内开源掌机这条路走通。
 
 无论是4770用的OpenDingux，还是3326用的EmuELEC，再或者里面的RetroArch模拟器这些东西都是开源的。
-
-Steward Fu的个人主页：
-
-https://steward-fu.github.io/website/
-
-EmuELEC官网：
-
-https://github.com/EmuELEC/EmuELEC/
-
-参考：
-
-https://zhuanlan.zhihu.com/p/482019157
-
-复古游戏与开源掌机的基础知识
-
-https://zhuanlan.zhihu.com/p/473777088
-
-FC/NES模拟器选择指南
-
-https://zhuanlan.zhihu.com/p/97851599
-
-将前端技术栈移植到掌上游戏机
-
-https://www.zhihu.com/question/451164963
-
-开源掌机是如何诞生和发展的？
-
-https://zhuanlan.zhihu.com/p/40805178
-
-给外甥的暑假礼物——复古掌机Retro Game
-
----
-
-2024.1
-
-雷电无线手柄到位，开始寻找模拟器。
-
-PCSX2：PS2模拟器
-
-WinKawaks：街机模拟器
-
-MAME：老牌的多平台开源模拟器。但是使用不是很方便，我捣鼓半天也没弄好。
-
-Mednafen：新近流行的多平台开源模拟器。
-
-官网：
-
-https://mednafen.github.io
-
-但是这个软件是基于命令行的，所以一般需要使用mednaffe作为它的GUI前端。
-
-mednaffe官网：
-
-https://github.com/AmatCoder/mednaffe

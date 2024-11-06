@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争：流云篇（十三）——轶事（9）
+title:  俄乌战争：流云篇（十三）——轶事（8）
 category: Russo Ukrainian War Cloud
 ---
 
@@ -396,3 +396,7 @@ https://zhuanlan.zhihu.com/p/718966456
 https://zhuanlan.zhihu.com/p/3987956837
 
 无人机一周内袭击7家酒厂，乌克兰要帮助俄罗斯士兵戒酒吗？
+
+https://zhuanlan.zhihu.com/p/4972017912
+
+新兵课程：军事基础训练存在的问题

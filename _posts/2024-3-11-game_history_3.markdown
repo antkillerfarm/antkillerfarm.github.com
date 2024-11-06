@@ -11,6 +11,62 @@ category: my story
 
 ## 小霸王 & 模拟器（续）
 
+Steward Fu的个人主页：
+
+https://steward-fu.github.io/website/
+
+EmuELEC官网：
+
+https://github.com/EmuELEC/EmuELEC/
+
+参考：
+
+https://zhuanlan.zhihu.com/p/482019157
+
+复古游戏与开源掌机的基础知识
+
+https://zhuanlan.zhihu.com/p/473777088
+
+FC/NES模拟器选择指南
+
+---
+
+https://zhuanlan.zhihu.com/p/97851599
+
+将前端技术栈移植到掌上游戏机
+
+https://www.zhihu.com/question/451164963
+
+开源掌机是如何诞生和发展的？
+
+https://zhuanlan.zhihu.com/p/40805178
+
+给外甥的暑假礼物——复古掌机Retro Game
+
+---
+
+2024.1
+
+雷电无线手柄到位，开始寻找模拟器。
+
+PCSX2：PS2模拟器
+
+WinKawaks：街机模拟器
+
+MAME：老牌的多平台开源模拟器。但是使用不是很方便，我捣鼓半天也没弄好。
+
+Mednafen：新近流行的多平台开源模拟器。
+
+官网：
+
+https://mednafen.github.io
+
+但是这个软件是基于命令行的，所以一般需要使用mednaffe作为它的GUI前端。
+
+mednaffe官网：
+
+https://github.com/AmatCoder/mednaffe
+
 darkstation：PS模拟器。支持CHD格式的ROM，CHD格式是一种可以替代ISO的压缩格式。
 
 RetroArch：一个多平台模拟器。
@@ -107,6 +163,8 @@ Win11虽然集成了虚拟光驱，但只支持iso格式，mdf/mds格式还是�
 
 帝国时代系列自2016年开始，被MS交给Relic Entertainment（位于加拿大的温哥华）开发。几年下来，基本把1、2、3代都出了重制版。最近，开始规划帝国4了。
 
+帝国时代4里中国的图标，使用中国结的图案，因此被人戏称为联通。而资料片里的朱熹子文明，同样由于图标类似，被人戏称为电信。就缺移动了。。。囧
+
 ![](/images/img6/AOE4.jpg)
 
 https://www.zhihu.com/question/453969562
@@ -168,14 +226,6 @@ https://www.zhihu.com/question/638191572
 https://mp.weixin.qq.com/s/JENwpBayd59hMh2zyO-PvA
 
 太黑暗了！小时候玩的这个游戏背后居然还有这种不为人知的黑历史...
-
----
-
-游戏的文字显示采用了系统字体，当时国内玩家使用的简体中文版系统，和日文版以及繁体中文版编码不同，游戏中充满了乱码，以至于诞生了著名的梗“变巨”（曹操）、“堪称”（刘备）、“化冻”（赵云）等，想要正常显示文字，需要使用实时转码软件“南极星”，知道这个名字的玩家年龄恐怕都不小了，
-
-https://zhuanlan.zhihu.com/p/586963468
-
-《三国志6》有多经典？曹操叫“变巨”，曾是无数人的电脑启蒙
 
 ---
 

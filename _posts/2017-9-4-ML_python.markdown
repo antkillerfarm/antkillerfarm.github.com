@@ -330,6 +330,12 @@ $$c_{ik}=a_{ij}b_{jk}=\sum_ja_{ij}b_{jk}$$
 
 `c = np.einsum('ij,jk->ik', a, b)`
 
+einops库是一个用于操作张量的Python库，它提供了一种类似于爱因斯坦求和约定的符号系统来描述张量操作，使得张量操作更加直观和灵活。
+
+`q = rearrange(q, 'b t h d -> (b h) t d')`
+
+上例的含义是将b和h，合并为一个新的维度。
+
 参考：
 
 https://zhuanlan.zhihu.com/p/71639781

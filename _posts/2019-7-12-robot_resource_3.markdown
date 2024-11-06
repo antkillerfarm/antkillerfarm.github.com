@@ -11,6 +11,34 @@ category: robot
 
 ## 车道线检测（续）
 
+https://mp.weixin.qq.com/s/heh6B71IQ5NjmaTo6BaXdA
+
+无人驾驶图像识别-车道线检测
+
+https://mp.weixin.qq.com/s/aaqd0crHdk2WyKO4J9hmDg
+
+自动驾驶中的车道线跟踪技术
+
+https://mp.weixin.qq.com/s/NvVh3GO9iOGsftYgOlRb3Q
+
+300+FPS！浙大提出一种超快速车道线检测方法
+
+https://mp.weixin.qq.com/s/ekN9AvS4V0dcDdBlGCs3Bg
+
+车道线检测：SCNN
+
+https://mp.weixin.qq.com/s/xXdbWpegLdxFMuHldMGKVA
+
+车道线Dark SCNN算法简述及车道线后处理代码细节简述
+
+https://www.cnblogs.com/guoyaohua/p/8940871.html
+
+SCNN车道线检测--(SCNN)Spatial As Deep: Spatial CNN for Traffic Scene Understanding（论文解读）
+
+https://mp.weixin.qq.com/s/pQUKFZRgG1LNPmE6oHY3GA
+
+CurcveLane-NAS：华为&中大提出一种结合NAS的曲线车道检测算法
+
 https://mp.weixin.qq.com/s/HSh029kg2-rOtD688vLq2w
 
 详解车道线检测算法之传统图像处理

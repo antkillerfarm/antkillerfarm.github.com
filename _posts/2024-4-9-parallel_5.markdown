@@ -183,7 +183,9 @@ Prefill阶段在Q的seqlen维度以及batch_size维度做并行。
 - 然后在这些K/V块上，使用标准FlashAttention进行计算，得到所有小块的局部结果。
 - 最后，使用一个额外的kernel做全局的reduce，得到正确输出。
 
-FlashDecoding有时也被称为FlashAttention V2。
+https://crfm.stanford.edu/2023/10/12/flashdecoding.html
+
+Flash-Decoding for long-context inference
 
 ---
 
@@ -192,6 +194,10 @@ New hardware features on Hopper GPUs - WGMMA, TMA, FP8
 https://www.zhihu.com/question/661395457
 
 FlashAttention-3发布！有什么新优化点？
+
+https://zhuanlan.zhihu.com/p/661478232
+
+FlashAttenion-V3: Flash Decoding详解
 
 ## PagedAttention
 

@@ -221,6 +221,16 @@ https://docs.docker.com/reference/dockerfile/
 
 ---
 
+docker中的命令没有权限执行的时候，可以用`docker run --privileged`。
+
+有时会发现发送到Daemo的内容过大，如下：
+
+`Sending build context to Docker daemon 218.2 MB`
+
+docker client会默认把Dockerfile同级所有文件发到docker Deamon中。
+
+---
+
 http://blog.csdn.net/colorant/article/details/20608157
 
 快速理解Docker
