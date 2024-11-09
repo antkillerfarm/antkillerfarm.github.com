@@ -135,6 +135,10 @@ https://www.sohu.com/a/483240732_121124379
 
 ---
 
+Tick-Tock（工艺年-构架年）是Intel的芯片技术发展的战略模式，也被称为嘀嗒模式或者钟摆模式。
+
+---
+
 ![](/images/img3/IC_process_3.jpg)
 
 https://www.zhihu.com/question/290382241

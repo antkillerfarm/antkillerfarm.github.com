@@ -55,7 +55,7 @@ NVIDIA在H100中，添加了FP8的支持，但是去掉了对INT1/INT4的支持�
 
 https://zhuanlan.zhihu.com/p/521631165
 
-Nvidia H100 中的FP8
+Nvidia H100中的FP8
 
 https://zhuanlan.zhihu.com/p/714933476
 

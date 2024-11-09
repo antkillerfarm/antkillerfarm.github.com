@@ -198,7 +198,7 @@ https://mamba.readthedocs.io/en/latest/
 
 https://zhuanlan.zhihu.com/p/518926990
 
-一文解释 conda,pip,anaconda,miniconda,miniforge
+一文解释conda,pip,anaconda,miniconda,miniforge
 
 ## virtualenv
 

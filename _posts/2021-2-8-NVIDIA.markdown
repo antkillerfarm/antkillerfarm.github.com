@@ -134,6 +134,18 @@ Matching CUDA arch and CUDA gencode for various NVIDIA architectures
 
 这篇文章虽然讲的是NVCC的sm选项的含义，但同样可以看作是NV GPU架构的历代记。
 
+## H100
+
+有幸在客户那里见识了H100 Server的配置。
+
+GPU：H100x8，每卡显存80GB。
+
+CPU：Intel(R) Xeon(R) Platinum 8462Y+ 128核。
+
+内存：2TB。
+
+硬盘：14TB的MD RAID阵列。
+
 ## 驱动安装
 
 查看显卡硬件型号：

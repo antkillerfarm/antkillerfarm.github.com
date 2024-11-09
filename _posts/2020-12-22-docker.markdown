@@ -141,6 +141,22 @@ https://zhuanlan.zhihu.com/p/519499603
 
 一文读懂Docker原理
 
+## 相关概念
+
+![](/images/img6/docker.png)
+
+https://zhuanlan.zhihu.com/p/490585683
+
+Docker，containerd，CRI，CRI-O，OCI，runc 分不清？
+
+---
+
+Podman是一个符合OCI的容器管理工具，它提供了与Docker等类似的功能来管理容器。
+
+https://devopscube.com/podman-tutorial-beginners/
+
+Podman Tutorial For Beginners: Step by Step Guides
+
 ## 使用
 
 1.镜像和容器的关系，类似于类和对象的关系，它们有各自不同的ID。
