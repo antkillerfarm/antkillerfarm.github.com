@@ -291,11 +291,7 @@ Space X龙飞船成功发射，它和NASA到底有什么关系？
 
 ---
 
-![](/images/img4/spaceship.jpg)
-
-https://mp.weixin.qq.com/s/0zAIoiflCgwC2jMEdnJ6WQ
-
-马斯克的星际飞船，爆炸了
+![](../images/img4/spaceship.jpg)
 
 https://mp.weixin.qq.com/s/-eNzkpxJ_nQOF0RURjuSUg
 

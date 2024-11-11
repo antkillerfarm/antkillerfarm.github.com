@@ -205,6 +205,10 @@ Ctrl+p Ctrl+q：退出后，容器仍然运行。
 
 `docker inspect container_name | grep Mounts -A 20`
 
+6.查询docker容器的详细信息（例如启动命令）
+
+`docker inspect <container_id>`
+
 参考：
 
 https://www.cnblogs.com/dyh004/p/9122639.html

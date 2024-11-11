@@ -9,14 +9,6 @@ category: Russo Ukrainian War Cloud
 
 # 俄乌战争
 
-https://news.ifeng.com/c/8G653CGmggn
-
-双线在决战，这两点决定俄乌战场输赢
-
-https://news.ifeng.com/c/8GKljOt9z6z
-
-俄军只用“一只手”打乌克兰，自信还是动不了？
-
 https://news.ifeng.com/c/8GRIdyw3Bn2
 
 5月决战初步战果，乌克兰陷入绝境？
@@ -400,3 +392,7 @@ https://zhuanlan.zhihu.com/p/3987956837
 https://zhuanlan.zhihu.com/p/4972017912
 
 新兵课程：军事基础训练存在的问题
+
+https://zhuanlan.zhihu.com/p/6119002646
+
+周日数十架乌克兰无人机袭击莫斯科，导致机场关闭和财产人员损失

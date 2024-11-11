@@ -51,6 +51,12 @@ half - IEEE 754-based half-precision floating point library
 
 ---
 
+denorm：denormalized number
+
+一个正规数是指指数位非零的数，而非正规数（denorm）是指指数位全为零的数。
+
+---
+
 C++17以后有了更多的浮点数表示方法：
 
 ```text
@@ -283,17 +289,3 @@ BF16的成功经验表明，算法专家在AI芯片中的重要程度，甚至�
 需要注意的是Flexpoint的失败，主要在于Dynamic Range和底数的位宽取舍上。他的设计思路本身还是有可取之处的。采用同样思路的MSFP就获得了成功。
 
 MSFP由微软提出，在微软Project Brainwave产品上得到了广泛的应用。
-
-参考：
-
-https://www.intel.ai/flexpoint-numerical-innovation-underlying-intel-nervana-neural-network-processor/
-
-Flexpoint: Numerical Innovation Underlying the Intel Nervana Neural Network Processor
-
-https://zhuanlan.zhihu.com/p/33580205
-
-Flexpoint——利用一种自适应的数据类型加速神经网络训练
-
-https://mp.weixin.qq.com/s/z4OEPrAAtaNmBQoyvEd7Nw
-
-从春秋到战国—论Nervana的倒掉

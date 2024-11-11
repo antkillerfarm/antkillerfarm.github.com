@@ -145,6 +145,10 @@ https://zhuanlan.zhihu.com/p/697669474
 
 乌萝星座录
 
+https://www.ifw-kiel.de/topics/war-against-ukraine/ukraine-support-tracker/
+
+外国援助乌克兰的统计网站
+
 ---
 
 泽连斯基打击：

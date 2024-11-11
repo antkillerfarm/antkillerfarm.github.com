@@ -75,6 +75,8 @@ https://www.zhihu.com/answer/3546126630
 
 ---
 
+京子让他们在死前当了一回人。
+
 https://zhuanlan.zhihu.com/p/4749656441
 
 DailyNK：朝鲜派兵的消息在内部扩散……子女服兵役的父母战战兢兢

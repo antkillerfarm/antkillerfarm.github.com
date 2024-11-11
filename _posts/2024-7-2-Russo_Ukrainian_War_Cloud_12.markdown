@@ -109,6 +109,10 @@ https://www.zhihu.com/question/611317976
 
 ---
 
+懂王说现在不能说怎么和俄罗斯谈，这个流程和当年库尔德人是一样的，一开始表现的好像给库尔德人很多支持，其实早和土耳其串通好了，骗库尔德人把边境地堡破坏了之后，土耳其突然狂暴鸿儒，然后逼库尔德人吞下苦果。只要不被他骗，至少不会被卖。
+
+---
+
 https://mp.weixin.qq.com/s/u7C1THhjnWLRLR4z7casbQ
 
 在乌克兰，日常生活与国家的分裂
@@ -176,3 +180,11 @@ https://news.ifeng.com/c/8FMpNxpSHjc
 https://news.ifeng.com/c/8Fsc6DZP5g5
 
 俄罗斯乌克兰的大决战终于打响了
+
+https://news.ifeng.com/c/8G653CGmggn
+
+双线在决战，这两点决定俄乌战场输赢
+
+https://news.ifeng.com/c/8GKljOt9z6z
+
+俄军只用“一只手”打乌克兰，自信还是动不了？

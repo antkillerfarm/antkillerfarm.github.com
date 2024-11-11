@@ -165,6 +165,10 @@ https://zhuanlan.zhihu.com/p/716337941
 
 乌克兰首次使用新型国产无人机导弹（Palianytsia）
 
+https://zhuanlan.zhihu.com/p/5850309606
+
+乌克兰的光纤无人机
+
 ---
 
 乌克兰公路：T字在现在这个季节就是烂泥路，P字是硬化路面，H是高速，条件最好。

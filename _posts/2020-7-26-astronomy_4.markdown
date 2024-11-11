@@ -41,14 +41,6 @@ https://mp.weixin.qq.com/s/v56_d3UVm7ItmdHXYt1JjA
 
 马斯克只高兴了8分钟：星舰10号历史性成功着陆，却突然原地爆炸
 
-https://mp.weixin.qq.com/s/odjANeqbHuZAX4t_OhFwjw
-
-终于不再爆炸了！马斯克的星舰原型SN15挑战10千米高度，稳稳着陆
-
-https://mp.weixin.qq.com/s/Bvk-jZ4tbi3jXfDkYwiMlQ
-
-首次成功着陆：SpaceX星舰试飞实现突破
-
 https://mp.weixin.qq.com/s/ed93ZOHB62XKIREnOwIJIQ
 
 马斯克的火箭，这次没！爆！炸！
@@ -63,9 +55,23 @@ SpaceX执行首次全平民任务，送4名普通人进太空旅行3天，有哪
 
 一个人55千克，加上额外45千克的毛重的话，进入太空的成本只要2万美元！
 
+![](/images/img6/StarShip.jpg)
+
 https://sat.huijiwiki.com/wiki/%E6%98%9F%E8%88%B0
 
 星舰Wiki
+
+https://mp.weixin.qq.com/s/0zAIoiflCgwC2jMEdnJ6WQ
+
+马斯克的星际飞船，爆炸了
+
+https://mp.weixin.qq.com/s/odjANeqbHuZAX4t_OhFwjw
+
+终于不再爆炸了！马斯克的星舰原型SN15挑战10千米高度，稳稳着陆
+
+https://mp.weixin.qq.com/s/Bvk-jZ4tbi3jXfDkYwiMlQ
+
+首次成功着陆：SpaceX星舰试飞实现突破
 
 https://www.zhihu.com/question/595930014
 

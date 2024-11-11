@@ -7,6 +7,22 @@ category: DL acceleration
 * toc
 {:toc}
 
+# Flexpoint（续）
+
+参考：
+
+https://www.intel.ai/flexpoint-numerical-innovation-underlying-intel-nervana-neural-network-processor/
+
+Flexpoint: Numerical Innovation Underlying the Intel Nervana Neural Network Processor
+
+https://zhuanlan.zhihu.com/p/33580205
+
+Flexpoint——利用一种自适应的数据类型加速神经网络训练
+
+https://mp.weixin.qq.com/s/z4OEPrAAtaNmBQoyvEd7Nw
+
+从春秋到战国—论Nervana的倒掉
+
 # TF32
 
 ![](/images/img3/tf32.png)
