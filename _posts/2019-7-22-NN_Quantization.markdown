@@ -222,6 +222,8 @@ bfloat16是Google针对AI领域的特殊情况提出的浮点格式。目前已�
 
 《Mixed Precision Training》
 
+AMP：Automatic Mixed Precision
+
 参考：
 
 https://www.zhihu.com/question/275682777

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（九）——Attention进阶, Transformer进阶
+title:  Attention（九）——Attention进阶, Transformer进阶, LLM实战
 category: Attention 
 ---
 
@@ -190,3 +190,41 @@ https://mp.weixin.qq.com/s/IWUxVzpdGIX1Oxn4KxjhHA
 https://mp.weixin.qq.com/s/IWUxVzpdGIX1Oxn4KxjhHA
 
 TransGAN：两个Transformer可以构造一个强大的GAN
+
+# LLM实战
+
+https://pytorch.org/blog/high-performance-llama-2/
+
+https://huggingface.co/blog/zh/bloom-inference-optimization
+
+https://huggingface.co/blog/zh/bloom-megatron-deepspeed
+
+---
+
+![](/images/img5/Spike.webp)
+
+训练过程中，损失偶尔会出现毛刺的情况。针对这种情况，Falcon作者会恢复到上一个最新的Checkpoint，并跳过1B Token数据继续训练。作者训练Falcon-180B时出现了9次毛刺。
+
+Google训练PaLM模型遇到了同样的问题。针对此种情况，作者会重启训练，并从毛刺之前的100个step开始，跳过200-500个Batch的数据。作者也做了消融实验，发现并不是单个数据的问题，而可能是这连续的一系列Batch数据引起的。
+
+https://mp.weixin.qq.com/s/rLJlaqI2RL7TGUEQyx-QaA
+
+万卡GPU集群实战：探索LLM预训练的挑战
+
+---
+
+https://docs.swanlab.cn/zh/examples/pretrain_llm.html
+
+从零预训练一个自己的大模型
+
+https://blog.csdn.net/v_JULY_v/article/details/132178447
+
+七月论文审稿GPT第1版：通过3万多篇paper和10多万的review数据微调RWKV
+
+https://blog.csdn.net/v_JULY_v/article/details/134183799
+
+七月论文审稿GPT第2版：用一万多条paper-review数据微调LLaMA2 7B最终反超GPT4
+
+https://blog.csdn.net/v_JULY_v/article/details/131552592
+
+基于LangChain+LLM的本地知识库问答：从企业单文档问答到批量文档问答

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenCL
+title:  OpenCL, TensorRT
 category: AI 
 ---
 
@@ -187,3 +187,41 @@ Portable Computing Language是另一个知名的OpenCL实现。
 官网：
 
 http://portablecl.org/
+
+# TensorRT
+
+TensorRT：嵌入式设备上专用于DL inference的计算库。
+
+TensorRT还有个云端的集群版本：
+
+https://github.com/NVIDIA/tensorrt-inference-server
+
+参考：
+
+https://mp.weixin.qq.com/s/v8-JHd5tWm41WLqR-h6eKA
+
+使用TensorRT集成加速TensorFlow推理
+
+https://mp.weixin.qq.com/s/rMvhsi2vXxVC65C5Z4IXIw
+
+AI视频处理加速引擎TensorRT及Deepstream介绍
+
+https://zhuanlan.zhihu.com/p/35657027
+
+高性能深度学习支持引擎实战——TensorRT
+
+## CUDA-X AI
+
+CUDA-X AI是软件加速库的集合，这些库建立在CUDA之上，提供对于深度学习、机器学习和高性能计算必不可少的优化功能。这些库包括cuDNN（用于加速深度学习基元）、cuML（用于加速数据科学工作流程和机器学习算法）、TensorRT（用于优化受训模型的推理性能）、cuDF（用于访问 pandas 之类的数据科学 API）、cuGraph（用于在图形上执行高性能分析），以及超过13个的其他库。
+
+官网：
+
+https://www.nvidia.cn/technologies/cuda-x/
+
+## TensorRT-LLM
+
+TensorRT-LLM是NVIDIA推出的基于TensorRT的LLM推理工具。
+
+代码：
+
+https://github.com/NVIDIA/TensorRT-LLM/

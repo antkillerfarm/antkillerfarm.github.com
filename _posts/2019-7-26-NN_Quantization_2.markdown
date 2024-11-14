@@ -67,6 +67,16 @@ FP8包括两种常见的变种：E4M3(4位指数和3位尾数)和E5M2(5位指数
 
 NVIDIA在H100中，添加了FP8的支持，但是去掉了对INT1/INT4的支持。。。看起来后两者还是实用价值偏低了。
 
+---
+
+![](/images/img6/FP8_Hopper.png)
+
+![](/images/img6/FP8_Blackwell.png)
+
+Blackwell使用了比Hopper更精细的scaling factor，用以降低量化误差。
+
+---
+
 参考：
 
 https://zhuanlan.zhihu.com/p/521631165

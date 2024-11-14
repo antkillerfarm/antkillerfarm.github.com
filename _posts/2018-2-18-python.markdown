@@ -137,6 +137,12 @@ python requirements文件生成与使用
 
 ---
 
+查询安装路径：
+
+`python3 -m site --user-site`
+
+---
+
 https://mp.weixin.qq.com/s/9q0bLHTpzS-SvzfzHtZBXg
 
 Python依赖库管理哪家强？pip、pipreqs、pigar、pip-tools、pipdeptree任君挑选

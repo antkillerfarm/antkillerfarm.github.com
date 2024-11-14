@@ -93,7 +93,7 @@ VC 6.0是一个经典，直到2011年都还有同事在使用它编写程序。�
 
 2024.10
 
-C++ Builder 12.1还集成了MSVS上的强力辅助插件Visual Assist X，我也是这才发现原来小番茄不知道什么时候已经被Embarcadero收购了。
+C++ Builder 12.1还集成了MSVS上的强力辅助插件Visual Assist X，原来小番茄不知道什么时候已经被Embarcadero收购了。
 
 #### 10.Visual Studio 2012（2017~）。
 

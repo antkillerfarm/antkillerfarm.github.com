@@ -116,20 +116,6 @@ https://zhuanlan.zhihu.com/p/668509885
 
 向量数据库凉了吗？
 
-## 实战
-
-https://blog.csdn.net/v_JULY_v/article/details/132178447
-
-七月论文审稿GPT第1版：通过3万多篇paper和10多万的review数据微调RWKV
-
-https://blog.csdn.net/v_JULY_v/article/details/134183799
-
-七月论文审稿GPT第2版：用一万多条paper-review数据微调LLaMA2 7B最终反超GPT4
-
-https://blog.csdn.net/v_JULY_v/article/details/131552592
-
-基于LangChain+LLM的本地知识库问答：从企业单文档问答到批量文档问答
-
 ## 其他
 
 gradient_accumulation_steps用于处理当模型的参数数量超过GPU内存容量时的情况。在训练大型模型时，尤其是在使用较小的GPU进行训练时，可能会遇到内存不足的问题。这时，可以使用梯度累积来分割批次，从而使得每个小批次的计算都在GPU的内存限制范围内。

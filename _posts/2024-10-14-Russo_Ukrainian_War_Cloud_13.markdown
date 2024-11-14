@@ -396,3 +396,7 @@ https://zhuanlan.zhihu.com/p/4972017912
 https://zhuanlan.zhihu.com/p/6119002646
 
 周日数十架乌克兰无人机袭击莫斯科，导致机场关闭和财产人员损失
+
+https://zhuanlan.zhihu.com/p/5126062019
+
+从战略上讲，俄罗斯已经输掉了战争，但乌克兰在军事上可能在短期内处于下风

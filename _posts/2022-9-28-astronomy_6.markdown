@@ -107,6 +107,10 @@ https://www.zhihu.com/question/663598673
 
 ---
 
+六院被业内人评价为除了抄毛子作业啥都不会，只能玩毛子留下的东西。六院开发YF-215进度我很不乐观，毕竟没毛子的东西可以抄了。。。
+
+---
+
 https://mp.weixin.qq.com/s/QjB7zDCXC82x5O25InGZtA
 
 嫦娥五号开启我国首次地外天体采样返回之旅

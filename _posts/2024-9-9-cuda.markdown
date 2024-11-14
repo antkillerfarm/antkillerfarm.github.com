@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  CUDA
+title:  CUDA, Transformer Engine
 category: AI 
 ---
 
@@ -111,6 +111,12 @@ https://docs.nvidia.com/cuda/parallel-thread-execution/index.html
 
 gcc和llvm都有特定的pass可以生成PTX代码。
 
+CICC（CUDA Integrated Compiler Command）是CUDA Toolkit中的一个编译器组件，它负责将CUDA代码编译成PTX代码。
+
+cudafe++是CUDA编译过程中的一个组件，它的主要作用是将CUDA特有的C++扩展转换成标准C++结构。
+
+ptxas：和gcc中的as类似，也是一个汇编器。ptxas的作用是将PTX代码编译成SASS（Streaming Assembler）代码。
+
 ---
 
 NVIDIA GPU真正的指令集，被称作SASS。
@@ -122,52 +128,6 @@ SASS指令集概述
 https://www.zhihu.com/question/639210103
 
 为什么没人去做CUDA逆向和反编译？
-
-## CUDA-X AI
-
-CUDA-X AI是软件加速库的集合，这些库建立在CUDA之上，提供对于深度学习、机器学习和高性能计算必不可少的优化功能。这些库包括cuDNN（用于加速深度学习基元）、cuML（用于加速数据科学工作流程和机器学习算法）、TensorRT（用于优化受训模型的推理性能）、cuDF（用于访问 pandas 之类的数据科学 API）、cuGraph（用于在图形上执行高性能分析），以及超过13个的其他库。
-
-官网：
-
-https://www.nvidia.cn/technologies/cuda-x/
-
-## TensorRT
-
-TensorRT：嵌入式设备上专用于DL inference的计算库。
-
-TensorRT还有个云端的集群版本：
-
-https://github.com/NVIDIA/tensorrt-inference-server
-
-参考：
-
-https://mp.weixin.qq.com/s/v8-JHd5tWm41WLqR-h6eKA
-
-使用TensorRT集成加速TensorFlow推理
-
-https://mp.weixin.qq.com/s/rMvhsi2vXxVC65C5Z4IXIw
-
-AI视频处理加速引擎TensorRT及Deepstream介绍
-
-https://zhuanlan.zhihu.com/p/35657027
-
-高性能深度学习支持引擎实战——TensorRT
-
-## TensorRT-LLM
-
-TensorRT-LLM是NVIDIA推出的基于TensorRT的LLM推理工具。
-
-代码：
-
-https://github.com/NVIDIA/TensorRT-LLM/
-
-## Transformer Engine
-
-Transformer Engine（TE）是一种专门用于加速Transformer模型在NVIDIA GPU上执行的库。它包括在Hopper和Ada架构GPU上使用8位浮点（FP8）精度的能力。
-
-代码：
-
-https://github.com/NVIDIA/TransformerEngine
 
 ## Thrust
 
@@ -210,6 +170,16 @@ CTA提供了同步点，允许开发者在需要时对CTA内的所有线程进�
 ---
 
 `vectorAdd<<<4096,256>>>`表示内核函数vectorAdd将在GPU上以4096个块执行，每个块包含256个线程，总共有4096x256个线程。
+
+---
+
+遇到cudaXX找不到：
+
+```bash
+export CPATH=/usr/local/cuda/targets/x86_64-linux/include:$CPATH
+export LD_LIBRARY_PATH=/usr/local/cuda/targets/x86_64-linux/lib:$LD_LIBRARY_PATH
+export PATH=/usr/local/cuda/bin:$PATH
+```
 
 ---
 
@@ -318,3 +288,25 @@ https://zhuanlan.zhihu.com/p/693690123
 https://www.zhihu.com/question/445590537
 
 问个CUDA并行上的小白问题，既然SM只能同时处理一个WARP，那是不是有的SP处于闲置？
+
+# Transformer Engine
+
+Transformer Engine（TE）是一种专门用于加速Transformer模型在NVIDIA GPU上执行的库。它包括在Hopper和Ada架构GPU上使用8位浮点（FP8）精度的能力。
+
+`pip insstall transformer_engine[pytorch]`
+
+注意：中括号里的内容不可省略。
+
+安装的时候，依赖中有几个包需要本地的cuda编译，且耗时较长，大概要几十分钟的样子。
+
+在H100上安装时，还需要安装flashattn_hopper包，具体方法见包缺失时，报的提示信息即可。
+
+代码：
+
+https://github.com/NVIDIA/TransformerEngine
+
+参考：
+
+https://docs.nvidia.com/deeplearning/transformer-engine-releases/release-1.12/user-guide/examples/te_llama/tutorial_accelerate_hf_llama_with_te.html
+
+Accelerating a Hugging Face Llama 2 and Llama 3 models with Transformer Engine

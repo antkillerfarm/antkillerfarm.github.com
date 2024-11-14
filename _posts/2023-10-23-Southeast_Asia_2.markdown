@@ -228,3 +228,7 @@ https://zhuanlan.zhihu.com/p/627574646
 https://zhuanlan.zhihu.com/p/496058564
 
 缅北旗帜徽章研究——战乱与中国影响
+
+https://www.thepaper.cn/newsDetail_forward_1530113
+
+“降安南”的败仗为何被乾隆算进了“十全武功”

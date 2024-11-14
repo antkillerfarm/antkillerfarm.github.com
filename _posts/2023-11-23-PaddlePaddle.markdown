@@ -145,6 +145,10 @@ Huggingface详细教程之Tokenizer库
 
 ---
 
+bos_token_id：Beginning of Sequence，表示序列或句子的开始。类似的还有eos_token_id。
+
+---
+
 transformers库里的llama模型：
 
 huggingface_transformers/src/transformers/models/llama/modeling_llama.py
@@ -379,23 +383,3 @@ Tensorboard可视化与Hook机制
 https://mp.weixin.qq.com/s/jnV_4REXOR-ema1kOC95Nw
 
 跨越重重“障碍”，我从PyTorch转换为了TensorFlow Lite
-
-https://mp.weixin.qq.com/s/Svh27YIG2jYWqXwhhEuoSw
-
-使用Pytorch和BERT进行多标签文本分类
-
-https://mp.weixin.qq.com/s/_3iJCO4gQz7mWcW7G8kimQ
-
-Pytorch实现卷积神经网络训练量化（QAT）
-
-https://mp.weixin.qq.com/s/HQnI8rzPvZN6Q_5c8d1nVQ
-
-唯快不破：基于Apex的混合精度加速
-
-https://mp.weixin.qq.com/s/NupSd4e01cvQ3CRnjy1npw
-
-超原版速度110倍，针对PyTorch的CPU到GPU张量迁移工具开源
-
-https://zhuanlan.zhihu.com/p/87572724
-
-一文看懂align_corners

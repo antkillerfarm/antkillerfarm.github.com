@@ -152,6 +152,24 @@ Mermaid从入门到入土——Markdown进阶语法
       C -.-> F[[Output Data]]
 </div>
 
+## mhchem
+
+mhchem是一个打印化学公式的宏包，已经集成进MathJax/KaTeX。
+
+参考:
+
+https://mhchem.github.io/MathJax-mhchem/
+
+mhchem for MathJax
+
+示例：
+
+$$\ce{^40_18Ar + \gamma{} + \nu_e}$$
+
+---
+
+mhchem一般用于简单的无机化学公式，复杂的有机化学公式，例如苯环，需要借助chemfig库。然而后者基于tikz库，MathJax并没有tikz那么强的底层图形能力，也就很难移植了。
+
 # Latex
 
 ## CTAN
@@ -439,15 +457,3 @@ Beamer——基于LaTex的Slides制作
 https://zhuanlan.zhihu.com/p/99801808
 
 用beamer制作精美的演示文稿
-
-## mathcha
-
-mathcha是一个可视化的Latex编辑器，和其他同类产品相比，它主要聚焦公式和图表功能，其中后者基于tikz。
-
-官网：
-
-https://www.mathcha.io/
-
-安装：
-
-`sudo snap install math-notebook`

@@ -163,6 +163,26 @@ TF-IDF不容小觑
 
 # Pytorch+
 
+https://mp.weixin.qq.com/s/Svh27YIG2jYWqXwhhEuoSw
+
+使用Pytorch和BERT进行多标签文本分类
+
+https://mp.weixin.qq.com/s/_3iJCO4gQz7mWcW7G8kimQ
+
+Pytorch实现卷积神经网络训练量化（QAT）
+
+https://mp.weixin.qq.com/s/HQnI8rzPvZN6Q_5c8d1nVQ
+
+唯快不破：基于Apex的混合精度加速
+
+https://mp.weixin.qq.com/s/NupSd4e01cvQ3CRnjy1npw
+
+超原版速度110倍，针对PyTorch的CPU到GPU张量迁移工具开源
+
+https://zhuanlan.zhihu.com/p/87572724
+
+一文看懂align_corners
+
 https://mp.weixin.qq.com/s/BsMwZC3IoXA58OybZ3aYcg
 
 pytorch中如何处理RNN输入变长序列padding
