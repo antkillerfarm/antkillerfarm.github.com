@@ -153,6 +153,10 @@ examples/NLG/src/gpt2_ft.py
 
 ---
 
+Hugging Face有一个叫做peft的库，支持多种微调方法，包括LoRA（Low-Rank Adaptation）、Prefix Tuning、P-Tuning、Prompt Tuning等，这些方法可以帮助减少可训练参数的数量，使训练更高效。
+
+---
+
 参考：
 
 https://huggingface.co/datasets/HuggingFace-CN-community/translation/blob/main/lora_cn.md

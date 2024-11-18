@@ -111,6 +111,18 @@ https://zhuanlan.zhihu.com/p/430203049
 
 Bulldozer (推土机) -> Piledriver (打桩机) -> Streamroller (压路机) -> Excavator (挖土机) -> Zen -> Zen+ -> Zen 2 -> Zen 3
 
+这些架构均采用农用设备命名，所以自然AMD被称为“农企”（Agriculture Machine Devices）。
+
+---
+
+![](/images/img6/ZEN.png)
+
+在Zen 2架构中，处理器不再是一个单一的大核心，而是被分为了CCD核心和I/O核心两个部分。
+
+CCD核心和I/O核心之间通过Infinity Fabric总线连接。
+
+3D V-Cache技术，通过在CCD上堆叠额外的缓存，显著提升了处理器的性能。
+
 ## Matrix Core
 
 对标英伟达Tensor Core，AMD推出Matrix Core。

@@ -29,6 +29,12 @@ Pashinsky腐败是板上钉钉的，但是现在乌克兰政府认为他有利�
 
 ---
 
+鹅媒说鹅第3集团军因为向上级谎报战果而被清洗，指挥部已经被接管，高级军官被停职，第7和123旅的指挥官已经被逮捕。
+
+说是因为后方来的高级军官在前线视察时发现，他们几个月来一直报告占领的Serebrianka，Hryhorivka，Bilohorivka，Verkhnokamianske等地（都在Siversk附近），根本就没有被占领。。。
+
+---
+
 https://zhuanlan.zhihu.com/p/622351750
 
 两笔钱花在同一个地方——俄罗斯“布良斯克防线”的惊人贪腐大案
@@ -194,6 +200,10 @@ https://zhuanlan.zhihu.com/p/610281800
 https://zhuanlan.zhihu.com/p/613381539
 
 乌克兰人民坚韧不屈，近日基辅纪念在巴赫穆特战役中牺牲的乌克兰英雄（Dmytro Kotsiubailo）
+
+https://mp.weixin.qq.com/s/6OUYsuC6LTN7NuYiismkog
+
+未解之谜之抽丝剥茧纳耶夫
 
 ---
 

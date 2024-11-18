@@ -107,6 +107,8 @@ https://zhuanlan.zhihu.com/p/544250524
 
 2017年，这群悍汉的故事拍摄成电影《机械钢骨：英雄不死(Cyborgs: Heroes Never Die)》。
 
+顿涅茨克机场保卫者勋章，民间评选，只发了400枚。这是ATO期间含金量最高的勋章之一，要在机场保卫战中有突出表现才能参加评选。
+
 https://mp.weixin.qq.com/s/ommR-5zMvYvFiGodVZxBLw
 
 顿涅茨克机场守城战：乌克兰版《八佰》

@@ -418,16 +418,6 @@ https://mp.weixin.qq.com/s/GhpPiv8CeYEOgHwsCSnBQA
 
 为什么现在很多人想读博了？
 
-# 知名AI公司技术主页
-
-http://uber.ai/
-
-Uber AI Labs
-
-https://deepmind.com/research/
-
-Deepmind
-
 ## 几个开源软件代码下载地址（国内可访问）
 
 GNU

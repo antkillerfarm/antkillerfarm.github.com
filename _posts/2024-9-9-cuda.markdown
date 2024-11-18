@@ -293,13 +293,11 @@ https://www.zhihu.com/question/445590537
 
 Transformer Engine（TE）是一种专门用于加速Transformer模型在NVIDIA GPU上执行的库。它包括在Hopper和Ada架构GPU上使用8位浮点（FP8）精度的能力。
 
-`pip insstall transformer_engine[pytorch]`
+`pip install transformer_engine[pytorch]`
 
 注意：中括号里的内容不可省略。
 
-安装的时候，依赖中有几个包需要本地的cuda编译，且耗时较长，大概要几十分钟的样子。
-
-在H100上安装时，还需要安装flashattn_hopper包，具体方法见包缺失时，报的提示信息即可。
+安装的时候，依赖中有几个包（flash-attn、flashattn_hopper（on H100））需要本地的cuda编译，且耗时较长，大概要十分钟的样子。
 
 代码：
 

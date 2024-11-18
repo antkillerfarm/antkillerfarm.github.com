@@ -9,26 +9,6 @@ category: Russo Ukrainian War Cloud
 
 # 俄乌战争
 
-https://news.ifeng.com/c/8GRIdyw3Bn2
-
-5月决战初步战果，乌克兰陷入绝境？
-
-https://news.ifeng.com/c/8GdA8irm4wu
-
-俄乌战争啥时候结束？美欧想法高度一致
-
-https://news.ifeng.com/c/8JWGnIAc1x8
-
-俄乌交战200天 俄军曾有4次机会取胜
-
-https://news.ifeng.com/c/8JY3zMpfAVx
-
-俄军火炮猛射2个月，炮弹库存还能撑多久？
-
-https://news.ifeng.com/c/8Jcv9bjeSPV
-
-为什么乌克兰要过上三月才能反攻？
-
 https://news.ifeng.com/c/8KivcEeZ16O
 
 “冬将军”曾击败拿破仑，现在轮到俄罗斯了？
@@ -400,3 +380,7 @@ https://zhuanlan.zhihu.com/p/6119002646
 https://zhuanlan.zhihu.com/p/5126062019
 
 从战略上讲，俄罗斯已经输掉了战争，但乌克兰在军事上可能在短期内处于下风
+
+https://www.zhihu.com/question/4466026013
+
+惊人的纪录片《瓷器战争》讲述了乌克兰艺术家作为战士在俄乌战争中的抗争。艺术与生存如何在战争破坏中交叉？

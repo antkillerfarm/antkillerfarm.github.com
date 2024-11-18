@@ -149,6 +149,10 @@ https://www.ifw-kiel.de/topics/war-against-ukraine/ukraine-support-tracker/
 
 外国援助乌克兰的统计网站
 
+https://b23.tv/GUVn0Tx
+
+一个主打俄乌战争的Up主
+
 ---
 
 泽连斯基打击：

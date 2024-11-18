@@ -182,6 +182,13 @@ Hugging face推出的diffusion models的框架。
 
 https://github.com/huggingface/diffusers
 
+
+---
+
+huggingface出品的库的cache路径：
+
+`~/.cache/huggingface`
+
 ---
 
 参考：
@@ -215,6 +222,30 @@ xFormers是Meta推出的基于PyTorch的深度学习库，专注于Transformer�
 https://github.com/facebookresearch/xformers
 
 # Pytorch
+
+https://mp.weixin.qq.com/s/BjSx3tSQ2Xa0ja_j6dA7eA
+
+Pytorch中的DataLoader的相关记录
+
+https://mp.weixin.qq.com/s/vx0txFUf10QDBlldz0VJmg
+
+AI插画师：如何用基于PyTorch的生成对抗网络生成动漫头像？
+
+https://mp.weixin.qq.com/s/xHXsMxMTdnCWkuwzHs_7Cg
+
+深度学习实验流程及PyTorch提供的解决方案
+
+https://mp.weixin.qq.com/s/HPRUQSsUdk3rXBBl_GpFMw
+
+对抗自编码器PyTorch手把手实战系列——PyTorch实现自编码器
+
+https://mp.weixin.qq.com/s/5sY_IzwIz-lbDLtWJM-GRQ
+
+PyTorch实例：用ResNet进行交通标志分类
+
+https://mp.weixin.qq.com/s/zN3k51g9gjQvc43AH-ypGA
+
+如何通过PyTorch上手Tensor Comprehensions？
 
 https://mp.weixin.qq.com/s/yGtDUbvO2APT88MwcSh8IA
 

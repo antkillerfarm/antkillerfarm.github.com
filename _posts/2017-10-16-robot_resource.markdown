@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器人/无人驾驶（一）——行业, 课程
+title:  机器人/无人驾驶（一）——行业
 category: robot 
 ---
 
@@ -103,6 +103,18 @@ https://mp.weixin.qq.com/s/9huDW1RH1gjJpMkATEguug
 
 ---
 
+早些年研究control，对于机器人AGI没有帮助，研究这么久，全是研究平衡问题，浪费了大量人力物力，也没办法general到任务层级
+
+后来研究的强化学习，唯一有点效果的是机器人走路平衡，机器狗走路平衡，其他的全失败，各种复杂任务基本上没有任何效果，还不如直接control。
+
+人形泡沫在于，这个赛道本身问题不在于人形，不在于这个形状的人走路，走路平衡问题，已经基本解决了，well formulated了，已经快成夕阳方向了。
+
+真正重要的方向在于机器人手，但机器人手manipulation问题也不在于人手，因为简单的，手也能完成任务。
+
+重点在于，机器人在于对复杂情况的通用性建模这个方向不仅没泡沫，还是一片荒地，都在盲人摸象，现在研究基本都有问题。
+
+---
+
 https://mp.weixin.qq.com/s/oi5ME4QRTt3U526lzAHTcA
 
 滴滴重磅发布：KDD2018大会187页人工智能+交通教程
@@ -146,49 +158,3 @@ https://mp.weixin.qq.com/s/myAUMq4hknEcZ7X2Xx455g
 https://mp.weixin.qq.com/s/iqiKeMgGIsCuvoNtyi-yaw
 
 伯克利具身智能图谱：深度强化学习浪尖上的中国90后们
-
-## 课程
-
-http://selfdrivingcars.mit.edu/
-
-MIT 6.S094: Deep Learning for Self-Driving Cars
-
->主讲：Lex Fridman，MIT博士后。   
->个人主页：   
->http://lexfridman.com/
-
-这个课程不仅提供了课件，还提供了DeepTraffic和DeepTesla两个小工具供学生验证自己的算法。
-
-参考：
-
-https://mp.weixin.qq.com/s/cPyWAD-t-qLHfZJT1To2wQ
-
-自动驾驶“老司机”拼车技，MIT的这个比赛已经飙到了时速123公里
-
-这两个工具是用ConvNetJS编写的。
-
-ConvNetJS是Andrej Karpathy编写的基于JavaScript的DL框架。
-
-官网：
-
-http://cs.stanford.edu/people/karpathy/convnetjs/
-
-代码：
-
-https://github.com/karpathy/convnetjs
-
-参考：
-
-https://mp.weixin.qq.com/s/9jS7T51kMDhmzaOp9SI0oA
-
-从Brain.js到Mind，一文收录11个移动端Javascript机器学习库
-
----
-
-http://www.eecs.wsu.edu/~taylorm/16_483F/index.html
-
-CptS 483: Introduction to Robotics
-
-http://www.eecs.wsu.edu/~taylorm/2011_cs420/index.html
-
-CS 420：Artificial Intelligence

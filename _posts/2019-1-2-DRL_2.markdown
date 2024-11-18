@@ -160,6 +160,22 @@ OpenAI背后的派别是Berkeley帮，主要工作是围绕Pieter Abbeel以及�
 >现在OpenAI又因为有一些Deep Generative Model的大神，又把这方面也结合进来了。OpenAI这边的优势在于机器人控制上之前做的多，把传统控制和深度学习结合的方法也能搞出一些东西比如GPS，其他的团队比如Satinder Singh, Honglak Lee那就更只能从边边上去做了，比如做了Atari视频预测，给网络加上memory network。   
 >最后还是从方法上说一下，Policy Gradient显然比基于Value的方法更直接，输入感知，输出控制。按道理来说是更符合人类行为的方法。特别在控制上。但是在一些离散的决策上，人类也是评估各方好坏value来做选择的，所以这一块Q-Learning应该会做的更好。事实上，DeepMind也将DQN的Gorila分布式系统用在了Google的推荐系统上。还有，就是接下来机器人控制将会是深度学习要占领的一块地盘，在连续控制上，基于value的方法本身就不好做，连续DQN比如那个NAF方法使用了很多小技巧。而基于Policy的方法则很直接。
 
+---
+
+江湖点评（2024版）：
+
+DeepMind（PS:点评者的公司）
+
+OpenAI（目前我俩公司同属tier0，心心相惜，暗自较劲，之前他们还弱DeepMind一大截，但现在ChatGPT兴起，他们高光时刻）
+
+Google Brain（现在已经合并进DeepMind了，之前谷歌撮合我们合作，有非常激烈的权力宫斗，可以写一部小说，但是很明显DeepMind赢了，然后把他们吞了）
+
+Meta FAIR（稍弱于我们，但也很难进，立昆把控整个大方向，他们眼光更长远一些，他们总体要服务于VR产品和社交软件）
+
+Nividia Isaac（英伟达肯定是焦点中的焦点，手握各大公司生杀大权的GPU，各个公司都不得不share某些技术，跟他们合作）
+
+---
+
 参考：
 
 https://www.zhihu.com/question/316626294

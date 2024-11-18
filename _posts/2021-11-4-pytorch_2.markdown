@@ -280,6 +280,18 @@ https://mlir.llvm.org/docs/Quantization/
 
 Quantization
 
+## torchviz
+
+使用torchviz导出反向计算图：
+
+```python
+from torchviz import make_dot
+grad_dot = make_dot(loss, params=dict(model.named_parameters()))
+grad_dot.render('backward_graph', format='png')
+```
+
+找到loss在哪里，就可以导出了。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/zhkaenFdnB5KgaEYb-XDEQ
@@ -357,27 +369,3 @@ https://mp.weixin.qq.com/s/QqRjvWMMKosPh9qfU61BzQ
 https://mp.weixin.qq.com/s/aMfPBl6E5SxckQdSAGTkBg
 
 Pytorch教程：Facebook发布的LR-GAN如何生成图像？
-
-https://mp.weixin.qq.com/s/BjSx3tSQ2Xa0ja_j6dA7eA
-
-Pytorch中的DataLoader的相关记录
-
-https://mp.weixin.qq.com/s/vx0txFUf10QDBlldz0VJmg
-
-AI插画师：如何用基于PyTorch的生成对抗网络生成动漫头像？
-
-https://mp.weixin.qq.com/s/xHXsMxMTdnCWkuwzHs_7Cg
-
-深度学习实验流程及PyTorch提供的解决方案
-
-https://mp.weixin.qq.com/s/HPRUQSsUdk3rXBBl_GpFMw
-
-对抗自编码器PyTorch手把手实战系列——PyTorch实现自编码器
-
-https://mp.weixin.qq.com/s/5sY_IzwIz-lbDLtWJM-GRQ
-
-PyTorch实例：用ResNet进行交通标志分类
-
-https://mp.weixin.qq.com/s/zN3k51g9gjQvc43AH-ypGA
-
-如何通过PyTorch上手Tensor Comprehensions？

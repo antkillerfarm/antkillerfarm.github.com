@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器人/无人驾驶（二）——术语, ROS, CAN
+title:  机器人/无人驾驶（二）——课程, 术语, ROS, CAN
 category: robot 
 ---
 
@@ -9,7 +9,51 @@ category: robot
 
 # 机器人/无人驾驶
 
-## 课程（续）
+## 课程
+
+http://selfdrivingcars.mit.edu/
+
+MIT 6.S094: Deep Learning for Self-Driving Cars
+
+>主讲：Lex Fridman，MIT博士后。   
+>个人主页：   
+>http://lexfridman.com/
+
+这个课程不仅提供了课件，还提供了DeepTraffic和DeepTesla两个小工具供学生验证自己的算法。
+
+参考：
+
+https://mp.weixin.qq.com/s/cPyWAD-t-qLHfZJT1To2wQ
+
+自动驾驶“老司机”拼车技，MIT的这个比赛已经飙到了时速123公里
+
+这两个工具是用ConvNetJS编写的。
+
+ConvNetJS是Andrej Karpathy编写的基于JavaScript的DL框架。
+
+官网：
+
+http://cs.stanford.edu/people/karpathy/convnetjs/
+
+代码：
+
+https://github.com/karpathy/convnetjs
+
+参考：
+
+https://mp.weixin.qq.com/s/9jS7T51kMDhmzaOp9SI0oA
+
+从Brain.js到Mind，一文收录11个移动端Javascript机器学习库
+
+---
+
+http://www.eecs.wsu.edu/~taylorm/16_483F/index.html
+
+CptS 483: Introduction to Robotics
+
+http://www.eecs.wsu.edu/~taylorm/2011_cs420/index.html
+
+CS 420：Artificial Intelligence
 
 http://ctms.engin.umich.edu/CTMS/index.php
 
@@ -412,33 +456,3 @@ https://mp.weixin.qq.com/s/kkGH-Jp6ophDXqHpyznEQQ
 https://mp.weixin.qq.com/s/vpCc_dkuEt3_71juxztxGQ
 
 自动驾驶高精地图-概述与分析
-
-## 车道线检测
-
-https://blog.csdn.net/Young_Gy/article/details/75194914
-
-无人驾驶之车道线检测简易版
-
-https://mp.weixin.qq.com/s/M-J_WaV6AstRwZISPYQ-NA
-
-再识图像之高级车道线检测
-
-https://mp.weixin.qq.com/s/i793SOBdI4GyrfG_5kb3lg
-
-鲁汶大学提出可端到端学习的车道线检测算法
-
-https://zhuanlan.zhihu.com/p/58980251
-
-基于摄像头的车道线检测方法一览
-
-https://mp.weixin.qq.com/s/SlQy59AHyh1BEzDpKOu5GA
-
-初识图像之初级车道线检测
-
-https://mp.weixin.qq.com/s/ANKdDuCxMZAWHEfQbN54MA
-
-再识图像之高级车道线检测
-
-https://mp.weixin.qq.com/s/K5MJTYmuJ4Vv0sKT-VpDvg
-
-一种基于ACP理论的平行车道线检测方法，能有效解决目前车道线检测的困境

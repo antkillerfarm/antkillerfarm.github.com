@@ -77,6 +77,10 @@ https://zhuanlan.zhihu.com/p/651564985
 
 # LLAMA
 
+![](/images/img6/transformer_vs_llama.svg)
+
+![](/images/img6/llama.svg)
+
 代码：
 
 https://github.com/facebookresearch/llama
