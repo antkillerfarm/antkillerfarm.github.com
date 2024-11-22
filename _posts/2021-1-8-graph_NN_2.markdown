@@ -7,7 +7,55 @@ category: graph
 * toc
 {:toc}
 
-# GCN（续）
+# GCN
+
+https://mp.weixin.qq.com/s/bMpugd2Lp35VPr8fQAPzsg
+
+一文概览图卷积网络基本结构和最新进展
+
+https://mp.weixin.qq.com/s/TGuEvNXw_9S5-9a3KyDvvw
+
+基于图卷积网络的图深度学习
+
+https://mp.weixin.qq.com/s/kcXp-uWcmIsAVfa63mor4g
+
+图卷积网络介绍及进展
+
+https://zhuanlan.zhihu.com/p/54505069
+
+图卷积网络(GCN)新手村完全指南
+
+https://mp.weixin.qq.com/s/4zXyHaQzfJQ3e1JTaZbBbQ
+
+图卷积神经网络理论基础
+
+https://mp.weixin.qq.com/s/XSug_qOqq_QaphkiRlGkIg
+
+图卷积GCN前沿方法介绍
+
+https://mp.weixin.qq.com/s/B8rJRlnwGJKUSI17Ot66Xw
+
+从CNN到GCN的联系与区别——GCN从入门到精（fang）通（qi）
+
+https://mp.weixin.qq.com/s/CpDZEqo14X_lCBh6i7feIA
+
+图卷积神经网络(GCN)文本分类详述
+
+https://mp.weixin.qq.com/s/DJAimuhrXIXjAqm2dciTXg
+
+何时能懂你的心——图卷积神经网络（GCN）
+
+https://mp.weixin.qq.com/s/jBQOgP-I4FQT1EU8y72ICA
+
+图神经网络的“开山之作”GCN模型
+
+https://mp.weixin.qq.com/s/ftz8E5LffWFfaSuF9uKqZQ
+
+Graph Neural Network：GCN算法原理，实现和应用
+
+https://zhuanlan.zhihu.com/p/48834333
+
+GCN in 2018：2018年顶会论文中的图卷积神经网络的理论与应用
 
 https://mp.weixin.qq.com/s/c6ZhSk4r3pvnjHsvpwkkSw
 
@@ -386,47 +434,3 @@ https://mp.weixin.qq.com/s/t2kjxrcn6O9tbJ-IQELboQ
 https://mp.weixin.qq.com/s/SWcJut6QqOvbziirxTd2Kg
 
 斯坦福教授ICLR演讲：图网络最新进展GraphRNN和GCPN
-
-https://mp.weixin.qq.com/s/Lakq83_ngUJf1ES3N7J9_g
-
-图卷积在基于骨架的动作识别中的应用
-
-https://mp.weixin.qq.com/s/5wSgC4pXBfRLoCX-73DLnw
-
-什么是图卷积网络？行为识别领域新星
-
-https://mp.weixin.qq.com/s/1-Dmckby2NcXsaoK08zk8w
-
-视频理解中的图表示学习
-
-https://mp.weixin.qq.com/s/sJB4N_ObUqKM8H65yU_1sg
-
-Graph基础知识介绍
-
-https://mp.weixin.qq.com/s/edrh-HXqW01Yx7c8tQ8UxA
-
-从数据结构到算法：图网络方法初探
-
-https://mp.weixin.qq.com/s/JvtrGa0YiUmR6UA5wBQ-pQ
-
-图神经网络GNN最新理论进展和应用探索
-
-https://mp.weixin.qq.com/s/zQU47tjpTCPiLdEmUmZx3Q
-
-图卷积神经网络及其应用
-
-https://mp.weixin.qq.com/s/8Sz_jo7pokL_nzupEBGGdg
-
-当深度强化学习遇见图神经网络
-
-https://zhuanlan.zhihu.com/p/28170197
-
-《Gated Graph Sequence Neural Networks》阅读笔记
-
-https://blog.csdn.net/yorkhunter/article/details/104056795
-
-综述论文“A Comprehensive Survey on Graph Neural Networks”
-
-https://mp.weixin.qq.com/s/rTnv7XOnIvRDGDdhbuoE9g
-
-深度图相似学习综述

@@ -1,15 +1,13 @@
 ---
 layout: post
-title: NVLink
+title: 算力 vs 带宽, NVLink
 category: Chip 
 ---
 
 * toc
 {:toc}
 
-# NVLink
-
-## 算力 vs 带宽
+# 算力 vs 带宽
 
 ![](/images/img5/bandwidth_compute_bound.png)
 
@@ -18,6 +16,8 @@ category: Chip
 ![](/images/img5/bandwidth_compute_bound_2.png)
 
 对于算力 vs 带宽的理论分析，一般使用如上图所示的Roofline Model。Roofline本意是“车顶线”。
+
+---
 
 https://zhuanlan.zhihu.com/p/34204282
 
@@ -30,6 +30,14 @@ https://mp.weixin.qq.com/s/y9dVg9YtfWxu6NcW-fxi6Q
 http://llm-viewer.com/
 
 一个分析LLM Model的Roofline的可视化工具
+
+---
+
+一般来说，LLM的Prefill阶段是算力瓶颈，而decode阶段是带宽瓶颈。
+
+反过来说，如果一个硬件平台在Prefill阶段，还是带宽瓶颈的话，那就带宽设计的过于小了。
+
+# NVLink
 
 ## 多核拓扑
 

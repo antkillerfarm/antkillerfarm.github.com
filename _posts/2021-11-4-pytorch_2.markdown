@@ -111,6 +111,64 @@ Pytorch 2.0如何通过运算符融合和CPU/GPU代码生成来加速深度学�
 
 ## Pytorch Dispatcher
 
+`torch.library`:
+
+```python
+# Override with python
+from torch.library import Library, impl
+import torch
+ 
+mylib = Library("aten", "IMPL")
+ 
+@impl(mylib, "add.Tensor", device_type="CUDA")
+def add_override_cuda(a, b):
+    print("Using custom CUDA add implementation!")
+    return a + b
+ 
+# Override with C++
+#include <torch/library.h>
+ 
+TORCH_LIBRARY_IMPL(aten, CPU, m) {
+    m.impl("add.Tensor", [](const torch::Tensor& a, const torch::Tensor& b) {
+        // Your custom implementation here
+        return a + b;
+    });
+}
+```
+
+`__torch_function__`:
+
+```python
+class CustomTensor(torch.Tensor):
+    @classmethod
+    def __torch_function__(cls, func, types, args=(), kwargs=None):
+        kwargs = kwargs or {}
+        print(f"Called function: {func.__name__}")
+        return func(*args, **kwargs)
+ 
+# Usage
+x = CustomTensor([1, 2, 3])
+y = torch.add(x, 1)  # Will print "Called function: add"
+```
+
+`__torch_dispatch__`:
+
+```python
+class DispatchTensor(torch.Tensor):
+    @classmethod
+    def __torch_dispatch__(cls, func, types, args=(), kwargs=None):
+        kwargs = kwargs or {}
+        print(f"Dispatching: {func}")
+        return func(*args, **kwargs)
+     
+    # Do not force the Float8Tensor type on the returned tensor   
+    __torch_function__ = torch._C._disabled_torch_function_impl
+ 
+# Usage
+x = DispatchTensor([1, 2, 3])
+y = torch.add(x, 1)  # Will print the dispatched operation
+```
+
 https://pytorch.org/tutorials/advanced/extend_dispatcher.html
 
 Extending dispatcher for a new backend in C++
@@ -291,81 +349,3 @@ grad_dot.render('backward_graph', format='png')
 ```
 
 找到loss在哪里，就可以导出了。
-
-## 参考
-
-https://mp.weixin.qq.com/s/zhkaenFdnB5KgaEYb-XDEQ
-
-从基础概念到实现，小白如何快速入门PyTorch
-
-https://mp.weixin.qq.com/s/AMZFvmzo4pQ1m7QeaRpAdA
-
-PyTorch资源列表：450个NLP/CV/SP、论文实现、教程、示例
-
-https://mp.weixin.qq.com/s/dzDkpUHo4CKqq8i1pyYO2w
-
-60题PyTorch简易入门指南
-
-https://mp.weixin.qq.com/s/7at6y2NcYaxGGN8syxlccA
-
-PyTorch Cookbook
-
-https://mp.weixin.qq.com/s/RKtyNpIxSxFNfOSyHPOiGw
-
-深度学习PyTorch的教程代码
-
-https://mp.weixin.qq.com/s/i70pT7pQpdoCXXhXq2_MEw
-
-四天速成！香港科技大学PyTorch教程
-
-https://mp.weixin.qq.com/s/7Wr70NFi4pxvSpRr2Q1zsQ
-
-强大的PyTorch：10分钟让你了解深度学习领域新流行的框架
-
-https://mp.weixin.qq.com/s/y5LLraGWuYUbOted9N-GWQ
-
-如何从TensorFlow转入PyTorch
-
-https://mp.weixin.qq.com/s/KRuEuAOXU2fpSNyOJW4bpA
-
-Yoshua Bengio实验室MILA开放面向初学者的PyTorch教程
-
-https://mp.weixin.qq.com/s/QjhokXDXuglJajULKigt1g
-
-PyTorch手把手深度学习教程系列完整版
-
-https://mp.weixin.qq.com/s/FGL1vYaXvv-NCcq0vithZw
-
-深度学习框架：PyTorch入门与实践
-
-https://github.com/jinfagang/pytorch_name_net
-
-PyTorch人工智能自动取名
-
-https://mp.weixin.qq.com/s/UGGrK5LwOP2aLVTz0AGMDw
-
-如何通过PyTorch实现Tensor
-
-https://mp.weixin.qq.com/s/9X77MPcQOQPwZaOVIVfo9Q
-
-用PyTorch搭建抽取式摘要系统
-
-https://mp.weixin.qq.com/s/rORvudwdbnmSvzFhM1gVOA
-
-斯坦福大学CS-224n课程中深度NLP模型的PyTorch实现
-
-https://mp.weixin.qq.com/s/Chk-QAPhIXlIeguT4hS6kg
-
-对比ResNet：超深层网络DiracNet的PyTorch实现
-
-https://mp.weixin.qq.com/s/BP9MToKcE1MJmQTQv2UUZQ
-
-Pytorch开源VQA神经网络模块，让你快速完成看图问答
-
-https://mp.weixin.qq.com/s/QqRjvWMMKosPh9qfU61BzQ
-
-浅谈将Pytorch模型从CPU转换成GPU
-
-https://mp.weixin.qq.com/s/aMfPBl6E5SxckQdSAGTkBg
-
-Pytorch教程：Facebook发布的LR-GAN如何生成图像？

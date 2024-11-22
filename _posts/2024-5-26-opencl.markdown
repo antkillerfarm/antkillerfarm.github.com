@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  OpenCL, TensorRT
+title:  OpenCL, Transformer Engine
 category: AI 
 ---
 
@@ -188,40 +188,53 @@ Portable Computing Language是另一个知名的OpenCL实现。
 
 http://portablecl.org/
 
-# TensorRT
+# Transformer Engine
 
-TensorRT：嵌入式设备上专用于DL inference的计算库。
+Transformer Engine（TE）是一种专门用于加速Transformer模型在NVIDIA GPU上执行的库。它包括在Hopper和Ada架构GPU上使用8位浮点（FP8）精度的能力。
 
-TensorRT还有个云端的集群版本：
+`pip install transformer_engine[pytorch]`
 
-https://github.com/NVIDIA/tensorrt-inference-server
+注意：中括号里的内容不可省略。
 
-参考：
-
-https://mp.weixin.qq.com/s/v8-JHd5tWm41WLqR-h6eKA
-
-使用TensorRT集成加速TensorFlow推理
-
-https://mp.weixin.qq.com/s/rMvhsi2vXxVC65C5Z4IXIw
-
-AI视频处理加速引擎TensorRT及Deepstream介绍
-
-https://zhuanlan.zhihu.com/p/35657027
-
-高性能深度学习支持引擎实战——TensorRT
-
-## CUDA-X AI
-
-CUDA-X AI是软件加速库的集合，这些库建立在CUDA之上，提供对于深度学习、机器学习和高性能计算必不可少的优化功能。这些库包括cuDNN（用于加速深度学习基元）、cuML（用于加速数据科学工作流程和机器学习算法）、TensorRT（用于优化受训模型的推理性能）、cuDF（用于访问 pandas 之类的数据科学 API）、cuGraph（用于在图形上执行高性能分析），以及超过13个的其他库。
-
-官网：
-
-https://www.nvidia.cn/technologies/cuda-x/
-
-## TensorRT-LLM
-
-TensorRT-LLM是NVIDIA推出的基于TensorRT的LLM推理工具。
+安装的时候，依赖中有几个包（flash-attn、flashattn_hopper（on H100））需要本地的cuda编译，且耗时较长，大概要十分钟的样子。
 
 代码：
 
-https://github.com/NVIDIA/TensorRT-LLM/
+https://github.com/NVIDIA/TransformerEngine
+
+---
+
+TE和目前流行的Hugging Face的集成，主要参考NV官方的文档：
+
+https://docs.nvidia.com/deeplearning/transformer-engine-releases/release-1.12/user-guide/examples/te_llama/tutorial_accelerate_hf_llama_with_te.html
+
+Accelerating a Hugging Face Llama 2 and Llama 3 models with Transformer Engine
+
+其核心思想使用TELlamaForCausalLM替换掉LlamaForCausalLM：
+
+```python
+AutoConfig.from_pretrained("llama2")
+model = TELlamaForCausalLM(config=config)
+```
+
+TELlamaForCausalLM由于使用KV cache的缘故，有些torch.Tensor被降级为io.BytesIO，导致transformers的一些应用产生问题，可以用类似以下手段过滤一下：
+
+```python
+if isinstance(tensor, torch.Tensor):
+  do_sth()
+```
+
+---
+
+TE的另一项重要特性是FP8的使用。这里需要借助Hugging Face的Accelerator库：
+
+```python
+fp8_kwarg_handler = [FP8RecipeKwargs(backend="te")]
+accelerator = Accelerator(kwargs_handlers=fp8_kwarg_handler)
+
+model, optimizer, tokenized_datasets = accelerator.prepare(
+    model, optimizer, tokenized_datasets
+)
+```
+
+从上例也可学习在已有代码中加入Accelerator的套路——将原有各对象作为参数传入Accelerator库，然后返回各自类型的被修改后的对象。

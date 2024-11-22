@@ -159,13 +159,21 @@ Stable Diffusion XL = SD + GAN
 
 采用Trajectory Segmented Consistency Distillation技术，达到One-step生成的目的。
 
-## Human Motion Diffusion Model
+## 在机器人领域的应用
 
 Diffusion Model不仅可用于文生图，还可以用于机器人领域，实现文本到动作的转换。
 
 https://blog.csdn.net/v_JULY_v/article/details/142854390
 
 从MDM、RobotMDM到UCSD的Exbody——人体运动扩散模型：赋能机器人的训练
+
+---
+
+Diffusion Policy引入扩散模型(duffision model)，输入一段观测序列，输出未来一段时间的行为序列，在机器人操作数据集上学习，即模仿学习或监督学习。
+
+https://blog.csdn.net/v_JULY_v/article/details/143651718
+
+Diffusion Policy——斯坦福机器人UMI所用的扩散策略：从原理到其编码实现(含Diff-Control、ControlNet详解)
 
 # SORA
 

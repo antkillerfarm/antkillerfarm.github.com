@@ -11,6 +11,18 @@ category: Russo Ukrainian War Sky
 
 ## 顿涅斯克战役（续）
 
+Antitila是一支来自乌克兰基辅的流行摇滚乐队，成立于2007年，乐队的主唱为Taras Topolya；在2022年2月24日战争全面爆发后，Taras及其乐队成员志愿加入了乌克兰国土防卫部队。
+
+https://www.zhihu.com/zvideo/1616766567198486528
+
+“巴赫穆特堡垒”官方MV
+
+https://zhuanlan.zhihu.com/p/630219636
+
+乌克兰的巴赫穆特 英雄之城的毁灭
+
+---
+
 赫鲁晓夫的第一份工作是在顿涅茨克，他在回忆录里提到顿涅茨克城外有一个叫做马林卡的“富裕的小镇”，现在这里已经被彻底炸平了。。。
 
 ![](/images/img5/Marinka.jpg)

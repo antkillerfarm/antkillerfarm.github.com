@@ -291,6 +291,8 @@ Mixture of Experts(MoE)
 
 ![](/images/img5/MoE.png)
 
+![](/images/img6/switch_transformer.png)
+
 https://mp.weixin.qq.com/s/XQSEg2_8_1lFqWdHVG6TVA
 
 Switch Transformer: 高效稀疏的万亿参数Transformer

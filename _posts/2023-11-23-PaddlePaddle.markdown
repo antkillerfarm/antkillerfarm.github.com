@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  PaddlePaddle, Huggingface, Pytorch（三）
+title:  PaddlePaddle, Huggingface
 category: DL Framework 
 ---
 
@@ -164,14 +164,20 @@ nn.Sequential里面的模块按照顺序进行排列的，所以必须确保前�
 ---
 
 ```python
+# About Model
 class LlamaForCausalLM(LlamaPreTrainedModel)
 class LlamaModel(LlamaPreTrainedModel)
 class LlamaDecoderLayer(nn.Module)
 class LlamaPreTrainedModel(PreTrainedModel)
 class PreTrainedModel(nn.Module, ModuleUtilsMixin, GenerationMixin, PushToHubMixin, PeftAdapterMixin)
 class GenerationMixin
-def generate(..., assistant_model: Optional["PreTrainedModel"] = None, ...)
+def generate(..., assistant_model: Optional["PreTrainedModel"] = None, ...):
 result = self._assisted_decoding
+ForCausalLMLoss
+
+# About Trainer
+transformers.Trainer.train()
+_inner_training_loop
 ```
 
 ---
@@ -188,6 +194,16 @@ https://github.com/huggingface/diffusers
 huggingface出品的库的cache路径：
 
 `~/.cache/huggingface`
+
+---
+
+Huggingface的datasets库，提供了加载数据集的功能。
+
+例如json格式的数据集的加载在：
+
+datasets/packaged_modules/json/json.py
+
+数据一般保存为Apache Arrow支持的格式。
 
 ---
 
@@ -220,197 +236,3 @@ xFormers是Meta推出的基于PyTorch的深度学习库，专注于Transformer�
 代码：
 
 https://github.com/facebookresearch/xformers
-
-# Pytorch
-
-https://mp.weixin.qq.com/s/BjSx3tSQ2Xa0ja_j6dA7eA
-
-Pytorch中的DataLoader的相关记录
-
-https://mp.weixin.qq.com/s/vx0txFUf10QDBlldz0VJmg
-
-AI插画师：如何用基于PyTorch的生成对抗网络生成动漫头像？
-
-https://mp.weixin.qq.com/s/xHXsMxMTdnCWkuwzHs_7Cg
-
-深度学习实验流程及PyTorch提供的解决方案
-
-https://mp.weixin.qq.com/s/HPRUQSsUdk3rXBBl_GpFMw
-
-对抗自编码器PyTorch手把手实战系列——PyTorch实现自编码器
-
-https://mp.weixin.qq.com/s/5sY_IzwIz-lbDLtWJM-GRQ
-
-PyTorch实例：用ResNet进行交通标志分类
-
-https://mp.weixin.qq.com/s/zN3k51g9gjQvc43AH-ypGA
-
-如何通过PyTorch上手Tensor Comprehensions？
-
-https://mp.weixin.qq.com/s/yGtDUbvO2APT88MwcSh8IA
-
-GAN如此简单的PyTorch实现，一张脸生成72种表情
-
-https://mp.weixin.qq.com/s/u9GEDCmR-PT0--0Xf4vKDA
-
-Pytorch的tensorboard食谱帮你可视化误差结果
-
-https://mp.weixin.qq.com/s/HginBrMOfEEWsZKq67u6EA
-
-在Pytorch中构建流数据集
-
-https://zhuanlan.zhihu.com/p/98535650
-
-研究生应当掌握的并行训练方法（单机多卡）
-
-https://zhuanlan.zhihu.com/p/86441879
-
-pytorch多gpu并行训练
-
-https://mp.weixin.qq.com/s/KP4etDrGlJmRAMQmR1mTJA
-
-基于C++的PyTorch模型部署
-
-https://mp.weixin.qq.com/s/uUxwMFGF9nJiraVQsIqu2Q
-
-PyTorch重大更新：将支持自动混合精度训练！
-
-https://zhuanlan.zhihu.com/p/145427849
-
-PyTorch Parallel Training（单机多卡并行、混合精度、同步BN训练指南文档）
-
-https://mp.weixin.qq.com/s/Y6sJhnmjRwN2uopHgr7nFA
-
-让PyTorch更轻便，这款深度学习框架你值得拥有！
-
-https://zhuanlan.zhihu.com/p/104019160
-
-PyTorch常用代码段
-
-https://mp.weixin.qq.com/s/5Nq3y8hwhQG1UV9lHuBQvA
-
-13个你一定要知道的PyTorch特性
-
-https://mp.weixin.qq.com/s/cKvkvWgVPuq9y1A5q1OPEQ
-
-跟着指南学PyTorch—迁移学习教程
-
-https://mp.weixin.qq.com/s/gJgxh4l0CXTlaJaQ_FS3YQ
-
-PyTorch的数据增强与数据标准化
-
-https://mp.weixin.qq.com/s/Mo7XhRcPkgurmQPJ3Zu1ug
-
-基于PyTorch的计算机视觉框架
-
-https://mp.weixin.qq.com/s/PWABh72t92pUOJufcmzvag
-
-用PyTorch做深度学习实验！Facebook新框架Ax和BoTorch双双开源
-
-https://mp.weixin.qq.com/s/LcwlCai7PMYOBwsLXPS5HA
-
-PyTorch语义分割开源库semseg
-
-https://mp.weixin.qq.com/s/oDYMTb9NWxVsW07FLQKA_Q
-
-万字综述，核心开发者全面解读PyTorch内部机制
-
-https://www.zhihu.com/question/274635237
-
-Pytorch有什么节省内存（显存）的小技巧？
-
-https://mp.weixin.qq.com/s/xe5zmJklT2sqn_zffmyrLg
-
-Sharded:在相同显存的情况下使pytorch模型的参数大小加倍
-
-https://mp.weixin.qq.com/s/maOnO_o5y19X2D-ZnLjsJA
-
-PyTorch中的In-place操作是什么？为什么要避免使用这种操作？
-
-https://zhuanlan.zhihu.com/p/299736532
-
-使用PyTorch 1.6 for Android
-
-https://mp.weixin.qq.com/s/1ugk6uI6lfWEEUvtKIfYNA
-
-9个让PyTorch模型训练提速的技巧！
-
-https://mp.weixin.qq.com/s/kZvdgWqk1KLi790rly3YYQ
-
-Pytorch中的分布式神经网络训练
-
-https://mp.weixin.qq.com/s/biHcUt55-9RfqYJ_Dg_7Tg
-
-TorchMetrics：PyTorch的指标度量库
-
-https://zhuanlan.zhihu.com/p/363319763
-
-PyTorch vs LibTorch：网络推理速度谁更快？
-
-https://mp.weixin.qq.com/s/RBclQdtaA8prvSoUUdhrEQ
-
-机器学习的Pytorch实现资源集合
-
-https://mp.weixin.qq.com/s/zPv-3fMy1rZwAwPqjs7oAA
-
-Pytorch图像分类从模型自定义到测试
-
-https://zhuanlan.zhihu.com/p/46636027
-
-1张图学会PyTorch+TensorFlow+MXNet+TF Eager
-
-https://mp.weixin.qq.com/s/yS9PAw926Y7AsGRW0eHG0Q
-
-基于PyTorch的GAN框架TorchGAN：用架构级API轻松定制GAN项目
-
-https://github.com/CVBox/PyTorchCV
-
-一个基于pytorch的CV框架
-
-https://mp.weixin.qq.com/s/w09hcJof80m2VGwn7SgKmQ
-
-TorchSeg—基于PyTorch的快速模块化语义分割开源库
-
-https://mp.weixin.qq.com/s/TsR-jgO2c2-dbqnk1mEj8w
-
-想读读PyTorch底层代码？这份内核机制简介送给你
-
-https://mp.weixin.qq.com/s/Lzt3LbO6lBbOebNV1d2pLQ
-
-迁移学习不好懂？这里有一个PyTorch项目帮你理解
-
-https://mp.weixin.qq.com/s/7fK6GNyzYTP0fQy7F01fZw
-
-PyTorch深度学习模型训练加速指南2021
-
-https://mp.weixin.qq.com/s/SReuVBN8WIXFlnwho3wqgQ
-
-最详细的Pytorch底层算子扩展总结
-
-https://mp.weixin.qq.com/s/14_pt0_skKYNw2sAK5Zptw
-
-Pytorch底层算子扩展最详细的总结
-
-https://zhuanlan.zhihu.com/p/363317178
-
-模型转换：由Pytorch到TFlite
-
-https://mp.weixin.qq.com/s/Mj7xI5rFTxKaXswYi9_mRQ
-
-我的PyTorch模型比内存还大，怎么训练呀？
-
-https://mp.weixin.qq.com/s/TjCUCbXL3oSgJNYoEltgrg
-
-7个提升PyTorch性能的技巧
-
-https://zhuanlan.zhihu.com/p/275755543
-
-一款全平台轻量级pytorch推理框架Msnhnet
-
-https://mp.weixin.qq.com/s/MJgQqwWa4wyNgtKZaX_ADQ
-
-Tensorboard可视化与Hook机制
-
-https://mp.weixin.qq.com/s/jnV_4REXOR-ema1kOC95Nw
-
-跨越重重“障碍”，我从PyTorch转换为了TensorFlow Lite

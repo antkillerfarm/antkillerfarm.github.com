@@ -21,6 +21,20 @@ Graph Neural Networks是2019年以来比较热门的方向。然而由于没有�
 
 >Franco Scarselli，意大利人，University of Florence大学博士。University of Siena教授。
 
+---
+
+我们做推荐系统的优化，一定要清楚每次优化的效果收益来源是什么。一般来说，收益总是来源于**样本、特征和模型**三个方向的一个或多个。但归根到底，可以再精炼成两个方面，收益要么来源于信息的增加（样本、特征），要么来源于信息利用能力的增强（模型）。
+
+我们拿一个电影阿甘正传的knowledge graph来说，它的相关导演，演员，风格的信息肯定是重要的。但对于一个成熟推荐系统来说，肯定是已经通过其他形式学习过这些信息了。我没有必要一定使用GNN来学习这些知识。
+
+对于行为信息比较丰富的推荐系统来说，比如说抖音、小红书，其大量的用户行为之间的协同关系就可以充分表征内容的相似性了，它不再需要知识本体和属性间的连接来补充这种相似性。更何况，现在主流的推荐系统也已经通过直接添加特征的方式学习过知识图谱包含的知识了，由GNN提供的信息增量就微不足道了。
+
+另一方面，对于一些纯知识性的推荐系统，比如说豆瓣、IMDB、知网等，这些网站中知识的链接是非常重要的，知识间二度、三度的关联也是有价值的。而且它缺乏足够多的用户互动信息来覆盖表达物品之间的相似性，那么GNN就是有价值的。
+
+https://www.zhihu.com/question/3320585936
+
+为什么最近几年，没人在推荐系统里去玩GNN模型，GNN是凉透了吗？
+
 # 教程
 
 http://web.stanford.edu/class/cs224w/
@@ -338,53 +352,3 @@ https://mp.weixin.qq.com/s/F4h30cyQnjvJfjbtLfa83A
 https://mp.weixin.qq.com/s/vK9LA0-p31rah83AU7YgvA
 
 DeepMind加持的GNN框架正式开源！TensorFlow进入图神经网络时代
-
-# GCN
-
-https://mp.weixin.qq.com/s/bMpugd2Lp35VPr8fQAPzsg
-
-一文概览图卷积网络基本结构和最新进展
-
-https://mp.weixin.qq.com/s/TGuEvNXw_9S5-9a3KyDvvw
-
-基于图卷积网络的图深度学习
-
-https://mp.weixin.qq.com/s/kcXp-uWcmIsAVfa63mor4g
-
-图卷积网络介绍及进展
-
-https://zhuanlan.zhihu.com/p/54505069
-
-图卷积网络(GCN)新手村完全指南
-
-https://mp.weixin.qq.com/s/4zXyHaQzfJQ3e1JTaZbBbQ
-
-图卷积神经网络理论基础
-
-https://mp.weixin.qq.com/s/XSug_qOqq_QaphkiRlGkIg
-
-图卷积GCN前沿方法介绍
-
-https://mp.weixin.qq.com/s/B8rJRlnwGJKUSI17Ot66Xw
-
-从CNN到GCN的联系与区别——GCN从入门到精（fang）通（qi）
-
-https://mp.weixin.qq.com/s/CpDZEqo14X_lCBh6i7feIA
-
-图卷积神经网络(GCN)文本分类详述
-
-https://mp.weixin.qq.com/s/DJAimuhrXIXjAqm2dciTXg
-
-何时能懂你的心——图卷积神经网络（GCN）
-
-https://mp.weixin.qq.com/s/jBQOgP-I4FQT1EU8y72ICA
-
-图神经网络的“开山之作”GCN模型
-
-https://mp.weixin.qq.com/s/ftz8E5LffWFfaSuF9uKqZQ
-
-Graph Neural Network：GCN算法原理，实现和应用
-
-https://zhuanlan.zhihu.com/p/48834333
-
-GCN in 2018：2018年顶会论文中的图卷积神经网络的理论与应用

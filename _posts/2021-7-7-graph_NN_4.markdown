@@ -9,6 +9,50 @@ category: graph
 
 # Graph NN参考资源
 
+https://zhuanlan.zhihu.com/p/133739758
+
+全面理解PinSage（工业落地：图神经网络+推荐系统）
+
+https://mp.weixin.qq.com/s/VctNZsALrbDQDW3_zhGJsw
+
+在NLP中应用GCN的几种构图方法整理
+
+https://mp.weixin.qq.com/s/TnS4-seRxAs45A6SDSoACg
+
+图神经网络的预训练策略
+
+https://mp.weixin.qq.com/s/Pgz8cnDpX2mgexASnRzfhA
+
+浅谈图神经网络的局限性
+
+https://mp.weixin.qq.com/s/hQ-Fo_aizkcTxvzW0FSIEw
+
+VGAE：利用变分自编码器完成图重构
+
+https://mp.weixin.qq.com/s/JvtrGa0YiUmR6UA5wBQ-pQ
+
+图神经网络GNN最新理论进展和应用探索
+
+https://mp.weixin.qq.com/s/zQU47tjpTCPiLdEmUmZx3Q
+
+图卷积神经网络及其应用
+
+https://mp.weixin.qq.com/s/8Sz_jo7pokL_nzupEBGGdg
+
+当深度强化学习遇见图神经网络
+
+https://mp.weixin.qq.com/s/Lakq83_ngUJf1ES3N7J9_g
+
+图卷积在基于骨架的动作识别中的应用
+
+https://mp.weixin.qq.com/s/5wSgC4pXBfRLoCX-73DLnw
+
+什么是图卷积网络？行为识别领域新星
+
+https://mp.weixin.qq.com/s/1-Dmckby2NcXsaoK08zk8w
+
+视频理解中的图表示学习
+
 https://zhuanlan.zhihu.com/p/137223381
 
 推荐系统的图方法
@@ -346,33 +390,3 @@ http://blog.csdn.net/dm_vincent/article/details/8554244
 http://www.cnblogs.com/luweiseu/archive/2012/07/14/2591370.html
 
 强连通分支算法--Kosaraju算法、Tarjan算法和Gabow算法
-
-# 抗日战争=
-
-1939年11月21日晚，著名抗战海外领袖、时任泰国中华总商会主席的蚁光炎在曼谷耀华力路遇刺身亡，享年61岁。凶手是日本特务。
-
-我虽死，尔等免用痛心，中国必定胜利!
-
-https://zhuanlan.zhihu.com/p/553376152
-
-蚁光炎：从干苦力到亿万家产，抗日时期捐出5个亿
-
----
-
-他于1951年6月10日被押赴刑场进行枪决，此时的他已经是八十六岁高龄。
-
-https://baike.baidu.com/tashuo/browse/content?id=3b66e4b1a6e1cf713e122469
-
-他当汉奸57年，带日军在中国屠城四天，倾尽家产为日军捐44架战机（张本政）
-
----
-
-在别廷芳的治理下，民国时期河南南阳内乡等县夜不闭户、路不拾遗，有人因偷萝卜被枪毙，他的女婿因偷西瓜也被枪毙，甚至枪毙私掰玉米穗的孩童，别廷芳认为“从小学偷长大了能好？”。
-
-有次一位过路客商被偷了一匹布，商人贪图小利，报告说自己丢了两匹布；然而经过严查，只查到了一匹布，于是别廷芳再次询问客商，最终发现他为了多骗取一匹布而撒谎。别廷芳将这个客商和偷取布的小偷一起枪毙，以儆效尤，自此再也没人敢谎报骗取财物。
-
-别廷芳一生廉洁，幼年时家中仅有三亩地，死后遗产仍是三亩地。
-
-https://www.zhihu.com/question/379174964
-
-如何评价别廷芳？

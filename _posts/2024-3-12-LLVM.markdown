@@ -307,6 +307,8 @@ llvm/mlir/docs/Tutorials/Toy
 
 ![](/images/img5/MLIR.png)
 
+![](/images/img6/dialect.png)
+
 Affine Dialect：这种Dialect使用来自多面体编译的技术使依赖分析和循环转换高效可靠。
 
 GPU Dialect：MLIR中的GPU Dialect模拟了类似于CUDA或OpenCL的通用GPU编程范式。它的目标是提供抽象来模拟GPU特定的操作和属性。它在很大程度上意味着与供应商无关。

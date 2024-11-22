@@ -247,6 +247,32 @@ https://zhuanlan.zhihu.com/p/694560307
 
 # 芯片行业+
 
+![](/images/img4/xeon-scalable-processor-numbers.png)
+
+---
+
+![](/images/img5/EDA.jpg)
+
+Synopsys、Cadence、Siemens EDA（原Mentor）三大巨头垄断了全球EDA行业接近70%左右的市场份额。
+
+---
+
+项目管理中项目进度: WS=>ES=>CS=>MP
+
+WS：Working Sample
+
+ES：Engineering Sample
+
+CS：Commercial Sample
+
+MP：mass product
+
+所以，可以理解为ES是工程样品，CS是出货样品。
+
+“稼动率”（activation或utilization），是指设备在所能提供的时间内为了创造价值而占用的时间所占的比重。
+
+---
+
 Tape out是指芯片完成了设计，将设计数据交给fab开始生产，很多年前，完成的设计数据都是写到磁带里传给fab，设计团队将数据写入磁带叫tape in，fab读取磁带的数据叫tape out，现在科技发展了已经不用磁带了，但这个词还是沿用了下来。
 
 wafer out是指wafer在fab完成了生产，设计的集成电路已经制造在硅基上了，开始要封装测试了。

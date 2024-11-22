@@ -101,7 +101,7 @@ AI编译器之后端优化
 
 一个类似于TVMscript的可以通过python语法去写高性能GPU程序的库。注意不要和NVIDIA Triton搞混了。后者是一个AI推理框架。
 
-NVIDIA Triton Inference Server（此前称为TensorRT Inference Server）能够帮助开发人员和IT/DevOps轻松地在云端、本地数据中心或边缘部署高性能推理服务器。
+> NVIDIA Triton Inference Server（此前称为TensorRT Inference Server）能够帮助开发人员和IT/DevOps轻松地在云端、本地数据中心或边缘部署高性能推理服务器。
 
 官网：
 
@@ -133,6 +133,18 @@ Triton的目标是只考虑在CUDA生态下的优化，直接考虑要解决的�
 
 ---
 
+triton-shared是微软开源的一个项目，它为Triton编译器提供了一个共享的中间层（middle-layer）。这个中间层的主要目的是将Triton IR降低到MLIR方言。
+
+代码：
+
+https://github.com/microsoft/triton-shared
+
+![](/images/img6/Triton_2.png)
+
+triton-shared其实主要是用来cover最右边的分支，因为Linalg dialect是一个非常重要的dialect，它可以去承接很多不同的backend，在主流一些backend的编译优化环节，都会将Linalg作为主要的dialect，来进行上下游不同dialect之间的转换与对接。
+
+---
+
 参考：
 
 https://zhuanlan.zhihu.com/p/394377526
@@ -154,6 +166,18 @@ OpenAI/Triton MLIR 迁移工作简介
 https://pytorch.org/blog/cuda-free-inference-for-llms/
 
 CUDA-Free Inference for LLMs
+
+https://zhuanlan.zhihu.com/p/709844371
+
+一起实现一个Baby Triton
+
+https://www.zhihu.com/column/c_186688444
+
+一个OpenAI/Triton MLIR的专栏
+
+https://tfruan2000.github.io/posts/triton-linalg/
+
+Triton Linalg
 
 ## NVFuser
 

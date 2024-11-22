@@ -95,6 +95,8 @@ Every country has its own mafia. In Russia, the mafia has its own country. -- by
 
 2024.6.15～16 瑞士和平峰会。（美洲国家组织、安提瓜和巴布达、赞比亚、巴巴多斯、马绍尔群岛、马拉维等12个国家和地区组织会后签署公报）
 
+2024.11.19 战争持续1000天。
+
 ---
 
 https://www.understandingwar.org
