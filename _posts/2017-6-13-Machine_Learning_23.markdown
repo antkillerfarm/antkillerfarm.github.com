@@ -191,20 +191,6 @@ https://kexue.fm/archives/9512
 
 Tiger：一个“抠”到极致的优化器
 
-## cycle参数
-
-在实际的工程实践中，某些优化策略还提供了cycle参数。它的效果如下所示：
-
-![](/images/img3/Cycle.jpg)
-
-cycle参数的初衷是为了防止训练后期LR十分小，导致结果一直在某个局部最小值附近振荡。突然调大LR可以跳出注定不会继续增长的区域探索其他区域。
-
-![](/images/img4/cyclic_lr.jpg)
-
-上图展示了Cyclic LR的另一种用法：
-
-每隔一段时间重启学习率，这样在单位时间内能收敛到多个局部最小值，从而得到很多个模型做集成。
-
 ## 二阶Optimizer
 
 虽然二阶Optimizer的收敛效果优于一阶Optimizer，但由于计算量较大，通常用的较少。
@@ -314,3 +300,31 @@ http://www.cnblogs.com/neopenx/p/4768388.html
 https://mp.weixin.qq.com/s/VoBK-l_ieSg2UupC2ix2pA
 
 听说你了解深度学习最常用的学习算法：Adam优化算法？
+
+https://mp.weixin.qq.com/s/YRyqvlNe24mlFZ7GB9vDnw
+
+一文看懂常用的梯度下降算法
+
+https://mp.weixin.qq.com/s/qncTSBCvjMzAual5Sz9R3A
+
+解析深度学习优化：Momentum、RMSProp和Adam
+
+https://mp.weixin.qq.com/s/q7BI-YyhtmNzUfBMTKVdqQ
+
+Hitting time analysis of SGLD！
+
+https://mp.weixin.qq.com/s/vt7BEHbwJrAzlL2Pc-6QFg
+
+掌握机器学习数学基础之优化（上）
+
+https://mp.weixin.qq.com/s/6NBLLLa-S625iaehR8zDfQ
+
+掌握机器学习数学基础之优化（下）
+
+https://zhuanlan.zhihu.com/p/73441350
+
+从物理角度理解加速梯度下降
+
+https://mp.weixin.qq.com/s/n1Ks8I3Ldgb-u-kVbGBZ5Q
+
+机器学习中的优化方法

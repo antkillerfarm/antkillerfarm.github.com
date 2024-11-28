@@ -121,6 +121,8 @@ https://triton-lang.org/main/dialects/TritonDialect.html
 
 CUDA在线程的细粒度上进行编程，Triton是在分块的细粒度上进行编程。
 
+Google有个pallas项目，也就是jax版的triton。
+
 ---
 
 Triton的目标是只考虑在CUDA生态下的优化，直接考虑要解决的问题就是Pre Fetching，访存合并，Shared Memory的分配与同步，完全放弃了硬件中立。

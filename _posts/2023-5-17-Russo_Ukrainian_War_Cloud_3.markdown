@@ -184,3 +184,7 @@ https://zhuanlan.zhihu.com/p/691570190
 https://zhuanlan.zhihu.com/p/712410460
 
 俄罗斯FAB-3000滑翔炸弹，从“大笑话”变成大麻烦，乌军和北约都非常头疼
+
+https://zhuanlan.zhihu.com/p/8706248173
+
+欧洲能在没有美国支持的情况下武装乌克兰部队吗？欧洲储存基地分析

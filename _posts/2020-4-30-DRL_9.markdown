@@ -351,11 +351,17 @@ RLHF的替代之DPO原理解析：从RLHF、Claude的RAILF到DPO、Zephyr
 
 ## Chain-of-Thought
 
-思维链就是一系列中间的推理步骤(a series of intermediate reasoning steps)。通过让大模型逐步参与将一个复杂问题分解为一步一步的子问题并依次进行求解的过程可以显著提升大模型的性能。
+思维链就是一系列中间的推理步骤(a series of intermediate reasoning steps)。通过让大模型逐步参与将一个复杂问题分解为一步一步的子问题，并依次进行求解的过程可以显著提升大模型的性能。
 
 ![](/images/img6/COT.png)
 
 OpenAI o1 = COT + RL
+
+![](/images/img6/PSRL.png)
+
+![](/images/img6/R3.png)
+
+每一轮推导，都把推导结果作为输入塞给下一轮作为输入，如此反复，相当于用一张巨大的草稿纸记录做题过程，每次演算都把推导过程写在草稿纸上，这样下次演算可以参考之前的演算过程，这样重复演算多次，每次演算的角度可以不一样，最终结果就非常综合而且全面，草稿纸越大，能写的演算过程越多，应对一些刁钻复杂问题，也就更容易得出准确答案。
 
 https://blog.csdn.net/Julialove102123/article/details/135499567
 
@@ -365,10 +371,6 @@ https://zhuanlan.zhihu.com/p/721952915
 
 Reverse-o1:OpenAI o1原理逆向工程图解
 
-# 常见问题建模方法
+https://blog.csdn.net/v_JULY_v/article/details/142865592
 
-![](/images/img4/DRL.jpg)
-
-https://zhuanlan.zhihu.com/p/356166466
-
-强化学习落地：计算机系统
+一文通透OpenAI o1：从CoT、Quiet-STaR、Self-Correct、Self-play RL、MCTS等技术细节到工程复现

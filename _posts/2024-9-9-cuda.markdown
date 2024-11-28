@@ -183,6 +183,12 @@ export PATH=/usr/local/cuda/bin:$PATH
 
 ---
 
+nvcc编译cuda程序，不运行device（GPU）部分代码的解决方案：指定GPU的arch。
+
+`nvcc ./xxx.cu -o xxx -arch sm_90 -Wno-deprecated-gpu-targets`
+
+---
+
 参考：
 
 https://developer.nvidia.com/blog/even-easier-introduction-cuda/

@@ -7,6 +7,14 @@ category: DRL
 * toc
 {:toc}
 
+# 常见问题建模方法
+
+![](/images/img4/DRL.jpg)
+
+https://zhuanlan.zhihu.com/p/356166466
+
+强化学习落地：计算机系统
+
 # DRL和Robotics
 
 虽然，DRL似乎生来就是为了Robotics，然而现实中的无人系统，目前基本还是使用传统的控制方法。

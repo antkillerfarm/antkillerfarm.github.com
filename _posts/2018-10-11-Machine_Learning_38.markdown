@@ -33,10 +33,6 @@ https://mp.weixin.qq.com/s/zFGQzC_uQdAwlr9BzA-CYg
 
 深度学习需要了解的四种神经网络优化算法
 
-https://mp.weixin.qq.com/s/rUqIfKWmEBVjajlAn2HXfg
-
-理解深度学习中的学习率及多种选择策略
-
 https://mp.weixin.qq.com/s/UfplwSgyWnLNiCdIrconhA
 
 SGD的那些变种，真的比SGD强吗
@@ -140,14 +136,6 @@ https://mp.weixin.qq.com/s/5KyODpSjkdYJ9q-itQDsAA
 https://mp.weixin.qq.com/s/3FSZOlA2sGQwiPj77ShTIQ
 
 最优化算法鸟视解读
-
-https://mp.weixin.qq.com/s/4hSar7SuCjLkZUjuIfu1Lg
-
-如何选择最适合你的学习率变更策略
-
-https://zhuanlan.zhihu.com/p/32923584
-
-Tensorflow中learning rate decay的奇技淫巧
 
 https://mp.weixin.qq.com/s/qk3cw05ZdlYEKDGRG0fnLg
 

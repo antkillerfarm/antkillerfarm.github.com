@@ -59,6 +59,10 @@ https://zhuanlan.zhihu.com/p/672646425
 
 `[[fallthrough]]`, `[[nodiscard]]`, `[[maybe_unused]]`, 和 `[[deprecated]]` 新属性的使用
 
+https://blog.csdn.net/kelvin_yin/article/details/137468039
+
+内存对齐alignof和alignas
+
 # 动态链接
 
 这两天实践了一下怎样在linux下创建动态链接。感觉网上的资料虽然翔实，但仍然有疏漏之处。

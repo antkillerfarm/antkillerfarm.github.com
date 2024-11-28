@@ -241,10 +241,6 @@ https://www.zhihu.com/question/314292163
 
 如何评价SpaceX载人龙飞船成功首飞并与国际空间站对接？
 
-https://www.zhihu.com/question/54009933
-
-空间站是怎么取暖？或者说是维持温度的呢？
-
 ---
 
 ![](/images/img2/Elon_Musk.jpg)

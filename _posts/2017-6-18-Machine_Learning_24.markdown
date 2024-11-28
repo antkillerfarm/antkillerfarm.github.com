@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十四）——单分类SVM&多分类SVM, Stacking, 数据清洗
+title:  机器学习（二十四）——Learning Rate, 单分类SVM&多分类SVM, Stacking, 数据清洗
 category: ML 
 ---
 
@@ -8,38 +8,6 @@ category: ML
 {:toc}
 
 # Optimizer（续）
-
-https://mp.weixin.qq.com/s/YRyqvlNe24mlFZ7GB9vDnw
-
-一文看懂常用的梯度下降算法
-
-https://mp.weixin.qq.com/s/qncTSBCvjMzAual5Sz9R3A
-
-解析深度学习优化：Momentum、RMSProp 和 Adam
-
-https://mp.weixin.qq.com/s/q7BI-YyhtmNzUfBMTKVdqQ
-
-Hitting time analysis of SGLD！
-
-https://mp.weixin.qq.com/s/vt7BEHbwJrAzlL2Pc-6QFg
-
-掌握机器学习数学基础之优化（上）
-
-https://mp.weixin.qq.com/s/6NBLLLa-S625iaehR8zDfQ
-
-掌握机器学习数学基础之优化（下）
-
-https://mp.weixin.qq.com/s/o10Fp2VCwoLqgzirbGL9LQ
-
-如何估算深度神经网络的最优学习率
-
-https://zhuanlan.zhihu.com/p/73441350
-
-从物理角度理解加速梯度下降
-
-https://mp.weixin.qq.com/s/n1Ks8I3Ldgb-u-kVbGBZ5Q
-
-机器学习中的优化方法
 
 https://mp.weixin.qq.com/s/4XOI8Dq6fqe8rhtJjeyxeA
 
@@ -56,10 +24,6 @@ https://mp.weixin.qq.com/s/idmt0F49tOCh-ghWdHLdUw
 https://mp.weixin.qq.com/s/jVjemfcLzIWOdWdxMgoxsA
 
 超越Adam，从适应性学习率家族出发解读ICLR 2018高分论文
-
-https://mp.weixin.qq.com/s/B9nUwPtgpsLkEyCOlSAO5A
-
-1cycle策略：实践中的学习率设定应该是先增再降
 
 https://mp.weixin.qq.com/s/dseeCB-CRtZnzC3d4_8pYw
 
@@ -81,9 +45,59 @@ https://mp.weixin.qq.com/s/2wolhiTrWVeaSHxOpalUZg
 
 深度学习中的优化算法串讲
 
+# Learning Rate
+
+Optimizer主要解决的是梯度下降的方向，而Learning Rate则是确定梯度下降的步长。
+
+虽然许多常见的Optimizer策略，实际上也包含了相应的Learning Rate的策略，但是两者毕竟是不同的两件事情，有些Learning Rate的策略，可以和不同的Optimizer搭配使用。
+
+本节就讲述一下这些Learning Rate的策略。
+
+---
+
+某些Optimizer的cycle参数。它的效果如下所示：
+
+![](/images/img3/Cycle.jpg)
+
+cycle参数的初衷是为了防止训练后期LR十分小，导致结果一直在某个局部最小值附近振荡。突然调大LR可以跳出注定不会继续增长的区域探索其他区域。
+
+![](/images/img4/cyclic_lr.jpg)
+
+上图展示了Cyclic LR的另一种用法：
+
+每隔一段时间重启学习率，这样在单位时间内能收敛到多个局部最小值，从而得到很多个模型做集成。
+
+---
+
+在训练深度学习模型时，特别是在训练初期，直接从一个很高的学习率开始可能会导致模型权重更新过大，从而使训练不稳定。相反，从一个很低的学习率开始可能会导致训练进度缓慢。为了解决这个问题，warmup策略在训练的初期使用一个逐渐增加的学习率，从较低的学习率开始，逐渐“预热”到预定的最高学习率，这个过程称为“warmup”。
+
+---
+
+参考：
+
+https://mp.weixin.qq.com/s/4hSar7SuCjLkZUjuIfu1Lg
+
+如何选择最适合你的学习率变更策略
+
+https://zhuanlan.zhihu.com/p/32923584
+
+Tensorflow中learning rate decay的奇技淫巧
+
+https://mp.weixin.qq.com/s/B9nUwPtgpsLkEyCOlSAO5A
+
+1cycle策略：实践中的学习率设定应该是先增再降
+
+https://mp.weixin.qq.com/s/o10Fp2VCwoLqgzirbGL9LQ
+
+如何估算深度神经网络的最优学习率
+
 https://zhuanlan.zhihu.com/p/261134624
 
 pytorch的余弦退火学习率
+
+https://mp.weixin.qq.com/s/XD0eyKiBgsqmcucIsW20uw
+
+了解学习率及其如何提高深度学习的性能
 
 # 单分类SVM&多分类SVM
 
