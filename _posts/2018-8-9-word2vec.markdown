@@ -91,7 +91,7 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/tenso
 
 1.LSTM由3层减为1层。
 
-2.使用CTC loss。（参见《深度学习（二十九）》）
+2.使用CTC loss。
 
 在识别验证码的例子中，假如有两幅图，分别是123和4567，那么Label就是：
 
@@ -124,7 +124,7 @@ http://svn.code.sf.net/p/cmusphinx/code/trunk/cmudict/
 
 3.使用3层FC。只对同一time step的频点做FC，不跨time step。
 
-原理参见《深度学习（三十）》中的Deep speech 2。
+原理参见的Deep speech 2。
 
 精度再次提高到96%。如果不做第1步的修改的话，精度大概是94%，但计算快了很多，大概2个小时。
 

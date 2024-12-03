@@ -229,6 +229,10 @@ https://zhuanlan.zhihu.com/p/610800518
 
 Optimum + ONNX Runtime: 更容易、更快地训练你的Hugging Face模型
 
+https://huggingface.co/blog/zh/pytorch-ddp-accelerate-transformers
+
+从PyTorch DDP到Accelerate到Trainer，轻松掌握分布式训练
+
 # xFormers
 
 xFormers是Meta推出的基于PyTorch的深度学习库，专注于Transformer架构的优化和应用。

@@ -175,6 +175,13 @@ https://blog.csdn.net/v_JULY_v/article/details/143651718
 
 Diffusion Policy——斯坦福机器人UMI所用的扩散策略：从原理到其编码实现(含Diff-Control、ControlNet详解)
 
+## text-to-image量化模型评估指标
+
+评估量化模型生成图片的效果，主要看两个方面：
+
+- Quality：指图像本身的内在质量，包括清晰度、对比度、色彩饱和度、细节丰富度等视觉属性。常用指标有FID、IR。
+- Similarity：指生成图像与某个参考图像或预期结果之间的相似度。这可以是与原始图像的相似度，也可以是与用户提供的文本提示或指令的一致性。常用指标有LPIPS、PSNR。
+
 # SORA
 
 https://openai.com/research/video-generation-models-as-world-simulators

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度加速（七）——模型压缩与加速进阶（2）, NN Quantization（三）
+title:  深度加速（七）——模型压缩与加速进阶（2）
 category: DL acceleration 
 ---
 
@@ -8,6 +8,70 @@ category: DL acceleration
 {:toc}
 
 # 模型压缩与加速进阶
+
+https://mp.weixin.qq.com/s/p_qdKcQwQ8y_JUw3gQUEnA
+
+谷歌大脑用强化学习为移动设备量身定做最好最快的CNN模型
+
+https://mp.weixin.qq.com/s/OyEIcS5o6kWUu2UzuWZi3g
+
+这么Deep且又轻量的Network，实时目标检测
+
+https://mp.weixin.qq.com/s/8NDOf_8qxMMpcuXIZGJCGg
+
+Google又发大招：高效实时实现视频目标检测
+
+https://mp.weixin.qq.com/s/IxVMMu_7UL5zFsDCcYfzYA
+
+AutoML自动模型压缩再升级，MIT韩松团队利用强化学习全面超越手工调参
+
+https://mp.weixin.qq.com/s/BMsvhXytSy2nWIsGOSOSBQ
+
+自动生成高效DNN，适用于边缘设备的生成合成工具FermiNets
+
+https://mp.weixin.qq.com/s/nEMvoiqImd0RxrskIH7c9A
+
+仅17KB、一万个权重的微型风格迁移网络！
+
+https://mp.weixin.qq.com/s/pc8fJx5StxnX9it2AVU5NA
+
+基于手机系统的实时目标检测
+
+https://mp.weixin.qq.com/s/6wzmyhIvUVeAN4Xjfhb1Yw
+
+论文解读：Channel pruning for Accelerating Very Deep Neural Networks
+
+https://mp.weixin.qq.com/s/-X7NYTzOzljzOaQL7_jOkw
+
+惊呆了！速度高达15000fps的人脸检测算法！
+
+https://mp.weixin.qq.com/s/Faej1LKqurtwEIreUVJ0cw
+
+普林斯顿新算法自动生成高性能神经网络，同时超高效压缩
+
+https://mp.weixin.qq.com/s/uK-HasmiavM3jv6hNRY11A
+
+深度梯度压缩：降低分布式训练的通信带宽
+
+https://mp.weixin.qq.com/s/_MDbbGzDOGHk5TBgbu_-oA
+
+中大商汤等提出深度网络加速新方法，具有强大兼容能力
+
+https://mp.weixin.qq.com/s/gbOmpP7XO1Hz_ld4iSEsrw
+
+三星提出移动端神经网络模型加速框架DeepRebirth
+
+https://mp.weixin.qq.com/s/rTFLiZ7DCo6vzD5O64UnMQ
+
+阿里提出新神经网络算法，压缩掉最后一个比特
+
+https://mp.weixin.qq.com/s/m9I5TM9uJcgZvMusO667OA
+
+5MB的神经网络也高效，Facebook新压缩算法造福嵌入式设备
+
+https://mp.weixin.qq.com/s/FFs0-ROvbXSAIOspW_rMbw
+
+超越MobileNetV3！谷歌大脑提出MixNet轻量级网络
 
 https://mp.weixin.qq.com/s/uXbLb5ITHOU0dZRSWNobVg
 
@@ -68,187 +132,3 @@ https://mp.weixin.qq.com/s/Lkxc_9sbRY157sMWaD5c7g
 https://mp.weixin.qq.com/s/ie2O5BPT-QxTRhK3S0Oa0Q
 
 剪枝需有的放矢，快手&罗切斯特大学提出基于能耗建模的模型压缩
-
-# NN Quantization
-
-## 量化策略（续）
-
-### 量化技巧
-
-1.设计模型时，需要对输入进行归一化，缩小输入值的值域范围，以减小量化带来的精度损失。
-
-2.tensor中各分量的值域范围最好相近。这个的原理和第1条一致。比如YOLO的结果中，同时包含分类和bbox，而且分类的值域范围远大于bbox，导致量化效果不佳。
-
-3.最好不要使用ReluN这样的激活函数，死的神经元太多。神经元一旦“死亡”，相应的权值就不再更新，而这些值往往不在正常范围内。
-
-4.对于sigmoid、tanh这样的S形函数，其输入在$$\mid x \mid > \sigma$$范围的值，最终的结果都在sigmoid、tanh的上下限附近。因此，可以直接将这些x值量化为$$\sigma$$。这里的$$\sigma$$的取值，对于sigmoid来说是6，而对于tanh来说是3。
-
-## NN硬件的指标术语
-
-MACC：multiply-accumulate，乘法累加。
-
-FLOPS：Floating-point Operations Per Second，每秒所执行的浮点运算次数。
-
-显然NN的INT8计算主要以MACC为单位。
-
-## gemmlowp
-
-gemmlowp是Google提出的一个支持低精度数据的GEMM（General Matrix Multiply）库。
-
-代码：
-
-https://github.com/google/gemmlowp
-
-## FBGEMM
-
-FBGEMM（Facebook General Matrix Multiplication）是一个专为服务器端推理设计的低精度、高效率的矩阵乘法和卷积库。它提供了小批量大小的高效低精度矩阵乘法，并支持行向量量化和异常感知量化等减少精度损失的技术，以实现极致的计算性能。
-
-代码：
-
-https://github.com/pytorch/FBGEMM
-
-## 论文
-
-《Quantizing deep convolutional networks for efficient inference: A whitepaper》
-
-## Optimizer Quantization
-
-![](/images/img5/DTQ.png)
-
-某些特别大或特别小的异常值，对量化会产生较大的精度影响。动态树量化（dynamic tree quantization）就是一种以较低的量化精度损失处理这种情况的方法。
-
-- 首位是符号位
-
-- 符号位后连续的0的数量表示指数大小
-
-- 再之后的第一个值为1的是指示位
-
-- 线性量化区域
-
-指示位是可以动态移动的，通过移动指示位可以灵活选择更大的范围，还是更高的精度。
-
-论文：
-
-8-BIT OPTIMIZERS VIA BLOCK-WISE QUANTIZATION
-
-论文作者为此开发了bitsandbytes库：
-
-https://github.com/bitsandbytes-foundation/bitsandbytes
-
-因为经常使用`import bitsandbytes as bnb`导入，所以该库又被称为bnb。
-
-参考：
-
-https://www.cnblogs.com/chentiao/p/17388568.html
-
-bitsandbytes--Facebook推出8比特优化器大大减少显存
-
-## 参考
-
-https://mp.weixin.qq.com/s/M79xGWWtJUB6wBVlHXw8ig
-
-低精度神经网络：从数值计算角度优化模型效率
-
-https://www.chiphell.com/thread-1620755-1-1.html
-
-新Titan X的INT8计算到底是什么鬼
-
-https://mp.weixin.qq.com/s/5LhLbzyWTlP2R_zGAIKuiA
-
-INT8量化训练
-
-https://mp.weixin.qq.com/s/S9VcoS_59nbZWe_P3ye2Tw
-
-减少模型半数内存用量：百度&英伟达提出混合精度训练法
-
-https://zhuanlan.zhihu.com/p/35700882
-
-CNN量化技术
-
-https://mp.weixin.qq.com/s/9DXMqiPIK5P5wzUMT7_Vfw
-
-基于交替方向法的循环神经网络多比特量化
-
-https://mp.weixin.qq.com/s/PDeChj1hQqUrZiepxXODJg
-
-ICLR oral：清华提出离散化架构WAGE，神经网络训练推理合二为一
-
-https://mp.weixin.qq.com/s/KgM1k1bziLTCec67hQ8hlQ
-
-超全总结：神经网络加速之量化模型
-
-https://mp.weixin.qq.com/s/7dzQhgblEm-kzRnpddweSw
-
-嵌入式端CNN网络计算的量化-动态定点法（1）
-
-https://mp.weixin.qq.com/s/M3NcH30zY5Wlj76BDPQlMA
-
-模型压缩一半，精度几乎无损，TensorFlow推出半精度浮点量化工具包，还有在线Demo
-
-https://www.zhihu.com/question/498135156
-
-如何看待FAIR提出的8-bit optimizer：效果和32-bit optimizer相当？
-
-https://mp.weixin.qq.com/s/D3ZKidCV7OhAeqWqWg521w
-
-如何训练和部署FP16/Int8等低精度机器学习模型?
-
-https://jackwish.net/neural-network-quantization-introduction-chn.html
-
-神经网络量化简介
-
-https://mp.weixin.qq.com/s/70GuFnJGhtIZEA-PECHjaA
-
-混合精度对模型训练和推理的影响
-
-https://mp.weixin.qq.com/s/xIbF3rNv2mC2G4RBDhIvJQ
-
-哈佛大学在读博士：模型量化——更小更快更强
-
-https://zhuanlan.zhihu.com/p/128018221
-
-8比特数值也能训练模型？商汤提出训练加速新算法
-
-https://zhuanlan.zhihu.com/p/132561405
-
-模型量化了解一下？
-
-https://mp.weixin.qq.com/s/xnszH9WSKGBwqtHUuYua1g
-
-混合精度训练，提速，减内存
-
-https://mp.weixin.qq.com/s/YImszcJDsvw5ygo2wCj3Hw
-
-模型量化的核心技术点有哪些，如何对其进行长期深入学习
-
-https://mp.weixin.qq.com/s/bK0n9u6DIl4SY7mxS8CVRw
-
-模型量化技术原理及其发展现状和展望
-
-https://zhuanlan.zhihu.com/p/223018242
-
-NNIE量化算法及实现
-
-https://zhuanlan.zhihu.com/p/79744430
-
-Tensorflow模型量化(Quantization)原理及其实现方法
-
-https://mp.weixin.qq.com/s/du3hb2oM5X6bMocdOab4dg
-
-模型量化: 只有整数计算的高效推理
-
-https://mp.weixin.qq.com/s/7Si6GQlj8IvYajoVnwm5DQ
-
-INT4量化用于目标检测
-
-https://mp.weixin.qq.com/s/7VEiQ0y8kB4nODtLCx1UQA
-
-模型量化打怪升级之路
-
-https://mp.weixin.qq.com/s/TXWdx3bbBNfaG3yp2G56ew
-
-提速还能不掉点！深度解析MegEngine 4 bits量化开源实现
-
-https://www.zhihu.com/question/627484732
-
-目前针对大模型进行量化的方法有哪些？

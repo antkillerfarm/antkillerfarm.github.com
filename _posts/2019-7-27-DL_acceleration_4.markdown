@@ -209,6 +209,30 @@ https://mp.weixin.qq.com/s/XR8OlGv5Ciglq03Ul_jpvQ
 
 ![](/images/img3/KD.jpg)
 
+KD大概分为以下几个流派：
+
+![](/images/img6/RB_KD.png)
+
+Response-based KD侧重于学习teacher model最后一层的响应输出，如在两个模型的logit层建立蒸馏损失。
+
+![](/images/img6/FB_KD.png)
+
+feature-based侧重于学习teacher model中各个hint layer的feature map，注意力蒸馏就属于feature-based distillation。
+
+![](/images/img6/R2B_KD.png)
+
+relation-based更加强调teacher model中各个layer之间的关系或者teacher model对于data samples的关联性的响应。
+
+---
+
+自蒸馏(self knowledge distillation)是指不通过新增一个大模型的方式找到一个教师模型，同样可以提供有效增益信息给学生模型，这里的教师模型往往不会比学生模型复杂，但提供的增益信息对于学生模型是有效的增量信息，以提升学生模型效率。该方式可以避免使用更复杂的模型，也可以避免通过一些聚类或者是元计算的步骤生成伪标签。
+
+![](/images/img6/Self_Distillation.png)
+
+Self Distillation通过新增的深层子网络分类器作为teacher，对原网络的浅层部分进行蒸馏学习。
+
+![](/images/img6/KDs.png)
+
 ## Theseus压缩
 
 研究者受到著名哲学思想实验“忒修斯之船”（The Ship of Theseus）启发（如果船上的木头逐渐被替换，直到所有的木头都不是原来的木头，那这艘船还是原来的那艘船吗？），提出了Theseus Compression for BERT(BERT-of-Theseus)，该方法逐步将BERT的原始模块替换成参数更少的替代模块。研究者将原始模型叫做“前辈”（predecessor），将压缩后的模型叫做“接替者“（successor），分别对应KD中的教师和学生。
@@ -288,55 +312,3 @@ https://zhuanlan.zhihu.com/p/92166184
 https://zhuanlan.zhihu.com/p/92269636
 
 知识蒸馏简述（二）
-
-http://coderskychen.cn/2019/02/23/distilling/
-
-知识蒸馏三部曲：从模型蒸馏、数据蒸馏到任务蒸馏
-
-https://mp.weixin.qq.com/s/5_qgj33tyVTHivpXkU4LDw
-
-一个知识蒸馏的简单介绍
-
-https://zhuanlan.zhihu.com/p/93287223
-
-从入门到放弃：深度学习中的模型蒸馏技术
-
-https://zhuanlan.zhihu.com/p/113549023
-
-浅谈知识蒸馏方法研究综述
-
-https://mp.weixin.qq.com/s/mFuxCl0Mzv5hmDFewWZkrw
-
-FAIR&MIT提出知识蒸馏新方法：数据集蒸馏
-
-https://mp.weixin.qq.com/s/MDgqSwVEClNqNpaWuGTEpg
-
-微软亚研院提出用于语义分割的结构化知识蒸馏
-
-https://blog.csdn.net/xbinworld/article/details/83063726
-
-知识蒸馏（Distilling the Knowledge in a Neural Network），在线蒸馏
-
-https://mp.weixin.qq.com/s/ekKg46bQlWrlg9Hon01M5g
-
-Hinton胶囊网络后最新研究：用“在线蒸馏”训练大规模分布式神经网络
-
-https://mp.weixin.qq.com/s/SqxooZqSeD3wA4EFK5D3Kg
-
-再生神经网络：利用知识蒸馏收敛到更优的模型
-
-https://mp.weixin.qq.com/s/Nkxy0SUdbwIjp5swU6tS9g
-
-深度互学习-Deep Mutual Learning：三人行必有我师
-
-https://mp.weixin.qq.com/s/I08kMmUohWWbYVpPDgTJsw
-
-Startdt AI提出：使用生成对抗网络用于One-Stage目标检测的知识蒸馏方法
-
-https://mp.weixin.qq.com/s/yFyM5OVp1YLKQBlgXeAzhw
-
-华为诺亚方舟实验室提出无需数据网络压缩技术
-
-https://mp.weixin.qq.com/s/0f0aToVaAsU7yWK4xz-HzQ
-
-剪枝量化初完结，蒸馏学习又上线

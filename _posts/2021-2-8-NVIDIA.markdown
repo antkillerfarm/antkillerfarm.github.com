@@ -220,6 +220,10 @@ NCU侧重于内核级别的性能分析，例如显示不同block size内核函�
 
 而Nsight System提供了更全面的系统级性能分析。包括CPU和GPU之间的交互、内存操作、内核执行时间等。它可以帮助开发者发现性能瓶颈，例如GPU饥饿、不必要的GPU同步、CPU并行度不足等问题。还提供了对多节点性能的分析，这对于数据中心和集群环境中的性能优化尤为重要。
 
+nsys的UI版本的可执行文件名字叫做`nsys-ui`。
+
+`nsys profile /data/miniforge3/envs/torch_3.12/bin/python3.12 -m llm_train_te_2`
+
 https://fkong.tech/posts/2023-11-19-torch-gpu-util/
 
 如何把PyTorch的GPU利用率提升到100%?

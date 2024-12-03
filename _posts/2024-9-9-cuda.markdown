@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  CUDA, TensorRT
+title:  CUDA
 category: AI 
 ---
 
@@ -11,9 +11,11 @@ category: AI
 
 CUDA是NVIDIA最早推出的通用数学运算库。除了基本的数学运算之外，还提供了一些工具包：
 
-cuBLAS：线性计算库。
+cuBLAS：线性计算库。除了基本版的API之外，它还包括以下扩展：
 
-cuBLASLt：cuBLAS Light。
+- cuBLASXt适合处理非常大的矩阵和多GPU操作
+- cuBLASLt提供了一定程度的灵活性，适合中等大小的矩阵
+- cuBLASDx则提供了更高的灵活性和控制，适合在设备端执行小规模的矩阵操作和融合操作。
 
 NVBLAS：多GPU版的cuBLAS。
 
@@ -294,41 +296,3 @@ https://zhuanlan.zhihu.com/p/693690123
 https://www.zhihu.com/question/445590537
 
 问个CUDA并行上的小白问题，既然SM只能同时处理一个WARP，那是不是有的SP处于闲置？
-
-# TensorRT
-
-TensorRT：嵌入式设备上专用于DL inference的计算库。
-
-TensorRT还有个云端的集群版本：
-
-https://github.com/NVIDIA/tensorrt-inference-server
-
-参考：
-
-https://mp.weixin.qq.com/s/v8-JHd5tWm41WLqR-h6eKA
-
-使用TensorRT集成加速TensorFlow推理
-
-https://mp.weixin.qq.com/s/rMvhsi2vXxVC65C5Z4IXIw
-
-AI视频处理加速引擎TensorRT及Deepstream介绍
-
-https://zhuanlan.zhihu.com/p/35657027
-
-高性能深度学习支持引擎实战——TensorRT
-
-## CUDA-X AI
-
-CUDA-X AI是软件加速库的集合，这些库建立在CUDA之上，提供对于深度学习、机器学习和高性能计算必不可少的优化功能。这些库包括cuDNN（用于加速深度学习基元）、cuML（用于加速数据科学工作流程和机器学习算法）、TensorRT（用于优化受训模型的推理性能）、cuDF（用于访问 pandas 之类的数据科学 API）、cuGraph（用于在图形上执行高性能分析），以及超过13个的其他库。
-
-官网：
-
-https://www.nvidia.cn/technologies/cuda-x/
-
-## TensorRT-LLM
-
-TensorRT-LLM是NVIDIA推出的基于TensorRT的LLM推理工具。
-
-代码：
-
-https://github.com/NVIDIA/TensorRT-LLM/

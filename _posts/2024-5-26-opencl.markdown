@@ -238,3 +238,26 @@ model, optimizer, tokenized_datasets = accelerator.prepare(
 ```
 
 从上例也可学习在已有代码中加入Accelerator的套路——将原有各对象作为参数传入Accelerator库，然后返回各自类型的被修改后的对象。
+
+---
+
+```python
+from transformer_engine.pytorch.cpp_extensions.fused_attn import (
+    fused_attn_fwd_qkvpacked,
+    fused_attn_bwd_qkvpacked,
+  ...
+)
+
+return CUDAExtension(
+  name="transformer_engine_torch",
+  ...
+)
+
+std::vector<at::Tensor> fused_attn_fwd_qkvpacked
+if (qkv_type == DType::kFloat8E4M3 || qkv_type == Dtype::kFloat8E5M2)
+nvte_fused_attn_fwd_qkvpacked
+fused_attn_fp8_fwd_qkvpacked
+fused_attn::fused_attn_fp8_fwd_impl
+cudnn_frontend::OperationGraphBuilder
+cudnn_frontend::ExecutionPlanBuilder
+```

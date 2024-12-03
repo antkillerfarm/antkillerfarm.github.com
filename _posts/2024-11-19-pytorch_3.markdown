@@ -271,10 +271,6 @@ https://mp.weixin.qq.com/s/KP4etDrGlJmRAMQmR1mTJA
 
 基于C++的PyTorch模型部署
 
-https://mp.weixin.qq.com/s/uUxwMFGF9nJiraVQsIqu2Q
-
-PyTorch重大更新：将支持自动混合精度训练！
-
 https://zhuanlan.zhihu.com/p/145427849
 
 PyTorch Parallel Training（单机多卡并行、混合精度、同步BN训练指南文档）

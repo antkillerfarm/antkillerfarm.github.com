@@ -217,6 +217,22 @@ https://docs.swanlab.cn/zh/examples/pretrain_llm.html
 
 从零预训练一个自己的大模型
 
+本人的魔改版本，wiki_zh dataset + Qwen tokenizer + llama 2 model：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/huggingface/llm_train.py
+
+---
+
+在大模型训练过程中，为确保训练的稳定性与有效性，需密切关注多项关键指标以评估训练状态，其中包括但不限于perplexity (PPL)、gradient norm (GNorm)、activation norm、内存占用情况以及Loss scale等参数。
+
+梯度裁剪（Gradient Clipping）：作为一种常用的稳定训练手段，通常设定裁剪阈值为1.0，防止梯度过大引发训练不稳定。
+
+Weight Decay（L2正则化）：设置合理的权重衰减率，如0.1，有助于防止过拟合，增强模型泛化能力。
+
+特殊层的调整：GLM研究发现，embedding层往往存在较大的梯度异常情况，故需根据实际情况适度调整相关参数。
+
+---
+
 https://blog.csdn.net/v_JULY_v/article/details/132178447
 
 七月论文审稿GPT第1版：通过3万多篇paper和10多万的review数据微调RWKV
@@ -228,3 +244,7 @@ https://blog.csdn.net/v_JULY_v/article/details/134183799
 https://blog.csdn.net/v_JULY_v/article/details/131552592
 
 基于LangChain+LLM的本地知识库问答：从企业单文档问答到批量文档问答
+
+https://wandb.ai/ai2-llm/OLMo-7B/reports/OLMo-7B--Vmlldzo2NzQyMzk5
+
+这个网页收录了作者训练LLM时，各项指标的变化曲线。

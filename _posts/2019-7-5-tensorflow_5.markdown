@@ -168,12 +168,6 @@ https://mp.weixin.qq.com/s/jdjX0jirTHOUqsGagJmGLQ
 
 谷歌AI开源张量计算库TensorNetwork，计算速度暴涨100倍
 
-# 混合精度训练
-
-https://tensorflow.google.cn/guide/mixed_precision
-
-tensorflow/python/keras/mixed_precision/loss_scale_optimizer.py
-
 # 细节
 
 执行`session.run(out)`，会在终端打印out的值，但执行`res = session.run(out)`则不会。
