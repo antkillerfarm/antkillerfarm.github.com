@@ -33,6 +33,10 @@ https://mp.weixin.qq.com/s/0lDJiu1nyS0j1aj7C4tT-g
 
 ---
 
+A股上市公司利欧股份斥资5000万美元投资马斯克旗下的Space X，不料惨遭退回。
+
+---
+
 https://mp.weixin.qq.com/s/sPTRKfuhEc0xx7GacomxkA
 
 霍尔效应推进器

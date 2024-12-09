@@ -218,8 +218,6 @@ https://github.com/commercialhaskell/stack/releases/
 
 # Objective-C
 
-## 环境搭建
-
 PC上搭建Objective-C（以下简称OC）开发环境，主要借助GNUstep开源项目的成果。
 
 以Ubuntu为例，步骤如下：
@@ -231,6 +229,10 @@ PC上搭建Objective-C（以下简称OC）开发环境，主要借助GNUstep开�
 2.设置环境变量。
 
 `GNUSTEP_MAKEFILES=/usr/share/GNUstep/Makefiles`
+
+---
+
+.mm文件是Objective-C++的源文件，这种文件格式允许在同一个源文件中同时使用Objective-C和C++的代码。
 
 # Vim
 

@@ -53,7 +53,7 @@ half - IEEE 754-based half-precision floating point library
 
 denorm：denormalized number
 
-一个正规数是指指数位非零的数，而非正规数（denorm）是指指数位全为零的数。
+一个正规数是指指数位非零的数，而非正规数（denorm/subnormal）是指指数位全为零的数。
 
 ---
 
@@ -81,6 +81,12 @@ C++23添加了`std::float16_t`、`std::float32_t`、`std::float64_t`、`std::flo
 google的ml_dtypes库，提供了`float8_e5m2`、`float8_e4m3fn`、`int4`等类型的支持。
 
 https://github.com/jax-ml/ml_dtypes
+
+---
+
+对于复杂的数学运算，计算最佳浮点结果比较困难。这个问题被称为制表师困境。为了保证正确的舍入结果，一般来说，将函数计算到固定位数的较高精度是不够的。在极少数情况下，高精度往低精度转换过程中的舍入步骤会被高精度结果中的误差影响。
+
+对于特定的函数，可以通过数学分析和形式证明来解决这一困境，但大多数数学库选择放弃提供正确舍入的保证。相反，它们提供了数学函数的实现以及描述对应实现在输入范围内的相对错误的上下界的文档。
 
 ---
 

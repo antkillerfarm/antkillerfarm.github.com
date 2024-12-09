@@ -97,6 +97,10 @@ https://zhuanlan.zhihu.com/p/4961118472
 
 库尔斯克90天：冬季前瞻
 
+https://zhuanlan.zhihu.com/p/10857131591
+
+库尔斯克120天：一颗新菜花
+
 https://zhuanlan.zhihu.com/p/5809853628
 
 库尔斯克之八：战损和价值重估

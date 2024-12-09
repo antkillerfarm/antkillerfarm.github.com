@@ -120,6 +120,10 @@ Anaconda同时也支持多个Python版本的并存和切换。它的底层用到
 
 `conda activate python2`
 
+如果是直接copy来的conda环境，且没有放到默认位置的话，还可以用以下办法：
+
+`conda activate <path>`
+
 最新的Anaconda提供了`conda init`命令用于将环境添加到shell中。如果不想要的话，可以到`~/.bashrc`删除之。
 
 退出环境：

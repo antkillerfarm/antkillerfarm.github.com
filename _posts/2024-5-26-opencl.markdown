@@ -261,3 +261,11 @@ fused_attn::fused_attn_fp8_fwd_impl
 cudnn_frontend::OperationGraphBuilder
 cudnn_frontend::ExecutionPlanBuilder
 ```
+
+---
+
+参考：
+
+https://developer.nvidia.com/zh-cn/blog/nvidia-gpu-fp8-training-inference/
+
+NVIDIA GPU架构下的FP8训练与推理

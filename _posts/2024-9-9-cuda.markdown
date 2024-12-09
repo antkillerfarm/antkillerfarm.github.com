@@ -25,9 +25,25 @@ nvGRAPH：图计算库。（这里的图是数学图论中的图，和DL框架�
 
 cuRAND：随机数生成库。
 
+官方文档：
+
+https://docs.nvidia.com/cuda/pdf/CURAND_Library.pdf
+
 cuSPARSE；稀疏矩阵计算库。
 
 cuSOLVER：解线性方程的计算库。包括解稠密方程的cuSolverDN、解稀疏方程的cuSolverSP和矩阵分解的cuSolverRF。
+
+---
+
+官方文档：
+
+https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html
+
+---
+
+https://github.com/nvidia/cccl
+
+CUDA Core Compute Libraries (CCCL)
 
 ## NVIDIA DALI
 
@@ -171,7 +187,9 @@ CTA提供了同步点，允许开发者在需要时对CTA内的所有线程进�
 
 ---
 
-`vectorAdd<<<4096,256>>>`表示内核函数vectorAdd将在GPU上以4096个块执行，每个块包含256个线程，总共有4096x256个线程。
+`vectorAdd<<<4096, 256, 0, s0>>>`表示内核函数vectorAdd将在GPU上以4096个块执行，每个块包含256个线程，总共有4096x256个线程。
+
+0表示为这个内核函数分配的动态共享内存的大小，单位是字节。s0指定关联的stream。
 
 ---
 
@@ -188,6 +206,25 @@ export PATH=/usr/local/cuda/bin:$PATH
 nvcc编译cuda程序，不运行device（GPU）部分代码的解决方案：指定GPU的arch。
 
 `nvcc ./xxx.cu -o xxx -arch sm_90 -Wno-deprecated-gpu-targets`
+
+---
+
+执行环境标识符：
+
+- `__global__`：在CPU调用父函数，子函数在GPU执行(异步)。用`__global__`修饰的一般就是内核(kernel)函数。
+- `__device__`：在GPU调用父函数，子函数在GPU执行。 由`__device__`修饰的函数可以被由`__global__`和`__device__`修饰的函数调用。
+- `__host__`：在CPU调用父函数，子函数在CPU执行。 
+
+---
+
+https://developer.download.nvidia.cn/assets/cuda/files/NVIDIA-CUDA-Floating-Point.pdf
+
+IEEE 754 mode(default): `-ftz=false -prec-div=true -prec-sqrt=true`
+fast mode: `-ftz=true -prec-div=false -prec-sqrt=false`
+
+在fast模式中，非规格化数将被转换为零，并且除法和平方根运算不会被计算到最接近的真实值的浮点数值。
+
+当浮点异常发生时，NVIDIA的GPU不会触发trap handlers，也没有指示上溢、下溢或者denormal的标志位。
 
 ---
 
@@ -240,59 +277,3 @@ https://zhuanlan.zhihu.com/p/358778742
 https://zhuanlan.zhihu.com/p/360441891
 
 熬了几个通宵，我写了份CUDA新手入门代码
-
-https://mp.weixin.qq.com/s/EZxO8IIBDJ4c7eQhUffc2w
-
-怎样节省2/3的GPU？爱奇艺vGPU的探索与实践
-
-https://mp.weixin.qq.com/s/3VjGpyXZSkJhy6sFPUsZzw
-
-GPU虚拟化，算力隔离，和qGPU
-
-https://zhuanlan.zhihu.com/p/383115932
-
-大佬是怎么优雅实现矩阵乘法的？
-
-https://zhuanlan.zhihu.com/p/410278370
-
-CUDA矩阵乘法终极优化指南
-
-https://www.zhihu.com/column/c_1437330196193640448
-
-深入浅出GPU优化
-
-https://www.zhihu.com/question/41060378
-
-自己写的CUDA矩阵乘法能优化到多快？
-
-https://zhuanlan.zhihu.com/p/559957579
-
-简单谈谈CUDA的访存合并
-
-https://zhuanlan.zhihu.com/p/565897763
-
-GPGPU编程模型之CUDA
-
-http://blog.csdn.net/augusdi/article/details/12833235
-
-这是一篇转帖的CUDA教程，原帖比较分散，不好看。
-
-https://zhuanlan.zhihu.com/p/544864997
-
-cuda中threadIdx、blockIdx、blockDim和gridDim的使用
-
-https://zhuanlan.zhihu.com/p/690717002
-
-一文读懂cuda代码编译流程
-
-https://zhuanlan.zhihu.com/p/690880124
-
-并不太短的CUDA入门（The Not So Short Introduction to CUDA）
-
-https://zhuanlan.zhihu.com/p/693690123
-
-一文读懂nvidia-smi背后的nvml库
-
-https://www.zhihu.com/question/445590537
-
-问个CUDA并行上的小白问题，既然SM只能同时处理一个WARP，那是不是有的SP处于闲置？
