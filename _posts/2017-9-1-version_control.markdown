@@ -277,6 +277,8 @@ Gerrit，一种免费、开放源代码的代码审查软件，它使用Git作�
 
 https://www.gerritcodereview.com/
 
+`git push origin b1:refs/for/xxx`
+
 ### GitLab self-managed
 
 GitLab self-managed是GitLab出品的本地Git Server。
