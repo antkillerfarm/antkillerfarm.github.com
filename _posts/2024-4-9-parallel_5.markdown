@@ -237,6 +237,10 @@ https://zhuanlan.zhihu.com/p/638468472
 
 从FlashAttention到PagedAttention, 如何进一步优化Attention性能
 
+https://blog.csdn.net/v_JULY_v/article/details/144218958
+
+一文通透vLLM与其核心技术PagedAttention：减少KV Cache碎片、提高GPU显存利用率(推理加速利器)
+
 # LLM Inference
 
 A Survey on Efficient Inference for Large Language Models

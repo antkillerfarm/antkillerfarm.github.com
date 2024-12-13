@@ -338,6 +338,10 @@ https://blog.csdn.net/v_JULY_v/article/details/140131413
 
 一文通透mamba2：力证Transformer are SSM——从SSM、半可分矩阵、SSD到mamba2
 
+https://blog.csdn.net/v_JULY_v/article/details/144317440
+
+一文速览mamba的各种变体与改进：从MoE-Mamba、Vision Mamba、VMamba、Jamba到Falcon Mamba
+
 # RWKV
 
 ## Linear Transformer

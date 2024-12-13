@@ -388,3 +388,7 @@ https://www.zhihu.com/question/4466026013
 https://www.zhihu.com/question/5592174991
 
 如何评价俄罗斯对中国家具滑轨配件归入轴承类别征55%关税?
+
+https://zhuanlan.zhihu.com/p/10958531660
+
+“目前俄罗斯军队在向我们施加条件，但我认为现在还不是断言乌克兰失败的时候。” —— 维克托·穆任科

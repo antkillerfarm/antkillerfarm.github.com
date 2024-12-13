@@ -121,6 +121,10 @@ https://zhuanlan.zhihu.com/p/630080855
 
 ---
 
+两年来，一只叫“廖沙”的小狗每天都在加油站附近等待它的主人Oleksii Savranskyi，Oleksii于2023年4月为了保卫祖国而牺牲。
+
+---
+
 为了购买装备，许多人负债累累；国防部的工资卡没有发给一些被动员的人，而另一些人则无法激活工资卡。
 
 https://zhuanlan.zhihu.com/p/579785034
@@ -270,3 +274,7 @@ Dare to Ukraine
 https://www.zhihu.com/answer/3602910273
 
 凡人列传
+
+https://zhuanlan.zhihu.com/p/11895044091
+
+他脸部中枪，但是现在乌克兰想征召他。
