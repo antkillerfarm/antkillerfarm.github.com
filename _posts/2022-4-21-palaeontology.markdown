@@ -298,3 +298,15 @@ https://zhuanlan.zhihu.com/p/44327021
 https://mp.weixin.qq.com/s/mPVQB9N58wxuOHxT-GWNlg
 
 猛犸象：吃便便，要从娃娃抓起
+
+https://mp.weixin.qq.com/s/UBVL6IF3MbBMShsRNd_kig
+
+巨型恐龙为何能崛起，或许和这场超级火山活动有关
+
+https://mp.weixin.qq.com/s/Z0-6dIORQYJkfR8sZsi2KA
+
+菊石的时代：满城尽带黄金甲
+
+https://mp.weixin.qq.com/s/xTCZohWxF2rGc4snT9UFPg
+
+史前海洋顶级捕食者，在娘胎内靠吃弟弟妹妹长大？

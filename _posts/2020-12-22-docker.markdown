@@ -249,6 +249,14 @@ docker中的命令没有权限执行的时候，可以用`docker run --privilege
 
 docker client会默认把Dockerfile同级所有文件发到docker Deamon中。
 
+https://www.cnblogs.com/davis12/p/14453690.html
+
+docker容器权限设置`--cap-add` `--cap-drop` `--privileged`
+
+https://blog.csdn.net/Dontla/article/details/132995105
+
+docker run：`–security-opt seccomp=unconfined`选项解析 (安全计算模式Secure Computing Mode，实现系统调用过滤，禁用或允许某些系统调用)
+
 ---
 
 http://blog.csdn.net/colorant/article/details/20608157
@@ -350,39 +358,3 @@ Docker底层原理浅析
 https://mp.weixin.qq.com/s/dFUcSJRnH4_QhG_Dyt1RkQ
 
 为什么不建议把数据库部署在Docker容器内
-
-https://www.sohu.com/a/424565518_100159565
-
-五款顶级的Docker容器GUI工具
-
-https://mp.weixin.qq.com/s/obrnGMWcYfvGyrCSO0PkDQ
-
-Docker基础与实战
-
-https://mp.weixin.qq.com/s/J21CLwgF1xLy-6fo1f6Lgw
-
-Kubernetes决定弃用Docker，到底会影响到谁？
-
-https://mp.weixin.qq.com/s/IKgzQwjTW21XUXMbgCmYyA
-
-图解Docker架构
-
-https://cloud.tencent.com/developer/article/1518465
-
-容器生命周期管理
-
-https://www.cnblogs.com/clsn/p/8410309.html
-
-Docker容器入门
-
-https://mp.weixin.qq.com/s/g9-HDyEcxm3Ez04SsApGgg
-
-Docker镜像优化：从1.16GB到22.4MB
-
-https://mp.weixin.qq.com/s/cj-xIdp49dkvtCZ2jTjJDQ
-
-Docker
-
-https://mp.weixin.qq.com/s/JiimSmuD3S5lSS9MmH2GJw
-
-Docker环境配置指南

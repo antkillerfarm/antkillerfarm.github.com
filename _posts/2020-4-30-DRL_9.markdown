@@ -89,11 +89,27 @@ https://mp.weixin.qq.com/s/R4RXxLan7H2sCbBrKqyH6w
 
 基于多智能体强化学习的《星际争霸II》中大师级水平的技术研究
 
+https://zhuanlan.zhihu.com/p/815084333
+
+星际争霸2 ai小结
+
 ## 启元世界
 
 启元世界是国内的一家AI公司，碰巧也搞星际争霸2。研究员Flood Sung后来也加盟了该团队。
 
 2020.6.21 启元AI 2：0 人类选手《星际争霸I/II》全国冠军黄慧明（TooDming）和中国星际最强人族选手、黄金总决赛三连冠选手李培楠（TIME）。
+
+---
+
+在WCS2012的亚洲杯锦标赛中，韩国选手包揽前8强，国内专业体育报刊《体坛周报》以《星际之差 尤甚男足》为标题发表文章，痛批国内电竞选手，令人哀叹不已。
+
+10年后，星际已经拿到冠军了，而国足还是那个鸟样。
+
+https://www.zhihu.com/question/583694151
+
+李培楠夺《星际争霸 2》2023 IEM总冠军，成为中国该项目首位世界冠军，对此你有什么想说？
+
+---
 
 参考：
 
@@ -190,6 +206,14 @@ https://mp.weixin.qq.com/s/_Ze8C8UQV9UZXnSX6qq2GA
 https://mp.weixin.qq.com/s/mj8PG-wRqSbEIR38fongHA
 
 用自己训练的AI玩王者荣耀是什么体验？
+
+# 常见问题建模方法
+
+![](/images/img4/DRL.jpg)
+
+https://zhuanlan.zhihu.com/p/356166466
+
+强化学习落地：计算机系统
 
 # RLHF
 
@@ -348,29 +372,3 @@ Monolithic Preference Optimization without Reference Model（ORPO）
 https://blog.csdn.net/v_JULY_v/article/details/134242910
 
 RLHF的替代之DPO原理解析：从RLHF、Claude的RAILF到DPO、Zephyr
-
-## Chain-of-Thought
-
-思维链就是一系列中间的推理步骤(a series of intermediate reasoning steps)。通过让大模型逐步参与将一个复杂问题分解为一步一步的子问题，并依次进行求解的过程可以显著提升大模型的性能。
-
-![](/images/img6/COT.png)
-
-OpenAI o1 = COT + RL
-
-![](/images/img6/PSRL.png)
-
-![](/images/img6/R3.png)
-
-每一轮推导，都把推导结果作为输入塞给下一轮作为输入，如此反复，相当于用一张巨大的草稿纸记录做题过程，每次演算都把推导过程写在草稿纸上，这样下次演算可以参考之前的演算过程，这样重复演算多次，每次演算的角度可以不一样，最终结果就非常综合而且全面，草稿纸越大，能写的演算过程越多，应对一些刁钻复杂问题，也就更容易得出准确答案。
-
-https://blog.csdn.net/Julialove102123/article/details/135499567
-
-一文读懂Chain of Thought，CoT思维链
-
-https://zhuanlan.zhihu.com/p/721952915
-
-Reverse-o1:OpenAI o1原理逆向工程图解
-
-https://blog.csdn.net/v_JULY_v/article/details/142865592
-
-一文通透OpenAI o1：从CoT、Quiet-STaR、Self-Correct、Self-play RL、MCTS等技术细节到工程复现

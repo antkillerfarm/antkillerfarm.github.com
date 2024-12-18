@@ -392,3 +392,7 @@ https://www.zhihu.com/question/5592174991
 https://zhuanlan.zhihu.com/p/10958531660
 
 “目前俄罗斯军队在向我们施加条件，但我认为现在还不是断言乌克兰失败的时候。” —— 维克托·穆任科
+
+https://www.zhihu.com/question/7094482535
+
+如何看待俄核辐射、化学和防护司令基里洛夫及其助手在莫斯科被暗杀？

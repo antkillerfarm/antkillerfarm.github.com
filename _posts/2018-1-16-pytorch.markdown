@@ -186,6 +186,12 @@ Pytorch默认支持NCHW格式的数据，这与Caffe相同。
 
 Pytorch目前已经和Caffe2合并，所以相关op的代码在caffe2/operators下。一般XXX_op.h包含了CPU实现，而XXX_op.cu包含GPU实现。
 
+```cpp
+xxx_stub
+xxx_kernel
+xxx_kernel_impl
+```
+
 ### Conv Backprop
 
 ```cpp

@@ -7,13 +7,33 @@ category: DRL
 * toc
 {:toc}
 
-# 常见问题建模方法
+# RLHF（续）
 
-![](/images/img4/DRL.jpg)
+## Chain-of-Thought
 
-https://zhuanlan.zhihu.com/p/356166466
+思维链就是一系列中间的推理步骤(a series of intermediate reasoning steps)。通过让大模型逐步参与将一个复杂问题分解为一步一步的子问题，并依次进行求解的过程可以显著提升大模型的性能。
 
-强化学习落地：计算机系统
+![](/images/img6/COT.png)
+
+OpenAI o1 = COT + RL
+
+![](/images/img6/PSRL.png)
+
+![](/images/img6/R3.png)
+
+每一轮推导，都把推导结果作为输入塞给下一轮作为输入，如此反复，相当于用一张巨大的草稿纸记录做题过程，每次演算都把推导过程写在草稿纸上，这样下次演算可以参考之前的演算过程，这样重复演算多次，每次演算的角度可以不一样，最终结果就非常综合而且全面，草稿纸越大，能写的演算过程越多，应对一些刁钻复杂问题，也就更容易得出准确答案。
+
+https://blog.csdn.net/Julialove102123/article/details/135499567
+
+一文读懂Chain of Thought，CoT思维链
+
+https://zhuanlan.zhihu.com/p/721952915
+
+Reverse-o1:OpenAI o1原理逆向工程图解
+
+https://blog.csdn.net/v_JULY_v/article/details/142865592
+
+一文通透OpenAI o1：从CoT、Quiet-STaR、Self-Correct、Self-play RL、MCTS等技术细节到工程复现
 
 # DRL和Robotics
 
@@ -368,35 +388,3 @@ MIT提出使用“深度强化学习”帮助智能体在运动中做出“动�
 https://mp.weixin.qq.com/s/i-udn1M4kiJpF8U7u5Uepg
 
 专家解读DeepMind最新论文：深度学习模型复现大脑网格细胞
-
-https://mp.weixin.qq.com/s/AS1VFjBFnSk19QJ28tBVWA
-
-NIPS 2017斯坦福赛题大公开：强化学习模拟人类肌肉骨骼模型
-
-https://mp.weixin.qq.com/s/TWjFWe6-dZWDoTi5gN1BxA
-
-深度强化学习在指代消解中的一种尝试
-
-https://mp.weixin.qq.com/s/YnMgJDAh3XhyyNdI8RXmtw
-
-腾讯知文等提出新型生成式摘要模型：结合主题信息和强化训练生成更优摘要
-
-https://mp.weixin.qq.com/s/VrVdsxn94ux_46mIyS8f0w
-
-谷歌大脑实现更宽广的智能体视野，在Atari2600上可持续超越人类玩家！
-
-https://mp.weixin.qq.com/s/P5EysBHBaR6L3IfeSgo6fw
-
-强化学习20分钟，剑桥博士教汽车学会自动驾驶！
-
-https://mp.weixin.qq.com/s/ij3bf61Pu7lrX0WijhbDeA
-
-骑驴找马：利用深度强化学习模型定位新物体
-
-https://mp.weixin.qq.com/s/iYxijHlE3sLJgKnwwd8Tgg
-
-使用深度强化学习和贝叶斯优化获得巨额利润
-
-https://mp.weixin.qq.com/s/_QkxCrQlyRM10eZK8aNCKA
-
-强化学习在携程酒店推荐排序中的应用探索
