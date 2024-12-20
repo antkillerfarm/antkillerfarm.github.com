@@ -13,8 +13,8 @@ CUDA是NVIDIA最早推出的通用数学运算库。除了基本的数学运算�
 
 cuBLAS：线性计算库。除了基本版的API之外，它还包括以下扩展：
 
-- cuBLASXt适合处理非常大的矩阵和多GPU操作
-- cuBLASLt提供了一定程度的灵活性，适合中等大小的矩阵
+- cuBLASXt适合处理非常大的矩阵和多GPU操作。
+- cuBLASLt提供了一定程度的灵活性，适合中等大小的矩阵。
 - cuBLASDx则提供了更高的灵活性和控制，适合在设备端执行小规模的矩阵操作和融合操作。
 
 NVBLAS：多GPU版的cuBLAS。
@@ -169,6 +169,30 @@ https://zhuanlan.zhihu.com/p/709750258
 
 Tensor Memory Access（TMA）
 
+---
+
+Device to Device (DtoD)：指的是在单个GPU内部进行的内存拷贝。
+
+Peer to Peer (PtoP)：指的是从一个GPU到另一个GPU的内存拷贝，这种情况仅发生在多GPU系统中。
+
+## Warp
+
+https://zhuanlan.zhihu.com/p/669917716
+
+束内表决函数（Warp Vote Function）
+
+https://zhuanlan.zhihu.com/p/669957986
+
+束内洗牌函数（Warp Shuffle Functions）
+
+https://zhuanlan.zhihu.com/p/670290502
+
+束内匹配函数（Warp Match Functions）
+
+https://zhuanlan.zhihu.com/p/670534280
+
+束内规约函数（Warp Reduce Functions）
+
 ## CUDA实战
 
 安装：
@@ -236,52 +260,32 @@ fast mode: `-ftz=true -prec-div=false -prec-sqrt=false`
 
 ---
 
-参考：
+因为GPU不支持常规的Kernel递归，CPU上的很多递归算法只能换思路后进行改写，不能直接按原思路实现。而随着动态并行（Dynamic Parallelism）的引入，GPU现在能直接在Kernel中启动Kernel了。
 
-https://developer.nvidia.com/blog/even-easier-introduction-cuda/
+https://zhuanlan.zhihu.com/p/674856090
 
-An Even Easier Introduction to CUDA
+CUDA动态并行详解（CDP2）
 
-http://ishare.iask.sina.com.cn/f/17211495.html
+---
 
-深入浅出谈CUDA技术
+pytorch CUDA RadixSort call stack：
 
-http://blog.csdn.net/xsc_c/article/category/2186063
-
-某人的并行计算专栏
-
-https://mp.weixin.qq.com/s/9D7uda3CV7volenhl-jchg
-
-推荐几个不错的CUDA入门教程
-
-https://mp.weixin.qq.com/s/bvNnzkOzGYYYewc3G9DOIw
-
-GPU是如何优化运行机器学习算法的？
-
-https://mp.weixin.qq.com/s/nAwxtOUi6HpIjVOREgEfaA
-
-CUDA编程入门极简教程
-
-https://mp.weixin.qq.com/s/-zdIWkuRZXhsLJmOZljOBw
-
-《基于GPU-多核-集群等并行化编程》
-
-https://mp.weixin.qq.com/s/bCb5VsH58JII886lpg9lvg
-
-如何在CUDA中为Transformer编写一个PyTorch自定义层
-
-https://mp.weixin.qq.com/s/OYSzol-vufiKPuU9YxtbuA
-
-矩阵相乘在GPU上的终极优化：深度解析Maxas汇编器工作原理
-
-https://zhuanlan.zhihu.com/p/358220419
-
-PyTorch自定义CUDA算子教程与运行时间分析
-
-https://zhuanlan.zhihu.com/p/358778742
-
-详解PyTorch编译并调用自定义CUDA算子的三种方式
-
-https://zhuanlan.zhihu.com/p/360441891
-
-熬了几个通宵，我写了份CUDA新手入门代码
+```cpp
+MediumRadixSort
+should_use_small_sort
+sortKeyValueInplace
+launch_stable_sort_kernel
+segmented_sort_large_segments
+radix_sort_pairs_impl
+NO_ROCM(at_cuda_detail)::cub::DeviceRadixSort::SortPairs
+cub::DeviceRadixSort::SortPairs
+DeviceRadixSort::custom_radix_sort
+DispatchRadixSort::Dispatch
+DeviceRadixSortSingleTileKernel
+triple_chevron
+BlockRadixSort
+BlockRadixSortT(temp_storage.sort).SortBlockedToStriped
+RankKeys
+DescendingBlockRadixRank
+BlockRadixRank
+```

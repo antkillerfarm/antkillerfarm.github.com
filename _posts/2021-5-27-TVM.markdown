@@ -349,6 +349,12 @@ https://zhuanlan.zhihu.com/p/446935289
 
 新一代深度学习编译技术变革和展望
 
+---
+
+https://github.com/mlc-ai/mlc-llm
+
+一个基于TVM的LLM推理引擎
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/139552817

@@ -208,6 +208,10 @@ GPU精粹三部曲：
 
 GPU Gems列的主编是Randima Fernando。
 
+https://developer.nvidia.com/gpugems/
+
+GPU Gems的在线版本
+
 GPU Pro和GPU Zen系列的主编是Wolfgang Engel。他还有如下系列作品：
 
 - ShaderX 1 （2002）

@@ -91,6 +91,22 @@ https://refactoringguru.cn/design-patterns
 
 # 数据结构 & 普通CS算法
 
+https://mp.weixin.qq.com/s/yNn57Uw_-itzZXCSEAzrJw
+
+一起搞定面试中的二叉树（一）
+
+https://mp.weixin.qq.com/s/msv2NZ0aG96d3xQhX3HhNA
+
+一起搞定面试中的二叉树（二）
+
+https://mp.weixin.qq.com/s/t7Q0slX3q8Qlhg8F8pXrZQ
+
+如何找到字符串中的最长回文子串？
+
+https://mp.weixin.qq.com/s/d9yNsUVFg9UZN62xuOdxow
+
+为什么MySQL数据库要用B+树存储索引？
+
 https://mp.weixin.qq.com/s/o0JFTpGa4MLtDKHf4B2Ing
 
 快速理解为啥这个查询使用索引，那个查询不使用索引
@@ -296,15 +312,3 @@ Windows X86-64 System Call Table
 https://www.zhihu.com/question/356008082
 
 电脑软件（例如 Adobe、Autodesk）为什么那么容易被破解？
-
-https://mp.weixin.qq.com/s/yCB2R8QPWNp2lJrQD4l_hw
-
-聊聊移动端安全加固
-
-https://zhuanlan.zhihu.com/p/28528257
-
-美国人写了一个只靠U盘传播的病毒，毁了伊朗的核计划
-
-https://www.sohu.com/a/250882983_355019
-
-一个42KB的文件，解压完其实是个4.5PB的“炸弹”

@@ -288,6 +288,18 @@ https://zhuanlan.zhihu.com/p/266874840
 
 # 安全=
 
+https://mp.weixin.qq.com/s/yCB2R8QPWNp2lJrQD4l_hw
+
+聊聊移动端安全加固
+
+https://zhuanlan.zhihu.com/p/28528257
+
+美国人写了一个只靠U盘传播的病毒，毁了伊朗的核计划
+
+https://www.sohu.com/a/250882983_355019
+
+一个42KB的文件，解压完其实是个4.5PB的“炸弹”
+
 https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
 
 前端安全系列之一：如何防止XSS攻击？
