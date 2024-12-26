@@ -317,6 +317,10 @@ https://zhuanlan.zhihu.com/p/614105687
 
 C++中的HashTable性能优化
 
+## 计算cumsum
+
+https://research.nvidia.com/publication/single-pass-parallel-prefix-scan-decoupled-look-back
+
 ## 参考
 
 AVL树是一种平衡二叉树，得名于其发明者的名字（Adelson-Velskii以及Landis）。
@@ -345,21 +349,3 @@ int dayofweek(int y, int m, int d) /* 0 = Sunday */
     return (y + y/4 - y/100 + y/400 + t[m-1] + d) % 7;
 }
 ```
-
----
-
-https://www.zhihu.com/question/623575952
-
-算法复杂度为什么经常不考虑系数?
-
-https://mp.weixin.qq.com/s/JiYRhcTv2qgLfVyGzI8uHQ
-
-印度小哥用Python和Java实现所有AI算法
-
-https://mp.weixin.qq.com/s/52JFdyaLwZq7nWiZq6z6qA
-
-二叉堆是什么鬼？
-
-https://mp.weixin.qq.com/s/4V1E2L14c3k-5i0c-JyTVQ
-
-如何在10亿数中找出前1000大的数

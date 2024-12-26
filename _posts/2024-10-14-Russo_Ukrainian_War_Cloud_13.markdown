@@ -9,22 +9,6 @@ category: Russo Ukrainian War Cloud
 
 # 俄乌战争
 
-https://news.ifeng.com/c/8KivcEeZ16O
-
-“冬将军”曾击败拿破仑，现在轮到俄罗斯了？
-
-https://news.ifeng.com/c/8McreoQx3df
-
-打不赢就闹革命，俄罗斯又要陷入这个历史循环？
-
-https://news.ifeng.com/c/8Mwi4IFyf1B
-
-“普京名言”的真正主人，给俄罗斯挖了多大坑？
-
-https://news.ifeng.com/c/8N1kCsAAdaa
-
-为了“500年终极梦想”，俄国付出了什么代价？
-
 https://news.ifeng.com/c/8NK6iq9Smvn
 
 前所未有的财政大危机，俄罗斯准备无条件谈判
@@ -396,3 +380,7 @@ https://zhuanlan.zhihu.com/p/10958531660
 https://www.zhihu.com/question/7094482535
 
 如何看待俄核辐射、化学和防护司令基里洛夫及其助手在莫斯科被暗杀？
+
+https://zhuanlan.zhihu.com/p/14135738396
+
+逆转趋势，俄罗斯工业越打越强了？

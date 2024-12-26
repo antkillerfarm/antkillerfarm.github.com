@@ -157,6 +157,14 @@ FlashAttention提出了一种叫做Online Softmax的增量算法：我们首先�
 
 - Dropout，前向阶段只保存dropout seed与offset，反向宁愿再算一遍dropout，放弃保存dropout mask。
 
+---
+
+![](/images/img6/FlashAttention.png)
+
+FlashAttention V1里Q在内层循环，而V2里K在内层循环。V1对于计算softmax不友好，因为每次计算的中间结果只是部分和，只有全算完才能释放相关存储。
+
+---
+
 https://www.zhihu.com/question/611236756
 
 FlashAttention的速度优化原理是怎样的？
@@ -164,6 +172,14 @@ FlashAttention的速度优化原理是怎样的？
 https://blog.csdn.net/v_JULY_v/article/details/133619540
 
 通透理解FlashAttention与FlashAttention2：全面降低显存读写、加快计算速度
+
+https://zhuanlan.zhihu.com/p/668888063
+
+原理篇: 从Online-Softmax到FlashAttention V1/V2/V3
+
+https://zhuanlan.zhihu.com/p/665170554
+
+FlashAttention核心逻辑以及V1 V2差异总结
 
 ## FlashDecoding
 
@@ -262,11 +278,3 @@ LLM的推理优化技术纵览
 https://github.com/DefTruth/Awesome-LLM-Inference
 
 Awesome LLM Inference
-
----
-
-一次用户请求，实际上既包含prefill，也包含decode。一个是计算密集型，一个是访存密集型。
-
-prefill（用户输入）和decode（模型输出）的token量在不同场景下也是不一样的。如果是简单对话场景，通常模型的decode输出会更多一些，而如果是超长上下文场景，用户先上传一本几十万字的书再进行问答，这本书的prefill会直接起飞。在Agent场景下，大量预设的prompt也会占据非常多的prefill，不过prompt的prefill有不少机会可以提前算好KV而无需每个用户请求单独重复计算。
-
-当整个推理系统服务几千万用户时，一个batch的几十个用户请求支持开胃菜。每个用户会不间断地和大模型进行交互，发出大量请求，但这些请求的间隔时间短则几秒，长则几分钟几小时。考虑人机交互的频率，一个用户请求结束后，对应的KV-cache继续常驻在高速内存中实际意义不大。

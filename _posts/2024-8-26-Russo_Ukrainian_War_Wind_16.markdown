@@ -272,3 +272,7 @@ https://zhuanlan.zhihu.com/p/11895044091
 https://zhuanlan.zhihu.com/p/13138407444
 
 每晚，乌克兰首都基辅的天空都会被无人机蜂拥而至。而这些志愿者们用各种方法将它们击落。
+
+https://zhuanlan.zhihu.com/p/13810035587
+
+一个俄罗斯朋友分享的战场经历

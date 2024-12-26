@@ -9,6 +9,14 @@ category: DL acceleration
 
 # LLM Inference（续）
 
+一次用户请求，实际上既包含prefill，也包含decode。一个是计算密集型，一个是访存密集型。
+
+prefill（用户输入）和decode（模型输出）的token量在不同场景下也是不一样的。如果是简单对话场景，通常模型的decode输出会更多一些，而如果是超长上下文场景，用户先上传一本几十万字的书再进行问答，这本书的prefill会直接起飞。在Agent场景下，大量预设的prompt也会占据非常多的prefill，不过prompt的prefill有不少机会可以提前算好KV而无需每个用户请求单独重复计算。
+
+当整个推理系统服务几千万用户时，一个batch的几十个用户请求只是开胃菜。每个用户会不间断地和大模型进行交互，发出大量请求，但这些请求的间隔时间短则几秒，长则几分钟几小时。考虑人机交互的频率，一个用户请求结束后，对应的KV-cache继续常驻在高速内存中实际意义不大。
+
+---
+
 ![](/images/img6/static-batching.png)
 
 上图是一个通常的多batch的LLM的Inference过程。其中黄色表示用户的prompt，蓝色表示LLM生成的文本，红色表示结束符号。

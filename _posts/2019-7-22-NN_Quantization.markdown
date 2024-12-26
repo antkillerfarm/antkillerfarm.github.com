@@ -49,6 +49,14 @@ half - IEEE 754-based half-precision floating point library
 
 除了IEEE 754之外，还有IBM hexadecimal floating point。相比于IEEE 754，IBM格式的Significand位数多一些，而Exponent的位数少一些。
 
+| type | lowest() | min() | max() |
+|:--:|:--:|:--:|:--:|
+| bool | 0 | 0 | 1 |
+| uchar | 0 | 0 | 255 |
+| int | -2147483648 | -2147483648 | 2147483647 |
+| float | -3.40282e+38 | 1.17549e-38 | 3.40282e+38 |
+| double | -1.79769e+308 | 2.22507e-308 | 1.79769e+308 |
+
 ---
 
 denorm：denormalized number

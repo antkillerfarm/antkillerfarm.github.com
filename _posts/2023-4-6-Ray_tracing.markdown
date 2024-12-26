@@ -57,6 +57,10 @@ Level 5：带有BVH硬件生成器的相干性BVH处理。
 
 ---
 
+NVIDIA的光线追踪引擎名为OptiX，并有相应的OptiX IR。
+
+---
+
 https://www.cnblogs.com/mengdd/p/3237991.html
 
 图形学理论知识BRDF双向反射分布函数（Bidirectional Reflectance Distribution Function）

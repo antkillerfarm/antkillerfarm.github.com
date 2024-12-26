@@ -125,11 +125,17 @@ PTX (Parallel Thread Execution) 是NVIDIA GPU的伪指令集，之所以加个�
 
 该抽象指令集可以屏蔽不同架构显卡之间的指令差异。
 
+![](/images/img6/just-in-time-compilation.png)
+
 nvvm ir->PTX->SASS->runtime/jit->片上调度。
 
 官网：
 
 https://docs.nvidia.com/cuda/parallel-thread-execution/index.html
+
+---
+
+![](/images/img6/cuda-compilation-from-cu-to-executable.png)
 
 gcc和llvm都有特定的pass可以生成PTX代码。
 
@@ -139,9 +145,15 @@ cudafe++是CUDA编译过程中的一个组件，它的主要作用是将CUDA特�
 
 ptxas：和gcc中的as类似，也是一个汇编器。ptxas的作用是将PTX代码编译成SASS（Streaming Assembler）代码。
 
+官方文档：
+
+https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html
+
 ---
 
 NVIDIA GPU真正的指令集，被称作SASS。
+
+和`.ptx`文件相对应，SASS的二进制格式为`.cubin`文件。但是由于后者是真正的硬件指令，在各架构之间不通用，所以还有一个`.fatbin`文件，可以打包不同架构的bin。
 
 https://zhuanlan.zhihu.com/p/161624982
 
@@ -177,6 +189,18 @@ Peer to Peer (PtoP)：指的是从一个GPU到另一个GPU的内存拷贝，这�
 
 ## Warp
 
+一个SP可以执行一个thread，但是实际上并不是所有的thread能够在同一时刻执行。Nvidia把32个threads组成一个warp，warp是调度和运行的基本单元。warp中所有threads并行的执行相同的指令。
+
+https://zhuanlan.zhihu.com/p/266633373
+
+详解CUDA的Context、Stream、Warp、SM、SP、Kernel、Block、Grid
+
+https://www.zhihu.com/question/35361192
+
+CUDA为什么要分线程块和线程网格？
+
+---
+
 https://zhuanlan.zhihu.com/p/669917716
 
 束内表决函数（Warp Vote Function）
@@ -192,6 +216,27 @@ https://zhuanlan.zhihu.com/p/670290502
 https://zhuanlan.zhihu.com/p/670534280
 
 束内规约函数（Warp Reduce Functions）
+
+## Debug
+
+`nvcc -g -G -o test metrixMul.cu`
+
+- `-g`: debug host code.
+- `-G`: debug device code.
+
+给VSCode安装Nsight扩展。
+
+launch.json:
+
+```json
+{
+    "name": "CUDA C++: Launch",
+    "type": "cuda-gdb",
+    "request": "launch",
+    "program": "${fileDirname}/test", 
+    "preLaunchTask": "mynvcc"
+}
+```
 
 ## CUDA实战
 
@@ -257,35 +302,3 @@ fast mode: `-ftz=true -prec-div=false -prec-sqrt=false`
 ---
 
 `#pragma unroll`指令建议编译器完全展开for循环。如果N是一个常量，编译器会尝试将循环体展开N次。如果N不是一个常量或者太大而无法完全展开，编译器可能会忽略这个指令，或者展开一定次数的迭代。
-
----
-
-因为GPU不支持常规的Kernel递归，CPU上的很多递归算法只能换思路后进行改写，不能直接按原思路实现。而随着动态并行（Dynamic Parallelism）的引入，GPU现在能直接在Kernel中启动Kernel了。
-
-https://zhuanlan.zhihu.com/p/674856090
-
-CUDA动态并行详解（CDP2）
-
----
-
-pytorch CUDA RadixSort call stack：
-
-```cpp
-MediumRadixSort
-should_use_small_sort
-sortKeyValueInplace
-launch_stable_sort_kernel
-segmented_sort_large_segments
-radix_sort_pairs_impl
-NO_ROCM(at_cuda_detail)::cub::DeviceRadixSort::SortPairs
-cub::DeviceRadixSort::SortPairs
-DeviceRadixSort::custom_radix_sort
-DispatchRadixSort::Dispatch
-DeviceRadixSortSingleTileKernel
-triple_chevron
-BlockRadixSort
-BlockRadixSortT(temp_storage.sort).SortBlockedToStriped
-RankKeys
-DescendingBlockRadixRank
-BlockRadixRank
-```

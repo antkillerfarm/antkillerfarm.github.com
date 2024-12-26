@@ -75,7 +75,7 @@ SPMD和MPMD都是编程模型的概念。
 
 **编程模型就是对编程共性的抽象。而体系结构是对于硬件的抽象。**
 
----
+## SIMT
 
 SIMT: Single Instruction Multiple Threads，多个thread运行同一指令，但各自处理的数据可以不同（一般每个线程的数据，尤其是寄存器是独立的）。
 
