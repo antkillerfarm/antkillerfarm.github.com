@@ -87,6 +87,10 @@ https://www.zhihu.com/question/7714166945
 
 如何看待曾被比作“顾维钧”的前叙利亚驻联合国大使公开谴责阿萨德政权是黑手党？
 
+https://www.zhihu.com/pin/1854612996443222016
+
+HTS垄断政权，SDF反攻SNA
+
 ---
 
 赛德纳亚（Saydnaya）军事监狱位于叙利亚大马士革附近。

@@ -319,6 +319,24 @@ C++中的HashTable性能优化
 
 ## 计算cumsum
 
+![](/images/img6/Prefix_Scan.png)
+
+Sklansky方法相对比较简单一些，因为每一层的线程数都是相同的。
+
+其中核心的计算index的代码如下：
+
+```
+for (uint32_t s = 1; s <= num_threads_x; s <<= 1) {
+  if (row_exists) {
+    uint32_t a = (threadIdx.x / s) * (2 * s) + s;
+    uint32_t ti = a + (threadIdx.x % s);
+    uint32_t si = a - 1;
+    sum[ti] = sum[ti] + sum[si]
+  }
+  __syncthreads();
+}
+```
+
 https://research.nvidia.com/publication/single-pass-parallel-prefix-scan-decoupled-look-back
 
 ## 参考
@@ -328,24 +346,3 @@ AVL树是一种平衡二叉树，得名于其发明者的名字（Adelson-Velski
 https://zhuanlan.zhihu.com/p/34899732
 
 详解AVL树（基础篇）
-
----
-
-在美团外卖向量检索系统的建设过程中，我们相继使用了HNSW（Hierarchical Navigable Small World），IVF（Inverted File），IVF-PQ（Inverted File with Product Quantization）以及IVF-PQ+Refine等算法。
-
-https://mp.weixin.qq.com/s/pPl-anyQnFNFkmBlVsrBpA
-
-美团外卖基于GPU的向量检索系统实践
-
----
-
-Tomohiko Sakamoto算法：
-
-```c
-int dayofweek(int y, int m, int d) /* 0 = Sunday */
-{
-    int t[]= {0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4};
-    y -= m < 3;
-    return (y + y/4 - y/100 + y/400 + t[m-1] + d) % 7;
-}
-```

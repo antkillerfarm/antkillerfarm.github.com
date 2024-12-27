@@ -384,3 +384,7 @@ https://www.zhihu.com/question/7094482535
 https://zhuanlan.zhihu.com/p/14135738396
 
 逆转趋势，俄罗斯工业越打越强了？
+
+https://www.zhihu.com/question/7820441159
+
+12月25日一架客机在哈萨克斯坦阿克套坠毁，官方称25人生还，坠机原因是什么？目前情况如何？

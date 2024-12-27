@@ -132,6 +132,10 @@ https://zhuanlan.zhihu.com/p/70571146
 
 # CUDA+
 
+`#pragma unroll`指令建议编译器完全展开for循环。如果N是一个常量，编译器会尝试将循环体展开N次。如果N不是一个常量或者太大而无法完全展开，编译器可能会忽略这个指令，或者展开一定次数的迭代。
+
+---
+
 因为GPU不支持常规的Kernel递归，CPU上的很多递归算法只能换思路后进行改写，不能直接按原思路实现。而随着动态并行（Dynamic Parallelism）的引入，GPU现在能直接在Kernel中启动Kernel了。
 
 https://zhuanlan.zhihu.com/p/674856090

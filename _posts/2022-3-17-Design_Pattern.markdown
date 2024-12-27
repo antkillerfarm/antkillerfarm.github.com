@@ -91,6 +91,27 @@ https://refactoringguru.cn/design-patterns
 
 # 数据结构 & 普通CS算法
 
+在美团外卖向量检索系统的建设过程中，我们相继使用了HNSW（Hierarchical Navigable Small World），IVF（Inverted File），IVF-PQ（Inverted File with Product Quantization）以及IVF-PQ+Refine等算法。
+
+https://mp.weixin.qq.com/s/pPl-anyQnFNFkmBlVsrBpA
+
+美团外卖基于GPU的向量检索系统实践
+
+---
+
+Tomohiko Sakamoto算法：
+
+```c
+int dayofweek(int y, int m, int d) /* 0 = Sunday */
+{
+    int t[]= {0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4};
+    y -= m < 3;
+    return (y + y/4 - y/100 + y/400 + t[m-1] + d) % 7;
+}
+```
+
+---
+
 https://www.zhihu.com/question/623575952
 
 算法复杂度为什么经常不考虑系数?

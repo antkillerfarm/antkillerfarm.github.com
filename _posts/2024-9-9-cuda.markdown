@@ -238,6 +238,10 @@ launch.json:
 }
 ```
 
+https://zhuanlan.zhihu.com/p/508810115
+
+Visual Studio Code的CUDA环境
+
 ## CUDA实战
 
 安装：
@@ -298,7 +302,3 @@ fast mode: `-ftz=true -prec-div=false -prec-sqrt=false`
 在fast模式中，非规格化数将被转换为零，并且除法和平方根运算不会被计算到最接近的真实值的浮点数值。
 
 当浮点异常发生时，NVIDIA的GPU不会触发trap handlers，也没有指示上溢、下溢或者denormal的标志位。
-
----
-
-`#pragma unroll`指令建议编译器完全展开for循环。如果N是一个常量，编译器会尝试将循环体展开N次。如果N不是一个常量或者太大而无法完全展开，编译器可能会忽略这个指令，或者展开一定次数的迭代。
