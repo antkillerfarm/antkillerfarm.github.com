@@ -276,3 +276,7 @@ https://zhuanlan.zhihu.com/p/13138407444
 https://zhuanlan.zhihu.com/p/13810035587
 
 一个俄罗斯朋友分享的战场经历
+
+https://zhuanlan.zhihu.com/p/15153956892
+
+严重通胀导致俄罗斯平民生活困顿，为何俄罗斯仍然不崩溃？
