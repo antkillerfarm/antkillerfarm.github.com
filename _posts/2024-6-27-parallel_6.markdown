@@ -17,6 +17,12 @@ prefill（用户输入）和decode（模型输出）的token量在不同场景�
 
 ---
 
+这个从今年年中开始，各家都陆续上了PD分离方案（如MoonCake）。
+
+Prefilling阶段是计算密集型，少量Query就可以打满GPU，大量Query反而会增加首token延迟；Decoding阶段是访存密集型，必须依赖大量Query提高GPU计算利用率。因此可以通过多台机器处理Prefilling、单台机器处理Decoding的PD分离方案，实现综合效率最大化、首token延迟（TTFT）最低、DecodeSpeed（TPS）最高。
+
+---
+
 ![](/images/img6/static-batching.png)
 
 上图是一个通常的多batch的LLM的Inference过程。其中黄色表示用户的prompt，蓝色表示LLM生成的文本，红色表示结束符号。
@@ -248,53 +254,3 @@ Kokkos:一个异构并行计算通用平台
 # 数据流并行
 
 数据流并行是Pipeline并行的高阶版本。广义的数据流希望通过图编译找到全局最优策略，本质上是一种把编译器当万金油的惰性做法，深度学习框架在系统调度这种比较粗放的尺度，围绕数据流做了这么多年的自动并行化，最后业界主流实际上的并行策略还是预设的这些Pipeline、Tensor并行的组合，而不是编译器搜出来的自动化的并行策略。
-
-# 参考
-
-https://mp.weixin.qq.com/s/_1Yr_BbFhlNEW7UtYvAaoA
-
-分布式深度学习，93页ppt概述最新DDL技术发展
-
-https://mp.weixin.qq.com/s/jC5v9BKQvlxa2_6cikXV9w
-
-分布式算法与优化，118页pdf
-
-https://zhuanlan.zhihu.com/p/58806183
-
-深度学习的分布和并行处理系统
-
-https://zhuanlan.zhihu.com/p/56991108
-
-一文说清楚Tensorflow分布式训练必备知识
-
-https://mp.weixin.qq.com/s/r951Iasr4dke6MPHsUO0TA
-
-开源DAWN，Stanford的又一力作
-
-https://mp.weixin.qq.com/s/2jrMDeMcb47zpPfFLEcnIA
-
-深度学习平台技术演进
-
-https://mp.weixin.qq.com/s/L4CMKS53pNyvhhqvQhja0g
-
-5种商业AI产品的技术架构设计
-
-https://mp.weixin.qq.com/s/IqjKdAlGYREqCR9XQB5N1A
-
-伯克利AI分布式框架Ray，兼容TensorFlow、PyTorch与MXNet
-
-https://mp.weixin.qq.com/s/aNX_8UDYI_0u-MwMTYeqdQ
-
-开发易、通用难，深度学习框架何时才能飞入寻常百姓家？
-
-https://mp.weixin.qq.com/s/UbAHB-uEIvqYZCB7xIAJTg
-
-机器学习新框架Propel：使用JavaScript做可微分编程
-
-https://mp.weixin.qq.com/s/Ctl65r4iZNEOBxiiX2I2eQ
-
-Momenta王晋玮：让深度学习更高效运行的两个视角
-
-https://zhuanlan.zhihu.com/p/371499074
-
-OneFlow——让每一位算法工程师都有能力训练GPT

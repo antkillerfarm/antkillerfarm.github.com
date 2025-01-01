@@ -265,6 +265,10 @@ tensorflow/compiler/plugin/poplar/driver/poplar_executable_cache.cc
 
 所谓交错式调度，就是在第一个batch（上图中包含4个mini-batch）的F和B还没有完成的情况下，就开始计算第二个batch的mini-batch了。
 
+![](/images/img6/DualPipe.png)
+
+上图是DeepSeek-V3提出的DualPipe的示意图。两组batch同时进入流水线调度，用双倍的存储，换取利用率的提高。
+
 参考：
 
 https://zhuanlan.zhihu.com/p/618590870

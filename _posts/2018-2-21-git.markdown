@@ -209,6 +209,8 @@ git的reset和checkout的区别
 
 `git log --graph`，字符式的图形化展示分支历史。
 
+`git log --pretty=format:'%ae' | grep -c -i '<EMAIL_ADDRESS>'`，统计某个邮箱地址提交的次数。
+
 ## 远端仓库
 
 查看远程仓库地址：
