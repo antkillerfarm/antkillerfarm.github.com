@@ -85,6 +85,8 @@ TPUv4是TPU系列时隔4年（2021）之后的大升级。它的改进主要是�
 
 TPU v5e是2023年发布的。
 
+从TPU v5开始，e系列负责训推一体，Pod规模不会很大,部署更加灵活，而p系列则负责更大规模的Foundation Model训练任务。
+
 https://zhuanlan.zhihu.com/p/653993836
 
 面向大模型的最强DSA——TPU v5e架构分析
@@ -92,6 +94,10 @@ https://zhuanlan.zhihu.com/p/653993836
 https://zhuanlan.zhihu.com/p/626412573
 
 谈谈Google TPUv4处理器的硬件结构、计算范式与SuperPod互连拓扑－－部分细节对比Nvidia
+
+https://zhuanlan.zhihu.com/p/3326989452
+
+简单谈谈Google TPUv6
 
 ---
 

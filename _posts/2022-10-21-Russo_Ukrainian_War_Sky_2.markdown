@@ -109,6 +109,10 @@ https://zhuanlan.zhihu.com/p/15346845782
 
 乌克兰战局追踪-2024年12月29日
 
+https://zhuanlan.zhihu.com/p/15825412637
+
+2024年的俄乌战局回顾
+
 ## 顿巴斯战争
 
 ![](/images/img4/Kyiv.jpg)

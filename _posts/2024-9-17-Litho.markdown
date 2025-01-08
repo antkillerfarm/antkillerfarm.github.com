@@ -85,6 +85,10 @@ ASML表示，其TWINSCAN NXT:1980系列浸润式光刻系统的DCO值小于等�
 
 多曝搞先进制程没有经济价值，甚至于对于当前的中国，连工艺研发和产业价值都有限。
 
+---
+
+N6这类初代EUVL制程本身所需掩膜就更少，外加EUV这么多年成本平摊和良率持续爬升、停掉SAQP Gate的ArFi产能释放，良率也因为process和steps的简化而提高，致使其性价比反超了ArFi的末代工艺。这就是局外人所无法理解的事情：虽然用了更昂贵的设备，但是由于综合产能和利用率的上升，单位成本反而降低了。
+
 ## 光源
 
 目前全世界能生产光刻机的DUV光源只有美国Cymer跟日本Gigiphoton两家，美国Cymer是ASML的子公司并提共ASML DUV以及EUV光源系统，日本Gigiphoton是从小松独立出来的并向日本两大光刻机Nikon、Canon提供光源。
@@ -166,35 +170,3 @@ https://mp.weixin.qq.com/s/NZGNrO_LxNc6qrIdofOIfQ
 https://mp.weixin.qq.com/s/-cudXRIo0t4gNpEqVJ7vKw
 
 芯片光刻的流程详解
-
-https://mp.weixin.qq.com/s/V2AY7VcUEFCMAdMPJ54ZiA
-
-一文看懂光刻机
-
-https://mp.weixin.qq.com/s/VY0WeBfZ2vN8OaupcsEvxw
-
-光刻胶发展历史
-
-https://mp.weixin.qq.com/s/odDzhxRsGuZYOdYtbrHV8Q
-
-一文看懂光刻胶
-
-https://mp.weixin.qq.com/s/jqP52LFcmd5oGRLBfE2J_A
-
-光刻机编年史（1959-1969）
-
-https://mp.weixin.qq.com/s/YvzxV5NLz4FkKO71bxpAIA
-
-给孩子讲讲光刻机吧
-
-https://mp.weixin.qq.com/s/6BnrAEMpZxJ3ChBHWQ9mWA
-
-台积电缺电！30台EUV光刻机一天耗电90万度
-
-https://mp.weixin.qq.com/s/AUDDEYETPdJSyIdpMl4hLQ
-
-一文看懂ASML EUV光刻技术
-
-https://mp.weixin.qq.com/s/DFU4zoteqehOJkBpVVhXyA
-
-EUV光刻机里的低调王者

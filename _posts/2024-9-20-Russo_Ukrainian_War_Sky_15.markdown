@@ -222,3 +222,7 @@ https://zhuanlan.zhihu.com/p/5809853628
 https://zhuanlan.zhihu.com/p/14396167432
 
 五个月过去了，乌克兰在对行动的怀疑中紧紧抓住库尔斯克
+
+https://www.zhihu.com/question/8680899864
+
+2025年了，乌军在库尔斯克地区的形式如何？

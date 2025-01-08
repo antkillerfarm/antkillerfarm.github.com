@@ -233,6 +233,10 @@ https://huggingface.co/blog/zh/pytorch-ddp-accelerate-transformers
 
 从PyTorch DDP到Accelerate到Trainer，轻松掌握分布式训练
 
+https://huggingface.co/blog/zh/deepspeed-to-fsdp-and-back
+
+Hugging Face Accelerate 两个后端的故事：FSDP与DeepSpeed
+
 # xFormers
 
 xFormers是Meta推出的基于PyTorch的深度学习库，专注于Transformer架构的优化和应用。

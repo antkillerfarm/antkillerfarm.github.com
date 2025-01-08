@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CPU(二)
+title: CPU(二)——Cache, Jim Keller, 内存一致性, RISC-V
 category: Chip 
 ---
 
@@ -10,6 +10,36 @@ category: Chip
 # CPU
 
 ## Cache（续）
+
+在一个多处理器系统中，Cache们和内存池可能对同一份数据有多份副本，如何保证这些副本的一致性（Coherency）是个必须严肃对待的问题。
+
+多核CPU多级缓存的一致性，一般由相关的一致性总线协议保证。这些协议包括：MSI、MESI和MOESI。
+
+https://mp.weixin.qq.com/s/570O2BloWjy3q0_m_mfiZg
+
+CPU缓存一致性协议
+
+https://zhuanlan.zhihu.com/p/63494668
+
+显存为什么不能当内存使？内存、Cache和Cache一致性
+
+https://blog.csdn.net/ZoeyyeoZ/article/details/51804647
+
+MESI&MOESI协议
+
+---
+
+![](/images/img5/time.png)
+
+https://www.cs.cornell.edu/projects/ladis2009/talks/dean-keynote-ladis2009.pdf
+
+参考：
+
+https://zhuanlan.zhihu.com/p/296808047
+
+每个程序员都应该知道的延迟数字
+
+---
 
 L1 Cache分为ICache（指令缓存）和DCache（数据缓存）。
 

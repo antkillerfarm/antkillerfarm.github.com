@@ -1,13 +1,35 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（七）——LLM System, Alpa
+title:  并行 & 框架 & 优化（七）——LLM Inference, LLM System, Alpa
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# LLM Inference（续）
+# LLM Inference
+
+A Survey on Efficient Inference for Large Language Models
+
+---
+
+https://zhuanlan.zhihu.com/p/653352979
+
+LLM七种推理服务框架总结
+
+https://zhuanlan.zhihu.com/p/671347964
+
+大模型(LLM)推理框架汇总
+
+https://zhuanlan.zhihu.com/p/642412124
+
+LLM的推理优化技术纵览
+
+https://github.com/DefTruth/Awesome-LLM-Inference
+
+Awesome LLM Inference
+
+---
 
 一次用户请求，实际上既包含prefill，也包含decode。一个是计算密集型，一个是访存密集型。
 

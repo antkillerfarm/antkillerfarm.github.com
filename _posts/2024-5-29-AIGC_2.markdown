@@ -135,6 +135,10 @@ DiT使用Transformer替换了U-Net架构，算是2023年度Diffusion Model的一
 
 《Scalable Diffusion Models with Transformers》
 
+https://blog.csdn.net/v_JULY_v/article/details/144797429
+
+Diffusion Transformer(DiT)——将扩散过程中的U-Net换成ViT
+
 ## Consistency Models
 
 扩散模型广泛应用于DALLE、stable diffusion等文生图的模型中，但一直以来扩散模型的一个缺点就是采样速度较慢，通常需要100-1000的评估步骤才能抽取一个不错的样本。

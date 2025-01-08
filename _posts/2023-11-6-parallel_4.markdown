@@ -237,6 +237,20 @@ pytorch里已经集成了该代码：
 
 torch/distributed/fsdp/fully_sharded_data_parallel.py
 
+---
+
+FSDP的backward_prefetch策略是用于优化反向传播过程中通信和计算重叠的一种配置。
+
+BACKWARD_PRE：这种模式在当前参数集的梯度计算之前就开始预取下一组参数。这可以实现最大程度的通信和计算重叠，但会增加最多的内存使用。它会在内存中同时持有当前参数集、下一组参数和当前梯度。
+
+BACKWARD_POST：这种模式在当前参数集的梯度计算之后开始预取下一组参数。它允许较少的重叠，但内存使用也较少。在内存使用峰值时，它只持有下一组参数和当前梯度。
+
+同样的还有forward_prefetch策略，FSDP会在当前前向计算之前显式地预取下一个前向传递所需的全收集（all-gather）操作。
+
+需要注意的是，forward_prefetch只适用于静态图模型，因为预取操作是按照第一次迭代的执行顺序进行的。这意味着在动态图模型中，由于执行顺序可能在每次迭代中发生变化，因此不建议使用此策略。
+
+---
+
 参考：
 
 https://www.cnblogs.com/rossiXYZ/p/15815013.html
@@ -270,33 +284,3 @@ Megatron是NVIDIA的研究小组。目前已经推出了三篇论文：
 ![](/images/img5/Model_Parallel.jpg)
 
 ![](/images/img5/Model_Parallel.png)
-
-代码：
-
-https://github.com/NVIDIA/Megatron-LM
-
-微软还有一个项目将DeepSpeed和Megatron-LM结合了起来：
-
-https://github.com/microsoft/Megatron-DeepSpeed
-
-参考：
-
-https://zhuanlan.zhihu.com/p/522198082
-
-Megatron-LM 第三篇Paper总结——Sequence Parallelism & Selective Checkpointing
-
-https://zhuanlan.zhihu.com/p/366906920
-
-Megatron论文和代码详细分析(1)
-
-https://zhuanlan.zhihu.com/p/388830967
-
-Megatron论文和代码详细分析(2)
-
-https://blog.csdn.net/v_JULY_v/article/details/132462452
-
-通俗理解Megatron-DeepSpeed之模型并行与数据并行
-
-https://mp.weixin.qq.com/s/bvF50XRaA9cO2O4oB31kbg
-
-大语言模型分布式训练的量化分析与最佳实践,以GPT-175B为例

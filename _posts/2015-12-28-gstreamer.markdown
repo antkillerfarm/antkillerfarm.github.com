@@ -205,33 +205,3 @@ static PlaylistTypes special_types[] = {
 ```
 
 从这里可以看出，找到正确的MIME才是开始解析的关键。这里使用了glib提供的g_content_type_guess函数判断文件的MIME。
-
-判断MIME的方式有两种：
-
-1.根据文件名判断。
-
-这种方式的主要函数是glib/gio/xdgmime.c: xdg_mime_get_mime_types_from_file_name。
-
-2.根据文件的内容（主要是magic number）判断。
-
-这种方式的主要函数是glib/gio/xdgmime.c: xdg_mime_get_mime_type_for_data。
-
-无论何种方式，这里实际上都需要有一个MIME解析文件提供给程序，用以确定文件的MIME类型。
-
-这里以文件名方式为例，讲一下MIME解析文件的基本知识。
-
-1.存储路径
-
-通常在/usr/share/mime下，其他可能的路径，可在代码中查到。
-
-2.格式类型
-
-主要有三种：
-
-1）XML型。这种类型的解析文件功能和可阅读性都很强，但所占空间较大。
-
-2）glob型。分为glob和glob2两种格式。功能一般，可阅读，占用空间一般。
-
-3）cache型。二进制文件，不可阅读，空间最小，效率最高。
-
-我这里采用glob2文件，既方便修改，其占用空间也在可接受的范围内。

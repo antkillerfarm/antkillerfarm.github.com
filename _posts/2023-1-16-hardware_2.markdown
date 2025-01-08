@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  硬件杂谈（二）, 芯片杂烩, 外设接口杂谈, 硬盘
+title:  硬件杂谈（二）, 外设接口杂谈, 硬盘
 category: Chip 
 ---
 
@@ -88,98 +88,6 @@ https://mp.weixin.qq.com/s/NKWvIJ7-J_IugnAgUehVIg
 https://www.zhihu.com/question/514589190
 
 为什么嘉立创打PCB不要钱？
-
-# 芯片杂烩
-
-我接触到的芯片分门别类罗列如下：
-
-<table>
-  <tr>
-    <th>类别</th>
-    <th>名称</th>
-    <th>厂家</th>
-  </tr>
-  <tr>
-    <td>Low MCU（追求低价）</td>
-    <td>LPC4088</td>
-    <td>NXP</td>
-  </tr>
-  <tr>
-    <td rowspan="2">Hi MCU（追求性能）</td>
-    <td>ASAP1826T</td>
-    <td>alphascale</td>
-  </tr>
-  <tr>
-    <td>MDM9215M</td>
-    <td>Qualcomm</td>
-  </tr>
-  <tr>
-    <td rowspan="3">Wifi Low Power SOC</td>
-    <td>QCA4002</td>
-    <td>Qualcomm Atheros</td>
-  </tr>
-  <tr>
-    <td>RTL8711AF</td>
-    <td>Realtek</td>
-  </tr>
-  <tr>
-    <td>ESP8266</td>
-    <td>Espressif(乐鑫)</td>
-  </tr>
-  <tr>
-    <td>BLE SOC</td>
-    <td>QN9021</td>
-    <td>NXP</td>
-  </tr>
-  <tr>
-    <td rowspan="2">Wifi SOC</td>
-    <td>RTL8881AB</td>
-    <td>Realtek</td>
-  </tr>
-  <tr>
-    <td>MT7620A</td>
-    <td>MTK</td>
-  </tr>
-  <tr>
-    <td rowspan="2">Nand Flash</td>
-    <td>MT29F4G08ABBEAH4</td>
-    <td>Micron Technology</td>
-  </tr>
-  <tr>
-    <td>HY27UF081G2A</td>
-    <td>Hynix</td>
-  </tr>
-  <tr>
-    <td rowspan="4">Wifi Audio</td>
-    <td>RTL8871AM</td>
-    <td>Realtek</td>
-  </tr>
-  <tr>
-    <td>RT5350F</td>
-    <td>Ralink</td>
-  </tr>
-  <tr>
-    <td>AR9331</td>
-    <td>Qualcomm Atheros</td>
-  </tr>
-  <tr>
-    <td>ATV3603</td>
-    <td>炬力</td>
-  </tr>
-  <tr>
-    <td rowspan="3">Audio Codec</td>
-    <td>WM8728</td>
-    <td>Wolfson</td>
-  </tr>
-  <tr>
-    <td>TAS5731M</td>
-    <td>Texas Instruments</td>
-  </tr>
-  <tr>
-    <td>MAX5556</td>
-    <td>MAXIM</td>
-  </tr>
-</table>
 
 # 外设接口杂谈
 
@@ -322,3 +230,37 @@ SMR硬盘到底能用不？
 https://zhuanlan.zhihu.com/p/378639081
 
 给大家科普下什么是叠瓦盘？顺便告诉你叠瓦盘为什么不能买？
+
+# 光刻+
+
+https://mp.weixin.qq.com/s/V2AY7VcUEFCMAdMPJ54ZiA
+
+一文看懂光刻机
+
+https://mp.weixin.qq.com/s/VY0WeBfZ2vN8OaupcsEvxw
+
+光刻胶发展历史
+
+https://mp.weixin.qq.com/s/odDzhxRsGuZYOdYtbrHV8Q
+
+一文看懂光刻胶
+
+https://mp.weixin.qq.com/s/jqP52LFcmd5oGRLBfE2J_A
+
+光刻机编年史（1959-1969）
+
+https://mp.weixin.qq.com/s/YvzxV5NLz4FkKO71bxpAIA
+
+给孩子讲讲光刻机吧
+
+https://mp.weixin.qq.com/s/6BnrAEMpZxJ3ChBHWQ9mWA
+
+台积电缺电！30台EUV光刻机一天耗电90万度
+
+https://mp.weixin.qq.com/s/AUDDEYETPdJSyIdpMl4hLQ
+
+一文看懂ASML EUV光刻技术
+
+https://mp.weixin.qq.com/s/DFU4zoteqehOJkBpVVhXyA
+
+EUV光刻机里的低调王者

@@ -352,6 +352,10 @@ https://www.sohu.com/a/329177032_120104204
 
 一文详解C/C++代码覆盖率--gcov/lcov/gcovr
 
+https://github.com/yanxiangyfg/gcov
+
+一个gcov的原理及使用说明
+
 ## 代码检查
 
 clang-format：可以格式化排版多种不同语言的代码。

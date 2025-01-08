@@ -164,6 +164,13 @@ conda activate
 conda init --reverse --all
 ```
 
+查询当前python环境的路径：
+
+```python
+import sys
+print(sys.executable)
+```
+
 参考：
 
 http://www.cnblogs.com/zhusleep/p/5616099.html

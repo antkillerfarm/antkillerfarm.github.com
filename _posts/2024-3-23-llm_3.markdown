@@ -151,6 +151,12 @@ https://blog.csdn.net/v_JULY_v/article/details/140659420
 
 一文速览Llama 3.1——对其92页paper的全面细致解读：涵盖语言、视觉、语音的架构、原理
 
+# LLM应用
+
+![](/images/img6/LLM_IC.png)
+
+大语言模型参与的芯片前端设计迭代流程
+
 # Chinchilla Law
 
 DeepMind研究了在给定算力预算下训练Transformer语言模型的最佳模型大小和tokens数量。

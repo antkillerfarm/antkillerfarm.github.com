@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CPU(四), DPU, AMD, ARM
+title: CPU(四), DPU, AMD, ARM, 芯片杂烩
 category: Chip 
 ---
 
@@ -8,38 +8,6 @@ category: Chip
 {:toc}
 
 # CPU
-
-https://mp.weixin.qq.com/s/_NcQ-PxNpEtpYdo450Uukg
-
-半导体材料全球格局
-
-https://mp.weixin.qq.com/s/QwE_VTEUS9kGDDrHlzPYmg
-
-硅片为什么不是方的？
-
-https://zhuanlan.zhihu.com/p/32378843
-
-ARM攒机指南-汽车篇
-
-https://mp.weixin.qq.com/s/Hq9hzkyfGcCQa_FfzSDoRg
-
-5nm工艺节点以后，半导体器件的发展方向
-
-https://zhuanlan.zhihu.com/p/66263349
-
-为什么内存和闪存制程比CPU低？它们现在都在什么节点？
-
-https://zhuanlan.zhihu.com/p/114448236
-
-什么是Win10的“现代待机”？为什么它未来会越来越重要？这篇文章部分解释了我的第一个平板为什么那么耗电。
-
-https://mp.weixin.qq.com/s/J7RlmvU7JY1J8rV-eqjQ2A
-
-浅谈多核心CPU和SoC芯片及其工作原理
-
-https://mp.weixin.qq.com/s/Lnrlv7JcrOSwbnDweYf1Yg
-
-片上系统设计案例分析-Xbox主机
 
 https://zhuanlan.zhihu.com/p/86432216
 
@@ -244,6 +212,98 @@ ARM次世代核心Cortex X3/A715/A510简评：降本增效，问题依旧
 https://zhuanlan.zhihu.com/p/694560307
 
 麒麟9010微架构评测：轻舟已过万重山
+
+# 芯片杂烩
+
+我接触到的芯片分门别类罗列如下：
+
+<table>
+  <tr>
+    <th>类别</th>
+    <th>名称</th>
+    <th>厂家</th>
+  </tr>
+  <tr>
+    <td>Low MCU（追求低价）</td>
+    <td>LPC4088</td>
+    <td>NXP</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Hi MCU（追求性能）</td>
+    <td>ASAP1826T</td>
+    <td>alphascale</td>
+  </tr>
+  <tr>
+    <td>MDM9215M</td>
+    <td>Qualcomm</td>
+  </tr>
+  <tr>
+    <td rowspan="3">Wifi Low Power SOC</td>
+    <td>QCA4002</td>
+    <td>Qualcomm Atheros</td>
+  </tr>
+  <tr>
+    <td>RTL8711AF</td>
+    <td>Realtek</td>
+  </tr>
+  <tr>
+    <td>ESP8266</td>
+    <td>Espressif(乐鑫)</td>
+  </tr>
+  <tr>
+    <td>BLE SOC</td>
+    <td>QN9021</td>
+    <td>NXP</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Wifi SOC</td>
+    <td>RTL8881AB</td>
+    <td>Realtek</td>
+  </tr>
+  <tr>
+    <td>MT7620A</td>
+    <td>MTK</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Nand Flash</td>
+    <td>MT29F4G08ABBEAH4</td>
+    <td>Micron Technology</td>
+  </tr>
+  <tr>
+    <td>HY27UF081G2A</td>
+    <td>Hynix</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Wifi Audio</td>
+    <td>RTL8871AM</td>
+    <td>Realtek</td>
+  </tr>
+  <tr>
+    <td>RT5350F</td>
+    <td>Ralink</td>
+  </tr>
+  <tr>
+    <td>AR9331</td>
+    <td>Qualcomm Atheros</td>
+  </tr>
+  <tr>
+    <td>ATV3603</td>
+    <td>炬力</td>
+  </tr>
+  <tr>
+    <td rowspan="3">Audio Codec</td>
+    <td>WM8728</td>
+    <td>Wolfson</td>
+  </tr>
+  <tr>
+    <td>TAS5731M</td>
+    <td>Texas Instruments</td>
+  </tr>
+  <tr>
+    <td>MAX5556</td>
+    <td>MAXIM</td>
+  </tr>
+</table>
 
 # 芯片行业+
 

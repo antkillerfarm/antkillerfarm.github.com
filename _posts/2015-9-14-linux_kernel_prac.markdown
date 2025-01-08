@@ -204,51 +204,6 @@ Linux既然由若干模块组成，那么这些模块在启动阶段，必然存
 
 运行阶段的加载，由于是动态加载，没有加载顺序的问题（程序员代码控制加载顺序），因此这些宏都被编译成module_init。
 
-# Camera
-
-常见的Camera从软件角度，可分为三类：
-
-1.Soc Camera。
-
-2.USB Camera。
-
-3.IP Camera。
-
-其中，前两类设备需要相关的驱动程序。Linux内核配置方法如下：
-
-```text
-Device Drivers --->
-    <*> Multimedia support --->
-    [*]   Cameras/video grabbers support
-    [*]   Media USB Adapters  --->
-        <*>   USB Video Class (UVC)
-        <*>   GSPCA based webcams  --->  
-    [*]   V4L platform devices  --->
-        <*>   SoC camera support
-```
-
-UVC是Microsoft与另外几家设备厂商联合推出的为USB视频捕获设备定义的协议标准，目前已成为USB org标准之一。
-
-GSPCA同样是一种标准，早期的很多摄像头用的就是这一标准。
-
-这两类设备的应用层接口为V4L2。教程可参见：
-
-http://blog.csdn.net/mmz_xiaokong/article/details/5666993
-
-对于UVC设备，可以用相关工具直接获取图像。常用的工具有：
-
-GTK+ UVC Viewer
-
-http://guvcview.sourceforge.net/
-
-luvcview
-
-https://github.com/ksv1986/luvcview
-
-IP Camera无须驱动，只要提供网口就行了。有的设备支持wifi，连网口也省了。
-
-IP Camera的应用层接口一般为网络协议接口，如TCP/IP、HTTP、RTP/RTSP等。
-
 # GPIO
 
 GPIO相对来说是最简单的一类驱动，代码在drivers/gpio文件夹下。
@@ -315,6 +270,6 @@ Keyboards --->
 
 ## active_low
 
-active_low的设置要根据硬件的连接，如果按下按键为高电平那么active_low=0，如果按下按键为低电平那么active_low=1.如果这个参数搞错了，按键松开后就不断发按键键码，表现为屏幕上乱动作。
+active_low的设置要根据硬件的连接，如果按下按键为高电平，那么active_low=0，如果按下按键为低电平，那么active_low=1.如果这个参数搞错了，按键松开后就不断发按键键码，表现为屏幕上乱动作。
 
 也因为active_low的存在，input_event返回的value实际上并不是GPIO的值，1表示按键按下，0表示按键抬起。

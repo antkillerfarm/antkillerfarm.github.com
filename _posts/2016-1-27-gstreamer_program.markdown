@@ -7,7 +7,39 @@ category: technology
 * toc
 {:toc}
 
-# GStreamer应用（续）
+# GStreamer应用
+
+## Totem Playlist Parser的openwrt移植（续）
+
+判断MIME的方式有两种：
+
+1.根据文件名判断。
+
+这种方式的主要函数是glib/gio/xdgmime.c: xdg_mime_get_mime_types_from_file_name。
+
+2.根据文件的内容（主要是magic number）判断。
+
+这种方式的主要函数是glib/gio/xdgmime.c: xdg_mime_get_mime_type_for_data。
+
+无论何种方式，这里实际上都需要有一个MIME解析文件提供给程序，用以确定文件的MIME类型。
+
+这里以文件名方式为例，讲一下MIME解析文件的基本知识。
+
+1.存储路径
+
+通常在/usr/share/mime下，其他可能的路径，可在代码中查到。
+
+2.格式类型
+
+主要有三种：
+
+1）XML型。这种类型的解析文件功能和可阅读性都很强，但所占空间较大。
+
+2）glob型。分为glob和glob2两种格式。功能一般，可阅读，占用空间一般。
+
+3）cache型。二进制文件，不可阅读，空间最小，效率最高。
+
+我这里采用glob2文件，既方便修改，其占用空间也在可接受的范围内。
 
 ## TCP远程播放
 
@@ -230,53 +262,3 @@ Sender:
 Receiver:
 
 `gst-launch udpsrc port=5000 caps="application/x-rtp, media=(string)audio, clock-rate=(int)44100, width=(int)16, height=(int)16, encoding-name=(string)L16, encoding-params=(string)1, channels=(int)1, channel-position=(int)1, payload=(int)96" ! gstrtpjitterbuffer do-lost=true ! rtpL16depay ! audioconvert ! alsasink sync=false`
-
-# GStreamer编程
-
-## 开发环境搭建
-
-`sudo apt install libgstreamer1.0-dev`(1.x系列)
-
-`sudo apt install libgstreamer0.10-dev`(0.10.x系列)
-
-helloworld程序在
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/gstreamer/helloworld
-
-这里的代码尽管是针对1.x系列的，但实际上对于0.10.x系列也同样有效，你需要做的只是将Makefile中的
-
-```bash
-CFLAGS = `pkg-config --cflags gstreamer-1.0`
-LDFLAGS = `pkg-config --libs gstreamer-1.0`
-```
-
-改为
-
-```bash
-CFLAGS = `pkg-config --cflags gstreamer-0.10`
-LDFLAGS = `pkg-config --libs gstreamer-0.10`
-```
-
-这个例子同时也是如何使用pkg-config来管理同一软件的不同版本的范例。GTK+ 2.x和GTK+ 3.x的共存，也是采用了同样的方法。
-
-## 教程
-
-官方开发指南参见：
-
-https://gstreamer.freedesktop.org/documentation/application-development
-
-这是应用开发指南。
-
-https://gstreamer.freedesktop.org/documentation/plugin-development
-
-这是插件开发指南。
-
-这两本书是最基础的教程，尤其是前者。建议首先通读一遍，然后再进行具体的编程实践。不然，你可能连基本的概念和术语都不清楚。这两个指南都已有中文版，尽管比较老，是针对0.10.x系列的。
-
-官方入门代码教程参见：
-
-https://gstreamer.freedesktop.org/documentation/tutorials/index.html
-
-其他参考示例：
-
-https://github.com/rubenrua/GstreamerCodeSnippets

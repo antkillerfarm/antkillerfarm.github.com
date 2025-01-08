@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CPU(三)
+title: CPU(三)——芯片制造
 category: Chip 
 ---
 
@@ -312,3 +312,35 @@ https://mp.weixin.qq.com/s/O-2ecxYVOgEfRuwEoS7gRA
 Fab的那些事儿
 
 >Fab的全称叫Fabrication，也就是集成电路制造的工厂、车间。
+
+https://mp.weixin.qq.com/s/_NcQ-PxNpEtpYdo450Uukg
+
+半导体材料全球格局
+
+https://mp.weixin.qq.com/s/QwE_VTEUS9kGDDrHlzPYmg
+
+硅片为什么不是方的？
+
+https://zhuanlan.zhihu.com/p/32378843
+
+ARM攒机指南-汽车篇
+
+https://mp.weixin.qq.com/s/Hq9hzkyfGcCQa_FfzSDoRg
+
+5nm工艺节点以后，半导体器件的发展方向
+
+https://zhuanlan.zhihu.com/p/66263349
+
+为什么内存和闪存制程比CPU低？它们现在都在什么节点？
+
+https://zhuanlan.zhihu.com/p/114448236
+
+什么是Win10的“现代待机”？为什么它未来会越来越重要？这篇文章部分解释了我的第一个平板为什么那么耗电。
+
+https://mp.weixin.qq.com/s/J7RlmvU7JY1J8rV-eqjQ2A
+
+浅谈多核心CPU和SoC芯片及其工作原理
+
+https://mp.weixin.qq.com/s/Lnrlv7JcrOSwbnDweYf1Yg
+
+片上系统设计案例分析-Xbox主机

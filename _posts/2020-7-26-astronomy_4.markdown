@@ -203,6 +203,8 @@ https://www.zhihu.com/question/471620540
 
 ---
 
+![](/images/img6/SpaceX_vs_BO.webp)
+
 目前最出风头的三家私人航天公司，按技术水平来比较，大致是这样的：
 
 维珍：本科在读。

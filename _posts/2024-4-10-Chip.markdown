@@ -49,6 +49,8 @@ https://mp.weixin.qq.com/s/TmLSHVkeyqfU-9Jgir0czA
 
 针对成本问题，IRDS在2020提出了PPAC概念，即每2-3年P(性能)提升15%，P(功耗)减少30%，A(面积)减少30%，C(成本)晶圆成本增加少于30%。
 
+从PPAC来看，密度的Moore’s Law已经变缓了，但功耗的Moore’s Law仍然可以延续。
+
 ---
 
 芯片内部有多种单元，有高密度晶体管，也有低密度晶体管，也不是处处都有110 MTr/mm2这样的高密度，由于SRAM结构和对Vt和Isad的敏感特性，导致SRAM区域的面积就已经出现了停滞不前的现象。
@@ -80,6 +82,8 @@ https://mp.weixin.qq.com/s/TmLSHVkeyqfU-9Jgir0czA
 没有统一的标准自然会被企业拿来玩文字游戏模糊概念，三星在其14nm节点首开先河，台积电为了不落人后马上跟进，但保守的定义为16nm，只有自诩为“摩尔定律”坚定追随者的英特尔，当时还在死磕传统线宽的命名方式，直到2021年才全面修改节点命名，10nm改成Intel 7，原本的7nm改成Intel 4，并把后续节点细化成了Intel 3、Intel 20A、 Intel 18A。
 
 ---
+
+![](/images/img6/Process-Technology-Nodes.webp)
 
 1971年：10微米
 
@@ -120,6 +124,8 @@ https://mp.weixin.qq.com/s/TmLSHVkeyqfU-9Jgir0czA
 2020年：5nm
 
 2022年：3nm
+
+2025年：2nm
 
 | 制程 | 出局厂商 |
 |:--:|:--:|

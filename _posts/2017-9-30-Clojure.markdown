@@ -238,6 +238,8 @@ Clang-format: 格式化C/C++/Java/Objective-C代码。需要安装Clang-format�
 
 Diff Folders：文件夹比较。
 
+Dev Container：连接docker实例。
+
 ## 调试
 
 1.安装各个语言的插件。

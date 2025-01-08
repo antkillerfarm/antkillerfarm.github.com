@@ -1,11 +1,43 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（六）——KV Cache, 快速Transformer, LLM Inference
+title:  并行 & 框架 & 优化（六）——KV Cache, 快速Transformer
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
+
+# Megatron-LM（续）
+
+代码：
+
+https://github.com/NVIDIA/Megatron-LM
+
+微软还有一个项目将DeepSpeed和Megatron-LM结合了起来：
+
+https://github.com/microsoft/Megatron-DeepSpeed
+
+参考：
+
+https://zhuanlan.zhihu.com/p/522198082
+
+Megatron-LM 第三篇Paper总结——Sequence Parallelism & Selective Checkpointing
+
+https://zhuanlan.zhihu.com/p/366906920
+
+Megatron论文和代码详细分析(1)
+
+https://zhuanlan.zhihu.com/p/388830967
+
+Megatron论文和代码详细分析(2)
+
+https://blog.csdn.net/v_JULY_v/article/details/132462452
+
+通俗理解Megatron-DeepSpeed之模型并行与数据并行
+
+https://mp.weixin.qq.com/s/bvF50XRaA9cO2O4oB31kbg
+
+大语言模型分布式训练的量化分析与最佳实践,以GPT-175B为例
 
 # KV Cache
 
@@ -256,25 +288,3 @@ https://zhuanlan.zhihu.com/p/638468472
 https://blog.csdn.net/v_JULY_v/article/details/144218958
 
 一文通透vLLM与其核心技术PagedAttention：减少KV Cache碎片、提高GPU显存利用率(推理加速利器)
-
-# LLM Inference
-
-A Survey on Efficient Inference for Large Language Models
-
----
-
-https://zhuanlan.zhihu.com/p/653352979
-
-LLM七种推理服务框架总结
-
-https://zhuanlan.zhihu.com/p/671347964
-
-大模型(LLM)推理框架汇总
-
-https://zhuanlan.zhihu.com/p/642412124
-
-LLM的推理优化技术纵览
-
-https://github.com/DefTruth/Awesome-LLM-Inference
-
-Awesome LLM Inference
