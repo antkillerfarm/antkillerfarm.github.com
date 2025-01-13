@@ -243,6 +243,35 @@ https://mp.weixin.qq.com/s/uJKXvp-qtMH-PNNLieUdTg
 
 ---
 
+![](/images/article/KS.png)
+
+上图的红线是某随机变量假设分布的CDF，而蓝线是该随机变量样本的累积分布曲线，即ECDF（Empirical Distribution Function）。
+
+显然若假设正确的话，两条曲线应该是基本重合的。反之，若两条曲线差异较大，则该假设检验不成立。这就是KS检验的基本原理。
+
+KS检验的统计量定义如下：
+
+$$D_n= \sup_x |F_n(x)-F(x)|$$
+
+其中$$\sup$$表示最小上界，
+
+$$F_n(x)={1 \over n}\sum_{i=1}^n I_{[-\infty,x]}(X_i)$$
+
+$$I_{[-\infty,x]}(X_i)=\begin{cases}
+1, & X_i \le x \\
+0, & \text{otherwise} \\
+\end{cases}$$
+
+KS检验更深入的解释，涉及到布朗运动和维纳过程，这里不再赘述。
+
+参考：
+
+https://mp.weixin.qq.com/s/YMKHw3qgWvhEz4f8nPw7Cg
+
+5种数据同分布的检测方法
+
+---
+
 <a name="Steklov"/>
 
 >Vladimir Andreevich Steklov，1864～1926，俄国数学家、物理学家。哈尔科夫大学博士，其导师是圣彼得堡学派第二代人物中，仅次于Andrey Markov的Aleksandr Lyapunov。哈尔科夫大学和圣彼得堡大学教授，1919年创建斯塔克罗夫数学研究所。

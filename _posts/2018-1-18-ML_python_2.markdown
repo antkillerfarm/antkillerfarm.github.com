@@ -9,6 +9,34 @@ category: AI
 
 # Machine Learning之Python篇
 
+## SciPy（续）
+
+- Gaussian filter
+
+`w = 2*int(truncate*sigma + 0.5) + 1`
+
+参考：
+
+https://stackoverflow.com/questions/25216382/gaussian-filter-in-scipy
+
+Gaussian filter in scipy
+
+https://mp.weixin.qq.com/s/vGS4U3g4eaPuQwBWh-lTiA
+
+机器学习核心：优化问题基于Scipy
+
+https://mp.weixin.qq.com/s/xN0mX9XWvVUpi0p5Tc6vLA
+
+利用SciPy求解非线性规划问题
+
+https://mp.weixin.qq.com/s/44RjMdARJMSM1_seImaSbg
+
+SciPy稀疏矩阵
+
+https://mp.weixin.qq.com/s/5g1WgWEOkA-38MXbkKUtWg
+
+Scipy使用大全
+
 ## sklearn
 
 Scikit-learn提供了常见的机器学习算法的实现。
@@ -436,23 +464,3 @@ https://mp.weixin.qq.com/s/bCDXpr5yW5WFWyJSrOZpTw
 https://www.zhihu.com/answer/2526455583
 
 为什么很多人宁愿excel贼6，也不愿意去用python？
-
-## datatable
-
-datatable相当于高级版的Pandas。
-
-它的优点：
-
-- 支持超过内存数量的大数据。
-
-- 多线程数据处理。
-
-官网：
-
-https://datatable.readthedocs.io/en/latest/
-
-参考：
-
-https://mp.weixin.qq.com/s/oVHxYRMzJtD5t79uJ5jgWw
-
-媲美Pandas？一文入门Python的Datatable操作

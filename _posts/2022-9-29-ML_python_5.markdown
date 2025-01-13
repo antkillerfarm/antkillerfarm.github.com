@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Machine Learning之Python篇（五）, 可视化, TensorRT
+title:  Machine Learning之Python篇（五）, 可视化
 category: AI 
 ---
 
@@ -8,6 +8,38 @@ category: AI
 {:toc}
 
 # Machine Learning之Python篇
+
+https://mp.weixin.qq.com/s/5YHyM7gILvCItScvYYoANQ
+
+Python实现文字转语音功能
+
+https://mp.weixin.qq.com/s/mABDO5Sxv-Wc-gAgDQAbFQ
+
+用Python实现机器学习算法——简单的神经网络
+
+https://mp.weixin.qq.com/s/chT6mWmH1_zE-eH1vdB01A
+
+是技术也是艺术 使用geopandas玩转地图可视化
+
+https://mp.weixin.qq.com/s/JMcn3PRcWdT2PpE6PTSzfA
+
+基于geopandas的空间数据分析—geoplot篇(下)
+
+https://mp.weixin.qq.com/s/JV32uHpbSmE5wLl4aOhQpQ
+
+Python中最好用的6个地图可视化库
+
+https://mp.weixin.qq.com/s/6wp4rlBODJAkYf3O4O-2GA
+
+SciPy库以及图像高斯模糊实战
+
+https://mp.weixin.qq.com/s/8idFi0W7eJx9XDti48B9WQ
+
+Python自动生成表情包
+
+https://mp.weixin.qq.com/s/NJed2PbqBU8utLq8HQxctQ
+
+一个Python自动提取内容摘要的实践
 
 https://mp.weixin.qq.com/s/yBmpdtYJ0B5iq00dKvIprw
 
@@ -344,41 +376,3 @@ https://zhuanlan.zhihu.com/p/20756711
 https://mp.weixin.qq.com/s/XuoeOqGT_mJcFP08ZLq38g
 
 如何选择一个合适的数据图表？
-
-# TensorRT
-
-TensorRT：嵌入式设备上专用于DL inference的计算库。
-
-TensorRT还有个云端的集群版本：
-
-https://github.com/NVIDIA/tensorrt-inference-server
-
-参考：
-
-https://mp.weixin.qq.com/s/v8-JHd5tWm41WLqR-h6eKA
-
-使用TensorRT集成加速TensorFlow推理
-
-https://mp.weixin.qq.com/s/rMvhsi2vXxVC65C5Z4IXIw
-
-AI视频处理加速引擎TensorRT及Deepstream介绍
-
-https://zhuanlan.zhihu.com/p/35657027
-
-高性能深度学习支持引擎实战——TensorRT
-
-## CUDA-X AI
-
-CUDA-X AI是软件加速库的集合，这些库建立在CUDA之上，提供对于深度学习、机器学习和高性能计算必不可少的优化功能。这些库包括cuDNN（用于加速深度学习基元）、cuML（用于加速数据科学工作流程和机器学习算法）、TensorRT（用于优化受训模型的推理性能）、cuDF（用于访问 pandas 之类的数据科学 API）、cuGraph（用于在图形上执行高性能分析），以及超过13个的其他库。
-
-官网：
-
-https://www.nvidia.cn/technologies/cuda-x/
-
-## TensorRT-LLM
-
-TensorRT-LLM是NVIDIA推出的基于TensorRT的LLM推理工具。
-
-代码：
-
-https://github.com/NVIDIA/TensorRT-LLM/

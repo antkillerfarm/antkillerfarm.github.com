@@ -117,93 +117,33 @@ SBU和GUR的分工
 
 ---
 
+乌克兰公路：T字在现在这个季节就是烂泥路，P字是硬化路面，H是高速，条件最好。
+
+---
+
+Danylo Halytsky利沃夫国立医科大学是乌克兰最古老和最大的医科大学。Danylo Halytsky勋章专门颁发给有功的军医。
+
+---
+
+![](/images/img5/Vilkha.jpg)
+
+乌克兰本土生产的Vilkha地对地导弹，GPS和惯性制导使其最大有效范围>150 Km(90 mi)，圆概率误差(CEP)为10m（约30英尺）。
+
+https://www.zhihu.com/answer/3187117914
+
+从俄乌战争看，坦克受到的全向攻击越来越多，未来坦克设计，把超厚前装甲分散到上下左右是否明智？
+
+---
+
+在俄罗斯的私有化过程中，大量厂家的资产被变卖。乌拉尔厂的T-90生产线卖给了印度人，T-14早已停产。卡拉什尼科夫厂成了卡拉什尼科夫本人的私企。现在的俄军只能靠改装仓库里苏军留下的旧车来维持战斗力，比如T-72B3就由T-72B改装而成，T-80BVM改自T-80B，现在俄罗斯最大的坦克厂是废车库。
+
+---
+
 https://zhuanlan.zhihu.com/p/14348284249
 
 乌克兰秘密导弹计划
 
 ## 轶事
-
-开战第一天，还以为俄军至少也有比当年德三国防军更高的水平。
-
-开战第一周，觉得俄军至少也有比二战时期本子的军队更高的水平。
-
-开战半个月，难不成俄军连萨达姆的共和国卫队都不如？
-
-开战一个月，就算俄军再怎么拉胯，那也应该比卡扎菲的军队强吧？
-
-开战到今天，什么德三国防军、本子、萨达姆、卡扎菲？俄军也配？俄军就是马保国的水平。
-
----
-
-![](/images/img5/Weapons.jpg)
-
-2022.12.6 乌克兰军队节邮票：Weapons of Victory
-
-![](/images/img5/dog.webp)
-
-2022.7.28 包括拖拉机、扫雷、哥萨克武士、荣誉勋章等要素。
-
-![](/images/img5/Ukraine-2022-Invincible-FDC.webp)
-
-2022.8.24 独立日
-
-![](/images/img5/Glory_to_The_Armed_Forces_of_Ukraine.jpg)
-
-乌克兰武装力量
-
-![](/images/img5/Good_Evening.jpg)
-
-![](/images/img5/Victorious.jpg)
-
-这是17岁的Valeria Mikhailova的作品。
-
-![](/images/img5/worker.jpg)
-
-![](/images/img5/Warriors-of-light-Ukraine-2023-maxi.webp)
-
-![](/images/img5/Fighers_Evil.webp)
-
-![](/images/img5/2023-Weapons.jpg)
-
-![](/images/img5/iron-man-block.webp)
-
-铁路工人——从赫尔松到利沃夫
-
-![](/images/img5/Chernihiv.jpg)
-
-Chernihiv围城战（2022.2.24～2022.4.3）
-
-![](/images/img5/ukraine_weapon.jpg)
-
-![](/images/img5/Ukrposhta.jpg)
-
-邮递员
-
-![](/images/img6/Taxes-sheetlet.jpg)
-
-Taxes. Army. Victory
-
-![](/images/img6/Angels-of-mercy-Ukraine-2024-stamp-set.jpg)
-
-![](/images/img6/Vse-bude-UA_arkush.jpg)
-
-https://bittergrounds.com/2022s-striking-ukrainian-stamps
-
-2022年乌克兰邮票
-
-https://bittergrounds.com/ukraine-stamps-begin-another-year
-
-2023年乌克兰邮票
-
-https://bittergrounds.com/ukraine-2024-stamps-inspiration-resilience
-
-2024年乌克兰邮票
-
-https://zhuanlan.zhihu.com/p/626641522
-
-俄罗斯又赢了！仅用克里姆林宫大顶就骗取乌克兰发行邮票
-
----
 
 如果乌萝海军掌握着黑海海底地形数据，那他们完全可以直接采用地形匹配制导，让无人潜航器自己开到目标海域，自主索敌或者上浮接收控制中心信号。海底地形是会变化的，要持续监测，所以和平时期科考船和水文测量船比战斗舰艇敏感很多，驱离的优先级极高。
 

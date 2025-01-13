@@ -9,6 +9,26 @@ category: AI
 
 # Machine Learning之Python篇
 
+## datatable
+
+datatable相当于高级版的Pandas。
+
+它的优点：
+
+- 支持超过内存数量的大数据。
+
+- 多线程数据处理。
+
+官网：
+
+https://datatable.readthedocs.io/en/latest/
+
+参考：
+
+https://mp.weixin.qq.com/s/oVHxYRMzJtD5t79uJ5jgWw
+
+媲美Pandas？一文入门Python的Datatable操作
+
 ## Super Pandas
 
 https://mp.weixin.qq.com/s/2-Ayzmzo8tydDLoKpz1Ezw
@@ -442,29 +462,3 @@ https://zhuanlan.zhihu.com/p/100993681
 https://www.zhihu.com/question/29806566
 
 如何看待“地形图非线性保密处理技术”？
-
----
-
-https://github.com/neozhaoliang/pywonderland/tree/master/
-
-如何用Python画各种著名数学图案
-
-https://mp.weixin.qq.com/s/p69x5YyWxMulxx_OwX3nzQ
-
-TuChart：基于Tushare和Echarts的股票数据视觉化应用
-
-https://mp.weixin.qq.com/s/D_e8lxO3cx-dshEQ_zhfzQ
-
-如何利用散点图矩阵进行数据可视化
-
-https://mp.weixin.qq.com/s/dARWbR1ghho0yX02lNA-gw
-
-Python绘制histogram直方图
-
-https://github.com/minimaxir/stylecloud
-
-一款牛逼的词云工具，开箱即用
-
-https://mp.weixin.qq.com/s/tHNd6y2v7GXN2mSIv0qXlg
-
-手把手：一张图看清编程语言发展史，你也能用Python画出来！

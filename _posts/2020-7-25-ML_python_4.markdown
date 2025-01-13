@@ -11,6 +11,30 @@ category: AI
 
 ## 可视化（续）
 
+https://github.com/neozhaoliang/pywonderland/tree/master/
+
+如何用Python画各种著名数学图案
+
+https://mp.weixin.qq.com/s/p69x5YyWxMulxx_OwX3nzQ
+
+TuChart：基于Tushare和Echarts的股票数据视觉化应用
+
+https://mp.weixin.qq.com/s/D_e8lxO3cx-dshEQ_zhfzQ
+
+如何利用散点图矩阵进行数据可视化
+
+https://mp.weixin.qq.com/s/dARWbR1ghho0yX02lNA-gw
+
+Python绘制histogram直方图
+
+https://github.com/minimaxir/stylecloud
+
+一款牛逼的词云工具，开箱即用
+
+https://mp.weixin.qq.com/s/tHNd6y2v7GXN2mSIv0qXlg
+
+手把手：一张图看清编程语言发展史，你也能用Python画出来！
+
 https://mp.weixin.qq.com/s/7M_xbmDQIlSEB1TKN3fbQw
 
 4种更快更简单实现Python数据可视化的方法
@@ -388,35 +412,3 @@ https://mp.weixin.qq.com/s/Ke3K3i8paNlweciJepiuwQ
 https://mp.weixin.qq.com/s/Ij9L-swxx6gmaEH4YQb0tQ
 
 如何用Python检测视频真伪？
-
-https://mp.weixin.qq.com/s/5YHyM7gILvCItScvYYoANQ
-
-Python实现文字转语音功能
-
-https://mp.weixin.qq.com/s/mABDO5Sxv-Wc-gAgDQAbFQ
-
-用Python实现机器学习算法——简单的神经网络
-
-https://mp.weixin.qq.com/s/chT6mWmH1_zE-eH1vdB01A
-
-是技术也是艺术 使用geopandas玩转地图可视化
-
-https://mp.weixin.qq.com/s/JMcn3PRcWdT2PpE6PTSzfA
-
-基于geopandas的空间数据分析—geoplot篇(下)
-
-https://mp.weixin.qq.com/s/JV32uHpbSmE5wLl4aOhQpQ
-
-Python中最好用的6个地图可视化库
-
-https://mp.weixin.qq.com/s/6wp4rlBODJAkYf3O4O-2GA
-
-SciPy库以及图像高斯模糊实战
-
-https://mp.weixin.qq.com/s/8idFi0W7eJx9XDti48B9WQ
-
-Python自动生成表情包
-
-https://mp.weixin.qq.com/s/NJed2PbqBU8utLq8HQxctQ
-
-一个Python自动提取内容摘要的实践

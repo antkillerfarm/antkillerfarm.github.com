@@ -165,6 +165,10 @@ https://www.zhihu.com/question/453969562
 
 入手了《战锤3：全面战争》，地图更大更爽。
 
+https://www.zhihu.com/question/24538575
+
+有哪些类似《全面战争》的游戏？
+
 ## Red Alert
 
 “龟龟便利店”，是《红色警戒2》中的著名空耳，有的玩家可能听到的是“龟龟的败类带”，那都不重要，因为原文实际为“We will bury them”，是游戏里苏军犀牛坦克下令攻击时所发出台词（尤里的复仇版）。
@@ -210,25 +214,3 @@ https://mp.weixin.qq.com/s/jHXri6x6a1fPISEwlm_4Eg
 https://zhuanlan.zhihu.com/p/520804830
 
 红警2原版高手排名（2022.12）
-
-## OpenRA
-
-https://www.openra.net/
-
-OpenRA是一个红警开源并现代化的版本，加入了Attack-Move、战雾、单位升级之类的元素。目前支持Red Alert、Command & Conquer和Dune 2000等三款游戏，这三款正好也是当年WestWood用同一套引擎设计出来的。
-
-安装：
-
-```bash
-sudo apt install mono-complete libfuse2
-sudo chmod a+x OpenRA-Red-Alert-x86_64.AppImage
-./OpenRA-Red-Alert-x86_64.AppImage
-```
-
-值得注意的是该项目是从2007年开始的，并非基于EA在2020年开源的那份代码。
-
-有的PC的mesa驱动和游戏不兼容，解决办法：`export GALLIUM_THREAD=0`
-
-https://www.bilibili.com/read/cv6590012
-
-OpenRA官方蓝贴 2020.06.29 —— 关于目前进度的报告以及与命令与征服重制版的互动

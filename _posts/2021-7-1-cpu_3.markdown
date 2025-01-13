@@ -153,6 +153,10 @@ https://www.zhihu.com/question/662836115
 
 ---
 
+有说法Intel ME运行在Ring -3，BIOS或UEFI是-2，Hypervisor是-1，操作系统是0，你的办公软件运行在Ring 3。
+
+---
+
 https://mp.weixin.qq.com/s/Cij_95iLbAm0AEtrSb72_A
 
 关于CPU科普，这篇说得最详细

@@ -171,6 +171,8 @@ import sys
 print(sys.executable)
 ```
 
+实际上如果我们不使用`conda activate xxx`，而是直接使用`~/.conda/envs/xxx/bin/python`，也是完全一样的效果。
+
 参考：
 
 http://www.cnblogs.com/zhusleep/p/5616099.html
@@ -433,29 +435,3 @@ http://www.scipy.org/
 API参考：
 
 https://docs.scipy.org/doc/scipy/reference/
-
-- Gaussian filter
-
-`w = 2*int(truncate*sigma + 0.5) + 1`
-
-参考：
-
-https://stackoverflow.com/questions/25216382/gaussian-filter-in-scipy
-
-Gaussian filter in scipy
-
-https://mp.weixin.qq.com/s/vGS4U3g4eaPuQwBWh-lTiA
-
-机器学习核心：优化问题基于Scipy
-
-https://mp.weixin.qq.com/s/xN0mX9XWvVUpi0p5Tc6vLA
-
-利用SciPy求解非线性规划问题
-
-https://mp.weixin.qq.com/s/44RjMdARJMSM1_seImaSbg
-
-SciPy稀疏矩阵
-
-https://mp.weixin.qq.com/s/5g1WgWEOkA-38MXbkKUtWg
-
-Scipy使用大全

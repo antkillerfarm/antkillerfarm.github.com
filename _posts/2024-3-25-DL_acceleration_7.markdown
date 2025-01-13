@@ -133,48 +133,201 @@ https://mp.weixin.qq.com/s/ie2O5BPT-QxTRhK3S0Oa0Q
 
 剪枝需有的放矢，快手&罗切斯特大学提出基于能耗建模的模型压缩
 
-# 并行 & 框架 & 优化参考资源+
+# CUDA+
 
-https://mp.weixin.qq.com/s/IqjKdAlGYREqCR9XQB5N1A
+`vectorAdd<<<4096, 256, 0, s0>>>`表示内核函数vectorAdd将在GPU上以4096个块执行，每个块包含256个线程，总共有4096x256个线程。
 
-伯克利AI分布式框架Ray，兼容TensorFlow、PyTorch与MXNet
+0表示为这个内核函数分配的动态共享内存的大小，单位是字节。s0指定关联的stream。
 
-https://mp.weixin.qq.com/s/aNX_8UDYI_0u-MwMTYeqdQ
+---
 
-开发易、通用难，深度学习框架何时才能飞入寻常百姓家？
+遇到cudaXX找不到：
 
-https://mp.weixin.qq.com/s/UbAHB-uEIvqYZCB7xIAJTg
+```bash
+export CPATH=/usr/local/cuda/targets/x86_64-linux/include:$CPATH
+export LD_LIBRARY_PATH=/usr/local/cuda/targets/x86_64-linux/lib:$LD_LIBRARY_PATH
+export PATH=/usr/local/cuda/bin:$PATH
+```
 
-机器学习新框架Propel：使用JavaScript做可微分编程
+---
 
-https://mp.weixin.qq.com/s/Ctl65r4iZNEOBxiiX2I2eQ
+nvcc编译cuda程序，不运行device（GPU）部分代码的解决方案：指定GPU的arch。
 
-Momenta王晋玮：让深度学习更高效运行的两个视角
+`nvcc ./xxx.cu -o xxx -arch sm_90 -Wno-deprecated-gpu-targets`
 
-https://zhuanlan.zhihu.com/p/371499074
+---
 
-OneFlow——让每一位算法工程师都有能力训练GPT
+执行环境标识符：
 
-https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
+- `__global__`：在CPU调用父函数，子函数在GPU执行(异步)。用`__global__`修饰的一般就是内核(kernel)函数。
+- `__device__`：在GPU调用父函数，子函数在GPU执行。 由`__device__`修饰的函数可以被由`__global__`和`__device__`修饰的函数调用。
+- `__host__`：在CPU调用父函数，子函数在CPU执行。 
 
-Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
+---
 
-https://zhuanlan.zhihu.com/p/529388795
+https://developer.download.nvidia.cn/assets/cuda/files/NVIDIA-CUDA-Floating-Point.pdf
 
-训练千亿参数大模型，离不开四种GPU并行策略
+IEEE 754 mode(default): `-ftz=false -prec-div=true -prec-sqrt=true`
+fast mode: `-ftz=true -prec-div=false -prec-sqrt=false`
 
-https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
+在fast模式中，非规格化数将被转换为零，并且除法和平方根运算不会被计算到最接近的真实值的浮点数值。
 
-百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
+当浮点异常发生时，NVIDIA的GPU不会触发trap handlers，也没有指示上溢、下溢或者denormal的标志位。
 
-https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
+---
 
-分布式深度学习原理、算法详细介绍
+`#pragma unroll`指令建议编译器完全展开for循环。如果N是一个常量，编译器会尝试将循环体展开N次。如果N不是一个常量或者太大而无法完全展开，编译器可能会忽略这个指令，或者展开一定次数的迭代。
 
-https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
+---
 
-苹果发布Turi Create机器学习框架，5行代码开发图像识别
+因为GPU不支持常规的Kernel递归，CPU上的很多递归算法只能换思路后进行改写，不能直接按原思路实现。而随着动态并行（Dynamic Parallelism）的引入，GPU现在能直接在Kernel中启动Kernel了。
 
-https://mp.weixin.qq.com/s/jOVUPhrCBI9W9vPvD9eKYg
+https://zhuanlan.zhihu.com/p/674856090
 
-UC Berkeley提出新型分布式框架Ray：实时动态学习的开端
+CUDA动态并行详解（CDP2）
+
+---
+
+在“blocked”排列中，每个线程拥有一组连续的数据项；在“striped”排列中，所有线程拥有的数据项交错存储。
+
+---
+
+早期的GPU硬件上只有一个execution engine，因此，不论是哪个进程、哪个线程发起的kernel launch，都在同一个队列里排队。
+
+随着GPU的发展，GPU上面开始出现了多个execution engine。
+
+一个stream就对应于一个执行队列（加一个执行单元），用户可以自行决定是否把两个kernel分开放在两个队列里。
+
+https://zhuanlan.zhihu.com/p/699754357
+
+一文读懂cuda stream与cuda event
+
+---
+
+pytorch CUDA RadixSort call stack：
+
+```cpp
+MediumRadixSort
+should_use_small_sort
+sortKeyValueInplace
+launch_stable_sort_kernel
+segmented_sort_large_segments
+radix_sort_pairs_impl
+NO_ROCM(at_cuda_detail)::cub::DeviceRadixSort::SortPairs
+cub::DeviceRadixSort::SortPairs
+DeviceRadixSort::custom_radix_sort
+DispatchRadixSort::Dispatch
+DeviceRadixSortSingleTileKernel
+triple_chevron
+BlockRadixSort
+BlockRadixSortT(temp_storage.sort).SortBlockedToStriped
+RankKeys
+DescendingBlockRadixRank
+BlockRadixRank
+```
+
+---
+
+https://developer.nvidia.com/blog/even-easier-introduction-cuda/
+
+An Even Easier Introduction to CUDA
+
+http://ishare.iask.sina.com.cn/f/17211495.html
+
+深入浅出谈CUDA技术
+
+http://blog.csdn.net/xsc_c/article/category/2186063
+
+某人的并行计算专栏
+
+https://mp.weixin.qq.com/s/9D7uda3CV7volenhl-jchg
+
+推荐几个不错的CUDA入门教程
+
+https://mp.weixin.qq.com/s/bvNnzkOzGYYYewc3G9DOIw
+
+GPU是如何优化运行机器学习算法的？
+
+https://mp.weixin.qq.com/s/nAwxtOUi6HpIjVOREgEfaA
+
+CUDA编程入门极简教程
+
+https://mp.weixin.qq.com/s/-zdIWkuRZXhsLJmOZljOBw
+
+《基于GPU-多核-集群等并行化编程》
+
+https://mp.weixin.qq.com/s/bCb5VsH58JII886lpg9lvg
+
+如何在CUDA中为Transformer编写一个PyTorch自定义层
+
+https://mp.weixin.qq.com/s/OYSzol-vufiKPuU9YxtbuA
+
+矩阵相乘在GPU上的终极优化：深度解析Maxas汇编器工作原理
+
+https://zhuanlan.zhihu.com/p/358220419
+
+PyTorch自定义CUDA算子教程与运行时间分析
+
+https://zhuanlan.zhihu.com/p/358778742
+
+详解PyTorch编译并调用自定义CUDA算子的三种方式
+
+https://zhuanlan.zhihu.com/p/360441891
+
+熬了几个通宵，我写了份CUDA新手入门代码
+
+https://mp.weixin.qq.com/s/EZxO8IIBDJ4c7eQhUffc2w
+
+怎样节省2/3的GPU？爱奇艺vGPU的探索与实践
+
+https://mp.weixin.qq.com/s/3VjGpyXZSkJhy6sFPUsZzw
+
+GPU虚拟化，算力隔离，和qGPU
+
+https://zhuanlan.zhihu.com/p/383115932
+
+大佬是怎么优雅实现矩阵乘法的？
+
+https://zhuanlan.zhihu.com/p/410278370
+
+CUDA矩阵乘法终极优化指南
+
+https://www.zhihu.com/column/c_1437330196193640448
+
+深入浅出GPU优化
+
+https://www.zhihu.com/question/41060378
+
+自己写的CUDA矩阵乘法能优化到多快？
+
+https://zhuanlan.zhihu.com/p/559957579
+
+简单谈谈CUDA的访存合并
+
+https://zhuanlan.zhihu.com/p/565897763
+
+GPGPU编程模型之CUDA
+
+http://blog.csdn.net/augusdi/article/details/12833235
+
+这是一篇转帖的CUDA教程，原帖比较分散，不好看。
+
+https://zhuanlan.zhihu.com/p/544864997
+
+cuda中threadIdx、blockIdx、blockDim和gridDim的使用
+
+https://zhuanlan.zhihu.com/p/690717002
+
+一文读懂cuda代码编译流程
+
+https://zhuanlan.zhihu.com/p/690880124
+
+并不太短的CUDA入门（The Not So Short Introduction to CUDA）
+
+https://zhuanlan.zhihu.com/p/693690123
+
+一文读懂nvidia-smi背后的nvml库
+
+https://www.zhihu.com/question/445590537
+
+问个CUDA并行上的小白问题，既然SM只能同时处理一个WARP，那是不是有的SP处于闲置？

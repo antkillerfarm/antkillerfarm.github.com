@@ -11,18 +11,6 @@ category: math
 
 ## Weierstrass Function（续）
 
-![](/images/article/WeierstrassFunction.png)
-
-上图是Weierstrass Function图像。它是一类处处连续而处处不可导的实值函数，其表达式为：
-
-$$f(x)=\sum_{n=0} ^\infty a^n \cos(b^n \pi x)$$
-
-其中，$$0<a<1$$，b是奇数，且$$ab > 1+\frac{3}{2} \pi$$。最小的满足该条件的值是$$b=7$$。
-
-一般人会直觉上认为连续的函数必然是近乎可导的。即使不可导，所谓不可导的点也必然只占整体的一小部分。根据Weierstrass在他的论文中所描述，早期的许多数学家，包括高斯，都曾经假定连续函数不可导的部分是有限或可数的。这可能是因为直观上想象一个连续但在不可数个点上不可导的函数是很困难的事。
-
-Weierstrass Function的出现（1872年）说明了所谓的“病态”函数的存在性，改变了当时数学家对连续函数的看法。
-
 Weierstrass Function也被视为第一个分形函数（尽管分形（Fractal）的概念出现的相当晚（1973年），差不多过了整整一个世纪。）：将Weierstrass Function在任一点放大，所得到的局部图都和整体图形相似。因此，无论如何放大，函数图像都不会显得更加光滑，也不存在单调的区间。
 
 参考：
@@ -250,3 +238,35 @@ https://www.zhihu.com/question/412103180
 https://mp.weixin.qq.com/s/V5gymAXJBMmN0Nqbwte2hQ
 
 黎巴嫩港口大爆炸到底有多厉害？
+
+https://futureoflife.org/background/us-nuclear-targets/
+
+美国核弹目标清单（1959年）
+
+https://nuclearsecrecy.com/nukemap/
+
+一个核弹效果的评估网站
+
+https://nuclearsecrecy.com/missilemap/
+
+上述网站还有一个评估导弹的网页
+
+https://www.zhihu.com/question/36188584
+
+“大伊万”到底有多强？
+
+https://baijiahao.baidu.com/s?id=1672436291069334638
+
+纳粹德国为什么没有造出原子弹？就因为这个醉汉（醉汉回家问题）
+
+# 数学杂谈
+
+高斯给出了正十七边形可以尺规作图的理论可能性，然而他并不会做。第一个真正的正十七边形尺规作图法直到1825年才由约翰尼斯·厄钦格（Johannes Erchinger）给出。现在比较通行的做法是1893年Herbert William Richmond给出的。距离高斯给出证明（1801年），差不多过了100年。
+
+---
+
+陈景润只是证明了维诺格拉多夫的方法技巧已经做到了尽头。
+
+https://mp.weixin.qq.com/s/68K3L_pD7xfobr_jA1QgWA
+
+陈景润究竟为证明哥德巴赫猜想做出了哪些贡献？

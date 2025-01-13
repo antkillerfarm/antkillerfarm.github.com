@@ -194,42 +194,6 @@ https://blog.csdn.net/sinat_26917383/article/details/104503795
 
 NVIDIA的python-GPU算法生态
 
-## profile & debug
-
-NVIDIA System Management Interface (NSMI): 即nvidia-smi。
-
-NVIDIA Nsight Systems (NSYS)
-
-NVIDIA Data Center GPU Manager (DCGM)
-
-NVIDIA Management Library (NVML): NVML为GPU硬件数据提供了编程接口，开发者可以通过编程的方式访问GPU的各项数据，其中就包含GPU利用率，nvidia-smi和DCGM的背后就是NVML，推荐高级开发者使用。
-
-cuda的调试主要使用ncu和nsys两个工具。
-
-NCU侧重于内核级别的性能分析，例如显示不同block size内核函数的执行时间、执行的吞吐量、带宽分析等。
-
-而Nsight System提供了更全面的系统级性能分析。包括CPU和GPU之间的交互、内存操作、内核执行时间等。它可以帮助开发者发现性能瓶颈，例如GPU饥饿、不必要的GPU同步、CPU并行度不足等问题。还提供了对多节点性能的分析，这对于数据中心和集群环境中的性能优化尤为重要。
-
-nsys的UI版本的可执行文件名字叫做`nsys-ui`。
-
-`nsys profile /data/miniforge3/envs/torch_3.12/bin/python3.12 -m llm_train_te_2`
-
-https://fkong.tech/posts/2023-11-19-torch-gpu-util/
-
-如何把PyTorch的GPU利用率提升到100%?
-
-https://dev-discuss.pytorch.org/t/using-nsight-systems-to-profile-gpu-workload
-
-Using Nsight Systems to profile GPU workload
-
----
-
-显存被占用，但是nvidia-smi里看不到进程：
-
-`sudo fuser -v /dev/nvidia*`
-
-kill所有使用显卡的进程即可。
-
 ## cuLitho
 
 光刻是芯片制造过程中最复杂、最昂贵、最关键的环节，其成本约占整个硅片加工成本的1/3甚至更多。计算光刻模拟了光通过光学元件并与光刻胶相互作用时的行为，应用逆物理算法来预测掩膜板上的图案，以便在晶圆上生成最终图案。
