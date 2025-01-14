@@ -305,17 +305,3 @@ WN的特点：
 计算简单，易于理解。
 
 相比于其他两种方法，其训练起来不太稳定，非常依赖于输入数据的分布。
-
-参考：
-
-https://mp.weixin.qq.com/s/merU6hjBVuNN2C84Rp2RkA
-
-Weight Standarization：携手GN，超越BN
-
-http://mlexplained.com/2018/01/13/weight-normalization-and-layer-normalization-explained-normalization-in-deep-learning-part-2/
-
-Weight Normalization and Layer Normalization Explained
-
-https://zhuanlan.zhihu.com/p/114314389
-
-weight normalization原理和实现

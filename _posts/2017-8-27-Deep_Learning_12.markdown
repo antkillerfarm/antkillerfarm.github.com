@@ -11,6 +11,18 @@ category: DL
 
 ## depthwise separable convolution（续）
 
+上面展示的是1个input channel对应1个output channel的depthwise convolution，实际使用中，也可以1个input channel对应N个output channel，这里的N一般被称作multipler参数。
+
+更一般的，如果是N个input channel对应M个output channel的话，就是之前介绍过的Grouped Convolution了。
+
+论文：
+
+《Xception: Deep Learning with Depthwise Separable Convolutions》
+
+代码：
+
+https://github.com/fchollet/keras/blob/master/keras/applications/xception.py
+
 参考：
 
 http://blog.csdn.net/mao_xiao_feng/article/details/78003476

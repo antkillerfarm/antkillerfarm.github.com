@@ -7,6 +7,24 @@ category: DL
 * toc
 {:toc}
 
+# CNN进化史（续）
+
+https://mp.weixin.qq.com/s/MlEGnUPhomQn0oGGEpF9ig
+
+通俗易懂：图解10大CNN网络架构
+
+https://mp.weixin.qq.com/s/acvpHt4zVQPI0H5nHcg3Bw
+
+67页综述深度卷积神经网络架构：从基本组件到结构创新
+
+https://zhuanlan.zhihu.com/p/66215918
+
+CNN系列模型发展简述
+
+https://zhuanlan.zhihu.com/p/68411179
+
+CNN网络结构的发展
+
 # 花式卷积
 
 在DL中，卷积实际上是一大类计算的总称。除了原始的卷积、反卷积（Deconvolution）之外，还有各种各样的花式卷积。
@@ -242,15 +260,3 @@ Xception是Francois Chollet于2016年提出的。
 它包含一个深度方面的卷积（一个为每个通道单独执行的空间卷积，depthwise convolution），后面跟着一个逐点的卷积（一个跨通道的1×1卷积，pointwise convolution）。我们可以将其看作是首先求跨一个2D空间的相关性，然后再求跨一个1D空间的相关性。可以看出，这种2D+1D映射学起来比全 3D 映射更加简单。
 
 在ImageNet数据集上，Xception的表现稍稍优于Inception v3，而且在一个有17000类的更大规模的图像分类数据集上的表现更是好得多。而它的模型参数的数量仅和Inception一样多。
-
-上面展示的是1个input channel对应1个output channel的depthwise convolution，实际使用中，也可以1个input channel对应N个output channel，这里的N一般被称作multipler参数。
-
-更一般的，如果是N个input channel对应M个output channel的话，就是之前介绍过的Grouped Convolution了。
-
-论文：
-
-《Xception: Deep Learning with Depthwise Separable Convolutions》
-
-代码：
-
-https://github.com/fchollet/keras/blob/master/keras/applications/xception.py

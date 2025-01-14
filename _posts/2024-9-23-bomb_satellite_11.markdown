@@ -256,3 +256,7 @@ https://zhuanlan.zhihu.com/p/632868330
 https://www.zhihu.com/answer/3532726779
 
 樊承德老先生的故事
+
+https://zhuanlan.zhihu.com/p/16294849929
+
+我的时隔64年的两张照片

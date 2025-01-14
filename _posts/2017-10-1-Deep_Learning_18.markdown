@@ -9,6 +9,44 @@ category: DL
 
 # 自动求导（续）
 
+## 参考
+
+https://mp.weixin.qq.com/s/7Z2tDhSle-9MOslYEUpq6g
+
+从概念到实践，我们该如何构建自动微分库
+
+https://mp.weixin.qq.com/s/bigKoR3IX_Jvo-re9UjqUA
+
+机器学习之——自动求导
+
+https://www.jianshu.com/p/4c2032c685dc
+
+自动求导框架综述
+
+http://txshi-mt.com/2018/10/04/NMT-Tutorial-3b-Autodiff/
+
+自动微分
+
+https://mp.weixin.qq.com/s/WiZ00mkEB7CND3VyIM5Swg
+
+最新《自动微分手册》77页pdf
+
+https://mp.weixin.qq.com/s/xXwbV46-kTobAMRwfKyk_w
+
+自动求导--Deep Learning框架必备技术二三事
+
+https://mp.weixin.qq.com/s/f0xFfA1inOVOdJnSZR4k6Q
+
+自动微分技术
+
+https://zhuanlan.zhihu.com/p/79801410
+
+PyTorch的自动求导机制详细解析，PyTorch的核心魔法
+
+https://zhuanlan.zhihu.com/p/29904755
+
+Autograd:PyTorch中的梯度计算
+
 https://zhuanlan.zhihu.com/p/69294347
 
 PyTorch的Autograd
@@ -304,35 +342,3 @@ https://mp.weixin.qq.com/s/kbqTHIOzAj1aERl4tm-kVA
 https://mp.weixin.qq.com/s/J50L6hESBROfT8IIAnofQQ
 
 Yan LeCun109页最新报告：图嵌入, 内容理解，自监督学习
-
-https://mp.weixin.qq.com/s/s440gdbUhLP41rLPjfgsmQ
-
-Yann Lecun自监督学习指南（附114页Slides全文下载）
-
-https://mp.weixin.qq.com/s/foP1xSa5G8oNtAv_pI6AqQ
-
-深度神经网络自监督视觉特征学习综述
-
-https://mp.weixin.qq.com/s/sEHA6fb0XIXQWsmJGf3fTA
-
-DeepMind发布自监督学习最新教程，附122页全文资料下载
-
-https://mp.weixin.qq.com/s/-JoB1MJ0ZpkYLlToS7-AOA
-
-牛津大学&DeepMind：自监督学习教程，141页ppt
-
-https://mp.weixin.qq.com/s/HfqH-b8x8SsE6zb8pcF3Og
-
-自监督学习（Self-Supervised Learning） 2018-2020年发展综述
-
-https://mp.weixin.qq.com/s/2Wm6eQodwlc5XkjGKqhwCg
-
-南京大学周志华教授综述论文：弱监督学习
-
-https://mp.weixin.qq.com/s/_3DqXBpZhstVv6BkBR4oag
-
-自监督学习综述
-
-https://mp.weixin.qq.com/s/aCWAU2RXk9fTzfFqOyjqUw
-
-能自主学习的人工突触，为无监督学习开辟新的路径

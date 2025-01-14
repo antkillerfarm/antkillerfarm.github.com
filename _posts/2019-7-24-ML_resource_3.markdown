@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ML参考资源（三）
+title:  ML参考资源（三）, Transformer Engine
 category: resource 
 ---
 
@@ -282,3 +282,99 @@ https://mp.weixin.qq.com/s/kWJZA0acOPi46c2_Gd9aeA
 https://mp.weixin.qq.com/s/b-w_jUqxGR7hY19auiar-A
 
 FAIR发布自监督训练库VISSL
+
+# Transformer Engine
+
+Transformer Engine（TE）是一种专门用于加速Transformer模型在NVIDIA GPU上执行的库。它包括在Hopper和Ada架构GPU上使用8位浮点（FP8）精度的能力。
+
+`pip install transformer_engine[pytorch]`
+
+注意：中括号里的内容不可省略。
+
+安装的时候，依赖中有几个包（flash-attn、flashattn_hopper（on H100））需要本地的cuda编译，且耗时较长，大概要十分钟的样子。
+
+代码：
+
+https://github.com/NVIDIA/TransformerEngine
+
+---
+
+TE和目前流行的Hugging Face的集成，主要参考NV官方的文档：
+
+https://docs.nvidia.com/deeplearning/transformer-engine-releases/release-1.12/user-guide/examples/te_llama/tutorial_accelerate_hf_llama_with_te.html
+
+Accelerating a Hugging Face Llama 2 and Llama 3 models with Transformer Engine
+
+其核心思想使用TELlamaForCausalLM替换掉LlamaForCausalLM：
+
+```python
+AutoConfig.from_pretrained("llama2")
+model = TELlamaForCausalLM(config=config)
+```
+
+TELlamaForCausalLM由于使用KV cache的缘故，有些torch.Tensor被降级为io.BytesIO，导致transformers的一些应用产生问题，可以用类似以下手段过滤一下：
+
+```python
+if isinstance(tensor, torch.Tensor):
+  do_sth()
+```
+
+---
+
+TE的另一项重要特性是FP8的使用。这里需要借助Hugging Face的Accelerator库：
+
+```python
+fp8_kwarg_handler = [FP8RecipeKwargs(backend="te")]
+accelerator = Accelerator(kwargs_handlers=fp8_kwarg_handler)
+
+model, optimizer, tokenized_datasets = accelerator.prepare(
+    model, optimizer, tokenized_datasets
+)
+```
+
+从上例也可学习在已有代码中加入Accelerator的套路——将原有各对象作为参数传入Accelerator库，然后返回各自类型的被修改后的对象。
+
+---
+
+```python
+from transformer_engine.pytorch.cpp_extensions.fused_attn import (
+    fused_attn_fwd_qkvpacked,
+    fused_attn_bwd_qkvpacked,
+  ...
+)
+
+return CUDAExtension(
+  name="transformer_engine_torch",
+  ...
+)
+
+std::vector<at::Tensor> fused_attn_fwd_qkvpacked
+if (qkv_type == DType::kFloat8E4M3 || qkv_type == Dtype::kFloat8E5M2)
+nvte_fused_attn_fwd_qkvpacked
+fused_attn_fp8_fwd_qkvpacked
+fused_attn::fused_attn_fp8_fwd_impl
+cudnn_frontend::OperationGraphBuilder
+cudnn_frontend::ExecutionPlanBuilder
+```
+
+---
+
+tensor_format里的sbhd、bshd和thd是用于描述Q、K、V的内存布局格式：
+
+- s：序列长度（sequence length）
+- b：批量大小（batch size）
+- h：注意力头的数量（number of attention heads）
+- d：每个头的维度（head dimension）
+- t：批量中总序列数，即$$t = sum(s_i)$$，其中i从0到b-1。
+
+---
+
+permute操作用于根据给定的索引对输入张量中的元素进行重排。具体来说，它将具有相同索引的元素分组在一起。这在MoE模型中用于将输入张量中的不同专家的输入进行分组，以便每个专家可以独立处理其输入。
+
+---
+
+参考：
+
+https://developer.nvidia.com/zh-cn/blog/nvidia-gpu-fp8-training-inference/
+
+NVIDIA GPU架构下的FP8训练与推理

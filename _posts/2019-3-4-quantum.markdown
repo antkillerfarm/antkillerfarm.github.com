@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  量子计算, 遗传 & 进化 & 模拟退火算法
+title:  量子计算, 仿生/仿物算法
 category: resource 
 ---
 
@@ -140,7 +140,11 @@ https://mp.weixin.qq.com/s/NRI6HhhpHiRbLy44FMKtCg
 
 敲开图灵之门：CS大四学生长文畅谈量子计算机的“前世、今生、未来”
 
-# 遗传 & 进化 & 模拟退火算法
+# 仿生/仿物算法
+
+这里介绍一些仿生物过程/仿物理过程的智能算法。
+
+## 遗传进化算法
 
 http://blog.csdn.net/u010945683/article/details/40987331
 
@@ -266,13 +270,11 @@ https://mp.weixin.qq.com/s/Fl6nU3xVK80tmq2uvjKf4A
 
 用N.E.A.T遗传算法玩FlappyBird
 
-https://mp.weixin.qq.com/s/95h7WQHGP-glfyO6-S9S8g
-
-什么是鸟群算法
-
 https://mp.weixin.qq.com/s/j9BGw_oCg7eyzg4w4j681w
 
 生物老师：数学老师，你走开，这道题我来解（遗传算法）
+
+## 模拟退火算法
 
 https://mp.weixin.qq.com/s/egmodqeThnw5H7DwKRwQbw
 
@@ -286,56 +288,26 @@ https://zhuanlan.zhihu.com/p/266874840
 
 模拟退火算法详解
 
-# 安全=
+## 蚁群算法
 
-https://mp.weixin.qq.com/s/yCB2R8QPWNp2lJrQD4l_hw
+蚁群算法（Ant Colony Optimization，简称ACO）是一种模拟自然界中蚂蚁寻找食物路径行为的优化算法，主要用于解决组合优化问题。它的灵感来源于意大利学者Marco Dorigo在1992年提出的蚂蚁系统模型。
 
-聊聊移动端安全加固
+https://blog.csdn.net/m0_73804764/article/details/140304201
 
-https://zhuanlan.zhihu.com/p/28528257
+蚁群算法（Ant Colony Optimization，ACO）讲解+代码实现
 
-美国人写了一个只靠U盘传播的病毒，毁了伊朗的核计划
+## 樽海鞘群算法
 
-https://www.sohu.com/a/250882983_355019
+樽海鞘是一种海洋无脊椎动物，身体呈桶状且几乎完全透明，以水中浮游植物为食，通过吸入和喷出海水完成在水中移动。在深海中，樽海鞘以一种链式的群行为进行移动和觅食，这种“奇特”的群行为引起了研究者的兴趣。
 
-一个42KB的文件，解压完其实是个4.5PB的“炸弹”
+樽海鞘群算法( salp swarm algorithm，SSA)是Seyedali Mirjalili等于2017年提出的一种新型智能优化算法。
 
-https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651748921&idx=2&sn=04ee8977545923ad9b485ba236d7a126
+https://blog.csdn.net/u011835903/article/details/107767869
 
-前端安全系列之一：如何防止XSS攻击？
+智能优化算法：樽海鞘群优化算法
 
-http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
+## 其他
 
-理解OAuth 2.0
+https://mp.weixin.qq.com/s/95h7WQHGP-glfyO6-S9S8g
 
-https://my.oschina.net/u/4231722/blog/3154805
-
-IM的扫码登录功能如何实现？一文搞懂主流的扫码登录技术原理
-
-https://mp.weixin.qq.com/s/QsKceFcxELbUDSbehs8QpQ
-
-解读https的正确姿势
-
-https://www.cnblogs.com/linianhui/category/929878.html
-
-一个认证授权方面的专栏
-
-https://mp.weixin.qq.com/s/OLg_wocXJz7VGDabTtxdWQ
-
-Web登录很简单？开玩笑！
-
-https://mp.weixin.qq.com/s/agS2-wu6HGO__QfbIt7Esw
-
-数字签名是什么？
-
-https://www.zhihu.com/question/24215752
-
-svchost.exe为什么会占用那么多CPU？
-
-https://pcedu.pconline.com.cn/softnews/yejie/1012/2311892.html
-
-最大隐私泄露事件QA 金山是如何发现？
-
-https://zhuanlan.zhihu.com/p/384966998
-
-隐私计算技术之可信执行环境（TEE）
+什么是鸟群算法

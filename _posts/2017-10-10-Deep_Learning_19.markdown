@@ -9,6 +9,38 @@ category: DL
 
 # 无监督/半监督/自监督深度学习（续）
 
+https://mp.weixin.qq.com/s/s440gdbUhLP41rLPjfgsmQ
+
+Yann Lecun自监督学习指南（附114页Slides全文下载）
+
+https://mp.weixin.qq.com/s/foP1xSa5G8oNtAv_pI6AqQ
+
+深度神经网络自监督视觉特征学习综述
+
+https://mp.weixin.qq.com/s/sEHA6fb0XIXQWsmJGf3fTA
+
+DeepMind发布自监督学习最新教程，附122页全文资料下载
+
+https://mp.weixin.qq.com/s/-JoB1MJ0ZpkYLlToS7-AOA
+
+牛津大学&DeepMind：自监督学习教程，141页ppt
+
+https://mp.weixin.qq.com/s/HfqH-b8x8SsE6zb8pcF3Og
+
+自监督学习（Self-Supervised Learning） 2018-2020年发展综述
+
+https://mp.weixin.qq.com/s/2Wm6eQodwlc5XkjGKqhwCg
+
+南京大学周志华教授综述论文：弱监督学习
+
+https://mp.weixin.qq.com/s/_3DqXBpZhstVv6BkBR4oag
+
+自监督学习综述
+
+https://mp.weixin.qq.com/s/aCWAU2RXk9fTzfFqOyjqUw
+
+能自主学习的人工突触，为无监督学习开辟新的路径
+
 https://mp.weixin.qq.com/s/qaLQK3uzaeyp68AbL0aOOQ
 
 怎么在视频标注上省钱？这里有一个面向视频推荐的多视图主动学习
@@ -298,31 +330,3 @@ https://mp.weixin.qq.com/s/eeA5RZh35BvlFt45ywVvFg
 https://mp.weixin.qq.com/s/h-MYTNTLy7ToPPEZ2JVHpw
 
 阿里巴巴论文提出Advanced LSTM：关于更优时间依赖性刻画在情感识别方面的应用
-
-https://mp.weixin.qq.com/s/pv3gQfCayGmsmGKLbMIFpA
-
-神奇！只有遗忘门的LSTM性能优于标准LSTM
-
-https://mp.weixin.qq.com/s/8BPZ_M8EGk3KxkSleYWSNw
-
-训练可解释、可压缩、高准确率的LSTM
-
-https://hanxiao.github.io/2018/06/24/4-Encoding-Blocks-You-Need-to-Know-Besides-LSTM-RNN-in-Tensorflow/
-
-4 Sequence Encoding Blocks You Must Know Besides RNN/LSTM in Tensorflow
-
-https://mp.weixin.qq.com/s/zMCBQ2D21HoDcDgDolmGMA
-
-上海交大：基于近似随机Dropout的LSTM训练加速
-
-https://mp.weixin.qq.com/s/wPYd2jLUPzlPwIZkb_wSbA
-
-深度递归LSTM-LRP非线性时变多因子模型
-
-https://mp.weixin.qq.com/s/3djAWJs6ecDdPSpQMxqmrg
-
-清华、李飞飞团队等提出强记忆力E3D-LSTM网络
-
-https://mp.weixin.qq.com/s/__qC6Wzy4jaGNGzWr3eOIg
-
-引入额外门控运算，LSTM稍做修改，性能便堪比Transformer-XL

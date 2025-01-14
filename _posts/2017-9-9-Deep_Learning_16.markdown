@@ -9,6 +9,24 @@ category: DL
 
 # Style Transfer
 
+## 早期方法
+
+图像风格迁移这个领域，在2015年之前，连个合适的名字都没有，因为每个风格的算法都是各管各的，互相之间并没有太多的共同之处。
+
+比如油画风格迁移，里面用到了7种不同的步骤来描述和迁移油画的特征。又比如头像风格迁移里用到了三个步骤来把一种头像摄影风格迁移到另一种上。以上十个步骤里没一个重样的。
+
+可以看出这时的图像风格处理的研究，基本都是各自为战，捣鼓出来的算法也没引起什么注意。
+
+![](/images/img2/style_transfer_3.jpg)
+
+上图是一个油画风格迁移的pipe line。
+
+在实践过程中，人们又发现**图像的纹理可以在一定程度上代表图像的风格**。下文如无特指，纹理/风格均为同义词。
+
+这又引入了和风格迁移相关的另一个领域——纹理生成。这个时期，该领域虽然已经有了一些成果，但是通用性也比较差。
+
+早期纹理生成的主要思想：**纹理可以用图像局部特征的统计模型来描述。**然而手工建模毕竟耗时耗力。。。
+
 ## CNN的纹理特征
 
 在进行神经风格迁移之前，我们先来从可视化的角度看一下卷积神经网络每一层到底是什么样子？它们各自学习了哪些东西。
@@ -232,31 +250,3 @@ https://github.com/DmitryUlyanov/texture_nets
 3）迭代优化上述两个loss，得到训练好的G网络。
 
 4）Inference时，直接将图片a输入G网络，就得到了风格变换后的图片G(a)。
-
-## Perceptual Losses for Real-Time Style Transfer and Super-Resolution
-
-这篇论文是李飞飞组的Justin Johnson的作品。
-
-Justin Johnson的个人主页：
-
-https://cs.stanford.edu/people/jcjohns/
-
-代码：
-
-https://github.com/OlavHN/fast-neural-style
-
-https://github.com/lengstrom/fast-style-transfer/
-
-![](/images/img2/RTST.png)
-
-可以看出该论文的方法和Texture Networks基本一致，差别仅在于generator network和descriptor network的结构，略有不同而已。这里不再赘述。
-
-参考：
-
-https://blog.csdn.net/Hungryof/article/details/61195783
-
-超越fast style transfer---任意风格图和内容图0.1秒出结果
-
-https://zhuanlan.zhihu.com/p/35798776
-
-快速风格迁移（fast-style-transfer）

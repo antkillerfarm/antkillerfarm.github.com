@@ -7,7 +7,33 @@ category: DL
 * toc
 {:toc}
 
-# CNN进化史（续）
+# CNN进化史
+
+## GoogleNet（续）
+
+原始的GoogleNet也被称作Inception-v1。在后面的几年，GoogleNet还提出了几种改进的版本，最新的一个是Inception-v4（2016.8）。
+
+论文：
+
+《Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning》
+
+代码：
+
+https://github.com/BVLC/caffe/tree/master/models/bvlc_googlenet
+
+Inception系列的改进方向基本都集中在构建不同的Inception模型上。
+
+GoogleNet的另一个改进是**减少了全连接层**（Full Connection, FC），这是减少模型参数的一个重要改进。事实上，在稍后的实践中，人们发现去掉VGG的第一个FC层，对于效果几乎没有任何影响。
+
+参考：
+
+https://mp.weixin.qq.com/s/ceOxFS3Iwf3iLWY73ueoNw
+
+GoogLeNet中的inception结构，你看懂了吗
+
+http://www.cnblogs.com/Allen-rg/p/5833919.html
+
+GoogLeNet学习心得
 
 ## SqueezeNet
 
@@ -242,19 +268,3 @@ LeCun亲授的深度学习入门课：从飞行器的发明到卷积神经网络
 https://mp.weixin.qq.com/s/z26bXb8eAelrwj6Tkvm_-A
 
 卷积神经网络常见架构AlexNet、ZFNet、VGGNet、GoogleNet和ResNet模型的理论与实践
-
-https://mp.weixin.qq.com/s/MlEGnUPhomQn0oGGEpF9ig
-
-通俗易懂：图解10大CNN网络架构
-
-https://mp.weixin.qq.com/s/acvpHt4zVQPI0H5nHcg3Bw
-
-67页综述深度卷积神经网络架构：从基本组件到结构创新
-
-https://zhuanlan.zhihu.com/p/66215918
-
-CNN系列模型发展简述
-
-https://zhuanlan.zhihu.com/p/68411179
-
-CNN网络结构的发展

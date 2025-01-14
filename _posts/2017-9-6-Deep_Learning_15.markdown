@@ -7,7 +7,23 @@ category: DL
 * toc
 {:toc}
 
-# Normalization进阶（续）
+# Normalization进阶
+
+## Weight Normalization（续）
+
+参考：
+
+https://mp.weixin.qq.com/s/merU6hjBVuNN2C84Rp2RkA
+
+Weight Standarization：携手GN，超越BN
+
+http://mlexplained.com/2018/01/13/weight-normalization-and-layer-normalization-explained-normalization-in-deep-learning-part-2/
+
+Weight Normalization and Layer Normalization Explained
+
+https://zhuanlan.zhihu.com/p/114314389
+
+weight normalization原理和实现
 
 ## Cosine Normalization
 
@@ -275,21 +291,3 @@ https://mp.weixin.qq.com/s/54HQU3B4cSdRb1Z4srSfJg
 2.就算解决了第1个问题，如何生成一批同一风格的图片也是一个大问题。画家可是稀缺资源啊。
 
 因此，Style Transfer问题的关键点就在于：如何利用仅有的1张风格图片，将其风格迁移到其他图片上。
-
-## 早期方法
-
-图像风格迁移这个领域，在2015年之前，连个合适的名字都没有，因为每个风格的算法都是各管各的，互相之间并没有太多的共同之处。
-
-比如油画风格迁移，里面用到了7种不同的步骤来描述和迁移油画的特征。又比如头像风格迁移里用到了三个步骤来把一种头像摄影风格迁移到另一种上。以上十个步骤里没一个重样的。
-
-可以看出这时的图像风格处理的研究，基本都是各自为战，捣鼓出来的算法也没引起什么注意。
-
-![](/images/img2/style_transfer_3.jpg)
-
-上图是一个油画风格迁移的pipe line。
-
-在实践过程中，人们又发现**图像的纹理可以在一定程度上代表图像的风格**。下文如无特指，纹理/风格均为同义词。
-
-这又引入了和风格迁移相关的另一个领域——纹理生成。这个时期，该领域虽然已经有了一些成果，但是通用性也比较差。
-
-早期纹理生成的主要思想：**纹理可以用图像局部特征的统计模型来描述。**然而手工建模毕竟耗时耗力。。。

@@ -187,6 +187,10 @@ Device to Device (DtoD)：指的是在单个GPU内部进行的内存拷贝。
 
 Peer to Peer (PtoP)：指的是从一个GPU到另一个GPU的内存拷贝，这种情况仅发生在多GPU系统中。
 
+RR (Read-Read)：表示连续的读操作。
+
+RW (Read-Write)：表示读写混合操作。
+
 ## Warp
 
 一个SP可以执行一个thread，但是实际上并不是所有的thread能够在同一时刻执行。Nvidia把32个threads组成一个warp，warp是调度和运行的基本单元。warp中所有threads并行的执行相同的指令。

@@ -139,6 +139,17 @@ http://blog.csdn.net/hjimce/article/details/50414467
 
 Maxout网络学习
 
+## SReLU
+
+![](/images/img6/SReLU.png)
+
+$$\text{SReLU}(x) = 
+\begin{cases} 
+t_l + a_l (x - t_l) & \text{if } x \leq t_l \\
+x & \text{if } t_l < x < t_r \\
+t_r + a_r (x - t_r) & \text{if } x \geq t_r 
+\end{cases}$$
+
 ## GLU
 
 Gated Linear Unit是由facebook提出的：
@@ -253,6 +264,32 @@ SwiGLU是2019年提出的，它结合了SWISH和GLU两种者的特点。
 
 $$\text{SwiGLU}(x,W,V,b,c)=\text{Swish}(\boldsymbol{W}\boldsymbol{x}+\boldsymbol{b})\otimes \sigma(\boldsymbol{V}\boldsymbol{x}+\boldsymbol{c})$$
 
+## GeGLU
+
+同样的，GeGLU = GELU + GLU
+
+$$\text{GeGLU}(x, W, V, b, c) = \text{GELU}(xW + b) \otimes (xV + c)$$
+
+## qGELU
+
+qGELU是一种量化版本的 GELU。qGELU通过使用位移操作来近似GELU的计算，提高了计算效率。qGELU在8位量化时表现良好，但在6位和4位量化时会开始低估输出值。
+
+$$\text{qGELU}(x) = \text{ReLU4}(x) \cdot \left( \frac{x + 3}{6} \right)$$
+
+$$\text{ReLU4}(x) = \max(\min(x + \text{shift}, 4), 0)$$
+
+shift是一个常数，通常为3。
+
+## ReGLU
+
+ReGLU = ReLU + GLU
+
+$$\text{ReGLU}(x, W, V, b, c) = \text{ReLU}(xW + b) \otimes (xV + c)$$
+
+## SReGLU
+
+$$\text{SReGLU}(x, W, V, b, c, s) = s \cdot \text{ReLU}(xW + b) \otimes (xV + c)$$
+
 ## 其他激活函数
 
 ### hard tanh
@@ -330,41 +367,3 @@ $$CELU(x) = \max(0,x) + \min(0, \alpha * (\exp(x/\alpha) - 1))$$
 ### CRELU
 
 $$CReLU(x)= Concat[ ReLU(x), ReLU(−x) ]$$
-
-## 参考
-
-https://zhuanlan.zhihu.com/p/22142013
-
-深度学习中的激活函数导引
-
-http://blog.csdn.net/u012328159/article/details/69898137
-
-几种常见的激活函数
-
-https://mp.weixin.qq.com/s/Hic01RxwWT_YwnErsJaipQ
-
-什么是激活函数？
-
-https://mp.weixin.qq.com/s/4gElB_8AveWuDVjtLw5JUA
-
-深度学习激活函数大全
-
-https://mp.weixin.qq.com/s/7DgiXCNBS5vb07WIKTFYRQ
-
-从ReLU到Sinc，26种神经网络激活函数可视化
-
-http://www.cnblogs.com/ymjyqsx/p/6294021.html
-
-PReLU与ReLU
-
-http://www.cnblogs.com/pinard/p/6437495.html
-
-深度神经网络（DNN）损失函数和激活函数的选择
-
-https://mp.weixin.qq.com/s/VSRtjIH1tvAVhGAByEH0bg
-
-21种NLP任务激活函数大比拼：你一定猜不到谁赢了
-
-https://www.cnblogs.com/makefile/p/activation-function.html
-
-激活函数(ReLU, Swish, Maxout)

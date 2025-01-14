@@ -9,6 +9,34 @@ category: DL
 
 # Style Transfer（续）
 
+## Perceptual Losses for Real-Time Style Transfer and Super-Resolution
+
+这篇论文是李飞飞组的Justin Johnson的作品。
+
+Justin Johnson的个人主页：
+
+https://cs.stanford.edu/people/jcjohns/
+
+代码：
+
+https://github.com/OlavHN/fast-neural-style
+
+https://github.com/lengstrom/fast-style-transfer/
+
+![](/images/img2/RTST.png)
+
+可以看出该论文的方法和Texture Networks基本一致，差别仅在于generator network和descriptor network的结构，略有不同而已。这里不再赘述。
+
+参考：
+
+https://blog.csdn.net/Hungryof/article/details/61195783
+
+超越fast style transfer---任意风格图和内容图0.1秒出结果
+
+https://zhuanlan.zhihu.com/p/35798776
+
+快速风格迁移（fast-style-transfer）
+
 ## 其他
 
 原版的neural style是用Gram矩阵来进行匹配风格，但是也有用其他的。例如：
@@ -279,41 +307,3 @@ Hessian Vector Product,HVP
 https://blog.csdn.net/apache/article/details/113925886
 
 Pytorch,Tensorflow Autograd/AutoDiff nutshells: Jacobian,Gradient,Hessian,JVP,VJP,etc
-
-## 参考
-
-https://mp.weixin.qq.com/s/7Z2tDhSle-9MOslYEUpq6g
-
-从概念到实践，我们该如何构建自动微分库
-
-https://mp.weixin.qq.com/s/bigKoR3IX_Jvo-re9UjqUA
-
-机器学习之——自动求导
-
-https://www.jianshu.com/p/4c2032c685dc
-
-自动求导框架综述
-
-http://txshi-mt.com/2018/10/04/NMT-Tutorial-3b-Autodiff/
-
-自动微分
-
-https://mp.weixin.qq.com/s/WiZ00mkEB7CND3VyIM5Swg
-
-最新《自动微分手册》77页pdf
-
-https://mp.weixin.qq.com/s/xXwbV46-kTobAMRwfKyk_w
-
-自动求导--Deep Learning框架必备技术二三事
-
-https://mp.weixin.qq.com/s/f0xFfA1inOVOdJnSZR4k6Q
-
-自动微分技术
-
-https://zhuanlan.zhihu.com/p/79801410
-
-PyTorch的自动求导机制详细解析，PyTorch的核心魔法
-
-https://zhuanlan.zhihu.com/p/29904755
-
-Autograd:PyTorch中的梯度计算

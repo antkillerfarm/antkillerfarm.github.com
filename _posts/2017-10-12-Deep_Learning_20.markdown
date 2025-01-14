@@ -1,11 +1,41 @@
 ---
 layout: post
-title:  深度学习（二十）——Ultra Deep Network, 数据增强
+title:  深度学习（二十）——Ultra Deep Network
 category: DL 
 ---
 
 * toc
 {:toc}
+
+# LSTM进阶（续）
+
+https://mp.weixin.qq.com/s/pv3gQfCayGmsmGKLbMIFpA
+
+神奇！只有遗忘门的LSTM性能优于标准LSTM
+
+https://mp.weixin.qq.com/s/8BPZ_M8EGk3KxkSleYWSNw
+
+训练可解释、可压缩、高准确率的LSTM
+
+https://hanxiao.github.io/2018/06/24/4-Encoding-Blocks-You-Need-to-Know-Besides-LSTM-RNN-in-Tensorflow/
+
+4 Sequence Encoding Blocks You Must Know Besides RNN/LSTM in Tensorflow
+
+https://mp.weixin.qq.com/s/zMCBQ2D21HoDcDgDolmGMA
+
+上海交大：基于近似随机Dropout的LSTM训练加速
+
+https://mp.weixin.qq.com/s/wPYd2jLUPzlPwIZkb_wSbA
+
+深度递归LSTM-LRP非线性时变多因子模型
+
+https://mp.weixin.qq.com/s/3djAWJs6ecDdPSpQMxqmrg
+
+清华、李飞飞团队等提出强记忆力E3D-LSTM网络
+
+https://mp.weixin.qq.com/s/__qC6Wzy4jaGNGzWr3eOIg
+
+引入额外门控运算，LSTM稍做修改，性能便堪比Transformer-XL
 
 # Ultra Deep Network
 
@@ -151,6 +181,44 @@ $$h^k=g^k\left[\sum_{t=0}^{k-1}f_t^k(h^t)\right]$$
 
 其中，$$h^t$$表示t时刻的隐层状态；索引k表示当前时刻；$$x^t$$表示t时刻的输入；$$f_t^k(⋅)$$表示特征提取；$$g^k$$表示对提取特征做输出前的变换。
 
+如果$$f_t^k(\cdot)$$和$$g^k(\cdot)$$每个Step都共享，那么就是HORNN，如果只有$$f_t^k(\cdot)$$共享，那么就是ResNet，两者都不共享，那就是DenseNet。
+
+![](/images/img2/DPN.png)
+
+上图展示的是ResNet和DenseNet的示意图。图中用线填充的柱状体，表示的是主干结点的tensor的大小。
+
+ResNet由于跨层和主干之间是element-wise的加法运算，因此每个主干结点的tensor都是一样大的。
+
+而DenseNet的跨层和主干之间是Concatenation运算，因此主干越往下，tensor越大。
+
+通过上面的分析，我们可以认识到 ：
+
+ResNet： 侧重于特征的再利用，但不善于发掘新的特征；
+
+DenseNet: 侧重于新特征的发掘，但又会产生很多冗余；
+
+为了综合二者的优点，作者设计了DPN网络：
+
+![](/images/img2/DPN_2.png)
+
+参考：
+
+http://blog.csdn.net/scutlihaoyu/article/details/75645551
+
+《Dual Path Networks》笔记
+
+http://www.cnblogs.com/mrxsc/p/7693316.html
+
+Dual Path Networks
+
+http://blog.csdn.net/u014380165/article/details/75676216
+
+DPN（Dual Path Network）算法详解
+
+https://mp.weixin.qq.com/s/m4cRV9yX-8r4BI0EkVRYig
+
+残差网络家族10多个变种学习卡片，请收下！
+
 ## CSPNet
 
 ![](/images/img5/CSPNet.jpg)
@@ -160,109 +228,3 @@ $$h^k=g^k\left[\sum_{t=0}^{k-1}f_t^k(h^t)\right]$$
 https://zhuanlan.zhihu.com/p/124838243
 
 CSPNet论文笔记
-
-# 数据增强
-
-数据增强：Data Augmentation
-
-Mosaic：
-
-![](/images/img5/Mosaic.jpg)
-
-MixUp：
-
-![](/images/img5/MixUp.webp)
-
----
-
-https://mp.weixin.qq.com/s/GqPfvWwH1T0XFwiZ86cW8A
-
-SamplePairing：针对图像处理领域的高效数据增强方式
-
-https://mp.weixin.qq.com/s/cQtXvOjSXFc4YKn7ANBc_w
-
-谷歌大脑提出自动数据增强方法AutoAugment：可迁移至不同数据集
-
-https://mp.weixin.qq.com/s/ojFo7-gUh73iK3uImFS2-Q
-
-一文道尽主流开源框架中的数据增强
-
-https://mp.weixin.qq.com/s/xJhWu-1FyhIWbFBC5oHMkw
-
-一文道尽深度学习中的数据增强方法（上）
-
-https://mp.weixin.qq.com/s/OctAGrcBB0a6TOGWMmVKUw
-
-深度学习中的数据增强（下）
-
-https://mp.weixin.qq.com/s/lMU6_ywQqneyunqEV6uDiA
-
-如何改善你的训练数据集？
-
-https://mp.weixin.qq.com/s/ooX9Hj5ejO6po6Ghb4zOug
-
-一文解读合成数据在机器学习技术下的表现
-
-https://zhuanlan.zhihu.com/p/33485388
-
-mixup与paring samples ，ICLR2018投稿论文的数据增广两种方式
-
-https://mp.weixin.qq.com/s/_7xFBLPGT0VRTJ22toHJ3g
-
-深度学习中常用的图像数据增强方法
-
-https://mp.weixin.qq.com/s/sXV9epWguGbJEZYo4yNp5Q
-
-如何正确使用样本扩充改进目标检测性能
-
-https://zhuanlan.zhihu.com/p/46833956
-
-图像数据增强之弹性形变（Elastic Distortions）
-
-https://mp.weixin.qq.com/s/ws1R-VPyJY6J18OttBDYog
-
-超少量数据训练神经网络：IEEE论文提出径向变换实现图像增强
-
-https://mp.weixin.qq.com/s/g4022Rc1RNvr3IOC_bWuaQ
-
-深度学习中的数据增强方法都有哪些？
-
-https://mp.weixin.qq.com/s/YuFVEhO3wzCN5dIM_YqA7A
-
-EDA：最简单的自然语言处理数据增广方法
-
-https://mp.weixin.qq.com/s/IeqSfjt4x8HquXBeQN2gdQ
-
-深度学习中的数据增强方法总结
-
-https://zhuanlan.zhihu.com/p/76044027
-
-A survey on Image Data Augmentation数据增强文献综述
-
-https://mp.weixin.qq.com/s/2B0NBY39noikPEO1dB06Sg
-
-CV领域中数据增强相关的论文推荐
-
-https://www.zhihu.com/question/35339639
-
-使用深度学习(CNN)算法进行图像识别工作时，有哪些data augmentation的奇技淫巧？
-
-https://mp.weixin.qq.com/s/YtL7GeIGYm9xtdofnabu1g
-
-如何选择最合适的数据增强操作
-
-https://zhuanlan.zhihu.com/p/43665254
-
-数据增广之详细理解
-
-https://mp.weixin.qq.com/s/g65jpWaf3Oo31zYCyquH1Q
-
-基于深度学习的数据增广技术一览
-
-https://mp.weixin.qq.com/s/r3pGr3FD1dGDzw2zgQdK9g
-
-简易快速数据增强库使用手册
-
-https://mp.weixin.qq.com/s/pny699UC-YzBIzxWRvPasw
-
-全方位支持图文和音视频、100+增强功能，Facebook开源数据增强库AugLy

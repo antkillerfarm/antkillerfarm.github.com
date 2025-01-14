@@ -9,6 +9,44 @@ category: DL
 
 # 神经元激活函数进阶（续）
 
+## 参考
+
+https://zhuanlan.zhihu.com/p/22142013
+
+深度学习中的激活函数导引
+
+http://blog.csdn.net/u012328159/article/details/69898137
+
+几种常见的激活函数
+
+https://mp.weixin.qq.com/s/Hic01RxwWT_YwnErsJaipQ
+
+什么是激活函数？
+
+https://mp.weixin.qq.com/s/4gElB_8AveWuDVjtLw5JUA
+
+深度学习激活函数大全
+
+https://mp.weixin.qq.com/s/7DgiXCNBS5vb07WIKTFYRQ
+
+从ReLU到Sinc，26种神经网络激活函数可视化
+
+http://www.cnblogs.com/ymjyqsx/p/6294021.html
+
+PReLU与ReLU
+
+http://www.cnblogs.com/pinard/p/6437495.html
+
+深度神经网络（DNN）损失函数和激活函数的选择
+
+https://mp.weixin.qq.com/s/VSRtjIH1tvAVhGAByEH0bg
+
+21种NLP任务激活函数大比拼：你一定猜不到谁赢了
+
+https://www.cnblogs.com/makefile/p/activation-function.html
+
+激活函数(ReLU, Swish, Maxout)
+
 https://mp.weixin.qq.com/s/YVi9ke3VSidBvzfLPjMkZg
 
 激活函数-从人工设计到自动搜索
@@ -286,27 +324,3 @@ GoogleNet的进化道路和VGG有所不同。VGG实际上就是“大力出奇�
 ![](/images/article/inception.png)
 
 上图是Inception的结构图。它的原理实际上就是**将不同尺寸的卷积组合起来，以提供不同尺寸的特征**。
-
-原始的GoogleNet也被称作Inception-v1。在后面的几年，GoogleNet还提出了几种改进的版本，最新的一个是Inception-v4（2016.8）。
-
-论文：
-
-《Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning》
-
-代码：
-
-https://github.com/BVLC/caffe/tree/master/models/bvlc_googlenet
-
-Inception系列的改进方向基本都集中在构建不同的Inception模型上。
-
-GoogleNet的另一个改进是**减少了全连接层**（Full Connection, FC），这是减少模型参数的一个重要改进。事实上，在稍后的实践中，人们发现去掉VGG的第一个FC层，对于效果几乎没有任何影响。
-
-参考：
-
-https://mp.weixin.qq.com/s/ceOxFS3Iwf3iLWY73ueoNw
-
-GoogLeNet中的inception结构，你看懂了吗
-
-http://www.cnblogs.com/Allen-rg/p/5833919.html
-
-GoogLeNet学习心得
