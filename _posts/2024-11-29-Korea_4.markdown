@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  朝鲜（四）
-category: World 
+category: Asia 
 ---
 
 * toc

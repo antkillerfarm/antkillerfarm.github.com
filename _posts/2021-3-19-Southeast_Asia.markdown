@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 东南亚（一）
-category: World 
+category: Asia 
 ---
 
 * toc

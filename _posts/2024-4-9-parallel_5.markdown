@@ -197,6 +197,10 @@ FlashAttention V1里Q在内层循环，而V2里K在内层循环。V1对于计算
 
 ---
 
+$$B_r$$和$$B_c$$是FlashAttention分块处理时的分块size。
+
+---
+
 https://www.zhihu.com/question/611236756
 
 FlashAttention的速度优化原理是怎样的？

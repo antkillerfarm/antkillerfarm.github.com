@@ -35,6 +35,8 @@ https://syzygy-tables.info/
 
 >2019年，Ken Thompson的BSD系统密码被破解：`p/q2-q4!`。这是国际象棋中一种常见的开局走法的符号。意思是 “皇后前面的兵(Pawn)向前移动2个方格”。q代表Queen，p代表Pawn。
 
+>后翼弃兵，2020年Netflix迷你剧。
+
 ![](/images/img4/chess.png)
 
 ![](/images/img4/chess_2.png)

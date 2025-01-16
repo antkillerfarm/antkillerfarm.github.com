@@ -225,4 +225,8 @@ https://zhuanlan.zhihu.com/p/14396167432
 
 https://www.zhihu.com/question/8680899864
 
-2025年了，乌军在库尔斯克地区的形式如何？
+2025年了，乌军在库尔斯克地区的形势如何？
+
+https://www.zhihu.com/question/9373656622
+
+如何看待1月11日乌克兰官方公布两名被俘朝鲜士兵的录像及部分审讯内容？

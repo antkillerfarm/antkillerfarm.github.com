@@ -207,6 +207,12 @@ https://www.v2ex.com/t/974678
 
 ---
 
+https://www.linuxfromscratch.org/
+
+教你一步一步的构建你自己的Linux发行版
+
+---
+
 https://mp.weixin.qq.com/s/I7C7cXFgxO7RO0Wpjjj3xQ
 
 一篇文章带你“重新认识”线程上下文切换怎么玩儿

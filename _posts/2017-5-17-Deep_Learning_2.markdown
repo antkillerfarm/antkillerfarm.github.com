@@ -51,6 +51,8 @@ Backprop Input：
 
 $$g_{i} = g_{i+1} \cdot w_{i+1}^T$$
 
+从计算量来看，前向计算是2ND，反向是4ND，N为模型参数的数量，D为token总数，2表示一次乘法和一次加法。
+
 除了基于梯度下降的BP算法之外，还有基于GA（genetic algorithm）的BP算法，但基本只有学术界还在尝试。
 
 参考：

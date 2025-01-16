@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（五）——ERNIE, XLNet, 轻量化Transformer, Attention in CV & RS
+title:  Attention（五）——ERNIE, XLNet, 轻量化Transformer, MoE, Attention in CV & RS
 category: Attention 
 ---
 
@@ -285,13 +285,21 @@ Linformer: 线性复杂度的Attention
 
 Self-Attention 加速方法一览：ISSA、CCNet、CGNL、Linformer
 
-# Switch Transformer
+# MoE
 
 Mixture of Experts(MoE)
 
 ![](/images/img5/MoE.png)
 
 ![](/images/img6/switch_transformer.png)
+
+---
+
+![](/images/img6/MoE.png)
+
+上图展示了MoE的一种具体的实现方案。
+
+---
 
 https://mp.weixin.qq.com/s/XQSEg2_8_1lFqWdHVG6TVA
 
@@ -301,6 +309,10 @@ https://zhuanlan.zhihu.com/p/362525526
 
 深入解读首个万亿级语言模型Switch Transformer
 
+https://zhuanlan.zhihu.com/p/676980004
+
+使用PyTorch实现混合专家(MoE)模型
+
 https://huggingface.co/blog/zh/moe
 
 混合专家模型(MoE)详解
@@ -308,6 +320,10 @@ https://huggingface.co/blog/zh/moe
 https://zhuanlan.zhihu.com/p/662518387
 
 MOE并行
+
+https://zhuanlan.zhihu.com/p/1431483173
+
+聊聊MoE实验性工作Upcycling Large Language Models into Mixture of Experts
 
 # Attention in CV & RS
 

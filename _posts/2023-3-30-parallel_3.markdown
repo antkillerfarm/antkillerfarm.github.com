@@ -266,6 +266,8 @@ ZeRO使用分片（partition）方法，即每张卡只存1/N的模型状态量�
 
 只有模型梯度，由于来自不同的Data，需要各节点的同步，其他的Adam状态数据均与Data无关，由各节点自行计算更新即可。
 
+---
+
 代码：
 
 https://github.com/microsoft/DeepSpeed
@@ -289,6 +291,30 @@ PDSH：Parallel Distributed Shell
 添加backend：
 
 accelerator/cuda_accelerator.py
+
+---
+
+训练时并行选择，顺序如下：
+
+- 纯DP
+
+- DP + zero-1
+
+- 分模型
+
+如果每个DP的梯度累加步数足够大：DP + PP + zero-1
+
+如果每个DP的梯度累加步数较小： DP + TP+ zero-1
+
+- DP + PP + TP + zero-1
+
+TP：机内
+
+PP：机器间
+
+zero-2/3和accumulate gradients是有冲突的，两者同时使用，效率反而会更低。所以只有在不使用accumulate gradients的时候，才采用zero-2/3。
+
+---
 
 参考：
 

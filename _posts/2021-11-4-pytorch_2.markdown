@@ -237,6 +237,12 @@ return self.gather(outputs, self.output_device)
 
 ---
 
+针对LLM名的训练，pytorch官方还发起了torchtitan项目：
+
+https://github.com/pytorch/torchtitan
+
+---
+
 参考：
 
 https://zhuanlan.zhihu.com/p/675464874

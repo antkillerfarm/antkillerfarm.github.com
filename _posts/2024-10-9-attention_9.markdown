@@ -213,6 +213,25 @@ https://mp.weixin.qq.com/s/rLJlaqI2RL7TGUEQyx-QaA
 
 ---
 
+MFU（Model FLOPs Utilization）
+
+$$\text{MFU} = \frac{\text{model FLOPs per iteration}}{\text{GPU单卡算力} \times \text{卡数} \times \text{一次迭代时间}}$$
+
+Transformer模型的MFU计算公式：
+
+$$\text{MFU} = \frac{72blsh^2 \left(1 + \frac{s}{6h} + \frac{V}{12hl}\right)}{F \times N \times T}$$
+
+- b：批次大小（micro batch size）。
+- l：Transformer 层数。
+- s：序列长度。
+- h：隐藏层维度。
+- V：词表大小。
+- F：GPU 单卡的峰值算力（FLOPS）。
+- N：使用的 GPU 卡数量。
+- T：一次迭代时间（秒）。
+
+---
+
 https://docs.swanlab.cn/zh/examples/pretrain_llm.html
 
 从零预训练一个自己的大模型

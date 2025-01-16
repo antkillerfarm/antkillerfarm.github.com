@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 日本（四）
-category: World 
+category: Asia 
 ---
 
 * toc

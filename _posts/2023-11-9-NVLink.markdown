@@ -286,6 +286,10 @@ https://developer.nvidia.com/blog/fast-multi-gpu-collectives-nccl/
 
 Fast Multi-GPU collectives with NCCL
 
+https://zhuanlan.zhihu.com/p/701623664
+
+由A800平台训练InternLM-7B无法收敛引发的思考
+
 ## 参考
 
 https://www.infoq.cn/article/3D4MsRVS8ZOtGCj7*krT

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 日本（三）
-category: World 
+category: Asia 
 ---
 
 * toc

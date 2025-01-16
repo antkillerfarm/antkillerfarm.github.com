@@ -152,7 +152,7 @@ https://zhuanlan.zhihu.com/p/668509885
 
 向量数据库凉了吗？
 
-## 其他
+## Accumulate Gradients
 
 gradient_accumulation_steps用于处理当模型的参数数量超过GPU内存容量时的情况。在训练大型模型时，尤其是在使用较小的GPU进行训练时，可能会遇到内存不足的问题。这时，可以使用梯度累积来分割批次，从而使得每个小批次的计算都在GPU的内存限制范围内。
 
