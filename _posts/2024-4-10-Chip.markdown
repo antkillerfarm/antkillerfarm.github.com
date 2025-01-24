@@ -31,7 +31,11 @@ category: Chip
 
 ![](/images/img4/CPU.png)
 
+![](/images/img6/CPU.png)
+
 ![](/images/img5/cpu.png)
+
+TSMC的命名规则里NxP相比Nx，密度一样，但是成本、良率和功耗都有改进。通常也是该制程的最终定型版本。
 
 https://mp.weixin.qq.com/s/TmLSHVkeyqfU-9Jgir0czA
 
@@ -229,6 +233,15 @@ https://www.zhihu.com/question/20809971
 
 “我并不需要你帮我省电，而是希望你帮我把更多的电变成更多的钱”
 
+---
+
+TSMC的28nm工艺有多个版本：
+
+- 28nm LP（Low Power）
+- 28nm HPM（High Performance for Mobile）
+- 28nm HPC（High Performance Computing）
+- 28nm HPC+（High Performance Computing Plus）
+
 # 芯片行业
 
 IC行业的公司一般分为全流程的（IDM），著名公司如德州仪器，英特尔，三星，意法半导体，只做设计自己没有晶圆厂的（Fabless），比如英伟达，AMD，只负责制造的（Foundry），比如台积电。
@@ -242,19 +255,3 @@ SOC的难点在于SOC的架构设计和验证完备上，虽然不同意SOC设�
 ---
 
 台湾三大科学园区为竹科（新竹科学工业园）、中科（中部科学工业园）、南科（南部科学工业园）。台积电研发主要在竹科、量产在中科及南科。
-
----
-
-那时行政院成立“台积电”与“联电”，分别交给张忠谋与曹兴诚。这两位在工研院就闹得不可开交，只好开两家公司给他们管。
-
-台积电是很敢给工程师，联电是很敢给股东。后来就是优秀的工程师都往台积电跑，联电股票涨完几波就后继无力。
-
----
-
-https://xueqiu.com/4081695675/165884010
-
-梁梦松离职的四个点评
-
-https://mp.weixin.qq.com/s/p2f59OngEOKFuELHEIl-hw
-
-科普：芯片行业所说的IP是个什么东西？

@@ -73,6 +73,14 @@ https://www.zhihu.com/question/592545459
 
 ![](/images/img5/LLM_Tree.png)
 
+在LLM进化树中，BERT（Encoder-Only）、T5（Encoder-Decoder）、GPT（Decoder-Only）分别代表了不同的架构方向。那为什么在大模型时代，曾经风光无限的BERT家族和T5家族会逐渐没落了？
+
+从纯算法模型结构上，Google的T5是比GPT更加优雅的神经网络模型结构， 但是由于T5的模型结构不是线性的，因为在Decoder和Encoder之间有复杂的连接关系（即对应的Cross Attention或者叫做 Cross Condition），导致T5在真正大规模堆叠的时候，实际上在工程领域，很难通过分布式并行高效的执行起来。因此，在目前已知的分布式并行优化上，T5很难通过规模化扩展模型的规模，Scale到千亿参数以上。这就是AI系统反过来影响算法发展，对算子作出的一种选择作用。
+
+目前预训练大模型成本居高（ GPT-4 训练一次的成本超过 5000W 美金），再往上翻倍探索下一个FLOPs数量级也变得十分困难。因此百亿级别和千亿级别的 MoE 架构开始慢慢成为了大模型时代考虑的下一个主流方向.
+
+---
+
 ![](/images/img5/LLM.png)
 
 https://arthurchiao.art/blog/llm-practical-guide-zh/
@@ -174,3 +182,7 @@ https://zhuanlan.zhihu.com/p/665426752
 https://www.zhihu.com/question/654072307
 
 如何看待月之暗面创始人杨植麟减股套现千万美金？
+
+https://zhuanlan.zhihu.com/p/19272031682
+
+DeepSeek创始人梁文锋

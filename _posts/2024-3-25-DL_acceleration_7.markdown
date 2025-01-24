@@ -228,6 +228,14 @@ BlockRadixRank
 
 ---
 
+![](/images/img6/tensile_kernel_parameters_performance_interdependencies.png)
+
+原始地址：
+
+https://github.com/ROCm/Tensile/wiki/Kernel-Parameters
+
+---
+
 https://developer.nvidia.com/blog/even-easier-introduction-cuda/
 
 An Even Easier Introduction to CUDA

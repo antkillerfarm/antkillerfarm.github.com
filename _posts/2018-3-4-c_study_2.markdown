@@ -63,6 +63,22 @@ https://blog.csdn.net/kelvin_yin/article/details/137468039
 
 内存对齐alignof和alignas
 
+---
+
+User-Defined Literals：
+
+```cpp
+// define
+inline half operator""_h(long double value) { return half(detail::binary, detail::float2half<half::round_style>(value)); }
+
+// use
+half my_half = 123.45_h;
+
+// use example in std
+using namespace std::chrono_literals;
+auto duration = 10s;
+```
+
 # 动态链接
 
 这两天实践了一下怎样在linux下创建动态链接。感觉网上的资料虽然翔实，但仍然有疏漏之处。
@@ -286,12 +302,3 @@ cout << sp1.use_count() << " " << sp2.use_count() << " "
 ```
 
 sp1,sp2,sp3是相互关联的共享指针，共同控制所指内存的生存期，sp4虽然指向同样的内存，却是与sp1,sp2,sp3独立的，sp4按自己的引用计数来关联内存的释放。
-
-```cpp
-auto p = std::make_unique<XXX>();
-void f(XXX*);
-f(p); // error
-f(p.get()); // OK
-```
-
-虽然，类似`p->YYY()`的用法和普通指针一致，但是作为f函数参数的时候，就不行了。

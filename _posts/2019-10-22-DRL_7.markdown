@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度强化学习（七）——MARL
+title:  深度强化学习（七）——AlphaGo（3）
 category: DRL 
 ---
 
@@ -120,6 +120,34 @@ Lizzie诞生于2018年初，是程序员Annie Wagner设计的一款可加载围�
 目前最常用的是如下的Lizzie修改版：
 
 https://github.com/yzyray/lizzieyzy
+
+## 象棋软件
+
+Stockfish是一款开源国际象棋程序。由于最初的开发者中的两位分别来自挪威和意大利，为了纪念两国历史悠久的鳕鱼贸易，开发者将他们的程序命名为了Stockfish。
+
+Stockfish将传统计算机国际象棋技术发挥到了极致，包括但不限于alpha-beta搜索，各种剪枝技术，以及手动调整参数的估值函数等等。至少在2017年之前，Stockfish几乎稳坐各大计算机国象程序棋力排名榜第一名。
+
+国际象棋领域，有一个Leela Chess Zero（lc0）项目：
+
+https://lczero.org/
+
+和Leela Zero一样，同样是AlphaGo Zero的开源复刻。
+
+NNUE的全名是Efficiently Updatable Neural Network，最初由日本将棋程序员那須悠于2018年提出，并应用于将棋程序中。把EUNN換成NNUE是因為NUE(ぬえ)是一种日本传统中的妖怪──鵺。
+
+使用NNUE算法的Stockfish，最终反超lc0，重新夺回王者之位。
+
+NNUE使用的是传统的ab剪枝，而不是MCTS。ab剪枝搜索的速度比MCTS更快，但不适合GPU加速，因此NNUE的推理一般使用CPU。
+
+---
+
+中国象棋有克隆lc0的px0、ggz：
+
+http://px0.org/
+
+和克隆Stockfish的pikafish（皮卡鱼）：
+
+https://www.pikafish.com/
 
 ## AI作弊/对抗
 
@@ -352,33 +380,3 @@ https://mp.weixin.qq.com/s/foiyPVtLH5KVe_ST5rn-EQ
 https://mp.weixin.qq.com/s/AcdhvGO-SdqODMFuVBJvUA
 
 AI杀入斗地主领域，快手开发DouZero对标AlphaZero，干掉344个AI获第一
-
-# MARL
-
-Multi-agent Reinforcement Learning(MARL)，一般被称为多智能体强化学习。与之相对的则是Single-agent Reinforcement Learning(SARL)。
-
-书籍：
-
-http://www.masfoundations.org/download.html
-
-《MULTIAGENT SYSTEMS Algorithmic, Game-Theoretic, and Logical Foundations》
-
-以下主要参考了如下文章：
-
-https://zhuanlan.zhihu.com/p/39037444
-
-多智能体强化学习笔记 01
-
-https://zhuanlan.zhihu.com/p/43579796
-
-多智能体强化学习笔记 02
-
-论文：
-
-《Multi-agent reinforcement learning: An overview》
-
-《Game Theory and Multi-agent Reinforcement Learning》
-
-《Is multiagent deep reinforcement learning the answer or the question? A brief survey》
-
-MARL应用了大量博弈论的知识，可参见《强化学习（十）》。

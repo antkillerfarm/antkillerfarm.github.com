@@ -84,6 +84,8 @@ H100搭配的是X86的CPU，如果搭配NV自研的基于ARM架构的Grace CPU�
 
 ![](/images/img5/NVIDIA.png)
 
+GB202, GB203, GB205, GB206, GB207这些是芯片代号，分别对应RTX 5090/5080/5070/5060/5050显卡。
+
 ---
 
 Grace Hopper，1906～1992，女，美国计算机科学家。耶鲁大学博士（1934）。Cobol语言之母。

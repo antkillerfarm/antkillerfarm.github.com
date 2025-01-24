@@ -101,6 +101,10 @@ https://www.zhihu.com/question/4560989954
 
 SpaceX星舰第六次试飞在海上溅落，超重型助推器完成软溅落后解体，有哪些亮点值得关注？（2024.11.19）
 
+https://www.zhihu.com/question/9647463595
+
+SpaceX 星舰第七次试飞二级失联后解体，一级再度上演“筷子夹火箭”回收，还有哪些信息值得关注？（2025.1.17）
+
 ---
 
 液氢液氧
@@ -232,6 +236,10 @@ https://www.zhihu.com/question/473476687
 https://mp.weixin.qq.com/s/RPcbBqUP7wl-4fgfiiUAVg
 
 为什么亿万富翁都想上天？
+
+https://www.zhihu.com/question/9743739318
+
+如何评价2025年1月16日蓝色起源新格伦火箭首飞？
 
 ---
 

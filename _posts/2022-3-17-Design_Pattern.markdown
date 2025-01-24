@@ -251,3 +251,7 @@ Best Square Root Method
 https://zhuanlan.zhihu.com/p/332996578
 
 陈丹琦分治算法
+
+https://utopia1991.github.io/2019/01/14/fisher/
+
+Fisher–Yates shuffle洗牌算法

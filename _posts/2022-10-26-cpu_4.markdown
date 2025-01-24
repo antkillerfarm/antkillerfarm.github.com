@@ -307,6 +307,22 @@ https://zhuanlan.zhihu.com/p/694560307
 
 # 芯片行业+
 
+那时行政院成立“台积电”与“联电”，分别交给张忠谋与曹兴诚。这两位在工研院就闹得不可开交，只好开两家公司给他们管。
+
+台积电是很敢给工程师，联电是很敢给股东。后来就是优秀的工程师都往台积电跑，联电股票涨完几波，就后继无力。
+
+---
+
+https://xueqiu.com/4081695675/165884010
+
+梁梦松离职的四个点评
+
+https://mp.weixin.qq.com/s/p2f59OngEOKFuELHEIl-hw
+
+科普：芯片行业所说的IP是个什么东西？
+
+---
+
 ![](/images/img4/xeon-scalable-processor-numbers.png)
 
 ---

@@ -173,10 +173,6 @@ https://mp.weixin.qq.com/s/AQI2S2oK7HFDs9lH-nsx5g
 
 Android性能优化系列：Java内存优化篇
 
-https://www.jianshu.com/p/80013a768a45
-
-Android soong build系统介绍
-
 https://mp.weixin.qq.com/s/xQ6w1qlMjgxlP8QpF34GVA
 
 不吹不擂，一文揭秘鸿蒙操作系统
@@ -188,6 +184,10 @@ https://mp.weixin.qq.com/s/QC0QDPwBU5OLjtZNqDzSrg
 https://zhuanlan.zhihu.com/p/718796888
 
 Binder：安卓最常用的进程通信
+
+https://mp.weixin.qq.com/s/7HnMtASiDWmwVBp8W4EaVg
+
+从Android.mk到Android.bp：Google为什么这么做？
 
 # MSYS2
 

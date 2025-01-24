@@ -85,8 +85,14 @@ cd pytorch
 git submodule sync
 git submodule update --init --recursive
 
+# CPU only
 export USE_CUDA=0
 export _GLIBCXX_USE_CXX11_ABI=1
+
+# CUDA
+export CMAKE_CUDA_ARCHITECTURES=86
+export CMAKE_CUDA_COMPILER=“/usr/local/cuda/bin/nvcc”
+
 python setup.py develop
 ```
 

@@ -207,6 +207,10 @@ https://conda-forge.org/miniforge/
 
 https://mamba.readthedocs.io/en/latest/
 
+修改国内源：
+
+`conda config --set custom_channels.conda-forge https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/`
+
 参考：
 
 https://zhuanlan.zhihu.com/p/518926990

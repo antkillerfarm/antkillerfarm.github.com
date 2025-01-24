@@ -9,6 +9,15 @@ category: language
 
 # 各类ptr（续）
 
+```cpp
+auto p = std::make_unique<XXX>();
+void f(XXX*);
+f(p); // error
+f(p.get()); // OK
+```
+
+虽然，类似`p->YYY()`的用法和普通指针一致，但是作为f函数参数的时候，就不行了。
+
 多线程的weak_ptr需要使用enable_shared_from_this机制来把this从类内部传递出来，来持有shared_ptr。使用时，用weak_ptr的`lock`函数返回shared_ptr，如果shared_ptr为null，则表明该对象已经被析构了。
 
 ---

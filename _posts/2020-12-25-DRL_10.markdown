@@ -9,6 +9,26 @@ category: DRL
 
 # RLHF（续）
 
+## DPO
+
+Direct Preference Optimization是一类不训练reward model而直接更新LM的方法。
+
+![](/images/img5/DPO.png)
+
+对于同一个propmt，给定一个好的回答和一个不好的回答，通过降低不好回答被采样的概率，提升好回答的概率，从而进行模型训练。
+
+---
+
+Token-level Direct Preference Optimization（TDPO）
+
+Monolithic Preference Optimization without Reference Model（ORPO）
+
+---
+
+https://blog.csdn.net/v_JULY_v/article/details/134242910
+
+RLHF的替代之DPO原理解析：从RLHF、Claude的RAILF到DPO、Zephyr
+
 ## Chain-of-Thought
 
 思维链就是一系列中间的推理步骤(a series of intermediate reasoning steps)。通过让大模型逐步参与将一个复杂问题分解为一步一步的子问题，并依次进行求解的过程可以显著提升大模型的性能。
@@ -34,6 +54,10 @@ Reverse-o1:OpenAI o1原理逆向工程图解
 https://blog.csdn.net/v_JULY_v/article/details/142865592
 
 一文通透OpenAI o1：从CoT、Quiet-STaR、Self-Correct、Self-play RL、MCTS等技术细节到工程复现
+
+https://zhuanlan.zhihu.com/p/19969128139
+
+MCTS树搜索会是复刻OpenAI O1/O3的有效方法吗
 
 ## Constitutional AI
 
@@ -334,35 +358,3 @@ https://mp.weixin.qq.com/s/7BsXPQ8wC6_fHulU63ZQiQ
 https://mp.weixin.qq.com/s/uDFsWebfLmka-zZX3Y_8kg
 
 深度强化学习在面向任务的对话管理中的应用
-
-https://zhuanlan.zhihu.com/p/41467058
-
-Policy Optimization with Demonstrations
-
-https://openreview.net/pdf?id=rJzoujRct7
-
-深度学习之斗地主
-
-https://mp.weixin.qq.com/s/qWuoo6cGLWLk4OKlunR-Og
-
-滴滴KDD 2018论文详解：基于强化学习技术的智能派单模型
-
-https://zhuanlan.zhihu.com/p/43496459
-
-解决Sparse Reward RL任务的简单回顾
-
-https://mp.weixin.qq.com/s/tuEhP3CDZ4PW7S66yP8AbA
-
-如何解决稀疏奖励下的强化学习？
-
-https://mp.weixin.qq.com/s/GUyZ0U5_JlXCI-5mO796SA
-
-超越DQN和A3C：深度强化学习领域近期新进展概览
-
-https://zhuanlan.zhihu.com/p/43843955
-
-BAIR：基于人类演示&RL的夹爪训练——高效、通用、低成本
-
-https://mp.weixin.qq.com/s/ADZlLx6gMTFU6IoBCF669g
-
-快1万倍！伯克利提出用深度RL优化SQL查询

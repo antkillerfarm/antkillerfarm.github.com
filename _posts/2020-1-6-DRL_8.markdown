@@ -1,13 +1,43 @@
 ---
 layout: post
-title:  深度强化学习（八）——StarCraft
+title:  深度强化学习（八）——MARL, StarCraft
 category: DRL 
 ---
 
 * toc
 {:toc}
 
-# MARL（续）
+# MARL
+
+Multi-agent Reinforcement Learning(MARL)，一般被称为多智能体强化学习。与之相对的则是Single-agent Reinforcement Learning(SARL)。
+
+书籍：
+
+http://www.masfoundations.org/download.html
+
+《MULTIAGENT SYSTEMS Algorithmic, Game-Theoretic, and Logical Foundations》
+
+以下主要参考了如下文章：
+
+https://zhuanlan.zhihu.com/p/39037444
+
+多智能体强化学习笔记 01
+
+https://zhuanlan.zhihu.com/p/43579796
+
+多智能体强化学习笔记 02
+
+论文：
+
+《Multi-agent reinforcement learning: An overview》
+
+《Game Theory and Multi-agent Reinforcement Learning》
+
+《Is multiagent deep reinforcement learning the answer or the question? A brief survey》
+
+MARL应用了大量博弈论的知识，可参见《强化学习（十）》。
+
+---
 
 ![](/images/img4/MARL.jpg)
 
@@ -283,35 +313,3 @@ https://mp.weixin.qq.com/s/x0G-LNCano7qjGdpj-fpCQ
 https://mp.weixin.qq.com/s/AndV-htPeTXlpAm1GONNtA
 
 中科院开源星际争霸2宏观运营研究数据集MSC
-
-https://mp.weixin.qq.com/s/I9gfoCxEYW5lSIy5QGyt6w
-
-2018星际AI大赛（2018.11）冠军诞生！一个个机器学习算法，都输给不会学习的韩国bot
-
-https://github.com/TeamSAIDA/SAIDA
-
-2018.11冠军SAIDA的github
-
-https://github.com/TorchCraft/TorchCraft
-
-2018.11亚军CherryPi的github
-
-https://github.com/bmnielsen/Locutus/
-
-2018.8冠军Locutus的github
-
-https://mp.weixin.qq.com/s/yAYF2i-Pr84RliKrJyPaUA
-
-伯克利星际争霸II AI“撞车”腾讯，作者：我们不一样
-
-https://mp.weixin.qq.com/s/uC8gi4kN_muRTwRL0RCZjQ
-
-要玩转这个星际争霸II开源AI，你只需要i5+GTX1050
-
-https://mp.weixin.qq.com/s/wyn-V4-DcjjOKziith3pXw
-
-开源星际争霸2多智能体挑战smac
-
-https://mp.weixin.qq.com/s/e4iv6FJAMZACEqWFmxeSFg
-
-让AI掌握星际争霸微操：中科院提出强化学习+课程迁移学习方法

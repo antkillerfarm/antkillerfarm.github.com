@@ -9,6 +9,38 @@ category: DRL
 
 # DRL参考资源
 
+https://zhuanlan.zhihu.com/p/41467058
+
+Policy Optimization with Demonstrations
+
+https://openreview.net/pdf?id=rJzoujRct7
+
+深度学习之斗地主
+
+https://mp.weixin.qq.com/s/qWuoo6cGLWLk4OKlunR-Og
+
+滴滴KDD 2018论文详解：基于强化学习技术的智能派单模型
+
+https://zhuanlan.zhihu.com/p/43496459
+
+解决Sparse Reward RL任务的简单回顾
+
+https://mp.weixin.qq.com/s/tuEhP3CDZ4PW7S66yP8AbA
+
+如何解决稀疏奖励下的强化学习？
+
+https://mp.weixin.qq.com/s/GUyZ0U5_JlXCI-5mO796SA
+
+超越DQN和A3C：深度强化学习领域近期新进展概览
+
+https://zhuanlan.zhihu.com/p/43843955
+
+BAIR：基于人类演示&RL的夹爪训练——高效、通用、低成本
+
+https://mp.weixin.qq.com/s/ADZlLx6gMTFU6IoBCF669g
+
+快1万倍！伯克利提出用深度RL优化SQL查询
+
 https://mp.weixin.qq.com/s/G99vqIYeWzgQ4kL4p77cKA
 
 用强化学习做神经机器翻译：中山大学&MSRA填补多项空白

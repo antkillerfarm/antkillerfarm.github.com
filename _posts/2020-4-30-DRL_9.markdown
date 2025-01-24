@@ -9,6 +9,38 @@ category: DRL
 
 # StarCraft（续）
 
+https://mp.weixin.qq.com/s/I9gfoCxEYW5lSIy5QGyt6w
+
+2018星际AI大赛（2018.11）冠军诞生！一个个机器学习算法，都输给不会学习的韩国bot
+
+https://github.com/TeamSAIDA/SAIDA
+
+2018.11冠军SAIDA的github
+
+https://github.com/TorchCraft/TorchCraft
+
+2018.11亚军CherryPi的github
+
+https://github.com/bmnielsen/Locutus/
+
+2018.8冠军Locutus的github
+
+https://mp.weixin.qq.com/s/yAYF2i-Pr84RliKrJyPaUA
+
+伯克利星际争霸II AI“撞车”腾讯，作者：我们不一样
+
+https://mp.weixin.qq.com/s/uC8gi4kN_muRTwRL0RCZjQ
+
+要玩转这个星际争霸II开源AI，你只需要i5+GTX1050
+
+https://mp.weixin.qq.com/s/wyn-V4-DcjjOKziith3pXw
+
+开源星际争霸2多智能体挑战smac
+
+https://mp.weixin.qq.com/s/e4iv6FJAMZACEqWFmxeSFg
+
+让AI掌握星际争霸微操：中科院提出强化学习+课程迁移学习方法
+
 https://mp.weixin.qq.com/s/JbCIBFDRvg5qcpZ11g58dw
 
 DeepMind提出关系性深度强化学习：在星际争霸2任务中获得最优水平
@@ -352,23 +384,3 @@ ChatGPT技术原理解析：从RL之PPO算法、RLHF到GPT4、instructGPT
 https://blog.csdn.net/v_JULY_v/article/details/129996493
 
 详解带RLHF的类ChatGPT：从TRL、ChatLLaMA到ColossalChat、DSC
-
-## DPO
-
-Direct Preference Optimization是一类不训练reward model而直接更新LM的方法。
-
-![](/images/img5/DPO.png)
-
-对于同一个propmt，给定一个好的回答和一个不好的回答，通过降低不好回答被采样的概率，提升好回答的概率，从而进行模型训练。
-
----
-
-Token-level Direct Preference Optimization（TDPO）
-
-Monolithic Preference Optimization without Reference Model（ORPO）
-
----
-
-https://blog.csdn.net/v_JULY_v/article/details/134242910
-
-RLHF的替代之DPO原理解析：从RLHF、Claude的RAILF到DPO、Zephyr
