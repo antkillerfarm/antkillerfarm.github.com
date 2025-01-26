@@ -376,3 +376,7 @@ https://www.zhihu.com/question/7820441159
 https://zhuanlan.zhihu.com/p/16130861376
 
 乌克兰依据合同拒绝俄罗斯天然气过境，斯洛伐克断气了
+
+https://zhuanlan.zhihu.com/p/20314786347
+
+乌克兰未能通过动员考验

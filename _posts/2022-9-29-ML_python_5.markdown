@@ -233,11 +233,19 @@ https://mp.weixin.qq.com/s/QUoW4eD93_DPQ7kP_6jaZg
 
 ---
 
+Henry Charles Beck，1902～1974，英国制图师。其1931年绘制的伦敦地铁图成为了现代地铁图的设计范例。
+
+![](/images/img6/Paris.jpg)
+
+![](/images/img6/Tokyo.jpg)
+
 https://mp.weixin.qq.com/s/yF1XJ-_YteoZbVbdIvlbmg
 
 如果伦敦地铁图是数据科学家画的……
 
->Henry Charles Beck，1902～1974，英国制图师。其1931年绘制的伦敦地铁图成为了现代地铁图的设计范例。
+https://www.zhihu.com/question/8912249208
+
+地铁图为什么不按照真实比例和路线画？
 
 ---
 

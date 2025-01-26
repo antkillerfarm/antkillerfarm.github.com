@@ -127,14 +127,6 @@ https://mp.weixin.qq.com/s/VU_qUQEjqUNHd0UK6RLM9g
 
 https://www.kaggle.com/models/google/gemma
 
-## Mixtral
-
-![](/images/img5/Mixtral.png)
-
-https://zhuanlan.zhihu.com/p/676010571
-
-欢迎Mixtral-当前Hugging Face上最先进的MoE模型
-
 ## Llama 3
 
 llama 3是Meta于2024年发布的LLM。
@@ -215,7 +207,15 @@ Mixture of Experts(MoE)
 
 ![](/images/img6/MoE.png)
 
-上图展示了MoE的一种具体的实现方案。
+![](/images/img6/expert_parallel.png)
+
+---
+
+开源项目：
+
+https://github.com/XueFuzhao/OpenMoE
+
+https://github.com/laekov/fastmoe
 
 ---
 
@@ -242,6 +242,22 @@ MOE并行
 https://zhuanlan.zhihu.com/p/1431483173
 
 聊聊MoE实验性工作Upcycling Large Language Models into Mixture of Experts
+
+https://zhuanlan.zhihu.com/p/672712751
+
+大模型LLM之混合专家模型MoE（上-基础篇）
+
+https://zhuanlan.zhihu.com/p/673048264
+
+大模型LLM之混合专家模型MoE（下-实现篇）
+
+## Mixtral
+
+![](/images/img5/Mixtral.png)
+
+https://zhuanlan.zhihu.com/p/676010571
+
+欢迎Mixtral-当前Hugging Face上最先进的MoE模型
 
 # VLM
 

@@ -9,6 +9,58 @@ category: Nature
 
 # SpaceX（续）
 
+2018.2
+
+![](/images/img2/Falcon.jpg)
+
+![](/images/img2/Falcon_2.jpg)
+
+![](/images/img2/SpaceX.gif)
+
+![](/images/img2/SpaceX.png)
+
+![](/images/img2/rocket.jpg)
+
+https://www.zhihu.com/question/266793958
+
+如何看待SpaceX猎鹰重型火箭在美国时间2月6日发射并且回收成功？
+
+https://www.zhihu.com/question/21731308
+
+SpaceX猎鹰火箭和中国的长征系列火箭，各有什么优劣势？
+
+https://mp.weixin.qq.com/s/d6Z0pF7SG3mEFAgUuwTPZQ
+
+马斯克的“神性思维模式”，简直太神奇了！
+
+https://www.zhihu.com/question/314292163
+
+如何评价SpaceX载人龙飞船成功首飞并与国际空间站对接？
+
+---
+
+2020.5
+
+![](/images/img3/NASA.png)
+
+![](/images/img3/Canaveral.jpg)
+
+https://mp.weixin.qq.com/s/u5BuBhkrgLkUfuGWHA5ZRg
+
+美国国防先进研究计划局（Defense Advanced Research Projects Agency, DARPA），如何成为美国科技的核心引擎？
+
+https://mp.weixin.qq.com/s/q8qpmoDcHaEYWPpk0kFTFw
+
+Space X龙飞船成功发射，它和NASA到底有什么关系？
+
+---
+
+![](../images/img4/spaceship.jpg)
+
+https://mp.weixin.qq.com/s/-eNzkpxJ_nQOF0RURjuSUg
+
+96秒4.25亿！马斯克疯狂炸毁载人火箭猎鹰9，最贵烟花锤炼逃生系统
+
 https://mp.weixin.qq.com/s/tDdu0-wqtiqBetOuULgeTg
 
 马斯克又实现了一个“梦想”！人类首个商业载人航天飞船发射成功！
@@ -240,33 +292,3 @@ https://mp.weixin.qq.com/s/RPcbBqUP7wl-4fgfiiUAVg
 https://www.zhihu.com/question/9743739318
 
 如何评价2025年1月16日蓝色起源新格伦火箭首飞？
-
----
-
-先开发一台具有垂直起降能力的小号原型机，在这个基础上放大推力、优化参数，开发更大型号的原型机。重复这个放大过程直到技术足够成熟
-
-https://www.zhihu.com/question/352621717
-
-为什么贝索斯拥有和资助的蓝色起源公司没有实现 SpaceX 的成就?
-
----
-
-超声速燃烧冲压式发动机，它简称超燃冲压发动机，可以在攀升过程中从大气里获取氧气。放弃携带氧化剂，从飞行中获取氧气，节省重量，就意味着在消耗相同质量推进剂的条件下，超燃冲压发动机能够产生4倍于火箭的推力。
-
-根据相关人士的评估，如果让第二级省的燃料有效果，第一级至少要爬到30公里，速度达到马赫5。低于这个数，跟普通地面发射火箭相比，增益不大。
-
-在马赫数3以下，普通的航空发动机还可以冲一冲，但马赫数3以上，人类至今没有能用的可以吸入大气中氧的航空发动机，现在提出的很多概念，比如超燃冲压发动机、旋转爆轰发动机都是为Ma3以上准备的，困难重重，进展特别慢。
-
-https://www.zhihu.com/question/268278478
-
-腾云工程的空天飞机和美国退役的航天飞机有区别么？
-
----
-
-Gerald Vincent Bull博士受到美国和加拿大的资助在巴巴多斯(Barbados)建立了一门大炮，称为巴巴多斯大炮，或HARP项目。
-
-巴巴多斯大炮使用了2根406mm战列舰炮管连接而成，长度达到41米。在1966年11月18日的测试中，将180公斤的弹丸加速到2100m/s的速度。弹丸达到180公里的高度，越过100公里高度的卡门线进入太空。
-
-https://www.zhihu.com/question/342491181
-
-造个超大巨炮发射卫星可以吗？

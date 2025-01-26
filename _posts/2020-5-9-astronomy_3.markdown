@@ -213,36 +213,6 @@ https://mp.weixin.qq.com/s/qUCfrmnXBmm5LfdeU3GgxA
 
 # SpaceX
 
-2018.2
-
-![](/images/img2/Falcon.jpg)
-
-![](/images/img2/Falcon_2.jpg)
-
-![](/images/img2/SpaceX.gif)
-
-![](/images/img2/SpaceX.png)
-
-![](/images/img2/rocket.jpg)
-
-https://www.zhihu.com/question/266793958
-
-如何看待SpaceX猎鹰重型火箭在美国时间2月6日发射并且回收成功？
-
-https://www.zhihu.com/question/21731308
-
-SpaceX猎鹰火箭和中国的长征系列火箭，各有什么优劣势？
-
-https://mp.weixin.qq.com/s/d6Z0pF7SG3mEFAgUuwTPZQ
-
-马斯克的“神性思维模式”，简直太神奇了！
-
-https://www.zhihu.com/question/314292163
-
-如何评价SpaceX载人龙飞船成功首飞并与国际空间站对接？
-
----
-
 ![](/images/img2/Elon_Musk.jpg)
 
 马斯克出生和成长在南非，他的自传记录自己儿时一直被霸凌，亲身经历了南非种族变化的历史。
@@ -256,6 +226,8 @@ https://www.zhihu.com/question/314292163
 他们与之前的PAC相比能够接受更大范围的个人、企业、组织的捐款，来源和额度都没有限制，而最早的PAC无论是捐款来源还是额度都是受到限制的。
 
 共和党或者是民主党的候选人后面都有一个或者数个超级PAC，比如特朗普后面有一个叫做America PAC和一个很具有懂王特色的America first action的PAC；而拜登后面有一个叫做Future forward（未来前进）的PAC，而民主党最著名的PAC叫做Priorities USA（美国优先）。
+
+濮阳人吕不韦贾于邯郸，见秦质子异人，归而谓父曰：“耕田之利几倍?”曰：“十倍。”“珠玉之赢几倍?”曰：“百倍。”“立国家之主赢几倍?”曰：“无数。”
 
 https://mp.weixin.qq.com/s/dQXL6L7Ct08QaczC9rdgqA
 
@@ -271,24 +243,18 @@ https://mp.weixin.qq.com/s/f9Eg3KkAjkvPdmH9_IlX8g
 
 ---
 
-2020.5
+马斯克对他爹的随意口嗨，已经被那些美国驴党的白左媒体给以讹传讹成，某种拿着皮鞭抽黑奴挖矿的矿山奴隶主，简直是从16世纪新西班牙银矿投影过来的MEMO了。
 
-![](/images/img3/NASA.png)
+老马斯克非洲“赌石”是赌矿区，或者说是一大片采矿权的地图上画着的方格里的某一个方格。
 
-![](/images/img3/Canaveral.jpg)
+一大片荒山，里面只做了非常少的三到五个初期勘探钻孔，很多方格可能一个探钻孔都没分到。你就对着这张纸上的方格子，估价，出价。也能有给你看初期勘探钻孔的岩心钻样。
 
-https://mp.weixin.qq.com/s/u5BuBhkrgLkUfuGWHA5ZRg
+这种“赌石”每一个出价的拍卖者，通常也不会只是一个人，而会是多人合伙的团队，甚至几十上百号人的凑钱合伙去出价。
 
-美国国防先进研究计划局（Defense Advanced Research Projects Agency, DARPA），如何成为美国科技的核心引擎？
+你可以过一会儿就转让，也可以自己花钱去打个勘探钻孔，简直就和“赌石”的人在翡翠原石上“开窗”差不多。
 
-https://mp.weixin.qq.com/s/q8qpmoDcHaEYWPpk0kFTFw
+如果打个勘探钻孔，赌赢了，也会把矿区再拍卖，这时候买家就不乏正规矿业公司了。
 
-Space X龙飞船成功发射，它和NASA到底有什么关系？
+老马赢过几次，然后输的次数更多，最后输到彻底一无所有。这大致发生在马斯克10-15岁期间。
 
----
-
-![](../images/img4/spaceship.jpg)
-
-https://mp.weixin.qq.com/s/-eNzkpxJ_nQOF0RURjuSUg
-
-96秒4.25亿！马斯克疯狂炸毁载人火箭猎鹰9，最贵烟花锤炼逃生系统
+这之前，家境很好，这之后，家境很差。典型的烂赌鬼家庭环境。
