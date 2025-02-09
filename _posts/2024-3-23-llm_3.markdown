@@ -251,6 +251,14 @@ https://zhuanlan.zhihu.com/p/673048264
 
 大模型LLM之混合专家模型MoE（下-实现篇）
 
+https://zhuanlan.zhihu.com/p/21208287743
+
+DeepSeek是否有国运级的创新？（上）从V3到R1的架构创新与误传的2万字长文分析
+
+https://zhuanlan.zhihu.com/p/21755758234
+
+DeepSeek是否有国运级的创新？（下）从V3到R1的架构创新与误传的2万字长文分析
+
 ## Mixtral
 
 ![](/images/img5/Mixtral.png)

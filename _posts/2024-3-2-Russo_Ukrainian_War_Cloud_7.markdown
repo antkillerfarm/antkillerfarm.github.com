@@ -7,7 +7,7 @@ category: Russo Ukrainian War Cloud
 * toc
 {:toc}
 
-# 俄乌战争
+# 俄乌战争：流云篇
 
 俄罗斯征兵一直有一个bug：动员令必须由征兵办亲手送到被动员者手里。
 

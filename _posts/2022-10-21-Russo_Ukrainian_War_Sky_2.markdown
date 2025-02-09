@@ -7,7 +7,7 @@ category: Russo Ukrainian War Sky
 * toc
 {:toc}
 
-# 俄乌战争
+# 俄乌战争：苍天篇
 
 ## 概述（续）
 
@@ -180,6 +180,10 @@ https://zhuanlan.zhihu.com/p/544250524
 https://mp.weixin.qq.com/s/55NQ9Mt66o0_5QMWOiiJAw
 
 未解之谜之克里米亚的因果
+
+https://zhuanlan.zhihu.com/p/690902434
+
+哈尔科夫：逡巡不前
 
 ---
 
