@@ -81,6 +81,8 @@ VCS发展简史：SCCS->RCS->CVS->SVN->Git
 
 # CMake
 
+CMake最早是为美国国家医学图书馆资助的ITK项目，而开发的构建工具。ITK是一个图像处理的工具库。
+
 示例代码：
 
 https://github.com/ttroy50/cmake-examples

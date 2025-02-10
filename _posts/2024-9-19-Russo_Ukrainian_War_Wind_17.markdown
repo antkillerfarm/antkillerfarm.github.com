@@ -292,3 +292,7 @@ https://www.zhihu.com/pin/1859493679032582144
 https://www.163.com/dy/article/JM9BMAU80552D6K3.html
 
 俄乌都授予“肉搏战”士兵英雄称号，谁才是真正英雄？
+
+https://zhuanlan.zhihu.com/p/20434793197
+
+“等待不是选择——我们必须战斗”：采访在波克罗夫斯克附近坚守阵地22天的士兵
