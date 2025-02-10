@@ -105,6 +105,8 @@ https://zhuanlan.zhihu.com/p/700197845
 
 而GQA呢，是MHA和MQA的折衷方案，既不想损失性能太多，又想获得MQA带来的推理加速好处。
 
+![](/images/img6/KV_cache.png)
+
 https://zhuanlan.zhihu.com/p/647130255
 
 为什么现在大家都在用MQA和GQA？

@@ -249,6 +249,8 @@ docker中的命令没有权限执行的时候，可以用`docker run --privilege
 
 docker client会默认把Dockerfile同级所有文件发到docker Deamon中。
 
+`docker run --device /dev/宿主机设备路径:/dev/容器内设备路径`：将宿主机上的硬件设备映射到容器中，使容器能够直接访问这些设备。
+
 https://www.cnblogs.com/davis12/p/14453690.html
 
 docker容器权限设置`--cap-add` `--cap-drop` `--privileged`
@@ -346,15 +348,3 @@ Docker容器里运行的程序是否与操作系统有关？
 https://zhuanlan.zhihu.com/p/115845957
 
 两个奇技淫巧，将Docker镜像体积减小99%
-
-https://mp.weixin.qq.com/s/j2c1cV3J4UK20-yb8FLJZg
-
-Docker中级篇
-
-https://mp.weixin.qq.com/s/0jFHlWAeH5avIO2NLpTmGA
-
-Docker底层原理浅析
-
-https://mp.weixin.qq.com/s/dFUcSJRnH4_QhG_Dyt1RkQ
-
-为什么不建议把数据库部署在Docker容器内

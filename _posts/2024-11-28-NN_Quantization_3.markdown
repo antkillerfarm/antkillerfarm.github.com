@@ -135,6 +135,14 @@ with amp.scale_loss(loss, optimizer) as scaled_loss:
 
 ---
 
+DeepSeek为其FP8低比特训练框架做了以下优化：
+
+- 细粒度量化：将数据分解成更小的组，每个组都使用特定乘数进行调整以保持高精度。
+- 在线量化：在线计算每个1x128激活块或128x128权重块的最大绝对值，在线推算缩放因子，然后将激活或权重在线转化为FP8格式，而不是采用静态的历史数据。
+- 提高累加精度：将GEMM中间结果储存计算升级为FP32（32位浮点），实行高精度累加，然后再转换回FP8。
+
+---
+
 https://tensorflow.google.cn/guide/mixed_precision
 
 tensorflow/python/keras/mixed_precision/loss_scale_optimizer.py
@@ -240,31 +248,3 @@ https://mp.weixin.qq.com/s/YImszcJDsvw5ygo2wCj3Hw
 https://mp.weixin.qq.com/s/bK0n9u6DIl4SY7mxS8CVRw
 
 模型量化技术原理及其发展现状和展望
-
-https://zhuanlan.zhihu.com/p/223018242
-
-NNIE量化算法及实现
-
-https://zhuanlan.zhihu.com/p/79744430
-
-Tensorflow模型量化(Quantization)原理及其实现方法
-
-https://mp.weixin.qq.com/s/du3hb2oM5X6bMocdOab4dg
-
-模型量化: 只有整数计算的高效推理
-
-https://mp.weixin.qq.com/s/7Si6GQlj8IvYajoVnwm5DQ
-
-INT4量化用于目标检测
-
-https://mp.weixin.qq.com/s/7VEiQ0y8kB4nODtLCx1UQA
-
-模型量化打怪升级之路
-
-https://mp.weixin.qq.com/s/TXWdx3bbBNfaG3yp2G56ew
-
-提速还能不掉点！深度解析MegEngine 4 bits量化开源实现
-
-https://www.zhihu.com/question/627484732
-
-目前针对大模型进行量化的方法有哪些？

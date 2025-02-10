@@ -238,3 +238,7 @@ https://www.zhihu.com/question/9373656622
 https://www.zhihu.com/question/11291250076
 
 目前库尔斯克的真实情况究竟如何？（2025.2）
+
+https://zhuanlan.zhihu.com/p/22531885837
+
+乌克兰库尔斯克行动：六个月评估
