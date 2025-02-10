@@ -220,6 +220,10 @@ https://www.zhihu.com/question/666734911
 
 如何评价Xbox One兼容层（模拟器）XWine1？
 
+https://www.zhihu.com/question/340045804
+
+为什么当年的Xbox会出现三红问题？
+
 # WxWidget
 
 WxWidget在windows平台的安装包是个奇葩的东西，它并不是可执行文件的安装包，而是个源代码安装包。因此安装之后，还需要编译，才能使用。

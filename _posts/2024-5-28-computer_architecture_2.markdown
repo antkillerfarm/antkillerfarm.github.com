@@ -165,6 +165,12 @@ https://www.starduster.me/2020/11/05/modern-microprocessors-a-90-minute-guide
 
 ## 参考
 
+结构冒险（Structural Hazard）：CPU在同一个时钟周期，同时在运行两条计算机指令的不同阶段。但是这两个不同的阶段，可能会用到同样的硬件电路。
+
+类似的，还有Data Hazard和Control Hazard。
+
+---
+
 https://blog.csdn.net/do2jiang/article/details/4545889
 
 流水线、超流水线、超标量技术对比
