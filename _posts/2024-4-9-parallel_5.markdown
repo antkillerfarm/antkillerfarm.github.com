@@ -183,11 +183,31 @@ FlashAttention主要使用分块矩阵的思想，对矩阵乘法进行优化。
 
 但Self-Attention中有softmax计算，而softmax的分母包含了所有元素相关的求和项，所以对Self-Attention进行分块计算的真正难点在于对softmax的分块计算。
 
-FlashAttention提出了一种叫做Online Softmax的增量算法：我们首先计算一个分块的局部softmax值，然后存储起来。当处理完下一个分块时，可以根据此时的新的全局最大值和全局EXP求和项来更新旧的softmax值。接着再处理下一个分块，然后再更新。当处理完所有分块后，此时的所有分块的softmax值都是“全局的”。具体计算公式略。
+FlashAttention提出了一种叫做Online Softmax的增量算法：我们首先计算一个分块的局部softmax值，然后存储起来。当处理完下一个分块时，可以根据此时的新的全局最大值和全局EXP求和项来更新旧的softmax值。接着再处理下一个分块，然后再更新。当处理完所有分块后，此时的所有分块的softmax值都是“全局的”。
+
+具体计算公式：
+
+<blockquote>
+
+for i = 1 to #tiles do:
+
+$$m_i^{(local)}\leftarrow max_{j=1}^b(x_i[j])$$
+
+$$m_i \leftarrow max(m_{i-1},m_i^{(local)})$$
+
+$$d_i^{'} \leftarrow d_{i-1}^{'}e^{m_{i-1}-m_i}+\sum_{j=1}^b e^{x_i[j]-m_i}$$
+
+$$o_i^{'}=o_{i-1}^{'}\frac{d_{i-1}^{'}}{d_i^{'}}e^{m_{i-1}-m_i}+\sum_{j=1}^{b}\frac{e^{x_i[j]-m_i}}{d_i^{'}}V[j+(i-1)b,:]$$
+
+end
+
+$$O[k,:]\leftarrow o_{N/b}^{'}$$
+
+</blockquote>
 
 其他优化点：
 
-- softmax recomputing。前向通过保存logsumexp结果，反向利用logsumexp重新计算softmax。
+- softmax recomputing。前向保存logsumexp（LSE），反向利用LSE，重新计算softmax。
 
 - Dropout，前向阶段只保存dropout seed与offset，反向宁愿再算一遍dropout，放弃保存dropout mask。
 
@@ -196,8 +216,6 @@ FlashAttention提出了一种叫做Online Softmax的增量算法：我们首先�
 ![](/images/img6/FlashAttention.png)
 
 FlashAttention V1里Q在内层循环，而V2里K在内层循环。V1对于计算softmax不友好，因为每次计算的中间结果只是部分和，只有全算完才能释放相关存储。
-
----
 
 $$B_r$$和$$B_c$$是FlashAttention分块处理时的分块size。
 
@@ -218,6 +236,14 @@ https://zhuanlan.zhihu.com/p/668888063
 https://zhuanlan.zhihu.com/p/665170554
 
 FlashAttention核心逻辑以及V1 V2差异总结
+
+https://www.cnblogs.com/sasasatori/p/18474946
+
+FlashAttention逐代解析与公式推导
+
+https://courses.cs.washington.edu/courses/cse599m/23sp/notes/flashattn.pdf
+
+From Online Softmax to FlashAttention
 
 ## FlashDecoding
 
@@ -276,21 +302,3 @@ vLLM: Easy, Fast, and Cheap LLM Serving with PagedAttention
 https://zhuanlan.zhihu.com/p/691038809
 
 vLLM核心技术PagedAttention原理
-
-## 参考
-
-https://mp.weixin.qq.com/s/1R_plHqxTLE-Fw3TjYnlJQ
-
-GPU BERT上线性能不合格，看看微信AI的PPoPP论文
-
-https://mp.weixin.qq.com/s/OgTQ3O_6lvOG07U-tjpTDA
-
-如何让Transformer在GPU上跑得更快？快手：需要GPU底层优化
-
-https://zhuanlan.zhihu.com/p/638468472
-
-从FlashAttention到PagedAttention, 如何进一步优化Attention性能
-
-https://blog.csdn.net/v_JULY_v/article/details/144218958
-
-一文通透vLLM与其核心技术PagedAttention：减少KV Cache碎片、提高GPU显存利用率(推理加速利器)

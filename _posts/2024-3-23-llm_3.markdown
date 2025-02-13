@@ -143,6 +143,10 @@ https://blog.csdn.net/v_JULY_v/article/details/140659420
 
 一文速览Llama 3.1——对其92页paper的全面细致解读：涵盖语言、视觉、语音的架构、原理
 
+## GPT-J
+
+GPT-J是一个由EleutherAI开发的自然语言处理（NLP）模型，基于GPT-3的架构，拥有6B个参数。它在800GB的开源文本数据集上进行训练，具有强大的语言生成和理解能力。
+
 # LLM应用
 
 ![](/images/img6/LLM_IC.png)
@@ -261,17 +265,31 @@ https://zhuanlan.zhihu.com/p/676010571
 
 ## DeepSeek
 
+《DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models》
+
+《DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model》
+
+《DeepSeek-V3 Technical Report》
+
+![](/images/img6/DeepSeekMoE.png)
+
+DeepSeek认为在同等专家参数量和计算成本不变的前提下，更多数量的小专家，比数量少的大专家好。这种更精细的专家分割使得激活专家的组合更加灵活且适应性更强。
+
 ![](/images/img6/DeepSeek.png)
 
 专家路由事实上引入了一个不连续的门控函数（对梯度计算不友好），这导致梯度下降优化方法在MoE训练中表现不佳，甚至出现“路由崩溃”，即模型容易陷入始终为每个Token激活相同的少数专家的窘境，而不是将计算合理的传播到所有的可用专家。这也是MoE模型训练的难点。
 
-传统的规避路由崩溃的方法是强制“平衡路由”，即通过训练策略让每个专家在足够大的训练批次中被激活的次数大致相等。这一策略也就是“辅助损失”。但这种强制性的辅助损失会由于训练数据的结构不均衡特征，导致同领域的专家能力分散到不同的专家模块之中，极度损害MoE模型的性能。理想的 MoE 应该有一些经常访问高频通用信息，并具备其他访问较少的专业领域专家。如果强制平衡路由，将失去实现此类路由设置的能力，并且必须在不同的专家之间冗余地复制信息。
+传统的规避路由崩溃的方法是强制“平衡路由”，即通过训练策略让每个专家在足够大的训练批次中被激活的次数大致相等。这一策略也就是“辅助损失”。但这种强制性的辅助损失会由于训练数据的结构不均衡特征，导致同领域的专家能力分散到不同的专家模块之中，极度损害MoE模型的性能。理想的MoE应该有一些经常访问高频通用信息，并具备其他访问较少的专业领域专家。如果强制平衡路由，将失去实现此类路由设置的能力，并且必须在不同的专家之间冗余地复制信息。
 
 DeekSeek采用了“增加共享专家+无辅助损耗负载平衡”的方法解决这一问题。
 
 无辅助损耗负载均衡（Auxiliary-Loss-Free Load Balancing）方法是将特定于专家的偏差项添加到路由机制和专家亲和力中。偏差项不会通过梯度下降进行更新，而是在整个训练过程中持续监控并进行调整以确保负载平衡。如果训练中某个专家没有获得合理的命中次数，可以在每个梯度步骤中微调偏差项增加命中概率。
 
+PS：辅助loss本质上只是路由策略，而不是样本的真实loss，过分加重前者，显然会导致整个模型的性能下降。
+
 MoE架构的本质是模型参数分布式存储，MoE减少计算量的代价可能是不同专家模型的参数重复和总参数量增加，这往往也意味着更大更贵的HBM成本。外界传言的MoE模型可以更小，其实是指的MoE模型蒸馏的Dense模型可以兼顾参数量和推理（Reasoning）性能。
+
+DeepSeek选择Llama和Qwen系列开源大模型进行蒸馏，使相应的Dense模型也能获得推理能力。例如DeepSeek-R1-Distill-Qwen-7B，实际上就是模型结构采用Qwen-7B，而对模型参数进行了蒸馏。
 
 https://zhuanlan.zhihu.com/p/21208287743
 
@@ -280,6 +298,10 @@ DeepSeek是否有国运级的创新？（上）从V3到R1的架构创新与误�
 https://zhuanlan.zhihu.com/p/21755758234
 
 DeepSeek是否有国运级的创新？（下）从V3到R1的架构创新与误传的2万字长文分析
+
+https://mp.weixin.qq.com/s/WFJxnTF9fGIIXPA7GQ5V2w
+
+详细谈谈DeepSeek MoE相关的技术发展
 
 # VLM
 

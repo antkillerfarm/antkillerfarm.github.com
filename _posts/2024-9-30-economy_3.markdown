@@ -111,6 +111,10 @@ https://xueqiu.com/8082119199/112705955
 
 ---
 
+Enterprise Business Unit，是一个企业内部根据业务性质或功能划分的独立运营单元。每个业务单元通常有独立的业务目标和管理团队，负责特定业务领域的运营和发展。
+
+---
+
 EXW：EX works
 
 FCA：Free Carrier

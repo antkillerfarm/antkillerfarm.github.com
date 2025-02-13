@@ -7,6 +7,20 @@ category: DL acceleration
 * toc
 {:toc}
 
+# 工具
+
+FairScale是由Facebook Research开发的PyTorch扩展库。FSDP就是首发于这个库。
+
+---
+
+https://zhuanlan.zhihu.com/p/412118353
+
+Kokkos:一个异构并行计算通用平台
+
+# 数据流并行
+
+数据流并行是Pipeline并行的高阶版本。广义的数据流希望通过图编译找到全局最优策略，本质上是一种把编译器当万金油的惰性做法，深度学习框架在系统调度这种比较粗放的尺度，围绕数据流做了这么多年的自动并行化，最后业界主流实际上的并行策略还是预设的这些Pipeline、Tensor并行的组合，而不是编译器搜出来的自动化的并行策略。
+
 # 并行 & 框架 & 优化参考资源
 
 https://mp.weixin.qq.com/s/_1Yr_BbFhlNEW7UtYvAaoA
@@ -338,31 +352,3 @@ TensorFlow分布式计算机制解读：以数据并行为重
 https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
 
 继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本
-
-https://mp.weixin.qq.com/s/kOCftzSbHe2mvDmlRp-ihA
-
-Jeff Dean：AI对计算机系统设计的影响
-
-https://mp.weixin.qq.com/s/XjNPaL6PC9LHX1PEGn5UZg
-
-微软实时AI系统“脑波计划”有多牛？看完秒懂！
-
-https://mp.weixin.qq.com/s/OkqUulFYHQSdgAbf9Fi9LA
-
-CoCoA：大规模机器学习的分布式优化通用框架
-
-https://mp.weixin.qq.com/s/ToIDncp9dS_qk47PsdZm5A
-
-杜克大学：分布式深度学习训练算法TernGrad
-
-https://mp.weixin.qq.com/s/rhtrN2qDspGkpJYDAVSX7w
-
-UC Berkeley展示全新并行处理方法
-
-https://mp.weixin.qq.com/s/ASqpPSIgW_bcFPBfRYz7Xg
-
-哈佛大学提出在云、边缘与终端设备上的分布式深度神经网络DDNN
-
-http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
-
-《Large Scale Distributed Deep Networks》中译文

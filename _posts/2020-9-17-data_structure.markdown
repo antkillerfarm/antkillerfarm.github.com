@@ -321,7 +321,9 @@ C++中的HashTable性能优化
 
 ![](/images/img6/Prefix_Scan.png)
 
-Sklansky方法相对比较简单一些，因为每一层的线程数都是相同的。
+上图展示了一些常用的计算cumsum的并行算法。
+
+其中，Sklansky方法相对比较简单一些，因为每一层的线程数都是相同的。
 
 其中核心的计算index的代码如下：
 
@@ -337,12 +339,14 @@ for (uint32_t s = 1; s <= num_threads_x; s <<= 1) {
 }
 ```
 
+参考：
+
 https://research.nvidia.com/publication/single-pass-parallel-prefix-scan-decoupled-look-back
 
-## 参考
+---
 
-AVL树是一种平衡二叉树，得名于其发明者的名字（Adelson-Velskii以及Landis）。
+并行前缀（Parallel Prefix）加法器也采用了类似的思路。
 
-https://zhuanlan.zhihu.com/p/34899732
+https://www.cnblogs.com/sasasatori/p/18662877
 
-详解AVL树（基础篇）
+并行前缀（Parallel Prefix）加法器

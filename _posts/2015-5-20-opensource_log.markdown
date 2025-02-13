@@ -200,3 +200,33 @@ https://www.zhihu.com/answer/1200063036
 https://zhuanlan.zhihu.com/p/96986818
 
 万字详文：深入理解浏览器原理
+
+# 并行 & 框架 & 优化参考资源+
+
+https://mp.weixin.qq.com/s/kOCftzSbHe2mvDmlRp-ihA
+
+Jeff Dean：AI对计算机系统设计的影响
+
+https://mp.weixin.qq.com/s/XjNPaL6PC9LHX1PEGn5UZg
+
+微软实时AI系统“脑波计划”有多牛？看完秒懂！
+
+https://mp.weixin.qq.com/s/OkqUulFYHQSdgAbf9Fi9LA
+
+CoCoA：大规模机器学习的分布式优化通用框架
+
+https://mp.weixin.qq.com/s/ToIDncp9dS_qk47PsdZm5A
+
+杜克大学：分布式深度学习训练算法TernGrad
+
+https://mp.weixin.qq.com/s/rhtrN2qDspGkpJYDAVSX7w
+
+UC Berkeley展示全新并行处理方法
+
+https://mp.weixin.qq.com/s/ASqpPSIgW_bcFPBfRYz7Xg
+
+哈佛大学提出在云、边缘与终端设备上的分布式深度神经网络DDNN
+
+http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
+
+《Large Scale Distributed Deep Networks》中译文

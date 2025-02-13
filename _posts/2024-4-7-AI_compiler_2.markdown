@@ -147,6 +147,16 @@ triton-shared其实主要是用来cover最右边的分支，因为Linalg dialect
 
 ---
 
+https://github.com/FlagOpen/FlagGems
+
+一个Triton写的算子库
+
+https://github.com/FlagOpen/FlagAttention
+
+一个Triton写的Attention方面的算子库
+
+---
+
 参考：
 
 https://zhuanlan.zhihu.com/p/394377526

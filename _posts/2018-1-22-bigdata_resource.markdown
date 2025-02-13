@@ -77,14 +77,6 @@ https://mp.weixin.qq.com/s/imM3_MIp6CS_8DVL8bGr_Q
 
 ## 杂谈
 
-面对大规模数据的计算和存储时，有两种处理思路：
-
-**垂直扩展（scale up）**：通过升级单机的硬件，如 CPU、内存、磁盘等，提高计算机的处理能力。
-
-**水平扩展（scale out）**：通过添加更多的机器到分布式系统中，提高整个系统的处理能力。
-
----
-
 https://mp.weixin.qq.com/s/12s9JUxVDqAnLAeqc_de8w
 
 聊聊分布式系统架构

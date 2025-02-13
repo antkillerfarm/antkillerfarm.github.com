@@ -148,6 +148,14 @@ gloo官网：
 
 https://github.com/facebookincubator/gloo
 
+## 基础术语
+
+Incast：多个发送者向一个接收者发送数据。
+
+Multicast：一个发送者向多个接收者发送数据。
+
+Broadcast：一个发送者向所有可能的接收者发送数据。
+
 ## Barrier
 
 ![](/images/img4/barrier.png)

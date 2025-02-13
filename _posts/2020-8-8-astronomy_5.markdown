@@ -81,6 +81,14 @@ A股上市公司利欧股份斥资5000万美元投资马斯克旗下的Space X�
 
 ---
 
+不使用火箭的航天技术路线：质量加速器 (Mass Driver)、发射回路 (Launch Loop)、张拉整体环 (Tethered Ring)、轨道环 (Orbital Ring)。
+
+https://www.zhihu.com/question/652394786
+
+如果地球所剩火箭发射资源不足以支持一次发射任务，人类是不是就被困死在地球了？
+
+---
+
 https://mp.weixin.qq.com/s/sPTRKfuhEc0xx7GacomxkA
 
 霍尔效应推进器

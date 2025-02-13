@@ -91,6 +91,14 @@ https://refactoringguru.cn/design-patterns
 
 # 数据结构 & 普通CS算法
 
+AVL树是一种平衡二叉树，得名于其发明者的名字（Adelson-Velskii以及Landis）。
+
+https://zhuanlan.zhihu.com/p/34899732
+
+详解AVL树（基础篇）
+
+---
+
 在美团外卖向量检索系统的建设过程中，我们相继使用了HNSW（Hierarchical Navigable Small World），IVF（Inverted File），IVF-PQ（Inverted File with Product Quantization）以及IVF-PQ+Refine等算法。
 
 https://mp.weixin.qq.com/s/pPl-anyQnFNFkmBlVsrBpA
