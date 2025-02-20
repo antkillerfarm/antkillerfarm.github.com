@@ -178,6 +178,18 @@ gradient_accumulation_steps用于处理当模型的参数数量超过GPU内存�
 
 如果设置了gradient_accumulation_steps=N，那么模型会先对N个批次的数据进行前向和反向传播，将这些批次的梯度累积起来，然后才进行一次权重更新。这样，实际上的批次大小相当于 per_device_train_batch_size * N。
 
+## Multi-Token Prediction
+
+在训练阶段，一次生成多个后续token，可以一次学习多个位置的label，进而有效提升样本的利用效率，提升训练速度；在推理阶段通过一次生成多个token，实现成倍的推理加速来提升推理性能。
+
+https://zhuanlan.zhihu.com/p/18056041194
+
+MTP（Multi-Token Prediction）的前世今生
+
+https://blog.csdn.net/v_JULY_v/article/details/145374551
+
+一文通透让Meta恐慌的DeepSeek-V3：在MoE、GRPO、MLA基础上提出Multi-Token预测(含FP8训练详解)
+
 ## 参考
 
 https://mp.weixin.qq.com/s/39MYrsB3gXpfzTTOgQjDwg

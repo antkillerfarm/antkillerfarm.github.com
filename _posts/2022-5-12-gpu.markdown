@@ -83,6 +83,10 @@ GPU不追求单core的性能，因此也没有那些复杂的控制逻辑。这�
 
 >CPU的SSE、AVX之类的指令集，也借鉴了GPU的设计思想，但是CPU的core数，相对于GPU而言，差了10～1000倍。
 
+当线程束中的线程遇到分支语句（如if-else语句）时，如果不同线程的分支条件不同，就会出现线程束分化（Warp Divergence）。此时，线程束会串行地执行不同的分支代码。
+
+反之，如果某个warp中的所有线程条件都为True，则只有True分支会被执行，False分支不会被执行。
+
 ---
 
 VGPR：Vector general purpose register

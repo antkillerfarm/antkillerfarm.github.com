@@ -9,6 +9,30 @@ category: DRL
 
 # DRL参考资源
 
+https://zhuanlan.zhihu.com/p/29019246
+
+基于策略的增强学习
+
+https://mp.weixin.qq.com/s/OY56lJ_NFf5vVAgKfKyx2A
+
+利用强化学习自动搜索最优化方法
+
+https://mp.weixin.qq.com/s/nYOOwVoijl1p4V0A7yaI3w
+
+机遇与挑战：用强化学习自动搜索优化算法
+
+http://mp.weixin.qq.com/s/TBVVdX3erOpXNjXmhLmxOw
+
+学“深度强化学习”，看懂DeepMind这篇文章就够了!
+
+https://mp.weixin.qq.com/s/7BsXPQ8wC6_fHulU63ZQiQ
+
+当强化学习遇见泛函分析
+
+https://mp.weixin.qq.com/s/uDFsWebfLmka-zZX3Y_8kg
+
+深度强化学习在面向任务的对话管理中的应用
+
 https://zhuanlan.zhihu.com/p/41467058
 
 Policy Optimization with Demonstrations

@@ -257,6 +257,8 @@ https://zhuanlan.zhihu.com/p/673048264
 
 ## Mixtral
 
+Mixtral是由Mistral AI团队推出的MoE模型，参数大小为47B。
+
 ![](/images/img5/Mixtral.png)
 
 https://zhuanlan.zhihu.com/p/676010571
@@ -303,8 +305,10 @@ https://mp.weixin.qq.com/s/WFJxnTF9fGIIXPA7GQ5V2w
 
 详细谈谈DeepSeek MoE相关的技术发展
 
-# VLM
+https://blog.csdn.net/v_JULY_v/article/details/145429696
 
-https://zhuanlan.zhihu.com/p/702811733
+一文速览DeepSeek-R1的本地部署——可联网、可实现本地知识库问答：包括671B满血版和各个蒸馏版的部署
 
-Vision-Language Models (VLMs)多模态大模型一年多的进展与思考-2406
+https://blog.csdn.net/v_JULY_v/article/details/145406756
+
+一文速览DeepSeekMoE：从Mixtral 8x7B到DeepSeekMoE(含MoE架构的实现及DS LLM的简介)

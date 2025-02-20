@@ -205,6 +205,8 @@ CUDA为什么要分线程块和线程网格？
 
 ---
 
+Warp函数通过直接操作线程的寄存器来实现数据交换，而不是通过内存访问。因此，数据交换非常快速，延迟极低。
+
 https://zhuanlan.zhihu.com/p/669917716
 
 束内表决函数（Warp Vote Function）
@@ -220,6 +222,14 @@ https://zhuanlan.zhihu.com/p/670290502
 https://zhuanlan.zhihu.com/p/670534280
 
 束内规约函数（Warp Reduce Functions）
+
+https://zhuanlan.zhihu.com/p/652255520
+
+束内规约与块内规约问题
+
+https://zhuanlan.zhihu.com/p/646998011
+
+CUDA编程中的并行规约问题
 
 ## Debug
 

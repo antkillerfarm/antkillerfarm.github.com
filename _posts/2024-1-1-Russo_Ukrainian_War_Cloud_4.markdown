@@ -186,7 +186,3 @@ https://zhuanlan.zhihu.com/p/692209522
 https://zhuanlan.zhihu.com/p/690903957
 
 俄乌战场坦克型号识别速通小课
-
-https://zhuanlan.zhihu.com/p/2802965238
-
-俄罗斯会在2026年面临军事崩溃吗？乌克兰的战略评估内幕（10月24日）

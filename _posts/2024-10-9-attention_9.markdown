@@ -267,3 +267,9 @@ https://blog.csdn.net/v_JULY_v/article/details/131552592
 https://wandb.ai/ai2-llm/OLMo-7B/reports/OLMo-7B--Vmlldzo2NzQyMzk5
 
 这个网页收录了作者训练LLM时，各项指标的变化曲线。
+
+# VLM
+
+https://zhuanlan.zhihu.com/p/702811733
+
+Vision-Language Models (VLMs)多模态大模型一年多的进展与思考-2406

@@ -204,6 +204,12 @@ https://zhuanlan.zhihu.com/p/699754357
 
 ---
 
+Local Thread Block：当前正在执行的线程所在的线程块。
+
+Remote Thread Block：线程块簇中除本地线程块之外的其他线程块。
+
+---
+
 pytorch CUDA RadixSort call stack：
 
 ```cpp

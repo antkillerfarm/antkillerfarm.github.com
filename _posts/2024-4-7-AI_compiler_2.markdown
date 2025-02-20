@@ -97,6 +97,10 @@ https://zhuanlan.zhihu.com/p/600622073
 
 AI编译器之后端优化
 
+https://github.com/JYRoy/MLC-Learning
+
+一个Machine Learning Compilation方面的专栏
+
 ## OpenAI Triton
 
 一个类似于TVMscript的可以通过python语法去写高性能GPU程序的库。注意不要和NVIDIA Triton搞混了。后者是一个AI推理框架。
@@ -190,6 +194,10 @@ https://www.zhihu.com/column/c_186688444
 https://tfruan2000.github.io/posts/triton-linalg/
 
 Triton Linalg
+
+https://zhuanlan.zhihu.com/p/666763592
+
+lightllm代码解读番外篇——triton kernel撰写
 
 ## NVFuser
 
