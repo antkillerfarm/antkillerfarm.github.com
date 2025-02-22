@@ -7,6 +7,52 @@ category: DL acceleration
 * toc
 {:toc}
 
+# Alpa（续）
+
+MLIR中有mesh dialect用于描述Sharding Spec：
+
+```mlir
+module @sharding_test {
+  mesh.mesh @mesh_2d(shape = 4x8)
+
+  func.func @matmul_on_operand_shard_batch_and_k(%arg0: tensor<32x1000x4096xf32>, %arg1: tensor<32x4096x8192xf32>) -> tensor<32x1000x8192xf32> {
+    %sharding_annotated = mesh.shard %arg0 to <@mesh_2d, [[0], [], [1]]> annotate_for_users : tensor<32x1000x4096xf32>
+    %sharding_annotated_0 = mesh.shard %arg1 to <@mesh_2d, [[0], [1]]> annotate_for_users : tensor<32x4096x8192xf32>
+    %0 = tosa.matmul %sharding_annotated, %sharding_annotated_0 : (tensor<32x1000x4096xf32>, tensor<32x4096x8192xf32>) -> tensor<32x1000x8192xf32>
+    %sharding_annotated_1 = mesh.shard %0 to <@mesh_2d, [[0]], partial = sum[1]> : tensor<32x1000x8192xf32>
+    return %sharding_annotated_1 : tensor<32x1000x8192xf32>
+  }
+}
+```
+
+---
+
+如何用数学语言表示一个二维的one-hot：
+
+$$
+\begin{aligned}
+
+\forall (v,u) \in E, \
+& \forall i \in [0, k_v), & \sum_{j \in [0, k_u)}\mathbf{e}_{vu} [i,j] \leq \mathbf{s}_v[i] \\
+& \forall j \in [0, k_u), & \sum_{i \in [0, k_v)}\mathbf{e}_{vu} [i,j] \leq \mathbf{s}_u[j] \\
+
+\end{aligned}
+$$
+
+![](/images/img5/one_hot_decision_vector.svg)
+
+---
+
+参考：
+
+https://zhuanlan.zhihu.com/p/487588274
+
+用ILP和DP自动探索DL分布式策略——Alpa
+
+https://zhuanlan.zhihu.com/p/571836701
+
+Alpa论文解读
+
 # 工具
 
 FairScale是由Facebook Research开发的PyTorch扩展库。FSDP就是首发于这个库。
@@ -312,43 +358,3 @@ https://mp.weixin.qq.com/s/nTBuYuW7h9wZYuo3w1xGmQ
 https://mp.weixin.qq.com/s/LOTQfD9KKtAq0zz4rObCGA
 
 EB级系统空中换引擎：阿里调度执行框架如何全面升级？（DAG 2.0）
-
-https://zhuanlan.zhihu.com/p/26552293
-
-Dataflow架构和神经网络加速器
-
-https://zhuanlan.zhihu.com/p/28445511
-
-浅析深度学习框架设计中的关键技术
-
-https://mp.weixin.qq.com/s/wu32LBwrkkBIANMdknHlCA
-
-C++并行实战，592页pdf，C++ Concurrency in Action
-
-https://zhuanlan.zhihu.com/p/79385727
-
-有限元并行计算简介
-
-https://mp.weixin.qq.com/s/heVQ9AIZKxTiCNiAtYKaag
-
-新加坡国立大学最新“大规模深度学习优化”综述论文，带你全面了解最新深度学习准确率和效率的优化方法
-
-https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
-
-IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能
-
-http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
-
-神经网络的分布式训练
-
-https://mp.weixin.qq.com/s/nvuflLfOolidDDXJVe2DZA
-
-美团深度学习系统的工程实践
-
-https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
-
-TensorFlow分布式计算机制解读：以数据并行为重
-
-https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
-
-继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本

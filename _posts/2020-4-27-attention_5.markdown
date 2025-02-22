@@ -7,6 +7,40 @@ category: Attention
 * toc
 {:toc}
 
+# GPT（续）
+
+https://mp.weixin.qq.com/s/eJn379q9raDHY9FdWaXeKQ
+
+AI界最危险武器GPT-2使用指南：从Finetune到部署
+
+https://mp.weixin.qq.com/s/WDFwKqNynwPtXhM8rZnOsA
+
+自动生成马斯克的推特几乎无破绽！MIT用GPT-2模型做了个名人发言模仿器
+
+https://mp.weixin.qq.com/s/67Z_dslvwTyRl3OMrArhCg
+
+完全图解GPT-2（一）
+
+https://mp.weixin.qq.com/s/xk5fWrSBKErH8tvl-3pgtg
+
+完全图解GPT-2（二）
+
+https://zhuanlan.zhihu.com/p/80215294
+
+GPT：第一个引入Transformer的预训练模型
+
+https://mp.weixin.qq.com/s/dibf3bU4hQ7nXTPGMFsKbg
+
+GPT-3王者来袭！1750亿参数少样本无需微调，网友：“调参侠”都没的当了
+
+https://mp.weixin.qq.com/s/aPA0PEqVn509u3xbgmhIwQ
+
+一天star量破千，300行代码，特斯拉AI总监Karpathy写了个GPT的Pytorch训练库
+
+https://mp.weixin.qq.com/s/FOCR-9X5LVtjxVMWoAtw4g
+
+GPT的野望
+
 # ERNIE
 
 ERNIE是百度2019年提出的。
@@ -320,21 +354,3 @@ ViViT在ViT的基础上增加时间维度以处理视频。
 ![](/images/img5/U-ViT.png)
 
 U-ViT = U-Net + ViT
-
-## Masked Autoencoders
-
-![](/images/img4/MAE.png)
-
-何恺明的MAE也是类似的套路。
-
-https://mp.weixin.qq.com/s/x-ruExbM9T8EIv2gZW0Nnw
-
-视觉预训练新范式MAE
-
-https://www.zhihu.com/question/498364155
-
-如何看待何恺明最新一作论文Masked Autoencoders？
-
-https://mp.weixin.qq.com/s/CxEvEZ9AiEfB1TFFjev0aA
-
-NLP和CV的双子星，注入Mask的预训练模型BERT和MAE

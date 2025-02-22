@@ -9,6 +9,26 @@ category: Attention
 
 # BERT进阶（续）
 
+https://mp.weixin.qq.com/s/nlFXfgM5KKZXnPdwd97JYg
+
+哈工大讯飞联合实验室发布基于全词覆盖的中文BERT预训练模型
+
+https://zhuanlan.zhihu.com/p/70389596
+
+一批高质量中文BERT预训练模型请查收（上）
+
+https://mp.weixin.qq.com/s/h1VUSY7_UZF3PmjSN0DMSg
+
+从One-hot, Word embedding到Transformer，一步步教你理解Bert
+
+https://zhuanlan.zhihu.com/p/132554155
+
+超细节的BERT/Transformer知识点
+
+https://mp.weixin.qq.com/s/UJlmjFHWhnlXXJoRv4zkEQ
+
+虽被BERT碾压，但还是有必要谈谈BERT时代与后时代的NLP
+
 https://mp.weixin.qq.com/s/e4dgIdwzDzcLSkdgr1yZpg
 
 LeCun力荐：Facebook推出十亿参数超大容量存储器
@@ -390,35 +410,3 @@ T5: Text-to-Text Transfer Transformer阅读笔记
 https://mp.weixin.qq.com/s/X1mLXPzJU7k_ANMzvVPxjA
 
 BERT、RoBERTa、DistilBERT与XLNet，我们到底该如何选择？
-
-https://mp.weixin.qq.com/s/GGRORF5EfJ5xzMLwAsJt5w
-
-从词袋到Transfomer，NLP十年突破史
-
-https://zhuanlan.zhihu.com/p/125145283
-
-Rethink深度学习中的Attention机制
-
-https://mp.weixin.qq.com/s/fxEg8UOa3MeJ6qx5SjEHog
-
-NLP领域中各式各样Attention知识系统性的梳理和总结
-
-https://mp.weixin.qq.com/s/_5YaZdYa8bTFiAzHyrMFBg
-
-理解卷积神经网络中的自注意力机制
-
-https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
-
-阿里北大提出新attention建模框架，一个模型预测多种行为
-
-https://mp.weixin.qq.com/s/Yq3S4WrsQRQC06GvRgGjTQ
-
-打入神经网络思维内部
-
-https://mp.weixin.qq.com/s/MJ1578NdTKbjU-j3Uuo9Ww
-
-基于文档级问答任务的新注意力模型
-
-https://mp.weixin.qq.com/s/_3pA8FZwzegSpyz_cK63BQ
-
-Self-Attention GAN中的self-attention机制

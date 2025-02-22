@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（九）——Attention进阶, Transformer进阶, LLM实战
+title:  Attention（九）——Attention进阶, Transformer进阶
 category: Attention 
 ---
 
@@ -8,6 +8,38 @@ category: Attention
 {:toc}
 
 # Attention进阶（续）
+
+https://mp.weixin.qq.com/s/GGRORF5EfJ5xzMLwAsJt5w
+
+从词袋到Transfomer，NLP十年突破史
+
+https://zhuanlan.zhihu.com/p/125145283
+
+Rethink深度学习中的Attention机制
+
+https://mp.weixin.qq.com/s/fxEg8UOa3MeJ6qx5SjEHog
+
+NLP领域中各式各样Attention知识系统性的梳理和总结
+
+https://mp.weixin.qq.com/s/_5YaZdYa8bTFiAzHyrMFBg
+
+理解卷积神经网络中的自注意力机制
+
+https://mp.weixin.qq.com/s/y_hIhdJ1EN7D3p2PVaoZwA
+
+阿里北大提出新attention建模框架，一个模型预测多种行为
+
+https://mp.weixin.qq.com/s/Yq3S4WrsQRQC06GvRgGjTQ
+
+打入神经网络思维内部
+
+https://mp.weixin.qq.com/s/MJ1578NdTKbjU-j3Uuo9Ww
+
+基于文档级问答任务的新注意力模型
+
+https://mp.weixin.qq.com/s/_3pA8FZwzegSpyz_cK63BQ
+
+Self-Attention GAN中的self-attention机制
 
 https://mp.weixin.qq.com/s/l4HN0_VzaiO-DwtNp9cLVA
 
@@ -190,86 +222,3 @@ https://mp.weixin.qq.com/s/IWUxVzpdGIX1Oxn4KxjhHA
 https://mp.weixin.qq.com/s/IWUxVzpdGIX1Oxn4KxjhHA
 
 TransGAN：两个Transformer可以构造一个强大的GAN
-
-# LLM实战
-
-https://pytorch.org/blog/high-performance-llama-2/
-
-https://huggingface.co/blog/zh/bloom-inference-optimization
-
-https://huggingface.co/blog/zh/bloom-megatron-deepspeed
-
----
-
-![](/images/img5/Spike.webp)
-
-训练过程中，损失偶尔会出现毛刺的情况。针对这种情况，Falcon作者会恢复到上一个最新的Checkpoint，并跳过1B Token数据继续训练。作者训练Falcon-180B时出现了9次毛刺。
-
-Google训练PaLM模型遇到了同样的问题。针对此种情况，作者会重启训练，并从毛刺之前的100个step开始，跳过200-500个Batch的数据。作者也做了消融实验，发现并不是单个数据的问题，而可能是这连续的一系列Batch数据引起的。
-
-https://mp.weixin.qq.com/s/rLJlaqI2RL7TGUEQyx-QaA
-
-万卡GPU集群实战：探索LLM预训练的挑战
-
----
-
-MFU（Model FLOPs Utilization）
-
-$$\text{MFU} = \frac{\text{model FLOPs per iteration}}{\text{GPU单卡算力} \times \text{卡数} \times \text{一次迭代时间}}$$
-
-Transformer模型的MFU计算公式：
-
-$$\text{MFU} = \frac{72blsh^2 \left(1 + \frac{s}{6h} + \frac{V}{12hl}\right)}{F \times N \times T}$$
-
-- b：批次大小（micro batch size）。
-- l：Transformer 层数。
-- s：序列长度。
-- h：隐藏层维度。
-- V：词表大小。
-- F：GPU 单卡的峰值算力（FLOPS）。
-- N：使用的 GPU 卡数量。
-- T：一次迭代时间（秒）。
-
----
-
-https://docs.swanlab.cn/zh/examples/pretrain_llm.html
-
-从零预训练一个自己的大模型
-
-本人的魔改版本，wiki_zh dataset + Qwen tokenizer + llama 2 model：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/huggingface/llm_train.py
-
----
-
-在大模型训练过程中，为确保训练的稳定性与有效性，需密切关注多项关键指标以评估训练状态，其中包括但不限于perplexity (PPL)、gradient norm (GNorm)、activation norm、内存占用情况以及Loss scale等参数。
-
-梯度裁剪（Gradient Clipping）：作为一种常用的稳定训练手段，通常设定裁剪阈值为1.0，防止梯度过大引发训练不稳定。
-
-Weight Decay（L2正则化）：设置合理的权重衰减率，如0.1，有助于防止过拟合，增强模型泛化能力。
-
-特殊层的调整：GLM研究发现，embedding层往往存在较大的梯度异常情况，故需根据实际情况适度调整相关参数。
-
----
-
-https://blog.csdn.net/v_JULY_v/article/details/132178447
-
-七月论文审稿GPT第1版：通过3万多篇paper和10多万的review数据微调RWKV
-
-https://blog.csdn.net/v_JULY_v/article/details/134183799
-
-七月论文审稿GPT第2版：用一万多条paper-review数据微调LLaMA2 7B最终反超GPT4
-
-https://blog.csdn.net/v_JULY_v/article/details/131552592
-
-基于LangChain+LLM的本地知识库问答：从企业单文档问答到批量文档问答
-
-https://wandb.ai/ai2-llm/OLMo-7B/reports/OLMo-7B--Vmlldzo2NzQyMzk5
-
-这个网页收录了作者训练LLM时，各项指标的变化曲线。
-
-# VLM
-
-https://zhuanlan.zhihu.com/p/702811733
-
-Vision-Language Models (VLMs)多模态大模型一年多的进展与思考-2406

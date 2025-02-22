@@ -9,6 +9,20 @@ category: Attention
 
 # RWKV（续）
 
+## RWKV
+
+代码：
+
+https://github.com/BlinkDL/ChatRWKV
+
+![](/images/img5/RWKV.png)
+
+RWKV训练的时候用主图的CNN形式，而推理的时候用左下角的RNN形式。
+
+RNN的weight不随输入序列的不同而不同，而RWKV会根据输入序列，计算得到weight，这个weight随输入序列的变化而变化的特性，正好是attention的特性。
+
+RWKV没有使用attention，而是号称100%RNN。
+
 Q：RNN-based没有attention之类机制的模型是怎么获得long memory的能力的啊？
 
 A：这个形式就是Transformers are RNNs的形式，只不过把Q换成了positional invariant的time weighting。最近很多work都显示Attention里的Q其实没啥用，换成一个跟着相对位置exponential decay的term就行了。
@@ -316,23 +330,3 @@ Bert时代的创新：Bert在NLP各领域的应用进展
 https://mp.weixin.qq.com/s/l-de0vfx-L24g58IxK-NKQ
 
 Jeff Dean强推：可视化Bert网络，发掘其中的语言、语法树与几何学
-
-https://mp.weixin.qq.com/s/nlFXfgM5KKZXnPdwd97JYg
-
-哈工大讯飞联合实验室发布基于全词覆盖的中文BERT预训练模型
-
-https://zhuanlan.zhihu.com/p/70389596
-
-一批高质量中文BERT预训练模型请查收（上）
-
-https://mp.weixin.qq.com/s/h1VUSY7_UZF3PmjSN0DMSg
-
-从One-hot, Word embedding到Transformer，一步步教你理解Bert
-
-https://zhuanlan.zhihu.com/p/132554155
-
-超细节的BERT/Transformer知识点
-
-https://mp.weixin.qq.com/s/UJlmjFHWhnlXXJoRv4zkEQ
-
-虽被BERT碾压，但还是有必要谈谈BERT时代与后时代的NLP

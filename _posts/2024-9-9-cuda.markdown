@@ -281,7 +281,7 @@ https://docs.nvidia.com/nsight-compute
 
 ---
 
-`nsys profile /data/miniforge3/envs/torch_3.12/bin/python3.12 -m llm_train_te_2`
+`nsys profile /data/miniforge3/envs/torch_3.12/bin/python3.12 -m llm_train`
 
 https://fkong.tech/posts/2023-11-19-torch-gpu-util/
 

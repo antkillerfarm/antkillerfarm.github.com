@@ -181,6 +181,46 @@ Gucci家族谋杀案：现实中的豪门恩怨远比电影更精彩
 
 # 并行 & 框架 & 优化参考资源+
 
+https://zhuanlan.zhihu.com/p/26552293
+
+Dataflow架构和神经网络加速器
+
+https://zhuanlan.zhihu.com/p/28445511
+
+浅析深度学习框架设计中的关键技术
+
+https://mp.weixin.qq.com/s/wu32LBwrkkBIANMdknHlCA
+
+C++并行实战，592页pdf，C++ Concurrency in Action
+
+https://zhuanlan.zhihu.com/p/79385727
+
+有限元并行计算简介
+
+https://mp.weixin.qq.com/s/heVQ9AIZKxTiCNiAtYKaag
+
+新加坡国立大学最新“大规模深度学习优化”综述论文，带你全面了解最新深度学习准确率和效率的优化方法
+
+https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
+
+IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能
+
+http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
+
+神经网络的分布式训练
+
+https://mp.weixin.qq.com/s/nvuflLfOolidDDXJVe2DZA
+
+美团深度学习系统的工程实践
+
+https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
+
+TensorFlow分布式计算机制解读：以数据并行为重
+
+https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
+
+继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本
+
 https://mp.weixin.qq.com/s/IqjKdAlGYREqCR9XQB5N1A
 
 伯克利AI分布式框架Ray，兼容TensorFlow、PyTorch与MXNet

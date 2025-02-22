@@ -9,6 +9,12 @@ category: Attention
 
 # LLM大乱战（续）
 
+DeepSeek估值时，对标的是OpenAI，其估值区间被估算在10亿美元至1500亿美元之间。
+
+根据“路边消息社”报道，现在想约见梁文锋，需要先报省委办公厅。一般人见不到梁文锋。网上还传出了“大年三十特警陪同回家，村口警察巡逻”的消息。
+
+---
+
 参考：
 
 https://www.zhihu.com/question/584132646
@@ -213,6 +219,12 @@ Mixture of Experts(MoE)
 
 ![](/images/img6/expert_parallel.png)
 
+挑出模长最大的k个向量来逼近n个向量之和：模长越大的向量，在求和过程中越不容易被抵消，从而作用越突出。
+
+https://kexue.fm/archives/10699
+
+MoE环游记：从几何意义出发
+
 ---
 
 开源项目：
@@ -290,25 +302,3 @@ DeekSeek采用了“增加共享专家+无辅助损耗负载平衡”的方法�
 PS：辅助loss本质上只是路由策略，而不是样本的真实loss，过分加重前者，显然会导致整个模型的性能下降。
 
 MoE架构的本质是模型参数分布式存储，MoE减少计算量的代价可能是不同专家模型的参数重复和总参数量增加，这往往也意味着更大更贵的HBM成本。外界传言的MoE模型可以更小，其实是指的MoE模型蒸馏的Dense模型可以兼顾参数量和推理（Reasoning）性能。
-
-DeepSeek选择Llama和Qwen系列开源大模型进行蒸馏，使相应的Dense模型也能获得推理能力。例如DeepSeek-R1-Distill-Qwen-7B，实际上就是模型结构采用Qwen-7B，而对模型参数进行了蒸馏。
-
-https://zhuanlan.zhihu.com/p/21208287743
-
-DeepSeek是否有国运级的创新？（上）从V3到R1的架构创新与误传的2万字长文分析
-
-https://zhuanlan.zhihu.com/p/21755758234
-
-DeepSeek是否有国运级的创新？（下）从V3到R1的架构创新与误传的2万字长文分析
-
-https://mp.weixin.qq.com/s/WFJxnTF9fGIIXPA7GQ5V2w
-
-详细谈谈DeepSeek MoE相关的技术发展
-
-https://blog.csdn.net/v_JULY_v/article/details/145429696
-
-一文速览DeepSeek-R1的本地部署——可联网、可实现本地知识库问答：包括671B满血版和各个蒸馏版的部署
-
-https://blog.csdn.net/v_JULY_v/article/details/145406756
-
-一文速览DeepSeekMoE：从Mixtral 8x7B到DeepSeekMoE(含MoE架构的实现及DS LLM的简介)

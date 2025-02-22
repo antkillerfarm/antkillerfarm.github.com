@@ -1,0 +1,135 @@
+---
+layout: post
+title:  Large Language Model（四）——LLM实战
+category: Attention 
+---
+
+* toc
+{:toc}
+
+# MoE
+
+## DeepSeek（续）
+
+DeepSeek选择Llama和Qwen系列开源大模型进行蒸馏，使相应的Dense模型也能获得推理能力。例如DeepSeek-R1-Distill-Qwen-7B，实际上就是模型结构采用Qwen-7B，而对模型参数进行了蒸馏。
+
+https://zhuanlan.zhihu.com/p/21208287743
+
+DeepSeek是否有国运级的创新？（上）从V3到R1的架构创新与误传的2万字长文分析
+
+https://zhuanlan.zhihu.com/p/21755758234
+
+DeepSeek是否有国运级的创新？（下）从V3到R1的架构创新与误传的2万字长文分析
+
+https://mp.weixin.qq.com/s/WFJxnTF9fGIIXPA7GQ5V2w
+
+详细谈谈DeepSeek MoE相关的技术发展
+
+https://blog.csdn.net/v_JULY_v/article/details/145429696
+
+一文速览DeepSeek-R1的本地部署——可联网、可实现本地知识库问答：包括671B满血版和各个蒸馏版的部署
+
+https://blog.csdn.net/v_JULY_v/article/details/145406756
+
+一文速览DeepSeekMoE：从Mixtral 8x7B到DeepSeekMoE(含MoE架构的实现及DS LLM的简介)
+
+---
+
+deepseek r1的推理性价比方案实际上在两端。要么是上万并发度的大集群，deepseek的320 GPU作为最小部署单元就是这样一个极端，要么是单用户并发度价格做得足够低。
+
+存储需求671GB起步，但给一个请求生成一个token只需要读37GB的数据。如果并发度提高，那么多个请求对应多份37GB的数据。这就造成了tps和并发度基本呈反比关系。
+
+但是因为所有请求的访存都是落在这个671GB范围内的，而不是batchsize x 37GB，所以当并发度增加到一定程度，tps衰减就收敛了。
+
+如果超大超稀疏的MoE模型成为主流，那么“云上面向大并发的分布式推理”和“本地面向中小并发的推理”在架构上就开始要分岔了，需要分别演进。
+
+## Sparse Attention
+
+MoE主要是对FFN（expert）进行稀疏化，相应的还有Sparse Attention。
+
+https://www.zhihu.com/question/12616022631
+
+DeepSeek新论文NSA注意力机制，有哪些信息值得关注？
+
+# LLM实战
+
+https://pytorch.org/blog/high-performance-llama-2/
+
+https://huggingface.co/blog/zh/bloom-inference-optimization
+
+https://huggingface.co/blog/zh/bloom-megatron-deepspeed
+
+---
+
+![](/images/img5/Spike.webp)
+
+训练过程中，损失偶尔会出现毛刺的情况。针对这种情况，Falcon作者会恢复到上一个最新的Checkpoint，并跳过1B Token数据继续训练。作者训练Falcon-180B时出现了9次毛刺。
+
+Google训练PaLM模型遇到了同样的问题。针对此种情况，作者会重启训练，并从毛刺之前的100个step开始，跳过200-500个Batch的数据。作者也做了消融实验，发现并不是单个数据的问题，而可能是这连续的一系列Batch数据引起的。
+
+https://mp.weixin.qq.com/s/rLJlaqI2RL7TGUEQyx-QaA
+
+万卡GPU集群实战：探索LLM预训练的挑战
+
+---
+
+MFU（Model FLOPs Utilization）
+
+$$\text{MFU} = \frac{\text{model FLOPs per iteration}}{\text{GPU单卡算力} \times \text{卡数} \times \text{一次迭代时间}}$$
+
+Transformer模型的MFU计算公式：
+
+$$\text{MFU} = \frac{72blsh^2 \left(1 + \frac{s}{6h} + \frac{V}{12hl}\right)}{F \times N \times T}$$
+
+- b：批次大小（micro batch size）。
+- l：Transformer 层数。
+- s：序列长度。
+- h：隐藏层维度。
+- V：词表大小。
+- F：GPU 单卡的峰值算力（FLOPS）。
+- N：使用的 GPU 卡数量。
+- T：一次迭代时间（秒）。
+
+---
+
+https://docs.swanlab.cn/zh/examples/pretrain_llm.html
+
+从零预训练一个自己的大模型
+
+本人的魔改版本，wiki_zh dataset + Qwen tokenizer + llama 2 model：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/huggingface/llm_train.py
+
+---
+
+在大模型训练过程中，为确保训练的稳定性与有效性，需密切关注多项关键指标以评估训练状态，其中包括但不限于perplexity (PPL)、gradient norm (GNorm)、activation norm、内存占用情况以及Loss scale等参数。
+
+梯度裁剪（Gradient Clipping）：作为一种常用的稳定训练手段，通常设定裁剪阈值为1.0，防止梯度过大引发训练不稳定。
+
+Weight Decay（L2正则化）：设置合理的权重衰减率，如0.1，有助于防止过拟合，增强模型泛化能力。
+
+特殊层的调整：GLM研究发现，embedding层往往存在较大的梯度异常情况，故需根据实际情况适度调整相关参数。
+
+---
+
+https://blog.csdn.net/v_JULY_v/article/details/132178447
+
+七月论文审稿GPT第1版：通过3万多篇paper和10多万的review数据微调RWKV
+
+https://blog.csdn.net/v_JULY_v/article/details/134183799
+
+七月论文审稿GPT第2版：用一万多条paper-review数据微调LLaMA2 7B最终反超GPT4
+
+https://blog.csdn.net/v_JULY_v/article/details/131552592
+
+基于LangChain+LLM的本地知识库问答：从企业单文档问答到批量文档问答
+
+https://wandb.ai/ai2-llm/OLMo-7B/reports/OLMo-7B--Vmlldzo2NzQyMzk5
+
+这个网页收录了作者训练LLM时，各项指标的变化曲线。
+
+# VLM
+
+https://zhuanlan.zhihu.com/p/702811733
+
+Vision-Language Models (VLMs)多模态大模型一年多的进展与思考-2406

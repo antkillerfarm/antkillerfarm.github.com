@@ -61,6 +61,12 @@ The Illustrated Transformer
 
 3.为了解决循环结构的次序问题，论文提出了上图所示的Masked Multi-Head Attention。
 
+![](/images/img6/LLM_train.png)
+
+以预测下一个词的生成任务为例，训练时使用Mask，遮挡住训练文本中当前位置及之后的值，让Transformer输出各token的概率，并计算和训练文本之间的loss。
+
+简单说就是：**训练时只有encoder**，使用Mask实现遮挡。由于encoder可以并行执行，所以Transformer的训练效率，远高于RNN。
+
 ![](/images/img6/Transformer_block.png)
 
 ## FFN
@@ -362,14 +368,3 @@ Sesame Street（芝麻街）是是美国公共广播协会（PBS）制作播出�
 ![](/images/img3/PTM.jpg)
 
 ![](/images/img3/PTM.png)
-
-- 传统word2vec无法解决一词多义，语义信息不够丰富，诞生了ELMO。
-- ELMO以lstm堆积，串行且提取特征能力不够，诞生了GPT。
-- GPT 虽然用transformer堆积，但是是单向的，诞生了BERT。
-- BERT虽然双向，但是mask不适用于自编码模型，诞生了XLNET。
-- BERT中mask代替单个字符而非实体或短语，没有考虑词法结构/语法结构，诞生了ERNIE。
-- 为了mask掉中文的词而非字，让BERT更好的应用在中文任务，诞生了BERT-wwm。
-- Bert训练用更多的数据、训练步数、更大的批次，mask机制变为动态的，诞生了RoBERTa。
-- ERNIE的基础上，用大量数据和先验知识，进行多任务的持续学习，诞生了ERNIE2.0。
-- BERT-wwm增加了训练数据集、训练步数，诞生了BERT-wwm-ext。
-- BERT的其他改进模型基本靠增加参数和训练数据，考虑轻量化之后，诞生了ALBERT。

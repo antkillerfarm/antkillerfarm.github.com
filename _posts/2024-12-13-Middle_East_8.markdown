@@ -97,6 +97,12 @@ PBUH: Prophet Muhammad
 
 ---
 
+朱委员长的纳赛尔主义老爹侯赛因·沙拉批评了“新叙利亚”的私有化政策。
+
+儿皇，臣父有本奏！
+
+---
+
 https://mp.weixin.qq.com/s/3Frx_ZmmmEC_aj4tLUPleg
 
 苏莱曼尼被斩首后，这篇文章把两伊根本问题说清楚了

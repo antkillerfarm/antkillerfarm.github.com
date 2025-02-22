@@ -9,6 +9,24 @@ category: Attention
 
 # Attention in CV & RS（续）
 
+## Masked Autoencoders
+
+![](/images/img4/MAE.png)
+
+何恺明的MAE也是类似的套路。
+
+https://mp.weixin.qq.com/s/x-ruExbM9T8EIv2gZW0Nnw
+
+视觉预训练新范式MAE
+
+https://www.zhihu.com/question/498364155
+
+如何看待何恺明最新一作论文Masked Autoencoders？
+
+https://mp.weixin.qq.com/s/CxEvEZ9AiEfB1TFFjev0aA
+
+NLP和CV的双子星，注入Mask的预训练模型BERT和MAE
+
 ## Swin Transformer
 
 ![](/images/img5/Swin_Transformer.png)
@@ -359,17 +377,3 @@ Linear Transformer对于softmax的处理比较复杂，大体思路和FlashAtten
 https://www.cnblogs.com/tuyuge/p/17407771.html
 
 Attention free transformer
-
-## RWKV
-
-代码：
-
-https://github.com/BlinkDL/ChatRWKV
-
-![](/images/img5/RWKV.png)
-
-RWKV训练的时候用主图的CNN形式，而推理的时候用左下角的RNN形式。
-
-RNN的weight不随输入序列的不同而不同，而RWKV会根据输入序列，计算得到weight，这个weight随输入序列的变化而变化的特性，正好是attention的特性。
-
-RWKV没有使用attention，而是号称100%RNN。

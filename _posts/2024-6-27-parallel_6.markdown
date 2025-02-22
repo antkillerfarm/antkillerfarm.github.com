@@ -7,7 +7,43 @@ category: DL acceleration
 * toc
 {:toc}
 
-# 快速Transformer（续）
+# 快速Transformer
+
+## FlashDecoding（续）
+
+New hardware features on Hopper GPUs - WGMMA, TMA, FP8
+
+https://www.zhihu.com/question/661395457
+
+FlashAttention-3发布！有什么新优化点？
+
+https://zhuanlan.zhihu.com/p/661478232
+
+FlashAttenion-V3: Flash Decoding详解
+
+## PagedAttention
+
+PagedAttention是UC Berkeley的作品。
+
+![](/images/img5/PagedAttention.gif)
+
+PagedAttention使用分页管理的方式管理KV Cache，将每个序列的KV Cache划分为块，每个块包含固定数量token的K/V。
+
+![](/images/img5/PagedAttention_2.gif)
+
+Parallel Sampling：我给模型发送一个请求，希望它对prompt做续写，并给出三种不同的回答。我们管这个场景叫parallel sampling。
+
+显然这里的prompt部分的KV cache是完全重复。这时可以使用如上图所示的进阶版本，通过类似MMU的逻辑地址和物理地址的映射，来解决存储问题。
+
+这个方法也可以推广到Beam Search、Shared prefix等场景。
+
+https://blog.vllm.ai/2023/06/20/vllm.html
+
+vLLM: Easy, Fast, and Cheap LLM Serving with PagedAttention
+
+https://zhuanlan.zhihu.com/p/691038809
+
+vLLM核心技术PagedAttention原理
 
 ## 参考
 
@@ -248,49 +284,3 @@ ILP相关的库还有pyomo、cyipopt等。
 Resharding cost是不同sharding之间切换产生的开销：
 
 ![](/images/img5/resharding.svg)
-
----
-
-MLIR中有mesh dialect用于描述Sharding Spec：
-
-```mlir
-module @sharding_test {
-  mesh.mesh @mesh_2d(shape = 4x8)
-
-  func.func @matmul_on_operand_shard_batch_and_k(%arg0: tensor<32x1000x4096xf32>, %arg1: tensor<32x4096x8192xf32>) -> tensor<32x1000x8192xf32> {
-    %sharding_annotated = mesh.shard %arg0 to <@mesh_2d, [[0], [], [1]]> annotate_for_users : tensor<32x1000x4096xf32>
-    %sharding_annotated_0 = mesh.shard %arg1 to <@mesh_2d, [[0], [1]]> annotate_for_users : tensor<32x4096x8192xf32>
-    %0 = tosa.matmul %sharding_annotated, %sharding_annotated_0 : (tensor<32x1000x4096xf32>, tensor<32x4096x8192xf32>) -> tensor<32x1000x8192xf32>
-    %sharding_annotated_1 = mesh.shard %0 to <@mesh_2d, [[0]], partial = sum[1]> : tensor<32x1000x8192xf32>
-    return %sharding_annotated_1 : tensor<32x1000x8192xf32>
-  }
-}
-```
-
----
-
-如何用数学语言表示一个二维的one-hot：
-
-$$
-\begin{aligned}
-
-\forall (v,u) \in E, \
-& \forall i \in [0, k_v), & \sum_{j \in [0, k_u)}\mathbf{e}_{vu} [i,j] \leq \mathbf{s}_v[i] \\
-& \forall j \in [0, k_u), & \sum_{i \in [0, k_v)}\mathbf{e}_{vu} [i,j] \leq \mathbf{s}_u[j] \\
-
-\end{aligned}
-$$
-
-![](/images/img5/one_hot_decision_vector.svg)
-
----
-
-参考：
-
-https://zhuanlan.zhihu.com/p/487588274
-
-用ILP和DP自动探索DL分布式策略——Alpa
-
-https://zhuanlan.zhihu.com/p/571836701
-
-Alpa论文解读

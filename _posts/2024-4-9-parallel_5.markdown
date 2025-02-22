@@ -125,6 +125,28 @@ MLA的关键是低秩分解后面的事情，GQA是split and repeat，MLA则一�
 
 推理时，MLA需要利用恒等变换才能实现低秩的KV Cache，但代价是每个头的Q/K的head_size变大了不小，所以理论上MLA推理的计算量是增加的。它最后之所以还能提高效率，是充分结合了LLM推理主要瓶颈还是访存而不是计算这一特性。
 
+MLA推理时，使用了**矩阵吸收**的技巧。
+
+标准Attention权重的计算：
+
+$$A=(x * W_q) * (x * W_k)^T$$
+
+通过矩阵的恒等变化，得到吸收后的权重计算方式为：
+
+$$A=(x * (W_q * W_k^T)) * x$$
+
+而$$W_q * W_k^T$$可以作为Q的投影矩阵出现。
+
+不难发现，矩阵吸收不是MLA独有的，MHA也可以做这样的操作。它本质上是用计算量换空间的策略。
+
+Prefill阶段的瓶颈是计算量，MLA的矩阵吸收并没有优势，甚至更慢；但在Decode阶段，由于推理是逐token进行的，计算量少但需要线性积累KV Cache，总的KV Cache的大小就成为了显存瓶颈，MLA此时起到显著的作用。
+
+而MHA使用矩阵吸收，由于增加的计算量过于巨大，无论何种阶段都没有收益。
+
+需要注意，上述矩阵吸收的技巧没有考虑ROPE的影响，实际情况还要更复杂一些。
+
+参考：
+
 https://kexue.fm/archives/10091
 
 缓存与效果的极限拉扯：从MHA、MQA、GQA到MLA
@@ -132,6 +154,18 @@ https://kexue.fm/archives/10091
 https://www.zhihu.com/question/655172528
 
 如何看待DeepSeek发布的MoE大模型DeepSeek-V2？
+
+https://huggingface.co/blog/Junrulu/mla-codebased-analysis
+
+结合Deepseek代码探讨MLA的改进及收益
+
+https://zhuanlan.zhihu.com/p/697781431
+
+还在用MHA？MLA来了DeepSeek-v2的MLA的总结和思考
+
+https://zhuanlan.zhihu.com/p/703862723
+
+大模型KV Cache节省神器MLA学习笔记（包含推理时的矩阵吸收分析）
 
 # 快速Transformer
 
@@ -266,39 +300,3 @@ Prefill阶段在Q的seqlen维度以及batch_size维度做并行。
 https://crfm.stanford.edu/2023/10/12/flashdecoding.html
 
 Flash-Decoding for long-context inference
-
----
-
-New hardware features on Hopper GPUs - WGMMA, TMA, FP8
-
-https://www.zhihu.com/question/661395457
-
-FlashAttention-3发布！有什么新优化点？
-
-https://zhuanlan.zhihu.com/p/661478232
-
-FlashAttenion-V3: Flash Decoding详解
-
-## PagedAttention
-
-PagedAttention是UC Berkeley的作品。
-
-![](/images/img5/PagedAttention.gif)
-
-PagedAttention使用分页管理的方式管理KV Cache，将每个序列的KV Cache划分为块，每个块包含固定数量token的K/V。
-
-![](/images/img5/PagedAttention_2.gif)
-
-Parallel Sampling：我给模型发送一个请求，希望它对prompt做续写，并给出三种不同的回答。我们管这个场景叫parallel sampling。
-
-显然这里的prompt部分的KV cache是完全重复。这时可以使用如上图所示的进阶版本，通过类似MMU的逻辑地址和物理地址的映射，来解决存储问题。
-
-这个方法也可以推广到Beam Search、Shared prefix等场景。
-
-https://blog.vllm.ai/2023/06/20/vllm.html
-
-vLLM: Easy, Fast, and Cheap LLM Serving with PagedAttention
-
-https://zhuanlan.zhihu.com/p/691038809
-
-vLLM核心技术PagedAttention原理
