@@ -203,6 +203,30 @@ https://zhuanlan.zhihu.com/p/96986818
 
 # 并行 & 框架 & 优化参考资源+
 
+https://mp.weixin.qq.com/s/AeCQK2hFy60pq6y1tRcs_A
+
+20页pdf，A Survey on Large-scale Machine
+
+https://mp.weixin.qq.com/s/iW0k80TUPuWDE9xwHvX91g
+
+为什么你需要Raven：全球首个真正分布式深度学习训练协议
+
+https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750181&idx=1&sn=156dac3c5646143fc2577972f1506836
+
+GPU捉襟见肘还想训练大批量模型？谁说不可以
+
+https://mp.weixin.qq.com/s/-CTVyKWtdTK0RIfzzPVyNQ
+
+分布式与高效深度学习，140页ppt详述深度学习压缩与联邦学习训练技术进展
+
+https://mp.weixin.qq.com/s/nTBuYuW7h9wZYuo3w1xGmQ
+
+分布式训练的方案和效率对比
+
+https://mp.weixin.qq.com/s/LOTQfD9KKtAq0zz4rObCGA
+
+EB级系统空中换引擎：阿里调度执行框架如何全面升级？（DAG 2.0）
+
 https://mp.weixin.qq.com/s/kOCftzSbHe2mvDmlRp-ihA
 
 Jeff Dean：AI对计算机系统设计的影响

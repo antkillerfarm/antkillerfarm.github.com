@@ -11,6 +11,14 @@ category: Attention
 
 ## DeepSeek（续）
 
+DeekSeek采用了“增加共享专家+无辅助损耗负载平衡”的方法解决这一问题。
+
+无辅助损耗负载均衡（Auxiliary-Loss-Free Load Balancing）方法是将特定于专家的偏差项添加到路由机制和专家亲和力中。偏差项不会通过梯度下降进行更新，而是在整个训练过程中持续监控并进行调整以确保负载平衡。如果训练中某个专家没有获得合理的命中次数，可以在每个梯度步骤中微调偏差项增加命中概率。
+
+PS：辅助loss本质上只是路由策略，而不是样本的真实loss，过分加重前者，显然会导致整个模型的性能下降。
+
+MoE架构的本质是模型参数分布式存储，MoE减少计算量的代价可能是不同专家模型的参数重复和总参数量增加，这往往也意味着更大更贵的HBM成本。外界传言的MoE模型可以更小，其实是指的MoE模型蒸馏的Dense模型可以兼顾参数量和推理（Reasoning）性能。
+
 DeepSeek选择Llama和Qwen系列开源大模型进行蒸馏，使相应的Dense模型也能获得推理能力。例如DeepSeek-R1-Distill-Qwen-7B，实际上就是模型结构采用Qwen-7B，而对模型参数进行了蒸馏。
 
 https://zhuanlan.zhihu.com/p/21208287743
@@ -50,6 +58,12 @@ MoE主要是对FFN（expert）进行稀疏化，相应的还有Sparse Attention�
 https://www.zhihu.com/question/12616022631
 
 DeepSeek新论文NSA注意力机制，有哪些信息值得关注？
+
+## Expert Parallelism
+
+https://github.com/deepseek-ai/DeepEP
+
+deepseek官方的EP库
 
 # LLM实战
 

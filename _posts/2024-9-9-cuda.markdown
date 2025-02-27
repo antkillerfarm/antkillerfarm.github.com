@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  CUDA
+title:  CUDA（一）
 category: AI 
 ---
 
@@ -231,6 +231,22 @@ https://zhuanlan.zhihu.com/p/646998011
 
 CUDA编程中的并行规约问题
 
+## Memory Coalescing
+
+![](/images/img6/Memory_Coalescing.jpg)
+
+Memory Coalescing合并发生在不同线程之间，而不是线程内部的不同迭代之间。
+
+warp中的所有线程都执行相同的指令，它们在任何时候都在同时执行第k次迭代。因此，一个线程在其生命周期内是否读取整行数据并不重要。重要的是，wrap内的所有线程在每次内存访问时可以合并。
+
+在上图中，矩阵M内存访问模式是低效的，而矩阵N的访问模型是高效的。
+
+参考：
+
+https://zhuanlan.zhihu.com/p/300785893
+
+CUDA编程之Memory Coalescing
+
 ## Debug
 
 `nvcc -g -G -o test metrixMul.cu`
@@ -306,23 +322,3 @@ nsightcompute进阶
 `sudo fuser -v /dev/nvidia*`
 
 kill所有使用显卡的进程即可。
-
-## CUDA实战
-
-安装：
-
-http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
-
----
-
-`${CUDA_HOME}/targets/x86_64-linux/lib/stubs/`文件夹下有常见的libcuda.so、libcublas.so等动态链接库，但是里面只有函数名，没有函数实现。所以文件大小很小。当我们的代码在一台没有GPU的机器上编译时，可以动态链接到这些stubs库，这样就能够正常编译。编译结束得到的二进制文件可以部署到其它有GPU的机器，在运行时它们就会链接到正确的动态链接库。
-
----
-
-"stall"（停滞）是指warp在执行过程中因为各种原因暂时无法继续执行下一步操作，需要等待某个条件满足后才能继续执行的现象。
-
-CTA：Cooperative Thread Array，即协作线程数组。它是由一组线程组成的集合，这些线程可以执行相同的程序，并且能够相互通信。CTA是CUDA中线程组织的基本单元，通常被称为线程块（Thread Block）。
-
-CTA提供了同步点，允许开发者在需要时对CTA内的所有线程进行同步，例如使用__syncthreads()函数。
-
-和Thread Block密切相关的概念还有Data Block，用于规划数据的访存。

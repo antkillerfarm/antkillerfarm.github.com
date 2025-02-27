@@ -9,6 +9,23 @@ category: DL acceleration
 
 # Alpa（续）
 
+为了评估不同Sharding策略的好坏，我们需要对Sharding策略建立cost model。
+
+这里的cost主要包括：
+
+- Communication cost
+- Computation cost
+- Memory cost
+- Resharding cost
+
+其中，Memory cost为该ILP问题的约束条件，其他几个为决策变量的影响因子。
+
+Resharding cost是不同sharding之间切换产生的开销：
+
+![](/images/img5/resharding.svg)
+
+---
+
 MLIR中有mesh dialect用于描述Sharding Spec：
 
 ```mlir
@@ -334,27 +351,3 @@ https://mp.weixin.qq.com/s/ai_XI8ddP5I2m3ChCqnQsA
 https://mp.weixin.qq.com/s/RAjusu-Jyqb8K19N8KZ_3w
 
 一份552页《大规模数据系统：Large-scale Data Systems》硬核课程PPT
-
-https://mp.weixin.qq.com/s/AeCQK2hFy60pq6y1tRcs_A
-
-20页pdf，A Survey on Large-scale Machine
-
-https://mp.weixin.qq.com/s/iW0k80TUPuWDE9xwHvX91g
-
-为什么你需要Raven：全球首个真正分布式深度学习训练协议
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650750181&idx=1&sn=156dac3c5646143fc2577972f1506836
-
-GPU捉襟见肘还想训练大批量模型？谁说不可以
-
-https://mp.weixin.qq.com/s/-CTVyKWtdTK0RIfzzPVyNQ
-
-分布式与高效深度学习，140页ppt详述深度学习压缩与联邦学习训练技术进展
-
-https://mp.weixin.qq.com/s/nTBuYuW7h9wZYuo3w1xGmQ
-
-分布式训练的方案和效率对比
-
-https://mp.weixin.qq.com/s/LOTQfD9KKtAq0zz4rObCGA
-
-EB级系统空中换引擎：阿里调度执行框架如何全面升级？（DAG 2.0）

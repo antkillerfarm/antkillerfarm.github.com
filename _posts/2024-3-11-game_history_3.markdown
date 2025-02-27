@@ -270,3 +270,7 @@ https://fitgirl-repacks.site/
 https://www.zhihu.com/question/557628789
 
 如何评价游戏《白日升》（Rise of the White Sun）？
+
+https://www.zhihu.com/question/11554798727
+
+《文明7》里的奇观现实中都还存在么？

@@ -145,6 +145,14 @@ Prefill阶段的瓶颈是计算量，MLA的矩阵吸收并没有优势，甚至�
 
 需要注意，上述矩阵吸收的技巧没有考虑ROPE的影响，实际情况还要更复杂一些。
 
+---
+
+https://github.com/deepseek-ai/FlashMLA
+
+deepseek的MLA官方实现
+
+---
+
 参考：
 
 https://kexue.fm/archives/10091
@@ -290,13 +298,3 @@ Prefill阶段在Q的seqlen维度以及batch_size维度做并行。
 ![](/images/img5/FlashDecoding.webp)
 
 但是在Decoding阶段，是逐token生成，在利用KV Cache的情况下，每次推理实际的queries token数为1，已经无法通过queries进行并行了。
-
-既然，Q和BS无法进一步并行了，那么对K,V进行并行是不是就可以了呢？
-
-- 首先，将K/V切分成更小的块，比如5块；
-- 然后在这些K/V块上，使用标准FlashAttention进行计算，得到所有小块的局部结果。
-- 最后，使用一个额外的kernel做全局的reduce，得到正确输出。
-
-https://crfm.stanford.edu/2023/10/12/flashdecoding.html
-
-Flash-Decoding for long-context inference

@@ -11,6 +11,18 @@ category: DL acceleration
 
 ## FlashDecoding（续）
 
+既然，Q和BS无法进一步并行了，那么对K,V进行并行是不是就可以了呢？
+
+- 首先，将K/V切分成更小的块，比如5块；
+- 然后在这些K/V块上，使用标准FlashAttention进行计算，得到所有小块的局部结果。
+- 最后，使用一个额外的kernel做全局的reduce，得到正确输出。
+
+https://crfm.stanford.edu/2023/10/12/flashdecoding.html
+
+Flash-Decoding for long-context inference
+
+---
+
 New hardware features on Hopper GPUs - WGMMA, TMA, FP8
 
 https://www.zhihu.com/question/661395457
@@ -267,20 +279,3 @@ ILP可以分为下列几种类型：
 （3）0-1型整数线性规划(Zero-one integer linear programming)：指决策变量只能了取值0或1的整数线性规划。
 
 ILP相关的库还有pyomo、cyipopt等。
-
----
-
-为了评估不同Sharding策略的好坏，我们需要对Sharding策略建立cost model。
-
-这里的cost主要包括：
-
-- Communication cost
-- Computation cost
-- Memory cost
-- Resharding cost
-
-其中，Memory cost为该ILP问题的约束条件，其他几个为决策变量的影响因子。
-
-Resharding cost是不同sharding之间切换产生的开销：
-
-![](/images/img5/resharding.svg)
