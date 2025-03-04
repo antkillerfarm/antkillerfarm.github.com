@@ -221,6 +221,12 @@ PassBuilder PB;
 PB.registerModuleAnalyses(*TheMAM);
 ```
 
+## Compile Cuda With LLVM
+
+https://llvm.org/docs/CompileCudaWithLLVM.html
+
+Compiling CUDA with clang
+
 ## 参考
 
 所谓的intrinsic function，是属于编译器开洞魔法的范畴，这些函数的实现是直接写死在编译器的代码生成部分的，在最终得到的二进制里面不会存在这些函数的符号和实现。

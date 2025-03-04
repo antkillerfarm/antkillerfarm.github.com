@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争：疾风篇（十八）——泽连斯基语录
+title:  俄乌战争：疾风篇（十八）——泽连斯基语录（1）
 category: Russo Ukrainian War Wind
 ---
 
@@ -12,6 +12,8 @@ category: Russo Ukrainian War Wind
 ## 泽连斯基语录
 
 永远记住：乌克兰在这个敌人出现之前就有，乌克兰将在他之后还会继续存在。
+
+我们不是夹在兽人和精灵之间的边缘地带。 -- by 瓦夏
 
 Slava Ukraini：荣耀归于乌克兰，Слава Україні
 

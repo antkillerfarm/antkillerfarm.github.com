@@ -141,24 +141,6 @@ Kvartal 95的剧曲作家Artem Gagarin承认，当他的前任老板决定竞选
 
 ---
 
-https://baike.baidu.com/tashuo/browse/content?id=0c64d05cac1e174119d96e5f
-
-泽连斯基：风云人物这一年
-
-https://zhuanlan.zhihu.com/p/685676929
-
-功亏一篑 俄罗斯导弹在敖德萨霸气袭击乌克兰总统
-
-https://zhuanlan.zhihu.com/p/702401827
-
-瓦夏的小手枪
-
-https://www.zhihu.com/answer/39674128843
-
-法国媒体：泽连斯基的冷酷世界
-
----
-
 2023年4月5日，泽连斯基访问波兰，在华沙的皇家城堡博物馆中，泽连斯基对一幅油画观赏许久且啧啧称奇，画上的主人公就是曾经击败沙俄迫使其遣使求和、普斯科夫投降的波兰(波立联邦)国王斯特凡·巴托里（Báthory István，1533-1586）。
 
 巴托里身为一名匈牙利人，这辈子都不会说波兰语，但是会说德语、匈牙利语和拉丁语，却在奥斯曼土耳其的帮助下，阴差阳错成为了波兰的话事人。
@@ -180,3 +162,25 @@ https://www.zhihu.com/answer/39674128843
 https://zhuanlan.zhihu.com/p/602006517
 
 载驰：许穆夫人回国救难的滚滚车轮
+
+---
+
+https://baike.baidu.com/tashuo/browse/content?id=0c64d05cac1e174119d96e5f
+
+泽连斯基：风云人物这一年
+
+https://zhuanlan.zhihu.com/p/685676929
+
+功亏一篑 俄罗斯导弹在敖德萨霸气袭击乌克兰总统
+
+https://zhuanlan.zhihu.com/p/702401827
+
+瓦夏的小手枪
+
+https://www.zhihu.com/answer/39674128843
+
+法国媒体：泽连斯基的冷酷世界
+
+https://www.zhihu.com/question/13812742783
+
+如何看待斯特列科夫盛赞泽连斯基，狂骂特朗普？
