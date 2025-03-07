@@ -169,6 +169,14 @@ GPT-J是一个由EleutherAI开发的自然语言处理（NLP）模型，基于GP
 
 # Chinchilla Law
 
+最为知名的规模定律包括“Kaplan定律”和“Chinchilla定律”。
+
+Kaplan定律指出，在固定计算量的前提下，扩大模型规模通常比增加数据量更为有效；
+
+而Chinchilla定律则认为，模型规模和数据量同样重要。
+
+---
+
 DeepMind研究了在给定算力预算下训练Transformer语言模型的最佳模型大小和tokens数量。
 
 在LLaMA-1预训练时候，从各种开源数据集，凑够了1.4T的tokens。按照Chinchilla Law，应该使用1,400B (1.4T) tokens来训练参数量大小为70B的LLM最佳。即：每个参数需要大约20个文本token。

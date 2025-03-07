@@ -175,6 +175,10 @@ https://zhuanlan.zhihu.com/p/703862723
 
 大模型KV Cache节省神器MLA学习笔记（包含推理时的矩阵吸收分析）
 
+https://blog.csdn.net/v_JULY_v/article/details/141535986
+
+一文通透DeepSeek V2——通俗理解多头潜在注意力MLA：改进MHA，从而压缩KV缓存，提高推理速度
+
 # 快速Transformer
 
 轻量化Transformer是从计算量/时间/空间的角度出发，对于传统Transformer的优化。而快速Transformer主要着眼于软件工程角度，如何更好的利用各种硬件加速Transformer的计算。典型的有NVIDIA的FasterTransformer和腾讯的TurboTransformer。

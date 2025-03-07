@@ -9,6 +9,42 @@ category: DRL
 
 # RLHF（续）
 
+https://zhuanlan.zhihu.com/p/635569455
+
+RLHF实践
+
+https://zhuanlan.zhihu.com/p/667152180
+
+一些RLHF的平替汇总（2023.11）
+
+https://zhuanlan.zhihu.com/p/621456865
+
+DeepSpeed-Chat开源了
+
+https://brightliao.com/2023/05/25/chatgpt-rlhf/
+
+ChatGPT的自动优化
+
+https://www.zhihu.com/question/651021172
+
+为什么需要RLHF？SFT不够吗？
+
+https://blog.csdn.net/v_JULY_v/article/details/132939877
+
+从零实现带RLHF的类ChatGPT：逐行解析微软DeepSpeed Chat的源码
+
+https://blog.csdn.net/sinat_37574187/article/details/138200789
+
+图解大模型RLHF系列之：人人都能看懂的PPO原理与源码解读
+
+https://blog.csdn.net/v_JULY_v/article/details/128579457
+
+ChatGPT技术原理解析：从RL之PPO算法、RLHF到GPT4、instructGPT
+
+https://blog.csdn.net/v_JULY_v/article/details/129996493
+
+详解带RLHF的类ChatGPT：从TRL、ChatLLaMA到ColossalChat、DSC
+
 ## DPO
 
 Direct Preference Optimization是一类不训练reward model而直接更新LM的方法。
@@ -47,6 +83,20 @@ CoT模型增加了推理过程，期望利用**inference time scaling**来解决
 
 短序列时代，Attn后面的FFN占用了80%的计算量，然而到了LLM时代，Attn开始占据计算量的大头。（Attn的复杂度是$$O(n^2d)$$, n为序列长度，d为hidden size）。
 
+---
+
+COT+RL主要有以下四条路线：
+
+- 基于过程监督的强化学习。代表作：OpenAI的Let's verify step by step、过程奖励模型（Process Reward Model，简称PRM）。这个路线所面临的核心问题是：怎么去界定步骤？谁来判定哪个过程是正确的？
+
+- 蒙特卡洛树搜索（MCTS）。代表作：微软的rStar。
+
+- 监督微调。既然原先大模型在预训练的时候要预测下一个字符是什么，那么我们收集一堆思维过程给大模型，让它们照葫芦画瓢，没准就有用呢？这个路线所面临的核心问题是：并没有那么多思维过程数据能给到大模型。几乎所有的教科书、教辅书都只会把正确过程给印到答案上，而不会把错误的过程给印上去。代表作：DeepSeek-R1蒸馏出来的那些Qwen和Llama小模型。
+
+- 基于规则的强化学习。在过程监督以及MCTS两种方法中，都会面临怎么去对过程进行拆分、怎么去对过程中的某一步（正确性或者未来预期的正确性）进行打分的问题。有人感到这件事实在是过于困难了。所以，他们打算只看结果，不看过程，让模型自由发挥。代表作：OpenAI的o系列、DeepSeek-R1、Kimi-k1.5。
+
+---
+
 https://blog.csdn.net/Julialove102123/article/details/135499567
 
 一文读懂Chain of Thought，CoT思维链
@@ -70,6 +120,24 @@ https://blog.csdn.net/v_JULY_v/article/details/145289228
 https://zhuanlan.zhihu.com/p/20538667476
 
 三张图速通DeepSeek-R1论文和技术原理
+
+## MemKK
+
+Knights and Knaves (K&K) (Johnson-Laird & Byrne, 1990)是一个用于逻辑推理的数据集。
+
+它在形式上表现为几个人在对话，对话内容有真有假。需要通过推理分析出哪些内容为真，哪些为假。
+
+数据集以参与对话的人数的不同，分为若干子集。例如8ppl表示有8个人参与对话，显然人数越多，分析的难度越大。
+
+官网：
+
+https://memkklogic.github.io/
+
+参考：
+
+https://zhuanlan.zhihu.com/p/27699656438
+
+用极小模型复现R1思维链的失败感悟
 
 ## Constitutional AI
 
@@ -248,115 +316,3 @@ https://mp.weixin.qq.com/s/1SZKhG1ZbD1pl-3YQD_umg
 https://mp.weixin.qq.com/s/6n5HawyR4AgH8Dq0gJMw2g
 
 强化学习的基本概念与代码实现
-
-https://mp.weixin.qq.com/s/AI3i3ZLZ-fynavbeNAMKgA
-
-强化学习应用介绍，41页报告带你快速了解RL的最新应用价值
-
-https://mp.weixin.qq.com/s/-Cd7rQY3c3CINjtB99UZWw
-
-自动驾驶领域中的强化学习，附18页论文下载
-
-https://mp.weixin.qq.com/s/UBWN4_Sem8W1WcjsLAnjjQ
-
-强化学习，路在何方？
-
-https://book.yunzhan365.com/iths/nahn/mobile/index.html
-
-强化学习和最优控制的《十个关键点》81页PPT汇总
-
-https://zhuanlan.zhihu.com/p/107143378
-
-Learning SR for Text Classification via RL
-
-https://mp.weixin.qq.com/s/6c8imZFRAoxgs18rk_tlEw
-
-炼丹感悟：On the Generalization of RL
-
-https://mp.weixin.qq.com/s/PpBMu-5ozc9UOBbFhjsf3A
-
-漫谈强化学习中的引导搜索策略（GPS方法）
-
-https://mp.weixin.qq.com/s/TUk1PWT9CfPGEW77UKxpjw
-
-三招武林绝学带你玩转“强化学习”
-
-https://mp.weixin.qq.com/s/Uin1gOmJEa6cvkiFJm6cHw
-
-你当年没玩好的《愤怒的小鸟》，AI现在也犯难了
-
-https://mp.weixin.qq.com/s/YY1FIMjDIMABdwRC5x9w4g
-
-17种深度强化学习算法用Pytorch实现
-
-https://mp.weixin.qq.com/s/lxnyoo46tS7-MXAB7HNouA
-
-人工智能在电网管理中的应用
-
-https://mp.weixin.qq.com/s/ZYIfzk1kZ4azpmxWagkQuw
-
-强化学习如何用于模型量化？
-
-https://mp.weixin.qq.com/s/w4m4fG-a30AgulNPhBVC5w
-
-基于强化学习的自动交易系统研究与发展综述
-
-https://mp.weixin.qq.com/s/oyWyb58l4ztqIEyrk0g01A
-
-强化学习在美团“猜你喜欢”的实践
-
-https://mp.weixin.qq.com/s/oA98YyLqn1B22QZ5b_iDVA
-
-IJCAI 2018：聚焦强化学习的学习效率
-
-https://mp.weixin.qq.com/s/FtHJCXniVne2TGKfgCeS9w
-
-Pieter Abbeel：深度强化学习加速方法
-
-https://mp.weixin.qq.com/s/xlnwB9e1ks-4M4djnyIAyQ
-
-解读72篇DeepMind深度强化学习论文
-
-https://mp.weixin.qq.com/s/VYIyWRykREjOyLu4YDhLeA
-
-61篇NIPS2019深度强化学习论文及部分解读
-
-https://zhuanlan.zhihu.com/p/48186354
-
-robot浅谈
-
-https://mp.weixin.qq.com/s/f-rmdWq3kJUJGhuPwU8JtQ
-
-深度策略梯度算法是真正的策略梯度算法吗？
-
-https://mp.weixin.qq.com/s/SiVUmjHyw8ztiaSWNSZ-qA
-
-多任务深度强化学习综述
-
-https://zhuanlan.zhihu.com/p/51202503
-
-强化学习在视觉上的应用（RL for computer Vision）
-
-https://mp.weixin.qq.com/s/Dq4HsRg05bVMjvrsrxfOOQ
-
-从这篇YouTube论文，剖析强化学习在工业级场景推荐系统中的应用
-
-https://mp.weixin.qq.com/s/cyaQt-SO7sgG49kuUyPJbQ
-
-旷视开源的深度强化学习绘画智能体论文解读
-
-https://mp.weixin.qq.com/s/curzH8WrFyl5WWT4lDfpwQ
-
-Chrome暗藏的恐龙跳一跳，已经被AI轻松掌握了
-
-https://www.cnblogs.com/massquantity/p/13842139.html
-
-Flink+强化学习搭建实时推荐系统
-
-https://mp.weixin.qq.com/s/zfVrmErz3ZaGz7Ha7qGoIw
-
-要提升微信看一看推荐混排的长期收益？试试深度强化学习
-
-https://mp.weixin.qq.com/s/RLEuaiRdq6AbTSUcYQ5O3A
-
-深度强化学习在NLP怎么用？看清华黄民烈老师这一份120页《自然语言处理和搜索中的深度强化学习应用》讲义

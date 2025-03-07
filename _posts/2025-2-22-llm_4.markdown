@@ -65,6 +65,14 @@ https://github.com/deepseek-ai/DeepEP
 
 deepseek官方的EP库
 
+## KTransformer
+
+KTransformers由清华大学团队提出，可以在模型运行过程中灵活的将专家模型加载到CPU上，同时将MLA/KVCache卸载到GPU上，从而深度挖掘硬件性能，实现更低的显存运行更大尺寸的模型。
+
+参考：
+
+KTransformer部署高性能DeepSeek R1模型实战
+
 # LLM实战
 
 https://pytorch.org/blog/high-performance-llama-2/

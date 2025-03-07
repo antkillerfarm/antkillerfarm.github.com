@@ -291,6 +291,8 @@ RLHF于2017年6月由OpenAI联合Google DeepMind推出。
 
 ![](/images/img5/RLHF_3.png)
 
+原始的PPO只有Actor-Critic两个模型，RLHF又额外引入了两个模型：Reward/Reference Model。
+
 - Step 1
 
 将所有语料进行无监督训练，得到Pretrained Model，然后使用标注数据（如QA pair）进行Supervised Fine-Tuning，得到SFT Model。
@@ -311,6 +313,8 @@ Critic Model一般用Reward Model初始化，Reward模型由于已经包含了�
 
 ![](/images/img5/rlhf.jpg)
 
+后期的RLHF还引入了Generalized Advantage Estimation（GAE）用于替代TD-error。
+
 ---
 
 ReMax认为，我们可以丢掉Critic（教练），Actor不再需要受到Critic的指导，而是直接去对齐Reference Model。
@@ -321,9 +325,19 @@ Group Relative Policy Optimization(GRPO)
 
 ![](/images/img6/GRPO.png)
 
-https://blog.csdn.net/v_JULY_v/article/details/141535986
+GRPO原理：
 
-一文通透DeepSeek-V2(改造Transformer的中文模型)：详解MoE、GRPO、MLA
+举个例子，怎么评判公司的一个员工是否优秀呢？
+
+这个很难明确定义，谁给的定义可能都没法让所有人信服。
+
+但至少有一个办法就是，拿他去和所有员工的平均水准去对比(每个员工平时都是有得分项、失分项的)，高于平均水准的便是好员工。
+
+如此一来，对同一问题的多个采样输出的平均奖励作为基线(说白了，直接暴力采样N次求均值)，并以此为依据更新策略。这样就可以取代Critic Model了。
+
+https://blog.csdn.net/v_JULY_v/article/details/136656918
+
+一文通透GRPO——通俗理解群体相对策略优化GRPO及其代码实现
 
 ---
 
@@ -348,39 +362,3 @@ LLaMA2 RLHF技术细节
 https://zhuanlan.zhihu.com/p/645068532
 
 大模型RLHF的trick
-
-https://zhuanlan.zhihu.com/p/635569455
-
-RLHF实践
-
-https://zhuanlan.zhihu.com/p/667152180
-
-一些RLHF的平替汇总（2023.11）
-
-https://zhuanlan.zhihu.com/p/621456865
-
-DeepSpeed-Chat开源了
-
-https://brightliao.com/2023/05/25/chatgpt-rlhf/
-
-ChatGPT的自动优化
-
-https://www.zhihu.com/question/651021172
-
-为什么需要RLHF？SFT不够吗？
-
-https://blog.csdn.net/v_JULY_v/article/details/132939877
-
-从零实现带RLHF的类ChatGPT：逐行解析微软DeepSpeed Chat的源码
-
-https://blog.csdn.net/sinat_37574187/article/details/138200789
-
-图解大模型RLHF系列之：人人都能看懂的PPO原理与源码解读
-
-https://blog.csdn.net/v_JULY_v/article/details/128579457
-
-ChatGPT技术原理解析：从RL之PPO算法、RLHF到GPT4、instructGPT
-
-https://blog.csdn.net/v_JULY_v/article/details/129996493
-
-详解带RLHF的类ChatGPT：从TRL、ChatLLaMA到ColossalChat、DSC
