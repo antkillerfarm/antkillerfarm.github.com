@@ -125,7 +125,7 @@ MLA的关键是低秩分解后面的事情，GQA是split and repeat，MLA则一�
 
 推理时，MLA需要利用恒等变换才能实现低秩的KV Cache，但代价是每个头的Q/K的head_size变大了不小，所以理论上MLA推理的计算量是增加的。它最后之所以还能提高效率，是充分结合了LLM推理主要瓶颈还是访存而不是计算这一特性。
 
-MLA推理时，使用了**矩阵吸收**的技巧。
+MLA推理时，使用了**矩阵吸收（matrix absorb）**的技巧。
 
 标准Attention权重的计算：
 
@@ -178,6 +178,10 @@ https://zhuanlan.zhihu.com/p/703862723
 https://blog.csdn.net/v_JULY_v/article/details/141535986
 
 一文通透DeepSeek V2——通俗理解多头潜在注意力MLA：改进MHA，从而压缩KV缓存，提高推理速度
+
+https://mp.weixin.qq.com/s/uiBPpZDyVhySP8eKKaIygw
+
+再读MLA，还有多少细节是你不知道的
 
 # 快速Transformer
 

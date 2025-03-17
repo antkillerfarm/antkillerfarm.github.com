@@ -115,6 +115,8 @@ https://news.ifeng.com/c/8SW7ijwt8Nd
 
 2024年夏季库尔斯克战役：2024.8.6～8.26
 
+2025.3.8～3.13 苏贾战斗。
+
 ---
 
 ![](/images/img5/August_2024_Kursk_Oblast_incursion.svg)

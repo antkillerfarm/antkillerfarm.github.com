@@ -69,6 +69,8 @@ https://zhuanlan.zhihu.com/p/647857481
 
 ![](/images/img6/the-russian-navy-to-the-bottom-souvenir-sheet.jpg)
 
+2024年，喀麦隆发行了银币，纪念乌克兰战争爆发两周年。
+
 https://zhuanlan.zhihu.com/p/524856209
 
 谁说非洲人民不支持乌克兰的？看看非洲的邮票就清楚了
