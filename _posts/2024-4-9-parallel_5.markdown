@@ -295,6 +295,10 @@ https://courses.cs.washington.edu/courses/cse599m/23sp/notes/flashattn.pdf
 
 From Online Softmax to FlashAttention
 
+https://zhuanlan.zhihu.com/p/631106302
+
+FlashAttention反向传播运算推导
+
 ## FlashDecoding
 
 FlashDecoding是FlashAttention项目的一部分，但由于优化方向有所不同，特别单列出来。

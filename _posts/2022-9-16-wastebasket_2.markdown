@@ -167,98 +167,56 @@ https://www.163.com/dy/article/J41F540005564LSK.html
 
 ---
 
-https://mp.weixin.qq.com/s/1dlOCpoJiCkh55WDAajLuw
+我的同学小刘考了580分，特别想上山东大学，但它在内蒙古的录取分数要600分。怎么办呢？小刘找了十几个650分的考生去报山东大学，让那些600分的人望而却步。到了最后一分钟，小刘一声令下，所有650分的考生统统撤离山东大学，把坑位留给小刘。
 
-内卷、找关系、作弊、丑闻-美国富人的名校之梦
+https://mp.weixin.qq.com/s/TtuC4DRqz1-QIDI66rBWcA
 
-https://mp.weixin.qq.com/s/eI-u_RsabtuyRajDYnnZDg
+内蒙人报高考志愿，比在纽交所炒股还刺激
 
-殷极物理竞赛作弊事件
+---
 
-https://www.aiweinews.com/archives/27796.html
+他眼里面只有钱，学习就是为了钱，崇洋媚外。
 
-知乎：清华学霸情侣马艺妮宋思睿约北大妹子3P被拒挂朋友圈
+我们努力学习是为了什么？是为了中华民族伟大复兴。
 
-https://www.zhihu.com/question/471268212
+https://www.zhihu.com/question/584989437
 
-如何看待上海财经大学一女博士拿不到学位，学院称“论文不符要求”？是否与此前多次举报教授论文抄袭有关？
+如何看安徽省庐江中学某主题会上，一男生打断陈宏友副教授的崇洋媚外发言、并号召为中华民族伟大复兴而读书？
 
-https://www.zhihu.com/question/365900362
+---
 
-如何看待中文核心期刊《冰川冻土》上某论文全程在夸作者导师、师母，为何这样的论文也能发表？
+张尧学用开源项目remote-desktop-clients（不确定占比多少），获得了国家级的大奖。
 
-https://mp.weixin.qq.com/s/qQIUj87iMUn7RsPKABignA
+https://github.com/iiordanov/remote-desktop-clients/issues/39
 
-华中科技大学教授涉嫌性骚扰女研究生
+---
 
-https://www.zhihu.com/answer/692061772
+大约20年前，号称自主研发的麒麟操作系统面世。
 
-学术圈修仙记
+有一个叫dancefire的大神，创造性的发明一种办法来分析各种操作系统内核在二进制上相似性。大神的真迹叫《麒麟操作系统内核同其他操作系统内核的相似性分析》。
 
-https://www.zhihu.com/question/503354095
+当时事情闹得挺大，甚至freebsd自己的源代码网站SourceForge都一度被封，但这个事最终不了了之。
 
-如何看待复旦大学毕业生最后一科考试被举报作弊，取消学位证、毕业证以及研究生资格，后起诉母校？
+https://my.oschina.net/chipo/blog/5161697
 
-https://k.sina.com.cn/article_7517400647_1c0126e4705901sdfc.html
+麒麟操作系统内核同其他操作系统内核的相似性分析
 
-北大博士梅桢再上热搜，被爆高考400分，又一位“外籍”投机者？
+---
 
-https://zhuanlan.zhihu.com/p/659727597
+基层科研工作者碰了学术红线，基工没了。
 
-哈佛天才教授为了“4块钱”丢掉了终身教授职位！
+院士杰青碰了学术红线，红线没了。
 
-https://www.zhihu.com/question/52975523
+但凡读一读那篇发表在冻土上的雄文，都不会认为那是在谄媚导师。那篇文章是向师娘舞剑，意在导师，转弯抹角的嘲讽揭露一些圈子内的蝇营狗苟。
 
-如何看待西南交通大学最高奖项“竢实扬华奖章”候选学生李鑫雨遭到联名举报？
+https://www.zhihu.com/question/421679320
 
-https://www.zhihu.com/question/401208968
+大谈“导师崇高师娘优美”论文作者徐中民被处理，已拨项目资金被追回，说明了什么问题？
 
-如何看待西南交大陈玉钰同学，修改成绩保研中科大，东窗事发后被取消保研资格？
+---
 
-https://mp.weixin.qq.com/s/GTSLyFCEvsyl-AWSUMtOIw
+苏式动员型模式的核心要素：人为操纵劳动力价格，以实物、货币、非实物（社会地位、荣誉等）三重保障来降低人力资源成本。
 
-衡水中学校长的儿子为什么要去西藏高考？
+https://www.zhihu.com/question/442248640
 
-https://mp.weixin.qq.com/s/jGqmp-_QfdyoO1fDKd6_Fg
-
-年迈的挑战者：知网的“权力”从哪来？
-
-https://www.zhihu.com/question/534081917
-
-西安电子科技大学两毕业生涉嫌找人有偿代做毕业设计，校方已开展调查，还有哪些信息值得关注？（雷雨晴、卢晨晨）
-
-https://www.zhihu.com/question/526031956
-
-网传保研上交学霸情侣疑似骗取特困生困难补助并获得贫困生专享奖学金，真实情况如何？（马浩天，郑晓晶）
-
-https://www.zhihu.com/question/529558892
-
-如何评价韦慧晓成为中国海军首位女舰长，掌舵新型主力战舰？
-
-https://www.zhihu.com/question/544511862
-
-网红教授陈春花学历遭质疑，其博士毕业学校为私人公司。还有哪些信息值得关注？
-
-https://www.zhihu.com/question/538443359
-
-南京大学大凉山少年全奖直博，毕业论文致谢自己看哭网友，你有哪些感受？
-
-https://www.sohu.com/a/586791116_120146415
-
-复旦硕士骗同龄人为自己打工 获顶尖金融公司录用 受骗者错过校招
-
-https://www.zhihu.com/question/604343409
-
-如何看待华南理工大学学术妲己事件？（苏艳、顾成）
-
-https://zhuanlan.zhihu.com/p/692048896
-
-令人疑惑：那位北邮导师，为何让学生长期代买32个包子和20个鸡蛋？
-
-https://www.zhihu.com/question/660705618
-
-假冒“辽宁理工大学”教授的魏新河被抓，具体情况如何？他假冒教授的目的是什么？
-
-https://zhuanlan.zhihu.com/p/704989418
-
-建国以来船舶界第一丑闻——周锦宇“超浅水船“闹剧
+饶-裴一事最终不了了之，会对中国学术圈产生怎样的影响？

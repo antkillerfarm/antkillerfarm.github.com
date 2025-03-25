@@ -366,58 +366,6 @@ https://mp.weixin.qq.com/s/LqkR4fhdxdMVGUn21mb76Q
 
 如果把中国历史浓缩成一天，会是什么样子？
 
-## 科研人生
-
-![](/images/img4/dunning-kruger-effect-curve.png)
-
-送东阳马生序
-
-https://mp.weixin.qq.com/s/QMUWtI9jICOkLMlz2E1sUg
-
-看哭了！中科院黄国平博士论文火了
-
-https://mp.weixin.qq.com/s/hr4bPG01dXuyPhUn3tRHKA
-
-寒门博士与千万外卖小哥，谁更代表年轻人现状？
-
----
-
-https://mp.weixin.qq.com/s/6gX1UFSykuzw358ARUzifw
-
-张溪梦：14年数据分析经历，我总结为这三点“道、术、器”
-
-https://www.zhihu.com/answer/224543003
-
-田渊栋：作为入行数年的专业科研工作者，你每周看几篇paper？
-
-http://mp.weixin.qq.com/s/aftxoxvzefZtzbGK3XrmuA
-
-李沐：博士这五年
-
-http://phdcomics.com/
-
-一个关于博士学习生活的漫画网站
-
-https://zhuanlan.zhihu.com/p/74249758
-
-陈天奇：机器学习科研的十年
-
-https://zhuanlan.zhihu.com/p/90255939
-
-创始人Alexandra Elbakyan亲自发长文讲述Sci-Hub的前世今生
-
-https://mp.weixin.qq.com/s/EWDRd4JDvrVorOgWvJIksQ
-
-还只是39岁！一个天才年轻程序员的陨落
-
-https://mp.weixin.qq.com/s/UWMl0bd7hIgoFUWZRgmajQ
-
-谁在为科学买单？
-
-https://mp.weixin.qq.com/s/GhpPiv8CeYEOgHwsCSnBQA
-
-为什么现在很多人想读博了？
-
 ## 几个开源软件代码下载地址（国内可访问）
 
 GNU

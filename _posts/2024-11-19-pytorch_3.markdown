@@ -9,6 +9,12 @@ category: DL Framework
 
 # Pytorch
 
+## 细节（续）
+
+PyTorch命名约定：
+
+`mul_`，其中mul代表乘法，后缀`_`表示这是一个原地操作。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/zhkaenFdnB5KgaEYb-XDEQ

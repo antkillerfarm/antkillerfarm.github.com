@@ -11,6 +11,14 @@ category: Russo Ukrainian War Sky
 
 ## 库尔斯克战役（续）
 
+https://news.ifeng.com/c/8cAX3swzkVL
+
+俄乌两条战线各打各的，哪一方会先撑不住？
+
+https://zhuanlan.zhihu.com/p/715979552
+
+“我们将在库尔斯克遭遇最大的抵抗”——库尔斯克行动三名士兵的视角
+
 https://zhuanlan.zhihu.com/p/715986438
 
 俄乌边境史：17世纪的盖特曼·马泽帕购地之处如今战火纷飞

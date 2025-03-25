@@ -282,3 +282,7 @@ https://zhuanlan.zhihu.com/p/20434793197
 https://zhuanlan.zhihu.com/p/24903910557
 
 同性恋迫击炮手亚历山大·朱汉在托列茨克：每当有人称俄罗斯人为“基佬”，我每次都会被触动
+
+https://zhuanlan.zhihu.com/p/30577662852
+
+一位乌克兰新兵的训练观察手记

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  垃圾筐, 真垃圾筐
+title:  垃圾筐, 科研人生, 真垃圾筐
 category: Education 
 ---
 
@@ -79,6 +79,14 @@ https://www.zhihu.com/question/659396926
 
 ---
 
+法国预科实际是在高中，不要求博士，更不用说博后。另外预科课程大量是导学课，也就是由学生上黑板做和讲解习题，老师导引为主。
+
+法国年轻老师的工作量是6000+，除去课程系数，大概600–700节课一年。
+
+其实按规定他们只需要八九个小时的课，多上一倍，工资也差不多翻倍，薪水比大学教授高不少。教学岗，没有科研任务。
+
+---
+
 https://mp.weixin.qq.com/s/iCbxGPZNOO-o0GT23BHeAw
 
 博士后x求职记
@@ -96,6 +104,58 @@ https://zhuanlan.zhihu.com/p/56874296
 https://www.zhihu.com/question/627499717
 
 中国大陆发第一篇计算机顶会的人都怎么样了？
+
+# 科研人生
+
+![](/images/img4/dunning-kruger-effect-curve.png)
+
+送东阳马生序
+
+https://mp.weixin.qq.com/s/QMUWtI9jICOkLMlz2E1sUg
+
+看哭了！中科院黄国平博士论文火了
+
+https://mp.weixin.qq.com/s/hr4bPG01dXuyPhUn3tRHKA
+
+寒门博士与千万外卖小哥，谁更代表年轻人现状？
+
+---
+
+https://mp.weixin.qq.com/s/6gX1UFSykuzw358ARUzifw
+
+张溪梦：14年数据分析经历，我总结为这三点“道、术、器”
+
+https://www.zhihu.com/answer/224543003
+
+田渊栋：作为入行数年的专业科研工作者，你每周看几篇paper？
+
+http://mp.weixin.qq.com/s/aftxoxvzefZtzbGK3XrmuA
+
+李沐：博士这五年
+
+http://phdcomics.com/
+
+一个关于博士学习生活的漫画网站
+
+https://zhuanlan.zhihu.com/p/74249758
+
+陈天奇：机器学习科研的十年
+
+https://zhuanlan.zhihu.com/p/90255939
+
+创始人Alexandra Elbakyan亲自发长文讲述Sci-Hub的前世今生
+
+https://mp.weixin.qq.com/s/EWDRd4JDvrVorOgWvJIksQ
+
+还只是39岁！一个天才年轻程序员的陨落
+
+https://mp.weixin.qq.com/s/UWMl0bd7hIgoFUWZRgmajQ
+
+谁在为科学买单？
+
+https://mp.weixin.qq.com/s/GhpPiv8CeYEOgHwsCSnBQA
+
+为什么现在很多人想读博了？
 
 # 真垃圾筐
 
@@ -222,59 +282,3 @@ https://zhuanlan.zhihu.com/p/386332176
 https://www.sohu.com/a/537882125_115479
 
 复旦考研调剂生上演“碟中谍”：用2个小号假装高分考生，吓退他人
-
----
-
-基层科研工作者碰了学术红线，基工没了。
-
-院士杰青碰了学术红线，红线没了。
-
-但凡读一读那篇发表在冻土上的雄文，都不会认为那是在谄媚导师。那篇文章是向师娘舞剑，意在导师，转弯抹角的嘲讽揭露一些圈子内的蝇营狗苟。
-
-https://www.zhihu.com/question/421679320
-
-大谈“导师崇高师娘优美”论文作者徐中民被处理，已拨项目资金被追回，说明了什么问题？
-
----
-
-苏式动员型模式的核心要素：人为操纵劳动力价格，以实物、货币、非实物（社会地位、荣誉等）三重保障来降低人力资源成本。
-
-https://www.zhihu.com/question/442248640
-
-饶-裴一事最终不了了之，会对中国学术圈产生怎样的影响？
-
----
-
-我的同学小刘考了580分，特别想上山东大学，但它在内蒙古的录取分数要600分。怎么办呢？小刘找了十几个650分的考生去报山东大学，让那些600分的人望而却步。到了最后一分钟，小刘一声令下，所有650分的考生统统撤离山东大学，把坑位留给小刘。
-
-https://mp.weixin.qq.com/s/TtuC4DRqz1-QIDI66rBWcA
-
-内蒙人报高考志愿，比在纽交所炒股还刺激
-
----
-
-他眼里面只有钱，学习就是为了钱，崇洋媚外。
-
-我们努力学习是为了什么？是为了中华民族伟大复兴。
-
-https://www.zhihu.com/question/584989437
-
-如何看安徽省庐江中学某主题会上，一男生打断陈宏友副教授的崇洋媚外发言、并号召为中华民族伟大复兴而读书？
-
----
-
-张尧学用开源项目remote-desktop-clients（不确定占比多少），获得了国家级的大奖。
-
-https://github.com/iiordanov/remote-desktop-clients/issues/39
-
----
-
-大约20年前，号称自主研发的麒麟操作系统面世。
-
-有一个叫dancefire的大神，创造性的发明一种办法来分析各种操作系统内核在二进制上相似性。大神的真迹叫《麒麟操作系统内核同其他操作系统内核的相似性分析》。
-
-当时事情闹得挺大，甚至freebsd自己的源代码网站SourceForge都一度被封，但这个事最终不了了之。
-
-https://my.oschina.net/chipo/blog/5161697
-
-麒麟操作系统内核同其他操作系统内核的相似性分析

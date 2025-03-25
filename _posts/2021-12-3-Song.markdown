@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  宋
+title:  宋（一）
 category: Ancient China 
 ---
 

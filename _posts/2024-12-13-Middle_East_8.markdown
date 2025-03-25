@@ -242,3 +242,7 @@ https://www.zhihu.com/question/652940219
 https://www.zhihu.com/question/667458569
 
 黎巴嫩寻呼机爆炸事件致9死约2800伤，设备或被远程引爆，具体情况如何？将如何影响中东局势？
+
+https://zhuanlan.zhihu.com/p/30621448324
+
+独夫的训政宣言——评戈兰尼的叙利亚《宪法宣言》

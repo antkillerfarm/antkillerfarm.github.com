@@ -173,9 +173,9 @@ Thrust是一个C++库，它提供了对GPU加速并行算法的便捷访问。
 
 从Ampere架构开始，引入了异步访存指令。
 
-同步版本的流水线访存就是ld.global到regsiters，然后 st.shared写入到共享内存，它们都会阻塞计算指令，但是warp scheduler会通过warp切换，让其他已经eligible的warp继续执行（本质上还是ILP），因此，一般同步版本最多开双流水（double-buffer），因为需要额外的寄存器进行prefetch，占用率不会太高，计算没法更好地掩盖访存的延迟。
+同步版本的流水线访存就是ld.global到regsiters，然后st.shared写入到共享内存，它们都会阻塞计算指令，但是warp scheduler会通过warp切换，让其他已经eligible的warp继续执行（本质上还是ILP），因此，一般同步版本最多开双流水（double-buffer），因为需要额外的寄存器进行prefetch，占用率不会太高，计算没法更好地掩盖访存的延迟。
 
-异步版本是硬件层面的异步指令（cp/store.async），本身计算和访存单元就是可以独立运行的，有了异步层级的指令支持后，可以充分发挥这一特点，指令不会阻塞计算指令，但是需要fence/barrier等同步手段，因此，warp可以继续执行下去（如果条件允许），此外，这些指令需要消耗额外的寄存器进行预取，直接 global -> shared 或者 shared -> global，一般可以开2-4条流水。
+异步版本是硬件层面的异步指令（cp/store.async），本身计算和访存单元就是可以独立运行的，有了异步层级的指令支持后，可以充分发挥这一特点，指令不会阻塞计算指令，但是需要fence/barrier等同步手段，因此，warp可以继续执行下去（如果条件允许），此外，这些指令需要消耗额外的寄存器进行预取，直接global->shared或者shared->global，一般可以开2-4条流水。
 
 https://zhuanlan.zhihu.com/p/709750258
 
@@ -190,6 +190,10 @@ Peer to Peer (PtoP)：指的是从一个GPU到另一个GPU的内存拷贝，这�
 RR (Read-Read)：表示连续的读操作。
 
 RW (Read-Write)：表示读写混合操作。
+
+---
+
+Generic Addr是一种不携带任何状态或附加信息来声明它属于哪个状态空间的指针。在CUDA C++中，与C++一样，指针就是指针，它们没有额外的装饰或元信息。在PTX或SASS中，CUDA GPU具有状态空间系统，这是一种分区寻址结构。例如，shared就是一个状态空间。
 
 ## Warp
 

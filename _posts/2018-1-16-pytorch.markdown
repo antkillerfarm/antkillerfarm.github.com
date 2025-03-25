@@ -91,14 +91,16 @@ export _GLIBCXX_USE_CXX11_ABI=1
 
 # CUDA
 export CMAKE_CUDA_ARCHITECTURES=86
-export CMAKE_CUDA_COMPILER=“/usr/local/cuda/bin/nvcc”
+export CMAKE_CUDA_COMPILER=/usr/local/cuda/bin/nvcc
+
+export CMAKE_BUILD_PARALLEL_LEVEL=4 # set build threads num
 
 python setup.py develop
 ```
 
 `python setup.py develop`会在python环境中建立指向源代码build路径的符号链接，这样修改代码也无需重新安装wheel包了，如果想体验完整流程可以使用`python setup.py install`。
 
-`python setup.py bdist_wheel`：生成wheel包。
+`python setup.py bdist_wheel`：生成wheel包，一般放在dist路径下。
 
 ## 示例
 
