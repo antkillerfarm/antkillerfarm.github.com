@@ -77,6 +77,18 @@ Blackwell使用了比Hopper更精细的scaling factor，用以降低量化误差
 
 ---
 
+在IEEE标准中，当指数位为全1（即 1111）时，表示特殊值。
+
+如果尾数位为0，则表示无穷大（±∞）。
+
+如果尾数位不为0，则表示±NaN（非数字）。
+
+所以，0xFC, 0xFD, 0xFE, 0xFF等都表示-NaN。
+
+由于NaN占用的编码过多，NV的E4M3格式并不遵循IEEE标准，只有E5M2遵循IEEE标准。
+
+---
+
 参考：
 
 https://zhuanlan.zhihu.com/p/521631165
@@ -86,6 +98,10 @@ Nvidia H100中的FP8
 https://zhuanlan.zhihu.com/p/714933476
 
 大模型量化技术原理：FP8
+
+https://arxiv.org/pdf/2209.05433
+
+FP8 Formats for Deep Learning
 
 # BF8 and Tesla CFloat
 

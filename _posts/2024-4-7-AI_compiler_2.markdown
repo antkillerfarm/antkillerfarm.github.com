@@ -199,6 +199,10 @@ https://zhuanlan.zhihu.com/p/666763592
 
 lightllm代码解读番外篇——triton kernel撰写
 
+https://mp.weixin.qq.com/s/FN6EpobpSmWnYeI5G53xUw
+
+深入Triton后端适配：天数GPU的Triton适配及共享内存管理机制
+
 ## NVFuser
 
 NVFuser是NV专门为Pytorch设计的自动化的GPU代码生成器。

@@ -191,6 +191,10 @@ https://www.zhihu.com/question/582621285
 
 土耳其已有6200多座建筑物倒塌，当地房屋抗震能力很差吗？现代建筑会做哪些抗震设计？
 
+https://zhuanlan.zhihu.com/p/1889260488162014106
+
+深度剖析缅甸地震
+
 ---
 
 ![](/images/img5/TW.webp)

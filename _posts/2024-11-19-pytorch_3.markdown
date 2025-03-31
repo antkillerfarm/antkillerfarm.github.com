@@ -9,7 +9,47 @@ category: DL Framework
 
 # Pytorch
 
-## 细节（续）
+## dataset
+
+`model = torch.hub.load('pytorch/vision:v0.10.0', 'resnet50', pretrained=True)`
+
+下载的model位于`~/.cache/torch/hub`
+
+## quantization
+
+torchao：用于自定义数据类型和优化的PyTorch库，提供量化、稀疏权重、梯度、优化器和激活等方面的优化。
+
+代码：
+
+https://github.com/pytorch/ao
+
+---
+
+https://pytorch.org/tutorials/prototype/quantization_in_pytorch_2_0_export_tutorial.html
+
+Quantization in PyTorch 2.0 Export Tutorial
+
+https://pytorch.org/tutorials/prototype/pt2e_quant_x86_inductor.html
+
+PyTorch 2 Export Quantization with X86 Backend through Inductor
+
+https://mlir.llvm.org/docs/Quantization/
+
+Quantization
+
+## 细节
+
+打印stack trace：
+
+`std::cerr << c10::get_backtrace() << std:endl;`
+
+---
+
+算子注册：
+
+aten/src/ATen/native/native_functions.yaml
+
+---
 
 PyTorch命名约定：
 
@@ -388,31 +428,3 @@ PyTorch深度学习模型训练加速指南2021
 https://mp.weixin.qq.com/s/SReuVBN8WIXFlnwho3wqgQ
 
 最详细的Pytorch底层算子扩展总结
-
-https://mp.weixin.qq.com/s/14_pt0_skKYNw2sAK5Zptw
-
-Pytorch底层算子扩展最详细的总结
-
-https://zhuanlan.zhihu.com/p/363317178
-
-模型转换：由Pytorch到TFlite
-
-https://mp.weixin.qq.com/s/Mj7xI5rFTxKaXswYi9_mRQ
-
-我的PyTorch模型比内存还大，怎么训练呀？
-
-https://mp.weixin.qq.com/s/TjCUCbXL3oSgJNYoEltgrg
-
-7个提升PyTorch性能的技巧
-
-https://zhuanlan.zhihu.com/p/275755543
-
-一款全平台轻量级pytorch推理框架Msnhnet
-
-https://mp.weixin.qq.com/s/MJgQqwWa4wyNgtKZaX_ADQ
-
-Tensorboard可视化与Hook机制
-
-https://mp.weixin.qq.com/s/jnV_4REXOR-ema1kOC95Nw
-
-跨越重重“障碍”，我从PyTorch转换为了TensorFlow Lite

@@ -11,6 +11,18 @@ category: DL Framework
 
 ## TorchDynamo（续）
 
+torch.fx参用symbolic tracer技术，通过对Python代码的符号化执行，记录计算图。
+
+缺点：
+
+- 无法捕获dynamic control flow函数。control flow指的是while、if这种，会随着条件而导致代码走向不同分支的语句。symbolic trace只会根据当前的输入捕获相应的分支到计算图中，如果后面输入发生改变就会报错，除非重新进行捕获。
+
+- 无法追踪Non-torch Functions。
+
+dynamo的设计非常巧妙，一言以蔽之：能捕获的我就捕获，捕获不了的，直接保留。
+
+---
+
 为什么要做模型切分呢？因为模型规模增大，单个机器无法放下，但是又需要访问模型才能制定切分策略。制定切分策略之前，我们又需要知道这个模型有多大。这就是一个先有鸡，还是先有蛋的问题了。
 
 Fake Tensor应运而生，正如其名，FakeTensor什么都是Fake，它的backend是假的，dispatch是假的，storage也是假的。
@@ -285,11 +297,11 @@ PyTorch带着左右护法Deepspeed，Megatron在研究领域，大模型领域�
 
 1.维护一个自己的fork，然后在里面仿照cuda kernel的注册方式来注册新kernel。这样在实现上是最简单的，但不管是后期维护还是客户使用都非常麻烦。因为这种fork项目很容易卡在某一个版本上：很难用自动的方式把每一个pytorch的新commit都cherry-pick过来，而有能力能手动合并代码的人往往也不愿意把精力花在这种没有啥产出的工作上。
 
-2.通过torchscript/ONNX作为中转来实现插件。大致的思路就是用`torch.jit.trace`得到图，然后一步一步lower到某个custom的IR上（例如MLIR），最后转到自己的 backend。
+2.通过torchscript/ONNX作为中转来实现插件。大致的思路就是用`torch.jit.trace`得到图，然后一步一步lower到某个custom的IR上（例如MLIR），最后转到自己的backend。
 
 API：`torch.jit.load`
 
-这样的好处是客户不用换pytorch了，但是问题在于`torch.jit.trace`或者`torch.jit.script`都是有比较大的局限性的，前者直接抛弃了控制流，使得像`kvcache`这样的LLM inference必备优化要实现得很难受，后者则是有各种各样的小坑。
+这样的好处是客户不用换pytorch了，但是问题在于`torch.jit.trace`或者`torch.jit.script`都是有比较大的局限性的，前者直接抛弃了控制流，使得像`kvcache`这样的LLM inference必备优化实现得很难受，后者则是有各种各样的小坑。
 
 3.pytorch2mindspore，通过monkey patch的逻辑直接在Python API侧通过对等接口进行拦截，实现脚本直接运行在mindspore平台；Graphcore早期也使用了这种方案。
 
@@ -322,6 +334,10 @@ https://pytorch.org/tutorials/advanced/privateuseone.html
 
 Facilitating New Backend Integration by PrivateUse1
 
+https://mp.weixin.qq.com/s/VtjGJfrBmWxVM3KjOEGFBw
+
+OpenReg：基于PyTorch "PrivateUse1"机制的独立树外后端实现
+
 ---
 
 苹果使用Metal Performance Shaders（MPS）作为PyTorch的后端，可以实现加速GPU训练。
@@ -329,34 +345,6 @@ Facilitating New Backend Integration by PrivateUse1
 https://zhuanlan.zhihu.com/p/517699916
 
 Pytorch Mac GPU训练与测评
-
-## dataset
-
-`model = torch.hub.load('pytorch/vision:v0.10.0', 'resnet50', pretrained=True)`
-
-下载的model位于`~/.cache/torch/hub`
-
-## quantization
-
-torchao：用于自定义数据类型和优化的PyTorch库，提供量化、稀疏权重、梯度、优化器和激活等方面的优化。
-
-代码：
-
-https://github.com/pytorch/ao
-
----
-
-https://pytorch.org/tutorials/prototype/quantization_in_pytorch_2_0_export_tutorial.html
-
-Quantization in PyTorch 2.0 Export Tutorial
-
-https://pytorch.org/tutorials/prototype/pt2e_quant_x86_inductor.html
-
-PyTorch 2 Export Quantization with X86 Backend through Inductor
-
-https://mlir.llvm.org/docs/Quantization/
-
-Quantization
 
 ## torchviz
 
@@ -369,15 +357,3 @@ grad_dot.render('backward_graph', format='png')
 ```
 
 找到loss在哪里，就可以导出了。
-
-## 细节
-
-打印stack trace：
-
-`std::cerr << c10::get_backtrace() << std:endl;`
-
----
-
-算子注册：
-
-aten/src/ATen/native/native_functions.yaml

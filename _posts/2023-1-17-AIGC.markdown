@@ -123,6 +123,10 @@ https://zhuanlan.zhihu.com/p/664461927
 
 一天时间，我用AI做了一个恐龙网站
 
+https://www.zhihu.com/question/15735401526
+
+OpenAI GPT-4o推出原生图像生成功能，这次升级有哪些看点？
+
 # CLIP
 
 CLIP由OpenAI在2021年1月发布。

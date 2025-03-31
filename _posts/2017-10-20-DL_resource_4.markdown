@@ -322,3 +322,33 @@ https://mp.weixin.qq.com/s/0Y3x6b6L3T4kOYNUXOYDIA
 https://mp.weixin.qq.com/s/04oEiolE0Qnm7l7H0r8lzw
 
 深度学习模型如何处理大小可变的输入
+
+# Pytorch+
+
+https://mp.weixin.qq.com/s/14_pt0_skKYNw2sAK5Zptw
+
+Pytorch底层算子扩展最详细的总结
+
+https://zhuanlan.zhihu.com/p/363317178
+
+模型转换：由Pytorch到TFlite
+
+https://mp.weixin.qq.com/s/Mj7xI5rFTxKaXswYi9_mRQ
+
+我的PyTorch模型比内存还大，怎么训练呀？
+
+https://mp.weixin.qq.com/s/TjCUCbXL3oSgJNYoEltgrg
+
+7个提升PyTorch性能的技巧
+
+https://zhuanlan.zhihu.com/p/275755543
+
+一款全平台轻量级pytorch推理框架Msnhnet
+
+https://mp.weixin.qq.com/s/MJgQqwWa4wyNgtKZaX_ADQ
+
+Tensorboard可视化与Hook机制
+
+https://mp.weixin.qq.com/s/jnV_4REXOR-ema1kOC95Nw
+
+跨越重重“障碍”，我从PyTorch转换为了TensorFlow Lite

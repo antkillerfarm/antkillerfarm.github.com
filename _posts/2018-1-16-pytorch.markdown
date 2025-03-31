@@ -102,6 +102,12 @@ python setup.py develop
 
 `python setup.py bdist_wheel`：生成wheel包，一般放在dist路径下。
 
+---
+
+使用`python setup.py develop`，且在同一python env下，多次切换多份代码的时候。需要留意site-packages路径或者它的父目录下的`.pth`文件。
+
+`.pth`文件会改变`sys.path`，从而导致torch包指向并不期望的旧代码路径。
+
 ## 示例
 
 Lenet+MNIST+GPU：
@@ -341,15 +347,3 @@ https://pytorch.org/docs/2.0/dynamo/index.html
 ![](/images/img5/pytorch_compile.jpg)
 
 ![](/images/img5/pytorch-2.0.png)
-
----
-
-torch.fx参用symbolic tracer技术，通过对Python代码的符号化执行，记录计算图。
-
-缺点：
-
-- 无法捕获dynamic control flow函数。control flow指的是while、if这种，会随着条件而导致代码走向不同分支的语句。symbolic trace只会根据当前的输入捕获相应的分支到计算图中，如果后面输入发生改变就会报错，除非重新进行捕获。
-
-- 无法追踪Non-torch Functions。
-
-dynamo的设计非常巧妙，一言以蔽之：能捕获的我就捕获，捕获不了的，直接保留。
