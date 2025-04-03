@@ -338,6 +338,10 @@ https://mp.weixin.qq.com/s/VtjGJfrBmWxVM3KjOEGFBw
 
 OpenReg：基于PyTorch "PrivateUse1"机制的独立树外后端实现
 
+https://github.com/bdhirsh/pytorch_open_registration_example
+
+一个`PrivateUse1`的示例
+
 ---
 
 苹果使用Metal Performance Shaders（MPS）作为PyTorch的后端，可以实现加速GPU训练。

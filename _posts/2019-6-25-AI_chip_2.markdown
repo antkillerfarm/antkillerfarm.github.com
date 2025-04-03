@@ -127,6 +127,18 @@ https://zhuanlan.zhihu.com/p/152167194
 
 两大FPGA公司的“AI技术路线”
 
+## CNN加速器
+
+![](/images/img6/Eyeriss.png)
+
+https://zhuanlan.zhihu.com/p/108167850
+
+Eyeriss：适用于深度卷积神经网络的节能型可重构加速器
+
+## Softmax加速器
+
+A3, SpAtten, Sanger等。
+
 ## DEEPHi
 
 2018.8

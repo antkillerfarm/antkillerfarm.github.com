@@ -191,6 +191,21 @@ ANSI和K&R两种函数定义风格
 
 SFINAE：Substitution failure is not an error
 
+```cpp
+template <
+    typename scalar_t,
+    typename index_t,
+    typename std::enable_if_t<!std::is_same_v<c10::Half, scalar_t> && !std::is_same_v<c10::BFloat16, scalar_t>>* =
+        nullptr>
+__device__ __forceinline__ void fastSpecializedAtomicAdd(
+    scalar_t* tensor,
+    index_t index,
+    const index_t numel,
+    scalar_t value)
+```
+
+第三个模板参数用于在编译时对模板参数进行约束。它的作用是限制模板参数scalar_t的类型，确保它不能是c10::Half或c10::BFloat16。
+
 https://en.cppreference.com/w/cpp/language/sfinae
 
 官方文档
