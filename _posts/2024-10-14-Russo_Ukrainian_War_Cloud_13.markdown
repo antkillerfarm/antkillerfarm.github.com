@@ -117,6 +117,10 @@ https://zhuanlan.zhihu.com/p/626641522
 
 ---
 
+乌萝的伞兵不止男的必须要跳伞，女的想戴栗色贝雷帽也必须得跳，不管你是后勤，医护还是行政部门的。空突的前首席财务官塔蒂亚娜·扎布罗茨卡娅中校（现在是SSO的上校了）就有超过40的跳伞记录，值得一提的是她除了是尼科柳克的妹妹外还是扎布洛茨基的妻子。
+
+---
+
 https://mp.weixin.qq.com/s/u7C1THhjnWLRLR4z7casbQ
 
 在乌克兰，日常生活与国家的分裂
@@ -240,3 +244,11 @@ https://mil.sina.cn/sd/2018-12-18/detail-ihmutuee0269859.d.html
 https://mp.weixin.qq.com/s/kwRY-he_wcMp7b2VuQoDOQ
 
 都打了一个多月了，俄军在打什么东西
+
+https://mp.weixin.qq.com/s/yI6P2bRpJC-VG39SLikLng
+
+2022年俄乌战争——乌克兰主要参战部队的历史（1）
+
+https://mp.weixin.qq.com/s/jlUZvp3XmF5TBUHZGS-piw
+
+2022年俄乌战争——乌克兰主要参战部队的历史（2）

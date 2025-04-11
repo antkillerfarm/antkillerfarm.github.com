@@ -198,6 +198,18 @@ $$R_g(w^{(g)}) = \sum_{g=1}^{G} \lVert w^{(g)} \rVert_g = \sum_{g=1}^{G} \sum_{i
 
 Group Regularization也叫做Block Regularization或Structured Regularization。
 
+## QK Norm
+
+QK Norm（Query-Key Normalization）是一种针对Transformer模型的归一化技术。
+
+它的主要方法如下：
+
+- 在计算Q和K的点积之前，分别对每个查询和键向量进行$$l_2$$归一化，使其长度为1。
+
+- 归一化后，使用一个可学习的参数对归一化后的结果进行缩放，而不是简单地除以嵌入维度的平方根。
+
+在多模态输入的场景中，QK Norm能够有效控制不同模态输入的范数增长，避免训练过程中的不稳定。QK Norm也有助于处理长文本输入。
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/69659844

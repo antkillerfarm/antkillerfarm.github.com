@@ -336,3 +336,7 @@ Windows对决OS/2（下）
 https://zhuanlan.zhihu.com/p/715264418
 
 欢迎来到没有WWW的世界：体验KA9Q（上）
+
+https://www.zhihu.com/question/36732601
+
+人们在DOS年代如何办公？

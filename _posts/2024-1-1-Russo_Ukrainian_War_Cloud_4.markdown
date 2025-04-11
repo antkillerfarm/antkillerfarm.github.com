@@ -186,3 +186,7 @@ https://zhuanlan.zhihu.com/p/692209522
 https://zhuanlan.zhihu.com/p/690903957
 
 俄乌战场坦克型号识别速通小课
+
+https://zhuanlan.zhihu.com/p/1891867413961744975
+
+关于俄罗斯炮兵：火炮短缺与朝鲜炮弹

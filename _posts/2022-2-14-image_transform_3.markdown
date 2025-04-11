@@ -232,3 +232,7 @@ https://mp.weixin.qq.com/s/iqYZ5CpMzreHZgwIZUvvoQ
 https://mp.weixin.qq.com/s/up5n6ZUP6SmSfRNpRX37qQ
 
 一句话拍大片，导演末日来了！Gen-2震撼发布，科幻日系二次元统统拿捏
+
+https://mp.weixin.qq.com/s/j-Tm1U9faRhnR2PsAxYbtg
+
+英伟达华人AI版《猫和老鼠》爆火全网，60秒经典泪目！仅靠Transformer新增一层

@@ -153,6 +153,16 @@ https://www.zhihu.com/question/662836115
 
 ---
 
+现在游戏优化基本都是6核起步。E5单核还算够用，多核心+大三缓歪打正着地撞中了趋势。
+
+板U守恒定律”——主板贵时CPU普遍就便宜，而E5主板即便寨板都不是很便宜，上限又有限，只能CPU狂跌价咯。
+
+https://www.zhihu.com/question/7698341480
+
+二手主机市场里的。处理器为英特尔e5 12核24线程的机特别多，为何？
+
+---
+
 https://mp.weixin.qq.com/s/Cij_95iLbAm0AEtrSb72_A
 
 关于CPU科普，这篇说得最详细

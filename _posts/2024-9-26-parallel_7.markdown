@@ -1,13 +1,69 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（八）——参考资源
+title:  并行 & 框架 & 优化（八）——Alpa
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# Alpa（续）
+# LLM System（续）
+
+## Multi-Token Prediction
+
+在训练阶段，一次生成多个后续token，可以一次学习多个位置的label，进而有效提升样本的利用效率，提升训练速度；在推理阶段通过一次生成多个token，实现成倍的推理加速来提升推理性能。
+
+https://zhuanlan.zhihu.com/p/18056041194
+
+MTP（Multi-Token Prediction）的前世今生
+
+https://blog.csdn.net/v_JULY_v/article/details/145374551
+
+一文通透让Meta恐慌的DeepSeek-V3：在MoE、GRPO、MLA基础上提出Multi-Token预测(含FP8训练详解)
+
+## 参考
+
+https://mp.weixin.qq.com/s/39MYrsB3gXpfzTTOgQjDwg
+
+幻方AI DeepSeek模型背后的万卡集群建设
+
+# Alpa
+
+Alpa是一个自动探索分布式策略的工具。
+
+论文：
+
+《Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning》
+
+代码：
+
+https://github.com/openxla/xla/tree/main/xla/hlo/experimental/auto_sharding
+
+文档：
+
+https://alpa.ai/index.html
+
+---
+
+在介绍Alpa之前，先介绍一下Google的optimization库：
+
+https://github.com/google/or-tools
+
+文档：
+
+https://developers.google.com/optimization
+
+ILP可以分为下列几种类型：
+
+（1）纯整数线性规划(Pure integer linear programming)：指全部决策变量都必须取整数值的整数线性规划。有时，也称为全整数规划。
+
+（2）混合整数线性规划(Mimed integer linear programming)：指决策变量中有一部分必须取整数值，另一部分可以不取整数值的整数线性规划。
+
+（3）0-1型整数线性规划(Zero-one integer linear programming)：指决策变量只能了取值0或1的整数线性规划。
+
+ILP相关的库还有pyomo、cyipopt等。
+
+---
 
 为了评估不同Sharding策略的好坏，我们需要对Sharding策略建立cost model。
 
@@ -303,51 +359,3 @@ https://mp.weixin.qq.com/s/IzLtn1SR-aFuxXM3GNZbFw
 https://mp.weixin.qq.com/s/GheEA0Ag0vbhZeyzqpTl0A
 
 分布式优化：在大数据时代应运而生
-
-https://mp.weixin.qq.com/s/3uu50NWFJqA_MTb8wSxIKA
-
-如何优雅地训练大型模型？
-
-https://mp.weixin.qq.com/s/RMDEvy-3-L-Rag1OrZLYhg
-
-深度学习模型的训练时内存次线性优化
-
-https://mp.weixin.qq.com/s/8PUIJykzoNe-fYht5ozrcQ
-
-新一代CTR预测服务的GPU优化实践
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771181&idx=1&sn=30b2a5abc7261b4f2ea122e8e96fdabf
-
-世界第一超算跑深度学习模型，2.76万块V100 GPU将分布式训练扩展到极致
-
-https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650771231&idx=2&sn=6907d6d7a98eab353a076ed48352aadc
-
-15分钟完成Kinetics视频识别训练，除了超级计算机你还需要TSM
-
-https://www.zhihu.com/question/404721763
-
-如何评价Google的GShard论文？
-
-https://mp.weixin.qq.com/s/eTwSo3GnxSnK-BwwZeWmKA
-
-Jeff Dean等提出自动化分层模型，优化CPU、GPU等异构环境，性能提升超60%
-
-https://mp.weixin.qq.com/s/q0VENBNgolpeWmDapF5q_g
-
-在有池化层、1步幅的CNN上减少冗余计算，一种广泛适用的架构转换方法
-
-https://mp.weixin.qq.com/s/YusIuUtvTwoskNRV_OV7iw
-
-100万帧数据仅1秒！AI大牛颜水成团队强化学习新作，代码已开源
-
-https://www.zhihu.com/answer/2259890109
-
-资源受限的人工智能
-
-https://mp.weixin.qq.com/s/ai_XI8ddP5I2m3ChCqnQsA
-
-高效大规模机器学习训练，198页PDF带你概览领域前沿进展
-
-https://mp.weixin.qq.com/s/RAjusu-Jyqb8K19N8KZ_3w
-
-一份552页《大规模数据系统：Large-scale Data Systems》硬核课程PPT

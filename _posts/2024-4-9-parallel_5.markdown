@@ -81,6 +81,16 @@ KV Cache的使用方式一般如上图所示。其中蓝色表示输入里可以
 
 ---
 
+key cache对于量化更加敏感，一般采用FP16，而value cache可以看做都是同分布的，所以可以很容易找到相应的量化参数，一般使用INT8，甚至INT4量化。
+
+key cache通常采用per channel量化，而value cache则主要采用per token量化。
+
+https://zhuanlan.zhihu.com/p/691537237
+
+量化那些事之KVCache的量化
+
+---
+
 https://zhuanlan.zhihu.com/p/630832593
 
 大模型推理性能优化之KV Cache解读
@@ -92,6 +102,10 @@ https://zhuanlan.zhihu.com/p/662498827
 https://zhuanlan.zhihu.com/p/700197845
 
 大模型推理优化技术-KV Cache
+
+https://www.cnblogs.com/rossiXYZ/p/18799503
+
+KV Cache
 
 ## MQA & GQA
 
@@ -268,45 +282,3 @@ $$O[k,:]\leftarrow o_{N/b}^{'}$$
 FlashAttention V1里Q在内层循环，而V2里K在内层循环。V1对于计算softmax不友好，因为每次计算的中间结果只是部分和，只有全算完才能释放相关存储。
 
 $$B_r$$和$$B_c$$是FlashAttention分块处理时的分块size。
-
----
-
-https://www.zhihu.com/question/611236756
-
-FlashAttention的速度优化原理是怎样的？
-
-https://blog.csdn.net/v_JULY_v/article/details/133619540
-
-通透理解FlashAttention与FlashAttention2：全面降低显存读写、加快计算速度
-
-https://zhuanlan.zhihu.com/p/668888063
-
-原理篇: 从Online-Softmax到FlashAttention V1/V2/V3
-
-https://zhuanlan.zhihu.com/p/665170554
-
-FlashAttention核心逻辑以及V1 V2差异总结
-
-https://www.cnblogs.com/sasasatori/p/18474946
-
-FlashAttention逐代解析与公式推导
-
-https://courses.cs.washington.edu/courses/cse599m/23sp/notes/flashattn.pdf
-
-From Online Softmax to FlashAttention
-
-https://zhuanlan.zhihu.com/p/631106302
-
-FlashAttention反向传播运算推导
-
-## FlashDecoding
-
-FlashDecoding是FlashAttention项目的一部分，但由于优化方向有所不同，特别单列出来。
-
-![](/images/img5/FlashDecoding.gif)
-
-Prefill阶段在Q的seqlen维度以及batch_size维度做并行。
-
-![](/images/img5/FlashDecoding.webp)
-
-但是在Decoding阶段，是逐token生成，在利用KV Cache的情况下，每次推理实际的queries token数为1，已经无法通过queries进行并行了。

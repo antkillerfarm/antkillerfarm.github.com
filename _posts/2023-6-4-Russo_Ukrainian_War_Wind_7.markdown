@@ -21,7 +21,7 @@ category: Russo Ukrainian War Wind
 
 瓦格纳对他们的评价是：有了这样的朋友，你甚至都不再需要敌人。
 
-多个“PMC”的出现：瓦格纳、Potok、Veteran、Yenisey、Skif、Tigr、Irbis、Rys' 和战狼。
+多个“PMC”的出现：瓦格纳、Potok、Veteran、Yenisey、Skif、Tigr、Irbis、Rys和战狼。
 
 ![](/images/img5/PMC.jpg)
 
@@ -48,6 +48,12 @@ category: Russo Ukrainian War Wind
 朝鲜的KN-23型弹道导弹的使用。第一次使用时，显示出精确度问题，偏差达到1.5公里以上。俄罗斯专家与他们的专家在工厂里合作，重新加工并进行了现代化改造，现在这些导弹已经能准确打击目标。
 
 朝鲜人也学到了无人机的使用，他们以前从未见过这种技术。
+
+一个朝鲜被俘士兵，本想证明自己是布里亚特共和国的雇佣兵，为俄国打仗，结果带着记者边拍他，边告诉他之前已经拍了他的视频，全世界都报道了以后，这个朝鲜兵彻底破防了，苦苦哀求让他留在乌克兰。
+
+老乌：你难道不想回国和家人团聚吗？
+
+朝鲜兵：家人应该已经都被处决了。
 
 https://zhuanlan.zhihu.com/p/4749656441
 

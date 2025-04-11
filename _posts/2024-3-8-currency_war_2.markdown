@@ -179,88 +179,26 @@ Gucci家族谋杀案：现实中的豪门恩怨远比电影更精彩
 
 本质上就是嫡长公主跟庶出皇子及后妃争夺家产罢了。
 
-# 并行 & 框架 & 优化参考资源+
+# 隋唐+
 
-https://zhuanlan.zhihu.com/p/26552293
+杨行密算五代少有忠厚人了。他上司高骈是被秦彦毕师铎干掉的，杨行密杀了秦毕二人，算是为恩人报仇了，然后才继承了扬州基本盘。
 
-Dataflow架构和神经网络加速器
+---
 
-https://zhuanlan.zhihu.com/p/28445511
+独有南山桂花发，飞来飞去袭人裾。
 
-浅析深度学习框架设计中的关键技术
+https://www.zhihu.com/answer/2728424611
 
-https://mp.weixin.qq.com/s/wu32LBwrkkBIANMdknHlCA
+为什么贾政说袭人这个名字刁钻？
 
-C++并行实战，592页pdf，C++ Concurrency in Action
+---
 
-https://zhuanlan.zhihu.com/p/79385727
+荣国夫人出生于579年，她44岁的时候才嫁给武士彟并连生三女，大女儿武顺去世的时候，她都已经八十六岁了。
 
-有限元并行计算简介
+但贺兰敏之为了报复武则天，竟然产生了一个邪恶的想法，那就是趁着跟荣国夫人住在一起的机会，竟然将其侮辱了！更让人意外的是，荣国夫人并没有怪罪贺兰敏之，而是跟他完全勾搭在了一起！
 
-https://mp.weixin.qq.com/s/heVQ9AIZKxTiCNiAtYKaag
+太子李弘到了娶妻的年纪，武则天精挑细选，最后选中了司卫少卿杨思俭之女杨氏。贺兰敏之竟然设计将杨氏诱骗出来，然后来了一出霸王硬上弓的好戏！
 
-新加坡国立大学最新“大规模深度学习优化”综述论文，带你全面了解最新深度学习准确率和效率的优化方法
+杨氏惨遭侮辱，自然是不能再嫁给李弘了，后来只得选择嫁给贺兰敏之。他还趁机将杨氏弟弟的老婆给侮辱了。
 
-https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
-
-IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能
-
-http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
-
-神经网络的分布式训练
-
-https://mp.weixin.qq.com/s/nvuflLfOolidDDXJVe2DZA
-
-美团深度学习系统的工程实践
-
-https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
-
-TensorFlow分布式计算机制解读：以数据并行为重
-
-https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
-
-继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本
-
-https://mp.weixin.qq.com/s/IqjKdAlGYREqCR9XQB5N1A
-
-伯克利AI分布式框架Ray，兼容TensorFlow、PyTorch与MXNet
-
-https://mp.weixin.qq.com/s/aNX_8UDYI_0u-MwMTYeqdQ
-
-开发易、通用难，深度学习框架何时才能飞入寻常百姓家？
-
-https://mp.weixin.qq.com/s/UbAHB-uEIvqYZCB7xIAJTg
-
-机器学习新框架Propel：使用JavaScript做可微分编程
-
-https://mp.weixin.qq.com/s/Ctl65r4iZNEOBxiiX2I2eQ
-
-Momenta王晋玮：让深度学习更高效运行的两个视角
-
-https://zhuanlan.zhihu.com/p/371499074
-
-OneFlow——让每一位算法工程师都有能力训练GPT
-
-https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
-
-Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
-
-https://zhuanlan.zhihu.com/p/529388795
-
-训练千亿参数大模型，离不开四种GPU并行策略
-
-https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
-
-百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
-
-https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
-
-分布式深度学习原理、算法详细介绍
-
-https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
-
-苹果发布Turi Create机器学习框架，5行代码开发图像识别
-
-https://mp.weixin.qq.com/s/jOVUPhrCBI9W9vPvD9eKYg
-
-UC Berkeley提出新型分布式框架Ray：实时动态学习的开端
+当初被贺兰敏之奸污的极有可能不是宫女，而是太平公主本人！

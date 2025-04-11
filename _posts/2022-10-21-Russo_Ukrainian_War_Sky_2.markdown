@@ -137,6 +137,14 @@ https://zhuanlan.zhihu.com/p/27321199923
 
 假如还有反攻。。。
 
+https://zhuanlan.zhihu.com/p/1892699007802930809
+
+乌克兰战争秘史（上）
+
+https://zhuanlan.zhihu.com/p/1892905046208919482
+
+乌克兰战争秘史（下）
+
 ## 顿巴斯战争
 
 ![](/images/img4/Kyiv.jpg)

@@ -9,14 +9,6 @@ category: Russo Ukrainian War Cloud
 
 # 俄乌战争：流云篇
 
-https://mp.weixin.qq.com/s/yI6P2bRpJC-VG39SLikLng
-
-2022年俄乌战争——乌克兰主要参战部队的历史（1）
-
-https://mp.weixin.qq.com/s/jlUZvp3XmF5TBUHZGS-piw
-
-2022年俄乌战争——乌克兰主要参战部队的历史（2）
-
 https://mp.weixin.qq.com/s/0KyzvO3MJ1iEadRqtOQo3A
 
 俄罗斯军队虚弱的本质终于暴露无遗
@@ -388,3 +380,7 @@ https://mp.weixin.qq.com/s/GMsWsMhJoh6cHBzeMJUh9A
 https://zhuanlan.zhihu.com/p/1890115355025838128
 
 简析普京专车起火爆炸谜团
+
+https://zhuanlan.zhihu.com/p/1892290638696908437
+
+“谈何复员？我们的战壕都快空了”——当局会明确服役期限吗？

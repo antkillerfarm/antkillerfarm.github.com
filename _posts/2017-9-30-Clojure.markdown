@@ -309,14 +309,13 @@ Linux下常用的程序调试器gdb是什么原理？
 
 问题：
 
-客户端更新后连不上远程服务器，一直报错 waiting for server log...
+客户端更新后连不上远程服务器，一直报错waiting for server log...
 
 解决：
 
-/home/<user>/.vscode-server/bin/XXX/server.sh
-
 ```bash
-$ROOT/node" ${INSPECT:-} "$ROOT/out/server-main.js" --compatibility=1.63 --accept-server-license-terms
+# /home/<user>/.vscode-server/bin/<hash id>/server.sh:
+$ROOT/node" ${INSPECT:-} "$ROOT/out/server-main.js" --compatibility=1.63 --accept-server-license-terms "$@"
 ```
 
 ---
