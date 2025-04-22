@@ -41,6 +41,10 @@ https://blog.csdn.net/v_JULY_v/article/details/145406756
 
 一文速览DeepSeekMoE：从Mixtral 8x7B到DeepSeekMoE(含MoE架构的实现及DS LLM的简介)
 
+https://zhuanlan.zhihu.com/p/27181462601
+
+DeepSeek-V3 / R1 推理系统概览
+
 ---
 
 deepseek r1的推理性价比方案实际上在两端。要么是上万并发度的大集群，deepseek的320 GPU作为最小部署单元就是这样一个极端，要么是单用户并发度价格做得足够低。
@@ -49,7 +53,7 @@ deepseek r1的推理性价比方案实际上在两端。要么是上万并发度
 
 但是因为所有请求的访存都是落在这个671GB范围内的，而不是batchsize x 37GB，所以当并发度增加到一定程度，tps衰减就收敛了。
 
-如果超大超稀疏的MoE模型成为主流，那么“云上面向大并发的分布式推理”和“本地面向中小并发的推理”在架构上就开始要分岔了，需要分别演进。
+如果超大超稀疏的MoE模型成为主流，那么“云上面向大并发的分布式推理”和“本地面向中小并发的推理”在架构上就要开始分岔了，需要分别演进。
 
 ## Sparse Attention
 
@@ -60,6 +64,10 @@ https://www.zhihu.com/question/12616022631
 DeepSeek新论文NSA注意力机制，有哪些信息值得关注？
 
 ## Expert Parallelism
+
+Expert-Parallel vs. Token-Parallel
+
+MoBA：Mixture of Block Attention
 
 https://github.com/deepseek-ai/DeepEP
 

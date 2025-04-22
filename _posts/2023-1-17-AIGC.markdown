@@ -61,72 +61,6 @@ Generative AI for Beginners
 
 https://space.bilibili.com/8095370
 
----
-
-https://mp.weixin.qq.com/s/H2nqQi2EVQ_EyeDNCRD3Cg
-
-一文回顾AI绘画的成长之路：从简笔画到真实人脸生成
-
-https://www.zhihu.com/question/583294094
-
-Ai绘画半年了，到目前为止，AI绘画让多少画师失业了？未来又会有多少?
-
-https://www.zhihu.com/question/584139316
-
-AI绘画引入ControlNet，将会带来哪些影响？
-
-https://www.zhihu.com/question/584053473
-
-如何评价2023年2月AI绘画的最新水平？
-
-https://mp.weixin.qq.com/s/HpziNAqHY9Oetsgk2AVxEg
-
-ControlNet组合拳效果惊人，颠覆AI绘画游戏规则
-
-https://zhuanlan.zhihu.com/p/615522634
-
-AIGC的一些记录
-
-https://www.zhihu.com/question/593770520
-
-首批因AI失业的人来了，有公司已裁减原画师，导演陆川力赞AI海报高效优质，哪些职位容易被取代？
-
-https://zhuanlan.zhihu.com/p/619730103
-
-AI绘画教程：如何用Stable Diffusion始终画同一个人？
-
-https://zhuanlan.zhihu.com/p/626335914
-
-AI绘图StableDiffusion最强大模型盘点 - 诸神乱战
-
-https://zhuanlan.zhihu.com/p/622914660
-
-《Stable Diffusion 倚天剑术》第1卷：在各种设备上把Stable Diffusion玩起来
-
-https://zhuanlan.zhihu.com/p/629348322
-
-StableDiffusion LoRA自训练教程
-
-https://mp.weixin.qq.com/s/DBLMAEbVw6v4xH94-5Zl3w
-
-GAN逆袭归来！清华校友论文引爆AI绘图圈，一秒把大象P转身，Diffusion黯然失色
-
-https://zhuanlan.zhihu.com/p/643872569
-
-AI这样把NB写在脸上，它在玩一种很新的艺术
-
-https://zhuanlan.zhihu.com/p/626004957
-
-利用AI在独立游戏项目中大干快上
-
-https://zhuanlan.zhihu.com/p/664461927
-
-一天时间，我用AI做了一个恐龙网站
-
-https://www.zhihu.com/question/15735401526
-
-OpenAI GPT-4o推出原生图像生成功能，这次升级有哪些看点？
-
 # CLIP
 
 CLIP由OpenAI在2021年1月发布。
@@ -296,3 +230,75 @@ Image Decoder部分使用传统的AutoEncoder进行训练。
 这样Diffusion过程就可以在Information World中进行了。
 
 ![](/images/img5/stable-diffusion-forward-and-reverse-process-v2.png)
+
+Stable Diffusion的完整架构图如下：
+
+![](/images/img5/Stable_Diffusion.png)
+
+常见的应用包括：TEXT2IMAGE、IMAGE2IMAGE、INPAINT。
+
+Stable Diffusion的推理过程：
+
+![](/images/img6/SD.png)
+
+![](/images/img6/SD_3.png)
+
+![](/images/img6/SD_4.png)
+
+上图中的CLIP和AutoencoderKL均已在大数据集上进行了预训练。
+
+CLIPEmbedder文本编码器对Prompt提示词进行编码，生成大小为`[B, K, E]`的embedding表示（即context），其中K表示文本最大编码长度max length, E表示embedding的大小。
+
+![](/images/img6/SD_5.png)
+
+![](/images/img6/SD_6.png)
+
+由于Cross Attention的output的序列长度和Q一致，所以变长的Prompt只能作为KV存在。
+
+![](/images/img6/SD_7.png)
+
+---
+
+![](/images/img5/eval-models-2.png)
+
+不同类型的文生图模型的考虑因素/优缺点
+
+---
+
+参考：
+
+https://jalammar.github.io/illustrated-stable-diffusion/
+
+The Illustrated Stable Diffusion
+
+https://lilianweng.github.io/posts/2021-07-11-diffusion-models/
+
+What are Diffusion Models?
+
+https://zhuanlan.zhihu.com/p/366004028
+
+另辟蹊径—Denoising Diffusion Probabilistic一种从噪音中剥离出图像/音频的模型
+
+https://zhuanlan.zhihu.com/p/384144179
+
+Denoising Diffusion Probabilistic Model(DDPM)
+
+https://speech.ee.ntu.edu.tw/~hylee/ml/ml2023-course-data/DDPM%20(v7)
+
+李宏毅：DDPM讲解
+
+https://zhuanlan.zhihu.com/p/637815071
+
+DDPM（模型架构篇）
+
+https://zhuanlan.zhihu.com/p/650394311
+
+DDPM（数学原理篇）
+
+https://zhuanlan.zhihu.com/p/377603135
+
+Diffusion Probabilistic Model
+
+https://yang-song.github.io/blog/2021/score/
+
+Generative Modeling by Estimating Gradients of the Data Distribution

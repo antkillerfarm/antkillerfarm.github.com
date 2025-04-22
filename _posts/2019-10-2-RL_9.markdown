@@ -218,3 +218,7 @@ $$V_i(\pi^*_1,\dots,\pi^*_i,\dots,\pi^*_n)\ge V_i(\pi^*_1,\dots,\pi_i,\dots,\pi^
 https://mp.weixin.qq.com/s/pTGPIm8msErFCZEUz2n2Gw
 
 鞍点问题及纳什均衡问题的新研究成果
+
+---
+
+很多博弈纳什均衡不止一个，薪资也是一样的。为什么需要劳动法出重拳就是为了防止滑落到一个不好的均衡里去。

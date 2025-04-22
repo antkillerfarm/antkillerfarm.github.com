@@ -115,10 +115,6 @@ https://www.163.com/dy/article/J9EDCF4C0552BNOQ.html
 
 乌克兰奥运会冠军将拍卖自己的金牌为乌军筹款
 
-https://www.zhihu.com/question/567275817
-
-大家怎么看乌克兰高调给一名台湾雇佣兵举行华丽葬礼？（曾圣光）
-
 https://zhuanlan.zhihu.com/p/7610620647
 
 第二位台湾雇佣兵在乌克兰阵亡，幸存者：战场上尸横遍野、血流成河

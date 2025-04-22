@@ -214,6 +214,35 @@ https://zhuanlan.zhihu.com/p/21314708
 
 C++模板进阶指南：SFINAE
 
+# CRTP
+
+CRTP：Curiously Recurring Template Pattern是C++模板编程中的一种惯用法。基本特征表现为：基类是一个模板类；派生类在继承该基类时，将派生类自身作为模板参数传递给基类。
+
+```cpp
+template <typename ChildType> struct VectorBase {
+  ChildType &underlying() { return static_cast<ChildType &>(*this); }
+  inline ChildType &operator+=(const ChildType &rhs) {
+    this->underlying() = this->underlying() + rhs;
+    return this->underlying();
+  }
+};
+struct Vec3f : public VectorBase<Vec3f> {
+  float x{}, y{}, z{};
+  Vec3f() = default;
+  Vec3f(float x, float y, float z) : x(x), y(y), z(z) {}
+};
+ 
+inline Vec3f operator+(const Vec3f &lhs, const Vec3f &rhs) {
+  Vec3f result;
+  result.x = lhs.x + rhs.x;
+  result.y = lhs.y + rhs.y;
+  result.z = lhs.z + rhs.z;
+  return result;
+}
+```
+
+本质上CRTP中的多个派生类并不是同一个基类，只是共用一部分模板代码而已。它省去了动态绑定、查询虚函数表带来的开销。
+
 # 打印vector的N种方法
 
 ```cpp
@@ -337,62 +366,3 @@ http://stackoverflow.com/questions/20247525/about-c-conversion-no-known-conversi
 宏使用：
 
 `CC_DEPRECATED_ATTRIBUTE static TextureCache * getInstance();`
-
-# std::tuple
-
-```cpp
-auto tuple = std::make_tuple(1, 'A', "test");
-std::cout << std::get<0>(tuple) << std::endl;
-std::cout << std::get<1>(tuple) << std::endl;
-std::cout << std::get<2>(tuple) << std::endl;
-```
-
-# std::tie
-
-可用tuple或pair返回多个返回值，然后用tie进行解包。这里的语法非常类似python。
-
-```cpp
-std::pair<int, std::string> fun_tie(int a, std::string str)
-{
-  return std::make_pair(a, str);
-}
-
-int a;
-std::string str;
-std::tie(a , str) = fun_tie(12, std::string("Pony Ma"));
-std::cout << a << "," << str << std::endl;
-```
-
-# 有价值的C/C++库
-
-https://github.com/fffaraz/awesome-cpp
-
-一个专门收集各种C/C++库的网页
-
-https://github.com/gabime/spdlog
-
-一个C++的log库
-
-https://zhuanlan.zhihu.com/p/674073158
-
-超详细！spdlog源码解析
-
-# C/C++参考资源
-
-`vector<bool>`并不是一个通常意义上的vector容器，这个源自于历史遗留问题。 早在C++98的时候，就有`vector< bool>`这个类型了，但是因为当时为了考虑到节省空间的想法，所以`vector<bool>`里面不是一个Byte一个Byte储存的，它是一个bit一个bit储存的！
-
-https://www.zhihu.com/question/23367698
-
-c++中为什么不提倡使用`vector<bool>`？
-
----
-
-```c
-struct Test {
-  int a;
-  int b;
-  char c[0];
-};
-```
-
-Zero-length array不占用结构体的空间，但可以由编译器计算offset，例如上例中指向c的指针，实际上指向了整个结构体的尾部（不含结构体本身）。

@@ -81,7 +81,9 @@ OpenAI o1 = COT + RL
 
 CoT模型增加了推理过程，期望利用**inference time scaling**来解决问题并提高准确率。这进一步导致了context长度的增加。
 
-短序列时代，Attn后面的FFN占用了80%的计算量，然而到了LLM时代，Attn开始占据计算量的大头。（Attn的复杂度是$$O(n^2d)$$, n为序列长度，d为hidden size）。
+短序列时代，Attn后面的FFN占用了80%的计算量，然而**到了LLM时代，Attn开始占据计算量的大头**。（Attn的复杂度是$$O(n^2d)$$, n为序列长度，d为hidden size）。
+
+![](/images/img6/Transformer_FLOP.png)
 
 ---
 
