@@ -77,14 +77,6 @@ https://www.zhihu.com/question/482003599
 
 ---
 
-在1999年至2015年期间，共有超700名邮局分局负责人因Horizon审计软件的bug而遭到起诉，之后富士通又陆续提出多项并不属实的财务问题。数百人因此被监禁或破产，期间至少四人因此选择自杀。
-
-https://www.36kr.com/p/2598433889188741
-
-系统bug致百人入狱，砸了2.8亿元仍上云失败，二十年了，这家大企业被日本软件坑惨了
-
----
-
 https://www.zhihu.com/people/suntrise/posts
 
 一个研究计算机历史的专栏
@@ -340,3 +332,7 @@ https://zhuanlan.zhihu.com/p/715264418
 https://www.zhihu.com/question/36732601
 
 人们在DOS年代如何办公？
+
+https://zhuanlan.zhihu.com/p/1899748999843518451
+
+比尔盖茨1975年写的代码

@@ -115,6 +115,14 @@ sysbench在美团点评中的应用
 
 # 上古软件开发
 
+在1999年至2015年期间，共有超700名邮局分局负责人因Horizon审计软件的bug而遭到起诉，之后富士通又陆续提出多项并不属实的财务问题。数百人因此被监禁或破产，期间至少四人因此选择自杀。
+
+https://www.36kr.com/p/2598433889188741
+
+系统bug致百人入狱，砸了2.8亿元仍上云失败，二十年了，这家大企业被日本软件坑惨了
+
+---
+
 在PC开始出现的初期，IBM的Lotus 1-2-3是PC的杀手应用，它被认为是PC所以成功的因素之一。Lotus 1-2-3纪元（epoch）从1900年开始，所以第一天是1900年1月1日，其后所有的日期都是在它上面加一个Delta差值，这也是为什么我们上面1900年2月28日的年份表示是00的原因。Lotus从诞生起就有个bug，它认为1900年是闰年！
 
 微软因为Lotus的大卖而自己研发表格系统Multiplan，它和它的继任者Excel为了能够与Lotus兼容，不但要做到外观十分相似，而且为了能够读取Lotus的文件而故意引入了一样的bug。
@@ -237,61 +245,3 @@ win98时代cpu性能很差，为了最大限度的榨取性能，cpu哪怕能少
 https://www.zhihu.com/question/614223201
 
 各位老win98玩家，Gal大神求问VM17pro虚拟机问题？
-
-# OpenCV+
-
-https://mp.weixin.qq.com/s/pG5nq1fQ9XHp8WZN1AiLJQ
-
-OpenCV基于Inception模型图像分类
-
-https://mp.weixin.qq.com/s/EqeNS6s72_Qwg6mmDRl6wQ
-
-OpenCV基于DLCO描述子匹配
-
-https://mp.weixin.qq.com/s/JVuxMUmN2_DNfg1Ol5b8cw
-
-OpenCV3新特性-图像无缝克隆函数演示
-
-https://mp.weixin.qq.com/s/O3o8W1KSsZ0rz7aVukDWEg
-
-使用OpenCV测量图像中物体之间的距离
-
-https://mp.weixin.qq.com/s/HmOiQnkaqxcFPOODnOeUkw
-
-使用OpenCV检测坑洼
-
-https://mp.weixin.qq.com/s/BTmozO6Yr-Jsfm4-YXh2Mg
-
-基于OpenCV的图像梯度与边缘检测
-
-https://mp.weixin.qq.com/s/QYnXiAMFC3k_wQIwiaeWQg
-
-三行代码，OpenCV轻松生成19种色彩风格图像
-
-https://mp.weixin.qq.com/s/4LQBY0rMJk0tU8lF3fgHfQ
-
-基于OpenCV的图像阴影去除
-
-https://mp.weixin.qq.com/s/kH6K6L6-BYnYE-g46WhNCg
-
-在OpenCV中使用色彩校正
-
-https://mp.weixin.qq.com/s/K4P8151BuM4DQPSK-KzPFQ
-
-OpenCV图像旋转的原理与技巧
-
-https://mp.weixin.qq.com/s/hGONFisdtwcF5CRSB9IF6g
-
-图像处理基础：颜色空间及其OpenCV实现
-
-https://mp.weixin.qq.com/s/0Z600IIGscgrREgLUqjLuA
-
-手把手教你用Python做一个图像融合demo
-
-https://mp.weixin.qq.com/s/vo1v5dYGLMqzCSUG9gPvag
-
-使用OpenCV进行图像编辑--绘画和素描
-
-https://mp.weixin.qq.com/s/EkxXV7Bizf4JxG15SQb79w
-
-修改OpenCV一行代码，提升14%图像匹配效果（BEBLID(Boosted Efficient Binary Local Image Descriptor)是一个2020年才开发出来的算子）

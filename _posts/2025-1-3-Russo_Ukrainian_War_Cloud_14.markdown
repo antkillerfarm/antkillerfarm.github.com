@@ -380,3 +380,7 @@ https://zhuanlan.zhihu.com/p/1890115355025838128
 https://zhuanlan.zhihu.com/p/1892290638696908437
 
 “谈何复员？我们的战壕都快空了”——当局会明确服役期限吗？
+
+https://zhuanlan.zhihu.com/p/22952014675
+
+“要残忍”：俄罗斯对乌克兰战俘的酷刑系统内幕

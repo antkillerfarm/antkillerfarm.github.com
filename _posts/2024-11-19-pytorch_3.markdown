@@ -37,13 +37,7 @@ https://mlir.llvm.org/docs/Quantization/
 
 Quantization
 
-## 细节
-
-打印stack trace：
-
-`std::cerr << c10::get_backtrace() << std:endl;`
-
----
+## 自定义算子
 
 算子注册：
 
@@ -54,6 +48,55 @@ aten/src/ATen/native/native_functions.yaml
 PyTorch命名约定：
 
 `mul_`，其中mul代表乘法，后缀`_`表示这是一个原地操作。
+
+---
+
+```cpp
+torch::Tensor custom_add(torch::Tensor a, torch::Tensor b) {
+    return a + b;
+}
+
+PYBIND11_MODULE(TORCH_EXTENSION_NAME, m) {
+    m.def("custom_add", &custom_add, "A custom add function");
+}
+
+setup(
+    name='flash_attn',  # 这里定义了 TORCH_EXTENSION_NAME
+    ext_modules=[
+        CUDAExtension('flash_attn', [
+            'path/to/your/source_file.cpp',
+            'path/to/your/source_file.cu',
+        ]),
+    ],
+    cmdclass={
+        'build_ext': BuildExtension
+    }
+)
+
+TORCH_LIBRARY_EXPAND(my_custom_ops, ops) {
+    ops.def("custom_add", custom_add);
+}
+
+result = torch.ops.my_custom_ops.custom_add(torch.tensor([1, 2]), 
+
+@_torch_custom_op_wrapper("flash_attn::_flash_attn_forward", mutates_args=(), device_types="cuda")
+```
+
+---
+
+`@_torch_register_fake_wrapper("flash_attn::_flash_attn_forward")`
+
+这个装饰器的作用是将一个Python函数注册为PyTorch的一个“假操作”（fake op）。这意味着该函数在计算图中会被识别为一个操作，但它不会直接执行实际的计算。相反，它会被用来替代一个实际的底层操作（例如一个CUDA内核）。这种机制通常用于以下场景：
+
+- 调试和测试：在开发自定义操作时，可以先用一个简单的Python函数来模拟实际操作的行为，而无需立即实现完整的CUDA或C++代码。
+- 动态替换：在某些情况下，可能需要根据运行时条件动态选择使用实际操作还是一个替代的实现。
+- 兼容性：在某些环境中，可能无法直接调用底层操作（例如在某些CPU上运行时，CUDA操作不可用），此时可以用一个Python函数来提供一个兼容的实现。
+
+## 细节
+
+打印stack trace：
+
+`std::cerr << c10::get_backtrace() << std:endl;`
 
 ## 参考
 
@@ -348,83 +391,3 @@ https://mp.weixin.qq.com/s/Mo7XhRcPkgurmQPJ3Zu1ug
 https://mp.weixin.qq.com/s/PWABh72t92pUOJufcmzvag
 
 用PyTorch做深度学习实验！Facebook新框架Ax和BoTorch双双开源
-
-https://mp.weixin.qq.com/s/LcwlCai7PMYOBwsLXPS5HA
-
-PyTorch语义分割开源库semseg
-
-https://mp.weixin.qq.com/s/oDYMTb9NWxVsW07FLQKA_Q
-
-万字综述，核心开发者全面解读PyTorch内部机制
-
-https://www.zhihu.com/question/274635237
-
-Pytorch有什么节省内存（显存）的小技巧？
-
-https://mp.weixin.qq.com/s/xe5zmJklT2sqn_zffmyrLg
-
-Sharded:在相同显存的情况下使pytorch模型的参数大小加倍
-
-https://mp.weixin.qq.com/s/maOnO_o5y19X2D-ZnLjsJA
-
-PyTorch中的In-place操作是什么？为什么要避免使用这种操作？
-
-https://zhuanlan.zhihu.com/p/299736532
-
-使用PyTorch 1.6 for Android
-
-https://mp.weixin.qq.com/s/1ugk6uI6lfWEEUvtKIfYNA
-
-9个让PyTorch模型训练提速的技巧！
-
-https://mp.weixin.qq.com/s/kZvdgWqk1KLi790rly3YYQ
-
-Pytorch中的分布式神经网络训练
-
-https://mp.weixin.qq.com/s/biHcUt55-9RfqYJ_Dg_7Tg
-
-TorchMetrics：PyTorch的指标度量库
-
-https://zhuanlan.zhihu.com/p/363319763
-
-PyTorch vs LibTorch：网络推理速度谁更快？
-
-https://mp.weixin.qq.com/s/RBclQdtaA8prvSoUUdhrEQ
-
-机器学习的Pytorch实现资源集合
-
-https://mp.weixin.qq.com/s/zPv-3fMy1rZwAwPqjs7oAA
-
-Pytorch图像分类从模型自定义到测试
-
-https://zhuanlan.zhihu.com/p/46636027
-
-1张图学会PyTorch+TensorFlow+MXNet+TF Eager
-
-https://mp.weixin.qq.com/s/yS9PAw926Y7AsGRW0eHG0Q
-
-基于PyTorch的GAN框架TorchGAN：用架构级API轻松定制GAN项目
-
-https://github.com/CVBox/PyTorchCV
-
-一个基于pytorch的CV框架
-
-https://mp.weixin.qq.com/s/w09hcJof80m2VGwn7SgKmQ
-
-TorchSeg—基于PyTorch的快速模块化语义分割开源库
-
-https://mp.weixin.qq.com/s/TsR-jgO2c2-dbqnk1mEj8w
-
-想读读PyTorch底层代码？这份内核机制简介送给你
-
-https://mp.weixin.qq.com/s/Lzt3LbO6lBbOebNV1d2pLQ
-
-迁移学习不好懂？这里有一个PyTorch项目帮你理解
-
-https://mp.weixin.qq.com/s/7fK6GNyzYTP0fQy7F01fZw
-
-PyTorch深度学习模型训练加速指南2021
-
-https://mp.weixin.qq.com/s/SReuVBN8WIXFlnwho3wqgQ
-
-最详细的Pytorch底层算子扩展总结

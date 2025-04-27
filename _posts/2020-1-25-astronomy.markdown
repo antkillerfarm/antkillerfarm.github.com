@@ -224,6 +224,14 @@ https://blog.csdn.net/weixin_42943114/article/details/85335057
 
 ---
 
+![](/images/img6/Gravitational_lens.webp)
+
+https://www.zhihu.com/question/13542048846
+
+流浪行星是什么？它们是如何形成的？
+
+---
+
 ![](/images/img2/The_Wandering_Earth.jpg)
 
 https://mp.weixin.qq.com/s/O8Zp7ok0JpPuFkofnQ7UaQ

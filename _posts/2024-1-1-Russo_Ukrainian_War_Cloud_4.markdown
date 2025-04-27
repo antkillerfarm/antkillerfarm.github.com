@@ -125,6 +125,8 @@ https://zhuanlan.zhihu.com/p/705950791
 
 俄军搞出了充满俺寻思之力的兽人绿皮战车。
 
+![](/images/img6/FPV.webp)
+
 https://zhuanlan.zhihu.com/p/695766135
 
 俄罗斯T72坦克“乌龟壳”改装粗中有细，凭什么能够横行战场？

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  苏俄笑话（二）, 苏俄（十）
+title:  苏俄笑话（二）
 category: Russia 
 ---
 
