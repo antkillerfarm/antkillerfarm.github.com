@@ -138,6 +138,16 @@ https://mp.weixin.qq.com/s/asjPNb_SXF5guNIcdduHmQ
 
 这两个命令虽然很早就在gcc工具链中了，但是早期版本只能查看本工具链编译的可执行文件。现在的话，主流的CPU指令集都可以支持了，不必采用`arm-readelf`这样的特殊前缀版本了。
 
+---
+
+符号类型：
+
+- T: text (code) section
+- R: read only data section
+- D: initialized data section
+
+上述类型都有大写字母和小写字母两个版本，前者表示是全局符号，后者表示是局部符号。
+
 ## 切换gcc版本
 
 `sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 40`

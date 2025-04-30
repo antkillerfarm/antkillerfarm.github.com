@@ -7,7 +7,19 @@ category: Attention
 * toc
 {:toc}
 
-# 花式Attention（续）
+# 花式Attention
+
+## Scaled Dot-Product Attention（续）
+
+除了Scale之外，softcapping也是一种常见的对注意力分数进行限制的技术。这些技术的目的是**防止注意力分数过高，从而导致数值不稳定或梯度爆炸**等问题。
+
+```python
+scores /= softcap
+scores = scores.tanh()
+scores *= softcap
+```
+
+这里利用了tanh的值域为$$[-1,1]$$的特性。
 
 ## Multi-Head Attention
 

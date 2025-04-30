@@ -9,6 +9,28 @@ category: DL
 
 # BP算法
 
+单层神经网络的学习算法最早由Donald Olding Hebb提出，因此又被叫做Hebb算法。但是这种算法无法扩展到多层神经网络，这最终导致了AI的第一个冬天，直到BP算法的出现。
+
+>Donald Olding Hebb，1904~1985,加拿大心理学家，哈佛博士（1936），McGill University教授。英国皇家学会会员。神经心理学和神经网络之父。
+
+误差逆传播（error BackPropagation）算法最早由Paul J. Werbos于1974年提出，然而此时正值ANN的低谷，未得到人们的重视。因此到了1986年时，由David Everett Rumelhart重新发明了该算法。
+
+>Paul J. Werbos，1947年生，哈佛大学博士。
+
+>David Everett Rumelhart，1942~2011，美国心理学家。斯坦福大学博士，先后执教于UCSD和斯坦福。美国科学院院士。
+
+![](/images/article/BP_network.png)
+
+BP算法的核心思路：
+
+1.利用前向传导公式，计算第n层输出值。
+
+2.计算输出值和实际值的残差。
+
+3.将残差梯度传递回第$$n-1,n-2,\dots,2$$层，并修正各层参数。（即所谓的误差逆传播）
+
+BP算法的推导过程教材已经写的很好了，这里只对要点做一个摘录。
+
 ## 链式法则
 
 Chain Rules本来是微积分中，用于求一个复合函数导数的常用法则。这里用来进行残差梯度的逆传播。
@@ -261,21 +283,3 @@ http://www.cnblogs.com/neopenx/p/4453161.html
 ReLu(Rectified Linear Units)激活函数
 
 https://en.wikipedia.org/wiki/Activation_function
-
-## ReLU
-
-ReLU(Rectified Linear Units)激活函数的定义如下：
-
-$$f(x) = \max(0, x)$$
-
-其函数曲线如下图中的蓝线所示：
-
-![](/images/article/Rectifier_and_softplus_functions.svg)
-
-从上图可以看出，ReLU相对于Sigmoid，在解决了梯度消失问题的同时，也增加了神经网络的稀疏性，因此ReLU的收敛速度远高于Sigmod，并成为目前最常用的激活函数。
-
-由于ReLU的曲线不是连续可导的，因此有的时候，会用SoftPlus函数（上图中的绿线）替代。其定义为：
-
-$$f(x) = \ln(1 + e^x)$$
-
-除此之外，ReLU函数族还包括Leaky ReLU、PReLU、RReLU、ELU等。

@@ -7,6 +7,26 @@ category: DL
 * toc
 {:toc}
 
+# 神经元激活函数（续）
+
+## ReLU
+
+ReLU(Rectified Linear Units)激活函数的定义如下：
+
+$$f(x) = \max(0, x)$$
+
+其函数曲线如下图中的蓝线所示：
+
+![](/images/article/Rectifier_and_softplus_functions.svg)
+
+从上图可以看出，ReLU相对于Sigmoid，在解决了梯度消失问题的同时，也增加了神经网络的稀疏性，因此ReLU的收敛速度远高于Sigmod，并成为目前最常用的激活函数。
+
+由于ReLU的曲线不是连续可导的，因此有的时候，会用SoftPlus函数（上图中的绿线）替代。其定义为：
+
+$$f(x) = \ln(1 + e^x)$$
+
+除此之外，ReLU函数族还包括Leaky ReLU、PReLU、RReLU、ELU等。
+
 # Dropout
 
 ## Dropout训练阶段
@@ -269,11 +289,3 @@ https://www.jianshu.com/p/95a8f035c86c
 https://mp.weixin.qq.com/s/gWcejm_CMGPKes6tUhbQ5A
 
 BatchNorm的避坑指南
-
-## 鞍点
-
-在微分方程中，沿着某一方向是稳定的，而另一方向是不稳定的奇点，叫做鞍点（Saddle point）。在泛函中，既不是极大值点也不是极小值点的临界点，叫做鞍点。在矩阵中，一个数在所在行中是最大值，而在所在列中是最小值，则被称为鞍点。在物理上要广泛一些，指在一个方向是极大值，另一个方向是极小值的点。
-
-![](/images/article/Saddle_point.png)
-
-上图是$$z=x^2-y^2$$的曲面图，其中的原点就是鞍点。上图形似马鞍，故名。

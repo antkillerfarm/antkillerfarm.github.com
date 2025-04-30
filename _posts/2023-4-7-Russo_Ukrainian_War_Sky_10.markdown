@@ -226,3 +226,7 @@ https://news.ifeng.com/c/8Kph5NYlxxB
 https://zhuanlan.zhihu.com/p/666716195
 
 善意又来了？浅谈俄军从第聂伯河左岸撤退的前景
+
+https://zhuanlan.zhihu.com/p/713896477
+
+金伯恩畅想曲——乌方金伯恩半岛登陆作战方案
