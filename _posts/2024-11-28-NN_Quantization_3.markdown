@@ -9,6 +9,28 @@ category: DL acceleration
 
 # 量化策略（续）
 
+## per-channel & per-group
+
+一般情况下，一个Tensor共享同一个Scale。有的时候为了提升精度，也可以一个channel共享同一个Scale，这也被称为per-channel quantization。如果不共享Scale，则退化为普通的浮点数表示。
+
+经过观察，在正态分布下，绝对值很大的参数的比例会很少，所以一起归一会使得大多数参数变得很小，从而使得量化过程中的一些数字范围对应的int8没有被充分利用，导致更多的信息丢失。
+
+把参数划分为了小Block，在进行量化的时候，按照block内绝对值最大的数对这个block进行归一化，使得所有参数都落在 [-1, 1] 这个范围，这就是Block-wise Quantization。Block的值如果在内存中连续，则这种quantization也叫做per-group quantization。
+
+## Activation Quantization
+
+早期的Quantization一般是W和A采用相同量化格式，然而由于LLM的特殊性（层数深，迭代次数多），Activation的量化一直是一个大问题。W4A16就是目前传统方法所能达到的最好水平了。
+
+>seq2seq对于数值精度要求高，这在早期的LSTM时代，就已经很突出了。当时CNN普遍已经8bit量化，但在LSTM中，起码要16bit才能达到可接受的效果。
+
+![](/images/img5/quant.png)
+
+研究表明，有些Token的异常值会显著高于其他Token，有了之前Weight上的per-channel & per-group的策略，Activation上自然也可以使用per-token的策略。
+
+然而Activation Quantization的这些高阶策略，和输入的内容密切相关，因此并不能进行离线量化，同时量化参数由于是运行时才确定的，相当于是动态图，这给后端的AI硬件的调度带来了一定的挑战。
+
+相关算法：SmoothQuant、ZeroQuant、SpQR。
+
 ## 量化技巧
 
 1.设计模型时，需要对输入进行归一化，缩小输入值的值域范围，以减小量化带来的精度损失。
@@ -180,71 +202,3 @@ https://mp.weixin.qq.com/s/M79xGWWtJUB6wBVlHXw8ig
 https://www.chiphell.com/thread-1620755-1-1.html
 
 新Titan X的INT8计算到底是什么鬼
-
-https://mp.weixin.qq.com/s/5LhLbzyWTlP2R_zGAIKuiA
-
-INT8量化训练
-
-https://mp.weixin.qq.com/s/S9VcoS_59nbZWe_P3ye2Tw
-
-减少模型半数内存用量：百度&英伟达提出混合精度训练法
-
-https://zhuanlan.zhihu.com/p/35700882
-
-CNN量化技术
-
-https://mp.weixin.qq.com/s/9DXMqiPIK5P5wzUMT7_Vfw
-
-基于交替方向法的循环神经网络多比特量化
-
-https://mp.weixin.qq.com/s/PDeChj1hQqUrZiepxXODJg
-
-ICLR oral：清华提出离散化架构WAGE，神经网络训练推理合二为一
-
-https://mp.weixin.qq.com/s/KgM1k1bziLTCec67hQ8hlQ
-
-超全总结：神经网络加速之量化模型
-
-https://mp.weixin.qq.com/s/7dzQhgblEm-kzRnpddweSw
-
-嵌入式端CNN网络计算的量化-动态定点法（1）
-
-https://mp.weixin.qq.com/s/M3NcH30zY5Wlj76BDPQlMA
-
-模型压缩一半，精度几乎无损，TensorFlow推出半精度浮点量化工具包，还有在线Demo
-
-https://www.zhihu.com/question/498135156
-
-如何看待FAIR提出的8-bit optimizer：效果和32-bit optimizer相当？
-
-https://mp.weixin.qq.com/s/D3ZKidCV7OhAeqWqWg521w
-
-如何训练和部署FP16/Int8等低精度机器学习模型?
-
-https://jackwish.net/neural-network-quantization-introduction-chn.html
-
-神经网络量化简介
-
-https://mp.weixin.qq.com/s/70GuFnJGhtIZEA-PECHjaA
-
-混合精度对模型训练和推理的影响
-
-https://mp.weixin.qq.com/s/xIbF3rNv2mC2G4RBDhIvJQ
-
-哈佛大学在读博士：模型量化——更小更快更强
-
-https://zhuanlan.zhihu.com/p/128018221
-
-8比特数值也能训练模型？商汤提出训练加速新算法
-
-https://zhuanlan.zhihu.com/p/132561405
-
-模型量化了解一下？
-
-https://mp.weixin.qq.com/s/YImszcJDsvw5ygo2wCj3Hw
-
-模型量化的核心技术点有哪些，如何对其进行长期深入学习
-
-https://mp.weixin.qq.com/s/bK0n9u6DIl4SY7mxS8CVRw
-
-模型量化技术原理及其发展现状和展望

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争：流云篇（六）——轶事（1）
+title:  俄乌战争：流云篇（六）——暴君焚城录
 category: Russo Ukrainian War Cloud
 ---
 

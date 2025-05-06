@@ -155,6 +155,14 @@ https://www.zhihu.com/question/630425466
 
 ---
 
+孟既王心善的缅甸外宣画卷，至少还是承认了战线变动，也提到了赔款（虽然将其美化成国王的慷慨解囊）。
+
+https://www.zhihu.com/question/1902023172611608593
+
+杨端坡和约
+
+---
+
 https://zhuanlan.zhihu.com/p/37928659
 
 越南帝国扩张

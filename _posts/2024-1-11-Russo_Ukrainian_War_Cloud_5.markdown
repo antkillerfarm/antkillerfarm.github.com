@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争：流云篇（五）——常识简介（5）, 暴君焚城录
+title:  俄乌战争：流云篇（五）——常识简介（5）
 category: Russo Ukrainian War Cloud
 ---
 

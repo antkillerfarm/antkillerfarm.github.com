@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NN Quantization（二）——TF32, FP8, W4A16, FP4, OCP Formats, Posit, 量化策略
+title:  NN Quantization（二）——Flexpoint, TF32, FP8, W4A16, FP4, OCP Formats, Posit, 量化策略
 category: DL acceleration 
 ---
 
@@ -8,6 +8,32 @@ category: DL acceleration
 {:toc}
 
 # Flexpoint（续）
+
+从指数位宽来看，Flexpoint和float16相同，都是5位。然而由于Flexpoint是共享指数，因此它真正的Dynamic Range是不如float16的。
+
+![](/images/img4/scale.png)
+
+上图是模型训练过程中，相关值的典型范围。
+
+![](/images/img4/FP16.png)
+
+float16已经被证明是不适合training的，更遑论Flexpoint了。
+
+事实上，Intel内部已有人评价道：
+
+>Flexpoint16三个月converge不了一个网络，而BF16一天就可以converge三个。
+
+- 指数保存在Host上，会造成反复通信的带宽问题。
+
+总的来说，这个方案虽然精巧，但是由于没有对数据特点做充分分析，没有意识到**Dynamic Range比底数精度更重要**，从而导致了最终的失败。
+
+目前，整个芯片行业，已经由过去芯片专家根据以往经验（比如摩尔定律），定义下一代产品的规格，逐渐过渡到根据实际应用定义芯片的阶段，即所谓的“**软件定义硬件**”。
+
+BF16的成功经验表明，算法专家在AI芯片中的重要程度，甚至超过了IC专家。
+
+需要注意的是Flexpoint的失败，主要在于Dynamic Range和底数的位宽取舍上。他的设计思路本身还是有可取之处的。采用同样思路的MSFP就获得了成功。
+
+MSFP由微软提出，在微软Project Brainwave产品上得到了广泛的应用。
 
 参考：
 
@@ -74,18 +100,6 @@ NVIDIA在H100中，添加了FP8的支持，但是去掉了对INT1/INT4的支持�
 ![](/images/img6/FP8_Blackwell.png)
 
 Blackwell使用了比Hopper更精细的scaling factor，用以降低量化误差。
-
----
-
-在IEEE标准中，当指数位为全1（即 1111）时，表示特殊值。
-
-如果尾数位为0，则表示无穷大（±∞）。
-
-如果尾数位不为0，则表示±NaN（非数字）。
-
-所以，0xFC, 0xFD, 0xFE, 0xFF等都表示-NaN。
-
-由于NaN占用的编码过多，NV的E4M3格式并不遵循IEEE标准，只有E5M2遵循IEEE标准。
 
 ---
 
@@ -291,25 +305,3 @@ https://mp.weixin.qq.com/s/7rMnzbvp1hjDLuw_oifbng
 https://zhuanlan.zhihu.com/p/665601576
 
 用bitsandbytes、4比特量化和QLoRA打造亲民的LLM
-
-## per-channel & per-group
-
-一般情况下，一个Tensor共享同一个Scale。有的时候为了提升精度，也可以一个channel共享同一个Scale，这也被称为per-channel quantization。如果不共享Scale，则退化为普通的浮点数表示。
-
-经过观察，在正态分布下，绝对值很大的参数的比例会很少，所以一起归一会使得大多数参数变得很小，从而使得量化过程中的一些数字范围对应的int8没有被充分利用，导致更多的信息丢失。
-
-把参数划分为了小Block，在进行量化的时候，按照block内绝对值最大的数对这个block进行归一化，使得所有参数都落在 [-1, 1] 这个范围，这就是Block-wise Quantization。Block的值如果在内存中连续，则这种quantization也叫做per-group quantization。
-
-## Activation Quantization
-
-早期的Quantization一般是W和A采用相同量化格式，然而由于LLM的特殊性（层数深，迭代次数多），Activation的量化一直是一个大问题。W4A16就是目前传统方法所能达到的最好水平了。
-
->seq2seq对于数值精度要求高，这在早期的LSTM时代，就已经很突出了。当时CNN普遍已经8bit量化，但在LSTM中，起码要16bit才能达到可接受的效果。
-
-![](/images/img5/quant.png)
-
-研究表明，有些Token的异常值会显著高于其他Token，有了之前Weight上的per-channel & per-group的策略，Activation上自然也可以使用per-token的策略。
-
-然而Activation Quantization的这些高阶策略，和输入的内容密切相关，因此并不能进行离线量化，同时量化参数由于是运行时才确定的，相当于是动态图，这给后端的AI硬件的调度带来了一定的挑战。
-
-相关算法：SmoothQuant、ZeroQuant、SpQR。

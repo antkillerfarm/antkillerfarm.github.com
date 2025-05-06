@@ -31,36 +31,6 @@ https://zhuanlan.zhihu.com/p/644502891
 
 一文搞懂什么是ablation study（消融实验）
 
-# NN Quantization+
-
-https://zhuanlan.zhihu.com/p/223018242
-
-NNIE量化算法及实现
-
-https://zhuanlan.zhihu.com/p/79744430
-
-Tensorflow模型量化(Quantization)原理及其实现方法
-
-https://mp.weixin.qq.com/s/du3hb2oM5X6bMocdOab4dg
-
-模型量化: 只有整数计算的高效推理
-
-https://mp.weixin.qq.com/s/7Si6GQlj8IvYajoVnwm5DQ
-
-INT4量化用于目标检测
-
-https://mp.weixin.qq.com/s/7VEiQ0y8kB4nODtLCx1UQA
-
-模型量化打怪升级之路
-
-https://mp.weixin.qq.com/s/TXWdx3bbBNfaG3yp2G56ew
-
-提速还能不掉点！深度解析MegEngine 4 bits量化开源实现
-
-https://www.zhihu.com/question/627484732
-
-目前针对大模型进行量化的方法有哪些？
-
 # Linear Discriminant Analysis
 
 在《机器学习（二十六）》中，我们已经讨论了一个LDA，这里我们来看看另一个LDA。
