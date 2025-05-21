@@ -63,6 +63,10 @@ https://www.zhihu.com/question/647294148
 
 乌方称击毁俄罗斯黑海舰队一艘护卫舰，目前局势如何？哪些信息值得关注？
 
+https://www.zhihu.com/question/1902154726465832041
+
+如何评价俄罗斯海军航空兵一架苏-30SM战斗机被乌克兰无人艇使用R-73导弹击落？
+
 ---
 
 主动认怂逃往本土克拉斯诺达尔边疆区的新罗西斯克市之后，黑海舰队也未安生。
@@ -116,6 +120,10 @@ https://new.qq.com/rain/a/20220531A0CNQG00
 https://zhuanlan.zhihu.com/p/682909074
 
 比洛霍里夫卡渡河点
+
+https://zhuanlan.zhihu.com/p/1904924139027960950
+
+北顿涅茨河战役期间俄军渡河失败（美国陆军《步兵》杂志2025年春）
 
 ---
 
@@ -206,6 +214,10 @@ https://www.zhihu.com/question/655569797
 https://www.zhihu.com/question/657263155
 
 如何看待乌军成功反攻北沃夫昌斯克并收复部分失地？
+
+https://www.zhihu.com/pin/1905017483083101113
+
+沃夫昌斯克战役一周年
 
 ## 卢甘斯克战役
 

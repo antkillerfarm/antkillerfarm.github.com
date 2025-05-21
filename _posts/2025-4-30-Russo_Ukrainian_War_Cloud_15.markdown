@@ -380,3 +380,11 @@ https://zhuanlan.zhihu.com/p/22952014675
 https://zhuanlan.zhihu.com/p/1902184067123885717
 
 未解之谜之南方设计局的鼹鼠
+
+https://zhuanlan.zhihu.com/p/1906791571145339156
+
+谁为胜利付出了更多——乌克兰人与俄罗斯人都为战争捐赠了多少？
+
+https://zhuanlan.zhihu.com/p/1907008175615509560
+
+一名为寻求庇护逃往西方的俄罗斯士兵，揭露了乌东被占前线地区的真实境况

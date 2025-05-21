@@ -37,7 +37,13 @@ BERT中，multi-head 768 x 64 x 12与直接使用768 x 768矩阵统一计算，�
 
 ## Self Attention
 
-到目前为止，对Attention层的描述都是一般化的，我们可以落实一些应用。比如，如果做阅读理解的话，Q可以是篇章的词向量序列，取K=V为问题的词向量序列，那么输出就是所谓的Aligned Question Embedding。
+到目前为止，对Attention层的描述都是一般化的，我们可以落实一些应用。
+
+比如，如果做阅读理解的话，Q可以是篇章的词向量序列，取K=V为问题的词向量序列，那么输出就是所谓的Aligned Question Embedding。
+
+当处理多模态数据（例如，结合文本和图像）时，不同模态的特征序列可能具有不同的长度，这也是一种常见的Q和V不等长的场景。
+
+PS：K和V总是等长的。
 
 而在Google的论文中，大部分的Attention都是Self Attention，即“自注意力”，或者叫内部注意力。
 

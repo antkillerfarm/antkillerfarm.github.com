@@ -211,6 +211,12 @@ git的reset和checkout的区别
 
 `git log --pretty=format:'%ae' | grep -c -i '<EMAIL_ADDRESS>'`，统计某个邮箱地址提交的次数。
 
+---
+
+`git bundle create my_project.bundle --all`，将Git仓库的分支、标签以及它们的历史记录等打包成一个文件。
+
+`git clone my_project.bundle my_project_repo`，导入bundle。
+
 ## 远端仓库
 
 查看远程仓库地址：
