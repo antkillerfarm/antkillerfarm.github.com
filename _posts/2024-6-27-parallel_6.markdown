@@ -11,6 +11,31 @@ category: DL acceleration
 
 ## FlashAttention（续）
 
+```cpp
+// vllm-project
+test_flash_attn_with_paged_kv
+flash_attn_with_kvcache
+torch.ops._vllm_fa3_C.fwd
+mha_fwd
+run_mha_fwd
+run_mha_fwd_
+run_mha_fwd_hdim128
+run_flash_fwd
+flash_fwd_kernel
+
+// Dao-AILab
+test_flash_attn_output
+flash_attn_func
+FlashAttnFunc.apply
+_wrapped_flash_attn_forward
+torch.ops.flash_attn._flash_attn_forward
+flash_attn_gpu.fwd
+import flash_attn_2_cuda as flash_attn_gpu
+mha_fwd
+```
+
+---
+
 https://www.zhihu.com/question/611236756
 
 FlashAttention的速度优化原理是怎样的？
@@ -264,4 +289,4 @@ https://zhuanlan.zhihu.com/p/668509885
 
 gradient_accumulation_steps用于处理当模型的参数数量超过GPU内存容量时的情况。在训练大型模型时，尤其是在使用较小的GPU进行训练时，可能会遇到内存不足的问题。这时，可以使用梯度累积来分割批次，从而使得每个小批次的计算都在GPU的内存限制范围内。
 
-如果设置了gradient_accumulation_steps=N，那么模型会先对N个批次的数据进行前向和反向传播，将这些批次的梯度累积起来，然后才进行一次权重更新。这样，实际上的批次大小相当于 per_device_train_batch_size * N。
+如果设置了gradient_accumulation_steps=N，那么模型会先对N个批次的数据进行前向和反向传播，将这些批次的梯度累积起来，然后才进行一次权重更新。这样，实际上的批次大小相当于per_device_train_batch_size * N。

@@ -114,6 +114,16 @@ Diffusion Policy——斯坦福机器人UMI所用的扩散策略：从原理到�
 - Quality：指图像本身的内在质量，包括清晰度、对比度、色彩饱和度、细节丰富度等视觉属性。常用指标有FID、IR。
 - Similarity：指生成图像与某个参考图像或预期结果之间的相似度。这可以是与原始图像的相似度，也可以是与用户提供的文本提示或指令的一致性。常用指标有LPIPS、PSNR。
 
+## Diffusion LLM
+
+https://zhuanlan.zhihu.com/p/29270223916
+
+扩散大语言模型介绍
+
+https://www.zhihu.com/question/1908485413494034535
+
+Google竟然也在搞Diffusion语言模型
+
 # SORA
 
 https://openai.com/research/video-generation-models-as-world-simulators

@@ -9,30 +9,6 @@ category: Russo Ukrainian War Cloud
 
 # 俄乌战争：流云篇
 
-https://mp.weixin.qq.com/s/zoL1ZPt8rBm2eerZSR6xzA
-
-芬兰瑞典申请加入北约，北欧中立国模式宣告终结了吗？
-
-https://www.zhihu.com/question/49927644
-
-都有非常相似的历史，为什么乌克兰人反俄，而白罗斯人却亲俄？
-
-https://zhuanlan.zhihu.com/p/519481132
-
-俄罗斯还有多少辆坦克？
-
-https://zhuanlan.zhihu.com/p/509289102
-
-毁家纾难——俄罗斯是怎样援助顿巴斯分裂武装的？
-
-https://mp.weixin.qq.com/s/A8qiQqTGl-heIOXmVAC3dA
-
-乌克兰战场直播，300美元刷一发火箭弹
-
-https://www.zhihu.com/question/544946847
-
-普京是现代的希特勒吗？
-
 https://zhuanlan.zhihu.com/p/566841960
 
 统计——乌克兰目前接受的军援
@@ -388,3 +364,7 @@ https://zhuanlan.zhihu.com/p/1906791571145339156
 https://zhuanlan.zhihu.com/p/1907008175615509560
 
 一名为寻求庇护逃往西方的俄罗斯士兵，揭露了乌东被占前线地区的真实境况
+
+https://zhuanlan.zhihu.com/p/1909779085007225988
+
+写于俄乌冲突第四年：乌克兰人的生活怎样

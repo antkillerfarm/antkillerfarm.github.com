@@ -27,6 +27,12 @@ https://arthurchiao.art/blog/birth-of-standard-error-zh
 
 ---
 
+差不多20年前，会计电算化逐渐开始普及，所以计算器和电脑成为了财务人员的必修课
+
+但为了兼顾一部分财务人员使用算盘的习惯，有商家别出心裁的推出了“计算器算盘”。
+
+---
+
 https://mp.weixin.qq.com/s/YdoIVBpn1dFUEzDEF5pYJw
 
 被迫离开工作近20年的公司，半导体老兵上演逆袭。林孝平，一个小儿麻痹患者。

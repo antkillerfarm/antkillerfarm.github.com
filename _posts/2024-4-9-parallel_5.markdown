@@ -197,9 +197,19 @@ https://mp.weixin.qq.com/s/uiBPpZDyVhySP8eKKaIygw
 
 再读MLA，还有多少细节是你不知道的
 
+## KV Cache Architecture
+
+KV Cache从诞生之初就是一个工程问题，上面主要讨论的是算法优化，而本节则聚焦于Architecture领域。
+
+https://zhuanlan.zhihu.com/p/706791646
+
+Mooncake: Kimi's KVCache-centric Architecture for LLM Serving
+
 # 快速Transformer
 
-轻量化Transformer是从计算量/时间/空间的角度出发，对于传统Transformer的优化。而快速Transformer主要着眼于软件工程角度，如何更好的利用各种硬件加速Transformer的计算。典型的有NVIDIA的FasterTransformer和腾讯的TurboTransformer。
+轻量化Transformer是从计算量/时间/空间的角度出发，对于传统Transformer的优化。但是计算量少，不等于计算速度快：同样的计算量，不同种类的算子，在硬件上的速度也是有差异的，这种差异有时甚至可以到几个数量级。而我们最终的目的终究是速度快，而非计算量少。
+
+因此，本节的快速Transformer主要着眼于软件工程角度，如何更好的利用各种硬件加速Transformer的计算。典型的有NVIDIA的FasterTransformer和腾讯的TurboTransformer。
 
 ## FasterTransformer
 
@@ -284,28 +294,3 @@ FlashAttention V1里Q在内层循环，而V2里K在内层循环。V1对于计算
 $$B_r$$和$$B_c$$是FlashAttention分块处理时的分块size。
 
 ![](/images/img6/FlashAttention_2.png)
-
----
-
-```cpp
-// vllm-project
-test_flash_attn_with_paged_kv
-flash_attn_with_kvcache
-torch.ops._vllm_fa3_C.fwd
-mha_fwd
-run_mha_fwd
-run_mha_fwd_
-run_mha_fwd_hdim128
-run_flash_fwd
-flash_fwd_kernel
-
-// Dao-AILab
-test_flash_attn_output
-flash_attn_func
-FlashAttnFunc.apply
-_wrapped_flash_attn_forward
-torch.ops.flash_attn._flash_attn_forward
-flash_attn_gpu.fwd
-import flash_attn_2_cuda as flash_attn_gpu
-mha_fwd
-```

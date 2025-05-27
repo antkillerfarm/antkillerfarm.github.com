@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争：疾风篇（十八）——泽连斯基语录（1）
+title:  俄乌战争：疾风篇（十八）——凡人列传（6）
 category: Russo Ukrainian War Wind
 ---
 
@@ -10,6 +10,32 @@ category: Russo Ukrainian War Wind
 # 俄乌战争：疾风篇
 
 ## 凡人列传
+
+乌克兰国防部官推去年12月发布消息，称知名FPS游戏系列《潜行者》的开发者之一Volodymyr Yezhov于12月22日殒命于俄乌战场。
+
+德米特罗-康斯坦丁诺夫法官，年轻的时候曾经在军队的时候当过工兵，战争爆发以后投笔从戎，去年十月份在哈尔科夫扫雷过程中触雷死亡！
+
+弗拉达·切尔内赫，战前是乌克兰国立药学院的博士生，今年28岁。俄乌战争爆发后自愿参战，身份是战地医生。12月28日俄军发起火炮轰炸，切尔内赫冒着炮火撤离伤员时受伤阵亡。
+
+乌克兰U20十项全能冠军Volodymyr Androschuk在巴赫穆特附近的一场战斗中丧生。
+
+捐躯赴国难，视死忽如归。
+
+---
+
+![](/images/img5/Ukraine-teacher.webp)
+
+费迪尔·尚多尔教授曾在两次战斗之间的战壕中为学生授课，他将成为乌克兰驻匈牙利大使，他的候选人资格已获得该国总统的批准。
+
+Shandor是来自外喀尔巴阡的匈牙利裔乌克兰人，去年二月自愿参军。
+
+尚多尔在乌日霍罗德国立大学教授旅游专业，一直积极致力于乌克兰与匈牙利关系的研究，特别是撰写了有关乌克兰与匈牙利友谊的文章。他还在匈牙利平民为匈牙利裔士兵等发起的筹款活动中发挥了关键作用。
+
+https://mp.weixin.qq.com/s/gF8DSc1aifmTCjJSdthpyg
+
+乌克兰一大学教授战壕里上网课？
+
+---
 
 克里米亚一名10岁的女孩在Tik-Tok上发布了一条视频，她在俄罗斯国旗下附上了愤怒表情，在乌克兰国旗下附上了爱心和生病的表情。当地警方认定她涉嫌“侮辱俄军”，由于年龄过小，其38的母亲将面临“未履行抚养和教育未成年人责任”的行政立案。
 
@@ -203,60 +229,3 @@ https://zhuanlan.zhihu.com/p/1906346051138490370
 
 俄罗斯女军医被迫成为指挥官的“战地妻子”，不得不评估残疾士兵的健康状况，亲眼目睹“不受欢迎”的士兵被长官枪杀和一些士兵被“卖去屠宰”为指挥官牟取暴利
 
-## 泽连斯基语录
-
-永远记住：乌克兰在这个敌人出现之前就有，乌克兰将在他之后还会继续存在。
-
-我们不是夹在兽人和精灵之间的边缘地带。 -- by 瓦夏
-
-Slava Ukraini：荣耀归于乌克兰，Слава Україні
-
-Heroyam Slava：героям слава，glory to the heroes
-
-我在这里。我们没有放下武器。我们将保卫我们的国家。
-
-The fight is here. I need ammunition, not a ride.
-
-The fate of Ukraine depends only on Ukrainians. No one but ourselves will control our lives.
-
-我命由我不由人，乌克兰的命运只能由乌克兰人民抉择。
-
-When you attack us, you will see our faces, not our backs.
-
-Without gas or without you? – The answer is without you. Without electricity or without you? – Without you. Without water or without you? – Without you. Without food or without you? – Without you.
-
-他们告诉你我们是纳粹。但一个牺牲了超过八百万条生命来消灭纳粹的民族怎么能被称为纳粹呢？我的祖父作为苏联步兵活过了整场战争，在一个独立的乌克兰作为上校死去，我怎么会是纳粹呢？
-
-当我竞选总统时，我说我们每个人都是总统。因为我们都对我们的国家负责。为了我们美丽的乌克兰。现在事实证明，我们每个人都是一名战士。战士在他或她自己的地方。我相信我们每个人都会获胜。
-
-我希望能有光，但情况非常困难，现在有时有光，有时没有光。最重要的是（心）里面要有光。
-
-即使没有电，我们对自己的信仰之光也不会被熄灭。
-
-Freedom comes at a high price. But slavery has an even higher price.
-
-虽然自由代价很高，但奴隶的代价更高！自由是一代人的代价，奴隶却是一代又一代人的，代价代代相传，我们忍了下来，抵挡了攻击、威胁、核威胁、恐怖和导弹袭击。这个冬天我们也会熬过去，因为我们知道我们为何而战！
-
-This year began on February 24. Without prefaces and preludes.
-
-今年是从2月24日开始的，没有序言也没有前奏。
-
-On February 24, millions of us made a choice. Not a white flag, but a blue and yellow flag. Not escaping, but meeting. Meeting the enemy. Resisting and fighting.
-
-在2月24日，我们成千上万人做出了选择：不是苍白的降幡，而是蓝黄的战旗；不是掉头逃亡，而是抬头面对——面对着敌人，抵抗并且奋战。
-
-We were told: you have no other option but to surrender. We say: we have no other option than to win.
-
-我们被告知除了投降别无选择，我们回应说除了胜利别无选择。
-
-for me he is nobody, nobody.
-
-一年前的今天，就在这个地方，早上七点左右，我向你们发表了简短的讲话。它只持续了67秒。它包含了两件最重要的事情，过去和现在。俄罗斯对我们发动了全面战争。我们很坚强。我们已准备好应对任何事情。我们会打败所有人。因为我们是乌克兰！
-
-今天，向20世纪最重要的胜利致敬，我们都在等待和接近一个新的伟大日子--一个新的胜利。我们的胜利。乌克兰的胜利日。
-
-恕我直言，尊者，我们不需要调解人，我们需要公正的和平。战争在乌克兰境内进行，和平计划只能是乌克兰的。
-
-我要重申：我们需要真正的和平，因此，我们需要俄罗斯从我们整个独立领土撤军。
-
-克里姆林宫里的那个人显然非常畏惧，他很可能躲到了什么地方不再露面。我很确定他不再呆在莫斯科了。他跑到了什么地方，要求什么东西……他知道他在畏惧什么，因为这威胁由他自己创造，他自己正是所有邪恶、所有损失、所有仇恨的传播者。
