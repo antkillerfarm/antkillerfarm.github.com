@@ -124,6 +124,10 @@ https://www.zhihu.com/question/1908485413494034535
 
 Google竟然也在搞Diffusion语言模型
 
+https://zhuanlan.zhihu.com/p/24214732238
+
+自回归是否是通往语言智能的唯一路径？——生成模型的一些思考
+
 # SORA
 
 https://openai.com/research/video-generation-models-as-world-simulators

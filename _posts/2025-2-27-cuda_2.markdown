@@ -59,6 +59,12 @@ nvcc编译cuda程序，不运行device（GPU）部分代码的解决方案：指
 - `__device__`：在GPU调用父函数，子函数在GPU执行。 由`__device__`修饰的函数可以被由`__global__`和`__device__`修饰的函数调用。
 - `__host__`：在CPU调用父函数，子函数在CPU执行。 
 
+`__global__`函数的参数可以使用结构体，但有一些限制和注意事项：
+
+- 结构体必须是简单结构体（POD类型）：这意味着结构体不能包含构造函数、虚函数或继承。
+
+- 需要在GPU上分配结构体内存：通常需要在GPU上分配结构体的内存，并将数据从主机端复制到设备。
+
 ---
 
 https://developer.download.nvidia.cn/assets/cuda/files/NVIDIA-CUDA-Floating-Point.pdf

@@ -246,3 +246,7 @@ https://www.zhihu.com/question/667458569
 https://zhuanlan.zhihu.com/p/30621448324
 
 独夫的训政宣言——评戈兰尼的叙利亚《宪法宣言》
+
+https://zhuanlan.zhihu.com/p/9907139457
+
+伊朗有两个“阿塞拜疆省”，为什么两省无法并入阿塞拜疆？
