@@ -329,6 +329,18 @@ https://mp.weixin.qq.com/s/OrCWlhfiJuOuc-0GChVWow
 
 # 安全=
 
+https://mp.weixin.qq.com/s/0NvbRK41BT4yinFUuVxa3A
+
+发现一个木马，竟然偷传我珍藏几十G的视频！
+
+https://j00ru.vexillium.org/syscalls/nt/64/
+
+Windows X86-64 System Call Table
+
+https://www.zhihu.com/question/356008082
+
+电脑软件（例如 Adobe、Autodesk）为什么那么容易被破解？
+
 https://mp.weixin.qq.com/s/yCB2R8QPWNp2lJrQD4l_hw
 
 聊聊移动端安全加固

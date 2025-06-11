@@ -149,6 +149,10 @@ https://zhuanlan.zhihu.com/p/1910065196774426273
 
 乌克兰战局追踪-2025年5月25日
 
+https://zhuanlan.zhihu.com/p/1914935580376168271
+
+对俄乌2025下半年战局的碎碎念
+
 ## 顿巴斯战争
 
 ![](/images/img4/Kyiv.jpg)

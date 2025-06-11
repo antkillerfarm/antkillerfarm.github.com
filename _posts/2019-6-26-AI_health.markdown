@@ -199,6 +199,20 @@ Pair，医学图像标注神器
 
 # 安全+
 
+原来电信部门侦测到http信息，就用iframe给它嵌入了一段广告，这样用户就能在浏览器右下角看到一刀999之类内容。。。
+
+在运营商劫持横行、HTTPS未普遍之前，基本上你不可以信任任何非200的响应码。比如你返回一个404，它会把你的返回完完全全变成另一个HTML代码（对，即使你是JSON），里面全是运营商劫持的广告，甚至有些就是运营商官方的一些页面（升级宽带、网速测试云云）。这就是当年我为什么一直用200，且在JSON中再写个状态码。
+
+https://blog.csdn.net/wr410/article/details/25594273
+
+分析深圳电信的新型HTTP劫持方式
+
+https://www.zhihu.com/question/513865370
+
+为什么那么多公司做前后端分离项目后端响应的HTTP状态一律200？
+
+---
+
 现在所谓的安卓模拟器实际上不是真正的模拟器，而是安装在win上的x86版安卓虚拟机（是x86版安卓虚拟机而不是ARM版），这些游戏会检测你用的是x86库还是arm库。所以你用小米平板2之类英特尔处理器的安卓平板玩一样会被封号，这些游戏只会检查你的安卓是x86版还是arm版，分不清你是物理机还是虚拟机。
 
 ---
@@ -282,18 +296,6 @@ https://mp.weixin.qq.com/s/c2jxmn7FaQ0ePY_luS2fGQ
 https://mp.weixin.qq.com/s/E6eYBob3WzuLFEuGJZSNtQ
 
 怎么知道谁动了我的Linux主机?
-
-https://mp.weixin.qq.com/s/0NvbRK41BT4yinFUuVxa3A
-
-发现一个木马，竟然偷传我珍藏几十G的视频！
-
-https://j00ru.vexillium.org/syscalls/nt/64/
-
-Windows X86-64 System Call Table
-
-https://www.zhihu.com/question/356008082
-
-电脑软件（例如 Adobe、Autodesk）为什么那么容易被破解？
 
 # 棋坛纵横=
 

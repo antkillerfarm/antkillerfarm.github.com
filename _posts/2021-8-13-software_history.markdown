@@ -336,3 +336,7 @@ https://www.zhihu.com/question/36732601
 https://zhuanlan.zhihu.com/p/1899748999843518451
 
 比尔盖茨1975年写的代码
+
+https://mp.weixin.qq.com/s/B2_kOUfBmQ3tlSZoYfT0YQ
+
+乔布斯挚友去世！胰腺癌再夺硅谷天才，曾写下苹果“创世代码”（Bill Atkinson）
