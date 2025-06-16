@@ -168,3 +168,7 @@ https://www.zhihu.com/answer/1913920148055753167
 https://zhuanlan.zhihu.com/p/1915362586939094743
 
 蛛网行动——乌克兰的潜伏特工
+
+https://zhuanlan.zhihu.com/p/1915759503820985315
+
+乌克兰“蜘蛛网行动”的无人机使用开源软件ArduPilot

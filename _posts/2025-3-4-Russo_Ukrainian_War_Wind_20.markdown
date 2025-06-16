@@ -83,6 +83,8 @@ The gratitude – of all our people, of our entire state – to every warrior an
 
 我将于5月15日星期四在蒂尔基耶，我希望普京也会来蒂尔基耶。我希望这一次，普京不会寻找借口，为什么他“不能”做到这一点。
 
+人民不是我们扔进火里的木头，我们对待我们的人民不像俄罗斯人那样。
+
 ---
 
 乌克兰著名演员出席金球奖并发言。
@@ -156,3 +158,7 @@ https://zhuanlan.zhihu.com/p/702910188
 https://zhuanlan.zhihu.com/p/716342662
 
 泽连斯基独立日演讲：战争已重返俄罗斯，红场衰弱老人终究受海牙审判
+
+https://zhuanlan.zhihu.com/p/1916871110709998982
+
+泽连斯基：人民不是我们扔进火里的木头
