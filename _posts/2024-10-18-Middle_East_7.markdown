@@ -89,6 +89,10 @@ https://www.zhihu.com/pin/1854612996443222016
 
 HTS垄断政权，SDF反攻SNA
 
+https://zhuanlan.zhihu.com/p/1920154485654815283
+
+逃往俄罗斯后，叙利亚巴沙尔将领处境悲惨：进厂打螺丝，丧失特权
+
 ---
 
 赛德纳亚（Saydnaya）军事监狱位于叙利亚大马士革附近。

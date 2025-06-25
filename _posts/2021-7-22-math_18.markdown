@@ -364,3 +364,7 @@ https://www.zhihu.com/question/64996263
 https://www.zhihu.com/question/659733022
 
 如何评价俄罗斯数学家诺维科夫？
+
+https://www.zhihu.com/question/668040326
+
+圆和球的公式含π，为什么到四维超球就变成π²了，三维为什么没有√π？

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  开源社区分裂史, SDL, FFmpeg, 中文编码格式, Firefox
+title:  开源社区分裂史, SDL, FFmpeg, Firefox
 category: technology 
 ---
 
@@ -50,6 +50,10 @@ DivX本来是个开源项目。但有一天，几个项目管理者建立了一�
 教堂模型。定期发布新版本并放出源代码，但版本之间的代码只有一组专门的开发人员可以获得。早期的GNU Emacs和GCC都是这样开发的。
 
 集市模型。代码总是在互联网上可以获得，且公众可以参与开发。Linux内核是以这样的模式开发的。
+
+## FreeDesktop
+
+FreeDesktop的生态，比如说systemd、dbus、polkit、Wayland, 这些东西除了systemd的init只能在Linux上用，其他的和FreeBSD系统的桌面工作站有什么区别吗？
 
 # SDL
 
@@ -201,22 +205,6 @@ Ubuntu20配置ffmpeg进行gpu硬件加速视频编码记录
 https://baijiahao.baidu.com/s?id=1660308952680999991
 
 电影片源命名格式大扫盲，看懂WEB-DL/BDRip/BluRay/REMUX/4K区别
-
-# 中文编码格式
-
-常用的中文编码格式，主要包括大陆的GB系列和台湾的BIG5系列。
-
-GB系列按照发布时间的顺序，又包括GB2312、GBK和GB18030三种格式。越晚的编码格式，其包含的字符数越多，但同时又兼容之前的编码格式。
-
-除此之外，能表示中文的还有Unicode系列。比如，Java内部使用的UTF16BE，以及网络上用的比较多的UTF8。
-
-需要指出的是，由于各种编码格式的字节数不尽相同，单独对文章中的某些字段进行转码，常会由于字节对齐的问题，而产生异常的结果。最好是在一种编码下生成整个文档之后，统一转换成另一种格式。
-
-参考：
-
-https://mp.weixin.qq.com/s/q-VmuWrsKSBMhWxjafPsng
-
-Unicode与UTF-8的区别
 
 # Firefox
 

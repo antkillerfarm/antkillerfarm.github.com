@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Jpeglib使用指南, WireShark, 虚拟机比较
+title:  Jpeglib使用指南, WireShark, 虚拟机比较, 中文编码格式
 category: technology 
 ---
 
@@ -224,3 +224,19 @@ http://www.tinylab.org/using-qemu-simulation-inserts-the-type-system-to-produce-
 利用qemu模拟嵌入式系统制作全过程
 
 这两篇文章讲述如何使用qemu运行各种汇编程序和微内核。
+
+# 中文编码格式
+
+常用的中文编码格式，主要包括大陆的GB系列和台湾的BIG5系列。
+
+GB系列按照发布时间的顺序，又包括GB2312、GBK和GB18030三种格式。越晚的编码格式，其包含的字符数越多，但同时又兼容之前的编码格式。
+
+除此之外，能表示中文的还有Unicode系列。比如，Java内部使用的UTF16BE，以及网络上用的比较多的UTF8。
+
+需要指出的是，由于各种编码格式的字节数不尽相同，单独对文章中的某些字段进行转码，常会由于字节对齐的问题，而产生异常的结果。最好是在一种编码下生成整个文档之后，统一转换成另一种格式。
+
+参考：
+
+https://mp.weixin.qq.com/s/q-VmuWrsKSBMhWxjafPsng
+
+Unicode与UTF-8的区别

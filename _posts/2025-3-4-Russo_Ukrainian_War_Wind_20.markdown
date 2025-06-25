@@ -85,6 +85,8 @@ The gratitude – of all our people, of our entire state – to every warrior an
 
 人民不是我们扔进火里的木头，我们对待我们的人民不像俄罗斯人那样。
 
+如果去年看到100架Shahed无人机在一个晚上使用，是令人震惊的，那么现在如果在一次袭击中使用少于100架，那就不同寻常了。
+
 ---
 
 乌克兰著名演员出席金球奖并发言。
