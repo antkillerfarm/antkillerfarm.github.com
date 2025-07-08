@@ -475,3 +475,7 @@ https://mp.weixin.qq.com/s/GZkGfwrfMTzrMfki8LKbIw
 https://mp.weixin.qq.com/s/KEu6qCl-En6HiKGo2pgEQg
 
 TensorBay：一款易用的像Git一样数据版本管理工具！
+
+https://6xyun.cn/article/191
+
+Repo报错 No module named 'formatter'

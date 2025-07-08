@@ -85,6 +85,27 @@ https://www.zhihu.com/question/660430807
 
 ![](/images/img4/manufact.jpg)
 
+2018:
+
+1. China: $4T (28.37% of world total)
+2. United States $2.3T (16.65% of world total)
+3. Japan: $1T (7.23% of world total)
+4. Germany: $806B (5.78% of world total)
+5. South Korea: $459B (3.29% of world total)
+
+2023:
+
+1. China: 4.66 T
+2. United States: 2.89 T
+3. Germany: 844.93 B
+4. Japan: 818.40 B
+5. India: 455.77 B
+6. South Korea: 416.39 B
+7. Mexico: 360.73 B
+8. Italy: 354.72 B
+9. France: 294.47 B
+10. Brazil: 289.79 B
+
 ![](/images/img2/BJ_subway.jpg)
 
 ![](/images/img4/china-dovak.gif)

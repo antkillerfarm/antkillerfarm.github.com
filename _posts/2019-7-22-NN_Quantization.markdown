@@ -257,6 +257,11 @@ bfloat16是Google针对AI领域的特殊情况提出的浮点格式。目前已�
 
 3.bfloat16既可以用于训练又可以用于推断。Amazon也证明Deep Speech模型使用BFloat的训练和推断的效果都足够好。Uint8在大部分情况下不能用于训练，只能用于推断。
 
+CUDA中表示bfloat16数据类型有两种不同形式：
+
+- `__nv_bfloat16`：表示一个单独的bfloat16值，占用16位。
+- `__nv_bfloat162`：表示两个bfloat16值的组合，占用32位，其中低16位和高16位分别存储两个bfloat16值。
+
 参考：
 
 https://www.zhihu.com/question/275682777

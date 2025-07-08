@@ -36,6 +36,10 @@ mha_fwd
 
 ---
 
+Composable Kernel(ck)是AMD ROCm平台的Flash-Attention实现。
+
+---
+
 https://www.zhihu.com/question/611236756
 
 FlashAttention的速度优化原理是怎样的？

@@ -79,6 +79,16 @@ using namespace std::chrono_literals;
 auto duration = 10s;
 ```
 
+---
+
+Raw String Literals:
+
+```cpp
+std::string str = R"(Hello, "World"!)";
+```
+
+这种语法允许在字符串中直接包含特殊字符（如换行符、引号等），而无需对它们进行转义。
+
 # 动态链接
 
 这两天实践了一下怎样在linux下创建动态链接。感觉网上的资料虽然翔实，但仍然有疏漏之处。
@@ -285,20 +295,3 @@ std::unique_ptr<std::FILE, decltype(&close_file)> fp(std::fopen("demo.txt", "r")
 从实现来看，这些智能指针除了需要new对象之外，还需要new一个用于维护对象引用计数的控制块，因此第2种方法一次性分配的效率会比较高。
 
 一般来说，`make_XXX`在标准库中，通常都带有new对象和相关控制结构的操作，除了上述的`make_unique`之外，类似的还有`make_pair`等。
-
----
-
-`shared_ptr`既然号称共享，那自然有一定的共享规则在：
-
-```cpp
-shared_ptr<int> sp1(new int(10));
-shared_ptr<int> sp2(sp1), sp3;
-sp3 = sp1;
-//一个典型的错误用法
-shared_ptr<int> sp4(sp1.get()); 
-cout << sp1.use_count() << " " << sp2.use_count() << " " 
-<< sp3.use_count() << " " << sp4.use_count() << endl;
-//输出 3 3 3 1
-```
-
-sp1,sp2,sp3是相互关联的共享指针，共同控制所指内存的生存期，sp4虽然指向同样的内存，却是与sp1,sp2,sp3独立的，sp4按自己的引用计数来关联内存的释放。

@@ -9,6 +9,23 @@ category: language
 
 # 各类ptr（续）
 
+`shared_ptr`既然号称共享，那自然有一定的共享规则在：
+
+```cpp
+shared_ptr<int> sp1(new int(10));
+shared_ptr<int> sp2(sp1), sp3;
+sp3 = sp1;
+//一个典型的错误用法
+shared_ptr<int> sp4(sp1.get()); 
+cout << sp1.use_count() << " " << sp2.use_count() << " " 
+<< sp3.use_count() << " " << sp4.use_count() << endl;
+//输出 3 3 3 1
+```
+
+sp1,sp2,sp3是相互关联的共享指针，共同控制所指内存的生存期，sp4虽然指向同样的内存，却是与sp1,sp2,sp3独立的，sp4按自己的引用计数来关联内存的释放。
+
+---
+
 ```cpp
 auto p = std::make_unique<XXX>();
 void f(XXX*);
@@ -387,42 +404,3 @@ void g(double d)
 ```
 
 除了特化模板之外，从函数参数推断模板参数也是可以的，如上例中的模板参数`From`就可以从使用该模板参数的函数参数`f`的类型，倒推出来。
-
-# Defaulted & Deleted
-
-特殊成员函数主要包括：
-
-1.默认构造函数(不带参数的构造函数)
-
-2.析构函数
-
-3.赋值函数(operator=)（按字节拷贝）
-
-4.拷贝构造函数（用一个对象来初始化另一个对象，只有一个参数，参数类型是本类的引用。`X(X&)`）(按字节拷贝)
-
-5.移动构造函数（`X(X&&)`）
-
-6.移动赋值函数
-
-其中，2、3、4被称为big three，2、3、4、5、6被称为big five。5、6是C++11中引入右值和move的结果。
-
-https://www.jianshu.com/p/0b0f84b49736
-
-C++缺省函数（big three,big five）
-
----
-
-```cpp
-class X{
-public:
-  X(int i){
-   a = i;
-  }
-  X(const X&) = delete;
-  X()=default;
-private:
- int a;
-};
-
-X x;
-```

@@ -375,6 +375,10 @@ BPE算法的各种实现中，以OpenAI开源的tiktoken库较快：
 
 https://github.com/openai/tiktoken
 
+Byte-level BPE(BBPE)和Byte-Pair Encoding (BPE)的区别：
+
+BPE是最小词汇是字符级别，而BBPE是字节级别的，通过UTF-8编码方式，理论上可以表示这个世界上的所有字符。
+
 参考：
 
 https://www.cnblogs.com/huangyc/p/10223075.html
@@ -384,3 +388,7 @@ https://www.cnblogs.com/huangyc/p/10223075.html
 https://mp.weixin.qq.com/s/OGBk_ZptFzbjKdnv2RVZFA
 
 机器如何认识文本？NLP中的Tokenization方法总结
+
+https://zhuanlan.zhihu.com/p/652520262
+
+LLM大语言模型之Tokenization分词方法（WordPiece，Byte-Pair Encoding (BPE)，Byte-level BPE(BBPE)原理及其代码实现）

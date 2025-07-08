@@ -259,60 +259,6 @@ https://mp.weixin.qq.com/s/kGVLsqstajyrZ_cfkFegrA
 
 Latex数学排版简洁指南
 
-# Javascript参考资源+
-
-https://mp.weixin.qq.com/s/0pI0F6c-BSLiGdLetQ5qNQ
-
-彻底弄懂浏览器缓存策略
-
-https://mp.weixin.qq.com/s/fEAfuVzfOwKjnTB-mdS5UA
-
-用JS写一个同Excel表现的智能填充算法
-
-https://mp.weixin.qq.com/s/D-XvKCSUCzMGcEz_xWTwqg
-
-现代CSS进化史
-
-https://mp.weixin.qq.com/s/IIWgNvqp0jxcD-J_CikV8w
-
-代码变油画，精细到毛发，这个前端小姐姐只用HTML+CSS，让美术设计也惊叹
-
-https://www.cnblogs.com/zzd0916/p/11977995.html
-
-浏览器工作原理与实践
-
-https://mp.weixin.qq.com/s/MwWC0doO_sp_eRkInbE0hw
-
-今天网站都变成灰色了，这其中是怎么实现的？
-
-https://mp.weixin.qq.com/s/VTULhAjEUNfAph-xkkUTsg
-
-手写一个解析器
-
-https://mp.weixin.qq.com/s/3sYrI9kxgAYLiNT-xavRLw
-
-“秒开”浏览器实现起来有多难？
-
-https://mp.weixin.qq.com/s/LciDtj6YmPI7WxcCQM-lIA
-
-前端性能分析工具利器
-
-https://mp.weixin.qq.com/s/c4saBdDZDehokU5gJ-9fPw
-
-JavaScript与ES的25个重要知识点
-
-https://mp.weixin.qq.com/s/HUknNfaxNULc4Yvf5ajRBA
-
-五分钟了解互联网Web技术发展史
-
-https://mp.weixin.qq.com/s/4YXoSrYueQFWOC8sZH8LvQ
-
-跨平台Web Canvas渲染引擎架构的设计与思考
-
-https://zhuanlan.zhihu.com/p/373271928
-
-浏览器性能优化实战
-
 # C/C++参考资源=
 
 ## std::tuple
@@ -339,6 +285,30 @@ std::string str;
 std::tie(a , str) = fun_tie(12, std::string("Pony Ma"));
 std::cout << a << "," << str << std::endl;
 ```
+
+# inl文件
+
+inl文件是内联函数的源文件。内联函数通常在C++头文件中实现，但是当C++头文件中内联函数过多的情况下，我们想使头文件看起来简洁点，能不能像普通函数那样将内联函数声明和函数定义放在头文件和实现文件中呢？
+
+当然答案是肯定的，具体做法将是：将内联函数的具体实现放在inl文件中，然后在该头文件末尾使用#include引入该inl文件。
+
+参考：
+
+https://www.cnblogs.com/findumars/p/4340936.html
+
+C++中的INL
+
+# 常用libc实现
+
+libc是C语言标准库的简称，它有多种实现。除了最常用的gcc自带的glibc之外，还有musl、uClibc、dietlibc等。
+
+http://www.etalabs.net/compare_libcs.html
+
+这个网址是以上4种libc实现的比较结果。从结果来看，musl比较有投资价值。实际上，最近（2015.5）的OpenWrt项目就已经将libc由uClibc改为musl。我也是因为这个原因，才知道musl的。
+
+当然这个表并不完整，其他的libc可以参见:
+
+https://en.wikipedia.org/wiki/C_standard_library
 
 ## 有价值的C/C++库
 
@@ -399,23 +369,3 @@ https://mp.weixin.qq.com/s/pxyTlQn4wx-N_MaWZc0oAQ
 https://mp.weixin.qq.com/s/LchYGGcSbIMVGxO0Uea0RA
 
 深入C++回调
-
-https://blog.csdn.net/hahahacff/article/details/39504699
-
-Java中创建对象的时候代码执行顺序(这个问题C++应该也存在)
-
-https://blog.csdn.net/msq19895070/article/details/7910969
-
-嵌入式程序员应知道的几个基本问题
-
-http://dev.yesky.com/393/3007393.shtml
-
-深入理解C++中的mutable关键字
-
-http://blog.csdn.net/apunix/archive/2008/01/14/2043945.aspx
-
-UNREFERENCED_PARAMETER的作用
-
-https://mp.weixin.qq.com/s/1ELGzBkIdO1xa6LZV80raQ
-
-C++中Future和Promise的一种简单实现

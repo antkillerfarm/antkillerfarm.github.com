@@ -275,3 +275,11 @@ PLuTo编译器和它的调度算法（二）
 https://zhuanlan.zhihu.com/p/566909546
 
 PLuTo编译器和它的调度算法（三）
+
+# 异构计算
+
+Multi Engine Schedule
+
+Loop Pipeline：不同的异构单元需要并行执行，其中最简单的方法，就是使用多级Pipeline的并行。
+
+Memory Planning：lifetime analysis & dynamic memory schedule & hierarchical planning（多core）

@@ -275,6 +275,26 @@ https://pocoproject.org/
 
 # C/C++参考资源+
 
+https://blog.csdn.net/hahahacff/article/details/39504699
+
+Java中创建对象的时候代码执行顺序(这个问题C++应该也存在)
+
+https://blog.csdn.net/msq19895070/article/details/7910969
+
+嵌入式程序员应知道的几个基本问题
+
+http://dev.yesky.com/393/3007393.shtml
+
+深入理解C++中的mutable关键字
+
+http://blog.csdn.net/apunix/archive/2008/01/14/2043945.aspx
+
+UNREFERENCED_PARAMETER的作用
+
+https://mp.weixin.qq.com/s/1ELGzBkIdO1xa6LZV80raQ
+
+C++中Future和Promise的一种简单实现
+
 https://www.zhihu.com/question/24301047
 
 如何理解C++11的六种memory order？

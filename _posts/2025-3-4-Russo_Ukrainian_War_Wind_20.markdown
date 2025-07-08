@@ -87,6 +87,8 @@ The gratitude – of all our people, of our entire state – to every warrior an
 
 如果去年看到100架Shahed无人机在一个晚上使用，是令人震惊的，那么现在如果在一次袭击中使用少于100架，那就不同寻常了。
 
+他把自己的政治生存与他继续杀人的能力联系起来:只要他杀人,他就活着。
+
 ---
 
 乌克兰著名演员出席金球奖并发言。

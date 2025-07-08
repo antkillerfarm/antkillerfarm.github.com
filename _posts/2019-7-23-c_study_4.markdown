@@ -7,7 +7,44 @@ category: language
 * toc
 {:toc}
 
-# Defaulted & Deleted（续）
+# Defaulted & Deleted
+
+特殊成员函数主要包括：
+
+1.默认构造函数(不带参数的构造函数)
+
+2.析构函数
+
+3.赋值函数(operator=)（按字节拷贝）
+
+4.拷贝构造函数（用一个对象来初始化另一个对象，只有一个参数，参数类型是本类的引用。`X(X&)`）(按字节拷贝)
+
+5.移动构造函数（`X(X&&)`）
+
+6.移动赋值函数
+
+其中，2、3、4被称为big three，2、3、4、5、6被称为big five。5、6是C++11中引入右值和move的结果。
+
+https://www.jianshu.com/p/0b0f84b49736
+
+C++缺省函数（big three,big five）
+
+---
+
+```cpp
+class X{
+public:
+  X(int i){
+   a = i;
+  }
+  X(const X&) = delete;
+  X()=default;
+private:
+ int a;
+};
+
+X x;
+```
 
 由于已经有了`X(int i)`，编译器就不会生成默认的`X()`了，因此`X x;`会出错。解决办法是`X()=default;`。
 
@@ -329,18 +366,6 @@ https://github.com/agauniyal/rang
 
 这个项目可以设置终端输出的颜色等效果。
 
-# inl文件
-
-inl文件是内联函数的源文件。内联函数通常在C++头文件中实现，但是当C++头文件中内联函数过多的情况下，我们想使头文件看起来简洁点，能不能像普通函数那样将内联函数声明和函数定义放在头文件和实现文件中呢？
-
-当然答案是肯定的，具体做法将是：将内联函数的具体实现放在inl文件中，然后在该头文件末尾使用#include引入该inl文件。
-
-参考：
-
-https://www.cnblogs.com/findumars/p/4340936.html
-
-C++中的INL
-
 # std::any & std::variant & std::optional
 
 std::any：一个类型安全的容器，可以放置各种类型的数据。类似于`void*`。
@@ -377,15 +402,3 @@ std::string有很多实现方式，归纳起来有三类，而每类又有多种
 https://www.cnblogs.com/cthon/p/9181979.html
 
 c++再探string之eager-copy、COW和SSO方案
-
-# 常用libc实现
-
-libc是C语言标准库的简称，它有多种实现。除了最常用的gcc自带的glibc之外，还有musl、uClibc、dietlibc等。
-
-http://www.etalabs.net/compare_libcs.html
-
-这个网址是以上4种libc实现的比较结果。从结果来看，musl比较有投资价值。实际上，最近（2015.5）的OpenWrt项目就已经将libc由uClibc改为musl。我也是因为这个原因，才知道musl的。
-
-当然这个表并不完整，其他的libc可以参见:
-
-https://en.wikipedia.org/wiki/C_standard_library

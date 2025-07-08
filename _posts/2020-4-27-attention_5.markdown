@@ -127,6 +127,8 @@ https://mp.weixin.qq.com/s/r5Vk_hc5-jsZ69y0dfqIfg
 
 # XLNet
 
+杨植麟是Transformer-XL与XLNet的共同一作，清华本科（2015）+CMU博士（2019），月之暗面（Moonshot AI）创始人，清华大学助理教授。
+
 https://mp.weixin.qq.com/s/29y2bg4KE-HNwsimD3aauw
 
 20项任务全面碾压BERT，CMU全新XLNet预训练模型屠榜
