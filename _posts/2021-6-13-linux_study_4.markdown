@@ -165,6 +165,18 @@ stackcopy：stackfull被滥用后，或者说被用滥后，其额外空间的�
 
 stackless：这是一个新兴的实现方案。本质上其实就是一个状态机。但通常由语言提供语法，编译器去实现状态机。拥有内存开销小，切换快的几乎所有优点，是一个“现代”语言都想拥有的功能。目前最成熟的实现是C#的await/async。C++/Java/Rust等语言也在谋划加入（或者已经成功加入）。
 
+---
+
+N:1协程：各个线程之间无法均衡任务，导致一个线程中的某个协程运行过久，会影响到本线程的其他协程。
+
+M:N协程：M个用户协程对应N个系统线程。
+
+https://zhuanlan.zhihu.com/p/362621806
+
+M:N协程原理与设计
+
+---
+
 参考：
 
 https://www.chiark.greenend.org.uk/~sgtatham/coroutines.html

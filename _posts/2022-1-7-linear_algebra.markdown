@@ -172,6 +172,14 @@ $$\left(\begin{array}{ccc}
 
 类似Hadamard product以及矩阵加法之类的操作，又被称为element-wise op或coefficient-wise op。
 
+---
+
+在pytorch/numpy里，用`a * X`表示Hadamard product，a的形状可以和X不同，只要能够broadcast就行。
+
+`B @ X`则为普通的matrix multiplication。
+
+---
+
 参考：
 
 https://mp.weixin.qq.com/s/K_aNhzaxmchynDWTE1QFCQ

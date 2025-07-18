@@ -1,15 +1,71 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（七）——LLM Inference, LLM System
+title:  并行 & 框架 & 优化（七）——LLM Inference
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# 快速Transformer
+# 快速Transformer（续）
 
-## FlashAttention（续）
+## FlashAttention
+
+代码：
+
+https://github.com/Dao-AILab/flash-attention
+
+![](/images/img5/FlashAttention.png)
+
+![](/images/img6/FA.jpg)
+
+对于self-attention块，除了两个大矩阵乘法是计算受限的，其他都是内存受限的逐点运算。
+
+FlashAttention主要使用分块矩阵的思想，对矩阵乘法进行优化。
+
+分块之后，参与运算的小块可以放入速度更快的存储单元，例如原来的运算需要反复读取HBM，而现在只需要读取一次HBM，然后就可以在SRAM或者Cache中完成所有的运算。
+
+但Self-Attention中有softmax计算，而softmax的分母包含了所有元素相关的求和项，所以对Self-Attention进行分块计算的真正难点在于对softmax的分块计算。
+
+FlashAttention提出了一种叫做Online Softmax的增量算法：我们首先计算一个分块的局部softmax值，然后存储起来。当处理完下一个分块时，可以根据此时的新的全局最大值和全局EXP求和项来更新旧的softmax值。接着再处理下一个分块，然后再更新。当处理完所有分块后，此时的所有分块的softmax值都是“全局的”。
+
+具体计算公式：
+
+<blockquote>
+
+for i = 1 to #tiles do:
+
+$$m_i^{(local)}\leftarrow max_{j=1}^b(x_i[j])$$
+
+$$m_i \leftarrow max(m_{i-1},m_i^{(local)})$$
+
+$$d_i^{'} \leftarrow d_{i-1}^{'}e^{m_{i-1}-m_i}+\sum_{j=1}^b e^{x_i[j]-m_i}$$
+
+$$o_i^{'}=o_{i-1}^{'}\frac{d_{i-1}^{'}}{d_i^{'}}e^{m_{i-1}-m_i}+\sum_{j=1}^{b}\frac{e^{x_i[j]-m_i}}{d_i^{'}}V[j+(i-1)b,:]$$
+
+end
+
+$$O[k,:]\leftarrow o_{N/b}^{'}$$
+
+</blockquote>
+
+其他优化点：
+
+- softmax recomputing。前向保存logsumexp（LSE），反向利用LSE，重新计算softmax。
+
+- Dropout，前向阶段只保存dropout seed与offset，反向宁愿再算一遍dropout，放弃保存dropout mask。
+
+---
+
+![](/images/img6/FlashAttention.png)
+
+FlashAttention V1里Q在内层循环，而V2里K在内层循环。V1对于计算softmax不友好，因为每次计算的中间结果只是部分和，只有全算完才能释放相关存储。
+
+$$B_r$$和$$B_c$$是FlashAttention分块处理时的分块size。
+
+![](/images/img6/FlashAttention_2.png)
+
+---
 
 ```cpp
 // vllm-project
@@ -37,6 +93,12 @@ mha_fwd
 ---
 
 Composable Kernel(ck)是AMD ROCm平台的Flash-Attention实现。
+
+---
+
+varlen即变长序列，产生的背景是”数据拼接“，即LLM使用的训练数据集中，长度较短的序列占大多数，这些短序列为了能够符合Transformer固定长度的输入，就要进行padding，序列越短，padding越多，而我们不太想要padding，padding只是无奈之举。此时，我们可以使用varlen特性，简单来说就是将多个短序列拼接成一个长序列，但是还是每个短序列自己内部计算注意力，短序列之间是隔离的，这样减少了padding，节省计算量和显存。
+
+![](/images/img6/FA_varlen.png)
 
 ---
 
@@ -240,57 +302,3 @@ LLM Inference Performance Engineering: Best Practices
 https://docs.vllm.ai/en/latest/
 
 Easy, fast, and cheap LLM serving for everyone
-
-# LLM System
-
-## RAG
-
-![](/images/img5/RAG.jpg)
-
-![](/images/img5/RAG.png)
-
-Retrieval Augmented Generation（检索增强生成）：通过检索获取相关的知识并将其融入Prompt，让大模型能够参考相应的知识从而给出合理回答。因此，可以将RAG的核心理解为“检索+生成”，前者主要是利用向量数据库的高效存储和检索能力，召回目标知识；后者则是利用大模型和Prompt工程，将召回的知识合理利用，生成目标答案。
-
-https://zhuanlan.zhihu.com/p/668082024
-
-一文搞懂大模型RAG应用
-
-https://blog.csdn.net/v_JULY_v/article/details/137711599
-
-RAG进阶之通用文档处理：从RAGFlow、TextMonkey到mPLUG-DocOwl 1.5
-
-https://zhuanlan.zhihu.com/p/695299235
-
-RAG路线图： Reliable, Adaptable, and Attributable Language Models with Retrieval
-
----
-
-假设有一个10w的外部数据，我们的原始输入Prompt长度为100，长度限制为4k，通过查询-检索的方式，我们能将最有效的信息提取集中在这4k的长度中，与Prompt一起送给大模型，从而让大模型得到更多的信息。此外，还能通过多轮对话的方式不断提纯外部数据，达到在有限的输入长度限制下，传达更多的信息给大模型。
-
-https://blog.csdn.net/qq_40491305/article/details/130898052
-
-一文看懂LlamaIndex用法，为LLMs学习私有知识
-
-## 向量数据库
-
-向量搜索在搜索、推荐、NLP等众多应用领域被广泛的使用，典型的互联网业务，包括电商、出行、点评、地图等都大量使用相关技术。随着ChatGPT带来的AI技术应用新热潮，向量数据库又一次地获得了更多的关注。它可以解决LLM不长记性（Memory，记忆）的问题。
-
-普遍认为LLM+Vector Search+API pool会变成复杂AI场景的标准解决方案。
-
-类似Pinecone，Weaviate，Qdrant，Chroma这样的专用向量数据库最初是为了解决ChatGPT的记忆能力不足而出现的Workaround。
-
-最发布的ChatGPT 3.5的上下文窗口只有4K Token，也就是不到两千个汉字。然而当下GPT 4的上下文窗口已经发展到了128K，扩大了32倍，足够塞进一整篇小说了。而且未来还会更大。这时候，用作临时周转的垫脚石——向量数据库SaaS就处在一个尴尬的位置上了。
-
-https://www.zhihu.com/question/603117242
-
-为什么各大VC最近都在投向量数据库？
-
-https://zhuanlan.zhihu.com/p/668509885
-
-向量数据库凉了吗？
-
-## Accumulate Gradients
-
-gradient_accumulation_steps用于处理当模型的参数数量超过GPU内存容量时的情况。在训练大型模型时，尤其是在使用较小的GPU进行训练时，可能会遇到内存不足的问题。这时，可以使用梯度累积来分割批次，从而使得每个小批次的计算都在GPU的内存限制范围内。
-
-如果设置了gradient_accumulation_steps=N，那么模型会先对N个批次的数据进行前向和反向传播，将这些批次的梯度累积起来，然后才进行一次权重更新。这样，实际上的批次大小相当于per_device_train_batch_size * N。

@@ -169,6 +169,24 @@ http://cn.arxiv.org/
 
 最著名的论文网站arxiv.org的中国镜像网站。arxiv.org中的论文都有编号。比如1608.06993v4，1608表示这是2016年8月的文章，v4表示这是第4版。
 
+## 团队协作中常用术语
+
+WIP: Work in progress, do not merge yet. // 开发中
+
+LGTM: Looks good to me. // Riview完别人的PR，没有问题
+
+PTAL: Please take a look. // 帮我看下，一般都是请别人review自己的PR
+
+CC: Carbon copy // 一般代表抄送别人的意思
+
+RFC: request for comments. // 我觉得这个想法很好, 我们来一起讨论下
+
+IIRC: if I recall correctly. // 如果我没记错
+
+ACK: acknowledgement. // 我确认了或者我接受了,我承认了
+
+NACK/NAK: negative acknowledgement. // 我不同意
+
 # Markdown
 
 自从我在github建立blog以来，一直都在使用markdown语言。这里仅针对我使用过程中遇到的问题做一个笔记。

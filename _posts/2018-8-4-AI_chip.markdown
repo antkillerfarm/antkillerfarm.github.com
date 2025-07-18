@@ -19,6 +19,10 @@ A list of ICs and IPs for AI, Machine Learning and Deep Learning.
 
 ![](/images/img4/AI_chip.png)
 
+https://www.zhihu.com/answer/1902838887392458347
+
+各类AI加速芯片架构比较
+
 ## NN计算的硬件设计
 
 NN计算问题的瓶颈主要包括两类：

@@ -239,6 +239,10 @@ torch/distributed/fsdp/fully_sharded_data_parallel.py
 
 ---
 
+![](/images/img6/5P.png)
+
+---
+
 FSDP的backward_prefetch策略是用于优化反向传播过程中通信和计算重叠的一种配置。
 
 BACKWARD_PRE：这种模式在当前参数集的梯度计算之前就开始预取下一组参数。这可以实现最大程度的通信和计算重叠，但会增加最多的内存使用。它会在内存中同时持有当前参数集、下一组参数和当前梯度。

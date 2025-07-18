@@ -56,6 +56,8 @@ $$M=U\Sigma V^*$$
 
 ![](/images/article/Singular-Value-Decomposition.png)
 
+它意味着任何对（列）向量x的线性变换，都可以分解为**旋转、拉伸、旋转**三个步骤。
+
 虽然，我们可以通过计算矩阵$$\sqrt{M^*M}$$的特征值的方法，计算奇异值，然而这个方法的计算量十分巨大。1965年，Gene Howard Golub和William Morton Kahan发明了目前较为通用的算法。但该方法比较复杂，这里不作介绍。
 
 >Gene Howard Golub，1932～2007，美国数学家，斯坦福大学教授。

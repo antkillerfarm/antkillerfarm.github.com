@@ -1,13 +1,65 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（八）——Alpa
+title:  并行 & 框架 & 优化（八）——LLM System, Alpa
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# LLM System（续）
+# LLM System
+
+## RAG
+
+![](/images/img5/RAG.jpg)
+
+![](/images/img5/RAG.png)
+
+Retrieval Augmented Generation（检索增强生成）：通过检索获取相关的知识并将其融入Prompt，让大模型能够参考相应的知识从而给出合理回答。因此，可以将RAG的核心理解为“检索+生成”，前者主要是利用向量数据库的高效存储和检索能力，召回目标知识；后者则是利用大模型和Prompt工程，将召回的知识合理利用，生成目标答案。
+
+https://zhuanlan.zhihu.com/p/668082024
+
+一文搞懂大模型RAG应用
+
+https://blog.csdn.net/v_JULY_v/article/details/137711599
+
+RAG进阶之通用文档处理：从RAGFlow、TextMonkey到mPLUG-DocOwl 1.5
+
+https://zhuanlan.zhihu.com/p/695299235
+
+RAG路线图： Reliable, Adaptable, and Attributable Language Models with Retrieval
+
+---
+
+假设有一个10w的外部数据，我们的原始输入Prompt长度为100，长度限制为4k，通过查询-检索的方式，我们能将最有效的信息提取集中在这4k的长度中，与Prompt一起送给大模型，从而让大模型得到更多的信息。此外，还能通过多轮对话的方式不断提纯外部数据，达到在有限的输入长度限制下，传达更多的信息给大模型。
+
+https://blog.csdn.net/qq_40491305/article/details/130898052
+
+一文看懂LlamaIndex用法，为LLMs学习私有知识
+
+## 向量数据库
+
+向量搜索在搜索、推荐、NLP等众多应用领域被广泛的使用，典型的互联网业务，包括电商、出行、点评、地图等都大量使用相关技术。随着ChatGPT带来的AI技术应用新热潮，向量数据库又一次地获得了更多的关注。它可以解决LLM不长记性（Memory，记忆）的问题。
+
+普遍认为LLM+Vector Search+API pool会变成复杂AI场景的标准解决方案。
+
+类似Pinecone，Weaviate，Qdrant，Chroma这样的专用向量数据库最初是为了解决ChatGPT的记忆能力不足而出现的Workaround。
+
+最发布的ChatGPT 3.5的上下文窗口只有4K Token，也就是不到两千个汉字。然而当下GPT 4的上下文窗口已经发展到了128K，扩大了32倍，足够塞进一整篇小说了。而且未来还会更大。这时候，用作临时周转的垫脚石——向量数据库SaaS就处在一个尴尬的位置上了。
+
+https://www.zhihu.com/question/603117242
+
+为什么各大VC最近都在投向量数据库？
+
+https://zhuanlan.zhihu.com/p/668509885
+
+向量数据库凉了吗？
+
+## Accumulate Gradients
+
+gradient_accumulation_steps用于处理当模型的参数数量超过GPU内存容量时的情况。在训练大型模型时，尤其是在使用较小的GPU进行训练时，可能会遇到内存不足的问题。这时，可以使用梯度累积来分割批次，从而使得每个小批次的计算都在GPU的内存限制范围内。
+
+如果设置了gradient_accumulation_steps=N，那么模型会先对N个批次的数据进行前向和反向传播，将这些批次的梯度累积起来，然后才进行一次权重更新。这样，实际上的批次大小相当于per_device_train_batch_size * N。
 
 ## Multi-Token Prediction
 
@@ -245,119 +297,3 @@ https://mp.weixin.qq.com/s/Ye2GVTFIrX3SbU1-4cDLoQ
 https://mp.weixin.qq.com/s/FIWfbCLgckVzeNvfThIl4Q
 
 阿里线下智能方案进化史
-
-https://mp.weixin.qq.com/s/pqxiF6yEZzrw8qXu2hEsaA
-
-单机训练速度提升640倍！独家解读快手商业广告模型GPU训练平台Persia
-
-https://mp.weixin.qq.com/s/Jcz4XWDjMmbhmAiI_zBQXQ
-
-流式计算优化：时效性
-
-https://zhuanlan.zhihu.com/p/33351291
-
-基于忆阻器（ReRAM），Computing-in-Memory的DLA
-
-https://mp.weixin.qq.com/s/UbZtUL6Iveb4S3nTU0liGw
-
-深度神经网络的分布式训练概述：常用方法和技巧全面总结
-
-https://mp.weixin.qq.com/s/kLXJsHbBnRIFC3NLChPhzA
-
-如何高效进行大规模分类？港中文联合商汤提出新方法
-
-https://www.zhihu.com/question/454589636
-
-为什么模型和数据都在gpu上，却打不满GPU的使用率？
-
-https://mp.weixin.qq.com/s/sn8fMAbJbeT6JUbCpBpN6A
-
-Jeff Dean与David Patterson：不思考体系结构的深度学习研究者不是好工程师
-
-https://mp.weixin.qq.com/s/6zLrWJ4nE0bHFlVe5dMxHw
-
-分布式深度学习新进展：让“分布式”和“深度学习”真正深度融合
-
-https://mp.weixin.qq.com/s/hjC-WTMIpbWWpmXoLBfD2g
-
-腾讯大规模分布式机器学习系统无量是如何进行技术选型的？
-
-https://mp.weixin.qq.com/s/mg-d1W5i9rzaLMNrvq0tSQ
-
-32分钟训练神经机器翻译，速度提升45倍
-
-https://mp.weixin.qq.com/s/iAHvfgn54zIwfM9K8KFJnw
-
-DLM：微信大规模分布式n-gram语言模型系统
-
-https://mp.weixin.qq.com/s/s7sHzzLANOp8-1LxgXQskA
-
-谷歌开发者大会上，蚂蚁金服开源ElasticDL分布式深度学习系统
-
-https://mp.weixin.qq.com/s/IQMXg6nIJO-9-IG3mJpvRg
-
-ElasticDL：同时提升集群利用率和研发效率的分布式深度学习框架
-
-https://mp.weixin.qq.com/s/uQzwqcGwC9ZveuW64Lzkmg
-
-分布式训练怎么还减速了呢？
-
-https://zhuanlan.zhihu.com/p/294698838
-
-DLPerf—分布式深度学习最佳入门(踩坑)指南
-
-https://mp.weixin.qq.com/s/_85oWK2plv2QOX5Qfg_-ZA
-
-大规模机器学习优化，195页ppt与视频
-
-https://mp.weixin.qq.com/s/soruo90Dbtzi6d1kA63Akg
-
-阿里提出智能算力引擎DCAF，节省20%GPU算力
-
-https://mp.weixin.qq.com/s/oDak7peTT5ynNYrH7LSWTg
-
-分布式层次GPU参数服务器架构
-
-https://zhuanlan.zhihu.com/p/28226956
-
-浮点峰值那些事儿
-
-https://zhuanlan.zhihu.com/p/285994980
-
-针对深度学习的GPU共享
-
-https://mp.weixin.qq.com/s/Np4w7RC2JFlB7ZGIduu71w
-
-爱奇艺机器学习平台的建设实践
-
-https://mp.weixin.qq.com/s/DwjvEn04lGzKU8mDu-5q4g
-
-大幅提升训练性能，字节跳动与清华提出新型分布式DNN训练架构
-
-https://mp.weixin.qq.com/s/dJa5zOXgJJQOM5uWog3JZA
-
-Local Parallesim：一种新并行训练方法
-
-https://zhuanlan.zhihu.com/p/335116835
-
-推荐系统Serving架构分析
-
-https://mp.weixin.qq.com/s/DdsJ-ZB_cX9UhbQNK6dCag
-
-分布式深度学习训练网络综述
-
-https://mp.weixin.qq.com/s/qpwBGlTtTLEAhYAUpPyXTQ
-
-CMU：分布式机器学习原理与策略 AAAI2021教程，附221页ppt
-
-https://mp.weixin.qq.com/s/nK-9ck5S6noIETOb8b2dJw
-
-vivo AI计算平台弹性分布式训练的探索和实践
-
-https://mp.weixin.qq.com/s/IzLtn1SR-aFuxXM3GNZbFw
-
-蘑菇街自研服务框架如何提升在线推理效率？
-
-https://mp.weixin.qq.com/s/GheEA0Ag0vbhZeyzqpTl0A
-
-分布式优化：在大数据时代应运而生

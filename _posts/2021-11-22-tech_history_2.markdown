@@ -196,3 +196,7 @@ https://blog.ismisv.com/
 https://www.zhihu.com/question/578648774
 
 为什么缅甸没能像清缅战争一样利用热带气候拖垮英军，最后反而落得个兵败亡国的结局?
+
+---
+
+![](/images/img6/Nanyang.png)

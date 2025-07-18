@@ -69,6 +69,10 @@ Every country has its own mafia. In Russia, the mafia has its own country. -- by
 
 小丑进驻宫殿，他也不会变成国王。而宫殿却成了马戏团。-- by 土耳其谚语
 
+不要以为我是个皇帝就令出必行，我只不过是下那些我知道一定会得到执行的命令而已。-- by 沙皇亚历山大一世
+
+帝国主义不是至高无上的神，也不是虚无缥缈的鬼，而是真实的利益集团，战术上必须重视，战略上完全可以藐视。-- by 马督工
+
 ![](/images/img6/mrsa.jpg)
 
 ---

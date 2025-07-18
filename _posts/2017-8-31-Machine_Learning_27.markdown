@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十七）——LSA
+title:  机器学习（二十七）——Stacking, 数据清洗, LSA
 category: ML 
 ---
 
@@ -108,6 +108,62 @@ NLP关键字提取技术之LDA算法原理与实践
 https://www.zhihu.com/question/298517764
 
 目前有比Topic Model更先进的聚类方式么？比如针对短文本的、加入情感分析的？
+
+# Stacking
+
+模型融合的方法除了Bagging和Boosting，还有Stacking。
+
+参考：
+
+https://mp.weixin.qq.com/s/lYj-GVNSDp26czRXbf0iNw
+
+如果你会模型融合！那么，我要和你做朋友！！
+
+https://mp.weixin.qq.com/s/-MbiSkgkF11gt5t9W0ExTw
+
+模型融合方法最全总结
+
+## GBDT+LR
+
+论文：
+
+《Practical Lessons from Predicting Clicks on Ads at Facebook》
+
+GBDT除了单独使用之外，也可以和其他模型Stack使用。
+
+![](/images/img3/GBDT_LR.png)
+
+上图就是GBDT+LR的示意图。上图中，GBDT有红蓝两个子树。黑色样本经子树分类后，落在子树打勾的分支中。将分类结果进行编码，然后交给LR进行进一步的分类。
+
+当然了，把GBDT换成其他决策树，如XGBoost，把LR换成SVM，显然也是可行的。相对于LR之类的模型，决策树在特征提取方面，还是很有优势的。
+
+参考：
+
+https://www.cnblogs.com/wkang/p/9657032.html
+
+GBDT+LR算法解析及Python实现
+
+https://blog.csdn.net/losteng/article/details/78378958
+
+学习GBDT+LR
+
+# 数据清洗
+
+https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g
+
+数据挖掘中的数据清洗方法大全
+
+https://mp.weixin.qq.com/s/FHdo2DTapoTryA-hOM-y_w
+
+还在为数据清洗抓狂？这里有一个简单实用的清洗代码集
+
+https://mp.weixin.qq.com/s/r7ngZOM9tO-_OSfvs2aDJw
+
+数据清洗&预处理入门完整指南
+
+https://mp.weixin.qq.com/s/r4ycLnjOl5hSPBMwKpnmsQ
+
+如何打造高质量的NLP数据集
 
 # LSA
 

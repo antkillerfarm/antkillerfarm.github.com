@@ -203,6 +203,10 @@ https://mp.weixin.qq.com/s/FN6EpobpSmWnYeI5G53xUw
 
 深入Triton后端适配：天数GPU的Triton适配及共享内存管理机制
 
+https://zhuanlan.zhihu.com/p/1925309765489230184
+
+Triton SPIR-V后端开发：矩阵乘实现验证
+
 ## NVFuser
 
 NVFuser是NV专门为Pytorch设计的自动化的GPU代码生成器。

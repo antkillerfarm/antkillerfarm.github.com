@@ -135,6 +135,12 @@ https://mp.weixin.qq.com/s/N16K511-crzj6h-R1L10rQ
 
 如何通过心形线快速认识秩的几何意义？
 
+## 正交矩阵
+
+orthonormal matrix：正交矩阵
+
+orthogonal matrix：标准正交矩阵
+
 ## 奇异矩阵
 
 对应的行列式等于0的方阵，被称为奇异矩阵（singular matrix）。

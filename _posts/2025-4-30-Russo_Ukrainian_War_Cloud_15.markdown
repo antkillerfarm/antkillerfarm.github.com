@@ -372,3 +372,7 @@ https://zhuanlan.zhihu.com/p/1909779085007225988
 https://zhuanlan.zhihu.com/p/1915015873011352450
 
 普京如何计划通过夏季攻势对乌克兰造成致命打击
+
+https://zhuanlan.zhihu.com/p/1925173694583529695
+
+“西尔斯基的团”：为什么乌克兰武装部队要组建并扩充单独的突击部队

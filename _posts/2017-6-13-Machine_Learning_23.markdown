@@ -275,56 +275,26 @@ https://github.com/eyounx/ZOOpt
 
 一个非梯度优化的工具
 
-## 参考
+## Muon
 
-http://sebastianruder.com/optimizing-gradient-descent/
+Muon：MomentUm Orthogonalized by Newton-schulz
 
-An overview of gradient descent optimization algorithms
+Muon优化器是OpenAI研究员Keller Jordan的作品。
 
-https://mp.weixin.qq.com/s/k_d02G2V4yd6HdGfw2mf1Q
+SGD、Adam、Tiger等常见优化器的更新规则是Element-wise的，即不论向量、矩阵参数，实际都视为一个大向量，分量按照相同的规则独立地更新。
 
-从修正Adam到理解泛化：概览2017年深度学习优化算法的最新研究进展
+Muon以矩阵为基本单位，考虑了矩阵的一些独有特性。
 
-https://mp.weixin.qq.com/s/cOCCapYrmrS_DyPkj_XRlg
+Muon是为了matrix设计的，因此非matrix参数word embedding，lm head，rmsnorm gamma都是用AdamW进行更新的。
 
-常见的几种最优化方法
+Muon在大模型训练时不够稳定，会有MaxLogit爆炸的问题，除了常规的Weight Decay之外，还要配合QK-Clip等算法。
 
-https://morvanzhou.github.io/tutorials/machine-learning/ML-intro/3-06-speed-up-learning/
+参考：
 
-加速神经网络训练
+https://kexue.fm/archives/10592
 
-http://www.cnblogs.com/neopenx/p/4768388.html
+Muon优化器赏析：从向量到矩阵的本质跨越
 
-自适应学习率调整：AdaDelta
+https://kexue.fm/archives/11126
 
-https://mp.weixin.qq.com/s/VoBK-l_ieSg2UupC2ix2pA
-
-听说你了解深度学习最常用的学习算法：Adam优化算法？
-
-https://mp.weixin.qq.com/s/YRyqvlNe24mlFZ7GB9vDnw
-
-一文看懂常用的梯度下降算法
-
-https://mp.weixin.qq.com/s/qncTSBCvjMzAual5Sz9R3A
-
-解析深度学习优化：Momentum、RMSProp和Adam
-
-https://mp.weixin.qq.com/s/q7BI-YyhtmNzUfBMTKVdqQ
-
-Hitting time analysis of SGLD！
-
-https://mp.weixin.qq.com/s/vt7BEHbwJrAzlL2Pc-6QFg
-
-掌握机器学习数学基础之优化（上）
-
-https://mp.weixin.qq.com/s/6NBLLLa-S625iaehR8zDfQ
-
-掌握机器学习数学基础之优化（下）
-
-https://zhuanlan.zhihu.com/p/73441350
-
-从物理角度理解加速梯度下降
-
-https://mp.weixin.qq.com/s/n1Ks8I3Ldgb-u-kVbGBZ5Q
-
-机器学习中的优化方法
+QK-Clip：让Muon在Scaleup之路上更进一步

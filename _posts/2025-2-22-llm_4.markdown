@@ -7,9 +7,65 @@ category: Attention
 * toc
 {:toc}
 
-# MoE
+# MoE（续）
 
-## DeepSeek（续）
+https://mp.weixin.qq.com/s/XQSEg2_8_1lFqWdHVG6TVA
+
+Switch Transformer: 高效稀疏的万亿参数Transformer
+
+https://zhuanlan.zhihu.com/p/362525526
+
+深入解读首个万亿级语言模型Switch Transformer
+
+https://zhuanlan.zhihu.com/p/676980004
+
+使用PyTorch实现混合专家(MoE)模型
+
+https://huggingface.co/blog/zh/moe
+
+混合专家模型(MoE)详解
+
+https://zhuanlan.zhihu.com/p/662518387
+
+MOE并行
+
+https://zhuanlan.zhihu.com/p/1431483173
+
+聊聊MoE实验性工作Upcycling Large Language Models into Mixture of Experts
+
+https://zhuanlan.zhihu.com/p/672712751
+
+大模型LLM之混合专家模型MoE（上-基础篇）
+
+https://zhuanlan.zhihu.com/p/673048264
+
+大模型LLM之混合专家模型MoE（下-实现篇）
+
+## Mixtral
+
+Mixtral是由Mistral AI团队推出的MoE模型，参数大小为47B。
+
+![](/images/img5/Mixtral.png)
+
+https://zhuanlan.zhihu.com/p/676010571
+
+欢迎Mixtral-当前Hugging Face上最先进的MoE模型
+
+## DeepSeek
+
+《DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models》
+
+《DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model》
+
+《DeepSeek-V3 Technical Report》
+
+![](/images/img6/DeepSeekMoE.png)
+
+DeepSeek认为在同等专家参数量和计算成本不变的前提下，更多数量的小专家，比数量少的大专家好。这种更精细的专家分割使得激活专家的组合更加灵活且适应性更强。
+
+![](/images/img6/DeepSeek.png)
+
+专家路由事实上引入了一个不连续的门控函数（对梯度计算不友好），这导致梯度下降优化方法在MoE训练中表现不佳，甚至出现“路由崩溃”，即模型容易陷入始终为每个Token激活相同的少数专家的窘境，而不是将计算合理的传播到所有的可用专家。这也是MoE模型训练的难点。
 
 传统的规避路由崩溃的方法是强制“平衡路由”，即通过训练策略让每个专家在足够大的训练批次中被激活的次数大致相等。这一策略也就是“辅助损失”。但这种强制性的辅助损失会由于训练数据的结构不均衡特征，导致同领域的专家能力分散到不同的专家模块之中，极度损害MoE模型的性能。理想的MoE应该有一些经常访问高频通用信息，并具备其他访问较少的专业领域专家。如果强制平衡路由，将失去实现此类路由设置的能力，并且必须在不同的专家之间冗余地复制信息。
 
@@ -82,6 +138,18 @@ KTransformers由清华大学团队提出，可以在模型运行过程中灵活�
 参考：
 
 KTransformer部署高性能DeepSeek R1模型实战
+
+## Kimi K2
+
+技术报告：
+
+https://moonshotai.github.io/Kimi-K2/
+
+参考：
+
+https://www.zhihu.com/question/1927140506573435010
+
+Kimi发布首个万亿参数开源模型K2模型，哪些信息值得关注？
 
 # LLM实战
 
@@ -166,7 +234,7 @@ https://zhuanlan.zhihu.com/p/702811733
 
 Vision-Language Models (VLMs)多模态大模型一年多的进展与思考-2406
 
-# 天文杂谈+
+# 天文杂谈=
 
 北斗二～六相互之间距离5～10光年，属于同一个星协，运动速度也一致，百万年后也不会分开。北斗一和北斗七不属于这个星协，离得很远，运动速度也不一致，几万年以后就看不出七颗星的勺子形状了。
 
@@ -179,21 +247,3 @@ Vision-Language Models (VLMs)多模态大模型一年多的进展与思考-2406
 https://www.zhihu.com/question/638917246
 
 北斗七星都是些什么恒星？它们分别有多大？距离地球有多远？
-
----
-
-1928年10月25日，一位旅美求学的中国青年在美国叶凯士天文台发现一颗小行星（临时编号为1928 UF），这是第一颗由中国人发现的小行星。这位青年学子感怀祖国，随即将其命名为中华星（1125 China）。
-
-不久，青年回国效力，成为中国现代天文学的拓荒者之一，但却再也没找到这颗小行星的踪迹。直到1957年10月30日，青年在紫金山天文台发现了一颗轨道酷似1125的小行星。
-
-虽后经证实这颗小行星并非1125，但20年后的1977年，当这颗小行星的轨道被精确确定后，国际小行星命名委员会破例将“1125 China”给了这颗新发现的小行星。而原本以为失踪了的1125号小行星，却在1986年被再次观测到，并于1988年被重新命名为中国星（3789 zhongguo）。
-
->张钰哲，1902～1986，芝加哥大学博士（1929），中国近代天文学的奠基人。中国科学院院士。紫金山天文台台长。1941年9月21日，在战时极端困难的条件下，他组织了中国境内第一次日全食的科学观测，拍摄了中国境内第一张日全食照片和第一部日全食彩色影片。
-
-https://mp.weixin.qq.com/s/0zlHeZsr_gVNoaufr_--Hw
-
-给飞过头顶的星星起个响当当的名字
-
-https://zhuanlan.zhihu.com/p/61467796
-
-抗日时期，中国人完成哪些不可能做到的壮举？

@@ -33,6 +33,18 @@ https://zhuanlan.zhihu.com/p/605425639
 
 RWKV 14B对比GLM 130B和NeoX 20B，展示RWKV的性能
 
+## flash-linear-attention
+
+由杨松琳提出的类mamba算法。
+
+https://sustcsonglin.github.io/blog/2024/deltanet-1/
+
+DeltaNet Explained
+
+代码：
+
+http://github.com/fla-org/flash-linear-attention
+
 # BERT进阶
 
 ## UniLM

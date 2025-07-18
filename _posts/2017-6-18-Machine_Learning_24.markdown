@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十四）——Learning Rate, 单分类SVM&多分类SVM, Stacking, 数据清洗
+title:  机器学习（二十四）——Learning Rate, 单分类SVM&多分类SVM
 category: ML 
 ---
 
@@ -8,6 +8,60 @@ category: ML
 {:toc}
 
 # Optimizer（续）
+
+## 参考
+
+http://sebastianruder.com/optimizing-gradient-descent/
+
+An overview of gradient descent optimization algorithms
+
+https://mp.weixin.qq.com/s/k_d02G2V4yd6HdGfw2mf1Q
+
+从修正Adam到理解泛化：概览2017年深度学习优化算法的最新研究进展
+
+https://mp.weixin.qq.com/s/cOCCapYrmrS_DyPkj_XRlg
+
+常见的几种最优化方法
+
+https://morvanzhou.github.io/tutorials/machine-learning/ML-intro/3-06-speed-up-learning/
+
+加速神经网络训练
+
+http://www.cnblogs.com/neopenx/p/4768388.html
+
+自适应学习率调整：AdaDelta
+
+https://mp.weixin.qq.com/s/VoBK-l_ieSg2UupC2ix2pA
+
+听说你了解深度学习最常用的学习算法：Adam优化算法？
+
+https://mp.weixin.qq.com/s/YRyqvlNe24mlFZ7GB9vDnw
+
+一文看懂常用的梯度下降算法
+
+https://mp.weixin.qq.com/s/qncTSBCvjMzAual5Sz9R3A
+
+解析深度学习优化：Momentum、RMSProp和Adam
+
+https://mp.weixin.qq.com/s/q7BI-YyhtmNzUfBMTKVdqQ
+
+Hitting time analysis of SGLD！
+
+https://mp.weixin.qq.com/s/vt7BEHbwJrAzlL2Pc-6QFg
+
+掌握机器学习数学基础之优化（上）
+
+https://mp.weixin.qq.com/s/6NBLLLa-S625iaehR8zDfQ
+
+掌握机器学习数学基础之优化（下）
+
+https://zhuanlan.zhihu.com/p/73441350
+
+从物理角度理解加速梯度下降
+
+https://mp.weixin.qq.com/s/n1Ks8I3Ldgb-u-kVbGBZ5Q
+
+机器学习中的优化方法
 
 https://mp.weixin.qq.com/s/4XOI8Dq6fqe8rhtJjeyxeA
 
@@ -243,59 +297,3 @@ $$C_k=C*W_k$$
 https://blog.csdn.net/giskun/article/details/49329095
 
 SVM的概率输出（Platt scaling）
-
-# Stacking
-
-模型融合的方法除了Bagging和Boosting，还有Stacking。
-
-参考：
-
-https://mp.weixin.qq.com/s/lYj-GVNSDp26czRXbf0iNw
-
-如果你会模型融合！那么，我要和你做朋友！！
-
-https://mp.weixin.qq.com/s/-MbiSkgkF11gt5t9W0ExTw
-
-模型融合方法最全总结
-
-## GBDT+LR
-
-论文：
-
-《Practical Lessons from Predicting Clicks on Ads at Facebook》
-
-GBDT除了单独使用之外，也可以和其他模型Stack使用。
-
-![](/images/img3/GBDT_LR.png)
-
-上图就是GBDT+LR的示意图。上图中，GBDT有红蓝两个子树。黑色样本经子树分类后，落在子树打勾的分支中。将分类结果进行编码，然后交给LR进行进一步的分类。
-
-当然了，把GBDT换成其他决策树，如XGBoost，把LR换成SVM，显然也是可行的。相对于LR之类的模型，决策树在特征提取方面，还是很有优势的。
-
-参考：
-
-https://www.cnblogs.com/wkang/p/9657032.html
-
-GBDT+LR算法解析及Python实现
-
-https://blog.csdn.net/losteng/article/details/78378958
-
-学习GBDT+LR
-
-# 数据清洗
-
-https://mp.weixin.qq.com/s/YrCC8CmP6UKuCmSdF2K_3g
-
-数据挖掘中的数据清洗方法大全
-
-https://mp.weixin.qq.com/s/FHdo2DTapoTryA-hOM-y_w
-
-还在为数据清洗抓狂？这里有一个简单实用的清洗代码集
-
-https://mp.weixin.qq.com/s/r7ngZOM9tO-_OSfvs2aDJw
-
-数据清洗&预处理入门完整指南
-
-https://mp.weixin.qq.com/s/r4ycLnjOl5hSPBMwKpnmsQ
-
-如何打造高质量的NLP数据集

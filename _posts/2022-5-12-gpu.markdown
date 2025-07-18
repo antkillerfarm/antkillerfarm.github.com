@@ -296,3 +296,7 @@ GPU内存概念浅析
 https://zhuanlan.zhihu.com/p/377073683
 
 GPU虚拟化，算力隔离，和qGPU
+
+https://www.zhihu.com/question/1968561378
+
+如果将几百核心的服务器CPU当作GPU使用，会发生什么？

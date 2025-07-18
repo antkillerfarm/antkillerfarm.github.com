@@ -9,6 +9,16 @@ category: Chip
 
 # AI Chip
 
+## 车载芯片
+
+Qualcomm：SA8775P
+
+小鹏：图灵AI芯片
+
+蔚来：神玑NX9031
+
+## 参考
+
 ![](/images/img3/Wallace_Tree.png)
 
 https://mp.weixin.qq.com/s/_n1FA7H5q4AwXqeBg9tekA

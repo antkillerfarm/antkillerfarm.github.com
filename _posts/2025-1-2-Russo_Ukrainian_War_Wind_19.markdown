@@ -9,6 +9,96 @@ category: Russo Ukrainian War Wind
 
 # 俄乌战争：疾风篇
 
+## 凡人列传
+
+https://zhuanlan.zhihu.com/p/617040010
+
+“我工作，然后我哭泣”：巴赫穆特附近疲惫不堪的乌克兰医务人员为生命而战
+
+https://www.163.com/dy/article/J9EDCF4C0552BNOQ.html
+
+乌克兰奥运会冠军将拍卖自己的金牌为乌军筹款
+
+https://zhuanlan.zhihu.com/p/7610620647
+
+第二位台湾雇佣兵在乌克兰阵亡，幸存者：战场上尸横遍野、血流成河
+
+https://zhuanlan.zhihu.com/p/661990126
+
+乌克兰的日与夜（上）：台湾兵的前线烽火余生录
+
+https://zhuanlan.zhihu.com/p/663655155
+
+乌克兰的日与夜（下）：“要死，就我在你旁边”战场台湾手足
+
+https://zhuanlan.zhihu.com/p/666956540
+
+悲壮的乌克兰爱情故事
+
+https://zhuanlan.zhihu.com/p/684832394
+
+一个斯拉夫人的半辈子，根据我寒假期间在利沃夫和一个俄族乌克兰人的线下&TG的交流整理而成。
+
+https://zhuanlan.zhihu.com/p/715986568
+
+虎胆龙威 普京哀痛得知俄罗斯硬汉演员不幸被乌克兰侵略者击毙
+
+https://zhuanlan.zhihu.com/p/716077048
+
+俄罗斯逃兵“一周前我还在家看动漫，现在我却要被派到前线”
+
+https://zhuanlan.zhihu.com/p/3185323114
+
+一名乌克兰士兵讲述他在马里乌波尔被俘后的遭遇（10月25日）
+
+https://zhuanlan.zhihu.com/p/7278187784
+
+Dare to Ukraine
+
+https://www.zhihu.com/answer/3602910273
+
+凡人列传
+
+https://zhuanlan.zhihu.com/p/11895044091
+
+他脸部中枪，但是现在乌克兰想征召他。
+
+https://zhuanlan.zhihu.com/p/13138407444
+
+每晚，乌克兰首都基辅的天空都会被无人机蜂拥而至。而这些志愿者们用各种方法将它们击落。
+
+https://zhuanlan.zhihu.com/p/13810035587
+
+一个俄罗斯朋友分享的战场经历
+
+https://zhuanlan.zhihu.com/p/15153956892
+
+严重通胀导致俄罗斯平民生活困顿，为何俄罗斯仍然不崩溃？
+
+https://www.zhihu.com/pin/1859493679032582144
+
+乌155旅的逃兵情况
+
+https://www.163.com/dy/article/JM9BMAU80552D6K3.html
+
+俄乌都授予“肉搏战”士兵英雄称号，谁才是真正英雄？
+
+https://zhuanlan.zhihu.com/p/20434793197
+
+“等待不是选择——我们必须战斗”：采访在波克罗夫斯克附近坚守阵地22天的士兵
+
+https://zhuanlan.zhihu.com/p/24903910557
+
+同性恋迫击炮手亚历山大·朱汉在托列茨克：每当有人称俄罗斯人为“基佬”，我每次都会被触动
+
+https://zhuanlan.zhihu.com/p/30577662852
+
+一位乌克兰新兵的训练观察手记
+
+https://zhuanlan.zhihu.com/p/1906346051138490370
+
+俄罗斯女军医被迫成为指挥官的“战地妻子”，不得不评估残疾士兵的健康状况，亲眼目睹“不受欢迎”的士兵被长官枪杀和一些士兵被“卖去屠宰”为指挥官牟取暴利
+
 ## 泽连斯基语录
 
 永远记住：乌克兰在这个敌人出现之前就有，乌克兰将在他之后还会继续存在。

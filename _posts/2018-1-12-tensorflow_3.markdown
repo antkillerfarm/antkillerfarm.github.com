@@ -29,15 +29,29 @@ tf-slim-mnist例子中mnist数据不是原始格式的，而是经过了`dataset
 
 该示例执行时也没有控制台的输出信息，一度让我觉得很不方便。后来才发现，原来可以用TensorBoard查看log文件夹。
 
+# Horn
+
+TensorFlow实际上是Google开发的第二代DL框架。在它之前，Google内部还有一个叫做DistBelief的框架。这个框架没有开源，但是有论文发表。因此，就有了一个叫做Apache Horn的项目，作为它的开源实现。
+
 # Hama
 
-TensorFlow实际上是Google开发的第二代DL框架。在它之前，Google内部还有一个叫做DistBelief的框架。这个框架没有开源，但是有论文发表。因此，就有了一个叫做Apache Hama的项目，作为它的开源实现。
+Apache Hama是Google Pregel的开源实现。
 
 官网：
 
 https://hama.apache.org/
 
 这个项目采用了一种叫做Bulk Synchronous Parallel的并行计算模型。
+
+BSP由英国计算机科学家Leslie Valiant和Bill McColl于1989年提出。
+
+整体同步（Bulk Synchrony）：计算被划分为若干个超级步（Superstep），每个超级步内：
+
+- 本地计算：每个处理器独立执行本地计算。
+- 全局通信：处理器间通过消息传递交换数据。
+- 栅栏同步（Barrier Synchronization）：所有处理器必须等待本轮计算和通信全部完成后，才整体进入下一个超级步。
+
+Spark也采用了BSP计算模型。
 
 # Estimator
 

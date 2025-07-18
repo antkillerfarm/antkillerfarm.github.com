@@ -111,7 +111,7 @@ KV Cache
 
 ![](/images/img5/GQA.jpg)
 
-首先是原始的MHA(Multi-Head Attention)，QKV 三部分有相同数量的头，且一一对应。每次做Attention，head1的QKV就做好自己运算就可以，输出时各个头加起来就行。
+首先是原始的MHA(Multi-Head Attention)，QKV三部分有相同数量的头，且一一对应。每次做Attention，head1的QKV就做好自己运算就可以，输出时各个头加起来就行。
 
 而MQA则是，让Q仍然保持原来的头数，但K和V只有一个头，相当于所有的Q头共享一组K和V头，所以叫做Multi-Query了。
 
@@ -137,7 +137,7 @@ MLA的创新点，其实不是低秩分解，因为如果你想的话，GQA也�
 
 MLA的关键是低秩分解后面的事情，GQA是split and repeat，MLA则一般化为dense projection，从而实现了同样的低秩分解下更好的效果，或者同样效果下更低的秩，后者就是它能比GQA更进一步压缩KV Cache的根本原因。
 
-推理时，MLA需要利用恒等变换才能实现低秩的KV Cache，但代价是每个头的Q/K的head_size变大了不小，所以理论上MLA推理的计算量是增加的。它最后之所以还能提高效率，是充分结合了LLM推理主要瓶颈还是访存而不是计算这一特性。
+推理时，MLA需要利用恒等变换才能实现低秩的KV Cache，但代价是每个头的Q/K的head_size变大了不少，所以理论上MLA推理的计算量是增加的。它最后之所以还能提高效率，是充分结合了LLM推理主要瓶颈是访存而不是计算这一特性。
 
 MLA推理时，使用了**矩阵吸收（matrix absorb）**的技巧。
 
@@ -151,6 +151,28 @@ $$A=(x * (W_q * W_k^T)) * x$$
 
 而$$W_q * W_k^T$$可以作为Q的投影矩阵出现。
 
+$$
+\require{cancel}\begin{array}{c|c} 
+\text{训练/Prefill} & \text{Decoding} \\ 
+\\ 
+\begin{gathered} 
+\boldsymbol{o}_t = \left[\boldsymbol{o}_t^{(1)}, \boldsymbol{o}_t^{(2)}, \cdots, \boldsymbol{o}_t^{(h)}\right] \\[10pt] 
+\boldsymbol{o}_t^{(s)} = \frac{\sum_{i\leq t}\exp\left(\boldsymbol{q}_t^{(s)} \boldsymbol{k}_i^{(s)}{}^{\top}\right)\boldsymbol{v}_i^{(s)}}{\sum_{i\leq t}\exp\left(\boldsymbol{q}_t^{(s)} \boldsymbol{k}_i^{(s)}{}^{\top}\right)} \\[15pt] 
+\boldsymbol{q}_i^{(s)} = \left[\boldsymbol{x}_i\boldsymbol{W}_{qc}^{(s)},\boldsymbol{x}_i\boldsymbol{W}_{qr}^{(s)}\color{#3ce2f7}{\boldsymbol{\mathcal{R}}_i}\right]\in\mathbb{R}^{d_k + d_r}\\ 
+\boldsymbol{k}_i^{(s)} = \left[\boldsymbol{c}_i\boldsymbol{W}_{kc}^{(s)},\boldsymbol{x}_i\boldsymbol{W}_{kr}^{\color{#ccc}{\smash{\bcancel{(s)}}}}\color{#3ce2f7}{\boldsymbol{\mathcal{R}}_i}\right]\in\mathbb{R}^{d_k + d_r} \\ 
+\boldsymbol{v}_i^{(s)} = \boldsymbol{c}_i\boldsymbol{W}_v^{(s)}\in\mathbb{R}^{d_v},\quad\boldsymbol{c}_i = \boldsymbol{x}_i \boldsymbol{W}_c\in\mathbb{R}^{d_c} 
+\end{gathered} 
+& 
+\begin{gathered} 
+\boldsymbol{o}_t = \left[\boldsymbol{o}_t^{(1)}\boldsymbol{W}_v^{(1)}, \boldsymbol{o}_t^{(2)}\boldsymbol{W}_v^{(2)}, \cdots, \boldsymbol{o}_t^{(h)}\boldsymbol{W}_v^{(h)}\right] \\[10pt] 
+\boldsymbol{o}_t^{(s)} = \frac{\sum_{i\leq t}\exp\left(\boldsymbol{q}_t^{(s)} \boldsymbol{k}_i^{\color{#ccc}{\smash{\bcancel{(s)}}}}{}^{\top}\right)\boldsymbol{v}_i^{\color{#ccc}{\smash{\bcancel{(s)}}}} }{\sum_{i\leq t}\exp\left(\boldsymbol{q}_t^{(s)} \boldsymbol{k}_i^{\color{#ccc}{\smash{\bcancel{(s)}}}}{}^{\top}\right)} \\[15pt] 
+\boldsymbol{q}_i^{(s)} = \left[\boldsymbol{x}_i\boldsymbol{W}_{qc}^{(s)}\boldsymbol{W}_{kc}^{(s)}{}^{\top}, \boldsymbol{x}_i\boldsymbol{W}_{qr}^{(s)}\color{#3ce2f7}{\boldsymbol{\mathcal{R}}_i}\right]\in\mathbb{R}^{d_c + d_r}\\ 
+\boldsymbol{k}_i^{\color{#ccc}{\smash{\bcancel{(s)}}}} = \left[\boldsymbol{c}_i, \boldsymbol{x}_i\boldsymbol{W}_{kr}^{\color{#ccc}{\smash{\bcancel{(s)}}}}\color{#3ce2f7}{\boldsymbol{\mathcal{R}}_i}\right]\in\mathbb{R}^{d_c + d_r}\\ 
+\boldsymbol{v}_i^{\color{#ccc}{\smash{\bcancel{(s)}}}} = \boldsymbol{c}_i= \boldsymbol{x}_i \boldsymbol{W}_c\in\mathbb{R}^{d_c} 
+\end{gathered} \\ 
+\end{array}
+$$
+
 不难发现，矩阵吸收不是MLA独有的，MHA也可以做这样的操作。它本质上是用计算量换空间的策略。
 
 Prefill阶段的瓶颈是计算量，MLA的矩阵吸收并没有优势，甚至更慢；但在Decode阶段，由于推理是逐token进行的，计算量少但需要线性积累KV Cache，总的KV Cache的大小就成为了显存瓶颈，MLA此时起到显著的作用。
@@ -158,6 +180,8 @@ Prefill阶段的瓶颈是计算量，MLA的矩阵吸收并没有优势，甚至�
 而MHA使用矩阵吸收，由于增加的计算量过于巨大，无论何种阶段都没有收益。
 
 需要注意，上述矩阵吸收的技巧没有考虑ROPE的影响，实际情况还要更复杂一些。
+
+类似的，还有GLA。
 
 ---
 
@@ -240,57 +264,3 @@ https://zhuanlan.zhihu.com/p/139255930
 https://www.thepaper.cn/newsDetail_forward_23343189
 
 大幅优化推理过程，字节高性能Transformer推理库获IPDPS 2023最佳论文奖
-
-## FlashAttention
-
-代码：
-
-https://github.com/Dao-AILab/flash-attention
-
-![](/images/img5/FlashAttention.png)
-
-对于self-attention块，除了两个大矩阵乘法是计算受限的，其他都是内存受限的逐点运算。
-
-FlashAttention主要使用分块矩阵的思想，对矩阵乘法进行优化。
-
-分块之后，参与运算的小块可以放入速度更快的存储单元，例如原来的运算需要反复读取HBM，而现在只需要读取一次HBM，然后就可以在SRAM或者Cache中完成所有的运算。
-
-但Self-Attention中有softmax计算，而softmax的分母包含了所有元素相关的求和项，所以对Self-Attention进行分块计算的真正难点在于对softmax的分块计算。
-
-FlashAttention提出了一种叫做Online Softmax的增量算法：我们首先计算一个分块的局部softmax值，然后存储起来。当处理完下一个分块时，可以根据此时的新的全局最大值和全局EXP求和项来更新旧的softmax值。接着再处理下一个分块，然后再更新。当处理完所有分块后，此时的所有分块的softmax值都是“全局的”。
-
-具体计算公式：
-
-<blockquote>
-
-for i = 1 to #tiles do:
-
-$$m_i^{(local)}\leftarrow max_{j=1}^b(x_i[j])$$
-
-$$m_i \leftarrow max(m_{i-1},m_i^{(local)})$$
-
-$$d_i^{'} \leftarrow d_{i-1}^{'}e^{m_{i-1}-m_i}+\sum_{j=1}^b e^{x_i[j]-m_i}$$
-
-$$o_i^{'}=o_{i-1}^{'}\frac{d_{i-1}^{'}}{d_i^{'}}e^{m_{i-1}-m_i}+\sum_{j=1}^{b}\frac{e^{x_i[j]-m_i}}{d_i^{'}}V[j+(i-1)b,:]$$
-
-end
-
-$$O[k,:]\leftarrow o_{N/b}^{'}$$
-
-</blockquote>
-
-其他优化点：
-
-- softmax recomputing。前向保存logsumexp（LSE），反向利用LSE，重新计算softmax。
-
-- Dropout，前向阶段只保存dropout seed与offset，反向宁愿再算一遍dropout，放弃保存dropout mask。
-
----
-
-![](/images/img6/FlashAttention.png)
-
-FlashAttention V1里Q在内层循环，而V2里K在内层循环。V1对于计算softmax不友好，因为每次计算的中间结果只是部分和，只有全算完才能释放相关存储。
-
-$$B_r$$和$$B_c$$是FlashAttention分块处理时的分块size。
-
-![](/images/img6/FlashAttention_2.png)

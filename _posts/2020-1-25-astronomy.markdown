@@ -171,6 +171,8 @@ https://www.zhihu.com/question/580797606
 
 ## 流浪地球
 
+![](/images/img6/Interstellar.png)
+
 https://mp.weixin.qq.com/s/O8tAEBMmZ29N1fr7BGW_UQ
 
 一文读懂电影《流浪地球》没有交代清楚的烧脑科学知识

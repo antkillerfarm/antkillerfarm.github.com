@@ -9,6 +9,32 @@ category: Chip
 
 # AI Chip
 
+## Cerebras
+
+现在，计算芯片是越做越大，在早先的PC中，最大的芯片无疑是CPU了。但现在高端显卡芯片的面积已经超越CPU了。
+
+Cerebras在这方面更为极端，它的芯片采用了一整张300mm晶圆，将40万个内核，1.2万亿个晶体管，46,225平方毫米的硅和18GB的片上存储器，全部集成在一个与整个晶圆一样大的芯片中，大到令人难以置信。
+
+其实Nvidia的芯片也有越来越大的趋势：
+
+![](/images/img3/nvidia_roadmap.png)
+
+超大芯片主要有两个问题：
+
+- 良品率问题。这个问题可以通过冗余设计来解决。比如Intel的i5、i7实际上都是同一批生产出来的。如果所有核都OK，那就是i7；否则的话，屏蔽不好的核，这就是i5，因此i5常有6核这样的奇怪数字出现。
+
+- 散热问题。
+
+参考：
+
+https://mp.weixin.qq.com/s/Zsmvsy8I_qKZWrONj9Juuw
+
+史上最大芯片正式推出世界最快AI计算机：1/30体积、1/5功耗、3倍性能！谷歌TPU V3在它面前就是“渣”
+
+https://mp.weixin.qq.com/s/nGzDVR9dlF-jL4ZIkss0Ow
+
+这家用一整块硅片做AI芯片的公司成功了？
+
 ## Habana
 
 Habana Labs是一家位于以色列特拉维夫和加州圣何塞的无晶圆厂半导体公司，创立于2016年。
@@ -117,6 +143,10 @@ https://www.jiqizhixin.com/articles/2019-08-20-4
 https://www.hiascend.com/zh/software/cann
 
 CANN（Compute Architecture for Neural Networks）是华为针对AI场景推出的异构计算架构
+
+https://www.zhihu.com/question/1925252282942988983
+
+华为NPU昇腾芯片是否属于重大战略方向性失误，应该选择GPGPU
 
 ## Imagination
 
@@ -321,18 +351,6 @@ https://zhuanlan.zhihu.com/p/591827529
 https://www.zhihu.com/answer/3395444932
 
 寒武纪AI芯片
-
-## FuriosaAI
-
-FuriosaAI是韩国的一家AI芯片公司。
-
-![](/images/img5/FuriosaAI.png)
-
-## 地平线
-
-![](/images/img6/DPX.webp)
-
-地平线主要做智能驾驶领域的AI芯片，和它类似生态位的还有黑芝麻智能。前者于2024.10上市，而后者是2024.8。
 
 ## 行业信息
 

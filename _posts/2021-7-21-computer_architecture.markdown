@@ -93,6 +93,10 @@ https://zhuanlan.zhihu.com/p/113360369
 
 从现代GPU编程角度看SIMD与SIMT
 
+https://zhuanlan.zhihu.com/p/5711426839
+
+SIMD & SIMT 与芯片架构
+
 ---
 
 SIMT相比SIMD在可编程性上最根本性的优势在于硬件解决了大部分流水编排的问题。

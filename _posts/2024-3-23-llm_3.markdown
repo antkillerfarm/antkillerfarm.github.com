@@ -9,6 +9,44 @@ category: Attention
 
 # LLM大乱战（续）
 
+数据泄露（data contamination）在大模型时代可以说是极难避免的。随着大模型训练数据规模的扩大，保证训练数据与常用benchmark之间没有重叠变得几乎不可能。
+
+https://zhuanlan.zhihu.com/p/665426752
+
+大模型是如何在评测中“作弊”的？
+
+---
+
+当年华为自己没有靠谱的团队，外包给别人训练了盘古。
+
+现在当年训练盘古的人出来做自己的模型，这个模型就是KIMI。
+
+去查下循环智能就知道了，盘古算是华为委托他们做的，ChatGPT火了之后，杨植麟把循环智能的人拉出来成立的moonshot。
+
+此前就一直传闻张予彤在月之暗面的融资过程中“帮了不少忙”，收了不少融资费用，更有甚者直接点破，说kimi就是一个夫妻店。
+
+中国模型4小龙：deepseek，qwen，豆包，kimi。
+
+"大模型六小虎"（月之暗面、百川智能、智谱AI、零一万物、MiniMax、阶跃星辰）
+
+“杭州六小龙”，指的是“游戏科学、深度求索、宇树科技、云深处科技、强脑科技和群核科技”这六家近期崛起于杭州，处于技术前沿、深具行业影响力的科企。
+
+https://www.zhihu.com/question/654072307
+
+如何看待月之暗面创始人杨植麟减股套现千万美金？
+
+https://zhuanlan.zhihu.com/p/19272031682
+
+DeepSeek创始人梁文锋
+
+---
+
+DeepSeek估值时，对标的是OpenAI，其估值区间被估算在10亿美元至1500亿美元之间。
+
+根据“路边消息社”报道，现在想约见梁文锋，需要先报省委办公厅。一般人见不到梁文锋。网上还传出了“大年三十特警陪同回家，村口警察巡逻”的消息。
+
+---
+
 大模型开源有几个等级，开源程度从低到高：
 
 - 仅模型开源（技术报告只列举了Evaluation）。主要利好做应用的公司（继续训练和微调）和普通用户（直接部署）技术报告开源训练过程。
@@ -171,6 +209,14 @@ https://zhuanlan.zhihu.com/p/1917883331829273687
 
 Devin炮轰Claude：别再搞Multi-Agent了
 
+---
+
+MCP（Model Context Protocol）由Anthropic于2024年11月推出，是一个开放标准协议，用于统一大模型与外部工具、数据源之间的交互方式。
+
+https://zhuanlan.zhihu.com/p/1895177200665350365
+
+大白话聊一聊Tool、MCP和Agent来龙去脉
+
 # Chinchilla Law
 
 最为知名的规模定律包括“Kaplan定律”和“Chinchilla定律”。
@@ -208,6 +254,8 @@ https://www.zhihu.com/question/627258986
 ---
 
 Meta在LLaMA的观点是：给定模型的目标性能，并不需要用最优的计算效率在最快时间训练好模型，而应该在更大规模的数据上，训练一个相对更小模型，这样的模型在**推理阶段的成本更低**，尽管训练阶段的效率不是最优的（同样的算力其实能获得更优的模型，但是模型尺寸也会更大）。
+
+就算GPU管够，大模型一次训练也依然耗时巨大，而能够决定模型最终效果的环节非常多，所以合理的做法是先通过训小参数的Draft模型进行调试，跑通并打磨整个链路，等到都弄好之后再往上扩大参数量，逐级扩增——这是Scaling Law的基本玩法。
 
 https://zhuanlan.zhihu.com/p/667489780
 
@@ -252,63 +300,3 @@ MoE环游记：从几何意义出发
 https://github.com/XueFuzhao/OpenMoE
 
 https://github.com/laekov/fastmoe
-
----
-
-https://mp.weixin.qq.com/s/XQSEg2_8_1lFqWdHVG6TVA
-
-Switch Transformer: 高效稀疏的万亿参数Transformer
-
-https://zhuanlan.zhihu.com/p/362525526
-
-深入解读首个万亿级语言模型Switch Transformer
-
-https://zhuanlan.zhihu.com/p/676980004
-
-使用PyTorch实现混合专家(MoE)模型
-
-https://huggingface.co/blog/zh/moe
-
-混合专家模型(MoE)详解
-
-https://zhuanlan.zhihu.com/p/662518387
-
-MOE并行
-
-https://zhuanlan.zhihu.com/p/1431483173
-
-聊聊MoE实验性工作Upcycling Large Language Models into Mixture of Experts
-
-https://zhuanlan.zhihu.com/p/672712751
-
-大模型LLM之混合专家模型MoE（上-基础篇）
-
-https://zhuanlan.zhihu.com/p/673048264
-
-大模型LLM之混合专家模型MoE（下-实现篇）
-
-## Mixtral
-
-Mixtral是由Mistral AI团队推出的MoE模型，参数大小为47B。
-
-![](/images/img5/Mixtral.png)
-
-https://zhuanlan.zhihu.com/p/676010571
-
-欢迎Mixtral-当前Hugging Face上最先进的MoE模型
-
-## DeepSeek
-
-《DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models》
-
-《DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model》
-
-《DeepSeek-V3 Technical Report》
-
-![](/images/img6/DeepSeekMoE.png)
-
-DeepSeek认为在同等专家参数量和计算成本不变的前提下，更多数量的小专家，比数量少的大专家好。这种更精细的专家分割使得激活专家的组合更加灵活且适应性更强。
-
-![](/images/img6/DeepSeek.png)
-
-专家路由事实上引入了一个不连续的门控函数（对梯度计算不友好），这导致梯度下降优化方法在MoE训练中表现不佳，甚至出现“路由崩溃”，即模型容易陷入始终为每个Token激活相同的少数专家的窘境，而不是将计算合理的传播到所有的可用专家。这也是MoE模型训练的难点。
