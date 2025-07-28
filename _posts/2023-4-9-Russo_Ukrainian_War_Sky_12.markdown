@@ -11,7 +11,7 @@ category: Russo Ukrainian War Sky
 
 ## 顿涅斯克战役（续）
 
-从Avdiivka到Pokrovsk：2024.4.20～
+从Avdiivka到Pokrovsk：2024.4.20～2024.7.20
 
 第115独立机械化旅从奥切列季涅地区撤离后，由于指挥不力，后来被调往利曼方向的“奇迹森林”。
 
@@ -28,6 +28,14 @@ https://www.zhihu.com/question/2125754134
 https://www.zhihu.com/question/2574005045
 
 俄军已经完全控制赫尼克，大家如何看待俄军攻下赫尼克？
+
+---
+
+Pokrovsk战役：2024.7.20～
+
+https://zhuanlan.zhihu.com/p/1930922719945422148
+
+俄军侦察破坏小组正在红军村本体西南部郊区活动
 
 ---
 

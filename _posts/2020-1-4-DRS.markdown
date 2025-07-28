@@ -193,6 +193,30 @@ https://mp.weixin.qq.com/s/0qidwbxyfTkODTw2DIiRWw
 
 DCN-M：Google提出改进版DCN，用于大规模排序系统的特征交叉学习
 
+## 生成式推荐
+
+目前主流的深度学习推荐模型（DLRMs）依赖大量手工设计的特征（如用户ID、物品类别、点击次数等），但随着数据规模爆炸式增长，这些模型面临计算效率低下的问题。
+
+生成式推荐模型的目标与优势：
+
+- 将推荐视为 “序列生成任务”：把用户与物品的交互（如点击、观看、分享）视为一个序列，模型的目标是根据历史交互序列生成未来的交互行为。
+
+- 统一特征表示：不再依赖手工设计的复杂特征，而是将所有特征（包括用户 ID、物品类别、点击频率等）编码成统一的时间序列。
+
+![](/images/img6/DLRM_vs_GR.png)
+
+HSTU（Hierarchical Sequential Transduction Unit）
+
+GR采用的序列长度从1024到8192不等，最终采取4096作为主要的评估对象。这一长度已经远远超过了过去判别式DLRM可以处理的长度，而且从效果上来看，也有序列越长，模型越复杂，GR的效果越好的趋势。
+
+![](/images/img6/Cascading_Model.png)
+
+GR虽然计算量增大，但由于合并了传统推荐模型的级联结构，大幅提升了系统的MFU，速度反而比以前更快。
+
+https://www.zhihu.com/question/1916207872066430537
+
+生成式推荐会成为下一代推荐系统的范式吗？
+
 ## 参考
 
 https://zhuanlan.zhihu.com/learningdeep
@@ -350,51 +374,3 @@ https://mp.weixin.qq.com/s/JKMOhpLWWlrDzymDDEldXw
 https://mp.weixin.qq.com/s/FBzd0x4_A9z-r0f3ZKFGuw
 
 携程个性化推荐算法实践
-
-https://mp.weixin.qq.com/s/Q01jy2RtbpBBHGtvtfhEGA
-
-当机器学习遇到推荐系统，悉尼科技大学Liang Hu博士最新分享
-
-https://mp.weixin.qq.com/s/zBcd2vCYZvb_T7De2QhRew
-
-京东公布基于计算机视觉的电商推荐技术！
-
-https://mp.weixin.qq.com/s/rIZUar6sUZXo2S1JwLrHug
-
-AI研究新利器Etymo，妈妈再也不用担心我找不到论文！
-
-https://zhuanlan.zhihu.com/p/33956907
-
-阿里-搜索团队智能内容生成实践
-
-https://mp.weixin.qq.com/s/9nGjIgwzGG2sXvEzvYEptQ
-
-基于“翻译”的推荐系统方案，加州大学圣地亚哥分校最新工作
-
-https://mp.weixin.qq.com/s/Qupo61cnuO_10sVpRe-wQA
-
-DKN:基于深度知识感知的新闻推荐网络
-
-https://mp.weixin.qq.com/s/9xw-FwWEK9VI2wNzc8EhPA
-
-阿里盖坤：解读阿里深度学习实践，CTR 预估、MLR 模型、兴趣分布网络等
-
-https://zhuanlan.zhihu.com/p/35472804
-
-TransNets: Learning to Transform for Recommendation
-
-https://mp.weixin.qq.com/s/_xAB7-LxKRlH76FVsyezzQ
-
-阿里妈妈资深技术专家刘凯鹏解读基于深度学习的智能搜索营销
-
-https://zhuanlan.zhihu.com/p/35484389
-
-深度学习在CTR预估中的应用
-
-https://mp.weixin.qq.com/s/5A0mnFIMGX1GViD65vURcg
-
-浅谈CTR预估模型发展史
-
-https://mp.weixin.qq.com/s/nboZ6p_l30L__FJNyz6Ohw
-
-深度学习如何应用在广告、推荐及搜索业务？

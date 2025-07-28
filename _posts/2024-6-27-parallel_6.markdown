@@ -96,6 +96,10 @@ Composable Kernel(ck)是AMD ROCm平台的Flash-Attention实现。
 
 ---
 
+prefill: flash_attn_func
+
+decode: flash_attn_with_kvcache
+
 varlen即变长序列，产生的背景是”数据拼接“，即LLM使用的训练数据集中，长度较短的序列占大多数，这些短序列为了能够符合Transformer固定长度的输入，就要进行padding，序列越短，padding越多，而我们不太想要padding，padding只是无奈之举。此时，我们可以使用varlen特性，简单来说就是将多个短序列拼接成一个长序列，但是还是每个短序列自己内部计算注意力，短序列之间是隔离的，这样减少了padding，节省计算量和显存。
 
 ![](/images/img6/FA_varlen.png)

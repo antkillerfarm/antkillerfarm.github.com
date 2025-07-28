@@ -27,6 +27,16 @@ https://zhuanlan.zhihu.com/p/602006517
 
 ---
 
+泽连斯基总统大权的合法性来源于哪里？
+
+是2019年的总统大选吗？
+
+根本不是。
+
+是2022年2月24日开始的大选，支持泽连斯基的人用鲜血和生命投票给了他。
+
+---
+
 https://baike.baidu.com/tashuo/browse/content?id=0c64d05cac1e174119d96e5f
 
 泽连斯基：风云人物这一年

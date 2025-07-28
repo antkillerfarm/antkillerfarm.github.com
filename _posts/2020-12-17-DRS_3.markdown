@@ -9,6 +9,54 @@ category: Recommender System
 
 # 深度推荐系统
 
+https://mp.weixin.qq.com/s/Q01jy2RtbpBBHGtvtfhEGA
+
+当机器学习遇到推荐系统，悉尼科技大学Liang Hu博士最新分享
+
+https://mp.weixin.qq.com/s/zBcd2vCYZvb_T7De2QhRew
+
+京东公布基于计算机视觉的电商推荐技术！
+
+https://mp.weixin.qq.com/s/rIZUar6sUZXo2S1JwLrHug
+
+AI研究新利器Etymo，妈妈再也不用担心我找不到论文！
+
+https://zhuanlan.zhihu.com/p/33956907
+
+阿里-搜索团队智能内容生成实践
+
+https://mp.weixin.qq.com/s/9nGjIgwzGG2sXvEzvYEptQ
+
+基于“翻译”的推荐系统方案，加州大学圣地亚哥分校最新工作
+
+https://mp.weixin.qq.com/s/Qupo61cnuO_10sVpRe-wQA
+
+DKN:基于深度知识感知的新闻推荐网络
+
+https://mp.weixin.qq.com/s/9xw-FwWEK9VI2wNzc8EhPA
+
+阿里盖坤：解读阿里深度学习实践，CTR 预估、MLR 模型、兴趣分布网络等
+
+https://zhuanlan.zhihu.com/p/35472804
+
+TransNets: Learning to Transform for Recommendation
+
+https://mp.weixin.qq.com/s/_xAB7-LxKRlH76FVsyezzQ
+
+阿里妈妈资深技术专家刘凯鹏解读基于深度学习的智能搜索营销
+
+https://zhuanlan.zhihu.com/p/35484389
+
+深度学习在CTR预估中的应用
+
+https://mp.weixin.qq.com/s/5A0mnFIMGX1GViD65vURcg
+
+浅谈CTR预估模型发展史
+
+https://mp.weixin.qq.com/s/nboZ6p_l30L__FJNyz6Ohw
+
+深度学习如何应用在广告、推荐及搜索业务？
+
 https://zhuanlan.zhihu.com/p/36564514
 
 基于深度学习的评论文本表示论文引介
@@ -284,37 +332,3 @@ https://mp.weixin.qq.com/s/XTjvH4Qz9bKKnLic0_MyYg
 https://mp.weixin.qq.com/s/08wp8mjmnmuLhhLRw9VRQw
 
 谷歌开源下一代推荐系统模拟器-RecSim NG
-
-# 苏俄+
-
-CIA讲述在苏联和中国招募人的区别。
-
-在苏联给钱也没用，没地方花，而且不明资金反而会引起怀疑，同时那些容易被招揽的特点，比如贪婪，有这样特点的，在苏联体系内不大容易升上去。
-
-But in the newly rich China of the 2000s, dirty money was flowing freely. The average income remained under 2,000 yuan a month (approximately $240 at contemporary exchange rates), but officials’ informal earnings vastly exceeded their formal salaries. An official who wasn’t participating in corruption was deemed a fool or a risk by his colleagues. Cash could buy anything, including careers, and the CIA had plenty of it.
-
----
-
-朝鲜是不是全球最不自由的国家，其实是有争议的。因为全球有个国家，在很多排名评价体系中，政治自由度低于朝鲜，那就是土库曼斯坦。
-
-土库曼斯坦99%的国民信奉伊斯兰教，但是在他们的清真寺里，除了《古兰经》外，还会放置前总统尼亚佐夫的哲学著作《鲁赫纳玛》。这本书在土库曼斯坦的地位一度与《古兰经》相当，是全国中小学和大学的必读书本，几乎所有考试必考，甚至考驾照交规都要考这本书。而且一些清真寺内至今，墙壁上除了雕刻着《古兰经》的经典名句外，也有装饰着《鲁赫纳玛》的语录。
-
----
-
-王宪举发言时台下的老登们都在哄笑，在他们看来这完全是一个烘托气氛的轻松问题。然而在卡林看来，这显然是一个非常恶意的提问，而且有嘲讽哈萨克斯坦的嫌疑，因此他才会义正言辞地驳斥对方。
-
-https://zhuanlan.zhihu.com/p/14279639877
-
-哈萨克斯坦女人老老实实、服服帖帖生孩子了吗？
-
----
-
-普列汉诺夫大意是俄国现在好弱，简直是欧洲的中国，这个说法可能因为太辱华，没被课本收录。
-
----
-
-为苏联芯片事业立下汗马功劳的乔尔和萨兰特，是克格勃的秘密联络人。他们原本是俄罗斯犹太人，伪装成被迫害者避难移民到的美国。他们在美国尖端技术公司潜伏了十几年，掌握了大量电子设备的专业知识。20世纪40年代末，他们返回苏联，几年之后乔尔和萨兰特便为苏联制造出了第一台电脑。克格勃也成立了一个新的部门——T局，任务就是获取西方设备和技术，为苏联生产芯片保驾护航。克格勃T局雇佣了1000多人来搜集美国的半导体技术。
-
-苏联连续不断的意识形态斗争，很多技术天才因为所谓的“政治错误”，被逐出苏联硅谷，甚至被判刑或者劳改。
-
-20世纪80年代初，苏联芯片界的技术权威——尤里，因为不同意惩罚“思想不正确”的技术人员，也被逐出苏联硅谷。
