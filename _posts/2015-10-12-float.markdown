@@ -143,6 +143,18 @@ George S. Almasi和Allan Gottlieb于1989年将并行计算机定义为：“并�
 
 ![](/images/img2/speed.jpg)
 
+---
+
+2001年，斯坦福大学Bill Dally教授团队在处理器微结构旗舰期刊《IEEE Micro》上发表了一篇题为“Imagine: Media Processing with Streams”的论文，介绍了一个可加速多媒体应用的流处理器（Stream Processor）结构。
+
+这项工作很快引起了英伟达的关注，并向Dally教授伸出橄榄枝。2003年，Dally教授担任英伟达的顾问，参与公司新一代GeForce 8800系列GPU的微架构设计，指导如何在GPU中加入流处理器（Stream Processor），让GPU具备浮点运算能力。
+
+与此同时，斯坦福大学一位年轻的博士生Ian Buck在导师Pat Hanrahan教授（2019年图灵奖得主）的指导下开展如何方便且高效发挥GPU能力的研究。2004年，Ian Buck发表了一篇题为“Brook for GPUs: Stream Computing on Graphics Hardware”的论文，为GPU设计了一套支持流编程（Stream Programming）语言的编译器和运行时系统Brook，从而能让开发者像在通用CPU上那样进行编程。
+
+这项工作旋即得到英伟达的青睐，于是2004年Buck博士毕业后便立刻加入英伟达，带领两位工程师创立了CUDA项目。
+
+---
+
 最早的并行计算项目是斯坦福大学的BrookGPU：
 
 http://graphics.stanford.edu/projects/brookgpu/
@@ -264,29 +276,3 @@ https://mp.weixin.qq.com/s/23QCWf0NOoXlwRGAHfx4oQ
 https://mp.weixin.qq.com/s/-kizIk3ZXqu7UNqAb3QlQw
 
 C++并发编程（C++11到C++17）
-
-## 并行性的粒度
-
-细粒度并行：
-
-- 计算量不要过大，这样每个线程都有足够的工作可做。
-
-- 尽可能减少在数据同步上的开销，这样每个线程能够独立的完成自己的任务。
-
-- 负载的划分也很重要，因为有大量的独立任务需要并行执行，设计良好的任务调度器都能灵活控制负载，并保证在多任务运行的同时，让线程上的达到均衡。
-
-粗粒度并行：
-
-- 计算量肯定要高于细粒度并行时的计算量，因为不会像细粒度并行那样，有很多线程同时执行。
-
-- 编程者使用粗粒度编程时，需要了解应用的整体结构，让粗粒度中的每个线程作为任务，服务于应用。
-
-通常来说，上层App（当同步和通讯的开销大于计算）一般采用粗粒度并行，而底层算子（比如CUDA/OpenCL）采用细粒度并行。
-
-## 并行的层级
-
-指令并行、线程并行、单机多卡并行、集群并行。
-
-https://zhuanlan.zhihu.com/p/381978470
-
-一文读懂Pod（集群）

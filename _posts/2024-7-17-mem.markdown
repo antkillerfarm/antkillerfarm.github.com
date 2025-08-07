@@ -228,6 +228,19 @@ Mellanox Technologies是一家InfiniBand制造商，于2020年被Nvidia收购。
 
 https://www.openucx.org/
 
+---
+
+NIXL：NVIDIA Inference eXecution Layer
+
+| 对比点 | NIXL | NCCL | UCX |
+|:--:|:--:|:--:|:--:|
+| **目标场景**  | 推理KV cache、activation搬运 | 训练/推理的集合通信 | 通用网络抽象 |
+| **语义** | 1-sided RDMA put/get 为主 | 集合 allreduce/bcast | 灵活但需自己实现 put/get |
+| **GPU 零拷贝** | 一等公民 | 需要 GPUDirect RDMA | 需额外配置 |
+| **推理友好** | 针对 decode 阶段优化 | 主要用于训练 | 通用，推理需二次封装 |
+
+---
+
 参考：
 
 https://mp.weixin.qq.com/s/_xcE8RUs0m4gwk3kxpe9jA

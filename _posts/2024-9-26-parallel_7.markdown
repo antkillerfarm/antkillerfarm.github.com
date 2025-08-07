@@ -7,6 +7,75 @@ category: DL acceleration
 * toc
 {:toc}
 
+# LLM Inference（续）
+
+![](/images/img6/static-batching.png)
+
+上图是一个通常的多batch的LLM的Inference过程。其中黄色表示用户的prompt，蓝色表示LLM生成的文本，红色表示结束符号。
+
+![](/images/img6/continuous-batching.png)
+
+这是改进后的continuous batching的示意图。
+
+https://www.anyscale.com/blog/continuous-batching-llm-inference
+
+How continuous batching enables 23x throughput in LLM inference while reducing p50 latency
+
+---
+
+![](/images/img5/llm.png)
+
+https://www.zhihu.com/tardis/zm/art/647813179
+
+大模型文本生成——解码策略（Top-k & Top-p & Temperature）
+
+https://b23.tv/OfdfBnz
+
+如何设置大模型推理参数，top_k，top_p, temperature, num_beams
+
+https://blog.csdn.net/HUSTHY/article/details/125990877
+
+Contrastive Search Decoding——一种对比搜索解码文本生成算法
+
+https://zhuanlan.zhihu.com/p/656707466
+
+DoLa：层对比解码改善LLM的真实性
+
+---
+
+投机采样使用两个模型：一个是原始目标模型，另一个是比原始模型小得多的近似模型。近似模型用于进行自回归串行采样，而大型模型则用于评估采样结果。
+
+https://zhuanlan.zhihu.com/p/651359908
+
+大模型推理妙招—投机采样（Speculative Decoding）
+
+---
+
+LLM Inference的性能评估主要有以下几个方面：
+
+- Time To First Token (TTFT)
+- Time Per Output Token (TPOT)
+- Latency：模型为用户生成完整响应所需的总时间。latency = (TTFT) + (TPOT) * (the number of tokens to be generated)
+- Throughput：一个推理服务器每秒可以为所有用户和请求生成的输出token数量。
+
+https://www.databricks.com/blog/llm-inference-performance-engineering-best-practices
+
+LLM Inference Performance Engineering: Best Practices
+
+## vLLM
+
+https://docs.vllm.ai/en/latest/
+
+Easy, fast, and cheap LLM serving for everyone
+
+Piecewise CUDA Graph是vLLM中用于解决传统CUDA Graph在动态场景下局限性的一种优化策略。
+
+标准CUDA Graph要求输入tensor的shape、地址、类型完全固定，否则会报错。
+
+在LLM推理中，batch size、seq len、KV cache布局经常变化，导致整张图无法复用。
+
+因此，vLLM将模型按“稳定区域”切成多个片段，每个片段内部仍满足CUDA Graph的静态要求。
+
 # LLM System
 
 ## RAG
@@ -223,77 +292,3 @@ https://mp.weixin.qq.com/s/2jrMDeMcb47zpPfFLEcnIA
 https://mp.weixin.qq.com/s/L4CMKS53pNyvhhqvQhja0g
 
 5种商业AI产品的技术架构设计
-
-https://mp.weixin.qq.com/s/LjdHBEyQhJq3ptMj8XVT-w
-
-TensorFlow在推荐系统中的分布式训练优化实践
-
-https://mp.weixin.qq.com/s/rEHhf32L09KXGJ9bbB2LEA
-
-TensorFlow在美团外卖推荐场景的GPU训练优化实践
-
-https://zhuanlan.zhihu.com/p/522759214
-
-手把手推导分布式矩阵乘的最优并行策略
-
-https://mp.weixin.qq.com/s/_o7fzCOeuZE6qFc5gHb26g
-
-美团视觉GPU推理服务部署架构优化实践
-
-https://mp.weixin.qq.com/s/UxN9ZRmKLN30s7uPqMpHPQ
-
-Jeff Dean等提出动态控制流编程模型，大规模机器学习性能提升21%
-
-https://mp.weixin.qq.com/s/fx0Pfu0MOPjSkzi5mL6U_A
-
-清华&斯坦福提出深度梯度压缩DGC，大幅降低分布式训练网络带宽需求
-
-https://mp.weixin.qq.com/s/wIdTDHEPffWqHA3_XWBLyw
-
-没错，纯SQL查询语句可以实现神经网络。
-
->SQL跑神经网络固然没有太大意义，然而分布式数据库已经有数十年的历史，对于设计分布式深度学习框架亦有重大的启发意义。
-
-https://mp.weixin.qq.com/s/F10UaaoxGPOE4pc59LBCRw
-
-数据并行化对神经网络训练有何影响？谷歌大脑进行了实证研究
-
-https://mp.weixin.qq.com/s/UF7DDenUQJ3bL83IHxOkIw
-
-分布式优化算法及其在多智能体系统与机器学习中的应用
-
-https://mp.weixin.qq.com/s/6h9MeBs89hTtWsYSZ4pZ5g
-
-蚂蚁金服核心技术：百亿特征实时推荐算法揭秘
-
-https://mp.weixin.qq.com/s/xV5cLbCPb7Nh6i4i7DxJIQ
-
-没人告诉你的大规模部署AI高效流程！
-
-https://mp.weixin.qq.com/s/8R7YhcZ_Dt0oFIF3bQovxw
-
-为了提升DL模型性能，阿里工程师打造了流式编程框架
-
-https://mp.weixin.qq.com/s/z6gXp-EeDID1ed8_DsUbOg
-
-90秒训练AlexNet！商汤刷新纪录
-
-https://mp.weixin.qq.com/s/HQW2bPyDY_3ecZWP6NYr-w
-
-大规模机器学习在LinkedIn预测模型中的应用实践
-
-https://mp.weixin.qq.com/s/i1PLA1xr3CefKx1EcVUVIg
-
-谷歌破世界纪录！圆周率计算到小数点后31.4万亿位
-
-https://mp.weixin.qq.com/s/rX8L63-jDGJT6lCAj04I3Q
-
-独家解读！阿里重磅发布机器学习平台PAI 3.0
-
-https://mp.weixin.qq.com/s/Ye2GVTFIrX3SbU1-4cDLoQ
-
-你天天叫的外卖，你知道这里面深度学习的水有多深吗
-
-https://mp.weixin.qq.com/s/FIWfbCLgckVzeNvfThIl4Q
-
-阿里线下智能方案进化史

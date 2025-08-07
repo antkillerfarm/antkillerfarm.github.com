@@ -115,6 +115,10 @@ https://www.zhihu.com/question/answer/1930239396088624311
 
 叙利亚内战中的“老虎部队”
 
+https://zhuanlan.zhihu.com/p/1934888306551822280
+
+叙利亚的莫斯科谈判：少数族裔应该送到乌克兰废物利用
+
 ---
 
 赛德纳亚（Saydnaya）军事监狱位于叙利亚大马士革附近。

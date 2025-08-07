@@ -1,13 +1,63 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（六）——KV Cache, 快速Transformer
+title:  并行 & 框架 & 优化（六）——Megatron-LM, KV Cache
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# Megatron-LM（续）
+# FSDP（续）
+
+![](/images/img6/5P.png)
+
+---
+
+FSDP的backward_prefetch策略是用于优化反向传播过程中通信和计算重叠的一种配置。
+
+BACKWARD_PRE：这种模式在当前参数集的梯度计算之前就开始预取下一组参数。这可以实现最大程度的通信和计算重叠，但会增加最多的内存使用。它会在内存中同时持有当前参数集、下一组参数和当前梯度。
+
+BACKWARD_POST：这种模式在当前参数集的梯度计算之后开始预取下一组参数。它允许较少的重叠，但内存使用也较少。在内存使用峰值时，它只持有下一组参数和当前梯度。
+
+同样的还有forward_prefetch策略，FSDP会在当前前向计算之前显式地预取下一个前向传递所需的全收集（all-gather）操作。
+
+需要注意的是，forward_prefetch只适用于静态图模型，因为预取操作是按照第一次迭代的执行顺序进行的。这意味着在动态图模型中，由于执行顺序可能在每次迭代中发生变化，因此不建议使用此策略。
+
+---
+
+参考：
+
+https://www.cnblogs.com/rossiXYZ/p/15815013.html
+
+Facebook如何训练超大模型---(1)
+
+https://www.cnblogs.com/rossiXYZ/p/15819817.html
+
+Facebook如何训练超大模型---(2)
+
+https://zhuanlan.zhihu.com/p/485208899
+
+数据并行Deep-dive: 从DP到Fully Sharded Data Parallel（FSDP）完全分片数据并行
+
+https://pytorch.org/tutorials/intermediate/FSDP_tutorial.html
+
+GETTING STARTED WITH FULLY SHARDED DATA PARALLEL(FSDP)
+
+# Megatron-LM
+
+Megatron是NVIDIA的研究小组。目前已经推出了三篇论文：
+
+《Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism》
+
+《Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM》
+
+《Reducing Activation Recomputation in Large Transformer Models》
+
+目前训练超大规模语言模型主要有两条技术路线：TPU + XLA + TensorFlow/JAX和GPU + PyTorch + Megatron-LM + DeepSpeed。前者由Google主导，后者背后则有NVIDIA、Meta、MS大厂加持。
+
+![](/images/img5/Model_Parallel.jpg)
+
+![](/images/img5/Model_Parallel.png)
 
 代码：
 
@@ -228,39 +278,3 @@ KV Cache从诞生之初就是一个工程问题，上面主要讨论的是算法
 https://zhuanlan.zhihu.com/p/706791646
 
 Mooncake: Kimi's KVCache-centric Architecture for LLM Serving
-
-# 快速Transformer
-
-轻量化Transformer是从计算量/时间/空间的角度出发，对于传统Transformer的优化。但是计算量少，不等于计算速度快：同样的计算量，不同种类的算子，在硬件上的速度也是有差异的，这种差异有时甚至可以到几个数量级。而我们最终的目的终究是速度快，而非计算量少。
-
-因此，本节的快速Transformer主要着眼于软件工程角度，如何更好的利用各种硬件加速Transformer的计算。典型的有NVIDIA的FasterTransformer和腾讯的TurboTransformer。
-
-## FasterTransformer
-
-![](/images/img5/FasterTransformer.png)
-
-FasterTransformer作为这一流派的开山鼻祖，其使用的手段，以现在的眼光来看，已经过于平常了。但从工程的角度，它首次揭示了FLOP少，不等于快。
-
-上图是其中的一处优化点，NV将所有非矩阵乘法的运算，都合成一个算子，从而大大减少了算子的数量，以及相应的调度时间。
-
-## EffectiveTransformer/ByteTransformer
-
-EffectiveTransformer/ByteTransformer都是ByteDance的作品，基于FasterTransformer的进一步优化。
-
-![](/images/img5/EffectiveTransformer.png)
-
-![](/images/img5/EffectiveTransformer_2.png)
-
-Transformer模型运算中，padding部分带来了的无效计算。比如Bert一个输入Batch的固定句长是64，但平均句长只有40，那么EffectiveTransformer在FasterTransformer的基础上还可以再多获得约1.5倍的加速。
-
-具体的方法就是：对mask矩阵求前缀和，然后根据前缀和矩阵搬运内存，实现删除和恢复padding。
-
-ByteTransformer在此基础上对self attention部分的padding做了优化。
-
-https://zhuanlan.zhihu.com/p/139255930
-
-使用EffectiveTransformer加速BERT
-
-https://www.thepaper.cn/newsDetail_forward_23343189
-
-大幅优化推理过程，字节高性能Transformer推理库获IPDPS 2023最佳论文奖

@@ -96,6 +96,22 @@ $$\omega^{(i)}=\exp\left(-\frac{(x^{(i)}-x)^2}{2\tau^2}\right)$$
 
 回归分析是找出x和y之间的关系，而相关分析是找出x的各个分量之间的关系，和y并没有关系。
 
+## R-squared
+
+R²（R-squared）是回归分析中最常用的拟合优度指标。
+
+公式：
+
+$$R^{2} = \frac{SSR}{SST} = 1 - \frac{SSE}{SST} = 1 - \frac{\sum_{i}(y_{i} - \hat{y}_{i})^{2}}{\sum_{i}(y_{i} - \bar{y})^{2}}$$
+
+SSR（Sum of Squares Regression）：预测值与真实均值之差的平方和。
+
+SST（Sum of Squares Total）：真实值与真实均值之差的平方和。
+
+SSE（Sum of Squares Error）：真实值与预测值之差的平方和（残差平方和）。
+
+![](/images/img6/R-squared.png)
+
 # 分类与逻辑回归
 
 ## 二分类
@@ -240,22 +256,3 @@ $$\begin{align}p(y:\phi)&=\phi^y(1-\phi)^{1-y}=\exp(\log(\phi^y(1-\phi)^{1-y}))
 \\&=\exp(y\log(\phi)+(1-y)\log(1-\phi))
 \\&=\exp(y\log(\frac{\phi}{1-\phi})+\log(1-\phi))
 \end{align}$$
-
-可见：
-
-$$\begin{align}& b(y)=1 \\& \eta=\log(\frac{\phi}{1-\phi})\Rightarrow \phi=\frac{1}{1+e^{-\eta}} \\& T(y)=y \\& a(\eta)=-\log(1-\phi) \\\end{align}$$
-
-其中，$$\log(\frac{\phi}{1-\phi})$$被称为Logit函数，从上面的推导可看出，它和sigmoid函数是有相当深的渊源的。
-
-高斯分布到指数类分布的变换过程如下：
-
-$$\begin{align}p(y;\mu)&=\frac{1}{\sqrt{2\pi}}\exp\left(-\frac{1}{2}(y-\mu)^2\right)
-\\&=\frac{1}{\sqrt{2\pi}}\exp\left(-\frac{1}{2}y^2\right)\cdot\exp\left(\mu y-\frac{1}{2}\mu^2\right)\dot\
-\end{align}$$
-
-可见：
-
-$$\begin{align}& \eta=\mu \\& T(y)=y \\& a(\eta)=\frac{\mu^2}{2} \\& b(y)=\frac{1}{\sqrt{2\pi}}\exp\left(-\frac{1}{2}y^2\right) \\\end{align}$$
-
-除此之外，Dirichlet分布、Poisson分布、多项分布、$$\beta$$分布、$$\gamma$$分布都是指数类分布。
-

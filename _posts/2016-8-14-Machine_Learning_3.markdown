@@ -7,6 +7,26 @@ category: ML
 * toc
 {:toc}
 
+## 指数类分布（续）
+
+可见：
+
+$$\begin{align}& b(y)=1 \\& \eta=\log(\frac{\phi}{1-\phi})\Rightarrow \phi=\frac{1}{1+e^{-\eta}} \\& T(y)=y \\& a(\eta)=-\log(1-\phi) \\\end{align}$$
+
+其中，$$\log(\frac{\phi}{1-\phi})$$被称为Logit函数，从上面的推导可看出，它和sigmoid函数是有相当深的渊源的。
+
+高斯分布到指数类分布的变换过程如下：
+
+$$\begin{align}p(y;\mu)&=\frac{1}{\sqrt{2\pi}}\exp\left(-\frac{1}{2}(y-\mu)^2\right)
+\\&=\frac{1}{\sqrt{2\pi}}\exp\left(-\frac{1}{2}y^2\right)\cdot\exp\left(\mu y-\frac{1}{2}\mu^2\right)\dot\
+\end{align}$$
+
+可见：
+
+$$\begin{align}& \eta=\mu \\& T(y)=y \\& a(\eta)=\frac{\mu^2}{2} \\& b(y)=\frac{1}{\sqrt{2\pi}}\exp\left(-\frac{1}{2}y^2\right) \\\end{align}$$
+
+除此之外，Dirichlet分布、Poisson分布、多项分布、$$\beta$$分布、$$\gamma$$分布都是指数类分布。
+
 # 广义线性模型
 
 广义线性模型（Generalized Linear Model，GLM）是解决指数类分布的回归问题的通用模型。
@@ -224,17 +244,3 @@ $$\Sigma=\frac{1}{m}\sum_{i=1}^m(x^{(i)}-\mu_{y^{(i)}})(x^{(i)}-\mu_{y^{(i)}})^T
 
 上图中的直线就是分界线$$p(y=1\mid x)=0.5$$。
 
-## GDA vs 逻辑回归
-
-$$\begin{align}p(y=1\mid x)&=\frac{p(x\mid y=1)p(y=1)}{p(x\mid y=1)p(y=1)+p(x\mid y=0)p(y=0)}
-\\&=\frac{\frac{1}{A}\exp(f(\mu_0,\Sigma,x))\phi}{\frac{1}{A}\exp(f(\mu_0,\Sigma,x))\phi + \frac{1}{A}\exp(f(\mu_1,\Sigma,x))(1-\phi)}
-\\&=\frac{1}{1+\frac{\exp(f(\mu_1,\Sigma,x))(1-\phi)}{\exp(f(\mu_0,\Sigma,x))\phi}}
-\\&=\frac{1}{1+\exp(f(\mu_1,\Sigma,x)+\log(1-\phi)-f(\mu_0,\Sigma,x)-\log(\phi))}
-\\&=\frac{1}{1+\exp(-\theta^Tx)}
-\end{align}$$
-
-从上面的变换可以看出，GDA是逻辑回归的特例。
-
-一般来说，GDA的条件比逻辑回归严格。因此，如果模型符合GDA的话，采用GDA方法，收敛速度（指所需训练集的数量）比较快。
-
-而逻辑回归的鲁棒性较好，对于非GDA模型或者模型不够准确的情况，仍能收敛。

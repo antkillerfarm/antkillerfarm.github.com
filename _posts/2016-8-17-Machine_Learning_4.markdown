@@ -7,6 +7,21 @@ category: ML
 * toc
 {:toc}
 
+## GDA vs 逻辑回归
+
+$$\begin{align}p(y=1\mid x)&=\frac{p(x\mid y=1)p(y=1)}{p(x\mid y=1)p(y=1)+p(x\mid y=0)p(y=0)}
+\\&=\frac{\frac{1}{A}\exp(f(\mu_0,\Sigma,x))\phi}{\frac{1}{A}\exp(f(\mu_0,\Sigma,x))\phi + \frac{1}{A}\exp(f(\mu_1,\Sigma,x))(1-\phi)}
+\\&=\frac{1}{1+\frac{\exp(f(\mu_1,\Sigma,x))(1-\phi)}{\exp(f(\mu_0,\Sigma,x))\phi}}
+\\&=\frac{1}{1+\exp(f(\mu_1,\Sigma,x)+\log(1-\phi)-f(\mu_0,\Sigma,x)-\log(\phi))}
+\\&=\frac{1}{1+\exp(-\theta^Tx)}
+\end{align}$$
+
+从上面的变换可以看出，GDA是逻辑回归的特例。
+
+一般来说，GDA的条件比逻辑回归严格。因此，如果模型符合GDA的话，采用GDA方法，收敛速度（指所需训练集的数量）比较快。
+
+而逻辑回归的鲁棒性较好，对于非GDA模型或者模型不够准确的情况，仍能收敛。
+
 ## 互不相容事件、独立事件与条件独立事件
 
 如果$$P(AB)=0$$，则事件A、B为互不相容事件。

@@ -7,7 +7,33 @@ category: DL acceleration
 * toc
 {:toc}
 
-# 概述
+# 概述（续）
+
+## 并行性的粒度
+
+细粒度并行：
+
+- 计算量不要过大，这样每个线程都有足够的工作可做。
+
+- 尽可能减少在数据同步上的开销，这样每个线程能够独立的完成自己的任务。
+
+- 负载的划分也很重要，因为有大量的独立任务需要并行执行，设计良好的任务调度器都能灵活控制负载，并保证在多任务运行的同时，让线程上的达到均衡。
+
+粗粒度并行：
+
+- 计算量肯定要高于细粒度并行时的计算量，因为不会像细粒度并行那样，有很多线程同时执行。
+
+- 编程者使用粗粒度编程时，需要了解应用的整体结构，让粗粒度中的每个线程作为任务，服务于应用。
+
+通常来说，上层App（当同步和通讯的开销大于计算）一般采用粗粒度并行，而底层算子（比如CUDA/OpenCL）采用细粒度并行。
+
+## 并行的层级
+
+指令并行、线程并行、单机多卡并行、集群并行。
+
+https://zhuanlan.zhihu.com/p/381978470
+
+一文读懂Pod（集群）
 
 ## 数据并行 & 模型并行
 
@@ -207,38 +233,3 @@ allgather操作常见的有两种实现方式：Recursive Doubling和Bruck算法
 它的作用相当于分布式AllReduce+Shard操作。它的对偶操作是：Allgather。
 
 ReduceScatter操作有两种实现方式：Recursive Halving和Pairwise Exchange。
-
-## Alltoall
-
-![](/images/img4/all-to-all-collective.png)
-
-`MPI_Alltoall`的工作方式是`MPI_Scatter`和`MPI_Gather`的组合。它的用途之一就是上图所示的数据的行列转置,但它比转置要灵活的多。
-
-## groups
-
-以上这些操作都涉及了多个计算节点。执行同一操作的多个节点组成一个group。
-
-group里包含了相关的节点的id，如果group为null，则该操作会在整个计算集群上执行。两个group可以进行交集、并集之类的集合运算，生成新的group。
-
-## 总结
-
-```cpp
-ScatterGather(SrcIDRange,SrcAddr,DstIDRange,DstAddr,UnitSize,TotalSize)
-When there is only one source and UnitSize = TotalSize, it is a Broadcast
-When there is only one source and UnitSize != TotalSize, it is a Scatter
-When there is only one destination and UnitSize = TotalSize, it is a Gather
-When UnitSize = TotalSize and there are multiple sources and destinations, it is a AllGather operation
-When UnitSize != TotalSize and there are multiple sources and destinations, it is a All-to-All operation
-```
-
-从上面可以看出，除了Reduce一系的操作之外，其他的都可以总结为Scatter+Gather。
-
-Scatter也被称为One-to-all，Gather也被称为All-to-one。
-
-## AllReduce
-
-AllReduce有多种具体的实现方式。
-
-- Ring AllReduce：
-
-![](/images/img4/Ring_AllReduce.jpg)

@@ -1,15 +1,48 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（三）——tf.distribute & MultiDevice, Pipeline Parallel
+title:  并行 & 框架 & 优化（三）——tf.distribute & MultiDevice
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# MPI
+# MPI（续）
 
-## AllReduce（续）
+## Alltoall
+
+![](/images/img4/all-to-all-collective.png)
+
+`MPI_Alltoall`的工作方式是`MPI_Scatter`和`MPI_Gather`的组合。它的用途之一就是上图所示的数据的行列转置,但它比转置要灵活的多。
+
+## groups
+
+以上这些操作都涉及了多个计算节点。执行同一操作的多个节点组成一个group。
+
+group里包含了相关的节点的id，如果group为null，则该操作会在整个计算集群上执行。两个group可以进行交集、并集之类的集合运算，生成新的group。
+
+## 总结
+
+```cpp
+ScatterGather(SrcIDRange,SrcAddr,DstIDRange,DstAddr,UnitSize,TotalSize)
+When there is only one source and UnitSize = TotalSize, it is a Broadcast
+When there is only one source and UnitSize != TotalSize, it is a Scatter
+When there is only one destination and UnitSize = TotalSize, it is a Gather
+When UnitSize = TotalSize and there are multiple sources and destinations, it is a AllGather operation
+When UnitSize != TotalSize and there are multiple sources and destinations, it is a All-to-All operation
+```
+
+从上面可以看出，除了Reduce一系的操作之外，其他的都可以总结为Scatter+Gather。
+
+Scatter也被称为One-to-all，Gather也被称为All-to-one。
+
+## AllReduce
+
+AllReduce有多种具体的实现方式。
+
+- Ring AllReduce：
+
+![](/images/img4/Ring_AllReduce.jpg)
 
 - Having-Doubling AllReduce：
 
@@ -240,45 +273,3 @@ gpu::CopyBufferToDevice -> Stream::ThenMemcpy
 graphcore的实现没有动`GenericTransferManager`，而是自己单独弄了一套基于`TranslatedFeedInfo`类的cache机制。
 
 tensorflow/compiler/plugin/poplar/driver/poplar_executable_cache.cc
-
-# Pipeline Parallel
-
-![](/images/img5/PP.png)
-
-右上图一般称为朴素流水线并行，该方案在任意给定时刻，除了一个GPU之外的其他所有GPU都是空闲的。
-
-所以就有了Micro-batch Pipeline Parallel。将Batch数据分成N份，每次算完1份，就将输出交给下一个GPU，同时开始处理下1个Micro-batch的数据。这里的N一般被称为chunks。
-
-注：模型经过拆分后的上一个rank的stage需要长期持续处于空闲状态，等待其他rank的stage计算完成，才可以开始计算，这极大降低了设备的平均使用率。这种现象被称为并行空泡（Parallelism Bubble）。
-
-![](/images/img5/bubble.jpg)
-
-上图这种最简单的Mini-batch Pipeline Parallel，一般称为F-then-B模式，先进行前向计算，再进行反向计算。
-
-1F1B（One Forward pass followed by One Backward pass）模式，一种前向计算和反向计算交叉进行的方式。在1F1B模式下，前向计算和反向计算交叉进行，可以及时释放不必要的中间变量。
-
-![](/images/img5/1F1B.png)
-
-使用1F1B策略时，存在两种调度模式：非交错调度和交错式调度。
-
-![](/images/img5/1F1B_2.png)
-
-所谓交错式调度，就是在第一个batch（上图中包含4个mini-batch）的F和B还没有完成的情况下，就开始计算第二个batch的mini-batch了。
-
-![](/images/img6/DualPipe.png)
-
-上图是DeepSeek-V3提出的DualPipe的示意图。两组batch同时进入流水线调度，用双倍的存储，换取利用率的提高。
-
-参考：
-
-https://zhuanlan.zhihu.com/p/618590870
-
-大模型训练Pipeline Parallel流水并行性能分析
-
-https://zhuanlan.zhihu.com/p/653860567
-
-流水线并行
-
-https://www.cnblogs.com/rossiXYZ/p/15318574.html
-
-PyTorch流水线并行实现
