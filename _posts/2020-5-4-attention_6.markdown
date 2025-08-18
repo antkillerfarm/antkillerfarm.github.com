@@ -1,13 +1,59 @@
 ---
 layout: post
-title:  Attention（六）——State Space Model, RWKV
+title:  Attention（六）——Attention in CV & RS, State Space Model
 category: Attention 
 ---
 
 * toc
 {:toc}
 
-# Attention in CV & RS（续）
+# Linformer
+
+https://mp.weixin.qq.com/s/IOc-gxOa6a415Hf1VBmiQw
+
+“Linformer”拍了拍“被吊打Transformers的后浪们”
+
+https://mp.weixin.qq.com/s/cDQW5992hTaeGoA7zL7Vzg
+
+Linformer: 线性复杂度的Attention
+
+Self-Attention 加速方法一览：ISSA、CCNet、CGNL、Linformer
+
+# Attention in CV & RS
+
+《Attention Mechanisms in Computer Vision: A Survey》
+
+https://github.com/MenghaoGuo/Awesome-Vision-Attentions
+
+![](/images/img4/Attention.png)
+
+和Normalization一样，Attention应用于CV领域也有不同的花式。
+
+![](/images/img4/Attention_2.png)
+
+![](/images/img4/Attention_3.png)
+
+![](/images/img4/Attention_4.png)
+
+## ViT
+
+上面这些主要还局限于Layer级别的替换，在这里Attention无非是Conv的平替而已。
+
+而下面的ViT则是从体系层面对CNN的一种颠覆了。
+
+![](/images/img5/ViT.png)
+
+ViT借鉴了NLP的一些做法，将图片分成若干小块，每一块就是一个词向量。这样就把一个CV问题变成了NLP问题。
+
+--
+
+ViViT在ViT的基础上增加时间维度以处理视频。
+
+---
+
+![](/images/img5/U-ViT.png)
+
+U-ViT = U-Net + ViT
 
 ## Masked Autoencoders
 
@@ -343,37 +389,3 @@ SSM的问题在于其中的矩阵A、B、C不随输入不同而不同，即无�
 transformer中的FFN+GLU，被Conv取代，位置也有调整。
 
 ![](/images/img5/Mamba_3.png)
-
-https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mamba-and-state
-
-A Visual Guide to Mamba and State Space Models
-
-https://blog.csdn.net/v_JULY_v/article/details/134923301
-
-一文通透想颠覆Transformer的Mamba：从SSM、HiPPO、S4到Mamba
-
-https://blog.csdn.net/v_JULY_v/article/details/140131413
-
-一文通透mamba2：力证Transformer are SSM——从SSM、半可分矩阵、SSD到mamba2
-
-https://blog.csdn.net/v_JULY_v/article/details/144317440
-
-一文速览mamba的各种变体与改进：从MoE-Mamba、Vision Mamba、VMamba、Jamba到Falcon Mamba
-
-# RWKV
-
-## Linear Transformer
-
-![](/images/img5/Linear_Transformer.png)
-
-Linear Transformer将QKV的左乘变成右乘，从⽽将理论计算复杂度降为线性。在一般的NLP任务中，一个Head d的特征维度总是比输入序列长度N小得多的。
-
-Linear Transformer对于softmax的处理比较复杂，大体思路和FlashAttention差不多，也是局部求和的模式。
-
-## Attention free transformer
-
-![](/images/img5/AFT.jpg)
-
-https://www.cnblogs.com/tuyuge/p/17407771.html
-
-Attention free transformer

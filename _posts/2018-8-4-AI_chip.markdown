@@ -103,6 +103,10 @@ https://zhuanlan.zhihu.com/p/3326989452
 
 简单谈谈Google TPUv6
 
+https://zhuanlan.zhihu.com/p/1933648489704818615
+
+TPUv4深度解析
+
 ---
 
 https://www.zhihu.com/answer/2716117809

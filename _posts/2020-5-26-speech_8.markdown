@@ -304,3 +304,53 @@ https://zhuanlan.zhihu.com/p/559429803
 https://blog.csdn.net/vn9PLgZvnPs1522s82g/article/details/106152333
 
 从HEVC到通用视频编码的下一代视频压缩技术
+
+# NVLink+
+
+## NCCL
+
+NCCL是Nvidia Collective multi-GPU Communication Library的简称，它是一个实现多GPU的collective communication通信库，可以在PCIe、Nvlink、InfiniBand上实现较高的通信速度。
+
+官方文档：
+
+https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/index.html
+
+nccl v1：支持单机多卡通信，不支持多机通信。
+
+nccl v2：支持多机通信。
+
+参考：
+
+https://www.zhihu.com/question/63219175
+
+如何理解Nvidia英伟达的Multi-GPU多卡通信框架NCCL？
+
+https://zhuanlan.zhihu.com/p/364816069
+
+NCCL--GPU的collective communication通信技术
+
+https://blog.csdn.net/TH_NUM/article/details/81479317
+
+nvidia-nccl学习笔记
+
+https://developer.nvidia.com/blog/fast-multi-gpu-collectives-nccl/
+
+Fast Multi-GPU collectives with NCCL
+
+https://zhuanlan.zhihu.com/p/701623664
+
+由A800平台训练InternLM-7B无法收敛引发的思考
+
+## 参考
+
+https://www.infoq.cn/article/3D4MsRVS8ZOtGCj7*krT
+
+GPU通信技术初探
+
+https://zhuanlan.zhihu.com/p/67785062
+
+不止显卡！这些硬件因素也影响着你的深度学习模型性能
+
+https://zhuanlan.zhihu.com/p/680702927
+
+NVLink发展概述

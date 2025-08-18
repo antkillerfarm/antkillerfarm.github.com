@@ -93,6 +93,8 @@ The gratitude – of all our people, of our entire state – to every warrior an
 
 普京只有两个真正的“盟友”——恐怖与冬天。我们必须对两者作出回应。
 
+任何不利于我们的决定，任何没有乌克兰的决定，都是反对和平的决定，他们不会取得任何成果。
+
 ---
 
 乌克兰著名演员出席金球奖并发言。

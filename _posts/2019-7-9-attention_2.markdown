@@ -31,6 +31,8 @@ $$head_i = Attention(\boldsymbol{Q}\boldsymbol{W}_i^Q,\boldsymbol{K}\boldsymbol{
 
 所谓“多头”（Multi-Head），就是指多做几次同样的事情（参数不共享），然后把结果拼接。
 
+Scaled Dot-Product Attention前后的Linear运算也被称为QKV proj和O proj。为了加速运算，QKV各自的proj一般会被合并为一个大的Linear运算。
+
 https://www.zhihu.com/question/446385446
 
 BERT中，multi-head 768 x 64 x 12与直接使用768 x 768矩阵统一计算，有什么区别？
@@ -245,35 +247,3 @@ https://mp.weixin.qq.com/s/xr_1ZYbvADMMwgxLEAflCw
 https://mp.weixin.qq.com/s/Nyq_36aFmQYRWdpgbgxpuA
 
 将注意力机制引入RNN，解决5大应用领域的序列预测问题
-
-https://mp.weixin.qq.com/s/g2PcmsDW9ixUCh_yP8W-Vg
-
-各类Seq2Seq模型对比及《Attention Is All You Need》中技术详解
-
-https://mp.weixin.qq.com/s/FtI94xY6a8TEvFCHfjMnmA
-
-小组讨论谷歌机器翻译Attention is All You Need
-
-https://mp.weixin.qq.com/s/SqIMkiP1IZMGWzwZWGOI7w
-
-谈谈神经网络的注意机制和使用方法
-
-https://mp.weixin.qq.com/s/EMCZHuvk5dOV_Rz00GkJMA
-
-近年火爆的Attention模型，它的套路这里都有！
-
-https://zhuanlan.zhihu.com/p/27464080
-
-从《Convolutional Sequence to Sequence Learning》到《Attention Is All You Need》
-
-http://www.cnblogs.com/robert-dlut/p/8638283.html
-
-自然语言处理中的自注意力机制！
-
-https://mp.weixin.qq.com/s/sAYOXEjAdA91x3nliHNX8w
-
-Attention模型方法综述
-
-https://mp.weixin.qq.com/s/MZ8qSQzXqZQPQa97BKitHA
-
-深入理解注意力机制

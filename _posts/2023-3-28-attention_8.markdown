@@ -9,6 +9,62 @@ category: Attention
 
 # BERT进阶（续）
 
+https://zhuanlan.zhihu.com/p/62308732
+
+浅谈Bert：语言理解中的预训练编码器
+
+https://mp.weixin.qq.com/s/1Cz6js4kYdvc8g4oKjVPeA
+
+BERT烹饪之法：fintune的艺术
+
+https://mp.weixin.qq.com/s/nVM2Kxc_Mn7BAC6-Pig2Uw
+
+BERT模型的标准调优和花式调优
+
+https://mp.weixin.qq.com/s/FwmEIZ3ugeZBbLIGHmH-_g
+
+BERT之后，GLUE基准升级为SuperGLUE：难度更大
+
+https://mp.weixin.qq.com/s/SDVxn3Ra1dKmr-XgKNg5IA
+
+罗玲：From Word Representation to BERT
+
+https://mp.weixin.qq.com/s/-bh8BL4LxnevS8xnW5U9ZA
+
+中科院自动化所提出BIFT模型：面向自然语言生成，同步双向推断
+
+https://mp.weixin.qq.com/s/7yCnAHk6x0ICtEwBKxXpOw
+
+序列到序列自然语言生成任务超越BERT、GPT！微软提出通用预训练模型MASS
+
+https://mp.weixin.qq.com/s/7sIUaSON53hsXUJjq8uVUA
+
+马聪：NLP中的生成式预训练模型
+
+https://mp.weixin.qq.com/s/Jrs8okgVAh0fymIq-jCqgA
+
+模型压缩与蒸馏！BERT的忒修斯船
+
+https://mp.weixin.qq.com/s/UNHu1eVNorWWKbDb0XBJcA
+
+模型压缩与蒸馏！BERT家族的瘦身之路
+
+https://mp.weixin.qq.com/s/oD_Vibp4Ygraix23K_oV2Q
+
+BERT在58搜索的实践
+
+https://mp.weixin.qq.com/s/bqvEeCyX8pqhJQfCUvUkEw
+
+图解BERT：通俗的解释BERT是如何工作的
+
+https://mp.weixin.qq.com/s/yPq1cGnhcbaNLOjadj91pw
+
+Bert时代的创新：Bert在NLP各领域的应用进展
+
+https://mp.weixin.qq.com/s/l-de0vfx-L24g58IxK-NKQ
+
+Jeff Dean强推：可视化Bert网络，发掘其中的语言、语法树与几何学
+
 https://mp.weixin.qq.com/s/nlFXfgM5KKZXnPdwd97JYg
 
 哈工大讯飞联合实验室发布基于全词覆盖的中文BERT预训练模型
@@ -354,59 +410,3 @@ https://mp.weixin.qq.com/s/eq1iTyKguQm5t6Xoc7KUgw
 https://zhuanlan.zhihu.com/p/106662375
 
 More About Attention
-
-https://mp.weixin.qq.com/s/MFxQSUMFNRXjdLQwzveO4w
-
-深度学习中的注意力机制
-
-https://mp.weixin.qq.com/s/vkyPwsaxH-SvHqQx09VhVw
-
-深度学习中的注意力机制（二）
-
-https://mp.weixin.qq.com/s/fbAAA7fO2voP_v-NsavQew
-
-深度学习中的注意力机制（三）
-
-https://mp.weixin.qq.com/s/CftkSOmAx0UTtCixdxj6_A
-
-深度学习中的注意力机制（完结篇）
-
-https://mp.weixin.qq.com/s/Qs6tm50YvzHaJv2rh60WMw
-
-撩一发深度文本分类之RNN via Attention
-
-https://mp.weixin.qq.com/s/MMIZGHTKM5FrvNE6ucQRYQ
-
-33页最新《自然语言处理中神经注意力机制综述》论文
-
-https://mp.weixin.qq.com/s/Q0Ft5bWTuiZUIQSTk7X6ZQ
-
-图解神经机器翻译中的注意力机制
-
-https://mp.weixin.qq.com/s/D7GQ8DRzss9ppP6pyAs1qA
-
-从0到1再读注意力机制
-
-https://mp.weixin.qq.com/s/K_VRt0B9-Xw7YJndmb4WZg
-
-Attention！注意力机制模型最新综述
-
-https://mp.weixin.qq.com/s/hzwp5oGspdtDyNBmq8sMsw
-
-HAN：基于双层注意力机制的异质图深度神经网络
-
-https://mp.weixin.qq.com/s/SBrLPZjx2RdBwZpPQQ5DXQ
-
-HAN：异构图注意力网络
-
-https://mp.weixin.qq.com/s/0EDN-ILeL_diZ1G11ikwjw
-
-T5模型：NLP Text-to-Text预训练模型超大规模探索
-
-https://zhuanlan.zhihu.com/p/89719631
-
-T5: Text-to-Text Transfer Transformer阅读笔记
-
-https://mp.weixin.qq.com/s/X1mLXPzJU7k_ANMzvVPxjA
-
-BERT、RoBERTa、DistilBERT与XLNet，我们到底该如何选择？

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  拉丁美洲
+title:  拉丁美洲（一）
 category: World 
 ---
 

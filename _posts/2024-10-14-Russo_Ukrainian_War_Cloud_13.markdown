@@ -87,6 +87,8 @@ Taxes. Army. Victory
 
 Budapest Memorandun is bullshit
 
+![](/images/img6/Infantry.jpg)
+
 https://bittergrounds.com/2022s-striking-ukrainian-stamps
 
 2022年乌克兰邮票

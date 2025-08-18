@@ -31,6 +31,10 @@ https://www.zhihu.com/question/649546709
 
 内存的起源是哪里？DDR1到DDR6的区别分别是什么？
 
+https://www.zhihu.com/question/9218009141
+
+DDR5内存是如何做到速度相比DDR4实现“质的飞跃”的？
+
 ---
 
 "4F2"在DRAM Cell Structure中指的是一种存储单元的面积，其中"F"代表晶体管的特征尺寸（Feature size）。在DRAM技术发展中，4F2意味着存储单元的尺寸是特征尺寸的四倍平方。

@@ -21,6 +21,8 @@ category: Nature
 
 ![](/images/img2/rocket.jpg)
 
+![](/images/img6/SpaceX.png)
+
 https://www.zhihu.com/question/266793958
 
 如何看待SpaceX猎鹰重型火箭在美国时间2月6日发射并且回收成功？

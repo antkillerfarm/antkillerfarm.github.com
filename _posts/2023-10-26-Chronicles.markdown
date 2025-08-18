@@ -142,3 +142,37 @@ https://www.zhihu.com/question/440932864
 https://www.zhihu.com/question/488709465
 
 派遣一支特种部队穿越古代击杀皇帝，难度大不大？
+
+# 国产半导体+
+
+## 真假自研（续）
+
+飞腾找台湾世芯代理设计，但因飞腾参与超算建设上了美国黑名单，台湾世芯宁可承受损失也不再继续提供设计服务。
+
+飞腾的通用CPU单核性能变化像是过山车，因为它的FT-1000和FT-1500是基于SUN开源的UltraSPARC T2核心，2007年时的UltraSPARC T2可与Intel至强一较高下。飞腾在投靠ARM之后，CPU性能反而降低了。
+
+飞腾多核互联和多路互联的技术较强，只是在ARM推出原生的互联方案之后，飞腾的研究成果也成了鸡肋。
+
+---
+
+其实Litho这套体系，无论在哪国都要遵循物理规律，无论谁学物理都是同一套光学、同一套固体物理，不存在某国特色物理学，自然也就没什么弯道超车的大戏给你看。
+
+在KrF，甚至汞灯机都要进口的情况下，是怎么突然就拿出ArFd的？
+
+## Russia CPU
+
+俄罗斯设计通用CPU的企业主要有两家，一家是莫斯科SPARC技术中心(MCST)，另一家是贝加尔电子公司(Baikal Electronics)。
+
+莫斯科SPARC技术中心是俄罗斯自主研发CPU的代表，研发了Elbrus系列产品。
+
+贝加尔电子公司推出的Baikal系列CPU都是外购的CPU核心设计，再自行与其它的外购IP进行集成，与我们的国产手机CPU是相同的路线。
+
+https://mp.weixin.qq.com/s/Ud4f5L2tYNbP1oURVBszag
+
+俄罗斯自研Elbrus CPU参数曝光，CEO年近九旬仍未退休
+
+>Boris Babayan，1933年生，俄罗斯科学院院士，Intel院士。俄罗斯CPU之父。Elbrus系列超算和通用CPU的主要研发者，1978年他率领团队研发出世界第一台超标量计算机Elbrus-1，整整领先西方世界十三年。
+
+https://zhuanlan.zhihu.com/p/549196030
+
+甭怂，奣烎，国产通用CPU比俄罗斯勥

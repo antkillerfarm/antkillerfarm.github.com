@@ -189,6 +189,10 @@ https://zhuanlan.zhihu.com/p/26039650478
 
 马里乌波尔是乌克兰的“列宁格勒”，亚速钢铁厂是马里乌波尔的“四行仓库”。
 
+![](/images/img6/Mariupol.jpg)
+
+Ukraine Cities of Heores: Mariupol
+
 ---
 
 马里乌波尔比想象中要古老得多。几千年前，新石器时代晚期，即公元前5200—5500年，这里就出现了第一批定居点。

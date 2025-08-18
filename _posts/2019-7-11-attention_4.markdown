@@ -1,13 +1,43 @@
 ---
 layout: post
-title:  Attention（四）——BERT, ELMo, GPT
+title:  Attention（四）——预训练语言模型进化史, BERT, ELMo
 category: Attention 
 ---
 
 * toc
 {:toc}
 
-# 预训练语言模型进化史（续）
+# Transformer（续）
+
+https://mp.weixin.qq.com/s/RrIUxwkRaGxzJo0hIx3SIA
+
+TTSR：用Transformer来实现端到端的超分辨率任务
+
+https://mp.weixin.qq.com/s/N1I4mGKzsHJiAluZL17sDQ
+
+Transformers是一种图神经网络
+
+https://mp.weixin.qq.com/s/mFqkCfzmWi7pxelC1vMJBQ
+
+nlp中的Attention注意力机制+Transformer详解
+
+https://zhuanlan.zhihu.com/p/648127076
+
+三万字最全解析！从零实现Transformer
+
+# 预训练语言模型进化史
+
+![](/images/img3/Sesame_Street.jpg)
+
+Sesame Street（芝麻街）是是美国公共广播协会（PBS）制作播出的儿童教育电视节目，该节目于1969年11月10日在全国教育电视台（PBS的前身）上首次播出。它是迄今为止，获得艾美奖奖项最多的一个儿童节目。
+
+从ELMO开始，一系列的预训练语言模型皆以该剧中的角色命名，甚至ERNIE还有清华和百度两个版本。。。
+
+![](/images/img3/BERT.jpg)
+
+![](/images/img3/PTM.jpg)
+
+![](/images/img3/PTM.png)
 
 - 传统word2vec无法解决一词多义，语义信息不够丰富，诞生了ELMO。
 - ELMO以lstm堆积，串行且提取特征能力不够，诞生了GPT。
@@ -301,45 +331,3 @@ https://mp.weixin.qq.com/s/i7EJSNzDsNNbK2YA_YNu8g
 https://mp.weixin.qq.com/s/qbXZGiKYEuTI-2l4iYZlbQ
 
 图文并茂带你细致了解ELMo的各种细节
-
-# GPT
-
-GPT-1论文：
-
-《Improving Language Understandingby Generative Pre-Training》
-
-GPT-2论文：
-
-《Language Models are Unsupervised Multitask Learners》
-
-![](/images/img3/GPT.png)
-
-Jay Alammar的教程：
-
-https://jalammar.github.io/illustrated-gpt2/
-
----
-
-PadMasking：在处理不等长的序列时，通常需要用特定的填充符号（如0）将它们填充到相同的长度。该掩码有助于模型识别哪些部分是填充，从而在训练和推理过程中忽略这些部分。
-
-FutureMasking：该掩码用于确保在预测每个位置的输出时，模型只能使用该位置之前的输入（即避免使用未来的信息）。
-
----
-
-参考：
-
-https://mp.weixin.qq.com/s/E7FLbXYvE9irSpJ9Cdx5tg
-
-GLUE排行榜上全面超越BERT的模型近日公布了
-
-https://mp.weixin.qq.com/s/ZitIqX-9MNk6L1mAC_AwBQ
-
-OpenAI发布参数量高达15亿的通用语言模型GPT-2
-
-https://mp.weixin.qq.com/s/7u_W4LTYqQBmz3geux5QNQ
-
-对标Bert？刷屏的GPT 2.0意味着什么
-
-https://mp.weixin.qq.com/s/1GIQGBwciP22CZvFxhmLzA
-
-如何构建OpenAI的GPT 2：“太危险而无法释放的人工智能”

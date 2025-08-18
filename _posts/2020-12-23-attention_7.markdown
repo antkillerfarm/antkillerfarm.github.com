@@ -1,13 +1,47 @@
 ---
 layout: post
-title:  Attention（七）——BERT进阶（1）
+title:  Attention（七）——RWKV, BERT进阶（1）
 category: Attention 
 ---
 
 * toc
 {:toc}
 
-# RWKV（续）
+# State Space Model（续）
+
+https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mamba-and-state
+
+A Visual Guide to Mamba and State Space Models
+
+https://blog.csdn.net/v_JULY_v/article/details/134923301
+
+一文通透想颠覆Transformer的Mamba：从SSM、HiPPO、S4到Mamba
+
+https://blog.csdn.net/v_JULY_v/article/details/140131413
+
+一文通透mamba2：力证Transformer are SSM——从SSM、半可分矩阵、SSD到mamba2
+
+https://blog.csdn.net/v_JULY_v/article/details/144317440
+
+一文速览mamba的各种变体与改进：从MoE-Mamba、Vision Mamba、VMamba、Jamba到Falcon Mamba
+
+# RWKV
+
+## Linear Transformer
+
+![](/images/img5/Linear_Transformer.png)
+
+Linear Transformer将QKV的左乘变成右乘，从⽽将理论计算复杂度降为线性。在一般的NLP任务中，一个Head d的特征维度总是比输入序列长度N小得多的。
+
+Linear Transformer对于softmax的处理比较复杂，大体思路和FlashAttention差不多，也是局部求和的模式。
+
+## Attention free transformer
+
+![](/images/img5/AFT.jpg)
+
+https://www.cnblogs.com/tuyuge/p/17407771.html
+
+Attention free transformer
 
 ## RWKV
 
@@ -286,59 +320,3 @@ Attention isn’t all you need！BERT的力量之源远不止注意力
 https://mp.weixin.qq.com/s/Y2bs2QegRadSR7lbiFFnWg
 
 BERT一作Jacob Devlin斯坦福演讲PPT：BERT介绍与答疑
-
-https://zhuanlan.zhihu.com/p/62308732
-
-浅谈Bert：语言理解中的预训练编码器
-
-https://mp.weixin.qq.com/s/1Cz6js4kYdvc8g4oKjVPeA
-
-BERT烹饪之法：fintune的艺术
-
-https://mp.weixin.qq.com/s/nVM2Kxc_Mn7BAC6-Pig2Uw
-
-BERT模型的标准调优和花式调优
-
-https://mp.weixin.qq.com/s/FwmEIZ3ugeZBbLIGHmH-_g
-
-BERT之后，GLUE基准升级为SuperGLUE：难度更大
-
-https://mp.weixin.qq.com/s/SDVxn3Ra1dKmr-XgKNg5IA
-
-罗玲：From Word Representation to BERT
-
-https://mp.weixin.qq.com/s/-bh8BL4LxnevS8xnW5U9ZA
-
-中科院自动化所提出BIFT模型：面向自然语言生成，同步双向推断
-
-https://mp.weixin.qq.com/s/7yCnAHk6x0ICtEwBKxXpOw
-
-序列到序列自然语言生成任务超越BERT、GPT！微软提出通用预训练模型MASS
-
-https://mp.weixin.qq.com/s/7sIUaSON53hsXUJjq8uVUA
-
-马聪：NLP中的生成式预训练模型
-
-https://mp.weixin.qq.com/s/Jrs8okgVAh0fymIq-jCqgA
-
-模型压缩与蒸馏！BERT的忒修斯船
-
-https://mp.weixin.qq.com/s/UNHu1eVNorWWKbDb0XBJcA
-
-模型压缩与蒸馏！BERT家族的瘦身之路
-
-https://mp.weixin.qq.com/s/oD_Vibp4Ygraix23K_oV2Q
-
-BERT在58搜索的实践
-
-https://mp.weixin.qq.com/s/bqvEeCyX8pqhJQfCUvUkEw
-
-图解BERT：通俗的解释BERT是如何工作的
-
-https://mp.weixin.qq.com/s/yPq1cGnhcbaNLOjadj91pw
-
-Bert时代的创新：Bert在NLP各领域的应用进展
-
-https://mp.weixin.qq.com/s/l-de0vfx-L24g58IxK-NKQ
-
-Jeff Dean强推：可视化Bert网络，发掘其中的语言、语法树与几何学

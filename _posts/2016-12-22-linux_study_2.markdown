@@ -152,6 +152,20 @@ https://mp.weixin.qq.com/s/ALyVaHfEfgPsT-N1KCGS3w
 
 `sudo fdisk -l`
 
+## 查看存储设备
+
+`lsblk`
+
+---
+
+![](/images/img6/LVM.png)
+
+LVM，Logical Volume Manger可以将多块硬盘看作一块大硬盘，使用逻辑卷（LV），可以创建跨越众多硬盘空间的分区。
+
+设备名示例：
+
+`/dev/mapper/vg01-lv01`
+
 ## 查看查看磁盘IO情况
 
 ### vmstat

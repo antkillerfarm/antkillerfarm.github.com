@@ -197,6 +197,10 @@ https://mp.weixin.qq.com/s/KPT4P5SQ4E4ofPdjhhjRvA
 
 - backward的时候，先算好input_grad，再col2im将之变换到input的形状即可。
 
+im2col的缺点在于input的数据按照conv的规则复制了若干份，对于计算的带宽要求较大。而在NV的实现中，input只需要保存一份，使用mask来选择需要被conv的数据，从而节省了带宽。
+
+---
+
 和GEMM类似的还有GEMV（General Matrix Vector multiplication）。
 
 GEMM的公式是：

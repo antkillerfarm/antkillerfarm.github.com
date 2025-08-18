@@ -205,6 +205,16 @@ https://zhuanlan.zhihu.com/p/597036814
 
 ---
 
+https://github.com/davidkimai/Context-Engineering
+
+一个关于Context Engineering的项目
+
+https://www.promptingguide.ai/
+
+Prompt Engineering Guide
+
+---
+
 参考：
 
 https://mp.weixin.qq.com/s/dkNH4BLOH36B5h_UCcRLnA
@@ -226,6 +236,10 @@ Prompt-Tuning——深度解读一种新的微调范式
 https://zhuanlan.zhihu.com/p/615277009
 
 总结开源可用的Instruct/Prompt Tuning数据
+
+https://zhuanlan.zhihu.com/p/1938967453951571269
+
+Context Engineering，一篇就够了
 
 # 无监督/半监督/自监督深度学习
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（三）——Transformer, 预训练语言模型进化史
+title:  Attention（三）——Transformer
 category: Attention 
 ---
 
@@ -8,6 +8,38 @@ category: Attention
 {:toc}
 
 # 花式Attention（续）
+
+https://mp.weixin.qq.com/s/g2PcmsDW9ixUCh_yP8W-Vg
+
+各类Seq2Seq模型对比及《Attention Is All You Need》中技术详解
+
+https://mp.weixin.qq.com/s/FtI94xY6a8TEvFCHfjMnmA
+
+小组讨论谷歌机器翻译Attention is All You Need
+
+https://mp.weixin.qq.com/s/SqIMkiP1IZMGWzwZWGOI7w
+
+谈谈神经网络的注意机制和使用方法
+
+https://mp.weixin.qq.com/s/EMCZHuvk5dOV_Rz00GkJMA
+
+近年火爆的Attention模型，它的套路这里都有！
+
+https://zhuanlan.zhihu.com/p/27464080
+
+从《Convolutional Sequence to Sequence Learning》到《Attention Is All You Need》
+
+http://www.cnblogs.com/robert-dlut/p/8638283.html
+
+自然语言处理中的自注意力机制！
+
+https://mp.weixin.qq.com/s/sAYOXEjAdA91x3nliHNX8w
+
+Attention模型方法综述
+
+https://mp.weixin.qq.com/s/MZ8qSQzXqZQPQa97BKitHA
+
+深入理解注意力机制
 
 https://mp.weixin.qq.com/s/s8sKoTzqyf-_-N0TSLnPow
 
@@ -338,33 +370,3 @@ https://mp.weixin.qq.com/s/JpBds6NQIBZ0S8GsMo4LEA
 https://mp.weixin.qq.com/s/R5jqk1ow_3cKLzM1XlDbUg
 
 告别自注意力，谷歌为Transformer打造新内核Synthesizer
-
-https://mp.weixin.qq.com/s/RrIUxwkRaGxzJo0hIx3SIA
-
-TTSR：用Transformer来实现端到端的超分辨率任务
-
-https://mp.weixin.qq.com/s/N1I4mGKzsHJiAluZL17sDQ
-
-Transformers是一种图神经网络
-
-https://mp.weixin.qq.com/s/mFqkCfzmWi7pxelC1vMJBQ
-
-nlp中的Attention注意力机制+Transformer详解
-
-https://zhuanlan.zhihu.com/p/648127076
-
-三万字最全解析！从零实现Transformer
-
-# 预训练语言模型进化史
-
-![](/images/img3/Sesame_Street.jpg)
-
-Sesame Street（芝麻街）是是美国公共广播协会（PBS）制作播出的儿童教育电视节目，该节目于1969年11月10日在全国教育电视台（PBS的前身）上首次播出。它是迄今为止，获得艾美奖奖项最多的一个儿童节目。
-
-从ELMO开始，一系列的预训练语言模型皆以该剧中的角色命名，甚至ERNIE还有清华和百度两个版本。。。
-
-![](/images/img3/BERT.jpg)
-
-![](/images/img3/PTM.jpg)
-
-![](/images/img3/PTM.png)

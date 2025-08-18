@@ -93,6 +93,16 @@ cute TiledMMA
 
 ---
 
+pingpong就是N=2的multi-stage，所以这个问题等价于为什么在Ampere NStage=2不够了。
+
+Warp-Specialization的优势是在计算访存流水上的调度更灵活，劣势是代码写起来更麻烦。直到Ampere它的优势都不足以让人忍受它的劣势，而Hopper上Warp-Specialization变成了一种必须要使用的技术。
+
+https://www.zhihu.com/question/11261005710
+
+为什么Hopper架构上warp-specialization比multi-stage要好？
+
+---
+
 参考：
 
 https://mp.weixin.qq.com/s/pPjPLqgXZ8iCPS42vXJpuQ

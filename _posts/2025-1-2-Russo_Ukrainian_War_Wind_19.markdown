@@ -11,6 +11,26 @@ category: Russo Ukrainian War Wind
 
 ## 凡人列传
 
+https://mp.weixin.qq.com/s/PUqFEBUN6OaGZjB-ojrMRg
+
+一个乌克兰女性的伤痛与纪念
+
+https://zhuanlan.zhihu.com/p/599209865
+
+《华尔街日报》：乌克兰义勇军的勇气和鲁莽
+
+https://zhuanlan.zhihu.com/p/600246599
+
+巴赫穆特：城郊在战斗，城里的生活还在继续
+
+https://zhuanlan.zhihu.com/p/546980660
+
+真正的俄罗斯英雄——你有勇气保护敌国的平民吗？
+
+https://zhuanlan.zhihu.com/p/613419718
+
+荣耀背后的阴影——乌克兰士兵心理问题调查
+
 https://zhuanlan.zhihu.com/p/617040010
 
 “我工作，然后我哭泣”：巴赫穆特附近疲惫不堪的乌克兰医务人员为生命而战

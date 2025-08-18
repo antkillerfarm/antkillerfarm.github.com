@@ -1,13 +1,53 @@
 ---
 layout: post
-title:  Attention（五）——ERNIE, XLNet, 轻量化Transformer, Attention in CV & RS
+title:  Attention（五）——GPT, ERNIE, XLNet, 轻量化Transformer
 category: Attention 
 ---
 
 * toc
 {:toc}
 
-# GPT（续）
+# GPT
+
+GPT-1论文：
+
+《Improving Language Understandingby Generative Pre-Training》
+
+GPT-2论文：
+
+《Language Models are Unsupervised Multitask Learners》
+
+![](/images/img3/GPT.png)
+
+Jay Alammar的教程：
+
+https://jalammar.github.io/illustrated-gpt2/
+
+---
+
+PadMasking：在处理不等长的序列时，通常需要用特定的填充符号（如0）将它们填充到相同的长度。该掩码有助于模型识别哪些部分是填充，从而在训练和推理过程中忽略这些部分。
+
+FutureMasking：该掩码用于确保在预测每个位置的输出时，模型只能使用该位置之前的输入（即避免使用未来的信息）。
+
+---
+
+参考：
+
+https://mp.weixin.qq.com/s/E7FLbXYvE9irSpJ9Cdx5tg
+
+GLUE排行榜上全面超越BERT的模型近日公布了
+
+https://mp.weixin.qq.com/s/ZitIqX-9MNk6L1mAC_AwBQ
+
+OpenAI发布参数量高达15亿的通用语言模型GPT-2
+
+https://mp.weixin.qq.com/s/7u_W4LTYqQBmz3geux5QNQ
+
+对标Bert？刷屏的GPT 2.0意味着什么
+
+https://mp.weixin.qq.com/s/1GIQGBwciP22CZvFxhmLzA
+
+如何构建OpenAI的GPT 2：“太危险而无法释放的人工智能”
 
 https://mp.weixin.qq.com/s/eJn379q9raDHY9FdWaXeKQ
 
@@ -308,51 +348,3 @@ BERT模型压缩：量化、剪枝和蒸馏
 https://zhuanlan.zhihu.com/p/576495529
 
 Fast and Effective！一文速览轻量化Transformer各领域研究进展
-
-# Linformer
-
-https://mp.weixin.qq.com/s/IOc-gxOa6a415Hf1VBmiQw
-
-“Linformer”拍了拍“被吊打Transformers的后浪们”
-
-https://mp.weixin.qq.com/s/cDQW5992hTaeGoA7zL7Vzg
-
-Linformer: 线性复杂度的Attention
-
-Self-Attention 加速方法一览：ISSA、CCNet、CGNL、Linformer
-
-# Attention in CV & RS
-
-《Attention Mechanisms in Computer Vision: A Survey》
-
-https://github.com/MenghaoGuo/Awesome-Vision-Attentions
-
-![](/images/img4/Attention.png)
-
-和Normalization一样，Attention应用于CV领域也有不同的花式。
-
-![](/images/img4/Attention_2.png)
-
-![](/images/img4/Attention_3.png)
-
-![](/images/img4/Attention_4.png)
-
-## ViT
-
-上面这些主要还局限于Layer级别的替换，在这里Attention无非是Conv的平替而已。
-
-而下面的ViT则是从体系层面对CNN的一种颠覆了。
-
-![](/images/img5/ViT.png)
-
-ViT借鉴了NLP的一些做法，将图片分成若干小块，每一块就是一个词向量。这样就把一个CV问题变成了NLP问题。
-
---
-
-ViViT在ViT的基础上增加时间维度以处理视频。
-
----
-
-![](/images/img5/U-ViT.png)
-
-U-ViT = U-Net + ViT

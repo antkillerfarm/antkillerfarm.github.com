@@ -109,6 +109,10 @@ https://zhuanlan.zhihu.com/p/713896477
 
 巴赫穆特防守战役：2022.7.3～2023.5.20
 
+![](/images/img6/Volnovakha.jpg)
+
+Cities of Heroes. Volnovakha
+
 ---
 
 ![](/images/img4/joke_4.jpg)
