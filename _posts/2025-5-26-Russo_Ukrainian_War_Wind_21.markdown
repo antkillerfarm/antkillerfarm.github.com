@@ -9,6 +9,36 @@ category: Russo Ukrainian War Wind
 
 # 俄乌战争：疾风篇
 
+## 泽连斯基语录（续）
+
+https://zhuanlan.zhihu.com/p/683770252
+
+泽连斯基在俄乌战争爆发两周年纪念日上发表讲话
+
+https://zhuanlan.zhihu.com/p/701650513
+
+泽连斯基在香格里拉对话会上的演讲
+
+https://zhuanlan.zhihu.com/p/702313362
+
+泽连斯基总统在法国国民议会的讲话（2024年6月7日）全文
+
+https://zhuanlan.zhihu.com/p/702910188
+
+为和平、欧洲和生命而奋斗是我们领导的方向，也是乌克兰人民的意志——泽连斯基总统在德国联邦议院发表讲话
+
+https://zhuanlan.zhihu.com/p/716342662
+
+泽连斯基独立日演讲：战争已重返俄罗斯，红场衰弱老人终究受海牙审判
+
+https://zhuanlan.zhihu.com/p/1916871110709998982
+
+泽连斯基：人民不是我们扔进火里的木头
+
+https://mp.weixin.qq.com/s/b05TkvA295lC8-SoMWQioA
+
+泽连斯基在乌克兰独立日的讲话
+
 ## 出基辅记
 
 司马南语录：泽连斯基害怕了，哪有胆儿啊，一个演员，战争啊，你真打起仗来，泽连斯基这个胆儿，他不敢正视普京的眼睛，普京的眼睛，他不敢看。

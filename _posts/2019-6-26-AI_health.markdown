@@ -296,25 +296,3 @@ https://mp.weixin.qq.com/s/c2jxmn7FaQ0ePY_luS2fGQ
 https://mp.weixin.qq.com/s/E6eYBob3WzuLFEuGJZSNtQ
 
 怎么知道谁动了我的Linux主机?
-
-# 并行 & 框架 & 优化参考资源+
-
-https://zhuanlan.zhihu.com/p/529388795
-
-训练千亿参数大模型，离不开四种GPU并行策略
-
-https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
-
-百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
-
-https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
-
-分布式深度学习原理、算法详细介绍
-
-https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
-
-苹果发布Turi Create机器学习框架，5行代码开发图像识别
-
-https://mp.weixin.qq.com/s/jOVUPhrCBI9W9vPvD9eKYg
-
-UC Berkeley提出新型分布式框架Ray：实时动态学习的开端

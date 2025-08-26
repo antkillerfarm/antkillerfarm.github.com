@@ -231,7 +231,11 @@ https://mp.weixin.qq.com/s/qUCfrmnXBmm5LfdeU3GgxA
 
 共和党或者是民主党的候选人后面都有一个或者数个超级PAC，比如特朗普后面有一个叫做America PAC和一个很具有懂王特色的America first action的PAC；而拜登后面有一个叫做Future forward（未来前进）的PAC，而民主党最著名的PAC叫做Priorities USA（美国优先）。
 
-濮阳人吕不韦贾于邯郸，见秦质子异人，归而谓父曰：“耕田之利几倍?”曰：“十倍。”“珠玉之赢几倍?”曰：“百倍。”“立国家之主赢几倍?”曰：“无数。”
+濮阳人吕不韦贾于邯郸，见秦质子异人，归而谓父曰：“耕田之利几倍?”曰：“十倍。”
+
+“珠玉之赢几倍?”曰：“百倍。”
+
+“立国家之主赢几倍?”曰：“无数。”
 
 https://mp.weixin.qq.com/s/dQXL6L7Ct08QaczC9rdgqA
 
