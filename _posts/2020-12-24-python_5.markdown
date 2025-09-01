@@ -9,7 +9,71 @@ category: language
 
 # Python
 
-## PDF（续）
+## SimpleHTTPServer
+
+Django比较重量级了，如果只是想发布静态网页的话，可以用：
+
+`python -m SimpleHTTPServer 7800`
+
+或者
+
+`python3 -m http.server 7800`
+
+除此之外，Flask、tornado也是较常用的Web框架。
+
+Flask底层使用的werkzeug库，是一个有名的WSGI工具包。
+
+基于python新增的async/await语法的异步Web框架，是最近的新流派，代表有：Sanic
+
+https://juejin.cn/post/6944598601674784775
+
+异步Web框架Sanic凭什么比Django Flask强？
+
+## 处理eml文件
+
+代码示例：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/misc/hello_eml.py
+
+这个示例主要使用email包来解析eml文件。
+
+同时为了处理其中的html的内容，还用到了Beautiful Soup包。其网址为：
+
+https://www.crummy.com/software/BeautifulSoup/
+
+参见：
+
+https://mp.weixin.qq.com/s/p86yvl3uAm3FXw4V9NlNoA
+
+一文带你上手Python网页抓取神器BeautifulSoup库
+
+https://mp.weixin.qq.com/s/3o_T7Tyrstur6jkj0gexMA
+
+BeautifulSoup的使用
+
+## PDF
+
+ChatPaper中提及了SciPDF Parser以及ChatPaper项目自身实现的ChatPaper Parser。
+
+代码：
+
+https://github.com/kaixindelele/ChatPaper
+
+其他工具还有nougat、ScienceBeam。
+
+---
+
+https://mp.weixin.qq.com/s/fBz__E2Xu4GC7w1Uqx5NAA
+
+手把手教你如何用Python从PDF文件中导出数据
+
+https://mp.weixin.qq.com/s/xCKC3cz7jUvrwl4uvMNKTA
+
+20行Python代码教你批量将PDF转为Word
+
+https://mp.weixin.qq.com/s/IznKbG3cEF6uxP0Fe_0oaQ
+
+印度小哥“神剑”：PDF提取表格so easy！
 
 https://mp.weixin.qq.com/s/J-H638ZzhB-GOXMeAQ9aww
 
@@ -380,60 +444,3 @@ https://zhuanlan.zhihu.com/p/22304455
 https://mp.weixin.qq.com/s/jdYiqJ98PztD7Ueu_o3Z4Q
 
 任务队列神器：Celery入门到进阶指南
-
-## tqdm
-
-tqdm是一个快速，可扩展的进度条。
-
-代码：
-
-https://github.com/tqdm/tqdm
-
-示例：
-
-```python
-from tqdm import tqdm
-for i in tqdm(range(9)):
-    ...
-```
-
-其实还有一个更简单的办法：
-
-`print("\r" + "xxx", end="")`：这样的话会先把console里面当前的行清除掉、再输出xxx。
-
-参考：
-
-https://mp.weixin.qq.com/s/1YZ7-i3X8Cb2LYEuWtd1KA
-
-给Python代码加上酷炫进度条的几种姿势
-
-https://mp.weixin.qq.com/s/OVb4g1KzIsxgMKjJk_hG6A
-
-在Python中妥善使用进度条
-
-https://mp.weixin.qq.com/s/_rCg_uFD07eZw4QLtD-fzA
-
-Python竟然能做这样的进度条
-
-https://mp.weixin.qq.com/s/nGOCderiyOXsHkMZwIgpoA
-
-酷炫的Python进度条开源库：alive-progress
-
-## 细节
-
-python有个叫做`attr`的包，还有一个叫做`attrs`的包，然而`import attr`实际上用的是`attrs`。
-
-二进制码流 -> 十六进制字符串：
-
-```python
-import binascii
-hex_digits = binascii.b2a_hex(bin_stream)
-```
-
----
-
-利用动态语言的特点，在运行时替换指定函数的代码，达到实时更改函数行为的效果，这就叫做“打Moneky Patch”。
-
-https://blog.csdn.net/yushuaigee/article/details/117031190
-
-彻底弄懂Python中的Moneky Patch

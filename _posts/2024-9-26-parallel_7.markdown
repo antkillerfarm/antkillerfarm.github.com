@@ -1,13 +1,49 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（八）——LLM System, Alpa, Batching
+title:  并行 & 框架 & 优化（八）——LLM Inference, LLM System, Alpa
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# LLM Inference（续）
+# LLM Inference
+
+A Survey on Efficient Inference for Large Language Models
+
+---
+
+https://zhuanlan.zhihu.com/p/653352979
+
+LLM七种推理服务框架总结
+
+https://zhuanlan.zhihu.com/p/671347964
+
+大模型(LLM)推理框架汇总
+
+https://zhuanlan.zhihu.com/p/642412124
+
+LLM的推理优化技术纵览
+
+https://github.com/DefTruth/Awesome-LLM-Inference
+
+Awesome LLM Inference
+
+---
+
+一次用户请求，实际上既包含prefill，也包含decode。一个是计算密集型，一个是访存密集型。
+
+prefill（用户输入）和decode（模型输出）的token量在不同场景下也是不一样的。如果是简单对话场景，通常模型的decode输出会更多一些，而如果是超长上下文场景，用户先上传一本几十万字的书再进行问答，这本书的prefill会直接起飞。在Agent场景下，大量预设的prompt也会占据非常多的prefill，不过prompt的prefill有不少机会可以提前算好KV而无需每个用户请求单独重复计算。
+
+当整个推理系统服务几千万用户时，一个batch的几十个用户请求只是开胃菜。每个用户会不间断地和大模型进行交互，发出大量请求，但这些请求的间隔时间短则几秒，长则几分钟几小时。考虑人机交互的频率，一个用户请求结束后，对应的KV-cache继续常驻在高速内存中实际意义不大。
+
+---
+
+这个从今年年中开始，各家都陆续上了PD分离方案（如MoonCake）。
+
+Prefilling阶段是计算密集型，少量Query就可以打满GPU，大量Query反而会增加首token延迟；Decoding阶段是访存密集型，必须依赖大量Query提高GPU计算利用率。因此可以通过多台机器处理Prefilling、单台机器处理Decoding的PD分离方案，实现综合效率最大化、首token延迟（TTFT）最低、DecodeSpeed（TPS）最高。
+
+---
 
 ![](/images/img5/llm.png)
 
@@ -29,7 +65,13 @@ DoLa：层对比解码改善LLM的真实性
 
 ---
 
-投机采样使用两个模型：一个是原始目标模型，另一个是比原始模型小得多的近似模型。近似模型用于进行自回归串行采样，而大型模型则用于评估采样结果。
+Speculative Decoding：先用一个轻量级“提议器”快速生成K个候选token，再用主模型并行打分，能少跑很多步主模型。
+
+《Medusa: Simple LLM Inference Acceleration Framework with Multiple Decoding Heads》提出：
+
+不额外训练完整草稿模型，而是在原模型最后一层隐藏状态上挂3-5个轻量级前馈头（Medusa Heads），每个头负责预测第2,3,…,K+1位置的token。这些头与原模型共享KV缓存，因此几乎不占额外显存。
+
+EagleProposer复用主模型的Embedding与LMHead，只额外训练一个轻量的Auto-regression Head，接受率显著高于Medusa/普通小草稿模型。
 
 https://zhuanlan.zhihu.com/p/651359908
 
@@ -87,6 +129,12 @@ RAG路线图： Reliable, Adaptable, and Attributable Language Models with Retri
 
 ---
 
+Pooling models是一类把可变长度序列“压缩”成固定长度向量的模型，也常被称为sentence embedding模型。
+
+它们的核心动作就是pooling：先把输入文本用Transformer编码成一系列token向量，然后对这些向量做一次pool操作，得到一个整体表征（embedding），用来做下游的检索、聚类、分类、重排等任务，是RAG、向量数据库、语义搜索的基石。
+
+---
+
 假设有一个10w的外部数据，我们的原始输入Prompt长度为100，长度限制为4k，通过查询-检索的方式，我们能将最有效的信息提取集中在这4k的长度中，与Prompt一起送给大模型，从而让大模型得到更多的信息。此外，还能通过多轮对话的方式不断提纯外部数据，达到在有限的输入长度限制下，传达更多的信息给大模型。
 
 https://blog.csdn.net/qq_40491305/article/details/130898052
@@ -132,7 +180,6 @@ https://blog.csdn.net/v_JULY_v/article/details/145374551
 一文通透让Meta恐慌的DeepSeek-V3：在MoE、GRPO、MLA基础上提出Multi-Token预测(含FP8训练详解)
 
 ## 参考
-
 https://mp.weixin.qq.com/s/39MYrsB3gXpfzTTOgQjDwg
 
 幻方AI DeepSeek模型背后的万卡集群建设
@@ -189,87 +236,3 @@ ILP相关的库还有pyomo、cyipopt等。
 Resharding cost是不同sharding之间切换产生的开销：
 
 ![](/images/img5/resharding.svg)
-
----
-
-MLIR中有mesh dialect用于描述Sharding Spec：
-
-```mlir
-module @sharding_test {
-  mesh.mesh @mesh_2d(shape = 4x8)
-
-  func.func @matmul_on_operand_shard_batch_and_k(%arg0: tensor<32x1000x4096xf32>, %arg1: tensor<32x4096x8192xf32>) -> tensor<32x1000x8192xf32> {
-    %sharding_annotated = mesh.shard %arg0 to <@mesh_2d, [[0], [], [1]]> annotate_for_users : tensor<32x1000x4096xf32>
-    %sharding_annotated_0 = mesh.shard %arg1 to <@mesh_2d, [[0], [1]]> annotate_for_users : tensor<32x4096x8192xf32>
-    %0 = tosa.matmul %sharding_annotated, %sharding_annotated_0 : (tensor<32x1000x4096xf32>, tensor<32x4096x8192xf32>) -> tensor<32x1000x8192xf32>
-    %sharding_annotated_1 = mesh.shard %0 to <@mesh_2d, [[0]], partial = sum[1]> : tensor<32x1000x8192xf32>
-    return %sharding_annotated_1 : tensor<32x1000x8192xf32>
-  }
-}
-```
-
----
-
-如何用数学语言表示一个二维的one-hot：
-
-$$
-\begin{aligned}
-
-\forall (v,u) \in E, \
-& \forall i \in [0, k_v), & \sum_{j \in [0, k_u)}\mathbf{e}_{vu} [i,j] \leq \mathbf{s}_v[i] \\
-& \forall j \in [0, k_u), & \sum_{i \in [0, k_v)}\mathbf{e}_{vu} [i,j] \leq \mathbf{s}_u[j] \\
-
-\end{aligned}
-$$
-
-![](/images/img5/one_hot_decision_vector.svg)
-
----
-
-参考：
-
-https://zhuanlan.zhihu.com/p/487588274
-
-用ILP和DP自动探索DL分布式策略——Alpa
-
-https://zhuanlan.zhihu.com/p/571836701
-
-Alpa论文解读
-
-# Batching
-
-## continuous batching
-
-![](/images/img6/static-batching.png)
-
-上图是一个通常的多batch的LLM的Inference过程。其中黄色表示用户的prompt，蓝色表示LLM生成的文本，红色表示结束符号。
-
-![](/images/img6/continuous-batching.png)
-
-这是改进后的continuous batching的示意图。
-
-https://www.anyscale.com/blog/continuous-batching-llm-inference
-
-How continuous batching enables 23x throughput in LLM inference while reducing p50 latency
-
-## Selective Batching
-
-Selective Batching的核心原理在于：仅对适合批处理的操作执行批处理，不适合批处理的操作则单独处理。
-
-![](/images/img6/Selective_Batching.png)
-
-对于preproj、postproj、FFN1和FFN2这类线性变换或归一化操作，它们的计算与序列长度无关，只是在hidden_size维度上做线性转换，并且都需要从显存读取权重。因此，可以将batch内所有token拉平成一个二维张量。
-
-对于Attention操作，由于每个请求的mask、KV cache和token位置可能不同，导致其张量形状不一致，无法直接合并处理。Selective Batching会在进入Attention之前将batch拆分，逐个请求单独计算Attention分数，完成后再将结果合并回统一的张量。
-
-## Chunked Prefill
-
-![](/images/img6/Batching.png)
-
-在prefill阶段，即使batch size为1，所有操作的算术强度依然很高。而在decode阶段，这些操作的算术强度下降了两个数量级以上，只有在batch size达到256这种极大值时，decode阶段才开始变得计算密集。
-
-![](/images/img6/SARATHI_2.png)
-
-Orca方案尝试在Batch中混合Prefill和Decode请求。但是由于请求具有一定的随机性，Prefill和Decode的计算量不一定平衡，从而产生了pipeline bubbles。
-
-![](/images/img6/SARATHI.png)

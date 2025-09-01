@@ -223,6 +223,14 @@ https://mp.weixin.qq.com/s/w6ln1VCtOye-f21BShCNqg
 
 花了两天，终于把Python的setup.py给整明白了
 
+---
+
+setup.py提供了entry_points机制用于第三方插件扩展。这在vllm等项目中得到了广泛应用。
+
+https://zhuanlan.zhihu.com/p/503252479
+
+Python setup.py entry_points详解
+
 ### Nuitka
 
 Nuitka是一个Python程序的静态编译器，它可以将Python代码转换成优化的C++代码，并最终生成可执行文件。
@@ -422,22 +430,3 @@ https://mp.weixin.qq.com/s/toh59s2-UlqiZfkE5ThxZw
 https://mp.weixin.qq.com/s/s7PFVE_wcAMZaRUds2MJDQ
 
 Python中的*args和**kwargs是什么？该如何使用？
-
-## 运算符重载
-
-```python
-class Poke:
-    def __init__(self):
-        self.number = 0
-    def __call__(self, *args, **kwargs):
-        print("zzm")
-    def __getitem__(self, item): # item就是[]内的值
-        return self.number
-    def __setitem__(self, key, value): # key是[]内的值，value是 = 后的值
-        self.number = value
-
-poke = Poke() # 创建对象poke
-poke() # 调用__call__函数
-print(poke[0]) # 调用__getitem__函数
-poke[0] = 3 # 调用__setitem__函数
-```

@@ -27,6 +27,10 @@ https://mp.weixin.qq.com/s/C2OSscx8JzTBhyzxCqesCQ
 
 网易云音乐宋志毅：数据凌乱，埋点差，难以归因？数据治理有妙招！
 
+## OpenTelemetry
+
+CNCF旗下的统一可观测性的“一次埋点，到处导出”的遥测数据流水线。
+
 ## A/B Testing
 
 A/B Testing脱胎于版本发布中的A/B发布：通过分隔A和B两个版本，统计数据，进而看哪个版本的数据效果更好，对产品目标更有帮助。

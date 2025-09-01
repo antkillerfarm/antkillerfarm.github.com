@@ -165,6 +165,14 @@ https://zhuanlan.zhihu.com/p/680212402
 
 大模型量化技术原理-LLM.int8()、GPTQ
 
+---
+
+Marlin Quantization是Neural Magic推出的一套针对4-bit（INT4）权重量化的高性能GPU推理方案，但在Hopper GPU上表现不佳。因此Neural Magic又针对Hopper GPU推出了Machete Quantization。
+
+---
+
+AQLM（Additive Quantization for Language Models）是一种极端低位权重量化技术，由ISTA-DASLab等机构在2024年提出，可把LLM压缩到2-bit每权重，同时保持接近原始模型的性能。
+
 # q4f16 & q3f16
 
 q3f16（q3指使用Quantize 3 bit来量化，f16是指核心计算使用fp 16来计算）。

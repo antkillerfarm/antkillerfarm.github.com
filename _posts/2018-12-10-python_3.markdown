@@ -9,6 +9,25 @@ category: language
 
 # Python
 
+## importlib
+
+使用importlib动态导入库和类的示例：
+
+```python
+m = importlib.import_module(library_name)
+model_cls = getattr(m, class_name)
+```
+
+## 闭包
+
+在一些语言中，在函数中可以（嵌套）定义另一个函数时，如果内部的函数引用了外部的函数的变量，则可能产生闭包。闭包可以用来在一个函数与一组“私有”变量之间创建关联关系。在给定函数被多次调用的过程中，这些私有变量能够保持其持久性。
+
+用比较容易懂的人话说，就是当某个函数被当成对象返回时，夹带了外部变量，就形成了一个闭包。
+
+https://mp.weixin.qq.com/s/qYKNGqItnSXq0-Zq2kMCKA
+
+聊一聊Python中的闭包
+
 ## @classmethod和@staticmethod
 
 ```python
@@ -429,41 +448,3 @@ signal.signal(signal.SIGALRM, handler)
 ```
 
 python3.4+还可以使用标准库的pathlib模块。
-
-## 如何通过需认证的代理获取HTTP网页
-
-Python内置的urllib和urllib2模块都可用于获取HTTP网页，但使用范围是不同的。urllib只支持HTTP 0.9和HTTP 1.0，所以如果只是使用代理可以使用urllib.FancyURLopener类，如果该代理还需要认证的话urllib就不行了。因为代理认证是HTTP 1.1中引入的。
-
-这时可以考虑使用urllib2模块。代码如下：
-
-```python
-import urllib2
-l_proxy_info = {
-'user' : 'user',
-'pass' : 'pass',
-'host' : 'host',
-'port' : 3128
-}
-
-l_proxy_support = urllib2.ProxyHandler({"http" : "http://%(user)s:%(pass)s@%(host)s:%(port)d" % l_proxy_info})
-l_opener = urllib2.build_opener(l_proxy_support, urllib2.HTTPHandler)
-
-urllib2.install_opener(l_opener)
-usock = urllib2.urlopen('http://www.sohu.com')
-```
-
-## Requests
-
->上一小节大概写作于2008年，已经10年了，urllib3都出来了。
-
-Requests是Python语言编写，基于urllib3，采用Apache2 Licensed开源协议的HTTP库。
-
-参考：
-
-https://mp.weixin.qq.com/s/a4mGDzKdEs7-tAPsfyL29w
-
-Python Requests库使用指南
-
-https://mp.weixin.qq.com/s/cyG_TpPA9eyzG70VT2m2Ww
-
-Requests的基本用法

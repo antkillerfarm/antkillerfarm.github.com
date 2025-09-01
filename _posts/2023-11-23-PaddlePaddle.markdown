@@ -131,6 +131,16 @@ https://github.com/huggingface/safetensors
 
 ---
 
+safetensors没有重点关注性能和跨平台交换。在大模型高效序列化、数据压缩、量化等方面存在不足，并且它只保存了张量数据，没有任何关于模型的元数据信息。
+
+GGUF把模型权重+分词器+超参数+元数据全部打包进一个.gguf文件，针对快速加载和保存模型进行了优化，使其能够高效地进行推理。GGUF由Georgi Gerganov开发，（他也是流行的 C/C++ LLM 推理框架llama.cpp的开发者）。
+
+https://zhuanlan.zhihu.com/p/848013326
+
+一文搞懂大模型文件存储格式新宠GGUF
+
+---
+
 tokenizers的含义参见《Tokenization》一节。
 
 代码：

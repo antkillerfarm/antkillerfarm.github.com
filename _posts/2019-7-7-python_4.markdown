@@ -9,6 +9,44 @@ category: language
 
 # Python
 
+## 如何通过需认证的代理获取HTTP网页
+
+Python内置的urllib和urllib2模块都可用于获取HTTP网页，但使用范围是不同的。urllib只支持HTTP 0.9和HTTP 1.0，所以如果只是使用代理可以使用urllib.FancyURLopener类，如果该代理还需要认证的话urllib就不行了。因为代理认证是HTTP 1.1中引入的。
+
+这时可以考虑使用urllib2模块。代码如下：
+
+```python
+import urllib2
+l_proxy_info = {
+'user' : 'user',
+'pass' : 'pass',
+'host' : 'host',
+'port' : 3128
+}
+
+l_proxy_support = urllib2.ProxyHandler({"http" : "http://%(user)s:%(pass)s@%(host)s:%(port)d" % l_proxy_info})
+l_opener = urllib2.build_opener(l_proxy_support, urllib2.HTTPHandler)
+
+urllib2.install_opener(l_opener)
+usock = urllib2.urlopen('http://www.sohu.com')
+```
+
+## Requests
+
+>上一小节大概写作于2008年，已经10年了，urllib3都出来了。
+
+Requests是Python语言编写，基于urllib3，采用Apache2 Licensed开源协议的HTTP库。
+
+参考：
+
+https://mp.weixin.qq.com/s/a4mGDzKdEs7-tAPsfyL29w
+
+Python Requests库使用指南
+
+https://mp.weixin.qq.com/s/cyG_TpPA9eyzG70VT2m2Ww
+
+Requests的基本用法
+
 ## Gunicorn
 
 Gunicorn是一个高效的Python WSGI Server，地位相当于Java中的Tomcat。
@@ -435,69 +473,3 @@ https://mp.weixin.qq.com/s/-CaMHjsY580et8Hh_D2FSg
 http://www.liujiangblog.com/course/django/
 
 Django教程
-
-## SimpleHTTPServer
-
-Django比较重量级了，如果只是想发布静态网页的话，可以用：
-
-`python -m SimpleHTTPServer 7800`
-
-或者
-
-`python3 -m http.server 7800`
-
-除此之外，Flask、tornado也是较常用的Web框架。
-
-Flask底层使用的werkzeug库，是一个有名的WSGI工具包。
-
-基于python新增的async/await语法的异步Web框架，是最近的新流派，代表有：Sanic
-
-https://juejin.cn/post/6944598601674784775
-
-异步Web框架Sanic凭什么比Django Flask强？
-
-## 处理eml文件
-
-代码示例：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/python/misc/hello_eml.py
-
-这个示例主要使用email包来解析eml文件。
-
-同时为了处理其中的html的内容，还用到了Beautiful Soup包。其网址为：
-
-https://www.crummy.com/software/BeautifulSoup/
-
-参见：
-
-https://mp.weixin.qq.com/s/p86yvl3uAm3FXw4V9NlNoA
-
-一文带你上手Python网页抓取神器BeautifulSoup库
-
-https://mp.weixin.qq.com/s/3o_T7Tyrstur6jkj0gexMA
-
-BeautifulSoup的使用
-
-## PDF
-
-ChatPaper中提及了SciPDF Parser以及ChatPaper项目自身实现的ChatPaper Parser。
-
-代码：
-
-https://github.com/kaixindelele/ChatPaper
-
-其他工具还有nougat、ScienceBeam。
-
----
-
-https://mp.weixin.qq.com/s/fBz__E2Xu4GC7w1Uqx5NAA
-
-手把手教你如何用Python从PDF文件中导出数据
-
-https://mp.weixin.qq.com/s/xCKC3cz7jUvrwl4uvMNKTA
-
-20行Python代码教你批量将PDF转为Word
-
-https://mp.weixin.qq.com/s/IznKbG3cEF6uxP0Fe_0oaQ
-
-印度小哥“神剑”：PDF提取表格so easy！

@@ -9,6 +9,25 @@ category: language
 
 # Python
 
+## 运算符重载
+
+```python
+class Poke:
+    def __init__(self):
+        self.number = 0
+    def __call__(self, *args, **kwargs):
+        print("zzm")
+    def __getitem__(self, item): # item就是[]内的值
+        return self.number
+    def __setitem__(self, key, value): # key是[]内的值，value是 = 后的值
+        self.number = value
+
+poke = Poke() # 创建对象poke
+poke() # 调用__call__函数
+print(poke[0]) # 调用__getitem__函数
+poke[0] = 3 # 调用__setitem__函数
+```
+
 ## 类型建议符
 
 `def twoSum(num1: int, num2: int=100) -> int:`
@@ -377,6 +396,34 @@ https://mp.weixin.qq.com/s/lHFbec5oBshoASjJQHXxtg
 
 `@`在python中是装饰器的意思，它的用法比较复杂。假设我们要增强函数的功能，比如，在函数调用前后自动打印日志，但又不希望修改函数的定义，这种在代码运行期间动态增加功能的方式，称之为“装饰器”（Decorator）。
 
+```python
+def timer(func):
+  def f(x, y=10):
+    before = time()
+    rv = func(x, y)
+    after = time()
+    print('time taken: ', after - before)
+    return rv
+  return f
+
+@timer
+def add(x, y=10):
+  return x + y
+```
+
+装饰器接受func作为参数，并返回装饰好之后的func。上例等价于：
+
+```python
+f = timer(add)
+f(x,y)
+```
+
+此外还有类装饰器，其一般签名如下：
+
+```python
+def cls_decorator(cls: type[T]) -> type[T]:
+```
+
 在python 3.5以后，`@`是一个操作符，表示矩阵-向量乘法。
 
 `A@x`就是矩阵-向量乘法`np.dot(A, x)`。
@@ -410,22 +457,3 @@ https://mp.weixin.qq.com/s/_ZvF6jK5Jo4rFGwHvEoAig
 https://mp.weixin.qq.com/s/Wsk6H3Z6HwGPKTRNYc2cLw
 
 一个已经存在10年，却被严重低估的库（decorator）
-
-## importlib
-
-使用importlib动态导入库和类的示例：
-
-```python
-m = importlib.import_module(library_name)
-model_cls = getattr(m, class_name)
-```
-
-## 闭包
-
-在一些语言中，在函数中可以（嵌套）定义另一个函数时，如果内部的函数引用了外部的函数的变量，则可能产生闭包。闭包可以用来在一个函数与一组“私有”变量之间创建关联关系。在给定函数被多次调用的过程中，这些私有变量能够保持其持久性。
-
-用比较容易懂的人话说，就是当某个函数被当成对象返回时，夹带了外部变量，就形成了一个闭包。
-
-https://mp.weixin.qq.com/s/qYKNGqItnSXq0-Zq2kMCKA
-
-聊一聊Python中的闭包

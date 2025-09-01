@@ -126,10 +126,6 @@ https://mp.weixin.qq.com/s/2RCH2Or_ITUTGrlfYLB8mg
 
 腾讯千亿级参数分布式ML系统无量背后的秘密
 
-https://mp.weixin.qq.com/s/Na2SJkfC9LzgfbTfSCclOw
-
-如何基于Ray使用15行代码实现参数服务器
-
 https://zhuanlan.zhihu.com/p/82116922
 
 一文读懂“Parameter Server”的分布式机器学习训练原理

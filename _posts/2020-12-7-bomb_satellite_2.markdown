@@ -69,6 +69,10 @@ https://www.zhihu.com/question/285058234
 
 永暑岛怎么会发现淡水资源？（淡水透镜体效应）
 
+https://www.zhihu.com/question/1942893627979301608
+
+如何看待外媒报道“越南在南中国海填海造地，规模快赶上中国”?
+
 ---
 
 ![](/images/img3/BD.jpg)

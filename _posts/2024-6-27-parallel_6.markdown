@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（七）——快速Transformer, LLM Inference
+title:  并行 & 框架 & 优化（七）——快速Transformer
 category: DL acceleration 
 ---
 
@@ -226,6 +226,37 @@ https://zhuanlan.zhihu.com/p/691038809
 
 vLLM核心技术PagedAttention原理
 
+## FlashInfer
+
+FlashInfer是由NVIDIA与CMU、UC Berkeley等机构联合开源的GPU专用LLM推理内核库。将FlashAttention、PageAttention、稀疏 Attention、采样、通信等全部打包，并针对LLM推理服务做了 JIT编译、Paged KV-Cache、变长批量调度等工程化增强。
+
+https://zhuanlan.zhihu.com/p/681506469
+
+用FlashInfer加速大语言模型推理中的自注意力操作
+
+## Dual Chunk FlashAttention
+
+超长文本（论文、代码库、百万token级对话）在原始预训练窗口外直接推理会严重掉精度。
+
+纯FlashAttention虽然节省显存，但序列长度N增加后仍然O(N²)地吃显存，单卡80 GB也很快就OOM。
+
+DCFA把长序列切成≤预训练长度的chunk，先算chunk内注意力（intra-chunk），再算chunk间注意力（inter-chunk），把显存复杂度压到O(chunk_size²)，理论上可以无限外推长度。
+
+## Differential FlashAttention
+
+传统Transformer在长上下文时会把大量注意力权重放到“噪声 token”上，产生幻觉和上下文丢失。
+
+Differential Transformer：
+
+$$\text{DiffAttn}(X) = \underbrace{\vphantom{\lambda}\operatorname{softmax}\!\left(\frac{Q_{1}K_{1}^{\!\top}}{\sqrt{d_{k}}}\right)V}_{\text{主注意力}}
+- \lambda\,\underbrace{\vphantom{\lambda}\operatorname{softmax}\!\left(\frac{Q_{2}K_{2}^{\!\top}}{\sqrt{d_{k}}}\right)V}_{\text{噪声注意力}}$$
+
+$$\lambda = \exp(\lambda_{q1}\!\cdot\!\lambda_{k1}) - \exp(\lambda_{q2}\!\cdot\!\lambda_{k2}) + \lambda_{\text{init}}$$
+
+相当于让第二个分支专门学“噪声模式”，然后显式减掉。
+
+但这样就带来两倍KV Cache + 两次FlashAttention计算的开销。于是作者直接写了一个“一次kernel launch里跑两路”的专用 CUDA kernel，起名叫Differential FlashAttention。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/1R_plHqxTLE-Fw3TjYnlJQ
@@ -243,39 +274,3 @@ https://zhuanlan.zhihu.com/p/638468472
 https://blog.csdn.net/v_JULY_v/article/details/144218958
 
 一文通透vLLM与其核心技术PagedAttention：减少KV Cache碎片、提高GPU显存利用率(推理加速利器)
-
-# LLM Inference
-
-A Survey on Efficient Inference for Large Language Models
-
----
-
-https://zhuanlan.zhihu.com/p/653352979
-
-LLM七种推理服务框架总结
-
-https://zhuanlan.zhihu.com/p/671347964
-
-大模型(LLM)推理框架汇总
-
-https://zhuanlan.zhihu.com/p/642412124
-
-LLM的推理优化技术纵览
-
-https://github.com/DefTruth/Awesome-LLM-Inference
-
-Awesome LLM Inference
-
----
-
-一次用户请求，实际上既包含prefill，也包含decode。一个是计算密集型，一个是访存密集型。
-
-prefill（用户输入）和decode（模型输出）的token量在不同场景下也是不一样的。如果是简单对话场景，通常模型的decode输出会更多一些，而如果是超长上下文场景，用户先上传一本几十万字的书再进行问答，这本书的prefill会直接起飞。在Agent场景下，大量预设的prompt也会占据非常多的prefill，不过prompt的prefill有不少机会可以提前算好KV而无需每个用户请求单独重复计算。
-
-当整个推理系统服务几千万用户时，一个batch的几十个用户请求只是开胃菜。每个用户会不间断地和大模型进行交互，发出大量请求，但这些请求的间隔时间短则几秒，长则几分钟几小时。考虑人机交互的频率，一个用户请求结束后，对应的KV-cache继续常驻在高速内存中实际意义不大。
-
----
-
-这个从今年年中开始，各家都陆续上了PD分离方案（如MoonCake）。
-
-Prefilling阶段是计算密集型，少量Query就可以打满GPU，大量Query反而会增加首token延迟；Decoding阶段是访存密集型，必须依赖大量Query提高GPU计算利用率。因此可以通过多台机器处理Prefilling、单台机器处理Decoding的PD分离方案，实现综合效率最大化、首token延迟（TTFT）最低、DecodeSpeed（TPS）最高。

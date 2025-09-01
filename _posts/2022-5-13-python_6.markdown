@@ -9,6 +9,63 @@ category: language
 
 # Python
 
+## tqdm
+
+tqdm是一个快速，可扩展的进度条。
+
+代码：
+
+https://github.com/tqdm/tqdm
+
+示例：
+
+```python
+from tqdm import tqdm
+for i in tqdm(range(9)):
+    ...
+```
+
+其实还有一个更简单的办法：
+
+`print("\r" + "xxx", end="")`：这样的话会先把console里面当前的行清除掉、再输出xxx。
+
+参考：
+
+https://mp.weixin.qq.com/s/1YZ7-i3X8Cb2LYEuWtd1KA
+
+给Python代码加上酷炫进度条的几种姿势
+
+https://mp.weixin.qq.com/s/OVb4g1KzIsxgMKjJk_hG6A
+
+在Python中妥善使用进度条
+
+https://mp.weixin.qq.com/s/_rCg_uFD07eZw4QLtD-fzA
+
+Python竟然能做这样的进度条
+
+https://mp.weixin.qq.com/s/nGOCderiyOXsHkMZwIgpoA
+
+酷炫的Python进度条开源库：alive-progress
+
+## 细节
+
+python有个叫做`attr`的包，还有一个叫做`attrs`的包，然而`import attr`实际上用的是`attrs`。
+
+二进制码流 -> 十六进制字符串：
+
+```python
+import binascii
+hex_digits = binascii.b2a_hex(bin_stream)
+```
+
+---
+
+利用动态语言的特点，在运行时替换指定函数的代码，达到实时更改函数行为的效果，这就叫做“打Moneky Patch”。
+
+https://blog.csdn.net/yushuaigee/article/details/117031190
+
+彻底弄懂Python中的Moneky Patch
+
 ## 参考
 
 https://mp.weixin.qq.com/s/PC0bGKzIC_GXLOcVqDAZmA

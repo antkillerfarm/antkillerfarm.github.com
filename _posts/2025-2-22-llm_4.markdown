@@ -131,6 +131,19 @@ https://github.com/deepseek-ai/DeepEP
 
 deepseek官方的EP库
 
+---
+
+PPLXAll2AllManager是vLLM为了解决Expert Parallelism场景下MoE模型的跨GPU专家tensor交换，而引入的一个通信调度器（All-to-All管理器）。
+
+DeepEPHTAll2AllManager和DeepEPLLAll2AllManager是vLLM在集成DeepEP（DeepSeek Expert Parallel）通信框架时，为MoE模型推理引入的两类分层All-to-All通信调度器。
+
+它们把原来单一的All-to-All拆成两层：
+
+- HT（High-Throughput）层——节点内GPU之间大批量、高吞吐交换；
+- LL（Low-Latency）层——节点间跨机NVLink/IB网络低延迟交换。
+
+EPLB：Expert parallelism load balancer
+
 ## KTransformer
 
 KTransformers由清华大学团队提出，可以在模型运行过程中灵活的将专家模型加载到CPU上，同时将MLA/KVCache卸载到GPU上，从而深度挖掘硬件性能，实现更低的显存运行更大尺寸的模型。
@@ -196,6 +209,8 @@ https://docs.swanlab.cn/zh/examples/pretrain_llm.html
 
 从零预训练一个自己的大模型
 
+PS: swanlab的文档库本身也是一个宝库，而且还是中文的。
+
 本人的魔改版本，wiki_zh dataset + Qwen tokenizer + llama 2 model：
 
 https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/huggingface/llm_train.py
@@ -233,17 +248,3 @@ https://wandb.ai/ai2-llm/OLMo-7B/reports/OLMo-7B--Vmlldzo2NzQyMzk5
 https://zhuanlan.zhihu.com/p/702811733
 
 Vision-Language Models (VLMs)多模态大模型一年多的进展与思考-2406
-
-# 天文杂谈=
-
-北斗二～六相互之间距离5～10光年，属于同一个星协，运动速度也一致，百万年后也不会分开。北斗一和北斗七不属于这个星协，离得很远，运动速度也不一致，几万年以后就看不出七颗星的勺子形状了。
-
-为什么北斗七星质量都比太阳大？
-
-主序星里只有大质量恒星才能在那么远的地方还那么亮（比如太阳这么大的超过30光年就肉眼很难看见了），而大质量恒星的寿命很短，能被看到的都是年轻的。
-
-![](/images/img6/beidou.webp)
-
-https://www.zhihu.com/question/638917246
-
-北斗七星都是些什么恒星？它们分别有多大？距离地球有多远？

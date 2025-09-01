@@ -229,9 +229,17 @@ examples/NLG/src/gpt2_ft.py
 
 论文：《LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models》
 
+https://zhuanlan.zhihu.com/p/677097900
+
+大模型PEFT技术原理（一）：BitFit、Prefix Tuning、Prompt Tuning
+
 ---
 
 Hugging Face有一个叫做peft的库，支持多种微调方法，包括LoRA（Low-Rank Adaptation）、Prefix Tuning、P-Tuning、Prompt Tuning等，这些方法可以帮助减少可训练参数的数量，使训练更高效。
+
+---
+
+Punica：“一个GPU上跑上千个LoRA”的推理黑科技：用SGMV内核把基座计算和不同LoRA增量融合成一次CUDA调用，再辅以全局调度+按需权重加载，实现高并发、低延迟的多租户服务。
 
 ---
 
