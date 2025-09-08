@@ -7,7 +7,27 @@ category: AI
 * toc
 {:toc}
 
-# CUDA+
+# CUDA
+
+## Profile（续）
+
+`nsys profile /data/miniforge3/envs/torch_3.12/bin/python3.12 -m llm_train`
+
+https://fkong.tech/posts/2023-11-19-torch-gpu-util/
+
+如何把PyTorch的GPU利用率提升到100%?
+
+https://dev-discuss.pytorch.org/t/using-nsight-systems-to-profile-gpu-workload
+
+Using Nsight Systems to profile GPU workload
+
+https://blog.csdn.net/m0_61864577/article/details/140618800
+
+NsightComputeProfiling入门
+
+https://blog.csdn.net/weixin_40777649/article/details/140379222
+
+nsightcompute进阶
 
 ## CUDA实战
 

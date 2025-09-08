@@ -41,6 +41,10 @@ https://zhuanlan.zhihu.com/p/446800631
 
 ---
 
+https://evian-zhang.github.io/llvm-ir-tutorial/
+
+LLVM IR入门指南
+
 https://getting-started-with-llvm-core-libraries-zh-cn.readthedocs.io/zh-cn/latest/index.html
 
 Getting Started with LLVM Core Libraries（中文版）

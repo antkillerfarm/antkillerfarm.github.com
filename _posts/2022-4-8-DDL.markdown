@@ -376,6 +376,12 @@ RPC框架：从原理到选型，一文带你搞懂RPC
 
 ---
 
+Pollard-Rho（Pollard’s rho algorithm）是一种概率性的大整数分解算法，1980年由英国数学家John Pollard提出。它用很少的计算量，以高概率快速找到一个大合数的一个非平凡因子（不一定是质因子，但能把数“拆小”）。
+
+所有现代大整数分解库都把Pollard-Rho放在第一轮筛因子的位置，是“试除法（1e5以下小质数）之后、重型算法之前”的标配轻骑兵。
+
+---
+
 https://blog.csdn.net/HiWangWenBing/article/details/119772047
 
 数学建模、科学计算、数值计算的关系

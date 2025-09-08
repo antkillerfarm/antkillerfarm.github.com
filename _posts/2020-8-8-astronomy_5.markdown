@@ -82,6 +82,22 @@ https://www.zhihu.com/question/14286078806
 
 ---
 
+因为梅里迪斯热推力效应，火箭在海平面静推力大于全部发动机海平面推力和。
+
+梅里迪斯效应效应冷却器通过绝热压缩增加截面积、定压加热缩小截面积、绝热膨胀增加截面积三个阶段对流经梅里迪斯效应冷却器的空气做功增加空气排气速度产生额外推力。
+
+早在20世纪20年代，美民间航空爱好者Eugene Michael Gluhareff制作了一种简易的三级燃烧室梅里迪斯效应的小型无转子喷气发动机。
+
+https://www.zhihu.com/answer/3547416540
+
+梅里迪斯效应
+
+https://www.zhihu.com/question/52796057
+
+什么是梅里迪斯效应？
+
+---
+
 https://mp.weixin.qq.com/s/sPTRKfuhEc0xx7GacomxkA
 
 霍尔效应推进器

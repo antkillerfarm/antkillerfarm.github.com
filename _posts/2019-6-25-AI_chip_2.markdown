@@ -139,6 +139,20 @@ Eyeriss：适用于深度卷积神经网络的节能型可重构加速器
 
 A3, SpAtten, Sanger等。
 
+## CGRA
+
+CGRA（Coarse-Grained Reconfigurable Array，粗粒度可重构阵列）是一类介于通用CPU/GPU和专用ASIC之间的可重构计算架构，近年来在AI加速、边缘计算和能效敏感场景里备受关注。
+
+CGRA是由大量“可编程处理单元（PE）+可重配置片上网络”组成的二维阵列，能在纳秒-微秒级重新配置成不同数据通路，以接近ASIC的能效执行特定算法，又保留软件可编程的灵活性。
+
+https://zhuanlan.zhihu.com/p/586253188
+
+CGRA在AI领域的最新进展综述
+
+https://zhuanlan.zhihu.com/p/586253188
+
+CGRA编译技术研究：Ultra-Fast CGRA Scheduling to Enable Run Time, Programmable CGRAs论文研读
+
 ## DEEPHi
 
 2018.8
@@ -194,29 +208,3 @@ http://www.deephi.com/
 某牛点评：
 
 做一个ASIC其实目前真没有什么大的门槛，不然你以为上海那么多家的ASIC公司是怎么来的，随便拉几个人都敢成立ASIC公司，还不是门槛不高，你让他就那几个人搞个CPU和GPU试试。但是要做一个好的ASIC，适配模型和场景丰富的ASIC，是非常不容易的。而且一旦模型场景丰富，你就不仅仅是在硬件领域所谓的PPA各种挣扎，你还需要在指令级别，或者说通用和性能做妥协，甚至架构上的一些妥协改变。
-
----
-
-在回马枪看，npu厂商换三代，能玩出代代不兼容。。。
-
-国内海量的npu，随便能跑矩阵的屎，都能跑llm推理，但是一个个都做不明白，也不能和别人形成共识，业界前沿也难跟上，但不妨碍这一票npu厂商，ppt上随手灭老黄。
-
-npu的当年的愿景很简单，就是算法和模型会固化会成熟，老黄的愿景是算法和ai会继续狂奔，所以当年npu从愿景上就输了。
-
----
-
-2024.9
-
-象帝先由于资金链断裂，停止运营。
-
-## FuriosaAI
-
-FuriosaAI是韩国的一家AI芯片公司。
-
-![](/images/img5/FuriosaAI.png)
-
-## 地平线
-
-![](/images/img6/DPX.webp)
-
-地平线主要做智能驾驶领域的AI芯片，和它类似生态位的还有黑芝麻智能。前者于2024.10上市，而后者是2024.8。

@@ -114,9 +114,17 @@ https://zhuanlan.zhihu.com/p/718715866
 
 Append操作一般采用Prefix Caching技术进行加速。
 
+RadixAttention使用radix tree，而不是prefix tree。Radix Tree最大的特点就是，它的node，不仅可以是一个单独的元素，也可以是一个变长的序列。具体体现在，在必要的时候，一个已经在Tree中的大node可以动态地分裂成小node，以满足动态shared prefix的需求。
+
+![](/images/img6/Radix_Tree.png)
+
 https://zhuanlan.zhihu.com/p/693556044
 
 原理&图解vLLM Automatic Prefix Cache(RadixAttention)首Token时延优化
+
+https://zhuanlan.zhihu.com/p/1890132185966682238
+
+FlashAttentionV1/V2+PageAttentionV1/V2+RadixAttention算法总结
 
 # 工具
 

@@ -77,6 +77,12 @@ https://tvm.hyper.ai/docs/how_to/te_schedules/tensorize
 
 ---
 
+CDFG（Control-Data Flow Graph）把传统CFG（控制流图和DFG（数据流图）合并成一张图。
+
+An MLIR-based Compilation Framework for Control Flow Management on CGRAs
+
+---
+
 https://mp.weixin.qq.com/s/jjT0x99ht8xtfWmzL-0R1A
 
 深度学习的IR“之争”

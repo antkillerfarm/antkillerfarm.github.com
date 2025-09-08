@@ -9,34 +9,6 @@ category: Russo Ukrainian War Cloud
 
 # 俄乌战争：流云篇
 
-https://zhuanlan.zhihu.com/p/566841960
-
-统计——乌克兰目前接受的军援
-
-https://www.zhihu.com/question/555976713
-
-顿涅茨克等四地入俄公投结果公布，将对俄乌局势产生什么影响？
-
-https://mp.weixin.qq.com/s/n4EMEdHNJuhrHwsCUE6m4A
-
-被欧洲人买爆的中国电热毯，真有那么火吗？
-
-https://www.zhihu.com/question/557681794
-
-如果你来设计《使命召唤：俄乌战争》的剧情，会是怎样的？
-
-https://zhuanlan.zhihu.com/p/579537323
-
-垮塌的大厦——俄罗斯坦克工业现状和梅德韦杰夫无法完成的任务
-
-https://zhuanlan.zhihu.com/p/582340201
-
-俄媒：三百年的荣耀被普京这个生物20年败光了
-
-https://zhuanlan.zhihu.com/p/496556274
-
-大毛的航模
-
 https://zhuanlan.zhihu.com/p/588914690
 
 你给我从车顶上下来！”——再评BMP系列随车步兵搭乘方式

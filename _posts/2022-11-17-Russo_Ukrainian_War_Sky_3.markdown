@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争：苍天篇（三）——战前 & 军改
+title:  俄乌战争：苍天篇（三）——战前 & 军改（1）
 category: Russo Ukrainian War Sky
 ---
 

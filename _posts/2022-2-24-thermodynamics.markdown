@@ -159,6 +159,12 @@ https://www.zhihu.com/question/53028127
 
 ---
 
+![](/images/img6/Expander.gif)
+
+高压空气经过膨胀机对外做功，瞬间降到液化温度。
+
+---
+
 https://mp.weixin.qq.com/s/R__7gmP4upYPf1URBzTRug
 
 冬日里的“水货”：挨了冻，内心居然更膨胀了？

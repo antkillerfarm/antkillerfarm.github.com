@@ -9,6 +9,32 @@ category: Chip
 
 # AI Chip
 
+## DEEPHi（续）
+
+在回马枪看，npu厂商换三代，能玩出代代不兼容。。。
+
+国内海量的npu，随便能跑矩阵的屎，都能跑llm推理，但是一个个都做不明白，也不能和别人形成共识，业界前沿也难跟上，但不妨碍这一票npu厂商，ppt上随手灭老黄。
+
+npu的当年的愿景很简单，就是算法和模型会固化会成熟，老黄的愿景是算法和ai会继续狂奔，所以当年npu从愿景上就输了。
+
+---
+
+2024.9
+
+象帝先由于资金链断裂，停止运营。
+
+## FuriosaAI
+
+FuriosaAI是韩国的一家AI芯片公司。
+
+![](/images/img5/FuriosaAI.png)
+
+## 地平线
+
+![](/images/img6/DPX.webp)
+
+地平线主要做智能驾驶领域的AI芯片，和它类似生态位的还有黑芝麻智能。前者于2024.10上市，而后者是2024.8。
+
 ## Cerebras
 
 现在，计算芯片是越做越大，在早先的PC中，最大的芯片无疑是CPU了。但现在高端显卡芯片的面积已经超越CPU了。
@@ -351,49 +377,3 @@ https://zhuanlan.zhihu.com/p/591827529
 https://www.zhihu.com/answer/3395444932
 
 寒武纪AI芯片
-
-## 行业信息
-
-https://mp.weixin.qq.com/s/vGoWsyaal-gAzsrhPguvFg
-
-深度解读：华为麒麟芯片是如何炼成的！
-
-https://mp.weixin.qq.com/s/8RDHTn6P63otKXUdrHhbjw
-
-一文看懂AI芯片产业生态及竞争格局
-
-https://mp.weixin.qq.com/s/jINnom16KWiEKiug3N-f8g
-
-一文看懂AI芯片：三大门派四大场景146亿美元大蛋糕
-
-https://mp.weixin.qq.com/s/-FwuhibwwG6CFUcZXNBTFA
-
-投资者梳理AI芯片产业，一文秒懂AI芯片生态！
-
-https://zhuanlan.zhihu.com/p/28325678
-
-零基础看懂全球AI芯片：详解“xPU”
-
-https://mp.weixin.qq.com/s/Zng0NTR9P78lnR_vniiM8g
-
-Chris Rowen: 分析全球334家真正的深度学习创业公司，盘点25家AI芯片创业公司
-
-https://zhuanlan.zhihu.com/p/33462550
-
-传统IP Vendor的AI加速器一览
-
-https://mp.weixin.qq.com/s/IaCWZXQI8mYLJQXwDoNQcQ
-
-自动驾驶芯片：GPU的现在和ASIC的未来
-
-https://mp.weixin.qq.com/s/KjQ5BTGd92Y0Mqzk1A5JYg
-
-老兵戴辉讲述海思视频监控芯片从0到1的血泪史！如何一步步成为行业霸主的
-
-https://mp.weixin.qq.com/s/MwZ9j1MIwRBrJK4iWKzRqQ
-
-和AMD有渊源的那些AI创业公司
-
-https://mp.weixin.qq.com/s/FM-0MeXU_g0KCbCzVZruCw
-
-12家AI芯片创企，盯上大模型生意
