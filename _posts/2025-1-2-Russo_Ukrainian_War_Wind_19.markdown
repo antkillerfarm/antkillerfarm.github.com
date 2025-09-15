@@ -11,6 +11,71 @@ category: Russo Ukrainian War Wind
 
 ## 凡人列传
 
+![](/images/img4/Ukraine_4.jpg)
+
+这张图里乌克兰人的一座楼房，2月份被轰炸的面目全非，但八个月之后又焕然一新。
+
+---
+
+战争初期的前三个月，典型的阵亡俄罗斯士兵是21岁的合同兵，服役于精英部队。到2023年，典型的阵亡士兵则是34岁的囚犯，他们直接从监狱被派往前线。到了2024年秋季，俄罗斯军人的典型画像再次发生了变化。现在，阵亡的多数是志愿者，也就是那些在全面入侵后签订合同的人。
+
+---
+
+乌克兰前赫尔松市长弗拉基米尔·米科拉延科获释，自2022年以来因为拒绝和俄合作而被囚禁。之前曾拒绝被交换，以释放另一名被俄关押的重病囚犯。（足以见得他各方面的品德都很高尚。）
+
+---
+
+40岁的澳大利亚志愿军人Trevor Kjedal牺牲，死前留下遗言：
+
+“乌克兰遇到了困难，人民需要帮助，所以我们来了，我们进行了帮助，我曾在人生中达成过不凡的事情，我想看看自己能不能再做一次。”
+
+---
+
+昨天一个战士来找我们。他是来自另一支旅的自愿离开军队（SZch）人员。说他在家待了一个月，后来妻子把他赶回去当兵了，怕在邻居面前丢脸。
+
+
+---
+
+https://zhuanlan.zhihu.com/p/579785034
+
+拉平上将化身督战队，用枪指着“祖国叛徒”的头——斯瓦托沃溃兵的故事
+
+https://zhuanlan.zhihu.com/p/577621180
+
+被骗去抵挡乌克兰反攻，一路溃退——俄动员兵上前线的故事
+
+https://zhuanlan.zhihu.com/p/517657283
+
+旅长害怕我们干掉他——俄军士兵采访实录
+
+https://zhuanlan.zhihu.com/p/604241912
+
+不会归来的人——瓦格纳死囚、军事葬礼、疯狂的丧葬行业与特别军事行动的代价
+
+https://zhuanlan.zhihu.com/p/608784859
+
+俄雇佣兵的子弹，没用来打乌军，瓦格纳把俄军大将，画在了靶子上
+
+https://zhuanlan.zhihu.com/p/642515984
+
+损失七成人员 被无情抛弃的俄罗斯风暴大队士兵想抓住乌克兰总统
+
+https://zhuanlan.zhihu.com/p/637922023
+
+俄罗斯军队对乌克兰俘虏进行去势惩罚
+
+https://zhuanlan.zhihu.com/p/659213744
+
+乌克兰被俘军医自述俄罗斯虐俘经过
+
+https://zhuanlan.zhihu.com/p/657242560
+
+精神错乱 俄罗斯士兵在儿童面前扔手榴弹
+
+https://zhuanlan.zhihu.com/p/658019757
+
+从传票到葬礼：俄罗斯动员兵的命运
+
 https://zhuanlan.zhihu.com/p/629858714
 
 曾杀害苏联红军 俄罗斯老兵猎手不幸被乌克兰国防军击毙
@@ -196,21 +261,3 @@ Without gas or without you? – The answer is without you. Without electricity o
 Freedom comes at a high price. But slavery has an even higher price.
 
 虽然自由代价很高，但奴隶的代价更高！自由是一代人的代价，奴隶却是一代又一代人的，代价代代相传，我们忍了下来，抵挡了攻击、威胁、核威胁、恐怖和导弹袭击。这个冬天我们也会熬过去，因为我们知道我们为何而战！
-
-This year began on February 24. Without prefaces and preludes.
-
-今年是从2月24日开始的，没有序言也没有前奏。
-
-On February 24, millions of us made a choice. Not a white flag, but a blue and yellow flag. Not escaping, but meeting. Meeting the enemy. Resisting and fighting.
-
-在2月24日，我们成千上万人做出了选择：不是苍白的降幡，而是蓝黄的战旗；不是掉头逃亡，而是抬头面对——面对着敌人，抵抗并且奋战。
-
-We were told: you have no other option but to surrender. We say: we have no other option than to win.
-
-我们被告知除了投降别无选择，我们回应说除了胜利别无选择。
-
-for me he is nobody, nobody.
-
-一年前的今天，就在这个地方，早上七点左右，我向你们发表了简短的讲话。它只持续了67秒。它包含了两件最重要的事情，过去和现在。俄罗斯对我们发动了全面战争。我们很坚强。我们已准备好应对任何事情。我们会打败所有人。因为我们是乌克兰！
-
-今天，向20世纪最重要的胜利致敬，我们都在等待和接近一个新的伟大日子--一个新的胜利。我们的胜利。乌克兰的胜利日。

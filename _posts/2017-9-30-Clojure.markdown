@@ -320,6 +320,14 @@ $ROOT/node" ${INSPECT:-} "$ROOT/out/server-main.js" --compatibility=1.63 --accep
 
 ---
 
+问题：
+
+连接远程服务器时一直要求输入密码的问题。
+
+Ctrl+Shift+P: remote-ssh: kill vscode server on host
+
+---
+
 参考：
 
 https://blog.csdn.net/wyg1997/article/details/101460961

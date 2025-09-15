@@ -27,6 +27,20 @@ ASB：Advanced System Bus
 
 APB：Advanced Peripheral Bus
 
+---
+
+Outstanding Transaction：每发一次读/写地址命令就算产生1个transaction。如果Master不等上一次transaction完成就继续发新命令，那么这些“在路上”的transaction就称为outstanding。OT就是“已发命令但未完成响应”的事务个数；AXI 通过允许OT>1来实现多事务并行，从而提高带宽与性能，代价是更多的缓冲与管理逻辑。
+
+同样的，Slave可以不按请求顺序返回数据，不同事务的数据节拍甚至可以交错返回。
+
+为了在这种“乱序/交织”环境下，不把数据张冠李戴，AXI协议引入ID标签：
+
+ARID（Address Read ID）：Master → Slave
+
+RID（Read ID）：Slave → Master
+
+同一个事务的ARID和RIS数值相同，只是出现在不同通道。
+
 ## Others
 
 SERDES是英文SERializer(串行器)/DESerializer(解串器)的简称。

@@ -207,6 +207,24 @@ https://zhuanlan.zhihu.com/p/694560307
 
 麒麟9010微架构评测：轻舟已过万重山
 
+# Intel
+
+Performance Core
+
+Efficient Core
+
+https://zhuanlan.zhihu.com/p/1941097136155494318
+
+Intel Core核心发展简史-1：疯魔Pentium 4带来的灾难与Pentium 3的传承
+
+https://zhuanlan.zhihu.com/p/1943346856122901845
+
+Intel Core核心发展简史-2：酷睿问世，谁与匹敌？
+
+https://zhuanlan.zhihu.com/p/1944345283581411627
+
+Intel Core核心发展简史-3：AMD 农企时期，Intel真的在挤牙膏吗？
+
 # 芯片杂烩
 
 我接触到的芯片分门别类罗列如下：

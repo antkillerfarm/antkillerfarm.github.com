@@ -145,6 +145,10 @@ https://www.zhihu.com/question/605443737
 
 两蹶名将、罗斯震动
 
+https://zhuanlan.zhihu.com/p/1950933219731048188
+
+“我们不会停下，直到普京倒台”，与普京作对的俄罗斯人这样说
+
 ---
 
 俄罗斯的胜利并没有阻止车臣争取自由的斗争。车臣人继续与俄罗斯作战，首先是在车臣本土，然后是叙利亚和乌克兰。正是在乌克兰，寻求自由的车臣人与卡德罗夫家族的车臣军队对峙。
@@ -178,23 +182,3 @@ https://www.zhihu.com/answer/2388399516
 https://zhuanlan.zhihu.com/p/585460483
 
 “我们在乌克兰保卫自己的国家”——格鲁吉亚志愿军团简介
-
-https://www.163.com/dy/article/HV1M6LQL05533SBL.html
-
-车臣总统担心FSB下毒，卡德罗夫“肾病严重”，不相信莫斯科医生
-
-https://zhuanlan.zhihu.com/p/619576649
-
-车臣人与乌克兰人对抗俄罗斯：我们等待在巴赫穆特的胜利
-
-https://zhuanlan.zhihu.com/p/646840403
-
-一半以上临阵脱逃 车臣悍将卡德罗夫在乌克兰的大杂烩军团
-
-https://zhuanlan.zhihu.com/p/696243650
-
-英雄哀晓身后事 车臣悍将卡德罗夫痛知亲信手足恐被普京总统清算
-
-https://www.zhihu.com/answer/114658831617
-
-阿米娜·维克托罗芙娜·奥库耶娃

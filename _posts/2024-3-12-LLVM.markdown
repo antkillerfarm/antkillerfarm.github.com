@@ -153,6 +153,26 @@ https://llvmflow.kc-ml2.com/
 
 一个LLVM的可视化工具
 
+## 基本概念
+
+TheModule：包含函数和全局变量的LLVM结构。
+
+NamedValues：映射跟踪在当前作用域中定义了哪些值，以及它们的LLVM表示是什么。(换句话说，它是代码的符号表)
+
+---
+
+https://llvm.org/docs/LangRef.html
+
+LLVM Language Reference Manual
+
+LLVM的汇编语言和其他汇编语言不同，它是SSA形式的。
+
+---
+
+`llvm-config`是LLVM的`pkg-config`：专门给编译器和构建系统用的“查询+生成器”。
+
+`llvm-config --cxxflags --ldflags --system-libs --libs core`
+
 ## ADT
 
 ADT（Abstract Data Type）是LLVM定义的一套高级数据类型。

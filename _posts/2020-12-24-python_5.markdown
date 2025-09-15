@@ -113,6 +113,12 @@ https://mp.weixin.qq.com/s/UVKOU11dfWwP9Uyw9E400Q
 
 https://python-docx.readthedocs.io/en/latest/
 
+---
+
+老版本Excel（.xls）使用xlrd/xlwt，新版Excel（.xlsx）使用openpyxl。
+
+---
+
 参考：
 
 https://mp.weixin.qq.com/s/lEtE3ejBLzmm9_eo-_8NBg

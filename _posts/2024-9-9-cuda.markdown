@@ -133,6 +133,12 @@ https://research.colfax-intl.com/cutlass-tutorial-wgmma-hopper/
 
 CUTLASS Tutorial: Fast Matrix-Multiplication with WGMMA on NVIDIA® Hopper™ GPUs
 
+## Tile IR
+
+Tile based的编程，逐渐替代传统的SIMT编程，成为LLM时代的首选。
+
+![](/images/img6/Tile_IR.png)
+
 ## PTX
 
 PTX (Parallel Thread Execution) 是NVIDIA GPU的伪指令集，之所以加个伪字，主要是因为这个指令集并不是真的硬件指令集，而仅仅是个抽象指令集。

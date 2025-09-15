@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Large Language Model（三）——LLAMA, Chinchilla Law, MoE
+title:  Large Language Model（三）——LLAMA, Chinchilla Law
 category: Attention 
 ---
 
@@ -195,27 +195,23 @@ https://blog.csdn.net/v_JULY_v/article/details/140659420
 
 一文速览Llama 3.1——对其92页paper的全面细致解读：涵盖语言、视觉、语音的架构、原理
 
+---
+
+![](/images/img6/llama3.png)
+
+和原始的transformer只在第一个block之前进行位置编码不同，llama 3的每个block都会进行位置编码，这是为了在整个模型中持续保持对相对位置信息的感知能力。
+
+ROPE移动到了QKV生成之后，且只对QK做ROPE。
+
+苏神的blog讲述了为什么不对V做ROPE的原因：
+
+https://kexue.fm/archives/10862
+
+第二类旋转位置编码
+
 ## GPT-J
 
 GPT-J是一个由EleutherAI开发的自然语言处理（NLP）模型，基于GPT-3的架构，拥有6B个参数。它在800GB的开源文本数据集上进行训练，具有强大的语言生成和理解能力。
-
-# LLM应用
-
-![](/images/img6/LLM_IC.png)
-
-大语言模型参与的芯片前端设计迭代流程
-
-https://zhuanlan.zhihu.com/p/1917883331829273687
-
-Devin炮轰Claude：别再搞Multi-Agent了
-
----
-
-MCP（Model Context Protocol）由Anthropic于2024年11月推出，是一个开放标准协议，用于统一大模型与外部工具、数据源之间的交互方式。
-
-https://zhuanlan.zhihu.com/p/1895177200665350365
-
-大白话聊一聊Tool、MCP和Agent来龙去脉
 
 # Chinchilla Law
 
@@ -272,31 +268,3 @@ https://zhuanlan.zhihu.com/p/667489780
 https://zhuanlan.zhihu.com/p/666997679
 
 大Batch训练LLM探索
-
-# MoE
-
-Mixture of Experts(MoE)
-
-![](/images/img5/MoE.png)
-
-![](/images/img6/switch_transformer.png)
-
----
-
-![](/images/img6/MoE.png)
-
-![](/images/img6/expert_parallel.png)
-
-挑出模长最大的k个向量来逼近n个向量之和：模长越大的向量，在求和过程中越不容易被抵消，从而作用越突出。
-
-https://kexue.fm/archives/10699
-
-MoE环游记：从几何意义出发
-
----
-
-开源项目：
-
-https://github.com/XueFuzhao/OpenMoE
-
-https://github.com/laekov/fastmoe
