@@ -9,6 +9,60 @@ category: DL
 
 # 深度学习常用术语解释
 
+## Batch Normalization（续）
+
+参考：
+
+http://blog.csdn.net/malefactor/article/details/51476961
+
+Batch Normalization导读
+
+http://www.cnblogs.com/neopenx/p/5211969.html
+
+从Bayesian角度浅析Batch Normalization
+
+http://blog.csdn.net/hjimce/article/details/50866313
+
+Batch Normalization学习笔记
+
+https://buptldy.github.io/2016/08/18/2016-08-18-Batch_Normalization/
+
+Implementation of Batch Normalization Layer（中文blog）
+
+https://www.zhihu.com/question/38102762
+
+深度学习中 Batch Normalization为什么效果好？
+
+https://mp.weixin.qq.com/s/OAn8y_uJTgyrtS2ZCyudlg
+
+Batch Normalization原理及其TensorFlow实现
+
+http://blog.csdn.net/u013709270/article/details/70949304
+
+深度神经网络训练的必知技巧
+
+https://mp.weixin.qq.com/s/Oy2GIZLbQxmXMCLzMapWHQ
+
+Batch Normalization的分析与展望
+
+https://www.jianshu.com/p/35a3bf866c46
+
+浅析数据标准化和归一化，优化机器学习算法输出结果
+
+https://blog.csdn.net/u010315668/article/details/80374711
+
+机器学习之特征归一化（normalization）
+
+https://www.jianshu.com/p/95a8f035c86c
+
+归一化（Normalization）、标准化（Standardization）和中心化/零均值化（Zero-centered）
+
+https://mp.weixin.qq.com/s/gWcejm_CMGPKes6tUhbQ5A
+
+BatchNorm的避坑指南
+
+# 深度学习常用术语解释
+
 ## 鞍点
 
 在微分方程中，沿着某一方向是稳定的，而另一方向是不稳定的奇点，叫做鞍点（Saddle point）。在泛函中，既不是极大值点也不是极小值点的临界点，叫做鞍点。在矩阵中，一个数在所在行中是最大值，而在所在列中是最小值，则被称为鞍点。在物理上要广泛一些，指在一个方向是极大值，另一个方向是极小值的点。
@@ -254,69 +308,3 @@ https://mp.weixin.qq.com/s/dnElNURJ6xfWHJVf_yeT8w
 https://www.jianshu.com/p/f0674e48894c
 
 Tensorflow反卷积（DeConv）实现原理
-
-## 参考
-
-http://blog.csdn.net/Fate_fjh/article/details/52882134
-
-卷积神经网络系列blog
-
-https://zhuanlan.zhihu.com/p/47184529
-
-卷积神经网络（CNN）详解
-
-http://mp.weixin.qq.com/s/YRwGwelyA3VOYZ4XGAjUBw
-
-CNN感受野首次可视化：深入解读及计算指南
-
-https://mp.weixin.qq.com/s/EJyG3Y4EHTGMm_Q1mY4RvA
-
-CNN入门手册（上）
-
-https://mp.weixin.qq.com/s/T3tHFdjnQh4asE0V25vTog
-
-CNN入门手册（中）
-
-https://mp.weixin.qq.com/s/chsDjS39qcoHICUNbSdQHQ
-
-长文揭秘图像处理和卷积神经网络架构
-
-https://mp.weixin.qq.com/s/nIbfiDXkqkpdLzQo2Gmc2Q
-
-利用卷积神经网络处理CIFAR图像分类
-
-https://mp.weixin.qq.com/s/5BMU7SRQeuDg68XDcOUBZw
-
-训练集样本不平衡问题对CNN的影响
-
-https://mp.weixin.qq.com/s/p-wZ_6ZQW-zXzDqmRenNow
-
-深度学习入门：几幅手稿讲解CNN
-
-https://mp.weixin.qq.com/s/xXf7hTfH-vx4YbzlZVQucA
-
-CNN入门再介绍
-
-https://mp.weixin.qq.com/s/Q4snAlAi8tPQAyGm0qUy4w
-
-CNN的全面解析
-
-https://mp.weixin.qq.com/s/Do6erhin3W4dK_-RTAyD6A
-
-卷积神经网络(CNN)概念解释
-
-http://www.qingruanit.net/blog/23930/note5837.html
-
-卷积神经网络（CNN）学习算法之---基于LeNet网络的中文验证码识别
-
-https://mp.weixin.qq.com/s/XiaAPd20YxbM0wDiSTAYMg
-
-深度学习之卷积神经网络(CNN)的模型结构
-
-https://mp.weixin.qq.com/s/x-H6h4sRqTrZlOXKStnhPw
-
-卷积神经网络背后的数学原理
-
-https://mp.weixin.qq.com/s/qIdjHqurqvdahEd0dXYIqA
-
-徒手实现CNN：综述论文详解卷积网络的数学本质

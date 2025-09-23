@@ -11,6 +11,46 @@ category: DL
 
 ## word2vec（续）
 
+### CBOW & Skip-gram
+
+![](/images/article/word2vec.png)
+
+上图是word2vec中使用到的两种模型的示意图。
+
+从图中可知，word2vec虽然使用了神经网络，但是从层数来说，只有3层而已，还谈不上是Deep Learning。但是考虑到DL，基本就是神经网络的同义词，因此这里仍然将word2vec归为DL的范畴。
+
+>深度学习不全是神经网络，周志华教授提出的gcForest就是一个有益的另类尝试。
+
+研究一个神经网络模型，最重要的除了神经元之间的连接关系之外，就是神经网络的输入输出了。
+
+CBOW（Continuous Bag-of-Words Model）模型和Skip-gram（Continuous Skip-gram Model）模型脱胎于n-gram模型，即一个词出现的概率只与它前后的n个词有关。这里的n也被称为窗口大小.
+
+上图中，窗口大小为5，即一个中心词$$\{w_t\}$$+前面的两个词$$\{w_{t-1},w_{t-2}\}$$+后面的两个词$$\{w_{t+1},w_{t+2}\}$$。
+
+| 名称 | CBOW | Skip-gram |
+|:--:|:--:|:--:|
+| 输入 | $$\{w_{t-1},w_{t-2},w_{t+1},w_{t+2}\}$$ | $$\{w_t\}$$ |
+| 输出 | $$\{w_t\}$$ | $$\{w_{t-1},w_{t-2},w_{t+1},w_{t+2}\}$$ |
+| 目标 | 在输入确定的情况下，最大化输出值的概率。 | 在输入确定的情况下，最大化输出值的概率。 |
+
+参考：
+
+https://zhuanlan.zhihu.com/p/27234078
+
+通俗理解Word2Vec之Skip-Gram模型
+
+https://mp.weixin.qq.com/s/reT4lAjwo4fHV4ctR9zbxQ
+
+漫谈Word2vec之skip-gram模型
+
+https://mp.weixin.qq.com/s/9YoeoSpeAXo-QryZ9rxfug
+
+一文理解Skip-Gram上下文的预测算法
+
+https://mp.weixin.qq.com/s/IzWq51xrTYdm5KSQBy7idA
+
+Koan:一段来自彭博社的公案
+
 ### Hierarchical Softmax
 
 word2vec的输出层有两种模型：Hierarchical Softmax和Negative Sampling。
@@ -250,51 +290,3 @@ http://licstar.net/archives/328
 http://geek.csdn.net/news/detail/135736
 
 漫谈词向量之基于Softmax与Sampling的方法
-
-https://mp.weixin.qq.com/s/nLFRJO2QEG_kAmeRYUdT3g
-
-十分钟带你看遍词向量模型
-
-https://zhuanlan.zhihu.com/p/30868040
-
-文本表示的应用与评价
-
-https://mp.weixin.qq.com/s/GOPIIlDBd3vXpgq-a5s2fQ
-
-文本分类特征提取之Word2Vec
-
-https://www.zhihu.com/question/339184168
-
-为什么很多NLP的工作在使用预训练词向量时选择GloVe而不是Word2Vec或其他?
-
-https://mp.weixin.qq.com/s/pOShNO2iOntcGSRMbR9uxg
-
-Word2Vec与GloVe技术浅析与对比
-
-https://mp.weixin.qq.com/s/dUadWioBqIEnG85hJFfBJQ
-
-word2vec在工业界的应用场景
-
-https://mp.weixin.qq.com/s/md3SL076cw0TgZDRlwWG5A
-
-用数据玩点花样！如何构建skim-gram模型来训练和可视化词向量
-
-https://mp.weixin.qq.com/s/HjNjTk_Hs82K87pP3QrNqw
-
-不懂word2vec，还敢说自己是做NLP？
-
-https://mp.weixin.qq.com/s/nHEyJLU18AE-SatW9HKeOw
-
-Word2Vec——深度学习的一小步，自然语言处理的一大步
-
-https://www.zhihu.com/answer/543419468
-
-CNN文本分类中是否可以使用字向量代替词向量？
-
-https://mp.weixin.qq.com/s/zDneR1BU6xvt8cndEF4_Xw
-
-深入浅出Word2Vec原理解析
-
-https://mp.weixin.qq.com/s/CQ9FdFcWuW0Ku3UtbGmmgg
-
-Word Vectors

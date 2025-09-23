@@ -11,6 +11,24 @@ category: Russo Ukrainian War Wind
 
 ## 凡人列传
 
+对于更多在“无极限”康复中心的乌军士兵，他们则有一个坚定的想法——早日回到前线。“无极限”中心副主任、28岁的鲁斯兰·马科洪表示，约70%在此接受治疗的伤残士兵都回到军队继续服役。
+
+上帝将如何审判你那是上帝的事情，我的任务是尽快把你送过去。
+
+瓦西尔·佩莱什，2014年受伤并被敌伪军俘虏。他的手臂上有一个爱国三叉戟纹身，于是顿巴斯敌伪军残忍的砍断了他的手臂。后来，乌方和俄伪方交换俘虏，瓦西尔被交换回来。
+
+2022年2月24日后，瓦西尔再次前往保卫乌克兰，并战死在顿涅茨克地区。
+
+https://new.qq.com/rain/a/20230222A09F1K00
+
+乌医生:70%截肢士兵想重返战场 假肢“供不应求”有工厂开始三班倒
+
+https://www.zhihu.com/question/585793989
+
+乌医生称70%截肢士兵想重返战场，目前乌克兰当地战事进展如何？
+
+---
+
 ![](/images/img4/Ukraine_4.jpg)
 
 这张图里乌克兰人的一座楼房，2月份被轰炸的面目全非，但八个月之后又焕然一新。
@@ -249,15 +267,3 @@ The fate of Ukraine depends only on Ukrainians. No one but ourselves will contro
 When you attack us, you will see our faces, not our backs.
 
 Without gas or without you? – The answer is without you. Without electricity or without you? – Without you. Without water or without you? – Without you. Without food or without you? – Without you.
-
-他们告诉你我们是纳粹。但一个牺牲了超过八百万条生命来消灭纳粹的民族怎么能被称为纳粹呢？我的祖父作为苏联步兵活过了整场战争，在一个独立的乌克兰作为上校死去，我怎么会是纳粹呢？
-
-当我竞选总统时，我说我们每个人都是总统。因为我们都对我们的国家负责。为了我们美丽的乌克兰。现在事实证明，我们每个人都是一名战士。战士在他或她自己的地方。我相信我们每个人都会获胜。
-
-我希望能有光，但情况非常困难，现在有时有光，有时没有光。最重要的是（心）里面要有光。
-
-即使没有电，我们对自己的信仰之光也不会被熄灭。
-
-Freedom comes at a high price. But slavery has an even higher price.
-
-虽然自由代价很高，但奴隶的代价更高！自由是一代人的代价，奴隶却是一代又一代人的，代价代代相传，我们忍了下来，抵挡了攻击、威胁、核威胁、恐怖和导弹袭击。这个冬天我们也会熬过去，因为我们知道我们为何而战！

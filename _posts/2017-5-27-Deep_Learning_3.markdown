@@ -9,6 +9,30 @@ category: DL
 
 # 神经元激活函数（续）
 
+## 稀疏性
+
+从数学上来看，非线性的Sigmoid函数对中央区的信号增益较大，对两侧区的信号增益小，在信号的特征空间映射上，有很好的效果。
+
+从神经科学上来看，中央区酷似神经元的兴奋态，两侧区酷似神经元的抑制态，因而在神经网络学习方面，可以将重点特征推向中央区，将非重点特征推向两侧区。
+
+无论是哪种解释，看起来都比早期的线性激活函数$$y=x$$,阶跃激活函数高明了不少。
+
+2001年，Attwell等人基于大脑能量消耗的观察学习上，推测神经元编码工作方式具有稀疏性和分布性。
+
+2003年，Lennie等人估测大脑同时被激活的神经元只有1~4%，进一步表明神经元工作的稀疏性。
+
+从信号方面来看，即神经元同时只对输入信号的少部分选择性响应，大量信号被刻意的屏蔽了，这样可以提高学习的精度，更好更快地提取稀疏特征。
+
+从这个角度来看，在经验规则的初始化W之后，传统的Sigmoid系函数同时近乎有一半的神经元被激活，这不符合神经科学的研究，而且会给深度网络训练带来巨大问题。
+
+参考：
+
+http://www.cnblogs.com/neopenx/p/4453161.html
+
+ReLu(Rectified Linear Units)激活函数
+
+https://en.wikipedia.org/wiki/Activation_function
+
 ## ReLU
 
 ReLU(Rectified Linear Units)激活函数的定义如下：
@@ -237,55 +261,3 @@ Standardization：
 $$x'=\frac{x-\overline{x}}{\sigma}$$
 
 Standardization虽然也能约束取值空间，但没有Normalization那么严格。它的主要目的是**将数据映射为正态分布**，因此对于异常点，超出$$3\sigma$$也是有可能的。
-
----
-
-参考：
-
-http://blog.csdn.net/malefactor/article/details/51476961
-
-Batch Normalization导读
-
-http://www.cnblogs.com/neopenx/p/5211969.html
-
-从Bayesian角度浅析Batch Normalization
-
-http://blog.csdn.net/hjimce/article/details/50866313
-
-Batch Normalization学习笔记
-
-https://buptldy.github.io/2016/08/18/2016-08-18-Batch_Normalization/
-
-Implementation of Batch Normalization Layer（中文blog）
-
-https://www.zhihu.com/question/38102762
-
-深度学习中 Batch Normalization为什么效果好？
-
-https://mp.weixin.qq.com/s/OAn8y_uJTgyrtS2ZCyudlg
-
-Batch Normalization原理及其TensorFlow实现
-
-http://blog.csdn.net/u013709270/article/details/70949304
-
-深度神经网络训练的必知技巧
-
-https://mp.weixin.qq.com/s/Oy2GIZLbQxmXMCLzMapWHQ
-
-Batch Normalization的分析与展望
-
-https://www.jianshu.com/p/35a3bf866c46
-
-浅析数据标准化和归一化，优化机器学习算法输出结果
-
-https://blog.csdn.net/u010315668/article/details/80374711
-
-机器学习之特征归一化（normalization）
-
-https://www.jianshu.com/p/95a8f035c86c
-
-归一化（Normalization）、标准化（Standardization）和中心化/零均值化（Zero-centered）
-
-https://mp.weixin.qq.com/s/gWcejm_CMGPKes6tUhbQ5A
-
-BatchNorm的避坑指南

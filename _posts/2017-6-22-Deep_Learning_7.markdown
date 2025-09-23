@@ -7,6 +7,56 @@ category: DL
 * toc
 {:toc}
 
+# 词向量（续）
+
+https://mp.weixin.qq.com/s/nLFRJO2QEG_kAmeRYUdT3g
+
+十分钟带你看遍词向量模型
+
+https://zhuanlan.zhihu.com/p/30868040
+
+文本表示的应用与评价
+
+https://mp.weixin.qq.com/s/GOPIIlDBd3vXpgq-a5s2fQ
+
+文本分类特征提取之Word2Vec
+
+https://www.zhihu.com/question/339184168
+
+为什么很多NLP的工作在使用预训练词向量时选择GloVe而不是Word2Vec或其他?
+
+https://mp.weixin.qq.com/s/pOShNO2iOntcGSRMbR9uxg
+
+Word2Vec与GloVe技术浅析与对比
+
+https://mp.weixin.qq.com/s/dUadWioBqIEnG85hJFfBJQ
+
+word2vec在工业界的应用场景
+
+https://mp.weixin.qq.com/s/md3SL076cw0TgZDRlwWG5A
+
+用数据玩点花样！如何构建skim-gram模型来训练和可视化词向量
+
+https://mp.weixin.qq.com/s/HjNjTk_Hs82K87pP3QrNqw
+
+不懂word2vec，还敢说自己是做NLP？
+
+https://mp.weixin.qq.com/s/nHEyJLU18AE-SatW9HKeOw
+
+Word2Vec——深度学习的一小步，自然语言处理的一大步
+
+https://www.zhihu.com/answer/543419468
+
+CNN文本分类中是否可以使用字向量代替词向量？
+
+https://mp.weixin.qq.com/s/zDneR1BU6xvt8cndEF4_Xw
+
+深入浅出Word2Vec原理解析
+
+https://mp.weixin.qq.com/s/CQ9FdFcWuW0Ku3UtbGmmgg
+
+Word Vectors
+
 # RNN
 
 ## RNN的基本结构
@@ -242,45 +292,3 @@ forget bias的初始值可以设为以1为均值，这对于训练很有好处�
 ![](/images/article/LSTM_7.png)
 
 上图是一个改动较大的变体**Gated Recurrent Unit（GRU）**。它将忘记门和输入门合成了一个单一的更新门。同样还混合了细胞状态和隐藏状态，和其他一些改动。最终的模型比标准的 LSTM 模型要简单，也是非常流行的变体。
-
-## 参考
-
-http://www.csdn.net/article/2015-06-05/2824880
-
-深入浅出LSTM神经网络
-
-https://mp.weixin.qq.com/s/y2kV4ye2zr1HYvZd3APeWA
-
-难以置信！LSTM和GRU的解析从未如此清晰
-
-https://blog.csdn.net/zhangxb35/article/details/70060295
-
-RNN, LSTM, GRU公式总结
-
-https://zhuanlan.zhihu.com/p/25821063
-
-循环神经网络——scan实现LSTM
-
-http://blog.csdn.net/a635661820/article/details/45390671
-
-LSTM简介以及数学推导(FULL BPTT)
-
-http://blog.csdn.net/dark_scope/article/details/47056361
-
-RNN以及LSTM的介绍和公式梳理
-
-https://mp.weixin.qq.com/s/x3y9WTuVFYQb60eJvw02HQ
-
-如何解决LSTM循环神经网络中的超长序列问题
-
-https://mp.weixin.qq.com/s/IhCfoabRrtjvQBIQMaPpNQ
-
-从任务到可视化，如何理解LSTM网络中的神经元
-
-https://mp.weixin.qq.com/s/GGpaFZ0crP_NQ564d79hFw
-
-LSTM、GRU与神经图灵机：详解深度学习最热门的循环神经网络
-
-https://mp.weixin.qq.com/s/0bBTVjkfAK2EzQiaFcUjBA
-
-LSTM入门必读：从基础知识到工作方式详解

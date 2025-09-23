@@ -229,3 +229,7 @@ https://www.zhihu.com/question/31304026
 https://www.zhihu.com/question/571811693
 
 现在usb口普遍都有过流保护为什么还会烧南桥的例子啊?
+
+https://www.zhihu.com/question/621839053
+
+USB 3.0的理论速度是USB 2.0的10倍，为什么实际速度达不到2.0实际速度的10倍？

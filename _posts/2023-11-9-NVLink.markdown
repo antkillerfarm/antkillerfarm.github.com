@@ -270,5 +270,3 @@ Blackwell架构里的Tensor Memory（TMEM）是一块专门为第五代Tensor Co
 Scale Out是指Application可以在水平方向上扩展。一般对数据中心的应用而言，Scale out指的是当添加更多的机器时，应用仍然可以很好的利用这些机器的资源来提升自己的效率从而达到很好的扩展性。
 
 Scale Up是指Application可以在垂直方向上扩展。一般对单台机器而言，Scale Up值得是当某个计算节点（机器）添加更多的CPU Cores，存储设备，使用更大的内存时，应用可以很充分的利用这些资源来提升自己的效率从而达到很好的扩展性。
-
-从Scale层面来看，紧耦合是在单卡性能受到工艺/面积限制的情况下的Scale Up，而松耦合更多的是Scale Out。

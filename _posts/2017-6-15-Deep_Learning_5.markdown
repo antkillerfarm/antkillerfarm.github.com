@@ -9,6 +9,72 @@ category: DL
 
 # CNN（续）
 
+## 参考
+
+http://blog.csdn.net/Fate_fjh/article/details/52882134
+
+卷积神经网络系列blog
+
+https://zhuanlan.zhihu.com/p/47184529
+
+卷积神经网络（CNN）详解
+
+http://mp.weixin.qq.com/s/YRwGwelyA3VOYZ4XGAjUBw
+
+CNN感受野首次可视化：深入解读及计算指南
+
+https://mp.weixin.qq.com/s/EJyG3Y4EHTGMm_Q1mY4RvA
+
+CNN入门手册（上）
+
+https://mp.weixin.qq.com/s/T3tHFdjnQh4asE0V25vTog
+
+CNN入门手册（中）
+
+https://mp.weixin.qq.com/s/chsDjS39qcoHICUNbSdQHQ
+
+长文揭秘图像处理和卷积神经网络架构
+
+https://mp.weixin.qq.com/s/nIbfiDXkqkpdLzQo2Gmc2Q
+
+利用卷积神经网络处理CIFAR图像分类
+
+https://mp.weixin.qq.com/s/5BMU7SRQeuDg68XDcOUBZw
+
+训练集样本不平衡问题对CNN的影响
+
+https://mp.weixin.qq.com/s/p-wZ_6ZQW-zXzDqmRenNow
+
+深度学习入门：几幅手稿讲解CNN
+
+https://mp.weixin.qq.com/s/xXf7hTfH-vx4YbzlZVQucA
+
+CNN入门再介绍
+
+https://mp.weixin.qq.com/s/Q4snAlAi8tPQAyGm0qUy4w
+
+CNN的全面解析
+
+https://mp.weixin.qq.com/s/Do6erhin3W4dK_-RTAyD6A
+
+卷积神经网络(CNN)概念解释
+
+http://www.qingruanit.net/blog/23930/note5837.html
+
+卷积神经网络（CNN）学习算法之---基于LeNet网络的中文验证码识别
+
+https://mp.weixin.qq.com/s/XiaAPd20YxbM0wDiSTAYMg
+
+深度学习之卷积神经网络(CNN)的模型结构
+
+https://mp.weixin.qq.com/s/x-H6h4sRqTrZlOXKStnhPw
+
+卷积神经网络背后的数学原理
+
+https://mp.weixin.qq.com/s/qIdjHqurqvdahEd0dXYIqA
+
+徒手实现CNN：综述论文详解卷积网络的数学本质
+
 https://mp.weixin.qq.com/s/D6ok6dQqyx6cCJKc2M8YpA
 
 从AlexNet剖析-卷积网络CNN的一般结构
@@ -252,42 +318,3 @@ https://mp.weixin.qq.com/s/cpzBBntlFw6BDNUs6emCWw
 
 老惯例这里只对最重要的内容进行摘要。
 
-### CBOW & Skip-gram
-
-![](/images/article/word2vec.png)
-
-上图是word2vec中使用到的两种模型的示意图。
-
-从图中可知，word2vec虽然使用了神经网络，但是从层数来说，只有3层而已，还谈不上是Deep Learning。但是考虑到DL，基本就是神经网络的同义词，因此这里仍然将word2vec归为DL的范畴。
-
->深度学习不全是神经网络，周志华教授提出的gcForest就是一个有益的另类尝试。
-
-研究一个神经网络模型，最重要的除了神经元之间的连接关系之外，就是神经网络的输入输出了。
-
-CBOW（Continuous Bag-of-Words Model）模型和Skip-gram（Continuous Skip-gram Model）模型脱胎于n-gram模型，即一个词出现的概率只与它前后的n个词有关。这里的n也被称为窗口大小.
-
-上图中，窗口大小为5，即一个中心词$$\{w_t\}$$+前面的两个词$$\{w_{t-1},w_{t-2}\}$$+后面的两个词$$\{w_{t+1},w_{t+2}\}$$。
-
-| 名称 | CBOW | Skip-gram |
-|:--:|:--:|:--:|
-| 输入 | $$\{w_{t-1},w_{t-2},w_{t+1},w_{t+2}\}$$ | $$\{w_t\}$$ |
-| 输出 | $$\{w_t\}$$ | $$\{w_{t-1},w_{t-2},w_{t+1},w_{t+2}\}$$ |
-| 目标 | 在输入确定的情况下，最大化输出值的概率。 | 在输入确定的情况下，最大化输出值的概率。 |
-
-参考：
-
-https://zhuanlan.zhihu.com/p/27234078
-
-通俗理解Word2Vec之Skip-Gram模型
-
-https://mp.weixin.qq.com/s/reT4lAjwo4fHV4ctR9zbxQ
-
-漫谈Word2vec之skip-gram模型
-
-https://mp.weixin.qq.com/s/9YoeoSpeAXo-QryZ9rxfug
-
-一文理解Skip-Gram上下文的预测算法
-
-https://mp.weixin.qq.com/s/IzWq51xrTYdm5KSQBy7idA
-
-Koan:一段来自彭博社的公案

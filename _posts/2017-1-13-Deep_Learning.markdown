@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（一）——人工智能, 前言, MP神经元模型, BP算法
+title:  深度学习（一）——人工智能, 前言, MP神经元模型
 category: DL 
 ---
 
@@ -136,6 +136,14 @@ Hinton拿了图灵奖后，多伦多大学都不给他提供独立办公室，�
 
 Hinton具体技术是懂的，因为他在多伦多大学没那么多学生给他干活，他得亲自干一部分（虽然拿诺奖后他感谢说，活都是学生干的）。
 
+---
+
+朱在九十年代博士生论文中，成功的将EM最大熵原理，以及贝叶斯框架为代表的统计学工具引入视觉算法设计中，问题建模典型算法如FRAME。其后在本世纪初2002年左右DDMCMC图像分割算法可以看作是这一设计思想的集大成。
+
+https://zhuanlan.zhihu.com/p/1950888664159721144
+
+朱松纯早中期视觉算法中的执念
+
 # MP神经元模型
 
 MP神经元模型是1943年，由Warren McCulloch和Walter Pitts提出的。
@@ -201,39 +209,3 @@ https://mp.weixin.qq.com/s/W0mVk_KtL2Tr_Uo-1el7Aw
 https://mp.weixin.qq.com/s/3C5b1cd4PwoYeAEkj5wbYw
 
 用小学数学带你感受人工智能的魅力
-
-# ANN简史
-
-![](/images/article/ANN_history.png)
-
-![](/images/img4/brain.png)
-
-参考：
-
-https://mp.weixin.qq.com/s/0OqqdbUWlWIbfBrRdMs4PA
-
-洪小文：以科学的方式赤裸裸地剖析人工智能：混沌初开
-
-https://mp.weixin.qq.com/s/_G08-3g4QPau2_ZLcsm6-Q
-
-洪小文：以科学的方式赤裸裸地剖析AI（二）：从寒冬到复兴
-
-https://mp.weixin.qq.com/s/yWBcK5mEK0AxusVnPt0VNA
-
-洪小文：以科学的方式赤裸裸地剖析AI（三）：人的智慧在哪里？
-
-https://mp.weixin.qq.com/s/DkAFMDOnJKkdpV7bnkSZqQ
-
-洪小文：以科学的方式赤裸裸地剖析AI（四）：未来是人工智能+人类智能
-
-https://www.visualcapitalist.com/ai-revolution-infographic/
-
-Visualizing the AI Revolution in One Infographic
-
-https://blog.csdn.net/OneFlow_Official/article/details/125013611
-
-深度学习六十年简史
-
-https://mp.weixin.qq.com/s/TfwA4x8dU_rMhC0fuE-xYw
-
-人工智能300年

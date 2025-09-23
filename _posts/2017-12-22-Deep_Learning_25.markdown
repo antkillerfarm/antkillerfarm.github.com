@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十五）——多任务学习, DLSS
+title:  深度学习（二十五）——多任务学习, DLSS, 神经元激活函数进阶（二）
 category: DL 
 ---
 
@@ -226,3 +226,132 @@ TAA这一类算法利用了渲染图片的时域连贯性（Temporal coherency�
 单帧的算法结果会模糊并且会和原生渲染不一致，而且帧间也经常会有抖动。
 
 多帧的算法则需要用各种启发式的方法去解决各种过去帧和当前帧场景样本不一致的问题。
+
+# 神经元激活函数进阶
+
+### hard sigmoid
+
+$$\text{HardSigmoid}(x)=\begin{cases}
+0, & x<-2.5 \\
+0.2x, & -2.5\le x \le 2.5 \\
+1, & x>2.5 \\
+\end{cases}$$
+
+![](/images/img3/hard_sigmoid2.png)
+
+### soft sign
+
+$$\text{softsign}(x)=\frac{x}{1+\mid x\mid }$$
+
+### Hardswish
+
+$$Hardswish(x) = x\frac{RELU6(x+3)}{6} = 
+\left\{
+\begin{aligned}
+&0, & \text{if } x \leq -3 \\
+&x, & \text{if } x \geq 3 \\
+&\frac{x(x+3)}{6}, & \text{otherwise}
+\end{aligned}
+\right.
+$$
+
+### Mish
+
+$$Mish(x)=x\tanh (\ln(1+e^x))$$
+
+参考：
+
+https://mp.weixin.qq.com/s/i8aShQvJhSgP7KY5Qgm36A
+
+ReLU的继任者Mish：一个新的state of the art的激活函数
+
+https://mp.weixin.qq.com/s/a_roXfjNX2szJMUrww0Fmg
+
+YOLOv4中的Mish激活函数
+
+### soft relu
+
+$$soft\_ relu(x) = \ln(1 + \exp(\max(\min(x, threshold), -threshold)))$$
+
+### SELU
+
+![](/images/img4/SELU.png)
+
+$$SELU(x) = scale * (\max(0,x) + \min(0, \alpha * (\exp(x) - 1)))$$
+
+$$\alpha = 1.6732632423543772848170429916717$$
+
+$$scale = 1.0507009873554804934193349852946$$
+
+### CELU
+
+![](/images/img4/CELU.png)
+
+$$CELU(x) = \max(0,x) + \min(0, \alpha * (\exp(x/\alpha) - 1))$$
+
+### CRELU
+
+$$CReLU(x)= Concat[ ReLU(x), ReLU(−x) ]$$
+
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/22142013
+
+深度学习中的激活函数导引
+
+http://blog.csdn.net/u012328159/article/details/69898137
+
+几种常见的激活函数
+
+https://mp.weixin.qq.com/s/Hic01RxwWT_YwnErsJaipQ
+
+什么是激活函数？
+
+https://mp.weixin.qq.com/s/4gElB_8AveWuDVjtLw5JUA
+
+深度学习激活函数大全
+
+https://mp.weixin.qq.com/s/7DgiXCNBS5vb07WIKTFYRQ
+
+从ReLU到Sinc，26种神经网络激活函数可视化
+
+http://www.cnblogs.com/ymjyqsx/p/6294021.html
+
+PReLU与ReLU
+
+http://www.cnblogs.com/pinard/p/6437495.html
+
+深度神经网络（DNN）损失函数和激活函数的选择
+
+https://mp.weixin.qq.com/s/VSRtjIH1tvAVhGAByEH0bg
+
+21种NLP任务激活函数大比拼：你一定猜不到谁赢了
+
+https://www.cnblogs.com/makefile/p/activation-function.html
+
+激活函数(ReLU, Swish, Maxout)
+
+https://mp.weixin.qq.com/s/YVi9ke3VSidBvzfLPjMkZg
+
+激活函数-从人工设计到自动搜索
+
+https://mp.weixin.qq.com/s/XttlCNKGvGZrD7OQZOQGnw
+
+如何发现“将死”的ReLu？
+
+https://mp.weixin.qq.com/s/_qeqicHWnJ50BfiQpLWVVA
+
+Dynamic ReLU：微软推出提点神器，可能是最好的ReLU改进
+
+https://mp.weixin.qq.com/s/jMLarSpq3Wg0OIrRIW26dA
+
+从Binary到Swish——激活函数深度详解
+
+https://mp.weixin.qq.com/s/IuZsTKGesgTw1ATXx4OBEA
+
+深度学习最常用的10个激活函数
+
+https://blog.csdn.net/shuzfan/article/details/77807550
+
+CReLU激活函数

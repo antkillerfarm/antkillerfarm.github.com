@@ -7,6 +7,26 @@ category: DL acceleration
 * toc
 {:toc}
 
+# 快速Transformer（续）
+
+## 参考
+
+https://mp.weixin.qq.com/s/1R_plHqxTLE-Fw3TjYnlJQ
+
+GPU BERT上线性能不合格，看看微信AI的PPoPP论文
+
+https://mp.weixin.qq.com/s/OgTQ3O_6lvOG07U-tjpTDA
+
+如何让Transformer在GPU上跑得更快？快手：需要GPU底层优化
+
+https://zhuanlan.zhihu.com/p/638468472
+
+从FlashAttention到PagedAttention, 如何进一步优化Attention性能
+
+https://blog.csdn.net/v_JULY_v/article/details/144218958
+
+一文通透vLLM与其核心技术PagedAttention：减少KV Cache碎片、提高GPU显存利用率(推理加速利器)
+
 # LLM Inference
 
 A Survey on Efficient Inference for Large Language Models

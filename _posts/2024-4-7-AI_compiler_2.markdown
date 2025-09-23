@@ -213,6 +213,10 @@ https://zhuanlan.zhihu.com/p/1925309765489230184
 
 Triton SPIR-V后端开发：矩阵乘实现验证
 
+https://zhuanlan.zhihu.com/p/1953522198804398390
+
+国产NPU为啥都使用triton这种方式而不是Cuda的方式来自定义算子？
+
 ## NVFuser
 
 NVFuser是NV专门为Pytorch设计的自动化的GPU代码生成器。

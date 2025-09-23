@@ -219,6 +219,8 @@ Generic Addr是一种不携带任何状态或附加信息来声明它属于哪�
 
 一个SP可以执行一个thread，但是实际上并不是所有的thread能够在同一时刻执行。Nvidia把32个threads组成一个warp，warp是调度和运行的基本单元。warp中所有threads并行的执行相同的指令。
 
+![](/images/img6/SIMT.jpg)
+
 https://zhuanlan.zhihu.com/p/266633373
 
 详解CUDA的Context、Stream、Warp、SM、SP、Kernel、Block、Grid

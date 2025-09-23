@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（八）——神经元激活函数进阶
+title:  深度学习（八）——神经元激活函数进阶（一）
 category: DL 
 ---
 
@@ -8,6 +8,48 @@ category: DL
 {:toc}
 
 # LSTM（续）
+
+## 参考
+
+http://www.csdn.net/article/2015-06-05/2824880
+
+深入浅出LSTM神经网络
+
+https://mp.weixin.qq.com/s/y2kV4ye2zr1HYvZd3APeWA
+
+难以置信！LSTM和GRU的解析从未如此清晰
+
+https://blog.csdn.net/zhangxb35/article/details/70060295
+
+RNN, LSTM, GRU公式总结
+
+https://zhuanlan.zhihu.com/p/25821063
+
+循环神经网络——scan实现LSTM
+
+http://blog.csdn.net/a635661820/article/details/45390671
+
+LSTM简介以及数学推导(FULL BPTT)
+
+http://blog.csdn.net/dark_scope/article/details/47056361
+
+RNN以及LSTM的介绍和公式梳理
+
+https://mp.weixin.qq.com/s/x3y9WTuVFYQb60eJvw02HQ
+
+如何解决LSTM循环神经网络中的超长序列问题
+
+https://mp.weixin.qq.com/s/IhCfoabRrtjvQBIQMaPpNQ
+
+从任务到可视化，如何理解LSTM网络中的神经元
+
+https://mp.weixin.qq.com/s/GGpaFZ0crP_NQ564d79hFw
+
+LSTM、GRU与神经图灵机：详解深度学习最热门的循环神经网络
+
+https://mp.weixin.qq.com/s/0bBTVjkfAK2EzQiaFcUjBA
+
+LSTM入门必读：从基础知识到工作方式详解
 
 https://mp.weixin.qq.com/s/jcS4IX7LKCt1E2FVzLWzDw
 
@@ -303,67 +345,3 @@ x, & -1\le x \le 1 \\
 ![](/images/article/hard_tanh.png)
 
 hard tanh也叫做Relu1。
-
-### hard sigmoid
-
-$$\text{HardSigmoid}(x)=\begin{cases}
-0, & x<-2.5 \\
-0.2x, & -2.5\le x \le 2.5 \\
-1, & x>2.5 \\
-\end{cases}$$
-
-![](/images/img3/hard_sigmoid2.png)
-
-### soft sign
-
-$$\text{softsign}(x)=\frac{x}{1+\mid x\mid }$$
-
-### Hardswish
-
-$$Hardswish(x) = x\frac{RELU6(x+3)}{6} = 
-\left\{
-\begin{aligned}
-&0, & \text{if } x \leq -3 \\
-&x, & \text{if } x \geq 3 \\
-&\frac{x(x+3)}{6}, & \text{otherwise}
-\end{aligned}
-\right.
-$$
-
-### Mish
-
-$$Mish(x)=x\tanh (\ln(1+e^x))$$
-
-参考：
-
-https://mp.weixin.qq.com/s/i8aShQvJhSgP7KY5Qgm36A
-
-ReLU的继任者Mish：一个新的state of the art的激活函数
-
-https://mp.weixin.qq.com/s/a_roXfjNX2szJMUrww0Fmg
-
-YOLOv4中的Mish激活函数
-
-### soft relu
-
-$$soft\_ relu(x) = \ln(1 + \exp(\max(\min(x, threshold), -threshold)))$$
-
-### SELU
-
-![](/images/img4/SELU.png)
-
-$$SELU(x) = scale * (\max(0,x) + \min(0, \alpha * (\exp(x) - 1)))$$
-
-$$\alpha = 1.6732632423543772848170429916717$$
-
-$$scale = 1.0507009873554804934193349852946$$
-
-### CELU
-
-![](/images/img4/CELU.png)
-
-$$CELU(x) = \max(0,x) + \min(0, \alpha * (\exp(x/\alpha) - 1))$$
-
-### CRELU
-
-$$CReLU(x)= Concat[ ReLU(x), ReLU(−x) ]$$

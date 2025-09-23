@@ -307,6 +307,24 @@ https://blog.csdn.net/vn9PLgZvnPs1522s82g/article/details/106152333
 
 # NVLink+
 
+## 紧耦合 vs 松耦合（续）
+
+从Scale层面来看，紧耦合是在单卡性能受到工艺/面积限制的情况下的Scale Up，而松耦合更多的是Scale Out。
+
+Super Pod是一种高性能计算架构单元，通常由大量GPU通过高速互联（如NVLink）组成，形成一个逻辑上的单机系统。
+
+Super Cluster是由多个Super Pod或其他计算节点通过网络（如InfiniBand或Ethernet）连接而成的更大规模计算系统。
+
+集群线性加速比：把同样任务从M张GPU扩展到N张GPU时，实测总有效算力与理想线性增长之间的比值。
+
+https://zhuanlan.zhihu.com/p/1952422612014699888
+
+超节点是大模型基础设施的最优解吗？
+
+https://zhuanlan.zhihu.com/p/1952744774143542334
+
+从超节点到微节点：大模型需要什么样的基础设施？
+
 ## NCCL
 
 NCCL是Nvidia Collective multi-GPU Communication Library的简称，它是一个实现多GPU的collective communication通信库，可以在PCIe、Nvlink、InfiniBand上实现较高的通信速度。

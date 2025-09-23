@@ -1,13 +1,61 @@
 ---
 layout: post
-title:  NN Quantization（三）——混合精度训练
+title:  NN Quantization（三）——量化策略
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# 量化策略（续）
+# 量化策略
+
+上面主要讲了量化格式，这里再讲一下量化相关的策略问题。
+
+## Saturate Quantization
+
+上述各种量化方法都是在保证数值表示范围的情况下，尽可能提高fl或者scale。这种方法也叫做Non-saturation Quantization。
+
+NVIDIA在如下文章中提出了一种新方法：
+
+http://on-demand.gputechconf.com/gtc/2017/presentation/s7310-8-bit-inference-with-tensorrt.pdf
+
+8-bit Inference with TensorRT
+
+![](/images/img2/INT8_3.png)
+
+Saturate Quantization的做法是：将超出上限或下限的值，设置为上限值或下限值。
+
+如何设置合理的Saturate threshold呢？
+
+可以设置一组门限，然后计算每个门限的分布和原分布的相似度，即KL散度，选择最相似分布的门限即可。
+
+参考：
+
+https://blog.csdn.net/u013010889/article/details/90295078
+
+int8量化和tvm实现
+
+## Trainning Quantization
+
+除了上面这些无条件Quantization之外，训练中的Quantization也是一大类算法。
+
+比如下面提到的PACT量化，不仅对weight进行量化，还通过不断训练，限制每一层tensor的数值范围。
+
+参考：
+
+https://mp.weixin.qq.com/s/7rMnzbvp1hjDLuw_oifbng
+
+我们是这样改进PACT量化算法的
+
+## 双重量化
+
+过去的量化算法每一层额外附带两个参数，现在的量化算法一般采用了分组量化的方式。例如，取128个参数作为一组，每一组都会额外增加两个参数。
+
+量化参数（最小值、缩放比例）本身还能再进行量化，称为双重量化。QLoRA采用了这种方式。
+
+https://zhuanlan.zhihu.com/p/665601576
+
+用bitsandbytes、4比特量化和QLoRA打造亲民的LLM
 
 ## per-channel & per-group
 
@@ -100,105 +148,3 @@ https://github.com/bitsandbytes-foundation/bitsandbytes
 https://www.cnblogs.com/chentiao/p/17388568.html
 
 bitsandbytes--Facebook推出8比特优化器大大减少显存
-
-# 混合精度训练
-
-论文：
-
-《Mixed Precision Training》
-
-AMP：Automatic Mixed Precision
-
-LLM的成功证明了增大神经网络的参数规模能够提升模型性能，但同时也增大了对加速器内存、算力及通信传输带宽的要求。为了减少内存占用加快收敛速度，LLM训练往往采用16位半精度浮点格式，例如float16或者bfloat16。
-
-大量实验已经证明可以使用半精度浮点数训练大模型，也不会对模型性能带来显著影响，相反低精度计算作为正则化的一部分，反而能够给模型泛化能力带来好处。但目前低精度训练对模型的统计学影响也并不那么清晰，所以整个训练过程单纯使用低精度浮点运算非常具有挑战性。
-
-PyTorch提供了自动混合精度（AMP）的机制，AMP按需自动调整张量的数据类型（dtype）。例如在AMP autocast上下文时，矩阵乘法matmul的输入张量会被自动转化为半精度浮点类型。AMP也提供了GradScaler，通过自动调整Loss的缩放来防止梯度的下溢和上溢。
-
-PyTorch的AMP优化级别使用apex.amp的O1级，这意味着PyTorch AMP使用黑白名单自动决定使用FP16、BF16还是FP32进行计算，但还有一些特定模型相关的精度敏感的运算并不在AMP的自动upcast名单中，需要开发者手动干预。
-
----
-
-不同算子对计算精度的要求：
-
-Softmax：softmax中有指数运算，容易发生上溢出和下溢出，并且分母有累加操作，目前主流的算子库只使用FP32来实现softmax。
-
-Cross Entropy：cross_entropy用来计算交叉熵损失，和很多损失函数一样，需要使用FP32计算以保持数值稳定性，所以算子实现只接受FP32输入。
-
-Matmul：matmul一般来说可以使用半精度数，但在大语言模型的attention层，attention分数与V张量的矩阵乘法需要用FP32，以便维持数值稳定性，避免上溢，减小累积错误。
-
-layer_norm、Batch_norm、RMSNorm：需要用FP32计算。layer_norm要计算方差，有累加操作，如果用FP16，则计算过程中容易发生上溢和比较大的误差，从而影响最后的收敛。Batch_norm与layer_norm类似，也需要将输入张量upcast到FP32计算。RMSNorm是layer_norm的扩展，在开源LLAMA模型中使用，PyTorch目前并没有提供RMSNorm的实现。如果开发者自己实现，需要注意将输入张量强制upcast到FP32计算，结果可以转回半精度数，主要原因也是它需要计算L2均值, 涉及累加操作，低精度运算容易累积误差。
-
-Conv/Pool：卷积操作属于逐单元矩阵乘法，对精度不敏感，可以使用BF16，不会对模型收敛性产生影响。和卷积类似的还有池化，同样可以使用BF16。ReLU和GeLU属于逐点运算，同样对精度不敏感。
-
-RNNs：RNN一般对精度比较敏感 。LSTM-cell对精度不敏感，可以用BF16。
-
-模型起始与结束层：通常大语言模型的第一层和最后一层对精度敏感，比如GPT的embedding层（词嵌入和位置嵌入层）需要使用FP32。一般的输出层即便不是softmax，计算和输出结果也需要是FP32。
-
-通信算子：涉及到梯度或者激活值累加的通信算子如all_reduce、reduce_scatter，都需要把输入张量upcast到FP32以保证数值稳定性。
-
-批量大小与精度的关系：大规模网络中，batch越大，对数值精度越敏感，所以当batch加大引起收敛问题时，要优先考虑某些运算是否有数值稳定性问题。
-
-浮点精度问题：在GLM-130B等大型模型训练中，浮点精度问题引起的模型Loss起飞常常找不到明确的原因，有些会自动恢复，有些会有GNorm起飞的前兆随之有Loss起飞甚至NaN Loss。此时一种有效策略是跳过异常步的数据或者调整超参数。
-
-BF16训练：用BF16训练深度网络，如果发现不收敛现象，应该尝试使用权重衰减技术，例如设置PyTorch adam优化器的weight_decay超参数（0.1）。
-
-大语言模型预训练中的混合精度：在大语言模型预训练过程中，对于未知的混合精度引起的数值稳定性问题，GLM-130B训练过程中一个可以借鉴的经验是将embedding层的梯度收缩到原来的0.1，或者对embedding层做特别的梯度裁剪。
-
----
-
-pytorch的AMP库使用示例：
-
-```python
-model, optimizer = amp.initialize(model, optimizer, opt_level="O1")
-with amp.scale_loss(loss, optimizer) as scaled_loss:
-    scaled_loss.backward()
-```
-
----
-
-DeepSeek为其FP8低比特训练框架做了以下优化：
-
-- 细粒度量化：将数据分解成更小的组，每个组都使用特定乘数进行调整以保持高精度。
-- 在线量化：在线计算每个1x128激活块或128x128权重块的最大绝对值，在线推算缩放因子，然后将激活或权重在线转化为FP8格式，而不是采用静态的历史数据。
-- 提高累加精度：将GEMM中间结果储存计算升级为FP32（32位浮点），实行高精度累加，然后再转换回FP8。
-
----
-
-https://tensorflow.google.cn/guide/mixed_precision
-
-tensorflow/python/keras/mixed_precision/loss_scale_optimizer.py
-
-https://mp.weixin.qq.com/s/xnszH9WSKGBwqtHUuYua1g
-
-混合精度训练，提速，减内存
-
-https://zhuanlan.zhihu.com/p/56114254
-
-PAI自动混合精度训练---TensorCore硬件加速单元在阿里PAI平台落地应用实践
-
-https://mp.weixin.qq.com/s/zBtpwrQ5HtI6uzYOx5VsCQ
-
-模型训练太慢？显存不够用？这个算法让你的GPU老树开新花
-
-https://mp.weixin.qq.com/s/cYGMZuY7jSrjhUAXlDwD_w
-
-Mixed Precision Training
-
-https://zhuanlan.zhihu.com/p/441591808
-
-混合精度训练原理
-
-https://mp.weixin.qq.com/s/uUxwMFGF9nJiraVQsIqu2Q
-
-PyTorch重大更新：将支持自动混合精度训练！
-
-# 参考
-
-https://mp.weixin.qq.com/s/M79xGWWtJUB6wBVlHXw8ig
-
-低精度神经网络：从数值计算角度优化模型效率
-
-https://www.chiphell.com/thread-1620755-1-1.html
-
-新Titan X的INT8计算到底是什么鬼

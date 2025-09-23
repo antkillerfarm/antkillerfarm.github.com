@@ -165,6 +165,16 @@ SPDK概览
 
 ---
 
+![](/images/img5/DDR.png)
+
+内存芯片 → Bankgroups → Banks
+
+- 同一Bankgroup内的Bank共享某些资源。
+- 不同Bankgroup之间的操作可以更高程度地并行。
+- 访问不同Bankgroup的延迟小于访问同一Bankgroup内不同Bank的延迟。
+
+---
+
 https://zhuanlan.zhihu.com/p/34858149
 
 128G的固态硬盘为什么有的标120G，有的标100G？固态硬盘容量背后的秘密
@@ -177,122 +187,140 @@ https://www.zhihu.com/question/401733153
 
 长江存储的Xtacking技术与英特尔的3D Xpoint技术、SK的4DNAND技术有什么异同点？
 
-# GPU通信技术
+# AI Chip+
 
-## Die To Die
+https://mp.weixin.qq.com/s/XDwTI-gnnFMLjVBbOGKL9w
 
-Universal Chiplet Interconnect Express (UCIE)是一种开放的行业标准互连，可在芯粒（Chiplet）之间提供高带宽、低延迟、节能且具有成本效益的封装连接。由英特尔、AMD、Arm、台积电和三星等众多行业巨头推动。
+清华大学团队研制高能效通用神经网络处理器芯片STICKER-T
 
-UCIe从PCIe扩展而来，是个分层协议，协议层支持PCIe 6.0及CXL 2.0/3.0的生态。
+https://mp.weixin.qq.com/s/xbHP1RFn7F7BbimxgWaKqg
 
-Blackwell采用的是一种叫做NV-HBI（High Bandwitdth Interface）的技术，带宽高达10TB/s。
+Facebook把服务27亿人的AI硬件系统开源了
 
-## 共享数据
+https://mp.weixin.qq.com/s/BD-HAILp3TPvBFlIy6QC4w
 
-共享数据很简单，OpenGL时代的persistent map，让驱动去做同步、做数据搬运，从而给开发者营造“数据随时可得”的假象（当然也可能的确就是随时可得），这就已经达到共享数据的要求了。
+一文看懂机器视觉芯片
 
-共享地址的难度则增加了一些，其目标是为了让你在CPU上跑的链表能直接在GPU等地方使用。x64时代到来使得内存地址扩充到48位，而且CPU上已经全面虚拟地址，GPU也要跟着加上地址转换的能力。
+https://mp.weixin.qq.com/s/PMnNay4CRgVghA4fU9oLqg
 
-共享物理内存则明确表明，实现了上两者的独显（OpenCL的SVM就是前两个要求）也要被排除。那就基本是核显Only（主机的架构也可以看作是核显）。
+牛津大学研发类脑光子芯片，运算速度超人脑1000倍
 
-https://www.zhihu.com/question/430936274
+https://mp.weixin.qq.com/s/e333KjLavEvvpNIL3u1Y4Q
 
-苹果的统一内存和集成显卡与CPU共用内存有什么区别？
+NovuMind异构智能核心技术引领智联网
 
-https://www.zhihu.com/question/22233341
+https://mp.weixin.qq.com/s/fSSyOs4-NXbPTbDjpfJBNQ
 
-CPU与GPU之间是如何通信的？
+Google IPU：互联网巨头纷纷进军芯片行业是为何？
 
-## RDMA
+https://mp.weixin.qq.com/s/S1y4NEx4_Mgwf68S2pexqA
 
-RDMA网卡（Remote Direct Memory Access，这是一种硬件的网络技术，它使得计算机访问远程的内存时无需远程机器上CPU的干预）已经可以提供50~100Gbps的网络带宽和微秒级的传输延迟。
+拿着锤子找钉子，数字芯片领导者比特大陆进军人工智能
 
-目前许多以深度学习为目标应用的GPU机群都部署了这样的网络。
+https://mp.weixin.qq.com/s/gtgPYf939uYRzxAab_LZLQ
 
-UCX是一个建立在RDMA等技术之上的用于数据处理和高性能计算的通信框架，RDMA是其底层核心之一。
+谢源：计算存储一体化，在存储里做深度学习，架构创新实现下一代AI芯片
 
-OpenUCX是UCX的一个开源实现。
+https://mp.weixin.qq.com/s/s-fYxv4z5kkJUFueU2IR7w
 
-![](/images/img5/RDMA.jpg)
+BP表达式与硬件架构：相似性构建更高效的计算单元
 
-RDMA包含Infiniband（IB），RDMA over Converged Ethernet（RoCE）和internet Wide Area RDMA Protocol（iWARP）。三种协议都符合RDMA标准，使用相同的上层接口，在不同层次上有一些差别。
+https://mp.weixin.qq.com/s/1r7G84les7FihqPbSiS0Ng
 
-InfiniBand（直译为“无限带宽”技术，缩写为IB）是一个用于高性能计算的计算机网络通信标准，它具有极高的吞吐量和极低的延迟，用于计算机与计算机之间的数据互连。相当于是面向HPC的以太网的替代品。
+华为首款手机端AI芯片麒麟970
 
-Mellanox Technologies是一家InfiniBand制造商，于2020年被Nvidia收购。
+https://mp.weixin.qq.com/s/z68hk1yqg60QCjgTyzgG2w
 
-| 名称 | 时间 | 带宽 |
-|:--:|:--:|:--:|
-| ConnectX-5 | 2016 | 100Gbps |
-| ConnectX-6 | 2020 | 200Gbps |
-| ConnectX-7 | 2022 | 400Gbps |
-| ConnectX-8 | 2024 | 800Gbps |
+GPU深度学习的“加速神器”
 
-官网：
+https://mp.weixin.qq.com/s/O-NDsFs6AOwl43LyevXtzg
 
-https://www.openucx.org/
+OpenAI发布“块稀疏”GPU内核：实现文本情感分析与图像生成建模当前最优水平
 
----
+https://mp.weixin.qq.com/s/XXef4F9HEZizoWRYXwHitw
 
-NIXL：NVIDIA Inference eXecution Layer
+如何配置一台深度学习工作站?
 
-| 对比点 | NIXL | NCCL | UCX |
-|:--:|:--:|:--:|:--:|
-| **目标场景**  | 推理KV cache、activation搬运 | 训练/推理的集合通信 | 通用网络抽象 |
-| **语义** | 1-sided RDMA put/get 为主 | 集合 allreduce/bcast | 灵活但需自己实现 put/get |
-| **GPU 零拷贝** | 一等公民 | 需要 GPUDirect RDMA | 需额外配置 |
-| **推理友好** | 针对 decode 阶段优化 | 主要用于训练 | 通用，推理需二次封装 |
+https://mp.weixin.qq.com/s/_xFRRkVyN9qevLeek7bFxQ
 
----
+深度学习中GPU和显存分析
 
-参考：
+https://mp.weixin.qq.com/s/k5Xx-nnaf-yfWqGLIY3LEg
 
-https://mp.weixin.qq.com/s/_xcE8RUs0m4gwk3kxpe9jA
+特斯拉的芯片究竟多强
 
-基于HTM/RDMA的可扩展内存事务处理系统
+https://zhuanlan.zhihu.com/p/88927564
 
-https://www.zhihu.com/column/c_1231181516811390976
+窥探神经网络加速器的数据复用（一）
 
-一个RDMA方面的专栏
+https://mp.weixin.qq.com/s/YARcCzQXqnJmWRtV2zd_FQ
 
-https://www.zhihu.com/question/422501188
+国内外AI芯片发展现状
 
-什么是InfiniBand，它和以太网的区别在于什么？
+https://mp.weixin.qq.com/s/b_Hy0JSZ5ZGT9AsczCkp9Q
 
-https://www.cnblogs.com/allcloud/p/8945544.html
+ISSCC 2020：AI芯片架构的转变
 
-InfiniBand 与Intel Omni-Path Architecture
+https://zhuanlan.zhihu.com/p/115219461
 
-https://zhuanlan.zhihu.com/p/580035183
+张量在神经网络加速器中的应用
 
-RoCE vs Infiniband vs TCP/IP
+https://pan.baidu.com/s/1zcXdXTaN3dbJ9VGplViHZw 提取码:ews4
 
-# 光通信
+AI芯片体系架构和软件专题报告会2020论文下载
 
-光互连是物理距离较远的芯片的首选。隔壁的PCIE系列也类似，PCIE 6将是最后一代使用电线的标准，未来的PCIE 7+也将转向光通信。
+https://mp.weixin.qq.com/s/cBVio3W64np8fXwUQs2wIw
 
-OCS是谷歌自研的数据中心光交换机。通常数据中心内数据交换是光电混合网络，设备之间的主要互联通过光缆/铜缆/光电转换器件、以及交换机ASIC/Serdes/PCIE/NVLink等链路实现。与过去在网络层之间多次将信号“从电转换为光，再到电”不同，OCS是一种全光学的连接方案，通过MEMS阵列结合光环路器、波分复用光模块实现光路的灵活切换、以达到直接通过光信号组建交换网络的目的。
+机器学习如何用于芯片系统设计？Jeff Dean推荐Google最新《机器学习系统芯片设计》70页ppt为你讲解
 
-SFP（Small Form-factor Pluggable）和QSFP（Quad Small Form-factor Pluggable）是光纤通信中常用的两种光模块接口类型。最近几年还出现了OSFP封装方式。
+https://zhuanlan.zhihu.com/p/150656419
 
-光模块的单价比较高，通常单个光模块可以到几千甚至几万人民币。由于每个Port都要使用光模块，因此光模块的数量基本与GPU的数量成正比，通常可以达到GPU的4-6倍，因此，仅光模块的成本就很高。
+AI芯片技术发展
 
-南北向（North-South）流量：指的是来自数据中心外的流量，不仅包含来自或访问互联网的流量，也包含和其他数据中心的流量。
+https://mp.weixin.qq.com/s/9fBe6MsUOCDhtp4MSfP2jg
 
-东西向（East-West）流量：指的是来自同一数据中心的流量，比如数据中心中不同Server相互访问的流量。在现在的数据中心中，这一部分流量是大头，通常至少占70%-80%。
+AI处理器热潮正在消退
 
-有些场景也会使用ToR Switch（Top-of-Rack，柜顶交换机），通常是作为Leaf Switch。因为和Server在一个机柜内，其布线会更加简单。
+https://mp.weixin.qq.com/s/JYTqJDlGw6Q2gNLaYIGLcQ
 
-在DGX SuperPod中，由于数据量巨大，因此存储系统是与计算节点分开的，Storage Rack负责管理前者。
+特斯拉芯片究竟怎么样？
 
-https://mp.weixin.qq.com/s/gFalBUQGzezAuXdJfn1n2A
+https://mp.weixin.qq.com/s/cA1AXfpV3ZcMNX9k5XKlww
 
-关于光通信的最强进阶科普
+面向深度神经网络的芯片布图规划问题简介
 
-https://zhuanlan.zhihu.com/p/527363951
+https://zhuanlan.zhihu.com/p/231302709
 
-光通信、光芯片产业链
+聊聊GPU峰值计算能力
 
-https://mp.weixin.qq.com/s/zbe2om-czwGbVBkFsPAwGw
+https://zhuanlan.zhihu.com/p/340775090
 
-万卡GPU集群互联：硬件配置和网络设计
+从Thinker到Evolver：对可演化AI芯片的探索
+
+https://mp.weixin.qq.com/s/MwZ9j1MIwRBrJK4iWKzRqQ
+
+芯故事：和AMD有渊源的那些AI创业公司
+
+https://mp.weixin.qq.com/s/S1fVrSfAM_UJh06Q43s8vA
+
+网络芯片架构的新改变
+
+https://zhuanlan.zhihu.com/p/47904879
+
+AI芯片在5G中的机会
+
+https://mp.weixin.qq.com/s/Z_QVN7OCLqeyMrwK3Sc7qA
+
+AI芯片和传统芯片的区别
+
+https://mp.weixin.qq.com/s/mMiAGH2Yz42xes7jicyygA
+
+“超级芯片”或在十年内诞生，摩尔定律再续一命！（自旋电子逻辑器件“MESO器件”）
+
+https://zhuanlan.zhihu.com/p/503371595
+
+AI芯片（下），自动驾驶里的“水浒卡”
+
+https://mp.weixin.qq.com/s/Vt23nK5zC7Wwv7iiFAFvrQ
+
+高通，玩转DSP和NPU

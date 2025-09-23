@@ -172,6 +172,14 @@ https://zhuanlan.zhihu.com/p/631106302
 
 FlashAttention反向传播运算推导
 
+https://zhuanlan.zhihu.com/p/685020608
+
+flash attention V1 V2 V3 V4 如何加速 attention
+
+https://www.cnblogs.com/rossiXYZ/p/18791822
+
+FlashAttention
+
 ## FlashDecoding
 
 FlashDecoding是FlashAttention项目的一部分，但由于优化方向有所不同，特别单列出来。
@@ -230,6 +238,16 @@ https://zhuanlan.zhihu.com/p/691038809
 
 vLLM核心技术PagedAttention原理
 
+## FlashAttention v4
+
+![](/images/img6/FA4_softmax.png)
+
+- 之前FlashAttention每算完一个tile就“停下来”做一次partial-softmax同步，v4给每一轮分块先估一个“全局共享最大值”，各个tile完全独立地算完再一次性合并，彻底去掉同步点。
+
+- v4把kernel拆成“算当前tile＋预取下一tile”的双缓冲，计算与访存重叠。
+
+- v4在运行时根据Smem/SM数量、序列长度、batch-size做启发式决策，自动挑并行度与缓冲策略，保证哪种场景都能跑在“屋顶线”附近。
+
 ## FlashInfer
 
 FlashInfer是由NVIDIA与CMU、UC Berkeley等机构联合开源的GPU专用LLM推理内核库。将FlashAttention、PageAttention、稀疏 Attention、采样、通信等全部打包，并针对LLM推理服务做了 JIT编译、Paged KV-Cache、变长批量调度等工程化增强。
@@ -260,21 +278,3 @@ $$\lambda = \exp(\lambda_{q1}\!\cdot\!\lambda_{k1}) - \exp(\lambda_{q2}\!\cdot\!
 相当于让第二个分支专门学“噪声模式”，然后显式减掉。
 
 但这样就带来两倍KV Cache + 两次FlashAttention计算的开销。于是作者直接写了一个“一次kernel launch里跑两路”的专用 CUDA kernel，起名叫Differential FlashAttention。
-
-## 参考
-
-https://mp.weixin.qq.com/s/1R_plHqxTLE-Fw3TjYnlJQ
-
-GPU BERT上线性能不合格，看看微信AI的PPoPP论文
-
-https://mp.weixin.qq.com/s/OgTQ3O_6lvOG07U-tjpTDA
-
-如何让Transformer在GPU上跑得更快？快手：需要GPU底层优化
-
-https://zhuanlan.zhihu.com/p/638468472
-
-从FlashAttention到PagedAttention, 如何进一步优化Attention性能
-
-https://blog.csdn.net/v_JULY_v/article/details/144218958
-
-一文通透vLLM与其核心技术PagedAttention：减少KV Cache碎片、提高GPU显存利用率(推理加速利器)

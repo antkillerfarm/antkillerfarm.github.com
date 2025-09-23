@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  NN Quantization（二）——Flexpoint, TF32, FP8, W4A16, FP4, OCP Formats, Posit, 量化策略
+title:  NN Quantization（二）——Flexpoint, TF32, FP8, W4A16, FP4, OCP MX Formats, Posit
 category: DL acceleration 
 ---
 
@@ -165,6 +165,14 @@ https://zhuanlan.zhihu.com/p/680212402
 
 大模型量化技术原理-LLM.int8()、GPTQ
 
+https://www.cnblogs.com/rossiXYZ/p/18903277
+
+大模型量化基础
+
+https://www.cnblogs.com/rossiXYZ/p/18916637
+
+大模型量化方案
+
 ---
 
 Marlin Quantization是Neural Magic推出的一套针对4-bit（INT4）权重量化的高性能GPU推理方案，但在Hopper GPU上表现不佳。因此Neural Magic又针对Hopper GPU推出了Machete Quantization。
@@ -204,9 +212,25 @@ NF4是QLoRA引入的，而FP4目前只有NV的GPU支持。
 
 b4int3的scale复用前3位的数据，再加上自己的1位。但不管怎么变，还是只有16个取值，只是动态范围比前面几种FP4，要大的多。
 
-# OCP Formats
+# OCP MX Formats
+
+官方文档：
+
+https://www.opencompute.org/documents/ocp-microscaling-formats-mx-v1-0-spec-final-pdf
+
+OCP Microscaling Formats (MX) Specification
+
+---
 
 Open Compute Project提出了一种有别于IEEE标准的浮点数格式。
+
+![](/images/img6/MX_format.png)
+
+一个block包含`w+kd` bits的数据。
+
+MX格式用block-wise共享指数X当input scale，用指数域直接相加的方式即时产生output scale，既能在训练端做反向传播，也能在推理端零开销还原，比传统per-channel/per-tensor scale更省带宽、更省寄存器。
+
+---
 
 f6E3M2FNU：
 
@@ -216,11 +240,13 @@ f6E3M2FNU：
 - FN：没有infinity/NaN。
 - U：没有0/负数。
 
-官方文档：
+---
 
-https://www.opencompute.org/documents/ocp-microscaling-formats-mx-v1-0-spec-final-pdf
+参考：
 
-OCP Microscaling Formats (MX) Specification
+https://zhuanlan.zhihu.com/p/705420505
+
+OCP Microscaling Formats(MX)介绍
 
 # Posit
 
@@ -263,53 +289,3 @@ Posit: A Potential Replacement for IEEE 754
 https://github.com/cjdelisle/libposit
 
 https://github.com/stillwater-sc/universal
-
-# 量化策略
-
-上面主要讲了量化格式，这里再讲一下量化相关的策略问题。
-
-## Saturate Quantization
-
-上述各种量化方法都是在保证数值表示范围的情况下，尽可能提高fl或者scale。这种方法也叫做Non-saturation Quantization。
-
-NVIDIA在如下文章中提出了一种新方法：
-
-http://on-demand.gputechconf.com/gtc/2017/presentation/s7310-8-bit-inference-with-tensorrt.pdf
-
-8-bit Inference with TensorRT
-
-![](/images/img2/INT8_3.png)
-
-Saturate Quantization的做法是：将超出上限或下限的值，设置为上限值或下限值。
-
-如何设置合理的Saturate threshold呢？
-
-可以设置一组门限，然后计算每个门限的分布和原分布的相似度，即KL散度，选择最相似分布的门限即可。
-
-参考：
-
-https://blog.csdn.net/u013010889/article/details/90295078
-
-int8量化和tvm实现
-
-## Trainning Quantization
-
-除了上面这些无条件Quantization之外，训练中的Quantization也是一大类算法。
-
-比如下面提到的PACT量化，不仅对weight进行量化，还通过不断训练，限制每一层tensor的数值范围。
-
-参考：
-
-https://mp.weixin.qq.com/s/7rMnzbvp1hjDLuw_oifbng
-
-我们是这样改进PACT量化算法的
-
-## 双重量化
-
-过去的量化算法每一层额外附带两个参数，现在的量化算法一般采用了分组量化的方式。例如，取128个参数作为一组，每一组都会额外增加两个参数。
-
-量化参数（最小值、缩放比例）本身还能再进行量化，称为双重量化。QLoRA采用了这种方式。
-
-https://zhuanlan.zhihu.com/p/665601576
-
-用bitsandbytes、4比特量化和QLoRA打造亲民的LLM

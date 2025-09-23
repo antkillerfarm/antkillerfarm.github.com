@@ -11,6 +11,30 @@ category: Chip
 
 ## DEEPHi（续）
 
+目前的AI Chip战争，入局的玩家基本都解决了芯片有无的问题。体系结构的红利也吃的差不多了，在未来几年不大可能再保持目前的算力增速。因此，未来争夺的焦点将转向软件方面。实际上，今年以来，已经有客户拿友商产品性能来压我们。然而也就是压一下而已，让他弃用他肯定不干。原因无他，我司80%的功能都已经自动化，没人会和好用过不去。
+
+---
+
+2021.11
+
+最近国内比较火的AI芯片初创公司已经换成了：
+
+- 壁仞科技
+- 摩尔线程
+- 沐曦集成
+- 燧原科技
+- 瀚博半导体
+- 登临科技
+- 天数智芯
+
+---
+
+某牛点评：
+
+做一个ASIC其实目前真没有什么大的门槛，不然你以为上海那么多家的ASIC公司是怎么来的，随便拉几个人都敢成立ASIC公司，还不是门槛不高，你让他就那几个人搞个CPU和GPU试试。但是要做一个好的ASIC，适配模型和场景丰富的ASIC，是非常不容易的。而且一旦模型场景丰富，你就不仅仅是在硬件领域所谓的PPA各种挣扎，你还需要在指令级别，或者说通用和性能做妥协，甚至架构上的一些妥协改变。
+
+---
+
 在回马枪看，npu厂商换三代，能玩出代代不兼容。。。
 
 国内海量的npu，随便能跑矩阵的屎，都能跑llm推理，但是一个个都做不明白，也不能和别人形成共识，业界前沿也难跟上，但不妨碍这一票npu厂商，ppt上随手灭老黄。
@@ -289,58 +313,6 @@ Groq，“软件定义硬件”概念的背后
 https://www.zhihu.com/question/510527941
 
 DSA AI芯片，相对GPGPU，能效上有多大优势？是从哪些方面提升了能效？
-
-## Graphcore
-
-Graphcore是一家英国芯片设计企业，成立于2012年。它的产品被称为IPU，主打数据中心的AI训练和推理。
-
-官网：
-
-https://www.graphcore.ai/
-
-文档：
-
-https://docs.graphcore.ai
-
-这里必须表扬一下Graphcore的文档，写的非常好。
-
----
-
-![](/images/img5/Tensorflow_Poplar.png)
-
-Graphcore的Tensorflow支持，使用了XLA接口。
-
-![](/images/img5/pytorch-software-stack.png)
-
-而Pytorch支持，则采用了自研的PopTorch和PopART库。
-
-PopTorch作为pytorch的平替，在建模型的同时，将模型导出为onnx格式。
-
-PopART负责导入onnx格式的模型，并调度硬件执行。
-
----
-
-参考：
-
-https://zhuanlan.zhihu.com/p/103963276
-
-深度剖析AI芯片初创公司Graphcore的IPU
-
-https://mp.weixin.qq.com/s/WZQDmyjGgkGMpLjVP5jKlw
-
-Graphcore
-
-https://zhuanlan.zhihu.com/p/31782874
-
-Graphcore AI芯片：更多分析
-
-https://mp.weixin.qq.com/s/7vxJTh4IHeqUsc7IsLFLSA
-
-解密哈萨比斯投资的IPU，他们要分英伟达一杯羹
-
-https://www.cnblogs.com/zuyunfei/p/16349835.html
-
-AI芯片：编程模型和硬件抽象（Nvidia CUDA vs Graphcore Poplar）
 
 ## 寒武纪
 

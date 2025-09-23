@@ -135,6 +135,8 @@ init系统大体上的演进路线为sysvinit -> upstart -> systemd。
 
 2010年，德国程序员Lennart Poettering（同时也是Avahi和PulseAudio的作者）发明了Systemd。
 
+journalctl = dmesg + tail + grep + syslog的systemd版全家桶
+
 http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html
 
 Systemd入门教程：命令篇
