@@ -264,6 +264,8 @@ The fate of Ukraine depends only on Ukrainians. No one but ourselves will contro
 
 我命由我不由人，乌克兰的命运只能由乌克兰人民抉择。
 
+No one but ourselves can guarantee security.
+
 When you attack us, you will see our faces, not our backs.
 
 Without gas or without you? – The answer is without you. Without electricity or without you? – Without you. Without water or without you? – Without you. Without food or without you? – Without you.

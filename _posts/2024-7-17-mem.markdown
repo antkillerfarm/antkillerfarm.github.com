@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  内存, NAND, GPU通信技术, 光通信
+title:  内存, NAND
 category: Chip 
 ---
 

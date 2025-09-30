@@ -25,7 +25,7 @@ https://zhuanlan.zhihu.com/p/720780910
 
 ---
 
-多布罗皮利亚攻防战：
+多布罗皮利亚攻防战：2025.8.9～
 
 https://zhuanlan.zhihu.com/p/1930922719945422148
 
@@ -46,6 +46,10 @@ https://zhuanlan.zhihu.com/p/1946670914461763292
 https://zhuanlan.zhihu.com/p/1948363755789452623
 
 谁以及如何阻止并开始消灭占领者在多布罗皮利亚的突破
+
+https://zhuanlan.zhihu.com/p/1955578838093402556
+
+“他们被包围了，我们就等着他们投降、撤退或阵亡。”
 
 ---
 

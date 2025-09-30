@@ -136,3 +136,57 @@ https://mp.weixin.qq.com/s/zbe2om-czwGbVBkFsPAwGw
 https://zhuanlan.zhihu.com/p/617099215
 
 封装内光学I/O与共封光学器件的区别（In-Package Optical I/O versus Co-Packaged Optics）
+
+# GPU体系结构+
+
+https://zhuanlan.zhihu.com/p/446830540
+
+GPU架构（上）—AI芯片设计入门
+
+https://zhuanlan.zhihu.com/p/446837354
+
+GPU架构（下）—AI芯片设计入门
+
+https://www.cnblogs.com/timlly/p/11471507.html
+
+深入GPU硬件架构及运行机制
+
+https://zhuanlan.zhihu.com/p/576793055
+
+Intel四十年显卡坎坷路
+
+https://zhuanlan.zhihu.com/p/572302589
+
+GPGPU流式多处理器架构之取指译码发射
+
+http://www.cnblogs.com/geniusalex/archive/2008/12/26/1941766.html
+
+CPU GPU设计工作原理
+
+https://mp.weixin.qq.com/s/-Wg1GtVGUxfshJ5d5NDd-Q
+
+聊聊GPU的计算能力上限
+
+https://mp.weixin.qq.com/s/zdr7BfJxVepQL1TCDXQoJA
+
+一文带你了解GPU的前生今世
+
+https://www.zhihu.com/question/22219245
+
+GPU不能完全取代CPU的最大原因是什么？
+
+https://zhuanlan.zhihu.com/p/651179378
+
+GPU内存概念浅析
+
+https://zhuanlan.zhihu.com/p/377073683
+
+GPU虚拟化，算力隔离，和qGPU
+
+https://www.zhihu.com/question/1968561378
+
+如果将几百核心的服务器CPU当作GPU使用，会发生什么？
+
+https://zhuanlan.zhihu.com/p/1929593678864847592
+
+GPU微结构逆向 (arXiv 2025)：《Analyzing Modern NVIDIA GPU cores》

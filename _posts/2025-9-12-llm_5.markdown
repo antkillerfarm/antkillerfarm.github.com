@@ -27,6 +27,16 @@ https://zhuanlan.zhihu.com/p/1895177200665350365
 
 # LLM实战
 
+书籍：
+
+https://jax-ml.github.io/scaling-book/
+
+How to Scale Your Model
+
+---
+
+实战心得：
+
 https://pytorch.org/blog/high-performance-llama-2/
 
 https://huggingface.co/blog/zh/bloom-inference-optimization

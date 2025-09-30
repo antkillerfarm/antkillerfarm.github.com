@@ -7,6 +7,34 @@ category: DL acceleration
 * toc
 {:toc}
 
+# KV Cache
+
+## MLA（续）
+
+https://zhuanlan.zhihu.com/p/697781431
+
+还在用MHA？MLA来了DeepSeek-v2的MLA的总结和思考
+
+https://zhuanlan.zhihu.com/p/703862723
+
+大模型KV Cache节省神器MLA学习笔记（包含推理时的矩阵吸收分析）
+
+https://blog.csdn.net/v_JULY_v/article/details/141535986
+
+一文通透DeepSeek V2——通俗理解多头潜在注意力MLA：改进MHA，从而压缩KV缓存，提高推理速度
+
+https://mp.weixin.qq.com/s/uiBPpZDyVhySP8eKKaIygw
+
+再读MLA，还有多少细节是你不知道的
+
+## KV Cache Architecture
+
+KV Cache从诞生之初就是一个工程问题，上面主要讨论的是算法优化，而本节则聚焦于Architecture领域。
+
+https://zhuanlan.zhihu.com/p/706791646
+
+Mooncake: Kimi's KVCache-centric Architecture for LLM Serving
+
 # 快速Transformer
 
 轻量化Transformer是从计算量/时间/空间的角度出发，对于传统Transformer的优化。但是计算量少，不等于计算速度快：同样的计算量，不同种类的算子，在硬件上的速度也是有差异的，这种差异有时甚至可以到几个数量级。而我们最终的目的终究是速度快，而非计算量少。
@@ -255,26 +283,3 @@ FlashInfer是由NVIDIA与CMU、UC Berkeley等机构联合开源的GPU专用LLM�
 https://zhuanlan.zhihu.com/p/681506469
 
 用FlashInfer加速大语言模型推理中的自注意力操作
-
-## Dual Chunk FlashAttention
-
-超长文本（论文、代码库、百万token级对话）在原始预训练窗口外直接推理会严重掉精度。
-
-纯FlashAttention虽然节省显存，但序列长度N增加后仍然O(N²)地吃显存，单卡80 GB也很快就OOM。
-
-DCFA把长序列切成≤预训练长度的chunk，先算chunk内注意力（intra-chunk），再算chunk间注意力（inter-chunk），把显存复杂度压到O(chunk_size²)，理论上可以无限外推长度。
-
-## Differential FlashAttention
-
-传统Transformer在长上下文时会把大量注意力权重放到“噪声 token”上，产生幻觉和上下文丢失。
-
-Differential Transformer：
-
-$$\text{DiffAttn}(X) = \underbrace{\vphantom{\lambda}\operatorname{softmax}\!\left(\frac{Q_{1}K_{1}^{\!\top}}{\sqrt{d_{k}}}\right)V}_{\text{主注意力}}
-- \lambda\,\underbrace{\vphantom{\lambda}\operatorname{softmax}\!\left(\frac{Q_{2}K_{2}^{\!\top}}{\sqrt{d_{k}}}\right)V}_{\text{噪声注意力}}$$
-
-$$\lambda = \exp(\lambda_{q1}\!\cdot\!\lambda_{k1}) - \exp(\lambda_{q2}\!\cdot\!\lambda_{k2}) + \lambda_{\text{init}}$$
-
-相当于让第二个分支专门学“噪声模式”，然后显式减掉。
-
-但这样就带来两倍KV Cache + 两次FlashAttention计算的开销。于是作者直接写了一个“一次kernel launch里跑两路”的专用 CUDA kernel，起名叫Differential FlashAttention。

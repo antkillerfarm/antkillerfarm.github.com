@@ -377,3 +377,49 @@ https://mp.weixin.qq.com/s/ksCWLX_cb9wkgAN35hjL3g
 https://www.pyimagesearch.com/2018/06/04/keras-multiple-outputs-and-multiple-losses/
 
 一个多输出+多Loss的示例
+
+# AIGC参考资源+
+
+https://zhuanlan.zhihu.com/p/615522634
+
+AIGC的一些记录
+
+https://www.zhihu.com/question/593770520
+
+首批因AI失业的人来了，有公司已裁减原画师，导演陆川力赞AI海报高效优质，哪些职位容易被取代？
+
+https://zhuanlan.zhihu.com/p/619730103
+
+AI绘画教程：如何用Stable Diffusion始终画同一个人？
+
+https://zhuanlan.zhihu.com/p/626335914
+
+AI绘图StableDiffusion最强大模型盘点 - 诸神乱战
+
+https://zhuanlan.zhihu.com/p/622914660
+
+《Stable Diffusion 倚天剑术》第1卷：在各种设备上把Stable Diffusion玩起来
+
+https://zhuanlan.zhihu.com/p/629348322
+
+StableDiffusion LoRA自训练教程
+
+https://mp.weixin.qq.com/s/DBLMAEbVw6v4xH94-5Zl3w
+
+GAN逆袭归来！清华校友论文引爆AI绘图圈，一秒把大象P转身，Diffusion黯然失色
+
+https://zhuanlan.zhihu.com/p/643872569
+
+AI这样把NB写在脸上，它在玩一种很新的艺术
+
+https://zhuanlan.zhihu.com/p/626004957
+
+利用AI在独立游戏项目中大干快上
+
+https://zhuanlan.zhihu.com/p/664461927
+
+一天时间，我用AI做了一个恐龙网站
+
+https://www.zhihu.com/question/15735401526
+
+OpenAI GPT-4o推出原生图像生成功能，这次升级有哪些看点？

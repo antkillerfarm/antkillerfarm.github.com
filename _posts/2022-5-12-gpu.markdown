@@ -87,6 +87,10 @@ GPU不追求单core的性能，因此也没有那些复杂的控制逻辑。这�
 
 反之，如果某个warp中的所有线程条件都为True，则只有True分支会被执行，False分支不会被执行。
 
+Pascal及更早：一个warp共享1个PC，SIMT严格锁步；divergence时硬件把分支压成顺序块，用active mask屏蔽不参与的线程，离开分支点即自动恢复全warp同步。
+
+Volta+：引入Independent Thread Scheduling（ITS），每线程独立PC+栈；调度器仍以warp为单位发射指令，但不同分支可“交错”执行，没有任何隐式汇合点。
+
 ---
 
 VGPR：Vector general purpose register
@@ -252,55 +256,3 @@ https://zhuanlan.zhihu.com/p/463629676
 https://zhuanlan.zhihu.com/p/4610879668
 
 Nvidia GPU架构精读系列——Ampere
-
-https://zhuanlan.zhihu.com/p/446830540
-
-GPU架构（上）—AI芯片设计入门
-
-https://zhuanlan.zhihu.com/p/446837354
-
-GPU架构（下）—AI芯片设计入门
-
-https://www.cnblogs.com/timlly/p/11471507.html
-
-深入GPU硬件架构及运行机制
-
-https://zhuanlan.zhihu.com/p/576793055
-
-Intel四十年显卡坎坷路
-
-https://zhuanlan.zhihu.com/p/572302589
-
-GPGPU流式多处理器架构之取指译码发射
-
-http://www.cnblogs.com/geniusalex/archive/2008/12/26/1941766.html
-
-CPU GPU设计工作原理
-
-https://mp.weixin.qq.com/s/-Wg1GtVGUxfshJ5d5NDd-Q
-
-聊聊GPU的计算能力上限
-
-https://mp.weixin.qq.com/s/zdr7BfJxVepQL1TCDXQoJA
-
-一文带你了解GPU的前生今世
-
-https://www.zhihu.com/question/22219245
-
-GPU不能完全取代CPU的最大原因是什么？
-
-https://zhuanlan.zhihu.com/p/651179378
-
-GPU内存概念浅析
-
-https://zhuanlan.zhihu.com/p/377073683
-
-GPU虚拟化，算力隔离，和qGPU
-
-https://www.zhihu.com/question/1968561378
-
-如果将几百核心的服务器CPU当作GPU使用，会发生什么？
-
-https://zhuanlan.zhihu.com/p/1929593678864847592
-
-GPU微结构逆向 (arXiv 2025)：《Analyzing Modern NVIDIA GPU cores》

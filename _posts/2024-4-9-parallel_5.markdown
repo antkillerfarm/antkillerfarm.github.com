@@ -254,27 +254,3 @@ https://www.zhihu.com/question/655172528
 https://huggingface.co/blog/Junrulu/mla-codebased-analysis
 
 结合Deepseek代码探讨MLA的改进及收益
-
-https://zhuanlan.zhihu.com/p/697781431
-
-还在用MHA？MLA来了DeepSeek-v2的MLA的总结和思考
-
-https://zhuanlan.zhihu.com/p/703862723
-
-大模型KV Cache节省神器MLA学习笔记（包含推理时的矩阵吸收分析）
-
-https://blog.csdn.net/v_JULY_v/article/details/141535986
-
-一文通透DeepSeek V2——通俗理解多头潜在注意力MLA：改进MHA，从而压缩KV缓存，提高推理速度
-
-https://mp.weixin.qq.com/s/uiBPpZDyVhySP8eKKaIygw
-
-再读MLA，还有多少细节是你不知道的
-
-## KV Cache Architecture
-
-KV Cache从诞生之初就是一个工程问题，上面主要讨论的是算法优化，而本节则聚焦于Architecture领域。
-
-https://zhuanlan.zhihu.com/p/706791646
-
-Mooncake: Kimi's KVCache-centric Architecture for LLM Serving

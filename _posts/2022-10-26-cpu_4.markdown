@@ -213,6 +213,10 @@ Performance Core
 
 Efficient Core
 
+AMD的思路与Intel有所不同，Zen4和Zen4c使用同一微架构，仅L3 Cache的大小有差异。前者追求单核极限性能，后者追求多核密度与能效。
+
+---
+
 https://zhuanlan.zhihu.com/p/1941097136155494318
 
 Intel Core核心发展简史-1：疯魔Pentium 4带来的灾难与Pentium 3的传承

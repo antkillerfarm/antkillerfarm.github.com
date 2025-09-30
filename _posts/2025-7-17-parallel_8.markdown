@@ -1,13 +1,85 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（九）——Batching
+title:  并行 & 框架 & 优化（九）——Alpa, Batching
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# Alpa（续）
+# LLM System（续）
+
+## Multi-Token Prediction
+
+在训练阶段，一次生成多个后续token，可以一次学习多个位置的label，进而有效提升样本的利用效率，提升训练速度；在推理阶段通过一次生成多个token，实现成倍的推理加速来提升推理性能。
+
+![](/images/img6/MTP.png)
+
+https://zhuanlan.zhihu.com/p/18056041194
+
+MTP（Multi-Token Prediction）的前世今生
+
+https://blog.csdn.net/v_JULY_v/article/details/145374551
+
+一文通透让Meta恐慌的DeepSeek-V3：在MoE、GRPO、MLA基础上提出Multi-Token预测(含FP8训练详解)
+
+## 参考
+https://mp.weixin.qq.com/s/39MYrsB3gXpfzTTOgQjDwg
+
+幻方AI DeepSeek模型背后的万卡集群建设
+
+# Alpa
+
+Alpa是一个自动探索分布式策略的工具。
+
+论文：
+
+《Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning》
+
+代码：
+
+https://github.com/openxla/xla/tree/main/xla/hlo/experimental/auto_sharding
+
+文档：
+
+https://alpa.ai/index.html
+
+---
+
+在介绍Alpa之前，先介绍一下Google的optimization库：
+
+https://github.com/google/or-tools
+
+文档：
+
+https://developers.google.com/optimization
+
+ILP可以分为下列几种类型：
+
+（1）纯整数线性规划(Pure integer linear programming)：指全部决策变量都必须取整数值的整数线性规划。有时，也称为全整数规划。
+
+（2）混合整数线性规划(Mimed integer linear programming)：指决策变量中有一部分必须取整数值，另一部分可以不取整数值的整数线性规划。
+
+（3）0-1型整数线性规划(Zero-one integer linear programming)：指决策变量只能了取值0或1的整数线性规划。
+
+ILP相关的库还有pyomo、cyipopt等。
+
+---
+
+为了评估不同Sharding策略的好坏，我们需要对Sharding策略建立cost model。
+
+这里的cost主要包括：
+
+- Communication cost
+- Computation cost
+- Memory cost
+- Resharding cost
+
+其中，Memory cost为该ILP问题的约束条件，其他几个为决策变量的影响因子。
+
+Resharding cost是不同sharding之间切换产生的开销：
+
+![](/images/img5/resharding.svg)
 
 MLIR中有mesh dialect用于描述Sharding Spec：
 
@@ -209,41 +281,3 @@ https://zhuanlan.zhihu.com/p/522759214
 https://mp.weixin.qq.com/s/_o7fzCOeuZE6qFc5gHb26g
 
 美团视觉GPU推理服务部署架构优化实践
-
-https://mp.weixin.qq.com/s/UxN9ZRmKLN30s7uPqMpHPQ
-
-Jeff Dean等提出动态控制流编程模型，大规模机器学习性能提升21%
-
-https://mp.weixin.qq.com/s/fx0Pfu0MOPjSkzi5mL6U_A
-
-清华&斯坦福提出深度梯度压缩DGC，大幅降低分布式训练网络带宽需求
-
-https://mp.weixin.qq.com/s/wIdTDHEPffWqHA3_XWBLyw
-
-没错，纯SQL查询语句可以实现神经网络。
-
->SQL跑神经网络固然没有太大意义，然而分布式数据库已经有数十年的历史，对于设计分布式深度学习框架亦有重大的启发意义。
-
-https://mp.weixin.qq.com/s/F10UaaoxGPOE4pc59LBCRw
-
-数据并行化对神经网络训练有何影响？谷歌大脑进行了实证研究
-
-https://mp.weixin.qq.com/s/UF7DDenUQJ3bL83IHxOkIw
-
-分布式优化算法及其在多智能体系统与机器学习中的应用
-
-https://mp.weixin.qq.com/s/6h9MeBs89hTtWsYSZ4pZ5g
-
-蚂蚁金服核心技术：百亿特征实时推荐算法揭秘
-
-https://mp.weixin.qq.com/s/xV5cLbCPb7Nh6i4i7DxJIQ
-
-没人告诉你的大规模部署AI高效流程！
-
-https://mp.weixin.qq.com/s/8R7YhcZ_Dt0oFIF3bQovxw
-
-为了提升DL模型性能，阿里工程师打造了流式编程框架
-
-https://mp.weixin.qq.com/s/z6gXp-EeDID1ed8_DsUbOg
-
-90秒训练AlexNet！商汤刷新纪录

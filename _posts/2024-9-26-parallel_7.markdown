@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（八）——LLM Inference, LLM System, Alpa
+title:  并行 & 框架 & 优化（八）——LLM Inference, LLM System
 category: DL acceleration 
 ---
 
@@ -8,6 +8,29 @@ category: DL acceleration
 {:toc}
 
 # 快速Transformer（续）
+
+## Dual Chunk FlashAttention
+
+超长文本（论文、代码库、百万token级对话）在原始预训练窗口外直接推理会严重掉精度。
+
+纯FlashAttention虽然节省显存，但序列长度N增加后仍然O(N²)地吃显存，单卡80 GB也很快就OOM。
+
+DCFA把长序列切成≤预训练长度的chunk，先算chunk内注意力（intra-chunk），再算chunk间注意力（inter-chunk），把显存复杂度压到O(chunk_size²)，理论上可以无限外推长度。
+
+## Differential FlashAttention
+
+传统Transformer在长上下文时会把大量注意力权重放到“噪声 token”上，产生幻觉和上下文丢失。
+
+Differential Transformer：
+
+$$\text{DiffAttn}(X) = \underbrace{\vphantom{\lambda}\operatorname{softmax}\!\left(\frac{Q_{1}K_{1}^{\!\top}}{\sqrt{d_{k}}}\right)V}_{\text{主注意力}}
+- \lambda\,\underbrace{\vphantom{\lambda}\operatorname{softmax}\!\left(\frac{Q_{2}K_{2}^{\!\top}}{\sqrt{d_{k}}}\right)V}_{\text{噪声注意力}}$$
+
+$$\lambda = \exp(\lambda_{q1}\!\cdot\!\lambda_{k1}) - \exp(\lambda_{q2}\!\cdot\!\lambda_{k2}) + \lambda_{\text{init}}$$
+
+相当于让第二个分支专门学“噪声模式”，然后显式减掉。
+
+但这样就带来两倍KV Cache + 两次FlashAttention计算的开销。于是作者直接写了一个“一次kernel launch里跑两路”的专用 CUDA kernel，起名叫Differential FlashAttention。
 
 ## 参考
 
@@ -48,20 +71,6 @@ LLM的推理优化技术纵览
 https://github.com/DefTruth/Awesome-LLM-Inference
 
 Awesome LLM Inference
-
----
-
-一次用户请求，实际上既包含prefill，也包含decode。一个是计算密集型，一个是访存密集型。
-
-prefill（用户输入）和decode（模型输出）的token量在不同场景下也是不一样的。如果是简单对话场景，通常模型的decode输出会更多一些，而如果是超长上下文场景，用户先上传一本几十万字的书再进行问答，这本书的prefill会直接起飞。在Agent场景下，大量预设的prompt也会占据非常多的prefill，不过prompt的prefill有不少机会可以提前算好KV而无需每个用户请求单独重复计算。
-
-当整个推理系统服务几千万用户时，一个batch的几十个用户请求只是开胃菜。每个用户会不间断地和大模型进行交互，发出大量请求，但这些请求的间隔时间短则几秒，长则几分钟几小时。考虑人机交互的频率，一个用户请求结束后，对应的KV-cache继续常驻在高速内存中实际意义不大。
-
----
-
-这个从今年年中开始，各家都陆续上了PD分离方案（如MoonCake）。
-
-Prefilling阶段是计算密集型，少量Query就可以打满GPU，大量Query反而会增加首token延迟；Decoding阶段是访存密集型，必须依赖大量Query提高GPU计算利用率。因此可以通过多台机器处理Prefilling、单台机器处理Decoding的PD分离方案，实现综合效率最大化、首token延迟（TTFT）最低、DecodeSpeed（TPS）最高。
 
 ---
 
@@ -110,6 +119,30 @@ LLM Inference的性能评估主要有以下几个方面：
 https://www.databricks.com/blog/llm-inference-performance-engineering-best-practices
 
 LLM Inference Performance Engineering: Best Practices
+
+## PD分离
+
+一次用户请求，实际上既包含prefill，也包含decode。一个是计算密集型，一个是访存密集型。
+
+prefill（用户输入）和decode（模型输出）的token量在不同场景下也是不一样的。如果是简单对话场景，通常模型的decode输出会更多一些，而如果是超长上下文场景，用户先上传一本几十万字的书再进行问答，这本书的prefill会直接起飞。在Agent场景下，大量预设的prompt也会占据非常多的prefill，不过prompt的prefill有不少机会可以提前算好KV而无需每个用户请求单独重复计算。
+
+当整个推理系统服务几千万用户时，一个batch的几十个用户请求只是开胃菜。每个用户会不间断地和大模型进行交互，发出大量请求，但这些请求的间隔时间短则几秒，长则几分钟几小时。考虑人机交互的频率，一个用户请求结束后，对应的KV-cache继续常驻在高速内存中实际意义不大。
+
+---
+
+这个从今年年中开始，各家都陆续上了PD分离方案（如MoonCake）。
+
+Prefilling阶段是计算密集型，少量Query就可以打满GPU，大量Query反而会增加首token延迟；Decoding阶段是访存密集型，必须依赖大量Query提高GPU计算利用率。因此可以通过多台机器处理Prefilling、单台机器处理Decoding的PD分离方案，实现综合效率最大化、首token延迟（TTFT）最低、DecodeSpeed（TPS）最高。
+
+---
+
+![](/images/img6/CPX.png)
+
+Rubin CPX，是专门为推理阶段prefill准备的低成本卡。prefill阶段所需带宽较小，配置“瘦带宽”而“肥容量”的GDDR7，显然更为合适。
+
+https://www.zhihu.com/question/1949040585416636414
+
+如何看待英伟达最新发布的Rubin CPX及相应的上下文理解/生成分离设计?
 
 ## vLLM
 
@@ -184,75 +217,3 @@ https://zhuanlan.zhihu.com/p/668509885
 gradient_accumulation_steps用于处理当模型的参数数量超过GPU内存容量时的情况。在训练大型模型时，尤其是在使用较小的GPU进行训练时，可能会遇到内存不足的问题。这时，可以使用梯度累积来分割批次，从而使得每个小批次的计算都在GPU的内存限制范围内。
 
 如果设置了gradient_accumulation_steps=N，那么模型会先对N个批次的数据进行前向和反向传播，将这些批次的梯度累积起来，然后才进行一次权重更新。这样，实际上的批次大小相当于per_device_train_batch_size * N。
-
-## Multi-Token Prediction
-
-在训练阶段，一次生成多个后续token，可以一次学习多个位置的label，进而有效提升样本的利用效率，提升训练速度；在推理阶段通过一次生成多个token，实现成倍的推理加速来提升推理性能。
-
-![](/images/img6/MTP.png)
-
-https://zhuanlan.zhihu.com/p/18056041194
-
-MTP（Multi-Token Prediction）的前世今生
-
-https://blog.csdn.net/v_JULY_v/article/details/145374551
-
-一文通透让Meta恐慌的DeepSeek-V3：在MoE、GRPO、MLA基础上提出Multi-Token预测(含FP8训练详解)
-
-## 参考
-https://mp.weixin.qq.com/s/39MYrsB3gXpfzTTOgQjDwg
-
-幻方AI DeepSeek模型背后的万卡集群建设
-
-# Alpa
-
-Alpa是一个自动探索分布式策略的工具。
-
-论文：
-
-《Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning》
-
-代码：
-
-https://github.com/openxla/xla/tree/main/xla/hlo/experimental/auto_sharding
-
-文档：
-
-https://alpa.ai/index.html
-
----
-
-在介绍Alpa之前，先介绍一下Google的optimization库：
-
-https://github.com/google/or-tools
-
-文档：
-
-https://developers.google.com/optimization
-
-ILP可以分为下列几种类型：
-
-（1）纯整数线性规划(Pure integer linear programming)：指全部决策变量都必须取整数值的整数线性规划。有时，也称为全整数规划。
-
-（2）混合整数线性规划(Mimed integer linear programming)：指决策变量中有一部分必须取整数值，另一部分可以不取整数值的整数线性规划。
-
-（3）0-1型整数线性规划(Zero-one integer linear programming)：指决策变量只能了取值0或1的整数线性规划。
-
-ILP相关的库还有pyomo、cyipopt等。
-
----
-
-为了评估不同Sharding策略的好坏，我们需要对Sharding策略建立cost model。
-
-这里的cost主要包括：
-
-- Communication cost
-- Computation cost
-- Memory cost
-- Resharding cost
-
-其中，Memory cost为该ILP问题的约束条件，其他几个为决策变量的影响因子。
-
-Resharding cost是不同sharding之间切换产生的开销：
-
-![](/images/img5/resharding.svg)

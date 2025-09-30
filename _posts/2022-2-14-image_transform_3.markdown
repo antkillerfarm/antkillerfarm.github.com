@@ -236,3 +236,75 @@ https://mp.weixin.qq.com/s/up5n6ZUP6SmSfRNpRX37qQ
 https://mp.weixin.qq.com/s/j-Tm1U9faRhnR2PsAxYbtg
 
 英伟达华人AI版《猫和老鼠》爆火全网，60秒经典泪目！仅靠Transformer新增一层
+
+# NVLink+
+
+## 紧耦合 vs 松耦合（续）
+
+从Scale层面来看，紧耦合是在单卡性能受到工艺/面积限制的情况下的Scale Up，而松耦合更多的是Scale Out。
+
+Super Pod是一种高性能计算架构单元，通常由大量GPU通过高速互联（如NVLink）组成，形成一个逻辑上的单机系统。
+
+Super Cluster是由多个Super Pod或其他计算节点通过网络（如InfiniBand或Ethernet）连接而成的更大规模计算系统。
+
+集群线性加速比：把同样任务从M张GPU扩展到N张GPU时，实测总有效算力与理想线性增长之间的比值。
+
+https://zhuanlan.zhihu.com/p/1952422612014699888
+
+超节点是大模型基础设施的最优解吗？
+
+https://zhuanlan.zhihu.com/p/1952744774143542334
+
+从超节点到微节点：大模型需要什么样的基础设施？
+
+https://zhuanlan.zhihu.com/p/1955200725576561559
+
+基于灵衢（UB）的超节点架构白皮书走读
+
+## NCCL
+
+NCCL是Nvidia Collective multi-GPU Communication Library的简称，它是一个实现多GPU的collective communication通信库，可以在PCIe、Nvlink、InfiniBand上实现较高的通信速度。
+
+官方文档：
+
+https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/index.html
+
+nccl v1：支持单机多卡通信，不支持多机通信。
+
+nccl v2：支持多机通信。
+
+参考：
+
+https://www.zhihu.com/question/63219175
+
+如何理解Nvidia英伟达的Multi-GPU多卡通信框架NCCL？
+
+https://zhuanlan.zhihu.com/p/364816069
+
+NCCL--GPU的collective communication通信技术
+
+https://blog.csdn.net/TH_NUM/article/details/81479317
+
+nvidia-nccl学习笔记
+
+https://developer.nvidia.com/blog/fast-multi-gpu-collectives-nccl/
+
+Fast Multi-GPU collectives with NCCL
+
+https://zhuanlan.zhihu.com/p/701623664
+
+由A800平台训练InternLM-7B无法收敛引发的思考
+
+## 参考
+
+https://www.infoq.cn/article/3D4MsRVS8ZOtGCj7*krT
+
+GPU通信技术初探
+
+https://zhuanlan.zhihu.com/p/67785062
+
+不止显卡！这些硬件因素也影响着你的深度学习模型性能
+
+https://zhuanlan.zhihu.com/p/680702927
+
+NVLink发展概述
