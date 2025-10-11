@@ -37,7 +37,7 @@ Mooncake: Kimi's KVCache-centric Architecture for LLM Serving
 
 # 快速Transformer
 
-轻量化Transformer是从计算量/时间/空间的角度出发，对于传统Transformer的优化。但是计算量少，不等于计算速度快：同样的计算量，不同种类的算子，在硬件上的速度也是有差异的，这种差异有时甚至可以到几个数量级。而我们最终的目的终究是速度快，而非计算量少。
+轻量化Transformer是从计算量/时间/空间的角度出发，对于传统Transformer的优化。但是**计算量少，不等于计算速度快**：同样的计算量，不同种类的算子，在硬件上的速度也是有差异的，这种差异有时甚至可以到几个数量级。而我们最终的目的终究是速度快，而非计算量少。
 
 因此，本节的快速Transformer主要着眼于软件工程角度，如何更好的利用各种硬件加速Transformer的计算。典型的有NVIDIA的FasterTransformer和腾讯的TurboTransformer。
 
@@ -276,10 +276,19 @@ vLLM核心技术PagedAttention原理
 
 - v4在运行时根据Smem/SM数量、序列长度、batch-size做启发式决策，自动挑并行度与缓冲策略，保证哪种场景都能跑在“屋顶线”附近。
 
-## FlashInfer
+## FlashAttention-4
 
-FlashInfer是由NVIDIA与CMU、UC Berkeley等机构联合开源的GPU专用LLM推理内核库。将FlashAttention、PageAttention、稀疏 Attention、采样、通信等全部打包，并针对LLM推理服务做了 JIT编译、Paged KV-Cache、变长批量调度等工程化增强。
+MUFU = MultiFunction Unit，是NV从Maxwell架构开始放在SM里的一个ALU。它只提供5条低精度、单周期的近似指令。
 
-https://zhuanlan.zhihu.com/p/681506469
+传统Attention实现里softmax是“关键路径”，一旦近似误差放大，就会累积到数值不稳定，所以大家都老老实实调expf。
 
-用FlashInfer加速大语言模型推理中的自注意力操作
+FlashAttention 4提出了一种分段在线softmax算法：
+
+– 把K维切成若干块，每块先在寄存器里算局部max、局部和；
+– 只在最后一步才把局部和rescale成全局和；
+– 这样90%的exp计算只用于比较大小，绝对误差大一点无所谓；
+– 真正需要精度的rescale次数从$$O(N^2)$$降到$$O(N)$$。
+
+---
+
+为了H100要做个FlashAttention-3，为了B200要做个FlashAttention-4，为了Rubin要做个FlashAttention-5。只要黄皮衣发卡不停，FlashAttention生意就能一直做下去。

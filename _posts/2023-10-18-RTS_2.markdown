@@ -61,6 +61,10 @@ https://zhuanlan.zhihu.com/p/682233241
 
 开源跨平台实时战略游戏引擎OpenRA
 
+https://zhuanlan.zhihu.com/p/1959574914458711924
+
+没有源代码，他用5年时间把红警2给重写了
+
 ## OpenSAGE
 
 W3D -> SAGE -> RNA

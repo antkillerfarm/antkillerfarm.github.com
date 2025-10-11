@@ -377,6 +377,22 @@ https://mp.weixin.qq.com/s/Z-_iZl_CTixqK0vl0_CHfQ
 
 # 语义分割进阶+
 
+https://blog.csdn.net/sanshibayuan/article/details/103642419
+
+单阶段实例分割（Single Shot Instance Segmentation）
+
+https://mp.weixin.qq.com/s/v_TTwTWx0lu2rJmxvzQQ4g
+
+北航、旷视联合，打造最强实时语义分割网络
+
+https://mp.weixin.qq.com/s/aSHhpMtgzV4_6NTElTvPIA
+
+语义分割－多层特征融合
+
+https://mp.weixin.qq.com/s/6EOkYdiVm0Lvkc24WiRbFg
+
+基于自适应显着性的图像分割
+
 https://mp.weixin.qq.com/s/WuWZS25aAWDLpVZQKuP2Tw
 
 美团无人配送CVPR2020论文CenterMask解读

@@ -51,6 +51,14 @@ https://zhuanlan.zhihu.com/p/1955578838093402556
 
 “他们被包围了，我们就等着他们投降、撤退或阵亡。”
 
+https://mp.weixin.qq.com/s/3zrVHPmH4nTO1aW9h3-kZg
+
+未解之谜之兔耳二三事
+
+https://www.zhihu.com/answer/1959808223214277795
+
+多布罗皮利亚攻防战战况（2025.10.10）
+
 ---
 
 回顾93旅这两年的历史我发现这旅是真的牢。

@@ -368,3 +368,7 @@ https://zhuanlan.zhihu.com/p/1951321540936315464
 https://zhuanlan.zhihu.com/p/1952363340090302626
 
 泽连斯基曾称他为罪犯。现在乌克兰向他征求武器和弹药
+
+https://zhuanlan.zhihu.com/p/1960067861541282882
+
+随着无人机战争加剧，乌克兰人努力照顾自己的同胞

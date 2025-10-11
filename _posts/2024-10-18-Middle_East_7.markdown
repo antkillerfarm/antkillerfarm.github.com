@@ -111,6 +111,10 @@ https://www.zhihu.com/question/answer/1930239396088624311
 
 叙利亚内战中的“老虎部队”
 
+https://zhuanlan.zhihu.com/p/1959414713029989747
+
+沙里亚政权钦定“人民议会”再演闹剧
+
 ---
 
 赛德纳亚（Saydnaya）军事监狱位于叙利亚大马士革附近。

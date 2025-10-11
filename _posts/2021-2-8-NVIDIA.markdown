@@ -150,6 +150,12 @@ GPU → GPC → TPC → SM → CUDA/Tensor/RT Core
 
 Hopper架构里， 一个SM有四个SM quadrants，每个SM quadrant对应一个warp dispatcher、一组SIMD ALU、一个TensorCore、一组RegisterFiles和一个L0 cache。
 
+---
+
+一个GPU方面的专栏：
+
+https://modal.com/gpu-glossary
+
 ## H100
 
 有幸在客户那里见识了H100 Server的配置。

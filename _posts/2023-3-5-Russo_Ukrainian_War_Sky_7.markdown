@@ -11,6 +11,42 @@ category: Russo Ukrainian War Sky
 
 ## 基辅战役（续）
 
+2024.8.24 乌第40战术航空旅被授予“基辅幽灵”称号。
+
+---
+
+买家秀 VS 卖家秀
+
+![](/images/img4/t.jpg)
+
+![](/images/img4/t_2.jpg)
+
+![](/images/img4/t_3.jpg)
+
+![](/images/img4/t_4.jpg)
+
+![](/images/img4/t_5.jpg)
+
+![](/images/img5/weapon_2.jpg)
+
+https://www.zhihu.com/question/654462871
+
+俄军向民众展示缴获的乌军坦克，此举背后的用意有哪些？
+
+---
+
+捷捷列夫河冬泳大赛
+
+https://www.zhihu.com/question/524614755
+
+如何评价3月27日前后俄军从基辅附近地区主动后撤？（普里皮亚季沼泽）
+
+https://zhuanlan.zhihu.com/p/493533467
+
+“王牌先走”和“冬泳锻炼”——穷途末路的基辅俄军
+
+---
+
 https://zhuanlan.zhihu.com/p/502798862
 
 闪击覆灭——复盘霍斯托梅尔机场之战

@@ -233,6 +233,21 @@ RAII不适用于并非在使用前请求的资源：CPU时间、核心，以及�
 
 RAII也是下面介绍的各类智能指针的理论基础。
 
+---
+
+一个利用RAII管理malloc/free的示例：
+
+```cpp
+using CustomDeleter = std::function<void(void*)>;
+
+int* c_data = static_cast<int*>(std::malloc(num * sizeof(int)));
+auto malloc_deleter = [](void* p) { std::free(p); };
+
+std::unique_ptr<void, CustomDeleter> c_data_ptr(c_data, malloc_deleter);
+```
+
+---
+
 参考：
 
 https://mp.weixin.qq.com/s/m44zVWMvactsLPjKsFnlSg

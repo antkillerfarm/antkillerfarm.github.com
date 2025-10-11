@@ -9,6 +9,14 @@ category: DL acceleration
 
 # 快速Transformer（续）
 
+## FlashInfer
+
+FlashInfer是由NVIDIA与CMU、UC Berkeley等机构联合开源的GPU专用LLM推理内核库。将FlashAttention、PageAttention、稀疏 Attention、采样、通信等全部打包，并针对LLM推理服务做了 JIT编译、Paged KV-Cache、变长批量调度等工程化增强。
+
+https://zhuanlan.zhihu.com/p/681506469
+
+用FlashInfer加速大语言模型推理中的自注意力操作
+
 ## Dual Chunk FlashAttention
 
 超长文本（论文、代码库、百万token级对话）在原始预训练窗口外直接推理会严重掉精度。

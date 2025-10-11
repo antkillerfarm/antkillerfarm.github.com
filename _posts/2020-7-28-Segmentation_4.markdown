@@ -77,6 +77,10 @@ https://mp.weixin.qq.com/s/6qyl0m0HHCqGkdHzacLkfA
 
 ## 参考
 
+U-Net其实还具有另一个层面的代表性：即结构简单有效的网络往往在不同任务中具有更好的鲁棒性。这种高度的可复用性相比几个点的提升而言是更被企业看重的。
+
+---
+
 https://www.zhihu.com/question/269914775
 
 Unet神经网络为什么会在医学图像分割表现好？
@@ -402,19 +406,3 @@ https://mp.weixin.qq.com/s/lTPm229gzV_9RU-aiY-xQg
 https://mp.weixin.qq.com/s/n9Xdj5RKGR9cyXXNzxzvSw
 
 基于深度学习的图像分割在高德的实践
-
-https://blog.csdn.net/sanshibayuan/article/details/103642419
-
-单阶段实例分割（Single Shot Instance Segmentation）
-
-https://mp.weixin.qq.com/s/v_TTwTWx0lu2rJmxvzQQ4g
-
-北航、旷视联合，打造最强实时语义分割网络
-
-https://mp.weixin.qq.com/s/aSHhpMtgzV4_6NTElTvPIA
-
-语义分割－多层特征融合
-
-https://mp.weixin.qq.com/s/6EOkYdiVm0Lvkc24WiRbFg
-
-基于自适应显着性的图像分割

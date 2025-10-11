@@ -187,6 +187,10 @@ https://zhuanlan.zhihu.com/p/1933136018875327848
 
 乌克兰战局追踪-2025年7月28日
 
+https://zhuanlan.zhihu.com/p/1956954228842030868
+
+俄乌两军战线月评（250930）
+
 ## 顿巴斯战争
 
 ![](/images/img4/Kyiv.jpg)

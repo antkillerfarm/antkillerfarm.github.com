@@ -11,6 +11,36 @@ category: Russo Ukrainian War Sky
 
 ## 基辅战役（续）
 
+https://www.zhihu.com/column/c_1569457305434976256
+
+乌克兰志愿部队介绍
+
+https://zhuanlan.zhihu.com/p/658572008
+
+乌克兰陆军武装力量编制（军、旅篇）
+
+https://zhuanlan.zhihu.com/p/714525662
+
+简略的看一下现在（2024.8）各条战线乌军的精锐程度
+
+https://zhuanlan.zhihu.com/p/687975769
+
+乌克兰陆军军衔详解
+
+https://zhuanlan.zhihu.com/p/718402127
+
+未解之谜之乌萝的指挥体系
+
+https://zhuanlan.zhihu.com/p/489929825
+
+乌克兰领土防卫军简介
+
+https://zhuanlan.zhihu.com/p/1952855479060509915
+
+乌克兰武装力量军团制改革观察报告
+
+---
+
 鹅35集可以说是整个战争中，哪怕在俄军那边，也可以算得上是比较臭名昭著的部队了。其原本是驻扎在远东地区（我国黑龙江对岸的伯力市）的常备军，在去年开战之初，该集团军被调往白俄罗斯参与了基辅战役。
 
 也就是在基辅战役期间，该集团军下辖的第64摩步旅犯下了震惊世界的“布查惨案”。
@@ -132,39 +162,3 @@ https://zhuanlan.zhihu.com/p/679670281
 https://zhuanlan.zhihu.com/p/679671395
 
 乌克兰露出獠牙
-
----
-
-2024.8.24 乌第40战术航空旅被授予“基辅幽灵”称号。
-
----
-
-买家秀 VS 卖家秀
-
-![](/images/img4/t.jpg)
-
-![](/images/img4/t_2.jpg)
-
-![](/images/img4/t_3.jpg)
-
-![](/images/img4/t_4.jpg)
-
-![](/images/img4/t_5.jpg)
-
-![](/images/img5/weapon_2.jpg)
-
-https://www.zhihu.com/question/654462871
-
-俄军向民众展示缴获的乌军坦克，此举背后的用意有哪些？
-
----
-
-捷捷列夫河冬泳大赛
-
-https://www.zhihu.com/question/524614755
-
-如何评价3月27日前后俄军从基辅附近地区主动后撤？（普里皮亚季沼泽）
-
-https://zhuanlan.zhihu.com/p/493533467
-
-“王牌先走”和“冬泳锻炼”——穷途末路的基辅俄军

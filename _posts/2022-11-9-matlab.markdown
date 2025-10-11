@@ -286,7 +286,7 @@ std::tie(a , str) = fun_tie(12, std::string("Pony Ma"));
 std::cout << a << "," << str << std::endl;
 ```
 
-# inl文件
+## inl文件
 
 inl文件是内联函数的源文件。内联函数通常在C++头文件中实现，但是当C++头文件中内联函数过多的情况下，我们想使头文件看起来简洁点，能不能像普通函数那样将内联函数声明和函数定义放在头文件和实现文件中呢？
 
@@ -298,7 +298,7 @@ https://www.cnblogs.com/findumars/p/4340936.html
 
 C++中的INL
 
-# 常用libc实现
+## 常用libc实现
 
 libc是C语言标准库的简称，它有多种实现。除了最常用的gcc自带的glibc之外，还有musl、uClibc、dietlibc等。
 
@@ -343,6 +343,10 @@ struct Test {
 ```
 
 Zero-length array不占用结构体的空间，但可以由编译器计算offset，例如上例中指向c的指针，实际上指向了整个结构体的尾部（不含结构体本身）。
+
+---
+
+C++已经有不少解释器：clang-repl，cling等。
 
 ---
 

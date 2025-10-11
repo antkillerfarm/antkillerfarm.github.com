@@ -133,6 +133,10 @@ https://research.colfax-intl.com/cutlass-tutorial-wgmma-hopper/
 
 CUTLASS Tutorial: Fast Matrix-Multiplication with WGMMA on NVIDIA® Hopper™ GPUs
 
+https://zhuanlan.zhihu.com/p/1945136522455122713
+
+NVIDIA TMA全面分析
+
 ## Tile IR
 
 Tile based的编程，逐渐替代传统的SIMT编程，成为LLM时代的首选。
