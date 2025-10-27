@@ -152,3 +152,61 @@ https://mp.weixin.qq.com/s/qgp97solB7pZauOnlH62wg
 https://www.zhihu.com/question/27567966
 
 中国二汽总部当初为什么选择在十堰？有什么不为人知的原因？
+
+# 光刻+
+
+## 参考
+
+通常认为，DRAM的天花板是10nm。其原因是在传统1T1C架构下，单位元件面积不断减小，如何保证电容能够存储足够的电荷、防止相邻存储单元之间的耦合，是DRAM推进到10nm以下的无解难题，而EUV是用来做7nm以下的，DRAM目前主流是14纳米。14纳米理论上完全可以用DUV来完成，不需要EUV。
+
+三星电子的1Znm节点DRAM量产结果表明，相比于DUV浸没式光学光刻机，EUV光刻机极大简化了制造流程，不仅可以大幅度提高光刻分辨率和DRAM性能，而且可以减少所使用的掩模数量，从而减少流程步骤的数量，减少缺陷、提高存储密度，并大幅降低DRAM生产成本，缩短生产周期。也就是说，即使EUV掩模费用（达数百万美元）远高于DUV掩模费用，使用EUV光刻机量产DRAM也具有更高的性价比。
+
+---
+
+单单把物镜安装上光刻机的位移量测，需要在大量程6自由度如此复杂的前提，再耦合高速运动等条件下进行，干涉仪的精度必须在0.1nm以下才能实现，所以单单这个安装光刻机物镜的干涉仪就得重新自主研发。因为这玩意国外也不卖给我们了。
+
+ASML有两个重要的干涉仪供应商，物镜安装调整的干涉仪由物镜御用厂家Zeiss SMT，也就是德国蔡司半导体技术公司直接来提供，ASML也投资了这家公司，与其一起研发EUV光刻机上所需的光学部件。
+
+另外一个干涉仪厂家是美国的Zygo公司，他主要供应ASML工件台的激光干涉仪组件，加上ASML自主开发的反馈控制算法，由于光刻机工件台，需要瞬间启动以及停止，移动速度高达7个G以上，同时精度还需达到亚微米级别，加上日本的两个光刻机品牌，目前工件台的激光干涉仪供应商全球只有Zygo以及Renishaw两家。
+
+---
+
+https://mp.weixin.qq.com/s/NZGNrO_LxNc6qrIdofOIfQ
+
+假如没有他（林本坚），就没有今天的台积电
+
+https://mp.weixin.qq.com/s/-cudXRIo0t4gNpEqVJ7vKw
+
+芯片光刻的流程详解
+
+https://mp.weixin.qq.com/s/V2AY7VcUEFCMAdMPJ54ZiA
+
+一文看懂光刻机
+
+https://mp.weixin.qq.com/s/VY0WeBfZ2vN8OaupcsEvxw
+
+光刻胶发展历史
+
+https://mp.weixin.qq.com/s/odDzhxRsGuZYOdYtbrHV8Q
+
+一文看懂光刻胶
+
+https://mp.weixin.qq.com/s/jqP52LFcmd5oGRLBfE2J_A
+
+光刻机编年史（1959-1969）
+
+https://mp.weixin.qq.com/s/YvzxV5NLz4FkKO71bxpAIA
+
+给孩子讲讲光刻机吧
+
+https://mp.weixin.qq.com/s/6BnrAEMpZxJ3ChBHWQ9mWA
+
+台积电缺电！30台EUV光刻机一天耗电90万度
+
+https://mp.weixin.qq.com/s/AUDDEYETPdJSyIdpMl4hLQ
+
+一文看懂ASML EUV光刻技术
+
+https://mp.weixin.qq.com/s/DFU4zoteqehOJkBpVVhXyA
+
+EUV光刻机里的低调王者

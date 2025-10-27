@@ -351,6 +351,16 @@ https://zhuanlan.zhihu.com/p/666269440
 
 PyBind11简明教程
 
+## nanobind
+
+nanobind是pybind11的作者Wenzel Jakob的新作。
+
+nanobind只面向现代C++17及以上，让代码适配工具，不再兼容老旧代码。显著降低构建与运行开销，并缩减发布体积。
+
+CPython提出了Stable ABI（也叫 ABI3）标准，如果只使用该标准定义的有限API，就承诺同一大版本系列（3.x）内，头文件、结构体布局、函数签名都不会变，因此3.12编译出的.abi3.so可以在3.13、3.14… 上直接加载，无需重新编译。
+
+nanobind也遵循了ABI3标准。
+
 ## python调用GTK函数的一般规则
 
 众所周知，GTK库是用C语言编写的，其相关的文档提供的也是C函数的接口，python接口的文档相对较少，获得也不太容易。因此有必要掌握一下这方面基本的命名规则。（这里只讲方法，对深层次的调用原理不做探究。）
@@ -447,29 +457,3 @@ self.player.seek(1.0, Gst.Format.TIME, Gst.SeekFlags.FLUSH, Gst.SeekType.SET,\
 改为
 
 `c_long(Gst.CLOCK_TIME_NONE).value`
-
-## Django
-
-Django是一个Web框架。
-
-官网：
-
-https://www.djangoproject.com/
-
-中文教程：
-
-https://www.runoob.com/django/django-tutorial.html
-
-安装：
-
-`sudo pip install Django`
-
-参考：
-
-https://mp.weixin.qq.com/s/-CaMHjsY580et8Hh_D2FSg
-
-简约而不简单的Django新手图文教程
-
-http://www.liujiangblog.com/course/django/
-
-Django教程

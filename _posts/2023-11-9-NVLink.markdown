@@ -215,6 +215,8 @@ https://en.wikichip.org/wiki/nvidia/nvlink
 
 ![](/images/img5/GPU_2.png)
 
+![](/images/img6/programming-model.svg)
+
 Registers -> Caches -> Shared Memory（Unified Buffer） -> Gloabl Memory（Local Memory）
 
 https://blog.csdn.net/qq_41554005/article/details/119765334

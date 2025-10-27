@@ -259,117 +259,40 @@ https://mp.weixin.qq.com/s/kGVLsqstajyrZ_cfkFegrA
 
 Latex数学排版简洁指南
 
-# C/C++参考资源=
+# 并行 & 框架 & 优化参考资源+
 
-## std::tuple
+https://mp.weixin.qq.com/s/LjdHBEyQhJq3ptMj8XVT-w
 
-```cpp
-auto tuple = std::make_tuple(1, 'A', "test");
-std::cout << std::get<0>(tuple) << std::endl;
-std::cout << std::get<1>(tuple) << std::endl;
-std::cout << std::get<2>(tuple) << std::endl;
-```
+TensorFlow在推荐系统中的分布式训练优化实践
 
-## std::tie
+https://mp.weixin.qq.com/s/rEHhf32L09KXGJ9bbB2LEA
 
-可用tuple或pair返回多个返回值，然后用tie进行解包。这里的语法非常类似python。
+TensorFlow在美团外卖推荐场景的GPU训练优化实践
 
-```cpp
-std::pair<int, std::string> fun_tie(int a, std::string str)
-{
-  return std::make_pair(a, str);
-}
+https://zhuanlan.zhihu.com/p/522759214
 
-int a;
-std::string str;
-std::tie(a , str) = fun_tie(12, std::string("Pony Ma"));
-std::cout << a << "," << str << std::endl;
-```
+手把手推导分布式矩阵乘的最优并行策略
 
-## inl文件
+https://mp.weixin.qq.com/s/_o7fzCOeuZE6qFc5gHb26g
 
-inl文件是内联函数的源文件。内联函数通常在C++头文件中实现，但是当C++头文件中内联函数过多的情况下，我们想使头文件看起来简洁点，能不能像普通函数那样将内联函数声明和函数定义放在头文件和实现文件中呢？
+美团视觉GPU推理服务部署架构优化实践
 
-当然答案是肯定的，具体做法将是：将内联函数的具体实现放在inl文件中，然后在该头文件末尾使用#include引入该inl文件。
+https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
 
-参考：
+Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
 
-https://www.cnblogs.com/findumars/p/4340936.html
+https://zhuanlan.zhihu.com/p/529388795
 
-C++中的INL
+训练千亿参数大模型，离不开四种GPU并行策略
 
-## 常用libc实现
+https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
 
-libc是C语言标准库的简称，它有多种实现。除了最常用的gcc自带的glibc之外，还有musl、uClibc、dietlibc等。
+百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
 
-http://www.etalabs.net/compare_libcs.html
+https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
 
-这个网址是以上4种libc实现的比较结果。从结果来看，musl比较有投资价值。实际上，最近（2015.5）的OpenWrt项目就已经将libc由uClibc改为musl。我也是因为这个原因，才知道musl的。
+分布式深度学习原理、算法详细介绍
 
-当然这个表并不完整，其他的libc可以参见:
+https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
 
-https://en.wikipedia.org/wiki/C_standard_library
-
-## 有价值的C/C++库
-
-https://github.com/fffaraz/awesome-cpp
-
-一个专门收集各种C/C++库的网页
-
-https://github.com/gabime/spdlog
-
-一个C++的log库
-
-https://zhuanlan.zhihu.com/p/674073158
-
-超详细！spdlog源码解析
-
-## C/C++参考资源
-
-`vector<bool>`并不是一个通常意义上的vector容器，这个源自于历史遗留问题。 早在C++98的时候，就有`vector< bool>`这个类型了，但是因为当时为了考虑到节省空间的想法，所以`vector<bool>`里面不是一个Byte一个Byte储存的，它是一个bit一个bit储存的！
-
-https://www.zhihu.com/question/23367698
-
-c++中为什么不提倡使用`vector<bool>`？
-
----
-
-```c
-struct Test {
-  int a;
-  int b;
-  char c[0];
-};
-```
-
-Zero-length array不占用结构体的空间，但可以由编译器计算offset，例如上例中指向c的指针，实际上指向了整个结构体的尾部（不含结构体本身）。
-
----
-
-C++已经有不少解释器：clang-repl，cling等。
-
----
-
-https://zhuanlan.zhihu.com/p/23016264
-
-这么多款STL，总有一款适合你
-
-https://mp.weixin.qq.com/s/Hpn7KqYlBKz0JdryiozqyQ
-
-每个开发者都应该了解的一些C++特性
-
-https://www.cnblogs.com/wuchanming/p/3913492.html
-
-emplace_back与push_back的区别
-
-https://zhuanlan.zhihu.com/p/82895086
-
-当我们谈论C++时，我们在谈论什么？
-
-https://mp.weixin.qq.com/s/pxyTlQn4wx-N_MaWZc0oAQ
-
-漫谈C++的各种检查
-
-https://mp.weixin.qq.com/s/LchYGGcSbIMVGxO0Uea0RA
-
-深入C++回调
+苹果发布Turi Create机器学习框架，5行代码开发图像识别

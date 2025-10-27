@@ -143,7 +143,15 @@ https://www.zhihu.com/question/610490718
 
 ---
 
+Tiano是Intel于2003年左右启动的“平台创新框架”项目，目标是用EFI/UEFI取代传统BIOS，为PC、服务器和嵌入式设备提供一个模块化、可扩展、硬件无关的固件基础。
+
+---
+
 参考：
+
+https://uefi.org/specifications
+
+UEFI Specifications
 
 https://zhuanlan.zhihu.com/p/81960137
 

@@ -129,6 +129,12 @@ https://deepstatemap.live
 
 ---
 
+https://csfs64.github.io
+
+由国内民间组织Kalyna OSINT维护的战线图。其前身为Chinese Strategic Frontline Situation（CSFS） Mapping。
+
+---
+
 https://www.oryxspioenkop.com/2022/02/attack-on-europe-documenting-equipment.html
 
 这是荷兰的一家网站，提供了收集到的所有俄罗斯战损的信息。

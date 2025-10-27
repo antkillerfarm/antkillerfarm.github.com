@@ -230,6 +230,10 @@ Open Compute Project提出了一种有别于IEEE标准的浮点数格式。
 
 MX格式用block-wise共享指数X当input scale，用指数域直接相加的方式即时产生output scale，既能在训练端做反向传播，也能在推理端零开销还原，比传统per-channel/per-tensor scale更省带宽、更省寄存器。
 
+这种方法也被称为Block Scaling。
+
+DeepSeek-V3.1引入的UE8M0-FP8格式，这里的UE8M0实际上并不是FP8的格式，而是Block Scaling的格式。
+
 ---
 
 f6E3M2FNU：

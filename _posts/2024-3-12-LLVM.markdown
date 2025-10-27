@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  LLVM, MLIR（一）
+title:  LLVM
 category: toolchain 
 ---
 
@@ -175,17 +175,51 @@ LLVM的汇编语言和其他汇编语言不同，它是SSA形式的。
 
 ## ADT
 
-ADT（Abstract Data Type）是LLVM定义的一套高级数据类型。
+ADT（Abstract Data Type）是LLVM定义的一套高级数据类型。其中部分类可作为std库的替代品。
+
+例如`std::vector`的替代品`llvm::SmallVector`，它的前N个元素直接存储在对象内部，无需堆分配。只有当元素数量超过N时，才会退化为类似`std::vector`的堆分配行为。
+
+类似的还有`std::string`的替代品`llvm::SmallString`。
+
+`SmallSet<T, N>`：元素≤N时是有序线性搜索，>N自动升为`std::set`。
 
 https://inside-compiler.github.io/2024/02/02/ADT-Overview/
 
 ADT-概述
+
+---
+
+`auto cmdId = llvm::formatv("__{0}__dma_in_{1}", func.getSymName(), numcps++).sstr<64>();`
+
+`.sstr<N>()`会将格式化结果写入一个`llvm::SmallString<N>`对象中，并返回它。
 
 ## tablegen
 
 LLVM tablegen，文件名后缀为`.td`。
 
 ``(`reset` $reset^)?``，其中`(...)?`表示分组，`^`表示判断依据。只有对应的`Optional`或`UnitAttr`存在的时候，才会输出这个分组。
+
+`llvm-min-tblgen`和`llvm-tblgen`都是用于处理TableGen（.td）文件的工具。前者是后者的轻量版，仅用于构建LLVM公共头文件，不做其他用途。
+
+---
+
+读懂一个MLIR的Dialect的语法，需要关注以下几个层面的东西：
+
+- BNF/EBNF。tablegen的语法是用前者定义的。
+
+- tablegen语法：
+
+https://llvm.org/docs/TableGen/ProgRef.html
+
+- MLIR语法：
+
+https://mlir.llvm.org/docs/LangRef/
+
+- ODS语法：
+
+https://mlir.llvm.org/docs/DefiningDialects/Operations/
+
+---
 
 https://zhuanlan.zhihu.com/p/447318642
 
@@ -316,129 +350,3 @@ A Tour to LLVM IR（上）
 https://zhuanlan.zhihu.com/p/66909226
 
 A Tour to LLVM IR（下）
-
-# MLIR
-
-Multi-Level IR
-
-代码：
-
-llvm/mlir
-
-教程：
-
-llvm/mlir/docs/Tutorials/Toy
-
----
-
-![](/images/img4/codegen-dialect-hierarchy.svg)
-
-![](/images/img5/TOSA.png)
-
-![](/images/img5/MLIR.png)
-
-![](/images/img6/dialect.png)
-
-Affine Dialect：这种Dialect使用来自多面体编译的技术使依赖分析和循环转换高效可靠。
-
-GPU Dialect：MLIR中的GPU Dialect模拟了类似于CUDA或OpenCL的通用GPU编程范式。它的目标是提供抽象来模拟GPU特定的操作和属性。它在很大程度上意味着与供应商无关。
-
-Tensor Operator Set Architecture (TOSA) Dialect
-
-Vector Dialect：对SIMD或者SIMT模型的抽象。
-
-SCF(Structured Control Flow) Dialect：比控制流图CFG更高层的抽象，比如并行的for和while循环以及条件判断。
-
-Async Dialect：通常用来表示异步操作模型。
-
-Control Flow Graph, CFG
-
-Operation Definition Specification, ODS
-
-文档：
-
-https://mlir.llvm.org/docs/Dialects/
-
-参考：
-
-https://discourse.llvm.org/t/codegen-dialect-overview/2723
-
-Codegen Dialect Overview
-
----
-
-Transform Dialect：dialect之间的调度变换都可以使用transform dialect中相关的语句来实现了，最终写成一个transform.sequence。相较于完整的Pipeline，transform.sequence实现的调度变换十分灵活。
-
-官方文档：
-
-https://mlir.llvm.org/docs/Tutorials/transform/
-
-参考：
-
-https://zhuanlan.zhihu.com/p/624827690
-
-transform dialect
-
----
-
-ONNX MLIR:
-
-http://onnx.ai/onnx-mlir
-
----
-
-Torch-MLIR
-
-https://github.com/llvm/torch-mlir
-
-![](/images/img4/torch_mlir.jpg)
-
-TorchScript-->TorchDialect-->Linalg-on-Tensors
-
-https://blog.csdn.net/HaoBBNuanMM/article/details/124385542
-
-Torch-MLIR技术详解
-
----
-
-MLIR是树形结构，每个节点是Operation，Op可以组成Block，Block组成Region，而Region又可以嵌套在Op内部。
-
-Operation指单个运算，运算内可以嵌套Region。
-
-Block指基本块，基本块包含一个或多个Operation。
-
-Region指区域，类似于循环体或函数体，包含若干Block。Region类似于C语言的作用域，Region内可定义局部变量。
-
-```
-#map = affine_map<(m, n, k) -> (m, k)>
-#map1 = affine_map<(m, n, k) -> (k, n)>
-#map2 = affine_map<(m, n, k) -> (m, n)>
-module {
-  func.func @main(%arg0: tensor<10x64xf32>, %arg1: tensor<64x16xf32>) -> tensor<10x16xf32> {
-    %0 = tensor.empty() : tensor<10x16xf32>
-    %1 = linalg.generic {indexing_maps = [#map, #map1, #map2], iterator_types = ["parallel", "parallel", "reduction"]} ins(%arg0, %arg1 : tensor<10x64xf32>, tensor<64x16xf32>) outs(%0 : tensor<10x16xf32>) {
-    ^bb0(%in: f32, %in_0: f32, %out: f32):
-      %2 = arith.mulf %in, %in_0 : f32
-      %3 = arith.addf %out, %2 : f32
-      linalg.yield %3 : f32
-    } -> tensor<10x16xf32>
-    return %1 : tensor<10x16xf32>
-  }
-}
-```
-
-上例是一个matmul算子的MLIR，`linalg.generic`表示了该指令属于linalg dialect。
-
-Basic block指的是没有分支的代码序列，它使用`^`作为开头。
-
----
-
-使用LLDB调试：
-
-https://mlir.llvm.org/getting_started/Debugging/
-
-插件：
-
-https://github.com/llvm/llvm-project/blob/main/llvm/utils/lldbDataFormatters.py
-
-https://github.com/llvm/llvm-project/blob/main/mlir/utils/lldb-scripts/mlirDataFormatters.py

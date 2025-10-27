@@ -172,6 +172,10 @@ flash_attn中io的默认layout是bshd格式的，这是因为attn之前的MLP的
 
 ---
 
+SDPA（Scaled Dot-Product Attention）：PyTorch 2.0+引入的、会根据硬件自动挑选最快内核（FlashAttention / Memory-Efficient / C++）的attention API。
+
+---
+
 https://www.zhihu.com/question/611236756
 
 FlashAttention的速度优化原理是怎样的？

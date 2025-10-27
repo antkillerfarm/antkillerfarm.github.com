@@ -384,7 +384,11 @@ https://git.kernel.org/pub/scm/devel/pahole/pahole.git
 
 ## DWARF
 
-DWARF第一版发布于1992年，主要是为UNIX下的调试器提供必要的调试信息。
+1980年代AT&T的Unix System V需要一种与编译器/架构无关的调试格式，于是设计了DWARF（名字纯属幽默，和“ELF 是小精灵，DWARF是小矮人”有关）。
+
+它的目的是让调试器能把机器码映射回源代码。
+
+和它类似的是CodeView：Windows PDB的前身，MSVC专用，闭源。
 
 https://zhuanlan.zhihu.com/p/419908664
 
@@ -477,19 +481,3 @@ Linux服务端最大并发数是多少？
 https://mp.weixin.qq.com/s/bPqnaMqhi_4p1mwjmvyoIw
 
 多图详解10大高性能开发核心技术
-
-https://mp.weixin.qq.com/s/ESLO1RH6Q8udwI13Z2Pz_w
-
-详解linux io flush
-
-https://mp.weixin.qq.com/s/LLlzPB2emr9Hqr7gql0B4Q
-
-为什么Linux需要Swapping
-
-https://mp.weixin.qq.com/s/fzLcAkYwKhj-9hgoVkTzaw
-
-CPU飙高，系统性能问题如何排查？
-
-https://www.zhihu.com/question/456916638
-
-printf是怎么输出到控制台的呢？（app->libc->syscall->console）

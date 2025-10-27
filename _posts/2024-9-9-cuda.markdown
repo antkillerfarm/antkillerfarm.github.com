@@ -199,7 +199,7 @@ Thrust是一个C++库，它提供了对GPU加速并行算法的便捷访问。
 
 从Ampere架构开始，引入了异步访存指令。
 
-同步版本的流水线访存就是ld.global到regsiters，然后st.shared写入到共享内存，它们都会阻塞计算指令，但是warp scheduler会通过warp切换，让其他已经eligible的warp继续执行（本质上还是ILP），因此，一般同步版本最多开双流水（double-buffer），因为需要额外的寄存器进行prefetch，占用率不会太高，计算没法更好地掩盖访存的延迟。
+同步版本的流水线访存就是ld.global到registers，然后st.shared写入到共享内存，它们都会阻塞计算指令，但是warp scheduler会通过warp切换，让其他已经eligible的warp继续执行（本质上还是ILP），因此，一般同步版本最多开双流水（double-buffer），因为需要额外的寄存器进行prefetch，占用率不会太高，计算没法更好地掩盖访存的延迟。
 
 异步版本是硬件层面的异步指令（cp/store.async），本身计算和访存单元就是可以独立运行的，有了异步层级的指令支持后，可以充分发挥这一特点，指令不会阻塞计算指令，但是需要fence/barrier等同步手段，因此，warp可以继续执行下去（如果条件允许），此外，这些指令需要消耗额外的寄存器进行预取，直接global->shared或者shared->global，一般可以开2-4条流水。
 
@@ -234,6 +234,16 @@ https://zhuanlan.zhihu.com/p/266633373
 https://www.zhihu.com/question/35361192
 
 CUDA为什么要分线程块和线程网格？
+
+---
+
+Warp采用下图的策略来调度thread：
+
+![](/images/img6/warp-cycles.svg)
+
+- Stalled：由于指令/数据没有准备好，或者其他原因，导致thread处于等待的状态。
+- Eligible：万事俱备，只待执行。
+- Selected：被选中执行的thread。
 
 ---
 

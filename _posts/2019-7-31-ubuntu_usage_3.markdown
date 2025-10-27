@@ -33,16 +33,6 @@ https://ping.chinaz.com/
 
 SwitchyOmega：一个网络代理的插件
 
-# 常用快捷键
-
-Ctrl+Alt+T：启动Terminal
-
-Ctrl+Shift+T：在terminal中打开多个标签
-
-alt+1 alt+2 alt+3...：切换标签
-
-Ctrl+Super+D：最小化所有窗口
-
 # Ubuntu 18.04使用手记
 
 又是两年过去了，这次是Ubuntu 18.04（2018.4.26发布）。

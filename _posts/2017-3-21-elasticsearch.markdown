@@ -27,6 +27,12 @@ http://solr-vs-elasticsearch.com/
 
 ElasticSearch和Solr的对比
 
+---
+
+redis和elsaticsearch都是因为觉得刀乐都被云服务器厂商赚走了，开始修改开源协议。
+
+但是大厂也不惯着，立马推出valkey和opensearch ，既赚了刀乐，也赚了面子。。。囧
+
 ## 简易安装步骤
 
 为了避免版本混乱，目前Elastic Stack将各组件的版本号统一为一个。使用时，各组件版本号应该一致。

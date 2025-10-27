@@ -373,3 +373,13 @@ https://www.freeplane.org/wiki/index.php/Home
 https://mp.weixin.qq.com/s/yD12Ih29_9CwwOe4z5BtgQ
 
 被收费绘图工具PUA了怎么办？来看看这个老实工具吧
+
+# 常用快捷键
+
+Ctrl+Alt+T：启动Terminal
+
+Ctrl+Shift+T：在terminal中打开多个标签
+
+alt+1 alt+2 alt+3...：切换标签
+
+Ctrl+Super+D：最小化所有窗口

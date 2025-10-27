@@ -119,3 +119,145 @@ https://wandb.ai/ai2-llm/OLMo-7B/reports/OLMo-7B--Vmlldzo2NzQyMzk5
 https://zhuanlan.zhihu.com/p/702811733
 
 Vision-Language Models (VLMs)多模态大模型一年多的进展与思考-2406
+
+# C/C++参考资源=
+
+## std::tuple
+
+```cpp
+auto tuple = std::make_tuple(1, 'A', "test");
+std::cout << std::get<0>(tuple) << std::endl;
+std::cout << std::get<1>(tuple) << std::endl;
+std::cout << std::get<2>(tuple) << std::endl;
+```
+
+## std::tie
+
+可用tuple或pair返回多个返回值，然后用tie进行解包。这里的语法非常类似python。
+
+```cpp
+std::pair<int, std::string> fun_tie(int a, std::string str)
+{
+  return std::make_pair(a, str);
+}
+
+int a;
+std::string str;
+std::tie(a , str) = fun_tie(12, std::string("Pony Ma"));
+std::cout << a << "," << str << std::endl;
+```
+
+## inl文件
+
+inl文件是内联函数的源文件。内联函数通常在C++头文件中实现，但是当C++头文件中内联函数过多的情况下，我们想使头文件看起来简洁点，能不能像普通函数那样将内联函数声明和函数定义放在头文件和实现文件中呢？
+
+当然答案是肯定的，具体做法将是：将内联函数的具体实现放在inl文件中，然后在该头文件末尾使用#include引入该inl文件。
+
+参考：
+
+https://www.cnblogs.com/findumars/p/4340936.html
+
+C++中的INL
+
+## 常用libc实现
+
+libc是C语言标准库的简称，它有多种实现。除了最常用的gcc自带的glibc之外，还有musl、uClibc、dietlibc等。
+
+http://www.etalabs.net/compare_libcs.html
+
+这个网址是以上4种libc实现的比较结果。从结果来看，musl比较有投资价值。实际上，最近（2015.5）的OpenWrt项目就已经将libc由uClibc改为musl。我也是因为这个原因，才知道musl的。
+
+当然这个表并不完整，其他的libc可以参见:
+
+https://en.wikipedia.org/wiki/C_standard_library
+
+## 有价值的C/C++库
+
+https://github.com/fffaraz/awesome-cpp
+
+一个专门收集各种C/C++库的网页
+
+https://github.com/gabime/spdlog
+
+一个C++的log库
+
+https://zhuanlan.zhihu.com/p/674073158
+
+超详细！spdlog源码解析
+
+## 模板元编程
+
+这段代码用来在编译期根据“一堆长度”生成一个N维静态数组类型。
+
+```cpp
+template<typename A, size_t... dims>
+struct variadic_array;
+// 告诉编译器：后面会有一个模板variadic_array，它接收一个类型A和任意数量的size_t类型的参数。此时没有定义，只做了声明。
+template<typename A, size_t first_dim, size_t... rest_dims>
+struct variadic_array<A, first_dim, rest_dims...> {
+    using type = typename variadic_array<A, rest_dims...>::type[first_dim];
+};
+// 当模板实参列表里至少有一个size_t时，这个版本被选中。它把第一个维度first_dim拿出来，然后递归到剩下的维度rest_dims...。
+template<typename A>
+struct variadic_array<A> {
+    using type = A;
+};
+// 当把所有维度都剥光后，只剩下类型A，递归停止。
+template<typename A, size_t... dims> 
+using variadic_array_t = typename variadic_array<A, dims...>::type;
+// 给整个元函数起一个别名，variadic_array_t<float, 3, 4, 5>等价于float[3][4][5]。
+```
+
+`...`只能出现在模板参数列表或函数参数列表里，声明一般为`typename... Ts`的形式，而使用则是`Ts...`。前者也被称为`pack`，后者则是`unpack`。
+
+使用`sizeof...(Ts)`运算符可以得到pack的数量。
+
+## C/C++参考资源
+
+`vector<bool>`并不是一个通常意义上的vector容器，这个源自于历史遗留问题。 早在C++98的时候，就有`vector< bool>`这个类型了，但是因为当时为了考虑到节省空间的想法，所以`vector<bool>`里面不是一个Byte一个Byte储存的，它是一个bit一个bit储存的！
+
+https://www.zhihu.com/question/23367698
+
+c++中为什么不提倡使用`vector<bool>`？
+
+---
+
+```c
+struct Test {
+  int a;
+  int b;
+  char c[0];
+};
+```
+
+Zero-length array不占用结构体的空间，但可以由编译器计算offset，例如上例中指向c的指针，实际上指向了整个结构体的尾部（不含结构体本身）。
+
+---
+
+C++已经有不少解释器：clang-repl，cling等。
+
+---
+
+https://zhuanlan.zhihu.com/p/23016264
+
+这么多款STL，总有一款适合你
+
+https://mp.weixin.qq.com/s/Hpn7KqYlBKz0JdryiozqyQ
+
+每个开发者都应该了解的一些C++特性
+
+https://www.cnblogs.com/wuchanming/p/3913492.html
+
+emplace_back与push_back的区别
+
+https://zhuanlan.zhihu.com/p/82895086
+
+当我们谈论C++时，我们在谈论什么？
+
+https://mp.weixin.qq.com/s/pxyTlQn4wx-N_MaWZc0oAQ
+
+漫谈C++的各种检查
+
+https://mp.weixin.qq.com/s/LchYGGcSbIMVGxO0Uea0RA
+
+深入C++回调

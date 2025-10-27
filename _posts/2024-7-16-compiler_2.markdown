@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  编译原理（二）, MLIR（二）, StableHLO
+title:  编译原理（二）, StableHLO
 category: toolchain 
 ---
 
@@ -73,6 +73,21 @@ y = phi(x1, x2);
 ```
 
 所以一个分支语句实际上包含了3个block，除了明处的then和else之外，还有Phi function所在的merge block。
+
+```cpp
+Builder.SetInsertPoint(MergeBB);
+PHINode *PN =
+  Builder.CreatePHI(Type::getDoubleTy(TheContext), 2, "iftmp");
+
+PN->addIncoming(ThenV, ThenBB);
+PN->addIncoming(ElseV, ElseBB);
+```
+
+for loop:
+
+```cpp
+Builder.CreateCondBr(EndCond, LoopBB, AfterBB);
+```
 
 ## PPCG
 
@@ -202,21 +217,39 @@ Canonicalization
 
 # MLIR
 
-`./mlir-opt --pass-pipeline="builtin.module(func.func(tosa-to-linalg-named, tosa-to-linalg, tosa-to-arith{include-apply-rescale=1}, tosa-to-tensor),one-shot-bufferize,...)" a.mlir -o b.mlir`
+MLIR是树形结构，每个节点是Operation，Op可以组成Block，Block组成Region，而Region又可以嵌套在Op内部。
 
-`mlir-opt`是一个命令行工具，用于组建Pass pipeline，将一个mlir文件变成另一个mlir文件。
+Operation指单个运算，运算内可以嵌套Region。
 
----
+Block指基本块，基本块包含一个或多个Operation。
 
-TPP (Tensor Processing Primitives)
+Region指区域，类似于循环体或函数体，包含若干Block。Region类似于C语言的作用域，Region内可定义局部变量。
 
-《Tensor Processing Primitives: A Programming Abstraction for Efficiency and Portability in Deep Learning & HPC Workloads》
+```
+#map = affine_map<(m, n, k) -> (m, k)>
+#map1 = affine_map<(m, n, k) -> (k, n)>
+#map2 = affine_map<(m, n, k) -> (m, n)>
+module {
+  func.func @main(%arg0: tensor<10x64xf32>, %arg1: tensor<64x16xf32>) -> tensor<10x16xf32> {
+    %0 = tensor.empty() : tensor<10x16xf32>
+    %1 = linalg.generic {indexing_maps = [#map, #map1, #map2], iterator_types = ["parallel", "parallel", "reduction"]} ins(%arg0, %arg1 : tensor<10x64xf32>, tensor<64x16xf32>) outs(%0 : tensor<10x16xf32>) {
+    ^bb0(%in: f32, %in_0: f32, %out: f32):
+      %2 = arith.mulf %in, %in_0 : f32
+      %3 = arith.addf %out, %2 : f32
+      linalg.yield %3 : f32
+    } -> tensor<10x16xf32>
+    return %1 : tensor<10x16xf32>
+  }
+}
+```
 
-TCP (Tensor Compute Primitives)
+上例是一个matmul算子的MLIR，`linalg.generic`表示了该指令属于linalg dialect。
 
-https://discourse.llvm.org/t/rfc-tile-dialect-and-or-dialect-reshuffle/71252
+Basic block指的是没有分支的代码序列，它使用`^`作为开头。
 
-Tile Dialect and-or Dialect Reshuffle
+`#map`是一个属性别名，它使用`#`作为开头。
+
+`#foo<string<"">>`：`#`还用于定义dialect的属性，`<>`内部是属性的body。
 
 ---
 

@@ -161,6 +161,18 @@ https://www.zhihu.com/question/12616022631
 
 DeepSeek新论文NSA注意力机制，有哪些信息值得关注？
 
+---
+
+![](/images/img6/DSA.png)
+
+长上下文Transformer的核心痛点是注意力机制的$$O(L^2)$$复杂度和随之而来的显存/带宽压力。所有稀疏注意力的本质都是在回答一个问题：我们能否在不计算完整注意力矩阵的情况下，依然找到那些最重要的Key-Value对？
+
+DSA的思想非常直观：增加一个极其便宜的“粗评分器”（即索引器），先对“所有历史token”做一次极轻量的打分和排序，选出Top-k个最有潜力的候选者。然后，再把“真正昂贵”的主注意力计算聚焦在这Top-k个候选者上。通过这种方式，将注意力的开销从$$O(L^2)$$近似降低到$$O(Lk)$$，其中$$k \ll L$$。
+
+https://zhuanlan.zhihu.com/p/1956149979077911247
+
+DeepSeek V3.2 Sparse Attention（DSA）技术深度剖析与潜在改进
+
 ## Expert Parallelism
 
 Expert-Parallel vs. Token-Parallel

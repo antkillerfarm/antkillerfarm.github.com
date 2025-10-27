@@ -40,6 +40,14 @@ $$\lambda = \exp(\lambda_{q1}\!\cdot\!\lambda_{k1}) - \exp(\lambda_{q2}\!\cdot\!
 
 但这样就带来两倍KV Cache + 两次FlashAttention计算的开销。于是作者直接写了一个“一次kernel launch里跑两路”的专用 CUDA kernel，起名叫Differential FlashAttention。
 
+## ThunderKittens
+
+ThunderKittens是一个由HazyResearch团队开发的轻量级、高性能深度学习框架。对长度<1K的序列，ThunderKittens的速度比FlashAttention-2快2-5倍。
+
+代码：
+
+https://github.com/HazyResearch/ThunderKittens
+
 ## 参考
 
 https://mp.weixin.qq.com/s/1R_plHqxTLE-Fw3TjYnlJQ
@@ -219,9 +227,3 @@ https://www.zhihu.com/question/603117242
 https://zhuanlan.zhihu.com/p/668509885
 
 向量数据库凉了吗？
-
-## Accumulate Gradients
-
-gradient_accumulation_steps用于处理当模型的参数数量超过GPU内存容量时的情况。在训练大型模型时，尤其是在使用较小的GPU进行训练时，可能会遇到内存不足的问题。这时，可以使用梯度累积来分割批次，从而使得每个小批次的计算都在GPU的内存限制范围内。
-
-如果设置了gradient_accumulation_steps=N，那么模型会先对N个批次的数据进行前向和反向传播，将这些批次的梯度累积起来，然后才进行一次权重更新。这样，实际上的批次大小相当于per_device_train_batch_size * N。

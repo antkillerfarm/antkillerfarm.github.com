@@ -349,6 +349,8 @@ RNN的状态变量：$$h_{t}=tanh \left(W h_{t-1}+U x_{t}\right)$$，其中的`t
 
 ![](/images/img5/SSM.png)
 
+SSM将`tanh`替换成了一个待学习的参数矩阵C。
+
 Structured State Space Model（S4）在S3的基础上做了一些改进之后发现，这个公式实际上就是一个Kalman Filter，而后者使用卷积加速已经是很成熟的套路了。
 
 ![](/images/img5/SSM_3.png)
@@ -363,6 +365,8 @@ Structured State Space Model（S4）在S3的基础上做了一些改进之后发
 - 而有效的模型必须有一个包含来自上下文的所有必要信息的状态(比如transformer)
 
 S5：Simplified State Space Layers for Sequence Modeling
+
+S3 & S4，包括后面提到的Mamba、RWKV等，通常都被划分为linear attention路线。
 
 ## Mamba
 

@@ -9,6 +9,32 @@ category: language
 
 # Python
 
+## Django
+
+Django是一个Web框架。
+
+官网：
+
+https://www.djangoproject.com/
+
+中文教程：
+
+https://www.runoob.com/django/django-tutorial.html
+
+安装：
+
+`sudo pip install Django`
+
+参考：
+
+https://mp.weixin.qq.com/s/-CaMHjsY580et8Hh_D2FSg
+
+简约而不简单的Django新手图文教程
+
+http://www.liujiangblog.com/course/django/
+
+Django教程
+
 ## SimpleHTTPServer
 
 Django比较重量级了，如果只是想发布静态网页的话，可以用：
