@@ -55,6 +55,14 @@ SERDES是英文SERializer(串行器)/DESerializer(解串器)的简称。
 
 ---
 
+欧姆定律模拟乘法，基尔霍夫定律模拟加法。
+
+https://www.zhihu.com/answer/1964759826291750079
+
+我国成功研制出新型芯片，特定任务中算力超越顶级GPU千倍，这一突破有何意义？
+
+---
+
 https://mp.weixin.qq.com/s/ZexnsNmqsD2yq-7YNASohw
 
 数模转换器的基本原理及DAC类型简介

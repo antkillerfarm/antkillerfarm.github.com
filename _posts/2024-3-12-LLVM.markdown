@@ -203,6 +203,20 @@ LLVM tablegen，文件名后缀为`.td`。
 
 ---
 
+tablegen的书写采用DAG（Directed Acyclic Graph，有向无环图）形式的语法树。
+
+`(add (mul $x, 2), $y)`
+
+```td
+let arguments = (ins
+  I32:$in_stride,
+  DefaultValuedAttr<I32Attr, "0">:$dilation);
+```
+
+上例会自动生成`getInStride`和`setInStride`成员函数。
+
+---
+
 读懂一个MLIR的Dialect的语法，需要关注以下几个层面的东西：
 
 - BNF/EBNF。tablegen的语法是用前者定义的。
@@ -284,6 +298,14 @@ PB.registerModuleAnalyses(*TheMAM);
 https://llvm.org/docs/CompileCudaWithLLVM.html
 
 Compiling CUDA with clang
+
+## lldb
+
+设置参数：
+
+`lldb ./myApp -- -f config.ini -v`
+
+其中`-- `之后的内容会被原样传给被调试程序。
 
 ## 参考
 

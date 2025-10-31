@@ -9,7 +9,25 @@ category: Russo Ukrainian War Wind
 
 # 俄乌战争：疾风篇
 
-## 泽连斯基语录（续）
+## 泽连斯基语录
+
+永远记住：乌克兰在这个敌人出现之前就有，乌克兰将在他之后还会继续存在。
+
+我们不是夹在兽人和精灵之间的边缘地带。 -- by 瓦夏
+
+我在这里。我们没有放下武器。我们将保卫我们的国家。
+
+The fight is here. I need ammunition, not a ride.
+
+The fate of Ukraine depends only on Ukrainians. No one but ourselves will control our lives.
+
+我命由我不由人，乌克兰的命运只能由乌克兰人民抉择。
+
+No one but ourselves can guarantee security.
+
+When you attack us, you will see our faces, not our backs.
+
+Without gas or without you? – The answer is without you. Without electricity or without you? – Without you. Without water or without you? – Without you. Without food or without you? – Without you.
 
 他们告诉你我们是纳粹。但一个牺牲了超过八百万条生命来消灭纳粹的民族怎么能被称为纳粹呢？我的祖父作为苏联步兵活过了整场战争，在一个独立的乌克兰作为上校死去，我怎么会是纳粹呢？
 

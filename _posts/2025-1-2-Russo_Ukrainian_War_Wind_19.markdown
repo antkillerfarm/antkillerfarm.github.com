@@ -11,6 +11,12 @@ category: Russo Ukrainian War Wind
 
 ## 凡人列传
 
+2024年11月，117领土防御旅155营指责63旅指挥部在利曼方向的战斗中未提供火力支持和伤员撤离，他们声称，营几乎被消灭。
+
+63旅旅长尤尔丘克上校：在我们的战斗日志以及155营的日志中，整个期间，所谓的“激烈”进攻行动中，声称“155营被全灭”的事件中，官方记录的死亡人数是三人。
+
+---
+
 对于更多在“无极限”康复中心的乌军士兵，他们则有一个坚定的想法——早日回到前线。“无极限”中心副主任、28岁的鲁斯兰·马科洪表示，约70%在此接受治疗的伤残士兵都回到军队继续服役。
 
 上帝将如何审判你那是上帝的事情，我的任务是尽快把你送过去。
@@ -249,23 +255,3 @@ https://zhuanlan.zhihu.com/p/1943056261198354052
 https://zhuanlan.zhihu.com/p/1958165019092050445
 
 即便是在无人机主导的战争中，一个拿着步枪的人也能留下自己的印记。
-
-## 泽连斯基语录
-
-永远记住：乌克兰在这个敌人出现之前就有，乌克兰将在他之后还会继续存在。
-
-我们不是夹在兽人和精灵之间的边缘地带。 -- by 瓦夏
-
-我在这里。我们没有放下武器。我们将保卫我们的国家。
-
-The fight is here. I need ammunition, not a ride.
-
-The fate of Ukraine depends only on Ukrainians. No one but ourselves will control our lives.
-
-我命由我不由人，乌克兰的命运只能由乌克兰人民抉择。
-
-No one but ourselves can guarantee security.
-
-When you attack us, you will see our faces, not our backs.
-
-Without gas or without you? – The answer is without you. Without electricity or without you? – Without you. Without water or without you? – Without you. Without food or without you? – Without you.

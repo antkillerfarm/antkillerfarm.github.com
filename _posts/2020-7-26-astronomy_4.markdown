@@ -45,6 +45,8 @@ Space X龙飞船成功发射，它和NASA到底有什么关系？
 
 ![](../images/img4/spaceship.jpg)
 
+商业航天产业“三高一长（高技术、高投入、高风险、长周期）”
+
 https://mp.weixin.qq.com/s/-eNzkpxJ_nQOF0RURjuSUg
 
 96秒4.25亿！马斯克疯狂炸毁载人火箭猎鹰9，最贵烟花锤炼逃生系统

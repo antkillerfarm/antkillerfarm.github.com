@@ -96,9 +96,9 @@ $$DM:P(Y,R\mid O)\to P(Y\mid O)$$
 
 贝叶斯网络是最简单的有向图模型。
 
-首先给出几个术语的定义：
+首先给出几个术语：
 
-**有向无环图(Directed Acyclic Graph, DAG)**：这个术语的字面意思很清楚，不解释。
+**有向无环图(Directed Acyclic Graph, DAG)**
 
 下图是图模型的部分变种之间的关系图。
 
