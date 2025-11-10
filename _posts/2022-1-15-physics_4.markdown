@@ -61,30 +61,6 @@ https://mp.weixin.qq.com/s/qQAwISuQnrNZkhcr2NVHWQ
 
 光的本质
 
-https://mp.weixin.qq.com/s/sVun44eLMKBFINnVVpNM1g
-
-看见光的15种方式
-
-https://mp.weixin.qq.com/s/hdKHsNagXaUGJU24GOvHMg
-
-宇宙中的光
-
-https://mp.weixin.qq.com/s/CguKKKmK6Dx_KhslTanwZg
-
-十大物理学预测
-
-https://zhuanlan.zhihu.com/p/72636777
-
-粒子物理入门notes
-
-https://mp.weixin.qq.com/s/np9OuEMQNtKMC7P1KPzTmg
-
-通往物理学世界的地图
-
-https://mp.weixin.qq.com/s/3svGvbk0-ek5tQCWJ9ii4A
-
-读懂相对论：从弯曲空间的几何开始
-
 # 核物理
 
 因为原子仅吸收特定波长的光，所以科学家会确保将激光波长调整为刚好大于静止时原子的吸收波长。这样，根据多普勒效应，当原子向光子移动时，光的波长会被压缩，当光的波长被压缩到恰好等于该原子的吸收波长时，原子就会吸收光子，原子就会从基态跃迁到激发态，原子的运动速度减慢，动能减小；而当原子停止或沿着光子同向运动时，原子就不会吸收光子了。
@@ -204,6 +180,12 @@ https://zhuanlan.zhihu.com/p/109530589
 https://www.zhihu.com/question/455063533
 
 苏联是怎么处理切尔诺贝利的核废水的？
+
+---
+
+1967年至1978年间，约12.6万桶低、中放射性核废料被随意堆放在德国阿斯盐矿（Asse II）地下750米深处，90%来自核电站。
+
+1988年，检测到含放射性物质的盐水（含铯-137、锶、钚等）从储存区渗出，但被隐瞒至2008年才公开。
 
 ---
 

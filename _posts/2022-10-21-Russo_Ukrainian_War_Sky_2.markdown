@@ -11,36 +11,6 @@ category: Russo Ukrainian War Sky
 
 ## 概述（续）
 
-乌克兰卫国战争一周年纪录片《这一年》
-
-记者科马罗夫（Dmitriy Komarov）战前是乌克兰著名的旅游节目主持人，也曾经和泽连斯基一起拍过节目，开战后他奔波在乌克兰全国各地，用镜头记录下战争。
-
-https://weibo.com/7744099666/4879637789809150
-
-第一部分
-
-https://weibo.com/7744099666/4890879490004354
-
-第二部分
-
----
-
-Komarov后续还制作了纪录片《一年·哈尔科夫》、《一年·赫尔松》。
-
-https://www.bilibili.com/video/BV1Qa4y1U71w
-
-这一年——赫尔松（第一集）
-
-https://www.bilibili.com/video/BV12N411L7zX
-
-这一年——赫尔松（第二集）
-
-https://www.bilibili.com/video/BV1GC4y1D7Vp
-
-这一年——赫尔松（第三集）
-
----
-
 2020年：234个单位
 
 2021：197个单位
@@ -190,6 +160,10 @@ https://zhuanlan.zhihu.com/p/1933136018875327848
 https://zhuanlan.zhihu.com/p/1956954228842030868
 
 俄乌两军战线月评（250930）
+
+https://zhuanlan.zhihu.com/p/1969570182566483359
+
+乌克兰战局追踪-2025年11月6日
 
 ## 顿巴斯战争
 

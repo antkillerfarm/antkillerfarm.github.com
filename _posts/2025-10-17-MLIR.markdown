@@ -218,6 +218,22 @@ Translate：在MLIR边界做转换，输入或输出是非MLIR格式。工具为
 - 先由用户给出一个“判定脚本”，对输入`.mlir`文件返回0表示“仍触发原 bug”（interesting），返回1表示“已不触发”。
 - 在确保“仍触发”的前提下，mlir-reduce用各种办法反复裁减IR，直到剪到最小仍致命的IR片段。
 
+---
+
+SCF示例：
+
+```mlir
+scf.for %iv = %lb to %ub step %step {
+  ... // body
+}
+
+scf.if %b  {
+  ...
+} else {
+  ...
+}
+```
+
 ## model-explorer
 
 model-explorer是google推出的可视化工具，支持对于MLIR的可视化。
@@ -231,6 +247,27 @@ https://github.com/google-ai-edge/model-explorer
 ```bash
 pip install ai-edge-model-explorer
 model-explorer
+```
+
+## pass
+
+OpRewritePattern示例：
+
+```cpp
+struct FoldAddIConstant : public OpRewritePattern<arith::AddIOp> {
+  FoldAddIConstant(MLIRContext *ctx)
+      : OpRewritePattern<arith::AddIOp>(ctx, /*benefit=*/1) {}
+  LogicalResult matchAndRewrite(arith::AddIOp op,
+                               PatternRewriter &rewriter) const override {
+    ...
+
+    auto newConst = rewriter.create<arith::ConstantIntOp>(
+        op.getLoc(), newVal, op.getType());
+    rewriter.replaceOp(op, newConst);
+
+    return success();
+  }
+};
 ```
 
 ## 参考

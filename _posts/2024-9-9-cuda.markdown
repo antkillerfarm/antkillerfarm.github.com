@@ -93,6 +93,16 @@ cute TiledMMA
 
 ---
 
+Linear Layouts: Robust Code Generation of Efficient Tensor Computation Using F2
+
+这篇论文使用F2群上的计算，来寻找register->thread->warp并行模型下的最优数据layout。
+
+https://mp.weixin.qq.com/s/PDFshzgcj_udaFu3aJr1tQ
+
+该论文的中文版
+
+---
+
 pingpong就是N=2的multi-stage，所以这个问题等价于为什么在Ampere NStage=2不够了。
 
 Warp-Specialization的优势是在计算访存流水上的调度更灵活，劣势是代码写起来更麻烦。直到Ampere它的优势都不足以让人忍受它的劣势，而Hopper上Warp-Specialization变成了一种必须要使用的技术。

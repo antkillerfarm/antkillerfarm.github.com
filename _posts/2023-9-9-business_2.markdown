@@ -13,20 +13,6 @@ category: money
 
 ---
 
-https://mp.weixin.qq.com/s/m72bakeHShkM8yvPubMa8A
-
-狂飙突进的“蛋壳”，一触即溃的“蛋壳”
-
-https://mp.weixin.qq.com/s/LWhuImT3W1Pg-4WA0RMq6g
-
-被长租公寓割韭菜的打工一代
-
-https://mp.weixin.qq.com/s/diYe8bOXfOseXOLKScxdGw
-
-困在蛋壳里的人
-
----
-
 目前，共享充电宝领域几乎被街电、来电、小电和怪兽充电瓜分，形成所谓“三电一兽”的格局。
 
 ---
