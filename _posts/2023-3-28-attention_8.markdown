@@ -353,6 +353,8 @@ BERT模型推理加速总结
 
 上图是SWA和普通Attention使用的Mask的区别。SWA能显著提高训练和推理的速度，同时性能掉的也不多。
 
+![](/images/img6/SWA.webp)
+
 https://zhuanlan.zhihu.com/p/687349083
 
 稀疏注意力计算:Sliding Window Attention

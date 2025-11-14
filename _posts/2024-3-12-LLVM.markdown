@@ -293,6 +293,10 @@ PassBuilder PB;
 PB.registerModuleAnalyses(*TheMAM);
 ```
 
+---
+
+SCCP（Sparse Conditional Constant Propagation）Pass：通过数据流分析证明某些值是常量，并将其替换为常量，将条件分支中恒为真或假的判断简化为无条件跳转。
+
 ## Compile Cuda With LLVM
 
 https://llvm.org/docs/CompileCudaWithLLVM.html

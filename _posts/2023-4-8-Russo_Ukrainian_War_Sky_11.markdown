@@ -163,6 +163,10 @@ https://zhuanlan.zhihu.com/p/713896477
 
 金伯恩畅想曲——乌方金伯恩半岛登陆作战方案
 
+https://zhuanlan.zhihu.com/p/1971325711542379235
+
+解放三年后，乌克兰的赫尔松正面临另一种围困
+
 ## 顿涅斯克战役
 
 本节主要包括巴赫穆特、chasiv yar、Marinka、Soledar、Vuhledar、Avdiivka等地的攻防战。

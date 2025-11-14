@@ -69,194 +69,60 @@ https://zhuanlan.zhihu.com/p/675582678
 
 ---
 
-https://mp.weixin.qq.com/s/u7C1THhjnWLRLR4z7casbQ
+印度只不过是俄罗斯向外出售石油的中转站而已，用卢比从俄罗斯买石油本身就是一次白嫖，拒绝俄罗斯使用卢比等于第二次白嫖，表示俄罗斯可以用卢比购买印度国债等于第三次白嫖。
 
-在乌克兰，日常生活与国家的分裂
+由于印度不愿意付款，俄罗斯向印度出售S-400防空导弹系统的交易已经暂停。
 
-https://www.zhihu.com/question/523693204
+新德里不想用美元支付，因为担心受到美国二次制裁的打击。
 
-普京表示向欧洲国家供应天然气将用卢布进行结算，将产生哪些影响？
+支付俄罗斯卢布也不合适，因为印度不确定它能否以可接受的汇率，在公开市场上购买足够多的产品。
 
-https://www.163.com/dy/article/H27B36J005453NII.html
+另一方面，由于汇率波动较大，莫斯科不想接受印度卢比（还有，因为印度拒售，俄用卢比买不到印度工业品）。
 
-对乌战争并非易事！俄国总参退役上校2月初的惊人预言
+印度有哪些商品？谁需要它们？印度的茶叶和香料都已经被买光了——卢比账户上还剩下400亿美元。
 
-https://zhuanlan.zhihu.com/p/688569938
+好吧，正如他们所说，俄罗斯石油工人的好奇心遇到了另一种印度出口产品：香蕉！
 
-一人战斗，四人工作。泽连斯基正在准备动员的经济保留措施
+来自北方邦的一名20岁出头的受害者声称，他们于2023年11月抵达俄罗斯，以“俄罗斯军队”的名义接受了处理武器和弹药的基本训练，然后沿途被送往顿河畔罗斯托夫。一月份的俄罗斯和乌克兰边境。尽管保证他们不会被送往战场，但他们还是被迫在枪口下战斗。
 
-https://mp.weixin.qq.com/s/zPO-ScWfgn3_GMsqE3A-4w
+“我们被迫签署合同，合同上写着我们将被聘为军队安全助手。我们被明确告知不会被派往战场，并承诺每月19.5万卢比的工资和5万卢比的额外奖金。除了两个月的5万卢比奖金之外，我没有收到任何钱”。
 
-俄乌冲突：为什么没看到钢铁洪流和百万大军
+印度总理莫迪宣布，印度决定向乌提供155mm增程炮弹，并且认为那些不提俄罗斯退出乌克兰全部被占领土，却谈和平谈判的是缺乏正义和不够严谨的。
 
-https://www.zhihu.com/question/518738516
+https://zhuanlan.zhihu.com/p/682422739
 
-媒体称泽连斯基告诉欧盟国家领导人“这可能是你们最后一次看到我活着”，释放了哪些信号？
+俄媒：来一根印度香蕉吧！
 
-https://baijiahao.baidu.com/s?id=1720008637085855507
+https://www.zhihu.com/question/599625706
 
-一种几乎改变战争进程的武器：莫洛托夫鸡尾酒
+巴基斯坦或使用人民币支付从俄罗斯进口的原油
 
-https://news.ifeng.com/c/8ESc2rP54Dv
+https://zhuanlan.zhihu.com/p/694565708
 
-要停火了？俄军调兵情况说明一切
+俄系武器被打回原形！三哥：苏联的废旧金属，不再满足印度需求！
 
-https://news.ifeng.com/c/8EXj93OufHt
+https://zhuanlan.zhihu.com/p/721550975
 
-全军出击！普京压上了俄军全部力量
+厉害莫迪：左手进口俄罗斯低价石油，右手经欧盟向乌克兰提供弹药
 
-https://news.ifeng.com/c/8EeAtgpJ0Ob
+---
 
-惊人反转，乌克兰兵力已是俄罗斯2倍
+俄罗斯征兵集团在征集古巴公民参战，但是是骗他们到俄罗斯“清理瓦砾并重建被战争摧毁的城市”。去了才发现是合同兵。
 
-https://news.ifeng.com/c/8Emu7czkfWy
+自打赫鲁晓夫收服了古巴这个宝可梦之后，古巴志愿军就是苏联的黄金打手，在南美和非洲去武装干涉，做苏联明面上不好意思做的事。
 
-俄罗斯宣布从基辅方向撤军，要停战了？
+当年在安哥拉等地作战的古巴军队数以千计，今天走了十个人，古巴就绷不住了。
 
-https://news.ifeng.com/c/8ErWfeGuVev
+说白了，一是俄罗斯钱没给够，二是俄罗斯再也罩不住古巴了。
 
-将军阵亡率15%？俄军在乌克兰遭遇了什么
+俄罗斯军队第428摩托化步兵团的古巴雇佣兵在波克罗夫斯基方向作战，他们杀死了俄罗斯指挥官，因为他们不断受到羞辱、殴打和被克扣工资。
 
-https://news.ifeng.com/c/8F4v75koosu
+该团团部向总参谋部（RF）发出呼吁，要求用俄罗斯士兵取代外国雇佣兵。
 
-4月顿巴斯分胜负决生死，重演二战战役
+https://www.zhihu.com/question/620875247
 
-https://news.ifeng.com/c/8FB20CHoBDN
+如何看待古巴污蔑造谣俄方贩运人口参与俄乌冲突？一句话，古巴是想当反俄纳粹宣传的急先锋吗？
 
-统帅部最高机密——普京为何做出错误决断
+---
 
-https://news.ifeng.com/c/8FEyCcwsVG6
-
-两只“大老虎”，坏了普京的大事
-
-https://news.ifeng.com/c/8FMpNxpSHjc
-
-二战时苏军两度折戟之地，俄乌或将在此决胜负
-
-https://news.ifeng.com/c/8Fsc6DZP5g5
-
-俄罗斯乌克兰的大决战终于打响了
-
-https://news.ifeng.com/c/8G653CGmggn
-
-双线在决战，这两点决定俄乌战场输赢
-
-https://news.ifeng.com/c/8GKljOt9z6z
-
-俄军只用“一只手”打乌克兰，自信还是动不了？
-
-https://news.ifeng.com/c/8GRIdyw3Bn2
-
-5月决战初步战果，乌克兰陷入绝境？
-
-https://news.ifeng.com/c/8GdA8irm4wu
-
-俄乌战争啥时候结束？美欧想法高度一致
-
-https://news.ifeng.com/c/8JWGnIAc1x8
-
-俄乌交战200天 俄军曾有4次机会取胜
-
-https://news.ifeng.com/c/8JY3zMpfAVx
-
-俄军火炮猛射2个月，炮弹库存还能撑多久？
-
-https://news.ifeng.com/c/8Jcv9bjeSPV
-
-为什么乌克兰要过上三月才能反攻？
-
-https://news.ifeng.com/c/8KivcEeZ16O
-
-“冬将军”曾击败拿破仑，现在轮到俄罗斯了？
-
-https://news.ifeng.com/c/8McreoQx3df
-
-打不赢就闹革命，俄罗斯又要陷入这个历史循环？
-
-https://news.ifeng.com/c/8Mwi4IFyf1B
-
-“普京名言”的真正主人，给俄罗斯挖了多大坑？
-
-https://news.ifeng.com/c/8N1kCsAAdaa
-
-为了“500年终极梦想”，俄国付出了什么代价？
-
-https://news.ifeng.com/c/8NK6iq9Smvn
-
-前所未有的财政大危机，俄罗斯准备无条件谈判
-
-https://mil.sina.cn/sd/2018-12-18/detail-ihmutuee0269859.d.html
-
-俄军唯一航母居然被偷了 大量贵金属失窃价值140万
-
-https://mp.weixin.qq.com/s/kwRY-he_wcMp7b2VuQoDOQ
-
-都打了一个多月了，俄军在打什么东西
-
-https://mp.weixin.qq.com/s/yI6P2bRpJC-VG39SLikLng
-
-2022年俄乌战争——乌克兰主要参战部队的历史（1）
-
-https://mp.weixin.qq.com/s/jlUZvp3XmF5TBUHZGS-piw
-
-2022年俄乌战争——乌克兰主要参战部队的历史（2）
-
-https://mp.weixin.qq.com/s/0KyzvO3MJ1iEadRqtOQo3A
-
-俄罗斯军队虚弱的本质终于暴露无遗
-
-https://www.zhihu.com/question/530996641
-
-如何看待在乌军发动的炮击中俄军总参谋长格拉西莫夫陆军大将负伤，电子战部队副司令西蒙诺夫陆军少将阵亡?
-
-https://mp.weixin.qq.com/s/zoL1ZPt8rBm2eerZSR6xzA
-
-芬兰瑞典申请加入北约，北欧中立国模式宣告终结了吗？
-
-https://www.zhihu.com/question/49927644
-
-都有非常相似的历史，为什么乌克兰人反俄，而白罗斯人却亲俄？
-
-https://zhuanlan.zhihu.com/p/519481132
-
-俄罗斯还有多少辆坦克？
-
-https://zhuanlan.zhihu.com/p/509289102
-
-毁家纾难——俄罗斯是怎样援助顿巴斯分裂武装的？
-
-https://mp.weixin.qq.com/s/A8qiQqTGl-heIOXmVAC3dA
-
-乌克兰战场直播，300美元刷一发火箭弹
-
-https://www.zhihu.com/question/544946847
-
-普京是现代的希特勒吗？
-
-https://zhuanlan.zhihu.com/p/566841960
-
-统计——乌克兰目前接受的军援
-
-https://www.zhihu.com/question/555976713
-
-顿涅茨克等四地入俄公投结果公布，将对俄乌局势产生什么影响？
-
-https://mp.weixin.qq.com/s/n4EMEdHNJuhrHwsCUE6m4A
-
-被欧洲人买爆的中国电热毯，真有那么火吗？
-
-https://www.zhihu.com/question/557681794
-
-如果你来设计《使命召唤：俄乌战争》的剧情，会是怎样的？
-
-https://zhuanlan.zhihu.com/p/579537323
-
-垮塌的大厦——俄罗斯坦克工业现状和梅德韦杰夫无法完成的任务
-
-https://zhuanlan.zhihu.com/p/582340201
-
-俄媒：三百年的荣耀被普京这个生物20年败光了
-
-https://zhuanlan.zhihu.com/p/496556274
-
-大毛的航模
+感觉这是要上演循环了，瓦格纳到监狱的无限循环，先当逃兵进监狱，然后瓦格纳再到监狱招募志愿兵，再当逃兵，瓦格纳再到监狱招募志愿兵.....这是循环了！

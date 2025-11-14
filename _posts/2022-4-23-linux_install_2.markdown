@@ -9,6 +9,20 @@ category: linux
 
 # 硬盘安装Linux（UEFI）（续）
 
+## RTL8821CE
+
+我的PC使用的无线网卡是RTL8821CE，但是Ubuntu官方的镜像中，并没有集成该网卡的驱动。
+
+查看网卡的命令：
+
+`lspci`
+
+第三方驱动的代码：
+
+https://github.com/tomaspinho/rtl8821ce
+
+安装驱动之前，需要进UEFI，关闭Secure Boot选项。这个选项会拒绝未验证的系统或驱动。Ubuntu官方的镜像经过了MS的认证，可以正常安装。但是UbuntuKylin不行，第三方驱动显然也不行。
+
 ## 内核版本回退
 
 最近（2021.1）遇到了高版本内核和驱动不匹配的问题，特将历程记录如下：
@@ -374,35 +388,3 @@ https://www.cnblogs.com/zhouyu629/p/3734494.html
 https://mp.weixin.qq.com/s/IcEP-JGQbWA7s7yPdIC9vA
 
 80%时间屏蔽了中断，实时性还有救么？
-
-https://mp.weixin.qq.com/s/iKfWSfzauzNjcAvXPNhq0Q
-
-这些算法都不会还学什么操作系统
-
-https://mp.weixin.qq.com/s/gj6Zw8SvOdSZqRx8KP9wWw
-
-20张图揭开内存管理的迷雾，瞬间豁然开朗
-
-https://mp.weixin.qq.com/s/IQYUNzVgSOFUHB9c1SM0Bw
-
-10张图22段代码，万字长文带你搞懂虚拟内存模型和malloc内部原理
-
-https://zhuanlan.zhihu.com/p/370092684
-
-虚拟内存精粹
-
-https://mp.weixin.qq.com/s/xOqXM5kFi0CzilDg0EXFKg
-
-Linux内核源码规范解析
-
-https://mp.weixin.qq.com/s/QB-IHiCIWEu3bALm2Dp46Q
-
-操作系统课程知识结构
-
-https://www.zhihu.com/answer/460715569
-
-生产力应用大汇总
-
-https://mp.weixin.qq.com/s/QsgoONKwI7ds8Hnx2Wer6A
-
-Linux从程序到进程

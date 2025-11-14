@@ -33,7 +33,19 @@ https://blog.csdn.net/v_JULY_v/article/details/144317440
 
 Linear Transformer将QKV的左乘变成右乘，从⽽将理论计算复杂度降为线性。在一般的NLP任务中，一个Head d的特征维度总是比输入序列长度N小得多的。
 
-Linear Transformer对于softmax的处理比较复杂，大体思路和FlashAttention差不多，也是局部求和的模式。
+Linear Transformer使用如下方式取代softmax，来进行相似度计算。
+
+$$\begin{equation}\text{sim}(\boldsymbol{q}_i, \boldsymbol{k}_j) = \phi(\boldsymbol{q}_i)^{\top} \varphi(\boldsymbol{k}_j)\label{eq:gen-att-2}\end{equation}$$
+
+其中，$$\phi(\cdot),\varphi(\cdot)$$是值域非负的激活函数。
+
+https://spaces.ac.cn/archives/7546
+
+线性Attention的探索：Attention必须有个Softmax吗？
+
+https://mp.weixin.qq.com/s/loNPfwHlBJ0CXIAya_vy3w
+
+谈谈未来Attention算法的选择, Full, Sparse or Linear?
 
 ## Attention free transformer
 

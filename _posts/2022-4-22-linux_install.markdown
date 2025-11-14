@@ -236,17 +236,3 @@ http://mirrors.163.com/ubuntu/
 https://mirrors.ustc.edu.cn/ubuntu/
 
 https://mirrors.tuna.tsinghua.edu.cn/ubuntu/
-
-## RTL8821CE
-
-我的PC使用的无线网卡是RTL8821CE，但是Ubuntu官方的镜像中，并没有集成该网卡的驱动。
-
-查看网卡的命令：
-
-`lspci`
-
-第三方驱动的代码：
-
-https://github.com/tomaspinho/rtl8821ce
-
-安装驱动之前，需要进UEFI，关闭Secure Boot选项。这个选项会拒绝未验证的系统或驱动。Ubuntu官方的镜像经过了MS的认证，可以正常安装。但是UbuntuKylin不行，第三方驱动显然也不行。

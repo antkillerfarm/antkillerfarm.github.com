@@ -375,11 +375,3 @@ Linux6.1中为什么用Radix树替换位图（bitmap）来管理进程pid
 https://zhuanlan.zhihu.com/p/662590546
 
 深入理解Linux内核进程的创建、调度和终止
-
-https://zhuanlan.zhihu.com/p/662681938
-
-为什么linux不是实时操作系统？
-
-https://zhuanlan.zhihu.com/p/669604193
-
-Kernel怎么跳转到Android：linux与安卓的交界

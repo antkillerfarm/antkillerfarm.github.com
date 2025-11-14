@@ -9,6 +9,10 @@ category: DL
 
 # Non-local Networks
 
+![](/images/img6/Non-local.png)
+
+self-attention是non-local的一个特例。
+
 https://zhuanlan.zhihu.com/p/33345791
 
 Non-local neural networks

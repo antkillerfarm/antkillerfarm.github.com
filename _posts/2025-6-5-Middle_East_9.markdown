@@ -252,3 +252,7 @@ https://zhuanlan.zhihu.com/p/9907139457
 https://zhuanlan.zhihu.com/p/1920340773754376533
 
 反向心理---B-2超长途轰炸伊朗的战略欺骗
+
+https://www.zhihu.com/answer/1901704044709389889
+
+安卡拉之战（奥斯曼苏丹巴耶济德 vs 土兰苏丹帖木儿）

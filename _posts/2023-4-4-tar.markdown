@@ -469,15 +469,3 @@ https://mp.weixin.qq.com/s/zVi45pZka_kPpKIoNXNVBA
 https://mp.weixin.qq.com/s/A8TnhOFLQOhEqphE760yvw
 
 15个相见恨晚的Linux神器，你可能一个都没见过
-
-https://mp.weixin.qq.com/s/ejGjsGA1ijPP--j3BLcEFA
-
-Linux并发与同步
-
-https://mp.weixin.qq.com/s/CAPU8bjJWobQs6JHHMasvQ
-
-Linux服务端最大并发数是多少？
-
-https://mp.weixin.qq.com/s/bPqnaMqhi_4p1mwjmvyoIw
-
-多图详解10大高性能开发核心技术
