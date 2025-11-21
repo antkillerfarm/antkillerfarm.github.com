@@ -229,6 +229,20 @@ TAA这一类算法利用了渲染图片的时域连贯性（Temporal coherency�
 
 # 神经元激活函数进阶
 
+## 其他激活函数
+
+### hard tanh
+
+$$\text{HardTanh}(x)=\begin{cases}
+-1, & x<-1 \\
+x, & -1\le x \le 1 \\
+1, & x>1 \\
+\end{cases}$$
+
+![](/images/article/hard_tanh.png)
+
+hard tanh也叫做Relu1。
+
 ### hard sigmoid
 
 $$\text{HardSigmoid}(x)=\begin{cases}
@@ -292,7 +306,6 @@ $$CELU(x) = \max(0,x) + \min(0, \alpha * (\exp(x/\alpha) - 1))$$
 ### CRELU
 
 $$CReLU(x)= Concat[ ReLU(x), ReLU(−x) ]$$
-
 
 ## 参考
 

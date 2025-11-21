@@ -7,9 +7,21 @@ category: DL
 * toc
 {:toc}
 
-# RBM & DBM & DBN & Deep Autoencoder
+# RBM & DBM & DBN & Deep Autoencoder（续）
 
-## DBM & DBN（续）
+## DBM & DBN
+
+![](/images/img4/DBM.png)
+
+RBM不仅可以单独使用，也可以堆叠起来形成Deep Boltzmann Machine(DBM)和Deep Belief Nets(DBN)，其中每个RBM层都与其前后的层进行通信。单个层中的节点之间不会横向通信。
+
+DBM是直接是拟合一个joint分布，而DBN是RBM叠加了很多bayes net。
+
+DBN可以直接用于处理无监督学习中的未标记数据聚类问题，也可以在RBM层的堆叠结构最后加上一个Softmax层来构成分类器。
+
+除了第一个和最后一个层，DBN中的每一层都扮演着双重角色：既是前一层节点的隐藏层，也是后一层节点的输入（或“可见”）层。DBN是由多个单层网络组成的。
+
+DBN常用于图像、视频序列和动作捕捉数据的识别、聚类与生成。
 
 参考：
 

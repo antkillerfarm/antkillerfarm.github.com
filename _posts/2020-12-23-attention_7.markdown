@@ -63,6 +63,8 @@ https://github.com/BlinkDL/ChatRWKV
 
 ![](/images/img5/RWKV.png)
 
+![](/images/img6/RWKV.webp)
+
 RWKV训练的时候用主图的CNN形式，而推理的时候用左下角的RNN形式。
 
 RNN的weight不随输入序列的不同而不同，而RWKV会根据输入序列，计算得到weight，这个weight随输入序列的变化而变化的特性，正好是attention的特性。

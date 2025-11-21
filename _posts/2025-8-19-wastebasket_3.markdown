@@ -192,3 +192,7 @@ https://zhuanlan.zhihu.com/p/704989418
 https://zhuanlan.zhihu.com/p/1933990082257321987
 
 武大杨景媛七大疑点越趴越离谱
+
+https://www.zhihu.com/question/1973879336030463533
+
+网传江苏科技大学首席科学家仅高中学历，伪造履历欺诈科研经费，学校称其已被警方带走调查，暴露了哪些问题？

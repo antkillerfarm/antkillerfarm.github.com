@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GPU通信技术, 光通信
+title:  GPU通信技术, 光通信, IEEE 802
 category: Chip 
 ---
 
@@ -137,56 +137,116 @@ https://zhuanlan.zhihu.com/p/617099215
 
 封装内光学I/O与共封光学器件的区别（In-Package Optical I/O versus Co-Packaged Optics）
 
-# GPU体系结构+
+# IEEE 802
 
-https://zhuanlan.zhihu.com/p/446830540
+IEEE 802是一系列关于局域网和城域网的标准。
 
-GPU架构（上）—AI芯片设计入门
+其中，最重要的有：
 
-https://zhuanlan.zhihu.com/p/446837354
+802.1 802系列协议的网络层管理。
 
-GPU架构（下）—AI芯片设计入门
+802.3 Ethernet
 
-https://www.cnblogs.com/timlly/p/11471507.html
+802.11 Wi-Fi
 
-深入GPU硬件架构及运行机制
+802.15.1 Bluetooth
 
-https://zhuanlan.zhihu.com/p/576793055
+802.15.4 Zigbee
 
-Intel四十年显卡坎坷路
+802.16 WiMax
 
-https://zhuanlan.zhihu.com/p/572302589
+http://www.ieee802.org/
 
-GPGPU流式多处理器架构之取指译码发射
+可以在这个网址下载相关的标准文件。
 
-http://www.cnblogs.com/geniusalex/archive/2008/12/26/1941766.html
+## 无线网状网
 
-CPU GPU设计工作原理
+Wireless mesh network（WMN），也叫wireless ad hoc network。
 
-https://mp.weixin.qq.com/s/-Wg1GtVGUxfshJ5d5NDd-Q
+Ad Hoc源自于拉丁语，意思是“for this”引申为“for this purpose only”，即“为某种目的设置的，特别的”意思，即Ad hoc网络是一种有特殊用途的网络。IEEE802.11标准委员会采用了“Ad hoc网络”一词来描述这种特殊的自组织对等式多跳移动通信网络
 
-聊聊GPU的计算能力上限
+它具有以下特点：
 
-https://mp.weixin.qq.com/s/zdr7BfJxVepQL1TCDXQoJA
+### 无中心
 
-一文带你了解GPU的前生今世
+Ad hoc网络没有严格的控制中心。所有结点的地位平等，即是一个对等式网络。结点可以随时加入和离开网络。任何结点的故障不会影响整个网络的运行，具有很强的抗毁性。
 
-https://www.zhihu.com/question/22219245
+### 自组织
 
-GPU不能完全取代CPU的最大原因是什么？
+网络的布设或展开无需依赖于任何预设的网络设施。结点通过分层协议和分布式算法协调各自的行为，结点开机后就可以快速、自动地组成一个独立的网络。
 
-https://zhuanlan.zhihu.com/p/651179378
+### 多跳路由
 
-GPU内存概念浅析
+当结点要与其覆盖范围之外的结点进行通信时，需要中间结点的多跳转发。与固定网络的多跳不同，Ad hoc网络中的多跳路由是由普通的网络结点完成的，而不是由专用的路由设备（如路由器）完成的。
 
-https://zhuanlan.zhihu.com/p/377073683
+### 动态拓扑
 
-GPU虚拟化，算力隔离，和qGPU
+Ad hoc网络是一个动态的网络。网络结点可以随处移动，也可以随时开机和关机，这些都会使网络的拓扑结构随时发生变化。　这些特点使得Ad hoc网络在体系结构、网络组织、协议设计等方面都与普通的蜂窝移动通信网络和固定通信网络有着显著的区别。
 
-https://www.zhihu.com/question/1968561378
+无线网状网可以基于802.11、802.15或802.16。具体到802.11就是Wi-Fi Mash。
 
-如果将几百核心的服务器CPU当作GPU使用，会发生什么？
+## Wi-Fi Mash
 
-https://zhuanlan.zhihu.com/p/1929593678864847592
+和普通Wi-Fi相比，Wi-Fi Mash主要增加了路由协议。而这一块目前尚无标准，有70多个相互竞争的路由协议。其中主要有：
 
-GPU微结构逆向 (arXiv 2025)：《Analyzing Modern NVIDIA GPU cores》
+AODV (Ad hoc On-Demand Distance Vector)
+
+B.A.T.M.A.N. (Better Approach To Mobile Adhoc Networking)
+
+HWMP (Hybrid Wireless Mesh Protocol)
+
+OLSR (Optimized Link State Routing protocol)
+
+IEEE为了统一标准，提出了802.11s。目前该标准默认使用HWMP。
+
+## 消息发送的类型
+
+![](/images/article/cast.png)
+
+## 参考
+
+https://mp.weixin.qq.com/s/GgwehPL4r-Y1pEd2k60Y_Q
+
+一文看懂蓝牙Mesh技术
+
+https://mp.weixin.qq.com/s/Mvq9UNEnHoUbmxocb-rqmQ
+
+LPWAN、LoRa、LoRaWAN的区别与联系
+
+https://mp.weixin.qq.com/s/ddOTd5ljC2I9IOadBbjOIA
+
+大话Wi-Fi20年
+
+https://www.zhihu.com/question/20890194
+
+大型发布会现场的Wi-Fi应该如何搭建？
+
+---
+
+802.11b — Wifi 1 (1999)
+
+802.11a — Wifi 2 (1999)
+
+802.11g — Wifi 3 (2003)
+
+802.11n — Wifi 4 (2009)
+
+802.11ac — Wifi 5 (2014)
+
+802.11ax — Wifi 6 (2018)
+
+https://mp.weixin.qq.com/s/5MjByZWThzQ4MSWRoIS1HQ
+
+为了Wi-Fi 6，华为和小米争个啥？
+
+https://mp.weixin.qq.com/s/ZHgG3NJ3oMxmz8M6VDImXg
+
+什么是WiFi 6E？它与WiFi 6有何不同？
+
+https://mp.weixin.qq.com/s/2Jo1dGu7_Lu3yC5Xwe-IMg
+
+漫画图解UWB的发展之路
+
+https://mp.weixin.qq.com/s/D_1nn0702Z1y7rKOzegs5g
+
+Wi-Fi简史

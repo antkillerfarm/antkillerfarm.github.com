@@ -206,7 +206,21 @@ KTransformer部署高性能DeepSeek R1模型实战
 
 ## Kimi K2
 
-技术报告：
+![](/images/img6/LLM.jpg)
+
+上图来自：
+
+https://sebastianraschka.com/blog/2025/the-big-llm-architecture-comparison.html
+
+The Big LLM Architecture Comparison
+
+中文版：
+
+https://zhuanlan.zhihu.com/p/1971937330051940822
+
+2024-2025年开源LLM架构革新全览：MoE、注意力机制与归一化层的进化
+
+官方技术报告：
 
 https://moonshotai.github.io/Kimi-K2/
 

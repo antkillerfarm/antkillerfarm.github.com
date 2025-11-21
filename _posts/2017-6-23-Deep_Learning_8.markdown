@@ -268,7 +268,9 @@ Swish是Google大脑团队提出的一个新的激活函数：
 
 $$\text{Swish}(x, \beta)=x\cdot \text{sigmoid}(\beta x)$$
 
-其中，当$$\beta =1$$时，又被称为SiLU（Sigmoid Linear Unit）函数。
+其中，当$$\beta =1$$时，又被称为SiLU（Sigmoid Linear Unit）函数：
+
+$$\mathrm{SiLU}(x) = x \cdot \sigma(x) = x \cdot \frac{1}{1+\mathrm{e}^{-x}}$$
 
 它的图像如下图中的橙色曲线所示：
 
@@ -331,17 +333,3 @@ $$\text{ReGLU}(x, W, V, b, c) = \text{ReLU}(xW + b) \otimes (xV + c)$$
 ## SReGLU
 
 $$\text{SReGLU}(x, W, V, b, c, s) = s \cdot \text{ReLU}(xW + b) \otimes (xV + c)$$
-
-## 其他激活函数
-
-### hard tanh
-
-$$\text{HardTanh}(x)=\begin{cases}
--1, & x<-1 \\
-x, & -1\le x \le 1 \\
-1, & x>1 \\
-\end{cases}$$
-
-![](/images/article/hard_tanh.png)
-
-hard tanh也叫做Relu1。
