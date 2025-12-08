@@ -328,6 +328,14 @@ Ctrl+Shift+P: remote-ssh: kill vscode server on host
 
 ---
 
+问题：
+
+`flock: 99: Bad file descriptor`
+
+启用`remote.SSH.lockfilesInTmp`。
+
+---
+
 参考：
 
 https://blog.csdn.net/wyg1997/article/details/101460961

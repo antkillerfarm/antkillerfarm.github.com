@@ -267,6 +267,12 @@ Table-driven Declarative Rewrite Rule
 
 `./mlir-pdll -x=mlir rewrite.pdll`
 
+---
+
+Location：源代码位置，用于调试。
+
+InsertPoint：IR插入的位置，用于构建操作序列。
+
 ## model-explorer
 
 model-explorer是google推出的可视化工具，支持对于MLIR的可视化。

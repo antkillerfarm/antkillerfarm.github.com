@@ -124,7 +124,7 @@ https://mp.weixin.qq.com/s/0MMUTp_-JF97inzeJd4j1g
 
 ## mypy
 
-mypy是一个针对python语言的静态类型检查工具。
+mypy是Dropbox公司编写的一个针对python语言的静态类型检查工具。
 
 官网：
 

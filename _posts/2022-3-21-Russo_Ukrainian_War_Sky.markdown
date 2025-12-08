@@ -73,6 +73,8 @@ Every country has its own mafia. In Russia, the mafia has its own country. -- by
 
 帝国主义不是至高无上的神，也不是虚无缥缈的鬼，而是真实的利益集团，战术上必须重视，战略上完全可以藐视。-- by 马督工
 
+在战争与屈辱面前，你选择了屈辱，但屈辱过后，你仍得面对战争。 -- by 丘吉尔
+
 ![](/images/img6/mrsa.jpg)
 
 ---

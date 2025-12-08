@@ -338,6 +338,10 @@ https://mp.weixin.qq.com/s/VtjGJfrBmWxVM3KjOEGFBw
 
 OpenReg：基于PyTorch "PrivateUse1"机制的独立树外后端实现
 
+https://pytorch.org/blog/openreg-a-self-contained-pytorch-accelerator-simulator/
+
+OpenReg: A Self-Contained PyTorch Accelerator Simulator
+
 https://github.com/bdhirsh/pytorch_open_registration_example
 
 一个`PrivateUse1`的示例
@@ -349,15 +353,3 @@ https://github.com/bdhirsh/pytorch_open_registration_example
 https://zhuanlan.zhihu.com/p/517699916
 
 Pytorch Mac GPU训练与测评
-
-## torchviz
-
-使用torchviz导出反向计算图：
-
-```python
-from torchviz import make_dot
-grad_dot = make_dot(loss, params=dict(model.named_parameters()))
-grad_dot.render('backward_graph', format='png')
-```
-
-找到loss在哪里，就可以导出了。

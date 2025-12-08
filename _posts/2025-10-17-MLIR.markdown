@@ -234,6 +234,12 @@ scf.if %b  {
 }
 ```
 
+---
+
+https://mlir.llvm.org/docs/Bindings/Python/
+
+mlir-python-bindings
+
 ## model-explorer
 
 model-explorer是google推出的可视化工具，支持对于MLIR的可视化。

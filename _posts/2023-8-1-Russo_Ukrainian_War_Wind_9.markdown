@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争：疾风篇（九）——无官不贪（3）
+title:  俄乌战争：疾风篇（九）——无官不贪（2）
 category: Russo Ukrainian War Wind
 ---
 

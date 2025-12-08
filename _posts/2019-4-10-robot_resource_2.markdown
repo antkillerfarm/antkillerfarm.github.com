@@ -369,6 +369,8 @@ https://github.com/commaai/openpilot
 
 ## CAN
 
+CANoe（全称 CAN open environment）是德国Vector公司推出的一款图形化、系统级总线开发工具，主要用于汽车电子网络的仿真、测试、分析和诊断。
+
 https://mp.weixin.qq.com/s/8jZKgSeRw7k0F9JOigFJcw
 
 自动驾驶之——CAN总线简介

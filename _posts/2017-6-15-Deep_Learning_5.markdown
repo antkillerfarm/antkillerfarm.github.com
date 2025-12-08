@@ -276,6 +276,10 @@ https://mp.weixin.qq.com/s/eRxvx1a03p-1nzatJGYQhQ
 
 ## Word Embedding
 
+语言学家J.R. Firth在1957年说了一句名言：
+
+“You shall know a word by the company it keeps.” (通过一个词的邻居来认识这个词)
+
 针对One-hot Representation的不足，Bengio提出了Distributed Representation，也称为Word Embedding。
 
 ![](/images/article/word_vector.png)
@@ -289,6 +293,10 @@ Bengio自己提出了一种基于神经网络的Word Embedding的方案，然而
 http://www.cnblogs.com/neopenx/p/4570648.html
 
 词向量概况
+
+https://www.zhihu.com/question/1976966449831633104
+
+LLM中为什么没有使用二进制编码而是使用词嵌入呢？
 
 ## word2vec
 
