@@ -96,7 +96,7 @@ result = torch.ops.my_custom_ops.custom_add(torch.tensor([1, 2]),
 
 ---
 
-`@_torch_register_fake_wrapper("flash_attn::_flash_attn_forward")`
+`@_torch_register_fake_wrapper("flash_attn::_flash_attn_forward")`:
 
 这个装饰器的作用是将一个Python函数注册为PyTorch的一个“假操作”（fake op）。这意味着该函数在计算图中会被识别为一个操作，但它不会直接执行实际的计算。相反，它会被用来替代一个实际的底层操作（例如一个CUDA内核）。这种机制通常用于以下场景：
 
@@ -109,6 +109,10 @@ result = torch.ops.my_custom_ops.custom_add(torch.tensor([1, 2]),
 打印stack trace：
 
 `std::cerr << c10::get_backtrace() << std:endl;`
+
+assert_close公式：
+
+$$| actual−expected | \leq atol + rtol * | expected |$$
 
 ## 参考
 

@@ -336,15 +336,3 @@ Poor Man's BERT: 更小更快的Transformer模型
 https://mp.weixin.qq.com/s/u44jtXwNCzsZcrr9WrytLQ
 
 EdgeBERT：极限压缩，比ALBERT再轻13倍！树莓派上跑BERT的日子要来了？
-
-https://mp.weixin.qq.com/s/sNv9UirZJ6xT3zf8XhJaRg
-
-FastFormers：实现Transformers在CPU上223倍的推理加速
-
-https://mp.weixin.qq.com/s/6RUvMR-fjzB5PkZBQ4YFNQ
-
-BERT模型压缩：量化、剪枝和蒸馏
-
-https://zhuanlan.zhihu.com/p/576495529
-
-Fast and Effective！一文速览轻量化Transformer各领域研究进展

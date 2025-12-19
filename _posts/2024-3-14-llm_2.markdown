@@ -83,6 +83,8 @@ https://www.zhihu.com/question/592545459
 
 ![](/images/img5/LLM.png)
 
+![](/images/img6/LLM_2.png)
+
 https://arthurchiao.art/blog/llm-practical-guide-zh/
 
 大语言模型（LLM）综述与实用指南（Amazon，2023）

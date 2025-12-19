@@ -7,6 +7,20 @@ category: Attention
 * toc
 {:toc}
 
+# 轻量化Transformer（续）
+
+https://mp.weixin.qq.com/s/sNv9UirZJ6xT3zf8XhJaRg
+
+FastFormers：实现Transformers在CPU上223倍的推理加速
+
+https://mp.weixin.qq.com/s/6RUvMR-fjzB5PkZBQ4YFNQ
+
+BERT模型压缩：量化、剪枝和蒸馏
+
+https://zhuanlan.zhihu.com/p/576495529
+
+Fast and Effective！一文速览轻量化Transformer各领域研究进展
+
 # Linformer
 
 https://mp.weixin.qq.com/s/IOc-gxOa6a415Hf1VBmiQw
@@ -379,17 +393,3 @@ SSM的问题在于其中的矩阵A、B、C不随输入不同而不同，即无�
 较小的步长会忽略当前输入，而更多地使用先前的上文，而较大的步长会更多地关注当前输入。这也就是所谓的Selective State Spaces。
 
 然而这种非线性，又会破坏之前线性计算转换为卷积运算的前提。
-
-因此Mamba参考FlashAttention，设计了分块增量的卷积算法应对这个问题，也就是所谓的parallel scan。
-
-![](/images/img5/Mamba.png)
-
-上图是parallel scan的示意图，虽然计算N时刻的B，需要依赖N-1时刻的B，但是上文部分和本文部分的计算可以是并行的，两部分都做完之后，综合之，即可得到最终结果。
-
-![](/images/img5/Mamba_2.png)
-
-最终的Mamba Block如上图所示。其中的H3(Hungry Hungry Hippos)是之前提出的一种SSM架构。
-
-transformer中的FFN+GLU，被Conv取代，位置也有调整。
-
-![](/images/img5/Mamba_3.png)

@@ -9,6 +9,50 @@ category: Attention
 
 # Attention进阶（续）
 
+https://mp.weixin.qq.com/s/MzHmvbwxFCaFjmMkjfjeSg
+
+遍地开花的Attention，你真的懂吗？
+
+https://mp.weixin.qq.com/s/e_LEhLf2Rh-1zkEBmqS4nA
+
+NLP这两年：15个预训练模型对比分析与剖析
+
+https://mp.weixin.qq.com/s/LAInpFPa-3R1rfv6idILnw
+
+注意力机制发展如何了，如何学习它在各类任务中的应用？
+
+https://zhuanlan.zhihu.com/p/40920384
+
+真正的完全图解Seq2Seq Attention模型
+
+https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ
+
+深度学习注意力机制-Attention in Deep learning-附101页PPT
+
+https://mp.weixin.qq.com/s/FlA1YrR0sLQGJoJZnSXpRw
+
+DeepMind：深度学习注意力与记忆机制，附70页ppt
+
+https://mp.weixin.qq.com/s/_mBa-GTdILrvluJtegz8fw
+
+南洋理工大学：注意力神经网络，Attention Neural Networks，78页ppt
+
+https://mp.weixin.qq.com/s/pKxqPB9qIGmE_PslPa6EyA
+
+长文详解Attention的前世今生
+
+https://mp.weixin.qq.com/s/2kFZAmb_WnTNYUXT_jVMqg
+
+Attention注意力机制的前世今生
+
+https://mp.weixin.qq.com/s/eq1iTyKguQm5t6Xoc7KUgw
+
+一文搞懂NLP中的Attention机制
+
+https://zhuanlan.zhihu.com/p/106662375
+
+More About Attention
+
 https://mp.weixin.qq.com/s/MFxQSUMFNRXjdLQwzveO4w
 
 深度学习中的注意力机制
@@ -302,15 +346,3 @@ https://www.zhihu.com/question/434496112
 https://www.zhihu.com/question/34346405
 
 为什么溥仪的自传让一些读者有不真实感？
-
----
-
-太平洋战争爆发后，中国接受外界输血的管道只剩下了滇缅公路。一大批华侨，开着华侨捐助的卡车，运输着华侨捐献的物资，成为滇缅线上一道独特的风景线。
-
-至抗战胜利时，超过三分之一的华侨机工因翻车、伤病或日军轰炸等而牺牲。
-
-菲律宾的著名侨领李清泉，抱病领导华侨国难后援会，为十九路军汇来巨款慰问，还捐购15架飞机。后因劳累过度而去世，临终遗嘱再捐出10万美元。他的好友及侨团闻讯后，为继承他的遗志又筹资40万美元。
-
-国府统计，战时华侨每月捐助军饷约达2000万元，以当时每月军饷约7000万元，则华侨捐款几占全部抗战军饷的1/3。而战时侨汇估计有3亿元。依此推算，战时财政经济的1/2是由海外侨胞负担。
-
-1937年前11个月，马来亚每月运往日本的铁矿平均达128,858吨，到12月份，则仅有12,424吨运出，减少90%以上。

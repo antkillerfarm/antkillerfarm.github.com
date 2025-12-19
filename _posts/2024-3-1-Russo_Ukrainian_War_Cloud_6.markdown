@@ -21,6 +21,12 @@ https://www.zhihu.com/question/276123364
 
 ---
 
+Kurganmashzavod（库尔干机械制造厂）专注于履带式步兵战车（如BMP系列）；
+
+Arzamas Machine-Building Plant（阿尔扎马斯机械制造厂）则主要制造轮式装甲输送车（如BTR系列）。
+
+---
+
 https://zhuanlan.zhihu.com/p/14348284249
 
 乌克兰秘密导弹计划

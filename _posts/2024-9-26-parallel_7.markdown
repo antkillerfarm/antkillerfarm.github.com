@@ -90,7 +90,7 @@ Awesome LLM Inference
 
 ---
 
-![](/images/img5/llm.png)
+![](/images/img5/LLM_2.png)
 
 https://www.zhihu.com/tardis/zm/art/647813179
 
@@ -175,6 +175,8 @@ Piecewise CUDA Graph是vLLM中用于解决传统CUDA Graph在动态场景下局�
 因此，vLLM将模型按“稳定区域”切成多个片段，每个片段内部仍满足CUDA Graph的静态要求。
 
 # LLM System
+
+![](/images/img6/LLM.png)
 
 ## RAG
 

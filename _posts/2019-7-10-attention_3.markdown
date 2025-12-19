@@ -99,6 +99,19 @@ The Illustrated Transformer
 
 简单说就是：**训练时只有encoder**，使用Mask实现遮挡。由于encoder可以并行执行，所以Transformer的训练效率，远高于RNN。
 
+4.Transformer最后的linear+softmax，也被称为lm heads。
+
+<div class="mermaid">
+graph TD
+    The["The"] -->|attn| h0["h0"]
+    cat["cat"] -->|attn| h1["h1"]
+    sat["sat"] -->|attn| h2["h2"]
+    h2 -->|softmax| logits["logits"]
+    logits -->|argmax / sample| next["next_token"]
+</div>
+
+从上图可以看出，prefill阶段只有最后一个位置的hidden，会做为lm heads的输入。这和encoder训练时，$$t_n$$预测$$t_{n+1}$$是一致的。
+
 ![](/images/img6/Transformer_block.png)
 
 ## FFN

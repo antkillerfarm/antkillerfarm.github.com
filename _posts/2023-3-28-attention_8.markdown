@@ -9,6 +9,46 @@ category: Attention
 
 # BERT进阶（续）
 
+https://mp.weixin.qq.com/s/OsfeAA_tbzAddh1eunwx2w
+
+关于BERT，面试官们都怎么问
+
+https://mp.weixin.qq.com/s/e3n_16uB-qGeGSaGwzlBDw
+
+这群工程师，业余将中文NLP推进了一大步（中文预训练模型）
+
+https://mp.weixin.qq.com/s/V4pbjP5na1OYp-TorUik8g
+
+详聊如何用BERT实现关系抽取
+
+https://mp.weixin.qq.com/s/s5YIG6rBEy6fZkFLh-CzoA
+
+后BERT时代生存指南之VL-BERT篇
+
+https://zhuanlan.zhihu.com/p/113326366
+
+如何训练并使用Bert
+
+https://mp.weixin.qq.com/s/dmHxEkmVFXcCGhv8eH91Tw
+
+从Word2Vec到BERT:上下文嵌入(Contextual Embedding)最新综述论文
+
+https://mp.weixin.qq.com/s/g6-NjoFMPpxjsh38X-wTFQ
+
+BERT，GPT-2这些顶尖工具到底该怎么用到我的模型里?
+
+https://mp.weixin.qq.com/s/N6xBFZ82dkSGCbj6vC5nLQ
+
+上下文预训练模型最全整理：原理、应用、开源代码、数据分享
+
+https://mp.weixin.qq.com/s/-6XpuO7_ve_EdSPCMeWE7g
+
+Attention isn’t all you need！BERT的力量之源远不止注意力
+
+https://mp.weixin.qq.com/s/Y2bs2QegRadSR7lbiFFnWg
+
+BERT一作Jacob Devlin斯坦福演讲PPT：BERT介绍与答疑
+
 https://zhuanlan.zhihu.com/p/62308732
 
 浅谈Bert：语言理解中的预训练编码器
@@ -369,46 +409,3 @@ https://mp.weixin.qq.com/s/rrbwItXt-1EaGiqtDEGvog
 
 为节约而生：从标准Attention到稀疏Attention
 
-https://mp.weixin.qq.com/s/MzHmvbwxFCaFjmMkjfjeSg
-
-遍地开花的Attention，你真的懂吗？
-
-https://mp.weixin.qq.com/s/e_LEhLf2Rh-1zkEBmqS4nA
-
-NLP这两年：15个预训练模型对比分析与剖析
-
-https://mp.weixin.qq.com/s/LAInpFPa-3R1rfv6idILnw
-
-注意力机制发展如何了，如何学习它在各类任务中的应用？
-
-https://zhuanlan.zhihu.com/p/40920384
-
-真正的完全图解Seq2Seq Attention模型
-
-https://mp.weixin.qq.com/s/ZSzHOu6uowRSoWrqB7vOaQ
-
-深度学习注意力机制-Attention in Deep learning-附101页PPT
-
-https://mp.weixin.qq.com/s/FlA1YrR0sLQGJoJZnSXpRw
-
-DeepMind：深度学习注意力与记忆机制，附70页ppt
-
-https://mp.weixin.qq.com/s/_mBa-GTdILrvluJtegz8fw
-
-南洋理工大学：注意力神经网络，Attention Neural Networks，78页ppt
-
-https://mp.weixin.qq.com/s/pKxqPB9qIGmE_PslPa6EyA
-
-长文详解Attention的前世今生
-
-https://mp.weixin.qq.com/s/2kFZAmb_WnTNYUXT_jVMqg
-
-Attention注意力机制的前世今生
-
-https://mp.weixin.qq.com/s/eq1iTyKguQm5t6Xoc7KUgw
-
-一文搞懂NLP中的Attention机制
-
-https://zhuanlan.zhihu.com/p/106662375
-
-More About Attention

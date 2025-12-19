@@ -7,7 +7,23 @@ category: Attention
 * toc
 {:toc}
 
-# State Space Model（续）
+# State Space Model
+
+## Mamba（续）
+
+因此Mamba参考FlashAttention，设计了分块增量的卷积算法应对这个问题，也就是所谓的parallel scan。
+
+![](/images/img5/Mamba.png)
+
+上图是parallel scan的示意图，虽然计算N时刻的B，需要依赖N-1时刻的B，但是上文部分和本文部分的计算可以是并行的，两部分都做完之后，综合之，即可得到最终结果。
+
+![](/images/img5/Mamba_2.png)
+
+最终的Mamba Block如上图所示。其中的H3(Hungry Hungry Hippos)是之前提出的一种SSM架构。
+
+transformer中的FFN+GLU，被Conv取代，位置也有调整。
+
+![](/images/img5/Mamba_3.png)
 
 https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mamba-and-state
 
@@ -179,6 +195,8 @@ $$g\left(\boldsymbol{x}_{m}, \boldsymbol{x}_{n}, m-n\right)=\left(\begin{array}{
 
 $$\boldsymbol{R}_{\Theta, m}^{d}=\underbrace{\left(\begin{array}{ccccccc} \cos m \theta_{0} & -\sin m \theta_{0} & 0 & 0 & \cdots & 0 & 0 \\ \sin m \theta_{0} & \cos m \theta_{0} & 0 & 0 & \cdots & 0 & 0 \\ 0 & 0 & \cos m \theta_{1} & -\sin m \theta_{1} & \cdots & 0 & 0 \\ 0 & 0 & \sin m \theta_{1} & \cos m \theta_{1} & \cdots & 0 & 0 \\ \vdots & \vdots & \vdots & \vdots & \ddots & \vdots & \vdots \\ 0 & 0 & 0 & 0 & \cdots & \cos m \theta_{d / 2-1} & -\sin m \theta_{d / 2-1} \\ 0 & 0 & 0 & 0 & \cdots & \sin m \theta_{d / 2-1} & \cos m \theta_{d / 2-1} \end{array}\right)}_{\boldsymbol{W}_{m}}$$
 
+$$\theta_i = 10000^{-2i/d}$$
+
 考虑到上述形式和欧拉公式以及复数的关系，这实际上就是一个如下图所示的旋转变换：
 
 ![](/images/img5/RoPE.png)
@@ -294,43 +312,3 @@ https://mp.weixin.qq.com/s/QTELpbr480AJsBINm-FHKQ
 https://mp.weixin.qq.com/s/ZEWCcxTEuEMvQ5__t3gkBg
 
 BERT技术体系综述论文：40项分析探究BERT如何work
-
-https://mp.weixin.qq.com/s/OsfeAA_tbzAddh1eunwx2w
-
-关于BERT，面试官们都怎么问
-
-https://mp.weixin.qq.com/s/e3n_16uB-qGeGSaGwzlBDw
-
-这群工程师，业余将中文NLP推进了一大步（中文预训练模型）
-
-https://mp.weixin.qq.com/s/V4pbjP5na1OYp-TorUik8g
-
-详聊如何用BERT实现关系抽取
-
-https://mp.weixin.qq.com/s/s5YIG6rBEy6fZkFLh-CzoA
-
-后BERT时代生存指南之VL-BERT篇
-
-https://zhuanlan.zhihu.com/p/113326366
-
-如何训练并使用Bert
-
-https://mp.weixin.qq.com/s/dmHxEkmVFXcCGhv8eH91Tw
-
-从Word2Vec到BERT:上下文嵌入(Contextual Embedding)最新综述论文
-
-https://mp.weixin.qq.com/s/g6-NjoFMPpxjsh38X-wTFQ
-
-BERT，GPT-2这些顶尖工具到底该怎么用到我的模型里?
-
-https://mp.weixin.qq.com/s/N6xBFZ82dkSGCbj6vC5nLQ
-
-上下文预训练模型最全整理：原理、应用、开源代码、数据分享
-
-https://mp.weixin.qq.com/s/-6XpuO7_ve_EdSPCMeWE7g
-
-Attention isn’t all you need！BERT的力量之源远不止注意力
-
-https://mp.weixin.qq.com/s/Y2bs2QegRadSR7lbiFFnWg
-
-BERT一作Jacob Devlin斯坦福演讲PPT：BERT介绍与答疑

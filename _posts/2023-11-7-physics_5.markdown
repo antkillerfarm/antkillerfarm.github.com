@@ -304,3 +304,73 @@ https://www.zhihu.com/question/369135042
 https://www.zhihu.com/question/389717558
 
 在地球表面，g≈π² m/s²，这真的只是一种巧合吗？
+
+# Linux学习心得+
+
+https://mp.weixin.qq.com/s/v9XlJjIQkuVpSudhQIS70A
+
+神秘！申请内存时底层发生了什么？
+
+https://mp.weixin.qq.com/s/V-XT6QuDG522P0bP2e3ULg
+
+咋办，死锁了
+
+https://mp.weixin.qq.com/s/RHAoM8zhFvQl9R8V0ePxNQ
+
+看腾讯这道多线程面试题
+
+https://mp.weixin.qq.com/s/qWXcL90ZAkc7rrhsbuB_Bw
+
+只有170字节，最小的64位Hello World程序这样写成
+
+https://mp.weixin.qq.com/s/5iyWeSeDzuA2cY7YBMhk7w
+
+MMU那些事儿
+
+https://mp.weixin.qq.com/s/0OeeYUgBBVVMtxscvzgJHw
+
+i++是线程安全的吗？
+
+https://mp.weixin.qq.com/s/U0qr1oZYXBBmZnC5vsKYLQ
+
+浅谈linux IO
+
+https://mp.weixin.qq.com/s/3kgwoyYI90XHm1QPqFJAiQ
+
+内存分页不就够了？为什么还要分段？
+
+https://mp.weixin.qq.com/s/VSbzTh3xEbVdB4IgGJzQ3A
+
+25张图，一万字，拆解Linux网络包发送过程
+
+https://mp.weixin.qq.com/s/2dbr4-dxRCJ_SLCQnrt8ag
+
+Linux内核调度器源码分析
+
+https://yanqiyu.info/2021/06/21/huawei-v-qwr/
+
+某不知名网友怒斥华为，究竟发生了什么
+
+https://mp.weixin.qq.com/s/-8L5MFZrgmyatGgYaR1AEA
+
+波兰极客用一张软盘运行Linux系统，用的还是最新内核！
+
+http://www.cppblog.com/elva/archive/2008/09/10/61544.html
+
+关于SIGPIPE导致的程序退出
+
+https://www.zhihu.com/question/475730584
+
+为什么linux在x86上不需要设备树，在aarch64上需要设备树？
+
+https://zhuanlan.zhihu.com/p/641619701
+
+发现谁用kill -9关闭程序就开除！
+
+https://zhuanlan.zhihu.com/p/659658036
+
+Linux6.1中为什么用Radix树替换位图（bitmap）来管理进程pid
+
+https://zhuanlan.zhihu.com/p/662590546
+
+深入理解Linux内核进程的创建、调度和终止
