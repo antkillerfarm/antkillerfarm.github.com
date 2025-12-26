@@ -147,6 +147,8 @@ http://dranger.com/ffmpeg/
 
 `ffmpeg -i src.avi -vf scale=iw/2:ih/2 -c:v libx265 -preset slow -threads 16 des.mp4`
 
+这里的视频不仅包括普通视频文件，还包括gif、webp之类的动图文件。
+
 2.转换视频的尺寸
 
 `ffmpeg -i src.mp4 -s 540x960 -acodec copy des.mp4`

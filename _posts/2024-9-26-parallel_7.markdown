@@ -7,7 +7,24 @@ category: DL acceleration
 * toc
 {:toc}
 
-# 快速Transformer（续）
+# 快速Transformer
+
+## FlashAttention-4（续）
+
+为了H100要做个FlashAttention-3，为了B200要做个FlashAttention-4，为了Rubin要做个FlashAttention-5。只要黄皮衣发卡不停，FlashAttention生意就能一直做下去。
+
+
+---
+
+每一代高性能算子都有每一代的要求：
+
+- Flash attention 1：tensor core和vector/SIMT core要能读写同一个SRAM。
+- Flash attention 3/DeepGEMM：tensor core和vector/SIMT core要能完全异步。
+- Deepseek Sparse Attention：vector/SIMT core需要高效地支持topK，较为高效地支持hadamard transform。
+
+https://www.zhihu.com/question/1964791844773822881
+
+NPU为什么很难支持FlashAttention?
 
 ## FlashInfer
 
@@ -211,21 +228,3 @@ Pooling models是一类把可变长度序列“压缩”成固定长度向量的
 https://blog.csdn.net/qq_40491305/article/details/130898052
 
 一文看懂LlamaIndex用法，为LLMs学习私有知识
-
-## 向量数据库
-
-向量搜索在搜索、推荐、NLP等众多应用领域被广泛的使用，典型的互联网业务，包括电商、出行、点评、地图等都大量使用相关技术。随着ChatGPT带来的AI技术应用新热潮，向量数据库又一次地获得了更多的关注。它可以解决LLM不长记性（Memory，记忆）的问题。
-
-普遍认为LLM+Vector Search+API pool会变成复杂AI场景的标准解决方案。
-
-类似Pinecone，Weaviate，Qdrant，Chroma这样的专用向量数据库最初是为了解决ChatGPT的记忆能力不足而出现的Workaround。
-
-最发布的ChatGPT 3.5的上下文窗口只有4K Token，也就是不到两千个汉字。然而当下GPT 4的上下文窗口已经发展到了128K，扩大了32倍，足够塞进一整篇小说了。而且未来还会更大。这时候，用作临时周转的垫脚石——向量数据库SaaS就处在一个尴尬的位置上了。
-
-https://www.zhihu.com/question/603117242
-
-为什么各大VC最近都在投向量数据库？
-
-https://zhuanlan.zhihu.com/p/668509885
-
-向量数据库凉了吗？

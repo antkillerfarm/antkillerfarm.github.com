@@ -107,9 +107,9 @@ https://github.com/JYRoy/MLC-Learning
 
 一个Machine Learning Compilation方面的专栏
 
-## OpenAI Triton
+## Triton
 
-一个类似于TVMscript的可以通过python语法去写高性能GPU程序的库。注意不要和NVIDIA Triton搞混了。后者是一个AI推理框架。
+OpenAI Triton是一个类似于TVMscript的可以通过python语法去写高性能GPU程序的库。注意不要和NVIDIA Triton搞混了。后者是一个AI推理框架。
 
 > NVIDIA Triton Inference Server（此前称为TensorRT Inference Server）能够帮助开发人员和IT/DevOps轻松地在云端、本地数据中心或边缘部署高性能推理服务器。
 
@@ -132,6 +132,8 @@ https://triton-lang.org/main/dialects/TritonDialect.html
 CUDA在线程的细粒度上进行编程，Triton是在分块的细粒度上进行编程。
 
 Google有个pallas项目，也就是jax版的triton。
+
+类似的DSL还有Tilelang, CuTeDSL, Mojo, helion, cuTile等。
 
 ---
 
@@ -216,6 +218,10 @@ Triton SPIR-V后端开发：矩阵乘实现验证
 https://zhuanlan.zhihu.com/p/1953522198804398390
 
 国产NPU为啥都使用triton这种方式而不是Cuda的方式来自定义算子？
+
+https://www.zhihu.com/question/1984630179713279606
+
+DSL大战中，谁活了下来？
 
 ## NVFuser
 

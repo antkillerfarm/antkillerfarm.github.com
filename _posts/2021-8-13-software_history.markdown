@@ -77,6 +77,14 @@ https://www.zhihu.com/question/482003599
 
 ---
 
+《电脑爱好者》是我中学时期最喜欢的杂志之一，一代人的回忆啊。
+
+https://zhuanlan.zhihu.com/p/1985760942458419091
+
+时代的眼泪！《电脑爱好者》注销了
+
+---
+
 https://www.zhihu.com/people/suntrise/posts
 
 一个研究计算机历史的专栏

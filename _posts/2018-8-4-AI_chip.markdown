@@ -37,7 +37,7 @@ NN计算问题的瓶颈主要包括两类：
 
 2.IO问题，也称带宽问题。早期的NN由于算子有限，基本只有FC、Conv、Pooling、Activation等少数几种算子。但现在的NN模型算子可就多了，且有相当部分算子属于非计算类的搬运数据算子，比如permute等。针对这类运算，一般采用被称作Tensor Processor的硬件单元进行加速。
 
-## TPU
+# TPU
 
 ​Tensor Processing Unit(TPU)是Google推出的AI芯片系列。目前已经有3个版本：
 
@@ -220,6 +220,10 @@ https://zhuanlan.zhihu.com/p/656363598
 
 谷歌TPU2机器学习集群的幕后
 
+https://zhuanlan.zhihu.com/p/1933648489704818615
+
+TPUv4深度解析
+
 ## HBM
 
 HBM：High Bandwidth Memory是一款新型的CPU/GPU内存芯片（即“RAM”），其实就是将很多个DDR芯片堆叠在一起后和GPU封装在一起，实现大容量，高位宽的DDR组合阵列。
@@ -265,6 +269,14 @@ HMC（Hybrid Memory Cube）
 https://zhuanlan.zhihu.com/p/1942523887578494185
 
 你缺HBM吗？
+
+---
+
+- TPU上的片上内存单元（CMEM、VMEM、SMEM）比GPU上的L1、L2缓存大得多。
+- TPU上的HBM比GPU上的HBM小得多。
+- 负责计算的Core少了很多。
+
+![](/images/img6/HBM.png)
 
 ---
 

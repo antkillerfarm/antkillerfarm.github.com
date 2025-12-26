@@ -292,7 +292,3 @@ FlashAttention 4提出了一种分段在线softmax算法：
 – 只在最后一步才把局部和rescale成全局和；
 – 这样90%的exp计算只用于比较大小，绝对误差大一点无所谓；
 – 真正需要精度的rescale次数从$$O(N^2)$$降到$$O(N)$$。
-
----
-
-为了H100要做个FlashAttention-3，为了B200要做个FlashAttention-4，为了Rubin要做个FlashAttention-5。只要黄皮衣发卡不停，FlashAttention生意就能一直做下去。
