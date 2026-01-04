@@ -7,7 +7,25 @@ category: DL acceleration
 * toc
 {:toc}
 
-# Flexpoint（续）
+# Flexpoint
+
+Flexpoint是Nervana的作品。
+
+论文：
+
+《Flexpoint: An Adaptive Numerical Format for Efficient Training of Deep Neural Networks》
+
+讲了Google的成功案例，这里来讲一个**反面教材**。
+
+![](/images/img3/flex.png)
+
+这实际上就是INT16的量化，用在inference上应该还是可以的，然而Nervana的目标还有training。
+
+和bfloat16相比，它至少有如下问题：
+
+- 格式转换比bfloat16复杂。
+
+- Dynamic Range小，容易梯度消失，从而造成模型很难收敛。
 
 从指数位宽来看，Flexpoint和float16相同，都是5位。然而由于Flexpoint是共享指数，因此它真正的Dynamic Range是不如float16的。
 

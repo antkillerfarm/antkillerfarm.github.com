@@ -7,7 +7,79 @@ category: Attention
 * toc
 {:toc}
 
-# Attention进阶（续）
+# BERT进阶（续）
+
+https://zhuanlan.zhihu.com/p/348373259
+
+史上最细节的自然语言处理NLP/Transformer/BERT/Attention面试问题与答案
+
+https://mp.weixin.qq.com/s/vFdm-UHns7Nhbmdoiu6jWg
+
+谷歌终于开源BERT代码：3亿参数量，机器之心全面解读
+
+https://zhuanlan.zhihu.com/p/58425003
+
+从Word2Vec到Bert，聊聊词向量的前世今生（一）
+
+https://mp.weixin.qq.com/s/SfMIKfF_B4agFCHN_U_mzQ
+
+BAM！利用知识蒸馏和多任务学习构建的通用语言模型
+
+https://mp.weixin.qq.com/s/6G5Mu7-1omGtQ_9Gt9lUBw
+
+基于预训练自然语言生成的文本摘要方法
+
+https://mp.weixin.qq.com/s/yysnPauB22YgprpOi1ZWSQ
+
+深入理解BERT Transformer，不仅仅是注意力机制
+
+https://mp.weixin.qq.com/s/kFABJJ3fBC48-4DXK8PERQ
+
+10大任务超越BERT，微软提出多任务深度神经网络MT-DNN
+
+https://mp.weixin.qq.com/s/jlGfxkT_o9sgFlUuR_x5Tw
+
+微软开源用于学习通用语言嵌入的MT-DNN模型
+
+https://mp.weixin.qq.com/s/D68YzjYvpc2epGWFBP6rIQ
+
+谷歌实习生新算法提速惊人！BERT训练从三天三夜，缩短到一个小时
+
+https://mp.weixin.qq.com/s/iDGofh_ycWJzfqQriPEXGQ
+
+如何用Python和BERT做中文文本二元分类？
+
+https://zhuanlan.zhihu.com/p/91052495
+
+当BERT遇上知识图谱
+
+https://mp.weixin.qq.com/s/wQW-JT-sGMj60OtXwTssyQ
+
+BERT模型推理加速总结
+
+# Attention进阶
+
+## Sliding Window Attention
+
+![](/images/img6/SWA.png)
+
+上图是SWA和普通Attention使用的Mask的区别。SWA能显著提高训练和推理的速度，同时性能掉的也不多。
+
+![](/images/img6/SWA.webp)
+
+https://zhuanlan.zhihu.com/p/687349083
+
+稀疏注意力计算:Sliding Window Attention
+
+## 参考
+
+https://mp.weixin.qq.com/s/wrmjMLPuvpLIcF5VQBqZxg
+
+最新“注意力机制Attention”大综述论文，66页pdf
+
+https://mp.weixin.qq.com/s/rrbwItXt-1EaGiqtDEGvog
+
+为节约而生：从标准Attention到稀疏Attention
 
 https://mp.weixin.qq.com/s/MzHmvbwxFCaFjmMkjfjeSg
 
@@ -322,27 +394,3 @@ https://mp.weixin.qq.com/s/IWUxVzpdGIX1Oxn4KxjhHA
 https://mp.weixin.qq.com/s/IWUxVzpdGIX1Oxn4KxjhHA
 
 TransGAN：两个Transformer可以构造一个强大的GAN
-
-# 抗日战争+
-
-溥仪在伪满时期坚决不和皇后后妃过性生活，这是他的心机--怕有皇子后他本人会被日本人抛弃甚至毒死，也是因为这个原因，他对溥杰的日本太太怀孕表现得极为惶恐，直到生出来是女儿他才放心。这也足可见这个人自控能力极强。当然其实他是多虑了，这么听话的傀儡，日本人根本没想过要换人。
-
-吉冈安直将其视为自己晋升职务的最后机会，也知道自己唯一的优势就是与溥仪有交情，所以他对溥仪是非常殷勤的。
-
-日本人知道溥仪喜欢汽车，所以从美国买了一批凯迪拉克豪华轿车，又从日本本土弄来一批摩托车，给溥仪组织了一个豪华车队。
-
-溥仪正式称帝之后，在长春搞了一个小太庙、小天坛，穿着龙袍祭拜列祖列宗，这是有照片和录像为证的，虽然日本人一直不同意溥仪穿龙袍，要求溥仪穿现代军装，但是溥仪偷着搞，关东军一般也不会去管。
-
-溥仪逢年过节还组织一批遗老遗少给他行跪拜礼，搞得他亲爹载沣都觉得没意思，表示现在都民国了，你搞这些自娱自乐的东西干啥。
-
-溥仪的自传就是瞎写的，准确的说是溥仪、溥杰提供素材，作家李文达执笔创作，因为当时流行穷苦农民翻身的故事，所以李文达按照这个模版编了一个穷苦皇帝翻身的故事，把溥仪写的特别惨，周围的太监宫女、遗老遗少都憋着坏水，整天琢磨着怎么弄死他，在皇宫里三天饿九顿，全靠西北风续命，过得比渣滓洞还惨。
-
-原稿呈交到国务院后，高层认为太假了然后让老舍和吴晗进行修改，这才形成了现在的市面上发行的《我的前半生》，不过故事的底子依然是穷苦皇帝翻身的故事，毕竟高层就是喜欢这个。
-
-https://www.zhihu.com/question/434496112
-
-溥仪在伪满洲国，拥有多少权力？
-
-https://www.zhihu.com/question/34346405
-
-为什么溥仪的自传让一些读者有不真实感？

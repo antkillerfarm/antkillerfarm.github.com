@@ -171,7 +171,7 @@ Prefilling阶段是计算密集型，少量Query就可以打满GPU，大量Query
 
 ![](/images/img6/CPX.png)
 
-Rubin CPX，是专门为推理阶段prefill准备的低成本卡。prefill阶段所需带宽较小，配置“瘦带宽”而“肥容量”的GDDR7，显然更为合适。
+Rubin CPX，是专门为推理阶段prefill准备的低成本卡。prefill阶段所需带宽较小，配置“瘦带宽”而“肥容量”的GDDR7，显然更为合适。与此同时，英伟达与Groq达成了200亿美元战略授权协议。“Groq 风味”的硅——英伟达正在将其整合进自身推理路线图——将承担高速decode引擎的角色。
 
 https://www.zhihu.com/question/1949040585416636414
 

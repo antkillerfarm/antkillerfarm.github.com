@@ -9,26 +9,6 @@ category: Russo Ukrainian War Cloud
 
 # 俄乌战争：流云篇
 
-https://zhuanlan.zhihu.com/p/603690330
-
-耗尽的遗产——俄罗斯坦克在俄乌战争中的改装
-
-https://zhuanlan.zhihu.com/p/609421277
-
-坦克没有过时、无人机主宰天空——俄乌战争的18个经验和教训
-
-https://zhuanlan.zhihu.com/p/538532137
-
-为了真正的信仰——战斗在乌克兰的国际军团
-
-https://zhuanlan.zhihu.com/p/615070298
-
-危险的攻势——乌克兰军队可能面临缺乏老兵的困境
-
-https://zhuanlan.zhihu.com/p/615630800
-
-恐惧蔓延——俄罗斯国防部将莫斯科划为防空作战区
-
 https://zhuanlan.zhihu.com/p/616389334
 
 侵略战争的附带伤害：俄罗斯边境城市面临水污染问题
@@ -360,3 +340,11 @@ https://zhuanlan.zhihu.com/p/1972077650450321451
 https://zhuanlan.zhihu.com/p/1976390115359217571
 
 “道路上的‘等待无人机’：俄罗斯无人机在待机模式下有何危险”
+
+https://zhuanlan.zhihu.com/p/1988560236131403751
+
+基里洛·布达诺夫谈乌克兰在2025年底面临的挑战、俄罗斯的资源以及特朗普的逻辑——专访
+
+https://zhuanlan.zhihu.com/p/1989251957303551556
+
+战争结构正在发生变化——关于2026年目标及乌克兰武装部队独特行动的西尔斯基专访

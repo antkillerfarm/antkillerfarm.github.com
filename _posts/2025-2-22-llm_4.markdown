@@ -143,6 +143,10 @@ https://zhuanlan.zhihu.com/p/27181462601
 
 DeepSeek-V3 / R1 推理系统概览
 
+https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-reasoning-llms
+
+A Visual Guide to Reasoning LLMs
+
 ---
 
 deepseek r1的推理性价比方案实际上在两端。要么是上万并发度的大集群，deepseek的320 GPU作为最小部署单元就是这样一个极端，要么是单用户并发度价格做得足够低。

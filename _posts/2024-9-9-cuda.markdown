@@ -78,6 +78,27 @@ CUTLASS主要基于以下指令：
 - WGMMA（Warp Group Matrix Multiply-Accumulate）：WGMMA是WMMA的扩展，提供了更广泛的矩阵尺寸和数据类型的支持。对并行计算的控制也更为精细。
 - TMA（Tensor Memory Accelerator）：用于在global memory和shared memory之间搬运数据。
 - BMMA（Binary Matrix Multiply-Accumulate）：提供按位操作的矩阵乘法。
+- UMMA（Unified Mixed-precision Matrix-multiply Accumulate）
+
+---
+
+- MMA时代的mma.sync是同步指令，导致计算流水线和访存流水线必须严格耦合。编译器必须插入大量的DEPBAR（依赖栅栏）或者依靠硬件Scoreboard阻塞，导致指令发射（Issue）停顿。
+- WGMMA时代的wgmma.mma_async利用mbarrier实现生产者-消费者模型。Warp依然需要发射指令，但计算在后台运行。这使得Warp可以继续发射Global Memory Load (TMA) 指令，真正实现了 Compute-Memory Overlap。
+- UMMA时代的tcgen05彻底变成一条标量指令，它使用过程中不占用Warp的发射槽位，就类似于给Tensor Core挂载了一个独立的DMA引擎。一旦配置好，Tensor Engine独立运转，SM中的Warp可以去处理完全不相关的其他指令。
+
+在这个过程中，计算粒度从warp(32 thread)->warp group(4x32thread)->Single-Thread Orchestration。
+
+![](/images/img6/Tensor_core.png)
+
+Blackwell架构里的Tensor Memory（TMEM）是一块专门为第五代Tensor Core运算设计的片上SRAM，位于每个SM内部，容量256 KB，大小与SM的寄存器文件相当。用于存放MMA指令的输入矩阵A和输出矩阵D，替代寄存器保存累加器，极大的缓解了寄存器的压力。
+
+warp指令：一条被warp内32个线程集体发射、在SIMD流水线上锁步（lock-step）执行的指令。只要warp里任意一条线程被阻塞（例如访存等待），整条warp指令就暂停，32线程一起等待——这就是SIMT的“掩码+锁步”执行模型。
+
+标量指令：它的“发射许可”不再检查“当前warp的32线程是否都到达”，而是任意一条线程跑到这条指令时，就可以独自把一次矩阵运算请求丢给Tensor Core，然后继续往下走。其他线程即使因为分支divergence没跑到这里，也不会阻塞这次提交。
+
+https://www.zhihu.com/question/10639310321
+
+如何看待第5代Tensor Core?
 
 ---
 
@@ -244,85 +265,3 @@ https://zhuanlan.zhihu.com/p/266633373
 https://www.zhihu.com/question/35361192
 
 CUDA为什么要分线程块和线程网格？
-
----
-
-Warp采用下图的策略来调度thread：
-
-![](/images/img6/warp-cycles.svg)
-
-- Stalled：由于指令/数据没有准备好，或者其他原因，导致thread处于等待的状态。
-- Eligible：万事俱备，只待执行。
-- Selected：被选中执行的thread。
-
----
-
-Warp函数通过直接操作线程的寄存器来实现数据交换，而不是通过内存访问。因此，数据交换非常快速，延迟极低。
-
-https://zhuanlan.zhihu.com/p/669917716
-
-束内表决函数（Warp Vote Function）
-
-https://zhuanlan.zhihu.com/p/669957986
-
-束内洗牌函数（Warp Shuffle Functions）
-
-https://zhuanlan.zhihu.com/p/670290502
-
-束内匹配函数（Warp Match Functions）
-
-https://zhuanlan.zhihu.com/p/670534280
-
-束内规约函数（Warp Reduce Functions）
-
-https://zhuanlan.zhihu.com/p/652255520
-
-束内规约与块内规约问题
-
-https://zhuanlan.zhihu.com/p/646998011
-
-CUDA编程中的并行规约问题
-
-## Memory Coalescing
-
-![](/images/img6/Memory_Coalescing.jpg)
-
-Memory Coalescing合并发生在不同线程之间，而不是线程内部的不同迭代之间。
-
-warp中的所有线程都执行相同的指令，它们在任何时候都在同时执行第k次迭代。因此，一个线程在其生命周期内是否读取整行数据并不重要。重要的是，wrap内的所有线程在每次内存访问时可以合并。
-
-在上图中，矩阵M内存访问模式是低效的，而矩阵N的访问模型是高效的。
-
-在更高层的L2 Cache上也有类似的情况：
-
-![](/images/img6/CUDA.png)
-
-参考：
-
-https://zhuanlan.zhihu.com/p/300785893
-
-CUDA编程之Memory Coalescing
-
-## Debug
-
-`nvcc -g -G -o test metrixMul.cu`
-
-- `-g`: debug host code.
-- `-G`: debug device code.
-
-给VSCode安装Nsight扩展。
-
-launch.json:
-
-```json
-{
-    "name": "CUDA C++: Launch",
-    "type": "cuda-gdb",
-    "request": "launch",
-    "program": "${fileDirname}/test",
-}
-```
-
-https://zhuanlan.zhihu.com/p/508810115
-
-Visual Studio Code的CUDA环境

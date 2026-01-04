@@ -175,6 +175,10 @@ One-instruction set computer：使用Bit-manipulating之类的技术，可以用
 
 ## 定律
 
+Strong Scaling（强扩展）和Weak Scaling（弱扩展）是衡量并行计算性能扩展性的两种常用方法。
+
+Strong Scaling关注“同一任务用更多核能快多少”（Amdahl's rule），Weak Scaling 关注“任务和核一起变多时还能不能保持效率”（Gustafson's law）。
+
 Amdahl's rule（阿姆达尔定律）：整个计算系统的性能提升取决于速度最慢的这一部分。
 
 如果f是被并行化代码的比率，并且如果并行化版本在一个有p个处理器的机器上运行，且没有任何通信或者并行化开销，那么此时的加速比是:
@@ -238,11 +242,3 @@ https://zhuanlan.zhihu.com/p/53596593
 https://en.wikipedia.org/wiki/ARM_big.LITTLE
 
 ARM的big.LITTLE架构
-
-## NUMA
-
-在SMP架构中，又可以分为NUMA架构和UMA架构。
-
-NUMA(non-Uniform Memory Access)非均匀内存访问架构是指多处理器系统中，内存的访问时间是依赖处理器和内存之间相对位置的。在这种设计里面存在和处理器相近的内存，通常称作本地内存；还有和处理器相对远的内存，通常称之为远端内存。
-
-UMA(Uniform Memory Access)均匀内存访问架构则是与NUMA架构相反，所以处理器对共享内存的访问距离和时间是相同的。

@@ -21,6 +21,10 @@ https://china.xilinx.com/support/documentation/white_papers/c_wp486-deep-learnin
 
 利用Xilinx器件的INT8优化开展深度学习
 
+https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-quantization
+
+A Visual Guide to Quantization
+
 # IEEE 754
 
 在开始进一步介绍之前，我们首先回顾一下浮点数在硬件上的表示方法。其中最重要的就是IEEE 754标准。
@@ -185,7 +189,9 @@ FP16相对于FP32，通常会有不到1%的精度损失。即使是不re-train�
 
 一个浮点数包括底数和指数两部分。将两者分开，就得到了一般的INT量化。
 
-量化的过程一般如下：
+![](/images/img6/Quant.png)
+
+量化的过程一般如上图所示：
 
 1.使用一批样本进行推断，记录下每个layer的数值范围。
 
@@ -267,23 +273,3 @@ CUDA中表示bfloat16数据类型有两种不同形式：
 https://www.zhihu.com/question/275682777
 
 如何评价Google在TensorFlow中引入的bfloat16数据类型？
-
-# Flexpoint
-
-Flexpoint是Nervana的作品。
-
-论文：
-
-《Flexpoint: An Adaptive Numerical Format for Efficient Training of Deep Neural Networks》
-
-讲了Google的成功案例，这里来讲一个**反面教材**。
-
-![](/images/img3/flex.png)
-
-这实际上就是INT16的量化，用在inference上应该还是可以的，然而Nervana的目标还有training。
-
-和bfloat16相比，它至少有如下问题：
-
-- 格式转换比bfloat16复杂。
-
-- Dynamic Range小，容易梯度消失，从而造成模型很难收敛。

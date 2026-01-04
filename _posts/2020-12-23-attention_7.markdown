@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（七）——RWKV, BERT进阶（1）
+title:  Attention（七）——RWKV, RoPE, BERT进阶（1）
 category: Attention 
 ---
 
@@ -109,47 +109,7 @@ DeltaNet Explained
 
 http://github.com/fla-org/flash-linear-attention
 
-# BERT进阶
-
-## UniLM
-
-![](/images/img5/UniLM.jpg)
-
-|  | Encoder注意力 | Decoder注意力 | 是否共享参数 |
-|:--:|:--:|:--:|:--:|
-| GPT | 单向 | 单向 | 是 |
-| UniLM | 双向 | 单向 | 是 |
-| T5 | 双向 | 单向 | 否 |
-
-https://mp.weixin.qq.com/s/m_FU4NmjUsvxusRidDb-Xg
-
-UniLM:一种既能阅读又能自动生成的预训练模型
-
-https://mp.weixin.qq.com/s/yyUPqxpfBwUSRbwM6SSAcQ
-
-UniLM论文阅读笔记
-
-https://mp.weixin.qq.com/s/RjeuHXa8O3MzSpTOuOHMkQ
-
-站在BERT肩膀上的NLP新秀们：XLMs、MASS和UNILM
-
-https://mp.weixin.qq.com/s/UEBKSKEkZTbpR49_Rh50Jg
-
-微软统一预训练语言模型UniLM 2.0解读
-
-## Electra
-
-https://mp.weixin.qq.com/s/dFT7KKMH56unkOEA9H4Kuw
-
-吊打BERT Large的小型预训练模型ELECTRA终于开源！真相却让人...
-
-https://mp.weixin.qq.com/s/6i9eQISKsWU0jawKzWg8nQ
-
-超越bert，最新预训练模型ELECTRA论文阅读笔记
-
-https://mp.weixin.qq.com/s/lkB1xn6G2P5Nivj7DcYg5w
-
-Electra: 判别还是生成，这是一个选择
+# RoPE
 
 ## Embedding
 
@@ -201,6 +161,77 @@ $$\theta_i = 10000^{-2i/d}$$
 
 ![](/images/img5/RoPE.png)
 
+![](/images/img6/RoPE.jpg)
+
+目前业界对于Rope的实现有两种方式：
+
+- GPT-J sytle：原始论文的实现方式。
+
+$$\begin{bmatrix}q_m^{(1)}  \\q_m^{(2)} \\q_m^{(3)}  \\q_m^{(4)} \\{\vdots}\\q_m^{(d-1)}  \\q_m^{(d)} \\\end{bmatrix} = \begin{bmatrix}cos(m\theta_1)  \\cos(m\theta_1) \\cos(m\theta_2)  \\cos(m\theta_2) \\{\vdots}\\cos(m\theta_{d/2})  \\cos(m\theta_{d/2}) \\\end{bmatrix} \otimes\begin{bmatrix}q_m^{(1)}  \\q_m^{(2)} \\q_m^{(3)}  \\q_m^{(4)} \\{\vdots}\\q_m^{(d-1)}  \\q_m^{(d)} \\\end{bmatrix}+ \begin{bmatrix}sin(m\theta_1)  \\sin(m\theta_1) \\sin(m\theta_2)  \\sin(m\theta_2) \\{\vdots}\\sin(m\theta_{d/2})  \\sin(m\theta_{d/2}) \\\end{bmatrix} \otimes\begin{bmatrix}-q_m^{(2)}  \\q_m^{(1)} \\-q_m^{(4)}  \\q_m^{(3)} \\{\vdots}\\-q_m^{(d)}  \\q_m^{(d-1)} \\\end{bmatrix}$$
+
+- GPT-NeoX style：该方式实现高效，为目前主流的LLM模型所使用。
+
+$$\begin{bmatrix}
+q_m^{(1)} \\
+q_m^{(2)} \\
+{\vdots}\\
+q_m^{(d/2)} \\
+q_m^{(d/2+1)} \\
+{\vdots}\\
+q_m^{(d)}\\
+\end{bmatrix} = 
+
+\begin{bmatrix}
+cos(m\theta_1) \\
+cos(m\theta_2) \\
+{\vdots}\\
+cos(m\theta_{d/2}) \\
+
+cos(m\theta_1) \\
+cos(m\theta_2) \\
+{\vdots}\\
+cos(m\theta_{d/2}) \\
+\end{bmatrix}
+
+\otimes
+
+\begin{bmatrix}
+q_m^{(1)} \\
+q_m^{(2)} \\
+{\vdots}\\
+q_m^{(d/2)} \\
+q_m^{(d/2+1)} \\
+{\vdots}\\
+q_m^{(d)} \\
+\end{bmatrix}
++
+\begin{bmatrix}
+sin(m\theta_1) \\
+sin(m\theta_2) \\
+{\vdots}\\
+sin(m\theta_{d/2}) \\
+
+sin(m\theta_1) \\
+sin(m\theta_2) \\
+{\vdots}\\
+sin(m\theta_{d/2}) \\
+\end{bmatrix} 
+
+\otimes
+\begin{bmatrix}
+-q_m^{(d/2+1)}\\
+{\vdots}\\
+-q_m^{(d)} \\
+q_m^{(1)} \\
+q_m^{(2)} \\
+{\vdots}\\
+q_m^{(d/2)} \\
+\end{bmatrix}$$
+
+两种实现方式在模型的表达能力上是等价的：$$Q*K^T$$的运算满足内积线性叠加性，即对于Q的行和K的列到底在哪里不关心，只要能把正确的行和列匹配上即可。
+
+因此虽然对于同一input tensor x，rope_gpt_j(x) != rope_gpt_neox(x)。但是我们可以通过对$$W_Q$$和$$W_K$$重排，得到相同的$$Q*K^T$$的结果。
+
 参考：
 
 https://spaces.ac.cn/archives/8265
@@ -231,84 +262,44 @@ https://blog.csdn.net/v_JULY_v/article/details/137955982
 
 一文速览Llama 3及其微调：从如何把长度扩展到100万到如何微调Llama3 8B
 
-## 参考
+# BERT进阶
 
-https://www.zhihu.com/question/298203515
+## UniLM
 
-如何评价BERT模型？
+![](/images/img5/UniLM.jpg)
 
-https://mp.weixin.qq.com/s/Fao3i99kZ1a6aa3UhAYKhA
+|  | Encoder注意力 | Decoder注意力 | 是否共享参数 |
+|:--:|:--:|:--:|:--:|
+| GPT | 单向 | 单向 | 是 |
+| UniLM | 双向 | 单向 | 是 |
+| T5 | 双向 | 单向 | 否 |
 
-全面超越人类！Google称霸SQuAD，BERT横扫11大NLP测试
+https://mp.weixin.qq.com/s/m_FU4NmjUsvxusRidDb-Xg
 
-https://mp.weixin.qq.com/s/INDOBcpg5p7vtPBChAIjAA
+UniLM:一种既能阅读又能自动生成的预训练模型
 
-最强预训练模型BERT的Pytorch实现
+https://mp.weixin.qq.com/s/yyUPqxpfBwUSRbwM6SSAcQ
 
-https://mp.weixin.qq.com/s/SZMYj4rMneR3OWST007H-Q
+UniLM论文阅读笔记
 
-解读谷歌最强NLP模型BERT：模型、数据和训练
+https://mp.weixin.qq.com/s/RjeuHXa8O3MzSpTOuOHMkQ
 
-https://mp.weixin.qq.com/s/8uZ2SJtzZhzQhoPY7XO9uw
+站在BERT肩膀上的NLP新秀们：XLMs、MASS和UNILM
 
-详细解读谷歌新模型BERT为什么嗨翻AI圈
+https://mp.weixin.qq.com/s/UEBKSKEkZTbpR49_Rh50Jg
 
-https://zhuanlan.zhihu.com/p/66053631
+微软统一预训练语言模型UniLM 2.0解读
 
-BERT
+## Electra
 
-https://mp.weixin.qq.com/s/WEbJnO04DOrsxUbzpgL66g
+https://mp.weixin.qq.com/s/dFT7KKMH56unkOEA9H4Kuw
 
-BERT源码分析（PART I）
+吊打BERT Large的小型预训练模型ELECTRA终于开源！真相却让人...
 
-https://mp.weixin.qq.com/s/iXjE7KoyvFQ8uekLKRK4jw
+https://mp.weixin.qq.com/s/6i9eQISKsWU0jawKzWg8nQ
 
-BERT源码分析（PART II）
+超越bert，最新预训练模型ELECTRA论文阅读笔记
 
-https://mp.weixin.qq.com/s/DxBC_x5ZWC6SECfnwDGnVg
+https://mp.weixin.qq.com/s/lkB1xn6G2P5Nivj7DcYg5w
 
-BERT源码分析（PART III）
-
-https://mp.weixin.qq.com/s/kI_k_plZbRzmdeXxt2_2WA
-
-从Transformer到BERT模型
-
-https://mp.weixin.qq.com/s/Bnk0nIjBdb58WVJEY8MqnA
-
-NLP中各种各样的编码器
-
-https://mp.weixin.qq.com/s/CofeiL4fImq98UeuJ4hWTg
-
-预训练BERT，官方代码发布前他们是这样用TensorFlow解决的
-
-https://mp.weixin.qq.com/s/HOD1Hb70NhTXXCXlopzfng
-
-BERT推理加速实践
-
-https://mp.weixin.qq.com/s/0luHJsw7WWJskJWGThR5qg
-
-使用BERT做文本摘要
-
-https://mp.weixin.qq.com/s/IY8J09LvDAr8owYffKi5Dw
-
-五问BERT：深入理解NLP领域爆红的预训练模型
-
-https://zhuanlan.zhihu.com/p/106901954
-
-BERT, ELMo, & GPT-2: 这些上下文相关的表示到底有多上下文化？
-
-https://mp.weixin.qq.com/s/mkDmn4zy_s87kiiDIkx0VQ
-
-NLP的12种后BERT预训练方法
-
-https://www.zhihu.com/question/327450789
-
-Bert如何解决长文本问题？
-
-https://mp.weixin.qq.com/s/QTELpbr480AJsBINm-FHKQ
-
-代码也能预训练，微软&哈工大最新提出CodeBERT模型，支持自然-编程双语处理
-
-https://mp.weixin.qq.com/s/ZEWCcxTEuEMvQ5__t3gkBg
-
-BERT技术体系综述论文：40项分析探究BERT如何work
+Electra: 判别还是生成，这是一个选择

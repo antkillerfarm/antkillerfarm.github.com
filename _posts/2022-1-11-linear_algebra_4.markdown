@@ -335,3 +335,8 @@ https://mp.weixin.qq.com/s/RwG8HaK02-Fa0t26UboD7w
 https://www.zhihu.com/question/346942533
 
 每一次拼好魔方后小方块的位置都是固定的吗？
+
+---
+
+如果n个人完全随机分n块蛋糕，当人群n足够大时，一个蛋糕都没有的人的比例大约为1/e。
+

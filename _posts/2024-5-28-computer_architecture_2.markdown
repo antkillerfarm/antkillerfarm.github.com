@@ -9,7 +9,13 @@ category: Chip
 
 # 计算机体系结构
 
-## NUMA（续）
+## NUMA
+
+在SMP架构中，又可以分为NUMA架构和UMA架构。
+
+NUMA(non-Uniform Memory Access)非均匀内存访问架构是指多处理器系统中，内存的访问时间是依赖处理器和内存之间相对位置的。在这种设计里面存在和处理器相近的内存，通常称作本地内存；还有和处理器相对远的内存，通常称之为远端内存。
+
+UMA(Uniform Memory Access)均匀内存访问架构则是与NUMA架构相反，所以处理器对共享内存的访问距离和时间是相同的。
 
 ![](/images/img2/NUMA.jpg)
 

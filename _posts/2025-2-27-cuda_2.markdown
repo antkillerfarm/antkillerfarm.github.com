@@ -9,6 +9,88 @@ category: AI
 
 # CUDA
 
+## Warp（续）
+
+Warp采用下图的策略来调度thread：
+
+![](/images/img6/warp-cycles.svg)
+
+- Stalled：由于指令/数据没有准备好，或者其他原因，导致thread处于等待的状态。
+- Eligible：万事俱备，只待执行。
+- Selected：被选中执行的thread。
+
+---
+
+Warp函数通过直接操作线程的寄存器来实现数据交换，而不是通过内存访问。因此，数据交换非常快速，延迟极低。
+
+https://zhuanlan.zhihu.com/p/669917716
+
+束内表决函数（Warp Vote Function）
+
+https://zhuanlan.zhihu.com/p/669957986
+
+束内洗牌函数（Warp Shuffle Functions）
+
+https://zhuanlan.zhihu.com/p/670290502
+
+束内匹配函数（Warp Match Functions）
+
+https://zhuanlan.zhihu.com/p/670534280
+
+束内规约函数（Warp Reduce Functions）
+
+https://zhuanlan.zhihu.com/p/652255520
+
+束内规约与块内规约问题
+
+https://zhuanlan.zhihu.com/p/646998011
+
+CUDA编程中的并行规约问题
+
+## Memory Coalescing
+
+![](/images/img6/Memory_Coalescing.jpg)
+
+Memory Coalescing合并发生在不同线程之间，而不是线程内部的不同迭代之间。
+
+warp中的所有线程都执行相同的指令，它们在任何时候都在同时执行第k次迭代。因此，一个线程在其生命周期内是否读取整行数据并不重要。重要的是，wrap内的所有线程在每次内存访问时可以合并。
+
+在上图中，矩阵M内存访问模式是低效的，而矩阵N的访问模型是高效的。
+
+在更高层的L2 Cache上也有类似的情况：
+
+![](/images/img6/CUDA.png)
+
+参考：
+
+https://zhuanlan.zhihu.com/p/300785893
+
+CUDA编程之Memory Coalescing
+
+## Debug
+
+`nvcc -g -G -o test metrixMul.cu`
+
+- `-g`: debug host code.
+- `-G`: debug device code.
+
+给VSCode安装Nsight扩展。
+
+launch.json:
+
+```json
+{
+    "name": "CUDA C++: Launch",
+    "type": "cuda-gdb",
+    "request": "launch",
+    "program": "${fileDirname}/test",
+}
+```
+
+https://zhuanlan.zhihu.com/p/508810115
+
+Visual Studio Code的CUDA环境
+
 ## Profile
 
 NVIDIA System Management Interface (NSMI): 即nvidia-smi。
@@ -253,67 +335,3 @@ PyTorch自定义CUDA算子教程与运行时间分析
 https://zhuanlan.zhihu.com/p/358778742
 
 详解PyTorch编译并调用自定义CUDA算子的三种方式
-
-https://zhuanlan.zhihu.com/p/360441891
-
-熬了几个通宵，我写了份CUDA新手入门代码
-
-https://mp.weixin.qq.com/s/EZxO8IIBDJ4c7eQhUffc2w
-
-怎样节省2/3的GPU？爱奇艺vGPU的探索与实践
-
-https://mp.weixin.qq.com/s/3VjGpyXZSkJhy6sFPUsZzw
-
-GPU虚拟化，算力隔离，和qGPU
-
-https://zhuanlan.zhihu.com/p/383115932
-
-大佬是怎么优雅实现矩阵乘法的？
-
-https://zhuanlan.zhihu.com/p/410278370
-
-CUDA矩阵乘法终极优化指南
-
-https://www.zhihu.com/column/c_1437330196193640448
-
-深入浅出GPU优化
-
-https://www.zhihu.com/question/41060378
-
-自己写的CUDA矩阵乘法能优化到多快？
-
-https://zhuanlan.zhihu.com/p/559957579
-
-简单谈谈CUDA的访存合并
-
-https://zhuanlan.zhihu.com/p/565897763
-
-GPGPU编程模型之CUDA
-
-http://blog.csdn.net/augusdi/article/details/12833235
-
-这是一篇转帖的CUDA教程，原帖比较分散，不好看。
-
-https://zhuanlan.zhihu.com/p/544864997
-
-cuda中threadIdx、blockIdx、blockDim和gridDim的使用
-
-https://zhuanlan.zhihu.com/p/690717002
-
-一文读懂cuda代码编译流程
-
-https://zhuanlan.zhihu.com/p/690880124
-
-并不太短的CUDA入门（The Not So Short Introduction to CUDA）
-
-https://zhuanlan.zhihu.com/p/693690123
-
-一文读懂nvidia-smi背后的nvml库
-
-https://www.zhihu.com/question/445590537
-
-问个CUDA并行上的小白问题，既然SM只能同时处理一个WARP，那是不是有的SP处于闲置？
-
-https://www.zhihu.com/question/667972067
-
-cuda的swizzle是怎么实现bank conflict free的？
