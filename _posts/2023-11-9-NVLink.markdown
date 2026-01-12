@@ -215,7 +215,9 @@ https://en.wikichip.org/wiki/nvidia/nvlink
 
 ![](/images/img5/GPU_2.png)
 
-![](/images/img6/programming-model.svg)
+![](/images/img6/cuda-programming-model.svg)
+
+![](/images/img6/cuda_model.png)
 
 Registers -> Caches -> Shared Memory（Unified Buffer） -> Gloabl Memory（Local Memory）
 

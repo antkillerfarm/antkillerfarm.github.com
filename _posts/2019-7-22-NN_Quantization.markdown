@@ -47,6 +47,10 @@ half - IEEE 754-based half-precision floating point library
 
 显然，Significand的位数决定Accuracy，而Exponent的位数决定Dynamic Range。
 
+https://flop.evanau.dev/float-converter
+
+IEEE 754-Style Floating-Point Converter
+
 ---
 
 指数位用移码表示，移码的定义：移码 = 真值 + 偏置值；

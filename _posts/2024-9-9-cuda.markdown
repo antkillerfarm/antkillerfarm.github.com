@@ -168,6 +168,10 @@ https://zhuanlan.zhihu.com/p/1945136522455122713
 
 NVIDIA TMA全面分析
 
+https://www.aleksagordic.com/blog/matmul
+
+Inside NVIDIA GPUs: Anatomy of high performance matmul kernels
+
 ## Tile IR
 
 Tile based的编程，逐渐替代传统的SIMT编程，成为LLM时代的首选。

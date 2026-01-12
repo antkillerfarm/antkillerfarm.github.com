@@ -19,6 +19,10 @@ Computer Systems: A Programmer's Perspective（CSAPP）
 
 Structure and Interpretation of Computer Programs（SICP）
 
+https://github.com/krahets/hello-algo
+
+中文的算法入门教程
+
 ## TopK
 
 https://zhuanlan.zhihu.com/p/76734219

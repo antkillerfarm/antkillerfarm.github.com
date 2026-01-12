@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Large Language Model（五）——LLM实战
+title:  Large Language Model（五）——AI agent, LLM实战
 category: Attention 
 ---
 
@@ -13,6 +13,36 @@ category: Attention
 
 大语言模型参与的芯片前端设计迭代流程
 
+---
+
+Vibe Coding是一种2025年才出现、以AI为核心的全新软件开发方式：开发者不再逐行手写代码，而是用自然语言把“想要什么”告诉大模型，由AI生成、修改并反复迭代，直到“感觉对了”就上线——整个过程更像“对话＋氛围感知”，而不是传统意义上的编码。
+
+https://www.zhihu.com/question/1944542162130833916
+
+什么是Vibe Coding？
+
+# AI agent
+
+AI agent本质上是一个构建在LLM(大模型)之上的智能应用，也就是说AI agent是大模型的上层应用。如果说把AI比做一个人，那么大模型就是这个人的大脑，虽然它拥有了智能，但其却没有能够真正做事的实体。而AI agent就相当于人的手脚眼睛和嘴巴，以及各种人类能够利用的工具。
+
+![](/images/img5/AI_agent.png)
+
+https://blog.csdn.net/qq_33453797/article/details/138324548
+
+爆火的AI Agent到底是什么？有了大模型为什么还需要AI Agent？
+
+https://blog.csdn.net/v_JULY_v/article/details/135868163
+
+智能体AI Agent的极速入门：从ReAct、AutoGPT到AutoGen、QwenAgent、XAgent、MetaGPT
+
+https://blog.csdn.net/v_JULY_v/article/details/142796658
+
+OmniH2O——通用灵巧且可全身远程操作并学习的人形机器人
+
+https://blog.csdn.net/v_JULY_v/article/details/142769965
+
+VLM驱动机器狗——从UMI on Legs到Helpful DoggyBot：分别把机械臂装到机器狗背上、夹爪装到机器狗嘴里
+
 https://zhuanlan.zhihu.com/p/1917883331829273687
 
 Devin炮轰Claude：别再搞Multi-Agent了
@@ -24,6 +54,16 @@ MCP（Model Context Protocol）由Anthropic于2024年11月推出，是一个开�
 https://zhuanlan.zhihu.com/p/1895177200665350365
 
 大白话聊一聊Tool、MCP和Agent来龙去脉
+
+---
+
+https://github.com/OthmanAdi/planning-with-files
+
+Manus原理
+
+https://zhuanlan.zhihu.com/p/1993358891099111451
+
+Manus核心Context技术被人做成了Skills
 
 # LLM实战
 

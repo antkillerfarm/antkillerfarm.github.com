@@ -31,6 +31,7 @@ https://mp.weixin.qq.com/s/uiBPpZDyVhySP8eKKaIygw
 
 KV Cache从诞生之初就是一个工程问题，上面主要讨论的是算法优化，而本节则聚焦于Architecture领域。
 
+在Mooncake中，直接利用RDMA和GPUDirect技术，在不同机器的GPU显存、CPU内存之间进行的高速搬运。热数据在HBM，温数据在CPU DRAM，冷数据在SSD。系统像管理数据库一样管理KV Cache。
 https://zhuanlan.zhihu.com/p/706791646
 
 Mooncake: Kimi's KVCache-centric Architecture for LLM Serving

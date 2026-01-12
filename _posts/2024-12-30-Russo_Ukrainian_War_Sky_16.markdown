@@ -79,6 +79,10 @@ https://mp.weixin.qq.com/s/nWX95xCmkqwGoJj1jQYNsw
 
 长见识之乌克兰的敌后战线
 
+https://zhuanlan.zhihu.com/p/1992149605467568012
+
+如果乌克兰被迫割让领土，普京将面对一支“看不见的军队”
+
 ## 瓦格纳上洛
 
 Шойгу! Герасимов! Где сука боеприпасы?

@@ -323,6 +323,26 @@ Latex数学排版简洁指南
 
 # 并行 & 框架 & 优化参考资源+
 
+https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
+
+继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本
+
+https://mp.weixin.qq.com/s/aNX_8UDYI_0u-MwMTYeqdQ
+
+开发易、通用难，深度学习框架何时才能飞入寻常百姓家？
+
+https://mp.weixin.qq.com/s/UbAHB-uEIvqYZCB7xIAJTg
+
+机器学习新框架Propel：使用JavaScript做可微分编程
+
+https://mp.weixin.qq.com/s/Ctl65r4iZNEOBxiiX2I2eQ
+
+Momenta王晋玮：让深度学习更高效运行的两个视角
+
+https://zhuanlan.zhihu.com/p/371499074
+
+OneFlow——让每一位算法工程师都有能力训练GPT
+
 https://mp.weixin.qq.com/s/LjdHBEyQhJq3ptMj8XVT-w
 
 TensorFlow在推荐系统中的分布式训练优化实践

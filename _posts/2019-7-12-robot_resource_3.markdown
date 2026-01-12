@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器人/无人驾驶（三）——组合导航, 软件仿真, Apollo, Autoware, AI agent
+title:  机器人/无人驾驶（三）——组合导航, 软件仿真, Apollo, Autoware
 category: robot 
 ---
 
@@ -364,25 +364,3 @@ autoware提供的模拟器。
 代码仓库：
 
 https://gitlab.com/autowarefoundation/autoware.ai
-
-## AI agent
-
-AI agent本质上是一个构建在LLM(大模型)之上的智能应用，也就是说AI agent是大模型的上层应用。如果说把AI比做一个人，那么大模型就是这个人的大脑，虽然它拥有了智能，但其却没有能够真正做事的实体。而AI agent就相当于人的手脚眼睛和嘴巴，以及各种人类能够利用的工具。
-
-![](/images/img5/AI_agent.png)
-
-https://blog.csdn.net/qq_33453797/article/details/138324548
-
-爆火的AI Agent到底是什么？有了大模型为什么还需要AI Agent？
-
-https://blog.csdn.net/v_JULY_v/article/details/135868163
-
-智能体AI Agent的极速入门：从ReAct、AutoGPT到AutoGen、QwenAgent、XAgent、MetaGPT
-
-https://blog.csdn.net/v_JULY_v/article/details/142796658
-
-OmniH2O——通用灵巧且可全身远程操作并学习的人形机器人
-
-https://blog.csdn.net/v_JULY_v/article/details/142769965
-
-VLM驱动机器狗——从UMI on Legs到Helpful DoggyBot：分别把机械臂装到机器狗背上、夹爪装到机器狗嘴里

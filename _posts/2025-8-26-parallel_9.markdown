@@ -7,6 +7,44 @@ category: DL acceleration
 * toc
 {:toc}
 
+# 工具
+
+FairScale是由Facebook Research开发的PyTorch扩展库。FSDP就是首发于这个库。
+
+---
+
+https://zhuanlan.zhihu.com/p/412118353
+
+Kokkos:一个异构并行计算通用平台
+
+---
+
+LLGuidance是Guidance-AI开源的一个超高速“约束解码”引擎，用Rust写成，专门帮大模型在生成时强制遵守你给出的结构规范（JSON Schema、正则、EBNF/Lark 文法等），从而得到100%合规的结构化输出。类似的引擎还有XGrammar。
+
+---
+
+Ray是一个分布式计算框架，专为大规模并行任务和强化学习应用设计。它由加州大学伯克利分校的研究团队开发，旨在简化构建高性能、可扩展的分布式应用程序的过程。
+
+https://mp.weixin.qq.com/s/Na2SJkfC9LzgfbTfSCclOw
+
+如何基于Ray使用15行代码实现参数服务器
+
+https://mp.weixin.qq.com/s/IqjKdAlGYREqCR9XQB5N1A
+
+伯克利AI分布式框架Ray，兼容TensorFlow、PyTorch与MXNet
+
+https://mp.weixin.qq.com/s/jOVUPhrCBI9W9vPvD9eKYg
+
+UC Berkeley提出新型分布式框架Ray：实时动态学习的开端
+
+---
+
+DeepWiki由Cognition AI推出，输入任何GitHub仓库地址，DeepWiki自动抽取出项目架构、模块关系、API 说明、依赖图等内容，生成可浏览、可对话的在线文档。
+
+# 数据流并行
+
+数据流并行是Pipeline并行的高阶版本。广义的数据流希望通过图编译找到全局最优策略，本质上是一种把编译器当万金油的惰性做法，深度学习框架在系统调度这种比较粗放的尺度，围绕数据流做了这么多年的自动并行化，最后业界主流实际上的并行策略还是预设的这些Pipeline、Tensor并行的组合，而不是编译器搜出来的自动化的并行策略。
+
 # 并行 & 框架 & 优化参考资源
 
 https://mp.weixin.qq.com/s/_1Yr_BbFhlNEW7UtYvAaoA
@@ -294,75 +332,3 @@ https://mp.weixin.qq.com/s/XjNPaL6PC9LHX1PEGn5UZg
 https://mp.weixin.qq.com/s/OkqUulFYHQSdgAbf9Fi9LA
 
 CoCoA：大规模机器学习的分布式优化通用框架
-
-https://mp.weixin.qq.com/s/ToIDncp9dS_qk47PsdZm5A
-
-杜克大学：分布式深度学习训练算法TernGrad
-
-https://mp.weixin.qq.com/s/rhtrN2qDspGkpJYDAVSX7w
-
-UC Berkeley展示全新并行处理方法
-
-https://mp.weixin.qq.com/s/ASqpPSIgW_bcFPBfRYz7Xg
-
-哈佛大学提出在云、边缘与终端设备上的分布式深度神经网络DDNN
-
-http://blog.sina.com.cn/s/blog_81f72ca70101kuk9.html
-
-《Large Scale Distributed Deep Networks》中译文
-
-https://zhuanlan.zhihu.com/p/26552293
-
-Dataflow架构和神经网络加速器
-
-https://zhuanlan.zhihu.com/p/28445511
-
-浅析深度学习框架设计中的关键技术
-
-https://mp.weixin.qq.com/s/wu32LBwrkkBIANMdknHlCA
-
-C++并行实战，592页pdf，C++ Concurrency in Action
-
-https://zhuanlan.zhihu.com/p/79385727
-
-有限元并行计算简介
-
-https://mp.weixin.qq.com/s/heVQ9AIZKxTiCNiAtYKaag
-
-新加坡国立大学最新“大规模深度学习优化”综述论文，带你全面了解最新深度学习准确率和效率的优化方法
-
-https://mp.weixin.qq.com/s/B4aQp_0YvS0jyUHNLQ5rRA
-
-IBM发布新型分布式深度学习系统：结合软硬件实现当前最优性能
-
-http://engineering.skymind.io/distributed-deep-learning-part-1-an-introduction-to-distributed-training-of-neural-networks
-
-神经网络的分布式训练
-
-https://mp.weixin.qq.com/s/nvuflLfOolidDDXJVe2DZA
-
-美团深度学习系统的工程实践
-
-https://mp.weixin.qq.com/s/IE6blClvhYlq3-QAGHo5ww
-
-TensorFlow分布式计算机制解读：以数据并行为重
-
-https://mp.weixin.qq.com/s/4Ii3um3jqfm5yKKxZAFdmA
-
-继1小时训练ImageNet之后，大批量训练扩展到了3万2千个样本
-
-https://mp.weixin.qq.com/s/aNX_8UDYI_0u-MwMTYeqdQ
-
-开发易、通用难，深度学习框架何时才能飞入寻常百姓家？
-
-https://mp.weixin.qq.com/s/UbAHB-uEIvqYZCB7xIAJTg
-
-机器学习新框架Propel：使用JavaScript做可微分编程
-
-https://mp.weixin.qq.com/s/Ctl65r4iZNEOBxiiX2I2eQ
-
-Momenta王晋玮：让深度学习更高效运行的两个视角
-
-https://zhuanlan.zhihu.com/p/371499074
-
-OneFlow——让每一位算法工程师都有能力训练GPT

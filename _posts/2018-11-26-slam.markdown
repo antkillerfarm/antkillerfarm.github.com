@@ -416,3 +416,11 @@ https://www.zhihu.com/question/325242594
 https://mp.weixin.qq.com/s/tQP6CoROi6pqpr9xLyoMVg
 
 VIO初始化探究：一种旋转平移解耦的高效鲁棒初始化方法
+
+## VLM/VLN/VLA
+
+VLM（Vision-Language Model）仅做跨模态“理解”或“生成”：输入图像/视频+文本，输出文本（描述、问答、检索分数等）。
+
+VLN（Vision-Language Navigation）在 VLM 之上加“导航”任务：输入一句自然语言指令与当前视觉帧，输出离散或连续动作，直到到达语言描述的目标点。
+
+VLA（Vision-Language Action）进一步把“导航”泛化为“任意物理动作”：输出低层连续控制信号（关节力矩、车轮转角、油门刹车等），完成抓取、驾驶、开关抽屉等操作。

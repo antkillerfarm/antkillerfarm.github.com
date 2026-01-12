@@ -85,9 +85,28 @@ https://mp.weixin.qq.com/s/HZUDg8-39pF4E4wB1ZemOw
 
 >Corrado Gini，1884～1965，意大利统计学家。意大利统计学会主席。政治方面支持法西斯统治，但反对排犹。
 
-Lorenz curve将右下方分为了A和B两部分，Gini据此提出了Gini coefficient：$$G=A/(A+B）$$。
+Lorenz curve将右下方分为了A和B两部分，Gini据此提出了Gini coefficient：$$G=A/(A+B)$$。
 
 显然，如果采用等（横轴）间距采样的话，Gini coefficient就等于上节提到的Gini(D)了。
+
+## 人均GDP和中位数GDP
+
+仅凭“人均GDP”和“基尼系数”这两个数字，是无法唯一确定中位数GDP的：
+
+- 基尼系数只与洛伦兹曲线的整体形状有关，而洛伦兹曲线无法唯一反推原始分布。
+- 中位数则取决于分布函数在50%处的取值$$F^{-1}(0.5)$$。
+- 同一个基尼值可以对应无数条不同的洛伦兹曲线，它们在50%人口处的收入高度可以任意变化，只要整体“面积”不变即可。
+
+好在GDP一般满足对数正态分布，而确定的分布曲线具有唯一的洛伦兹曲线。
+
+因此对数正态分布条件下的人均GDP和中位数GDP的换算公式为：
+
+$$
+\zeta = \sqrt{2}\; \Phi^{-1}\!\left(\frac{1+G}{2}\right),
+\quad
+m = \mu \cdot \exp\!\left(-\frac{\zeta^2}{2}\right)$$
+
+这里的$$\Phi^{-1}$$是标准正态分位函数，$$\mu$$是均值，G是Gini，m是中位数。
 
 ## GBDT
 

@@ -112,6 +112,29 @@ https://blog.csdn.net/wangbowj123/article/details/101173269
 
 ---
 
+pipeline并行的一个compiler技巧是：
+
+- 根据pipeline的深度，部分展开循环体，展开的深度=pipeline的深度。
+- 设置好不同迭代间的变量依赖关系。
+- 优化展开后的循环体。
+
+```cpp
+// origin
+for(i = 0; i < N; i++) {
+    do_sth(i);
+}
+
+// part loop unroll
+for(i = 0; i < N / depth; i++) {
+    do_sth(i * depth);
+    do_sth(i * depth + 1);
+    ...
+    do_sth(i * depth + (depth - 1));
+}
+```
+
+---
+
 线性变换（linear transformation）：$$y=Ax$$
 
 仿射变换（affine transformation）：$$y=Ax+b$$

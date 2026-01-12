@@ -177,6 +177,14 @@ https://www.zhihu.com/question/1949040585416636414
 
 如何看待英伟达最新发布的Rubin CPX及相应的上下文理解/生成分离设计?
 
+## AF分离
+
+AF分离架构将Attention层和Expert层物理拆分，部署在不同的GPU集群上。Attention Cluster专注于维护KV Cache和计算Attention，Expert Cluster则专注于存储专家权重和计算FFN。
+
+AF分离引入了高频的跨节点通信，每一层的Attention输出都需要发送给Expert集群，Expert计算完后再发回。这种通信模式是M-to-N的，且数据包极小、频率极高。最大的问题变成了，每一层都要在 Attention机器和Expert机器之间来回倒腾Token。
+
+代表性的工作比如Janus， 设计了Adaptive Two-Phase Communication，先在Attention节点内部，利用超高带宽的NVLink，把发往同一个Expert机器的Token聚合起来，打成一个大包。再通过InfiniBand网络，把大包发给Expert节点。Attention和Expert分离了，调度器就可以在Expert集群中动态选择负载最低的Expert Replica来处理请求，实现了微秒级的负载均衡。
+
 ## vLLM
 
 https://docs.vllm.ai/en/latest/
@@ -220,11 +228,3 @@ RAG路线图： Reliable, Adaptable, and Attributable Language Models with Retri
 Pooling models是一类把可变长度序列“压缩”成固定长度向量的模型，也常被称为sentence embedding模型。
 
 它们的核心动作就是pooling：先把输入文本用Transformer编码成一系列token向量，然后对这些向量做一次pool操作，得到一个整体表征（embedding），用来做下游的检索、聚类、分类、重排等任务，是RAG、向量数据库、语义搜索的基石。
-
----
-
-假设有一个10w的外部数据，我们的原始输入Prompt长度为100，长度限制为4k，通过查询-检索的方式，我们能将最有效的信息提取集中在这4k的长度中，与Prompt一起送给大模型，从而让大模型得到更多的信息。此外，还能通过多轮对话的方式不断提纯外部数据，达到在有限的输入长度限制下，传达更多的信息给大模型。
-
-https://blog.csdn.net/qq_40491305/article/details/130898052
-
-一文看懂LlamaIndex用法，为LLMs学习私有知识
