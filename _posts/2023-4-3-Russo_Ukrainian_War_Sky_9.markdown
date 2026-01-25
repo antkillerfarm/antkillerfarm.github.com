@@ -35,6 +35,8 @@ https://zhuanlan.zhihu.com/p/647857481
 
 ![](/images/img6/the-russian-navy-to-the-bottom-souvenir-sheet.jpg)
 
+在公开投票中，乌克兰艺术家Boris Grah的设计乌克兰士兵站在海滩上，并将中指给予通过的俄罗斯军舰（莫斯科号巡洋舰）被选中作为邮票图案。
+
 2024年，喀麦隆发行了银币，纪念乌克兰战争爆发两周年。
 
 https://zhuanlan.zhihu.com/p/524856209

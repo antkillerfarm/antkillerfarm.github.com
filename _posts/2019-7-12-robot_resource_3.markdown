@@ -365,7 +365,7 @@ autoware提供的模拟器。
 
 https://gitlab.com/autowarefoundation/autoware.ai
 
-# 中东=
+# 中东+
 
 A：伊朗部分老百姓愚昧，低认知。
 

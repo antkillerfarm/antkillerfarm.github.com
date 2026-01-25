@@ -140,6 +140,10 @@ https://www.zhihu.com/question/28299178
 - 冈萨雷斯的得票率，完美对应44.20000%。
 - 其他候选人的得票率，完美对应4.60000%。
 
+https://zhuanlan.zhihu.com/p/1998493855050380763
+
+“生擒马杜罗”行动的开源重现
+
 ---
 
 https://mp.weixin.qq.com/s/TSGqmKKrWsMGT9BeIhoLBw
