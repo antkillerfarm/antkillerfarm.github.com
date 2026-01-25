@@ -49,6 +49,14 @@ https://github.com/laekov/fastmoe
 
 ---
 
+目前的LLM（特别是 MoE）通过“条件计算”（Conditional Computation）来扩展容量，但实际上模型是在用昂贵的神经网络计算去“模拟”知识检索过程。而Engram引入了一个独立的、低成本的“条件记忆”模块，让模型拥有了原生的、O(1)复杂度的查表能力（Lookup）。
+
+https://www.zhihu.com/question/1994233409871050526
+
+如何评价DeepSeek发布梁文锋署名论文，提出“条件记忆”及Engram记忆检索架构？有哪些亮点？
+
+---
+
 https://mp.weixin.qq.com/s/XQSEg2_8_1lFqWdHVG6TVA
 
 Switch Transformer: 高效稀疏的万亿参数Transformer

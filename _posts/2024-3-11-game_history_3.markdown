@@ -263,6 +263,10 @@ https://fitgirl-repacks.site/
 
 一个俄罗斯妹子办的游戏资源站
 
+https://www.jidiyouxi.com/
+
+国内版的fitgirl
+
 https://www.zhihu.com/question/557628789
 
 如何评价游戏《白日升》（Rise of the White Sun）？

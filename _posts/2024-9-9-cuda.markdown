@@ -269,3 +269,7 @@ https://zhuanlan.zhihu.com/p/266633373
 https://www.zhihu.com/question/35361192
 
 CUDA为什么要分线程块和线程网格？
+
+https://www.zhihu.com/question/652642080
+
+CUDA如何调度kernel到指定的SM？

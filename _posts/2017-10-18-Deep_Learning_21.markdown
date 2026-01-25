@@ -7,6 +7,34 @@ category: DL
 * toc
 {:toc}
 
+# Ultra Deep Network
+
+## mHC（续）
+
+超连接（Hyper-Connections）采取了不同的方法。它不再是单一流，而是扩展到n条并行流，并带有可学习的混合矩阵：
+
+$$x_{l+1} = H^{res}_l x_l + H^{post,T}_l F(H^{pre}_l x_l, W_l)$$
+
+![](/images/img6/mHC.gif)
+
+但问题是什么？那些混合矩阵是不受约束的。它们不仅能路由信号，还能放大信号。
+
+DeepSeek的修复方案很干净：使用Sinkhorn-Knopp算法将混合矩阵约束为双重随机（doubly stochastic）矩阵。
+
+一个双重随机矩阵具有以下特性：
+
+- 所有条目非负。
+- 行之和为1。
+- 列之和为1。
+
+https://taylorkolasinski.com/notes/mhc-reproduction/
+
+DeepSeek's mHC: When Residual Connections Explode
+
+https://taylorkolasinski.com/notes/mhc-reproduction-part2/
+
+10,924x: The Instability Bomb at 1.7B Scale
+
 # 图像超分辨率
 
 ![](/images/img2/Super_Resolution.png)

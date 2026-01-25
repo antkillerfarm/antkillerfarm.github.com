@@ -57,6 +57,20 @@ https://zhuanlan.zhihu.com/p/1895177200665350365
 
 ---
 
+2026.1
+
+最近组内开始尝试应用本地AI agent辅助编程。
+
+方案主要是Continue.dev和Cline。
+
+如果要本地部署LLM，两者都可以和Ollama框架配合使用。
+
+https://blog.csdn.net/Hank_dev/article/details/147261418
+
+AI assistant本地部署Continue.dev + Ollama + MCP Server
+
+---
+
 https://github.com/OthmanAdi/planning-with-files
 
 Manus原理
@@ -64,6 +78,18 @@ Manus原理
 https://zhuanlan.zhihu.com/p/1993358891099111451
 
 Manus核心Context技术被人做成了Skills
+
+https://www.zhihu.com/question/1991902608064005627
+
+陈天桥代季峰团队实现30B参数跑出1T性能，这对大模型发展意味着什么？
+
+https://zhuanlan.zhihu.com/p/1994124775983970078
+
+垂直领域Agent落地：为什么我放弃235B/671B，转而训练8B（一）
+
+https://zhuanlan.zhihu.com/p/1994409280238012063
+
+垂直领域Agent落地：为什么我放弃235B/671B，转而训练8B（二）
 
 # LLM实战
 

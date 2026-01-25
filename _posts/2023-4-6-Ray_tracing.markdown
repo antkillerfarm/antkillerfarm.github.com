@@ -157,6 +157,10 @@ https://zhuanlan.zhihu.com/p/689964338
 
 世界上最伟大的shader
 
+https://zhuanlan.zhihu.com/p/1995566385527559205
+
+我在《逆水寒》做毛绒大衣：Shell 绒毛渲染“从能用到好用”的实战经验公开！
+
 # 数字成像
 
 https://mp.weixin.qq.com/s/cxsdBLnguAFJcFP65_cC0A
