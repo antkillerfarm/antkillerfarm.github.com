@@ -183,6 +183,14 @@ x = DispatchTensor([1, 2, 3])
 y = torch.add(x, 1)  # Will print the dispatched operation
 ```
 
+---
+
+Kernel Register：
+
+aten/src/ATen/core/op_registration/op_registration.h
+
+---
+
 https://pytorch.org/tutorials/advanced/extend_dispatcher.html
 
 Extending dispatcher for a new backend in C++

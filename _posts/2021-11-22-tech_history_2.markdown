@@ -167,6 +167,30 @@ https://blog.ismisv.com/
 
 # CUDA+
 
+https://mp.weixin.qq.com/s/nAwxtOUi6HpIjVOREgEfaA
+
+CUDA编程入门极简教程
+
+https://mp.weixin.qq.com/s/-zdIWkuRZXhsLJmOZljOBw
+
+《基于GPU-多核-集群等并行化编程》
+
+https://mp.weixin.qq.com/s/bCb5VsH58JII886lpg9lvg
+
+如何在CUDA中为Transformer编写一个PyTorch自定义层
+
+https://mp.weixin.qq.com/s/OYSzol-vufiKPuU9YxtbuA
+
+矩阵相乘在GPU上的终极优化：深度解析Maxas汇编器工作原理
+
+https://zhuanlan.zhihu.com/p/358220419
+
+PyTorch自定义CUDA算子教程与运行时间分析
+
+https://zhuanlan.zhihu.com/p/358778742
+
+详解PyTorch编译并调用自定义CUDA算子的三种方式
+
 https://zhuanlan.zhihu.com/p/360441891
 
 熬了几个通宵，我写了份CUDA新手入门代码

@@ -295,6 +295,26 @@ https://mp.weixin.qq.com/s/QZWBPgpro9RAsczOh-qQnQ
 
 # Linux学习心得=
 
+https://mp.weixin.qq.com/s/qwouMWc4CFtqG_jra4xbIg
+
+IDT及中断处理的实现
+
+https://mp.weixin.qq.com/s/pRsXWAv7wgYcN_jlzcA2YA
+
+内存都没了，还能运行程序？
+
+https://mp.weixin.qq.com/s/snQ3T86usv4rXz0MMQvFfQ
+
+如何回答性能优化的问题，才能打动阿里面试官？
+
+https://www.cnblogs.com/zhouyu629/p/3734494.html
+
+一次心惊肉跳的服务器误删文件的恢复过程
+
+https://mp.weixin.qq.com/s/IcEP-JGQbWA7s7yPdIC9vA
+
+80%时间屏蔽了中断，实时性还有救么？
+
 https://mp.weixin.qq.com/s/ejGjsGA1ijPP--j3BLcEFA
 
 Linux并发与同步

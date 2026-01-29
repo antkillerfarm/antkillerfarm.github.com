@@ -229,6 +229,18 @@ https://www.linuxfromscratch.org/
 
 ---
 
+现代Linux提供了基础设施可以让你用一个CPU核心来跑实时任务，这个核心不会受到Linux调度器的干扰，不会丢失时间片。哪怕这个Linux发行版并不是实时优化过的。
+
+可以在U-boot中指定保留CPU3不参与正常Linux的运行：
+
+`isolcpus=3 nohz_full=3 rcu_nocbs=3`
+
+https://www.zhihu.com/question/31811422
+
+四轴飞行器的飞控可以用linux系统的一个程序实现而不是整个板子就烧一个飞控程序吗？
+
+---
+
 https://mp.weixin.qq.com/s/I7C7cXFgxO7RO0Wpjjj3xQ
 
 一篇文章带你“重新认识”线程上下文切换怎么玩儿
@@ -368,23 +380,3 @@ https://mp.weixin.qq.com/s/Q9BOA88Q6OBaDch1AiS9QA
 https://mp.weixin.qq.com/s/6R8UcLLjm9gdWud-eNHztw
 
 中断及其初始化
-
-https://mp.weixin.qq.com/s/qwouMWc4CFtqG_jra4xbIg
-
-IDT及中断处理的实现
-
-https://mp.weixin.qq.com/s/pRsXWAv7wgYcN_jlzcA2YA
-
-内存都没了，还能运行程序？
-
-https://mp.weixin.qq.com/s/snQ3T86usv4rXz0MMQvFfQ
-
-如何回答性能优化的问题，才能打动阿里面试官？
-
-https://www.cnblogs.com/zhouyu629/p/3734494.html
-
-一次心惊肉跳的服务器误删文件的恢复过程
-
-https://mp.weixin.qq.com/s/IcEP-JGQbWA7s7yPdIC9vA
-
-80%时间屏蔽了中断，实时性还有救么？
