@@ -175,6 +175,12 @@ https://mp.weixin.qq.com/s/yxNIw8WDkJZ782HSDyfniw
 
 深度解析文本检测网络CTPN
 
+## DeepSeek-OCR
+
+https://www.zhihu.com/question/1999468225642119587
+
+如何评价DeepSeek-OCR-2模型？
+
 ## 参考
 
 https://mp.weixin.qq.com/s/h7HVyGbmtLmNVJp4p0rCRQ

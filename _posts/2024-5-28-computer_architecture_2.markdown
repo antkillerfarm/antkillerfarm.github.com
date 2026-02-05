@@ -143,6 +143,10 @@ https://www.zhihu.com/question/641481229
 
 怎么理解英特尔15代大核取消超线程?
 
+https://www.zhihu.com/question/695613109
+
+为什么英特尔的下一代处理器取消了超线程？
+
 ## 加长流水线 vs 加宽流水线
 
 奔腾四（P4）处理器所使用的核心有三个发展阶段：威廉核心（Willamette）、北木核心（northwoog）、波塞冬核心（Prescott）

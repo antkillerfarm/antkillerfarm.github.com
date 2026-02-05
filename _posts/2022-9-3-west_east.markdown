@@ -211,30 +211,10 @@ https://mp.weixin.qq.com/s/fGsdDiOOHhXeUMZg4zj8pA
 
 ---
 
-https://mp.weixin.qq.com/s/X0rFmiGFL0A_WY72Fy-Ebg
+王星拱受蔡元培委派，1928年7月作为筹委会委员来汉，负责选址珞珈山、征地、设计新校舍，先后任理工学院院长、理学院院长、副校长、教务长等职，实际主持校务。1933年5月代理校长，1934年6月正式任命为国立武汉大学校长。
 
-这个偏僻的小山村竟出了12位博士28位硕士，高产“学霸”背后原因曝光......
+1938年2月21日，第322次校务会议决定西迁，校长王星拱提出六条择址标准，最终选定“地处川南、水陆便利、校舍可寻、相对安全”的乐山县（古称嘉定）。
 
-https://mp.weixin.qq.com/s/Bu0kSL84XdZwcaidsWQrwQ
+1938年3月10日起，师生千余人分陆路、水路出发，经宜昌、重庆，溯长江、转岷江，4月初陆续抵乐山；图书仪器亦提前抢运，成为同期高校中“受损最小”的一次大迁徙。
 
-他是新中国第一位博士（马中骐）
-
-https://mp.weixin.qq.com/s/0VCmgUSdR_NLqMz1q9IxXA
-
-清华北大算个啥，进这些班级才算牛！姚班，智班，图灵班你知多少？
-
-https://mp.weixin.qq.com/s/X0qCDTc9brd7qky38hT55g
-
-一张图看懂中科大、国科大、中科院、社科院、上科大之间的关系
-
-https://mp.weixin.qq.com/s/57YtRUOxB0BShJSvDbNgzg
-
-一张30年前的大学排行榜！
-
-https://mp.weixin.qq.com/s/kLNY1CWqSgt_VyC7SQZRlw
-
-42所双一流大学校长情况简介（2019年）
-
-https://www.zhihu.com/question/654810677
-
-如何看待河南大学大礼堂火灾？
+乐山八年，学校以“National Wuhan University”署名在Nature、Science发表论文4篇；英国学者李约瑟誉为“学术水平堪与西南联大相埒”。

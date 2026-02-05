@@ -279,3 +279,7 @@ Fisher–Yates shuffle洗牌算法
 https://zhuanlan.zhihu.com/p/717126119
 
 一个让人惊艳的算法——CORDIC算法介绍
+
+https://www.zhihu.com/question/52968810
+
+有哪些复杂度为O(1)的神奇算法？
