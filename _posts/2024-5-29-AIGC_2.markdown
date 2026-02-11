@@ -57,6 +57,10 @@ https://zhuanlan.zhihu.com/p/615310965
 
 Stable Diffusion原理介绍与源码分析（二、DDPM、DDIM、PLMS）
 
+https://www.zhihu.com/question/2002852610374391417
+
+如何评价Kaiming He新作《Generative Modeling via Drifting》？
+
 ## Diffusion Transformer(DiT)
 
 DiT使用Transformer替换了U-Net架构，算是2023年度Diffusion Model的一大改进。

@@ -369,18 +369,6 @@ https://mp.weixin.qq.com/s/s6gsVRA7CZuc5IQ9Oxq-Vw
 
 评分卡模型的评估方法论
 
-https://mp.weixin.qq.com/s/Sjs-iKtDy5IZfKknQ7Clwg
-
-随机过程、布朗噪声与股票价格模型
-
-https://www.zhihu.com/question/263851691
-
-如何评价quantOS开源量化平台？
-
-https://zhuanlan.zhihu.com/p/122183963
-
-入门量化回测最强神器backtrader（一）
-
 ## 金融模型
 
 ![](/images/img3/Quant.jpg)

@@ -182,3 +182,7 @@ https://zhuanlan.zhihu.com/p/712410460
 https://zhuanlan.zhihu.com/p/8706248173
 
 欧洲能在没有美国支持的情况下武装乌克兰部队吗？欧洲储存基地分析
+
+https://zhuanlan.zhihu.com/p/2003198319715959696
+
+弹药短缺与合同荒：乌克兰的155毫米弹药生产情况如何？
