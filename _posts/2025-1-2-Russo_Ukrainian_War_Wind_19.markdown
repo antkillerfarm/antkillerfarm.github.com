@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争：疾风篇（十九）——凡人列传（7）
+title:  俄乌战争：疾风篇（十九）——凡人列传（6）
 category: Russo Ukrainian War Wind
 ---
 
@@ -286,9 +286,3 @@ No one but ourselves can guarantee security.
 When you attack us, you will see our faces, not our backs.
 
 Without gas or without you? – The answer is without you. Without electricity or without you? – Without you. Without water or without you? – Without you. Without food or without you? – Without you.
-
-他们告诉你我们是纳粹。但一个牺牲了超过八百万条生命来消灭纳粹的民族怎么能被称为纳粹呢？我的祖父作为苏联步兵活过了整场战争，在一个独立的乌克兰作为上校死去，我怎么会是纳粹呢？
-
-当我竞选总统时，我说我们每个人都是总统。因为我们都对我们的国家负责。为了我们美丽的乌克兰。现在事实证明，我们每个人都是一名战士。战士在他或她自己的地方。我相信我们每个人都会获胜。
-
-我希望能有光，但情况非常困难，现在有时有光，有时没有光。最重要的是（心）里面要有光。

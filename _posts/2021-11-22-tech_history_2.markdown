@@ -251,6 +251,6 @@ https://www.zhihu.com/question/445590537
 
 问个CUDA并行上的小白问题，既然SM只能同时处理一个WARP，那是不是有的SP处于闲置？
 
-https://www.zhihu.com/question/667972067
+https://zhuanlan.zhihu.com/p/2003147245525153066
 
-cuda的swizzle是怎么实现bank conflict free的？
+现代CUDA编程指南

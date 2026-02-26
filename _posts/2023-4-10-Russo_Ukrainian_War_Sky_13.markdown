@@ -185,6 +185,10 @@ https://zhuanlan.zhihu.com/p/684545499
 
 ---
 
+第31旅直接冲过我们的阵地，而在短短4小时的战斗中：就有20多辆MaxxPro装甲车、5辆坦克，几乎全部踩上了我们的地雷——因为某个混蛋懒得来和从2022年夏天就守在那些阵地的营进行协调。
+
+---
+
 ![](/images/img5/Zaporizhia.jpg)
 
 https://www.zhihu.com/question/605592764

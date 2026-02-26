@@ -348,3 +348,11 @@ https://www.zhihu.com/question/1968561378
 https://zhuanlan.zhihu.com/p/1929593678864847592
 
 GPU微结构逆向 (arXiv 2025)：《Analyzing Modern NVIDIA GPU cores》
+
+https://zhuanlan.zhihu.com/p/1985794546739720618
+
+Modern GPU的控制流设计
+
+https://zhuanlan.zhihu.com/p/1935992034864371054
+
+五万字长文，一部GPU/CUDA 发展编年史：全系列GPU硬件架构和CUDA软件模型技术原理

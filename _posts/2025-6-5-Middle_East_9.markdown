@@ -256,3 +256,7 @@ https://zhuanlan.zhihu.com/p/1920340773754376533
 https://www.zhihu.com/answer/1901704044709389889
 
 安卡拉之战（奥斯曼苏丹巴耶济德 vs 土兰苏丹帖木儿）
+
+https://www.zhihu.com/answer/2009300495697724013
+
+伊朗水资源问题

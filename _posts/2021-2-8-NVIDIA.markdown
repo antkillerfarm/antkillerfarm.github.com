@@ -295,3 +295,7 @@ NVIDIA GPGPU（三）新时代
 https://zhuanlan.zhihu.com/p/680262016
 
 NVIDIA GPGPU（四）通信架构
+
+https://zhuanlan.zhihu.com/p/13866293937
+
+聊一聊英伟达GPU的降频问题

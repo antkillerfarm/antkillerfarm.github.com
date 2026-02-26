@@ -139,6 +139,10 @@ https://blog.csdn.net/weixin_40777649/article/details/140379222
 
 nsightcompute进阶
 
+https://zhuanlan.zhihu.com/p/2007511954252653705
+
+TCA51%，MFU不足8%——GPU的隐藏性能损耗
+
 ## Sparse Matrix
 
 从Ampere架构之后，NV引入了Sparse Matrix。它的具体格式如下图所示：
