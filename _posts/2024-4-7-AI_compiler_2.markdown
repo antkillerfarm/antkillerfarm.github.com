@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  AI Compiler（二）——OpenAI Triton
+title:  AI Compiler（二）——Triton
 category: toolchain 
 ---
 
@@ -223,6 +223,14 @@ https://www.zhihu.com/question/1984630179713279606
 
 DSL大战中，谁活了下来？
 
+https://zhuanlan.zhihu.com/p/1993279478114309062
+
+简单triton例子的全部编译过程【trion->ttir->ttgir->llir->ptx->cubin(sass)】
+
+https://www.zhihu.com/question/2008960281838110129
+
+如何看待AMD开源的FlyDSL及当前Python eDSL的现状？
+
 ## NVFuser
 
 NVFuser是NV专门为Pytorch设计的自动化的GPU代码生成器。
@@ -288,17 +296,3 @@ http://www.lift-project.org/
 https://www.zhihu.com/question/313697268
 
 如何评价lift编程语言?
-
-## MegaKernel
-
-在LLM推理中，一个突出的问题是算子调用碎片化导致的性能低效。传统的深度学习推理往往逐层调用内核，每层计算完再进入下一层。这种方式在LLM上会造成大量的GPU kernel launch开销和设备间同步等待，GPU往往处于饥饿或频繁切换状态，不能充分利用算力。
-
-为此，研究者提出了内核融合（Kernel Fusion）在LLM中的极致形态：将整个模型（或大的子图）尽可能融合成单个巨型内核（MegaKernel），一次性完成推理计算。
-
-https://zhuanlan.zhihu.com/p/1943608134460506500
-
-2025年“LLM== 编译器”：Megakernel（vLLM / TensorRT-LLM / TVM-Relax / IREE / StableHLO / MoE / CUDA·Triton）
-
-https://www.zhihu.com/question/1927927257713849225
-
-如何评价CMU将LLM转化为巨型内核的Mirage Persistent Kernel(MPK)工作？

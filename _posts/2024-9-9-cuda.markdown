@@ -272,20 +272,3 @@ RW (Read-Write)：表示读写混合操作。
 
 Generic Addr是一种不携带任何状态或附加信息来声明它属于哪个状态空间的指针。在CUDA C++中，与C++一样，指针就是指针，它们没有额外的装饰或元信息。在PTX或SASS中，CUDA GPU具有状态空间系统，这是一种分区寻址结构。例如，shared就是一个状态空间。
 
-## Warp
-
-一个SP可以执行一个thread，但是实际上并不是所有的thread能够在同一时刻执行。Nvidia把32个threads组成一个warp，warp是调度和运行的基本单元。warp中所有threads并行的执行相同的指令。
-
-![](/images/img6/SIMT.jpg)
-
-https://zhuanlan.zhihu.com/p/266633373
-
-详解CUDA的Context、Stream、Warp、SM、SP、Kernel、Block、Grid
-
-https://www.zhihu.com/question/35361192
-
-CUDA为什么要分线程块和线程网格？
-
-https://www.zhihu.com/question/652642080
-
-CUDA如何调度kernel到指定的SM？

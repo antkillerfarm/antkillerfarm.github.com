@@ -9,7 +9,11 @@ category: AI
 
 # CUDA
 
-## Warp（续）
+## Warp
+
+一个SP可以执行一个thread，但是实际上并不是所有的thread能够在同一时刻执行。Nvidia把32个threads组成一个warp，warp是调度和运行的基本单元。warp中所有threads并行的执行相同的指令。
+
+![](/images/img6/SIMT.jpg)
 
 Warp采用下图的策略来调度thread：
 
@@ -18,6 +22,22 @@ Warp采用下图的策略来调度thread：
 - Stalled：由于指令/数据没有准备好，或者其他原因，导致thread处于等待的状态。
 - Eligible：万事俱备，只待执行。
 - Selected：被选中执行的thread。
+
+https://zhuanlan.zhihu.com/p/266633373
+
+详解CUDA的Context、Stream、Warp、SM、SP、Kernel、Block、Grid
+
+https://www.zhihu.com/question/35361192
+
+CUDA为什么要分线程块和线程网格？
+
+https://www.zhihu.com/question/652642080
+
+CUDA如何调度kernel到指定的SM？
+
+https://zhuanlan.zhihu.com/p/1937580325774526286
+
+GPU硬件调度：从TBS到Warp调度器
 
 ---
 
@@ -167,8 +187,6 @@ http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
 
 ---
 
-"stall"（停滞）是指warp在执行过程中因为各种原因暂时无法继续执行下一步操作，需要等待某个条件满足后才能继续执行的现象。
-
 CTA：Cooperative Thread Array，即协作线程数组。它是由一组线程组成的集合，这些线程可以执行相同的程序，并且能够相互通信。CTA是CUDA中线程组织的基本单元，通常被称为线程块（Thread Block）。
 
 CTA提供了同步点，允许开发者在需要时对CTA内的所有线程进行同步，例如使用__syncthreads()函数。
@@ -301,33 +319,3 @@ RankKeys
 DescendingBlockRadixRank
 BlockRadixRank
 ```
-
----
-
-![](/images/img6/tensile_kernel_parameters_performance_interdependencies.png)
-
-原始地址：
-
-https://github.com/ROCm/Tensile/wiki/Kernel-Parameters
-
----
-
-https://developer.nvidia.com/blog/even-easier-introduction-cuda/
-
-An Even Easier Introduction to CUDA
-
-http://ishare.iask.sina.com.cn/f/17211495.html
-
-深入浅出谈CUDA技术
-
-http://blog.csdn.net/xsc_c/article/category/2186063
-
-某人的并行计算专栏
-
-https://mp.weixin.qq.com/s/9D7uda3CV7volenhl-jchg
-
-推荐几个不错的CUDA入门教程
-
-https://mp.weixin.qq.com/s/bvNnzkOzGYYYewc3G9DOIw
-
-GPU是如何优化运行机器学习算法的？
