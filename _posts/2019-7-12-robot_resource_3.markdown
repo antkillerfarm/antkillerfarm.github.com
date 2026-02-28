@@ -189,26 +189,6 @@ https://mp.weixin.qq.com/s/XJVyoQTDljO8F6GVthsxKw
 
 汽车安全气囊结构原理
 
-## Boston Dynamics
-
-Boston Dynamics算是人形机器人的标杆企业了。它采用了液压驱动的路线。
-
-相比于电机驱动，液压驱动功率更大，环境适应性更好，缺点是非线性系统，控制比较复杂。
-
-参考：
-
-https://mp.weixin.qq.com/s/BNanIQKY9SSNpms0qSTOBA
-
-硬核干货！揭秘波士顿动力背后的专利技术
-
-https://www.zhihu.com/question/437149222
-
-波士顿动力12月29日发布了机器人跳舞的视频，在这个领域我们现在差距有多大？
-
-https://www.zhihu.com/question/347701202
-
-波士顿动力旋转跳跃360°视频火了，那么它的背后是通过什么算法实现的呢？
-
 ## 大疆
 
 https://zhuanlan.zhihu.com/p/59329666
@@ -365,30 +345,76 @@ autoware提供的模拟器。
 
 https://gitlab.com/autowarefoundation/autoware.ai
 
-# 中东+
+# 机器人/无人驾驶参考资源
 
-A：伊朗部分老百姓愚昧，低认知。
+![](/images/img5/auto.jpg)
 
-B：人家不革命说人家愚昧，人家革命了也说人家愚昧。人家要革命说人家愚昧不配革命，人家不革命说人家果然愚昧想不到要革命。
-
----
-
-赛义德（Sayyid）原义为“首领”“先生”“主人”。在伊斯兰兴起前，阿拉伯人用它来称呼部落领袖；进入伊斯兰时期后，这个词转义为“圣裔”，专指阿里与法蒂玛次子侯赛因一系的子孙。
-
-谢里夫（Sharif）原义是“高贵者”“贵人”。后来同样成为圣裔称号，但用于指阿里与法蒂玛长子哈桑一系的后人。
-
-按教史，真正能被称作“赛义德”或“谢里夫”的，应只限于穆罕默德女儿法蒂玛与阿里所生的哈桑、侯赛因两条直系后裔。结果在印巴、中亚、新疆等地，很多人把“赛义德”“谢里夫”直接当名字或姓氏用，以图“沾贵气”。结果同村、同班甚至一家人里能冒出好几个“赛义德”，看上去血统比穆罕默德本人还“纯正”。
-
-网友于是造出“伊斯兰教人均赛义德/谢里夫”，嘲讽这种“集体攀附圣裔”的现象。
-
-河中的和卓和草原上的羊儿一样多。
-
-“河中”：Mā warāʾ al-nahr，大致指阿姆河与锡尔河之间的中亚核心地带（今乌兹别克斯坦、塔吉克斯坦、南疆一带）。
-
-“和卓”（Khwāja）：原意“主人”“圣裔”，在当地专指宣称自己是穆罕默德后裔的苏菲派宗教领袖。
+1967年，英国哲学家菲利帕·福特提出过电车难题：一个疯子把五个无辜的人绑在电车轨道上。一辆失控的电车朝他们驶来，并且片刻后就要碾压到他们。幸运的是，你可以拉一个拉杆，让电车开到另一条轨道上。但是还有一个问题，那个疯子在那另一条轨道上也绑了一个人。考虑以上状况，你应该拉拉杆吗？
 
 ---
 
-古莱什之鹰通常被描绘为展翅的姿态；（象征伊斯兰教先知穆罕默德所属的古莱什部落）
+https://www.zhihu.com/question/404870865
 
-萨拉丁之鹰则多为收翅站立的形象。
+自动驾驶什么时候才会凉凉，估计还要多久？
+
+https://zhuanlan.zhihu.com/p/26988866
+
+机器人学习Robot Learning的发展
+
+https://mp.weixin.qq.com/s/YLhECwwig9f21zk1-PNiTw
+
+25篇车辆检测与分类DL文章读懂自动驾驶
+
+https://mp.weixin.qq.com/s/cqzk7iHD8sJGLnIhkTgN3w
+
+一文读懂全球自动驾驶研究现状
+
+https://zhuanlan.zhihu.com/p/87416772
+
+自动驾驶中深度学习-综述
+
+https://mp.weixin.qq.com/s/W5f08aPQr0omAsJoXnbJIA
+
+最新《深度学习自动驾驶》技术综述论文，28页pdf
+
+https://mp.weixin.qq.com/s/Z6j3YA_WPxRTRWS7-avE6w
+
+自动驾驶汽车的计算机视觉全面综述论文：问题、数据集和现状
+
+https://mp.weixin.qq.com/s/lgqSCAE6wh_L4d6VT12fKA
+
+面向机器人的机器学习，63页ppt
+
+https://mp.weixin.qq.com/s/3lgOxQm07nFpxWauT8b2ow
+
+值得收藏，自动驾驶技术与实例最全解析！
+
+http://mp.weixin.qq.com/s/KcHlWmIdKpjledwWFdNbCw
+
+自动驾驶汽车到底涉及了哪些技术？
+
+https://mp.weixin.qq.com/s/qyZS6ufN6f4dQRdG9diP0A
+
+自动驾驶传感器，感知，地图定位和规划控制发展现状及热点研究
+
+https://mp.weixin.qq.com/s/9Oghiqbuz4sUFisylTEzng
+
+雷洪钧：汽车自动驾驶技术与实例的研究（上）
+
+https://mp.weixin.qq.com/s/7gBl3ckqk7gQJ0FGMmv_jg
+
+雷洪钧：汽车自动驾驶技术与实例的研究（下）
+
+https://mp.weixin.qq.com/s/pPPq3b1yj92RaGgIpTAhqQ
+
+一文看透汽车无人驾驶技术、产品和市场
+
+https://zhuanlan.zhihu.com/p/79391139
+
+MIT Cheetah完整开源代码与论文简介
+
+https://rsu.data61.csiro.au/people/jalvarez/research_bbdd.php
+
+这个网站提供了一系列用于汽车自动驾驶的视频标注的工具。
+
+>Jose M. Alvarez，西班牙巴塞罗那自治大学博士（2010年）。现为澳大利亚CSIRO研究员。CSIRO是澳大利亚最大的国家级科研机构。

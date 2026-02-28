@@ -61,6 +61,10 @@ https://www.zhihu.com/question/2002852610374391417
 
 如何评价Kaiming He新作《Generative Modeling via Drifting》？
 
+https://zhuanlan.zhihu.com/p/1918415337877143861
+
+Diffusion推理加速方案整理
+
 ## Diffusion Transformer(DiT)
 
 DiT使用Transformer替换了U-Net架构，算是2023年度Diffusion Model的一大改进。

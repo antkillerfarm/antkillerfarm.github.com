@@ -1,13 +1,123 @@
 ---
 layout: post
-title:  深度强化学习（十一）——DRL参考资源（2）
+title:  深度强化学习（十一）——DRL参考资源（1）
 category: DRL 
 ---
 
 * toc
 {:toc}
 
+# Model Predictive Control
+
+MPC（Model Predictive Control）+WBC (Whole-Body Control)是典型的做腿足类机器人用的算法。
+
+机械臂+灵巧手+移动小车，一般被称为AMR（Autonomous Mobile Robot）。
+
+教程：
+
+http://cse.lab.imtlucca.it/~bemporad/mpc_course.html
+
+Model Predictive Control
+
+https://www.syscop.de/teaching/ss2021/model-predictive-control-and-reinforcement-learning
+
+Model Predictive Control and Reinforcement Learning
+
+http://web.mit.edu/dimitrib/www/LessonsfromAlphazero.pdf
+
+Lessons from AlphaZero for Optimal, Model Predictive, and Adaptive Control
+
+参考：
+
+https://mp.weixin.qq.com/s/pMnbVWDDVgIdFpzkfSUd5Q
+
+时延MPC自主车辆协同控制算法与仿真
+
+https://mp.weixin.qq.com/s/UAPbNq_KNWCFd7p8U8HnYQ
+
+模型预测控制（MPC）
+
+https://zhuanlan.zhihu.com/p/99409532
+
+模型预测控制简介（model predictive control）
+
+https://zhuanlan.zhihu.com/p/507623074
+
+Model Based + MPC + Planning + RL相关
+
+https://mp.weixin.qq.com/s/BFNaEBa8KwvRBK_mSunXjw
+
+MPC与LQR比较
+
+https://www.zhihu.com/question/424186342
+
+模型预测控制（MPC）和基于模型的强化学习（Model-based RL）之间的联系是什么？
+
 # DRL参考资源
+
+https://mp.weixin.qq.com/s/ruAAQEjPIDPWPiuPepKU6Q
+
+Deep Reinforcement Learning: An Overview
+
+https://mp.weixin.qq.com/s/FjmlXqlpaRVLdAbjqspOJA
+
+这是一份你必须学习的强化学习算法清单
+
+https://mp.weixin.qq.com/s/GISY-FvV1Vml3CNLInjgYg
+
+Tensorflow2.0实现29种深度强化学习算法大汇总
+
+https://mp.weixin.qq.com/s/lfXQqllfFPtuNIrQZiD-NQ
+
+深度强化学习十大原则
+
+https://mp.weixin.qq.com/s/I8IwPCY6-zocJKFXMr6rUg
+
+深度强化学习的18个关键问题
+
+https://mp.weixin.qq.com/s/_lmz0l1vP_CQ6p6DdFnHWA
+
+谷歌大脑工程师的深度强化学习劝退文
+
+https://zhuanlan.zhihu.com/p/39999667
+
+强化学习路在何方？
+
+https://zhuanlan.zhihu.com/p/25239682
+
+深度强化学习（Deep Reinforcement Learning）入门
+
+https://mp.weixin.qq.com/s/Ns5AUGfDoTeTwnBD-pYdLA
+
+详解强化学习当前进展及未来方向
+
+https://mp.weixin.qq.com/s/VIMX63zBaZ5ji70UmHHajg
+
+强化学习入门知识超全梳理
+
+https://mp.weixin.qq.com/s/e6QOz-MQSn7n53EPtpw64w
+
+DeepMind强化学习综述：她可以很快，但快从慢中来
+
+https://zhuanlan.zhihu.com/p/72642285
+
+基于模型的强化学习论文合集
+
+https://zhuanlan.zhihu.com/p/77976582
+
+强化学习并行训练论文合集
+
+https://mp.weixin.qq.com/s/sHP03DAeZvdBxwVPuSNRPg
+
+如何丝滑地入门神经网络？写个AI赛车游戏，只训练4代就能安全驾驶
+
+https://mp.weixin.qq.com/s/1SZKhG1ZbD1pl-3YQD_umg
+
+6行代码搞定基本的RL算法，速度围观Reddit高赞帖
+
+https://mp.weixin.qq.com/s/6n5HawyR4AgH8Dq0gJMw2g
+
+强化学习的基本概念与代码实现
 
 https://mp.weixin.qq.com/s/AI3i3ZLZ-fynavbeNAMKgA
 
@@ -260,99 +370,3 @@ https://mp.weixin.qq.com/s/HBqX6pz4EzO70YpmQ8xtRw
 https://mp.weixin.qq.com/s/teBlXXw4JQ8k3olCDOKXyw
 
 量化金融自动交易的深度强化学习库。哥大开源“FinRL”
-
-https://mp.weixin.qq.com/s/8UX65PGZkRokguLTnoGVFA
-
-强化学习组合优化综述论文
-
-https://mp.weixin.qq.com/s/Cfim24MSmClvo2HjW7thTw
-
-最强原创综述！当强化学习邂逅组合优化
-
-https://mp.weixin.qq.com/s/nNTag_D_qN7WcE7DEMJFaA
-
-横扫6个SOTA，吊打强化学习！谷歌最强行为克隆算法登CoRL顶会，机器人干活10倍速
-
-https://mp.weixin.qq.com/s/0AM4eASolsPZ7GtPYVBqDQ
-
-伯克利今年大热的DeepMimic开源了~
-
-https://zhuanlan.zhihu.com/p/35567591
-
-强化学习在关系抽取、QA场景的应用
-
-https://mp.weixin.qq.com/s/zWo2iSiJBEBwnFF478xxfQ
-
-DeepMind：探索人类行为中的强化学习机制
-
-https://mp.weixin.qq.com/s/oOslkEklaZSbRb8eDDCRBw
-
-天津大学、东京大学等研究：用深度强化学习检测模型缺陷
-
-https://mp.weixin.qq.com/s/DNT9rMynbN4Th0AVDHeY_w
-
-BAIR提出人机合作新范式：教你如何高效安全地在月球着陆
-
-https://mp.weixin.qq.com/s/KqLCTSYk1C0wYpJw-hpc1g
-
-论强化学习和概率推断的等价性：一种全新概率模型
-
-https://mp.weixin.qq.com/s/zRXs3BCEqXUruw746rZusw
-
-牛津大学联合7家单位发布AutoRL综述，还在手动调参吗？你已经落后了
-
-https://mp.weixin.qq.com/s/wPWV6kxkRlYb9dMf6ADWkQ
-
-史上首次，强化学习算法控制核聚变登上Nature：DeepMind让人造太阳向前一大步
-
-https://mp.weixin.qq.com/s/U0K79ELLj4wsOR4sd5G4Vw
-
-Vicarious详解新型图式网络：赋予强化学习泛化能力
-
-https://mp.weixin.qq.com/s/C8hsGkHGtoaS9Vzm6Ub4tw
-
-Berkeley提出“随机搜索”训练线性策略，提高RL的性能
-
-https://mp.weixin.qq.com/s/uppNSwxNrw4_8NGBQv85xw
-
-今日头条首次改进DQN网络，解决推荐中的在线广告投放问题
-
-https://mp.weixin.qq.com/s/JtUuFdTK4Q5YwnVj3BFU2w
-
-全参数化分布，提升强化学习中的收益分布拟合能力
-
-https://mp.weixin.qq.com/s/amXiNKJPEkAnu2m5NAERVw
-
-Top-K Off-Policy Correction
-
-https://mp.weixin.qq.com/s/kNtzy9-6GbsRhlL-mxksew
-
-基于强化学习的人机对话
-
-https://mp.weixin.qq.com/s/w3SsadgKaL8-tlzYLvMm-A
-
-讲真？一天就学会了自动驾驶——强化学习在自动驾驶的应用
-
-https://mp.weixin.qq.com/s/nnWuIPk_6mI9IAKIUbx6KQ
-
-深度强化学习解决交通控制问题
-
-https://mp.weixin.qq.com/s/RNJonPJL9JY5OH2-1sZMQw
-
-中山大学HCP实验室：基于树状结构策略的渐进强化学习
-
-https://mp.weixin.qq.com/s/G2sFkuvSeYmhkFjjPRGI-Q
-
-强化学习如何用于推荐？新南威尔士首篇《深度强化学习推荐系统》综述论文
-
-https://mp.weixin.qq.com/s/fMjjGCzef-3SVIOlUf2EFA
-
-强化学习如何用于推荐？厦大最新《强化学习推荐系统》综述论文
-
-https://mp.weixin.qq.com/s/8cV3Z_vkC0_cyfO2nVKoSw
-
-华人博士用强化学习回收了SpaceX火箭
-
-https://mp.weixin.qq.com/s/_-WSoeOqXMhR7S0PtyYixQ
-
-深度强化学习探索算法最新综述，近200篇文献揭示挑战和未来方向

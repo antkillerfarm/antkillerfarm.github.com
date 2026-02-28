@@ -83,8 +83,6 @@ SIMT最早是Nvidia发明的概念，它也是一种编程模型。
 
 SIMD的编程模型除了SIMT之外，还有subword SIMD、vector SIMD、vector-thread (VT)等。
 
-SMT（Simultaneously multithreading），指多个thread中并行运行不同的指令。
-
 详见论文：
 
 《Simplified Vector-Thread Architectures for Flexible and Efficient Data-Parallel Accelerators》
@@ -111,6 +109,8 @@ SIMT相比SIMD在可编程性上最根本性的优势在于硬件解决了大部
 
 当然，这也是有代价的，GPU上要放置大量sram来保存线程上下文，避免为了掩盖ddr延迟进行上下文切换又引入新的ddr访问。因此在GPU上register file的规模往往和L2差不多量级。
 
+CPU的线程大部分都是不相关线程，GPU最适合的还是处理大连相关线程，如果线程不相关，那SIMT还是无法很好的工作。
+
 https://zhuanlan.zhihu.com/p/562135333
 
 SIMT、SIMD和DSA（1）
@@ -118,6 +118,10 @@ SIMT、SIMD和DSA（1）
 https://zhuanlan.zhihu.com/p/564623647
 
 SIMT、SIMD和DSA（2）
+
+https://zhuanlan.zhihu.com/p/78925147312
+
+SIMD < SIMT < SMT
 
 ## RISC vs. CISC
 

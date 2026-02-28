@@ -1,0 +1,214 @@
+---
+layout: post
+title: 芯片（二）——芯片制造
+category: Chip 
+---
+
+* toc
+{:toc}
+
+# 芯片行业（续）
+
+那时行政院成立“台积电”与“联电”，分别交给张忠谋与曹兴诚。这两位在工研院就闹得不可开交，只好开两家公司给他们管。
+
+台积电是很敢给工程师，联电是很敢给股东。后来就是优秀的工程师都往台积电跑，联电股票涨完几波，就后继无力。
+
+---
+
+https://xueqiu.com/4081695675/165884010
+
+梁梦松离职的四个点评
+
+https://mp.weixin.qq.com/s/p2f59OngEOKFuELHEIl-hw
+
+科普：芯片行业所说的IP是个什么东西？
+
+---
+
+![](/images/img4/xeon-scalable-processor-numbers.png)
+
+---
+
+![](/images/img5/EDA.jpg)
+
+Synopsys、Cadence、Siemens EDA（原Mentor）三大巨头垄断了全球EDA行业接近70%左右的市场份额。
+
+---
+
+项目管理中项目进度: WS=>ES=>CS=>MP
+
+WS：Working Sample
+
+ES：Engineering Sample
+
+CS：Commercial Sample
+
+MP：mass product
+
+所以，可以理解为ES是工程样品，CS是出货样品。
+
+“稼动率”（activation或utilization），是指设备在所能提供的时间内为了创造价值而占用的时间所占的比重。
+
+---
+
+Tape out是指芯片完成了设计，将设计数据交给fab开始生产，很多年前，完成的设计数据都是写到磁带里传给fab，设计团队将数据写入磁带叫tape in，fab读取磁带的数据叫tape out，现在科技发展了已经不用磁带了，但这个词还是沿用了下来。
+
+wafer out是指wafer在fab完成了生产，设计的集成电路已经制造在硅基上了，开始要封装测试了。
+
+---
+
+全世界芯片行业目前的薪酬排名（仅对普通工程师而言）：
+
+美国西部硅谷附近 > 洛杉矶附近 > 上海和深圳 > 美国东部 > 欧洲，欧洲约等于日韩台湾 > 印度 > 东南亚
+
+---
+
+当年韩国为了发展半导体，没有专家和技术人才就去日本请人家半导体公司的专家，周六，周日来到韩国给他们指导一下，给的工资是日本的三倍。
+
+---
+
+https://zhuanlan.zhihu.com/p/342808728
+
+谈谈ARM/MIPS的Archi-license架构许可模式、IP core授权模式，及其商业规则
+
+---
+
+就晶圆代工而言，台湾在全球前十晶圆代工中占据了4位，分别是台积电，联电，世界先进和力积电，其中台积电的实力世界第一。
+
+就芯片设计而言，台湾在全球前十芯片设计中占据了2位，分别是联发科和丽台。其它8位都是美国的公司。
+
+就芯片封装而言，台湾在全球前十封装中占据了5位，分别是日月光，力成，京元电，南茂和欣帮。其中日月光的实力世界第一。
+
+https://www.zhihu.com/question/658713475
+
+台湾的芯片行业到底在世界上是什么水平？
+
+---
+
+不是说台积电美国工厂诸多不顺 ，面临一个又一个严重问题，为何现在会传出良率高于台湾工厂，这合理吗？
+
+建厂问题造成的delay终将在建厂完成，设备move in调适生产后就进入正轨，因为这些问题只牵涉建厂不涉及芯片制造。
+
+英特尔，美光，GF以及德国的英飞凌在欧美国家生产芯片，虽然竞争力不如东亚，但人家不也生产的好好的，这些欧美的Fab厂核心问题一样是稼动率，全球缺芯的时候，这些工厂稼动率高，一样赚得盆满砵满。工程师卷不卷的工作态度以及工会问题都是次要的。
+
+# 芯片制造
+
+![](/images/img5/Fab.jpg)
+
+---
+
+![](/images/img4/Wafer_size.png)
+
+https://mp.weixin.qq.com/s/jGzdfEJaulPRjt89eLST4Q
+
+8英寸晶圆30年
+
+---
+
+半导体产业发展至今经历了三个阶段，第一代半导体材料以硅为代表；第二代半导体材料砷化镓也已经广泛应用；而以氮化镓和碳化硅、氧化锌、氧化铝、金刚石等宽禁带为代表的第三代半导体材料。
+
+---
+
+一个新节点多少良率才算是达到量产水平，这是最说不清的环节。按台积电的做法，有外部客户愿意在当前良率下单（因为良率不足的坏片，惯例是由客户承担），并顺利产出才称为量产，也就是所谓的商业量产。
+
+三星每个节点的首发客户基本都是内部的三星电子，一般在低良率阶段开启风险试产，并同时对外宣称量产。
+
+厂家有时候会透露自己良率已经到60%甚至80%，但这其中也有模糊地带，一般情况下80%的良率，只是对应矿机ASIC这种简单芯片，手机AP的良率则有可能不到50%，而如果是GPU这类面积大的芯片可能只有20%出头。
+
+---
+
+所有的制程技术数据，包括各站机台的运行参数，业内称为recipe，在台积电recipe是第一等的机密，专门有个recipe management system进行管理。
+
+---
+
+https://mp.weixin.qq.com/s/QF9Nsh_YyX9LZQ_D-4hP-A
+
+芯片是怎么制造的？央视最强科普！
+
+https://mp.weixin.qq.com/s/bKgYpZdXxAexlEtmPQ9oGw
+
+科普：芯片是怎么从沙子中一步步炼成的！
+
+https://mp.weixin.qq.com/s/9y5HFTQr2QP12iR858BFtg
+
+图解intel芯片生产全过程！
+
+https://mp.weixin.qq.com/s/aSCcdTHUoogP7TOK5MIsVw
+
+一颗芯片的全球之旅
+
+https://mp.weixin.qq.com/s/LcnyAhOofWyGHikYwfIlIA
+
+芯片的诞生
+
+https://mp.weixin.qq.com/s/lD2bkDIX6ey-VHchSdbW7g
+
+漫画芯片
+
+https://mp.weixin.qq.com/s/v3wauOfWw6TLlxTH4QKR6w
+
+一文详解MOS管
+
+https://mp.weixin.qq.com/s/kzQ-WqozBX-T8ZyS58MPnw
+
+一张图了解芯片到底是如何设计的
+
+# 芯片参考资料
+
+![](/images/img3/Memristor.png)
+
+https://mp.weixin.qq.com/s/k0u7pVzf7tjVF4UjZ3ai7A
+
+忆阻器的前世今生
+
+https://mp.weixin.qq.com/s/rSGRXfN4z3ElP7iQX1umjQ
+
+基于新型忆阻器的存内计算原理、研究和挑战
+
+---
+
+https://mp.weixin.qq.com/s/Hq9hzkyfGcCQa_FfzSDoRg
+
+5nm工艺节点以后，半导体器件的发展方向
+
+https://zhuanlan.zhihu.com/p/66263349
+
+为什么内存和闪存制程比CPU低？它们现在都在什么节点？
+
+https://mp.weixin.qq.com/s/vTOGmcahRxQBH8RgkTJ2GA
+
+中文系同学都能听懂的集成电路设计流程
+
+https://mp.weixin.qq.com/s/O-2ecxYVOgEfRuwEoS7gRA
+
+Fab的那些事儿
+
+>Fab的全称叫Fabrication，也就是集成电路制造的工厂、车间。
+
+https://mp.weixin.qq.com/s/_NcQ-PxNpEtpYdo450Uukg
+
+半导体材料全球格局
+
+https://mp.weixin.qq.com/s/QwE_VTEUS9kGDDrHlzPYmg
+
+硅片为什么不是方的？
+
+https://mp.weixin.qq.com/s/lz6EoLiLtPtWFMG1FJCuQw
+
+化合物半导体的机遇
+
+https://mp.weixin.qq.com/s/pFBhnjtXi8uNMGjYFeSfow
+
+芯片行业都难在哪儿？这篇说得最详细！
+
+https://mp.weixin.qq.com/s/nDWJS4rfWsqeVgJQbAYQ6w
+
+一文看懂IGBT（绝缘栅双极型晶体管）
+
+https://mp.weixin.qq.com/s/4_eGNtXULAdK9UzsP1mwKA
+
+IGBT的现状与发展
+
+https://mp.weixin.qq.com/s/TG6C4P-DvhRTJ2FoU8PFtw
+
+IGBT基础与运用知识

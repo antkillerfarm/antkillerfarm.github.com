@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 计算机体系结构（二）, 超算
+title: 计算机体系结构（二）
 category: Chip 
 ---
 
@@ -105,7 +105,7 @@ https://www.zhihu.com/question/645121724
 
 有两种方式实现硬件多线程：
 
-- 并发多线程(SMT)
+- 并发多线程(SMT，Simultaneously multithreading)
 
 - 时域多线程
 
@@ -210,63 +210,3 @@ Vector的前世今生（2）：ARM SVE简述
 https://zhuanlan.zhihu.com/p/594532014
 
 一文搞懂Cortex-A77（ARMv8架构）工作原理
-
-# 超算
-
-Seymour Cray，1925～1996。1957年，克雷和其它几位ERA的同事辞职后，创办了CDC(Control Data Corporation)。1972年，克雷自立门户，创立了克雷研究公司。
-
-https://blog.csdn.net/programmer_editor/article/details/1305826
-
-西摩•克雷(Seymour Cray)――隐居丛林的超级计算机之父
-
----
-
-Massively Parallel Processor
-
-![](/images/img3/power.aug.gif)
-
-![](/images/img3/Supercomputers-history.png)
-
-Top 500超算之间的差距竟有3个数量级，从榜首到落榜差不多要10年时间。OS从2015年开始全都是Linux了。Windows在超算领域从来没有风光过，之前没钱，自然斗不过UNIX，后来又被Linux打趴下了。
-
-Sunway TaihuLight和Sierra的算力相当，但core的数量竟是后者的6.7倍，功耗是后者的2.06倍。差距明显啊！
-
-- 相对浮点计算能力，内存带宽太低，严重的访存受限。
-- 网络带宽也不够，特别是考虑的通信和计算重叠的情况，这时候由于1，问题更严重。
-- 节点数实在太多了。(4万节点也太多了)可扩展性由于1，2，不好做。
-
-https://www.top500.org/
-
-超算排名网站
-
-https://zhuanlan.zhihu.com/p/33956771
-
-超算排名之中的地区和架构之争
-
-https://www.zhihu.com/question/47843945
-
-神威太湖之光的缺点有哪些？
-
----
-
-![](/images/img3/SC.png)
-
-https://mp.weixin.qq.com/s/gJWTiMCovGMQ8ye_TovdOw
-
-富士通的这颗芯片凭啥让日本走向了世界之巅？
-
-https://www.zhihu.com/question/404217836
-
-如何看待全球超级计算机TOP 500榜单日本登顶，中国跌出前三？近年中国超算发展现状如何？
-
----
-
-传统的排名是基于涉及64位浮点计算的基准，除此之外还有其他基准。
-
-2021年7月，由国防科技大学研制，部署在国家超级计算天津中心的“天河”E级计算机关键技术验证系统在国际Graph500排名中，获得SSSP Graph500（单源最短路径）榜单世界第一和BIG Data Green Graph500（大数据图计算能效）榜单世界第一的成绩。
-
----
-
-https://www.zhihu.com/answer/2512513124
-
-如何看待美国新的超级计算机Frontier成为超算榜全球第一，超过2–8名计算能力之和？

@@ -9,94 +9,6 @@ category: robot
 
 # 机器人/无人驾驶
 
-https://mp.weixin.qq.com/s/Qd0isykbzEFs__sxxIHDWw
-
-基于Unity的自动驾驶模拟
-
-https://zhuanlan.zhihu.com/p/105849060
-
-综述论文：A Survey of Deep Learning Applications to Autonomous Vehicle Control
-
-https://mp.weixin.qq.com/s/hqOxoU6G_2RjS2WbbHoxHg
-
-深度学习技术在自动驾驶中的应用与挑战
-
-https://mp.weixin.qq.com/s/7ndd6jFaSObUh6eOW8fi5Q
-
-旷视研究院SLAM组负责人刘骁：三维视觉与机器人
-
-https://mp.weixin.qq.com/s/hNx74wn8pIGPr6vVu_Yxww
-
-自动驾驶重卡在规划和控制中的技术难点与挑战
-
-https://mp.weixin.qq.com/s/Zhq2xNoVhUTLFpwzZFnbRA
-
-基于深度逆强化学习的舒适性自动驾驶
-
-https://mp.weixin.qq.com/s/mbnQflnZEu9ISao6UFYXpA
-
-导航定位向高精定位的演进与实践
-
-https://mp.weixin.qq.com/s/2AgeFABUrNZo_SndgIKJlQ
-
-自动驾驶运动预测(Motion Prediction)
-
-https://mp.weixin.qq.com/s/n75otGWB52tkOPTcNiKWeQ
-
-自动驾驶运动规划-Dubins曲线
-
-https://mp.weixin.qq.com/s/21Gq9T-G98w2J17sNGZ57A
-
-一文详解自动驾驶激光雷达和摄像头的数据融合方法
-
-https://mp.weixin.qq.com/s/mYPis61u-rW7zfnBQIloYA
-
-GTA 5真香！哦不，我在用深度学习做自动驾驶
-
-https://mp.weixin.qq.com/s/Ri51M3xkk2qVUoC9Z4OmGA
-
-自动驾驶中的交通标志识别原理及控制应用
-
-https://mp.weixin.qq.com/s/MP6A2qY2Gg335WMh-eemFA
-
-时空预测概述及多任务时空网络的交通预测
-
-https://mp.weixin.qq.com/s/mZbO-y4haBx-IodgEtdUBA
-
-LSTM之父最新力作：手把手教你训练一个有世界观的AI赛车手
-
-https://mp.weixin.qq.com/s/k3RbUz9txd09PpiLUEHVfA
-
-无人驾驶汽车系统入门：深度前馈网络，深度学习的正则化，交通信号识别
-
-https://mp.weixin.qq.com/s/09NwPaWTDU5g6ZjSPxLgTw
-
-肖健雄：无人车量产的4大技术储备
-
-https://mp.weixin.qq.com/s/-dGXe4RuU4w8DN8ffCMiFg
-
-让AI自动调参，才是百度无人车的进化方式：适应环境全靠自己
-
-https://mp.weixin.qq.com/s/YDIoVf20kybu8JEUY3GZWg
-
-Lattice Planner规划算法
-
-https://mp.weixin.qq.com/s/KdbiBU_-eWd139T4khXtkA
-
-自动驾驶实时路径规划算法简介（RRT 和Lattice Planner）
-
-https://mp.weixin.qq.com/s/5TyL9bkKe-XMKLl-QbtaZg
-
-西电智能学子斩获ECCV2018无人机挑战赛冠军—算法分享
-
-https://mp.weixin.qq.com/s/1SxwYqcxB8zIavr11cIGWg
-
-机器学习及深度学习在自动驾驶中的应用
-
-https://mp.weixin.qq.com/s/2gk1xF3lh2ioIGQeY_ZsHQ
-
-highD：德国提出从空中角度测量车辆数据的新方法
-
 https://mp.weixin.qq.com/s/f25RbCRoWT9Ft6m_G3lyvQ
 
 全美225万公里道路没标识？揭开无人车的极端行驶秘籍
@@ -396,3 +308,31 @@ https://zhuanlan.zhihu.com/p/553588646
 https://blog.csdn.net/v_JULY_v/article/details/141113628
 
 2024自动驾驶(多模态)大模型综述：从DriveGPT4、DriveMLM到DriveLM、DriveVLM
+
+# 中东+
+
+A：伊朗部分老百姓愚昧，低认知。
+
+B：人家不革命说人家愚昧，人家革命了也说人家愚昧。人家要革命说人家愚昧不配革命，人家不革命说人家果然愚昧想不到要革命。
+
+---
+
+赛义德（Sayyid）原义为“首领”“先生”“主人”。在伊斯兰兴起前，阿拉伯人用它来称呼部落领袖；进入伊斯兰时期后，这个词转义为“圣裔”，专指阿里与法蒂玛次子侯赛因一系的子孙。
+
+谢里夫（Sharif）原义是“高贵者”“贵人”。后来同样成为圣裔称号，但用于指阿里与法蒂玛长子哈桑一系的后人。
+
+按教史，真正能被称作“赛义德”或“谢里夫”的，应只限于穆罕默德女儿法蒂玛与阿里所生的哈桑、侯赛因两条直系后裔。结果在印巴、中亚、新疆等地，很多人把“赛义德”“谢里夫”直接当名字或姓氏用，以图“沾贵气”。结果同村、同班甚至一家人里能冒出好几个“赛义德”，看上去血统比穆罕默德本人还“纯正”。
+
+网友于是造出“伊斯兰教人均赛义德/谢里夫”，嘲讽这种“集体攀附圣裔”的现象。
+
+河中的和卓和草原上的羊儿一样多。
+
+“河中”：Mā warāʾ al-nahr，大致指阿姆河与锡尔河之间的中亚核心地带（今乌兹别克斯坦、塔吉克斯坦、南疆一带）。
+
+“和卓”（Khwāja）：原意“主人”“圣裔”，在当地专指宣称自己是穆罕默德后裔的苏菲派宗教领袖。
+
+---
+
+古莱什之鹰通常被描绘为展翅的姿态；（象征伊斯兰教先知穆罕默德所属的古莱什部落）
+
+萨拉丁之鹰则多为收翅站立的形象。

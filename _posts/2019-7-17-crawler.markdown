@@ -356,3 +356,7 @@ Modern GPU的控制流设计
 https://zhuanlan.zhihu.com/p/1935992034864371054
 
 五万字长文，一部GPU/CUDA 发展编年史：全系列GPU硬件架构和CUDA软件模型技术原理
+
+https://zhuanlan.zhihu.com/p/1971240379169871482
+
+GPU同步机制以及Barrier实现
