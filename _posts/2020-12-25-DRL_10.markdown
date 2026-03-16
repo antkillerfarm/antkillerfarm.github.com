@@ -99,6 +99,18 @@ COT+RL主要有以下四条路线：
 
 ---
 
+传统CoT依赖模型内部知识易产生幻觉；传统RAG无法动态调整检索内容，难以应对多跳/多步推理（如HotpotQA等多跳问答任务）。
+
+Interleaved Chain of Thought：将外部知识检索（Retrieval）与思维链推理（CoT）交替进行、相互引导，而非传统的"先检索后推理"单步模式。
+
+工作流程：
+
+- 用当前推理步骤生成精准的检索查询。
+- 用新检索到的知识修正/推进下一轮推理。
+- 循环迭代直到得出最终答案。
+
+---
+
 https://blog.csdn.net/Julialove102123/article/details/135499567
 
 一文读懂Chain of Thought，CoT思维链

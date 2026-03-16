@@ -226,6 +226,10 @@ https://sebastianraschka.com/blog/2025/the-big-llm-architecture-comparison.html
 
 The Big LLM Architecture Comparison
 
+https://sebastianraschka.com/llm-architecture-gallery/
+
+更多LLM结构图
+
 中文版：
 
 https://zhuanlan.zhihu.com/p/1971937330051940822

@@ -241,6 +241,10 @@ https://zhuanlan.zhihu.com/p/1938967453951571269
 
 Context Engineering，一篇就够了
 
+https://zhuanlan.zhihu.com/p/661683573
+
+AI高手都在用的10个提示词prompt网站
+
 # 无监督/半监督/自监督深度学习
 
 自监督学习是一种特殊目的的无监督学习。不同于传统的AutoEncoder等方法，仅仅以重构输入为目的，而是希望通过surrogate task学习到和高层语义信息相关联的特征。

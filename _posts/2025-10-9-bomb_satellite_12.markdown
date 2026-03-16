@@ -57,230 +57,92 @@ https://m.yunnan.cn/system/2021/07/23/031570964.shtml
 
 ---
 
-https://mp.weixin.qq.com/s/3aLHfKF5grL6hunO7r_TAQ
+圆珠笔的圆珠用的不是钢，是碳化钨球。传言里所谓太钢的圆珠那种应该指的是制笔用易切削不锈钢，但是这东西同时应用在医疗汽车仪器等领域，不是一年60t就够用的。而且现在钢厂炉子不小，一炉也不可能只有60t。日本生产制笔用易切削不锈钢的是日本下村特殊精工株式会社和日本秋山特殊精钢株式会社，两家均在正常运营中。
 
-中国第一个发《Nature》的竟然是清朝人！被皇帝夸天下第一，他却觉得羞耻。。。（徐寿、华蘅芳、徐建寅）
+再看同行，包括Yamazaki Mazak、Trumpf、Komatsu、JTEKT Corporation、AMADA Group等都是能生产制造高精度多工位组合机床的主要生产商。而2024年全球多工位组合机床市场的全球市场约为85亿美元，已知真彩COREX高精度多工位笔头加工机床单价20万美元左右，总共生产了22台，其中自用3台，销售19台。声称技术超过同行世界领先，可是这寒酸的市场占有率和销售额能说明点啥？
 
-https://mp.weixin.qq.com/s/J1mAwHQUkuHrmvmyK_w5BQ
+---
 
-中国首台蒸汽机竟由一位清代数学家设计！他与诺贝尔同年出生，为研制火药险些殒命。。。（华蘅芳）
+当时中国方面对工业体系没有概念，前期设计的项目规划被苏方批评的一塌糊涂，苏联方面的专家最后只能一个一个问：你要这个项目想干啥？目的是什么？配套产业有吗？放置在哪里合适？后来包括第一个五年计划都是苏联方面帮助设计的，可以说156工程的最大功绩是手把手的教会了中国什么是产业链，什么叫配套工程，怎么去规划一个生产基地。苏联同志算是给中国人领进了门，让中国人掌握了一个基本的现代工业体系配套的知识，这是靠自学学不会的。
 
-https://mp.weixin.qq.com/s/OO2OPmxjZJTCNiy_S2p-Aw
+---
 
-中国第一个登上Nature的女科学家，居然出生在清朝？只活了29岁（王贞仪）
+清朝末年，为了把萍乡的煤运到汉阳铁厂，当时经济的选择便是从萍乡修条铁路到株洲，再从株洲走水路到长江，再到汉阳，于是乎，株萍铁路修到小镇株洲的湘江边，而纵向的粤汉铁路也经过小镇株洲。
 
-https://mp.weixin.qq.com/s/CTpwRV9BJ6JW2BOtVC7uMg
+有了十字形“双铁路”后，这个小镇就在当时的中国显得尤为枢要。之后民国政府筹划利用株洲的交通优势，在当地建一个中国版本的“鲁尔区”。
 
-她是清华第一位女教授，被称为中国的“居里夫人”，却在62岁高龄被打入大牢...（王明贞）
+汉阳铁厂后来把设备搬迁至重庆，是重庆钢铁厂前身。而汉阳铁厂旧址目前是武钢的汉阳钢厂。
 
-https://mp.weixin.qq.com/s/ajfoQAH-WSZ_OYIRK8uGAQ
+---
 
-被遗忘的中国生命科学之父（林可胜）
+1994年10月我军举行代号“神圣94”海空军联合军事演习，美帝小鹰号航母仅派出一两架EA-6B电子战飞机，破解我军防空雷达信号后，从雷达束旁瓣注入密集信号，造成山东、江苏、上海等多地雷达显示近百架战机大举入侵我演习区域。
 
-https://mp.weixin.qq.com/s/E8F4E-9LXJezfMY7hB-vWg
+https://mp.weixin.qq.com/s/to4Z7Cl8pnp7m7GuzJCLcQ
 
-高考成绩接近满分，却被清华北大拒绝，被称“中国最帅科学家”（中国油田分层开采和化学驱油技术的奠基人——王德民）
+电子对抗就是一场电磁波的数学竞赛，论降维打击之电子战
 
-https://mp.weixin.qq.com/s/wcDiuHjtGgWjWdLRtJTpTg
+https://www.zhihu.com/question/442860858
 
-凤毛麟角：中国早期留美的数理同门女双杰（1912-1949年间，有14名中国女性赴英美留学，后来均成为杰出的物理学家，本文主人公王明贞和王承书就是其中的两位。）
+为什么每次美军舰队出现在南海都会被发现？
 
-https://mp.weixin.qq.com/s/IQPiGqqad4YajaCu9bQhJw
+---
 
-美国一再拒绝两个中国人的回国申请，有人道破天机：你们是重大威胁（王承书、张文裕）
+这种物物交换的前提，是双方能各取所需，因此当一方拿出的物资不是对方所需求的，则经常要辗转腾挪数次才能完成交易。比如江苏省武进县化轻公司曾经想用电石到海南岛协作橡胶，但对方需要的是硬脂酸，不要电石。这个单位只好拿电石到处串换，先是用电石从内蒙换到生铁，再用生铁到上海换来汽车，然后又用汽车去武汉换来硬脂酸，最后才用硬脂酸从海南岛换回了橡胶。
 
-https://mp.weixin.qq.com/s/CTpwRV9BJ6JW2BOtVC7uMg
+这种现象的广泛存在，是因为中国计划经济水平远逊色于苏联。同时期的苏联虽然也是黑市猖獗，但交易的多是生活消费品和农产品，鲜有大规模交易生产物资的现象。但这种“落后”倒也并非坏事，由于中国始终保有着市场交易的行为，这使得中国能更顺利地从计划经济转向市场经济，而不至于发生像俄罗斯这样的经济灾难。
 
-她是清华第一位女教授，被称为中国的“居里夫人”，却在62岁高龄被打入大牢...（王明贞）
+https://www.zhihu.com/question/1921304020225619753
 
-https://mp.weixin.qq.com/s/ajfoQAH-WSZ_OYIRK8uGAQ
+我国计划经济时期真的一点市场都没有吗？只是分配？
 
-被遗忘的中国生命科学之父（林可胜）
+---
 
-https://mp.weixin.qq.com/s/Z2xRTxgRRHWWY2VICT4lQg
+朱家仁，湖南汉寿县人，从小在苏州长大。1920年赴美国留学，主攻航空技术。1926年从麻省理工学院航空工程专业毕业。
 
-中国有哪些领跑全球的技术
+这个直升机，它叫“直升机”，长得像“直升机”。只有一个小小缺点：不能飞。
 
-https://mp.weixin.qq.com/s/NQ4OiPgguAVkRPBn1uEYjg
+朱家仁不是没有做过试飞试验，48年做过，飞机刚离开地面就倾覆。
 
-他奉密令去美国长期潜伏，周总理亲自送行长谈（吴大琨）
+http://www.sheqi.gov.cn/xzwz/ldz/xxgk8/content_77503
 
-https://mp.weixin.qq.com/s/z0FdqtVOmhv1mbVRJ42UFA
+朱家仁：第一个造直升机的中国人
 
-“奋斗者”号再探万米深海，制造一个深潜器到底有多难？
+---
 
-https://mp.weixin.qq.com/s/toX25yTvQWnwid26oOXROA
+张为申1931年毕业于清华大学化学系，1946年赴美深造，1951年放弃国外优厚的待遇回国参加建设。先后完成青霉素进口原料的代用品研究和国产土霉素、链霉素、红霉素的研制。
 
-深潜海底10909
+1957年，国产金霉素通过了临床试验，在上海第三制药厂正式投产，我国成为全世界第四个能够生产金霉素的国家。次年，沈善炯参与指导的华北制药厂全线投产，成为亚洲最大的抗生素生产基地，结束了我国青霉素、链霉素依赖进口的历史。
 
-https://www.zhihu.com/answer/378935681
+1957年，汤飞凡鉴定、分离和培养了沙眼衣原体细菌，成为第一位成功确定沙眼病因的科学家。
 
-谁能告诉我一些关于肯尼亚蒙内铁路的故事？
+https://mp.weixin.qq.com/s/s-Y4tZde0XmGGAkS06YJkw
 
-https://mp.weixin.qq.com/s/EWU26Xp8Xx4rQDiLnNPLQw
+百岁院士沈善炯逝世，曾攻克金霉素打破美国垄断
 
-中国人是什么时候知道计算机的?
+https://mp.weixin.qq.com/s/GRWkN8nZ3Q4A90iBiH18Xw
 
-https://mp.weixin.qq.com/s/gJ315Byg0EtZVldxFp-q3A
+用棉籽饼代替玉蜀黍：中国战时青霉素研制历程（童村和汤飞凡）
 
-“最牛上下铺”！他们竟是舍友（歼-20总设计师杨伟、运-20总设计师唐长红）
+---
 
-https://mp.weixin.qq.com/s/aX0aqG6h_0V0jMnQvJxfLQ
+1979年，大众集团管理层找到当时还是一个中层工程师的李文波，希望他为公司在中国大陆的中文译名给些建议，因为他是整个集团唯一会说中文的员工。
 
-袁隆平逝世：播下改变中国的种子
+当时大众在台湾和香港已有销售，使用的名字是Volkswagen的音译“福斯”。李文波认为“斯”听起来像“死”，不吉利，一开始想把“福斯”略作改动改为“福仕”。但“福仕”与在中国广为人知的“福特”还是太接近。李文波既不希望中国大陆的用户误以为Volkswagen跟福特有什么联系，也意识到“仕”有“绅士”的含义，意识形态上不妥，也不符合大众的产品定位。
 
-https://mp.weixin.qq.com/s/ro1xdxRqfQo0S7qxMyHZSg
+正巧李文波在香港出版的中文版《读者文摘》上读到过他们对于大众甲壳虫的译名“国民汽车”。然而由于显而易见的原因，“国民汽车”这个名字在大陆不可能行得通。如果走意译的路线，Volk对应的应该是“人民”。但李文波当时已经回过南京探亲数次，明白“人民”这个词在中国大陆与政权有着紧密联系，比如人民政府、人民银行、人民日报等等。他需要一个“朗朗上口且独特，意涵优雅又没有政治色彩，几十年后也不会过时的名字”。于是他想到了“大众汽车”。
 
-这一次，外媒集体为袁隆平刷屏
+这个译名得到了饶斌等中方谈判团队成员的高度认可，就此成为了Volkswagen在中国的官方译名。更巧的是“大众”的“众”字简体字形状又类似于VW标，形神兼备。
 
-http://news.sina.com.cn/o/2018-06-25/doc-iheirxyf5801793.shtml
+https://www.zhihu.com/answer/1926042553842668053
 
-儿子智力残疾、妻女精神分裂…77岁核弹老人魏世杰的故事，让无数观众为之动容
+“Volkswagen”为什么翻译成“大众”？
 
-https://mp.weixin.qq.com/s/vuNGjU3lPvw_k0-96v3Q6g
+---
 
-和袁隆平是同学！这位91岁院士把一切献给“吃瓜群众”...（吴明珠）
+1959年7月23日半夜，“美国之音”报导了一条震惊世界的号外新闻：
 
-https://mp.weixin.qq.com/s/ey3uNb3SAUR70A86-E1klg
+中国辽西地区，因连遭暴雨袭击引发特大山洪，洪水将一列载有600余人的客运列车吞没，列车上的旅客及司乘人员全部遇难……没有发现生还者……
 
-中国制造高精度机床的困难在哪里？
+https://www.zhihu.com/answer/125978078856
 
-https://mp.weixin.qq.com/s/QSS7dIe1MeIOBu6tko9maQ
-
-美国人万万没想到，这个不起眼的留学生，将会成为中国雷达之父（毕德显）
-
-https://zhuanlan.zhihu.com/p/109751703
-
-为了研究，他骨折14处（吴天一）
-
-https://mp.weixin.qq.com/s/_FKBOk6IrxTixo2YrowLQw
-
-这块来自月球的小石头，撞出了他的“月球梦”（欧阳自远）
-
-https://www.zhihu.com/answer/1950534833
-
-民国工业成就
-
-https://mp.weixin.qq.com/s/LzMaq9LDADzUxc-8VrOcsA
-
-她们从安娜堡走来：巴伯奖学金和中国女留学生先驱
-
-https://www.163.com/dy/article/GIGUJPNF0534A4RZ.html
-
-原子弹核心部件操刀人原公浦最后的日子：癌痛时他唱《东方红》
-
-https://zhuanlan.zhihu.com/p/397501035
-
-《逐梦蓝天》：他是将门虎子，23岁毛主席为他题词，享年90岁（叶正大）
-
-https://mp.weixin.qq.com/s/mkUxG7UMTPyeXnFzPFhNRw
-
-追怀郑哲敏：一生波折，留些话给后人
-
-https://mp.weixin.qq.com/s/-9Q5U50IwtEiv6MX5Z7NuA
-
-一张老照片：九十年前的中国女留学生
-
-https://www.zhihu.com/question/48422826
-
-茅以升晚年，10年失两爱妻，六子女怨恨责备，临终只有幼女陪伴
-
-http://www.zjgrrb.com/zjzgol/system/2017/08/28/030351671.shtml
-
-80年前， 钱塘江建桥克服三重难关
-
-https://new.qq.com/omn/20210518/20210518A020HP00.html
-
-杭州钱江大桥，面对日军步步逼近，不得不炸毁的经历
-
-https://mp.weixin.qq.com/s/wEqbmkJuIGjqmshE96woAQ
-
-林巧稚诞辰120周年：终身未婚的“万婴之母”
-
-https://mp.weixin.qq.com/s/TQPcOAXvjo3MXFeWN4OvhA
-
-治学报国：民国时期的统计留学生
-
-https://zhuanlan.zhihu.com/p/352959565
-
-参与加勒万冲突保障，民企员工受到表彰，该公司堪称军工界大疆
-
-https://www.zhihu.com/question/425270883
-
-非五常国家的军事实力究竟有多弱？
-
-https://mp.weixin.qq.com/s/-iv72YL5jm5OyHPuNzEzmg
-
-破晓时分，加州教授团访华记
-
-https://mp.weixin.qq.com/s/_0SN18UFx_GGlHebUaar9A
-
-兵器试验中心数字弹道的传奇。陆载德的故事——从一位左腿残疾的清华学子成长为90年代共和国军队中唯一的独腿将军。
-
-https://mp.weixin.qq.com/s/tg5ovnXBV0aqM51DGj-mUQ
-
-中国计算数学和最优化事业的创始人之一、原南京大学教授何旭初
-
-https://mp.weixin.qq.com/s/fJeYJt42nQcnugqEHUGrTw
-
-捐出200万元的中国工程院院士！一生都在做“吃螃蟹的人”……（徐寿波）
-
-https://view.inews.qq.com/wxn/20220202A087ZO00
-
-这位院士一个决定，让救命药仅售290元（王振义）
-
-https://mp.weixin.qq.com/s/fVOd3ARuymsSqPXdz25nnw
-
-控制论与被遗忘的华人科学家（李郁荣）
-
-https://mp.weixin.qq.com/s/dNe-OmF_eTbtApyy13_QLA
-
-管梅谷先生简介
-
-https://www.zhihu.com/question/51700891
-
-如何评价“前三十年的工业化是一堆破铜烂铁＂？
-
-https://mp.weixin.qq.com/s/TLe6qAAxWJZnKUXo6EGp5g
-
-上海滩无线和芯片30年史
-
-https://mp.weixin.qq.com/s/Sq53aEbG3bIBML9qSwPzoA
-
-从奴隶到将军：工控“小华为”的三场战事（汇川技术）
-
-https://view.inews.qq.com/wxn/20221217A05KPO00
-
-90岁顶级大师走了，全国5.5亿用户都要感谢他（“中国光纤之父”赵梓森）
-
-https://mp.weixin.qq.com/s/5E67HQ_TqIdtc8T-bvI7tA
-
-制造宁德时代
-
-https://mp.weixin.qq.com/s/WYgdy03_j_7-nG00gXjjHg
-
-华科大校友、“中国龙芯之母”黄令仪逝世
-
-https://zhuanlan.zhihu.com/p/685019610
-
-中国瓷器，是如何被西方摁在地上摩擦的？
-
-https://zhuanlan.zhihu.com/p/632524144
-
-（2003--2022）中央企业名录变化历程（1）
-
-https://zhuanlan.zhihu.com/p/632868330
-
-（2003--2022）中央企业名录变化历程（2）
-
-https://www.zhihu.com/answer/3532726779
-
-樊承德老先生的故事
-
-https://zhuanlan.zhihu.com/p/16294849929
-
-我的时隔64年的两张照片
-
-https://www.zhihu.com/question/644106705
-
-青藏铁路建成17年，为何至今仍在用从美国进口火车头？国产的不能用吗？
+12次列车受到了铁道部通令嘉奖，并被授予“英雄列车”称号

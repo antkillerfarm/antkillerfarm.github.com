@@ -263,23 +263,3 @@ https://www.bilibili.com/read/cv2773215
 https://zhuanlan.zhihu.com/p/619204713
 
 风靡网吧的经典！《三国群英传2》为何是系列最受欢迎的一代？
-
-https://zhuanlan.zhihu.com/p/454876786
-
-《战争游戏红龙》：军事指挥爱好者的近代战争交响曲
-
-https://fitgirl-repacks.site/
-
-一个俄罗斯妹子办的游戏资源站
-
-https://www.jidiyouxi.com/
-
-国内版的fitgirl
-
-https://www.zhihu.com/question/557628789
-
-如何评价游戏《白日升》（Rise of the White Sun）？
-
-https://www.zhihu.com/question/11554798727
-
-《文明7》里的奇观现实中都还存在么？

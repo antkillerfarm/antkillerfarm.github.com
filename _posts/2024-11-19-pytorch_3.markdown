@@ -9,47 +9,101 @@ category: DL Framework
 
 # Pytorch
 
-## torchviz
+## Pytorch Dispatcher
 
-使用torchviz导出反向计算图：
+`torch.library`:
 
 ```python
-from torchviz import make_dot
-grad_dot = make_dot(loss, params=dict(model.named_parameters()))
-grad_dot.render('backward_graph', format='png')
+# Override with python
+from torch.library import Library, impl
+import torch
+ 
+mylib = Library("aten", "IMPL")
+ 
+@impl(mylib, "add.Tensor", device_type="CUDA")
+def add_override_cuda(a, b):
+    print("Using custom CUDA add implementation!")
+    return a + b
+ 
+# Override with C++
+#include <torch/library.h>
+ 
+TORCH_LIBRARY_IMPL(aten, CPU, m) {
+    m.impl("add.Tensor", [](const torch::Tensor& a, const torch::Tensor& b) {
+        // Your custom implementation here
+        return a + b;
+    });
+}
 ```
 
-找到loss在哪里，就可以导出了。
+`__torch_function__`:
 
-## dataset
+```python
+class CustomTensor(torch.Tensor):
+    @classmethod
+    def __torch_function__(cls, func, types, args=(), kwargs=None):
+        kwargs = kwargs or {}
+        print(f"Called function: {func.__name__}")
+        return func(*args, **kwargs)
+ 
+# Usage
+x = CustomTensor([1, 2, 3])
+y = torch.add(x, 1)  # Will print "Called function: add"
+```
 
-`model = torch.hub.load('pytorch/vision:v0.10.0', 'resnet50', pretrained=True)`
+`__torch_dispatch__`:
 
-下载的model位于`~/.cache/torch/hub`
-
-## quantization
-
-torchao：用于自定义数据类型和优化的PyTorch库，提供量化、稀疏权重、梯度、优化器和激活等方面的优化。
-
-代码：
-
-https://github.com/pytorch/ao
+```python
+class DispatchTensor(torch.Tensor):
+    @classmethod
+    def __torch_dispatch__(cls, func, types, args=(), kwargs=None):
+        kwargs = kwargs or {}
+        print(f"Dispatching: {func}")
+        return func(*args, **kwargs)
+     
+    # Do not force the Float8Tensor type on the returned tensor   
+    __torch_function__ = torch._C._disabled_torch_function_impl
+ 
+# Usage
+x = DispatchTensor([1, 2, 3])
+y = torch.add(x, 1)  # Will print the dispatched operation
+```
 
 ---
 
-https://pytorch.org/tutorials/prototype/quantization_in_pytorch_2_0_export_tutorial.html
+Kernel Register：
 
-Quantization in PyTorch 2.0 Export Tutorial
+aten/src/ATen/core/op_registration/op_registration.h
 
-https://pytorch.org/tutorials/prototype/pt2e_quant_x86_inductor.html
+---
 
-PyTorch 2 Export Quantization with X86 Backend through Inductor
+PyTorch有Structured Kernel和Unstructured Kernel两种不同的算子实现方式。
 
-https://mlir.llvm.org/docs/Quantization/
+Structured Kernel：框架自动推断并创建输出张量，自动生成形状检查、设备检查等。能显著减少算子开发工作量并保证行为一致性。
 
-Quantization
+Unstructured Kernel：手工编写所有过程，具有最高的灵活性，适合复杂场景。
 
-## 自定义算子
+Structured Kernel的实现包含`meta`和`impl`两个部分。前者负责输出张量的形状、dtype、设备推断等，但不执行实际的数据计算。后者才是执行数据计算的地方。
+
+---
+
+https://pytorch.org/tutorials/advanced/extend_dispatcher.html
+
+Extending dispatcher for a new backend in C++
+
+https://zhuanlan.zhihu.com/p/376495783
+
+聊聊Pytorch Dispatcher
+
+https://zhuanlan.zhihu.com/p/386876377
+
+Pytorch中dispatch机制及其实现
+
+https://blog.csdn.net/gzq0723/article/details/115410050
+
+Pytorch底层算子扩展最详细的总结
+
+---
 
 算子注册：
 
@@ -347,63 +401,3 @@ https://mp.weixin.qq.com/s/HPRUQSsUdk3rXBBl_GpFMw
 https://mp.weixin.qq.com/s/5sY_IzwIz-lbDLtWJM-GRQ
 
 PyTorch实例：用ResNet进行交通标志分类
-
-https://mp.weixin.qq.com/s/zN3k51g9gjQvc43AH-ypGA
-
-如何通过PyTorch上手Tensor Comprehensions？
-
-https://mp.weixin.qq.com/s/yGtDUbvO2APT88MwcSh8IA
-
-GAN如此简单的PyTorch实现，一张脸生成72种表情
-
-https://mp.weixin.qq.com/s/u9GEDCmR-PT0--0Xf4vKDA
-
-Pytorch的tensorboard食谱帮你可视化误差结果
-
-https://mp.weixin.qq.com/s/HginBrMOfEEWsZKq67u6EA
-
-在Pytorch中构建流数据集
-
-https://zhuanlan.zhihu.com/p/98535650
-
-研究生应当掌握的并行训练方法（单机多卡）
-
-https://zhuanlan.zhihu.com/p/86441879
-
-pytorch多gpu并行训练
-
-https://mp.weixin.qq.com/s/KP4etDrGlJmRAMQmR1mTJA
-
-基于C++的PyTorch模型部署
-
-https://zhuanlan.zhihu.com/p/145427849
-
-PyTorch Parallel Training（单机多卡并行、混合精度、同步BN训练指南文档）
-
-https://mp.weixin.qq.com/s/Y6sJhnmjRwN2uopHgr7nFA
-
-让PyTorch更轻便，这款深度学习框架你值得拥有！
-
-https://zhuanlan.zhihu.com/p/104019160
-
-PyTorch常用代码段
-
-https://mp.weixin.qq.com/s/5Nq3y8hwhQG1UV9lHuBQvA
-
-13个你一定要知道的PyTorch特性
-
-https://mp.weixin.qq.com/s/cKvkvWgVPuq9y1A5q1OPEQ
-
-跟着指南学PyTorch—迁移学习教程
-
-https://mp.weixin.qq.com/s/gJgxh4l0CXTlaJaQ_FS3YQ
-
-PyTorch的数据增强与数据标准化
-
-https://mp.weixin.qq.com/s/Mo7XhRcPkgurmQPJ3Zu1ug
-
-基于PyTorch的计算机视觉框架
-
-https://mp.weixin.qq.com/s/PWABh72t92pUOJufcmzvag
-
-用PyTorch做深度学习实验！Facebook新框架Ax和BoTorch双双开源

@@ -151,6 +151,66 @@ bitsandbytes--Facebook推出8比特优化器大大减少显存
 
 # Pytorch+
 
+https://mp.weixin.qq.com/s/zN3k51g9gjQvc43AH-ypGA
+
+如何通过PyTorch上手Tensor Comprehensions？
+
+https://mp.weixin.qq.com/s/yGtDUbvO2APT88MwcSh8IA
+
+GAN如此简单的PyTorch实现，一张脸生成72种表情
+
+https://mp.weixin.qq.com/s/u9GEDCmR-PT0--0Xf4vKDA
+
+Pytorch的tensorboard食谱帮你可视化误差结果
+
+https://mp.weixin.qq.com/s/HginBrMOfEEWsZKq67u6EA
+
+在Pytorch中构建流数据集
+
+https://zhuanlan.zhihu.com/p/98535650
+
+研究生应当掌握的并行训练方法（单机多卡）
+
+https://zhuanlan.zhihu.com/p/86441879
+
+pytorch多gpu并行训练
+
+https://mp.weixin.qq.com/s/KP4etDrGlJmRAMQmR1mTJA
+
+基于C++的PyTorch模型部署
+
+https://zhuanlan.zhihu.com/p/145427849
+
+PyTorch Parallel Training（单机多卡并行、混合精度、同步BN训练指南文档）
+
+https://mp.weixin.qq.com/s/Y6sJhnmjRwN2uopHgr7nFA
+
+让PyTorch更轻便，这款深度学习框架你值得拥有！
+
+https://zhuanlan.zhihu.com/p/104019160
+
+PyTorch常用代码段
+
+https://mp.weixin.qq.com/s/5Nq3y8hwhQG1UV9lHuBQvA
+
+13个你一定要知道的PyTorch特性
+
+https://mp.weixin.qq.com/s/cKvkvWgVPuq9y1A5q1OPEQ
+
+跟着指南学PyTorch—迁移学习教程
+
+https://mp.weixin.qq.com/s/gJgxh4l0CXTlaJaQ_FS3YQ
+
+PyTorch的数据增强与数据标准化
+
+https://mp.weixin.qq.com/s/Mo7XhRcPkgurmQPJ3Zu1ug
+
+基于PyTorch的计算机视觉框架
+
+https://mp.weixin.qq.com/s/PWABh72t92pUOJufcmzvag
+
+用PyTorch做深度学习实验！Facebook新框架Ax和BoTorch双双开源
+
 https://mp.weixin.qq.com/s/LcwlCai7PMYOBwsLXPS5HA
 
 PyTorch语义分割开源库semseg

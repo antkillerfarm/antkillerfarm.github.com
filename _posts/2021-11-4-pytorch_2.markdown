@@ -123,90 +123,6 @@ https://juejin.cn/post/7224428335005892645
 
 Pytorch 2.0如何通过运算符融合和CPU/GPU代码生成来加速深度学习 
 
-## Pytorch Dispatcher
-
-`torch.library`:
-
-```python
-# Override with python
-from torch.library import Library, impl
-import torch
- 
-mylib = Library("aten", "IMPL")
- 
-@impl(mylib, "add.Tensor", device_type="CUDA")
-def add_override_cuda(a, b):
-    print("Using custom CUDA add implementation!")
-    return a + b
- 
-# Override with C++
-#include <torch/library.h>
- 
-TORCH_LIBRARY_IMPL(aten, CPU, m) {
-    m.impl("add.Tensor", [](const torch::Tensor& a, const torch::Tensor& b) {
-        // Your custom implementation here
-        return a + b;
-    });
-}
-```
-
-`__torch_function__`:
-
-```python
-class CustomTensor(torch.Tensor):
-    @classmethod
-    def __torch_function__(cls, func, types, args=(), kwargs=None):
-        kwargs = kwargs or {}
-        print(f"Called function: {func.__name__}")
-        return func(*args, **kwargs)
- 
-# Usage
-x = CustomTensor([1, 2, 3])
-y = torch.add(x, 1)  # Will print "Called function: add"
-```
-
-`__torch_dispatch__`:
-
-```python
-class DispatchTensor(torch.Tensor):
-    @classmethod
-    def __torch_dispatch__(cls, func, types, args=(), kwargs=None):
-        kwargs = kwargs or {}
-        print(f"Dispatching: {func}")
-        return func(*args, **kwargs)
-     
-    # Do not force the Float8Tensor type on the returned tensor   
-    __torch_function__ = torch._C._disabled_torch_function_impl
- 
-# Usage
-x = DispatchTensor([1, 2, 3])
-y = torch.add(x, 1)  # Will print the dispatched operation
-```
-
----
-
-Kernel Register：
-
-aten/src/ATen/core/op_registration/op_registration.h
-
----
-
-https://pytorch.org/tutorials/advanced/extend_dispatcher.html
-
-Extending dispatcher for a new backend in C++
-
-https://zhuanlan.zhihu.com/p/376495783
-
-聊聊Pytorch Dispatcher
-
-https://zhuanlan.zhihu.com/p/386876377
-
-Pytorch中dispatch机制及其实现
-
-https://blog.csdn.net/gzq0723/article/details/115410050
-
-Pytorch底层算子扩展最详细的总结
-
 ## Grad Mode
 
 `torch.no_grad` vs `torch.inference_mode`
@@ -297,6 +213,46 @@ https://pytorch.org/tutorials/intermediate/model_parallel_tutorial.html
 
 Single-Machine Model Parallel Best Practices
 
+## torchviz
+
+使用torchviz导出反向计算图：
+
+```python
+from torchviz import make_dot
+grad_dot = make_dot(loss, params=dict(model.named_parameters()))
+grad_dot.render('backward_graph', format='png')
+```
+
+找到loss在哪里，就可以导出了。
+
+## dataset
+
+`model = torch.hub.load('pytorch/vision:v0.10.0', 'resnet50', pretrained=True)`
+
+下载的model位于`~/.cache/torch/hub`
+
+## quantization
+
+torchao：用于自定义数据类型和优化的PyTorch库，提供量化、稀疏权重、梯度、优化器和激活等方面的优化。
+
+代码：
+
+https://github.com/pytorch/ao
+
+---
+
+https://pytorch.org/tutorials/prototype/quantization_in_pytorch_2_0_export_tutorial.html
+
+Quantization in PyTorch 2.0 Export Tutorial
+
+https://pytorch.org/tutorials/prototype/pt2e_quant_x86_inductor.html
+
+PyTorch 2 Export Quantization with X86 Backend through Inductor
+
+https://mlir.llvm.org/docs/Quantization/
+
+Quantization
+
 ## Backend
 
 PyTorch带着左右护法Deepspeed，Megatron在研究领域，大模型领域，硬把Tensorflow干成了others。金主爸爸们，各种大模型训练和推理的客户，都拿着PyTorch + Megatron + Deepspeed的组合让我们适配。
@@ -329,6 +285,20 @@ Intel Pytorch backend的代码：
 https://github.com/intel/intel-extension-for-pytorch
 
 ---
+
+PyTorch提供了三个预留的Dispatch Key用于out-of-tree后端扩展：
+
+- PrivateUse1 / AutogradPrivateUse1
+- PrivateUse2 / AutogradPrivateUse2
+- PrivateUse3 / AutogradPrivateUse3
+
+Device Kernel注册到PrivateUse1上。
+
+Python端使用以下方法重命名设备：
+
+`torch.utils.rename_privateuse1_backend("npu")`
+
+这里实际上有一个假设：out-of-tree后端极少同时使用，复用不会引起冲突。
 
 https://www.zhihu.com/question/624955377
 

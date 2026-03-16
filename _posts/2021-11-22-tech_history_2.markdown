@@ -171,6 +171,32 @@ https://blog.ismisv.com/
 
 现在大概算是AI Infra的黄金时代。
 
-早些年的招聘市场，主要关注AI算法，后来的半导体大跃进，在这个领域也更关心图形芯片。
+早些年的招聘市场，主要关注AI算法，后来的半导体大跃进，在这个细分领域也更关心图形芯片。
 
 现在万般皆下品，唯有AI算力高。即使是Deepseek这类的公司，工程优化也占了相当重要的地位。
+
+# 我的PC Game+
+
+https://zhuanlan.zhihu.com/p/454876786
+
+《战争游戏红龙》：军事指挥爱好者的近代战争交响曲
+
+https://fitgirl-repacks.site/
+
+一个俄罗斯妹子办的游戏资源站
+
+https://www.jidiyouxi.com/
+
+国内版的fitgirl
+
+https://www.zhihu.com/question/557628789
+
+如何评价游戏《白日升》（Rise of the White Sun）？
+
+https://www.zhihu.com/question/11554798727
+
+《文明7》里的奇观现实中都还存在么？
+
+https://www.zhihu.com/answer/1944806410203398565
+
+第一人称射击类游戏简史

@@ -393,3 +393,7 @@ https://blog.csdn.net/HiWangWenBing/article/details/119790035
 https://www.zhihu.com/question/444819295
 
 控制周期越短，控制效果是否越好？
+
+https://zhuanlan.zhihu.com/p/582590074
+
+Cody Waite和Payne-Hanek归约算法的详细解释

@@ -246,6 +246,10 @@ Thrust是一个C++库，它提供了对GPU加速并行算法的便捷访问。
 
 它对标的是STL和TBB（Threading Building Blocks），后者是Intel开源的并行计算的C++模板库。
 
+CUB是一个底层CUDA C++模板库，为CUDA开发者提供可组合、高性能的原语，提供了Scan、Sort、Reduce、Histogram等操作的模板。
+
+Thrust的底层实际调用CUB进行优化。
+
 ## 访存
 
 从Ampere架构开始，引入了异步访存指令。

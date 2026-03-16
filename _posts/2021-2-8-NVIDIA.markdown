@@ -88,9 +88,30 @@ NVIDIA EGX：主打边缘计算的主板级产品。
 
 NVIDIA AGX：主打自动驾驶等AI功能的产品。目前已经有Parker、Xavier、Orin、Atlan、Thor等代产品。
 
+---
+
 ![](/images/img5/NVIDIA.jpg)
 
-历代GPU架构代号：Currie -> Tesla -> Fermi -> Kepler -> Maxwell -> Pascal -> Volta -> Turing -> Ampere -> Grace (CPU) Hopper (GPU)-> Ada Lovelace -> Blackwell -> Vera (CPU) Rubin (GPU) 。
+历代GPU架构代号：Currie -> Tesla -> Fermi -> Kepler -> Maxwell -> Pascal -> Volta -> Turing -> Ampere -> Grace (CPU) Hopper (GPU)-> Ada Lovelace -> Blackwell -> Vera (CPU) Rubin (GPU)
+
+- Pascal：HBM2内存 + NVLink 1.0
+- Volta：Tensor Cores + 独立线程调度（warp内的线程有独立的程序计数器，可以独立地挂起和恢复。）
+- Turing：RT Core + 并发的INT32和FP32执行路径 + 统一的缓存架构
+- Ampere：爆炸性增长的L2缓存（6MB -> 40MB） + Multi-Instance GPU + TF32 + 异步拷贝 (Asynchronous Copy) 与新屏障机制
+- Hopper：FP8 + Thread Block Cluster + DPX指令集
+- Blackwell：双Die MCM (Multi-Chip Module) + FP4/FP6 + RAS（可靠性、可用性、服务性）引擎
+
+https://zhuanlan.zhihu.com/p/2011109512568932071
+
+英伟达GPU架构世代差异与演进
+
+https://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/
+
+Matching CUDA arch and CUDA gencode for various NVIDIA architectures
+
+这篇文章虽然讲的是NVCC的sm选项的含义，但同样可以看作是NV GPU架构的历代记。
+
+---
 
 V100表示是Volta架构的GPU，A100和H100同理。
 
@@ -133,14 +154,6 @@ A100/H100太贵，何不用4090？
 https://zhuanlan.zhihu.com/p/669880751
 
 谈谈RTX4090 GPU改装为AIDC加速卡的可行性－－PCB板级改造的工艺缺陷和风险
-
----
-
-https://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/
-
-Matching CUDA arch and CUDA gencode for various NVIDIA architectures
-
-这篇文章虽然讲的是NVCC的sm选项的含义，但同样可以看作是NV GPU架构的历代记。
 
 ## GPU
 
