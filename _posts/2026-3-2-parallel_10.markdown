@@ -211,6 +211,18 @@ https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
 
 # CUDA+
 
+早期的GPU硬件上只有一个execution engine，因此，不论是哪个进程、哪个线程发起的kernel launch，都在同一个队列里排队。
+
+随着GPU的发展，GPU上面开始出现了多个execution engine。
+
+一个stream就对应于一个执行队列（加一个执行单元），用户可以自行决定是否把两个kernel分开放在两个队列里。
+
+https://zhuanlan.zhihu.com/p/699754357
+
+一文读懂cuda stream与cuda event
+
+---
+
 ![](/images/img6/tensile_kernel_parameters_performance_interdependencies.png)
 
 原始地址：

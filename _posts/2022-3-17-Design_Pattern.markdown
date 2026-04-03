@@ -103,6 +103,10 @@ https://refactoringguru.cn/design-patterns
 
 # 数据结构 & 普通CS算法
 
+卡常技巧是通过优化程序的时间常数和底层操作，在不改变算法时间复杂度的前提下提升程序运行效率的策略。
+
+---
+
 AVL树是一种平衡二叉树，得名于其发明者的名字（Adelson-Velskii以及Landis）。
 
 https://zhuanlan.zhihu.com/p/34899732

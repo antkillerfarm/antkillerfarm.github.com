@@ -429,3 +429,7 @@ TensorRT-LLM是NVIDIA推出的基于TensorRT的LLM推理工具。
 代码：
 
 https://github.com/NVIDIA/TensorRT-LLM/
+
+TensorRT-LLM虽然挂着一个TensorRT的名头，但核心思路已经从自动计算图优化、Layer Fusion，变为手写LLM算子。
+
+类似的变化也发生在TVM的子项目MLC-LLM身上。

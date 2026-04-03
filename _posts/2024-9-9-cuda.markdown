@@ -124,16 +124,6 @@ https://mp.weixin.qq.com/s/PDFshzgcj_udaFu3aJr1tQ
 
 ---
 
-pingpong就是N=2的multi-stage，所以这个问题等价于为什么在Ampere NStage=2不够了。
-
-Warp-Specialization的优势是在计算访存流水上的调度更灵活，劣势是代码写起来更麻烦。直到Ampere它的优势都不足以让人忍受它的劣势，而Hopper上Warp-Specialization变成了一种必须要使用的技术。
-
-https://www.zhihu.com/question/11261005710
-
-为什么Hopper架构上warp-specialization比multi-stage要好？
-
----
-
 参考：
 
 https://mp.weixin.qq.com/s/pPjPLqgXZ8iCPS42vXJpuQ
@@ -276,3 +266,10 @@ RW (Read-Write)：表示读写混合操作。
 
 Generic Addr是一种不携带任何状态或附加信息来声明它属于哪个状态空间的指针。在CUDA C++中，与C++一样，指针就是指针，它们没有额外的装饰或元信息。在PTX或SASS中，CUDA GPU具有状态空间系统，这是一种分区寻址结构。例如，shared就是一个状态空间。
 
+## Warp
+
+在织布机上，warp（经线）是纵向固定、张力较高的主线，它们平行排列在织机上。weft/weave（纬线）是横向穿梭交织的线。纺织业是人类历史上最早的大规模并行处理技术。
+
+一个SP可以执行一个thread，但是实际上并不是所有的thread能够在同一时刻执行。Nvidia把32个threads组成一个warp，warp是调度和运行的基本单元。warp中所有threads并行的执行相同的指令。
+
+![](/images/img6/SIMT.jpg)

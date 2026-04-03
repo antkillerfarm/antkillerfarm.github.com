@@ -61,6 +61,13 @@ NVIDIA的光线追踪引擎名为OptiX，并有相应的OptiX IR。
 
 ---
 
+正常的光追在采样不足的时候只能告诉你“是的，这里确实不太平滑，但我不确定它们是真实存在的还是采样误差——我又不知道这东西该长成什么样，万一它真长这样呢？”
+
+而NN则可以告诉你“见鬼去吧，现实世界中哪有人长成这样的？这些点就是噪点，给我全部平滑掉！还有你给我停下来，那里是边缘，别给我在那里搞什么平滑！”
+
+
+---
+
 https://www.cnblogs.com/mengdd/p/3237991.html
 
 图形学理论知识BRDF双向反射分布函数（Bidirectional Reflectance Distribution Function）
@@ -338,23 +345,3 @@ https://mp.weixin.qq.com/s/tSc_VKlohhhpT-3l37Bx0w
 https://mp.weixin.qq.com/s/GYpuj1rPRknWsRX6Av9XsQ
 
 各种有趣的屏下摄像头
-
-https://mp.weixin.qq.com/s/XihwGVU-8QJORfvENhhLnA
-
-图像传感器厂家大盘点（上）
-
-https://mp.weixin.qq.com/s/wSgSZA2c0fP3E8JgHn6yRQ
-
-AI时代的去马赛克算法
-
-https://mp.weixin.qq.com/s/YKL0Cwp1l9_4lAj8knMIqQ
-
-高级AI视觉算法是否还需要ISP?
-
-https://mp.weixin.qq.com/s/x4cz9mW1HOF8rtRv4uqLCQ
-
-门控相机：车载ADAS相机的未来？
-
-https://mp.weixin.qq.com/s/qtBGRvwr0-ykaZhn6nWsfA
-
-自动对焦技术的新发展

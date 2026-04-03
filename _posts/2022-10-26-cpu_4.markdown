@@ -89,6 +89,14 @@ https://zhuanlan.zhihu.com/p/545296023
 
 写给CUDA开发者AMD ROCm & Intel oneAPI开发贴士
 
+---
+
+Linux KFD（Kernel Fusion Driver）是AMD为其GPU计算平台开发的一个内核驱动程序，主要用于支持ROCm（Radeon Open Compute）生态系统。
+
+https://zhuanlan.zhihu.com/p/2018493367651148453
+
+600行Rust击败AMD官方GEMM库 — 裸金属GPU编程实战
+
 ## Composable Kernel
 
 Composable Kernel（CK）库旨在提供一套在AMD GPU上算子融合的后端方案。
@@ -134,12 +142,6 @@ AMD CDNA2架构（MI200）
 https://www.zhihu.com/question/606505567
 
 如何看待AMD发布Instinct MI300X GPU芯片？是否在大模型时代威胁Nvidia地位?
-
-## 其他对标术语
-
-| AMD | NVIDIA |
-|:--:|:--:|
-| GCN wavefront(64 threads wide) | CUDA warp(32 threads wide) |
 
 ## 参考
 

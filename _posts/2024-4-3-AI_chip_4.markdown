@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  AI Chip（四）——参考资源
+title:  AI Chip（四）——群雄（2）
 category: Chip 
 ---
 
@@ -8,6 +8,42 @@ category: Chip
 {:toc}
 
 # AI Chip
+
+## Groq 
+
+Groq是Google TPU团队的部分成员创立的AI芯片公司。
+
+2025年12月，NVIDIA为了规避反垄断监管，与Groq达成了一项价值约200亿美元的非独家技术许可协议，收购Groq的人才+技术。
+
+LPU（Language Processing Unit）采用确定性执行架构和片上SRAM设计，在特定AI推理工作负载下可实现比GPU快10倍的低延迟性能。特点：500MB的超大SRAM，取代HBM。
+
+LPU是decode-specialized的异构协处理器，GPU负责相对动态的prefill与decode attention，LPU负责相对静态的FFN/MoE；可以极大的缓解memory subsystem的压力，提高utilization。
+
+官网：
+
+https://groq.com/
+
+参考：
+
+https://zhuanlan.zhihu.com/p/102357412
+
+Groq，“软件定义硬件”概念的背后
+
+https://www.zhihu.com/question/510527941
+
+DSA AI芯片，相对GPGPU，能效上有多大优势？是从哪些方面提升了能效？
+
+https://zhuanlan.zhihu.com/p/684340572
+
+Groq: 为AI推理而生的性能之王！
+
+## 车载芯片
+
+Qualcomm：SA8775P
+
+小鹏：图灵AI芯片
+
+蔚来：神玑NX9031
 
 ## 寒武纪
 
@@ -258,71 +294,3 @@ AI芯片的几种选择，你更看好哪个？
 https://zhuanlan.zhihu.com/p/25510056
 
 ISSCC 2017看AI芯片的四大趋势
-
-https://zhuanlan.zhihu.com/p/26404565
-
-AI芯片四大流派论剑，中国能否弯道超车？
-
-https://zhuanlan.zhihu.com/p/27472524
-
-从AI芯片说起，一起来看芯片门类
-
-https://mp.weixin.qq.com/s/RKRDBiBzG5u2P2eaqNAFbg
-
-机器学习的处理器列表
-
-https://mp.weixin.qq.com/s/uzeeZiaAFdA0C_zAcX756w
-
-深度学习架构之争
-
-https://mp.weixin.qq.com/s/VM-KiIJHA2gXLVu0WRIzwA
-
-王中风教授：如何满足不同应用场景下深度神经网络模型算力和能效需求
-
-https://mp.weixin.qq.com/s/f5mQkWxPYc77t2we1Y306Q
-
-深度学习引领AI芯片大战
-
-https://mp.weixin.qq.com/s/6ksL9p1Gmnrd2HahU3KniQ
-
-ARM攒机指南——AI篇：5大千万级设备市场技术拆解
-
-https://zhuanlan.zhihu.com/p/32953957
-
-浅析图像视频类AI芯片的灵活度
-
-https://mp.weixin.qq.com/s/cfqnLYZSxJhtsgtrydx02A
-
-语音及文本类AI芯片的需求分析
-
-https://mp.weixin.qq.com/s/31SBgTXfIcwkmIzujBLxOA
-
-深度学习引擎的终极形态是什么?
-
-https://zhuanlan.zhihu.com/p/35103140
-
-“传说中”的异步电路能否在AI芯片界异军突起？
-
-https://mp.weixin.qq.com/s/PDe8O5zskxD_mycwH0_3lg
-
-AI是如何影响计算机内存系统的？
-
-https://blog.csdn.net/lien0906/article/details/78863118
-
-深度学习中GPU和显存分析
-
-http://eyeriss.mit.edu/
-
-Eyeriss是MIT设计的一款NN加速器。
-
-https://zhuanlan.zhihu.com/p/37520172
-
-一窥ARM的AI处理器
-
-https://mp.weixin.qq.com/s/UpnkYfhaEsYhze8GdpZ8Dg
-
-Arm的NPU究竟什么水平？
-
-https://mp.weixin.qq.com/s/QPuOmv7-agrcgnchgs3Hkg
-
-清华大学提出AI计算芯片的存储优化新方法

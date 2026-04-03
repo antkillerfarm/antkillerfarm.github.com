@@ -156,6 +156,12 @@ $$\text{MFU} = \frac{72blsh^2 \left(1 + \frac{s}{6h} + \frac{V}{12hl}\right)}{F 
 
 ---
 
+SOL（Speed of Light）：
+
+$$T_{\mathrm{SOL}} = \max\!\left( \frac{\text{Total FLOPs}}{\text{Compute Throughput}}, \frac{\text{Total Fused Bytes}}{\text{Memory Bandwidth}} \right)$$
+
+---
+
 https://docs.swanlab.cn/zh/examples/pretrain_llm.html
 
 从零预训练一个自己的大模型

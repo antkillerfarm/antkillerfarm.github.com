@@ -7,16 +7,6 @@ category: DL
 * toc
 {:toc}
 
-# DRCN（续）
-
-其中的$$H_1$$到$$H_D$$是D个共享参数的卷积层。DRCN将每一层的卷积结果都通过同一个Reconstruction Net得到一个重建结果，从而共得到D个重建结果，再把它们加权平均得到最终的输出。另外，受到ResNet的启发，DRCN通过skip connection将输入图像与H_d的输出相加后再作为Reconstruction Net的输入，相当于使Inference Net去学习高分辨率图像与低分辨率图像的差，即恢复图像的高频部分。
-
-参考：
-
-http://blog.csdn.net/u011692048/article/details/77500764
-
-超分辨率重建之DRCN
-
 # VDSR
 
 VDSR是DRCN的原班人马的新作。

@@ -291,6 +291,14 @@ https://onnxruntime.ai/docs/performance/model-optimizations/ort-format-models.ht
 
 ORT model format
 
+---
+
+onnxruntime-genai是onnxruntime针对LLM的扩展。
+
+代码：
+
+https://github.com/microsoft/onnxruntime-genai
+
 ### DirectML
 
 基于DirectX 12提出的加速方案。

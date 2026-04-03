@@ -69,6 +69,14 @@ https://www.zhihu.com/answer/1959808223214277795
 
 ---
 
+2026.2～3 乌军春季反攻。
+
+https://zhuanlan.zhihu.com/p/2018989916856546385
+
+乌克兰突然发起反攻，在埃隆·马斯克的帮助下
+
+---
+
 https://zhuanlan.zhihu.com/p/28871335828
 
 俄乌战争中的顿巴斯战线详解——（一）完整防线下的具体战略
@@ -234,3 +242,7 @@ https://zhuanlan.zhihu.com/p/670787768
 https://zhuanlan.zhihu.com/p/670901766
 
 僵局：乌克兰失败的反攻（第二部分）
+
+https://zhuanlan.zhihu.com/p/2022454886390866239
+
+扎卢日尼现在将反攻的责任归咎于泽连斯基，但他并非一直如此确信

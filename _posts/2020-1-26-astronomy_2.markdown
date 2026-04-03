@@ -228,11 +228,3 @@ https://www.zhihu.com/question/579214227
 https://zhuanlan.zhihu.com/p/594394805
 
 争议不断的《三体》动画，外国观众怎么看
-
----
-
-在太空动力学，霍曼转移轨道（或译为郝曼转移轨道，Hohmann transfer orbit）是一种变换太空船轨道的方法，途中只需两次引擎推进，相对地节省燃料。此种轨道操纵名称来自Walter Hohmann，他于1925年出版了相关著作。
-
->Walter Hohmann，1880~1945，德国工程师，亚琛工业大学博士。轨道动力学（orbital dynamics）之父。
-
-![](/images/img2/Hohmann.gif)

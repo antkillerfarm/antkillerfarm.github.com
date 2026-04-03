@@ -9,6 +9,14 @@ category: Nature
 
 # 轨道学（续）
 
+在太空动力学，霍曼转移轨道（或译为郝曼转移轨道，Hohmann transfer orbit）是一种变换太空船轨道的方法，途中只需两次引擎推进，相对地节省燃料。此种轨道操纵名称来自Walter Hohmann，他于1925年出版了相关著作。
+
+>Walter Hohmann，1880~1945，德国工程师，亚琛工业大学博士。轨道动力学（orbital dynamics）之父。
+
+![](/images/img2/Hohmann.gif)
+
+---
+
 ![](/images/img5/Solar_dv.png)
 
 颜刘贞婉（Chen-Wan L. Yan），美国华裔，来自中国台湾。她就读于著名的女子学校“台北州立第一高等女学校，本科是台大物理系。大学毕业后在麻省理工大学攻读物理学博士。颜刘毕业后进入NASA喷气推进实验室（JPL）担任轨道动力学专家。

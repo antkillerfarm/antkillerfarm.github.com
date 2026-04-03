@@ -92,7 +92,7 @@ NVIDIA AGX：主打自动驾驶等AI功能的产品。目前已经有Parker、Xa
 
 ![](/images/img5/NVIDIA.jpg)
 
-历代GPU架构代号：Currie -> Tesla -> Fermi -> Kepler -> Maxwell -> Pascal -> Volta -> Turing -> Ampere -> Grace (CPU) Hopper (GPU)-> Ada Lovelace -> Blackwell -> Vera (CPU) Rubin (GPU)
+历代GPU架构代号：Currie -> Tesla -> Fermi -> Kepler -> Maxwell -> Pascal -> Volta -> Turing -> Ampere -> Grace (CPU) Hopper (GPU)-> Ada Lovelace -> Blackwell -> Vera (CPU) Rubin (GPU) -> Rosa (CPU) Feynman (GPU)
 
 - Pascal：HBM2内存 + NVLink 1.0
 - Volta：Tensor Cores + 独立线程调度（warp内的线程有独立的程序计数器，可以独立地挂起和恢复。）
@@ -142,6 +142,14 @@ https://zhuanlan.zhihu.com/p/476820418
 Vera Florence Cooper Rubin，1928～2016，女，美国天文学家，美国国家科学院院士。她是研究星系自转速率的先驱，她通过研究星系旋转曲线，发现了预测的星系角运动与观测到的星系角运动之间的差异。通过确定星系自转问题，她的工作为暗物质的存在提供了证据。这些结果在随后的几十年里得到了证实。
 
 2019年，Large Synoptic Survey Telescope被命名为Rubin天文台。
+
+---
+
+Rosa：Rosalyn Sussman Yalow 或者 Rosalind Franklin。NV的CPU以女性科学家命名。
+
+Rosalyn Sussman Yalow，1921～2011，美国核物理学家。1959年开发出放射免疫分析法。1977年诺贝尔生理学或医学奖得主。
+
+Rosalind Franklin，1920～1958，英国化学家。拍摄著名的"Photo 51"X射线衍射照片，清晰显示DNA的螺旋结构。发现DNA存在两种形式（湿润型和干燥型），确定湿润型DNA为螺旋结构，磷酸基团位于外侧。1953年初已得出DNA为双螺旋结构的结论。她的数据被同事Maurice Wilkins在未经她同意的情况下展示给Watson和Crick，成为他们提出DNA双螺旋模型的关键依据。后三者获得1962年诺贝尔生理学或医学奖，而她因已于1958年去世而未能获奖。她的学生Aaron Klug继续她的病毒研究工作，1982年获诺贝尔化学奖。
 
 ---
 
@@ -250,65 +258,3 @@ NVIDIA的python-GPU算法生态
 ![](/images/img5/RL_EDA.png)
 
 NV的EDA辅助设计
-
-## 参考
-
-https://mp.weixin.qq.com/s/cGKtvtZzR--sGL4oNSZfAw
-
-深度分析NVIDIA A100显卡架构
-
-https://mp.weixin.qq.com/s/rtO8PxRj08GVimT3bfbplA
-
-我看英伟达H100 GPU
-
-https://www.zhihu.com/question/523521515
-
-如何评价英伟达3月22日发布的全新GPU H100？
-
-https://mp.weixin.qq.com/s/lP7sLiqiGGR2IY-FaorIPw
-
-英伟达：AI芯片还可以这样做
-
-https://mp.weixin.qq.com/s/jGGGMDokN9akzbjRkvUOaA
-
-NVIDIA GPU架构的变迁史
-
-https://jcf94.com/2020/05/24/2020-05-24-nvidia-arch/
-
-NVIDIA GPU架构演进
-
-https://www.zhihu.com/question/603617327
-
-英伟达发布集成256个GH200芯片的DGX GH200超级计算机，有哪些技术亮点？
-
-https://mp.weixin.qq.com/s/hK33RwqbqSH7FPqVKUEXCw
-
-英伟达帝国的一道裂缝
-
-https://zhuanlan.zhihu.com/p/639181571
-
-谈一下英伟达帝国的破腚
-
-https://developer.nvidia.com/blog/nvidia-hopper-architecture-in-depth/
-
-NVIDIA Hopper Architecture In-Depth
-
-https://zhuanlan.zhihu.com/p/679525399
-
-NVIDIA GPGPU（一）总览
-
-https://zhuanlan.zhihu.com/p/680098446
-
-NVIDIA GPGPU（二）逐步走向通用
-
-https://zhuanlan.zhihu.com/p/680195269
-
-NVIDIA GPGPU（三）新时代
-
-https://zhuanlan.zhihu.com/p/680262016
-
-NVIDIA GPGPU（四）通信架构
-
-https://zhuanlan.zhihu.com/p/13866293937
-
-聊一聊英伟达GPU的降频问题

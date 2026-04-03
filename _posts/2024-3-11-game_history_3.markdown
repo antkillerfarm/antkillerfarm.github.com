@@ -11,6 +11,16 @@ category: my story
 
 ## 小霸王 & 模拟器（续）
 
+2024.1
+
+最近无意看了一个小霸王游戏机的视频，差点动了买的心思。500元左右，就可以畅玩2000年以前的所有平台的老游戏。
+
+后来看了一圈，发现无非也就是ARM+Linux+模拟器。有个网友说的实在，最好的模拟器平台就是PC，都模拟器了还小霸王，这不纯纯的智商税吗？想体验，买个手柄不就得了。
+
+国产开源主机爆发的开端是一名叫司徒（Steward Fu）的台湾程序员大神，将某名不见经传的闭源mp4设备（全志芯片+全志开发的Melis OS），刷入另外一个开源掌机系统（OpenDingux）。至此周、张、谢等人才有机会将国内开源掌机这条路走通。
+
+无论是4770用的OpenDingux，还是3326用的EmuELEC，再或者里面的RetroArch模拟器这些东西都是开源的。
+
 Steward Fu的个人主页：
 
 https://steward-fu.github.io/website/
@@ -121,6 +131,16 @@ https://github.com/skywind3000/preserve-cd
 
 绝版游戏保护工程
 
+---
+
+MPQ是 Mo'PaQ的缩写，即Mike O'Brien Pack，由暴雪早期开发者Mike O'Brien设计，1996年首用于《暗黑破坏神》，后续成为暴雪旗下游戏的核心资源打包格式。
+
+https://zhuanlan.zhihu.com/p/1988759650368264045
+
+魔兽职业技能的奥秘
+
+---
+
 https://zhuanlan.zhihu.com/p/671410997
 
 魔兽世界单机版服务端编译和运行指南（TrinityCore）
@@ -225,41 +245,3 @@ https://mp.weixin.qq.com/s/JENwpBayd59hMh2zyO-PvA
 https://zhuanlan.zhihu.com/p/586963468
 
 《三国志6》有多经典？曹操叫“变巨”，曾是无数人的电脑启蒙
-
----
-
-https://www.zhihu.com/question/39626359
-
-为什么澄海3C没有成为DOTA一样成功的作品？
-
-https://zhuanlan.zhihu.com/p/325972017
-
-STEAM上的科研游戏，真是给正常人玩的？
-
-https://mp.weixin.qq.com/s/NFYlupa0piLjcWrRaP-C-Q
-
-中年失业破产后当雇佣兵、倒卖煎饼果子，游戏里的打工人也这么难？
-
-https://www.zhihu.com/zvideo/1358906505719336960
-
-一个讲述War 3秘密的专栏
-
-http://news.17173.com/content/11112021/094129154.shtml
-
-腾讯、网易搞不定的国产3A，被一个中专生捣鼓出来了，仅售19元？（飞燕群岛）
-
-https://zhuanlan.zhihu.com/p/500967361
-
-街机《三国志》“很黄很暴力”的漫画剧情，刘皇叔靠处子之身起家
-
-https://www.zhihu.com/question/328681136
-
-什么是弹幕射击游戏？
-
-https://www.bilibili.com/read/cv2773215
-
-一个错误诞生一个经典，CS最受欢迎地图“Dust II”背后的故事
-
-https://zhuanlan.zhihu.com/p/619204713
-
-风靡网吧的经典！《三国群英传2》为何是系列最受欢迎的一代？

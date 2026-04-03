@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  AI Chip（三）——群雄
+title:  AI Chip（三）——群雄（1）
 category: Chip 
 ---
 
@@ -208,6 +208,10 @@ https://www.zhihu.com/question/1925252282942988983
 
 华为NPU昇腾芯片是否属于重大战略方向性失误，应该选择GPGPU
 
+https://zhuanlan.zhihu.com/p/2022779284499039419
+
+辩经系列之一：NPU or GPGPU
+
 ## Imagination
 
 Imagination Technologies公司前身是一家名为Video Logic的公司，VideoLogic成立于1985年，主营业务是图形与音频加速等方面。后来选择了与ARM的类似盈利模式——授权IP核，并在1999年更名为Imagination Technologies。
@@ -306,28 +310,6 @@ https://zhuanlan.zhihu.com/p/642431341
 
 壁仞的BR100：来自中国的机器学习GPU
 
-## Groq 
+https://zhuanlan.zhihu.com/p/2017278722395366997
 
-Groq是Google TPU团队的部分成员创立的AI芯片公司。
-
-官网：
-
-https://groq.com/
-
-参考：
-
-https://zhuanlan.zhihu.com/p/102357412
-
-Groq，“软件定义硬件”概念的背后
-
-https://www.zhihu.com/question/510527941
-
-DSA AI芯片，相对GPGPU，能效上有多大优势？是从哪些方面提升了能效？
-
-## 车载芯片
-
-Qualcomm：SA8775P
-
-小鹏：图灵AI芯片
-
-蔚来：神玑NX9031
+重剑无锋:BR100微架构分析

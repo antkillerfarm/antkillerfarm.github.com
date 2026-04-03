@@ -9,13 +9,7 @@ category: AI
 
 # CUDA
 
-## Warp
-
-在织布机上，warp（经线）是纵向固定、张力较高的主线，它们平行排列在织机上。weft/weave（纬线）是横向穿梭交织的线。纺织业是人类历史上最早的大规模并行处理技术。
-
-一个SP可以执行一个thread，但是实际上并不是所有的thread能够在同一时刻执行。Nvidia把32个threads组成一个warp，warp是调度和运行的基本单元。warp中所有threads并行的执行相同的指令。
-
-![](/images/img6/SIMT.jpg)
+## Warp（续）
 
 Warp采用下图的策略来调度thread：
 
@@ -68,6 +62,48 @@ https://zhuanlan.zhihu.com/p/652255520
 https://zhuanlan.zhihu.com/p/646998011
 
 CUDA编程中的并行规约问题
+
+---
+
+Warp Specialization：在同一个线程块内，让不同的Warp承担不同的专门角色/任务，形成生产者-消费者流水线，从而最大化硬件利用率和隐藏延迟。
+
+在早期的GPU上可以手动用分支实现，而在新的GPU上，越往后异步计算的部分越多。
+
+```cpp
+__global__ void warp_specialization_kernel(int* global_mem) {
+    int idx = threadIdx.x + blockIdx.x * blockDim.x;
+
+    if (threadIdx.x < 32) {
+        // Producer warp
+    } else {
+        // Consumer warp
+    }
+}
+```
+
+和warp内的分支会导致warp divergence不同，不同的warp的分支是没有这个性能问题的。
+
+pingpong就是N=2的multi-stage，所以这个问题等价于为什么在Ampere NStage=2不够了。
+
+Warp-Specialization的优势是在计算访存流水上的调度更灵活，劣势是代码写起来更麻烦。直到Ampere它的优势都不足以让人忍受它的劣势，而Hopper上Warp-Specialization变成了一种必须要使用的技术。
+
+https://www.zhihu.com/question/11261005710
+
+为什么Hopper架构上warp-specialization比multi-stage要好？
+
+---
+
+CTA：Cooperative Thread Array，即协作线程数组。它是由一组线程组成的集合，这些线程可以执行相同的程序，并且能够相互通信。CTA是CUDA中线程组织的基本单元，通常被称为线程块（Thread Block）。
+
+CTA提供了同步点，允许开发者在需要时对CTA内的所有线程进行同步，例如使用__syncthreads()函数。
+
+和Thread Block密切相关的概念还有Data Block，用于规划数据的访存。
+
+Ampere及之前：Grid → CTA → Warp → Thread
+
+Hopper/Blackwell：Grid → CTA → Warpgroup → Warp → Thread
+
+新增的Warpgroup做为Tensor Core的编程接口单位。
 
 ## Memory Coalescing
 
@@ -203,14 +239,6 @@ https://www.leetgpu.com/
 
 ---
 
-CTA：Cooperative Thread Array，即协作线程数组。它是由一组线程组成的集合，这些线程可以执行相同的程序，并且能够相互通信。CTA是CUDA中线程组织的基本单元，通常被称为线程块（Thread Block）。
-
-CTA提供了同步点，允许开发者在需要时对CTA内的所有线程进行同步，例如使用__syncthreads()函数。
-
-和Thread Block密切相关的概念还有Data Block，用于规划数据的访存。
-
----
-
 `vectorAdd<<<4096, 256, 0, s0>>>`表示内核函数vectorAdd将在GPU上以4096个块执行，每个块包含256个线程，总共有4096x256个线程。
 
 0表示为这个内核函数分配的动态共享内存的大小，单位是字节。s0指定关联的stream。
@@ -293,18 +321,6 @@ CUDA动态并行详解（CDP2）
 ---
 
 在“blocked”排列中，每个线程拥有一组连续的数据项；在“striped”排列中，所有线程拥有的数据项交错存储。
-
----
-
-早期的GPU硬件上只有一个execution engine，因此，不论是哪个进程、哪个线程发起的kernel launch，都在同一个队列里排队。
-
-随着GPU的发展，GPU上面开始出现了多个execution engine。
-
-一个stream就对应于一个执行队列（加一个执行单元），用户可以自行决定是否把两个kernel分开放在两个队列里。
-
-https://zhuanlan.zhihu.com/p/699754357
-
-一文读懂cuda stream与cuda event
 
 ---
 

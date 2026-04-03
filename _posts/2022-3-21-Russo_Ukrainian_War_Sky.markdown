@@ -77,6 +77,8 @@ Every country has its own mafia. In Russia, the mafia has its own country. -- by
 
 ![](/images/img6/mrsa.jpg)
 
+世界上最艰难卓绝的事业是战争，历史上最考验人性的地狱是战争，只有战争才能塑造真正的统帅，那些依靠血统和文宣标榜的名声不过是傻瓜的装饰品。没有经历过、主导过战争的人，永远不会理解什么是残酷、什么是意志、什么是决断，也就不配领导这个国家。 -- by 拿破仑
+
 ---
 
 2013.11.21 迈丹运动开始。

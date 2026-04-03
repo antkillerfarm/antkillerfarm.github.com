@@ -269,6 +269,14 @@ model-explorer
 
 ## pass
 
+td定义示例：
+
+```
+def HoistAllocas : Pass<"cir-hoist-allocas"> {
+  ...
+}
+```
+
 OpRewritePattern示例：
 
 ```cpp

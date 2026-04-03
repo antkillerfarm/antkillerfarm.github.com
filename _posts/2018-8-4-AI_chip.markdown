@@ -266,6 +266,8 @@ HMC（Hybrid Memory Cube）
 
 但你或多或少地放弃掉HBM的这些约束的话，你会发现，什么HBM很难做啥的，都消失不见了，没有EUV就没有呗，大不了尺寸做大点。
 
+NV的Feynman架构也将使用定制化的HBM。
+
 https://zhuanlan.zhihu.com/p/1942523887578494185
 
 你缺HBM吗？
@@ -305,19 +307,3 @@ Chiplet最强科普
 https://zhuanlan.zhihu.com/p/356505099
 
 Chiplet与异构集成技术研究
-
-https://www.zhihu.com/question/565166250
-
-AMD的chiplets芯片出了这么多年了，为什么Intel和NVIDIA还不跟进？
-
-https://www.zhihu.com/question/318057718
-
-hbm2显存和gddr6显存,如果单从相同显存比较性能哪个好？
-
-https://www.zhihu.com/question/422438453
-
-NVIDIA为什么在游戏卡上死活不用HBM2显存？
-
-https://zhuanlan.zhihu.com/p/681519240
-
-HBM发展概述

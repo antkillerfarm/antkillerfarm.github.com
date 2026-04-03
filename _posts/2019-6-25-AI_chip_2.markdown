@@ -9,6 +9,24 @@ category: Chip
 
 # AI Chip
 
+## HBM（续）
+
+https://www.zhihu.com/question/565166250
+
+AMD的chiplets芯片出了这么多年了，为什么Intel和NVIDIA还不跟进？
+
+https://www.zhihu.com/question/318057718
+
+hbm2显存和gddr6显存,如果单从相同显存比较性能哪个好？
+
+https://www.zhihu.com/question/422438453
+
+NVIDIA为什么在游戏卡上死活不用HBM2显存？
+
+https://zhuanlan.zhihu.com/p/681519240
+
+HBM发展概述
+
 ## 存算一体
 
 ![](/images/img4/bottleneck.png)
@@ -196,5 +214,3 @@ http://www.deephi.com/
 那么正确的做法是什么呢？参见ONNX。我司的方案比ONNX略早，但思路基本一致。
 
 5.Model Zoo。这个比较寒碜了，只有三个模型，而且还都是最简单的分类模型。不过从支持Inception v1来看，应该是掌握了加速分支网络的技巧。其他的Face Detection等只有视频，没有模型，似乎还处于实验室阶段，可能易用性还有待提升。
-
-无耻的谈一下我司的Model Zoo。包含40+的模型，涵盖图像分类、目标检测、图像分割、人脸识别、超分辨率、OCR等。目前，主要往RNN、Attention方面发展。这里会遇到循环结构的问题，还没有做的太好。

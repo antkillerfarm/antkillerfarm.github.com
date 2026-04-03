@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度学习（二十）——Ultra Deep Network
+title:  深度学习（二十）——Ultra Deep Network（1）
 category: DL 
 ---
 
