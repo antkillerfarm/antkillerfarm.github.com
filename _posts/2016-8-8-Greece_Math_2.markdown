@@ -213,10 +213,6 @@ https://zhuanlan.zhihu.com/p/36297534
 
 x=cos(x)的解析形式
 
-https://mp.weixin.qq.com/s/5PR4OUubguj0WLB85aa9Mg
-
-2018年菲尔兹奖候选人分析
-
 http://www.matrix67.com/blog/archives/6750
 
 趣题：两个方阵是怎样互相穿过对方的？
@@ -228,15 +224,3 @@ https://mp.weixin.qq.com/s/9dphMMCaTRtJ-HtbygOP7w
 https://mp.weixin.qq.com/s/HKe_rY9OgwFFc3JH8luokw
 
 数学编年史：数学的起源与发展历程
-
-https://mp.weixin.qq.com/s/rM78u0bF2bqI7eQ4t6lxpw
-
-国内奇葩小学数学题横扫推特，老外被难哭了
-
-https://mp.weixin.qq.com/s/SV3A5tFtZyWgTVXW-1s74w
-
-数学，原来可以这么美！
-
-https://mp.weixin.qq.com/s/xVzLUDmDlnzyGtbReoHDuQ
-
-曾被无视多年，却成就19世纪最伟大的一场革命，影响了整个世界！（非欧几何）

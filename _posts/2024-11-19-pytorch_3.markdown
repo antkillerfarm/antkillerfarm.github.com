@@ -168,6 +168,12 @@ assert_close公式：
 
 $$| actual−expected | \leq atol + rtol * | expected |$$
 
+---
+
+普通张量要求所有元素形状一致（矩形），而NestedTensor允许"内部维度长度不一"（锯齿状/Jagged），不用填充让变长数据在GPU上高效处理，是训练Transformer等模型时的重要优化手段。
+
+NestedTensor使用偏移量索引，记录每个序列从哪里开始。
+
 ## 参考
 
 https://mp.weixin.qq.com/s/zhkaenFdnB5KgaEYb-XDEQ

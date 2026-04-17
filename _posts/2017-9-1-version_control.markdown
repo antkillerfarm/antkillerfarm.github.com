@@ -89,33 +89,37 @@ https://github.com/ttroy50/cmake-examples
 
 ---
 
-添加头文件目录
+添加头文件目录：
 
 `include_directories(../../../thirdparty/comm/include)`
 
-添加需要链接的库文件目录
+添加需要链接的库文件目录：
 
 `link_directories("/home/server/third/lib")`
 
-查找库所在目录
+查找库所在目录：
 
 `find_library(RUNTIME_LIB rt /usr/lib  /usr/local/lib NO_DEFAULT_PATH)`
 
-添加需要链接的库文件路径
+添加需要链接的库文件路径：
 
 `link_libraries(“/home/server/third/lib/libcommon.a”)`
 
-设置要链接的库文件的名称
+设置要链接的库文件的名称：
 
 `target_link_libraries(myProject libcomm.so)`
 
-为工程生成目标文件
+为工程生成目标文件：
 
 `add_executable(demo main.cpp)`
 
-下载文件
+下载文件：
 
 `file(DOWNLOAD url file)`
+
+打印本cmake文件，当前被谁调用：
+
+`CMAKE_PARENT_LIST_FILE`
 
 参考：
 
@@ -309,28 +313,6 @@ https://zhuanlan.zhihu.com/p/77577415
 
 Monorepo是什么，为什么大家都在用？
 
-## Git多项目管理
+## git常用命令
 
-项目越来越大，一些通用的模块我们希望将他抽离出来作为单独的项目，以便其他项目也可以使用，或者使用一些第三方库，可能我们并不想将代码直接拷贝进我们的项目里面，而仅仅只是单纯的引用。
-
-基于Git有多种方式来解决这个问题：
-
-- Git Submodule。
-
-- Git Subtree。这两个已经集成到git中。
-
-- GitSlave。一个git插件，需要额外安装。
-
-- Google Repo。基于git的python脚本。Android项目的官方工具。
-
-`git submodule update --init --remote --rebase`
-
-单独更新子module AAA：
-
-`git submodule update AAA`
-
-参考：
-
-https://www.jianshu.com/p/284ded3d191b
-
-Git多项目管理
+![](/images/img3/git.png)

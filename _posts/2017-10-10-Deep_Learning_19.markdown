@@ -9,6 +9,72 @@ category: DL
 
 # 无监督/半监督/自监督深度学习（续）
 
+https://mp.weixin.qq.com/s/6qqFAQBaOFuXtaeRSmQgsQ
+
+一文梳理2020年大热的对比学习模型
+
+https://mp.weixin.qq.com/s/SeAZERYdfqDbtqTLnuWfGg
+
+盘点近期大热对比学习模型：MoCo/SimCLR/BYOL/SimSiam
+
+https://mp.weixin.qq.com/s/jHVg-BMRRVNjAf6ZFEoPxQ
+
+自监督学习的SimCLRv2框架
+
+https://mp.weixin.qq.com/s/7iBC_n6EARW3V8bNuKUqQA
+
+Hinton团队力作：SimCLR系列
+
+https://mp.weixin.qq.com/s/sH-G4g0EyQLu2l91Xvdefw
+
+Neighbor2Neighbor：无需干净图像的自监督图像降噪
+
+https://mp.weixin.qq.com/s/xYlCAUIue_z14Or4oyaCCg
+
+对比学习研究进展精要
+
+https://mp.weixin.qq.com/s/VlSoMmAGDblQ2UYhLD96gA
+
+什么是contrastive learning？
+
+https://mp.weixin.qq.com/s/qnG0YLf0yjs4aT9URRMDyw
+
+有监督对比学习的一个简单的例子
+
+https://mp.weixin.qq.com/s/h8loG3enT5U-5F2a2UflJg
+
+对比学习小综述
+
+https://mp.weixin.qq.com/s/v5p9QA3vDl-WTF3-7shp4g
+
+对比学习简述
+
+https://mp.weixin.qq.com/s/CeqoXqHjfa6UTWa8mmo_Ww
+
+Paper和陈丹琦撞车是一种怎样的体验（ConSERT vs. SimCSE）
+
+https://mp.weixin.qq.com/s/C4KaIXO9Lp8tlqhS3b0VCw
+
+美团提出基于对比学习的文本表示模型（ConSERT）
+
+## 参考
+
+https://mp.weixin.qq.com/s/sDkGAhnFC027XjpUImeatw
+
+自监督、半监督、无监督学习，傻傻分不清楚？最新综述来帮你！
+
+https://mp.weixin.qq.com/s/L4GQF0eE7MjLPrb8UygCww
+
+无监督深度学习全景教程（193页PDF）
+
+https://mp.weixin.qq.com/s/kbqTHIOzAj1aERl4tm-kVA
+
+2017上半年无监督特征学习研究成果汇总
+
+https://mp.weixin.qq.com/s/J50L6hESBROfT8IIAnofQQ
+
+Yan LeCun109页最新报告：图嵌入, 内容理解，自监督学习
+
 https://mp.weixin.qq.com/s/s440gdbUhLP41rLPjfgsmQ
 
 Yann Lecun自监督学习指南（附114页Slides全文下载）
@@ -260,73 +326,3 @@ h_t =& & \\ & o_t \odot g(C_t) & otherwise. \\
 ![](/images/img2/RNN_SVD.png)
 
 这是另一篇RNN模型压缩的论文。上图中的a是原始RNN，而b是对$$W_h^l$$使用了SVD之后的RNN。
-
-## 《Video Summarization with Long Short-term Memory》
-
-这是一篇用于提取视频关键帧（也叫静态视频摘要）的论文，是南加州大学沙飞小组的作品。
-
-![](/images/img2/dppLSTM.png)
-
-上图是该文提出的DPP LSTM的网络结构图。它的主体是一个BiLSTM，算是中规中矩吧。
-
-该文的创新点在于提出了DPP loss的概念。上图中的$$y_t$$表示帧的分值（越大表示越重要），$$\phi_t$$表示帧之间的相似度。该文的实验表明，将两个特征分开抽取，有助于提升模型的准确度。
-
-这篇论文主要用到了3个数据集：
-
-TVSum dataset: 
-
-https://github.com/yalesong/tvsum
-
-这个需要Yahoo账号和一个高校的邮件地址才行。
-
-SumMe dataset: 
-
-https://people.ee.ethz.ch/~gyglim/vsum/#benchmark
-
-OVP and YouTube datasets: 
-
-https://sites.google.com/site/vsummsite/
-
-需要翻墙。
-
-## LSTM运算加速技巧
-
-LSTM的主要运算量集中在$$W[h_{t-1},x_t]$$上，这里实际上可以用$$W[(h_{t-2}+\Delta h_{t-1}),x_t]$$代替。
-
-由于时间序列通常具有惯性，因此$$\Delta h_{t-1}$$一般包含了大量的0，这对于某些具有跳0功能的硬件来说，是非常有利的。
-
-## Convolutional LSTM Network
-
-论文：
-
-《Convolutional LSTM Network: A Machine Learning Approach for Precipitation Nowcasting》
-
-## 参考
-
-https://mp.weixin.qq.com/s/4IHzOAvNhHG9c8GP0zXVkQ
-
-Simple Recurrent Unit For Sentence Classification
-
-https://mp.weixin.qq.com/s/fCzHbOi7aJ8-W9GzctUFNg
-
-LSTM文本分类实战
-
-http://mp.weixin.qq.com/s/3nwgft9c27ih172ANwHzvg
-
-从零开始：如何使用LSTM预测汇率变化趋势
-
-https://mp.weixin.qq.com/s/M18c3sgvjV2b2ksCsyOxbQ
-
-Nested LSTM：一种能处理更长期信息的新型LSTM扩展
-
-https://mp.weixin.qq.com/s/XAbzaMXP3QOret_vxqVF9A
-
-用深度学习LSTM炒股：对冲基金案例分析
-
-https://mp.weixin.qq.com/s/eeA5RZh35BvlFt45ywVvFg
-
-可视化LSTM网络：探索“记忆”的形成
-
-https://mp.weixin.qq.com/s/h-MYTNTLy7ToPPEZ2JVHpw
-
-阿里巴巴论文提出Advanced LSTM：关于更优时间依赖性刻画在情感识别方面的应用

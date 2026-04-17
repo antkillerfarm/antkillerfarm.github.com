@@ -9,6 +9,46 @@ category: DL acceleration
 
 # 知识蒸馏（续）
 
+https://mp.weixin.qq.com/s/xcd9CHgE2_vEXrQ4MK019Q
+
+知识蒸馏方法的演进历史综述
+
+https://zhuanlan.zhihu.com/p/265906295
+
+知识蒸馏：如何用一个神经网络训练另一个神经网络
+
+https://mp.weixin.qq.com/s/qE1makMUIaFNrWk4nqOxDw
+
+最新《知识蒸馏》2020综述论文，30页pdf，悉尼大学
+
+https://zhuanlan.zhihu.com/p/51563760
+
+知识蒸馏（Knowledge Distillation）最新进展（一）
+
+https://zhuanlan.zhihu.com/p/53864403
+
+知识蒸馏（Knowledge Distillation）最新进展（二）
+
+https://zhuanlan.zhihu.com/p/81467832
+
+知识蒸馏（Knowledge Distillation）简述（一）
+
+https://mp.weixin.qq.com/s/pXoENwz4Z-eok9y3P9rQvg
+
+知识蒸馏（Knowledge Distillation）简述（二）
+
+https://zhuanlan.zhihu.com/p/102038521
+
+知识蒸馏(Knowledge Distillation) 经典之作
+
+https://zhuanlan.zhihu.com/p/92166184
+
+知识蒸馏简述（一）
+
+https://zhuanlan.zhihu.com/p/92269636
+
+知识蒸馏简述（二）
+
 http://coderskychen.cn/2019/02/23/distilling/
 
 知识蒸馏三部曲：从模型蒸馏、数据蒸馏到任务蒸馏
@@ -334,49 +374,3 @@ TensorFlow模型优化工具包—训练时量化
 https://mp.weixin.qq.com/s/fa5S3o1somvdAAJF1FGqvA
 
 TensorFlow模型优化工具包正式推出
-
-# 模型压缩与加速进阶
-
-https://zhuanlan.zhihu.com/p/138059904
-
-一文看懂深度学习模型压缩和加速
-
-https://zhuanlan.zhihu.com/p/179945324
-
-一文深入深度学习模型压缩和加速
-
-https://mp.weixin.qq.com/s/QSGgvhkMUj3cXVlQwlzTFQ
-
-深度神经网络加速和压缩新进展年度报告
-
-https://zhuanlan.zhihu.com/p/37074222
-
-CVPR 2018 高效小网络探密（上）
-
-https://zhuanlan.zhihu.com/p/37919669
-
-CVPR 2018 高效小网络探密（下）
-
-https://zhuanlan.zhihu.com/p/38046989
-
-从ISCA论文看AI硬件加速的新技巧
-
-https://mp.weixin.qq.com/s/s6Z8P8bUkyoKU2mW3z-rNQ
-
-轻量级网络/检测/分割综述
-
-https://mp.weixin.qq.com/s/-V6hlZAKp1vuARSibZDBQQ
-
-深度学习高效计算与处理器设计
-
-https://mp.weixin.qq.com/s/ccFccLb2UTyFyMwFPjsDaA
-
-让CNN跑得更快，腾讯优图提出全局和动态过滤器剪枝
-
-https://mp.weixin.qq.com/s/cSYCT1I1asaSCIc5Hgu0Jw
-
-计算成本降低35倍！谷歌发布手机端自动设计神经网络MnasNet
-
-https://zhuanlan.zhihu.com/p/42474017
-
-MnasNet：终端轻量化模型新思路

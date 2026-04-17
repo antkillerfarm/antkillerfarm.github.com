@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 中东（八）
-category: World 
+category: Middle East 
 ---
 
 * toc

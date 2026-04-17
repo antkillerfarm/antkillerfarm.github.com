@@ -144,6 +144,16 @@ stencil计算：
 
 ![](/images/img5/stencil.jpg)
 
+## OpenSHMEM
+
+OpenSHMEM的前身是SHMEM library，在1990s诞生（跟MPI一个年代），但是SHMEM library并没有一套统一的标准，各个发行方都定义自己的接口，这就造成了许多移植上的不便。直到2011年OpenSHMEM诞生了，将标准同一，发布了OpenSHMEM Specification 1.0。
+
+NVSHMEM是NVIDIA开发的一种基于OpenSHMEM标准的并行编程库，专为NVIDIA GPU和NVLink/NVSwitch高速互联架构设计。
+
+http://blog.sysu.tech/Research/OpenSHMEM%E7%9A%84%E4%B8%80%E7%82%B9%E8%B0%83%E7%A0%94/
+
+OpenSHMEM的一点调研
+
 ## 参考
 
 https://zhuanlan.zhihu.com/p/69497154

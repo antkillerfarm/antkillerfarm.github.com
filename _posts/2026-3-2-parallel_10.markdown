@@ -211,6 +211,16 @@ https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
 
 # CUDA+
 
+Local Thread Block：当前正在执行的线程所在的线程块。
+
+Remote Thread Block：线程块簇中除本地线程块之外的其他线程块。
+
+---
+
+cuda_dlink: CUDA Dynamic Linking
+
+---
+
 早期的GPU硬件上只有一个execution engine，因此，不论是哪个进程、哪个线程发起的kernel launch，都在同一个队列里排队。
 
 随着GPU的发展，GPU上面开始出现了多个execution engine。

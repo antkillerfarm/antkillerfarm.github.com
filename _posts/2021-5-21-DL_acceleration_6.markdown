@@ -9,6 +9,52 @@ category: DL acceleration
 
 # 模型压缩与加速进阶
 
+# 模型压缩与加速进阶
+
+https://zhuanlan.zhihu.com/p/138059904
+
+一文看懂深度学习模型压缩和加速
+
+https://zhuanlan.zhihu.com/p/179945324
+
+一文深入深度学习模型压缩和加速
+
+https://mp.weixin.qq.com/s/QSGgvhkMUj3cXVlQwlzTFQ
+
+深度神经网络加速和压缩新进展年度报告
+
+https://zhuanlan.zhihu.com/p/37074222
+
+CVPR 2018 高效小网络探密（上）
+
+https://zhuanlan.zhihu.com/p/37919669
+
+CVPR 2018 高效小网络探密（下）
+
+https://zhuanlan.zhihu.com/p/38046989
+
+从ISCA论文看AI硬件加速的新技巧
+
+https://mp.weixin.qq.com/s/s6Z8P8bUkyoKU2mW3z-rNQ
+
+轻量级网络/检测/分割综述
+
+https://mp.weixin.qq.com/s/-V6hlZAKp1vuARSibZDBQQ
+
+深度学习高效计算与处理器设计
+
+https://mp.weixin.qq.com/s/ccFccLb2UTyFyMwFPjsDaA
+
+让CNN跑得更快，腾讯优图提出全局和动态过滤器剪枝
+
+https://mp.weixin.qq.com/s/cSYCT1I1asaSCIc5Hgu0Jw
+
+计算成本降低35倍！谷歌发布手机端自动设计神经网络MnasNet
+
+https://zhuanlan.zhihu.com/p/42474017
+
+MnasNet：终端轻量化模型新思路
+
 https://mp.weixin.qq.com/s/nys9R6xCJXt0vG06gnQzFQ
 
 模型剪枝，不可忽视的推断效率提升方法
@@ -344,51 +390,3 @@ https://mp.weixin.qq.com/s/3oL0Bso3mwbsfaG8X5-xoA
 https://mp.weixin.qq.com/s/LGCGYSoMpPfojEi2WcmjnQ
 
 TinyML：下一轮人工智能革命
-
-https://mp.weixin.qq.com/s/B-OJ_oW_uJufqIfIZSA7Ww
-
-专家从7个维度全面评测轻量级网络
-
-https://mp.weixin.qq.com/s/UDUOIIyGJtXHdc3xcyfOIg
-
-万字综述：用于深度神经网络加速的Shift操作
-
-https://zhuanlan.zhihu.com/p/301162618
-
-深度学习模型压缩与加速
-
-https://mp.weixin.qq.com/s/Lv1JuwNohAsIAB1SKT7Lkg
-
-深度卷积网络的剪枝和加速
-
-https://mp.weixin.qq.com/s/VEnX3YKQ02mRg2qbqMbXcg
-
-轻量级网络综述—主干网络篇
-
-https://mp.weixin.qq.com/s/s9Bp3s-Ep3QPDpo1mmwgWw
-
-模型压缩系列一：模型替换
-
-https://mp.weixin.qq.com/s/CNaQbeLbN4J3CsUIMaezFw
-
-模型压缩系列二：模型蒸馏
-
-https://mp.weixin.qq.com/s/WVwB-ldc8Yoin6I_m6RT5g
-
-CNN轻量化模型及其设计原则综述
-
-https://mp.weixin.qq.com/s/IfvXrsUq8-cBDC4_3O5v_w
-
-Facebook新研究优化硬件浮点运算，强化AI模型运行速率
-
-https://mp.weixin.qq.com/s/Jsxiha_BFtWVLvO4HMwJ3Q
-
-工业界第一手实战经验：深度学习高效网络结构设计
-
-https://mp.weixin.qq.com/s/F0ykoKv027ycinsAZZjbWQ
-
-ThunderNet：国防科大、旷视提出首个在ARM上实时运行的通用目标检测算法
-
-https://mp.weixin.qq.com/s/J3ftOKDPBY5YYD4jkS5-aQ
-
-ThunderNet：Two-stage形式的目标检测也可很快而且精度很高

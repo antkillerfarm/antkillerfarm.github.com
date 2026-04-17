@@ -215,6 +215,20 @@ Prompt Engineering Guide
 
 ---
 
+Prompt Engineering的进阶，就是Skill Engineering。它将特定领域的专业知识和工作流程封装成可复用、可调用、可分享的标准化指令模块。
+
+一个标准的Skill通常包含三层定义 ：
+
+- 语义层 (Semantic Manifest)：给LLM看的"说明书"，描述Skill的用途、触发场景、参数定义，让AI理解"什么时候该用这个技能"。
+- 执行层 (Executor)：实际执行的代码逻辑（Python/Java/Go函数、API调用等），完成具体的数据查询、文件处理等操作。
+- 策略层 (SOP/Workflow)：定义执行步骤、参数组合、异常处理流程，指导AI如何编排多个工具完成任务。
+
+https://zhuanlan.zhihu.com/p/2027466594926751746
+
+SkillReducer：为Skills瘦身，破解Token低效难题
+
+---
+
 参考：
 
 https://mp.weixin.qq.com/s/dkNH4BLOH36B5h_UCcRLnA
@@ -294,69 +308,3 @@ https://mp.weixin.qq.com/s/-Vtl_8nND7WCPLdL5bNlMw
 https://zhuanlan.zhihu.com/p/321642265
 
 《探索简单孪生网络表示学习》阅读笔记
-
-https://mp.weixin.qq.com/s/6qqFAQBaOFuXtaeRSmQgsQ
-
-一文梳理2020年大热的对比学习模型
-
-https://mp.weixin.qq.com/s/SeAZERYdfqDbtqTLnuWfGg
-
-盘点近期大热对比学习模型：MoCo/SimCLR/BYOL/SimSiam
-
-https://mp.weixin.qq.com/s/jHVg-BMRRVNjAf6ZFEoPxQ
-
-自监督学习的SimCLRv2框架
-
-https://mp.weixin.qq.com/s/7iBC_n6EARW3V8bNuKUqQA
-
-Hinton团队力作：SimCLR系列
-
-https://mp.weixin.qq.com/s/sH-G4g0EyQLu2l91Xvdefw
-
-Neighbor2Neighbor：无需干净图像的自监督图像降噪
-
-https://mp.weixin.qq.com/s/xYlCAUIue_z14Or4oyaCCg
-
-对比学习研究进展精要
-
-https://mp.weixin.qq.com/s/VlSoMmAGDblQ2UYhLD96gA
-
-什么是contrastive learning？
-
-https://mp.weixin.qq.com/s/qnG0YLf0yjs4aT9URRMDyw
-
-有监督对比学习的一个简单的例子
-
-https://mp.weixin.qq.com/s/h8loG3enT5U-5F2a2UflJg
-
-对比学习小综述
-
-https://mp.weixin.qq.com/s/v5p9QA3vDl-WTF3-7shp4g
-
-对比学习简述
-
-https://mp.weixin.qq.com/s/CeqoXqHjfa6UTWa8mmo_Ww
-
-Paper和陈丹琦撞车是一种怎样的体验（ConSERT vs. SimCSE）
-
-https://mp.weixin.qq.com/s/C4KaIXO9Lp8tlqhS3b0VCw
-
-美团提出基于对比学习的文本表示模型（ConSERT）
-
-## 参考
-
-https://mp.weixin.qq.com/s/sDkGAhnFC027XjpUImeatw
-
-自监督、半监督、无监督学习，傻傻分不清楚？最新综述来帮你！
-
-https://mp.weixin.qq.com/s/L4GQF0eE7MjLPrb8UygCww
-
-无监督深度学习全景教程（193页PDF）
-
-https://mp.weixin.qq.com/s/kbqTHIOzAj1aERl4tm-kVA
-
-2017上半年无监督特征学习研究成果汇总
-
-https://mp.weixin.qq.com/s/J50L6hESBROfT8IIAnofQQ
-
-Yan LeCun109页最新报告：图嵌入, 内容理解，自监督学习

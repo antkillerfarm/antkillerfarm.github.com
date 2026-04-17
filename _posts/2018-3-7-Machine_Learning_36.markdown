@@ -309,6 +309,10 @@ https://mp.weixin.qq.com/s/o129MwpGzx8tzjUCkz1npw
 
 ## 参考
 
+Isaac Sim是NVIDIA开源的机器人仿真平台，基于NVIDIA Omniverse构建，专门用于开发、训练和测试AI驱动的机器人。
+
+---
+
 https://mp.weixin.qq.com/s/cGKtvtZzR--sGL4oNSZfAw
 
 深度分析NVIDIA A100显卡架构

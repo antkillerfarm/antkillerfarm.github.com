@@ -253,10 +253,6 @@ https://mp.weixin.qq.com/s/m9Fogy9MIXHLJu5WR420aQ
 
 去丹佛捉三角龙！
 
-https://www.zhihu.com/question/418037265
-
-叶绿素怎么进化出来的？
-
 https://mp.weixin.qq.com/s/YlF2qHN_j-Nh9K25Rc4KGQ
 
 鸟类也要换毛？从它们的祖先开始就是这样
@@ -276,10 +272,6 @@ https://mp.weixin.qq.com/s/nbfpqT_fKRsVuJC9LUWsDw
 https://mp.weixin.qq.com/s/C0R04rlmUaIDZ7TYKAv18Q
 
 恐龙也有“敏感肌”？
-
-https://mp.weixin.qq.com/s/3H2XcbSWgdekYYDRJuNuYw
-
-这个五亿年前的“四不像”，为达尔文进化论再添实锤
 
 https://mp.weixin.qq.com/s/4kWsQp9jUUpZas09lccOiA
 

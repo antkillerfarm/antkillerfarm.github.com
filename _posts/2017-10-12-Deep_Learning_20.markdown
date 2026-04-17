@@ -9,6 +9,76 @@ category: DL
 
 # LSTM进阶（续）
 
+## 《Video Summarization with Long Short-term Memory》
+
+这是一篇用于提取视频关键帧（也叫静态视频摘要）的论文，是南加州大学沙飞小组的作品。
+
+![](/images/img2/dppLSTM.png)
+
+上图是该文提出的DPP LSTM的网络结构图。它的主体是一个BiLSTM，算是中规中矩吧。
+
+该文的创新点在于提出了DPP loss的概念。上图中的$$y_t$$表示帧的分值（越大表示越重要），$$\phi_t$$表示帧之间的相似度。该文的实验表明，将两个特征分开抽取，有助于提升模型的准确度。
+
+这篇论文主要用到了3个数据集：
+
+TVSum dataset: 
+
+https://github.com/yalesong/tvsum
+
+这个需要Yahoo账号和一个高校的邮件地址才行。
+
+SumMe dataset: 
+
+https://people.ee.ethz.ch/~gyglim/vsum/#benchmark
+
+OVP and YouTube datasets: 
+
+https://sites.google.com/site/vsummsite/
+
+需要翻墙。
+
+## LSTM运算加速技巧
+
+LSTM的主要运算量集中在$$W[h_{t-1},x_t]$$上，这里实际上可以用$$W[(h_{t-2}+\Delta h_{t-1}),x_t]$$代替。
+
+由于时间序列通常具有惯性，因此$$\Delta h_{t-1}$$一般包含了大量的0，这对于某些具有跳0功能的硬件来说，是非常有利的。
+
+## Convolutional LSTM Network
+
+论文：
+
+《Convolutional LSTM Network: A Machine Learning Approach for Precipitation Nowcasting》
+
+## 参考
+
+https://mp.weixin.qq.com/s/4IHzOAvNhHG9c8GP0zXVkQ
+
+Simple Recurrent Unit For Sentence Classification
+
+https://mp.weixin.qq.com/s/fCzHbOi7aJ8-W9GzctUFNg
+
+LSTM文本分类实战
+
+http://mp.weixin.qq.com/s/3nwgft9c27ih172ANwHzvg
+
+从零开始：如何使用LSTM预测汇率变化趋势
+
+https://mp.weixin.qq.com/s/M18c3sgvjV2b2ksCsyOxbQ
+
+Nested LSTM：一种能处理更长期信息的新型LSTM扩展
+
+https://mp.weixin.qq.com/s/XAbzaMXP3QOret_vxqVF9A
+
+用深度学习LSTM炒股：对冲基金案例分析
+
+https://mp.weixin.qq.com/s/eeA5RZh35BvlFt45ywVvFg
+
+可视化LSTM网络：探索“记忆”的形成
+
+https://mp.weixin.qq.com/s/h-MYTNTLy7ToPPEZ2JVHpw
+
+阿里巴巴论文提出Advanced LSTM：关于更优时间依赖性刻画在情感识别方面的应用
+
 https://mp.weixin.qq.com/s/pv3gQfCayGmsmGKLbMIFpA
 
 神奇！只有遗忘门的LSTM性能优于标准LSTM
@@ -154,85 +224,3 @@ https://mp.weixin.qq.com/s/okx0jZR6PmFm3ikCCUbNkg
 https://mp.weixin.qq.com/s/geANIVbd4C0qpSig0IB2zA
 
 梯形DenseNets结构实现语义分割新高度！
-
-## Dual Path Networks
-
-DPN是冯佳时和颜水成团队的Yunpeng Chen的作品。
-
->冯佳时，中国科学技术大学自动化系学士，新加坡国立大学电子与计算机工程系博士。现任新加坡国立大学电子与计算机工程系助理教授。
-
-论文：
-
-《Dual Path Networks》
-
-代码：
-
-https://github.com/cypw/DPNs
-
-这篇论文首先从拓扑关系的角度分析了ResNet、DenseNet和HORNN（Higher Order RNN）之间的联系。
-
-![](/images/img2/DPN_3.png)
-
-如上所示，RNN相当于共享权值的串联的ResNet，而DenseNet则相当于并联的RNN。
-
-更进一步的，上述三者都可表述为以下通式：
-
-$$h^k=g^k\left[\sum_{t=0}^{k-1}f_t^k(h^t)\right]$$
-
-其中，$$h^t$$表示t时刻的隐层状态；索引k表示当前时刻；$$x^t$$表示t时刻的输入；$$f_t^k(⋅)$$表示特征提取；$$g^k$$表示对提取特征做输出前的变换。
-
-如果$$f_t^k(\cdot)$$和$$g^k(\cdot)$$每个Step都共享，那么就是HORNN，如果只有$$f_t^k(\cdot)$$共享，那么就是ResNet，两者都不共享，那就是DenseNet。
-
-![](/images/img2/DPN.png)
-
-上图展示的是ResNet和DenseNet的示意图。图中用线填充的柱状体，表示的是主干结点的tensor的大小。
-
-ResNet由于跨层和主干之间是element-wise的加法运算，因此每个主干结点的tensor都是一样大的。
-
-而DenseNet的跨层和主干之间是Concatenation运算，因此主干越往下，tensor越大。
-
-通过上面的分析，我们可以认识到 ：
-
-ResNet： 侧重于特征的再利用，但不善于发掘新的特征；
-
-DenseNet: 侧重于新特征的发掘，但又会产生很多冗余；
-
-为了综合二者的优点，作者设计了DPN网络：
-
-![](/images/img2/DPN_2.png)
-
-参考：
-
-http://blog.csdn.net/scutlihaoyu/article/details/75645551
-
-《Dual Path Networks》笔记
-
-http://www.cnblogs.com/mrxsc/p/7693316.html
-
-Dual Path Networks
-
-http://blog.csdn.net/u014380165/article/details/75676216
-
-DPN（Dual Path Network）算法详解
-
-https://mp.weixin.qq.com/s/m4cRV9yX-8r4BI0EkVRYig
-
-残差网络家族10多个变种学习卡片，请收下！
-
-## CSPNet
-
-![](/images/img5/CSPNet.jpg)
-
-![](/images/img5/CSPNet_2.jpg)
-
-https://zhuanlan.zhihu.com/p/124838243
-
-CSPNet论文笔记
-
-## mHC
-
-标准残差连接是每一个现代Transformer的脊梁。其思路很简单：
-
-$$x_{l+1} = x_l + F(x_l)$$
-
-其输入原封不动地流过，加上该层的输出。这是一条单一的信息流。进去是什么，出来的就是什么，加上一个学习到的更新量。这就是为什么Transformer可以深达数百层：梯度有一条干净的向后路径。简单，稳定。自2016年以来未曾改变。

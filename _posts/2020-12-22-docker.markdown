@@ -209,6 +209,10 @@ Ctrl+p Ctrl+q：退出后，容器仍然运行。
 
 `docker inspect <container_id>`
 
+7.修改CPU core数量和内存大小
+
+`docker update --cpus="2" --memory="512m" <container_id>`
+
 参考：
 
 https://www.cnblogs.com/dyh004/p/9122639.html
