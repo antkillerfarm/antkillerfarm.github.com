@@ -378,6 +378,16 @@ https://www.cnblogs.com/BobHuang/p/18249482
 
 为此，研究者提出了内核融合（Kernel Fusion）在LLM中的极致形态：将整个模型（或大的子图）尽可能融合成单个巨型内核（MegaKernel），一次性完成推理计算。
 
+MegaKernel有时也被称为Persistent Kernel。
+
+---
+
+CUDA Graph的核心机制：Capture → Instantiate → Launch
+
+Graph要求虚拟地址在capture和replay之间保持不变，导致PyTorch只能为每个Graph隔离独立的memory pool，内存常驻不可复用。
+
+---
+
 https://zhuanlan.zhihu.com/p/1943608134460506500
 
 2025年“LLM== 编译器”：Megakernel（vLLM / TensorRT-LLM / TVM-Relax / IREE / StableHLO / MoE / CUDA·Triton）
@@ -385,3 +395,7 @@ https://zhuanlan.zhihu.com/p/1943608134460506500
 https://www.zhihu.com/question/1927927257713849225
 
 如何评价CMU将LLM转化为巨型内核的Mirage Persistent Kernel(MPK)工作？
+
+https://zhuanlan.zhihu.com/p/2031867129746679499
+
+如何解决 CUDA Graph 的静态显存开销（上）

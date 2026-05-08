@@ -9,6 +9,44 @@ category: Nature
 
 # 轨道学（续）
 
+https://mp.weixin.qq.com/s/FLu3lWsqPbTsQFC9FMIYKQ
+
+今天一颗小行星跟地球“擦肩而过”，半个月前我们就发现了
+
+https://mp.weixin.qq.com/s/SaerXt0jYjtwKdWa-d2bPA
+
+不确定的未来：人类会因小天体的撞击而灭亡吗？
+
+https://www.zhihu.com/question/425874775
+
+人类300多万年的历史上，为何地球很少受到陨石大规模冲击？
+
+https://mp.weixin.qq.com/s/nXbjy6v0sgfG42DrRCohcA
+
+刚路过太阳，下面是地球人对我的探索回顾
+
+https://zhuanlan.zhihu.com/p/602523053
+
+大冲击！你我都是幸存者的后代
+
+https://zhuanlan.zhihu.com/p/669437324
+
+南非，支柱产业崩塌
+
+---
+
+地球往事是三部曲最初的名字，后来第一部《三体》火了，三部曲这才改了名字，成了三体三部曲。侧面展现出第一部《三体》有多火，火得连名字都保不住了。
+
+https://www.zhihu.com/question/579214227
+
+《地球往事》第一部的名字明明是《三体》，为何有人以为第一部叫《地球往事》？
+
+https://zhuanlan.zhihu.com/p/594394805
+
+争议不断的《三体》动画，外国观众怎么看
+
+---
+
 在太空动力学，霍曼转移轨道（或译为郝曼转移轨道，Hohmann transfer orbit）是一种变换太空船轨道的方法，途中只需两次引擎推进，相对地节省燃料。此种轨道操纵名称来自Walter Hohmann，他于1925年出版了相关著作。
 
 >Walter Hohmann，1880~1945，德国工程师，亚琛工业大学博士。轨道动力学（orbital dynamics）之父。
@@ -238,53 +276,3 @@ https://mp.weixin.qq.com/s/qUCfrmnXBmm5LfdeU3GgxA
 他们与之前的PAC相比能够接受更大范围的个人、企业、组织的捐款，来源和额度都没有限制，而最早的PAC无论是捐款来源还是额度都是受到限制的。
 
 共和党或者是民主党的候选人后面都有一个或者数个超级PAC，比如特朗普后面有一个叫做America PAC和一个很具有懂王特色的America first action的PAC；而拜登后面有一个叫做Future forward（未来前进）的PAC，而民主党最著名的PAC叫做Priorities USA（美国优先）。
-
-濮阳人吕不韦贾于邯郸，见秦质子异人，归而谓父曰：“耕田之利几倍?”曰：“十倍。”
-
-“珠玉之赢几倍?”曰：“百倍。”
-
-“立国家之主赢几倍?”曰：“无数。”
-
-https://mp.weixin.qq.com/s/dQXL6L7Ct08QaczC9rdgqA
-
-专访梅耶·马斯克：硅谷钢铁侠是怎样被炼成的？
-
-https://mp.weixin.qq.com/s/MCofTDnwfbz7R9zuqEnX7w
-
-梅耶·马斯克：英雄的母亲，也成为他们的英雄
-
-https://mp.weixin.qq.com/s/f9Eg3KkAjkvPdmH9_IlX8g
-
-宁可亏大钱，马斯克都要灭了LGBT思想
-
----
-
-2018.2
-
-![](/images/img2/Falcon.jpg)
-
-![](/images/img2/Falcon_2.jpg)
-
-![](/images/img2/SpaceX.gif)
-
-![](/images/img2/SpaceX.png)
-
-![](/images/img2/rocket.jpg)
-
-![](/images/img6/SpaceX.png)
-
-https://www.zhihu.com/question/266793958
-
-如何看待SpaceX猎鹰重型火箭在美国时间2月6日发射并且回收成功？
-
-https://www.zhihu.com/question/21731308
-
-SpaceX猎鹰火箭和中国的长征系列火箭，各有什么优劣势？
-
-https://mp.weixin.qq.com/s/d6Z0pF7SG3mEFAgUuwTPZQ
-
-马斯克的“神性思维模式”，简直太神奇了！
-
-https://www.zhihu.com/question/314292163
-
-如何评价SpaceX载人龙飞船成功首飞并与国际空间站对接？

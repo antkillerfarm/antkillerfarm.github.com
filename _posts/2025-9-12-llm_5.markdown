@@ -7,6 +7,69 @@ category: Attention
 * toc
 {:toc}
 
+# MoE（续）
+
+## Expert Parallelism
+
+Expert-Parallel vs. Token-Parallel
+
+MoBA：Mixture of Block Attention
+
+https://github.com/deepseek-ai/DeepEP
+
+deepseek官方的EP库
+
+---
+
+PPLXAll2AllManager是vLLM为了解决Expert Parallelism场景下MoE模型的跨GPU专家tensor交换，而引入的一个通信调度器（All-to-All管理器）。
+
+DeepEPHTAll2AllManager和DeepEPLLAll2AllManager是vLLM在集成DeepEP（DeepSeek Expert Parallel）通信框架时，为MoE模型推理引入的两类分层All-to-All通信调度器。
+
+它们把原来单一的All-to-All拆成两层：
+
+- HT（High-Throughput）层——节点内GPU之间大批量、高吞吐交换；
+- LL（Low-Latency）层——节点间跨机NVLink/IB网络低延迟交换。
+
+EPLB：Expert parallelism load balancer
+
+## KTransformer
+
+KTransformers由清华大学团队提出，可以在模型运行过程中灵活的将专家模型加载到CPU上，同时将MLA/KVCache卸载到GPU上，从而深度挖掘硬件性能，实现更低的显存运行更大尺寸的模型。
+
+参考：
+
+KTransformer部署高性能DeepSeek R1模型实战
+
+## Kimi K2
+
+![](/images/img6/LLM.jpg)
+
+上图来自：
+
+https://sebastianraschka.com/blog/2025/the-big-llm-architecture-comparison.html
+
+The Big LLM Architecture Comparison
+
+https://sebastianraschka.com/llm-architecture-gallery/
+
+更多LLM结构图
+
+中文版：
+
+https://zhuanlan.zhihu.com/p/1971937330051940822
+
+2024-2025年开源LLM架构革新全览：MoE、注意力机制与归一化层的进化
+
+官方技术报告：
+
+https://moonshotai.github.io/Kimi-K2/
+
+参考：
+
+https://www.zhihu.com/question/1927140506573435010
+
+Kimi发布首个万亿参数开源模型K2模型，哪些信息值得关注？
+
 # LLM应用
 
 ![](/images/img6/LLM_IC.png)
@@ -49,6 +112,14 @@ Devin炮轰Claude：别再搞Multi-Agent了
 
 ---
 
+Prompt Engineering管的是"问什么"，Context Engineering管的是"给LLM看什么上下文"，而Harness Engineering管的是"整个运行环境怎么设计"——它是最上层的学科，前两者是它的子集。
+
+https://zhuanlan.zhihu.com/p/2027834017840415550
+
+AI真能自己写出整个Windows系统吗？我做了一场无监督实验
+
+---
+
 MCP（Model Context Protocol）由Anthropic于2024年11月推出，是一个开放标准协议，用于统一大模型与外部工具、数据源之间的交互方式。
 
 https://zhuanlan.zhihu.com/p/1895177200665350365
@@ -77,11 +148,16 @@ OpenClaw最近爆火。
 
 OpenCode：一个AI编程助手。类似的还有字节的TRAE。
 
-OpenClaw：一个AI代理工具。
+OpenClaw：一个AI agent工具。
 
 QMD（Query Markup Documents）是一个用Rust编写的高性能本地搜索工具，旨在为个人或团队的知识库提供智能化的搜索能力，同时完全保护隐私（本地优先、无需云端服务）。
 
 QMD已被用于替代OpenClaw默认的SQLite进行记忆搜索，可以显著提升Agent在积累大量上下文后的记忆检索能力，解决传统关键词搜索无法找到概念相关，但字面不匹配内容的问题。
+
+两者代表了不同的设计哲学：
+
+- OpenClaw偏重控制力。
+- Hermes偏重自进化能力。
 
 ---
 

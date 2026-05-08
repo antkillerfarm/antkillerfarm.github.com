@@ -9,7 +9,61 @@ category: Russo Ukrainian War Sky
 
 # 俄乌战争：苍天篇
 
-## 顿涅斯克战役（续）
+## 赫尔松战役（续）
+
+https://news.ifeng.com/c/8Kph5NYlxxB
+
+果然！俄军退出赫尔松，苏罗维金一战封神？
+
+https://zhuanlan.zhihu.com/p/666716195
+
+善意又来了？浅谈俄军从第聂伯河左岸撤退的前景
+
+https://zhuanlan.zhihu.com/p/713896477
+
+金伯恩畅想曲——乌方金伯恩半岛登陆作战方案
+
+https://zhuanlan.zhihu.com/p/1971325711542379235
+
+解放三年后，乌克兰的赫尔松正面临另一种围困
+
+## 顿涅斯克战役
+
+本节主要包括巴赫穆特、chasiv yar、Marinka、Soledar、Vuhledar、Avdiivka等地的攻防战。
+
+2022.5 俄军攻克波帕斯纳，巴赫穆特成为前线。
+
+2022.8 俄军开始在巴赫穆特东郊发起进攻。
+
+2022.10.8 瓦格纳正式在巴赫穆特市区参战。
+
+巴赫穆特防守战役：2022.7.3～2023.5.20
+
+---
+
+![](/images/img6/Volnovakha.jpg)
+
+Cities of Heroes. Volnovakha
+
+![](/images/img4/joke_4.jpg)
+
+![](/images/img5/Bakhmut.jpg)
+
+<video  id="myvideo" width="50%" height="auto" controls="controls" loop="loop">
+    <source src="/images/img5/Bakhmut.mp4" type='video/mp4' />
+</video>
+
+https://zhuanlan.zhihu.com/p/599338767
+
+冰雨的风暴——乌克兰Day264-Day327战况总结
+
+---
+
+瓦格纳就是一路转进的过程，一开始攻索莱达尔，攻不进去就南下打巴赫穆特，又攻不进去就南下去打巴赫穆特东部，又攻不进去就绕去南边打optyne，optyne又攻不进去就又南下去打这几个定居点，要是又攻不进去就没得打了，要打进鹅控区了。。。
+
+鹅独立媒体Important Stories与巴赫穆特附近的一名鹅前线士兵进行了交谈，该鹅说瓦夏的到来对乌萝产生了惊人的影响，“就像给他们带来了某种鼓舞勇气的圣水”。
+
+---
 
 点开视频前我还说什么导弹能穿透钢筋混凝土掩体打死好几十人，看完现场照片和视频我觉得RT绝逼是瞒报了。
 
@@ -230,33 +284,3 @@ https://zhuanlan.zhihu.com/p/685054072
 https://zhuanlan.zhihu.com/p/683071921
 
 俄罗斯人如何看待阿夫迪夫卡的战斗
-
----
-
-从Avdiivka到Pokrovsk：2024.4.20～2024.7.20
-
-第115独立机械化旅从奥切列季涅地区撤离后，由于指挥不力，后来被调往利曼方向的“奇迹森林”。
-
-邻军对该旅的表现完全满意，而国民警卫队第1旅布雷维的战友则指出：“他们没有问题，能稳固地守住阵地。他们的火炮还可以执行邻军的火力任务，所有在阿夫迪夫卡的失误都留在那里了。”
-
-https://www.zhihu.com/question/653765546
-
-如何看待俄军突入顿涅茨克州奥切列季涅村？
-
-https://www.zhihu.com/question/2125754134
-
-俄军兵锋抵达谢利多沃，预计不日即将攻克，大家如何看待俄军即将攻克谢利多沃？
-
-https://www.zhihu.com/question/2574005045
-
-俄军已经完全控制赫尼克，大家如何看待俄军攻下赫尼克？
-
----
-
-Pokrovsk战役：2024.7.20～
-
-真是丢脸。我们整个夏天都没能突破任何一条战线。我们用了16个月才攻克恰西夫亚尔，而与此同时，乌克兰却允许年轻人出国。如果乌克兰真的走到了穷途末路，他们早就开始征召16岁的年轻人了，但他们现在表现得还不错。-- by 斯特列科夫
-
-https://www.zhihu.com/answer/1945908983018795027
-
-波克罗夫斯克的历史

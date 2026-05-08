@@ -111,6 +111,18 @@ https://en.wikipedia.org/wiki/Orbital_resonance
 
 当然，也不是所有的共振都能稳定存在，不能稳定存在的共振区也有，比如木星的Kirkwood Gaps。这个共振区的小行星都被木星清除了。
 
+丹尼尔·柯克伍德（Daniel Kirkwood, 1814–1895），还发现土星环卡西尼缝与卫星Mimas的2:1共振关系。
+
+---
+
+1875年11月2日，奥地利天文学家Johann Palisa发现了Hilda小行星。
+
+1876年，德国天文学家Franz Kuhnert收集了可用的观测数据，首次确定了Hilda的轨道。他注意到这颗小行星似乎会接近到距木星约0.6 AU的距离（当时已知小行星中离木星最近的），这引起了天文学界的关注。
+
+但直到20世纪上半叶关于Hilda型天体的性质存在大量争论——理论家们争论这些天体是在严格的周期性共振态附近摆动（librate），还是本质上不稳定、只是暂时造访木星附近。
+
+德国天文学家Joachim Schubart在1964年开始专注于Hilda天体的研究。他利用电子计算机克服了传统摄动函数级数展开收敛性差的问题，系统研究了Hilda小行星与木星的3:2共振动力学，是现代数值天体力学中共振研究的奠基人。
+
 ---
 
 https://mp.weixin.qq.com/s/nbA86PutvWWcA7t89XWhfA
@@ -192,39 +204,3 @@ https://mp.weixin.qq.com/s/-8WDtspQqL0ztmb7PJtokw
 https://mp.weixin.qq.com/s/NHjfCLp6k7GYh8fScL_UWg
 
 几天前，一颗小行星与地球擦肩而过，我们几乎毫不知情
-
-https://mp.weixin.qq.com/s/FLu3lWsqPbTsQFC9FMIYKQ
-
-今天一颗小行星跟地球“擦肩而过”，半个月前我们就发现了
-
-https://mp.weixin.qq.com/s/SaerXt0jYjtwKdWa-d2bPA
-
-不确定的未来：人类会因小天体的撞击而灭亡吗？
-
-https://www.zhihu.com/question/425874775
-
-人类300多万年的历史上，为何地球很少受到陨石大规模冲击？
-
-https://mp.weixin.qq.com/s/nXbjy6v0sgfG42DrRCohcA
-
-刚路过太阳，下面是地球人对我的探索回顾
-
-https://zhuanlan.zhihu.com/p/602523053
-
-大冲击！你我都是幸存者的后代
-
-https://zhuanlan.zhihu.com/p/669437324
-
-南非，支柱产业崩塌
-
----
-
-地球往事是三部曲最初的名字，后来第一部《三体》火了，三部曲这才改了名字，成了三体三部曲。侧面展现出第一部《三体》有多火，火得连名字都保不住了。
-
-https://www.zhihu.com/question/579214227
-
-《地球往事》第一部的名字明明是《三体》，为何有人以为第一部叫《地球往事》？
-
-https://zhuanlan.zhihu.com/p/594394805
-
-争议不断的《三体》动画，外国观众怎么看

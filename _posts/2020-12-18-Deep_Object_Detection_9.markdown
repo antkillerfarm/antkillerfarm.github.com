@@ -279,6 +279,10 @@ YOLOv10的改进：
 - PAN（路径聚合网络）层
 - 无需NMS
 
+https://zhuanlan.zhihu.com/p/1897599850524178071
+
+YOLO版本迷信终结！11领域398万实例实测：告诉你的场景该用哪个版本？
+
 # 目标检测进阶
 
 https://mp.weixin.qq.com/s/1nlOJ7X9ogBHTl1j2adqyg
@@ -396,23 +400,3 @@ https://mp.weixin.qq.com/s/Aq2OJqGnT6z4zoG-6rslkQ
 https://zhuanlan.zhihu.com/p/82371629
 
 Imbalance Problems in Object Detection: A Review
-
-https://zhuanlan.zhihu.com/p/114700229
-
-目标检测中的特征冲突与不对齐问题
-
-https://blog.csdn.net/sanshibayuan/article/details/103642419
-
-单阶段实例分割（Single Shot Instance Segmentation）
-
-https://mp.weixin.qq.com/s/vpHrLu8kuEuOp5eehT8Hcw
-
-目标检测正负样本区分策略和平衡策略总结(一)
-
-https://mp.weixin.qq.com/s/kdD658xzC-JxuWGYqLRtcQ
-
-性能达到SOTA的CSP对象检测网络
-
-https://mp.weixin.qq.com/s?__biz=MzI5MDUyMDIxNA==&mid=2247486104&idx=1&sn=5580a4680f3190adb98638471e9b5982
-
-百度视觉团队斩获 ECCV Google AI 目标检测竞赛冠军，获奖方案全解读

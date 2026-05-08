@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十一）——NLP历史, NLP常用评价度量, Tokenization
+title:  机器学习（二十一）——NLP历史
 category: ML 
 ---
 
@@ -45,7 +45,169 @@ https://mp.weixin.qq.com/s/XB9VsW3NRwHua6AdRL3n8w
 
 Lossless Triplet Loss:一种高效的Siamese网络损失函数
 
+https://gehaocool.github.io/2018/03/20/Angular-Margin-%E5%9C%A8%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/
+
+Angular Margin在人脸识别中的应用
+
+https://mp.weixin.qq.com/s/SqaR_7gwJpUNPM7g4IHaYw
+
+深度人脸识别中不同损失函数的性能对比
+
+https://zhuanlan.zhihu.com/p/138850070
+
+从Triplet loss看推荐系统中文章Embedding
+
+https://mp.weixin.qq.com/s/tpI5k5sg15WHGv3YoMp-rA
+
+​Triplet-loss原理与应用
+
+https://zhuanlan.zhihu.com/p/295512971
+
+完全解析triplet loss
+
+## Coupled Cluster Loss
+
+论文：
+
+《Deep Relative Distance Learning: Tell the Difference Between Similar Vehicles》
+
+参考：
+
+https://blog.csdn.net/u010167269/article/details/51783446
+
+论文中文笔记
+
+## Focal Loss
+
+https://zhuanlan.zhihu.com/p/28442066
+
+何恺明团队提出Focal Loss，目标检测精度高达39.1AP，打破现有记录
+
+https://www.zhihu.com/question/63581984
+
+如何评价Kaiming的Focal Loss for Dense Object Detection？
+
+https://mp.weixin.qq.com/s/Uf1lWtxOpKYCDLmCDlnVAQ
+
+把Cross Entropy梯度分布拉‘平’，就能轻松超越Focal Loss
+
+https://mp.weixin.qq.com/s/aKRUJt-_1QSQFcRVtuyJ4w
+
+被忽略的Focal Loss变种
+
+https://zhuanlan.zhihu.com/p/55036597
+
+样本贡献不均：Focal Loss和Gradient Harmonizing Mechanism
+
+https://mp.weixin.qq.com/s/LfCuOEndS4Y5dPqXTsE_hA
+
+剖析Focal Loss损失函数： 消除类别不平衡+挖掘难分样本
+
+https://mp.weixin.qq.com/s/Ryxu1qsmL_Roi5zDb1KSRQ
+
+AP-Loss：提高单阶段目标检测性能的分类损失，超越Focal loss
+
+https://mp.weixin.qq.com/s/lzb-R0CQ3YRY4a8WBbdOhw
+
+Focal Loss详解以及为什么能够提高处理不平衡数据分类的表现
+
+https://zhuanlan.zhihu.com/p/147691786
+
+大白话Generalized Focal Loss
+
+https://zhuanlan.zhihu.com/p/313684358
+
+大白话Generalized Focal Loss V2
+
+https://mp.weixin.qq.com/s/zLDUAnxghsBYiUMQQdbBGQ
+
+Generalized Focal Loss：Focal loss魔改以及预测框概率分布
+
+https://mp.weixin.qq.com/s/is8veFCOPpJDXA2okn7pNA
+
+10分钟理解Focal loss数学原理与Pytorch代码
+
+https://zhuanlan.zhihu.com/p/324613604
+
+用概率分布评估检测框质量的Generalized Focal Loss V2
+
 ## 参考
+
+https://mp.weixin.qq.com/s/SsHF3Zpqv61G68nim8ocnQ
+
+深度学习激活函数全面综述论文
+
+https://mp.weixin.qq.com/s/gw3hoDSaojVQUiD6YsMabA
+
+理解神经网络中的目标函数
+
+https://mp.weixin.qq.com/s/l0FRj78M73vQGqppNSyBwQ
+
+深度学习常用损失函数总览：基本形式、原理、特点
+
+https://mp.weixin.qq.com/s/h-QbwEbaivvHjdhDhE4V1A
+
+如何为单变量模型选择最佳的回归函数
+
+https://mp.weixin.qq.com/s/qXZMo_RitSenmI7x0xGNsg
+
+中科院自动化所多媒体计算与图形学团队NIPS 2017论文提出平均Top-K损失函数，专注于解决复杂样本
+
+https://mp.weixin.qq.com/s/YOdmv88koSHx5AMMEQZGgg
+
+通俗聊聊损失函数中的均方误差以及平方误差
+
+https://blog.csdn.net/zhangxb35/article/details/72464152
+
+pytorch loss function总结
+
+https://mp.weixin.qq.com/s/Xbi5iOh3xoBIK5kVmqbKYA
+
+机器学习大牛是如何选择回归损失函数的？
+
+https://mp.weixin.qq.com/s/f29WSb_xZxY1S_MP3Yp0dg
+
+机器学习中常用的损失函数你知多少？
+
+https://mp.weixin.qq.com/s/AdpO4xxTi0G7YiTfjEz_ig
+
+机器学习必备的分类损失函数速查手册
+
+https://mp.weixin.qq.com/s/NY1y0N6XedmMEvfsEFcTjQ
+
+机器学习中的目标函数总结
+
+https://mp.weixin.qq.com/s/ixYhM29-famb8lbzNYnHAg
+
+深度学习中常用的损失函数有哪些？
+
+https://mp.weixin.qq.com/s/AmXF0xA_T-ZjjnOt4XRgRw
+
+谷歌提出新分类损失函数：将噪声对训练结果影响降到最低
+
+https://www.zhihu.com/question/268105631
+
+神经网络中，设计loss function有哪些技巧?
+
+https://mp.weixin.qq.com/s/7cr6ptZucXzsZauItcZehw
+
+使用一个特别设计的损失来处理类别不均衡的数据集
+
+https://www.zhihu.com/question/264892967
+
+深度学习中loss和accuracy的关系?
+
+https://zhuanlan.zhihu.com/p/82199561
+
+深度度量学习中的损失函数
+
+https://mp.weixin.qq.com/s/CbORYhJQn27J0G4G6XpODw
+
+用于弱监督图像语义分割的新型损失函数
+
+https://mp.weixin.qq.com/s/Yo68YnMMvy5FXkCjBLCJuw
+
+常见的损失函数
 
 https://mp.weixin.qq.com/s/CPfhGxig9BMAgimBSOLy3g
 
@@ -244,151 +406,3 @@ https://mp.weixin.qq.com/s/qlKGgWq_FTYonMXEkhRwpw
 https://www.zhihu.com/question/30873035
 
 Unicode字符集中有哪些神奇的字符？
-
-# NLP常用评价度量
-
-机器翻译的评价指标主要有：BLEU、NIST、Rouge、METEOR等。
-
-参考：
-
-http://blog.csdn.net/joshuaxx316/article/details/58696552
-
-BLEU，ROUGE，METEOR，ROUGE-浅述自然语言处理机器翻译常用评价度量
-
-http://blog.csdn.net/guolindonggld/article/details/56966200
-
-机器翻译评价指标之BLEU
-
-https://mp.weixin.qq.com/s/niVOM-lnzI2-Tgxn8Qterw
-
-NLP中评价文本输出都有哪些方法？为什么要小心使用BLEU？
-
-http://blog.csdn.net/han_xiaoyang/article/details/10118517
-
-机器翻译评估标准介绍和计算方法
-
-http://blog.csdn.net/lcj369387335/article/details/69845385
-
-自动文档摘要评价方法---Edmundson和ROUGE
-
-https://mp.weixin.qq.com/s/XiZ6Uc5cHZjczn-qoupQnA
-
-对话系统评价方法综述
-
-https://zhuanlan.zhihu.com/p/33088748
-
-数据集和评价指标介绍
-
-https://mp.weixin.qq.com/s/9hoM_yF96XxSbQHEP6oasw
-
-怎样生成语言才能更自然，斯坦福提出超越Perplexity的评估新方法
-
-https://mp.weixin.qq.com/s/TnAZUjFSn7ATtRmBexJlXw
-
-文本生成评价方法BLEU ROUGE CIDEr SPICE Perplexity METEOR
-
-https://mp.weixin.qq.com/s/n4OnRGkrn5DYuZUmmrmzpg
-
-NLG任务评价指标BLEU与ROUGE
-
-https://zhuanlan.zhihu.com/p/445450292
-
-为什么bleu不是一个完美的文本生成评测指标
-
-## LLM评估
-
-https://zhuanlan.zhihu.com/p/677583745
-
-评估大模型快速入门：用MMLU评估 GPT-3
-
-https://zhuanlan.zhihu.com/p/656260901
-
-TruthfulQA: Measuring How Models Mimic Human Falsehoods - 事实性评估
-
-https://github.com/CLUEbenchmark/SuperCLUE
-
-中文通用大模型综合性基准
-
-# Tokenization
-
-## Tokenization vs. embedding
-
-Tokenization是给文本矢量化的一种基本形式。它们并不能捕捉到token之间任何更深层次的关系或模式。
-
-Embedding是词块的高级向量表示。它们试图捕捉词块之间最细微的差别、联系和语义。
-
-https://mp.weixin.qq.com/s/vf3XKV1cg2H2MxS_6czfFQ
-
-关于LLM：揭秘token与embedding的机制
-
-## Subword
-
-对于英文来说，文字的粒度从细到粗依次是character, subword, word。character和word都很好理解，分别是字母和单词。而subword相当于英文中的词根、前缀、后缀等。
-
-之前的Neural Machine Translation基本上都是基于word单词作为基本单位的，但是其缺点是不能很好的解决out-of-vocabulary即单词不在词汇库里的情况，且对于单词的一些词法上的修饰(morphology)处理的也不是很好。一个自然的想法就是能够利用比word更基本的组成来建立模型，以更好的解决这些问题。
-
-参考：
-
-https://plmsmile.github.io/2017/10/19/subword-units/
-
-subword-units
-
-https://zhuanlan.zhihu.com/p/69414965
-
-Subword模型
-
-https://zhuanlan.zhihu.com/p/86965595
-
-深入理解NLP Subword算法：BPE、WordPiece、ULM
-
-https://mp.weixin.qq.com/s/la3nZNFDviRcSFNVso29oQ
-
-NLP三大Subword模型详解：BPE、WordPiece、ULM
-
-https://mp.weixin.qq.com/s/TPRqDyGpkVuJcgomTu774A
-
-子词技巧：The Tricks of Subword
-
-https://mp.weixin.qq.com/s/fe7-wimFCAtp3ohB3TVywg
-
-通俗讲解Subword Models
-
-https://mp.weixin.qq.com/s/5z3CMmIR0U9-p2BwJnsYKg
-
-神经机器翻译的Subword技术
-
-## BPE
-
-Byte Pair Encoding(BPE)本来是一种数据压缩算法，后来被用于分词。它从命名实体、同根词、外来语、组合词（罕见词有相当大比例是上述几种）的翻译策略中得到启发，认为把这些罕见词拆分为“子词单元”(subword units)的组合，可以有效的缓解NMT的OOV和罕见词翻译的问题。BPE对英文、德文、俄文等表音文字效果较好，但不太适用于中文。
-
-论文：
-
-《Neural Machine Translation of Rare Words with Subword Units》
-
-代码：
-
-https://github.com/rsennrich/subword-nmt
-
-![](/images/img5/Tokenizer.webp)
-
-BPE算法的各种实现中，以OpenAI开源的tiktoken库较快：
-
-https://github.com/openai/tiktoken
-
-Byte-level BPE(BBPE)和Byte-Pair Encoding (BPE)的区别：
-
-BPE是最小词汇是字符级别，而BBPE是字节级别的，通过UTF-8编码方式，理论上可以表示这个世界上的所有字符。
-
-参考：
-
-https://www.cnblogs.com/huangyc/p/10223075.html
-
-一文读懂BERT中的WordPiece
-
-https://mp.weixin.qq.com/s/OGBk_ZptFzbjKdnv2RVZFA
-
-机器如何认识文本？NLP中的Tokenization方法总结
-
-https://zhuanlan.zhihu.com/p/652520262
-
-LLM大语言模型之Tokenization分词方法（WordPiece，Byte-Pair Encoding (BPE)，Byte-level BPE(BBPE)原理及其代码实现）

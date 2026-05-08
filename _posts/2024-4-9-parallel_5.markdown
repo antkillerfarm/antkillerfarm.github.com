@@ -9,6 +9,26 @@ category: DL acceleration
 
 # FSDP（续）
 
+FSDP本身并不能减少数据的通信量，更不可能减少计算量（所有的分布式算法都无法减少理论计算量），甚至还会增加数据的通信量。但是可以通过重叠IO和计算的时间，来提升系统的利用效率。显然与其等待全部计算完成，再All-Reduce，还不如算一部分，通信一部分来的快。
+
+![](/images/img5/HSDP.png)
+
+受到FSDP的启发，Facebook又发明了HSDP（hybrid sharding data parallel），进一步用小步快跑的IO策略，提升系统的利用效率。
+
+pytorch roadmap：
+
+- 3D Parallel = FSDP2 + ASync SP + PP
+- 4D Parallel = FSDP2 + ASync SP + CP + PP
+- 5D Parallel = HSDP2 + Async SP + CP + PP
+
+代码：
+
+https://github.com/facebookresearch/fairscale/blob/main/fairscale/nn/data_parallel/fully_sharded_data_parallel.py
+
+pytorch里已经集成了该代码：
+
+torch/distributed/fsdp/fully_sharded_data_parallel.py
+
 ![](/images/img6/5P.png)
 
 ---
@@ -232,29 +252,3 @@ $$
 Prefill阶段的瓶颈是计算量，MLA的矩阵吸收并没有优势，甚至更慢；但在Decode阶段，由于推理是逐token进行的，计算量少但需要线性积累KV Cache，总的KV Cache的大小就成为了显存瓶颈，MLA此时起到显著的作用。
 
 而MHA使用矩阵吸收，由于增加的计算量过于巨大，无论何种阶段都没有收益。
-
-需要注意，上述矩阵吸收的技巧没有考虑ROPE的影响，实际情况还要更复杂一些。
-
-类似的，还有GLA。
-
----
-
-https://github.com/deepseek-ai/FlashMLA
-
-deepseek的MLA官方实现
-
----
-
-参考：
-
-https://kexue.fm/archives/10091
-
-缓存与效果的极限拉扯：从MHA、MQA、GQA到MLA
-
-https://www.zhihu.com/question/655172528
-
-如何看待DeepSeek发布的MoE大模型DeepSeek-V2？
-
-https://huggingface.co/blog/Junrulu/mla-codebased-analysis
-
-结合Deepseek代码探讨MLA的改进及收益

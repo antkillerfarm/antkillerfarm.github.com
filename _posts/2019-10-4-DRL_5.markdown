@@ -153,7 +153,7 @@ https://github.com/openai
 
 ---
 
-自2020年微软与OpenAI在GPT-3源代码独家访问权上达成协议以来，OpenAI就不再向社会大众开放 GPT-3的模型代码（尽管GPT-1和GPT-2仍是开源项目）。
+自2020年微软与OpenAI在GPT-3源代码独家访问权上达成协议以来，OpenAI就不再向社会大众开放GPT-3的模型代码（尽管GPT-1和GPT-2仍是开源项目）。
 
 出于对科技巨头霸权的“反叛”，一个由各路研究人员、工程师与开发人员志愿组成的计算机科学家协会成立，立志要打破微软与OpenAI对大规模NLP模型的垄断，且取得了不错的成果。
 
@@ -162,6 +162,12 @@ https://github.com/openai
 它以古罗马自由女神Eleutheria的名字命名，透露出对巨头的不屑与反抗。
 
 EleutherAI的成立于2020年7月，主要发起人是一群号称自学成才的黑客，主要领导人包括Connor Leahy、Leo Gao和Sid Black。
+
+The Common Pile：8TB合法授权/公共领域数据集，用于规避版权争议。（2025年6月）
+
+---
+
+Anthropic AI成立于2021年2月。Dario Amodei（CEO）、Daniela Amodei（总裁），均为前OpenAI高管。
 
 ## Baselines
 

@@ -7,7 +7,31 @@ category: ML
 * toc
 {:toc}
 
-# Optimizer（续）
+# Optimizer
+
+## Muon（续）
+
+这里msign是矩阵符号函数，它并不是简单地对矩阵每个分量取sign操作，而是sign函数的矩阵化推广，它跟SVD的关系是：
+
+$$
+\begin{equation}\boldsymbol{U},\boldsymbol{\Sigma},\boldsymbol{V}^{\top} = \text{SVD}(\boldsymbol{M}) \quad\Rightarrow\quad \text{msign}(\boldsymbol{M}) = \boldsymbol{U}_{[:,:r]}\boldsymbol{V}_{[:,:r]}^{\top}\end{equation}
+$$
+
+实践中，如果每一步都对M做SVD来求解$$msign(M)$$的话，那么计算成本还是比较大的，因此作者提出了用Newton-schulz迭代来近似计算$$msign(M)$$。
+
+Muon是为了matrix设计的，因此非matrix参数word embedding，lm head，rmsnorm gamma都是用AdamW进行更新的。
+
+Muon在大模型训练时不够稳定，会有MaxLogit爆炸的问题，除了常规的Weight Decay之外，还要配合QK-Clip等算法。
+
+参考：
+
+https://kexue.fm/archives/10592
+
+Muon优化器赏析：从向量到矩阵的本质跨越
+
+https://kexue.fm/archives/11126
+
+QK-Clip：让Muon在Scaleup之路上更进一步
 
 ## 参考
 
@@ -245,55 +269,3 @@ DAG SVM（也称one-against-one）的分类思路如上图所示。
 http://www.blogjava.net/zhenandaci/archive/2009/03/26/262113.html
 
 将SVM用于多类分类
-
-## Hinge Loss
-
-在之前的SVM的推导中，我们主要是从解析几何的角度，给出了SVM的计算公式。但SVM实际上也是有loss function的：
-
-$$\ell(y) = \max(0, 1-t \cdot y)$$
-
-其中，$$t=\pm 1$$表示分类标签，$$y=w \cdot x+b$$表示分类超平面计算的score。可以看出当t和y有相同的符号时（意味着 y 预测出正确的分类），loss为0。反之，则会根据y线性增加one-sided error。
-
-![](/images/article/hinge_loss.png)
-
-由于其函数形状像个合叶，因此又名Hinge Loss函数。
-
-多分类SVM的Hinge Loss公式：
-
-$$\ell(y) = \sum_{t \ne y} \max(0, 1 + \mathbf{w}_t \mathbf{x} - \mathbf{w}_y \mathbf{x})$$
-
-参见：
-
-http://www.jianshu.com/p/4a40f90f0d98
-
-Hinge loss
-
-http://mp.weixin.qq.com/s/96_u9QM63SISwTbimmH6wA
-
-支持向量回归机
-
-https://mp.weixin.qq.com/s/0yvu3oG7YXUdeQz4QwEJ-A
-
-线性分类原来是这么一回事
-
-https://mp.weixin.qq.com/s/1ZNCbj5kMFENzP_SapQYgg
-
-Softmax分类及与SVM比较
-
-https://mp.weixin.qq.com/s/j_LzPcESaou0FOS2Z4f3kA
-
-关于SVM，面试官们都怎么问
-
-## 数据不平衡问题
-
-SVM中超参数C决定了错误分类的惩罚值，为了处理不平衡类别的问题，我们可以给C按类加权重：
-
-$$C_k=C*W_k$$
-
-其中，权值和类别K出现的频率成反比。
-
-## Platt scaling
-
-https://blog.csdn.net/giskun/article/details/49329095
-
-SVM的概率输出（Platt scaling）

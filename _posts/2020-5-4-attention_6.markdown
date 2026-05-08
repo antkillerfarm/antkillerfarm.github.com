@@ -69,6 +69,18 @@ ViViT在ViT的基础上增加时间维度以处理视频。
 
 U-ViT = U-Net + ViT
 
+---
+
+ViT模型中的高范数伪影（High-Norm Artifacts）是指在Vision Transformer训练完成后，模型输出特征图中出现的一类异常token——它们的L2范数显著高于其他正常token（可达平均值的2-10倍），通常出现在低信息量的背景区域或图像角落。
+
+《Vision Transformers Need More Than Registers》
+
+---
+
+https://zhuanlan.zhihu.com/p/1943279068654056673
+
+最强视觉自监督模型DINO系列超详细解读：DINO / DINOv2 / DINOv3
+
 ## Masked Autoencoders
 
 ![](/images/img4/MAE.png)
@@ -381,15 +393,3 @@ Structured State Space Model（S4）在S3的基础上做了一些改进之后发
 S5：Simplified State Space Layers for Sequence Modeling
 
 S3 & S4，包括后面提到的Mamba、RWKV等，通常都被划分为linear attention路线。
-
-## Mamba
-
-Linear-Time Sequence Modeling with Selective State Spaces
-
-SSM的问题在于其中的矩阵A、B、C不随输入不同而不同，即无法针对不同的输入针对性的推理。
-
-连续卷积的离散采样，包含了采样步长（step size）的参数。一般情况下，我们使用固定的step size进行采样，然而这个其实也是可变，或者说可学习的。
-
-较小的步长会忽略当前输入，而更多地使用先前的上文，而较大的步长会更多地关注当前输入。这也就是所谓的Selective State Spaces。
-
-然而这种非线性，又会破坏之前线性计算转换为卷积运算的前提。

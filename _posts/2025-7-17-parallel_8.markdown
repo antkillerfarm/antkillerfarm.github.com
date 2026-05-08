@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（九）——LLM SystemAlpa, Batching
+title:  并行 & 框架 & 优化（九）——LLM System
 category: DL acceleration 
 ---
 
@@ -9,7 +9,67 @@ category: DL acceleration
 
 # LLM Inference（续）
 
+LLM Inference的性能评估主要有以下几个方面：
+
+- Time To First Token (TTFT)
+- Time Per Output Token (TPOT)：解码阶段总耗时 / 生成token数
+- Latency：模型为用户生成完整响应所需的总时间。latency = (TTFT) + (TPOT) * (the number of tokens to be generated)
+- Throughput：一个推理服务器每秒可以为所有用户和请求生成的输出token数量。
+- TBT（Time Between Tokens）：第i+1个token时间戳 − 第i个token时间戳。流式/对话场景（逐token吐字）更关心TBT。
+
+https://www.databricks.com/blog/llm-inference-performance-engineering-best-practices
+
+LLM Inference Performance Engineering: Best Practices
+
+## PD分离
+
+一次用户请求，实际上既包含prefill，也包含decode。一个是计算密集型，一个是访存密集型。
+
+prefill（用户输入）和decode（模型输出）的token量在不同场景下也是不一样的。如果是简单对话场景，通常模型的decode输出会更多一些，而如果是超长上下文场景，用户先上传一本几十万字的书再进行问答，这本书的prefill会直接起飞。在Agent场景下，大量预设的prompt也会占据非常多的prefill，不过prompt的prefill有不少机会可以提前算好KV而无需每个用户请求单独重复计算。
+
+当整个推理系统服务几千万用户时，一个batch的几十个用户请求只是开胃菜。每个用户会不间断地和大模型进行交互，发出大量请求，但这些请求的间隔时间短则几秒，长则几分钟几小时。考虑人机交互的频率，一个用户请求结束后，对应的KV-cache继续常驻在高速内存中实际意义不大。
+
+---
+
+这个从今年年中开始，各家都陆续上了PD分离方案（如MoonCake）。
+
+Prefilling阶段是计算密集型，少量Query就可以打满GPU，大量Query反而会增加首token延迟；Decoding阶段是访存密集型，必须依赖大量Query提高GPU计算利用率。因此可以通过多台机器处理Prefilling、单台机器处理Decoding的PD分离方案，实现综合效率最大化、首token延迟（TTFT）最低、DecodeSpeed（TPS）最高。
+
+---
+
+![](/images/img6/CPX.png)
+
+Rubin CPX，是专门为推理阶段prefill准备的低成本卡。prefill阶段所需带宽较小，配置“瘦带宽”而“肥容量”的GDDR7，显然更为合适。与此同时，英伟达与Groq达成了200亿美元战略授权协议。“Groq 风味”的硅——英伟达正在将其整合进自身推理路线图——将承担高速decode引擎的角色。
+
+https://www.zhihu.com/question/1949040585416636414
+
+如何看待英伟达最新发布的Rubin CPX及相应的上下文理解/生成分离设计?
+
+---
+
+训练分三个环节，每个环节的瓶颈不一样：
+
+- Forward（前向传播）：计算形态上确实和Prefill很像，大矩阵乘，compute-bound。
+- Backward（反向传播）：需要读取Forward阶段保存的activation，计算量是Forward的两倍，访存量也更大。
+- Optimizer update（优化器更新）：逐参数的逐元素操作，读写权重、梯度、一阶动量、二阶动量。这一步完全是访存密集的。
+
+再加一个很多人忽略的：分布式通信。训练要做AllReduce、ReduceScatter、All-to-All，这些都吃互联带宽，和Prefill、Decode都不是一回事。
+
+大规模强化学习的pipeline里，Prefill和Decode是混布的，模型要生成、评估、更新、再生成，工作负载在推理和训练之间反复切换。如果硬件被物理分成Prefill池和Decode池，KV Cache和hidden state在两个池之间来回迁移，延迟和抖动都会上来。
+
+所以training是不做PD分离的。同样的理由，AF分离在training中也是无意义的。
+
+至于Expert分离，业界一般将MoE层"分片"（Sharded）到不同设备上，而Attention层则"复制"（Replicated）到所有设备。
+
+此外，训练阶段也不需要KV Cache。
+
+https://www.zhihu.com/question/2029953946404541284
+
+为什么英伟达认为Training≈Prefill华为却把Training和Decode放一起，谁错了？
+
 ## AF分离
+
+Expert权重是存储巨无霸（数百GB到TB级），但每次只激活1-5%，Attention的KV Cache是带宽巨无霸，但参数量很小。把两者绑在同一台机器上，存储和带宽互相拖累。
 
 AF分离架构将Attention层和Expert层物理拆分，部署在不同的GPU集群上。Attention Cluster专注于维护KV Cache和计算Attention，Expert Cluster则专注于存储专家权重和计算FFN。
 
@@ -109,126 +169,3 @@ https://blog.csdn.net/v_JULY_v/article/details/145374551
 https://mp.weixin.qq.com/s/39MYrsB3gXpfzTTOgQjDwg
 
 幻方AI DeepSeek模型背后的万卡集群建设
-
-# Alpa
-
-Alpa是一个自动探索分布式策略的工具。
-
-论文：
-
-《Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning》
-
-代码：
-
-https://github.com/openxla/xla/tree/main/xla/hlo/experimental/auto_sharding
-
-文档：
-
-https://alpa.ai/index.html
-
----
-
-在介绍Alpa之前，先介绍一下Google的optimization库：
-
-https://github.com/google/or-tools
-
-文档：
-
-https://developers.google.com/optimization
-
-ILP可以分为下列几种类型：
-
-（1）纯整数线性规划(Pure integer linear programming)：指全部决策变量都必须取整数值的整数线性规划。有时，也称为全整数规划。
-
-（2）混合整数线性规划(Mimed integer linear programming)：指决策变量中有一部分必须取整数值，另一部分可以不取整数值的整数线性规划。
-
-（3）0-1型整数线性规划(Zero-one integer linear programming)：指决策变量只能了取值0或1的整数线性规划。
-
-ILP相关的库还有pyomo、cyipopt等。
-
----
-
-为了评估不同Sharding策略的好坏，我们需要对Sharding策略建立cost model。
-
-这里的cost主要包括：
-
-- Communication cost
-- Computation cost
-- Memory cost
-- Resharding cost
-
-其中，Memory cost为该ILP问题的约束条件，其他几个为决策变量的影响因子。
-
-Resharding cost是不同sharding之间切换产生的开销：
-
-![](/images/img5/resharding.svg)
-
-MLIR中有mesh dialect用于描述Sharding Spec：
-
-```mlir
-module @sharding_test {
-  mesh.mesh @mesh_2d(shape = 4x8)
-
-  func.func @matmul_on_operand_shard_batch_and_k(%arg0: tensor<32x1000x4096xf32>, %arg1: tensor<32x4096x8192xf32>) -> tensor<32x1000x8192xf32> {
-    %sharding_annotated = mesh.shard %arg0 to <@mesh_2d, [[0], [], [1]]> annotate_for_users : tensor<32x1000x4096xf32>
-    %sharding_annotated_0 = mesh.shard %arg1 to <@mesh_2d, [[0], [1]]> annotate_for_users : tensor<32x4096x8192xf32>
-    %0 = tosa.matmul %sharding_annotated, %sharding_annotated_0 : (tensor<32x1000x4096xf32>, tensor<32x4096x8192xf32>) -> tensor<32x1000x8192xf32>
-    %sharding_annotated_1 = mesh.shard %0 to <@mesh_2d, [[0]], partial = sum[1]> : tensor<32x1000x8192xf32>
-    return %sharding_annotated_1 : tensor<32x1000x8192xf32>
-  }
-}
-```
-
----
-
-如何用数学语言表示一个二维的one-hot：
-
-$$
-\begin{aligned}
-
-\forall (v,u) \in E, \
-& \forall i \in [0, k_v), & \sum_{j \in [0, k_u)}\mathbf{e}_{vu} [i,j] \leq \mathbf{s}_v[i] \\
-& \forall j \in [0, k_u), & \sum_{i \in [0, k_v)}\mathbf{e}_{vu} [i,j] \leq \mathbf{s}_u[j] \\
-
-\end{aligned}
-$$
-
-![](/images/img5/one_hot_decision_vector.svg)
-
----
-
-参考：
-
-https://zhuanlan.zhihu.com/p/487588274
-
-用ILP和DP自动探索DL分布式策略——Alpa
-
-https://zhuanlan.zhihu.com/p/571836701
-
-Alpa论文解读
-
-# Batching
-
-## continuous batching
-
-![](/images/img6/static-batching.png)
-
-上图是一个通常的多batch的LLM的Inference过程。其中黄色表示用户的prompt，蓝色表示LLM生成的文本，红色表示结束符号。
-
-![](/images/img6/continuous-batching.png)
-
-这是改进后的continuous batching的示意图。
-
-https://www.anyscale.com/blog/continuous-batching-llm-inference
-
-How continuous batching enables 23x throughput in LLM inference while reducing p50 latency
-
-## Selective Batching
-
-Selective Batching的核心原理在于：仅对适合批处理的操作执行批处理，不适合批处理的操作则单独处理。
-
-![](/images/img6/Selective_Batching.png)
-
-对于preproj、postproj、FFN1和FFN2这类线性变换或归一化操作，它们的计算与序列长度无关，只是在hidden_size维度上做线性转换，并且都需要从显存读取权重。因此，可以将batch内所有token拉平成一个二维张量。
-
-对于Attention操作，由于每个请求的mask、KV cache和token位置可能不同，导致其张量形状不一致，无法直接合并处理。Selective Batching会在进入Attention之前将batch拆分，逐个请求单独计算Attention分数，完成后再将结果合并回统一的张量。

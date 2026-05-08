@@ -27,9 +27,11 @@ Aligning Language Models to Follow Instructions
 
 ---
 
+Pre-train vs Post-train：预训练是"无监督/自监督"在海量文本上学语言规律；后训练是"有监督/强化学习"在精选数据上学行为和偏好。
+
 基座预训练（Base pretrain）
 
-SFT微调（Supervised Fine-Tuning）
+SFT微调（Supervised Fine-Tuning）：Fine-tuning是Post-train的子集。Post-train是一个更宽泛的概念，包含SFT、RLHF、DPO等多个阶段，而"微调"通常特指SFT这一步。
 
 奖励函数训练（Reward Modeling, RM），最常用的是基于排序的奖励函数建模（Ranking-Based Reward Modeling，RBRM）
 
@@ -248,23 +250,3 @@ http://www.199it.com/archives/1611000.html
 https://www.zhihu.com/question/630152920
 
 如何看待李开复零一万物开源Yi大模型被指抄袭LLaMA?
-
----
-
-参考：
-
-https://www.zhihu.com/question/589639535
-
-OpenAI发布GPT-4，有哪些技术上的优化或突破？
-
-https://mp.weixin.qq.com/s/iw0wESsyP8nkPuFkj_EkOg
-
-OpenAI正式推出多模态GPT-4
-
-https://www.zhihu.com/question/589937459
-
-3月16日百度举办“文心一言”发布会，现场有哪些信息值得关注？
-
-https://www.zhihu.com/question/589941496
-
-百度正式推出“文心一言”，然而港股股价已暴跌近10%，客观来说其能力与ChatGPT相较如何？

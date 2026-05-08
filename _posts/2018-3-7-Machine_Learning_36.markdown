@@ -305,7 +305,7 @@ https://mp.weixin.qq.com/s/o129MwpGzx8tzjUCkz1npw
 
 使用CatBoost和NODE建模表格数据对比测试
 
-# NVIDIA
+# NVIDIA+
 
 ## 参考
 

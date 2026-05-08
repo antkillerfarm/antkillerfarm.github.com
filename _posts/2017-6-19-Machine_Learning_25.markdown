@@ -1,11 +1,65 @@
 ---
 layout: post
-title:  机器学习（二十五）——Tri-training, 聚类算法, 元胞自动机, simhash, LSH
+title:  机器学习（二十五）——Tri-training, simhash, LSH
 category: ML 
 ---
 
 * toc
 {:toc}
+
+# 单分类SVM&多分类SVM（续）
+
+## Hinge Loss
+
+在之前的SVM的推导中，我们主要是从解析几何的角度，给出了SVM的计算公式。但SVM实际上也是有loss function的：
+
+$$\ell(y) = \max(0, 1-t \cdot y)$$
+
+其中，$$t=\pm 1$$表示分类标签，$$y=w \cdot x+b$$表示分类超平面计算的score。可以看出当t和y有相同的符号时（意味着 y 预测出正确的分类），loss为0。反之，则会根据y线性增加one-sided error。
+
+![](/images/article/hinge_loss.png)
+
+由于其函数形状像个合叶，因此又名Hinge Loss函数。
+
+多分类SVM的Hinge Loss公式：
+
+$$\ell(y) = \sum_{t \ne y} \max(0, 1 + \mathbf{w}_t \mathbf{x} - \mathbf{w}_y \mathbf{x})$$
+
+参见：
+
+http://www.jianshu.com/p/4a40f90f0d98
+
+Hinge loss
+
+http://mp.weixin.qq.com/s/96_u9QM63SISwTbimmH6wA
+
+支持向量回归机
+
+https://mp.weixin.qq.com/s/0yvu3oG7YXUdeQz4QwEJ-A
+
+线性分类原来是这么一回事
+
+https://mp.weixin.qq.com/s/1ZNCbj5kMFENzP_SapQYgg
+
+Softmax分类及与SVM比较
+
+https://mp.weixin.qq.com/s/j_LzPcESaou0FOS2Z4f3kA
+
+关于SVM，面试官们都怎么问
+
+## 数据不平衡问题
+
+SVM中超参数C决定了错误分类的惩罚值，为了处理不平衡类别的问题，我们可以给C按类加权重：
+
+$$C_k=C*W_k$$
+
+其中，权值和类别K出现的频率成反比。
+
+## Platt scaling
+
+https://blog.csdn.net/giskun/article/details/49329095
+
+SVM的概率输出（Platt scaling）
 
 # Tri-training
 
@@ -98,122 +152,6 @@ Co-Forest & Co-Trade是周志华在Tri-training基础上的改进算法。
 http://lamda.nju.edu.cn/huangsj/dm11/files/gaoy.pdf
 
 半监督学习中的几种协同训练算法
-
-# 聚类算法
-
-https://mp.weixin.qq.com/s/xGPiaXTnQad3RcMwIELP4w
-
-流式聚类算法
-
-https://wenku.baidu.com/view/4169e77f27284b73f2425047.html
-
-层次聚类
-
-https://mp.weixin.qq.com/s/uSHLJKB0knVcCY759Ul25w
-
-什么是聚类和降维？
-
-https://mp.weixin.qq.com/s/ORLOOhufrInyPdS6fbywOw
-
-深入浅出——基于密度的聚类方法
-
-https://mp.weixin.qq.com/s/Vi4Yb8TOJydj9yL078iNHw
-
-BIRCH层次聚类详解
-
-https://mp.weixin.qq.com/s/dIsq3RKAU_K6vS0-MPKbzA
-
-BIRCH聚类算法原理
-
-https://mp.weixin.qq.com/s/_5A3DuVyN6aE9n5OEc19kA
-
-数据科学家必须了解的六大聚类算法：带你发现数据之美
-
-https://mp.weixin.qq.com/s/pDiZt4ydWw-4cYeE4gpjiw
-
-数据科学家需要了解的5大聚类算法
-
-https://www.zhihu.com/question/34554321
-
-用于数据挖掘的聚类算法有哪些，各有何优势？
-
-https://mp.weixin.qq.com/s/7zV370J7nv5wSWxdYa5Plg
-
-DBSCAN聚类算法原理介绍，以及代码实现
-
-https://blog.csdn.net/huacha__/article/details/81094891
-
-DBSCAN聚类算法
-
-https://mp.weixin.qq.com/s/pgjItzm_XDe_nxxHxt34Xw
-
-详解DBSCAN聚类
-
-https://mp.weixin.qq.com/s/8dB2OQCoZ7_kSxExm32WSA
-
-于剑：聚类理论与算法选讲
-
-https://mp.weixin.qq.com/s/1SOQZ3fsiYtT4emt4jvMxQ
-
-深入浅出聚类算法
-
-https://mp.weixin.qq.com/s/GlwJhvdzxaRbRE2DhMpBSg
-
-基于动态局部搜索的免疫自动聚类算法
-
-https://mp.weixin.qq.com/s/IS4eXECKx2u41VFtmTsBhA
-
-全面理解无监督学习基础知识
-
-https://mp.weixin.qq.com/s/P9bxQobyEvMHY8umGkAz8Q
-
-无监督机器学习中，最常见4类聚类算法总结
-
-https://mp.weixin.qq.com/s/qTZZVBlZF7_oR8QFGq6hmQ
-
-Fuzzy c-means聚类算法简介
-
-https://mp.weixin.qq.com/s/FQUeNMU_8VLupHnfIyu8SQ
-
-小孩都看得懂的聚类
-
-https://mp.weixin.qq.com/s/D65S_qDvXgY65a3cXCZb6Q
-
-常用聚类算法综述
-
-https://mp.weixin.qq.com/s/geJz2P-03vPir4cxasoQSQ
-
-如何正确选择聚类算法？
-
-# 元胞自动机
-
-http://www.doc88.com/p-8939046003005.html
-
-元胞自动机理论及其在计算机仿真模拟中的应用
-
-http://blog.csdn.net/chl033/article/details/5367861
-
-元胞自动机与相关理论和方法
-
-http://blog.csdn.net/deepfuture/article/details/5065284
-
-元胞自动机
-
-http://www.cnblogs.com/Firefly727/articles/1856328.html
-
-元胞自动机
-
-https://mp.weixin.qq.com/s/KZcNsTLurOm7MNfCkNvcZw
-
-CNN与元胞自动机：“深度”之含义初探
-
-https://mp.weixin.qq.com/s/TQ-koPMLknWQtDsolrU8Jw
-
-什么是元胞自动机？
-
-https://mp.weixin.qq.com/s/g8rogZKkZvGEYA9MD_kFwA
-
-硬核解读！燃烧了152天的澳大利亚山火是怎么来的？又是怎么灭的？
 
 # simhash
 

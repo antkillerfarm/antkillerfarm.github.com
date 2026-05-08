@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 天文（四）——SpaceX
+title: 天文（四）——SpaceX（1）
 category: Nature 
 ---
 
@@ -8,6 +8,58 @@ category: Nature
 {:toc}
 
 # SpaceX（续）
+
+濮阳人吕不韦贾于邯郸，见秦质子异人，归而谓父曰：“耕田之利几倍?”曰：“十倍。”
+
+“珠玉之赢几倍?”曰：“百倍。”
+
+“立国家之主赢几倍?”曰：“无数。”
+
+https://mp.weixin.qq.com/s/dQXL6L7Ct08QaczC9rdgqA
+
+专访梅耶·马斯克：硅谷钢铁侠是怎样被炼成的？
+
+https://mp.weixin.qq.com/s/MCofTDnwfbz7R9zuqEnX7w
+
+梅耶·马斯克：英雄的母亲，也成为他们的英雄
+
+https://mp.weixin.qq.com/s/f9Eg3KkAjkvPdmH9_IlX8g
+
+宁可亏大钱，马斯克都要灭了LGBT思想
+
+---
+
+2018.2
+
+![](/images/img2/Falcon.jpg)
+
+![](/images/img2/Falcon_2.jpg)
+
+![](/images/img2/SpaceX.gif)
+
+![](/images/img2/SpaceX.png)
+
+![](/images/img2/rocket.jpg)
+
+![](/images/img6/SpaceX.png)
+
+https://www.zhihu.com/question/266793958
+
+如何看待SpaceX猎鹰重型火箭在美国时间2月6日发射并且回收成功？
+
+https://www.zhihu.com/question/21731308
+
+SpaceX猎鹰火箭和中国的长征系列火箭，各有什么优劣势？
+
+https://mp.weixin.qq.com/s/d6Z0pF7SG3mEFAgUuwTPZQ
+
+马斯克的“神性思维模式”，简直太神奇了！
+
+https://www.zhihu.com/question/314292163
+
+如何评价SpaceX载人龙飞船成功首飞并与国际空间站对接？
+
+---
 
 马斯克对他爹的随意口嗨，已经被那些美国驴党的白左媒体给以讹传讹成，某种拿着皮鞭抽黑奴挖矿的矿山奴隶主，简直是从16世纪新西班牙银矿投影过来的MEMO了。
 
@@ -218,15 +270,3 @@ https://mp.weixin.qq.com/s/0lDJiu1nyS0j1aj7C4tT-g
 ---
 
 马斯克的三艘回收船“Of course I still love you（当然我依旧爱你）"，"Just Read the Instructions（只要看操作指南就好了）"和“A Shortfall of Gravitas（不够庄严）“都来自于《文化》系列里面文化文明的飞船。
-
----
-
-超声速燃烧冲压式发动机，它简称超燃冲压发动机，可以在攀升过程中从大气里获取氧气。放弃携带氧化剂，从飞行中获取氧气，节省重量，就意味着在消耗相同质量推进剂的条件下，超燃冲压发动机能够产生4倍于火箭的推力。
-
-根据相关人士的评估，如果让第二级省的燃料有效果，第一级至少要爬到30公里，速度达到马赫5。低于这个数，跟普通地面发射火箭相比，增益不大。
-
-在马赫数3以下，普通的航空发动机还可以冲一冲，但马赫数3以上，人类至今没有能用的可以吸入大气中氧的航空发动机，现在提出的很多概念，比如超燃冲压发动机、旋转爆轰发动机都是为Ma3以上准备的，困难重重，进展特别慢。
-
-https://www.zhihu.com/question/268278478
-
-腾云工程的空天飞机和美国退役的航天飞机有区别么？

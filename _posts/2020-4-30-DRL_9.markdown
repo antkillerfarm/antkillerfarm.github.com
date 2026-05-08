@@ -338,27 +338,3 @@ GRPO原理：
 https://blog.csdn.net/v_JULY_v/article/details/136656918
 
 一文通透GRPO——通俗理解群体相对策略优化GRPO及其代码实现
-
----
-
-参考：
-
-https://zhuanlan.zhihu.com/p/592671478
-
-ChatGPT背后的算法——RLHF
-
-https://zhuanlan.zhihu.com/p/612572103
-
-RLHF的其他优化方向
-
-https://zhuanlan.zhihu.com/p/608176805
-
-如何看懂ChatGPT里的RLHF公式以及相关实现
-
-https://zhuanlan.zhihu.com/p/644680366
-
-LLaMA2 RLHF技术细节
-
-https://zhuanlan.zhihu.com/p/645068532
-
-大模型RLHF的trick

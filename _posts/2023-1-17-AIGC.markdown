@@ -295,6 +295,10 @@ https://zhuanlan.zhihu.com/p/650394311
 
 DDPM（数学原理篇）
 
+https://diffusion.csail.mit.edu/2026/index.html
+
+Introduction to Flow Matching and Diffusion Models
+
 https://zhuanlan.zhihu.com/p/377603135
 
 Diffusion Probabilistic Model

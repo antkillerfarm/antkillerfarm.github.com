@@ -9,6 +9,54 @@ category: Attention
 
 # BERT进阶（续）
 
+https://mp.weixin.qq.com/s/cyNcVNImoCOmTrsS0QVq4w
+
+用Siamese和Dual BERT来做多源文本分类
+
+https://mp.weixin.qq.com/s/uv74FKtUNtgjIBQZbsX7Qw
+
+你finetune BERT的姿势可能不对哦？
+
+https://mp.weixin.qq.com/s/BvM5zx-3XrsZj8BQ5WEa4A
+
+一文带你了解MultiBERT
+
+https://mp.weixin.qq.com/s/mFRhp9pJRa9yHwqc98FMbg
+
+BERT在美团搜索核心排序的探索和实践
+
+https://mp.weixin.qq.com/s/MPGF3tkNn3PBA_7S-fo9eg
+
+谷歌新模型突破BERT局限：NLP版“芝麻街”新成员Big Bird长这样
+
+https://zhuanlan.zhihu.com/p/165893466
+
+BERT及其变种
+
+https://mp.weixin.qq.com/s/5HZULHPI3-HJypvAMXEOcQ
+
+MT-BERT在文本检索任务中的实践
+
+https://mp.weixin.qq.com/s/0aZdGzcGW5ZA020rhX0qSQ
+
+BERT4Rec:使用Bert进行序列推荐
+
+https://mp.weixin.qq.com/s/fr-THgOeaTspKsv_hXnU2Q
+
+CogLTX：将BERT应用于长文本
+
+https://www.cnblogs.com/zhouxiaosong/p/11397655.html
+
+使用BERT模型生成token级向量
+
+https://mp.weixin.qq.com/s/JLP4-5IR6HPK4SRQoC9FAQ
+
+BERT预训练实操总结
+
+https://mp.weixin.qq.com/s/FuO8zY3XoIF-s6_8aXAusw
+
+BERT相关模型汇总梳理
+
 https://zhuanlan.zhihu.com/p/348373259
 
 史上最细节的自然语言处理NLP/Transformer/BERT/Attention面试问题与答案
@@ -350,47 +398,3 @@ Transformers中的Beam Search高效实现
 https://mp.weixin.qq.com/s/KdKbOrjeeo7Db095V7mSFA
 
 Transformer之自适应宽度注意力
-
-https://mp.weixin.qq.com/s/EuCCeWz_rkktwLuFJ75BXA
-
-Transformer+AutoML: 遗传搜索在序列式任务上的应用
-
-https://mp.weixin.qq.com/s/OEpLpWzkdfFUQf4cKNuG4w
-
-Performer:基于正交随机特征的快速注意力计算
-
-https://mp.weixin.qq.com/s/eWQLkiJ_XIo7LpTUE9c0qA
-
-Transformer中的相对位置编码
-
-https://mp.weixin.qq.com/s/mZBHjuHJG9Ffd0nSoJ2ISQ
-
-什么是Transformer位置编码？
-
-https://mp.weixin.qq.com/s/V0NAOgluyZN9P8iuhMKRwQ
-
-Transformer为啥在NER上表现不好
-
-https://mp.weixin.qq.com/s/ANFSNW1-mcjPqjcroNHeZQ
-
-RealFormer：Real简单，Real有效
-
-https://mp.weixin.qq.com/s/u-Twg6Cj6VfL6m4K0seBlw
-
-谷歌研究院出品：高效Transformer模型最新综述
-
-https://mp.weixin.qq.com/s/2S_2Z5-ioCNxH1kqFcUuQA
-
-竞赛中的Transformer家族
-
-https://mp.weixin.qq.com/s/mc6M2vEcPG6oMfKe3_apzQ
-
-Transformer变体层出不穷，它们都长什么样？
-
-https://mp.weixin.qq.com/s/IWUxVzpdGIX1Oxn4KxjhHA
-
-一个Transformer，很强；两个，更强？（TransGAN）
-
-https://mp.weixin.qq.com/s/IWUxVzpdGIX1Oxn4KxjhHA
-
-TransGAN：两个Transformer可以构造一个强大的GAN

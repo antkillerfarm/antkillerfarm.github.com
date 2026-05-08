@@ -39,6 +39,10 @@ https://new.qq.com/rain/a/20230510V018VT00
 
 专家：今年红场阅兵呈现出“小而全、小而强”的特点
 
+https://www.zhihu.com/question/2032776936930418721
+
+如何评价俄罗斯26年胜利日阅兵不展示武器装备？
+
 ---
 
 https://zhuanlan.zhihu.com/p/595934765

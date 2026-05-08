@@ -304,23 +304,3 @@ Fully Sharded Data Parallel是Facebook深度借鉴微软ZeRO之后提出的PyTor
 上面的操作之所以能够成立，其实是利用了以下公式：
 
 ![](/images/img5/fsdp_sharding.png)
-
-FSDP本身并不能减少数据的通信量，更不可能减少计算量（所有的分布式算法都无法减少理论计算量），甚至还会增加数据的通信量。但是可以通过重叠IO和计算的时间，来提升系统的利用效率。显然与其等待全部计算完成，再All-Reduce，还不如算一部分，通信一部分来的快。
-
-![](/images/img5/HSDP.png)
-
-受到FSDP的启发，Facebook又发明了HSDP（hybrid sharding data parallel），进一步用小步快跑的IO策略，提升系统的利用效率。
-
-pytorch roadmap：
-
-- 3DParallel = FSDP2 + ASync SP + PP
-- 4DParallel = FSDP2 + ASync SP + CP + PP
-- 5DParallel = HSDP2 + Async SP + CP + PP
-
-代码：
-
-https://github.com/facebookresearch/fairscale/blob/main/fairscale/nn/data_parallel/fully_sharded_data_parallel.py
-
-pytorch里已经集成了该代码：
-
-torch/distributed/fsdp/fully_sharded_data_parallel.py

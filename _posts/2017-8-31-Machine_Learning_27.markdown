@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  机器学习（二十七）——Stacking, 数据清洗, LSA
+title:  机器学习（二十七）——Stacking, 数据清洗, LSA, 聚类算法
 category: ML 
 ---
 
@@ -217,14 +217,88 @@ https://mp.weixin.qq.com/s/iZOVUYKWP-fN8BwAuVwAUw
 
 TF-IDF不容小觑
 
-# 物理+
+# 聚类算法
 
-我们会发现除了光，还有另一个重要的物质也以光速传递：引力场。
+https://mp.weixin.qq.com/s/xGPiaXTnQad3RcMwIELP4w
 
-其实这个速度不是光定义的，只是人类最早发现这个速度是通过光，而这个速度限制本身是与光无关的，它是我们这个宇宙的一个基本属性，也可看作因果律传递的速度（物理定义上的因果律），只不过光刚好可以达到这一极限速度而已。
+流式聚类算法
 
----
+https://wenku.baidu.com/view/4169e77f27284b73f2425047.html
 
-阿贝（Ernst Abbe）是光学领域尤其是光学显微领域的奠基人和集大成者之一。数值孔径、衍射极限的概念都是他提出的。当显微镜涉及的NA越来越大，我们发现近轴光学不再适用。他提出的阿贝正弦条件（Abbe Sine Condition ）则揭示了成像系统，尤其是离轴大角度系统的一般规律。
+层次聚类
 
-Ernst Abbe受显微镜匠人Carl Zeiss邀请，成为Zeiss公司合伙人，并在后者去世后，执掌Zeiss公司。1890年率先在德意志实行9小时工作制，1900年再缩至8小时；1892年起支付带薪节假日、病假与残疾补助；1896年设立最低工资与企业利润分享制度，被视作现代员工福利之雏形。
+https://mp.weixin.qq.com/s/uSHLJKB0knVcCY759Ul25w
+
+什么是聚类和降维？
+
+https://mp.weixin.qq.com/s/ORLOOhufrInyPdS6fbywOw
+
+深入浅出——基于密度的聚类方法
+
+https://mp.weixin.qq.com/s/Vi4Yb8TOJydj9yL078iNHw
+
+BIRCH层次聚类详解
+
+https://mp.weixin.qq.com/s/dIsq3RKAU_K6vS0-MPKbzA
+
+BIRCH聚类算法原理
+
+https://mp.weixin.qq.com/s/_5A3DuVyN6aE9n5OEc19kA
+
+数据科学家必须了解的六大聚类算法：带你发现数据之美
+
+https://mp.weixin.qq.com/s/pDiZt4ydWw-4cYeE4gpjiw
+
+数据科学家需要了解的5大聚类算法
+
+https://www.zhihu.com/question/34554321
+
+用于数据挖掘的聚类算法有哪些，各有何优势？
+
+https://mp.weixin.qq.com/s/7zV370J7nv5wSWxdYa5Plg
+
+DBSCAN聚类算法原理介绍，以及代码实现
+
+https://blog.csdn.net/huacha__/article/details/81094891
+
+DBSCAN聚类算法
+
+https://mp.weixin.qq.com/s/pgjItzm_XDe_nxxHxt34Xw
+
+详解DBSCAN聚类
+
+https://mp.weixin.qq.com/s/8dB2OQCoZ7_kSxExm32WSA
+
+于剑：聚类理论与算法选讲
+
+https://mp.weixin.qq.com/s/1SOQZ3fsiYtT4emt4jvMxQ
+
+深入浅出聚类算法
+
+https://mp.weixin.qq.com/s/GlwJhvdzxaRbRE2DhMpBSg
+
+基于动态局部搜索的免疫自动聚类算法
+
+https://mp.weixin.qq.com/s/IS4eXECKx2u41VFtmTsBhA
+
+全面理解无监督学习基础知识
+
+https://mp.weixin.qq.com/s/P9bxQobyEvMHY8umGkAz8Q
+
+无监督机器学习中，最常见4类聚类算法总结
+
+https://mp.weixin.qq.com/s/qTZZVBlZF7_oR8QFGq6hmQ
+
+Fuzzy c-means聚类算法简介
+
+https://mp.weixin.qq.com/s/FQUeNMU_8VLupHnfIyu8SQ
+
+小孩都看得懂的聚类
+
+https://mp.weixin.qq.com/s/D65S_qDvXgY65a3cXCZb6Q
+
+常用聚类算法综述
+
+https://mp.weixin.qq.com/s/geJz2P-03vPir4cxasoQSQ
+
+如何正确选择聚类算法？

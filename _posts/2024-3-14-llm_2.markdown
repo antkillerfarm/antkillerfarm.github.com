@@ -7,6 +7,26 @@ category: Attention
 * toc
 {:toc}
 
+# GPT-4（续）
+
+参考：
+
+https://www.zhihu.com/question/589639535
+
+OpenAI发布GPT-4，有哪些技术上的优化或突破？
+
+https://mp.weixin.qq.com/s/iw0wESsyP8nkPuFkj_EkOg
+
+OpenAI正式推出多模态GPT-4
+
+https://www.zhihu.com/question/589937459
+
+3月16日百度举办“文心一言”发布会，现场有哪些信息值得关注？
+
+https://www.zhihu.com/question/589941496
+
+百度正式推出“文心一言”，然而港股股价已暴跌近10%，客观来说其能力与ChatGPT相较如何？
+
 # AR vs AE
 
 自回归模型，是统计上一种处理时间序列的方法，用同一变数例如x的之前各期，亦即$$x_1$$至$$x_{t-1}$$来预测本期$$x_t$$的表现，并假设它们为一线性关系。因为这是从回归分析中的线性回归发展而来，只是不用x预测y，而是用x预测x自己，所以叫做自回归。

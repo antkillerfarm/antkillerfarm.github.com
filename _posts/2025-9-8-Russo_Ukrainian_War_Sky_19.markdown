@@ -133,16 +133,6 @@ Zelensky: In three days I heard from Putin.
 
 ---
 
-https://www.sohu.com/a/763236372_115479
-
-乌克兰拒绝罗马教皇“举白旗”提议：永远不会升起其他旗帜
-
-https://zhuanlan.zhihu.com/p/24341859854
-
-没有交换的矿产：慕尼黑发生了什么，美国向基辅提出了什么协议
-
----
-
 不是国家领导层坐在战壕里，而是我们的士兵在战壕中，他们有权决定。
 
 https://zhuanlan.zhihu.com/p/1976410518899151124
@@ -152,3 +142,17 @@ https://zhuanlan.zhihu.com/p/1976410518899151124
 https://zhuanlan.zhihu.com/p/1978617750797714414
 
 乌克兰士兵将特朗普的计划视为“投降”，即使他们梦想着和平
+
+---
+
+https://www.sohu.com/a/763236372_115479
+
+乌克兰拒绝罗马教皇“举白旗”提议：永远不会升起其他旗帜
+
+https://zhuanlan.zhihu.com/p/24341859854
+
+没有交换的矿产：慕尼黑发生了什么，美国向基辅提出了什么协议
+
+https://zhuanlan.zhihu.com/p/2029121406407906195
+
+乌克兰最终放弃了特朗普

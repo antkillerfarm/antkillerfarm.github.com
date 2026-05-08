@@ -256,3 +256,7 @@ https://zhuanlan.zhihu.com/p/463629676
 https://zhuanlan.zhihu.com/p/4610879668
 
 Nvidia GPU架构精读系列——Ampere
+
+https://zhuanlan.zhihu.com/p/2031795257612953005
+
+NVIDIA GPU架构专利整理：十代演进

@@ -11,6 +11,32 @@ category: DL acceleration
 
 ## MLA（续）
 
+需要注意，上述矩阵吸收的技巧没有考虑ROPE的影响，实际情况还要更复杂一些。
+
+类似的，还有GLA。
+
+---
+
+https://github.com/deepseek-ai/FlashMLA
+
+deepseek的MLA官方实现
+
+---
+
+参考：
+
+https://kexue.fm/archives/10091
+
+缓存与效果的极限拉扯：从MHA、MQA、GQA到MLA
+
+https://www.zhihu.com/question/655172528
+
+如何看待DeepSeek发布的MoE大模型DeepSeek-V2？
+
+https://huggingface.co/blog/Junrulu/mla-codebased-analysis
+
+结合Deepseek代码探讨MLA的改进及收益
+
 https://zhuanlan.zhihu.com/p/697781431
 
 还在用MHA？MLA来了DeepSeek-v2的MLA的总结和思考
@@ -246,50 +272,3 @@ FlashAttention-3发布！有什么新优化点？
 https://zhuanlan.zhihu.com/p/661478232
 
 FlashAttenion-V3: Flash Decoding详解
-
-## PagedAttention
-
-PagedAttention是UC Berkeley的作品。
-
-![](/images/img5/PagedAttention.gif)
-
-PagedAttention使用分页管理的方式管理KV Cache，将每个序列的KV Cache划分为块，每个块包含固定数量token的K/V。
-
-![](/images/img5/PagedAttention_2.gif)
-
-Parallel Sampling：我给模型发送一个请求，希望它对prompt做续写，并给出三种不同的回答。我们管这个场景叫parallel sampling。
-
-显然这里的prompt部分的KV cache是完全重复。这时可以使用如上图所示的进阶版本，通过类似MMU的逻辑地址和物理地址的映射，来解决存储问题。
-
-这个方法也可以推广到Beam Search、Shared prefix等场景。
-
-https://blog.vllm.ai/2023/06/20/vllm.html
-
-vLLM: Easy, Fast, and Cheap LLM Serving with PagedAttention
-
-https://zhuanlan.zhihu.com/p/691038809
-
-vLLM核心技术PagedAttention原理
-
-## FlashAttention v4
-
-![](/images/img6/FA4_softmax.png)
-
-- 之前FlashAttention每算完一个tile就“停下来”做一次partial-softmax同步，v4给每一轮分块先估一个“全局共享最大值”，各个tile完全独立地算完再一次性合并，彻底去掉同步点。
-
-- v4把kernel拆成“算当前tile＋预取下一tile”的双缓冲，计算与访存重叠。
-
-- v4在运行时根据Smem/SM数量、序列长度、batch-size做启发式决策，自动挑并行度与缓冲策略，保证哪种场景都能跑在“屋顶线”附近。
-
-## FlashAttention-4
-
-MUFU = MultiFunction Unit，是NV从Maxwell架构开始放在SM里的一个ALU。它只提供5条低精度、单周期的近似指令。
-
-传统Attention实现里softmax是“关键路径”，一旦近似误差放大，就会累积到数值不稳定，所以大家都老老实实调expf。
-
-FlashAttention 4提出了一种分段在线softmax算法：
-
-– 把K维切成若干块，每块先在寄存器里算局部max、局部和；
-– 只在最后一步才把局部和rescale成全局和；
-– 这样90%的exp计算只用于比较大小，绝对误差大一点无所谓；
-– 真正需要精度的rescale次数从$$O(N^2)$$降到$$O(N)$$。

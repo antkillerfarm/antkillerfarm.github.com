@@ -9,6 +9,52 @@ category: Russo Ukrainian War Sky
 
 # 俄乌战争：苍天篇
 
+## 库尔斯克战役（续）
+
+https://zhuanlan.zhihu.com/p/22531885837
+
+乌克兰库尔斯克行动：六个月评估
+
+https://www.zhihu.com/answer/115314748389
+
+库尔斯克战场局势（2025.3.4）
+
+https://zhuanlan.zhihu.com/p/29059176153
+
+俄罗斯战争博主们对通过煤气管道向苏贾运送100名士兵的灾难性失败感到愤怒（3月10日）
+
+https://zhuanlan.zhihu.com/p/30326024857
+
+库尔斯克最终章
+
+https://zhuanlan.zhihu.com/p/30598823343
+
+俄罗斯击溃乌克兰在库尔斯克的大胆军事行动
+
+https://zhuanlan.zhihu.com/p/1937360238928966710
+
+TCH采访西尔斯基
+
+https://zhuanlan.zhihu.com/p/1936528227523862698
+
+乌克兰人的库尔斯克攻势 其一：乌军行动准备
+
+https://zhuanlan.zhihu.com/p/1936574028602143718
+
+乌克兰人的库尔斯克攻势 其二：俄军防御部署与行动目标
+
+https://zhuanlan.zhihu.com/p/1937201686042116453
+
+乌克兰人的库尔斯克攻势 其三：作战行动第一章
+
+https://zhuanlan.zhihu.com/p/1937897171291709457
+
+乌克兰人的库尔斯克攻势 其四：作战行动第二章
+
+https://www.zhihu.com/question/2032411805826463579
+
+如何评价朝鲜库尔斯克纪念馆纪念显示朝鲜人民军在库尔斯克地区作战时至少死亡2300人？
+
 ## 克里米亚战役
 
 本节主要包括克里米亚陆地战役、克里米亚大桥、空军/防空作战的内容。海军/特种作战相关的内容在《莫斯科号》一节。

@@ -1,15 +1,25 @@
 ---
 layout: post
-title:  Attention（七）——RWKV, RoPE, BERT进阶（1）
+title:  Attention（七）——RWKV, RoPE, BERT进阶
 category: Attention 
 ---
 
 * toc
 {:toc}
 
-# State Space Model
+# State Space Model（续）
 
-## Mamba（续）
+## Mamba
+
+Linear-Time Sequence Modeling with Selective State Spaces
+
+SSM的问题在于其中的矩阵A、B、C不随输入不同而不同，即无法针对不同的输入针对性的推理。
+
+连续卷积的离散采样，包含了采样步长（step size）的参数。一般情况下，我们使用固定的step size进行采样，然而这个其实也是可变，或者说可学习的。
+
+较小的步长会忽略当前输入，而更多地使用先前的上文，而较大的步长会更多地关注当前输入。这也就是所谓的Selective State Spaces。
+
+然而这种非线性，又会破坏之前线性计算转换为卷积运算的前提。
 
 因此Mamba参考FlashAttention，设计了分块增量的卷积算法应对这个问题，也就是所谓的parallel scan。
 
@@ -261,45 +271,3 @@ https://blog.csdn.net/v_JULY_v/article/details/135072211
 https://blog.csdn.net/v_JULY_v/article/details/137955982
 
 一文速览Llama 3及其微调：从如何把长度扩展到100万到如何微调Llama3 8B
-
-# BERT进阶
-
-## UniLM
-
-![](/images/img5/UniLM.jpg)
-
-|  | Encoder注意力 | Decoder注意力 | 是否共享参数 |
-|:--:|:--:|:--:|:--:|
-| GPT | 单向 | 单向 | 是 |
-| UniLM | 双向 | 单向 | 是 |
-| T5 | 双向 | 单向 | 否 |
-
-https://mp.weixin.qq.com/s/m_FU4NmjUsvxusRidDb-Xg
-
-UniLM:一种既能阅读又能自动生成的预训练模型
-
-https://mp.weixin.qq.com/s/yyUPqxpfBwUSRbwM6SSAcQ
-
-UniLM论文阅读笔记
-
-https://mp.weixin.qq.com/s/RjeuHXa8O3MzSpTOuOHMkQ
-
-站在BERT肩膀上的NLP新秀们：XLMs、MASS和UNILM
-
-https://mp.weixin.qq.com/s/UEBKSKEkZTbpR49_Rh50Jg
-
-微软统一预训练语言模型UniLM 2.0解读
-
-## Electra
-
-https://mp.weixin.qq.com/s/dFT7KKMH56unkOEA9H4Kuw
-
-吊打BERT Large的小型预训练模型ELECTRA终于开源！真相却让人...
-
-https://mp.weixin.qq.com/s/6i9eQISKsWU0jawKzWg8nQ
-
-超越bert，最新预训练模型ELECTRA论文阅读笔记
-
-https://mp.weixin.qq.com/s/lkB1xn6G2P5Nivj7DcYg5w
-
-Electra: 判别还是生成，这是一个选择

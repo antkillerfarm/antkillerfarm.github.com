@@ -9,6 +9,36 @@ category: DRL
 
 # RLHF（续）
 
+Rollout Routing Replay（R3）
+
+现代RL训练框架要用两个引擎：一个inference引擎跑rollout，一个training引擎跑反向传播。Dense模型这两个引擎产生的token概率分布很接近，KL散度小到可以忽略。但MoE多了一层路由器——inference阶段选中的几个专家、和training阶段被选的几个专家可能根本对不上号。同一个token在两个引擎里走的就不是同一条计算路径。
+
+这种漂移在短训练里看不出来，一旦放到长trajectory的RL训练里，KL散度会一路飙到把训练流程直接撕开。论文里给的数字：MoE模型的训练-推理KL散度是$$1.5×10^{-3}$$，稠密模型只有$$6.4×10^{-4}$$。R3的解法很简单粗暴：把inference阶段算出来的路由mask直接缓存下来，training阶段强制重放——确保两个引擎选到完全一样的专家。
+
+---
+
+参考：
+
+https://zhuanlan.zhihu.com/p/592671478
+
+ChatGPT背后的算法——RLHF
+
+https://zhuanlan.zhihu.com/p/612572103
+
+RLHF的其他优化方向
+
+https://zhuanlan.zhihu.com/p/608176805
+
+如何看懂ChatGPT里的RLHF公式以及相关实现
+
+https://zhuanlan.zhihu.com/p/644680366
+
+LLaMA2 RLHF技术细节
+
+https://zhuanlan.zhihu.com/p/645068532
+
+大模型RLHF的trick
+
 https://zhuanlan.zhihu.com/p/635569455
 
 RLHF实践
@@ -224,33 +254,3 @@ https://www.zhihu.com/question/437149222
 https://www.zhihu.com/question/347701202
 
 波士顿动力旋转跳跃360°视频火了，那么它的背后是通过什么算法实现的呢？
-
----
-
-至少在2022年之前，波士顿动力在足式机器人的全身运动控制水平上都是一骑绝尘的。他们的技术护城河是一套能够实时解算whole-body MPC的控制框架。搞过轨迹优化的朋友们都知道，求解一个包含20+自由度机器人全身动力学的非线性非凸轨迹优化问题有很多种方法，但是要在几十毫秒内得到一个质量不错的解并且能让机器人动起来就是另外一个次元的问题了。
-
-2020年，苏黎世联邦理工（ETH）的Robotic Systems Lab（RSL）整了个大活。在强化学习这条道路上直接起飞，发Science Robotics如同喝水。他们在仿真和GPU并行训练方面的工作直接催生了Isaac全家桶的诞生，他们开源的rsl_rl框架现在已经成为了这个地球上几乎所有人形机器人公司训练控制器的基础。后续RSL+NVIDIA的持续发力也是直接把足式机器人的locomotion问题差不多完全解决了。MPC这块香饽饽突然就不香了。
-
-https://www.zhihu.com/answer/2010639799954997547
-
-为什么吹的神乎其神的波士顿动力机器人销声匿迹了？
-
----
-
-强化学习和模仿学习，本质都是在任务层面的（Task-level Control），而传统的机器人控制都是在动作级（Action-level）和伺服级（Servo-level）。
-
-https://www.zhihu.com/question/504142198
-
-现有的控制器已经能完成对于机械臂的控制了，将深度强化学习应用到机械臂的控制上还有什么实际意义吗？
-
----
-
-参考：
-
-https://zhuanlan.zhihu.com/p/59197798
-
-那些个端到端的自动驾驶研发系统
-
-https://mp.weixin.qq.com/s/yU-6r-7l50y5msw8gUWnUQ
-
-美团技术部解析：无人车端到端驾驶模型概述

@@ -255,7 +255,9 @@ https://blog.csdn.net/weixin_45492196/article/details/107866309
 
 TD3算法：DDPG的进化
 
-# PPO（Proximal Policy Optimization）
+# PPO
+
+Proximal Policy Optimization
 
 TRPO（Trust Region Policy Opimization，2015）：考虑到连续动作空间无法每一个动作都搜索一遍，因此大部分情况下只能靠猜。如果要猜，就最好在信任域内部去猜。而TRPO将每一次对策略的更新都限制了信任域内，从而极大地增强了训练的稳定性。
 
@@ -286,6 +288,12 @@ $$J^{\theta^k}_{PPO}(\theta)=J^{\theta^k}(\theta)-\beta KL(\theta, \theta^k)$$
 除了KL惩罚项之外，还可以使用clip来限制Gradient的大小，这就是PPO2的做法。
 
 和A3C类似，PPO也有一个分布式版本，叫做DPPO（Distributed Proximal Policy Optimization）。
+
+---
+
+Online Policy RL：边玩边学，用自己最新的数据更新自己。典型算法：PPO、A2C、REINFORCE。
+
+Offline Async RL：读旧日志、分布式异步训练，学一个新策略。典型算法：BCQ、CQL、TD3+BC 等离线算法 + 异步分布式框架（如 AReaL、RollFlash）。
 
 ---
 
