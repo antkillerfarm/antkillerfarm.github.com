@@ -66,6 +66,16 @@ FlashAttention 4提出了一种分段在线softmax算法：
 - Flash attention 3/DeepGEMM：tensor core和vector/SIMT core要能完全异步。
 - Deepseek Sparse Attention：vector/SIMT core需要高效地支持topK，较为高效地支持hadamard transform。
 
+昇腾910（2019 年发布）时代，Cube和Vector仍在同一个AI Core内紧密耦合，共享核心内更直接的片上缓冲/数据通路，Cube/Vector之间协同相对直接。
+
+到910B（约 2023 年前后进入市场）这一代，架构变成更明显的AIC/AIV分离：一个逻辑计算单元内由1个Cube（AIC）和2个Vector（AIV）组成。这个变化缓解了Vector算力跟不上 Cube的问题，但也削弱了原来Cube/Vector之间低延迟协同的本地路径。中间数据通常要经由GM地址空间，并依赖L2 cache承接复用。不过，L2复用效果取决于具体访问模式和cache命中率，通常要等算子实现完成后，再通过trace/profiling工具确认。
+
+2026Q1上市的950PR增加了SSBuffer，用于AIC和AIV的核间通信。
+
+这种固定的1 AIC : 2 AIV物理配比，在面对FA内部BMM与softmax/rescale之间动态波动的算力需求时，缺乏底层硬件级的动态调度与资源倾斜能力。算子工程师只能通过复杂的静态流水线排布去适配不同shape，一旦seq_len、head_dim、tile size偏离调优甜点，就容易产生大量气泡。
+
+NPU上做FA，真正难的经常不是把矩阵乘发出去，而是把copy-in、BMM1、softmax、BMM2、copy-out排成稳定流水。若流水编排不佳，Tensor Core会因等待搬运、Vector计算或同步而大量stall，整体表现成non-matmul bound——主路径被DMA、Vector单元和同步开销占据，而不是传统意义上HBM带宽受限的memory bound。
+
 https://www.zhihu.com/question/1964791844773822881
 
 NPU为什么很难支持FlashAttention?
@@ -182,39 +192,3 @@ LLM的推理优化技术纵览
 https://github.com/DefTruth/Awesome-LLM-Inference
 
 Awesome LLM Inference
-
----
-
-![](/images/img5/LLM_2.png)
-
-https://www.zhihu.com/tardis/zm/art/647813179
-
-大模型文本生成——解码策略（Top-k & Top-p & Temperature）
-
-https://b23.tv/OfdfBnz
-
-如何设置大模型推理参数，top_k，top_p, temperature, num_beams
-
-https://blog.csdn.net/HUSTHY/article/details/125990877
-
-Contrastive Search Decoding——一种对比搜索解码文本生成算法
-
-https://zhuanlan.zhihu.com/p/656707466
-
-DoLa：层对比解码改善LLM的真实性
-
----
-
-Speculative Decoding：先用一个轻量级“提议器”快速生成K个候选token，再用主模型并行打分，能少跑很多步主模型。
-
-《Medusa: Simple LLM Inference Acceleration Framework with Multiple Decoding Heads》提出：
-
-不额外训练完整草稿模型，而是在原模型最后一层隐藏状态上挂3-5个轻量级前馈头（Medusa Heads），每个头负责预测第2,3,…,K+1位置的token。这些头与原模型共享KV缓存，因此几乎不占额外显存。
-
-EagleProposer复用主模型的Embedding与LMHead，只额外训练一个轻量的Auto-regression Head，接受率显著高于Medusa/普通小草稿模型。
-
-MTP vs Speculative Decoding：后者是推理时的加速技巧，MTP是训练时的目标改进；但MTP训练出的辅助头可被用于投机解码。
-
-https://zhuanlan.zhihu.com/p/651359908
-
-大模型推理妙招—投机采样（Speculative Decoding）

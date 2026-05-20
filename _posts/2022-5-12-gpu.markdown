@@ -197,6 +197,16 @@ KMD，Kernel Mode Driver。GPU的PCIe驱动，例如英伟达GPU的KMD是nvidia.
 
 ---
 
+sli和cf最常见的模式是AFR，也就是两张显卡进行交替渲染，一张显卡渲染一帧，这在dx9和dx10的年代还行得通，因为大部分游戏引擎还在固定管线，后处理也不积极。
+
+但从dx11时代开始，这些全都变了，越来越多的后处理技术被塞进来，越来越多的情况下，两帧之间存在关联或者依赖（比如TAA抗锯齿就是典型），这导致渲染帧序列的并行程度越来越低，到现在已经基本不存在理想并行的可能了。
+
+因为存在后帧等前帧等一系列同步问题，所以多卡的帧生成时间很糟糕，也和帧生成技术一样面临输入延迟增加，帧生成时间极不稳定等许多严重问题，到dx12时代多卡生态已经完全崩溃。
+
+多卡互联的表现肯定是1+1＜2的，这是常识，但由于上述问题的存在，用于游戏的多卡技术很容易出现1+1＜1。在sli和30系这种末代nvlink游戏卡的多卡技术后期，1+1＜1反而成了常态...
+
+---
+
 http://tieba.baidu.com/p/2250616047
 
 史上最全桌面显卡天梯图
@@ -224,39 +234,3 @@ https://mp.weixin.qq.com/s/HeoVktVtvOK4VgocyxuCXg
 https://mp.weixin.qq.com/s/zTO4UZ3zDLZL0GOjv0YqrQ
 
 GPU加速深度学习
-
-https://mp.weixin.qq.com/s/VysqrYVXG1JiNG86viQ6Xg
-
-学深度学习的你有GPU了吗
-
-https://mp.weixin.qq.com/s/fUl-YjMlfZs9XXZ1W4DFBQ
-
-GPU历史系列（一）：故事从20世纪70年代讲起
-
-https://mp.weixin.qq.com/s/QuvpUYNhmf3htl0ea9TT8Q
-
-GPU历史系列（二）：改变游戏规则的3Dfx Voodoo
-
-https://mp.weixin.qq.com/s/BisVJ3VDxcUpSMyoGmQicw
-
-GPU历史系列（三）：Nvidia一统江湖
-
-https://mp.weixin.qq.com/s/5ahh8EihTefzMmCGSwmwHw
-
-GPU历史系列（四）：通用GPU的来临
-
-https://mp.weixin.qq.com/s/iBgTyDiNNTUuuCgWJCyKig
-
-深度报告：GPU产业纵深及国产化替代
-
-https://zhuanlan.zhihu.com/p/463629676
-
-从AI系统角度回顾GPU架构变迁--从Fermi到Ampere
-
-https://zhuanlan.zhihu.com/p/4610879668
-
-Nvidia GPU架构精读系列——Ampere
-
-https://zhuanlan.zhihu.com/p/2031795257612953005
-
-NVIDIA GPU架构专利整理：十代演进

@@ -1,13 +1,41 @@
 ---
 layout: post
-title:  深度目标检测（四）——YOLO, SSD, YOLOv2
+title:  深度目标检测（四）——YOLO, SSD
 category: Deep Object Detection 
 ---
 
 * toc
 {:toc}
 
-# Faster R-CNN（续）
+# Faster R-CNN
+
+## RPN和Fast R-CNN协同训练（续）
+
+### 数据不平衡问题
+
+如果每幅图的所有anchor都去参与优化loss function，那么最终会因为负样本过多导致最终得到的模型对正样本预测准确率很低。因此，可在每幅图像中随机采样256个anchors去参与计算一次mini-batch的损失。正负比例1:1(如果正样本少于128则补充采样负样本)
+
+## 总结
+
+![](/images/article/faster_rcnn_p.png)
+
+参考：
+
+https://zhuanlan.zhihu.com/p/24916624
+
+Faster R-CNN
+
+http://blog.csdn.net/shenxiaolu1984/article/details/51152614
+
+Faster RCNN算法详解
+
+https://mp.weixin.qq.com/s/VKQufVUQ3TP5m7_2vOxnEQ
+
+通过Faster R-CNN实现当前最佳的目标计数
+
+https://zhuanlan.zhihu.com/p/31426458
+
+一文读懂Faster RCNN
 
 https://mp.weixin.qq.com/s/IZ9Q3fDJVawiEbD6x9WRLg
 
@@ -280,27 +308,3 @@ https://mp.weixin.qq.com/s/hGRZzNzflbed2w4XosC40w
 https://mp.weixin.qq.com/s/vfC1FPi8sjatFh2HMjTEXQ
 
 目标检测算法之SSD
-
-# YOLOv2
-
-面对SSD的攻势，pjreddie不甘示弱，于2016年12月提出了YOLOv2。
-
-YOLOv2有两个版本：
-
-原始版：仍然是VOC数据集的20个分类。
-
-加强版：类别增加到9000类。因此这一版本也被称作YOLO9000。
-
-YOLOv2对YOLO做了较多改进，实际上更像是SSD的升级版。
-
-论文：
-
-《YOLO9000: Better, Faster, Stronger》
-
-实际上，论文的内容也正如标题所言，主要分为Better, Faster, Stronger三个部分。
-
-## Better
-
-### batch normalization
-
-YOLOv2网络通过在每一个卷积层后添加batch normalization，极大的改善了收敛速度同时减少了对其它regularization方法的依赖（舍弃了dropout优化后依然没有过拟合），使得mAP获得了2%的提升。

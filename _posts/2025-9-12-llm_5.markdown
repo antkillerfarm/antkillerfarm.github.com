@@ -114,6 +114,8 @@ Devin炮轰Claude：别再搞Multi-Agent了
 
 Prompt Engineering管的是"问什么"，Context Engineering管的是"给LLM看什么上下文"，而Harness Engineering管的是"整个运行环境怎么设计"——它是最上层的学科，前两者是它的子集。
 
+在LLM（大语言模型）的语境中，"Harness" 是一个动词，意思是"驾驭、利用"，即充分利用和控制模型的能力。
+
 https://zhuanlan.zhihu.com/p/2027834017840415550
 
 AI真能自己写出整个Windows系统吗？我做了一场无监督实验
@@ -257,6 +259,16 @@ https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/huggi
 Weight Decay（L2正则化）：设置合理的权重衰减率，如0.1，有助于防止过拟合，增强模型泛化能力。
 
 特殊层的调整：GLM研究发现，embedding层往往存在较大的梯度异常情况，故需根据实际情况适度调整相关参数。
+
+---
+
+正常情况下，你输入的`<think>`对大模型来说其实可以理解为`&lt;think&gt;`（三个 Token），和系统赋予的真`<think>`（一个 Token）是两码事，模型不会混淆。
+
+`<|im_start|>`和`<think>`这样的特殊Token只能由系统注入。
+
+https://www.zhihu.com/question/2038402853274915914
+
+为什么Deepseek在输入`<think `后会匹配到疑似其他对话?
 
 ---
 

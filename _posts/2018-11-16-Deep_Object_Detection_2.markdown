@@ -258,13 +258,3 @@ SPPNet的核心思想如上图所示：在feature map上提取ROI特征，这样
 这里的计算比较复杂，要点在于：选择原始图像ROI的左上角和右下角，将之映射到feature map上的两个对应点，从而得到feature map上的ROI。
 
 ![](/images/article/roi_original_to_feature.png)
-
-参见：
-
-https://zhuanlan.zhihu.com/p/24780433
-
-原始图片中的ROI如何映射到到feature map?
-
-http://www.cnblogs.com/objectDetect/p/5947169.html
-
-卷积神经网络物体检测之感受野大小计算

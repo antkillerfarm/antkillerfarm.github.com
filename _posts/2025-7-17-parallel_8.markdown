@@ -9,6 +9,42 @@ category: DL acceleration
 
 # LLM Inference（续）
 
+![](/images/img5/LLM_2.png)
+
+https://www.zhihu.com/tardis/zm/art/647813179
+
+大模型文本生成——解码策略（Top-k & Top-p & Temperature）
+
+https://b23.tv/OfdfBnz
+
+如何设置大模型推理参数，top_k，top_p, temperature, num_beams
+
+https://blog.csdn.net/HUSTHY/article/details/125990877
+
+Contrastive Search Decoding——一种对比搜索解码文本生成算法
+
+https://zhuanlan.zhihu.com/p/656707466
+
+DoLa：层对比解码改善LLM的真实性
+
+---
+
+Speculative Decoding：先用一个轻量级“提议器”快速生成K个候选token，再用主模型并行打分，能少跑很多步主模型。
+
+《Medusa: Simple LLM Inference Acceleration Framework with Multiple Decoding Heads》提出：
+
+不额外训练完整草稿模型，而是在原模型最后一层隐藏状态上挂3-5个轻量级前馈头（Medusa Heads），每个头负责预测第2,3,…,K+1位置的token。这些头与原模型共享KV缓存，因此几乎不占额外显存。
+
+EagleProposer复用主模型的Embedding与LMHead，只额外训练一个轻量的Auto-regression Head，接受率显著高于Medusa/普通小草稿模型。
+
+MTP vs Speculative Decoding：后者是推理时的加速技巧，MTP是训练时的目标改进；但MTP训练出的辅助头可被用于投机解码。
+
+https://zhuanlan.zhihu.com/p/651359908
+
+大模型推理妙招—投机采样（Speculative Decoding）
+
+---
+
 LLM Inference的性能评估主要有以下几个方面：
 
 - Time To First Token (TTFT)
@@ -144,28 +180,3 @@ https://www.zhihu.com/question/603117242
 https://zhuanlan.zhihu.com/p/668509885
 
 向量数据库凉了吗？
-
-## Accumulate Gradients
-
-gradient_accumulation_steps用于处理当模型的参数数量超过GPU内存容量时的情况。在训练大型模型时，尤其是在使用较小的GPU进行训练时，可能会遇到内存不足的问题。这时，可以使用梯度累积来分割批次，从而使得每个小批次的计算都在GPU的内存限制范围内。
-
-如果设置了gradient_accumulation_steps=N，那么模型会先对N个批次的数据进行前向和反向传播，将这些批次的梯度累积起来，然后才进行一次权重更新。这样，实际上的批次大小相当于per_device_train_batch_size * N。
-
-## Multi-Token Prediction
-
-在训练阶段，一次生成多个后续token，可以一次学习多个位置的label，进而有效提升样本的利用效率，提升训练速度；在推理阶段通过一次生成多个token，实现成倍的推理加速来提升推理性能。
-
-![](/images/img6/MTP.png)
-
-https://zhuanlan.zhihu.com/p/18056041194
-
-MTP（Multi-Token Prediction）的前世今生
-
-https://blog.csdn.net/v_JULY_v/article/details/145374551
-
-一文通透让Meta恐慌的DeepSeek-V3：在MoE、GRPO、MLA基础上提出Multi-Token预测(含FP8训练详解)
-
-## 参考
-https://mp.weixin.qq.com/s/39MYrsB3gXpfzTTOgQjDwg
-
-幻方AI DeepSeek模型背后的万卡集群建设

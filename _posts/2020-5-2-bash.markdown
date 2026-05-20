@@ -121,7 +121,7 @@ fi
 
 非实时查看：
 
-`echo $SHELL`
+`echo $SHELL`或者`echo $0`
 
 ## return和exit的区别
 

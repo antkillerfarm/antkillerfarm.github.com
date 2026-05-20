@@ -9,6 +9,60 @@ category: DL acceleration
 
 # 并行 & 框架 & 优化参考资源
 
+https://mp.weixin.qq.com/s/_1Yr_BbFhlNEW7UtYvAaoA
+
+分布式深度学习，93页ppt概述最新DDL技术发展
+
+https://mp.weixin.qq.com/s/jC5v9BKQvlxa2_6cikXV9w
+
+分布式算法与优化，118页pdf
+
+https://zhuanlan.zhihu.com/p/58806183
+
+深度学习的分布和并行处理系统
+
+https://zhuanlan.zhihu.com/p/56991108
+
+一文说清楚Tensorflow分布式训练必备知识
+
+https://mp.weixin.qq.com/s/r951Iasr4dke6MPHsUO0TA
+
+开源DAWN，Stanford的又一力作
+
+https://mp.weixin.qq.com/s/2jrMDeMcb47zpPfFLEcnIA
+
+深度学习平台技术演进
+
+https://mp.weixin.qq.com/s/L4CMKS53pNyvhhqvQhja0g
+
+5种商业AI产品的技术架构设计
+
+https://mp.weixin.qq.com/s/UxN9ZRmKLN30s7uPqMpHPQ
+
+Jeff Dean等提出动态控制流编程模型，大规模机器学习性能提升21%
+
+https://mp.weixin.qq.com/s/fx0Pfu0MOPjSkzi5mL6U_A
+
+清华&斯坦福提出深度梯度压缩DGC，大幅降低分布式训练网络带宽需求
+
+https://mp.weixin.qq.com/s/wIdTDHEPffWqHA3_XWBLyw
+
+没错，纯SQL查询语句可以实现神经网络。
+
+>SQL跑神经网络固然没有太大意义，然而分布式数据库已经有数十年的历史，对于设计分布式深度学习框架亦有重大的启发意义。
+
+https://mp.weixin.qq.com/s/F10UaaoxGPOE4pc59LBCRw
+
+数据并行化对神经网络训练有何影响？谷歌大脑进行了实证研究
+
+https://mp.weixin.qq.com/s/UF7DDenUQJ3bL83IHxOkIw
+
+分布式优化算法及其在多智能体系统与机器学习中的应用
+
+https://mp.weixin.qq.com/s/6h9MeBs89hTtWsYSZ4pZ5g
+
+蚂蚁金服核心技术：百亿特征实时推荐算法揭秘
+
 https://mp.weixin.qq.com/s/xV5cLbCPb7Nh6i4i7DxJIQ
 
 没人告诉你的大规模部署AI高效流程！
@@ -316,35 +370,3 @@ OneFlow——让每一位算法工程师都有能力训练GPT
 https://mp.weixin.qq.com/s/LjdHBEyQhJq3ptMj8XVT-w
 
 TensorFlow在推荐系统中的分布式训练优化实践
-
-https://mp.weixin.qq.com/s/rEHhf32L09KXGJ9bbB2LEA
-
-TensorFlow在美团外卖推荐场景的GPU训练优化实践
-
-https://zhuanlan.zhihu.com/p/522759214
-
-手把手推导分布式矩阵乘的最优并行策略
-
-https://mp.weixin.qq.com/s/_o7fzCOeuZE6qFc5gHb26g
-
-美团视觉GPU推理服务部署架构优化实践
-
-https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
-
-Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
-
-https://zhuanlan.zhihu.com/p/529388795
-
-训练千亿参数大模型，离不开四种GPU并行策略
-
-https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
-
-百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
-
-https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
-
-分布式深度学习原理、算法详细介绍
-
-https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
-
-苹果发布Turi Create机器学习框架，5行代码开发图像识别

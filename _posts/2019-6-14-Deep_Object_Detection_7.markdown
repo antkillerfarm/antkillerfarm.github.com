@@ -7,7 +7,37 @@ category: Deep Object Detection
 * toc
 {:toc}
 
-# CornerNet（续）
+# CornerNet
+
+传统的目标检测网络，无论是One-stage还是Two-stage，都有基于Anchor的。Anchor的作用主要在于：**显式枚举出不同的scale和aspect ratio的基准bbox。**
+
+但就本质而言，**框对于物体来说不是一个最好的表示。**框的顶点可能甚至都不在物体上，离物体本身已经很远了。
+
+因此，自2018年以来，逐渐有一些不基于anchor的目标检测方法出现，形成了一股Anchor-Free的热潮。下面将首先介绍一下，该类方法的开山之作——CornerNet。
+
+>CornerNet并非第一个提出Anchor-Free思想的模型，但却是第一个精度和性能达到与anchor base方法同等水平的Anchor-Free模型。
+
+---
+
+CornerNet是Princeton University的Hei Law的作品。（2018.8）
+
+论文：
+
+《CornerNet: Detecting Objects as Paired Keypoints》
+
+CornerNet认为Two-stage目标检测最明显的缺点是在Region Proposal阶段需要提取anchor boxes。这样做导致两个问题：
+
+- 提取的anchor boxes数量较多，比如DSSD使用40k，RetinaNet使用100k，anchor boxes众多造成正负样本不均衡。
+
+- Anchor boxes需要调整很多超参数，比如anchor boxes数量、尺寸、比率，影响模型的训练和推断速率。
+
+![](/images/img3/CornerNet_2.png)
+
+上图是CornerNet的网络结构。可以看出它主要由两部分组成：
+
+## Hourglass Network
+
+这是CornerNet的骨干部分。详情参见《深度学习（十二）》。
 
 ## Bottom-right corners & Top-left Corners Prediction Module
 
@@ -263,69 +293,3 @@ RepPoints V2：将角点检测和前景热图引入纯回归目标检测算法
 https://mp.weixin.qq.com/s/gnTZ-q2-lm8QPH6JEPylnw
 
 RepPointv2：使用点集合表示来做目标检测
-
-## 参考
-
-https://mp.weixin.qq.com/s/T7DDWvtvCULfjcDmljvx5Q
-
-Anchor-free的对象检测网络汇总
-
-https://zhuanlan.zhihu.com/p/63024247
-
-锚框：Anchor box综述
-
-https://mp.weixin.qq.com/s/dYV446meJXtCQVFrLzWV8A
-
-目标检测中Anchor的认识及理解
-
-https://mp.weixin.qq.com/s/WAx3Zazx9Pq7Lb3vKa510w
-
-目标检测最新方向：推翻固有设置，不再一成不变Anchor
-
-https://zhuanlan.zhihu.com/p/64563186
-
-Anchor free深度学习的目标检测方法
-
-https://mp.weixin.qq.com/s/DoN-vha1H-2lHhbFOaVS8w
-
-FoveaBox：目标检测新纪元，无Anchor时代来临！
-
-https://zhuanlan.zhihu.com/p/66156431
-
-从Densebox到Dubox：更快、性能更优、更易部署的anchor-free目标检测
-
-https://zhuanlan.zhihu.com/p/63273342
-
-聊聊Anchor的"前世今生"（上）
-
-https://zhuanlan.zhihu.com/p/68291859
-
-聊聊Anchor的"前世今生"（下）
-
-https://zhuanlan.zhihu.com/p/62372897
-
-物体检测的轮回：anchor-based与anchor-free
-
-https://mp.weixin.qq.com/s/m_PvEbq2QbTXNmj_gObKmQ
-
-Anchor-free目标检测之ExtremeNet
-
-https://mp.weixin.qq.com/s/LGeNgnXfYaVVAc_37j6-2A
-
-Anchor Free及Transformer时代
-
-https://mp.weixin.qq.com/s/52YBmlHioRkUgetZWHMZOw
-
-Anchor-free目标检测：工业应用更友好的新网络
-
-https://zhuanlan.zhihu.com/p/84398108
-
-目标检测中Anchor的本质分析
-
-https://mp.weixin.qq.com/s/LQOzrlaEOsrsMHj-V8l3hQ
-
-FreeAnchor：抛弃单一的IoU匹配，更自由的anchor匹配方法
-
-https://zhuanlan.zhihu.com/p/163266388
-
-Anchor-free应用一览：目标检测、实例分割、多目标跟踪

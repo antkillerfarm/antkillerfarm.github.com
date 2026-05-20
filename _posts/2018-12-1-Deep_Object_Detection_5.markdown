@@ -1,13 +1,35 @@
 ---
 layout: post
-title:  深度目标检测（五）——YOLOv3
+title:  深度目标检测（五）——YOLOv2, YOLOv3
 category: Deep Object Detection 
 ---
 
 * toc
 {:toc}
 
-# YOLOv2（续）
+# YOLOv2
+
+面对SSD的攻势，pjreddie不甘示弱，于2016年12月提出了YOLOv2。
+
+YOLOv2有两个版本：
+
+原始版：仍然是VOC数据集的20个分类。
+
+加强版：类别增加到9000类。因此这一版本也被称作YOLO9000。
+
+YOLOv2对YOLO做了较多改进，实际上更像是SSD的升级版。
+
+论文：
+
+《YOLO9000: Better, Faster, Stronger》
+
+实际上，论文的内容也正如标题所言，主要分为Better, Faster, Stronger三个部分。
+
+## Better
+
+### batch normalization
+
+YOLOv2网络通过在每一个卷积层后添加batch normalization，极大的改善了收敛速度同时减少了对其它regularization方法的依赖（舍弃了dropout优化后依然没有过拟合），使得mAP获得了2%的提升。
 
 ### High Resolution Classifier
 
@@ -200,63 +222,3 @@ https://mp.weixin.qq.com/s/UWuCiV6dBk9Z0XusEBS6-g
 https://mp.weixin.qq.com/s/BF7mj-_D303cLiD5e6oy6w
 
 期待已久的—YOLO V3
-
-https://mp.weixin.qq.com/s/-Ixqxx6QGJDTM4g50y6LyA
-
-进击的YOLOv3，目标检测网络的巅峰之作
-
-https://zhuanlan.zhihu.com/p/46691043
-
-YOLO v1深入理解
-
-https://zhuanlan.zhihu.com/p/47575929
-
-YOLOv2 / YOLO9000深入理解
-
-https://zhuanlan.zhihu.com/p/49556105
-
-YOLO v3深入理解
-
-https://mp.weixin.qq.com/s/0lyDv9b-mpvSFYXqyngT-w
-
-实用教程！使用YOLOv3训练自己数据的目标检测
-
-https://mp.weixin.qq.com/s/PkFtZ0Iqf7PBGyE5a_IJ4Q
-
-YOLO v3的TensorFlow实现，GitHub完整源码解析
-
-https://mp.weixin.qq.com/s/Vuuca3A7luCyCQ-jBKMIcw
-
-YOLO v3目标检测的PyTorch实现，GitHub完整源码解析！
-
-https://mp.weixin.qq.com/s/2aeBBjCbWdweYmNrTaWqqw
-
-一文看尽目标检测：从YOLO v1到v3的进化之路
-
-https://mp.weixin.qq.com/s/fDOskKqG-fsJmhT0-tdtTg
-
-SlimYOLOv3：更窄、更快、更好的无人机目标检测算法
-
-https://zhuanlan.zhihu.com/p/50595699
-
-揭秘YOLOv3鲜为人知的关键细节
-
-https://mp.weixin.qq.com/s/EElv2Tc73JKS8jpejEGB1w
-
-YOLO v3实战之钢筋数量AI识别（一）
-
-https://mp.weixin.qq.com/s/HEBO9uZMD2CZW_Y-8eBK1A
-
-YOLOv1/v2/v3简述
-
-https://mp.weixin.qq.com/s/5IfT9cWVbZq4cwHPLes5vA
-
-你对YOLOV3损失函数真的理解正确了吗？
-
-https://mp.weixin.qq.com/s/biPLPaunfkQtpywaHbBfLg
-
-YOLOV3损失函数再思考
-
-https://mp.weixin.qq.com/s/Cws-3Cni-_v3AED918eB4A
-
-高斯YoloV3目标检测

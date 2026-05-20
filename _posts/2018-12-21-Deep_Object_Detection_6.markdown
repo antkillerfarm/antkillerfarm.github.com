@@ -7,6 +7,68 @@ category: Deep Object Detection
 * toc
 {:toc}
 
+# YOLOv3（续）
+
+https://mp.weixin.qq.com/s/-Ixqxx6QGJDTM4g50y6LyA
+
+进击的YOLOv3，目标检测网络的巅峰之作
+
+https://zhuanlan.zhihu.com/p/46691043
+
+YOLO v1深入理解
+
+https://zhuanlan.zhihu.com/p/47575929
+
+YOLOv2 / YOLO9000深入理解
+
+https://zhuanlan.zhihu.com/p/49556105
+
+YOLO v3深入理解
+
+https://mp.weixin.qq.com/s/0lyDv9b-mpvSFYXqyngT-w
+
+实用教程！使用YOLOv3训练自己数据的目标检测
+
+https://mp.weixin.qq.com/s/PkFtZ0Iqf7PBGyE5a_IJ4Q
+
+YOLO v3的TensorFlow实现，GitHub完整源码解析
+
+https://mp.weixin.qq.com/s/Vuuca3A7luCyCQ-jBKMIcw
+
+YOLO v3目标检测的PyTorch实现，GitHub完整源码解析！
+
+https://mp.weixin.qq.com/s/2aeBBjCbWdweYmNrTaWqqw
+
+一文看尽目标检测：从YOLO v1到v3的进化之路
+
+https://mp.weixin.qq.com/s/fDOskKqG-fsJmhT0-tdtTg
+
+SlimYOLOv3：更窄、更快、更好的无人机目标检测算法
+
+https://zhuanlan.zhihu.com/p/50595699
+
+揭秘YOLOv3鲜为人知的关键细节
+
+https://mp.weixin.qq.com/s/EElv2Tc73JKS8jpejEGB1w
+
+YOLO v3实战之钢筋数量AI识别（一）
+
+https://mp.weixin.qq.com/s/HEBO9uZMD2CZW_Y-8eBK1A
+
+YOLOv1/v2/v3简述
+
+https://mp.weixin.qq.com/s/5IfT9cWVbZq4cwHPLes5vA
+
+你对YOLOV3损失函数真的理解正确了吗？
+
+https://mp.weixin.qq.com/s/biPLPaunfkQtpywaHbBfLg
+
+YOLOV3损失函数再思考
+
+https://mp.weixin.qq.com/s/Cws-3Cni-_v3AED918eB4A
+
+高斯YoloV3目标检测
+
 # Tiny-YOLO
 
 YOLO系列还包括了一个速度更快但精度稍低的嵌入式版本系列——Tiny-YOLO。
@@ -228,35 +290,3 @@ https://blog.csdn.net/jningwei/article/details/80038594
 https://zhuanlan.zhihu.com/p/68786098
 
 再谈RetinaNet
-
-# CornerNet
-
-传统的目标检测网络，无论是One-stage还是Two-stage，都有基于Anchor的。Anchor的作用主要在于：**显式枚举出不同的scale和aspect ratio的基准bbox。**
-
-但就本质而言，**框对于物体来说不是一个最好的表示。**框的顶点可能甚至都不在物体上，离物体本身已经很远了。
-
-因此，自2018年以来，逐渐有一些不基于anchor的目标检测方法出现，形成了一股Anchor-Free的热潮。下面将首先介绍一下，该类方法的开山之作——CornerNet。
-
->CornerNet并非第一个提出Anchor-Free思想的模型，但却是第一个精度和性能达到与anchor base方法同等水平的Anchor-Free模型。
-
----
-
-CornerNet是Princeton University的Hei Law的作品。（2018.8）
-
-论文：
-
-《CornerNet: Detecting Objects as Paired Keypoints》
-
-CornerNet认为Two-stage目标检测最明显的缺点是在Region Proposal阶段需要提取anchor boxes。这样做导致两个问题：
-
-- 提取的anchor boxes数量较多，比如DSSD使用40k，RetinaNet使用100k，anchor boxes众多造成正负样本不均衡。
-
-- Anchor boxes需要调整很多超参数，比如anchor boxes数量、尺寸、比率，影响模型的训练和推断速率。
-
-![](/images/img3/CornerNet_2.png)
-
-上图是CornerNet的网络结构。可以看出它主要由两部分组成：
-
-## Hourglass Network
-
-这是CornerNet的骨干部分。详情参见《深度学习（十二）》。

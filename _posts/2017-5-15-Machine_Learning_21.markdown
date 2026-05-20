@@ -385,6 +385,10 @@ https://www.zhihu.com/question/526103427
 
 ---
 
+2006年，马占凯发明包含“词库”和“联想扩散能力”的输入工具，被百度拒绝后转投搜狐，上线搜狗输入法。
+
+---
+
 参考：
 
 https://mp.weixin.qq.com/s/1cdg635KcPTV6mFdwPo2OQ

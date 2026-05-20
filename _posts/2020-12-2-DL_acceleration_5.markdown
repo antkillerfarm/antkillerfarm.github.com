@@ -309,6 +309,10 @@ https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/
 
 Why GEMM is at the heart of deep learning
 
+https://www.zhihu.com/question/1937383550547658365
+
+npu底层设计，推荐卷积还是矩阵乘？
+
 ## Tile
 
 矩阵乘法的实现（matmul）是一个简易的三层for循环。这样的循环其实对于缓存是不友好的。

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度目标检测（八）——其它目标检测网络, 花式IOU, 3D目标检测, 旋转框检测, 小目标检测, 花式NMS, YOLOv4
+title:  深度目标检测（八）——其它目标检测网络, 花式IOU, 3D目标检测, 旋转框检测, 小目标检测
 category: Deep Object Detection 
 ---
 
@@ -8,6 +8,72 @@ category: Deep Object Detection
 {:toc}
 
 # Anchor-Free（续）
+
+## 参考
+
+https://mp.weixin.qq.com/s/T7DDWvtvCULfjcDmljvx5Q
+
+Anchor-free的对象检测网络汇总
+
+https://zhuanlan.zhihu.com/p/63024247
+
+锚框：Anchor box综述
+
+https://mp.weixin.qq.com/s/dYV446meJXtCQVFrLzWV8A
+
+目标检测中Anchor的认识及理解
+
+https://mp.weixin.qq.com/s/WAx3Zazx9Pq7Lb3vKa510w
+
+目标检测最新方向：推翻固有设置，不再一成不变Anchor
+
+https://zhuanlan.zhihu.com/p/64563186
+
+Anchor free深度学习的目标检测方法
+
+https://mp.weixin.qq.com/s/DoN-vha1H-2lHhbFOaVS8w
+
+FoveaBox：目标检测新纪元，无Anchor时代来临！
+
+https://zhuanlan.zhihu.com/p/66156431
+
+从Densebox到Dubox：更快、性能更优、更易部署的anchor-free目标检测
+
+https://zhuanlan.zhihu.com/p/63273342
+
+聊聊Anchor的"前世今生"（上）
+
+https://zhuanlan.zhihu.com/p/68291859
+
+聊聊Anchor的"前世今生"（下）
+
+https://zhuanlan.zhihu.com/p/62372897
+
+物体检测的轮回：anchor-based与anchor-free
+
+https://mp.weixin.qq.com/s/m_PvEbq2QbTXNmj_gObKmQ
+
+Anchor-free目标检测之ExtremeNet
+
+https://mp.weixin.qq.com/s/LGeNgnXfYaVVAc_37j6-2A
+
+Anchor Free及Transformer时代
+
+https://mp.weixin.qq.com/s/52YBmlHioRkUgetZWHMZOw
+
+Anchor-free目标检测：工业应用更友好的新网络
+
+https://zhuanlan.zhihu.com/p/84398108
+
+目标检测中Anchor的本质分析
+
+https://mp.weixin.qq.com/s/LQOzrlaEOsrsMHj-V8l3hQ
+
+FreeAnchor：抛弃单一的IoU匹配，更自由的anchor匹配方法
+
+https://zhuanlan.zhihu.com/p/163266388
+
+Anchor-free应用一览：目标检测、实例分割、多目标跟踪
 
 https://mp.weixin.qq.com/s/4UEmRcSo0ZGoiLh6iKf_oQ
 
@@ -322,65 +388,3 @@ https://mp.weixin.qq.com/s/V9CJVaRYlS5Snyveblb3uw
 https://mp.weixin.qq.com/s/zvKxi0b-D0fXzx928Wp51A
 
 小目标检测研究进展
-
-# 花式NMS
-
-https://mp.weixin.qq.com/s/ro0lG3uMUPYNZA9rM3I_YQ
-
-目标检测算法中检测框合并策略技术综述
-
-https://mp.weixin.qq.com/s/GdNcQqDeVQ1vtIJrAIYpWw
-
-目标检测之非极大值抑制(NMS)各种变体
-
-https://zhuanlan.zhihu.com/p/151914931
-
-一文打尽目标检测NMS——精度提升篇
-
-https://zhuanlan.zhihu.com/p/157900024
-
-一文打尽目标检测NMS——效率提升篇
-
-https://zhuanlan.zhihu.com/p/151398233
-
-一文了解目标检测边界框概率分布
-
-https://mp.weixin.qq.com/s/OnJQm8xCmxa4szB-lJC9Uw
-
-或许你的NMS该换了，Confluence更准、更稳的目标检测结果
-
-https://mp.weixin.qq.com/s/W6m2eaysYiK6-3Niz4KeOA
-
-Confluence：物体检测中不依赖IoU的NMS替代算法论文解析
-
-## WBF
-
-加权框融合（WBF）是一种提高目标检测系统性能的强大技术。它是一种将多个边界框或感兴趣区域 (ROI) 的结果组合成一个更准确、更稳定的结果的方法。当使用多个模型或算法来检测图像或视频中的目标并且需要组合结果以提高整体性能时，该技术特别有用。
-
-https://mp.weixin.qq.com/s/fsByXBrTWaWBDR-FjhHwnA
-
-目标检测的后处理：NMS vs WBF
-
-# YOLOv4
-
-YOLO系列(v1-v3)作者Joe Redmon宣布不再继续CV方向的研究，引起学术圈一篇哗然。
-
-YOLOv4（2020.4）的一作是Alexey Bochkovskiy。YOLO官方的github正式加入YOLOv4的论文和代码链接，也意味着YOLOv4得到了Joe Redmon的认可，也代表着YOLO的停更与交棒。
-
-论文：
-
-《YOLOv4: Optimal Speed and Accuracy of Object Detection》
-
-代码：
-
-https://github.com/AlexeyAB/darknet
-
-![](/images/img5/YOLOv4.jpg)
-
-Yolov4的五个基本组件：
-
-- CBM：Yolov4网络结构中的最小组件，由Conv+Bn+Mish激活函数三者组成。
-- CBL：由Conv+Bn+Leaky_relu激活函数三者组成。
-- Res unit：借鉴Resnet网络中的残差结构，让网络可以构建的更深。
-- CSPX：借鉴CSPNet网络结构，由卷积层和X个Res unint模块Concate组成。
-- SPP：采用1×1，5×5，9×9，13×13的最大池化的方式，进行多尺度融合。

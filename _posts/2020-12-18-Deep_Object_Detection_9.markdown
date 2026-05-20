@@ -1,13 +1,73 @@
 ---
 layout: post
-title:  深度目标检测（九）——YOLOv5, YOLOX, YOLOv6, YOLOv7, YOLOv8
+title:  深度目标检测（九）——花式NMS, YOLOv4, YOLOv5, YOLOX, YOLOv6, YOLOv7, YOLOv8
 category: Deep Object Detection 
 ---
 
 * toc
 {:toc}
 
-# YOLOv4（续）
+# 花式NMS
+
+https://mp.weixin.qq.com/s/ro0lG3uMUPYNZA9rM3I_YQ
+
+目标检测算法中检测框合并策略技术综述
+
+https://mp.weixin.qq.com/s/GdNcQqDeVQ1vtIJrAIYpWw
+
+目标检测之非极大值抑制(NMS)各种变体
+
+https://zhuanlan.zhihu.com/p/151914931
+
+一文打尽目标检测NMS——精度提升篇
+
+https://zhuanlan.zhihu.com/p/157900024
+
+一文打尽目标检测NMS——效率提升篇
+
+https://zhuanlan.zhihu.com/p/151398233
+
+一文了解目标检测边界框概率分布
+
+https://mp.weixin.qq.com/s/OnJQm8xCmxa4szB-lJC9Uw
+
+或许你的NMS该换了，Confluence更准、更稳的目标检测结果
+
+https://mp.weixin.qq.com/s/W6m2eaysYiK6-3Niz4KeOA
+
+Confluence：物体检测中不依赖IoU的NMS替代算法论文解析
+
+## WBF
+
+加权框融合（WBF）是一种提高目标检测系统性能的强大技术。它是一种将多个边界框或感兴趣区域 (ROI) 的结果组合成一个更准确、更稳定的结果的方法。当使用多个模型或算法来检测图像或视频中的目标并且需要组合结果以提高整体性能时，该技术特别有用。
+
+https://mp.weixin.qq.com/s/fsByXBrTWaWBDR-FjhHwnA
+
+目标检测的后处理：NMS vs WBF
+
+# YOLOv4
+
+YOLO系列(v1-v3)作者Joe Redmon宣布不再继续CV方向的研究，引起学术圈一篇哗然。
+
+YOLOv4（2020.4）的一作是Alexey Bochkovskiy。YOLO官方的github正式加入YOLOv4的论文和代码链接，也意味着YOLOv4得到了Joe Redmon的认可，也代表着YOLO的停更与交棒。
+
+论文：
+
+《YOLOv4: Optimal Speed and Accuracy of Object Detection》
+
+代码：
+
+https://github.com/AlexeyAB/darknet
+
+![](/images/img5/YOLOv4.jpg)
+
+Yolov4的五个基本组件：
+
+- CBM：Yolov4网络结构中的最小组件，由Conv+Bn+Mish激活函数三者组成。
+- CBL：由Conv+Bn+Leaky_relu激活函数三者组成。
+- Res unit：借鉴Resnet网络中的残差结构，让网络可以构建的更深。
+- CSPX：借鉴CSPNet网络结构，由卷积层和X个Res unint模块Concate组成。
+- SPP：采用1×1，5×5，9×9，13×13的最大池化的方式，进行多尺度融合。
 
 各部分的改进如下：
 
@@ -300,103 +360,3 @@ https://mp.weixin.qq.com/s/cWCwcTA01oBy0BM3qRHb4Q
 https://mp.weixin.qq.com/s/S1IrgEqS1Q4xqGl5adNrlg
 
 目标检测近年综述
-
-https://mp.weixin.qq.com/s/7QT7n9MpbXjo5-r-aY2Yvg
-
-深度学习目标检测方法综述
-
-https://mp.weixin.qq.com/s/0B08Mzn8ngL6GoNilrjsGA
-
-基于深度学习目标检测方法一览
-
-https://zhuanlan.zhihu.com/p/181169225
-
-12篇论文看尽深度学习目标检测史
-
-https://mp.weixin.qq.com/s/5I9uzGCNFD93L1mzakTl0Q
-
-目标检测网络学习总结（RCNN-->YOLO V3）
-
-https://mp.weixin.qq.com/s/8Vac8MRpmviVDKRrAeFR0A
-
-后R-CNN时代，Faster R-CNN、SSD、YOLO各类变体统治下的目标检测综述：Faster R-CNN系列胜了吗？
-
-https://mp.weixin.qq.com/s/zeruKQOye_QNWgluVIN0BA
-
-从R-CNN到RFBNet，目标检测架构5年演进全盘点
-
-https://mp.weixin.qq.com/s/sCGNUI-mUSYxD69uBDQNoQ
-
-基于深度学习的目标检测算法综述：算法改进
-
-https://mp.weixin.qq.com/s/yswy7VwEapQJ9M5n_Uo93w
-
-目标检测最新进展总结与展望
-
-https://mp.weixin.qq.com/s/s1qmCA8djEEanwCxeLSV2Q
-
-63页《深度CNN-目标检测》综述
-
-https://mp.weixin.qq.com/s/j-arl6qiD6mei4crfQPrgw
-
-《深度学习显著目标检测综述》
-
-https://mp.weixin.qq.com/s/2PLp2xNfhkHB3fPQr5Ts6g
-
-密歇根大学40页《20年目标检测综述》最新论文，带你全面了解目标检测方法
-
-https://mp.weixin.qq.com/s/Pl8HABuVN27CZv-lvGROTw
-
-基于深度学习的目标检测算法近5年发展历史
-
-https://mp.weixin.qq.com/s/S6sz5dPgGNcJvrIAZ3ZjGg
-
-基于深度学习的通用物体检测算法对比探索
-
-https://mp.weixin.qq.com/s/9BCf0rCp660a5xQ2JNz3AQ
-
-深入理解one-stage目标检测算法（上篇）
-
-https://mp.weixin.qq.com/s/p9XaI8PSG0o1NWlkmCIn7w
-
-深入理解one-stage目标检测算法（下篇）
-
-https://mp.weixin.qq.com/s/IRD0iIVXyENlUOyfSbmlBA
-
-目标检测的渐进域自适应
-
-https://mp.weixin.qq.com/s/10EhUj03NGPTnyOCvLqDQw
-
-港大提出视频显著物体检测算法MGA，大幅提升分割精度
-
-https://mp.weixin.qq.com/s/mqB9wtUjMJ1EhINrUUEf9Q
-
-香港中文大学博士陈恺：物体检测中的训练样本采样
-
-https://mp.weixin.qq.com/s/syoJTnh6KMMRUYPQjUnEAg
-
-一个算法同时解决两大CV任务，让目标检测和实例分割互相帮助
-
-https://mp.weixin.qq.com/s/ba5rQp4IVYbVbHq3Ef7mEg
-
-深度学习检测小目标常用方法
-
-https://mp.weixin.qq.com/s/q9qKVpjluzp8OS2GFpZC6g
-
-张兆翔：基于深度学习的物体检测进展和趋势
-
-https://zhuanlan.zhihu.com/p/102817180
-
-目标检测比赛中的trick
-
-https://mp.weixin.qq.com/s/ZQ6KlSFiKhcGVGoS9R_k4w
-
-Anchor free的目标检测进阶版本
-
-https://mp.weixin.qq.com/s/Aq2OJqGnT6z4zoG-6rslkQ
-
-商汤科技提出新弱监督目标检测框架
-
-https://zhuanlan.zhihu.com/p/82371629
-
-Imbalance Problems in Object Detection: A Review
