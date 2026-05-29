@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数据描述语言, 数值计算
+title:  数据描述语言
 category: technology 
 ---
 
@@ -369,31 +369,3 @@ gRPC基础概念详解
 https://mp.weixin.qq.com/s/ll4nUVB28KpyTMS93xAckQ
 
 RPC框架：从原理到选型，一文带你搞懂RPC
-
-# 数值计算
-
-两个数值趋近于无穷小且相近的数字相除的结果应该大约为1，但却因为分母接近为0而变成无穷。这时可以直接取对数执行运算，其结果在数值上会较为稳定。
-
----
-
-Pollard-Rho（Pollard’s rho algorithm）是一种概率性的大整数分解算法，1980年由英国数学家John Pollard提出。它用很少的计算量，以高概率快速找到一个大合数的一个非平凡因子（不一定是质因子，但能把数“拆小”）。
-
-所有现代大整数分解库都把Pollard-Rho放在第一轮筛因子的位置，是“试除法（1e5以下小质数）之后、重型算法之前”的标配轻骑兵。
-
----
-
-https://blog.csdn.net/HiWangWenBing/article/details/119772047
-
-数学建模、科学计算、数值计算的关系
-
-https://blog.csdn.net/HiWangWenBing/article/details/119790035
-
-误差的种类、误差传播、误差分析
-
-https://www.zhihu.com/question/444819295
-
-控制周期越短，控制效果是否越好？
-
-https://zhuanlan.zhihu.com/p/582590074
-
-Cody Waite和Payne-Hanek归约算法的详细解释

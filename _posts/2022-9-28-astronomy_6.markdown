@@ -9,16 +9,52 @@ category: Nature
 
 # SpaceX（续）
 
-原本要排队打的单子，拼车任务，一次报销了十几二十个小卫星任务。一般商业卫星走星链拼车就行了，现在要单买火箭打的商业卫星只有高价值货了。
+奥伯特效应（Oberth Effect）：火箭在速度越快的时候点火推进，获得的动能增量越大。探测器先借助行星引力加速（引力弹弓），在速度最高点附近点火，最大化利用燃料。旅行者号、新视野号等任务都利用了这一原理。
 
----
+传统卫星使用氙气霍尔电推，星链是第一个使用氪气电推，现在v2mini上使用的是全球首创的氩气霍尔电推。
 
-SpaceX的着陆算法（传统方法）：带约束的最优控制问题，通过凸优化（特别是二阶锥规划 SOCP）进行轨迹优化。
+氩气在空气体积占比0.934%，是空气第三大组分，含量碾压所有其他稀有气体。
 
-https://zhuanlan.zhihu.com/p/2018700143302549944
+K39聚变路线：
 
-如何应用强化学习实现火箭回收
+$$
+\begin{align*}
+\ce{^{12}C + ^{12}C} &\to \ce{^{24}Mg + \gamma} \\
+\ce{^{24}Mg + ^{4}He} &\to \ce{^{28}Si + \gamma} \\
+\ce{^{28}Si + ^{4}He} &\to \ce{^{32}S + \gamma} \\
+\ce{^{32}S + ^{4}He} &\to \ce{^{36}Ar + \gamma} \\
+\ce{^{36}Ar + n} &\to \ce{^{37}Ar + \gamma} \\
+\ce{^{37}Ar} &\to \ce{^{37}Cl + e^- + \bar{\nu}_e} \\
+\ce{^{37}Cl + n} &\to \ce{^{38}Cl + \gamma} \\
+\ce{^{38}Cl} &\to \ce{^{38}Ar + e^- + \bar{\nu}_e} \\
+\ce{^{38}Ar + n} &\to \ce{^{39}Ar + \gamma} \\
+\ce{^{39}Ar} &\to \mathbf{\ce{^{39}K + e^- + \bar{\nu}_e}}
+\end{align*}
+$$
 
+K40聚变路线：
+
+$$
+\begin{align*}
+\ce{^{12}C + ^{12}C &-> ^{20}Ne + ^{4}He} \\
+\ce{^{20}Ne + ^{4}He &-> ^{24}Mg} \\
+\ce{^{24}Mg + ^{4}He &-> ^{28}Si} \\
+\ce{^{28}Si + ^{4}He &-> ^{32}S} \\
+\ce{^{32}S + ^{4}He &-> ^{36}Ar} \\
+\ce{^{36}Ar + ^{4}He &-> ^{40}Ca} \\
+\ce{^{40}Ca + n &-> ^{40}K + ^{1}H}
+\end{align*}
+$$
+
+Ar40主要K40衰变得到。
+
+https://mp.weixin.qq.com/s/sPTRKfuhEc0xx7GacomxkA
+
+霍尔效应推进器
+
+https://www.zhihu.com/question/425823778
+
+重力多大的星球无法发射化学火箭？
 
 # Starship
 
@@ -76,6 +112,10 @@ https://www.zhihu.com/question/595930014
 
 SpaceX“星舰”发射计划因压力阀问题而推迟，“星舰”发射面临哪些技术困难？需要突破哪些技术障碍？
 
+---
+
+Starship V1：
+
 https://www.zhihu.com/question/596821956
 
 SpaceX星舰发射失败，是什么原因？还有哪些信息值得关注？（2023.4.20）
@@ -100,6 +140,10 @@ https://www.zhihu.com/question/4560989954
 
 SpaceX星舰第六次试飞在海上溅落，超重型助推器完成软溅落后解体，有哪些亮点值得关注？（2024.11.19）
 
+---
+
+Starship V2：
+
 https://www.zhihu.com/question/9647463595
 
 SpaceX星舰第七次试飞二级失联后解体，一级再度上演“筷子夹火箭”回收，还有哪些信息值得关注？（2025.1.17）
@@ -119,6 +163,14 @@ https://www.zhihu.com/question/1943956854041481984
 https://www.zhihu.com/question/1960739832159508279
 
 美国SpaceX星舰完成第十一次试飞，此次试飞有哪些亮点？（2025.10.14）
+
+---
+
+Starship V3：
+
+https://www.zhihu.com/question/2041418597344469916
+
+如何评价星舰12飞，有什么震撼的时刻？（2026.5.23）
 
 # StarLink
 

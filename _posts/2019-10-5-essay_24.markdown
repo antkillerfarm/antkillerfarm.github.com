@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 水浒（二）
+title: 水浒（一）
 category: essay 
 ---
 

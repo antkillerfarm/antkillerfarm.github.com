@@ -186,6 +186,10 @@ HCCS，即Huawei Cache Coherence System（华为Cache一致性总线）。
 
 这实际上就是NV在DGX1+P100时代，采用过的hybrid cube-mesh结构。
 
+910C架构图：
+
+![](/images/img6/ascend-davinci-architecture.png)
+
 参考：
 
 https://www.zhihu.com/answer/3459186418

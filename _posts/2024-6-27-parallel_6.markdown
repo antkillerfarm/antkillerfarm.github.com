@@ -144,6 +144,8 @@ $$O[k,:]\leftarrow o_{N/b}^{'}$$
 
 - Dropout，前向阶段只保存dropout seed与offset，反向宁愿再算一遍dropout，放弃保存dropout mask。
 
+Online Softmax从思想上显然受到了Welford's algorithm（1962）的影响。
+
 ---
 
 ![](/images/img6/FlashAttention.png)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GPU通信技术, 光通信, IEEE 802
+title:  GPU通信技术, 光通信
 category: Chip 
 ---
 
@@ -8,6 +8,44 @@ category: Chip
 {:toc}
 
 # GPU通信技术
+
+集合通信的底层实现，正从早期的消息语义（显式 Send/Receive、RDMA，适用于Scale-Out松耦合场景）全面转向内存语义（隐式 Load/Store/Atomic，统一地址空间），NVLink、UALink、OISA、SUE等主要新兴协议均采用后者。
+
+如果统一内存真的要成为超节点的软件基础，它首先就不能只是“远端显存也能被看到”这么简单。软件真正关心的，不是地址能不能指到远端，而是指过去之后，系统究竟承诺了什么：这次写入什么时候对别人可见，先后的顺序会不会被打乱，原子操作是不是仍然成立，一次同步到底是在等待本地完成、对端完成，还是整个系统都进入同一个可见状态。只有这些承诺被讲清，远端资源才可能在软件里表现得像一种稳定资源；否则，再高的带宽和再大的地址空间，也只会把“不确定性”更快地扩散到更大的系统里。
+
+如果承诺太弱，软件就不敢把远端资源当成稳定资源；如果承诺太强，硬件和协议又会迅速背上难以承受的复杂度与代价。
+
+DMA搬运是今天最常见的跨GPU通信模式。传统场景对互联的要求是"大带宽、可批量"，DMA/RDMA语义足以胜任。
+
+LDST访存则是正在快速增长的新范式。FLUX等算子融合框架将通信操作内嵌到计算Kernel中——SM核心在计算过程中直接通过Load/Store指令读写远端GPU的HBM，不再有独立的拷贝阶段。这消除了Kernel间的同步屏障和中间缓冲区拷贝，对小规模推理和延迟敏感场景尤其重要。但这意味着互联必须支持SM发出的每一笔Load/Store/Atomic操作都能正确到达远端并保序返回。
+
+NCCL等集合通信不再依赖外部DMA拷贝组装AllReduce，转而下沉复用硬件原生LDST原语，通信逻辑彻底融入计算流。
+
+当前行业正在寻找的"甜点区"，很可能是"区域强一致 + 全局弱一致"的分层模型。
+
+释放一致性（Release Consistency）模型——这是CUDA Memory Model和HSA Memory Model共同采用的弱序内存模型。
+
+Throughput（吞吐量）
+
+Goodput（有效吞吐量）
+
+AI超节点的存储体系是高度分层化与异构化的：片上L1/L2 Cache、高带宽显存（HBM）、DDR主存、PCIe/CXL扩展内存以及本地NVMe/SSD，性能与容量跨越数个数量级。
+
+内存池化技术从系统层面打破这种割裂状态。常规模型训练（几十亿至百亿参数）通常只需要HBM + DRAM两级池化，超大规模训练需要HBM+DRAM+SSD三级池化（ZeRO-Infinity）。
+
+通信范式，正在从“对称、规则、全体参与”的集合通信（Allreduce/Allgather/Alltoall），转向“非对称、稀疏、图状、按需点对点” 的图通信（Graph Communication）（例如MoE）。
+
+---
+
+α–β–γ模型：
+
+$$T(m) = \alpha + \beta \cdot m + \gamma \cdot f(m)$$
+
+- α：启动延迟 / 固定开销
+- β：单位数据传输时间
+- γ：每操作/每消息额外开销
+
+常见变体还有Hockney、LogGP等。
 
 ## Die To Die
 
@@ -136,117 +174,3 @@ https://mp.weixin.qq.com/s/zbe2om-czwGbVBkFsPAwGw
 https://zhuanlan.zhihu.com/p/617099215
 
 封装内光学I/O与共封光学器件的区别（In-Package Optical I/O versus Co-Packaged Optics）
-
-# IEEE 802
-
-IEEE 802是一系列关于局域网和城域网的标准。
-
-其中，最重要的有：
-
-802.1 802系列协议的网络层管理。
-
-802.3 Ethernet
-
-802.11 Wi-Fi
-
-802.15.1 Bluetooth
-
-802.15.4 Zigbee
-
-802.16 WiMax
-
-http://www.ieee802.org/
-
-可以在这个网址下载相关的标准文件。
-
-## 无线网状网
-
-Wireless mesh network（WMN），也叫wireless ad hoc network。
-
-Ad Hoc源自于拉丁语，意思是“for this”引申为“for this purpose only”，即“为某种目的设置的，特别的”意思，即Ad hoc网络是一种有特殊用途的网络。IEEE802.11标准委员会采用了“Ad hoc网络”一词来描述这种特殊的自组织对等式多跳移动通信网络
-
-它具有以下特点：
-
-### 无中心
-
-Ad hoc网络没有严格的控制中心。所有结点的地位平等，即是一个对等式网络。结点可以随时加入和离开网络。任何结点的故障不会影响整个网络的运行，具有很强的抗毁性。
-
-### 自组织
-
-网络的布设或展开无需依赖于任何预设的网络设施。结点通过分层协议和分布式算法协调各自的行为，结点开机后就可以快速、自动地组成一个独立的网络。
-
-### 多跳路由
-
-当结点要与其覆盖范围之外的结点进行通信时，需要中间结点的多跳转发。与固定网络的多跳不同，Ad hoc网络中的多跳路由是由普通的网络结点完成的，而不是由专用的路由设备（如路由器）完成的。
-
-### 动态拓扑
-
-Ad hoc网络是一个动态的网络。网络结点可以随处移动，也可以随时开机和关机，这些都会使网络的拓扑结构随时发生变化。　这些特点使得Ad hoc网络在体系结构、网络组织、协议设计等方面都与普通的蜂窝移动通信网络和固定通信网络有着显著的区别。
-
-无线网状网可以基于802.11、802.15或802.16。具体到802.11就是Wi-Fi Mash。
-
-## Wi-Fi Mash
-
-和普通Wi-Fi相比，Wi-Fi Mash主要增加了路由协议。而这一块目前尚无标准，有70多个相互竞争的路由协议。其中主要有：
-
-AODV (Ad hoc On-Demand Distance Vector)
-
-B.A.T.M.A.N. (Better Approach To Mobile Adhoc Networking)
-
-HWMP (Hybrid Wireless Mesh Protocol)
-
-OLSR (Optimized Link State Routing protocol)
-
-IEEE为了统一标准，提出了802.11s。目前该标准默认使用HWMP。
-
-## 消息发送的类型
-
-![](/images/article/cast.png)
-
-## 参考
-
-https://mp.weixin.qq.com/s/GgwehPL4r-Y1pEd2k60Y_Q
-
-一文看懂蓝牙Mesh技术
-
-https://mp.weixin.qq.com/s/Mvq9UNEnHoUbmxocb-rqmQ
-
-LPWAN、LoRa、LoRaWAN的区别与联系
-
-https://mp.weixin.qq.com/s/ddOTd5ljC2I9IOadBbjOIA
-
-大话Wi-Fi20年
-
-https://www.zhihu.com/question/20890194
-
-大型发布会现场的Wi-Fi应该如何搭建？
-
----
-
-802.11b — Wifi 1 (1999)
-
-802.11a — Wifi 2 (1999)
-
-802.11g — Wifi 3 (2003)
-
-802.11n — Wifi 4 (2009)
-
-802.11ac — Wifi 5 (2014)
-
-802.11ax — Wifi 6 (2018)
-
-https://mp.weixin.qq.com/s/5MjByZWThzQ4MSWRoIS1HQ
-
-为了Wi-Fi 6，华为和小米争个啥？
-
-https://mp.weixin.qq.com/s/ZHgG3NJ3oMxmz8M6VDImXg
-
-什么是WiFi 6E？它与WiFi 6有何不同？
-
-https://mp.weixin.qq.com/s/2Jo1dGu7_Lu3yC5Xwe-IMg
-
-漫画图解UWB的发展之路
-
-https://mp.weixin.qq.com/s/D_1nn0702Z1y7rKOzegs5g
-
-Wi-Fi简史

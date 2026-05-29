@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  爬虫, scrapy, UPNP（二）
+title:  爬虫, scrapy, UPNP（二）, 数值计算
 category: technology 
 ---
 
@@ -295,24 +295,40 @@ https://sourceforge.net/projects/libmcupnp/
 
 https://wiki.gnome.org/Projects/GUPnP
 
-# 数字成像+
+# 数值计算
 
-https://mp.weixin.qq.com/s/XihwGVU-8QJORfvENhhLnA
+两个数值趋近于无穷小且相近的数字相除的结果应该大约为1，但却因为分母接近为0而变成无穷。这时可以直接取对数执行运算，其结果在数值上会较为稳定。
 
-图像传感器厂家大盘点（上）
+---
 
-https://mp.weixin.qq.com/s/wSgSZA2c0fP3E8JgHn6yRQ
+Pollard-Rho（Pollard’s rho algorithm）是一种概率性的大整数分解算法，1980年由英国数学家John Pollard提出。它用很少的计算量，以高概率快速找到一个大合数的一个非平凡因子（不一定是质因子，但能把数“拆小”）。
 
-AI时代的去马赛克算法
+所有现代大整数分解库都把Pollard-Rho放在第一轮筛因子的位置，是“试除法（1e5以下小质数）之后、重型算法之前”的标配轻骑兵。
 
-https://mp.weixin.qq.com/s/YKL0Cwp1l9_4lAj8knMIqQ
+---
 
-高级AI视觉算法是否还需要ISP?
+这个问题不是模掉$$2\pi$$后代入就能完美搞定的，对于天文数字x你会发现算出来$$\sin(x)$$还是错的。
 
-https://mp.weixin.qq.com/s/x4cz9mW1HOF8rtRv4uqLCQ
+计算机科学家Mary H. Payne和Robert N. Hanek在1982年提出了Payne-Hanek算法，该算法完全绕过了大数加减带来的数值误差。
 
-门控相机：车载ADAS相机的未来？
+https://www.zhihu.com/answer/1977406006012158074
 
-https://mp.weixin.qq.com/s/qtBGRvwr0-ykaZhn6nWsfA
+这个求sin的代码，感觉无懈可击啊，为什么会不对呢？
 
-自动对焦技术的新发展
+---
+
+https://blog.csdn.net/HiWangWenBing/article/details/119772047
+
+数学建模、科学计算、数值计算的关系
+
+https://blog.csdn.net/HiWangWenBing/article/details/119790035
+
+误差的种类、误差传播、误差分析
+
+https://www.zhihu.com/question/444819295
+
+控制周期越短，控制效果是否越好？
+
+https://zhuanlan.zhihu.com/p/582590074
+
+Cody Waite和Payne-Hanek归约算法的详细解释

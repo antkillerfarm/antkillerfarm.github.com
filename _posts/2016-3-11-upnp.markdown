@@ -287,8 +287,6 @@ upnp/src/api/upnpapi.c: UpnpInit
 
 ## 动作（Action）处理
 
-1.数据结构
-
 相关数据结构按从大到小的顺序，依次为：
 
 服务->动作->参数->值类型->基本数据类型
@@ -309,11 +307,11 @@ src/upnp.h: argument定义了参数的数据结构。典型示例如下：
 
 `{ "InstanceID", PARAM_DIR_IN, CONTROL_VAR_AAT_INSTANCE_ID }`
 
-3)动作
+4)动作
 
 一个动作包含若干参数，因此动作的数据结构是一个argument数组。以SetVolume动作为例，它的参数结构的实例为src/upnp_control.c: arguments_set_vol。
 
-4)服务
+5)服务
 
 一个服务包含若干动作，因此服务的数据结构是一个argument的二维数组。在这里是src/upnp_control.c: argument_list。
 

@@ -7,6 +7,38 @@ category: math
 * toc
 {:toc}
 
+# 拉普拉斯变换（续）
+
+参考：
+
+https://www.zhihu.com/question/22085329
+
+傅立叶变换、拉普拉斯变换、Z变换的联系？为什么要进行这些变换。研究的都是什么？
+
+https://www.zhihu.com/question/23280174
+
+矩阵，数列，微分方程的特征值是什么关系？
+
+https://mp.weixin.qq.com/s/ObYF_kMBvBdz4djdT7G77w
+
+傅立叶变换和拉普拉斯变换的物理解释及区别
+
+https://www.zhihu.com/question/33177784
+
+解微分方程为什么会出现个e？
+
+https://mp.weixin.qq.com/s/v07bgw90WDonyZQuuoWozA
+
+8张动图，让您秒懂什么是电压电流的超前与滞后！
+
+https://mp.weixin.qq.com/s/cR3k5-looApwD01ZzgixSw
+
+关于Fourier和Laplace
+
+https://zhuanlan.zhihu.com/p/311886981
+
+微分方程VS机器学习，实例讲解二者异同
+
 # 随机变量的特征函数
 
 特征函数（Characteristic function）是描述随机变量概率分布的重要工具，其定义如下。
@@ -251,23 +283,3 @@ https://mp.weixin.qq.com/s/B-yvH8ecirsROfYZ5CcZjg
 https://mp.weixin.qq.com/s/4uia4ijUUaumc2PNvCEWiw
 
 “共轭分布”是什么？
-
-## 多项分布和狄利克雷分布
-
-伯努利试验只有两个可能的实验结果，如果实验结果的个数超过2个，那么二项分布就变成了多项分布（multinomial distribution）：
-
-$$f(x_1,\ldots,x_k;n,p_1,\ldots,p_k)=\frac{n!}{x_1!\cdots x_k!} p_1^{x_1} \cdots p_k^{x_k}$$
-
-多项分布对应的共轭先验分布是狄利克雷分布（Dirichlet distribution）：
-
-$$f \left(x_1,\cdots, x_{K}; \alpha_1,\cdots, \alpha_K \right) = \frac{1}{\mathrm{B}(\boldsymbol\alpha)} \prod_{i=1}^K x_i^{\alpha_i - 1}\tag{1}$$
-
-这里引入向量表示的贝塔函数：
-
-$$\mathrm{B}(\boldsymbol\alpha) = \frac{\prod_{i=1}^K \Gamma(\alpha_i)}{\Gamma\left(\sum_{i=1}^K \alpha_i\right)},\qquad\boldsymbol{\alpha}=(\alpha_1,\cdots,\alpha_K)$$
-
-狄利克雷分布的密度函数如下所示(3维)：
-
-![](/images/article/dirichlet-distribution.png)
-
-上面的图，实际上是个4维图，只不过用一个平面上的三角形代表实验结果的3维而已。这也是一种高维数据可视化的方法。

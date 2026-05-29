@@ -179,11 +179,13 @@ https://zhuanlan.zhihu.com/p/682085066
 
 蛇岛攻防战：2022.2.24～2022.6.30
 
----
-
 Русский военный корабль, иди на хуй!
 
 Russian warship, go fuck yourself!
+
+https://zhuanlan.zhihu.com/p/2041836136507651781
+
+黑海风云之空突蛇岛
 
 ---
 
