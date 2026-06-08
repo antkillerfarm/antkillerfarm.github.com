@@ -237,7 +237,7 @@ https://github.com/scarsty/kys-cpp
 
 https://github.com/jynew/jynew
 
-金庸群侠传 3D复刻版
+金庸群侠传 3D复刻版（正式名：群侠传，启动，这是一个游戏引擎，进入后可以从创意工坊下载不同MOD，每个MOD就是一个游戏，比较好的自制模组《诗酒芳华录》，属于后宫版群侠传，今天还在一直更新，质量不输苍龙。）
 
 https://zhuanlan.zhihu.com/p/613104024
 

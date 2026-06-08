@@ -335,46 +335,11 @@ npu底层设计，推荐卷积还是矩阵乘？
 
 但是对于transformer/bert等基于注意力机制的模型不但统治了NLP，在CV领域也大行其道的眼下，势必要优化下硬件结构，见前文分析，注意力机制使用QKV三个大矩阵两两相乘的结构，似乎更适合外积+片上SRAM。
 
-https://zhuanlan.zhihu.com/p/441943479
+内积和外积真正的分野，不是公式写法，而是你这一刀究竟切在了哪里：
 
-矩阵乘法电路使用内积外积的优缺点及对计算架构需求分析
+- 若切在累加状态上，让一大片部分和长期悬在场上，等着输入一轮轮去拍它，这一路便更近外积；
+- 若切在局部归并上，先把若干乘积在近处熬成一团，再去碰高精度总账，这一路便更近内积。
 
-https://www.zhihu.com/question/478288123
+低精度时代真正贵的，往往不是“乘”，而是“加”。它不只是尾数相加，还牵着指数对齐、规格化、舍入，需要的位宽远大于乘法。外积递归求和的误差，并不是均匀地撒在每一步上，而是会被各步partial sum的大小加权；越往后加，旧部分和越大，新乘积便越容易受它支配。
 
-如何评价特斯拉的超级计算机Dojo?
-
-## 参考
-
-https://mp.weixin.qq.com/s/PMOrY5ZElyPGOVxZgXFVzw
-
-如果只能做整数Integer运算还能用BERT吗？
-
-https://mp.weixin.qq.com/s/Fes8FHngKnL8jklB7DhNCQ
-
-图计算加速架构综述
-
-# 模型优化工具
-
-## Amazon SageMaker Neo
-
-官网：
-
-https://aws.amazon.com/cn/sagemaker/neo/
-
-## 参考
-
-https://mp.weixin.qq.com/s/T9AUFnLjNDUaE9zKmOhbEw
-
-将GEMM的性能提升200倍!AutoKernel算子优化工具正式开源
-
-https://mp.weixin.qq.com/s/L9kYXFXYmKadghAhd-51pA
-
-TensorFlow模型优化工具包—剪枝API
-
-https://mp.weixin.qq.com/s/asPSPeBaRF_4eXcRXU-Zfw
-
-TensorFlow模型优化工具包—训练时量化
-
-https://mp.weixin.qq.com/s/fa5S3o1somvdAAJF1FGqvA
-
-TensorFlow模型优化工具包正式推出
+训练里即便权重、激活、梯度都敢往低精度压，部分和累加却往往仍要保留更宽位宽，否则训练质量会明显下滑。

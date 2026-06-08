@@ -23,12 +23,6 @@ category: Chip
 
 ---
 
-芯片堆叠技术基本只应用于内存和闪存这种功耗发热低的die，一颗HBM内存或一颗闪存颗粒，功耗最高也就1W级别。但如果把CPU+CPU，或者CPU+GPU之类发热大户们互相堆叠，那对于散热来说将会是灾难。不是Intel、AMD、台积电、三星之类厂家没技术做，而是这么做出来的芯片因为散热问题性能会很差。
-
-散热技术也被逼的超前发展，直接上毫米级的MEMS风扇，做micro-cooling fan。
-
----
-
 参考：
 
 http://www.sohu.com/a/108777952_467791
@@ -72,6 +66,20 @@ DUV光刻机可以做GAA吗？
 https://zhuanlan.zhihu.com/p/677687329
 
 半导体制造红宝书 - 关键词100个（合集）
+
+---
+
+芯片堆叠技术基本只应用于内存和闪存这种功耗发热低的die，一颗HBM内存或一颗闪存颗粒，功耗最高也就1W级别。但如果把CPU+CPU，或者CPU+GPU之类发热大户们互相堆叠，那对于散热来说将会是灾难。不是Intel、AMD、台积电、三星之类厂家没技术做，而是这么做出来的芯片因为散热问题性能会很差。
+
+散热技术也被逼的超前发展，直接上毫米级的MEMS风扇，做micro-cooling fan。
+
+---
+
+![](/images/img6/LogicFolding.jpg)
+
+https://www.zhihu.com/answer/2046402742227411927
+
+Logic Folding
 
 ## 片上网络
 

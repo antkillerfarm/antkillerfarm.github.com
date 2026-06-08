@@ -99,6 +99,10 @@ https://blog.csdn.net/v_JULY_v/article/details/131205615
 
 AI绘画原理解析：从CLIP、BLIP到DALLE、DALLE 2、DALLE 3、Stable Diffusion
 
+https://blog.csdn.net/m0_60177079/article/details/149296630
+
+CLIP、Open CLIP、SigLip、SigLip2的相关总结
+
 ---
 
 CLIPTextModel的基类是BaseModelOutputWithPooling，它有两个输出;
@@ -294,15 +298,3 @@ DDPM（模型架构篇）
 https://zhuanlan.zhihu.com/p/650394311
 
 DDPM（数学原理篇）
-
-https://diffusion.csail.mit.edu/2026/index.html
-
-Introduction to Flow Matching and Diffusion Models
-
-https://zhuanlan.zhihu.com/p/377603135
-
-Diffusion Probabilistic Model
-
-https://yang-song.github.io/blog/2021/score/
-
-Generative Modeling by Estimating Gradients of the Data Distribution

@@ -9,6 +9,54 @@ category: DL acceleration
 
 # 模型压缩与加速进阶
 
+https://xmfbit.github.io/2018/02/24/paper-ssl-dnn/
+
+论文-Learning Structured Sparsity in Deep Neural Networks
+
+https://mp.weixin.qq.com/s/d6HFVbbHwkxPGdnbyVuMyQ
+
+密歇根州立大学提出NestDNN：动态分配多任务资源的移动端深度学习框架
+
+https://mp.weixin.qq.com/s/lUTusig94Htf7_4Z3X1fTQ
+
+清华&伯克利ICLR论文：重新思考6大剪枝方法
+
+https://mp.weixin.qq.com/s/g3y9mRhkFtzSuSMAornnDQ
+
+韩松博士论文：面向深度学习的高效方法与硬件
+
+https://mp.weixin.qq.com/s/aH1zQ7we8OE59-O9n4IXhw
+
+应对未来物联网大潮：如何在内存有限的情况下部署深度学习？
+
+https://mp.weixin.qq.com/s/GJ7JMtWiKBku7dVJWOfLOA
+
+CNN能同时兼顾速度与准确度吗？CMU提出AdaScale
+
+https://mp.weixin.qq.com/s/pmel2k2J159zQi87ib3q8A
+
+如何让CNN高效地在移动端运行
+
+https://mp.weixin.qq.com/s/m-wQRm3VpfQkEOoUAxEdoA
+
+论文解读: Quantized Convolutional Neural Networks for Mobile Devices
+
+https://mp.weixin.qq.com/s/w7O2JxDH2ECqPn50sLfxpg
+
+不用重新训练，直接将现有模型转换为MobileNet
+
+https://mp.weixin.qq.com/s/EW6jvf98ifBucVz74SfSIA
+
+文档扫描：深度神经网络在移动端的实践
+
+https://mp.weixin.qq.com/s/3oL0Bso3mwbsfaG8X5-xoA
+
+英特尔提出新型压缩技术DeepThin，适合移动端设备深度神经网络
+
+https://mp.weixin.qq.com/s/LGCGYSoMpPfojEi2WcmjnQ
+
+TinyML：下一轮人工智能革命
+
 https://mp.weixin.qq.com/s/B-OJ_oW_uJufqIfIZSA7Ww
 
 专家从7个维度全面评测轻量级网络
@@ -181,144 +229,54 @@ https://mp.weixin.qq.com/s/ie2O5BPT-QxTRhK3S0Oa0Q
 
 剪枝需有的放矢，快手&罗切斯特大学提出基于能耗建模的模型压缩
 
-# C/C++参考资源=
+# 拉丁美洲+
 
-## std::tuple
+在2002年，互联网时代刚开始的时候，卡斯特罗就将电脑视为违禁品。大量二手、废弃的电脑进入了古巴黑市，古巴老百姓把这些走私来的电脑藏在家里。
 
-```cpp
-auto tuple = std::make_tuple(1, 'A', "test");
-std::cout << std::get<0>(tuple) << std::endl;
-std::cout << std::get<1>(tuple) << std::endl;
-std::cout << std::get<2>(tuple) << std::endl;
-```
+开发商Alan Gross在哈瓦那、圣地亚哥和卡马圭的建立了三个地下 Wi-Fi 网络，这是古巴最早的互联网，总共接入了2000多用户，可以让他们聊聊天之类的。但是这一举动很快就被特务举报，惹的卡斯特罗龙颜大怒，导致开发商Alan Gross被捕入狱，最终处以15年的有期徒刑。
 
-## std::tie
+黑市商人们会开着小船来到一些荒无人烟的海岸线上，拉一大船硬盘，而这些硬盘里拷贝着互联网热点，最新的电视剧，音乐，电影，球赛转播之类的。这可是比贩毒还危险，一旦被古巴的官军抓到那就是视同谋反。古巴的老百姓看完电影 电视剧、球赛之后也会互相分享，交换着来看。
 
-可用tuple或pair返回多个返回值，然后用tie进行解包。这里的语法非常类似python。
+2015年时，古巴抓捕的民众数量居然足足高达1万人。2010年的时候他们也只抓2000人左右，短短5年人数翻了5倍。
 
-```cpp
-std::pair<int, std::string> fun_tie(int a, std::string str)
-{
-  return std::make_pair(a, str);
-}
+小切格瓦拉说卡斯特罗是窃取了他们的革命故事，当年自己的祖父是为了老百姓的利益拿起了枪，在革命成功之后放弃了高官厚禄，又一次重新的加入拉丁美洲的雨林中打游击，因为他知道还有更多的人等待解放。然后他的爷爷战死在了玻利维亚的雨林中，结果换来的是卡斯特罗兄弟的荣华富贵。
 
-int a;
-std::string str;
-std::tie(a , str) = fun_tie(12, std::string("Pony Ma"));
-std::cout << a << "," << str << std::endl;
-```
+Street Network起源于2001年左右，最初只是两个古巴年轻人为了继续一起玩局域网游戏，在两家阳台之间偷偷拉了一根网线。这个简单的举动开启了古巴最大规模的民间网络工程。
 
-## inl文件
+到2015年，这个网络已经横跨整个哈瓦那，从城市一端连接到另一端。2017年时，SNET已覆盖古巴全国多个城市，包括马坦萨斯、比那尔德里奥等，仅在哈瓦那就有超过9000台计算机连接，每天约有2000名活跃用户。
 
-inl文件是内联函数的源文件。内联函数通常在C++头文件中实现，但是当C++头文件中内联函数过多的情况下，我们想使头文件看起来简洁点，能不能像普通函数那样将内联函数声明和函数定义放在头文件和实现文件中呢？
+https://www.zhihu.com/answer/2007675570394247923
 
-当然答案是肯定的，具体做法将是：将内联函数的具体实现放在inl文件中，然后在该头文件末尾使用#include引入该inl文件。
+古巴人的生活水平已经达到什么程度了？
 
-参考：
+https://zhuanlan.zhihu.com/p/2009029834303611254
 
-https://www.cnblogs.com/findumars/p/4340936.html
-
-C++中的INL
-
-## 常用libc实现
-
-libc是C语言标准库的简称，它有多种实现。除了最常用的gcc自带的glibc之外，还有musl、uClibc、dietlibc等。
-
-http://www.etalabs.net/compare_libcs.html
-
-这个网址是以上4种libc实现的比较结果。从结果来看，musl比较有投资价值。实际上，最近（2015.5）的OpenWrt项目就已经将libc由uClibc改为musl。我也是因为这个原因，才知道musl的。
-
-当然这个表并不完整，其他的libc可以参见:
-
-https://en.wikipedia.org/wiki/C_standard_library
-
-## 有价值的C/C++库
-
-https://github.com/fffaraz/awesome-cpp
-
-一个专门收集各种C/C++库的网页
-
-https://github.com/gabime/spdlog
-
-一个C++的log库
-
-https://zhuanlan.zhihu.com/p/674073158
-
-超详细！spdlog源码解析
-
-## 模板元编程
-
-这段代码用来在编译期根据“一堆长度”生成一个N维静态数组类型。
-
-```cpp
-template<typename A, size_t... dims>
-struct variadic_array;
-// 告诉编译器：后面会有一个模板variadic_array，它接收一个类型A和任意数量的size_t类型的参数。此时没有定义，只做了声明。
-template<typename A, size_t first_dim, size_t... rest_dims>
-struct variadic_array<A, first_dim, rest_dims...> {
-    using type = typename variadic_array<A, rest_dims...>::type[first_dim];
-};
-// 当模板实参列表里至少有一个size_t时，这个版本被选中。它把第一个维度first_dim拿出来，然后递归到剩下的维度rest_dims...。
-template<typename A>
-struct variadic_array<A> {
-    using type = A;
-};
-// 当把所有维度都剥光后，只剩下类型A，递归停止。
-template<typename A, size_t... dims> 
-using variadic_array_t = typename variadic_array<A, dims...>::type;
-// 给整个元函数起一个别名，variadic_array_t<float, 3, 4, 5>等价于float[3][4][5]。
-```
-
-`...`只能出现在模板参数列表或函数参数列表里，声明一般为`typename... Ts`的形式，而使用则是`Ts...`。前者也被称为`pack`，后者则是`unpack`。
-
-使用`sizeof...(Ts)`运算符可以得到pack的数量。
-
-## C/C++参考资源
-
-`vector<bool>`并不是一个通常意义上的vector容器，这个源自于历史遗留问题。 早在C++98的时候，就有`vector< bool>`这个类型了，但是因为当时为了考虑到节省空间的想法，所以`vector<bool>`里面不是一个Byte一个Byte储存的，它是一个bit一个bit储存的！
-
-https://www.zhihu.com/question/23367698
-
-c++中为什么不提倡使用`vector<bool>`？
+古巴故事的终章：“感觉就像电影结束了”
 
 ---
 
-```c
-struct Test {
-  int a;
-  int b;
-  char c[0];
-};
-```
+在阿兹特克国王投降后，在接下来的100多年里，阿兹特克国王就成为了西班牙在美洲最重要的打手。
 
-Zero-length array不占用结构体的空间，但可以由编译器计算offset，例如上例中指向c的指针，实际上指向了整个结构体的尾部（不含结构体本身）。
+1530年，墨西哥国王莫尔特奇乌赫钦随西班牙人远征特奥科瓦坎，讨伐奇奇梅卡人，屠杀10余万人，拓地数倍，国王在御驾亲征的时候被奇奇梅卡人的箭射中，不治身亡。
 
----
+从1565年西帕克去世到1812年之间的这300年，墨西哥城的皇帝一直是阿兹特克人在担任。
 
-C++已经有不少解释器：clang-repl，cling等。
+当然，在半殖民地半封建时期，阿兹特克人不仅仅能当墨西哥城的皇帝，他也能当西班牙殖民区的总督。
+
+蒙特祖玛的儿子佩德罗.蒙特祖玛还和西班牙王室通婚，获得了蒙特祖玛公爵的头衔，这一家族成员就经常担任过西班牙驻墨西哥殖民地的总督。
 
 ---
 
-https://zhuanlan.zhihu.com/p/23016264
+GAESA（Grupo de Administración Empresarial S.A.，企业管理集团）是古巴革命武装力量（FAR）控制的军事商业集团，成立于1990年代初期，最初目的是为军队提供不依赖国家预算的融资渠道。
 
-这么多款STL，总有一款适合你
+普通古巴人月薪约16美元，许多退休人员仅靠5美元生活。而GAESA积累的财富超过巴拿马、乌拉圭等国的国际储备——超过180亿美元的流动资产+数不清的不动产。
 
-https://mp.weixin.qq.com/s/Hpn7KqYlBKz0JdryiozqyQ
+经济学家估计，用GAESA的资金可建设12座现代化发电厂，彻底解决停电问题。
 
-每个开发者都应该了解的一些C++特性
+如果古巴军队的秘密战争基金不用于满足公众需求，那它的用途是什么？谁真正统治着古巴？
 
-https://www.cnblogs.com/wuchanming/p/3913492.html
+---
 
-emplace_back与push_back的区别
+卢比奥：古巴并不会经济改革而放松对权力的管制，反而因为经济实力的增强而阻碍民主化。古巴人经济糟糕的时候借助美国渡过难关，经济恢复就进行国有化让美国蒙受损失。我们不想再陪你们玩游戏了。
 
-https://zhuanlan.zhihu.com/p/82895086
-
-当我们谈论C++时，我们在谈论什么？
-
-https://mp.weixin.qq.com/s/pxyTlQn4wx-N_MaWZc0oAQ
-
-漫谈C++的各种检查
-
-https://mp.weixin.qq.com/s/LchYGGcSbIMVGxO0Uea0RA
-
-深入C++回调
+巴蒂斯塔是种植园苦力出身，卡斯特罗家是当时古巴最大的种植园主。

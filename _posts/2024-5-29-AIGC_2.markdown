@@ -9,6 +9,18 @@ category: Generative Model
 
 # Diffusion Model（续）
 
+https://diffusion.csail.mit.edu/2026/index.html
+
+Introduction to Flow Matching and Diffusion Models
+
+https://zhuanlan.zhihu.com/p/377603135
+
+Diffusion Probabilistic Model
+
+https://yang-song.github.io/blog/2021/score/
+
+Generative Modeling by Estimating Gradients of the Data Distribution
+
 https://www.zhihu.com/question/536012286
 
 diffusion model最近在图像生成领域大红大紫，如何看待它的风头开始超过GAN？
@@ -297,36 +309,3 @@ VAR的一作田柯宇，后来干了一票大事：
 https://www.zhihu.com/question/1296528119
 
 字节跳动大模型训练被实习生恶意注入破坏代码，涉事者已被辞退，攻击带来的影响有多大？
-
-# LLaVA
-
-LLaVA（Large Language and Vision Assistant）是一个大型的多模态模型，它的能力包括：
-
-- 理解视频/图片的内容。
-- 根据用户指令生成视频/图片。
-
-https://zhuanlan.zhihu.com/p/692398098
-
-LLaVA系列多模态大模型总结
-
-# AIGC参考资源
-
-https://mp.weixin.qq.com/s/H2nqQi2EVQ_EyeDNCRD3Cg
-
-一文回顾AI绘画的成长之路：从简笔画到真实人脸生成
-
-https://www.zhihu.com/question/583294094
-
-Ai绘画半年了，到目前为止，AI绘画让多少画师失业了？未来又会有多少?
-
-https://www.zhihu.com/question/584139316
-
-AI绘画引入ControlNet，将会带来哪些影响？
-
-https://www.zhihu.com/question/584053473
-
-如何评价2023年2月AI绘画的最新水平？
-
-https://mp.weixin.qq.com/s/HpziNAqHY9Oetsgk2AVxEg
-
-ControlNet组合拳效果惊人，颠覆AI绘画游戏规则

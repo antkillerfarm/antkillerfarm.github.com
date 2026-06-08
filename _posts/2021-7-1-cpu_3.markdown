@@ -89,6 +89,12 @@ https://www.zhihu.com/question/7698341480
 
 ---
 
+- 电迁移 EM：电子吹风，电流推着原子跑；
+- 热迁移 TM：温差驱动，原子从热端往冷端逃；
+- 应力迁移 SM：金属被 “憋出巨大内应力”，原子自发向拉伸区流动，压缩区掏空出空洞。
+
+---
+
 https://mp.weixin.qq.com/s/Cij_95iLbAm0AEtrSb72_A
 
 关于CPU科普，这篇说得最详细

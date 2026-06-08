@@ -7,7 +7,65 @@ category: DL acceleration
 * toc
 {:toc}
 
-# 模型压缩与加速进阶
+# 硬件加速技巧
+
+## 内积乘法 vs 外积乘法（续）
+
+矩阵外积乘法的Swamping效应，是低维向量外积生成高维秩 1 矩阵时，数值范围急剧膨胀、大数吃掉小数，导致浮点精度灾难性损失、小信号被舍入误差完全掩盖的数值不稳定现象。
+
+FP16/BF16矩阵乘内积下，累加做到38bit-42bit就基本满足精度要求了。但是外积需要69bit的累加精度，才能做到和内积相同的精度！
+
+https://zhuanlan.zhihu.com/p/441943479
+
+矩阵乘法电路使用内积外积的优缺点及对计算架构需求分析
+
+https://www.zhihu.com/question/478288123
+
+如何评价特斯拉的超级计算机Dojo?
+
+https://zhuanlan.zhihu.com/p/2025222112932021062
+
+内积还是外积？
+
+https://zhuanlan.zhihu.com/p/29297535012
+
+也说矩阵外积和内积，不打哑谜
+
+## 参考
+
+https://mp.weixin.qq.com/s/PMOrY5ZElyPGOVxZgXFVzw
+
+如果只能做整数Integer运算还能用BERT吗？
+
+https://mp.weixin.qq.com/s/Fes8FHngKnL8jklB7DhNCQ
+
+图计算加速架构综述
+
+# 模型优化工具
+
+## Amazon SageMaker Neo
+
+官网：
+
+https://aws.amazon.com/cn/sagemaker/neo/
+
+## 参考
+
+https://mp.weixin.qq.com/s/T9AUFnLjNDUaE9zKmOhbEw
+
+将GEMM的性能提升200倍!AutoKernel算子优化工具正式开源
+
+https://mp.weixin.qq.com/s/L9kYXFXYmKadghAhd-51pA
+
+TensorFlow模型优化工具包—剪枝API
+
+https://mp.weixin.qq.com/s/asPSPeBaRF_4eXcRXU-Zfw
+
+TensorFlow模型优化工具包—训练时量化
+
+https://mp.weixin.qq.com/s/fa5S3o1somvdAAJF1FGqvA
+
+TensorFlow模型优化工具包正式推出
 
 # 模型压缩与加速进阶
 
@@ -342,51 +400,3 @@ https://mp.weixin.qq.com/s/NJzGR-tY_WWeccbdshHckA
 https://mp.weixin.qq.com/s/6eyEMW9dVBR5cZrHxn8iqA
 
 腾讯AI Lab详解3大热点：模型压缩、自动机器学习及最优化算法
-
-https://xmfbit.github.io/2018/02/24/paper-ssl-dnn/
-
-论文-Learning Structured Sparsity in Deep Neural Networks
-
-https://mp.weixin.qq.com/s/d6HFVbbHwkxPGdnbyVuMyQ
-
-密歇根州立大学提出NestDNN：动态分配多任务资源的移动端深度学习框架
-
-https://mp.weixin.qq.com/s/lUTusig94Htf7_4Z3X1fTQ
-
-清华&伯克利ICLR论文：重新思考6大剪枝方法
-
-https://mp.weixin.qq.com/s/g3y9mRhkFtzSuSMAornnDQ
-
-韩松博士论文：面向深度学习的高效方法与硬件
-
-https://mp.weixin.qq.com/s/aH1zQ7we8OE59-O9n4IXhw
-
-应对未来物联网大潮：如何在内存有限的情况下部署深度学习？
-
-https://mp.weixin.qq.com/s/GJ7JMtWiKBku7dVJWOfLOA
-
-CNN能同时兼顾速度与准确度吗？CMU提出AdaScale
-
-https://mp.weixin.qq.com/s/pmel2k2J159zQi87ib3q8A
-
-如何让CNN高效地在移动端运行
-
-https://mp.weixin.qq.com/s/m-wQRm3VpfQkEOoUAxEdoA
-
-论文解读: Quantized Convolutional Neural Networks for Mobile Devices
-
-https://mp.weixin.qq.com/s/w7O2JxDH2ECqPn50sLfxpg
-
-不用重新训练，直接将现有模型转换为MobileNet
-
-https://mp.weixin.qq.com/s/EW6jvf98ifBucVz74SfSIA
-
-文档扫描：深度神经网络在移动端的实践
-
-https://mp.weixin.qq.com/s/3oL0Bso3mwbsfaG8X5-xoA
-
-英特尔提出新型压缩技术DeepThin，适合移动端设备深度神经网络
-
-https://mp.weixin.qq.com/s/LGCGYSoMpPfojEi2WcmjnQ
-
-TinyML：下一轮人工智能革命
