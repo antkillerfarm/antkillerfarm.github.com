@@ -105,6 +105,10 @@ https://zhuanlan.zhihu.com/p/673048264
 
 大模型LLM之混合专家模型MoE（下-实现篇）
 
+https://zhuanlan.zhihu.com/p/2047396525731586071
+
+MoE架构优化与GroupedGemm Kernel设计
+
 ## Mixtral
 
 Mixtral是由Mistral AI团队推出的MoE模型，参数大小为47B。

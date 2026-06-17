@@ -93,6 +93,8 @@ https://zhuanlan.zhihu.com/p/585213985
 
 ![](/images/img5/cross_river.jpg)
 
+![](/images/img6/cross_river.jpg)
+
 https://zhuanlan.zhihu.com/p/513101094
 
 俄军的北顿涅茨河浮桥是怎么被打爆的

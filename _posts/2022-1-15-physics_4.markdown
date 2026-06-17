@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  物理（四）, 核物理
+title:  物理（四）, 核物理（一）
 category: Nature 
 ---
 
@@ -186,81 +186,3 @@ https://www.zhihu.com/question/455063533
 1967年至1978年间，约12.6万桶低、中放射性核废料被随意堆放在德国阿斯盐矿（Asse II）地下750米深处，90%来自核电站。
 
 1988年，检测到含放射性物质的盐水（含铯-137、锶、钚等）从储存区渗出，但被隐瞒至2008年才公开。
-
----
-
-https://mp.weixin.qq.com/s/bg9w0RGjUl0xIAu8Mjl57w
-
-她是奠基“核裂变”理论的物理学家，却拒绝了曼哈顿计划（Lise Meitner）
-
-https://mp.weixin.qq.com/s/2IZCvRo6YlBwsQwfDDMbxw
-
-美国原子弹之父被骂了9年！最后他上台领奖，竟一把推开了总统......（Julius Robert Oppenheimer）
-
-https://mp.weixin.qq.com/s/dIJS9gebnqFh-nnaoosumA
-
-科学家还是灭世者？记那些原子弹背后的人
-
-https://mp.weixin.qq.com/s/iMIkyMxD5vr_iQU8cL7xSg
-
-轻原子核中的宇称不守恒
-
-https://mp.weixin.qq.com/s/Or4D9ha5rzRR_76mTgWc3w
-
-这一极限探索，迎来新的机制（中子滴线）
-
-https://mp.weixin.qq.com/s/CMv1yRfCbm_VqSArHXluGg
-
-“中国居里夫人”登美国永久邮票，穿旗袍做实验，世界欠她个诺贝尔奖（吴健雄）
-
-https://mp.weixin.qq.com/s/JuEnx-kQgoSYM6qnteK8zA
-
-你是什么粒子？
-
-https://mp.weixin.qq.com/s/UanXLOemWh7xU5Peu1_K6A
-
-120年了，它依旧神秘（量子力学）
-
-https://mp.weixin.qq.com/s/MhAvoZABHxJz17rxDXnVlw
-
-比起女孩子，他更喜欢爱因斯坦，这个最直男的科学家，把物理和数学搞了CP（Paul Dirac）
-
-https://mp.weixin.qq.com/s/GplYa0n5Rf9aCrDc4OSN-w
-
-诺奖得主小柴昌俊如何成功探测到中微子
-
-https://mp.weixin.qq.com/s/ThQgmii_Zu29thw_XY2W1g
-
-研究反物质：寻找另一个“我”
-
-https://mp.weixin.qq.com/s/RmY_k1MZQM6mCdIwjpInjA
-
-有了7种答案，仍然解释不了这个最基本的问题（粒子是什么？）
-
-https://mp.weixin.qq.com/s/BfQ0qUHpAfmB3_mHvyeCDw
-
-不好！为了一点铅，物理学家和考古学家打起来了！（低本底铅）
-
-https://mp.weixin.qq.com/s/aHYiknPZejxlLy2q3gBIrg
-
-量子世界的5种诡异现象
-
-https://mp.weixin.qq.com/s/f56K_wNUnMnncD23nVyiWQ
-
-这个理论是科学史上的奇迹（粒子物理学标准模型）
-
-https://mp.weixin.qq.com/s/8Zg-nXwMLDEQXe5gcEeq5Q
-
-质子内，有玄机
-
-https://mp.weixin.qq.com/s/Xky_uit9pSsU7pX6DaapsQ
-
-美国蜂蜜中发现放射性核物质！核弹试验影响延续至今
-
-https://zhuanlan.zhihu.com/p/51330777
-
-宇称不守恒到底说了啥？杨振宁和李政道的发现究竟有多大意义？
-
-https://zhuanlan.zhihu.com/p/55922673
-
-杨-米尔斯理论说了啥？为什么说这是杨振宁超越他诺奖的贡献？

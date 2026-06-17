@@ -223,6 +223,12 @@ Nvidia GPU互联技术全景图
 
 https://en.wikichip.org/wiki/nvidia/nvlink
 
+NVLink
+
+https://zhuanlan.zhihu.com/p/13380746376
+
+查看显卡之间的拓扑结构（GPU topology）
+
 ## 存储体系
 
 ![](/images/img5/GPU_2.png)

@@ -340,6 +340,12 @@ https://mp.weixin.qq.com/s/57Vxc1A5FCVbMdDYShWiDA
 
 单网络内部集成：我要打十个！
 
+## 局限性
+
+https://www.zhihu.com/question/2035709327479157471
+
+为什么神经网络训练时只能改变权重而不能改变网络的拓扑结构？
+
 # PDE
 
 偏微分方程（Partial differential equation）的求解一直是数学和物理的热点问题。

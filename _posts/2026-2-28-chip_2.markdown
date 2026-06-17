@@ -153,6 +153,10 @@ https://mp.weixin.qq.com/s/kzQ-WqozBX-T8ZyS58MPnw
 
 一张图了解芯片到底是如何设计的
 
+https://zhuanlan.zhihu.com/p/2048290319846969471
+
+芯片良率是怎么算出来的？——从泊松到负二项分布，一个芯片测试工程师的视角
+
 # 芯片参考资料
 
 ![](/images/img3/Memristor.png)
