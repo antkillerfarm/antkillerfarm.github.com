@@ -170,6 +170,10 @@ Google深度揭秘TPU
 
 ---
 
+TPU是单颗超大128×128全局脉动阵列；NVIDIA是大量分布式4×4小脉动阵列嵌入在各个SM中，配合CUDA通用核灵活调度。
+
+---
+
 参考：
 
 https://mp.weixin.qq.com/s/1X9xiZkmVPI-j-aipr-ocg

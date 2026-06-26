@@ -32,6 +32,10 @@ DeepEPHTAll2AllManager和DeepEPLLAll2AllManager是vLLM在集成DeepEP（DeepSeek
 
 EPLB：Expert parallelism load balancer
 
+---
+
+AMD和Red Hat的实践都强调过，专家铺得越开，跨节点通信的故障半径就越大，一个节点出问题可能拖垮一片。所以生产上反而倾向于用不太大的EP组，把Prefill和Decode的路径严格隔离开。
+
 ## KTransformer
 
 KTransformers由清华大学团队提出，可以在模型运行过程中灵活的将专家模型加载到CPU上，同时将MLA/KVCache卸载到GPU上，从而深度挖掘硬件性能，实现更低的显存运行更大尺寸的模型。
@@ -112,9 +116,17 @@ Devin炮轰Claude：别再搞Multi-Agent了
 
 ---
 
-Prompt Engineering管的是"问什么"，Context Engineering管的是"给LLM看什么上下文"，而Harness Engineering管的是"整个运行环境怎么设计"——它是最上层的学科，前两者是它的子集。
+Prompt Engineering时代，用户把bug复制给模型，补充一点背景知识，再把模型吐出来的代码复制回生产环境，看看解决问题没；不行，就再来一次。
+
+Context Engineering时代，把背景、约束、项目知识提前塞好，或者让模型自己先去找好，再去做coding。但用户还是得负责大量复制粘贴，还没真正和生产环境接上轨。
+
+Harness Engineering时代，把工具、环境、权限、测试、hooks都搭起来。用户通过多轮对话和赋权，指挥AI在环境里做所有事情。
+
+Loop Engineering时代，又更进一步，大幅减少用户交互次数。你开头定义好一个goal，让它围绕这个目标自己迭代，直到完成。
 
 在LLM（大语言模型）的语境中，"Harness" 是一个动词，意思是"驾驭、利用"，即充分利用和控制模型的能力。
+
+Spec就是给AI看的PRD，Harness就是给Agent用的Framework，Loop就更简单了，其实就是CI。
 
 https://zhuanlan.zhihu.com/p/2027834017840415550
 

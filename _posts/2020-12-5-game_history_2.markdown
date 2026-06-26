@@ -61,6 +61,8 @@ https://www.zhihu.com/answer/1937966942
 
 ---
 
+![](/images/img6/WC.jpg)
+
 https://www.zhihu.com/question/61896458
 
 如何评价游戏《终极将军：内战》?

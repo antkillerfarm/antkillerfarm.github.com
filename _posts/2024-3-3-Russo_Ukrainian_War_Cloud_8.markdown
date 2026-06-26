@@ -61,6 +61,8 @@ category: Russo Ukrainian War Cloud
 
 ![](/images/img6/bomb.jpg)
 
+![](/images/img6/refinery.jpg)
+
 ---
 
 ![](/images/img6/Graffiti.jpg)
