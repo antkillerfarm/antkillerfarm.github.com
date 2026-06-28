@@ -91,7 +91,7 @@ https://mp.weixin.qq.com/s/HYZG6gwUKrI6kFOnVJ8iaA
 
 不仅如此，多貌生物的另外一支有一类茸囊生物，它是通过吞下隐藻，连环相吞（已经是第三次了）获得了叶绿体。
 
-疟原虫是一种丢掉了光合作用能力的囊泡虫。其实它体内的叶绿体还在，只不过没有叶绿素了，取而代之的是一种叫做顶质体的结构，在它的生理过程中发挥着重要作用。
+疟原虫（Plasmodium）属于顶复门（Apicomplexa），是一种丢掉了光合作用能力的囊泡虫。其实它体内的叶绿体还在，只不过没有叶绿素了，取而代之的是一种叫做顶质体的结构，在它的生理过程中发挥着重要作用。因为顶质体的代谢途径与宿主不同，正是抗疟药物（如多西环素）的重要靶点。
 
 >Lynn Margulis，1938～2011，女，美国生物学家。University of Chicago本科（1957）（少年班？）、硕士（1960）+UCB博士（1965）。先后执教于Brandeis University、Boston University和University of Massachusetts Amherst。美国艺术科学院、美国科学院院士。美国国家科学奖获得者（1999）。
 

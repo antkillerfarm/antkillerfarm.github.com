@@ -278,3 +278,7 @@ https://mp.weixin.qq.com/s/B2_kOUfBmQ3tlSZoYfT0YQ
 https://zhuanlan.zhihu.com/p/687399673
 
 文件路径二三事：为什么“斜杠家族”能笑到最后
+
+https://zhuanlan.zhihu.com/p/2053896264379634152
+
+为什么清空寄存器要用 xor eax, eax 而不是 sub eax, eax？
