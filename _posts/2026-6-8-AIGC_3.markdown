@@ -1,22 +1,21 @@
 ---
 layout: post
-title:  AIGC（三）——LLaVA, 数据中心
+title:  AIGC（三）——AIGC参考资源, 数据中心
 category: Generative Model
 ---
 
 * toc
 {:toc}
 
-# LLaVA
+# Autoregressive Model
 
-LLaVA（Large Language and Vision Assistant）是一个大型的多模态模型，它的能力包括：
+## VAR（续）
 
-- 理解视频/图片的内容。
-- 根据用户指令生成视频/图片。
+VAR的一作田柯宇，后来干了一票大事：
 
-https://zhuanlan.zhihu.com/p/692398098
+https://www.zhihu.com/question/1296528119
 
-LLaVA系列多模态大模型总结
+字节跳动大模型训练被实习生恶意注入破坏代码，涉事者已被辞退，攻击带来的影响有多大？
 
 # AIGC参考资源
 

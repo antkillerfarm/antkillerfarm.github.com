@@ -133,9 +133,13 @@ https://zhuanlan.zhihu.com/p/25754084
 
 WebAssembly系列（四）WebAssembly工作原理
 
+https://zhuanlan.zhihu.com/p/2055340885982951129
+
+为什么浏览器里的Game Boy模拟器，比你的原生解释器还快
+
 ---
 
-V8开发者Vyacheslav Egorov和Mozilla Hacks之间的source-map之战了。对于同一份source-map库的JS代码，Vyacheslav所魔改出的纯JS版本，其性能一举反超了Mozilla重写的Rust版。
+V8开发者Vyacheslav Egorov（网名 mraleph）和Mozilla Hacks Nick Fitzgerald之间的source-map之战了。对于同一份source-map库的JS代码，Vyacheslav所魔改出的纯JS版本，其性能一举反超了Mozilla重写的Rust版。
 
 https://www.zhihu.com/answer/1322391162
 

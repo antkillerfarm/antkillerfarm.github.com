@@ -201,6 +201,10 @@ https://www.zhihu.com/question/1997334245450981959
 
 如何评价DeepSeek V4架构？
 
+https://blog.csdn.net/v_JULY_v/article/details/160744266
+
+DeepSeek-V4——迈向百万token上下文：保留V3的MoE和多token预测机制，提出混合注意力机制(CSA/HCA)、流形约束超连接mHC(替代残差)、Muon优化器(取代AdamW)
+
 ## Sparse Attention
 
 MoE主要是对FFN（expert）进行稀疏化，相应的还有Sparse Attention。
@@ -221,32 +225,25 @@ https://zhuanlan.zhihu.com/p/1956149979077911247
 
 DeepSeek V3.2 Sparse Attention技术深度剖析与潜在改进
 
-## CSA & HCA
+## Expert Parallelism
 
-CSA：Compressed Sparse Attention
+Expert-Parallel vs. Token-Parallel
 
-![](/images/img6/CSA.png)
+MoBA：Mixture of Block Attention
 
-CSA首先将每m个令牌的KV Cache压缩为一个条目，随后应用DeepSeek稀疏注意力实现进一步加速。
+https://github.com/deepseek-ai/DeepEP
 
-HCA：Heavily Compressed Attention
-
-![](/images/img6/HCA.png)
-
-HCA采用更激进的KV Cache压缩方式，连DSA都省了。
-
-压缩后的KV Cache和Sliding Window之后最近的KV Cache一道送入MQA，这从原理上等效于，保留最近的N个token，再压缩历史token。这样便可兼顾长短期的记忆。
-
-![](/images/img6/deepseek_v4_2.png)
-
-上图是DeepSeek v4的网络结构图，DeepSeek认为交错使用CSA和HCA效果更好。
-
-https://zhuanlan.zhihu.com/p/2031133178354716993
-
-DeepSeek Attention之从V3 MLA到V4 CSA+HCA
+deepseek官方的EP库
 
 ---
 
-MLA在Chat时代很优秀，也能省KV Cache，对长文也算不错；但MLA是为当时H系列芯片“访存/计算比”做的极致临界设计，导致结构上“没有可发挥空间”。很难再叠加MTP（Multi-Token Prediction）技术来进一步加速推理。
+PPLXAll2AllManager是vLLM为了解决Expert Parallelism场景下MoE模型的跨GPU专家tensor交换，而引入的一个通信调度器（All-to-All管理器）。
 
-MLA本质上是MQA和MHA之间的折衷，在MQA都被嫌弃不够激进的今天，MLA的前景可想而知了。
+DeepEPHTAll2AllManager和DeepEPLLAll2AllManager是vLLM在集成DeepEP（DeepSeek Expert Parallel）通信框架时，为MoE模型推理引入的两类分层All-to-All通信调度器。
+
+它们把原来单一的All-to-All拆成两层：
+
+- HT（High-Throughput）层——节点内GPU之间大批量、高吞吐交换；
+- LL（Low-Latency）层——节点间跨机NVLink/IB网络低延迟交换。
+
+EPLB：Expert parallelism load balancer

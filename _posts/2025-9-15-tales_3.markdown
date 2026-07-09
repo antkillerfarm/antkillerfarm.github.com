@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 世说新语（2024.9～2025.2）
+title: 世说新语（2024.8～2025.11）
 category: tales 
 ---
 

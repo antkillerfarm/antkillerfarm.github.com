@@ -1,0 +1,279 @@
+---
+layout: post
+title:  Large Language Model（六）——AI agent, LLM实战
+category: Attention 
+---
+
+* toc
+{:toc}
+
+# VLM（续）
+
+## VLA
+
+VLM（Vision-Language Model）仅做跨模态“理解”或“生成”：输入图像/视频+文本，输出文本（描述、问答、检索分数等）。
+
+VLN（Vision-Language Navigation）在 VLM 之上加“导航”任务：输入一句自然语言指令与当前视觉帧，输出离散或连续动作，直到到达语言描述的目标点。
+
+VLA（Vision-Language Action）进一步把“导航”泛化为“任意物理动作”：输出低层连续控制信号（关节力矩、车轮转角、油门刹车等），完成抓取、驾驶、开关抽屉等操作。
+
+![](/images/img6/X_VLA.jpg)
+
+上图是X-VLA的网络结构图。
+
+https://blog.csdn.net/v_JULY_v/article/details/158262322
+
+X-VLA——基于Soft Prompt的Transformer编码器练就可扩展的跨本体VLA：VLM做多模态感知，DiT-style做动作生成
+
+## LLaVA
+
+LLaVA（Large Language and Vision Assistant）是一个大型的多模态模型，它的能力包括：
+
+- 理解视频/图片的内容。
+- 根据用户指令生成视频/图片。
+
+https://zhuanlan.zhihu.com/p/692398098
+
+LLaVA系列多模态大模型总结
+
+# LLM应用
+
+![](/images/img6/LLM_IC.png)
+
+大语言模型参与的芯片前端设计迭代流程
+
+---
+
+Vibe Coding是一种2025年才出现、以AI为核心的全新软件开发方式：开发者不再逐行手写代码，而是用自然语言把“想要什么”告诉大模型，由AI生成、修改并反复迭代，直到“感觉对了”就上线——整个过程更像“对话＋氛围感知”，而不是传统意义上的编码。
+
+https://www.zhihu.com/question/1944542162130833916
+
+什么是Vibe Coding？
+
+# AI agent
+
+AI agent本质上是一个构建在LLM(大模型)之上的智能应用，也就是说AI agent是大模型的上层应用。如果说把AI比做一个人，那么大模型就是这个人的大脑，虽然它拥有了智能，但其却没有能够真正做事的实体。而AI agent就相当于人的手脚眼睛和嘴巴，以及各种人类能够利用的工具。
+
+![](/images/img5/AI_agent.png)
+
+https://github.com/datawhalechina/agentic-ai
+
+吴恩达老师在DeepLearning.AI推出的Agentic AI系列课程
+
+https://blog.csdn.net/qq_33453797/article/details/138324548
+
+爆火的AI Agent到底是什么？有了大模型为什么还需要AI Agent？
+
+https://blog.csdn.net/v_JULY_v/article/details/135868163
+
+智能体AI Agent的极速入门：从ReAct、AutoGPT到AutoGen、QwenAgent、XAgent、MetaGPT
+
+https://blog.csdn.net/v_JULY_v/article/details/142796658
+
+OmniH2O——通用灵巧且可全身远程操作并学习的人形机器人
+
+https://blog.csdn.net/v_JULY_v/article/details/142769965
+
+VLM驱动机器狗——从UMI on Legs到Helpful DoggyBot：分别把机械臂装到机器狗背上、夹爪装到机器狗嘴里
+
+https://zhuanlan.zhihu.com/p/1917883331829273687
+
+Devin炮轰Claude：别再搞Multi-Agent了
+
+---
+
+Prompt Engineering时代，用户把bug复制给模型，补充一点背景知识，再把模型吐出来的代码复制回生产环境，看看解决问题没；不行，就再来一次。
+
+Context Engineering时代，把背景、约束、项目知识提前塞好，或者让模型自己先去找好，再去做coding。但用户还是得负责大量复制粘贴，还没真正和生产环境接上轨。
+
+Harness Engineering时代，把工具、环境、权限、测试、hooks都搭起来。用户通过多轮对话和赋权，指挥AI在环境里做所有事情。
+
+Loop Engineering时代，又更进一步，大幅减少用户交互次数。你开头定义好一个goal，让它围绕这个目标自己迭代，直到完成。
+
+在LLM（大语言模型）的语境中，"Harness" 是一个动词，意思是"驾驭、利用"，即充分利用和控制模型的能力。
+
+Spec就是给AI看的PRD，Harness就是给Agent用的Framework，Loop就更简单了，其实就是CI。
+
+https://zhuanlan.zhihu.com/p/2027834017840415550
+
+AI真能自己写出整个Windows系统吗？我做了一场无监督实验
+
+---
+
+MCP（Model Context Protocol）由Anthropic于2024年11月推出，是一个开放标准协议，用于统一大模型与外部工具、数据源之间的交互方式。
+
+https://zhuanlan.zhihu.com/p/1895177200665350365
+
+大白话聊一聊Tool、MCP和Agent来龙去脉
+
+---
+
+2026.1
+
+最近组内开始尝试应用本地AI agent辅助编程。
+
+方案主要是Continue.dev和Cline。
+
+如果要本地部署LLM，两者都可以和Ollama框架配合使用。
+
+https://blog.csdn.net/Hank_dev/article/details/147261418
+
+AI assistant本地部署Continue.dev + Ollama + MCP Server
+
+---
+
+2026.2
+
+OpenClaw最近爆火。
+
+OpenCode：一个AI编程助手。类似的还有字节的TRAE。
+
+OpenClaw：一个AI agent工具。
+
+QMD（Query Markup Documents）是一个用Rust编写的高性能本地搜索工具，旨在为个人或团队的知识库提供智能化的搜索能力，同时完全保护隐私（本地优先、无需云端服务）。
+
+QMD已被用于替代OpenClaw默认的SQLite进行记忆搜索，可以显著提升Agent在积累大量上下文后的记忆检索能力，解决传统关键词搜索无法找到概念相关，但字面不匹配内容的问题。
+
+两者代表了不同的设计哲学：
+
+- OpenClaw偏重控制力。
+- Hermes偏重自进化能力。
+
+---
+
+2026.7
+
+Superpowers由Jesse Vincent开发的面向AI agent的工程化技能规范框架，目前是Cursor、Claude Code最常用的Agent增强方案。
+
+Agent主执行流程里，框架提前预留好的生命周期埋点/拦截节点，你可以在这些固定时机挂载自定义代码，实现监听、修改、拦截、校验、日志、限流、安全审计，不需要改动Agent核心ReAct循环代码，就能横向扩展能力。
+
+Main Agent遇到复杂任务时，不会自己从头到尾做完，而是把任务拆分，交给专门负责某一块的Sub Agent去独立执行，Sub Agent做完后把结果汇总返回给Main Agent。
+
+长任务容易上下文溢出、思考混乱。
+
+---
+
+https://github.com/OthmanAdi/planning-with-files
+
+Manus原理
+
+https://zhuanlan.zhihu.com/p/1993358891099111451
+
+Manus核心Context技术被人做成了Skills
+
+https://www.zhihu.com/question/1991902608064005627
+
+陈天桥代季峰团队实现30B参数跑出1T性能，这对大模型发展意味着什么？
+
+https://zhuanlan.zhihu.com/p/1994124775983970078
+
+垂直领域Agent落地：为什么我放弃235B/671B，转而训练8B（一）
+
+https://zhuanlan.zhihu.com/p/1994409280238012063
+
+垂直领域Agent落地：为什么我放弃235B/671B，转而训练8B（二）
+
+# LLM实战
+
+书籍：
+
+https://jax-ml.github.io/scaling-book/
+
+How to Scale Your Model
+
+---
+
+实战心得：
+
+https://pytorch.org/blog/high-performance-llama-2/
+
+https://huggingface.co/blog/zh/bloom-inference-optimization
+
+https://huggingface.co/blog/zh/bloom-megatron-deepspeed
+
+---
+
+![](/images/img5/Spike.webp)
+
+训练过程中，损失偶尔会出现毛刺的情况。针对这种情况，Falcon作者会恢复到上一个最新的Checkpoint，并跳过1B Token数据继续训练。作者训练Falcon-180B时出现了9次毛刺。
+
+Google训练PaLM模型遇到了同样的问题。针对此种情况，作者会重启训练，并从毛刺之前的100个step开始，跳过200-500个Batch的数据。作者也做了消融实验，发现并不是单个数据的问题，而可能是这连续的一系列Batch数据引起的。
+
+https://mp.weixin.qq.com/s/rLJlaqI2RL7TGUEQyx-QaA
+
+万卡GPU集群实战：探索LLM预训练的挑战
+
+---
+
+MFU（Model FLOPs Utilization）
+
+$$\text{MFU} = \frac{\text{model FLOPs per iteration}}{\text{GPU单卡算力} \times \text{卡数} \times \text{一次迭代时间}}$$
+
+Transformer模型的MFU计算公式：
+
+$$\text{MFU} = \frac{72blsh^2 \left(1 + \frac{s}{6h} + \frac{V}{12hl}\right)}{F \times N \times T}$$
+
+- b：批次大小（micro batch size）。
+- l：Transformer 层数。
+- s：序列长度。
+- h：隐藏层维度。
+- V：词表大小。
+- F：GPU 单卡的峰值算力（FLOPS）。
+- N：使用的 GPU 卡数量。
+- T：一次迭代时间（秒）。
+
+---
+
+SOL（Speed of Light）：
+
+$$T_{\mathrm{SOL}} = \max\!\left( \frac{\text{Total FLOPs}}{\text{Compute Throughput}}, \frac{\text{Total Fused Bytes}}{\text{Memory Bandwidth}} \right)$$
+
+---
+
+https://docs.swanlab.cn/zh/examples/pretrain_llm.html
+
+从零预训练一个自己的大模型
+
+PS: swanlab的文档库本身也是一个宝库，而且还是中文的。
+
+本人的魔改版本，wiki_zh dataset + Qwen tokenizer + llama 2 model：
+
+https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/huggingface/llm_train.py
+
+---
+
+在大模型训练过程中，为确保训练的稳定性与有效性，需密切关注多项关键指标以评估训练状态，其中包括但不限于perplexity (PPL)、gradient norm (GNorm)、activation norm、内存占用情况以及Loss scale等参数。
+
+梯度裁剪（Gradient Clipping）：作为一种常用的稳定训练手段，通常设定裁剪阈值为1.0，防止梯度过大引发训练不稳定。
+
+Weight Decay（L2正则化）：设置合理的权重衰减率，如0.1，有助于防止过拟合，增强模型泛化能力。
+
+特殊层的调整：GLM研究发现，embedding层往往存在较大的梯度异常情况，故需根据实际情况适度调整相关参数。
+
+---
+
+正常情况下，你输入的`<think>`对大模型来说其实可以理解为`&lt;think&gt;`（三个 Token），和系统赋予的真`<think>`（一个 Token）是两码事，模型不会混淆。
+
+`<|im_start|>`和`<think>`这样的特殊Token只能由系统注入。
+
+https://www.zhihu.com/question/2038402853274915914
+
+为什么Deepseek在输入`<think `后会匹配到疑似其他对话?
+
+---
+
+https://blog.csdn.net/v_JULY_v/article/details/132178447
+
+七月论文审稿GPT第1版：通过3万多篇paper和10多万的review数据微调RWKV
+
+https://blog.csdn.net/v_JULY_v/article/details/134183799
+
+七月论文审稿GPT第2版：用一万多条paper-review数据微调LLaMA2 7B最终反超GPT4
+
+https://blog.csdn.net/v_JULY_v/article/details/131552592
+
+基于LangChain+LLM的本地知识库问答：从企业单文档问答到批量文档问答
+
+https://wandb.ai/ai2-llm/OLMo-7B/reports/OLMo-7B--Vmlldzo2NzQyMzk5
+
+这个网页收录了作者训练LLM时，各项指标的变化曲线。

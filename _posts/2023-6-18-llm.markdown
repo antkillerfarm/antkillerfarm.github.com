@@ -27,8 +27,6 @@ Aligning Language Models to Follow Instructions
 
 ---
 
-Pre-train vs Post-train：预训练是"无监督/自监督"在海量文本上学语言规律；后训练是"有监督/强化学习"在精选数据上学行为和偏好。
-
 基座预训练（Base pretrain）
 
 SFT微调（Supervised Fine-Tuning）：Fine-tuning是Post-train的子集。Post-train是一个更宽泛的概念，包含SFT、RLHF、DPO等多个阶段，而"微调"通常特指SFT这一步。
