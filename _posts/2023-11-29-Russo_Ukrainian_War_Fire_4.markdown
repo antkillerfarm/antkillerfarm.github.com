@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  俄乌战争：疾风篇（十二）——无官不贪（5）
-category: Russo Ukrainian War Wind
+title:  俄乌战争：烈火篇（四）——无官不贪（4）
+category: Russo Ukrainian War Fire
 ---
 
 * toc

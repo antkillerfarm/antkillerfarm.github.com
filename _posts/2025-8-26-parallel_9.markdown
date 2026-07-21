@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（十）——Alpa, Batching, 参考资源（1）
+title:  并行 & 框架 & 优化（十）——Alpa, Batching
 category: DL acceleration 
 ---
 
@@ -8,6 +8,24 @@ category: DL acceleration
 {:toc}
 
 # LLM System（续）
+
+## 向量数据库
+
+向量搜索在搜索、推荐、NLP等众多应用领域被广泛的使用，典型的互联网业务，包括电商、出行、点评、地图等都大量使用相关技术。随着ChatGPT带来的AI技术应用新热潮，向量数据库又一次地获得了更多的关注。它可以解决LLM不长记性（Memory，记忆）的问题。
+
+普遍认为LLM+Vector Search+API pool会变成复杂AI场景的标准解决方案。
+
+类似Pinecone，Weaviate，Qdrant，Chroma这样的专用向量数据库最初是为了解决ChatGPT的记忆能力不足而出现的Workaround。
+
+最发布的ChatGPT 3.5的上下文窗口只有4K Token，也就是不到两千个汉字。然而当下GPT 4的上下文窗口已经发展到了128K，扩大了32倍，足够塞进一整篇小说了。而且未来还会更大。这时候，用作临时周转的垫脚石——向量数据库SaaS就处在一个尴尬的位置上了。
+
+https://www.zhihu.com/question/603117242
+
+为什么各大VC最近都在投向量数据库？
+
+https://zhuanlan.zhihu.com/p/668509885
+
+向量数据库凉了吗？
 
 ## Accumulate Gradients
 
@@ -211,41 +229,3 @@ https://zhuanlan.zhihu.com/p/693556044
 https://zhuanlan.zhihu.com/p/1890132185966682238
 
 FlashAttentionV1/V2+PageAttentionV1/V2+RadixAttention算法总结
-
-# 工具
-
-FairScale是由Facebook Research开发的PyTorch扩展库。FSDP就是首发于这个库。
-
----
-
-https://zhuanlan.zhihu.com/p/412118353
-
-Kokkos:一个异构并行计算通用平台
-
----
-
-LLGuidance是Guidance-AI开源的一个超高速“约束解码”引擎，用Rust写成，专门帮大模型在生成时强制遵守你给出的结构规范（JSON Schema、正则、EBNF/Lark 文法等），从而得到100%合规的结构化输出。类似的引擎还有XGrammar。
-
----
-
-Ray是一个分布式计算框架，专为大规模并行任务和强化学习应用设计。它由加州大学伯克利分校的研究团队开发，旨在简化构建高性能、可扩展的分布式应用程序的过程。
-
-https://mp.weixin.qq.com/s/Na2SJkfC9LzgfbTfSCclOw
-
-如何基于Ray使用15行代码实现参数服务器
-
-https://mp.weixin.qq.com/s/IqjKdAlGYREqCR9XQB5N1A
-
-伯克利AI分布式框架Ray，兼容TensorFlow、PyTorch与MXNet
-
-https://mp.weixin.qq.com/s/jOVUPhrCBI9W9vPvD9eKYg
-
-UC Berkeley提出新型分布式框架Ray：实时动态学习的开端
-
----
-
-DeepWiki由Cognition AI推出，输入任何GitHub仓库地址，DeepWiki自动抽取出项目架构、模块关系、API 说明、依赖图等内容，生成可浏览、可对话的在线文档。
-
-# 数据流并行
-
-数据流并行是Pipeline并行的高阶版本。广义的数据流希望通过图编译找到全局最优策略，本质上是一种把编译器当万金油的惰性做法，深度学习框架在系统调度这种比较粗放的尺度，围绕数据流做了这么多年的自动并行化，最后业界主流实际上的并行策略还是预设的这些Pipeline、Tensor并行的组合，而不是编译器搜出来的自动化的并行策略。

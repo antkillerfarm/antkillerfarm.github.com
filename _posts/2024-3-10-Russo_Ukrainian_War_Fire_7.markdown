@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  俄乌战争：疾风篇（十五）——凡人列传（2）
-category: Russo Ukrainian War Wind
+title:  俄乌战争：烈火篇（七）——凡人列传（1）
+category: Russo Ukrainian War Fire
 ---
 
 * toc

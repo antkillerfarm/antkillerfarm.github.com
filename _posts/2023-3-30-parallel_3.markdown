@@ -7,6 +7,20 @@ category: DL acceleration
 * toc
 {:toc}
 
+# tf.distribute & MultiDevice
+
+## TransferManager（续）
+
+`TransferLiteralToInfeed`关键函数调用：
+
+gpu::CopyBufferToDevice -> Stream::ThenMemcpy
+
+如果不对`GenericTransferManager`做修改，则该类会用Host上的mem buffer，虚拟一个`DeviceMemoryBase`来处理Feed。
+
+graphcore的实现没有动`GenericTransferManager`，而是自己单独弄了一套基于`TranslatedFeedInfo`类的cache机制。
+
+tensorflow/compiler/plugin/poplar/driver/poplar_executable_cache.cc
+
 # Pipeline Parallel
 
 ![](/images/img5/PP.png)

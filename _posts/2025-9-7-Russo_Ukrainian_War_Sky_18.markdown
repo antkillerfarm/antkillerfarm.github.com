@@ -184,3 +184,7 @@ https://www.zhihu.com/question/1913317317586154975
 https://www.zhihu.com/question/2057880248071485004
 
 如何看待乌克兰军方在亚速海对俄罗斯油轮开展的执法行动？
+
+https://zhuanlan.zhihu.com/p/2059695628574372497
+
+“亚速海战役”冲击全球海军

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Attention（七）——RWKV, RoPE, BERT进阶
+title:  Attention（七）——RWKV, RoPE
 category: Attention 
 ---
 
@@ -65,6 +65,17 @@ $$\begin{equation}\text{sim}(\boldsymbol{q}_i, \boldsymbol{k}_j) = \phi(\boldsym
 
 其中，$$\phi(\cdot),\varphi(\cdot)$$是值域非负的激活函数。
 
+如果忽略激活函数的话，则Linear Transformer，可写为下式：
+
+$$
+\begin{align}
+\boldsymbol{S} &= \boldsymbol{K}^\top \boldsymbol{V} \\
+\boldsymbol{O} &= \boldsymbol{Q}\boldsymbol{S}
+\end{align}
+$$
+
+其中S也被称为记忆矩阵。
+
 https://spaces.ac.cn/archives/7546
 
 线性Attention的探索：Attention必须有个Softmax吗？
@@ -119,6 +130,48 @@ DeltaNet Explained
 
 http://github.com/fla-org/flash-linear-attention
 
+## Kimi Delta Attention
+
+DeltaNet：
+
+$$
+\begin{align}
+\boldsymbol{S}_t &= \boldsymbol{S}_{t-1} \big(\boldsymbol{I} - \beta_t \boldsymbol{k}_t \boldsymbol{k}_t^\top\big) + \beta_t \boldsymbol{v}_t \boldsymbol{k}_t^\top \\
+\boldsymbol{o}_t &= \boldsymbol{S}_{t-1}^\top \boldsymbol{q}_t
+\end{align}
+$$
+
+注意：这里的q是Q的单token列向量，所以上面的第二个公式和原始公式完全等价。
+
+后续所有线性RNN类结构（RWKV、Mamba、DeltaNet、GDN、KDA）全部统一使用这套列向量记号体系，方便状态递推书写。
+
+$$\big(\boldsymbol{I} - \beta_t \boldsymbol{k}_t \boldsymbol{k}_t^\top\big)$$：沿当前Key方向擦除历史关联，只修正该Key对应的记忆，其他历史不受影响。
+
+Gated DeltaNet：
+
+$$
+\boldsymbol{S}_t = \alpha_t \cdot \boldsymbol{S}_{t-1} \cdot \big(\boldsymbol{I} - \beta_t \boldsymbol{k}_t \boldsymbol{k}_t^\top\big) + \beta_t \boldsymbol{v}_t \boldsymbol{k}_t^\top
+$$
+
+Gated DeltaNet-2：
+
+$$
+\boldsymbol{S}_t = \big(\boldsymbol{I} - \beta_t \boldsymbol{k}_t \boldsymbol{k}_t^\top\big)\operatorname{Diag}(\boldsymbol{\alpha}_t)\boldsymbol{S}_{t-1} + \beta_t \boldsymbol{k}_t \boldsymbol{v}_t^\top
+$$
+
+这两个都添加了衰减因子，用于整体遗忘旧背景，不同之处在于前者的遗忘因子是个标量，而后者是个逐通道的对角矩阵。
+
+Kimi Delta Attention：
+
+$$
+\begin{align}
+\boldsymbol{S}_t &= \big(\boldsymbol{I} - \beta_t \boldsymbol{k}_t \boldsymbol{k}_t^\top\big)\operatorname{Diag}(\boldsymbol{\alpha}_t) \boldsymbol{S}_{t-1} + \beta_t \boldsymbol{k}_t \boldsymbol{v}_t^\top \\
+\boldsymbol{o}_t &= \boldsymbol{S}_t^\top \boldsymbol{q}_t
+\end{align}
+$$
+
+Gated DeltaNet-2先通道衰减，再局部擦除，而Kimi Delta Attention先局部擦除，再通道衰减。
+
 # RoPE
 
 ## Embedding
@@ -172,102 +225,3 @@ $$\theta_i = 10000^{-2i/d}$$
 ![](/images/img5/RoPE.png)
 
 ![](/images/img6/RoPE.jpg)
-
-目前业界对于Rope的实现有两种方式：
-
-- GPT-J sytle：原始论文的实现方式。
-
-$$\begin{bmatrix}q_m^{(1)}  \\q_m^{(2)} \\q_m^{(3)}  \\q_m^{(4)} \\{\vdots}\\q_m^{(d-1)}  \\q_m^{(d)} \\\end{bmatrix} = \begin{bmatrix}cos(m\theta_1)  \\cos(m\theta_1) \\cos(m\theta_2)  \\cos(m\theta_2) \\{\vdots}\\cos(m\theta_{d/2})  \\cos(m\theta_{d/2}) \\\end{bmatrix} \otimes\begin{bmatrix}q_m^{(1)}  \\q_m^{(2)} \\q_m^{(3)}  \\q_m^{(4)} \\{\vdots}\\q_m^{(d-1)}  \\q_m^{(d)} \\\end{bmatrix}+ \begin{bmatrix}sin(m\theta_1)  \\sin(m\theta_1) \\sin(m\theta_2)  \\sin(m\theta_2) \\{\vdots}\\sin(m\theta_{d/2})  \\sin(m\theta_{d/2}) \\\end{bmatrix} \otimes\begin{bmatrix}-q_m^{(2)}  \\q_m^{(1)} \\-q_m^{(4)}  \\q_m^{(3)} \\{\vdots}\\-q_m^{(d)}  \\q_m^{(d-1)} \\\end{bmatrix}$$
-
-- GPT-NeoX style：该方式实现高效，为目前主流的LLM模型所使用。
-
-$$\begin{bmatrix}
-q_m^{(1)} \\
-q_m^{(2)} \\
-{\vdots}\\
-q_m^{(d/2)} \\
-q_m^{(d/2+1)} \\
-{\vdots}\\
-q_m^{(d)}\\
-\end{bmatrix} = 
-
-\begin{bmatrix}
-cos(m\theta_1) \\
-cos(m\theta_2) \\
-{\vdots}\\
-cos(m\theta_{d/2}) \\
-
-cos(m\theta_1) \\
-cos(m\theta_2) \\
-{\vdots}\\
-cos(m\theta_{d/2}) \\
-\end{bmatrix}
-
-\otimes
-
-\begin{bmatrix}
-q_m^{(1)} \\
-q_m^{(2)} \\
-{\vdots}\\
-q_m^{(d/2)} \\
-q_m^{(d/2+1)} \\
-{\vdots}\\
-q_m^{(d)} \\
-\end{bmatrix}
-+
-\begin{bmatrix}
-sin(m\theta_1) \\
-sin(m\theta_2) \\
-{\vdots}\\
-sin(m\theta_{d/2}) \\
-
-sin(m\theta_1) \\
-sin(m\theta_2) \\
-{\vdots}\\
-sin(m\theta_{d/2}) \\
-\end{bmatrix} 
-
-\otimes
-\begin{bmatrix}
--q_m^{(d/2+1)}\\
-{\vdots}\\
--q_m^{(d)} \\
-q_m^{(1)} \\
-q_m^{(2)} \\
-{\vdots}\\
-q_m^{(d/2)} \\
-\end{bmatrix}$$
-
-两种实现方式在模型的表达能力上是等价的：$$Q*K^T$$的运算满足内积线性叠加性，即对于Q的行和K的列到底在哪里不关心，只要能把正确的行和列匹配上即可。
-
-因此虽然对于同一input tensor x，rope_gpt_j(x) != rope_gpt_neox(x)。但是我们可以通过对$$W_Q$$和$$W_K$$重排，得到相同的$$Q*K^T$$的结果。
-
-参考：
-
-https://spaces.ac.cn/archives/8265
-
-博采众长的旋转式位置编码
-
-https://blog.csdn.net/v_JULY_v/article/details/134085503
-
-一文通透位置编码：从标准位置编码、旋转位置编码RoPE到ALiBi、LLaMA 2 Long
-
-## RoPE的外推
-
-![](/images/img5/RoPE_2.png)
-
-两种常见的外推方法：
-
-![](/images/img5/RoPE_3.png)
-
-PI：Position Interpolation，形象的说就是增加线上点的密度。
-
-ABF：Adjusted Base Frequency，增加base旋转的角密度。
-
-https://blog.csdn.net/v_JULY_v/article/details/135072211
-
-大模型长度扩展综述：从直接外推ALiBi、插值PI、NTK-aware插值、YaRN到S2-Attention
-
-https://blog.csdn.net/v_JULY_v/article/details/137955982
-
-一文速览Llama 3及其微调：从如何把长度扩展到100万到如何微调Llama3 8B

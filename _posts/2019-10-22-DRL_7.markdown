@@ -113,6 +113,10 @@ KataGo是2019年以后发起的一个新项目，主要解决了Leela Zero和ELF
 
 https://katagotraining.org/
 
+---
+
+2026年7月，为了纪念AlphaGo和李世石对局十周年。申真谞与KataGO展开三番棋（让二子）的较量。
+
 ## Lizzie
 
 Lizzie诞生于2018年初，是程序员Annie Wagner设计的一款可加载围棋AI的图形界面程序，最初是为了实现Leela Zero的棋局实时分析功能。此后增加了对KataGo及一些其他开源围棋AI引擎的支持，可以使各种围棋AI运行在图形化界面下，方便使用者进行棋局分析。

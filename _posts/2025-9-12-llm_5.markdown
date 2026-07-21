@@ -123,6 +123,19 @@ Anthropic模型有10T参数，Google Gemini有5T参数，国内仅有1T参数。
 
 网友评论：OpenAI的小模型路线吃瘪这一点很少有人知道，这也是检验一个人了解程度的关键细节。GPT-5.5和GPT-5是完完全全不一样路线的模型。
 
+---
+
+**更大的模型，更多的专家，更稀疏的激活率**
+
+初代 MoE：2024 Mixtral，E=8、K=2
+
+2025主流国产 MoE（Qwen2.5/3、DeepSeek-V2）E=128~160，K=8
+
+2026 前沿超大 MoE（DeepSeek V3/V4、Llama4、Gemma4）
+
+- 路线A：超多专家池 + 低K激活（Llama4/Gemma4，E=128，K=2），擅长推理。
+- 路线B：超大专家池 + 中等K激活（DeepSeek V3/V4，E=256/512，K=8~16），工业级模型。
+
 # LLM Architecture
 
 https://sebastianraschka.com/blog/2025/the-big-llm-architecture-comparison.html
@@ -179,6 +192,14 @@ https://www.zhihu.com/question/1927140506573435010
 
 Kimi发布首个万亿参数开源模型K2模型，哪些信息值得关注？
 
+## Kimi K3
+
+2026.7 Kimi K3 2.8T参数。E=896，K=16。
+
+https://www.kimi.com/blog/kimi-k3
+
+K3技术报告
+
 # VLM
 
 https://zhuanlan.zhihu.com/p/702811733
@@ -191,7 +212,7 @@ Vision-Language Models (VLMs)多模态大模型一年多的进展与思考-2406
 
 该模型将视觉Token包裹在`<|vision_start|>`、`<|vision_end|>`标签内，嵌入文本Token中，实现了对于任意尺寸、数量的图片/视频的支持。
 
-此外该模型还引入了多模态旋转位置嵌入M-RoPE，以更好地处理视频中的时间信息。
+此外该模型还引入了多模态旋转位置嵌入M-RoPE（Multimodal RoPE）和Partial-RoPE，以更好地处理视频中的时间信息。
 
 https://blog.csdn.net/v_JULY_v/article/details/145560246
 

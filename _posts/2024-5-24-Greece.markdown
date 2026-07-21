@@ -153,3 +153,17 @@ https://www.zhihu.com/question/1911542496091156756
 ---
 
 ![](/images/img6/Building-Trajan-Column.jpg)
+
+---
+
+罗马男性标准三段命名体系：
+
+- Praenomen（首名 / 私名）：专属个人名字，比如‑Lucius、Gaius、Marcus，家里长辈日常称呼；
+- Nomen（族名）：氏族姓氏，如Julius、Cornelius；
+- Cognomen（家支名）：分支绰号。
+
+例：Gaius Julius Caesar。
+
+共和时代早期，贵族女子不会分配独立praenomen。女性只用父亲的Nomen的阴性形式当作自己的名字：父亲Julius → 女儿Julia；
+
+家里多位姐妹不会给各自首名，依靠序数称呼：Prima（老大）、Secunda（老二）、Tertia（老三），比如Julia Secunda只是 “尤利家第二个女儿”，并不是她专属的独立首名。

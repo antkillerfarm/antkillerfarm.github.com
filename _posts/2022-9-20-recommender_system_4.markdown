@@ -215,40 +215,6 @@ https://mp.weixin.qq.com/s/h6iBeTS992CDRixg2pFl6Q
 
 ItemCF的演进：狭义 VS 广义
 
-# 并行 & 框架 & 优化参考资源+
-
-https://mp.weixin.qq.com/s/rEHhf32L09KXGJ9bbB2LEA
-
-TensorFlow在美团外卖推荐场景的GPU训练优化实践
-
-https://zhuanlan.zhihu.com/p/522759214
-
-手把手推导分布式矩阵乘的最优并行策略
-
-https://mp.weixin.qq.com/s/_o7fzCOeuZE6qFc5gHb26g
-
-美团视觉GPU推理服务部署架构优化实践
-
-https://mp.weixin.qq.com/s/X7XG51yohLnEZ_Jg6XK9oQ
-
-Caffe作者贾扬清教你怎样打造更加优秀的深度学习架构
-
-https://zhuanlan.zhihu.com/p/529388795
-
-训练千亿参数大模型，离不开四种GPU并行策略
-
-https://mp.weixin.qq.com/s/_mrYI7McMBUx0lEh4rNiYQ
-
-百度开源移动端深度学习框架MDL，手机部署CNN支持iOS GPU
-
-https://mp.weixin.qq.com/s/ZCNSq5FC2REoVTKAK2mJQg
-
-分布式深度学习原理、算法详细介绍
-
-https://mp.weixin.qq.com/s/Ewiil56vMkzhO2xDWgo-Wg
-
-苹果发布Turi Create机器学习框架，5行代码开发图像识别
-
 # 地理+
 
 1991菲律宾皮纳图博火山爆发，这次爆发影响了两年的全球气候，导致了全球平均气温降低0.5℃，并且该火山爆发时经过菲律宾的热带气旋云雅被火山爆发形成的干热火山灰和强风切直接搞毙。皮纳图博火山爆发喷出5km3致密岩石当量（dense-rock equivalent, DRE）的火山灰和碎屑熔岩流，爆发的能量相当于6亿2千万吨TNT炸药或者48000枚广岛原子弹的威力，造成1200多人死亡，20多万人逃离家园。她向平流层喷射了2千万吨二氧化硫，减少了地球上10%的阳光，导致地球进入两年的“火山冬天”。

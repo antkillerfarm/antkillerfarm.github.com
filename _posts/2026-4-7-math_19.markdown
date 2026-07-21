@@ -9,6 +9,16 @@ category: math
 
 # 数学杂谈
 
+弹球是展示Zeno现象的最简单模型之一。一般来说，Zeno行为的特征可非正式地表示为某些混合动力系统（Hybrid System）在有限时间间隔内发生无限数量的事件。在弹球模型中，球在失去能量的同时，将以越来越小的时间间隔与地面发生多次碰撞。因此，模型会经历Zeno行为。
+
+https://ww2.mathworks.cn/help/simulink/slref/simulation-of-a-bouncing-ball.html
+
+https://blog.csdn.net/handsomeswp/article/details/109535534
+
+Python动画没有秘密
+
+---
+
 https://mp.weixin.qq.com/s/y9EZdU5hif1WT2t9fpSnFw
 
 他是20世纪最伟大的数学家之一，但这个人却并不存在（尼古拉·布尔巴基）

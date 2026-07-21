@@ -81,6 +81,14 @@ https://rubyinstaller.org/
 >ruby没有包含SSL证书，所以https的链接被服务器拒绝。   
 >解决方法很简单，首先在这里下载证书 http://curl.haxx.se/ca/cacert.pem, 然后在环境变量里设置SSL_CERT_FILE这个环境变量，并指向cacert.pem文件。
 
+另一个mirror：
+
+https://mirrors.tuna.tsinghua.edu.cn/rubygems/
+
+查看修改结果：
+
+`gem sources -l`
+
 3.安装ruby-dev
 
 在ubuntu上可以这样：

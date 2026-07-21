@@ -7,6 +7,109 @@ category: Attention
 * toc
 {:toc}
 
+# RoPE
+
+## RoPE（续）
+
+目前业界对于Rope的实现有两种方式：
+
+- GPT-J sytle：原始论文的实现方式。
+
+$$\begin{bmatrix}q_m^{(1)}  \\q_m^{(2)} \\q_m^{(3)}  \\q_m^{(4)} \\{\vdots}\\q_m^{(d-1)}  \\q_m^{(d)} \\\end{bmatrix} = \begin{bmatrix}cos(m\theta_1)  \\cos(m\theta_1) \\cos(m\theta_2)  \\cos(m\theta_2) \\{\vdots}\\cos(m\theta_{d/2})  \\cos(m\theta_{d/2}) \\\end{bmatrix} \otimes\begin{bmatrix}q_m^{(1)}  \\q_m^{(2)} \\q_m^{(3)}  \\q_m^{(4)} \\{\vdots}\\q_m^{(d-1)}  \\q_m^{(d)} \\\end{bmatrix}+ \begin{bmatrix}sin(m\theta_1)  \\sin(m\theta_1) \\sin(m\theta_2)  \\sin(m\theta_2) \\{\vdots}\\sin(m\theta_{d/2})  \\sin(m\theta_{d/2}) \\\end{bmatrix} \otimes\begin{bmatrix}-q_m^{(2)}  \\q_m^{(1)} \\-q_m^{(4)}  \\q_m^{(3)} \\{\vdots}\\-q_m^{(d)}  \\q_m^{(d-1)} \\\end{bmatrix}$$
+
+- GPT-NeoX style：该方式实现高效，为目前主流的LLM模型所使用。
+
+$$\begin{bmatrix}
+q_m^{(1)} \\
+q_m^{(2)} \\
+{\vdots}\\
+q_m^{(d/2)} \\
+q_m^{(d/2+1)} \\
+{\vdots}\\
+q_m^{(d)}\\
+\end{bmatrix} = 
+
+\begin{bmatrix}
+cos(m\theta_1) \\
+cos(m\theta_2) \\
+{\vdots}\\
+cos(m\theta_{d/2}) \\
+
+cos(m\theta_1) \\
+cos(m\theta_2) \\
+{\vdots}\\
+cos(m\theta_{d/2}) \\
+\end{bmatrix}
+
+\otimes
+
+\begin{bmatrix}
+q_m^{(1)} \\
+q_m^{(2)} \\
+{\vdots}\\
+q_m^{(d/2)} \\
+q_m^{(d/2+1)} \\
+{\vdots}\\
+q_m^{(d)} \\
+\end{bmatrix}
++
+\begin{bmatrix}
+sin(m\theta_1) \\
+sin(m\theta_2) \\
+{\vdots}\\
+sin(m\theta_{d/2}) \\
+
+sin(m\theta_1) \\
+sin(m\theta_2) \\
+{\vdots}\\
+sin(m\theta_{d/2}) \\
+\end{bmatrix} 
+
+\otimes
+\begin{bmatrix}
+-q_m^{(d/2+1)}\\
+{\vdots}\\
+-q_m^{(d)} \\
+q_m^{(1)} \\
+q_m^{(2)} \\
+{\vdots}\\
+q_m^{(d/2)} \\
+\end{bmatrix}$$
+
+两种实现方式在模型的表达能力上是等价的：$$Q*K^T$$的运算满足内积线性叠加性，即对于Q的行和K的列到底在哪里不关心，只要能把正确的行和列匹配上即可。
+
+因此虽然对于同一input tensor x，rope_gpt_j(x) != rope_gpt_neox(x)。但是我们可以通过对$$W_Q$$和$$W_K$$重排，得到相同的$$Q*K^T$$的结果。
+
+参考：
+
+https://spaces.ac.cn/archives/8265
+
+博采众长的旋转式位置编码
+
+https://blog.csdn.net/v_JULY_v/article/details/134085503
+
+一文通透位置编码：从标准位置编码、旋转位置编码RoPE到ALiBi、LLaMA 2 Long
+
+## RoPE的外推
+
+![](/images/img5/RoPE_2.png)
+
+两种常见的外推方法：
+
+![](/images/img5/RoPE_3.png)
+
+PI：Position Interpolation，形象的说就是增加线上点的密度。
+
+ABF：Adjusted Base Frequency，增加base旋转的角密度。
+
+https://blog.csdn.net/v_JULY_v/article/details/135072211
+
+大模型长度扩展综述：从直接外推ALiBi、插值PI、NTK-aware插值、YaRN到S2-Attention
+
+https://blog.csdn.net/v_JULY_v/article/details/137955982
+
+一文速览Llama 3及其微调：从如何把长度扩展到100万到如何微调Llama3 8B
+
 # BERT进阶
 
 ## UniLM
@@ -286,127 +389,3 @@ NLP这两年：15个预训练模型对比分析与剖析
 https://mp.weixin.qq.com/s/SPfa17p3QetZXCC01DwmQA
 
 解密BERT
-
-https://zhuanlan.zhihu.com/p/72805778
-
-BERT的演进和应用
-
-https://mp.weixin.qq.com/s/9YuBY0wLLVQ8ZrT9fiNICA
-
-语音版BERT？滴滴提出无监督预训练模型，中文识别性能提升10%以上
-
-https://mp.weixin.qq.com/s/OXkXjPHhaMXsKw2YevV6sw
-
-邱锡鹏：从Transformer到BERT--自然语言处理中的表示学习进展
-
-https://mp.weixin.qq.com/s/dV4RkxZOC9o2BxNi0GljKQ
-
-谷歌最强NLP模型BERT官方中文版来了！多语言模型支持100种语言
-
-https://zhuanlan.zhihu.com/p/49271699
-
-从Word Embedding到Bert模型—自然语言处理中的预训练技术发展史
-
-https://mp.weixin.qq.com/s/k_33UK1RkMyHn6TSudU6Kg
-
-详解谷歌最强NLP模型BERT
-
-https://mp.weixin.qq.com/s/d2MZQbamdo0EC_MVtf-HZA
-
-BERT详解：开创性自然语言处理框架的全面指南
-
-https://mp.weixin.qq.com/s/pD4it8vQ-aE474uSMQG0YQ
-
-两行代码玩转Google BERT句向量词向量
-
-https://mp.weixin.qq.com/s/osmUZxAAX3x-oTHYJbzemA
-
-谷歌BERT模型fine-tune终极实践教程
-
-https://mp.weixin.qq.com/s/XmeDjHSFI0UsQmKeOgwnyA
-
-小数据福音！BERT在极小数据下带来显著提升的开源实现
-
-https://mp.weixin.qq.com/s/HXYDO5PM8UIoXgEPGe8p-w
-
-图解当前最强语言模型BERT：NLP是如何攻克迁移学习的？
-
-https://mp.weixin.qq.com/s/zz3j9HEuzw5e92MQXxSQsA
-
-遗珠之作？谷歌Quoc Le这篇NLP预训练模型论文值得一看
-
-https://mp.weixin.qq.com/s/IN4YfoZnlBozwEFdhSvLZg
-
-用可视化解构BERT，我们从上亿参数中提取出了6种直观模式
-
-https://mp.weixin.qq.com/s/s1bQFdA6gtoHeeQMJKQ8UQ
-
-Bert时代的创新：Bert应用模式比较及其它
-
-https://mp.weixin.qq.com/s/zqlWx3e4LOJ3_Zy2DEbCjw
-
-从语言模型看Bert的善变与GPT的坚守
-
-https://mp.weixin.qq.com/s/LngE10Hnqe9bgFzpNfUwLQ
-
-NLP中的词向量对比：word2vec/glove/fastText/elmo/GPT/bert
-
-https://mp.weixin.qq.com/s/MgLLPEY3ynJGkuTgnIXndQ
-
-站在BERT肩膀上的NLP新秀们（PART I）
-
-https://mp.weixin.qq.com/s/nIT3GIU0dUIYyGChxsiOWw
-
-Google BERT应用之《红楼梦》对话人物提取
-
-https://mp.weixin.qq.com/s/dcp_ANYijRmicMYX7OpJmA
-
-如何用最强模型BERT做NLP迁移学习？
-
-https://mp.weixin.qq.com/s/DR4SkgOfUT7KYiaXm5NynQ
-
-跨语言版BERT：Facebook提出跨语言预训练模型XLM
-
-https://mp.weixin.qq.com/s/epjjHmlmMFhWtRO_cCUITA
-
-用BERT进行多标签文本分类
-
-https://mp.weixin.qq.com/s/Wk6gvOS_Qnud6ib1esMFXA
-
-加入Transformer-XL，这个PyTorch包能调用各种NLP预训练模型！
-
-https://mp.weixin.qq.com/s/GqqU3Ixht1BzMnQeRYQEqQ
-
-谷歌NLP深度学习模型BERT特征的可解释性表现怎么样？
-
-https://mp.weixin.qq.com/s/2f91Ksj19rk_emoFpEmPfA
-
-从BERT看大规模数据的无监督利用
-
-https://mp.weixin.qq.com/s/hF4EcKqmaTm_gemxX7Kftg
-
-BERT的嵌入层是如何实现的？
-
-https://mp.weixin.qq.com/s/CdjNQKSNuklVUsXe4InSoA
-
-FastBERT：放飞BERT的推理速度
-
-https://zhuanlan.zhihu.com/p/132361501
-
-BERT是如何分词的
-
-https://mp.weixin.qq.com/s/Tld9V1jdmWs06zNxiJNkZg
-
-BART&MASS自然语言生成任务上的进步
-
-https://mp.weixin.qq.com/s/G995ulqe6Ifxml_AJqapAw
-
-BERT在小米NLP业务中的实战探索
-
-https://www.cnblogs.com/gczr/p/12874409.html
-
-Sentence-BERT: 一种能快速计算句子相似度的孪生网络
-
-https://mp.weixin.qq.com/s/0hUNG6tC-hlfyTJtuzwU5w
-
-NLP中的Mask全解

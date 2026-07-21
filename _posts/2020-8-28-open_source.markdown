@@ -175,6 +175,14 @@ file 'input3.mkv'
 
 `ffmpeg -f concat -i filelist.txt -c copy output.mkv`
 
+6. 处理某段视频
+
+`ffmpeg -ss 1200 -t 1200 -i movie.mp4 -c:v libx264 -crf 23 -preset medium -c:a aac part_1.mp4`
+
+`-ss`: 起始时刻
+
+`-t`：持续时间
+
 参考：
 
 http://www.cnblogs.com/dwdxdy/p/3240167.html

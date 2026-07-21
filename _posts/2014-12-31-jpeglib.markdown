@@ -225,6 +225,10 @@ http://www.tinylab.org/using-qemu-simulation-inserts-the-type-system-to-produce-
 
 这两篇文章讲述如何使用qemu运行各种汇编程序和微内核。
 
+https://zhuanlan.zhihu.com/p/2058725300004033073
+
+系统模拟器QEMU深度剖析：工作原理、实战使用与gem5联合模拟
+
 # 中文编码格式
 
 常用的中文编码格式，主要包括大陆的GB系列和台湾的BIG5系列。
