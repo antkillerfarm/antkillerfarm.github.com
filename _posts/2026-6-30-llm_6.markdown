@@ -1,13 +1,125 @@
 ---
 layout: post
-title:  Large Language Model（六）——AI agent, LLM实战
+title:  Large Language Model（六）——VLM, AI agent
 category: Attention 
 ---
 
 * toc
 {:toc}
 
-# VLM（续）
+# LLM Architecture（续）
+
+## Gemma 4
+
+![](/images/img6/Gemma4.png)
+
+Per-Layer Embedding：
+
+- 常规LLM（Gemma2、LLaMA 等）只有输入头部唯一一张全局嵌入表。
+- PLE把超大词表向量存为静态只读查找表。推理阶段根据token ID，直接取出表格里预先存好的浮点向量。
+- PLE不是在模型最开头只查一次，而是每一个 Transformer 解码器层，都附带一张小型词嵌入查表。
+- 超大PLE嵌入表可以放在手机闪存（UFS/eMMC），不需要全部加载进高速NPU/RAM，用到哪个token就临时读取对应向量，宝贵的高速内存只放需要浮点计算的主干参数。
+- MoE实现**计算稀疏**，PLE实现**存储稀疏**。
+
+从Gemma4技术报告披露的消融数据可以看出，DeepMind做过稠密+PLE、MoE+传统嵌入、稠密无PLE三组对照，唯独没有公开MoE+PLE的权重，社区推测多半是收益不足以覆盖部署成本。
+
+## Qwen 3.5
+
+![](/images/img6/Qwen3.5.png)
+
+## Kimi K2
+
+![](/images/img6/LLM.jpg)
+
+官方技术报告：
+
+https://moonshotai.github.io/Kimi-K2/
+
+参考：
+
+https://www.zhihu.com/question/1927140506573435010
+
+Kimi发布首个万亿参数开源模型K2模型，哪些信息值得关注？
+
+## Kimi K3
+
+2026.7 Kimi K3 2.8T参数。E=896，K=16。
+
+https://www.kimi.com/blog/kimi-k3
+
+K3技术报告
+
+## Qwen3.8-Flash-Next
+
+2026.8 Qwen3.8-Flash-Next
+
+![](/images/img6/Qwen3.8.png)
+
+Gated Residual(GR)，参考Deepseek的mHC使用了多流残差分支，只是Qwen3不使用双随机矩阵约束而是使用门控矩阵约束。
+
+Expanded Residual (扩展残差流)：将原本单一的残差流扩展为 4条并行分支。这为模型提供了多条信息通路，类似于一个更宽的高速公路，让信息在不同层之间流动时拥有更多选择。
+
+GR Read：在每个模块（如Attention或MoE）处理前，使用一个动态的、逐元素的（element-wise）读门控（Read Gate），从4条残差分支中有选择地读取信息。这相当于一个智能的信息过滤器，决定当前模块应该重点利用哪些历史信息。
+
+GR Write：在模块处理完成后，使用一个每分支的标量写门控（Write Gate），控制模块的输出以多大比例写回到各条残差分支中。
+
+![](/images/img6/QSA.png)
+
+QSA (Qwen Sparse Attention)不直接处理单个Token，而是将序列划分为更粗粒度的微块（Micro-block）。它使用一个轻量级的Indexer来评估这些块的重要性，并只选择最重要的块进行传统的注意力计算，未选中的块则被稀疏处理。
+
+N-gram嵌入为参数扩展提供了一个独特的维度，相比混合专家（MoE）方法，它所需的计算更少，且更易于卸载（offloading）。缺点就是训练时要做一次All-to-All通信，增加了训练成本，其实更适合小模型提升极限的推理时性能。
+
+Qwen3.8-Flash-Next的N-gram Embedding部分，参考了DeepSeek的Engram，如下图所示：
+
+![](/images/img6/Engram.png)
+
+Qwen的测试结果显示，多层注入没有稳定优势，一个N-gram层已经足够。选择Layer 2还能让系统利用第一层的计算时间，从Host Memory提前读取接下来需要的向量。
+
+原本176B的模型现在变成了125B（内存）+51B（SSD）。
+
+# VLM
+
+https://zhuanlan.zhihu.com/p/702811733
+
+Vision-Language Models (VLMs)多模态大模型一年多的进展与思考-2406
+
+## Qwen 2.5-VL
+
+![](/images/img6/Qwen2.5_VL.png)
+
+该模型将视觉Token包裹在`<|vision_start|>`、`<|vision_end|>`标签内，嵌入文本Token中，实现了对于任意尺寸、数量的图片/视频的支持。
+
+此外该模型还引入了多模态旋转位置嵌入M-RoPE（Multimodal RoPE）和Partial-RoPE，以更好地处理视频中的时间信息。
+
+https://blog.csdn.net/v_JULY_v/article/details/145560246
+
+一文通透Qwen2.5 VL：从Qwen-VL、Qwen2-VL到Qwen2.5-VL
+
+## Qwen 3-VL
+
+![](/images/img6/Qwen3_VL.jpg)
+
+https://blog.csdn.net/v_JULY_v/article/details/160890094
+
+一文通透Qwen3-VL——在交错式MRoPE、DeepStack、文本时间戳对齐机制的基础上，先预训练，再后训练(即分别SFT、蒸馏、RL)
+
+## DeepSeek-OCR
+
+![](/images/img6/vision_encoder.png)
+
+当前开源VLM主要采用三类视觉编码器，如上图所示。
+
+第一类是由Vary代表的双塔架构，利用并行的SAM编码器，通过增加视觉词汇参数来实现高分辨率图像处理。该方法虽然可以控制参数量和激活内存，但存在显著缺点：需要对图像进行两次预处理，增加了部署复杂度，并使训练过程中编码器流水线并行性变得困难。
+
+第二类是以InternVL2.0为代表的分块（tile-based）方法，通过将图像分割为小块并并行处理，从而在高分辨率设置下降低激活内存消耗。虽然这种方法能够支持极高分辨率，但由于原生编码器分辨率通常较低（低于512×512），导致大尺寸图像被过度切分，产生大量视觉Token，存在明显局限性。
+
+第三类是以Qwen2-VL为代表的自适应分辨率编码，采用NaViT框架，通过基于patch的切分直接处理完整图像，无需tile并行。虽然该编码器能灵活适应多种分辨率，但在处理大尺寸图像时，会消耗大量激活内存，易导致GPU显存溢出，并且训练时序列打包需要极长的序列长度。过长的视觉Token序列会显著降低推理的预填充和生成速度
+
+如何评价DeepSeek-OCR-2模型？
+
+https://blog.csdn.net/v_JULY_v/article/details/154699042
+
+DeepSeek-OCR——上下文视觉压缩：同等长度下，通过更少的视觉token解决长上下文处理难题
 
 ## VLA
 
@@ -111,175 +223,3 @@ MCP（Model Context Protocol）由Anthropic于2024年11月推出，是一个开�
 https://zhuanlan.zhihu.com/p/1895177200665350365
 
 大白话聊一聊Tool、MCP和Agent来龙去脉
-
----
-
-2026.1
-
-最近组内开始尝试应用本地AI agent辅助编程。
-
-方案主要是Continue.dev和Cline。
-
-如果要本地部署LLM，两者都可以和Ollama框架配合使用。
-
-https://blog.csdn.net/Hank_dev/article/details/147261418
-
-AI assistant本地部署Continue.dev + Ollama + MCP Server
-
----
-
-2026.2
-
-OpenClaw最近爆火。
-
-OpenCode：一个AI编程助手。类似的还有字节的TRAE。
-
-OpenClaw：一个AI agent工具。
-
-QMD（Query Markup Documents）是一个用Rust编写的高性能本地搜索工具，旨在为个人或团队的知识库提供智能化的搜索能力，同时完全保护隐私（本地优先、无需云端服务）。
-
-QMD已被用于替代OpenClaw默认的SQLite进行记忆搜索，可以显著提升Agent在积累大量上下文后的记忆检索能力，解决传统关键词搜索无法找到概念相关，但字面不匹配内容的问题。
-
-两者代表了不同的设计哲学：
-
-- OpenClaw偏重控制力。
-- Hermes偏重自进化能力。
-
----
-
-2026.7
-
-Superpowers由Jesse Vincent开发的面向AI agent的工程化技能规范框架，目前是Cursor、Claude Code最常用的Agent增强方案。
-
-Agent主执行流程里，框架提前预留好的生命周期埋点/拦截节点，你可以在这些固定时机挂载自定义代码，实现监听、修改、拦截、校验、日志、限流、安全审计，不需要改动Agent核心ReAct循环代码，就能横向扩展能力。
-
-Main Agent遇到复杂任务时，不会自己从头到尾做完，而是把任务拆分，交给专门负责某一块的Sub Agent去独立执行，Sub Agent做完后把结果汇总返回给Main Agent。
-
-长任务容易上下文溢出、思考混乱。
-
----
-
-https://github.com/OthmanAdi/planning-with-files
-
-Manus原理
-
-https://zhuanlan.zhihu.com/p/1993358891099111451
-
-Manus核心Context技术被人做成了Skills
-
-https://www.zhihu.com/question/1991902608064005627
-
-陈天桥代季峰团队实现30B参数跑出1T性能，这对大模型发展意味着什么？
-
-https://zhuanlan.zhihu.com/p/1994124775983970078
-
-垂直领域Agent落地：为什么我放弃235B/671B，转而训练8B（一）
-
-https://zhuanlan.zhihu.com/p/1994409280238012063
-
-垂直领域Agent落地：为什么我放弃235B/671B，转而训练8B（二）
-
-# LLM实战
-
-书籍：
-
-https://jax-ml.github.io/scaling-book/
-
-How to Scale Your Model
-
----
-
-实战心得：
-
-https://pytorch.org/blog/high-performance-llama-2/
-
-https://huggingface.co/blog/zh/bloom-inference-optimization
-
-https://huggingface.co/blog/zh/bloom-megatron-deepspeed
-
----
-
-![](/images/img5/Spike.webp)
-
-训练过程中，损失偶尔会出现毛刺的情况。针对这种情况，Falcon作者会恢复到上一个最新的Checkpoint，并跳过1B Token数据继续训练。作者训练Falcon-180B时出现了9次毛刺。
-
-Google训练PaLM模型遇到了同样的问题。针对此种情况，作者会重启训练，并从毛刺之前的100个step开始，跳过200-500个Batch的数据。作者也做了消融实验，发现并不是单个数据的问题，而可能是这连续的一系列Batch数据引起的。
-
-https://mp.weixin.qq.com/s/rLJlaqI2RL7TGUEQyx-QaA
-
-万卡GPU集群实战：探索LLM预训练的挑战
-
----
-
-MFU（Model FLOPs Utilization）
-
-$$\text{MFU} = \frac{\text{model FLOPs per iteration}}{\text{GPU单卡算力} \times \text{卡数} \times \text{一次迭代时间}}$$
-
-Transformer模型的MFU计算公式：
-
-$$\text{MFU} = \frac{72blsh^2 \left(1 + \frac{s}{6h} + \frac{V}{12hl}\right)}{F \times N \times T}$$
-
-- b：批次大小（micro batch size）。
-- l：Transformer 层数。
-- s：序列长度。
-- h：隐藏层维度。
-- V：词表大小。
-- F：GPU 单卡的峰值算力（FLOPS）。
-- N：使用的 GPU 卡数量。
-- T：一次迭代时间（秒）。
-
----
-
-SOL（Speed of Light）：
-
-$$T_{\mathrm{SOL}} = \max\!\left( \frac{\text{Total FLOPs}}{\text{Compute Throughput}}, \frac{\text{Total Fused Bytes}}{\text{Memory Bandwidth}} \right)$$
-
----
-
-https://docs.swanlab.cn/zh/examples/pretrain_llm.html
-
-从零预训练一个自己的大模型
-
-PS: swanlab的文档库本身也是一个宝库，而且还是中文的。
-
-本人的魔改版本，wiki_zh dataset + Qwen tokenizer + llama 2 model：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/tree/master/python/ml/huggingface/llm_train.py
-
----
-
-在大模型训练过程中，为确保训练的稳定性与有效性，需密切关注多项关键指标以评估训练状态，其中包括但不限于perplexity (PPL)、gradient norm (GNorm)、activation norm、内存占用情况以及Loss scale等参数。
-
-梯度裁剪（Gradient Clipping）：作为一种常用的稳定训练手段，通常设定裁剪阈值为1.0，防止梯度过大引发训练不稳定。
-
-Weight Decay（L2正则化）：设置合理的权重衰减率，如0.1，有助于防止过拟合，增强模型泛化能力。
-
-特殊层的调整：GLM研究发现，embedding层往往存在较大的梯度异常情况，故需根据实际情况适度调整相关参数。
-
----
-
-正常情况下，你输入的`<think>`对大模型来说其实可以理解为`&lt;think&gt;`（三个 Token），和系统赋予的真`<think>`（一个 Token）是两码事，模型不会混淆。
-
-`<|im_start|>`和`<think>`这样的特殊Token只能由系统注入。
-
-https://www.zhihu.com/question/2038402853274915914
-
-为什么Deepseek在输入`<think `后会匹配到疑似其他对话?
-
----
-
-https://blog.csdn.net/v_JULY_v/article/details/132178447
-
-七月论文审稿GPT第1版：通过3万多篇paper和10多万的review数据微调RWKV
-
-https://blog.csdn.net/v_JULY_v/article/details/134183799
-
-七月论文审稿GPT第2版：用一万多条paper-review数据微调LLaMA2 7B最终反超GPT4
-
-https://blog.csdn.net/v_JULY_v/article/details/131552592
-
-基于LangChain+LLM的本地知识库问答：从企业单文档问答到批量文档问答
-
-https://wandb.ai/ai2-llm/OLMo-7B/reports/OLMo-7B--Vmlldzo2NzQyMzk5
-
-这个网页收录了作者训练LLM时，各项指标的变化曲线。

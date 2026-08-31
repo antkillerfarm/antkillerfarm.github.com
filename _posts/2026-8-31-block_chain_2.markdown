@@ -1,105 +1,35 @@
 ---
 layout: post
-title:  矿机江湖, 区块链参考资源
+title:  区块链（二）——区块链参考资源
 category: resource 
 ---
 
 * toc
 {:toc}
 
-# 矿机江湖
+# 币圈风云（续）
 
-傻子的共识也是共识。
+## 2026.8
 
-## 2018.9
+2019年初，在被中国限制出境的半年之后，当时已经拥有数亿美金身价的孙割同学，藏在自己包下的货车里，被包装成货物，乘着夜色经广西边境偷渡来到越南的胡志明市，并使用早就准备好的圣基茨和尼维斯护照和美国签证，彻底逃离中国，他留在国内的团队，很多人陆续被抓，不少人锒铛入狱。
 
-https://mp.weixin.qq.com/s/yyoUoIUBUPV5zkeE88P7Iw
+孙宇晨给了7500万美元保护费，买了特朗普币，然后SEC放弃起诉孙宇晨。孙宇晨找特朗普的儿子说，之前那7500万美元能不能退回来。
 
-矿机芯片：转型背后的江湖纷争与隐忧
+如果把Tether理解成一家拥有全球“数字美元”发行权的中央银行，那么TRON干的事情，就有点像是在全球美元体系下面修了一套自己的清算网络和支付高速公路。USDT负责“印钱”，TRON负责“运钱”，而TRX，则是这套高速公路上的基础燃料和通行凭证。因为USDT本身只是一张“数字美元支票”，真正决定它能不能大规模流通的，是背后的基础设施。孙宇晨抓住的恰恰就是这个环节：通过较低的交易成本、较快的确认速度以及成熟的钱包和交易所生态，让大量USDT转账逐渐集中到TRON网络上。到了今天，TRON已经承载了巨量的USDT流通，2026年第二季度，TRON上的USDT供应量一度达到约890亿美元，占全部USDT的接近一半。所以孙宇晨的实际市场身份：全球黑灰产地下银联主席。
 
-这篇文章把中国矿机界的几个主角的恩恩怨怨基本都讲了一遍，不错的江湖文章。
+全球黑灰产如果希望trx稳定运行而不至于崩塌或者毁灭，肯定是更希望孙宇晨能够更好的活着，站在我的视角来看，这也是为什么他掌握如此巨大的财富和地下权力，还能够到处抛头露面而不太惧怕被暗杀之类的。
 
-只是比特币这东西价格起起落落，2018年第一季度，比特大陆豪赚20亿美元，利润甚至超过了近年风头甚高的NVIDIA，岂料第二季度，形势急转直下，坊间甚至有比特大陆亏损6、7亿美元的传闻。
+Trx主要就是第一时间支持了USDT，那会儿USDT就两条链，一个ETH，一个TRX，然后ETH节点又慢，费率又高，所有灰产都选择了TRX链上的U。
 
-至于比特大陆的AI芯片，似乎对标的是NVIDIA的云服务领域。不是我小看比特大陆，AI芯片这东西光有钱，没有时间积累，是做不好的。
+孙宇晨第一笔金是美股，买的是特斯拉，加上他很早就喊多英伟达和存储，他美股的资金估计不会比加密货币资产低太多。
 
-## 2018.11
+https://www.zhihu.com/question/2076407501369635752
 
-http://finance.sina.com.cn/blockchain/roll/2018-11-16/doc-ihnvukff8764739.shtml
+如何看待孙宇晨最新力作《我的女友景甜》？
 
-算力之战：告诉你吴忌寒是怎么赢的 CSW是怎么输的
+https://zhuanlan.zhihu.com/p/2077413829785424347
 
-## 2019.1
-
-http://tech.sina.com.cn/i/2018-10-10/doc-ihkvrhpt4844011.shtml
-
-矿机围城里的比特大陆：研发持续落后 公司四面楚歌
-
-詹克团、吴忌寒、杨作兴
-
-## 2019.11
-
-http://finance.ifeng.com/c/7rSObfR7d0p
-
-币圈风云：比特大陆詹克团被踢下台 战争或许才刚刚开始
-
-https://mp.weixin.qq.com/s/RgH3std9f5f6sMq8fHSGjQ
-
-36岁北航校友打造中国自主AI芯片第一股！挖矿起家，6年IPO，市值百亿（嘉楠创始人及CEO张楠赓）
-
-https://mp.weixin.qq.com/s/dFI5e4f2J7R7BHZrjtiWZg
-
-涉嫌职务侵占十万元！前比特大陆矿机芯片设计总监，神马矿机创始人杨作兴被捕
-
----
-
-杨作兴2001年从清华大学核物理专业博士毕业后，先后进入了北京方舟科技、北京中星微电子、扬州稻源微电子、深圳君正时代等公司。
-
-经过一年调查，2020年底杨作兴在朋友圈宣布归来。2021年4月，比特大陆对杨作兴和比特微提起第三次诉讼。
-
-在杨作兴离开后，詹克团研发的芯片多次流片失败，一直到2019年，比特大陆的产品几乎没有迭代，比特微则在这期间陆续发布了神马M3（28nm）、M10（16nm）、M20（10nm）、M30（8nm）共4款产品，流片速度上远超比特大陆。
-
-## 2021.4
-
-短短几个月的时间，狗币的价格上涨了一百倍，屎币的价格上涨了28万倍，创造了2021年的财富神话。
-
-狗币和屎币，被币圈的人合称“狗屎双雄”。
-
-狗币，中文全称叫狗狗币，英文名叫DOGE。
-
-为了讽刺比特币，马库斯故意把狗狗币的总数设置为1200亿枚，而且每年必定增发50亿枚，数量永远膨胀，年年超发。
-
-SHIB，柴犬币，绰号狗狗币杀手，诞生的唯一目的就是为了搞死狗狗币。SHIB的发行量被定为了令所有人类都目瞪口呆的1000万亿枚。
-
-为了致敬自己的偶像V神，SHIB在发行之初，就把500万亿屎币直接发到了V神的数字地址上。至于V神是出售，还是销毁，那要看V神自己的选择。
-
-V神作为以太坊的创始人，币圈里神一样的人物，没想到如今屎币却成为了他最大的数字资产，价格远超他持有的以太币。
-
-中国也曾经兴起过一段虚拟货币热潮，也曾经诞生过不少这样的搞笑币。比如说AV币，女优币，嫩模币，韭菜币，马勒戈币。
-
-https://mp.weixin.qq.com/s/LzBsdLEaIHyfw6OyMHMyuw
-
-狗币涨112倍，屎币涨28万倍，这世界真魔幻
-
-## 2021.6
-
-https://view.inews.qq.com/wxn/20210705A0353200
-
-在闲鱼上叫卖小水电站，他们遭遇了什么？
-
-https://view.inews.qq.com/wxn/20210705A0736X00
-
-比特币矿场大逃亡：我把结婚买房的钱全投到矿场，不到一年亏光
-
-https://mp.weixin.qq.com/s/SZJxVFa3PcDRWdbt3etqaQ
-
-比特币“矿难”：当草根的财富梦碎
-
-## 2022.5
-
-https://www.zhihu.com/question/532645455
-
-LUNA跌至几乎归零，孙宇晨一天或亏上亿泰达币，赵长鹏身家缩水5736亿，如何看待币圈大逃杀？
+聊聊孙割这些年办过的身份~~
 
 ## 参考
 
@@ -352,3 +282,57 @@ https://mp.weixin.qq.com/s/c9Ix4d8NqyOFlX75e6Gnsg
 https://mp.weixin.qq.com/s/K9zSNM2SKjC0BEqoYr2U5w
 
 比特币的数据版图
+
+https://mp.weixin.qq.com/s/m9KwANPIudVesoXjejnOJA
+
+火币袁煜明：区块链的本质、意义与商业体系设计
+
+iele虚拟机, plutus-marlowe智能合约语言，hydra分片，sidechain侧链, ourobros generic共识协议，kemadelia p2p网络
+
+https://mp.weixin.qq.com/s/Z2wz5jb7k4QVf0PNCd0THg
+
+Cocos王哲：讲解COCOS区块链游戏的发展之路！
+
+https://mp.weixin.qq.com/s/iKiU_QF5y4t1KMmr6WMctw
+
+一文看懂DGames（区块链游戏）的技术架构和业务逻辑！
+
+https://mp.weixin.qq.com/s/zyU0ANfBS_JrFLNylnErUw
+
+C# 200行代码实现区块链
+
+https://mp.weixin.qq.com/s/OUfDGYdgw6XKRgaUXmog1w
+
+区块链对供应链管理的五大意义
+
+https://mp.weixin.qq.com/s/k_mYbnchN2UF0kZ_2JD4Wg
+
+教你用C++搭建一条迷你区块链！
+
+https://mp.weixin.qq.com/s/9hhUZyeax206bAsSqks-1w
+
+比特币黑客攻击手段大揭秘
+
+https://mp.weixin.qq.com/s/Xxi50rDBjrqG-7MIloZMDw
+
+浅谈区块链技术与阿里云的探索实践
+
+https://mp.weixin.qq.com/s/cxzI5oFBAUdtV6akre678w
+
+当区块链与人工智能相遇，会有怎样火花？这篇23页《Blockchain for AI》综述论文告诉你
+
+https://mp.weixin.qq.com/s/4lccUIoXrfWn_Za8xJXH-w
+
+基于tendermint实现Hyperledger Fabric的拜占庭容错排序
+
+https://mp.weixin.qq.com/s/TaHiX6uZiGt-K4Na1r7kcA
+
+社科院商法研究室赵磊：证券交易信用机制，从CSD到DLT
+
+https://mp.weixin.qq.com/s/V4PUZF7JkV9N_EkSCtql2w
+
+Facebook发币，AI大牛签署白皮书，Keras之父评价：没用
+
+https://mp.weixin.qq.com/s/DGx3Y3cu00QN-p-AjkNx7g
+
+深入剖析实现比特币减半的十五行代码

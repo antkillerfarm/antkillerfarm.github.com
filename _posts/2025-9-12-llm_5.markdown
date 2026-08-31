@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Large Language Model（五）——1M context, 大力出奇迹, LLM Architecture, VLM
+title:  Large Language Model（五）——1M context, 大力出奇迹, LLM Architecture
 category: Attention 
 ---
 
@@ -9,7 +9,46 @@ category: Attention
 
 # MoE
 
-## Expert Parallelism（续）
+## Sparse Attention
+
+MoE主要是对FFN（expert）进行稀疏化，相应的还有Sparse Attention。
+
+https://www.zhihu.com/question/12616022631
+
+DeepSeek新论文NSA注意力机制，有哪些信息值得关注？
+
+![](/images/img6/DSA.png)
+
+长上下文Transformer的核心痛点是注意力机制的$$O(L^2)$$复杂度和随之而来的显存/带宽压力。所有稀疏注意力的本质都是在回答一个问题：我们能否在不计算完整注意力矩阵的情况下，依然找到那些最重要的Key-Value对？
+
+DSA(DeepSeek Sparse Attention)的思想非常直观：增加一个极其便宜的“粗评分器”（即索引器），先对“所有历史token”做一次极轻量的打分和排序，选出Top-k个最有潜力的候选者。然后，再把“真正昂贵”的主注意力计算聚焦在这Top-k个候选者上。通过这种方式，将注意力的开销从$$O(L^2)$$近似降低到$$O(Lk)$$，其中$$k \ll L$$。
+
+https://zhuanlan.zhihu.com/p/1956149979077911247
+
+DeepSeek V3.2 Sparse Attention技术深度剖析与潜在改进
+
+## Expert Parallelism
+
+Expert-Parallel vs. Token-Parallel
+
+MoBA：Mixture of Block Attention
+
+https://github.com/deepseek-ai/DeepEP
+
+deepseek官方的EP库
+
+---
+
+PPLXAll2AllManager是vLLM为了解决Expert Parallelism场景下MoE模型的跨GPU专家tensor交换，而引入的一个通信调度器（All-to-All管理器）。
+
+DeepEPHTAll2AllManager和DeepEPLLAll2AllManager是vLLM在集成DeepEP（DeepSeek Expert Parallel）通信框架时，为MoE模型推理引入的两类分层All-to-All通信调度器。
+
+它们把原来单一的All-to-All拆成两层：
+
+- HT（High-Throughput）层——节点内GPU之间大批量、高吞吐交换；
+- LL（Low-Latency）层——节点间跨机NVLink/IB网络低延迟交换。
+
+EPLB：Expert parallelism load balancer
 
 AMD和Red Hat的实践都强调过，专家铺得越开，跨节点通信的故障半径就越大，一个节点出问题可能拖垮一片。所以生产上反而倾向于用不太大的EP组，把Prefill和Decode的路径严格隔离开。
 
@@ -136,6 +175,12 @@ Anthropic模型有10T参数，Google Gemini有5T参数，国内仅有1T参数。
 - 路线A：超多专家池 + 低K激活（Llama4/Gemma4，E=128，K=2），擅长推理。
 - 路线B：超大专家池 + 中等K激活（DeepSeek V3/V4，E=256/512，K=8~16），工业级模型。
 
+---
+
+从模型性能本身角度看，很容易注意到的是Scaling Law所对应的三者都有对应的制约因素：显卡数量，连接带宽等等有限，因而模型尺寸不能无限放大；市场耐心，商业模式限制，训练时间不能无限增长；高质量数据有限，训练数据量不能无限制增长。
+
+这也是最近三四年在做的工作：开发更大，更强超节点，使用更多的合成数据，使用更新的架构。而很容易发现的，在上面三者中，硬件最快也需要一年半迭代，而数据更是线性的缓慢增长，这两者拓展显著速度都无法满足2030 AGI这个目标。而且模型本身的膨胀也在增加硬件的负载，在MHA+Dense这个范式下不断膨胀下去，先是推理速度和成本控制不住了。
+
 # LLM Architecture
 
 https://sebastianraschka.com/blog/2025/the-big-llm-architecture-comparison.html
@@ -159,87 +204,3 @@ https://zhuanlan.zhihu.com/p/1971937330051940822
 - AVL：Audio-Vision-Language
 - E4B：E，Effective有效参数，Dense+PLE。4B，排除嵌入查表权重后，全程参与计算的参数。
 - A4B：A, Active激活参数，MoE混合专家。4B，每次token动态路由选中、临时参与计算的专家参数。
-
-## Gemma 4
-
-![](/images/img6/Gemma4.png)
-
-Per-Layer Embedding：
-
-- 常规LLM（Gemma2、LLaMA 等）只有输入头部唯一一张全局嵌入表。
-- PLE把超大词表向量存为静态只读查找表。推理阶段根据token ID，直接取出表格里预先存好的浮点向量。
-- PLE不是在模型最开头只查一次，而是每一个 Transformer 解码器层，都附带一张小型词嵌入查表。
-- 超大PLE嵌入表可以放在手机闪存（UFS/eMMC），不需要全部加载进高速NPU/RAM，用到哪个token就临时读取对应向量，宝贵的高速内存只放需要浮点计算的主干参数。
-- MoE实现**计算稀疏**，PLE实现**存储稀疏**。
-
-从Gemma4技术报告披露的消融数据可以看出，DeepMind做过稠密+PLE、MoE+传统嵌入、稠密无PLE三组对照，唯独没有公开MoE+PLE的权重，社区推测多半是收益不足以覆盖部署成本。
-
-## Qwen 3.5
-
-![](/images/img6/Qwen3.5.png)
-
-## Kimi K2
-
-![](/images/img6/LLM.jpg)
-
-官方技术报告：
-
-https://moonshotai.github.io/Kimi-K2/
-
-参考：
-
-https://www.zhihu.com/question/1927140506573435010
-
-Kimi发布首个万亿参数开源模型K2模型，哪些信息值得关注？
-
-## Kimi K3
-
-2026.7 Kimi K3 2.8T参数。E=896，K=16。
-
-https://www.kimi.com/blog/kimi-k3
-
-K3技术报告
-
-# VLM
-
-https://zhuanlan.zhihu.com/p/702811733
-
-Vision-Language Models (VLMs)多模态大模型一年多的进展与思考-2406
-
-## Qwen 2.5-VL
-
-![](/images/img6/Qwen2.5_VL.png)
-
-该模型将视觉Token包裹在`<|vision_start|>`、`<|vision_end|>`标签内，嵌入文本Token中，实现了对于任意尺寸、数量的图片/视频的支持。
-
-此外该模型还引入了多模态旋转位置嵌入M-RoPE（Multimodal RoPE）和Partial-RoPE，以更好地处理视频中的时间信息。
-
-https://blog.csdn.net/v_JULY_v/article/details/145560246
-
-一文通透Qwen2.5 VL：从Qwen-VL、Qwen2-VL到Qwen2.5-VL
-
-## Qwen 3-VL
-
-![](/images/img6/Qwen3_VL.jpg)
-
-https://blog.csdn.net/v_JULY_v/article/details/160890094
-
-一文通透Qwen3-VL——在交错式MRoPE、DeepStack、文本时间戳对齐机制的基础上，先预训练，再后训练(即分别SFT、蒸馏、RL)
-
-## DeepSeek-OCR
-
-![](/images/img6/vision_encoder.png)
-
-当前开源VLM主要采用三类视觉编码器，如上图所示。
-
-第一类是由Vary代表的双塔架构，利用并行的SAM编码器，通过增加视觉词汇参数来实现高分辨率图像处理。该方法虽然可以控制参数量和激活内存，但存在显著缺点：需要对图像进行两次预处理，增加了部署复杂度，并使训练过程中编码器流水线并行性变得困难。
-
-第二类是以InternVL2.0为代表的分块（tile-based）方法，通过将图像分割为小块并并行处理，从而在高分辨率设置下降低激活内存消耗。虽然这种方法能够支持极高分辨率，但由于原生编码器分辨率通常较低（低于512×512），导致大尺寸图像被过度切分，产生大量视觉Token，存在明显局限性。
-
-第三类是以Qwen2-VL为代表的自适应分辨率编码，采用NaViT框架，通过基于patch的切分直接处理完整图像，无需tile并行。虽然该编码器能灵活适应多种分辨率，但在处理大尺寸图像时，会消耗大量激活内存，易导致GPU显存溢出，并且训练时序列打包需要极长的序列长度。过长的视觉Token序列会显著降低推理的预填充和生成速度
-
-如何评价DeepSeek-OCR-2模型？
-
-https://blog.csdn.net/v_JULY_v/article/details/154699042
-
-DeepSeek-OCR——上下文视觉压缩：同等长度下，通过更少的视觉token解决长上下文处理难题

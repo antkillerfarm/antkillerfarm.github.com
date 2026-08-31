@@ -168,9 +168,9 @@ https://zhuanlan.zhihu.com/p/650597410
 
 图形学八股
 
-https://www.zhihu.com/answer/2046754950697564025
+https://www.zhihu.com/answer/2071296440224294709
 
-怎么用只有黑和白的点阵，让人眼看到连续的灰度？（Floyd-Steinberg抖动）
+布雷森汉姆直线算法
 
 ## 术语
 

@@ -217,10 +217,6 @@ https://www.zhihu.com/answer/2837159962
 
 如果你是泽连斯基，你如何避免爆发战争？
 
-https://zhuanlan.zhihu.com/p/598377462
-
-余波——俄乌战争对叙利亚局势的影响
-
 https://zhuanlan.zhihu.com/p/603470366
 
 俄乌战争之情报战：一名乌克兰间谍被神秘杀害的来龙去脉

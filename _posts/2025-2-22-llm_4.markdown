@@ -9,6 +9,18 @@ category: Attention
 
 # Chinchilla Law（续）
 
+6B模型可以在在12/16/24G显存的消费级显卡部署和训练。如果一个公司的模型不打算在消费级显卡部署，通常不会训6B这个规模。而且通常还会有一个1.4b或者2.8b，这个是比较适合在手机、车载端量化部署的尺寸。
+
+13B模型按照4k长度组织数据，数据并行=2，刚好占满一个8卡机，并且可以量化部署在A10甚至4090。
+
+下一档也不是130B，目前更大模型有16B、34B、52B、56B、65B、70B、100B、130B、170B、220B这几个规模，基本都是刚好占满某种规格的算力，要么是训练要么是推理。如果需要加快训练速度，只需要倍增卡数即可。比如我们训7B模型以8卡为单位，8x8卡训，70B模型以80卡为单位，80x6卡训。
+
+https://www.zhihu.com/question/627258986
+
+现在LLM的大小为什都设计成6/7B、13B和130B几个档次？
+
+---
+
 当batch size较小时，更新方向（即对真实梯度的近似）会具有很高的方差，导致的梯度更新主要是噪声。
 
 当batch size非常大时，我们从训练数据中抽样的任何两组数据都会非常相似（因为它们几乎完全匹配真实梯度）。
@@ -204,46 +216,3 @@ https://www.zhihu.com/question/1997334245450981959
 https://blog.csdn.net/v_JULY_v/article/details/160744266
 
 DeepSeek-V4——迈向百万token上下文：保留V3的MoE和多token预测机制，提出混合注意力机制(CSA/HCA)、流形约束超连接mHC(替代残差)、Muon优化器(取代AdamW)
-
-## Sparse Attention
-
-MoE主要是对FFN（expert）进行稀疏化，相应的还有Sparse Attention。
-
-https://www.zhihu.com/question/12616022631
-
-DeepSeek新论文NSA注意力机制，有哪些信息值得关注？
-
----
-
-![](/images/img6/DSA.png)
-
-长上下文Transformer的核心痛点是注意力机制的$$O(L^2)$$复杂度和随之而来的显存/带宽压力。所有稀疏注意力的本质都是在回答一个问题：我们能否在不计算完整注意力矩阵的情况下，依然找到那些最重要的Key-Value对？
-
-DSA(DeepSeek Sparse Attention)的思想非常直观：增加一个极其便宜的“粗评分器”（即索引器），先对“所有历史token”做一次极轻量的打分和排序，选出Top-k个最有潜力的候选者。然后，再把“真正昂贵”的主注意力计算聚焦在这Top-k个候选者上。通过这种方式，将注意力的开销从$$O(L^2)$$近似降低到$$O(Lk)$$，其中$$k \ll L$$。
-
-https://zhuanlan.zhihu.com/p/1956149979077911247
-
-DeepSeek V3.2 Sparse Attention技术深度剖析与潜在改进
-
-## Expert Parallelism
-
-Expert-Parallel vs. Token-Parallel
-
-MoBA：Mixture of Block Attention
-
-https://github.com/deepseek-ai/DeepEP
-
-deepseek官方的EP库
-
----
-
-PPLXAll2AllManager是vLLM为了解决Expert Parallelism场景下MoE模型的跨GPU专家tensor交换，而引入的一个通信调度器（All-to-All管理器）。
-
-DeepEPHTAll2AllManager和DeepEPLLAll2AllManager是vLLM在集成DeepEP（DeepSeek Expert Parallel）通信框架时，为MoE模型推理引入的两类分层All-to-All通信调度器。
-
-它们把原来单一的All-to-All拆成两层：
-
-- HT（High-Throughput）层——节点内GPU之间大批量、高吞吐交换；
-- LL（Low-Latency）层——节点间跨机NVLink/IB网络低延迟交换。
-
-EPLB：Expert parallelism load balancer

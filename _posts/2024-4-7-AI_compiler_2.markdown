@@ -135,6 +135,16 @@ Google有个pallas项目，也就是jax版的triton。
 
 类似的DSL还有Tilelang, CuTeDSL, Mojo, helion, cuTile等。
 
+CUDA：
+
+```kernel<<<grid, block>>>(args)```
+
+Triton:
+
+```kernel[grid](args)```
+
+Triton采用的是“块级编程（Block-wise programming）”范式，你只需要关心每个Program处理多少数据。Triton编译器会根据你指定的BLOCK_SIZE以及底层GPU的硬件特性（如寄存器数量、Shared Memory大小），自动生成并优化底层的CUDA Thread Block配置（即自动决定需要多少个Warp和Thread）。
+
 ---
 
 Triton的目标是只考虑在CUDA生态下的优化，直接考虑要解决的问题就是Pre Fetching，访存合并，Shared Memory的分配与同步，完全放弃了硬件中立。

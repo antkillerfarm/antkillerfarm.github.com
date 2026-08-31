@@ -133,6 +133,8 @@ https://zhuanlan.zhihu.com/p/704143990
 
 在一篇充斥着粗口的内容中，阿纳斯塔西娅指责丈夫的年轻女粉丝们，称她们用PS将自己P进家庭合影中代替她，并公然分享对丈夫费多罗夫的性幻想。
 
+我翻开《费多罗夫列传》一查，这列传没有野心，歪歪斜斜的每页上都写着“保家卫国”几个字。我横竖睡不着，仔细看了半夜，才从字缝里看出字来，满本都写着的四个字是“我要当官”!
+
 ---
 
 医生来见罗戈津：有一个好消息，一个坏消息，您想听哪个？
@@ -166,23 +168,3 @@ https://www.zhihu.com/answer/3546126630
 https://www.zhihu.com/question/548394612
 
 俄罗斯和乌克兰到底谁的新纳粹更多？说乌克兰有纳粹是五十步笑百步还是百步笑五十步？
-
-## 泽连斯基语录
-
-永远记住：乌克兰在这个敌人出现之前就有，乌克兰将在他之后还会继续存在。
-
-我们不是夹在兽人和精灵之间的边缘地带。 -- by 瓦夏
-
-我在这里。我们没有放下武器。我们将保卫我们的国家。
-
-The fight is here. I need ammunition, not a ride.
-
-The fate of Ukraine depends only on Ukrainians. No one but ourselves will control our lives.
-
-我命由我不由人，乌克兰的命运只能由乌克兰人民抉择。
-
-No one but ourselves can guarantee security.
-
-When you attack us, you will see our faces, not our backs.
-
-Without gas or without you? – The answer is without you. Without electricity or without you? – Without you. Without water or without you? – Without you. Without food or without you? – Without you.

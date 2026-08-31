@@ -185,9 +185,9 @@ https://zhuanlan.zhihu.com/p/2018989916856546385
 
 乌克兰突然发起反攻，在埃隆·马斯克的帮助下
 
-https://www.zhihu.com/pin/2071013654695260628
+https://zhuanlan.zhihu.com/p/2071909387141132850
 
-空降突击部队集群在亚历山德里夫卡方向（Oleksandrivka direction）恢复了对26个居民点的控制
+乌军在亚历山德里夫卡方向的进攻：目前已知情况及前景如何
 
 ---
 

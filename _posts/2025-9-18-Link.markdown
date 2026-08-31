@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GPU通信技术, 光通信
+title:  Link（一）——GPU通信技术, 光通信
 category: Chip 
 ---
 

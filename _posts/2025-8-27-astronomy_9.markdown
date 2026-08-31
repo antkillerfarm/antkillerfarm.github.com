@@ -1,13 +1,163 @@
 ---
 layout: post
-title: 天文（九）——空间站, 天文杂谈（1）
+title: 天文（九）——阿波罗50年, 空间站
 category: Nature 
 ---
 
 * toc
 {:toc}
 
-# 阿波罗50年（续）
+# 火星探测（续）
+
+https://mp.weixin.qq.com/s/WGHGXWghWhwcA0tux9bz0g
+
+想去火星旅游，记得看看天气预报
+
+https://mp.weixin.qq.com/s/xqBhOAMIs8dONwhgIHZOgQ
+
+火星探测成功率不足50%，人类何时能圆梦？
+
+https://mp.weixin.qq.com/s/25BnV608F7DhIdRWGURBvQ
+
+机智号火星首飞成功！30秒惊险悬停，创造“莱特星球时刻”
+
+https://mp.weixin.qq.com/s/uZofW1nPuu5MNhe9i-CRhA
+
+火星有了第一个机场！人类首架火星无人机试飞成功，场地命名“莱特兄弟机场”
+
+https://mp.weixin.qq.com/s/2nJP3oxgb_AK1P09MCWkTQ
+
+移居火星前，人类需要关注哪些健康风险？
+
+https://mp.weixin.qq.com/s/LNq09_wUKF6dfMrrcSgV-Q
+
+中国火星车即将着陆火星乌托邦平原！
+
+https://mp.weixin.qq.com/s/1W4JcHcO9ZuJnolv05Crvg
+
+中国火神踏上火星！祝融号火星车着陆火星十大问题详解
+
+https://mp.weixin.qq.com/s/DdQoBUgl6kdtrM70FgVGrw
+
+天问一号成功着陆！它是如何到达火星的?
+
+https://mp.weixin.qq.com/s/hSY4rBhCkJDoLlo8Nzmm9Q
+
+天问一号成功着陆！
+
+https://mp.weixin.qq.com/s/mpeHNXktuH9aMxz1Eu6gCw
+
+生活不只眼前的“北上广”，还有诗和火星
+
+https://mp.weixin.qq.com/s/uvSeg8KnPTj_4au_B3WXBw
+
+一文拆解中国火星车着陆全程
+
+https://mp.weixin.qq.com/s/_s7XcEz6Ft6eGXxZOUeSVg
+
+火星上存在真菌吗？
+
+https://mp.weixin.qq.com/s/nPL84Xydqdm4UGYK6AeCvA
+
+“祝融号”登陆火星：人类为何非要去那里？
+
+https://mp.weixin.qq.com/s/5Hg1nSRPSrm0-ZBphX2ToA
+
+明明地球资源无限，中国天问一号为什么要登陆火星
+
+https://mp.weixin.qq.com/s/jtPCA4sgLSY07Cqh7K_aIg
+
+国家航天局发布天问一号着陆过程 两器分离和落火影像
+
+https://mp.weixin.qq.com/s/9b618Vc_Y5EgkCYFmfUYFA
+
+这几天，祝融号到底在忙啥呢？
+
+https://mp.weixin.qq.com/s/w0EyZwI7lF3ztNXFx5MtTQ
+
+听说火星上风很大，那祝融号可以用风力发电吗？
+
+https://www.zhihu.com/question/464412564
+
+国家航天局发布火星探测任务首批科学影像图，照片中有哪些信息可以关注？
+
+https://mp.weixin.qq.com/s/B5h5yZ9unpIAD8dR3KG1yw
+
+来自火星的声音！天问一号系列实拍影像发布
+
+https://mp.weixin.qq.com/s/tqs5JtYBFedVofWlgbJ3kg
+
+“天问一号”即将失联？别担心，一切尽在掌控
+
+# 阿波罗50年
+
+https://mp.weixin.qq.com/s/79e6p2TYpttO-NR1of21jw
+
+月之梦的起源
+
+https://mp.weixin.qq.com/s/QtvKdwbuzUJICjdKbcPIlg
+
+登月究竟是真是假？
+
+https://view.inews.qq.com/a/TEC201907170006770C
+
+别误会，那个经典的月球脚印不是阿姆斯特朗的（巴兹·奥尔德林）
+
+https://mp.weixin.qq.com/s/OdMaaP_gE1rR_rd14LfA9w
+
+战争与登月的渊源
+
+https://mp.weixin.qq.com/s/YRJpHvlEulfBFm8HpBYBZQ
+
+苏联开启的登月序曲
+
+https://mp.weixin.qq.com/s/v3HNhV08vWYPGdeXAZ47ag
+
+月球来到你身边
+
+https://view.inews.qq.com/a/TEC2019072100124408
+
+一文俯瞰从阿波罗1号到17号全舰队
+
+![](/images/img3/Apollo11_AnnotatedHero.jpg)
+
+https://mp.weixin.qq.com/s/Y1hQJHFB5InSZNB2T2KfVw
+
+10万镜子反射月光，组成3.6平方公里巨幅头像，谷歌花式纪念登月50年
+
+https://mp.weixin.qq.com/s/d6nmsH10qchY1pP8CibiBA
+
+跌跌撞撞的美国
+
+https://mp.weixin.qq.com/s/-KHsG9lZknY952U_LTV7qg
+
+天气太热了，我们去太阳系度假吧
+
+https://mp.weixin.qq.com/s/EPMdW1qxQVl0MVUSjhWxyQ
+
+NASA传奇数学家去世，她曾笔算了登月轨道
+
+https://mp.weixin.qq.com/s/1Jm00gCel41frG43oT9yyA
+
+他是探月英雄，但没登上过月球（Michael Collins）
+
+https://www.zhihu.com/question/423138570
+
+火星车网速只有34Kb/s，当年老美怎么进行的登月直播呢？
+
+---
+
+由于飞行前的制造和测试错误，氧气罐中的电线暴露了出来。在那个致命的夜晚，氧气罐中暴露的电线产生的火花引发了火灾，引爆了氧气罐，将服务舱外的隔热层炸飞。。。
+
+萨巴蒂尔反应器：
+
+$$\ce{4H2 + CO2 ->[催化剂] 2H2O + CH4}$$
+
+https://mp.weixin.qq.com/s/NmS1dbeIsQomsWYI8-OyZg
+
+阿波罗13号“伟大失败”50周年，NASA发布纪录片追忆奥德赛号逃生往事
+
+---
 
 ![](/images/img3/india_moon.jpg)
 
@@ -88,68 +238,6 @@ https://www.zhihu.com/question/54009933
 https://www.zhihu.com/question/638917246
 
 北斗七星都是些什么恒星？它们分别有多大？距离地球有多远？
-
----
-
-1928年10月25日，一位旅美求学的中国青年在美国叶凯士天文台发现一颗小行星（临时编号为1928 UF），这是第一颗由中国人发现的小行星。这位青年学子感怀祖国，随即将其命名为中华星（1125 China）。
-
-不久，青年回国效力，成为中国现代天文学的拓荒者之一，但却再也没找到这颗小行星的踪迹。直到1957年10月30日，青年在紫金山天文台发现了一颗轨道酷似1125的小行星。
-
-虽后经证实这颗小行星并非1125，但20年后的1977年，当这颗小行星的轨道被精确确定后，国际小行星命名委员会破例将“1125 China”给了这颗新发现的小行星。而原本以为失踪了的1125号小行星，却在1986年被再次观测到，并于1988年被重新命名为中国星（3789 zhongguo）。
-
->张钰哲，1902～1986，芝加哥大学博士（1929），中国近代天文学的奠基人。中国科学院院士。紫金山天文台台长。1941年9月21日，在战时极端困难的条件下，他组织了中国境内第一次日全食的科学观测，拍摄了中国境内第一张日全食照片和第一部日全食彩色影片。
-
-https://mp.weixin.qq.com/s/0zlHeZsr_gVNoaufr_--Hw
-
-给飞过头顶的星星起个响当当的名字
-
-https://zhuanlan.zhihu.com/p/61467796
-
-抗日时期，中国人完成哪些不可能做到的壮举？
-
----
-
-巴纳德星（Barnard's Star）是一颗距离地球约6光年的红矮星，位于蛇夫座，是太阳系外第二近的恒星系统，仅次于半人马座α三合星系统。它的质量仅为太阳的14%–17%，半径约为太阳的1/5，亮度不足太阳的0.4%，肉眼无法看见。这颗星由美国天文学家爱德华·巴纳德于1916年发现。年龄估计在70亿至120亿年之间，比太阳老得多。
-
----
-
-1990年发射的哈勃太空望远镜，由于一片镜片边缘磨薄了2.2mm，相机镜头misallignment, 最终导致发射后拍摄图像模糊。
-
-NASA的科学家开始没有意识到是望远镜的镜头质量问题，还在讨论是不是外太空就是模模糊糊的形态……
-
-后来相机工程师发现了是由于一个镜片零件生产误差造成的问题，花了3年时间在太空修复了这个问题，避免了重新发射，为NASA节省了47亿美元。科学家终于能拍到清晰的太空图像了。
-
-另一个已于2020年退役的太空红外望远镜斯皮策空间望远镜（Spitzer Space Telescope）覆盖波长为3-180微米，但其镜面直径仅为0.85米，观测能力有限。
-
-20年代三大空间巡天望远镜——载人空间站工程巡天空间望远镜（Chinese Survey Space Telescope, 简称CSST，亦被称为Chinese Space Station Telescope）、欧洲航天局的欧几里得（Euclid）和美国航天局的罗曼太空望远镜（Roman Space Telescope）。
-
-https://mp.weixin.qq.com/s/Wcd_bv_bt-xv42UD40dDww
-
-深度传感进化史
-
-https://mp.weixin.qq.com/s/8vRFfFLdLWSPpTzHjUKegQ
-
-哈勃太空望远镜30岁生日快乐！我们看到的宇宙因你而不同
-
-https://www.zhihu.com/question/452589619
-
-中国空间站工程巡天望远镜和哈勃相比有什么优势和劣势？
-
-https://www.zhihu.com/question/363427886
-
-很多人说哈勃望远镜是锁眼卫星的民用版，那么锁眼调转过去观测宇宙能够达到哈勃的效果吗？
-
-https://zhuanlan.zhihu.com/p/36125534
-
-哈勃28周岁，但大家知道锁眼么？
-
-https://mp.weixin.qq.com/s/DFUMQ08Efr5iJJJlRthsOA
-
-这将是中国有史以来最昂贵、也最先进的望远镜（巡天空间望远镜）
-
-https://mp.weixin.qq.com/s/k1v-sDi0x1pRDZsHcDRTpA
-
-雄心勃勃，中国建造首个大型太空光学望远镜
 
 ---
 

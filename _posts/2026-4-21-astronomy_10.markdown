@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 天文（十）——天文杂谈（2）
+title: 天文（十）——天文杂谈（1）
 category: Nature 
 ---
 
@@ -8,6 +8,68 @@ category: Nature
 {:toc}
 
 # 天文杂谈
+
+1928年10月25日，一位旅美求学的中国青年在美国叶凯士天文台发现一颗小行星（临时编号为1928 UF），这是第一颗由中国人发现的小行星。这位青年学子感怀祖国，随即将其命名为中华星（1125 China）。
+
+不久，青年回国效力，成为中国现代天文学的拓荒者之一，但却再也没找到这颗小行星的踪迹。直到1957年10月30日，青年在紫金山天文台发现了一颗轨道酷似1125的小行星。
+
+虽后经证实这颗小行星并非1125，但20年后的1977年，当这颗小行星的轨道被精确确定后，国际小行星命名委员会破例将“1125 China”给了这颗新发现的小行星。而原本以为失踪了的1125号小行星，却在1986年被再次观测到，并于1988年被重新命名为中国星（3789 zhongguo）。
+
+>张钰哲，1902～1986，芝加哥大学博士（1929），中国近代天文学的奠基人。中国科学院院士。紫金山天文台台长。1941年9月21日，在战时极端困难的条件下，他组织了中国境内第一次日全食的科学观测，拍摄了中国境内第一张日全食照片和第一部日全食彩色影片。
+
+https://mp.weixin.qq.com/s/0zlHeZsr_gVNoaufr_--Hw
+
+给飞过头顶的星星起个响当当的名字
+
+https://zhuanlan.zhihu.com/p/61467796
+
+抗日时期，中国人完成哪些不可能做到的壮举？
+
+---
+
+巴纳德星（Barnard's Star）是一颗距离地球约6光年的红矮星，位于蛇夫座，是太阳系外第二近的恒星系统，仅次于半人马座α三合星系统。它的质量仅为太阳的14%–17%，半径约为太阳的1/5，亮度不足太阳的0.4%，肉眼无法看见。这颗星由美国天文学家爱德华·巴纳德于1916年发现。年龄估计在70亿至120亿年之间，比太阳老得多。
+
+---
+
+1990年发射的哈勃太空望远镜，由于一片镜片边缘磨薄了2.2mm，相机镜头misallignment, 最终导致发射后拍摄图像模糊。
+
+NASA的科学家开始没有意识到是望远镜的镜头质量问题，还在讨论是不是外太空就是模模糊糊的形态……
+
+后来相机工程师发现了是由于一个镜片零件生产误差造成的问题，花了3年时间在太空修复了这个问题，避免了重新发射，为NASA节省了47亿美元。科学家终于能拍到清晰的太空图像了。
+
+另一个已于2020年退役的太空红外望远镜斯皮策空间望远镜（Spitzer Space Telescope）覆盖波长为3-180微米，但其镜面直径仅为0.85米，观测能力有限。
+
+20年代三大空间巡天望远镜——载人空间站工程巡天空间望远镜（Chinese Survey Space Telescope, 简称CSST，亦被称为Chinese Space Station Telescope）、欧洲航天局的欧几里得（Euclid）和美国航天局的罗曼太空望远镜（Roman Space Telescope）。
+
+https://mp.weixin.qq.com/s/Wcd_bv_bt-xv42UD40dDww
+
+深度传感进化史
+
+https://mp.weixin.qq.com/s/8vRFfFLdLWSPpTzHjUKegQ
+
+哈勃太空望远镜30岁生日快乐！我们看到的宇宙因你而不同
+
+https://www.zhihu.com/question/452589619
+
+中国空间站工程巡天望远镜和哈勃相比有什么优势和劣势？
+
+https://www.zhihu.com/question/363427886
+
+很多人说哈勃望远镜是锁眼卫星的民用版，那么锁眼调转过去观测宇宙能够达到哈勃的效果吗？
+
+https://zhuanlan.zhihu.com/p/36125534
+
+哈勃28周岁，但大家知道锁眼么？
+
+https://mp.weixin.qq.com/s/DFUMQ08Efr5iJJJlRthsOA
+
+这将是中国有史以来最昂贵、也最先进的望远镜（巡天空间望远镜）
+
+https://mp.weixin.qq.com/s/k1v-sDi0x1pRDZsHcDRTpA
+
+雄心勃勃，中国建造首个大型太空光学望远镜
+
+---
 
 https://mp.weixin.qq.com/s/aY4gFbK_aKWcgwvr0Rk5gQ
 
@@ -29,248 +91,41 @@ https://zhuanlan.zhihu.com/p/330003494
 
 理论预测大爆炸产生的锂元素应当是观测结果的三倍，然而我们没有找到；理论认为暗物质应该聚集在星系中心，但我们发现均匀分布在星系全部。
 
+# 生物+
+
+孔子周游列国途中住在陈国，有一天，陈国宫廷里忽然落下一只隼，一头栽到地上死了。鸟的身上贯穿着一支形制非常原始的箭，是用楛木做的杆，石头做的箭头，一看就不是中原地区会有的东西。
+陈闵公大惑不解，于是派使者去向博学多知的孔子请教，孔子对使者解释说，这只隼是从很遥远的地方而来，箭是肃慎部落的石箭，从前武王曾赐给陈国一支石箭，如今还收藏在府库里，如果不信可以去对照一下。陈闵公让人到府库中去找，果然发现了和隼鸟身上一模一样的肃慎石箭。
+
+肃慎是我国东北地区的一个古老部族，陈国都城则在今河南淮阳，两地相距好几千里，一只鸟在东北中了一箭，还能带着伤飞几千里才体力不支而死，这事怎么看都像是编的，然而这却极有可能是一个真实事件。
+
+1822年夏天，在德国北部罗斯托克附近，人们在农田里捕获了一只白鹳，这只白鹳就像上面故事里的那只一样，身上贯穿着一支长达76厘米、形制同样原始的长箭，而经过鉴定，发现这竟是几千公里外的非洲土著部落才会用的武器。
+
+原来白鹳是一种候鸟，春夏季生活在欧洲，天冷后则飞去遥远的非洲过冬，而这只倒霉的白鹳就是在非洲过冬时不小心中了一箭，但因为没有伤及要害，所以竟坚强地又飞回了欧洲。它不仅带来一个关于生命的奇迹，同时也破解了一个谜题——当时的欧洲人不知道白鹳是候鸟，传说到了冬天白鹳就会躲起来冬眠，直到发现了这只带着非洲土特产的白鹳，人们才知道这种鸟会迁徙这么远。
+
 ---
 
-https://mp.weixin.qq.com/s/xo9aRt5rAX7bWeK4jwmkXA
+7只野生朱鹮是1981年才在陕西洋县发现的，此后中国各地都是从陕西引种的。也就是说，现在所有的朱鹮都是这7只鸟的后代。
 
-月球能承载多少人类生存？
+猎豹的基因多样性非常少，少到猎豹任意个体间进行器官移植都不会发生排异反应。
 
-https://mp.weixin.qq.com/s/1L10R2c7wCTYFYcxPKiRtA
+科学家推测：猎豹差一点点灭绝了，可能像朱鹮一样就剩下一个种群10来只苟了下来。
 
-彗星怎么拖了个长长的尾巴？
+真正的纯血马：父亲+女儿，母亲+儿子，祖父+孙女，祖母+孙子等直系亲属马交配产生的后代。
 
-https://mp.weixin.qq.com/s/Qld7bVs9ASJ23vAhE0h7_w
+初中生物学回交这个概念的时候大家都惊呆了，老师说动物就不用考虑伦理神马的了。
 
-日月星辰如何指引着中国人前行？（中国古代天文学）
+https://www.zhihu.com/question/492359254
 
-https://cooltowel.github.io/2018/04/16/%E5%9B%BD%E9%99%85%E5%A4%A9%E7%90%83%E5%8F%82%E8%80%83%E7%B3%BB%E7%BB%9F%E2%80%94%E2%80%94ICRS%20%E7%AE%80%E4%BB%8B/
+朱鹮从七只繁衍到几千只，如此严重的近亲繁殖为什么没有在朱鹮中群内产生显著遗传病？
 
-国际天球参考系统——ICRS简介
+---
 
-https://mp.weixin.qq.com/s/hBAWo8Zsgjm0svYv_UG1jw
+马陆（Millipede）又称千足虫，是倍足纲（Diplopoda）超过12000种已知物种的统称。
 
-一场历经数百万年的瘦身记
+蜈蚣（Centipede）是唇足纲（Chilopoda ）超过8000种已知物种的统称。
 
-https://mp.weixin.qq.com/s/REzPDwfZbqz-RneOZZmvUQ
+马陆：身体圆筒状，触角短，一对体节两对足
 
-青海火球事件——“肇事者”身份调查
+蜈蚣：身体扁，触角长，一对体节一对足
 
-https://mp.weixin.qq.com/s/NKzv2VpVDaJ_gSDl_L7FHA
-
-太阳，我们来了！
-
-https://mp.weixin.qq.com/s/lHc8w6wn3Tm6ZD5PPw0TFQ
-
-宇宙7问
-
-https://mp.weixin.qq.com/s/epb4AIyg8_OqjAgGEbB9Ag
-
-31年前的北美大停电 背后的神秘力量是谁？（太阳风暴）
-
-https://mp.weixin.qq.com/s/oTltrhF25ClrImp6KUlagw
-
-他俩曾和鸽子较劲，却歪打正着获得诺奖（阿诺·彭齐亚斯（Arno Penzias）和罗伯特·威尔逊（Robert Wilson）——宇宙微波背景）
-
-https://mp.weixin.qq.com/s/O5L7hvg1WXJpbwKvaY880w
-
-捕手LAMOST与高速星的故事
-
-https://mp.weixin.qq.com/s/oU6KRPwuj9SJOLEYHNmE9A
-
-巨石来自外星球？是你来自外太空！
-
-https://mp.weixin.qq.com/s/5JLSuv54Xyt_Fcg_Ps1Rsg
-
-最古老、最遥远、最明亮...
-
-https://mp.weixin.qq.com/s/eO71ulxgc-Fdx8KtMf7CXg
-
-40多年前美国赠送给我国1克月岩样品，背后有怎样的故事？
-
-https://mp.weixin.qq.com/s/vxTJf4pwpB3a2lqtx4fQ6g
-
-万家灯火，有你守护！我是如何拍到这次陆基中段反导试验靶弹发射的？
-
-https://mp.weixin.qq.com/s/wDhmqd2u56xJb3wcQHTW_g
-
-260年前，一个不同寻常的新年（日月同升，五星联珠）
-
-https://mp.weixin.qq.com/s/6syX6eZ3l0qnH47GL8iulg
-
-ASO-S卫星流浪计划：一起揭秘太阳磁场的秘密
-
-https://mp.weixin.qq.com/s/KFO1ar8awQ7Xl2Iam2iLEA
-
-如果没有磁场，太阳将变得枯燥无味
-
-https://mp.weixin.qq.com/s/4x9dfPsrUaXlE8_vxri7jg
-
-火箭发射失利后，一封初中生的信冲上热搜！
-
-https://mp.weixin.qq.com/s/oP5prD-KuxI8CNVo16arVQ
-
-1994年，木星曾帮地球抗下了21波灭星级打击（苏梅克-列维九号彗星）
-
-https://mp.weixin.qq.com/s/Sija998_IKP2G0GQEYynCw
-
-知否知否，月球种菜可否？
-
-https://mp.weixin.qq.com/s/rvH-gvgbjLITyP8QOuzgKA
-
-我们在新疆发现了一个建天文台的好地方
-
-https://mp.weixin.qq.com/s/03FiFl8hK8Ilbe0Amh278A
-
-发射至今44年，已飞出日球顶层的旅行者1号仍在回传数据！是如何实现的？
-
-https://mp.weixin.qq.com/s/BsAbS1QadPcBDqHYr7eiQA
-
-你绝对没见过的4种天气
-
-https://mp.weixin.qq.com/s/nrjY7LOY_XuytJ2xXk3K1Q
-
-来自星际空间的持续信号
-
-https://zhuanlan.zhihu.com/p/375675282
-
-美国超级工程，核弹炸月球
-
-https://mp.weixin.qq.com/s/I7iLRXWAttIomGp-ra61AA
-
-日冕观测进化史：日食太少，我们就造一个出来
-
-https://mp.weixin.qq.com/s/rBFmWjHDOcdUz3uKQ3HqMA
-
-宇宙的数字
-
-https://mp.weixin.qq.com/s/nCSgobpyy4-U9z1ycMXg0g
-
-在美丽的稻城，我们建了一个漂亮的“天阵”，它的名字叫拉索
-
-https://mp.weixin.qq.com/s/xfJ_EiAoW0i_k_zUWHoQTQ
-
-先磕为敬！你们两颗星星为什么这么浪漫这么甜？（冥王星和卡戎）Charon是冥王的船夫，负责将逝者摆渡过冥河。
-
-https://mp.weixin.qq.com/s/nzoE3EYOhwfg-D7Uz5PyxQ
-
-太阳观测的新窗口
-
-https://mp.weixin.qq.com/s/PrsKjWC9YC2mRE1pI1dFCg
-
-杨利伟被文盲编辑坑了？《地月同辉》考
-
-https://mp.weixin.qq.com/s/MWNhWTTef4L7RGz-340kuQ
-
-人工智能，如何“拯救”不堪重负的天文学家？
-
-https://mp.weixin.qq.com/s/rF42Dmj3_PcGsOj17am7VA
-
-我们的坐标，已经被2000多颗星星熟知
-
-https://mp.weixin.qq.com/s/LnNRNKqecwJyUtrKS1HfkQ
-
-脉冲星研究
-
-https://mp.weixin.qq.com/s/pJQnMZthdNIQEi0jqwliHg
-
-木星持续“发烧”的幕后推手找到了，原来是它！
-
-https://mp.weixin.qq.com/s/LsNhcqXFDg5qTbsQI2a95Q
-
-在不同的世界，我们会看到…
-
-https://mp.weixin.qq.com/s/bwfRBCiLJqNZBxrZDpjcEQ
-
-天文学家与野生动物的爱恨情仇
-
-https://www.zhihu.com/question/25663240
-
-为何说银河系的中央是巨大的黑洞？
-
-https://www.zhihu.com/question/28099598
-
-怎样测量天体的质量?
-
-https://www.zhihu.com/question/555779002
-
-美宇宙飞船成功将小行星撞离原运行轨道，这一任务具有怎样的意义？实现起来技术难度有多大？
-
-https://mp.weixin.qq.com/s/cllhuj8m3RmG_JE7QrG4Uw
-
-生的伟大，死的光荣——致敬卡西尼号土星探测器
-
-https://mp.weixin.qq.com/s/sg24WvUClEZnLxhJio0BuQ
-
-被磨难环绕的“伽利略号”的一生
-
-https://mp.weixin.qq.com/s/ros-kBOIgTgQF2SaGc99qQ
-
-哈佛名镜的前世今生
-
-https://mp.weixin.qq.com/s/DKMs8sZtE_JzWaxr8o-DWA
-
-你好，冥王星
-
-https://mp.weixin.qq.com/s/sv6McqKzoqJ3snUeDvFfwg
-
-这地儿跟中国一个时区，你却从来没听说过？这个blog介绍了西澳大学和它的天文学成就。
-
-https://mp.weixin.qq.com/s/EZWl8UwhiAkIXWkWE0abUQ
-
-半个世纪的角逐：二战后的国际脉冲星搜寻竞赛
-
-https://mp.weixin.qq.com/s/tmSL5NIyjBpivtbGpbdKqQ
-
-威廉·赫歇尔：我一个德国音乐家，怎么就跑到英国当了天文学家？
-
-https://mp.weixin.qq.com/s/R2Hco-nE-e0S_gmTSImrAA
-
-它曾“超长待机”俯瞰地球，最终在“回家”路上粉身碎骨
-
-https://mp.weixin.qq.com/s/yD3THPdd1rvx3oqBF1tayQ
-
-那个提出“戴森球”的物理学家去世了（Freeman Dyson）
-
-https://mp.weixin.qq.com/s/3dByllGuY9fsvUjoy7fPwg
-
-戴森传奇
-
-https://mp.weixin.qq.com/s/5NyYCE1vt99i2O_r-ThAGA
-
-下一次去哪？金星、木卫一，还是海卫一？
-
-https://mp.weixin.qq.com/s/lNh3jxjvRbpZ3zZYSZuOVg
-
-曾为地球“挺身而出”的磁场
-
-https://mp.weixin.qq.com/s/6acgwIaDYC3VjMmdVSYYKQ
-
-未来的望远镜，能带我们看到宇宙大爆炸的边缘吗？（卡塞格林望远镜）
-
-https://mp.weixin.qq.com/s/UDHAT3vLMS_yo4w0wbcpJQ
-
-十问北斗
-
-https://mp.weixin.qq.com/s/SQPVTNYBU8JIRPYFqsXgtA
-
-神秘力量？上帝使者？彗星的“人设”早就崩塌了
-
-https://mp.weixin.qq.com/s/pAUiirbHyfrEgWUE21x93Q
-
-另一个费曼（Richard Feynman的妹妹Joan Feynman）
-
-https://mp.weixin.qq.com/s/iznVJzjkYA2I5Y-P0NKrdA
-
-美丽天文图片下，有哪些不为人知的“套路”
-
-https://mp.weixin.qq.com/s/hZBYHvYktdJeOrAHTCKTTA
-
-如何肉眼识别夜空中的人造卫星？
-
-https://zhuanlan.zhihu.com/p/31517700
-
-小熊星座、大熊星座、北极星、北斗七星，到底啥关系?
-
-https://zhuanlan.zhihu.com/p/1911109324115248496
-
-宇宙禁区牧夫座空洞，直径3.3亿光年，里面一个星系都没有？
+![](/images/img5/Millipede.jpg)

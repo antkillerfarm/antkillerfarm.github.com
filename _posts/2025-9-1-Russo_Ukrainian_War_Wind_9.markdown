@@ -9,7 +9,25 @@ category: Russo Ukrainian War Wind
 
 # 俄乌战争：疾风篇
 
-## 泽连斯基语录（续）
+## 泽连斯基语录
+
+永远记住：乌克兰在这个敌人出现之前就有，乌克兰将在他之后还会继续存在。
+
+我们不是夹在兽人和精灵之间的边缘地带。 -- by 瓦夏
+
+我在这里。我们没有放下武器。我们将保卫我们的国家。
+
+The fight is here. I need ammunition, not a ride.
+
+The fate of Ukraine depends only on Ukrainians. No one but ourselves will control our lives.
+
+我命由我不由人，乌克兰的命运只能由乌克兰人民抉择。
+
+No one but ourselves can guarantee security.
+
+When you attack us, you will see our faces, not our backs.
+
+Without gas or without you? – The answer is without you. Without electricity or without you? – Without you. Without water or without you? – Without you. Without food or without you? – Without you.
 
 他们告诉你我们是纳粹。但一个牺牲了超过八百万条生命来消灭纳粹的民族怎么能被称为纳粹呢？我的祖父作为苏联步兵活过了整场战争，在一个独立的乌克兰作为上校死去，我怎么会是纳粹呢？
 
@@ -112,15 +130,3 @@ The gratitude – of all our people, of our entire state – to every warrior an
 我们需要的是足够的武器，而不是谈判中的支持。拥抱普京无济于事。一些领导人已经拥抱他20年了，情况只会越来越糟。
 
 不会有明斯克-3，我们需要的是真正的和平。
-
-这场战争已有1000天。距离乌克兰人痛扁普京已经过去1000天了。
-
-乌克兰人经受住了一千天的全面战争。这是我们的战士和全体乌克兰人民的壮举。
-
-至于导弹计划，许多人——尤其是俄罗斯人——已经记得我们的乌克兰海王星导弹。但我们也开发了“Long Neptunes”。这个名字本身就说明了它们的用途。
-
-普京正在将乌克兰用作试验场。显然，当正常生活就在他的身边存在时，当人们有尊严时，当一个国家只想独立并有权独立时，普京感到了害怕。
-
-现在巴沙尔可以逃到莫斯科，将来，不知道普京能往哪里逃。
-
-莫斯科向朝鲜转让军事技术，帮助平壤政权虐待人民，把一部分朝鲜人民当作一个家庭的奴隶。当这种情况发生时，你会意识到，那些呼吁俄罗斯不要扩大战争、不要加剧局势的人的话毫无价值。莫斯科不懂语言。但它必须感受到力量。通过力量实现和平是可能的。
