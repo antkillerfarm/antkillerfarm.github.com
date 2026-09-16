@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（十二）——参考资源（2）
+title:  并行 & 框架 & 优化（十二）——参考资源
 category: DL acceleration 
 ---
 

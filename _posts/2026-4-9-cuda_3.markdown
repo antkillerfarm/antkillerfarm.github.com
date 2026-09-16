@@ -85,6 +85,27 @@ torch/aten/src/ATen/native/cuda/MemoryAccess.cuh
 
 ---
 
+用BOOL_SWITCH做模板展开：
+
+```cpp
+#define BOOL_SWITCH(COND, CONST_NAME, ...)      \
+  [&] {                                         \
+    if (COND) {                                 \
+      constexpr static bool CONST_NAME = true;  \
+      return __VA_ARGS__();                     \
+    } else {                                    \
+      constexpr static bool CONST_NAME = false; \
+      return __VA_ARGS__();                     \
+    }                                           \
+  }()
+
+// 展开后的代码
+if (has_bias) { kernel<true>(argc); }
+else          { kernel<false>(argc); }
+```
+
+---
+
 https://developer.nvidia.com/blog/even-easier-introduction-cuda/
 
 An Even Easier Introduction to CUDA

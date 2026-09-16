@@ -45,6 +45,10 @@ SFT微调（Supervised Fine-Tuning）：Fine-tuning是Post-train的子集。Post
 
 红蓝对抗 (red-teaming)：红队测试在过去指用于测试安全漏洞的系统对抗攻击。随着LLM的兴起，该术语已经超越了传统的网络安全范围，并在日常使用中演变为描述AI系统的多种探测、测试和攻击。
 
+后训练流程：SFT → RL → OPD
+
+OPD（On-Policy Distillation）：在蒸馏过程中，学生模型（Student）基于自己当前的策略实时生成数据（On-Policy Sampling），然后由教师模型（Teacher，通常是经过 RL 阶段训练的强大模型）对这些生成结果提供监督信号（如 logits、隐藏状态或奖励），学生模型据此更新参数，使自己的策略逐步逼近教师模型。避免了“训练时看教师的正确答案，推理时却要基于自己之前可能出错的token继续生成”的曝光偏差（Exposure Bias）问题。
+
 https://zhuanlan.zhihu.com/p/602458131
 
 解读ChatGPT背后的技术重点：RLHF、IFT、CoT、红蓝对抗
@@ -238,13 +242,3 @@ RLHF论文中的训练数据英文占比99%+，西、法、德语还占了剩下
 http://www.199it.com/archives/1611000.html
 
 新华社研究院：人工智能大模型体验报告
-
----
-
-如果严格来论，目前国内的自研大模型，不论是零一万物的Yi，还是百川智能的Baichuan，或者阿里旗下的通义千问，架构上和LLaMA都是一致的。
-
-大家遥远的记忆中的Start-Copy Lee又回来了。
-
-https://www.zhihu.com/question/630152920
-
-如何看待李开复零一万物开源Yi大模型被指抄袭LLaMA?

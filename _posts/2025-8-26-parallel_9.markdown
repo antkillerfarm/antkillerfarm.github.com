@@ -1,13 +1,47 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（十）——Alpa, Batching
+title:  并行 & 框架 & 优化（十）——LLM System, Alpa
 category: DL acceleration 
 ---
 
 * toc
 {:toc}
 
-# LLM System（续）
+# LLM System
+
+![](/images/img6/LLM.png)
+
+## RAG
+
+![](/images/img5/RAG.jpg)
+
+![](/images/img5/RAG.png)
+
+Retrieval Augmented Generation（检索增强生成）：通过检索获取相关的知识并将其融入Prompt，让大模型能够参考相应的知识从而给出合理回答。因此，可以将RAG的核心理解为“检索+生成”，前者主要是利用向量数据库的高效存储和检索能力，召回目标知识；后者则是利用大模型和Prompt工程，将召回的知识合理利用，生成目标答案。
+
+https://zhuanlan.zhihu.com/p/668082024
+
+一文搞懂大模型RAG应用
+
+https://blog.csdn.net/v_JULY_v/article/details/137711599
+
+RAG进阶之通用文档处理：从RAGFlow、TextMonkey到mPLUG-DocOwl 1.5
+
+https://zhuanlan.zhihu.com/p/695299235
+
+RAG路线图： Reliable, Adaptable, and Attributable Language Models with Retrieval
+
+---
+
+Pooling models是一类把可变长度序列“压缩”成固定长度向量的模型，也常被称为sentence embedding模型。
+
+它们的核心动作就是pooling：先把输入文本用Transformer编码成一系列token向量，然后对这些向量做一次pool操作，得到一个整体表征（embedding），用来做下游的检索、聚类、分类、重排等任务，是RAG、向量数据库、语义搜索的基石。
+
+假设有一个10w的外部数据，我们的原始输入Prompt长度为100，长度限制为4k，通过查询-检索的方式，我们能将最有效的信息提取集中在这4k的长度中，与Prompt一起送给大模型，从而让大模型得到更多的信息。此外，还能通过多轮对话的方式不断提纯外部数据，达到在有限的输入长度限制下，传达更多的信息给大模型。
+
+https://blog.csdn.net/qq_40491305/article/details/130898052
+
+一文看懂LlamaIndex用法，为LLMs学习私有知识
 
 ## 向量数据库
 
@@ -156,76 +190,3 @@ https://zhuanlan.zhihu.com/p/487588274
 https://zhuanlan.zhihu.com/p/571836701
 
 Alpa论文解读
-
-# Batching
-
-## continuous batching
-
-![](/images/img6/static-batching.png)
-
-上图是一个通常的多batch的LLM的Inference过程。其中黄色表示用户的prompt，蓝色表示LLM生成的文本，红色表示结束符号。
-
-![](/images/img6/continuous-batching.png)
-
-这是改进后的continuous batching的示意图。
-
-https://www.anyscale.com/blog/continuous-batching-llm-inference
-
-How continuous batching enables 23x throughput in LLM inference while reducing p50 latency
-
-## Selective Batching
-
-Selective Batching的核心原理在于：仅对适合批处理的操作执行批处理，不适合批处理的操作则单独处理。
-
-![](/images/img6/Selective_Batching.png)
-
-对于preproj、postproj、FFN1和FFN2这类线性变换或归一化操作，它们的计算与序列长度无关，只是在hidden_size维度上做线性转换，并且都需要从显存读取权重。因此，可以将batch内所有token拉平成一个二维张量。
-
-对于Attention操作，由于每个请求的mask、KV cache和token位置可能不同，导致其张量形状不一致，无法直接合并处理。Selective Batching会在进入Attention之前将batch拆分，逐个请求单独计算Attention分数，完成后再将结果合并回统一的张量。
-
-## Chunked Prefill
-
-![](/images/img6/Batching.png)
-
-在prefill阶段，即使batch size为1，所有操作的算术强度依然很高。而在decode阶段，这些操作的算术强度下降了两个数量级以上，只有在batch size达到256这种极大值时，decode阶段才开始变得计算密集。
-
-![](/images/img6/SARATHI_2.png)
-
-Orca方案尝试在Batch中混合Prefill和Decode请求。但是由于请求具有一定的随机性，Prefill和Decode的计算量不一定平衡，从而产生了pipeline bubbles。
-
-![](/images/img6/SARATHI.png)
-
-Sarathi-Serve提出了一种兼顾吞吐量与延迟的调度机制，其中包括两个核心设计思想：chunked-prefills（分块预填充）和stall-free scheduling（无阻塞调度）。
-
-- chunked-prefills（分块预填充）：将一个prefill请求拆分为计算量基本相等的多个块（chunk），并在多轮调度迭代中逐步完成整个prompt的prefill过程（每次处理一部分 token）。
-- stall-free scheduling（无阻塞调度）则允许新请求在不阻塞decode的前提下，动态加入正在运行的batch，通过将所有decode请求与新请求的一个或多个prefill chunk合并，构造出满足预设大小（chunk size）的混合批次。
-
-https://zhuanlan.zhihu.com/p/1928005367754884226
-
-Chunked-Prefills分块预填充机制详解
-
-https://zhuanlan.zhihu.com/p/718715866
-
-基于chunked prefill理解prefill和decode的计算特性
-
-# Append
-
-多轮对话情况下，用户第2轮再输入一段文字，系统对这段输入文字做一次新的prefill，然后用把新生成的KV拼接到上一轮cache后面，这个操作被称为Append操作。
-
-![](/images/img6/llm-attentions.png)
-
-![](/images/img6/attention-roofline.png)
-
-Append操作一般采用Prefix Caching技术进行加速。
-
-RadixAttention使用radix tree，而不是prefix tree。Radix Tree最大的特点就是，它的node，不仅可以是一个单独的元素，也可以是一个变长的序列。具体体现在，在必要的时候，一个已经在Tree中的大node可以动态地分裂成小node，以满足动态shared prefix的需求。
-
-![](/images/img6/Radix_Tree.png)
-
-https://zhuanlan.zhihu.com/p/693556044
-
-原理&图解vLLM Automatic Prefix Cache(RadixAttention)首Token时延优化
-
-https://zhuanlan.zhihu.com/p/1890132185966682238
-
-FlashAttentionV1/V2+PageAttentionV1/V2+RadixAttention算法总结

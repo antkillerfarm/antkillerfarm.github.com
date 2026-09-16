@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（八）——LLM Inference
+title:  并行 & 框架 & 优化（八）——快速Transformer（2）
 category: DL acceleration 
 ---
 
@@ -170,25 +170,3 @@ https://zhuanlan.zhihu.com/p/638468472
 https://blog.csdn.net/v_JULY_v/article/details/144218958
 
 一文通透vLLM与其核心技术PagedAttention：减少KV Cache碎片、提高GPU显存利用率(推理加速利器)
-
-# LLM Inference
-
-A Survey on Efficient Inference for Large Language Models
-
----
-
-https://zhuanlan.zhihu.com/p/653352979
-
-LLM七种推理服务框架总结
-
-https://zhuanlan.zhihu.com/p/671347964
-
-大模型(LLM)推理框架汇总
-
-https://zhuanlan.zhihu.com/p/642412124
-
-LLM的推理优化技术纵览
-
-https://github.com/DefTruth/Awesome-LLM-Inference
-
-Awesome LLM Inference

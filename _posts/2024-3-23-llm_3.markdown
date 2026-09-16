@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Large Language Model（三）——LLAMA, Chinchilla Law
+title:  Large Language Model（三）——LLAMA
 category: Attention 
 ---
 
@@ -8,6 +8,20 @@ category: Attention
 {:toc}
 
 # LLM大乱战（续）
+
+数据泄露（data contamination）在大模型时代可以说是极难避免的。随着大模型训练数据规模的扩大，保证训练数据与常用benchmark之间没有重叠变得几乎不可能。
+
+https://zhuanlan.zhihu.com/p/665426752
+
+大模型是如何在评测中“作弊”的？
+
+---
+
+DeepSeek估值时，对标的是OpenAI，其估值区间被估算在10亿美元至1500亿美元之间。
+
+根据“路边消息社”报道，现在想约见梁文锋，需要先报省委办公厅。一般人见不到梁文锋。网上还传出了“大年三十特警陪同回家，村口警察巡逻”的消息。
+
+---
 
 最早的盘古应该是原语音语义实验室蒋欣老师和首席科学家刘群老师等带团队开发的，好像是mindspore太烂了，没训好。
 
@@ -234,25 +248,3 @@ https://kexue.fm/archives/10862
 ## GPT-J
 
 GPT-J是一个由EleutherAI开发的自然语言处理（NLP）模型，基于GPT-3的架构，拥有6B个参数。它在800GB的开源文本数据集上进行训练，具有强大的语言生成和理解能力。
-
-# Chinchilla Law
-
-最为知名的规模定律包括“Kaplan定律”和“Chinchilla定律”。
-
-Kaplan定律指出，在固定计算量的前提下，扩大模型规模通常比增加数据量更为有效；
-
-而Chinchilla定律则认为，模型规模和数据量同样重要。
-
----
-
-DeepMind研究了在给定算力预算下训练Transformer语言模型的最佳模型大小和tokens数量。
-
-在LLaMA-1预训练时候，从各种开源数据集，凑够了1.4T的tokens。按照Chinchilla Law，应该使用1,400B (1.4T) tokens来训练参数量大小为70B的LLM最佳。即：每个参数需要大约20个文本token。
-
-https://zhuanlan.zhihu.com/p/627821763
-
-训练LLM需要多少数据？
-
-https://www.zhihu.com/question/628395521
-
-如何看待微软论文声称ChatGPT是20B(200亿)参数量的模型？

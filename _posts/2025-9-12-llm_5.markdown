@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Large Language Model（五）——1M context, 大力出奇迹, LLM Architecture
+title:  Large Language Model（五）——1M context, 大力出奇迹
 category: Attention 
 ---
 

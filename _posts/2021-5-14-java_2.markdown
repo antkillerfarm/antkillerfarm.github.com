@@ -245,6 +245,10 @@ https://www.zhihu.com/question/466696410/answer/2219153613
 
 Tomcat为什么要JAVA破坏双亲委派机制？
 
+https://zhuanlan.zhihu.com/p/2077374068156904932
+
+Java等了十二年的值类型，终于来了
+
 # 汇编
 
 https://mp.weixin.qq.com/s/OWGi1htNugOv81ZFPinRGw

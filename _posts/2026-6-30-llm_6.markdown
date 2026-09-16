@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Large Language Model（六）——VLM, AI agent
+title:  Large Language Model（六）——LLM Architecture, VLM
 category: Attention 
 ---
 
@@ -76,6 +76,58 @@ Qwen3.8-Flash-Next的N-gram Embedding部分，参考了DeepSeek的Engram，如�
 Qwen的测试结果显示，多层注入没有稳定优势，一个N-gram层已经足够。选择Layer 2还能让系统利用第一层的计算时间，从Host Memory提前读取接下来需要的向量。
 
 原本176B的模型现在变成了125B（内存）+51B（SSD）。
+
+## DeepSeek V4.1 Flash
+
+![](/images/img6/DeepSeek_V4.1_Flash.png)
+
+相比DeepSeek V4，DeepSeek V4.1 Flash主要包括了以下创新点：
+
+- YOCO
+- Engram
+- CSA2
+
+---
+
+![](/images/img6/YOCO.png)
+
+YOCO（You Only Cache Once）采用L块堆叠，其中前L/2层为Self-Decoder，其余模块为Cross-Decoder。
+
+自解码器与交叉解码器的区别在于它们各自的注意力块不同，自解码器使用高效的自注意机制(例如Slide Window Attn)。而交叉解码器使用全局交叉注意力来关注自解码器输出产生的共享KV Cache。
+
+这里的共享KV Cache是指，Self-Decoder的L/2层，只有最后一层有KV Cache，而这个KV Cache会给Cross-Decoder的所有L/2层使用。因此KV Cache的存储复杂度是$$O((N+L)D)$$，其中N、L、D分别为序列长度、层数和隐藏维数。（Decode阶段的input还是会在Cross-Decoder的每一层生成自己的KV Cache）
+
+![](/images/img6/YOCO_2.png)
+
+Prefill阶段，除了最后一个input token之外，只走Self-Decoder，用以生成KV Cache，Decode阶段Self-Decoder和Cross-Decoder都要走。
+
+这里有个技巧，普通的Transformer模型，最后的lm head运算，实际上也只有最后一个input token生成第一个output token是有意义的。
+
+https://zhuanlan.zhihu.com/p/697295435
+
+You Only Cache Once:YOCO基于Decoder-Decoder的一个新的大语言模型架构
+
+---
+
+![](/images/img6/CSA2.png)
+
+CSA2，把压缩从CSA的Seq维度再加到Layer维度。
+
+CSA2分三种模式：
+
+- Full：自己算main KV、indexer K，跑完整top-k索引。
+- Reindex：复用前层main KV / indexer K，但用自己的query重新打分选top-k（缓存共享、选择不共享）。
+- Reuse：main KV和top-k索引都复用前层，本层只跑注意力，不重算索引。
+
+---
+
+Clamp SwiGLU：从OpenAI、Kimi到DS都这么干，可能之前训崩就是这问题？
+
+---
+
+https://www.zhihu.com/question/2081380378493961583
+
+如何评价正式发布的DeepSeek V4.1 Flash？
 
 # VLM
 
@@ -161,65 +213,3 @@ Vibe Coding是一种2025年才出现、以AI为核心的全新软件开发方式
 https://www.zhihu.com/question/1944542162130833916
 
 什么是Vibe Coding？
-
-# AI agent
-
-AI agent本质上是一个构建在LLM(大模型)之上的智能应用，也就是说AI agent是大模型的上层应用。如果说把AI比做一个人，那么大模型就是这个人的大脑，虽然它拥有了智能，但其却没有能够真正做事的实体。而AI agent就相当于人的手脚眼睛和嘴巴，以及各种人类能够利用的工具。
-
-![](/images/img5/AI_agent.png)
-
-https://github.com/datawhalechina/agentic-ai
-
-吴恩达老师在DeepLearning.AI推出的Agentic AI系列课程
-
-https://blog.csdn.net/qq_33453797/article/details/138324548
-
-爆火的AI Agent到底是什么？有了大模型为什么还需要AI Agent？
-
-https://blog.csdn.net/v_JULY_v/article/details/135868163
-
-智能体AI Agent的极速入门：从ReAct、AutoGPT到AutoGen、QwenAgent、XAgent、MetaGPT
-
-https://blog.csdn.net/v_JULY_v/article/details/142796658
-
-OmniH2O——通用灵巧且可全身远程操作并学习的人形机器人
-
-https://blog.csdn.net/v_JULY_v/article/details/142769965
-
-VLM驱动机器狗——从UMI on Legs到Helpful DoggyBot：分别把机械臂装到机器狗背上、夹爪装到机器狗嘴里
-
-https://zhuanlan.zhihu.com/p/1917883331829273687
-
-Devin炮轰Claude：别再搞Multi-Agent了
-
----
-
-Prompt Engineering时代，用户把bug复制给模型，补充一点背景知识，再把模型吐出来的代码复制回生产环境，看看解决问题没；不行，就再来一次。
-
-Context Engineering时代，把背景、约束、项目知识提前塞好，或者让模型自己先去找好，再去做coding。但用户还是得负责大量复制粘贴，还没真正和生产环境接上轨。
-
-Harness Engineering时代，把工具、环境、权限、测试、hooks都搭起来。用户通过多轮对话和赋权，指挥AI在环境里做所有事情。
-
-Loop Engineering时代，又更进一步，大幅减少用户交互次数。你开头定义好一个goal，让它围绕这个目标自己迭代，直到完成。
-
-在LLM（大语言模型）的语境中，"Harness" 是一个动词，意思是"驾驭、利用"，即充分利用和控制模型的能力。
-
-Spec就是给AI看的PRD，Harness就是给Agent用的Framework，Loop就更简单了，其实就是CI。
-
-每开除一个语言学家，语音识别系统就又准一点。
-
-每删掉一个Skill，goal完成的速度和准确性就又提升一点。
-
-与其折腾各种乱七八糟的方法论，还不如坐等Base Model升级。
-
-https://zhuanlan.zhihu.com/p/2027834017840415550
-
-AI真能自己写出整个Windows系统吗？我做了一场无监督实验
-
----
-
-MCP（Model Context Protocol）由Anthropic于2024年11月推出，是一个开放标准协议，用于统一大模型与外部工具、数据源之间的交互方式。
-
-https://zhuanlan.zhihu.com/p/1895177200665350365
-
-大白话聊一聊Tool、MCP和Agent来龙去脉

@@ -19,6 +19,18 @@ https://www.zhihu.com/question/614223201
 
 ---
 
+肯·汤普逊和丹尼斯·里奇当年之所以建了个`/usr/bin`，纯粹是因为穷。
+
+1971年，俩人在一台DEC PDP-11机器上写Unix第三版。那台机器上挂着两块RK05磁盘。那块盘多大呢，1.5MB。当时Unix的内核代码和常用命令越写越多。肯·汤普逊把操作系统内核、启动文件和常用工具一股脑往第一块盘的根目录`/`里塞。塞着塞着，第一块盘满了。系统写了一半，磁盘见底了，总不能停工吧。
+
+他们手头正好还有第二块1.5MB的磁盘。这块盘原本挂在`/usr`目录下，专门用来放实验室几个同事的个人文件，所以才叫usr，就是user的意思。肯·汤普逊看着第二块盘还空着大半，没做任何设计，直接在`/usr`底下建了个目录叫`/usr/bin`。
+
+https://www.zhihu.com/answer/2075265736457700081
+
+Linux里面bin和sbin目录区别是什么？
+
+---
+
 https://www.zhihu.com/people/suntrise/posts
 
 一个研究计算机历史的专栏
@@ -282,3 +294,11 @@ https://zhuanlan.zhihu.com/p/687399673
 https://zhuanlan.zhihu.com/p/2053896264379634152
 
 为什么清空寄存器要用 xor eax, eax 而不是 sub eax, eax？
+
+https://www.zhihu.com/answer/2078196371996284554
+
+Makefile那个tab缩进，作者写完两周就知道是错的，他没改。（Stuart Feldman，2003年的ACM软件系统奖。）
+
+https://www.zhihu.com/answer/2081490381842150404
+
+为什么电脑重启之后，很多奇怪的问题真的会消失？

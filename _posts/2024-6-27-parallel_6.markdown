@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  并行 & 框架 & 优化（七）——快速Transformer
+title:  并行 & 框架 & 优化（七）——快速Transformer（1）
 category: DL acceleration 
 ---
 

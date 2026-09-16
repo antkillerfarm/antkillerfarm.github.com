@@ -9,6 +9,16 @@ category: Attention
 
 # GPT-4（续）
 
+如果严格来论，目前国内的自研大模型，不论是零一万物的Yi，还是百川智能的Baichuan，或者阿里旗下的通义千问，架构上和LLaMA都是一致的。
+
+大家遥远的记忆中的Start-Copy Lee又回来了。
+
+https://www.zhihu.com/question/630152920
+
+如何看待李开复零一万物开源Yi大模型被指抄袭LLaMA?
+
+---
+
 参考：
 
 https://www.zhihu.com/question/589639535
@@ -169,14 +179,6 @@ https://mp.weixin.qq.com/s/vfsB5t3r5dBACKQx6FshVw
 
 ---
 
-数据泄露（data contamination）在大模型时代可以说是极难避免的。随着大模型训练数据规模的扩大，保证训练数据与常用benchmark之间没有重叠变得几乎不可能。
-
-https://zhuanlan.zhihu.com/p/665426752
-
-大模型是如何在评测中“作弊”的？
-
----
-
 大模型开源有几个等级，开源程度从低到高：
 
 - 仅模型开源（技术报告只列举了Evaluation）。主要利好做应用的公司（继续训练和微调）和普通用户（直接部署）技术报告开源训练过程。
@@ -188,9 +190,3 @@ https://zhuanlan.zhihu.com/p/665426752
 实际上大部分的模型开源诸如LLaMa2、Mistral、Qwen等，只做到Level-1，像DeepSeek这样的可以做到Level-2。而Level-4及以上的开源一个都没有。
 
 LLM时代的典型特征：学习速度跟不上知识的更新速度（下载速度跟不上模型的开源速度）。
-
----
-
-DeepSeek估值时，对标的是OpenAI，其估值区间被估算在10亿美元至1500亿美元之间。
-
-根据“路边消息社”报道，现在想约见梁文锋，需要先报省委办公厅。一般人见不到梁文锋。网上还传出了“大年三十特警陪同回家，村口警察巡逻”的消息。

@@ -9,179 +9,6 @@ category: my story
 
 # 我的PC Game
 
-## 小霸王 & 模拟器（续）
-
-2024.1
-
-最近无意看了一个小霸王游戏机的视频，差点动了买的心思。500元左右，就可以畅玩2000年以前的所有平台的老游戏。
-
-后来看了一圈，发现无非也就是ARM+Linux+模拟器。有个网友说的实在，最好的模拟器平台就是PC，都模拟器了还小霸王，这不纯纯的智商税吗？想体验，买个手柄不就得了。
-
-国产开源主机爆发的开端是一名叫司徒（Steward Fu）的台湾程序员大神，将某名不见经传的闭源mp4设备（全志芯片+全志开发的Melis OS），刷入另外一个开源掌机系统（OpenDingux）。至此周、张、谢等人才有机会将国内开源掌机这条路走通。
-
-无论是4770用的OpenDingux，还是3326用的EmuELEC，再或者里面的RetroArch模拟器这些东西都是开源的。
-
-Steward Fu的个人主页：
-
-https://steward-fu.github.io/website/
-
-EmuELEC官网：
-
-https://github.com/EmuELEC/EmuELEC/
-
-参考：
-
-https://zhuanlan.zhihu.com/p/482019157
-
-复古游戏与开源掌机的基础知识
-
-https://zhuanlan.zhihu.com/p/473777088
-
-FC/NES模拟器选择指南
-
----
-
-https://zhuanlan.zhihu.com/p/97851599
-
-将前端技术栈移植到掌上游戏机
-
-https://www.zhihu.com/question/451164963
-
-开源掌机是如何诞生和发展的？
-
-https://zhuanlan.zhihu.com/p/40805178
-
-给外甥的暑假礼物——复古掌机Retro Game
-
----
-
-2024.1
-
-雷电无线手柄到位，开始寻找模拟器。
-
-PCSX2：PS2模拟器
-
-WinKawaks：街机模拟器
-
-MAME：老牌的多平台开源模拟器。但是使用不是很方便，我捣鼓半天也没弄好。
-
-Mednafen：新近流行的多平台开源模拟器。
-
-官网：
-
-https://mednafen.github.io
-
-但是这个软件是基于命令行的，所以一般需要使用mednaffe作为它的GUI前端。
-
-mednaffe官网：
-
-https://github.com/AmatCoder/mednaffe
-
-darkstation：PS模拟器。支持CHD格式的ROM，CHD格式是一种可以替代ISO的压缩格式。
-
-RetroArch：一个多平台模拟器。
-
-Yuzu：一个任天堂NS的模拟器。NS由于性能过于低下，成为本世代即遭模拟的主机。
-
-据说Switch2早已研发完成，说明硬件的性能高不到哪里去。根据YUZU今年采用的新技术，1.1倍的硬件就可以模拟Switch了，再想想明年50系显卡和8G4等芯片的恐怖能力，模拟Switch2应该不难。
-
-## 修改工具
-
-在DOS时代，我用过FPE。2000年之后，主要使用金山游侠。
-
-Cheat Engine是一个开源工具，它结合了内存扫描、十六进制编辑器和动态调试功能，常用于游戏修改：
-
-https://www.cheatengine.org/
-
-上述是通用修改工具，用途也不局限于修改游戏。
-
-现在还有一些针对特定游戏的修改器：
-
-https://flingtrainer.com/
-
-风灵月影
-
-该网站收集并制作了2000+游戏的修改器。
-
-## DosBox
-
-DosBox是Linux平台玩DOS老游戏的法宝。
-
-安装：
-
-`sudo apt install dosbox`
-
-启动DosBox之后，需要使用如下命令加载本地文件夹：
-
-`mount c ~/dosprom`
-
-类似的软件还有86Box和PCem。
-
----
-
-DOS下的游戏编程主要是受内存访问范围的限制，实模式直接可以访问的内存才640KB。突破内存的技术有EMS和XMS等。发展到后期，基本上都使用DOS下32位保护模式技术。比如DPMI、DOS4GW。使用Watcom C++ & DOS4GW就能轻松获得平展的4G内存空间。
-
-## 藏宝屋
-
-https://github.com/rwv/chinese-dos-games
-
-中文DOS游戏
-
-https://github.com/skywind3000/preserve-cd
-
-绝版游戏保护工程
-
----
-
-MPQ是 Mo'PaQ的缩写，即Mike O'Brien Pack，由暴雪早期开发者Mike O'Brien设计，1996年首用于《暗黑破坏神》，后续成为暴雪旗下游戏的核心资源打包格式。
-
-https://zhuanlan.zhihu.com/p/1988759650368264045
-
-魔兽职业技能的奥秘
-
----
-
-https://zhuanlan.zhihu.com/p/671410997
-
-魔兽世界单机版服务端编译和运行指南（TrinityCore）
-
-https://zhuanlan.zhihu.com/p/672284712
-
-魔兽世界单机版服务端编译和运行指南（AzerothCore）
-
-https://zhuanlan.zhihu.com/p/673951143
-
-魔兽世界(AzerothCore)机器人队友单机版服务端编译说明
-
-## 2024.8
-
-《黑神话：悟空》似乎不错，可惜手残，对硬核ACT感觉一般。
-
-游戏科学的创始人冯骥，早年是腾讯量子工作室的员工，曾担任《斗战神》主策划。
-
-## 2024.10
-
-换了新电脑之后，把原来收藏的老游戏，又拿出来晒了晒。1/3直接能跑，1/2在网上搜解决办法，也能跑起来。
-
-只有剩下的1/6，需要从网上重新下载。尤其是一些光盘版安装的游戏，光盘里只有安装文件，还需要安装解压缩，才能进行后续的补丁，然而安装程序本身在新系统上跑不起来了。。。囧
-
-Win11虽然集成了虚拟光驱，但只支持iso格式，mdf/mds格式还是需要daemon tool才行。
-
----
-
-《沙威玛传奇》是一款由土耳其开发者Eyad Alshafei制作发行的模拟经营类游戏。被网友们调侃称作“3A游戏”，其配音、作画、作曲，均出自AI之手。
-
-《沙威玛传奇》的前传是《法拉费尔之王》。
-
-## 2026.2
-
-玩了一下《钢铁雄心4》之抗战到底DLC。
-
-这个DLC在不同语言版本使用了不同的封面图：
-
-- 英文等其他语言版本默认显示日本主题（飞行员与富士山）。
-- 中文版本则显示中国主题（四行仓库保卫战）。
-
 ## 轶事
 
 任天堂垄断了所有游戏卡带的生产权，游戏厂商不得自己私制卡带。
@@ -245,3 +72,65 @@ https://mp.weixin.qq.com/s/JENwpBayd59hMh2zyO-PvA
 https://zhuanlan.zhihu.com/p/586963468
 
 《三国志6》有多经典？曹操叫“变巨”，曾是无数人的电脑启蒙
+
+---
+
+https://www.zhihu.com/question/39626359
+
+为什么澄海3C没有成为DOTA一样成功的作品？
+
+https://zhuanlan.zhihu.com/p/325972017
+
+STEAM上的科研游戏，真是给正常人玩的？
+
+https://mp.weixin.qq.com/s/NFYlupa0piLjcWrRaP-C-Q
+
+中年失业破产后当雇佣兵、倒卖煎饼果子，游戏里的打工人也这么难？
+
+https://www.zhihu.com/zvideo/1358906505719336960
+
+一个讲述War 3秘密的专栏
+
+http://news.17173.com/content/11112021/094129154.shtml
+
+腾讯、网易搞不定的国产3A，被一个中专生捣鼓出来了，仅售19元？（飞燕群岛）
+
+https://zhuanlan.zhihu.com/p/500967361
+
+街机《三国志》“很黄很暴力”的漫画剧情，刘皇叔靠处子之身起家
+
+https://www.zhihu.com/question/328681136
+
+什么是弹幕射击游戏？
+
+https://www.bilibili.com/read/cv2773215
+
+一个错误诞生一个经典，CS最受欢迎地图“Dust II”背后的故事
+
+https://zhuanlan.zhihu.com/p/619204713
+
+风靡网吧的经典！《三国群英传2》为何是系列最受欢迎的一代？
+
+https://zhuanlan.zhihu.com/p/454876786
+
+《战争游戏红龙》：军事指挥爱好者的近代战争交响曲
+
+https://fitgirl-repacks.site/
+
+一个俄罗斯妹子办的游戏资源站
+
+https://www.jidiyouxi.com/
+
+国内版的fitgirl
+
+https://www.zhihu.com/question/557628789
+
+如何评价游戏《白日升》（Rise of the White Sun）？
+
+https://www.zhihu.com/question/11554798727
+
+《文明7》里的奇观现实中都还存在么？
+
+https://www.zhihu.com/answer/1944806410203398565
+
+第一人称射击类游戏简史

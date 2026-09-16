@@ -31,6 +31,10 @@ https://zhuanlan.zhihu.com/p/2077413829785424347
 
 聊聊孙割这些年办过的身份~~
 
+https://zhuanlan.zhihu.com/p/2078290518996424091
+
+毒枭、币圈、老赖、和尚、数学家：2010年的北大校园有多 “可怕” ？
+
 ## 参考
 
 https://mp.weixin.qq.com/s/H860_Es3uO9ozDTnifNvgQ
