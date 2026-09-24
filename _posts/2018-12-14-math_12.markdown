@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  数学狂想曲（十二）——复变函数, 数学杂谈（2）
+title:  数学狂想曲（十二）——复变函数
 category: math 
 ---
 

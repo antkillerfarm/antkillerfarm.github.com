@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  AIGC（三）——AIGC参考资源, 数据中心
+title:  AIGC（三）——Flow-based Model, AIGC参考资源
 category: Generative Model
 ---
 
@@ -16,6 +16,153 @@ VAR的一作田柯宇，后来干了一票大事：
 https://www.zhihu.com/question/1296528119
 
 字节跳动大模型训练被实习生恶意注入破坏代码，涉事者已被辞退，攻击带来的影响有多大？
+
+# Flow-based Model
+
+![](/images/img4/flow.png)
+
+Flow-based Model是GAN和VAE之外的另一大类生成模型方法。
+
+从表面来看，Flow-based Model和VAE非常类似，无非把Encoder和Decoder换成了Flow和它的Inverse，但是实际上两者不仅数学原理不同，具体的训练方法也有极大差异。上图说是照骗也不为过。
+
+以下内容主要参考了李宏毅老师的课件：
+
+http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2019/Lecture/FLOW%20(v7).pdf
+
+还有以下笔记：
+
+http://www.seeprettyface.com/pdf/Note_Flow.pdf
+
+![](/images/img4/flow_2.png)
+
+Flow-based Model的训练过程是用图片x通过网络$$f(x)$$生成随机数z。由于这个经过巧妙构造的$$f(x)$$具有可直接得到的可逆函数$$f^{-1}(z)$$，所以在推理阶段，无需任何额外处理，即可直接由$$f^{-1}(z)$$，从随机数z得到图片x。
+
+随机数z可以是任意分布，但通常为了理论推导的简单，而使用正态分布，即所谓的Normalizing Flow。
+
+Flow-based Model的理论不算复杂，难点主要在于如何构造可逆的函数G。目前已经有了一些成熟的构造方法，但相对于网络结构的千变万化，构造方法的种类就少的太多了。主流的大概也就是NICE、RealNVP和GLOW。
+
+最初的NICE实现了从A分布到高斯分布的可逆求解；后来RealNVP实现了从A分布到条件非高斯分布的可逆求解；而最新的GLOW，实现了从A分布到B分布的可逆求解，其中B分布可以是与A分布同样复杂的分布，这意味着给定两堆图片，GLOW能够实现这两堆图片间的任意转换。
+
+我们以NICE为例，介绍一下Flow-based Model的基本套路。
+
+首先，$$G^{-1}$$必须是存在的且能被算出，这意味着G的输入和输出的维度必须是一致的并且G的行列式不能为0。因此，z和x的形状必须完全一致。
+
+作为一个生成模型自然希望自己产生的数据的概率越高越好。因此这里的优化目标就是：
+
+$$G^*=\arg \max_{G} \sum_{i=1}^m\log p_{G}(x^i)$$
+
+这里不加证明的给出结论：
+
+$$\log p_{G}(x^i)=\log \pi(G^{-1}(x^i))+\log |det(J_{G^{-1}})|$$
+
+这里的第一项实际上就是$$\log \pi(z^i)$$。显然，当z为0时，正态分布的概率最大。
+
+然而这会导致$$det(J_{G^{-1}})=0$$，也就是第二项为$$-\infty$$。
+
+所以z必须在两项之间平衡，才能得到最大值。这个平衡点就是我们的优化目标。
+
+NICE采用了一种称为耦合层（Coupling Layer）的设计，如下图所示：
+
+![](/images/img5/flow.png)
+
+z和x都会被拆分成两个部分，分别是前1~d维和后d+1~D维。
+
+z的1~d维直接复制（copy）给x的1~d维；z的d+1~D维分别通过F和H两个神经网络，通过仿射计算（affine）传递给x。
+
+由于F和H的结果仅仅是系数，求偏导数的时候，会被当成常数，所以对于从$$G^{-1}$$构建G没有什么影响。
+
+![](/images/img5/flow_2.png)
+
+如果一层变换的表现力不足的话，我们也可以多做几层变换。需要注意的是，z的1~d维直接复制（copy）给x的1~d维的方式中的copy操作，对于生成模型的表现力会有影响。（总不可能生成图片的一部分还是随机噪声吧。）所以多层变换的话，需要使用交错的方式，组合copy操作和affine操作。
+
+![](/images/img4/MAF-vs-IAF.png)
+
+Masked Autoregressive Flow
+
+Inverse Autoregressive Flow
+
+参考：
+
+https://zhuanlan.zhihu.com/p/44304684
+
+Normalizing Flow小结
+
+https://www.jianshu.com/p/66393cebe8ba
+
+标准化流(Normalizing Flow)教程（一）
+
+https://www.jianshu.com/p/db72c38233f3
+
+标准化流(Normalizing Flow)（二）：现代标准化流技术
+
+https://mp.weixin.qq.com/s/oUQuHvy0lYco4HsocqvH3Q
+
+Normalizing Flows入门(上)
+
+https://mp.weixin.qq.com/s/XtlK3m-EHgFRKrtcwJHZCw
+
+Normalizing Flows入门(中)
+
+https://mp.weixin.qq.com/s/TRgTFBz_NmBJygQjOYwdqw
+
+GAN/VAE地位难保？Flow在零样本识别任务上大显身手
+
+https://mp.weixin.qq.com/s/xMO9jhzQH6P5NEA_D-uyIA
+
+这个模型的脑补能力比GAN更强，ETH提出新型超分辨率模型SRFlow
+
+https://zhuanlan.zhihu.com/p/351479696
+
+基于流的生成模型-Flow based generative models
+
+https://mp.weixin.qq.com/s/KrvW16GAxSGAPOCYYKbGUg
+
+生成模型：标准化流（Normalized Flow）
+
+https://lilianweng.github.io/posts/2018-10-13-flow-models/
+
+Flow-based Deep Generative Models
+
+# Flow matching
+
+## ODE & SDE
+
+ODE：常微分方程（Ordinary Differential Equation）
+
+Flow matching是ODE框架：
+
+- 起点：x0​ = 随机噪声（高斯分布）
+- 终点：x1​ = 真实数据（图片/动作）
+- 神经网络学的是速度场（Vector Field）f
+- 推理时从噪声出发，按速度场用Euler或其他ODE求解器积分几步，就“流”到了数据。
+
+特点：同样的噪声 → 同样的输出（确定性生成）。​想要多样性就得换不同的噪声种子。
+
+SDE：随机微分方程（Stochastic Differential Equation）
+
+数学上，SDE在ODE的基础上加了一个随机项（通常是布朗运动/Wiener过程）。
+
+DDPM/Diffusion Model的前向加噪过程就是一个SDE。
+
+特点：天然多样性，但采样需要很多步（因为随机性让路径弯曲，需要小步长才能稳定）。
+
+## GLOW vs Flow matching
+
+GLOW是离散可逆层式normalizing flow，而flow matching是连续流/CNF的免仿真训练法。前者靠“一层层可逆变换”把噪声映成数据，后者靠“一个时间相关速度场”用ODE把噪声流成数据。
+
+Glow（Kingma & Dhariwal, 2018）的架构受限于“可逆+雅可比好算”，高分辨率图像要堆很多层，表达效率和扩展不如扩散/FFM。
+
+Flow matching（Lipman 等 2022）面向Continuous Normalizing Flow（连续归一化流）对单个数据—噪声对定义条件路径，直接回归。训练不再解ODE，推理用Euler/Runge-Kutta解ODE，少步可采样。这里的步数N通常为2–4步，比DDPM的20步要少的多。
+
+Conditional FM Loss：
+
+$$\mathcal{L}_{\text{CFM}}(\theta) = \mathbb{E}_{t \sim \mathcal{U}(0,1),\; x_1 \sim q,\; z \sim \mathcal{N}(0,I)} \left\| v_\theta(x_t, t) - (x_1 - z) \right\|^2$$
+
+## 参考
+
+https://zhuanlan.zhihu.com/p/4116861550
+
+通俗易懂的Flow Matching原理解读（附核心公式推导和源代码）
 
 # AIGC参考资源
 
@@ -82,86 +229,3 @@ https://zhuanlan.zhihu.com/p/664461927
 https://www.zhihu.com/question/15735401526
 
 OpenAI GPT-4o推出原生图像生成功能，这次升级有哪些看点？
-
-# 数据中心
-
-## 机柜
-
-机柜、板卡的尺寸规格也有工业标准，以方便不同厂商产品的互联和替换。
-
-OCP（Open Compute Project）组织负责定义数据中心相关的工业标准。
-
-官网：
-
-https://www.opencompute.org
-
-OAM：OCP Accelerator Module
-
-UBB：Universal Base Board
-
-https://zhuanlan.zhihu.com/p/339628067
-
-开放计算的源起，对比标准x86服务器开放计算有哪些特点和创新？
-
-https://zhuanlan.zhihu.com/p/571417872
-
-开放整机柜服务器简史
-
-## 四大护法
-
-NV数据中心生态“四大护法”：
-
-- ABB：1988年由百年电力巨头ASEA（1883，瑞士）、BBC（1891，瑞典）合并；现代三相电、高压直流输电技术发源地，深耕中高压电网、大功率变流领域百年。
-- Eaton：美国本土电力龙头，1911年重工机械起家，1978年切入电气领域，收购西屋、Cooper、Powerware，完成从机械传动到全链路电力管理转型，深耕数据中心末端配电与储能。
-- Schneider：法国百年工业巨头，1836年钢铁军工起家，擅长重型结构与流体工程；1999年聚焦电力能源，收购APC、Motivair等头部品牌，补齐机房配电、UPS、液冷全栈能力。
-- Vertiv：美国IDC基础设施专精龙头。源自1965年Liebert（全球机房精密制冷鼻祖），后并入艾默生网络能源，2016年独立为Vertiv；唯一100%聚焦数据中心关键负载的头部厂商。
-
-## 电力
-
-NVIDIA的路线图显示，Blackwell代的GB200 NVL72机柜已运行在120kW级别，而即将推出的Vera Rubin NVL72目标机柜功率预计在250-600kW范围，更激进的Rubin Ultra可能达到600kW到接近兆瓦级（900kW）。NVIDIA甚至已开始开发800V DC高压配电架构，目标就是支撑1MW级别的机柜。数据中心配电架构正在向"变电站级别"靠拢。
-
-为了能放下如此高密度的机柜，机房可能不止要改供电和散热系统，估计地板都得铲了重铺，不然都无法承载这么重的机柜。
-
-AI算力负载波动极强，集群启停、模型推理峰值会出现瞬时超大冲击电流，普通继电保护极易误跳闸，必须配套储能削峰、专用智能保护系统，供电冗余设计成本大幅抬升。
-
-NVIDIA研发的"智能功率平滑"（Intelligent Power Smoothing），通过机柜级超级电容储能（比Blackwell代多20倍，约400焦耳/GPU）来削减峰值电流需求达25%，这从侧面印证了供电冲击的巨大压力。
-
-## 液冷
-
-两相液冷（Two-Phase Liquid Cooling）：服务器整机完全浸泡在低沸点绝缘氟化液槽中，GPU发热直接让周边液体沸腾汽化，蒸汽在机柜顶部冷凝回流。
-
-- 氟利昂（Freon）：杜邦商标，行业泛指氯氟烃CFC、氢氯氟烃HCFC、氢氟烃HFC，老式空调、冷水机组，导电、腐蚀塑料，不做电子浸没/冷板散热。
-- 3M Fluorinert FC系列：完全绝缘、不腐蚀电子，适合两相浸没/冷板；无臭氧破坏，但Global Warming Potential（全球变暖潜能值）极高。
-- 3M Novec系列：为替代FC-72而生，低GWP、易降解，合规；
-
----
-
-金刚石的室温热导率高达 2000~2600W/（ m·K ），是纯铜的5倍以上、硅的13倍。
-
-https://zhuanlan.zhihu.com/p/2073000936960701944
-
-年轻人都瞧不上的河南钻石，把英伟达馋哭了？
-
-## 互联
-
-拿NVL72举例，其机柜后面的那一排Cable Tray总共包含5184组差分对承载着NVLink高速互联信号。NVL72在富士康等OEM厂商生产良率长期低迷，整机交付后在机房运维困难，可靠性差，在实际部署中容易因线缆松动、损坏导致故障。属于典型“量产难、运维难、稳定性差”的架构。之前一度传言NVL72在OEM厂商的直通率不足50%，即使工厂完成整柜测试，到客户机房后的首次开机成功率也不足50%。
-
-在网络产品领域，Cable Tray架构在20年前就被淘汰了，而正交架构则早早的被大厂作为主流架构。如华为NetEngine 8000 X8。思科更是在2004年的CRS-1产品上就开始使用了正交架构。正交架构因为其相比Cable Tray更高的可靠性在网络产品上得到了充分的验证。
-
-英伟达显然是受够了Cable Tray架构的良率问题带来的麻烦，让其在下一代产品中直接抛弃了NVL72的Cable Tray方案，改为了正交架构。Rubin288让72GPU通过正交互联成NVL72，然后4个NVL72通过后部线缆互联，组成NVL288。
-
-https://zhuanlan.zhihu.com/p/2046878757710042279
-
-超节点正交架构：英伟达死守的正交背板架构，为何没人敢抄？
-
-## 军备竞赛
-
-Colossus是马斯克xAI在美国田纳西州孟菲斯一带建的超大规模AI训练集群。
-
-Colossus 1：H100/H200为主，后期掺部分GB200；公开口径约20–23万张，功耗约300MW量级。
-
-Colossus 2：主打同构Blackwell。报道口径首期约11万 GB200、二期约11万GB300，整体目标约55万张GB200/GB300；液冷、Tesla Megapack备电、部分阶段用燃气轮机补电。
-
-Stargate是OpenAI牵头、2025年1月在白宫宣布的AI算力基建合资项目。
-
-Stargate I：得州Abilene。整体目标约45万+张NVIDIA GB200。

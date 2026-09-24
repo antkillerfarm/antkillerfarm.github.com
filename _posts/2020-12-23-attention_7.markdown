@@ -172,7 +172,7 @@ $$
 
 Gated DeltaNet-2先通道衰减，再局部擦除，而Kimi Delta Attention先局部擦除，再通道衰减。
 
-Qwen3.5的DeltaNet：
+Qwen3.5的Gated DeltaNet：
 
 $$
 \begin{align}

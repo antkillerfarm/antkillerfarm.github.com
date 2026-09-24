@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  古希腊三大数学书（二）, 数学杂谈（1）
+title:  古希腊三大数学书（二）
 category: math 
 ---
 

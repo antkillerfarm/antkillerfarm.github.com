@@ -118,6 +118,23 @@ https://kexue.fm/archives/11782
 
 MoE环游记：9、门控归一化之争
 
+## kernel细节
+
+基本流程：
+
+1. Router + fused topk
+2. Align / permute（按专家排序+pad）：moe_align_block_size
+3. Grouped GEMM：gate_up（W1/W3）
+4. 激活 + 门控
+5. Grouped GEMM：down（W2）
+6. Top‑k 加权归约（moe_sum / reduce）
+
+要点解析：
+
+- 按专家排序可以减少expert weight的加载次数，也便于expert并行。所以重排虽然有代价，但是后续的收益更大。
+- Grouped GEMM = 多个不同M尺寸但共享N/K的矩阵乘，通过重排和查表打包一次launch。因为也是tile based的算子，所以M需要是BLOCK_M的整数倍，不够的话需要pad。
+- 对于MOE运算来说，所有的token都是独立的，不管是位于同一序列，还是不同序列。因此对于多batch的请求来说，简单的将所有token连在一起即可。例如batch=2, seq_A=128， seq_B=64，则简单的将B直接连到A后即可，无需对齐/pad。
+
 # 大力出奇迹
 
 Richard Sutton在《苦涩的教训》（2019）中指出：算力是第一性，通用方法 + 大规模计算必然赢过人工设计。

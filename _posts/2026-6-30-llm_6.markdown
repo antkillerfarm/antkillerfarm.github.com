@@ -63,6 +63,8 @@ GR Read：在每个模块（如Attention或MoE）处理前，使用一个动态�
 
 GR Write：在模块处理完成后，使用一个每分支的标量写门控（Write Gate），控制模块的输出以多大比例写回到各条残差分支中。
 
+和Gated Residual(GR)类似的，还有Tencent Hy4-preview提出的iHC。
+
 ![](/images/img6/QSA.png)
 
 QSA (Qwen Sparse Attention)不直接处理单个Token，而是将序列划分为更粗粒度的微块（Micro-block）。它使用一个轻量级的Indexer来评估这些块的重要性，并只选择最重要的块进行传统的注意力计算，未选中的块则被稀疏处理。

@@ -165,6 +165,14 @@ Cross-Attention in Transformer Architecture
 
 # Diffusion Model
 
+教程：
+
+https://diffusion.csail.mit.edu/
+
+Introduction to Flow Matching and Diffusion Models
+
+---
+
 Diffusion Model也是一类生成模型方法。
 
 ![](/images/img4/flow.png)
