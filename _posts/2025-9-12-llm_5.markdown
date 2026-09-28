@@ -127,7 +127,7 @@ MoE环游记：9、门控归一化之争
 3. Grouped GEMM：gate_up（W1/W3）
 4. 激活 + 门控
 5. Grouped GEMM：down（W2）
-6. Top‑k 加权归约（moe_sum / reduce）
+6. Top‑k加权归约（moe_sum / reduce）
 
 要点解析：
 

@@ -382,6 +382,38 @@ http://ftp.gnome.org/pub/GNOME/sources/
 
 # 数据结构 & 普通CS算法+
 
+https://mp.weixin.qq.com/s/8gDVqlywLBl-MZa6XrtXug
+
+为什么磁盘存储引擎用b+树来作为索引结构？
+
+https://mp.weixin.qq.com/s/M5syxE9Ln4UDLThPh5iuJg
+
+各种字符串Hash函数比较
+
+https://blog.csdn.net/wo541075754/article/details/54632929
+
+Merkle Tree（默克尔树）算法解析（Merkle Tree，通常也被称作Hash Tree，顾名思义，就是存储hash值的一棵树。）
+
+https://mp.weixin.qq.com/s/M8U9B7UA2AdfnJi5EpTv-g
+
+算法面试中经常问的“字符串”问题
+
+https://mp.weixin.qq.com/s/QHounf4el7nmXnpMSJHjvg
+
+这个问题不简单：寻找缺失元素
+
+https://blog.csdn.net/changtao381/article/details/8936765
+
+Splay Tree（一种二叉排序树）
+
+https://mp.weixin.qq.com/s/p4tddWB4kjFufkv3x2SYpw
+
+图解6种树，你心中有数吗
+
+https://mp.weixin.qq.com/s/fAYjIcFlHoXK2E38JJSFpA
+
+C++优先队列priority_queue
+
 https://mp.weixin.qq.com/s/KZq5SjPESQnQaNU1Mn5a-A
 
 一文把三个经典求和问题吃的透透滴

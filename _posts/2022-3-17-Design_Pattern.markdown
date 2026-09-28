@@ -103,6 +103,48 @@ https://refactoringguru.cn/design-patterns
 
 # 数据结构 & 普通CS算法
 
+## 红黑树
+
+https://mp.weixin.qq.com/s/IaYnfEZ2bUXIpQvN3ZqFGA
+
+图解红黑树
+
+https://juejin.im/post/5e509b27f265da57455b3f33
+
+面试被问“红黑树”，我一脸懵逼...
+
+https://www.cnblogs.com/linzworld/p/13720477.html
+
+从根源上探究红黑树的本质
+
+https://mp.weixin.qq.com/s/cESH1pmPiR5mpQC96RCoig
+
+红黑树杀人事件始末
+
+https://mp.weixin.qq.com/s/f5rppHa9zL0M9IVNtzk7Og
+
+彻底搞懂“红黑树”...
+
+## Bloom Filter
+
+https://blog.csdn.net/zhaodedong/article/details/78186450
+
+Bloom Filter的原理和实现
+
+https://blog.csdn.net/zhaodedong/article/details/78445910
+
+Bloom Filter的数学背景
+
+https://mp.weixin.qq.com/s/aPepcwG_VMioqGQ_Fp3deg
+
+海量数据处理利器之布隆过滤器
+
+https://zhuanlan.zhihu.com/p/371219898
+
+布隆过滤器、LRU Cache
+
+## Other
+
 卡常技巧是通过优化程序的时间常数和底层操作，在不改变算法时间复杂度的前提下提升程序运行效率的策略。
 
 ---
@@ -238,35 +280,3 @@ https://mp.weixin.qq.com/s/D9kdAPws1XXZUyd0IKUzyw
 https://mp.weixin.qq.com/s/l08OYNlTxDKGEQnULjPV6g
 
 你管这破玩意叫B+树?
-
-https://mp.weixin.qq.com/s/8gDVqlywLBl-MZa6XrtXug
-
-为什么磁盘存储引擎用b+树来作为索引结构？
-
-https://mp.weixin.qq.com/s/M5syxE9Ln4UDLThPh5iuJg
-
-各种字符串Hash函数比较
-
-https://blog.csdn.net/wo541075754/article/details/54632929
-
-Merkle Tree（默克尔树）算法解析（Merkle Tree，通常也被称作Hash Tree，顾名思义，就是存储hash值的一棵树。）
-
-https://mp.weixin.qq.com/s/M8U9B7UA2AdfnJi5EpTv-g
-
-算法面试中经常问的“字符串”问题
-
-https://mp.weixin.qq.com/s/QHounf4el7nmXnpMSJHjvg
-
-这个问题不简单：寻找缺失元素
-
-https://blog.csdn.net/changtao381/article/details/8936765
-
-Splay Tree（一种二叉排序树）
-
-https://mp.weixin.qq.com/s/p4tddWB4kjFufkv3x2SYpw
-
-图解6种树，你心中有数吗
-
-https://mp.weixin.qq.com/s/fAYjIcFlHoXK2E38JJSFpA
-
-C++优先队列priority_queue

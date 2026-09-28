@@ -191,46 +191,6 @@ https://zhuanlan.zhihu.com/p/488016994
 
 CUDA中的radix sort算法
 
-## Bloom Filter
-
-https://blog.csdn.net/zhaodedong/article/details/78186450
-
-Bloom Filter的原理和实现
-
-https://blog.csdn.net/zhaodedong/article/details/78445910
-
-Bloom Filter的数学背景
-
-https://mp.weixin.qq.com/s/aPepcwG_VMioqGQ_Fp3deg
-
-海量数据处理利器之布隆过滤器
-
-https://zhuanlan.zhihu.com/p/371219898
-
-布隆过滤器、LRU Cache
-
-## 红黑树
-
-https://mp.weixin.qq.com/s/IaYnfEZ2bUXIpQvN3ZqFGA
-
-图解红黑树
-
-https://juejin.im/post/5e509b27f265da57455b3f33
-
-面试被问“红黑树”，我一脸懵逼...
-
-https://www.cnblogs.com/linzworld/p/13720477.html
-
-从根源上探究红黑树的本质
-
-https://mp.weixin.qq.com/s/cESH1pmPiR5mpQC96RCoig
-
-红黑树杀人事件始末
-
-https://mp.weixin.qq.com/s/f5rppHa9zL0M9IVNtzk7Og
-
-彻底搞懂“红黑树”...
-
 ## Skip List
 
 http://blog.csdn.net/u013709270/article/details/53470428
@@ -351,7 +311,13 @@ for (uint32_t s = 1; s <= num_threads_x; s <<= 1) {
 
 参考：
 
-https://research.nvidia.com/publication/single-pass-parallel-prefix-scan-decoupled-look-back
+https://research.nvidia.com/publication/2016-03_single-pass-parallel-prefix-scan-decoupled-look-back
+
+Single-pass Parallel Prefix Scan with Decoupled Look-back
+
+https://research.nvidia.com/index.php/publication/2022-06_onesweep-faster-least-significant-digit-radix-sort-gpus
+
+Onesweep: A Faster Least Significant Digit Radix Sort for GPUs
 
 ---
 
