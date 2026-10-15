@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争：流云篇（二）——马扎尔之鸟
+title:  俄乌战争：流云篇（二）——马扎尔之鸟（1）
 category: Russo Ukrainian War Cloud
 ---
 
@@ -88,6 +88,10 @@ https://zhuanlan.zhihu.com/p/645205214
 https://zhuanlan.zhihu.com/p/651142994
 
 英国调查机构拆解天竺葵-2自杀式无人机，发现已经是俄罗斯国产产品
+
+https://zhuanlan.zhihu.com/p/2085656584768722876
+
+俄罗斯Geran“天竺葵”无人机的演进
 
 ---
 

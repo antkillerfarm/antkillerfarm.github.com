@@ -109,6 +109,12 @@ $$x_n=ax_{n-1}\quad \mathrm{modulo} \quad m$$
 
 这里的a和m通常都是大质数。
 
+---
+
+![](/images/img6/random.jpg)
+
+LCG的问题是：把连续三个输出当成三维空间里一个点的坐标，用一个普通角度看是一团匀匀的雾，而转到特定的角度，所有点整整齐齐码在15张薄片上，即在n维空间里的点都只落在数量相对很少的超平面上。
+
 ### 正态分布
 
 **Box-Muller变换**：如果随机变量$$U_1,U_2$$独立且$$U_1, U_2 \sim Uniform(0,1)$$，
@@ -150,11 +156,43 @@ PS：998244353是一个有名的质数n，因为n-1有个因数是$$2^{23}$$，�
 
 Mersenne Twister算法是1997年由Makoto Matsumoto(松本 眞)和Takuji Nishimura(西村 拓士)提出的算法。这种算法由于和梅森素数（Mersenne prime）有关，故名。
 
-该算法最常见的实现基于梅森素数$$2^{19937}-1$$，因此又被称为MT19937。原始的MT19937可以生成32位的随机数，它还有64位的版本：MT19937-64。
+该算法最常见实现的随机数周期是梅森素数$$2^{19937}-1$$，因此又被称为MT19937。原始的MT19937可以生成32位的随机数，它还有64位的版本：MT19937-64。
 
 MT算法的实现也很多了，参见原作者的官网：
 
 http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html
+
+---
+
+周期长短管的是数列会不会重复，猜不猜得到是另一个维度的事。
+
+MT每次取出一个状态字，做一道叫tempering的移位加异或再交出来，这道工序是可逆的。把一个输出倒推回去，得到的正好是一个状态字，连续拿到624个32位输出就等于拿到了全部状态。
+
+密码学安全伪随机数生成器（CSPRNG）的要求只有一条，就算攻击者知道算法、看过之前全部输出，也算不出下一个数。
+
+经典案例：
+
+索尼给固件签名用的是ECDSA，这种签名每次都要现取一个随机数k，签名值是
+
+$$s = k^{-1}(z + r \cdot d) \bmod n$$
+
+其中d是私钥，z是消息哈希，r由k算出。
+
+索尼每次签名用的是同一个k，于是拿两份签名一联立，k和私钥d都能直接解出来。
+
+$$k = \frac{z_1 - z_2}{s_1 - s_2} \bmod n, \qquad d = \frac{s_1 k - z_1}{r} \bmod n$$
+
+两个式子，主机的签名私钥就公开了。随机数质量再好，重复用一次也等于没有。
+
+https://www.zhihu.com/answer/2092341310959240301
+
+计算机中的伪随机是怎么实现的？
+
+---
+
+TestU01是一套用于随机数生成器（RNG/PRNG）统计质量评估的开源C库，由蒙特利尔大学的Pierre L’Ecuyer和Richard Simard等人开发维护；
+
+>George Marsaglia（1924–2011），美国数学家、计算机科学家，随机数与伪随机生成器（PRNG）领域的奠基人之一。2003年发表了xorshift算法。
 
 ### Philox
 
@@ -234,51 +272,3 @@ MCMC和Gibbs Sampling最早都是统计力学的概念，后来才被用于机�
 频率统计学派是所谓的正统派，由于其简单且便于理解的特点，多数入门级的数理统计学教程，一般都是按照该学派的思路写的。
 
 而贝叶斯学派可谓另辟蹊径，它和频率统计学派的差异，参见[《机器学习（九）》](/ml/2016/09/02/Machine_Learning_9.html#Bayes)。由于该派系的思想比较新颖，我一度以为它和频率统计学派的关系，就犹如相对论之于经典力学。
-
-然而，陈希孺院士告诉我们，两者各有优劣，尚未到一方决出胜负的阶段。比如，贝叶斯学派的先验估计，既是其成功的奥秘，也是其不成功的软肋。比如，对于“无信息先验分布”，目前尚处于“信则灵，不信则无”的境地。
-
-陈院士的观点是：**各取所长，为我所用**。
-
-近年来，贝叶斯学派的广泛应用，更多的原因在于计算机的计算能力大幅提升之后，由于随机样本获取成本的下降，导致了蒙特卡洛方法大行其道。
-
-参考：
-
-https://mp.weixin.qq.com/s/uFeyZ-6gFo2oOYKTnt2R9Q
-
-揭示贝叶斯公式应用中的认识误区
-
-https://mp.weixin.qq.com/s/AsZyjwUclEoxxl2VRBekHA
-
-拟合目标函数后验分布的调参利器：贝叶斯优化
-
-https://mp.weixin.qq.com/s/psMlGLOZcmX-SmEKr2gUOg
-
-从贝叶斯定理到概率分布：综述概率论基本定义
-
-http://mp.weixin.qq.com/s/axwRMb8lCyMEh2WGIZR1rA
-
-实例详解贝叶斯推理的原理
-
-https://mp.weixin.qq.com/s/rTpmFvgRC-cKbVxQkygdNQ
-
-从概率论到多分类问题：综述贝叶斯统计分类
-
-https://mp.weixin.qq.com/s/TQfaBddaDh_jIhcaKJFx7w
-
-概率论之概念解析：用贝叶斯推断进行参数估计
-
-https://mp.weixin.qq.com/s/i4G2k5yZZV_Q8U4T30XX2A
-
-概率论之概念解析：边缘化（Marginalisation）
-
-https://mp.weixin.qq.com/s/Jcwxx5oxACjDEVZr9qgPGQ
-
-一个我们几乎每天都在使用的数学工具
-
-https://mp.weixin.qq.com/s/vuFBY99-TDdyQELcUdXjTQ
-
-浅谈贝叶斯和MCMC
-
-https://mp.weixin.qq.com/s/eIiFLW5pShrCnK5mZalLSw
-
-贝叶斯统计数据如何说服我去健身房

@@ -208,6 +208,10 @@ https://www.zhihu.com/question/2064275797712679409
 
 星舰V3第13次试飞成功，如何评价本次试飞？（2026.7.24）
 
+https://www.zhihu.com/question/2087814513273975312
+
+SpaceX星舰第14次试飞，首次成功进入地球轨道，有哪些看点值得关注？（2026.9.28）
+
 # StarLink
 
 ![](/images/img6/StarLink.jpg)

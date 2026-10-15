@@ -11,6 +11,8 @@ category: Russo Ukrainian War Sky
 
 ## 卢甘斯克战役（续）
 
+安东尼奥·卢乔·维瓦尔第（Antonio Lucio Vivaldi，1678—1741），意大利威尼斯人，巴洛克时期作曲家、小提琴家。
+
 https://www.zhihu.com/question/2080728827152577252
 
 如何看待乌军在莱曼北部取得重大反击成果?（2026.9）
@@ -18,6 +20,10 @@ https://www.zhihu.com/question/2080728827152577252
 https://zhuanlan.zhihu.com/p/2084334211369116774
 
 俄罗斯正逼近斯拉维扬斯克和克拉马托尔斯克附近的“要塞带”：乌军在利曼附近的反攻将如何影响这一局面
+
+https://www.zhihu.com/answer/2087879606397298541
+
+维瓦尔第行动（截止2026.9.28）
 
 ---
 

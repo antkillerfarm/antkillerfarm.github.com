@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争：流云篇（十九）——轶事（11）
+title:  俄乌战争：流云篇（十九）——轶事（10）
 category: Russo Ukrainian War Cloud
 ---
 

@@ -83,6 +83,14 @@ https://www.zhihu.com/question/34623286
 
 ---
 
+自中学学化学以来，化学键这种东西给人的感觉似乎就是一种很强力的作用，要破坏它似乎非化学反应不可。
+
+https://www.zhihu.com/question/2017581554487014475
+
+都说共价晶体难以破坏，那如果我咬断一根很长的二氧化硅水晶，不就破坏了它的共价键吗？
+
+---
+
 https://mp.weixin.qq.com/s/0fdnEWpLvPSbweFh0v4x9A
 
 科学家的浪漫，是用激光画一道彩虹（姜黄素）
@@ -210,23 +218,3 @@ https://mp.weixin.qq.com/s/1jYvcT5-XZuwYxBBRPufjA
 https://mp.weixin.qq.com/s/p5tSSJSfyrynqg3yjQr7Mw
 
 巧克力生产居然还不是全自动的？加入这两种成分就有希望了
-
----
-
-击沉俾斯麦、战术核企鹅、历史的终结。
-
-https://www.sohu.com/a/275833950_236308
-
-世界上最带劲儿的十种啤酒
-
-https://zhuanlan.zhihu.com/p/97199415
-
-世界最烈啤酒之争，一场只为噱头的战争
-
----
-
-浓缩干碗豆汤（Erbswurst），这是一种包裹在类似香肠包装纸中的浓缩汤块，将汤块放入水中煮沸就能得到让人难以下咽的碗豆汤。
-
-https://zhuanlan.zhihu.com/p/384340935
-
-一战士兵每天都吃些什么？——德国和奥匈篇

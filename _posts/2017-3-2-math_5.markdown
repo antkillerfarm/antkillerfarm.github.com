@@ -1,11 +1,63 @@
 ---
 layout: post
-title:  数学狂想曲（五）——抛物线, 肺炎版《黄冈密卷》, 玻尔兹曼分布
+title:  数学狂想曲（五）——抛物线, 玻尔兹曼分布
 category: math 
 ---
 
 * toc
 {:toc}
+
+# 统计杂谈
+
+## 频率统计学派 vs. 贝叶斯学派（续）
+
+然而，陈希孺院士告诉我们，两者各有优劣，尚未到一方决出胜负的阶段。比如，贝叶斯学派的先验估计，既是其成功的奥秘，也是其不成功的软肋。比如，对于“无信息先验分布”，目前尚处于“信则灵，不信则无”的境地。
+
+陈院士的观点是：**各取所长，为我所用**。
+
+近年来，贝叶斯学派的广泛应用，更多的原因在于计算机的计算能力大幅提升之后，由于随机样本获取成本的下降，导致了蒙特卡洛方法大行其道。
+
+参考：
+
+https://mp.weixin.qq.com/s/uFeyZ-6gFo2oOYKTnt2R9Q
+
+揭示贝叶斯公式应用中的认识误区
+
+https://mp.weixin.qq.com/s/AsZyjwUclEoxxl2VRBekHA
+
+拟合目标函数后验分布的调参利器：贝叶斯优化
+
+https://mp.weixin.qq.com/s/psMlGLOZcmX-SmEKr2gUOg
+
+从贝叶斯定理到概率分布：综述概率论基本定义
+
+http://mp.weixin.qq.com/s/axwRMb8lCyMEh2WGIZR1rA
+
+实例详解贝叶斯推理的原理
+
+https://mp.weixin.qq.com/s/rTpmFvgRC-cKbVxQkygdNQ
+
+从概率论到多分类问题：综述贝叶斯统计分类
+
+https://mp.weixin.qq.com/s/TQfaBddaDh_jIhcaKJFx7w
+
+概率论之概念解析：用贝叶斯推断进行参数估计
+
+https://mp.weixin.qq.com/s/i4G2k5yZZV_Q8U4T30XX2A
+
+概率论之概念解析：边缘化（Marginalisation）
+
+https://mp.weixin.qq.com/s/Jcwxx5oxACjDEVZr9qgPGQ
+
+一个我们几乎每天都在使用的数学工具
+
+https://mp.weixin.qq.com/s/vuFBY99-TDdyQELcUdXjTQ
+
+浅谈贝叶斯和MCMC
+
+https://mp.weixin.qq.com/s/eIiFLW5pShrCnK5mZalLSw
+
+贝叶斯统计数据如何说服我去健身房
 
 # 抛物线
 
@@ -32,90 +84,6 @@ https://mp.weixin.qq.com/s/BmSdlLTZ8PxD_b27TzFWlw
 https://mp.weixin.qq.com/s/p-EVuaPfLusq01Jw8KcQdQ
 
 六一礼物：这些有趣的动图送给孩子们！了解数学能做什么？电路如何工作？
-
-# 肺炎版《黄冈密卷》
-
-问题由来：
-
-https://mp.weixin.qq.com/s/dR7fg6PTCVAnezlW6gTY2w
-
-新冠病毒最“强”管控，《黄冈密卷》数学题到底有多难
-
----
-
-1.设$$\sqrt{3+\sqrt{2}+\sqrt{3}+\sqrt{6}}=\sqrt{x}+\sqrt{y}+\sqrt{z}$$，且x、y、z为有理数，则$$xyz$$=?
-
-解：
-
-$$3+\sqrt{2}+\sqrt{3}+\sqrt{6} = x+y+z+2\sqrt{xy}+2\sqrt{xz}+2\sqrt{yz}$$
-
-由x、y、z为有理数可得：
-
-$$4xy=2, 4xz=3, 4yz=6$$
-
-由于x、y、z在原式中是对称的，所以上式中选择哪个等于2、3、6，都是无所谓的。
-
-三式相乘可得：
-
-$$4^3 \cdot (xyz)^2 = 36$$
-
-$$(xyz)^2 = 9/16$$
-
-$$xyz = 3/4$$
-
----
-
-2.设二次函数$$f(x)=ax^2+ax+1$$的图像开口向下，且满足$$f(f(1))=f(3)$$，则$$2a=?$$
-
-解：
-
-令$$y=2a$$，则$$f(1)=2a+1=y+1$$
-
-$$f(f(1))=f(y+1)=f(3)$$
-
-$$a(y+1)^2+a(y+1)+1=9a+3a+1$$
-
-$$(y+1)^2+(y+1)=12$$
-
-$$y^2+3y-10=0$$
-
-$$(y+5)(y-2)=0$$
-
-因为图像开口向下，所以$$2a=-5$$。
-
----
-
-最近，黄冈再次因数学题而火爆网络。
-
-以下是2020黄冈中考数学第16题：
-
-![](/images/img4/huanggang.gif)
-
-求上图扇形一边的中点P，在扇形滚动一周的过程中，所经历的路径的长度。
-
-显然，第1，3，4段都是圆弧，难就难在第2段（绿色）了。这条曲线可不是那么好求的，普通的本科高数都搞不定它。必须出动椭圆积分才行。
-
-https://www.zhihu.com/question/408523403
-
-如何解答2020黄冈中考数学第16题？
-
->小学能接受1/3这种无限循环小数，初中能接受根号，高中能接受ln(2)，那大学的精确解为什么不能接受椭圆函数。
-
-https://mathworld.wolfram.com/EllipticIntegraloftheSecondKind.html
-
-Elliptic Integral of the Second Kind
-
-这里有个上面动图的GeoGebra版本：
-
-https://github.com/antkillerfarm/antkillerfarm_crazy/blob/master/geogebra/huanggang.ggb
-
-《椭圆函数及其应用》 高本庆 著
-
----
-
-https://mp.weixin.qq.com/s/FdHstCxJqQ4wYXSRDyqm5A
-
-不敢相信！这份民国时期大学入学考试试卷，竟让170位院士头疼！
 
 <a name="Boltzmann"/>
 

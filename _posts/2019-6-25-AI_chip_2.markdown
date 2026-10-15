@@ -71,6 +71,10 @@ https://www.cnblogs.com/sasasatori/p/18455155
 
 聊聊LLMs与CIM
 
+https://zhuanlan.zhihu.com/p/2071264711954452764
+
+近存架构存在的问题
+
 ---
 
 llm对内存的极致需求并不是只因为权重更大了，所以你不能简单理解成芯片也scaling到一个很夸张的规格，就又能体现架构的优势了。

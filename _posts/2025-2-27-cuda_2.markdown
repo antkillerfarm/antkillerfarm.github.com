@@ -109,6 +109,10 @@ Hopper/Blackwell：Grid → CTA → Warpgroup → Warp → Thread
 
 新增的Warpgroup做为Tensor Core的编程接口单位。
 
+TGPR：thread GPR（私有通用寄存器）
+
+GGPR：group GPR
+
 ---
 
 ![](/images/img6/warp.png)
