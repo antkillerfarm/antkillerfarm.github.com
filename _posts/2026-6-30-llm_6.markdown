@@ -131,6 +131,16 @@ https://www.zhihu.com/question/2081380378493961583
 
 如何评价正式发布的DeepSeek V4.1 Flash？
 
+## Muse Spark Open
+
+Muse Spark Open是Meta推出的LLM。
+
+![](/images/img6/Muse.png)
+
+Latent MoE：router的时候在全宽隐藏维度上做，而专家计算在压缩后的Latent space上执行。
+
+和xiaomi MiMo-V2类似，采用3层SWA+1层GQA的模式，SWA使用RoPE，而GQA使用NoPE。
+
 # VLM
 
 https://zhuanlan.zhihu.com/p/702811733

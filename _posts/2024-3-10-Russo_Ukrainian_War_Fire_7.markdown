@@ -9,7 +9,7 @@ category: Russo Ukrainian War Fire
 
 # 俄乌战争：烈火篇
 
-## 无官不贪（续）
+## 无官不贪
 
 https://zhuanlan.zhihu.com/p/622351750
 

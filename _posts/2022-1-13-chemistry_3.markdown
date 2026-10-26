@@ -91,6 +91,14 @@ https://www.zhihu.com/question/2017581554487014475
 
 ---
 
+碳氧化物其实远不止一氧化碳和二氧化碳两种。
+
+https://www.zhihu.com/answer/2095219475217962425
+
+苯六甲酸酐
+
+---
+
 https://mp.weixin.qq.com/s/0fdnEWpLvPSbweFh0v4x9A
 
 科学家的浪漫，是用激光画一道彩虹（姜黄素）

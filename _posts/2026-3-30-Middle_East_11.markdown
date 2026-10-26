@@ -21,6 +21,8 @@ category: Middle East
 
 ---
 
+Freedom has a high price. But slavery has an even higher price.
+
 自由是一代人的代价，奴隶是一代又一代人的代价，代代相传，自由的代价很高，但奴隶的代价更高。
 
 波斯族本是占伊朗人口60%的主体民族，却至今被占25%的阿塞拜疆族压制统治；其原因就是千年前，阿拉伯人带来了伊斯兰教，同时也带来了阿塞拜疆军事奴隶成为军事代理人。

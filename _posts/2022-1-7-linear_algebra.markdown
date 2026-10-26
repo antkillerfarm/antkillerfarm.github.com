@@ -150,6 +150,12 @@ $$\begin{align}\mathbf{u} \otimes \mathbf{v} = \mathbf{u} \mathbf{v}^\mathrm{T}
 
 $$\mathbf{A}\otimes\mathbf{B} = \begin{bmatrix} a_{11} \mathbf{B} & \cdots & a_{1n}\mathbf{B} \\ \vdots & \ddots & \vdots \\ a_{m1} \mathbf{B} & \cdots & a_{mn} \mathbf{B} \end{bmatrix}$$
 
+例子：
+
+$$A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}, \qquad B = \begin{bmatrix} 0 & 5 \\ 6 & 7 \end{bmatrix}$$
+
+$$A \otimes B = \begin{bmatrix} 1\cdot B & 2\cdot B \\ 3\cdot B & 4\cdot B \end{bmatrix} = \begin{bmatrix} 0 & 5 & 0 & 10 \\ 6 & 7 & 12 & 14 \\ 0 & 15 & 0 & 20 \\ 18 & 21 & 24 & 28 \end{bmatrix}$$
+
 ## Hadamard product
 
 又叫Schur product或entrywise product。

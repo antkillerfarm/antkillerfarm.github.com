@@ -120,3 +120,7 @@ https://mp.weixin.qq.com/s/bcLSSMQw14w7rgWIFHiv_g
 https://mp.weixin.qq.com/s/KW_foVhpR8fjlGPERvHkdg
 
 一位阿富汗妇女的前半生，揭晓了塔利班大胜的谜底（完）
+
+---
+
+阿富汗的塔利班临时政府中央机关食堂开张了。包括总理在内，每人的伙食是一样的，一盘炒饭，三个饼，一碟酱菜，一盘碎水果，一杯牛奶以及一瓶纯净水。
