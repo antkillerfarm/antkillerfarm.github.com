@@ -196,3 +196,93 @@ MedMNIST：上海交大发布医学影像领域的MNIST
 https://mp.weixin.qq.com/s/clPpAveascHt7xwPr83HvA
 
 Pair，医学图像标注神器
+
+# 数据结构 & 普通CS算法+
+
+https://mp.weixin.qq.com/s/8gDVqlywLBl-MZa6XrtXug
+
+为什么磁盘存储引擎用b+树来作为索引结构？
+
+https://mp.weixin.qq.com/s/M5syxE9Ln4UDLThPh5iuJg
+
+各种字符串Hash函数比较
+
+https://blog.csdn.net/wo541075754/article/details/54632929
+
+Merkle Tree（默克尔树）算法解析（Merkle Tree，通常也被称作Hash Tree，顾名思义，就是存储hash值的一棵树。）
+
+https://mp.weixin.qq.com/s/M8U9B7UA2AdfnJi5EpTv-g
+
+算法面试中经常问的“字符串”问题
+
+https://mp.weixin.qq.com/s/QHounf4el7nmXnpMSJHjvg
+
+这个问题不简单：寻找缺失元素
+
+https://blog.csdn.net/changtao381/article/details/8936765
+
+Splay Tree（一种二叉排序树）
+
+https://mp.weixin.qq.com/s/p4tddWB4kjFufkv3x2SYpw
+
+图解6种树，你心中有数吗
+
+https://mp.weixin.qq.com/s/fAYjIcFlHoXK2E38JJSFpA
+
+C++优先队列priority_queue
+
+https://mp.weixin.qq.com/s/KZq5SjPESQnQaNU1Mn5a-A
+
+一文把三个经典求和问题吃的透透滴
+
+https://www.zhihu.com/question/20298134
+
+即时战略游戏中实用的寻路算法都有哪些，比较如何？
+
+http://blog.codinglabs.org/articles/algorithms-for-cardinality-estimation-part-i.html
+
+解读Cardinality Estimation算法
+
+https://mp.weixin.qq.com/s/zQJve_w5OoM6u-WcSWArdQ
+
+神速Hash
+
+https://www.codeproject.com/Articles/69941/Best-Square-Root-Method-Algorithm-Function-Precisi
+
+Best Square Root Method
+
+https://zhuanlan.zhihu.com/p/332996578
+
+陈丹琦分治算法
+
+https://utopia1991.github.io/2019/01/14/fisher/
+
+Fisher–Yates shuffle洗牌算法
+
+https://zhuanlan.zhihu.com/p/717126119
+
+一个让人惊艳的算法——CORDIC算法介绍
+
+https://www.zhihu.com/question/59592797
+
+计算机语言中是如何处理sin函数的？
+
+https://www.zhihu.com/question/52968810
+
+有哪些复杂度为O(1)的神奇算法？
+
+# 电子科技史+
+
+当年NTS-2卫星发射时（1977年6月23日），它搭载着第一台被送入轨道的铯原子钟，当时人们其实还不是非常确定是否真的需要相对论效应。于是卫星时钟系统中内置了一个频率合成器，以便在发射后，如果原子钟在其最终轨道上的速率确实符合广义相对论的预测，那么就可以启动合成器，使原子钟达到运行所需的速率。NTS-2上的铯钟启动后，在启动合成器之前，它运行了大约20天，以测量其时钟速率，结果完全符合GR的预测，于是频率修正启动！
+
+https://www.zhihu.com/answer/1913569281196663455
+
+GPS的相对论修正
+
+---
+
+当年的磁芯内存，断电之后数据根本不会丢。
+
+在1965年的机房里，你写了一段程序跑在内存里，这时候保洁大妈一不小心把大型机的电源插头给踢掉了，机器瞬间黑屏。你把插头重新插回去，通上电，刚才算到一半的数据还在磁芯内存里老老实实呆着呢，机器接着刚才的进度继续往下算。
+
+那个年代的内存，既是内部存储器，又是永久存储器。根本不存在什么临时存储的概念。

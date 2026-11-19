@@ -11,6 +11,10 @@ category: Russo Ukrainian War Sky
 
 ## 概述（续）
 
+俄乌战争中的俄国，越来越像七年战争中的法国。你别看它本土没缩水，有的方向还小赚。它的海外势力那是打不住的各种丢，综合一算账亏大了。
+
+---
+
 https://zhuanlan.zhihu.com/p/595934765
 
 镜头回顾——俄乌战争的第一年
@@ -142,6 +146,10 @@ https://zhuanlan.zhihu.com/p/2041864753379816214
 https://zhuanlan.zhihu.com/p/2066688818502165268
 
 乌克兰战局追踪-2026年7月31日
+
+https://zhuanlan.zhihu.com/p/2098925098145264164
+
+乌克兰战局追踪-2026年10月28日
 
 ## 顿巴斯战争
 

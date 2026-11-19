@@ -29,8 +29,6 @@ cuRAND：随机数生成库。
 
 https://docs.nvidia.com/cuda/pdf/CURAND_Library.pdf
 
-cuSPARSE；稀疏矩阵计算库。
-
 cuSOLVER：解线性方程的计算库。包括解稠密方程的cuSolverDN、解稀疏方程的cuSolverSP和矩阵分解的cuSolverRF。
 
 ---
@@ -48,6 +46,14 @@ CUDA Core Compute Libraries (CCCL)
 https://cuda.godbolt.org/
 
 nvcc online compiler
+
+---
+
+cuSPARSE：稀疏矩阵计算库。
+
+Compressed Sparse Row：逐元素存储所有非零元素。
+
+Block Sparse Row：只存储"非零块"，包括块内的零元素，按列主序或行主序连续存放。
 
 ## NVIDIA DALI
 
@@ -265,11 +271,3 @@ RW (Read-Write)：表示读写混合操作。
 ---
 
 Generic Addr是一种不携带任何状态或附加信息来声明它属于哪个状态空间的指针。在CUDA C++中，与C++一样，指针就是指针，它们没有额外的装饰或元信息。在PTX或SASS中，CUDA GPU具有状态空间系统，这是一种分区寻址结构。例如，shared就是一个状态空间。
-
-## Warp
-
-在织布机上，warp（经线）是纵向固定、张力较高的主线，它们平行排列在织机上。weft/weave（纬线）是横向穿梭交织的线。纺织业是人类历史上最早的大规模并行处理技术。
-
-一个SP可以执行一个thread，但是实际上并不是所有的thread能够在同一时刻执行。Nvidia把32个threads组成一个warp，warp是调度和运行的基本单元。warp中所有threads并行的执行相同的指令。
-
-![](/images/img6/SIMT.jpg)

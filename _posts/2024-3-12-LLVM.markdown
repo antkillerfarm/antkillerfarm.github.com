@@ -337,6 +337,14 @@ https://www.zhihu.com/question/663199568
 
 ---
 
+犹他大学的计算机系教授John Regehr带着团队干了一件轰动整个计算机界的事。他们写了一个叫Csmith的工具。这工具干嘛的呢，就是完全按照C语言标准，随机生成语法合法、且不包含任何未定义行为的C语言源代码。
+
+他们用Csmith昼夜不停地生成各种奇形怪状但绝对合法的C代码，然后喂给全世界程序员最信赖的工业级编译器GCC和LLVM。结果怎么样？短短两三年时间，他们居然在GCC和LLVM里抓出了超过300个以前从来没人发现的底层Bug！
+
+再后来，苏黎世联邦理工学院的苏振东教授团队提出了一套叫EMI（Equivalence Modulo Inputs，模输入等价）的测试方法，继续对主流编译器开火，又在GCC和LLVM里揪出了上千个深藏不露的缺陷。
+
+---
+
 https://mp.weixin.qq.com/s/FSlJKnC0y51nsLDp1B3tXg
 
 Swift编译器Crash—Segmentation fault解决方案

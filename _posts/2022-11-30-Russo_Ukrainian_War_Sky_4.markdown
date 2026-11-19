@@ -71,20 +71,6 @@ https://zhuanlan.zhihu.com/p/646763159
 
 ---
 
-https://mp.weixin.qq.com/s/u8rbgwjt-WOsHaFSj-JeMw
-
-从2014到2022：俄乌之间，发生了什么？
-
-https://zhuanlan.zhihu.com/p/208368695
-
-失败国家的典范：乌克兰为何沦落为欧洲最穷国
-
-https://zhuanlan.zhihu.com/p/621495404
-
-未解之谜之乌萝团队是怎样被毁的
-
----
-
 2022年2月，俄罗斯和白俄罗斯军队10日至20日在白俄罗斯多个军事训练场举行“联盟决心-2022”联合军演。
 
 而乌克兰军队同期在该国多个军事训练场举行“暴风雪-2022”演习。

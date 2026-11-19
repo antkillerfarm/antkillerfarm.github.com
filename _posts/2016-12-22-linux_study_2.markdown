@@ -136,6 +136,8 @@ https://www.cnblogs.com/Black-Hawk/articles/14750866.html
 
 `du -sh *`
 
+`du -x -h --max-depth=1 .`
+
 `ncdu`
 
 `dutree`

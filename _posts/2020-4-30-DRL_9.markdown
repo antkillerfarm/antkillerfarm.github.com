@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  深度强化学习（九）——AlphaStar, Dota 2, 王者荣耀, RLHF
+title:  深度强化学习（九）——AlphaStar, Dota 2, 王者荣耀
 category: DRL 
 ---
 

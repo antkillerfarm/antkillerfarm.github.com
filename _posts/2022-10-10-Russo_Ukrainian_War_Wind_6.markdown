@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  俄乌战争：疾风篇（六）——群雄（3）
+title:  俄乌战争：疾风篇（六）——群雄（2）
 category: Russo Ukrainian War Wind
 ---
 

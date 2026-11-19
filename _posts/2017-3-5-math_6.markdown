@@ -269,11 +269,3 @@ KS检验更深入的解释，涉及到布朗运动和维纳过程，这里不再
 https://mp.weixin.qq.com/s/YMKHw3qgWvhEz4f8nPw7Cg
 
 5种数据同分布的检测方法
-
----
-
-<a name="Steklov"/>
-
->Vladimir Andreevich Steklov，1864～1926，俄国数学家、物理学家。哈尔科夫大学博士，其导师是圣彼得堡学派第二代人物中，仅次于Andrey Markov的Aleksandr Lyapunov。哈尔科夫大学和圣彼得堡大学教授，1919年创建斯塔克罗夫数学研究所。
-
->斯塔克罗夫数学研究所是一家专职研究没有教学任务和科研任务的研究机构。Grigori Perelman在这里，曾有6年时间没有发表一篇论文。二十世纪俄罗斯绝大多数的数学发现都源自这里。

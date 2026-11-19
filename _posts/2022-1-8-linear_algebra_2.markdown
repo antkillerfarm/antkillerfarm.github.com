@@ -9,6 +9,28 @@ category: math
 
 # LU分解（续）
 
+这里只介绍一下Doolittle算法。
+
+$$A=\begin{bmatrix}
+a_{11} & a_{12} & \dots & a_{1n} \\
+a_{21} & a_{22} & \dots & a_{2n} \\
+\dots & \dots & \dots & \dots \\
+a_{n1} & a_{n2} & \dots & a_{nn} \\  
+\end{bmatrix}=LU=
+\begin{bmatrix}
+1 & 0 & \dots & 0 \\
+l_{21} & 1 & \dots & 0 \\
+\dots & \dots & \dots & \dots \\
+l_{n1} & l_{n2} & \dots & 1 \\  
+\end{bmatrix}
+\begin{bmatrix}
+u_{11} & u_{12} & \dots & u_{1n} \\
+0 & u_{22} & \dots & u_{2n} \\
+\dots & \dots & \dots & \dots \\
+0 & 0 & \dots & u_{nn} \\  
+\end{bmatrix}
+$$
+
 由矩阵乘法定义，可知：
 
 $$a_{1j}=u_{1j},j=1,2,\dots,n$$
@@ -198,7 +220,7 @@ QR算法于1961年，由John G.F. Francis和Vera Nikolaevna Kublanovskaya发现�
 
 >Vera Nikolaevna Kublanovskaya，1920~2012，苏联数学家，女。终身供职于苏联科学院列宁格勒斯塔克罗夫数学研究所。52岁获得博士学位。
 
->Steklov的故事，参见[《数学狂想曲（六）》](/math/2017/03/05/math_6.html#Steklov)。这里顺便说一下，苏联的博士学位问题。苏联有个“副博士”的学位，这是一名学生通过学历教育所能获得的最高学位。苏联的博士学位无法通过教育获得，而只能根据成果评定，因此难度大大超过欧美的博士，一般只有教授级人物才能获得。   
+>Steklov的故事，参见[《数学狂想曲（七）》](/math/2017/09/22/math_7.html#Steklov)。这里顺便说一下，苏联的博士学位问题。苏联有个“副博士”的学位，这是一名学生通过学历教育所能获得的最高学位。苏联的博士学位无法通过教育获得，而只能根据成果评定，因此难度大大超过欧美的博士，一般只有教授级人物才能获得。   
 >简单来说就是：   
 >苏联副博士=欧美博士   
 >苏联博士=欧美教授   
@@ -223,13 +245,3 @@ https://en.wikipedia.org/wiki/Eigenvalue_algorithm
 线性变换主要有三种几何效果：**旋转、缩放、投影**。
 
 其中，旋转和缩放不改变向量的维数。矩阵特征值运算，实际上就是将向量V旋转缩放到一个正交基W上。因为V和W等维，所以要求矩阵必须是方阵。
-
-正交化过程，代表旋转变换，又被称为**等距同构**。（旋转变换，可以理解为向量的正向旋转，也可以理解为坐标轴的反向旋转，这里理解为后者，会容易一些。）**特征值代表缩放变换的缩放因子。**
-
-而对于一般矩阵而言，我们还需要进行投影变换，将n维向量V映射为m维向量W。那么投影变换选择什么矩阵呢？
-
-我们知道，对于复数z，可写成：
-
-$$z=\left(\frac{z}{\mid z\mid }\right)\mid z\mid =\left(\frac{z}{\mid z\mid }\right)\sqrt{\overline z z}$$
-
-其中$$\overline z$$是z的共轭复数。也就是说，一个复数可以表示为一个单位向量乘以一个模。

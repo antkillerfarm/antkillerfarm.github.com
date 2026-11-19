@@ -49,6 +49,10 @@ https://www.kimi.com/blog/kimi-k3
 
 K3技术报告
 
+---
+
+![](/images/img6/Kimi_K3.1.png)
+
 ## Qwen3.8-Flash-Next
 
 2026.8 Qwen3.8-Flash-Next

@@ -9,7 +9,13 @@ category: AI
 
 # CUDA
 
-## Warp（续）
+## Warp
+
+在织布机上，warp（经线）是纵向固定、张力较高的主线，它们平行排列在织机上。weft/weave（纬线）是横向穿梭交织的线。纺织业是人类历史上最早的大规模并行处理技术。
+
+一个SP可以执行一个thread，但是实际上并不是所有的thread能够在同一时刻执行。Nvidia把32个threads组成一个warp，warp是调度和运行的基本单元。warp中所有threads并行的执行相同的指令。
+
+![](/images/img6/SIMT.jpg)
 
 Warp采用下图的策略来调度thread：
 
@@ -318,18 +324,3 @@ __global__ void add(int* __restrict__ a,
     }
 }
 ```
-
----
-
-https://developer.download.nvidia.cn/assets/cuda/files/NVIDIA-CUDA-Floating-Point.pdf
-
-IEEE 754 mode(default): `-ftz=false -prec-div=true -prec-sqrt=true`
-fast mode: `-ftz=true -prec-div=false -prec-sqrt=false`
-
-在fast模式中，非规格化数将被转换为零，并且除法和平方根运算不会被计算到最接近的真实值的浮点数值。
-
-当浮点异常发生时，NVIDIA的GPU不会触发trap handlers，也没有指示上溢、下溢或者denormal的标志位。
-
----
-
-`#pragma unroll`指令建议编译器完全展开for循环。如果N是一个常量，编译器会尝试将循环体展开N次。如果N不是一个常量或者太大而无法完全展开，编译器可能会忽略这个指令，或者展开一定次数的迭代。

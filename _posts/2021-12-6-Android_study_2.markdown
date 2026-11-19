@@ -173,6 +173,10 @@ Android打包APK,AAR,JAR
 
 ## 参考
 
+Android Go（也叫 Android Go Edition）是谷歌专门为低端手机推出的精简版Android系统，核心目标是让硬件配置很低（比如内存只有 1~2GB、存储空间很小）的廉价手机也能流畅运行。
+
+---
+
 https://mp.weixin.qq.com/s/twfpUMf9CfXcgwtFFkJ4Ig
 
 Android整体设计及背后意义

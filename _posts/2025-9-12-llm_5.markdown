@@ -185,9 +185,9 @@ Anthropic模型有10T参数，Google Gemini有5T参数，国内仅有1T参数。
 
 初代 MoE：2024 Mixtral，E=8、K=2
 
-2025主流国产 MoE（Qwen2.5/3、DeepSeek-V2）E=128~160，K=8
+2025主流国产MoE（Qwen2.5/3、DeepSeek-V2）E=128~160，K=8
 
-2026 前沿超大 MoE（DeepSeek V3/V4、Llama4、Gemma4）
+2026前沿超大MoE（DeepSeek V3/V4、Llama4、Gemma4）
 
 - 路线A：超多专家池 + 低K激活（Llama4/Gemma4，E=128，K=2），擅长推理。
 - 路线B：超大专家池 + 中等K激活（DeepSeek V3/V4，E=256/512，K=8~16），工业级模型。

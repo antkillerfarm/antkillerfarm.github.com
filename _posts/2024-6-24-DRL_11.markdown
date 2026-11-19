@@ -1,13 +1,65 @@
 ---
 layout: post
-title:  深度强化学习（十一）——DRL参考资源（1）
+title:  深度强化学习（十一）——DRL和Robotics
 category: DRL 
 ---
 
 * toc
 {:toc}
 
-# DRL和Robotics（续）
+# DRL和Robotics
+
+虽然，DRL似乎生来就是为了Robotics，然而现实中的无人系统，目前基本还是使用传统的控制方法。
+
+例如：
+
+https://www.zhihu.com/question/50050401
+
+如何看待百度无人车， 三千多个场景，一万多个if？
+
+不止国内，就连业界标杆Boston Dynamics也是这样：
+
+https://www.zhihu.com/question/29871410
+
+波士顿动力Boston Dynamics的大狗Big Dog用的了哪些控制、估计等算法？
+
+直到最近才终于有了改观：
+
+https://mp.weixin.qq.com/s/xSODAGf3QcJ3A9oq6xP11A
+
+真的超越了波士顿动力！深度强化学习打造的ANYmal登上Science子刊
+
+此外，还有一些论文：
+
+《Learning to Drive in a Day》
+
+---
+
+Boston Dynamics算是人形机器人的标杆企业了。它采用了液压驱动的路线。
+
+相比于电机驱动，液压驱动功率更大，可以把作为动力的电机全塞到躯干里去，环境适应性更好，缺点是非线性系统，控制比较复杂，柔性液压传动的零件太多，而且还是软材质的，可靠性始终上不去，维护成本还贵。
+
+这些年电机的进步速度比柔性液压的进步速度快多了，关键问题在于现代工业用电机的地方太多了，累积的成果也多，相比之下，柔性液压的应用场景大大少于电机。
+
+现在关节电机的进步速度很开，加上某些对力量要求毕竟大的位置，可以单独用硬质拉杆，所以电机直接驱动很快就超越了柔性液压传动。
+
+等波士顿反应过来，放弃液压，改用电机的时候，已经比别人落后了。
+
+参考：
+
+https://mp.weixin.qq.com/s/BNanIQKY9SSNpms0qSTOBA
+
+硬核干货！揭秘波士顿动力背后的专利技术
+
+https://www.zhihu.com/question/437149222
+
+波士顿动力12月29日发布了机器人跳舞的视频，在这个领域我们现在差距有多大？
+
+https://www.zhihu.com/question/347701202
+
+波士顿动力旋转跳跃360°视频火了，那么它的背后是通过什么算法实现的呢？
+
+---
 
 至少在2022年之前，波士顿动力在足式机器人的全身运动控制水平上都是一骑绝尘的。他们的技术护城河是一套能够实时解算whole-body MPC的控制框架。搞过轨迹优化的朋友们都知道，求解一个包含20+自由度机器人全身动力学的非线性非凸轨迹优化问题有很多种方法，但是要在几十毫秒内得到一个质量不错的解并且能让机器人动起来就是另外一个次元的问题了。
 
@@ -252,99 +304,3 @@ Chrome暗藏的恐龙跳一跳，已经被AI轻松掌握了
 https://www.cnblogs.com/massquantity/p/13842139.html
 
 Flink+强化学习搭建实时推荐系统
-
-https://mp.weixin.qq.com/s/zfVrmErz3ZaGz7Ha7qGoIw
-
-要提升微信看一看推荐混排的长期收益？试试深度强化学习
-
-https://mp.weixin.qq.com/s/RLEuaiRdq6AbTSUcYQ5O3A
-
-深度强化学习在NLP怎么用？看清华黄民烈老师这一份120页《自然语言处理和搜索中的深度强化学习应用》讲义
-
-https://mp.weixin.qq.com/s/S2eGPTON3XmfN830m4vaaA
-
-腾讯AI Lab：可自适应于不同环境和任务的强化学习方法
-
-https://mp.weixin.qq.com/s/dlOFM7LuOF2npDP_EaITvg
-
-效率提高50倍！谷歌提出从图像中学习世界的强化学习新方法（PlaNet）
-
-https://mp.weixin.qq.com/s/3qWN6DjuGUZgCpxH7XF4fg
-
-谷歌重磅开源RL智能体Dreamer，仅靠图像学习从机器人到Atari的控制策略，样本效率暴增20倍
-
-https://mp.weixin.qq.com/s/Maoy2feVWj5hpn4Ysh_47A
-
-你追踪，我逃跑：一种用于主动视觉跟踪的对抗博弈机制
-
-https://mp.weixin.qq.com/s/4w3wIyy4H0UGeqOGhNcIbA
-
-强化学习落地！京东等发布综述《深度强化学习在搜索，推荐和在线广告中的应用》
-
-https://mp.weixin.qq.com/s/F_GsfAJRFJ_o8PETqUL35g
-
-谷歌大脑AI飞速解锁雅达利，训练不用两小时：预测能力“前所未有”
-
-https://mp.weixin.qq.com/s/CCQOHRCAolsorm8FEPdjoQ
-
-什么时候强化学习未必好用？
-
-https://mp.weixin.qq.com/s/Ctn1Wr68lph1UK_wjfCY1Q
-
-策略梯度搜索：不使用搜索树的在线规划和专家迭代
-
-https://mp.weixin.qq.com/s/78ir-Z4ch8_aVpjC6aCPGg
-
-DeepMind综述深度强化学习中的快与慢，智能体应该像人一样学习
-
-https://mp.weixin.qq.com/s?__biz=MzU1NTMyOTI4Mw==&mid=2247494226&idx=1&sn=a96ea0ad8961ec3698301cf0c4514843
-
-以YouTube论文学习如何在推荐场景应用强化学习
-
-https://mp.weixin.qq.com/s/SpCorsAiTWGYGiohT_gZtg
-
-如何训练智能体Agent玩毁灭战士ViZDoom？
-
-https://mp.weixin.qq.com/s/ewC2_8O29Gg0blxK7mHsYA
-
-比TD、MC、MCTS指数级快，性能超越A3C、DDQN等模型，这篇RL算法论文在Reddit上火了
-
-https://mp.weixin.qq.com/s/Q9QzXo_M3jYKjBWSsLYwgQ
-
-强化学习+树搜索：一种新型程序合成方法
-
-https://mp.weixin.qq.com/s/l46yJdRaftMlwr6odiSiHg
-
-Yoshua Bengio团队基于深度强化学习打造聊天机器人MILABOT
-
-https://mp.weixin.qq.com/s/6_cW22DCzSw3DpUDrLXLcA
-
-OpenAI提出强化学习近端策略优化，可替代策略梯度法
-
-http://mp.weixin.qq.com/s/S4jhpNKYZP5YQWaiiOQGFA
-
-DeepMind：“预测地图”海马体催生强化学习新算法
-
-https://mp.weixin.qq.com/s/KZHidOi5KYgg393R_JspBA
-
-DeepMind都拿不下的游戏，刚刚被OpenAI玩出历史最高分
-
-https://mp.weixin.qq.com/s/aVWHlwOmNIqOlu3025_RXQ
-
-DeepMind提出多任务强化学习新方法Distral
-
-https://mp.weixin.qq.com/s/gFHbLF-q91sddMAX1CRbEQ
-
-俞扬：“审时度势”的高效强化学习
-
-https://mp.weixin.qq.com/s/lstCIiNs_qA6k7GCYUBv2w
-
-阿尔伯塔大学提出新型多步强化学习方法，结合已有TD算法实现更好性能
-
-https://mp.weixin.qq.com/s/ybyZpaHr-JJg7CCdXGOl5A
-
-Seq2seq强化学习实战
-
-https://mp.weixin.qq.com/s/vYDb1rTdPxO1sIS38VX5xA
-
-DeepMind的AI学会了画画，利用强化学习完全不需人教：SPIRAL
